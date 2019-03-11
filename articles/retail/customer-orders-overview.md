@@ -1,13 +1,13 @@
 ---
 title: Kundeordrer i Retail Modern POS (MPOS)
-description: "Dette emnet gir informasjon om kundeordrer i Moderne salgssted for detaljhandel (MPOS). Kundeordrer er også kjent som spesialbestillinger. Emnet inneholder en beskrivelse av relaterte parametere og flyter for transaksjonen."
+description: Dette emnet gir informasjon om kundeordrer i Retail Modern POS (MPOS). Kundeordrer er også kjent som spesialbestillinger. Emnet inneholder en beskrivelse av relaterte parametere og flyter for transaksjonen.
 author: josaw1
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 ms.search.form: RetailFunctionalityProfile
 audience: Application User
 ms.reviewer: josaw
@@ -19,19 +19,18 @@ ms.search.industry: Retail
 ms.author: anpurush
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
 ms.openlocfilehash: b54f39cc7896871d77f9371e6197bf6dbaac51de
-ms.contentlocale: nb-no
-ms.lasthandoff: 01/04/2019
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "336618"
 ---
-
 # <a name="customer-orders-in-retail-modern-pos-mpos"></a>Kundeordrer i Retail Modern POS (MPOS)
 
 [!include [banner](includes/banner.md)]
 
-Dette emnet gir informasjon om kundeordrer i Moderne salgssted for detaljhandel (MPOS). Kundeordrer er også kjent som spesialbestillinger. Emnet inneholder en beskrivelse av relaterte parametere og flyter for transaksjonen.
+Dette emnet gir informasjon om kundeordrer i Retail Modern POS (MPOS). Kundeordrer er også kjent som spesialbestillinger. Emnet inneholder en beskrivelse av relaterte parametere og flyter for transaksjonen.
 
 Omnikanal for detaljhandel gir mulighet for kundeordrer og spesialordrer, eller spesialordrer, for å møte ulike behov. Her er noen vanlige scenarier:
 
@@ -57,7 +56,7 @@ Her er noen av parameterne som kan angis på siden **Parametere for detaljhandel
 
 ## <a name="transaction-flow-for-customer-orders"></a>Transaksjonsflyt for kundeordrer
 
-### <a name="create-a-customer-order-in-retail-modern-pos"></a>Opprett en kundeordre i moderne salgssted for detaljhandel
+### <a name="create-a-customer-order-in-retail-modern-pos"></a>Opprette en kundeordre i Retail Modern POS
 
 1. Legg til en kunde i transaksjonen.
 2. Legg til produkter i handlevognen.
@@ -97,9 +96,8 @@ Kundeordrer kan opprettes fra salgssted-klienten i synkron eller asynkron modus.
 1. Klikk **Retail** &gt; **Kanaloppsett** &gt; **Salgsstedsoppsett** &gt; **Salgsstedsprofil** &gt; **Funksjonalitetsprofiler**.
 2. På **Generelt**-hurtigfanen angir du **Opprett kundeordre i asynkron modus** til **Ja**.
 
-Når alternativet **Opprett kundeordre i asynkron modus** er satt til **Ja**, opprettes alltid kundeordrer i asynkron modus, selv om RTS er tilgjengelig. Hvis du setter dette alternativet til **Nei**, opprettes alltid kundeordrer i synkron modus ved hjelp av RTS. Når det opprettes kundeordrer i asynkron modus, hentes og settes de inn i Retail ved hentejobber (P-jobber). De tilsvarende salgsordrene opprettes i Retail når **Synkroniser ordrer** kjøres manuelt eller via en satsvis prosess.
+Når alternativet **Opprett kundeordre i asynkron modus** er satt til **Ja**, opprettes alltid kundeordrer i asynkron modus, selv om Retail Transaction Service (RTS) er tilgjengelig. Hvis du setter dette alternativet til **Nei**, opprettes alltid kundeordrer i synkron modus ved hjelp av RTS. Når det opprettes kundeordrer i asynkron modus, hentes og settes de inn i Retail ved hentejobber (P-jobber). De tilsvarende salgsordrene opprettes i Retail når **Synkroniser ordrer** kjøres manuelt eller via en satsvis prosess.
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 
 [Hybride kundeordrer](hybrid-customer-orders.md)
-

@@ -1,13 +1,13 @@
---- 
+---
 title: Gi nytt navn til eller endre et prosjektstadium
 description: Denne oppgaven beskriver hvordan du gi nytt navn til eller endre et prosjektstadium.
 author: KimANelson
 manager: AnnBe
 ms.date: 11/07/2017
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: shylaw
 ms.search.scope: Operations
@@ -16,12 +16,12 @@ ms.search.industry: Service industries
 ms.author: knelson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 373973726aa5a3cc341d3ee1732b7cf86729f6c3
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: c9b2c03f87bc4d43e6795aa2e1ac378637fe11ce
-ms.openlocfilehash: c3fbaa70ee2ae581e87031e5586b500098793c25
-ms.contentlocale: nb-no
-ms.lasthandoff: 11/08/2017
-
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "351775"
 ---
 # <a name="rename-or-modify-a-project-stage"></a>Gi nytt navn til eller endre et prosjektstadium
 
@@ -35,4 +35,3 @@ Prosjektstadier kan fungere som en veiledning til prosjektets livssyklus. Du kan
 4. I listen velger du det forhåndsdefinerte eller brukerdefinerte stadiet som du vil endre. 
 5. Angi det nye navnet i Prosjektstadium-feltet.
 6. Klikk Lagre.
-

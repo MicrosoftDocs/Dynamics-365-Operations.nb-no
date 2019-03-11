@@ -1,13 +1,13 @@
 ---
-title: "Sentraliserte betalinger for Leverandører"
-description: "Organisasjoner som omfatter flere juridiske enheter, kan opprette og administrere betalinger ved hjelp av én juridisk enhet som håndterer alle betalinger. Derfor trenger ikke de samme betalingene angis i flere juridiske enheter. Denne artikkelen inneholder eksempler som viser hvordan postering for sentralisert betaling skal håndteres i ulike scenarier."
+title: Sentraliserte betalinger for Leverandører
+description: Organisasjoner som omfatter flere juridiske enheter, kan opprette og administrere betalinger ved hjelp av én juridisk enhet som håndterer alle betalinger. Derfor trenger ikke de samme betalingene angis i flere juridiske enheter. Denne artikkelen inneholder eksempler som viser hvordan postering for sentralisert betaling skal håndteres i ulike scenarier.
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: LedgerJournalTransVendPaym, VendOpenTrans
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: e6744aae97499385405e192cd6d6cb8590dd79b7
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 54329582abd36a8ca896ce731ce06ca4de58bbb0
-ms.contentlocale: nb-no
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "327073"
 ---
-
 # <a name="centralized-payments-for-accounts-payable"></a>Sentraliserte betalinger for Leverandører
 
 [!include [banner](../includes/banner.md)]
@@ -297,7 +296,6 @@ Fabrikam genererer en betaling på 75,00 for leverandør 3004, Fourth Coffee. Be
 | Skal betales til Fabrikam (Fabrikam Vest)      |              | 75,00         |
 | Leverandører (Fabrikam Vest)     | 25,00        |               |
 | Skal betales til Fabrikam Øst (Fabrikam Vest) |              | 25,00         |
-
 
 
 

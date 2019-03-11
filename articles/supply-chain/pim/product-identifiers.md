@@ -5,39 +5,38 @@ author: cvocph
 manager: AnnBe
 ms.date: 03/23/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: EcoResProductEntityIdentifierCode
 audience: Application User, IT Pro
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: global
-ms.search.industry: 
+ms.search.industry: ''
 ms.author: conradv
-ms.dyn365.ops.version: 7.3
+ms.dyn365.ops.version: 7.2999999999999998
 ms.search.validFrom: 2017-12-31
+ms.openlocfilehash: 58a32bd7f857e8173996cd4eb21f176bae508587
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 19cc8f92b5bb6d9ddfdc77785e48de17ed005703
-ms.openlocfilehash: afd542a652abdf6e45c83a6097dc8f0d36efa905
-ms.contentlocale: nb-no
-ms.lasthandoff: 03/23/2018
-
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "335422"
 ---
-
 # <a name="product-identifiers"></a>Produktidentifikatorer 
 
 [!include [banner](../includes/banner.md)]
 
 Dette emnet gir informasjon om de ulike typene av produktidentifikatorer og forklarer hvordan du kan legge til produktidentifikatorer i produktdataene.
 
-Når du arbeider med produkter i shop floor, eller i et lager i Microsoft Dynamics ERP eller Microsoft Dynamics CRM, må du ha en god strategi for å identifisere disse produktene og produktvariantene.
+Når du arbeider med produkter på shop floor eller i et lager i Microsoft Dynamics ERP eller Microsoft Dynamics CRM, må du ha en god strategi for å identifisere disse produktene og produktvariantene.
 
 ## <a name="unique-product-numberproduct-id"></a>Unikt produktnummer/produkt-ID
 
-I Microsoft Dynamics 365 for Finance and Operations er den primære IDen for et produkt produktnummeret (det vil si den unike produkt-IDen). Dette nummeret kan genereres automatisk av en nummerserie, eller det kan knyttes manuelt til et produkt. For produktvarianter kan numrene defineres gjennom produktterminologimalen .
+I Microsoft Dynamics 365 for Finance and Operations er den primære ID-en for et produkt produktnummeret (det vil si den unike produkt-ID-en) Dette nummeret kan genereres automatisk av en nummerserie, eller det kan knyttes manuelt til et produkt. For produktvarianter kan numrene defineres gjennom produktterminologimalen .
 
 I mange tilfeller er ikke produktnummeret opprinnelig opprettet i Finance and Operations. Det er derimot tilknyttet et produkt i et system for administrasjon av produktlivssyklus (PLM) eller administrasjon av produktdata (PDM). Du bruker i dette tilfellet dataenheter for å importere produkter og produktvarianter. Finance and Operations bruker deretter tallene i alle operasjoner.
 
@@ -186,4 +185,3 @@ Nå kan du bruke dataenhetene **Enhet for ID for Common Data Service for produkt
 ## <a name="related-topic"></a>Relaterte emne
 
 [Søke etter produkter og produktvarianter under ordreregistrering](search-products-product-variants.md)
-

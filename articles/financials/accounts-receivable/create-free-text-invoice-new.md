@@ -1,13 +1,13 @@
---- 
+---
 title: Opprett fritekstfakturaer
 description: Dette emnet forklarer hvordan du oppretter fritekstfakturaer.
 author: mikefalkner
 manager: AnnBe
 ms.date: 08/24/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: shylaw
 ms.search.scope: Operations
@@ -15,14 +15,13 @@ ms.search.region: Global
 ms.author: mfalkner
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
-ms.translationtype: HT
-ms.sourcegitcommit: f64292a1b3726ea9b43f959a44c4ed2a1f392484
 ms.openlocfilehash: f6ee6fda0b52b8af7c253b7d22e470345a8a421f
-ms.contentlocale: nb-no
-ms.lasthandoff: 09/05/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "332248"
 ---
-
 # <a name="create-free-text-invoices"></a>Opprett fritekstfakturaer
 
 [!include [banner](../includes/banner.md)]
@@ -86,4 +85,3 @@ Når du har kopiert linjene, kan du redigere informasjonen etter behov.
 Du kan opprette en fritekstfaktura fra en mal. Når du velger **Ny fra mal** i kategorien **Faktura**, kan du velge et malnavn og kundekontoen for den nye fritekstfakturaen. Standardverdier, for eksempel betalingsbetingelsene og betalingsmåten, kan fylles inn automatisk fra kunden, eller du kan bruke verdier som ble lagret i malen.
 
 Det opprettes en ny fritekstfaktura, og du kan redigere verdiene etter behov.
-

@@ -1,13 +1,13 @@
 ---
 title: Bestemme den optimale kombinasjonen av overlappende rabatter
-description: "Når rabatter overlapper hverandre, må du bestemme kombinasjonen av overlappende rabatter som vil produsere totalen for transaksjonen laveste eller høyeste sluttrabatten. Når rabattbeløpet varierer i henhold til prisen for produkter som er kjøpt, for eksempel som i vanlige «Kjøp 1, får 1 X prosent» (BOGO) retail rabatt, blir denne prosessen et problem for kombinatorisk optimalisering."
+description: Når rabatter overlapper hverandre, må du bestemme kombinasjonen av overlappende rabatter som vil produsere totalen for transaksjonen laveste eller høyeste sluttrabatten. Når rabattbeløpet varierer i henhold til prisen for produkter som er kjøpt, for eksempel som i vanlige «Kjøp 1, får 1 X prosent» (BOGO) retail rabatt, blir denne prosessen et problem for kombinatorisk optimalisering.
 author: kfend
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 ms.search.form: RetailParameters, RetailPeriodicDiscount,
 audience: Application User, IT Pro
 ms.reviewer: kfend
@@ -19,21 +19,20 @@ ms.search.industry: Retail
 ms.author: kfend
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.translationtype: HT
-ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
 ms.openlocfilehash: eebb532071e7c6bae7cfae93bfe795e79bb16c63
-ms.contentlocale: nb-no
-ms.lasthandoff: 01/04/2019
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "360699"
 ---
-
 # <a name="determine-the-optimal-combination-of-overlapping-discounts"></a>Bestemme den optimale kombinasjonen av overlappende rabatter
 
 [!include [banner](includes/banner.md)]
 
 Når rabatter overlapper hverandre, må du bestemme kombinasjonen av overlappende rabatter som vil produsere totalen for transaksjonen laveste eller høyeste sluttrabatten. Når rabattbeløpet varierer i henhold til prisen for produkter som er kjøpt, for eksempel som i vanlige «Kjøp 1, får 1 X prosent» (BOGO) retail rabatt, blir denne prosessen et problem for kombinatorisk optimalisering.
 
-Denne artikkelen gjelder for Microsoft Dynamics AX 2012 R3 med KB 3105973 (utgitt 2. november 2015) eller nyere, og for Microsoft Dynamics 365 for Retail. For å finne hvilken kombinasjonen av overlappende rabatter som skal brukes, i tide, har vi innført en metode for å bruk av overlappende rabatter. Vi kaller denne nye metoden **rangering av marginalverdi**. Rangering av marginalverdi brukes når tiden som er nødvendig for å evaluere de mulige kombinasjonene av overlappende rabatter, overskrider en terskel som kan konfigureres på siden **Detaljhandelsparametere**. Under rangering av marginalverdi beregnes en verdi for hver overlappende rabatt ved hjelp av rabattverdien for delte produkter. Overlappende rabatter brukes deretter fra den høyeste verdien i forhold til laveste relative verdi. Opplysninger om den nye metoden, kan du se delen "Marginalverdi" senere i denne artikkelen. Marginalverdien rangeringen er ikke brukt når rabattbeløp for et produkt ikke er berørt av et annet produkt i transaksjonen. Denne metoden brukes for eksempel ikke til to enkle rabatter, eller en enkel rabatt og et enkelt produkt kvantumsrabatt.
+Denne artikkelen gjelder for Microsoft Dynamics AX 2012 R3 med KB 3105973 (utgitt 2. november 2015) eller senere, og for Microsoft Dynamics 365 for Retail. For å finne hvilken kombinasjonen av overlappende rabatter som skal brukes, i tide, har vi innført en metode for å bruk av overlappende rabatter. Vi kaller denne nye metoden **rangering av marginalverdi**. Rangering av marginalverdi brukes når tiden som er nødvendig for å evaluere de mulige kombinasjonene av overlappende rabatter, overskrider en terskel som kan konfigureres på siden **Detaljhandelsparametere**. Under rangering av marginalverdi beregnes en verdi for hver overlappende rabatt ved hjelp av rabattverdien for delte produkter. Overlappende rabatter brukes deretter fra den høyeste verdien i forhold til laveste relative verdi. Opplysninger om den nye metoden, kan du se delen "Marginalverdi" senere i denne artikkelen. Marginalverdien rangeringen er ikke brukt når rabattbeløp for et produkt ikke er berørt av et annet produkt i transaksjonen. Denne metoden brukes for eksempel ikke til to enkle rabatter, eller en enkel rabatt og et enkelt produkt kvantumsrabatt.
 
 ## <a name="discount-examples"></a>Rabatteksempler
 
@@ -85,4 +84,3 @@ For å løse problemet med et eksponentielt økende antall kombinasjoner som må
 ![Overlappende rabattkombi 06](./media/overlapping-discount-combo-06.jpg)
 
 Etter marginalverdien av hver rabatt i et delt sett med produkter er beregnet, brukes rabattene på de delte produktene i rekkefølge, utførlig, fra høyeste marginalverdi til laveste marginalverdi. Alle gjenværende rabattmuligheter blir ikke sammenlignet hver gang etter en enkelt forekomst av en rabatt er brukt for denne metoden. I stedet er overlappende rabatter sammenlignet én gang og brukes deretter i rekkefølge. Ingen flere sammenligninger utføres. Du kan konfigurere grenseverdien for å bytte til metoden med marginalverdi i kategorien **Rabatt** på siden **Detaljhandelsparametere**. Akseptabel tid til å beregne den totale rabatten varierer på tvers av bransjer for detaljhandel. Nå er imidlertid denne tiden vanligvis mellom noen titalls millisekunder til ett sekund.
-

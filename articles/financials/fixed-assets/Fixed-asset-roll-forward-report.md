@@ -2,13 +2,13 @@
 title: Rapport for fremoverrulling av anleggsmidler
 description: Dette emnet forklarer hvordan du bruker rapporten Rull anleggsmidler forover.
 author: saraschi2
-manager: 
+manager: ''
 ms.date: 01/08/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
-ms.search.form: 
+ms.technology: ''
+ms.search.form: ''
 audience: Application User
 ms.reviewer: shylaw
 ms.search.scope: Core, Operations
@@ -17,13 +17,13 @@ ms.assetid: d7e86f72-95db-4423-9b04-761e9536a959
 ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2017-12-20
-ms.dyn365.ops.version: 7.3
+ms.dyn365.ops.version: 7.2999999999999998
+ms.openlocfilehash: 3f2da6d552dd27566d3e012d3e6055fcaa194e4b
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 16f7c199fb4c9905c465e5d4596d3eaa90104b83
-ms.contentlocale: nb-no
-ms.lasthandoff: 04/13/2018
-
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "313756"
 ---
 # <a name="fixed-assets-roll-forward-report"></a>Rapport for fremoverrulling av anleggsmidler
 
@@ -33,7 +33,7 @@ ms.lasthandoff: 04/13/2018
 
 **Rull anleggsmidler forover**-rapporten bruker rammeverket for elektronisk rapportering (ER). Før du kan kjøre rapporten, må anleggsmiddelmodell- og Rull anleggsmidler forover-konfigurasjonene importeres fra Microsoft Dynamics Lifecycle Services (LCS). hvis du vil ha mer informasjon, kan du se [Laste ned elektroniske rapporteringskonfigurasjoner fra Lifecycle Services](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/analytics/download-electronic-reporting-configuration-lcs).
 
-Denne rapporten er tilgjengelig i Microsoft Dynamics 365 Finance and Operations, Enterprise edition 7.3 eller som en hurtigreparasjon for Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (juli 2017). Tre hurtigreparasjoner må brukes i miljøer som har juli 2017-versjonen:
+Denne rapporten er tilgjengelig i Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 7.3, eller som en hurtigreparasjon for Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (juli 2017). Tre hurtigreparasjoner må brukes i miljøer som har juli 2017-versjonen:
 
 - **KB 4041754:** Konfigurasjonen for elektronisk rapportering (ER) kan ikke lastes ned fra LCS som ikke gjeldende for gjeldende programversjon etter bruk av plattformoppdateringspakken
 - **KB 4056107:** Elektronisk rapportering (GER) – kumulativ oppdatering 5
@@ -66,5 +66,4 @@ Følgende tabell beskriver feltene som er tilgjengelige i rapporten.
 |            Avhendinger: Salgsverdien            |                                                                                               Salgsverdien for anleggsmiddeltablået med en avhending – salgstransaksjon.                                                                                                |
 |           Avhendinger: Skrapverdi            |                                                                                               Skrapverdien for anleggsmiddeltablået med en avhending – skraptransaksjon.                                                                                               |
 |           Avhendinger: Resultat            |                                                                                 Resultatverdien som beregnes som en del av avhendingstransaksjonen for anleggsmiddeltablået.                                                                                 |
-
 

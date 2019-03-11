@@ -1,13 +1,13 @@
 ---
 title: Etterkalkuleringsversjoner
-description: "Denne artikkelen inneholder informasjon om kostnadsversjoner, hvordan du vedlikeholder dem, og hvilke typer data som du kan inkludere dem i. Hovedformålet med en etterkalkuleringsversjon er å inneholde kostnadsposter om varer, kostnadskategorier og beregningsformler for indirekte kostnader."
+description: Denne artikkelen inneholder informasjon om kostnadsversjoner, hvordan du vedlikeholder dem, og hvilke typer data som du kan inkludere dem i. Hovedformålet med en etterkalkuleringsversjon er å inneholde kostnadsposter om varer, kostnadskategorier og beregningsformler for indirekte kostnader.
 author: AndersGirke
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: BOMCalcDialog, BOMCalcTable, CostingVersion
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: a73be45d183f3cbdc19efbb9ee29fa621a113c66
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: cb8e8193b3312a63042a44cb082a33a196cbc1be
-ms.contentlocale: nb-no
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "330155"
 ---
-
 # <a name="costing-versions"></a>Etterkalkuleringsversjoner
 
 [!include [banner](../includes/banner.md)]
@@ -66,7 +65,6 @@ Hovedgrunnen til å aktivere innkjøpsprisdata er å definere innkjøpsprisposte
 Hvis du vil aktivere innkjøpsprisinnhold, kan du først definere en stykklisteberegningsgruppe som inneholder en kostprismodell for varens innkjøpspris, og tilordne stykklisteberegningsgruppen til innkjøpte varer. Du bruker deretter en kostprismodell for stykklisteberegningsgruppen når du utfører stykklisteberegninger med planlagte kostnader til å beregne salgsprisen på produserte varer. 
 
 Innkjøpsprisposter for varer brukes også som referanseinformasjon. Ved å endre statusen for en vares kjøpsprispost fra **Ventende** til **Aktiv** kan du oppdatere varens grunnleggende innkjøpspris. Den grunnleggende kjøpsprisen er ikke stedsbestemt og kan overstyres manuelt. Varens grunnleggende innkjøpspris brukes som en standard innkjøpspris på bestillinger.
-
 
 
 

@@ -1,13 +1,13 @@
 ---
 title: Definere en produktkonfigurasjonsmodell
-description: "Denne artikkelen beskriver fremgangsmåten for å sette opp og opprette en produktkonfigurasjonsmodell."
+description: Denne artikkelen beskriver fremgangsmåten for å sette opp og opprette en produktkonfigurasjonsmodell.
 author: cvocph
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: PCProductConfigurationModelListPage
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 10faa26a53b026a70487124d696b0313d1f5814d
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
-ms.openlocfilehash: 8504eb789b0d449cf2e29d4314d189dc0b8a6b43
-ms.contentlocale: nb-no
-ms.lasthandoff: 02/07/2018
-
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "360676"
 ---
-
 # <a name="set-up-a-product-configuration-model"></a>Definere en produktkonfigurasjonsmodell
 
 [!include [banner](../includes/banner.md)]
@@ -49,7 +48,6 @@ Denne artikkelen beskriver fremgangsmåten for å sette opp og opprette en produ
 | Teste en produktkonfigurasjonsmodell.                         | Test produktkonfigurasjonsmodellen fra siden **Detaljer om restriksjonsbasert produktkonfigurasjonsmodell** eller **Produktkonfigurasjonsmodeller**. Testing av produktkonfigurasjonsmodellene simulerer produktmodellkonfigurasjonsprosessen som skjer under ordrebehandlingen.                                                                                                |
 | Opprette malen produktkonfigurasjonsmodellen.                | Opprett en mal for produktkonfigurasjonsmodellen på siden **Konfigurasjonsmaler**. En konfigurasjonsmal inneholder verdier for attributter i produktkonfigurasjonsmodellen. Velg attributtverdiene på **Konfigurer linje**-siden. Du kan velge å laste inn en mal for produktmodellkonfigurasjon under produktmodellkonfigurasjonen.                                                   |
 | Konfigurere en vare.                                          | Produktkonfigurasjonsmodeller kan konfigureres fra en salgsordre, et salgstilbud, en bestilling eller en produksjonsordre.                                                                                                                                                                                                                                                                           |
-
 
 
 

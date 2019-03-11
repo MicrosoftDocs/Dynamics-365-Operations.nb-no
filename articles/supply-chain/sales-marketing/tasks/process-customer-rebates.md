@@ -1,13 +1,13 @@
---- 
+---
 title: Generere og behandle kunderabatter
-description: "Denne fremgangsmåten beskriver hvordan du behandler kunderabatter fra kravgenerering til de overføres som avsetninger til kunder."
+description: Denne fremgangsmåten beskriver hvordan du behandler kunderabatter fra kravgenerering til de overføres som avsetninger til kunder.
 author: omulvad
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: PdsRebateAgreement, SalesTableListPage, SalesCreateOrder, SalesTable, MCRPriceHistory, SalesEditLines,  PdsRebateTableListPage
 audience: Application User
 ms.reviewer: kfend
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 5afe2fa73e218aa9eb21aff866baa509860a83cb
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 348793abc6d219f38bcdc2629b77343d93927005
-ms.contentlocale: nb-no
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "336457"
 ---
 # <a name="generate-and-process-customer-rebates"></a>Generere og behandle kunderabatter
 
@@ -83,5 +83,4 @@ Denne fremgangsmåten beskriver hvordan du behandler kunderabatter fra kravgener
 9. Angi eller velg en verdi i feltet Kunde.
 10. Klikk OK.
     * En melding viser at rabatten ble behandlet, og statusen for kravene har blitt endret til Merk. Dette betyr at som et resultat av en rabattavsetningsjournal som posteres: a) kravene er nå overført til den midlertidige kundesaldoen som fradrag; b) avsetningskontoen for rabatt er kreditert for å representere den fremtidige gjelden for kunden. og c) utgiftskontoen for rabatten har blitt debitert, for å føre kostnadene påløpt i forbindelse med salg.   
-
 

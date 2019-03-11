@@ -5,27 +5,26 @@ author: Darinkramer
 manager: AnnBe
 ms.date: 08/27/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: 
-ms.search.form: 
+ms.technology: ''
+ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Talent
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2018-08-27
 ms.dyn365.ops.version: Talent August 2018 update
-ms.translationtype: HT
-ms.sourcegitcommit: d20bc3519096f1035d26f89d42aa7e8f0fc368cd
 ms.openlocfilehash: cdf0893835c1ee9edd89c43b3c5c842d89e6d526
-ms.contentlocale: nb-no
-ms.lasthandoff: 08/29/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "305679"
 ---
-
 # <a name="whats-new-or-changed-in-dynamics-365-for-talent-core-hr-august-2018"></a>Hva er nytt eller endret i Dynamics 365 for Talent Core HR (august 2018)
 
 [!include [banner](includes/banner.md)]
@@ -78,7 +77,7 @@ Med denne funksjonen kan du angi grunnlaget for den påløpte perioden på plann
 
 Når konfigurert til å bruke en av de bestemte datoene for ansatte, bruker registreringsprosessen den angitte datoen til å beregne avsetningsperiodene. Grunnlaget for påløpt periode vises også i den ansattes registrering, noe som hjelper deg med å forstå hva som brukes under prosessen med avsetningen.
 
-## <a name="microsoft-word-integration"></a>Microsoft Word-integrasjon
+## <a name="microsoft-word-integration"></a>Microsoft Word-integrering
 
 Dokumentmaler er aktivert i hele Core HR. Med denne funksjonen kan du opprette brev og rapporter basert på Word-maler du oppretter.
 
@@ -88,4 +87,3 @@ Mer informasjon om denne funksjonen er tilgjengelig i [Opplæring i Office-integ
 ## <a name="other-fixes"></a>Andre reparasjoner
 
 Denne versjonen inkluderer en rekke feilrettinger, nye enheter, reparasjoner for eksisterende enheter og lokaliserte etikettendringer.
-

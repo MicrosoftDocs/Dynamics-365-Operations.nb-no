@@ -1,32 +1,30 @@
 ---
 title: Registrere mottaket av returnerte varer
-description: "Du kan registrere at returnerte varer er ankommet, ved å bruke Ankomstoversikt-skjemaet eller Registrering-skjemaet."
+description: Du kan registrere at returnerte varer er ankommet, ved å bruke Ankomstoversikt-skjemaet eller Registrering-skjemaet.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 05/01/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: WMSArrivalOverview, InventTransRegister
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
 ms.author: ShylaThompson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 2be628d312e623e8ea6d92eb5edce12334190d9e
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 550b59a64fb0e81a56d6fea921e1b1df20c5f6e6
-ms.contentlocale: nb-no
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "328085"
 ---
-
-
 # <a name="register-the-receipt-of-returned-items"></a>Registrere mottaket av returnerte varer 
 
 [!include [banner](../includes/banner.md)]
@@ -113,6 +111,5 @@ I stedet for å bruke **Ankomstoversikt**-skjemaet kan du bruke **Registrering**
 [Ankomstoversikt (skjema)](https://technet.microsoft.com/en-us/library/hh227654\(v=ax.60\))
 
   
-
 
 

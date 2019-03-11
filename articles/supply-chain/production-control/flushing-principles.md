@@ -1,13 +1,13 @@
 ---
 title: Trekkprinsipp
-description: "Dette emnet beskriver de fire trekkprinsippene som brukes for råvareforbruk."
+description: Dette emnet beskriver de fire trekkprinsippene som brukes for råvareforbruk.
 author: johanhoffmann
 manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: JmgShopSupervisorReleaseOrders
 audience: Application User
 ms.reviewer: josaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
+ms.openlocfilehash: e4b9cd918bec9a094744b208821285c57f01798a
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: ba426692e2e404ab75e5730b8205115fc59e402f
-ms.openlocfilehash: f5fc4db479852ffac5f2b3401a0c1bd92c35a7cb
-ms.contentlocale: nb-no
-ms.lasthandoff: 02/08/2018
-
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "358307"
 ---
-
 # <a name="controlling-raw-material-consumption-by-using-flushing-principles"></a>Kontrollere råvareforbruk ved å bruke trekkprinsipper
 
 [!include [banner](../includes/banner.md)]
@@ -64,4 +63,3 @@ Ferdig-trekkprinsippet angir at materiale automatisk brukes når produksjonsordr
 
 ### <a name="available-at-location"></a>Tilgjengelig på lokasjon
 Tilgjengelig på lokasjon-trekkprinsippet angir at materialene automatisk brukes når de er registrert som plukket for produksjon. Materialet er registrert som plukket fra plassering når arbeidet for råvareplukking er fullført, eller når materialet er tilgjengelig på produksjonsinnleveringsstedet og materiallinjen er frigitt til lageret. Plukklisten som genereres under prosessen blir postert i en satsvis jobb. Dette prinsippet er relevant hvis du for eksempel har mange plukkaktivitetene mot én produksjonsordre. I dette tilfellet trenger du ikke å oppdatere plukklisten manuelt, og du kan få et oppdatert bilde av VIA-balansen.
-

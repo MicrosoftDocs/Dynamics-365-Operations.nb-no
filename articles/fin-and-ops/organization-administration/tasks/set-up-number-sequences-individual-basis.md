@@ -1,13 +1,13 @@
---- 
+---
 title: Konfigurere nummerserier enkeltvis
-description: "Nummerserier brukes til å generere lesbare, unike IDer for hoveddataposter og transaksjonsposter som krever dem."
+description: Nummerserier brukes til å generere lesbare, unike IDer for hoveddataposter og transaksjonsposter som krever dem.
 author: sericks007
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: NumberSequenceTableListPage, NumberSequenceDetails
 audience: Application User
 ms.reviewer: sericks
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 6734d66a06f8a8dc90a48bd68b7b4e22177b4672
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 4e2808e57dc8d137fac892d48e99d7687ff1bf81
-ms.contentlocale: nb-no
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "362217"
 ---
 # <a name="set-up-number-sequences-on-an-individual-basis"></a>Konfigurere nummerserier enkeltvis
 
@@ -43,5 +43,4 @@ Nummerserier brukes til å generere lesbare, unike IDer for hoveddataposter og t
 8. Utvid seksjonen Generelt.
     * I hurtigfanen Generelt angir du om en nummerserie er manuell, sammenhengende eller ikke-sammenhengende. Angi i tillegg det minste og største tallet som kan brukes i nummerserien.     Det anbefales ikke at du endrer ikke-sammenhengende nummerserier til sammenhengende nummerserier. Nummerserien vil ikke være virkelig sammenhengende. Denne endringen kan også føre til duplikatnøkkelbrudd i databasen. Sammenhengende nummerserier har i tillegg en større innvirkning på ytelsen.   
 9. Klikk Lagre.
-
 

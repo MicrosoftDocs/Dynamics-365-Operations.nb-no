@@ -1,13 +1,13 @@
 ---
 title: Kontrollere lagerarbeid ved hjelp av arbeidsmaler og lokasjonsdirektiver
-description: "Dette emnet beskriver hvordan du bruker arbeidsmaler og lokasjonsdirektiver for å bestemme hvordan og hvor arbeid utføres i lageret."
+description: Dette emnet beskriver hvordan du bruker arbeidsmaler og lokasjonsdirektiver for å bestemme hvordan og hvor arbeid utføres i lageret.
 author: perlynne
 manager: AnnBe
 ms.date: 09/21/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: WHSLocDirFailure, WHSLocDirHint, WHSLocDirTable, WHSLocDirTableUOM, WHSRFMenuItem, WHSWork, WHSWorkClass, WHSWorkPool, WHSWorkTemplateTable
 audience: Application User
 ms.reviewer: josaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: c4428613441424c81f4fd7dd92bbf842c62ce860
 ms.openlocfilehash: 74e7c36fb912f35252d6e40d17477ac2962cbc23
-ms.contentlocale: nb-no
-ms.lasthandoff: 10/16/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "325417"
 ---
-
 # <a name="control-warehouse-work-by-using-work-templates-and-location-directives"></a>Kontrollere lagerarbeid ved hjelp av arbeidsmaler og lokasjonsdirektiver
 
 [!include [banner](../includes/banner.md)]
@@ -163,4 +162,3 @@ Velg dette for å bruke partistrategier for varene som er partiaktivert. Hvis en
 I dette eksemplet vurderes det en bestillingsprosess der lokasjonsdirektivet må finne ledig kapasitet i et lager for lagervarer som nettopp er registrert i mottakssonen. Først må du prøve å finne ledig kapasitet i lageret ved å konsolidere med eksisterende lagerbeholdning. Hvis konsolidering ikke er mulig, må du finne en ledig lokasjon. 
 
 I dette scenariet må du definere to lokasjonsdirektivhandlinger. Den første handlingen i sekvensen må bruke strategien **Konsolider** og andre må bruke strategien **Tom lokasjon uten innkommende arbeid**. Med mindre du definerer en tredje handling for å håndtere et overflytscenario er to resultater mulig når det er ikke mer kapasitet i lageret: arbeid kan opprettes selv om ingen lokasjoner defineres, eller arbeidsopprettingsprosessen kan mislykkes. Resultatet bestemmes av oppsettet på siden **Feil med lokasjonsdirektiv** der du kan bestemme om du vil velge alternativet **Stopp arbeid ved feil med lokasjonsdirektiv** for hver arbeidsordretype.
-

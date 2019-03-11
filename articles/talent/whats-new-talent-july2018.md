@@ -5,27 +5,26 @@ author: josaw1
 manager: AnnBe
 ms.date: 07/31/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: 
-ms.search.form: 
+ms.technology: ''
+ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Talent
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
 ms.author: kherr
 ms.search.validFrom: 2018-07-31
 ms.dyn365.ops.version: Talent July 2018 update
-ms.translationtype: HT
-ms.sourcegitcommit: 330a4e1b820f1898bbbee15f8ec8fa427f30807f
 ms.openlocfilehash: 5cf1c17c3b833805a4797ec0fc7278ce3546ac2e
-ms.contentlocale: nb-no
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "305667"
 ---
-
 # <a name="whats-new-or-changed-in-dynamics-365-for-talent-core-hr-july-2018"></a>Hva er nytt eller endret i Dynamics 365 for Talent Core HR (juli 2018)
 
 [!include [banner](includes/banner.md)]
@@ -60,4 +59,3 @@ Titler er utvidet i denne oppdateringen. Feltet er nå 65 tegn. Denne endringen 
 ## <a name="benefit-enrollment-status-report"></a>Statusrapport for fordelsregistrering
 
 Innebygd rapportering om åpen registrering for fordeler hjelper deg med å forstå hvor ansatte er i den åpne registreringsprosessen. Du finner ut hvor mange ansatte som har fullført prosessen, som for øyeblikket fullfører den, og som ikke har startet. I tillegg kan du raskt vise alle problemer som oppstår under registrering av ansatte, og en fullstendig logg over alle innsendinger fra ansatte. Du kan derfor lett kontrollere og overvåke innsendinger fra ansatte.
-

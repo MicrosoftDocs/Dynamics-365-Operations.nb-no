@@ -1,13 +1,13 @@
 ---
 title: Godkjenne og bekrefte bestillinger
-description: "Dette emnet beskriver statusene som en bestilling går gjennom når den er opprettet, og effekten av å aktivere endringsadministrasjon på bestillinger."
+description: Dette emnet beskriver statusene som en bestilling går gjennom når den er opprettet, og effekten av å aktivere endringsadministrasjon på bestillinger.
 author: FrankDahl
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: PurchTable
 audience: Application User
 ms.reviewer: josaw
@@ -15,18 +15,17 @@ ms.search.scope: Core, Operations, Retail
 ms.custom: 93143
 ms.assetid: cd12a944-c52c-4579-a301-7abe1d237c72
 ms.search.region: Global
-ms.search.industry: 
+ms.search.industry: ''
 ms.author: fdahl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: d20bc3519096f1035d26f89d42aa7e8f0fc368cd
 ms.openlocfilehash: e274f52484d3fe1884152f155b6b7f0714f8842e
-ms.contentlocale: nb-no
-ms.lasthandoff: 08/29/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "336963"
 ---
-
 # <a name="approve-and-confirm-purchase-orders"></a>Godkjenne og bekrefte bestillinger
 
 [!include [banner](../includes/banner.md)]
@@ -86,7 +85,6 @@ Når en ordre er bekreftet, kan du ikke lenger slette den. Du kan imidlertid avb
 [Mottaksseddel mot bestillinger](product-receipt-against-purchase-orders.md)
 
 [Oversikt over leverandørfakturaer](../../financials/accounts-payable/vendor-invoices-overview.md)
-
 
 
 

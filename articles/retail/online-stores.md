@@ -5,9 +5,9 @@ author: kfend
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 ms.search.form: RetailChannelManagementWorkspace, RetailOnlineStoreList
 audience: Application User, IT Pro
 ms.reviewer: josaw
@@ -19,21 +19,20 @@ ms.search.industry: Retail
 ms.author: meeram
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
 ms.openlocfilehash: 2b736b5e5ce5b5b384181a73c72bbb89b072a284
-ms.contentlocale: nb-no
-ms.lasthandoff: 01/04/2019
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "324934"
 ---
-
-# <a name="set-up-online-stores"></a>Konfigurer nettbutikker
+# <a name="set-up-online-stores"></a>Konfigurere nettbutikker
 
 [!include [banner](includes/banner.md)]
 
 Denne artikkelen inneholder informasjon om nettbutikker for detaljhandel og hvordan du definerer dem i Microsoft Dynamics 365 for Retail.
 
-Dynamics 365 for Retail støtter flere kanaler for detaljhandel. Disse detaljhandelskanalene omfatter nettbutikker, telefonsentre og detaljhandelsbutikker (også kalt fysiske butikker). Med en nettbutikk får en forhandler en tilstedeværelse på nettet, slik at kundene får mulighet til å kjøpe produkter i nettbutikken i tillegg til den vanlige butikken. Hvis kunder kjøper produkter fra nettbutikken, kan disse produktene sendes til dem, eller de kan hente produktene i den lokale detaljhandelsbutikken. Du oppretter en nettbutikk i Dynamics 365 for Retail-klienten. Denne nettbutikken blir deretter publisert til en nettbutikk for tredjeparter som er integrert i Dynamics 365 for Retail. Tredjeparts nettbutikken fungerer som butikkfasaden (UI) for nettbutikken, og gir deg et valg av kundebehandlingssystem (CMS) og funksjoner for brukergrensesnitt. Det finnes flere integreringer av denne typen for Dynamics 365 for Retail. Egenskapene som du definerer for nettbutikken, styrer virkemåten til nettbutikken. La oss si at du definerer navigasjonskategorihierarkiet i Dynamics 365 for Retail og tilordner det til butikken. Når du publiserer nettbutikken på tredjeparts nettbutikken, vises navigasjonskategorihierarkiet i nettversjonen av butikken. Kunder bruker deretter navigasjonskategorihierarkiet til å søke i nettbutikken og søke etter produkter. Hvis du vil opprette en nettbutikk, må du konfigurere komponentene som gjør det mulig å behandle transaksjonene for butikken. Du må for eksempel legge til sortimenter, bruke attributter og definere betalingsmåter og leveringsmetoder. Du kan også definere priser, kampanjer, rabatter, forretningsavtaler og leveringsbetingelser som er spesifikke for nettbutikken. Når du har publisert nettbutikken på tredjeparts nettbutikken, kan du opprette detaljhandelsproduktkataloger for nettbutikken. Produktene i katalogen blir produktoversikter i nettbutikken. Når en handlende kjøper produkter fra nettbutikken, blir den tilgjengelige beholdningen oppdatert og synkronisert i klienten. I tillegg genereres salgsordrer for kjøpene som sendes til klienten for å bli oppfylt og behandlet.
+Dynamics 365 for Retail støtter flere kanaler for detaljhandel. Disse detaljhandelskanalene omfatter nettbutikker, telefonsentre og detaljhandelsbutikker (også kalt fysiske butikker). Med en nettbutikk får en forhandler en tilstedeværelse på nettet, slik at kundene får mulighet til å kjøpe produkter i nettbutikken i tillegg til den vanlige butikken. Hvis kunder kjøper produkter fra nettbutikken, kan disse produktene sendes til dem, eller de kan hente produktene i den lokale detaljhandelsbutikken. Du oppretter en elektronisk butikk i Dynamics 365 for Retail-klienten. Denne nettbutikken blir deretter publisert til en nettbutikk for tredjeparter som er integrert i Dynamics 365 for Retail. Tredjeparts nettbutikken fungerer som butikkfasaden (UI) for nettbutikken, og gir deg et valg av kundebehandlingssystem (CMS) og funksjoner for brukergrensesnitt. Det finnes flere integreringer av denne typen for Dynamics 365 for Retail. Egenskapene som du definerer for nettbutikken, styrer virkemåten til nettbutikken. La oss si at du definerer navigasjonskategorihierarkiet i Dynamics 365 for Retail og tilordner det til butikken. Når du publiserer nettbutikken på tredjeparts nettbutikken, vises navigasjonskategorihierarkiet i nettversjonen av butikken. Kunder bruker deretter navigasjonskategorihierarkiet til å søke i nettbutikken og søke etter produkter. Hvis du vil opprette en nettbutikk, må du konfigurere komponentene som gjør det mulig å behandle transaksjonene for butikken. Du må for eksempel legge til sortimenter, bruke attributter og definere betalingsmåter og leveringsmetoder. Du kan også definere priser, kampanjer, rabatter, forretningsavtaler og leveringsbetingelser som er spesifikke for nettbutikken. Når du har publisert nettbutikken på tredjeparts nettbutikken, kan du opprette detaljhandelsproduktkataloger for nettbutikken. Produktene i katalogen blir produktoversikter i nettbutikken. Når en handlende kjøper produkter fra nettbutikken, blir den tilgjengelige beholdningen oppdatert og synkronisert i klienten. I tillegg genereres salgsordrer for kjøpene som sendes til klienten for å bli oppfylt og behandlet.
 
 ## <a name="set-up-an-online-store"></a>Definere en nettbutikk
 
@@ -60,4 +59,3 @@ Før du oppretter en nettbutikk, må du definere navigasjonshierarkiet for detal
 ## <a name="organization-hierarchies"></a>Organisasjonshierarkier
 
 Organisasjonshierarkier brukes til å strukturere detaljhandelskanaler. Organisasjonshierarkier representerer relasjonene mellom organisasjonene som utgjør virksomheten. Når du definerer nettbutikker, kan du legge dem til i et organisasjonshierarki. Butikken lagrer og deler dataene som brukes for sortimenter, etterfylling og rapportering. Når du oppretter et organisasjonshierarki, må du tilordne et formål til det. Formålet angir hvordan hierarkiet brukes i forretningsstrukturen. Du kan opprette ett organisasjonshierarki for butikkprosessene og bruke dette hierarkiet til sortimenter, etterfylling og rapportering. Alternativt kan du opprette et eget organisasjonshierarki for hvert formål. Du kan også opprette flere hierarkier som har samme formål, og tilordne en egen kanal til hvert av dem. Hvis du har tenkt å publisere detaljhandelsproduktkataloger i nettbutikken, bør du minst legge til nettbutikken i et organisasjonshierarki for sortimenter. Produktene i en katalog velges fra sortimentene som er tilordnet til nettbutikken. Når katalogen publiseres, sammenligner publiseringsprosessen ikrafttredelsesdatoene for sortimentet som er tilordnet til nettbutikken, med produktene som er inkludert i katalogen, for å finne ut hvilke produkter som skal gjøres tilgjengelige i nettbutikken.
-

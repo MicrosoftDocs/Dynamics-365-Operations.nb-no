@@ -1,13 +1,13 @@
 ---
-title: "Oppdatere standard kostpris i et produksjonsmiljø"
-description: "Denne artikkelen gir veiledning for hvordan du kan oppdatere standardkostnader i et produksjonsmiljø."
+title: Oppdatere standard kostpris i et produksjonsmiljø
+description: Denne artikkelen gir veiledning for hvordan du kan oppdatere standardkostnader i et produksjonsmiljø.
 author: AndersGirke
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CostingVersion, InventStdCostConv
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: mguada
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: fccfcec3d74bd13aa1b6511ebd37ee1454d1b47b
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: b9ad13071c3e0c3a294e9d4413de160a58559640
-ms.contentlocale: nb-no
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "332363"
 ---
-
 # <a name="update-standard-costs-in-a-manufacturing-environment"></a>Oppdatere standard kostpris i et produksjonsmiljø
 
 [!include [banner](../includes/banner.md)]
@@ -46,7 +45,6 @@ Oppdateringer kan gjenspeile nye varer, kostnadskategorier eller formler for ber
 -   Beregn kostnadene for en nyprodusert vare på grunnlag av den definerte, godkjente og aktive stykklisten og ruteinformasjonen.
 
 Hvert tilfelle krever nøye overveielse om hvordan standard kostpris skal oppdateres.
-
 
 
 

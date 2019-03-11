@@ -5,9 +5,9 @@ author: margoc
 manager: AnnBe
 ms.date: 11/13/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 ms.search.form: SystemParameters
 audience: Application User, Developer, IT Pro
 ms.reviewer: margoc
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
 ms.openlocfilehash: 23bf579c1a4a315d0c12f848a71f89fc297c8625
-ms.contentlocale: nb-no
-ms.lasthandoff: 12/18/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "350740"
 ---
-
 # <a name="finance-and-operations-help-system"></a>Hjelpesystem for Finance and Operations
 
 [!include [banner](../includes/banner.md)]
@@ -33,7 +32,7 @@ ms.lasthandoff: 12/18/2018
 Dette emnet gir en oversikt over komponentene til hjelpesystemet for Microsoft Dynamics 365 for Finance and Operations.
 
 > [!NOTE]
-> Følgende produkter er nært beslektet: Dynamics 365 for Finance and Operations; Dynamics 365 for Retail; og Dynamics 365 for Talent. Den samme funksjonaliteten kan forekomme i alle de tre produktene. Følgelig blir produktnavnet 365 Dynamics for Retail i emner som først og fremst gjelder Retail; Dynamics 365 for Talent i emner som hovedsakelig er knyttet til medarbeidere; Dynamics 365 for Finance and Operations i emner som er knyttet til kjerneproduktet. Emner som er skrevet for ett produkt, gjelder kanskje for den samme funksjonaliteten i et relatert produkt.
+> Følgende tre produkter henger nøye sammen: Dynamics 365 for Finance and Operations, Dynamics 365 for Retail og Dynamics 365 for Talent. Den samme funksjonaliteten kan forekomme i alle de tre produktene. Det fører til at i emner som først og fremst gjelder Retail, blir produktnavnet Dynamics 365 for Retail, i emner som først og fremst er knyttet til Talent, blir produktnavnet Dynamics 365 for Talent, og i emner som er knyttet til kjerneproduktet, blir produktnavnet Dynamics 365 for Finance and Operations. Emner som er skrevet for ett produkt, gjelder kanskje for den samme funksjonaliteten i et relatert produkt.
 
 Hjelpesystemet er felles for følgende produkter:
 
@@ -194,10 +193,9 @@ Følgende tabell viser nettstedene våre. Områder med en stjerne (\*) ved siden
 |------------------------------------------------------------------------------------------------|-------------|
 | [Docs.microsoft.com](/dynamics365/)                                                            | Er vert for eller kobler til all produktdokumentasjon for Dynamics 365. |
 | [Microsoft Learn](https://docs.microsoft.com/learn/)                                           | Microsofts område for gratis e-læring. |
-| [Lifecycle Services](https://lcs.dynamics.com/)\*                                              | Gir et skybasert samarbeidsområde som kunder og partnere kan bruke til å administrere Dynamics 365 for Finance and Operations-prosjekter, fra førsalg til implementering og operasjoner. Dette området er nyttig i alle fasene ved implementering. |
+| [Lifecycle Services](https://lcs.dynamics.com/)\*                                              | Gir et skybasert samarbeidsområde som kunder og partnere kan bruke til å administrere Dynamics 365 for Finance and Operations-prosjekter fra før salg til implementering og operasjoner. Dette området er nyttig i alle fasene ved implementering. |
 | [Kundestøtteblogg](http://aka.ms/AXSupportBlog)                                                    | Gir tips som posteres av Dynamics 365 for Finance and Operations-kundestøtteteamet. |
 | [Docs.microsoft.com/tidligere versjoner](https://docs.microsoft.com/previous-versions/dynamics/) | Vert for innhold fra tidligere versjoner. |
 | [Dynamics-fellesskap](https://community.dynamics.com/)                                          | Vert for blogger, forum og videoer. |
 | [Microsoft.com/dynamics365/](https://www.microsoft.com/dynamics365/home)                       | Gir informasjon om evaluering og salg. |
 | [CustomerSource](https://mbs.microsoft.com/customersource/)\*                                  | Vert for opplæringsressurser for Finance and Operations, nedlastbare rapporter og hvitbøker og er primærområdet for støtte for serviceplaninnehavere. Kan kreve en serviceplan for å få tilgang til noen ressurser på området. |
-

@@ -1,13 +1,13 @@
---- 
+---
 title: Sende ordrer som direkte leveringer
-description: "Denne fremgangsmåten viser hvordan du oppretter en direktelevering for en salgsordre."
+description: Denne fremgangsmåten viser hvordan du oppretter en direktelevering for en salgsordre.
 author: omulvad
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: SalesTableListPage, SalesCreateOrder, SalesTable, PurchCreateFromSalesOrder, VendAccountItemLookup, SalesTableReferences, PurchTable, PurchEditLines, PurchTableReferences, MCRDropShipWorkbench
 audience: Application User
 ms.reviewer: kfend
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 5cd68aa1c15672c702db887c08ecf9b3d63f2618
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: f674de4877dd2d6e6f1ff02f16a68cb4805d9864
-ms.contentlocale: nb-no
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "339286"
 ---
 # <a name="ship-orders-as-direct-deliveries"></a>Sende ordrer som direkte leveringer
 
@@ -102,5 +102,4 @@ Denne fremgangsmåten viser hvordan du oppretter en direktelevering for en salgs
 14. Klikk Opprett direkte levering.
 15. Klikk kategorien Bekreftelse.
     * Etter at du har opprettet en direkte leveringsordre, flyttes den automatisk til kategorien Bekreftelse. Du kan velge å bekrefte bestillingen direkte fra denne siden. Når bestillingen er bekreftet, flyttes den automatisk til kategorien Levering, som kan du registrere mottaket fra.  
-
 

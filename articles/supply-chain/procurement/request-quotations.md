@@ -1,13 +1,13 @@
 ---
-title: "Tilbudsforespørsler (RFQ-er)"
-description: "Dette emnet gir en oversikt over tilbudsforespørsler (RFQ-er). Organisasjoner utsteder en tilbudsforespørsel når de ønsker å motta konkurrerende tilbud fra flere leverandører for varer eller tjenester de må kjøpe."
+title: Tilbudsforespørsler (RFQ-er)
+description: Dette emnet gir en oversikt over tilbudsforespørsler (RFQ-er). Organisasjoner utsteder en tilbudsforespørsel når de ønsker å motta konkurrerende tilbud fra flere leverandører for varer eller tjenester de må kjøpe.
 author: mkirknel
 manager: AnnBe
 ms.date: 06/21/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: PurchRFQCaseTable, PurchRFQCaseTableListPage, PurchRFQCompare, PurchRFQReplyTable, PurchRFQVendReplyTableListPage
 audience: Application User
 ms.reviewer: josaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 714715ccfbdd57e4450c301f5302e008c0c136b1
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 9b840f5511f6a0df0e9ce3db4be69a0ab4ec3261
-ms.openlocfilehash: 8d7b07027443d1ca3894ccb7ed7f3cf49a4dc3e3
-ms.contentlocale: nb-no
-ms.lasthandoff: 06/21/2018
-
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "351292"
 ---
-
 # <a name="requests-for-quotation-rfqs"></a>Tilbudsforespørsler (RFQ-er)
 
 [!include [banner](../includes/banner.md)]
@@ -58,7 +57,7 @@ Når du mottar bud via e-post, kan du angi dem på siden **Tilbudsforespørsler*
 Hvis en ny gjentakelse av et svar fra en leverndør er nødvendig, velger du **Retur** på siden **Tilbudsforespørsel**. Returhandlingen genererer en ny journal og en rapport som blir skrevet ut, arkivert, og sendt i henhold til utskriftsinnstillingene.
 
 > [!NOTE]
-> Navnet på siden **Tilbudsforespørsel** er endret. I tidligere versjoner av Dynamics 365 for Finance and Operations, kalles denne siden **Svar på tilbudsforespørsel**.
+> Navnet på siden **Tilbudsforespørsel** er endret. I tidligere versjoner av Dynamics 365 for Finance and Operations kalles denne siden **Svar på tilbudsforespørsel**.
 
 Hvis du har lagt til poengkriterier i tilbudsforespørselssaken, vil tilbudsforespørselsen ha et poengpanel der du kan gi poeng. De totale resultatene vises i tilbudsforespørselen når du sammenligner svarene på siden **Sammenlign svar**. På siden **Sammenlign svar** kan du også sammenligne andre svardata, for eksempel linjepris, leveringsdato og totalpris.
 
@@ -268,5 +267,4 @@ I eksemplet nedenfor du kan se den høyeste og laveste statusen på tilbudsfores
 |------------------------------------------------|-------------------------------------------------------------|--------------------------------------------------------------|------------------------------------------------|-------------------------------------------------|----------------------------------------------|-----------------------------------------------|
 | Godta et av budene. (eller minst én linje) |                          Mottatt                           |                           Godtatt                           |                    Mottatt                    |                    Godtatt                     |                   Mottatt                   |                   Godtatt                    |
 |           Avvis alle de andre budene.           |                          Avslått                           |                           Godtatt                           |                    Avslått                    |                    Godtatt                     |                   Avslått                   |                   Godtatt                    |
-
 

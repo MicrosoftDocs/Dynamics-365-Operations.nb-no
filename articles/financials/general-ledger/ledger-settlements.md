@@ -1,13 +1,13 @@
 ---
 title: Utligninger
-description: "Dette emnet forklarer hvordan du bruker siden Utligninger til å utligne finanstransaksjoner og tilbakeføre utligninger."
+description: Dette emnet forklarer hvordan du bruker siden Utligninger til å utligne finanstransaksjoner og tilbakeføre utligninger.
 author: mikefalkner
 manager: aolson
 ms.date: 09/28/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: LedgerTransSettlement
 audience: Application User
 ms.reviewer: shylaw
@@ -16,14 +16,13 @@ ms.search.region: Global
 ms.author: mikefalkner
 ms.search.validFrom: 2018-11-30
 ms.dyn365.ops.version: 8.1.1
+ms.openlocfilehash: b02a1a066913c9959e9a55e78789e5ff1a175c56
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: c6502a6fb0ceaed75fd5bb6ec5b2f13db1879eea
-ms.openlocfilehash: ec659a53c187b1bdfd81565d6e2f20a59e08834c
-ms.contentlocale: nb-no
-ms.lasthandoff: 10/12/2018
-
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "308489"
 ---
-
 # <a name="ledger-settlements"></a>Utligninger
 
 [!include [banner](../includes/banner.md)]
@@ -76,4 +75,3 @@ Du kan tilbakeføre en utligning som ble gjort ved en feiltakelse.
 ## <a name="update-the-list-of-accounts-that-are-included-in-the-list-of-transactions"></a>Oppdater listen over kontoer som er inkludert i listen over transaksjoner
 
 Velg **Utligningskontoer** for å åpne en dialogboks der du kan redigere kontoene som er inkludert i listen over transaksjoner. Velg **Ny** for å legge til nye kontoer i listen. Denne listen brukes til å filtrere listen over transaksjoner som vises på siden **Utligninger**.
-

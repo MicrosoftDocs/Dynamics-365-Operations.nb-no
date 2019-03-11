@@ -1,13 +1,13 @@
---- 
-title: "Opprette en bestilling for en engangsleverandør"
-description: "Denne fremgangsmåten viser hvordan du oppretter en bestilling manuelt for en engangsleverandør."
+---
+title: Opprette en bestilling for en engangsleverandør
+description: Denne fremgangsmåten viser hvordan du oppretter en bestilling manuelt for en engangsleverandør.
 author: FrankDahl
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: PurchTable, PurchCreateOrder
 audience: Application User
 ms.reviewer: shylaw
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: fdahl
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: beaf6bcbc870e11e74289375611c631306545633
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 2d4dabaf6e1d79cbd626294ee4e327f2725a5e43
-ms.contentlocale: nb-no
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "312882"
 ---
 # <a name="create-a-purchase-order-for-a-one-time-supplier"></a>Opprette en bestilling for en engangsleverandør
 
@@ -38,5 +38,4 @@ Denne fremgangsmåten viser hvordan du oppretter en bestilling manuelt for en en
 4. I Navn-feltet skriver du inn et unikt navn for leverandøren.
 5. Klikk OK.
     * Bestillingen kan nå fullføres og behandles som hvilken som helst ordre. Det finnes ingen spesielle egenskaper som er relatert til hvordan dette gjøres. Fakturaen registrerer en forfallstransaksjon på leverandørkontoen som ble opprettet med ordren, og deretter behandles betalingen. Når dette er fullført, kan leverandørkontoen slettes. Dette gjøres vanligvis av leverandøravdelingen.  
-
 

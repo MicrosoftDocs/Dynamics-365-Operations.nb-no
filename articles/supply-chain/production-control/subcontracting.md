@@ -1,28 +1,27 @@
 ---
 title: Utsetting
-description: "Dette emnet hjelper deg med å bygge en gjennomgang av utsetting i produksjonen i Microsoft Dynamics 365 for Finance and Operations."
+description: Dette emnet hjelper deg med å bygge en gjennomgang av utsetting i produksjonen i Microsoft Dynamics 365 for Finance and Operations.
 author: christophernread
 manager: AnnBe
 ms.date: 09/28/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: 
+ms.search.scope: ''
 ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2018-09-30
-ms.dyn365.ops.version: 
-ms.translationtype: HT
-ms.sourcegitcommit: ade3f4ad9878c9e885afc5034334e41897512871
+ms.dyn365.ops.version: ''
 ms.openlocfilehash: 55b516f928eadea9b7ddbb1192db79f3ab7fa204
-ms.contentlocale: nb-no
-ms.lasthandoff: 10/16/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "336710"
 ---
-
 # <a name="subcontracting"></a>Utsetting
 
 [!include [banner](../includes/banner.md)]
@@ -304,4 +303,3 @@ En produksjonsordre på 10 deler opprettes for produkt D8100, "Lakkert kabinett"
     ![Kostnadssammenligningsdiagrammer](./media/subcontract35_cost-comparison-charts.png)
 
 Manglende oppsett i data.
-

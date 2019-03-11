@@ -1,13 +1,13 @@
---- 
+---
 title: Definere avhengigheten av ER-konfigurasjoner i andre komponenter
-description: "For å fullføre disse trinnene, må du først fullføre trinnene i oppgaven TV-guiden ER behandle modellen tilordning konfigurasjoner, og du må ha tilgang til Microsoft Dynamics livssyklus tjenester (LCS)."
+description: For å fullføre disse trinnene, må du først fullføre trinnene i oppgaven TV-guiden ER behandle modellen tilordning konfigurasjoner, og du må ha tilgang til Microsoft Dynamics Lifecycle Services (LCS).
 author: NickSelin
 manager: AnnBe
 ms.date: 06/23/2017
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
 ms.search.scope: Operations
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
 ms.openlocfilehash: 18eb8de7c851e5477d93a00f744fe56929c43ca2
-ms.contentlocale: nb-no
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "365092"
 ---
 # <a name="define-the-dependency-of-er-configurations-on-other-components"></a>Definere avhengigheten av ER-konfigurasjoner i andre komponenter
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-For å fullføre disse trinnene, må du først fullføre trinnene i oppgaven TV-guiden ER behandle modellen tilordning konfigurasjoner, og du må ha tilgang til Microsoft Dynamics livssyklus tjenester (LCS).
+For å fullføre disse trinnene, må du først fullføre trinnene i oppgaven TV-guiden ER behandle modellen tilordning konfigurasjoner, og du må ha tilgang til Microsoft Dynamics Lifecycle Services (LCS).
 
 Denne fremgangsmåten viser hvordan du utformer en konfigurasjon for elektronisk rapportering (ER) og angi dens avhengighet fra andre programvarekomponenter, slik at du kan bidra til å sikre at konfigurasjonen skal lastes ned til en bestemt versjon av Microsoft Dynamics 365 for Finance and Operations. I dette eksemplet skal du opprette nødvendige ER-konfigurasjoner for eksempelfirmaet Litware, Inc. 
 
@@ -62,7 +62,7 @@ Denne fremgangsmåten er ment for brukere som har den systemansvarlige eller ele
 18. Velg Microsoft Dynamics AX 7.0 RTW.
 19. Skriv inn '[7.0.1265.3015,7.1)' i Versjon-feltet.
     * [7.0.1265.3015,7.1)  
-    * Avhengigheter blir evaluert når denne konfigurasjonen lastes ned fra en hvilken som helst ER repositoriet. Denne versjonen av konfigurasjonen skal lastes ned fra repositoriet ER når versjon 1 av "eksempel datamodellen-konfigurasjonen er enten allerede er på plass eller lastet ned på forhånd. Hvis det er lastet ned på forhånd, må det være fullført i Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, versjonen må være 7.0.1265.3015 eller senere, men må ikke overskride underordnet versjon 1.   
+    * Avhengigheter blir evaluert når denne konfigurasjonen lastes ned fra en hvilken som helst ER repositoriet. Denne versjonen av konfigurasjonen skal lastes ned fra repositoriet ER når versjon 1 av "eksempel datamodellen-konfigurasjonen er enten allerede er på plass eller lastet ned på forhånd. Hvis det er lastet ned på forhånd, den må fullføres i Microsoft Dynamics 365 for Finance and Operations, Enterprise edition er versjonen som må være 7.0.1265.3015 eller senere, men må ikke overskride underordnet versjon 1.   
 20. Klikk Lagre.
 21. Lukk siden.
 22. Klikk Endre status.
@@ -139,6 +139,5 @@ Denne fremgangsmåten er ment for brukere som har den systemansvarlige eller ele
 25. Gå til Organisasjonsstyring > Elektronisk rapportering > Konfigurasjoner.
 26. Utvid 'Sample data model' i treet.
     * Legg merke til at den tilordning konfigurasjonen for tilordning av eksemplet er lastet ned sammen med konfigurasjonen for valgte dataene. De to filene lastes ned sammen fordi tilordning av eksemplet er definert som implementerer valgte datamodellen og fordi den er tilgjengelig for økonomi og operasjoner. Eksempel på tilordning (alternativ) konfigurasjonen ikke er lastet ned fordi betingelsen for versjonen nødvendige programmet ikke er oppfylt.   
-    * Hvis du logger deg på Dynamics 365 for Finance and Operations, Enterprise edition, registrerer samme leverandør, får tilgang til samme LCS-prosjekt og laster ned den samme konfigurasjonen for data, lastes konfigurasjonen for eksempeltilordning (alternativ) ned, mens konfigurasjonen for eksempeltilordning vil bli hoppet over.  
-
+    * Hvis du logger deg på Dynamics 365 for Finance and Operations, Enterprise edition, registrere samme leverandør, tilgang til samme prosjekt LCS og laste ned den samme konfigurasjonen for data, konfigurasjonen eksempel tilordning (alternativ) lastes ned, mens tilordning av prøve konfigurasjonen vil bli hoppet over.  
 

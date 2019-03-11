@@ -1,13 +1,13 @@
 ---
 title: Arbeidsnedbrytningsstruktur
-description: "En arbeidsnedbrytningsstruktur (WBS) er en beskrivelse av arbeidet som skal utføres for et prosjekt. Det er et hierarki av oppgaver som representerer prosjektteamets forståelse av arbeidssammensetningen og av størrelsen, kostnaden og varigheten til hver komponent eller oppgave."
+description: En arbeidsnedbrytningsstruktur (WBS) er en beskrivelse av arbeidet som skal utføres for et prosjekt. Det er et hierarki av oppgaver som representerer prosjektteamets forståelse av arbeidssammensetningen og av størrelsen, kostnaden og varigheten til hver komponent eller oppgave.
 author: KimANelson
 manager: AnnBe
 ms.date: 06/05/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ProjWorkBreakdownStructure
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: knelson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: df4bc39f8df80580261102941712622ed59262bd
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 8bc3d23fac6112622e722e57b61fdb686f5a98ed
-ms.contentlocale: nb-no
-ms.lasthandoff: 04/13/2018
-
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "358905"
 ---
-
 # <a name="work-breakdown-structures"></a>Arbeidsnedbrytningsstruktur
 
 [!include [banner](../includes/banner.md)]
@@ -40,7 +39,7 @@ Detaljnivået i en arbeidsnedbrytningsstruktur avhenger av nøyaktighetsnivået 
 
 Prosjekter i bransjer som media og reklame, programvare og IT-infrastruktur er derimot ofte unike, og produktiviteten står i forhold til erfaringen og kompetansen til personen som utfører oppgaven. Disse bransjene bruker derfor en arbeidsnedbrytningsstruktur til å få et anslag av størrelsen på prosjektet, ikke til å spore fremdriften til prosjektet i detalj. 
 
-Å utvikle en arbeidsnedbrytningsstruktur er en intensiv prosess som vanligvis gjøres over en lang periode og krever samarbeid og informasjon fra en rekke ulike personer. Dette emnet beskriver hvordan du kan bruke forbedringer av arbeidsnedbrytningsstruktur i Microsoft Dynamics 365 for Finance and Operations til å oppfylle behovene for estimater og sporing.
+Å utvikle en arbeidsnedbrytningsstruktur er en intensiv prosess som vanligvis gjøres over en lang periode og krever samarbeid og informasjon fra en rekke ulike personer. Dette emnet beskriver hvordan du kan bruke forbedringer av arbeidsnedbrytningsstruktur i Microsoft Dynamics 365 for Finance and Operations til å oppfylle behovene for estimater og sporing.
 
 ## <a name="prerequisites-for-creating-a-wbs"></a>Forutsetninger for å opprette en arbeidsnedbrytningsstruktur
 For å kunne opprette en arbeidsnedbrytningsstruktur må du kunne lage en arbeidsplan og beregne arbeidskostnadene.
@@ -314,7 +313,6 @@ Arbeid = antall ressurser × varighet x antall timer for en standard arbeidsdag
 Du kan rette opp alle planleggingsfeil samtidig ved å klikke **Rett opp alle feil i tidsplan**. 
 
 Du kan også rette planleggingsfeil individuelt ved å klikke advarselsikonet for hver oppgave.
-
 
 
 

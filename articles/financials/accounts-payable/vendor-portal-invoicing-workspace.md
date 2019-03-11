@@ -1,13 +1,13 @@
 ---
-title: "Arbeidsområde for leverandørsamarbeidsfakturering"
-description: "Dette emnet forklarer hvordan du kan vise leverandørfakturaer og sende fakturaer fra arbeidsområdet for leverandørsamarbeidsfakturering."
+title: Arbeidsområde for leverandørsamarbeidsfakturering
+description: Dette emnet forklarer hvordan du kan vise leverandørfakturaer og sende fakturaer fra arbeidsområdet for leverandørsamarbeidsfakturering.
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 08/22/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: VendInvoiceWorkspace
 audience: Application User
 ms.reviewer: shylaw
@@ -18,21 +18,20 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
+ms.openlocfilehash: 5520012a00e918e8748b974773eeaf2450f0c55e
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 2368fae3913f67d9d2ce0bbe6b2e0bee7968bb15
-ms.contentlocale: nb-no
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "340528"
 ---
-
 # <a name="vendor-collaboration-invoicing-workspace"></a>Arbeidsområde for leverandørsamarbeidsfakturering
 
 [!include [banner](../includes/banner.md)]
 
 Dette emnet forklarer hvordan du kan vise leverandørfakturaer og sende fakturaer fra arbeidsområdet for leverandørsamarbeidsfakturering.
 
-Arbeidsområdet **Fakturering av leverandørsamarbeid** kan brukes til å vise informasjon om leverandør og sende fakturaer til Microsoft Dynamics 365 for Finance and Operations ved hjelp av funksjonene for arbeidsflyt.
+Arbeidsområdet **Fakturering av leverandørsamarbeid** kan brukes til å vise informasjon om leverandør og sende fakturaer til Microsoft Dynamics 365 for Finance and Operations som bruker funksjonene for arbeidsflyt.
 
 
 <a name="vendor-collaboration-invoicing-workspace"></a>Arbeidsområde for leverandørsamarbeidsfakturering
@@ -60,7 +59,6 @@ Opprette en ny faktura fra en bestilling
 Du kan opprette en ny leverandørfaktura ved å velge handlingen **Ny** i arbeidsområdet **Fakturering av leverandørsamarbeid**. Bestillingsnummeret og fakturanummeret må være oppgitt av leverandøren. Som standard vises alle linjene fra leverandørens bestilling på den nye fakturaen. Informasjon om antall og kostnad kan redigeres før du sender leverandørfakturaen til arbeidsflyten. Du kan knytte filer, notater, bilder og URL-adresser til en faktura før de sendes.
 
 Hvis du vil ha mer informasjon, kan du se [Leverandørsamarbeid med eksterne leverandører](../../supply-chain/procurement/vendor-collaboration-work-external-vendors.md)
-
 
 
 

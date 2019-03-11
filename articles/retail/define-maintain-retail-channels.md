@@ -1,13 +1,13 @@
 ---
 title: Definere og vedlikeholde detaljhandelskanaler
-description: "Dette emnet inneholder en oversikt over prosessen for å definere bankens fysiske butikker, som kalles detaljhandelsbutikker i Microsoft Dynamics 365 for Retail. Den inneholder informasjon om oppgavene du må fullføre både før og etter at du har definert en detaljhandelsbutikk."
+description: Dette emnet inneholder en oversikt over prosessen for å definere bankens fysiske butikker, som kalles detaljhandelsbutikker i Microsoft Dynamics 365 for Retail. Den inneholder informasjon om oppgavene du må fullføre både før og etter at du har definert en detaljhandelsbutikk.
 author: mugunthanm
 manager: AnnBe
 ms.date: 11/14/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 ms.search.form: RetailStoreTable, RetailStoreTableListPagePreviewPane
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Retail
 ms.author: mumani
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
 ms.openlocfilehash: 53ba6cdb2378ce9011c6e7e3ce4e67c789adb1e6
-ms.contentlocale: nb-no
-ms.lasthandoff: 01/04/2019
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "318632"
 ---
-
 # <a name="define-and-maintain-retail-channels"></a>Definere og vedlikeholde detaljhandelskanaler
 
 [!include [banner](includes/banner.md)]
@@ -37,7 +36,7 @@ Dynamics 365 for Retail støtter flere detaljhandelskanaler, for eksempel nettbu
 
 ## <a name="setting-up-retail-stores"></a>Definere detaljhandelsbutikker
 
-Før du kan definere en detaljhandelsbutikk i Dynamics 365 for Retail, må du fullføre noen nødvendige oppgaver. Du kan deretter opprette detaljhandelsbutikken og legge til detaljer.
+Før du kan definere en detaljhandelbutikk i Dynamics 365 for Retail, må du fullføre noen nødvendige oppgaver. Du kan deretter opprette detaljhandelsbutikken og legge til detaljer.
 
 ### <a name="prerequisites"></a>Nødvendig programvare
 
@@ -86,4 +85,3 @@ Når du har angitt detaljene for detaljhandelsbutikken, fullfører du disse oppg
 ## <a name="organization-hierarchies"></a>Organisasjonshierarkier
 
 Retail bruker organisasjonshierarkier til å strukturere detaljhandelskanaler. Organisasjonshierarkier representerer relasjonene mellom organisasjonene som utgjør virksomheten. Når du definerer butikker, kan du legge dem til i et organisasjonshierarki. Butikken lagrer og deler data som brukes for sortimenter, etterfylling og rapportering.
-

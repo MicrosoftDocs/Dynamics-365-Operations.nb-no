@@ -1,13 +1,13 @@
 ---
 title: Oversikt over budsjettering
-description: "Nesten alle selskap som bruker finansfunksjonaliteten i Microsoft Dynamics 365 for Finance and Operations, må være i stand til å opprette rapporter for budsjett i forhold til faktisk. Denne artikkelen forklarer minimumskonfigurasjonen som er nødvendig for å opprette budsjetter i Finance and Operations eller laste dem ned fra et tredjepartsprogram."
+description: Nesten alle selskap som bruker finansfunksjonaliteten i Microsoft Dynamics 365 for Finance and Operations, må være i stand til å opprette rapporter for budsjett i forhold til faktisk. Denne artikkelen forklarer minimumskonfigurasjonen som er nødvendig for å opprette budsjetter i Finance and Operations eller laste dem ned fra et tredjepartsprogram.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 01/11/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: BudgetParameters
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: global
 ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 01b7970119b9abb26570c19162e159dd05496168
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 1d768ee6d2244a237972f7183f27a60b93eea819
-ms.contentlocale: nb-no
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "332317"
 ---
-
 # <a name="budgeting-overview"></a>Oversikt over budsjettering 
 
 [!include [banner](../includes/banner.md)]
@@ -40,7 +39,7 @@ Det godkjente budsjettet for en juridisk enhet vedlikeholdes i et dokument som k
 Det finnes flere metoder for å opprette budsjettregisteroppføringer i Finance and Operations:
 
 -   Manuelt registrere dokumentinformasjon på siden **Budsjettregisteroppføringer**.
--   Bruke Microsoft Excel-malen som du kan åpne ved å klikke **Åpne i Excel**-knappen på siden **Budsjettregisteroppføringer**.
+-   Bruk Microsoft Excel-malen som du kan åpne ved å klikke **Åpne i Excel**-knappen på siden **Budsjettregisteroppføringer**.
 -   Bruk dataenheten **Budsjettkontooppføringer** i Databehandling for å importere budsjettregisteroppføringer. Du bør vurdere å bruke denne metoden og aktivere **parameteren** **Settbasert** behandling når du må importere mange budsjettkontooppføringer i systemet.
 -   Hvis firmaet bruker funksjonaliteten for planlegging av budsjett til å klargjøre budsjettdata, kan du bruke den periodiske prosessen **Generer budsjettregisteroppføring**.
 
@@ -80,7 +79,6 @@ Budsjettlederen kan gå gjennom gjeldende tilstand for et budsjett i arbeidsomr�
 Forespørselssiden **Faktisk i forhold til budsjett** lar deg drille ned til detaljene for budsjettbeløp kontra faktiske beløp. Velg en linje på forespørselssiden, og klikk deretter **Periodesaldoer** for å se budsjettbeløp og faktiske beløp som er spredt over regnskapsperioder. Siden **Budsjettkontooppføringer** inneholder gjennomgang til detaljene for budsjettbeløpet i budsjettregisteroppføringer. Siden **Økonomijournaloppføringer** åpner finanstransaksjonene som er inkludert i det beregnede **faktiske** beløpet. 
 
 Et firma som bruker funksjonaliteten for budsjettplanlegging, kan opprette og bruke *budsjettprognoser* i arbeidsområdet **Finansbudsjetter og prognoser**.
-
 
 
 

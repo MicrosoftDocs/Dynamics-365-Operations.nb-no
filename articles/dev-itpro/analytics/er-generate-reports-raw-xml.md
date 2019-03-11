@@ -1,13 +1,13 @@
 ---
-title: "Generere rapporter ved å legge til innhold som rå XML"
-description: "Du kan utforme elektronisk rapportering (ER)-formater som genererer utgående dokumenter i XML-format."
+title: Generere rapporter ved å legge til innhold som rå XML
+description: Du kan utforme elektronisk rapportering (ER)-formater som genererer utgående dokumenter i XML-format.
 author: NickSelin
 manager: AnnBe
 ms.date: 05/25/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
 ms.search.scope: Core, Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
+ms.openlocfilehash: 39503d051e3b4686bbaa0130fe5be7cb980fbcb4
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
-ms.openlocfilehash: 56a5f53e1d3da8aa57e98e7d34fbc9c4005b6df8
-ms.contentlocale: nb-no
-ms.lasthandoff: 08/09/2018
-
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "312192"
 ---
-
 # <a name="generate-reports-by-adding-content-as-raw-xml"></a>Generere rapporter ved å legge til innhold som rå XML
 
 [!include[banner](../includes/banner.md)]
@@ -39,4 +38,3 @@ Du kan bruke det nye **rå XML**-formatelementet til å utforme elektronisk rapp
 > Vær oppmerksom på at rammeverket ikke kontrollerer om XML-innhold som er plassert i det genererte dokumentet ved hjelp av **Rå XML**-formatelementet, er riktig.
 
 Hvis du vil vite mer om denne funksjonen, kan du spille av veiledningene **ER Bruk rå XML-data til å generere XML-rapporter (del 1: Utforme datamodell)** og **ER Bruk rå XML-data til å generere XML-rapporter (del 2: Utforme og kjøre rapport)**, som er en del av **7.5.4.3 Anskaffe/utvikle komponenter for IT-tjeneste/-løsning (10677)**-forretningsprosenten og kan lastes ned fra [Microsoft Download Center](https://go.microsoft.com/fwlink/?linkid=874684). Disse veiledningene forklarer deg prosessen med å konfigurere et ER-format for å sette inn rå XML-data i genererte filer.
-

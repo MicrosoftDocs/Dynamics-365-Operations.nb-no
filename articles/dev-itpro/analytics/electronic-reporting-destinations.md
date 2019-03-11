@@ -1,13 +1,13 @@
 ---
-title: "Mål for elektronisk rapportering (ER)"
-description: "Du kan konfigurere et mål for hver formatkonfigurasjon for elektronisk rapportering (ER) og utdatakomponenten (en mappe eller en fil). Brukere som er gitt riktige tilgangsrettigheter kan også endre målinnstillingene ved kjøretid. Denne artikkelen beskriver administrasjon av mål for elektronisk rapportering, måltyper som støttes og sikkerhetsvurderinger."
+title: Mål for elektronisk rapportering (ER)
+description: Du kan konfigurere et mål for hver formatkonfigurasjon for elektronisk rapportering (ER) og utdatakomponenten (en mappe eller en fil). Brukere som er gitt riktige tilgangsrettigheter kan også endre målinnstillingene ved kjøretid. Denne artikkelen beskriver administrasjon av mål for elektronisk rapportering, måltyper som støttes og sikkerhetsvurderinger.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 ms.search.form: DocuType, ERSolutionTable
 audience: Application User
 ms.reviewer: kfend
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: mrolecki
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
 ms.openlocfilehash: 301dccaf154c3c12bcc4d611a147cdef03b8f851
-ms.contentlocale: nb-no
-ms.lasthandoff: 08/13/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "314929"
 ---
-
 # <a name="electronic-reporting-er-destinations"></a>Mål for elektronisk rapportering (ER)
 
 [!include [banner](../includes/banner.md)]
@@ -37,7 +36,7 @@ Formatkonfigurasjoner for elektronisk rapportering (ER) inneholder vanligvis min
 ## <a name="availability-and-general-prerequisites"></a>Tilgjengelighet og generelle forutsetninger
 ER-målfunksjonaliteten er ikke tilgjengelig i Microsoft Dynamics AX 7.0 (februar 2016). Derfor må du installere Microsoft Dynamics 365 for Operations versjon 1611 (november 2016) for å bruke alle funksjonene som er beskrevet i dette emnet. Du kan også installere én av følgende forutsetninger. Vær imidlertid oppmerksom på at disse alternativene gir en mer begrenset ER-målopplevelse.
 
-- Microsoft Dynamics AX-applikasjonsobjekt 7.0.1 (mai 2016)
+- Microsoft Dynamics AX programversjon 7.0.1 (mai 2016)
 - [Hurtigreparasjonen for program](https://fix.lcs.dynamics.com/issue/results/?q=3160213) for administrasjon av mål for elektronisk rapportering
 
 Du kan definere mål bare for ER-konfigurasjoner som er importert, og formater som er tilgjengelige på siden **Elektroniske rapporteringskonfigurasjoner**.
@@ -119,7 +118,7 @@ Hvis du angir **Aktivert** til **Ja**, vises en dialogboks for åpning eller lag
 
 ### <a name="screen-destination"></a>Skjermmål
 
-Hvis du setter **Aktivert** til **Ja**, opprettes det en forhåndsvisning av utdata. Du kan vise enkelte filtyper, for eksempel XML, TXT eller PDF, direkte i et leservindu. For andre filtyper, for eksempel Microsoft Excel eller Word, benyttes Microsoft Office Online-tjenesten.
+Hvis du setter **Aktivert** til **Ja**, opprettes det en forhåndsvisning av utdata. Du kan vise enkelte filtyper, for eksempel XML, TXT eller PDF, direkte i et leservindu. For andre filtyper, for Microsoft Excel eller Word, benyttes Microsoft Office Online-tjenesten.
 
 ### <a name="power-bi-destination"></a>Power BI-mål
 
@@ -165,4 +164,3 @@ Forutsetningen er at formatet må være tilgjengelig i ER-konfigurasjoner. Hvis 
 ## <a name="additional-resources"></a>Tilleggsressurser
 
 [Oversikt over elektronisk rapportering](general-electronic-reporting.md)
-

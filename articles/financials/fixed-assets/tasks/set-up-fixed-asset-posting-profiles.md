@@ -1,13 +1,13 @@
---- 
+---
 title: Definere posteringsprofiler for anleggsmidler
 description: Denne oppgaveveiledninegn definerer posteringsprofiler for anleggsmiddel.
 author: saraschi2
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: AssetPosting
 audience: Application User
 ms.reviewer: twheeloc
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 286c8732c1f2c92d0f16582b0b9de41990280e5a
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: b9766d96d16429d0ce0864695a3157f54cad4054
-ms.contentlocale: nb-no
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "351108"
 ---
 # <a name="set-up-fixed-asset-posting-profiles"></a>Definere posteringsprofiler for anleggsmidler
 
@@ -132,5 +132,4 @@ Denne oppgaveveiledninegn definerer posteringsprofiler for anleggsmiddel.  Den b
 87. Velg "Netto bokført verdi" i feltet Poster verdi.
 88. Angi de ønskede verdiene i Hovedkonto-feltet.
 89. Angi ønskede verdier i Motkonto-feltet.
-
 

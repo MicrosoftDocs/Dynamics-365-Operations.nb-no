@@ -1,13 +1,13 @@
---- 
+---
 title: Definere nye avdelinger
-description: "Avdelinger er driftsenheter som representerer et funksjonsområde i et selskap, for eksempel salg eller regnskap."
+description: Avdelinger er driftsenheter som representerer et funksjonsområde i et selskap, for eksempel salg eller regnskap.
 author: kherr75
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: OMOperatingUnit, HierarchyDesigner, OMNodeSelection, HierarchyPublishAndCloseForm
 audience: Application User
 ms.reviewer: rschloma
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kherr
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: 6dedddf305e303de5b284b34420cd0eda5170ed1
-ms.contentlocale: nb-no
-ms.lasthandoff: 09/14/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "342851"
 ---
 # <a name="define-new-departments"></a>Definere nye avdelinger
 
@@ -51,5 +51,4 @@ Avdelinger er driftsenheter som representerer et funksjonsområde i et selskap, 
     * Når du publiserer avdelingshierarkiet, kan du velge når endringene skal gjøres gjeldende. Endringer kan dateres i fremtiden. Du vet for eksempel at i begynnelsen av regnskapsåret skal du legge til en ekstra avdeling. Du kan angi gyldighetsdatoen til begynnelsen av regnskapsåret, og endringene i hierarkiet trer i kraft på denne datoen.  
 16. Skriv inn en verdi i feltet Beskriv endringer.
 17. Klikk Publiser.
-
 

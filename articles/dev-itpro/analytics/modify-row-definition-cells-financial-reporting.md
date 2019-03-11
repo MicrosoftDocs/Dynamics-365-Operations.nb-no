@@ -5,9 +5,9 @@ author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 ms.search.form: FinancialReports
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
 ms.openlocfilehash: 6193d70c53ee09a28aa8763cb625b315ec180b95
-ms.contentlocale: nb-no
-ms.lasthandoff: 08/13/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "323646"
 ---
-
 # <a name="modify-row-definition-cells"></a>Endre celler for raddefinisjon
 
 [!include [banner](../includes/banner.md)]
@@ -387,10 +386,10 @@ Du kan begrense en rad til en eksisterende registerkode. Kolonnedefinisjonen må
 Noen regnskapssystemer støtter kontoattributter og transaksjonsattributter i de økonomiske dataen. Disse attributtene fungerer som virtuelle kontosegmenter, og kan inneholde tilleggsinformasjon om konto eller transaksjon. Denne tilleggsinformasjonen kan være konto-ID-er, parti-ID-er, postnumre eller andre attributter. Hvis regnskapssystemet støtter attributter, kan du bruke kontoattributter eller transaksjonsattributter som radmodifikatorer i raddefinisjonen. Hvis du vil ha informasjon om hvordan du overstyrer radinformasjon, kan du se avsnittet "Overstyre en kolonnedefinisjon" tidligere i denne artikkelen.
 
 ## <a name="specify-a-link-to-financial-dimensions-cell"></a>Angi en celle for kobling til finansdimensjoner
-Cellen **Kobling til finansdimensjoner** inneholder koblinger til de økonomiske dataene som skal tas med i hver rad i en rapport. Denne cellen inneholder dimensjonsverdier, men du kan angi celler i et Microsoft Excel-regneark i stedet for eller i tillegg til segmentverdiene eller dimensjonsverdier. Åpne dialogboksen **Dimensjoner**, og dobbeltklikk cellen **Kobling til finansdimensjoner**.
+Cellen **Kobling til finansdimensjoner** inneholder koblinger til de økonomiske dataene som skal tas med i hver rad i en rapport. Denne cellen inneholder dimensjonsverdier, men du kan angi celler i et Microsoft Excel-regneark i stedet for, eller i tillegg til, segmentverdier eller dimensjonsverdier. Åpne dialogboksen **Dimensjoner**, og dobbeltklikk cellen **Kobling til finansdimensjoner**.
 
 > [!NOTE]
-> Rapportutforming kan ikke velge kontoer, dimensjoner eller felt fra Microsoft Dynamics ERP-systemet som inneholder ett av følgende reserverte tegn: &, \*, \[, \], { eller }. Hvis du vil angi informasjon for en rad som allerede finnes i raddefinisjonen, kan du legge til informasjonen i cellen **Kobling til finansdimensjoner**. Hvis du vil legge til nye rader som er koblet til de økonomiske dataen, kan du bruke dialogboksen **Sett inn rader fra** for å opprette nye rader i rapportdefinisjonen. Kolonnetittelen endres, avhengig av hvordan kolonnen er konfigurert, som vist i tabellen nedenfor.
+> Rapportutforming kan ikke velge kontoer, dimensjoner eller felt fra Microsoft Dynamics ERP-systemet som inneholder ett av følgende reserverte tegn: &, \*, \[, \], {, eller }. Hvis du vil angi informasjon for en rad som allerede finnes i raddefinisjonen, legger du til informasjonen i cellen **Kobling til finansdimensjoner**. Hvis du vil legge til nye rader som er koblet til de økonomiske dataen, kan du bruke dialogboksen **Sett inn rader fra** for å opprette nye rader i rapportdefinisjonen. Kolonnetittelen endres, avhengig av hvordan kolonnen er konfigurert, som vist i tabellen nedenfor.
 
 | Koblingstype som er valgt       | Beskrivelsen av koblingskolonnen endres til dette |
 |----------------------------------|----------------------------------------------------|
@@ -429,14 +428,14 @@ Når du angir en naturlige segmentverdi i dialogboksen **Dimensjoner**, kan du p
 Du kan angi en rekke segmentverdiene eller dimensjonsverdier. Fordelen med å angi et område er at du ikke trenger å oppdatere raddefinisjonen hver gang en ny verdi for segment- eller dimensjonsverdien legges til de økonomiske dataen. Området **+Konto=\[6100:6900\]** henter for eksempel verdiene fra kontoene 6100 til og med 6900 inn i radbeløpet. Når et område inneholder et jokertegn (?), evaluerer ikke rapportutforming området tegn for tegn. I stedet bestemmes den lave og høye enden av området, og deretter inkluderes sluttverdiene og alle verdier mellom dem.
 
 > [!NOTE]
-> Rapportutforming kan ikke velge kontoer, dimensjoner eller felt fra Microsoft Dynamics ERP-systemet som inneholder ett av følgende reserverte tegn: &, \*, \[, \], { eller }. Du kan legge til et &-tegn bare når du bygger raddefinisjoner automatisk ved hjelp av dialogboksen **Sett inn rader fra dimensjoner**.
+> Rapportutforming kan ikke velge kontoer, dimensjoner eller felt fra Microsoft Dynamics ERP-systemet som inneholder ett av følgende reserverte tegn: &, \*, \[, \], {, eller }. Du kan legge til et &-tegn bare når du bygger raddefinisjoner automatisk ved hjelp av dialogboksen **Sett inn rader fra dimensjoner**.
 
 ### <a name="multiple-segment-or-multiple-dimension-ranges"></a>Flersegments- eller fleredimensjonsområder
 
 Når du angir et område ved hjelp av kombinasjoner av flere dimensjonsverdier, gjøres områdesammenligningen på en ..\\financial-dimensions\\dimension-by-dimension basis. Områdesammenligningen kan ikke utføres tegn for tegn eller for delsegment. Området **+Konto=\[5000:6000\], Avdeling=\[1000:2000\], Kostsenter=\[00\]** omfatter bare kontoer som samsvarer med hvert segment. I dette scenariet den første dimensjonen må være i området fra 5000 gjennom 6000, den andre dimensjonen må være i området fra 1000 til 2000, og den siste dimensjonen må være 00. For eksempel **+Konto=\[5100\], Avdeling=\[1100\], Kostsenter=\[01\]** er ikke inkludert i rapporten, fordi det siste segmentet er utenfor det angitte området. Hvis en segmentverdi inneholder mellomrom, setter du verdien i hakeparenteser (\[ \]). Følgende verdier er gyldige for et segment med fire tegn: **\[ 234\], \[123 \], \[1 34\]**. Dimensjonsverdier som skal stå i hakeparentes (\[ \]), og rapportutforming legger til disse parentesene for deg. Når et område med flere segmenter eller flere dimensjoner inneholder jokertegn (? eller \*), bestemmes den lave og høye enden av hele flersegmenters- eller flerdimensjonsområdet og deretter inkluderes sluttverdiene og alle verdier mellom dem. Hvis du har et stort område, for eksempel hele rekken med kontoene fra 40 000 til 99 999, må du angi en gyldig start- og sluttkonto når det er mulig.
 
 > [!NOTE] 
-> Rapportutforming kan ikke velge kontoer, dimensjoner eller felt fra Microsoft Dynamics ERP-systemet som inneholder ett av følgende reserverte tegn: &, \*, \[, \], { eller }. Du kan legge til et &-tegn bare når du bygger raddefinisjoner automatisk ved hjelp av dialogboksen **Sett inn rader fra dimensjoner**.
+> Rapportutforming kan ikke velge kontoer, dimensjoner eller felt fra Microsoft Dynamics ERP-systemet som inneholder ett av følgende reserverte tegn: &, \*, \[, \], {, eller }. Du kan legge til et &-tegn bare når du bygger raddefinisjoner automatisk ved hjelp av dialogboksen **Sett inn rader fra dimensjoner**.
 
 ## <a name="add-or-subtract-from-other-accounts-in-a-row-definition"></a>Legge til eller trekke fra andre kontoer i en raddefinisjon
 Hvis du vil legge til eller trekke fra pengebeløp i én konto fra pengebeløp i en annen konto, kan du bruke plusstegnet (+) og minustegnet (-) i cellen **Kobling til finansdimensjoner**. Tabellen nedenfor viser akseptable formater for å legge til og trekke fra koblinger til økonomiske data.
@@ -456,10 +455,10 @@ Hvis du vil legge til eller trekke fra pengebeløp i én konto fra pengebeløp i
 | Trekk fra et område med segmentverdier.                                                     | -Konto=\[1200:1205\]                                                                                       |
 | Trekk fra et område med segmenteverdier som inneholder jokertegn.                    | -Konto=\[120?:130?\]                                                                                       |
 
-Selv om du kan endre kontoene direkte, kan du også bruke dialogboksen **Dimensjoner** for å angi riktig formatering på koblingene for de økonomiske dataene. Alle verdiene kan inneholde jokertegn (? eller \*). Rapportutforming kan imidlertid ikke velge kontoer, dimensjoner eller felt fra Microsoft Dynamics ERP-systemet som inneholder ett av følgende reserverte tegn: &, \*, \[, \], { eller }.
+Selv om du kan endre kontoene direkte, kan du også bruke dialogboksen **Dimensjoner** for å angi riktig formatering på koblingene for de økonomiske dataene. Alle verdiene kan inneholde jokertegn (? eller \*). Rapportutforming kan imidlertid ikke velge kontoer, dimensjoner eller felt fra Microsoft Dynamics ERP-systemet som inneholder ett av følgende reserverte tegn: &, \*, \[, \], {, eller }.
 
 > [!NOTE]
-> Hvis du vil trekke fra verdier, må du sette parenteser rundt verdiene. Hvis du for eksempel angir **450?-(4509)**, vises dette som **+Konto=\[4509\]-Konto=\[450?\]**, og du angir for rapportutforming å trekke beløpet for kontosegment 4509 fra beløpet for kontosegmenter som begynner med 450.
+> Hvis du vil trekke fra verdier, må du sette parenteser rundt de verdiene. Hvis du for eksempel angir **450?-(4509)**, vises dette som **+Konto=\[4509\]-Konto=\[450?\]**, og du angir for rapportutforming å trekke beløpet for kontosegment 4509 fra beløpet for kontosegmenter som begynner med 450.
 
 ### <a name="add-or-subtract-accounts-from-other-accounts"></a>Legge til eller trekke fra kontoer fra andre kontoer
 
@@ -533,4 +532,3 @@ Et dimensjonsverdisett er en navngitt gruppe med dimensjonsverdier. Et dimensjon
 ## <a name="additional-resources"></a>Tilleggsressurser
 
 [Finansrapportering](financial-reporting-intro.md)
-

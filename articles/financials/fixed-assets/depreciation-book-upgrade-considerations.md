@@ -1,13 +1,13 @@
 ---
-title: "Oversikt over oppgradering for avskrivningstablå"
-description: "I tidligere versjoner var det to vurderingskonsepter for anleggsmidler: verdimodeller og avskrivningstablåer. I Microsoft Dynamics 365 for Operations (1611) er verdimodellfunksjonaliteten og funksjonaliteten for avskrivningstablå slått sammen til ett enkelt konsept som kalles et tablå. Dette emnet inneholder noen ting å ta hensyn til for oppgraderingen."
+title: Oversikt over oppgradering for avskrivningstablå
+description: 'I tidligere versjoner var det to vurderingskonsepter for anleggsmidler: verdimodeller og avskrivningstablåer. I Microsoft Dynamics 365 for Operations (1611) er verdimodellfunksjonaliteten og funksjonaliteten for avskrivningstablå slått sammen til ett enkelt konsept som kalles et tablå. Dette emnet inneholder noen ting å ta hensyn til for oppgraderingen.'
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User, Developer
 ms.reviewer: shylaw
 ms.search.scope: Core, Operations
@@ -17,14 +17,13 @@ ms.search.region: global
 ms.author: saraschi
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
+ms.openlocfilehash: 805f6ab1cd1d0996e685278cc997f532213c76c3
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: e95fa9dd15dfe5e6b26de61b5dbc1a9a6c0d768d
-ms.contentlocale: nb-no
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "359319"
 ---
-
 # <a name="depreciation-book-upgrade-overview"></a>Oversikt over oppgradering for avskrivningstablå
 
 [!include [banner](../includes/banner.md)]
@@ -81,7 +80,6 @@ Når du bruker fremgangsmåten for systemgenerert nummerserie (alternativ 1), br
 Når du bruker fremgangsmåten for brukerdefinert nummerserie (alternativ 2), sjekker dataoppgraderingen om nummerserien med det angitte omfanget finnes i databasen for hver partisjon og firma med avskrivningstablåtransaksjoner. Hvis den finnes, bruker oppgraderingen rad for rad-behandling for å tildele bilagsnumre som angis av nummerserien ved hjelp av rammeverket for nummerserier. Hvis nummerserien ikke finnes med angitte omfanget, bruker oppgraderingen fremgangsmåten for standard systemdefinert nummerserie for å tildele bilagsnumrene, og det opprettes en ny nummerserie med angitte standardparametere etter tildelingen.
 
 For begge fremgangsmåtene vil skriptet for dataoppgradering også bruke nummerserien for **Bilagsserie**-feltet på de nye journalnavnene for økonomimodulen som er opprettet for de tidligere journalnavnene for avskrivningstablå.
-
 
 
 

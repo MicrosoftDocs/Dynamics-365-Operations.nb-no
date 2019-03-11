@@ -5,9 +5,9 @@ author: sericks007
 manager: AnnBe
 ms.date: 12/10/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: sericks
 ms.search.scope: Operations
@@ -17,19 +17,18 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 8f4413573f2e269e5a523940fbb841358e178d10
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 48e2eea2cc986edc49d5192945c3d913c3bb9756
-ms.openlocfilehash: 8a3405c434e402af68e59950f1e4d1a31cbf2813
-ms.contentlocale: nb-no
-ms.lasthandoff: 12/04/2018
-
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "329258"
 ---
-
 # <a name="removed-or-deprecated-features"></a>Fjernede eller avskrevne funksjoner
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet beskriver funksjonene som er fjernet eller avskrevet for Dynamics 365 for Finance and Operations.
+Dette emnet beskriver funksjoner som er fjernet eller avskrevet for Dynamics 365 for Finance and Operations.
 
 - En *fjernet* funksjon er ikke lenger tilgjengelig i produktet.
 - En *avskrevet* funksjon er ikke i aktiv utvikling og kan bli fjernet i en fremtidig oppdatering.
@@ -64,7 +63,7 @@ Funksjonen for å konfigurere txt og xml-filformat med deklarasjoner.
 | **Erstattet med en annen funksjon?**   | Ja. |
 | **Berørte produktområder**         | Økonomimodul |
 | **Distribusjonsalternativ**              | Alle |
-| **Status**                         | Fjernet fra Dynamics 365 for Finance and Operations 8.1 med plattformoppdatering 20. |
+| **Status**                         | Fjernet fra og med Dynamics 365 for Finance and Operations 8.1 med plattformoppdatering 20. |
 
 ### <a name="financial-reports-generator-for-russia"></a>Generator for finansrapporter for Russland
 Et verktøy for å konfigurere datainnsamling for regnskaps- og avgiftsrapporter og eksportere data til XLS- og DOC-rapportmaler. Funksjonelle deler: Eksportere data til XLS- og DOC-rapportmaler, spørringer, faste forutsetninger fjernes. 
@@ -75,7 +74,7 @@ Et verktøy for å konfigurere datainnsamling for regnskaps- og avgiftsrapporter
 | **Erstattet med en annen funksjon?**   | Ja. Oppsettet av brukergrensesnittet for finansrapporter skal brukes til å definere datasamlingsregler etter finanskontoer eller mva-registre. Eksport av data til forskjellige filtyper, faste forutsetninger og spørringsaktive datainnsamlingsregler skal konfigureres i Elektronisk rapportering. |
 | **Berørte produktområder**         | Økonomimodul. |
 | **Distribusjonsalternativ**              | Alle |
-| **Status**                         | Fjernet fra Dynamics 365 for Finance and Operations 8.1 med plattformoppdatering 20. |
+| **Status**                         | Fjernet fra og med Dynamics 365 for Finance and Operations 8.1 med plattformoppdatering 20. |
 
 ### <a name="integration-with-external-providers-for-sending-electronic-reporting-through-communication-channels-for-russia"></a>Integrasjon med eksterne leverandører for sending av elektronisk rapportering via kommunikasjonskanaler for Russland
 Med eksport av genererte elektroniske filer med deklarasjoner til mappen for å sende ytterligere til offisielle leverandører av elektroniske rapportering som importerer tilbake tilstand.
@@ -86,7 +85,7 @@ Med eksport av genererte elektroniske filer med deklarasjoner til mappen for å 
 | **Erstattet med en annen funksjon?**   | Ja.  |
 | **Berørte produktområder**         | Økonomimodul, mva |
 | **Distribusjonsalternativ**              | Alle |
-| **Status**                         | Fjernet fra Dynamics 365 for Finance and Operations 8.1 med plattformoppdatering 20. |
+| **Status**                         | Fjernet fra og med Dynamics 365 for Finance and Operations 8.1 med plattformoppdatering 20. |
 
 
 ### <a name="profit-tax-register-wizard"></a>Veiviser for registre for fortjenesteavgift
@@ -95,10 +94,10 @@ Funksjon for å opprette maler for nye registre for fortjenesteavgift. Denne fun
 |   |  |
 |------------|--------------------|
 | **Årsak til avskrivning/fjerning** | Funksjonen er ikke kompatibel med Dynamics 365 for Finance and Operations-utvidelsesmodellen. |
-| **Erstattet med en annen funksjon?**   | Antall |
+| **Erstattet med en annen funksjon?**   | Nr. |
 | **Berørte produktområder**         | Mva |
 | **Distribusjonsalternativ**              | Alle |
-| **Status**                         | Fjernet fra Dynamics 365 for Finance and Operations 8.1 med plattformoppdatering 20. |
+| **Status**                         | Fjernet fra og med Dynamics 365 for Finance and Operations 8.1 med plattformoppdatering 20. |
 
 
 ## <a name="dynamics-365-for-finance-and-operations-80-with-platform-update-15"></a>Dynamics 365 for Finance and Operations 8.0 med plattformoppdatering 15
@@ -140,13 +139,13 @@ Disse to rapportene støttes ikke lenger i Finance and Operations. I stedet kan 
 | **Distribusjonsalternativ**        | Alle|
 | **Status**                       | Avskrevet: Menyelementene for de to rapportene er fjernet i versjon 7.3. Koden for rapportene beholdes imidlertid i produktet. Planen er å fjerne koden i en fremtidig versjon. |
 
-### <a name="power-bi-content-packs-available-on-appsource"></a>Power BI-innholdspakker tilgjengelig på AppSource
-Innholdspakkene **Kostnadsstyring**, **Finansresultat** og **Restultat for detaljhandelskanal**, tilgjengelig på [Microsoft AppSource](https://appsource.microsoft.com), er avskrevet som følge av produktoppdateringer i Microsoft Power BI. Systemadministrasjonsskjemaer som brukes til å distribuere disse innholdspakkene til PowerBI.com, avskrives også i Finance and Operations.
+### <a name="power-bi-content-packs-available-on-appsource"></a>Power BI-innholdspakker som er tilgjengelige på AppSource
+Innholdspakkene **Kostnadsstyring**, **Finansresultat** og **Retail Channel Performance**, tilgjengelig på [Microsoft AppSource](https://appsource.microsoft.com), er avskrevet som følge av produktoppdateringer i Microsoft Power BI. Systemadministrasjonsskjemaer som brukes til å distribuere disse innholdspakkene til PowerBI.com, avskrives også i Finance and Operations.
 
 |   |  |
 |------------|--------------------|
 | **Årsak til avskrivning/fjerning** | Produktoppdateringer i Microsoft Power BI. |
-| **Erstattet med en annen funksjon?**   | Innholdspakkene **Kostnadsstyring**, **Finansresultatr** og **Resultat for detaljhandelskanal**, tilgjengelig på [AppSource](https://appsource.microsoft.com)-nettstedet, blir erstattet av analyseprogrammer som tillater integreringer løsning på databasenivå. Hvis du vil ha mer informasjon om analyseprogrammer, se [Innebygd Power BI i arbeidsområder](../../dev-itpro/analytics/embed-power-bi-workspaces.md).    |
+| **Erstattet med en annen funksjon?**   | Innholdspakkene **Kostnadsstyring**, **Finansresultat** og **Retail Channel Performance**, tilgjengelig på [AppSource](https://appsource.microsoft.com)-nettstedet, blir erstattet av analyseprogrammer som tillater integreringer av løsning på databasenivå. Hvis du vil ha mer informasjon om analyseprogrammer, se [Innebygd Power BI i arbeidsområder](../../dev-itpro/analytics/embed-power-bi-workspaces.md).    |
 | **Berørte produktområder**         | Kostnadsstyring, økonomi og detaljhandel                                                                                               |
 | **Distribusjonsalternativ**              | Bare sky (integrasjon med PowerBI.com støttes ikke i lokale distribusjoner.)                                                                                                            |
 | **Status**                         | Avskrevet: Måltidsrammen for funksjonalitetsfjerningen er 2. kvartal 2018.    |
@@ -244,7 +243,7 @@ Portal for lagermobilenheter (WMDP) var en frittstående komponent som var bereg
 |   |  |
 |------------|--------------------|
 | **Årsak til avskrivning/fjerning** | Duplikat funksjonalitet.       |
-| **Erstattet med en annen funksjon?**   | Ja. Denne funksjonen er erstattet med Finance and Operations - Warehousing. Hvis du vil ha mer informasjon om oppsett og forutsetninger, se [Installere og konfigurere Microsoft Dynamics 365 for Finange and Operations – Warehousing](https://docs.microsoft.com/en-us/dynamics365/unified-operations/supply-chain/warehousing/install-configure-warehousing-app). |
+| **Erstattet med en annen funksjon?**   | Ja. Denne funksjonen er erstattet med Finance and Operations - Warehousing. Hvis du vil ha mer informasjon om oppsett og forutsetninger, kan du se [Installere og konfigurere Microsoft Dynamics 365 for Finance and Operations - lager](https://docs.microsoft.com/en-us/dynamics365/unified-operations/supply-chain/warehousing/install-configure-warehousing-app). |
 | **Berørte produktområder**         | Lagerstyring, transportstyring     |
 | **Distribusjonsalternativ**              | Portal for lagermobilenheter (WMDP) var en frittstående komponent som var beregnet for selvdrevet lokal distribusjon.               |
 | **Status**                         | Avskrevet: Måltidsrammen for funksjonaliteten som skal fjernes, er 4. kvartal 2019.   |
@@ -353,7 +352,7 @@ EDIVAT er en foreldet belgisk standard for elektronisk deklarering via sikker e-
 
 ### <a name="egiro-edifact-cremul-payment-import-format-for-norway"></a>eGiro EDIFACT CREMUL-betalingsimportformatet for Norge
 
-eGiro er basert på den internasjonale UN EDIFACT CREMUL-standarden (Multiple Credit Advice Message) som brukes ved automatisk postering av kundebetalinger. eGiro er implementert som et formater for import av kundebetaling i Microsoft Dynamics AX.
+eGiro er basert på den internasjonale UN EDIFACT CREMUL-standarden (Multiple Credit Advice Message) som brukes ved automatisk postering av kundebetalinger. eGiro er implementert som et importformat for kundebetaling i Microsoft Dynamics AX.
 
 |   |  |
 |------------|--------------------|
@@ -573,7 +572,7 @@ Det finnes to formater for eksport av betalinger for Finland. LM02 (FI) brukes f
 
 |   |  |
 |------------|--------------------|
-| **Årsak til avskrivning/fjerning** | Lagerstyring II-løsningen (WMS II) som var tilgjengelig i **Lagerstyring**-modulen, dupliserer funksjonaliteten i **Lagerstyring**-modulen som ble lansert i Microsoft Dynamics AX 2012 R3.                                                                         |
+| **Årsak til avskrivning/fjerning** | Lagerstyring II-løsningen (WMS II) som var tilgjengelig i **Lagerstyring**-modulen, dupliserer funksjonaliteten i **lagerstyringsmodulen** som ble lansert i Microsoft Dynamics AX 2012 R3.                                                                         |
 | **Erstattet med en annen funksjon?**   | **Lagerstyring**-modulen som ble lansert i AX 2012 R3, Microsoft Dynamics AX 2012 R3 CU8 og Dynamics AX 2012 R3 CU9, erstatter Lagerstyring II-funksjonene. Den nye modulen har mer avanserte funksjoner og mer fleksible lagerstyringsprosesser enn i Lagerstyring II. |
 | **Berørte produktområder**         | Lagerstyring, salg og markedsføring, innkjøp og leverandører   |
 | **Status**                         | Fjernet fra og med Dynamics 365 for Operations versjon 1611.    |
@@ -609,12 +608,12 @@ En arbeidsflyt for behandling av opprettelsen av ansattes mål er en av flere ar
 |------------|--------------------|
 | **Årsak til avskrivning/fjerning** | Ytelsesforbedring        |
 | **Erstattet med en annen funksjon?**   | Antall                             |
-| **Berørte produktområder**         | Leverandører               |
+| **Berørte produktområder**         | Leverandørreskontro               |
 | **Status**                         | Fjernet fra og med Dynamics AX 7.0. |
 
 ### <a name="aif-axd-and-axbc-integrations"></a>AIF-, AxD- og AxBC-integreringer
 
-I Application Integration Framework (AIF) kan data utveksles med eksterne systemer gjennom forretningslogikk som vises som tjenester. Dynamics AX inneholder tjenestene som er basert på dokumenter og .NET Business Connector (AxBC). Et dokument opprettes ved hjelp av XML. XML-en inneholder hodeinformasjon som legges til for å opprette en *meldingen* som kan overføres til eller fra Dynamics AX. Eksempler på dokumenter er salgsordrer og bestillinger. Nesten enhver enhet, for eksempel en kunde, kan imidlertid representeres av et dokument. Tjenester som er basert på dokumenter, bruker **Axd \<Dokument\>**-klassene.
+I Application Integration Framework (AIF) kan data utveksles med eksterne systemer gjennom forretningslogikk som vises som tjenester. Dynamics AX inneholder tjenestene som er basert på dokumenter og .NET Business Connector (AxBC). Et dokument opprettes ved hjelp av XML. XML-en inneholder hodeinformasjon som legges til for å opprette en *melding* som kan overføres til eller fra Dynamics AX. Eksempler på dokumenter er salgsordrer og bestillinger. Nesten enhver enhet, for eksempel en kunde, kan imidlertid representeres av et dokument. Tjenester som er basert på dokumenter, bruker **Axd \<Dokument\>**-klassene.
 
 |   |  |
 |------------|--------------------|
@@ -695,7 +694,7 @@ Oppsett av forretningsstatistikkforespørsler som kan hjelpe deg med å analyser
 |------------|--------------------|
 | **Årsak til avskrivning/fjerning** | Liten bruk                                                               |
 | **Erstattet med en annen funksjon?**   | Ja. Du kan endre dokumentdatoen på den posterte leverandørtransaksjonen. |
-| **Berørte produktområder**         | Leverandører                                                        |
+| **Berørte produktområder**         | Leverandørreskontro                                                        |
 | **Status**                         | Fjernet fra og med Dynamics AX 7.0.                                          |
 
 ### <a name="clieop03-payment-format-for-the-netherlands"></a>ClieOp03-betalingsformat for Nederland
@@ -980,7 +979,7 @@ Microsoft Dynamics AX 2012 administrerte urealisert merverdiavgift (mva) ved å 
 
 |   |  |
 |------------|--------------------|
-| **Årsak til avskrivning/fjerning** | Denne funksjonaliteten er erstattet av Microsoft Exchange Server-integrering. |
+| **Årsak til avskrivning/fjerning** | Funksjonen har blitt erstattet med Microsoft Exchange Server-integrering. |
 | **Erstattet med en annen funksjon?**   | Ja                                                                            |
 | **Berørte produktområder**         | Salg og markedsføring                                                            |
 | **Status**                         | Fjernet fra og med Dynamics AX 7.0.                                                 |
@@ -1037,7 +1036,7 @@ I Dynamics AX 2012 R3 kunne detaljhandelsserveren fungerer ved hjelp av HTTP-kom
 |------------|--------------------|
 | **Årsak til avskrivning/fjerning** | På grunn av nye sikkerhetskrav støttes nå bare sikret kommunikasjon ved hjelp av TLS 1.2 (eller høyere, hvis tilgjengelig). Det selvbetjente installasjonsprogrammet konfigurerer automatisk datamaskinen for denne kommunikasjonen. |
 | **Erstattet med en annen funksjon?**   | Nr. Nå støttes bare standard HTTPS-kommunikasjon. |
-| **Berørte produktområder**         | Retail-server  |
+| **Berørte produktområder**         | Detaljhandelsserver  |
 | **Status**                         | Fjernet fra og med Dynamics AX 7.0. |
 
 ### <a name="role-center-pages"></a>Rollesentersider
@@ -1084,7 +1083,7 @@ Sites Services lar deg bygge webområder som utvider forretningsprosesser til In
 |------------|--------------------|
 | **Årsak til avskrivning/fjerning** | Liten bruk. Denne funksjonaliteten er erstattet av fakturajournalen med funksjonaliteten for arbeidsflyten. |
 | **Erstattet med en annen funksjon?**   | Arbeidsflytfunksjoner til fakturajournalen.     |
-| **Berørte produktområder**         | Leverandører |
+| **Berørte produktområder**         | Leverandørreskontro |
 | **Status**                         | Fjernet fra og med Dynamics AX 7.0.    |
 
 
@@ -1127,5 +1126,4 @@ Windows 8 nettbrettapp inneholdt funksjonalitet for utgiftsregistrering og -godk
 |  <strong>Erstattet med en annen funksjon?</strong>  | Management Reporter (kalt <strong>Finansrapportering</strong> i den gjeldende versjonen av Dynamics AX) |
 |     <strong>Berørte produktområder</strong>     |                                              Økonomimodul                                              |
 |             <strong>Status</strong>             |                                      Fjernet fra og med Dynamics AX 2012                                      |
-
 

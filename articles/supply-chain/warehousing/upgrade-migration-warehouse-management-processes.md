@@ -5,9 +5,9 @@ author: perlynne
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: InventLocationWHSProcessEnablement, WHSLocationProfile, InventTableStorageDimensionGroupChange, InventUpdateBlockedItem, WHSParameters, WHSReservationHierarchy, WHSUOMSeqGroupTable
 audience: Application User
 ms.reviewer: josaw
@@ -18,20 +18,19 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 768d0bd16a41a3458b25606b74d606318d176ff0
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: e0ff3a22b89ce22096198d2e1dd1ea9ed10239a9
-ms.contentlocale: nb-no
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "324474"
 ---
-
 # <a name="upgrade-warehouse-management-from-microsoft-dynamics-ax-2012-to-finance-and-operations"></a>Oppgradere lagerstyring fra Microsoft Dynamics AX 2012 til Finance and Operations
 
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet gir en oversikt over prosessen for oppgradering fra Microsoft Dynamics AX 2012 R3, kjøre modulen WMSII til Microsoft Dynamics 365 for Finance and Operations.
+Dette emnet gir en oversikt over prosessen med å oppgradere fra Microsoft Dynamics AX 2012 R3, kjører modulen WMSII til Microsoft Dynamics 365 for Finance and Operations.
 
 Finance and Operations støtter ikke lenger den gamle **WMSII**-modulen fra Microsoft Dynamics AX 2012. I stedet kan du bruke **Lagerstyring**-modulen. I WMSII-modulen kan lagerdimensjonene Sted og Pall-ID velges for økonomisk lager, men lagerdimensjonen Pall-ID kan ikke brukes for økonomisk lager i Finance and Operations.
 
@@ -84,4 +83,3 @@ Før du kan bruke frigitte produkter i **Lagerstyring**-modulen, må produktene 
 6.  På **Endre lagringsdimensjonsgruppen for varer**-siden, legger du til varenumre, lagringsdimensjonsgrupper og sekvensgrupper for enhet. Du kan fullføre dette trinnet direkte på siden, ved hjelp av Microsoft Office-integrering, eller ved å bruke dataenhetsprosessen i [Databehandling](../../dev-itpro/data-entities/data-entities.md).
 7.  Valider endringene. Som en del av valideringsprosessen forekommer ulike valideringer for dataintegritet. Som en del av en større oppgraderingsprosess må problemer som oppstår, kanskje justeres på kildeimplementeringen. I så fall kreves en ytterligere oppgradering av data.
 8.  Behandle endringene. En oppdatering av alle lagerdimensjonene kan ta litt tid. Du kan overvåke fremdriften ved hjelp av satsvise jobboppgaver.
-

@@ -1,13 +1,13 @@
---- 
-title: "Importere konfigurasjoner for å generere dokumenter med programdata"
-description: "For å fullføre trinnene i denne prosedyren må du først fullføre prosedyren \"ER Opprette en konfigurasjonsleverandør og merke den som aktiv\"."
+---
+title: Importere konfigurasjoner for å generere dokumenter med programdata
+description: For å fullføre trinnene i denne prosedyren må du først fullføre prosedyren "ER Opprette en konfigurasjonsleverandør og merke den som aktiv".
 author: NickSelin
 manager: AnnBe
 ms.date: 11/02/2017
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
 ms.search.scope: Operations
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
 ms.openlocfilehash: 1637ba59525f5f8bd9fe41a00c34eca90f7a2751
-ms.contentlocale: nb-no
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "340804"
 ---
 # <a name="import-configurations-to-generate-documents-that-have-application-data"></a>Importere konfigurasjoner for å generere dokumenter med programdata
 
@@ -75,5 +75,4 @@ Trinnene i denne fremgangsmåten forklarer hvordan du utformer elektronisk rappo
 29. Velg 'Fil' i treet.
     * Se gjennom strukturen i formatet som brukes til å generere Intrastat-rapporten. Legg merke til at den er utformet til å generere en XML-fil ved hjelp av data fra datamodellen, som er basert på rotelementet "For utgående dokument". Kontroll at navnet på filen som genererte defineres i dialogboksen brukerskjemaet ("fn-datakilden som brukes for den).   
 30. Lukk siden.
-
 

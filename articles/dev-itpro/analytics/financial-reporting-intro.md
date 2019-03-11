@@ -1,13 +1,13 @@
 ---
 title: Finansrapportering
-description: "Finansrapportering for Dynamics 365 for Finance and Operations lar profesjonelle innen finans og forretninger opprette, vedlikeholde, distribuere og vise regnskapsoppgjør. Det beveger seg utover tradisjonelle rapporteringsbegrensninger for å gjøre det enklere for deg å effektivt utforme ulike typer rapporter."
+description: Finansrapportering for Dynamics 365 for Finance and Operations lar profesjonelle innen finans og forretninger opprette, vedlikeholde, distribuere og vise regnskapsoppgjør. Det beveger seg utover tradisjonelle rapporteringsbegrensninger for å gjøre det enklere for deg å effektivt utforme ulike typer rapporter.
 author: aprilolson
 manager: AnnBe
 ms.date: 12/01/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 ms.search.form: FinanicalReportingSetup
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
 ms.openlocfilehash: ae2087cf142fc2670bda3c542b336f12978178a6
-ms.contentlocale: nb-no
-ms.lasthandoff: 08/13/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "323784"
 ---
-
 # <a name="financial-reporting"></a>Finansrapportering
 
 [!include [banner](../includes/banner.md)]
@@ -76,7 +75,7 @@ Finansrapporteringskomponentene nedenfor gjør det enkelt å opprette, vise og p
 <ul>
 <li>Planlegge rapporter slik at de automatisk å genereres daglig, ukentlig, månedlig eller årlig.</li>
 <li>Eksportere til det skrivebeskyttede XPS-formatet, som gir bedre dokumentsikkerhet ved hjelp av digitale signaturer.</li>
-<li>Eksportere til et Microsoft Excel-regneark.</li>
+<li>Eksporter til et Microsoft Excel-regneark.</li>
 <li>Hvis du vil dele rapporter, kan du opprette e-postmeldinger som inneholder koblinger til rapportene.</li>
 </ul>
 </td>
@@ -98,4 +97,3 @@ Finansrapporteringskomponentene nedenfor gjør det enkelt å opprette, vise og p
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 [Generere en finansrapport](generate-financial-report.md)
-

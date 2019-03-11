@@ -1,13 +1,13 @@
 ---
 title: Lagerytelse-innhold for Power BI
-description: "Dette emnet beskriver hva som er inkludert i Lagerytelse-innhold for Power BI. Det forklarer hvordan du kan få tilgang til Power BI-rapporter, og gir informasjon om datamodellen og enhetene som brukes til å bygge innholdet."
+description: Dette emnet beskriver hva som er inkludert i Lagerytelse-innhold for Power BI. Det forklarer hvordan du kan få tilgang til Power BI-rapporter, og gir informasjon om datamodellen og enhetene som brukes til å bygge innholdet.
 author: Mirzaab
 manager: AnnBe
 ms.date: 12/18/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 ms.search.form: WHSWarehousePerformancePowerBI
 audience: Application User, IT Pro
 ms.reviewer: sericks
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
 ms.openlocfilehash: 99966a67fa1fd91fc54e7100f8e2e41b87f6a406
-ms.contentlocale: nb-no
-ms.lasthandoff: 08/13/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "365368"
 ---
-
 # <a name="warehouse-performance-power-bi-content"></a>Lagerytelse-innhold for Power BI
 
 [!include [banner](../includes/banner.md)]
@@ -34,7 +33,7 @@ Dette emnet beskriver hva som er inkludert i **Lagerytelse**-innhold for Microso
 
 ## <a name="overview"></a>Oversikt
 
-**Lagerytelse**-innholdet i Power BI ble opprettet slik at lager- og driftsledere kan overvåke viktige mål for inngående, utgående og beholdning. Det bruker data for lagerstyring, produkt og andre transaksjonsdata fra systemet, og inneholder både en aggregert visning av lagerytelse og en analyse for leverandører, produktgrupper og varer, og område og lagre.
+**Lagerytelse**-innholdet for Power BI ble opprettet, slik at lager- og driftsledere kan overvåke viktige mål for inngående, utgående og beholdning. Det bruker data for lagerstyring, produkt og andre transaksjonsdata fra systemet, og inneholder både en aggregert visning av lagerytelse og en analyse for leverandører, produktgrupper og varer, og område og lagre.
 
 Lagerledere kan bruke **Lagerytelse**-innholdet for Power BI til å måle følgende tre områder:
 
@@ -42,11 +41,11 @@ Lagerledere kan bruke **Lagerytelse**-innholdet for Power BI til å måle følge
 - **Leveringsytelse** – Måler om lageret leverer i sin helhet og innenfor tidsfristen til kunder (altså måler utgående forsendelses- og leveringsytelse), slik at du kan identifisere problemer som omfatter produkter, områder, lagre eller dedikerte kunder. Hvis du finner ut at du har forsinkede forsendelser til bestemte områder og byer, må du kanskje være mer oppmerksom på transport- eller kontostyring.
 - **Lagerpresisjon for lokasjon** – Lagerpresisjon er viktig, intern lagerforretningsanalyse (BI). Det er svært viktig at du fastslår hvor nøyaktig du teller generelt. Det er imidlertid også viktig at du fastslår hvor nøyaktig du med hensyn til lagring av varer på riktig sted, og at du merker avviksdata, slik at du kan finne bedre posisjoner for varer eller starte totalantall på bestemte varer. (For øyeblikket leveres den nye varebaserte tellefunksjonaliteten som en hurtigreparasjon.) Hvis du bruker dette Power BI-innholdet til å fastslå korrektheten til lagerbeholdningsdata per lokasjon, kan du også identifisere tyveri i butikkene dine. Du kan også fastslå om lokasjoner har lagerbeholdningsantall som avviker fra ERP-data. Disse lokasjonene kan være for store, eller de kan være umulig å telle. Noen av de fysiske plasseringene kan også være dårlige, slik at det er vanskelig å synkronisere én enkelt type vare med beholdningsdata.
 
-## <a name="accessing-the-power-bi-content-pack"></a>Tilgang til Power BI-innholdspakke
+## <a name="accessing-the-power-bi-content-pack"></a>Tilgang til Power BI-innholdspakken
 Power BI-innholdet **Lagerytelse** vises på **Lagerytelse**-siden (**Lagerstyring** \> **Forespørsler og rapporter** \> **Analyse av lagerytelse** \> **Lagerytelse**).
 
 ## <a name="metrics-that-are-included-in-the-power-bi-content"></a>Mål som er inkludert i Power BI-innholdet
-**Lagerytelse**-innholdet for Power BI omfatter en rapport. Denne rapporten består av et sett med mål som er visualisert som diagrammer, fliser og tabeller. Tabellen nedenfor gir en oversikt over effekter i **Lagerytelse**-innhold for Power BI.
+**Lagerytelse**-innholdet for Power BI omfatter en rapport. Denne rapporten består av et sett med mål som er visualisert som diagrammer, fliser og tabeller. Tabellen nedenfor gir en oversikt over visualiseringene i Power BI-innholdet **Lagerytelse**.
 
 | Rapportside                 | Diagrammer                                   | beskrivelse |
 |-----------------------------|------------------------------------------|-------------|
@@ -113,4 +112,3 @@ De aggregerte nøkkelmålingene som du finner nedenfor, brukes som grunnlag for 
 | Leveringsytelse        | Sendt etter produkt                       | CustPackingSlipOnTimeStatus           | Tidlig, Til planlagt tid og Sent (Se beskrivelsene tidligere i denne tabellen). |
 | Leveringsytelse        | Levering etter kunder                      | CustPackingSlipOnTimeStatus           | Tidlig, Til planlagt tid og Sent (Se beskrivelsene tidligere i denne tabellen). |
 | Leveringsytelse        | Levert etter område/lager              | CustPackingSlipOnTimeStatus           | Tidlig, Til planlagt tid og Sent (Se beskrivelsene tidligere i denne tabellen). |
-

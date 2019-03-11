@@ -1,13 +1,13 @@
 ---
-title: "Hjemmeside for Økonomimodul og Finansrapportering"
-description: "Bruk økonomimodulen til å definere og styre finansposter for den juridiske enheten."
+title: Hjemmeside for Økonomimodul og Finansrapportering
+description: Bruk økonomimodulen til å definere og styre finansposter for den juridiske enheten.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 08/31/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: GeneralJournalEntryWorkspace
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 85afebcc88ad1c087d5f1dabaac56f694534cf98
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 03bab1d03be71c0e23a6ea93f542d6a52a212a1f
-ms.openlocfilehash: 9ee3f73cd11b38ed2237ea3fe08db18000e55f07
-ms.contentlocale: nb-no
-ms.lasthandoff: 06/25/2018
-
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "363367"
 ---
-
 # <a name="general-ledger"></a>Økonomimodul 
 
 [!include [banner](../includes/banner.md)]
@@ -66,12 +65,11 @@ Se instruksjonsvideoene som nå er tilgjengelige på [Microsoft Dynamics 365 You
 
 Du kan finne meninger, nyheter og annen informasjon om Leverandører og andre løsninger i [Microsoft Dynamics 365-bloggen](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise).
 
-Det er mange innlegg om General Ledger på [Microsoft Dynamics AX-teamets produktblogg](https://blogs.msdn.microsoft.com/dax/) Selv om noen av disse innleggene ble skrevet for den forrige versjonen av General Ledger, gjelder de samme konseptene, og prosedyrene er også like i den gjeldende versjonen.
+Det finnes mange innlegg om økonomimodulen i [Microsoft Dynamics-produktteambloggen for AX](https://blogs.msdn.microsoft.com/dax/). Selv om noen av disse innleggene ble skrevet for den forrige versjonen av General Ledger, gjelder de samme konseptene, og prosedyrene er også like i den gjeldende versjonen.
 
 [Microsoft Dynamics Operations Partner Community-bloggen](https://community.dynamics.com/partner/b/operationspartnercommunityblog) gir Microsoft Dynamics-partnere én ressurs der de kan finne ut mer om hva som er nytt og populært i MBS Operations.
 
 #### <a name="community-blogs"></a>Fellesskapsblogger
 
 - [Hva du bør vite om finans i Dynamics 365 for Finance and Operations](https://financefunction.tech/2018/04/29/what-you-should-know-about-ledger-in-dynamics-365-for-finance-and-operations)
-
 

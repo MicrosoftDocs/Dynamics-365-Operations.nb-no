@@ -1,33 +1,32 @@
 ---
 title: Synkronisere salgsordrer direkte mellom Sales og Finance and Operations
-description: "Dette emnet drøfter maler og underliggende oppgaver som brukes til å kjøre synkronisering av salgsordrer direkte mellom Microsoft Dynamics 365 for Sales og Microsoft Dynamics 365 for Finance and Operations."
+description: Dette emnet drøfter maler og underliggende oppgaver som brukes til å kjøre synkronisering av salgsordrer direkte mellom Microsoft Dynamics 365 for Sales og Microsoft Dynamics 365 for Finance and Operations.
 author: ChristianRytt
 manager: AnnBe
 ms.date: 10/11/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
-ms.search.form: 
+ms.technology: ''
+ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: global
-ms.search.industry: 
+ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.translationtype: HT
-ms.sourcegitcommit: a8c033caa8a4c4cf579ec166dce7a9982408d816
 ms.openlocfilehash: 985a5a908308bc2268b80e8eef7117fdd6d54af6
-ms.contentlocale: nb-no
-ms.lasthandoff: 10/11/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "339125"
 ---
-
-# <a name="synchronization-of-sales-orders-directly-between-sales-and-finance-and-operations"></a>Synkronisere salgsordrer direkte mellom Sales og Finance and Operations
+# <a name="synchronization-of-sales-orders-directly-between-sales-and-finance-and-operations"></a>Synkronisering av salgsordrer direkte mellom Sales og Finance and Operations
 
 [!include [banner](../includes/banner.md)]
 
@@ -198,4 +197,3 @@ Følgende illustrasjoner viser et eksempel på en tilordning av malen i Datainte
 ## <a name="related-topics"></a>Relaterte emner
 
 [Kundeemne til kontanter](prospect-to-cash.md)
-

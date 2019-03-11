@@ -1,13 +1,13 @@
 ---
-title: "Skanne strekkoder ved hjelp av et kamera i Dynamics 365 for Finance and Operations – Warehousing"
-description: "Dette emnet forklarer hvordan du konfigurerer Dynamics 365 for Finance and Operations – Warehousing for å skanne strekkoder med et kamera på en mobil enhet."
+title: Skanne strekkoder ved hjelp av et kamera i Dynamics 365 for Finance and Operations – Warehousing
+description: Dette emnet forklarer hvordan du konfigurerer Dynamics 365 for Finance and Operations – Warehousing for å skanne strekkoder med et kamera på en mobil enhet.
 author: MarkusFogelberg
 manager: AnnBe
 ms.date: 01/03/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: WHSMobileAppField
 audience: Application User
 ms.reviewer: josaw
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2017-01-03
 ms.dyn365.ops.version: AX 8.0.0
+ms.openlocfilehash: e78d0a82d3ca66a6912ea1a9517296ca241edf1c
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7be3e9970e2599c159e7c9d414b54876d0116350
-ms.openlocfilehash: f7fe3ab07578b09822fbfeaa4b07331b79f13610
-ms.contentlocale: nb-no
-ms.lasthandoff: 03/09/2018
-
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "319437"
 ---
-
 # <a name="scan-bar-codes-using-a-camera-in-dynamics-365-for-finance-and-operations--warehousing"></a>Skanne strekkoder ved hjelp av et kamera i Dynamics 365 for Finance and Operations – Warehousing
 
 [!include [banner](../includes/banner.md)]
@@ -55,5 +54,4 @@ Kamerasiden startes på hver side der inndatafeltet har den foretrukne inndatamo
 På kamerasiden, når du klikker Kamera-knappen, vises den nedtonet ved forsøk på å identifisere en strekkode. Hvis en strekkode ikke identifiseres innen 5 sekunder, deaktiveres prosessen og Kamera-knappen blir tilgjengelig igjen. Du kan deretter prøve å skanne en strekkode på nytt.
 
 Når du holder kameraet på en strekkode, må du justere strekkoden innenfor hakeparentesene for best resultat. Når en strekkode er skannet, blir resultatet behandlet, og du føres til neste trinn. Hvis det neste trinnet inneholder et annet inndatafelt med den foretrukne inndatamodusen satt til Skanning, startes kamerasiden på nytt. Hvis det neste trinnet ikke er et skannefelt, startes ikke kamerasiden.
-
 

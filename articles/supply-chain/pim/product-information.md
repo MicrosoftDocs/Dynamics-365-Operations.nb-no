@@ -1,32 +1,31 @@
 ---
 title: Oversikt over produktinformasjon
-description: "Dette emnet inneholder informasjon om produktinformasjonsadministrasjon. Behandling av produktinformasjon fungerer sammen med en delt produktdefinisjon, -kategorisering og -identifikatorer på tvers av alle juridiske enheter, og bestemte konfigurasjoner av et produkt, slik at den passer til forretningsprosessene."
+description: Dette emnet inneholder informasjon om produktinformasjonsadministrasjon. Behandling av produktinformasjon fungerer sammen med en delt produktdefinisjon, -kategorisering og -identifikatorer på tvers av alle juridiske enheter, og bestemte konfigurasjoner av et produkt, slik at den passer til forretningsprosessene.
 author: cvocph
 manager: AnnBe
 ms.date: 06/01/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: EcoResProductMaintainWorkspace, EcoResProductListPage, EcoResProductVariantMaintainWorkspace
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations, Retail
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
-ms.search.industry: 
+ms.search.industry: ''
 ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 0ac817fc4e8329563e524cea967c8337262fe2c3
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 72dbc5d383352d4d6444d07495fdef00137b1c7f
-ms.contentlocale: nb-no
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "363022"
 ---
-
 # <a name="product-information-overview"></a>Oversikt over produktinformasjon
 
 [!include [banner](../includes/banner.md)]
@@ -66,7 +65,7 @@ Legg merke til at produktopplysninger endres hver dag i dynamiske og fleksible o
 
 ## <a name="product-masters-and-product-variants"></a>Produktstandarder og produktvarianter
 
-I en fleksibel verden der varer raskt må tilpasset kundekrav, angir produktdefinisjoner et sett med produkter i stedet for spesifikke produkter. I Microsoft Dynamics 365 for Finance and Operations er disse generiske produktene kjent som *produktstandarder*. Produktstandarder inneholder definisjonen og regler som angir hvordan spesifikke produkter beskrives og fungerer i forretningsprosesser. Basert på disse definisjonene kan spesifikke produkter genereres. Disse spesifikke produktene er kjent som *produktvarianter*.
+I en fleksibel verden der varer raskt må tilpasset kundekrav, angir produktdefinisjoner et sett med produkter i stedet for spesifikke produkter. I Microsoft Dynamics 365 for Finance and Operations er de generell produktene kjent som *produktstandarder*. Produktstandarder inneholder definisjonen og regler som angir hvordan spesifikke produkter beskrives og fungerer i forretningsprosesser. Basert på disse definisjonene kan spesifikke produkter genereres. Disse spesifikke produktene er kjent som *produktvarianter*.
 
 I Finance and Operations er en produktstandard er tilknyttet en produktdimensjonsgruppe og en konfigurasjonsteknologi for å angi forretningsreglene. Produktdimensjoner (farge, størrelse, stil og konfigurasjon) er et bestemt sett med attributter som kan brukes i hele programmet til å definere og spore bestemt virkemåten til de tilknyttede produktene. Disse dimensjonene hjelper også brukere å søke etter og identifisere produktene.
 
@@ -97,4 +96,3 @@ Arbeidsområdet består av et sammendrag av fliser og to lister. Listen **Åpne 
 ### <a name="manually-creating-a-new-released-product"></a>Manuell oppretting av et nytt frigitt produkt
 
 Du kan manuelt opprette et frigitt produkt i en enkelt kjøring, avhengig av organisasjonens forretningsprosesser og eventuelle regler for hvorvidt denne funksjonen skal brukes. Denne funksjonen oppretter et nytt produkt, og frigjør det automatisk til den gjeldende juridiske enheten. For å opprette et nytt produkt klikker du **Frigitte produkter** i arbeidsområdet **Vedlikehold av frigitt produkt** eller på listesiden **Frigitt produkt**.
-

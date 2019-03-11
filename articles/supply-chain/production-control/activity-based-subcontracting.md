@@ -5,9 +5,9 @@ author: cvocph
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: KanbanJobSchedulingListPage, LeanRuleReassignmentWizard, PlanActivity, ReqSupplyDemandSchedule
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: c219208c7ba5dd3686473d094658ab7f4c1b2b59
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 59b41b31931a128898ee70a583bfb9c515f90abc
-ms.contentlocale: nb-no
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "350050"
 ---
-
 # <a name="activity-based-subcontracting"></a>Aktivitetsbasert utsetting
 
 [!include [banner](../includes/banner.md)]
@@ -84,7 +83,7 @@ En overføringsaktivitet er konfigurert som en aktivitet i underleveranse, avhen
 -   **Mottaker** – Aktiviteten er en underleveranse hvis overføringen til lageret administreres av en leverandør (som definert av en egenskap for lageret). Alle valgte innkjøpsavtaler for tjenester må ha samme leverandør-ID som lageret.
 -   **Transportør** – Aktiviteten er en underleveranse til en leverandør som tilbyr tjenesten. For å være gyldig må en transportør opprettes for lagerstyring og må ha en tilordnet leverandørkonto.
 
-Som for prosessaktiviteter må du konfigurere en standardtjeneste for overføringsaktiviteter i underleveranser på siden **Tjenestevilkår** hurtigfanen **Aktivitets****detaljer**.
+Som for prosessaktiviteter må du konfigurere en standardtjeneste for overføringsaktiviteter i underleveranser på siden **Tjenestevilkår** hurtigfanen **Aktivitets** **detaljer**.
 
 ## <a name="service-quantity-calculation"></a>Beregning av tjenesteantall
 Hele kjøpsprosessen er basert på en varereferanse for en tjeneste. Denne varereferansen måles i en måleenhet for en tjeneste. Tjenester måles vanligvis i antall tjenester (enheter) eller i tid. Du kan bruke følgende metoder for å beregne serviceantallet, basert på den registrerte fullføringen av kanban-jobber:
@@ -104,7 +103,6 @@ Folk vurderer ofte transport som ikke-produktiv og mener at den ikke tilfører n
 Med aktivitetsbasert utsetting i lean manufacturing kan du integrere transportører og transportleverandører som flytter materialer og produkter mellom lokasjonene i en produksjonsflyt. Ved å modellere en overføringsaktivitet kan du tilordne en transportør eller leverandør. Overføringsaktivitetene-/jobben er basert på en tjeneste og kjøpsavtale, og du kan opprette bestillinger og mottaksveiledninger basert på de faktiske overføringsjobbene. Denne funksjonaliteten er den samme som funksjonaliteten for prosessaktiviteter i underleveranser.  
 
 Av den grunn støtter nå Finance and Operations stykklisteberegning som inkluderer transporttjenester, oppretting av relaterte bestillinger, integrert mottaksregistrering og integrering av kostnader for transporttjeneste i etterkalkulering for produksjonsflyt.
-
 
 
 

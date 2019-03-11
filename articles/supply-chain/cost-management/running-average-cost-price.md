@@ -1,13 +1,13 @@
 ---
-title: "Løpende gjennomsnittlig kostpris"
-description: "Lagerlukkingsprosessen i utligner avgangstransaksjoner mot tilgangstransaksjoner på grunnlag av lagervurderingsmetoden som er valgt i varens varemodellgruppe. Før lagerlukkingen kjøres, beregner imidlertid systemet en løpende gjennomsnittlig kostpris som vanligvis brukes når avgangstransaksjoner posteres."
+title: Løpende gjennomsnittlig kostpris
+description: Lagerlukkingsprosessen i utligner avgangstransaksjoner mot tilgangstransaksjoner på grunnlag av lagervurderingsmetoden som er valgt i varens varemodellgruppe. Før lagerlukkingen kjøres, beregner imidlertid systemet en løpende gjennomsnittlig kostpris som vanligvis brukes når avgangstransaksjoner posteres.
 author: AndersGirke
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: InventModelGroup, InventOnhandItem, InventTrans
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: mguada
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: e14f38baaef32c72761594147feca8d08651a050
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: aeb23f78d9bec93cf92214470e9ace3cd88b92c3
-ms.contentlocale: nb-no
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "312031"
 ---
-
 # <a name="running-average-cost-price"></a>Løpende gjennomsnittlig kostpris
 
 [!include [banner](../includes/banner.md)]
@@ -76,7 +75,6 @@ Hvis forretningsmodellen din tillater følgende fremgangsmåter, kan de imidlert
 -   Hvis du *ikke* velger **Ta med fysisk verdi** for en vare, må du fjerne merket for **Økonomisk negativt lager** på siden **Varemodellgrupper**.
 
 Tenk også på at den maksimale motregningen til den fysiske lagerverdien, er begrenset av antallet fysiske transaksjoner og forskjellen mellom fysiske og finansielle priser. Så lenge alle fysiske transaksjoner til slutt blir oppdatert finansielt, kan ikke den fysiske verdien stige til ekstreme nivåer. Legg til slutt merke til at forsterkingseffekten vil minske betraktelig når den akkumulerte motregningen blir spredd utover flere varer, i stedet for bare en.
-
 
 
 

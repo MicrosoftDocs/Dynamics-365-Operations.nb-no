@@ -1,13 +1,13 @@
---- 
+---
 title: Opprette et produkt
-description: "Denne prosedyren hjelper med å opprette et nytt produkt i hierarkiet for detaljprodukt."
+description: Denne prosedyren hjelper med å opprette et nytt produkt i hierarkiet for detaljprodukt.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: EcoResProductDetails, EcoResProductCreate, EcoResCategorySingleLookup
 audience: Application User
 ms.reviewer: shylaw
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: d6c92ee7e5f9beb34c8818d9f885a2624afa48f4
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: d3d5324a6a70539a2b2ba5bb208a546934a7782f
-ms.contentlocale: nb-no
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "366817"
 ---
 # <a name="create-a-product"></a>Opprette et produkt
 
@@ -38,5 +38,4 @@ Denne prosedyren hjelper med å opprette et nytt produkt i hierarkiet for detalj
 7. Klikk OK.
 8. Skriv inn en verdi i feltet Produktnummer.
 9. Klikk OK.
-
 

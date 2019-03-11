@@ -1,14 +1,14 @@
 ---
 title: Administratorinnstillinger i Attract
 description: Dette emnet forklarer hvordan du aktiverer funksjonalitet for organisasjoner og brukere i Attract.
-author: 
+author: ''
 manager: AnnBe
 ms.date: 12/07/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: 
-ms.search.form: 
+ms.technology: ''
+ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Talent, Core
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: rschloma
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.translationtype: HT
-ms.sourcegitcommit: be66d9f95551066bb8bc25445c652d4fa59066d4
 ms.openlocfilehash: fb7b5e5b98ddb8e0e44fccbb0ddbb05199265414
-ms.contentlocale: nb-no
-ms.lasthandoff: 12/07/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "305621"
 ---
-
 # <a name="admin-settings-in-attract"></a>Administratorinnstillinger i Attract
 [!include[banner](../includes/banner.md)]
 
@@ -69,4 +68,3 @@ Du kan også konfigurere alternativer som er knyttet til kandidatopplevelsen. Me
 Du kan også definere og håndheve en utløpsdato for tilbudene. Hvis du setter alternativet **Krev en utløpsdato for alle tilbud** til **Ja**, utløper tilbud etter hvor mange timer eller dager du angir.
 
 Hvis du vil ha mer informasjon om tilbudsbehandling, kan du se [Konfigurere tilbudsbehandling](./offer-setup.md).
-

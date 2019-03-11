@@ -5,9 +5,9 @@ author: AndersGirke
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: BOMCostGroup
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 1f1f97981c33c72c71e055848e874002dad73813
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: f44099c2ce30d917838733af072721dd79148d27
-ms.contentlocale: nb-no
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "337423"
 ---
-
 # <a name="cost-groups"></a>Kostgrupper
 
 [!include [banner](../includes/banner.md)]
@@ -51,7 +50,6 @@ En kostgruppe kan tilordnes en kostgruppetype og virkemåte for ekstra segmenter
 
 -   **Kostgruppetype** − Hver kostgruppe må tilordnes en kostgruppetype for å angi at kostgruppen gjelder direkte materialer, direkte produksjon, eller direkte utsetting, eller for å angi den som indirekte eller udefinert. En kostgruppe som er definert som direkte materiale, kan tilordnes varer. En kostgruppe definert som direkte produksjon kan tilordnes kostnadskategorier. En kostgruppe for direkte utsetting kan tilordnes til produkttypen service, slik at du kan klassifisere kostnader tilknyttet serviceinnkjøpet utsettingsaktiviteter. En indirekte kostgruppe kan tilordnes indirekte kostnader som tillegg eller satser. En kostgruppe som er definert som udefinert, kan tilordnes varer, kostnadskategorier eller indirekte kostnader. Tilordning av en kostgruppetype tjener flere hensikter. For det første begrenser det muligheten til å tilordne en kostgruppe og til å vise en liste med aktuelle kostgrupper. For det andre gir det ekstra segmentering til rapportering. For det tredje kan det brukes til å tilordne finanskontoer for avvik.
 -   **Virkemåte** − Hver kostgruppe kan, men må ikke, tilordnes en virkemåte for å angi at kostgruppen gjelder faste eller variable kostnader. En kostgruppe som nullverdi for virkemåte, behandles som en variabel kostnad. Tilordning av virkemåte tjener bare rapporteringsformål. Kostnader kan for eksempel vises med segmentering etter faste og variable kostnader i kostarket og på siden **Opprullet kost per kostgruppe**. Hvis du tilordner en fortjenesteinnstillingsprosent til hver kostgruppe, gir stykklisteberegningen en foreslått salgspris basert på kostnader pluss påslag.
-
 
 
 

@@ -1,13 +1,13 @@
 ---
-title: "Listeside for leverandørtransaksjoner"
-description: "Dette emnet gir informasjon om listesiden for leverandørtransaksjoner for Microsoft Dynamics 365 for Finance and Operations."
+title: Listeside for leverandørtransaksjoner
+description: Dette emnet gir informasjon om listesiden for leverandørtransaksjoner for Microsoft Dynamics 365 for Finance and Operations.
 author: mikefalkner
 manager: aolson
 ms.date: 08/24/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: VendTrans
 audience: Application User
 ms.reviewer: shylaw
@@ -15,15 +15,14 @@ ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: mikefalkner
 ms.search.validFrom: 2018-10-31
-ms.dyn365.ops.version: 8.1
+ms.dyn365.ops.version: 8.0999999999999996
+ms.openlocfilehash: 99a169bd51e14f15c085f7547ec240b2787258cc
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: c6502a6fb0ceaed75fd5bb6ec5b2f13db1879eea
-ms.openlocfilehash: 45033b8b015d468b7ee0f6c3fba5e6fb6201433e
-ms.contentlocale: nb-no
-ms.lasthandoff: 10/12/2018
-
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "341747"
 ---
-
 # <a name="vendor-transactions-list-page"></a>Listeside for leverandørtransaksjoner
 
 [!include [banner](../includes/banner.md)]
@@ -40,7 +39,7 @@ Knappen **Vis utligninger** i handlingsruten gir rask tilgang til utligningshist
 
 4. Du kan utføre forskjellige oppgaver i denne dialogboksen. Velg ett eller flere bilag, og velg deretter én av følgende knapper:
 
-    - **Vis relatert** – Vis alle journaltransaksjoner for betaling som ble opprettet i betalingsjournalen som er knyttet til det valgte dokumentet. I tillegg vises alle utligninger som er knyttet til disse betalingene. Når du viser relaterte betalinger, endres etiketten for denne knappen til **Vis utligninger**. Velg **Vis utligninger** for å vise bare transaksjonene som ble vist da du åpnet dialogboksen **Vis utligninger** for første gang.
+    - **Vis relatert** – Vis alle betalingsjournaltransaksjoner og økonomijournaltransaksjoner for leverandøren som ble opprettet i journalene der dokumentene som vises i listen, ble opprettet. Hvis for eksempel en betaling vises, vises alle betalingene i betalingsjournalen der den ble opprettet. Hvis en faktura eller betaling vises, og den ble opprettet i en økonomijournal, vil alle dokumentene i økonomijournalen der den ble opprettet, vises. Alle utligninger som er knyttet til listen med dokumenter, vises også. Når du viser relaterte betalinger, endres etiketten for denne knappen til **Vis utligninger**. Velg **Vis utligninger** for å vise bare transaksjonene som ble vist da du åpnet dialogboksen **Vis utligninger** for første gang.
     - **Vis logg** – Vis utligningshistorikken for bilagene. Velg **Lukk** for å lukke dialogboksen.
     - **Vis regnskap** – Vis alle bilagene som er knyttet til de valgte dokumentene. Velg **Lukk** for å lukke dialogboksen.
     - **Eksporter** – eksporter de valgte bilagene til Microsoft Excel.
@@ -98,4 +97,3 @@ Hvert felt har en forskjellig effekt på transaksjonen når du redigerer det:
 - **Rediger vilkårene for kontantrabatt:** Kontantrabattene endres, basert på basisdatoen og vilkårene for kontantrabatt.
 
 Når du er ferdig med å redigere betalingsinnstillingene, velger du **Lukk** for å lagre endringene.
-

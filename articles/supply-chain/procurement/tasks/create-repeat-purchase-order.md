@@ -1,13 +1,13 @@
---- 
-title: "Opprette en innkjøpsgjentakelsesordre"
-description: "Denne fremgangsmåten viser hvordan du oppretter en gjentatt bestilling ved å kopiere linjer fra et tidligere bestillingsdokument til en ny eller eksisterende bestilling."
+---
+title: Opprette en innkjøpsgjentakelsesordre
+description: Denne fremgangsmåten viser hvordan du oppretter en gjentatt bestilling ved å kopiere linjer fra et tidligere bestillingsdokument til en ny eller eksisterende bestilling.
 author: FrankDahl
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: PurchTable, PurchCreateOrder, PurchCopying
 audience: Application User
 ms.reviewer: shylaw
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: fdahl
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 74dcee8a614363cf1f1ebc71e3e39a14c59bb774
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 257582d889ff55753f9bdbd234f0540503d20f27
-ms.contentlocale: nb-no
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "345887"
 ---
 # <a name="create-a-repeat-purchase-order"></a>Opprette en innkjøpsgjentakelsesordre
 
@@ -84,5 +84,4 @@ Denne fremgangsmåten viser hvordan du oppretter en gjentatt bestilling ved å k
     * Legg merke til at linjen med enkeltordren i denne bestillingen også er valgt.  
 7. Klikk OK.
     * Den ekstra ordrelinjen er lagt til bestillingen.  
-
 

@@ -5,9 +5,9 @@ author: aprilolson
 manager: AnnBe
 ms.date: 01/11/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: LedgerEliminationRule
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: c0736d63c9a582948d197dc267f9941cbbd3e3c6
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 882b8f21be94b8cbb0c162c965ffc129b47d7edf
-ms.contentlocale: nb-no
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "333099"
 ---
-
 # <a name="elimination-rules"></a>Elimineringsregler
 
 [!include [banner](../includes/banner.md)]
@@ -153,7 +152,6 @@ Det er to måter å behandle elimineringstransaksjoner på, under den elektronis
 I et firma som er definert som et elimineringsfirma, velger du **Elimineringsjournal** i modulen Konsolideringer. Når du har valgt journalnavnet, klikker du **Linjer**. Du kan kjøre forslaget ved å velge **Forslag**-menyen og deretter velge **Elimineringsforslag**.
 
 Velg firmaet som er kilden til de konsoliderte dataene, og velg deretter regelen du vil behandle. Angi en startdato for å starte søket for elimineringsbeløp, og en sluttdato for å avslutte søkedatoen for elimineringsbeløp. Feltet **FIN-posteringsdato** brukes til å postere journalen til økonomimodulen. Når du klikker **OK**, kan du se gjennom beløpene og postere journalen.
-
 
 
 

@@ -5,9 +5,9 @@ author: aprilolson
 manager: AnnBe
 ms.date: 09/26/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 ms.search.form: FinancialReports
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.translationtype: HT
-ms.sourcegitcommit: a128f326cb89ab00e69be40801553c0ac551446e
 ms.openlocfilehash: 70fa1298c3af43f62b8fa0b833fa817f17858c47
-ms.contentlocale: nb-no
-ms.lasthandoff: 10/16/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "340896"
 ---
-
 # <a name="generate-financial-reports"></a>Generer finansrapporter
 
 [!include [banner](../includes/banner.md)]
@@ -41,9 +40,9 @@ Følgende alternativer er tilgjengelige for generering av rapporter:
 
 Når du genererer en rapport, brukes alternativene du har angitt i kategorien Rapportdefinisjon.
 
-## <a name="generate-a-financial-report"></a>Generere en finansrapport
+## <a name="generate-a-financial-report"></a>Generer en finansrapport
 
-Hvis du vil generere en finansrapport med Microsoft Dynamics 365 for Finance and Operations, kan du gå til **Økonomimodul** \> **Forespørsler og rapporter** \> **Finansrapporter**.
+Hvis du vil generere en finansrapport med Microsoft Dynamics 365 for Finance and Operations, går du til **økonomimodulen** \> **Forespørsler og rapporter** \> **Finansrapporter**.
 
 - Velg en rapport som skal genereres, og klikk på **Generer**.
 - Fyll ut **Rapportdato**-feltet og klikk på **OK**.
@@ -115,7 +114,7 @@ Manglende kontoer finnes ved å bruke de laveste og høyeste verdiene fra raddef
 > [!TIP]
 > Ved validering må denne prosessen kjøres før du genererer månedlige rapporter, og når du oppretter nye byggeblokker.
 
-Rapporter som har områder med verdier har mindre sannsynlig for å mangle kontoer. Hvis det er mulig, bruker du områder i byggeblokken for å ta med nye kontoer når de opprettes. Hvis en rapportdefinisjon er satt til @ANY firma, kan du logge på et bestemt firma og kjøre en analyse for manglende konto for firmaet.
+Rapporter som har områder med verdier har mindre sannsynlig for å mangle kontoer. Hvis det er mulig, bruker du områder i byggeblokken for å ta med nye kontoer når de opprettes. Hvis en rapportdefinisjon er satt til firmaet @ANY, kan du logge på et bestemt firma og kjøre en analyse av manglende konto for det firmaet.
 
 > [!NOTE]
 > Hvis et nytt firma er lagt til, må du legge til det nye firmaet i rapporteringstrærne i eksisterende rapporter, hvis ikke inkluderes ikke firmaet i analysen for manglende kontoer.
@@ -158,4 +157,3 @@ Når du kjører en analyse for manglende konto, er følgende hurtigtaster tilgje
 [Finansrapportering](financial-reporting-intro.md)
 
 [Grensesnitt for Rapportutforming](report-designer-interface.md)
-

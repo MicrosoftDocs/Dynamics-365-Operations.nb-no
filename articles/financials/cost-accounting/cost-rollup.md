@@ -1,32 +1,31 @@
 ---
 title: Policy for opprullet kost og beregning av administrasjonskostnader
-description: "Dette emnet inneholder informasjon om hvordan du fastsetter riktig nivå for sekundære kostnadselementer og lager regler for opprullet kost som passer inn i organisasjonsrapportering og kostnadssporbarhet."
+description: Dette emnet inneholder informasjon om hvordan du fastsetter riktig nivå for sekundære kostnadselementer og lager regler for opprullet kost som passer inn i organisasjonsrapportering og kostnadssporbarhet.
 author: AndersGirke
 manager: AnnBe
 ms.date: 06/16/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CAMCostRollupRule, CAMDimensionHierarchy
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: global
 ms.search.industry: Manufacturing
 ms.author: shylaw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
+ms.openlocfilehash: e809cb2cadadc623134805e028de7f2e64dd662f
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 1150a63fe7c9d51c5fa83f4b0295cfdca7b998dc
-ms.contentlocale: nb-no
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "356145"
 ---
-
 # <a name="cost-rollup-policy-and-overhead-calculation"></a>Policy for opprullet kost og beregning av administrasjonskostnader 
 
 [!include [banner](../includes/banner.md)]
@@ -259,7 +258,7 @@ Dimensjonshierarkiene gjør at du kan vise dataene på ulike aggregeringsnivåer
 
 Her er et eksempel på Power Pivot-rapportering i Excel.
 
-| **Resultatregnskap** | **Kostnadsobjekt** |                |               |               |  **Total**    |
+| **Resultatregnskap** | **Kostnadsobjekt** |                |               |               |  **Sum**    |
 |-----------------------------|-----------------|----------------|---------------|---------------|---------------|
 |                             | **CC001**       | **CC002**      | **CC003**     | **CC004**     |               |
 | **Primær kostnad**            | **10.100,00**   | **14.200,00**  | **14.000,00** | **8.500,00**  | **46.800,00** |
@@ -302,4 +301,3 @@ Det klare skillet mellom **Kostnadsfordelinger** og **Policyer for opprullet kos
 -  [Kostnadselementdimensjoner](cost-elements.md)
 -  [Dimensjonshierarkier](dimension-hierarchy.md)
 -  [Beregning av indirekte kostnader](overhead-calculation.md)
-

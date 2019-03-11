@@ -5,9 +5,9 @@ author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: BankReconciliationMatchRule, BankReconciliationMatchRuleSet
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: c95589b013b569f15fce80612a11eca621944f6b
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: f77a9c927232c95558ba78037f6a6e9f77e202c2
-ms.contentlocale: nb-no
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "357341"
 ---
-
 # <a name="advanced-bank-reconciliation-setup-process"></a>Oppsettsprosess for avansert bankavstemming
 
 [!include [banner](../includes/banner.md)]
@@ -59,7 +58,6 @@ Funksjonen **Bruk bankkontoutdrag som bekreftelse av elektroniske betalinger** i
 Feltet **Banknavn i bankkontoutdrag** er navnet som brukes for bankkontoen på de elektroniske bankkontoutdragene.  Dette navnet brukes når du bestemmer hvilke transaksjoner som skal importeres for en bankkonto fra et utdrag som kan inneholde informasjon om flere bankkontoer. 
 
 Alternativet **Avstem etter import** vil automatisk validere bankkontoutdraget, opprette en ny bankavstemmingen og regneark, og kjør Standard samsvarsregelsett.  Denne funksjonen automatiserer prosessen frem til transaksjonene som må kontrolleres manuelt.  Innstillingen på bankkontoen brukes som standard når du importerer.
-
 
 
 

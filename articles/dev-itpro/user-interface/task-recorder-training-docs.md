@@ -1,13 +1,13 @@
 ---
-title: "Lage dokumentasjon eller opplæring ved hjelp av oppgaveopptak"
+title: Lage dokumentasjon eller opplæring ved hjelp av oppgaveopptak
 description: Dette emnet forklarer hva Oppgaveopptaker og oppgaveveiledninger er, hvordan du oppretter oppgaveopptak og hvordan du tilpasser Microsoft-oppgaveveiledninger og inkluderer dem i hjelpen.
 author: josaw1
 manager: AnnBe
 ms.date: 10/24/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 ms.search.form: SysHelpSetup
 audience: Application User, IT Pro
 ms.reviewer: josaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
 ms.openlocfilehash: fc5b0798397047d1adedfc19406a7875c853bea6
-ms.contentlocale: nb-no
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "353431"
 ---
-
 # <a name="create-documentation-or-training-by-using-task-recordings"></a>Lage dokumentasjon eller opplæring ved hjelp av oppgaveopptak
 
 [!include [banner](../includes/banner.md)]
@@ -41,7 +40,7 @@ Dette emnet forklarer hva Oppgaveopptaker og oppgaveveiledninger er, hvordan du 
 Oppgaveopptak er et verktøy du kan bruke til å registrere handlingene du utfører i brukergrensesnittet for produktet. Når du bruker oppgaveopptakeren, blir alt du gjør i brukergrensesnittet som kjøres mot serveren, for eksempel tilføying av verdier, endring av innstillinger og fjerning av verdier, tatt opp. Samlet kalles trinnene som du registrerer en *oppgaveregistrering*. Oppgaveopptak kan brukes på mange måter:
 
 -   **Oppgaveopptak kan spilles av som oppgaveveiledninger.** Oppgaveopptak er en integrert del av hjelpeopplevelsen. En oppgaveveiledning er en styrt, veiledet, interaktiv opplevelse gjennom trinnene i en forretningsprosess. Brukeren blir veiledet gjennom hvert trinn ved hjelp av en popup-melding (eller «boble») som animeres i brukergrensesnittet og peker på elementet i brukergrensesnittet som brukeren skal bruke. "Boblen" gir også informasjon om hvordan du bruker elementet, for eksempel "Klikk her" eller "Angi en verdi i dette feltet". En oppgaveveiledning kjører mot brukerens gjeldende datasett, og dataene som angis, lagres i brukerens miljø.
--   **Oppgaveopptak kan vises som fremgangsmåtetrinn i Hjelp-ruten.** Du kan bruke Hjelp-ruten til å søke etter og vise oppgaveopptak. Du får tilgang til Hjelp-ruten ved å klikke på **?** ikonet i navigasjonsfeltet øverst, eller du kan bruke hurtigtasten **Ctrl+Skift+?**. Du kan lese trinnene i et oppgaveopptak i Hjelp-ruten, eller du kan velge å spille av opptaket som en oppgaveveiledning, slik at den veileder deg gjennom brukergrensesnittet.
+-   **Oppgaveopptak kan vises som fremgangsmåtetrinn i Hjelp-ruten.** Du kan bruke Hjelp-ruten til å søke etter og vise oppgaveopptak. Du får tilgang til Hjelp-ruten ved å klikke på **?** ikonet i navigasjonsfeltet øverst, eller du kan bruke hurtigtasten  **Ctrl+Skift+?**. Du kan lese trinnene i et oppgaveopptak i Hjelp-ruten, eller du kan velge å spille av opptaket som en oppgaveveiledning, slik at den veileder deg gjennom brukergrensesnittet.
 -   **Du kan lagre oppgaveopptak i Forretningsprosessmodelerer.** Du kan lagre oppgaveopptaket på en linje i et hierarki i et BPM-bibliotek (forretningsprosessmodellerer) i Lifecycle Services (LCS). En liste over trinn og et flytskjema for forretningsprosess genereres fra opptaket. Oppgaveopptak som er lagret i et Forretningsprosessmodelerer-bibliotek, kan vises som hjelp.
 -   **Du kan lagre oppgaveopptak som Word-dokumenter.** Dette gjør at du enkelt kan lage opplæringsveiledninger som skrives ut.
 
@@ -85,12 +84,12 @@ Slik ser notatmerknaden ut i "boblen" i oppgaveveiledningen.
 
 [![Skjerm4](./media/screen4.png)](./media/screen4.png)
 
--   **Informasjonstrinn**: Du oppretter disse merknadene ved å høyreklikke på en kontroll eller hvor som helst i et skjema &lt; **Oppgaveopptaker** &lt; **Legg til informasjonstrinn**. **Informasjonstrinn vises som et nummerert trinn der du setter det inn, selv om ingen handling ble tatt opp i brukergrensesnittet. Du kan legge til et informasjonstrinn på skjemanivå eller et informasjonstrinn som er knyttet til en kontroll. Når et informasjonstrinn er knyttet til et skjema, vises «boblen» i oppgaveveiledningen et sted i skjemaet, uten peker, når oppgaveveiledningen spilles av. Når et informasjonstrinn er knyttet til en kontroll, peker "boblen" i oppgaveveiledningen mot kontrollen når oppgaveveiledningen spilles av. I Hjelp-ruten vises merknaden for et informasjonstrinn som et nummerert trinn med tekst du skrev inn. Bruk informasjonstrinn til å forberede brukeren på de neste trinnene, til å beskrive trinnene som må gjøres utenfor Microsoft Dynamics 365 for Finance and Operations eller til å henvise til andre opptak (selv om du ikke kan bruke hyperkoblinger i merknader).
+-   **Informasjonstrinn**: Du oppretter disse merknadene ved å høyreklikke en kontroll eller hvor som helst i et skjema &lt; **Oppgaveregistrering** &lt; **Legg til informasjonstrinn.** Informasjonstrinn vises som et nummerert trinn der du setter det inn, selv om ingen handling ble tatt opp i brukergrensesnittet. Du kan legge til et informasjonstrinn på skjemanivå eller et informasjonstrinn som er knyttet til en kontroll. Når et informasjonstrinn er knyttet til et skjema, vises «boblen» i oppgaveveiledningen et sted i skjemaet, uten peker, når oppgaveveiledningen spilles av. Når et informasjonstrinn er knyttet til en kontroll, peker "boblen" i oppgaveveiledningen mot kontrollen når oppgaveveiledningen spilles av. I Hjelp-ruten vises merknaden for et informasjonstrinn som et nummerert trinn med tekst du skrev inn. Bruk informasjonstrinn til å forberede brukeren på de neste trinnene, til å beskrive trinnene som må gjøres utenfor Microsoft Dynamics 365 for Finance and Operations, eller til å henvise til andre opptak (selv om du ikke kan bruke hyperkoblinger i merknader).
 
 **Avgjøre hvor langt opptaket skal være**
 
 -   Brukeren kommer vanligvis til å lese eller spille av opptaket fra begynnelse til slutt, så ikke kombiner trinn eller oppgaver det er bedre å gjøre atskilt.
--   Ikke prøv å ta opp et langt scenario som strekker seg over flere underprosesser. «Betjene brukestøtte for butikkunde» er for eksempel for generelt. Del det opp i kortere oppgaver, for eksempel «Godta returer» og «Legg til i gavekort».
+-   Ikke prøv å ta opp et langt scenario som strekker seg over flere underprosesser. «Betjene brukestøtte for butikkunde» er for eksempel for generelt. Del det opp i kortere oppgaver, for eksempel «Godta returer» og «Legg til i gavekort».
 -   Hvis en oppgave kan utføres som en del av flere ulike forretningsprosesser, lager du et separat opptak for den, og så kan du henvise til det i de andre opptakene.
 -   Hvis prosessen omfatter flere oppgaver som brukeren sannsynligvis gjør samtidig, kan du ha oppgavene i ett opptak, for eksempel «Konfigurere og tilordne funksjonalitetsprofiler».
 -   Hvis det er noe noen gjør én gang (for eksempel konfigurasjon), og deretter en annen oppgave de kan gjøre like etterpå, men kan gjøre gjentatte ganger og separat, kan du dele dem opp i to oppgaveopptak.
@@ -111,7 +110,7 @@ Du kan laste ned og redigere oppgaveopptak fra Microsoft for å bruke dem i din 
 6.  Velg biblioteknoden for forretningsprosess som er knyttet til oppgaveopptaket, i treet.
 7.  Klikk **OK**.
 8.  Klikk **Start**.
-9.  Nå kan du gå gjennom opptaket og endre eventuelle trinn ved å ta dem opp på nytt mens du går gjennom opptaket. **Obs!** Hvis du bare vil endre teksten i et opptak, kan du åpne det i modusen **Redigere en merknad i opptaket**, og deretter lagre det.
+9.  Nå kan du gå gjennom opptaket og endre eventuelle trinn ved å ta dem opp på nytt mens du går gjennom opptaket. **Obs!** Hvis du bare vil endre teksten i et opptak, kan du åpne det i modusen **Redigere en merknad i opptaket**, og deretter lagre det.
 10. Når opptaket er avspilt til slutten, klikker du **Stopp** på oppgaveopptakslinjen øverst på skjermen.
 11. Velg hvordan du vil lagre oppgaveopptaket.
 
@@ -128,4 +127,3 @@ Hvis du vil vise dine egne oppgaveopptak i Hjelp-ruten, slik at de kan spilles a
 [Oppgaveopptaker](task-recorder.md)
 
 [Opprette rike hjelpeemner med oppgaveopptakeren (ekstern link)](https://mbspartner.microsoft.com/AX/Videos/970)
-

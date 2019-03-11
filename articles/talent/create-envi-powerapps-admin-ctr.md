@@ -1,30 +1,29 @@
 ---
-title: "Kan ikke opprette et miljø i PowerApps-administrasjonssenteret"
-description: "Dette emnet forklarer hva du gjør hvis administratoren ikke kan opprette et miljø i Microsoft PowerApps-administrasjonssenteret."
+title: Kan ikke opprette et miljø i PowerApps-administrasjonssenteret
+description: Dette emnet forklarer hva du gjør hvis administratoren ikke kan opprette et miljø i Microsoft PowerApps-administrasjonssenteret.
 author: Darinkramer
 manager: AnnBe
 ms.date: 11/02/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Talent
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2018-11-02
 ms.dyn365.ops.version: Talent
-ms.translationtype: HT
-ms.sourcegitcommit: d3f974f94b6c327fd70b8098d24f9e1f1e1e8eeb
 ms.openlocfilehash: 6f9b7ceef6895b295e6ae5a50d8ac7970497efe5
-ms.contentlocale: nb-no
-ms.lasthandoff: 12/04/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "305687"
 ---
-
 # <a name="cant-create-an-environment-in-the-powerapps-admin-center"></a>Kan ikke opprette et miljø i PowerApps-administrasjonssenteret
 
 [!include [banner](includes/banner.md)]
@@ -47,4 +46,3 @@ Legg merke til at ulike Microsoft Office-SKUer også gir rettighet, sammen med f
 
 1. Gå til [https://preview.admin.powerapps.com/environments](https://preview.admin.powerapps.com/environments).
 2. Opprett miljøene ved å følge instruksjonene i [Klargjøre Talent](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/provisioning-talent).
-

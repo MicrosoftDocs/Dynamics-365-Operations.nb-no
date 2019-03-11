@@ -1,32 +1,31 @@
 ---
-title: "Leverandører med LinkedIn-rekrutterer"
-description: "Dette emnet gir informasjon om hvordan du bruker maskinlæring til å få jobb- og kandidatanbefalinger for jobb."
+title: Leverandører med LinkedIn-rekrutterer
+description: Dette emnet gir informasjon om hvordan du bruker maskinlæring til å få jobb- og kandidatanbefalinger for jobb.
 author: josaw
 manager: AnnBe
 ms.date: 12/07/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: 
-ms.search.form: 
+ms.technology: ''
+ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Talent, Core
 ms.custom: 7521
 ms.assetid: 3b953d5f-6325-4c9e-8b9b-6ab0458a73f8
 ms.search.region: Global
-ms.search.industry: 
+ms.search.industry: ''
 ms.author: josaw
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.translationtype: HT
-ms.sourcegitcommit: be66d9f95551066bb8bc25445c652d4fa59066d4
 ms.openlocfilehash: 9bb323728923ff3b09ff0bfba3849f3c5d84eb34
-ms.contentlocale: nb-no
-ms.lasthandoff: 12/07/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "305581"
 ---
-
 # <a name="sourcing-with-linkedin-recruiter"></a>Leverandører med LinkedIn-rekrutterer
 [!include[banner](../includes/banner.md)]
 
@@ -65,7 +64,7 @@ For å fullføre neste trinn må du ha en administratorrettighet i LinkedIn-rekr
 
 Attract-systemet vises med et par alternativer som kan aktiveres.
 
-9. Hvis du bare vil aktivere 1-klikk-eksport for kontrollprogrammet **In-ATS indicator** og **In-ATS Profile**, velger du **Tilgang på firmanivå**. Hvis du vil aktivere alle tilgangsfunksjoner på firmanivå pluss InMail-logg, Merknader-logg og InMailstub-profiltilgang, velger du **Tilgang på kontraktnivå**.
+9. Hvis du bare vil aktivere 1-klikk-eksport for kontrollprogrammet **In-ATS indicator** og **In-ATS Profile**, velger du **Tilgang på firmanivå**. Hvis du vil aktivere alle tilgangsfunksjoner på firmanivå pluss InMail-logg, Merknader-logg og InMail-stub-profiltilgang, velger du **Tilgang på kontraktnivå**.
 
 10. Slå på ønsket tilgangsnivå fra LinkedIn-rekrutterer **Admin-ATS**-innstillingene.
 
@@ -125,7 +124,7 @@ Ved hjelp av LinkedIn-rekrutterer kan du kontrollere om en kandidat har søkt p�
 > [!NOTE]
 > Kandidat- og søknadsdata blir ikke synkronisert til LinkedIn Recruiter hvis kandidaten ikke er forbi jobbkandidatfasen.
 
-### <a name="inmail-history"></a>InMail-logg
+### <a name="inmail-history"></a>InMail-historikk
 
 LinkedIn InMail-loggen er tilgjengelig med tilgang på kontraktnivå med LinkedIn-rekrutterer. Når den er aktivert, kan du vise hele InMail-loggen for kandidaten. Du kan også se hvem andre fra organisasjonen som har utvekslet InMail med kandidaten, men du ikke kan vise meldinger mellom dem.
 
@@ -142,4 +141,3 @@ Hvis du vil vise notatloggen, går du til en kandidats profil, går til **Linked
 InMail-stub-profilen er tilgjengelig med tilgang på kontraktnivå med LinkedIn-rekrutterer. Hvis kandidater er enige om å dele sine LinkedIn-profiler med alle brukere i organisasjonen, kan du spore kandidater i Attract, så opprettes en ny kandidatpost for hver kandidat. Du kan vise kandidatens e-postadresse hvis kandidaten allerede finnes i systemet med en e-postadresse, eller har valgt å dele e-postadressen med rekruttereren.
 
 Hvis du vil vise listen over kandidater, kan du gå til **Talentutvalg** for å se et systemopprettet LinkedIn-talentutvalg. Dette talentutvalget inneholder listen over kandidater og stub-profiler som mottatt fra LinkedIn, og viser kandidatens fornavn og etternavn. Kandidatens e-post-ID vises hvis kandidaten har valgt å dele e-postadressen.
-

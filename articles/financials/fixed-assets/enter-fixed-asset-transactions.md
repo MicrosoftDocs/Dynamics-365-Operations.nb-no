@@ -1,13 +1,13 @@
 ---
-title: Alternativer for anleggsmiddeltransaksjon
-description: Denne artikkelen beskriver de ulike metodene som er tilgjengelige for oppretting av anleggsmiddeltransaksjoner.
+title: Alternativer for transaksjon av anleggsmiddel
+description: Dette emnet beskriver de ulike metodene som er tilgjengelige for oppretting av anleggsmiddeltransaksjoner.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 02/07/2019
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: AssetTable, PurchCreateOrder
 audience: Application User
 ms.reviewer: shylaw
@@ -18,19 +18,18 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 6362a63bca43b5ac8da14becf6b966e459365ce1
+ms.sourcegitcommit: 68df883200b5c477ea1799cc28d3ef467cd29202
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 18352ad921c2e2d110a7535f979272685105662f
-ms.contentlocale: nb-no
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: nb-NO
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "377188"
 ---
-
-# <a name="fixed-asset-transaction-options"></a>Alternativer for anleggsmiddeltransaksjon
+# <a name="fixed-asset-transaction-options"></a>Alternativer for transaksjon av anleggsmiddel
 
 [!include [banner](../includes/banner.md)]
 
-Denne artikkelen beskriver de ulike metodene som er tilgjengelige for oppretting av anleggsmiddeltransaksjoner.
+Dette emnet beskriver de ulike metodene som er tilgjengelige for oppretting av anleggsmiddeltransaksjoner.
 
 Du kan definere anleggsmidler for integrasjon med Leverandører, Kunder, Innkjøp og leverandører og Økonomimodul. Du kan også overføre varer i Lagerstyring til Anleggsmidler hvis du vil bruke disse elementene internt.
 
@@ -66,9 +65,6 @@ Alle typer anleggsmiddeltransaksjoner kan posteres på siden Økonomijournal. Du
 | ** **                               | Kundereskontro      | Fritekstfaktura                         |
 
 
+Den gjenværende verdien for nedskrivningsperioder for anleggsmiddelet oppdateres ikke når en journallinje for avskrivningstransaksjonstype opprettes manuelt eller importeres via en dataenhet. Denne verdien oppdateres når avskrivningsforslagsprosessen brukes til å opprette journallinjen.
 
 Hvis du vil ha mer informasjon, se [Integrering av anleggsmidler](fixed-asset-integration.md).
-
-
-
-

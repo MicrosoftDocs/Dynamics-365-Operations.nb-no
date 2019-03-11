@@ -1,13 +1,13 @@
 ---
 title: Definere veksler
-description: "Dette emnet beskriver fremgangsmåten for hvordan du konfigurerer veksler."
+description: Dette emnet beskriver fremgangsmåten for hvordan du konfigurerer veksler.
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 09/17/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CustBillOfExchangeJour
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: global
 ms.author: shpandey
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: HT
-ms.sourcegitcommit: c9d6866bb994cb9fb411bdd6a9ccae0e67d2d6f3
 ms.openlocfilehash: cda597b1d99e99ac5c5c396bcfcec9c0712f0eb1
-ms.contentlocale: nb-no
-ms.lasthandoff: 10/16/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "344714"
 ---
-
 # <a name="set-up-bills-of-exchange"></a>Definere veksler
 
 [!include [banner](../includes/banner.md)]
@@ -82,7 +81,6 @@ På **Bankkontoer**-siden klikker du på **Oppsett** og angir dokumentoppsettet 
 ## <a name="set-up-customers-for-bills-of-exchange"></a>Definere kunder for veksler
 
 For hver kunde som har avtalt å betale ved hjelp av en veksel, kan du definere en standard betalingsmåte for veksler i kategorien **Betalingsstandarder** på siden **Kunder**.
-
 
 
 

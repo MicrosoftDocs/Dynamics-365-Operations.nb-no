@@ -5,9 +5,9 @@ author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: BankReconciliationMatchRule
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: leguo
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 5c6cec76ebc8328f221ecb6c30ae93716bd9bfe9
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: ff59250b836a73986848109ce48f843fed1d71a9
-ms.contentlocale: nb-no
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "358215"
 ---
-
 # <a name="advanced-bank-reconciliation-overview"></a>Oversikt over avansert bankavstemming
 
 [!include [banner](../includes/banner.md)]
@@ -40,14 +39,13 @@ Funksjonen for avanserte bankavstemming lar deg importere bankkontoutdrag. Det i
     -   Funksjonen kan utvides til et hvilken som helst format.
 
 2.  Definer en nummerserie som skal brukes for avansert bankavstemming, og definer samsvarsregler for bankavstemmingen.
-    -   En samsvarsregel for avstemming er et sett kriterier som brukes for å filtrere bankkontoutdragslinjer og Microsoft Dynamics 365 for Finance and Operations-banktransaksjonslinjer under avstemmingsprosessen. Avhengig av firmaets praksis, kan du definere én eller flere samsvarsregler for å automatisere og optimalisere avstemmingsprosessen.
+    -   En samsvarsregler for avstemming er et sett kriterier som brukes for å filtrere bankkontoutdragslinjer og Microsoft Dynamics 365 for Finance and Operations-banktransaksjonslinjer under avstemmingsprosessen. Avhengig av firmaets praksis, kan du definere én eller flere samsvarsregler for å automatisere og optimalisere avstemmingsprosessen.
 
 3.  Avstem bankkontoutdrag med banktransaksjoner i Finance and Operations.
     -   Utfør automatiske samsvaring og oppretting av avstemmingsjournaler.
     -   Vis bankkontoutdrag og banktransaksjoner i Finance and Operations ved siden av hverandre.
     -   Poster banktransaksjoner i Finance and Operations automatisk hvis de vises i et bankkontoutdrag, men ikke vises i Finance and Operations.
     -   Generer et avstemmingsutdrag.
-
 
 
 

@@ -1,31 +1,30 @@
 ---
 title: Returkostpris og returparti-ID
-description: "Du vil kanskje at kostnadene for de returnerte produktene skal være lik kostnaden for produktene på tidspunktet da du solgte produktene til kunden. Du kan gjøre dette ved å bruke **Returparti-ID**."
+description: Du vil kanskje at kostnadene for de returnerte produktene skal være lik kostnaden for produktene på tidspunktet da du solgte produktene til kunden. Du kan gjøre dette ved å bruke **Returparti-ID**.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 04/30/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ReturnTableListPage
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
 ms.author: ShylaThompson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 33cd3d50fe342ba12a17419f4e759c243a60b3e0
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: aeba56128ab6c9ab7d244bdf153faba8e96069d6
-ms.contentlocale: nb-no
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "335146"
 ---
-
 # <a name="return-cost-price-and-return-lot-id"></a>Returkostpris og returparti-ID        
 
 [!include [banner](../includes/banner.md)]
@@ -64,7 +63,7 @@ Dette er den foretrukne metoden for å opprette returlinjer. Hvis du vil bruke k
 
 3.  I skjemaet **Opprett returordre**, velg en kundekonto og klikk deretter **OK**.
 
-4.  I skjemaet **Returordre - autorisasjonsreturnr.: %1, %2**, i **handlingsruten**, klikk **Søk etter salgsordre**.
+4.  I skjemaet **Returordre - autorisasjonsreturnr.: %1, %2**, i **Handlingsrute**, klikk **Søk etter salgsordre**.
 
 5.  I skjemaet **Søk etter salgsordre** velger du fakturalinjen som skal returneres, og klikk deretter **OK**.
     
@@ -109,7 +108,6 @@ Når du bruker feltet **Returparti-ID** i en returordrelinje for å angi den ret
 10. I lagerstyring kan du bruke skjemaet **Lukking og justering** til å kjøre prosedyren **3. Lukk**.
     
     Denne handlingen justerer kostnaden på den opprinnelige salgslinjen som ble kalkulert til -35,00 (5 enheter \* 7,00) til -30,00 (5 enheter \* 6,00). Dette er fordi lagermodellgruppen bruker først inn, først ut (FIFO), og 6,00 per enhet er FIFO-kostnaden fra den første bestillingen. I tillegg justerer handlingen kostnaden på retursalgslinjen, slik at den samsvarer med kostnaden per enhet i den opprinnelige salgslinjen. Derfor justeres kostnaden for returlinjen fra 35,00 til 30,00.
-
 
 
 

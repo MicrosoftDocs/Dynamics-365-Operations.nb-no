@@ -1,14 +1,14 @@
 ---
 title: Aktiviteter i prosessene
 description: Dette emnet gir informasjon om forskjellige typer aktiviteter som kan brukes i ansettelsesprosessen.
-author: 
+author: ''
 manager: AnnBe
-ms.date: 12/07/2018
+ms.date: 02/04/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: 
-ms.search.form: 
+ms.technology: ''
+ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Talent, Core
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: rschloma
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
+ms.openlocfilehash: c32db1f563466f05b9fef1a03578392888c0b7e6
+ms.sourcegitcommit: 1e32d78868098fd76124bb41363f15c4ec3ea15a
 ms.translationtype: HT
-ms.sourcegitcommit: be66d9f95551066bb8bc25445c652d4fa59066d4
-ms.openlocfilehash: 4f59193991420fd9ec05a83049e569058bf81932
-ms.contentlocale: nb-no
-ms.lasthandoff: 12/07/2018
-
+ms.contentlocale: nb-NO
+ms.lasthandoff: 02/05/2019
+ms.locfileid: "374763"
 ---
-
 # <a name="activities-in-the-hiring-processes"></a>Aktiviteter i ansettelsesprosessene
 
 [!include[banner](../includes/banner.md)]
@@ -43,31 +42,9 @@ Kundeemneaktiviteten styrer om kundeemner kan legges til en jobb. Kundeemner kan
 
 Søknadsaktiviteten er påkrevd i malen for ansettelsesprosess. Hvis du vil sende e-post til kandidater når de sender inn søknaden eller legges til i søknadsstadiet, kan du angi **Send e-post til kandidat** til **På**.
 
-## <a name="scheduler-activity"></a>Planleggeraktivitet
+## <a name="interview-schedule-and-feedback-activity"></a>Intervjuvtidsplan og tilbakemeldingsaktivitet
 
-Planleggeraktiviteten er valgfri. Denne aktiviteten har to komponenter: kandidattilgjengelighet og tidsplan. Med komponenten kandidattilgjengelighet kan du bruke e-post til å spørre om en kandidats tilgjengelighet. Tidsplankomponenten gir mulighet å planlegge intervjuer med kandidaten og ansettelsesteamet. Du kan konfigurere følgende alternativer i planleggeraktiviteten: **Spør om kandidattilgjengelighet**, **Nettmøte** og **Send e-post til kandidat**.
-
-- Hvis du vil sende e-post til kandidater for å spørre om de er tilgjengelige, kan du angi alternativet **Spør om kandidattilgjengelighet** til **På**. Hvis du setter alternativet til **Av**, vises ikke dette trinnet i ansettelsesprosessen for jobben.
-- Hvis du vil ha en live-stream eller en telefonkonferanse ved hjelp av Skype for Business, setter du **Nettmøte**-feltet til **Skype for Business**. Den riktige **Bli med i Skype-møte**-koblingen legges deretter til i møteinnkallelsen for intervjuet som er sendt til intervjuere.
-- Hvis du vil sende e-post til kandidater for å fullføre tidsplanen, angir du alternativet **Send e-post til kandidat** til **På**. Hvis du setter alternativet til **Av**, vil kandidater få intervjuplanen først når de logger på kandidatportalen.
-
-## <a name="feedback-activity"></a>Tilbakemeldingsaktivitet
-
-Tilbakemeldingsaktiviteten er valgfri. I denne aktiviteten kan intervjudeltakere angi anbefalinger for en søker. De kan også angi eventuelle tilbakemeldinger de har. Hvis du aktiverer alternativet **Arv tilbakemeldingsdeltakere fra ansettelsesteam**, angis rekrutterer, ansettelsesansvarlig og intervjuere automatisk i tilbakemeldingsaktiviteten. Organisasjoner kan la intervjuere vise tilbakemeldingen fra andre før de sender sine egen tilbakemelding. Organisasjoner kan også la intervjuerne redigere tilbakemeldingen etter at de har sendt den.
-
-## <a name="interview-activity"></a>Intervjuaktivitet
-
-Intervjuaktiviteten er valgfri. Denne aktiviteten har tre komponenter: kandidattilgjengelighet, tidsplan og tilbakemelding. Med komponenten kandidattilgjengelighet kan du bruke e-post til å spørre om en kandidats tilgjengelighet. Tidsplankomponenten gir mulighet å planlegge intervjuer med kandidaten og ansettelsesteamet. Du kan konfigurere følgende alternativer i planleggeraktiviteten: **Spør om kandidattilgjengelighet**, **Nettmøte** og **Send e-post til kandidat**.
-
-- Hvis du vil sende e-post til kandidater for å spørre om de er tilgjengelige, kan du angi alternativet **Spør om kandidattilgjengelighet** til **På**. Hvis du setter alternativet til **Av**, vises ikke dette trinnet i ansettelsesprosessen for jobben.
-- Hvis du vil ha en live-stream eller en telefonkonferanse ved hjelp av Skype for Business, setter du **Nettmøte**-feltet til **Skype for Business**. Den riktige **Bli med i Skype-møte**-koblingen legges deretter til i møteinnkallelsen.
-- Hvis du vil sende e-post til kandidater for å fullføre tidsplanen, angir du alternativet **Send e-post til kandidat** til **På**. Hvis du setter alternativet til **Av**, vil kandidater få intervjuplanen først når de logger på kandidatportalen.
-
->[!NOTE]
-> - For alle 1:1-intervjuer sendes påminnelser til intervjuerne hvert døgn hvis intervjueren ikke har svart (godtatt eller avslått) på intervjuforespørselen.
-> - For alle panelintervjuer finnes det ingen automatiske påminnelser for å svare på intervjuforespørselen. Hvis du vil utløse en påminnelse manuelt, redigerer du intervjuet og bruker **Oppdater og send**-alternativet for å sende forespørselen tilbake til intervjuerne.
-
-Komponenten tilbakemelding lar folk angi anbefalinger for en søker. De kan også angi eventuelle tilbakemeldinger de har. Hvis du aktiverer alternativet **Arv tilbakemeldingsdeltakere fra ansettelsesteam**, angis rekrutterer, ansettelsesansvarlig og intervjuere automatisk i tilbakemeldingskomponenten. Organisasjoner kan la intervjuere vise tilbakemeldingen fra andre før de sender sine egen tilbakemelding. Organisasjoner kan også la intervjuerne redigere tilbakemeldingen etter at de har sendt den.
+Denne aktiviteten har tre komponenter: forespørsel om kandidattilgjengelighet, tidsplan og tilbakemelding. Bruk intervjuaktiviteten i jobbmalen hvis du vil ta med kandidatens tilgjengelighetsforespørsel, tidsplan og tilbakemelding som en del av prosessen, i stedet for å bruke dem enkeltvis som en del av ansettelsesprosessen. Hvis du vil ha mer informasjon, se [Planlegging og tilbakemelding for intervju](interview-scheduling-feedback.md).
 
 ## <a name="powerapps-activity"></a>PowerApps-aktivitet
 
@@ -102,4 +79,3 @@ I Microsoft Forms kan forfattere endre innstillingene for å la brukere utenfor 
 
 > [!NOTE]
 > Microsoft Forms-aktiviteten er bare tilgjengelig med tillegget for omfattende ansettelse.
-

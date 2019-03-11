@@ -1,13 +1,13 @@
---- 
+---
 title: Registrere og fjerne fordeler fra arbeidere
-description: "Denne prosedyren beskriver hvordan én enkelt arbeider kan registreres i én eller flere fordeler, samt hvordan flere arbeidere kan registreres i en fordel."
+description: Denne prosedyren beskriver hvordan én enkelt arbeider kan registreres i én eller flere fordeler, samt hvordan flere arbeidere kan registreres i en fordel.
 author: kherr75
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: HcmWorker, HcmWorkerEnrollment, HcmBenefitByEligibilityLookup, HcmMassBenefitEnrollment, HcmBenefitLookup, HcmMassBenefitEnrollmentResults
 audience: Application User
 ms.reviewer: rschloma
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kherr
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: 32f0e641f5e6824df89112aa5ea21dc3a708efa0
-ms.contentlocale: nb-no
-ms.lasthandoff: 09/14/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "341862"
 ---
 # <a name="enroll-and-remove-benefits-from-workers"></a>Registrere og fjerne fordeler fra arbeidere
 
@@ -57,5 +57,4 @@ Denne prosedyren beskriver hvordan én enkelt arbeider kan registreres i én ell
 13. Finn fordelsresultatposten som du leter etter.
 14. Klikk koblingen i den valgte raden i listen.
 15. På denne siden kan du se hvilke ansatte som er registrert i fordelen, i tillegg til ansatte som ikke er registrert.
-
 

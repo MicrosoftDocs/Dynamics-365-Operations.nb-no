@@ -5,9 +5,9 @@ author: ashishmsft
 manager: AnnBe
 ms.date: 02/05/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 ms.search.form: RetailParameters
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: HT
-ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
 ms.openlocfilehash: d6706cbb7630aeb230bc9eb1c187397897c9de68
-ms.contentlocale: nb-no
-ms.lasthandoff: 01/04/2019
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "326475"
 ---
-
 # <a name="personalized-product-recommendations"></a>Personlige produktanbefalinger
 
 [!include [banner](includes/banner.md)]
@@ -34,7 +33,7 @@ ms.lasthandoff: 01/04/2019
 > [!NOTE]
 > Vi fjerner gjeldende versjon av produktanbefalingstjenesten fordi vi utformer denne funksjonen på nytt med en bedre algoritme og nyere detaljhandelsorienterte funksjoner. Hvis du vil ha mer informasjon, kan du se [Fjernede eller avskrevne funksjoner](../dev-itpro/migration-upgrade/deprecated-features.md).
 
-Produktanbefalingene kan vises i Dynamics 365 for Retail på salgsstedsenheten. Anbefalingene er varer som kunden kan være interessert i basert på kjøpshistorikken, varer i ønskelisten og varer som andre kunder har kjøpt på nettet og i fysiske butikker. For forhandlere med store kataloger bidrar anbefalinger kunden med å oppdage produkter. Ved å presentere produkter som er rettet mot en kundes interesser og kjøpsvaner, kan produktanbefalinger bidra til mersalg og kryssalg for forhandlere og forbedring av kundebevaring. I Dynamics 365 for Retail er produktanbefalingene drevet av kognitive tjenester og Microsoft Azure Machine Learning.
+Produktanbefalingene kan vises i Dynamics 365 for Retail på salgsstedsenheten. Anbefalingene er varer som kunden kan være interessert i basert på kjøpshistorikken, varer i ønskelisten og varer som andre kunder har kjøpt på nettet og i fysiske butikker. For forhandlere med store kataloger bidrar anbefalinger kunden med å oppdage produkter. Ved å presentere produkter som er rettet mot en kundes interesser og kjøpsvaner, kan produktanbefalinger bidra til mersalg og kryssalg for forhandlere og forbedring av kundebevaring. I Dynamics 365 for Retail er produktanbefalinger drevet av kognitive tjenester og Microsoft Azure machine learning.
 
 ## <a name="scenarios"></a>Scenarier
 
@@ -53,7 +52,7 @@ Produktanbefalingene er aktivert for følgende POS-scenarier. De er tilgjengelig
     - Hvis den butikkansatte legger til en kunde i transaksjonen, gir anbefalingsmotoren personlige anbefalinger ved hjelp av kundens transaksjonshistorikk og varelisten i handlekurven.
 
     > [!NOTE]
-    > For å vise anbefalinger i **Transaksjon**-siden må forhandler oppdatere skjermvisningen i Dynamics 365 for Retail. **Anbefalinger**-kontrollen må slippes på **Transaksjon**-siden.
+    > For å vise anbefalinger på **Transaksjon**-siden må forhandler oppdatere skjermvisningen i Dynamics 365 for Retail. **Anbefalinger**-kontrollen må slippes på **Transaksjon**-siden.
 
     [![transactionscreenmultipleproductslargemessengersbag-5](./media/transactionscreenmultipleproductslargemessengersbag-5.jpg)](./media/transactionscreenmultipleproductslargemessengersbag-5.jpg)
 
@@ -63,7 +62,7 @@ Produktanbefalingene er aktivert for følgende POS-scenarier. De er tilgjengelig
 
     [![customerdetailsrecommendations](./media/customerdetailsrecommendations.png)](./media/customerdetailsrecommendations.png)
 
-## <a name="configure-dynamics-365-for-retail-to-enable-pos-recommendations"></a>Konfigurere Dynamics 365 for Retail for å aktivere POS-anbefalinger
+## <a name="configure-dynamics-365-for-retail-to-enable-pos-recommendations"></a>Konfigurere Dynamics 365 for Retail for å aktivere anbefalinger for salgssted
 
 Hvis du vil sette opp produktanbefalinger, må du gjøre følgende.
 
@@ -77,7 +76,7 @@ Hvis du vil sette opp produktanbefalinger, må du gjøre følgende.
 
 Når du oppdaterer den **Enhetslager**, følgende handlinger finner sted.
 
-- Data i formatet som kreves av de kognitive tjenestene er trukket ut fra Dynamics 365 for Retail operativ database og sendes til enhetslageret.
+- Data i formatet som kreves av de kognitive tjenestene, er trukket ut fra Dynamics 365 for Retail-operativ database og sendes til enhetslageret.
 - Dataene brukes av Azure Data Factory (ADF) til å rense data ved hjelp av strukturskript som en del av ADF-aktiviteter. Rensede data lagres i blob-lagring.
 - Data fra blob-lagring brukes av kognitive services API til å lære opp en anbefalingsmodell.
 
@@ -94,4 +93,3 @@ Når du slår på **Aktiver anbefalinger** og kjører konfigurasjonjobbene, føl
 ## <a name="additional-resources"></a>Tilleggsressurser
 
 [Legge til en kontroll for anbefalinger på transaksjonssiden på en salgsstedsenhet](add-recommendations-control-pos-screen.md)
-

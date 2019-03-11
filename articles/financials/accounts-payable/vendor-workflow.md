@@ -1,13 +1,13 @@
 ---
-title: "Arbeidsflyt for leverandør"
-description: "Endre informasjon om leverandør og bruke arbeidsflyt til å godkjenne den."
+title: Arbeidsflyt for leverandør
+description: Endre informasjon om leverandør og bruke arbeidsflyt til å godkjenne den.
 author: mikefalkner
 manager: annbe
 ms.date: 08/24/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: Vendor
 audience: Application User
 ms.reviewer: shylaw
@@ -16,14 +16,13 @@ ms.search.region: Global
 ms.author: mikefalkner
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
-ms.translationtype: HT
-ms.sourcegitcommit: 98ed3378ab05c0c69c9e5b2a82310113a81c2264
 ms.openlocfilehash: 950a1852acf9f3e4747ce2d55738c0eb3a646897
-ms.contentlocale: nb-no
-ms.lasthandoff: 08/31/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "329695"
 ---
-
 # <a name="vendor-workflow"></a>Arbeidsflyt for leverandør
 
 [!include [banner](../includes/banner.md)]
@@ -61,5 +60,4 @@ Når du har minst én foreslått endring, vises det to ytterligere kategorier i 
 
     Statusen på siden endres til **Endringer som venter på godkjenning**.
 
-Arbeidsflyten følger standard arbeidsflytprosessen i Microsoft Dynamics 365 for Finance and Operations. Godkjenneren er rettet mot siden **Leverandør**, der han eller hun kan se endringene på siden **Foreslåtte endringer** og deretter velge **Arbeidsflyt \> Godkjenn** for å godkjenne arbeidsflyten. Når alle godkjenninger er fullført, oppdateres feltene med verdier som du har foreslått.
-
+Arbeidsflyten følger standard arbeidsflytprosess i Microsoft Dynamics 365 for Finance and Operations. Godkjenneren er rettet mot siden **Leverandør**, der han eller hun kan se endringene på siden **Foreslåtte endringer** og deretter velge **Arbeidsflyt \> Godkjenn** for å godkjenne arbeidsflyten. Når alle godkjenninger er fullført, oppdateres feltene med verdier som du har foreslått.

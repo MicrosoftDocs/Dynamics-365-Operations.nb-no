@@ -5,9 +5,9 @@ author: rschloma
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: 
+ms.technology: ''
 ms.search.form: HcmJob, HcmPosition, OMOperatingUnit
 audience: Application User
 ms.reviewer: rschloma
@@ -18,19 +18,17 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
+ms.openlocfilehash: 8b74542b85810409e062a42e323c0527711d562f
+ms.sourcegitcommit: 49a642cd5e0519e381ff558f59c993ee77f55108
 ms.translationtype: HT
-ms.sourcegitcommit: 82f039b305503c604d64610f39838fa86a8eb08a
-ms.openlocfilehash: b2a79c42b67621272af8107661202ea2ce092193
-ms.contentlocale: nb-no
-ms.lasthandoff: 08/09/2018
-
+ms.contentlocale: nb-NO
+ms.lasthandoff: 02/04/2019
+ms.locfileid: "374403"
 ---
-
 # <a name="organize-your-workforce-by-using-departments-jobs-and-positions"></a>Organisere arbeidsstyrken ved bruk av avdelinger, jobber og stillinger
 
 [!include [banner](includes/banner.md)]
 
-[!include [retail name](includes/retail-name.md)]
 
 Avdelinger, jobber og stillinger er organisasjonselementer som vedlikeholdes i Personale. Dette emnet beskriver konseptuell informasjon om disse elementene. 
 
@@ -165,7 +163,6 @@ For noen poster kan du angi fremtidige endringer i posten. Følgende informasjon
 </table>
 
 Du kan endre informasjonen som er nevnt i den forrige tabellen for en stilling eller en jobb og angi en dato når endringene i stillingen eller jobben skal tre i kraft. En stilling kan for eksempel bare tilordnes én arbeider, men Sanjay Patel, som er tilordnet til stillingen regnskapsfører-A, skal slutte om to uker. Joe Healy erstatter Sanjay Patel når han slutter. Selv om Sanjay fremdeles er tilordnet stillingen sin, kan du tilordne Joe Healy til samme stilling slik at tilordningen bare gjelder etter Sanjays siste dag.
-
 
 
 

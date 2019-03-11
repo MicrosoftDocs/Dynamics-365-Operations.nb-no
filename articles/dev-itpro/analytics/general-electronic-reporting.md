@@ -1,13 +1,13 @@
 ---
 title: Elektronisk rapportering (ER)
-description: "Dette emnet gir en oversikt over verktøyet for elektronisk rapportering (ER). Den inneholder informasjon om viktige konsepter, hvilke scenarioer ER støtter, samt en liste over formater som er utviklet og lansert som en del av ER-løsningen."
+description: Dette emnet gir en oversikt over verktøyet for elektronisk rapportering (ER). Den inneholder informasjon om viktige konsepter, hvilke scenarioer ER støtter, samt en liste over formater som er utviklet og lansert som en del av ER-løsningen.
 author: NickSelin
 manager: AnnBe
 ms.date: 11/01/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 ms.search.form: ERWorkspace
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
@@ -18,14 +18,13 @@ ms.search.region: global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 67dc5b5cdec797f19a742addd05c6002aa31cf15
 ms.openlocfilehash: e619b24fc790399452d6233b2d04987357d87186
-ms.contentlocale: nb-no
-ms.lasthandoff: 01/03/2019
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "310812"
 ---
-
 # <a name="electronic-reporting-er"></a>Elektronisk rapportering (ER)
 
 [!include [banner](../includes/banner.md)]
@@ -36,12 +35,12 @@ ER er et verktøy du kan bruke til å konfigurere formater for både innkommende
 
 ER-motoren er rettet mot bedriftsbrukere i stedet for utviklere. Siden du konfigurere formater, i stedet for kode, er prosessene for å opprette og justere formater for elektroniske dokumenter raskere og enklere.
 
-ER støtter TEKST, XML, Microsoft Word-dokument og OPENXML regneark. Et filtypegrensesnitt gir imidlertid støtte for flere formater.
+ER støtter regnearkformatene TEKST, XML, Microsoft Word-dokument og OPENXML. Et filtypegrensesnitt gir imidlertid støtte for flere formater.
 
 ## <a name="capabilities"></a>Muligheter
 ER-motoren har følgende funksjoner:
 
-- Den representerer ett delt verktøy for elektronisk rapportering i forskjellige områder, og erstatter mer enn 20 forskjellige motorer som utfører en slags elektronisk rapportering i Microsoft Dynamics 365 for Finance and Operations.
+- Den representerer ett felles verktøy for elektronisk rapportering i forskjellige områder, og erstatter mer enn 20 forskjellige motorer som utfører en slags elektronisk rapportering i Microsoft Dynamics 365 for Finance and Operations.
 - Den isolerer rapportformatet fra gjeldende Finance and Operations-implementering. Med andre ord kan formatet brukes for ulike versjoner av Finance and Operations.
 - Den støtter oppretting av et tilpasset format som er basert på et opprinnelig format. Den inkluderer også funksjoner for å automatisk oppgradere det egendefinerte formatet når det opprinnelige formatet endres på grunn av krav til lokalisering/tilpassing.
 - Den blir det primære standardverktøyet for å støtte for lokaliseringskrav i elektronisk rapportering, både for Microsoft og Microsoft-partnere.
@@ -100,7 +99,7 @@ En formatkomponent støtter følgende funksjoner:
 En formatkomponent gjør det mulig å vedlegge bestemte filer, som kan brukes i rapporteringsutdataene:
 
 - Excel-arbeidsbøker som inneholder et regneark som kan brukes som en mal for utdata i OPENXML-regnearkformatet
-- Word-filer som inneholder et dokument som kan brukes som en mal for utdata i Microsoft Word- dokumentformatet
+- Word-filer som inneholder et dokument som kan brukes som en mal for utdata i Microsoft Word-dokumentformatet
 - Andre filer som kan inkluderes i formatutdataene som forhåndsdefinerte filer
 
 Illustrasjonen nedenfor viser hvordan dataene flyter for disse formatene.
@@ -170,7 +169,7 @@ Et **Operasjonsressurser**-repositorium gir tilgang til listen over konfigurasjo
 
 **LCS-prosjekt**-repositoriet gir tilgang til listen over konfigurasjoner for et bestemt LCS-prosjekt (aktivabibliotek for LCS-prosjekt), som ble valgt under registrering av repositoriet. ER lar deg laste opp delte konfigurasjoner fra gjeldende Finance and Operations-forekomst til et spesifikt **LCS-prosjekt**-repositorium. Du kan også importere konfigurasjoner fra et **LCS-prosjekt**-repositorium til gjeldende Finance and Operations-forekomst.
 
-Et **Filsystem**-repositorium gir tilgang til listen over konfigurasjonene som er lagret som XML-filer i den bestemte mappen på det lokale filsystemet på maskinen som er vert for AOS-tjenesten. Nødvendig mappe blir valgt i fasen for registrering av repositoriet. Du kan importere konfigurasjoner fra et **Filsystem**-repositorium til gjeldende Finance and Operations-forekomst. Legg merke til at dette repositoriet er tilgjengelig i følgende Dynamics 365 for Finance and Operations-miljøer:
+Et **Filsystem**-repositorium gir tilgang til listen over konfigurasjonene som er lagret som XML-filer i den bestemte mappen på det lokale filsystemet på maskinen som er vert for AOS-tjenesten. Nødvendig mappe blir valgt i fasen for registrering av repositoriet. Du kan importere konfigurasjoner fra et **Filsystem**-repositorium til gjeldende Finance and Operations-forekomst. Legg merke til at denne typen repositorium er tilgjengelig i følgende Dynamics 365 for Finance and Operations-miljøer:
 - skyvertsbaserte miljøer distribuert for utviklingsformål (som inneholder testmodeller av vedlagte serier)
 - lokalt distribuerte miljøer (lokale forretningsdata (LBD))
 
@@ -381,4 +380,3 @@ ER lar deg automatisk innføre endringer av den nyeste versjonen av basiskompone
 [Lokaliseringskrav – Opprette en elektronisk rapporteringskonfigurasjon](electronic-reporting-configuration.md)
 
 [Administrere livssyklus til konfigurasjoner for elektronisk rapportering](general-electronic-reporting-manage-configuration-lifecycle.md)
-

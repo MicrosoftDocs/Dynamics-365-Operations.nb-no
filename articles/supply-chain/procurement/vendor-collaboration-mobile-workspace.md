@@ -1,13 +1,13 @@
 ---
-title: "Mobilt arbeidsområde for leverandørsamarbeid"
-description: "Dette emnet gir informasjon om det mobile arbeidsområdet for leverandørsamarbeid. Dette arbeidsområdet hjelper leverandørene med å holde seg oppdatert om bestillinger som er sendt til dem for godkjenning. De kan også vise informasjon om nye og oppdaterte bestillinger og kontakter."
+title: Mobilt arbeidsområde for leverandørsamarbeid
+description: Dette emnet gir informasjon om det mobile arbeidsområdet for leverandørsamarbeid. Dette arbeidsområdet hjelper leverandørene med å holde seg oppdatert om bestillinger som er sendt til dem for godkjenning. De kan også vise informasjon om nye og oppdaterte bestillinger og kontakter.
 author: mkirknel
 manager: AnnBe
 ms.date: 12/01/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: sericks
 ms.search.scope: Core, Operations
@@ -17,24 +17,23 @@ ms.search.region: global
 ms.author: mkirknel
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
+ms.openlocfilehash: df27ff3477443611278436a680d70ea81a21763e
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 83fcf1d0432d5afa71d6f9d7d22cea5a583777bf
-ms.contentlocale: nb-no
-ms.lasthandoff: 04/13/2018
-
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "358652"
 ---
-
 # <a name="vendor-collaboration-mobile-workspace"></a>Mobilt arbeidsområde for leverandørsamarbeid
 
 [!include [banner](../includes/banner.md)]
 
 Dette emnet gir informasjon om det mobile arbeidsområdet for **leverandørsamarbeid**. Dette arbeidsområdet hjelper leverandørene med å holde seg oppdatert om bestillinger som er sendt til dem for godkjenning. De kan også vise informasjon om nye og oppdaterte bestillinger og kontakter.
 
-Dette mobile arbeidsområdet er ment å brukes med mobilappen Microsoft Dynamics 365 for Unified Operations.
+Dette mobile arbeidsområdet er ment å brukes med appen Microsoft Dynamics 365 for Unified Operations Mobile.
 
 ## <a name="overview"></a>Oversikt 
-Det mobile arbeidsområdet for **leverandørsamarbeid** holder leverandører informert om nye bestillinger, slik at de kan vise og svare på bestillinger i webklienten for Microsoft Dynamics 365 for Finance and Operations. 
+Det mobile området **Leverandørsamarbeid** holder leverandører informert om nye bestillinger, slik at de kan vise bestillinger og deretter svare på dem Microsoft Dynamics 365 for Finance and Operations, webklient. 
 
 >[!NOTE]
 > Det mobile arbeidsområdet skal brukes som et supplement til webgrensesnittet for leverandørsamarbeid, ikke som en erstatning. 
@@ -80,7 +79,7 @@ Hvis Microsoft Dynamics 365 for Operations versjon 1611 med plattformoppdatering
 <td>Systemansvarlig</td>
 <td>KB 3216943 er en binær oppdatering som er nødvendig hvis du bruker plattformoppdatering 3. Systemansvarlig må følge disse trinnene for å implementere denne KB-en.
 <ol>
-<li>Last ned KB 3216943 fra Microsoft Dynamics Lifecycle Services (LCS).</li>
+<li>Laste ned KB 3216943 fra Microsoft Dynamics Lifecycle Services (LCS).</li>
 <li>Installer den binære oppdateringen, som leveres som en distribuerbar pakke. Hvis du vil ha informasjon om hvordan du bruker en distribuerbar pakke, kan du se <a href="../../dev-itpro/deployment/apply-deployable-package-system.md">Bruke en distribuerbar pakke</a>.</li>
 </ol></td>
 </tr>
@@ -120,7 +119,7 @@ Last ned og installer mobilappen Dynamics 365 for Unified Operations:
 
 ## <a name="sign-in-to-the-mobile-app"></a>Logge på mobilappen
 1.  Start appen på mobilenheten.
-2.  Skriv inn URL-adressen til Microsoft Dynamics 365.
+2.  Angi URL-adressen for Microsoft Dynamics365.
 4.  Første gang du logger deg på, blir du bedt om brukernavn og passord. Angi legitimasjon.
 5.  Når du har logget deg på, vises tilgjengelige arbeidsområder for firmaet. Legg merke til at hvis systemansvarlig senere publiserer et nytt arbeidsområde, må du oppdatere listen over mobile arbeidsområder.
 
@@ -171,4 +170,3 @@ Alle endringer som er gjort i bestillingslinjesvaret, vises. Imidlertid blir ikk
 
 ### <a name="open-confirmed-orders"></a>Åpne bekreftede ordrer
 Når bestillingen er bekreftet av kunden (noe som betyr at status for bestillingen er endret til **Bekreftet**-status), vises den i den åpne bekreftede bestillingen. Den forblir i listen til den er registrert som mottatt av kunden.
-

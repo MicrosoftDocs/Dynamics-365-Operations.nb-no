@@ -5,9 +5,9 @@ author: jblucher
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 ms.search.form: RetailTillLayout
 audience: Application user
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
+ms.openlocfilehash: 91d6e34c25710716788542dabb3bd7d935b2d4ab
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: dda9c8cb7f3da99fb2e7df0372e59769cfaf77d1
-ms.openlocfilehash: ced27adb8fe481270cb008e187693cda96773339
-ms.contentlocale: nb-no
-ms.lasthandoff: 11/13/2018
-
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "321898"
 ---
-
 # <a name="screen-layouts-for-the-point-of-sale-pos"></a>Skjermoppsett for salgssted
 
 [!include [banner](includes/banner.md)]
@@ -51,7 +50,7 @@ Visuelle profiler tilordnes til kasser, og de brukes til å angi de visuelle ele
 - **Beskrivelse** – Du kan angi et beskrivende navn som vil hjelpe deg med å finne den riktige profilen for din situasjon.
 - **Tema** – Du kan velge mellom lyse eller mørke programtemaer. Temaet påvirker skrift- og bakgrunnsfargene i hele programmet.
 - **Uthevingsfarge** – Uthevingsfargen brukes på hele salgsstedet for å skille eller utheve spesifikke visuelle elementer, for eksempel fliser, kommandoknapper og hyperkoblinger. Disse elementene er vanligvis handlingskrevende.
-- **Topptekstfarge** – Du kan konfigurere fargen på sideoverskriften for å oppfylle varemerkebehovet til forhandleren. Denne funksjonen er bare tilgjengelig i Microsoft Dynamics 365 for Retail versjon 1611.
+- **Topptekstfarge** – Du kan konfigurere fargen på sideoverskriften for å oppfylle varemerkebehovet til forhandleren. Denne funksjonen er ikke bare tilgjengelig i Microsoft Dynamics 365 for Retail versjon 1611.
 - **Påloggingsbakgrunner** – Du kan angi et bakgrunnsbilde for påloggingsskjermbildet. Størrelsen på bakgrunnsbilder bør holdes så liten som mulig, siden lagring og innlasting av store filer kan ha innvirkning på programmets virkemåte og ytelse.
 - **Programbakgrunn** – Du kan angi et bakgrunnsbilde som brukes i stedet for heldekkende temafarge i programmet. For påloggingsbakgrunner bør filstørrelsen holdes så liten som mulig.
 
@@ -165,7 +164,7 @@ Utforming for knappegruppe lar deg konfigurere knappegrupper som kan brukes på 
 - **Knappeegenskaper** – Du kan konfigurere knappeegenskaper ved å høyreklikke på knappen og bruke hurtigmenyen.
 
     > [!IMPORTANT]
-    > Noen innstillinger for knappegruppe gjelder bare for foretaksssalgssted, ikke for moderne salgssted for detaljhandel eller skysalgssted
+    > Noen innstillinger for knappegruppe gjelder bare for foretaksssalgssted, ikke for Retail Modern POS eller Cloud POS.
 
     ![Knappegenskaper for knappegruppe](../retail/media/Button-grid-button-properties.png)
 
@@ -185,7 +184,7 @@ Utforming for knappegruppe lar deg konfigurere knappegrupper som kan brukes på 
     - **Egendefinert tema** – Salgsstedsknapper bruker som standard uthevingsfargen fra den visuelle profilen. Når du merker av for **Bruk egendefinert tema**, kan du angi flere farger.
 
         > [!NOTE]
-        > Moderne salgssted for detaljhandel og skysalgssted bruker bare verdiene **Bakgrunnsfarge** og **Skriftfarge**.
+        > Retail Modern POS og Cloud POS bruker bare verdiene **Bakgrunnsfarge** og **Skriftfarge**.
 
     - **Knappebilde** – Knapper kan inneholde bilder eller ikoner. Velg blant de tilgjengelige bildene som er angitt under **Detaljhandel \> Kanaloppsett \> Salgsstedsoppsett \> Salgssted \> Bilder**.
 
@@ -194,4 +193,3 @@ Utforming for knappegruppe lar deg konfigurere knappegrupper som kan brukes på 
 ## <a name="additional-resources"></a>Tilleggsressurser
 
 [Installere utforming av oppsett for Retail POS](install-pos-layout-designer.md)
-

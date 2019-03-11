@@ -1,13 +1,13 @@
 ---
-title: "Samarbeide med leverandører ved hjelp av leverandørportalen"
-description: "Dette emnet forklarer hvordan innkjøpsagenter kan bruke leverandørportalen til å samarbeide med eksterne leverandører under bekreftelse av bestillinger. Denne informasjonen i dette emnet gjelder bare for februar 2016- &amp; mai 2016-versjonene av Dynamics AX."
+title: Samarbeide med leverandører ved hjelp av leverandørportalen
+description: Dette emnet forklarer hvordan innkjøpsagenter kan bruke leverandørportalen til å samarbeide med eksterne leverandører under bekreftelse av bestillinger. Denne informasjonen i dette emnet gjelder bare for februar 2016- og mai 2016-versjonene av Dynamics AX.
 author: mkirknel
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: PurchTable, PurchVendorPortalRequests
 audience: Application User
 ms.reviewer: josaw
@@ -18,21 +18,20 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 07fbc5fea1fd44769a29bcc40297ffd02812a1e5
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 2fa152c5586a1122a109762780d23fd8c2240702
-ms.contentlocale: nb-no
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "339884"
 ---
-
 # <a name="collaborate-with-vendors-by-using-the-vendor-portal"></a>Samarbeide med leverandører ved hjelp av leverandørportalen
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet forklarer hvordan innkjøpsagenter kan bruke leverandørportalen til å samarbeide med eksterne leverandører under bekreftelse av bestillinger. Denne informasjonen i dette emnet gjelder bare for februar 2016- &amp; mai 2016-versjonene av Dynamics AX.
+Dette emnet forklarer hvordan innkjøpsagenter kan bruke leverandørportalen til å samarbeide med eksterne leverandører under bekreftelse av bestillinger. Denne informasjonen i dette emnet gjelder bare for februar 2016- og mai 2016-versjonene av Dynamics AX.
 
-Informasjonen i dette emnet gjelder bare for februar 2016- og mai 2016-versjonene av Dynamics AX. Funksjonen for leverandørportal er erstattet med utvidede leverandørsamarbeidsfunksjoner i Dynamics 365 Operations versjon 1611. Hvis du vil ha mer informasjon om den nye leverandørsamarbeidsfunksjonen, kan du se [Bruke leverandørsamarbeid til å arbeide med eksterne leverandører](vendor-collaboration-work-external-vendors.md).  
+Informasjonen i dette emnet gjelder bare for februar 2016- og mai 2016-versjonene av Dynamics AX. Funksjonen for leverandørportal er erstattet med utvidede leverandørsamarbeidsfunksjoner i Dynamics 365 for Operations versjon 1611. Hvis du vil ha mer informasjon om den nye leverandørsamarbeidsfunksjonen, kan du se [Bruke leverandørsamarbeid til å arbeide med eksterne leverandører](vendor-collaboration-work-external-vendors.md).  
 
 Leverandørportalen er utformet for leverandører som ikke har EDI-integrasjon (utveksling av elektroniske data) med Microsoft Dynamics AX for å utveksle bestillingsinformasjon. Med portalen kan innkjøpsagenter sende en bestilling til leverandøren og deretter motta et bekreftet eller avvist svar direkte i Dynamics AX.  
 
@@ -102,7 +101,6 @@ Tabellen nedenfor viser et eksempel på endringene i status og versjon som en be
 [Konfigurering av sikkerhet for brukere av leverandørsamarbeid](configure-security-vendor-portal-users.md)
 
 [Arbeidsområde for leverandørsamarbeidsfakturering](../../financials/accounts-payable/vendor-portal-invoicing-workspace.md)
-
 
 
 

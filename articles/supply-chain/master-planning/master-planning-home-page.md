@@ -1,32 +1,31 @@
 ---
 title: Startside for hovedplanlegging
-description: "Med hovedplanlegging kan selskaper bestemme og balansere fremtidige behov for råvarer og kapasitet for å oppfylle målene til firmaet."
+description: Med hovedplanlegging kan selskaper bestemme og balansere fremtidige behov for råvarer og kapasitet for å oppfylle målene til firmaet.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 12/03/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ReqCreatePlanWorkspace
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 99c10649d7683265fcac86c1825c5a965bbdb415
 ms.openlocfilehash: 1a294327149cf46202fed8b63377ee77f13c11d5
-ms.contentlocale: nb-no
-ms.lasthandoff: 12/04/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "314791"
 ---
-
 # <a name="master-planning-home-page"></a>Startside for hovedplanlegging
 
 [!include [banner](../includes/banner.md)]
@@ -72,7 +71,7 @@ De følgende opplæringskart viser de store konseptene og oppgavene som utgjør 
 Gå til [Veikart for Microsoft Dynamics 365](https://roadmap.dynamics.com/) for å se hvilke nye funksjoner som har blitt utgitt og hvilke nye funksjoner som er under utvikling.
 
 ### <a name="blogs"></a>Blogger
-Du kan finne meninger, nyheter og annen informasjon om hovedplanlegging og andre løsninger, i [Dynamics AX Manufacturing R&D-teambloggen](https://blogs.msdn.microsoft.com/axmfg) og [Forsyningskjedeadministrasjon i Dynamics AX R&D-teambloggen](https://blogs.msdn.microsoft.com/dynamicsaxscm).
+Du kan finne meninger, nyheter og annen informasjon om hovedplanlegging og andre løsninger, i [Dynamics AX Manufacturing R&D-teambloggen](https://blogs.msdn.microsoft.com/axmfg) og [Supply Chain Management i Dynamics AX R&D-teambloggen](https://blogs.msdn.microsoft.com/dynamicsaxscm).
 
 ### <a name="task-guides"></a>Oppgaveveiledninger
 Mer hjelp er tilgjengelig som oppgaveveiledninger i Finance and Operations. For å få tilgang til oppgaveveiledninger klikker du på **Hjelp**-knappen på en side.
@@ -84,7 +83,6 @@ Mer hjelp er tilgjengelig som oppgaveveiledninger i Finance and Operations. For 
 -  [Utvide funksjonaliteten for behovsprognose](https://www.youtube.com/watch?v=4OIKIXLiNjI&feature=youtu.be)
 -  [Hovedplanlegging – tips og triks for feilsøkingsytelse](https://youtu.be/7v8BPmEs9Dg)
 -  [Hjelp! MRP er treg!](https://youtu.be/RLXybx20B5o)
-
 
 
 

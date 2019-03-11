@@ -1,13 +1,13 @@
 ---
 title: Omberegne erstatningskostnader og forsikrede verdier for anleggsmiddelgrupper
-description: "Denne artikkelen beskriver prosessen for å oppdatere erstatningskostnader og forsikrede verdier for anleggsmidler."
+description: Denne artikkelen beskriver prosessen for å oppdatere erstatningskostnader og forsikrede verdier for anleggsmidler.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 01/12/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: shylaw
 ms.search.scope: Core, Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 0756287406ad12237632ffbd455dbc6ba15d9915
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: eb3db5863bf2fcca31b6af878e7324b079f1c630
-ms.openlocfilehash: ad706a9ee441858a6f4a128ff978e24efb6ecfce
-ms.contentlocale: nb-no
-ms.lasthandoff: 01/12/2018
-
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "324382"
 ---
-
 # <a name="recalculate-replacement-costs-and-insured-values-for-fixed-asset-groups"></a>Omberegne erstatningskostnader og forsikrede verdier for anleggsmiddelgrupper
 
 [!include [banner](../includes/banner.md)]
@@ -74,7 +73,6 @@ Neste dag gir sjefen deg beskjed om at datamaskiner ble redusert med 8 prosent, 
 
 > [!NOTE]  
 > Du kan ikke tilbakeføre faktoren –10 ved å angi en faktor med positiv 10 (eller en faktor på 2, forskjellen mellom –10 og –8), fordi beløpene ikke vil beregnes slik du har til hensikt å gjøre. 
-
 
 
 

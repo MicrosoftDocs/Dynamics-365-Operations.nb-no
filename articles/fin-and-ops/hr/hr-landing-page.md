@@ -1,13 +1,13 @@
 ---
 title: Personale
-description: "Personale forenkler mange vanlige arkiveringsoppgaver og automatiserer en rekke prosesser som er knyttet til bemanning av organisasjonen. Det inneholder også et rammeverk for personalansatte til å administrere områder under oppsyn. Disse områdene omfatter ansattrekruttering og oppbevaring, administrasjon av fordeler, opplæring, ytelsesvurderinger og endringsadministrasjon."
+description: Personale forenkler mange vanlige arkiveringsoppgaver og automatiserer en rekke prosesser som er knyttet til bemanning av organisasjonen. Det inneholder også et rammeverk for personalansatte til å administrere områder under oppsyn. Disse områdene omfatter ansattrekruttering og oppbevaring, administrasjon av fordeler, opplæring, ytelsesvurderinger og endringsadministrasjon.
 author: rschloma
 manager: AnnBe
 ms.date: 11/01/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: rschloma
 ms.search.scope: Core, Operations
@@ -16,14 +16,13 @@ ms.search.region: Global
 ms.author: rschloma
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
 ms.openlocfilehash: faf9b9a70d959719f381ec5171e4fb96af208478
-ms.contentlocale: nb-no
-ms.lasthandoff: 12/18/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "341770"
 ---
-
 # <a name="human-resources"></a>Personale
 
 [!include [banner](../includes/banner.md)]
@@ -81,7 +80,7 @@ I tillegg til å kompensere dine ansatte med lønn og bonuser, kan du utvikle fo
 
 ## <a name="maintain-workplace-safety-and-compliance"></a>Opprettholde sikkerhet på arbeidsplassen og overholdelse
 
-Microsoft Dynamics AX kan hjelpe deg med å vedlikeholde et sikkert arbeidsmiljø som er samsvar gjeldende lovgivning, herunder den amerikanske loven mot diskriminering av funksjonshemmede, Americans with Disabilities Act, og innvandrings og statsborgerskap. Du kan for eksempel administrere de fysiske kravene for bestemte jobber, samt spore forespørsler om tilpasninger som kan hjelpe organisasjonen med å optimalisere ferdighetene til arbeidsstyrken.
+Microsoft Dynamics AX kan bidra til å vedlikeholde et sikkert arbeidsmiljø som er i samsvar med gjeldende lovgivning, herunder den amerikanske loven mot diskriminering av funksjonshemmede, Americans with Disabilities Act, og lover om immigrasjon og statsborgerskap. Du kan for eksempel administrere de fysiske kravene for bestemte jobber, samt spore forespørsler om tilpasninger som kan hjelpe organisasjonen med å optimalisere ferdighetene til arbeidsstyrken.
 
 - [Bekreftelse for I-9-ansettelse](localizations/noam-usa-form-i-9-verification.md)
 - [Overholde den amerikanske loven mot diskriminering av funksjonshemmede (Americans with Disabilities Act)](localizations/noam-usa-comply-ada.md)
@@ -95,4 +94,3 @@ Du kan utforme og administrere spørreskjemaer for å samle inn informasjon som 
 - [Utforme et spørreskjema](../../talent/design-questionnaires.md)
 - [Distribuere og fylle ut et spørreskjema](../../talent/distribute-questionnaires.md)
 - [Vise og evaluere resultatene i et spørreskjema](../../talent/evaluate-questionnaire-results.md)
-

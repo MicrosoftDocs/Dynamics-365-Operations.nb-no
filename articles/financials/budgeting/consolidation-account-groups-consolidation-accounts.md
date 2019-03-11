@@ -5,9 +5,9 @@ author: aprilolson
 manager: AnnBe
 ms.date: 01/11/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: LedgerConsolidateAccountGroup
 audience: Application User
 ms.reviewer: shylaw
@@ -18,21 +18,20 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
+ms.openlocfilehash: f1c463ee54512b07f5e45c4df995aefed6110cb0
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 60486002b520fdf347ed2537cefa0a45e06d6271
-ms.contentlocale: nb-no
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "366403"
 ---
-
 # <a name="consolidation-account-groups-and-additional-consolidation-accounts"></a>Konsolideringskontogrupper og flere konsolideringskontoer
 
 [!include [banner](../includes/banner.md)]
 
 Dette emnet gir informasjon om konsolideringskontogrupper og flere konsolideringskontoer, og forklarer hvordan de brukes i Microsoft Dynamics 365 for Finance and Operations.
 
-<a name="consolidation-account-groups"></a>Konsernkontogrupper
+<a name="consolidation-account-groups"></a>Konsolideringskontogrupper
 ----------------------------
 
 Med konsolideringskontogrupper kan du opprette grupper med kontoer som du vil bruke til å konsolidere dataene. Som oftest representerer en konsolideringskontogruppe en lovpålagt kontoplan eller tilordner kontoer til en gruppe som er definert av selskapets hovedkontor. Du kan finne konsolideringskontogrupper i **Oppsett**-området i **Konsolideringer**-modulen. Når du legger til en ny gruppe, angir du en unik ID for kontogruppen og et navn.
@@ -52,7 +51,6 @@ Når du er ferdig med å opprette konsolideringskontogruppene og ekstra konsolid
 
 
 Hvis du vil ha mer informasjon, kan du se [Opprette konsolideringsgrupper og flere konsolideringskontoer](../general-ledger/tasks/create-consolidation-groups.md) 
-
 
 
 

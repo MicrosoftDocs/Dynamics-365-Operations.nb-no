@@ -1,13 +1,13 @@
 ---
 title: Startside for kunder
-description: "Bruk kundereskontro til å spore alle kundefakturaer og innkommende betalinger."
+description: Bruk kundereskontro til å spore alle kundefakturaer og innkommende betalinger.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 08/18/2017
 ms.topic: index-page
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CustomerInvoiceWorkspace
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 1d98cbff30620256c9d13e7b4a90314db150e33e
 ms.openlocfilehash: 303d67c0b662e6c21cebb5aa10ed28555459522e
-ms.contentlocale: nb-no
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "302705"
 ---
-
 # <a name="accounts-receivable-home-page"></a>Startside for kunder
 
 [!include [banner](../includes/banner.md)]
@@ -103,7 +102,7 @@ Gå til [Veikart for Microsoft Dynamics 365](https://roadmap.dynamics.com/) for 
 
 Du kan finne meninger, nyheter og annen informasjon om Kunder og andre løsninger i [Microsoft Dynamics 365-bloggen](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise).
 
-Det finnes mange innlegg om Kunder i [produktteambloggen for Microsoft Dynamics AX](https://blogs.msdn.microsoft.com/dax/). Selv om noen av disse innleggene ble skrevet for den tidligere versjonen av Kunder, gjelder fortsatt de samme begrepene. og fremgangsmåtene ligner på den gjeldende versjonen.
+Det finnes mange innlegg om Kunder i [Microsoft Dynamics-produktteambloggen for AX](https://blogs.msdn.microsoft.com/dax/). Selv om noen av disse innleggene ble skrevet for den tidligere versjonen av Kunder, gjelder fortsatt de samme begrepene. og fremgangsmåtene ligner på den gjeldende versjonen.
 
 [Microsoft Dynamics Operations Partner Community-bloggen](https://community.dynamics.com/partner/b/operationspartnercommunityblog) gir Microsoft Dynamics-partnere én ressurs der de kan finne ut mer om hva som er nytt og populært i MBS Operations.
 
@@ -113,7 +112,6 @@ Mer hjelp er tilgjengelig som oppgaveveiledninger i Finance and Operations. For 
 #### <a name="videos"></a>Videoer
 
 Se instruksjonsvideoene som nå er tilgjengelige på [Microsoft Dynamics 365 YouTube-kanalen](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ).
-
 
 
 

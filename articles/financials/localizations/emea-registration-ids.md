@@ -5,9 +5,9 @@ author: ShylaThompson
 manager: AnnBe
 ms.date: 11/08/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: DirPartTaxRegistrationSearch, LogisticsPostalAddress, TaxRegistrationLegislationTypes, TaxRegistrationType
 audience: Application User
 ms.reviewer: shylaw
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: vlru
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
+ms.openlocfilehash: 7b663b9a72afdd3c2e2dcf503152f02e0b7861fd
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 978c6c6f2a3de803f252e93040d2d7eb2bc4a793
-ms.contentlocale: nb-no
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "350510"
 ---
-
 # <a name="registration-ids"></a>Registrerings-ID-er
 
 [!include [banner](../includes/banner.md)]
@@ -55,7 +54,7 @@ Registreringskategori er registrerings-ID for land/region som er godkjent for br
 |-----------------------|----------------|
 | Registreringstype     | Registreringstypen i bestemt land/region.|
 | Begrenset til         | Typen begrensning gjelder for avgiftsregistreringstypen: Ingen, Person, Organisasjon.|
-| Registreringskategori | Den unike registreringer-IDen som er godkjent for bruk i landet. En fullstendig liste over hva som støttes i Microsoft Dynamics 365 for Finance and Operations-kategoriene, vises nedenfor. |
+| Registreringskategori | Den unike registreringer-IDen som er godkjent for bruk i landet. Den fullstendige listen over kategorier som støttes i Microsoft Dynamics 365 for Finance and Operations, vises under. |
 
 ## <a name="enter-registration-ids-for-global-address-book-records"></a>Angi registrerings-IDene for poster i globale adressebøker
 
@@ -101,7 +100,7 @@ Følgende tabell viser støttede registreringstyper i Finance and Operations. Hv
 | Offisielt ID-dokument                              | Spania             | Offisielt ID-dokument|
 | Bostedssertifikat                                         | Spania             | Bostedssertifikat|
 | Annet ID-dokument                                 | Spania             | Annet ID-dokument|
-| Ikke talt                                                  | Spania             | Ikke tilgjengelig i AX 2012 R3|
+| Ingen opptelling                                                  | Spania             | Ikke tilgjengelig i AX 2012 R3|
 
 
 Hvis du vil ha mer informasjon om registrering av IDer, inkludert nødvendige forutsetninger, kan du se følgende oppgaveopptak for mva-ID i Lifecycle Services (LCS):
@@ -109,7 +108,6 @@ Hvis du vil ha mer informasjon om registrering av IDer, inkludert nødvendige fo
 -   Definere mva-ID
 -   Registrering av mva-ID for leverandør
 -   EUR 00015 Partssøk ved hjelp av mva-ID
-
 
 
 

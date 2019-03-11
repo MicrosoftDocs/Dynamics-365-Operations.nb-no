@@ -1,13 +1,13 @@
 ---
-title: Konfigurere og behandle bilder for Retail Modern POS (MPOS)
-description: Denne artikkelen beskriver trinnene som er involvert i oppretting og administrasjon av bilder for de forskjellige enhetene som vises i det moderne salgsstedet for detaljhandel (MPOS).
+title: Definere og administrere bilder for Retail Modern POS (MPOS)
+description: Denne artikkelen beskriver trinnene som er involvert i oppretting og administrasjon av bilder for de forskjellige enhetene som vises i Retail Modern POS (MPOS).
 author: athinesh99
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 ms.search.form: RetailChannelProfile, RetailMediaGallery, RetailImages,
 audience: Application User
 ms.reviewer: josaw
@@ -19,23 +19,22 @@ ms.search.industry: Retail
 ms.author: athinesh
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
 ms.openlocfilehash: d2f4cc99ec239c4c35c44a226235d01e18d4185f
-ms.contentlocale: nb-no
-ms.lasthandoff: 01/04/2019
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "356743"
 ---
-
-# <a name="set-up-and-manage-images-for-retail-modern-pos-mpos"></a>Konfigurere og behandle bilder for Retail Modern POS (MPOS)
+# <a name="set-up-and-manage-images-for-retail-modern-pos-mpos"></a>Definere og administrere bilder for Retail Modern POS (MPOS)
 
 [!include [banner](includes/banner.md)]
 
-Denne artikkelen beskriver trinnene som er involvert i oppretting og administrasjon av bilder for de forskjellige enhetene som vises i det moderne salgsstedet for detaljhandel (MPOS).
+Denne artikkelen beskriver trinnene som er involvert i oppretting og administrasjon av bilder for de forskjellige enhetene som vises i Retail Modern POS (MPOS).
 
 ## <a name="setting-up-the-media-base-url-and-defining-media-templates-to-configure-the-format-for-image-urls"></a>Sette opp primær URL-adresse for media og definere mediemaler for å konfigurere formatet for URL-adresser for bilde
 
-Bildene som vises i moderne salgssted for detaljhandel (MPOS) må være vertsbasert eksternt, utenfor Microsoft Dynamics 365 for Retail. De er vanligvis vertsbasert i et innholdsbehandlingssystem, et nettverk for innholdslevering (CDN) eller på en mediaserver. MPOS henter og viser deretter bildene for de aktuelle enhetene, for eksempel produkter og kataloger, ved å åpne mål-URL-adressen. For å hente disse eksternt vertsbaserte bildene krever MPOS riktig URL-format for bildene. Du kan konfigurere det nødvendige URL-formatet for bildene ved å sette opp verdien for **Primær URL-adresse for media** i Kanalprofilen og bruke funksjonaliteten **Definer mal for medier** for hver enhet. Du kan også overskrive standard URL-formatet for et delsett av enheter ved hjelp av funksjonaliteten **Rediger i Excel**.
+Bildene som vises i Retail Modern POS (MPOS), må være lagret eksternt, utenfor Microsoft Dynamics 365 for Retail. De er vanligvis vertsbasert i et innholdsbehandlingssystem, et nettverk for innholdslevering (CDN) eller på en mediaserver. MPOS henter og viser deretter bildene for de aktuelle enhetene, for eksempel produkter og kataloger, ved å åpne mål-URL-adressen. For å hente disse eksternt vertsbaserte bildene krever MPOS riktig URL-format for bildene. Du kan konfigurere det nødvendige URL-formatet for bildene ved å sette opp verdien for **Primær URL-adresse for media** i Kanalprofilen og bruke funksjonaliteten **Definer mal for medier** for hver enhet. Du kan også overskrive standard URL-formatet for et delsett av enheter ved hjelp av funksjonaliteten **Rediger i Excel**.
 
 > [!IMPORTANT]
 > I den gjeldende versjonen av Dynamics 365 for Retail kan du ikke lenger definere URL-formatet ved hjelp av **Bilde**-attributtet XML for MPOS i **Standard**-attributtgruppen for enhetene. Hvis du kjenner til Microsoft Dynamics AX 2012 R3 og nå bruker den gjeldende versjonen av Dynamics 365 for Retail, må du kontrollere at du alltid bruker den nye funksjonaliteten for **Definer mal for medier** til å sette opp bilder. Ikke bruk eller endre **Bilde**-attributtet i **Standard**-attributtgruppen for noen enheter, inkludert produkter. Endringer du gjør direkte i **Standard**-attributtgruppen for bilder gjenspeiles ikke. Dette alternativet deaktiveres i fremtidige versjoner.
@@ -47,7 +46,7 @@ I prosedyrene nedenfor er bilder definert for enheten Katalog som et eksempel. D
 
 ### <a name="set-up-the-media-base-url-for-a-channel"></a>Sette opp primær URL-adresse for media for en kanal
 
-1. Åpne hurtigmenyen for HQ-portalen for Dynamics 365 for Retail.
+1. Åpne Dynamics 365 for Retail HQ-portalen.
 2. Klikk på **Detaljhandel** &gt; **Kanaloppsett** &gt; **Kanalprofiler**.
 
     [![Kanalprofil1](./media/channel-profile1.png)](./media/channel-profile1.png)
@@ -63,7 +62,7 @@ I prosedyrene nedenfor er bilder definert for enheten Katalog som et eksempel. D
 3. På **Mediebane** hurtigfanen angir du gjenstående banen til bildeplasseringen. media banen Støtter **Støtter** som en variabel. For demodataene kan du for eksempel opprette en **Kataloger**-mappe for alle katalogbilder under primær URL-adresse for media for mediaserveren (`https://testax3ret.cloud.test.dynamics.com/RetailServer/MediaServer`). Du kan deretter har en mappe for hvert språk, for eksempel en-US eller fr-FR, og kopierer de riktige bildene under hver mappe. Hvis du ikke har forskjellige bilder for ulike språk, kan du hoppe over den **LanguageID** variabelen fra mappestrukturen og peke direkte til mappen kataloger som inneholder katalogbildene.
 
     > [!NOTE]
-    > Den gjeldende versjonen av Dynamics 365 for Retail støtter **{LanguageId}**-token for katalog-, produkt- og kategorienheter. (Den **{LanguageID}** token støttes ikke for kunde- og arbeiderenheter, i henhold til den eksisterende standarden som er effektive siden Microsoft Dynamics AX 6.x.)
+    > Den gjeldende versjonen av Dynamics 365 for Retail støtter **{LanguageId}**-tokenet for katalog-, produkt- og kategorienheter. (**{LanguageID}**-tokenet støttes ikke for kunde- og arbeiderenheter, i henhold til den eksisterende standarden som er effektiv siden Microsoft Dynamics AX 6.x.)
 
 4. For bilder er filnavnformatet hardkodet til katalognavnet og kan ikke endres. Derfor gi nytt navn til bildene slik at de har riktig katalog-navn, for å garantere at MPOS behandler dem på riktig måte.
 5. I feltet **Filtype** velger du den forventede filtypen, avhengig av hvilken type bilder du har. For eksempel for demodataene er katalogen bildene satt til filtypen JPG. (Bildefilene har også endret navn slik at de har katalognavnene.)
@@ -214,4 +213,3 @@ Katalog-, kategori-, ansatt- og kundebilder som skal brukes i frakoblet modus, k
 5. Følg en lignende prosess for andre enheter, for eksempel kategori, ansatt og kunde.
 
     [![Frakoblet2](./media/offline2.png)](./media/offline2.png)
-

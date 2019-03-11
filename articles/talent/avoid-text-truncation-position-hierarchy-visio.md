@@ -1,35 +1,34 @@
 ---
-title: "Unngå avkorting av tekst på stillingshierarki og eksport til Visio"
-description: "Dette emnet forklarer hvordan du løser et problem der navn på personer og stillinger avkortes når kunder viser stillingshierarkiet i Microsoft Dynamics 365 for Talent. Avkorting av teksten kan gjøre det vanskelig å ta et skjermbilde eller skrive ut hierarkiet."
+title: Unngå avkorting av tekst på stillingshierarki og eksport til Visio
+description: Dette emnet forklarer hvordan du løser et problem der navn på personer og stillinger avkortes når kunder viser stillingshierarkiet i Microsoft Dynamics 365 for Talent. Avkorting av teksten kan gjøre det vanskelig å ta et skjermbilde eller skrive ut hierarkiet.
 author: Darinkramer
 manager: AnnBe
 ms.date: 11/02/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Talent
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2018-11-02
 ms.dyn365.ops.version: Talent
-ms.translationtype: HT
-ms.sourcegitcommit: d3f974f94b6c327fd70b8098d24f9e1f1e1e8eeb
 ms.openlocfilehash: b688a396e3b384aedb06c470b1634150ae7aa038
-ms.contentlocale: nb-no
-ms.lasthandoff: 12/04/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "305600"
 ---
-
 # <a name="avoid-text-truncation-on-the-position-hierarchy-and-export-to-visio"></a>Unngå avkorting av tekst på stillingshierarki og eksport til Visio
 
 [!include [banner](includes/banner.md)]
 
-**Utstede**
+**Avgang**
 
 Når en kunder viser stillingshierarkiet i Microsoft Dynamics 365 for Talent, avkortes navnene på personer og stillinger. Derfor kan det være vanskelig å ta et skjermbilde eller skrive ut og distribuere hierarkiet.
 
@@ -49,7 +48,7 @@ Følg denne fremgangsmåten for å eksportere til Visio.
 
     Hvis du vil inkludere mer informasjon i organisasjonsstrukturdiagrammet, legger du til felt i **Stillinger**-listen, slik at de er tilgjengelige når du bruker veiviseren senere i denne fremgangsmåten.
 
-2. I handlingsruten velger du **Åpne i Microsoft Office**-knappen, og deretter, under **Eksporter til Excel**, velger du **Stillinger**. Du kan også trykke på Ctrl+T.
+2. I handlingsruten velger du Åpne i **Microsoft Office**-knappen, og deretter, under **Eksporter til Excel**, velger du **Stillinger**. Du kan også trykke på Ctrl+T.
 
     ![Eksportere listesiden Stillinger til Excel](media/org-admin.png)
 
@@ -107,4 +106,3 @@ Basert på feltene som du valgte å ta med i diagrammet, viser hver node riktig 
 **Tilleggsalternativ**
 
 I Talent kan du også bruke arbeidsområdet **Personer** til å vise informasjon relatert til hierarkiet.
-

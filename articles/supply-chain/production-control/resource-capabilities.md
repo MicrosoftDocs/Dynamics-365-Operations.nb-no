@@ -1,13 +1,13 @@
 ---
 title: Ressursfunksjoner
-description: "Denne artikkelen inneholder informasjon ressursfunksjoner. En funksjon er muligheten for en operasjonsressurs til å utføre en bestemt aktivitet. Artikkelen forklarer hvordan funksjonene og relaterte konsepter, for eksempel ferdighetsnivå og prioritet, brukes til å velge riktige ressurser for en aktivitet."
+description: Denne artikkelen inneholder informasjon ressursfunksjoner. En funksjon er muligheten for en operasjonsressurs til å utføre en bestemt aktivitet. Artikkelen forklarer hvordan funksjonene og relaterte konsepter, for eksempel ferdighetsnivå og prioritet, brukes til å velge riktige ressurser for en aktivitet.
 author: sorenva
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: WrkCtrCapability, WrkCtrTable
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 567b4c5544f2a58801fefb1aa9d4c72815913910
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 533faf78e4cc9a091d64f7c6a0f82d14158710c8
-ms.contentlocale: nb-no
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "319299"
 ---
-
 # <a name="resource-capabilities"></a>Ressursfunksjoner
 
 [!include [banner](../includes/banner.md)]
@@ -56,7 +55,6 @@ Begge maskiner kan velges som planleggingsmotoren, fordi begge tilfredsstiller k
 
 ## <a name="competencies-for-human-resources"></a>Kompetanser for Personale
 Når du har operasjonsressurser av typen **Personale** som er knyttet til arbeidere i Personale, du kan også dra nytte av kompetansetypene for arbeidere når du definerer hvilke ressurser som kreves for en produksjonsrute. Med andre ord, kan du også angi krav for en bestemte ferdigheter, kurs, sertifikater eller titler. Planleggingsmotoren kan deretter velge ressurser som er knyttet til arbeidere, og valget vil baseres på kompetansetypene for disse arbeiderne. Kompetansetypene defineres i Personale, ikke på siden **Ressursfunksjoner**. Når du definerer ferdigheter, kurs, sertifikater eller titler som ressursbehov, må du bruke Personale-funksjonaliteten og koble hver ressurs av typen **Personale** til en tilhørende arbeider. Hvis du ikke bruker Personale-funksjonaliteten, kan du definere funksjoner på siden **Ressursfunksjoner** som ligner på eller dupliserer kompetansetypene fra Personale. Siden **Ressursfunksjoner** inneholder imidlertid ikke funksjonaliteten som kreves for å opprettholde ferdigheter, kurs, sertifisering eller titler.
-
 
 
 

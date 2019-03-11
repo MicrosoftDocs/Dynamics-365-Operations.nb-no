@@ -1,13 +1,13 @@
 ---
-title: Resultat av salg og fortjeneste for Power BI-innhold
-description: "Dette emnet beskriver hva som er inkludert i Power BI-innholdet Resultat av salg og fortjeneste. Det forklarer hvordan du kan få tilgang til Power BI-rapporter, og gir informasjon om datamodellen og enhetene som brukes til å bygge innholdet."
+title: Power BI-innholdet Resultat av salg og fortjeneste
+description: Dette emnet beskriver hva som er inkludert i Power BI-innholdet Resultat av salg og fortjeneste. Det forklarer hvordan du kan få tilgang til Power BI-rapporter, og gir informasjon om datamodellen og enhetene som brukes til å bygge innholdet.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 12/18/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 ms.search.form: SalesProfitabilityPerformancePowerBI
 audience: Application User, IT Pro
 ms.reviewer: sericks
@@ -18,15 +18,14 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
 ms.openlocfilehash: cf4d3e12d33b67158ff4f96580b4ac2eb903bb93
-ms.contentlocale: nb-no
-ms.lasthandoff: 08/13/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "360423"
 ---
-
-# <a name="sales-and-profitability-performance-power-bi-content"></a>Resultat av salg og fortjeneste for Power BI-innhold
+# <a name="sales-and-profitability-performance-power-bi-content"></a>Power BI-innholdet Resultat av salg og fortjeneste
 
 [!include [banner](../includes/banner.md)]
 
@@ -49,10 +48,10 @@ Fortjenesten kan analyseres på følgende måter:
 - Bruttofortjenesteendring, årlig
 - Kundelønnsomhet (etter omsetning kontra bruttofortjeneste)
 
-## <a name="accessing-the-power-bi-content"></a>Tilgang til Power BI-innhold
+## <a name="accessing-the-power-bi-content"></a>Tilgang til Power BI-innholdet
 Power BI-innholdet **Resultat av salg og fortjeneste** vises på **Resultat av salg og fortjeneste**-siden (**Salg og markedsføring** \> **Forespørsler og rapporter** \> **Analyse av salgsytelse** \> **Resultat av salg og fortjeneste**).
 
-## <a name="metrics-that-are-included-in-the-power-bi-content"></a>Mål som er inkludert i Power BI-innholdet
+## <a name="metricsthat-are-included-in-the-power-bi-content"></a>Mål som er inkludert i Power BI-innholdet
 **Resultat av salg og fortjeneste** for Power BI-innhold omfatter en rapport som består av et sett med mål. Disse målene vises som diagrammer, fliser og tabeller. Tabellen nedenfor gir en oversikt over effektene i innholdspakken.
 
 | Rapportside            | Diagrammer                                     | Fliser                                                   |
@@ -109,4 +108,3 @@ Nøkkeldimensjonene nedenfor i salgskuben brukes som filtre for å dele opp de a
 | Datoer            | Datoer                                                |
 
 Som standard viser innholdspakkedataene for inneværende kalenderår. Du kan imidlertid endre datofilteret i delen for rapportfiltre. Du kan også endre firmafilteret.
-

@@ -1,13 +1,13 @@
 ---
-title: "Systemgruppering i en åpen arbeidsliste"
-description: "Dette emnet beskriver hvordan du filtrerer den åpne arbeidslisten på en mobilenhet."
+title: Systemgruppering i en åpen arbeidsliste
+description: Dette emnet beskriver hvordan du filtrerer den åpne arbeidslisten på en mobilenhet.
 author: Mirzaab
 manager: AnnBe
 ms.date: 05/26/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: WHSRFMenuItem
 audience: Application User
 ms.reviewer: josaw
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 73e1da37c354eecf1ef5d44e68d814664fe2be99
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: d9ca6b0d4a9909d419d6241a044336d7a02aea02
-ms.contentlocale: nb-no
-ms.lasthandoff: 04/13/2018
-
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "331972"
 ---
-
 # <a name="system-grouping-on-an-open-work-list"></a>Systemgruppering i en åpen arbeidsliste
 
 [!include [banner](../includes/banner.md)]
@@ -42,5 +41,4 @@ Bruk disse trinnene til å definere systemgruppering i en åpen arbeidsliste.
 | Tillat systemgruppering |                                                                                                                                                                                                                                                 Aktiverer systemgruppering for et valgt menyelement for arbeidsliste.                                                                                                                                                                                                                                                  |
 | Systemgrupperingsfelt | Bare tilgjengelig hvis <strong>Tillat systemarbeid</strong> er satt til <strong>Ja</strong>. Velg feltet som bestemmer hvordan plukkarbeid grupperes for arbeidere. Hvis du for eksempel felger <strong>ShipmentId</strong>-feltet vil arbeideren skanne forsendelses-IDen for å gruppere plukkarbeidet. Alt arbeid for forsendelsen tilordnes deretter til arbeideren. Dette feltet krever at du oppretter et menyelement for å bruke eksisterende arbeid som er gruppert av systemet. Bruk <strong>Systemgrupperingsetikett</strong>-feltet for å informere om hva som skal skannes. |
 | Systemgrupperingsetikett |                       Bare tilgjengelig hvis <strong>Tillat systemarbeid</strong> er satt til <strong>Ja</strong>. Angi informasjon til arbeideren om hva som skal skannes når plukkarbeid grupperes. Hvis du for eksempel bruker <strong>ShipmentId</strong>-feltet til å gruppere plukkarbeid etter forsendelse, kan du angi Forsendelses-ID i feltet. Dette feltet krever at du oppretter et menyelement for å bruke eksisterende arbeid som er gruppert av systemet. Du må også velge feltet du vil gruppere etter i <strong>Systemgruppering</strong>-feltet.                       |
-
 

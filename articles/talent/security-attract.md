@@ -5,10 +5,10 @@ author: josaw1
 manager: AnnBe
 ms.date: 10/18/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: 
-ms.search.form: 
+ms.technology: ''
+ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Talent, Core
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: josaw1
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
+ms.openlocfilehash: 5674df1657b46aa31e2011562f4ebbff2c16fee9
+ms.sourcegitcommit: 1e32d78868098fd76124bb41363f15c4ec3ea15a
 ms.translationtype: HT
-ms.sourcegitcommit: 0450326dce0ba6be99aede4ebc871dc58c8039ab
-ms.openlocfilehash: 9eb12bd6b9fc1aa66002908e5989b3ac504ab673
-ms.contentlocale: nb-no
-ms.lasthandoff: 11/01/2018
-
+ms.contentlocale: nb-NO
+ms.lasthandoff: 02/05/2019
+ms.locfileid: "374786"
 ---
-
 # <a name="security-and-role-management-in-attract"></a>Administrasjon av sikkerhet og rolle i Attract
 
 [!include[banner](../includes/banner.md)]
@@ -65,7 +64,7 @@ Brukere som er tilordnet rekruttererrollen, har fulle lese-, opprettelses-, oppd
 
 ## <a name="interviewer"></a>Intervjuer
 
-Alle brukere som har Microsoft Azure Active Directory-konto (Azure AD) i organisasjonen, kan legges til et ansettelsesteam som intervjuer. Brukere som er tilordnet rollen som intervjuer, kan vise jobbdetaljene og søkerdata for jobber som de er i ansettelsesteamet for. For disse jobbene kan intervjuere også foreta anbefalinger for ansettelse og gi tilbakemelding om kandidatene. De kan imidlertid ikke oppdatere jobbdetaljer eller søkerdata.
+Alle brukere som har Microsoft Azure Active Directory (Azure AD) i organisasjonen, kan legges til et ansettelsesteam som intervjuer. Brukere som er tilordnet rollen som intervjuer, kan vise jobbdetaljene og søkerdata for jobber som de er i ansettelsesteamet for. For disse jobbene kan intervjuere også foreta anbefalinger for ansettelse og gi tilbakemelding om kandidatene. De kan imidlertid ikke oppdatere jobbdetaljer eller søkerdata.
 
 ## <a name="read-only"></a>Skrivebeskyttet
 
@@ -108,7 +107,7 @@ Følgende rettigheter gjelder jobbspesifikke data for søkere og handlingene som
 | Avanser stadium           | Kan avvise hvis brukeren er på ansettelsesteamet | Kan avansere hvis brukeren er på ansettelsesteamet | Ikke tillatt |
 | Starte tilbudsbehandling | Kan starte tilbudsbehandling | Det er et konfigurasjonsalternativ i tilbudsaktiviteten. | Ikke tillatt |
 
-\*\* Et konfigurasjonsalternativ i [tilbakemeldingsaktivitetoppsettet](./activities-attract.md#feedback-activity) styrer om intervjuere kan se hverandres tilbakemelding.
+\*\* Et konfigurasjonsalternativ i [tilbakemeldingsaktivitetoppsettet](activities-attract.md#feedback-activity) styrer om intervjuere kan se hverandres tilbakemelding.
 
 ## <a name="process-templates"></a>Prosessmaler
 
@@ -146,4 +145,3 @@ Kandidater er personer som er lagt til i en talentsamling, men som ikke er knytt
 |-----------------------------|----------------------------------|----------------------------------|-------------|
 | Profil – kandidatdetaljer | Opprette, lese, oppdatere og slette | Opprette, lese, oppdatere og slette | Ingen tilgang   |
 | Dokumenter                   | Opprette, lese, oppdatere og slette | Opprette, lese, oppdatere og slette | Ingen tilgang   |
-

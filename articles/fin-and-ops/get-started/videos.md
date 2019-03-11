@@ -1,30 +1,29 @@
 ---
 title: Videoer for Finance and Operations
-description: "Denne siden viser Microsoft-opprettede \"Slik gjør du det\"- og \"Teknisk tale\"-videoer i forbindelse med Dynamics 365 for Finance and Operations som er tilgjengelige på YouTube og andre områder."
+description: Denne siden viser Microsoft-opprettede "Slik gjør du det"- og "Teknisk tale"-videoer i forbindelse med Dynamics 365 for Finance and Operations som er tilgjengelige på YouTube og andre områder.
 author: josaw1
 manager: AnnBe
 ms.date: 05/11/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User, IT Pro, Developer
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: global
 ms.author: josaw
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.0.0, AX 8.0
+ms.openlocfilehash: 7675ae79cb1155919f95c7f2ff1d3d72628ab731
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: d22fe0c9a38026350c839d1d7d35835bfc77d995
-ms.openlocfilehash: 7f1fb4d2094076de62873148212c76ae6812d6a2
-ms.contentlocale: nb-no
-ms.lasthandoff: 10/16/2018
-
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "317827"
 ---
-
 # <a name="videos-for-finance-and-operations"></a>Videoer for Finance and Operations
 
 [!include [banner](../includes/banner.md)]
@@ -40,11 +39,11 @@ Videoene er oppført etter funksjon, så rull nedover for å se hele listen over
 #### <a name="data-integration"></a>Dataintegrering
 
 - [Prospekt til kontanter-integrasjon](https://youtu.be/AVV9x5x-XCg)
-- [Synkronisere en arbeidsordre mellom Dynamics 365 Field Service og Finance and Operations](https://www.youtube.com/watch?v=46ylO7raZAo&feature=youtu.be)
+- [Synkronisere en arbeidsordre mellom Dynamics 365 for Field Service og Finance and Operations](https://www.youtube.com/watch?v=46ylO7raZAo&feature=youtu.be)
 
 #### <a name="data-management"></a>Databehandling
 
-- [Bruke dataenheter og datapakker i Dynamics 365 for Finance and Operations](https://www.youtube.com/watch?v=UCyzbA41j8g&feature=youtu.be)
+- [Bruk dataenheter og datapakker i Dynamics 365 for Finance and Operations](https://www.youtube.com/watch?v=UCyzbA41j8g&feature=youtu.be)
 
 #### <a name="development"></a>Utvikling
 
@@ -67,8 +66,8 @@ Videoene er oppført etter funksjon, så rull nedover for å se hele listen over
 
 #### <a name="intelligence"></a>Intelligens
 
-- [Legg inn din egen database (BYOD) i Dynamics 365 for Finance and Operations](https://www.youtube.com/watch?v=-MaxtBJu2_o&feature=youtu.be)
-- [Slik bruker du Power Bi-innhold for kostnadsstyring i Dynamics 365](https://www.youtube.com/watch?v=5jWHnM_C7WM&feature=youtu.be)
+- [Ta med din egen database (BYOD) til Dynamics 365 for Finance and Operations](https://www.youtube.com/watch?v=-MaxtBJu2_o&feature=youtu.be)
+- [Slik bruker du Power BI-innhold for kostnadsstyring i Dynamics 365](https://www.youtube.com/watch?v=5jWHnM_C7WM&feature=youtu.be)
 
 #### <a name="lifecycle-services-lcs"></a>Lifecycle Services (LCS)
 
@@ -80,10 +79,10 @@ Videoene er oppført etter funksjon, så rull nedover for å se hele listen over
 - [Distribuere kode til et sandkassemiljø](https://www.youtube.com/watch?v=5azLeOO078k)
 - [Distribuere kode til et produksjonsmiljø](https://www.youtube.com/watch?v=ogXo-saZkmE&t=2s)
 - [Implementeringsprosjekter i Lifecycle Services](https://www.youtube.com/watch?v=V1vVOgcTuw4&t=18s)
-- [Administrere kodeoppgraderingen og verktøyprosessen i Dynamics 365 for Finance and Operations](https://www.youtube.com/watch?v=M-AtR6ocYM8&feature=youtu.be)
+- [Administrere kodeoppgradering og verktøyprosess i Dynamics 365 for Finance and Operations](https://www.youtube.com/watch?v=M-AtR6ocYM8&feature=youtu.be)
 - [Styre forretningsprosessbiblioteker i Lifecycle Services](https://www.youtube.com/watch?v=S5msxj-2-x0)
 - [Metodologier i Lifecycle Services](https://www.youtube.com/watch?v=YRMJ15DvgZ8)
-- [Be om et Dynamics 365 for Finance and Operations-produksjonsmiljø](https://www.youtube.com/watch?v=5j1GapLr3MY&feature=youtu.be)
+- [Forespørre et Dynamics 365 for Finance and Operations-produksjonsmiljø](https://www.youtube.com/watch?v=5j1GapLr3MY&feature=youtu.be)
 - [Oppdatere data i et produksjonsmiljø](https://www.youtube.com/watch?v=VCd5SgkYPTw)
 - [Ta i bruk en ny Dynamics 365 for Finance and Operations-plattformversjon etter plattformoppdatering 3](https://www.youtube.com/watch?v=nkiKP2Au6OQ&feature=youtu.be)
 - [Bruke telemetri til å overvåke KPIer i Dynamics Lifecycle Services](https://www.youtube.com/watch?v=18u6SC8GeFY&feature=youtu.be)
@@ -170,11 +169,11 @@ Videoene er oppført etter funksjon, så rull nedover for å se hele listen over
 - [Utstempling (DYN332PAL2)](https://infopedia.eventbuilder.com/event?eventid=w5u5q8&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
 - [Leverandørsamarbeid (DYN327PAL)](https://infopedia.eventbuilder.com/event?eventid=c3e4c0&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
 
-#### <a name="retail"></a>Retail
+#### <a name="retail"></a>Handel
 
 - [Dynamics 365 for Retail POS-utvidelse: dypdykk (DYN342PAL)](https://infopedia.eventbuilder.com/event?eventid=f4s5w1&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
-- [Skalaenhet for detaljhandelsarkitektur og detaljhandelsbutikk (DYN307PAL)](https://infopedia.eventbuilder.com/event?eventid=j0j7h2&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
-- [Hva er nytt i Dynamics 365 for Retail POS-utvidelse (DYN339PAL2)](https://infopedia.eventbuilder.com/event?eventid=h8b0l1&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
+- [Detaljhandelsarkitektur og Retail Store Scale Unit (DYN307PAL)](https://infopedia.eventbuilder.com/event?eventid=j0j7h2&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
+- [Nyheter i Dynamics 365 for Retail POS-utvidelse (DYN339PAL2)](https://infopedia.eventbuilder.com/event?eventid=h8b0l1&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
 
 #### <a name="support"></a>Støtte
 
@@ -182,7 +181,7 @@ Videoene er oppført etter funksjon, så rull nedover for å se hele listen over
 
 #### <a name="upgrade-and-migration"></a>Oppgradering og overføring
 
-- [Verktøy for migrasjon av AX 2009 til Dynamics 365 for Operations (VIR809PAL)](https://infopedia.eventbuilder.com/event?eventid=c3g5k3&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
+- [AX 2009 til Dynamics 365 for Operations-migrasjonsverktøy (VIR809PAL)](https://infopedia.eventbuilder.com/event?eventid=c3g5k3&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
 - [AX 2009-migrasjonsverktøy (DYN306PAL2)](https://infopedia.eventbuilder.com/event?eventid=u3g7s0&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
 - [AX 2012 til Dynamics 365 for Operations-oppgradering (VIR817PAL2)](https://infopedia.eventbuilder.com/event?eventid=t9e9e5&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
 - [Slik oppgraderer du til 7.2 (juli 2017) fra 7.0 (RTW)/7.1 (utgivelse 1611) (DYN338PAL2)](https://infopedia.eventbuilder.com/event?eventid=q0w9p0&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
@@ -196,4 +195,3 @@ Videoene er oppført etter funksjon, så rull nedover for å se hele listen over
 - [Stykkvis plukkeprosess (DYN330PAL2)](https://infopedia.eventbuilder.com/event?eventid=u6e0z6&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
 - [Visuell planlegging for produksjonsordrer og kanbaner (DYN328PAL)](https://infopedia.eventbuilder.com/event?eventid=h0o0n0&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
 - [Lagerintegrasjon med produksjon (DYN344PAL)](https://infopedia.eventbuilder.com/event?eventid=y8p6o1&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks) - [Mobilapp for lagerstyring (VIR816PAL)](https://infopedia.eventbuilder.com/event?eventid=t8t7l8&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
-

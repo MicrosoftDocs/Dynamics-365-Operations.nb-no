@@ -1,14 +1,14 @@
 ---
 title: Prisstyring av detaljsalg
-description: "Dette emnet beskriver begrepene for å opprette og administrere salgspriser i Microsoft Dynamics 365 for Retail."
+description: Dette emnet beskriver begrepene for å opprette og administrere salgspriser i Microsoft Dynamics 365 for Retail.
 author: ShalabhjainMSFT
 manager: AnnBe
 ms.date: 04/20/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-retail
-ms.technology: 
-ms.search.form: 
+ms.technology: ''
+ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations, Retail
@@ -17,19 +17,18 @@ ms.search.industry: retail
 ms.author: ShalabhjainMSFT
 ms.search.validFrom: 2018-03-30
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 28a095588bd3c312a2d1c4b83e668487a209077f
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 6da38f69abe72665fc79a43e0e163a856f9ee34d
-ms.contentlocale: nb-no
-ms.lasthandoff: 08/09/2018
-
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "362148"
 ---
-
-# <a name="retail-sales-price-management"></a>Prisstyring av detaljsalg
+# <a name="retail-sales-price-management"></a>Salgsprisbehandling for Retail
 
 [!include [banner](includes/banner.md)]
 
-Dette emnet gir informasjon om prosessen for å opprette og administrere salgspriser i Microsoft Dynamics 365 for Retail. Det fokuserer på begrepene som er involvert i denne prosessen, og viser virkningen av konfigurasjonsalternativene for salgspriser.
+Dette emnet inneholder informasjon om prosessen med å opprette og administrere salgspriser i Microsoft Dynamics 365 for Retail. Det fokuserer på begrepene som er involvert i denne prosessen, og viser virkningen av konfigurasjonsalternativene for salgspriser.
 
 ## <a name="terminology"></a>Terminologi
 
@@ -133,7 +132,7 @@ I Microsoft Dynamics 365 kan du angi prisen på et produkt på tre steder:
 - I en forretningsavtale for salgspris
 - I en prisjustering
 
-Basisprisen og forretningsavtaleprisen er en del av kjernen i Microsoft Dynamics 365, og er tilgjengelige selv om du ikke bruker Retail. Funksjonen for prisjustering er bare tilgjengelig i Retail. Neste del inneholder mer informasjon om hvert av disse alternativene for å angi priser, og forklarer hvordan alternativene fungerer sammen.
+Basisprisen og forretningsavtaleprisen er en del av kjernen i Microsoft Dynamics 365 og er tilgjengelige selv om du ikke bruker Retail. Funksjonen for prisjustering er bare tilgjengelig i Retail. Neste del inneholder mer informasjon om hvert av disse alternativene for å angi priser, og forklarer hvordan alternativene fungerer sammen.
 
 ## <a name="setting-prices"></a>Angi priser
 
@@ -232,4 +231,3 @@ I tillegg støtter **bare** prissettingsmotoren for detaljhandel følgende priss
 
 - Prisen er basert på produktdimensjoner, i rekkefølge fra den mest spesifikke variantprisen til minst spesifikke variantprisen til produktstandardprisen. En pris som er angitt ved hjelp av to produktdimensjoner (for eksempel farge og størrelse), brukes før en pris som angis ved hjelp av bare én produktdimensjon (for eksempel størrelse).
 - Samme prisgruppe kan brukes til å kontrollere priser og rabatter.
-

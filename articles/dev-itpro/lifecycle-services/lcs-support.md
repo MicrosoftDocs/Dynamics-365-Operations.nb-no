@@ -1,13 +1,13 @@
 ---
-title: "Få støtte for Finance and Operations eller Lifecycle Services (LCS)"
-description: "Denne artikkelen forklarer hvordan du får hjelp med Microsoft Dynamics 365 for Finance and Operations eller Microsoft Dynamics Lifecycle Services (LCS)."
+title: Få støtte for Finance and Operations eller Lifecycle Services (LCS)
+description: Denne artikkelen forklarer hvordan du får hjelp med Microsoft Dynamics 365 for Finance and Operations eller Microsoft Dynamics Lifecycle Services (LCS).
 author: kfend
 manager: AnnBe
 ms.date: 08/28/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: IT Pro, Developer, Application user
 ms.reviewer: kfend
 ms.search.scope: Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: anupams
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: c4428613441424c81f4fd7dd92bbf842c62ce860
 ms.openlocfilehash: 4ad96a3aa3ac80045345b839ea8a923884061aeb
-ms.contentlocale: nb-no
-ms.lasthandoff: 10/16/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "334778"
 ---
-
 # <a name="get-support-for-finance-and-operations-or-lifecycle-services-lcs"></a>Få støtte for Finance and Operations eller Lifecycle Services (LCS)
 
 [!include [banner](../includes/banner.md)]
@@ -53,7 +52,7 @@ Hvis du vil ha støtte for Finance and Operations eller LCS, bruker du ressursen
 <tbody>
 <tr class="odd">
 <td>Spør fellesskapet.</td>
-<td>Gå til siden <a href="https://go.microsoft.com/fwlink/?linkid=2013438"><span style="color: #0066cc;">Dynamics 365 for Finance and Operations-fellesskap</span></a> for å få hjelp med spørsmålene dine fra Dynamics-fellesskapet.</td>
+<td>Gå til siden <a href="https://go.microsoft.com/fwlink/?linkid=2013438"><span style="color: #0066cc;">Dynamics 365 for Finance and Operations-fellesskapet</span></a> for å få hjelp med spørsmålene dine fra Dynamics-fellesskapet.</td>
 </tr>
 <tr class="even">
 <td>Bruk verktøyet Problemsøk.</td>
@@ -90,8 +89,7 @@ Hvis du har tekniske spørsmål som er knyttet til pålogging og tilgang til Cus
 
 
 ## <a name="additional-resources"></a>Tilleggsressurser
-- [For støtte for Dynamics 365 for Retail](../../retail/retail-support.md)
-- [For støtte for Dynamics 365 for Talent](../../talent/talent-support.md)
+- [Få kundestøtte for Dynamics 365 for Retail](../../retail/retail-support.md)
+- [Få kundestøtte for Dynamics 365 for Talent](../../talent/talent-support.md)
 - Hvis du vil ha mer informasjon om støttetilbud for Microsoft Dynamics, kan du se [Støtte for Microsoft Dynamics Online](https://www.microsoft.com/en-us/dynamics/dynamics-online-support.aspx).
-
 

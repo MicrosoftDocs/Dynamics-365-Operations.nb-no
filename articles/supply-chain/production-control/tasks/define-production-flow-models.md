@@ -1,13 +1,13 @@
---- 
+---
 title: Definere produksjonsflytmodeller
 description: Produksjonsflytmodeller beskrive hvordan kapasiteten for arbeidsceller for lean manufacturing er beregnet og opprettholdt.
 author: cvocph
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: LeanProductionFlowModel
 audience: Application User
 ms.reviewer: shylaw
@@ -17,12 +17,12 @@ ms.search.industry: Manufacturing
 ms.author: conradv
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: e410928bc850e1f3427c9536e9943d1196be7a05
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 7850a121ca06f25f6c532e49e18c0b6811bd7455
-ms.contentlocale: nb-no
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "336733"
 ---
 # <a name="define-production-flow-models"></a>Definere produksjonsflytmodeller
 
@@ -45,5 +45,4 @@ Produksjonsflytmodeller beskrive hvordan kapasiteten for arbeidsceller for lean 
     * Planleggingshorisonten beskriver hvor mange dager kapasitetsreservasjoner kan utføres for de relaterte arbeidscellene. I horisonten for tidsplanlegging angir du antallet dager.   Kanban-prosessjobber som faller utenfor denne perioden, planlegges ikke med automatisk planlegging. Horisonten for tidsplanlegging er vanligvis to ganger gjennomsnittlig leveringstid for beholdning for produktene som produseres i en produksjonsflyt eller arbeidscelle. EPE-syklus må ikke være mer enn halvparten planleggingshorisonten.     
 8. Velg et alternativ i feltet Reaksjon på kapasitetsmangel.
     * Alternativene omfatter: Utsett – utsetter fullstendig behovet for planleggingshendelsen på neste tilgjengelige produksjonsdag, med tilgjengelig kapasitet. Avbryt – Avslutter automatisk planlegging for planleggingshendelsen og lar de relaterte jobbene være uplanlagt.   Legg til for ønsket dag - planlegg de ønskede jobbene for den ønskede perioden. Dette overbelaster cellen for denne dagen og krever at planleggeren ser gjennom og foretar en manuell samhandling.   Distribuer til tilgjengelig perioder - distribuer de ulike jobbene for planleggingshendelsen til alle tilgjengelige produksjonsdager, med start fra den første tilgjengelige dagen. Minste distribusjonsantall er kanban-jobbantallet. Distribusjonen tilordner minste planleggingsantall (kanban-antall) til hver dag med nok tilgjengelig gjennomstrømning.  
-
 

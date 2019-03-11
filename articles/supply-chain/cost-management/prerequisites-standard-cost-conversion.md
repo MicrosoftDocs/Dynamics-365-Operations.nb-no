@@ -1,13 +1,13 @@
 ---
 title: Forutsetninger for standard kostnadskonvertering
-description: "Dette emnet beskriver oppgaver som må utføres før du kjører en standard kostnadskonvertering."
+description: Dette emnet beskriver oppgaver som må utføres før du kjører en standard kostnadskonvertering.
 author: AndersGirke
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: InventStdCostConv
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: mguada
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 955191a32165a32c455d0dba7424a82eb2559399
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 65844bd78363dc6638b16b3fd4ca163a3fde6a23
-ms.contentlocale: nb-no
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "351936"
 ---
-
 # <a name="prerequisites-for-a-standard-cost-conversion"></a>Forutsetninger for standard kostnadskonvertering
 
 [!include [banner](../includes/banner.md)]
@@ -50,7 +49,6 @@ Før du kjører en standard kostnadskonvertering, gjør du følgende:
 
         Aktiv kostnadsoppdeling betyr at hvis du aktiverer prisen for en produsert vare, lagres resultatet i kostgruppesegmenteringen i varens kostprispost. Hvis du ikke legger inn en verdi i feltet **Oppdeling av kostnader**, blir ikke kostgruppesegmenteringen opprettholdt for varer med standard kostpris. Det vil si at standard kostpris for en produsert vare vil bli beregnet og opprettholdt som et enkeltbeløp uten kostgruppesegmentering, og kostbidragene for produserte komponenter vil bli aggregert inn i dette enkeltbeløpet.
     -   Bruk feltet **Avvik for standard** til å velge summert eller per kostgruppe. Valget av per kostgruppe gjør at du kan identifisere avvik i innkjøpspris og produksjonsavvik etter kostgruppe. Dette gir også mulighet til å identifisere de fire typene produksjonsavvik (avvik i partistørrelse, antall, pris og erstatning). Hvis du valgte summert, kan du ikke identifisere avvik etter kostgruppe, og du kan ikke identifisere de fire typene produksjonsavvik. Du kan bare vise en oppsummering av produksjonsavviket. Policyen om avvik for standard kostpris er uavhengig av policyen for kostnadsoppdeling. Det vil si at hvis du velger ingen policy for kostnadsoppdeling samt avvik per kostgruppe, vil produksjonsavvik etter kostgruppe fremdeles vil bli fanget opp.
-
 
 
 

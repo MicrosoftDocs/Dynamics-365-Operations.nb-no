@@ -1,13 +1,13 @@
---- 
-title: "Endre formater ved å bruke Excel-maler på nytt"
-description: "For å fullføre trinnene i denne prosedyren må du først fullføre trinnene i prosedyren \"ER Utforme en konfigurasjon for generering av rapporter i OPENXML-format\"."
+---
+title: Endre formater ved å bruke Excel-maler på nytt
+description: For å fullføre trinnene i denne prosedyren må du først fullføre trinnene i prosedyren "ER Utforme en konfigurasjon for generering av rapporter i OPENXML-format".
 author: NickSelin
 manager: AnnBe
 ms.date: 06/19/2017
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
 ms.search.scope: Operations
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
 ms.openlocfilehash: 3d5752caba9327475bb28c7bc6b0ee7e072f44f3
-ms.contentlocale: nb-no
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "327119"
 ---
 # <a name="modify-formats-by-reapplying-excel-templates"></a>Endre formater ved å bruke Excel-maler på nytt
 
@@ -83,5 +83,4 @@ Denne fremgangsmåten beskriver hvordan du endrer en elektronisk rapportering (E
 
 ## <a name="use-the-modified-draft-version-of-the-er-format-for-payment-journal-processing"></a>Bruk den endrede utkastversjonen av ER-formatet i journalen for betalingsbehandling
     * Gå gjennom det opprettede regnearket, inkludert nye detaljer over betalingslinjer – betalingsdato.  
-
 

@@ -1,13 +1,13 @@
 ---
 title: Kredit og innkreving i Kunder
-description: "Informasjon om kundesamlinger behandles i en sentral visning ved hjelp av siden Microsoft Dynamics 365 for Finance and Operations-samlinger. Ledere for kreditt og innkreving kan bruke denne sentrale visningen til å administrere innkreving. Innkrevingsagenter kan begynne innkrevingsprosessen fra kundelister som genereres ved hjelp av forhåndsdefinerte innkrevingskriterier eller fra kundesiden."
+description: Informasjon om kundeinnkrevinger administreres i én sentral visning på siden Innkrevinger i Microsoft Dynamics 365 for Finance and Operations. Ledere for kreditt og innkreving kan bruke denne sentrale visningen til å administrere innkreving. Innkrevingsagenter kan begynne innkrevingsprosessen fra kundelister som genereres ved hjelp av forhåndsdefinerte innkrevingskriterier eller fra kundesiden.
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 10/26/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CustAgingSnapshot, CustBankAccounts, CustCollections, CustCollectionsActivitiesListPage, CustCollectionsAgent, CustCollectionsCaseListPage, CustCollectionsPool, CustCollectionsPoolsListPage, CustTable
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: c36e7a5d28baf149b982a0afd5fdd79fe8a91850
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 23fc1a160cf25255a1677ca0e501c374746b6e34
-ms.contentlocale: nb-no
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "351683"
 ---
-
 # <a name="credit-and-collections-in-accounts-receivable"></a>Kredit og innkreving i Kunder
 
 [!include [banner](../includes/banner.md)]
@@ -107,7 +106,6 @@ For mer informasjon, se [Opprette en avskrivningsjournal for en kunde](tasks/cre
 --------------------------------------------
 
 Du kan behandle betalinger uten dekning ved å klikke Betaling uten dekning på Innkrevinger-siden. Når du klikker denne knappen, blir betalingen avbrutt. Hvis det forekommer et gebyr for betalingen uten dekning for kunden, blir det opprettet en tilleggstransaksjon i en betalingsjournal. Gebyrbeløpet er basert på innstillingene for de automatiske tilleggene. De automatiske tilleggene som gjelder for betalinger uten dekning, angis av gebyrgruppen som er valgt på Bankkontoer-siden for den aktuelle bankkontoen.
-
 
 
 

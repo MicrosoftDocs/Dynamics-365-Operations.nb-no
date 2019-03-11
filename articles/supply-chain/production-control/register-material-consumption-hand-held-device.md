@@ -1,13 +1,13 @@
 ---
 title: Registrere materialforbruk med en mobil enhet
-description: "Dette emnet beskriver en arbeidsflyt som aktiverer registrering av råvareforbruk i produksjonen ved hjelp av en håndholdt enhet."
+description: Dette emnet beskriver en arbeidsflyt som aktiverer registrering av råvareforbruk i produksjonen ved hjelp av en håndholdt enhet.
 author: johanhoffmann
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: WHSRFMenuItem
 audience: Application User
 ms.reviewer: josaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: b5b9c73cf9b23eb8ad9ed872b76b92b395609e9a
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 72d4ff5e1311005d3bf43a13e28208cd9b3d1457
-ms.openlocfilehash: b84b63ec519ae686b55905170c956fcb2b08334a
-ms.contentlocale: nb-no
-ms.lasthandoff: 03/08/2018
-
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "336135"
 ---
-
 # <a name="register-material-consumption-using-a-mobile-device"></a>Registrere materialforbruk med en mobil enhet
 
 [!include [banner](../includes/banner.md)]
@@ -41,7 +40,7 @@ Denne arbeidsflyten er relevant hvis det er strenge krav til sporbarhet for mate
 
 En fortløpende produksjonsprosess (5) bruker partikontrollert råmateriale RM-100. Materialet er på lager på lokasjonen Bulk-001 (1) på nummerskilt PL-1 med to partier, B1 og B2, begge med et antall på 100 kilo. Lagerarbeid (2) er frigitt og behandlet for RM-100, og materialet er plukket fra Bulk-001 til produksjonsinnleveringssted PIL-01 (3), som er definert som ikke-nummerskiltkontrollert. Maskinoperatøren veier ut materialer fra produksjonsinnleveringsstedet (3) og registrerer vekten og partinummeret som er brukt (4). Fra produksjonsinnleveringsstedet legges en del av materialet manuelt til produksjonsprosessen i definerte tidsintervaller. Når maskinoperatøren legger til materiale, veies det på en vekt og partinummeret registreres.
 
-## <a name="set-up-the-workflow-to-register-consumption-using-a-handheld-device"></a>Definer arbeidsflyten til å registrere forbruk ved hjelp av en håndholdt enhet
+## <a name="set-up-theworkflow-to-register-consumption-using-a-handheld-device"></a>Definer arbeidsflyten for å registrere forbruk ved hjelp av en håndholdt enhet
 Opprett et ferdigvareprodukt, FG-100, med en stykkliste som har det partikontrollerte råmaterialet RM-100. Legg til to partier, B1 og B2, av RM-100 i et antall på 100 til lokasjon: Bulk-001 på nummerskilt: PL-1. Trekkprinsippet på stykklistelinjen for RM-100 er satt til **manuell**. Angi produksjonsinnleveringsstedet til PIL-01. Du kan gjøre dette ved å velge denne lokasjonen som standard produksjonsinnleveringssted på lager 51.
 
 1.  Opprett et nytt menyelement for mobilenhet: 
@@ -69,7 +68,7 @@ Dette tar materialet fra bulklokasjonen til produksjonsinnleveringsstedet PIL-01
 
 Etter at produksjonsordren er startet, kan du registrere materialforbruk i arbeidsflyten for den håndholdte enheten. La oss begynne med å registrere forbruk på 25 kilo av parti B1.
 
-6.  Velg menyelementet **Registrer material** **forbruk** på menyen for den håndholdte enheten, og angi følgende detaljer: 
+6.  Velg menyelementet **Registrer material** **forbruk** på menyen for den håndholdte enheten, og angi følgende detaljer: 
 
 -    Produksjonsordrenummeret. 
 -    Lokasjonen der materialet skal forbrukes, i dette tilfellet PIL-01. 
@@ -88,9 +87,8 @@ Når du er ferdig med registreringen, velger du **Ferdig** for å postere journa
 ### <a name="additional-comments"></a>Ekstra kommentarer 
 
 -   Hvis en bruker avbryter arbeidsflyten når en journallinje er opprettet, er journalen i en ikke-postert tilstand, men hvis brukeren senere bruker arbeidsflyten for samme produksjonsordre, blir linjene lagt til i den åpne journalen i stedet for en ny journal.
--   Den nye arbeidsflyten støtter også for registrering av serienumre.
+-   Den nye arbeidsflyten støtter også registrering av serienumre.
 -   Det er bare mulig å registrere et varenummer som er definert i stykklisten eller formelen for den valgte produksjonsordren eller partiordren.
 -   Materiale kan overforbrukes. Hvis for eksempel materialet er beregnet til bruk med et antall på 100 kilo, kan det bli overforbrukt med et antall på for eksempel 105 kilo.
-
 
 

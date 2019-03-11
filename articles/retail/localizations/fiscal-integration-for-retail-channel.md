@@ -1,13 +1,13 @@
 ---
-title: "Økonomisk integrering for detaljhandelskanal"
-description: "Dette emnet gir en oversikt over økonomisk integrering for Retail POS."
+title: Oversikt over regnskapsintegrering for detaljhandelskanaler
+description: Dette emnet gir en oversikt over funksjonene for regnskapsintegrering som er tilgjengelige i Microsoft Dynamics 365 for Retail.
 author: josaw
 manager: annbe
-ms.date: 11/01/2018
+ms.date: 02/01/2019
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 ms.search.form: RetailFunctionalityProfile, RetailFormLayout, RetailParameters
 audience: Application User
 ms.reviewer: josaw
@@ -15,122 +15,104 @@ ms.search.scope: Core, Operations, Retail
 ms.search.region: Global
 ms.search.industry: Retail
 ms.author: v-kikozl
-ms.search.validFrom: 2018-11-1
-ms.dyn365.ops.version: 8.1.1
+ms.search.validFrom: 2019-1-16
+ms.dyn365.ops.version: 10
+ms.openlocfilehash: 2dc977e3c53b1f15b41b095f586861b67c973a6d
+ms.sourcegitcommit: 68df883200b5c477ea1799cc28d3ef467cd29202
 ms.translationtype: HT
-ms.sourcegitcommit: 0450326dce0ba6be99aede4ebc871dc58c8039ab
-ms.openlocfilehash: c852d095505abecbd44d29e9e7b53875e9069def
-ms.contentlocale: nb-no
-ms.lasthandoff: 11/01/2018
-
+ms.contentlocale: nb-NO
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "377141"
 ---
-# <a name="fiscal-integration-for-retail-channel"></a>Økonomisk integrering for detaljhandelskanal
+# <a name="overview-of-fiscal-integration-for-retail-channels"></a>Oversikt over regnskapsintegrering for detaljhandelskanaler
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet er en oversikt over funksjonenen for økonomisk integrering som er tilgjengelig i Microsoft Dynamics 365 for Retail. Funksjonen for økonomisk integrering er et rammeverk som er utformet for å støtte lokale økonomilover som har som formål å unngå bedrageri i detaljhandelen. Vanlige scenarier som kan dekkes ved hjelp av økonomisk integrasjon:
+## <a name="introduction"></a>Innledning
 
-- Skrive ut en bilagskvittering og gi den til kunden.
-- Sikre innsendingen av opplysninger relatert til salg og returer som utføres på salgsstedet på en ekstern tjeneste som leveres av myndighetene.
-- Bruke databeskyttelse med en digital signatur som er autorisert av myndighetene.
+Dette emnet er en oversikt over funksjonene for regnskapsintegrering som er tilgjengelige i Microsoft Dynamics 365 for Retail. Regnskapsintegrering omfatter integrering med ulike regnskapsenheter og -tjenester som gir mulighet for bilagsregistrering av detaljhandelsalg i samsvar med lokale regnskapslover som er rettet mot å hindre avgiftssvindel i detaljhandelen. Her er noen vanlige scenarier som kan dekkes ved å bruke regnskapsintegrering: 
 
-Dette emnet gir retningslinjer for å sette opp økonomisk integrasjon, slik at brukere kan utføre følgende oppgaver: 
+- Registrer et detaljhandelsalg på en regnskapsenhet som er koblet til Retail point of sale (POS), for eksempel en bilagsskriver, og skriv ut en bilagskvittering for kunden.
+- Send informasjon som er knyttet til salg og returer som er fullført i Retail POS, sikkert til en ekstern webtjeneste som styres av skattemyndighetene.
+- Bidra til å sikre at salgstransaksjonsdata ikke kan endres, gjennom digitale signaturer.
 
-- Konfigurere regnskapskoblinger, som er økonomisk enheter eller tjenester som brukes for bilagsregistreringsformål som lagring, digitale signaturer og sikker innsending av regnskapsdata.
-- Konfigurere dokumentleverandøren, som definerer en utdatametode og en algoritme for regnskapsdokumentgenerering.
-- Konfigurere bilagsregistreringsprosessen, som definerer en sekvens med trinn og en gruppe med koblinger som brukes på hvert trinn.
-- Tilordne bilagsregistreringsprosesser til funksjonalitetsprofiler for salgsstedet.
-- Tilordne tekniske profiler for kobling til maskinvareprofiler (for lokale regnskapskoblinger) eller POS-funksjonalitetsprofiler (for andre regnskapskoblingstyper).
+Funksjonen for regnskapsintegrering i Retail er et rammeverk som gir en felles løsning for videre utvikling og tilpassing av integreringen mellom Retail POS og regnskapsenheter og -tjenester. Funksjonen inneholder også eksempler på regnskapsintegrering som støtter grunnleggende detaljhandelsscenarier for bestemte land eller områder, og som fungerer med bestemte regnskapsenheter eller -tjenester. Et eksempel på regnskapsintegrering består av flere utvidelser for Retail-komponenter og er inkludert i software development kit (SDK) for Retail. Hvis du vil ha mer informasjon om eksemplene på regnskapsintegrering som er tilgjengelige i Retail-SDK-et, se [Eksempler på regnskapsintegrering i Retail SDK-et](#fiscal-integration-samples-in-the-retail-sdk). Hvis du vil ha informasjon om hvordan du installerer og bruker Retail SDK, se [Oversikt over Retail SDK](../dev-itpro/retail-sdk/retail-sdk-overview.md).
 
-## <a name="fiscal-integration-execution-flow"></a>Kjøringsflyt for regnskapsintegrering
-Følgende scenario viser den vanlige kjøringsflyten for regnskapsintegrering.
+For å støtte andre scenarier som ikke støttes av et regnskapsintegreringseksempel, for å integrere Retail POS med andre regnskapsenheter eller -tjenester, eller for å oppfylle kravene til andre land eller regioner, må du enten utvide et eksisterende regnskapsintegreringseksempel eller lage et nytt eksempel ved hjelp av et eksisterende eksempel.
 
-1. Initialisering av bilagsregistreringsprosessen.
-  
-   Når du har utført noen handlinger der bilagsregistrering kreves, for eksempel etter en detaljhandelstransaksjon er fullført, knyttes bilagsregistreringsprosessen til gjeldende profil for salgsstedsfunksjonalitet.
+## <a name="fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices"></a>Bilagsregistreringsprosess og regnskapsintegreringseksempler for regnskapsenheter
 
-1. Søke etter en regnskapskobling.
-   
-   For hvert regnskapskoblingstrinn som er inkludert i regnskapsregistreringsprosessen, utfører systemet et samsvar med listen over regnskapskoblinger. Disse koblingene har en funksjonell profil som er inkludert i den angitte koblingsgruppen, med en liste over koblinger som har en teknisk profil som er knyttet til den gjeldende maskinvareprofilen (bare for en koblingstype som er lik **Lokal**), eller med den gjeldende funksjonalitetsprofilen for salgssted (for andre koblingstyper).
-   
-1. Utføre den økonomiske integreringen.
+En bilagsregistreringsprosess i Retail POS kan bestå av ett eller flere trinn. Hvert trinn omfatter bilagsregistrering av bestemte handelstransaksjoner eller -hendelser i én regnskapsenhet eller -tjeneste. Følgende løsningskomponenter deltar i bilagsregistreringen i en regnskapsenhet som er koblet til en maskinvarestasjon:
 
-   Systemet utfører alle nødvendige handlinger som er definert av en samling som er knyttet til koblingen som ble funnet. Dette gjøres i henhold til innstillingene for den funksjonelle profilen og tekniske profilen som ble funnet i det forrige trinnet for denne koblingen.
+- **Commerce runtime (CRT)-utvidelsen** – Denne komponenten serialiserer data fra handelstransaksjoner/-hendelser i formatet som også brukes for samhandling med regnskapsenheten, analyserer svar fra regnskapsenheten, og lagrer svarene i kanaldatabasen. Utvidelsen definerer også bestemte transaksjoner og hendelser som skal registreres. Denne komponenten blir ofte referert til som en *regnskapsdokumentleverandør*.
+- **Maskinvarestasjon-utvidelsen** – Denne komponenten starter kommunikasjonen med regnskapsenheten, sender forespørsler og dirigerer kommandoer til regnskapsenheten på grunnlag av data fra handelstransaksjonene/-hendelsene som er hentet fra regnskapsdokumentet, og mottar svar fra regnskapsenheten. Denne komponenten blir ofte referert til som en *regnskapskobling*.
 
-## <a name="setup-needed-before-using-fiscal-integration"></a>Konfigurasjon som kreves før regnskapsintegreringen brukes
-Før du bruker regnskapsintegreringsfunksjonaliteten, bør du definere følgende innstillinger:
+Et eksempel på regnskapsintegrering for en regnskapsenhet inneholder henholdsvis CRT- og maskinvarestasjonstilleggene for en regnskapsdokumentleverandør og en regnskapskobling. Det inneholder også følgende komponentkonfigurasjoner:
 
-- Definer nummerserien på siden **Detaljhandelsparametere** for nummeret for funksjonell profil for regnskap.
-  
-- Definere nummerseriene på siden **Delte parametere for detaljhandel** for følgende referanser:
-  
-  - Nummer for teknisk profil for regnskap
-  - Gruppenummer for regnskapskobling
-  - Nummer for registreringsprosess
+- **Konfigurasjon av regnskapsdokumentleverandør** – Denne konfigurasjonen definerer en utdatametode og et format for regnskapsdokumenter. Den inneholder også en datatilordning for avgifter og betalingsmåter for å gjøre data fra Retail POS kompatible med verdiene som er forhåndsdefinert i fastvaren til regnskapsenheten.
+- **Konfigurasjon av regnskapskobling** – Denne konfigurasjonen definerer den fysiske kommunikasjonen med en bestemt regnskapsenhet.
 
-- Opprett en **Regnskapskobling** i **Detaljhandel > Kanaloppsett > Regnskapsintegrering > Regnskapskoblinger** for hver enhet eller tjeneste du planlegger å bruke for regnskapsintegreringsformål.
+En bilagsregistreringsprosess for en bestemt salgsstedskasse er definert av en tilsvarende innstilling i funksjonalitetsprofilen for salgsstedet. Hvis du vil ha mer informasjon om hvordan du konfigurerer en bilagsregistreringsprosess, laster opp konfigurasjoner for regnskapsdokumentleverandører og regnskapskoblinger, og endrer parameterne, se [Konfigurere en bilagsregistreringsprosess](setting-up-fiscal-integration-for-retail-channel.md#set-up-a-fiscal-registration-process).
 
--  Opprett en **Leverandør for regnskapsdokument** i **Detaljhandel > Kanaloppsett > Regnskapsintegrering > Leverandører for regnskapsdokument** for alle regnskapskoblinger. Datatilordning regnes som en del av regnskapsdokumentleverandøren. Hvis du vil definere forskjellige datatilordninger for samme tilkobling (for eksempel tilstandsspesifikke reguleringer), bør du opprette forskjellige regnskapsdokumentleverandører.
+Følgende eksempel viser en vanlig kjøringsflyt for bilagsregistrering for en regnskapsenhet. Flyten starter med en hendelse på salgsstedet (for eksempel fullføring av en salgstransaksjon) og implementerer følgende trinnrekkefølge:
 
-- Opprett en **Funksjonell profil for kobling** i **Detaljhandel > Kanaloppsett > Regnskapsintegrering > Funksjonelle profiler for kobling** for hver regnskapsdokumentleverandør.
-  - Velg et tilkoblingsnavn.
-  - Velg en dokumentleverandør.
-  - Angi mva-satsinnstillinger i **Tjenesteoppsett**-kategorien.
-  - Angi mva-kodetilordning og tilordning av betalingsmiddeltype i **Datatilordning**-kategorien.
+1. Salgsstedet ber om et regnskapsdokument fra CRT.
+2. CRT bestemmer om den gjeldende hendelsen krever bilagsregistrering.
+3. Basert på innstillingene for bilagsregistreringsprosessen identifiserer CRT en regnskapskobling og tilsvarende regnskapsdokumentleverandør som skal brukes i bilagsregistreringen.
+4. CRT kjører regnskapsdokumentleverandøren som genererer et regnskapsdokument (for eksempel et XML-dokument) som representerer handelstransaksjonen eller -hendelsen.
+5. POS sender regnskapsdokumentet som CRT klargjør, til en maskinvarestasjon.
+6. Maskinvarestasjonen kjører regnskapskoblingen som behandler regnskapsdokumentet, og kommuniserer den til regnskapsenheten eller -tjenesten.
+7. Salgsstedet analyserer svaret fra regnskapsenheten eller -tjenesten for å bestemme om bilagsregistreringen var vellykket.
+8. CRT lagrer svaret i kanaldatabasen.
 
-  #### <a name="examples"></a>Eksempler 
+![Løsningsskjema](media/emea-fiscal-integration-solution.png "Løsningsskjema")
 
-  |  | Format | Eksempel | 
-  |--------|--------|--------|
-  | Mva-satsinnstillinger | verdi: VATrate | 1 : 2000, 2 : 1800 |
-  | Tilordning av mva-koder | VATcode : verdi | vat20: 1, vat18: 2 |
-  | Tilordning av betalingsmiddeltyper | TenderTyp: verdi | Kontant: 1, kort: 2 |
+## <a name="error-handling"></a>Feilbehandling
 
-- Opprett **Grupper for regnskapskobling** i **Detaljhandel > Kanaloppsett > Regnskapsintegrering > Gruppe for regnskapskobling**. En koblingsgruppe er et delsett av funksjonelle profiler som er knyttet til regnskapskoblinger som utfører identiske funksjoner, og brukes på samme stadium i en regnskapsregistreringsprosessen.
+Rammeverket for regnskapsintegrering har følgende alternativer for å håndtere feil under bilagsregistreringen:
 
-   - Legg til funksjonelle profiler i koblingsgruppen. Klikk på **Legg til** på siden **Funksjonelle profiler**, og velg et profilnummer.
-   - Hvis du vil avbryte bruken av den funksjonelle profilen, må du sette **Deaktiver** til **Ja**. 
-   
-     Denne endringen påvirker bare den gjeldende koblingsgruppen. Du kan fortsette å bruke den samme funksjonsprofilen i andre tilkoblingsgrupper.
+- **Prøv på nytt** – Operatører kan bruke dette alternativet når feilen kan løses raskt, og bilagsregistreringen kan kjøres på nytt. Dette alternativet kan for eksempel brukes når regnskapsenheten ikke er tilkoblet, bilagsskriveren er tom for papir, eller det er papirstopp i bilagsskriveren.
+- **Avbryt** – Dette alternativet lar operatører utsette bilagsregistreringen av den gjeldende transaksjonen eller hendelsen hvis den mislykkes. Når registreringen utsettes, kan operatøren fortsette å arbeide på salgsstedet, og kan utføre alle operasjoner som bilagsregistreringen ikke er nødvendig for. Når en hendelse som krever bilagsregistrering, skjer på salgsstedet (for eksempel en ny transaksjon åpnes), vises automatisk dialogboksen for feilhåndtering for å varsle operatøren at den forrige transaksjonen ikke ble riktig registrert, og for å gi alternativer for å håndtere feilen.
+- **Hopp over** – Operatører kan bruke dette alternativet når bilagsregistreringen kan utelates ved bestemte betingelser, og det kan fortsettes med vanlige operasjoner på salgsstedet. Dette alternativet kan for eksempel brukes når en salgstransaksjon som bilagsregistreringen mislyktes for, kan registreres i en bestemt papirjournal.
+- **Merk som registrert** – Operatører kan bruke dette alternativet når transaksjonen faktisk ble registrert i regnskapsenheten (for eksempel en bilagskvittering ble skrevet ut), men det oppstod en feil under lagring av regnskapssvaret i kanaldatabasen.
 
-     >[!NOTE]
-     > I en tilkoblingsgruppe kan hver regnskapkobling bare ha én funksjonsprofil.
+> [!NOTE]
+> Alternativene **Hopp over** og **Merk som registrert** må aktiveres i bilagsregistreringsprosessen før de brukes. I tillegg må tilsvarende tillatelser gis til operatører.
 
-- Opprett en **Teknisk profil for kobling** i **Detaljhandel > Kanaloppsett > Regnskapsintegrering > Tekniske profiler for kobling** for hver regnskapskobling.
-  - Velg et tilkoblingsnavn.
-  - Velg en tilkoblingstype. 
-      - **Lokal** – Angi denne typen for fysiske enheter eller programmer som er installert på en lokal maskin.
-      - **Intern** – Angi denne typen for regnskapsenheter og -tjenester som er koblet til serveren for detaljhandel.
-      - **Ekstern** – For eksterne regnskapstjenester som en nettportal fra en skattemyndighet.
-    
-  - Angi innstillinger i kategorien **Tilkobling**.
+Alternativene **Hopp over** og **Merk som registrert** gjør at informasjonskoder kan hente bestemt informasjon om feilen, for eksempel årsaken til feilen eller en begrunnelse for å hoppe over bilagsregistreringen eller merke transaksjonen som registrert. Hvis du vil ha mer informasjon om hvordan du definerer parametere for feilbehandling, se [Konfigurere innstillinger for feilbehandling](setting-up-fiscal-integration-for-retail-channel.md#set-error-handling-settings).
 
-      
- >[!NOTE]
- > En oppdatert versjon av en konfigurasjon som tidligere ble lastet inn, lastes for både funksjonelle og tekniske profiler. Hvis en passende kobling eller dokumentleverandør allerede er i bruk, vil du bli varslet. Som standard lagres alle endringer som er opprettet manuelt i funksjonelle og tekniske profiler. Hvis du vil overstyre disse profilene med standardsettet med parametere fra en konfigurasjon, klikker du på **Oppdater** på sidene **Funksjonelle profiler for kobling** og **Tekniske profiler for kobling**.
- 
-- Opprett en **Bilagsregistreringsprosess** i **Detaljhandel > Kanaloppsett > Regnskapsintegrering > Bilagsregistreringsprosesser** for hver unike prosess for regnskapsintegreringen. En registreringsprosess er definert av rekkefølgen på registreringstrinnene og koblingsgruppen som brukes på hvert trinn. 
-  
-  - Legg til registreringstrinn i prosessen:
-      - Klikk **Legg til**.
-      - Velg en tilkoblingstype.
-      
-      >[!NOTE]
-      > Dette feltet definerer hvor systemet søker i en teknisk profil for koblingen, enten i maskinvareprofiler for koblingstypen **Lokal** eller i funksjonalitetsprofiler for salgssted for andre regnskapskoblingstyper.
-      
-   - Velg en tilkoblingsgruppe.
-   
-     >[!NOTE]
-     > Klikk på **Valider** for å kontrollere integriteten til registreringsprosesstrukturen. Det anbefales at det foretas valideringer i følgende tilfeller:
-       >- For en ny registreringsprosess etter at alle innstillinger er fullført, inkludert binding til funksjonalitetsprofiler for salgssted og maskinvareprofiler.
-       >- Når du har utført oppdateringer til en eksisterende registreringsprosess.
+## <a name="storing-fiscal-response-in-fiscal-transaction"></a>Lagre regnskapssvar i regnskapstransaksjon
 
--  Bind regnskapsregistreringsprosesser til funksjonalitetsprofiler for salgssted i **Detaljhandel > Kanaloppsett > Salgsstedsoppsett > Salgsstedsprofiler > Funksjonalitetsprofiler**.
-   - Klikk på **Rediger**, og velg et **Prosessnummer** i kategorien **Bilagsregistreringsprosess**.
-- Bind de tekniske profilene for kobling til maskinvareprofilene i **Detaljhandel > Kanaloppsett > Salgsstedsoppsett > Salgsstedsprofiler > Maskinvareprofiler**.
-   - Klikk på **Rediger**, og klikk deretter på **Ny** i kategorien **Teknisk profil for regnskap**.
-   - Velg en teknisk profil for kobling i feltet **Profilnummer**.
-   
-     >[!NOTE]
-     > Du kan legge til flere tekniske profiler i en maskinvareprofil. Men dette støttes ikke hvis en maskinvareprofil har mer enn ett skjæringspunkt med en hvilken som helst koblingsgruppe. Hvis du vil unngå feil innstillinger, anbefales det at du validerer registreringsprosessen når du har oppdatert alle maskinvareprofiler.
+Når bilagsregistrering av en transaksjon eller hendelse er vellykket, opprettes en regnskapstransaksjon i kanaldatabasen og kobles til den opprinnelige transaksjonen eller hendelsen. På samme måte, hvis alternativet **Hopp over** eller **Merk som registrert** er valgt for en mislykket bilagsregistrering, lagres denne informasjonen i en regnskapstransaksjon. En regnskapstransaksjon inneholder regnskapssvaret for regnskapsenheten eller -tjenesten. Hvis bilagsregistreringsprosessen består av flere trinn, opprettes en regnskapstransaksjon for hvert trinn i prosessen som resulterte i en vellykket eller mislykket registrering.
 
+Regnskapstransaksjoner overføres til Detaljhandel Hovedkontor av *P-job* sammen med handelstransaksjoner. I hurtigfanen **Regnskapstransaksjoner** på siden **Transaksjoner for detaljhandelsbutikk** kan du vise regnskapstransaksjonene som er koblet til handelstransaksjoner.
+
+En regnskapstransaksjon lagrer følgende detaljer:
+
+- Detaljer om bilagsregistreringsprosessen (prosess, koblingsgruppe, kobling og så videre). Den lagrer også serienummeret til regnskapsenheten i **Registernummer**-feltet, hvis denne informasjonen er inkludert i regnskapssvaret.
+- Statusen for bilagsregistreringen: **Fullført** for vellykket registrering, **Hoppet over** hvis operatøren merket av for **Hopp over**-alternativet for en mislykket registrering, eller **Merket som registrert** hvis operatøren merket av for **Merk som registrert**.
+- Informasjonskodetransaksjoner som er knyttet til en valgt regnskapstransaksjon. Hvis du vil vise informasjonskodetransaksjonene i hurtigfanen **Finansielle transaksjoner**, velger du en regnskapstransaksjon med statusen **Hoppet over** eller **Merket som registrert**, og velger deretter **Informasjonskodetransaksjoner**.
+
+## <a name="fiscal-texts-for-discounts"></a>Bilagstekster for rabatter
+
+Noen land/områder har spesielle krav til ekstra tekst som må skrives på bilagskvitteringer når det brukes ulike typer rabatter. Med funksjonen for regnskapsintegrasjon kan du definere en spesiell tekst for en rabatt som skrives etter en rabattlinje på en bilagskvittering. For manuelle rabatter kan du konfigurere en bilagstekst for informasjonskoden som er angitt som **Produktrabatt**-informasjonskoden, i funksjonsprofilen for salgssted. Hvis du vil ha mer informasjon om hvordan du konfigurerer bilagstekster for rabatter, se [Konfigurere bilagstekster for rabatter](setting-up-fiscal-integration-for-retail-channel.md#set-up-fiscal-texts-for-discounts).
+
+## <a name="printing-fiscal-x-and-fiscal-z-reports"></a>Skrive ut regnskap X- og regnskap Z-rapporter
+
+Funksjonen for regnskapsintegrasjon støtter generering av dagsoppgjørsutdrag som er spesifikke for den integrerte regnskapsenheten eller -tjenesten:
+
+- Nye knapper som utfører tilsvarende operasjoner, må legges til skjermoppsettet for salgssted. Hvis du vil ha mer informasjon, se [Konfigurere X-/Z-regnskapsrapporter fra salgsstedet](setting-up-fiscal-integration-for-retail-channel.md#set-up-fiscal-xz-reports-from-the-pos).
+- I regnskapsintegreringseksemplet må disse operasjonene samsvares med tilsvarende operasjoner i regnskapsenheten.
+
+## <a name="fiscal-integration-samples-in-the-retail-sdk"></a>Eksempler på regnskapsintegrering i SDK for detaljhandel
+
+Følgende eksempler på regnskapsintegrering er for øyeblikket tilgjengelige i detaljhandel-SDK-et som utgis med Retail:
+
+- [Eksempel på integrering av bilagsskriver for Italia](emea-ita-fpi-sample.md)
+- [Eksempel på integrering av bilagsskriver for Polen](emea-pol-fpi-sample.md)
+
+Følgende funksjon for regnskapsintegrering er også tilgjengelig i detaljhandel-SDK-et, men drar for øyeblikket ikke nytte av regnskapsintegreringsrammeverket. Overføring av denne funksjonaliteten til rammeverket for regnskapsintegrering er planlagt i senere oppdateringer.
+
+- [Digital signatur for Frankrike](emea-fra-cash-registers.md)
+- [Digital signatur for Norge](emea-nor-cash-registers.md)
+- [Eksempel på integrering med kontrollenheter for Sverige](../dev-itpro/retail-sdk/retail-sdk-control-unit-sample.md)

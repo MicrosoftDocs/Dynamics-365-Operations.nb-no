@@ -5,9 +5,9 @@ author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: LedgerAllocation, LedgerAllocationBasisRule, LedgerAllocationRequest, LedgerAllocationRule
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: abbeb1bb4481139dff902916362a479f94fb96e5
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 63562cde3f2813fdcfc9df7ccbfc623aa2fbe9b1
-ms.contentlocale: nb-no
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "365736"
 ---
-
 # <a name="ledger-allocation-rules"></a>Finansfordelingsregler
 
 [!include [banner](../includes/banner.md)]
@@ -48,7 +47,6 @@ Hver fordelingsregel har fire komponenter: generelt, kilde, mål og forskyvning.
 -   **Mål** – Denne komponenten definerer hvordan resultatet til tildelingsberegningen skal distribueres og beregnes. Det kan for eksempel være én mållinje for hver avdeling.
 -   **Forskyvning** – Denne komponenten definerer hvordan hovedkontoer og dimensjoner skal bestemmes for motoppføringene som balanserer måloppføringene. Brukerdefinerte alternativer brukes vanligvis i stedet for kontoene og dimensjonene som er basert på kilden. Når **datakilden** er satt til **Fast verdi**, kan ikke **Kilde** brukes som et alternativ.
 -   **Basisregler for finanstildeling** – Disse reglene bruker egne kildefilterkriterier for å bestemme hvilke finanssaldoer som skal brukes for tildeling (for eksempel omsetning per avdeling). Hver fordelingsbasisregel kan brukes med flere fordelingsregler.
-
 
 
 

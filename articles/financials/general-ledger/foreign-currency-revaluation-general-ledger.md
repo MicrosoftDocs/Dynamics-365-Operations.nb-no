@@ -1,13 +1,13 @@
 ---
 title: Revaluering av utenlandsk valuta for finans
-description: "Dette emnet gir en oversikt over følgende handlinger for prosessen for revaluering av utenlandsk valuta i økonomimodulen: oppsett, kjøring av prosessen, beregning for prosessen, og tilbakeføring av revalueringstransaksjoner, om nødvendig."
+description: 'Dette emnet gir en oversikt over følgende handlinger for prosessen for revaluering av utenlandsk valuta i økonomimodulen: oppsett, kjøring av prosessen, beregning for prosessen, og tilbakeføring av revalueringstransaksjoner, om nødvendig.'
 author: kweekley
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CurrencyLedgerGainLossAccount
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: bb04c5a9e7db1a6c6a8d8c7126bfa80208d1fd53
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: f967854e9a39c7b2d76559744bbc1e16a53d7f6a
-ms.contentlocale: nb-no
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "315550"
 ---
-
 # <a name="foreign-currency-revaluation-for-general-ledger"></a>Revaluering av utenlandsk valuta for finans
 
 [!include [banner](../includes/banner.md)]
@@ -116,7 +115,6 @@ Følgende regnskappost opprettes.
 Hvis du vil tilbakeføre revalueringstransaksjonen, velger du knappen **Tilbakefør transaksjon** på siden **Revaluering av utenlandsk valuta**. Det opprettes en ny historisk post for revaluering av utenlandsk valuta for å beholde det historiske revisjonssporet for når revalueringen skjedde eller ble tilbakeført. 
 
 Du kan tilbakestille resultatene av revalueringen utenfor datorekkefølgen, men du må kanskje også tilbakeføre en mer oppdatert revaluering for å sikre riktig saldo for hver revaluerte hovedkonto. Tilbakeføringene kan oppstå utenfor datorekkefølgen fordi det finnes ingen måte å kontrollere hvilke hovedkontoer som revalueres og frekvensen for når de revalueres. En organisasjon kan for eksempel velge å revaluere de viktigste kontantkontoene kvartalvis, men alle andre hovedkontoer månedlig.
-
 
 
 

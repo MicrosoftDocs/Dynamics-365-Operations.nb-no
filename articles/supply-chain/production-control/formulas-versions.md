@@ -1,32 +1,31 @@
 ---
 title: Formler og formelversjoner
-description: "Dette emnet gir informasjon om formler og formelversjoner. En formel definerer materialer, ingredienser og utfall av en bestemt prosess i prosessproduksjon. Formler brukes til å planlegge og produsere produkter i prosessproduksjon."
+description: Dette emnet gir informasjon om formler og formelversjoner. En formel definerer materialer, ingredienser og utfall av en bestemt prosess i prosessproduksjon. Formler brukes til å planlegge og produsere produkter i prosessproduksjon.
 author: cvocph
 manager: AnnBe
 ms.date: 09/12/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: PlanActivity, ReqSupplyDemandSchedule
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: bbffc298ff5d2442092f8f0c987b7e79a7934a84
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 4475695b1a00213ab7e3b5060fd38cc71883d2bd
-ms.contentlocale: nb-no
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "350119"
 ---
-
 # <a name="formulas-and-formula-versions"></a>Formler og formelversjoner
 
 [!include [banner](../includes/banner.md)]
@@ -72,4 +71,3 @@ Skalerbar-funksjone er kun tilgjengelig hvis alle elementkomponentene i formelen
 
 ## <a name="use-step-consumption"></a>Bruk Trinnvist forbruk
 Trinnvist forbruk eliminerer kravet om at du må legge inn en mengde i kategorien **Formellinje** for en ingrediens. I stedet er Trinnvist forbruk konfiguert så den har **Fra serier**-verdi og en **Mengde**-verdi. Informasjonen fra Trinnvist forbruk per serieoppføring som tilfredstiller mengden for batchordren velges. Trinnvist forbruk er nyttig når forbruksrates ikke er lineær med hensyn til batchordrestørrelse og øker kun kravet når en bestemt mengdegrense er oppfylt. For å aktivere denne funksjonen for en ny formel, se under **Forbruksberegning**-gruppen, endre formelinnstillingen for gjeldende ingrediens fra **Standard** til **Trinnvis**. Du spesifiserer forbruksmetoden i kategorien **Oppsett** i siden **Formellinje**.
-

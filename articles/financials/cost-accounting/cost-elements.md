@@ -1,13 +1,13 @@
 ---
 title: Kostnadselementdimensjoner
-description: "Som en av de viktige søylene i kostnadsregnskap, brukes kostnadelementdimensjoner til å kategorisere og spore hvor kostnadene flyter til."
+description: Som en av de viktige søylene i kostnadsregnskap, brukes kostnadelementdimensjoner til å kategorisere og spore hvor kostnadene flyter til.
 author: AndersGirke
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CAMDimension
 audience: Application User
 ms.reviewer: josaw
@@ -18,14 +18,13 @@ ms.search.region: global
 ms.author: shylaw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
+ms.openlocfilehash: c703d1a9ae36d4342dc652d70dd82379187057c1
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 0f47c75b6f6f4533501070f78698de82cf70f9bd
-ms.contentlocale: nb-no
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "366081"
 ---
-
 # <a name="cost-element-dimensions"></a>Kostnadselementdimensjoner
 
 [!include [banner](../includes/banner.md)]
@@ -74,7 +73,6 @@ For å forenkle oppsettet av medlemmene av kostnadselementdimensjoner i kostnads
 
 ## <a name="implementation-considerations"></a>Informasjon om implementering
 Når kostnadselementer representerer det laveste nivået av kostnadsdetaljer, må du kontrollere at alle kostnadselementer som er nødvendig for å lage lederrapporteringen er tatt med når du implementerer kostnadselementstrukturen. Det kan være vanskelig å finne et passende antall kostnadselementer for kostnadskontroll. Når du har tusenvis av kostnadselementer, kan det være vanskelig å styre hvert kostnadselement. Du kan eventuelt gruppere kostnadselementer og styre kostnadskontroll på et aggregert nivå.
-
 
 
 

@@ -1,13 +1,13 @@
 ---
 title: Visningsinnstillinger for lagermobilenheten
-description: "Denne artikkelen beskriver hvordan du definerer utseendet på en mobilenhetsvisning og tilordning av hurtigtaster til kontroller, for eksempel knapper."
+description: Denne artikkelen beskriver hvordan du definerer utseendet på en mobilenhetsvisning og tilordning av hurtigtaster til kontroller, for eksempel knapper.
 author: perlynne
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: WHSRFColor, WHSRFColorPicker, WHSWorkUserDisplaySettings
 audience: Application User
 ms.reviewer: josaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 16f332da00d2230ecb4cebc526b6456314564e55
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: a1413337888c8e2da95e33ebee6528f228ad3972
-ms.contentlocale: nb-no
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "328039"
 ---
-
 # <a name="warehouse-mobile-device-display-settings"></a>Visningsinnstillinger for lagermobilenheten
 
 [!include [banner](../includes/banner.md)]
@@ -101,7 +100,6 @@ Du kan angi mer enn ett uttrykk i den samme filen. Hvert uttrykk må være på e
 --------
 
 [Konfigurere mobilenheter for lagerarbeid](configure-mobile-devices-warehouse.md)
-
 
 
 

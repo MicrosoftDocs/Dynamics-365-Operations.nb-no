@@ -1,13 +1,13 @@
 ---
-title: "Åpne enhetsdata i Excel og oppdatere dataene ved hjelp av Excel-tillegget"
-description: "Dette emnet forklarer hvordan du kan åpne enhetsdata i Microsoft Excel, og deretter vise, oppdatere og redigere dataene ved hjelp av Microsoft Dynamics Office-tillegget for Excel."
+title: Åpne enhetsdata i Excel og oppdatere dataene ved hjelp av Excel-tillegget
+description: Dette emnet forklarer hvordan du kan åpne enhetsdata i Microsoft Excel, og deretter vise, oppdatere og redigere dataene ved hjelp av Microsoft Dynamics-tillegget for Excel.
 author: ChrisGarty
 manager: AnnBe
 ms.date: 04/11/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: sericks
 ms.search.scope: Core, Operations
@@ -17,26 +17,25 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
 ms.openlocfilehash: 01474a82e860c6f51b316cb683cd44fb9bf2a6bc
-ms.contentlocale: nb-no
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "340643"
 ---
-
 # <a name="open-entity-data-in-excel-and-update-it-by-using-the-excel-add-in"></a>Åpne enhetsdata i Excel og oppdatere dataene ved hjelp av Excel-tillegget
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet forklarer hvordan du kan åpne enhetsdata i Microsoft Excel, og deretter vise, oppdatere og redigere dataene ved hjelp av Microsoft Dynamics Office-tillegget for Excel. Hvis du vil åpne enhetsdata, kan du starte fra Excel eller Microsoft Dynamics 365 for Finance and Operations.
+Dette emnet forklarer hvordan du kan åpne enhetsdata i Microsoft Excel, og deretter vise, oppdatere og redigere dataene ved hjelp av Microsoft Dynamics-tillegget for Excel. Hvis du vil åpne enhetsdataene, kan du starte fra enten Excel eller Microsoft Dynamics 365 for Finance and Operations.
 
 Ved å åpne enhetsdata i Excel, kan du raskt og enkelt vise, oppdatere og redigere dataene ved hjelp Excel-tillegget. Dette tillegget krever Microsoft Excel 2016.
 
 > [!NOTE]
-> Hvis Microsoft Azure Active Directory-leieren (AD Azure) er konfigurert til å bruke Active Directory Federation Services (AD FS), må du kontrollere at oppdateringen for Office fra mai 2016 er installert, slik at Excel-tillegg kan logge deg på på riktig måte.
+> Hvis Microsoft Azure Active Directory-leieren (Azure AD) er konfigurert til å bruke Active Directory Federation Services (AD FS), må du kontrollere at oppdateringen for Office fra mai 2016 er installert, slik at Excel-tillegg kan logge deg på på riktig måte.
 
-Hvis du vil vite mer om hvordan du bruker tillegget for Excel, kan du se den korte videoen om [oppretting av en Excel-mal for hode- og linjemønstre i Dynamics 365 for Finance and Operations](https://youtu.be/RTicLb-6dbI).
+Hvis du vil vite mer om hvordan du bruker tillegget for Excel, kan du se den korte videoen [Opprette en Excel-mal for hode- og linjemønstre i Dynamics 365 for Finance and Operations](https://youtu.be/RTicLb-6dbI).
 
 ## <a name="open-entity-data-in-excel-when-you-start-from-finance-and-operations"></a>Åpne enhetsdata i Excel når du starter fra Finance and Operations
 1. Velg **Åpne i Microsoft Office** på en side i Finance and Operations.
@@ -46,13 +45,13 @@ Hvis du vil vite mer om hvordan du bruker tillegget for Excel, kan du se den kor
 2. Velg et **Åpne i Excel**-alternativ, og åpne arbeidsboken som genereres. Denne arbeidsboken har bindingsinformasjonen for enheten, en peker til miljøet og en peker til Excel-tillegget.
 3. I Excel velger du **Aktivere redigering** for å aktivere kjøring av Excel-tillegget. Excel-tillegg kjøres i en rute til høyre i Excel-vinduet.
 4. Hvis du kjører Excel-tillegget for første gang, velger du **Klarer tillegget**.
-5. Hvis du blir bedt om å logge på, velger du **Logg på**, og deretter logger du på ved å bruke samme legitimasjon som du brukte til å logge på Finance and Operations. Excel-tillegget bruker en tidligere påloggingskontekst fra Internet Explorer, og logger deg automatisk på, hvis det er mulig. Du må derfor kontrollere brukernavnet i øverst til høyre i Excel-tillegget.
+5. Hvis du blir bedt om å logge på, velger du **Logg på**, og deretter logger du på ved å bruke samme legitimasjon som du brukte til å logge på Finance and Operations. Excel-tillegget bruker en tidligere påloggingskontekst fra Internet Explorer og logger deg automatisk på, hvis det er mulig. Du må derfor kontrollere brukernavnet i øverst til høyre i Excel-tillegget.
 
 Excel-tillegg leser automatisk dataene for enheten du valgte. Legg merke til at det ikke vises data i arbeidsboken før Excel-tillegget leser dem inn.
 
 ## <a name="open-entity-data-in-excel-when-you-start-from-excel"></a>Åpne enhetsdata i Excel når du starter fra Excel
 1. I Excel, i kategorien **Sett inn** i **Tillegg**-gruppen, velger du **Butikk** for å åpne Office Store.
-2. Søk etter nøkkelordet **Dynamics** i Office Store, og velger deretter **Legg til** ved siden av **Microsoft Dynamics Office-tillegg** (Excel-tillegget).
+2. Søk etter nøkkelordet **Dynamics** i Office Store, og velg deretter **Legg til** ved siden av **Microsoft Dynamics Office-tillegg** (Excel-tillegget).
 3. Hvis du kjører Excel-tillegget for første gang, velger du **Klarer tillegget** for å aktivere kjøring av Excel-tillegget. Excel-tillegg kjøres i en rute til høyre i Excel-vinduet.
 4. Velg **Legg til serverinformasjon** for å åpne **Alternativer**-ruten.
 5. I nettleseren kopierer du nettadressen fra målforekomsten av Finance and Operations, limer den inn i **Server-URL**-feltet, og sletter deretter alt etter vertsnavnet. Den resulterende nettadressen skal bare inneholde vertsnavnet.
@@ -125,4 +124,3 @@ Det finnes enkelte problemer som kan løses ved hjelp av noen enkle trinn.
 - **Laste inn appleter-knappen vises** – Hvis Excel-tillegget har en **Laste inn appleter**-knapp etter pålogging, er du sannsynligvis ikke logget på som riktig bruker. Hvis du vil løse dette problemet, kontrollerer du at riktig brukernavn vises øverst til høyre i Excel-tillegget. Hvis feil brukernavn vises, velger du det, logger av og på igjen.
 - **Du får feilmeldingen "Forbudt"** – Hvis du får feilmeldingen "Forbudt" når Excel-tillegget laster inn metadata, har kontoen som er logget Excel-tillegget, ikke tillatelse til å bruke tjenesten, forekomsten eller databasen. Hvis du vil løse dette problemet, kontrollerer du at riktig brukernavn vises øverst til høyre i Excel-tillegget. Hvis feil brukernavn vises, velger du det, logger av og på igjen.
 - **En tom nettside vises over Excel** – Hvis det åpnes en tom nettside i løpet av påloggingsprosessen, krever kontoen AD FS, men versjonen av Excel som kjører Excel-tillegget, er ikke ny nok til å laste inn dialogboksen for pålogging. Hvis du vil løse dette problemet, oppdaterer du Excel-versjonen du bruker. Hvis du vil oppdatere versjonen av Excel når du er i en virksomhet som er på den utsatte kanalen, kan du bruke [distribusjonsverktøyet for Office](https://technet.microsoft.com/library/jj219422.aspx) til [flytte fra den utsatte kanalen til gjeldende kanal](https://technet.microsoft.com/library/mt455210.aspx).
-

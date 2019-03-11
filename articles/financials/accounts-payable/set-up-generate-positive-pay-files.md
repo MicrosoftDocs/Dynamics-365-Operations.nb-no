@@ -5,9 +5,9 @@ author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 08/22/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: BankPositivePayFormat
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
+ms.openlocfilehash: 0a15669c477223b922d8892d675eaa1df2563714
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 41d7b64f8414385629acef071c47a654d56005bd
-ms.contentlocale: nb-no
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "346094"
 ---
-
 # <a name="set-up-and-generate-positive-pay-files"></a>Definere og generere positive betalingsfiler
 
 [!include [banner](../includes/banner.md)]
@@ -160,7 +159,6 @@ Når kontrollene som er oppført i en positiv lønnsfilen er betalt, får du et 
 
 ## <a name="recall-a-positive-pay-file"></a>Tilbakekalle en positiv betalingsfil
 Hvis du må endre en positiv betalingsfil, kan du tilbakekalle den. På siden **Sammendrag av positiv betalingsfil** velger du en positiv betalingsfil som har statusen **Opprettet**, og deretter velger du handlingen **Tilbakekall**. For hver kontroll i den positive betalingsfilen tilbakestilles feltet som angir om kontrollen er inkludert i en positiv betalingsfil. Du kan deretter opprette en ny positiv betalingsfil med kontrollen som ble tilbakekalt.
-
 
 
 

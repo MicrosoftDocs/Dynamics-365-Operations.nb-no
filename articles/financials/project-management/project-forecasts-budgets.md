@@ -1,13 +1,13 @@
 ---
 title: Prosjektprognoser og budsjetter
-description: "Du kan styre og kontrollere prosjektprognoser og -budsjetter i Microsoft Dynamics 365 for Finance and Operations på to måter: prosjektprognoser og prosjektbudsjetter."
+description: Med Microsoft Dynamics 365 for Finance and Operations kan du styre og kontrollere prosjektene med prosjektprognoser og prosjektbudsjetter.
 author: KimANelson
 manager: AnnBe
 ms.date: 10/25/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ForecastModel, ProjYearEndProcess
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: knelson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 530a2717427c540d80509c4862e6fb8ea7c5694a
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: e31a013d6bf33b92b02bd9645a19380ba07f4a05
-ms.contentlocale: nb-no
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "310398"
 ---
-
 # <a name="project-forecasts-and-budgets"></a>Prosjektprognoser og budsjetter
 
 [!include [banner](../includes/banner.md)]
@@ -80,7 +79,6 @@ Prosjektbudsjetter knyttes automatisk til to prognosemodeller, én for opprinnel
 Prognosemodeller har et enkeltlagshierarki. Dette betyr at én prosjektprognose må være tilknyttet én prognosemodell.
 
 Hvis du bruker prosjektprognoser, kan du identifisere modeller som undermodeller. Du kan deretter opprette prognoser etter avdeling, tidsperiode eller område. Du kan for eksempel opprette en prognosemodell for et år og deretter opprette undermodeller for de regionale prognosene for Nordøst, Sørøst, Nordvest og Sørvest som regionale kontorer sender. Ved å velge forskjellige alternativer i de tilgjengelige rapportene kan du vise informasjon etter samlet prognose eller etter undermodell.
-
 
 
 

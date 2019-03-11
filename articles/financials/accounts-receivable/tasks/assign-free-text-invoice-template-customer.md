@@ -1,13 +1,13 @@
---- 
+---
 title: Tilordne mal for fritekstfaktura til en kunde
 description: Denne oppgaven beskriver hvordan du tilordner en mal for fritekstfaktura til en kunde.
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CustTable, CustRecurrenceInvoice
 audience: Application User
 ms.reviewer: twheeloc
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: 317b3bd4c1f395987ef3dbbd268c40be5c688320
-ms.contentlocale: nb-no
-ms.lasthandoff: 10/16/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "318931"
 ---
 # <a name="assign-free-text-invoice-template-to-a-customer"></a>Tilordne mal for fritekstfaktura til en kunde
 
@@ -48,5 +48,4 @@ Denne oppgaven beskriver hvordan du tilordner en mal for fritekstfaktura til en 
 10. Velg mønsteret for regelmessighet.
     * Daglig – Velg dette alternativet og angi antall dager i feltet Per. Hvis du for eksempel angir 15, genereres en faktura hver 15. dag for denne kunden.  Ukentlig – Velg dette alternativet og angi antall uker i feltet Per. Hvis du for eksempel angir 2, genereres en faktura annenhver uke for denne kunden.  Månedlig – Velg dette alternativet og angi antall måneder i feltet Per. Hvis du for eksempel angir 6, genereres en faktura hver sjette måned for denne kunden.  Årlig – Velg dette alternativet og angi antall år i feltet Per. Hvis du for eksempel angir 2, genereres en faktura annethvert år for denne kunden.  
 11. Angi et tall i feltet Per.
-
 

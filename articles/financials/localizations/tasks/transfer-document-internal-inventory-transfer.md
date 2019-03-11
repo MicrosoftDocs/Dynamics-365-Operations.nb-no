@@ -1,13 +1,13 @@
---- 
-title: "Generere et overføringsdokument for en intern lageroverføring"
-description: "Denne fremgangsmåten viser hvordan du oppretter overføringsdokumenter for flytting av varer i et selskap."
+---
+title: Generere et overføringsdokument for en intern lageroverføring
+description: Denne fremgangsmåten viser hvordan du oppretter overføringsdokumenter for flytting av varer i et selskap.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: InventTransferOrders, InventLocationIdLookup, TransportationDocument, HcmWorkerLookUp, SrsReportViewerForm, InventTransferParmShip
 audience: Application User
 ms.reviewer: shylaw
@@ -16,18 +16,18 @@ ms.search.region: Global
 ms.author: epopov
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 4b9ef0026129d958b4214bb6e235c288de023d10
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 30e5f6ad184720d0e119f86fb703ed7211b27fab
-ms.contentlocale: nb-no
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "321369"
 ---
 # <a name="generate-a-transfer-document-for-an-internal-inventory-transfer"></a>Generere et overføringsdokument for en intern lageroverføring
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-Denne fremgangsmåten viser hvordan du oppretter overføringsdokumenter for flytting av varer i et selskap. Denne fremgangsmåten er bare tilgjengelig for juridiske enheter med hovedadresse i Litauen. Prosedyren ble opprettet med demonstrasjonsdatafirmaet DEMF med en primæradresse i Litauen. Før du kan fullføre denne prosedyren, må du fullføre fremgangsmåten Konfigurere overføringsdokumenter for flytting av varer i et selskap. Denne prosedyren er ment for lagerregnskapsførere. Denne fremgangsmåten gjelder for en funksjon som ble lagt til i Dynamics 365 for Operations, versjon 1611.
+Denne fremgangsmåten viser hvordan du oppretter overføringsdokumenter for flytting av varer i et selskap. Denne fremgangsmåten er bare tilgjengelig for juridiske enheter med hovedadresse i Litauen. Prosedyren ble opprettet med demonstrasjonsdatafirmaet DEMF med en primæradresse i Litauen. Før du kan fullføre denne prosedyren, må du fullføre fremgangsmåten Konfigurere overføringsdokumenter for flytting av varer i et selskap. Denne prosedyren er ment for lagerregnskapsførere. Denne fremgangsmåten gjelder for en funksjon som ble lagt til i Dynamics 365 for Operations versjon 1611.
 
 
 ## <a name="create-a-transfer-order"></a>Opprett overføringsordre
@@ -73,5 +73,4 @@ Denne fremgangsmåten viser hvordan du oppretter overføringsdokumenter for flyt
 9. Klikk Send i handlingsruten.
 10. Klikk Følgeseddel.
 11. Klikk OK.
-
 

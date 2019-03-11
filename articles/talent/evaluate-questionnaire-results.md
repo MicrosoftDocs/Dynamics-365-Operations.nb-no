@@ -1,13 +1,13 @@
 ---
-title: "Vise og evaluere resultatene i spørreskjemaer"
-description: "Dette emnet forklarer hvordan du kan vise og evaluere resultatene av spørreskjemaer som respondenter fyller ut."
+title: Vise og evaluere resultatene i spørreskjemaer
+description: Dette emnet forklarer hvordan du kan vise og evaluere resultatene av spørreskjemaer som respondenter fyller ut.
 author: kherr75
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: KMCollection, KMKnowledgeCollectorCollection, KMKnowledgeCollectorUserResults
 audience: Application User
 ms.reviewer: rschloma
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: kherr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 82f039b305503c604d64610f39838fa86a8eb08a
 ms.openlocfilehash: 9fd4af5589cfab2a92c913639f1192029eb7c592
-ms.contentlocale: nb-no
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "305695"
 ---
-
 # <a name="view-and-evaluate-the-results-of-questionnaires"></a>Vise og evaluere resultatene i spørreskjemaer
 
 [!include [banner](includes/banner.md)]
@@ -81,5 +80,4 @@ Innstillingene du definerer, lagres og kan brukes til å beregne resultatene på
 [Bruke spørreskjemaer](questionnaires.md)
 
 [Distribuere og fylle ut spørreskjemaer](distribute-questionnaires.md)
-
 

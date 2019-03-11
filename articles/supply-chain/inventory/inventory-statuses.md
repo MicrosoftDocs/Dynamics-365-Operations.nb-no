@@ -1,13 +1,13 @@
 ---
 title: Beholdningsstatuser
-description: "Denne artikkelen beskriver hvordan du kan bruke lagerstatusene til å kategorisere og holde orden på lager."
+description: Denne artikkelen beskriver hvordan du kan bruke lagerstatusene til å kategorisere og holde orden på lager.
 author: MarkusFogelberg
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: EcoResStorageDimensionGroup, WHSInventStatus
 audience: Application User
 ms.reviewer: josaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: be5e512dcb23ce525439f11b7674cc35d7306159
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 5caa5620db428f18d451fdfe2aeae9e2a76a24f8
-ms.contentlocale: nb-no
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "322795"
 ---
-
 # <a name="inventory-statuses"></a>Beholdningsstatuser
 
 [!include [banner](../includes/banner.md)]
@@ -50,4 +49,3 @@ Når det gjelder utgående arbeid, bruker du varer som har en tilgjengelig lager
 Når du har definert beholdningsstatuser, kan du angi standard beholdningsstatus for et område, en vare og et lager. Du kan også angi en standardstatus for salg, overføring og bestillinger. Standardstatus for salgsordrer og utgående overføringsordre kan ikke ha alternativet **Lagerblokkering** satt til **Ja**. Lagerstatusen som arves fra standardinnstillingene for område, lager, vare, bestilling, overføringsordre eller salgsordre, kan endres ved hjelp av den mobile enheten, eller på bestillings-, salgsordre- eller overføringsordrelinjen.
 
 Hvis du planlegger dekning for varer som har en tilgjengelig lagerstatus, velger du alternativet **Dekningsplanlegg etter dimensjon** for en lagringsdimensjon på siden **Lagringsdimensjonsgrupper**. Når du åpner veiviseren **Varedekning**, vises varer som har en tilgjengelig status, på **Status**-siden. Hvis du vil opprette dekningsinnstillinger for disse varene, velger du IDen for lagerstatus for de tilgjengelige lagerstatusene. Basert på dekningsinnstillingene kan du beregne varebehovene og forhåndsberegne forsyning og behov for tilgjengelige varer under hovedplanlegging. Du kan ikke opprette et oppsett av varedekning som har en blokkert lagerstatus. Bruk i stedet **Varedekning**-siden til å opprette eller endre varedekningsparameterne.
-

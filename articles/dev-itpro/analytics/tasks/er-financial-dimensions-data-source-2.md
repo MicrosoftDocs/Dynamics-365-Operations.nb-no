@@ -1,13 +1,13 @@
---- 
+---
 title: ER Bruke finansdimensjoner som en datakilde (del 2 - Modelltilordning)
-description: "De følgende trinnene forklarer hvordan en bruker som er tilordnet rollen som systemansvarlig eller utvikler av elektronisk rapportering kan konfigurere en elektronisk rapportering (ER)-modell til å bruke finansdimensjoner som datakilde for ER-rapporter."
+description: De følgende trinnene forklarer hvordan en bruker som er tilordnet rollen som systemansvarlig eller utvikler av elektronisk rapportering kan konfigurere en elektronisk rapportering (ER)-modell til å bruke finansdimensjoner som datakilde for ER-rapporter.
 author: NickSelin
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ERSolutionTable, ERDataModelDesigner, ERModelMappingTable, ERModelMappingDesigner, ERExpressionDesignerFormula
 audience: Application User
 ms.reviewer: kfend
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: 92efd6a0b36471286c292a80542b81cd14a8eff3
-ms.contentlocale: nb-no
-ms.lasthandoff: 10/16/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "319598"
 ---
 # <a name="er-use-financial-dimensions-as-a-data-source-part-2-model-mapping"></a>ER Bruke finansdimensjoner som en datakilde (del 2: Modelltilordning)
 
@@ -43,7 +43,7 @@ For å fullføre disse trinnene, må du først fullføre trinnene i prosedyren "
 8. Skriv inn Dimensjonsdatatilordning i Beskrivelse-feltet.
 9. Klikk Lagre.
 10. Klikk Utforming.
-11. I treet velger du Dynamics 365 for Operations\Tabell.
+11. Velg Dynamics 365 for Operations\Tabell i treet.
 12. Klikk Legg til rot.
 13. I Navn-feltet skriver du inn Firma.
 14. Skriv inn CompanyInfo i Tabell-feltet.
@@ -59,7 +59,7 @@ For å fullføre disse trinnene, må du først fullføre trinnene i prosedyren "
 21. Velg Ja i feltet Be om hovedkonto.
     * Sett Be om hovedkonto til Ja for å tillate brukere å velge hovedkontoen som en del av listen med dimensjoner.   Hvis satt til Nei, blir ikke hovedkontoen tatt med i listen over dimensjoner, og alternativet Er obligatorisk for hovedkonto aktiveres. Hvis Er obligatorisk for hovedkonto settes til Ja, inkluderes hovedkontoen i listen over dimensjonere uavhengig av brukerens valg.  
 22. Klikk OK.
-23. I treet velger du Dynamics 365 for Operations\Tabellposter.
+23. Velg Dynamics 365 for Operations\Tabellposter i treet.
 24. Klikk Legg til rot.
 25. Skriv inn LedgerJournal i Navn-feltet.
 26. Velg Ja i feltet Be om spørring.
@@ -143,5 +143,4 @@ For å fullføre disse trinnene, må du først fullføre trinnene i prosedyren "
 3. Klikk Endre status.
 4. Klikk Fullført.
 5. Klikk OK.
-
 

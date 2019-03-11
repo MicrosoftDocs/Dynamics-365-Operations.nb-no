@@ -1,13 +1,13 @@
 ---
 title: Stillingsprognose
-description: "Utgifter som er knyttet til arbeidere utgjør ofte en stor del av organisasjonens kostnader. Stillingsprognoser lar deg planlegge disse utgiftene og inkludere dem i planleggingen av budsjetter."
+description: Utgifter som er knyttet til arbeidere utgjør ofte en stor del av organisasjonens kostnader. Stillingsprognoser lar deg planlegge disse utgiftene og inkludere dem i planleggingen av budsjetter.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: HcmPositionForecast
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: bcd7363ba50f1c3a20d9823333df65eab9868d67
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: a44b3d2ee6e47e71103c7be04b731d4faa79c448
-ms.contentlocale: nb-no
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "356168"
 ---
-
 # <a name="position-forecasting"></a>Stillingsprognose
 
 [!include [banner](../includes/banner.md)]
@@ -216,7 +215,6 @@ For både genereringsprosessen og valgprosessen bestemmer startdatoen for budsje
 Budsjettplanlinjer viser kilden til budsjettbeløpene (prognosestillingsnummeret), men er ikke koblet. Derfor vises ikke endringer i prognosestillingen på budsjettplanlinjen, og endringer i budsjettplanlinjen vises i prognosestillingen. Hvis du endrer en prognosestilling og vil at oppdateringene skal inkluderes i en budsjettplan, må du overføre prognosestillingen til planen på nytt. Husk imidlertid at denne prosessen fjerner alle linjer der denne prognosestillingen er tilordnet. Eventuelle endringer du har gjort i disse linjene fjernes derfor. 
 
 For å se hvilke budsjettplaner en prognosestilling er inkludert i kan du generere rapporten **Prognosestillinger etter budsjettplan**. Alternativt kan du på prognosestillingen åpne faktaboksen **Tilknyttede budsjettplaner** for å vise planene.
-
 
 
 

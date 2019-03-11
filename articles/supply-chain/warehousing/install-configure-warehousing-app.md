@@ -1,13 +1,13 @@
 ---
-title: Installere og konfigurere Microsoft Dynamics 365 for Finance and Operations &#8211;
-description: Dette emnet beskriver hvordan du installerer og konfigurerer Microsoft Dynamics 365 for Finance and Operations - Warehousing.
+title: Installere og konfigurere Microsoft Dynamics 365 for Finance and Operations – lager
+description: Dette emnet beskriver hvordan du installerer og konfigurerer Microsoft Dynamics 365 for Finance and Operations – lager.
 author: MarkusFogelberg
 manager: AnnBe
 ms.date: 11/12/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: SysAADClientTable, WHSMobileAppField, WHSMobileAppFieldPriority, WHSRFMenu, WHSRFMenuItem, WHSWorker
 audience: Application User, IT Pro
 ms.reviewer: josaw
@@ -19,15 +19,14 @@ ms.search.industry: Manufacturing
 ms.author: mafoge
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
+ms.openlocfilehash: f5e99351d79cb5898c6d5565d3d3197a8fe860df
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 0967b10c2037c24c044f38c49b1b998f6771c66b
-ms.openlocfilehash: a1f3cb65e370154e8f3f94780ffb5cab223c85f8
-ms.contentlocale: nb-no
-ms.lasthandoff: 12/04/2018
-
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "316125"
 ---
-
-# <a name="install-and-configure-microsoft-dynamics-365-for-finance-and-operations-8211-warehousing"></a>Installere og konfigurere Microsoft Dynamics 365 for Finance and Operations &#8211;
+# <a name="install-and-configure-microsoft-dynamics-365-for-finance-and-operations-8211-warehousing"></a>Installere og konfigurere Microsoft Dynamics 365 for Finance and Operations – lager
 
 [!include [banner](../includes/banner.md)]
 
@@ -36,7 +35,7 @@ ms.lasthandoff: 12/04/2018
 > Dette emnet beskriver hvordan du konfigurerer lager for skydistribusjoner. Hvis du leter etter hvordan du konfigurerer lager for lokale distribusjoner, kan du se [Lager for lokale distribusjoner](../../dev-itpro/deployment/warehousing-for-on-premise-deployments.md).
 
 
-Dette emnet beskriver hvordan du installerer og konfigurerer Microsoft Dynamics 365 for Finance and Operations - Warehousing.
+Dette emnet beskriver hvordan du installerer og konfigurerer Microsoft Dynamics 365 for Finance and Operations – lager.
 
 Finance and Operations - Warehousing er et program som er tilgjengelig på Google Play-butikken og Windows Store. Denne appen tilbys for den gjeldende versjonen av Finance and Operations som en frittstående komponent, som betyr selvdistribuering på enheter som brukes til lageroppgaver. For å bruke appen i Finance and Operations-miljøet, må du laste ned appen på hver enhet og konfigurere den til å koble til Finance and Operations-miljøet. Dette emnet beskriver hvordan du installerer appen på enhetene. Det forklarer også hvordan du konfigurerer appen til å koble til Finance and Operations-miljøet.
 
@@ -47,17 +46,19 @@ Appen er tilgjengelig på Android- og Windows-operativsystemer. For å bruke den
 |-----------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Android                     | 4.4, 5.0, 6.0, 7.0, 8.0                                                                                                                                                     |
 | Windows (UWP)               | Windows 10 (alle versjoner)                                                                                                                                                   |
-| Finance and Operations | Microsoft Dynamics 365 for Operations, versjon 1611 <br>- eller - <br>Microsoft Dynamics AX versjon 7.0/7.0.1 og Microsoft Dynamics AX-plattformoppdatering med 2 hurtigreparasjonen KB 3210014 |
+| Finance and Operations | Microsoft Dynamics 365 for Operations, versjon 1611 <br>- eller - <br>Microsoft Dynamics AX versjon 7.0/7.0.1 og Microsoft Dynamics AX plattformoppdatering 2 med hurtigreparasjon KB 3210014 |
 
 ## <a name="get-the-app"></a>Få appen
 -   Windows (UWP)
      - [Finance and Operations - Lager i Windows Store](https://www.microsoft.com/store/apps/9p1bffd5tstm)
 -   Android
     - [Finance and Operations - Warehousing på Google Play-butikken](https://play.google.com/store/apps/details?id=com.Microsoft.Dynamics365forOperationsWarehousing)
-    - [Finance and Operations - Warehousing på Zebra App Gallery](https://appgallery.zebra.com/showcase/apps/146?type=showcase)
+
+> [!NOTE]
+> Zebra App Gallery har utgått, noe som betyr at appen Finance and Operations - Warehousing ikke lenger er tilgjengelig for nedlasting fra dette stedet.
 
 ## <a name="create-a-web-service-application-in-azure-active-directory"></a>Opprette et webtjenesteprogram i Azure Active Directory
-For at appen skal kunne kommunisere med en bestemt Finance and Operations-server, må du registrere et webtjenesteprogram i en Azure Active Directory for Finance and Operations-leietaker. Av sikkerhetsgrunner anbefaler vi at du oppretter et webtjenesteprogram for hver enhet du bruker. Hvis du vil opprette et webtjenesteprogram i Azure Active Directory (Azure AD), kan du gjøre følgende:
+For at appen skal kunne kommunisere med en bestemt Finance and Operations-server, må du registrere et webtjenesteprogram i en Azure Active Directory for Finance and Operations-leietaker. Av sikkerhetsgrunner anbefaler vi at du oppretter et webtjenesteprogram for hver enhet du bruker. Hvis du vil opprette et webtjenesteprogram i Azure Active Directory (Azure AD), følger du denne fremgangsmåten:
 
 1.  I en webleser kan du gå til <https://portal.azure.com>.
 2.  Skriv inn navnet og passordet for brukeren som har tilgang til Azure-abonnementet.
@@ -93,12 +94,12 @@ Du må konfigurere appen på enheten til å koble til Finance and Operations-ser
     + **Klient-ID for Azure Active Directory** - Klient-ID hentes i trinn 9 i "Opprette et webtjenesteprogram i Active Directory". 
     + **Klienthemmelighet for Azure Active Directory** - Klienthemmeligheten hentes i trinn 11 i "Opprette et webtjenesteprogram i Active Directory". 
     + **Azure Active Directory-ressurs** - Azure AD Directory-ressursen viser rot-URL-adressen for Finance and Operations. **Obs!** Ikke avslutt dette feltet med en skråstrek (/). 
-    + **Azure Active Directory-leietaker** - Azure AD Directory-leietakeren som brukes med Finance and Operations-serveren: `https://login.windows.net/your-AD-tenant-ID`. For eksempel: `https://login.windows.net/contosooperations.onmicrosoft.com.` 
+    + **Azure Active Directory-leietaker** - Azure AD Directory-leietakeren som brukes med Finance and Operations-serveren: .`https://login.windows.net/your-AD-tenant-ID` For eksempel: `https://login.windows.net/contosooperations.onmicrosoft.com.` 
     <br>**Obs!** Ikke avslutt dette feltet med en skråstrek (/). 
     + **Firma** - Angi den juridiske enheten i Finance and Operations du vil koble programmet til. <br>[![wh-12-app-tilkobling-innstillinger](./media/wh-12-app-connection-settings-169x300.png)](./media/wh-12-app-connection-settings.png)
 4.  Velg **Tilbake**-knappen øverst til venstre i programmet. Programmet vil nå koble til Finance and Operations-serveren, og påloggingsskjermbildet for lagermedarbeideren vises. <br>[![wh-13-pålogging-skjerm](./media/wh-13-log-in-screen-180x300.png)](./media/wh-13-log-in-screen.png)
 
-Du finner informasjon om hvordan du konfigurerer Dynamics 365 for Finance and Operations – Warehousing for å skanne strekkoder med en mobil enhet, se [Skanne strekkoder ved hjelp av et kamera i Dynamics 365 for Finance and Operations – Warehousing](scan-bar-codes-using-a-camera.md)
+Du finner informasjon om hvordan du konfigurerer Dynamics 365 for Finance and Operations – Warehousing for å skanne strekkoder ved hjelp av et kamera på en mobil enhet, under [Skanne strekkoder ved hjelp av et kamera i Dynamics 365 for Finance and Operations – Warehousing](scan-bar-codes-using-a-camera.md)
 
 ## <a name="remove-access-for-a-device"></a>Fjern tilgangen for en enhet
 Hvis en enhet går tapt eller settes på spill, må du fjerne tilgangen til Finance and Operations for enheten. Trinnene nedenfor beskriver den anbefalte prosessen for å fjerne tilgang.
@@ -111,4 +112,3 @@ Hvis en enhet går tapt eller settes på spill, må du fjerne tilgangen til Fina
 6.  Pass på at **klient-ID**-en for programmet er den samme som i trinn 2 i denne delen.
 7.  Klikk **Slett**-knappen i den øverste ruten.
 8.  Klikk **Ja** i bekreftelsesmeldingen.
-

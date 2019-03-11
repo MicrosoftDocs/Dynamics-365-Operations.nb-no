@@ -5,9 +5,9 @@ author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 08/22/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CustCollectionsActivitiesListPage
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 6b1dcd6ad0ca05a94409d5d23039ccefe53392e3
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: f35981396c782b530737adac8ad62d0ff4b0f77e
-ms.contentlocale: nb-no
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "351844"
 ---
-
 # <a name="set-up-credit-and-collections"></a>Definer kreditt og innkreving
 
 [!include [banner](../includes/banner.md)]
@@ -62,7 +61,7 @@ Definere journalnavn som brukes når transaksjoner behandles på siden **Innkrev
 Definer standard årsakskode som skal brukes når transaksjoner avskrives på siden **Innkrevinger**. Du kan endre koden i løpet av avskrivingsprosessen.
 
 ## <a name="set-up-a-folder-for-email-attachments-and-create-email-templates"></a>Definer en mappe for e-postvedlegg og opprett e-postmaler
-Hvis du skal sende e-postmeldinger fra siden **Innkrevinger** side som Microsoft Excel-vedlegg, kan du opprette valgfrie e-postmaler for disse meldingene.
+Hvis du skal sende e-postmeldinger fra siden **Innkrevinger** som har Microsoft Excel-vedlegg, kan du opprette valgfrie e-postmaler for disse meldingene.
 
 ## <a name="set-up-accounts-receivable-parameters-for-collections"></a>Definere kundeparametere for innkrevinger
 Definer kundeparametere som vises i fanen **Innkrevinger**.
@@ -100,5 +99,4 @@ Hvis du vil ha mer informasjon, se følgende emner:
  - [Behandle purrebrev](tasks/process-collection-letters.md)
 
  - [Gå gjennom innkrevingsinformasjon](tasks/review-collections-information.md)
-
 

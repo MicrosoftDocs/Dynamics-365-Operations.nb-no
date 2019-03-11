@@ -1,13 +1,13 @@
 ---
 title: Startside for anleggsmidler
-description: "Anleggsmidler er varer av verdi, for eksempel bygninger, kjøretøy, land og utstyr, som eies av en enkeltperson eller en organisasjon."
+description: Anleggsmidler er varer av verdi, for eksempel bygninger, kjøretøy, land og utstyr, som eies av en enkeltperson eller en organisasjon.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 08/31/2017
 ms.topic: index-page
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: AssetWorkspace
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 78c70ade5a1ca9794760e72fb94e0735848aae79
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
-ms.openlocfilehash: 3c49ff15a6ac5dddd64ded4a6e9c755504393346
-ms.contentlocale: nb-no
-ms.lasthandoff: 02/07/2018
-
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "302679"
 ---
-
 # <a name="fixed-assets-home-page"></a>Startside for anleggsmidler
 
 [!include [banner](../includes/banner.md)]
@@ -48,7 +47,7 @@ Gå til [Veikart for Microsoft Dynamics 365](https://roadmap.dynamics.com/) for 
 
 Du kan finne meninger, nyheter og annen informasjon om Anleggsmidler og andre løsninger i [Microsoft Dynamics 365-bloggen](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise).
 
-Det finnes mange innlegg om Anleggsmidler i [produktteambloggen for Microsoft Dynamics AX](https://blogs.msdn.microsoft.com/dax/). Selv om noen av disse innleggene ble skrevet for tidligere versjoner av Leverandører, vil de samme begrepene fortsatt kunne brukes, og fremgangsmåtene ligner også på den gjeldende versjonen.
+Det finnes mange innlegg om Anleggsmidler i [Microsoft Dynamics-produktteambloggen for AX](https://blogs.msdn.microsoft.com/dax/). Selv om noen av disse innleggene ble skrevet for tidligere versjoner av Leverandører, vil de samme begrepene fortsatt kunne brukes, og fremgangsmåtene ligner også på den gjeldende versjonen.
 
 [Microsoft Dynamics Operations Partner Community-bloggen](https://community.dynamics.com/partner/b/operationspartnercommunityblog) gir Microsoft Dynamics-partnere én ressurs der de kan finne ut mer om hva som er nytt og populært i MBS Operations.
 
@@ -58,7 +57,6 @@ Mer hjelp er tilgjengelig som oppgaveveiledninger i Finance and Operations. For 
 #### <a name="videos"></a>Videoer
 
 Se instruksjonsvideoene som nå er tilgjengelige på [Microsoft Dynamics 365 YouTube-kanalen](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ).
-
 
 
 

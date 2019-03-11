@@ -1,13 +1,13 @@
 ---
 title: Materialerstatning i produksjon
-description: "Dette emnet beskriver hvordan du kan erstatte materialer i løpet av produksjonsprosessen."
+description: Dette emnet beskriver hvordan du kan erstatte materialer i løpet av produksjonsprosessen.
 author: johanhoffmann
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ProdBOM
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 461b717acafb5ccf37acae23a1564069cea6828a
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: b3e70a6ad074911438ef45b6aac2523a4a9fccf8
-ms.contentlocale: nb-no
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "327625"
 ---
-
 # <a name="material-substitution-in-manufacturing"></a>Materialerstatning i produksjon
 
 [!include [banner](../includes/banner.md)]
@@ -47,7 +46,6 @@ Du kan erstatte materialer under planlegging bare når du bruker formler, ikke n
 
 ## <a name="substituting-material-during-production"></a>Erstatte materiale under produksjon
 Tenk deg følgende: en metallplate er nødvendig for en sveiseoperasjon. Under operasjonen informerer en lagermedarbeider maskinoperatøren om at platen ikke finnes på lager. Det er imidlertid besluttet at platen kan bli erstattet med en plate som er litt tykkere. På denne måten kan operasjonen fullføres. Materiale kan legges til i stykklisten for en åpen produksjonsordre. Hvis produksjonsordren har statusen **Startet**, blir brukere bedt om å beregne ordren på nytt når de legger til en ny vare i produksjonsstykklisten. Når materialet er lagt til, du kan opprette en ny plukkliste for den nye varen. Du trenger ikke legge til det nye materialet i produksjonsstykklisten. I stedet kan du legge den direkte til produksjonsplukklisten. Deretter, når plukklisten posteres, vil systemet legge til materialet i produksjonsstykklisten.
-
 
 
 

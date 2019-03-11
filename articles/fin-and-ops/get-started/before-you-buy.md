@@ -1,13 +1,13 @@
 ---
-title: "Før du kjøper"
-description: "Trinnvis veiledning som skal brukes når du vurderer å kjøpe Dynamics 365 for Finance and Operations."
+title: Før du kjøper
+description: Trinnvis veiledning som kan brukes når du vurderer å kjøpe Dynamics 365 for Finance and Operations.
 author: kfend
 manager: AnnBe
 ms.date: 01/04/2019
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: margoc
 ms.search.scope: Core, Operations
@@ -16,27 +16,26 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: AX 7.0.0, Operations
-ms.translationtype: HT
-ms.sourcegitcommit: 8166047a768c47219855c55a1008f3dd24cd5344
 ms.openlocfilehash: 7aed6895d526011e353eef7b85e4e2f096a25e5a
-ms.contentlocale: nb-no
-ms.lasthandoff: 01/04/2019
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "345473"
 ---
-
 # <a name="before-you-buy"></a>Før du kjøper
 
 [!include [banner](../includes/banner.md)]
 
-Har du ikke brukt Dynamics 365 for Finance and Operations tidligere? Vi har satt sammen trinnvis veiledning om du vurderer fremdeles Finance and Operations eller er klare til å gjøre et kjøp.
+Ny i Dynamics 365 for Finance and Operations? Vi har satt sammen trinnvis veiledning om du vurderer fremdeles Finance and Operations eller er klare til å gjøre et kjøp.
 
 ## <a name="step-one-try-out-finance-and-operations-free-for-30-days"></a>Trinn én: prøve ut Finance and Operations gratis i 30 dager
 
-Du kan prøve Dynamics 365 for Finance and Operations i 30 dager via en enkelt e-registrering. Prøveversjonen av Finance and Operations omfatter komme i gang oppgaveveiledninger som inneholder trinnvise instruksjoner som gir deg muligheten til å vise bestemte scenarier i bruk. Produktet er tilgjengelig til å utforske og øvelsesscenarier, men ikke kan tilpasses. Demodata er inkludert for å forenkle bruken av produktet og gjøre opplevelsen gir mer mening. En påminnelse e-post sendes 3 dager før utløpsdato for prøveversjon. Få informasjon her: [www.microsoft.com/dynamics365/operations](https://www.microsoft.com/dynamics365/operations).
+Du kan prøve Dynamics 365 for Finance and Operations i 30 dager via en enkel e-postregistrering. Prøveversjonen av Finance and Operations omfatter komme i gang oppgaveveiledninger som inneholder trinnvise instruksjoner som gir deg muligheten til å vise bestemte scenarier i bruk. Produktet er tilgjengelig til å utforske og øvelsesscenarier, men ikke kan tilpasses. Demodata er inkludert for å forenkle bruken av produktet og gjøre opplevelsen gir mer mening. En påminnelse e-post sendes 3 dager før utløpsdato for prøveversjon. Få informasjon her: [www.microsoft.com/dynamics365/operations](https://www.microsoft.com/dynamics365/operations).
 
 ## <a name="step-two-choose-a-deployment-option"></a>Trinn to: Velge et alternativ for distribusjon
 
-Du kan nå distribuere Microsoft Dynamics 365 for Finance and Operations i skyen eller lokalt. Skydistribusjon tilbyr en ERP-tjeneste som er fullt administrert av Microsoft, mens lokale installasjoner distribueres i kundens datasenter.
+Nå kan du distribuere Microsoft Dynamics 365 for Finance and Operations i skyen eller lokalt. Skydistribusjon tilbyr en ERP-tjeneste som er fullt administrert av Microsoft, mens lokale installasjoner distribueres i kundens datasenter.
 
 Følgende hensyn må tas når du velger lokal som distribusjonsalternativ:
 
@@ -54,7 +53,7 @@ For mer informasjon, se [Distribusjonsalternativer](../../dev-itpro/deployment/c
 
 Hvis du vil utforske alternativer for abonnement, kan du gå til [Dynamics 365](https://www.microsoft.com/dynamics365/pricing)-prisingsiden. Denne siden inneholder flere ulike planer organisasjonens behov.
 
-Det finnes mange måter å kjøpe et abonnement på Microsoft Dynamics 365 for Finance and Operations på:
+Det er mange måter å kjøpe et abonnement av Dynamics 365 for Finance and Operations på:
 
 - Kjøpe gjennom en partner, og bruke volumlisensiering (sky eller lokalt)
 - Kjøpe via en leverandør av skyløsninger (bare sky)
@@ -79,7 +78,7 @@ En Microsoft-leverandør av skyløsninger kan arbeide tett sammen med deg med å
 
 ### <a name="buy-through-a-dynamics-partner-on-premises"></a>Kjøpe gjennom en Dynamics-partner (lokalt)
 
-Du må arbeide med en partner til å kjøpe Finance and Operations lokalt. For mer informasjon, se [Kjøpe Dynamics 365 for Finance and Operations (lokalt)](purchase-on-premises.md)
+Du må arbeide med en partner til å kjøpe Finance and Operations lokalt. Du finner mer informasjon under [Kjøpe Dynamics 365 for Finance and Operations (lokal)](purchase-on-premises.md).
 
 ### <a name="choose-your-support-option"></a>Velge ditt støttealternativ
 
@@ -97,4 +96,3 @@ Microsoft FastTrack for Dynamics 365 er vår kundesuksesstjeneste utformet for �
 ## <a name="if-you-are-upgrading-from-dynamics-ax-2012-or-migrating-from-ax-2009"></a>Hvis du oppgraderer fra Dynamics AX 2012 eller migrerer fra AX 2009
 
 Hvis du er en kunde som oppgraderer fra Microsoft Dynamics AX 2012 eller migrerer fra Microsoft Dynamics AX 2009, kan du være kvalifisert for en lengre prøveversjon. Kontakt <daxcf@microsoft.com> for mer informasjon.
-

@@ -1,13 +1,13 @@
 ---
 title: Behandling av skift og kassaskuff
-description: "Dette emnet beskriver hvordan du definerer og bruker skift på salgssted for detaljhande."
+description: Dette emnet beskriver hvordan du definerer og bruker skift på salgssted for detaljhande.
 author: jblucher
 manager: AnnBe
 ms.date: 05/10/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 ms.search.form: RetailHardwareProfile, RetailTerminalTable
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
 ms.openlocfilehash: 7ad3c3fd17e88f364be12c122e2f5c155b7b9064
-ms.contentlocale: nb-no
-ms.lasthandoff: 01/04/2019
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "313020"
 ---
-
 # <a name="shift-and-cash-drawer-management"></a>Behandling av skift og kassaskuff
 
 [!include [banner](includes/banner.md)]
@@ -70,7 +69,7 @@ For delte skift som skal brukes i en butikk må kassaskuffen konfigureres som en
 
 ## <a name="shift-and-drawer-operations"></a>Skift og skuffoperasjoner
 
-Forskjellige operasjoner kan utføres for å endre statusen for et skift, eller for å øke eller redusere pengebeløpet i kassaskuffen. Dette avsnittet beskriver disse skiftoperasjonene for Micosoft Dynamics 365 for Retail Modern POS og Cloud POS.
+Forskjellige operasjoner kan utføres for å endre statusen for et skift, eller for å øke eller redusere pengebeløpet i kassaskuffen. Dette avsnittet beskriver disse skiftoperasjonene for Microsoft Dynamics 365 for Retail Modern POS og Cloud POS.
 
 ### <a name="open-shift"></a>Åpne skift
 
@@ -159,4 +158,3 @@ Gå til **Salgssted \> Kanaler \> Detaljhandelbutikker \> Alle detaljhandelbutik
 Dette oppsettet bidrar til at Back Office-utdrag inneholder de samme transaksjonene som skift på salgsstedet, og at dataene blir summert etter dette skiftet.
 
 Hvis du vil ha mer informasjon om utdrag og avslutingsmetoder, kan du se [Butikkonfigurasjoner for detaljhandelsutdrag](https://docs.microsoft.com/dynamics365/unified-operations/retail/tasks/store-configurations-retail-statements).
-

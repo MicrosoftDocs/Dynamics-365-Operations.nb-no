@@ -1,13 +1,13 @@
 ---
 title: Integrering av Microsoft Project-klient
-description: "Planlegging og vedlikehold av en prosjektplan kan være komplisert, slik at prosjektledere må bruke verktøy som hjelper dem med denne oppgaven. Integrasjon med Microsoft Project-klienten gir støtte for å åpne og behandle en arbeidsnedbrytningsstruktur for prosjekt."
+description: Planlegging og vedlikehold av en prosjektplan kan være komplisert, slik at prosjektledere må bruke verktøy som hjelper dem med denne oppgaven. Integrasjon med Microsoft Project-klienten gir støtte for å åpne og behandle en arbeidsnedbrytningsstruktur for prosjekt.
 author: KimANelson
 manager: AnnBe
 ms.date: 12/11/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ProjWbsTemplate
 audience: Application User
 ms.reviewer: shylaw
@@ -17,15 +17,14 @@ ms.assetid: b454ad57-2fd6-46c9-a77e-646de4153067
 ms.search.region: Global
 ms.author: knelson
 ms.search.validFrom: 2017-12-04
-ms.dyn365.ops.version: 7.3
+ms.dyn365.ops.version: 7.2999999999999998
+ms.openlocfilehash: 48feb0182c623714b2acffafc42016c0471ba6c1
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 4a3445417d5ae88e2ff3676962a82921a7ab475d
-ms.contentlocale: nb-no
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "317482"
 ---
-
 # <a name="microsoft-project-client-integration"></a>Integrering av Microsoft Project-klient
 
 [!include [banner](../includes/banner.md)]
@@ -33,10 +32,10 @@ ms.lasthandoff: 03/26/2018
 Planlegging og vedlikehold av en prosjektplan kan være komplisert, slik at prosjektledere må bruke verktøy som hjelper dem med denne oppgaven. Integrasjon med Microsoft Project-klienten gir støtte for å åpne og behandle en arbeidsnedbrytningsstruktur for prosjekt. Prosjektlederen kan publisere endringer tilbake til arbeidsnedbrytningsstrukturen for prosjekt i Finance and Operations.
 
 > [!NOTE]
-> Hvis du bruker juli-oppdateringen for Microsoft Dynamics 365 for Finance and Operations, må du installere KB 4054797 og 4055884.
+> Hvis du bruker Microsoft Dynamics 365 for Finance and Operations, må du installere KB 4054797 og 4055884.
 
 ## <a name="configure-the-microsoft-project-client-add-in"></a>Konfigurere Microsoft Project-klienttillegget
-For å aktivere integrasjonen med Microsoft Project-klienten, kreves det et Microsoft Dynamics 365-tillegg installert på brukerens Microsoft Project-programklient. Dette gjøres ved å åpne **Prosjektstyringsarbeidsområdet**.
+For å aktivere integrasjonen med Microsoft Project-klienten, må et Microsoft Dynamics 365-tillegg installeres på brukerens Microsoft Project-programklient. Dette gjøres ved å åpne **Prosjektstyringsarbeidsområdet**.
 
 •   Klikk på **Konfigurer prosjektklienttillegget** fra **Koblinger** > **Oppsett**-delen i arbeidsområdet.
 
@@ -48,7 +47,7 @@ Hvis et prosjekt i Finance and Operations allerede har opprettet en arbeidsnedbr
 > [!NOTE]
 > Hvis du bruker Internet Explorer som nettleser, må du klikke **Lagre** for å åpne manuelt fra plasseringen som filen er lastet ned til. Eller klikk **Lagre og åpne** for å åpne filen i Microsoft Project-klienten. Ikke endre navn på filnavnet når du lagrer.
 
-Før du gjør endringer i filen ved hjelp av Microsoft Project-klienten, må du sjekke den ut. Klikk **Sjekk ut** i **Microsoft Dynamics 365**-kategorien. Dette hindrer andre brukere i å redigere arbeidsnedbrytningsstrukturen innenfra Finance and Operations samtidig. For å publisere arbeidsnedbrytningsstrukturen når du har fullført alle endringer, klikker du på **Sjekk inn i** **Microsoft Dynamics 365**-kategorien.
+Før du gjør endringer i filen ved hjelp av Microsoft Project-klienten, må du sjekke den ut. Klikk **Sjekk ut** i **Microsoft Dynamics 365**-kategorien. Dette hindrer andre brukere i å redigere arbeidsnedbrytningsstrukturen innenfra Finance and Operations samtidig. For å publisere arbeidsnedbrytningsstrukturen når du har fullført alle endringer, klikker du på **Sjekk inn** i **Microsoft Dynamics 365**-kategorien.
 
 Hvis en prosjektgruppe allerede er lagt til prosjektet i Finance and Operations, fylles ressurslisten ut med gruppemedlemmene. Hvis en prosjektgruppe ennå ikke er lagt til i prosjektet, kan du velge ressurser og bygge teamet i Microsoft Project-klienten ved å klikke **Ressurser**-knappen i **Microsoft Dynamics 365**-kategorien. 
 
@@ -83,13 +82,13 @@ Når du skal opprette en ny arbeidsnedbrytningsstruktur ved hjelp av Microsoft P
 
 1.  Åpne Microsoft Project-klienten.
 
-2.  I **Microsoft Dynamics 365**-kategorien, klikk **Åpne**.
+2.  I kategorien **Microsoft Dynamics 365** klikker du **Åpne**.
 
 3.  Velg **Juridisk enhet** for prosjektet.
 
 4.  Velg **prosjektet**.
 
-5.  Klikk på **Sjekk ut** i **Microsoft Dynamics 365**-kategorien.
+5.  Klikk på **Sjekk ut** i kategorien **Microsoft Dynamics 365**.
 
 6.  Når du er klar til å publisere til Finance and Operations, klikker du **Sjekk inn** i **Microsoft Dynamics 365**-kategorien.
 
@@ -128,4 +127,3 @@ Hvis du vil opprette en ny arbeidsnedbrytningsstruktur ved hjelp av Microsoft Pr
 8.  Velg **Kalender** som skal brukes for ressurser.
 
 11. Klikk **OK**.
-

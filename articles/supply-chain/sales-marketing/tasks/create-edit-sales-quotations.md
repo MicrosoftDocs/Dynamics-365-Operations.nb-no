@@ -1,13 +1,13 @@
---- 
+---
 title: Opprette og redigere salgstilbud
-description: "Denne fremgangsmåten beskriver hvordan du oppretter og oppdaterer et salgstilbud."
+description: Denne fremgangsmåten beskriver hvordan du oppretter og oppdaterer et salgstilbud.
 author: omulvad
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: SalesQuotationListPage, SalesCreateQuotation, SalesQuotationTable, SalesQuotationTotals, SalesQuotationPriceSimulation, SalesQuotationEditLines, SrsReportViewerForm, smmSetNumSeqIfManual, CustTable, SalesTable
 audience: Application User
 ms.reviewer: kfend
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 5b5618a815aaff12dd366523920ed275801b3b16
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: f56b495131836689395a2124d5a834579e1646b7
-ms.contentlocale: nb-no
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "343633"
 ---
 # <a name="create-and-edit-sales-quotations"></a>Opprette og redigere salgstilbud
 
@@ -76,5 +76,4 @@ Denne fremgangsmåten beskriver hvordan du oppretter og oppdaterer et salgstilbu
 11. Klikk Generelt i handlingsruten.
 12. Klikk Salgsordrer.
 13. Lukk siden.
-
 

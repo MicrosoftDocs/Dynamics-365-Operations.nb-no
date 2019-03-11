@@ -1,13 +1,13 @@
 ---
-title: "Oversikt over innkjøpsrekvisisjoner"
-description: "Dette emnet beskriver arbeidsflyten for innkjøpsrekvisisjoner og de ulike statusene som en innkjøpsrekvisisjon kan ha."
+title: Oversikt over innkjøpsrekvisisjoner
+description: Dette emnet beskriver arbeidsflyten for innkjøpsrekvisisjoner og de ulike statusene som en innkjøpsrekvisisjon kan ha.
 author: mkirknel
 manager: AnnBe
 ms.date: 11/02/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: PurchReqConsolidation, PurchReqCreate, PurchReqCreatePurchDetails, PurchReqCreatePurchListPage, PurchReqTable, PurchReqTableListPage
 audience: Application User
 ms.reviewer: josaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: f279474d4a1e2f76e810b0df80c8d91171352c17
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 942693ed3d2d54c6e973e5d3f86454b195f0fdee
-ms.contentlocale: nb-no
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "309846"
 ---
-
 # <a name="purchase-requisition-overview"></a>Oversikt over innkjøpsrekvisisjoner
 
 [!include [banner](../includes/banner.md)]
@@ -39,7 +38,7 @@ Når en innkjøpsrekvisisjon er godkjent, kan den brukes til å generere en best
 ## <a name="creating-purchase-requisitions"></a>Opprette innkjøpsrekvisisjoner
 Du kan opprette en innkjøpsrekvisisjon på siden **Mine innkjøpsrekvisisjoner** og velge varene og tjenestene du trenger. Du kan velge varer fra en innkjøpskatalog som organisasjonen har opprettet, eller du kan be om varer som ikke finnes i katalogen, ved å velge en innkjøpskategori og angi produktdetaljene.  
 
-Før en innkjøpsrekvisisjon kan sendes til gjennomgang, må arbeidsflyter konfigureres i Microsoft Dynamics 365 for Finance and Operations. Du bruker en arbeidsflyt til å flytte en innkjøpsrekvisisjon gjennom vurderingsprosessen, fra den innledende statusen **Utkast** til den endelige statusen **Godkjent**.
+Før du kan sende en innkjøpsrekvisisjon til gjennomgang må en arbeidsflyter være konfigurert i Microsoft Dynamics 365 for Finance and Operations. Du bruker en arbeidsflyt til å flytte en innkjøpsrekvisisjon gjennom vurderingsprosessen, fra den innledende statusen **Utkast** til den endelige statusen **Godkjent**.
 
 ### <a name="purchase-requisition-statuses"></a>Innkjøpsrekvisisjonsstatuser
 
@@ -198,7 +197,6 @@ Hvis du vil konsolidere godkjente innkjøpsrekvisisjonslinjer, gjør du følgend
 [Opprette en rekvisisjon for forbruk (oppgaveveiledning)](tasks/create-requisition-consumption.md)
 
 [Arbeidsflyt for innkjøpsrekvisisjon](purchase-requisitions-workflow.md)
-
 
 
 

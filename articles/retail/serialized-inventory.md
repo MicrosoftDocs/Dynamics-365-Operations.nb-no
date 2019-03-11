@@ -1,13 +1,13 @@
 ---
 title: Salgsstedsforbedringer for serialiserte produkter
-description: "Dette emnet inneholder forbedringer som er gjort på serialiserte produkter, slik at du kan spare tid og være mer produktiv."
+description: Dette emnet inneholder forbedringer som er gjort på serialiserte produkter, slik at du kan spare tid og være mer produktiv.
 author: ShalabhjainMSFT
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations, Retail
@@ -16,14 +16,13 @@ ms.search.industry: Retail
 ms.author: shajain
 ms.search.validFrom: 2017-08-01
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
 ms.openlocfilehash: 17cd46ba9ee972c92db8950eea1cd258d67c2e92
-ms.contentlocale: nb-no
-ms.lasthandoff: 01/04/2019
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "346209"
 ---
-
 # <a name="point-of-sale-pos-improvements-for-serialized-products"></a>Salgsstedsforbedringer for serialiserte produkter
 
 [!include [banner](includes/banner.md)]
@@ -43,4 +42,3 @@ Basert på innstillingene i Retail-hovedkontoret, kan produktene klassifiseres s
 - **Serienummer er ikke påkrevd for å plassere kundeordrer** – Kundeordrer kan plasseres i en butikk og oppfylles fra en annen butikk. En kasserer som plasserer en kundeordre trenger ikke å oppgi serienummeret. Serienummeret vil gis under henting eller i hente-trinnet. Imidlertid må det oppgis et serienummer for alle linjeposter hvor leveringstypen er valgt som **Gjennomført**. Hvis ikke kan ikke transaksjonen fullføres.
 - **Serialiserte produkter samles ikke på transaksjonsskjermbildet**. – Innstillingen for **Aggregate produkter** i feltgruppen **Terminal** på siden **Funksjonalitetsprofil** lar deg aggregere de samme ikke-serielle produktene på transaksjonsskjermen. Når de samme produktene er aggregert, er de lettere å se i transaksjonsnettverket. Men fordi serienumrene generelt er unike, og salgsmedarbeidere ikke trenger å skrive inn serienumre til kassa, gjelder ikke innstillingen for **Aggregerte produkter** ved serialiserte produkter. Derfor blir ikke serielle produkter samlet på transaksjonsskjermbildet hvis innstillingen for **Aggreger produkter** er valgt.
 - **Muligheten til å søke i journaler etter serienummer** – Det er nå også mulig å søke etter serienummer i journalene. Hvis du vil gjøre dette, åpner du operasjonen "Journaler" og trykker på knappen "Avansert søk" i feltet i appen. Ved hjelp av knappen "Legg til filter" kan et filter brukes for å søke etter serienumrene også.
-

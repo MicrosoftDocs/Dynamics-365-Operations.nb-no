@@ -1,13 +1,13 @@
 ---
 title: Definere importprosess for avansert bankavstemming
-description: Funksjonen Avansert bankavstemming lar deg importere og avstemme elektroniske bankkontoutdrag og automatisk avstemme dem med banktransaksjoner i Microsoft Dynamics 365 for Finance and Operations. Denne artikkelen beskriver hvordan du definerer funksjonen for import av din bankkontoutdrag.
+description: Avansert bankavstemming-funksjonen lar deg importere elektroniske bankkontoutdrag og automatisk avstemme dem med banktransaksjoner i Microsoft Dynamics 365 for Finance and Operations. Denne artikkelen beskriver hvordan du definerer funksjonen for import av din bankkontoutdrag.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: BankStatementFormat
 audience: Application User
 ms.reviewer: shylaw
@@ -18,19 +18,18 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 7a04517de6e7695cd27bbc6e6a825e1ccaac7306
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 7292767f48e94f01c50e12ab02a4483c53046ae9
-ms.contentlocale: nb-no
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "334571"
 ---
-
 # <a name="set-up-the-advanced-bank-reconciliation-import-process"></a>Definere importprosess for avansert bankavstemming
 
 [!include [banner](../includes/banner.md)]
 
-Funksjonen Avansert bankavstemming lar deg importere og avstemme elektroniske bankkontoutdrag og automatisk avstemme dem med banktransaksjoner i Microsoft Dynamics 365 for Finance and Operations. Denne artikkelen beskriver hvordan du definerer funksjonen for import av din bankkontoutdrag. 
+Avansert bankavstemming-funksjonen lar deg importere elektroniske bankkontoutdrag og automatisk avstemme dem med banktransaksjoner i Microsoft Dynamics 365 for Finance and Operations. Denne artikkelen beskriver hvordan du definerer funksjonen for import av din bankkontoutdrag. 
 
 Oppsettet for import av bankkontoutdrag varierer, avhengig av formatet på der elektroniske bankkontoutdraget. Finance and Operations støtter tre formater for bankkontoutdrag som standard: ISO20022, MT940 og BAI2.
 
@@ -176,7 +175,6 @@ Det siste trinnet er å teste at du kan importere bankkontoutdraget.
 8.  Klikk **OK**.
 
 Hvis importen er vellykket, vises en melding om at utdraget ble importert. Hvis importen mislyktes, går du til arbeidsområdet **Databehandling** og delen **Jobblogg** for å finne jobben. Klikk **Utførelsesdetaljer** for jobben for å åpne siden **Utførelsessammendrag** , og klikk deretter **Vis utførelseslogg** for å vise importfeilene.
-
 
 
 

@@ -1,13 +1,13 @@
 ---
 title: Hva er nytt eller endret i Dynamics AX 7.0 (februar 2016)
-description: "Denne artikkelen beskriver funksjoner som enten er nye eller har blitt endret i Microsoft Dynamics AX 7.0. Denne versjonen inneholder både plattformen og programfunksjoner og ble utgitt i februar 2016."
+description: Denne artikkelen beskriver funksjoner som enten er nye eller endret i Microsoft Dynamics AX 7.0. Denne versjonen inneholder både plattformen og programfunksjoner og ble utgitt i februar 2016.
 author: sericks007
 manager: AnnBe
 ms.date: 10/23/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: sericks
 ms.search.scope: Operations
@@ -17,19 +17,18 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
 ms.openlocfilehash: cdd8acea22fb3298d1d0e7ccce0ca42c1427fe80
-ms.contentlocale: nb-no
-ms.lasthandoff: 12/18/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "334893"
 ---
-
 # <a name="whats-new-or-changed-in-dynamics-ax-70-february-2016"></a>Hva er nytt eller endret i Dynamics AX 7.0 (februar 2016)
 
 [!include [banner](../includes/banner.md)]
 
-Denne artikkelen beskriver funksjoner som enten er nye eller har blitt endret i Microsoft Dynamics AX 7.0. Denne versjonen inneholder både plattformen og programfunksjoner og ble utgitt i februar 2016.
+Denne artikkelen beskriver funksjoner som enten er nye eller endret i Microsoft Dynamics AX 7.0. Denne versjonen inneholder både plattformen og programfunksjoner og ble utgitt i februar 2016.
 
 ## <a name="cost-management"></a>Kostnadsstyring
 
@@ -62,7 +61,7 @@ Denne artikkelen beskriver funksjoner som enten er nye eller har blitt endret i 
 <td>Det er enklere å konfigurere systemet, fordi de nye etikettene er knyttet til de operative hendelsene som bruker denne posteringstypen.</td>
 </tr>
 <tr>
-<td>Import/eksport av kjøpspris, kostnad eller salgspris fra Microsoft Excel til eller fra en kostnadsversjon.</td>
+<td>Import og eksport av innkjøpspris, kostnad eller salgspris fra Microsoft Excel til eller fra en kostnadsversjon.</td>
 <td>Du kan ikke importere priser eller kostnader riktig i en etterkalkuleringsversjon, fordi datamodellen krever en InventDim-ID.</td>
 <td>Innføringen av dataenheter gjør det mulig å implementere en funksjon for import og eksport. Med denne funksjonen kan brukere importere/eksportere priser eller kostnader i en kostnadsversjon.
 <ul>
@@ -322,7 +321,7 @@ Denne funksjonen fungerer uavhengig av etterkalkuleringsmetoder som er tilordnet
 <tr>
 <td>Tilgang til veiledet prosedyremessig hjelp (oppgaveveiledning) og fremgangsmåter ved å klikke <strong>Hjelp</strong>.</td>
 <td>Hjelpesystemet for AX 2012 peker til HTML-emner som er lagret på en lokal webserver. Kunder og partnere kan opprette sin egen hjelp.</td>
-<td>Hjelpesystemet i den gjeldende versjonen av Dynamics AX viser oppgaveveiledninger som er lagret i Microsoft Dynamics Lifecycle Services (LCS) BPM. Hjelpesystemet viser også emner fra Microsofts nettsted for dokumenter. Hvis du vil ha mer informasjon, kan du se <a href="help-overview.md" data-raw-source="[Dynamics AX Help - Getting Started](help-overview.md)">Hjelp for Dynamics AX – Komme i gang</a> og <a href="new-task-guides-available-february-2016.md" data-raw-source="[New task guides available (February 2016)](new-task-guides-available-february-2016.md)">Nye oppgaveveiledninger tilgjengelige (februar 2016)</a>.</td>
+<td>Hjelpesystemet i den gjeldende versjonen av Dynamics AX viser oppgaveveiledninger som er lagret i Microsoft Dynamics Lifecycle Services (LCS) BPM. Hjelpesystemet viser også emner fra Microsofts nettsted for dokumenter. Hvis du vil ha mer informasjon, kan du se <a href="help-overview.md" data-raw-source="[Dynamics AX Help - Getting Started](help-overview.md)">Hjelp for Dynamics AX – Komme i gang</a> og <a href="new-task-guides-available-february-2016.md" data-raw-source="[New task guides available (February 2016)](new-task-guides-available-february-2016.md)">Nye oppgaveveiledninger tilgjengelige (februar 2016).</a></td>
 <td>Oppgaveveiledninger gir en veiledet, interaktiv opplevelse som leder deg gjennom trinnene for en aktivitet eller forretningsprosess. Du kan laste ned og tilpasse oppgaveveiledningene som Microsoft tilbyr. Emnet gir en raskere og mer fleksibel måte å opprette, levere og oppdatere produktdokumentasjonen. Derfor garanterer det at du har tilgang til den nyeste tekniske informasjonen.</td>
 </tr>
 </tbody>
@@ -559,7 +558,7 @@ Ingen nye funksjoner er lagt til.
 |------------------|------------------|-----------------|------------------------|
 | Bruk **Bestillingsklargjøring**-arbeidsområdet til å få raskt innblikk i statusen for bestillinger som klargjøres. | Støttes ikke | **Bestillingsklargjøring**-arbeidsområdet gir en oversikt over ordrer fra tidspunktet når de opprettes som en kladd og spores, via statusene for arbeidsflytgodkjenning og videre til bekreftelse. | Innkjøpsavdelingen din trenger ikke lenger søke etter informasjon på flere sider, men har nå fordeler av oversikten fra arbeidsområdet. |
 | Bruk **Bestillingsmottak og oppfølging**-arbeidsområdet for å få rask innsikt i bestillinger som venter på bekreftelse, for å hjelpe deg med oppfølging. | Støttes ikke | **Bestillingsmottak og oppfølging** -arbeidsområdet gir en oversikt over bekreftede bestillinger som har ventende mottak eller forsendelser. Arbeidsområdet inneholder lister over forfalte mottak og ventende mottak som hjelper med proaktiv vurdering og oppfølging av leverandøren. Arbeidsområdet viser også bestillinger som det har oppstått ankomstregistreringen for på lageret, for å garantere at mottaket er bokført. Bestillingsreturer som ennå ikke er levert, er også tilgjengelige for gjennomgang. | Innkjøpsavdelingen din har fordel av oversikten som arbeidsområdet gir. Relevant informasjon er satt sammen for å veilede med oppfølging og forbedre produktiviteten. |
-| Send bestillinger til bekreftelse hos en leverandørportal som er lagret i Dynamics AX-klienten. La leverandøren bekrefte eller avvise. | Støttes ikke | Ved hjelp av leverandørportalgrensesnittet kan leverandører motta bestillinger som skal bekreftes eller avvises. Det gir også leverandøren en oversikt over alle bekreftede bestillinger for en konto. Innkjøpsagenten kan sende en bestilling med forespørsel om en bekreftelse fra leverandøren. Leverandøren må være en registrert Microsoft Azure Active Directory-bruker (Azure AS) i Dynamics AX, en kontaktperson for leverandøren og ha en dedikert sikkerhetsrolle. | Din innkjøpsavdelingen har nytte av redusert papirarbeid og manuelt å holde oversikt over svar på bestillinger, som flyten direkte til systemet. Én sannhetskilde reduserer misforståelser mellom kunde og leverandør. |
+| Send bestillinger til bekreftelse hos en leverandørportal som er lagret i Dynamics AX-klienten. La leverandøren bekrefte eller avvise. | Støttes ikke | Ved hjelp av leverandørportalgrensesnittet kan leverandører motta bestillinger som skal bekreftes eller avvises. Det gir også leverandøren en oversikt over alle bekreftede bestillinger for en konto. Innkjøpsagenten kan sende en bestilling med forespørsel om en bekreftelse fra leverandøren. Leverandøren må være en registrert Microsoft Azure Active Directory (Azure AD)-bruker i Dynamics AX, en kontaktperson for leverandøren og ha en dedikert sikkerhetsrolle. | Din innkjøpsavdelingen har nytte av redusert papirarbeid og manuelt å holde oversikt over svar på bestillinger, som flyten direkte til systemet. Én sannhetskilde reduserer misforståelser mellom kunde og leverandør. |
 
 ## <a name="projects"></a>Prosjekter
 
@@ -571,7 +570,7 @@ Ingen nye funksjoner er lagt til.
 
 ### <a name="retail-hq"></a>Detaljhandel HK
 
-Detaljhandel HK driftet av Microsoft Azure gir sentralisert behandling av og fullstendig oversikt over alle aspekter av handelsoperasjoner via en webklient.
+En Detaljhandel HK driftet av Microsoft Azure gir sentralisert behandling av og fullstendig oversikt over alle aspekter av handelsoperasjoner via en webklient.
 
 <table>
 <thead>
@@ -624,7 +623,7 @@ Detaljhandel HK driftet av Microsoft Azure gir sentralisert behandling av og ful
 <ul>
 <li>Opprette og konfigurere nye kanaler og relaterte enheter.</li>
 <li>Behandle daglige aktiviteter for butikken.</li>
-<li>Behandle handelstransaksjoner i Microsoft Dynamics AX, generere detaljhandelsutdrag og oppdatere Microsoft Dynamics AX-lager og -finans.</li>
+<li>Behandle detaljhandelstransaksjoner i Microsoft Dynamics AX, generere detaljhandelsutdrag og oppdatere Microsoft Dynamics AX-lager og -finans.</li>
 </ul>
 </td>
 <td>Med <strong>Kanaldistribusjon</strong>-arbeidsområdet kan du utføre følgende oppgaver:
@@ -677,9 +676,9 @@ Detaljhandel HK driftet av Microsoft Azure gir sentralisert behandling av og ful
 <td>Med disse rapportene kan kunder ha mer BI til å forutse trender, avdekke innsikt og operere med kontinuerlig toppytelse.</td>
 </tr>
 <tr>
-<td>Analyser salgsdata for handelskanal ved å bruke "Overvåk resultat for detaljhandelskanal"-innhold for Power BI.</td>
+<td>Analyser salgsdata for handelskanal ved å bruke "Overvåk Retail Channel performance"-innhold for Power BI.</td>
 <td>Ikke tilgjengelig</td>
-<td>I PowerBI.com velg <strong>Hent data</strong>, og velg deretter <strong>Dynamics AX – Resultat for detaljhandelskanal</strong>-innholdspakken. Angi URL-adressen for sluttpunktet i Dynamics AX for å vise dataene i instrumentbordet.</td>
+<td>I PowerBI.com velg <strong>Hent data</strong>, og velg deretter <strong>Dynamics AX –  Retail Channel performance</strong>-innholdspakken. Angi URL-adressen for sluttpunktet i Dynamics AX for å vise dataene i instrumentbordet.</td>
 <td>Med tre til fire klikk kan organisasjoner distribuere et Power BI-instrumentbord som inneholder viktige økonomiske data. Innholdet kan tilpasses av organisasjonen. I tillegg kan brukere bygge inn Power BI-instrumentbordfliser i sine personlige arbeidsområder i Dynamics AX slik at de raskt kan se analytisk informasjon.</td>
 </tr>
 <tr>
@@ -734,13 +733,13 @@ Med detaljhandelsserver og databehandling kan kunder og bedrifter opprette en om
 <td>Den gir vertsbasert og skalerbar e-handelstjenester som kan brukes med tredjeparts nettbutikker.</td>
 </tr>
 <tr>
-<td>Flytt data mellom Microsoft Dynamics AX-underkontoen og -kanalene ved hjelp av Commerce Data Exchange.</td>
+<td>Flytte data mellom Microsoft Dynamics AX-underkontoen og -kanalene ved å bruke Commerce Data Exchange.</td>
 <td>Commerce Data Exchange er et system som overfører data mellom Microsoft Dynamics AX og detaljhandelskanaler, for eksempel nettbutikker eller fysiske butikker. Hvis du vil ha mer informasjon, kan du se <a href="https://technet.microsoft.com/library/dn741440.aspx">Commerce Data Exchange [AX 2012]</a>.</td>
-<td>Det finnes funksjonell paritet med Microsoft Dynamics AX 2012 CU8. Vær imidlertid oppmerksom på følgende detaljer:
+<td>Dette er en funksjonell paritet med Microsoft Dynamics AX 2012 CU8. Vær imidlertid oppmerksom på følgende detaljer:
 <ul>
 <li>Commerce Data Exchange er rekonstruert for skyen.</li>
 <li>Asynkron tjeneste bruker direkte databasetilgang til kanaldatabasen.</li>
-<li>Commerce Data Exchange: Real-time Service er lagret som en egendefinert tjeneste for Microsoft Dynamics AX.</li>
+<li>Commerce Data Exchange: Real-time Service er vertsbasert som en egendefinert Microsoft Dynamics AX-tjeneste.</li>
 <li>MPOS administrerer synkroniseringen mellom frakoblede databaser og detaljhandelsserveren.</li>
 </ul></td>
 <td>Commerce Data Exchange er rekonstruert for skyplattformen. Den fortsetter å administrere overføringen av data mellom Microsoft Dynamics AX og detaljhandelskanaler, for eksempel nettbutikker eller fysiske butikker.</td>
@@ -758,7 +757,7 @@ Med detaljhandelsserver og databehandling kan kunder og bedrifter opprette en om
 <td>Den lar kunden behandle kreditt-/debetkorttransaksjoner for betalinger.</td>
 </tr>
 <tr>
-<td>Aktiver enheter ved hjelp av en Microsoft-konto (Microsoft Azure Active Directory (Azure AD)).</td>
+<td>Aktivere enheter ved hjelp av en Microsoft-konto (Microsoft Azure Active Directory (Azure AD)).</td>
 <td>Ikke tilgjengelig</td>
 <td>Følgende funksjonalitet finnes:
 <ul>
@@ -959,7 +958,7 @@ Lifecycle Services (LCS) gir et sett med tjenester som kunder og partnere kan br
 </ul>
 Det finnes en forbedret og forenklet klientkomponentinstallasjon via selvbetjeningsinstallasjonen:
 <ul>
-<li>Moderne salgssted for detaljhandel.</li>
+<li>Retail Modern POS.</li>
 <li>Maskinvarestasjon for detaljhandel</li>
 <li>Støtte for opplasting og distribusjon av egendefinerte pakker via selvbetjeningsinstallasjon.</li>
 </ul></td>
@@ -1034,4 +1033,3 @@ Ingen nye funksjoner er lagt til.
 [Hva er nytt eller endret?](whats-new-changed.md)
 
 [Nye oppgaveveiledninger tilgjengelige (februar 2016)](new-task-guides-available-february-2016.md)
-

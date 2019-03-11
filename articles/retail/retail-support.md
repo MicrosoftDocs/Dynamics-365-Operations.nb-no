@@ -1,31 +1,30 @@
 ---
-title: "For støtte for Dynamics 365 for Retail"
-description: "Denne artikkelen forklarer hvordan du får hjelp med Microsoft Dynamics 365 for Retail."
+title: Få kundestøtte for Dynamics 365 for Retail
+description: Denne artikkelen forklarer hvordan du får hjelp med Microsoft Dynamics 365 for Retail.
 author: josaw1
 manager: AnnBe
 ms.date: 09/18/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-retail
-ms.technology: 
+ms.technology: ''
 audience: Application user
 ms.reviewer: josaw
 ms.search.scope: Retail
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
 ms.author: anupams
 ms.search.validFrom: 2018-09-30
 ms.dyn365.ops.version: Retail
+ms.openlocfilehash: 3d437b16e96d53216032f1f31df3d4c0ba63e117
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
-ms.openlocfilehash: 2e74554338e4b12991756f63257f67ee3e2e6dc4
-ms.contentlocale: nb-no
-ms.lasthandoff: 01/04/2019
-
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "364057"
 ---
-
-# <a name="get-support-for-dynamics-365-for-retail"></a>For støtte for Dynamics 365 for Retail
+# <a name="get-support-for-dynamics-365-for-retail"></a>Få kundestøtte for Dynamics 365 for Retail
 
 [!include [banner](../includes/banner.md)]
 
@@ -49,7 +48,7 @@ For å få støtte for Retail, bruk ressursene i følgende tabell. Disse ressurs
 <tbody>
 <tr>
 <td>Spør fellesskapet.</td>
-<td>Gå til fellesskapsiden for <a href="https://community.dynamics.com/365/retail">Dynamics 365 for Retail</a> for å få hjelp med spørsmålene dine fra Dynamics-fellesskapet.</td>
+<td>Gå til siden <a href="https://community.dynamics.com/365/retail">Dynamics 365 for Retail</a>-fellesskapet for å få hjelp med spørsmålene dine fra Dynamics-fellesskapet.</td>
 </tr>
 <tr>
 <td>Bruk verktøyet Problemsøk.</td>
@@ -85,5 +84,4 @@ Hvis du har tekniske spørsmål som er knyttet til pålogging og tilgang til Cus
 </tbody>
 </table>
 
-Hvis du vil ha mer informasjon om støttetilbud for Microsoft Dynamics, kan du se [Støtte for Microsoft Dynamics Online](https://www.microsoft.com/dynamics/dynamics-online-support.aspx).
-
+Hvis du vil ha mer informasjon om støttetilbud for Microsoft Dynamics, kan du se [Støtte for Microsoft Dynamics Online](https://dynamics.microsoft.com/en-us/support/).

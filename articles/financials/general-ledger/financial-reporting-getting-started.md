@@ -1,13 +1,13 @@
 ---
 title: Finansrapportering
-description: "Dette emnet beskriver hvor du kan få tilgang til økonomisk rapportering i Microsoft Dynamics 365 for Finance and Operations og hvordan du bruker de økonomiske rapporteringsfunksjoner. Det inneholder en beskrivelse av de økonomiske standardrapportene som tilbys."
+description: Dette emnet beskriver hvor du kan få tilgang til økonomisk rapportering i Microsoft Dynamics 365 for Finance and Operations og hvordan du bruker de økonomiske rapporteringsfunksjoner. Det inneholder en beskrivelse av de økonomiske standardrapportene som tilbys.
 author: aprilolson
 manager: AnnBe
 ms.date: 09/26/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: FinancialReports
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: a128f326cb89ab00e69be40801553c0ac551446e
 ms.openlocfilehash: c6d504a7b0640f45de4aa9f8fb60d2b1d37818bb
-ms.contentlocale: nb-no
-ms.lasthandoff: 10/16/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "316976"
 ---
-
 # <a name="financial-reporting"></a>Finansrapportering
 
 [!include [banner](../includes/banner.md)]
@@ -122,7 +121,6 @@ Du kan opprette en ny rapport fra listen for finansrapporter eller endre en eksi
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 - [Vise finansrapporter](view-financial-reports.md)
-
 
 
 

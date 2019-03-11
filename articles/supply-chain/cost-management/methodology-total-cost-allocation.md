@@ -1,13 +1,13 @@
 ---
 title: Metode for total kostnadsfordeling
-description: "Dette emnet inneholder retningslinjer for bruk av total kostnadsfordeling (TKF). TKF er en metode for å beregne kostnaden mellom hovedformelvaren for en partiordre og koproduktene som er definert for formelen."
+description: Dette emnet inneholder retningslinjer for bruk av total kostnadsfordeling (TKF). TKF er en metode for å beregne kostnaden mellom hovedformelvaren for en partiordre og koproduktene som er definert for formelen.
 author: AndersGirke
 manager: AnnBe
 ms.date: 10/24/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: BOMConsistOf, PmfFormulaCoBy
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: mguada
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: cda1c5251b81a3bb73d4d8703d7c3fa1ab4e9c16
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 4f3d75411e8c99365f1aba8214c78e93b4741871
-ms.contentlocale: nb-no
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "341586"
 ---
-
 # <a name="total-cost-allocation-method"></a>Metode for total kostnadsfordeling
 
 [!include [banner](../includes/banner.md)]
@@ -61,7 +60,6 @@ Feltet **Kostnadsfordeling for biprodukt** på **Koprodukter**-siden er et oppli
 -   **Prosent** – Kostnadsbeløpet beregnes som en prosentdel av totalkostnadene for råvarene som forbrukes i produksjonen. Prosentverdien som skal brukes for beregningen, angis i feltet .
 -   **Per serie** – Kostnadsbeløpet beregnes som et beløp per standard partistørrelse for produksjonsordren. Dette beløpet er uavhengig av det rapporterte antallet i produksjonen. Beløpet som skal brukes for beregningen, angis i feltet .
 -   **Per antall** – Kostnadsbeløpet beregnes som et beløp per rapporterte antall av formelvaren i produksjonen. Beløpet som skal brukes for beregningen, angis i feltet .
-
 
 
 

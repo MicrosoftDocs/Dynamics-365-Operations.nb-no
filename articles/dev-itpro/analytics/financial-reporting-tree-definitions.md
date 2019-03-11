@@ -1,13 +1,13 @@
 ---
 title: Rapporteringstredefinisjoner finansrapporter
-description: "Denne artikkelen gir informasjon om rapporteringstredefinisjoner. En rapporteringstredefinisjon er en rapportkomponent eller byggeblokk, som bidrar til å definere strukturen og hierarkiet i organisasjonen."
+description: Denne artikkelen gir informasjon om rapporteringstredefinisjoner. En rapporteringstredefinisjon er en rapportkomponent eller byggeblokk, som bidrar til å definere strukturen og hierarkiet i organisasjonen.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 01/11/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 ms.search.form: FinancialReports
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
 ms.openlocfilehash: 00219f21076af60f8e2f16ca365b1138bb279400
-ms.contentlocale: nb-no
-ms.lasthandoff: 08/13/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "316953"
 ---
-
 # <a name="reporting-tree-definitions-in-financial-reports"></a>Rapporteringstredefinisjoner finansrapporter
 
 [!include [banner](../includes/banner.md)]
@@ -49,9 +48,9 @@ Du kan opprette et ubegrenset antall rapporteringstrær for å vise organisasjon
 ## <a name="create-a-reporting-tree-definition"></a> Opprette rapporteringstredefinisjon
 En rapporteringstredefinisjonen inneholder kolonnene som er beskrevet i tabellen nedenfor.
 
-| Rapporteringstrekolonne | beskrivelse |
+| Rapporteringstrekolonne | Beskrivelse |
 |-----------------------|-------------|
-| Firma               | Firmanavnet for rapporteringsenheten. **@ANY**-verdien, som vanligvis bare tilordnes til sammendragsnivået, gjør det mulig å bruke rapporteringstreet for alle firmaer. Alle underordnede avdelinger er tilordnet til et firma. |
+| Firma               | Firmanavnet for rapporteringsenheten. Verdien **@ANY**, som vanligvis tilordnes bare til sammendragsnivået, aktiverer rapporteringstreet slik at det kan brukes for alle firmaer. Alle underordnede avdelinger er tilordnet til et firma. |
 | Enhetsnavn             | Koden som identifiserer rapporteringsenheten i det grafiske rapporteringstreet. Pass på å opprette et unik fargekodingssystem som er konsekvent, og som skal være enkelt for brukerne å forstå. |
 | Enhetsbeskrivelse      | Tittelen for rapporteringsenheten vises i topp- eller bunnteksten på rapporten hvis du angir **UnitDesc** som kode i kategorien **Topptekst og bunntekst** i rapportdefinisjonen. Tittelen vises i radbeskrivelsen for rapporten hvis du angir **UnitDesc** i **Beskrivelse**-cellen for raddefinisjonen. |
 | Dimensjoner            | En rapporteringsenhet som henter informasjon direkte fra de økonomiske dataen. Den definerer den logisk plassering og lengdene for kontoen og tilknyttede segmenter. Hver rad for rapporteringsenhet må ha en dimensjon i denne kolonnen. Du kan også legge en dimensjon i en rad for sammendragsenhet (for eksempel for utgifter som er direkte relatert til denne enheten). Hvis du angir en dimensjon i en rad for sammendragsenhet, må kontoer som brukes i overordnede enheter ikke brukes i underordnede enheter. Hvis ikke, kan det hende beløpene blir duplisert. |
@@ -166,9 +165,9 @@ Du kan hindre at bestemte brukere eller grupper får tilgang til en rapportering
 3. Velg et navn, og klikk deretter **Fjern** i dialogboksen **Enhetssikkerhet**.
 4. Klikk **OK**.
 
-### <a name="link-to-reports"></a>Koble til rapporter
+### <a name="link-toreports"></a>Koble til rapporter
 
-Når du har opprettet en **rapportkolonne** i raddefinisjonen, og har angitt rapporten som skal tas med i rapporten, må du oppdatere rapporteringstreet med den koblede kolonnen og informasjonen om rapporten. En rapport kan importeres til enheter i rapporteringstreet.
+Når du har opprettet en  **rapportkolonne** i raddefinisjonen, og har angitt rapporten som skal tas med i rapporten, må du oppdatere rapporteringstreet med den koblede kolonnen og informasjonen om rapporten. En rapport kan importeres til enheter i rapporteringstreet.
 
 ### <a name="identify-the-report-in-a-reporting-tree"></a>Identifisere rapporten i rapporteringstreet
 
@@ -222,4 +221,3 @@ Eksemplene nedenfor viser mulig informasjon som brukes i en rapporteringstredefi
 ## <a name="additional-resources"></a>Tilleggsressurser
 
 [Finansrapportering](financial-reporting-intro.md)
-

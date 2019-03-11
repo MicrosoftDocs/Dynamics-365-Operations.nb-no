@@ -1,13 +1,13 @@
---- 
+---
 title: Opprette ruter (februar 2016)
-description: "Denne oppgaven fokuserer på å opprette produksjonsruter for et ferdig produkt og et halvfabrikata."
+description: Denne oppgaven fokuserer på å opprette produksjonsruter for et ferdig produkt og et halvfabrikata.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: EcoResProductDetailsExtended, RouteInventProd, RouteGroup
 audience: Application User
 ms.reviewer: shylaw
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 965826f5fddc2f53f33157434929eb265979376e
 ms.openlocfilehash: a68b28c0e0ee14429a23d3241cabdae948d706d2
-ms.contentlocale: nb-no
-ms.lasthandoff: 10/16/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "354098"
 ---
 # <a name="create-routes-february-2016"></a>Opprette ruter (februar 2016)
 
@@ -107,5 +107,4 @@ Denne oppgaven fokuserer på å opprette produksjonsruter for et ferdig produkt 
     * Oppstillingstider inngår ofte i prisen som er beregnet for en vare.  
 5. Klikk Lagre.
 6. Lukk siden.
-
 

@@ -1,13 +1,13 @@
 ---
 title: Importere ISO20022-filer
-description: Dette emnet forklarer hvordan du importerer betalingsfiler i formatene ISO 20022 camt.054 og pain.002 i Microsoft Dynamics 365 for Finance and Operations.
+description: Dette emnet forklarer hvordan du importerer betalingsfiler i formatene ISO 20022 camt.054 og pain.002 til Microsoft Dynamics 365 for Finance and Operations.
 author: neserovleo
 manager: AnnBe
 ms.date: 07/27/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CustPaymMode, CustBankAccounts, VendPaymMode, VendBankAccounts
 audience: Application User
 ms.reviewer: shylaw
@@ -16,14 +16,13 @@ ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, F
 ms.author: v-lenest
 ms.search.validFrom: 2017-06-01
 ms.dyn365.ops.version: July 2017 update
+ms.openlocfilehash: d91e937c62d4d498e67d753e39676514835f4161
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: f55e8fbc4d13f84686298cb8dbcebb4baf134cf3
-ms.contentlocale: nb-no
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "371352"
 ---
-
 # <a name="import-iso20022-files"></a>Importere ISO20022-filer
 
 [!include [banner](../includes/banner.md)]
@@ -36,7 +35,7 @@ Du kan importere betalingsfiler i følgende formater:
 ## <a name="prerequisites-for-importing-the-camt054-credit-advice-file"></a>Forutsetninger for å importere camt.054 credit advice-filen
 Du må oppfylle følgende forutsetninger for å importere bank varselmeldinger i formatet camt.054.001.002 i kundebetalingsjournalen.
 
-1. Import av **ISO20022 camt.054** Konfigurasjonsnøkkel for elektronisk rapportering (ER) fra Microsoft Dynamics Lifecycle Services (LCS). Deretter, på siden **Kundens betalingsmåte** i feltet **Importer konfigurasjon av format**, velger du denne konfigurasjonen. Hvis du vil ha mer informasjon, se [Filformater for betalingsmåter](emea-select-file-formats-for-the-method-of-payments.md).
+1. Import av **ISO20022 camt.054** konfigurasjon for elektronisk rapportering (ER) fra Microsoft Dynamics Lifecycle Services (LCS). Deretter, på siden **Kundens betalingsmåte** i feltet **Importer konfigurasjon av format**, velger du denne konfigurasjonen. Hvis du vil ha mer informasjon, se [Filformater for betalingsmåter](emea-select-file-formats-for-the-method-of-payments.md).
 2. På siden **Alle kunder** skriver du inn et navn og organisasjonsnummer for hver kunde.
 3. På siden **Kundebankkonto** kan du definere en kundebankkontopost ved å angi følgende informasjon: IBAN-nummeret eller bankkontonummeret, og SWIFT-koden eller rutingnummeret.
 4. På siden **Bankkontoer** kan du definere en bankkontoer for juridiske enheter ved å angi følgende informasjon: IBAN-nummeret eller bankkontonummeret, og SWIFT-koden eller rutingnummeret, valuta og adresse.
@@ -130,4 +129,3 @@ Hvis du vil ha mer informasjon om elektronisk rapportering, kan du se [Oversikt 
 - [Definere en betalingsmåte for ISO20022-kredittoverføring](./tasks/set-up-method-payment-iso20022-credit-transfer.md)
 - [Definere en betalingsmåte for ISO20022-avtalegiro](./tasks/setup-method-payment-iso20022-direct-debit.md)
 - [Definere leverandørers bankkontoer for ISO20022-kreditoverføringer](./tasks/set-up-vendor-iso20022-credit-transfers.md)
-

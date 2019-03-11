@@ -1,13 +1,13 @@
---- 
-title: "Utforme ER-konfigurasjoner til å analysere innkommende dokumenter"
-description: "Denne prosedyren viser hvordan du utformer elektronisk rapportering (ER)-konfigurasjoner for å analysere et innkommende elektronisk dokument."
+---
+title: Utforme ER-konfigurasjoner til å analysere innkommende dokumenter
+description: Denne prosedyren viser hvordan du utformer elektronisk rapportering (ER)-konfigurasjoner for å analysere et innkommende elektronisk dokument.
 author: NickSelin
 manager: AnnBe
 ms.date: 12/12/2017
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
 ms.search.scope: Operations
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
 ms.openlocfilehash: 9e5f826afa141c0851a963b33e40c58513e60a07
-ms.contentlocale: nb-no
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "326107"
 ---
 # <a name="design-er-configurations-to-parse-incoming-documents"></a>Utforme ER-konfigurasjoner til å analysere innkommende dokumenter
 
@@ -35,7 +35,7 @@ Disse trinnene kan fullføres ved hjelp av hvilket som helst datasett. Før du b
 1. Gå til Organisasjonsstyring > Arbeidsområder > Elektronisk rapportering.
     * Kontroller at konfigurasjonsleverandøren for eksempelfirmaet "Litware, Inc." er tilgjengelig og merket som aktiv. Hvis du ikke ser denne konfigurasjonsleverandøren, må du fullføre trinnene i prosedyren "Opprette en konfigurasjonsleverandør og merke den som aktiv".  
 2. Klikk Rapporteringskonfigurasjoner.
-    * Dette scenariet vil bli brukt til å vise egenskapene for analyse av innkommende elektroniske dokumenter i XML-format: ERP-program (Dynamics 365 for Finance and Operations) ber om data fra webtjenesten (for eksempel http://efsta.org/ EFSTA fiscal service) og analyserer innkommende svar for å oppdatere programdata i henhold til dette. Den mest effektive måten å analysere på er å bruke et enkelt ER-format til tross for den forskjellige strukturen på forventede innkommende dokumenter i XML-format.   
+    * Dette scenariet vil bli brukt til å vise egenskapene for analyse av innkommende elektroniske dokumenter i XML-format: ERP-programmet (Dynamics 365 for Finance and Operations) ber om data fra webtjenesten (for eksempel http://efsta.org/ EFSTA fiscal service) og analyserer innkommende svar for å oppdatere programdata i henhold til dette. Den mest effektive måten å analysere på er å bruke et enkelt ER-format til tross for den forskjellige strukturen på forventede innkommende dokumenter i XML-format.   
 
 ## <a name="import-and-review-er-configurations"></a>Importere og gå gjennom ER-konfigurasjoner
 Importer ER-konfigurasjonen som inneholder eksempeldatamodellen som er utviklet for å lagre detaljene for den innkommende filen.  
@@ -110,5 +110,4 @@ Du vil kjøre den opprettede modelltilordningen for testformål for å se hvorda
     * Klikk Bla gjennom og velg Response4.xml-filen.  
 16. Klikk OK.
     * Se gjennom de genererte utdataene. Legg merke til at svartypen er nå gjenkjent som lik for Response1.xml-filen.  
-
 

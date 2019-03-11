@@ -1,13 +1,13 @@
---- 
-title: "Slå opp gjeldende priser og rabatter"
-description: "Denne fremgangsmåten viser hvordan du finner prisen og/eller rabatten for et produkt som for øyeblikket er gyldig for en bestemt kunde, uten å opprette en salgsordre."
+---
+title: Slå opp gjeldende priser og rabatter
+description: Denne fremgangsmåten viser hvordan du finner prisen og/eller rabatten for et produkt som for øyeblikket er gyldig for en bestemt kunde, uten å opprette en salgsordre.
 author: omulvad
 manager: AnnBe
 ms.date: 11/10/2016
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
 ms.search.scope: Operations
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: ba95e651898da0e0fbd1221f61436ffac59db09e
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 809a1466b0f4674f503bc654175d8f94b37a6508
-ms.openlocfilehash: 7ef63151f352b3664bccd7a59e7417dfddc7470b
-ms.contentlocale: nb-no
-ms.lasthandoff: 11/02/2017
-
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "359871"
 ---
 # <a name="look-up-applicable-prices-and-discounts"></a>Slå opp gjeldende priser og rabatter
 
@@ -59,5 +59,4 @@ Denne fremgangsmåten viser hvordan du finner prisen og/eller rabatten for et pr
 3. Klikk Vis linjerabatt.
     * Det finnes to linjerabattavtaler for produktet T0012, som angir en rabatt på 5 prosent for et ordrelinjeantall fra 1 til 10 og 7 prosent rabatt for ordremengder som overstiger 10. Legg merke til at rabattene brukes i en gruppe med produkter, i dette eksemplet gruppekoden 01, som produkt T0012 er et medlem av.  
 4. Lukk siden.
-
 

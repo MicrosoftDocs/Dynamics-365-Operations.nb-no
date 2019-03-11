@@ -1,13 +1,13 @@
 ---
-title: "Suspendere og gjenoppta en transaksjon på salgsstedet"
-description: "Dette emnet forklarer hvordan brukere kan avbryte pågående transaksjoner og deretter gjenoppta dem senere eller i en annen kasse ved hjelp av Microsoft Dynamics 365 for Retail."
+title: Suspendere og gjenoppta en transaksjon på salgsstedet
+description: Dette emnet forklarer hvordan brukere kan avbryte pågående transaksjoner og deretter gjenoppta dem senere eller i en annen kasse ved hjelp av Microsoft Dynamics 365 for Retail.
 author: jblucher
 manager: AnnBe
 ms.date: 11/27/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations, Retail
@@ -18,14 +18,13 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: HT
-ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
 ms.openlocfilehash: ffb04609318c7de4b9ef729a8e03a7f9395806b8
-ms.contentlocale: nb-no
-ms.lasthandoff: 01/04/2019
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "333904"
 ---
-
 # <a name="suspend-and-resume-transactions-in-the-point-of-sale-pos"></a>Suspendere og gjenoppta transaksjoner på salgsstedet
 
 [!include [banner](includes/banner.md)]
@@ -83,4 +82,3 @@ Skann strekkoden på den utskrevne seddelen hvis du vil tilbakekalle en suspende
 ### <a name="void-a-suspended-transaction"></a>Annullere en suspendert transaksjon
 
 Du kan annullere suspenderte transaksjoner enten ved å tilbakekalle transaksjonen og deretter utføre **Annuller transaksjon**-operasjonen, eller ved å velge transaksjonen i **Tilbakekall transaksjon**-listen og velge **Annuller** i programfeltet. Eventuelt kan butikken konfigureres til å be brukerne om å annullere suspenderte transaksjoner når de avslutter skiftet.
-

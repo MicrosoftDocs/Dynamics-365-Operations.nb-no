@@ -1,13 +1,13 @@
 ---
-title: "Navigasjonssøk"
-description: "Dette emnet forklarer hvordan du bruker søkefunksjonen til å navigere til sider i Microsoft Dynamics 365 for Finance and Operations."
+title: Navigasjonssøk
+description: Dette emnet forklarer hvordan du bruker søkefunksjonen til å navigere til sider i Microsoft Dynamics 365 for Finance and Operations.
 author: aneesmsft
 manager: AnnBe
 ms.date: 04/27/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: sericks
 ms.search.scope: Core, Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: aneesa
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
 ms.openlocfilehash: 7c05098815c6b330cbb9c7f5ce886779927c6804
-ms.contentlocale: nb-no
-ms.lasthandoff: 12/18/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "353017"
 ---
-
 # <a name="navigation-search"></a>Navigasjonssøk
 
 [!include [banner](../includes/banner.md)]
@@ -64,4 +63,3 @@ Listen over søkeresultater er begrenset til ti elementer. Hvis du ikke finner d
 ## <a name="development"></a>Utvikling
 
 Fra et utviklingsperspektiv er navigasjonssøkefunksjonaliteten enkel å bruke siden det praktisk talt er ingen forsinkelse mellom distribusjonen av menyelementer og visningen av dem i søkeresultatene. Så lenge det kobles til menyelementene fra navigasjonsruten eller instrumentbordet, blir de søkbare automatisk.
-

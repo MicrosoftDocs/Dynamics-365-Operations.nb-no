@@ -1,13 +1,13 @@
---- 
+---
 title: Opprette betalinger for en kunde som har avtalegiromandater
 description: Denne prosedyren viser hvordan du genererer en betalingsfil for avtalegiro for ISO20022 for en kunde som har konfigurert AvtaleGiro og en faktura som skal betales.
 author: mrolecki
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CustFreeInvoice, CustTableLookup, CustPostInvoiceJob, LedgerJournalTable, LedgerJournalTransCustPaym, SysQueryForm, CustPaymProposalEdit, BankAccountTableLookUp
 audience: Application User
 ms.reviewer: shylaw
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: mrolecki
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 6781ac38fff6344bfc9546c3ffd2253fb3ef712c
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: acd6a8076288d8d1d1aa05af33e306c6a29780f7
-ms.contentlocale: nb-no
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "342138"
 ---
 # <a name="create-payments-for-a-customer-who-have-direct-debit-mandates"></a>Opprette betalinger for en kunde som har avtalegiromandater
 
@@ -70,5 +70,4 @@ Dette er den femte av fem prosedyrer, som viser kundebetalingsprosessen ved hjel
 13. Klikk Opprett betalinger.
 
 ## <a name="generate-a-payment-file"></a>Generere en betalingsfil
-
 

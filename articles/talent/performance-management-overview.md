@@ -5,9 +5,9 @@ author: mikefalkner
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: rschloma
 ms.search.scope: Core, Operations, Talent
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: mfalkner
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
+ms.openlocfilehash: 67da25514edc6b27f8478a7b317f6690720ab592
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 82f039b305503c604d64610f39838fa86a8eb08a
-ms.openlocfilehash: e7621b4c1358d1ecd6ff1c9ce2f1de08766a4bf6
-ms.contentlocale: nb-no
-ms.lasthandoff: 08/09/2018
-
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "305576"
 ---
-
 # <a name="performance-management"></a>Ytelsesstyring
 
 [!include [banner](includes/banner.md)]
@@ -56,9 +55,9 @@ Når den åpnes fra **ESS**-arbeidsområdet, kan du angi følgende informasjon p
 
 Du kan også koble ytelsesjournalen til et eksternt webområde ved å lagre URL-adressen til dette området. Hvis journalen er knyttet til mål eller ytelsesvurderinger, kan du også koble den til én eller flere av dem. Når ytelsesjournalen åpnes fra **MSS**-siden, kan du angi de samme opplysningene som du kan for ansattjournalen. I tillegg kan du angi ansatte som journalen opprettes for. Du kan velge om du vil dele lederjournalen med ansatte.
 
-### <a name="praise"></a>Ros
+### <a name="send-feedback"></a>Send tilbakemelding
 
-Ytelsesjournalen inneholder en tilleggsfunksjon som heter ros. Når du klikker **Send ros**, kan du velge en ansatt og gi tilbakemelding til den ansatte via e-post. Meldingen sendes til den ansatte som får ros, lederen til denne ansatte, den ansatte som sender rosen, og lederen til denne ansatte. Det opprettes en ytelsesjournaloppføring for hver person som mottar meldingen med ros.
+Ytelsesjournalen inneholder en tilleggsfunksjon som heter Tilbakemelding. Når du klikker **Send tilbakemelding**, kan du velge en ansatt og gi tilbakemelding til den ansatte via e-post. Meldingen sendes til den ansatte som mottar tilbakemeldingen, lederen til denne ansatte, den ansatte som sender tilbakemeldingen, og lederen til denne ansatte. Det opprettes en ytelsesjournaloppføring for hver person som mottar tilbakemeldingen.
 
 ## <a name="goals"></a>Mål
 På **Ytelsesmål**-siden kan du spore målene som du og din overordnede har opprettet for deg. Du kan opprette så mange mål du vil, og disse målene kan strekke seg over forskjellige perioder og ytelsesvurderinger. Du kan også opprette enkle og komplekse mål, avhengig av hvor mye informasjon du vil angi om målet. Mål er ikke nødvendig for ytelsesvurderinger. 
@@ -151,7 +150,6 @@ Kildetyper for ytelsesjournaler beskriver hvor ytelsesjournalene kommer fra. Du 
 ### <a name="review-types"></a>Vurderingstyper
 
 Ytelsesvurderingstyper kan hjelpe deg med å styre virkemåten til en vurdering. Du kan aktivere eller deaktivere arbeidsflyten for en vurdering. Hvis vurderingen ikke bruker arbeidsflyt, kan du definere standardstatus som skal brukes når vurderingen opprettes. Du kan også bestemme om den ansatte, lederen eller begge må godkjenne vurderingen.
-
 
 
 

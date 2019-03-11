@@ -1,13 +1,13 @@
 ---
-title: "Definere leverandørkontoer"
-description: "Dette emnet beskriver hva slags type informasjon du må spesifisere når du oppretter en ny leverandørkonto."
+title: Definere leverandørkontoer
+description: Dette emnet beskriver hva slags type informasjon du må spesifisere når du oppretter en ny leverandørkonto.
 author: mkirknel
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: smmContactPerson, VendBankAccounts, VendTable
 audience: Application User
 ms.reviewer: josaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 7653b01a8d5b80d3026a04d9979906d9ddae5d27
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 4a20fca7420e7bd546e29278b40046d69a81aac6
-ms.contentlocale: nb-no
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "329143"
 ---
-
 # <a name="set-up-vendor-accounts"></a>Definere leverandørkontoer
 
 [!include [banner](../includes/banner.md)]
@@ -116,7 +115,6 @@ Hvis du må betale til en leverandørbankkonto, kan du angi informasjon om lever
 Du kan angi standardkontoene som vises automatisk i leverandørfakturajournaler for den angitte leverandøren. Denne funksjonaliteten kan være nyttig hvis du vanligvis betaler for samme type ting eller tjenester fra de samme leverandørene over tid. Når du angir en standardkonto, kan du raskt og effektivt angi journaloppføringer i fakturajournalen. Standardkontoene du angir, brukes ikke for bestillinger eller for leverandørfakturaer som angis på **Leverandørfaktura**-siden.  
 
 Du velger standardkontoer på siden **Standard kontooppsett** som du kan åpne fra **Faktura**-kategorien i leverandørposten. Kontoene som du velger her, vises i den filtrerte listen over kontoer for leverandørkontoen, når du angir en journaloppføring. Du kan angi én av kontoene som standardkonto.
-
 
 
 

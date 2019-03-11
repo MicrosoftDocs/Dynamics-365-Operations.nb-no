@@ -1,13 +1,13 @@
 ---
-title: "Konfigurere elektronisk rapportering (ER) for å hente data til Power BI"
-description: "Dette emnet forklarer hvordan du kan bruke konfigurasjoner for elektronisk rapportering (ER) for å ordne overføring av data fra din forekomst av Finance and Operations til Power BI-tjenester."
+title: Konfigurere elektronisk rapportering (ER) for å hente data til Power BI
+description: Dette emnet forklarer hvordan du kan bruke konfigurasjoner for elektronisk rapportering (ER) for å ordne overføring av data fra din forekomst av Finance and Operations til Power BI-tjenester.
 author: NickSelin
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
 ms.search.scope: Core, Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
 ms.openlocfilehash: e2d3c03a75fd03dfd3a96a181eff20f934546ec4
-ms.contentlocale: nb-no
-ms.lasthandoff: 08/13/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "335790"
 ---
-
 # <a name="configure-electronic-reporting-er-to-pull-data-into-power-bi"></a>Konfigurere elektronisk rapportering (ER) for å hente data til Power BI
 
 [!include [banner](../includes/banner.md)]
@@ -33,7 +32,7 @@ Dette emnet forklarer hvordan du kan bruke konfigurasjoner for elektronisk rappo
 
 ## <a name="overview"></a>Oversikt
 
-Microsoft Power BI er en samling av programvaretjenester, apper og koblinger som arbeider sammen for å aktivere eksterne datakilder til sammenhengende, visuelt altoppslukende og interaktive innsikter. Elektronisk rapportering (ER) lar brukere av Microsoft Dynamics 365 for Finance and Operations konfigurere datakilder og ordne dataoverføring fra Finance and Operations til Power BI. Dataene overføres som filer i formatet OpenXML-regneark (Microsoft Excel-arbeidsbokfil). De overførte filene lagres på en Microsoft SharePoint-server som er konfigurert for dette formålet. De lagrede filene brukes i Power BI til å opprette rapporter som inneholder visninger (tabeller, diagrammer, kart og så videre). Power BI-rapporter deles med Power BI-brukere, og det er tilgang til dem i Power BI-instrumentbord og på Finance and Operations-sider. Dette emnet forklarer følgende oppgaver:
+Microsoft Power BI er en samling av programvaretjenester, apper og koblinger som arbeider sammen for å aktivere eksterne datakilder til sammenhengende, visuelt altoppslukende og interaktive innsikter. Elektronisk rapportering (ER) lar brukere av Microsoft Dynamics 365 for Finance and Operations enkelt konfigurere datakilder og ordne dataoverføring fra Finance and Operations til Power BI. Dataene overføres som filer i formatet OpenXML-regneark (Microsoft Excel-arbeidsbokfil). De overførte filene lagres på en Microsoft SharePoint-server som er konfigurert for dette formålet. De lagrede filene brukes i Power BI til å opprette rapporter som inneholder visninger (tabeller, diagrammer, kart og så videre). Power BI-rapporter deles med Power BI-brukere, og det er tilgang til dem i Power BI-instrumentbord og på Finance and Operations-sider. Dette emnet forklarer følgende oppgaver:
 
 - Konfigurer Finance og Operations.
 - Klargjøre ER-formatkonfigurasjonen for å hente data fra Finance and Operations.
@@ -147,7 +146,7 @@ Klikk **innstillinger** for den nye målposten. Følg deretter fremgangsmåten n
     [![Ny versjon av Excel-filen](./media/ger-power-bi-output-file-in-sharepoint-server-folder-2-1024x412.png)](./media/ger-power-bi-output-file-in-sharepoint-server-folder-2.png)
 
 ## <a name="create-a-power-bi-dataset-by-using-the-output-result-of-the-er-format"></a>Opprette et Power BI-datasett ved hjelp av utdataresultatet av ER-formatet
-1. Logge på Power BI, og åpne en eksisterende Power BI-gruppen (arbeidsområde) eller opprett en ny gruppe. Klikk **Legg til** under **Filer** under **Importer eller koble til data**, eller klikk plusstegnet (**+**) ved siden av **Datasett** i ruten til venstre.
+1. Logg på Power BI, og åpne en eksisterende Power BI-gruppe (arbeidsområde) eller opprett en ny gruppe. Klikk **Legg til** under **Filer** under **Importer eller koble til data**, eller klikk plusstegnet (**+**) ved siden av **Datasett** i ruten til venstre.
 
     [![Opprette et datasett](./media/ger-power-bi-add-dataset-1024x524.png)](./media/ger-power-bi-add-dataset.png)
 
@@ -198,4 +197,3 @@ Konfigurer integrasjonen mellom Finance and Operations og Power BI. Hvis du vil 
 [Mål for elektronisk rapportering](electronic-reporting-destinations.md)
 
 [Oversikt over elektronisk rapportering](general-electronic-reporting.md)
-

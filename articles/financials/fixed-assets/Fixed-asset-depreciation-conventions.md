@@ -5,9 +5,9 @@ author: saraschi2
 manager: AnnBe
 ms.date: 03/14/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: AssetDepreciationProfile
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: ff8575749a33321450ea61fe1f01105c005e9092
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: c69fd798c2e978935a63b079fb11c68d8555594c
-ms.contentlocale: nb-no
-ms.lasthandoff: 04/13/2018
-
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "337446"
 ---
-
 # <a name="fixed-asset-depreciation-conventions"></a>Konvensjoner for anleggsmiddelavskrivning
 
 [!include [banner](../includes/banner.md)]
@@ -45,5 +44,4 @@ Avskrivningskonvensjoner kan tilordnes til oppsettet for et anleggsmiddelgruppet
 | Midt i måneden (15. i måned) |                                                                                                                                                        Hvis du vil beregne avskrivningsfradraget for året da du setter eiendelen i drift, multipliserer du avskrivningen for et helt år med en brøk. Telleren (øverste tall) i denne brøken er antall hele måneder i året som eiendelen er i drift pluss 1/2 eller (0,5). Nevneren (nederste tall) er 12. Hvis du avhender eiendelen før slutten av fradragsperioden, kan du bruke samme metode for å beregne avskrivningsfradraget for året for disposisjonen.                                                                                                                                                        |
 | Halvår (starten på året) |                                                                                                                                                                                                                                                          Anleggsmidler som har en <strong>Tatt i bruk</strong>-dato i første halvdel av året, begynner å avskrive på den første dagen i året (fullt år). Anleggsmidler som har en <strong>Tatt i bruk</strong>-dato i andre halvdel av året, begynner å avskrive på årets midtpunkt.                                                                                                                                                                                                                                                          |
 |   Halvår (neste år)   |                                                            Anleggsmidler som har en <strong>Tatt i bruk</strong>-dato i første halvdel av året, begynner å avskrive på den første dagen i året (fullt år). Anleggsmidler som har en <strong>Tatt i bruk</strong>-dato i andre halvdel av året, begynner å avskrive på den første dagen i neste år. Anleggsmidler som realiseres i den første halvdelen av året, regnes som realisert for avskrivningsformål på den siste dagen i forrige år. En avskrivning som er postert i inneværende år, må tilbakeføres eller justeres ut. Anleggsmidler som realiseres i den andre halvdelen av året, betraktes som realisert for avskrivningsformål på den siste dagen i året for realisering.                                                            |
-
 

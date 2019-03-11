@@ -1,13 +1,13 @@
 ---
 title: Kassefunksjoner for Norge
-description: "Dette emnet gir en oversikt over hvilke kasse-funksjoner som er tilgjengelige for Norge. Det inneholder også retningslinjer for hvordan du konfigurerer funksjonen."
+description: Dette emnet gir en oversikt over hvilke kasse-funksjoner som er tilgjengelige for Norge. Det inneholder også retningslinjer for hvordan du konfigurerer funksjonen.
 author: EvgenyPopovMBS
 manager: vastrup
 ms.date: 10/23/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 ms.search.form: RetailPosPermissionGroup, RetailFunctionalityProfile, RetailFormLayout, RetailParameters
 audience: Application User
 ms.reviewer: shylaw
@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: epopov
 ms.search.validFrom: 2017-10-31
 ms.dyn365.ops.version: Application update 4
-ms.translationtype: HT
-ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
 ms.openlocfilehash: 2fa48ea11b9bfa156d6c20f18b4247780ed23219
-ms.contentlocale: nb-no
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "371356"
 ---
 # <a name="cash-register-functionality-for-norway"></a>Kassefunksjoner for Norge
 
@@ -116,7 +116,7 @@ SAF-T-kasseformatet er implementert i Detaljhandel Hovedkontor ved hjelp av [ele
 
 ## <a name="setting-up-retail-for-norway"></a>Konfigurere Retail for Norge
 
-Denne delen beskriver innstillingene for Retail som er spesifikke og anbefalte for Norge. Hvis du vil ha mer informasjon om hvordan du konfigurerer Retail, kan du se [Dokumentasjon for Microsoft Dynamics 365 for Retail](../index.md).
+Denne delen beskriver innstillingene for Retail som er spesifikke og anbefalte for Norge. Hvis du vil ha mer informasjon om hvordan du definerer detaljhandel, kan du se [dokumentasjonen for Microsoft Dynamics 365 for Retail](../index.md).
 
 Hvis du vil bruke de spesifikke funksjonene for Norge for Retail, må du fullføre disse oppgavene:
 
@@ -218,4 +218,3 @@ Du må også tilordne nødvendige hoveddata til forhåndsdefinerte SAF-T-standar
 ### <a name="configure-retail-channel-components"></a>Konfigurer komponenter for detaljhandelskanal
 
 Hvis du vil aktivere spesifikke funksjoner for Norge, må du konfigurere utvidelser for komponenter for detaljhandelskanal. Hvis du vil ha mer informasjon, kan du se [retningslinjene for distribusjon](./emea-nor-loc-deployment-guidelines.md).
-

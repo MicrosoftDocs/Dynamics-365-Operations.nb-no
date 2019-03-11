@@ -1,13 +1,13 @@
 ---
 title: Masseoppdatering av faste anleggsmidler
-description: "Hvis du bruker tablåer, kan du endre avskrivningskonvensjonene for grupper av anleggsmidler som er en del av det samme tablået."
+description: Hvis du bruker tablåer, kan du endre avskrivningskonvensjonene for grupper av anleggsmidler som er en del av det samme tablået.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: shylaw
 ms.search.scope: Core, Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: b740f1fe710c2278bd5ac5f8d615f0e305cd7df1
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: b3fb55f1a51652299db8a31274b07f239fbaf28f
-ms.contentlocale: nb-no
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "348808"
 ---
-
 # <a name="fixed-asset-mass-update"></a>Masseoppdatering av faste anleggsmidler
 
 [!include [banner](../includes/banner.md)]
@@ -38,7 +37,6 @@ Når du oppdaterer avskrivningskonvensjonen for anleggsmidler, sletter du alle a
 Når du skal oppdatere avskrivningskonvensjonen for anleggsmidler som allerede er avhendet, må du først slette de eksisterende avhendingstransaksjonene. Du må også slette alle transaksjoner som ble generert på grunnlag av avhendingsprosessen. 
 
 Når du har oppdatert avskrivningskonvensjonen for anleggsmidler, kan du behandle avskrivning og ekstraordinær avskrivning for hvert anleggsmiddel. Du kan også gjøre manuelle avskrivningsjusteringer hvis justeringer er nødvendig.
-
 
 
 

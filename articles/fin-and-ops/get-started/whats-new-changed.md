@@ -1,13 +1,13 @@
 ---
 title: Hva er nytt eller endret?
-description: Denne siden peker til emner som gir deg informasjon om de nye funksjonene i de siste versjonen av Microsoft Dynamics 365 for Finance and Operations.
+description: Denne siden peker til emner som gir deg informasjon om de nye funksjonene i de siste versjonene av Microsoft Dynamics 365 for Finance and Operations.
 author: josaw1
 manager: AnnBe
-ms.date: 12/05/2018
+ms.date: 02/07/2019
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 ms.search.form: DefaultDashboard
 audience: Application User, Developer, IT Pro
 ms.reviewer: sericks
@@ -18,19 +18,18 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
+ms.openlocfilehash: 982b72b3fd71d58038218e007f9f3790874ceddc
+ms.sourcegitcommit: 68df883200b5c477ea1799cc28d3ef467cd29202
 ms.translationtype: HT
-ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
-ms.openlocfilehash: 7d2a334792655a762c136a367c43ad56393001f5
-ms.contentlocale: nb-no
-ms.lasthandoff: 12/18/2018
-
+ms.contentlocale: nb-NO
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "377211"
 ---
-
 # <a name="whats-new-or-changed"></a>Hva er nytt eller endret?
 
 [!include [banner](../includes/banner.md)]
 
-Denne siden peker til emner som gir deg informasjon om de nye funksjonene i de siste versjonen av Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.
+Denne siden peker til emner som gir deg informasjon om de nye funksjonene i de siste versjonene av Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition.
 
 Hvis du vil ha informasjon om hvordan du oppgraderer til den nyeste versjonen, kan du se [Prosessen for å oppgradere til den nyeste versjonen](../../dev-itpro/migration-upgrade/upgrade-latest-update.md).
 
@@ -44,7 +43,7 @@ Denne tabellen viser hovedversjonene av programmet. For månedlige skyoppdaterin
 <table>
 <thead>
 <tr>
-<th>Utgivelse</th>
+<th>Frigi</th>
 <th>Versjon</th>
 <th>Build-nummer</th>
 <th>Tilgjengelighet</th>
@@ -54,10 +53,17 @@ Denne tabellen viser hovedversjonene av programmet. For månedlige skyoppdaterin
 <tbody>
 <tr>
 <td>Microsoft Dynamics 365 for Finance and Operations</td>
+<td>10,0</td>
+<td>10.0.8</td>
+<td>2019. april</td>
+<td><a href="whats-new-changed-10.md">Hva er nytt eller endret i Dynamics 365 for Finance and Operations versjon 10.0 (april 2019)</a></td>
+</tr>
+<tr>
+<td>Microsoft Dynamics 365 for Finance and Operations</td>
 <td>8.1.3</td>
 <td>8.1.227</td>
 <td>januar 2019</td>
-<td><a href="whats-new-changed-8-1-3.md">Hva er nytt eller endret i Dynamics 365 for Finance and Operations versjon 8.1.3 (januar 2019)</a></td>
+<td><a href="whats-new-changed-8-1-3.md">Hva er nytt eller endret i Dynamics 365 for Finance and Operations versjon 8.1.3 (january 2019)</a></td>
 </tr>
 <tr>
 <td>Microsoft Dynamics 365 for Finance and Operations</td>
@@ -88,14 +94,14 @@ Denne tabellen viser hovedversjonene av programmet. For månedlige skyoppdaterin
 <td><a href="whats-new-changed-8-0-April-2018.md">Hva er nytt eller endret i Dynamics 365 for Finance and Operations versjon 8.0 (april 2018)</a></td>
 </tr>
 <tr>
-<td>Microsoft Dynamics 365 for Finance and Operations, Enterprise edition</td>
+<td>Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition</td>
 <td>7.3</td>
 <td>7.3.11971.56116</td>
 <td>2017. desember</td>
 <td><a href="whats-new-application-7.3-update.md">Hva er nytt eller endret i Dynamics 365 for Finance and Operations, Enterprise Edition 7.3</a></td>
 </tr>
 <tr>
-<td>Microsoft Dynamics 365 for Finance and Operations, Enterprise edition</td>
+<td>Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition</td>
 <td>Juli 2017</td>
 <td>7.2.11792.56024</td>
 <td>2017. juni</td>
@@ -106,14 +112,14 @@ Denne tabellen viser hovedversjonene av programmet. For månedlige skyoppdaterin
 <td>1611</td>
 <td>7.1.1541.3036</td>
 <td>November 2016</td>
-<td><a href="whats-new-dynamics-365-operations-1611.md">Hva er nytt eller endret i Dynamics 365 for Operations-versjon 1611 (november 2016)</a></td>
+<td><a href="whats-new-dynamics-365-operations-1611.md">Hva er nytt eller endret i Dynamics 365 for Operations versjon 1611 (november 2016)</a></td>
 </tr>
 <tr>
 <td>Microsoft Dynamics AX</td>
 <td>7.0.1</td>
 <td>7.0.1265.23014</td>
 <td>2016. mai</td>
-<td><a href="whats-new-changed-application-version-7-0-1-may-2016.md">Hva er nytt eller endret i Dynamics AX-programversjon 7.0.1 (mai 2016)</a></td>
+<td><a href="whats-new-changed-application-version-7-0-1-may-2016.md">Hva er nytt eller endret i Dynamics AX programversjon 7.0.1 (mai 2016)</a></td>
 </tr>
 <tr>
 <td>Microsoft Dynamics AX</td>
@@ -130,7 +136,7 @@ Denne tabellen viser hovedversjonene av programmet. For månedlige skyoppdaterin
 <table>
 <thead>
 <tr>
-<th>Frigivelse</th>
+<th>Frigi</th>
 <th>Versjon</th>
 <th>Build-nummer</th>
 <th>Tilgjengelighet</th>
@@ -140,73 +146,80 @@ Denne tabellen viser hovedversjonene av programmet. For månedlige skyoppdaterin
 <tbody>
 <tr>
 <td>Microsoft Dynamics 365 for Finance and Operations</td>
+<td>Plattform update 24</td>
+<td>7.0.5179</td>
+<td>2019. mars</td>
+<td><a href="whats-new-platform-update-24.md">Hva er nytt eller endret i Dynamics 365 for Finance and Operations plattformoppdatering 24 (mars 2019)</a></td>
+</tr>
+<tr>
+<td>Microsoft Dynamics 365 for Finance and Operations</td>
 <td>Plattform update 23</td>
 <td>7.0.5126</td>
 <td>januar 2019</td>
-<td><a href="whats-new-platform-update-23.md">Hva er nytt eller endret i plattformoppdatering 23 (januar 2019) for Dynamics 365 for Finance and Operations</a></td>
+<td><a href="whats-new-platform-update-23.md">Hva er nytt eller endret i Dynamics 365 for Finance and Operations plattformoppdatering 23 (januar 2019)</a></td>
 </tr>
 <tr>
 <td>Microsoft Dynamics 365 for Finance and Operations</td>
 <td>Plattform update 22</td>
 <td>7.0.5095</td>
 <td>2018. desember</td>
-<td><a href="whats-new-platform-update-22.md">Hva er nytt eller endret i plattformoppdatering 22 (desember 2018) for Dynamics 365 for Finance and Operations</a></td>
+<td><a href="whats-new-platform-update-22.md">Hva er nytt eller endret i Dynamics 365 for Finance and Operations plattformoppdatering 22 (desember 2018)</a></td>
 </tr>
 <tr>
 <td>Microsoft Dynamics 365 for Finance and Operations</td>
 <td>Plattform update 21</td>
 <td>7.0.5073</td>
-<td>2018. oktober</td>
-<td><a href="whats-new-platform-update-21.md">Hva er nytt eller endret i plattformoppdatering 21 (oktober 2018) for Dynamics 365 for Finance and Operations</a></td>
+<td>November 2018</td>
+<td><a href="whats-new-platform-update-21.md">Hva er nytt eller endret i Dynamics 365 for Finance and Operations plattformoppdatering 21 (november 2018)</a></td>
 </tr>
 <tr>
 <td>Microsoft Dynamics 365 for Finance and Operations</td>
 <td>Plattform update 20</td>
 <td>7.0.5030</td>
 <td>2018. september</td>
-<td><a href="whats-new-platform-update-20.md">Hva er nytt eller endret i plattformoppdatering 20 (september 2018) for Dynamics 365 for Finance and Operations</a></td>
+<td><a href="whats-new-platform-update-20.md">Hva er nytt eller endret i Dynamics 365 for Finance and Operations plattformoppdatering 20 (september 2018)</a></td>
 </tr>
 <tr>
-<td>Microsoft Dynamics 365 for Finance and Operations, Enterprise edition</td>
+<td>Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition</td>
 <td>Plattform update 15</td>
 <td>7.0.4841</td>
 <td>2018. mars</td>
-<td><a href="whats-new-platform-update-15.md">Hva er nytt eller endret i plattformoppdatering 15 (mars 2018) for Dynamics 365 for Finance and Operations, Enterprise edition</a></td>
+<td><a href="whats-new-platform-update-15.md">Hva er nytt eller endret i Dynamics 365 for Finance and Operations, Enterprise Edition plattformoppdatering 15 (mars 2018)</a></td>
 </tr>
 <tr>
-<td>Microsoft Dynamics 365 for Finance and Operations, Enterprise edition</td>
+<td>Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition</td>
 <td>Plattform update 12</td>
 <td>7.0.4709</td>
 <td>November 2017</td>
 <td><a href="whats-new-platform-update-12.md">Hva er nytt eller endret i Dynamics 365 for Finance and Operations, Enterprise Edition plattformoppdatering 12 (november 2017)</a></td>
 </tr>
 <tr>
-<td>Microsoft Dynamics 365 for Finance and Operations, Enterprise edition</td>
+<td>Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition</td>
 <td>Plattform update 11</td>
 <td>7.0.4679.35176</td>
 <td>2017. oktober</td>
 <td><a href="whats-new-platform-update-11.md">Hva er nytt eller endret i Dynamics 365 for Finance and Operations, Enterprise Edition plattformoppdatering 11 (oktober 2017)</a></td>
 </tr>
 <tr>
-<td>Microsoft Dynamics 365 for Finance and Operations, Enterprise edition</td>
+<td>Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition</td>
 <td>Plattform update 10</td>
 <td>7.0.4641.16233</td>
 <td>2017. august</td>
 <td><a href="whats-new-platform-update-10.md">Hva er nytt eller endret i Dynamics 365 for Finance and Operations, Enterprise Edition plattformoppdatering 10 (august 2017)</a></td>
 </tr>
 <tr>
-<td>Microsoft Dynamics 365 for Finance and Operations, Enterprise edition</td>
+<td>Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition</td>
 <td>Plattform update 9</td>
 <td>7.0.4612.35162</td>
 <td>Juli 2017</td>
-<td><a href="whats-new-platform-update-9.md">Hva er nytt eller endret i plattformoppdatering 9 (juli 2017) for Dynamics 365 for Finance and Operations, Enterprise edition</a></td>
+<td><a href="whats-new-platform-update-9.md">Hva er nytt eller endret i Dynamics 365 for Finance and Operations, Enterprise Edition plattformoppdatering 9 (juli 2017)</a></td>
 </tr>
 <tr>
-<td>Microsoft Dynamics 365 for Finance and Operations, Enterprise edition</td>
+<td>Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition</td>
 <td>Plattform update 8</td>
 <td>7.0.4565.16212</td>
 <td>2017. juni</td>
-<td><a href="whats-new-platform-update-8.md">Hva er nytt eller endret i plattformoppdatering 8 (juni 2017) for Dynamics 365 for Finance and Operations, Enterprise edition</a></td>
+<td><a href="whats-new-platform-update-8.md">Hva er nytt eller endret i Dynamics 365 for Finance and Operations, Enterprise Edition plattformoppdatering 8 (juni 2017)</a></td>
 </tr>
 <tr>
 <td>Microsoft Dynamics 365 for Operations</td>
@@ -266,4 +279,3 @@ Denne tabellen viser hovedversjonene av programmet. For månedlige skyoppdaterin
 </tr>
 </tbody>
 </table>
-

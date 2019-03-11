@@ -1,31 +1,31 @@
 ---
-title: Hva er nytt eller endret i Dynamics 365 for Talent Core HR (14. desember 2018)
+title: Hva er nytt eller endret i Dynamics 365 for Talent Core HR (14. desember 2018)?
 description: Dette emnet beskriver funksjoner som enten er nye eller endret i Microsoft Dynamics 365 for Talent Core HR.
 author: Darinkramer
 manager: AnnBe
 ms.date: 12/14/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: 
-ms.search.form: 
+ms.technology: ''
+ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Talent
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2018-12-14
 ms.dyn365.ops.version: Talent
-ms.translationtype: HT
-ms.sourcegitcommit: 844c23fc908c962203e644f1154cc480425d830b
 ms.openlocfilehash: 7d2866923efd7f115ad5290f35ed4fcac5e47573
-ms.contentlocale: nb-no
-ms.lasthandoff: 12/18/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "305558"
 ---
-# <a name="whats-new-or-changed-in-dynamics-365-for-talent-core-hr-december-14-2018"></a>Hva er nytt eller endret i Dynamics 365 for Talent Core HR (14. desember 2018)
+# <a name="whats-new-or-changed-in-dynamics-365-for-talent-core-hr-december-14-2018"></a>Hva er nytt eller endret i Dynamics 365 for Talent Core HR (14. desember 2018)?
 
 [!include [banner](includes/banner.md)]
 
@@ -151,4 +151,3 @@ De oppdaterte tilordningene skal se ut som følgende bilder.
 ![Arbeidere til arbeider-oppgaven](./media/WorkerMapping.png)
 
 ![Endring av Kjønn-feltet](./media/WorkerTransform.png)
-

@@ -1,13 +1,13 @@
 ---
-title: "Støtte for Kanban-overføringskort for strekkodelesere"
-description: "Kanban-overføringskortet støtter skannerinndata fra et kontrollprogram for strekkodeskanner for å velge, starte, fylle ut og tømme en kanban-jobb."
+title: Støtte for Kanban-overføringskort for strekkodelesere
+description: Kanban-overføringskortet støtter skannerinndata fra et kontrollprogram for strekkodeskanner for å velge, starte, fylle ut og tømme en kanban-jobb.
 author: ChristianRytt
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: KanbanBoardTransferJob
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: e63a33af63144b78d0c375022b9802e11c255598
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: a8393efd51032271d3023f1e0569425a16222cc3
-ms.contentlocale: nb-no
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "319460"
 ---
-
 # <a name="kanban-transfer-board-support-for-barcode-scanners"></a>Støtte for Kanban-overføringskort for strekkodelesere
 
 [!include [banner](../includes/banner.md)]
@@ -45,11 +44,11 @@ I hurtigkategorien **Skanner - registrering** kan du velge registreringsmodus, s
 | Tom                 | Registrerer materialhåndteringsenheten som et Kanban-kort refererer til, som tomt.              |
 | Velg                | Registrerer et Kanban-kortnummer og velger den refererte jobben automatisk i Kanban-listen. |
 
- 
-<a name="registration-mode-select"></a>Registreringsmodusen Velg
+ 
+Registreringsmodusen Velg
 ------------------------
 
-Når du bruker en strekkodeleser til å velge en jobb, endres visningsmodusen for Kanban-kortet. I denne modusen gjelder følgende betingelser:
+Når du bruker en strekkodeleser til å velge en jobb, endres visningsmodusen for Kanban-kortet. I denne modusen gjelder følgende betingelser:
 
 -   Bare den skannede Kanban-jobben vises.
 -   Detaljene om den valgte jobben vises i hurtigkategorien **Detaljer**.
@@ -188,7 +187,6 @@ Statusen for den valgte jobben og statusen for tilknyttede jobber for hendelses-
 </tr>
 </tbody>
 </table>
-
 
 
 

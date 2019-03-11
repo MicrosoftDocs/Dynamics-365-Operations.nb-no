@@ -1,13 +1,13 @@
 ---
 title: Oversikt over materialeunntak
-description: "Dette emnet beskriver hvordan du får bedre innsyn i unntak for råvarer for produksjonsordrer og partiordrer."
+description: Dette emnet beskriver hvordan du får bedre innsyn i unntak for råvarer for produksjonsordrer og partiordrer.
 author: johanhoffmann
 manager: AnnBe
 ms.date: 10/30/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: JmgShopSupervisorWorkspace
 audience: Application User
 ms.reviewer: josaw
@@ -16,13 +16,13 @@ ms.custom: 1705903
 ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2017-12-31
-ms.dyn365.ops.version: 7.3
+ms.dyn365.ops.version: 7.2999999999999998
+ms.openlocfilehash: c7a5cc4f6c6f430a2ceb9125edb3916fe7b71ab8
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 72d4ff5e1311005d3bf43a13e28208cd9b3d1457
-ms.openlocfilehash: eca3141fc48aea24411524e5fc84686d9e4bfaa7
-ms.contentlocale: nb-no
-ms.lasthandoff: 03/08/2018
-
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "344760"
 ---
 # <a name="visibility-into-material-exceptions"></a>Oversikt over materialeunntak
 
@@ -67,4 +67,3 @@ Når flisen er valgt, åpnes **Alle produksjonsbølger**-siden. Denne siden er f
 Flisen **Åpent lagerarbeid som krever oppmerksomhet** viser antallet stykkliste- og formellinjer som er frigitt til lageret, som har ubehandlet arbeid og en råvaredato som er tidligere enn eller lik arbeidsområdedatoen. Linjene må også brukes av en operasjonsressurs som brukes på filteret i arbeidsområdet.
 
 Når flisen er valgt, åpnes **Alt arbeid**-siden. Denne siden er filtrert etter hvor mange åpne arbeidshoder som inneholder arbeidslinjer fra frigitte stykkliste- og formellinjer som oppfyller kriteriene for flisen. Fra **Alt arbeid**-siden kan du behandle arbeidet manuelt.
-

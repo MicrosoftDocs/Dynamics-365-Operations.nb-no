@@ -1,13 +1,13 @@
---- 
+---
 title: " Konfigurere funksjonalitetsprofilen for en selger"
-description: "Denne fremgangsmåten beskriver hvordan du konfigurerer en butikks funksjonsprofilinnstillinger som gjelder for selgere."
+description: Denne fremgangsmåten beskriver hvordan du konfigurerer en butikks funksjonsprofilinnstillinger som gjelder for selgere.
 author: jblucher
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: RetailFunctionalityProfile
 audience: Application User
 ms.reviewer: josaw
@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 650c97c5feecb674f18086e2da1e5fee0ffad254
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
-ms.openlocfilehash: 2652a75f9c4509addd5804d4798f1bc142106c60
-ms.contentlocale: nb-no
-ms.lasthandoff: 02/07/2018
-
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "312583"
 ---
 # <a name="configure-the-functionality-profile-for-a-sales-representative"></a> Konfigurere funksjonalitetsprofilen for en selger
 
@@ -36,5 +36,4 @@ Denne fremgangsmåten beskriver hvordan du konfigurerer en butikks funksjonsprof
     * Du kan bruke funksjonsprofilinnstillingene til å konfigurere salgssted til å automatisk legge til kassereren standard salgsgruppe, til å be om salgsgrupper, og til å kreve salgsgrupper.  
 4. Velg et alternativ i feltet Be om selger.
 5. I feltet Krev selger velger du Ja.
-
 

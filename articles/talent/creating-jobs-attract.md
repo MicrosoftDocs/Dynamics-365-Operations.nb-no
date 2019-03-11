@@ -1,32 +1,31 @@
 ---
 title: Opprette, godkjenne og postere jobber i Attract
-description: "Dette emnet beskriver elementene i en jobb i Attract. Det forklarer også hvordan du oppretter en jobb."
+description: Dette emnet beskriver elementene i en jobb i Attract. Det forklarer også hvordan du oppretter en jobb.
 author: josaw
 manager: AnnBe
 ms.date: 12/21/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: 
-ms.search.form: 
+ms.technology: ''
+ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Talent, Core
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
-ms.search.industry: 
+ms.search.industry: ''
 ms.author: josaw
 ms.search.validFrom: 2018-10-24
 ms.dyn365.ops.version: Talent October 2018 update
-ms.translationtype: HT
-ms.sourcegitcommit: 95031534c43dc0578e258bc3e5376c429d72b0ab
 ms.openlocfilehash: 6c5daa4050d63303f1ac10c24901e5b1182cb62b
-ms.contentlocale: nb-no
-ms.lasthandoff: 12/23/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "305655"
 ---
-
 # <a name="create-approve-and-post-jobs-in-attract"></a>Opprette, godkjenne og postere jobber i Attract
 
 [!include [banner](includes/banner.md)]
@@ -127,7 +126,7 @@ Når en jobb er lagret, kan den sendes til godkjenning. Tabellen nedenfor viser 
 
 I jobblisten kan du filtrere på jobbstatusene.
 
-Godkjenninger kan sendes til alle Microsoft Azure Active Directory (Azure AD)-brukere i firmaet. Godkjenningene sendes parallelt til alle personene som er oppført som godkjennere. Når en jobb er godkjent, kan den aktiveres.
+Godkjenninger kan sendes til en Microsoft Azure Active Directory (Azure AD)-bruker i firmaet. Godkjenningene sendes parallelt til alle personene som er oppført som godkjennere. Når en jobb er godkjent, kan den aktiveres.
 
 Folk som er oppført som godkjennere, mottar en melding i Attract for å informere dem om at de har et element å godkjenne. Et godkjenningselement vises også i **Tilordnet til deg**-delen på instrumentbordet. Når noen godtar eller godkjenner en jobb, mottar ansettelsesteamet en varsling. Til slutt mottar ansettelsesteamet en varsling når jobben er godkjent.
 
@@ -169,4 +168,3 @@ Hvis du vil opprette en jobb, gjør du følgende:
 
 13. Velg **Aktiver** for å aktivere jobben.
 14. Hvis du vil postere jobben, kan du gå til **Posteringer** og deretter velge **Poster nå** under Talent Careers-området eller LinkedIn.
-

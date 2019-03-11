@@ -1,13 +1,13 @@
---- 
+---
 title: Opprette en mva-betaling
-description: "Utlign og poster merverdiavgift-jobben utligner mva-saldoer på mva-kontoene og forskyver dem til mva-oppgjørskontoen for en gitt periode."
+description: Utlign og poster merverdiavgift-jobben utligner mva-saldoer på mva-kontoene og forskyver dem til mva-oppgjørskontoen for en gitt periode.
 author: twheeloc
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: Dialog
 audience: Application User
 ms.reviewer: twheeloc
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: vstehman
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: b0d72c88d6ba851e96ca07b896630549690e9396
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 6ee84da7fd055c8b0b50c43f134c0fc048ecfaeb
-ms.contentlocale: nb-no
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "321760"
 ---
 # <a name="create-a-sales-tax-payment"></a>Opprette en mva-betaling
 
@@ -36,5 +36,4 @@ Utlign og poster merverdiavgift-jobben utligner mva-saldoer på mva-kontoene og 
     * Hvis alternativet Ta med rettelser ikke velges på siden for parametere for økonomimodulen, kan utligningen behandles for forskjellige versjoner. Originalen er den første utligningen for et periodeintervall og kan bare behandles én gang for et periodeintervall. Seneste rettelser utligner mva-transaksjoner som er postert etter at den opprinnelige versjonen er opprettet.   
 5. Angi en dato i feltet Transaksjonsdato.
 6. Klikk OK.
-
 

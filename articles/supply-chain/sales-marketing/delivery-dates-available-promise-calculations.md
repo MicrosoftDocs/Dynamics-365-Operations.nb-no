@@ -5,9 +5,9 @@ author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: SalesATP, SalesAvailableDlvDates
 audience: Application User
 ms.reviewer: josaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: ad70e94521fdb8c6d3f9a76a84aa9da5759fcf89
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 039bc5c572d204d9fa3e10a9f33cb4f4eb00b31c
-ms.contentlocale: nb-no
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "312353"
 ---
-
 # <a name="order-promising"></a>Ordrebekreftelse
 
 [!include [banner](../includes/banner.md)]
@@ -71,7 +70,6 @@ Du oppretter en salgsordrelinje for produktet og angir **150** som antall.
 Fordi leveringsdatokontrollen er metoden ATP, beregnes ATP-data for å finne den tidligst mulige forsendelsesdatoen. Basert på innstillingene vurderes den forsinkede bestillingen og salgsordren, og det resulterende ATP-antallet for den gjeldende datoen er 0. I morgen, når den forsinkede bestillingen forventes å mottas, beregnes ATP-antallet som mer enn 0 (i dette tilfellet beregnes det som 125). Men 10 dager fra nå, når tilleggsbestillingen på 100 enheter forventes å bli mottatt, blir ATP-antallet mer enn 150.  
 
 Derfor settes forsendelsesdatoen til 10 dager fra nå basert på ATP-beregningen. Derfor kan du informere kunden om at det forespurte antallet kan leveres 10 dager fra nå.
-
 
 
 

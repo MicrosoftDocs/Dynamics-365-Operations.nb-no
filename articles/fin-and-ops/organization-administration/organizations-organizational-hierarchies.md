@@ -1,13 +1,13 @@
 ---
 title: Organisasjoner og organisasjonshierarkier
-description: "En organisasjon er en gruppe personer som jobber sammen for å utføre en forretningsprosess eller oppnå et mål. Organisasjonshierarkier representerer relasjonene mellom organisasjonene som utgjør virksomheten."
+description: En organisasjon er en gruppe personer som jobber sammen for å utføre en forretningsprosess eller oppnå et mål. Organisasjonshierarkier representerer relasjonene mellom organisasjonene som utgjør virksomheten.
 author: sericks007
 manager: AnnBe
 ms.date: 08/18/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: OMHierarchyManager, OMOperatingUnit,
 audience: Application User
 ms.reviewer: sericks
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 72834769e393382ac511ad3af21544efddb049d3
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 4f8afc37e8d69b06622176d4f6cfb3ff06a0ab54
-ms.contentlocale: nb-no
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "322243"
 ---
-
 # <a name="organizations-and-organizational-hierarchies"></a>Organisasjoner og organisasjonshierarkier
 
 [!include [banner](../includes/banner.md)]
@@ -42,7 +41,7 @@ Alle interne organisasjoner er typer av **Part**-enheten. Disse organisasjonene 
 
 En juridisk enhet er en organisasjon som har en registrert eller lovfestet juridisk struktur. Juridiske enheter kan inngå juridiske kontrakter og er påkrevd for å klargjøre oppgjør som rapporterer om prestasjonen.
 
-Et firma er en type juridisk enhet. I denne versjonen av Microsoft Dynamics 365 for Finance and Operations er firmaer det eneste typen juridisk enhet som du kan opprette, og hver juridisk enhet er tilknyttet en firma-ID. Denne tilknytningen finnes fordi noen funksjonsområder i programmet bruker en firma-ID eller dataområde-ID, i sine datamodeller. I disse funksjonsområdene brukes firmaer som en grense for datasikkerhet. Brukere har bare tilgang til data for firmaet de er logget på.
+Et firma er en type juridisk enhet. I denne versjonen av Microsoft Dynamics 365 for Finance and Operations er firmaer det eneste typen juridisk enhet som du kan opprette, og hver juridisk enhet er tilknyttet en firma-IDen. Denne tilknytningen finnes fordi noen funksjonsområder i programmet bruker en firma-ID eller dataområde-ID, i sine datamodeller. I disse funksjonsområdene brukes firmaer som en grense for datasikkerhet. Brukere har bare tilgang til data for firmaet de er logget på.
 
 ### <a name="operating-units"></a>Driftsenheter
 
@@ -69,4 +68,3 @@ Definer organisasjonshierarkier for å vise og rapportere for bedriften fra ulik
 Hvert hierarki er tilordnet et formål i Microsoft Dynamics 365 for Finance and Operations. Formålet med et hierarki bestemmer hvilke organisasjonstyper som kan inkluderes i hierarkiet. Formålet bestemmer også bruksscenariene for hierarkiet.
 
 Organisasjoner i et hierarki kan dele parametere, policyer og transaksjoner. En organisasjon kan arve eller overstyre parameterne for den overordnede organisasjonen. Delte hoveddata, for eksempel produkter og adressebøker, gjelder imidlertid for hele organisasjonen og kan ikke overstyres for individuelle organisasjoner. Oppretting av organisasjoner og hierarkier krever nøye planlegging. Hvis du vil ha mer informasjon, kan du se [Planlegge organisasjonshierarkiet](plan-organizational-hierarchy.md).
-

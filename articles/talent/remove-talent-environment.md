@@ -1,13 +1,13 @@
 ---
-title: "Fjerne Talent-miljøer"
-description: "Dette emnet leder deg gjennom prosessen med å fjerne en testversjon eller et produksjonsmiljø for Microsoft Dynamics 365 for Talent."
+title: Fjerne Talent-miljøer
+description: Dette emnet leder deg gjennom prosessen med å fjerne en testkjøring eller et produksjonsmiljø for Microsoft Dynamics 365 for Talent.
 author: rschloma
 manager: AnnBe
 ms.date: 11/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: rschloma
 ms.search.scope: Talent
@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: rschloma
 ms.search.validFrom: 2017-11-20
 ms.dyn365.ops.version: Talent July 2017 update
+ms.openlocfilehash: e0422a5b7ac227ad03ccafb4e34e614dc770a363
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 82f039b305503c604d64610f39838fa86a8eb08a
-ms.openlocfilehash: 5080f1ec182b8cbdf281967185a1afeb9887f682
-ms.contentlocale: nb-no
-ms.lasthandoff: 08/09/2018
-
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "305713"
 ---
 # <a name="remove-talent-environments"></a>Fjerne Talent-miljøer
 
 [!include [banner](includes/banner.md)]
 
-Dette emnet leder deg gjennom prosessen med å fjerne en testversjon eller et produksjonsmiljø for Microsoft Dynamics 365 for Talent.
+Dette emnet leder deg gjennom prosessen med å fjerne en testkjøring eller et produksjonsmiljø for Microsoft Dynamics 365 for Talent.
 
 ## <a name="removing-a-test-drive-environment"></a>Fjerne et testversjonsmiljø
 
@@ -73,5 +73,4 @@ Hvis du vil fjerne et Talent-miljø fra et eksisterende PowerApps-miljø, kan du
 6. I LCS prosjektet velger du flisen **Talent-appbehandling**. 
 7. Velg forekomsten du vil fjerne, som skal være merket med distribusjonsstatusen **Mislykket**.
 8. Velg **Fjern forekomst**, og bekrefte beslutningen. 
-
 

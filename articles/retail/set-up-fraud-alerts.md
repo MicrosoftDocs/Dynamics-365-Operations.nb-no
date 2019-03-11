@@ -1,13 +1,13 @@
 ---
 title: Definere og arbeide med telefonsentersvindelvarsler
-description: "Dette emnet forklarer hvordan du definerer regler for å varsle kundeservicerepresentanter om potensiell falsk informasjon når ordrer behandles. Du kan definere spesifikke koder som brukes til å sette mistenkelige ordrer på vent automatisk eller manuelt."
+description: Dette emnet forklarer hvordan du definerer regler for å varsle kundeservicerepresentanter om potensiell falsk informasjon når ordrer behandles. Du kan definere spesifikke koder som brukes til å sette mistenkelige ordrer på vent automatisk eller manuelt.
 author: josaw1
 manager: AnnBe
 ms.date: 05/14/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 ms.search.form: SalesPostingHistory, MCRHoldCodeTrans
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
 ms.openlocfilehash: 13b6a18750e79a17c7f6034780922c64b12390e2
-ms.contentlocale: nb-no
-ms.lasthandoff: 01/04/2019
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "361504"
 ---
-
 # <a name="set-up-and-work-with-call-center-fraud-alerts"></a>Definere og arbeide med telefonsentersvindelvarsler
 
 [!include [banner](includes/banner.md)]
@@ -69,4 +68,3 @@ Ordren er lagret, men **Ikke behandle**-flagget er angitt på den. Dette flagget
 Hvis du vil vise og behandle ordrene som er på vent for svindelgjennomgang, kan du gå til **Retail** \> **Kunder** \> **Ordresperrer**. På siden **Ordresperrer** velger du en oppføring i listen, og deretter klikker du på **Ordresperre** for å se en mer detaljert visning som inneholder informasjon om årsaken til at sperringen. I hurtigkategorien **Svindeldetaljer** kan du vise de systematiske svindelkriteriene som var et treff for bestillingen, og resultatene som ble brukt. Hvis ordren ble satt på vent manuelt, kan du gå gjennom eventuelle kommentarer som ble angitt av brukeren som satte ordren på vent, ved å se på **Svindelmerknader**-delen på **Notater**-hurtigkategorien.
 
 Du finner mer informasjon om hvordan du arbeider med sperreordrer, ved å se [Ordresperrer](https://docs.microsoft.com/dynamics365/unified-operations/retail/work-with-order-holds).
-

@@ -1,31 +1,30 @@
 ---
 title: Opprette serviceordrer automatisk
-description: "Du kan opprette serviceordrer for én serviceavtale eller for flere serviceavtaler."
+description: Du kan opprette serviceordrer for én serviceavtale eller for flere serviceavtaler.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 05/01/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: SMAServiceOrderTable
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
 ms.author: ShylaThompson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: ee68190b117b974ff4131f5d2237d138cac1fda3
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: c39e5b5eb79859b0a76c357edfee953ca90c0c4a
-ms.contentlocale: nb-no
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "358330"
 ---
-
 # <a name="create-service-orders-automatically"></a>Opprette serviceordrer automatisk    
 
 [!include [banner](../includes/banner.md)]
@@ -70,6 +69,5 @@ Når du oppretter serviceordrer manuelt eller automatisk fra serviceavtalelinjen
 [Automatisk opprette serviceordrer](auto-create-service-orders.md)
 
   
-
 
 

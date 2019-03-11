@@ -5,9 +5,9 @@ author: sericks007
 manager: AnnBe
 ms.date: 11/03/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: WorkflowSelectTemplateRnr, WorkflowTableListPageRnr
 audience: Application User, IT Pro
 ms.reviewer: sericks
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: donaldc
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
+ms.openlocfilehash: 7d4a3c5e12b226a7d801d8db9abcbd15738c1ce0
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 764d4c9049d94ebcd55c61654aa2f4133b35bae6
-ms.openlocfilehash: 0edf6f1a97b3bbd074168a3cb8bb5c2375492b71
-ms.contentlocale: nb-no
-ms.lasthandoff: 08/09/2018
-
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "353362"
 ---
-
 # <a name="create-workflows"></a>Opprette arbeidsflyter
 
 [!include [banner](../includes/banner.md)]
@@ -34,7 +33,7 @@ Dette emnet forklarer hvordan du oppretter en arbeidsflyt.
 
 ## <a name="open-the-workflow-editor"></a>Åpne redigeringsprogrammet for arbeidsflyt
 
-Microsoft Dynamics 365 for Finance and Operations-modulen som du arbeider i, bestemmer hvilke typer arbeidsflyt som du kan opprette. Følg denne fremgangsmåten for å velge typen arbeidsflyt for å opprette og åpne redigeringsprogrammet for arbeidsflyt.
+Microsoft Dynamics 365 for Finance and Operations-modulen du arbeider i bestemmer hvilke typer arbeidsflyt du kan opprette. Følg denne fremgangsmåten for å velge typen arbeidsflyt for å opprette og åpne redigeringsprogrammet for arbeidsflyt.
 
 1. Åpne modulen du vil opprette en ny arbeidsflyt for. Hvis du for eksempel vil opprette en arbeidsflyt for innkjøpsrekvisisjoner, klikker du **Innkjøp og leverandører**.
 2. Klikk **Oppsett** &gt; **\[Arbeidsflyter for\] modulnavn**.
@@ -85,4 +84,3 @@ Når du er klar til å lagre og aktivere arbeidsflyten, følger du denne fremgan
 
     - Hvis du vil aktivere denne versjonen av arbeidsflyten, klikker du **Aktiver den nye versjonen**. Når en arbeidsflyt er aktiv, kan brukere sende dokumenter til den for behandling.
     - Hvis du ikke vil aktivere denne versjonen, klikker du **Ikke aktiver den nye versjonen**. Du kan aktivere arbeidsflyten senere.
-

@@ -1,32 +1,31 @@
 ---
-title: "Arbeidsområde for kostnadskontroll"
-description: "Dette emnet gir informasjon om arbeidsområdet for kostnadskontroll. Dette arbeidsområdet er et sentralt punkt der ledere som har ansvaret for å kontrollere et kostnadsobjekt eller et sett med kostnadsobjekter i en dimensjon eller på tvers av dimensjoner, kan få tilgang til rapporter."
+title: Arbeidsområde for kostnadskontroll
+description: Dette emnet gir informasjon om arbeidsområdet for kostnadskontroll. Dette arbeidsområdet er et sentralt punkt der ledere som har ansvaret for å kontrollere et kostnadsobjekt eller et sett med kostnadsobjekter i en dimensjon eller på tvers av dimensjoner, kan få tilgang til rapporter.
 author: AndersGirke
 manager: AnnBe
 ms.date: 06/16/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CAMCostControlWorkspaceConfiguration, CAMCostControlWorkspace
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: global
 ms.search.industry: Manufacturing
 ms.author: shylaw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
+ms.openlocfilehash: c6a196c677ed27666efec8a180f1d3b7e7ee931c
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 934ab83d45aad32c067e8422c5415d4a0a6481b4
-ms.contentlocale: nb-no
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "363758"
 ---
-
 # <a name="cost-control-overview"></a>Oversikt over kostnadskontroll 
 
 [!include [banner](../includes/banner.md)]
@@ -157,6 +156,5 @@ I eksemplet nedenfor er tildelingsgrunnlaget av typen **Formeltildelingsgrunnlag
 Tilleggsressurser 
 
 [Definere tilgangsrettigheter for kontrollere for kostnadsobjekt](access-rights-cost-object-controller.md)
-
 
 

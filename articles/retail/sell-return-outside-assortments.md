@@ -5,27 +5,26 @@ author: pdp1207
 manager: AnnBe
 ms.date: 05/24/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 ms.search.form: RetailAssortmentDetails
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations, Retail
-ms.custom: 
+ms.custom: ''
 ms.search.region: Global
 ms.search.industry: retail
 ms.author: prabhup
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
 ms.openlocfilehash: 653a388de1a972fae488abd81f349d1b138fc716
-ms.contentlocale: nb-no
-ms.lasthandoff: 01/04/2019
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "352304"
 ---
-
 # <a name="sell-and-return-products-that-arent-part-of-a-stores-assortment"></a>Selge og returnere produkter som ikke er en del av butikksortimentet
 
 [!include [banner](includes/banner.md)]
@@ -38,7 +37,7 @@ Her er noen vanlige scenarier:
 + En forhandler fører ikke bestemte produkter i butikken eller har dem ikke på lager i butikken kunden besøkte, men produktene er tilgjengelige i andre butikker. Butikkmedarbeideren kan hjelpe kunden med å søke etter produktene i den andre butikken, legge dem til i handlekurven og fullføre utsjekkingen ved å velge en leveringsmetode.
 + En forhandler har mange butikker i og rundt et bestemt poststed, og vil ikke tvinge kundene til å returnere varer til den samme butikken som de ble kjøpt i. Kunder kan i stedet returnere varer til alle butikker.
 
-Vanlige scenarier er tilgjengelige for forhandlere ved hjelp av 365 Dynamics for Retail. Med Retail kan du:
+Vanlige scenarier er tilgjengelige for forhandlere ved hjelp av Dynamics 365 for Retail. Med Retail kan du:
 
 + Søke etter eller bla gjennom produkter i andre butikker.
 + Søke etter eller bla gjennom alle frigitte produkter.
@@ -47,4 +46,3 @@ Vanlige scenarier er tilgjengelige for forhandlere ved hjelp av 365 Dynamics for
 + Plukke produkter i den gjeldende butikken eller annen butikk.
 + Annullere en ordre i den gjeldende butikken eller annen butikk.
 + Returnere en ordre med eller uten mottaket i den gjeldende butikken eller annen butikk.
-

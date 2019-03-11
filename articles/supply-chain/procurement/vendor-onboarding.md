@@ -1,13 +1,13 @@
 ---
-title: "Ønske leverandører velkommen"
-description: "Dette emnet beskriver prosessen for å ønske nye leverandører velkommen. Det forklarer handlingene som kreves av forskjellige roller under denne prosessen."
+title: Ønske leverandører velkommen
+description: Dette emnet beskriver prosessen for å ønske nye leverandører velkommen. Det forklarer handlingene som kreves av forskjellige roller under denne prosessen.
 author: mkirknel
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: VendProspectiveVendorRegistrationRequests,SysUserRequestListPage
 audience: Application User
 ms.reviewer: josaw
@@ -15,15 +15,14 @@ ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2017-12-31
-ms.dyn365.ops.version: 7.3
+ms.dyn365.ops.version: 7.2999999999999998
+ms.openlocfilehash: 5fda191a41300eea7f3036af54852857d8ff653d
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 83648a93f367510d7b04bbd04a9f37689ecfaa59
-ms.openlocfilehash: f831d986d7b534bf030bee0fa0c5dcb97af03289
-ms.contentlocale: nb-no
-ms.lasthandoff: 05/23/2018
-
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "322151"
 ---
-
 # <a name="onboard-vendors"></a>Ønske leverandører velkommen
 [!include [banner](../includes/banner.md)]
 
@@ -35,7 +34,7 @@ Prosessen består av følgende trinn, der forskjellige roller utfører handlinge
 
 1. **Behandling av OData** – Enhetsimport – Den innledende forespørselen er registreringsforespørselen fra en potensiell leverandør. Denne forespørselen kommer vanligvis fra en kilde, for eksempel et nettsted som drives av en kunde, som tillater anonym tilgang. Leverandører kan registrere seg ved å angi grunnleggende opplysninger, for eksempel leverandørnavn, begrunnelse, organisasjonsnummer og kontaktpersonens navn og e-postadresse. Forespørslene importeres via grensesnittet for databehandling.
 2. **Listeside for registreringsforespørselen fra potensielle leverandører** – Basert på informasjonen som er angitt i registreringsforespørselen fra den potensielle leverandøren, bestemmer en innkjøpsansvarlig om leverandøren skal ønskes velkommen. Innkjøpsansvarlig ser den innkommende forespørselen på listesiden **Registreringsforespørsler fra potensielle leverandører** i Finance and Operations.
-3. **Arbeidsflyt for brukerklargjøring** –Når en innkjøpsansvarlig har bekreftet informasjonen i den innkommende forespørselen og har bestemt seg for å fortsette med velkomstprosessen, klargjør arbeidsflyten for brukerforespørsler den nye brukeren og sender en e-postinvitasjonen om å godta kontaktpersonen som en godkjent bruker av Microsoft Dynamics 365.
+3. **Arbeidsflyt for brukerklargjøring** – Når en innkjøpsansvarlig har bekreftet informasjonen i den innkommende forespørselen og har bestemt seg for å fortsette med velkomstprosessen, klargjør arbeidsflyten for brukerforespørsler den nye brukeren og sender en e-postinvitasjonen om å godta kontaktpersonen som en godkjent bruker av Microsoft Dynamics 365.
 4. **Veiviser for registrering av leverandører** – Leverandørens kontaktpersoner logger seg på Finance and Operations ved hjelp av den nye brukerkontoen. Han eller hun fullfører veiviseren for registrering av leverandører for å oppgi informasjon, som adresser, forretningsinformasjon, innkjøpskategorier og svar på et spørreskjema.
 5. **Arbeidsflyt for godkjenning** – En leverandørforespørsel som inneholder informasjon om registreringen, opprettes. Denne leverandørforespørselen blir sendt til en arbeidsflyt, og rutes til gjennomgang og godkjenning.
 6. **Oppretting av en original for leverandør og endring av brukerrolle** – Når leverandørforespørselen er godkjent, opprettes en leverandørpost. Brukerkontoen til leverandørens kontaktperson får enten tillatelse til å samarbeide med leverandøren, eller den deaktiveres.
@@ -49,7 +48,7 @@ Tabellen nedenfor viser trinnene og rollene som er involvert i prosessen.
 | Administrator            | | | Opprett en bruker i Finance and Operations og Microsoft Azure. | | | |
 | Leverandørens kontaktperson    | | | Send e-post til kontaktpersonen. | Registrer leverandørinformasjon. | | |
 
-For en rask demonstrasjon av velkomstprosessen for leverandører, kan du se denne korte YouTube-videoen: [Introdusere en ny leverandør i Dynamics 365 for Finance and Operations](https://www.youtube.com/watch?v=0KUc3AGaTKk}.
+For en rask demonstrasjon av leverandørintroduksjonsprosessen, kan du se denne korte YouTube-videoen: [Introdusere en ny leverandør i Dynamics 365 for Finance and Operations](https://www.youtube.com/watch?v=0KUc3AGaTKk}.
 
 ## <a name="importing-the-prospective-vendor-registration-request"></a>Importere forespørselen om registrering av potensiell leverandør
 
@@ -66,7 +65,7 @@ Tabellen nedenfor viser informasjonen som denne enheten inneholder, og som kan i
 | Kontaktens fornavn.  | Fornavnet til personen som inviteres til å registrere leverandørinformasjonen. |
 | Kontaktens mellomnavn | Mellomnavnet til personen som inviteres til å registrere leverandørinformasjonen. |
 | Kontaktens etternavn   | Etternavnet til personen som inviteres til å registrere leverandørinformasjonen. |
-| Kontaktens e-post       | E-postadressen som skal brukes til å opprette en ny bruker i Finance and Operations, og som skal registreres i tenantens Azure AD-konto (Azure Active Directory). |
+| Kontaktens e-post       | E-postadressen som skal brukes til å opprette en ny bruker i Finance and Operations, og som skal registreres i leierens Azure Active Directory (Azure AD)-konto (Azure Active Directory). |
 | Sendt dato               | Datoen da forespørselen ble opprettet i et eksternt system. |
 | Juridisk enhet                 | Den juridiske enheten der leverandøren ber om å bli en leverandør. Denne verdien må være en kode for juridisk enhet som er registrert i Finance and Operations. Hvis ingen verdi er mottatt gjennom importprosessen, en verdi fra innkjøp og leverandører parametere brukes. |
 | Leverandørtype                  | Leverandøren kan være enten en organisasjon eller en person. Leverandørtypen bestemmer hvordan leverandøren opprettes til slutt. |
@@ -174,5 +173,4 @@ Ved hjelp av **Slett**-handlingen i registreringsforespørselen om potensiell le
 |  Leverandørforespørsel opprettet  |                                                                     Registreringsveiviseren for leverandører er fullført.                                                                      | En forespørsel om å deaktivere brukeren opprettes, og av registreringsforespørselen for potensiell leverandør slettes, og dataene som ble angitt i registreringsveiviseren for leverandøren, og leverandørforespørselen slettes.<blockquote>[!NOTE]<br>Du kan ikke bruke <strong>Slett</strong>-handlingen når leverandørforespørselen er i en kontrollprosess i arbeidsflyten.</blockquote> |
 |         Godkjent         |                                                                               Leverandørforespørselen er godkjent.                                                                               |                                                                                                   Registreringsforespørselen for potensiell leverandør slettes, dataene som ble angitt i registreringsveiviseren for leverandøren, og leverandørforespørselen slettes.                                                                                                    |
 |         Avslått         |                                                                               Leverandørforespørselen er avvist.                                                                               |                                                                                                   Registreringsforespørselen for potensiell leverandør slettes, dataene som ble angitt i registreringsveiviseren for leverandøren, og leverandørforespørselen slettes.                                                                                                    |
-
 

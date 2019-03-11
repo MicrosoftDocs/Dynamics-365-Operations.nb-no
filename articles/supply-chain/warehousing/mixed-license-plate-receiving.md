@@ -1,13 +1,13 @@
 ---
 title: Mottak av kombinerte skiltnumre
-description: "Dette emnet beskriver hvordan du bruker mottak av kombinerte skiltnumre til å registrere og opprette arbeid for flere varer med en mobilenhet."
+description: Dette emnet beskriver hvordan du bruker mottak av kombinerte skiltnumre til å registrere og opprette arbeid for flere varer med en mobilenhet.
 author: Mirzaab
 manager: AnnBe
 ms.date: 05/26/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: WHSRFAutoConfirm
 audience: Application User
 ms.reviewer: josaw
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: a44165bc59d65a9dfdf8e591152f427b97930b34
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: ec3fdff6e1118f4a4ef4146d315fe8c58664f453
-ms.contentlocale: nb-no
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "365897"
 ---
-
 # <a name="mixed-license-plate-receiving"></a>Mottak av kombinerte skiltnumre
 
 [!include [banner](../includes/banner.md)]
@@ -50,4 +49,3 @@ Du må opprette et nytt menyelement med modus for arbeid som ikke bruker eksiste
 - Mottak og plassering av kombinerte skiltnumre
 
 Alternativene for å identifisere kildedokumentlinjene er bestillingsvare, bestillingslinje, returordre, overføringsordrevare og overføringsordrelinje. Disse alternativene kan endre mottaksordren på et enkelt nummerskilt. Det siste alternativet er etter lastvare. Du kan legge til flere elementer i et nummerskilt, men du kan ikke bytte mellom flere laster.
-

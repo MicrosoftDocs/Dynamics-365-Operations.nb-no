@@ -1,13 +1,13 @@
 ---
-title: "Definere parametere for Personale (HR) på tvers av juridiske enheter"
-description: "Du må definerte delte parametere for poster som deles på tvers av firmaer, for eksempel stillingsposter. Denne artikkelen forklarer hvordan du definerer personalparametere på tvers av juridiske enheter."
+title: Definere parametere for Personale (HR) på tvers av juridiske enheter
+description: Du må definerte delte parametere for poster som deles på tvers av firmaer, for eksempel stillingsposter. Denne artikkelen forklarer hvordan du definerer personalparametere på tvers av juridiske enheter.
 author: rschloma
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: 
+ms.technology: ''
 ms.search.form: HcmSharedParameters
 audience: Application User
 ms.reviewer: rschloma
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: shielas
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 82f039b305503c604d64610f39838fa86a8eb08a
 ms.openlocfilehash: cc5acf7ba1b350ee2c91923c7de3b4780385f3ef
-ms.contentlocale: nb-no
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "305559"
 ---
-
 # <a name="set-up-human-resources-hr-parameters-across-legal-entities"></a>Definere parametere for Personale (HR) på tvers av juridiske enheter
 
 [!include [banner](includes/banner.md)]
@@ -54,7 +53,6 @@ I kategorien **Stillinger** angi om nye stillinger er tilgjengelige for tilordni
 --------
 
 [Definere firmaspesifikke parametere for Personale](set-up-company-specific-hr-parameters.md)
-
 
 
 

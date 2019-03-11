@@ -1,13 +1,13 @@
 ---
 title: Reversere produksjonsordrestatusen
-description: "Dette emnet beskriver hvordan du tilbakefører statusen for en produksjonsordre."
+description: Dette emnet beskriver hvordan du tilbakefører statusen for en produksjonsordre.
 author: johanhoffmann
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ProdParmStatusDecrease
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 7ca5a62b4509f0c7e49da94128e72eae5f35829e
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 4761e44b6bbc93ebf4a395948f42c2a73013ecb9
-ms.contentlocale: nb-no
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "367323"
 ---
-
 # <a name="reverse-the-production-order-status"></a>Reversere produksjonsordrestatusen
 
 [!include [banner](../includes/banner.md)]
@@ -51,7 +50,6 @@ Når du tilbakefører statusen for en produksjonsordre fra **Frigitt** til **Pla
 
 ## <a name="from-started-to-released"></a>Fra Startet til Frigitt
 Når du tilbakefører statusen for en produksjonsordre fra **Startet** til **Frigitt**, blir alle varer som er rapportert som avsluttet, tilbakestilt. Hvis emballasje er plukket, eller inngående og utgående leveringer er gjort til produksjon, tilbakeføres også disse innstillingene. **Gjenværende status**-feltet på stykklistelinjene i produksjonsordren endres fra **Avsluttet** til **Materialforbruk**. Hvis tidspunkt er registrert, eller hvis antall er blitt rapportert som fullført for operasjonene i produksjonsruten, tilbakeføres disse innstillingene. **Gjenværende status**-feltet endres fra **Avsluttet** til **Ruteforbruk** i produksjonsruten. Innstillingene for alle varer som blir postert som pågår eller varer i arbeid, blir tilbakeført. På siden **Produksjonsordredetaljer** tilbakestilles felt som viser et antall som ble startet eller ferdigmeldt. Datoene for disse transaksjonene tilbakestilles også.
-
 
 
 

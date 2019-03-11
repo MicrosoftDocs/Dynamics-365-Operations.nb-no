@@ -1,13 +1,13 @@
 ---
-title: "Oversikt over SEPA-kredittoverføring"
-description: "Denne artikkelen inneholder generell informasjon om ISO 20022-kredittoverføringer, som inkluderer kredittoverføringer for felles eurobetalingsområde (SEPA) og andre elektroniske betalinger for leverandører. En SEPA-kredittoverføring er en bestemt type betaling i euro fra ett firma eller en enkeltperson til et annet firma eller en enkeltperson. Emnet beskriver også hvordan du konfigurerer og sender en betalingsfil for kredittoverføring."
+title: Oversikt over SEPA-kredittoverføring
+description: Denne artikkelen inneholder generell informasjon om ISO 20022-kredittoverføringer, som inkluderer kredittoverføringer for felles eurobetalingsområde (SEPA) og andre elektroniske betalinger for leverandører. En SEPA-kredittoverføring er en bestemt type betaling i euro fra ett firma eller en enkeltperson til et annet firma eller en enkeltperson. Emnet beskriver også hvordan du konfigurerer og sender en betalingsfil for kredittoverføring.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: LedgerJournalTransVendInvoice, LedgerJournalTransVendPaym, VendPaymMode
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: mrolecki
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: d6081c12ea65812a15b50c627330b4566ab4c679
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 1aa70dea3b0e7056afbdba96f4475c3e7e71f57c
-ms.contentlocale: nb-no
-ms.lasthandoff: 04/13/2018
-
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "363781"
 ---
-
 # <a name="sepa-credit-transfer-overview"></a>Oversikt over SEPA-kredittoverføring
 
 [!include [banner](../includes/banner.md)]
@@ -55,7 +54,7 @@ En SEPA-kredittoverføring er en betaling fra ett firma eller en enkeltperson ti
 Betalingsformatet for kredittoverføringer for EU-land implementeres ved hjelp av Generell elektronisk rapportering- og Betalingsmåter-funksjonaliteten i Microsoft Dynamics 365 for Finance and Operations. Noen får kredittoverføringsformater som brukes i andre områder, bruker fremdeles det eldre betalingsrammeverket. Det er blant annet tolv filformater for ISO 20022-kredittoverføring som er tilgjengelig. Disse eksportformatene overholder SEPA ISO 20022 XML-standarden. De brukes til å generere ikke-euro-betalingsoverføringer for land/områder der de brukes, og euro-betalinger som er angitt i versjon 8.2 av SEPA-kredittoverføringsreglene som EPC utgir. Før du kan implementere kredittoverføringer må du kontakte banken din for å få programvaren som kreves for å laste opp filer for elektroniske banktjenester. Du vil bruke denne programvaren til å overføre XML-filene som inneholder betalingsordrer til banken.
 
 ## <a name="what-credit-transfer-formats-are-currently-supported-in-finance-and-operations"></a>Hvilke kredittoverføringsformater støttes i Finance and Operations?
-Du bør alltid gå til det delte ativabiblioteket i Microsoft Dynamics Lifecycle services (LCS) og viser den mest oppdaterte listen over tilgjengelige filer som har en aktivatypen **TYSK konfigurasjon**. Den neste delen, "Hva må jeg konfigurere?", inneholder en kobling til emnet som forklarer hvordan du oppretter et LCS-repositorium for å se gjennom tilgjengelige konfigurasjoner og importere valgte konfigurasjoner.
+Du bør alltid gå til det delte ativabiblioteket i Microsoft Dynamics Lifecycle services (LCS) og vise den mest oppdaterte listen over tilgjengelige filer som har en aktivatypen **TYSK konfigurasjon**. Den neste delen, "Hva må jeg konfigurere?", inneholder en kobling til emnet som forklarer hvordan du oppretter et LCS-repositorium for å se gjennom tilgjengelige konfigurasjoner og importere valgte konfigurasjoner.
 
 ## <a name="what-do-i-have-to-set-up"></a>Hva må jeg konfigurere?
 -   Før du kan opprette kredittoverføringsfiler må minst én aktiv kredittoverføringskonfigurasjon importeres til ER-konfigurasjonene. hvis du vil ha mer informasjon, kan du se [Laste ned elektroniske rapporteringskonfigurasjoner fra Lifecycle Services](../../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).
@@ -124,7 +123,6 @@ IBAN (International Bank Account Number) og BIC (Bank Identifier Code) brukes ti
 
 ## <a name="how-do-i-transmit-a-payment-file-to-the-bank"></a>Hvordan sender jeg en betalingsfil til banken?
 Når du genererer betalinger, genereres betalingsfilen, og du blir bedt om å lagre den fra webleseren og til en hvilken som helst plassering. Det neste trinnet er å sende XML-filen til banken. Denne prosessen varierer fra bank til bank. Følg instruksjonene fra banken din når du skal sende filer til banken for behandling.
-
 
 
 

@@ -1,13 +1,13 @@
 ---
-title: "Innkjøpspolicyer"
-description: "Denne artikkelen inneholder informasjon om innkjøpspolicyer. En innkjøpspolicy er en samling av regler som styrer rekvisisjonsprosessen. Innkjøpspolicyer hjelpe innkjøpsadministratorer med å implementere sin innkjøpsstrategi ved å opprette en policystruktur som er i samsvar med organisasjonens krav til strategiske innkjøp."
+title: Innkjøpspolicyer
+description: Denne artikkelen inneholder informasjon om innkjøpspolicyer. En innkjøpspolicy er en samling av regler som styrer rekvisisjonsprosessen. Innkjøpspolicyer hjelpe innkjøpsadministratorer med å implementere sin innkjøpsstrategi ved å opprette en policystruktur som er i samsvar med organisasjonens krav til strategiske innkjøp.
 author: mkirknel
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: PurchReqSourcingPolicyRule, SysPolicy, SysPolicyListPage
 audience: Application User
 ms.reviewer: josaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: a16f365fa5a8b39dddac2886c36a8231de745a37
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 675a7a8b0da228e789ee37ca8fe1d0c0ea01c283
-ms.contentlocale: nb-no
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "358767"
 ---
-
 # <a name="purchasing-policies"></a>Innkjøpspolicyer
 
 [!include [banner](../includes/banner.md)]
@@ -148,7 +147,6 @@ Konsolideringsregel for bestillingsopprettelse og behov definerer policyreglene 
     -   **Ikke tillat etterspørselskonsolidering** – ingen godkjente innkjøpsrekvisisjonslinjer er kvalifisert for behovskonsolidering. Dette alternativet er valgt som standard og gjelder bare for innkjøpsrekvisisjonslinjer som krever manuell behandling ved oppretting av bestillinger.
     -   **Tillat alltid etterspørselskonsolidering** – alle godkjente innkjøpsrekvisisjonslinjer er kvalifisert for behovskonsolidering. **Obs!** Hvis du velger alternativet **Tillat alltid etterspørselskonsolidering** i kategorien **Behovskonsolidering**, men du velger alternativet **Opprett automatisk bestillinger** i kategorien **Manuell bestillingsopprettelse**, blir alle innkjøpsrekvisisjoner låst for manuell behandling.
     -   **Tillat etterspørselskonsolidering under disse betingelsene** – Definer kriteriene som bestemmer om godkjente innkjøpsrekvisisjonslinjer er kvalifisert for behovskonsolidering. For hver type innkjøpsrekvisisjonslinje kan du angi kriteriene etter innkjøpskategori og leverandør. Hvis du velger **Tillat etterspørselskonsolidering under disse betingelsene**, kan du angi kriteriene etter innkjøpskategori og leverandør for hver type innkjøpsrekvisisjonslinje. Når du velger en innkjøpskategori, blir alle underkategorier for denne innkjøpskategorien også valgt. Hvis du velger **Alle** for en bestemt linjetype, er alle innkjøpsrekvisisjonslinjene for denne linjetypen berettiget til behovskonsolidering.
-
 
 
 

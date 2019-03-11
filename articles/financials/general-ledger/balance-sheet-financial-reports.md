@@ -1,13 +1,13 @@
 ---
 title: Finansrapporter for balanse
-description: "Denne artikkelen beskriver standardrapportene for balansen. Den beskriver også byggeblokker som er knyttet til disse rapportene."
+description: Denne artikkelen beskriver standardrapportene for balansen. Den beskriver også byggeblokker som er knyttet til disse rapportene.
 author: jcart1106
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: FinanicalReports
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 9ff778af1bb3af3a10132ab3193ad1cd5daa24e1
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 1c92ccb37b62a39e5ab4808454f8c6f84560d917
-ms.contentlocale: nb-no
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "342299"
 ---
-
 # <a name="balance-sheet-financial-reports"></a>Finansrapporter for balanse
 
 [!include [banner](../includes/banner.md)]
@@ -80,7 +79,6 @@ Kolonnedefinisjonene inneholder ulike typer kolonner for å angi ulike nivåer a
 [Vise finansrapporter](view-financial-reports.md)
 
 [Blogg for Dynamics-finansrapportering](http://blogs.msdn.com/b/dynamics_financial_reporting/)
-
 
 
 

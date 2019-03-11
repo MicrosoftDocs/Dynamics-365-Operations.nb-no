@@ -3,32 +3,32 @@ title: Startside for lokale distribusjoner
 description: Dette emnet gir informasjon og koblinger til innhold om lokale distribusjoner.
 author: kfend
 manager: AnnBe
-ms.date: 11/02/2018
+ms.date: 02/01/2019
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
 ms.search.scope: Core, Operations
 ms.custom: 55651
-ms.assetid: 
+ms.assetid: ''
 ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
+ms.openlocfilehash: c51cce929384b7e822213dcb9df9007edfe3700c
+ms.sourcegitcommit: bacad87e2b9146e08e6fe16af01356954eb90574
 ms.translationtype: HT
-ms.sourcegitcommit: b8fb8c963e2bba2e6fe7cb31e71a38232f1e8a54
-ms.openlocfilehash: c80a41427db18607577b4f89c8e30fe6c8f872d3
-ms.contentlocale: nb-no
-ms.lasthandoff: 11/02/2018
-
+ms.contentlocale: nb-NO
+ms.lasthandoff: 02/01/2019
+ms.locfileid: "373283"
 ---
 # <a name="on-premises-deployments-home-page"></a>Startside for lokale distribusjoner
 
 [!include [banner](../includes/banner.md)]
 
-Du kan distribuere Microsoft Dynamics 365 for Finance and Operations (lokalt). Når du velger en lokal distribusjonstype, er systemkrav, maskinvarestørrelse og funksjonaliteten forskjellig fra en skydistribusjon. Dette emnet gir koblinger til innhold med spesifikk informasjon om lokale distribusjoner.
+Du kan distribuere Microsoft Dynamics 365 for Finance and Operations (lokal). Når du velger en lokal distribusjonstype, er systemkrav, maskinvarestørrelse og funksjonaliteten forskjellig fra en skydistribusjon. Dette emnet gir koblinger til innhold med spesifikk informasjon om lokale distribusjoner.
 
 ## <a name="get-started"></a>Komme i gang
 - [Alternativ for lokal distribusjon](on-premises-overview.md)
@@ -59,10 +59,11 @@ Du kan distribuere Microsoft Dynamics 365 for Finance and Operations (lokalt). N
 ## <a name="retail"></a>Retail
 - [Retail-funksjoner som er tilgjengelige i lokale distribusjoner](../../retail/retail-onprem.md)
 - [Installasjonstrinn for komponenter i Retail-kanal i et lokalt miljø](deploy-retail-onprem.md)
-- [Konfigurere, installere og aktivere Retail Modern POS (MPOS)](../../retail/retail-modern-pos-device-activation.md)
+- [Konfigurere, installere og aktivere Retail Modern POS MPOS](../../retail/retail-modern-pos-device-activation.md)
 - [Konfigurere og installere Retail Store Scale Unit](../../retail/dev-itpro/retail-store-scale-unit-configuration-installation.md)
 
-
+## <a name="upgrade"></a>Oppgrader
+- [Oppgradering på stedet for lokale miljøer](../migration-upgrade/on-prem-upgrade.md)
 
 ## <a name="other-resources"></a>Andre ressurser
 - [Feilsøke lokale distribusjoner](troubleshoot-on-prem.md)
@@ -71,4 +72,3 @@ Du kan distribuere Microsoft Dynamics 365 for Finance and Operations (lokalt). N
 - [Funksjoner som er fjernet eller avskrevet](../migration-upgrade/deprecated-features.md)
 - [Policy og lokale versjoner for programvarelivssyklus](../migration-upgrade/on-prem-version-update-policy.md)
  
-

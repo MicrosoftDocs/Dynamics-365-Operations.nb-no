@@ -5,9 +5,9 @@ author: cvocph
 manager: AnnBe
 ms.date: 09/24/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: LeanProductionFlow, PlanActivity
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 254616174d3f3c449e2a55dfc5f080d6276105b0
 ms.openlocfilehash: 7fe9a81f58423c3396493d0ea2c27bdea4eee102
-ms.contentlocale: nb-no
-ms.lasthandoff: 10/16/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "350993"
 ---
-
 # <a name="modeling-a-lean-organization"></a>Modellere en lean-organisasjon
 
 [!include [banner](../includes/banner.md)]
@@ -65,7 +64,6 @@ For å gi bedre støtte for kontinuerlig forbedring implementeres produksjonsfly
 
 ## <a name="simplicity"></a>Enkelhet
 For implementering av Lean manufacturing har vi valgt tilnærmingen for produksjonsflyt og aktivitet som gjør det mulig å modellere enkle og sammensatte produksjonsscenarier i en enkelt skalerbar arkitektur. En nærmere kikk på aktivitetskonseptet viser en ny enkelhet for brukerne som trenger det: shop floor- og logistikkarbeidere. Ved å rapportere mot aktivitetsbaserte jobber i stedet for lagertransaksjoner, overfører et felles brukergrensesnitt for alle varianter av lean manufacturing forretningskompleksitet fra brukergrensesnittet til der det hører til: produksjonsflyten som ryggraden i lean manufacturing.
-
 
 
 

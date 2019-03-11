@@ -3,11 +3,11 @@ title: Eksterne enheter for detaljhandel
 description: Dette emnet forklarer begrepene som er knyttet til detaljhandelsenheter.
 author: rubencdelgado
 manager: AnnBe
-ms.date: 11/14/2017
+ms.date: 01/16/2019
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 ms.search.form: RetailTerminalTable, RetailDevice, RetailHardwareProfile
 audience: Application User, IT Pro
 ms.reviewer: josaw
@@ -18,14 +18,13 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
+ms.openlocfilehash: 8fa2be91db8213845c2be16b1cc0a0f5457a708b
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
-ms.openlocfilehash: c2539af8a29b580a10002bc8648505d42c7b8456
-ms.contentlocale: nb-no
-ms.lasthandoff: 01/04/2019
-
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "347865"
 ---
-
 # <a name="retail-peripherals"></a>Eksterne enheter for detaljhandel
 
 [!include [banner](includes/banner.md)]
@@ -75,7 +74,7 @@ POS-enheter deles vanligvis inn i bestemte klasser. Denne delen beskriver og inn
 
 ### <a name="printer"></a>Skriver
 
-Skrivere omfatter tradisjonell kvitteringsskrivere for salgssted og helsideskrivere. Skrivere støttes gjennom kobling og innebygging av objekter for Retail POS-enheter og drivergrensesnitt Microsoft Windows. Opptil to skrivere kan brukes samtidig. Denne funksjonen støtter scenarier der kundekvitteringer ved hentesalg skrives ut på kvitteringsskrivere, mens kundeordrer, som inneholder mer informasjon, skrives ut på en helsideskriver. Kvitteringsskrivere kan kobles direkte til en datamaskin via USB, kobles til et nettverk via Ethernet eller kobles til via Bluetooth.
+Skrivere omfatter tradisjonell kvitteringsskrivere for salgssted og helsideskrivere. Skrivere støttes gjennom kobling og innebygging av objekter for Retail POS-enheter og Microsoft Windows-drivergrensesnitt. Opptil to skrivere kan brukes samtidig. Denne funksjonen støtter scenarier der kundekvitteringer ved hentesalg skrives ut på kvitteringsskrivere, mens kundeordrer, som inneholder mer informasjon, skrives ut på en helsideskriver. Kvitteringsskrivere kan kobles direkte til en datamaskin via USB, kobles til et nettverk via Ethernet eller kobles til via Bluetooth.
 
 ### <a name="scanner"></a>Skanner
 
@@ -117,9 +116,9 @@ Støtte for betalingsenheter er implementert via betalingskoblingen. Betalingsen
 
 ### <a name="opos"></a>OPOS
 
-For å garantere at et størst mulig utvalg av enheter kan brukes med Microsoft Dynamics 365 for Retail er industristandarden OLE for POS den primære plattformen for eksterne enheter for detaljhandel som støttes i Microsoft Dynamics 365 for Retail. OLE for POS-standarden ble produsert ved den National Retail Federation (NRF), som etablerer industristandard kommunikasjonsprotokoller for detaljhandel eksterne enheter. OPOS er en mye brukte implementering av OLE for POS-standarden. Den ble utviklet på midten av 1990-tallet, og har blitt oppdatert flere ganger siden da. OPOS gir en enhetsdriverarkitektur som gir enkel integrering av POS-maskinvare med Windows-baserte POS-systemer. OPOS-kontroller håndterer kommunikasjon mellom kompatibel maskinvare og POS-programvare. En OPOS-kontroll består av to deler:
+For å garantere at et størst mulig utvalg av enheter kan brukes med Microsoft Dynamics 365 for Retail, er industristandarden OLE for POS den primære plattformen for eksterne enheter for detaljhandel som støttes i Microsoft Dynamics 365 for Retail. OLE for POS-standarden ble produsert ved den National Retail Federation (NRF), som etablerer industristandard kommunikasjonsprotokoller for detaljhandel eksterne enheter. OPOS er en mye brukte implementering av OLE for POS-standarden. Den ble utviklet på midten av 1990-tallet, og har blitt oppdatert flere ganger siden da. OPOS gir en enhetsdriverarkitektur som gir enkel integrering av POS-maskinvare med Windows-baserte POS-systemer. OPOS-kontroller håndterer kommunikasjon mellom kompatibel maskinvare og POS-programvare. En OPOS-kontroll består av to deler:
 
-- **Kontrollobjekt** – Kontrollobjektet for en enhetsklasse (for eksempel linjevisningsenheter) inneholder grensesnittet for programmet. Monroe Consulting Services ([www.monroecs.com](http://www.monroecs.com/)) leverer et standardisert sett med OPOS-kontrollobjekter som kalles Common Control Objects (CCO-er). CCO-ene brukes til å teste POS-komponenten for Microsoft Dynamics 365 for Retail. Derfor bidrar testingen til å garantere at hvis Microsoft Dynamics 365 for Retail støtter en enhetsklassen gjennom OPOS, kan mange enhetstyper støttes, forutsatt at produsenten leverer et tjenesteobjekt som er bygget for OPOS. Du trenger ikke å eksplisitt teste hver enhetstype.
+- **Kontrollobjekt** – Kontrollobjektet for en enhetsklasse (for eksempel linjevisningsenheter) inneholder grensesnittet for programmet. Monroe Consulting Services ([www.monroecs.com](http://www.monroecs.com/)) leverer et standardisert sett med OPOS-kontrollobjekter som kalles Common Control Objects (CCO-er). CCOs brukes til å teste POS-komponenten i Microsoft Dynamics 365 for Retail. Derfor bidrar testingen til å garantere at hvis Microsoft Dynamics 365 for Retail støtter en enhetsklasse gjennom OPOS, kan mange enhetstyper støttes, forutsatt at produsenten leverer et tjenesteobjekt som er bygget for OPOS. Du trenger ikke å eksplisitt teste hver enhetstype.
 - **Tjenesteobjekt** – Tjenesteobjektet leverer kommunikasjon mellom kontrollobjektet (CCO) og enheten. Tjenesteobjektet for en enhet leveres vanligvis av enhetsprodusenten. I noen tilfeller må du imidlertid laste ned tjenesteobjektet fra produsentens nettsted. Et nyere tjenesteobjekt kan for eksempel være tilgjengelig. Hvis du vil finne adressen til produsentens nettsted, kan du se i maskinvaredokumentasjonen.
 
 [![Kontrollobjekt og tjenesteobjekt](./media/retail_peripherals_overview01.png)](./media/retail_peripherals_overview01.png)
@@ -127,7 +126,7 @@ For å garantere at et størst mulig utvalg av enheter kan brukes med Microsoft 
 Støtte for OPOS-implementering av OLE for POS bidrar til å garantere at hvis enhetsprodusentene og POS-utgivere implementerer standarden på riktig måte, kan POS-systemer og støttede enheter samarbeide, selv om de ikke var tidligere testet sammen.
 
 > [!NOTE]
-> OPOS-støtte garanterer ikke støtte for alle enheter som har OPOS-drivere. Microsoft Dynamics 365 for Retail må først støtte enhetstypen eller klassen gjennom OPOS. I tillegg er tjenesteobjekter kanskje ikke alltid oppdaterte med den nyeste versjonen av CCO-er. Du må også være oppmerksom på at kvaliteten på tjenesteobjekter vanligvis varierer.
+> OPOS-støtte garanterer ikke støtte for alle enheter som har OPOS-drivere. Microsoft Dynamics 365 for Retail må først støtte denne enhetstypen, eller klassen, gjennom OPOS. I tillegg er tjenesteobjekter kanskje ikke alltid oppdaterte med den nyeste versjonen av CCO-er. Du må også være oppmerksom på at kvaliteten på tjenesteobjekter vanligvis varierer.
 
 ### <a name="windows"></a>Windows
 
@@ -137,7 +136,7 @@ Kvitteringsutskrift på salgsstedet er optimalisert for OPOS. OPOS pleier å væ
 - Enheter som er koblet gjennom skriveren ("seriekoblet") fungerer kanskje ikke slik de skal når Windows-drivere brukes. En kassaskuffen åpnes for eksempel kanskje ikke eller følgeseddelskriveren fungerer kanskje ikke som forventet.
 - OPOS støtter også et mer omfattende sett med variabler som er spesifikke for kvitteringsskrivere for detaljhandel, for eksempel papirkutting eller følgeseddelutskrift.
 
-Hvis OPOS-kontroller er tilgjengelige for Windows-skriveren du bruker, skal skriveren fungerer riktig med Microsoft Dynamics 365 for Retail.
+Hvis OPOS-kontroller er tilgjengelige for Windows-skriveren du bruker, skal skriveren fungere riktig med Microsoft Dynamics 365 for Retail.
 
 ### <a name="universal-windows-platform"></a>Universal Windows Platform
 
@@ -203,7 +202,7 @@ Hvis du vil ha mer informasjon, kan du se [Konfigurere og installere maskinvares
 
 ### <a name="modern-pos-for-windows-setup-and-configuration"></a>Oppsett og konfigurasjon av Modern POS for Windows
 
-Hvis du vil ha mer informasjon, kan du se [Konfigurere og installere Modern POS for detaljhandel](retail-modern-pos-device-activation.md).
+Hvis du vil ha mer informasjon, kan du se [Konfigurasjon og installasjon av Retail Modern POS](retail-modern-pos-device-activation.md).
 
 ### <a name="opos-device-setup-and-configuration"></a>Oppsett og konfigurasjon av OPOS-enhet
 
@@ -223,9 +222,9 @@ Tabellen nedenfor viser topologier og distribusjonsscenarier som støttes.
 | Kunde      | IPC-maskinvarestasjon | IIS-maskinvarestasjon |
 |-------------|----------------------|----------------------|
 | Windows-app | Ja                  | Ja                  |
-| Skybasert salgssted   | Ingen                   | Ja                  |
-| Android     | Ingen                   | Ja                  |
-| iOS         | Ingen                   | Ja                  |
+| Skybasert salgssted   | Nr.                   | Ja                  |
+| Android     | Nr.                   | Ja                  |
+| iOS         | Nr.                   | Ja                  |
 
 ### <a name="network-peripherals"></a>Nettverksenheter
 
@@ -234,9 +233,9 @@ Nettverksenheter kan støttes direkte gjennom maskinvarestasjonen som er bygd in
 | Kunde      | IPC-maskinvarestasjon | IIS-maskinvarestasjon |
 |-------------|----------------------|----------------------|
 | Windows-app | Ja                  | Ja                  |
-| Skybasert salgssted   | Ingen                   | Ja                  |
-| Android     | Ingen                   | Ja                  |
-| iOS         | Ingen                   | Ja                  |
+| Skybasert salgssted   | Nr.                   | Ja                  |
+| Android     | Nr.                   | Ja                  |
+| iOS         | Nr.                   | Ja                  |
 
 ## <a name="supported-device-types-by-hardware-station-type"></a>Enhetstyper som støttes av maskinvarestasjonstype
 
@@ -296,7 +295,7 @@ Nettverksenheter kan støttes direkte gjennom maskinvarestasjonen som er bygd in
 <ul>
 <li>OPOS</li>
 <li>Nettverk
-<blockquote>[!NOTE] Bare én skuff kan defineres hvis <strong>Bruk delte skift</strong> er konfigurert på skuffen.</blockquote>
+<blockquote>MERK: Bare én skuff kan defineres hvis <strong>Bruk delte skift</strong> er konfigurert på skuffen.</blockquote>
 </li>
 </ul>
 </td>
@@ -307,7 +306,7 @@ Nettverksenheter kan støttes direkte gjennom maskinvarestasjonen som er bygd in
 <ul>
 <li>OPOS</li>
 <li>Nettverk
-<blockquote>[!NOTE] Bare én skuff kan defineres hvis <strong>Bruk delte skift</strong> er konfigurert på skuffen.</blockquote>
+<blockquote>MERK: Bare én skuff kan defineres hvis <strong>Bruk delte skift</strong> er konfigurert på skuffen.</blockquote>
 </li>
 </ul>
 </td>
@@ -375,7 +374,7 @@ Nettverksenheter kan støttes direkte gjennom maskinvarestasjonen som er bygd in
 <ul>
 <li>OPOS</li>
 <li>Windows-driver
-<blockquote>[!NOTE] For Windows-skrivere på et nettverk må brukeren av maskinvarestasjonen har tilgang til skriveren.</blockquote>
+<blockquote>MERK: For Windows-skrivere på et nettverk må brukeren av maskinvarestasjonen har tilgang til skriveren.</blockquote>
 </li>
 <li>Nettverk</li>
 </ul>
@@ -405,7 +404,7 @@ Nettverksenheter kan støttes direkte gjennom maskinvarestasjonen som er bygd in
 <ul>
 <li>OPOS</li>
 <li>Nettverk
-<blockquote>[!NOTE] Bare én skuff per maskinvareprofil kan defineres hvis <strong>Bruk delte skift</strong> er konfigurert på skuffen.</blockquote>
+<blockquote>MERK: Bare én skuff per maskinvareprofil kan defineres hvis <strong>Bruk delte skift</strong> er konfigurert på skuffen.</blockquote>
 </li>
 </ul>
 </td>
@@ -470,7 +469,7 @@ Nettverksenheter kan støttes direkte gjennom maskinvarestasjonen som er bygd in
 <ul>
 <li>OPOS</li>
 <li>Windows-driver
-<blockquote>[!NOTE] For Windows-skrivere på et nettverk må brukeren av maskinvarestasjonen har tilgang til skriveren.</blockquote>
+<blockquote>MERK: For Windows-skrivere på et nettverk må brukeren av maskinvarestasjonen har tilgang til skriveren.</blockquote>
 </li>
 <li>Nettverk</li>
 </ul>
@@ -492,7 +491,7 @@ Nettverksenheter kan støttes direkte gjennom maskinvarestasjonen som er bygd in
 <ul>
 <li>OPOS</li>
 <li>Nettverk
-<blockquote>[!NOTE] Bare én skuff per maskinvareprofil kan defineres hvis <strong>Bruk delte skift</strong> er konfigurert på skuffen.</blockquote>
+<blockquote>MERK: Bare én skuff per maskinvareprofil kan defineres hvis <strong>Bruk delte skift</strong> er konfigurert på skuffen.</blockquote>
 </li>
 </ul>
 </td>
@@ -523,7 +522,7 @@ Nettverksenheter kan støttes direkte gjennom maskinvarestasjonen som er bygd in
 Hvis du vil ha mer informasjon om hvordan du kan opprette maskinvareprofiler, kan du se [Definere og vedlikeholde kanalklienter, inkludert kasser og maskinvarestasjoner](define-maintain-channel-clients-registers-hw-stations.md).
 
 > [!NOTE]
-> For Microsoft Dynamics 365 for Retail versjon 1611 brukes ikke lenger profilen for maskinvarestasjon. Egenskaper som du tidligere har definert i profilen for maskinvarestasjon, er nå en del av selve maskinvarestasjonen.
+> For Microsoft Dynamics 365 for Retail versjon 1611 brukes ikke maskinvarestasjonprofilen lenger. Egenskaper som du tidligere har definert i profilen for maskinvarestasjon, er nå en del av selve maskinvarestasjonen.
 
 ### <a name="modern-pos-for-windows-with-an-ipc-built-in-hardware-station"></a>Moderne POS for Windows med en IPC-maskinvarestasjon (innebygd)
 
@@ -564,7 +563,7 @@ Denne konfigurasjonen kan brukes for alle Modern POS-klienter som har en maskinv
 5. Velg distribusjonsplanen **1090** for å synkronisere den nye maskinvareprofilen til butikken. Klikk på **Kjør nå** for å synkronisere endringer til salgsstedet.
 6. Velg distribusjonsplanen **1040** for å synkronisere den nye maskinvarestasjonen til butikken. Klikk på **Kjør nå** for å synkronisere endringer til salgsstedet.
 7. Installer maskinvarestasjonen. Hvis du vil ha mer informasjon om hvordan du installerer maskinvarestasjonen, kan du se [Konfigurere og installere maskinvarestasjon for detaljhandel](retail-hardware-station-configuration-installation.md).
-8. Installer og aktiver Modern POS. Hvis du vil ha mer informasjon om hvordan du installerer Modern POS, kan du se [Konfigurere og installere Modern POS for detaljhandel](retail-modern-pos-device-activation.md).
+8. Installer og aktiver Modern POS. Hvis du vil ha mer informasjon om hvordan du installerer Modern POS, kan du se [Konfigurere og installere Retail Modern POS](retail-modern-pos-device-activation.md).
 9. Logg på Modern POS, og velg **Utfør en ikke-skuff-operasjon**.
 10. Start operasjonen **Administrer maskinvarestasjoner**.
 11. Klikk på **Administrer**.
@@ -593,7 +592,7 @@ Denne konfigurasjonen kan brukes for alle Modern POS-klienter som deler maskinva
 6. Velg distribusjonsplanen **1090** for å synkronisere den nye maskinvareprofilen til butikken. Klikk på **Kjør nå** for å synkronisere endringer til salgsstedet.
 7. Velg distribusjonsplanen **1040** for å synkronisere den nye maskinvarestasjonen til butikken. Klikk på **Kjør nå** for å synkronisere endringer til salgsstedet.
 8. Installer maskinvarestasjonen på hver vertsdatamaskin som du opprettet i trinn 2 og 3. Hvis du vil ha mer informasjon om hvordan du installerer maskinvarestasjonen, kan du se [Konfigurere og installere maskinvarestasjon for detaljhandel](retail-hardware-station-configuration-installation.md).
-9. Installer og aktiver Modern POS. Hvis du vil ha mer informasjon om hvordan du installerer Modern POS, kan du se [Konfigurere og installere Modern POS for detaljhandel](retail-modern-pos-device-activation.md).
+9. Installer og aktiver Modern POS. Hvis du vil ha mer informasjon om hvordan du installerer Modern POS, kan du se [Konfigurere og installere Retail Modern POS](retail-modern-pos-device-activation.md).
 10. Logg på Modern POS, og velg **Utfør en ikke-skuff-operasjon**.
 11. Start operasjonen **Administrer maskinvarestasjoner**.
 12. Klikk på **Administrer**.
@@ -743,7 +742,6 @@ De eksterne enhetene nedenfor ble testet ved hjelp av en dedikert (ikke delt) II
 | Epson        | TM-T88V  | OPOS      |                           |
 | Star         | TSP650II | OPOS      |                           |
 | Star         | TSP650II | Egendefinert    | Tilkoblet via nettverket     |
-| Star         | TSP100   | OPOS      | Krever TSP650II-drivere |
 | HP           | F7M67AA  | OPOS      | USB-drevet               |
 
 #### <a name="bar-code-scanner"></a>Strekkodeleser
@@ -818,7 +816,6 @@ De eksterne enhetene nedenfor ble testet ved hjelp av en delt IIS-maskinvarestas
 | Epson        | TM-T88V  | OPOS      |                           |
 | Star         | TSP650II | OPOS      |                           |
 | Star         | TSP650II | Egendefinert    | Tilkoblet via nettverket     |
-| Star         | TSP100   | OPOS      | Krever TSP650II-drivere |
 | HP           | F7M67AA  | OPOS      | USB-drevet               |
 
 #### <a name="payment-terminal"></a>Betalingsterminal 
@@ -894,4 +891,3 @@ De eksterne enhetene nedenfor ble testet ved hjelp av en delt IIS-maskinvarestas
 ## <a name="additional-resources"></a>Tilleggsressurser
 
 [Simulator for eksterne enheter for Retail](dev-itpro/retail-peripheral-simulator.md)
-

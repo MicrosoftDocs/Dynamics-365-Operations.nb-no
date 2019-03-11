@@ -1,13 +1,13 @@
 ---
-title: "Konfigurere leveringsmåter og tillegg for telefonsenter"
-description: "Dette emnet beskriver hvordan du setter opp leveringsmåter og tillegg for en telefonsenterordre i Microsoft Dynamics 365 for Retail."
+title: Konfigurere leveringsmåter og tillegg for telefonsenter
+description: Dette emnet beskriver hvordan du setter opp leveringsmåter og levering og tillegg for en telefonsenterordre i Microsoft Dynamics 365 for Retail.
 author: josaw1
 manager: AnnBe
 ms.date: 04/26/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 ms.search.form: RetailMCRChannelDetailPage, MCROrderParameters
 audience: Application User
 ms.reviewer: josaw
@@ -17,14 +17,13 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
+ms.openlocfilehash: 2571b4ffd6c13dbf755ef2dfa93b757822890d96
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: dc2ab66bf6e3195e1ebf394f99182f59c3ee2125
-ms.openlocfilehash: ebc8ee52da7d10ca18147684a0190e52a495ad5a
-ms.contentlocale: nb-no
-ms.lasthandoff: 08/09/2018
-
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "328430"
 ---
-
 # <a name="configure-call-center-delivery-modes-and-charges"></a>Konfigurere leveringsmåter og tillegg for telefonsenter
 
 [!INCLUDE [banner](includes/banner.md)]
@@ -96,4 +95,3 @@ Eventuelt kan du knytte en kode for ekspeder til en hvilken som helst leveringsm
 For eksempel for ordrer som skal sendes med fly neste dag, må plukking gjøres i lageret kl. 13:00 hver dag. I dette tilfellet kan du opprette en ekspederingskode, og denne koden kan kobles til en hvilken som helst neste dag-leveringsmåte som er konfigurert i systemet. Når lageret oppretter plukkbølgen sin, kan riktig ekspederingskode i **Ekspeder**-feltet brukes som filter, slik at plukking bare utføres for ordrer som har leveringsmåter som er knyttet til koden.
 
 I tillegg, når det angis en telefonsenterordre, kan en ekspederingskode brukes manuelt på salgsordrehodet eller en individuell salgsordrelinje. Igjen, koden kan brukes til sorterings- eller rapporteringsformål. Noen ganger må en ordre håndteres forsiktig på grunn av problemer med kundeservice. I dette tilfellet kan en bestemt ekspederingskode brukes på ordrehodet eller -linjene for å identifisere og prioritere ordren under prosessen med å utføre.
-

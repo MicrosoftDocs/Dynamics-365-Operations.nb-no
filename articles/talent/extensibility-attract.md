@@ -1,14 +1,14 @@
 ---
 title: Utvidelsesmuligheter i Attract
-description: Dette emnet beskriver hvordan du kan utvide programmet Microsoft Dynamics 365 for Talent - Attract ved hjelp av Microsoft Power Platform.
+description: Dette emnet beskriver hvordan du kan utvide programmet Microsoft Dynamics 365 for Talent - Attract ved hjelp av Microsoft Power-plattformen.
 author: josaw
 manager: AnnBe
 ms.date: 10/15/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: 
-ms.search.form: 
+ms.technology: ''
+ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Talent, Core
@@ -18,23 +18,22 @@ ms.search.region: Global
 ms.author: rschloma
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
+ms.openlocfilehash: d9e1dd3a67c5f64b5d05f0f171226085138e0b44
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: e890e32049e930b70c2d0aac8aa8206ab999418a
-ms.openlocfilehash: 0af60a0aea0f7a5de793631445aaebb37dbb0d74
-ms.contentlocale: nb-no
-ms.lasthandoff: 10/22/2018
-
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "305609"
 ---
-
 # <a name="extensibility-in-attract"></a>Utvidelsesmuligheter i Attract
 
 [!include[banner](../includes/banner.md)]
 
-Microsoft Dynamics 365 for Talent er bygd på toppen av Common Data Service (CDS) for Apps-plattformen, og kan utvides på forskjellige måter ved hjelp av Microsoft Power Platform og funksjonene som tilbys i Common Data Service for Apps. Derfor kan du konfigurere og tilpasse systemet ved hjelp av Microsoft PowerApps og Microsoft Flow. Du kan også få ekstra analyse om personer ved hjelp av Microsoft Power BI. Dessuten gjør nye egendefinerte aktiviteter, for eksempel PowerApps og webinnhold-aktivitet (iframe), ansettelsesprosessen mer fleksibel enn noen gang. Ved hjelp av disse aktivitetene kan du tilpasse ansettelsesprosessen til dine forretningsbehov og prosesser, og du kan forsikre deg om at både ansettelsesteamet og kandidatene får en sømløs, tilpasset opplevelse.
+Microsoft Dynamics 365 for Talent er bygd på toppen av Common Data Service (CDS) for Apps-plattformen, og kan utvides på forskjellige måter ved hjelp av Microsoft Power-plattformen og funksjonene som tilbys i Common Data Service for Apps. Derfor kan du konfigurere og tilpasse systemet ved hjelp av Microsoft PowerApps og Microsoft Flow. Du kan også få ekstra analyse om personer ved hjelp av Microsoft Power BI. Dessuten gjør nye egendefinerte aktiviteter, for eksempel PowerApps og webinnhold-aktivitet (iframe), ansettelsesprosessen mer fleksibel enn noen gang. Ved hjelp av disse aktivitetene kan du tilpasse ansettelsesprosessen til dine forretningsbehov og prosesser, og du kan forsikre deg om at både ansettelsesteamet og kandidatene får en sømløs, tilpasset opplevelse.
 
 ## <a name="take-advantage-of-the-microsoft-power-platform"></a>Dra nytte av Microsoft Power Platform 
 
-Fordi alle dataene fra Attract ligger Common Data Service for Apps, kan du bruke verktøy fra Microsoft Power Platform til å ta dine unike forretningsbehov til Attract.
+Fordi alle dataene fra Attract ligger i Common Data Service for Apps, kan du bruke verktøy fra Microsoft Power-plattformen til å ta dine unike forretningsbehov til Attract.
 
 ### <a name="powerapps"></a>PowerApps
 
@@ -44,7 +43,7 @@ Du kan for eksempel forenkle universitetsmesser for rekrutteringspersoner ved å
 
 ### <a name="microsoft-flow"></a>Microsoft Flow 
 
-Du kan bruke Microsoft Flow til å opprette automatisert arbeidsflyt som kjører på toppen av Attract-data. Du kan enkelt koble til hundrevis av populære apper og tjenester uten å måtte skrive kode. Ved å bygge flyter som samhandler med Attract-jobben, kandidaten og søknadsenheter i Common Data Service for Apps, kan du automatisere forskjellige handlinger. Når en kandidat for eksempel har godtatt et tilbud, kan en varsling sendes til et jobbintroduksjonsteam, eller nyhetene kan kunngjøres på Twitter. Hvis du vil ha mer informasjon om flyter, se [Microsoft Flow-dokumentasjon](https://docs.microsoft.com/en-us/flow/).
+Du kan bruke Microsoft Flow til å opprette automatisert arbeidsflyt som kjører på toppen av Attract-data. Du kan enkelt koble til hundrevis av populære apper og tjenester uten å måtte skrive kode. Ved å bygge flyter som samhandler med Attract-jobben, kandidaten og søknadsenheter i Common Data Service for Apps, kan du automatisere forskjellige handlinger. Når en kandidat for eksempel har godtatt et tilbud, kan en varsling sendes til et jobbintroduksjonsteam, eller nyhetene kan kunngjøres på Twitter. Hvis du vil ha mer informasjon om flyter, se [dokumentasjonen for Microsoft Flow](https://docs.microsoft.com/en-us/flow/).
 
 ### <a name="power-bi"></a>Power BI
 
@@ -67,4 +66,3 @@ Webinnhold-aktivitet (iframe) lar deg bygge inn en egendefinert webløsning som 
 
 > [!NOTE]
 > Webinnhold-aktiviteten er bare tilgjengelig med tillegget for omfattende ansettelse.
-

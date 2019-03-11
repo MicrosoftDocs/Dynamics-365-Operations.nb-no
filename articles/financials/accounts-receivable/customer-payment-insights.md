@@ -1,28 +1,27 @@
 ---
-title: "Kundebetalingsinnsikt (forhåndsvisning)"
-description: "Dette emnet beskriver hvordan kundebetalingsinnsikt kan bidra til å forutse når en faktura skal betales, og hjelpe organisasjoner å opprette optimaliseringsstrategier som forbedrer sannsynligheten for at betalinger skjer i tide."
+title: Kundebetalingsinnsikt (forhåndsvisning)
+description: Dette emnet beskriver hvordan kundebetalingsinnsikt kan bidra til å forutse når en faktura skal betales, og hjelpe organisasjoner å opprette optimaliseringsstrategier som forbedrer sannsynligheten for at betalinger skjer i tide.
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 07/17/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: shylaw
-ms.search.scope: 
+ms.search.scope: ''
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2018-04-02
 ms.dyn365.ops.version: AX 8.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 841ea53f754f61c2930e77fdafc85eac72f47d7a
 ms.openlocfilehash: 9e722db6302d7ef51c01601cde245d4f4a333eba
-ms.contentlocale: nb-no
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "344668"
 ---
-
 # <a name="customer-payment-insights-preview"></a>Kundebetalingsinnsikt (forhåndsvisning)
 
 [!include[banner](../includes/banner.md)]
@@ -78,4 +77,3 @@ Hvis du er interessert i å prøve Kundebetalingsinnsikt (forhåndsvisning), kan
 ## <a name="privacy-statement"></a>Personvernerklæring
 
 Forhåndsvisninger lagrer kundedata i USA. I tillegg (1) kan forhåndsvisninger bruke mindre personvern og færre sikkerhetstiltak enn Dynamics 365 for Finance and Operations-tjenesten, (2) er forhåndsvisninger ikke inkludert i tjenestenivåavtalen for denne tjenesten, (3) må forhåndsvisninger ikke brukes til å behandle personlige data eller andre data som er underlagt juridiske eller forskriftsmessige krav, og (4) forhåndsvisninger har begrenset støtte.
-

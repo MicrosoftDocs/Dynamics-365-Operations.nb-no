@@ -1,13 +1,13 @@
---- 
+---
 title: Definere manuell pakking (februar 2016 og mai 2016)
 description: Pakkeprosessen lar deg validere og pakke produkter i containere.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: WHSLocationProfile, WHSParameters, WHSContainerType, WHSPackProfile, WHSCloseContainerProfile, InventLocationIdLookup, UnitOfMeasureLookup
 audience: Application User
 ms.reviewer: shylaw
@@ -17,12 +17,12 @@ ms.search.industry: Distribution
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: b90b4a71e2447e942dbb4a9645ef93064da630d3
-ms.contentlocale: nb-no
-ms.lasthandoff: 10/16/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "347727"
 ---
 # <a name="set-up-manual-packing-february-2016--may-2016"></a>Definere manuell pakking (februar 2016 og mai 2016)
 
@@ -94,5 +94,4 @@ Pakkeprosessen lar deg validere og pakke produkter i containere. I denne prosess
     * Dette blir lokasjonen der produkter flyttes til når containere lukkes. Denne lokasjonen må ha en lokasjonsprofil som er definert for lagerparametere.  
 8. Angi eller velg en verdi i feltet Vektenhet.
 9. Klikk Lagre.
-
 

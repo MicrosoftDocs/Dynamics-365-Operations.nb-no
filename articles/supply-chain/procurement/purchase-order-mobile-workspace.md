@@ -1,13 +1,13 @@
 ---
-title: "Kjøpsordregodkjenning mobilt arbeidsområde"
-description: "Dette emnet gir informasjon om Kjøpsordregodkjenning mobilt arbeidsområde, som lar deg vise bestillinger og svare på dem gjennom handlinger. Du kan for eksempel godkjenne eller avvise en bestilling."
+title: Kjøpsordregodkjenning mobilt arbeidsområde
+description: Dette emnet gir informasjon om Kjøpsordregodkjenning mobilt arbeidsområde, som lar deg vise bestillinger og svare på dem gjennom handlinger. Du kan for eksempel godkjenne eller avvise en bestilling.
 author: mkirknel
 manager: AnnBe
 ms.date: 12/01/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: PurchVendorPortalRequests
 audience: Application User
 ms.reviewer: josaw
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
+ms.openlocfilehash: 75a38b99fe0aee7d4dd386191be236e54097e867
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 2f495fa3507fd54499e29b4c09f504dd037c0a6c
-ms.contentlocale: nb-no
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "348854"
 ---
-
 # <a name="purchase-order-approval-mobile-workspace"></a>Kjøpsordregodkjenning mobilt arbeidsområde
 
 [!include [banner](../includes/banner.md)]
@@ -36,9 +35,9 @@ Dette emnet gir informasjon om det mobile arbeidsområdet **Godkjenning av besti
 ## <a name="overview"></a>Oversikt 
 Bestillinger som krever godkjenning, går gjennom en godkjenningsarbeidsflyt. Arbeidsflyten kan inkludere ulike trinn som krever at en eller flere personer utfører en handling. For eksempel kan en person måtte fullføre en oppgave eller godkjenne bestillingen. 
 
-På det mobile arbeidsområdet **Godkjenning av bestilling** kan du lett vise og svare på bestillinger fra en mobil enhet. På dette arbeidsområdet kan du også utføre de samme handlingene i arbeidsflyten som du kan utføre fra Microsoft Dynamics 365 Finance and Operations, webklient.
+På det mobile arbeidsområdet **Godkjenning av bestilling** kan du lett vise og svare på bestillinger fra en mobil enhet. På dette arbeidsområdet kan du også utføre de samme handlingene i arbeidsflyten som du kan utføre fra Microsoft Dynamics 365 for Finance and Operations, webklient.
 
-## <a name="prerequisites"></a>Nødvendig programvare
+## <a name="prerequisites"></a>Forutsetninger
 Forutsetningene varierer avhengig av hvilken versjon av Finance and Operations som er distribuert i organisasjonen.
 
 ### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-finance-and-operations"></a>Forutsetninger hvis du bruker Microsoft Dynamics 365 for Finance and Operations 
@@ -76,7 +75,7 @@ Hvis Microsoft Dynamics 365 for Operations versjon 1611 med plattformoppdatering
 </table>
 
 ## <a name="download-and-install-the-mobile-app"></a>Laste ned og installere mobilappen
-Last ned og installer mobilappen Microsoft Dynamics 365 for Unified Operations:
+Last ned og installer Microsoft Dynamics 365 for Unified Operations Mobile-appen:
 
 - [For Android-telefoner](https://go.microsoft.com/fwlink/?linkid=850662)
 - [For iPhone](https://go.microsoft.com/fwlink/?linkid=850663)
@@ -85,7 +84,7 @@ Last ned og installer mobilappen Microsoft Dynamics 365 for Unified Operations:
 ## <a name="sign-in-to-the-mobile-app"></a>Logge på mobilappen
 
 1. Start appen på mobilenheten.
-2. Skriv inn URL-adressen til Microsoft Dynamics 365.
+2. Angi URL-adressen for Microsoft Dynamics365.
 3. Første gang du logger deg på, blir du bedt om brukernavn og passord. Angi legitimasjon.
 4. Når du har logget deg på, vises tilgjengelige arbeidsområder for firmaet. Legg merke til at hvis systemansvarlig senere publiserer et nytt arbeidsområde, må du oppdatere listen over mobile arbeidsområder.
 
@@ -116,4 +115,3 @@ Når du har vist bestillingen som er tilordnet til deg og lest instruksjonene fo
 5. Velg riktig handling.
 6. På **Fullfør oppgave**-siden skriver du inn en kommentar. Legg merke til at hvis du velger **Deleger**-handlingen, må du velge en bruker delegere oppgaven til.
 7. Velg **Ferdig**. Når du har oppdatert arbeidsområdet, fjernes bestillingen fra listen. 
-

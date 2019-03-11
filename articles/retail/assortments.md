@@ -5,9 +5,9 @@ author: jblucher
 manager: AnnBe
 ms.date: 03/12/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 audience: Application user
 ms.reviewer: josaw
 ms.search.scope: Retail, Operations
@@ -15,14 +15,13 @@ ms.search.region: Global
 ms.author: jeffbl
 ms.search.validFrom: 2017-11-21
 ms.dyn365.ops.version: Application update 5
+ms.openlocfilehash: b4de2a97a19be6d4e52c43180e36baf7adf6a649
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 033968667048faf475b13f8fb95e693dc26935ca
-ms.contentlocale: nb-no
-ms.lasthandoff: 08/09/2018
-
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "365046"
 ---
-
 # <a name="assortment-management"></a>Sortimentstyring
 
 [!include [banner](../includes/banner.md)]
@@ -108,4 +107,3 @@ Vurder følgende implementeringskrav når du planlegger og behandler sortimenter
 - **Salg og returer utenfor sortimenter** – denne funksjonen hjelper forhandlerne å administrere sortimenter effektiv, ved at de kan begrense antall tilgjengelige produkter til produkter som hører til kjerneutvalget for butikken. Denne funksjonen bidrar også til å håndtere tilfeller der et produkt ved en feiltakelse ble utelatt fra et utvalg, eller der et produkt ble returnert utenfor de effektive datoene for sortimentet.
 
 Hvis produktdataen ikke eksisterer i kanalens database, foretar POS et sanntidsanrop til hovedkontoret for å hente den nødvendige informasjonen, slik at produktet kan solges, returneres eller legges til en kundeordre. Produktinformasjon som hentes på denne måten er bare tilgjengelig i løpet av transaksjonen. Produktet blir ikke lagt til sortimentdefinisjonen. Derfor foretas sanntidsanrop etter behov.
-

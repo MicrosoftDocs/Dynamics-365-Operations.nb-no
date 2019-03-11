@@ -1,13 +1,13 @@
---- 
-title: "Utvikle struktur og plan for lønn/kompensasjon"
-description: "Denne oppgaveveiledningen leder deg gjennom prosessen med å opprette en fast kompensasjonsplan og aktivere ansatte som skal registreres i planen gjennom rettighetsregler."
+---
+title: Utvikle struktur og plan for lønn/kompensasjon
+description: Denne oppgaveveiledningen leder deg gjennom prosessen med å opprette en fast kompensasjonsplan og aktivere ansatte som skal registreres i planen gjennom rettighetsregler.
 author: kherr75
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: DefaultDashboard, HcmCompensationWorkspace, HcmCompFixedPlansPart, HRMCompFixedPlanTable, HRMCompCreateGridDialog, HRCCompGridView, HRMCompEligibility,  HRCCompGrid
 audience: Application User
 ms.reviewer: rschloma
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kherr
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: 28d044cedbcc9f483a4deb7739aef0f8e3abf9ec
-ms.contentlocale: nb-no
-ms.lasthandoff: 10/16/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "332777"
 ---
 # <a name="develop-salarycompensation-structure-and-plan"></a>Utvikle struktur og plan for lønn/kompensasjon
 
@@ -74,5 +74,4 @@ Denne oppgaveveiledningen leder deg gjennom prosessen med å opprette en fast ko
     * Velg kriteriene en ansatt må oppfylle for å være kvalifisert for kompensasjonsplanen. Kriterier kan inneholde en avdeling, fagforening, plassering (kompensasjonsområde), jobb, funksjon, jobbtype eller kompensasjonsnivå. Den ansatte må oppfylle alle angitte kriterier for å være kvalifisert for kompensasjonsplanen. Hvis ingen kriterier er angitt, er alle ansatte kvalifisert for kompensasjonsplanen. Hvis en ansatt ikke oppfyller kriteriene angitt i rettighetsregelen, eller en rettighetsregel ikke er angitt for en kompensasjonsplan, vises ikke kompensasjonsplanen i oppslaget når du oppretter en post for fast kompensasjon for en ansatt.  
 7. Lukk siden.
 8. Lukk siden.
-
 

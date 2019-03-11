@@ -1,13 +1,13 @@
---- 
-title: "Endre eierskap for forsendelseslager basert på produksjonsbehov"
-description: "Denne fremgangsmåten viser hvordan du endrer eieren av forsendelseslageret fra leverandøren til den juridiske enheten når det er behov for beholdningen i produksjonen."
+---
+title: Endre eierskap for forsendelseslager basert på produksjonsbehov
+description: Denne fremgangsmåten viser hvordan du endrer eieren av forsendelseslageret fra leverandøren til den juridiske enheten når det er behov for beholdningen i produksjonen.
 author: perlynne
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: InventJournalOwnershipChange, InventJournalCreate
 audience: Application User
 ms.reviewer: shylaw
@@ -17,12 +17,12 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: d1324da6996230eb383e2f37d3a133ec35cb0f41
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 5925f5423d596adc4326dfff4734de2afd80b5a8
-ms.contentlocale: nb-no
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "319023"
 ---
 # <a name="change-the-ownership-of-consignment-inventory-based-on-production-demand"></a>Endre eierskap for forsendelseslager basert på produksjonsbehov
 
@@ -52,5 +52,4 @@ Denne fremgangsmåten viser hvordan du endrer eieren av forsendelseslageret fra 
     * Når journalen posteres, frigis det leverandøreide lageret ved hjelp referansen Endring av eierskap. Lageret blir deretter mottatt som på lager ved hjelp av en lagertransaksjon som oppdateres med en bestillingsmottaksseddel. Vær oppmerksom på at bare transaksjoner som er knyttet til den posterte journalen, opprettes. Ingen forventede lagertransaksjoner opprettes.  
 2. Klikk OK.
 3. Lukk siden.
-
 

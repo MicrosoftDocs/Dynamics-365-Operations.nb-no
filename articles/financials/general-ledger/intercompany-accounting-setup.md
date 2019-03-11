@@ -1,13 +1,13 @@
 ---
 title: Oppsett av konserninternt regnskap
-description: "Dette emnet forklarer hvordan du setter opp konserninternt regnskap slik at du kan bruke konserninterne kladder for finansfordelinger og finansjournaler, for eksempel daglige journaler, leverandørfakturajournaler og betalingsjournaler."
+description: Dette emnet forklarer hvordan du setter opp konserninternt regnskap slik at du kan bruke konserninterne kladder for finansfordelinger og finansjournaler, for eksempel daglige journaler, leverandørfakturajournaler og betalingsjournaler.
 author: kweekley
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: LedgerInterCompany
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: ce07a29d7aa5057d0b61c7fcc6bb87a0a2755fc9
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 48e0b00e2a9bd1a1387780747e1976bd386200eb
-ms.contentlocale: nb-no
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "363988"
 ---
-
 # <a name="intercompany-accounting-setup"></a>Oppsett av konserninternt regnskap
 
 [!include [banner](../includes/banner.md)]
@@ -48,7 +47,6 @@ Velg **Debetkonto (skal betales fra)** og **Kreditkonto (skal betales til)** for
 Til slutt velger du hvilken juridisk enhet som skal motta regnskapet for beløp som støttes, for eksempel kontantrabatt eller realisert fortjeneste/tap for sentraliserte betalinger. 
 
 En motsvarende relasjon kan enkelt defineres på siden **Konserninternt regnskap** ved hjelp av knappen **Opprett motsvarende relasjon** etter at det første paret av juridisk enhet er opprettet. Når det gjensidige paret opprettes, kopieres informasjonen for målfirmaet til det opprinnelige firmaet og vice versa. Journalen som er definert for målfirmaet, beholdes. De fleste organisasjoner bruker samme navnekonvensjonen for journalnavn, slik at journalnavnet er det samme. Hvis journalnavnet er forskjellig, vises en advarsel på feltet for å informere om at journalen ikke finnes, og du kan velge en annen journal.
-
 
 
 

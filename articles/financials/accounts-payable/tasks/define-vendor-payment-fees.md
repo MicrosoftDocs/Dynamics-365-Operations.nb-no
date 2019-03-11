@@ -1,13 +1,13 @@
---- 
-title: "Definere leverandørbetalingsgebyrer"
-description: "Definer leverandørbetalingsgebyrer."
+---
+title: Definere leverandørbetalingsgebyrer
+description: Definer leverandørbetalingsgebyrer.
 author: abruer
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: VendPaymFee, VendPaymModeFee, BankAccountTableLookUp
 audience: Application User
 ms.reviewer: twheeloc
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 399291a98ddc6b01fb08f7a5c629ec7a6f8acfbf
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: f62d07ffa1ee4a525f0f266922bc88e5ac8d5ada
-ms.contentlocale: nb-no
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "363206"
 ---
 # <a name="define-vendor-payment-fees"></a>Definere leverandørbetalingsgebyrer
 
@@ -58,5 +58,4 @@ Definer leverandørbetalingsgebyrer. Denne oppgaven bruker demonstrasjonsfirmaet
 17. Velg valutaen som gebyret vurderes i, i Gebyrvaluta-feltet.
     * Denne valutaen er for gebyret. Betalingsvalutaen brukes til å angi når gebyrregelen skal vurderes basert på betalingsvalutaen. Banken kan for eksempel belaste deg med et gebyr når en betaling foretas i euro, men alle andre betalinger er uten gebyr.  
 18. Klikk Lagre.
-
 

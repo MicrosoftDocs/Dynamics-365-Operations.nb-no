@@ -1,13 +1,13 @@
 ---
-title: "Enkelt bilag med flere poster for kunde eller leverandør"
-description: "Dette emnet gir en oversikt over hva som skjer når du posterer ett bilag med flere poster for kunde eller leverandør. Denne funksjonaliteten vil ikke være tilgjengelig i fremtidige versjoner av Microsoft Dynamics 365 for Finance and Operations. Derfor anbefales det ikke å bruke denne metoden for postering på grunn av regnskapsvirkningen på utligningsbehandling."
+title: Enkelt bilag med flere poster for kunde eller leverandør
+description: Dette emnet gir en oversikt over hva som skjer når du posterer ett bilag med flere poster for kunde eller leverandør. Denne funksjonaliteten vil ikke være tilgjengelig i fremtidige versjoner av Microsoft Dynamics 365 for Finance and Operations. Derfor anbefales det ikke å bruke denne metoden for postering på grunn av regnskapsvirkningen på utligningsbehandling.
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 08/22/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: shylaw
 ms.search.scope: Core, Operations
@@ -17,14 +17,13 @@ ms.search.region: global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: d27c4182703b4421763036b2a338b3598f9e969b
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 4c499e31fb42a69dff6ac41faac0c78f7f4d1876
-ms.contentlocale: nb-no
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "330362"
 ---
-
 # <a name="single-voucher-with-multiple-customer-or-vendor-records"></a>Enkelt bilag med flere poster for kunde eller leverandør
 
 [!include [banner](../includes/banner.md)]
@@ -249,7 +248,6 @@ Flere bilag må angis i journalen for å registrere motregningstransaksjonen for
 | **Bilag** | **Kontotype** | **Konto** | **Beskrivelse** | **Debet** | **Kreditt** | **Motregningstype** | **Motkonto** |
 | 001         | Kunde         | US-008      |                 |           |  75,00     | Finans          | 999999---          |
 | 002         | Leverandør           | 1001        |                 |  75,00    |            | Finans          | 999999---          |
-
 
 
 

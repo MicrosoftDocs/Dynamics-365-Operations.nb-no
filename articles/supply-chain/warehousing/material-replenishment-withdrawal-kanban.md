@@ -1,32 +1,31 @@
 ---
-title: "Etterfylling med uttak – Kanbaner"
+title: Etterfylling med uttak – Kanbaner
 description: Dette emnet beskriver hvordan kanban for uttak brukes til etterfylling av materialer til produksjonsaktiviteter.
 author: johanhoffmann
 manager: AnnBe
 ms.date: 06/16/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: KanbanBoardTransferJob, KanbanFlow, KanbanRules
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: global
 ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 7fe3ebe3c27c380d95cbc12b864264e9538d433f
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 011da8cd894cc044b6af8b740e49ed8d7c3c0c67
-ms.contentlocale: nb-no
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "320932"
 ---
-
 # <a name="replenishment-with-withdrawal-kanbans"></a>Etterfylling med uttak – Kanbaner
 
 [!include [banner](../includes/banner.md)]
@@ -87,5 +86,4 @@ I dette scenariet, er overføringsaktiviteten for uttaks-kanbanen konfigurert ti
 6.  Produksjonsprosess
 
 Når en kanban er forbrukt ved produksjonsinnleveringsstedet, rapporteres kanbanen som tom, og en ny kanban legges til i flyten. Når kanbanen opprettet, legges en bølgelinje til i en kanban-bølge. Når kanban-bølgen er beahandlet, opprettes det lagerarbeid for kanban-plukking. Lagermedarbeideren behandler arbeidet for kanban-plukking og blir ledet av arbeidet til å plukke materialer for kanbanen i en lagerlokasjon. Når denne lagermedarbeideren bekrefter plukkingen, blur kanbanen automatiak fullført, og lagerarbeideren blir ledet til å plassere materialet på produksjonsinnleveringsstedet.
-
 

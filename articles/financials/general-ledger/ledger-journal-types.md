@@ -5,9 +5,9 @@ author: ShylaThompson
 manager: AnnBe
 ms.date: 10/10/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: LedgerJournalSetup
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 81214cc52b1488bb70ac5fd6ccc817f6f979163d
 ms.openlocfilehash: fff557d20a230922b5512aea9e49aa9993a694dd
-ms.contentlocale: nb-no
-ms.lasthandoff: 10/16/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "308673"
 ---
-
 # <a name="ledger-journal-types"></a>Finansjournaltyper
 
 [!include [banner](../includes/banner.md)]
@@ -64,7 +63,6 @@ Dette emnet beskriver journaltypene som du kan definere for finansjournaler. Bru
 | Registrering av leverandørfaktura          | Poster leverandørfakturaer som er i en journal.                                                                                                                                                                                                                                                                                                                 | Fakturajournal                                                |
 | Leverandørtilbaketrekking egenveksel     | Trekk tilbake en egenveksel som tidligere er innfridd av organisasjonens bank.                                                                                                                                                                                                                                                                      | Journal for egenvekseltilbaketrekking                                 |
 | Leverandøravregning egenveksel     | Opprett transaksjoner for leverandøravregning egenveksel.                                                                                                                                                                                                                                                                                                          | Journal for egenvekselavregning                                 |
-
 
 
 

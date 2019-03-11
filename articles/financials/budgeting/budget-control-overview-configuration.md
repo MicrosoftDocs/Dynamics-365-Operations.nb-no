@@ -1,13 +1,13 @@
 ---
 title: Oversikt over budsjettkontroll
-description: "Denne artikkelen introduserer budsjettkontroll og gir informasjon om hvordan du konfigurerer budsjettkontroll i Microsoft Dynamics 365 for Finance and Operations, slik at du kan behandle økonomiske ressurser."
+description: Denne artikkelen introduserer budsjettkontroll og gir informasjon om hvordan du konfigurerer budsjettkontroll i Microsoft Dynamics 365 for Finance and Operations, slik at du kan behandle økonomiske ressurser.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 01/11/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: BudgetControlConfiguration
 audience: Application User
 ms.reviewer: shylaw
@@ -18,15 +18,14 @@ ms.search.region: Global
 ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 4dbbbdf403c3e3f7c1bfa391cc32f80505098db9
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: e77760d6729b8faf3099590c60ea7673cfcb18ec
-ms.contentlocale: nb-no
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "308535"
 ---
-
-# <a name="budget-control-overview"></a>Oversikt over budsjettkontroll 
+# <a name="budget-control-overview"></a>Oversikt over budsjettkontroll
 
 [!include [banner](../includes/banner.md)]
 
@@ -128,4 +127,3 @@ Når budsjettkontroll er aktivert, får brukerne budsjettkontrolladvarsel og fei
 Fra denne siden kan brukere drille ned i siden **Statistikk for budsjettkontroll etter periode** for å vise budsjettdetaljer for tilgjengelighet og reserveringer for en valgt kombinasjon av budsjettkontrolldimensjon. Brukere kan også gå til siden **Statistikk for budsjettkontroll** for å vise budsjetttilgjengeligheten for alle kombinasjonene av finansdimensjoner som brukes i budsjettkontroll. 
 
 Hvis budsjettkontroll er aktivert for bestillinger, kan budsjettansvarlig bruke arbeidsområdet **Finansbudsjetter og prognoser** for å gå gjennom køen av alle ubekreftede bestillinger som har advarsler og feil. Hvis det er konfigurert tillatelse for budsjettoverskridelse for budsjettansvarlig, kan vedkommende bekrefte bestillinger direkte i arbeidsområdet.    
-

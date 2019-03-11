@@ -4,27 +4,26 @@ description: Erstatningsordrer for varer opprettes vanligvis etter at et produkt
 manager: AnnBe
 ms.date: 05/01/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ReturnTableListPage
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
 ms.author: ShylaThompson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 784a2522c27e8131f211ffc52319552b3b928cc3
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 1f0cd629658972f98e2233dfa287940c4444b82a
-ms.contentlocale: nb-no
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "355018"
 ---
-
 # <a name="create-an-item-replacement-order"></a>Opprette en erstatningsordre for vare 
 
 [!include [banner](../includes/banner.md)]
@@ -52,7 +51,7 @@ Erstatningsordrer for varer opprettes vanligvis etter at et produkt er returnert
 
 2.  Opprett en ny returordre eller velg en returordre fra listen, for å åpne skjemaet **Returordre – autorisasjonsreturnr.: %1, %2**.
 
-3.  Klikk **Søk etter salgsordre** hvis du vil finne salgsordren for den returnerte varen. Fyll ut skjemaet **Søke tter salgsordre**, og klikk deretter **OK** for å lukke skjemaet og gå tilbake til skjemaet **Returordre – autorisasjonsreturnr.: %1, %2**. Salgsordrelinjen for den returnerte varen kopieres til returordren.
+3.  Klikk **Søk etter salgsordre** hvis du vil finne salgsordren for den returnerte varen. Fyll ut skjemaet **Søk etter salgsordre**, og klikk deretter **OK** for å lukke skjemaet og gå tilbake til skjemaet **Returordre – autorisasjonsreturnr.: %1, %2**. Salgsordrelinjen for den returnerte varen kopieres til returordren.
 
 4.  Klikk **Erstatningsordre** for å åpne skjemaet **Opprett salgsordre**.
 
@@ -66,6 +65,5 @@ Erstatningsordrer for varer opprettes vanligvis etter at et produkt er returnert
     
     Hvis ID-en for salgsavtalen automatisk vises i feltet **Salgsavtale-ID**, er salgsavtalen koblet til salgsordrehodet for erstatningsordren for varen. Hvis det finnes en gjeldende forpliktelse i salgsavtalen som ikke er oppfylt ennå, og salgsordren opprettes før salgsavtalen utløper, blir det opprettet en kobling mellom salgsavtalelinjen og salgsordrelinjen. Informasjon fra salgsavtalen, for eksempel varepris, kopieres derfor til den nye salgsordrelinjen. 
   
-
 
 

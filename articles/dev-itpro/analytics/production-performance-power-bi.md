@@ -1,13 +1,13 @@
 ---
-title: Produksjonsytelse for Power BI-innhold
-description: "Dette emnet beskriver hva som er inkludert i Produksjonsytelse-innhold for Power BI. Det forklarer hvordan du kan få tilgang til Power BI-rapporter, og gir informasjon om datamodellen og enhetene som brukes til å bygge innholdet."
+title: Produksjonsytelse-innhold for Power BI
+description: Dette emnet beskriver hva som er inkludert i Produksjonsytelse-innhold for Power BI. Det forklarer hvordan du kan få tilgang til Power BI-rapporter, og gir informasjon om datamodellen og enhetene som brukes til å bygge innholdet.
 author: AndersGirke
 manager: AnnBe
 ms.date: 12/19/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 ms.search.form: ProductionPerformancePowerBI
 audience: Application User, IT Pro
 ms.reviewer: sericks
@@ -16,19 +16,18 @@ ms.search.region: Global
 ms.author: aevengir
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
 ms.openlocfilehash: 2bc4c409b831b78ef737a98ce985bf144853a454
-ms.contentlocale: nb-no
-ms.lasthandoff: 08/13/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: nb-NO
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "365966"
 ---
-
-# <a name="production-performance-power-bi-content"></a>Produksjonsytelse for Power BI-innhold
+# <a name="production-performance-power-bi-content"></a>Produksjonsytelse-innhold for Power BI
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet beskriver hva som er inkludert i **Produksjonsytelse**-innhold for Microsoft Power BI. Det forklarer hvordan du kan få tilgang til Power BI-rapporter, og gir informasjon om datamodellen og enhetene som brukes til å bygge innholdet.
+Dette emnet beskriver hva som er inkludert i **Produksjonsytelse**-innhold for Power BI. Det forklarer hvordan du kan få tilgang til Power BI-rapporter, og gir informasjon om datamodellen og enhetene som brukes til å bygge innholdet.
 
 ## <a name="overview"></a>Oversikt
 
@@ -42,7 +41,7 @@ Dette Power BI-innholdet lar deg også analysere produksjonsavvik. Produksjonsav
 
 **Produksjonsytelse** for Power BI-innhold inneholder data som kommer fra produksjonsordrer og partiordrer. Rapportene inneholder ikke data som er knyttet til kanban-produksjoner.
 
-## <a name="accessing-the-power-bi-content"></a>Tilgang til Power BI-innhold
+## <a name="accessing-the-power-bi-content"></a>Tilgang til Power BI-innholdet
 Power BI-innholdet **Produksjonsytelse** vises på **Produksjonsytelse**-siden (**Produksjonskontroll** \> **Forespørsler og rapporter** \> **Analyse av produksjonsytelse** \> **Produksjonsytelse**). 
 
 ## <a name="metrics-that-are-included-in-the-power-bi-content"></a>Mål som er inkludert i Power BI-innholdet
@@ -130,4 +129,3 @@ Tabellen nedenfor viser nøkkeldimensjonene som brukes som filtre for å dele op
 | Enheter                  | ID og navn                                                   |
 | Ressurser                 | Ressurs-ID, ressursnavn, ressurstype og ressursgruppe |
 | Produkter                  | Produktnummer, produktnavn, vare-ID og varegruppe         |
-
