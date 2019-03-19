@@ -5,6 +5,10 @@ items:
   items:
   - name: Hva er nytt eller endret?
     href: get-started/whats-new.md
+  - name: Forhåndsvisningsfunksjoner i Dynamics 365 for Retail 10.0.1
+    href: get-started/whats-new-10-0-1.md
+  - name: Hva er nytt eller endret i Dynamics 365 for Retail (april 2019)?
+    href: get-started/april-whats-new.md
   - name: Før du kjøper Retail
     href: get-started/before-you-buy.md
   - name: Registrere deg for et forhåndsvisningsabonnement
@@ -108,8 +112,12 @@ items:
     href: ../supply-chain/procurement/tasks/sales-tax-assignment-overrides.md
   - name: Hele beløp og alternativer for intervallberegning for mva-koder
     href: ../financials/general-ledger/whole-amount-interval-options-sales-tax-codes.md
-- name: Avanserte automatiske gebyrer for omnikanal
-  href: omni-auto-charges.md
+- name: Avanserte automatiske tillegg for omnikanal
+  items:
+  - name: Konfigurere og bruke avanserte automatiske tillegg
+    href: omni-auto-charges.md
+  - name: Fordeling og gruppering av automatiske hodetillegg
+    href: pro-rate-charges-matching-lines.md
 - name: Telefonsenter
   items:
   - name: Salgsfunksjonalitet for telefonsenter
@@ -387,7 +395,7 @@ items:
     - name: Kassefunksjonalitet
       href: localizations/emea-swe-cash-registers.md
     - name: Eksempel for Retail POS-integrering med kontrollenheter
-      href: dev-itpro/retail-sdk/retail-sdk-control-unit-sample.md
+      href: localizations/retail-sdk-control-unit-sample.md
 - name: Oppgaver i Retail
   items:
   - name: Opprette et produkt
@@ -553,6 +561,8 @@ items:
       href: dev-itpro/hybridApp.md
     - name: Overstyre forespørselsbehandling for salgssted
       href: dev-itpro/pos-handler.md
+    - name: Vise informasjon om utvidelsespakke for salgssted
+      href: view-pos-extension-package-details.md
   - name: Utvidelsesmulighet for Hardware Station
     href: dev-itpro/hardware-station-extensibility.md
   - name: Utvidelsesmuligheter for Retail Server
@@ -659,9 +669,9 @@ items:
     items:
     - name: Fordelsutvidelse
       href: dev-itpro/retail-sdk/loyalty-extension-sample.md
-ms.openlocfilehash: 1f86096b0572f0309afa04e086d53294a7a8f4fa
-ms.sourcegitcommit: 68df883200b5c477ea1799cc28d3ef467cd29202
+ms.openlocfilehash: 0d6ec0ba8723f81c21d735be455e35d8f1b62187
+ms.sourcegitcommit: 39c17fe619b075f56e8baffd087a830fc2fb8022
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "377257"
+ms.lasthandoff: 03/09/2019
+ms.locfileid: "791644"
