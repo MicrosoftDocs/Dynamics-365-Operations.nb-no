@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 944030859c26a1aadeb98a070d071e30f8b86dc4
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: d15ff8add8a77c27a9f0153c9e881ecae3d9da78
+ms.sourcegitcommit: afab5269613d1d1dfd79cd39370b747dee13d3fc
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "302709"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "403314"
 ---
 # <a name="cash-and-bank-management-home-page"></a>Startside for kontant- og bankbehandling
 
@@ -86,13 +86,11 @@ Disse instrumentene inkluderer betalingsbilag, sjekker, veksler og egenveksler. 
 
 #### <a name="whats-new-and-in-development"></a>Hva er nytt og hva er under utvikling?
 
-Gå til [Veikart for Microsoft Dynamics 365](https://roadmap.dynamics.com/) for å se hvilke nye funksjoner som har blitt utgitt og hvilke nye funksjoner som er under utvikling. 
+Gå til [Produktmerknader for Microsoft Dynamics 365](https://go.microsoft.com/fwlink/?linkid=2010158) for å se hvilke nye funksjoner som er planlagt. 
 
 #### <a name="blogs"></a>Blogger
 
-Du kan finne meninger, nyheter og annen informasjon om Kontant- og bankbehandling og andre løsninger i [Microsoft Dynamics 365-bloggen] (https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise).
-
-Det finnes mange innlegg om Kontant- og bankbehandling i [Microsoft Dynamics AX-produktteambloggen](https://blogs.msdn.microsoft.com/dax/). Selv om noen av disse innleggene ble skrevet for tidligere versjoner av Kontant- og bankbehandling, vil de samme begrepene fortsatt kunne brukes, og fremgangsmåtene ligner også på den gjeldende versjonen.
+Du kan finne meninger, nyheter og annen informasjon i [Microsoft Dynamics 365-bloggen](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise) og [Microsoft Dynamics 365 Finance and Operations – Financials-bloggen](https://community.dynamics.com/365/financeandoperations/b/financials).
 
 [Microsoft Dynamics Operations Partner Community-bloggen](https://community.dynamics.com/partner/b/operationspartnercommunityblog) gir Microsoft Dynamics-partnere én ressurs der de kan finne ut mer om hva som er nytt og populært i MBS Operations.
 

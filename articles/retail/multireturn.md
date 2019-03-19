@@ -3,7 +3,7 @@ title: Returnere varer på tvers av flere kunder, ordrer og fakturaer
 description: Dette emnet beskriver funksjonen for aktivering av returer på tvers av flere ordrer fra kunder og fakturaer i Microsoft Dynamics 365 for Retail.
 author: josaw1
 manager: AnnBe
-ms.date: 1/08/2019
+ms.date: 03/05/2019
 ms.topic: index-page
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -18,17 +18,17 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2019-01-15
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: d2cf6f92e90ef196827abb599c65c732615ec7bb
-ms.sourcegitcommit: e72eae546d48d41d4b07ff78cfc0242c32b793e7
+ms.openlocfilehash: c201311028b11121d626e93859a2b98497c047d1
+ms.sourcegitcommit: bacec397ee48ac583596be156c87ead474ee07df
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/01/2019
-ms.locfileid: "373074"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "777232"
 ---
 # <a name="return-items-across-multiple-customer-orders-and-invoices"></a>Returnere varer på tvers av flere kunder, ordrer og fakturaer
 
 [!include [banner](includes/banner.md)]
-[!include [preview banner](includes/preview-banner.md)]
+
 
 I Dynamics 365 for Finance and Operations versjon 10.0 kan returer utføres på tvers av flere ordrer og fakturaer, mens i versjoner før 10.0 kan returer bare behandles av én faktura om gangen. 
 
