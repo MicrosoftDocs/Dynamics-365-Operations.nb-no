@@ -3,7 +3,7 @@ title: Utvidelsesmuligheter i Attract
 description: Dette emnet beskriver hvordan du kan utvide programmet Microsoft Dynamics 365 for Talent - Attract ved hjelp av Microsoft Power-plattformen.
 author: josaw
 manager: AnnBe
-ms.date: 10/15/2018
+ms.date: 03/08/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-talent
@@ -18,18 +18,41 @@ ms.search.region: Global
 ms.author: rschloma
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: d9e1dd3a67c5f64b5d05f0f171226085138e0b44
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: c77c64070cb82180441f4b629b6884981b9b81d2
+ms.sourcegitcommit: 0bd0215d0735ed47b1b8af93a80bcdbf7ca2cc49
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "305609"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "789657"
 ---
 # <a name="extensibility-in-attract"></a>Utvidelsesmuligheter i Attract
 
 [!include[banner](../includes/banner.md)]
 
 Microsoft Dynamics 365 for Talent er bygd på toppen av Common Data Service (CDS) for Apps-plattformen, og kan utvides på forskjellige måter ved hjelp av Microsoft Power-plattformen og funksjonene som tilbys i Common Data Service for Apps. Derfor kan du konfigurere og tilpasse systemet ved hjelp av Microsoft PowerApps og Microsoft Flow. Du kan også få ekstra analyse om personer ved hjelp av Microsoft Power BI. Dessuten gjør nye egendefinerte aktiviteter, for eksempel PowerApps og webinnhold-aktivitet (iframe), ansettelsesprosessen mer fleksibel enn noen gang. Ved hjelp av disse aktivitetene kan du tilpasse ansettelsesprosessen til dine forretningsbehov og prosesser, og du kan forsikre deg om at både ansettelsesteamet og kandidatene får en sømløs, tilpasset opplevelse.
+
+## <a name="extending-option-sets-in-attract"></a>Utvide alternativsett i Attract
+
+Et **Alternativsett** (plukkliste) er et type felt som kan inkluderes i en enhet. Det definerer et sett med alternativer. Når et alternativsett vises i et skjema, brukes en rullegardinlistekontroll.  I Attract finnes det flere felt som er alternativsett.  Vi introduserer muligheten til å utvide alternativsettene og begynner med Avslag-årsaksfeltet, Ansettelsestype-feltet og Ansiennitetstype-feltet.   Du kan også legge til lokaliserte visningsetiketter for alternativene du legger til.  Se følgende kobling for å finne ut mer:  [Tilpasse alternativsettetiketter](https://docs.microsoft.com/en-us/poweapps/developer/common-data-service/customize-labels-suport-multiple-languages)
+
+> [!NOTE]
+> Jobbposteringen til LinkedIn-funksjonaliteten krever bruk av feltet **Ansettelsestype** og **Ansiennitetstype** på siden **Jobbdetaljer**. Standardverdiene i disse feltene støttes av LinkedIn og vises når jobben posteres. Hvis du posterer jobber i LinkedIn og endrer de eksisterende alternativsettverdiene for disse feltene, vil jobben derfor fortsatt posteres, men LinkedIn vil ikke vise de egendefinerte **Ansettelsestype**- og **Ansiennitetstype**-verdiene.  
+
+Nedenfor finner du trinnene for å oppdatere **Avvisningsårsak**-feltet med verdier som er spesifikke for din virksomhet.  
+
+1. Hvis du vil utvide **Avvisningsårsak**-alternativsettet, navigerer du til [webområdet for PowerApps-administrasjonssenteret.](Https://admin.powerapps.microsoft.com)
+2. Du kan bli bedt om å logge på kontoen. Oppgi bruker-ID-en og passordlegitimasjonen du bruker til å logge på Dynamics 365 og/eller Office 365, og klikk deretter **Neste**.
+3. I **Miljøer**-fanen velger du miljøet du vil administrere, og dobbeltklikker for å gå til **Detaljer**-kategorien.
+4. På **Detaljer**-kategorien velger du **Administrasjonssenter for Dynamics 365**.
+5. Velg forekomsten du vil endre, og velg **Åpne**.
+6. Gå til **Innstillinger** og deretter **Tilpasninger**, og velg **Tilpass systemet**.
+7. Finn enheten du vil vise alternativsettet for, ved å velge **Enheter** og vise gruppen. I dette eksemplet vil det være **Stillingssøknadenhet**.
+8. Gå til feltet som du vil utvide alternativsettet for, ved å velge **Felt**-alternativet. I dette eksemplet vil det være **msdyn_rejectionreason**. Dobbeltklikk på feltet.
+9. I **Alternativsett**-feltet velger du **Rediger**.
+10. Velg **+**-ikonet.
+11. Angi en **Etikett**.  (Dette må være en unik verdi – ingen duplikater).
+12. Velg **Lagre**.
+13. Velg **Publiser** øverst på siden.
 
 ## <a name="take-advantage-of-the-microsoft-power-platform"></a>Dra nytte av Microsoft Power Platform 
 

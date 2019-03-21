@@ -3,7 +3,7 @@ title: Fakturasamsvar for leverandører
 description: Fakturasamsvar for leverandører er prosessen med å sjekke samsvar mellom leverandørfakturaen, bestillingen og produktkvitteringsinformasjonen.
 author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 08/01/2017
+ms.date: 02/13/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 11cc2d4ddbd30ff4d010f6b34119a7ad96d5aecb
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 6d1582d268be759cd1f1686c9e80f6cf7eeb2da8
+ms.sourcegitcommit: 1ee613a88edddab036d145f27f19d071a4b8ad24
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "310283"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "389939"
 ---
 # <a name="accounts-payable-invoice-matching"></a>Fakturasamsvar for leverandører
 
@@ -49,7 +49,7 @@ Du kan bruke følgende typer fakturasamsvar for leverandører:
 
 Toveis samsvar og treveis samsvar sammenligner alltid prisinformasjon med enhetsprisen. Du kan også konfigurere disse samsvarspolicyene for å sammenligne prisinformasjon med pristotalen.
 -   Nettoenhetspriskontroll – Sammenlign prisinformasjon for toveis samsvar eller treveis samsvar ved å sammenligne netto enhetspris for hver linje på fakturaen med tilhørende netto enhetspris i bestillingen. Netto enhetspris fastsettes med følgende formel: nettobeløpet for linjen / antallet for linjen.
--   Pristotalkontroll – Sammenlign prisinformasjon for toveis samsvar eller treveis samsvar ved å sammenligne nettobeløpet (pristotal) for hver linje på fakturaen med tilhørende nettobeløp på bestillingen. Nettobeløpet fastsettes med følgende formel: (enhetspris \* linjeantall) + linjetillegg - linjerabatter
+-   Pristotalkontroll – Sammenlign prisinformasjon for toveis samsvar eller treveis samsvar ved å sammenligne nettobeløpet (pristotal) for hver linje på fakturaen med tilhørende nettobeløp på bestillingen. Nettobeløpet fastsettes med følgende formel: *(Enhetspris \* Linjeantall) + Linjetillegg - Linjerabatter*. Når samlet pris tilpasses til prosent, sammenligner systemet verdier ved hjelp av transaksjonsvalutaen. Når samlet pris tilpasses til beløp, sammenligner systemet verdiene ved hjelp av regnskapsvalutaen.
 
 Fakturakontrollberegninger utføres vanligvis automatisk når du redigerer leverandørfakturaer på siden Leverandørfaktura. Du kan også utføre fakturakontroll ved forespørsel, etter behov. Fakturakontroll ved behov kontrolleres for den juridiske enheten av Oppdater fakturahodestatus automatisk på siden Leverandørparametere på Fakturavalidering-fanen. Fakturakontroll kan også utføres som en del av en fakturavurderingsprosess. Du kan vise resultatene av fakturakontroll på Leverandørfaktura-siden og relaterte fakturakontrollsider.
 

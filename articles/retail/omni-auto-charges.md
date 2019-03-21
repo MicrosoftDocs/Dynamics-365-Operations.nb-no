@@ -3,7 +3,7 @@ title: Avanserte automatiske gebyrer for omnikanal
 description: Dette emnet beskriver funksjoner for å håndtere flere ordregebyrer for handelskanalordrer ved hjelp av funksjoner for avanserte automatiske gebyrer.
 author: hhaines
 manager: annbe
-ms.date: 01/22/2019
+ms.date: 03/08/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -19,16 +19,15 @@ ms.search.industry: Retail
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: a980ae9571fb47522d3966dc172b2343641b827e
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 6b63a1bb8791ab3f0c71a2fd03677e7d0bf71e62
+ms.sourcegitcommit: 0bd0215d0735ed47b1b8af93a80bcdbf7ca2cc49
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "345565"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "789777"
 ---
 # <a name="omni-channel-advanced-auto-charges"></a>Avanserte automatiske gebyrer for omnikanal
 
-[!include [banner](includes/preview-banner.md)]
 [!include [banner](includes/banner.md)]
 
 Dette emnet gir informasjon om konfigurasjon og distribusjon av funksjonen for avanserte automatiske gebyrer som er tilgjengelig i Dynamics 365 for Retail versjon 10.0.
@@ -67,6 +66,8 @@ De nye operasjonene er følgende:
 - **143 - Beregn gebyrer på nytt** - Bruk denne operasjonen for å utføre en fullstendig ny beregning av gebyrene salgstransaksjonen. Tidligere automatiske gebyrer som er overskrevet av bruker, beregnes på nytt basert på den gjeldende handlekurvkonfigurasjonen.  
 
 Som med alle salgsstedsoperasjoner kan sikkerhet konfigureres slik at det kreves godkjenning fra leder før operasjonen kan utføres.
+
+Det er viktig å være klar over at salgsstedsoperasjonene også kan legges til salgsstedoppsettet, selv om **Bruk avanserte automatiske gebyrer**-parameteren er deaktivert. I slike scenarioer vil organisasjoner likevel få fordeler med å kunne vise manuelt tillagte gebyrer og redigere dem ved hjelp av **Behandle gebyrer**-operasjonen. Brukere kan også bruke operasjonene **Legg til hodegebyrer** og **Legg til linjegebyrer** for salgsstedstransaksjoner, selv når **Bruk avanserte automatiske gebyrer**-parameteren er deaktivert. **Beregn gebyrer på nytt**-operasjonen har mindre funksjonalitet hvis den brukes når **Bruk avanserte automatiske gebyrer** er deaktivert. Ingenting vil bli beregnet på nytt i dette scenarioet, og gebyrer som legges til manuelt i transaksjonen, vil bare tilbakestilles til USD 0,00.
 
 ## <a name="use-case-examples"></a>Brukseksempler
 I denne delen vises brukseksempler for å hjelpe deg med å forstå konfigurasjon og bruk av automatiske gebyrer og tillegg i forbindelse med handelskanalordrer. Disse eksemplene viser virkemåten til programmet når parameteren **Bruk avanserte automatiske gebyrer** er aktivert.
@@ -207,3 +208,7 @@ Det anbefales at organisasjonen også legger til fritekstfelt i kvitteringsbunnt
 ### <a name="preventing-charges-from-being-calculated-until-the-pos-order-is-completed"></a>Hindre at tillegg blir beregnet før salgsstedsordren er fullført
 
 Noen organisasjoner kan foretrekke å vente til brukeren er ferdig med å legge til alle salgslinjene i salgsstedstransaksjonen før tilleggene beregnes. Du kan unngå beregning av gebyrer etter hvert som varer legges til salgsstedstransaksjonen, ved å aktivere parameteren **Manuell tilleggsberegning** i **funksjonalitetsprofilen** som butikken bruker. Aktivering av denne parameteren krever at salgsstedsbrukeren bruker operasjonen **Beregne totaler** når de er ferdig med å legge til produktene i salgsstedstransaksjonen. **Beregne totaler**-operasjonen vil deretter utløse beregningen av automatiske gebyrer for ordrehodet eller -linjene etter behov.
+
+### <a name="charges-override-reports"></a>Tillegg overstyrer rapporter
+
+Hvis brukere overstyrer de beregnede kostnadene manuelt eller legger til et manuelt tillegg i transaksjonen, vil disse dataene være tilgjengelige for revisjon i rapporten **Historikk for gebyroverstyring**. Rapporten er tilgjengelig fra **Detaljhandel \> Forespørsler og rapporter \> Historikk for gebyroverstyring**.  Det er viktig å være oppmerksom på at dataene som kreves for denne rapporten, importeres fra kanaldatabasen til HK via "P"-distribusjonsplanleggingsjobber. Informasjon om overstyringer som nettopp er utført på salgsstedet, er derfor kanskje ikke tilgjengelig umiddelbart i denne rapporten før denne jobben har lastet opp butikktransaksjonsdataene til HK. 

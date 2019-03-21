@@ -3,7 +3,7 @@ title: Definere økonomisk integrering for detaljhandelskanaler
 description: Dette emnet gir retningslinjer for hvordan du konfigurerer regnskapsintegreringsfunksjonaliteten for detaljhandelskanaler.
 author: josaw
 manager: annbe
-ms.date: 2/01/2019
+ms.date: 02/01/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: v-kikozl
 ms.search.validFrom: 2018-11-1
 ms.dyn365.ops.version: 8.1.1
-ms.openlocfilehash: 3c2945c4310dc4c1ae74f215e9b28056e7d1ede9
-ms.sourcegitcommit: 68df883200b5c477ea1799cc28d3ef467cd29202
+ms.openlocfilehash: 685340141ed35f4a2b57742328c69d3bbf9a73d2
+ms.sourcegitcommit: 70aeb93612ccd45ee88c605a1a4b87c469e3ff57
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "377321"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "773333"
 ---
 # <a name="set-up-the-fiscal-integration-for-retail-channels"></a>Definere økonomisk integrering for detaljhandelskanaler
 
@@ -175,7 +175,7 @@ I noen tilfeller må en spesiell tekst skrives ut på en bilagskvittering hvis e
     3. I feltet **Tekst for bilagskvittering** angir du en bilagstekst som skal skrives ut på en bilagskvittering.
 
     > [!NOTE]
-    > Hvis flere rabatter brukes på samme transaksjonslinje, vil bilagskvitteringen inneholde bilagstekster fra alle rabatter som er koblet til denne transaksjonslinjen. 
+    > Hvis flere rabatter brukes på samme transaksjonslinje, vil bilagskvitteringen inneholde bilagstekster fra alle rabatter som er koblet til denne transaksjonslinjen.
 
 ## <a name="set-error-handling-settings"></a>Angi innstillinger for feilbehandling
 
@@ -210,3 +210,4 @@ For å aktivere X-/Z-regnskapsrapporter fra salgsstedet bør du legge til nye kn
     2. Legg til en ny knapp, og angi **Skriv ut regnskapsår X**-knappeegenskapen.
     3. Legg til en ny knapp, og angi **Skriv ut regnskapsår Z**-knappeegenskapen.
     4. På siden **Distribusjonsplan** kjører du **1090**-jobben for å overføre endringer til kanaldatabasen.
+

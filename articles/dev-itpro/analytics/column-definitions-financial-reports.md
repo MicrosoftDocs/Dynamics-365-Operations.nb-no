@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: e92d50828f6511329401b43154895da1244788cd
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 872e7c833416f0f7d9aa0c55aadf72aec65ddaab
+ms.sourcegitcommit: f6fc90585632918d9357a384b27028f2aebe9b5a
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "356352"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "832154"
 ---
 # <a name="column-definitions-in-financial-reports"></a>Kolonnedefinisjoner i finansrapporter
 
@@ -62,7 +62,7 @@ En kolonnedefinisjon kan inneholde to til 255 kolonner.
 En kolonnedefinisjon inneholder følgende informasjon:
 
 - En kolonne med beskrivelsene for raddefinisjonen
-- Beløpskolonner som viser data fra de økonomiske dataene, et Microsoft Excel-regneark eller beregninger som er basert på andre data i kolonnedefinisjonen
+- Beløpskolonner som viser data fra de økonomiske dataene eller beregninger som er basert på andre data i kolonnedefinisjonen
 - Formateringskolonner
 - Attributtkolonner
 
@@ -170,7 +170,7 @@ Du kan bruke dialogboksen **Kolonneoverskrift** for å legge til, endre og slett
 
 ### <a name="create-an-automatically-generated-header"></a>Opprette en automatisk generert overskrift
 
-Rapportutforming kan automatisk generere kolonneoverskrifter, basert på autotekstkoder. Autotekstkoder er variabler som oppdateres hver gang en rapport genereres. En kolonneoverskrift kan inneholde disse kodene for å angi rapportinformasjon som kan variere, for eksempel datoer eller periodenumre. Du kan derfor bruke én kolonnedefinisjon for flere rapportdefinisjoner, tidsperioder og rapporteringstrær. SIden autotekstkoder avhenger av kalenderinformasjonen fra detaljradene for kolonnedefinisjonen, støttes de bare for kolonnene **CALG**, **FD** og **WKS**. Hvordan en autotekstkode vises i kolonneoverskriften har innvirkning på hvordan denne informasjonen vises i rapporten. I dialogboksen **Kolonneoverskrift** vises autotekstkodene med store og små bokstaver. Derfor vises teksten i små og store bokstaver i rapporten. I et standard kalenderår løser for eksempel **@CalMonthLong** måned **7** til **juli**. Hvis navnet på måneden skal være i store bokstaver (for eksempel **JULI**), skriver du inn autotekstkoden med store bokstaver i feltet **Kolonnehodetekst**. Angi for eksempel **@CALMONTHLONG**. Du kan blande koder og tekst. Du skriver for eksempel inn følgende overskrift: **Periode @FiscalPeriod-@FiscalYear fra @StartDate til @EndDate**. Rapportoverskriften som genereres ligner på følgende tekst: **Periode 1-02 fra 01.01.02 til 01.31.02**.
+Rapportutforming kan automatisk generere kolonneoverskrifter, basert på autotekstkoder. Autotekstkoder er variabler som oppdateres hver gang en rapport genereres. En kolonneoverskrift kan inneholde disse kodene for å angi rapportinformasjon som kan variere, for eksempel datoer eller periodenumre. Du kan derfor bruke én kolonnedefinisjon for flere rapportdefinisjoner, tidsperioder og rapporteringstrær. Siden autotekstkoder avhenger av kalenderinformasjonen fra detaljradene for kolonnedefinisjonen, støttes de bare for kolonnene **CALC** og **FD**. Hvordan en autotekstkode vises i kolonneoverskriften har innvirkning på hvordan denne informasjonen vises i rapporten. I dialogboksen **Kolonneoverskrift** vises autotekstkodene med store og små bokstaver. Derfor vises teksten i små og store bokstaver i rapporten. I et standard kalenderår løser for eksempel **@CalMonthLong** måned **7** til **juli**. Hvis navnet på måneden skal være i store bokstaver (for eksempel **JULI**), skriver du inn autotekstkoden med store bokstaver i feltet **Kolonnehodetekst**. Angi for eksempel **@CALMONTHLONG**. Du kan blande koder og tekst. Du skriver for eksempel inn følgende overskrift: **Periode @FiscalPeriod-@FiscalYear fra @StartDate til @EndDate**. Rapportoverskriften som genereres ligner på følgende tekst: **Periode 1-02 fra 01.01.02 til 01.31.02**.
 
 > [!NOTE]
 > Formatet på noe av teksten, for eksempel den lange datoen, avhenger av de regionale innstillingene på Finance and-serveren. Hvis du vil endre disse innstillingene, klikker du **Start**, **Kontrollpanel** og deretter **Område og språk**. Tabellen nedenfor viser en liste over tilgjengelige alternativer for autotekst for kolonneoverskrifter.
@@ -291,7 +291,7 @@ Cellen **Ekstra mellomrom før kolonne** angir bredden på skilletegnet mellom k
 1. Åpne kolonnedefinisjonen som skal endres i Rapportutforming.
 2. I cellen **Ekstra mellomrom før kolonne** angir du hvor antall mellomrom som skal settes inn mellom kolonner.
 
-### <a name="specify-a-currency"></a>Angi en valuta
+### <a name="specify-a-format-currency-override"></a>Angi en overstyring av formatvaluta
 
 Cellen **Format/valutaoverstyring** angir formateringen til desimal-, valuta- og prosentbeløpene i kolonnen. Denne formateringen overstyrer all formatering som er angitt i rapportdefinisjonen eller systemstandardene.
 
@@ -361,7 +361,7 @@ Hvilken type informasjon som hver kolonne i en rapport inneholder, er angitt med
     <tbody>
     <tr>
     <td>FD</td>
-    <td>Vis finansdata eller data fra et Excel-regneark når du bruker kolonnen <strong>Kobling til finansdimensjoner</strong> eller <strong>Kobling til regneark</strong> i raddefinisjonen. Når du velger kolonnetypen <strong>FD</strong>, angis standardinnstillingene automatisk for følgende rader: <ul>
+    <td>Vise økonomiske data når du bruker en <strong>Kobling til finansdimensjoner</strong>-kolonne i raddefinisjonen. Når du velger kolonnetypen <strong>FD</strong>, angis standardinnstillingene automatisk for følgende rader: <ul>
     <li><strong>Posteringskode/attributtkategori:</strong> FAKTISK</li>
     <li><strong>Posteringskode/attributtkategori:</strong> FAKTISK</li>
     <li><strong>Regnskapsår:</strong> BASE</li>
@@ -394,14 +394,6 @@ Du kan endre disse standardinnstillingene.</td>
     <tr>
     <td>PAGE</td>
     <td>Setter inn et loddrett sideskift i rapporten. Kolonnene som vises til høyre for kolonnen <strong>SIDE</strong>, vises på en annen side.</td>
-    </tr>
-    <tr>
-    <td>WKS</td>
-    <td>Viser data som er trukket ut fra et Excel-regneark. Når du velger kolonnetypen <strong>WKS</strong>, angis standardinnstillingene automatisk for følgende rader: <ul>
-    <li><strong>Regnskapsår:</strong> tidsbestemt</li>
-    <li><strong>Periode:</strong> BASE</li>
-    </ul>
-Du kan endre disse standardinnstillingene.</td>
     </tr>
     <tr>
     <td>ATTR</td>
@@ -518,13 +510,13 @@ Du kan også bruke hvilken som helst kombinasjon av alfanumeriske tegn for nøya
 
 ### <a name="format-a-multiple-currency-report-in-a-column-definition"></a>Formatere en rapport med flere valutaer i en kolonnedefinisjon
 
-En rapport med flere valutaer kan vise beløp i naturlig (lokal) valuta, funksjonell valuta (standard) eller rapporteringsvaluta. Virksomhetens funksjonell valuta er definert i Microsoft Dynamics ERP-systemet. Du må ikke forveksle denne ERP-innstillingen med operativsystemets regionale innstillinger, der du kan konfigurere standard valutasymboler som skal brukes i rapporter. Følgende valutarelaterte celler er tilgjengelige i kolonnedefinisjonen:
+En rapport med flere valutaer kan vise beløp i regnskapsvalutaen i finans, rapportering i finans, den opprinnelige transaksjonsvalutaen eller den oversatte rapporteringsvalutaen. En virksomhets regnskapsvaluta er definert i finansoppsettet. Du må ikke forveksle denne innstillingen med operativsystemets regionale innstillinger, der du kan konfigurere standard valutasymboler som skal brukes i rapporter. Følgende valutarelaterte celler er tilgjengelige i kolonnedefinisjonen:
 
-- **Valutavisning** – Angir valutatypen (naturlig, funksjonelle eller rapportering) som transaksjonene skal vises i. Denne funksjonen kalles noen ganger valutaomveksling. Valutaomveksling er muligheten til å rapportere økonomimodulbeløp i en valuta som ikke er den funksjonelle valutaen for firmaet, eller valutaen som transaksjonen ble registrert i.
+- **Valutavisning** – Angir valutatypen (rapportering for regnskap, rapportering, transaksjon eller veksling) som transaksjonene vises i. Oversatt til en rapporteringsvalutafunksjon kalles noen ganger valutaomveksling. Valutaomveksling er muligheten til å rapportere økonomimodulbeløp i en valuta som ikke er den funksjonelle eller rapporteringvalutaen for firmaet, eller valutaen som transaksjonen ble registrert i.
 - **Valutafilter** – Angi et valutafilter. Bare transaksjoner som er angitt i den valgte valutaen vises i rapporten.
 
-> [!NOTE]
-> Hvis du vil opprette rapporter som bruker flere valutaer, må du merke av for **Inkluder alle rapporteringsvalutaer** i kategorien **Rapport** i rapportdefinisjonen. Følg fremgangsmåten nedenfor for å fastslå firmaets funksjonelle valuta.
+> 
+Følg fremgangsmåten nedenfor for å fastslå firmaets regnskapsvaluta.
 
 1. Gå til **Firma**-menyen i Rapportutforming, og klikk **Firmaer**.
 2. Velg et firma og klikk deretter **OK** i dialogboksen **Firmaer**.
@@ -533,20 +525,18 @@ En rapport med flere valutaer kan vise beløp i naturlig (lokal) valuta, funksjo
 #### <a name="specify-the-currency-on-a-multiple-currency-report"></a>Angi valutaen i en rapport med flere valutaer
 
 1. Åpne kolonnedefinisjonen som skal endres i Rapportutforming.
-2. Dobbeltklikk **Valutavisning**-cellen i den aktuelle **FD**-kolonnen, og velg deretter alternativet for å vise valutainformasjon: **Naturlig / opprinnelig valuta**, **Funksjonell valuta fra firmainformasjon** eller rapporteringsvalutaen.
+2. Dobbeltklikk **Valutavisning**-cellen i den aktuelle **FD**-kolonnen, og velg deretter alternativet for å vise valutainformasjon: **Regnskapsvaluta for finans**, **Finansrapportering**, transaksjonsvaluta, eller velg for å oversette til en annen rapporteringsvaluta.
 3. Dobbeltklikk **Valutafilter**-cellen i den aktuelle **FD**-kolonnen, og velg deretter aktuell valutakode i listen. Bare transaksjoner som er angitt i denne valgte valutaen vises i rapporten.
 
-> [!NOTE]
-> Alternativene som beskrives her kan variere, avhengig av ERP-systemet. Hvis du vil ha mer informasjon, kan du se i [dokumentasjonen for Microsoft ERP-systemet](https://www.microsoft.com/en-us/download/details.aspx?id=5916).
 
 ### <a name="example-for-currency-display-and-currency-filter-cells"></a>Eksempel for cellene Valutavisning og Valutafilter
 
 Jenny har gjort følgende valutavalg i kolonnedefinisjonen:
 
 - **Valutafilter:** Yen
-- **Valutavisning:** Funksjonell (amerikanske dollar)
+- **Valutavisning:** Regnskapsvaluta fra Finans (amerikanske dollar)
 
-På grunn av valutafilteret som Jenny valgte, inneholder rapporten bare transaksjoner som ble angitt i japanske yen (JPY). På grunn av valutavisningen som hun valgte, viser rapporten disse transaksjonene i den funksjonelle valutaen, amerikanske dollar (USD).
+På grunn av valutafilteret som Jenny valgte, inneholder rapporten bare transaksjoner som ble angitt i japanske yen (JPY). På grunn av valutavisningen som hun valgte, viser rapporten disse transaksjonene i regnskapsvalutaen, amerikanske dollar (USD).
 
 #### <a name="currency-filter-and-currency-display-combinations"></a>Kombinasjoner for Valutafilter og Valutavisning
 
@@ -555,10 +545,10 @@ Tabellen nedenfor viser rapportresultatene som kan oppstå for ulike kombinasjon
 
 | Cellen Valutavisning                        | Cellen Valutafilter | Rapportresultat |
 |----------------------------------------------|----------------------|---------------|
-| Naturlig / opprinnelig valuta                 | **YEN**              | **Y6,000** – Resultatet viser bare transaksjoner som ble angitt i JPY. |
-| Funksjonell valuta fra firmainformasjon | **YEN**              |**$60** – Resultatet viser bare transaksjoner som ble angitt i JPY, og disse transaksjonene vises i USD.<blockquote>[!NOTE] Omregningssatsen er omtrent 100 JPY per USD.</blockquote> |
-| Funksjonell valuta fra firmainformasjon | Tom                | **$2,310** – Resultatet viser alle dataene i den funksjonelle valutaen som er angitt i firmainformasjonen.<blockquote>[!NOTE] Dette beløpet er summen av alle transaksjoner i funksjonell valuta.</blockquote> |
-| Naturlig / opprinnelig valuta                 | Tom                | **$2,250** – Resultatet viser alle beløp i valutaen som transaksjonen ble utført i. |
+| Transaksjonsvaluta                 | **YEN**              | **Y6,000** – Resultatet viser bare transaksjoner som ble angitt i JPY. |
+| Regnskapsvaluta fra finans | **YEN**              |**$60** – Resultatet viser bare transaksjoner som ble angitt i JPY, og disse transaksjonene vises i USD.<blockquote>[!NOTE] Omregningssatsen er omtrent 100 JPY per USD.</blockquote> |
+| Regnskapsvaluta fra finans | Tom                | **$2,310** – Resultatet viser alle dataene i regnskapsvalutaen som er angitt i finans.<blockquote>[!NOTE] Dette beløpet er summen av alle transaksjoner i regnskapsvaluta.</blockquote> |
+| Transaksjonsvaluta                 | Tom                | **$2,250** – Resultatet viser alle beløp i valutaen som transaksjonen ble utført i. Dette betyr at totalen legger sammen beløp fra ulike valutaer. |
 
 ### <a name="calculation-column-in-a-column-definition"></a>Beregningskolonne i en kolonnedefinisjon
 

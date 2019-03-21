@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2018-10-18
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fa6c8c80870dd7bd06498c7571ba8a110be85c86
-ms.sourcegitcommit: 3b12ff5ca81650ae666ff443b0bc998182f3931e
+ms.openlocfilehash: 43cf13d96e345747e06541267d820e17de7c1763
+ms.sourcegitcommit: ea17d2e35c24a141c20ab429897eebf9fa186f61
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/06/2019
-ms.locfileid: "376513"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "768888"
 ---
 # <a name="set-up-offer-management"></a>Konfigurere tilbudsbehandling 
 
@@ -199,11 +199,11 @@ Det er flere deler av tilbudsopprettingsprosessen som kan konfigureres av en Att
 - **Kandidatens tilbudserfaring** – Som administrator kan du velge å angi om alle tilbud skal ha en utløpsdato, og i så fall hva som skal være standard forskyvning for utløpsdatoen. Du kan også konfigurere om kandidater kan avvise et tilbud.
 
 - **e-signaturer** - Som administrator kan du også velge metoden som kandidater kan bruke til å signere tilbud.
-    - Adobe Sign - Alle tilbudspakker blir sendt og signert via Adobe Sign. Hver tilbudsoppretter som publiserer tilbudet, må ha sin Adobe Sign-lisens knyttet til Attract. 
+    - Adobe Sign - Alle tilbudspakker blir sendt og signert via Adobe Sign. Hver tilbudsoppretter som publiserer tilbudet, må ha sin Adobe Sign-konto knyttet til Attract. For Adobe Sign-lisenser og en kostnadsfri prøveversjon kan du velge denne [koblingen](https://acrobat.adobe.com/us/en/business/integrations/microsoft-dynamics-365-for-talent.html).
 
+    - DocuSign - Alle tilbudspakker blir sendt og signert via DocuSign. Hver tilbudsoppretter som publiserer tilbudet, må ha sin DocuSign-konto knyttet til Attract. 
+    
     - ESign - Dette er standardvalget, som følger med som standard, der brukeren kan signere et tilbud ved å skrive inn navn og initialer.
 
->[!NOTE]
-> For Adobe Sign-lisenser og en kostnadsfri prøveversjon kan du velge denne [koblingen](https://acrobat.adobe.com/us/en/business/integrations/microsoft-dynamics-365-for-talent.html).
 
 Hvis du vil vite mer om tilbudsopprettingsprosessen, kan du se [Opprette, godkjenne og signere tilbud](./creating-offers.md).

@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: epopov
 ms.search.validFrom: 2017-10-31
 ms.dyn365.ops.version: Application update 4
-ms.openlocfilehash: 2fa48ea11b9bfa156d6c20f18b4247780ed23219
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 496a4b32cc82fb5133d92c41d9af81c66ed182a8
+ms.sourcegitcommit: 2cf5498098e7a5ade1c16eac6df26bc98e4565cd
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "371356"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "760773"
 ---
 # <a name="cash-register-functionality-for-norway"></a>Kassefunksjoner for Norge
 
@@ -43,16 +43,16 @@ Følgende POS-lokaliseringsfunksjoner som tidligere ble implementert og gjort ti
 
 - **Skriv ut tekstfelt på en kvittering i en stor skriftstørrelse.** Du kan bruke **Skriftstørrelse**-parameteren i Utforming av kvitteringsformat til å angi at den store skriftstørrelsen skal brukes for et felt i kvitteringsformatet. (Den store skriftstørrelsen er omtrent dobbelt så stor som den vanlige skriftstørrelsen.) Du kan for eksempel bruke denne parameteren til å skrive ut "Kopi"-indikatoren med store bokstaver på en kopi av en kvittering.
 - **Registrer utskrift av kritteringskopier i POS-overvåkingsloggen.** Du kan bruke **Overvåk** -parameteren i POS-funksjonalitetsprofilen til å aktivere kopier av kvitteringer som skal skrives ut og andre POS-overvåkingshendelser som skal registreres. Overvåkingshendelser registreres i kanaldatabasen og i Detaljhandel Hovedkontor. Du kan vise overvåkingshendelser på siden **Overvåkingshendelser**.
-- **Hindre at en kopi av en kvittering skrives ut mer enn én gang.** Når **Overvåk**-parameteren i POS-funksjonalitetsprofilen er aktivert, styrer POS-tillatelsen **Tillat utskrift av kvitteringskopi** om kopier av kvitteringer kan skrives ut. Det er også et alternativ som lar deg hindre at en kopi av en kvittering skrives ut mer enn én gang. 
+- **Hindre at en kopi av en kvittering skrives ut mer enn én gang.** Når **Overvåk**-parameteren i POS-funksjonalitetsprofilen er aktivert, styrer POS-tillatelsen **Tillat utskrift av kvitteringskopi** om kopier av kvitteringer kan skrives ut. Det er også et alternativ som lar deg hindre at en kopi av en kvittering skrives ut mer enn én gang.
 
 I tillegg ble følgende POS-funksjon implementert for Norge, men gjort tilgjengelig for kunder i alle land eller områder:
 
 - **Registrer flere hendelser i POS-overvåkingsloggen.** Hvis **Overvåk**-parameteren i POS-funksjonalitetsprofilen er aktivert, registreres følgende hendelser i POS-overvåkingsloggen:
 
-  - Priskontroller
-  - Avgiftsoverstyringer
-  - Endringer i linjeantall
-  - Fjerning av transaksjoner fra kanaldatabasen
+    - Priskontroller
+    - Avgiftsoverstyringer
+    - Endringer i linjeantall
+    - Fjerning av transaksjoner fra kanaldatabasen
 
 ### <a name="norway-specific-pos-features"></a>Spesifikke POS-funksjoner for Norge
 
@@ -71,7 +71,7 @@ Bare transaksjoner for kontantsalg signeres. Her er noen eksempler på transaksj
 
 Dataene som signeres, er en tekststreng som består av datafeltene nedenfor. Datafeltene er atskilt med semikolon.
 
-1. Forrige signatur for samme POS (en null [**0**] brukes for den første transaksjonen.)
+1. Forrige signatur for samme POS (en null \[**0**\] brukes for den første transaksjonen.)
 2. Transaksjonsdato
 3. Transaksjonstidspunkt
 4. Sekvensielt signert transaksjonsnummer
@@ -80,7 +80,7 @@ Dataene som signeres, er en tekststreng som består av datafeltene nedenfor. Dat
 
 Den digitale signeringen bruker en 1024-biters RSA-nøkkel med en SHA-1-hash-funksjon (RSA-SHA1-1024). Et sertifikat som er installert på detaljhandelsserveren brukes til signering. Den unike ID-en for sertifikatet (avtrykk) registreres sammen med signaturen.
 
-Signaturen lagres i databasen for butikken og hovedkontoret (HQ) sammen med transaksjonsdataene. Du kan vise transaksjonsignaturen sammen med transaksjonsdataene som ble brukt til å generere den, i hurtigfanen **Finansielle transaksjoner** på siden **Transaksjoner for detaljhandelsbutikk**. 
+Signaturen lagres i databasen for butikken og hovedkontoret (HQ) sammen med transaksjonsdataene. Du kan vise transaksjonsignaturen sammen med transaksjonsdataene som ble brukt til å generere den, i hurtigfanen **Finansielle transaksjoner** på siden **Transaksjoner for detaljhandelsbutikk**.
 
 #### <a name="receipts"></a>Kvitteringer
 
@@ -90,10 +90,10 @@ Kvitteringer for Norge kan inkludere tilleggsinformasjon som ble implementert ve
 - **Sekvensielt nummer for signert transaksjon** – Det sekvensielle nummeret for en signert transaksjon kan vises på kvitteringen for å knytte en utskrevet kvittering til en digital signatur i databasen.
 - **Kvitteringstotaler** – Egendefinerte felt for kvitteringstotaler uten ikke-salgsbeløp fra totale transaksjonsbeløp. Ikke-salgsbeløp med beløp for følgende operasjoner:
 
-  - Forskuddsbetalinger (innbetaling til kundekonto)
-  - Forskuddsbetalinger for salgsordrer (kundenordreinnskudd)
-  - Utstede et gavekort
-  - Legge til betalingsmidler på et gavekort
+    - Forskuddsbetalinger (innbetaling til kundekonto)
+    - Forskuddsbetalinger for salgsordrer (kundenordreinnskudd)
+    - Utstede et gavekort
+    - Legge til betalingsmidler på et gavekort
 
 #### <a name="x-and-z-reports"></a>X- og Z-rapporter
 
@@ -128,9 +128,9 @@ Du må også angi følgende innstillinger for Norge.
 ### <a name="set-up-the-legal-entity"></a>Definere den juridiske enheten
 
 Kontroller at navnet på den juridiske enheten er angitt. Dette navnet skrives ut på X- og Z-rapporter.
-  
+
 I tillegg angir du organisasjonsnummeret i **Registreringsnummer**-feltet i hurtigfanen **Bankkontoinformasjon**.
-  
+
 ### <a name="set-up-value-added-tax-vat-per-norwegian-requirements"></a>Definere merverdiavgift (mva) i henhold til norske krav
 
 Du må opprette mva-koder, mva-grupper og mva-grupper for varer. Du må også definere mva-informasjon for produkter og tjenester. Hvis du vil ha mer informasjon om hvordan du definerer og bruker mva i Microsoft Dynamics 365 for Finance and Operations og i Retail, kan du se [Oversikt over merverdiavgift](../../financials/general-ledger/indirect-taxes-overview.md).
@@ -149,7 +149,7 @@ Sett tillatelsen **Tillat utskrift av kvitteringskopi** til en aktuell verdi:
 - **Tillat bare én gang** – Operatoren kan skrive ut en kopi av en kvittering bare én gang.
 - **Tillat bare én gang, og bare hvis HQ DB er tilgjengelig** – Operatoren kan skrive ut en kopi av en kvittering bare én gang, og bare hvis databasen for hovedkontoret er tilgjengelig via Commerce Data Exchange: Real-time Service, slik at systemet kan kontrollere at ingen kopier av kvitteringen er skrevet ut tidligere i andre butikker.
 - **Aldri** – Operatoren kan ikke skrive ut en kopi av en kvittering.
-    
+
 ### <a name="configure-custom-fields-so-that-they-can-be-used-in-receipt-formats-for-sales-receipts"></a>Konfigurere egendefinerte felt, slik at de kan brukes i kvitteringsformater for salgskvitteringer
 
 På siden **Språktekst** legger du til følgende poster for etikettene for de egendefinerte feltene for kvitteringsoppsett. Vær oppmerksom på at verdiene **Språk-ID**, **Tekst-ID** og **Tekst** som vises i tabellen, bare er eksempler. Du kan endre dem slik at de oppfyller dine krav.
@@ -175,7 +175,7 @@ På siden **Egendefinerte felt** legger du til følgende poster for de egendefin
 | TotalWithTaxExt                 | Tilgang | 900015          |
 | AmountPerTaxExt                 | Tilgang | 900016          |
 | CashTransactionSequentialNumber | Tilgang | 900017          |
-            
+
 ### <a name="configure-receipt-formats"></a>Konfigurere mottaksformater
 
 For alle nødvendige kvitteringsformater endrer du verdien for feltet **Utskriftsatferd** til **Skriv alltid ut** for kvitteringsformatet.
@@ -194,9 +194,9 @@ I Utforming av kvitteringsformat legger du til de egendefinerte feltene nedenfor
 3. Bunntekst:
 
     - **Totalt (salg)** – Dette feltet skriver ut kvitteringens totale beløp for kontantsalg. Beløpet uten mva. Forskuddsbetalinger og gavekort utelates.
-    - **Mva-totalt (salg)** – Dette feltet skriver ut kvitteringens totale mva-beløp for kontantsalg. Forskuddsbetalinger og gavekort utelates. 
+    - **Mva-totalt (salg)** – Dette feltet skriver ut kvitteringens totale mva-beløp for kontantsalg. Forskuddsbetalinger og gavekort utelates.
     - **Sum med avgift (salg)** – Dette feltet skriver ut kvitteringens totale beløp for kontantsalg. Beløpet med mva. Forskuddsbetalinger og gavekort utelates.
-    - **Avgiftsbeløp (salg)** – Dette feltet skriver ut kvitteringens mva-beløp for kontantsalg per mva-kode. Forskuddsbetalinger og gavekort utelates. 
+    - **Avgiftsbeløp (salg)** – Dette feltet skriver ut kvitteringens mva-beløp for kontantsalg per mva-kode. Forskuddsbetalinger og gavekort utelates.
 
 Hvis du vil ha mer informasjon om hvordan du arbeider med kvitteringsformater, kan du se [Kvitteringsmaler og utskrift](../receipt-templates-printing.md).
 

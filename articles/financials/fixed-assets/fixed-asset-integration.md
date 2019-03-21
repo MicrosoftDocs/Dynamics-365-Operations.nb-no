@@ -3,7 +3,7 @@ title: Integrering av anleggsmidler
 description: Anleggsmidler kan integreres med økonomi, lagerstyring, kunder og leverandører. Du kan også konfigurere Anleggsmidler slik at det integreres med bestillinger.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 03/05/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: af5d33de3af05668bc9aedc94894b12d16daf78e
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 2023d68a1455c6bb5ec569b6ae19fc3268f8769d
+ms.sourcegitcommit: 065d9fab832b6bcc88c00dc78ac1ae854c762ec7
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "336986"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "778161"
 ---
 # <a name="fixed-assets-integration"></a>Integrering av anleggsmidler
 
@@ -41,7 +41,7 @@ På **Posteringsprofiler for anleggsmidler**-siden kan du definere hovedkontoene
 ## <a name="inventory-management"></a>Lagerstyring
 I lagerjournalen for anleggsmidler kan du angi anskaffelsen av anleggsmidler som den juridiske enheten har produsert eller bygd for seg selv. Du kan deretter overføre varer på lager til anleggsmidler som en anskaffelse eller som en del av en anskaffelse. 
 
-Du kan også anskaffe anleggsmidler ved hjelp av bestillinger. Når bestillinger inneholder lagervarer som er angitt som anleggsmidler, avgjør innstillingen for **Tillat anleggsmiddelanskaffelse fra innkjøp** på siden **Parametere for anleggsmidler** om en anskaffelse posteres for anleggsmidlet når fakturaen posteres. Effekten anskaffelsen av anleggsmidler har på lager, er avhengig av definisjonen av den juridiske enheten. 
+Du kan også anskaffe anleggsmidler ved hjelp av bestillinger. Når bestillinger inneholder lagervarer som er angitt som anleggsmidler, avgjør innstillingen for **Tillat anleggsmiddelanskaffelse fra innkjøp** på siden **Parametere for anleggsmidler** om en anskaffelse posteres for anleggsmidlet når fakturaen posteres. Én kjøpslinje oppretter bare ett anleggsmiddel, uavhengig av antallet. Effekten anskaffelsen av anleggsmidler har på lager, er avhengig av definisjonen av den juridiske enheten. 
 
 Når en lagervare blir en anleggsmiddelanskaffelse via lagerjournalen, en bestilling eller et anskaffelsesforslag, opprettes en anskaffelsestransaksjon for tablå for anleggsmiddel. Hvis en tablåanskaffelse inkluderer et avledet tablå, opprettes det også en anskaffelsestransaksjon for det avledede tablået. 
 
