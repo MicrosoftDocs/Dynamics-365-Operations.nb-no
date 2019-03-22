@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: chwolf
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: d277bc4c4c815317bade8a04b9111232fb707086
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: e11742c62ea8d10f391ed2d417024f9c80e39591
+ms.sourcegitcommit: 21bbdac152e0cbb0576df9d5e6e90283175834ef
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "340735"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "768420"
 ---
 # <a name="hardware-sizing-requirements-for-on-premises-environments"></a>Krav til størrelsesangivelse for maskinvare for lokale miljøer
 
@@ -86,7 +86,7 @@ For å forstå kravene til størrelse, må du vite høyeste antall transaksjoner
     - Bruk av ekstra funksjonalitet, for eksempel databaseloggen og varsler. Ekstrem databaselogging reduserer ytelse per time per kjerne under 3K linjer.
     - Kompleksiteten i sammensetningen av data – En enkel kontoplan og en detaljert spesifisert kontoplan har implikasjoner på gjennomstrømming (som et eksempel).
     - Beskrivelse av transaksjonen.
-    - 2 GB til 4 GB minne for hver kjerne.
+    - 2 GB til 16 GB minne for hver kjerne.
     - Ekstra databaser på databaseserver, som Management reporter og SSRS-databaser.
     - Temp DB = 15 % av DB-størrelse, med så mange filer som fysiske prosessorer.
     - SAN-størrelsen og kapasiteten basert på totalt samtidig transaksjonsvolum/-bruk.

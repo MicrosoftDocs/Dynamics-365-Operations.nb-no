@@ -3,7 +3,7 @@ title: Reduksjonsnøkler
 description: Denne artikkelen inneholder eksempler som viser hvordan du definerer en reduksjonsnøkkel. Den inneholder informasjon om de ulike innstillingene for reduksjonsnøkler for og resultatene av hver. Du kan bruke en reduksjonsnøkkel til å definere hvordan du kan redusere prognosebehov.
 author: roxanadiaconu
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 02/28/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3e62431a1fdbeb81dda68297f034ee00adece079
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 7457aca4ca4d5188bafb497d3052276cfc154ad1
+ms.sourcegitcommit: 704d273485dcdc25c97a222bc0ef0695aad334d2
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "364816"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "770922"
 ---
 # <a name="reduction-keys"></a>Reduksjonsnøkler
 
@@ -98,6 +98,7 @@ I de fleste tilfeller er systemer er satt opp slik at transaksjoner reduserer be
 
    I denne prognosen er det ikke en ledig periode mellom prognosedatoene: det finnes en periode på fire dager mellom første og andre dato, og det er et tidsintervall på sju dager mellom andre og tredje dato. Disse ulike intervallene er dynamiske perioder.
 2. Opprett salgsordrelinjer på følgende måte.
+
    | Dato                             | Salgsordreantall |
    |----------------------------------|----------------------|
    | 15. desember i fjor | 500                  |

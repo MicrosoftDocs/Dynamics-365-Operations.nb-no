@@ -3,7 +3,7 @@ title: Regnskapskalendere, regnskapsår og perioder
 description: Denne artikkelen omhandler økonomisk kalendere, regnskapsår og perioder og hvordan du bruker dem for juridiske enheter, aktiva og budsjettering.
 author: aprilolson
 manager: AnnBe
-ms.date: 01/11/2018
+ms.date: 03/05/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 360695ddfbcf1eab62dd5087e1b5bb34ccaf7c7f
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 01f8f939079d55d5a75d1a4b1fd718bf2a3f9700
+ms.sourcegitcommit: 065d9fab832b6bcc88c00dc78ac1ae854c762ec7
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "361665"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "778207"
 ---
 # <a name="fiscal-calendars-fiscal-years-and-periods"></a>Regnskapskalendere, regnskapsår og perioder
 
@@ -43,7 +43,7 @@ En avslutningsperiode brukes til å skille økonomimodultransaksjoner som genere
 Når du oppretter en avslutningsperiode, velger du en periode som har statusen Åpen og har datoene du vil bruke. Den nye avslutningsperioden kopierer start- og sluttdatoene fra den eksisterende perioden. Den opprinnelige perioden finnes fortsatt. La oss si at du velger Periode 12, som er siste periode i regnskapsåret, og som har datoene fra 1. august til og med 31. august. Du skriver inn et navn for avslutningsperioden, for eksempel Slutt. Etter at du har opprettet den nye avslutningsperioden, har du nå den opprinnelige perioden og avslutningsperioden. Begge har datoer som begynner 1. august og slutter 31. august.
 
 ## <a name="select-fiscal-calendars-for-ledgers-fixed-assets-and-budget-cycles"></a>Velge regnskapskalendere for finans, anleggsmidler og budsjettsykluser
-Økonomiske kalendere brukes til avskrivning av anleggsmidler, økonomiske transaksjoner og budsjettsykluser. Når du oppretter en økonomisk kalender, kan du bruke den til flere formål. Du kan velge en økonomisk kalender for en verdimodell eller et avskrivningstablå for å gjøre den om til en anleggsmiddelkalender. Du kan velge en økonomisk kalender for en finans for å gjøre den om til en finanskalender. Du kan også velge en økonomisk kalender for en budsjettsyklus for å gjøre den om til en budsjettkalender. Du kan bruke samme regnskapskalender for alle disse.
+Økonomiske kalendere brukes til avskrivning av anleggsmidler, økonomiske transaksjoner og budsjettsykluser. Når du oppretter en økonomisk kalender, kan du bruke den til flere formål. Du kan velge en økonomisk kalender for et anleggsmiddeltablå for å gjøre den om til en anleggsmiddelkalender. Du kan velge en økonomisk kalender for en finans for å gjøre den om til en finanskalender. Du kan også velge en økonomisk kalender for en budsjettsyklus for å gjøre den om til en budsjettkalender. Du kan bruke samme regnskapskalender for alle disse.
 
 ### <a name="select-a-fiscal-calendar-for-your-legal-entity"></a>Velge en regnskapskalender for den juridiske enheten
 
@@ -51,7 +51,7 @@ Velg den økonomiske kalenderen du vil bruke for finans for den juridiske enhete
 
 ### <a name="select-a-fiscal-calendar-for-fixed-assets"></a>Velge en økonomisk kalender for anleggsmidler
 
-Du kan velge en økonomisk kalender for en verdimodell eller et avskrivningstablå, og denne økonomiske kalenderen brukes av anleggsmidlene som bruker den valgte verdimodellen eller det valgte avskrivningstablået. Du kan velge en hvilken som helst regnskapskapender som er definert på siden Regnskapskalendere.
+Du kan velge en økonomisk kalender for et anleggsmiddeltablå, og denne økonomiske kalenderen brukes av anleggsmidlene som bruker det valgte tablået. Du kan velge en hvilken som helst regnskapskapender som er definert på siden Regnskapskalendere.
 
 ### <a name="define-budget-cycle-time-spans"></a>Definere tidsrom for budsjettsyklus
 

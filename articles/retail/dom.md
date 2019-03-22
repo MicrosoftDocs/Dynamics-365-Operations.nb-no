@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2018-11-15
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 8f1b07243ec2d42e47073d8d90f00ea563020d82
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 4f682e0c98ff70d526648bc50f8a5d6cb884ac93
+ms.sourcegitcommit: ca4562fafa33b3512f0a5e246b15545fcf53e834
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "302697"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "380022"
 ---
 # <a name="distributed-order-management-dom"></a>Behandling av distribuert ordre (DOM)
 
@@ -63,8 +63,8 @@ Illustrasjonen nedenfor viser livssyklusen til en salgsordre i et DOM-system.
 
         1. I Microsoft Dynamics Lifecycle Services åpner du det delte aktivabiblioteket, velger **Modell** som aktivatype og laster ned **DOM-lisensfilen**.
         2. Start Microsoft IIS-behandling, høyreklikk **AOSService-nettlokasjon**, og velg deretter **Utforsk**. Et Windows Utforsker-vindu åpnes på **\<roten for AOS-tjeneste\>\\webroot**. Noter deg banen for \<roten for AOS-tjeneste\>, fordi du skal bruke den i neste trinn.
-        3. Kopiere konfigurasjonsfilen i katalogen **\<roten for AOS-tjeneste\>\\PackagesLocalDirectory\\DOM\\bin**.
-        4. Gå til klienten Retail Headquarters og åpne siden **DOM-parametere**. Velg **Produksjonsproblemløser** i feltet **Problemløsertype** i kategorien **Problemløser**, og kontroller at det ikke vises noen feilmeldinger.
+        3. Kopiere konfigurasjonsfilen i katalogen **\<AOS Service root\>\\PackagesLocalDirectory\\DOM\\bin**.
+        4. Gå til klienten Retail Headquarters, og åpne siden **DOM-parametere**. Velg **Produksjonsproblemløser** i feltet **Problemløsertype** i kategorien **Problemløser**, og bekreft at det ikke vises noen feilmeldinger.
 
         > [!NOTE]
         > Den forenklede problemløseren blir formidlet slik at forhandlere kan teste DOM-funksjonen uten å måtte distribuere spesiallisensen. Organisasjoner bør ikke bruke den forenklede problemløseren i produksjonsmiljøer.

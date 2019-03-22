@@ -3,7 +3,7 @@ title: Funksjoner som er fjernet eller avskrevet
 description: Dette emnet beskriver funksjoner som er fjernet eller som er planlagt for fjerning.
 author: sericks007
 manager: AnnBe
-ms.date: 12/10/2018
+ms.date: 03/12/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8f4413573f2e269e5a523940fbb841358e178d10
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: a4dc8f11cfef7c0f42c62c42cd984438a3e119a5
+ms.sourcegitcommit: d9ed934a142b88340d268fd2bd3753475a3712b0
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "329258"
+ms.lasthandoff: 03/12/2019
+ms.locfileid: "836354"
 ---
 # <a name="removed-or-deprecated-features"></a>Fjernede eller avskrevne funksjoner
 
@@ -35,11 +35,77 @@ Dette emnet beskriver funksjoner som er fjernet eller avskrevet for Dynamics 365
 
 Denne listen er ment å hjelpe deg med å vurdere disse fjerningene og avskrivningene for din egen planlegging. 
 
-> [!Note]
+> [!NOTE]
 > Fra og med Dynamics 365 for Finance and Operations juli 2017-versjonen med plattformoppdatering 8, oppgis distribusjonstypen for hver fjernet eller avskrevet funksjon. Alle de tidligere versjonene som er nevnt i dette emnet, støttet bare skydistribusjoner.
 
-> [!Note]
+> [!NOTE]
 > Detaljert informasjon om objekter i Finance and Operations finnes i [Tekniske referanserapporter](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep). Du kan sammenligne de ulike versjonene av disse rapportene for å lære om objekter som er endret eller fjernet i hver versjon av Finance and Operations.
+
+## <a name="dynamics-365-for-finance-and-operations-1001-with-platform-update-25"></a>Dynamics 365 for Finance and Operations 10.0.1 med plattformoppdatering 25
+
+> [!IMPORTANT]
+> Dynamics 365 for Finance and Operations 10.0.1 med plattformoppdatering 25 tilgjengelig for angitte brukere som en del av en forhåndsversjon. Innholdet og funksjonaliteten kan bli endret. Hvis du vil ha mer informasjon om forhåndsversjoner, kan du se [Serviceoppdateringer for Standard og første versjon](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/public-preview-releases).
+
+### <a name="deprecated-apis-and-potential-breaking-changes"></a>Avskrevne APIer og potensielle oppdelingsendringer
+
+#### <a name="deriving-from-internal-classes-is-deprecated"></a>Avleding fra interne klasser er avskrevet
+
+|   |  |
+|------------|--------------------|
+| **Årsak til avskrivning/fjerning** | I versjoner før plattformoppdatering 25 var det mulig å opprette en klasse eller tabell som var avledet fra en intern klasse/tabell som er definert i en annen pakke/modul. Dette er ikke en sikker kodepraksis. Fra og med plattformoppdatering 25 vil kompilatoren vise en advarsel hvis du prøver å gjøre dette.|
+| **Erstattet med en annen funksjon?**   | Kompilatoradvarselen vil bli erstattet av en feil i en kommende plattformoppdatering. Denne endringen er bakoverkompatibel ved kjøretid, som betyr at hvis du kjører plattformoppdatering 25 eller senere, kan dette distribueres i et hvilket som helst sandkasse- eller produksjonsmiljø uten å måtte endre egendefinert kode. Denne endringen påvirker bare utviklings- og kompileringstid. |
+| **Berørte produktområder**         | Visual Studio-utviklingsverktøy. |
+| **Distribusjonsalternativ**              | Alle |
+| **Status**                         | Avskrevet – Advarselen vil bli en kompileringsfeil i en kommende plattformoppdatering. |
+
+#### <a name="overriding-internal-methods-is-deprecated"></a>Overstyring av interne metoder er avskrevet
+
+|   |  |
+|------------|--------------------|
+| **Årsak til avskrivning/fjerning** | I versjoner før plattformoppdatering 25 var det mulig å overstyre en intern metode i en avskrevet klasse som er definert i en annen pakke/modul. Dette er ikke en sikker kodepraksis. Fra og med plattformoppdatering 25 vil kompilatoren vise en advarsel hvis du prøver å gjøre dette.|
+| **Erstattet med en annen funksjon?**   | Advarselen vil bli erstattet av en kompileringsfeil i en kommende plattformoppdatering. Denne endringen er bakoverkompatibel ved kjøretid, som betyr at hvis du kjører plattformoppdatering 25 eller senere, kan dette distribueres i et hvilket som helst sandkasse- eller produksjonsmiljø uten å måtte endre egendefinert kode. Denne endringen påvirker bare utviklings- og kompileringstid. |
+| **Berørte produktområder**         | Visual Studio-utviklingsverktøy. |
+| **Distribusjonsalternativ**              | Alle |
+| **Status**                         | Avskrevet – Advarselen vil bli en kompileringsfeil i en kommende plattformoppdatering. |
+
+## <a name="dynamics-365-for-finance-and-operations-813-with-platform-update-23"></a>Dynamics 365 for Finance and Operations 8.1.3 med plattformoppdatering 23
+
+### <a name="print-to-screen-functionality"></a>Skrive ut til skjermfunksjonalitet
+Kunder kan bruke **Import**-handlingen som er angitt av Report Viewer-kontrollen, til å laste ned dokumenter som er produsert av Finance and Operations-programmer. Denne HTML-baserte presentasjon av rapporten gir brukerne en ikke-paginert forhåndsvisning av dokumentet.
+
+|   |  |
+|------------|--------------------|
+| **Årsak til avskrivning/fjerning** | Den ikke-paginerte typen for den HTML-baserte forhåndsvisningsopplevelsen leverer **ikke** gjengivelse med de fysiske dokumentene som produseres av Finance and Operations til slutt. Ved fullt og helt ta i bruk PDF som standardformat for forretningsoperasjoner kan vi drastisk forenkle brukeralternativer for samhandling med applikasjonsrapporter og stømlinjeforme dokumentgjengivelsesprosessen. |
+| **Erstattet med en annen funksjon?**   | I fremtiden vil PDF-dokumenter være standardformat for rapporter som gjengis av Finance and Operations.   |
+| **Berørte produktområder**         | Denne endringen påvirker **ikke** kundescenarier der rapporter distribueres elektronisk eller sendes direkte til skrivere.    |
+| **Distribusjonsalternativ**              | Alle  |
+| **Status**                         | Avskrevet: En dato for fjerning er ikke angitt for denne funksjonen. Funksjonen for automatisk nedlasting av programrapporter til leseren som PDF-dokumenter er planlagt for mai 2019-plattformoppdateringen. <br><br>**Viktig:**  Eksisterende kunder som bruker utskrift til skjerm-funksjonen, bør varsle [Brukerstøtten](../lifecycle-services/lcs-support.md) før oppgradering til Plattformoppdatering 26. |
+
+### <a name="client-kpi-controls"></a>Klient-KPI-kontroller
+Innebygde nøkkelytelsesindikatorer (KPIer) kan modelleres i Visual Studio av en utvikler og tilpasses ytterligere av sluttbrukeren.
+
+|   |  |
+|------------|--------------------|
+| **Årsak til avskrivning/fjerning** | De opprinnelige klientkontrollene som brukes til å definere KPIer, har lavt kundeopptak og er avhengige av at en utvikler legger til sporbare mål. |
+| **Erstattet med en annen funksjon?**   | PowerBI.com-tjenesten leverer fremragende verktøy for å definere og behandle KPIer basert på data fra eksterne kilder.  I en kommende utgivelse planlegger vi å gjøre det mulig for deg å bygge inn løsninger som er plassert på PowerBI.com i programarbeidsområder.   |
+| **Berørte produktområder**         | Denne oppdateringen hindrer utviklere i å introdusere nye KPI-kontroller i Visual Studio-designeren.    |
+| **Distribusjonsalternativ**              | Alle  |
+| **Status**                         | Avskrevet: En dato for fjerning er ikke angitt for denne funksjonen. |
+
+### <a name="deprecated-apis-and-future-breaking-changes"></a>Avskrevne APIer og fremtidige oppdelingsendringer
+
+#### <a name="field-groups-containing-invalid-field-references"></a>Feltgrupper med ugyldige feltreferanser
+
+|   |  |
+|------------|--------------------|
+| **Årsak til avskrivning/fjerning** | Det er mulig for tabellmetadatadefinisjoner å ha feltgrupper som inneholder ugyldige feltreferanser. Dette problemet kategoriseres for øyeblikket som en *kompilatoradvarsel* i stedet for en *feil*, noe som betyr at den distribuerbare pakkeopprettingen og -distribusjonen kan fortsette uten å rette problemet. Hvis distribuert kan dette føre til kjøretidsfeil for kjøring i Finansrapportering og SQL Server Reporting Services (SSRS). Slik løser du dette problemet:<br><br>1. Fjern den ugyldige feltreferansen fra definisjonen for tabellfeltgruppen.<br><br>2. Kompiler på nytt.<br><br>3. Sørg for at advarsler eller feil håndteres. |
+| **Erstattet med en annen funksjon?**   | Advarselen vil bli erstattet av en kompileringsfeil i fremtiden.  |
+| **Berørte produktområder**         | Visual Studio-utviklingsverktøy. |
+| **Distribusjonsalternativ**              | Alle. |
+| **Status**                         | Avskrevet – Advarselen blir en kompileringstidsfeil i fremtiden. For øyeblikket målretter vi Plattformoppdatering 30. |
+
+#### <a name="complete-list"></a>Fullstendig liste
+Hvis du vil ha tilgang til den fullstendige listen over APIer som kan avskrives, kan du se [Avskriving av metoder og metadataelementer](deprecation-deletion-apis.md).
 
 ## <a name="dynamics-365-for-finance-and-operations-81-with-platform-update-20"></a>Dynamics 365 for Finance and Operations 8.1 med plattformoppdatering 20
 
@@ -52,7 +118,7 @@ Den synkrone overføringsmodusen avskrives i Økonomimodulparametere.  Denne mod
 | **Erstattet med en annen funksjon?**   | Asynkrone og planlagte partier er alternativer som skal brukes i stedet for synkron.   |
 | **Berørte produktområder**         | Økonomimodul, Leverandører, Kunder, Innkjøp, Utgift    |
 | **Distribusjonsalternativ**              | Alle  |
-| **Status**                         | Avskrevet – Måltidsrammen for funksjonaliteten som skal fjernes, er versjon 10.0.|
+| **Status**                         | Avskrevet: Måltidsrammen for funksjonaliteten som skal fjernes, er versjon 10.0.|
 
 ### <a name="electronic-reporting-for-russia"></a>Elektronisk rapportering for Russland
 Funksjonen for å konfigurere txt og xml-filformat med deklarasjoner. 

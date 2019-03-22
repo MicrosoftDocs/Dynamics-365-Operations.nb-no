@@ -1,29 +1,25 @@
 ---
+# required metadata
 title: Velkommen til Dynamics 365 for Talent
-description: Talent forenkler mange vanlige arkiveringsoppgaver og automatiserer en rekke prosesser som er knyttet til bemanning av organisasjonen. Disse prosessene omfatter ansattbevaring, administrasjon av fordeler, opplæring, ytelsesvurderinger og endringsadministrasjon.
+description: 'Talent forenkler mange vanlige arkiveringsoppgaver og automatiserer en rekke prosesser som er knyttet til bemanning av organisasjonen. Disse prosessene omfatter ansattbevaring, administrasjon av fordeler, opplæring, ytelsesvurderinger og endringsadministrasjon.'
 author: josaw
 manager: AnnBe
 ms.date: 06/04/2018
 ms.topic: index-page
-ms.prod: ''
+ms.prod: null
 ms.service: dynamics-365-talent
-ms.technology: ''
+ms.technology: null
 audience: Application User
 ms.reviewer: rschloma
-ms.search.scope: Core, Operations, Talent
+ms.search.scope: 'Core, Operations, Talent'
 ms.custom: 20931
 ms.assetid: b48b1cb2-6e66-467e-9c0e-09b6a4aeb9fe
 ms.search.region: Global
 ms.author: rschloma
-ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
-ms.openlocfilehash: e31cd1e0acc8f3ab450ec4acda62b88b189f036d
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
-ms.translationtype: HT
-ms.contentlocale: nb-NO
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "302673"
+ms.search.validFrom: '2016-02-28'
+ms.dyn365.ops.version: 'AX 7.0.0, Talent July 2017 update'
 ---
+
 # <a name="welcome-to-dynamics-365-for-talent"></a>Velkommen til Dynamics 365 for Talent
 
 [!include [banner](includes/banner.md)]
@@ -79,7 +75,7 @@ Du kan definere planer for å behandle kompensasjon effektivt og rettferdig, sam
 
 ## <a name="develop-and-train-employees"></a>Utvikle og lære opp ansatte
 
-For å hjelpe de ansatte til å nå sine karrieremål samtidig som de oppfyller kritiske forretningsbehov, kan du definere mål, opprette medarbeiderevalueringer og spore tilbakemeldinger for å hjelpe ansatte med å utvikle nødvendige kvalifikasjoner. Du kan også definere instruktører, kurstyper, kurs, kursbeskrivelser, agendaer, sporinger og økter før du tilordner en instruktør til et kurs eller registrerer noen for et kurs. Instruktører må allerede finnes som arbeidere, søkere eller kontakter.
+For å hjelpe de ansatte med å nå sine karrieremål samtidig som de oppfyller kritiske forretningsbehov, kan du definere mål, opprette medarbeiderevalueringer og spore tilbakemeldinger. For å hjelpe ansatte med å utvikle nødvendige kvalifikasjoner kan også definere instruktører, kurstyper, kurs, kursbeskrivelser, agendaer, sporinger og økter før du tilordner en instruktør til et kurs eller registrerer noen for et kurs. Instruktører må allerede finnes som arbeidere, søkere eller kontakter.
 
 -   [Ytelsesstyring](performance-management-overview.md)
 -   [Justere ferdigheter og forretningsbehov for arbeidsstyrke](skills.md)

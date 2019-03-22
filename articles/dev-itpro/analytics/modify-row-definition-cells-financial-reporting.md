@@ -1,9 +1,9 @@
 ---
 title: Endre celler for raddefinisjon
-description: Denne artikkelen beskriver informasjonen som kreves for hver celle i en raddefinisjon i en finansrapport, og beskriver hvordan du registrerer denne informasjonen.
+description: Dette emnet beskriver informasjonen som kreves for hver celle i en raddefinisjon i en finansrapport, og beskriver hvordan du registrerer denne informasjonen.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 02/11/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 6193d70c53ee09a28aa8763cb625b315ec180b95
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: d6f6e94fd8e7ddf92e89fedfab09ef0684505819
+ms.sourcegitcommit: eb24b63b10c4d06f7550bba9fbd1910ba2719b0a
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "323646"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "379670"
 ---
 # <a name="modify-row-definition-cells"></a>Endre celler for raddefinisjon
 
 [!include [banner](../includes/banner.md)]
 
-Denne artikkelen beskriver informasjonen som kreves for hver celle i en raddefinisjon i en finansrapport, og beskriver hvordan du registrerer denne informasjonen.
+Dette emnet beskriver informasjonen som kreves for hver celle i en raddefinisjon i en finansrapport, og beskriver hvordan du registrerer denne informasjonen.
 
 ## <a name="specify-a-row-code-in-a-row-definition"></a>Angi en radkode i en raddefinisjon
 
@@ -386,7 +386,7 @@ Du kan begrense en rad til en eksisterende registerkode. Kolonnedefinisjonen må
 Noen regnskapssystemer støtter kontoattributter og transaksjonsattributter i de økonomiske dataen. Disse attributtene fungerer som virtuelle kontosegmenter, og kan inneholde tilleggsinformasjon om konto eller transaksjon. Denne tilleggsinformasjonen kan være konto-ID-er, parti-ID-er, postnumre eller andre attributter. Hvis regnskapssystemet støtter attributter, kan du bruke kontoattributter eller transaksjonsattributter som radmodifikatorer i raddefinisjonen. Hvis du vil ha informasjon om hvordan du overstyrer radinformasjon, kan du se avsnittet "Overstyre en kolonnedefinisjon" tidligere i denne artikkelen.
 
 ## <a name="specify-a-link-to-financial-dimensions-cell"></a>Angi en celle for kobling til finansdimensjoner
-Cellen **Kobling til finansdimensjoner** inneholder koblinger til de økonomiske dataene som skal tas med i hver rad i en rapport. Denne cellen inneholder dimensjonsverdier, men du kan angi celler i et Microsoft Excel-regneark i stedet for, eller i tillegg til, segmentverdier eller dimensjonsverdier. Åpne dialogboksen **Dimensjoner**, og dobbeltklikk cellen **Kobling til finansdimensjoner**.
+Cellen **Kobling til finansdimensjoner** inneholder koblinger til de økonomiske dataene som skal tas med i hver rad i en rapport. Denne cellen inneholder dimensjonsverdier. Åpne dialogboksen **Dimensjoner**, og dobbeltklikk cellen **Kobling til finansdimensjoner**.
 
 > [!NOTE]
 > Rapportutforming kan ikke velge kontoer, dimensjoner eller felt fra Microsoft Dynamics ERP-systemet som inneholder ett av følgende reserverte tegn: &, \*, \[, \], {, eller }. Hvis du vil angi informasjon for en rad som allerede finnes i raddefinisjonen, legger du til informasjonen i cellen **Kobling til finansdimensjoner**. Hvis du vil legge til nye rader som er koblet til de økonomiske dataen, kan du bruke dialogboksen **Sett inn rader fra** for å opprette nye rader i rapportdefinisjonen. Kolonnetittelen endres, avhengig av hvordan kolonnen er konfigurert, som vist i tabellen nedenfor.
@@ -394,9 +394,7 @@ Cellen **Kobling til finansdimensjoner** inneholder koblinger til de økonomiske
 | Koblingstype som er valgt       | Beskrivelsen av koblingskolonnen endres til dette |
 |----------------------------------|----------------------------------------------------|
 | Finansdimensjoner             | Kobling til finansdimensjoner                       |
-| Eksternt regneark               | Kobling til regneark                                  |
-| Finansdimensjoner + regneark | Kobling til finansdimensjoner + regneark           |
-| Management Reporter-rapport       | Management Reporter-rapport                         |
+| Rapportregneark                 | Rapport for finansrapportering                         |
 
 ### <a name="specify-a-dimension-or-range"></a>Angi en dimensjon eller et område
 

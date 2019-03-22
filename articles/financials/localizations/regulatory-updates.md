@@ -3,7 +3,7 @@ title: Forskriftsmessige oppdateringer
 description: Dette emnet inneholder en liste over planlagte og frigitte forskriftsmessige oppdateringer for Microsoft Dynamics 365 for Finance and Operations.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 01/25/2019
+ms.date: 02/19/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 9dcf958165cffa3e3cd62b88a71295eefae9cf8f
-ms.sourcegitcommit: f004451a260b5be6c15c3975cd9e63ba9c1a7a2e
+ms.openlocfilehash: 3beeb77819661de3f6b55766a1f8a5bd1fe023ba
+ms.sourcegitcommit: f6fc90585632918d9357a384b27028f2aebe9b5a
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/06/2019
-ms.locfileid: "375996"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "832107"
 ---
 # <a name="regulatory-updates"></a>Forskriftsmessige oppdateringer
 
@@ -40,6 +40,14 @@ Når det brukes en måned i Dato-kolonnen, planlegges det at den forskriftsmessi
 |      2019. mars          |   10.0.0      | Østerrike      |   Endringer i Kammerumlage 2019 (innkjøpsavgift)    |
 |      2019. mars          |   10.0.0      |   Brasil    |     SPED EFD-bidrag – Oppsett 004 og 005  |
 |      2019. mars          |   10.0.0      |    Malaysia     |Malaysia erstatter merverdiavgift med SST, merverdi- og tjenesteavgift        |
+|      2019. april          |   10.0.1      |    Østerrike     |Detaljhandel – Regnskapsintegrering         |
+|      2019. april          |   10.0.1      |    Europa     |E-fakturering – Kundefakturaeksport i PEPPOL BIS 3-format         |
+|      2019. april          |   10.0.1      |    Europa     |E-fakturering – Leverandørfakturaimport fra PEPPOL BIS 3-format         |
+|      2019. april          |   10.0.1      |   Tyskland     |E-fakturering – Kundefakturaeksport i xRechnung 1.1-format         |
+|      2019. april          |   10.0.1      |    Storbritannia     |[Mva-oppgave, innsendingsendringer (Gjøre mva digital)](emea-gbr-mtd-vat-integration.md)    |    
+|      2019. april          |   10.0.1      |    Brasil     |NF-e ny NT 2018.005         |
+|      2019. april          |   10.0.1      |    Russland     |Endringer i mva-deklareringsformat fra 2019         |
+|      2019. april          |   10.0.1      |    Russland     |Endringer i mva-deklareringsformat fra 2019 (salgs- og innkjøpsbokformater)  |
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 - Du finner alle planlagte og frigitte forskriftsmessig oppdateringer på [Lifecycle Service – Problemsøk](https://lcs.dynamics.com/Logon/Index) (pålogging kreves).

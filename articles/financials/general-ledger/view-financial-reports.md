@@ -1,9 +1,9 @@
 ---
-title: Vis finansrapporter
-description: Denne artikkelen beskriver hvordan du kan vise og utforske finansrapporter i Microsoft Dynamics 365 for Finance and Operations. Den inneholder informasjon om de forskjellige alternativene du kan bruke på finansrapporter for å endre utseendet og dataene de inneholder.
+title: Vise finansrapporter
+description: Dette emnet beskriver hvordan du kan vise og utforske finansrapporter i Microsoft Dynamics 365 for Finance and Operations. Den inneholder informasjon om de forskjellige alternativene du kan bruke på finansrapporter for å endre utseendet og dataene de inneholder.
 author: kweekley
 manager: AnnBe
-ms.date: 01/11/2018
+ms.date: 02/11/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4a939ce2f43645963392363fc6452f8bc55bd963
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: ecdd2dd9d1eff0af358a458171ce151c9c14c71c
+ms.sourcegitcommit: 78bd8119b9fe967ba4d0adaacaf2d2227e567a91
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "312951"
+ms.lasthandoff: 03/09/2019
+ms.locfileid: "791447"
 ---
-# <a name="view-financial-reports"></a>Vis finansrapporter
+# <a name="view-financial-reports"></a>Vise finansrapporter
 
 [!include [banner](../includes/banner.md)]
 
-Denne artikkelen beskriver hvordan du kan vise og utforske finansrapporter i Microsoft Dynamics 365 for Finance and Operations. Den inneholder informasjon om de forskjellige alternativene du kan bruke på finansrapporter for å endre utseendet og dataene de inneholder.
+Dette emnet beskriver hvordan du kan vise og utforske finansrapporter i Microsoft Dynamics 365 for Finance and Operations. Den inneholder informasjon om de forskjellige alternativene du kan bruke på finansrapporter for å endre utseendet og dataene de inneholder.
 
 <a name="financial-reporting-overview"></a>Oversikt over finansrapportering
 ----------------------------
@@ -67,18 +67,15 @@ En finansrapport kan når som helst vises i en hvilken som helst valuta. Hvis du
 ## <a name="display-a-summarized-view-of-the-financial-report"></a>Vise en sammendragsvisning av finansrapporten
 En finansrapport kan inneholde detaljlinjer og sammendragslinjer. Detaljlinjer er linjer som inneholder hovedkontoer eller dimensjoner. Sammendragslinjer er beskrivelses-, total- og beregningslinjer. Klikk **Vis**, og klikk deretter **Bare sammendragslinjer** for å vise bare sammendragslinjer i en rapport. Rapporten er skjult og viser bare sammendragslinjer. Klikk **Vis**, og klikk deretter **Bare sammendragslinjer** på nytt for å vise detaljlinjene sammen med sammendragslinjene.
 
-## <a name="open-a-financial-report-from-a-previous-month"></a>Åpne en finansrapport fra en tidligere måned
-Du kan vise rapporter for gjeldende måned eller tidligere måneder uten å generere rapporten på nytt. Hvis du vil åpne rapporten for en tidligere måned, klikker du på **Vis** og deretter på **Tidligere rapporter**. Det vises en liste over tidligere måneder som rapporten er generert for. Utvid måneden du vil vise rapporten for, velg datoen, og klikk deretter **OK**. Rapporten for den tidligere måneden vises. Hvis du vil gå tilbake til rapporten for gjeldende måned, klikker du **Avbryt**.
-
 ## <a name="print-a-financial-report"></a>Skrive ut en finansrapport
-Hvis du vil skrive ut en finansrapport, klikker du **Skriv ut** i handlingsruten og følger deretter ett eller flere av disse trinnene for å angi alternativene for utskrift:
+Utskriving av en finansrapport oppretter en PDF-fil som deretter kan skrives ut manuelt. For å opprette en utskrivbar finansrapport, klikker du **Skriv ut** i handlingsruten og følger deretter ett eller flere av disse trinnene for å angi alternativene for utskrift:
 
 -   Hvis du vil ta med ulike detaljnivåer i den utskrevne rapporten, setter du glidebryteren til **Ja** eller **Nei**. Hvis en rapport bruker et rapporteringstre, kan du velge å ta med alle rapportenheter eller bare gjeldende rapportenhet.
 -   Hvis du vil angi sidestørrelsen, velger du en sidestørrelse i listen.
 -   Hvis du vil angi sideoppsettet, velger du et oppsett i listen. Hvis du vil at rapportinnholdet skal passe til bredden du har valgt, setter du glidebryteren til **Ja**.
 -   Hvis du vil angi sidemargene, skriver du inn størrelsen på toppmargen, bunnmargen og venstre og høyre marg i tommer.
 
-Når du har angitt alternativene for utskrift, klikker du **Skriv ut** for å skrive ut rapporten. Hvis du bestemmer deg for at du ikke vil skrive ut rapporten, velger du **Avbryt** i stedet. Det vises en forhåndsvisning av den utskrevne rapporten. Du kan velge hvilken skriver du vil sende rapporten til, og du kan også justere alternativene for utskrift.
+Når du har fullført angivelse av utskriftsalternativene, klikker du **Skriv ut** for å fortsette å bli spurt om du vil laste ned filen eller lagre filen til OneDrive eller SharePoint. Hvis du bestemmer deg for at du ikke vil fortsette, velger du **Avbryt** i stedet. Når du fortsetter, vil rapporten begynne å gjengi på serveren, og du blir bedt om å laste ned rapporten i PDF-format. Du kan nå vise rapporten i PDF-visningsprogrammet, og her kan du velge hvilken skriver du vil sende rapporten til, og foreta ytterligere justeringer for utskriftsalternativer.
 
 ## <a name="export-a-financial-report"></a>Eksportere en finansrapport
 Klikk **Eksport** i handlingsruten for å eksportere en finansrapport. Rapporten eksporteres til Microsoft Excel, og nettleseren ber deg om å åpne eller lagre den eksporterte filen. Eksportinnstillingene som er definert i rapportutformingen, brukes på den eksporterte rapporten.    
@@ -86,7 +83,7 @@ Klikk **Eksport** i handlingsruten for å eksportere en finansrapport. Rapporten
 <a name="additional-resources"></a>Tilleggsressurser
 --------
 
-[Finansrapportering for Microsoft Dynamics AX](../../dev-itpro/analytics/financial-reporting-intro.md)
+[Finansrapportering](../../dev-itpro/analytics/financial-reporting-intro.md)
 
 
 

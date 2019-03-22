@@ -3,7 +3,7 @@ title: Dataimport- og -eksportjobber
 description: Bruk arbeidsområdet Datahåndtering for å opprette og administrere dataimport- og -eksportjobber.
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 08/28/2017
+ms.date: 03/11/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 68cafc167c178e2feeb0a5af764a491ea6b3c60b
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: ceb2dfa37b53af83c4faedffa5b312d654c44593
+ms.sourcegitcommit: 7b438a94b59ab52518e03b22217cb48e41fbeb71
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "360216"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "834666"
 ---
 # <a name="data-import-and-export-jobs"></a>Dataimport- og -eksportjobber
 
@@ -128,6 +128,9 @@ En jobb kan sikres av roller, brukere og juridiske enheter samtidig.
 
 ## <a name="run-the-import-or-export-job"></a>Kjør import- eller eksportjobben
 Du kan kjøre en jobb én gang ved å velge **Import** eller **Eksport**-knappen etter at du har definert jobben. For å sette opp gjentakende jobber, velg **Opprett gjentakende datajobb**.
+
+[!NOTE]
+En import- eller eksportjobb kan kjøres asynkront ved å velge **Import**- eller **Eksport**-knappen. Kjøring i asynkron bruker asynkront rammeverk i Finance and Operations, som er forskjellig fra det satsvise rammeverket. Men, som i det satsvise rammeverket, kan asynkront rammeverk også gjennomgå begrensning som et resultat, og jobben kjøres kanskje ikke umiddelbart. Jobbene kan også kjøres synkront ved å velge **Importer nå** eller **Eksporter nå**. Dette starter jobben umiddelbart og er nyttig hvis asynkront eller et parti ikke starter på grunn av begrensning. Jobbene kan også utføres i et parti ved å velge **Kjør satsvis**-alternativet. Satsvise ressurser er underlagt begrensning, slik at den satsvise jobben kanskje ikke starter umiddelbart. Asynkron-alternativet er nyttig når brukerne samhandler direkte med brukergrensesnittet, og ikke er privilegerte brukere for å forstå satsvis planlegging. Bruk av et parti er et annet alternativ hvis store volumer må bli eksportert eller importert. Satsvise jobber kan planlegges til å kjøre på en bestemt satsvis gruppe, som gir mer kontroll fra et perspektiv for belastningsfordeling. Hvis både asynkront og parti gjennomgår begrensning på grunn av høy ressursutnyttelse på systemet, kan det som en øyeblikkelig løsning brukes synkron versjon for import/eksport. Synkron-alternativet starter umiddelbart og blokkerer brukergrensesnittet, fordi den kjører synkront. Leservinduet må være åpent når synkron operasjon pågår.
 
 ## <a name="validate-that-the-job-ran-as-expected"></a>Bekreft at jobben kjørte som forventet.
 Jobbhistorikken er tilgjengelig for feilsøking og etterforskning på både import- og eksportjobber. Historiske jobber er organisert av tidsintervall.

@@ -3,7 +3,7 @@ title: Synkronisere produkter med lagerenhet fra Finance and Operations til Fiel
 description: Dette emnet omhandler malene og den underliggende oppgaven som brukes til å synkronisere produkter med lagerenhet fra Microsoft Dynamics 365 for Finance and Operations til Microsoft Dynamics 365 for Field Service.
 author: ChristianRytt
 manager: AnnBe
-ms.date: 12/20/2018
+ms.date: 03/12/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: 8.1.3
 ms.search.validFrom: 2018-12-01
-ms.openlocfilehash: 5d3767c1a499f3d888d8fc2ce06c2837442e39f0
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 8e421be79fde6103be6344040b6ae6cda0626c5a
+ms.sourcegitcommit: d9ed934a142b88340d268fd2bd3753475a3712b0
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "359250"
+ms.lasthandoff: 03/12/2019
+ms.locfileid: "836308"
 ---
 # <a name="synchronize-products-with-inventory-unit-from-finance-and-operations-to-field-service"></a>Synkronisere produkter med lagerenhet fra Finance and Operations til Field Service
 
@@ -34,9 +34,11 @@ Dette emnet omhandler malene og den underliggende oppgaven som brukes til å syn
 
 [![Synkronisering av forretningsprosesser mellom Finance and Operations og Field Service](./media/FSProductsOW.png)](./media/FSProductsOW.png)
 
-Den brukte **Field Service-produkter (Finance and Operations til Field Service)**-malen er basert på **Produkter (Finance and Operations til Sales) – direkte**-malen fra kundeemne til kontanter. Hvis du vil ha mer informasjon, se [Produkter (Finance and Operations til Sales) – direkte](products-template-mapping-direct.md).
+Den brukte **Field Service-produkter med lagerenhet (Finance and Operations til Field Service)**-malen er basert på **Field Service-produkter (Finance and Operations til Field Service)**-malen. Hvis du vil ha mer informasjon, se [Field Service-produkter (Finance and Operations til Field Service)](field-service-product.md).
 
-Dette emnet beskriver bare forskjellene mellom **Field Service-produkter (Finance and Operations til Field Service)**- og **Field Service-produkter (Finance and Operations til Field Service)**-malene.
+Dette emnet beskriver bare forskjellene mellom de to malene: 
+- **Field Service-produkter med lagerenhet (Finance and Operations til Sales)**
+- **Field Service-produkter (Finance and Operations til Field Service)**. 
 
 ## <a name="templates-and-tasks"></a>Maler og oppgaver
 

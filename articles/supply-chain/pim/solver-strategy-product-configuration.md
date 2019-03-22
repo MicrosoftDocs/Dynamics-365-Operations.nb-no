@@ -3,7 +3,7 @@ title: Problemløserstrategi for produktkonfigurasjon
 description: Dette emnet beskriver hvordan du kan bruke problemløserstrategien til å forbedre ytelsen til produktkonfigurasjon.
 author: cvocph
 manager: AnnBe
-ms.date: 01/02/2018
+ms.date: 02/19/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d0abb9313ec62cfdfe3bf7c810e2143dcf502bf9
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 16a11c5030f5641abb87830f5221ded5bb7ac038
+ms.sourcegitcommit: 0ceee30a60468a01db6f5b3526dcb9c6abc9d4dc
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "351154"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "403922"
 ---
 # <a name="solver-strategy-for-product-configuration"></a>Problemløserstrategi for produktkonfigurasjon
 
@@ -62,8 +62,8 @@ Følgende tabell inneholder anbefalinger om problemløserstrategien som skal bru
 | Problemløserstrategi      | Bruk strategien i dette scenariet |
 |----------------------|-----------------------------------|
 | Standard              | **Standard**-strategien er optimalisert til å løse modeller som bruker tabellbegrensninger. Kundeimplementeringsstudier har vist at denne strategien er den mest effektive strategien i scenarier der tabellbegrensninger brukes mye. |
-| Små domener først | **Små domener først**- og **Ovenfra og nedover**-strategien henger nøye sammen. Kundeimplementeringsstudier har vist at **Ovenfra og nedover**-strategien, som ble introdusert i CU8, overgår **Små domener først**-strategien. Men **Små domener først**-strategien bevares i produktet for bakoverkompatibilitet. Begge disse problemløserstrategiene har vist seg å være mer effektive på å løse modeller som inneholder flere aritmetiske uttrykk der det ikke brukes tabellbegrensninger. I noen tilfeller kan imidlertid **Standard**-strategien overgå disse to strategiene. Derfor må du huske å forsøke hver strategi. |
-| Ovenfra og nedover             | **Små domener først**- og **Ovenfra og nedover**-strategien henger nøye sammen. Kundeimplementeringsstudier har vist at **Ovenfra og nedover**-strategien, som ble introdusert i CU8, overgår **Små domener først**-strategien. Men **Små domener først**-strategien bevares i produktet for bakoverkompatibilitet. Begge disse problemløserstrategiene har vist seg å være mer effektive på å løse modeller som inneholder flere aritmetiske uttrykk der det ikke brukes tabellbegrensninger. I noen tilfeller kan imidlertid **Standard**-strategien overgå disse to strategiene. Derfor må du huske å forsøke hver strategi. |
+| Små domener først | **Små domener først**- og **Ovenfra og nedover**-strategien henger nøye sammen. Kundeimplementeringsstudier har vist at **Ovenfra og nedover**-strategien overgår **Små domener først**-strategien. Men **Små domener først**-strategien bevares i produktet for bakoverkompatibilitet. Begge disse problemløserstrategiene har vist seg å være mer effektive på å løse modeller som inneholder flere aritmetiske uttrykk der det ikke brukes tabellbegrensninger. I noen tilfeller kan imidlertid **Standard**-strategien overgå disse to strategiene. Derfor må du huske å forsøke hver strategi. |
+| Ovenfra og nedover             | **Små domener først**- og **Ovenfra og nedover**-strategien henger nøye sammen. Kundeimplementeringsstudier har vist at **Ovenfra og nedover**-strategien overgår **Små domener først**-strategien. Men **Små domener først**-strategien bevares i produktet for bakoverkompatibilitet. Begge disse problemløserstrategiene har vist seg å være mer effektive på å løse modeller som inneholder flere aritmetiske uttrykk der det ikke brukes tabellbegrensninger. I noen tilfeller kan imidlertid **Standard**-strategien overgå disse to strategiene. Derfor må du huske å forsøke hver strategi. |
 | Z3                   | Vi anbefaler at du bruker **Z3**-strategien som standard problemløserstrategi. Hvis du er bekymret for ytelse og skalerbarhet, kan du evaluere de andre strategiene. |
 
 ## <a name="additional-resources"></a>Tilleggsressurser
