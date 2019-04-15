@@ -5,7 +5,9 @@ items:
   items:
   - name: Hva er nytt eller endret?
     href: get-started/whats-new.md
-  - name: Forhåndsvisningsfunksjoner i Dynamics 365 for Retail 10.0.1
+  - name: Forhåndsvisningsfunksjoner i Dynamics 365 for Retail 10.0.2
+    href: get-started/whats-new-10-0-2.md
+  - name: Hva er nytt eller endret i Dynamics 365 for Retail 10.0.1
     href: get-started/whats-new-10-0-1.md
   - name: Hva er nytt eller endret i Dynamics 365 for Retail (april 2019)?
     href: get-started/april-whats-new.md
@@ -116,7 +118,7 @@ items:
   items:
   - name: Konfigurere og bruke avanserte automatiske tillegg
     href: omni-auto-charges.md
-  - name: Fordeling og gruppering av automatiske hodetillegg
+  - name: Fordel hodegebyrer til samsvarende salgslinjer
     href: pro-rate-charges-matching-lines.md
 - name: Telefonsenter
   items:
@@ -274,7 +276,7 @@ items:
     href: price-management.md
   - name: Prisjusteringer og rabatter
     href: price-adjustments-discounts.md
-  - name: Bruke flere detaljhandelsrabatter for et produkt
+  - name: Bruke flere rabatter for et produkt
     href: Apply-multiple-retail-discounts.md
   - name: Fastslå den optimale kombinasjonen av overlappende rabatter
     href: optimal-combination-overlapping-discounts.md
@@ -282,6 +284,8 @@ items:
     href: define-channel-specific-discounts.md
   - name: Alternativer for å hindre rabatter for detaljhandelsprodukter
     href: prevent-discounts.md
+  - name: Oversikt over leveringsrabatt
+    href: retail-shipping-discount.md
   - name: Definere kuponger for detaljhandelssalg
     href: retail-coupons.md
 - name: Produkter og varehandel
@@ -354,6 +358,10 @@ items:
     href: localizations/fiscal-integration-for-retail-channel.md
   - name: Definere økonomisk integrering for detaljhandelskanal
     href: localizations/setting-up-fiscal-integration-for-retail-channel.md
+  - name: Østerrike
+    items:
+    - name: Eksempel på integrering av tjenesten for avgiftsmessig transaksjon for Østerrike
+      href: localizations/emea-aut-fi-sample.md
   - name: Øst-Europa
     items:
     - name: Forskuddsfakturaer for Retail for Øst-Europa
@@ -366,6 +374,8 @@ items:
       href: localizations/emea-eeu-deployment.md
     - name: Eksempel på integrering av bilagsskriver for Polen
       href: localizations/emea-pol-fpi-sample.md
+    - name: Eksempel på integrering av tjenesten for avgiftsmessig transaksjon for Tsjekkia
+      href: localizations/emea-cze-fi-sample.md
   - name: Frankrike
     items:
     - name: Kassefunksjonalitet
@@ -477,6 +487,8 @@ items:
       href: retail-components.md
     - name: Arkitektur for Retail Server
       href: dev-itpro/retail-server-architecture.md
+    - name: Velg topologi i butikk
+      href: dev-itpro/retail-in-store-topology.md
     - name: Commerce Data Exchange og kommunikasjon på detaljhandelskanal
       href: dev-itpro/define-retail-channel-communications-cdx.md
     - name: Retail Modern POS-arkitektur
@@ -562,7 +574,7 @@ items:
     - name: Overstyre forespørselsbehandling for salgssted
       href: dev-itpro/pos-handler.md
     - name: Vise informasjon om utvidelsespakke for salgssted
-      href: view-pos-extension-package-details.md
+      href: dev-itpro/view-pos-extension-package-details.md
   - name: Utvidelsesmulighet for Hardware Station
     href: dev-itpro/hardware-station-extensibility.md
   - name: Utvidelsesmuligheter for Retail Server
@@ -669,9 +681,9 @@ items:
     items:
     - name: Fordelsutvidelse
       href: dev-itpro/retail-sdk/loyalty-extension-sample.md
-ms.openlocfilehash: 0d6ec0ba8723f81c21d735be455e35d8f1b62187
-ms.sourcegitcommit: 39c17fe619b075f56e8baffd087a830fc2fb8022
+ms.openlocfilehash: 179295f4397120f46391885760c980b2c9baa028
+ms.sourcegitcommit: 4d77340f5b3480f60a3a28c854fafc83e959f192
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/09/2019
-ms.locfileid: "791644"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "975926"

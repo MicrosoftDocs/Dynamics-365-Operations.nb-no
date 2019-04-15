@@ -3,7 +3,7 @@ title: Startside for konfigurasjon av forretningsintelligens (BI) og rapporterin
 description: Dette emnet henviser til ressursene du kan bruke til å finne ut mer om forretningsintelligens og rapporteringsverktøy som er tilgjengelige i Microsoft Dynamics 365 for Finance and Operations.
 author: sericks007
 manager: AnnBe
-ms.date: 12/18/2017
+ms.date: 03/27/2019
 ms.topic: index-page
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 372113f019cbce790dcd3e356a14a7bb49b8afd7
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: efd96759c5fb50e30d213e9e5d58a22fd77bc7a2
+ms.sourcegitcommit: b95bc0f81bd3bb3d9ec4c61f64f93b5c2bef9e05
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "302675"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "902848"
 ---
 # <a name="business-intelligence-bi-and-reporting-home-page"></a>Startside for konfigurasjon av forretningsintelligens (BI) og rapportering
 
@@ -33,7 +33,7 @@ Dette emnet henviser til ressursene du kan bruke til å finne ut mer om forretni
 ## <a name="get-started"></a>Komme i gang
 - [Informasjonstilgang og rapportering](information-access-reporting.md)
 - [Teknisk tale: Rapporteringsalternativer](https://www.youtube.com/watch?v=NzZONjKs5xA) (video)
-- [Finance and Operations: Forretningsintelligens](https://blogs.msdn.microsoft.com/dynamicsaxbi/) (blogg)
+- [Finance and Operations: Power BI Analytics & Reporting Services-blogg](https://community.dynamics.com/365/financeandoperations/b/powerbianalyticsandreporting) (blogg)
 
 ## <a name="analytical-workspaces"></a>Analytiske arbeidsområder
 Finance and Operations formidler interaktive rapporter som er sømløst integrert i arbeidsområder. Arbeidsområder kan bruke rik infografikk og bilder som støttes av Microsoft Power BI. Denne infografikken og bildene inkluderer mange kontroller som formidles av tredjeparter. Derfor formidler arbeidsområder en svært visuell, interaktiv opplevelse for brukere.

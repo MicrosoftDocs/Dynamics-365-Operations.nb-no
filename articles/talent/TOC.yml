@@ -8,6 +8,14 @@ items:
     - name: Hva er nytt eller endret i Talent?
       href: whats-new.md
       items:
+      - name: 2. april 2019
+        href: whats-new-talent-april-2-2019.md
+      - name: 26. mars 2019
+        href: whats-new-talent-march-26-2019.md
+      - name: 20. mars 2019
+        href: whats-new-talent-march-20.md
+      - name: 14. mars 2019
+        href: whats-new-talent-march-14.md
       - name: 5. mars 2019
         href: whats-new-talent-march-5.md
       - name: 27. februar 2019
@@ -20,38 +28,42 @@ items:
         href: whats-new-talent-january-29.md
       - name: 23. januar 2019
         href: whats-new-talent-january-23.md
-      - name: 17. januar 2019
-        href: whats-new-talent-january-17.md
-      - name: 11. januar 2019
-        href: whats-new-talent-january-11.md
-      - name: 14. desember 2018
-        href: whats-new-talent-december-14.md
-      - name: 6. desember 2018
-        href: whats-new-talent-december-6.md
-      - name: 27. november 2018
-        href: whats-new-talent-november-27.md
-      - name: 15. november 2018
-        href: whats-new-talent-november-15.md
-      - name: 31. oktober 2018
-        href: whats-new-talent-october-31.md
-      - name: 19. oktober 2018
-        href: whats-new-talent-october-19.md
-      - name: 15. oktober 2018
-        href: whats-new-talent-october-11.md
-      - name: 8. oktober 2018
-        href: whats-new-talent-october-8.md
-      - name: 1. oktober 2018
-        href: whats-new-talent-october-01.md
-      - name: 24. september 2018
-        href: whats-new-talent-september-24.md
-      - name: 17. september 2018
-        href: whats-new-talent-september-17-2018.md
-      - name: 10. september 2018
-        href: whats-new-talent-september-10.md
-      - name: August 2018
-        href: whats-new-talent-august2018.md
-      - name: Juli 2018
-        href: whats-new-talent-july2018.md
+      - name: Nye arkiver 2019
+        items:
+        - name: 17. januar 2019
+          href: whats-new-talent-january-17.md
+        - name: 11. januar 2019
+          href: whats-new-talent-january-11.md
+      - name: Nye arkiver 2018
+        items:
+        - name: 14. desember 2018
+          href: whats-new-talent-december-14.md
+        - name: 6. desember 2018
+          href: whats-new-talent-december-6.md
+        - name: 27. november 2018
+          href: whats-new-talent-november-27.md
+        - name: 15. november 2018
+          href: whats-new-talent-november-15.md
+        - name: 31. oktober 2018
+          href: whats-new-talent-october-31.md
+        - name: 19. oktober 2018
+          href: whats-new-talent-october-19.md
+        - name: 15. oktober 2018
+          href: whats-new-talent-october-11.md
+        - name: 8. oktober 2018
+          href: whats-new-talent-october-8.md
+        - name: 1. oktober 2018
+          href: whats-new-talent-october-01.md
+        - name: 24. september 2018
+          href: whats-new-talent-september-24.md
+        - name: 17. september 2018
+          href: whats-new-talent-september-17-2018.md
+        - name: 10. september 2018
+          href: whats-new-talent-september-10.md
+        - name: August 2018
+          href: whats-new-talent-august2018.md
+        - name: Juli 2018
+          href: whats-new-talent-july2018.md
     - name: Systemkrav og oppdateringspolicy
       href: talent-versions-update-policy.md
     - name: Klargjøre Talent
@@ -62,7 +74,7 @@ items:
       href: modular-app-tech-faq.md
     - name: Bygge inn PowerApps-apper
       href: ../fin-and-ops/get-started/embed-power-apps.md?toc=/dynamics365/unified-operations/talent/toc.json
-    - name: Core HR og Common Data Service for Apps
+    - name: Core HR og Common Data Service
       href: CoreHREntities.md
     - name: Få tilgang til forhåndsvisningsfunksjoner
       href: access-preview-feature.md
@@ -102,9 +114,11 @@ items:
       href: Process-templates-Attract.md
     - name: Opprette, godkjenne og postere jobber i Attract
       href: Creating-jobs-Attract.md
+    - name: Postere jobber på eksterne områder fra Attract
+      href: posting-jobs-external.md
     - name: Leverandører med talentsamlinger
       href: attract-talent-pools.md
-    - name: Leverandører med LinkedIn Recruiter
+    - name: Kandidatsondering med LinkedIn Recruiter
       href: attract-linked-in-recruiter.md
     - name: Aktiviteter i ansettelsesprosess i Attract
       href: activities-attract.md
@@ -128,6 +142,8 @@ items:
       href: Intelligent-Recommendations.md
     - name: Opprette en engasjerende jobbintroduksjon
       href: create-onboarding-experience.md
+    - name: Spore kilder for kandidatprofiler og søknader
+      href: source-tracking.md
     - name: Omfattende muligheter for ansettelsestillegg i Attract
       href: attract-comprehensive-hiring.md
   - name: Motivere ansatte
@@ -203,6 +219,14 @@ items:
       href: talent-fo-integration.md
     - name: Gjentakende dataeksport ved hjelp av Azure Logic Apps
       href: tutorial-integration-recurring-export.md
+  - name: Utvidelsesmulighet
+    items:
+    - name: Utvide Talent ved hjelp av PowerApps og Microsoft Flow – eksempelscenarier
+      href: extensibility-examples.md
+    - name: Utvidelsesmulighet i Attract
+      href: extensibility-attract.md
+    - name: Egendefinerte felt i Core HR
+      href: corehr-custom-fields.md
   - name: Office-integrering
     items:
     - name: Opplæring i Office-integrering
@@ -322,7 +346,7 @@ items:
       href: save-play-task-guides-LCS.md
     - name: Tilgang til private adresser etter sikkerhetsrolle
       href: security-roles-addresses.md
-    - name: Talent vises ikke blant appene i Microsoft Dynamics 365 (CDS1.0)
+    - name: Talent vises ikke blant appene i Microsoft Dynamics 365 (Common Data Service 1.0)
       href: talent-not-in-home-CDS.md
     - name: Brukeren har tilgang til Core HR, men ikke appen Onboard eller Attract
       href: user-access-core-hr.md
@@ -332,9 +356,9 @@ items:
       href: talent-FO-integration.md
     - name: Fant ikke Azure Active Directory-brukere i Personvelger
       href: people-picker-user-not-found.md
-ms.openlocfilehash: 4123fb80126695bb35a02d3d2fc00b3ea38c1881
-ms.sourcegitcommit: 479b8cda7e411830bf1f579fab3692c980dcf850
+ms.openlocfilehash: 0454094f05b3e571a38b8361fa9573c929647551
+ms.sourcegitcommit: 594fd4c7b937695396a7154a906563f43293926a
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "782758"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "969453"
