@@ -10,7 +10,7 @@ ms.service: dynamics-365-talent
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: anbichse
 ms.search.scope: Talent
 ms.custom: ''
 ms.assetid: ''
@@ -18,85 +18,85 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2018-09-06
 ms.dyn365.ops.version: Talent September 10, 2018 update
-ms.openlocfilehash: b41ce93c8ae93054d2b0d71340b99e0910d4510f
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 6682e4d013f006696b45e644b7b4861b34faa9bf
+ms.sourcegitcommit: 608e68b603afef9eb98d8fb25e90109c2473ef87
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "305684"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "857413"
 ---
-# <a name="whats-new-or-changed-in-dynamics-365-for-talent-core-hr-september-10-2018"></a><span data-ttu-id="822a9-103">Hva er nytt eller endret i Dynamics 365 for Talent Core HR (10. september 2018)</span><span class="sxs-lookup"><span data-stu-id="822a9-103">What's new or changed in Dynamics 365 for Talent Core HR (September 10, 2018)</span></span>
+# <a name="whats-new-or-changed-in-dynamics-365-for-talent-core-hr-september-10-2018"></a><span data-ttu-id="0ac5d-103">Hva er nytt eller endret i Dynamics 365 for Talent Core HR (10. september 2018)</span><span class="sxs-lookup"><span data-stu-id="0ac5d-103">What's new or changed in Dynamics 365 for Talent Core HR (September 10, 2018)</span></span>
 
 [!include [banner](includes/banner.md)]
 
-<span data-ttu-id="822a9-104">**Build 8.1.138.0**</span><span class="sxs-lookup"><span data-stu-id="822a9-104">**Build 8.1.138.0**</span></span>
+<span data-ttu-id="0ac5d-104">**Build 8.1.138.0**</span><span class="sxs-lookup"><span data-stu-id="0ac5d-104">**Build 8.1.138.0**</span></span>
 
-<span data-ttu-id="822a9-105">Dette emnet beskriver funksjoner som enten er nye eller endret i Microsoft Dynamics 365 for Talent Core HR.</span><span class="sxs-lookup"><span data-stu-id="822a9-105">This topic describes features that are either new or changed in Microsoft Dynamics 365 for Talent Core HR.</span></span>
+<span data-ttu-id="0ac5d-105">Dette emnet beskriver funksjoner som enten er nye eller endret i Microsoft Dynamics 365 for Talent Core HR.</span><span class="sxs-lookup"><span data-stu-id="0ac5d-105">This topic describes features that are either new or changed in Microsoft Dynamics 365 for Talent Core HR.</span></span>
 
-## <a name="allow-specific-time-of-day-on-time-off-requests-half-days"></a><span data-ttu-id="822a9-106">Tillat bestemt tidspunkt på dagen på forespørsler om fritid (halve dager)</span><span class="sxs-lookup"><span data-stu-id="822a9-106">Allow specific time of day on time-off requests (half days)</span></span>
+## <a name="allow-specific-time-of-day-on-time-off-requests-half-days"></a><span data-ttu-id="0ac5d-106">Tillat bestemt tidspunkt på dagen på forespørsler om fritid (halve dager)</span><span class="sxs-lookup"><span data-stu-id="0ac5d-106">Allow specific time of day on time-off requests (half days)</span></span>
 
-<span data-ttu-id="822a9-107">Hvis permisjon og fravær er satt opp slik at fritid sendes inn i dager, kan du nå også muliggjøre en halvdagsdefinisjon.</span><span class="sxs-lookup"><span data-stu-id="822a9-107">If leave and absence is set up so that time off is submitted in days, you can now also enable a half-day definition.</span></span> <span data-ttu-id="822a9-108">Når brukere deretter sender forespørsler om fritid, de kan angi om de vil ber om den første delen eller den andre delen av fridagen.</span><span class="sxs-lookup"><span data-stu-id="822a9-108">Then, when users submit time-off requests, they can specify whether they are requesting the first half or the second half of the day off.</span></span>
+<span data-ttu-id="0ac5d-107">Hvis permisjon og fravær er satt opp slik at fritid sendes inn i dager, kan du nå også muliggjøre en halvdagsdefinisjon.</span><span class="sxs-lookup"><span data-stu-id="0ac5d-107">If leave and absence is set up so that time off is submitted in days, you can now also enable a half-day definition.</span></span> <span data-ttu-id="0ac5d-108">Når brukere deretter sender forespørsler om fritid, de kan angi om de vil ber om den første delen eller den andre delen av fridagen.</span><span class="sxs-lookup"><span data-stu-id="0ac5d-108">Then, when users submit time-off requests, they can specify whether they are requesting the first half or the second half of the day off.</span></span>
 
-<span data-ttu-id="822a9-109">Dette alternativet deaktivert som standard.</span><span class="sxs-lookup"><span data-stu-id="822a9-109">By default, this option is turned off.</span></span> <span data-ttu-id="822a9-110">For at ansatte skal kunne be om den første eller andre halvdelen av dagen, må du aktivere dette alternativet i området **Permisjon og fravær** i Personale-parameterne.</span><span class="sxs-lookup"><span data-stu-id="822a9-110">For employees to request the first half or second half of the day off, you must turn on this option in the **Leave and absence** area of Human resources parameters.</span></span>
+<span data-ttu-id="0ac5d-109">Dette alternativet deaktivert som standard.</span><span class="sxs-lookup"><span data-stu-id="0ac5d-109">By default, this option is turned off.</span></span> <span data-ttu-id="0ac5d-110">For at ansatte skal kunne be om den første eller andre halvdelen av dagen, må du aktivere dette alternativet i området **Permisjon og fravær** i Personale-parameterne.</span><span class="sxs-lookup"><span data-stu-id="0ac5d-110">For employees to request the first half or second half of the day off, you must turn on this option in the **Leave and absence** area of Human resources parameters.</span></span>
 
-<span data-ttu-id="822a9-111">Sikkerhetsrettigheten for denne funksjonen er Oppretthold parametere for Personale.</span><span class="sxs-lookup"><span data-stu-id="822a9-111">The security privilege for this feature is Maintain Human Resources Parameters.</span></span>
+<span data-ttu-id="0ac5d-111">Sikkerhetsrettigheten for denne funksjonen er Oppretthold parametere for Personale.</span><span class="sxs-lookup"><span data-stu-id="0ac5d-111">The security privilege for this feature is Maintain Human Resources Parameters.</span></span>
 
-## <a name="validation-of-leave-and-absence-entries"></a><span data-ttu-id="822a9-112">Validering av permisjons og fraværsoppføringer</span><span class="sxs-lookup"><span data-stu-id="822a9-112">Validation of leave and absence entries</span></span>
+## <a name="validation-of-leave-and-absence-entries"></a><span data-ttu-id="0ac5d-112">Validering av permisjons og fraværsoppføringer</span><span class="sxs-lookup"><span data-stu-id="0ac5d-112">Validation of leave and absence entries</span></span>
 
-<span data-ttu-id="822a9-113">Avhengig av hvordan permisjon er konfigurert, vil ansatte som prøver å sende en forespørsel om fritid som er lengre enn deres virkedag, få en advarsel.</span><span class="sxs-lookup"><span data-stu-id="822a9-113">Depending on how leave is configured, employees who try to submit a time-off request that is longer than their work day receive a warning message.</span></span> <span data-ttu-id="822a9-114">De blir med andre ord varslet hvis de prøver å ta mer enn en hel dag fri på en gitt dato.</span><span class="sxs-lookup"><span data-stu-id="822a9-114">In other words, they are warned if they try to take more than a full day off on any given date.</span></span>
+<span data-ttu-id="0ac5d-113">Avhengig av hvordan permisjon er konfigurert, vil ansatte som prøver å sende en forespørsel om fritid som er lengre enn deres virkedag, få en advarsel.</span><span class="sxs-lookup"><span data-stu-id="0ac5d-113">Depending on how leave is configured, employees who try to submit a time-off request that is longer than their work day receive a warning message.</span></span> <span data-ttu-id="0ac5d-114">De blir med andre ord varslet hvis de prøver å ta mer enn en hel dag fri på en gitt dato.</span><span class="sxs-lookup"><span data-stu-id="0ac5d-114">In other words, they are warned if they try to take more than a full day off on any given date.</span></span>
 
-<span data-ttu-id="822a9-115">Denne valideringen er alltid aktivert.</span><span class="sxs-lookup"><span data-stu-id="822a9-115">This validation is always turned on.</span></span> <span data-ttu-id="822a9-116">Hver gang ansatte overskrider dagsterskelen som er definert, får de en advarsel i fritidsforespørselen.</span><span class="sxs-lookup"><span data-stu-id="822a9-116">Any time that employees exceed the day threshold that is defined, they receive a warning in their time-off request.</span></span>
+<span data-ttu-id="0ac5d-115">Denne valideringen er alltid aktivert.</span><span class="sxs-lookup"><span data-stu-id="0ac5d-115">This validation is always turned on.</span></span> <span data-ttu-id="0ac5d-116">Hver gang ansatte overskrider dagsterskelen som er definert, får de en advarsel i fritidsforespørselen.</span><span class="sxs-lookup"><span data-stu-id="0ac5d-116">Any time that employees exceed the day threshold that is defined, they receive a warning in their time-off request.</span></span>
 
-## <a name="additional-fields-for-conditional-statements-in-workflows"></a><span data-ttu-id="822a9-117">Flere felt for betingelsesuttrykk i arbeidsflyter</span><span class="sxs-lookup"><span data-stu-id="822a9-117">Additional fields for conditional statements in workflows</span></span>
+## <a name="additional-fields-for-conditional-statements-in-workflows"></a><span data-ttu-id="0ac5d-117">Flere felt for betingelsesuttrykk i arbeidsflyter</span><span class="sxs-lookup"><span data-stu-id="0ac5d-117">Additional fields for conditional statements in workflows</span></span>
 
-<span data-ttu-id="822a9-118">Flere felt er lagt til for betingelsesuttrykk og plassholdere for flere arbeidsflyter i Core HR.</span><span class="sxs-lookup"><span data-stu-id="822a9-118">Additional fields have been added to conditional statements and placeholders for several workflows in Core HR.</span></span>
+<span data-ttu-id="0ac5d-118">Flere felt er lagt til for betingelsesuttrykk og plassholdere for flere arbeidsflyter i Core HR.</span><span class="sxs-lookup"><span data-stu-id="0ac5d-118">Additional fields have been added to conditional statements and placeholders for several workflows in Core HR.</span></span>
 
-<span data-ttu-id="822a9-119">Følgende felt er lagt til i arbeidsflytene for kompensasjon, oppsigelse og overføring:</span><span class="sxs-lookup"><span data-stu-id="822a9-119">The following fields have been added to the compensation, termination, and transfer workflows:</span></span>
+<span data-ttu-id="0ac5d-119">Følgende felt er lagt til i arbeidsflytene for kompensasjon, oppsigelse og overføring:</span><span class="sxs-lookup"><span data-stu-id="0ac5d-119">The following fields have been added to the compensation, termination, and transfer workflows:</span></span>
 
-- <span data-ttu-id="822a9-120">Ansettelsestype</span><span class="sxs-lookup"><span data-stu-id="822a9-120">EmploymentType</span></span>
-- <span data-ttu-id="822a9-121">Juridisk enhet</span><span class="sxs-lookup"><span data-stu-id="822a9-121">LegalEntity</span></span>
-- <span data-ttu-id="822a9-122">Justert startdato for arbeider</span><span class="sxs-lookup"><span data-stu-id="822a9-122">AdjustedWorkerStartDate</span></span>
-- <span data-ttu-id="822a9-123">Oppsigelsesvarsel for arbeidsgiver</span><span class="sxs-lookup"><span data-stu-id="822a9-123">EmployerNoticeAmount</span></span>
-- <span data-ttu-id="822a9-124">Oppsigelsesenhet for arbeidsgiver</span><span class="sxs-lookup"><span data-stu-id="822a9-124">EmployerUnitOfNotice</span></span>
-- <span data-ttu-id="822a9-125">Overgangsdato</span><span class="sxs-lookup"><span data-stu-id="822a9-125">TransitionDate</span></span>
-- <span data-ttu-id="822a9-126">Oppsigelsesvarsel for arbeider</span><span class="sxs-lookup"><span data-stu-id="822a9-126">WorkerNoticeAmount</span></span>
-- <span data-ttu-id="822a9-127">Arbeiderens startdato</span><span class="sxs-lookup"><span data-stu-id="822a9-127">WorkerStartDate</span></span>
-- <span data-ttu-id="822a9-128">Oppsigelsesenhet for arbeider</span><span class="sxs-lookup"><span data-stu-id="822a9-128">WorkerUnitOfNotice</span></span>
-- <span data-ttu-id="822a9-129">Sluttdato for prøvetid</span><span class="sxs-lookup"><span data-stu-id="822a9-129">ProbationEndDate</span></span>
-- <span data-ttu-id="822a9-130">Posisjon</span><span class="sxs-lookup"><span data-stu-id="822a9-130">Position</span></span>
-- <span data-ttu-id="822a9-131">Fagforening</span><span class="sxs-lookup"><span data-stu-id="822a9-131">Union</span></span>
-- <span data-ttu-id="822a9-132">Avdeling</span><span class="sxs-lookup"><span data-stu-id="822a9-132">Department</span></span>
-- <span data-ttu-id="822a9-133">Stillingstype</span><span class="sxs-lookup"><span data-stu-id="822a9-133">PositionType</span></span>
-- <span data-ttu-id="822a9-134">CompLocation</span><span class="sxs-lookup"><span data-stu-id="822a9-134">CompLocation</span></span>
-- <span data-ttu-id="822a9-135">Stillingstittel</span><span class="sxs-lookup"><span data-stu-id="822a9-135">Title</span></span>
-- <span data-ttu-id="822a9-136">Jobb</span><span class="sxs-lookup"><span data-stu-id="822a9-136">Job</span></span>
-- <span data-ttu-id="822a9-137">Jobbtype</span><span class="sxs-lookup"><span data-stu-id="822a9-137">JobType</span></span>
-- <span data-ttu-id="822a9-138">Jobbserie</span><span class="sxs-lookup"><span data-stu-id="822a9-138">JobFamily</span></span>
-- <span data-ttu-id="822a9-139">Jobbfunksjon</span><span class="sxs-lookup"><span data-stu-id="822a9-139">JobFunction</span></span>
+- <span data-ttu-id="0ac5d-120">Ansettelsestype</span><span class="sxs-lookup"><span data-stu-id="0ac5d-120">EmploymentType</span></span>
+- <span data-ttu-id="0ac5d-121">Juridisk enhet</span><span class="sxs-lookup"><span data-stu-id="0ac5d-121">LegalEntity</span></span>
+- <span data-ttu-id="0ac5d-122">Justert startdato for arbeider</span><span class="sxs-lookup"><span data-stu-id="0ac5d-122">AdjustedWorkerStartDate</span></span>
+- <span data-ttu-id="0ac5d-123">Oppsigelsesvarsel for arbeidsgiver</span><span class="sxs-lookup"><span data-stu-id="0ac5d-123">EmployerNoticeAmount</span></span>
+- <span data-ttu-id="0ac5d-124">Oppsigelsesenhet for arbeidsgiver</span><span class="sxs-lookup"><span data-stu-id="0ac5d-124">EmployerUnitOfNotice</span></span>
+- <span data-ttu-id="0ac5d-125">Overgangsdato</span><span class="sxs-lookup"><span data-stu-id="0ac5d-125">TransitionDate</span></span>
+- <span data-ttu-id="0ac5d-126">Oppsigelsesvarsel for arbeider</span><span class="sxs-lookup"><span data-stu-id="0ac5d-126">WorkerNoticeAmount</span></span>
+- <span data-ttu-id="0ac5d-127">Arbeiderens startdato</span><span class="sxs-lookup"><span data-stu-id="0ac5d-127">WorkerStartDate</span></span>
+- <span data-ttu-id="0ac5d-128">Oppsigelsesenhet for arbeider</span><span class="sxs-lookup"><span data-stu-id="0ac5d-128">WorkerUnitOfNotice</span></span>
+- <span data-ttu-id="0ac5d-129">Sluttdato for prøvetid</span><span class="sxs-lookup"><span data-stu-id="0ac5d-129">ProbationEndDate</span></span>
+- <span data-ttu-id="0ac5d-130">Posisjon</span><span class="sxs-lookup"><span data-stu-id="0ac5d-130">Position</span></span>
+- <span data-ttu-id="0ac5d-131">Fagforening</span><span class="sxs-lookup"><span data-stu-id="0ac5d-131">Union</span></span>
+- <span data-ttu-id="0ac5d-132">Avdeling</span><span class="sxs-lookup"><span data-stu-id="0ac5d-132">Department</span></span>
+- <span data-ttu-id="0ac5d-133">Stillingstype</span><span class="sxs-lookup"><span data-stu-id="0ac5d-133">PositionType</span></span>
+- <span data-ttu-id="0ac5d-134">CompLocation</span><span class="sxs-lookup"><span data-stu-id="0ac5d-134">CompLocation</span></span>
+- <span data-ttu-id="0ac5d-135">Stillingstittel</span><span class="sxs-lookup"><span data-stu-id="0ac5d-135">Title</span></span>
+- <span data-ttu-id="0ac5d-136">Jobb</span><span class="sxs-lookup"><span data-stu-id="0ac5d-136">Job</span></span>
+- <span data-ttu-id="0ac5d-137">Jobbtype</span><span class="sxs-lookup"><span data-stu-id="0ac5d-137">JobType</span></span>
+- <span data-ttu-id="0ac5d-138">Jobbserie</span><span class="sxs-lookup"><span data-stu-id="0ac5d-138">JobFamily</span></span>
+- <span data-ttu-id="0ac5d-139">Jobbfunksjon</span><span class="sxs-lookup"><span data-stu-id="0ac5d-139">JobFunction</span></span>
 
-<span data-ttu-id="822a9-140">Følgende felt er lagt til i arbeidsflyten for stilling:</span><span class="sxs-lookup"><span data-stu-id="822a9-140">The following fields have been added to the position workflow:</span></span>
+<span data-ttu-id="0ac5d-140">Følgende felt er lagt til i arbeidsflyten for stilling:</span><span class="sxs-lookup"><span data-stu-id="0ac5d-140">The following fields have been added to the position workflow:</span></span>
 
-- <span data-ttu-id="822a9-141">Posisjon</span><span class="sxs-lookup"><span data-stu-id="822a9-141">Position</span></span>
-- <span data-ttu-id="822a9-142">Fagforening</span><span class="sxs-lookup"><span data-stu-id="822a9-142">Union</span></span>
-- <span data-ttu-id="822a9-143">Avdeling</span><span class="sxs-lookup"><span data-stu-id="822a9-143">Department</span></span>
-- <span data-ttu-id="822a9-144">Stillingstype</span><span class="sxs-lookup"><span data-stu-id="822a9-144">PositionType</span></span>
-- <span data-ttu-id="822a9-145">CompLocation</span><span class="sxs-lookup"><span data-stu-id="822a9-145">CompLocation</span></span>
-- <span data-ttu-id="822a9-146">Stillingstittel</span><span class="sxs-lookup"><span data-stu-id="822a9-146">Title</span></span>
-- <span data-ttu-id="822a9-147">Jobb</span><span class="sxs-lookup"><span data-stu-id="822a9-147">Job</span></span>
-- <span data-ttu-id="822a9-148">Jobbtype</span><span class="sxs-lookup"><span data-stu-id="822a9-148">JobType</span></span>
-- <span data-ttu-id="822a9-149">Jobbserie</span><span class="sxs-lookup"><span data-stu-id="822a9-149">JobFamily</span></span>
-- <span data-ttu-id="822a9-150">Jobbfunksjon</span><span class="sxs-lookup"><span data-stu-id="822a9-150">JobFunction</span></span>
+- <span data-ttu-id="0ac5d-141">Posisjon</span><span class="sxs-lookup"><span data-stu-id="0ac5d-141">Position</span></span>
+- <span data-ttu-id="0ac5d-142">Fagforening</span><span class="sxs-lookup"><span data-stu-id="0ac5d-142">Union</span></span>
+- <span data-ttu-id="0ac5d-143">Avdeling</span><span class="sxs-lookup"><span data-stu-id="0ac5d-143">Department</span></span>
+- <span data-ttu-id="0ac5d-144">Stillingstype</span><span class="sxs-lookup"><span data-stu-id="0ac5d-144">PositionType</span></span>
+- <span data-ttu-id="0ac5d-145">CompLocation</span><span class="sxs-lookup"><span data-stu-id="0ac5d-145">CompLocation</span></span>
+- <span data-ttu-id="0ac5d-146">Stillingstittel</span><span class="sxs-lookup"><span data-stu-id="0ac5d-146">Title</span></span>
+- <span data-ttu-id="0ac5d-147">Jobb</span><span class="sxs-lookup"><span data-stu-id="0ac5d-147">Job</span></span>
+- <span data-ttu-id="0ac5d-148">Jobbtype</span><span class="sxs-lookup"><span data-stu-id="0ac5d-148">JobType</span></span>
+- <span data-ttu-id="0ac5d-149">Jobbserie</span><span class="sxs-lookup"><span data-stu-id="0ac5d-149">JobFamily</span></span>
+- <span data-ttu-id="0ac5d-150">Jobbfunksjon</span><span class="sxs-lookup"><span data-stu-id="0ac5d-150">JobFunction</span></span>
 
-<span data-ttu-id="822a9-151">Feltene i betingelsesuttrykk og plassholdere er tilgjengelige for alle brukere som har tilgang til å konfigurere arbeidsflytene nevnt ovenfor.</span><span class="sxs-lookup"><span data-stu-id="822a9-151">Fields in conditional statements and placeholders are available to all users who have access to configure the previously mentioned workflows.</span></span>
+<span data-ttu-id="0ac5d-151">Feltene i betingelsesuttrykk og plassholdere er tilgjengelige for alle brukere som har tilgang til å konfigurere arbeidsflytene nevnt ovenfor.</span><span class="sxs-lookup"><span data-stu-id="0ac5d-151">Fields in conditional statements and placeholders are available to all users who have access to configure the previously mentioned workflows.</span></span>
 
-## <a name="navigation-to-attract-from-personnel-management"></a><span data-ttu-id="822a9-152">Gå til Attract fra personaladministrasjon</span><span class="sxs-lookup"><span data-stu-id="822a9-152">Navigation to Attract from personnel management</span></span>
+## <a name="navigation-to-attract-from-personnel-management"></a><span data-ttu-id="0ac5d-152">Gå til Attract fra personaladministrasjon</span><span class="sxs-lookup"><span data-stu-id="0ac5d-152">Navigation to Attract from personnel management</span></span>
 
-<span data-ttu-id="822a9-153">I personaladministrasjon, hvis Attract ikke er satt opp i delen **Kandidater som skal ansettes**, blir brukerne dirigert til å komme i gang med Attract, i stedet for å vise meldingen "Fant ingenting å vise her".</span><span class="sxs-lookup"><span data-stu-id="822a9-153">In personnel management, if Attract hasn't been set up, the **Candidates to hire** section directs users to get started with Attract instead of showing the message, "We didn't find anything to show here."</span></span>
+<span data-ttu-id="0ac5d-153">I personaladministrasjon, hvis Attract ikke er satt opp i delen **Kandidater som skal ansettes**, blir brukerne dirigert til å komme i gang med Attract, i stedet for å vise meldingen "Fant ingenting å vise her".</span><span class="sxs-lookup"><span data-stu-id="0ac5d-153">In personnel management, if Attract hasn't been set up, the **Candidates to hire** section directs users to get started with Attract instead of showing the message, "We didn't find anything to show here."</span></span>
 
-## <a name="other-changes"></a><span data-ttu-id="822a9-154">Andre endringer</span><span class="sxs-lookup"><span data-stu-id="822a9-154">Other changes</span></span>
+## <a name="other-changes"></a><span data-ttu-id="0ac5d-154">Andre endringer</span><span class="sxs-lookup"><span data-stu-id="0ac5d-154">Other changes</span></span>
 
-<span data-ttu-id="822a9-155">Denne versjonen inneholder flere andre feilrettinger:</span><span class="sxs-lookup"><span data-stu-id="822a9-155">This release includes several additional bug fixes:</span></span>
+<span data-ttu-id="0ac5d-155">Denne versjonen inneholder flere andre feilrettinger:</span><span class="sxs-lookup"><span data-stu-id="0ac5d-155">This release includes several additional bug fixes:</span></span>
 
-- <span data-ttu-id="822a9-156">Når en entreprenør ansettes, skal kategorien **Kompensasjon** ikke skal være tilgjengelig på forespørsels-/handlingssiden.</span><span class="sxs-lookup"><span data-stu-id="822a9-156">When a contractor is hired, the **Compensation** tab should not be available on the request/action page.</span></span>
-- <span data-ttu-id="822a9-157">Under Be om avslutning-prosessen kan du ikke fortsette før alle nødvendige felt inneholder data.</span><span class="sxs-lookup"><span data-stu-id="822a9-157">During the request termination process, you can't continue until all required fields contain data.</span></span>
-- <span data-ttu-id="822a9-158">Problemer med sorteringsrekkefølge og datovisning i analyse av personaladministrasjon er løst.</span><span class="sxs-lookup"><span data-stu-id="822a9-158">Sort order and date display issues on the Personnel management analytics have been addressed.</span></span>
+- <span data-ttu-id="0ac5d-156">Når en entreprenør ansettes, skal kategorien **Kompensasjon** ikke skal være tilgjengelig på forespørsels-/handlingssiden.</span><span class="sxs-lookup"><span data-stu-id="0ac5d-156">When a contractor is hired, the **Compensation** tab should not be available on the request/action page.</span></span>
+- <span data-ttu-id="0ac5d-157">Under Be om avslutning-prosessen kan du ikke fortsette før alle nødvendige felt inneholder data.</span><span class="sxs-lookup"><span data-stu-id="0ac5d-157">During the request termination process, you can't continue until all required fields contain data.</span></span>
+- <span data-ttu-id="0ac5d-158">Problemer med sorteringsrekkefølge og datovisning i analyse av personaladministrasjon er løst.</span><span class="sxs-lookup"><span data-stu-id="0ac5d-158">Sort order and date display issues on the Personnel management analytics have been addressed.</span></span>
