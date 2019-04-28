@@ -3,7 +3,7 @@ title: Synkronisere prosjektliste fra Finance and Operations til Field Service
 description: Dette emnet omhandler malene og de underliggende oppgavene som brukes til å synkronisere prosjekter fra Microsoft Dynamics 365 for Finance and Operations til Microsoft Dynamics 365 for Field Service.
 author: ChristianRytt
 manager: AnnBe
-ms.date: 01/14/2019
+ms.date: 03/13/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: 8.1.3
 ms.search.validFrom: 2018-12-01
-ms.openlocfilehash: b5aeb4c3925994d7488e8e113e88b9d06ee6b350
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: ea5c188891bb97ba73d2d022e86bbff50897381b
+ms.sourcegitcommit: a6d385db6636ef2b7fb6b24d37a2160c8d5a3c0f
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "312514"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "842610"
 ---
 # <a name="synchronize-project-list-from-finance-and-operations-to-field-service"></a>Synkronisere prosjektliste fra Finance and Operations til Field Service
 
@@ -38,13 +38,13 @@ Dette emnet omhandler malene og de underliggende oppgavene som brukes til å syn
 Følgende mal og underliggende oppgavene brukes til å utføre synkronisering av prosjekter fra Microsoft Dynamics 365 for Finance and Operations til Microsoft Dynamics 365 for Field Service.
 
 **Mal i Dataintegrasjon**
-- Prosjekter (Finance and Operations til Field Service)
+- Prosjekter (Fin and Ops til Field Service)
 
 **Oppgave i Dataintegrasjonprosjektet**:
 - Prosjekter
 
 Følgende synkroniseringsoppgaver er påkrevd før synkronisering av prosjektliste kan inntreffe:
-- Kontoer (Sales til Finance and Operations) 
+- Kontoer (Sales til Fin and Ops) 
 
 ## <a name="entity-set"></a>Enhetssett
 | Field Service           | Finance and Operations  |
@@ -64,6 +64,6 @@ Aktivere endringssporing for dataenhetsprosjekter.
 ## <a name="template-mapping-in-data-integration"></a>Maltilordning i Dataintegrering
 
 
-### <a name="projects-finance-and-operations-to-field-service-projects"></a>Prosjekter (Finance and Operations til Field Service): Prosjekter
+### <a name="projects-fin-and-ops-to-field-service-projects"></a>Prosjekter (Fin and Ops til Field Service): Prosjekter
 
 [![Maltilordning i Dataintegrering](./media/FSProject1.png)](./media/FSProject1.png)

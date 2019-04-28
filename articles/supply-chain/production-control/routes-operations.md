@@ -3,7 +3,7 @@ title: Ruter og operasjoner
 description: Dette emnet gir informasjon om ruter og operasjoner.
 author: sorenva
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 03/18/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 417fd960a43ad3fd023ea0c4a17be735b69743de
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 961cc6fe5bd1bfbb0f5c9116024415a5d53f569e
+ms.sourcegitcommit: dc90d56050d7353930d048476451542cce147e37
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "333352"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "850674"
 ---
 # <a name="routes-and-operations"></a>Ruter og operasjoner
 
@@ -59,11 +59,10 @@ Hvis du bruker mer komplekse rutenettverk i Parametere for produksjonskontroll, 
 
 [![Rutenettverk](./media/routes-and-operations-2-route-network.png)](./media/routes-and-operations-2-route-network.png)  
 
-**Merknader:**
-
--   Hver operasjon kan ha bare én etterfølgende operasjon, og hele ruten må slutte i én enkelt operasjon.
--   Det er ingen garanti for at flere operasjoner med samme etterfølgende operasjon (for eksempel operasjon 30 og 40 i den foregående illustrasjonen) faktisk kjøres parallelt. Ressurstilgjengelighet og -kapasitet kan sette begrensninger for hvordan operasjoner planlegges.
--   Du kan ikke bruke 0 (null) som operasjonsnummer. Dette nummeret er reservert og brukes til å angi at den siste operasjonen i ruten ikke har en etterfølgende operasjon.
+> [!NOTE]
+> -   Hver operasjon kan ha bare én etterfølgende operasjon, og hele ruten må slutte i én enkelt operasjon.
+> -   Det er ingen garanti for at flere operasjoner med samme etterfølgende operasjon (for eksempel operasjon 30 og 40 i den foregående illustrasjonen) faktisk kjøres parallelt. Ressurstilgjengelighet og -kapasitet kan sette begrensninger for hvordan operasjoner planlegges.
+> -   Du kan ikke bruke 0 (null) som operasjonsnummer. Dette nummeret er reservert og brukes til å angi at den siste operasjonen i ruten ikke har en etterfølgende operasjon.
 
 ### <a name="parallel-operations"></a>Parallelle operasjoner
 
@@ -122,7 +121,8 @@ Du kan også angi at en operasjonsrelasjon er spesifikk for et sted. På denne m
 
 Operasjonsrelasjoner gir deg stor fleksibilitet når du definerer rutene. Muligheten til å definere standardegenskaper bidrar også til å redusere mengden hoveddata som du må vedlikeholde. Men denne fleksibiliteten betyr også at du må være oppmerksom på konteksten som du endrer en operasjonsrelasjon i.  
 
-**Obs!** Siden de operajonsegenskapene lagres i operasjonsrelasjoner per operasjon per rute, har alle forekomster av den samme operasjonen (for eksempel Montering) samme oppstillingstid, operasjonstid, ressurskrav og så videre. Hvis to forekomster av en operasjon må utføres i samme rute, men har forskjellige operasjonstid, må du derfor opprette to forskjellige operasjoner, for eksempel Montering1 og Montering2.
+> [!NOTE]
+> Siden de operajonsegenskapene lagres i operasjonsrelasjoner per operasjon for hver rute, har alle forekomster av den samme operasjonen (for eksempel Montering) samme oppstillingstid, operasjonstid og ressurskrav. Hvis to forekomster av en operasjon må utføres i samme rute, men har forskjellige operasjonstid, må du derfor opprette to separate operasjoner, for eksempel Montering1 og Montering2.
 
 ### <a name="modifying-product-specific-routes"></a>Endre produktspesifikke ruter
 
@@ -132,7 +132,8 @@ På **Rute**-siden kan du endre operasjonsegenskapene for operasjonen, for eksem
 
 Du kan også manuelt opprette en operasjon som er spesifikk for en rute og et frigitt produkt ved hjelp av funksjonen **Kopier og rediger relasjon**.  
 
-**Obs!** Hvis du legger til en ny operasjon i en rute på **Rute**-siden, opprettes en operasjonsrelasjon bare for gjeldende frigitte produkt. Hvis ruten også brukes til å produsere andre frigitte produkter, vil det derfor ikke finnes en gjeldende operasjonsrelasjon for disse frigitte produktene, og ruten kan ikke lenger brukes for disse frigitte produktene.
+> [!NOTE]
+> Hvis du legger til en ny operasjon i en rute på **Rute**-siden, opprettes en operasjonsrelasjon bare for gjeldende frigitte produkt. Hvis ruten også brukes til å produsere andre frigitte produkter, vil det derfor ikke finnes en gjeldende operasjonsrelasjon for disse frigitte produktene, og ruten kan ikke lenger brukes for disse frigitte produktene.
 
 ### <a name="maintaining-operation-relations-per-route"></a>Vedlikeholde operasjonsrelasjoner per rute
 
@@ -228,17 +229,32 @@ Hvis du ikke angir en operasjonsressurs eller ressursgruppe som en del av ressur
 -   **Bunke** – En partikapasitet beregnes ved hjelp av informasjon fra operasjonsrelasjonen. Antall satsvise jobber, og derfor behandlingstiden, kan deretter beregnes basert på ordreantallet.
 -   **Ressursbunke** – Dette alternativet er stort sett den samme som **Bunke**-alternativet. Beregningen inkluderer imidlertid **Bunkekapasitet**-feltet fra operasjonsressursen. Derfor er tiden ressursavhengige.
 
+### <a name="set-up-route-groups"></a>Definer rutegrupper
 
-<a name="additional-resources"></a>Tilleggsressurser
---------
+Du kan definere rutegruppene og oppsettet for rute- eller jobbtypene under **Produksjonskontroll > Oppsett > Ruter > Rutegrupper**. For hver rute-/jobbtype rutegruppen kan du velge eller fjerne følgende alternativer:
 
-[Stykklister og formler](bill-of-material-bom.md)
+- **Aktivering** – Velg dette alternativet for å aktivere beregninger og planlegging for den valgte jobbtypen, og få jobbtilbakemelding når du kjører jobbplanlegging. Du må velge dette alternativet for å aktivere jobbtypen, og deretter velge resten av alternativene for denne jobbtypen. Hvis aktiveringen ikke er valgt, vil denne jobbtypen ikke bli aktivert, uavhengig av utvalget av de andre alternativene. 
+- **Jobbstyring** – Velg dette alternativet for å inkludere jobbtypen i jobbstyringen når du kjører jobbplanlegging. 
+- **Driftstid** – Velg dette alternativet for å planlegge jobbtypen i henhold til arbeidstidskalenderen som er definert for operasjonsressursen, ellers brukes den gregorianske kalenderen. Driftstid kan planlegges enten i henhold til den gregorianske kalenderen eller den definerte arbeidskalenderen. Hvis du velger dette alternativet, er planlegging basert på den definerte arbeidstidskalenderen. I tillegg vil jobben for jobbtypen planlegges fra midnatt på datoen som er definert som jobbens startdato.
+- **Kapasitet** – Velg dette alternativet for å reservere kapasitet for jobbtypen når du kjører jobbplanlegging. Hvis du velger dette alternativet, reserveres kapasitet når planlegging kjøres for den valgte jobbtypen. Dette gir deg en oversikt over hvilke jobbtyper i hver rutegruppe som bruker operasjonsressursene. I en situasjon der for eksempel tørkeressurser er flaskehalsressurser, må disse ressursene angis som flaskehalser. Tørkeoperasjoner som er tilordnet køtidsjobbtyper, reserverer tørkeressurser. 
 
-[Kostnadskategorier brukt i produksjonsruting](../cost-management/cost-categories-used-production-routings.md)
+For hver av jobbtypene må du først aktivere eller deaktivere den. Når du deaktiverer, vil ingen andre oppsett (jobbstyring, driftstid og kapasitet) bli vurdert, fordi jobbtypen ikke vil være aktiv. 
 
-[Ressursfunksjoner](resource-capabilities.md)
+Du kan finne overlapping blant jobbtypene. Overlapping gjør det mulig å utføre forskjellige jobber samtidig. Når jobber overlapper hverandre, kan ressursene brukes, men de kan ikke reserveres for de bestemte jobbene.
+Når aktivering er valgt for overlapping, vil resten av innstillingene (jobbstyring, driftstid og kapasitet) derfor ikke ha noen innvirkning i rutegruppen. 
 
-[Oversikt over elektronisk signatur](../../fin-and-ops/organization-administration/electronic-signature-overview.md)
+> [!NOTE]
+> Når du oppgraderer versjoner, kan du oppleve følgende feil: **"Det oppstod en CLR-feil under start av planleggingsmotoren"**. Hvis du får denne feilmeldingen, går du til siden **Rutegrupper**, og for alle ruter der du har aktivert **Overlapp**, fjerner du merket for alternativene **Jobbstyring**, **Driftstid** og **Kapasitet**. 
+
+## <a name="additional-resources"></a>Tilleggsressurser
+
+- [Stykklister og formler](bill-of-material-bom.md)
+
+- [Kostnadskategorier brukt i produksjonsruting](../cost-management/cost-categories-used-production-routings.md)
+
+- [Ressursfunksjoner](resource-capabilities.md)
+
+- [Oversikt over elektronisk signatur](../../fin-and-ops/organization-administration/electronic-signature-overview.md)
 
 
 
