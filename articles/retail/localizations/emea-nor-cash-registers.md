@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: epopov
 ms.search.validFrom: 2017-10-31
 ms.dyn365.ops.version: Application update 4
-ms.openlocfilehash: 496a4b32cc82fb5133d92c41d9af81c66ed182a8
-ms.sourcegitcommit: 2cf5498098e7a5ade1c16eac6df26bc98e4565cd
+ms.openlocfilehash: 04b495caf201a47692bbdc026c9264434bb4e538
+ms.sourcegitcommit: 5f76f1f458e93176a102ca7b4d40ec331748144e
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "760773"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "989566"
 ---
 # <a name="cash-register-functionality-for-norway"></a>Kassefunksjoner for Norge
 
@@ -42,7 +42,7 @@ Hvis du vil finne ut mer om POS-funksjoner som er tilgjengelige for kunder i all
 Følgende POS-lokaliseringsfunksjoner som tidligere ble implementert og gjort tilgjengelige for kunder i alle land eller områder, kan nå brukes spesielt for Norge:
 
 - **Skriv ut tekstfelt på en kvittering i en stor skriftstørrelse.** Du kan bruke **Skriftstørrelse**-parameteren i Utforming av kvitteringsformat til å angi at den store skriftstørrelsen skal brukes for et felt i kvitteringsformatet. (Den store skriftstørrelsen er omtrent dobbelt så stor som den vanlige skriftstørrelsen.) Du kan for eksempel bruke denne parameteren til å skrive ut "Kopi"-indikatoren med store bokstaver på en kopi av en kvittering.
-- **Registrer utskrift av kritteringskopier i POS-overvåkingsloggen.** Du kan bruke **Overvåk** -parameteren i POS-funksjonalitetsprofilen til å aktivere kopier av kvitteringer som skal skrives ut og andre POS-overvåkingshendelser som skal registreres. Overvåkingshendelser registreres i kanaldatabasen og i Detaljhandel Hovedkontor. Du kan vise overvåkingshendelser på siden **Overvåkingshendelser**.
+- **Registrer utskrift av kritteringskopier i POS-overvåkingsloggen.** Du kan bruke **Overvåk** -parameteren i POS-funksjonalitetsprofilen til å aktivere kopier av kvitteringer som skal skrives ut og andre POS-overvåkingshendelser som skal registreres. Overvåkingshendelser registreres i kanaldatabasen og i Retail Headquarters. Du kan vise overvåkingshendelser på siden **Overvåkingshendelser**.
 - **Hindre at en kopi av en kvittering skrives ut mer enn én gang.** Når **Overvåk**-parameteren i POS-funksjonalitetsprofilen er aktivert, styrer POS-tillatelsen **Tillat utskrift av kvitteringskopi** om kopier av kvitteringer kan skrives ut. Det er også et alternativ som lar deg hindre at en kopi av en kvittering skrives ut mer enn én gang.
 
 I tillegg ble følgende POS-funksjon implementert for Norge, men gjort tilgjengelig for kunder i alle land eller områder:
@@ -112,7 +112,7 @@ Revisjonsfilen kan eksporteres for følgende scenarier:
 
 Du kan også sende en rapport fra en juridisk enhet på vegne av en annen juridisk enhet. I så fall må du kjøre eksporten fra den operative juridiske enheten og angi den rapporterende juridiske enheten som avsender av rapporten.
 
-SAF-T-kasseformatet er implementert i Detaljhandel Hovedkontor ved hjelp av [elektronisk rapportering](../../dev-itpro/analytics/general-electronic-reporting.md). 
+SAF-T-kasseformatet er implementert i Retail Headquarters ved hjelp av [elektronisk rapportering](../../dev-itpro/analytics/general-electronic-reporting.md). 
 
 ## <a name="setting-up-retail-for-norway"></a>Konfigurere Retail for Norge
 
@@ -204,10 +204,11 @@ Hvis du vil ha mer informasjon om hvordan du arbeider med kvitteringsformater, k
 
 Konfigurasjon av SAF-T-kasse er tilgjengelig for nedlasting fra Microsoft Dynamics Lifecycle Services (LCS). Hvis du vil ha mer informasjon, kan du se [Importere elektroniske rapporteringskonfigurasjoner](../../dev-itpro/analytics/electronic-reporting-import-ger-configurations.md). Du må laste ned følgende konfigurasjoner:
 
-- Datamodell for **Data for detaljhandelskanal**
-- Format for **NO SAF-T-kasse**
+- **Data for detaljhandelskanal.versjon.1** – datamodellkonfigurasjonen,
+- **DMM Data for detaljhandelskanal.versjon.1.6** – datamodelltilordningskonfigurasjonen,
+- **NO SAF T-kasse.version.1.15** – formatkonfigurasjonen.
 
-Når du har importert konfigurasjonene på siden **Detaljhandelsparametere**, går du til kategorien **Elektroniske dokumenter** og velger formatet **NO SAF-T-kasse** i feltet **Format for eksport av SAF-T-kasse**.
+Når du har importert konfigurasjonene på siden **Detaljhandelsparametere**, går du til kategorien **Elektroniske dokumenter** og velger navnet på formatkonfigurasjonen som ble importert, i feltet **Format for eksport av SAF-T-kasse**.
 
 Du må også tilordne nødvendige hoveddata til forhåndsdefinerte SAF-T-standardkoder. Hvis du vil ha mer informasjon, kan du se dokumentasjonen for SAF-T-kasse som leveres av den norske skatteetaten. Hvis du vil opprette tilordningen, må du angi feltet **SAF-T-kassekode** på følgende sider:
 

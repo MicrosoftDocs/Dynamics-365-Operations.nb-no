@@ -15,16 +15,17 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2018-10-28
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 5326642553c7efcebc6c6af953e2dafe9e62e9ec
-ms.sourcegitcommit: f6fc90585632918d9357a384b27028f2aebe9b5a
+ms.openlocfilehash: 2753f2828b4890d9893a1538e905bd7061e1bc33
+ms.sourcegitcommit: b95bc0f81bd3bb3d9ec4c61f64f93b5c2bef9e05
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "832201"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "902896"
 ---
 # <a name="electronic-messaging"></a>Elektronisk meldingssystem
 
 [!include [banner](../includes/banner.md)]
+[!include [preview-banner](../includes/preview-banner.md)]
 
 Dette emnet gir oversikt og oppsettinformasjon for elektroniske meldinger i Microsoft Dynamics 365 for Finance and Operations.
 
@@ -32,13 +33,13 @@ Myndigheter og lovgivende myndighetene i forskjellige land og områder over hele
 
 Funksjonen for elektroniske meldinger i Finance and Operations støtter forskjellige prosesser for elektronisk samhandling mellom Finance and Operations og systemene som myndigheter og juridiske myndigheter tilbyr for rapportering, sending og mottak av offisiell informasjon.
 
-Funksjonen for elektroniske meldinger er integrert i modulen **Elektronisk rapportering**-modulen (ER). Derfor kan du definere ER-formater for elektroniske meldinger. For mer informasjon, se [Elektronisk rapportering (ER)](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/analytics/general-electronic-reporting).
+Funksjonen for elektroniske meldinger er integrert i modulen **Elektronisk rapportering**-modulen (ER). Derfor kan du definere ER-formater for elektroniske meldinger. For mer informasjon, se [Elektronisk rapportering (ER)](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/general-electronic-reporting).
 
 Elektroniske meldinger er basert på følgende enheter:
 
 - **Elektronisk melding** – en rapport eller deklarasjon som skal rapporteres og/eller overføres internt. Et eksempel er en rapport som er sendt til et skattekontor.
 - **Elektroniske meldingselementer** – poster som skal inkluderes i meldingen som rapporteres.
-- **Behandling av elektronisk melding** – en handlingskjede, enten koblet eller ikke koblet, som må kjøres for å samle de nødvendige dataene, generere rapporter, lagre data i Microsoft Azure Blob-lagring, sende rapporter utenfor systemet, få svar fra utenfor systemet og oppdatere databasen, basert på informasjonen som mottas.
+- **Behandling av elektronisk melding** – en handlingskjede som må kjøres for å samle de nødvendige dataene, generere rapporter, lagre data i Microsoft Azure Blob-lagring, sende rapporter utenfor systemet, motta svar fra utenfor systemet og, basert på informasjonen som mottas, oppdatere databasen. Handlingene i kjeden kan være tilkoblet eller frakoblet
 
 Illustrasjonen nedenfor viser flyten av data for elektroniske meldinger.
 
@@ -47,12 +48,12 @@ Illustrasjonen nedenfor viser flyten av data for elektroniske meldinger.
 Funksjonen for elektroniske meldinger støtter følgende scenarioer:
 
 - Manuelt opprette meldinger og generere rapporter som er basert på tilknyttede eksporterende ER-formater av ulike typer: Microsoft Excel, XML, JavaScript Object Notation (JSON), PDF, tekst og Microsoft Word.
-- Automatisk opprette og behandle meldinger som er basert på informasjonen som ble forespurt og hentet fra en myndighet via et tilknyttet importerende ER-format.
-- Samle inn og behandle informasjon fra en datakilde (Finance and Operations-tabell) som meldingselementer.
+- Automatisk opprette og behandle meldinger som er basert på informasjonen som ble forespurt og mottatt fra en myndighet via et tilknyttet importerende ER-format.
+- Samle inn og behandle informasjon fra en datakilde som meldingselementer. Datakilden er en Finance and Operations-tabell.
 - Lagre mer informasjon og evaluere ulike verdier ved å kalle spesielt definerte kjørbare klasser i forhold til meldinger eller meldingselementer.
 - Aggregere informasjon som samles inn, i meldingselementer, dele informasjonen inn i meldinger og generere rapporter som er i tilknyttede eksporterende ER-formater.
-- Sende rapporter som genereres, til en webtjeneste ved hjelp av sikkerhetsinformasjon som lagres i Azure Key Vault.
-- Få et svar fra en webtjeneste, tolke svaret og oppdatere data i Finance and Operations etter behov.
+- Sende rapportene som genereres, til en webtjeneste ved hjelp av sikkerhetsinformasjon som lagres i Azure Key Vault.
+- Motta et svar fra en webtjeneste, tolke svaret og oppdatere data i Finance and Operations etter behov.
 - Lagre og gå gjennom alle rapportene som genereres.
 - Lagre og gå gjennom all logginformasjon som er knyttet til handlinger som utføres for en melding eller et meldingselement.
 - Styre behandlingen gjennom forskjellige meldingsstatuser og meldingselementstatuser.
@@ -61,7 +62,7 @@ Funksjonen for elektroniske meldinger støtter følgende scenarioer:
 
 Elektroniske meldinger kan hjelpe deg med å opprettholde ulike elektroniske rapporteringsprosesser for ulike dokumenttyper. I enkelte komplekse tilfeller defineres elektroniske meldinger slik at de har en kombinasjon av mange meldingsstatuser, meldingselementstatuser, handlinger, tilleggsfelt og kjørbare klasser. Pakker med data enheter er tilgjengelige for import for disse scenarioene. Hvis du bruker disse dataenhetspakkene, bør du importere dem til en juridisk enhet ved hjelp av verktøyet for behandling av data. Hvis du vil ha mer informasjon om hvordan du bruker verktøyet for databehandling, kan du se [Databehandling](../../dev-itpro/data-entities/data-entities-data-packages.md).
 
-Hvis du ikke importerer en dataenhetspakke, kan du manuelt definere funksjonen Elektroniske meldinger. I dette tilfellet må du definere følgende elementer: 
+Hvis du ikke importerer en dataenhetspakke, kan du manuelt definere funksjonen Elektroniske meldinger. I dette tilfellet må du definere følgende elementer:
 
 - [Nummerserier](#number-sequences)
 - [Meldingselementtyper og -statuser](#message-item-types-and-statuses)
@@ -78,7 +79,7 @@ De følgende delene gir mer informasjon om hver av disse elementene.
 
 ### <a name="number-sequences"></a>Nummerserier
 
-Definere nummerserier for både meldinger og meldingselementer. Nummerserier brukes til å nummerere meldinger og meldingselementer automatisk, og tallene som er tilordnet, brukes som unike IDer for meldingene og meldingselementene i systemet. Du kan definere nummerserier for elektroniske meldinger på siden **Økonomiparametere** (**Økonomimodul** \> **Finansoppsett** \> **Parametere for økonomimodul**).
+Definere nummerserier for både meldinger og meldingselementer. Nummerseriene brukes til å nummerere meldingene og meldingselementene automatisk. Tallene som er tilordnet, skal brukes som unike identifikatorer for meldingene og meldingselementene i systemet. Du kan definere nummerserier for elektroniske meldinger på siden **Økonomiparametere** (**Økonomimodul** \> **Finansoppsett** \> **Parametere for økonomimodul**).
 
 ### <a name="message-item-types-and-statuses"></a>Meldingselementtyper og -statuser
 
@@ -86,49 +87,49 @@ Meldingselementtyper identifiserer typer poster som skal brukes i elektroniske m
 
 Meldingselementstatuser identifiserer statusene som gjelder for meldingselementer i behandlingen som du oppretter. Du kan definere meldingselementtyper på siden **Statuser for meldingselement** (**Mva** \> **Oppsett** \> **Elektroniske meldinger** \> **Statuser for meldingselement**).
 
-**Tillat sletting**-parameteren for en meldingselementstatus angir om brukeren kan slette et meldingselement med denne statusen via **Elektroniske meldinger**-skjemaet eller **Elektroniske meldingselementer**-skjemaet. 
+**Tillat sletting**-parameteren for en meldingselementstatus angir om brukere kan slette meldingselementer med denne statusen via **Elektroniske meldinger**-siden eller **Elektroniske meldingselementer**-siden.
 
 ### <a name="message-statuses"></a>Meldingsstatuser
 
 Definer meldingsstatusene som skal være tilgjengelige i meldingsbehandlingen. Du kan definere meldingsstatuser på siden **Meldingsstatuser** (**Mva** \> **Oppsett** \> **Elektroniske meldinger** \> **Meldingsstatuser**).
 
-Feltbeskrivelse:
+Tabellen nedenfor beskriver feltene på siden **Meldingsstatuser**.
 
-| Feltnavn           | Beskrivelse |
-|----------------------|-------------|
-|Meldingsstatus        | Unikt navn på en elektronisk meldingsstatus som karakteriserer statusen for en melding til enhver tid. Dette navnet vises i skjemaet for elektroniske meldinger og i en logg for elektronisk melding. |
-|Beskrivelse           | Beskrivelse som er knyttet til statusen for elektronisk melding      |
-|Svartype         | Noen handlinger i en behandling kan føre til mer enn én svartype. Som for eksempel handling av typen **webtjeneste** kan føre til enten **Ble kjørt**- eller **Teknisk feil**-svartypen, avhengig av resultatet av kjøringen. I dette tilfellet må meldingens status for begge svartyper defineres. Se [Handlingstyper for meldingsbehandling](#message-processing-action-types) for mer informasjon om handlingstyper og relatert svartype. |
-|Status for meldingselement   |Det finnes tilfeller når elektronisk meldingsstatus respektivt har påvirkning på statusen for de relaterte meldingselementer. Knytt til slik meldingselementstatus i dette feltet ved å velge den fra oppslaget. |
-|Tillat sletting          | **Tillat sletting**-parameteren for en elektronisk meldingsstatus angir om brukeren kan slette en elektronisk melding med denne statusen via **Elektroniske meldinger**-skjemaet.            |
+| Feltnavn          | Beskrivelse |
+|---------------------|-------------|
+| Meldingsstatus      | Angi et unikt navn for meldingsstatusen. Meldingsstatusene brukes til å beskrive tilstanden til en elektronisk melding til enhver tid. Navnet du angir, vises på **Elektroniske meldinger**-siden og i en logg som er relatert til elektroniske meldinger. |
+| Beskrivelse         | Angi en beskrivelse av meldingsstatusen. |
+| Svartype       | Velg svartypen for meldingsstatusen. Noen handlinger i en behandling kan produsere mer enn én svartype. For eksempel kan handlinger av typen **Webtjeneste** produsere svar av typen **Ble kjørt** eller **Teknisk feil**, avhengig av resultatet av kjøringen. I dette tilfellet må definere meldingsstatuser for begge svartyper. Se [Handlingstyper for meldingsbehandling](#message-processing-action-types) for mer informasjon om handlingstyper og relaterte svartyper. |
+| Status for meldingselement | Noen ganger må statusen for en elektronisk melding påvirke statusen til relaterte meldingselementer. Velg en meldingselementstatus i dette feltet for å knytte den til meldingsstatusen. |
+| Tillat sletting        | Merk av i denne avmerkingsboksen hvis brukerne skal kunne slette elektroniske meldinger som har denne statusen på siden **Elektroniske meldinger**. |
 
 ### <a name="additional-fields"></a>Tilleggsfelt
 
-Funksjonen Elektroniske meldinger lar deg fylle inn poster fra en transaksjonell tabell. Du kan forberede postene for rapportering og deretter rapportere dem. Noen ganger er det ikke nok informasjon i transaksjonstabellen til å rapportere en post i samsvar med rapporteringskravene. Du kan fylle ut alle opplysningene som må rapporteres for en post, ved å definere flere felt. Flere felt kan være knyttet til både meldinger og meldingselementer. Du kan definere flere felt på siden **Tilleggsfelt** (**Mva** \> **Oppsett** \> **Elektroniske meldinger** \> **Tilleggsfelt**).
+Funksjonen Elektroniske meldinger lar deg fylle inn poster fra en transaksjonell tabell. Du kan forberede postene for rapportering og deretter rapportere dem. Transaksjonstabeller har imidlertid noen ganger ikke nok informasjon til å fylle ut poster på en måte som oppfyller rapporteringskravene. Du kan fylle ut alle opplysningene som må rapporteres for en post, ved å definere flere felt. Flere felt kan være knyttet til både meldinger og meldingselementer. Du kan definere flere felt på siden **Tilleggsfelt** (**Mva** \> **Oppsett** \> **Elektroniske meldinger** \> **Tilleggsfelt**).
 
-Tabellen nedenfor beskriver de generelle feltene på siden **Tilleggsfelt**:
+Tabellen nedenfor beskriver de generelle feltene på siden **Tilleggsfelt**.
+
+| Felt       | Beskrivelse |
+|-------------|-------------|
+| Feltnavn  | Angi navnet på en tilleggsattributt for meldingselementer som er knyttet til prosessen. Dette navnet vises i brukergrensesnittet mens du arbeider med prosessen. Det kan også brukes i ER-konfigurasjoner som er knyttet til prosessen. |
+| Beskrivelse | Angi en beskrivelse av tilleggsfeltet. |
+| Brukerredigering   | Sett dette alternativet til **Ja** hvis brukerne skal kunne endre verdien i tilleggsfeltet fra brukergrensesnittet. |
+| Teller     | Sett dette alternativet til **Ja** hvis tilleggsfeltet må inneholde en nummerserie i en elektronisk melding. Verdien i tilleggsfeltet fylles ut automatisk når en handling av typen **Eksport av elektronisk rapportering** kjøres. |
+| Skjult      | Sett dette alternativet til **Ja** hvis ekstrafeltet skal skjules i brukergrensesnittet. |
+
+Hvert tilleggsfelt kan ha forskjellige verdier for behandlingen. Du kan definere disse verdiene i **Verdier**-hurtigkategorien. Tabellen nedenfor beskriver feltene.
 
 | Felt                | Beskrivelse |
 |----------------------|-------------|
-| Feltnavn           | Angi navnet på en tilleggsattributt for meldingselementer som er knyttet til prosessen. Dette navnet vises i brukergrensesnittet mens du arbeider med prosessen. Det kan også brukes i ER-konfigurasjoner som er knyttet til prosessen. |
-| beskrivelse          | Angi en beskrivelse av tilleggsattributtet for meldingselementer som er knyttet til prosessen. |
-| Brukerredigering            | I et tilfelle der en bruker må kunne endre verdien på tilleggsfeltet fra brukergrensesnittet, defineres denne avmerkingsboksen til **Ja**, ellers **Nei**. |
-| Teller              | Når tilleggsfeltet må inneholde et serienummer i en elektronisk melding, merk av for denne avmerkingsboksen. Verdier for flere felt fylles ut automatisk ved kjøring av handling av typen "Eksport av elektronisk rapportering".  |
-| Skjult               | Når tilleggsfeltet må skjules fra brukergrensesnittet, merk av for denne avmerkingsboksen.  |
-
-Hvert tilleggsfelt må ha forskjellige verdier for behandlingen. Du kan definere disse verdiene på Verdier-hurtigkategorien:
-
-| Felt                | Beskrivelse |
-|----------------------|-------------|
-| Feltverdi          | Angi feltverdien som skal brukes i forbindelse med en melding eller et meldingselement under rapportering. |
-| Feltbeskrivelse    | Angi en beskrivelse av feltverdien som skal brukes i forbindelse med en melding eller et meldingselement under rapportering. |
-| Kontotype         | Noen tilleggsfeltverdier kan være begrenset til bestemte kontotyper. Velg et av følgende verdier: **Alle**, **Kunde** eller **Leverandør**. |
-| Kontokode         | Hvis du har valgt **Kunde** eller **Leverandør** i feltet **Kontotype**, kan du ytterligere begrense bruken av feltverdier til en bestemt gruppe eller tabell. |
+| Feltverdi          | Angi feltverdien som skal brukes for en melding eller et meldingselement under rapportering. |
+| Beskrivelse          | Angi en beskrivelse av feltverdien. |
+| Kontotype         | Noen feltverdier kan være begrenset til bestemte kontotyper. Velg et av følgende verdier: **Alle**, **Kunde** eller **Leverandør**. |
+| Kontokode         | Hvis du har valgt **Kunde** eller **Leverandør** i feltet **Kontotype**, kan du ytterligere begrense bruken av feltverdien til en bestemt gruppe eller tabell. |
 | Konto/gruppenummer | Hvis du har valgt **Kunde** eller **Leverandør** i **Kontotype**-feltet, og hvis du har angitt en gruppe eller tabell i feltet **Kontokode**, kan du angi en bestemt gruppe eller kontrollør i dette feltet. |
 | Effektiv            | Angi datoen når verdien skal begynne å vurderes. |
 | Utløp           | Angi datoen når verdien skal slutte å vurderes. |
 
-Kombinasjoner av kriteriene som er definert i **Konto/gruppenummer**, **Kontokode**, **Effektiv**, **Utløp** har ikke innvirkning på valget av verdien for tilleggsfelt som standard, men kan brukes i kjørbar klasse for å implementere bestemt logikk for beregning av en ekstra feltverdi.
+Som standard påvirker ikke kombinasjoner av kriterier som er definert av feltene **Konto/gruppenummer**, **Kontokode**, **Gyldig** og **Utløp**, valget av verdier for tilleggsfelt. Disse kombinasjonene kan imidlertid brukes i en kjørbar klasse for å implementere bestemt logikk som beregner verdier for flere felt.
 
 ### <a name="executable-class-settings"></a>Innstillinger for kjørbar klasse
 
@@ -144,16 +145,16 @@ Du kan manuelt definere en exe-klasse på siden **Innstillinger for kjørbar kla
 | Utføringsnivå       | Dette feltet angis automatisk, fordi verdien må forhåndsdefineres for den valgte kjørbare klassen. Dette feltet begrenser nivået som relatert evaluering kjøres på. |
 | Klassebeskrivelse     | Dette feltet angis automatisk, fordi verdien må forhåndsdefineres for den valgte kjørbare klassen. |
 
-Noen kjørebare klasser kan ha obligatoriske parametere som må være definert før den kjørebare klassen kjøres for første gang. Klikk for å definere parametere, klikke på **Parametere**-knappen i handlingsruten, angi tilsvarende verdier og felt i dialogboksen, og klikk **OK**-knappen. Det er viktig å velge **OK**-knappen her, ellers vil parametere ikke lagres til basisklassen, og den kjørebare klassen kalles ikke riktig.
+Noen kjørebare klasser kan ha obligatoriske parametere som må være definert før den kjørebare klassen kjøres for første gang. Du definerer disse parameterne ved å velge **Parametere** i handlingsruten, angi feltene i dialogboksen som vises, og deretter velge **OK**. Det er viktig at du velger **OK**. Hvis ikke lagres ikke parameterne til databasen, og den kjørbare klassen kalles ikke på riktig måte.
 
 ### <a name="populate-records-actions"></a>Handlinger for Fyll ut poster
 
-Du bruker handlinger for utfylling av poster til å definere handlinger som legger til poster i tabellen Meldingselementer, slik at de kan legges til i en elektronisk melding. Hvis for eksempel den elektroniske meldingen må rapportere kundefakturaer, må du sette opp en **Fyll ut poster**-handling som er koblet på **Kundefakturajournal**-tabellen (i **Datakilde**-feltet). Du kan angi handlinger for utfylling av poster på siden **Handling for Fyll ut poster** (**Mva** \> **Oppsett** \> **Elektroniske meldinger** \> **Handlinger for Fyll ut poster**). Opprett en ny post for alle handlinger som skal legge til poster i tabellen, og angi følgende felt:
+Du bruker handlinger for utfylling av poster til å definere handlinger som legger til poster i tabellen Meldingselementer, slik at de kan legges til i en elektronisk melding. Hvis for eksempel den elektroniske meldingen må rapportere kundefakturaer, må du sette opp en fylle-ut-poster-handling som er koblet til **Datakilde**-feltet i kundefakturajournaltabellen. Du kan angi handlinger for utfylling av poster på siden **Handling for Fyll ut poster** (**Mva** \> **Oppsett** \> **Elektroniske meldinger** \> **Handlinger for Fyll ut poster**). Opprett en ny post for alle handlinger som skal legge til poster i tabellen, og angi følgende felt:
 
-| Felt       | beskrivelse                                                               |
-|-------------|---------------------------------------------------------------------------|
-| Navn        | Angi et navn for handlingen som fyller ut poster i prosessen.       |
-| beskrivelse | Angi en beskrivelse av handlingen som fyller ut poster i prosessen. |
+| Felt       | Beskrivelse |
+|-------------|-------------|
+| Navn        | Angi et navn for handlingen som fyller ut poster i prosessen. |
+| Beskrivelse | Angi en beskrivelse av fyll-ut-poster-handlingen. |
 
 På hurtigfanen **Oppsett av datakilder** legger du til en linje for hver datakilde som brukes for prosessen, og angir følgende felt:
 
@@ -166,38 +167,39 @@ På hurtigfanen **Oppsett av datakilder** legger du til en linje for hver dataki
 | Feltet Dokumentnummer  | Velg feltet som dokumentnummeret skal tas fra i den valgte tabellen. |
 | Feltet Dokumentdato    | Velg feltet som dokumentdatoen skal tas fra i den valgte tabellen. |
 | Feltet Dokumentkonto | Velg feltet som dokumentkontoen skal tas fra i den valgte tabellen. |
-| Brukerspørring             | Hvis det er merket av i denne avmerkingsboksen, du kan definere en spørring ved å velge **Rediger spørring** over rutenettet. Hvis ikke fylles alle postene fra datakilden ut. |
+| Brukerspørring             | Hvis det er merket av i denne avmerkingsboksen, du kan definere en spørring ved å velge **Rediger spørring** over rutenettet. Hvis ikke fylles alle postene ut fra den valgte datakilden. |
 
 ### <a name="web-applications"></a>Webprogrammer
 
-Du bruke webprogramsiden til å definere parametere for et webprogram for å støtte den åpne standarden OAuth 2.0, som lar brukere gi "sikker delegert tilgang" til programmet på deres vegne, uten å dele tilgangslegitimasjonen. Fra denne siden kan du også gå gjennom godkjenningsprosessen ved å få en autorisasjonskode og tilgangtoken. Du kan definere innstillinger for webprogram på siden **Webprogrammer** (**Mva** \> **Oppsett** \> **Elektroniske meldinger** \> **Webprogrammer**).
+Du bruker webprograminnstillingene til å definere et webprogram, slik at det støtter Open Authorization (OAuth) 2.0. OAuth er den åpne standarden som gjør at brukere kan gi "sikker delegert tilgang" til programmet på sine vegne, uten å dele tilgangslegitimasjonen. Du kan også gå gjennom godkjenningsprosessen ved å få en autorisasjonskode og tilgangtoken. Du kan definere innstillinger for webprogram på siden **Webprogrammer** (**Mva** \> **Oppsett** \> **Elektroniske meldinger** \> **Webprogrammer**).
 
 Tabellen nedenfor beskriver feltene på siden **Webprogrammer**.
 
-| Felt                         | Beskrivelse |
-|-------------------------------|-------------|
-| Programnavn              | Skriv inn et navn på webprogrammet. |
-| Beskrivelse                   | Angi en beskrivelse av webprogrammet. |
-| Primær URL-adresse                      | Angi basisinternettadressen til webprogrammet. |
-| URL-bane til autorisasjon        | Angi banen for å angi URL-adressen for godkjenning.  |
-| URL-bane til token                | Angi banen for å angi URL-adresse for token.  |
-| URL-adresse for omadressering                  | Angi URL-adressen for omadressering.  |
-| Klient-ID                     | Angi klient-ID-en for webprogrammet.  |
-| Klienthemmelighet                 | Angi klienthemmeligheten for webprogrammet.  |
-| Servertoken                  | Angi servertokenet for webprogrammet.  |
-| Tilordning av autorisasjonsformat  | Velg et elektronisk rapportering (ER)-format som skal brukes til å generere forespørselen om godkjenning.   |
-| Importer tokenmodelltilordning    | Velg en ER-importmodelltilordning som skal brukes til å lagre tilgangstoken.  |
-| Innvilget omgang      Tilgangstoken utgår om  | Dette feltet oppdateres automatisk. Verdien viser gitt omfang av forespørsler til webprogrammet.  |
-| Aksepter                        | Angi godkjenningsegenskapen for webforespørselen. For eksempel "application/vnd.hmrc.1.0+json".  |
-| Innholdstype           | Angi innholdstype. For eksempel "application/json".  |
+| Felt                        | Beskrivelse |
+|------------------------------|-------------|
+| Programnavn             | Skriv inn et navn på webprogrammet. |
+| Beskrivelse                  | Angi en beskrivelse av webprogrammet. |
+| Primær URL-adresse                     | Angi basisinternettadressen til webprogrammet. |
+| URL-bane til autorisasjon       | Angi banen som brukes til å angi URL-adressen for godkjenning. |
+| URL-bane til token               | Angi banen som brukes til å angi URL-adressen for tokenet. |
+| URL-adresse for omadressering                 | Angi URL-adressen for omadressering. |
+| Klient-ID                    | Angi klient-ID-en for webprogrammet. |
+| Klienthemmelighet                | Angi klienthemmeligheten for webprogrammet. |
+| Servertoken                 | Angi servertokenet for webprogrammet. |
+| Tilordning av autorisasjonsformat | Velg ER-formatet som brukes til å generere en forespørsel om godkjenning. |
+| Importer tokenmodelltilordning   | Velg ER-importmodelltilordningen som brukes til å lagre tilgangstokenet. |
+| Innvilget område                | Området som er gitt for forespørsler til programmet. Dette feltet oppdateres automatisk. |
+| Tilgangstoken utløper om  | Resten av tiden før tokenet utløper. | 
+| Aksepter                       | Angi egenskapen **Godta** for webforespørselen. For eksempel angi **application/vnd.hmrc.1.0+json**. |
+| Innholdstype                 | Angi innholdstypen. For eksempel angi **application/json**. |
 
-Følgende funksjoner er tilgjengelige fra **Webprogrammer**-siden for å støtte godkjenningsprosessen:
--   **Få autorisasjonskode** – for å initialisere godkjenning av webprogrammet.
--   **Få tilgangstoken** – for å initialisere henting av et tilgangstoken.
--   **Oppdater tilgangstoken** – for å oppdatere et tilgangstoken.
+I tillegg er disse knappene er tilgjengelige i handlingsruten på siden **webprogrammer** for å støtte godkjenningsprosessen:
 
-Når et tilgangstoken til et webprogram er lagret i databasen i systemet i kryptert format, kan det brukes for forespørsler til en webtjeneste. For sikkerhetsformål må tilgang for tilgangstokenet bare begrenses til disse sikkerhetsrollene, som må ha tillatelse til å håndtere disse forespørslene. Når en bruker utenfor sikkerhetsgruppen prøver å håndtere en forespørsel, vil et unntak informere brukeren om at han eller hun ikke kan samhandle via det valgte webprogrammet.
-Bruk **Sikkerhetsroller**-hurtigtabellen på siden Mva > Oppsett > Elektroniske meldinger > Webprogrammer for å konfigurere roller som må ha tilgang til tilgangstoken. Når sikkerhetsroller ikke er definert for et webprogram, vil bare en systemansvarlig kunne samhandle via dette webprogrammet.
+- **Få autorisasjonskode** – Initialisere godkjenning av webprogrammet.
+- **Få tilgangstoken** – Initialiser prossen med henting av et tilgangstoken.
+- **Oppdater tilgangstoken** – Oppdater et tilgangstoken.
+
+Når et tilgangstoken til et webprogram er lagret i systemets database i kryptert format, kan det brukes for forespørsler til en webtjeneste. For sikkerhetsformål må tilgang for tilgangstokenet begrenses til sikkerhetsrollene som må ha tillatelse til å håndtere disse forespørslene. Hvis brukere utenfor sikkerhetsgruppen forsøker å adressere en forespørsel, mottar de en feilmelding som sier at de ikke har tillatelse til å samhandle via valgt webprogram. For å konfigurere sikkerhetsroller som må ha tilgang til tokenet, kan du bruke **Sikkerhetsroller**-hurtigkategorien på **Webprogrammer**-siden. Hvis sikkerhetsroller ikke er definert for et webprogram, kan bare en systemansvarlig samhandle via dette webprogrammet.
 
 ### <a name="web-service-settings"></a>Innstillinger for webtjeneste
 
@@ -205,21 +207,21 @@ Du bruker innstillinger for webtjeneste til å definere direkte dataoverføring 
 
 Tabellen nedenfor beskriver feltene på siden **Innstillinger for webtjeneste**.
 
-| Felt                   | beskrivelse |
-|-------------------------|-------------|
-| Webtjeneste             | Skriv inn et navn på webtjenesten. |
-| beskrivelse             | Angi en beskrivelse av webtjenesten. |
-| Internett-adresse        | Angi internettadressen til webtjenesten. Hvis et webprogram er angitt for en webtjeneste og Internett-adressen må være den samme som den som er definert for valgt webprogram, klikker du **Kopier primær URL-adresse**-knappen for å kopiere den **primære URL-adressen** fra webapplikasjonen til **Internett-adressen** for webtjenesten.  |
-| Sertifikat             | Velg et Key Vault-sertifikat som tidligere er definert. |
-| webprogram         | Velg et Key Vault-sertifikat som tidligere er definert. |
-| Svartypen – XML | Sett dette alternativet til **Ja** hvis svartypen er XML. |
-| Forespørselsmetode          | Angi metoden for forespørselen. HTTP definerer et sett med forespørselsmetoder som angir handlingen som skal utføres for en gitt ressurs. Metoden kan være **HENT**, **POSTER** eller en annen HTTP-metode. |
-| Forespørselshoder         | Angi forespørselshoder. Et forespørselshode er en HTTP-overskrift som kan brukes i en HTTP-forespørsel, og som ikke er knyttet til innholdet i meldingen. |
-| Aksepter                  | Angi godkjenningsegenskapen for webforespørselen. |
-| Godta koding         | Angi Godta koding. HTTP-overskriften i Godta koding-forespørselen annonserer innholdskodingen som klienten kan forstå. Denne innholdskoding er vanligvis en komprimeringsalgoritme. |
-| Innholdstype            | Angi innholdstypen. Enhetshodet for innholdstypen indikerer medietypen for ressursen. |
-| Kode for fullført svar   | Angi HTTP-statuskoden som angir at forespørselen var vellykket. |
-| Formattilordning for forespørselshoder  | Velg ER-formatet for generering av webforespørselshoder. |
+| Felt                          | beskrivelse |
+|--------------------------------|-------------|
+| Webtjeneste                    | Skriv inn et navn på webtjenesten. |
+| beskrivelse                    | Angi en beskrivelse av webtjenesten. |
+| Internett-adresse               | Angi internettadressen til webtjenesten. Hvis et webprogram er angitt for webtjenesten, og hvis Internett-adressen til webtjenesten må være den samme som den som er definert for webprogrammet, velger du **Kopier primær URL-adresse** for å kopiere den primære URL-adressen for webapplikasjonen til dette feltet. |
+| Sertifikat                    | Velg et Key Vault-sertifikat som tidligere er definert. |
+| webprogram                | Velg et Key Vault-sertifikat som tidligere er definert. |
+| Svartypen – XML        | Sett dette alternativet til **Ja** hvis svartypen er XML. |
+| Forespørselsmetode                 | Angi metoden for forespørselen. HTTP definerer et sett med forespørselsmetoder som angir handlingen som skal utføres for en gitt ressurs. Forespørselsmetoden kan være **HENT**, **POSTER** eller en annen HTTP-metode. |
+| Forespørselshoder                | Angi forespørselshoder. Et forespørselshode er en HTTP-overskrift som kan brukes i en HTTP-forespørsel, og som ikke er knyttet til innholdet i meldingen. |
+| Aksepter                         | Angi egenskapen **Godta** for webforespørselen. |
+| Godta koding                | Angi verdien **Godta koding**. HTTP-overskriften i Godta koding-forespørselen annonserer innholdskodingen som klienten kan forstå. Denne innholdskoding er vanligvis en komprimeringsalgoritme. |
+| Innholdstype                   | Angi innholdstypen. HTTP-enhetshodet for innholdstypen indikerer medietypen for ressursen. |
+| Kode for fullført svar       | Angi HTTP-statuskoden som angir at forespørselen var vellykket. |
+| Formattilordning for forespørselshoder | Velg ER-formatet som brukes til å generere webforespørselshoder. |
 
 ### <a name="message-processing-actions"></a>Handlinger for meldingsbehandling
 
@@ -229,76 +231,76 @@ Tabellen nedenfor beskriver feltene på siden **Handlinger for meldingsbehandlin
 
 #### <a name="general-fasttab"></a>Hurtigfanen Generelt
 
-| Felt                   | beskrivelse |
-|-------------------------|-------------|
-| Handlingstype             | Velg handlingstypen. Hvis du vil ha informasjon om de tilgjengelige alternativene, se delen [Handlingstyper for meldingsbehandling](#message-processing-action-types). |
-| Formattilordning          | Velg ER-formatet som skal kalles for handlingen. Dette feltet er bare tilgjengelig for handlingene av typen **Eksport av elektronisk rapportering**, **Import av elektronisk rapportering** og **Melding om eksport av elektronisk rapportering**. |
-| Formattilordning for URL-bane | Velg ER-formatet som skal kalles for handlingen. Dette feltet er bare tilgjengelig for handlinger av typen **Webtjeneste** og brukes til å skrive banen til URL-adressen som skal legges til den grunnleggende Internett-adressen som er angitt for den valgte webserveren. |
-| Type meldingselement       | Velg hvilken type poster som skal evalueres for handlingen. Dette feltet er tilgjengelig for handlinger av typen **Utføringsnivå for meldingselement**, **Eksport av elektronisk rapportering**, **Import av elektronisk rapportering** og **Webtjeneste** og noen andre typer. Hvis du lar dette feltet stå tomt, vurderes alle meldingselementtyper som er definert for meldingsbehandlingen. |
-| Kjørbar klasse        | Velg innstillinger for kjørbare klasser som ble opprettet tidligere. Dette feltet er bare tilgjengelig for handlingene av typen **Utføringsnivå for meldingselement** og **Utføringsnivå for meldingselement**. |
-| Handling for Fyll ut poster | Velg en fyll ut poster-handling som ble konfigurert tidligere. Dette feltet er bare tilgjengelig for handlingene av typen **Fyll ut poster**. |
-| Webtjeneste  | Velg en webtjeneste som ble konfigurert tidligere. Dette feltet er bare tilgjengelig for handlingene av typen  **Webtjeneste**.  |
-| Filnavn  | Angi navnet på filen som fører til handlingen som svar fra webserveren eller generering av en rapport. Dette feltet er bare tilgjengelig for handlinger av typen  **Webtjeneste** og **Melding om eksport av elektronisk rapportering**.   |
-| Vis dialogboks  | Merk av i denne avmerkingsboksen hvis en dialogboks må vises til en bruker før rapportgenerering. Dette feltet er bare tilgjengelig for handlinger av typen  **Melding om eksport av elektronisk rapportering**.   |
+| Felt                       | beskrivelse |
+|-----------------------------|-------------|
+| Handlingstype                 | Velg handlingstypen. Hvis du vil ha informasjon om de tilgjengelige alternativene, se delen [Handlingstyper for meldingsbehandling](#message-processing-action-types). |
+| Formattilordning              | Velg ER-formatet som skal kalles for handlingen. Dette feltet er bare tilgjengelig for handlingene av typen **Eksport av elektronisk rapportering**, **Import av elektronisk rapportering** og **Melding om eksport av elektronisk rapportering**. |
+| Formattilordning for URL-bane | Velg ER-formatet som skal kalles for handlingen. Dette feltet er bare tilgjengelig for handlingene av typen **Webtjeneste**. Den brukes til å skrive banen til URL-adressen som skal legges til den grunnleggende Internett-adressen som er angitt for den valgte webserveren. |
+| Type meldingselement           | Velg hvilken type poster som skal evalueres for handlingen. Dette feltet er tilgjengelig for handlinger av typen **Utføringsnivå for meldingselement**, **Eksport av elektronisk rapportering**, **Import av elektronisk rapportering** og **Webtjeneste** og noen andre typer. Hvis du lar dette feltet stå tomt, vurderes alle meldingselementtyper som er definert for meldingsbehandlingen. |
+| Kjørbar klasse            | Velg innstillinger for kjørbare klasser som ble opprettet tidligere. Dette feltet er bare tilgjengelig for handlingene av typen **Utføringsnivå for meldingselement** og **Utføringsnivå for meldingselement**. |
+| Handling for Fyll ut poster     | Velg en fyll ut poster-handling som ble konfigurert tidligere. Dette feltet er bare tilgjengelig for handlingene av typen **Fyll ut poster**. |
+| Webtjeneste                 | Velg en webtjeneste som ble konfigurert tidligere. Dette feltet er bare tilgjengelig for handlingene av typen **Webtjeneste**. |
+| Filnavn                   | Angi navnet på filen som blir resultatet av handlingen. Denne filen kan være svar fra webserveren eller rapporten som genereres. Dette feltet er bare tilgjengelig for handlinger av typene **Webtjeneste** og **Melding om eksport av elektronisk rapportering**. |
+| Vis dialogboks                 | Sett dette alternativet til **Ja** hvis en dialogboks må vises til brukere før rapportgenerering. Dette feltet er bare tilgjengelig for handlinger av typen **Melding om eksport av elektronisk rapportering**. |
 
 ##### <a name="message-processing-action-types"></a>Handlingstyper for meldingsbehandling
 
 Følgende alternativer er tilgjengelige i **Handlingstyper**-feltet:
 
-- **Opprett melding** – Bruk denne typen hvis du vil la brukere manuelt opprette meldinger på siden **Elektronisk melding**. En innledende status kan ikke defineres for en handling av denne typen.
-- **Fyll ut poster** – En **Fyll ut poster**-handlingen må være definert tidligere. Knytt den til en handling av typen **Fyll ut poster** for å aktivere den slik at den inkluderes i behandlingen. Det antas at denne handlingstypen brukes for den første handlingen i meldingsbehandling (når ingen elektronisk melding opprettes på forhånd) eller som en handling som legger til meldingselementer i en tidligere opprettet melding (av en handling av **Opprett melding**-typen). Derfor kan resultatstatus for bare meldingselementer defineres for en handling av denne typen. En innledende status kan bare defineres melding.
-- **Utføringsnivå for melding** – Bruk denne typen til å definere en exe-klasse som skal evalueres på meldingsnivået.
-- **Utføringsnivå for meldingselement** – Bruk denne typen til å definere en exe-klasse som skal evalueres på meldingselementnivået.
-- **Eksport av elektronisk rapportering** – Bruk denne typen for handlinger som skal generere en rapport som er basert på en eksporterende ER-konfigurasjon på meldingselementnivå.
-- **Melding om eksport av elektronisk rapportering** – Bruk denne typen for handlinger som skal generere en rapport som er basert på en eksporterende ER-konfigurasjon på meldingsnivå (for eksempel når en melding ikke inneholder noen meldingselementer).
-- **Import av elektronisk rapportering** – Bruk denne typen for handlinger som skal generere en rapport som er basert på en importerende ER-konfigurasjon.
-- **Behandling av bruker på meldingsnivå** – Bruk denne typen for handlinger som forutsetter noen manuelle handlinger av brukeren. Brukeren kan for eksempel oppdatere statusen for meldinger.
-- **Brukerbehandling** – Bruk denne typen for handlinger som forutsetter noen manuelle handlinger av brukeren. Brukeren kan for eksempel oppdatere statusen for meldingselementer.
-- **Webtjeneste** – Bruk denne typen for handlinger som skal overføre en genererte rapporten til en webtjeneste. Denne handlingstypen brukes ikke for kommunikasjonsrapportering for italienske kjøps- og salgsfakturaer. For handlinger av typen **Webtjeneste** kan du angi hurtigkategori en **Bekreftelsestekst** på **Diverse detaljer** i **Handlinger for meldingsbehandling**. Denne bekreftelsesteksten vises for brukeren før forespørselen til den valgte webtjenesten skal håndteres.
-- **Forespørsel om verifisering** – Bruk denne typen til å forespørre bekreftelse fra en server.
+- **Opprett melding** – Bruk denne handlingstypen hvis du vil la brukere manuelt opprette meldinger på siden **Elektronisk melding**. En innledende status kan ikke defineres for en handling av denne typen.
+- **Fyll ut poster** – En handling av typen **Fyll ut poster** må være definert tidligere. Knytt denne handlingen til en fyll-ut-poster-handling for å aktivere handlingen, slik at den inkluderes i behandlingen. Det antas at denne handlingstypen brukes for den første handlingen i meldingsbehandling (når ingen elektronisk melding er opprettet på forhånd) eller for en handling som legger til meldingselementer i en melding som tidligere ble opprettet av en handling av typen **Opprett melding**. Derfor kan en resultatstatus bare settes opp for meldingselementer for handlinger av denne typen. En innledende status kan bare defineres for meldinger.
+- **Utføringsnivå for melding** – Bruk denne handlingstypen til å definere en exe-klasse som skal evalueres på meldingsnivået.
+- **Utføringsnivå for meldingselement** – Bruk denne handlingstypen til å definere en exe-klasse som skal evalueres på meldingselementnivået.
+- **Eksport av elektronisk rapportering** – Bruk denne handlingstypen for handlinger som skal generere en rapport som er basert på en eksporterende ER-konfigurasjon på meldingselementnivå.
+- **Melding om eksport av elektronisk rapportering** – Bruk denne handlingstypen for handlinger som skal generere en rapport som er basert på en eksporterende ER-konfigurasjon på meldingsnivå (for eksempel når en melding ikke inneholder noen meldingselementer).
+- **Import av elektronisk rapportering** – Bruk denne handlingstypen for handlinger som skal generere en rapport som er basert på en importerende ER-konfigurasjon.
+- **Behandling av bruker på meldingsnivå** – Bruk denne handslingstypen for handlinger som forutsetter manuell handling av brukeren på meldingsnivå. Brukeren kan for eksempel oppdatere statusen for meldinger.
+- **Brukerbehandling** – Bruk denne handslingstypen for handlinger som forutsetter manuell handling av brukeren på meldingselementnivå. Brukeren kan for eksempel oppdatere statusen for meldingselementer.
+- **Webtjeneste** – Bruk denne handlingstypen for handlinger som skal overføre en generert rapport til en webtjeneste. Denne handlingstypen brukes ikke for kommunikasjonsrapportering for italienske kjøps- og salgsfakturaer. For handlinger av typen **Webtjeneste** inkludererer siden **Handlinger for meldingsbehandling** hurtigkategorien **Diverse detaljer**, der du kan angi en bekreftelsestekst. Denne bekreftelsesteksten vises for brukerne før forespørsler til den valgte webtjenesten håndteres.
+- **Forespørsel om verifisering** – Bruk denne handlingstypen til å forespørre bekreftelse fra en server.
 
 #### <a name="initial-statuses-fasttab"></a>Hurtigfane for opprinnelige statuser
 
 > [!NOTE]
-> Hurtigfanen **Opprinnelige statuser** er ikke tilgjengelig for handlinger som har den innledende typen **Opprett melding**.
+> Hurtigfanen **Opprinnelige statuser** er ikke tilgjengelig for handlinger som har den innledende handlingstypen **Opprett melding**.
 
-| Felt               | Beskrivelse                                                                                         |
-|---------------------|-----------------------------------------------------------------------------------------------------|
+| Felt               | Beskrivelse |
+|---------------------|-------------|
 | Status for meldingselement | Velg meldingselementstatusen som den valgte meldingsbehandlingshandlingen skal evalueres for. |
-| beskrivelse         | En beskrivelse av den valgte meldingselementstatusen.                                                  |
+| beskrivelse         | En beskrivelse av den valgte meldingselementstatusen. |
 
 #### <a name="result-statuses-fasttab"></a>Hurtigfanen Resultatstatuser
 
 | Felt               | beskrivelse |
 |---------------------|-------------|
-| Meldingsstatus      | Velg meldingsstatusene som den valgte meldingsbehandlingshandlingen skal evalueres for. Dette feltet er bare tilgjengelig for meldingsbehandlingshandlinger som evalueres på meldingsnivå. Det er for eksempel tilgjengelig for typene **Eksport av elektronisk rapportering** og **Import av elektronisk rapportering**. Det er ikke tilgjengelig for handlingene av typen **Brukerbehandling** og **Utføringsnivå for meldingselement**. |
+| Meldingsstatus      | Velg meldingsstatusene som den valgte meldingsbehandlingshandlingen skal evalueres for. Dette feltet er bare tilgjengelig for meldingsbehandlingshandlinger som evalueres på meldingsnivå. For eksempel er den tilgjengelig for handlinger av typen **Eksport av elektronisk rapportering** og **Import av elektronisk rapportering**, men den er ikke tilgjengelig for handlinger av typen **Brukerbehandling** og **Utføringsnivå for meldingselement**. |
 | beskrivelse         | En beskrivelse av den valgte meldingsstatusen. |
 | Svartype       | Svartypen for den valgte meldingsstatusen. |
 | Status for meldingselement | Velg de resulterende statusene som skal være tilgjengelige etter den valgte meldingsbehandlingshandlingen er evaluert. Dette feltet er bare tilgjengelig for meldingsbehandlingshandlinger som evalueres på meldingselementnivå. For eksempel er det tilgjengelig for handlinger av typene **Brukerbehandling** og **Utføringsnivå for meldingselement**. For meldingsbehandlingshandlinger som evalueres på meldingsnivået, viser dette feltet meldingselementstatusen som ble angitt for den valgte meldingsstatus. |
 
-Følgende tabell viser hvilke resultatstatuser som må være definert i forhold til typer handlinger:
+Følgende tabell viser resultatstatusene som må defineres for ulike handlingstyper og svartyper.
 
-| Handlingstype for elektronisk melding / Svartype  | Ble kjørt  | Forretningsfeil  | Teknisk feil  | Brukerdefinert  | Annuller  |
-|-------------------------------------------------|--------------|---------|-------|-----|-----------------|
-| Opprett melding                                  | X            |         |       |     |                 |
-| Eksport av elektronisk rapportering                     | X            |         |       |     |                 |
-| Import av elektronisk rapportering                     |              |         |       |     |                 |
-| Webtjeneste                                     | X            |         | X     |     |                 |
-| Brukerbehandling                                 |              |         |       |     |                 |
-| Utføringsnivå for melding                         |              |         |       |     |                 |
-| Fyll ut poster                                |              |         |       |     |                 |
-| Utføringsnivå for meldingselement                    |              |         |       |     |                 |
-| Forespørsel om verifisering                            | X            |  X      | X     |     |                 |
-| Melding om eksport av elektronisk rapportering             | X            |         |       |     |                 |
-| Behandling av bruker på meldingsnivå                   |              |         |       |     |                 |
+| Handlingstype for elektronisk melding / Svartype | Ble kjørt | Forretningsfeil | Teknisk feil | Brukerdefinert | Annuller |
+|----------------------------------------------|-----------------------|----------------|-----------------|--------------|--------|
+| Opprett melding                               | X                     |                |                 |              |        |
+| Eksport av elektronisk rapportering                  | X                     |                |                 |              |        |
+| Import av elektronisk rapportering                  |                       |                |                 |              |        |
+| Webtjeneste                                  | X                     |                | X               |              |        |
+| Brukerbehandling                              |                       |                |                 |              |        |
+| Utføringsnivå for melding                      |                       |                |                 |              |        |
+| Fyll ut poster                             |                       |                |                 |              |        |
+| Utføringsnivå for meldingselement                 |                       |                |                 |              |        |
+| Forespørsel om verifisering                         | X                     | X              | X               |              |        |
+| Melding om eksport av elektronisk rapportering          | X                     |                |                 |              |        |
+| Behandling av bruker på meldingsnivå                |                       |                |                 |              |        |
 
 ### <a name="electronic-message-processing"></a>Behandling av elektronisk melding
 
 Elektronisk meldingsbehandling er et grunnleggende konsept i funksjonen Elektroniske meldinger. Det samler handlinger som skal evalueres for den elektroniske meldingen. Handlingene kan kobles til via en innledende status og en resultatstatus. Eventuelt kan handlinger av typen **Brukerbehandling** startes uavhengig av hverandre. På siden **Behandling av elektronisk melding** (**Mva** \> **Oppsett** \> **Elektroniske meldinger** \> **Elektronisk meldingsbehandling**) kan du også velge flere felt som skal støttes for behandlingen, enten på meldingsnivå eller meldingselementnivå.
 
-Hurtigfanen **Handling** lar deg legge til forhåndsdefinerte handlinger til behandlingen. Du kan angi om en handling må kjøres separat, eller om den kan startes av behandlingen. For å definere om handlingen bare kan initialiseres av en bruker, merk av for **Kjør separat** for handlingen i behandlingen. Opphev merkingen av parameteren  **Kjør separat** hvis du vil at handlingen skal startes av behandling av meldinger eller meldingselementer i statusen som er definert som opprinnelig status for denne handlingen. Handling av typen **Brukerhandling** må bare kjøres separat. 
+Hurtigfanen **Handling** lar deg legge til forhåndsdefinerte handlinger til behandlingen. Du kan angi om en handling må kjøres separat, eller om den kan startes av behandlingen. Hvis du vil angi at en handling i behandlingen kan initialiseres bare av en bruker, kan du angi feltet **Kjør separat** til **Ja** for den aktuelle handlingen. Hvis en handling skal startes av behandling av meldinger eller meldingselementer som har statusen som er definert som opprinnelig status for handlingen, settes feltet **Kjør separat** til **Nei**. Handlinger av typen **Brukerhandling** må alltid kjøres separat.
 
-Noen ganger kan det være nødvendig å slå sammen flere handlinger til én sekvens, selv når den første er definert til å kjøres separat. For eksempel når det kreves at rapportgenerering må initialiseres av en bruker, men når den er generert, må rapporten umiddelbart sendes til en webtjeneste, og svaret fra webtjenesten må vises i systemet. Du kan bruke **Uatskillelig rekkefølge** til et slik formål. For å gjøre dette klikker du på **Uatskillelig rekkefølge**-knappen i handlingsruten i **Handling** på siden **Elektronisk meldingsbehandling**, oppretter en sekvens og velger den i kolonnen **Uatskillelig rekkefølge** for handlingene som alltid må kjøres sammen. Den første handlingen i dette tilfellet kan angis til **Kjør separat**, men ikke de andre.
+Noen ganger må flere handlinger samles i en sekvens, selv om den første handlingen defineres slik at den kjøres separat. For eksempel må en bruker starte rapportgenerering, men umiddelbart etter at rapporten er generert, må den sendes til en webtjeneste, og svaret fra webtjenesten må vises i systemet. I denne situasjonen kan du opprette en uatskillelig sekvens for handlinger som alltid må kjøres sammen. I **Handlingen**-hurtigkategorien velger du **Uatskillelig rekkefølge** over rutenettet og oppretter en sekvens. For alle handlinger som må kjøres sammen, velger du deretter rekkefølgen i feltet **Uatskillelig rekkefølge**. I dette tilfellet kan **Kjør separat**-feltet settes til **Ja** for den første handlingen i sekvensen, men **Nei** for alle andre handlinger.
 
 Hurtigfanen **Tilleggsfelt for meldingselement** lar deg legge til forhåndsdefinerte tilleggsfelt som er knyttet til meldingselementer. Du må legge til flere felt for hver meldingstype som feltene er knyttet til.
 
@@ -308,7 +310,7 @@ Hurtigfanen **Sikkerhetsroller** lar deg definere sikkerhetsroller som er forhå
 
 Med **Parti**-hurtigfanen kan du definere behandlingen til å arbeide i en satsvis prosess.
 
-## <a name="work-with-electronic-messages-functionality"></a>Arbeide med funksjonen Elektroniske meldinger
+## <a name="work-with-the-electronic-messages-functionality"></a>Arbeide med funksjonen Elektroniske meldinger
 
 Hvis du arbeider på meldingsnivå, er siden **Elektroniske meldinger** (**Mva** \> **Forespørsler og rapporter** \> **Elektroniske meldinger** \> **Elektronisk meldinger**) mer nyttig. Hvis du arbeider på datainnsamlingsnivå (meldingselement), er siden **Elektroniske meldingselementer** (**Mva** \> **Forespørsler og rapporter** \> **Elektroniske meldinger** \> **Elektronisk meldinger**) mer nyttig.
 
@@ -316,36 +318,36 @@ Hvis du arbeider på meldingsnivå, er siden **Elektroniske meldinger** (**Mva**
 
 Siden **Elektroniske meldinger** presenterer behandlingen som er tilgjengelig for deg, basert på din rolle. Sikkerhetsroller er knyttet til behandling i oppsettet av denne behandlingen. For hver behandling som er tilgjengelig for deg, viser siden elektroniske meldinger og informasjon som er knyttet til disse.
 
-**Meldinger**-hurtigfanen viser elektroniske meldinger for den valgte behandlingen. Avhengig av statusen for den valgte meldingen og forhåndsdefinert behandling, kan du kjøre noen handlinger ved å velge knappene over rutenettet:
+**Meldinger**-hurtigfanen viser elektroniske meldinger for den valgte behandlingen. Avhengig av statusen for den valgte meldingen og forhåndsdefinert behandling, kan du kjøre noen handlinger ved å bruke knappene over rutenettet:
 
 - **Ny** – Denne knappen er knyttet til handlinger for **Opprett melding**-typen.
 - **Slett** – Denne knappen er tilgjengelig hvis det er merket av for **Tillat sletting** for den gjeldende statusen for den valgte meldingen.
-- **Samle inn data** – Denne knappen er knyttet til handlingen av typen **Fyll ut poster**.
+- **Samle inn data** – Denne knappen er knyttet til handlinger av typen **Fyll ut poster**.
 - **Generer rapport** – Denne knappen er knyttet til handlinger av typen **Melding om eksport av elektronisk rapportering**.
 - **Send rapport** – Denne knappen er knyttet til handlinger av **Webtjeneste**-typen.
 - **Importer svar** – Denne knappen er knyttet til handlinger av typen **Import av elektronisk rapportering**.
 - **Oppdater status** – Denne knappen er knyttet til handlinger av typen **Behandling av bruker på meldingsnivå**.
 - **Meldingselementer** – Åpne siden **Elektroniske meldingselementer**.
 
-Hurtigfanen **Handlingslogg** viser informasjon om alle handlingene som er kjørt for den valgte meldingen. Hvis en handling har resultert i en feil, vil informasjon om feilen knyttes til den relaterte handlingslogglinjen. Velg linjen og klikk på **klipp**-knappen i øvre høyre hjørne på siden for å gå gjennom informasjonen om feilen.
+Hurtigfanen **Handlingslogg** viser informasjon om alle handlingene som er kjørt for den valgte meldingen. Hvis en handling har resultert i en feil, vil informasjon om feilen knyttes til den relaterte linjen i rutenettet. Hvis du vil se informasjon om feilen, velger du linjen i rutenettet, og velg deretter **Vedlegg**-knappen (bindersikonet) øverst i høyre hjørne på siden.
 
 Hurtigfanen **Tilleggsfelt for melding** viser alle tilleggsfeltene som er definert for meldinger i behandlingsoppsettet. Den viser også verdiene i disse tilleggsfeltene.
 
-Hurtigfanen **Meldingselementer** viser alle meldingselementer som er relatert til den valgte meldingen. For hvert av meldingselementene kan følgende funksjon brukes avhengig av statusen til dette meldingselementet:
+Hurtigfanen **Meldingselementer** viser alle meldingselementer som er relatert til den valgte meldingen. Avhengig av statusen for det valgte meldingselementet kan du kjøre noen handlinger ved å bruke knappene over rutenettet:
 
 - **Slett** – Denne knappen er tilgjengelig hvis det er merket av for **Tillat sletting** for den gjeldende statusen for det valgte meldingselementet.
 - **Oppdater status** – Denne knappen er knyttet til handlinger av typen **Brukerbehandling**.
-- **Originaldokument** – Denne knappen lar brukeren åpne en side med det opprinnelige dokumentet for den valgte meldingen.
+- **Opprinnelig dokument** – Åpne en side som viser det opprinnelige dokumentet for det valgte meldingselementet.
 
-Du kan se gjennom alle vedlegg for den valgte meldingen. Disse vedleggene er rapporter som allerede er generert og mottatt. Velg meldingen som vedlegg skal gjennomgås for, og velg deretter **Vedlegg**-knappen i handlingsruten.
+Alle rapporter som allerede er generert og mottatt for en melding, er knyttet til denne meldingen. Hvis du vil se vedleggene som er relatert til en melding, velger du meldingen, og deretter velger du **Vedlegg**-knappen (bindersikonet) øverst i høyre hjørne på siden.
 
 ![Vedlegg-knappen](media/attachment-icon.png)
 
-Siden **Vedlegg** viser alle vedleggene som er knyttet til meldingen. Hvis du vil vise en fil, velger du den i listen til venstre, og deretter velger du **Åpne** i handlingsruten.
+Siden **Vedlegg** viser alle vedleggene som er knyttet til den valgte meldingen. Hvis du vil vise en fil, velger du den i listen til venstre, og deretter velger du **Åpne** i handlingsruten.
 
 ![Åpne-knappen](media/open-button.png)
 
-Hvis du vil gå gjennom et vedlegg som er knyttet til en bestemt handling som tidligere ble kjørt for en melding, velger du meldingen på siden **Elektroniske meldinger**, og deretter velger du handlingen på hurtigfanen **Handlingslogg**. Deretter velger du **Vedlegg**-knappen i handlingsruten.
+Du kan også vise vedlegg som er knyttet til en bestemt aktivitet som tidligere ble kjørt for en melding. På siden **Elektroniske meldinger** velger du meldingen på hurtigfanen **Meldinger**, velger handlingen på hurtigfanen **Handlingslogg** og deretter **Vedlegg**-knappen i øvre høyre hjørne på siden.
 
 Du kan også kjøre enten hele behandlingen eller bare en bestemt handling ved å velge **Kjør behandling** i handlingsruten.
 
@@ -400,7 +402,7 @@ Tabellen nedenfor beskriver feltene i fanen **Meldingselementer**.
 </tr>
 <tr>
 <td>Kontonummer</td>
-<td>Kontonummeret til en kunde eller leverandør (eller en annen feltverdi, avhengig av feltet som er definert i handlingen <strong>Fyll ut poster</strong>). Dette feltet kan fylles ut automatisk bare når en faktura blir lagt til meldingselementtabellen.</td>
+<td>Kontonummeret til en kunde eller leverandør (eller en annen feltverdi, avhengig av feltet som er definert i handlingen for utfyllingen av poster). Dette feltet kan fylles ut automatisk bare når en faktura blir lagt til meldingselementtabellen.</td>
 </tr>
 <tr>
 <td>Melding</td>
@@ -429,13 +431,13 @@ Velg **Generer rapport** i handlingsruten for å generere en rapport. Denne knap
 
 #### <a name="update-status"></a>Oppdater status
 
-Velg **Oppdater status** i handlingsruten for å oppdatere statusen til én eller flere meldingselementer. I **Oppdater status**-dialogboksen bruker du **Poster som skal inkluderes**-hurtigkategorien til å velge meldingselementer for oppdatering. Pass på at du definerer valgkriteriene riktig, fordi meldingselementstatuser oppdateres i henhold til disse kriteriene, den innledende statusen for den valgte handlingen, og **Ny status**-verdien du angir. Når en statusoppdatering er fullført, vil det være vanskelig å avgjøre hvilke elementer som nettopp ble oppdatert. Derfor blir det vanskelig å tilbakestille statusoppdateringer.
+Velg **Oppdater status** i handlingsruten for å oppdatere statusen til én eller flere meldingselementer. I **Oppdater status**-dialogboksen bruker du **Poster som skal inkluderes**-hurtigkategorien til å velge meldingselementer for oppdatering. Pass på at du definerer valgkriteriene riktig, fordi meldingselementstatuser oppdateres i henhold til disse kriteriene, den innledende statusen for den valgte handlingen, og **Ny status**-verdien du angir. Når en statusoppdatering er fullført, vil det være vanskelig å avgjøre hvilke elementer som ble oppdatert. Derfor blir det vanskelig å tilbakestille statusoppdateringen.
 
 #### <a name="electronic-messages"></a>Elektroniske meldinger
 
-Velg **Elektronisk melding** i handlingsruten for å se gjennom en elektronisk melding som er knyttet til det valgte meldingselementet.
+Velg **Elektroniske meldinger** i handlingsruten for å se gjennom en elektronisk melding som er knyttet til det valgte meldingselementet.
 
-Du kan også se gjennom alle filene som samsvarer med meldingselementet. Velg **Melding**-feltet i meldingselementet, eller velg **Elektronisk melding** i handlingsruten. På siden **Elektronisk melding** velger du meldingen du vil vise en rapport for, og deretter velger du **Vedlegg**-knappen i handlingsruten.
+Du kan også se gjennom alle filene som er relatert til et bestemt meldingselement. Velg **Melding**-feltet for meldingselementet, eller velg **Elektroniske meldinger** i handlingsruten. Deretter, på siden **Elektronisk melding**, velger du meldingen du vil se gjennom filer for, og deretter velger du **Vedlegg**-knappen (bindersikonet) øverst i høyre hjørne på siden.
 
 ![Vedlegg-knappen](media/attachment-icon.png)
 
@@ -447,21 +449,17 @@ Siden **Vedlegg** viser alle vedleggene som er knyttet til meldingen. Hvis du vi
 
 Velg **Opprinnelig dokument** i handlingsruten for å åpne det opprinnelige dokumentet for det valgte meldingselementet.
 
-## <a name="example"></a>Eksempel
+## <a name="example-set-up-and-run-processing-to-call-a-simple-er-exporting-format-to-generate-an-excel-report"></a>Eksempel: Definere og kjøre behandling for å kalle et enkelt ER-eksportformat for å generere en Excel-rapport
 
-Når du har opprettet ER-formatet, tilordnet det til datakilder og fullført det, kan du kjøre det ved hjelp av arbeidsområdet **Elektronisk rapportering**. En rapport genereres som du kan lagre lokalt.
+Når du har opprettet ER-formatet, tilordnet det til datakilder og fullført det, kan du kjøre det ved hjelp av arbeidsområdet **Elektronisk rapportering**. En rapport genereres, og du kan lagre den lokalt.
 
 For å kontrollere følgende aspekter av rapporteringsprosessen, må du definere behandling av elektroniske meldinger:
 
 - Logginformasjon om hvem som genererte rapporten.
-- Logg da rapporten ble generert.
+- Logginformasjon om når rapporten ble generert.
 - Lagre rapportene som er generert for tidligere perioder.
 
-Denne delen inneholder et eksempel som viser hvordan du kan sette opp funksjonen Elektroniske meldinger for å bygge en rapporteringsprosess.
-
-### <a name="set-up-and-run-processing-to-call-a-simple-er-exporting-format-to-generate-an-excel-report"></a>Definere og kjøre behandling for å kalle et enkelt ER-eksportformat for å generere en Excel-rapport
-
-Denne delen inneholder et eksempel som viser hvordan du kan definere elektroniske meldinger for å generere en rapport som er basert på et ER-eksportformat for Excel. Når du skal følge dette eksemplet, må ER Excel-eksportformatet allerede være opprettet, tilordnet datakilder og fullført. En nummerserie må allerede være definert for elektroniske meldinger.
+Denne delen inneholder et eksempel som viser hvordan du kan definere elektroniske meldinger for å generere en rapport som er basert på et ER-eksportformat for Excel. Hvis du vil følge dette eksemplet, må ER Excel-eksportformatet allerede være opprettet, tilordnet datakilder og fullført. I tillegg må en nummerserie allerede være definert for elektroniske meldinger.
 
 Når du bygger behandling, er det nyttig hvis du først definerer behandlingshandlingene og -statuser som skal opprettes. Illustrasjonen nedenfor viser hvordan behandlingen ser ut i dette eksemplet.
 
@@ -518,11 +516,11 @@ I dette eksemplet oppretter du følgende handlinger:
 
     - På hurtigfanen **Generelt** i feltet **Handlingstype** velger du **Behandling av bruker på meldingsnivå**.
     - I hurtigfanen **Opprinnelige statuser**, i feltet **Meldingsstatus**, velger du **Generert**.
-    - I hurtigfanen **Resultatstatuser**, i feltet **Meldingsstatus**, velger du **Klargjort** eller (og) **Ny**. I feltet **Svartype** angir du **Ble kjørt**.
+    - I **Resultatstatuser**-hurtigkategorien legger du til en egen linje for hver av de to meldingsstatusene (**Klargjort** og **Ny**). For begge linjene angir du feltet **Svartype** til **Ble kjørt**.
 
 #### <a name="electronic-message-processing"></a>Behandling av elektronisk melding
 
-I dette eksemplet må alle handlingene settes opp slik at de kjører separat. Det antas at alle handlinger vil bli initialisert av brukeren.
+I dette eksemplet må alle handlingene settes opp slik at de kjører separat. Det antas at brukeren vil initialisere alle handlinger.
 
 1. Gå til **Mva \> Oppsett \> Elektroniske meldinger \> Behandling av elektronisk melding**.
 2. Legg til en post for din behandling, og legg til alle tidligere definerte handlinger og et ekstra felt.
@@ -534,8 +532,8 @@ I dette eksemplet må alle handlingene settes opp slik at de kjører separat. De
 
 Rutenettet i hurtigfanen **Handlingslogg** fylles automatisk ut med en logg over alle handlinger som utføres på meldingen.
 
-Du kan nå slette eller oppdatere meldingsstatusen. Hvis du vil oppdatere meldingsstatusen, velger du **Oppdater status** og deretter, i feltet **Ny status**, velger du **Klargjort**. Velg deretter **OK**.
+Du kan nå slette eller oppdatere meldingsstatusen. Hvis du vil oppdatere meldingsstatus, velger du **Oppdater status**. I feltet **Ny status** velger du **Klargjort**, og deretter velger du **OK**.
 
 ![Oppdatere meldingsstatusen](media/update-status.png)
 
-Meldingsstatusen oppdateres til **Klargjort**, og du kan nå generere rapporten ved å velge **Generer rapport**. Rapporten genereres, og meldingsstatusen og -loggen oppdateres. Hvis du vil vise den genererte rapporten, velger du **Vedlegg**-knappen i handlingsruten.
+Meldingsstatusen oppdateres til **Klargjort**, og du kan nå generere rapporten ved å velge **Generer rapport**. Rapporten genereres, og meldingsstatusen og -loggen oppdateres. Hvis du vil vise den genererte rapporten, velger du **Vedlegg**-knappen (bindersikonet) i øvre høyre hjørne på siden.

@@ -3,7 +3,7 @@ title: Funksjoner som er fjernet eller avskrevet
 description: Dette emnet beskriver funksjoner som er fjernet eller som er planlagt for fjerning.
 author: sericks007
 manager: AnnBe
-ms.date: 03/12/2019
+ms.date: 04/12/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a4dc8f11cfef7c0f42c62c42cd984438a3e119a5
-ms.sourcegitcommit: d9ed934a142b88340d268fd2bd3753475a3712b0
+ms.openlocfilehash: 7201397cd839048465ee0cd8e97c267ab8cbfeb7
+ms.sourcegitcommit: 073257c2ec810e3599c1aad5a493bc9f16ffc30d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/12/2019
-ms.locfileid: "836354"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "992889"
 ---
 # <a name="removed-or-deprecated-features"></a>Fjernede eller avskrevne funksjoner
 
@@ -41,45 +41,114 @@ Denne listen er ment å hjelpe deg med å vurdere disse fjerningene og avskrivni
 > [!NOTE]
 > Detaljert informasjon om objekter i Finance and Operations finnes i [Tekniske referanserapporter](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep). Du kan sammenligne de ulike versjonene av disse rapportene for å lære om objekter som er endret eller fjernet i hver versjon av Finance and Operations.
 
+
+## <a name="dynamics-365-for-finance-and-operations-1002-with-platform-update-26"></a>Dynamics 365 for Finance and Operations 10.0.2 med Platform update 26
+
+> [!IMPORTANT]
+> Dynamics 365 for Finance and Operations 10.0.2 med Platform update 26 er tilgjengelig for angitte brukere som en del av en forhåndsversjon. Innholdet og funksjonaliteten kan bli endret. Hvis du vil ha mer informasjon om forhåndsversjoner, kan du se [Tilgjengelighet av serviceoppdatering](../../fin-and-ops/get-started/public-preview-releases.md).
+
+### <a name="legacy-default-action-behavior"></a>Eldre virkemåte for standardhandlinger
+
+|   |  |
+|------------|--------------------|
+| **Årsak til avskrivning/fjerning** | Eldre virkemåte for standardhandlinger i rutenett fører til at en uventet kolonne har standardhandlingskobling etter at rutenettkolonner er omorganisert via tilpasning. Den nye funksjonen for treg standardhandling retter opp dette. Hvis du vil ha mer informasjon, se [Trege standardhandlinger i rutenett](https://docs.microsoft.com/business-applications-release-notes/October18/dynamics365-finance-operations/sticky-default-action). |
+| **Erstattet med en annen funksjon?**   | Fra Platform update 21 ble en funksjon for "trege standardhandlinger" innført. Denne funksjonen kan aktiveres på **Alternativer for klientytelse**-siden. |
+| **Berørte produktområder**         | Rutenett i webklienten |
+| **Distribusjonsalternativ**              | Alle |
+| **Status**                         | Avskrevet: Fra april 2020 blir trege standardhandlinger bli standard virkemåte, uten en mekanisme for å gå tilbake til den gamle virkemåten. |
+
+### <a name="legacy-is-one-of-filtering-experience"></a>Eldre "er en av"-filtreringsopplevelse
+
+|   |  |
+|------------|--------------------|
+| **Årsak til avskrivning/fjerning** | "Er en av"-filtreringsopplevelse gikk gjennom en ny utforming i Platform update 22, og planen er at dette skal være eneste "er en av"-filtreringsopplevelse. |
+| **Erstattet med en annen funksjon?**   | Fra Platform update 22 ble en forbedret "er en av"-filtreringsopplevelse tilgjengelig på **Alternativer for klientytelse**-siden. Hvis du vil vite mer, kan du se [Optimalisert "er en av"-filtreringopplevelse](https://docs.microsoft.com/business-applications-release-notes/October18/dynamics365-finance-operations/improved-isoneof-filtering). |
+| **Berørte produktområder**         | Webklient |
+| **Distribusjonsalternativ**              | Alle |
+| **Status**                         | Avskrevet: Fra april 2020 blir den forbedrede "er en av"-opplevelsen standard virkemåte, uten en mekanisme for å gå tilbake til den gamle virkemåten. |
+
+### <a name="deriving-from-internal-classes-is-deprecated"></a>Avleding fra interne klasser er avskrevet
+
+|   |  |
+|------------|--------------------|
+| **Årsak til avskrivning/fjerning** | Før Platform update 25 var det mulig å opprette en klasse eller tabell som var avledet fra en intern klasse/tabell som er definert i en annen pakke/modul. Dette er ikke en sikker kodepraksis. Fra og med Platform update 25 viser kompilatoren en advarsel. |
+| **Erstattet med en annen funksjon?**   | Kompilatoradvarselen vil bli erstattet av en feil i Platform update 26. Denne endringen er bakoverkompatibel ved kjøretid, som betyr at Platform update 25 eller nyere kan distribueres i et hvilket som helst sandkasse- eller produksjonsmiljø uten å måtte endre egendefinert kode. Denne endringen påvirker bare utviklings- og kompileringstid.|
+| **Berørte produktområder**         | Visual Studio-utviklingsverktøy |
+| **Distribusjonsalternativ**              | Alle |
+| **Status**                         | Avskrevet: Advarselen vil bli en kompileringsfeil i Platform update 26. |
+
+### <a name="overriding-internal-methods-is-deprecated"></a>Overstyring av interne metoder er avskrevet
+
+|   |  |
+|------------|--------------------|
+| **Årsak til avskrivning/fjerning** | Før Platform update 25 var det mulig å overstyre en intern metode i en avskrevet klasse som er definert i en annen pakke/modul. Dette er ikke en sikker kodepraksis. Fra og med Platform update 25 viser kompilatoren en advarsel. |
+| **Erstattet med en annen funksjon?**   | Denne advarselen vil bli erstattet av en kompileringsfeil i Platform update 26. Denne endringen er bakoverkompatibel ved kjøretid, som betyr at Platform update 25 eller nyere kan distribueres i et hvilket som helst sandkasse- eller produksjonsmiljø uten å måtte endre egendefinert kode. Denne endringen påvirker bare utviklings- og kompileringstid. |
+| **Berørte produktområder**         | Visual Studio-utviklingsverktøy |
+| **Distribusjonsalternativ**              | Alle |
+| **Status**                         | Avskrevet: Advarselen vil bli en kompileringsfeil i Platform update 26. |
+
+### <a name="parameter-to-enable-sales-orders-with-multiple-project-contract-funding-sources"></a>Parameteren for å aktivere salgsordrer med flere finansieringskilder for prosjektkontrakt
+Støtte for opprettelse av prosjektbaserte salgsordrer der prosjektkontrakten har flere finansieringskilder, er aktivert med **Prosjektparametere management**-innstillingen **Tillat salgsordrer for prosjekt med flere finansieringskilder**. Denne parameteren er ikke aktivert som standard. 
+
+|   |  |
+|------------|--------------------|
+| **Årsak til avskrivning/fjerning** | Funksjonen aktiveres alltid når parameteren er fjernet. |
+| **Erstattet med en annen funksjon?**   | Nr. Funksjonen for å støtte prosjektbaserte salgsordrer som har flere finansieringskilder, vil alltid være aktivert.   |
+| **Berørte produktområder**         |Parameteren **Tillat salgsordrer for prosjekter med flere finansieringskilder** blir fjernet. Fremgangsmåtene nedenfor endres når parameteren blir fjernet: **ctrlSalesOrderTable**-metoden i **ProjStatusType**-klassen, **valider**-metoden for **ProjId**-feltet og **kjør**-metoden i **SalescreateOrder**-skjemaet. De følgende metodene avskrives når parameteren blir fjernet: **IsSalesOrderAllowedForMultipleFundingSources** i **ProjTable**-tabellfilen, **IsAllowSalesOrdersForMultipleFundingSourcesParamEnabled**-metoden i **ProjTable**-tabellfilen, **AllowSalesOrdersForMultipleFundingSources**-datafeltet i **ProjParameters**-skjemaet og **ProjParameterEntity**-filer, **IsAssociatedToMultipleFundingSourcesContract** privat metode i **ProjTable**-tabellfilen. |
+| **Distribusjonsalternativ**              | Alle  |
+| **Status**                         | Avskrivingen planlegges for april 2020-frigivelsesbølgen. |
+
+### <a name="legacy-workflow-reports-for-tracking-and-instance-status"></a>Eldre arbeidsflytrapporter for sporings- og forekomststatus
+
+|   |  |
+|------------|--------------------|
+| **Årsak til avskrivning/fjerning** | Eldre arbeidsflytrapporter for sporings- og forekomststatus avskrives fordi de ikke lenger refereres til fra navigeringen. Rapportnavnene er WorkflowWorkflowInstanceByStatusReport og WorkflowWorkflowTrackingReport. |
+| **Erstattet med en annen funksjon?**   | Arbeidsflytlogg-skjemaet kan brukes i stedet. |
+| **Berørte produktområder**         | Webklient |
+| **Distribusjonsalternativ**              | Alle |
+| **Status**                         | Avskrevet: Måltidsrammen for funksjonaliteten som skal fjernes, er april 2020. |
+
 ## <a name="dynamics-365-for-finance-and-operations-1001-with-platform-update-25"></a>Dynamics 365 for Finance and Operations 10.0.1 med plattformoppdatering 25
 
 > [!IMPORTANT]
-> Dynamics 365 for Finance and Operations 10.0.1 med plattformoppdatering 25 tilgjengelig for angitte brukere som en del av en forhåndsversjon. Innholdet og funksjonaliteten kan bli endret. Hvis du vil ha mer informasjon om forhåndsversjoner, kan du se [Serviceoppdateringer for Standard og første versjon](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/public-preview-releases).
+> Dynamics 365 for Finance and Operations 10.0.1 med Platform update 25 er tilgjengelig for angitte brukere som en del av en forhåndsversjon. Innholdet og funksjonaliteten kan bli endret. Hvis du vil ha mer informasjon om forhåndsversjoner, kan du se [Tilgjengelighet av serviceoppdatering](../../fin-and-ops/get-started/public-preview-releases.md).
 
 ### <a name="deprecated-apis-and-potential-breaking-changes"></a>Avskrevne APIer og potensielle oppdelingsendringer
+
 
 #### <a name="deriving-from-internal-classes-is-deprecated"></a>Avleding fra interne klasser er avskrevet
 
 |   |  |
 |------------|--------------------|
-| **Årsak til avskrivning/fjerning** | I versjoner før plattformoppdatering 25 var det mulig å opprette en klasse eller tabell som var avledet fra en intern klasse/tabell som er definert i en annen pakke/modul. Dette er ikke en sikker kodepraksis. Fra og med plattformoppdatering 25 vil kompilatoren vise en advarsel hvis du prøver å gjøre dette.|
-| **Erstattet med en annen funksjon?**   | Kompilatoradvarselen vil bli erstattet av en feil i en kommende plattformoppdatering. Denne endringen er bakoverkompatibel ved kjøretid, som betyr at hvis du kjører plattformoppdatering 25 eller senere, kan dette distribueres i et hvilket som helst sandkasse- eller produksjonsmiljø uten å måtte endre egendefinert kode. Denne endringen påvirker bare utviklings- og kompileringstid. |
-| **Berørte produktområder**         | Visual Studio-utviklingsverktøy. |
+| **Årsak til avskrivning/fjerning** | Før Platform update 25 var det mulig å opprette en klasse eller tabell som var avledet fra en intern klasse/tabell som er definert i en annen pakke/modul. Dette er ikke en sikker kodepraksis. Fra og med Platform update 25 viser kompilatoren en advarsel. |
+| **Erstattet med en annen funksjon?**   | Kompilatoradvarselen vil bli erstattet av en feil i Platform update 26. Denne endringen er bakoverkompatibel ved kjøretid, som betyr at Platform update 25 eller nyere kan distribueres i et hvilket som helst sandkasse- eller produksjonsmiljø uten å måtte endre egendefinert kode. Denne endringen påvirker bare utviklings- og kompileringstid.|
+| **Berørte produktområder**         | Visual Studio-utviklingsverktøy |
 | **Distribusjonsalternativ**              | Alle |
-| **Status**                         | Avskrevet – Advarselen vil bli en kompileringsfeil i en kommende plattformoppdatering. |
+| **Status**                         | Avskrevet: Advarselen vil bli en kompileringsfeil i Platform update 26. |
 
 #### <a name="overriding-internal-methods-is-deprecated"></a>Overstyring av interne metoder er avskrevet
 
 |   |  |
 |------------|--------------------|
-| **Årsak til avskrivning/fjerning** | I versjoner før plattformoppdatering 25 var det mulig å overstyre en intern metode i en avskrevet klasse som er definert i en annen pakke/modul. Dette er ikke en sikker kodepraksis. Fra og med plattformoppdatering 25 vil kompilatoren vise en advarsel hvis du prøver å gjøre dette.|
-| **Erstattet med en annen funksjon?**   | Advarselen vil bli erstattet av en kompileringsfeil i en kommende plattformoppdatering. Denne endringen er bakoverkompatibel ved kjøretid, som betyr at hvis du kjører plattformoppdatering 25 eller senere, kan dette distribueres i et hvilket som helst sandkasse- eller produksjonsmiljø uten å måtte endre egendefinert kode. Denne endringen påvirker bare utviklings- og kompileringstid. |
-| **Berørte produktområder**         | Visual Studio-utviklingsverktøy. |
+| **Årsak til avskrivning/fjerning** | Før Platform update 25 var det mulig å overstyre en intern metode i en avskrevet klasse som er definert i en annen pakke/modul. Dette er ikke en sikker kodepraksis. Fra og med Platform update 25 viser kompilatoren en advarsel. |
+| **Erstattet med en annen funksjon?**   | Denne advarselen vil bli erstattet av en kompileringsfeil i Platform update 26. Denne endringen er bakoverkompatibel ved kjøretid, som betyr at Platform update 25 eller nyere kan distribueres i et hvilket som helst sandkasse- eller produksjonsmiljø uten å måtte endre egendefinert kode. Denne endringen påvirker bare utviklings- og kompileringstid. |
+| **Berørte produktområder**         | Visual Studio-utviklingsverktøy |
 | **Distribusjonsalternativ**              | Alle |
-| **Status**                         | Avskrevet – Advarselen vil bli en kompileringsfeil i en kommende plattformoppdatering. |
+| **Status**                         | Avskrevet: Advarselen vil bli en kompileringsfeil i Platform update 26. |
+
 
 ## <a name="dynamics-365-for-finance-and-operations-813-with-platform-update-23"></a>Dynamics 365 for Finance and Operations 8.1.3 med plattformoppdatering 23
 
-### <a name="print-to-screen-functionality"></a>Skrive ut til skjermfunksjonalitet
-Kunder kan bruke **Import**-handlingen som er angitt av Report Viewer-kontrollen, til å laste ned dokumenter som er produsert av Finance and Operations-programmer. Denne HTML-baserte presentasjon av rapporten gir brukerne en ikke-paginert forhåndsvisning av dokumentet.
+### <a name="sql-server-reporting-services-reportviewer-control"></a>Report Viewer-kontrollen i SQL Server Reporting Services
+Kunder kan bruke **Eksport**-handlingen som er angitt av den innebygde Report Viewer-kontrollen i SQL Server Reporting Services (SSRS), til å laste ned dokumenter som er produsert av Finance and Operations-programmer. Denne HTML-baserte presentasjon av rapporten gir brukerne en ikke-paginert forhåndsvisning av dokumentet.
 
 |   |  |
 |------------|--------------------|
-| **Årsak til avskrivning/fjerning** | Den ikke-paginerte typen for den HTML-baserte forhåndsvisningsopplevelsen leverer **ikke** gjengivelse med de fysiske dokumentene som produseres av Finance and Operations til slutt. Ved fullt og helt ta i bruk PDF som standardformat for forretningsoperasjoner kan vi drastisk forenkle brukeralternativer for samhandling med applikasjonsrapporter og stømlinjeforme dokumentgjengivelsesprosessen. |
+| **Årsak til avskrivning/fjerning** | Den ikke-paginerte typen for den HTML-baserte forhåndsvisningsopplevelsen leverer **ikke** gjengivelse med de fysiske dokumentene som produseres av Finance and Operations til slutt. Ved fullt og helt ta i bruk PDF som standardformat for forretningsdokumenter skal brukerne kunne dra nytte av en moderne visningsopplevelse med forbedret ytelse ved produksjon av rapporter i programmet. |
 | **Erstattet med en annen funksjon?**   | I fremtiden vil PDF-dokumenter være standardformat for rapporter som gjengis av Finance and Operations.   |
 | **Berørte produktområder**         | Denne endringen påvirker **ikke** kundescenarier der rapporter distribueres elektronisk eller sendes direkte til skrivere.    |
 | **Distribusjonsalternativ**              | Alle  |
-| **Status**                         | Avskrevet: En dato for fjerning er ikke angitt for denne funksjonen. Funksjonen for automatisk nedlasting av programrapporter til leseren som PDF-dokumenter er planlagt for mai 2019-plattformoppdateringen. <br><br>**Viktig:**  Eksisterende kunder som bruker utskrift til skjerm-funksjonen, bør varsle [Brukerstøtten](../lifecycle-services/lcs-support.md) før oppgradering til Plattformoppdatering 26. |
+| **Status**                         | Avskrevet: En dato for fjerning er ikke angitt for denne funksjonen. Funksjonen for automatisk forhåndsvisning av programrapporter som bruker et innebygd PDF-visningsprogrammet, er planlagt for mai 2019-plattformoppdateringen. |
 
 ### <a name="client-kpi-controls"></a>Klient-KPI-kontroller
 Innebygde nøkkelytelsesindikatorer (KPIer) kan modelleres i Visual Studio av en utvikler og tilpasses ytterligere av sluttbrukeren.
@@ -102,7 +171,7 @@ Innebygde nøkkelytelsesindikatorer (KPIer) kan modelleres i Visual Studio av en
 | **Erstattet med en annen funksjon?**   | Advarselen vil bli erstattet av en kompileringsfeil i fremtiden.  |
 | **Berørte produktområder**         | Visual Studio-utviklingsverktøy. |
 | **Distribusjonsalternativ**              | Alle. |
-| **Status**                         | Avskrevet – Advarselen blir en kompileringstidsfeil i fremtiden. For øyeblikket målretter vi Plattformoppdatering 30. |
+| **Status**                         | Avskrevet: Advarselen blir en kompileringstidsfeil i fremtiden. For øyeblikket målretter vi Plattformoppdatering 30. |
 
 #### <a name="complete-list"></a>Fullstendig liste
 Hvis du vil ha tilgang til den fullstendige listen over APIer som kan avskrives, kan du se [Avskriving av metoder og metadataelementer](deprecation-deletion-apis.md).
@@ -110,7 +179,7 @@ Hvis du vil ha tilgang til den fullstendige listen over APIer som kan avskrives,
 ## <a name="dynamics-365-for-finance-and-operations-81-with-platform-update-20"></a>Dynamics 365 for Finance and Operations 8.1 med plattformoppdatering 20
 
 ### <a name="batch-transfer-rules-for-subledger-journal-account-entries"></a>Regler for partioverføringer for kontooppføringer i underfinansjournal
-Den synkrone overføringsmodusen avskrives i Økonomimodulparametere.  Denne modusen erstattes bare av asynkron og planlagt parti, som allerede finnes som alternativer for overføring. 
+Den synkrone overføringsmodusen avskrives i Økonomimodulparametere.  Denne modusen erstattes bare av asynkron og planlagt parti, som allerede finnes som alternativer for overføring. Hvis du vil ha mer informasjon, se bloggen [Parametere for økonomimodul – Regler for partioverføring](https://community.dynamics.com/365/financeandoperations/b/financials/archive/2019/03/15/general-ledger-parameters-batch-transfer-rules).
 
 |   |  |
 |------------|--------------------|
@@ -172,7 +241,7 @@ Ingen funksjoner er fjernet eller avskrevet med denne versjonen. Plattformoppdat
 ## <a name="dynamics-365-for-finance-and-operations-enterprise-edition-73-with-platform-update-12"></a>Dynamics 365 for Finance and Operations, Enterprise edition 7.3 med plattformoppdatering 12
 
 ### <a name="personalized-product-recommendations"></a>Personlige produktanbefalinger 
-Fra 15. februar 2018 vil forhandlere ikke lenger kunne vise personlige produktanbefalinger på en salgsstedsenhet. Hvis du vil ha mer informasjon, kan du se [Personlige produktanbefalinger](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/personalized-product-recommendations).  
+Fra 15. februar 2018 vil forhandlere ikke lenger kunne vise personlige produktanbefalinger på en salgsstedsenhet. Hvis du vil ha mer informasjon, kan du se [Personlige produktanbefalinger](../../retail/personalized-product-recommendations.md).  
 
 |   |  |
 |------------|--------------------|
@@ -277,7 +346,7 @@ Brukere kan laste ned dette fra den offentlige portalen.
 ## <a name="dynamics-365-for-retail-72"></a>Dynamics 365 for Retail 7.2
 
 ### <a name="personalized-product-recommendations"></a>Personlige produktanbefalinger 
-Fra 15. februar 2018 vil forhandlere ikke lenger kunne vise personlige produktanbefalinger på en salgsstedsenhet. Hvis du vil ha mer informasjon, kan du se [Personlige produktanbefalinger](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/personalized-product-recommendations).  
+Fra 15. februar 2018 vil forhandlere ikke lenger kunne vise personlige produktanbefalinger på en salgsstedsenhet. Hvis du vil ha mer informasjon, kan du se [Personlige produktanbefalinger](../../retail/personalized-product-recommendations.md).  
 
 |   |  |
 |------------|--------------------|
@@ -309,7 +378,7 @@ Portal for lagermobilenheter (WMDP) var en frittstående komponent som var bereg
 |   |  |
 |------------|--------------------|
 | **Årsak til avskrivning/fjerning** | Duplikat funksjonalitet.       |
-| **Erstattet med en annen funksjon?**   | Ja. Denne funksjonen er erstattet med Finance and Operations - Warehousing. Hvis du vil ha mer informasjon om oppsett og forutsetninger, kan du se [Installere og konfigurere Microsoft Dynamics 365 for Finance and Operations - lager](https://docs.microsoft.com/en-us/dynamics365/unified-operations/supply-chain/warehousing/install-configure-warehousing-app). |
+| **Erstattet med en annen funksjon?**   | Ja. Denne funksjonen er erstattet med Finance and Operations - Warehousing. Hvis du vil ha mer informasjon om oppsett og forutsetninger, kan du se [Installere og konfigurere Microsoft Dynamics 365 for Finance and Operations - lager](../../supply-chain/warehousing/install-configure-warehousing-app.md). |
 | **Berørte produktområder**         | Lagerstyring, transportstyring     |
 | **Distribusjonsalternativ**              | Portal for lagermobilenheter (WMDP) var en frittstående komponent som var beregnet for selvdrevet lokal distribusjon.               |
 | **Status**                         | Avskrevet: Måltidsrammen for funksjonaliteten som skal fjernes, er 4. kvartal 2019.   |
@@ -687,6 +756,17 @@ I Application Integration Framework (AIF) kan data utveksles med eksterne system
 | **Erstattet med en annen funksjon?**   | Denne funksjonen erstattes av rammeverket for dataimport/-eksport, som støtter regelmessig bulkimport/-eksport. For AxBC anbefaler vi at du bruker de faktiske tabellene. |
 | **Berørte produktområder**         | AxD-er, AxBC-er og AIF   |
 | **Status**                         | Fjernet fra og med Dynamics AX 7.0.   |
+
+### <a name="billing-code-rate-scripts"></a>Satsskript for faktureringskode
+
+Satsskript ble brukt til å beregne faktureringssatser for betalingskoder. Dette skriptet krevde egendefinert utvikling i C Sharp- eller Visual Basic-programmeringsspråket. I den gjeldende versjonen av Dynamics AX støttes ikke **satsskript for faktureringskode**.
+
+|   |  |
+|------------|--------------------|
+| **Årsak til avskrivning/fjerning** | Støtte for de egendefinerte C Sharp- eller Visual Basic-skriptene ble ikke lagt til i Dynamics AX 7.0. |
+| **Erstattet med en annen funksjon?**   | Nei                                                                                      |
+| **Berørte produktområder**         | Offentlig sektor, kunder                                    |
+| **Status**                         | Fjernet fra og med Dynamics AX 7.0.                                                          |
 
 ### <a name="boms-without-bom-versions"></a>Stykklister uten stykklisteversjoner
 
@@ -1068,7 +1148,7 @@ Produktkonfigurator ble brukt til å konfigurere varer dynamisk fra en salgsordr
 |   |  |
 |------------|--------------------|
 | **Årsak til avskrivning/fjerning** | Produktkonfigurator viste X ++-kode til sluttbrukere og støttes ikke i den gjeldende versjonen av Dynamics AX. Den er fjernet for å unngå dupliserte vedlikeholdsforsøk på overlappende, skalerbare kodebaser.  |
-| **Erstattet med en annen funksjon?**   | Ja. Restriksjonsbasert konfigurasjon ble innført i Dynamics AX 2012, der avskrivningen av Produktkonfigurator i fremtidige versjoner allerede var annonsert. Restriksjonsbasert konfigurasjonsteknologi er valgt i produktstandardene for å muliggjøre konfigurasjonen. Hvis du vil ha mer informasjon, kan du se [Bygge en produktkonfigurasjonsmodell](https://docs.microsoft.com/en-us/dynamics365/unified-operations/supply-chain/pim/build-product-configuration-model). |
+| **Erstattet med en annen funksjon?**   | Ja. Restriksjonsbasert konfigurasjon ble innført i Dynamics AX 2012, der avskrivningen av Produktkonfigurator i fremtidige versjoner allerede var annonsert. Restriksjonsbasert konfigurasjonsteknologi er valgt i produktstandardene for å muliggjøre konfigurasjonen. Hvis du vil ha mer informasjon, kan du se [Bygge en produktkonfigurasjonsmodell](../../supply-chain/pim/build-product-configuration-model.md). |
 | **Berørte produktområder**         | Behandling av produktinformasjon, salg og markedsføring  |
 | **Status**                         | Fjernet fra og med Dynamics AX 7.0.      |
 

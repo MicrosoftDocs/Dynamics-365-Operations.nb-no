@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: v-kikozl
 ms.search.validFrom: 2018-11-1
 ms.dyn365.ops.version: 8.1.1
-ms.openlocfilehash: 685340141ed35f4a2b57742328c69d3bbf9a73d2
-ms.sourcegitcommit: 70aeb93612ccd45ee88c605a1a4b87c469e3ff57
+ms.openlocfilehash: 060075757dec64e83c46498380a920d580ac09e4
+ms.sourcegitcommit: 9796d022a8abf5c07abcdee6852ee34f06d2eb57
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "773333"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "898983"
 ---
 # <a name="set-up-the-fiscal-integration-for-retail-channels"></a>Definere økonomisk integrering for detaljhandelskanaler
 
@@ -60,7 +60,7 @@ Før du bruker regnskapsintegreringsfunksjonaliteten, bør du konfigurere følge
 2. Last opp konfigurasjoner av regnskapskoblinger og leverandører av regnskapsdokument.
 
     En leverandør for regnskapsdokumentet er ansvarlig for å generere regnskapsdokumenter som representerer detaljhandelstransaksjoner og hendelser som er registrert på salgsstedet i et format som også brukes for samhandlingen med en regnskapsenhet eller -tjeneste. For eksempel kan en regnskapsdokumentleverandør generere en representasjon av en bilagskvittering i XML-format.
-    
+
     En regnskapskobling er ansvarlig for kommunikasjonen med en regnskapsenhet eller -tjeneste. En regnskapskobling kan for eksempel sende en bilagskvittering som en regnskapsdokumentleverandør opprettet i et XML-format til en bilagsskriver. Hvis du vil ha mer informasjon om regnskapsintegreringskomponentene, se [Bilagsregistreringsprosess og regnskapsintegreringeseksempler for regnskapsenheter](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices).
 
     1. På siden **Regnskapskoblinger** (**Detaljhandel \> Kanaloppsett \> Regnskapsintegrering \> Regnskapskoblinger**) laster du opp en XML-konfigurasjon for hver enhet eller tjeneste du planlegger å bruke for regnskapsintegreringsformål.
@@ -150,7 +150,7 @@ Før du bruker regnskapsintegreringsfunksjonaliteten, bør du konfigurere følge
     - Når du endrer en eksisterende regnskapsregistreringsprosess, og disse endringene kan føre til at en annen registreringskobling velges ved kjøretid (for eksempel hvis du endrer koblingsgruppen for et trinn i regnskapsregistreringsprosessen, aktiverer en funksjonell profil for kobling i en tilkoblingsgruppe eller legger til en ny funksjonell profil for kobling i en koblingsgruppe).
     - Når du gjør endringer i tilordningen av tekniske profiler for kobling til maskinvareprofiler.
 
-8. På siden **Distribusjonsplanlegger** kjører du **1070**- og **1090**-jobber for å overføre data til kanaldatabasen.
+8. På siden **Distribusjonsplan** kjører du **1070**- og **1090**-jobber for å overføre data til kanaldatabasen.
 
 ## <a name="set-up-fiscal-texts-for-discounts"></a>Konfigurere bilagstekster for rabatter
 
@@ -185,8 +185,12 @@ Feilbehandlingsalternativene som er tilgjengelige i regnskapsintegrasjonen, defi
 
     - **Tillat overhopping** – Denne parameteren aktiverer **Hopp over**-alternativet i dialogboksen for feilbehandling.
     - **Tillat Merk som registrert** – Denne parameteren aktiverer **Merk som registrert**-alternativer i dialogboksen for feilbehandling.
+    - **Fortsett ved feil** – Hvis denne parameteren er aktivert, vil bilagsregistreringsprosessen fortsette på salgsstedskassen hvis bilagsregistrering av en transaksjon eller hendelsen mislykkes. Hvis ikke, for å kjøre bilagsregistrering av neste transaksjon eller hendelse, må operatøren prøve å kjøre den mislykkede bilagsregistreringen på nytt, hoppe over den eller merke transaksjonen eller hendelsen som registrert. Hvis du vil ha mer informasjon, se [Valgfri bilagsregistrering](fiscal-integration-for-retail-channel.md#optional-fiscal-registration).
 
-2. Alternativene **Hopp over** og **Merk som registrert** i dialogboksen for feilbehandling krever **Tillat Hopp over eller Merk som registrert**-tillatelser. Derfor må du, på siden **Tillatelsesgrupper** (**Detaljhandel \> Ansatte \> Tillatelsesgrupper**), aktivere tillatelsen **Tillat Hopp over eller Merk som registrert**.
+    > [!NOTE]
+    > Hvis parameteren **Fortsett ved feil** er aktivert, deaktiveres parameteren **Tillat overhopping** og **Tillat Merk som registrert** automatisk.
+
+2. Alternativene **Hopp over** og **Merk som registrert** i dialogboksen for feilbehandling krever tillatelsen **Tillat å hoppe over registrering eller merke som registrert**. Derfor må du på siden **Tillatelsesgrupper** (**Detaljhandel \> Ansatte \> Tillatelsesgrupper**) aktivere tillatelsen **Tillat å hoppe over registrering eller merke som registrert**.
 3. Alternativene **Hopp over** og **Merk som registrert** lar operatorer angi tilleggsinformasjon når bilagsregistreringen mislykkes. Hvis du vil gjøre denne funksjonaliteten tilgjengelig, må du angi infokodene **Hopp over** og **Merk som registrert** i en gruppe for regnskapskobling. Informasjonen som operatorene angir, lagres deretter som en infokodetransaksjon som er knyttet til regnskapstransaksjon. Hvis du vil ha mer informasjon om infokoder, kan du se [Informasjonskoder og informasjonskodegrupper](../info-codes-retail.md).
 
     > [!NOTE]
@@ -200,6 +204,8 @@ Feilbehandlingsalternativene som er tilgjengelige i regnskapsintegrasjonen, defi
     > - **Regnskapsdokument** – Et obligatorisk dokument som må registreres med suksess (for eksempel en bilagskvittering).
     > - **Ikke-regnskapsdokument** – Et ekstra dokument for transaksjonen eller hendelsen (for eksempel en gavekortseddel).
 
+4. Hvis operatøren må være i stand til å fortsette å behandle den aktuelle operasjonen (for eksempel oppretting eller avslutning av en transaksjon) etter at en tilstandskontrollfeil oppstår, bør du aktivere tillatelsen **Tillat å hoppe over tilstandskontrollfeil** på siden **Tillatelsesgrupper** (**Detaljhandel \> Ansatte \> Tillatelsesgrupper**). Hvis du vil ha mer informasjon om tilstandskontrollprosedyren, se [Tilstandskontroll for bilagsregistrering](fiscal-integration-for-retail-channel.md#fiscal-registration-health-check).
+
 ## <a name="set-up-fiscal-xz-reports-from-the-pos"></a>Konfigurere X-/Z-regnskapsrapporter fra salgsstedet
 
 For å aktivere X-/Z-regnskapsrapporter fra salgsstedet bør du legge til nye knapper i et salgsstedsoppsett.
@@ -211,3 +217,12 @@ For å aktivere X-/Z-regnskapsrapporter fra salgsstedet bør du legge til nye kn
     3. Legg til en ny knapp, og angi **Skriv ut regnskapsår Z**-knappeegenskapen.
     4. På siden **Distribusjonsplan** kjører du **1090**-jobben for å overføre endringer til kanaldatabasen.
 
+## <a name="enable-manual-execution-of-postponed-fiscal-registration"></a>Aktivere manuell kjøring av utsatt bilagsregistrering
+
+For å aktivere manuell utføring av en utsatt bilagsregistrering bør du legge til en ny knapp i et POS-oppsett.
+
+- På siden **Knappegrupper** følger du instruksjonene i [Legge til en egendefinert operasjonsknapp i salgsstedsoppsettet i Detaljhandel Hovedkontor](../dev-itpro/add-pos-operations.md#add-a-custom-operation-button-to-the-pos-layout-in-retail-headquarters) for å installere utformingen og oppdatere et salgsstedsoppsett.
+
+    1. Velg oppsettet som skal oppdateres.
+    2. Legg til en ny knapp, og angi **Fullfør bilagsregistreringsprosess**-knappeegenskapen.
+    3. På siden **Distribusjonsplan** kjører du **1090**-jobben for å overføre endringene dine til kanaldatabasen.

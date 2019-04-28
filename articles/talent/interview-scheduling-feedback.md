@@ -1,25 +1,25 @@
 ---
 title: Planlegging og tilbakemelding for intervju
 description: Dette emnet gir informasjon om planleggings- og tilbakemeldingsaktiviteter for intervju i Attract.
-author: ''
+author: hasrivas
 manager: AnnBe
-ms.date: 02/01/2019
+ms.date: 04/10/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-talent
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: anbichse
 ms.search.scope: Talent, Core
 ms.search.region: Global
-ms.author: hasrivas
-ms.openlocfilehash: 7bc5a66bb221cb0ab2c69fcb1013ed48a7c664a6
-ms.sourcegitcommit: 1e32d78868098fd76124bb41363f15c4ec3ea15a
+ms.author: shielas
+ms.openlocfilehash: 39b14f3ca855ca283a7484e480ff2547623938ef
+ms.sourcegitcommit: 9796d022a8abf5c07abcdee6852ee34f06d2eb57
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/05/2019
-ms.locfileid: "374954"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "989943"
 ---
 # <a name="interview-scheduling-and-feedback"></a>Planlegging og tilbakemelding for intervju
 
@@ -28,6 +28,8 @@ ms.locfileid: "374954"
 ## <a name="scheduler-activity"></a>Planleggeraktivitet
 
 Planleggeraktiviteten er valgfri og har to komponenter: forespørsel om kandidattilgjengelighet og tidsplan. Med komponenten kandidattilgjengelighet kan du bruke e-post til å spørre om en kandidats tilgjengelighet. Tidsplankomponenten gir mulighet å planlegge intervjuer med kandidaten og ansettelsesteamet.
+
+Hvis du vil definere planleggeraktiviteten til å inkludere eller begrense kandidatene som skal planlegges, velger du en verdi i feltet for **Hvem planlegger du**. De tilgjengelige alternativene er **Alle kandidater**, **Eksterne kandidater** og **Interne kandidater**. Hvis du for eksempel hvis du vil hoppe over interne kandidater i første runde med planlegging, kan du tilordne planleggingsaktiviteten bare til eksterne kandidater ved å sette **Hvem planlegger du** til **Eksterne kandidater**.
 
 ### <a name="candidate-availability-request"></a>Forespørsel om kandidattilgjengelighet
 
@@ -54,7 +56,7 @@ Det finnes flere konfigurasjoner som intervjuplanleggeren kan bruke for å raskt
 
 2. Velg intervjuvarigheten for hver intervjuhendelse, og klikk deretter på **OK** for å opprette tidsplanen.
 
-    Hvis **Anbefalinger** er valgt, vises det forslag og intervjurutenettet fylles ut på forhånd. Du vil kunne se gjeldende kalendertilgjengelighet for alle valgte intervjuere. Du vil også kunne vise kandidatens kalender hvis de er interne kandidater.
+    Hvis **Anbefalinger** er valgt, vises det forslag og intervjurutenettet fylles ut på forhånd. Du vil kunne se gjeldende kalendertilgjengelighet for alle valgte intervjuere. Du vil også kunne vise kandidatens kalender hvis de er interne kandidater. For intervjuere og interne kandidater kan du vise opptatt-tid, deres arbeidstider, fraværende-tid og også finne ut om de har merket kalenderne som arbeider andre steder for bestemte tider. 
 
 3. Hvis det ikke finnes noen forslag, i **Intervjuere**-kolonnen klikker du i et tidsrom, angir intervjutittelen, detaljer, og fyller ut stedsdetaljene etter behov. Du kan velge å inkludere **Skype for Business**-koblingen for intervjuet.
 
@@ -73,19 +75,30 @@ Det finnes flere konfigurasjoner som intervjuplanleggeren kan bruke for å raskt
 
     Intervjuersvar registreres og vises i Attract. Hvis en intervjuer avslår invitasjonen, vil du bli varslet for å gjøre en endring. Hvis du vil vise svaret deres i **Planlegger**-rutenettvisningen, klikker du på bobleikonet.
 
-[![Rekrutterervisning i Attract for en intervjuers svar](./media/schedule-interviewer-response.png)](./media/schedule-interviewer-response.png)
+[![Rekrutterervisning i Attract for en intervjuers svar](./media/schedule-interviewer-response2.png)](./media/schedule-interviewer-response2.png)
 
 7. Når intervjutidsplanen er klar til å deles med kandidaten, klikker du på **Send til kandidat**. Du kan velge å vise eller skjule navnene på intervjuere og tidsrom for kandidaten.
 
-8. Velg en postmal og send intervjusammendraget til kandidaten. Kandidaten kan vise denne informasjonen i deres e-post og kandidatportal.
+8. Velg en epostmal og send intervjusammendraget til kandidaten. Kandidaten kan vise denne informasjonen i deres e-post og kandidatportal.
     
 >[!NOTE] 
 > Kalendertilgjengeligheten for en kandidat vises bare hvis kandidaten er intern. På samme måte kan bare interne kandidater brukes til å forbedre anbefalte intervjutidsplaner. For øyeblikket mottar ikke kandidater (eksterne eller interne) en e-postmøteinvitasjon. De mottar i stedet bare et sammendrag av intervjuene.
 
+Kandidater vil motta e-postmeldingen som oppsummerer intervjuløkken deres. E-postene inneholder en ICS-fil som kan lagres til de personlige kalenderne for enklere tilgang og varslinger om intervjuet.
+
+>[!TIP] 
+> Hvis du sender intervjuplanen til kandidaten på nytt, vil de motta et annet ICS-filvedlegg. Vi anbefaler at du oppdaterer e-postmalene for kandidatens intervjusammendrag for å sikre at kandidatene sletter de tidligere tillagte intervjuhendelser og ikke ser like elementer i kalenderen. 
+
 ## <a name="feedback-activity"></a>Tilbakemeldingsaktivitet
 
-Tilbakemeldingsaktiviteten er valgfri i en jobbmal. I denne aktiviteten kan intervjudeltakere angi anbefalinger eller tilbakemeldinger for en søker. Hvis feltet **Arv tilbakemeldingsdeltakere fra ansettelsesteam** er valgt, angis rekrutterer, ansettelsesansvarlig og intervjuere automatisk i tilbakemeldingsaktiviteten. Organisasjoner kan la intervjuere vise tilbakemeldingen fra andre før de sender sine egen tilbakemelding. Organisasjoner kan også la intervjuerne redigere tilbakemeldingen etter at de har sendt den. Intervjuere blir påminnet om å gi tilbakemelding for intervjuene de nylig har gjennomført, basert på den forhåndsinnstilte konfigurasjonen som del av jobbmalen. Ansettelsesansvarlig eller rekruttereren for jobben kan også velge å minne intervjueren på å gi tilbakemelding, manuelt.
+Tilbakemeldingsaktiviteten er valgfri i en jobbmal. I denne aktiviteten kan intervjudeltakere angi anbefalinger eller tilbakemeldinger for en søker. 
+
+For å inkludere eller begrense kandidatene for å gi tilbakemelding, velger du en verdi i feltet for **Hvem intervjuere skal gi tilbakemelding om**.  De tilgjengelige alternativene er **Alle kandidater**, **Eksterne kandidater** og **Interne kandidater**. Hvis du for eksempel ønsker å hoppe over interne kandidater i første runde med planlegging, setter du **Hvem intervjuere skal gi tilbakemelding om** til **Eksterne kandidater**.
+
+Hvis du velger feltet **Arv tilbakemeldingsdeltakere fra ansettelsesteam**, angis rekrutterer, ansettelsesansvarlig og intervjuere automatisk i tilbakemeldingsaktiviteten. Organisasjoner kan la intervjuere vise tilbakemeldingen fra andre før de sender sine egen tilbakemelding. Organisasjoner kan også la intervjuerne redigere tilbakemeldingen etter at de har sendt den. Intervjuere blir påminnet om å gi tilbakemelding for intervjuene de nylig har gjennomført, basert på den forhåndsinnstilte konfigurasjonen som del av jobbmalen. Ansettelsesansvarlig eller rekruttereren for jobben kan også velge å minne intervjueren på å gi tilbakemelding, manuelt.
 
 ## <a name="interview-activity"></a>Intervjuaktivitet
 
-Intervjuaktiviteten er en valgfri aktivitet med tre komponenter: forespørsel om kandidattilgjengelighet, tidsplan og tilbakemelding. Bruk intervjuaktiviteten i jobbmalen hvis du vil ha hele kandidatens tilgjengelighetsforespørsel, tidsplan og tilbakemelding som en del av prosessen i stedet for å bruke dem hver for seg som en del av ansettelsesprosessen.
+Intervjuaktiviteten er en valgfri aktivitet med tre komponenter: **Forespørsel om kandidattilgjengelighet**, **Tidsplan** og **Tilbakemelding**. Bruk intervjuaktiviteten i jobbmalen hvis du vil ta med alle kandidatens tilgjengelighetsforespørsler, tidsplan og tilbakemelding som en del av prosessen, i stedet for å bruke dem enkeltvis.
+
+Hvis du vil inkludere eller begrense kandidatene som skal intervjues, kan du velge en verdi i feltet for **Hvem du skal intervjue**. De tilgjengelige alternativene er **Alle kandidater**, **Eksterne kandidater** og **Interne kandidater**. Hvis du for eksempel ønsker å hoppe over interne kandidater i første runde med intervjuer, setter du **Hvem du skal intervjue** til **Eksterne kandidater**.

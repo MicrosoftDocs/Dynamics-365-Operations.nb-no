@@ -1,7 +1,7 @@
 ---
 title: Administrasjon av sikkerhet og rolle i Attract
 description: Dette emnet inneholder informasjon om rollesikkerhet i Microsoft Dynamics 365 for Talent - Attract.
-author: josaw1
+author: andreabichsel
 manager: AnnBe
 ms.date: 03/08/2019
 ms.topic: article
@@ -10,20 +10,20 @@ ms.service: dynamics-365-talent
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: anbichse
 ms.search.scope: Talent, Core
 ms.custom: 7521
 ms.assetid: 3b953d5f-6325-4c9e-8b9b-6ab0458a73f8
 ms.search.region: Global
-ms.author: josaw1
+ms.author: anbichse
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: bb313c489a3bdaa71f8db870cab729d86088f4db
-ms.sourcegitcommit: 0bd0215d0735ed47b1b8af93a80bcdbf7ca2cc49
+ms.openlocfilehash: 9c0f9d3304b1b15aa84fd1a296267d606bf9c59d
+ms.sourcegitcommit: 1653d1e28d02f8a9a4bea8df562ac98d7a350ed1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "789703"
+ms.lasthandoff: 04/15/2019
+ms.locfileid: "993697"
 ---
 # <a name="security-and-role-management-in-attract"></a>Administrasjon av sikkerhet og rolle i Attract
 
@@ -70,6 +70,16 @@ Alle brukere som har Microsoft Azure Active Directory (Azure AD) i organisasjone
 
 Brukere som er tilordnet rollen Skrivebeskyttet, har lesetilgang til alle dataene i Attract-miljøet. De kan imidlertid ikke opprette eller redigere data.
 
+## <a name="find-out-which-roles-you-have"></a>Finne ut hvilke roller du har
+
+1.  I Attract klikker du et spørsmålstegn (**?**) i øvre høyre hjørne på siden.
+
+2.  Klikk **Om**.
+
+    Du vil se hvilke roller du har for Attract i vinduet som vises:
+
+    ![Vise Attract-lisenstype](media/attract-license-types.png)
+    
 ## <a name="delegated-roles"></a>Delegerte roller
 
 For hver jobb de er på i ansettelsesteamet, kan rekrutterere og ansettelsesansvarlige angi én eller flere representanter for seg selv. Men de kan ikke angi representanter for andre på ansettelsesteamet.

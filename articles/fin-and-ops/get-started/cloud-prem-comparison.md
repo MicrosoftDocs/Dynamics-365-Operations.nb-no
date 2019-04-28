@@ -1,28 +1,28 @@
 ---
 title: Sammenligning av skyfunksjoner og lokale funksjoner
 description: Emnet viser hvilke funksjoner som støttes i skyen og lokalt.
-author: robinarh
+author: sericks007
 manager: AnnBe
-ms.date: 11/02/2018
+ms.date: 04/01/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User, Developer, IT Pro
-ms.reviewer: robinr
+ms.reviewer: sericks
 ms.search.scope: Operations
 ms.custom: 89563
 ms.assetid: ''
 ms.search.region: Global
-ms.author: robinr
+ms.author: sericks
 ms.search.validFrom: 2017-11-29
 ms.dyn365.ops.version: Platform update 9
-ms.openlocfilehash: 2abddec24776dc84860116cc708e4d8e102dc503
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 18f668bdc49da1022230278f1de8494150e8a5f9
+ms.sourcegitcommit: bdcdcdddcb0517f0c64d541258ccbd119b960719
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "313986"
+ms.lasthandoff: 04/16/2019
+ms.locfileid: "977212"
 ---
 # <a name="comparison-of-cloud-and-on-premises-features"></a>Sammenligning av skyfunksjoner og lokale funksjoner
 
@@ -56,9 +56,12 @@ Tabellene nedenfor viser produktområdene. Søttte for sky og lokalt er oppført
 | Hjelp | | Ja | Antall |
 | Personale | | Ja | Ja |
 | Intelligens | | Ja | Ja |
-| | Elektronisk rapportering (ER) – Integrasjon med LCS | Ja | Nr. |
-| | Elektronisk rapportering (ER) – Integrasjon med SharePoint | Ja | Nr. |
-| | Integrasjon med PowerBI.com | Ja | Nr. |
+| | Elektronisk rapportering (ER) | Ja | Ja |
+| | ER: Integrering med LCS | Ja | Nei |
+| | ER: Integrering med SharePoint | Ja | Nei |
+| | ER: Integrasjon med Regulatory Configuration Services (RCS) | Ja | Nei |
+| | ER: Bruker lokalt filsystem som lagring for ER-konfigurasjoner som er tilgjengelige via ER-repositorier | Nei | Ja |
+| | Integrasjon med PowerBI.com | Ja | Nei |
 | | Analytiske arbeidsområder | Ja | Antall |
 | | Intelligent forretningsprosess: Anbefalinger | Ja | Nr. |
 | | Forfatte Power BI-rapporter med OData ved hjelp av Power BI-skrivebords- eller Excel PowerQuery-verktøy | Ja | Nr. |

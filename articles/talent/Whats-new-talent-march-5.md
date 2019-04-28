@@ -10,7 +10,7 @@ ms.service: dynamics-365-talent
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: anbichse
 ms.search.scope: Talent
 ms.custom: ''
 ms.assetid: ''
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-03-05
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: e6b490a696dc0a00c47e56f57373f330d0e53dde
-ms.sourcegitcommit: 479b8cda7e411830bf1f579fab3692c980dcf850
+ms.openlocfilehash: e4ad32ef71c87f52e59959d80c21ae7fcd6d6524
+ms.sourcegitcommit: 9796d022a8abf5c07abcdee6852ee34f06d2eb57
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "782965"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "949811"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-talent-march-5-2019"></a>Hva er nytt eller endret i Dynamics 365 for Talent (5. mars 2019)?
 
@@ -35,7 +35,7 @@ Dette emnet beskriver funksjoner som enten er nye eller endret i Talent
 
 ### <a name="extending-option-sets-in-attract"></a>Utvide alternativsett i Attract
 
-I Attract finnes det flere felt som er alternativsett i Common Data Service (CDS). Nye funksjoner er lansert for å utvide alternativsettene og begynner med **Avslag**-årsaksfeltet, **Ansettelsestype**-feltet og **Ansiennitetstype**-feltet.
+I Attract finnes det flere felt som er alternativsett i Common Data Service. Nye funksjoner er lansert for å utvide alternativsettene og begynner med **Avslag**-årsaksfeltet, **Ansettelsestype**-feltet og **Ansiennitetstype**-feltet.
 
 > [!IMPORTANT]
 > Jobbposteringen til LinkedIn-funksjonaliteten krever bruk av feltene **Ansettelsestype** og **Ansiennitetstype** på siden **Jobbdetaljer**. Standardverdiene i disse feltene støttes av LinkedIn og vises når jobben posteres. Hvis du posterer jobber i LinkedIn og endrer de eksisterende alternativsettverdiene for disse feltene, vil jobben fortsatt posteres, men LinkedIn vil ikke vise de egendefinerte **Ansettelsestype**- og **Ansiennitetstype**-verdiene.
@@ -70,8 +70,8 @@ Med denne endringen, når du ber om endringer i eksisterende stillinger, vil lø
 ### <a name="other-miscellaneous-bug-fixes"></a>Andre feilrettinger
 Andre mindre feilrettinger er inkludert i denne utgivelsen.
 
-### <a name="upgrade-to-cds-for-apps"></a>Oppgradering til CDS for Apps
-Tidsfrister for å oppgradere til CD for Apps nærmer deg raskt. Logg på PowerApps-administrasjonssenteret for å bestemme om databasen må oppgraderes. Hvis du vil ha mer informasjon om tidsfrister og de nødvendige trinnene for å oppgradere, kan du se [Oppgradere til Common Data Service for Apps](https://docs.microsoft.com/en-us/common-data-service/upgradecds/introduction-upgrade-cds).
+### <a name="upgrade-to-common-data-service"></a>Oppgradere til Common Data Service
+Tidsfrister for å oppgradere til Common Data Service nærmer deg raskt. Logg på PowerApps-administrasjonssenteret for å bestemme om databasen må oppgraderes. Hvis du vil ha mer informasjon om tidsfrister og de nødvendige trinnene for å oppgradere, kan du se [Oppgradere til Common Data Service](https://docs.microsoft.com/en-us/common-data-service/upgradecds/introduction-upgrade-cds).
 
 ## <a name="coming-soon"></a>Kommer snart
 

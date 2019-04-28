@@ -1,64 +1,87 @@
 ---
-title: Omfattende muligheter for ansettelsestillegg i Attract
-description: Dette emnet inneholder informasjon om funksjonene i Microsoft Dynamics 365 for Talent-tillegget Attract med omfattende ansettelse.
-author: ''
+title: Hvilken versjon av Attract
+description: Dette emnet gir informasjon om funksjonene i de ulike versjonene av Microsoft Dynamics 365 for Talent - Attract.
+author: andreabichsel
 manager: AnnBe
-ms.date: 02/01/2019
+ms.date: 04/04/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-talent
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: anbichse
 ms.search.scope: Talent, Core
 ms.custom: 7521
 ms.assetid: 3b953d5f-6325-4c9e-8b9b-6ab0458a73f8
 ms.search.region: Global
-ms.author: rschloma
+ms.author: anbichse
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: 6adc2398d9ebcc655ad7ac7e0c949f44dc011013
-ms.sourcegitcommit: 3b12ff5ca81650ae666ff443b0bc998182f3931e
+ms.openlocfilehash: b061233239fcaee768579cde9d1015ebbeaa66cb
+ms.sourcegitcommit: 1653d1e28d02f8a9a4bea8df562ac98d7a350ed1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/06/2019
-ms.locfileid: "376442"
+ms.lasthandoff: 04/15/2019
+ms.locfileid: "993628"
 ---
-# <a name="attract-comprehensive-hiring-add-on-capabilities"></a>Omfattende muligheter for ansettelsestillegg i Attract
+# <a name="which-version-of-attract"></a>Hvilken versjon av Attract?
 
 [!include[banner](../includes/banner.md)]
 
-Ulike organisasjoner har behov for forskjellige funksjoner i Attract. Derfor finnes det to «nivåer» av Attract-produktet. Det finnes et Attract-produkt som er beregnet på mindre grupper eller organisasjoner, der ansettelsesansvarlig er den primære brukeren i ansettelsesprosessen. Det finnes også et omfattende ansettelsestillegg som kan legges til Attract-produktet, mot en ekstra kostnad, som er beregnet på middels til store grupper eller organisasjoner der rekruttereren eller Talent-spesialisten er den primære brukeren i ansettelsesprosessen.
-Hvis du vil ha mer informasjon om priser og lisensiering, se den nyeste [lisensieringsveiledningen](https://mbs.microsoft.com/Files/public/365/Dynamics365LicensingGuide.pdf).
+Versjonen av Microsoft Dynamics 365 for Talent: Attract som er riktig for deg, er avhengig av organisasjonens størrelse og behov. Den grunnleggende versjonen av Attract inneholder et delsett av funksjonalitet som er utformet for mindre grupper eller organisasjoner der ansettelseslederen er primærbrukeren. Du kan begynne med den grunnleggende versjonen av Attract med én eller flere lisenser.
 
-Kostnadsfrie prøveversjoner av Attract innholder automatisk det omfattende ansettelsestillegget for prøveperioden. Hvis du trenger det omfattende ansettelsestillegget for organisasjonen, kan du finne en [lokal Dynamics 365 for Talent-partner](https://dynamics.microsoft.com/partners/find-a-partner/) som kan hjelpe deg med dette.
+Attract med tillegget for omfattende ansettelse er utformet for middels til store grupper eller organisasjoner der bemanningskonsulenten eller Talent-spesialisten er primærbrukeren. Tillegget for omfattende ansettelse krever at lisenser kjøpes via en [Microsoft Dynamics 365-partner](https://dynamics.microsoft.com/partners/find-a-partner/).
 
-## <a name="capability-details"></a>Funksjonsdetaljer
+> [!NOTE]
+> Prøveversjon av Attract viser Attract med tillegget for omfattende ansettelse. Dette tillegget gir omfattende rekrutterings- og ansettelsesfunksjoner, for eksempel muligheten til å postere jobber til et Attract-karriereområde eller et eksternt område for rekruttering, for eksempel LinkedIn. Hvis du velger den grunnleggende versjonen av Attract, vil abonnementet inkludere et delsett med funksjoner som finnes i prøveversjonen.
 
-Følgende oversikt viser funksjonene i Attract i Attract og Attract med omfattende ansettelsestillegg.
+Hvis du vil ha mer informasjon om priser og lisensiering, se [Microsoft Dynamics 365-lisensieringsveiledningen](https://go.microsoft.com/fwlink/?LinkId=866544).
 
-| **Funksjon**                                           | **Tiltrekk**         | **Attract med omfattende ansettelse** |
-|----------------------------------------------------------|---------------------|---------------------------------------|
-| **Målgruppe / primær** **person**                      | **Personalledere** | **Rekrutterere/Talent-spesialister**    |
-| Jobbrekvisisjonsstyring                                | :heavy_check_mark:   | :heavy_check_mark:                    |
-| Konfigurasjon av ansettelsesprosess på jobbnivå                    | :heavy_check_mark:   | :heavy_check_mark:                    |
-| Kandidatoppretting og profilbehandling                  | :heavy_check_mark:   | :heavy_check_mark:                    |
-| Intelligent intervjuplanlegging                         | :heavy_check_mark:  | :heavy_check_mark:                    |
-| Oppsett av enkel persontalentsamling                        | :heavy_check_mark:   | :heavy_check_mark:                    |
-| Sikkerhets- og rollebehandling                              | :heavy_check_mark:   | :heavy_check_mark:                    |
-| Grunnleggende instrumentbord                                          | :heavy_check_mark:   | :heavy_check_mark:                    |
-| Kandidattilgang til individuelle søknadsdetaljer        | :heavy_check_mark:   | :heavy_check_mark:                    |
-| Godkjenningsflyt for jobbrekvisisjon                             |                     | :heavy_check_mark:                    |
-| Malbehandling for ansettelsesprosess på organisasjonsnivå    |                     | :heavy_check_mark:                    |
-| Jobbutlysing på Attract-karriereområdet                       |                     | :heavy_check_mark:                    |
-| Kandidatsøknadsflyter på Attract-karriereområdet   |                      | :heavy_check_mark:                    |
-| Kandidattilgang til fullstendig profil og søknadshistorikk |                     | :heavy_check_mark:                    |
-| Tilkobling til LinkedIn Recruiter<sup>1</sup>                |                     | :heavy_check_mark:                    |
-| Offer Management                                         |                     | :heavy_check_mark:                    |
-| Oppsett av delte og globale talentsamlinger                     |                     | :heavy_check_mark:                    |
-| Behandling av e-postmaler                                |                     | :heavy_check_mark:                    |
-| Kandidat- og jobbanbefalinger                        |                     | :heavy_check_mark:                    |
+## <a name="feature-comparison"></a>Sammenligning av funksjoner
 
+| Funksjon | Tiltrekk | Tillegg for omfattende ansettelse |
+| ---------- | :-----------: | :-------------------: |
+| Grunnleggende instrumentbord | :heavy_check_mark: | :heavy_check_mark: |
+| Administrere sikkerhet og roller | :heavy_check_mark: | :heavy_check_mark: |
+| Administrere jobbrekvisisjoner | :heavy_check_mark: | :heavy_check_mark: |
+| Opprette ansettelsesprosess på jobbnivå | :heavy_check_mark: | :heavy_check_mark: |
+| Opprette kandidater og administrere profiler | :heavy_check_mark: | :heavy_check_mark: |
+| Opprette enkel talentsamling | :heavy_check_mark: | :heavy_check_mark: |
+| Planlegge intervjuer | :heavy_check_mark: | :heavy_check_mark: |
+| Gi kandidater tilgang til søknadsdetaljer | :heavy_check_mark: | :heavy_check_mark: |
+| Opprette godkjenningsflyter for jobbrekvisisjoner | | :heavy_check_mark: |
+| Administrere ansettelsesprosesser på organisasjonsnivå | | :heavy_check_mark: |
+| Postere jobber til Attract og eksterne karriereområder | | :heavy_check_mark: |
+| Opprette kandidatsøknadsflyter via et Attract-karriereområde | | :heavy_check_mark: |
+| Gi kandidattilgang til en fullstendig profil og søknadshistorikk | | :heavy_check_mark: |
+| Koble til LinkedIn Recruiter<br></br>Denne funksjonen krever en LinkedIn Recruiter-lisens, som må være <br></br> kjøpt separat via LinkedIn.</blockquote> | | :heavy_check_mark: |
+| Behandle tilbud | | :heavy_check_mark: |
+| Opprette delte og globale talentsamlinger | | :heavy_check_mark: |
+| Behandle e-postmaler | | :heavy_check_mark: |
+| Gi kandidat- og jobbanbefalinger | | :heavy_check_mark: |
 
-<sup>1</sup>LinkedIn Recruiter-lisenser, som må kjøpes separat gjennom LinkedIn, er nødvendig for denne funksjonen.
+## <a name="find-out-which-version-of-attract-you-have"></a>Finne ut hvilken versjon av Attract du har
+
+1. I Attract velger du et spørsmålstegn (**?**) i øvre høyre hjørne på siden.
+2. Velg **Om**.
+
+    Vinduet som vises, viser hvilken type Attract-lisens du har.
+
+    ![Vise Attract-lisenstype](media/attract-license-types.png)
+
+## <a name="frequently-asked-questions"></a>Vanlige spørsmål
+
+### <a name="why-dont-i-see-all-the-features-that-were-included-in-the-attract-trial"></a>Hvorfor ser jeg ikke alle funksjoner som er inkludert i Attract-prøveversjonen?
+
+Det finnes flere årsaker til hvorfor du ikke kan se alle funksjonene som er inkludert i Attract-prøveversjonen:
+
+- Attract-prøveversjonen viser Attract med tillegget for omfattende ansettelse, og du har basisversjonen av Attract. Den grunnleggende versjonen av Attract inneholder et delsett av funksjoner som er rettet mot rekrutteringsledere for mindre grupper og organisasjoner.
+- Du har Attract med tillegget for omfattende ansettelse, men du ikke er tilordnet de riktige rollene, slik at du kan bruke alle funksjonene. Hvis du vil ha mer informasjon, kan du se [Administrasjon av sikkerhet og rolle i Attract](security-attract.md).
+
+### <a name="why-dont-i-see-all-the-attract-features-that-my-coworker-sees"></a>Hvorfor vises ikke alle Attract-funksjoner som min kollega ser?
+
+Det finnes flere årsaker til hvorfor du ikke kan se alle Attract-funksjonene som kollegaene dine ser:
+
+- Din kollega arbeider med en prøveversjon eller en lisens for Attract med tillegget for omfattende ansettelse, mens du arbeider med den grunnleggende versjonen av Attract.
+- Du har Attract med tillegget for omfattende ansettelse, men du ikke er tilordnet de riktige rollene, slik at du kan bruke alle funksjonene. Hvis du vil ha mer informasjon, kan du se [Administrasjon av sikkerhet og rolle i Attract](security-attract.md).
