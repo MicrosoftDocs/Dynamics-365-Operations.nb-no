@@ -1,29 +1,29 @@
 ---
 title: Finne kandidater ved hjelp av talentsamlinger
 description: Dette emnet forklarer hvordan du kan opprette og definere talentsamlinger i Attract.
-author: ''
+author: andreabichsel
 manager: AnnBe
-ms.date: 10/22/2018
+ms.date: 04/02/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-talent
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: anbichse
 ms.search.scope: Talent, Core
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: rschloma
+ms.author: anbichse
 ms.search.validFrom: 2018-22-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: cac68799ee5b6e2c8f864acf6d1677a7213b4aaf
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 13b5e3091a4bcdbf1bfbe077ffb04ec8d08a0911
+ms.sourcegitcommit: 9796d022a8abf5c07abcdee6852ee34f06d2eb57
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "305623"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "949350"
 ---
 # <a name="source-candidates-by-using-talent-pools"></a>Finne kandidater ved hjelp av talentsamlinger
 
@@ -44,7 +44,7 @@ Følg trinnene nedenfor for å opprette og dele en talentsamling.
 
     Kategorien **Mine talentsamlinger** viser alle talentsamlinger som du har tilgang til, med detaljer om hver. Detaljene inkluderer eieren av samlingen og antall kandidater.
 
-1. Øverst til høyre velger du **+ Ny** for å åpne dialogboksen **Opprette talentsamling**.
+1. Øverst til høyre på siden velger du **Ny** for å åpne dialogboksen **Opprett talentsamling**.
 1. Angi et unikt navn for talentsamlingen.
 1. Hvis du vil legge til personer som bidragsytere i samlingen, finner du navnene ved hjelp av personvelgeren, og deretter legger du dem til i listen. Du kan bare dele en talentsamling med brukere som har rollen rekrutterer, ansettelsesansvarlig eller Attract-administrator.
 1. Velg **Legg til** for å opprette talentsamlingen.
@@ -78,26 +78,35 @@ Eieren og bidragsyterne til talentsamlingen kan legge til kandidater i talentsam
 
 ## <a name="search-and-view-candidate-profiles"></a>Søke etter og vise kandidatprofiler
 
-Brukere av en talentsamling kan vise en kandidats profil, hans eller hennes LinkedIn-informasjon, relaterte dokumenter eller kandidatens søknadshistorikk. Du kan også søke i hele kandidatdatabasen etter en hvilken som helst kandidat som noen gang har søkt på en stilling i organisasjonen, eller som noensinne er lagt til i talentsamlingen.
+> [!NOTE] 
+> Denne funksjonen er for øyeblikket i forhåndsvisningen. Hvis du vil prøve dette, må du [aktiverer funksjonen i innstillingene for administrasjon av Attract](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/access-preview-feature). 
 
-1. Bruk søkefeltet øverst i kategorien **Mine talentsamlinger** for å søke i hele kandidatdatabasen.
-1. Søk blant forskjellige profilattributter. Velg søkeattributtkategorien, bygg en søkespørring og velg deretter pil mot høyre (**-\>**) til å kjøre søket.
+Talentsamlinger lar deg vise en kandidatprofil, LinkedIn-informasjon, relaterte dokumenter og søknadsloggen. Du kan søke i hele databasen med alle kandidater som er lagt til i talentsamlinger, inkludert lukkede og aktive søkere.
 
-    Du kan slå opp kandidater etter navnet, organisasjonen som de arbeider for, kompetansen som de er merket for, utdannelseshistorikken, gjeldende stilling eller utdanningsnivået de har oppnådd, hvis denne informasjonen er inkludert i profilen.
+>[!NOTE]
+> Når du legger til nye kandidater eller søkere, kan de nye tilleggene ta opptil 15 minutter å indeksere for søk.
 
-    Du kan også opprette en spørring som bruker to eller flere av disse attributtene som vilkår. Kombiner vilkårene ved hjelp av en **og**-operator.
+Med den forbedrede søkeopplevelsen kan du søke gjennom alle kandidatdokumenter og filtrere etter kanditater som er innstilt som nummer to, kilder, ferdigheter, utdanning og mye mer. I tidligere versjoner måtte du angi enheten du ville søke gjennom. Attract kan nå søke i alle kandidattilknyttede felt og rangere resultatene.
 
-    Hvis en hvilken som helst kandidat samsvarer med søket, vises de i søkeresultatene.
+1. Hvis du vil starte et nytt søk gjennom kandidatdatabasen, skriver du inn teksten du vil søke etter, i søkeboksen i **Talentsamlinger**-kategorien. 
 
-1. Hvis du vil begrense søket, kan du oppdatere søket ved å bruke søkefeltet øverst.
+Du kan skrive inn kandidatens navn eller eventuelle andre attributter du leter etter. Hvis du vil dele attributter, bruker du et mellomrom.
 
-    Du kan også bruke listen over smartfiltre på høyre side. Disse smartfiltrene hentes dynamisk inn, basert på søkeresultatene.
+Du kan begrense søket ved å endre søkespørringen eller ved hjelp av smarte filtre på venstre side av siden.
 
-    Søkeresultatene viser de øverste 20 ferdigheter, skoler, organisasjon, og så videre, som oftest finnes i listen over kandidater. Du kan legge til flere filtre for alle disse attributtene for å begrense søkeresultatene enda mer.
+Søkeresultatene viser uthevinger for ulike attributter som samsvarer med søkspørringen. Velg en hvilken som helst kandidaten du er interessert i, for å vise vedkommendes profil.
 
-1. Når du har funnet en kandidat, velger du raden for denne kandidaten for å vise hans eller hennes profil.
+### <a name="syntax-highlights"></a>Syntaksfremhevinger 
 
-Alle brukere har en samlet oversikt over kandidatprofiler. Velg raden for en kandidat i et sett med søkeresultater eller en talentsamling for å vise hans eller hennes profil. **Profil**-kategorien viser informasjon om ferdigheter, arbeidserfaring og utdanning som kandidaten har oppdatert fra karriereportalen.
+| Operatør | Bruk                                                      | Eksempel              |
+|----------|------------------------------------------------------------|----------------------|
+| \*       | Søker etter delstrenger, kan brukes til å returnere alle poster | Inndata: Mi\* <br></br> Resultat: Alle poster som inneholder felt som begynner med "Mi", for eksempel Microsoft, Mikrosystemer, Midtown Enterprises eller Middleton <br></br>Inndata: \* <br></br> Resultat: Alle poster i databasen |
+| ""       | Søker etter et nøyaktig samsvar                                | Inndata: "Microsoft" <br></br> Resultat: Alle poster som inneholder "Microsoft"                    |
+
+>[!WARNING]
+> Ikke slå av relevanssøk for Common Data Service-forekomsten din. Dette deaktiverer søkeopplevelsen i Attract.
+
+Alle brukere har en samlet oversikt over kandidatprofiler. **Profil**-kategorien viser informasjon om ferdigheter, arbeidserfaring og utdanning som kandidaten har angitt som en del av søknadene i karriereportalen.
 
 - Du kan vise kontaktinformasjon for kandidaten. Du kan også redigere eller oppdatere informasjonen etter behov ved hjelp av **Rediger detaljer**-knappen.
 
@@ -109,7 +118,7 @@ Alle brukere har en samlet oversikt over kandidatprofiler. Velg raden for en kan
 
     Hvis du vil vise et dokument, merker du dokumentnavnet i listen over dokumenter. Du kan vise Microsoft Word-dokumenter i programmet ved hjelp av Microsoft Office 365. Du kan også laste ned dokumenter til den lokale datamaskinen ved hjelp av **Last ned**-alternativet for hvert dokument.
 
-- **LinkedIn**-kategorien viser kandidatens LinkedIn-informasjon. Hvis du vil bruke denne kategorien, må du koble til LinkedIn-kontoen i brukerinnstillingene, og det må opprettes en tilkobling til miljøets LinkedIn-rekrutterer. Hvis du vil ha mer informasjon, se [Leverandører med LinkedIn-rekrutterer](./attract-linked-in-recruiter.md).
+- **LinkedIn**-kategorien viser kandidatens LinkedIn-informasjon. Hvis du vil bruke denne kategorien, må du koble til LinkedIn-kontoen i brukerinnstillingene, og det må opprettes en tilkobling til miljøets LinkedIn Recruiter. Hvis du vil ha mer informasjon, se [Kandidatsondering med LinkedIn Recruiter](./attract-linked-in-recruiter.md).
 
 ## <a name="add-candidates-from-a-talent-pool-to-a-job"></a>Legge til kandidater fra en talentsamling i en jobb
 
@@ -117,7 +126,7 @@ Fra søkeresultatene eller en talentsamling kan du overføre en kandidat til all
 
 1. Finn kandidaten ved å bruke søkealternativet, og åpne deretter hans eller hennes profil. Du kan også åpne talentsamlingen fra **Mine talentsamlinger**-kategorien, søke etter kandidaten i talentsamlingen og deretter åpne hans eller hennes profil.
 
-1. På kandidatens profilside velger du **+ Legg til i jobb** øverst til høyre. 
+1. På kandidatens profilside velger du **Legg til i jobb** øverst til høyre. 
      
      Det vises en liste over jobber som du tilhører ansettelsesteamet for, som en rekrutterer eller ansettelsesansvarlig.
 

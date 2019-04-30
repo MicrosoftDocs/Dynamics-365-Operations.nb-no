@@ -3,7 +3,7 @@ title: Tilpasse brukeropplevelsen
 description: Dette emnet forklarer hvordan du kan tilpasse Microsoft Dynamics 365 for Finance and Operations.
 author: TLeforMicrosoft
 manager: AnnBe
-ms.date: 09/28/2018
+ms.date: 04/08/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,16 +18,17 @@ ms.search.region: Global
 ms.author: tlefor
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 53aff09746b92372bb38908a526942ebe9bb4c52
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 517e1dfa19433f19ebeb9d0a50a124002ca46a24
+ms.sourcegitcommit: 9796d022a8abf5c07abcdee6852ee34f06d2eb57
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "363482"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "975857"
 ---
 # <a name="personalize-the-user-experience"></a>Tilpasse brukeropplevelsen
 
 [!include [banner](../includes/banner.md)]
+[!include [banner](../includes/preview-banner.md)]
 
 Dette emnet forklarer hvordan du kan tilpasse Microsoft Dynamics 365 for Finance and Operations.
 
@@ -47,6 +48,8 @@ Siden **Brukeralternativer** inneholder flere systeminnstillinger for gjeldende 
 - **Innstillinger** – Velg standardverdier som brukes hver gang du åpner Finance and Operations. Disse verdiene inkluderer firmaet, startsiden og standard visnings-/ redigeringsmodus. (Vis-/redigeringsmodus avgjør om en side er låst for visning eller åpnet for redigering hver gang du åpner den.) Denne kategorien omfatter også alternativer for språk, tidssone, og dato, klokkeslett og tallformat. Denne kategorien inneholder dessuten flere diverse innstillinger som varierer fra versjon til versjon.
 - **Konto:** – Juster brukernavnet ditt og andre kunderelaterte alternativer.
 - **Arbeidsflyt** – Velg arbeidsflytrelaterte alternativer.
+
+I tillegg til å endre brukerinnstillinger kan du vise og slette bruksdata og tilpasninger ved å klikke på **Bruksdata**-knappen. Når du bruker programmet, huskes mange av valgene, slik at det blir lettere for deg å bruke systemet neste gang. Spesielt **Tilpassing**-kategorien lar deg vise og administrere de personlige endringene du har gjort på sider i systemet. Funksjonsbildeforklaringer, popup-vinduene som viser deg nye funksjoner i produktet (tilgjengelig i Platform update 26), kan også tilbakestilles fra denne kategorien, slik at du igjen varsles om tidligere funksjoner.  
 
 ## <a name="implicit-personalizations"></a>Implisitte tilpasninger
 
@@ -160,7 +163,7 @@ Brukere som har administratorrettigheter, kan også administrere tilpasninger fo
 
 - **Bruk** – Du kan importere eller velge en tilpasning for én eller flere brukere. Hvis du vil bruke en tilpasning på én eller flere brukere, må du først velge en rolle og brukere som har denne rollen. Velg deretter en eksisterende tilpasning som skal brukes på de valgte brukerne, eller importer en tilpasningsfil. Tilpasningen blir godkjent og brukes for alle de valgte brukerne neste gang de åpner den valgte siden.
 - **Fjern** – Du kan fjerne alle tilpasninger for en side eller et arbeidsområde for én eller flere brukere. Velg først en side eller et arbeidsområde for å se en liste over brukerne som har tilpasset den. Velg deretter brukerne som skal ha fjernet tilpasninger for denne siden eller arbeidsområdet, og velg deretter **Fjern**. Alle tilpasninger som de valgte brukerne har brukt på den valgte siden eller arbeidsområdet, slettes. Du kan ikke angre denne handlingen. Hvis en tilpasning ble lagret for siden eller arbeidsområdet, kan tilpasningen importeres på nytt.
-- **Administrer per bruker** – Velg en bruker for å vise listen over sider som denne personen har tilpasset. Du kan deretter aktivere eller deaktivere den valgte brukerens mulighet til å bruke tilpassinger for bestemte sider eller for hele systemet. Du kan også importere, eksportere eller fjerne en tilpassing for den valgte brukeren.
+- **Administrer per bruker** – Velg en bruker for å vise listen over sider som brukeren har tilpasset. Du kan deretter aktivere eller deaktivere den valgte brukerens mulighet til å bruke tilpassinger for bestemte sider eller for hele systemet. Du kan også importere, eksportere eller fjerne en tilpassing for den valgte brukeren. I tillegg kan du tilbakestille funksjonsbildeforklaringer for den valgte brukeren, som vil gjøre at alle tidligere forkastede popup-vinduer som introduserte nye funksjoner, vises igjen neste gang brukeren støter på disse funksjonene.   
 - **System:** – Du kan midlertidig deaktivere alle tilpasninger for alle brukere i systemet. I så fall slettes tilpasningene. Alle sidene er akkurat tilbakestilt til standard tilstand for alle brukere. Hvis du reaktiverer tilpasning senere, vil alle tilpasninger bli brukt på nytt. Du kan også permanent slette alle tilpasninger for alle brukere i systemet. Det er umulig å gjenopprette tilpasninger som er slettet. Før du utfører denne oppgaven må du eksportere tilpasninger du kanskje vil bruke senere.
 
 ## <a name="personalization-of-inventory-dimensions"></a>Tilpassing av lagerdimensjoner

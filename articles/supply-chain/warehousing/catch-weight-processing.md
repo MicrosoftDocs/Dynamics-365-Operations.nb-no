@@ -3,7 +3,7 @@ title: Behandling av Faktisk vekt-produkt med lagerstyring
 description: Dette emnet beskriver hvordan du bruker arbeidsmaler og lokasjonsdirektiver for å bestemme hvordan og hvor arbeid utføres i lageret.
 author: perlynne
 manager: AnnBe
-ms.date: 03/05/2019
+ms.date: 03/18/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2019-1-31
 ms.dyn365.ops.version: 8.1.3
-ms.openlocfilehash: ced22a144e57b624ceacb8bb5c3032218db3a0eb
-ms.sourcegitcommit: bacec397ee48ac583596be156c87ead474ee07df
+ms.openlocfilehash: d4082464dafebfcadd02425081f5f9b5716af01a
+ms.sourcegitcommit: 118cd383a327519a266dfe27720b12e9bbfbac14
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "777278"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "946439"
 ---
 # <a name="catch-weight-product-processing-with-warehouse-management"></a>Behandling av Faktisk vekt-produkt med lagerstyring
 
@@ -97,7 +97,9 @@ For eksempel **Boks** er faktisk vekt-enheten, og du får én pall med åtte bok
 
 Når sporing av faktisk vekt-koder ikke brukes, kan vekten registres for hvert dimensjonssett (for eksempel for hver(t) nummerskilt og sporingsdimensjon). Vekten kan også registreres basert på et aggregert nivå, for eksempel fem nummerskilt (paller).
 
-For metodene for registrering av utgående vekt kan du definere om veiingen utføres for hver faktisk vekt-enhet (det vil si per boks), eller om vekten blir registrert basert på antallet som plukkes (for eksempel tre bokser). Merk at for prosessen for produksjonslinjeplukking brukes gjennomsnittlig vekt hvis alternativet **Ikke registrert** brukes.
+For metodene for registrering av utgående vekt kan du definere om veiingen utføres for hver faktisk vekt-enhet (det vil si per boks), eller om vekten blir registrert basert på antallet som plukkes (for eksempel tre bokser). Merk at for produksjonslinjeplukking og interne flytteprosesser brukes gjennomsnittlig vekt hvis alternativet **Ikke registrert** brukes.
+
+For å begrense plukkeprosessene i lagerstyringen fra å hente vekt som resulterer i justeringer av fortjeneste/tap for faktisk vekt, kan variansmetoden for utgående vekt brukes.
 
 ## <a name="supported-scenarios"></a>Scenarier som støttes
 
@@ -121,14 +123,12 @@ Ikke alle arbeidsflyter støtter behandling av faktisk vekt-produkter med lagers
  
 ### <a name="order-processing"></a>Ordrebehandling
 
-- Behandling av konserninterne order støttes ikke.
 - Oppretting av forhåndsvarsel for forsendelse (ASN/pakkestrukturer) støtter ikke vektinformasjon.
 - Ordreantallet må vedlikeholdes basert på faktisk vekt-enheten.
  
 ### <a name="inbound-warehouse-processing"></a>Innkommende lagerbehandling
 
 - Mottak av nummerskilt krever at vekten tilordnes under registreringen fordi vektinformasjon ikke støttes som en del av forhåndsvarslet for forsendelse. Når faktisk vekt-kodeprosesser brukes, må kodenummeret tilordnes manuelt per faktisk vekt-enhet.
-- Mottak av kombinerte nummerskilt støttes ikke for faktisk vekt-produkter.
  
 ### <a name="inventory-and-warehouse-operations"></a>Beholdning og lageroperasjoner
 
@@ -169,7 +169,6 @@ Ikke alle arbeidsflyter støtter behandling av faktisk vekt-produkter med lagers
  
 ### <a name="other-restrictions-and-behaviors-for-catch-weight-product-processing-with-warehouse-management"></a>Andre begrensninger og virkemåter for behandling av faktisk vekt-produkter med lagerstyring
 
-- Når faktisk vekt-koder registreres som en del av lagerappbehandlingen, kan ikke brukeren avbryte arbeidsflyten.
 - Under plukkeprosesser der brukeren ikke blir bedt om å identifisere sporingsdimensjoner, utføres vekttilordningen basert på gjennomsnittlig vekt. Denne virkemåten oppstår når for eksempel en kombinasjon av sporingsdimensjoner brukes på samme sted og, etter en bruker behandler plukking, bare én sporingsdimensjonsverdi er igjen på lokasjonen.
 - Når lager er reservert for et faktisk vekt-produkt som er konfigurert for lagerstyringsprosesser, gjøres reservasjonen basert på den minste vekten som er definert, selv om dette antallet er det siste behandlingsantallet på lager. Denne virkemåten er forskjellig fra den for varer som ikke er konfigurert for lagerstyringsprosesser.
 - Prosesser som bruker vekten som en del av kapasitetsberegninger (bølgeterskler, maksimale arbeidsinndelinger, maksimumsverdier for beholder, lokasjonsbelastningskapasitet og så videre), bruker ikke den faktiske vekten for lageret. I stedet er prosessene basert på den fysiske håndteringsvekten som er definert for produktet.
@@ -193,3 +192,5 @@ Funksjonen for faktisk vekt-koder støttes for øyeblikket bare som en del av f�
 - Når containere åpnes på nytt.
 - Når formelprodukter rapporteres som ferdig ved å bruke lagerappen.
 - Når transportlaster behandles ved hjelp av lagerappen.
+
+En kode for faktisk vekt kan enten opprettes ved hjelp av en lagerappprosess, som opprettes manuelt i skjemaet, eller ved å opprette en dataenhetsprosess. Hvis en kode for faktisk vekt blir knyttet til en innkommende kildedokumentlinje, for eksempel bestillingslinjen, registreres koden. Hvis linjen blir brukt til utgående behandling. Koden vil bli oppdatert som levert.

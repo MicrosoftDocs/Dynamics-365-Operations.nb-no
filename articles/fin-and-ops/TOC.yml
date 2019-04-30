@@ -26,7 +26,7 @@ items:
           href: get-started/system-requirements-on-prem.md
         - name: Konfigurere lager for lokale distribusjoner
           href: ../dev-itpro/deployment/warehousing-for-on-premise-deployments.md?toc=/fin-and-ops/toc.json
-      - name: Serviceoppdateringer for Standard og første versjon
+      - name: Tilgjengelighet av serviceoppdatering
         href: get-started/public-preview-releases.md
       - name: Kjøpe Finance and Operations
         items:
@@ -43,13 +43,17 @@ items:
         href: get-started/ax-2012-features-not-implemented-but-not-deprecated.md
       - name: Funksjoner som ikke er implementert i lokale distribusjoner
         href: get-started/features-not-implemented-on-prem.md
-      - name: Forhåndsvisningsfunksjoner i Finance and Operations versjon 10.0.1 (april 2019)
+      - name: Forhåndsvisningsfunksjoner i Finance and Operations versjon 10.0.2 (mai 2019)
+        href: get-started/whats-new-changed-10-0-2.md
+      - name: Finance and Operations versjon 10.0.1 (april 2019)
         href: get-started/whats-new-changed-10-0-1.md
       - name: Finance and Operations versjon 10.0 (april 2019)
         href: get-started/whats-new-changed-10.md
       - name: Finance and Operations versjon 8.1.3 (januar 2019)
         href: get-started/whats-new-changed-8-1-3.md
-      - name: Forhåndsvisningsfunksjoner i Finance and Operations med Platform update 25 (april 2019)
+      - name: Forhåndsvisningsfunksjoner i Finance and Operations platform update 26 (mai 2019)
+        href: get-started/whats-new-platform-update-26.md
+      - name: Finance and Operations platform update 25 (april 2019)
         href: get-started/whats-new-platform-25.md
       - name: Platform update 24 (mars 2019)
         href: get-started/whats-new-platform-update-24.md
@@ -209,7 +213,7 @@ items:
       href: ../dev-itpro/migration-upgrade/versions-update-policy.md
     - name: Policy for programvarelivssyklus – lokalt
       href: ../dev-itpro/migration-upgrade/on-prem-version-update-policy.md
-    - name: Serviceoppdateringer for Standard og første versjon
+    - name: Tilgjengelighet av serviceoppdatering
       href: get-started/public-preview-releases.md
     - name: Ta i bruk oppdateringer i skymiljøer
       href: ../dev-itpro/deployment/apply-deployable-package-system.md
@@ -230,12 +234,16 @@ items:
       href: ../dev-itpro/business-events/app-business-events.md
     - name: Forretningshendelser for arbeidsflyt
       href: ../dev-itpro/business-events/business-events-workflow.md
+    - name: Varsler som forretningshendelser
+      href: ../dev-itpro/business-events/alerts-business-events.md
     - name: Forretningshendelser i Microsoft Flow
       href: ../dev-itpro/business-events/business-events-flow.md
     - name: Dokumentasjon for utvikling av forretningshendelser
       href: ../dev-itpro/business-events/business-events-dev-doc.md
     - name: Feilsøke forretningshendelser
       href: ../dev-itpro/business-events/troubleshooting.md
+    - name: Brukstilfeller for forretningshendelser
+      href: ../dev-itpro/business-events/potential-use-cases.md
   - name: Samsvar
     items:
     - name: Regler for overvåkingspolicy
@@ -370,6 +378,8 @@ items:
         href: ../dev-itpro/data-entities/recurring-integrations.md?toc=/fin-and-ops/toc.json
       - name: Teste tjenester ved hjelp av tredjepartsverktøy
         href: ../dev-itpro/data-entities/third-party-service-test.md
+    - name: Finance and Operations-kobling
+      href: ../dev-itpro/data-entities/fin-ops-connector.md
     - name: Utvikling for integrering
       items:
       - name: Dataintegrering ved hjelp av dataenheter
@@ -747,6 +757,8 @@ items:
         href: ../financials/cash-bank-management/cash-flow-forecasting.md
       - name: Arbeidsområde for bank
         href: ../financials/cash-bank-management/Bank-management-workspace.md
+      - name: Bankrevaluering av utenlandsk valuta
+        href: ../financials/cash-bank-management/bank-revaluation.md
       - name: Kontantrabatt
         href: ../financials/cash-bank-management/cash-discounts.md
       - name: Kontantrabatter for overbetalinger
@@ -1893,6 +1905,8 @@ items:
           href: ../financials/localizations/apac-ind-gst-reference-groups.md
         - name: GST-integrering for kassaapparater
           href: ../retail/localizations/apac-ind-cash-registers.md?toc=/fin-and-ops/toc.json
+        - name: Kjøpe en avgiftspliktig vare fra en uregistrert leverandør
+          href: ../financials/localizations/apac-ind-gst-unregistered-vendor-purchase.md
       - name: Retningslinjer for distribusjon for kassaapparater
         href: ../retail/localizations/apac-ind-loc-deployment-guidelines.md?toc=/fin-and-ops/toc.json
       - name: Oversikt over avgiftsmotor
@@ -2291,6 +2305,8 @@ items:
           href: ../financials/localizations/rus-bonus-depreciation.md
         - name: Beregne avskrivning
           href: ../financials/localizations/rus-depreciation-calculation.md
+        - name: Overføre anleggsmidler
+          href: ../financials/localizations/rus-fixed-asset-transfer.md
       - name: Leverandører og kunder
         items:
         - name: Fakturaer for betaling
@@ -2303,6 +2319,8 @@ items:
         items:
         - name: Finansrapportering
           href: ../financials/localizations/rus-financial-reports.md
+        - name: Konfigurere finansrapporter i Excel
+          href: ../financials/localizations/rus-excel-financial-report.md
       - name: Firmaavdelinger
         href: ../financials/localizations/rus-company-divisions.md
       - name: Konfigurere valutakurser for valutatransaksjoner
@@ -2321,6 +2339,10 @@ items:
         href: ../financials/localizations/rus-accounting-reporting.md
       - name: Administrasjon av kontantstrøm
         href: ../financials/localizations/rus-cash-flow.md
+      - name: Salg, kjøp og overføringer i utenlandsk valuta
+        href: ../financials/localizations/rus-currency-sale-purchase.md
+      - name: Vurderte avgiftsdeklareringer
+        href: ../financials/localizations/rus-assessed-tax-declaration.md
     - name: Saudi-Arabia
       href: ../financials/localizations/saudi-arabia.md
       items:
@@ -2669,6 +2691,8 @@ items:
         href: ../dev-itpro/analytics/employee-competencies-and-development-analysis-power-bi-content-pack.md?toc=/fin-and-ops/toc.json
       - name: Ansattutvikling
         href: ../dev-itpro/analytics/employee-development-PBI.md?toc=/fin-and-ops/toc.json
+      - name: Reiseregning og utlegg for Power BI-innhold
+        href: ../dev-itpro/analytics/expense-management-content-pack.md?toc=/fin-and-ops/toc.json
       - name: Finansresultat
         href: ../dev-itpro/analytics/financial-performance-power-bi-content-pack.md?toc=/fin-and-ops/toc.json
       - name: Økonomisk innsikt
@@ -3092,8 +3116,12 @@ items:
         href: ../dev-itpro/mobile-apps/invoice-approval-mobile-workspace.md?toc=/fin-and-ops/toc.json
       - name: Mitt team
         href: ../dev-itpro/mobile-apps/manager-self-service-mobile-workspace.md?toc=/fin-and-ops/toc.json
+      - name: Oversikt over mobilapper for prosjekt
+        href: ../financials/project-management/project-mobile-application-overview.md
       - name: Tidsoppføring for prosjekt
         href: ../financials/project-management/project-time-entry-mobile-workspace.md
+      - name: Timeregistreringer for prosjekt
+        href: ../financials/project-management/project-timesheet.md
       - name: Godkjenning av bestilling
         href: ../supply-chain/procurement/purchase-order-mobile-workspace.md
       - name: Salgsordrer
@@ -3333,6 +3361,8 @@ items:
         href: get-started/create-alerts.md
       - name: Satsvis behandling for varsler
         href: get-started/alerts-managing.md
+      - name: Varselmeldinger til klient via e-post
+        href: get-started/alert-email-notifications.md
     - name: Elektroniske signaturer
       href: organization-administration/electronic-signature-overview.md
       items:
@@ -3373,6 +3403,8 @@ items:
           href: ../supply-chain/production-control/bill-of-material-bom.md
         - name: Funksjonalitet for stykklisteutforming
           href: ../supply-chain/production-control/bom-designer-functionality.md
+        - name: Fantomvarer
+          href: ../supply-chain/production-control/phantom-items.md
         - name: Stykklisteberegninger
           href: ../supply-chain/cost-management/bom-calculations.md
         - name: Administrere måleenhet
@@ -3787,6 +3819,8 @@ items:
       href: ../financials/project-management/project-contracts.md
     - name: Prosjektprognoser og budsjetter
       href: ../financials/project-management/project-forecasts-budgets.md
+    - name: Prosjektsalgsordrer
+      href: ../financials/project-management/project-sales-orders.md
     - name: Bestillinger for et prosjekt
       href: ../financials/project-management/project-purchase-orders.md
     - name: Prosjekttilbud
@@ -3800,8 +3834,12 @@ items:
       items:
       - name: Integrering av Microsoft Project-klient
         href: ../financials/project-management/project-integration.md
+    - name: Oversikt over mobilapper for prosjekt
+      href: ../financials/project-management/project-mobile-application-overview.md
     - name: Mobilt arbeidsområde for registrering av prosjekttid
       href: ../financials/project-management/project-time-entry-mobile-workspace.md
+    - name: Mobilapp for timeregistreringer for prosjekt
+      href: ../financials/project-management/project-timesheet.md
   - name: Salg og markedsføring
     href: ../supply-chain/sales-marketing/overview-sales-marketing.md
     items:
@@ -3809,7 +3847,7 @@ items:
       items:
       - name: Ordrebekreftelse
         href: ../supply-chain/sales-marketing/delivery-dates-available-promise-calculations.md
-      - name: Tidsfrister for ordre
+      - name: Tidsfrister for ordreregistrering
         href: ../supply-chain/sales-marketing/order-entry-deadlines.md
       - name: Leveringsalternativer
         href: ../supply-chain/sales-marketing/delivery-alternatives.md
@@ -4286,9 +4324,9 @@ items:
   href: ../dev-itpro/toc.yml
 - name: Dynamics 365 for Retail
   href: ../retail/toc.yml
-ms.openlocfilehash: a1c64fd645063db11c632b34e8e0b934c97f2251
-ms.sourcegitcommit: d9ed934a142b88340d268fd2bd3753475a3712b0
+ms.openlocfilehash: 9cb4d9114b745a42ad7c7650686639efe33c6192
+ms.sourcegitcommit: 4d77340f5b3480f60a3a28c854fafc83e959f192
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/12/2019
-ms.locfileid: "836402"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "975972"

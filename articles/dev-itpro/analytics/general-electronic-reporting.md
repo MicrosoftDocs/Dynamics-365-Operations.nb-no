@@ -3,14 +3,14 @@ title: Elektronisk rapportering (ER)
 description: Dette emnet gir en oversikt over verktøyet for elektronisk rapportering (ER). Den inneholder informasjon om viktige konsepter, hvilke scenarioer ER støtter, samt en liste over formater som er utviklet og lansert som en del av ER-løsningen.
 author: NickSelin
 manager: AnnBe
-ms.date: 11/01/2017
+ms.date: 03/25/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ERWorkspace
 audience: Application User, Developer, IT Pro
-ms.reviewer: kfend
+ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 ms.custom: 58941
 ms.assetid: 5d51b6a6-ad12-4af9-a66d-a1eb820ae57f
@@ -18,12 +18,12 @@ ms.search.region: global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e619b24fc790399452d6233b2d04987357d87186
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: bc544211891c19104b2b3cb704b55a074784d608
+ms.sourcegitcommit: b95bc0f81bd3bb3d9ec4c61f64f93b5c2bef9e05
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "310812"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "902966"
 ---
 # <a name="electronic-reporting-er"></a>Elektronisk rapportering (ER)
 
@@ -163,21 +163,33 @@ Hvis du vil finne ut hvordan du registrerer en ny ER-leverandør, kan du spille 
 
 #### <a name="repository"></a>Repositorium
 
-Et ER-repositorium lagrer ER-konfigurasjoner. Fire typer ER-repositorier støttes: **Operasjonsressurser**, **LCS-prosjekt (LCS)**, **Filsystem** og **Forskriftsmessig konfigurasjonstjeneste (RCS)**.
+Et ER-repositorium lagrer ER-konfigurasjoner. Følgende typer ER-repositorier støttes: 
 
-Et **Operasjonsressurser**-repositorium gir tilgang til listen over konfigurasjoner som Microsoft, som ER-konfigurasjonsleverandør, gir ut som en del av Finance and Operations-løsningen. Disse konfigurasjonene kan importeres til den gjeldende forekomst av Finance and Operations og brukes til elektronisk rapportering. De kan også brukes til tilleggslokaliseringer og tilpassinger.
+- LCS-delt bibliotek
+- LCS-prosjekt
+- Filsystem
+- Regulatory Configuration Service (RCS)
+- Operasjonsressurser
+
+
+Et **LCS-delt bibliotek**-repositorium gir tilgang til listen over konfigurasjoner i det delte aktivabiblioteket i Lifecycle Services (LCS). Denne typen ER-repositorium kan bare registreres for Microsoft-leverandøren. Fra det delte LCS-aktivabiblioteket kan du importere den nyeste versjonen av ER-konfigurasjoner til den gjeldende Finance and Operations-forekomsten.
 
 **LCS-prosjekt**-repositoriet gir tilgang til listen over konfigurasjoner for et bestemt LCS-prosjekt (aktivabibliotek for LCS-prosjekt), som ble valgt under registrering av repositoriet. ER lar deg laste opp delte konfigurasjoner fra gjeldende Finance and Operations-forekomst til et spesifikt **LCS-prosjekt**-repositorium. Du kan også importere konfigurasjoner fra et **LCS-prosjekt**-repositorium til gjeldende Finance and Operations-forekomst.
 
-Et **Filsystem**-repositorium gir tilgang til listen over konfigurasjonene som er lagret som XML-filer i den bestemte mappen på det lokale filsystemet på maskinen som er vert for AOS-tjenesten. Nødvendig mappe blir valgt i fasen for registrering av repositoriet. Du kan importere konfigurasjoner fra et **Filsystem**-repositorium til gjeldende Finance and Operations-forekomst. Legg merke til at denne typen repositorium er tilgjengelig i følgende Dynamics 365 for Finance and Operations-miljøer:
-- skyvertsbaserte miljøer distribuert for utviklingsformål (som inneholder testmodeller av vedlagte serier)
-- lokalt distribuerte miljøer (lokale forretningsdata (LBD))
+Et **Filsystem**-repositorium gir tilgang til listen over konfigurasjonene som er lagret som XML-filer i den bestemte mappen på det lokale filsystemet på maskinen som er vert for AOS-tjenesten. Nødvendig mappe blir valgt i fasen for registrering av repositoriet. Du kan importere konfigurasjoner fra et **Filsystem**-repositorium til gjeldende Finance and Operations-forekomst. 
 
-Gå til siden [Importere konfigurasjoner for elektronisk rapportering (ER)](./electronic-reporting-import-ger-configurations.md) for mer informasjon om dette.
+Legg merke til at denne typen repositorium er tilgjengelig i følgende Dynamics 365 for Finance and Operations-miljøer:
 
-Et **RCS-forekomst**-repositorium gir tilgang til listen over konfigurasjoner for et bestemt RCS-prosjekt som ble valgt under registrering av repositoriet. Med ER kan du importere fullførte eller delte konfigurasjoner fra den valgte forekomsten av RCS til den gjeldende forekomsten av Finance and Operations, og bruke dem til elektronisk rapportering.
+- Skybaserte miljøer distribuert for utviklingsformål (som inneholder testmodeller av vedlagte serier)
+- Lokalt distribuerte miljøer
 
-Gå til siden [Importere konfigurasjoner for elektronisk rapportering (ER) fra Forskriftsmessig konfigurasjonstjeneste (RCS)](./rcs-download-configurations.md) for mer informasjon om dette.
+Hvis du vil ha mer informasjon, kan du se [Importere elektroniske rapporteringskonfigurasjoner](./electronic-reporting-import-ger-configurations.md).
+
+Et **RCS-forekomst**-repositorium gir tilgang til listen over konfigurasjoner for et bestemt RCS-prosjekt som ble valgt under registrering av repositoriet. Med ER kan du importere fullførte eller delte konfigurasjoner fra den valgte forekomsten av RCS til den gjeldende forekomsten av Finance and Operations, slik at du kan bruke dem til elektronisk rapportering.
+
+Hvis du vil ha mer informasjon, kan du se [Importere ER-konfigurasjoner (Electronic Reporting) fra Regulatory Configuration Service (RCS)](./rcs-download-configurations.md).
+
+Et **Operasjonsressurser**-repositorium gir tilgang til listen over konfigurasjoner som Microsoft, som ER-konfigurasjonsleverandør, opprinnelig gir ut som en del av Finance and Operations-løsningen. Disse konfigurasjonene kan importeres til den gjeldende forekomsten av Finance and Operations og brukes til elektronisk rapportering eller avspilling av eksempeloppgaveveiledninger. De kan også brukes til tilleggslokaliseringer og tilpassinger. Legg merke til at de nyeste versjonene fra Microsoft ER-konfigurasjoner må importeres fra det delte LCS-aktivabiblioteket ved hjelp av det tilsvarende ER-repositoriet.
 
 Nødvendige repositorier for **LCS-prosjekt**, **Filsystem** og **Forskriftsmessig konfigurasjonstjeneste (RCS)** kan registreres individuelt for hver enkelt konfigurasjonsleverandør for gjeldende Finance and Operations-forekomst. Hvert repositorium kan reserveres for en bestemt konfigurasjonsleverandør.
 
@@ -377,6 +389,5 @@ ER lar deg automatisk innføre endringer av den nyeste versjonen av basiskompone
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 
-[Lokaliseringskrav – Opprette en elektronisk rapporteringskonfigurasjon](electronic-reporting-configuration.md)
-
-[Administrere livssyklus til konfigurasjoner for elektronisk rapportering](general-electronic-reporting-manage-configuration-lifecycle.md)
+- [Lokaliseringskrav – Opprette en elektronisk rapporteringskonfigurasjon](electronic-reporting-configuration.md)
+- [Administrere livssyklus til konfigurasjoner for elektronisk rapportering](general-electronic-reporting-manage-configuration-lifecycle.md)

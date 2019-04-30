@@ -1,30 +1,30 @@
 ---
 title: Opprette, godkjenne og postere jobber i Attract
 description: Dette emnet beskriver elementene i en jobb i Attract. Det forklarer også hvordan du oppretter en jobb.
-author: josaw
+author: hasrivas
 manager: AnnBe
-ms.date: 02/26/2019
+ms.date: 03/20/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-talent
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: anbichse
 ms.search.scope: Talent, Core
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.search.industry: ''
-ms.author: josaw
+ms.author: hasrivas
 ms.search.validFrom: 2018-10-24
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: 2f7e0ec7d33579f213909ff9ad911d26800c2b76
-ms.sourcegitcommit: ceef0ee77ffc245e57637e2ea84e1a71a214b3d7
+ms.openlocfilehash: 1e76572c1a843fe7abd515333d5b7cb03b91eb11
+ms.sourcegitcommit: 9796d022a8abf5c07abcdee6852ee34f06d2eb57
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "772817"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "969355"
 ---
 # <a name="create-approve-and-post-jobs-in-attract"></a>Opprette, godkjenne og postere jobber i Attract
 
@@ -44,7 +44,7 @@ Kategorien **Jobbdetaljer** inneholder detaljer om jobbens ansvarsområder og at
 
 Som standard er feltet **Antall ledige stillinger** satt til **1**. Du kan imidlertid endre verdien. Når et tilbud er klargjort for en jobb, reduseres verdien i feltet **Antall ledige stillinger tilgjengelig**.
 
-Hvis stillingsadministrasjon er aktivert i administrasjonssenteret, er **Oppdater stillinger**-oppslaget tilgjengelig. Dette oppslaget leser Jobbstilling-enheten i Common Data Service for Apps og returnerer en liste over stillinger som kan velges for jobben. Hvis antall stillinger du velger, overskrider antall ledige stillinger, får du en advarsel. Du kan også få en advarsel hvis en stilling brukes i flere jobber.
+Hvis stillingsadministrasjon er aktivert i administrasjonssenteret, er **Oppdater stillinger**-oppslaget tilgjengelig. Dette oppslaget leser Jobbstilling-enheten i Common Data Service og returnerer en liste over stillinger som kan velges for jobben. Hvis antall stillinger du velger, overskrider antall ledige stillinger, får du en advarsel. Du kan også få en advarsel hvis en stilling brukes i flere jobber.
 
 > [!NOTE]
 > Stillingsadministrasjon er tilgjengelig med tillegget for omfattende ansettelse.
@@ -74,9 +74,7 @@ Hvis du vil ha mer informasjon om aktiviteter som kan legges til ansettelsespros
 
 ## <a name="postings"></a>Posteringer
 
-Når en jobb er aktivert, kan den posteres. Bare rekrutteringspersoner og administratorer kan postere jobber. Jobben kan posteres til Talent Careers (et karriereområde i Microsoft Dynamics 365 for Talent) eller LinkedIn. 
-
-Attract-teamet jobber kontinuerlig for å samarbeide med jobbtavleaggregatorer. Denne listen utvides over tid.
+Når en jobb er aktivert, kan den posteres. Bare rekrutteringspersoner og administratorer kan postere jobber. Jobben kan posteres til Talent Careers (et karriereområde i Microsoft Dynamics 365 for Talent) eller LinkedIn. Attract-teamet jobber kontinuerlig for å samarbeide med jobbtavleaggregatorer. Denne listen utvides over tid. Når en jobb er postert som bare intern, må kandidater ha en AAD-konto for å vise og søke på jobben. Hvis jobben er oppført som offentlig, kan kandidsater vise og søke på jobber ved hjelp av alle godkjenningsalternativer. 
 
 Hvis du vil ha mer informasjon om ledige stillinger, se [Karriereområde-funksjonalitet i Attract](career-site.md).
 
@@ -137,9 +135,14 @@ Når en jobb er lagret, kan den sendes til godkjenning. Tabellen nedenfor viser 
 
 I jobblisten kan du filtrere på jobbstatusene.
 
-Godkjenninger kan sendes til en Microsoft Azure Active Directory (Azure AD)-bruker i firmaet. Godkjenningene sendes parallelt til alle personene som er oppført som godkjennere. Når en jobb er godkjent, kan den aktiveres.
+Godkjenninger kan sendes til en Microsoft Azure Active Directory (Azure AD)-bruker i firmaet. Godkjenningene sendes parallelt til alle personene som er oppført som godkjennere. Alle godkjennere må godkjenne jobben før den kan flyttes fremover. Hvis en enkelt godkjenner avviser jobben, vil jobben vise en **Avvist**-status. Når en jobb er godkjent, kan den aktiveres.
 
-Folk som er oppført som godkjennere, mottar en melding i Attract for å informere dem om at de har et element å godkjenne. Et godkjenningselement vises også i **Tilordnet til deg**-delen på instrumentbordet. Når noen godtar eller godkjenner en jobb, mottar ansettelsesteamet en varsling. Til slutt mottar ansettelsesteamet en varsling når jobben er godkjent.
+Hvis en bruker redigerer jobben etter at den er godkjent, men ikke aktivert, vil jobbstatusen tilbakestilles til **Utkast**, og prosjektet må sendes på nytt for godkjenning. Når en godkjent jobb er aktivert, kan du ikke redigere den.
+
+Folk som er oppført som godkjennere, mottar en melding i Attract og en e-post for å informere dem om at de har et element å godkjenne.  I e-posten kan godkjennere klikke koblingen for å åpne jobben, gå gjennom detaljene, og enten godkjenne eller avvise. Etter at jobbstatusen er satt til **Godkjent** eller **Avvist**, får avsenderen beskjed i Attract, og de vil motta en e-post. Godkjennere vil også motta en påminnelsese-post hvis de ikke har svart på forespørselen om godkjenning innen 24 timer.
+
+> [!NOTE]
+> Du kan opprette egendefinerte e-postmaler for e-post for godkjenning. Hvis du vil ha mer informasjon, se [Opprette og administrere e-postmaler](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/email-templates).
 
 ## <a name="create-a-job"></a>Opprette en jobb
 

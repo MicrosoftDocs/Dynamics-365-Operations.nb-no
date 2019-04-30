@@ -1,29 +1,29 @@
 ---
 title: Intelligente anbefalinger
 description: Dette emnet forklarer hvordan maskinopplæring kan brukes til å gi anbefalinger for jobber og jobbkandidater.
-author: josaw
+author: andreabichsel
 manager: AnnBe
-ms.date: 10/15/2018
+ms.date: 03/25/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-talent
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: anbichse
 ms.search.scope: Talent, Core
 ms.custom: 7521
 ms.assetid: 3b953d5f-6325-4c9e-8b9b-6ab0458a73f8
 ms.search.region: Global
-ms.author: rschloma
+ms.author: anbichse
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: c6225a311f5ba0b65b45092a1f626b9d6aff3f5e
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: fb31b413cfe3cd168bbb12ce6070325ff5f736da
+ms.sourcegitcommit: dd1e1636d351a15f9c1b6808bea359417a9bd690
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "305639"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "896563"
 ---
 # <a name="intelligent-recommendations"></a>Intelligente anbefalinger
 
@@ -32,8 +32,9 @@ ms.locfileid: "305639"
 Maskinopplæring kan hjelpe rekrutteringspersoner og ansettelsesansvarlige med å finne kandidater til en stilling raskt. Det kan også hjelpe kandidater med å finne stillingene som passer best til deres profil og interesser. Etterhvert som disse funksjonene brukes, og det gis tilbakemelding, forbedres anbefalinger.
 
 > [!NOTE] 
-> - De intelligente anbefalingsfunksjonene er bare tilgjengelige med tillegget for omfattende ansettelse.
-> - For å aktivere kandidat- og jobbanbefalingsfunksjonene må en administrator slå på forhåndsvisningsalternativene for dem. I administrasjonssenteret, i **Funksjonsbehandling**-kategorien, må du kontrollere at alternativet **Forhåndsvisningsfunksjoner** er satt til **På**. Så må du kontrollere at individuelle alternativene **Kandidatanbefaling** og **Jobbanbefaling** er angitt til **På**.
+> - De intelligente anbefalingsfunksjonene er bare tilgjengelige med [tillegget for omfattende ansettelse](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/attract-comprehensive-hiring).
+> - Funksjonalitet som er nevnt i dette emnet, er tilgjengelig som en del av en forhåndsversjon. Innholdet og funksjonaliteten kan bli endret. Hvis du vil bruke denne funksjonen, kan du be administratoren om å aktivere den ved hjelp av **Administrasjonsinnstillinger** i Attract. Sett **Kandidatanbefaling**, **Jobbanbefaling** og **Kundeemneanbefaling** til **På**. Hvis du vil ha mer informasjon, se [Tilgang til forhåndsvisningsfunksjoner i Talent](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/access-preview-feature). 
+
 
 ## <a name="candidate-recommendations"></a>Kandidatanbefalinger
 
@@ -43,4 +44,15 @@ For hvilken som helst anbefalt kandidat kan du velge **Vis kandidat** på kandid
 
 ## <a name="job-recommendations"></a>Jobbanbefalinger 
 
-Når en potensiell ansatt bruker karriereområdet til å søke på en jobb, anbefales andre ledige stillinger i organisasjonen. Anbefalingene er basert på kandidatens tidligere søknader og hans eller hennes CV eller kandidatprofil. Derfor hjelper jobbanbefalinger kandidater med å raskt identifisere jobbene som passer best for disse. Jobbanbefalinger gis til kandidater hvis mer enn ti jobber er postert på karriereområdet. Kandidater kan åpne detaljer for en jobbpostering fra anbefalingskortet. De kan også gi tilbakemelding om en anbefaling for å forbedre fremtidige anbefalinger.
+Når en potensiell ansatt bruker karriereområdet til å søke på en jobb, anbefaler Attract andre ledige stillinger i organisasjonen. Anbefalingene er basert på tidligere søknader og CV-en eller profilen til kandidaten. Derfor hjelper jobbanbefalinger kandidater med å raskt identifisere jobbene som passer best for disse. Jobbanbefalinger gis til kandidater hvis mer enn ti jobber er postert på karriereområdet. Kandidater kan åpne detaljer for en jobbpostering fra anbefalingskortet. De kan også gi tilbakemelding om en anbefaling for å forbedre fremtidige anbefalinger.
+
+## <a name="prospect-recommendations"></a>Kandidatanbefalinger 
+
+Når en ny stilling blir tilgjengelig, kan det ta litt tid å søke gjennom alle tidligere søkere og hele talentnettverket. For å la Attract hjelpe deg med dette kan du bruke intelligente maskinlæringsalgoritmer. Dette betyr at Attract går gjennom alle kandidater og foreslår de som er en god match, så snart du oppretter prosjektet. Hvis du vil vise disse anbefalingene, kan du aktivere **Jobbkandidat**-stadiet for jobben. Det kan ta opptil ett minutt for Attract å skanne hele kandidatdatabasen for å gjøre anbefalinger.
+
+Anbefalingene vises som kort i **Jobbkandidat**-kategorien for alle jobber som har **Jobbkandidat**-trinnet aktivert. Disse kortene viser ferdighetene i jobbkandidatens profil i tillegg til eventuell utdanninginformasjon. Hvis du finner en anbefaling du liker, kan du legge til kandidaten som en jobbkandidat for denne jobben.
+
+> [!NOTE]
+> Hvis du nylig startet ved hjelp av Attract, må du vente til du har 10 eller flere søkere som har fulle profiler eller CVer, før du kan bruke denne funksjonen.
+
+Hvis du vil unngå potensielle avvik i anbefalingene, skanner Attract bare kandidatprofiler for ferdigheter, kvalifikasjoner og andre nøkkelord som samsvarer med jobbeskrivelsen. I tillegg fjerner Attract personlig identifiserbar informasjon fra kandidatprofiler før evaluering.

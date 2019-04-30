@@ -278,7 +278,7 @@ items:
         href: extensibility/class-extensions.md
       - name: Klasseutvidelse via metodebryting og kommandokjede
         href: extensibility/method-wrapping-coc.md
-      - name: Gi navn til retningslinjer for modellutvidelser
+      - name: Gi navn til retningslinjer for utvidelser
         href: extensibility/naming-guidelines-extensions.md
       - name: Redusere modellbegrensninger for å refaktorere overlag til utvidelser
         href: extensibility/refactoring-over-layering.md
@@ -374,6 +374,28 @@ items:
       href: perf-test/continuous-build-test-automation.md
     - name: SysTest-filtrering ved hjelp av klasse- og metodeattributter
       href: perf-test/systest-filtering.md
+    - name: Bibilotek for aksepttest
+      href: perf-test/acceptance-test-library.md
+    - name: Navigasjonskonsepter
+      href: perf-test/concepts-navigation.md
+    - name: Teste datametoder
+      href: perf-test/test-data-methods.md
+    - name: Enheter i biblioteket for aksepttesting
+      href: perf-test/concepts-entities.md
+    - name: Bibliotek for aksepttest, kommandoer
+      href: perf-test/concepts-commands.md
+    - name: Opphavspersoner i biblioteket for aksepttest
+      href: perf-test/concepts-creators.md
+    - name: Spørringer i biblioteket for aksepttest
+      href: perf-test/concepts-queries.md
+    - name: Spesifikasjonsklasser
+      href: perf-test/concepts-specifications.md
+    - name: Bibliotek for aksepttest, veiviser for kodegenerering
+      href: perf-test/code-generation-wizard.md
+    - name: Anbefalte fremgangsmåter for biblioteket for aksepttest
+      href: perf-test/atl-best-practices.md
+    - name: Vanlige spørsmål
+      href: perf-test/atl-faq.md
   - name: Datoeffektivitet
     href: dev-tools/date-effectivity.md
   - name: ISV-lisensiering
@@ -451,6 +473,8 @@ items:
       href: user-interface/control-checklist.md
   - name: Meldinger
     items:
+    - name: Funksjonsbildeforklaringer
+      href: user-interface/feature-callouts.md
     - name: Dialogboksen for glidebryter og meldingsboks
       href: user-interface/slider-messagebox.md
     - name: API for meldingssenter, meldingsfelt og meldingsdetaljer
@@ -920,7 +944,7 @@ items:
       href: deployment/apply-deployable-package-system.md
     - name: Bruke oppdateringer og utvidelser i skybaserte komponenter i Retail-kanal
       href: deployment/Update-retail-channel.md
-    - name: Initialisere skybaserte komponenter i Retail-kanal
+    - name: Initialiser Retail Cloud Scale Unit
       href: deployment/Initialize-Retail-Channels.md
   - name: Lokal distribusjon
     href: deployment/on-premises-deployment-landing-page.md
@@ -1044,7 +1068,7 @@ items:
     items:
     - name: Prosess for å oppgradere til den nyeste versjonen
       href: migration-upgrade/upgrade-latest-update.md
-    - name: Oppdatere miljøer fra versjon 8.0 til 8.1
+    - name: Oppdatere miljøer fra versjon 8.0 til 8.1.X/10.X
       href: migration-upgrade/appupdate-80-81.md
     - name: Policy og skyversjoner for programvarelivssyklus
       href: migration-upgrade/versions-update-policy.md
@@ -1133,6 +1157,12 @@ items:
       href: sysadmin/runby.md
     - name: Satsvis jobb for å håndtere defragmentering av SQL-indeks
       href: sysadmin/batch-job-SQL-defragmentation.md
+    - name: Konfigurere satsvise varsler
+      href: sysadmin/alerts.md
+    - name: Forbedrede partiskjemaer
+      href: sysadmin/enhanced-forms.md
+    - name: Rydd opp i partiloggen
+      href: sysadmin/batch-history-cleanup.md
   - name: Optimaliseringsrådgiver
     href: sysadmin/optimization-advisor-overview.md
     items:
@@ -1225,12 +1255,14 @@ items:
       href: database/import-database.md
     - name: Tidsgjenoppretting av database
       href: database/database-point-in-time-restore.md
-  - name: Opplæring
+  - name: Opplæringer
     items:
     - name: Oppdatering for opplæringsformål
       href: database/dbmovement-scenario-general-refresh.md
-    - name: Feilsøking og diagnose
+    - name: Feilsøke en kopi av produksjonsdatabasen
       href: database/dbmovement-scenario-debugdiag.md
+    - name: Eksportere en kopi av UAT-databasen (standardtest av brukergodkjenning)
+      href: database/dbmovement-scenario-exportuat.md
     - name: Gyllen konfigurasjonskampanje
       href: database/dbmovement-scenario-goldenconfig.md
     - name: Destruktiv testing
@@ -1251,9 +1283,9 @@ items:
     href: lifecycle-services/cloud-operations-servicing.md
   - name: Administrere støtteopplevelser for Finance and Operations
     href: lifecycle-services/cloud-powered-support-lcs.md
-ms.openlocfilehash: b2462f8391ba3253b61c72bea481266d04ac8721
-ms.sourcegitcommit: 32e98213118968307c48b656b663c3df897faa79
+ms.openlocfilehash: 93081e4ccc64b68ae8f5cb3aa0f0c499bc1a426b
+ms.sourcegitcommit: 4d77340f5b3480f60a3a28c854fafc83e959f192
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "773808"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "976018"

@@ -3,7 +3,7 @@ title: Forskriftsmessige oppdateringer
 description: Dette emnet inneholder en liste over planlagte og frigitte forskriftsmessige oppdateringer for Microsoft Dynamics 365 for Finance and Operations.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 02/19/2019
+ms.date: 04/12/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 3beeb77819661de3f6b55766a1f8a5bd1fe023ba
-ms.sourcegitcommit: f6fc90585632918d9357a384b27028f2aebe9b5a
+ms.openlocfilehash: 0bd72bb5bebed84c092142b2b18f8fbbc3d4f711
+ms.sourcegitcommit: 073257c2ec810e3599c1aad5a493bc9f16ffc30d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "832107"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "992842"
 ---
 # <a name="regulatory-updates"></a>Forskriftsmessige oppdateringer
 
@@ -28,12 +28,18 @@ ms.locfileid: "832107"
 
 Dette emnet viser de forskriftsmessige oppdateringene som er planlagt for utgivelse i Microsoft Dynamics 365 for Finance and Operations-støttede lokaliseringer. Leveringstidslinjer kan bli endret, og forventet funksjonalitet kan bli endret eller blir kanskje ikke utgitt. Les [Microsofts-policy](https://go.microsoft.com/fwlink/p/?linkid=2007332) for mer informasjon. 
 
-Forskriftsmessig oppdateringer er forskjellige fra forskriftsmessige funksjoner. Hvis du vil lære mer om planlagte eller utgitte forskriftsmessig funksjoner, kan du se følgende ressurser.
+Forskriftsmessige oppdateringer er funksjoner som er implementert for å støtte ny eller endret landspesifikk lovgivning. Hvis du vil lære mer om andre planlagte og utgitte landsspesifikke funksjoner, kan du se følgende ressurser:
 
-- [Produktmerknader for Dynamics 365 og Power-plattformen](https://docs.microsoft.com/business-applications-release-notes/index)
+- [Produktmerknader for Dynamics 365 og Power Platform](https://docs.microsoft.com/business-applications-release-notes/index)
 - [Nyheter for Microsoft Dynamics 365 for Finance and Operations](../../fin-and-ops/get-started/whats-new-changed.md)
 
-Når det brukes en måned i Dato-kolonnen, planlegges det at den forskriftsmessige oppdateringen leveres en gang i denne måneden. Leveringsdatoen kan være en hvilken som helst dag i denne måneden, ikke bare på den første dagen i måneden.
+Microsoft arbeider for å implementere nye lovbestemte krav så tidlig som mulig. Den faktiske leveringsdatoen avhenger av kunngjøringsdatoen for loven, tilgjengeligheten til kravdetaljene fra de lokale myndighetene, tilgjengeligheten av verktøyene for validering og størrelsen og kompleksiteten i endringen. 
+
+Vi planlegger å levere forskriftsmessige oppdateringer i oppdatering av én versjonstjeneste som utgis i god tid, slik at kunder kan oppdatere og være klar til iverksettingsdatoen (for forskriftsmessige transaksjonsoppdateringer) eller for første obligatoriske rapporteringsfrist (for lovbestemte oppdateringer relatert til rapportering). Kunder og partnere kan forhåndsvise de nye forskriftsmessige oppdateringene i PEAP-programmet (Preview Early Adoption Program).
+
+I tilfelle sene kunngjøringsdatoer, forsinket tilgjengelighet for kravdetaljer eller valideringsverktøy eller svært store eller komplekse endringer kan det hende at det ikke vil være mulig å gjøre en forskriftsmessig oppdatering tilgjengelig innen datoen for generell tilgjengeligheten for en månedlig oppdatering. I så fall vil den forskriftsmessige oppdateringen bli levert som reparasjonsfiler for noen tilgjengelige månedlige oppdateringer.
+
+For de siste forskriftsmessige oppdateringsplanene kan du se tabellen nedenfor. 
 
 |Planlagt utgivelsesdato|Versjon|Land|Forskriftsmessig oppdatering|
 |--------------------|---------------|-------|-------|
@@ -47,7 +53,9 @@ Når det brukes en måned i Dato-kolonnen, planlegges det at den forskriftsmessi
 |      2019. april          |   10.0.1      |    Storbritannia     |[Mva-oppgave, innsendingsendringer (Gjøre mva digital)](emea-gbr-mtd-vat-integration.md)    |    
 |      2019. april          |   10.0.1      |    Brasil     |NF-e ny NT 2018.005         |
 |      2019. april          |   10.0.1      |    Russland     |Endringer i mva-deklareringsformat fra 2019         |
-|      2019. april          |   10.0.1      |    Russland     |Endringer i mva-deklareringsformat fra 2019 (salgs- og innkjøpsbokformater)  |
+|      2019. april          |   10.0.1      |    Russland     |Endringer i mva-deklareringsformat fra 2019 (salgs- og innkjøpsbøker) 
+|      2019. mai            |   10.0.2      | Brasil      |   SPED ECD Layout 7   |
+
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 - Du finner alle planlagte og frigitte forskriftsmessig oppdateringer på [Lifecycle Service – Problemsøk](https://lcs.dynamics.com/Logon/Index) (pålogging kreves).

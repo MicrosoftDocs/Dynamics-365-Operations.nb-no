@@ -10,7 +10,7 @@ ms.service: dynamics-365-talent
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: anbichse
 ms.search.scope: Talent
 ms.custom: ''
 ms.assetid: ''
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-02-27
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: b622276000c56a5af1bb258dbc3c6c4a56af4d20
-ms.sourcegitcommit: 479b8cda7e411830bf1f579fab3692c980dcf850
+ms.openlocfilehash: d8e6a02b43ad60e3a0c4382f98cb808066587da7
+ms.sourcegitcommit: 9796d022a8abf5c07abcdee6852ee34f06d2eb57
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "782966"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "949903"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-talent-february-27-2019"></a>Hva er nytt eller endret i Dynamics 365 for Talent (27. februar 2019)?
 
@@ -87,7 +87,7 @@ Det er vanlig at ansatte som deltar i en organisasjon, har en fremtidig startdat
 
 ## <a name="known-issues"></a>Kjente problemer
 
-### <a name="changes-to-the-core-hr-integration-template-talent-common-data-service-for-apps-to-finance-and-operations"></a>Endringer i Core HR-integrasjonsmalen (Talent Common Data Service for Apps til Finance and Operations)
+### <a name="changes-to-the-core-hr-integration-template-talent-common-data-service-to-finance-and-operations"></a>Endringer i Core HR-integrasjonsmalen (Talent Common Data Service til Finance and Operations)
 Malen for Core HR er oppdatert til en "avansert spørringsmal". Som standard vil derfor den avanserte spørringen være tilgjengelig for prosjekter som opprettes ved hjelp av denne malen. I tillegg vil eventuelle standardfunksjoner bare være synlige i redigeringsprogrammet for avansert spørring. (Standard tilordningsfunksjoner vises som "FN" i tilordningene.)
 
 Hvis du vil ha mer informasjon om tilordningsfeil, kan du se [Hva er nytt eller endret i Dynamics 365 for Talent Core HR (14. desember 2018)](https://docs.microsoft.com/dynamics365/unified-operations/talent/whats-new-talent-december-14).
@@ -100,19 +100,19 @@ Bruk følgende fremgangsmåte for å oppdatere den eksisterende malen.
 
     - **Jobbstillinger til stillinger:** Fjern denne tilordningen.
     - **Den overordnede jobbtilordningsoppgaven for jobbstillinger til stillinger:** Fjern denne tilordningen.
-    - **Jobbstillinger til basisstilling:** Legg til en ny tilordning fra **Jobbstillinger** Common Data Service for Apps-enheten til **Basisstilling** Finance and Operations-enheten. Flytt den til plassering 7 i sekvensen.
+    - **Jobbstillinger til basisstilling:** Legg til en ny tilordning fra **Jobbstillinger** Common Data Service-enheten til **Basisstilling** Finance and Operations-enheten. Flytt den til plassering 7 i sekvensen.
 
         [![Jobbstillinger til basisstilling-tilordning](./media/CDS-Mapping1.png)](./media/CDS-Mapping1.png)
 
-    - **Jobbstillinger til stillingsdetaljer:** Legg til en ny tilordning fra **Jobbstillinger** Common Data Service for Apps-enheten til **Stillingsdetaljer** Finance and Operations-enheten. Flytt den til plassering 8 i sekvensen.
+    - **Jobbstillinger til stillingsdetaljer:** Legg til en ny tilordning fra **Jobbstillinger** Common Data Service-enheten til **Stillingsdetaljer** Finance and Operations-enheten. Flytt den til plassering 8 i sekvensen.
 
         [![Jobbstillinger til stillingsdetaljer-tilordning](./media/CDS-Mapping2.png)](./media/CDS-Mapping2.png)
 
-    - **Jobbstillinger til stillingsvarigheter:** Legg til en ny tilordning fra **Jobbstillinger** Common Data Service for Apps-enheten til **Stillingsvarigheter** Finance and Operations-enheten.
+    - **Jobbstillinger til stillingsvarigheter:** Legg til en ny tilordning fra **Jobbstillinger** Common Data Service-enheten til **Stillingsvarigheter** Finance and Operations-enheten.
 
         [![Jobbstillinger til stillingsvarigheter-tilordning](./media/CDS-Mapping3.png)](./media/CDS-Mapping3.png)
 
-    - **Jobbstillinger til stillingshierarkier:** Legg til en ny tilordning fra **Jobbstillinger** Common Data Service for Apps-enheten til **Stillingshierarkier** Finance and Operations-enheten. Velg **Avansert spørring** for å gjøre den avanserte spørringen tilgjengelig for prosjektet.
+    - **Jobbstillinger til stillingshierarkier:** Legg til en ny tilordning fra **Jobbstillinger** Common Data Service-enheten til **Stillingshierarkier** Finance and Operations-enheten. Velg **Avansert spørring** for å gjøre den avanserte spørringen tilgjengelig for prosjektet.
 
        [![Avansert spørring-knapp](./media/CDS-Advanced-Query.png)](./media/CDS-Advanced-Query.png)
 

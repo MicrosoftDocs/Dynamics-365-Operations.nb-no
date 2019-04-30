@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2017-09-27
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 9354e0dbf8bed9383a9dfcc383a2c9db57457dd0
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 85708c7197a71e6ad9b814e2e63d62122c8890f6
+ms.sourcegitcommit: a6d385db6636ef2b7fb6b24d37a2160c8d5a3c0f
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "353822"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "842728"
 ---
 # <a name="online-and-offline-point-of-sale-pos-operations"></a>Tilkoblede og frakoblede salgsstedsoperasjoner (POS)
 
@@ -93,8 +93,8 @@ Følgende kolonner angir hvor operasjonene kan startes:
 | 614 | Rediger kundeordre | Tilbakekall den valgte ordren, slik at den kan endres i POS. | Antall | Antall | Antall | Antall | Antall |
 | 615 | Rediger tilbud | Tilbakekall det valgte tilbudet, slik at det kan endres i POS. | Antall | Antall | Antall | Antall | Antall |
 | 518 | Utgiftskontoer | Registrer penger som fjernes fra kassaskuffen for uregelmessige utgifter. | Ja | Ja | Ja | Ja | Antall |
-| 919 | Utvidet pålogging | Tilordne eller fjern tillatelse til å logge på ved å skanne en strekkode eller dra et kort. | Ja | Ja | Ja | Antall | Antall |
-| 1 201 | Flytoppføring | Denne operasjonen lar brukeren legge til mer penger i gjeldende skuff eller skift. | Ja | Ja | Ja | Ja | Antall |
+| 919 | Utvidet pålogging | Tilordne eller fjern tillatelse til å logge på ved å skanne en strekkode eller dra et kort. | Ja | Ja | Ja | Ja | Nei |
+| 1201 | Flytoppføring | Denne operasjonen lar brukeren legge til mer penger i gjeldende skuff eller skift. | Ja | Ja | Ja | Ja | Antall |
 | 1218 | Bruk opplåsing for ekstern enhet | Systemet bruker denne operasjonen internt for å låse opp POS-enheter. | Gjelder ikke her | Gjelder ikke her | Gjelder ikke her | Gjelder ikke her | Antall |
 | 520 | Gavekortsaldo | Vis saldoen på et gavekort. | Ja | Ja | Antall | Antall | Antall |
 | 708 | Deaktiver enhet | Deaktiver gjeldende enhet, slik at den ikke kan brukes som kasse på salgssted. | Antall | Antall | Antall | Antall | Antall |
