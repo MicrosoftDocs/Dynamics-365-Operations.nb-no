@@ -1,0 +1,2 @@
+> [!IMPORTANT]
+> <span data-ttu-id="d60ef-101">Denne funksjonen er for øyeblikket bare tilgjengelig for inviterte.</span><span class="sxs-lookup"><span data-stu-id="d60ef-101">This feature is currently available by invitation only.</span></span> <span data-ttu-id="d60ef-102">Du kan søke om at organisasjonen din får delta ved å fullføre [denne undersøkelsen](https://aka.ms/ax2012upgrade).</span><span class="sxs-lookup"><span data-stu-id="d60ef-102">To nominate your organization to participate, please complete [this survey](https://aka.ms/ax2012upgrade).</span></span> 
