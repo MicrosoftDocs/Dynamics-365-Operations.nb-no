@@ -19,26 +19,26 @@ ms.author: ShylaThompson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: a9a6b5b71d8ff1e0f300e7b5f03987942bf2b8ba
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "342736"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1559100"
 ---
-# <a name="accrue-subscription-revenue"></a><span data-ttu-id="93bc2-103">Avsett abonnementsomsetning</span><span class="sxs-lookup"><span data-stu-id="93bc2-103">Accrue subscription revenue</span></span> 
+# <a name="accrue-subscription-revenue"></a><span data-ttu-id="3c23d-103">Avsett abonnementsomsetning</span><span class="sxs-lookup"><span data-stu-id="3c23d-103">Accrue subscription revenue</span></span> 
 
 [!include [banner](../includes/banner.md)]
 
 
-1.  <span data-ttu-id="93bc2-104">Klikk på **Servicestyring** \> **Periodisk** \> **Serviceabonnementer** \> **Avsett abonnementsomsetning**.</span><span class="sxs-lookup"><span data-stu-id="93bc2-104">Click **Service management** \> **Periodic** \> **Service subscriptions** \> **Accrue subscription revenue**.</span></span>
+1.  <span data-ttu-id="3c23d-104">Klikk på **Servicestyring** \> **Periodisk** \> **Serviceabonnementer** \> **Avsett abonnementsomsetning**.</span><span class="sxs-lookup"><span data-stu-id="3c23d-104">Click **Service management** \> **Periodic** \> **Service subscriptions** \> **Accrue subscription revenue**.</span></span>
 
-2.  <span data-ttu-id="93bc2-105">I **Periodekode**-feltet velger du en periodekode.</span><span class="sxs-lookup"><span data-stu-id="93bc2-105">In the **Period code** field, select a period code.</span></span> <span data-ttu-id="93bc2-106">Inntekter posteres for alle abonnenmentsavgiftstransaksjoner som har den valgte periodekoden.</span><span class="sxs-lookup"><span data-stu-id="93bc2-106">Revenue is posted for all subscription fee transactions that have the selected period code.</span></span>
+2.  <span data-ttu-id="3c23d-105">I **Periodekode**-feltet velger du en periodekode.</span><span class="sxs-lookup"><span data-stu-id="3c23d-105">In the **Period code** field, select a period code.</span></span> <span data-ttu-id="3c23d-106">Inntekter posteres for alle abonnenmentsavgiftstransaksjoner som har den valgte periodekoden.</span><span class="sxs-lookup"><span data-stu-id="3c23d-106">Revenue is posted for all subscription fee transactions that have the selected period code.</span></span>
 
-3.  <span data-ttu-id="93bc2-107">I **Posteringsdato**-feltet angir du en posteringsdato og klikker deretter på **OK**.</span><span class="sxs-lookup"><span data-stu-id="93bc2-107">In the **Posting date** field, enter a posting date, and then click **OK**.</span></span>
+3.  <span data-ttu-id="3c23d-107">I **Posteringsdato**-feltet angir du en posteringsdato og klikker deretter på **OK**.</span><span class="sxs-lookup"><span data-stu-id="3c23d-107">In the **Posting date** field, enter a posting date, and then click **OK**.</span></span>
 
 
 > [!NOTE]
-> <P><span data-ttu-id="93bc2-108">Du kan ikke postere påløpt inntekt før transaksjonene er fakturert.</span><span class="sxs-lookup"><span data-stu-id="93bc2-108">You cannot post accrued revenue until the fee transactions are invoiced.</span></span><P>
+> <P><span data-ttu-id="3c23d-108">Du kan ikke postere påløpt inntekt før transaksjonene er fakturert.</span><span class="sxs-lookup"><span data-stu-id="3c23d-108">You cannot post accrued revenue until the fee transactions are invoiced.</span></span><P>
 
 
   
