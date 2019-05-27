@@ -16,11 +16,11 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: a095d0326835b0ae7322d5d58307216ee828649e
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "359526"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1544547"
 ---
 # <a name="modify-formats-to-generate-documents-that-have-application-data"></a>Endre formater for å generere dokumenter med programdata
 
@@ -130,7 +130,7 @@ Trinnene i denne fremgangsmåten forklarer hvordan du utformer elektronisk rappo
 27. Velg 'Arkivhode\Filnavn' i treet.
 28. Velg 'format\Deklarasjon: XML-element(Declaration)\Data: XML-element 1..* (Data)\Filnavn: Elementstreng(File name)' i treet.
 29. Klikk Bind.
-30. Velg 'format\Deklarasjon: XML-element(Declaration)\Data: XML-element 1..* (Data)\Element: XML-element 0..* (Item)\Dim4: XML-element 1..1 (Item)\nummer: Streng(number)' i treet.
+30. Velg 'format\Deklarasjon: XML-element(Declaration)\Data: XML-element 1..* (Data)\Element: XML-element 0..* (Item)\Dim4: XML-element 1..1 (Item)nummer: Streng(number)' i treet.
 31. Velg 'Arkivhode\Arkivlinjer\Varenummer' i treet.
 32. Klikk Bind.
 33. Velg 'format\Deklarasjon: XML-element(Declaration)\Data: XML-element 1..* (Data)\Element: XML-element 0..* (Item)\Dim3: XML-element 1..1 (Amount)\verdi: Numerisk real(value)' i treet.

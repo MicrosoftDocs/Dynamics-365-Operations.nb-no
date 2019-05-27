@@ -1,9 +1,9 @@
 ---
 title: Vise ordrevarslinger på salgsstedet (POS)
-description: Dette emnet beskriver hvordan du aktiverer ordrevarslinger på salgsstedet og varselrammeverket. Til slutt kan utviklere utvide disse meldingene til andre operasjoner enn ordreoppfyllelsesoperasjoner.
+description: Dette emnet beskriver hvordan du aktiverer ordrevarslinger på salgsstedet og varselrammeverket.
 author: ShalabhjainMSFT
 manager: AnnBe
-ms.date: 03/13/2018
+ms.date: 04/30/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -17,12 +17,12 @@ ms.search.industry: retail
 ms.author: ShalabhjainMSFT
 ms.search.validFrom: 2017-10-30
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 41f16d13051f6095bdb04af1586ec06fe0ce93f6
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: e7aceed380f6722353574470d6dee75ebe105c18
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "361343"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1530276"
 ---
 # <a name="show-order-notifications-in-the-point-of-sale-pos"></a>Vise ordrevarslinger på salgsstedet (POS)
 
@@ -55,7 +55,7 @@ Når du har fullført trinnene ovenfor, kan arbeiderne se meldingene på salgsst
 - **Henting i butikk** – Denne gruppen viser hvor mange ordrer som har leveringsmodusen **Henting**, og at hentingen er planlagt fra gjeldende butikk. Du kan trykke nummeret til gruppen for å åpne siden **Ordreoppfyllelse**. I dette tilfellet, filtreres siden slik at den bare viser de aktive bestillingene som er definert for henting fra gjeldende butikk.
 - **Send fra butikk** – Denne gruppen viser hvor mange ordrer som har leveringsmodusen **Forsendelse**, og at forsendelsen er planlagt fra gjeldende butikk. Du kan trykke nummeret til gruppen for å åpne siden **Ordreoppfyllelse**. I dette tilfellet, filtreres siden slik at den bare viser de aktive bestillingene som er definert for forsendelse fra gjeldende butikk.
 
-Når nye ordrer tilordnes til butikken for oppfyllelse, endres varslingsikonet for å angi at det finnes nye meldinger, og antallet for de tilsvarende gruppene blir oppdatert. Men selv om gruppene oppdateres med jevne mellomrom, kan selgsstedbrukere når som helst oppdatere gruppene manuelt ved å velge knappen **Oppdater** ved siden av gruppen. Til slutt, hvis en gruppe har en ny vare, som den gjeldende arbeideren ikke har sett, viser gruppen et ikon som angir at denne gruppen har en ny vare.
+Når nye ordrer tilordnes til butikken for oppfyllelse, endres varslingsikonet for å angi at det finnes nye meldinger, og antallet for de tilsvarende gruppene blir oppdatert. Men selv om gruppene oppdateres med jevne mellomrom, kan salgsstedbrukere når som helst oppdatere gruppene manuelt ved å velge knappen **Oppdater** ved siden av gruppen. Til slutt, hvis en gruppe har en ny vare, som den gjeldende arbeideren ikke har sett, viser gruppen et ikon som angir at denne gruppen har en ny vare.
 
 ## <a name="enable-live-content-on-pos-buttons"></a>Aktiver aktivt innhold på salgsstedsknapper
 
@@ -67,6 +67,10 @@ Salgsstedsknappene kan nå vise et tall som kan hjelpe arbeiderne med å finne u
 Illustrasjonen nedenfor viser innstillingene for aktivt innhold i rutenettet for knappen.
 
 ![Innstillinger for aktivt innhold i rutenettet for knappen](./media/ButtonGridDesigner.png "Innstillinger for aktivt innhold i rutenettet for knappen")
+
+Hvis du vil vise varslingsantallet på en knapp, må du kontrollere at riktig skjermoppsett oppdateres. Hvis du vil bestemme skjermoppsettet som brukes av POS, velger du **Innstillinger**-ikonet øverst til høyre, og noterer **Skjermoppsett-ID** og **Oppsettsoppløsning**. Med Edge-leseren går du nå til **Skjermoppsett**-siden i Dynamics 365 for Finance and Operations, finner **Skjermoppsett-ID** og **Oppsettsoppløsning** som ble identifisert ovenfor, og merker av for **Aktiver direkte innhold**. Gå til **Detaljhandel > IT for detaljhandel > Distribusjonsplan** og kjør 1090 (registre)-jobben for å synkronisere oppsettsendringer. 
+
+![Finn skjermoppsettet som brukes av POS](./media/Choose_screen_layout.png "Finn skjermoppsettet ")
 
 Illustrasjonen nedenfor viser resultatet av å velge **Øverst til høyre** og **Midtstill** i feltet **Innholdsjustering** for knapper i ulike størrelser.
 

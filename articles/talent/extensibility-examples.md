@@ -3,14 +3,14 @@ title: Utvide Talent ved hjelp av PowerApps og Microsoft Flow – eksempelscenar
 description: Dette emnet beskriver noen eksempler på scenarier for utvidelsesmuligheter for Microsoft Dynamics 365 for Talent som bruker Microsoft PowerApps og Microsoft Flow.
 author: negudava
 manager: Annbe
-ms.date: 03/04/2018
+ms.date: 05/01/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-talent
 ms.technology: Dynamics 365 for Talent;PowerApps;Flow;Common Data Service
 ms.search.form: ''
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: anbichse
 ms.search.scope: Talent;Core;Experience Apps
 ms.custom: ''
 ms.assetid: ''
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: negudava
 ms.search.validFrom: 2019-03-04
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: 0aa3578047b9397682a7039d0dbcc05cc1b167e4
-ms.sourcegitcommit: 9796d022a8abf5c07abcdee6852ee34f06d2eb57
+ms.openlocfilehash: c113b0f4ab2c8e44d00fcfca3f0a6ca828a854ae
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "949926"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1518724"
 ---
 # <a name="extend-talent-by-using-powerapps-and-microsoft-flow---example-scenarios"></a>Utvide Talent ved hjelp av PowerApps og Microsoft Flow – eksempelscenarier
 
@@ -101,7 +101,21 @@ Denne malen kan utvides, slik at den kan brukes på alle scenarioer som involver
 
 For å laste ned **Flyt – SharePoint-integrering**-malen, gå til [Flyt – SharePoint-integrering](https://go.microsoft.com/fwlink/?linkid=2082109) på Microsoft Download Center.
 
+## <a name="admin-console-to-manage-talent-pools"></a>Administrasjonskonsoll for å administrere talentsamlinger
 
+Når du aktiverer integrering med LinkedIn, oppretter Attract automatisk en LinkedIn-talentsamling. Når en rekrutterer utveksler InMail med en rekrutt via LinkedIn, oppretter Attract en profil for rekrutten, og rekrutten blir medlem av LinkedIn-talentsamlingen. Denne PowerApps-appen er nyttig for omorganisering av kandidater i talentsamlinger på basis av kompetanse.
+
+Kjør denne PowerApps-appen som administrasjonskonsoll for å utføre følgende oppgaver:
+
+- Angi kandidater i en talentsamling
+- Legge til og fjerne kandidater fra en talentsamling
+- Flytte kandidater fra én talentsamling til en annen
+- Finne ut om kandidater allerede er del av en talentsamling før du flytter dem
+- Kontrollere kompetansen til kandidater før du flytter dem til andre talentsamlinger
+
+Denne PowerApps-appen bruker mange-til-mange-relasjoner, slik at du kan bruke den som en mal for andre scenarier der du må trekke ut poster som har mange-til-mange-relasjoner.
+
+Hvis du vil laste ned malen **Administrasjonskonsoll for å administrere talentsamlinger**, går du til [Administrasjonskonsoll for å administrere talentsamlinger](http://www.microsoft.com/downloads/details.aspx?FamilyID=780a5eee-0e2a-4159-9a83-009f9ccdc469) på Microsoft Download Center.
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 

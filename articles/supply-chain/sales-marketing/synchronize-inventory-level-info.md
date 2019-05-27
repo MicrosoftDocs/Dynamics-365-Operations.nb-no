@@ -3,7 +3,7 @@ title: Synkronisere informasjon om lagernivå fra Finance and Operations til Fie
 description: Dette emnet omhandler malene og de underliggende oppgavene som brukes til å synkronisere lagernivåinformasjon fra Microsoft Dynamics 365 for Finance and Operations til Microsoft Dynamics 365 for Field Service.
 author: ChristianRytt
 manager: AnnBe
-ms.date: 03/13/2019
+ms.date: 05/07/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: 8.1.3
 ms.search.validFrom: 2018-12-01
-ms.openlocfilehash: 6b2bdf1ca6f6ae43cd85c8a1353ee8305052761d
-ms.sourcegitcommit: a6d385db6636ef2b7fb6b24d37a2160c8d5a3c0f
+ms.openlocfilehash: c7dce4427810b93e0ee4f1a27881c2b1b04fb125
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "842562"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1535704"
 ---
 # <a name="synchronize-inventory-level-information-from-finance-and-operations-to-field-service"></a>Synkronisere informasjon om lagernivå fra Finance and Operations til Field Service 
 
@@ -75,6 +75,14 @@ Enheten **Eksternt produktlager** brukes bare for serverdelen i integreringen. D
 
 ## <a name="prerequisites-and-mapping-setup"></a>Forutsetninger og tilordningsdefinisjon
 
+### <a name="data-integration"></a>Dataintegrering
+For at prosjektet skal fungere må du kontrollere at integreringsnøkkelen er oppdatert for msdynce_externalproductinventories.
+1.  Gå til **Dataintegrering > Tilkoblingssett**.
+2.  Velg tilkoblingssettet som brukes.
+3.  I kategorien **Integreringsnøkkel** kontrollerer du at følgende nøkler er lagt til msdynce_externalproductinventories:
+      - msdynce_productnumber (produktnummer)
+      - msdynce_warehouseid (lager-ID)
+      
 ### <a name="data-integration-project"></a>Dataintegrasjonsprosjekt
 Du kan bruke filtre med avansert spørring og filtrering slik at bare bestemte produkter og lagre sender lagernivåinformasjon fra Finance and Operations til Field Service.
 

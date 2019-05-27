@@ -3,7 +3,7 @@ title: Konfigurasjonsnøkler og dataenheter
 description: Dette emnet beskriver forholdet mellom konfigurasjonsnøkler og dataenheter i Microsoft Dynamics 365 for Finance and Operations.
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 01/01/2018
+ms.date: 05/10/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2018-01-01
 ms.dyn365.ops.version: Platform update 13
-ms.openlocfilehash: 8d07a0572e56e97d42c0e1b841905f828edc6f51
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: bf2bdd2eaf406750c885a151aa09468df8a5f4b7
+ms.sourcegitcommit: fd3db9f2052c76a5d906b9ec23cb16222452a362
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "336480"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "1539950"
 ---
 # <a name="configuration-keys-and-data-entities"></a>Konfigurasjonsnøkler og dataenheter
 
@@ -86,7 +86,7 @@ Ved hjelp av konfigurasjonsnøkkelmetadataene som er bygd under enhetslisteoppda
 - Når brukeren laster inn en mal til et dataprosjekt
 - Når et eksisterende dataprosjekt lastes inn
 - Når en mal lastes inn til et dataprosjekt
-- Før eksport-/importjobben utføres (parti, ikke-parti, regelmessig, Odata)
+- Før eksport-/importjobben utføres (parti, ikke-parti, regelmessig, OData)
 - Når brukeren genererer tilordning
 - Når brukeren tilordner felt i tilordningsgrensesnittet
 - Når brukeren legger til bare importerbare felt

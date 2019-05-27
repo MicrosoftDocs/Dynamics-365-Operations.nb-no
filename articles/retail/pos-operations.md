@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2017-09-27
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 85708c7197a71e6ad9b814e2e63d62122c8890f6
-ms.sourcegitcommit: a6d385db6636ef2b7fb6b24d37a2160c8d5a3c0f
+ms.openlocfilehash: 44a2ec48f868c803c80c8df8eb809bc2254e63da
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "842728"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1505102"
 ---
 # <a name="online-and-offline-point-of-sale-pos-operations"></a>Tilkoblede og frakoblede salgsstedsoperasjoner (POS)
 
@@ -70,8 +70,10 @@ Følgende kolonner angir hvor operasjonene kan startes:
 | 106 | Fjern antall | Tilbakestill antallet på den valgte linjen til **1**. | Ja | Ja | Antall | Ja | Antall |
 | 640 | Fjern selger på linje | Fjern provisjonssalgsgruppen (selger) fra den valgte linjen. | Ja | Ja | Antall | Ja | Antall |
 | 121 | Fjern selger | Denne operasjonen støttes ikke. | Gjelder ikke her | Gjelder ikke her | Gjelder ikke her | Gjelder ikke her | Antall |
-| 1055 | Lukk skift | Avslutt gjeldende skiftet, skriv ut en Z-rapport og logg brukeren av systemet. | Ja | Ja | Ja | Antall | Antall |
-| 925 | Kopier banksjekken | Denne operasjonen støttes ikke. | Gjelder ikke her | Gjelder ikke her | Gjelder ikke her | Gjelder ikke her | Ja |
+| 1055 | Lukk skift | Avslutt gjeldende skiftet, skriv ut en Z-rapport og logg brukeren av systemet. | Ja | Ja | Ja | Nei | Nei |
+| 139 | Fullfør transaksjon | Ber brukeren om å velge betalingsmåte | Ja | Ja | Nei | Ja | Nei |
+| 620 | Opprett kundeordre | Konverter POS-transaksjonen til en kundeordre. | Ja | Ja | Nei | Ja\* | Nei |
+| 925 | Kopier banksjekken | Denne operasjonen støttes ikke. | Gjelder ikke | Gjelder ikke her | Gjelder ikke her | Gjelder ikke her | Ja |
 | 620 | Opprett kundeordre | Konverter POS-transaksjonen til en kundeordre. | Ja | Ja | Antall | Ja\* | Antall |
 | 621 | Opprett tilbud | Konverter POS-transaksjonen til et salgstilbud. | Ja | Ja | Antall | Ja\* | Antall |
 | 636 | Opprett detaljhandelstransaksjon | Denne operasjonen lar brukeren opprette en standard salgstransaksjon når standard POS-virkemåte er å opprette kundeordrer. | Ja | Ja | Antall | Ja | Antall |

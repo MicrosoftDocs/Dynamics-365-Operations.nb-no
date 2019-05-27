@@ -18,11 +18,11 @@ ms.author: aevengir
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.openlocfilehash: d0b563044843157940f456b07479bbd6006a42f9
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "347451"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1548679"
 ---
 # <a name="cost-accounting-analysis-power-bi-content"></a>Power BI-innholdet Kostnadsregnskapsanalyse
 
@@ -36,7 +36,7 @@ Power BI-innholdet **Kostnadsregnskapsanalyse** er ment for kostnadskontrolløre
 
 Siden innholdet **Kostnadsregnskapsanalyse** fremhever avvik mellom faktiske kostnader og budsjetterte kostnader, kan ledere bli varslet om positive og negative trender for sine driftsenheter. Ledere kan drille ned til kostnadselementhierarkiene eller individuelle kostnadselementer. På denne måten kan ledere få detaljert innsikt i hvordan kostnadsavvik har oppstått, og deretter iverksette effektive tiltak.
 
-Power BI-innholdet **Kostnadsregnskapsanalyse** lar regnskapsførere analysere hvordan kostnaden flyter gjennom kostnadsobjektene for hele organisasjonen.
+**Kostnadsregnskapsanalyse**-innholdet lar regnskapsførere analysere hvordan kostnaden flyter gjennom kostnadsobjektene for hele organisasjonen.
 
 Hvis du vil ha mer informasjon om kostnadsregnskap, se [startside for kostnadsregnskap](../../financials/cost-accounting/cost-accounting-home-page.md).
 

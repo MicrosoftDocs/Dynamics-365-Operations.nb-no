@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 20a7781486c6e0612c27af02a1bccbc48c55a932
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: c5cfe92b8733a0a6d76e074cc31eec3f3935b512
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "353799"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1530874"
 ---
 # <a name="define-financial-dimensions"></a>Definere finansdimensjoner
 
@@ -47,7 +47,7 @@ Denne oppgaveveiledningen beskriver hvordan du legger til en enhetsstøttet fina
 ## <a name="create-a-custom-financial-dimension"></a>Opprette en egendefinert finansdimensjon
 1. Lukk siden.
 2. Klikk Ny.
-3. Velg et alternativ i feltet Bruk verdier fra <Custom dimension>.
+3. I feltet Bruk verdier fra velger du Egendefinert dimensjon.
 4. Skriv inn en verdi for å beskrive finansdimensjonen i feltet Dimensjonsnavn.
     * Navnet kan ikke inneholde mellomrom eller spesialtegn.  
     * Du kan også angi en kontomaske for å begrense mengden og typen informasjon som du kan angi for dimensjonsverdier.   

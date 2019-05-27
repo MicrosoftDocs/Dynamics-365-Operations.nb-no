@@ -1,9 +1,9 @@
 ---
 title: Oversikt over utligning
-description: Denne artikkelen inneholder generell informasjon om utligningsprosessen. Den beskriver hvilke typer transaksjoner som kan utlignes, når og hvordan transaksjoner kan utlignes, og resultatene av utligningsprosessen.
+description: Dette emnet inneholder generell informasjon om utligningsprosessen. Den beskriver hvilke typer transaksjoner som kan utlignes, når og hvordan transaksjoner kan utlignes, og resultatene av utligningsprosessen.
 author: kweekley
 manager: AnnBe
-ms.date: 12/06/2018
+ms.date: 05/10/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 9b82c6afa2812344ff8200e227ee8c5f2451584f
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: e13bdcdcf6dac68a95e6c2759a66bc59013464cb
+ms.sourcegitcommit: fd3db9f2052c76a5d906b9ec23cb16222452a362
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "338297"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "1539973"
 ---
 # <a name="settlement-overview"></a>Oversikt over utligning
 
 [!include [banner](../includes/banner.md)]
 
-Denne artikkelen inneholder generell informasjon om utligningsprosessen. Den beskriver hvilke typer transaksjoner som kan utlignes, når og hvordan transaksjoner kan utlignes, og resultatene av utligningsprosessen.
+Dette emnet inneholder generell informasjon om utligningsprosessen. Den beskriver hvilke typer transaksjoner som kan utlignes, når og hvordan transaksjoner kan utlignes, og resultatene av utligningsprosessen.
 
 Under utligning brukes transaksjonene fra ett dokument på transaksjonene på et annet dokument for å øke eller redusere saldoen for hvert dokument. En betaling kan for eksempel brukes på en faktura. Ulike transaksjonstyper kan utlignes, til forskjellige tider og ved forskjellige metoder. Utligning kan også forårsake at nye transaksjoner genereres.
 
@@ -40,7 +40,7 @@ Utligning mellom leverandører og kunder kan forekomme mellom alle transaksjonst
 Transaksjoner kan utlignes ved betalingsoppføring. Når du for eksempel foretar en betaling til en leverandør, velger du vanligvis fakturaer som skal betales. Når du velger fakturaer, markerer du dem for utligning mot betalingen. Når kundebetalingsassistenter registrerer en kundebetaling, kan de merke de aktuelle fakturaene for utligning, basert på informasjonen som følger med kundens betaling. Siden **Utlign transaksjoner** brukes til å merke transaksjonene for utligning. Denne siden kan åpnes fra alle ikke-posterte fakturaer eller betalinger. Når transaksjonen posteres, posteres også utligningen. Transaksjoner kan også utlignes etter at de er bokført. Du kan angi og postere en kundebetaling uten at den utlignes mot fakturaer. Du må kanskje gjøre undersøkelser først for å kontrollere at betalingen utlignes mot den riktige fakturaen. Siden **Utlign transaksjoner** kan åpnes fra siden **Alle kunder** eller **Alle leverandører**, eller fra **Transaksjoner**-siden for en kunde eller leverandør. Du kan også reservere posterte forskudd for en faktura ved å merke betalingen for utligning mot en bestilling eller salgsordre. I så fall vil betalingen fortsatt være en åpen saldo, men den kan ikke utlignes mot en annen faktura. Betalingen utlignes automatisk mot fakturaen som opprettes fra bestillingen eller salgsordren.
 
 ## <a name="how-to-settle-transactions"></a>Utligne transaksjoner
-Transaksjoner kan utlignes manuelt, automatisk eller ved å bruke en kombinasjon av de to metodene. Valget av en utligningsmetode avhenger av forretningsprosesser, som kan implementeres gjennom oppsettet av utligning i leverandørparametere og kundeparametere. Du kan opprette leverandørbetalinger og avtalegirobetalinger for kunde ved hjelp av et betalingsforslag, som brukes til å velge fakturaer som skal betales. Betalingsforslaget startes manuelt, men Microsoft Dynamics 365 for Finance and Operations merker automatisk de valgte fakturaene for utligning ved opprettelse av betalinger. Hvis betalingene opprettes manuelt, kan du bruke siden **Utlign transaksjoner** til å velge fakturaer for utligning. Du kan velge fakturaene manuelt, eller du kan bruke alternativet **Merk etter prioritet** for å merke fakturaer automatisk for utligning. Alternativet **Merk etter prioritet** er bare tilgjengelig for kunder. Hvis du vil aktivere dette alternativet, kan du bruke **Utligningsprioritet**-siden under kundeparametere. Hvis en betalingsassistent angir en betaling, men ikke utligner denne betalingen før han eller hun posteres den, kan betalingen utlignes automatisk. Du kan aktivere automatisk utligning i kundeparametere og leverandørparametere. Når du bruker automatisk utligning, kan du bruke den forhåndsdefinerte utligningsrekkefølgen, eller du kan definere en egen prioritetsrekkefølge for utligning i Kundeparametere. Denne funksjonen er bare tilgjengelig for kunder.
+Transaksjoner kan utlignes manuelt, automatisk eller ved å bruke en kombinasjon av de to metodene. Valget av en utligningsmetode avhenger av forretningsprosesser, som kan implementeres gjennom oppsettet av utligning i leverandørparametere og kundeparametere. Du kan opprette leverandørbetalinger og avtalegirobetalinger for kunde ved hjelp av et betalingsforslag, som brukes til å velge fakturaer som skal betales. Betalingsforslaget startes manuelt, og deretter merker Dynamics 365 for Finance and Operations automatisk de valgte fakturaene for utligning ved opprettelse av betalinger. Hvis betalingene opprettes manuelt, kan du bruke siden **Utlign transaksjoner** til å velge fakturaer for utligning. Du kan velge fakturaene manuelt, eller du kan bruke alternativet **Merk etter prioritet** for å merke fakturaer automatisk for utligning. Alternativet **Merk etter prioritet** er bare tilgjengelig for kunder. Hvis du vil aktivere dette alternativet, kan du bruke **Utligningsprioritet**-siden under kundeparametere. Hvis en betalingsassistent angir en betaling, men ikke utligner denne betalingen før den posteres, kan betalingen utlignes automatisk. Du kan aktivere automatisk utligning i kundeparametere og leverandørparametere. Automatisk utligning utligner transaksjoner i samme juridiske enhet og utligner ikke på tvers av flere juridiske enheter. Når du bruker automatisk utligning, kan du bruke den forhåndsdefinerte utligningsrekkefølgen, eller du kan definere en egen prioritetsrekkefølge for utligning i Kundeparametere. Denne funksjonen er bare tilgjengelig for kunder.
 
 ## <a name="results-of-settlement"></a>Resultat av utligning
 Når transaksjonene er utlignet, økes eller reduseres den utestående saldoen for hver transaksjon etter behov. I de fleste tilfeller, der en faktura og betaling er utlignet, oppdateres statusen og saldoen for hver transaksjon i henhold til følgende regler:

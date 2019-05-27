@@ -3,7 +3,7 @@ title: Forbedringer for utdragsposteringsfunksjonalitet
 description: Dette emnet beskriver forbedringene som er gjort i funksjonen for utdragspostering.
 author: josaw1
 manager: AnnBe
-ms.date: 04/26/2016
+ms.date: 05/14/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.industry: retail
 ms.author: anpurush
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 3e8c5466a68fa87326c46a4e36bf7399be1279c6
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 02880edda6c34c24f8dad8cc8cbeafe215f46896
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "321438"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "1541297"
 ---
 # <a name="improvements-to-statement-posting-functionality"></a>Forbedringer for utdragsposteringsfunksjonalitet
 
@@ -43,9 +43,9 @@ Finance and Operations omfatter følgende valideringer som er knyttet til disse 
 - Samme konfigurasjonsnøklene som skal brukes for alle operasjoner som utføres på en angitt setning under livssyklusen (Opprett, Beregn, Slett, Poster og så videre). For eksempel du kan ikke opprette og beregne et utdrag når **Detaljhandelsutdrag (eldre)**-konfigurasjonsnøkkelen er aktivert, og deretter prøve å postere det samme utdraget når **Detaljhandelsutdrag**-konfigurasjonsnøkkelen er aktivert.
 
 > [!NOTE]
-> Vi anbefaler at du bruker **Detaljhandelsutdrag**-konfigurasjonsnøkkelen for forbedret utdragspostering, med mindre du har gode grunner til å bruke **Detaljhandelsutdrag (eldre)**-konfigurasjonsnøkkelen i stedet for. Microsoft vil fortsette å investere i nye og forbedrede utdragspostering, og det er viktig at du bytter til den ved å dra nytte av den første anledning. Den eldre funksjonen for utdragspostering vil avvikles i fremtidige versjoner.
+> Vi anbefaler at du bruker **Detaljhandelsutdrag**-konfigurasjonsnøkkelen for forbedret utdragspostering, med mindre du har gode grunner til å bruke **Detaljhandelsutdrag (eldre)**-konfigurasjonsnøkkelen i stedet for. Microsoft vil fortsette å investere i nye og forbedrede utdragspostering, og det er viktig at du bytter til den ved å dra nytte av den første anledning. Den eldre funksjonen for utdragspostering vil avvikles fra og med versjon 8.0.
 
-## <a name="setup"></a>Definere
+## <a name="setup"></a>Oppsett
 
 Som en del av forbedringene for funksjonen for utdragspostering har tre nye parametere blitt lagt til på hurtigfanen **Utdrag** på **Postering**-fanen på siden **Detaljhandelsparametere**:
 
@@ -56,11 +56,15 @@ Som en del av forbedringene for funksjonen for utdragspostering har tre nye para
 
 - **Deaktivering av opptelling kreves** – når dette alternativet er satt til **Ja**, fortsetter posteringsprosessen for et utdrag, selv om forskjellen mellom det talte beløpet og transaksjonsbeløpet på utdraget er utenfor terskelen som er definert i den **Utdrag** hurtigfane for detaljhandel.
 
-I tillegg er feltet **Maksimalt antall parallell kontoutdragspostering** lagt til på hurtigfanen **Satsvis behandling**. Dette feltet angir hvor mange satsvise oppgaver som skal kjøres samtidig. For øyeblikket, må du manuelt angi verdien i dette feltet.
+I tillegg er følgende parametere introdusert i hurtigfanen **Satsvis behandling** i kategorien **Postering** på siden **Detaljhandelsparametere**: 
 
-Med den nye posteringsprosessen må du definere et **Gavekortprodukt** i hurtigfanen **Gavekort** i kategorien **Postering** på siden **Detaljhandelsparametere**. Dette gjelder selv om ingen gavekort brukes av organisasjonen.
+- **Maksimalt antall parallell kontoutdragspostering** – Dette feltet definerer antall satsvise oppgaver som skal brukes til å postere flere utdrag. 
+- **Maks. tråd for ordrebehandling per utdrag** – Dette feltet viser det maksimale antallet tråder som brukes av den satsvise jobben for utdragspostering for å opprette og fakturere salgsordrer for ett enkelt utdrag. Det totale antallet tråder som vil bli brukt av utdragsposteringsprosessen, beregnes basert på verdien i denne parameteren multiplisert med verdien i parameteren **Maksimalt antall parallell kontoutdragspostering**. Hvis du angir verdien for denne parameteren for høyt, kan det ha negativ innvirkning på ytelsen til utdragsposteringsprosessen.
+- **Maks. transaksjonslinjer inkludert i aggregering** – Dette feltet definerer antall transaksjonslinjer som skal inkluderes i en enkelt aggregert transaksjon før det opprettes en ny. Aggregerte transaksjoner opprettes basert på forskjellige aggregeringskriterier, for eksempel kunde, forretningsdato eller finansdimensjoner. Det er viktig å merke seg at linjene fra en enkelt detaljhandelstransaksjon ikke vil bli delt på tvers av forskjellige aggregerte transaksjoner. Dette betyr at det er en mulighet for at antall linjer i en aggregert transaksjon er litt høyere eller lavere, basert på faktorer som antall forskjellige produkter.
+- **Maksimalt antall tråder for å validere butikktransaksjoner** – Dette feltet definerer antall tråder som skal brukes til å validere detaljhandelstransaksjoner. Validering av detaljhandelstransaksjoner er et obligatorisk trinn som må inntreffe før transaksjonene kan overføres til utdragene. Du må også definere et **Gavekortprodukt** i hurtigfanen **Gavekort** i kategorien **Postering** på siden **Detaljhandelsparametere**. Dette må defineres selv om gavekort ikke brukes av organisasjonen.
 
-Legg merke til at alle innstillingene og parameterne som er knyttet til utdragsposteringer, og som er definert på detaljhandel og på siden **Detaljhandelsparametere**, gjelder for den forbedrede funksjonen for utdragspostering.
+> [!NOTE]
+> Alle innstillingene og parameterne som er knyttet til utdragsposteringer, og som er definert på detaljhandel og på siden **Detaljhandelsparametere**, gjelder for den forbedrede funksjonen for utdragspostering.
 
 ## <a name="processing"></a>Behandling
 

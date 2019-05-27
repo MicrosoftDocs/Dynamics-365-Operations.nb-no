@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7201397cd839048465ee0cd8e97c267ab8cbfeb7
-ms.sourcegitcommit: 073257c2ec810e3599c1aad5a493bc9f16ffc30d
+ms.openlocfilehash: 7afe26b535ca2578d2db17f676c3cae4bafc355f
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "992889"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1527677"
 ---
 # <a name="removed-or-deprecated-features"></a>Fjernede eller avskrevne funksjoner
 
@@ -66,26 +66,6 @@ Denne listen er ment å hjelpe deg med å vurdere disse fjerningene og avskrivni
 | **Berørte produktområder**         | Webklient |
 | **Distribusjonsalternativ**              | Alle |
 | **Status**                         | Avskrevet: Fra april 2020 blir den forbedrede "er en av"-opplevelsen standard virkemåte, uten en mekanisme for å gå tilbake til den gamle virkemåten. |
-
-### <a name="deriving-from-internal-classes-is-deprecated"></a>Avleding fra interne klasser er avskrevet
-
-|   |  |
-|------------|--------------------|
-| **Årsak til avskrivning/fjerning** | Før Platform update 25 var det mulig å opprette en klasse eller tabell som var avledet fra en intern klasse/tabell som er definert i en annen pakke/modul. Dette er ikke en sikker kodepraksis. Fra og med Platform update 25 viser kompilatoren en advarsel. |
-| **Erstattet med en annen funksjon?**   | Kompilatoradvarselen vil bli erstattet av en feil i Platform update 26. Denne endringen er bakoverkompatibel ved kjøretid, som betyr at Platform update 25 eller nyere kan distribueres i et hvilket som helst sandkasse- eller produksjonsmiljø uten å måtte endre egendefinert kode. Denne endringen påvirker bare utviklings- og kompileringstid.|
-| **Berørte produktområder**         | Visual Studio-utviklingsverktøy |
-| **Distribusjonsalternativ**              | Alle |
-| **Status**                         | Avskrevet: Advarselen vil bli en kompileringsfeil i Platform update 26. |
-
-### <a name="overriding-internal-methods-is-deprecated"></a>Overstyring av interne metoder er avskrevet
-
-|   |  |
-|------------|--------------------|
-| **Årsak til avskrivning/fjerning** | Før Platform update 25 var det mulig å overstyre en intern metode i en avskrevet klasse som er definert i en annen pakke/modul. Dette er ikke en sikker kodepraksis. Fra og med Platform update 25 viser kompilatoren en advarsel. |
-| **Erstattet med en annen funksjon?**   | Denne advarselen vil bli erstattet av en kompileringsfeil i Platform update 26. Denne endringen er bakoverkompatibel ved kjøretid, som betyr at Platform update 25 eller nyere kan distribueres i et hvilket som helst sandkasse- eller produksjonsmiljø uten å måtte endre egendefinert kode. Denne endringen påvirker bare utviklings- og kompileringstid. |
-| **Berørte produktområder**         | Visual Studio-utviklingsverktøy |
-| **Distribusjonsalternativ**              | Alle |
-| **Status**                         | Avskrevet: Advarselen vil bli en kompileringsfeil i Platform update 26. |
 
 ### <a name="parameter-to-enable-sales-orders-with-multiple-project-contract-funding-sources"></a>Parameteren for å aktivere salgsordrer med flere finansieringskilder for prosjektkontrakt
 Støtte for opprettelse av prosjektbaserte salgsordrer der prosjektkontrakten har flere finansieringskilder, er aktivert med **Prosjektparametere management**-innstillingen **Tillat salgsordrer for prosjekt med flere finansieringskilder**. Denne parameteren er ikke aktivert som standard. 
