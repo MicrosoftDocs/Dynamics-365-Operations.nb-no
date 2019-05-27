@@ -17,57 +17,57 @@ ms.author: mrolecki
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.openlocfilehash: 6781ac38fff6344bfc9546c3ffd2253fb3ef712c
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "342138"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1570036"
 ---
-# <a name="create-payments-for-a-customer-who-have-direct-debit-mandates"></a><span data-ttu-id="66fcc-103">Opprette betalinger for en kunde som har avtalegiromandater</span><span class="sxs-lookup"><span data-stu-id="66fcc-103">Create payments for a customer who have direct debit mandates</span></span>
+# <a name="create-payments-for-a-customer-who-have-direct-debit-mandates"></a><span data-ttu-id="ff1d3-103">Opprette betalinger for en kunde som har avtalegiromandater</span><span class="sxs-lookup"><span data-stu-id="ff1d3-103">Create payments for a customer who have direct debit mandates</span></span>
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="66fcc-104">Denne prosedyren viser hvordan du genererer en betalingsfil for avtalegiro for ISO20022 for en kunde som har konfigurert AvtaleGiro og en faktura som skal betales.</span><span class="sxs-lookup"><span data-stu-id="66fcc-104">This procedure shows how to generate an ISO20022 direct debit payment file for a customer who has direct debit configured and an invoice to be paid.</span></span> <span data-ttu-id="66fcc-105">Oppretting og bokføring av en faktura er valgfritt.</span><span class="sxs-lookup"><span data-stu-id="66fcc-105">Creating and posting an invoice is optional.</span></span> <span data-ttu-id="66fcc-106">I stedet for at en faktura må betales, kan du velge et mandat i en journal før en betalingsfil genereres, for å støtte et scenario med kundeforskuddsbetaling.</span><span class="sxs-lookup"><span data-stu-id="66fcc-106">Instead of having an invoice to be paid you can select a mandate in a journal prior to generating a payment file, to support a customer prepayment scenario.</span></span>
+<span data-ttu-id="ff1d3-104">Denne prosedyren viser hvordan du genererer en betalingsfil for avtalegiro for ISO20022 for en kunde som har konfigurert AvtaleGiro og en faktura som skal betales.</span><span class="sxs-lookup"><span data-stu-id="ff1d3-104">This procedure shows how to generate an ISO20022 direct debit payment file for a customer who has direct debit configured and an invoice to be paid.</span></span> <span data-ttu-id="ff1d3-105">Oppretting og bokføring av en faktura er valgfritt.</span><span class="sxs-lookup"><span data-stu-id="ff1d3-105">Creating and posting an invoice is optional.</span></span> <span data-ttu-id="ff1d3-106">I stedet for at en faktura må betales, kan du velge et mandat i en journal før en betalingsfil genereres, for å støtte et scenario med kundeforskuddsbetaling.</span><span class="sxs-lookup"><span data-stu-id="ff1d3-106">Instead of having an invoice to be paid you can select a mandate in a journal prior to generating a payment file, to support a customer prepayment scenario.</span></span>
 
 
 
-<span data-ttu-id="66fcc-107">Demonstrasjonsdatafirmaet DEMF brukes til å opprette denne prosedyren.</span><span class="sxs-lookup"><span data-stu-id="66fcc-107">The demo data company used to create this procedure is DEMF.</span></span>
+<span data-ttu-id="ff1d3-107">Demonstrasjonsdatafirmaet DEMF brukes til å opprette denne prosedyren.</span><span class="sxs-lookup"><span data-stu-id="ff1d3-107">The demo data company used to create this procedure is DEMF.</span></span>
 
 
 
-<span data-ttu-id="66fcc-108">Dette er den femte av fem prosedyrer, som viser kundebetalingsprosessen ved hjelp av konfigurasjoner for elektronisk rapportering.</span><span class="sxs-lookup"><span data-stu-id="66fcc-108">This is the fifth of five procedures that demonstrate the customer payment process using electronic reporting configurations.</span></span> <span data-ttu-id="66fcc-109">Før du kan gjøre denne oppgaven, må du fullføre de tidligere oppgavene.</span><span class="sxs-lookup"><span data-stu-id="66fcc-109">Before you can complete this task, you must complete the earlier tasks.</span></span> <span data-ttu-id="66fcc-110">Du må først importere elektroniske rapporteringskonfigurasjoner for kundebetaling, konfigurere metoder for betalinger, og du må definere informasjonen om firmaet og kunden.</span><span class="sxs-lookup"><span data-stu-id="66fcc-110">You must first import customer payment electronic reporting configurations, configure method of payments, and set up your company and customer information.</span></span> 
+<span data-ttu-id="ff1d3-108">Dette er den femte av fem prosedyrer, som viser kundebetalingsprosessen ved hjelp av konfigurasjoner for elektronisk rapportering.</span><span class="sxs-lookup"><span data-stu-id="ff1d3-108">This is the fifth of five procedures that demonstrate the customer payment process using electronic reporting configurations.</span></span> <span data-ttu-id="ff1d3-109">Før du kan gjøre denne oppgaven, må du fullføre de tidligere oppgavene.</span><span class="sxs-lookup"><span data-stu-id="ff1d3-109">Before you can complete this task, you must complete the earlier tasks.</span></span> <span data-ttu-id="ff1d3-110">Du må først importere elektroniske rapporteringskonfigurasjoner for kundebetaling, konfigurere metoder for betalinger, og du må definere informasjonen om firmaet og kunden.</span><span class="sxs-lookup"><span data-stu-id="ff1d3-110">You must first import customer payment electronic reporting configurations, configure method of payments, and set up your company and customer information.</span></span> 
 
 
-## <a name="post-a-free-text-invoice-with-direct-debit-information"></a><span data-ttu-id="66fcc-111">Postere en fritekstfaktura AvtaleGiro-informasjon</span><span class="sxs-lookup"><span data-stu-id="66fcc-111">Post a free text invoice with direct debit information</span></span>
-1. <span data-ttu-id="66fcc-112">Gå til Kunder > Fakturaer > Alle fritekstfakturaer.</span><span class="sxs-lookup"><span data-stu-id="66fcc-112">Go to Accounts receivable > Invoices > All free text invoices.</span></span>
-2. <span data-ttu-id="66fcc-113">Klikk Ny.</span><span class="sxs-lookup"><span data-stu-id="66fcc-113">Click New.</span></span>
-3. <span data-ttu-id="66fcc-114">Angi eller velg en verdi i Kundekonto-feltet.</span><span class="sxs-lookup"><span data-stu-id="66fcc-114">In the Customer account field, enter or select a value.</span></span>
-    * <span data-ttu-id="66fcc-115">Velg for eksempel DE-010.</span><span class="sxs-lookup"><span data-stu-id="66fcc-115">For example, select DE-010.</span></span>  
-4. <span data-ttu-id="66fcc-116">Angi eller velg en verdi i Betalingsmåte-feltet.</span><span class="sxs-lookup"><span data-stu-id="66fcc-116">In the Method of payment field, enter or select a value.</span></span>
-    * <span data-ttu-id="66fcc-117">For eksempel.</span><span class="sxs-lookup"><span data-stu-id="66fcc-117">For example.</span></span> <span data-ttu-id="66fcc-118">Velg elektronisk.</span><span class="sxs-lookup"><span data-stu-id="66fcc-118">select Electronic.</span></span>  
-5. <span data-ttu-id="66fcc-119">Angi eller velg en verdi i feltet ID for avtalegiromandat.</span><span class="sxs-lookup"><span data-stu-id="66fcc-119">In the Direct debit mandate ID field, enter or select a value.</span></span>
-6. <span data-ttu-id="66fcc-120">Klikk Legg til linje.</span><span class="sxs-lookup"><span data-stu-id="66fcc-120">Click Add line.</span></span>
-7. <span data-ttu-id="66fcc-121">Skriv inn en verdi i Beskrivelse-feltet.</span><span class="sxs-lookup"><span data-stu-id="66fcc-121">In the Description field, type a value.</span></span>
-8. <span data-ttu-id="66fcc-122">Angi de ønskede verdiene i Hovedkonto-feltet.</span><span class="sxs-lookup"><span data-stu-id="66fcc-122">In the Main account field, specify the desired values.</span></span>
-9. <span data-ttu-id="66fcc-123">Angi et tall i feltet Enhetspris.</span><span class="sxs-lookup"><span data-stu-id="66fcc-123">In the Unit price field, enter a number.</span></span>
-10. <span data-ttu-id="66fcc-124">Klikk Poster.</span><span class="sxs-lookup"><span data-stu-id="66fcc-124">Click Post.</span></span>
-11. <span data-ttu-id="66fcc-125">Klikk OK.</span><span class="sxs-lookup"><span data-stu-id="66fcc-125">Click OK.</span></span>
+## <a name="post-a-free-text-invoice-with-direct-debit-information"></a><span data-ttu-id="ff1d3-111">Postere en fritekstfaktura AvtaleGiro-informasjon</span><span class="sxs-lookup"><span data-stu-id="ff1d3-111">Post a free text invoice with direct debit information</span></span>
+1. <span data-ttu-id="ff1d3-112">Gå til Kunder > Fakturaer > Alle fritekstfakturaer.</span><span class="sxs-lookup"><span data-stu-id="ff1d3-112">Go to Accounts receivable > Invoices > All free text invoices.</span></span>
+2. <span data-ttu-id="ff1d3-113">Klikk Ny.</span><span class="sxs-lookup"><span data-stu-id="ff1d3-113">Click New.</span></span>
+3. <span data-ttu-id="ff1d3-114">Angi eller velg en verdi i Kundekonto-feltet.</span><span class="sxs-lookup"><span data-stu-id="ff1d3-114">In the Customer account field, enter or select a value.</span></span>
+    * <span data-ttu-id="ff1d3-115">Velg for eksempel DE-010.</span><span class="sxs-lookup"><span data-stu-id="ff1d3-115">For example, select DE-010.</span></span>  
+4. <span data-ttu-id="ff1d3-116">Angi eller velg en verdi i Betalingsmåte-feltet.</span><span class="sxs-lookup"><span data-stu-id="ff1d3-116">In the Method of payment field, enter or select a value.</span></span>
+    * <span data-ttu-id="ff1d3-117">For eksempel.</span><span class="sxs-lookup"><span data-stu-id="ff1d3-117">For example.</span></span> <span data-ttu-id="ff1d3-118">Velg elektronisk.</span><span class="sxs-lookup"><span data-stu-id="ff1d3-118">select Electronic.</span></span>  
+5. <span data-ttu-id="ff1d3-119">Angi eller velg en verdi i feltet ID for avtalegiromandat.</span><span class="sxs-lookup"><span data-stu-id="ff1d3-119">In the Direct debit mandate ID field, enter or select a value.</span></span>
+6. <span data-ttu-id="ff1d3-120">Klikk Legg til linje.</span><span class="sxs-lookup"><span data-stu-id="ff1d3-120">Click Add line.</span></span>
+7. <span data-ttu-id="ff1d3-121">Skriv inn en verdi i Beskrivelse-feltet.</span><span class="sxs-lookup"><span data-stu-id="ff1d3-121">In the Description field, type a value.</span></span>
+8. <span data-ttu-id="ff1d3-122">Angi de ønskede verdiene i Hovedkonto-feltet.</span><span class="sxs-lookup"><span data-stu-id="ff1d3-122">In the Main account field, specify the desired values.</span></span>
+9. <span data-ttu-id="ff1d3-123">Angi et tall i feltet Enhetspris.</span><span class="sxs-lookup"><span data-stu-id="ff1d3-123">In the Unit price field, enter a number.</span></span>
+10. <span data-ttu-id="ff1d3-124">Klikk Poster.</span><span class="sxs-lookup"><span data-stu-id="ff1d3-124">Click Post.</span></span>
+11. <span data-ttu-id="ff1d3-125">Klikk OK.</span><span class="sxs-lookup"><span data-stu-id="ff1d3-125">Click OK.</span></span>
 
-## <a name="create-a-payment"></a><span data-ttu-id="66fcc-126">Opprette en betaling</span><span class="sxs-lookup"><span data-stu-id="66fcc-126">Create a payment</span></span>
-1. <span data-ttu-id="66fcc-127">Gå til Kunder > Betalinger > Betalingsjournal.</span><span class="sxs-lookup"><span data-stu-id="66fcc-127">Go to Accounts receivable > Payments > Payment journal.</span></span>
-2. <span data-ttu-id="66fcc-128">Klikk Ny.</span><span class="sxs-lookup"><span data-stu-id="66fcc-128">Click New.</span></span>
-3. <span data-ttu-id="66fcc-129">Angi eller velg en verdi i Navn-feltet.</span><span class="sxs-lookup"><span data-stu-id="66fcc-129">In the Name field, enter or select a value.</span></span>
-4. <span data-ttu-id="66fcc-130">Klikk Linjer.</span><span class="sxs-lookup"><span data-stu-id="66fcc-130">Click Lines.</span></span>
-5. <span data-ttu-id="66fcc-131">Klikk Betalingsforslag.</span><span class="sxs-lookup"><span data-stu-id="66fcc-131">Click Payment proposal.</span></span>
-6. <span data-ttu-id="66fcc-132">Klikk Opprett betalingsforslag.</span><span class="sxs-lookup"><span data-stu-id="66fcc-132">Click Create payment proposal.</span></span>
-7. <span data-ttu-id="66fcc-133">Utvid delen Poster som skal inkluderes.</span><span class="sxs-lookup"><span data-stu-id="66fcc-133">Expand the Records to include section.</span></span>
-8. <span data-ttu-id="66fcc-134">Klikk Filter.</span><span class="sxs-lookup"><span data-stu-id="66fcc-134">Click Filter.</span></span>
-9. <span data-ttu-id="66fcc-135">I listen velger du raden for Kundetransaksjoner-tabellen og Betalingsmåte-feltet.</span><span class="sxs-lookup"><span data-stu-id="66fcc-135">In the list, select the row for the Customer transactions table and the Method of payment field.</span></span>
-    * <span data-ttu-id="66fcc-136">Du kan bruke hvilke som helst kriterier for valg av kundetransaksjoner for å betale.</span><span class="sxs-lookup"><span data-stu-id="66fcc-136">You can apply any criteria for selecting customer transactions to pay.</span></span> <span data-ttu-id="66fcc-137">I dette eksemplet kan du bruke elektronisk som betalingsmetode for å filtrere transaksjoner.</span><span class="sxs-lookup"><span data-stu-id="66fcc-137">For this example, use Electronic as a method of payment to filter transactions.</span></span>  
-10. <span data-ttu-id="66fcc-138">Angi eller velg en verdi i Kriterier-feltet.</span><span class="sxs-lookup"><span data-stu-id="66fcc-138">In the Criteria field, enter or select a value.</span></span>
-11. <span data-ttu-id="66fcc-139">Klikk OK.</span><span class="sxs-lookup"><span data-stu-id="66fcc-139">Click OK.</span></span>
-12. <span data-ttu-id="66fcc-140">Klikk OK.</span><span class="sxs-lookup"><span data-stu-id="66fcc-140">Click OK.</span></span>
-13. <span data-ttu-id="66fcc-141">Klikk Opprett betalinger.</span><span class="sxs-lookup"><span data-stu-id="66fcc-141">Click Create payments.</span></span>
+## <a name="create-a-payment"></a><span data-ttu-id="ff1d3-126">Opprette en betaling</span><span class="sxs-lookup"><span data-stu-id="ff1d3-126">Create a payment</span></span>
+1. <span data-ttu-id="ff1d3-127">Gå til Kunder > Betalinger > Betalingsjournal.</span><span class="sxs-lookup"><span data-stu-id="ff1d3-127">Go to Accounts receivable > Payments > Payment journal.</span></span>
+2. <span data-ttu-id="ff1d3-128">Klikk Ny.</span><span class="sxs-lookup"><span data-stu-id="ff1d3-128">Click New.</span></span>
+3. <span data-ttu-id="ff1d3-129">Angi eller velg en verdi i Navn-feltet.</span><span class="sxs-lookup"><span data-stu-id="ff1d3-129">In the Name field, enter or select a value.</span></span>
+4. <span data-ttu-id="ff1d3-130">Klikk Linjer.</span><span class="sxs-lookup"><span data-stu-id="ff1d3-130">Click Lines.</span></span>
+5. <span data-ttu-id="ff1d3-131">Klikk Betalingsforslag.</span><span class="sxs-lookup"><span data-stu-id="ff1d3-131">Click Payment proposal.</span></span>
+6. <span data-ttu-id="ff1d3-132">Klikk Opprett betalingsforslag.</span><span class="sxs-lookup"><span data-stu-id="ff1d3-132">Click Create payment proposal.</span></span>
+7. <span data-ttu-id="ff1d3-133">Utvid delen Poster som skal inkluderes.</span><span class="sxs-lookup"><span data-stu-id="ff1d3-133">Expand the Records to include section.</span></span>
+8. <span data-ttu-id="ff1d3-134">Klikk Filter.</span><span class="sxs-lookup"><span data-stu-id="ff1d3-134">Click Filter.</span></span>
+9. <span data-ttu-id="ff1d3-135">I listen velger du raden for Kundetransaksjoner-tabellen og Betalingsmåte-feltet.</span><span class="sxs-lookup"><span data-stu-id="ff1d3-135">In the list, select the row for the Customer transactions table and the Method of payment field.</span></span>
+    * <span data-ttu-id="ff1d3-136">Du kan bruke hvilke som helst kriterier for valg av kundetransaksjoner for å betale.</span><span class="sxs-lookup"><span data-stu-id="ff1d3-136">You can apply any criteria for selecting customer transactions to pay.</span></span> <span data-ttu-id="ff1d3-137">I dette eksemplet kan du bruke elektronisk som betalingsmetode for å filtrere transaksjoner.</span><span class="sxs-lookup"><span data-stu-id="ff1d3-137">For this example, use Electronic as a method of payment to filter transactions.</span></span>  
+10. <span data-ttu-id="ff1d3-138">Angi eller velg en verdi i Kriterier-feltet.</span><span class="sxs-lookup"><span data-stu-id="ff1d3-138">In the Criteria field, enter or select a value.</span></span>
+11. <span data-ttu-id="ff1d3-139">Klikk OK.</span><span class="sxs-lookup"><span data-stu-id="ff1d3-139">Click OK.</span></span>
+12. <span data-ttu-id="ff1d3-140">Klikk OK.</span><span class="sxs-lookup"><span data-stu-id="ff1d3-140">Click OK.</span></span>
+13. <span data-ttu-id="ff1d3-141">Klikk Opprett betalinger.</span><span class="sxs-lookup"><span data-stu-id="ff1d3-141">Click Create payments.</span></span>
 
-## <a name="generate-a-payment-file"></a><span data-ttu-id="66fcc-142">Generere en betalingsfil</span><span class="sxs-lookup"><span data-stu-id="66fcc-142">Generate a payment file</span></span>
+## <a name="generate-a-payment-file"></a><span data-ttu-id="ff1d3-142">Generere en betalingsfil</span><span class="sxs-lookup"><span data-stu-id="ff1d3-142">Generate a payment file</span></span>
 

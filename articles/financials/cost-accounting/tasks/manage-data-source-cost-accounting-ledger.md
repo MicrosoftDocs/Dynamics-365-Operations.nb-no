@@ -16,34 +16,34 @@ ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: f53101d73bc69199fafb00de0fa1759d59ea4ce8
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "319322"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1543658"
 ---
-# <a name="manage-a-data-source-for-the-cost-accounting-ledger"></a><span data-ttu-id="4be17-103">Administrere en datakilde for kostnadsregnskapsfinansen</span><span class="sxs-lookup"><span data-stu-id="4be17-103">Manage a data source for the cost accounting ledger</span></span>
+# <a name="manage-a-data-source-for-the-cost-accounting-ledger"></a><span data-ttu-id="9af5c-103">Administrere en datakilde for kostnadsregnskapsfinansen</span><span class="sxs-lookup"><span data-stu-id="9af5c-103">Manage a data source for the cost accounting ledger</span></span>
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="4be17-104">Bruk denne fremgangsmåten til å administrere økonomimoduldatakilden for kostnadsregnskapsfinans.</span><span class="sxs-lookup"><span data-stu-id="4be17-104">Use this procedure to manage the general ledger data source for a cost accounting ledger.</span></span> <span data-ttu-id="4be17-105">Før du fullfører denne oppgaven, må du se gjennom oppgaveveiledningene "Opprette kostnadsregnskapsfinans" og "Definere kostnadskontrollenheter".</span><span class="sxs-lookup"><span data-stu-id="4be17-105">Before you complete this task, make sure that you play the "Create a cost accounting ledger" and "Define cost control units" task guides.</span></span> <span data-ttu-id="4be17-106">Denne registreringen bruker USP2-demodatafirmaet.</span><span class="sxs-lookup"><span data-stu-id="4be17-106">This recording uses the USP2 demo data company.</span></span>
+<span data-ttu-id="9af5c-104">Bruk denne fremgangsmåten til å administrere økonomimoduldatakilden for kostnadsregnskapsfinans.</span><span class="sxs-lookup"><span data-stu-id="9af5c-104">Use this procedure to manage the general ledger data source for a cost accounting ledger.</span></span> <span data-ttu-id="9af5c-105">Før du fullfører denne oppgaven, må du se gjennom oppgaveveiledningene "Opprette kostnadsregnskapsfinans" og "Definere kostnadskontrollenheter".</span><span class="sxs-lookup"><span data-stu-id="9af5c-105">Before you complete this task, make sure that you play the "Create a cost accounting ledger" and "Define cost control units" task guides.</span></span> <span data-ttu-id="9af5c-106">Denne registreringen bruker USP2-demodatafirmaet.</span><span class="sxs-lookup"><span data-stu-id="9af5c-106">This recording uses the USP2 demo data company.</span></span>
 
-1. <span data-ttu-id="4be17-107">Gå til Kostnadsregnskap > Finansoppsett > Kostnadsregnskapsfinans.</span><span class="sxs-lookup"><span data-stu-id="4be17-107">Go to Cost accounting > Ledger setup > Cost accounting ledgers.</span></span>
-2. <span data-ttu-id="4be17-108">Finn og velg ønsket post i listen.</span><span class="sxs-lookup"><span data-stu-id="4be17-108">In the list, find and select the desired record.</span></span>
-3. <span data-ttu-id="4be17-109">Klikk Faktiske versjoner.</span><span class="sxs-lookup"><span data-stu-id="4be17-109">Click Actual versions.</span></span>
-4. <span data-ttu-id="4be17-110">Klikk Administrer i handlingsruten.</span><span class="sxs-lookup"><span data-stu-id="4be17-110">On the Action Pane, click Manage.</span></span>
-5. <span data-ttu-id="4be17-111">Klikk Økonomimodul.</span><span class="sxs-lookup"><span data-stu-id="4be17-111">Click General ledger.</span></span>
-6. <span data-ttu-id="4be17-112">Klikk Ny.</span><span class="sxs-lookup"><span data-stu-id="4be17-112">Click New.</span></span>
-7. <span data-ttu-id="4be17-113">Skriv inn en verdi i Navn-feltet.</span><span class="sxs-lookup"><span data-stu-id="4be17-113">In the Name field, type a value.</span></span>
-8. <span data-ttu-id="4be17-114">Angi eller velg en verdi i feltet Dataleverandør.</span><span class="sxs-lookup"><span data-stu-id="4be17-114">In the Data provider field, enter or select a value.</span></span>
-    * <span data-ttu-id="4be17-115">I dette eksemplet velger du Dynamics 365 for Finance and Operations - Finansposter.</span><span class="sxs-lookup"><span data-stu-id="4be17-115">For this example, select Dynamics 365 for Finance and Operations - General ledger entries.</span></span>  
-9. <span data-ttu-id="4be17-116">Angi eller velg en verdi i feltet Kostnadselementdimensjon.</span><span class="sxs-lookup"><span data-stu-id="4be17-116">In the Cost element dimension field, enter or select a value.</span></span>
-    * <span data-ttu-id="4be17-117">Velg Kostnadselementer for dette eksemplet.</span><span class="sxs-lookup"><span data-stu-id="4be17-117">For this example, select Cost elements.</span></span>  
-10. <span data-ttu-id="4be17-118">Klikk Lagre.</span><span class="sxs-lookup"><span data-stu-id="4be17-118">Click Save.</span></span>
-11. <span data-ttu-id="4be17-119">Klikk Konfigurer dataleverandør.</span><span class="sxs-lookup"><span data-stu-id="4be17-119">Click Configure data provider.</span></span>
-12. <span data-ttu-id="4be17-120">Angi eller velg en verdi i feltet Juridisk enhet.</span><span class="sxs-lookup"><span data-stu-id="4be17-120">In the Legal entity field, enter or select a value.</span></span>
-    * <span data-ttu-id="4be17-121">Velg USP2 for dette eksemplet.</span><span class="sxs-lookup"><span data-stu-id="4be17-121">For this example, select USP2.</span></span>  
-13. <span data-ttu-id="4be17-122">Klikk Ny.</span><span class="sxs-lookup"><span data-stu-id="4be17-122">Click New.</span></span>
-14. <span data-ttu-id="4be17-123">Velg Gjeldende i feltet Posteringslag.</span><span class="sxs-lookup"><span data-stu-id="4be17-123">In the Posting layer field, select Current.</span></span>
-15. <span data-ttu-id="4be17-124">Klikk OK.</span><span class="sxs-lookup"><span data-stu-id="4be17-124">Click OK.</span></span>
+1. <span data-ttu-id="9af5c-107">Gå til Kostnadsregnskap > Finansoppsett > Kostnadsregnskapsfinans.</span><span class="sxs-lookup"><span data-stu-id="9af5c-107">Go to Cost accounting > Ledger setup > Cost accounting ledgers.</span></span>
+2. <span data-ttu-id="9af5c-108">Finn og velg ønsket post i listen.</span><span class="sxs-lookup"><span data-stu-id="9af5c-108">In the list, find and select the desired record.</span></span>
+3. <span data-ttu-id="9af5c-109">Klikk Faktiske versjoner.</span><span class="sxs-lookup"><span data-stu-id="9af5c-109">Click Actual versions.</span></span>
+4. <span data-ttu-id="9af5c-110">Klikk Administrer i handlingsruten.</span><span class="sxs-lookup"><span data-stu-id="9af5c-110">On the Action Pane, click Manage.</span></span>
+5. <span data-ttu-id="9af5c-111">Klikk Økonomimodul.</span><span class="sxs-lookup"><span data-stu-id="9af5c-111">Click General ledger.</span></span>
+6. <span data-ttu-id="9af5c-112">Klikk Ny.</span><span class="sxs-lookup"><span data-stu-id="9af5c-112">Click New.</span></span>
+7. <span data-ttu-id="9af5c-113">Skriv inn en verdi i Navn-feltet.</span><span class="sxs-lookup"><span data-stu-id="9af5c-113">In the Name field, type a value.</span></span>
+8. <span data-ttu-id="9af5c-114">Angi eller velg en verdi i feltet Dataleverandør.</span><span class="sxs-lookup"><span data-stu-id="9af5c-114">In the Data provider field, enter or select a value.</span></span>
+    * <span data-ttu-id="9af5c-115">I dette eksemplet velger du Dynamics 365 for Finance and Operations - Finansposter.</span><span class="sxs-lookup"><span data-stu-id="9af5c-115">For this example, select Dynamics 365 for Finance and Operations - General ledger entries.</span></span>  
+9. <span data-ttu-id="9af5c-116">Angi eller velg en verdi i feltet Kostnadselementdimensjon.</span><span class="sxs-lookup"><span data-stu-id="9af5c-116">In the Cost element dimension field, enter or select a value.</span></span>
+    * <span data-ttu-id="9af5c-117">Velg Kostnadselementer for dette eksemplet.</span><span class="sxs-lookup"><span data-stu-id="9af5c-117">For this example, select Cost elements.</span></span>  
+10. <span data-ttu-id="9af5c-118">Klikk Lagre.</span><span class="sxs-lookup"><span data-stu-id="9af5c-118">Click Save.</span></span>
+11. <span data-ttu-id="9af5c-119">Klikk Konfigurer dataleverandør.</span><span class="sxs-lookup"><span data-stu-id="9af5c-119">Click Configure data provider.</span></span>
+12. <span data-ttu-id="9af5c-120">Angi eller velg en verdi i feltet Juridisk enhet.</span><span class="sxs-lookup"><span data-stu-id="9af5c-120">In the Legal entity field, enter or select a value.</span></span>
+    * <span data-ttu-id="9af5c-121">Velg USP2 for dette eksemplet.</span><span class="sxs-lookup"><span data-stu-id="9af5c-121">For this example, select USP2.</span></span>  
+13. <span data-ttu-id="9af5c-122">Klikk Ny.</span><span class="sxs-lookup"><span data-stu-id="9af5c-122">Click New.</span></span>
+14. <span data-ttu-id="9af5c-123">Velg Gjeldende i feltet Posteringslag.</span><span class="sxs-lookup"><span data-stu-id="9af5c-123">In the Posting layer field, select Current.</span></span>
+15. <span data-ttu-id="9af5c-124">Klikk OK.</span><span class="sxs-lookup"><span data-stu-id="9af5c-124">Click OK.</span></span>
 

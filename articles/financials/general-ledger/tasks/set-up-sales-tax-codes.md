@@ -17,39 +17,39 @@ ms.author: vstehman
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.openlocfilehash: f29442c2ef2e3d0008a74298fda218e4cbd93f8e
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "349176"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1571589"
 ---
-# <a name="set-up-sales-tax-codes"></a><span data-ttu-id="dc557-103">Definer mva-koder</span><span class="sxs-lookup"><span data-stu-id="dc557-103">Set up sales tax codes</span></span>
+# <a name="set-up-sales-tax-codes"></a><span data-ttu-id="ed909-103">Definer mva-koder</span><span class="sxs-lookup"><span data-stu-id="ed909-103">Set up sales tax codes</span></span>
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="dc557-104">Mva-koder opprettes for hver indirekte merverdiavgift eller annen avgift som den juridiske enheten er forpliktet til å beregne, samle inn og betale til skattemyndighetene.</span><span class="sxs-lookup"><span data-stu-id="dc557-104">Sales tax codes are created for every indirect tax or duty that the legal entity is obligated to calculate, collect, and pay to sales tax authorities.</span></span>
+<span data-ttu-id="ed909-104">Mva-koder opprettes for hver indirekte merverdiavgift eller annen avgift som den juridiske enheten er forpliktet til å beregne, samle inn og betale til skattemyndighetene.</span><span class="sxs-lookup"><span data-stu-id="ed909-104">Sales tax codes are created for every indirect tax or duty that the legal entity is obligated to calculate, collect, and pay to sales tax authorities.</span></span>
 
-<span data-ttu-id="dc557-105">Denne oppgaven bruker demonstrasjonsfirmaet USMF.</span><span class="sxs-lookup"><span data-stu-id="dc557-105">This task uses the USMF demo company.</span></span>
+<span data-ttu-id="ed909-105">Denne oppgaven bruker demonstrasjonsfirmaet USMF.</span><span class="sxs-lookup"><span data-stu-id="ed909-105">This task uses the USMF demo company.</span></span>
 
 
 
-1. <span data-ttu-id="dc557-106">Gå til Avgift > Indirekte avgifter > Merverdiavgift > Mva-koder.</span><span class="sxs-lookup"><span data-stu-id="dc557-106">Go to Tax > Indirect taxes > Sales tax > Sales tax codes.</span></span>
-2. <span data-ttu-id="dc557-107">Klikk Ny.</span><span class="sxs-lookup"><span data-stu-id="dc557-107">Click New.</span></span>
-3. <span data-ttu-id="dc557-108">Skriv inn en verdi i Mva-kode-feltet.</span><span class="sxs-lookup"><span data-stu-id="dc557-108">In the Sales tax code field, type a value.</span></span>
-4. <span data-ttu-id="dc557-109">Skriv inn en verdi i Navn-feltet.</span><span class="sxs-lookup"><span data-stu-id="dc557-109">In the Name field, type a value.</span></span>
-5. <span data-ttu-id="dc557-110">Velg en utligningsperiode for å angi hvilken skattemyndighet og i hvilke intervaller denne merverdiavgiften må rapporteres og betales.</span><span class="sxs-lookup"><span data-stu-id="dc557-110">Select a Settlement period to specify which Sales tax authority and in which intervals this sales tax needs to be reported and paid.</span></span>
-6. <span data-ttu-id="dc557-111">Klikk koblingen i den valgte raden i listen.</span><span class="sxs-lookup"><span data-stu-id="dc557-111">In the list, click the link in the selected row.</span></span>
-7. <span data-ttu-id="dc557-112">Velg en finansposteringsgruppe for å angi hovedkontoene for å postere merverdiavgift til økonomimodul.</span><span class="sxs-lookup"><span data-stu-id="dc557-112">Select a Ledger posting group to specify the main accounts to post sales tax to the general ledger.</span></span>
-8. <span data-ttu-id="dc557-113">Finn og velg ønsket post i listen.</span><span class="sxs-lookup"><span data-stu-id="dc557-113">In the list, find and select the desired record.</span></span>
-9. <span data-ttu-id="dc557-114">Klikk koblingen i den valgte raden i listen.</span><span class="sxs-lookup"><span data-stu-id="dc557-114">In the list, click the link in the selected row.</span></span>
-10. <span data-ttu-id="dc557-115">Vis hurtigfanen Beregning.</span><span class="sxs-lookup"><span data-stu-id="dc557-115">Expand the Calculation FastTab.</span></span>
-    * <span data-ttu-id="dc557-116">Hurtigfanen Beregning inneholder flere felt som kontrollerer hvordan mva-beløp skal beregnes.</span><span class="sxs-lookup"><span data-stu-id="dc557-116">The Calculation FastTab has multiple fields that control how sales tax amounts will be calculated.</span></span>  
-11. <span data-ttu-id="dc557-117">Klikk Mva-kode i handlingsruten.</span><span class="sxs-lookup"><span data-stu-id="dc557-117">On the Action Pane, click Sales tax code.</span></span>
-12. <span data-ttu-id="dc557-118">Velg Verdier.</span><span class="sxs-lookup"><span data-stu-id="dc557-118">Click Values.</span></span>
-13. <span data-ttu-id="dc557-119">Merk den valgte raden i listen.</span><span class="sxs-lookup"><span data-stu-id="dc557-119">In the list, mark the selected row.</span></span>
-14. <span data-ttu-id="dc557-120">Angi verdien for denne mva-koden.</span><span class="sxs-lookup"><span data-stu-id="dc557-120">Enter the value for this tax code.</span></span>
-    * <span data-ttu-id="dc557-121">Hvis Beløp per enhet er valg i hurtigfanen Beregning i Opprinnelse-feltet, ganges verdien med antallet på transaksjonen for å beregne mva-beløpet.</span><span class="sxs-lookup"><span data-stu-id="dc557-121">On the Calculation FastTab, in the Origin field, if Amount per unit is selected, the value will be multiplied by the quantity on the transaction to calculate the sales tax amount.</span></span>  <span data-ttu-id="dc557-122">Hvis mva-koden ikke er en enhetsbasert avgift, er verdien en prosent som er brukt på opprinnelsen for denne mva-koden for å beregne mva-beløpet.</span><span class="sxs-lookup"><span data-stu-id="dc557-122">If the tax code is not a unit based tax, the value is a percentage that is applied on the Origin for this tax code to calculate the sales tax amount.</span></span>     
-15. <span data-ttu-id="dc557-123">Klikk Lagre.</span><span class="sxs-lookup"><span data-stu-id="dc557-123">Click Save.</span></span>
-16. <span data-ttu-id="dc557-124">Lukk siden.</span><span class="sxs-lookup"><span data-stu-id="dc557-124">Close the page.</span></span>
-17. <span data-ttu-id="dc557-125">Klikk Lagre.</span><span class="sxs-lookup"><span data-stu-id="dc557-125">Click Save.</span></span>
+1. <span data-ttu-id="ed909-106">Gå til Avgift > Indirekte avgifter > Merverdiavgift > Mva-koder.</span><span class="sxs-lookup"><span data-stu-id="ed909-106">Go to Tax > Indirect taxes > Sales tax > Sales tax codes.</span></span>
+2. <span data-ttu-id="ed909-107">Klikk Ny.</span><span class="sxs-lookup"><span data-stu-id="ed909-107">Click New.</span></span>
+3. <span data-ttu-id="ed909-108">Skriv inn en verdi i Mva-kode-feltet.</span><span class="sxs-lookup"><span data-stu-id="ed909-108">In the Sales tax code field, type a value.</span></span>
+4. <span data-ttu-id="ed909-109">Skriv inn en verdi i Navn-feltet.</span><span class="sxs-lookup"><span data-stu-id="ed909-109">In the Name field, type a value.</span></span>
+5. <span data-ttu-id="ed909-110">Velg en utligningsperiode for å angi hvilken skattemyndighet og i hvilke intervaller denne merverdiavgiften må rapporteres og betales.</span><span class="sxs-lookup"><span data-stu-id="ed909-110">Select a Settlement period to specify which Sales tax authority and in which intervals this sales tax needs to be reported and paid.</span></span>
+6. <span data-ttu-id="ed909-111">Klikk koblingen i den valgte raden i listen.</span><span class="sxs-lookup"><span data-stu-id="ed909-111">In the list, click the link in the selected row.</span></span>
+7. <span data-ttu-id="ed909-112">Velg en finansposteringsgruppe for å angi hovedkontoene for å postere merverdiavgift til økonomimodul.</span><span class="sxs-lookup"><span data-stu-id="ed909-112">Select a Ledger posting group to specify the main accounts to post sales tax to the general ledger.</span></span>
+8. <span data-ttu-id="ed909-113">Finn og velg ønsket post i listen.</span><span class="sxs-lookup"><span data-stu-id="ed909-113">In the list, find and select the desired record.</span></span>
+9. <span data-ttu-id="ed909-114">Klikk koblingen i den valgte raden i listen.</span><span class="sxs-lookup"><span data-stu-id="ed909-114">In the list, click the link in the selected row.</span></span>
+10. <span data-ttu-id="ed909-115">Vis hurtigfanen Beregning.</span><span class="sxs-lookup"><span data-stu-id="ed909-115">Expand the Calculation FastTab.</span></span>
+    * <span data-ttu-id="ed909-116">Hurtigfanen Beregning inneholder flere felt som kontrollerer hvordan mva-beløp skal beregnes.</span><span class="sxs-lookup"><span data-stu-id="ed909-116">The Calculation FastTab has multiple fields that control how sales tax amounts will be calculated.</span></span>  
+11. <span data-ttu-id="ed909-117">Klikk Mva-kode i handlingsruten.</span><span class="sxs-lookup"><span data-stu-id="ed909-117">On the Action Pane, click Sales tax code.</span></span>
+12. <span data-ttu-id="ed909-118">Velg Verdier.</span><span class="sxs-lookup"><span data-stu-id="ed909-118">Click Values.</span></span>
+13. <span data-ttu-id="ed909-119">Merk den valgte raden i listen.</span><span class="sxs-lookup"><span data-stu-id="ed909-119">In the list, mark the selected row.</span></span>
+14. <span data-ttu-id="ed909-120">Angi verdien for denne mva-koden.</span><span class="sxs-lookup"><span data-stu-id="ed909-120">Enter the value for this tax code.</span></span>
+    * <span data-ttu-id="ed909-121">Hvis Beløp per enhet er valg i hurtigfanen Beregning i Opprinnelse-feltet, ganges verdien med antallet på transaksjonen for å beregne mva-beløpet.</span><span class="sxs-lookup"><span data-stu-id="ed909-121">On the Calculation FastTab, in the Origin field, if Amount per unit is selected, the value will be multiplied by the quantity on the transaction to calculate the sales tax amount.</span></span>  <span data-ttu-id="ed909-122">Hvis mva-koden ikke er en enhetsbasert avgift, er verdien en prosent som er brukt på opprinnelsen for denne mva-koden for å beregne mva-beløpet.</span><span class="sxs-lookup"><span data-stu-id="ed909-122">If the tax code is not a unit based tax, the value is a percentage that is applied on the Origin for this tax code to calculate the sales tax amount.</span></span>     
+15. <span data-ttu-id="ed909-123">Klikk Lagre.</span><span class="sxs-lookup"><span data-stu-id="ed909-123">Click Save.</span></span>
+16. <span data-ttu-id="ed909-124">Lukk siden.</span><span class="sxs-lookup"><span data-stu-id="ed909-124">Close the page.</span></span>
+17. <span data-ttu-id="ed909-125">Klikk Lagre.</span><span class="sxs-lookup"><span data-stu-id="ed909-125">Click Save.</span></span>
 
