@@ -18,40 +18,40 @@ ms.author: scotttuc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.openlocfilehash: 1b30c9a1d7fe4598695423ba700ebc88a794a49c
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "354466"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1566370"
 ---
-# <a name="create-pos-permission-groups"></a><span data-ttu-id="a2f94-103"> Opprette tillatelsesgrupper for salgssted</span><span class="sxs-lookup"><span data-stu-id="a2f94-103">Create POS permission groups</span></span>
+# <a name="create-pos-permission-groups"></a><span data-ttu-id="918ef-103"> Opprette tillatelsesgrupper for salgssted</span><span class="sxs-lookup"><span data-stu-id="918ef-103">Create POS permission groups</span></span>
 
 [!include[task guide banner](../includes/task-guide-banner.md)]
 
-<span data-ttu-id="a2f94-104">Denne prosedyren viser hvordan du oppretter en salgsstedstillatelsesgruppe.</span><span class="sxs-lookup"><span data-stu-id="a2f94-104">This procedure will show how to create a POS permission group.</span></span> <span data-ttu-id="a2f94-105">Demonstrasjonsdatafirmaet USRT brukes til å opprette denne oppgaven.</span><span class="sxs-lookup"><span data-stu-id="a2f94-105">The demo data company used to create this task is USRT.</span></span> <span data-ttu-id="a2f94-106">Denne oppgaven er ment for rollen Driftsleder for detaljhandel.</span><span class="sxs-lookup"><span data-stu-id="a2f94-106">This task is intended for the Retail operations manager role.</span></span>
+<span data-ttu-id="918ef-104">Denne prosedyren viser hvordan du oppretter en salgsstedstillatelsesgruppe.</span><span class="sxs-lookup"><span data-stu-id="918ef-104">This procedure will show how to create a POS permission group.</span></span> <span data-ttu-id="918ef-105">Demonstrasjonsdatafirmaet USRT brukes til å opprette denne oppgaven.</span><span class="sxs-lookup"><span data-stu-id="918ef-105">The demo data company used to create this task is USRT.</span></span> <span data-ttu-id="918ef-106">Denne oppgaven er ment for rollen Driftsleder for detaljhandel.</span><span class="sxs-lookup"><span data-stu-id="918ef-106">This task is intended for the Retail operations manager role.</span></span>
 
-1. <span data-ttu-id="a2f94-107">Gå til Tillatelsesgrupper.</span><span class="sxs-lookup"><span data-stu-id="a2f94-107">Go to Permission groups.</span></span>
-2. <span data-ttu-id="a2f94-108">Klikk Ny.</span><span class="sxs-lookup"><span data-stu-id="a2f94-108">Click New.</span></span>
-3. <span data-ttu-id="a2f94-109">Skriv inn en verdi i feltet ID for salgsstedstillatelsesgruppe.</span><span class="sxs-lookup"><span data-stu-id="a2f94-109">In the POS permission group ID field, type a value.</span></span>
-4. <span data-ttu-id="a2f94-110">Skriv inn en verdi i feltet Beskrivelse.</span><span class="sxs-lookup"><span data-stu-id="a2f94-110">In the Description field, type a value.</span></span>
-5. <span data-ttu-id="a2f94-111">Velg Ja i feltet Vis tidsklokkeoppføringer.</span><span class="sxs-lookup"><span data-stu-id="a2f94-111">Select Yes in the View time clock entries field.</span></span>
-    * <span data-ttu-id="a2f94-112">Nå kan du aktivere eller deaktivere ulike tillatelser for salgsstedstillatelsesgruppen.</span><span class="sxs-lookup"><span data-stu-id="a2f94-112">You can now enable or disable various permissions for your POS Permission group.</span></span> <span data-ttu-id="a2f94-113">For enkelte tillatelser kan du angi en verdi som skal brukes til å vurdere om salgsstedsbrukeren kan utføre handlingen.</span><span class="sxs-lookup"><span data-stu-id="a2f94-113">For some permission you can set a value that will be used to evaluate if the POS user can perform the action.</span></span>  <span data-ttu-id="a2f94-114">Denne oppgaveveiledningen angir noen tillatelser som kan gis til en kasserer.</span><span class="sxs-lookup"><span data-stu-id="a2f94-114">This task guide enables a few permission that might be given to a cashier.</span></span>  
-6. <span data-ttu-id="a2f94-115">Velg Ja i feltet Tillat oppretting av ordre.</span><span class="sxs-lookup"><span data-stu-id="a2f94-115">Select Yes in the Allow create order field.</span></span>
-7. <span data-ttu-id="a2f94-116">Velg Ja i feltet Tillat redigering av ordre.</span><span class="sxs-lookup"><span data-stu-id="a2f94-116">Select Yes in the Allow edit order field.</span></span>
-8. <span data-ttu-id="a2f94-117">Velg Ja i feltet Tillat oppretting av ordre.</span><span class="sxs-lookup"><span data-stu-id="a2f94-117">Select Yes in the Allow retrieve order field.</span></span>
-9. <span data-ttu-id="a2f94-118">Velg Ja i feltet Tillat passordendring.</span><span class="sxs-lookup"><span data-stu-id="a2f94-118">Select Yes in the Allow password change field.</span></span>
-10. <span data-ttu-id="a2f94-119">Velg Ja i feltet Tillat usporet lukking.</span><span class="sxs-lookup"><span data-stu-id="a2f94-119">Select Yes in the Allow blind close field.</span></span>
-11. <span data-ttu-id="a2f94-120">Klikk Lagre.</span><span class="sxs-lookup"><span data-stu-id="a2f94-120">Click Save.</span></span>
-    * <span data-ttu-id="a2f94-121">Når endringene er lagret, må du kjøre stabsdistribusjonsplanen for å overføre endringene til detaljhandelskanalene.</span><span class="sxs-lookup"><span data-stu-id="a2f94-121">After your changes are saved you need to run the Staff distribution schedule to push the changes to retail channels.</span></span>  
-12. <span data-ttu-id="a2f94-122">Lukk siden.</span><span class="sxs-lookup"><span data-stu-id="a2f94-122">Close the page.</span></span>
-13. <span data-ttu-id="a2f94-123">Gå til Jobber.</span><span class="sxs-lookup"><span data-stu-id="a2f94-123">Go to Jobs.</span></span>
-    * <span data-ttu-id="a2f94-124">Vi vil nå tilordne salgsstedstillatelsesgruppen til en jobb.</span><span class="sxs-lookup"><span data-stu-id="a2f94-124">Next we will assign the POS permission group to a Job.</span></span>  
-14. <span data-ttu-id="a2f94-125">Finn og velg ønsket post i listen.</span><span class="sxs-lookup"><span data-stu-id="a2f94-125">In the list, find and select the desired record.</span></span>
-15. <span data-ttu-id="a2f94-126">Klikk koblingen i den valgte raden i listen.</span><span class="sxs-lookup"><span data-stu-id="a2f94-126">In the list, click the link in the selected row.</span></span>
-16. <span data-ttu-id="a2f94-127">Klikk Rediger</span><span class="sxs-lookup"><span data-stu-id="a2f94-127">Click Edit.</span></span>
-17. <span data-ttu-id="a2f94-128">Vis delen Jobbklassifisering.</span><span class="sxs-lookup"><span data-stu-id="a2f94-128">Expand the Job classification section.</span></span>
-18. <span data-ttu-id="a2f94-129">Angi eller velg en verdi i feltet Gruppe for salgsstedstillatelse.</span><span class="sxs-lookup"><span data-stu-id="a2f94-129">In the POS permission group field, enter or select a value.</span></span>
-    * <span data-ttu-id="a2f94-130">Alle arbeidere i stillinger for denne jobben bruker salgsstedstillatelsesgruppens innstillinger med mindre arbeidernes salgsstedstillatelser har blitt overstyrt på stillingsnivået.</span><span class="sxs-lookup"><span data-stu-id="a2f94-130">All Workers in Positions for this Job will use this POS permission group’s settings unless the workers POS permissions have been overridden at their Position level.</span></span>  
-19. <span data-ttu-id="a2f94-131">Klikk Lagre.</span><span class="sxs-lookup"><span data-stu-id="a2f94-131">Click Save.</span></span>
-    * <span data-ttu-id="a2f94-132">Når endringene er lagret, må du kjøre stabsdistribusjonsplanen for å overføre endringene til detaljhandelskanalene.</span><span class="sxs-lookup"><span data-stu-id="a2f94-132">After your changes are saved you need to run the Staff distribution schedule to push the changes to retail channels.</span></span>  
+1. <span data-ttu-id="918ef-107">Gå til Tillatelsesgrupper.</span><span class="sxs-lookup"><span data-stu-id="918ef-107">Go to Permission groups.</span></span>
+2. <span data-ttu-id="918ef-108">Klikk Ny.</span><span class="sxs-lookup"><span data-stu-id="918ef-108">Click New.</span></span>
+3. <span data-ttu-id="918ef-109">Skriv inn en verdi i feltet ID for salgsstedstillatelsesgruppe.</span><span class="sxs-lookup"><span data-stu-id="918ef-109">In the POS permission group ID field, type a value.</span></span>
+4. <span data-ttu-id="918ef-110">Skriv inn en verdi i feltet Beskrivelse.</span><span class="sxs-lookup"><span data-stu-id="918ef-110">In the Description field, type a value.</span></span>
+5. <span data-ttu-id="918ef-111">Velg Ja i feltet Vis tidsklokkeoppføringer.</span><span class="sxs-lookup"><span data-stu-id="918ef-111">Select Yes in the View time clock entries field.</span></span>
+    * <span data-ttu-id="918ef-112">Nå kan du aktivere eller deaktivere ulike tillatelser for salgsstedstillatelsesgruppen.</span><span class="sxs-lookup"><span data-stu-id="918ef-112">You can now enable or disable various permissions for your POS Permission group.</span></span> <span data-ttu-id="918ef-113">For enkelte tillatelser kan du angi en verdi som skal brukes til å vurdere om salgsstedsbrukeren kan utføre handlingen.</span><span class="sxs-lookup"><span data-stu-id="918ef-113">For some permission you can set a value that will be used to evaluate if the POS user can perform the action.</span></span>  <span data-ttu-id="918ef-114">Denne oppgaveveiledningen angir noen tillatelser som kan gis til en kasserer.</span><span class="sxs-lookup"><span data-stu-id="918ef-114">This task guide enables a few permission that might be given to a cashier.</span></span>  
+6. <span data-ttu-id="918ef-115">Velg Ja i feltet Tillat oppretting av ordre.</span><span class="sxs-lookup"><span data-stu-id="918ef-115">Select Yes in the Allow create order field.</span></span>
+7. <span data-ttu-id="918ef-116">Velg Ja i feltet Tillat redigering av ordre.</span><span class="sxs-lookup"><span data-stu-id="918ef-116">Select Yes in the Allow edit order field.</span></span>
+8. <span data-ttu-id="918ef-117">Velg Ja i feltet Tillat oppretting av ordre.</span><span class="sxs-lookup"><span data-stu-id="918ef-117">Select Yes in the Allow retrieve order field.</span></span>
+9. <span data-ttu-id="918ef-118">Velg Ja i feltet Tillat passordendring.</span><span class="sxs-lookup"><span data-stu-id="918ef-118">Select Yes in the Allow password change field.</span></span>
+10. <span data-ttu-id="918ef-119">Velg Ja i feltet Tillat usporet lukking.</span><span class="sxs-lookup"><span data-stu-id="918ef-119">Select Yes in the Allow blind close field.</span></span>
+11. <span data-ttu-id="918ef-120">Klikk Lagre.</span><span class="sxs-lookup"><span data-stu-id="918ef-120">Click Save.</span></span>
+    * <span data-ttu-id="918ef-121">Når endringene er lagret, må du kjøre stabsdistribusjonsplanen for å overføre endringene til detaljhandelskanalene.</span><span class="sxs-lookup"><span data-stu-id="918ef-121">After your changes are saved you need to run the Staff distribution schedule to push the changes to retail channels.</span></span>  
+12. <span data-ttu-id="918ef-122">Lukk siden.</span><span class="sxs-lookup"><span data-stu-id="918ef-122">Close the page.</span></span>
+13. <span data-ttu-id="918ef-123">Gå til Jobber.</span><span class="sxs-lookup"><span data-stu-id="918ef-123">Go to Jobs.</span></span>
+    * <span data-ttu-id="918ef-124">Vi vil nå tilordne salgsstedstillatelsesgruppen til en jobb.</span><span class="sxs-lookup"><span data-stu-id="918ef-124">Next we will assign the POS permission group to a Job.</span></span>  
+14. <span data-ttu-id="918ef-125">Finn og velg ønsket post i listen.</span><span class="sxs-lookup"><span data-stu-id="918ef-125">In the list, find and select the desired record.</span></span>
+15. <span data-ttu-id="918ef-126">Klikk koblingen i den valgte raden i listen.</span><span class="sxs-lookup"><span data-stu-id="918ef-126">In the list, click the link in the selected row.</span></span>
+16. <span data-ttu-id="918ef-127">Klikk Rediger</span><span class="sxs-lookup"><span data-stu-id="918ef-127">Click Edit.</span></span>
+17. <span data-ttu-id="918ef-128">Vis delen Jobbklassifisering.</span><span class="sxs-lookup"><span data-stu-id="918ef-128">Expand the Job classification section.</span></span>
+18. <span data-ttu-id="918ef-129">Angi eller velg en verdi i feltet Gruppe for salgsstedstillatelse.</span><span class="sxs-lookup"><span data-stu-id="918ef-129">In the POS permission group field, enter or select a value.</span></span>
+    * <span data-ttu-id="918ef-130">Alle arbeidere i stillinger for denne jobben bruker salgsstedstillatelsesgruppens innstillinger med mindre arbeidernes salgsstedstillatelser har blitt overstyrt på stillingsnivået.</span><span class="sxs-lookup"><span data-stu-id="918ef-130">All Workers in Positions for this Job will use this POS permission group’s settings unless the workers POS permissions have been overridden at their Position level.</span></span>  
+19. <span data-ttu-id="918ef-131">Klikk Lagre.</span><span class="sxs-lookup"><span data-stu-id="918ef-131">Click Save.</span></span>
+    * <span data-ttu-id="918ef-132">Når endringene er lagret, må du kjøre stabsdistribusjonsplanen for å overføre endringene til detaljhandelskanalene.</span><span class="sxs-lookup"><span data-stu-id="918ef-132">After your changes are saved you need to run the Staff distribution schedule to push the changes to retail channels.</span></span>  
 
