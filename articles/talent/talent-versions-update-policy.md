@@ -3,7 +3,7 @@ title: Systemkrav og oppdateringspolicy for Talent
 description: Dette emnet viser kravene for Dynamics 365 for Talent. Oppdateringspolicyen blir også gjennomgått.
 author: andreabichsel
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 05/02/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-talent
@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 2389f00b22ec3b5284eeffb2c015533b7a3d13e0
-ms.sourcegitcommit: 608e68b603afef9eb98d8fb25e90109c2473ef87
+ms.openlocfilehash: ea8b7485b142245a359648a2a85d2a3e2a6d6629
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "856307"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1518755"
 ---
 # <a name="talent-system-requirements-and-update-policy"></a>Systemkrav og oppdateringspolicy for Talent
 
 [!include [banner](includes/banner.md)]
 
-Dette emnet viser kravene for Microsoft Dynamics 365 for Talent. Oppdateringspolicyen blir også gjennomgått.
+Dette emnet beskriver krav for Microsoft Dynamics 365 for Talent, inkludert Attract, Onboard og Core HR. Det beskriver også landene og områdene der Talent er tilgjengelig, pluss informasjon om språk og lokalisering for Talent-data. I tillegg inneholder dette emnet oppdateringspolicyen for Talent.
 
 ## <a name="supported-web-browsers"></a>Nettlesere som støttes
 
@@ -57,8 +57,17 @@ Du finner den nyeste versjonen av hver nettleser ved å gå til programvareprodu
 * Hvis du vil kjøre Microsoft Word- eller Microsoft Excel-tilleggene, må du ha Microsoft Office 2016 for Windows eller Mac installert. Hvis du vil ha mer informasjon om versjonskrav, kan du se [Feilsøke Office-integrering](../dev-itpro/office-integration/office-integration-troubleshooting.md "Feilsøke Office-integrering").
 * Hvis du vil vise dokumenter som er generert av funksjonen Eksporter til Excel eller Eksporter til Word, må ha Microsoft Office 2007 eller nyere installert.
 
+## <a name="regional-availability-languages-and-localization"></a>Regional tilgjengelighet, språk og lokalisering
+
+Du kan laste ned en PDF-fil med landene, områdene og språkene Talent støtter, på [Internasjonal tilgjengelighet for Microsoft Dynamics 365](https://docs.microsoft.com/dynamics365/get-started/availability). 
+
+> [!NOTE]
+> Selv om brukergrensesnittet er lokalisert til andre språk, lagres alle brukerdata på språket de ble lagt inn på. Du kan opprette e-postmeldinger og maler på andre språk, men data som planleggingsinformasjon er bare tilgjengelig på engelsk for øyeblikket.
+
+Hvis du er utvikler og interessert i å lage lands- eller områdespesifikke tilpasninger, eller hvis du vil opprette en løsning for et land eller område som ikke støttes av Microsoft for øyeblikket, kan du se [Globalisering](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/lcs-solutions/country-region).
+
 ## <a name="update-policy"></a>Oppdateringspolicy
 
 Microsoft Dynamics 365 for Talent betjenes som et skytilbud. Oppdateringer til Dynamics 365 for Talent er kontinuerlig og brukes automatisk av Microsoft.
 
-Oppdateringer utgis regelmessig til alle miljøer.  Dynamics 365 for Talent støttes i henhold til [Microsoft Support Lifecycle-policyen](https://support.microsoft.com/en-us/gp/lifecycle#gp/OSSLpolicy "Microsoft Support Lifecycle"), som gir konsekvente og forutsigbare retningslinjer for tilgjengelighet av produktstøtte.
+Oppdateringer utgis regelmessig og til alle miljøer. Dynamics 365 for Talent støttes i henhold til [Microsoft Support Lifecycle-policyen](https://support.microsoft.com/en-us/gp/lifecycle#gp/OSSLpolicy "Microsoft Support Lifecycle"), som gir konsekvente og forutsigbare retningslinjer for tilgjengelighet av produktstøtte.

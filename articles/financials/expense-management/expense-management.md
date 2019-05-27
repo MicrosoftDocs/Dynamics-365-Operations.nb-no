@@ -1,9 +1,9 @@
 ---
-title: Reiseregning og utlegg
-description: Bruk Utgiftsstyring for å opprette en integrert arbeidsflyt der du kan lagre betalingsmetodeinformasjon, importere kredittkorttransaksjoner og spore pengene de ansatte bruker når de pådrar seg utgifter for bedriften din.
+title: Reiseregning
+description: Dette emnet inneholder generell informasjon om reiseregninger og koblinger til ytterligere ressurser. Du kan bruke Reiseregning for å opprette en integrert arbeidsflyt der du kan lagre betalingsmetodeinformasjon, importere kredittkorttransaksjoner og spore pengene de ansatte bruker når de pådrar seg utgifter for bedriften din.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 10/25/2017
+ms.date: 05/07/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,41 +18,44 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 11445390acef5ddfd57a1a0017e8bc423cdb1914
-ms.sourcegitcommit: afab5269613d1d1dfd79cd39370b747dee13d3fc
+ms.openlocfilehash: fe1e92dbf63d2683a53684b350f77c978b14c75e
+ms.sourcegitcommit: be447fc81bc874982bc0185fcb4d87d99bd742c5
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "403220"
+ms.lasthandoff: 05/08/2019
+ms.locfileid: "1538615"
 ---
-# <a name="expense-management"></a>Reiseregning og utlegg
+# <a name="expense-management"></a>Reiseregning
 
 [!include [banner](../includes/banner.md)]
+[!include [banner](../includes/preview-banner.md)]
 
-Bruk Utgiftsstyring for å opprette en integrert arbeidsflyt der du kan lagre betalingsmetodeinformasjon, importere kredittkorttransaksjoner og spore pengene de ansatte bruker når de pådrar seg utgifter for bedriften din. Du kan også definerer utgiftspolicyer og automatisere refusjon av reiseutgifter. 
+Du kan bruke Reiseregning for å opprette en integrert arbeidsflyt der du kan lagre betalingsmetodeinformasjon, importere kredittkorttransaksjoner og spore pengene de ansatte bruker når de pådrar seg utgifter for bedriften din. Du kan også definerer utgiftspolicyer og automatisere refusjon av reiseutgifter.
 
-[Planlegging av utgiftsstyring](plan-expense-management.md) 
+Hvis du vil ha mer informasjon, kan du se [Konfigurere reiseregning](plan-expense-management.md).
 
-### <a name="additional-resources"></a>Tilleggsressurser
+## <a name="additional-resources"></a>Tilleggsressurser
 
-#### <a name="whats-new-and-in-development"></a>Hva er nytt og hva er under utvikling?
+### <a name="whats-new-and-in-development"></a>Hva er nytt og hva er under utvikling?
 
-Gå til [Produktmerknader for Microsoft Dynamics 365](https://go.microsoft.com/fwlink/?linkid=2010158) for å se hvilke nye funksjoner som er planlagt. 
+Gå til [Produktmerknader for Microsoft Dynamics 365](https://go.microsoft.com/fwlink/?linkid=2010158) for å se hvilke nye funksjoner som er planlagt.
 
-#### <a name="blogs"></a>Blogger
+#### <a name="expense-report-entry"></a>Reiseregningsrapportregistrering
+
+Reiseregningsrapportregistrering er endret for å forenkle opplevelsen og redusere tiden som kreves for å fullføre reiseregninger. Du kan aktivere denne funksjonaliteten i Funksjonsbehandling. Du kan legge til en ny konfigurasjonsside for å konfigurere synligheten for utgiftsfelt, og angi hvilke data som er obligatoriske, valgfrie eller ikke tilgjengelige når reiseregninger registreres. Når denne funksjonaliteten aktiveres, blir et nytt reiseregningsarbeidsområde tilgjengelig. Dette arbeidsområdet erstatter det forrige reiseregningsarbeidsområdet og er målsiden for den forbedrede registreringsopplevelsen.
+
+Hvis du vil ha mer informasjon, kan du se [Ny utforming av reiseregninger](ExpenseWorkspaceNew.md).
+
+### <a name="blogs"></a>Blogger
 
 Du kan finne meninger, nyheter og annen informasjon i [Microsoft Dynamics 365-bloggen](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise) og [Microsoft Dynamics 365 Finance and Operations – Financials-bloggen](https://community.dynamics.com/365/financeandoperations/b/financials).
 
-[Microsoft Dynamics Operations Partner Community-bloggen](https://community.dynamics.com/partner/b/operationspartnercommunityblog) gir Microsoft Dynamics-partnere én ressurs der de kan finne ut mer om hva som er nytt og populært i MBS Operations. 
+[Microsoft Dynamics Operations Partner Community-bloggen](https://community.dynamics.com/partner/b/operationspartnercommunityblog) gir Microsoft Dynamics-partnere én ressurs der de kan finne ut mer om hva som er nytt og populært i MBS Operations.
 
-#### <a name="task-guides"></a>Oppgaveveiledninger
-Mer hjelp er tilgjengelig som oppgaveveiledninger i Finance and Operations. For å få tilgang til oppgaveveiledninger klikker du Hjelp-knappen på en side.
+### <a name="task-guides"></a>Oppgaveveiledninger
 
-#### <a name="videos"></a>Videoer
+Mer hjelp er tilgjengelig som oppgaveveiledninger i Microsoft Dynamics 365 for Finance and Operations. For å få tilgang til oppgaveveiledninger velger du **Hjelp**-knappen på en side.
+
+### <a name="videos"></a>Videoer
 
 Se instruksjonsvideoene som nå er tilgjengelige på [Microsoft Dynamics 365 YouTube-kanalen](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ).
-
-
-
-
-

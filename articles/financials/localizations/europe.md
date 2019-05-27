@@ -16,11 +16,11 @@ ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 137fb8cae0766bed16b6b32d99e1d2c6c9f7b606
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "321737"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1545468"
 ---
 # <a name="europe"></a>Europa 
 
@@ -90,7 +90,7 @@ Dette emnet inneholder informasjon og koblinger til ressursene som kan hjelpe de
   - [Kursjusteringer for mva](emea-vat-exchange-rate.md)
   - [Mva-avstemmingsrapport](tasks/eur-00018-vat-reconciliation-report.md)
   - [Mva-registertransaksjoner for Øst-Europa](emea-vat-register-transactions.md)
-  - [Mva-rapportering](emea-vat-reporting.md)
+  - [VAT-rapportering](emea-vat-reporting.md)
   - [Opprette og sende inn mva-rapport](tasks/create-submit-vat-report.md)
   - [Vise transaksjoner ved utligning](emea-transactions-settlement-form.md)
 
