@@ -17,31 +17,31 @@ ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.openlocfilehash: e46c7c86b93a3471ba10ec7ae6789f227bc9779c
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "311456"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1545445"
 ---
-# <a name="set-up-main-account-categories"></a><span data-ttu-id="e2d4a-103">Definere hovedkontokategorier</span><span class="sxs-lookup"><span data-stu-id="e2d4a-103">Set up main account categories</span></span>
+# <a name="set-up-main-account-categories"></a><span data-ttu-id="0b440-103">Definere hovedkontokategorier</span><span class="sxs-lookup"><span data-stu-id="0b440-103">Set up main account categories</span></span>
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="e2d4a-104">Hovedkontokategorier brukes til standardrapportene i finansiell rapportering og Power BI.</span><span class="sxs-lookup"><span data-stu-id="e2d4a-104">Main account categories are used for the default reports in financial reporting and in Power BI.</span></span> <span data-ttu-id="e2d4a-105">Hovedkontokategorier som opprettes som standard kan gis nytt navn, men ikke slettes.</span><span class="sxs-lookup"><span data-stu-id="e2d4a-105">Main account categories that are created by default can be renamed but not deleted.</span></span> <span data-ttu-id="e2d4a-106">Flere kontokategorier kan opprettes og brukes for rapportering og analyse.</span><span class="sxs-lookup"><span data-stu-id="e2d4a-106">Additional account categories can be created and used for reporting and analysis purposes.</span></span> <span data-ttu-id="e2d4a-107">Denne oppgaven bruker demonstrasjonsfirmaet USMF.</span><span class="sxs-lookup"><span data-stu-id="e2d4a-107">This task uses the USMF demo company.</span></span>
+<span data-ttu-id="0b440-104">Hovedkontokategorier brukes til standardrapportene i finansiell rapportering og Power BI.</span><span class="sxs-lookup"><span data-stu-id="0b440-104">Main account categories are used for the default reports in financial reporting and in Power BI.</span></span> <span data-ttu-id="0b440-105">Hovedkontokategorier som opprettes som standard kan gis nytt navn, men ikke slettes.</span><span class="sxs-lookup"><span data-stu-id="0b440-105">Main account categories that are created by default can be renamed but not deleted.</span></span> <span data-ttu-id="0b440-106">Flere kontokategorier kan opprettes og brukes for rapportering og analyse.</span><span class="sxs-lookup"><span data-stu-id="0b440-106">Additional account categories can be created and used for reporting and analysis purposes.</span></span> <span data-ttu-id="0b440-107">Denne oppgaven bruker demonstrasjonsfirmaet USMF.</span><span class="sxs-lookup"><span data-stu-id="0b440-107">This task uses the USMF demo company.</span></span>
 
 
-## <a name="create-a-main-account-category"></a><span data-ttu-id="e2d4a-108">Opprette en hovedkontokategori</span><span class="sxs-lookup"><span data-stu-id="e2d4a-108">Create a main account category</span></span>
-1. <span data-ttu-id="e2d4a-109">Gå til Økonomimodul > Kontoplan > Kontoer > Hovedkontokategorier.</span><span class="sxs-lookup"><span data-stu-id="e2d4a-109">Go to General ledger > Chart of accounts > Accounts > Main account categories.</span></span>
-2. <span data-ttu-id="e2d4a-110">Klikk Ny.</span><span class="sxs-lookup"><span data-stu-id="e2d4a-110">Click New.</span></span>
-3. <span data-ttu-id="e2d4a-111">Angi et unikt navn i feltet Hovedkontokategori.</span><span class="sxs-lookup"><span data-stu-id="e2d4a-111">In the Main account category field, enter a unique name.</span></span>
-4. <span data-ttu-id="e2d4a-112">Angi en beskrivelse for hovedkontokategorien i feltet Beskrivelse.</span><span class="sxs-lookup"><span data-stu-id="e2d4a-112">In the Description field, enter a description for the main account category.</span></span>
-5. <span data-ttu-id="e2d4a-113">Velg typen hovedkonto som skal knyttes til kategorien i feltet Hovedkontotype.</span><span class="sxs-lookup"><span data-stu-id="e2d4a-113">In the Main account type field, select the main account type that will be linked to the category.</span></span>
+## <a name="create-a-main-account-category"></a><span data-ttu-id="0b440-108">Opprette en hovedkontokategori</span><span class="sxs-lookup"><span data-stu-id="0b440-108">Create a main account category</span></span>
+1. <span data-ttu-id="0b440-109">Gå til Økonomimodul > Kontoplan > Kontoer > Hovedkontokategorier.</span><span class="sxs-lookup"><span data-stu-id="0b440-109">Go to General ledger > Chart of accounts > Accounts > Main account categories.</span></span>
+2. <span data-ttu-id="0b440-110">Klikk Ny.</span><span class="sxs-lookup"><span data-stu-id="0b440-110">Click New.</span></span>
+3. <span data-ttu-id="0b440-111">Angi et unikt navn i feltet Hovedkontokategori.</span><span class="sxs-lookup"><span data-stu-id="0b440-111">In the Main account category field, enter a unique name.</span></span>
+4. <span data-ttu-id="0b440-112">Angi en beskrivelse for hovedkontokategorien i feltet Beskrivelse.</span><span class="sxs-lookup"><span data-stu-id="0b440-112">In the Description field, enter a description for the main account category.</span></span>
+5. <span data-ttu-id="0b440-113">Velg typen hovedkonto som skal knyttes til kategorien i feltet Hovedkontotype.</span><span class="sxs-lookup"><span data-stu-id="0b440-113">In the Main account type field, select the main account type that will be linked to the category.</span></span>
 
-## <a name="link-main-accounts-to-account-category"></a><span data-ttu-id="e2d4a-114">Koble hovedkontoer til kontokategori</span><span class="sxs-lookup"><span data-stu-id="e2d4a-114">Link main accounts to account category</span></span>
-1. <span data-ttu-id="e2d4a-115">Klikk Koble hovedkontoer.</span><span class="sxs-lookup"><span data-stu-id="e2d4a-115">Click Link main accounts.</span></span>
-2. <span data-ttu-id="e2d4a-116">Velg hovedkontoene som skal tilordnes til hovedkontokategorien, i listen.</span><span class="sxs-lookup"><span data-stu-id="e2d4a-116">In the list, select the main accounts to assign to the main account category.</span></span>
-    * <span data-ttu-id="e2d4a-117">Når du tilordner hovedkontoer til en hovedkontokategori, samles saldoene for kontoene når denne kategorien brukes til økonomisk rapportering og analyse.</span><span class="sxs-lookup"><span data-stu-id="e2d4a-117">Assigning main accounts to a main account category will aggregate the balances of the accounts when that category is used for financial reporting and analysis.</span></span>  
-3. <span data-ttu-id="e2d4a-118">Aktiver eller deaktiver alternativet Koblet for å velge hovedkontoene.</span><span class="sxs-lookup"><span data-stu-id="e2d4a-118">Select or clear the Linked option to choose the main accounts.</span></span>
-4. <span data-ttu-id="e2d4a-119">Klikk OK.</span><span class="sxs-lookup"><span data-stu-id="e2d4a-119">Click OK.</span></span>
-5. <span data-ttu-id="e2d4a-120">Klikk Ja.</span><span class="sxs-lookup"><span data-stu-id="e2d4a-120">Click Yes.</span></span>
+## <a name="link-main-accounts-to-account-category"></a><span data-ttu-id="0b440-114">Koble hovedkontoer til kontokategori</span><span class="sxs-lookup"><span data-stu-id="0b440-114">Link main accounts to account category</span></span>
+1. <span data-ttu-id="0b440-115">Klikk Koble hovedkontoer.</span><span class="sxs-lookup"><span data-stu-id="0b440-115">Click Link main accounts.</span></span>
+2. <span data-ttu-id="0b440-116">Velg hovedkontoene som skal tilordnes til hovedkontokategorien, i listen.</span><span class="sxs-lookup"><span data-stu-id="0b440-116">In the list, select the main accounts to assign to the main account category.</span></span>
+    * <span data-ttu-id="0b440-117">Når du tilordner hovedkontoer til en hovedkontokategori, samles saldoene for kontoene når denne kategorien brukes til økonomisk rapportering og analyse.</span><span class="sxs-lookup"><span data-stu-id="0b440-117">Assigning main accounts to a main account category will aggregate the balances of the accounts when that category is used for financial reporting and analysis.</span></span>  
+3. <span data-ttu-id="0b440-118">Aktiver eller deaktiver alternativet Koblet for å velge hovedkontoene.</span><span class="sxs-lookup"><span data-stu-id="0b440-118">Select or clear the Linked option to choose the main accounts.</span></span>
+4. <span data-ttu-id="0b440-119">Klikk OK.</span><span class="sxs-lookup"><span data-stu-id="0b440-119">Click OK.</span></span>
+5. <span data-ttu-id="0b440-120">Klikk Ja.</span><span class="sxs-lookup"><span data-stu-id="0b440-120">Click Yes.</span></span>
 
