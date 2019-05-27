@@ -19,26 +19,26 @@ ms.author: ShylaThompson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 0d37ba306ae972158fb2cea27579d8f204d33010
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "348302"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1553398"
 ---
-# <a name="fulfill-service-agreements-overview"></a><span data-ttu-id="fa356-103">Oversikt over oppfylling av serviceavtaler</span><span class="sxs-lookup"><span data-stu-id="fa356-103">Fulfill service agreements overview</span></span> 
+# <a name="fulfill-service-agreements-overview"></a><span data-ttu-id="1195a-103">Oversikt over oppfylling av serviceavtaler</span><span class="sxs-lookup"><span data-stu-id="1195a-103">Fulfill service agreements overview</span></span> 
 
 [!include [banner](../includes/banner.md)]
 
 
-<span data-ttu-id="fa356-104">Dette emnet gir en oversikt over oppgavene å oppfylle serviceavtaler.</span><span class="sxs-lookup"><span data-stu-id="fa356-104">This topic provides an overview of the tasks to fulfill service agreements.</span></span> <span data-ttu-id="fa356-105">Dette emnet gir også oversikt over skjemaene som er knyttet til hver forretningsprosesskomponent og diskuterer oppgavene som er knyttet til hver forretningsprosesskomponent.</span><span class="sxs-lookup"><span data-stu-id="fa356-105">The topic also lists the forms that are associated with each business process component and discusses the tasks that are associated with each business process component.</span></span>
+<span data-ttu-id="1195a-104">Dette emnet gir en oversikt over oppgavene å oppfylle serviceavtaler.</span><span class="sxs-lookup"><span data-stu-id="1195a-104">This topic provides an overview of the tasks to fulfill service agreements.</span></span> <span data-ttu-id="1195a-105">Dette emnet gir også oversikt over skjemaene som er knyttet til hver forretningsprosesskomponent og diskuterer oppgavene som er knyttet til hver forretningsprosesskomponent.</span><span class="sxs-lookup"><span data-stu-id="1195a-105">The topic also lists the forms that are associated with each business process component and discusses the tasks that are associated with each business process component.</span></span>
 
-## <a name="forms-for-the-fulfill-service-contracts-business-process-components"></a><span data-ttu-id="fa356-106">Skjemaer for forretningsprosesskomponenter for oppfylling av servicekontrakter</span><span class="sxs-lookup"><span data-stu-id="fa356-106">Forms for the Fulfill service contracts business process components</span></span>
+## <a name="forms-for-the-fulfill-service-contracts-business-process-components"></a><span data-ttu-id="1195a-106">Skjemaer for forretningsprosesskomponenter for oppfylling av servicekontrakter</span><span class="sxs-lookup"><span data-stu-id="1195a-106">Forms for the Fulfill service contracts business process components</span></span>
 
-<span data-ttu-id="fa356-107">Tabellen nedenfor viser skjemaene som støtter forretningsprosesskomponentene for oppfylling av servicekontrakter.</span><span class="sxs-lookup"><span data-stu-id="fa356-107">The following table lists the forms that support the Fulfill service contracts business process components.</span></span> <span data-ttu-id="fa356-108">Tabelloppføringene er organisert først etter oppgave og deretter alfabetisk etter skjemanavn.</span><span class="sxs-lookup"><span data-stu-id="fa356-108">The table entries are organized first by task, and then alphabetically by the name of the form.</span></span>
+<span data-ttu-id="1195a-107">Tabellen nedenfor viser skjemaene som støtter forretningsprosesskomponentene for oppfylling av servicekontrakter.</span><span class="sxs-lookup"><span data-stu-id="1195a-107">The following table lists the forms that support the Fulfill service contracts business process components.</span></span> <span data-ttu-id="1195a-108">Tabelloppføringene er organisert først etter oppgave og deretter alfabetisk etter skjemanavn.</span><span class="sxs-lookup"><span data-stu-id="1195a-108">The table entries are organized first by task, and then alphabetically by the name of the form.</span></span>
 
 
 > [!NOTE]
-> <P><span data-ttu-id="fa356-109">Hvis du vil åpne noen av skjemaene i tabellen nedenfor, må du angi informasjon eller parameterinnstillinger.</span><span class="sxs-lookup"><span data-stu-id="fa356-109">To open some of the forms in the following table, you must enter information or parameter settings.</span></span></P>
+> <P><span data-ttu-id="1195a-109">Hvis du vil åpne noen av skjemaene i tabellen nedenfor, må du angi informasjon eller parameterinnstillinger.</span><span class="sxs-lookup"><span data-stu-id="1195a-109">To open some of the forms in the following table, you must enter information or parameter settings.</span></span></P>
 
 
 
@@ -50,21 +50,21 @@ ms.locfileid: "348302"
 </colgroup>
 <thead>
 <tr class="header">
-<th><p><span data-ttu-id="fa356-110">Oppgave for forretningsprosesskomponent</span><span class="sxs-lookup"><span data-stu-id="fa356-110">Business process component task</span></span></p></th>
-<th><p><span data-ttu-id="fa356-111">Skjemanavn</span><span class="sxs-lookup"><span data-stu-id="fa356-111">Form name</span></span></p></th>
-<th><p><span data-ttu-id="fa356-112">Bruk</span><span class="sxs-lookup"><span data-stu-id="fa356-112">Usage</span></span></p></th>
+<th><p><span data-ttu-id="1195a-110">Oppgave for forretningsprosesskomponent</span><span class="sxs-lookup"><span data-stu-id="1195a-110">Business process component task</span></span></p></th>
+<th><p><span data-ttu-id="1195a-111">Skjemanavn</span><span class="sxs-lookup"><span data-stu-id="1195a-111">Form name</span></span></p></th>
+<th><p><span data-ttu-id="1195a-112">Bruk</span><span class="sxs-lookup"><span data-stu-id="1195a-112">Usage</span></span></p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><span data-ttu-id="fa356-113">Utvikle og etablere avtale</span><span class="sxs-lookup"><span data-stu-id="fa356-113">Develop and establish agreement</span></span></p></td>
-<td><p><span data-ttu-id="fa356-114"><strong>Serviceavtaler</strong></span><span class="sxs-lookup"><span data-stu-id="fa356-114"><strong>Service agreements</strong></span></span></p></td>
-<td><p><span data-ttu-id="fa356-115">Opprett og vedlikehold serviceavtaler.</span><span class="sxs-lookup"><span data-stu-id="fa356-115">Create and maintain service agreements.</span></span></p></td>
+<td><p><span data-ttu-id="1195a-113">Utvikle og etablere avtale</span><span class="sxs-lookup"><span data-stu-id="1195a-113">Develop and establish agreement</span></span></p></td>
+<td><p><span data-ttu-id="1195a-114"><strong>Serviceavtaler</strong></span><span class="sxs-lookup"><span data-stu-id="1195a-114"><strong>Service agreements</strong></span></span></p></td>
+<td><p><span data-ttu-id="1195a-115">Opprett og vedlikehold serviceavtaler.</span><span class="sxs-lookup"><span data-stu-id="1195a-115">Create and maintain service agreements.</span></span></p></td>
 </tr>
 <tr class="even">
 <td><p></p></td>
-<td><p><span data-ttu-id="fa356-116"><strong>Abonnement</strong></span><span class="sxs-lookup"><span data-stu-id="fa356-116"><strong>Subscription</strong></span></span></p></td>
-<td><p><span data-ttu-id="fa356-117">Opprett og vedlikehold serviceabonnementer.</span><span class="sxs-lookup"><span data-stu-id="fa356-117">Create and maintain service subscriptions.</span></span></p></td>
+<td><p><span data-ttu-id="1195a-116"><strong>Abonnement</strong></span><span class="sxs-lookup"><span data-stu-id="1195a-116"><strong>Subscription</strong></span></span></p></td>
+<td><p><span data-ttu-id="1195a-117">Opprett og vedlikehold serviceabonnementer.</span><span class="sxs-lookup"><span data-stu-id="1195a-117">Create and maintain service subscriptions.</span></span></p></td>
 </tr>
 <tr class="odd">
 <td><p> </p></td>
@@ -72,14 +72,14 @@ ms.locfileid: "348302"
 <td><p> </p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="fa356-118">Overvåke og implementere avtale</span><span class="sxs-lookup"><span data-stu-id="fa356-118">Monitor and implement agreement</span></span></p></td>
-<td><p><span data-ttu-id="fa356-119"><strong>Endre tjenestestadium</strong></span><span class="sxs-lookup"><span data-stu-id="fa356-119"><strong>Change service stage</strong></span></span></p></td>
-<td><p><span data-ttu-id="fa356-120">Velg neste trinn i arbeidsflyten for en serviceordre.</span><span class="sxs-lookup"><span data-stu-id="fa356-120">Select the next stage in the workflow for a service order.</span></span></p></td>
+<td><p><span data-ttu-id="1195a-118">Overvåke og implementere avtale</span><span class="sxs-lookup"><span data-stu-id="1195a-118">Monitor and implement agreement</span></span></p></td>
+<td><p><span data-ttu-id="1195a-119"><strong>Endre tjenestestadium</strong></span><span class="sxs-lookup"><span data-stu-id="1195a-119"><strong>Change service stage</strong></span></span></p></td>
+<td><p><span data-ttu-id="1195a-120">Velg neste trinn i arbeidsflyten for en serviceordre.</span><span class="sxs-lookup"><span data-stu-id="1195a-120">Select the next stage in the workflow for a service order.</span></span></p></td>
 </tr>
 <tr class="odd">
 <td><p></p></td>
-<td><p><span data-ttu-id="fa356-121"><strong>Serviceordrer</strong></span><span class="sxs-lookup"><span data-stu-id="fa356-121"><strong>Service orders</strong></span></span></p></td>
-<td><p><span data-ttu-id="fa356-122">Opprett og vedlikehold serviceordrer.</span><span class="sxs-lookup"><span data-stu-id="fa356-122">Create and maintain service orders.</span></span></p></td>
+<td><p><span data-ttu-id="1195a-121"><strong>Serviceordrer</strong></span><span class="sxs-lookup"><span data-stu-id="1195a-121"><strong>Service orders</strong></span></span></p></td>
+<td><p><span data-ttu-id="1195a-122">Opprett og vedlikehold serviceordrer.</span><span class="sxs-lookup"><span data-stu-id="1195a-122">Create and maintain service orders.</span></span></p></td>
 </tr>
 <tr class="even">
 <td><p> </p></td>
@@ -87,19 +87,19 @@ ms.locfileid: "348302"
 <td><p> </p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="fa356-123">Oppdatere og evaluere kontrakt</span><span class="sxs-lookup"><span data-stu-id="fa356-123">Update and evaluate contract</span></span></p></td>
-<td><p><span data-ttu-id="fa356-124"><strong>Avbryt tjenestenivåavtale</strong></span><span class="sxs-lookup"><span data-stu-id="fa356-124"><strong>Cancel service level agreement</strong></span></span></p></td>
-<td><p><span data-ttu-id="fa356-125">Avbryt tjenestenivåavtale på en serviceordre.</span><span class="sxs-lookup"><span data-stu-id="fa356-125">Cancel the service level agreement on a service order.</span></span></p></td>
+<td><p><span data-ttu-id="1195a-123">Oppdatere og evaluere kontrakt</span><span class="sxs-lookup"><span data-stu-id="1195a-123">Update and evaluate contract</span></span></p></td>
+<td><p><span data-ttu-id="1195a-124"><strong>Avbryt tjenestenivåavtale</strong></span><span class="sxs-lookup"><span data-stu-id="1195a-124"><strong>Cancel service level agreement</strong></span></span></p></td>
+<td><p><span data-ttu-id="1195a-125">Avbryt tjenestenivåavtale på en serviceordre.</span><span class="sxs-lookup"><span data-stu-id="1195a-125">Cancel the service level agreement on a service order.</span></span></p></td>
 </tr>
 <tr class="even">
 <td><p></p></td>
-<td><p><span data-ttu-id="fa356-126"><strong>Annullere serviceordrer</strong></span><span class="sxs-lookup"><span data-stu-id="fa356-126"><strong>Cancel service orders</strong></span></span></p></td>
-<td><p><span data-ttu-id="fa356-127">Annuller serviceordrer eller tilbakefør annulleringsstatusen for serviceordrer.</span><span class="sxs-lookup"><span data-stu-id="fa356-127">Cancel service orders, or reverse the Canceled status of service orders.</span></span></p></td>
+<td><p><span data-ttu-id="1195a-126"><strong>Annullere serviceordrer</strong></span><span class="sxs-lookup"><span data-stu-id="1195a-126"><strong>Cancel service orders</strong></span></span></p></td>
+<td><p><span data-ttu-id="1195a-127">Annuller serviceordrer eller tilbakefør annulleringsstatusen for serviceordrer.</span><span class="sxs-lookup"><span data-stu-id="1195a-127">Cancel service orders, or reverse the Canceled status of service orders.</span></span></p></td>
 </tr>
 <tr class="odd">
 <td><p></p></td>
-<td><p><span data-ttu-id="fa356-128"><strong>Indeksere abonnement</strong></span><span class="sxs-lookup"><span data-stu-id="fa356-128"><strong>Index subscription</strong></span></span></p></td>
-<td><p><span data-ttu-id="fa356-129">Oppdatere basisprisene og indeksen for abonnement.</span><span class="sxs-lookup"><span data-stu-id="fa356-129">Update the base prices and indexes for subscriptions.</span></span></p></td>
+<td><p><span data-ttu-id="1195a-128"><strong>Indeksere abonnement</strong></span><span class="sxs-lookup"><span data-stu-id="1195a-128"><strong>Index subscription</strong></span></span></p></td>
+<td><p><span data-ttu-id="1195a-129">Oppdatere basisprisene og indeksen for abonnement.</span><span class="sxs-lookup"><span data-stu-id="1195a-129">Update the base prices and indexes for subscriptions.</span></span></p></td>
 </tr>
 </tbody>
 </table>

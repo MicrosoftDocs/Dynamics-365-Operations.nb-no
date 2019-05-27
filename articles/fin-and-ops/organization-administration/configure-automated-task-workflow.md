@@ -18,96 +18,96 @@ ms.author: donaldc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 5a9f37228beedafa085987668d5c89b06c6c9d61
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "365115"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1557411"
 ---
-# <a name="configure-automated-tasks-in-a-workflow"></a><span data-ttu-id="82606-103">Konfigurere automatiserte oppgaver i en arbeidsflyt</span><span class="sxs-lookup"><span data-stu-id="82606-103">Configure automated tasks in a workflow</span></span>
+# <a name="configure-automated-tasks-in-a-workflow"></a><span data-ttu-id="24156-103">Konfigurere automatiserte oppgaver i en arbeidsflyt</span><span class="sxs-lookup"><span data-stu-id="24156-103">Configure automated tasks in a workflow</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="82606-104">Dette emnet forklarer hvordan du konfigurerer egenskapene for en automatisert oppgave.</span><span class="sxs-lookup"><span data-stu-id="82606-104">This topic explains how to configure the properties for an automated task.</span></span>
+<span data-ttu-id="24156-104">Dette emnet forklarer hvordan du konfigurerer egenskapene for en automatisert oppgave.</span><span class="sxs-lookup"><span data-stu-id="24156-104">This topic explains how to configure the properties for an automated task.</span></span>
 
-<span data-ttu-id="82606-105">Når du skal konfigurere en automatisert oppgave i redigeringsprogrammet for arbeidsflyt, høyreklikker du oppgaven og klikker deretter **Egenskaper** for å åpne **Egenskaper**-siden.</span><span class="sxs-lookup"><span data-stu-id="82606-105">To configure an automated task in the workflow editor, right-click the task, and then click **Properties** to open the **Properties** page.</span></span> <span data-ttu-id="82606-106">Bruk deretter fremgangsmåten nedenfor for å konfigurere egenskapene for den automatiserte oppgaven.</span><span class="sxs-lookup"><span data-stu-id="82606-106">Then use the following procedures to configure the properties for the automated task.</span></span>
+<span data-ttu-id="24156-105">Når du skal konfigurere en automatisert oppgave i redigeringsprogrammet for arbeidsflyt, høyreklikker du oppgaven og klikker deretter **Egenskaper** for å åpne **Egenskaper**-siden.</span><span class="sxs-lookup"><span data-stu-id="24156-105">To configure an automated task in the workflow editor, right-click the task, and then click **Properties** to open the **Properties** page.</span></span> <span data-ttu-id="24156-106">Bruk deretter fremgangsmåten nedenfor for å konfigurere egenskapene for den automatiserte oppgaven.</span><span class="sxs-lookup"><span data-stu-id="24156-106">Then use the following procedures to configure the properties for the automated task.</span></span>
 
-## <a name="name-the-task"></a><span data-ttu-id="82606-107">Gi navn til oppgaven</span><span class="sxs-lookup"><span data-stu-id="82606-107">Name the task</span></span>
+## <a name="name-the-task"></a><span data-ttu-id="24156-107">Gi navn til oppgaven</span><span class="sxs-lookup"><span data-stu-id="24156-107">Name the task</span></span>
 
-<span data-ttu-id="82606-108">Følg denne fremgangsmåten for å sette et navn på den automatiserte oppgaven.</span><span class="sxs-lookup"><span data-stu-id="82606-108">Follow these steps to enter a name for the automated task.</span></span>
+<span data-ttu-id="24156-108">Følg denne fremgangsmåten for å sette et navn på den automatiserte oppgaven.</span><span class="sxs-lookup"><span data-stu-id="24156-108">Follow these steps to enter a name for the automated task.</span></span>
 
-1. <span data-ttu-id="82606-109">Klikk **Grunnleggende innstillinger** i ruten til venstre.</span><span class="sxs-lookup"><span data-stu-id="82606-109">In the left pane, click **Basic Settings**.</span></span>
-2. <span data-ttu-id="82606-110">I feltet **Navn** angir du et unikt navn på oppgaven.</span><span class="sxs-lookup"><span data-stu-id="82606-110">In the **Name** field, enter a unique name for the task.</span></span>
+1. <span data-ttu-id="24156-109">Klikk **Grunnleggende innstillinger** i ruten til venstre.</span><span class="sxs-lookup"><span data-stu-id="24156-109">In the left pane, click **Basic Settings**.</span></span>
+2. <span data-ttu-id="24156-110">I feltet **Navn** angir du et unikt navn på oppgaven.</span><span class="sxs-lookup"><span data-stu-id="24156-110">In the **Name** field, enter a unique name for the task.</span></span>
 
-## <a name="specify-when-notifications-are-sent"></a><span data-ttu-id="82606-111">Angi når varslinger skal sendes</span><span class="sxs-lookup"><span data-stu-id="82606-111">Specify when notifications are sent</span></span>
+## <a name="specify-when-notifications-are-sent"></a><span data-ttu-id="24156-111">Angi når varslinger skal sendes</span><span class="sxs-lookup"><span data-stu-id="24156-111">Specify when notifications are sent</span></span>
 
-<span data-ttu-id="82606-112">Du kan sende meldinger til personer når en automatisert oppgave er kjørt eller avbrutt.</span><span class="sxs-lookup"><span data-stu-id="82606-112">You can send notifications to people when an automated task has been run or canceled.</span></span> <span data-ttu-id="82606-113">Følg fremgangsmåten nedenfor for å angi når meldinger skal sendes, og hvem de skal sendes til.</span><span class="sxs-lookup"><span data-stu-id="82606-113">Follow these steps to specify when notifications are sent, and who they are sent to.</span></span>
+<span data-ttu-id="24156-112">Du kan sende meldinger til personer når en automatisert oppgave er kjørt eller avbrutt.</span><span class="sxs-lookup"><span data-stu-id="24156-112">You can send notifications to people when an automated task has been run or canceled.</span></span> <span data-ttu-id="24156-113">Følg fremgangsmåten nedenfor for å angi når meldinger skal sendes, og hvem de skal sendes til.</span><span class="sxs-lookup"><span data-stu-id="24156-113">Follow these steps to specify when notifications are sent, and who they are sent to.</span></span>
 
-1. <span data-ttu-id="82606-114">I den venstre ruten klikker du **Varslinger**.</span><span class="sxs-lookup"><span data-stu-id="82606-114">In the left pane, click **Notifications**.</span></span>
-2. <span data-ttu-id="82606-115">Merk av i avmerkingsboksen ved siden av hendelsene du vil sende meldinger for:</span><span class="sxs-lookup"><span data-stu-id="82606-115">Select the check box next to the events to send notifications for:</span></span>
+1. <span data-ttu-id="24156-114">I den venstre ruten klikker du **Varslinger**.</span><span class="sxs-lookup"><span data-stu-id="24156-114">In the left pane, click **Notifications**.</span></span>
+2. <span data-ttu-id="24156-115">Merk av i avmerkingsboksen ved siden av hendelsene du vil sende meldinger for:</span><span class="sxs-lookup"><span data-stu-id="24156-115">Select the check box next to the events to send notifications for:</span></span>
 
-    - <span data-ttu-id="82606-116">**Utførelse** – Meldinger blir sendt når oppgaven er kjørt.</span><span class="sxs-lookup"><span data-stu-id="82606-116">**Execution** – Notifications are sent when the task has been run.</span></span>
-    - <span data-ttu-id="82606-117">**Avbrutt** – Meldinger blir sendt når oppgaven er avbrutt.</span><span class="sxs-lookup"><span data-stu-id="82606-117">**Canceled** – Notifications are sent when the task has been canceled.</span></span>
+    - <span data-ttu-id="24156-116">**Utførelse** – Meldinger blir sendt når oppgaven er kjørt.</span><span class="sxs-lookup"><span data-stu-id="24156-116">**Execution** – Notifications are sent when the task has been run.</span></span>
+    - <span data-ttu-id="24156-117">**Avbrutt** – Meldinger blir sendt når oppgaven er avbrutt.</span><span class="sxs-lookup"><span data-stu-id="24156-117">**Canceled** – Notifications are sent when the task has been canceled.</span></span>
 
-3. <span data-ttu-id="82606-118">Velg raden for en hendelse du valgte i trinn 2.</span><span class="sxs-lookup"><span data-stu-id="82606-118">Select the row for an event that you selected in step 2.</span></span>
-4. <span data-ttu-id="82606-119">I tekstfeltet i kategorien **Varslingstekst** skriver du inn teksten i meldingen.</span><span class="sxs-lookup"><span data-stu-id="82606-119">On the **Notification text** tab, in the text box, enter the text of the notification.</span></span>
-5. <span data-ttu-id="82606-120">Hvis du vil tilpasse varslingen, kan du sette inn plassholdere.</span><span class="sxs-lookup"><span data-stu-id="82606-120">To personalize the notification, you can insert placeholders.</span></span> <span data-ttu-id="82606-121">Plassholdere erstattes med de riktige dataene når varslingen vises til brukerne.</span><span class="sxs-lookup"><span data-stu-id="82606-121">Placeholders are replaced with appropriate data when the notification is shown to users.</span></span> <span data-ttu-id="82606-122">Følg denne fremgangsmåten for å sette inn en plassholder:</span><span class="sxs-lookup"><span data-stu-id="82606-122">Follow these steps to insert a placeholder:</span></span>
+3. <span data-ttu-id="24156-118">Velg raden for en hendelse du valgte i trinn 2.</span><span class="sxs-lookup"><span data-stu-id="24156-118">Select the row for an event that you selected in step 2.</span></span>
+4. <span data-ttu-id="24156-119">I tekstfeltet i kategorien **Varslingstekst** skriver du inn teksten i meldingen.</span><span class="sxs-lookup"><span data-stu-id="24156-119">On the **Notification text** tab, in the text box, enter the text of the notification.</span></span>
+5. <span data-ttu-id="24156-120">Hvis du vil tilpasse varslingen, kan du sette inn plassholdere.</span><span class="sxs-lookup"><span data-stu-id="24156-120">To personalize the notification, you can insert placeholders.</span></span> <span data-ttu-id="24156-121">Plassholdere erstattes med de riktige dataene når varslingen vises til brukerne.</span><span class="sxs-lookup"><span data-stu-id="24156-121">Placeholders are replaced with appropriate data when the notification is shown to users.</span></span> <span data-ttu-id="24156-122">Følg denne fremgangsmåten for å sette inn en plassholder:</span><span class="sxs-lookup"><span data-stu-id="24156-122">Follow these steps to insert a placeholder:</span></span>
 
-    1. <span data-ttu-id="82606-123">I tekstboksen klikker du der plassholderen skal vises.</span><span class="sxs-lookup"><span data-stu-id="82606-123">In the text box, click where the placeholder should appear.</span></span>
-    2. <span data-ttu-id="82606-124">Klikk **Sett inn plassholder**.</span><span class="sxs-lookup"><span data-stu-id="82606-124">Click **Insert placeholder**.</span></span>
-    3. <span data-ttu-id="82606-125">I listen som vises, velger du plassholderen du vil sette inn.</span><span class="sxs-lookup"><span data-stu-id="82606-125">In the list that appears, select the placeholder to insert.</span></span>
-    4. <span data-ttu-id="82606-126">Klikk **Sett inn**.</span><span class="sxs-lookup"><span data-stu-id="82606-126">Click **Insert**.</span></span>
+    1. <span data-ttu-id="24156-123">I tekstboksen klikker du der plassholderen skal vises.</span><span class="sxs-lookup"><span data-stu-id="24156-123">In the text box, click where the placeholder should appear.</span></span>
+    2. <span data-ttu-id="24156-124">Klikk **Sett inn plassholder**.</span><span class="sxs-lookup"><span data-stu-id="24156-124">Click **Insert placeholder**.</span></span>
+    3. <span data-ttu-id="24156-125">I listen som vises, velger du plassholderen du vil sette inn.</span><span class="sxs-lookup"><span data-stu-id="24156-125">In the list that appears, select the placeholder to insert.</span></span>
+    4. <span data-ttu-id="24156-126">Klikk **Sett inn**.</span><span class="sxs-lookup"><span data-stu-id="24156-126">Click **Insert**.</span></span>
 
-6. <span data-ttu-id="82606-127">Hvis du vil legge til oversettelser av varslingen, gjør du følgende:</span><span class="sxs-lookup"><span data-stu-id="82606-127">To add translations of the notification, follow these steps:</span></span>
+6. <span data-ttu-id="24156-127">Hvis du vil legge til oversettelser av varslingen, gjør du følgende:</span><span class="sxs-lookup"><span data-stu-id="24156-127">To add translations of the notification, follow these steps:</span></span>
 
-    1. <span data-ttu-id="82606-128">Klikk **Oversettelser**.</span><span class="sxs-lookup"><span data-stu-id="82606-128">Click **Translations**.</span></span>
-    2. <span data-ttu-id="82606-129">På siden som vises, klikker du **Legg til**.</span><span class="sxs-lookup"><span data-stu-id="82606-129">On the page that appears, click **Add**.</span></span>
-    3. <span data-ttu-id="82606-130">I listen som vises, velger du språket teksten angis på.</span><span class="sxs-lookup"><span data-stu-id="82606-130">In the list that appears, select the language that you're entering the text in.</span></span>
-    4. <span data-ttu-id="82606-131">I **Oversatt tekst**-feltet legger du inn teksten.</span><span class="sxs-lookup"><span data-stu-id="82606-131">In the **Translated text** field, enter the text.</span></span>
-    5. <span data-ttu-id="82606-132">Hvis du vil tilpasse teksten, kan du sette inn plassholdere som beskrevet i trinn 5.</span><span class="sxs-lookup"><span data-stu-id="82606-132">To personalize the text, you can insert placeholders as described in step 5.</span></span>
-    6. <span data-ttu-id="82606-133">Klikk **Lukk**.</span><span class="sxs-lookup"><span data-stu-id="82606-133">Click **Close**.</span></span>
+    1. <span data-ttu-id="24156-128">Klikk **Oversettelser**.</span><span class="sxs-lookup"><span data-stu-id="24156-128">Click **Translations**.</span></span>
+    2. <span data-ttu-id="24156-129">På siden som vises, klikker du **Legg til**.</span><span class="sxs-lookup"><span data-stu-id="24156-129">On the page that appears, click **Add**.</span></span>
+    3. <span data-ttu-id="24156-130">I listen som vises, velger du språket teksten angis på.</span><span class="sxs-lookup"><span data-stu-id="24156-130">In the list that appears, select the language that you're entering the text in.</span></span>
+    4. <span data-ttu-id="24156-131">I **Oversatt tekst**-feltet legger du inn teksten.</span><span class="sxs-lookup"><span data-stu-id="24156-131">In the **Translated text** field, enter the text.</span></span>
+    5. <span data-ttu-id="24156-132">Hvis du vil tilpasse teksten, kan du sette inn plassholdere som beskrevet i trinn 5.</span><span class="sxs-lookup"><span data-stu-id="24156-132">To personalize the text, you can insert placeholders as described in step 5.</span></span>
+    6. <span data-ttu-id="24156-133">Klikk **Lukk**.</span><span class="sxs-lookup"><span data-stu-id="24156-133">Click **Close**.</span></span>
 
-7. <span data-ttu-id="82606-134">I **Mottaker**-kategorien angir du hvem meldingene skal sendes til.</span><span class="sxs-lookup"><span data-stu-id="82606-134">On the **Recipient** tab, specify who the notifications are sent to.</span></span> <span data-ttu-id="82606-135">Velg ett av alternativene i tabellen nedenfor og følg deretter de resterende trinnene for dette alternativet før du går til trinn 8.</span><span class="sxs-lookup"><span data-stu-id="82606-135">Select one of the options in the following table, and then follow the additional steps for that option before you go to step 8.</span></span>
+7. <span data-ttu-id="24156-134">I **Mottaker**-kategorien angir du hvem meldingene skal sendes til.</span><span class="sxs-lookup"><span data-stu-id="24156-134">On the **Recipient** tab, specify who the notifications are sent to.</span></span> <span data-ttu-id="24156-135">Velg ett av alternativene i tabellen nedenfor og følg deretter de resterende trinnene for dette alternativet før du går til trinn 8.</span><span class="sxs-lookup"><span data-stu-id="24156-135">Select one of the options in the following table, and then follow the additional steps for that option before you go to step 8.</span></span>
 
     <table>
     <thead>
     <tr>
-    <th><span data-ttu-id="82606-136">Alternativ</span><span class="sxs-lookup"><span data-stu-id="82606-136">Option</span></span></th>
-    <th><span data-ttu-id="82606-137">Varslingsmottakere</span><span class="sxs-lookup"><span data-stu-id="82606-137">Notification recipients</span></span></th>
-    <th><span data-ttu-id="82606-138">Tilleggstrinn</span><span class="sxs-lookup"><span data-stu-id="82606-138">Additional steps</span></span></th>
+    <th><span data-ttu-id="24156-136">Alternativ</span><span class="sxs-lookup"><span data-stu-id="24156-136">Option</span></span></th>
+    <th><span data-ttu-id="24156-137">Varslingsmottakere</span><span class="sxs-lookup"><span data-stu-id="24156-137">Notification recipients</span></span></th>
+    <th><span data-ttu-id="24156-138">Tilleggstrinn</span><span class="sxs-lookup"><span data-stu-id="24156-138">Additional steps</span></span></th>
     </tr>
     </thead>
     <tbody>
     <tr>
-    <td><span data-ttu-id="82606-139">Deltaker</span><span class="sxs-lookup"><span data-stu-id="82606-139">Participant</span></span></td>
-    <td><span data-ttu-id="82606-140">Brukere som er tilordnet til en bestemt gruppe eller rolle</span><span class="sxs-lookup"><span data-stu-id="82606-140">Users who are assigned to a specific group or role</span></span></td>
+    <td><span data-ttu-id="24156-139">Deltaker</span><span class="sxs-lookup"><span data-stu-id="24156-139">Participant</span></span></td>
+    <td><span data-ttu-id="24156-140">Brukere som er tilordnet til en bestemt gruppe eller rolle</span><span class="sxs-lookup"><span data-stu-id="24156-140">Users who are assigned to a specific group or role</span></span></td>
     <td>
     <ol>
-    <li><span data-ttu-id="82606-141">Når du har valgt <strong>Deltaker</strong>i <strong>Rollebasert</strong>-kategorien i <strong>Type deltaker</strong>-listen, velger du typen gruppe eller rolle som meldingene skal sendes til.</span><span class="sxs-lookup"><span data-stu-id="82606-141">After you select <strong>Participant</strong>, on the <strong>Role based</strong> tab, in the <strong>Type of participant</strong> list, select the type of group or role to send notifications to.</span></span></li>
-    <li><span data-ttu-id="82606-142">I <strong>Deltaker</strong>-listen velger du gruppen eller rollen som varslingene skal sendes til.</span><span class="sxs-lookup"><span data-stu-id="82606-142">In the <strong>Participant</strong> list, select the group or role to send notifications to.</span></span></li>
+    <li><span data-ttu-id="24156-141">Når du har valgt <strong>Deltaker</strong>i <strong>Rollebasert</strong>-kategorien i <strong>Type deltaker</strong>-listen, velger du typen gruppe eller rolle som meldingene skal sendes til.</span><span class="sxs-lookup"><span data-stu-id="24156-141">After you select <strong>Participant</strong>, on the <strong>Role based</strong> tab, in the <strong>Type of participant</strong> list, select the type of group or role to send notifications to.</span></span></li>
+    <li><span data-ttu-id="24156-142">I <strong>Deltaker</strong>-listen velger du gruppen eller rollen som varslingene skal sendes til.</span><span class="sxs-lookup"><span data-stu-id="24156-142">In the <strong>Participant</strong> list, select the group or role to send notifications to.</span></span></li>
     </ol>
     </td>
     </tr>
     <tr>
-    <td><span data-ttu-id="82606-143">Arbeidsflytbruker</span><span class="sxs-lookup"><span data-stu-id="82606-143">Workflow user</span></span></td>
-    <td><span data-ttu-id="82606-144">Brukere som deltar i den gjeldende arbeidsflyten</span><span class="sxs-lookup"><span data-stu-id="82606-144">Users who participate in the current workflow</span></span></td>
+    <td><span data-ttu-id="24156-143">Arbeidsflytbruker</span><span class="sxs-lookup"><span data-stu-id="24156-143">Workflow user</span></span></td>
+    <td><span data-ttu-id="24156-144">Brukere som deltar i den gjeldende arbeidsflyten</span><span class="sxs-lookup"><span data-stu-id="24156-144">Users who participate in the current workflow</span></span></td>
     <td>
     <ul>
-    <li><span data-ttu-id="82606-145">Når du har valgt <strong>Arbeidsflytbruker</strong>i <strong>Arbeidsflytbruker</strong>-kategorien i <strong>Arbeidsflytbruker</strong>-listen, velger du en bruker som deltar i arbeidsflyten.</span><span class="sxs-lookup"><span data-stu-id="82606-145">After you select <strong>Workflow user</strong>, on the <strong>Workflow user</strong> tab, in the <strong>Workflow user</strong> list, select a user who participates in the workflow.</span></span></li>
+    <li><span data-ttu-id="24156-145">Når du har valgt <strong>Arbeidsflytbruker</strong>i <strong>Arbeidsflytbruker</strong>-kategorien i <strong>Arbeidsflytbruker</strong>-listen, velger du en bruker som deltar i arbeidsflyten.</span><span class="sxs-lookup"><span data-stu-id="24156-145">After you select <strong>Workflow user</strong>, on the <strong>Workflow user</strong> tab, in the <strong>Workflow user</strong> list, select a user who participates in the workflow.</span></span></li>
     </ul>
     </td>
     </tr>
     <tr>
-    <td><span data-ttu-id="82606-146">Bruker</span><span class="sxs-lookup"><span data-stu-id="82606-146">User</span></span></td>
-    <td><span data-ttu-id="82606-147">Bestemte Microsoft Dynamics 365 for Finance and Operations-brukere</span><span class="sxs-lookup"><span data-stu-id="82606-147">Specific Microsoft Dynamics 365 for Finance and Operations users</span></span></td>
+    <td><span data-ttu-id="24156-146">Bruker</span><span class="sxs-lookup"><span data-stu-id="24156-146">User</span></span></td>
+    <td><span data-ttu-id="24156-147">Bestemte Microsoft Dynamics 365 for Finance and Operations-brukere</span><span class="sxs-lookup"><span data-stu-id="24156-147">Specific Microsoft Dynamics 365 for Finance and Operations users</span></span></td>
     <td>
     <ol>
-    <li><span data-ttu-id="82606-148">Når du har valgt <strong>Bruker</strong>, klikker du <strong>Bruker</strong>-kategorien.</span><span class="sxs-lookup"><span data-stu-id="82606-148">After you select <strong>User</strong>, click the <strong>User</strong> tab.</span></span></li>
-    <li><span data-ttu-id="82606-149"><strong>Tilgjengelige brukere</strong>-listen inkluderer alle Finance and Operations-brukere.</span><span class="sxs-lookup"><span data-stu-id="82606-149">The <strong>Available users</strong> list includes all Finance and Operations users.</span></span> <span data-ttu-id="82606-150">Velg brukerne du vil sende varslinger til, og flytt deretter disse brukerne til <strong>Valgte brukere</strong>-listen.</span><span class="sxs-lookup"><span data-stu-id="82606-150">Select the users to send notifications to, and then move those users to the <strong>Selected users</strong> list.</span></span></li>
+    <li><span data-ttu-id="24156-148">Når du har valgt <strong>Bruker</strong>, klikker du <strong>Bruker</strong>-kategorien.</span><span class="sxs-lookup"><span data-stu-id="24156-148">After you select <strong>User</strong>, click the <strong>User</strong> tab.</span></span></li>
+    <li><span data-ttu-id="24156-149"><strong>Tilgjengelige brukere</strong>-listen inkluderer alle Finance and Operations-brukere.</span><span class="sxs-lookup"><span data-stu-id="24156-149">The <strong>Available users</strong> list includes all Finance and Operations users.</span></span> <span data-ttu-id="24156-150">Velg brukerne du vil sende varslinger til, og flytt deretter disse brukerne til <strong>Valgte brukere</strong>-listen.</span><span class="sxs-lookup"><span data-stu-id="24156-150">Select the users to send notifications to, and then move those users to the <strong>Selected users</strong> list.</span></span></li>
     </ol>
     </td>
     </tr>
     </tbody>
     </table>
 
-8. <span data-ttu-id="82606-151">Gjenta trinn 3 til 7 for hver hendelse du valgte i trinn 2.</span><span class="sxs-lookup"><span data-stu-id="82606-151">Repeat steps 3 through 7 for each event that you selected in step 2.</span></span>
+8. <span data-ttu-id="24156-151">Gjenta trinn 3 til 7 for hver hendelse du valgte i trinn 2.</span><span class="sxs-lookup"><span data-stu-id="24156-151">Repeat steps 3 through 7 for each event that you selected in step 2.</span></span>

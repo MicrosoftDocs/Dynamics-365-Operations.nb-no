@@ -17,28 +17,28 @@ ms.author: vstehman
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.openlocfilehash: 4543cf7eaa0b1ef8e32d3fdafa2c354cd3739256
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "335675"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1554228"
 ---
-# <a name="set-up-sales-tax-reporting-codes"></a><span data-ttu-id="4db65-103">Definer mva-rapporteringskoder</span><span class="sxs-lookup"><span data-stu-id="4db65-103">Set up sales tax reporting codes</span></span>
+# <a name="set-up-sales-tax-reporting-codes"></a><span data-ttu-id="7ab98-103">Definer mva-rapporteringskoder</span><span class="sxs-lookup"><span data-stu-id="7ab98-103">Set up sales tax reporting codes</span></span>
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="4db65-104">Mva-rapporteringskodene refererer til et feltnummer på en mva-rapport.</span><span class="sxs-lookup"><span data-stu-id="4db65-104">The Sales tax reporting codes refer to a field number on a sales tax report.</span></span> <span data-ttu-id="4db65-105">De brukes på landspesifikke rapportoppsett og Mva-betaling etter rapporteringskode for å skrive ut mva-beløp for en utligningsperiode som er summert per rapporteringskode.</span><span class="sxs-lookup"><span data-stu-id="4db65-105">They are used on country specific report layouts and the Sales tax payment by code report to print sales tax amounts for a settlement period summarized per reporting code.</span></span> <span data-ttu-id="4db65-106">Når du har opprettet mva-rapporteringskodene, kan du referere til dem i hurtigkategoriene Rapportoppsett på siden Mva-kode.</span><span class="sxs-lookup"><span data-stu-id="4db65-106">After you create Sales tax reporting codes, you can refer to them on the Report setup FastTabs in the Sales tax code page.</span></span> 
+<span data-ttu-id="7ab98-104">Mva-rapporteringskodene refererer til et feltnummer på en mva-rapport.</span><span class="sxs-lookup"><span data-stu-id="7ab98-104">The Sales tax reporting codes refer to a field number on a sales tax report.</span></span> <span data-ttu-id="7ab98-105">De brukes på landspesifikke rapportoppsett og Mva-betaling etter rapporteringskode for å skrive ut mva-beløp for en utligningsperiode som er summert per rapporteringskode.</span><span class="sxs-lookup"><span data-stu-id="7ab98-105">They are used on country specific report layouts and the Sales tax payment by code report to print sales tax amounts for a settlement period summarized per reporting code.</span></span> <span data-ttu-id="7ab98-106">Når du har opprettet mva-rapporteringskodene, kan du referere til dem i hurtigkategoriene Rapportoppsett på siden Mva-kode.</span><span class="sxs-lookup"><span data-stu-id="7ab98-106">After you create Sales tax reporting codes, you can refer to them on the Report setup FastTabs in the Sales tax code page.</span></span> 
 
-<span data-ttu-id="4db65-107">Denne registreringen bruker demonstrasjonsfirmaet DEMF.</span><span class="sxs-lookup"><span data-stu-id="4db65-107">This recording uses the DEMF demo company.</span></span>
+<span data-ttu-id="7ab98-107">Denne registreringen bruker demonstrasjonsfirmaet DEMF.</span><span class="sxs-lookup"><span data-stu-id="7ab98-107">This recording uses the DEMF demo company.</span></span>
 
 
 
-1. <span data-ttu-id="4db65-108">Gå til Avgift > Oppsett > Merverdiavgift > Mva-rapporteringskoder.</span><span class="sxs-lookup"><span data-stu-id="4db65-108">Go to Tax > Setup > Sales tax > Sales tax reporting codes.</span></span>
-2. <span data-ttu-id="4db65-109">Klikk Ny.</span><span class="sxs-lookup"><span data-stu-id="4db65-109">Click New.</span></span>
-3. <span data-ttu-id="4db65-110">Velg rapportoppsettet som rapporteringskoden tilhører.</span><span class="sxs-lookup"><span data-stu-id="4db65-110">Select the report layout that the reporting code belongs to.</span></span>
-    * <span data-ttu-id="4db65-111">Dette oppsettet brukes til å filtrere de tilgjengelige rapporteringskodene for en mva-kode.</span><span class="sxs-lookup"><span data-stu-id="4db65-111">This layout is used to filter the available reporting codes for a Sales tax code.</span></span> <span data-ttu-id="4db65-112">Hver mva-kode tilhører en utligningsperiode som tilhører en skattemyndighet som bruker et rapportoppsett.</span><span class="sxs-lookup"><span data-stu-id="4db65-112">Each Sales tax code belongs to a settlement period which belongs to a Sales tax authority which uses a Report layout.</span></span>  
-4. <span data-ttu-id="4db65-113">Angi et nummer som refererer til et felt i en mva-rapport.</span><span class="sxs-lookup"><span data-stu-id="4db65-113">Enter a number that refers to a field on a sales tax report.</span></span>
-5. <span data-ttu-id="4db65-114">I Rapporttekst-feltet angir du en beskrivelse som skal vises på rapporter.</span><span class="sxs-lookup"><span data-stu-id="4db65-114">In the Report text field, enter a description to display on reports.</span></span>
-6. <span data-ttu-id="4db65-115">I feltet Kort beskrivelse skriver du inn en kort beskrivelse for intern bruk.</span><span class="sxs-lookup"><span data-stu-id="4db65-115">In the Brief description field, enter a description for internal purposes.</span></span>
-7. <span data-ttu-id="4db65-116">Klikk Lagre.</span><span class="sxs-lookup"><span data-stu-id="4db65-116">Click Save.</span></span>
+1. <span data-ttu-id="7ab98-108">Gå til Avgift > Oppsett > Merverdiavgift > Mva-rapporteringskoder.</span><span class="sxs-lookup"><span data-stu-id="7ab98-108">Go to Tax > Setup > Sales tax > Sales tax reporting codes.</span></span>
+2. <span data-ttu-id="7ab98-109">Klikk Ny.</span><span class="sxs-lookup"><span data-stu-id="7ab98-109">Click New.</span></span>
+3. <span data-ttu-id="7ab98-110">Velg rapportoppsettet som rapporteringskoden tilhører.</span><span class="sxs-lookup"><span data-stu-id="7ab98-110">Select the report layout that the reporting code belongs to.</span></span>
+    * <span data-ttu-id="7ab98-111">Dette oppsettet brukes til å filtrere de tilgjengelige rapporteringskodene for en mva-kode.</span><span class="sxs-lookup"><span data-stu-id="7ab98-111">This layout is used to filter the available reporting codes for a Sales tax code.</span></span> <span data-ttu-id="7ab98-112">Hver mva-kode tilhører en utligningsperiode som tilhører en skattemyndighet som bruker et rapportoppsett.</span><span class="sxs-lookup"><span data-stu-id="7ab98-112">Each Sales tax code belongs to a settlement period which belongs to a Sales tax authority which uses a Report layout.</span></span>  
+4. <span data-ttu-id="7ab98-113">Angi et nummer som refererer til et felt i en mva-rapport.</span><span class="sxs-lookup"><span data-stu-id="7ab98-113">Enter a number that refers to a field on a sales tax report.</span></span>
+5. <span data-ttu-id="7ab98-114">I Rapporttekst-feltet angir du en beskrivelse som skal vises på rapporter.</span><span class="sxs-lookup"><span data-stu-id="7ab98-114">In the Report text field, enter a description to display on reports.</span></span>
+6. <span data-ttu-id="7ab98-115">I feltet Kort beskrivelse skriver du inn en kort beskrivelse for intern bruk.</span><span class="sxs-lookup"><span data-stu-id="7ab98-115">In the Brief description field, enter a description for internal purposes.</span></span>
+7. <span data-ttu-id="7ab98-116">Klikk Lagre.</span><span class="sxs-lookup"><span data-stu-id="7ab98-116">Click Save.</span></span>
 

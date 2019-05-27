@@ -17,32 +17,32 @@ ms.author: johanho
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 8f5cb4afdc0285a6ccf28dbd362df3799c0ecc74
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "357364"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1555845"
 ---
-# <a name="end-a-production-order"></a><span data-ttu-id="6e887-103">Avslutte en produksjonsordre</span><span class="sxs-lookup"><span data-stu-id="6e887-103">End a production order</span></span>
+# <a name="end-a-production-order"></a><span data-ttu-id="9660b-103">Avslutte en produksjonsordre</span><span class="sxs-lookup"><span data-stu-id="9660b-103">End a production order</span></span>
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="6e887-104">Denne fremgangsmåten viser hvordan du avslutter en produksjonsordre.</span><span class="sxs-lookup"><span data-stu-id="6e887-104">This procedure shows how to end a production order.</span></span> <span data-ttu-id="6e887-105">Demonstrasjonsdatafirmaet USMF brukes til å opprette denne fremgangsmåten.</span><span class="sxs-lookup"><span data-stu-id="6e887-105">The demo data company used to create this procedure is USMF.</span></span> <span data-ttu-id="6e887-106">Dette er den siste fremgangsmåten av sju som forklarer livssyklusen for produksjonsordren.</span><span class="sxs-lookup"><span data-stu-id="6e887-106">This is the final procedure out of seven which explains the production order lifecycle.</span></span>
+<span data-ttu-id="9660b-104">Denne fremgangsmåten viser hvordan du avslutter en produksjonsordre.</span><span class="sxs-lookup"><span data-stu-id="9660b-104">This procedure shows how to end a production order.</span></span> <span data-ttu-id="9660b-105">Demonstrasjonsdatafirmaet USMF brukes til å opprette denne fremgangsmåten.</span><span class="sxs-lookup"><span data-stu-id="9660b-105">The demo data company used to create this procedure is USMF.</span></span> <span data-ttu-id="9660b-106">Dette er den siste fremgangsmåten av sju som forklarer livssyklusen for produksjonsordren.</span><span class="sxs-lookup"><span data-stu-id="9660b-106">This is the final procedure out of seven which explains the production order lifecycle.</span></span>
 
 
-## <a name="end-a-production-order"></a><span data-ttu-id="6e887-107">Avslutte en produksjonsordre</span><span class="sxs-lookup"><span data-stu-id="6e887-107">End a production order</span></span>
-1. <span data-ttu-id="6e887-108">Gå til Produksjonskontroll > Produksjonsordrer > Alle produksjonsordrer.</span><span class="sxs-lookup"><span data-stu-id="6e887-108">Go to Production control > Production orders > All production orders.</span></span>
-    * <span data-ttu-id="6e887-109">Velg en produksjonsordre med statusen Ferdigmeldt.</span><span class="sxs-lookup"><span data-stu-id="6e887-109">Select a production order that has the status Reported as finished.</span></span>  
-2. <span data-ttu-id="6e887-110">Klikk Produksjonsordre i handlingsruten.</span><span class="sxs-lookup"><span data-stu-id="6e887-110">On the Action Pane, click Production order.</span></span>
-3. <span data-ttu-id="6e887-111">Klikk Avslutt.</span><span class="sxs-lookup"><span data-stu-id="6e887-111">Click End.</span></span>
-    * <span data-ttu-id="6e887-112">På denne siden kan du bekrefte at du vil avslutte produksjonsordren.</span><span class="sxs-lookup"><span data-stu-id="6e887-112">On this page, you can confirm that you want to end the production order.</span></span>  
-4. <span data-ttu-id="6e887-113">Klikk kategorien Generelt.</span><span class="sxs-lookup"><span data-stu-id="6e887-113">Click the General tab.</span></span>
-5. <span data-ttu-id="6e887-114">Angi en dato i Dato-feltet.</span><span class="sxs-lookup"><span data-stu-id="6e887-114">In the Date field, enter a date.</span></span>
-6. <span data-ttu-id="6e887-115">Velg "Tildeling" i feltet Svinnmetode.</span><span class="sxs-lookup"><span data-stu-id="6e887-115">In the Scrap method field, select 'Allocation'.</span></span>
-    * <span data-ttu-id="6e887-116">Når du velger metoden Tildeling, legges kostnadene fra de kasserte materialene til de ferdige varene.</span><span class="sxs-lookup"><span data-stu-id="6e887-116">When you select the Allocation method, costs from the scrapped materials are added to the finished goods.</span></span>  
-7. <span data-ttu-id="6e887-117">Klikk OK.</span><span class="sxs-lookup"><span data-stu-id="6e887-117">Click OK.</span></span>
+## <a name="end-a-production-order"></a><span data-ttu-id="9660b-107">Avslutte en produksjonsordre</span><span class="sxs-lookup"><span data-stu-id="9660b-107">End a production order</span></span>
+1. <span data-ttu-id="9660b-108">Gå til Produksjonskontroll > Produksjonsordrer > Alle produksjonsordrer.</span><span class="sxs-lookup"><span data-stu-id="9660b-108">Go to Production control > Production orders > All production orders.</span></span>
+    * <span data-ttu-id="9660b-109">Velg en produksjonsordre med statusen Ferdigmeldt.</span><span class="sxs-lookup"><span data-stu-id="9660b-109">Select a production order that has the status Reported as finished.</span></span>  
+2. <span data-ttu-id="9660b-110">Klikk Produksjonsordre i handlingsruten.</span><span class="sxs-lookup"><span data-stu-id="9660b-110">On the Action Pane, click Production order.</span></span>
+3. <span data-ttu-id="9660b-111">Klikk Avslutt.</span><span class="sxs-lookup"><span data-stu-id="9660b-111">Click End.</span></span>
+    * <span data-ttu-id="9660b-112">På denne siden kan du bekrefte at du vil avslutte produksjonsordren.</span><span class="sxs-lookup"><span data-stu-id="9660b-112">On this page, you can confirm that you want to end the production order.</span></span>  
+4. <span data-ttu-id="9660b-113">Klikk kategorien Generelt.</span><span class="sxs-lookup"><span data-stu-id="9660b-113">Click the General tab.</span></span>
+5. <span data-ttu-id="9660b-114">Angi en dato i Dato-feltet.</span><span class="sxs-lookup"><span data-stu-id="9660b-114">In the Date field, enter a date.</span></span>
+6. <span data-ttu-id="9660b-115">Velg "Tildeling" i feltet Svinnmetode.</span><span class="sxs-lookup"><span data-stu-id="9660b-115">In the Scrap method field, select 'Allocation'.</span></span>
+    * <span data-ttu-id="9660b-116">Når du velger metoden Tildeling, legges kostnadene fra de kasserte materialene til de ferdige varene.</span><span class="sxs-lookup"><span data-stu-id="9660b-116">When you select the Allocation method, costs from the scrapped materials are added to the finished goods.</span></span>  
+7. <span data-ttu-id="9660b-117">Klikk OK.</span><span class="sxs-lookup"><span data-stu-id="9660b-117">Click OK.</span></span>
 
-## <a name="validate-calculation-results"></a><span data-ttu-id="6e887-118">Validere beregningsresultater</span><span class="sxs-lookup"><span data-stu-id="6e887-118">Validate calculation results</span></span>
-1. <span data-ttu-id="6e887-119">Klikk Styr kostnader i handlingsruten.</span><span class="sxs-lookup"><span data-stu-id="6e887-119">On the Action Pane, click Manage costs.</span></span>
-2. <span data-ttu-id="6e887-120">Klikk Vis kostnadssammenligning.</span><span class="sxs-lookup"><span data-stu-id="6e887-120">Click View cost comparison.</span></span>
-    * <span data-ttu-id="6e887-121">Når du har avsluttet produksjonsordren, kan du sammenligne den estimerte kostprisen mot den realiserte kostprisen for å få en oversikt over produksjonsavvikene.</span><span class="sxs-lookup"><span data-stu-id="6e887-121">After you have ended the production order, you can compare the estimated cost price against the realized cost price to get an overview of the production variances.</span></span>  
+## <a name="validate-calculation-results"></a><span data-ttu-id="9660b-118">Validere beregningsresultater</span><span class="sxs-lookup"><span data-stu-id="9660b-118">Validate calculation results</span></span>
+1. <span data-ttu-id="9660b-119">Klikk Styr kostnader i handlingsruten.</span><span class="sxs-lookup"><span data-stu-id="9660b-119">On the Action Pane, click Manage costs.</span></span>
+2. <span data-ttu-id="9660b-120">Klikk Vis kostnadssammenligning.</span><span class="sxs-lookup"><span data-stu-id="9660b-120">Click View cost comparison.</span></span>
+    * <span data-ttu-id="9660b-121">Når du har avsluttet produksjonsordren, kan du sammenligne den estimerte kostprisen mot den realiserte kostprisen for å få en oversikt over produksjonsavvikene.</span><span class="sxs-lookup"><span data-stu-id="9660b-121">After you have ended the production order, you can compare the estimated cost price against the realized cost price to get an overview of the production variances.</span></span>  
