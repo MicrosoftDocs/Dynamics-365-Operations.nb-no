@@ -17,11 +17,11 @@ ms.author: mkirknel
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.2999999999999998
 ms.openlocfilehash: 5fda191a41300eea7f3036af54852857d8ff653d
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "322151"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1549004"
 ---
 # <a name="onboard-vendors"></a>Ønske leverandører velkommen
 [!include [banner](../includes/banner.md)]
@@ -65,7 +65,7 @@ Tabellen nedenfor viser informasjonen som denne enheten inneholder, og som kan i
 | Kontaktens fornavn.  | Fornavnet til personen som inviteres til å registrere leverandørinformasjonen. |
 | Kontaktens mellomnavn | Mellomnavnet til personen som inviteres til å registrere leverandørinformasjonen. |
 | Kontaktens etternavn   | Etternavnet til personen som inviteres til å registrere leverandørinformasjonen. |
-| Kontaktens e-post       | E-postadressen som skal brukes til å opprette en ny bruker i Finance and Operations, og som skal registreres i leierens Azure Active Directory (Azure AD)-konto (Azure Active Directory). |
+| Kontaktens e-post       | E-postadressen som skal brukes til å opprette en ny bruker i Finance and Operations, og som skal registreres i leierens Azure Active Directory (Azure AD)-konto. |
 | Sendt dato               | Datoen da forespørselen ble opprettet i et eksternt system. |
 | Juridisk enhet                 | Den juridiske enheten der leverandøren ber om å bli en leverandør. Denne verdien må være en kode for juridisk enhet som er registrert i Finance and Operations. Hvis ingen verdi er mottatt gjennom importprosessen, en verdi fra innkjøp og leverandører parametere brukes. |
 | Leverandørtype                  | Leverandøren kan være enten en organisasjon eller en person. Leverandørtypen bestemmer hvordan leverandøren opprettes til slutt. |

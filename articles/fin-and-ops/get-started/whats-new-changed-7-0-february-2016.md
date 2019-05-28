@@ -18,11 +18,11 @@ ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: cdd8acea22fb3298d1d0e7ccce0ca42c1427fe80
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "334893"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1561816"
 ---
 # <a name="whats-new-or-changed-in-dynamics-ax-70-february-2016"></a>Hva er nytt eller endret i Dynamics AX 7.0 (februar 2016)
 
@@ -119,7 +119,7 @@ Denne funksjonen fungerer uavhengig av etterkalkuleringsmetoder som er tilordnet
 | Kompiler Common Intermediate Language (CIL) for alle funksjoner. | X ++ er kompilert til p-kode. | Helt ny X ++-kompilator genererer CIL for alle funksjoner. CIL er det samme midlertidige språket som brukes av andre. NET-baserte språk. | CIL går raskere og kan effektivt referere til klasser i administrerte biblioteker for dynamiske koblinger (DLL-er), og kan kjøres på en stor verktøybase på .NET-verktøy. |
 | Bygg inn BI-rapporter (forretningsintelligens) og visualiseringer i Microsoft Dynamics AX-klienten. | Ikke tilgjengelig | Opprett svært intuitive og flytende visualiseringer. | Den gjør det mulig å ta beslutninger på grunnlag av innsikt som er basert på BI. |
 | Integrer med Microsoft Office. | Ikke tilgjengelig | Nye funksjoner inkluderer Excel-datatilkoblingsappen, **Arbeidsbokutforming**-siden, Eksporter API og Dokumentstyring. | Du kan opprette produktivitetsløsninger for sluttbrukerne. |
-| Automatiser bygging, testing og distribusjon. | Delvis tilgjengelig | Distribuere utviklertopologien ved hjelp av Utvikler og Bygg VM. Automatisk konfigurasjon av Bygg VM for å finne, bygge moduler fra Visual Studio Online (VSO) og kjør tester. Kompilering av C\# og X++-modulen og referanser støttes. | Det øker produktiviteten til utviklere ved å redusere kostnader og arbeid for testing og valideringer. |
+| Automatiser bygging, testing og distribusjon. | Delvis tilgjengelig | Distribuere utviklertopologien ved hjelp av Utvikler og Bygg VM. Automatisk konfigurasjon av Bygg VM for å finne, bygge moduler fra Visual Studio Online (VSO) og kjøre tester. Kompilering av C\# og X++-modulen og referanser støttes. | Det øker produktiviteten til utviklere ved å redusere kostnader og arbeid for testing og valideringer. |
 | Tilpass med overlag og utvidelser. | Utvidelser er ikke tilgjengelige. | Den gjeldende versjonen av Dynamics AX har en ny modell for tilpasning. | Du kan tilpasse kildekoden og metadata for modellelementer som er levert av Microsoft eller tredjeparts Microsoft-partnere. |
 | Lag nye kontroller og grensesnittelementer ved hjelp av X++ og et moderne webrammeverk. | Egendefinerte kontroller er avhengige av eksterne rammeverk som for eksempel Microsoft ActiveX og Windows Presentation Foundation (WPF). | Det er enklere å bygge kontroller i den gjeldende versjonen. X++-rammeverket kan brukes til virkemåte- og forretningslogikk i programmet, og en HTML/JavaScript-basert klient tillater moderne visualiseringer. | Kontrollene kan utformes til å se ut og fungere på samme måte som de medfølgende kontrollene i Dynamics AX. |
 | Evaluer og juster ytelsen ved hjelp av nye verktøy. | PerfSDK, verktøysett for datautvidelse, Trace Parser Web-app og PerfTimer er ikke tilgjengelig. | PerfSDK, verktøysett for datautvidelse, Trace Parser Web-app og PerfTimer er nye. | I Software Development Kit (SDK) kan du teste og validere alle viktige forretningsprosesser for ytelse i en enkeltbrukertestkjøring og eventuelt i en flerbrukertestkjøring. Med verktøysettet for datautvidelse kan du utvide alle ytelsestester der hoveddata og transaksjonsdata må utvides på riktig måte. Ved hjelp av Trace Parser kan du validere en enkeltbrukerytelsestest eller en flerbrukerkjøring. Med PerfTimer kan du se om en spørring eller et bestemt metodekall forårsaker et ytelsesproblem. Derfor trenger du ikke ta en sporing og analysere alt i detalj. |

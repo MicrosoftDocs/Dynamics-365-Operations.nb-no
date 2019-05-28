@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 23bf579c1a4a315d0c12f848a71f89fc297c8625
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 17697677e0264c98088d5803e867e78ff3fdb5de
+ms.sourcegitcommit: 86d48d077589470bd1ea23b9c6fe01835088b6ae
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "350740"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "1538962"
 ---
 # <a name="finance-and-operations-help-system"></a>Hjelpesystem for Finance and Operations
 
@@ -90,8 +90,6 @@ Vi setter stor pris på tilbakemelding fra kunder. Du kan kommentere eller fores
 Hvis du har tilbakemelding eller spørsmål om et emne, legger du igjen en kommentar nederst på siden.
 
 1. Klikk på **Tilbakemelding** til å få tilgang til kommentarene nederst på siden, og klikk deretter på enten **Tilbakemelding for produkt** eller **Logg på for å sende tilbakemelding om dokumentasjon**.
-
-    ![Tilbakemelding](./media/comments.png)
 
 2. Skriv inn kommentarene, og klikk deretter på **Send tilbakemelding**.
 

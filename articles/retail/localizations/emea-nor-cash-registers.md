@@ -18,11 +18,11 @@ ms.author: epopov
 ms.search.validFrom: 2017-10-31
 ms.dyn365.ops.version: Application update 4
 ms.openlocfilehash: 04b495caf201a47692bbdc026c9264434bb4e538
-ms.sourcegitcommit: 5f76f1f458e93176a102ca7b4d40ec331748144e
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "989566"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1515743"
 ---
 # <a name="cash-register-functionality-for-norway"></a>Kassefunksjoner for Norge
 

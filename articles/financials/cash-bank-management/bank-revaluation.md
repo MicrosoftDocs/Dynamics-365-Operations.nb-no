@@ -3,7 +3,7 @@ title: Bankrevaluering av utenlandsk valuta
 description: Dette emnet gir en oversikt over prosessen for bankrevaluering av utenlandsk valuta. Det inneholder informasjon om oppsettet, kjøring av prosessen, beregning av prosessen og tilbakeføring av revalueringstransaksjoner.
 author: mikefalkner
 manager: AnnBe
-ms.date: 03/27/2019
+ms.date: 04/16/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: mikefalkner
 ms.search.validFrom: 2019-03-08
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 3aed5a6c12e8dd39956f906f922bfbed1b8fb680
-ms.sourcegitcommit: 9796d022a8abf5c07abcdee6852ee34f06d2eb57
+ms.openlocfilehash: 4ec9814a4a35a1b3ba7ba05a04b53e5b150f4a04
+ms.sourcegitcommit: be447fc81bc874982bc0185fcb4d87d99bd742c5
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "976689"
+ms.lasthandoff: 05/08/2019
+ms.locfileid: "1538638"
 ---
 # <a name="bank-foreign-currency-revaluation"></a>Bankrevaluering av utenlandsk valuta
 
@@ -52,7 +52,7 @@ Du må aktivere funksjonen for bankrevaluering av utenlandsk valuta før du kan 
 3. I kategorien **Nummerserier** legger du til en nummerserie for revaluering av utenlandsk valuta.
 4. Oppdater leseren for å se **Revaluering av utenlandsk valuta** i **Periodiske oppgaver**-delen på områdesiden.
 
-Du må aktivere funksjonen for hver juridiske enhet som bruker revaluering av utenlandsk valuta.
+Du må aktivere funksjonen for hver juridiske enhet som bruker revaluering av utenlandsk valuta. Hvis du er tilordnet rollen som systemansvarlig eller funksjonsleder, kan du eliminere dette trinnet ved å aktivere funksjonen med navnet **Aktiver bankrevaluering uten en parameter** i arbeidsområdet **Funksjonsbehandling**.
 
 > [!NOTE]
 > Hvis den juridiske enheten bruker en russisk, polsk eller ungarsk lands-/områdekode, kan du allerede gjøre bankrevalueringen av utenlandsk valuta. Du kan ikke bruke revaluering av utenlandsk valuta som brukes av andre land eller regioner.

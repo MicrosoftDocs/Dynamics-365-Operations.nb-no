@@ -3,7 +3,7 @@ title: Power BI-innholdet Analyse av innkjøp og forbruk
 description: Dette emnet beskriver hva som er inkludert i Kjøps- og forbruksanalyse-innhold for Power BI. Det forklarer også hvordan du får tilgang til rapportene som er inkludert i innholdet, og inneholder informasjon om datamodellen og enhetene som brukes til å bygge innholdet.
 author: FrankDahl
 manager: AnnBe
-ms.date: 12/18/2017
+ms.date: 04/24/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,12 +18,12 @@ ms.search.region: global
 ms.author: fdahl
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 069c4dc21959ab603ba6ca3da0ac68ef20325265
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 3206573022c0f843b07a468987a112ca6ac435ef
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "313848"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1527723"
 ---
 # <a name="purchase-spend-analysis-power-bi-content"></a>Power BI-innholdet Analyse av innkjøp og forbruk
 
@@ -33,7 +33,7 @@ Dette emnet beskriver hva som er inkludert i **Kjøps- og forbruksanalyse**-innh
 
 ## <a name="overview"></a>Oversikt
 
-**Kjøps- og forbruksanalyse**-innhold for Power BI ble utformet for å hjelpe innkjøpsledere og ledere som er ansvarlige for budsjetter, med å holde øye med kjøpsutgifter. Ledere kan analysere kjøpsutgifter på følgende måter:
+**Kjøps- og forbruksanalyse**-innhold for Power BI ble utformet for å hjelpe innkjøpsledere og ledere som er ansvarlige for budsjetter, med å holde oversikt over kjøpsutgifter. Ledere kan analysere kjøpsutgifter på følgende måter:
 
 - Kjøp hittil i år (etter leverandørgruppe og enkeltleverandører, innkjøpskategori og enkeltprodukter og leverandørplassering)
 - Årlig kjøpsendring (etter leverandørgruppe og innkjøpkategori)
@@ -44,88 +44,88 @@ Innholdet bruker kjøpstransaksjonsdata, og gir både en aggregert visning av kj
 Power BI-innholdet **Analyse av innkjøp og forbruk** vises på **Analyse av innkjøp og forbruk**-siden (**Innkjøp og leverandører** \> **Forespørsler og rapporter** \> **Analyse av innkjøpsytelse** \> **Analyse av innkjøp og forbruk**).
 
 ## <a name="metrics-that-are-included-in-the-power-bi-content"></a>Mål som er inkludert i Power BI-innholdet
-**Kjøps- og forbruksanalyse**-innhold for Power BI inneholder en rapport som består av et sett med mål. Disse målene vises som diagrammer, fliser og tabeller. Tabellen nedenfor gir en oversikt over effektene.
+**Kjøps- og forbruksanalyse**-innhold for Power BI inneholder en rapport som består av et sett med mål. Disse målene vises som diagrammer, fliser og tabeller. 
 
-<table>
-<thead>
-<tr>
-<th>Rapportside</th>
-<th>Diagrammer</th>
-<th>Fliser</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Kjøp etter leverandør</td>
-<td><ul>
-<li>De 10 viktigste leverandørene etter kjøp (stablet liggende stolpediagram)</li>
-<li>Totalt innkjøp etter leverandørgruppe / land / navn (sektordiagram)</li>
-<li>Innkjøp etter leverandørgruppe / land / navn (stående stolpediagram)</li>
-<li>Gjennomsnittlig innkjøp etter leverandørgruppe / land / navn (stående stolpediagram)</li>
-</ul></td>
-<td><ul>
-<li>Totale innkjøp</li>
-<li>Årlig innkjøpsvekst</li>
-<li>Totalt antall leverandører</li>
-<li>Totalt antall aktive leverandører</li>
-</ul></td>
-</tr>
-<tr>
-<td>Kjøp etter produkt</td>
-<td><ul>
-<li>Kjøp etter innkjøpskategori / produktnavn (stående stolpediagram)</li>
-<li>Totalt innkjøp etter innkjøpskategori / produktnavn (sektordiagram)</li>
-<li>De 10 viktigste produktene etter kjøp (stablet liggende stolpediagram)</li>
-</ul></td>
-<td><ul>
-<li>Totalt antall produkter</li>
-<li>Totalt antall aktive produktprosentdeler av totalt antall produkter</li>
-<li>Antall produkter som står for 80 % av innkjøp</li>
-</ul></td>
-</tr>
-<tr>
-<td>Innkjøp etter periode*</td>
-<td><ul>
-<li>Innkjøp etter måned / dag (stående stolpediagram)</li>
-<li>Kumulativ årlig kjøpsavvik (fossefallsdiagram)</li>
-<li>Totalt årlig kjøpsvekst (stående stolpediagram)</li>
-<li>Innkjøpsutdrag (matrise)</li>
-</ul></td>
-<td><ul>
-<li>Årlig innkjøpsvekst</li>
-<li>Årlig innkjøpsvekst i %</li>
-</ul></td>
-</tr>
-<tr>
-<td>Kjøp etter leverandørplassering</td>
-<td><ul>
-<li>Kjøp etter by</li>
-<li>Årlig innkjøpsvekst i %</li>
-<li>Kjøp etter land</li>
-</ul></td>
-<td></td>
-</tr>
-<tr>
-<td>Kjøps- og forbruksanalyse etter tid</td>
-<td><ul>
-<li>Kjøp inneværende år etter måned / dag (linjediagram)</li>
-<li>Kjøp inneværende or forrige år (linjediagram og stående stolpediagram)</li>
-</ul></td>
-<td></td>
-</tr>
-<tr>
-<td>Kjøps- og forbruksanalyse etter leverandør</td>
-<td><ul>
-<li>De 10 viktigste leverandørkjøpene i % av kjøp (trakt)</li>
-<li>De 10 viktigste leverandørene med økte årlige kjøp</li>
-<li>De 10 viktigste leverandørene med reduserte årlige kjøp</li>
-</ul></td>
-<td></td>
-</tr>
-</tbody>
-</table>
+Delene nedenfor gir en oversikt over effektene.
 
-\* Innkjøp i år og forrige år. og vekst etter innkjøpskategori
+### <a name="purchase-by-vendor-report-page"></a>Rapportsiden Kjøp etter leverandør
+**Diagrammer**
+- De 10 viktigste leverandørene etter kjøp (stablet liggende stolpediagram)
+- Totalt innkjøp etter leverandørgruppe / land / navn (sektordiagram)
+- Innkjøp etter leverandørgruppe / land / navn (stående stolpediagram)
+- Gjennomsnittlig innkjøp etter leverandørgruppe / land / navn (stående stolpediagram)
+
+**Fliser**
+- Totale innkjøp
+- Årlig innkjøpsvekst
+- Totalt antall leverandører
+- Totalt antall aktive leverandører
+
+**Eksempel**
+<img src="media/spend1.PNG" alt="Purchase by vendor">
+
+### <a name="purchase-by-product-report-page"></a>Rapportsiden Kjøp etter produkt
+
+**Diagrammer**
+- Kjøp etter innkjøpskategori / produktnavn (stående stolpediagram)
+- Totalt innkjøp etter innkjøpskategori / produktnavn (sektordiagram)
+- De 10 viktigste produktene etter kjøp (stablet liggende stolpediagram)
+
+**Fliser**
+- Totalt antall produkter</li>
+- Totalt antall aktive produktprosentdeler av totalt antall produkter
+- Antall produkter som står for 80 % av innkjøp
+
+**Eksempel**
+
+
+<img src="media/purchaseByProduct.PNG" alt="Purchase by Product">
+
+### <a name="purchase-by-period-report-page"></a>Rapportsiden Innkjøp etter periode
+Denne siden viser innkjøp i år og forrige år, og vekst etter innkjøpskategori.
+
+**Diagrammer** 
+- Innkjøp etter måned / dag (stående stolpediagram)
+- Kumulativ årlig kjøpsavvik (fossefallsdiagram)
+- Totalt årlig kjøpsvekst (stående stolpediagram)
+- Innkjøpsutdrag (matrise)
+
+**Fliser**
+- Årlig innkjøpsvekst
+- Årlig innkjøpsvekst i %
+
+**Eksempel**
+<img src="media/purchaseByPeriod.PNG" alt="Purchase by Period">
+
+### <a name="purchase-by-vendor-location-report-page"></a>Rapportsiden Kjøp etter leverandørplassering
+
+**Diagrammer**
+- Kjøp etter by
+- Årlig innkjøpsvekst i %
+- Kjøp etter land
+
+**Eksempel**
+<img src="media/purchByVendorLocation.PNG" alt="Purchase by Vendor Location">
+
+### <a name="purchase-spend-analysis-by-time-report-page"></a>Rapportsiden Kjøps- og forbruksanalyse etter tid
+
+**Diagrammer** 
+- Kjøp inneværende år etter måned / dag (linjediagram)
+- Kjøp inneværende or forrige år (linjediagram og stående stolpediagram)
+
+**Eksempel**
+<img src="media/PurchByTIme.PNG" alt="Purchase by Time">
+
+### <a name="purchase-spend-analysis-by-vendor-report-page"></a>Rapportsiden Kjøps- og forbruksanalyse etter leverandør
+
+**Diagrammer** 
+- De 10 viktigste leverandørkjøpene i % av kjøp (trakt)
+- De 10 viktigste leverandørene med økte årlige kjøp
+- De 10 viktigste leverandørene med reduserte årlige kjøp
+
+**Eksempel** 
+<img src="media/PurchSpendAnalysisByVendor.PNG" alt="Purchase spend by vendor">
+
 
 ## <a name="data-model-and-entities"></a>Datamodell og enheter
 Følgende data brukes til å fylle ut rapportsidene i **Kjøps- og forbruksanalyse**-innholdet for Power BI. Disse dataene vises som aggregerte mål som er oppsamlet i enhetslageret. Enhetslageret er en Microsoft SQL Server-database som er optimalisert for analyse. Hvis du vil ha mer informasjon, se [Oversikt over Power BI-integrering med enhetslager](power-bi-integration-entity-store.md).

@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7c26fedf15118a304469604527c33a25871356be
-ms.sourcegitcommit: 8eac5eee94bb32143df44c82a2dfdbe903967af8
+ms.openlocfilehash: c1a8c738fffda76f2a8492c20e2c67a154c68559
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "878316"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1522295"
 ---
 # <a name="delays"></a>Forsinkelser
 
@@ -42,7 +42,8 @@ Du kan konfigurere hvordan forsinkelser beregnes for en dekningsgruppe. Du kan d
 
 På siden **Hovedplanleggingsparametere** kan du angi starttidspunktet for beregning av forsinkelser. Hvis en ordre er utført etter dette tidspunktet, legges det til én dag i forsinkelsen av ordren. 
 
-> [!Obs!} I tidligere versjoner ble beregnede forsinkelser kalt *terminmeldinger*, forsinkelsesdatoen ble kalt *termindatoen* og en forsinket transaksjon ble kalt *en transaksjon som var satt til fremtiden*.
+> [!NOTE]
+> I tidligere versjoner ble beregnede forsinkelser kalt *terminmeldinger*, forsinkelsesdatoen ble kalt *termindatoen* og en forsinket transaksjon ble kalt *en transaksjon som var satt til fremtiden*.
 
 ## <a name="desired-date"></a>Ønsket dato
 

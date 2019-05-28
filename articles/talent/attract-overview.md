@@ -3,7 +3,7 @@ title: Funksjoner og egenskaper for Attract
 description: Dette emnet beskriver funksjonene i Attract for å administrere prosessen med å ansette nye talenter.
 author: andreabichsel
 manager: AnnBe
-ms.date: 08/01/2017
+ms.date: 04/30/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-talent
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d80e4d6359e51841e28ab5ef96e281838831db92
-ms.sourcegitcommit: 608e68b603afef9eb98d8fb25e90109c2473ef87
+ms.openlocfilehash: 6b76913ea5a3e9a2e935d8b0cfde88dd721cb5db
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "859742"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1518779"
 ---
 # <a name="attract-features-and-capabilities"></a>Funksjoner og egenskaper for Attract
 
@@ -46,3 +46,6 @@ Attract gir en forhåndsdefinert ansettelsesprosess som har fire grunnleggende t
 
 ## <a name="candidate-app"></a>Kandidat-app
 Så snart de har blitt lagt til en jobb, mottar kandidater en e-post med en kobling for å laste ned webappen. Appen gir jobbinformasjon og brukes til å kommunisere med ansettelsesteamet. Kandidater kan også bruke den til å sende inn tilgjengelighet for intervjuer.
+
+## <a name="analytic-reports"></a>Analyserapporter
+Ansettelsesteam kan vise viktige mål for ansettelsesprosess for en enkelt jobb eller aggregert på tvers av alle jobber med [analyserapporter i Attract](analytic-reports.md). Denne funksjonen er for øyeblikket i [forhåndsvisning](access-preview-feature.md) for kunder med [tillegget for omfattende ansettelse](attract-comprehensive-hiring.md).

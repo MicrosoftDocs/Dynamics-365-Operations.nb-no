@@ -1,9 +1,9 @@
 ---
-title: Lokalisering og forskriftsmessige funksjoner
-description: Dette emnet inneholder lister over ressurser som kan hjelpe deg å finne ut mer om lands-/områdespesifikk funksjonalitet.
+title: Globalisering
+description: Dette emnet inneholder lister over ressurser som kan hjelpe deg å finne ut mer om lands-/områdespesifikke funksjoner og tilbud.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 09/30/2018
+ms.date: 04/01/2019
 ms.topic: index-page
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,26 +17,33 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a8207af4dc9d5059d487bda97959eff559b7ca06
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: b9815ee404981719888e4fdf637bd81f1744d7fb
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "302707"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1517139"
 ---
-# <a name="localization-and-regulatory-features"></a>Lokalisering og forskriftsmessige funksjoner
+# <a name="globalization"></a>Globalisering
+
+## <a name="local-and-regional-deployments"></a>Lokale og områdespesifikke distribusjoner
+Hvis bestemmelsene fra myndighetene krever at data lagres eller behandles på en annen måte enn det som kreves for andre land/områder, kan det være lands-/områdespesifikke krav som du må ta hensyn til når du distribuerer Finance and Operations. Følgende ressurser kan være relevante for deg:
+
+[Microsoft Dynamics 365 for Finance and Operations – styrt av 21Vianet i Kina](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/deployment/china-local-deployment)
+
+## <a name="localization-and-regulatory-features"></a>Lokalisering og forskriftsmessige funksjoner
 
 [!include [banner](../includes/banner.md)]
 
 Microsoft Dynamics 365 for Finance and Operations inkluderer funksjonalitet for landene/områdene som er dokumentert i [Veiledning for lokaliserings- og oversettelsestilgjengelighet](https://aka.ms/dynamics_365_international_availability_deck). Denne funksjonaliteten aktiveres basert på den primære adressen for den aktive juridiske enheten. 
 
 Dette emnet inneholder lister over ressurser som kan hjelpe deg med å gjøre følgende: 
-- finne ut mer om utvikling av lands-/områdespesifikke løsninger
-- få bestemte lands-/områdeoppdateringer
-- sende inn og gå gjennom forskriftsmessige varsler
-- finne ut hvordan du bruker lands-/områdespesifikk funksjonalitet 
+- Finne ut mer om utvikling av lands-/områdespesifikke løsninger.
+- Få bestemte lands-/områdeoppdateringer.
+- Sende inn og gå gjennom forskriftsmessige varsler.
+- Finne ut hvordan du bruker lands-/områdespesifikk funksjonalitet.
 
-## <a name="developing-localized-solutions"></a>Utvikle lokaliserte løsninger
+### <a name="developing-localized-solutions"></a>Utvikle lokaliserte løsninger
 Følgende ressurser gir veiledning og informasjon som kan hjelpe utviklere og ISV-er som oppretter lands-/områdespesifikke tilpassinger, eller som oppretter en løsning for et land som Microsoft ikke støtter.
 -   [Atskilte lokaliseringsmodeller](separate-localization-models.md)
 -   [Bruke lands-/områdekontekst](apply-country-context.md)
@@ -44,22 +51,25 @@ Følgende ressurser gir veiledning og informasjon som kan hjelpe utviklere og IS
 -   [Klassifisere lokaliseringsfunksjoner](classify-localization-features.md)
 -   [Landkoder – ISO 3166](https://www.iso.org/iso-3166-country-codes.html)
 
-## <a name="regulatory-updates-and-communication"></a>Forskriftsmessige oppdateringer og kommunikasjon
+### <a name="regulatory-updates-and-communication"></a>Forskriftsmessige oppdateringer og kommunikasjon
 Ressursene nedenfor gir informasjon om planlagte og nye lokaliseringsfunksjoner. 
 
-### <a name="regulatory-updates"></a>Forskriftsmessige oppdateringer
+#### <a name="regulatory-updates"></a>Forskriftsmessige oppdateringer
 -   [Forskriftsmessige oppdateringer](../../financials/localizations/regulatory-updates.md)
 -   [Lokaliseringsportal](https://mbs.microsoft.com/customersource/northamerica/ax/support/support-news/GFMLocalizationPortalMC) (oppdateres ukentlig)
 -   [LCS-problemsøk](../lifecycle-services/issue-search-lcs.md) (oppdateres daglig)
 
-### <a name="communication-and-alerts"></a>Kommunikasjon og varsler
+#### <a name="communication-and-alerts"></a>Kommunikasjon og varsler
 -   [Forskriftsmessig overvåking og kommunikasjon om forskriftsmessig oppdatering](regulatory-watch-communication.md)
 -   [Informere Microsoft om lovgivningsvarsler for land/område og spore status for forskriftsmessige funksjoner](submit-localization-alerts.md)
 
-### <a name="dynamics-365-release-notes"></a>Produktmerknader for Dynamics 365
-I [Produktmerknader for Dynamics 365 (PDF-nedlasting)](https://aka.ms/businessappsreleasenotes) finner du beskrivelser av nye og forbedrede funksjoner i forretningsprogrammer og programplattformer for Dynamics 365. 
+#### <a name="dynamics-365-release-notes"></a>Produktmerknader for Dynamics 365
+I [Produktmerknader for Dynamics 365](https://docs.microsoft.com/business-applications-release-notes/) finner du beskrivelser av nye og forbedrede funksjoner som er planlagt for forretningsprogrammer og programplattformer for Dynamics 365. 
 
-## <a name="electronic-reporting"></a>Elektronisk rapportering
+#### <a name="finance-and-operations-whats-new"></a>Hva er nytt i Finance and Operations
+[Innholdet i Hva er nytt](../../fin-and-ops/get-started/whats-new-changed.md) angir funksjonene som er inkludert i bestemte versjoner av Finance and Operations.
+
+### <a name="electronic-reporting"></a>Elektronisk rapportering
 Ved hjelp av det elektroniske rapporteringsverktøyet (ER) kan du konfigurere formater for elektroniske dokumenter i overensstemmelse med de lovlige kravene i ulike land. ER lar deg administrere disse formatene i deres livssyklus. Hvis du vil ha mer informasjon, kan du se ett av følgende emner:
 -   [Oversikt over elektronisk rapportering](../analytics/general-electronic-reporting.md)
 -   [Administrere livssyklus til konfigurasjoner for elektronisk rapportering](../analytics/general-electronic-reporting-manage-configuration-lifecycle.md)
@@ -71,7 +81,7 @@ Ved hjelp av det elektroniske rapporteringsverktøyet (ER) kan du konfigurere fo
 -   [Konfigurere elektronisk rapportering for å hente data til Power BI](../analytics/general-electronic-reporting-report-configuration-get-data-powerbi.md)
 -   [Generere elektroniske dokumenter og oppdatere programdata ved hjelp av verktøyet for elektronisk rapportering](../analytics/generate-electronic-documents-update-application-data.md)
 
-## <a name="task-guides"></a>Oppgaveveiledninger
+### <a name="task-guides"></a>Oppgaveveiledninger
 Oppgaveveiledninger er tilgjengelige fra produktets hjelperute, og de inneholder en veiledet gjennomgang av viktige forretningsprosesser. Du kan åpne en oppgaveveiledning for å lese fremgangsmåten for en forretningsprosess, eller du kan spille av en oppgaveveiledning for å se en gjennomgang av forretningsprosessen og registrere data.
 
 Hvis du vil finne oppgaveveiledninger, går du til en side i Microsoft Dynamics 365 for Finance and Operations og klikker Hjelp. Oppgaveveiledninger som bruker siden, er oppført i hjelperuten. Du kan også bruke hjelperuten til å søke etter oppgaveveiledninger etter tittel.
@@ -79,7 +89,7 @@ Hvis du vil finne oppgaveveiledninger, går du til en side i Microsoft Dynamics 
 Hvis du vil finne ut mer, kan du se [Oppgaveveiledninger](../../fin-and-ops/get-started/help-overview.md#task-guides).
 
 
-## <a name="countryregion-specific-help-content"></a>Lands-/områdespesifikt hjelpeinnhold
+### <a name="countryregion-specific-help-content"></a>Lands-/områdespesifikt hjelpeinnhold
 :::row:::
     :::column:::
         - [Australia](../../financials/localizations/australia.md)

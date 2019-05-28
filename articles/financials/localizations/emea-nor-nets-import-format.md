@@ -17,12 +17,12 @@ ms.search.region: Norway
 ms.author: v-lenest
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: b6fb40aff3014cd6950dd3fcb93007454df03735
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: f4449ce6762fa1cf06d35a3ce6486b64bcf017f9
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "371338"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1538182"
 ---
 # <a name="nets-import-format"></a>Nets-importformat
 

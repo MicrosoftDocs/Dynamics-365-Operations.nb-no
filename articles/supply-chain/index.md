@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: shylaw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 391f63fba2916b613f66bfd36cfbd3a052cbc8fe
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: b46b95a10d257c56fdf20b016fbb598225d1f930
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "302703"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1517133"
 ---
 # <a name="supply-chain-management-home-page"></a>Startside for forsyningskjedeadministrasjon
 
@@ -92,7 +92,7 @@ Disse registreringene for tekniske konferanser omhandler produktfunksjonalitet i
 -  [Få det beste ut av ditt lagerstyringssystem](https://www.youtube.com/watch?v=--_didmZKHo&t=10s)
 -  [Avansert R3-lagerstyring – innkommende behandling og min./maks. etterfylling](https://www.youtube.com/watch?v=z5_V5Eqlf5M&t=48s)
 -  [Avansert R3-lagerstyring – en dag i løpet av utgående behandling og etterfylling av behov](https://youtu.be/Og0gLlVp7jA)
--  [Etiketter i den nye lagerstyringen for Microsoft DynamicsAX 2012 R3](https://youtu.be/5w1MngVchBA)
+-  [Etiketter i den nye lagerstyringen for Microsoft Dynamics AX 2012 R3](https://youtu.be/5w1MngVchBA)
 -  [Dynamics AX 2012 R3: Avansert lagerstyring – en dag i løpet av prosessproduksjonen](https://www.youtube.com/embed/QUxXUrN-7n4)
 
 **Produksjonskontroll**

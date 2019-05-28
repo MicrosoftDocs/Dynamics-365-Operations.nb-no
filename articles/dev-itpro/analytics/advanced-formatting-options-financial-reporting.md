@@ -1,16 +1,16 @@
 ---
 title: Avanserte formateringsalternativer i finansrapportering
 description: Når du lager en rapport i finansrapportering, finnes det flere formateringsfunksjoner, inkludert filtre for dimensjoner, begrensninger for kolonner og rapporteringsenheter, rader som ikke skal skrives ut, og IF/THEN/ELSE-setninger i beregninger.
-author: ShylaThompson
+author: ryansandness
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 04/26/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: FinancialReports
 audience: Application User
-ms.reviewer: shylaw
+ms.reviewer: sericks
 ms.search.scope: Core, Operations
 ms.custom: 106571
 ms.assetid: 895b5127-01d6-4495-b127-343387b743aa
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 8c95f3bfc33730fcf03bd65cd1e66ec104f1e236
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 70f69fdad3d9186886190c62fba08af06d2a24d6
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "335583"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1502571"
 ---
 # <a name="advanced-formatting-options-in-financial-reporting"></a>Avanserte formateringsalternativer i finansrapportering
 
@@ -41,6 +41,7 @@ Tabellen nedenfor beskriver de avanserte formateringsfunksjonene som er tilgjeng
 | Kolonnebegrensning         | Kolonnebegrensningen i raddefinisjonen er nyttig for å skjule verdier som bare er relevant i noen rader i rapporten. Når prosentberegninger blir utført på en rad, vil kolonnebegrensningen hindre at totalkolonner eller andre kolonner skrives ut når disse tallene ikke gjelder. |
 | Kolonneskift               | Du kan legge til kolonneskift i en raddefinisjon for å vise rapportinformasjon side ved side. Du kan legge til flere kolonneskift i én enkelt raddefinisjon, og kolonneoverskrifter gjentas øverst i hver kolonne etter kolonneskiftet. Merknader for en rapport vises mellom kolonneskiftene. |
 | IF/THEN/ELSE-setning     | Du kan endre beregningene i en raddefinisjon eller en kolonnedefinisjon. |
+| Bruke enkle anførselstegn ('') og ampersandtegnet (&) for dimensjonsverdier | Du kan bruke dimensjonsverdier til rapportutforming, inkludert ampersandtegnet. |
 
 ## <a name="advanced-cell-placement"></a>Avansert celleplassering
 Avansert celleplassering, eller *fremtvinging*, omfatter plassering av bestemte verdier i bestemte celler. Fremtvinging brukes for eksempel ofte til å flytte den riktige saldoen i et kontantstrømutdrag. Du kan bruke fremtvinging til følgende formål:
@@ -297,3 +298,9 @@ En **IF/THEN/ELSE**-setning gjør det mulig for alle beregninger å være avheng
 
 > [!NOTE]
 > Du kan ikke sette resultatene av en beregning inn i andre kolonner. Resultatet må være i kolonnen som inneholder formelen.
+
+#### <a name="use-single-quotes-and-an-ampersand-for-dimension-values-in-a-row-column-or-tree"></a>Bruke enkle anførselstegn og ampersandtegnet for dimensjonsverdier i en rad, en kolonne eller et tre
+
+Du kan utforme rapporter ved hjelp av dimensjonsverdier som inneholder et ampersandtegn (&). 
+
+I et **Kobling til finansdimensjon**-felt kan du angi en verdi som **'Resultat'**. Hvis du inkluderer enkle anførselstegn (' ') på begge sider av dimensjonsverdien, betyr det at du bruker litteralverdien, for eksempel å inkludere ampersandtegnet (&). 

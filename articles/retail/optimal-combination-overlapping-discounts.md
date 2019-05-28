@@ -20,11 +20,11 @@ ms.author: kfend
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ms.openlocfilehash: eebb532071e7c6bae7cfae93bfe795e79bb16c63
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "360699"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1565002"
 ---
 # <a name="determine-the-optimal-combination-of-overlapping-discounts"></a>Bestemme den optimale kombinasjonen av overlappende rabatter
 
@@ -36,7 +36,7 @@ Denne artikkelen gjelder for Microsoft Dynamics AX 2012 R3 med KB 3105973 (utgit
 
 ## <a name="discount-examples"></a>Rabatteksempler
 
-Du kan opprette et ubegrenset antall detaljhandelsrabatter på et felles sett med produkter i Dynamics AX. Men fordi det er ingen grense, ytelsesproblemer kan oppstå når du prøver å beregne rabatter som skal brukes på de ulike produktene. Følgende eksempler illustrerer problemet mer detaljert. I eksempel 1 starter vi med to produkter og to overlappende rabatter. Deretter, i eksempel 2, viser vi hvordan problemet utvikler seg som flere produkter blir lagt til.
+Du kan opprette et ubegrenset antall detaljhandelsrabatter på et felles sett med produkter. Men fordi det er ingen grense, ytelsesproblemer kan oppstå når du prøver å beregne rabatter som skal brukes på de ulike produktene. Følgende eksempler illustrerer problemet mer detaljert. I eksempel 1 starter vi med to produkter og to overlappende rabatter. Deretter, i eksempel 2, viser vi hvordan problemet utvikler seg som flere produkter blir lagt til.
 
 ### <a name="example-1-two-products-and-two-discounts"></a>Eksempel 1: To produkter og to rabatter
 

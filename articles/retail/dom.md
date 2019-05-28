@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2018-11-15
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 4f682e0c98ff70d526648bc50f8a5d6cb884ac93
-ms.sourcegitcommit: ca4562fafa33b3512f0a5e246b15545fcf53e834
+ms.openlocfilehash: 0251321f02d533326e1e8b642e30002a633b6871
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "380022"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1512679"
 ---
 # <a name="distributed-order-management-dom"></a>Behandling av distribuert ordre (DOM)
 
@@ -63,7 +63,7 @@ Illustrasjonen nedenfor viser livssyklusen til en salgsordre i et DOM-system.
 
         1. I Microsoft Dynamics Lifecycle Services åpner du det delte aktivabiblioteket, velger **Modell** som aktivatype og laster ned **DOM-lisensfilen**.
         2. Start Microsoft IIS-behandling, høyreklikk **AOSService-nettlokasjon**, og velg deretter **Utforsk**. Et Windows Utforsker-vindu åpnes på **\<roten for AOS-tjeneste\>\\webroot**. Noter deg banen for \<roten for AOS-tjeneste\>, fordi du skal bruke den i neste trinn.
-        3. Kopiere konfigurasjonsfilen i katalogen **\<AOS Service root\>\\PackagesLocalDirectory\\DOM\\bin**.
+        3. Kopier konfigurasjonsfilen i katalogen **\<AOS Service root\>\\PackagesLocalDirectory\\DOM\\bin**.
         4. Gå til klienten Retail Headquarters, og åpne siden **DOM-parametere**. Velg **Produksjonsproblemløser** i feltet **Problemløsertype** i kategorien **Problemløser**, og bekreft at det ikke vises noen feilmeldinger.
 
         > [!NOTE]
