@@ -1,48 +1,60 @@
----
-title: Definere scenarier for betaling av faktura
-description: Dette emnet beskriver hvordan du konfigurerer Dynamics 365 for Retail til å støtte ulike scenarier for fakturabetalinger.
-author: josaw1
-manager: AnnBe
-ms.date: 11/14/2018
-ms.topic: index-page
-ms.prod: ''
-ms.service: dynamics-365-retail
-ms.technology: ''
-audience: Application User
-ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
-ms.custom: ''
-ms.assetid: ed0f77f7-3609-4330-bebd-ca3134575216
-ms.search.region: global
-ms.search.industry: Retail
-ms.author: josaw
-ms.search.validFrom: 2018-11-15
-ms.dyn365.ops.version: ''
-ms.openlocfilehash: 158d8ca8a97c473e940f76dd3f35cecc4e9dd7f4
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
-ms.translationtype: HT
-ms.contentlocale: nb-NO
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1517134"
----
-# <a name="set-up-pay-invoice-scenarios"></a><span data-ttu-id="eeb59-103">Definere scenarier for betaling av faktura</span><span class="sxs-lookup"><span data-stu-id="eeb59-103">Set up pay invoice scenarios</span></span>
-
-[!include [banner](includes/banner.md)]
-
-<span data-ttu-id="eeb59-104">Funksjonen Betal faktura i Dynamics 365 for Retail er utvidet for å støtte:</span><span class="sxs-lookup"><span data-stu-id="eeb59-104">The Pay invoice functionality in Dynamics 365 for Retail has been expanded to support:</span></span>
-
-- <span data-ttu-id="eeb59-105">Betaling av flere salgsordrefakturaer i én salgsstedstransaksjon.</span><span class="sxs-lookup"><span data-stu-id="eeb59-105">Payoff of multiple sales order invoices in a single POS transaction.</span></span>
-- <span data-ttu-id="eeb59-106">Betaling for ulike typer kundefakturaer, inkludert fritekstfakturaer, prosjektbaserte fakturaer og kreditnotaer.</span><span class="sxs-lookup"><span data-stu-id="eeb59-106">Payment of various customer invoice types including free text invoices, project-based invoices, and credit notes.</span></span>
-
-<span data-ttu-id="eeb59-107">Hvis du vil aktivere disse scenariene, må funksjonsprofilen for butikker konfigureres som beskrevet nedenfor.</span><span class="sxs-lookup"><span data-stu-id="eeb59-107">To enable these scenarios, the functionality profile for stores must be configured as outlined in below.</span></span>
-
-1. <span data-ttu-id="eeb59-108">Gå til **Detaljhandel \> Kanaloppsett \> Salgsstedsoppsett \> Salgsstedsprofiler \> Funksjonsprofiler** og velg en profil som er knyttet til butikkene du vil gjøre endringene for.</span><span class="sxs-lookup"><span data-stu-id="eeb59-108">Go to **Retail \> Channel setup \> POS setup \> POS profiles \> Functionality profiles** and select a profile that's linked to the stores that you want to make the changes for.</span></span>
-2. <span data-ttu-id="eeb59-109">Konfigurer følgende parametere etter behov, i kategorien **Funksjoner**.</span><span class="sxs-lookup"><span data-stu-id="eeb59-109">On the **Functions** tab, configure the following parameters as needed.</span></span>
-
-    - <span data-ttu-id="eeb59-110">**Salgsordrefaktura** – Velg **Ja** slik at brukere kan betale én eller flere salgsordrebaserte fakturaer i én salgsstedstransaksjon.</span><span class="sxs-lookup"><span data-stu-id="eeb59-110">**Sales order invoice** – Select **Yes** to allow users to pay one or more sales order-based invoices in a single POS transaction.</span></span>
-    - <span data-ttu-id="eeb59-111">**Fritekstfaktura** – Velg **Ja** slik at brukere kan betale én eller flere fritekstbaserte fakturaer i én salgsstedstransaksjon.</span><span class="sxs-lookup"><span data-stu-id="eeb59-111">**Free text invoice** – Select **Yes** to allow users to pay one or more free text-based invoices in a single POS transaction.</span></span>
-    - <span data-ttu-id="eeb59-112">**Prosjektfaktura** – Velg **Ja** slik at brukere kan betale én eller flere prosjektbaserte fakturaer i én salgsstedstransaksjon.</span><span class="sxs-lookup"><span data-stu-id="eeb59-112">**Project invoice** – Select **Yes** to allow users to pay one or more project-based invoices in a single POS transaction.</span></span>
-    - <span data-ttu-id="eeb59-113">**Salgsordre – kreditnota** – Velg **Ja** slik at brukere kan utligne flere salgsordrebaserte kreditnotaer mot åpne fakturaer, eller betale pengene tilbake til kunden for en åpen kreditnota.</span><span class="sxs-lookup"><span data-stu-id="eeb59-113">**Sales order credit note** – Select **Yes** to allow users to settle multiple sales order-based credit notes against open invoices or process a refund to the customer for an open credit note.</span></span>
-
-> [!NOTE]
-> <span data-ttu-id="eeb59-114">Betaling eller utligning delvise beløper støttes ikke ennå.</span><span class="sxs-lookup"><span data-stu-id="eeb59-114">Payment or settlement of partial amounts is not yet supported.</span></span>
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns:logoport="urn:logoport:xliffeditor:xliff-extras:1.0" xmlns:tilt="urn:logoport:xliffeditor:tilt-non-translatables:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xliffext="urn:microsoft:content:schema:xliffextensions" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-US" original="payinvoice.md" target-language="nb-NO">
+    <header>
+      <tool tool-company="Microsoft" tool-version="1.0-7889195" tool-name="mdxliff" tool-id="mdxliff"/>
+      <xliffext:skl_file_name>payinvoice.758282.b7132dc9b3c78fa04fcfc38ea72b5678ad08deb2.skl</xliffext:skl_file_name>
+      <xliffext:version>1.2</xliffext:version>
+      <xliffext:ms.openlocfilehash>b7132dc9b3c78fa04fcfc38ea72b5678ad08deb2</xliffext:ms.openlocfilehash>
+      <xliffext:ms.sourcegitcommit>9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b</xliffext:ms.sourcegitcommit>
+      <xliffext:ms.lasthandoff>05/15/2019</xliffext:ms.lasthandoff>
+      <xliffext:ms.openlocfilepath>articles\retail\payinvoice.md</xliffext:ms.openlocfilepath>
+    </header>
+    <body>
+      <group extype="content" id="content">
+        <trans-unit xml:space="preserve" translate="yes" id="101" restype="x-metadata">
+          <source>Set up pay invoice scenarios</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Definere scenarier for betaling av faktura</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="102" restype="x-metadata">
+          <source>This topic describes how to configure Dynamics 365 for Retail to support various scenarios relating to invoice payments.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Dette emnet beskriver hvordan du konfigurerer Dynamics 365 for Retail til å støtte ulike scenarier for fakturabetalinger.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="103">
+          <source>Set up pay invoice scenarios</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Definere scenarier for betaling av faktura</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="104">
+          <source>The Pay invoice functionality in Dynamics 365 for Retail has been expanded to support:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Funksjonen Betal faktura i Dynamics 365 for Retail er utvidet for å støtte:</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="105">
+          <source>Payoff of multiple sales order invoices in a single POS transaction.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Betaling av flere salgsordrefakturaer i én salgsstedstransaksjon.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="106">
+          <source>Payment of various customer invoice types including free text invoices, project-based invoices, and credit notes.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Betaling for ulike typer kundefakturaer, inkludert fritekstfakturaer, prosjektbaserte fakturaer og kreditnotaer.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="107">
+          <source>To enable these scenarios, the functionality profile for stores must be configured as outlined in below.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Hvis du vil aktivere disse scenariene, må funksjonsprofilen for butikker konfigureres som beskrevet nedenfor.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="108">
+          <source>Go to <bpt id="p1">**</bpt>Retail <ph id="ph1">\&gt;</ph> Channel setup <ph id="ph2">\&gt;</ph> POS setup <ph id="ph3">\&gt;</ph> POS profiles <ph id="ph4">\&gt;</ph> Functionality profiles<ept id="p1">**</ept> and select a profile that's linked to the stores that you want to make the changes for.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Gå til <bpt id="p1">**</bpt>Detaljhandel <ph id="ph1">\&gt;</ph> Kanaloppsett <ph id="ph2">\&gt;</ph> Salgsstedsoppsett <ph id="ph3">\&gt;</ph> Salgsstedsprofiler <ph id="ph4">\&gt;</ph> Funksjonsprofiler<ept id="p1">**</ept> og velg en profil som er knyttet til butikkene du vil gjøre endringene for.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="109">
+          <source>On the <bpt id="p1">**</bpt>Functions<ept id="p1">**</ept> tab, configure the following parameters as needed.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Konfigurer følgende parametere etter behov, i kategorien <bpt id="p1">**</bpt>Funksjoner<ept id="p1">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="110">
+          <source><bpt id="p1">**</bpt>Sales order invoice<ept id="p1">**</ept> – Select <bpt id="p2">**</bpt>Yes<ept id="p2">**</ept> to allow users to pay one or more sales order-based invoices in a single POS transaction.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Salgsordrefaktura<ept id="p1">**</ept> – Velg <bpt id="p2">**</bpt>Ja<ept id="p2">**</ept> slik at brukere kan betale én eller flere salgsordrebaserte fakturaer i én salgsstedstransaksjon.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="111">
+          <source><bpt id="p1">**</bpt>Free text invoice<ept id="p1">**</ept> – Select <bpt id="p2">**</bpt>Yes<ept id="p2">**</ept> to allow users to pay one or more free text-based invoices in a single POS transaction.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Fritekstfaktura<ept id="p1">**</ept> – Velg <bpt id="p2">**</bpt>Ja<ept id="p2">**</ept> slik at brukere kan betale én eller flere fritekstbaserte fakturaer i én salgsstedstransaksjon.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="112">
+          <source><bpt id="p1">**</bpt>Project invoice<ept id="p1">**</ept> – Select <bpt id="p2">**</bpt>Yes<ept id="p2">**</ept> to allow users to pay one or more project-based invoices in a single POS transaction.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Prosjektfaktura<ept id="p1">**</ept> – Velg <bpt id="p2">**</bpt>Ja<ept id="p2">**</ept> slik at brukere kan betale én eller flere prosjektbaserte fakturaer i én salgsstedstransaksjon.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="113">
+          <source><bpt id="p1">**</bpt>Sales order credit note<ept id="p1">**</ept> – Select <bpt id="p2">**</bpt>Yes<ept id="p2">**</ept> to allow users to settle multiple sales order-based credit notes against open invoices or process a refund to the customer for an open credit note.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Salgsordre – kreditnota<ept id="p1">**</ept> – Velg <bpt id="p2">**</bpt>Ja<ept id="p2">**</ept> slik at brukere kan utligne flere salgsordrebaserte kreditnotaer mot åpne fakturaer, eller betale pengene tilbake til kunden for en åpen kreditnota.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="114">
+          <source>Payment or settlement of partial amounts is not yet supported.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Betaling eller utligning delvise beløper støttes ikke ennå.</target></trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>
