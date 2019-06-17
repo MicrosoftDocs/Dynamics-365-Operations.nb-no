@@ -1,126 +1,471 @@
----
-title: Finansrapportering
-description: Dette emnet beskriver hvor du kan få tilgang til økonomisk rapportering i Microsoft Dynamics 365 for Finance and Operations og hvordan du bruker de økonomiske rapporteringsfunksjoner. Det inneholder en beskrivelse av de økonomiske standardrapportene som tilbys.
-author: aprilolson
-manager: AnnBe
-ms.date: 09/26/2018
-ms.topic: article
-ms.prod: ''
-ms.service: dynamics-ax-applications
-ms.technology: ''
-ms.search.form: FinancialReports
-audience: Application User
-ms.reviewer: shylaw
-ms.search.scope: Core, Operations
-ms.custom: 10444
-ms.assetid: 3eae6dc3-ee06-4b6d-9e7d-1ee2c3b10339
-ms.search.region: Global
-ms.author: aolson
-ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c6d504a7b0640f45de4aa9f8fb60d2b1d37818bb
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
-ms.translationtype: HT
-ms.contentlocale: nb-NO
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1550311"
----
-# <a name="financial-reporting"></a><span data-ttu-id="c7fd6-104">Finansrapportering</span><span class="sxs-lookup"><span data-stu-id="c7fd6-104">Financial reporting</span></span>
-
-[!include [banner](../includes/banner.md)]
-
-<span data-ttu-id="c7fd6-105">Dette emnet beskriver hvor du kan få tilgang til økonomisk rapportering i Microsoft Dynamics 365 for Finance and Operations og hvordan du bruker de økonomiske rapporteringsfunksjoner.</span><span class="sxs-lookup"><span data-stu-id="c7fd6-105">This topic describes where to access financial reporting in Microsoft Dynamics 365 for Finance and Operations and how to use the financial reporting capabilities.</span></span> <span data-ttu-id="c7fd6-106">Det inneholder en beskrivelse av de økonomiske standardrapportene som tilbys.</span><span class="sxs-lookup"><span data-stu-id="c7fd6-106">It includes a description of the default financial reports that are provided.</span></span>
-
-<a name="accessing-financial-reporting"></a><span data-ttu-id="c7fd6-107">Tilgang til finansrapportering</span><span class="sxs-lookup"><span data-stu-id="c7fd6-107">Accessing financial reporting</span></span>
------------------------------
-
-<span data-ttu-id="c7fd6-108">Du finner **Finansrapportering**-menyen på følgende steder i Dynamics 365 for Finance and Operations:</span><span class="sxs-lookup"><span data-stu-id="c7fd6-108">You can find the **Financial reporting** menu in the following places in Finance and Operations:</span></span>
-
--   <span data-ttu-id="c7fd6-109">**Økonomimodul** &gt; **Forespørsler og rapporter**</span><span class="sxs-lookup"><span data-stu-id="c7fd6-109">**General Ledger** &gt; **Inquiries and reports**</span></span>
--   <span data-ttu-id="c7fd6-110">**Budsjettering** &gt; **Forespørsler og rapporter** &gt; **Grunnleggende budsjettering**</span><span class="sxs-lookup"><span data-stu-id="c7fd6-110">**Budgeting** &gt; **Inquires and reports** &gt; **Basic budgeting**</span></span>
--   <span data-ttu-id="c7fd6-111">**Budsjettering** &gt; **Forespørsler og rapporter** &gt; **Budsjettplanlegging**</span><span class="sxs-lookup"><span data-stu-id="c7fd6-111">**Budgeting** &gt; **Inquiries and reports** &gt; **Budget planning**</span></span>
--   <span data-ttu-id="c7fd6-112">**Budsjettering** &gt; **Forespørsler og rapporter** &gt; **Budsjettkontroll**</span><span class="sxs-lookup"><span data-stu-id="c7fd6-112">**Budgeting** &gt; **Inquiries and reports** &gt; **Budget control**</span></span>
--   <span data-ttu-id="c7fd6-113">Konsolideringer</span><span class="sxs-lookup"><span data-stu-id="c7fd6-113">Consolidations</span></span>
-
-<span data-ttu-id="c7fd6-114">Hvis du vil opprette og generere finansrapporter for en juridisk enhet, må du angi følgende informasjon for den juridiske enheten:</span><span class="sxs-lookup"><span data-stu-id="c7fd6-114">To create and generate financial reports for a legal entity, you must set up the following information for that legal entity:</span></span>
-
--   <span data-ttu-id="c7fd6-115">Økonomisk kalender</span><span class="sxs-lookup"><span data-stu-id="c7fd6-115">Fiscal calendar</span></span>
--   <span data-ttu-id="c7fd6-116">Finans</span><span class="sxs-lookup"><span data-stu-id="c7fd6-116">Ledger</span></span>
--   <span data-ttu-id="c7fd6-117">Kontoplan</span><span class="sxs-lookup"><span data-stu-id="c7fd6-117">Chart of accounts</span></span>
--   <span data-ttu-id="c7fd6-118">Valuta</span><span class="sxs-lookup"><span data-stu-id="c7fd6-118">Currency</span></span>
-
-<span data-ttu-id="c7fd6-119">Funksjonene for økonomisk rapportering er tilgjengelige for brukere som er tilordnet de nødvendige rettighetene og pliktene via sikkerhetsrollene sine.</span><span class="sxs-lookup"><span data-stu-id="c7fd6-119">The financial reporting functions are available to users who have the appropriate privileges and duties assigned to them through their security roles.</span></span> <span data-ttu-id="c7fd6-120">De følgende delene viser disse rettighetene og pliktene sammen med de tilknyttede rollene.</span><span class="sxs-lookup"><span data-stu-id="c7fd6-120">The following sections list these privileges and duties, together with the associated roles.</span></span>
-
-### <a name="duties"></a><span data-ttu-id="c7fd6-121">Plikter</span><span class="sxs-lookup"><span data-stu-id="c7fd6-121">Duties</span></span>
-
-| <span data-ttu-id="c7fd6-122">Etikett for plikt</span><span class="sxs-lookup"><span data-stu-id="c7fd6-122">Duty label</span></span>                            | <span data-ttu-id="c7fd6-123">Beskrivelse</span><span class="sxs-lookup"><span data-stu-id="c7fd6-123">Description</span></span>                                                             | <span data-ttu-id="c7fd6-124">Navn på applikasjonsobjekttre</span><span class="sxs-lookup"><span data-stu-id="c7fd6-124">AOT name</span></span>                         |
-|---------------------------------------|-------------------------------------------------------------------------|----------------------------------|
-| <span data-ttu-id="c7fd6-125">Vedlikehold finansrapporteringssikkerhet</span><span class="sxs-lookup"><span data-stu-id="c7fd6-125">Maintain financial reporting security</span></span> | <span data-ttu-id="c7fd6-126">Vedlikehold finansrapporteringssikkerhet og utfør administrative oppgaver.</span><span class="sxs-lookup"><span data-stu-id="c7fd6-126">Maintain financial reporting security and perform administrative tasks.</span></span> | <span data-ttu-id="c7fd6-127">FinansrapportersikkerhetVedlikehold</span><span class="sxs-lookup"><span data-stu-id="c7fd6-127">FinancialReportsSecurityMaintain</span></span> |
-| <span data-ttu-id="c7fd6-128">Vedlikehold finansrapporter</span><span class="sxs-lookup"><span data-stu-id="c7fd6-128">Maintain financial reports</span></span>            | <span data-ttu-id="c7fd6-129">Utform og vedlikehold finansrapporter.</span><span class="sxs-lookup"><span data-stu-id="c7fd6-129">Design and maintain financial reports.</span></span>                                  | <span data-ttu-id="c7fd6-130">FinansrapporterVedlikehold</span><span class="sxs-lookup"><span data-stu-id="c7fd6-130">FinancialReportsMaintain</span></span>         |
-| <span data-ttu-id="c7fd6-131">Generer finansrapporter</span><span class="sxs-lookup"><span data-stu-id="c7fd6-131">Generate financial reports</span></span>            | <span data-ttu-id="c7fd6-132">Generer og oppdater finansrapporter.</span><span class="sxs-lookup"><span data-stu-id="c7fd6-132">Generate and refresh financial reports.</span></span>                                 | <span data-ttu-id="c7fd6-133">FinansrapporterGenerer</span><span class="sxs-lookup"><span data-stu-id="c7fd6-133">FinancialReportsGenerate</span></span>         |
-| <span data-ttu-id="c7fd6-134">Gå gjennom finansresultat</span><span class="sxs-lookup"><span data-stu-id="c7fd6-134">Review financial performance</span></span>          | <span data-ttu-id="c7fd6-135">Gå gjennom og analyser finansresultat.</span><span class="sxs-lookup"><span data-stu-id="c7fd6-135">Review and analyze financial performance.</span></span>                               | <span data-ttu-id="c7fd6-136">FinansrapporterUtførGjennomgang</span><span class="sxs-lookup"><span data-stu-id="c7fd6-136">FinancialReportsPerfReview</span></span>       |
-
-### <a name="privileges"></a><span data-ttu-id="c7fd6-137">Rettigheter</span><span class="sxs-lookup"><span data-stu-id="c7fd6-137">Privileges</span></span>
-
-| <span data-ttu-id="c7fd6-138">Etikett for rettighet</span><span class="sxs-lookup"><span data-stu-id="c7fd6-138">Privilege label</span></span>                       | <span data-ttu-id="c7fd6-139">Beskrivelse</span><span class="sxs-lookup"><span data-stu-id="c7fd6-139">Description</span></span>                                                             | <span data-ttu-id="c7fd6-140">Navn på applikasjonsobjekttre</span><span class="sxs-lookup"><span data-stu-id="c7fd6-140">AOT name</span></span>                         |
-|---------------------------------------|-------------------------------------------------------------------------|----------------------------------|
-| <span data-ttu-id="c7fd6-141">Vedlikehold finansrapporteringssikkerhet</span><span class="sxs-lookup"><span data-stu-id="c7fd6-141">Maintain financial reporting security</span></span> | <span data-ttu-id="c7fd6-142">Vedlikehold finansrapporteringssikkerhet og utfør administrative oppgaver.</span><span class="sxs-lookup"><span data-stu-id="c7fd6-142">Maintain financial reporting security and perform administrative tasks.</span></span> | <span data-ttu-id="c7fd6-143">FinansrapportersikkerhetVedlikehold</span><span class="sxs-lookup"><span data-stu-id="c7fd6-143">FinancialReportsSecurityMaintain</span></span> |
-| <span data-ttu-id="c7fd6-144">Vedlikehold finansrapporter</span><span class="sxs-lookup"><span data-stu-id="c7fd6-144">Maintain financial reports</span></span>            | <span data-ttu-id="c7fd6-145">Utform og vedlikehold finansrapporter.</span><span class="sxs-lookup"><span data-stu-id="c7fd6-145">Design and maintain financial reports.</span></span>                                  | <span data-ttu-id="c7fd6-146">FinansapporterVedlikeholdRapporter</span><span class="sxs-lookup"><span data-stu-id="c7fd6-146">FinancialReportsMaintainReports</span></span>  |
-| <span data-ttu-id="c7fd6-147">Generer finansrapporter</span><span class="sxs-lookup"><span data-stu-id="c7fd6-147">Generate financial reports</span></span>            | <span data-ttu-id="c7fd6-148">Generer og oppdater finansrapporter.</span><span class="sxs-lookup"><span data-stu-id="c7fd6-148">Generate and refresh financial reports.</span></span>                                 | <span data-ttu-id="c7fd6-149">FinansrapporterGenererRapporter</span><span class="sxs-lookup"><span data-stu-id="c7fd6-149">FinancialReportsGenerateReports</span></span>  |
-| <span data-ttu-id="c7fd6-150">Vis finansrapporter</span><span class="sxs-lookup"><span data-stu-id="c7fd6-150">View financial reports</span></span>                | <span data-ttu-id="c7fd6-151">Vis finansrapporter.</span><span class="sxs-lookup"><span data-stu-id="c7fd6-151">View financial reports.</span></span>                                                 | <span data-ttu-id="c7fd6-152">FinansrapporterVis</span><span class="sxs-lookup"><span data-stu-id="c7fd6-152">FinancialReportsView</span></span>             |
-
-### <a name="roles"></a><span data-ttu-id="c7fd6-153">Roller</span><span class="sxs-lookup"><span data-stu-id="c7fd6-153">Roles</span></span>
-
-| <span data-ttu-id="c7fd6-154">Etikett for rettighet</span><span class="sxs-lookup"><span data-stu-id="c7fd6-154">Privilege label</span></span>                       | <span data-ttu-id="c7fd6-155">Avgift</span><span class="sxs-lookup"><span data-stu-id="c7fd6-155">Duty</span></span>                                  | <span data-ttu-id="c7fd6-156">Roller</span><span class="sxs-lookup"><span data-stu-id="c7fd6-156">Roles</span></span>                                                                           |
-|---------------------------------------|---------------------------------------|---------------------------------------------------------------------------------|
-| <span data-ttu-id="c7fd6-157">Vedlikehold finansrapporteringssikkerhet</span><span class="sxs-lookup"><span data-stu-id="c7fd6-157">Maintain financial reporting security</span></span> | <span data-ttu-id="c7fd6-158">Vedlikehold finansrapporteringssikkerhet</span><span class="sxs-lookup"><span data-stu-id="c7fd6-158">Maintain financial reporting security</span></span> | <span data-ttu-id="c7fd6-159">Sikkerhetsadministrator</span><span class="sxs-lookup"><span data-stu-id="c7fd6-159">Security administrator</span></span>                                                          |
-| <span data-ttu-id="c7fd6-160">Vedlikehold finansrapporter</span><span class="sxs-lookup"><span data-stu-id="c7fd6-160">Maintain financial reports</span></span>            | <span data-ttu-id="c7fd6-161">Vedlikehold finansrapporter</span><span class="sxs-lookup"><span data-stu-id="c7fd6-161">Maintain financial reports</span></span>            | <span data-ttu-id="c7fd6-162">Regnskapssjef, Regnskapsansvarlig, Økonomikontrollør, Budsjettbehandler</span><span class="sxs-lookup"><span data-stu-id="c7fd6-162">Accounting Manager, Accounting Supervisor, Financial Controller, Budget Manager</span></span> |
-| <span data-ttu-id="c7fd6-163">Generer finansrapporter</span><span class="sxs-lookup"><span data-stu-id="c7fd6-163">Generate financial reports</span></span>            | <span data-ttu-id="c7fd6-164">Generer finansrapporter</span><span class="sxs-lookup"><span data-stu-id="c7fd6-164">Generate financial reports</span></span>            | <span data-ttu-id="c7fd6-165">CEO, CFO, Regnskapsfører</span><span class="sxs-lookup"><span data-stu-id="c7fd6-165">CEO, CFO, Accountant</span></span>                                                            |
-| <span data-ttu-id="c7fd6-166">Vis finansrapporter</span><span class="sxs-lookup"><span data-stu-id="c7fd6-166">View financial reports</span></span>                | <span data-ttu-id="c7fd6-167">Gå gjennom finansresultat</span><span class="sxs-lookup"><span data-stu-id="c7fd6-167">Review financial performance</span></span>          | <span data-ttu-id="c7fd6-168">Ikke tilordnet</span><span class="sxs-lookup"><span data-stu-id="c7fd6-168">None assigned</span></span>                                                                   |
-
-<span data-ttu-id="c7fd6-169">Når en bruker er lagt til eller en rolle er endret, skal brukeren kunne få tilgang til økonomisk rapportering på noen få minutter.</span><span class="sxs-lookup"><span data-stu-id="c7fd6-169">After a user is added or a role is changed, the user should be able to access financial reporting within a few minutes.</span></span> <span data-ttu-id="c7fd6-170">**Merk:** Sysadmin-rollen er lagt til alle roller i finansrapportering.</span><span class="sxs-lookup"><span data-stu-id="c7fd6-170">**Note:** The sysadmin role is added to all roles in financial reporting.</span></span>
-
-## <a name="default-reports"></a><span data-ttu-id="c7fd6-171">Standardrapporter</span><span class="sxs-lookup"><span data-stu-id="c7fd6-171">Default reports</span></span>
-<span data-ttu-id="c7fd6-172">Finansrapportering gir 22 standard finansrapporter.</span><span class="sxs-lookup"><span data-stu-id="c7fd6-172">Financial reporting provides 22 default financial reports.</span></span> <span data-ttu-id="c7fd6-173">Alle rapportene bruker standard hovedkontokategorier i Dynamics 365 for Finance and Operations.</span><span class="sxs-lookup"><span data-stu-id="c7fd6-173">Every report uses the default main account categories in Finance and Operations.</span></span> <span data-ttu-id="c7fd6-174">Du kan bruke disse rapportene som de er eller som et utgangspunkt for ditt finansrapporteringsbehov.</span><span class="sxs-lookup"><span data-stu-id="c7fd6-174">You can use these reports as is or as a starting point for your financial reporting needs.</span></span> <span data-ttu-id="c7fd6-175">I tillegg til de tradisjonelle regnskapsoppgjørene, for eksempel resultatregnskap og balanse, inkluderer disse standardrapportene rapporter som viser de forskjellige typene finansrapporter du kan opprette.</span><span class="sxs-lookup"><span data-stu-id="c7fd6-175">In addition to the traditional financial statements, such as Income statement and Balance sheet, these default reports include reports that show the different types of financial reports that you can create.</span></span> 
-
-<!--Each report in the following table links to an Office Mix presentation about the report.-->
-
-| <span data-ttu-id="c7fd6-176">Standardrapport</span><span class="sxs-lookup"><span data-stu-id="c7fd6-176">Default report</span></span>                                                                                         | <span data-ttu-id="c7fd6-177">Beskrivelse</span><span class="sxs-lookup"><span data-stu-id="c7fd6-177">Description</span></span>                                                                                                                                                                                                                                                                                                          |
-|--------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span data-ttu-id="c7fd6-178">12 måneder Opprulling Én kolonne Resultatregnskap – Standard</span><span class="sxs-lookup"><span data-stu-id="c7fd6-178">12 Month Rolling Single Column Income Statement – Default</span></span> | <span data-ttu-id="c7fd6-179">Vis organisasjonens fortjeneste for de siste 12 månedene i én enkelt kolonne.</span><span class="sxs-lookup"><span data-stu-id="c7fd6-179">View an organization’s profitability for the past 12 months in a single column.</span></span>                                                                                                                                                                                                                                      |
-| <span data-ttu-id="c7fd6-180">12 måneder Trend Resultatregnskap – Standard</span><span class="sxs-lookup"><span data-stu-id="c7fd6-180">12 Month Trend Income Statement – Default</span></span>                 | <span data-ttu-id="c7fd6-181">Vis organisasjonens fortjeneste for hver av de 12 siste månedene.</span><span class="sxs-lookup"><span data-stu-id="c7fd6-181">View an organization’s profitability for each of the last 12 months.</span></span> <span data-ttu-id="c7fd6-182">Disse 12 månedene kan strekke seg over mer enn ett regnskapsår.</span><span class="sxs-lookup"><span data-stu-id="c7fd6-182">These 12 months can span more than one fiscal year.</span></span>                                                                                                                                                                                             |
-| <span data-ttu-id="c7fd6-183">Faktisk kontra Budsjett – Standard</span><span class="sxs-lookup"><span data-stu-id="c7fd6-183">Actual vs Budget – Default</span></span>                                | <span data-ttu-id="c7fd6-184">Vis detaljert saldoinformasjon for alle kontoer for det opprinnelige budsjettet, og sammenlign det reviderte budsjettet med faktiske data som har et avvik.</span><span class="sxs-lookup"><span data-stu-id="c7fd6-184">View detailed balance information for all accounts for the original budget, and compare the revised budget to actuals that have a variance.</span></span>                                                                                                                                                                          |
-| <span data-ttu-id="c7fd6-185">Revisjonsdetaljer – Standard</span><span class="sxs-lookup"><span data-stu-id="c7fd6-185">Audit Details – Default</span></span>                                  | <span data-ttu-id="c7fd6-186">Vis detaljert saldoinformasjon for alle kontoer.</span><span class="sxs-lookup"><span data-stu-id="c7fd6-186">View detailed balance information for all accounts.</span></span> <span data-ttu-id="c7fd6-187">Denne rapporten viser debet- og kreditsaldoer i rapporteringsvalutaen og i lokal valuta, sammen med mer transaksjonsinformasjon, som for eksempel bruker-ID-en, brukeren som sist endret dataene, datoen for siste endring og journal-ID-en.</span><span class="sxs-lookup"><span data-stu-id="c7fd6-187">This report shows debit and credit balances in the reporting currency and the local currency, together with additional transaction information, such as the user ID, the user who last modified the data, the date of the last modification, and the journal ID.</span></span> |
-| <span data-ttu-id="c7fd6-188">Saldoliste – Standard</span><span class="sxs-lookup"><span data-stu-id="c7fd6-188">Balance List – Default</span></span>                                   | <span data-ttu-id="c7fd6-189">Vis detaljert saldoinformasjon for alle kontoer.</span><span class="sxs-lookup"><span data-stu-id="c7fd6-189">View detailed balance information for all accounts.</span></span> <span data-ttu-id="c7fd6-190">Denne rapporten viser åpnings- og lukkingssaldoer og debet- og kreditsaldoer for den aktuelle perioden og året hittil, sammen med mer transaksjonsinformasjon, for eksempel bilaget.</span><span class="sxs-lookup"><span data-stu-id="c7fd6-190">This report shows opening and closing balances, and debit and credit balances for the current period and year to date, together with additional transaction information, such as the voucher.</span></span>                                                                    |
-| <span data-ttu-id="c7fd6-191">Balanse – Standard</span><span class="sxs-lookup"><span data-stu-id="c7fd6-191">Balance Sheet – Default</span></span>                                   | <span data-ttu-id="c7fd6-192">Vis organisasjonens finansiell stilling for året.</span><span class="sxs-lookup"><span data-stu-id="c7fd6-192">View the organization's financial position for the year.</span></span>                                                                                                                                                                                                                                                             |
-| <span data-ttu-id="c7fd6-193">Balanse og resultatregnskap side ved side – Standard</span><span class="sxs-lookup"><span data-stu-id="c7fd6-193">Balance Sheet and Income Statement Side by Side - Default</span></span> | <span data-ttu-id="c7fd6-194">Vis finansiell stilling og lønnsomhet i organisasjonen for året side ved side.</span><span class="sxs-lookup"><span data-stu-id="c7fd6-194">View the organization’s financial position and profitability for the year side by side.</span></span>                                                                                                                                                                                                                              |
-| <span data-ttu-id="c7fd6-195">Kontantstrøm – Standard</span><span class="sxs-lookup"><span data-stu-id="c7fd6-195">Cash Flow – Default</span></span>                                       | <span data-ttu-id="c7fd6-196">Få innsikt i kontanter som kommer inn til og går ut av organisasjonen.</span><span class="sxs-lookup"><span data-stu-id="c7fd6-196">Gain insight into the cash that is coming in to and going out of the organization.</span></span>                                                                                                                                                                                                                                   |
-| <span data-ttu-id="c7fd6-197">Detaljert JE- og TB-gjennomgang – Standard</span><span class="sxs-lookup"><span data-stu-id="c7fd6-197">Detailed JE and TB Review – Default</span></span>                      | <span data-ttu-id="c7fd6-198">Vis åpningssaldo og aktivitetsinformasjon for alle kontoer.</span><span class="sxs-lookup"><span data-stu-id="c7fd6-198">View opening balance and activity information for all accounts.</span></span>                                                                                                                                                                                                                                                      |
-| <span data-ttu-id="c7fd6-199">Detaljert råbalanse – Standard</span><span class="sxs-lookup"><span data-stu-id="c7fd6-199">Detailed Trial Balance - Default</span></span>                         | <span data-ttu-id="c7fd6-200">Vis saldoinformasjon for alle kontoer som har debet- og kreditsaldoer, og nettoen for disse saldoene, sammen med transaksjonsdato, bilag og journalbeskrivelse.</span><span class="sxs-lookup"><span data-stu-id="c7fd6-200">View balance information for all accounts that have debit and credit balances, and the net of these balances, together with the transaction date, voucher, and journal description.</span></span>                                                                                                                                  |
-| <span data-ttu-id="c7fd6-201">Utgifter Tre år Kvartalsvis Trend – Standard</span><span class="sxs-lookup"><span data-stu-id="c7fd6-201">Expenses Three Year Quarterly Trend – Default</span></span>             | <span data-ttu-id="c7fd6-202">Få innsikt i utgifter for de siste 12 kvartalene over de siste tre årene.</span><span class="sxs-lookup"><span data-stu-id="c7fd6-202">Gain insight into expenses for the past 12 quarters over the previous three years.</span></span>                                                                                                                                                                                                                                   |
-| <span data-ttu-id="c7fd6-203">Gjennomgang av finansoverskrifter for JE og TB – Standard</span><span class="sxs-lookup"><span data-stu-id="c7fd6-203">Financial Captions JE and TB Review – Default</span></span>            | <span data-ttu-id="c7fd6-204">Se en oversikt over saldoer og aktivitet for finansoverskriftene aktiva, gjeld, eierens egenkapital, omsetning, utgift, gevinst eller tap.</span><span class="sxs-lookup"><span data-stu-id="c7fd6-204">See an overview of the balances and activity for the asset, liability, owner’s equity, revenue, expense, gain, or loss financial captions.</span></span>                                                                                                                                                                           |
-| <span data-ttu-id="c7fd6-205">Resultatregnskap – Standard</span><span class="sxs-lookup"><span data-stu-id="c7fd6-205">Income Statement – Default</span></span>                                | <span data-ttu-id="c7fd6-206">Vis organisasjonens lønnsomhet for inneværende periode og hittil i år.</span><span class="sxs-lookup"><span data-stu-id="c7fd6-206">View the organization’s profitability for the current period and the year to date.</span></span>                                                                                                                                                                                                                                   |
-| <span data-ttu-id="c7fd6-207">Finanstransaksjonsliste – Standard</span><span class="sxs-lookup"><span data-stu-id="c7fd6-207">Ledger Transaction List – Default</span></span>                        | <span data-ttu-id="c7fd6-208">Vis detaljert saldoinformasjon for alle kontoer.</span><span class="sxs-lookup"><span data-stu-id="c7fd6-208">View detailed balance information for all accounts.</span></span> <span data-ttu-id="c7fd6-209">Denne rapporten viser debet- og kreditsaldoer sammen med mer transaksjonsinformasjon som transaksjonsdato, journalnummer, bilag, posteringstype og sporingsnummer.</span><span class="sxs-lookup"><span data-stu-id="c7fd6-209">This report shows debit and credit balances, together with additional transaction information, such as the transaction date, journal number, voucher, posting type, and trace number.</span></span>                                                                            |
-| <span data-ttu-id="c7fd6-210">Forhold – Standard</span><span class="sxs-lookup"><span data-stu-id="c7fd6-210">Ratios – Default</span></span>                                          | <span data-ttu-id="c7fd6-211">Vis solvens, lønnsomhet og effektivitetsrate for organisasjonen for året.</span><span class="sxs-lookup"><span data-stu-id="c7fd6-211">View the solvency, profitability, and efficiency ratios for the organization for the year.</span></span>                                                                                                                                                                                                                           |
-| <span data-ttu-id="c7fd6-212">Opprulling 12 måneder Utgifter – Standard</span><span class="sxs-lookup"><span data-stu-id="c7fd6-212">Rolling 12 Month Expenses – Default</span></span>                       | <span data-ttu-id="c7fd6-213">Få innsikt i utgifter for hver av de siste 12 månedene.</span><span class="sxs-lookup"><span data-stu-id="c7fd6-213">Gain insight into expenses for each of the last 12 months.</span></span> <span data-ttu-id="c7fd6-214">Disse 12 månedene kan strekke seg over mer enn ett regnskapsår.</span><span class="sxs-lookup"><span data-stu-id="c7fd6-214">These 12 months can span more than one fiscal year.</span></span>                                                                                                                                                                                                       |
-| <span data-ttu-id="c7fd6-215">Opprulling Kvartalsvis Resultatregnskap – Standard</span><span class="sxs-lookup"><span data-stu-id="c7fd6-215">Rolling Quarter Income Statement – Default</span></span>               | <span data-ttu-id="c7fd6-216">Vis organisasjonens lønnsomhet kvartalsvis for det siste året samt hittil i år.</span><span class="sxs-lookup"><span data-stu-id="c7fd6-216">View the organization’s profitability on a quarterly basis for the past year and the year to date.</span></span>                                                                                                                                                                                                                   |
-| <span data-ttu-id="c7fd6-217">Side ved side Balanse – Standard</span><span class="sxs-lookup"><span data-stu-id="c7fd6-217">Side by Side Balance Sheet – Default</span></span>                      | <span data-ttu-id="c7fd6-218">Vis organisasjonens finansiell stilling for året.</span><span class="sxs-lookup"><span data-stu-id="c7fd6-218">View the organization's financial position for the year.</span></span> <span data-ttu-id="c7fd6-219">Denne rapporten viser aktiva, gjeld og egenkapital for aksjeeiere side ved side.</span><span class="sxs-lookup"><span data-stu-id="c7fd6-219">This report shows assets and liability, and shareholder equity side by side.</span></span>                                                                                                                                                                                |
-| <span data-ttu-id="c7fd6-220">Råbalansesammendrag – Standard</span><span class="sxs-lookup"><span data-stu-id="c7fd6-220">Summary Trial Balance – Default</span></span>                          | <span data-ttu-id="c7fd6-221">Vis saldoinformasjon for alle kontoer som har åpnings- og avslutningssaldo og debet- og kreditsaldoer, sammen med deres nettoforskjell.</span><span class="sxs-lookup"><span data-stu-id="c7fd6-221">View balance information for all accounts that have opening and closing balances, and debit and credit balances together with their net difference.</span></span>                                                                                                                                                                  |
-| <span data-ttu-id="c7fd6-222">Sammendrag Råbalanse Årlig – Standard</span><span class="sxs-lookup"><span data-stu-id="c7fd6-222">Summary Trial Balance Year Over Year – Default</span></span>           | <span data-ttu-id="c7fd6-223">Vis saldoinformasjon for alle kontoer som har åpnings- og avslutningssaldo og debet- og kreditsaldoer, sammen med deres nettoforskjell for gjeldende og forrige år.</span><span class="sxs-lookup"><span data-stu-id="c7fd6-223">View balance information for all accounts that have opening and closing balances, and debit and credit balances together with their net difference for the current year and the past year.</span></span>                                                                                                                           |
-| <span data-ttu-id="c7fd6-224">Ukentlig Salg og rabatter – Standard</span><span class="sxs-lookup"><span data-stu-id="c7fd6-224">Weekly Sales and Discounts - Default</span></span>                     | <span data-ttu-id="c7fd6-225">Få innsikt i salg og rabatter for hver uke i en måned.</span><span class="sxs-lookup"><span data-stu-id="c7fd6-225">Gain insight into sales and discounts for each week in a month.</span></span> <span data-ttu-id="c7fd6-226">Denne rapporten inneholder totalt fire uker.</span><span class="sxs-lookup"><span data-stu-id="c7fd6-226">This report includes a four-week total.</span></span>                                                                                                                                                                                                              |
-| <span data-ttu-id="c7fd6-227">Budsjettmidler tilgjengelig - standard</span><span class="sxs-lookup"><span data-stu-id="c7fd6-227">Budget Funds Available - Default</span></span>                         | <span data-ttu-id="c7fd6-228">Vis en detaljert sammenligning av revidert budsjett, faktiske utgifter, budsjettreservasjoner og budsjettmidler tilgjengelig for alle kontoer</span><span class="sxs-lookup"><span data-stu-id="c7fd6-228">View a detailed comparison of revised budget, actual expenditures, budget reservations, and budget funds available for all accounts</span></span>                                                                                                                                                                                  |
-
-## <a name="opening-financial-reports"></a><span data-ttu-id="c7fd6-229">Åpne finansrapporter</span><span class="sxs-lookup"><span data-stu-id="c7fd6-229">Opening financial reports</span></span>
-<span data-ttu-id="c7fd6-230">Når du klikker **Finansrapportering**-menyen, vises listen over standard finansrapporter for firmaet.</span><span class="sxs-lookup"><span data-stu-id="c7fd6-230">When you click the **Financial reporting** menu, the list of default financial reports for the company is shown.</span></span> <span data-ttu-id="c7fd6-231">Deretter kan du åpne eller endre en rapport.</span><span class="sxs-lookup"><span data-stu-id="c7fd6-231">You can then open or modify a report.</span></span> <span data-ttu-id="c7fd6-232">Velg rapportnavnet for å åpne en av standardrapportene.</span><span class="sxs-lookup"><span data-stu-id="c7fd6-232">To open one of the default reports, select the report name.</span></span> <span data-ttu-id="c7fd6-233">Første gang en rapport åpnes, genereres den automatisk for forrige måned.</span><span class="sxs-lookup"><span data-stu-id="c7fd6-233">The first time that a report is opened, it's automatically generated for the previous month.</span></span> <span data-ttu-id="c7fd6-234">Hvis du for eksempel åpner en rapport for første gang i august 2016, genereres rapporten for 31. juli 2016.</span><span class="sxs-lookup"><span data-stu-id="c7fd6-234">For example, if you open a report for the first time in August 2016, the report is generated for July 31, 2016.</span></span> <span data-ttu-id="c7fd6-235">Når en rapport åpnes, kan du begynne å utforske den ved å gå nedover i bestemte deler av data og endre rapportalternativer.</span><span class="sxs-lookup"><span data-stu-id="c7fd6-235">After a report is opened, you can start exploring it by drilling down on specific pieces of data and changing report options.</span></span>
-
-## <a name="creating-and-modifying-financial-reports"></a><span data-ttu-id="c7fd6-236">Opprette og endre finansrapporter</span><span class="sxs-lookup"><span data-stu-id="c7fd6-236">Creating and modifying financial reports</span></span>
-<span data-ttu-id="c7fd6-237">Du kan opprette en ny rapport fra listen for finansrapporter eller endre en eksisterende rapport.</span><span class="sxs-lookup"><span data-stu-id="c7fd6-237">From the financial reports list, you can create a new report or modify an existing report.</span></span> <span data-ttu-id="c7fd6-238">Hvis du har de nødvendige tillatelsene, kan du opprette en ny finansrapport ved å klikke **Ny** i handlingsruten.</span><span class="sxs-lookup"><span data-stu-id="c7fd6-238">If you have the appropriate permissions, you can create a new financial report by clicking **New** on the Action Pane.</span></span> <span data-ttu-id="c7fd6-239">Et rapportutforming-program lastes ned til enheten.</span><span class="sxs-lookup"><span data-stu-id="c7fd6-239">A report designer program is downloaded to your device.</span></span> <span data-ttu-id="c7fd6-240">Du kan deretter opprette den nye rapporten etter at rapportutformingen starter.</span><span class="sxs-lookup"><span data-stu-id="c7fd6-240">After the report designer starts you can then create the new report.</span></span> <span data-ttu-id="c7fd6-241">Når du har lagret den nye rapporten, vises den i finansrapportlisten.</span><span class="sxs-lookup"><span data-stu-id="c7fd6-241">After you save the new report, it appears in the financial reports list.</span></span> <span data-ttu-id="c7fd6-242">Listen viser bare rapporter som er opprettet for firmaet som du bruker i Finance and Operations.</span><span class="sxs-lookup"><span data-stu-id="c7fd6-242">The list shows only reports that were created for the company that you're using in Finance and Operations.</span></span> 
-
-> [!NOTE] 
-> <span data-ttu-id="c7fd6-243">Datamaskinen som du laster ned klienten for rapportutforming på, må ha versjon 4.6.2 av Microsoft .NET Framework installert.</span><span class="sxs-lookup"><span data-stu-id="c7fd6-243">The computer that you are downloading the report designer client on must have version 4.6.2 of the Microsoft .NET Framework installed on it.</span></span> <span data-ttu-id="c7fd6-244">Denne versjonen av Microsoft .NET Framework kan lastes ned og installeres fra [Microsoft Download Center](https://www.microsoft.com/en-us/download/details.aspx?id=53345).</span><span class="sxs-lookup"><span data-stu-id="c7fd6-244">This version of the Microsoft .NET Framework can be downloaded and installed from the [Microsoft Download Center](https://www.microsoft.com/en-us/download/details.aspx?id=53345).</span></span> <span data-ttu-id="c7fd6-245">Hvis du bruker Chrome, må du installere et ClickOnce-tillegg for å kunne laste ned klienten for rapportutforming.</span><span class="sxs-lookup"><span data-stu-id="c7fd6-245">If you are using Chrome, you must install a ClickOnce extension in order to download the report designer client.</span></span> <span data-ttu-id="c7fd6-246">Hvis du kjører i inkognitomodus, må du kontrollere at ClickOnce-tillegget er aktivert for inkognitomodus.</span><span class="sxs-lookup"><span data-stu-id="c7fd6-246">If you are running in incognito mode, make sure the ClickOnce extension is enabled for incognito mode.</span></span> <span data-ttu-id="c7fd6-247">Du kan også endre en rapport som vises i finansrapportlisten.</span><span class="sxs-lookup"><span data-stu-id="c7fd6-247">You can also modify a report that appears in the financial reports list.</span></span> <span data-ttu-id="c7fd6-248">Når området rundt rapportnavnet er merket, klikker du **Rediger** i handlingsruten.</span><span class="sxs-lookup"><span data-stu-id="c7fd6-248">When the area around the report name is selected, click **Edit** on the Action Pane.</span></span> <span data-ttu-id="c7fd6-249">Rapportutformingsprogrammet starter.</span><span class="sxs-lookup"><span data-stu-id="c7fd6-249">The report designer program starts.</span></span>
-
-## <a name="additional-resources"></a><span data-ttu-id="c7fd6-250">Tilleggsressurser</span><span class="sxs-lookup"><span data-stu-id="c7fd6-250">Additional resources</span></span>
-- [<span data-ttu-id="c7fd6-251">Vise finansrapporter</span><span class="sxs-lookup"><span data-stu-id="c7fd6-251">View financial reports</span></span>](view-financial-reports.md)
-
-
-
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns:logoport="urn:logoport:xliffeditor:xliff-extras:1.0" xmlns:tilt="urn:logoport:xliffeditor:tilt-non-translatables:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xliffext="urn:microsoft:content:schema:xliffextensions" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-US" original="financial-reporting-getting-started.md" target-language="nb-NO">
+    <header>
+      <tool tool-company="Microsoft" tool-version="1.0-7889195" tool-name="mdxliff" tool-id="mdxliff"/>
+      <xliffext:skl_file_name>financial-reporting-getting-started.2bf0de.b8d3630e60fb2f1a8ca7e3610bbb4fcd32c17dec.skl</xliffext:skl_file_name>
+      <xliffext:version>1.2</xliffext:version>
+      <xliffext:ms.openlocfilehash>b8d3630e60fb2f1a8ca7e3610bbb4fcd32c17dec</xliffext:ms.openlocfilehash>
+      <xliffext:ms.sourcegitcommit>06c8dc5bc4e1c41f68e1cda141d61529768be958</xliffext:ms.sourcegitcommit>
+      <xliffext:ms.lasthandoff>05/22/2019</xliffext:ms.lasthandoff>
+      <xliffext:ms.openlocfilepath>articles\financials\general-ledger\financial-reporting-getting-started.md</xliffext:ms.openlocfilepath>
+    </header>
+    <body>
+      <group extype="content" id="content">
+        <trans-unit xml:space="preserve" translate="yes" id="101" restype="x-metadata">
+          <source>Financial reporting</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Finansrapportering</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="102" restype="x-metadata">
+          <source>This topic describes where to access financial reporting in Microsoft Dynamics 365 for Finance and Operations and how to use the financial reporting capabilities.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Dette emnet beskriver hvor du kan få tilgang til økonomisk rapportering i Microsoft Dynamics 365 for Finance and Operations og hvordan du bruker de økonomiske rapporteringsfunksjoner.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="103" restype="x-metadata">
+          <source>It includes a description of the default financial reports that are provided.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Det inneholder en beskrivelse av de økonomiske standardrapportene som tilbys.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="104">
+          <source>Financial reporting</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Finansrapportering</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="105">
+          <source>This topic describes where to access financial reporting in Microsoft Dynamics 365 for Finance and Operations and how to use the financial reporting capabilities.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Dette emnet beskriver hvor du kan få tilgang til økonomisk rapportering i Microsoft Dynamics 365 for Finance and Operations og hvordan du bruker de økonomiske rapporteringsfunksjoner.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="106">
+          <source>It includes a description of the default financial reports that are provided.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Det inneholder en beskrivelse av de økonomiske standardrapportene som tilbys.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="107">
+          <source>Accessing financial reporting</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tilgang til finansrapportering</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="108">
+          <source>You can find the <bpt id="p1">**</bpt>Financial reporting<ept id="p1">**</ept> menu in the following places in Finance and Operations:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Du finner <bpt id="p1">**</bpt>Finansrapportering<ept id="p1">**</ept>-menyen på følgende steder i Finance and Operations:</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="109">
+          <source><bpt id="p1">**</bpt>General Ledger<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Inquiries and reports<ept id="p2">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Økonomimodul<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Forespørsler og rapporter<ept id="p2">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="110">
+          <source><bpt id="p1">**</bpt>Budgeting<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Inquires and reports<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Basic budgeting<ept id="p3">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Budsjettering<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Forespørsler og rapporter<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Grunnleggende budsjettering<ept id="p3">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="111">
+          <source><bpt id="p1">**</bpt>Budgeting<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Inquiries and reports<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Budget planning<ept id="p3">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Budsjettering<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Forespørsler og rapporter<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Budsjettplanlegging<ept id="p3">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="112">
+          <source><bpt id="p1">**</bpt>Budgeting<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Inquiries and reports<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Budget control<ept id="p3">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Budsjettering<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Forespørsler og rapporter<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Budsjettkontroll<ept id="p3">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="113">
+          <source>Consolidations</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Konsolideringer</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="114">
+          <source>To create and generate financial reports for a legal entity, you must set up the following information for that legal entity:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Hvis du vil opprette og generere finansrapporter for en juridisk enhet, må du angi følgende informasjon for den juridiske enheten:</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="115">
+          <source>Fiscal calendar</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Økonomisk kalender</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="116">
+          <source>Ledger</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Finans</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="117">
+          <source>Chart of accounts</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kontoplan</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="118">
+          <source>Currency</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valuta</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="119">
+          <source>The financial reporting functions are available to users who have the appropriate privileges and duties assigned to them through their security roles.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Funksjonene for økonomisk rapportering er tilgjengelige for brukere som er tilordnet de nødvendige rettighetene og pliktene via sikkerhetsrollene sine.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="120">
+          <source>The following sections list these privileges and duties, together with the associated roles.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">De følgende delene viser disse rettighetene og pliktene sammen med de tilknyttede rollene.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="121">
+          <source>Duties</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Plikter</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="122">
+          <source>Duty label</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Etikett for plikt</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="123">
+          <source>Description</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Beskrivelse</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="124">
+          <source>AOT name</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Navn på applikasjonsobjekttre</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="125">
+          <source>Maintain financial reporting security</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vedlikehold finansrapporteringssikkerhet</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="126">
+          <source>Maintain financial reporting security and perform administrative tasks.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vedlikehold finansrapporteringssikkerhet og utfør administrative oppgaver.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="127">
+          <source>FinancialReportsSecurityMaintain</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">FinansrapportersikkerhetVedlikehold</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="128">
+          <source>Maintain financial reports</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vedlikehold finansrapporter</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="129">
+          <source>Design and maintain financial reports.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Utform og vedlikehold finansrapporter.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="130">
+          <source>FinancialReportsMaintain</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">FinansrapporterVedlikehold</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="131">
+          <source>Generate financial reports</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Generer finansrapporter</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="132">
+          <source>Generate and refresh financial reports.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Generer og oppdater finansrapporter.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="133">
+          <source>FinancialReportsGenerate</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">FinansrapporterGenerer</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="134">
+          <source>Review financial performance</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Gå gjennom finansresultat</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="135">
+          <source>Review and analyze financial performance.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Gå gjennom og analyser finansresultat.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="136">
+          <source>FinancialReportsPerfReview</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">FinansrapporterUtførGjennomgang</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="137">
+          <source>Privileges</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Rettigheter</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="138">
+          <source>Privilege label</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Etikett for rettighet</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="139">
+          <source>Description</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Beskrivelse</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="140">
+          <source>AOT name</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Navn på applikasjonsobjekttre</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="141">
+          <source>Maintain financial reporting security</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vedlikehold finansrapporteringssikkerhet</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="142">
+          <source>Maintain financial reporting security and perform administrative tasks.</source>
+        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">Vedlikehold finansrapporteringssikkerhet og utfør administrative oppgaver.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="143">
+          <source>FinancialReportsSecuritySystemMaintain</source><target logoport:matchpercent="0" state="translated">FinansrapportersikkerhetSystemvedlikehold</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="144">
+          <source>Maintain financial reports</source>
+        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">Vedlikehold finansrapporter</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="145">
+          <source>Design and maintain financial reports.</source>
+        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">Utform og vedlikehold finansrapporter.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="146">
+          <source>FinancialReportsMaintainReports</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">FinansapporterVedlikeholdRapporter</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="147">
+          <source>Generate financial reports</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Generer finansrapporter</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="148">
+          <source>Generate and refresh financial reports.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Generer og oppdater finansrapporter.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="149">
+          <source>FinancialReportsGenerateReports</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">FinansrapporterGenererRapporter</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="150">
+          <source>View financial reports</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vis finansrapporter</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="151">
+          <source>View financial reports.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vis finansrapporter.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="152">
+          <source>FinancialReportsView</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">FinansrapporterVis</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="153">
+          <source>Roles</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Roller</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="154">
+          <source>Privilege label</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Etikett for rettighet</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="155">
+          <source>Duty</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Avgift</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="156">
+          <source>Roles</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Roller</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="157">
+          <source>Maintain financial reporting security</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vedlikehold finansrapporteringssikkerhet</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="158">
+          <source>Maintain financial reporting security</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vedlikehold finansrapporteringssikkerhet</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="159">
+          <source>Security administrator</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Sikkerhetsadministrator</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="160">
+          <source>Maintain financial reports</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vedlikehold finansrapporter</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="161">
+          <source>Maintain financial reports</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vedlikehold finansrapporter</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="162">
+          <source>Accounting Manager, Accounting Supervisor, Financial Controller, Budget Manager</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Regnskapssjef, Regnskapsansvarlig, Økonomikontrollør, Budsjettbehandler</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="163">
+          <source>Generate financial reports</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Generer finansrapporter</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="164">
+          <source>Generate financial reports</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Generer finansrapporter</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="165">
+          <source>CEO, CFO, Accountant</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">CEO, CFO, Regnskapsfører</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="166">
+          <source>View financial reports</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vis finansrapporter</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="167">
+          <source>Review financial performance</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Gå gjennom finansresultat</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="168">
+          <source>None assigned</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ikke tilordnet</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="169">
+          <source>After a user is added or a role is changed, the user should be able to access financial reporting within a few minutes.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Når en bruker er lagt til eller en rolle er endret, skal brukeren kunne få tilgang til økonomisk rapportering på noen få minutter.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="170">
+          <source><bpt id="p1">**</bpt>Note:<ept id="p1">**</ept> The sysadmin role is added to all roles in financial reporting.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Merk:<ept id="p1">**</ept> Sysadmin-rollen er lagt til alle roller i finansrapportering.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="171">
+          <source>Default reports</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Standardrapporter</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="172">
+          <source>Financial reporting provides 22 default financial reports.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Finansrapportering gir 22 standard finansrapporter.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="173">
+          <source>Every report uses the default main account categories in Finance and Operations.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Alle rapportene bruker standard hovedkontokategorier i <ph id="1">Dynamics 365 for Finance and Operations</ph>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="174">
+          <source>You can use these reports as is or as a starting point for your financial reporting needs.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Du kan bruke disse rapportene som de er eller som et utgangspunkt for ditt finansrapporteringsbehov.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="175">
+          <source>In addition to the traditional financial statements, such as Income statement and Balance sheet, these default reports include reports that show the different types of financial reports that you can create.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">I tillegg til de tradisjonelle regnskapsoppgjørene, for eksempel resultatregnskap og balanse, inkluderer disse standardrapportene rapporter som viser de forskjellige typene finansrapporter du kan opprette.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="176">
+          <source>Default report</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Standardrapport</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="177">
+          <source>Description</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Beskrivelse</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="178">
+          <source>12 Month Rolling Single Column Income Statement – Default</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">12 måneder Opprulling Én kolonne Resultatregnskap – Standard</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="179">
+          <source>View an organization’s profitability for the past 12 months in a single column.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vis organisasjonens fortjeneste for de siste 12 månedene i én enkelt kolonne.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="180">
+          <source>12 Month Trend Income Statement – Default</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">12 måneder Trend Resultatregnskap – Standard</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="181">
+          <source>View an organization’s profitability for each of the last 12 months.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vis organisasjonens fortjeneste for hver av de 12 siste månedene.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="182">
+          <source>These 12 months can span more than one fiscal year.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Disse 12 månedene kan strekke seg over mer enn ett regnskapsår.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="183">
+          <source>Actual vs Budget – Default</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Faktisk kontra Budsjett – Standard</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="184">
+          <source>View detailed balance information for all accounts for the original budget, and compare the revised budget to actuals that have a variance.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vis detaljert saldoinformasjon for alle kontoer for det opprinnelige budsjettet, og sammenlign det reviderte budsjettet med faktiske data som har et avvik.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="185">
+          <source>Audit Details – Default</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Revisjonsdetaljer – Standard</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="186">
+          <source>View detailed balance information for all accounts.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vis detaljert saldoinformasjon for alle kontoer.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="187">
+          <source>This report shows debit and credit balances in the reporting currency and the local currency, together with additional transaction information, such as the user ID, the user who last modified the data, the date of the last modification, and the journal ID.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Denne rapporten viser debet- og kreditsaldoer i rapporteringsvalutaen og i lokal valuta, sammen med mer transaksjonsinformasjon, som for eksempel bruker-ID-en, brukeren som sist endret dataene, datoen for siste endring og journal-ID-en.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="188">
+          <source>Balance List – Default</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Saldoliste – Standard</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="189">
+          <source>View detailed balance information for all accounts.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vis detaljert saldoinformasjon for alle kontoer.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="190">
+          <source>This report shows opening and closing balances, and debit and credit balances for the current period and year to date, together with additional transaction information, such as the voucher.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Denne rapporten viser åpnings- og lukkingssaldoer og debet- og kreditsaldoer for den aktuelle perioden og året hittil, sammen med mer transaksjonsinformasjon, for eksempel bilaget.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="191">
+          <source>Balance Sheet – Default</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Balanse – Standard</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="192">
+          <source>View the organization's financial position for the year.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vis organisasjonens finansiell stilling for året.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="193">
+          <source>Balance Sheet and Income Statement Side by Side - Default</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Balanse og resultatregnskap side ved side – Standard</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="194">
+          <source>View the organization’s financial position and profitability for the year side by side.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vis finansiell stilling og lønnsomhet i organisasjonen for året side ved side.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="195">
+          <source>Cash Flow – Default</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kontantstrøm – Standard</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="196">
+          <source>Gain insight into the cash that is coming in to and going out of the organization.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Få innsikt i kontanter som kommer inn til og går ut av organisasjonen.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="197">
+          <source>Detailed JE and TB Review – Default</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Detaljert JE- og TB-gjennomgang – Standard</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="198">
+          <source>View opening balance and activity information for all accounts.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vis åpningssaldo og aktivitetsinformasjon for alle kontoer.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="199">
+          <source>Detailed Trial Balance - Default</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Detaljert råbalanse – Standard</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="200">
+          <source>View balance information for all accounts that have debit and credit balances, and the net of these balances, together with the transaction date, voucher, and journal description.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vis saldoinformasjon for alle kontoer som har debet- og kreditsaldoer, og nettoen for disse saldoene, sammen med transaksjonsdato, bilag og journalbeskrivelse.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="201">
+          <source>Expenses Three Year Quarterly Trend – Default</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Utgifter Tre år Kvartalsvis Trend – Standard</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="202">
+          <source>Gain insight into expenses for the past 12 quarters over the previous three years.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Få innsikt i utgifter for de siste 12 kvartalene over de siste tre årene.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="203">
+          <source>Financial Captions JE and TB Review – Default</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Gjennomgang av finansoverskrifter for JE og TB – Standard</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="204">
+          <source>See an overview of the balances and activity for the asset, liability, owner’s equity, revenue, expense, gain, or loss financial captions.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Se en oversikt over saldoer og aktivitet for finansoverskriftene aktiva, gjeld, eierens egenkapital, omsetning, utgift, gevinst eller tap.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="205">
+          <source>Income Statement – Default</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Resultatregnskap – Standard</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="206">
+          <source>View the organization’s profitability for the current period and the year to date.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vis organisasjonens lønnsomhet for inneværende periode og hittil i år.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="207">
+          <source>Ledger Transaction List – Default</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Finanstransaksjonsliste – Standard</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="208">
+          <source>View detailed balance information for all accounts.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vis detaljert saldoinformasjon for alle kontoer.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="209">
+          <source>This report shows debit and credit balances, together with additional transaction information, such as the transaction date, journal number, voucher, posting type, and trace number.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Denne rapporten viser debet- og kreditsaldoer sammen med mer transaksjonsinformasjon som transaksjonsdato, journalnummer, bilag, posteringstype og sporingsnummer.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="210">
+          <source>Ratios – Default</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Forhold – Standard</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="211">
+          <source>View the solvency, profitability, and efficiency ratios for the organization for the year.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vis solvens, lønnsomhet og effektivitetsrate for organisasjonen for året.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="212">
+          <source>Rolling 12 Month Expenses – Default</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Opprulling 12 måneder Utgifter – Standard</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="213">
+          <source>Gain insight into expenses for each of the last 12 months.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Få innsikt i utgifter for hver av de siste 12 månedene.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="214">
+          <source>These 12 months can span more than one fiscal year.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Disse 12 månedene kan strekke seg over mer enn ett regnskapsår.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="215">
+          <source>Rolling Quarter Income Statement – Default</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Opprulling Kvartalsvis Resultatregnskap – Standard</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="216">
+          <source>View the organization’s profitability on a quarterly basis for the past year and the year to date.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vis organisasjonens lønnsomhet kvartalsvis for det siste året samt hittil i år.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="217">
+          <source>Side by Side Balance Sheet – Default</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Side ved side Balanse – Standard</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="218">
+          <source>View the organization's financial position for the year.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vis organisasjonens finansiell stilling for året.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="219">
+          <source>This report shows assets and liability, and shareholder equity side by side.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Denne rapporten viser aktiva, gjeld og egenkapital for aksjeeiere side ved side.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="220">
+          <source>Summary Trial Balance – Default</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Råbalansesammendrag – Standard</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="221">
+          <source>View balance information for all accounts that have opening and closing balances, and debit and credit balances together with their net difference.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vis saldoinformasjon for alle kontoer som har åpnings- og avslutningssaldo og debet- og kreditsaldoer, sammen med deres nettoforskjell.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="222">
+          <source>Summary Trial Balance Year Over Year – Default</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Sammendrag Råbalanse Årlig – Standard</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="223">
+          <source>View balance information for all accounts that have opening and closing balances, and debit and credit balances together with their net difference for the current year and the past year.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vis saldoinformasjon for alle kontoer som har åpnings- og avslutningssaldo og debet- og kreditsaldoer, sammen med deres nettoforskjell for gjeldende og forrige år.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="224">
+          <source>Weekly Sales and Discounts - Default</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ukentlig Salg og rabatter – Standard</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="225">
+          <source>Gain insight into sales and discounts for each week in a month.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Få innsikt i salg og rabatter for hver uke i en måned.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="226">
+          <source>This report includes a four-week total.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Denne rapporten inneholder totalt fire uker.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="227">
+          <source>Budget Funds Available - Default</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Budsjettmidler tilgjengelig - standard</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="228">
+          <source>View a detailed comparison of revised budget, actual expenditures, budget reservations, and budget funds available for all accounts</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vis en detaljert sammenligning av revidert budsjett, faktiske utgifter, budsjettreservasjoner og budsjettmidler tilgjengelig for alle kontoer</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="229">
+          <source>Opening financial reports</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Åpne finansrapporter</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="230">
+          <source>When you click the <bpt id="p1">**</bpt>Financial reporting<ept id="p1">**</ept> menu, the list of default financial reports for the company is shown.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Når du klikker <bpt id="p1">**</bpt>Finansrapportering<ept id="p1">**</ept>-menyen, vises listen over standard finansrapporter for firmaet.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="231">
+          <source>You can then open or modify a report.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Deretter kan du åpne eller endre en rapport.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="232">
+          <source>To open one of the default reports, select the report name.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Velg rapportnavnet for å åpne en av standardrapportene.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="233">
+          <source>The first time that a report is opened, it's automatically generated for the previous month.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Første gang en rapport åpnes, genereres den automatisk for forrige måned.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="234">
+          <source>For example, if you open a report for the first time in August 2016, the report is generated for July 31, 2016.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Hvis du for eksempel åpner en rapport for første gang i august 2016, genereres rapporten for 31. juli 2016.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="235">
+          <source>After a report is opened, you can start exploring it by drilling down on specific pieces of data and changing report options.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Når en rapport åpnes, kan du begynne å utforske den ved å gå nedover i bestemte deler av data og endre rapportalternativer.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="236">
+          <source>Creating and modifying financial reports</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Opprette og endre finansrapporter</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="237">
+          <source>From the financial reports list, you can create a new report or modify an existing report.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Du kan opprette en ny rapport fra listen for finansrapporter eller endre en eksisterende rapport.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="238">
+          <source>If you have the appropriate permissions, you can create a new financial report by clicking <bpt id="p1">**</bpt>New<ept id="p1">**</ept> on the Action Pane.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Hvis du har de nødvendige tillatelsene, kan du opprette en ny finansrapport ved å klikke <bpt id="p1">**</bpt>Ny<ept id="p1">**</ept> i handlingsruten.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="239">
+          <source>A report designer program is downloaded to your device.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Et rapportutforming-program lastes ned til enheten.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="240">
+          <source>After the report designer starts you can then create the new report.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Du kan deretter opprette den nye rapporten etter at rapportutformingen starter.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="241">
+          <source>After you save the new report, it appears in the financial reports list.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Når du har lagret den nye rapporten, vises den i finansrapportlisten.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="242">
+          <source>The list shows only reports that were created for the company that you're using in Finance and Operations.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Listen viser bare rapporter som er opprettet for firmaet som du bruker i Finance and Operations.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="243">
+          <source>The computer that you are downloading the report designer client on must have version 4.6.2 of the Microsoft .NET Framework installed on it.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Datamaskinen som du laster ned klienten for rapportutforming på, må ha versjon 4.6.2 av Microsoft .NET Framework installert.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="244">
+          <source>This version of the Microsoft .NET Framework can be downloaded and installed from the <bpt id="p1">[</bpt>Microsoft Download Center<ept id="p1">](https://www.microsoft.com/en-us/download/details.aspx?id=53345)</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Denne versjonen av Microsoft .NET Framework kan lastes ned og installeres fra <bpt id="p1">[</bpt>Microsoft Download Center<ept id="p1">](https://www.microsoft.com/en-us/download/details.aspx?id=53345)</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="245">
+          <source>If you are using Chrome, you must install a ClickOnce extension in order to download the report designer client.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Hvis du bruker Chrome, må du installere et ClickOnce-tillegg for å kunne laste ned klienten for rapportutforming.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="246">
+          <source>If you are running in incognito mode, make sure the ClickOnce extension is enabled for incognito mode.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Hvis du kjører i inkognitomodus, må du kontrollere at ClickOnce-tillegget er aktivert for inkognitomodus.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="247">
+          <source>You can also modify a report that appears in the financial reports list.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Du kan også endre en rapport som vises i finansrapportlisten.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="248">
+          <source>When the area around the report name is selected, click <bpt id="p1">**</bpt>Edit<ept id="p1">**</ept> on the Action Pane.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Når området rundt rapportnavnet er merket, klikker du <bpt id="p1">**</bpt>Rediger<ept id="p1">**</ept> i handlingsruten.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="249">
+          <source>The report designer program starts.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Rapportutformingsprogrammet starter.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="250">
+          <source>Additional resources</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tilleggsressurser</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="251">
+          <source><bpt id="p1">[</bpt>View financial reports<ept id="p1">](view-financial-reports.md)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Vise finansrapporter<ept id="p1">](view-financial-reports.md)</ept></target></trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

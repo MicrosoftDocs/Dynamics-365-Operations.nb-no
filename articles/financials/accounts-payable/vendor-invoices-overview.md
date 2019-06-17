@@ -1,101 +1,303 @@
----
-title: Oversikt over leverandørfakturaer
-description: Denne artikkelen inneholder generell informasjon om leverandørfakturaer. Leverandørfakturaer er forespørsler om betaling for produkter og tjenester som er mottatt. Leverandørfakturaer kan representere en faktura for pågående tjenester, eller den kan være basert på bestillinger for bestemte varer og tjenester.
-author: abruer
-manager: AnnBe
-ms.date: 03/29/2019
-ms.topic: article
-ms.prod: ''
-ms.service: dynamics-ax-applications
-ms.technology: ''
-ms.search.form: VendorInvoiceWorkspace, VendInvoiceInfoListPage
-audience: Application User
-ms.reviewer: shylaw
-ms.search.scope: Core, Operations
-ms.custom: 13971
-ms.assetid: 0ec4dbc0-2eeb-423b-8592-4b5d37e559d3
-ms.search.region: Global
-ms.author: abruer
-ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1d7cec48b1e01d308cfc67260ac82a50a8d76844
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
-ms.translationtype: HT
-ms.contentlocale: nb-NO
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1509504"
----
-# <a name="vendor-invoices-overview"></a><span data-ttu-id="c1cb8-105">Oversikt over leverandørfakturaer</span><span class="sxs-lookup"><span data-stu-id="c1cb8-105">Vendor invoices overview</span></span>
-
-[!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
-
-<span data-ttu-id="c1cb8-106">Denne artikkelen inneholder generell informasjon om leverandørfakturaer.</span><span class="sxs-lookup"><span data-stu-id="c1cb8-106">This article provides general information about vendor invoices.</span></span> <span data-ttu-id="c1cb8-107">Leverandørfakturaer er forespørsler om betaling for produkter og tjenester som er mottatt.</span><span class="sxs-lookup"><span data-stu-id="c1cb8-107">Vendor invoices are requests for payment for products and services that were received.</span></span> <span data-ttu-id="c1cb8-108">Leverandørfakturaer kan representere en faktura for pågående tjenester, eller den kan være basert på bestillinger for bestemte varer og tjenester.</span><span class="sxs-lookup"><span data-stu-id="c1cb8-108">Vendor invoices can represent a bill for ongoing services, or they can be based on purchase orders for specific items and services.</span></span> 
-
-## <a name="vendor-invoices"></a><span data-ttu-id="c1cb8-109">Leverandørfakturaer</span><span class="sxs-lookup"><span data-stu-id="c1cb8-109">Vendor invoices</span></span>
-
-<span data-ttu-id="c1cb8-110">En leverandørfaktura fra en bestilling er en faktura som lages når produkter eller tjenester er mottatt i henhold til en bestilling som ble plassert hos en leverandør.</span><span class="sxs-lookup"><span data-stu-id="c1cb8-110">A vendor invoice from a purchase order is an invoice that is produced when products or services are received according to a purchase order that was placed with a vendor.</span></span> <span data-ttu-id="c1cb8-111">Leverandørfakturaen inneholder et hode og én eller flere linjer for varer eller tjenester.</span><span class="sxs-lookup"><span data-stu-id="c1cb8-111">The vendor invoice contains a header, and one or more lines for items or services.</span></span> <span data-ttu-id="c1cb8-112">En leverandørfaktura fullfører syklusen fra bestilling til produktkvittering og leverandørfaktura.</span><span class="sxs-lookup"><span data-stu-id="c1cb8-112">A vendor invoice completes the cycle from purchase order to product receipt to vendor invoice.</span></span> 
-
-<span data-ttu-id="c1cb8-113">Selv om noen leverandørfakturaer er koblet til en bestilling, kan også leverandørfakturaer inneholde linjer som ikke samsvarer med bestillingslinjer.</span><span class="sxs-lookup"><span data-stu-id="c1cb8-113">Although some vendor invoices are connected to a purchase order, vendor invoices can also contain lines that don't correspond to purchase order lines.</span></span> <span data-ttu-id="c1cb8-114">Du kan også opprette leverandørfakturaer som ikke er knyttet til noen bestilling.</span><span class="sxs-lookup"><span data-stu-id="c1cb8-114">You can also create vendor invoices that aren't associated with any purchase order.</span></span> <span data-ttu-id="c1cb8-115">Disse leverandørfakturaene kan representere pågående tjenester, for eksempel en strømregning, og du trenger ikke å referere til en bestilling når du legger dem til.</span><span class="sxs-lookup"><span data-stu-id="c1cb8-115">These vendor invoices might represent ongoing services, such as a utility bill, and you don't have to reference a purchase order when you add them.</span></span> 
-
-<span data-ttu-id="c1cb8-116">Det finnes flere måter å angi en leverandørfaktura:</span><span class="sxs-lookup"><span data-stu-id="c1cb8-116">There are several ways to enter a vendor invoice:</span></span>
-
--   <span data-ttu-id="c1cb8-117">I leverandørfakturaregisteret kan du raskt skrive inn fakturaer som ikke refererer til en bestilling, slik at du kan avsette utgiften.</span><span class="sxs-lookup"><span data-stu-id="c1cb8-117">The vendor invoice register lets you quickly enter invoices that don't reference a purchase order, so that you can accrue the expense.</span></span> <span data-ttu-id="c1cb8-118">Ved hjelp av journalen for godkjenning av leverandørfaktura kan du velge disse fakturaene og postere dem til leverandørsaldoen for å reversere avsetningen.</span><span class="sxs-lookup"><span data-stu-id="c1cb8-118">By using the vendor invoice approval journal, you can select those invoices and post them to the vendor balance to reverse the accrual.</span></span>
--   <span data-ttu-id="c1cb8-119">I leverandørfakturajournalen kan du raskt skrive inn fakturaer som ikke refererer til en bestilling, i én operasjon.</span><span class="sxs-lookup"><span data-stu-id="c1cb8-119">The vendor invoice journal lets you quickly enter invoices that don't reference a purchase order, in a single step.</span></span>
--   <span data-ttu-id="c1cb8-120">Leverandørfakturapuljen i kombinasjon med leverandørfakturaregisteret lar deg raskt skrive inn fakturaer for å avsette utgiften.</span><span class="sxs-lookup"><span data-stu-id="c1cb8-120">Together with the vendor invoice pool, the vendor invoice register lets you quickly enter invoices to accrue the expense.</span></span> <span data-ttu-id="c1cb8-121">Du kan åpne de tilknyttede bestillingene senere for å postere fakturaen mot utgiftskontoen.</span><span class="sxs-lookup"><span data-stu-id="c1cb8-121">You can open the associated purchase orders later to post the invoice against the expense account.</span></span>
--   <span data-ttu-id="c1cb8-122">På sidene **Åpne leverandørfakturaer** og **Ventende leverandørfakturaer** kan du opprette leverandørfakturaer fra bekreftede bestillinger.</span><span class="sxs-lookup"><span data-stu-id="c1cb8-122">The **Open vendor invoices** and **Pending vendor invoices** pages let you create vendor invoices from confirmed purchase orders.</span></span>
-
-<span data-ttu-id="c1cb8-123">Følgende diskusjon inneholder mer informasjon om hvordan du bruker siden **Åpne leverandørfakturaer** eller **Ventende leverandørfakturaer** til å opprette en leverandørfaktura fra en bestilling.</span><span class="sxs-lookup"><span data-stu-id="c1cb8-123">The following discussion provide more information about how to use the **Open vendor invoices** or **Pending vendor invoices** page to create a vendor invoice from a purchase order.</span></span>
-
-## <a name="understanding-invoice-line-quantities"></a><span data-ttu-id="c1cb8-124">Forstå fakturalinjeantall</span><span class="sxs-lookup"><span data-stu-id="c1cb8-124">Understanding invoice line quantities</span></span>
-<span data-ttu-id="c1cb8-125">Når du åpner en leverandørfaktura fra en tilknyttet bestilling, opprettes fakturalinjer fra bestillingen.</span><span class="sxs-lookup"><span data-stu-id="c1cb8-125">When you open a vendor invoice from a related purchase order, invoice lines are created from the purchase order.</span></span> <span data-ttu-id="c1cb8-126">Som standard hentes antallet fra produktkvitteringsantallet.</span><span class="sxs-lookup"><span data-stu-id="c1cb8-126">By default, the quantities are taken from the product receipt quantity.</span></span> <span data-ttu-id="c1cb8-127">Du kan imidlertid bruke et av følgende standardvalg:</span><span class="sxs-lookup"><span data-stu-id="c1cb8-127">However, you can use any of the following default behaviors:</span></span>
-
--   <span data-ttu-id="c1cb8-128">**Motta nå-antall** – Bruk dette alternativet for delvise leveringer.</span><span class="sxs-lookup"><span data-stu-id="c1cb8-128">**Receive now quantity** – Use this option for partial shipments.</span></span> <span data-ttu-id="c1cb8-129">Standardverdien i feltet **Antall** hentes fra antallfeltet **Motta nå** på innkjøpsordren.</span><span class="sxs-lookup"><span data-stu-id="c1cb8-129">The default value in the **Quantity** field is taken from the **Receive now** quantity field on the purchase order.</span></span>
--   <span data-ttu-id="c1cb8-130">**Bestilt antall** – Bruk dette alternativet for komplette forsendelser.</span><span class="sxs-lookup"><span data-stu-id="c1cb8-130">**Ordered quantity** – Use this option for complete shipments.</span></span> <span data-ttu-id="c1cb8-131">Standardverdien i **Antall**-feltet hentes fra **Bestilt**-antallfeltet på innkjøpsordren.</span><span class="sxs-lookup"><span data-stu-id="c1cb8-131">The default value in the **Quantity** field is taken from the **Ordered** quantity field on the purchase order.</span></span>
--   <span data-ttu-id="c1cb8-132">**Registrert antall** – Bruk dette alternativet hvis varen krever registrering, som angitt på **Varemodellgrupper**-siden.</span><span class="sxs-lookup"><span data-stu-id="c1cb8-132">**Registered quantity** – Use this option if the item requires registration, as specified on the **Item model groups** page.</span></span> <span data-ttu-id="c1cb8-133">Standardverdien i **Antall**-feltet er det fysiske oppdaterte antallet som er registrert.</span><span class="sxs-lookup"><span data-stu-id="c1cb8-133">The default value in the **Quantity** field is the physical update quantity that has been registered.</span></span>
--   <span data-ttu-id="c1cb8-134">**Produktkvitteringsantall** – Bruk dette alternativet hvis en produktkvittering allerede er mottatt for ordren.</span><span class="sxs-lookup"><span data-stu-id="c1cb8-134">**Product receipt quantity** – Use this option if a product receipt has already been received for the order.</span></span> <span data-ttu-id="c1cb8-135">Standardverdien i **Antall**-feltet er hentet fra totalt antall for tilgjengelige produktkvitteringer.</span><span class="sxs-lookup"><span data-stu-id="c1cb8-135">The default value in the **Quantity** field is taken from the total quantity of available product receipts.</span></span>
--   <span data-ttu-id="c1cb8-136">**Registrerte antall og tjenester** – Bruk dette alternativet hvis antall som er registrert i ankomstjournaler for lagerførte varer eller varer som ikke er på lager.</span><span class="sxs-lookup"><span data-stu-id="c1cb8-136">**Registered quantity and services** – Use this option if quantities have been registered in arrival journals for stocked items or items that aren't stocked.</span></span> <span data-ttu-id="c1cb8-137">Dette alternativet omfatter tjenester også, uavhengig av om de er registrert.</span><span class="sxs-lookup"><span data-stu-id="c1cb8-137">This option also includes services, regardless of whether they are registered.</span></span>
-
-<span data-ttu-id="c1cb8-138">Hvis den juridiske enheten bruker fakturakontroll, kan du vise resultatene av antallssamsvaret i **Samsvar i antall i produktkvittering**-kolonnen.</span><span class="sxs-lookup"><span data-stu-id="c1cb8-138">If your legal entity uses invoice matching, you can view the results of the quantity matching in the **Product receipt quantity match** column.</span></span> <span data-ttu-id="c1cb8-139">Du kan også bruke **Samsvarende detaljer**-menykommando på **Gjennomgang**-fanen for å vise resultatene av antallssamsvaret.</span><span class="sxs-lookup"><span data-stu-id="c1cb8-139">You can also use the **Matching details** menu command on the **Review** tab to view the results of the quantity matching.</span></span>
-
-## <a name="adding-a-line-that-wasnt-on-the-purchase-order"></a><span data-ttu-id="c1cb8-140">Legger til en linje som ikke var på bestillingen.</span><span class="sxs-lookup"><span data-stu-id="c1cb8-140">Adding a line that wasn't on the purchase order</span></span>
-<span data-ttu-id="c1cb8-141">Du kan legge til en ny linje som ikke var på bestillingen, i leverandørfakturaen.</span><span class="sxs-lookup"><span data-stu-id="c1cb8-141">You can add a new line that wasn't on the purchase order to the vendor invoice.</span></span> <span data-ttu-id="c1cb8-142">Du må velge et varenummer eller en innkjøpskategori.</span><span class="sxs-lookup"><span data-stu-id="c1cb8-142">You must select an item number or procurement category.</span></span> <span data-ttu-id="c1cb8-143">Du kan deretter legge til antall, priser og beløp på linjen.</span><span class="sxs-lookup"><span data-stu-id="c1cb8-143">You can then add quantities, prices, and amounts to the line.</span></span> <span data-ttu-id="c1cb8-144">Linjen inkluderes bare i kontrollpolicyer for fakturatotaler.</span><span class="sxs-lookup"><span data-stu-id="c1cb8-144">The line will be included only in matching policies for invoice totals.</span></span>
-
-## <a name="submitting-a-vendor-invoice-for-review"></a><span data-ttu-id="c1cb8-145">Sende en leverandørfaktura til vurdering</span><span class="sxs-lookup"><span data-stu-id="c1cb8-145">Submitting a vendor invoice for review</span></span>
-<span data-ttu-id="c1cb8-146">Organisasjonen kan bruke arbeidsflyter til å administrere vurderingsprosessen for leverandørfakturaer.</span><span class="sxs-lookup"><span data-stu-id="c1cb8-146">Your organization might use workflows to manage the review process for vendor invoices.</span></span> <span data-ttu-id="c1cb8-147">Det kan bli nødvendig med arbeidsflytvurdering for fakturahodet, fakturalinjen eller begge.</span><span class="sxs-lookup"><span data-stu-id="c1cb8-147">Workflow review can be required for the invoice header, the invoice line, or both.</span></span> <span data-ttu-id="c1cb8-148">Arbeidsflytkontrollene gjelder for hodet eller linjen, avhengig av hvor fokuset er når du klikker kontrollen.</span><span class="sxs-lookup"><span data-stu-id="c1cb8-148">The workflow controls apply to the header or the line, depending on where the focus is when you click the control.</span></span> <span data-ttu-id="c1cb8-149">I stedet for **Poster**-knappen vises en **Send**-knapp som du kan bruke til å sende leverandørfakturaen gjennom vurderingsprosessen.</span><span class="sxs-lookup"><span data-stu-id="c1cb8-149">Instead of the **Post** button, you will see a **Submit** button that you can use to send the vendor invoice through the review process.</span></span>
-
-## <a name="matching-vendor-invoices-to-product-receipts"></a><span data-ttu-id="c1cb8-150">Samsvare leverandørfakturaer med produktkvitteringer</span><span class="sxs-lookup"><span data-stu-id="c1cb8-150">Matching vendor invoices to product receipts</span></span>
-<span data-ttu-id="c1cb8-151">Du kan angi og lagre informasjon for leverandørfakturaer, og du kan samsvare fakturalinjer med produktkvitteringslinjer.</span><span class="sxs-lookup"><span data-stu-id="c1cb8-151">You can enter and save information for vendor invoices, and you can match invoice lines to product receipt lines.</span></span> <span data-ttu-id="c1cb8-152">Du kan også samsvare delvist antall for en linje.</span><span class="sxs-lookup"><span data-stu-id="c1cb8-152">You can also match partial quantities for a line.</span></span> 
-
-<span data-ttu-id="c1cb8-153">Du kan opprette en leverandørfaktura basert på linjeelementene for produktkvittering som er mottatt til nå, selv om ikke alle varene i en bestemt bestilling er mottatt ennå.</span><span class="sxs-lookup"><span data-stu-id="c1cb8-153">You can create a vendor invoice that is based on the product receipt line items that have been received to date, even if all the items for a particular purchase order haven't yet been received.</span></span> <span data-ttu-id="c1cb8-154">Du kan for eksempel bruke dette alternativet hvis en leverandør sender én faktura per måned som dekker alle leveringer vedkommende sendte i løpet av den måneden.</span><span class="sxs-lookup"><span data-stu-id="c1cb8-154">For example, you might use this option if a vendor sends one invoice per month that covers all the deliveries that the vendor shipped during that month.</span></span> <span data-ttu-id="c1cb8-155">Hver produktkvittering representerer en delvis eller komplett levering av varene i bestillingen.</span><span class="sxs-lookup"><span data-stu-id="c1cb8-155">Each product receipt represents a partial or complete delivery of the items on the purchase order.</span></span> 
-
-<span data-ttu-id="c1cb8-156">Når du posterer fakturaen, oppdateres **Fakturarest**-antallet for hver vare til totalantallet som er mottatt for de valgte produktkvitteringene.</span><span class="sxs-lookup"><span data-stu-id="c1cb8-156">When you post the invoice, the **Invoice remainder** quantity for each item is updated with the total of the received quantities from the selected product receipts.</span></span> <span data-ttu-id="c1cb8-157">Hvis både **Fakturarest**-antallet og **Gjenstående levering**-antallet for alle varer på bestillingen er 0 (null), endres statusen for bestillingen til **Fakturert**.</span><span class="sxs-lookup"><span data-stu-id="c1cb8-157">If both the **Invoice remainder** quantity and the **Deliver remainder** quantity for all items on the purchase order are 0 (zero), the status of the purchase order is changed to **Invoiced**.</span></span> <span data-ttu-id="c1cb8-158">Hvis **Fakturarest**-antallet ikke er 0, endres ikke statusen for bestillingen, og flere fakturaer kan registreres på den.</span><span class="sxs-lookup"><span data-stu-id="c1cb8-158">If the **Invoice remainder** quantity isn't 0, the status of the purchase order remains unchanged, and additional invoices can be entered for it.</span></span>
-
-<span data-ttu-id="c1cb8-159">Dette alternativet forutsetter at minst én produktkvittering er postert for bestillingen.</span><span class="sxs-lookup"><span data-stu-id="c1cb8-159">This option assumes that at least one product receipt has been posted for the purchase order.</span></span> <span data-ttu-id="c1cb8-160">Leverandørfakturaen er basert på disse produktkvitteringene og gjenspeiler antallet i dem.</span><span class="sxs-lookup"><span data-stu-id="c1cb8-160">The vendor invoice is based on these product receipts and reflects the quantities from them.</span></span> <span data-ttu-id="c1cb8-161">Finansinformasjonen for fakturaen er basert på informasjonen du angir når du posterer fakturaen.</span><span class="sxs-lookup"><span data-stu-id="c1cb8-161">The financial information for the invoice is based on the information that is entered when you post the invoice.</span></span>
-
-<span data-ttu-id="c1cb8-162">Hvis du vil ha mer informasjon, se [Registrere leverandørfaktura og avstemme mot mottatt antall](../accounts-receivable/tasks/record-vendor-invoice-match-against-received-quantity.md).</span><span class="sxs-lookup"><span data-stu-id="c1cb8-162">For more information, see [Record vendor invoice and match against received quantity](../accounts-receivable/tasks/record-vendor-invoice-match-against-received-quantity.md).</span></span>
-
-## <a name="working-with-multiple-invoices"></a><span data-ttu-id="c1cb8-163">Arbeide med flere fakturaer</span><span class="sxs-lookup"><span data-stu-id="c1cb8-163">Working with multiple invoices</span></span>
-
-<span data-ttu-id="c1cb8-164">Du kan arbeide med flere fakturaer samtidig og postere alle samtidig.</span><span class="sxs-lookup"><span data-stu-id="c1cb8-164">You can work with multiple invoices at the same time and post them all at the same time.</span></span> <span data-ttu-id="c1cb8-165">Hvis du må opprette flere fakturaer, bruker du **Ventende leverandørfakturaer**-siden.</span><span class="sxs-lookup"><span data-stu-id="c1cb8-165">If you must create multiple invoices, use the **Pending vendor invoices** page.</span></span> <span data-ttu-id="c1cb8-166">Hvis du må postere og skrive ut flere leverandørfakturaer, bruker du fakturagodkjenningsjournalsiden.</span><span class="sxs-lookup"><span data-stu-id="c1cb8-166">If you must post and print multiple vendor invoices, use the invoice approval journal page.</span></span> <span data-ttu-id="c1cb8-167">Hvis du bruker fakturagodkjenningsjournalen, må minst én produktkvittering posteres for bestillingen, og en faktura for bestillingen må posteres i en ankomstregistrering.</span><span class="sxs-lookup"><span data-stu-id="c1cb8-167">If you're using the invoice approval journal, at least one product receipt must be posted for the purchase order, and an invoice for the purchase order must be posted in an invoice register.</span></span> <span data-ttu-id="c1cb8-168">Den økonomiske informasjonen for fakturaen kommer fra fakturaen som ble postert i registret.</span><span class="sxs-lookup"><span data-stu-id="c1cb8-168">The financial information for the invoice comes from the invoice that was posted in the register.</span></span>
-
-## <a name="recovering-vendor-invoices-that-are-in-use"></a><span data-ttu-id="c1cb8-169">Gjenopprette leverandørfakturaer som er i bruk</span><span class="sxs-lookup"><span data-stu-id="c1cb8-169">Recovering vendor invoices that are in use</span></span>
-
-<span data-ttu-id="c1cb8-170">Når en leverandørfaktura er i bruk, kan den ikke kan redigeres av en annen bruker.</span><span class="sxs-lookup"><span data-stu-id="c1cb8-170">While a vendor invoice is being used, it can't be edited by another user.</span></span> <span data-ttu-id="c1cb8-171">Imidlertid kan statusen for en faktura noen ganger indikere at fakturaen er i bruk, selv om den ikke redigeres aktivt.</span><span class="sxs-lookup"><span data-stu-id="c1cb8-171">However, the state of an invoice might sometimes indicate that the invoice is in use, even though it isn't being actively edited.</span></span> <span data-ttu-id="c1cb8-172">Programmet kan for eksempel ha sluttet å svare mens fakturaen ble redigert, eller en bruker kan ved en feiltakelse ha latt fakturaen være åpen i programmet.</span><span class="sxs-lookup"><span data-stu-id="c1cb8-172">For example, the application might have stopped responding while the invoice was being edited, or a user might have inadvertently left the invoice open in the application.</span></span>
-
-<span data-ttu-id="c1cb8-173">Du kan bruke siden **Gjenopprett leverandørfakturaer** til å gjenopprette eller frigi leverandørfakturaer som har vært i bruk i mer enn fire timer, slik at de kan redigeres.</span><span class="sxs-lookup"><span data-stu-id="c1cb8-173">You can use the **Recover vendor invoices** page to recover or release vendor invoices that have been in use for more than four hours, so that they can be edited.</span></span> <span data-ttu-id="c1cb8-174">Du kan åpne denne siden fra **Periodisk oppgave**-navigasjonen eller en flis i arbeidsområdet **Leverandørfakturaregistrering**.</span><span class="sxs-lookup"><span data-stu-id="c1cb8-174">You can open this page from the **Periodic task** navigation or a tile on the **Vendor invoice entry** workspace.</span></span> <span data-ttu-id="c1cb8-175">Når en faktura er gjenopprettet, vil den være tilgjengelige for redigering på siden **Leverandørfaktura**.</span><span class="sxs-lookup"><span data-stu-id="c1cb8-175">After an invoice is recovered, it will be available for editing on the **Vendor invoice** page.</span></span>
-
-<span data-ttu-id="c1cb8-176">Du kan få tilgang til siden **Gjenopprett leverandørfakturaer** bare hvis **Gjenopprett leverandørfakturaer i bruk**-sikkerhetsplikten og -rettigheten er tilordnet til deg.</span><span class="sxs-lookup"><span data-stu-id="c1cb8-176">You can access the **Recover vendor invoices** page only if the **Recover vendor invoices in use** security duty and privilege are assigned to you.</span></span> <span data-ttu-id="c1cb8-177">I tillegg må **Tillat gjenoppretting av leverandørfaktura**-parameter på siden **Leverandørparametere** være aktivert.</span><span class="sxs-lookup"><span data-stu-id="c1cb8-177">Additionally, the **Allow vendor invoice recovery** parameter on the **Accounts payable parameters** page must be turned on.</span></span>
-
-## <a name="additional-resources"></a><span data-ttu-id="c1cb8-178">Tilleggsressurser</span><span class="sxs-lookup"><span data-stu-id="c1cb8-178">Additional resources</span></span>
-
- - [<span data-ttu-id="c1cb8-179">Definere leverandørfakturapolicyer</span><span class="sxs-lookup"><span data-stu-id="c1cb8-179">Set up vendor invoice policies</span></span>](../accounts-receivable/tasks/set-up-vendor-invoice-policies.md) 
-
- - [<span data-ttu-id="c1cb8-180">Registrere fakturadata i Leverandører ved hjelp av en leverandørfaktura</span><span class="sxs-lookup"><span data-stu-id="c1cb8-180">Key invoice data into accounts payable using a vendor invoice</span></span>](tasks/key-invoice-data-ap-system-vendor-invoice.md)
-
- - [<span data-ttu-id="c1cb8-181">Registrere fakturadata i Leverandører ved hjelp av en godkjenningsjournal</span><span class="sxs-lookup"><span data-stu-id="c1cb8-181">Key invoice data into accounts payable using an approval journal</span></span>](tasks/key-invoice-data-into-ap-system-approval-journal.md)
-
- - [<span data-ttu-id="c1cb8-182">Registrere fakturadata i AP-systemet ved hjelp av fakturapulje</span><span class="sxs-lookup"><span data-stu-id="c1cb8-182">Key invoice data into the AP system using invoice pool</span></span>](tasks/key-invoice-data-into-ap-system-invoice-pool.md)
-
- - [<span data-ttu-id="c1cb8-183">Registrere en leverandørfaktura i fakturajournalen</span><span class="sxs-lookup"><span data-stu-id="c1cb8-183">Record a vendor invoice in the invoice journal</span></span>](tasks/record-vendor-invoice-invoice-journal.md)
-
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns:logoport="urn:logoport:xliffeditor:xliff-extras:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xliffext="urn:microsoft:content:schema:xliffextensions" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-US" original="vendor-invoices-overview.md" target-language="nb-NO">
+    <header>
+      <tool tool-company="Microsoft" tool-version="1.0-d915bc8" tool-name="mdxliff" tool-id="mdxliff"/>
+      <xliffext:skl_file_name>vendor-invoices-overview.f5fc73.b57c18b5b2cf690111511e4c5a92d51fc23dd68c.skl</xliffext:skl_file_name>
+      <xliffext:version>1.2</xliffext:version>
+      <xliffext:ms.openlocfilehash>b57c18b5b2cf690111511e4c5a92d51fc23dd68c</xliffext:ms.openlocfilehash>
+      <xliffext:ms.sourcegitcommit>901ec3b360303bb8b4d9a9dcfecc6d75d7f844a0</xliffext:ms.sourcegitcommit>
+      <xliffext:ms.lasthandoff>06/05/2019</xliffext:ms.lasthandoff>
+      <xliffext:ms.openlocfilepath>articles\financials\accounts-payable\vendor-invoices-overview.md</xliffext:ms.openlocfilepath>
+    </header>
+    <body>
+      <group extype="content" id="content">
+        <trans-unit xml:space="preserve" translate="yes" id="101" restype="x-metadata">
+          <source>Vendor invoices overview</source>
+        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">Oversikt over leverandørfakturaer</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="102" restype="x-metadata">
+          <source>This topic provides general information about vendor invoices.</source><target logoport:matchpercent="86" state="translated" state-qualifier="fuzzy-match">Dette emnet inneholder generell informasjon om leverandørfakturaer.</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="103" restype="x-metadata">
+          <source>Vendor invoices are requests for payment for products and services that were received.</source>
+        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">Leverandørfakturaer er forespørsler om betaling for produkter og tjenester som er mottatt.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="104" restype="x-metadata">
+          <source>Vendor invoices can represent a bill for ongoing services, or they can be based on purchase orders for specific items and services.</source>
+        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">Leverandørfakturaer kan representere en faktura for pågående tjenester, eller den kan være basert på bestillinger for bestemte varer og tjenester.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="105">
+          <source>Vendor invoices overview</source>
+        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">Oversikt over leverandørfakturaer</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="106">
+          <source>This topic provides general information about vendor invoices.</source>
+        <target logoport:matchpercent="86" state="translated" state-qualifier="leveraged-inherited">Dette emnet inneholder generell informasjon om leverandørfakturaer.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="107">
+          <source>Vendor invoices are requests for payment for products and services that were received.</source>
+        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-inherited">Leverandørfakturaer er forespørsler om betaling for produkter og tjenester som er mottatt.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="108">
+          <source>Vendor invoices can represent a bill for ongoing services, or they can be based on purchase orders for specific items and services.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Leverandørfakturaer kan representere en faktura for pågående tjenester, eller den kan være basert på bestillinger for bestemte varer og tjenester.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="109">
+          <source>Vendor invoices</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Leverandørfakturaer</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="110">
+          <source>A vendor invoice from a purchase order is an invoice that is produced when products or services are received according to a purchase order that was placed with a vendor.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">En leverandørfaktura fra en bestilling er en faktura som lages når produkter eller tjenester er mottatt i henhold til en bestilling som ble plassert hos en leverandør.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="111">
+          <source>The vendor invoice contains a header, and one or more lines for items or services.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Leverandørfakturaen inneholder et hode og én eller flere linjer for varer eller tjenester.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="112">
+          <source>A vendor invoice completes the cycle from purchase order to product receipt to vendor invoice.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">En leverandørfaktura fullfører syklusen fra bestilling til produktkvittering og leverandørfaktura.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="113">
+          <source>Although some vendor invoices are connected to a purchase order, vendor invoices can also contain lines that don't correspond to purchase order lines.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Selv om noen leverandørfakturaer er koblet til en bestilling, kan også leverandørfakturaer inneholde linjer som ikke samsvarer med bestillingslinjer.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="114">
+          <source>You can also create vendor invoices that aren't associated with any purchase order.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Du kan også opprette leverandørfakturaer som ikke er knyttet til noen bestilling.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="115">
+          <source>These vendor invoices might represent ongoing services, such as a utility bill, and you don't have to reference a purchase order when you add them.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Disse leverandørfakturaene kan representere pågående tjenester, for eksempel en strømregning, og du trenger ikke å referere til en bestilling når du legger dem til.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="116">
+          <source>There are several ways to enter a vendor invoice:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Det finnes flere måter å angi en leverandørfaktura:</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="117">
+          <source>The vendor invoice register lets you quickly enter invoices that don't reference a purchase order, so that you can accrue the expense.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">I leverandørfakturaregisteret kan du raskt skrive inn fakturaer som ikke refererer til en bestilling, slik at du kan avsette utgiften.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="118">
+          <source>By using the vendor invoice approval journal, you can select those invoices and post them to the vendor balance to reverse the accrual.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ved hjelp av journalen for godkjenning av leverandørfaktura kan du velge disse fakturaene og postere dem til leverandørsaldoen for å reversere avsetningen.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="119">
+          <source>The vendor invoice journal lets you quickly enter invoices that don't reference a purchase order, in a single step.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">I leverandørfakturajournalen kan du raskt skrive inn fakturaer som ikke refererer til en bestilling, i én operasjon.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="120">
+          <source>Together with the vendor invoice pool, the vendor invoice register lets you quickly enter invoices to accrue the expense.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Leverandørfakturapuljen i kombinasjon med leverandørfakturaregisteret lar deg raskt skrive inn fakturaer for å avsette utgiften.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="121">
+          <source>You can open the associated purchase orders later to post the invoice against the expense account.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Du kan åpne de tilknyttede bestillingene senere for å postere fakturaen mot utgiftskontoen.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="122">
+          <source>The <bpt id="p1">**</bpt>Open vendor invoices<ept id="p1">**</ept> and <bpt id="p2">**</bpt>Pending vendor invoices<ept id="p2">**</ept> pages let you create vendor invoices from confirmed purchase orders.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">På sidene <bpt id="p1">**</bpt>Åpne leverandørfakturaer<ept id="p1">**</ept> og <bpt id="p2">**</bpt>Ventende leverandørfakturaer<ept id="p2">**</ept> kan du opprette leverandørfakturaer fra bekreftede bestillinger.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="123">
+          <source>The following discussion provide more information about how to use the <bpt id="p1">**</bpt>Open vendor invoices<ept id="p1">**</ept> or <bpt id="p2">**</bpt>Pending vendor invoices<ept id="p2">**</ept> page to create a vendor invoice from a purchase order.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Følgende diskusjon inneholder mer informasjon om hvordan du bruker siden <bpt id="p1">**</bpt>Åpne leverandørfakturaer<ept id="p1">**</ept> eller <bpt id="p2">**</bpt>Ventende leverandørfakturaer<ept id="p2">**</ept> til å opprette en leverandørfaktura fra en bestilling.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="124">
+          <source>Understanding invoice line quantities</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Forstå fakturalinjeantall</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="125">
+          <source>When you open a vendor invoice from a related purchase order, invoice lines are created from the purchase order.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Når du åpner en leverandørfaktura fra en tilknyttet bestilling, opprettes fakturalinjer fra bestillingen.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="126">
+          <source>By default, the quantities are taken from the product receipt quantity.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Som standard hentes antallet fra produktkvitteringsantallet.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="127">
+          <source>However, you can use any of the following default behaviors:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Du kan imidlertid bruke et av følgende standardvalg:</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="128">
+          <source><bpt id="p1">**</bpt>Receive now quantity<ept id="p1">**</ept> – Use this option for partial shipments.</source>
+        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Motta nå-antall<ept id="p1">**</ept> – Bruk dette alternativet for delvise leveringer.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="129">
+          <source>The default value in the <bpt id="p1">**</bpt>Quantity<ept id="p1">**</ept> field is taken from the quantity that is specified in the <bpt id="p2">**</bpt>Receive now<ept id="p2">**</ept> field on the purchase order.</source><target logoport:matchpercent="82" state="translated" state-qualifier="fuzzy-match">Standardverdien i feltet <bpt id="p1">**</bpt>Antall<ept id="p1">**</ept> hentes fra antallet som er angitt i <bpt id="p2">**</bpt>Motta nå<ept id="p2">**</ept>-feltet på innkjøpsordren.</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="130">
+          <source><bpt id="p1">**</bpt>Ordered quantity<ept id="p1">**</ept> – Use this option for complete shipments.</source>
+        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Bestilt antall<ept id="p1">**</ept> – Bruk dette alternativet for komplette forsendelser.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="131">
+          <source>The default value in the <bpt id="p1">**</bpt>Quantity<ept id="p1">**</ept> field is taken from the quantity that is specified in the <bpt id="p2">**</bpt>Ordered<ept id="p2">**</ept> field on the purchase order.</source><target logoport:matchpercent="90" state="translated" state-qualifier="fuzzy-match">Standardverdien i feltet <bpt id="p1">**</bpt>Antall<ept id="p1">**</ept> hentes fra antallet som er angitt i <bpt id="p2">**</bpt>Bestilt<ept id="p2">**</ept>-feltet på innkjøpsordren.</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="132">
+          <source><bpt id="p1">**</bpt>Registered quantity<ept id="p1">**</ept> – Use this option if the item requires registration, as specified on the <bpt id="p2">**</bpt>Item model groups<ept id="p2">**</ept> page.</source>
+        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Registrert antall<ept id="p1">**</ept> – Bruk dette alternativet hvis varen krever registrering, som angitt på <bpt id="p2">**</bpt>Varemodellgrupper<ept id="p2">**</ept>-siden.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="133">
+          <source>The default value in the <bpt id="p1">**</bpt>Quantity<ept id="p1">**</ept> field is the physical update quantity that has been registered.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Standardverdien i <bpt id="p1">**</bpt>Antall<ept id="p1">**</ept>-feltet er det fysiske oppdaterte antallet som er registrert.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="134">
+          <source><bpt id="p1">**</bpt>Product receipt quantity<ept id="p1">**</ept> – Use this option if a product receipt has already been received for the order.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Produktkvitteringsantall<ept id="p1">**</ept> – Bruk dette alternativet hvis en produktkvittering allerede er mottatt for ordren.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="135">
+          <source>The default value in the <bpt id="p1">**</bpt>Quantity<ept id="p1">**</ept> field is taken from the total quantity of available product receipts.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Standardverdien i <bpt id="p1">**</bpt>Antall<ept id="p1">**</ept>-feltet er hentet fra totalt antall for tilgjengelige produktkvitteringer.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="136">
+          <source><bpt id="p1">**</bpt>Registered quantity and services<ept id="p1">**</ept> – Use this option if quantities have been registered in arrival journals for stocked items or items that aren't stocked.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Registrerte antall og tjenester<ept id="p1">**</ept> – Bruk dette alternativet hvis antall som er registrert i ankomstjournaler for lagerførte varer eller varer som ikke er på lager.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="137">
+          <source>This option also includes services, regardless of whether they are registered.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Dette alternativet omfatter tjenester også, uavhengig av om de er registrert.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="138">
+          <source>If your legal entity uses invoice matching, you can view the results of the quantity matching in the <bpt id="p1">**</bpt>Product receipt quantity match<ept id="p1">**</ept> column.</source>
+        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">Hvis den juridiske enheten bruker fakturakontroll, kan du vise resultatene av antallssamsvaret i <bpt id="p1">**</bpt>Samsvar i antall i produktkvittering<ept id="p1">**</ept>-kolonnen.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="139">
+          <source>You can also use the <bpt id="p1">**</bpt>Matching details<ept id="p1">**</ept> button on the <bpt id="p2">**</bpt>Review<ept id="p2">**</ept> tab of the Action Pane to view the results of the quantity matching.</source><target logoport:matchpercent="81" state="translated" state-qualifier="fuzzy-match">Du kan også bruke <bpt id="p1">**</bpt>Samsvarende detaljer<ept id="p1">**</ept>-knappen på <bpt id="p2">**</bpt>Gjennomgang<ept id="p2">**</ept>-fanen i handlingsruten for å vise resultatene av antallssamsvaret.</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="140">
+          <source>Adding a line that wasn't on the purchase order</source>
+        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">Legger til en linje som ikke var på bestillingen.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="141">
+          <source>You can add a line that wasn't on the purchase order to the vendor invoice.</source><target logoport:matchpercent="94" state="translated" state-qualifier="fuzzy-match">Du kan legge til en linje som ikke var på bestillingen, i leverandørfakturaen.</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="142">
+          <source>You must select an item number or procurement category.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Du må velge et varenummer eller en innkjøpskategori.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="143">
+          <source>You can then add quantities, prices, and amounts to the line.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Du kan deretter legge til antall, priser og beløp på linjen.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="144">
+          <source>The line will be included only in matching policies for invoice totals.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Linjen inkluderes bare i kontrollpolicyer for fakturatotaler.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="145">
+          <source>Submitting a vendor invoice for review</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Sende en leverandørfaktura til vurdering</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="146">
+          <source>Your organization might use workflows to manage the review process for vendor invoices.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Organisasjonen kan bruke arbeidsflyter til å administrere vurderingsprosessen for leverandørfakturaer.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="147">
+          <source>Workflow review can be required for the invoice header, the invoice line, or both.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Det kan bli nødvendig med arbeidsflytvurdering for fakturahodet, fakturalinjen eller begge.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="148">
+          <source>The workflow controls apply to the header or the line, depending on where the focus is when you select the control.</source><target logoport:matchpercent="94" state="translated" state-qualifier="fuzzy-match">Arbeidsflytkontrollene gjelder for hodet eller linjen, avhengig av hvor fokuset er når du velger kontrollen.</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="149">
+          <source>Instead of the <bpt id="p1">**</bpt>Post<ept id="p1">**</ept> button, you will see a <bpt id="p2">**</bpt>Submit<ept id="p2">**</ept> button that you can use to send the vendor invoice through the review process.</source>
+        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">I stedet for <bpt id="p1">**</bpt>Poster<ept id="p1">**</ept>-knappen vises en <bpt id="p2">**</bpt>Send<ept id="p2">**</ept>-knapp som du kan bruke til å sende leverandørfakturaen gjennom vurderingsprosessen.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="150">
+          <source>Matching vendor invoices to product receipts</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Samsvare leverandørfakturaer med produktkvitteringer</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="151">
+          <source>You can enter and save information for vendor invoices, and you can match invoice lines to product receipt lines.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Du kan angi og lagre informasjon for leverandørfakturaer, og du kan samsvare fakturalinjer med produktkvitteringslinjer.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="152">
+          <source>You can also match partial quantities for a line.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Du kan også samsvare delvist antall for en linje.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="153">
+          <source>You can create a vendor invoice that is based on the product receipt line items that have been received through the current date, even if all the items for a particular purchase order haven't yet been received.</source><target logoport:matchpercent="91" state="translated" state-qualifier="fuzzy-match">Du kan opprette en leverandørfaktura basert på linjeelementene for produktkvittering som er mottatt til gjeldende dato, selv om ikke alle varene i en bestemt bestilling er mottatt ennå.</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="154">
+          <source>For example, you might use this option if a vendor sends one invoice per month to cover all the deliveries that it shipped during that month.</source><target logoport:matchpercent="87" state="translated" state-qualifier="fuzzy-match">Du kan for eksempel bruke dette alternativet hvis en leverandør sender én faktura per måned som dekker alle leveringer som er sendt i løpet av den måneden.</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="155">
+          <source>Each product receipt represents a partial or complete delivery of the items on the purchase order.</source>
+        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">Hver produktkvittering representerer en delvis eller komplett levering av varene i bestillingen.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="156">
+          <source>When you post the invoice, the <bpt id="p1">**</bpt>Invoice remainder<ept id="p1">**</ept> quantity for each item is updated with the total of the received quantities from the selected product receipts.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Når du posterer fakturaen, oppdateres <bpt id="p1">**</bpt>Fakturarest<ept id="p1">**</ept>-antallet for hver vare til totalantallet som er mottatt for de valgte produktkvitteringene.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="157">
+          <source>If both the <bpt id="p1">**</bpt>Invoice remainder<ept id="p1">**</ept> quantity and the <bpt id="p2">**</bpt>Deliver remainder<ept id="p2">**</ept> quantity for all items on the purchase order are 0 (zero), the status of the purchase order is changed to <bpt id="p3">**</bpt>Invoiced<ept id="p3">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Hvis både <bpt id="p1">**</bpt>Fakturarest<ept id="p1">**</ept>-antallet og <bpt id="p2">**</bpt>Gjenstående levering<ept id="p2">**</ept>-antallet for alle varer på bestillingen er 0 (null), endres statusen for bestillingen til <bpt id="p3">**</bpt>Fakturert<ept id="p3">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="158">
+          <source>If the <bpt id="p1">**</bpt>Invoice remainder<ept id="p1">**</ept> quantity isn't 0, the status of the purchase order remains unchanged, and additional invoices can be entered for it.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Hvis <bpt id="p1">**</bpt>Fakturarest<ept id="p1">**</ept>-antallet ikke er 0, endres ikke statusen for bestillingen, og flere fakturaer kan registreres på den.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="159">
+          <source>This option assumes that at least one product receipt has been posted for the purchase order.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Dette alternativet forutsetter at minst én produktkvittering er postert for bestillingen.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="160">
+          <source>The vendor invoice is based on these product receipts and reflects the quantities from them.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Leverandørfakturaen er basert på disse produktkvitteringene og gjenspeiler antallet i dem.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="161">
+          <source>The financial information for the invoice is based on the information that is entered when you post the invoice.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Finansinformasjonen for fakturaen er basert på informasjonen du angir når du posterer fakturaen.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="162">
+          <source>For more information, see <bpt id="p1">[</bpt>Record vendor invoice and match against received quantity<ept id="p1">](../accounts-receivable/tasks/record-vendor-invoice-match-against-received-quantity.md)</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Hvis du vil ha mer informasjon, se <bpt id="p1">[</bpt>Registrere leverandørfaktura og avstemme mot mottatt antall<ept id="p1">](../accounts-receivable/tasks/record-vendor-invoice-match-against-received-quantity.md)</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="163">
+          <source>Working with multiple invoices</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Arbeide med flere fakturaer</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="164">
+          <source>You can work with multiple invoices at the same time and post them all at the same time.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Du kan arbeide med flere fakturaer samtidig og postere alle samtidig.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="165">
+          <source>If you must create multiple invoices, use the <bpt id="p1">**</bpt>Pending vendor invoices<ept id="p1">**</ept> page.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Hvis du må opprette flere fakturaer, bruker du <bpt id="p1">**</bpt>Ventende leverandørfakturaer<ept id="p1">**</ept>-siden.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="166">
+          <source>If you must post and print multiple vendor invoices, use the invoice approval journal.</source><target logoport:matchpercent="94" state="translated" state-qualifier="fuzzy-match">Hvis du må postere og skrive ut flere leverandørfakturaer, bruker du fakturagodkjenningsjournalen.</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="167">
+          <source>If you're using the invoice approval journal, at least one product receipt must be posted for the purchase order, and an invoice for the purchase order must be posted in an invoice register.</source>
+        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">Hvis du bruker fakturagodkjenningsjournalen, må minst én produktkvittering posteres for bestillingen, og en faktura for bestillingen må posteres i en ankomstregistrering.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="168">
+          <source>The financial information for the invoice comes from the invoice that was posted in the register.</source>
+        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">Den økonomiske informasjonen for fakturaen kommer fra fakturaen som ble postert i registret.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="169">
+          <source>Recovering vendor invoices that are being used</source><target logoport:matchpercent="83" state="translated" state-qualifier="x-fuzzy-match-unedited">Gjenopprette leverandørfakturaer som er i bruk</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="170">
+          <source>While a vendor invoice is being used, it can't be edited by another user.</source>
+        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">Når en leverandørfaktura er i bruk, kan den ikke kan redigeres av en annen bruker.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="171">
+          <source>However, the state of an invoice might sometimes indicate that the invoice is being used, even though it isn't being actively edited.</source><target logoport:matchpercent="92" state="translated" state-qualifier="x-fuzzy-match-unedited">Imidlertid kan statusen for en faktura noen ganger indikere at fakturaen er i bruk, selv om den ikke redigeres aktivt.</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="172">
+          <source>For example, the application might have stopped responding while the invoice was being edited, or a user might have inadvertently left the invoice open in the application.</source>
+        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">Programmet kan for eksempel ha sluttet å svare mens fakturaen ble redigert, eller en bruker kan ved en feiltakelse ha latt fakturaen være åpen i programmet.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="173">
+          <source>You can use the <bpt id="p1">**</bpt>Recover vendor invoices<ept id="p1">**</ept> page to recover or release vendor invoices that have been in use for more than four hours, so that they can be edited.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Du kan bruke siden <bpt id="p1">**</bpt>Gjenopprett leverandørfakturaer<ept id="p1">**</ept> til å gjenopprette eller frigi leverandørfakturaer som har vært i bruk i mer enn fire timer, slik at de kan redigeres.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="174">
+          <source>You can open this page from the <bpt id="p1">**</bpt>Periodic task<ept id="p1">**</ept> navigation or a tile on the <bpt id="p2">**</bpt>Vendor invoice entry<ept id="p2">**</ept> workspace.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Du kan åpne denne siden fra <bpt id="p1">**</bpt>Periodisk oppgave<ept id="p1">**</ept>-navigasjonen eller en flis i arbeidsområdet <bpt id="p2">**</bpt>Leverandørfakturaregistrering<ept id="p2">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="175">
+          <source>After an invoice is recovered, it will be available for editing on the <bpt id="p1">**</bpt>Vendor invoice<ept id="p1">**</ept> page.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Når en faktura er gjenopprettet, vil den være tilgjengelige for redigering på siden <bpt id="p1">**</bpt>Leverandørfaktura<ept id="p1">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="176">
+          <source>You can access the <bpt id="p1">**</bpt>Recover vendor invoices<ept id="p1">**</ept> page only if the <bpt id="p2">**</bpt>Recover vendor invoices in use<ept id="p2">**</ept> security duty and privilege are assigned to you.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Du kan få tilgang til siden <bpt id="p1">**</bpt>Gjenopprett leverandørfakturaer<ept id="p1">**</ept> bare hvis <bpt id="p2">**</bpt>Gjenopprett leverandørfakturaer i bruk<ept id="p2">**</ept>-sikkerhetsplikten og -rettigheten er tilordnet til deg.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="177">
+          <source>Additionally, the <bpt id="p1">**</bpt>Allow vendor invoice recovery<ept id="p1">**</ept> parameter on the <bpt id="p2">**</bpt>Accounts payable parameters<ept id="p2">**</ept> page must be turned on.</source>
+        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">I tillegg må <bpt id="p1">**</bpt>Tillat gjenoppretting av leverandørfaktura<ept id="p1">**</ept>-parameter på siden <bpt id="p2">**</bpt>Leverandørparametere<ept id="p2">**</ept> være aktivert.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="178">
+          <source>Resetting the workflow status for vendor invoices from Unrecoverable to Draft</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Tilbakestille arbeidsflytstatusen for leverandørfakturaer fra Uopprettelig til Utkast</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="179">
+          <source>A workflow instance that has stopped because of an unrecoverable error will have a workflow status of <bpt id="p1">**</bpt>Unrecoverable<ept id="p1">**</ept>.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">En arbeidsflytforekomst som er stoppet på grunn av en uopprettelig feil, vil ha arbeidsflytstatusen <bpt id="p1">**</bpt>Uopprettelig<ept id="p1">**</ept>.</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="180">
+          <source>When the status of a vendor invoice workflow is <bpt id="p1">**</bpt>Unrecoverable<ept id="p1">**</ept>, you can reset it to <bpt id="p2">**</bpt>Draft<ept id="p2">**</ept>.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Når statusen til en leverandørfakturaarbeidsflyt er <bpt id="p1">**</bpt>Uopprettelig<ept id="p1">**</ept>, kan du tilbakestille den til <bpt id="p2">**</bpt>Utkast<ept id="p2">**</ept>.</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="181">
+          <source>You can then edit the vendor invoice.</source><target logoport:matchpercent="68" state="translated" state-qualifier="fuzzy-match">Du kan deretter redigere leverandørfakturaen.</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="182">
+          <source>This feature is available if the <bpt id="p1">**</bpt>Reset draft status for the vendor invoice workflow<ept id="p1">**</ept> parameter on the <bpt id="p2">**</bpt>Feature management<ept id="p2">**</ept> page is turned on.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Denne funksjonen er tilgjengelig hvis parameteren <bpt id="p1">**</bpt>Tilbakestill utkaststatus for arbeidsflyt for leverandørfaktura<ept id="p1">**</ept> på siden <bpt id="p2">**</bpt>Funksjonsbehandling<ept id="p2">**</ept> er slått på.</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="183">
+          <source>You can use the <bpt id="p1">**</bpt>Reset vendor invoices workflow status<ept id="p1">**</ept> page to reset the workflow status to <bpt id="p2">**</bpt>Draft<ept id="p2">**</ept>.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Du kan bruke siden <bpt id="p1">**</bpt>Tilbakestill leverandørfakturastatus<ept id="p1">**</ept> for å tilbakestille arbeidsflytstatusen til <bpt id="p2">**</bpt>Utkast<ept id="p2">**</ept>.</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="184">
+          <source>You can open this page from the <bpt id="p1">**</bpt>Periodic task<ept id="p1">**</ept> navigation.</source><target logoport:matchpercent="72" state="translated" state-qualifier="fuzzy-match">Du kan åpne denne siden fra <bpt id="p1">**</bpt>Periodisk oppgave<ept id="p1">**</ept>-navigasjon.</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="185">
+          <source>The page shows all vendor invoices that have a workflow status of <bpt id="p1">**</bpt>Unrecoverable<ept id="p1">**</ept> in the current legal entity.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Siden viser alle leverandørfakturaer som har arbeidsflytstatusen <bpt id="p1">**</bpt>Uopprettelig<ept id="p1">**</ept> i den gjeldende juridiske enheten.</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="186">
+          <source>It also shows the user who submitted each invoice to the workflow and the invoice identifier, and provides a link to the workflow history.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Den viser også brukeren som sendte hver faktura til arbeidsflyten og fakturaidentifikatoren, og gir en kobling til arbeidsflytloggen.</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="187">
+          <source>To reset the workflow status to <bpt id="p1">**</bpt>Draft<ept id="p1">**</ept>, mark one or more invoices, and then select <bpt id="p2">**</bpt>Update to Draft<ept id="p2">**</ept>.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Hvis du vil tilbakestille arbeidsflytstatusen til <bpt id="p1">**</bpt>Utkast<ept id="p1">**</ept>, merker du én eller flere fakturaer, og deretter velger du <bpt id="p2">**</bpt>Oppdater til utkast<ept id="p2">**</ept>.</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="188">
+          <source>After the workflow status is reset to <bpt id="p1">**</bpt>Draft<ept id="p1">**</ept>, it becomes available for editing on the <bpt id="p2">**</bpt>Vendor invoice<ept id="p2">**</ept> page.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Når arbeidsflytstatusen er tilbakestilt til <bpt id="p1">**</bpt>Utkast<ept id="p1">**</ept>, blir den tilgjengelig for redigering på siden <bpt id="p2">**</bpt>Leverandørfaktura<ept id="p2">**</ept>.</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="189">
+          <source>You can access the <bpt id="p1">**</bpt>Reset vendor invoices workflow status<ept id="p1">**</ept> page only if the <bpt id="p2">**</bpt>Maintain the status for vendor invoice workflow<ept id="p2">**</ept> security duty and <bpt id="p3">**</bpt>Reset the status for vendor invoice workflow<ept id="p3">**</ept> privilege are assigned to you.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Du kan bare få tilgang til siden <bpt id="p1">**</bpt>Tilbakestill leverandørfakturastatus<ept id="p1">**</ept> hvis sikkerhetsplikten <bpt id="p2">**</bpt>Oppretthold status for arbeidsflyt for leverandørfaktura<ept id="p2">**</ept> og rettigheten <bpt id="p3">**</bpt>Tilbakestill status for arbeidsflyt for leverandørfaktura<ept id="p3">**</ept> er tilordnet til deg.</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="190">
+          <source>Additional resources</source>
+        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">Tilleggsressurser</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="191">
+          <source><bpt id="p1">[</bpt>Set up vendor invoice policies<ept id="p1">](../accounts-receivable/tasks/set-up-vendor-invoice-policies.md)</ept></source>
+        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Definere leverandørfakturapolicyer<ept id="p1">](../accounts-receivable/tasks/set-up-vendor-invoice-policies.md)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="192">
+          <source><bpt id="p1">[</bpt>Key invoice data into accounts payable using a vendor invoice<ept id="p1">](tasks/key-invoice-data-ap-system-vendor-invoice.md)</ept></source>
+        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Registrere fakturadata i Leverandører ved hjelp av en leverandørfaktura<ept id="p1">](tasks/key-invoice-data-ap-system-vendor-invoice.md)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="193">
+          <source><bpt id="p1">[</bpt>Key invoice data into accounts payable using an approval journal<ept id="p1">](tasks/key-invoice-data-into-ap-system-approval-journal.md)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Registrere fakturadata i Leverandører ved hjelp av en godkjenningsjournal<ept id="p1">](tasks/key-invoice-data-into-ap-system-approval-journal.md)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="194">
+          <source><bpt id="p1">[</bpt>Key invoice data into the AP system using invoice pool<ept id="p1">](tasks/key-invoice-data-into-ap-system-invoice-pool.md)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Registrere fakturadata i AP-systemet ved hjelp av fakturapulje<ept id="p1">](tasks/key-invoice-data-into-ap-system-invoice-pool.md)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="195">
+          <source><bpt id="p1">[</bpt>Record a vendor invoice in the invoice journal<ept id="p1">](tasks/record-vendor-invoice-invoice-journal.md)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Registrere en leverandørfaktura i fakturajournalen<ept id="p1">](tasks/record-vendor-invoice-invoice-journal.md)</ept></target></trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

@@ -1,54 +1,126 @@
----
-title: Nets-importformat
-description: Dette emnet gir informasjon om å importere betalingsinformasjon i Nets-format.
-author: ShylaThompson
-manager: AnnBe
-ms.date: 06/20/2017
-ms.topic: article
-ms.prod: ''
-ms.service: dynamics-ax-applications
-ms.technology: ''
-ms.search.form: BankCustPaymIdTable, CustEInvoiceIntegrationeInvoice, CustEInvoiceIntegrationTypePaymMode, CustEinvoiceIntegrationTypeTable, CustPaymMode, LedgerJournalTransCustPaym
-audience: Application User
-ms.reviewer: shylaw
-ms.search.scope: Core, Operations
-ms.custom: 262704
-ms.search.region: Norway
-ms.author: v-lenest
-ms.search.validFrom: 2016-11-30
-ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: f4449ce6762fa1cf06d35a3ce6486b64bcf017f9
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
-ms.translationtype: HT
-ms.contentlocale: nb-NO
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1538182"
----
-# <a name="nets-import-format"></a><span data-ttu-id="1db55-103">Nets-importformat</span><span class="sxs-lookup"><span data-stu-id="1db55-103">Nets import format</span></span>
-
-[!include [banner](../includes/banner.md)]
-
-<span data-ttu-id="1db55-104">Dette emnet gir informasjon om å importere betalingsinformasjon i Nets-format.</span><span class="sxs-lookup"><span data-stu-id="1db55-104">This topic provides information about importing payment information in the Nets format.</span></span>
-
-<span data-ttu-id="1db55-105">I Microsoft Dynamics 365 for Finance and Operations kan du importere registreringsmeldinger, AvtaleGiro og eFaktura, sammen med betalingsmeldinger, optisk tegngjenkjenning (OCR), AvtaleGiro og eFakturae, i Nets-filformatet.</span><span class="sxs-lookup"><span data-stu-id="1db55-105">In Microsoft Dynamics 365 for Finance and Operations, you can import enrollment messages, AvtaleGiro and eInvoice, together with payment messages, optical character recognition (OCR), AvtaleGiro, and eInvoice, in the Nets file format.</span></span>
-
-## <a name="import-a-nets-bank-file"></a><span data-ttu-id="1db55-106">Importer en Nets-bankfil</span><span class="sxs-lookup"><span data-stu-id="1db55-106">Import a Nets bank file</span></span>
-<span data-ttu-id="1db55-107">Hvis du vil importere en fil fra Nets-banken, kan du fullføre trinnene nedenfor.</span><span class="sxs-lookup"><span data-stu-id="1db55-107">To import the file provided by Nets bank, complete the following steps.</span></span>
-
-1. <span data-ttu-id="1db55-108">Gå til siden **Betalingsjournal**.</span><span class="sxs-lookup"><span data-stu-id="1db55-108">Go to the **Payment journal** page</span></span>
-2. <span data-ttu-id="1db55-109">Klikk **Linjer.**</span><span class="sxs-lookup"><span data-stu-id="1db55-109">Click **Lines.**</span></span>
-3. <span data-ttu-id="1db55-110">Klikk **Funksjoner** &gt; **Importer betalinger**.</span><span class="sxs-lookup"><span data-stu-id="1db55-110">Click **Functions** &gt; **Import payments**.</span></span>
-4. <span data-ttu-id="1db55-111">I dialogboksen velger du betalingsmåten, og blar deretter til plasseringen av filen som skal importeres.</span><span class="sxs-lookup"><span data-stu-id="1db55-111">In the dialog box, select the method of payment, and then browse to the location of the file to import.</span></span> <span data-ttu-id="1db55-112">I den samme dialogboksen må du også angi en **avsender-ID** for å sikre at den riktige filen er valgt for import (00008080-verdi skal angis i dialogboksen for Nets-banken).</span><span class="sxs-lookup"><span data-stu-id="1db55-112">In the same dialog box, you must also specify a **Sender ID** to ensure that the correct file is selected for import (00008080 value should be specified on the dialog for the Nets bank).</span></span> 
-   > [!NOTE]
-   > <span data-ttu-id="1db55-113">Før du kan fullføre dette trinnet, du må allerede ha importert **Nets (No)**-konfigurasjonene fra Lifecycle Services (LCS), og definert Nets-betalingsmåten.</span><span class="sxs-lookup"><span data-stu-id="1db55-113">Before you can complete this step, you must have already imported the **Nets (No)** configurations from Lifecycle Services (LCS) and set up the Nets method of payment.</span></span> <span data-ttu-id="1db55-114">Hvis du vil ha mer informasjon, se [Filformater for betalingsmåter](emea-select-file-formats-for-the-method-of-payments.md).</span><span class="sxs-lookup"><span data-stu-id="1db55-114">For more information, see [File formats for method of payments](emea-select-file-formats-for-the-method-of-payments.md).</span></span>
-
-<span data-ttu-id="1db55-115">Prosessen er den samme for import av registreringsmeldinger fra siden **eFaktura-innmelding og svar**.</span><span class="sxs-lookup"><span data-stu-id="1db55-115">The process is similar for importing enrollment messages from the **eInvoice enrollment and answer** page.</span></span> <span data-ttu-id="1db55-116">Uavhengig av om filen bare har betalingstransaksjoner, bare registreringsmeldinger eller begge deler, vil alt bli importert i én handling.</span><span class="sxs-lookup"><span data-stu-id="1db55-116">Regardless of whether the file has only payment transactions, only enrollment messages, or both, everything will be imported in one action.</span></span>
-
-## <a name="ocr-avtalegiro-and-einvoice-transactions-import"></a><span data-ttu-id="1db55-117">Import av OCR-, AvtaleGiro- og eFaktura-transaksjoner</span><span class="sxs-lookup"><span data-stu-id="1db55-117">OCR, AvtaleGiro, and eInvoice transactions import</span></span>
-<span data-ttu-id="1db55-118">OCR-, Avtalegiro- og eFaktura-transaksjoner må importeres og utlignes basert på betalings-IDen og genereres når fakturaene posteres.</span><span class="sxs-lookup"><span data-stu-id="1db55-118">OCR, Avtalegiro, and eInvoice transactions should be imported and settled based on the payment ID and generated while the invoices are posted.</span></span> <span data-ttu-id="1db55-119">Derfor bør betalingsjournallinjene opprettes og merket for utligning med tilhørende fakturaer.</span><span class="sxs-lookup"><span data-stu-id="1db55-119">As a result, payment journal lines should be created and marked for settlement with corresponding invoices.</span></span> <span data-ttu-id="1db55-120">**Merk**: Transaksjoner som tilsvarer fritekstmeldingskodene, utlignes ikke etter import.</span><span class="sxs-lookup"><span data-stu-id="1db55-120">**Note**: Transactions corresponding to the free text message codes are not settled after import.</span></span> <span data-ttu-id="1db55-121">Du må definere en 16-sifret betalings-ID på **Betalings-ID**-siden, og deretter velge den i **Kundeparametere**.</span><span class="sxs-lookup"><span data-stu-id="1db55-121">You must set up a 16-digit payment ID on the **Payment ID** page, and then select it in **Account receivable parameters**.</span></span> <span data-ttu-id="1db55-122">En betalings-ID er en unik identifikator for kundebetalinger som utlignes elektronisk.</span><span class="sxs-lookup"><span data-stu-id="1db55-122">A payment ID is a unique identifier for customer payments that are settled electronically.</span></span> <span data-ttu-id="1db55-123">Den kan deles inn i ulike deler, for eksempel kundekontonummer, fakturanummer, prefiks, suffiks og ekstern referanse.</span><span class="sxs-lookup"><span data-stu-id="1db55-123">It can be divided into different parts, such as the customer account number, invoice number, prefix, suffix, and external reference.</span></span> <span data-ttu-id="1db55-124">Når du mottar en betaling fra en kunde, identifiserer betalings-IDen betalingstransaksjonen for en salgsfaktura som er mottatt fra en bank.</span><span class="sxs-lookup"><span data-stu-id="1db55-124">When you receive a payment from a customer, the payment ID identifies the payment transaction for a sales invoice that is received from a bank.</span></span>
-
-## <a name="einvoice-and-avtalegiro-enrollment-import"></a><span data-ttu-id="1db55-125">Import av eFaktura- og AvtaleGiro-innmelding</span><span class="sxs-lookup"><span data-stu-id="1db55-125">eInvoice and AvtaleGiro enrollment import</span></span>
-<span data-ttu-id="1db55-126">Du får en melding om å oppdatere standard betalingsverdier for den tilsvarende kundekontoen, angitt i feltene <strong>Betalingsmåte</strong> og <strong>Betalingsspesifikasjon</strong>.</span><span class="sxs-lookup"><span data-stu-id="1db55-126">You receive a message to update payment defaults values for the corresponding customer account, specified in the <strong>Method of payment</strong> and <strong>Payment specification</strong> fields.</span></span> <span data-ttu-id="1db55-127">Dette definerer egenskapene for eksportmeldinger som genereres for denne kundekontoen i fremtiden.</span><span class="sxs-lookup"><span data-stu-id="1db55-127">This defines the characteristics of the export messages, generated for this customer account in the future.</span></span> <span data-ttu-id="1db55-128">Et sett med regler som skal utføres under import av filen, skal angitt på siden <strong>Importer fil og kan defineres på siden Integreringstyper for eFaktura</strong>.</span><span class="sxs-lookup"><span data-stu-id="1db55-128">A set of rules intended to be executed while importing the file should be specified on the <strong>Import file \*\*page and can be defined on the \*\*eInvoice integration types</strong> page.</span></span> <span data-ttu-id="1db55-129">I forskjellige tilfeller kan du bruke forskjellige integreringstyper.</span><span class="sxs-lookup"><span data-stu-id="1db55-129">In different cases, you can apply different integration types.</span></span> <span data-ttu-id="1db55-130">Spesifikke regler skal angis på siden <strong>Endring i betalingsmåte for eFaktura</strong>.</span><span class="sxs-lookup"><span data-stu-id="1db55-130">Specific rules should be specified on the <strong>eInvoice Payment mode change</strong> page.</span></span> <span data-ttu-id="1db55-131">Reglene kan angis basert på meldingen <strong>Status</strong>, for eksempel Aktiv for abonnementsmeldinger, Slettet for abonnementskanselleringer og Advarsel hvis betaleren krever skriftlige varslingsattributter.</span><span class="sxs-lookup"><span data-stu-id="1db55-131">The rules can be specified based on message <strong>Status</strong>, such as Active for subscription messages, Deleted for subscription cancelations, and Warning if the payer requires written notification attributes.</span></span> <span data-ttu-id="1db55-132">Dette krever at betalingsspesifikasjoner defineres for den valgte betalingsmetoden.</span><span class="sxs-lookup"><span data-stu-id="1db55-132">This requires payment specifications to be defined for the selected method of payment.</span></span> <span data-ttu-id="1db55-133">På siden <strong>eFaktura-innmelding og svar</strong> kan du vise importerte eFaktura-meldinger.</span><span class="sxs-lookup"><span data-stu-id="1db55-133">On the <strong>eInvoice enrollment and answer</strong> page, you can view imported eInvoice messages.</span></span> <span data-ttu-id="1db55-134">Du kan generere svarmeldinger for å bekrefte at registreringsmeldinger et mottatt, når registreringer er klare til postering.</span><span class="sxs-lookup"><span data-stu-id="1db55-134">To confirm that enrollment messages are received, you can generate answer messages when enrollments are ready for posting.</span></span> <span data-ttu-id="1db55-135">Poster registreringene for at oppdateringene av kundekonto skal tre i kraft.</span><span class="sxs-lookup"><span data-stu-id="1db55-135">Post the enrollments for the customer account updates to take effect.</span></span> <span data-ttu-id="1db55-136">For AvtaleGiro-meldinger brukes endringer av betalingsmåte under filimporten.</span><span class="sxs-lookup"><span data-stu-id="1db55-136">For AvtaleGiro messages, payment mode changes are applied during the file import process.</span></span>
-
-
-
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns:logoport="urn:logoport:xliffeditor:xliff-extras:1.0" xmlns:tilt="urn:logoport:xliffeditor:tilt-non-translatables:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xliffext="urn:microsoft:content:schema:xliffextensions" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-US" original="emea-nor-nets-import-format.md" target-language="nb-NO">
+    <header>
+      <tool tool-company="Microsoft" tool-version="1.0-7889195" tool-name="mdxliff" tool-id="mdxliff"/>
+      <xliffext:skl_file_name>emea-nor-nets-import-format.b42b46.b6fb40aff3014cd6950dd3fcb93007454df03735.skl</xliffext:skl_file_name>
+      <xliffext:version>1.2</xliffext:version>
+      <xliffext:ms.openlocfilehash>b6fb40aff3014cd6950dd3fcb93007454df03735</xliffext:ms.openlocfilehash>
+      <xliffext:ms.sourcegitcommit>9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b</xliffext:ms.sourcegitcommit>
+      <xliffext:ms.lasthandoff>05/15/2019</xliffext:ms.lasthandoff>
+      <xliffext:ms.openlocfilepath>articles\financials\localizations\emea-nor-nets-import-format.md</xliffext:ms.openlocfilepath>
+    </header>
+    <body>
+      <group extype="content" id="content">
+        <trans-unit xml:space="preserve" translate="yes" id="101" restype="x-metadata">
+          <source>Nets import format</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nets-importformat</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="102" restype="x-metadata">
+          <source>This topic provides information about importing payment information in the Nets format.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Dette emnet gir informasjon om å importere betalingsinformasjon i Nets-format.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="103">
+          <source>Nets import format</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nets-importformat</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="104">
+          <source>This topic provides information about importing payment information in the Nets format.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Dette emnet gir informasjon om å importere betalingsinformasjon i Nets-format.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="105">
+          <source>In Microsoft Dynamics 365 for Finance and Operations, you can import enrollment messages, AvtaleGiro and eInvoice, together with payment messages, optical character recognition (OCR), AvtaleGiro, and eInvoice, in the Nets file format.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">I Microsoft Dynamics 365 for Finance and Operations kan du importere registreringsmeldinger, AvtaleGiro og eFaktura, sammen med betalingsmeldinger, optisk tegngjenkjenning (OCR), AvtaleGiro og eFakturae, i Nets-filformatet.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="106">
+          <source>Import a Nets bank file</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Importer en Nets-bankfil</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="107">
+          <source>To import the file provided by Nets bank, complete the following steps.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Hvis du vil importere en fil fra Nets-banken, kan du fullføre trinnene nedenfor.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="108">
+          <source>Go to the <bpt id="p1">**</bpt>Payment journal<ept id="p1">**</ept> page</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Gå til siden <bpt id="p1">**</bpt>Betalingsjournal<ept id="p1">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="109">
+          <source>Click <bpt id="p1">**</bpt>Lines.<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klikk <bpt id="p1">**</bpt>Linjer.<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="110">
+          <source>Click <bpt id="p1">**</bpt>Functions<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Import payments<ept id="p2">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klikk <bpt id="p1">**</bpt>Funksjoner<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Importer betalinger<ept id="p2">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="111">
+          <source>In the dialog box, select the method of payment, and then browse to the location of the file to import.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">I dialogboksen velger du betalingsmåten, og blar deretter til plasseringen av filen som skal importeres.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="112">
+          <source>In the same dialog box, you must also specify a <bpt id="p1">**</bpt>Sender ID<ept id="p1">**</ept> to ensure that the correct file is selected for import (00008080 value should be specified on the dialog for the Nets bank).</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">I den samme dialogboksen må du også angi en <bpt id="p1">**</bpt>avsender-ID<ept id="p1">**</ept> for å sikre at den riktige filen er valgt for import (00008080-verdi skal angis i dialogboksen for Nets-banken).</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="113">
+          <source>Before you can complete this step, you must have already imported the <bpt id="p1">**</bpt>Nets (No)<ept id="p1">**</ept> configurations from Lifecycle Services (LCS) and set up the Nets method of payment.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Før du kan fullføre dette trinnet, du må allerede ha importert <bpt id="p1">**</bpt>Nets (No)<ept id="p1">**</ept>-konfigurasjonene fra Lifecycle Services (LCS), og definert Nets-betalingsmåten.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="114">
+          <source>For more information, see <bpt id="p1">[</bpt>File formats for method of payments<ept id="p1">](emea-select-file-formats-for-the-method-of-payments.md)</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Hvis du vil ha mer informasjon, se <bpt id="p1">[</bpt>Filformater for betalingsmåter<ept id="p1">](emea-select-file-formats-for-the-method-of-payments.md)</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="115">
+          <source>The process is similar for importing enrollment messages from the <bpt id="p1">**</bpt>eInvoice enrollment and answer<ept id="p1">**</ept> page.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Prosessen er den samme for import av registreringsmeldinger fra siden <bpt id="p1">**</bpt>eFaktura-innmelding og svar<ept id="p1">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="116">
+          <source>Regardless of whether the file has only payment transactions, only enrollment messages, or both, everything will be imported in one action.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Uavhengig av om filen bare har betalingstransaksjoner, bare registreringsmeldinger eller begge deler, vil alt bli importert i én handling.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="117">
+          <source>OCR, AvtaleGiro, and eInvoice transactions import</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Import av OCR-, AvtaleGiro- og eFaktura-transaksjoner</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="118">
+          <source>OCR, Avtalegiro, and eInvoice transactions should be imported and settled based on the payment ID and generated while the invoices are posted.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">OCR-, Avtalegiro- og eFaktura-transaksjoner må importeres og utlignes basert på betalings-IDen og genereres når fakturaene posteres.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="119">
+          <source>As a result, payment journal lines should be created and marked for settlement with corresponding invoices.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Derfor bør betalingsjournallinjene opprettes og merket for utligning med tilhørende fakturaer.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="120">
+          <source><bpt id="p1">**</bpt>Note<ept id="p1">**</ept>: Transactions corresponding to the free text message codes are not settled after import.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Merk<ept id="p1">**</ept>: Transaksjoner som tilsvarer fritekstmeldingskodene, utlignes ikke etter import.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="121">
+          <source>You must set up a 16-digit payment ID on the <bpt id="p1">**</bpt>Payment ID<ept id="p1">**</ept> page, and then select it in <bpt id="p2">**</bpt>Account receivable parameters<ept id="p2">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Du må definere en 16-sifret betalings-ID på <bpt id="p1">**</bpt>Betalings-ID<ept id="p1">**</ept>-siden, og deretter velge den i <bpt id="p2">**</bpt>Kundeparametere<ept id="p2">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="122">
+          <source>A payment ID is a unique identifier for customer payments that are settled electronically.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">En betalings-ID er en unik identifikator for kundebetalinger som utlignes elektronisk.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="123">
+          <source>It can be divided into different parts, such as the customer account number, invoice number, prefix, suffix, and external reference.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Den kan deles inn i ulike deler, for eksempel kundekontonummer, fakturanummer, prefiks, suffiks og ekstern referanse.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="124">
+          <source>When you receive a payment from a customer, the payment ID identifies the payment transaction for a sales invoice that is received from a bank.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Når du mottar en betaling fra en kunde, identifiserer betalings-IDen betalingstransaksjonen for en salgsfaktura som er mottatt fra en bank.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="125">
+          <source>eInvoice and AvtaleGiro enrollment import</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Import av eFaktura- og AvtaleGiro-innmelding</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="126">
+          <source>You receive a message to update payment defaults values for the corresponding customer account, specified in the <bpt id="p1">&lt;strong&gt;</bpt>Method of payment<ept id="p1">&lt;/strong&gt;</ept> and <bpt id="p2">&lt;strong&gt;</bpt>Payment specification<ept id="p2">&lt;/strong&gt;</ept> fields.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Du får en melding om å oppdatere standard betalingsverdier for den tilsvarende kundekontoen, angitt i feltene <bpt id="p1">&lt;strong&gt;</bpt>Betalingsmåte<ept id="p1">&lt;/strong&gt;</ept> og <bpt id="p2">&lt;strong&gt;</bpt>Betalingsspesifikasjon<ept id="p2">&lt;/strong&gt;</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="127">
+          <source>This defines the characteristics of the export messages, generated for this customer account in the future.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Dette definerer egenskapene for eksportmeldinger som genereres for denne kundekontoen i fremtiden.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="128">
+          <source>A set of rules intended to be executed while importing the file should be specified on the <bpt id="p1">&lt;strong&gt;</bpt>Import file **page and can be defined on the **eInvoice integration types<ept id="p1">&lt;/strong&gt;</ept> page.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Et sett med regler som skal utføres under import av filen, skal angitt på siden <bpt id="p1">&lt;strong&gt;</bpt>Importer fil og kan defineres på siden Integreringstyper for eFaktura<ept id="p1">&lt;/strong&gt;</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="129">
+          <source>In different cases, you can apply different integration types.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">I forskjellige tilfeller kan du bruke forskjellige integreringstyper.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="130">
+          <source>Specific rules should be specified on the <bpt id="p1">&lt;strong&gt;</bpt>eInvoice Payment mode change<ept id="p1">&lt;/strong&gt;</ept> page.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Spesifikke regler skal angis på siden <bpt id="p1">&lt;strong&gt;</bpt>Endring i betalingsmåte for eFaktura<ept id="p1">&lt;/strong&gt;</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="131">
+          <source>The rules can be specified based on message <bpt id="p1">&lt;strong&gt;</bpt>Status<ept id="p1">&lt;/strong&gt;</ept>, such as Active for subscription messages, Deleted for subscription cancelations, and Warning if the payer requires written notification attributes.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Reglene kan angis basert på meldingen <bpt id="p1">&lt;strong&gt;</bpt>Status<ept id="p1">&lt;/strong&gt;</ept>, for eksempel Aktiv for abonnementsmeldinger, Slettet for abonnementskanselleringer og Advarsel hvis betaleren krever skriftlige varslingsattributter.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="132">
+          <source>This requires payment specifications to be defined for the selected method of payment.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Dette krever at betalingsspesifikasjoner defineres for den valgte betalingsmetoden.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="133">
+          <source>On the <bpt id="p1">&lt;strong&gt;</bpt>eInvoice enrollment and answer<ept id="p1">&lt;/strong&gt;</ept> page, you can view imported eInvoice messages.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">På siden <bpt id="p1">&lt;strong&gt;</bpt>eFaktura-innmelding og svar<ept id="p1">&lt;/strong&gt;</ept> kan du vise importerte eFaktura-meldinger.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="134">
+          <source>To confirm that enrollment messages are received, you can generate answer messages when enrollments are ready for posting.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Du kan generere svarmeldinger for å bekrefte at registreringsmeldinger et mottatt, når registreringer er klare til postering.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="135">
+          <source>Post the enrollments for the customer account updates to take effect.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Poster registreringene for at oppdateringene av kundekonto skal tre i kraft.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="136">
+          <source>For AvtaleGiro messages, payment mode changes are applied during the file import process.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">For AvtaleGiro-meldinger brukes endringer av betalingsmåte under filimporten.</target></trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

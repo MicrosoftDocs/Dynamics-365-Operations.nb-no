@@ -1,90 +1,249 @@
----
-title: Bankrevaluering av utenlandsk valuta
-description: Dette emnet gir en oversikt over prosessen for bankrevaluering av utenlandsk valuta. Det inneholder informasjon om oppsettet, kjøring av prosessen, beregning av prosessen og tilbakeføring av revalueringstransaksjoner.
-author: mikefalkner
-manager: AnnBe
-ms.date: 04/16/2019
-ms.topic: article
-ms.prod: ''
-ms.service: dynamics-ax-applications
-ms.technology: ''
-ms.search.form: BankCurrencyRevalHistory
-audience: Application User
-ms.reviewer: shylaw
-ms.search.scope: Core, Operations
-ms.search.region: Global
-ms.author: mikefalkner
-ms.search.validFrom: 2019-03-08
-ms.dyn365.ops.version: 10
-ms.openlocfilehash: 4ec9814a4a35a1b3ba7ba05a04b53e5b150f4a04
-ms.sourcegitcommit: be447fc81bc874982bc0185fcb4d87d99bd742c5
-ms.translationtype: HT
-ms.contentlocale: nb-NO
-ms.lasthandoff: 05/08/2019
-ms.locfileid: "1538638"
----
-# <a name="bank-foreign-currency-revaluation"></a><span data-ttu-id="8b0ba-104">Bankrevaluering av utenlandsk valuta</span><span class="sxs-lookup"><span data-stu-id="8b0ba-104">Bank foreign currency revaluation</span></span>
-
-[!include [banner](../includes/banner.md)]
-[!include [preview-banner](../includes/preview-banner.md)]
-
-<span data-ttu-id="8b0ba-105">Dette emnet gir en oversikt over prosessen for bankrevaluering av utenlandsk valuta.</span><span class="sxs-lookup"><span data-stu-id="8b0ba-105">This topic provides an overview of the process of bank foreign currency revaluation.</span></span> <span data-ttu-id="8b0ba-106">Den forklarer hvordan du kan definere og kjøre prosessen og gir informasjon om beregning av prosessen.</span><span class="sxs-lookup"><span data-stu-id="8b0ba-106">It explains how to set up and run the process, and provides information about the calculation for the process.</span></span> <span data-ttu-id="8b0ba-107">Det forklarer også hvordan du tilbakefører revalueringstransaksjoner, hvis tilbakeføring kreves.</span><span class="sxs-lookup"><span data-stu-id="8b0ba-107">It also explains how to reverse revaluation transactions, if reversal is required.</span></span>
-
-<span data-ttu-id="8b0ba-108">Som en del av en periodeslutt krever regnskapskonvensjoner at bankkontosaldi i utenlandsk valuta revalueres ved å bruke ulike valutakurstyper (gjeldende, historisk, gjennomsnitt, osv.).</span><span class="sxs-lookup"><span data-stu-id="8b0ba-108">As part of a period end, accounting conventions require that bank account balances in foreign currencies be revalued by using different exchange rate types (current, historical, average, and so on).</span></span> <span data-ttu-id="8b0ba-109">Funksjonen for bankrevaluering av utenlandsk valuta kan brukes til å revaluere én eller flere bankkontoer.</span><span class="sxs-lookup"><span data-stu-id="8b0ba-109">The bank foreign currency revaluation feature can be used to revalue one or more bank accounts.</span></span> <span data-ttu-id="8b0ba-110">Funksjonen er også en global funksjon.</span><span class="sxs-lookup"><span data-stu-id="8b0ba-110">The feature is also a global feature.</span></span> <span data-ttu-id="8b0ba-111">Fra én side kan du derfor revaluere banker på tvers av alle de juridiske enhetene som du har tilgang til.</span><span class="sxs-lookup"><span data-stu-id="8b0ba-111">Therefore, from a single page, you can revalue banks across all the legal entities that you have access to.</span></span>
-
-> [!NOTE]
-> <span data-ttu-id="8b0ba-112">Når du kjører revalueringsprosessen, blir saldoen i hver bankkonto som er postert i utenlandsk valuta, revaluert.</span><span class="sxs-lookup"><span data-stu-id="8b0ba-112">When you run the revaluation process, the balance in each bank account that is posted in a foreign currency will be revalued.</span></span> <span data-ttu-id="8b0ba-113">Transaksjonene for urealisert fortjeneste eller tap som opprettes under revalueringsprosessen, genereres av systemet.</span><span class="sxs-lookup"><span data-stu-id="8b0ba-113">The unrealized gain or loss transactions that are created during the revaluation process are system-generated.</span></span> <span data-ttu-id="8b0ba-114">To transaksjoner kan opprettes, én for regnskapsvalutaen og én for rapporteringsvalutaen, hvis rapporteringsvaluta er relevant.</span><span class="sxs-lookup"><span data-stu-id="8b0ba-114">Two transactions might be created, one for the accounting currency and one for the reporting currency, if a reporting currency is relevant.</span></span> <span data-ttu-id="8b0ba-115">Hver regnskapspost posteres til den urealiserte fortjenesten eller tapet og hovedkontoen som revalueres.</span><span class="sxs-lookup"><span data-stu-id="8b0ba-115">Each accounting entry will be posted to the unrealized gain or loss and the main account that is being revalued.</span></span>
-
-## <a name="prepare-to-run-foreign-currency-revaluation"></a><span data-ttu-id="8b0ba-116">Klargjøre for kjøring av revaluering av utenlandsk valuta</span><span class="sxs-lookup"><span data-stu-id="8b0ba-116">Prepare to run foreign currency revaluation</span></span>
-
-<span data-ttu-id="8b0ba-117">Følgende oppsett kreves før du kan kjøre revalueringprosessen.</span><span class="sxs-lookup"><span data-stu-id="8b0ba-117">Before you run the revaluation process, the following setup is required.</span></span>
-
-- <span data-ttu-id="8b0ba-118">Angi valutakurs på **Finans**-siden.</span><span class="sxs-lookup"><span data-stu-id="8b0ba-118">On the **Ledger** page, specify the exchange rate type.</span></span> <span data-ttu-id="8b0ba-119">Hvis en valutakurstype ikke er definert for hovedkontoen, brukes denne valutakurstypen under revaluering av utenlandsk valuta.</span><span class="sxs-lookup"><span data-stu-id="8b0ba-119">If an exchange rate type isn't defined on the main account, this exchange rate type is used during foreign currency revaluation.</span></span>
-- <span data-ttu-id="8b0ba-120">På **Finans**-siden angir du kontoene for realisert fortjeneste, realisert tap, urealisert fortjeneste og urealisert tap, for revaluering av valuta.</span><span class="sxs-lookup"><span data-stu-id="8b0ba-120">On the **Ledger** page, specify the realized gain, realized loss, unrealized gain, and unrealized loss accounts for currency revaluation.</span></span> <span data-ttu-id="8b0ba-121">Realisert fortjeneste- og realisert tap-kontoer brukes når kunde- og leverandørtransaksjoner utlignes.</span><span class="sxs-lookup"><span data-stu-id="8b0ba-121">Realized gain and realized loss accounts are used when Accounts receivable and Accounts payable transactions are settled.</span></span> <span data-ttu-id="8b0ba-122">Urealisert fortjeneste- og urealisert tap-kontoer brukes til å revaluere åpne transaksjoner og hovedkontoer for økonomimodul.</span><span class="sxs-lookup"><span data-stu-id="8b0ba-122">Unrealized gain and unrealized loss accounts are used to revalue open transactions and general ledger main accounts.</span></span>
-- <span data-ttu-id="8b0ba-123">På siden **Kontoer for revaluering av valuta** velger du andre kontoer for revaluering av valuta for hver valuta og firma.</span><span class="sxs-lookup"><span data-stu-id="8b0ba-123">On the **Currency revaluation accounts** page, select different currency revaluation accounts for each currency and company.</span></span> <span data-ttu-id="8b0ba-124">Hvis ingen kontoer er definert, brukes kontoene fra **Finans**-siden.</span><span class="sxs-lookup"><span data-stu-id="8b0ba-124">If no accounts are defined, the accounts from the **Ledger** page are used.</span></span>
-
-## <a name="enable-foreign-currency-revaluation"></a><span data-ttu-id="8b0ba-125">Aktivere revaluering av utenlandsk valuta</span><span class="sxs-lookup"><span data-stu-id="8b0ba-125">Enable foreign currency revaluation</span></span>
-
-<span data-ttu-id="8b0ba-126">Du må aktivere funksjonen for bankrevaluering av utenlandsk valuta før du kan behandle revaluering av utenlandsk valuta.</span><span class="sxs-lookup"><span data-stu-id="8b0ba-126">You must turn on the bank foreign currency revaluation feature before you can process foreign currency revaluations.</span></span>
-
-1. <span data-ttu-id="8b0ba-127">Gå til **Kontant- og bankbehandling \> Oppsett \> Parametere for kontant- og bankbehandling**.</span><span class="sxs-lookup"><span data-stu-id="8b0ba-127">Go to **Cash and bank management \> Setup \> Cash and bank management parameters**.</span></span>
-2. <span data-ttu-id="8b0ba-128">På **Generelt**-fanen under **Revaluering av utenlandsk valuta** setter du **Aktiver bankrevaluering**-alternativet til **Ja** for å aktivere funksjonen for gjeldende juridiske enhet.</span><span class="sxs-lookup"><span data-stu-id="8b0ba-128">On the **General** tab, under **Foreign currency revaluation**, set the **Enable bank revaluation** option to **Yes** to turn on the feature for the current legal entity.</span></span> 
-3. <span data-ttu-id="8b0ba-129">I kategorien **Nummerserier** legger du til en nummerserie for revaluering av utenlandsk valuta.</span><span class="sxs-lookup"><span data-stu-id="8b0ba-129">On the **Number sequences** tab, add a number sequence for foreign currency revaluation.</span></span>
-4. <span data-ttu-id="8b0ba-130">Oppdater leseren for å se **Revaluering av utenlandsk valuta** i **Periodiske oppgaver**-delen på områdesiden.</span><span class="sxs-lookup"><span data-stu-id="8b0ba-130">Refresh the browser to see **Foreign currency revaluation** in the **Periodic tasks** section of the area page.</span></span>
-
-<span data-ttu-id="8b0ba-131">Du må aktivere funksjonen for hver juridiske enhet som bruker revaluering av utenlandsk valuta.</span><span class="sxs-lookup"><span data-stu-id="8b0ba-131">You must turn on the feature for every legal entity that will use foreign currency revaluation.</span></span> <span data-ttu-id="8b0ba-132">Hvis du er tilordnet rollen som systemansvarlig eller funksjonsleder, kan du eliminere dette trinnet ved å aktivere funksjonen med navnet **Aktiver bankrevaluering uten en parameter** i arbeidsområdet **Funksjonsbehandling**.</span><span class="sxs-lookup"><span data-stu-id="8b0ba-132">If you are assigned to the System Administrator role or Feature Manager role, you can eliminate this step by enabling the feature named **Enable bank revaluation without a parameter** in the **Feature management** workspace.</span></span>
-
-> [!NOTE]
-> <span data-ttu-id="8b0ba-133">Hvis den juridiske enheten bruker en russisk, polsk eller ungarsk lands-/områdekode, kan du allerede gjøre bankrevalueringen av utenlandsk valuta.</span><span class="sxs-lookup"><span data-stu-id="8b0ba-133">If your legal entity uses a Russian, Polish, or Hungarian country/region code, you can already do bank foreign currency revaluation.</span></span> <span data-ttu-id="8b0ba-134">Du kan ikke bruke revaluering av utenlandsk valuta som brukes av andre land eller regioner.</span><span class="sxs-lookup"><span data-stu-id="8b0ba-134">You won't be able to use the foreign currency revaluation that is used by other countries or regions.</span></span>
-
-## <a name="process-foreign-currency-revaluation"></a><span data-ttu-id="8b0ba-135">Behandle en revaluering av utenlandsk valuta</span><span class="sxs-lookup"><span data-stu-id="8b0ba-135">Process foreign currency revaluation</span></span>
-
-<span data-ttu-id="8b0ba-136">Når installasjonen er fullført, kan du bruke siden **Revaluering av utenlandsk valuta** i Kontant- og bankbehandling til å revaluere saldoene for én eller flere bankkontoer på tvers av alle juridiske enheter.</span><span class="sxs-lookup"><span data-stu-id="8b0ba-136">After the setup is completed, use the **Foreign currency revaluation** page in Cash and bank management to revalue the balances of one or more bank accounts across all legal entities.</span></span> <span data-ttu-id="8b0ba-137">Du kan kjøre prosessen i sanntid, eller du kan planlegge å kjøre den ved hjelp av en satsvis jobb.</span><span class="sxs-lookup"><span data-stu-id="8b0ba-137">You can run the process in real time, or you can schedule it to run by using a batch.</span></span>
-
-<span data-ttu-id="8b0ba-138">Siden **Revaluering av utenlandsk valuta** viser historikken for hver revalueringsprosess.</span><span class="sxs-lookup"><span data-stu-id="8b0ba-138">The **Foreign currency revaluation** page shows the history of each revaluation process.</span></span> <span data-ttu-id="8b0ba-139">Den viser når prosessen ble kjørt, og hvilke vilkår som ble definert, og inneholder en kobling til bilaget som ble opprettet for revalueringen.</span><span class="sxs-lookup"><span data-stu-id="8b0ba-139">It shows when the process was run and what criteria were defined, and provides a link to the voucher that was created for the revaluation.</span></span> <span data-ttu-id="8b0ba-140">Den viser også om en tidligere revaluering ble tilbakeført.</span><span class="sxs-lookup"><span data-stu-id="8b0ba-140">It also shows whether a previous revaluation was reversed.</span></span> <span data-ttu-id="8b0ba-141">Hvis du vil kjøre prosessen for revaluering, velger du **Revaluering av utenlandsk valuta** i handlingsruten for å åpne **Bankrevaluering av utenlandsk valuta**-dialogboksen.</span><span class="sxs-lookup"><span data-stu-id="8b0ba-141">To run the revaluation process, select **Foreign currency revaluation** on the Action Pane to open the **Bank - foreign currency revaluation** dialog box.</span></span>
-
-<span data-ttu-id="8b0ba-142">Feltet **Revalueringsdato** angir fristen for å beregne saldo for utenlandsk valuta som skal revalueres.</span><span class="sxs-lookup"><span data-stu-id="8b0ba-142">The **Revaluation date** field defines the cutoff date for calculating the foreign currency balance that will be revalued.</span></span> <span data-ttu-id="8b0ba-143">Summen av alle banktransaksjoner som inntraff til og med denne datoen, revalueres.</span><span class="sxs-lookup"><span data-stu-id="8b0ba-143">The sum of all bank transactions that occurred up through this date is revalued.</span></span>
-
-<span data-ttu-id="8b0ba-144">Feltet **Valutakursdato** angir datoen for valutakursen som skal brukes til å revaluere valutabalansene.</span><span class="sxs-lookup"><span data-stu-id="8b0ba-144">The **Exchange rate date** field defines the date of the exchange rate that will be used to revalue the currency balances.</span></span> <span data-ttu-id="8b0ba-145">Du kan for eksempel revaluere saldoene fra og med 31. januar, men bruke valutakursen som er definert for 1. februar.</span><span class="sxs-lookup"><span data-stu-id="8b0ba-145">For example, you can revalue the balances as of January 31 but use the exchange rate that is defined for February 1.</span></span>
-
-<span data-ttu-id="8b0ba-146">Revalueringsprosessen kan kjøres for én eller flere juridiske enheter.</span><span class="sxs-lookup"><span data-stu-id="8b0ba-146">The revaluation process can be run for one or more legal entities.</span></span> <span data-ttu-id="8b0ba-147">Oppslaget viser bare de juridiske enhetene som du har tilgang til.</span><span class="sxs-lookup"><span data-stu-id="8b0ba-147">The lookup shows only the legal entities that you have access to.</span></span> <span data-ttu-id="8b0ba-148">Velg de juridiske enhetene som du vil velge bankkontoene for, som er kvalifisert for revaluering av utenlandsk valuta.</span><span class="sxs-lookup"><span data-stu-id="8b0ba-148">Select the legal entities for which you want to select the bank accounts that are eligible for foreign currency revaluation.</span></span> <span data-ttu-id="8b0ba-149">Alle bankkontoer for disse juridiske enhetene vises i rutenettet.</span><span class="sxs-lookup"><span data-stu-id="8b0ba-149">All the bank accounts for those legal entities will be shown in the grid.</span></span>
-
-<span data-ttu-id="8b0ba-150">Sett alternativet **Forhåndsvis for postering** til **Ja** hvis du vil se resultatene av revalueringen før du posterer den.</span><span class="sxs-lookup"><span data-stu-id="8b0ba-150">Set the **Preview before posting** option to **Yes** if you want to review the results of the revaluation before you post it.</span></span> <span data-ttu-id="8b0ba-151">Revalueringen av utenlandsk valuta er en forhåndsvisning som kan posteres.</span><span class="sxs-lookup"><span data-stu-id="8b0ba-151">The foreign currency revaluation has a preview that can be posted.</span></span> <span data-ttu-id="8b0ba-152">Du trenger ikke kjøre revalueringsprosessen på nytt.</span><span class="sxs-lookup"><span data-stu-id="8b0ba-152">You don't have to run the revaluation process again.</span></span> <span data-ttu-id="8b0ba-153">Du kan eksportere resultatet i forhåndsvisningen til Microsoft Excel for å føre historikken over hvordan beløpene ble beregnet.</span><span class="sxs-lookup"><span data-stu-id="8b0ba-153">You can export the results in the preview to Microsoft Excel to keep a history of how the amounts were calculated.</span></span> <span data-ttu-id="8b0ba-154">Du kan ikke bruke satsvis behandling hvis du vil forhåndsvise resultatet av revalueringen.</span><span class="sxs-lookup"><span data-stu-id="8b0ba-154">You can't use batch processing if you want to preview the results of the revaluation.</span></span>
-
-<span data-ttu-id="8b0ba-155">Velg **OK** for å behandle revaluering av utenlandsk valuta.</span><span class="sxs-lookup"><span data-stu-id="8b0ba-155">Select **OK** to process the foreign currency revaluation.</span></span> <span data-ttu-id="8b0ba-156">Det opprettes en post for å spore loggen for hver kjøring.</span><span class="sxs-lookup"><span data-stu-id="8b0ba-156">A record is created to track the history of each run.</span></span> <span data-ttu-id="8b0ba-157">En separat oppføring opprettes for hver juridiske enhet og hvert posteringslag.</span><span class="sxs-lookup"><span data-stu-id="8b0ba-157">A separate record is created for each legal entity and posting layer.</span></span>
-
-## <a name="calculate-unrealized-gainloss"></a><span data-ttu-id="8b0ba-158">Beregne urealisert tap/fortjeneste</span><span class="sxs-lookup"><span data-stu-id="8b0ba-158">Calculate unrealized gain/loss</span></span>
-
-<span data-ttu-id="8b0ba-159">I Kontant- og bankbehandling anses bankvalutaen for å være basisvalutaen, og den revalueres ikke.</span><span class="sxs-lookup"><span data-stu-id="8b0ba-159">In Cash and bank management, the bank currency is considered to be the base currency and it is not revalued.</span></span> <span data-ttu-id="8b0ba-160">Saldoen for bankkontoen i regnskapsvalutaen revalueres ved hjelp av valutakursen mellom bankvalutaen og regnskapsvalutaen på **Valutakursdato**.</span><span class="sxs-lookup"><span data-stu-id="8b0ba-160">The balance of the bank account in the accounting currency is revalued using the exchange rates between the bank currency and the accounting currency on the **Exchange rate date**.</span></span> <span data-ttu-id="8b0ba-161">Saldoen for bankkontoen i rapporteringsvalutaen revalueres også ved hjelp av valutakursen mellom bankvalutaen og rapporteringsvalutaen på **Valutakursdato**.</span><span class="sxs-lookup"><span data-stu-id="8b0ba-161">The balance of the bank account in the reporting currency is also revalued using the exchange rates between the bank currency and the reporting currency on the **Exchange rate date**.</span></span>
-
-<span data-ttu-id="8b0ba-162">Det opprettes en transaksjon for forskjellen mellom saldoen på bankkontoen og den nye saldoen som beregnes for regnskapsvalutaen.</span><span class="sxs-lookup"><span data-stu-id="8b0ba-162">A transaction is created for the difference between the balance of the bank account and the new balance that is calculated for the accounting currency.</span></span> <span data-ttu-id="8b0ba-163">En annen transaksjon opprettes for forskjellen mellom saldoen på bankkontoen og den nye saldoen som beregnes for rapporteringsvalutaen.</span><span class="sxs-lookup"><span data-stu-id="8b0ba-163">Another transaction is created for the difference between the balance of the bank account and the new balance that is calculated for the reporting currency.</span></span> <span data-ttu-id="8b0ba-164">Postene for disse transaksjonene er merket som avstemt.</span><span class="sxs-lookup"><span data-stu-id="8b0ba-164">The entries for these transactions are marked as reconciled.</span></span> 
-
-<span data-ttu-id="8b0ba-165">Ingen oppføring gjøres for regnskapsvalutaen hvis bankvalutaen samsvarer med regnskapsvalutaen.</span><span class="sxs-lookup"><span data-stu-id="8b0ba-165">No entry is made for the accounting currency if the bank currency matches the accounting currency.</span></span> <span data-ttu-id="8b0ba-166">På samme måte gjøres det ingen oppføring for rapporteringsvalutaen hvis bankvalutaen samsvarer med rapporteringsvalutaen.</span><span class="sxs-lookup"><span data-stu-id="8b0ba-166">Likewise, no entry is made for the reporting currency if the bank currency matches the reporting currency.</span></span>
-
-<span data-ttu-id="8b0ba-167">Transaksjonen for revaluering av utenlandsk valuta er også delt på tvers av dimensjonene som finnes på banktransaksjonene.</span><span class="sxs-lookup"><span data-stu-id="8b0ba-167">The foreign currency revaluation transaction is also split across the dimensions that are found on the bank transactions.</span></span> <span data-ttu-id="8b0ba-168">Delingen er basert på saldoen for hver dimensjon.</span><span class="sxs-lookup"><span data-stu-id="8b0ba-168">The split is based on the balance for each dimension.</span></span> <span data-ttu-id="8b0ba-169">For eksempel er den totale banksaldoen 10 000, men saldoen for forretningsenhet 001 er 4 000, mens saldoen for forretningsenhet 002 er 6 000.</span><span class="sxs-lookup"><span data-stu-id="8b0ba-169">For example, the total bank balance is 10,000, but the balance for business unit 001 is 4,000, whereas the balance for business unit 002 is 6,000.</span></span> <span data-ttu-id="8b0ba-170">I dette tilfellet posteres 40 prosent av revalueringsbeløpet til revalueringskontoen som har forretningsenhet 001, og 60 prosent posteres til revalueringskontoen som har forretningsenhet 002.</span><span class="sxs-lookup"><span data-stu-id="8b0ba-170">In this case, 40 percent of the revaluation amount is posted to the revaluation account that has business unit 001, and 60 percent is posted to the revaluation account that has business unit 002.</span></span> <span data-ttu-id="8b0ba-171">Hvis kontostrukturen ikke inkluderer en forretningsenhet, posteres hele beløpet til revalueringskontoen.</span><span class="sxs-lookup"><span data-stu-id="8b0ba-171">If the account structure doesn't include a business unit, the full amount is posted to the revaluation account.</span></span>
-
-## <a name="reverse-foreign-currency-revaluation"></a><span data-ttu-id="8b0ba-172">Tilbakefør revaluering av utenlandsk valuta</span><span class="sxs-lookup"><span data-stu-id="8b0ba-172">Reverse foreign currency revaluation</span></span>
-
-<span data-ttu-id="8b0ba-173">Hvis du må tilbakeføre revalueringstransaksjonen, velger du **Tilbakefør transaksjon** på handlingssiden på siden **Revaluering av utenlandsk valuta**.</span><span class="sxs-lookup"><span data-stu-id="8b0ba-173">If you must reverse the revaluation transaction, select **Reverse transaction** on the Action Pane of the **Foreign currency revaluation** page.</span></span> <span data-ttu-id="8b0ba-174">Det opprettes en ny historisk post for revaluering av utenlandsk valuta for å beholde det historiske revisjonssporet for når revalueringen skjedde eller ble tilbakeført.</span><span class="sxs-lookup"><span data-stu-id="8b0ba-174">A new foreign currency revaluation historical record is created to maintain the historical audit trail of when the revaluation occurred or was reversed.</span></span>
-
-<span data-ttu-id="8b0ba-175">Hvis du vil reversere flere revalueringer, må du tilbakeføre den nyeste revalueringen først.</span><span class="sxs-lookup"><span data-stu-id="8b0ba-175">To reverse several revaluations, you must reverse the most current revaluation first.</span></span> <span data-ttu-id="8b0ba-176">Deretter fortsetter du å tilbakeføre eldre revalueringer i datorekkefølgen.</span><span class="sxs-lookup"><span data-stu-id="8b0ba-176">Then continue to reverse older revaluations in date order.</span></span> <span data-ttu-id="8b0ba-177">Du kan deretter behandle nye revalueringer for periodene som du tilbakeførte.</span><span class="sxs-lookup"><span data-stu-id="8b0ba-177">You can then process new revaluations for the periods that you reversed.</span></span>
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns:logoport="urn:logoport:xliffeditor:xliff-extras:1.0" xmlns:tilt="urn:logoport:xliffeditor:tilt-non-translatables:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xliffext="urn:microsoft:content:schema:xliffextensions" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-US" original="bank-revaluation.md" target-language="nb-NO">
+    <header>
+      <tool tool-company="Microsoft" tool-version="1.0-7889195" tool-name="mdxliff" tool-id="mdxliff"/>
+      <xliffext:skl_file_name>bank-revaluation.7413b0.353153a3a5cbcb27749f21582fcf83ac4f3a8f36.skl</xliffext:skl_file_name>
+      <xliffext:version>1.2</xliffext:version>
+      <xliffext:ms.openlocfilehash>353153a3a5cbcb27749f21582fcf83ac4f3a8f36</xliffext:ms.openlocfilehash>
+      <xliffext:ms.sourcegitcommit>56ec43e459ba93f495bc76fed23d6737218ef37e</xliffext:ms.sourcegitcommit>
+      <xliffext:ms.lasthandoff>05/17/2019</xliffext:ms.lasthandoff>
+      <xliffext:ms.openlocfilepath>articles\financials\cash-bank-management\bank-revaluation.md</xliffext:ms.openlocfilepath>
+    </header>
+    <body>
+      <group extype="content" id="content">
+        <trans-unit xml:space="preserve" translate="yes" id="101" restype="x-metadata">
+          <source>Bank foreign currency revaluation</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Bankrevaluering av utenlandsk valuta</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="102" restype="x-metadata">
+          <source>This topic provides an overview of the process of bank foreign currency revaluation.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Dette emnet gir en oversikt over prosessen for bankrevaluering av utenlandsk valuta.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="103" restype="x-metadata">
+          <source>It includes information about setup, running the process, the calculation for the process, and reversal of revaluation transactions.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Det inneholder informasjon om oppsettet, kjøring av prosessen, beregning av prosessen og tilbakeføring av revalueringstransaksjoner.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="104">
+          <source>Bank foreign currency revaluation</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Bankrevaluering av utenlandsk valuta</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="105">
+          <source>This topic provides an overview of the process of bank foreign currency revaluation.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Dette emnet gir en oversikt over prosessen for bankrevaluering av utenlandsk valuta.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="106">
+          <source>It explains how to set up and run the process, and provides information about the calculation for the process.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Den forklarer hvordan du kan definere og kjøre prosessen og gir informasjon om beregning av prosessen.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="107">
+          <source>It also explains how to reverse revaluation transactions, if reversal is required.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Det forklarer også hvordan du tilbakefører revalueringstransaksjoner, hvis tilbakeføring kreves.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="108">
+          <source>As part of a period end, accounting conventions require that bank account balances in foreign currencies be revalued by using different exchange rate types (current, historical, average, and so on).</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Som en del av en periodeslutt krever regnskapskonvensjoner at bankkontosaldi i utenlandsk valuta revalueres ved å bruke ulike valutakurstyper (gjeldende, historisk, gjennomsnitt, osv.).</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="109">
+          <source>The bank foreign currency revaluation feature can be used to revalue one or more bank accounts.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Funksjonen for bankrevaluering av utenlandsk valuta kan brukes til å revaluere én eller flere bankkontoer.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="110">
+          <source>The feature is also a global feature.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Funksjonen er også en global funksjon.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="111">
+          <source>Therefore, from a single page, you can revalue banks across all the legal entities that you have access to.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Fra én side kan du derfor revaluere banker på tvers av alle de juridiske enhetene som du har tilgang til.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="112">
+          <source>When you run the revaluation process, the balance in each bank account that is posted in a foreign currency will be revalued.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Når du kjører revalueringsprosessen, blir saldoen i hver bankkonto som er postert i utenlandsk valuta, revaluert.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="113">
+          <source>The unrealized gain or loss transactions that are created during the revaluation process are system-generated.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Transaksjonene for urealisert fortjeneste eller tap som opprettes under revalueringsprosessen, genereres av systemet.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="114">
+          <source>Two transactions might be created, one for the accounting currency and one for the reporting currency, if a reporting currency is relevant.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">To transaksjoner kan opprettes, én for regnskapsvalutaen og én for rapporteringsvalutaen, hvis rapporteringsvaluta er relevant.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="115">
+          <source>Each accounting entry will be posted to the unrealized gain or loss and the main account that is being revalued.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Hver regnskapspost posteres til den urealiserte fortjenesten eller tapet og hovedkontoen som revalueres.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="116">
+          <source>Prepare to run foreign currency revaluation</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klargjøre for kjøring av revaluering av utenlandsk valuta</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="117">
+          <source>Before you run the revaluation process, the following setup is required.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Følgende oppsett kreves før du kan kjøre revalueringprosessen.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="118">
+          <source>On the <bpt id="p1">**</bpt>Ledger<ept id="p1">**</ept> page, specify the exchange rate type.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Angi valutakurs på <bpt id="p1">**</bpt>Finans<ept id="p1">**</ept>-siden.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="119">
+          <source>If an exchange rate type isn't defined on the main account, this exchange rate type is used during foreign currency revaluation.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Hvis en valutakurstype ikke er definert for hovedkontoen, brukes denne valutakurstypen under revaluering av utenlandsk valuta.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="120">
+          <source>On the <bpt id="p1">**</bpt>Ledger<ept id="p1">**</ept> page, specify the realized gain, realized loss, unrealized gain, and unrealized loss accounts for currency revaluation.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">På <bpt id="p1">**</bpt>Finans<ept id="p1">**</ept>-siden angir du kontoene for realisert fortjeneste, realisert tap, urealisert fortjeneste og urealisert tap, for revaluering av valuta.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="121">
+          <source>Realized gain and realized loss accounts are used when Accounts receivable and Accounts payable transactions are settled.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Realisert fortjeneste- og realisert tap-kontoer brukes når kunde- og leverandørtransaksjoner utlignes.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="122">
+          <source>Unrealized gain and unrealized loss accounts are used to revalue open transactions and general ledger main accounts.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Urealisert fortjeneste- og urealisert tap-kontoer brukes til å revaluere åpne transaksjoner og hovedkontoer for økonomimodul.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="123">
+          <source>On the <bpt id="p1">**</bpt>Currency revaluation accounts<ept id="p1">**</ept> page, select different currency revaluation accounts for each currency and company.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">På siden <bpt id="p1">**</bpt>Kontoer for revaluering av valuta<ept id="p1">**</ept> velger du andre kontoer for revaluering av valuta for hver valuta og firma.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="124">
+          <source>If no accounts are defined, the accounts from the <bpt id="p1">**</bpt>Ledger<ept id="p1">**</ept> page are used.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Hvis ingen kontoer er definert, brukes kontoene fra <bpt id="p1">**</bpt>Finans<ept id="p1">**</ept>-siden.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="125">
+          <source>Enable foreign currency revaluation</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Aktivere revaluering av utenlandsk valuta</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="126">
+          <source>You must turn on the bank foreign currency revaluation feature before you can process foreign currency revaluations.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Du må aktivere funksjonen for bankrevaluering av utenlandsk valuta før du kan behandle revaluering av utenlandsk valuta.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="127">
+          <source>Go to <bpt id="p1">**</bpt>Cash and bank management <ph id="ph1">\&gt;</ph> Setup <ph id="ph2">\&gt;</ph> Cash and bank management parameters<ept id="p1">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Gå til <bpt id="p1">**</bpt>Kontant- og bankbehandling <ph id="ph1">\&gt;</ph> Oppsett <ph id="ph2">\&gt;</ph> Parametere for kontant- og bankbehandling<ept id="p1">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="128">
+          <source>On the <bpt id="p1">**</bpt>General<ept id="p1">**</ept> tab, under <bpt id="p2">**</bpt>Foreign currency revaluation<ept id="p2">**</ept>, set the <bpt id="p3">**</bpt>Enable bank revaluation<ept id="p3">**</ept> option to <bpt id="p4">**</bpt>Yes<ept id="p4">**</ept> to turn on the feature for the current legal entity.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">På <bpt id="p1">**</bpt>Generelt<ept id="p1">**</ept>-fanen under <bpt id="p2">**</bpt>Revaluering av utenlandsk valuta<ept id="p2">**</ept> setter du <bpt id="p3">**</bpt>Aktiver bankrevaluering<ept id="p3">**</ept>-alternativet til <bpt id="p4">**</bpt>Ja<ept id="p4">**</ept> for å aktivere funksjonen for gjeldende juridiske enhet.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="129">
+          <source>On the <bpt id="p1">**</bpt>Number sequences<ept id="p1">**</ept> tab, add a number sequence for foreign currency revaluation.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">I kategorien <bpt id="p1">**</bpt>Nummerserier<ept id="p1">**</ept> legger du til en nummerserie for revaluering av utenlandsk valuta.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="130">
+          <source>Refresh the browser to see <bpt id="p1">**</bpt>Foreign currency revaluation<ept id="p1">**</ept> in the <bpt id="p2">**</bpt>Periodic tasks<ept id="p2">**</ept> section of the area page.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Oppdater leseren for å se <bpt id="p1">**</bpt>Revaluering av utenlandsk valuta<ept id="p1">**</ept> i <bpt id="p2">**</bpt>Periodiske oppgaver<ept id="p2">**</ept>-delen på områdesiden.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="131">
+          <source>You must turn on the feature for every legal entity that will use foreign currency revaluation.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Du må aktivere funksjonen for hver juridiske enhet som bruker revaluering av utenlandsk valuta.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="132">
+          <source>If you are assigned to the System Administrator role or Feature Manager role, you can eliminate this step by enabling the feature named <bpt id="p1">**</bpt>Enable bank revaluation without a parameter<ept id="p1">**</ept> in the <bpt id="p2">**</bpt>Feature management<ept id="p2">**</ept> workspace.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Hvis du er tilordnet rollen som systemansvarlig eller funksjonsleder, kan du eliminere dette trinnet ved å aktivere funksjonen med navnet <bpt id="p1">**</bpt>Aktiver bankrevaluering uten en parameter<ept id="p1">**</ept> i arbeidsområdet <bpt id="p2">**</bpt>Funksjonsbehandling<ept id="p2">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="133">
+          <source>If your legal entity uses a Russian, Polish, or Hungarian country/region code, you can already do bank foreign currency revaluation.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Hvis den juridiske enheten bruker en russisk, polsk eller ungarsk lands-/områdekode, kan du allerede gjøre bankrevalueringen av utenlandsk valuta.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="134">
+          <source>You won't be able to use the foreign currency revaluation that is used by other countries or regions.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Du kan ikke bruke revaluering av utenlandsk valuta som brukes av andre land eller regioner.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="135">
+          <source>Process foreign currency revaluation</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Behandle en revaluering av utenlandsk valuta</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="136">
+          <source>After the setup is completed, use the <bpt id="p1">**</bpt>Foreign currency revaluation<ept id="p1">**</ept> page in Cash and bank management to revalue the balances of one or more bank accounts across all legal entities.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Når installasjonen er fullført, kan du bruke siden <bpt id="p1">**</bpt>Revaluering av utenlandsk valuta<ept id="p1">**</ept> i Kontant- og bankbehandling til å revaluere saldoene for én eller flere bankkontoer på tvers av alle juridiske enheter.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="137">
+          <source>You can run the process in real time, or you can schedule it to run by using a batch.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Du kan kjøre prosessen i sanntid, eller du kan planlegge å kjøre den ved hjelp av en satsvis jobb.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="138">
+          <source>The <bpt id="p1">**</bpt>Foreign currency revaluation<ept id="p1">**</ept> page shows the history of each revaluation process.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Siden <bpt id="p1">**</bpt>Revaluering av utenlandsk valuta<ept id="p1">**</ept> viser historikken for hver revalueringsprosess.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="139">
+          <source>It shows when the process was run and what criteria were defined, and provides a link to the voucher that was created for the revaluation.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Den viser når prosessen ble kjørt, og hvilke vilkår som ble definert, og inneholder en kobling til bilaget som ble opprettet for revalueringen.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="140">
+          <source>It also shows whether a previous revaluation was reversed.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Den viser også om en tidligere revaluering ble tilbakeført.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="141">
+          <source>To run the revaluation process, select <bpt id="p1">**</bpt>Foreign currency revaluation<ept id="p1">**</ept> on the Action Pane to open the <bpt id="p2">**</bpt>Bank - foreign currency revaluation<ept id="p2">**</ept> dialog box.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Hvis du vil kjøre prosessen for revaluering, velger du <bpt id="p1">**</bpt>Revaluering av utenlandsk valuta<ept id="p1">**</ept> i handlingsruten for å åpne <bpt id="p2">**</bpt>Bankrevaluering av utenlandsk valuta<ept id="p2">**</ept>-dialogboksen.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="142">
+          <source>The <bpt id="p1">**</bpt>Revaluation date<ept id="p1">**</ept> field defines the cutoff date for calculating the foreign currency balance that will be revalued.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Feltet <bpt id="p1">**</bpt>Revalueringsdato<ept id="p1">**</ept> angir fristen for å beregne saldo for utenlandsk valuta som skal revalueres.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="143">
+          <source>The sum of all bank transactions that occurred up through this date is revalued.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Summen av alle banktransaksjoner som inntraff til og med denne datoen, revalueres.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="144">
+          <source>The <bpt id="p1">**</bpt>Exchange rate date<ept id="p1">**</ept> field defines the date of the exchange rate that will be used to revalue the currency balances.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Feltet <bpt id="p1">**</bpt>Valutakursdato<ept id="p1">**</ept> angir datoen for valutakursen som skal brukes til å revaluere valutabalansene.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="145">
+          <source>For example, you can revalue the balances as of January 31 but use the exchange rate that is defined for February 1.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Du kan for eksempel revaluere saldoene fra og med 31. januar, men bruke valutakursen som er definert for 1. februar.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="146">
+          <source>The revaluation process can be run for one or more legal entities.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Revalueringsprosessen kan kjøres for én eller flere juridiske enheter.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="147">
+          <source>The lookup shows only the legal entities that you have access to.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Oppslaget viser bare de juridiske enhetene som du har tilgang til.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="148">
+          <source>Select the legal entities for which you want to select the bank accounts that are eligible for foreign currency revaluation.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Velg de juridiske enhetene som du vil velge bankkontoene for, som er kvalifisert for revaluering av utenlandsk valuta.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="149">
+          <source>All the bank accounts for those legal entities will be shown in the grid.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Alle bankkontoer for disse juridiske enhetene vises i rutenettet.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="150">
+          <source>Set the <bpt id="p1">**</bpt>Preview before posting<ept id="p1">**</ept> option to <bpt id="p2">**</bpt>Yes<ept id="p2">**</ept> if you want to review the results of the revaluation before you post it.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Sett alternativet <bpt id="p1">**</bpt>Forhåndsvis for postering<ept id="p1">**</ept> til <bpt id="p2">**</bpt>Ja<ept id="p2">**</ept> hvis du vil se resultatene av revalueringen før du posterer den.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="151">
+          <source>The foreign currency revaluation has a preview that can be posted.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Revalueringen av utenlandsk valuta er en forhåndsvisning som kan posteres.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="152">
+          <source>You don't have to run the revaluation process again.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Du trenger ikke kjøre revalueringsprosessen på nytt.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="153">
+          <source>You can export the results in the preview to Microsoft Excel to keep a history of how the amounts were calculated.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Du kan eksportere resultatet i forhåndsvisningen til Microsoft Excel for å føre historikken over hvordan beløpene ble beregnet.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="154">
+          <source>You can't use batch processing if you want to preview the results of the revaluation.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Du kan ikke bruke satsvis behandling hvis du vil forhåndsvise resultatet av revalueringen.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="155">
+          <source>Select <bpt id="p1">**</bpt>OK<ept id="p1">**</ept> to process the foreign currency revaluation.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Velg <bpt id="p1">**</bpt>OK<ept id="p1">**</ept> for å behandle revaluering av utenlandsk valuta.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="156">
+          <source>A record is created to track the history of each run.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Det opprettes en post for å spore loggen for hver kjøring.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="157">
+          <source>A separate record is created for each legal entity and posting layer.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">En separat oppføring opprettes for hver juridiske enhet og hvert posteringslag.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="158">
+          <source>Calculate unrealized gain/loss</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Beregne urealisert tap/fortjeneste</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="159">
+          <source>In Cash and bank management, the bank currency is considered to be the base currency and it is not revalued.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">I Kontant- og bankbehandling anses bankvalutaen for å være basisvalutaen, og den revalueres ikke.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="160">
+          <source>The balance of the bank account in the accounting currency is revalued using the exchange rates between the bank currency and the accounting currency on the <bpt id="p1">**</bpt>Exchange rate date<ept id="p1">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Saldoen for bankkontoen i regnskapsvalutaen revalueres ved hjelp av valutakursen mellom bankvalutaen og regnskapsvalutaen på <bpt id="p1">**</bpt>Valutakursdato<ept id="p1">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="161">
+          <source>The balance of the bank account in the reporting currency is also revalued using the exchange rates between the bank currency and the reporting currency on the <bpt id="p1">**</bpt>Exchange rate date<ept id="p1">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Saldoen for bankkontoen i rapporteringsvalutaen revalueres også ved hjelp av valutakursen mellom bankvalutaen og rapporteringsvalutaen på <bpt id="p1">**</bpt>Valutakursdato<ept id="p1">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="162">
+          <source>A transaction is created for the difference between the balance of the bank account and the new balance that is calculated for the accounting currency.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Det opprettes en transaksjon for forskjellen mellom saldoen på bankkontoen og den nye saldoen som beregnes for regnskapsvalutaen.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="163">
+          <source>Another transaction is created for the difference between the balance of the bank account and the new balance that is calculated for the reporting currency.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">En annen transaksjon opprettes for forskjellen mellom saldoen på bankkontoen og den nye saldoen som beregnes for rapporteringsvalutaen.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="164">
+          <source>The entries for these transactions are marked as reconciled.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Postene for disse transaksjonene er merket som avstemt.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="165">
+          <source>No entry is made for the accounting currency if the bank currency matches the accounting currency.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ingen oppføring gjøres for regnskapsvalutaen hvis bankvalutaen samsvarer med regnskapsvalutaen.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="166">
+          <source>Likewise, no entry is made for the reporting currency if the bank currency matches the reporting currency.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">På samme måte gjøres det ingen oppføring for rapporteringsvalutaen hvis bankvalutaen samsvarer med rapporteringsvalutaen.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="167">
+          <source>The foreign currency revaluation transaction is also split across the dimensions that are found on the bank transactions.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Transaksjonen for revaluering av utenlandsk valuta er også delt på tvers av dimensjonene som finnes på banktransaksjonene.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="168">
+          <source>The split is based on the balance for each dimension.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Delingen er basert på saldoen for hver dimensjon.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="169">
+          <source>For example, the total bank balance is 10,000, but the balance for business unit 001 is 4,000, whereas the balance for business unit 002 is 6,000.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">For eksempel er den totale banksaldoen 10 000, men saldoen for forretningsenhet 001 er 4 000, mens saldoen for forretningsenhet 002 er 6 000.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="170">
+          <source>In this case, 40 percent of the revaluation amount is posted to the revaluation account that has business unit 001, and 60 percent is posted to the revaluation account that has business unit 002.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">I dette tilfellet posteres 40 prosent av revalueringsbeløpet til revalueringskontoen som har forretningsenhet 001, og 60 prosent posteres til revalueringskontoen som har forretningsenhet 002.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="171">
+          <source>If the account structure doesn't include a business unit, the full amount is posted to the revaluation account.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Hvis kontostrukturen ikke inkluderer en forretningsenhet, posteres hele beløpet til revalueringskontoen.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="172">
+          <source>Reverse foreign currency revaluation</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tilbakefør revaluering av utenlandsk valuta</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="173">
+          <source>If you must reverse the revaluation transaction, select <bpt id="p1">**</bpt>Reverse transaction<ept id="p1">**</ept> on the Action Pane of the <bpt id="p2">**</bpt>Foreign currency revaluation<ept id="p2">**</ept> page.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Hvis du må tilbakeføre revalueringstransaksjonen, velger du <bpt id="p1">**</bpt>Tilbakefør transaksjon<ept id="p1">**</ept> på handlingssiden på siden <bpt id="p2">**</bpt>Revaluering av utenlandsk valuta<ept id="p2">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="174">
+          <source>A new foreign currency revaluation historical record is created to maintain the historical audit trail of when the revaluation occurred or was reversed.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Det opprettes en ny historisk post for revaluering av utenlandsk valuta for å beholde det historiske revisjonssporet for når revalueringen skjedde eller ble tilbakeført.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="175">
+          <source>To reverse several revaluations, you must reverse the most current revaluation first.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Hvis du vil reversere flere revalueringer, må du tilbakeføre den nyeste revalueringen først.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="176">
+          <source>Then continue to reverse older revaluations in date order.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Deretter fortsetter du å tilbakeføre eldre revalueringer i datorekkefølgen.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="177">
+          <source>You can then process new revaluations for the periods that you reversed.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Du kan deretter behandle nye revalueringer for periodene som du tilbakeførte.</target></trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>
