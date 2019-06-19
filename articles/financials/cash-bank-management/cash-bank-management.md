@@ -1,186 +1,102 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<xliff xmlns:logoport="urn:logoport:xliffeditor:xliff-extras:1.0" xmlns:tilt="urn:logoport:xliffeditor:tilt-non-translatables:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xliffext="urn:microsoft:content:schema:xliffextensions" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
-  <file datatype="xml" source-language="en-US" original="cash-bank-management.md" target-language="nb-NO">
-    <header>
-      <tool tool-company="Microsoft" tool-version="1.0-7889195" tool-name="mdxliff" tool-id="mdxliff"/>
-      <xliffext:skl_file_name>cash-bank-management.bc9b73.d15ff8add8a77c27a9f0153c9e881ecae3d9da78.skl</xliffext:skl_file_name>
-      <xliffext:version>1.2</xliffext:version>
-      <xliffext:ms.openlocfilehash>d15ff8add8a77c27a9f0153c9e881ecae3d9da78</xliffext:ms.openlocfilehash>
-      <xliffext:ms.sourcegitcommit>9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b</xliffext:ms.sourcegitcommit>
-      <xliffext:ms.lasthandoff>05/15/2019</xliffext:ms.lasthandoff>
-      <xliffext:ms.openlocfilepath>articles\financials\cash-bank-management\cash-bank-management.md</xliffext:ms.openlocfilepath>
-    </header>
-    <body>
-      <group extype="content" id="content">
-        <trans-unit xml:space="preserve" translate="yes" id="101" restype="x-metadata">
-          <source>Cash and bank management home page</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Startside for kontant- og bankbehandling</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="102" restype="x-metadata">
-          <source>You can use Cash and bank management to maintain the legal entity’s bank accounts and the financial instruments that are associated with those bank accounts.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Du kan bruke Kontant- og bankbehandling til å vedlikeholde den juridiske enhetens bankkontoer og finansobjektene som er knyttet til disse bankkontoene.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="103">
-          <source>Cash and bank management home page</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Startside for kontant- og bankbehandling</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="104">
-          <source>You can use Cash and bank management to maintain the legal entity’s bank accounts and the financial instruments that are associated with those bank accounts.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Du kan bruke Kontant- og bankbehandling til å vedlikeholde den juridiske enhetens bankkontoer og finansobjektene som er knyttet til disse bankkontoene.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="105">
-          <source>These instruments include deposit slips, checks, bills of exchange, and promissory notes.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Disse instrumentene inkluderer betalingsbilag, sjekker, veksler og egenveksler.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="106">
-          <source>You can also reconcile bank statements and print bank data on standard reports.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Du kan også avstemme bankkontoutdrag og skrive ut bankdata i standardrapporter.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="107">
-          <source><bpt id="p1">**</bpt>Business processes<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Forretningsprosesser<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="108">
-          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Business process<ept id="p1">](./media/Cash-process.PNG)](./media/Cash-process.PNG)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt><ph id="ph1">![</ph>Forretningsprosess<ept id="p1">](./media/Cash-process.PNG)](./media/Cash-process.PNG)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="109">
-          <source><bpt id="p1">[</bpt>Cash discounts<ept id="p1">](cash-discounts.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Kontantrabatt<ept id="p1">](cash-discounts.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="110">
-          <source><bpt id="p1">[</bpt>Settlement overview<ept id="p1">](settlement-overview.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Oversikt over utligning<ept id="p1">](settlement-overview.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="111">
-          <source><bpt id="p1">[</bpt>Configure settlement<ept id="p1">](configure-settlement.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Konfigurere utligning<ept id="p1">](configure-settlement.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="112">
-          <source><bpt id="p1">[</bpt>Foreign currency revaluation for Accounts payable and Accounts receivable<ept id="p1">](foreign-currency-revaluation-accounts-payable-accounts-receivable.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Revaluering av utenlandsk valuta for leverandører og kunder<ept id="p1">](foreign-currency-revaluation-accounts-payable-accounts-receivable.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="113">
-          <source><bpt id="p1">[</bpt>Letters of credit<ept id="p1">](letters-of-credit.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Purringer<ept id="p1">](letters-of-credit.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="114">
-          <source><bpt id="p1">[</bpt>Letters of credit and import collections<ept id="p1">](letters-of-credit-import-collections.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Purringer og importsamlinger<ept id="p1">](letters-of-credit-import-collections.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="115">
-          <source><bpt id="p1">[</bpt>Letter of guarantee<ept id="p1">](letters-of-guarantee.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Garantibrev<ept id="p1">](letters-of-guarantee.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="116">
-          <source><bpt id="p1">[</bpt>Set up centralized payments<ept id="p1">](set-up-centralized-payments.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Definere sentraliserte betalinger<ept id="p1">](set-up-centralized-payments.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="117">
-          <source>Bank reconciliation</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Bankavstemming</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="118">
-          <source><bpt id="p1">[</bpt>Advanced bank reconciliation overview<ept id="p1">](advanced-bank-reconciliation-overview.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Oversikt over avansert bankavstemming<ept id="p1">](advanced-bank-reconciliation-overview.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="119">
-          <source><bpt id="p1">[</bpt>Configure advanced bank reconciliation<ept id="p1">](configure-advanced-bank-reconciliation.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Konfigurere avansert bankavstemming<ept id="p1">](configure-advanced-bank-reconciliation.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="120">
-          <source><bpt id="p1">[</bpt>Set up the advanced bank reconciliation import<ept id="p1">](set-up-advanced-bank-reconciliation-import-process.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Definere avansert bankavstemmingsimport<ept id="p1">](set-up-advanced-bank-reconciliation-import-process.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="121">
-          <source><bpt id="p1">[</bpt>Reconcile bank statements using advanced bank reconciliation<ept id="p1">](reconcile-bank-statements-advanced-bank-reconciliation.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Avstemme bankkontoutdrag med avansert bankavstemming<ept id="p1">](reconcile-bank-statements-advanced-bank-reconciliation.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="122">
-          <source><bpt id="p1">[</bpt>Set up bank reconciliation matching rules<ept id="p1">](set-up-bank-reconciliation-matching-rules.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Definere samsvarsregler for bankavstemming<ept id="p1">](set-up-bank-reconciliation-matching-rules.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="123">
-          <source>Accounts payable payments and settlements</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Leverandørbetalinger og -utligninger</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="124">
-          <source><bpt id="p1">[</bpt>Centralized payments for Accounts payable<ept id="p1">](../accounts-payable/centralized-payments-accounts-payable.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Sentraliserte betalinger leverandører<ept id="p1">](../accounts-payable/centralized-payments-accounts-payable.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="125">
-          <source><bpt id="p1">[</bpt>Create vendor invoices using a payment proposal<ept id="p1">](../accounts-payable/create-vendor-payments-payment-proposal.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Opprette leverandørfakturaer ved hjelp av et betalingsforslag<ept id="p1">](../accounts-payable/create-vendor-payments-payment-proposal.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="126">
-          <source><bpt id="p1">[</bpt>Reverse a vendor payment<ept id="p1">](../accounts-payable/reverse-vendor-payment.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Tilbakeføre en leverandørbetaling<ept id="p1">](../accounts-payable/reverse-vendor-payment.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="127">
-          <source><bpt id="p1">[</bpt>Vendor payments for a partial amount<ept id="p1">](../accounts-payable/vendor-payments-partial-amount.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Leverandørbetalinger for et delbeløp<ept id="p1">](../accounts-payable/vendor-payments-partial-amount.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="128">
-          <source><bpt id="p1">[</bpt>Prepayment invoices and prepayments overview<ept id="p1">](../accounts-payable/prepayments-invoices-vs-prepayments.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Oversikt over forskuddsbetalte fakturaer og forskuddsbetalinger<ept id="p1">](../accounts-payable/prepayments-invoices-vs-prepayments.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="129">
-          <source><bpt id="p1">[</bpt>Scenario: Settle a partial vendor payment and settle the final payment in full before the discount date<ept id="p1">](../accounts-payable/settle-partial-vendor-payment-or-final-payment-before-discount.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Scenario: Utligne en delvis leverandørbetaling og utligne den endelige betalingen i sin helhet før rabattdatoen<ept id="p1">](../accounts-payable/settle-partial-vendor-payment-or-final-payment-before-discount.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="130">
-          <source><bpt id="p1">[</bpt>Scenario: Settle a partial vendor payment before the discount date with a final payment after the discount date<ept id="p1">](../accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Scenario: Utligne en delvis leverandørbetaling før rabattdatoen med en endelige betaling etter rabattdatoen<ept id="p1">](../accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="131">
-          <source><bpt id="p1">[</bpt>Scenario: Settle a partial vendor payment that has discounts on vendor credit notes<ept id="p1">](../accounts-payable/settle-partial-vendor-payment-discounts-vendor-credit-notes.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Scenario: Utligne en delvis leverandørbetaling som har rabatter på leverandørkreditnotaer<ept id="p1">](../accounts-payable/settle-partial-vendor-payment-discounts-vendor-credit-notes.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="132">
-          <source><bpt id="p1">[</bpt>Scenario: Settle a partial vendor payment that has multiple discount periods<ept id="p1">](../accounts-payable/settle-partial-vendor-payment-multiple-discount-periods.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Scenario: Utligne en delvis leverandørbetaling som har flere rabattperioder<ept id="p1">](../accounts-payable/settle-partial-vendor-payment-multiple-discount-periods.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="133">
-          <source><bpt id="p1">[</bpt>Scenario: Take a discount that is more than the calculated discount for a vendor payment<ept id="p1">](../accounts-payable/take-discount-more-calculated-discount-vendor-payment.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Scenario: Bruke en rabatt som er større enn beregnet rabatt for en leverandørbetaling<ept id="p1">](../accounts-payable/take-discount-more-calculated-discount-vendor-payment.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="134">
-          <source><bpt id="p1">[</bpt>Scenario: Take a cash discount outside the cash discount period<ept id="p1">](../accounts-payable/take-cash-discount-outside-cash-discount-timeframe.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Scenario: Bruke en kontantrabatt utenfor kontantrabattperioden<ept id="p1">](../accounts-payable/take-cash-discount-outside-cash-discount-timeframe.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="135">
-          <source>Accounts receivable payments and settlements</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kundebetalinger og -utligninger</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="136">
-          <source><bpt id="p1">[</bpt>Centralized payments for Accounts receivable<ept id="p1">](../accounts-receivable/centralized-payments-accounts-receivable.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Sentraliserte betalinger for kunde<ept id="p1">](../accounts-receivable/centralized-payments-accounts-receivable.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="137">
-          <source><bpt id="p1">[</bpt>Customer payments for a partial amount<ept id="p1">](../accounts-receivable/customer-payments-partial-amount.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Kundebetalinger for et delbeløp<ept id="p1">](../accounts-receivable/customer-payments-partial-amount.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="138">
-          <source><bpt id="p1">[</bpt>Reimburse customers<ept id="p1">](../accounts-receivable/reimburse-customers.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Refundere kunder<ept id="p1">](../accounts-receivable/reimburse-customers.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="139">
-          <source><bpt id="p1">[</bpt>Scenario: Automatic settlement and prioritization<ept id="p1">](../accounts-receivable/automatic-settlement-prioritization.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Scenario: Automatisk utligning og prioritering<ept id="p1">](../accounts-receivable/automatic-settlement-prioritization.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="140">
-          <source><bpt id="p1">[</bpt>Scenario: Handling cash discount for overpayments<ept id="p1">](../cash-bank-management/cash-discount-handling-overpayments.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Scenario: Håndtere kontantrabatt for overbetalinger<ept id="p1">](../cash-bank-management/cash-discount-handling-overpayments.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="141">
-          <source><bpt id="p1">[</bpt>Scenario: Settle a partial customer payment and settle the final payment in full before the discount date<ept id="p1">](../accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Scenario: Utligne en delvis kundebetaling og utligne den endelige betalingen i sin helhet før rabattdatoen<ept id="p1">](../accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="142">
-          <source><bpt id="p1">[</bpt>Scenario: Settle a partial customer payment before the discount date with a final payment after the discount date<ept id="p1">](../accounts-receivable/settle-partial-customer-payment-before-discount-or-final-payment-after.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Scenario: Utligne en delvis kundebetaling før rabattdatoen med en endelige betaling etter rabattdatoen<ept id="p1">](../accounts-receivable/settle-partial-customer-payment-before-discount-or-final-payment-after.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="143">
-          <source><bpt id="p1">[</bpt>Scenario: Settle a partial customer payment that has discounts on credit notes<ept id="p1">](../accounts-receivable/settle-partial-customer-payment-discounts-credit-notes.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Scenario: Utligne en delvis kundebetaling som har rabatter på kreditnotaer<ept id="p1">](../accounts-receivable/settle-partial-customer-payment-discounts-credit-notes.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="144">
-          <source><bpt id="p1">[</bpt>Scenario: Settle a partial customer payment that has multiple discount periods<ept id="p1">](../accounts-receivable/settle-partial-customer-payment-multiple-discount-periods.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Scenario: Utligne en delvis kundebetaling som har flere rabattperioder<ept id="p1">](../accounts-receivable/settle-partial-customer-payment-multiple-discount-periods.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="145">
-          <source><bpt id="p1">[</bpt>Scenario: Use one customer payment to settle multiple invoice that span multiple discount periods<ept id="p1">](../accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Scenario: Bruke én kundebetaling for å utligne flere fakturaer som strekker seg over flere rabattperioder<ept id="p1">](../accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="146">
-          <source>Additional resources</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tilleggsressurser</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="147">
-          <source>What's new and in development</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Hva er nytt og hva er under utvikling?</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="148">
-          <source>Go to the <bpt id="p1">[</bpt>Microsoft Dynamics 365 Release Notes<ept id="p1">](https://go.microsoft.com/fwlink/?linkid=2010158)</ept> to see what new features have been planned.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Gå til <bpt id="p1">[</bpt>Produktmerknader for Microsoft Dynamics 365<ept id="p1">](https://go.microsoft.com/fwlink/?linkid=2010158)</ept> for å se hvilke nye funksjoner som er planlagt.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="149">
-          <source>Blogs</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Blogger</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="150">
-          <source>You can find opinions, news, and other information on the <bpt id="p1">[</bpt>Microsoft Dynamics 365 blog<ept id="p1">](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise)</ept> and the <bpt id="p2">[</bpt>Microsoft Dynamics 365 Finance and Operations - Financials blog<ept id="p2">](https://community.dynamics.com/365/financeandoperations/b/financials)</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Du kan finne meninger, nyheter og annen informasjon i <bpt id="p1">[</bpt>Microsoft Dynamics 365-bloggen<ept id="p1">](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise)</ept> og <bpt id="p2">[</bpt>Microsoft Dynamics 365 Finance and Operations – Financials-bloggen<ept id="p2">](https://community.dynamics.com/365/financeandoperations/b/financials)</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="151">
-          <source>The <bpt id="p1">[</bpt>Microsoft Dynamics Operations Partner Community Blog<ept id="p1">](https://community.dynamics.com/partner/b/operationspartnercommunityblog)</ept> gives Microsoft Dynamics Partners a single resource where they can learn what is new and trending in MBS Operations.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Microsoft Dynamics Operations Partner Community-bloggen<ept id="p1">](https://community.dynamics.com/partner/b/operationspartnercommunityblog)</ept> gir Microsoft Dynamics-partnere én ressurs der de kan finne ut mer om hva som er nytt og populært i MBS Operations.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="152">
-          <source>Task guides</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Oppgaveveiledninger</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="153">
-          <source>Additional help is available as task guides inside Finance and Operations.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Mer hjelp er tilgjengelig som oppgaveveiledninger i Finance and Operations.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="154">
-          <source>To access task guides, click the Help button on any page.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">For å få tilgang til oppgaveveiledninger klikker du Hjelp-knappen på en side.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="155">
-          <source>Videos</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Videoer</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="156">
-          <source>Check out the how-to videos that are now available on the [Microsoft Dynamics 365 YouTube Channel] (<ph id="ph1">https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ)</ph>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Se instruksjonsvideoene som nå er tilgjengelige på [Microsoft Dynamics 365 YouTube-kanalen] (<ph id="ph1">https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ)</ph>.</target></trans-unit>
-      </group>
-    </body>
-  </file>
-</xliff>
+---
+title: Startside for kontant- og bankbehandling
+description: Du kan bruke Kontant- og bankbehandling til å vedlikeholde den juridiske enhetens bankkontoer og finansobjektene som er knyttet til disse bankkontoene.
+author: ShylaThompson
+manager: AnnBe
+ms.date: 10/26/2017
+ms.topic: index-page
+ms.prod: ''
+ms.service: dynamics-ax-applications
+ms.technology: ''
+ms.search.form: BankTreasurerWorkspace
+audience: Application User
+ms.reviewer: shylaw
+ms.search.scope: Core, Operations
+ms.custom: 21941
+ms.assetid: d7e22bd8-fd0d-47e1-843f-45ab0193ff8d
+ms.search.region: Global
+ms.author: shylaw
+ms.search.validFrom: 2016-02-28
+ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: d15ff8add8a77c27a9f0153c9e881ecae3d9da78
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.translationtype: HT
+ms.contentlocale: nb-NO
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1570932"
+---
+# <a name="cash-and-bank-management-home-page"></a>Startside for kontant- og bankbehandling
+
+[!include [banner](../includes/banner.md)]
+
+Du kan bruke Kontant- og bankbehandling til å vedlikeholde den juridiske enhetens bankkontoer og finansobjektene som er knyttet til disse bankkontoene. 
+
+Disse instrumentene inkluderer betalingsbilag, sjekker, veksler og egenveksler. Du kan også avstemme bankkontoutdrag og skrive ut bankdata i standardrapporter.
+
+**Forretningsprosesser**
+
+[![Forretningsprosess](./media/Cash-process.PNG)](./media/Cash-process.PNG)
+
+-   [Kontantrabatt](cash-discounts.md)
+-   [Oversikt over utligning](settlement-overview.md)
+-   [Konfigurere utligning](configure-settlement.md)
+-   [Revaluering av utenlandsk valuta for leverandører og kunder](foreign-currency-revaluation-accounts-payable-accounts-receivable.md)
+-   [Purringer](letters-of-credit.md)
+-   [Purringer og importsamlinger](letters-of-credit-import-collections.md)
+-   [Garantibrev](letters-of-guarantee.md)
+-   [Definere sentraliserte betalinger](set-up-centralized-payments.md)
+
+### <a name="bank-reconciliation"></a>Bankavstemming
+
+-   [Oversikt over avansert bankavstemming](advanced-bank-reconciliation-overview.md)
+-   [Konfigurere avansert bankavstemming](configure-advanced-bank-reconciliation.md)
+-   [Definere avansert bankavstemmingsimport](set-up-advanced-bank-reconciliation-import-process.md)
+-   [Avstemme bankkontoutdrag med avansert bankavstemming](reconcile-bank-statements-advanced-bank-reconciliation.md)
+-   [Definere samsvarsregler for bankavstemming](set-up-bank-reconciliation-matching-rules.md)
+
+
+## <a name="accounts-payable-payments-and-settlements"></a>Leverandørbetalinger og -utligninger
+-   [Sentraliserte betalinger leverandører](../accounts-payable/centralized-payments-accounts-payable.md)
+-   [Opprette leverandørfakturaer ved hjelp av et betalingsforslag](../accounts-payable/create-vendor-payments-payment-proposal.md)
+-   [Tilbakeføre en leverandørbetaling](../accounts-payable/reverse-vendor-payment.md)
+-   [Leverandørbetalinger for et delbeløp](../accounts-payable/vendor-payments-partial-amount.md)
+-   [Oversikt over forskuddsbetalte fakturaer og forskuddsbetalinger](../accounts-payable/prepayments-invoices-vs-prepayments.md)
+-   [Scenario: Utligne en delvis leverandørbetaling og utligne den endelige betalingen i sin helhet før rabattdatoen](../accounts-payable/settle-partial-vendor-payment-or-final-payment-before-discount.md)
+-   [Scenario: Utligne en delvis leverandørbetaling før rabattdatoen med en endelige betaling etter rabattdatoen](../accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md)
+-   [Scenario: Utligne en delvis leverandørbetaling som har rabatter på leverandørkreditnotaer](../accounts-payable/settle-partial-vendor-payment-discounts-vendor-credit-notes.md)
+-   [Scenario: Utligne en delvis leverandørbetaling som har flere rabattperioder](../accounts-payable/settle-partial-vendor-payment-multiple-discount-periods.md)
+-   [Scenario: Bruke en rabatt som er større enn beregnet rabatt for en leverandørbetaling](../accounts-payable/take-discount-more-calculated-discount-vendor-payment.md)
+-   [Scenario: Bruke en kontantrabatt utenfor kontantrabattperioden](../accounts-payable/take-cash-discount-outside-cash-discount-timeframe.md)
+
+## <a name="accounts-receivable-payments-and-settlements"></a>Kundebetalinger og -utligninger
+-   [Sentraliserte betalinger for kunde](../accounts-receivable/centralized-payments-accounts-receivable.md)
+-   [Kundebetalinger for et delbeløp](../accounts-receivable/customer-payments-partial-amount.md)
+-   [Refundere kunder](../accounts-receivable/reimburse-customers.md)
+-   [Scenario: Automatisk utligning og prioritering](../accounts-receivable/automatic-settlement-prioritization.md)
+-   [Scenario: Håndtere kontantrabatt for overbetalinger](../cash-bank-management/cash-discount-handling-overpayments.md)
+-   [Scenario: Utligne en delvis kundebetaling og utligne den endelige betalingen i sin helhet før rabattdatoen](../accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md)
+-   [Scenario: Utligne en delvis kundebetaling før rabattdatoen med en endelige betaling etter rabattdatoen](../accounts-receivable/settle-partial-customer-payment-before-discount-or-final-payment-after.md)
+-   [Scenario: Utligne en delvis kundebetaling som har rabatter på kreditnotaer](../accounts-receivable/settle-partial-customer-payment-discounts-credit-notes.md)
+-   [Scenario: Utligne en delvis kundebetaling som har flere rabattperioder](../accounts-receivable/settle-partial-customer-payment-multiple-discount-periods.md)
+-   [Scenario: Bruke én kundebetaling for å utligne flere fakturaer som strekker seg over flere rabattperioder](../accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md)
+
+
+
+### <a name="additional-resources"></a>Tilleggsressurser
+
+#### <a name="whats-new-and-in-development"></a>Hva er nytt og hva er under utvikling?
+
+Gå til [Produktmerknader for Microsoft Dynamics 365](https://go.microsoft.com/fwlink/?linkid=2010158) for å se hvilke nye funksjoner som er planlagt. 
+
+#### <a name="blogs"></a>Blogger
+
+Du kan finne meninger, nyheter og annen informasjon i [Microsoft Dynamics 365-bloggen](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise) og [Microsoft Dynamics 365 Finance and Operations – Financials-bloggen](https://community.dynamics.com/365/financeandoperations/b/financials).
+
+[Microsoft Dynamics Operations Partner Community-bloggen](https://community.dynamics.com/partner/b/operationspartnercommunityblog) gir Microsoft Dynamics-partnere én ressurs der de kan finne ut mer om hva som er nytt og populært i MBS Operations.
+
+#### <a name="task-guides"></a>Oppgaveveiledninger
+Mer hjelp er tilgjengelig som oppgaveveiledninger i Finance and Operations. For å få tilgang til oppgaveveiledninger klikker du Hjelp-knappen på en side.
+
+#### <a name="videos"></a>Videoer
+
+Se instruksjonsvideoene som nå er tilgjengelige på [Microsoft Dynamics 365 YouTube-kanalen] (https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ).
