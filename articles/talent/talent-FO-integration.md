@@ -1,372 +1,171 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<xliff xmlns:logoport="urn:logoport:xliffeditor:xliff-extras:1.0" xmlns:tilt="urn:logoport:xliffeditor:tilt-non-translatables:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xliffext="urn:microsoft:content:schema:xliffextensions" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
-  <file datatype="xml" source-language="en-US" original="talent-FO-integration.md" target-language="nb-NO">
-    <header>
-      <tool tool-company="Microsoft" tool-version="1.0-d915bc8" tool-name="mdxliff" tool-id="mdxliff"/>
-      <xliffext:skl_file_name>talent-FO-integration.b5add9.db542e4df79480624ff6e5ff1996ad930fc1564b.skl</xliffext:skl_file_name>
-      <xliffext:version>1.2</xliffext:version>
-      <xliffext:ms.openlocfilehash>db542e4df79480624ff6e5ff1996ad930fc1564b</xliffext:ms.openlocfilehash>
-      <xliffext:ms.sourcegitcommit>aec1dcd44274e9b8d0770836598fde5533b7b569</xliffext:ms.sourcegitcommit>
-      <xliffext:ms.lasthandoff>06/03/2019</xliffext:ms.lasthandoff>
-      <xliffext:ms.openlocfilepath>articles\talent\talent-FO-integration.md</xliffext:ms.openlocfilepath>
-    </header>
-    <body>
-      <group extype="content" id="content">
-        <trans-unit xml:space="preserve" translate="yes" id="101" restype="x-metadata">
-          <source>Dynamics 365 for Talent to Dynamics 365 for Finance and Operations integration FAQ</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vanlige spørsmål om integrering fra Dynamics 365 for Talent til Dynamics 365 for Finance and Operations</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="102" restype="x-metadata">
-          <source>This topic explains what data is synchronized in a Talent and Finance and Operations integration.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Dette emnet forklarer hvilke data som synkroniseres i en integrasjon med Talent og Finance and Operations.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="103">
-          <source>Dynamics 365 for Talent to Dynamics 365 for Finance and Operations integration FAQ</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vanlige spørsmål om integrering fra Dynamics 365 for Talent til Dynamics 365 for Finance and Operations</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="104">
-          <source>This topic answers common questions associated about what data is synchronized when Dynamics 365 for Talent is integrated with Dynamics 365 for Finance and Operations.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Dette emnet gir svar på vanlige spørsmål som er tilknyttet hvilke data som synkroniseres når Dynamics 365 for Talent er integrert med Dynamics 365 for Finance and Operations.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="105">
-          <source>Is all data synchronized or just some data entities?</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Er alle data synkronisert eller bare noen dataenheter?</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="106">
-          <source>With Core Human Resources (HR), a subset of the data is synchronized.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Med Core Human Resources (HR) synkroniseres et delsett av dataene.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="107">
-          <source>For a list of all the entities, see <bpt id="p1">[</bpt>Integration from Dynamics 365 for Talent to Dynamics 365 for Finance and Operations<ept id="p1">](talent-financeandoperations-integration.md)</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">For en liste over alle enheter, kan du se <bpt id="p1">[</bpt>Integrasjon fra Dynamics 365 for Talent til Dynamics 365 for Finance and Operations<ept id="p1">](talent-financeandoperations-integration.md)</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="108">
-          <source>For Attract and Onboard, all data is native to Common Data Service.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">For Attract og Onboard hører alle data til i Common Data Service.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="109">
-          <source>Can I create a new mapping without using the templates?</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kan jeg opprette en ny tilordning uten å bruke malene?</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="110">
-          <source>Templates are the starting point.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Malene er startpunktet.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="111">
-          <source>You can create your own template, but a template is always needed when creating an integration project.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Du kan opprette din egen mal, men en mal er alltid nødvendig når du oppretter et prosjekt for integrasjon.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="112">
-          <source>For more information about data integrator (DI), templates, and projects, see <bpt id="p1">[</bpt>Integrate data into Common Data Service<ept id="p1">](https://docs.microsoft.com/en-us/powerapps/administrator/data-integrator)</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Hvis du vil ha mer informasjon om dataintegrator (DI), maler og prosjekter, kan du se <bpt id="p1">[</bpt>Integrere data til Common Data Service<ept id="p1">](https://docs.microsoft.com/en-us/powerapps/administrator/data-integrator)</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="113">
-          <source>Can I map financial dimensions to transfer between Talent and Finance and Operations?</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kan jeg tilordne finansdimensjoner for å overføre mellom Talent og Finance and Operations?</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="114">
-          <source>Financial dimensions aren’t currently in Common Data Service and as a result aren’t part of the default template.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Finansdimensjoner er ikke i Common Data Service og er dermed ikke en del av standardmalen.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="115">
-          <source>This entity is planned, but currently no release timeline is available.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Denne enheten er planlagt, men ingen tidslinje for frigivelse er for øyeblikket tilgjengelig.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="116">
-          <source>For data that resides in Finance and Operations but does not exist in Talent, link the two systems together by using <bpt id="p1">**</bpt>Configure Links<ept id="p1">**</ept> in Talent.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">For data som ligger i Finance and Operations, men ikke finnes i Talent, koble sammen de to systemene ved å bruke <bpt id="p1">**</bpt>Konfigurer koblinger<ept id="p1">**</ept> i Talent.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="117">
-          <source>For more information about how to configure links between Talent and Finance and Operations, see <bpt id="p1">[</bpt>What's new or changed in Dynamics 365 for Talent Core HR (October 31, 2018)<ept id="p1">](whats-new-talent-october-31.md)</ept>.</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">Hvis du vil ha mer informasjon om hvordan du konfigurerer koblinger mellom Talent og Finance and Operations, se <bpt id="p1">[</bpt>Hva er nytt eller endret i Dynamics 365 for Talent Core HR (31. oktober 2018)<ept id="p1">](whats-new-talent-october-31.md)</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="118">
-          <source>Map financial dimensions</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">Tilordne finansdimensjoner</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="119">
-          <source>Sometimes when I import employees, they go into inactive workers in Finance and Operations.</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">Noen ganger når jeg importerer ansatte, blir de inaktive arbeidere i Finance and Operations.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="120">
-          <source>Why?</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Hvorfor?</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="121">
-          <source>You may get this error if employees don’t have an active employment detail record in Talent.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Du kan få denne feilen hvis ansatte ikke har en aktiv ansettelsesdetaljpost i Talent.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="122">
-          <source>To resolve this, go to <bpt id="p1">**</bpt>Personnel Management <ph id="ph1">\&gt;</ph> Employees <ph id="ph2">\&gt;</ph> Employment History <ph id="ph3">\&gt;</ph> Date Manager<ept id="p1">**</ept>, and verify that there is an active employment detail record.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Hvis du vil løse dette problemet, kan du gå til <bpt id="p1">**</bpt>Personaladministrasjon <ph id="ph1">\&gt;</ph> Ansatte <ph id="ph2">\&gt;</ph> Ansettelseshistorikk <ph id="ph3">\&gt;</ph> Datobehandling<ept id="p1">**</ept>, og kontroller at det finnes en aktiv ansettelsesdetaljpost.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="123">
-          <source>If I select to map only a subset of fields, will changes made to non-mapped fields trigger a sync?</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Hvis jeg velger å tilordne bare et delsett av feltene, vil endringer i ikke-tilordnede felt utløse en synkronisering?</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="124">
-          <source>Data sync follows the execution schedule.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Datasynkronisering følger tidsplanen for kjøring.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="125">
-          <source>The integration will pick up a record if any field in the record changes regardless if the field is part of integration mapping.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Integreringen henter en post hvis et felt i posten endres, uansett om feltet er en del av integreringstilordning.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="126">
-          <source>How can I send only active worker changes and not the terminated records?</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Hvordan kan jeg sende bare aktive arbeiderendringer og ikke de avsluttede postene?</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="127">
-          <source>With the use of "Advanced query", you can filter and reshape source data before passing it into the destination.</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">Ved hjelp av "Avansert spørring" kan du filtrere og endre kildedataene før de sendes til målet.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="128">
-          <source>Active workers advanced quaery</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Avansert spørring for aktive arbeidere</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="129">
-          <source>Can I specify which fields to send to Finance and Operations for a specific entity?</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">Kan jeg angi hvilke felt som skal sendes til Finance and Operations for en bestemt enhet?</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="130">
-          <source>Fields can be added or removed from the integration task.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Feltene kan legges til eller fjernes fra integrasjonsoppgaven.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="131">
-          <source>Not all data fields that exist on the Common Data Service entity will be populated from Core HR.</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">Ikke alle datafelt som finnes på Common Data Service-enheten, fylles ut fra Core HR.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="132">
-          <source>Additional data can be populated via PowerApps.</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">Tilleggsdata fylles via PowerApps.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="133">
-          <source>Add or remove fields to and from an integration task</source><target logoport:matchpercent="72" state="translated" state-qualifier="fuzzy-match">Legge til eller fjerne felt fra en integrasjonsoppgave</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="134">
-          <source>I set up integration as a batch job, but Talent lost connection to the destination system.</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">Jeg har satt opp integrasjon som en satsvis jobb, men Talent mistet forbindelsen til målsystemet.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="135">
-          <source>How can I send the same set of changes to the destination system?</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Hvordan kan jeg sende det samme settet med endringer til målsystemet?</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="136">
-          <source>No special setup is required for exception handling.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Det kreves ingen spesielle oppsett for unntaksbehandling.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="137">
-          <source>The Data Integrator will automatically catch and report errors which occur at the source and destination and will allow manual retries.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Dataintegratoren finner og rapporterer feil som oppstår ved kilden og målet, og tillater nye manuelle forsøk.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="138">
-          <source>However, it doesn’t allow manual data correction.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Den tillater imidlertid ikke manuell datakorrigering.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="139">
-          <source>If data updates are needed, that should happen either at the source or the destination.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Hvis dataoppdateringer kreves, skal dette skje enten ved kilden eller målet.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="140">
-          <source>Can I set up bi-directional integration?</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kan jeg konfigurere toveis integrasjon?</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="141">
-          <source>No, integration is currently one-way (Talent to Finance and Operations).</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nei, integrasjon er énveis (fra Talent til Finance and Operations).</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="142">
-          <source>However, there is a default template available to send data from Talent to Finance and Operations.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Det finnes imidlertid en standardmal som er tilgjengelig for å sende data fra Talent til Finance and Operations.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="143">
-          <source>Can I allow record deletion as part of my integration?</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kan jeg tillate sletting av oppføringer som en del av min integrasjon?</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="144">
-          <source>No, Data Integrator will not capture deleted records for data transfer.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nei, Dataintegrator registrerer ikke slettede poster for dataoverføring.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="145">
-          <source>Only data creation and updates (UPSERT) are currently included.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Bare oppretting og oppdatering av data (UPSERT) er for øyeblikket inkludert.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="146">
-          <source>Can I rerun the errored execution?</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kan jeg utføre kjøringen med feil på nytt?</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="147">
-          <source>If so, will it send a full file or only the changes?</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Sendes i så fall en fullstendig fil eller bare endringene?</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="148">
-          <source>The first run of Data Integrator is always a full run.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Den første kjøringen av Dataintegrator er alltid en full kjøring.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="149">
-          <source>Subsequent runs are based on change tracking.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Senere kjøringer er basert på endringssporing.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="150">
-          <source>When an error run is executed, it extracts the records in scope of the run and sends out the most recent changes from Common Data Service.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Når en feilkjøring utføres, trekker den ut postene i omfanget for kjøringen og sender ut de siste endringene fra Common Data Service.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="151">
-          <source>When I save the project, I get the error: “Project has mapping errors."</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Når jeg lagrer prosjektet, får jeg feilen: "Prosjektet har tilordningsfeil."</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="152">
-          <source>What do I do?</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Hva gjør jeg?</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="153">
-          <source>Check the setup of your integration keys, make any required changes to the setup, then refresh the entities in the project.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kontroller oppsettet for integrasjonsnøklene, foreta nødvendige endringer i oppsettet, og oppdater enhetene i prosjektet.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="154">
-          <source>When the default template is used, the integration keys will be automatically imported.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Når standardmalen brukes, blir nøklene for integrering automatisk importert.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="155">
-          <source>This issue may occur when new tasks are added to the existing template.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Dette problemet kan oppstå når nye aktiviteter legges til i den eksisterende malen.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="156">
-          <source>If I have N number of legal entities where workers have employments, do I need to create a mapping for each of them?</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Hvis jeg har N antall juridiske enheter der arbeidere har ansettelser, trenger jeg å opprette en tilordning for hver av dem?</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="157">
-          <source>Yes, for each legal entity in Finance and Operations, you'll need a separate integration project in the data integration.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ja, for hver juridiske enhet i Finance and Operations må du ha et eget integrasjonsprosjekt i dataintegreringen.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="158">
-          <source>I need to transfer data that is not part of the default template provided by Microsoft.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jeg vil overføre data som ikke er en del av standardmalen fra Microsoft.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="159">
-          <source>Can I do this?</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kan jeg gjøre dette?</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="160">
-          <source>Yes, fields can be added to or removed from the existing template.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ja, feltene kan legges til eller fjernes fra den eksisterende malen.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="161">
-          <source>The template can be modified to include additional data from other Common Data Service entities.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Malen kan endres for å ta med flere data fra andre Common Data Service-enheter.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="162">
-          <source>The entity must be in Common Data Service for it to be included in the template.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Enheten må være i Common Data Service for at den skal inkluderes i malen.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="163">
-          <source>I just created new Finance and Operations and Talent environments, and I'm getting the error "The data value violates integrity constraints."</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jeg har nettopp opprettet nye Finance and Operations- og Talent-miljøer, og jeg får feilen "Dataverdien bryter integritetsbegrensninger."</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="164">
-          <source>Why?</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Hvorfor?</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="165">
-          <source>Reasons for this error can include:</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Årsaker til denne feilen kan omfatte:</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="166">
-          <source>The data transfer resulted in duplicate records extraction at the source (Common Data Service).</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Dataoverføringen resulterte i duplisert postuttrekk ved kilden (Common Data Service).</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="167">
-          <source>The data transfer has null values for fields that are required in Finance and Operations.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Dataoverføringen har nullverdier for feltene som kreves i Finance and Operations.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="168">
-          <source>Verify the data that is in Common Data Service and meets the requirements of Finance and Operations.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kontroller at dataene er i Common Data Service og oppfyller kravene fra Finance and Operations.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="169">
-          <source>If there are execution errors and the Employee ID didn't sync, how do I find the history job which has the failed employee record?</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Hvis det er kjøringsfeil og ansatt-ID-en ikke synkroniseres, hvordan kan jeg finne den historiske jobben som har feil ansattpost?</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="170">
-          <source>Data Integrator will create multiple projects in Finance and Operations.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Dataintegratoren oppretter flere prosjekter i Finance and Operations.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="171">
-          <source>The relationship between the Data Integrator task and the Finance and Operations project is one to one.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Relasjonen mellom Dataintegrator-oppgaven og Finance and Operations-prosjektet er én til én.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="172">
-          <source>Trace the time from the Data Integrator execution history and look for the index -1 project in Finance and Operations.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Spor tiden fra Dataintegrator-kjøringshistorikken, og se etter indeksen -1 i Finance and Operations.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="173">
-          <source>If the task number is 9 in Data Integrator, the index in Finance and Operations is 8.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Hvis oppgavenummeret er 9 i Dataintegrator, er indeksen i Finance and Operations 8.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="174">
-          <source>Capture the task index from Data Integrator (in this example it is "9").</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Lagre oppgaveindeksen fra Dataintegrator (i dette eksemplet er det "9").</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="175">
-          <source>Capture task index from Data Integrator</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Lagre oppgaveindeksen fra Dataintegrator</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="176">
-          <source>Track the execution time of the project.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Spor kjøretiden for prosjektet.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="177">
-          <source>Track execution time of project</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Spore kjøretiden for prosjektet</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="178">
-          <source>In Finance and Operations, identify index - 1.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">I Finance and Operations, identifiser - 1.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="179">
-          <source>In this example, the project with suffix "8" and execution time of index "0" project matches with the execution time in Step 2.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">I dette eksemplet samsvarer prosjektet med suffikset "8" og utførelsestiden for indeksen "0"-prosjektet med kjøretiden i trinn 2.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="180">
-          <source>Identify index</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Identifisere indeks</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="181">
-          <source>After integrating Talent and Finance and Operations, I don’t see my Talent data in Finance and Operations.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Etter integrering av Talent og Finance and Operations vises ikke Talent-dataene mine i Finance and Operations.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="182">
-          <source>What do I do?</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Hva gjør jeg?</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="183">
-          <source>The integration to Finance and Operations is a two-step process.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Integreringen til Finance and Operations er en totrinns prosess.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="184">
-          <source>First, verify that the Talent data is updated and available in Common Data Service.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Først bekrefter du at Talent-dataene er oppdaterte og tilgjengelige i Common Data Service.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="185">
-          <source>This is a near real-time sync and can be verified in PowerApps by looking at the data within the data entities.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Dette er en nær sanntidssynkronisering og kan kontrolleres i PowerApps ved å se på dataene i dataenhetene.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="186">
-          <source>Data in Common Data Service</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Data i Common Data Service</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="187">
-          <source>If the data is not appearing as expected in Common Data Service, verify that the entity is supported in the integration.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Hvis dataene ikke vises som forventet i Common Data Service, må du kontrollere at enheten støttes i integreringen.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="188">
-          <source>To include additional data in Common Data Service, a change will be required on the Microsoft side.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Hvis du vil inkludere flere data i Common Data Service, må en endring utføres på Microsoft-siden.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="189">
-          <source>If the entity is supported and the data is available in Common Data Service, verify the mapping is correct in Data Integrator.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Hvis enheten støttes og dataene er tilgjengelige i Common Data Service, må du kontrollere tilordningen er riktig i Dataintegrator.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="190">
-          <source>If the integrator mapping looks okay, then verify the data management jobs have successfully run.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Hvis integratoren ser ok ut, må du bekrefte at databehandlingsjobbene er kjørt.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="191">
-          <source>Errors may occur during the execution of the batch jobs.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Feil kan oppstå under kjøring av satsvise jobber.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="192">
-          <source>For more information about Data Management, see <bpt id="p1">[</bpt>Data management<ept id="p1">](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-data-packages?toc=/fin-and-ops/toc.json)</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Hvis du vil ha mer informasjon om Databehandling, kan du se <bpt id="p1">[</bpt>Databehandling<ept id="p1">](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-data-packages?toc=/fin-and-ops/toc.json)</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="193">
-          <source>The addresses for my employees are incorrect after I import them into Finance and Operations.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Adressene til mine ansatte er feil når jeg importere dem til Finance and Operations.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="194">
-          <source>What should I do?</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Hva gjør jeg?</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="195">
-          <source>The number sequence for <bpt id="p1">**</bpt>Location ID<ept id="p1">**</ept> uses the same pattern in both Talent and Finance and Operations.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nummerserien for <bpt id="p1">**</bpt>Plasserings-ID<ept id="p1">**</ept> bruker samme mønster i både Talent og Finance and Operations.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="196">
-          <source>The number sequence needs to be unique on both sides so there are no address collisions when integrating data from Common Data Service to Finance and Operations.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nummerserien må være unik på begge sider, slik at det ikke finnes noen adressekollisjoner ved integrering av data fra Common Data Service til Finance and Operations.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="197">
-          <source>During implementation of Talent, verify that the number sequences are not the same in Talent and Finance and Operations.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Under implementering av Talent må du kontrollere at nummerseriene ikke er de samme i Talent og Finance and Operations.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="198">
-          <source>Validate that all number sequences are not identical where data may be maintained in both systems.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valider at alle nummerserier ikke er identiske der data kan vedlikeholdes i begge systemene.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="199">
-          <source>When creating my connection set, I am unable to see the connection in the Connection drop-down list.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Når jeg oppretter tilkoblingssettet mitt, vises ikke tilkoblingen i rullegardinlisten Tilkobling.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="200">
-          <source>What do I do?</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Hva gjør jeg?</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="201">
-          <source>Make sure when creating your connections, you choose Dynamics 365 for Finance and Operations (currently in preview) and Common Data Service.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kontroller at du velger Dynamics 365 for Finance and Operations (som er i forhåndsvisning) og Common Data Service når du oppretter tilkoblinger.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="202">
-          <source>When syncing employments, I get the errors “CompanyInfo_FK doesn’t exist" or “The value '12/31/2154 11:59:59 pm' in field 'Employment end date' is not found in the related table 'Employment'.” What should I do?</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Under synkronisering av distribusjoner får jeg feilen "CompanyInfo_FK finnes ikke" eller "Verdien '12/31/2154 11:59:59 pm' i feltet 'Sluttdato for ansettelse' finnes ikke i den relaterte tabellen 'Ansettelse'". Hva gjør jeg?</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="203">
-          <source>Ensure that you are mapping to the correct legal entities.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kontroller at du tilordner til de riktige juridiske enhetene.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="204">
-          <source>Legal entity syncing is not part of the default template, so it is expected that each legal entity that is present in Talent and Common Data Service is also present in Finance and Operations.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Den juridiske enheten er ikke en del av standardmalen, så det forventes at hver juridiske enhet som finnes i Talent og Common Data Service, også finnes i Finance and Operations.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="205">
-          <source>Also, make sure that you are selecting the correct legal entities for the associated Connection Set.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kontroller også at du velger de riktige juridiske enhetene for det tilknyttede tilkoblingssettet.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="206">
-          <source>After setting up my project, the field mapping for Finance and Operations appears to be empty.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Når jeg har definert prosjektet, ser det ut til at felttilordningen for Finance and Operations er tomt.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="207">
-          <source>What should I do?</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Hva gjør jeg?</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="208">
-          <source>Refresh the data entities in Finance and Operations by going to <bpt id="p1">**</bpt>Data management <ph id="ph1">\&gt;</ph> Framework Parameters <ph id="ph2">\&gt;</ph> Entity settings <ph id="ph3">\&gt;</ph> Refresh entity list.<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Oppdater dataenhetene i Finance and Operations ved å gå til <bpt id="p1">**</bpt>Databehandling <ph id="ph1">\&gt;</ph> Rammeverkparametere <ph id="ph2">\&gt;</ph> Enhetsinnstillinger <ph id="ph3">\&gt;</ph> Oppdater enhetsliste<ept id="p1">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="209">
-          <source>This should take a couple of minutes to complete, then you should see those mappings.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Dette tar noen minutter å fullføre, og deretter skal du se tilordningene.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="210">
-          <source>This issue occurs when new projects are created.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Dette problemet skjer ved opprettelse av nye prosjekter.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="211">
-          <source>Missing field mapping</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Mangler felttilordning</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="212">
-          <source>Additional resources</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tilleggsressurser</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="213">
-          <source>Data Integrator (DI):</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Dataintegrator (DI):</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="214">
-          <source><bpt id="p1">[</bpt>Integrate data into Common Data Service<ept id="p1">](https://docs.microsoft.com/en-us/powerapps/administrator/data-integrator)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Integrere data til Common Data Service<ept id="p1">](https://docs.microsoft.com/en-us/powerapps/administrator/data-integrator)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="215">
-          <source><bpt id="p1">[</bpt>Data Integrator error management and troubleshooting<ept id="p1">](https://docs.microsoft.com/en-us/powerapps/administrator/data-integrator-error-management)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Feiladministrasjon og feilsøking av dataintegrator<ept id="p1">](https://docs.microsoft.com/en-us/powerapps/administrator/data-integrator-error-management)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="216">
-          <source><bpt id="p1">[</bpt>Responding to DSR requests for system-generated logs in PowerApps, Microsoft Flow, and Common Data Service<ept id="p1">](https://docs.microsoft.com/en-us/powerapps/administrator/powerapps-gdpr-dsr-guide-systemlogs)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Svarer på DSR-forespørsler om systemgenererte logger i PowerApps, Microsoft Flow og Common Data Service<ept id="p1">](https://docs.microsoft.com/en-us/powerapps/administrator/powerapps-gdpr-dsr-guide-systemlogs)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="217">
-          <source>Data Management:</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Databehandling:</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="218">
-          <source><bpt id="p1">[</bpt>Data management<ept id="p1">](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-data-packages?toc=/fin-and-ops/toc.json)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Databehandling<ept id="p1">](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-data-packages?toc=/fin-and-ops/toc.json)</ept></target></trans-unit>
-      </group>
-    </body>
-  </file>
-</xliff>
+---
+title: Vanlige spørsmål om integrering fra Dynamics 365 for Talent til Dynamics 365 for Finance and Operations
+description: Dette emnet forklarer hvilke data som synkroniseres i en integrasjon med Talent og Finance and Operations.
+author: andreabichsel
+manager: AnnBe
+ms.date: 01/09/2019
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-365-talent
+ms.technology: ''
+audience: Application User
+ms.reviewer: anbichse
+ms.search.scope: Talent
+ms.custom: ''
+ms.assetid: ''
+ms.search.region: Global
+ms.author: anbichse
+ms.search.validFrom: 2018-12-31
+ms.dyn365.ops.version: Talent
+ms.openlocfilehash: db542e4df79480624ff6e5ff1996ad930fc1564b
+ms.sourcegitcommit: aec1dcd44274e9b8d0770836598fde5533b7b569
+ms.translationtype: HT
+ms.contentlocale: nb-NO
+ms.lasthandoff: 06/03/2019
+ms.locfileid: "1617349"
+---
+# <a name="dynamics-365-for-talent-to-dynamics-365-for-finance-and-operations-integration-faq"></a>Vanlige spørsmål om integrering fra Dynamics 365 for Talent til Dynamics 365 for Finance and Operations
+
+[!include [banner](includes/banner.md)]
+
+Dette emnet gir svar på vanlige spørsmål som er tilknyttet hvilke data som synkroniseres når Dynamics 365 for Talent er integrert med Dynamics 365 for Finance and Operations.
+
+## <a name="is-all-data-synchronized-or-just-some-data-entities"></a>Er alle data synkronisert eller bare noen dataenheter?
+
+Med Core Human Resources (HR) synkroniseres et delsett av dataene. For en liste over alle enheter, kan du se [Integrasjon fra Dynamics 365 for Talent til Dynamics 365 for Finance and Operations](talent-financeandoperations-integration.md).
+
+For Attract og Onboard hører alle data til i Common Data Service.
+
+## <a name="can-i-create-a-new-mapping-without-using-the-templates"></a>Kan jeg opprette en ny tilordning uten å bruke malene?
+
+Malene er startpunktet. Du kan opprette din egen mal, men en mal er alltid nødvendig når du oppretter et prosjekt for integrasjon. Hvis du vil ha mer informasjon om dataintegrator (DI), maler og prosjekter, kan du se [Integrere data til Common Data Service](https://docs.microsoft.com/en-us/powerapps/administrator/data-integrator).
+
+## <a name="can-i-map-financial-dimensions-to-transfer-between-talent-and-finance-and-operations"></a>Kan jeg tilordne finansdimensjoner for å overføre mellom Talent og Finance and Operations?
+
+Finansdimensjoner er ikke i Common Data Service og er dermed ikke en del av standardmalen. Denne enheten er planlagt, men ingen tidslinje for frigivelse er for øyeblikket tilgjengelig.
+
+For data som ligger i Finance and Operations, men ikke finnes i Talent, koble sammen de to systemene ved å bruke **Konfigurer koblinger** i Talent. Hvis du vil ha mer informasjon om hvordan du konfigurerer koblinger mellom Talent og Finance and Operations, se [Hva er nytt eller endret i Dynamics 365 for Talent Core HR (31. oktober 2018)](whats-new-talent-october-31.md).
+
+![Tilordne finansdimensjoner](media/MapFinancialDimensions.png)
+
+## <a name="sometimes-when-i-import-employees-they-go-into-inactive-workers-in-finance-and-operations-why"></a>Noen ganger når jeg importerer ansatte, blir de inaktive arbeidere i Finance and Operations. Hvorfor?
+
+Du kan få denne feilen hvis ansatte ikke har en aktiv ansettelsesdetaljpost i Talent. Hvis du vil løse dette problemet, kan du gå til **Personaladministrasjon \> Ansatte \> Ansettelseshistorikk \> Datobehandling**, og kontroller at det finnes en aktiv ansettelsesdetaljpost.
+
+## <a name="if-i-select-to-map-only-a-subset-of-fields-will-changes-made-to-non-mapped-fields-trigger-a-sync"></a>Hvis jeg velger å tilordne bare et delsett av feltene, vil endringer i ikke-tilordnede felt utløse en synkronisering?
+
+Datasynkronisering følger tidsplanen for kjøring. Integreringen henter en post hvis et felt i posten endres, uansett om feltet er en del av integreringstilordning.
+
+## <a name="how-can-i-send-only-active-worker-changes-and-not-the-terminated-records"></a>Hvordan kan jeg sende bare aktive arbeiderendringer og ikke de avsluttede postene?
+
+Ved hjelp av "Avansert spørring" kan du filtrere og endre kildedataene før de sendes til målet.
+
+![Avansert spørring for aktive arbeidere](media/MapOnlyActiveWorkersAdvancedQuery.png)
+
+## <a name="can-i-specify-which-fields-to-send-to-finance-and-operations-for-a-specific-entity"></a>Kan jeg angi hvilke felt som skal sendes til Finance and Operations for en bestemt enhet?
+
+Feltene kan legges til eller fjernes fra integrasjonsoppgaven. Ikke alle datafelt som finnes på Common Data Service-enheten, fylles ut fra Core HR.
+Tilleggsdata fylles via PowerApps.
+
+![Legge til eller fjerne felt fra en integrasjonsoppgave](media/SpecifyFieldsIncludedInIntegration.png)
+
+## <a name="i-set-up-integration-as-a-batch-job-but-talent-lost-connection-to-the-destination-system-how-can-i-send-the-same-set-of-changes-to-the-destination-system"></a>Jeg har satt opp integrasjon som en satsvis jobb, men Talent mistet forbindelsen til målsystemet. Hvordan kan jeg sende det samme settet med endringer til målsystemet?
+
+Det kreves ingen spesielle oppsett for unntaksbehandling. Dataintegratoren finner og rapporterer feil som oppstår ved kilden og målet, og tillater nye manuelle forsøk. Den tillater imidlertid ikke manuell datakorrigering. Hvis dataoppdateringer kreves, skal dette skje enten ved kilden eller målet.
+
+## <a name="can-i-set-up-bi-directional-integration"></a>Kan jeg konfigurere toveis integrasjon?
+
+Nei, integrasjon er énveis (fra Talent til Finance and Operations). Det finnes imidlertid en standardmal som er tilgjengelig for å sende data fra Talent til Finance and Operations.
+
+## <a name="can-i-allow-record-deletion-as-part-of-my-integration"></a>Kan jeg tillate sletting av oppføringer som en del av min integrasjon?
+
+Nei, Dataintegrator registrerer ikke slettede poster for dataoverføring. Bare oppretting og oppdatering av data (UPSERT) er for øyeblikket inkludert.
+
+## <a name="can-i-rerun-the-errored-execution-if-so-will-it-send-a-full-file-or-only-the-changes"></a>Kan jeg utføre kjøringen med feil på nytt? Sendes i så fall en fullstendig fil eller bare endringene?
+
+Den første kjøringen av Dataintegrator er alltid en full kjøring. Senere kjøringer er basert på endringssporing. Når en feilkjøring utføres, trekker den ut postene i omfanget for kjøringen og sender ut de siste endringene fra Common Data Service.
+
+## <a name="when-i-save-the-project-i-get-the-error-project-has-mapping-errors-what-do-i-do"></a>Når jeg lagrer prosjektet, får jeg feilen: "Prosjektet har tilordningsfeil." Hva gjør jeg?
+
+Kontroller oppsettet for integrasjonsnøklene, foreta nødvendige endringer i oppsettet, og oppdater enhetene i prosjektet.
+
+Når standardmalen brukes, blir nøklene for integrering automatisk importert. Dette problemet kan oppstå når nye aktiviteter legges til i den eksisterende malen.
+
+## <a name="if-i-have-n-number-of-legal-entities-where-workers-have-employments-do-i-need-to-create-a-mapping-for-each-of-them"></a>Hvis jeg har N antall juridiske enheter der arbeidere har ansettelser, trenger jeg å opprette en tilordning for hver av dem?
+
+Ja, for hver juridiske enhet i Finance and Operations må du ha et eget integrasjonsprosjekt i dataintegreringen.
+
+## <a name="i-need-to-transfer-data-that-is-not-part-of-the-default-template-provided-by-microsoft-can-i-do-this"></a>Jeg vil overføre data som ikke er en del av standardmalen fra Microsoft. Kan jeg gjøre dette?
+
+Ja, feltene kan legges til eller fjernes fra den eksisterende malen. Malen kan endres for å ta med flere data fra andre Common Data Service-enheter. Enheten må være i Common Data Service for at den skal inkluderes i malen. 
+
+## <a name="i-just-created-new-finance-and-operations-and-talent-environments-and-im-getting-the-error-the-data-value-violates-integrity-constraints-why"></a>Jeg har nettopp opprettet nye Finance and Operations- og Talent-miljøer, og jeg får feilen "Dataverdien bryter integritetsbegrensninger." Hvorfor?
+
+Årsaker til denne feilen kan omfatte:
+
+- Dataoverføringen resulterte i duplisert postuttrekk ved kilden (Common Data Service).
+
+- Dataoverføringen har nullverdier for feltene som kreves i Finance and Operations. Kontroller at dataene er i Common Data Service og oppfyller kravene fra Finance and Operations.
+
+## <a name="if-there-are-execution-errors-and-the-employee-id-didnt-sync-how-do-i-find-the-history-job-which-has-the-failed-employee-record"></a>Hvis det er kjøringsfeil og ansatt-ID-en ikke synkroniseres, hvordan kan jeg finne den historiske jobben som har feil ansattpost?
+
+Dataintegratoren oppretter flere prosjekter i Finance and Operations. Relasjonen mellom Dataintegrator-oppgaven og Finance and Operations-prosjektet er én til én.
+
+Spor tiden fra Dataintegrator-kjøringshistorikken, og se etter indeksen -1 i Finance and Operations. Hvis oppgavenummeret er 9 i Dataintegrator, er indeksen i Finance and Operations 8.
+
+1. Lagre oppgaveindeksen fra Dataintegrator (i dette eksemplet er det "9").
+
+![Lagre oppgaveindeksen fra Dataintegrator](media/CaptureTaskIndex.png)
+
+2. Spor kjøretiden for prosjektet.
+
+![Spore kjøretiden for prosjektet](media/CaptureTimeOfExecution.png)
+
+3. I Finance and Operations, identifiser - 1. I dette eksemplet samsvarer prosjektet med suffikset "8" og utførelsestiden for indeksen "0"-prosjektet med kjøretiden i trinn 2.
+
+![Identifisere indeks](media/IdentifyIndex.png)
+
+## <a name="after-integrating-talent-and-finance-and-operations-i-dont-see-my-talent-data-in-finance-and-operations-what-do-i-do"></a>Etter integrering av Talent og Finance and Operations vises ikke Talent-dataene mine i Finance and Operations. Hva gjør jeg?
+
+Integreringen til Finance and Operations er en totrinns prosess. Først bekrefter du at Talent-dataene er oppdaterte og tilgjengelige i Common Data Service. Dette er en nær sanntidssynkronisering og kan kontrolleres i PowerApps ved å se på dataene i dataenhetene.
+
+![Data i Common Data Service](media/DataInCDS.png)
+
+Hvis dataene ikke vises som forventet i Common Data Service, må du kontrollere at enheten støttes i integreringen. Hvis du vil inkludere flere data i Common Data Service, må en endring utføres på Microsoft-siden.
+
+Hvis enheten støttes og dataene er tilgjengelige i Common Data Service, må du kontrollere tilordningen er riktig i Dataintegrator. Hvis integratoren ser ok ut, må du bekrefte at databehandlingsjobbene er kjørt. Feil kan oppstå under kjøring av satsvise jobber. Hvis du vil ha mer informasjon om Databehandling, kan du se [Databehandling](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-data-packages?toc=/fin-and-ops/toc.json).
+
+## <a name="the-addresses-for-my-employees-are-incorrect-after-i-import-them-into-finance-and-operations-what-should-i-do"></a>Adressene til mine ansatte er feil når jeg importere dem til Finance and Operations. Hva gjør jeg?
+
+Nummerserien for **Plasserings-ID** bruker samme mønster i både Talent og Finance and Operations. Nummerserien må være unik på begge sider, slik at det ikke finnes noen adressekollisjoner ved integrering av data fra Common Data Service til Finance and Operations.
+
+Under implementering av Talent må du kontrollere at nummerseriene ikke er de samme i Talent og Finance and Operations. Valider at alle nummerserier ikke er identiske der data kan vedlikeholdes i begge systemene.
+
+## <a name="when-creating-my-connection-set-i-am-unable-to-see-the-connection-in-the-connection-drop-down-list-what-do-i-do"></a>Når jeg oppretter tilkoblingssettet mitt, vises ikke tilkoblingen i rullegardinlisten Tilkobling. Hva gjør jeg?
+
+Kontroller at du velger Dynamics 365 for Finance and Operations (som er i forhåndsvisning) og Common Data Service når du oppretter tilkoblinger.
+
+## <a name="when-syncing-employments-i-get-the-errors-companyinfofk-doesnt-exist-or-the-value-12312154-115959-pm-in-field-employment-end-date-is-not-found-in-the-related-table-employment-what-should-i-do"></a>Under synkronisering av distribusjoner får jeg feilen "CompanyInfo_FK finnes ikke" eller "Verdien '12/31/2154 11:59:59 pm' i feltet 'Sluttdato for ansettelse' finnes ikke i den relaterte tabellen 'Ansettelse'". Hva gjør jeg?
+
+Kontroller at du tilordner til de riktige juridiske enhetene. Den juridiske enheten er ikke en del av standardmalen, så det forventes at hver juridiske enhet som finnes i Talent og Common Data Service, også finnes i Finance and Operations.
+Kontroller også at du velger de riktige juridiske enhetene for det tilknyttede tilkoblingssettet.
+
+## <a name="after-setting-up-my-project-the-field-mapping-for-finance-and-operations-appears-to-be-empty-what-should-i-do"></a>Når jeg har definert prosjektet, ser det ut til at felttilordningen for Finance and Operations er tomt. Hva gjør jeg?
+
+Oppdater dataenhetene i Finance and Operations ved å gå til **Databehandling \> Rammeverkparametere \> Enhetsinnstillinger \> Oppdater enhetsliste**. Dette tar noen minutter å fullføre, og deretter skal du se tilordningene. Dette problemet skjer ved opprettelse av nye prosjekter.
+
+![Mangler felttilordning](media/MissingFieldMapping.png)
+
+## <a name="additional-resources"></a>Tilleggsressurser
+
+- Dataintegrator (DI): 
+
+  - [Integrere data til Common Data Service](https://docs.microsoft.com/en-us/powerapps/administrator/data-integrator)
+
+  - [Feiladministrasjon og feilsøking av dataintegrator](https://docs.microsoft.com/en-us/powerapps/administrator/data-integrator-error-management)
+
+  - [Svarer på DSR-forespørsler om systemgenererte logger i PowerApps, Microsoft Flow og Common Data Service](https://docs.microsoft.com/en-us/powerapps/administrator/powerapps-gdpr-dsr-guide-systemlogs)
+
+- Databehandling:
+
+  - [Databehandling](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-data-packages?toc=/fin-and-ops/toc.json)
