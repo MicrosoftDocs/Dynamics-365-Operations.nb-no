@@ -1,453 +1,155 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<xliff xmlns:logoport="urn:logoport:xliffeditor:xliff-extras:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xliffext="urn:microsoft:content:schema:xliffextensions" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
-  <file datatype="xml" source-language="en-US" original="performance-management-overview.md" target-language="nb-NO">
-    <header>
-      <tool tool-company="Microsoft" tool-version="1.0-7889195" tool-name="mdxliff" tool-id="mdxliff"/>
-      <xliffext:skl_file_name>performance-management-overview.11e250.05d8986d69abba4dbba7c30aad5a7e4626ceb5b1.skl</xliffext:skl_file_name>
-      <xliffext:version>1.2</xliffext:version>
-      <xliffext:ms.openlocfilehash>05d8986d69abba4dbba7c30aad5a7e4626ceb5b1</xliffext:ms.openlocfilehash>
-      <xliffext:ms.sourcegitcommit>cadce85ca3004d53caf6bc49147a524c1bfd421f</xliffext:ms.sourcegitcommit>
-      <xliffext:ms.lasthandoff>05/16/2019</xliffext:ms.lasthandoff>
-      <xliffext:ms.openlocfilepath>articles\talent\performance-management-overview.md</xliffext:ms.openlocfilepath>
-    </header>
-    <body>
-      <group extype="content" id="content">
-        <trans-unit xml:space="preserve" translate="yes" id="101" restype="x-metadata">
-          <source>Performance management</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ytelsesstyring</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="102" restype="x-metadata">
-          <source>The performance management process lets employees document and discuss their performance with their manager.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ytelsesstyringsprosessen lar ansatte dokumentere og diskutere ytelsen deres med sin overordnede.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="103" restype="x-metadata">
-          <source>In turn, managers can then provide feedback and guidance to the employees.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ledere kan deretter gi tilbakemelding og veiledning til ansatte.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="104">
-          <source>Performance management</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ytelsesstyring</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="105">
-          <source>The performance management process lets employees document and discuss their performance with their manager.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ytelsesstyringsprosessen lar ansatte dokumentere og diskutere ytelsen deres med sin overordnede.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="106">
-          <source>In turn, managers can then provide feedback and guidance to the employees.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ledere kan deretter gi tilbakemelding og veiledning til ansatte.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="107">
-          <source>As the following diagram shows, there are three pages that help you manage the process:</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Som diagrammet nedenfor viser, er det tre sider som kan hjelpe deg med å administrere prosessen:</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="108">
-          <source>Performance journal</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ytelsesjournal</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="109">
-          <source>Goals</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Mål</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="110">
-          <source>Performance review</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Medarbeidersamtale</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="111">
-          <source>The following diagram shows how the primary components of performance management are related to each other.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Diagrammet nedenfor viser hvordan hovedkomponentene i ytelsesstyring er relatert til hverandre.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="112">
-          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Performance process overview<ept id="p1">](./media/hcm_performanceoverviewdiagram-300x189.png)](./media/hcm_performanceoverviewdiagram.png)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt><ph id="ph1">![</ph>Oversikt over ytelsesprosess<ept id="p1">](./media/hcm_performanceoverviewdiagram-300x189.png)](./media/hcm_performanceoverviewdiagram.png)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="113">
-          <source>Performance journal</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ytelsesjournal</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="114">
-          <source>As an employee, before you complete your review, you often gather information about activities or events that contributed to your success during a review period.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Som ansatt, før du fullfører vurderingen, samler du ofte informasjon om aktiviteter eller hendelser som bidro til din suksess i løpet av en vurderingsperiode.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="115">
-          <source>The performance journal is the place where you can document those activities and events.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ytelsesjournalen er stedet der du kan dokumentere de aktivitetene og hendelsene.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="116">
-          <source>In addition, you can create future activities that must be completed to help you accomplish a goal, meet the requirements of a development plan, or meet a performance commitment.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Du kan dessuten opprette fremtidige aktiviteter som må fullføres for å hjelpe deg med å oppnå et mål, oppfylle kravene i en utviklingsplan eller oppfylle en ytelsesforpliktelse.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="117">
-          <source>Performance journals aren’t required in order to create goals or performance reviews.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ytelsesjournaler er ikke nødvendig for å opprette mål eller ytelsesvurderinger.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="118">
-          <source>There are two versions of the performance journal: the employee version, which is accessible through the <bpt id="p1">**</bpt>Employee self-service<ept id="p1">**</ept> workspace (<bpt id="p2">**</bpt>ESS<ept id="p2">**</ept>), and the manager version, which is accessible through the <bpt id="p3">**</bpt>Manager self-service<ept id="p3">**</ept> workspace (<bpt id="p4">**</bpt>MSS<ept id="p4">**</ept>).</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Det finnes to versjoner av ytelsesjournalen: ansattversjonen som er tilgjengelig via arbeidsområdet <bpt id="p1">**</bpt>Ansattselvbetjening<ept id="p1">**</ept> (<bpt id="p2">**</bpt>ESS<ept id="p2">**</ept>), og lederversjonen som er tilgjengelig via arbeidsområdet <bpt id="p3">**</bpt>Lederselvbetjening<ept id="p3">**</ept> (<bpt id="p4">**</bpt>MSS<ept id="p4">**</ept>).</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="119">
-          <source>Employees can create journals for themselves and can choose to share them with their manager.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ansatte kan opprette journaler for seg selv, og kan velge å dele dem med lederen.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="120">
-          <source>Managers can create journals for their team and can choose to share them with their employees.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ledere kan opprette journaler for teamet, og kan velge å dele dem med de ansatte.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="121">
-          <source>When it’s accessed from the <bpt id="p1">**</bpt>ESS<ept id="p1">**</ept> workspace, the <bpt id="p2">**</bpt>performance journal<ept id="p2">**</ept> page lets you capture the following information:</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Når den åpnes fra <bpt id="p1">**</bpt>ESS<ept id="p1">**</ept>-arbeidsområdet, kan du angi følgende informasjon på siden til <bpt id="p2">**</bpt>ytelsesjournalen<ept id="p2">**</ept>:</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="122">
-          <source>A title for the activity</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">En tittel på aktiviteten</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="123">
-          <source>A description for the activity, which includes detailed information about the activity</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">En beskrivelse av aktiviteten, som inneholder detaljert informasjon om aktiviteten</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="124">
-          <source>The date when the journal was created</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Datoen da journalen ble opprettet</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="125">
-          <source>The dates when the activity was started and completed</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Datoen da aktiviteten ble startet og fullført</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="126">
-          <source>A status setting that indicates whether the activity can be shared with the employee’s manager</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">En statusinnstilling som angir om aktiviteten kan deles med den ansattes overordnede</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="127">
-          <source>A setting that indicates whether the entry is part of a development plan</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">En innstilling som angir om posten er en del av en utviklingsplan</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="128">
-          <source>Keywords that will help you search for similar performance journal items</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nøkkelord som hjelper deg med å søke etter lignende ytelsesjournalelementer</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="129">
-          <source>You can also link the performance journal to an external website by storing the URL of that site.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Du kan også koble ytelsesjournalen til et eksternt webområde ved å lagre URL-adressen til dette området.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="130">
-          <source>If the journal is related to goals or performance reviews, you can also link it to one or more of them.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Hvis journalen er knyttet til mål eller ytelsesvurderinger, kan du også koble den til én eller flere av dem.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="131">
-          <source>When the performance journal is accessed from the <bpt id="p1">**</bpt>MSS<ept id="p1">**</ept> page, you can enter the same information that you can enter for the employee journal.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Når ytelsesjournalen åpnes fra <bpt id="p1">**</bpt>MSS<ept id="p1">**</ept>-siden, kan du angi de samme opplysningene som du kan for ansattjournalen.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="132">
-          <source>In addition, you can specify the employee that the journal is being created for.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">I tillegg kan du angi ansatte som journalen opprettes for.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="133">
-          <source>You can choose whether to share the manager journal with your employee.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Du kan velge om du vil dele lederjournalen med ansatte.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="134">
-          <source>Send feedback</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Send tilbakemelding</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="135">
-          <source>The performance journal contains an additional feature that is named Feedback.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ytelsesjournalen inneholder en tilleggsfunksjon som heter Tilbakemelding.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="136">
-          <source>When you click on <bpt id="p1">**</bpt>Send feedback<ept id="p1">**</ept>, you can select an employee and provide feedback to that employee via email.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Når du klikker <bpt id="p1">**</bpt>Send tilbakemelding<ept id="p1">**</ept>, kan du velge en ansatt og gi tilbakemelding til den ansatte via e-post.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="137">
-          <source>The message is sent to the employee who is receiving the feedback, that employee’s manager, the employee who is sending the feedback, and that employee’s manager.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Meldingen sendes til den ansatte som mottar tilbakemeldingen, lederen til denne ansatte, den ansatte som sender tilbakemeldingen, og lederen til denne ansatte.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="138">
-          <source>A performance journal entry is created for each person who receives the feedback message.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Det opprettes en ytelsesjournaloppføring for hver person som mottar tilbakemeldingen.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="139">
-          <source>Goals</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Mål</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="140">
-          <source>The <bpt id="p1">**</bpt>performance goals<ept id="p1">**</ept> page helps you track the goals that you and your manager have created for you.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">På <bpt id="p1">**</bpt>Ytelsesmål<ept id="p1">**</ept>-siden kan du spore målene som du og din overordnede har opprettet for deg.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="141">
-          <source>You can create any number of goals, and those goals can span different periods and performance reviews.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Du kan opprette så mange mål du vil, og disse målene kan strekke seg over forskjellige perioder og ytelsesvurderinger.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="142">
-          <source>You can also create simple or complex goals, depending on the amount of information that you want to enter about the goal.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Du kan også opprette enkle og komplekse mål, avhengig av hvor mye informasjon du vil angi om målet.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="143">
-          <source>Goals aren’t required for performance reviews.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Mål er ikke nødvendig for ytelsesvurderinger.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="144">
-          <source>A basic goal must include the following information:</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Et grunnleggende mål må inneholde følgende informasjon:</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="145">
-          <source>A short name</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Et kort navn</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="146">
-          <source>A longer description of the goal</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">En lengre beskrivelse av målet</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="147">
-          <source>The anticipated start date for the goal</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Forventet startdato for målet</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="148">
-          <source>The estimated completion date for the goal</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Forventet fullføringsdato for målet</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="149">
-          <source>You can also specify a goal category to help you organize your goals.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Du kan også angi en målkategori som kan hjelpe deg med å organisere målene dine.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="150">
-          <source>Managers will also see the name of the person that the goal is assigned to.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ledere vil også se navnet på personen som målet er tilordnet til.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="151">
-          <source>If you have more detailed instructions for a goal, you can create goal topics.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Hvis du har mer detaljerte instruksjoner for et mål, kan du opprette målemner.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="152">
-          <source>These topics include a title and a description.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Disse emnene inkluderer en tittel og en beskrivelse.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="153">
-          <source>You can include as many topics as you require to help guarantee that the details of the goal are clear to both the employee and the manager.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Du kan inkludere så mange emner du vil, slik at du er sikker på at målet er klart både for ansatte og ledere.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="154">
-          <source>Both employees and managers can also enter comments about the progress of the goals.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Både ansatte og ledere kan også angi kommentarer om fremdriften til målene.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="155">
-          <source>Goals often have measurable results.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Mål har ofte målbare resultater.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="156">
-          <source>You can add measurements to track the target goal results and the actual results.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Du kan legge til målinger for å spore målresultater og faktiske resultater.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="157">
-          <source>If the measurement is a stretch goal, you can mark the measurement by using the <bpt id="p1">**</bpt>Stretch goal<ept id="p1">**</ept> option.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Hvis målingen er et strekkmål, kan du merke målingen ved hjelp av <bpt id="p1">**</bpt>Strekkmål<ept id="p1">**</ept>-alternativet.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="158">
-          <source>Your performance journal will contain activities that provide your manager with more information about how you accomplished your goal.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ytelsesjournalen inneholder aktiviteter som gir lederen mer informasjon om hvordan du oppnådde målet.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="159">
-          <source>If you’ve linked a performance journal to the goal, it appears in the <bpt id="p1">**</bpt>Activities<ept id="p1">**</ept> section of that goal.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Hvis du har knyttet en ytelsesjournal til målet, vises det i <bpt id="p1">**</bpt>Aktiviteter<ept id="p1">**</ept>-delen av dette målet.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="160">
-          <source>You can also add a new performance journal from the <bpt id="p1">**</bpt>performance goals<ept id="p1">**</ept> page.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Du kan også legge til en ny ytelsesjournal fra <bpt id="p1">**</bpt>Ytelsesmål<ept id="p1">**</ept>-siden.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="161">
-          <source>That performance journal will be automatically linked to the goal.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Denne ytelsesjournalen kobles automatisk til målet.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="162">
-          <source>If you want to attach a document to the goal, such as a certificate of completion, you can attach it in the <bpt id="p1">**</bpt>Attachments<ept id="p1">**</ept> section of the <bpt id="p2">**</bpt>performance goals<ept id="p2">**</ept> page.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Hvis du vil knytte et dokument til målet, for eksempel en fullførelsesattest, kan du legge det ved i<bpt id="p1">**</bpt>Vedlegg<ept id="p1">**</ept>-delen på <bpt id="p2">**</bpt>Ytelsesmål<ept id="p2">**</ept>-siden.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="163">
-          <source>A document viewer is provided so that you can quickly view the contents of any attached document.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Et visningsprogram gjør at du raskt kan vise innholdet i et vedlagt dokument.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="164">
-          <source>You can create a template from a goal and then use the template to create new goals that are based on the template.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Du kan opprette en mal fra et mål, og deretter bruke malen til å opprette nye mål som er basert på malen.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="165">
-          <source>When you create a template from a goal, the description, topics, and target measurements are saved.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Når du oppretter en mal fra et mål, lagres beskrivelsen, emnene og målingene for målet.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="166">
-          <source>However, all actual measurements, completion dates, and topic comments are removed.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Alle faktiske målinger, fullføringsdatoer og emnekommentarer fjernes imidlertid.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="167">
-          <source>Performance reviews</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ytelsesvurderinger</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="168">
-          <source>Performance reviews are more formally known as discussions.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ytelsesvurderinger er også kjent som diskusjoner.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="169">
-          <source>They are now flexible enough to support continuous feedback, development plans and more formal reviews.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">De er fleksible nok til å støtte fortløpende tilbakemelding, utviklingsplaner og mer formelle vurderinger.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="170">
-          <source>You can quickly create small meetings for two people, such as a one-on-one meeting, or you can build a more complex review that matches the review process of your company.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Du kan raskt opprette mindre møter for to personer, for eksempel et én-til-én-møte, eller du kan lage en mer omfattende vurdering som samsvarer med vurderingsprosessen i firmaet.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="171">
-          <source>A meeting such as a one-on-one is a simple review, and requires a short name, a longer description of the contents of the meeting, and the date of the meeting.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Et møte av typen én-til-én er en enkel vurdering, og krever et kort navn, en lengre beskrivelse av innholdet i møtet og datoen for møtet.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="172">
-          <source>A simple review includes the same information, plus the review period that is being discussed.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">En enkel vurdering inneholder den samme informasjonen samt vurderingsperioden som diskuteres.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="173">
-          <source>Managers will also see the name of the person that the review is created for.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ledere vil også se navnet på personen som vurderingen opprettes for.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="174">
-          <source>For more detailed reviews, you can pull in active and completed goals, and enter comments about them.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Hvis du vil ha mer detaljerte vurderinger, kan du trekke inn aktive og fullførte mål, og angi kommentarer om dem.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="175">
-          <source>All performance journal activities and measurements that are related to a goal will appear on the review.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Alle ytelsesjournalaktiviteter og målinger som er knyttet til et mål, vil vises i vurderingen.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="176">
-          <source>After the review is finalized, a snapshot of the measurements is stored to retain the history of those items at the time of the review.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Når vurderingen er fullført, lagres et øyeblikksbilde av målingene for å bevare historikken for disse elementene på tidspunktet for vurderingen.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="177">
-          <source>You can also use the <bpt id="p1">**</bpt>Competencies<ept id="p1">**</ept> section to discuss, review, and rate the employee’s competencies.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Du kan også bruke <bpt id="p1">**</bpt>Kompetanser<ept id="p1">**</ept>-delen for å diskutere, gjennomgå og vurdere den ansattes kompetanser.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="178">
-          <source>You can add as many competencies as you require, and you can choose whether the competency must be rated.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Du kan legge til så mange kompetanser som du trenger, og du kan velge om kompetansen skal vurderes.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="179">
-          <source>You can create new reviews that are based on templates that you’ve created.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Du kan opprette nye vurderinger som er basert på maler som du har opprettet.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="180">
-          <source>For example, you can have a template for one-on-ones, development plans, or periodic reviews.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Du kan for eksempel ha en mal for én-til-én-vurderinger, utviklingsplaner eller periodiske vurderinger.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="181">
-          <source>You can select the template when you create a new review.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Du kan velge malen når du oppretter en ny vurdering.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="182">
-          <source>Components you can include in performance reviews</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Komponenter som kan inkluderes i ytelsesvurderinger</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="183">
-          <source>You can include a number of types of information in performance reviews.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Du kan inkludere mange typer informasjon i ytelsesvurderinger.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="184">
-          <source>They include review detail, measurements, activities, ratings, sign-offs and attachments.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Disse inkluderer detaljer om gjennomganger, målinger, aktiviteter, vurderinger, godkjenninger og vedlegg.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="185">
-          <source>Review detail</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vurderingsdetaljer</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="186">
-          <source>You can pull in your goals into the review details and make comments on them.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Du kan trekke inn målene dine i vurderingsdetaljene og legge til kommentarer om dem.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="187">
-          <source>You can also set up competencies and make comments on them.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Du kan også konfigurere kompetanser og legge til kommentarer om dem.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="188">
-          <source>Measurements</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Mål</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="189">
-          <source>You can view measurements that are related to a goal or review.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Du kan vise målinger som er knyttet til et mål eller en vurdering.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="190">
-          <source>You can also add a new measurement that is related to the review.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Du kan også legge til en ny måling som er knyttet til vurderingen.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="191">
-          <source>Activities</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Aktiviteter</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="192">
-          <source>You can show performance journal items that are related to the review.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Du kan vise ytelsesjournalelementer som er knyttet til vurderingen.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="193">
-          <source>You can also add a performance journal, which will be automatically linked to the review.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Du kan også legge til en ytelsesjournal som skal kobles automatisk til vurderingen.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="194">
-          <source>Ratings</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vurderinger</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="195">
-          <source>You can apply a rating to any goal or competency that is on the review.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Du kan bruke en vurdering på mål eller kompetanser som er i vurderingen.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="196">
-          <source>You can define the rating models for each review.</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">Du kan definere vurderingsmodellene for hver vurdering.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="197">
-          <source>The defaults for ratings are on the <bpt id="p1">**</bpt>Human resources shared parameters<ept id="p1">**</ept> page under <bpt id="p2">**</bpt>Performance.<ept id="p2">**</ept></source><target logoport:matchpercent="91" state="translated" state-qualifier="fuzzy-match">Standarder for vurderinger finner du på siden <bpt id="p1">**</bpt>Delte parametere for personaladministrasjon<ept id="p1">**</ept> under <bpt id="p2">**</bpt>Ytelse<ept id="p2">**</ept>.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="198">
-          <source>Sign-offs</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">Godkjenninger</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="199">
-          <source>The employee and/or the manager will be listed on the review based on the review parameters that you set.</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">Ansatte og/eller ledere vises i vurderingen basert på vurderingsparameterne du angir.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="200">
-          <source>The reviews can be required or optional.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vurderingene kan være obligatoriske eller valgfrie.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="201">
-          <source>Once all of the required sign-offs are made, the review will be marked with a status of Complete.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Når alle nødvendige godkjenninger er foretatt, merkes vurderingen med statusen Fullført.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="202">
-          <source>Attachments</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vedlegg</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="203">
-          <source>You can attach a document to a review in the <bpt id="p1">**</bpt>Attachments<ept id="p1">**</ept> section of the <bpt id="p2">**</bpt>reviews<ept id="p2">**</ept> page.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Du kan knytte et dokument til en vurdering i <bpt id="p1">**</bpt>Vedlegg<ept id="p1">**</ept>-delen på siden med <bpt id="p2">**</bpt>vurderinger<ept id="p2">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="204">
-          <source>A document viewer is provided so that you can quickly view the contents of any attached document.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Et visningsprogram gjør at du raskt kan vise innholdet i et vedlagt dokument.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="205">
-          <source>Workflow for performance management</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Arbeidsflyt for ytelsesstyring</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="206">
-          <source>You can use the Worker Review workflow to control the approval of a review.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Du kan bruke arbeidsflyten Vurdering av arbeider til å styre godkjenningen av en vurdering.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="207">
-          <source>You can also choose to skip the automated workflow and manually change the status of the review, which allows you to create simpler documents like a one-on-one without having to use the workflow process.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Du kan også velge å hoppe over den automatiserte arbeidsflyten og manuelt endre statusen på vurderingen, slik at du kan opprette enklere dokumenter som én-til-én uten å måtte bruke arbeidsflytprosessen.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="208">
-          <source>Access to a review is controlled by the status of the review.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tilgangen til en vurdering styres av statusen på vurderingen.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="209">
-          <source>When the review is created, it’s set to the <bpt id="p1">**</bpt>Not started<ept id="p1">**</ept> status.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Når vurderingen opprettes, får den statusen <bpt id="p1">**</bpt>Ikke startet<ept id="p1">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="210">
-          <source>The review is editable by anyone.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vurderingen kan redigeres av alle.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="211">
-          <source>Once the employee presses the <bpt id="p1">**</bpt>Begin review<ept id="p1">**</ept> button, the review is set to the <bpt id="p2">**</bpt>In progress<ept id="p2">**</ept> status.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Når den ansatte trykker <bpt id="p1">**</bpt>Start vurdering<ept id="p1">**</ept>-knappen, settes statusen til <bpt id="p2">**</bpt>Pågår<ept id="p2">**</ept> for vurderingen.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="212">
-          <source>The employee then begins to add content.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Den ansatte begynner deretter å legge til innhold.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="213">
-          <source>At this point, the manager can no longer view the review document.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nå kan ikke lederen lenger vise vurderingsdokumentet.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="214">
-          <source>The employee changes the status to <bpt id="p1">**</bpt>Ready for review<ept id="p1">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Den ansatte endrer statusen til <bpt id="p1">**</bpt>Klar til vurdering<ept id="p1">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="215">
-          <source>The manager can add comments and ratings.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Lederen kan legge til kommentarer og vurderinger.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="216">
-          <source>At this point, only the manager can see the review.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nå er det bare lederen som kan se vurderingen.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="217">
-          <source>The manager changes the status to <bpt id="p1">**</bpt>Final review<ept id="p1">**</ept>, so that both the manager and the employee can see the review and discuss it.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Lederen endrer statusen til <bpt id="p1">**</bpt>Endelig vurdering<ept id="p1">**</ept>, slik at både den overordnede og den ansatte kan se vurderingen og diskutere den.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="218">
-          <source>You can specify in the parameters whether or not the review can be edited at this point.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Du kan angi i parameterne hvorvidt vurderingen kan redigeres nå.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="219">
-          <source>This step is also optional if the manager simply wants to share the review with the employee and mark it as <bpt id="p1">**</bpt>Complete<ept id="p1">**</ept> when they are finished.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Dette trinnet er også valgfritt hvis lederen ganske enkelt ønsker å dele vurderingen med den ansatte og merke den som <bpt id="p1">**</bpt>Fullført<ept id="p1">**</ept> når de er ferdige.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="220">
-          <source>After the sign-offs are completed, the status is changed to <bpt id="p1">**</bpt>Complete<ept id="p1">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Når godkjenningene er fullført, endres statusen til <bpt id="p1">**</bpt>Fullført<ept id="p1">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="221">
-          <source>At this point, the review can’t be changed.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">På dette tidspunktet kan ikke vurderingen endres.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="222">
-          <source>The Worker Review workflow has two elements:</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Arbeidsflyten Vurdering av arbeider har to elementer:</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="223">
-          <source>Approve review.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Godkjenn vurdering.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="224">
-          <source>Add this element to control the status change from <bpt id="p1">**</bpt>In progress<ept id="p1">**</ept> to <bpt id="p2">**</bpt>Ready for review<ept id="p2">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Legg til dette elementet for å kontrollere statusendringen fra <bpt id="p1">**</bpt>Pågår<ept id="p1">**</ept> til <bpt id="p2">**</bpt>Klar til vurdering<ept id="p2">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="225">
-          <source>Change the assignment to use the managerial hierarchy where the Employee.line manager level = 1.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Endre tilordningen for å bruke lederhierarkiet der det overordnede nivået for ansattlinje = 1.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="226">
-          <source>Final review.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Endelig vurdering.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="227">
-          <source>Add this element to control the status change from <bpt id="p1">**</bpt>Ready for review<ept id="p1">**</ept> to <bpt id="p2">**</bpt>Final review<ept id="p2">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Legg til dette elementet for å kontrollere statusendringen fra <bpt id="p1">**</bpt>Klar til vurdering<ept id="p1">**</ept> til <bpt id="p2">**</bpt>Endelig vurdering<ept id="p2">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="228">
-          <source>Change the assignment to use the managerial hierarchy where the Employee.line manager level = 1 if you want the manager to approve the final review.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Endre tilordningen for å bruke lederhierarkiet der ledernivå på Employee.line = 1, hvis du vil at lederen skal godkjenne den endelige gjennomgangen.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="229">
-          <source>Change the assignment to Workflow user if you want the employee to approve it.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Endre tilordningen til arbeidsflytbrukeren hvis du vil at den ansatte skal godkjenne den.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="230">
-          <source>If you want both the manager and employee to approve it, add two steps in the workflow and make the appropriate assignment for each step in the order that you want the approvals to follow.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Hvis du vil at både overordnet og ansatt skal godkjenne den, legger du til to trinn i arbeidsflyten og gjør riktig tilordning for hvert trinn i den rekkefølgen som godkjenningene skal gjøres i.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="231">
-          <source>Setup</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Konfigurer</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="232">
-          <source>There are three pages that help you set up information that is required in order to complete the performance process: the <bpt id="p1">**</bpt>measurements<ept id="p1">**</ept> page,  the <bpt id="p2">**</bpt>performance journal source types<ept id="p2">**</ept> page and the <bpt id="p3">**</bpt>review types<ept id="p3">**</ept> page.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Det finnes tre sider som hjelper deg med å angi informasjon som kreves for å fullføre ytelsesprosessen: siden <bpt id="p1">**</bpt>Målinger<ept id="p1">**</ept>, <bpt id="p2">**</bpt>Kildetyper for ytelsesjournal<ept id="p2">**</ept> og <bpt id="p3">**</bpt>Vurderingstyper<ept id="p3">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="233">
-          <source>Measurements</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Mål</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="234">
-          <source>The measurements page lets you create standard measurements that will be used on the <bpt id="p1">**</bpt>performance goals<ept id="p1">**</ept> and <bpt id="p2">**</bpt>reviews<ept id="p2">**</ept> pages.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">På Målinger-siden kan du opprette standardmålinger som skal brukes på siden for <bpt id="p1">**</bpt>ytelsesmål<ept id="p1">**</ept> og <bpt id="p2">**</bpt>vurderinger<ept id="p2">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="235">
-          <source>You can create measurements that are dates, amounts, quantities, or percentages, or measurements that are based on a rating model.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Du kan opprette målinger som er datoer, beløp, antall eller prosenter, eller målinger som er basert på en vurderingsmodell.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="236">
-          <source>Performance journal source types</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kildetyper for ytelsesjournal</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="237">
-          <source>Performance journal source types describe where the performance journals come from.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kildetyper for ytelsesjournaler beskriver hvor ytelsesjournalene kommer fra.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="238">
-          <source>You can see whether a journal item will be viewed by default by the manager only, the employee only, or both the manager and the employee.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Du kan se om et journalelement kan vises som standard bare av lederen, bare av den ansatte, eller både overordnet og ansatt.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="239">
-          <source>You can also enable or disable the Send Praise feature by changing the Praise source type.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Du kan også aktivere eller deaktivere funksjonen Send ros ved å endre roskildetypen.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="240">
-          <source>You cannot disable the other source types at this time.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Du kan ikke deaktivere de andre kildetypene på dette tidspunktet.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="241">
-          <source>Review types</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vurderingstyper</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="242">
-          <source>Performance review types help you control the behavior of a review.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ytelsesvurderingstyper kan hjelpe deg med å styre virkemåten til en vurdering.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="243">
-          <source>You can enable or disable workflow for a review.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Du kan aktivere eller deaktivere arbeidsflyten for en vurdering.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="244">
-          <source>If the review does not use workflow, you can define the default status that will be used when the review is created.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Hvis vurderingen ikke bruker arbeidsflyt, kan du definere standardstatus som skal brukes når vurderingen opprettes.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="245">
-          <source>You can also decide if the employee, the manager, or both will be required to sign off on the review.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Du kan også bestemme om den ansatte, lederen eller begge må godkjenne vurderingen.</target></trans-unit>
-      </group>
-    </body>
-  </file>
-</xliff>
+---
+title: Ytelsesstyring
+description: Ytelsesstyringsprosessen lar ansatte dokumentere og diskutere ytelsen deres med sin overordnede. Ledere kan deretter gi tilbakemelding og veiledning til ansatte.
+author: andreabichsel
+manager: AnnBe
+ms.date: 06/20/2017
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-365-talent
+ms.technology: ''
+audience: Application User
+ms.reviewer: anbichse
+ms.search.scope: Core, Operations, Talent
+ms.custom: 221024
+ms.assetid: d88e30ab-c6e9-4daf-b89d-f4386a299e22
+ms.search.region: Global
+ms.author: anbichse
+ms.search.validFrom: 2016-11-30
+ms.dyn365.ops.version: Version 1611
+ms.openlocfilehash: 05d8986d69abba4dbba7c30aad5a7e4626ceb5b1
+ms.sourcegitcommit: cadce85ca3004d53caf6bc49147a524c1bfd421f
+ms.translationtype: HT
+ms.contentlocale: nb-NO
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "1590511"
+---
+# <a name="performance-management"></a><span data-ttu-id="cd516-104">Ytelsesstyring</span><span class="sxs-lookup"><span data-stu-id="cd516-104">Performance management</span></span>
+
+[!include [banner](includes/banner.md)]
+
+<span data-ttu-id="cd516-105">Ytelsesstyringsprosessen lar ansatte dokumentere og diskutere ytelsen deres med sin overordnede.</span><span class="sxs-lookup"><span data-stu-id="cd516-105">The performance management process lets employees document and discuss their performance with their manager.</span></span> <span data-ttu-id="cd516-106">Ledere kan deretter gi tilbakemelding og veiledning til ansatte.</span><span class="sxs-lookup"><span data-stu-id="cd516-106">In turn, managers can then provide feedback and guidance to the employees.</span></span>  
+
+<span data-ttu-id="cd516-107">Som diagrammet nedenfor viser, er det tre sider som kan hjelpe deg med å administrere prosessen:</span><span class="sxs-lookup"><span data-stu-id="cd516-107">As the following diagram shows, there are three pages that help you manage the process:</span></span>
+
+-   <span data-ttu-id="cd516-108">Ytelsesjournal</span><span class="sxs-lookup"><span data-stu-id="cd516-108">Performance journal</span></span>
+-   <span data-ttu-id="cd516-109">Mål</span><span class="sxs-lookup"><span data-stu-id="cd516-109">Goals</span></span>
+-   <span data-ttu-id="cd516-110">Medarbeidersamtale</span><span class="sxs-lookup"><span data-stu-id="cd516-110">Performance review</span></span>
+
+<span data-ttu-id="cd516-111">Diagrammet nedenfor viser hvordan hovedkomponentene i ytelsesstyring er relatert til hverandre.</span><span class="sxs-lookup"><span data-stu-id="cd516-111">The following diagram shows how the primary components of performance management are related to each other.</span></span> <span data-ttu-id="cd516-112">[![Oversikt over ytelsesprosess](./media/hcm_performanceoverviewdiagram-300x189.png)](./media/hcm_performanceoverviewdiagram.png)</span><span class="sxs-lookup"><span data-stu-id="cd516-112">[![Performance process overview](./media/hcm_performanceoverviewdiagram-300x189.png)](./media/hcm_performanceoverviewdiagram.png)</span></span>    
+
+## <a name="performance-journal"></a><span data-ttu-id="cd516-113">Ytelsesjournal</span><span class="sxs-lookup"><span data-stu-id="cd516-113">Performance journal</span></span>
+<span data-ttu-id="cd516-114">Som ansatt, før du fullfører vurderingen, samler du ofte informasjon om aktiviteter eller hendelser som bidro til din suksess i løpet av en vurderingsperiode.</span><span class="sxs-lookup"><span data-stu-id="cd516-114">As an employee, before you complete your review, you often gather information about activities or events that contributed to your success during a review period.</span></span> <span data-ttu-id="cd516-115">Ytelsesjournalen er stedet der du kan dokumentere de aktivitetene og hendelsene.</span><span class="sxs-lookup"><span data-stu-id="cd516-115">The performance journal is the place where you can document those activities and events.</span></span> <span data-ttu-id="cd516-116">Du kan dessuten opprette fremtidige aktiviteter som må fullføres for å hjelpe deg med å oppnå et mål, oppfylle kravene i en utviklingsplan eller oppfylle en ytelsesforpliktelse.</span><span class="sxs-lookup"><span data-stu-id="cd516-116">In addition, you can create future activities that must be completed to help you accomplish a goal, meet the requirements of a development plan, or meet a performance commitment.</span></span> <span data-ttu-id="cd516-117">Ytelsesjournaler er ikke nødvendig for å opprette mål eller ytelsesvurderinger.</span><span class="sxs-lookup"><span data-stu-id="cd516-117">Performance journals aren’t required in order to create goals or performance reviews.</span></span> 
+
+<span data-ttu-id="cd516-118">Det finnes to versjoner av ytelsesjournalen: ansattversjonen som er tilgjengelig via arbeidsområdet **Ansattselvbetjening** (**ESS**), og lederversjonen som er tilgjengelig via arbeidsområdet **Lederselvbetjening** (**MSS**).</span><span class="sxs-lookup"><span data-stu-id="cd516-118">There are two versions of the performance journal: the employee version, which is accessible through the **Employee self-service** workspace (**ESS**), and the manager version, which is accessible through the **Manager self-service** workspace (**MSS**).</span></span> <span data-ttu-id="cd516-119">Ansatte kan opprette journaler for seg selv, og kan velge å dele dem med lederen.</span><span class="sxs-lookup"><span data-stu-id="cd516-119">Employees can create journals for themselves and can choose to share them with their manager.</span></span> <span data-ttu-id="cd516-120">Ledere kan opprette journaler for teamet, og kan velge å dele dem med de ansatte.</span><span class="sxs-lookup"><span data-stu-id="cd516-120">Managers can create journals for their team and can choose to share them with their employees.</span></span> 
+
+<span data-ttu-id="cd516-121">Når den åpnes fra **ESS**-arbeidsområdet, kan du angi følgende informasjon på siden til **ytelsesjournalen**:</span><span class="sxs-lookup"><span data-stu-id="cd516-121">When it’s accessed from the **ESS** workspace, the **performance journal** page lets you capture the following information:</span></span>
+
+-   <span data-ttu-id="cd516-122">En tittel på aktiviteten</span><span class="sxs-lookup"><span data-stu-id="cd516-122">A title for the activity</span></span>
+-   <span data-ttu-id="cd516-123">En beskrivelse av aktiviteten, som inneholder detaljert informasjon om aktiviteten</span><span class="sxs-lookup"><span data-stu-id="cd516-123">A description for the activity, which includes detailed information about the activity</span></span>
+-   <span data-ttu-id="cd516-124">Datoen da journalen ble opprettet</span><span class="sxs-lookup"><span data-stu-id="cd516-124">The date when the journal was created</span></span>
+-   <span data-ttu-id="cd516-125">Datoen da aktiviteten ble startet og fullført</span><span class="sxs-lookup"><span data-stu-id="cd516-125">The dates when the activity was started and completed</span></span>
+-   <span data-ttu-id="cd516-126">En statusinnstilling som angir om aktiviteten kan deles med den ansattes overordnede</span><span class="sxs-lookup"><span data-stu-id="cd516-126">A status setting that indicates whether the activity can be shared with the employee’s manager</span></span>
+-   <span data-ttu-id="cd516-127">En innstilling som angir om posten er en del av en utviklingsplan</span><span class="sxs-lookup"><span data-stu-id="cd516-127">A setting that indicates whether the entry is part of a development plan</span></span>
+-   <span data-ttu-id="cd516-128">Nøkkelord som hjelper deg med å søke etter lignende ytelsesjournalelementer</span><span class="sxs-lookup"><span data-stu-id="cd516-128">Keywords that will help you search for similar performance journal items</span></span>
+
+<span data-ttu-id="cd516-129">Du kan også koble ytelsesjournalen til et eksternt webområde ved å lagre URL-adressen til dette området.</span><span class="sxs-lookup"><span data-stu-id="cd516-129">You can also link the performance journal to an external website by storing the URL of that site.</span></span> <span data-ttu-id="cd516-130">Hvis journalen er knyttet til mål eller ytelsesvurderinger, kan du også koble den til én eller flere av dem.</span><span class="sxs-lookup"><span data-stu-id="cd516-130">If the journal is related to goals or performance reviews, you can also link it to one or more of them.</span></span> <span data-ttu-id="cd516-131">Når ytelsesjournalen åpnes fra **MSS**-siden, kan du angi de samme opplysningene som du kan for ansattjournalen.</span><span class="sxs-lookup"><span data-stu-id="cd516-131">When the performance journal is accessed from the **MSS** page, you can enter the same information that you can enter for the employee journal.</span></span> <span data-ttu-id="cd516-132">I tillegg kan du angi ansatte som journalen opprettes for.</span><span class="sxs-lookup"><span data-stu-id="cd516-132">In addition, you can specify the employee that the journal is being created for.</span></span> <span data-ttu-id="cd516-133">Du kan velge om du vil dele lederjournalen med ansatte.</span><span class="sxs-lookup"><span data-stu-id="cd516-133">You can choose whether to share the manager journal with your employee.</span></span>
+
+### <a name="send-feedback"></a><span data-ttu-id="cd516-134">Send tilbakemelding</span><span class="sxs-lookup"><span data-stu-id="cd516-134">Send feedback</span></span>
+
+<span data-ttu-id="cd516-135">Ytelsesjournalen inneholder en tilleggsfunksjon som heter Tilbakemelding.</span><span class="sxs-lookup"><span data-stu-id="cd516-135">The performance journal contains an additional feature that is named Feedback.</span></span> <span data-ttu-id="cd516-136">Når du klikker **Send tilbakemelding**, kan du velge en ansatt og gi tilbakemelding til den ansatte via e-post.</span><span class="sxs-lookup"><span data-stu-id="cd516-136">When you click on **Send feedback**, you can select an employee and provide feedback to that employee via email.</span></span> <span data-ttu-id="cd516-137">Meldingen sendes til den ansatte som mottar tilbakemeldingen, lederen til denne ansatte, den ansatte som sender tilbakemeldingen, og lederen til denne ansatte.</span><span class="sxs-lookup"><span data-stu-id="cd516-137">The message is sent to the employee who is receiving the feedback, that employee’s manager, the employee who is sending the feedback, and that employee’s manager.</span></span> <span data-ttu-id="cd516-138">Det opprettes en ytelsesjournaloppføring for hver person som mottar tilbakemeldingen.</span><span class="sxs-lookup"><span data-stu-id="cd516-138">A performance journal entry is created for each person who receives the feedback message.</span></span>
+
+## <a name="goals"></a><span data-ttu-id="cd516-139">Mål</span><span class="sxs-lookup"><span data-stu-id="cd516-139">Goals</span></span>
+<span data-ttu-id="cd516-140">På **Ytelsesmål**-siden kan du spore målene som du og din overordnede har opprettet for deg.</span><span class="sxs-lookup"><span data-stu-id="cd516-140">The **performance goals** page helps you track the goals that you and your manager have created for you.</span></span> <span data-ttu-id="cd516-141">Du kan opprette så mange mål du vil, og disse målene kan strekke seg over forskjellige perioder og ytelsesvurderinger.</span><span class="sxs-lookup"><span data-stu-id="cd516-141">You can create any number of goals, and those goals can span different periods and performance reviews.</span></span> <span data-ttu-id="cd516-142">Du kan også opprette enkle og komplekse mål, avhengig av hvor mye informasjon du vil angi om målet.</span><span class="sxs-lookup"><span data-stu-id="cd516-142">You can also create simple or complex goals, depending on the amount of information that you want to enter about the goal.</span></span> <span data-ttu-id="cd516-143">Mål er ikke nødvendig for ytelsesvurderinger.</span><span class="sxs-lookup"><span data-stu-id="cd516-143">Goals aren’t required for performance reviews.</span></span> 
+
+<span data-ttu-id="cd516-144">Et grunnleggende mål må inneholde følgende informasjon:</span><span class="sxs-lookup"><span data-stu-id="cd516-144">A basic goal must include the following information:</span></span>
+
+-   <span data-ttu-id="cd516-145">Et kort navn</span><span class="sxs-lookup"><span data-stu-id="cd516-145">A short name</span></span>
+-   <span data-ttu-id="cd516-146">En lengre beskrivelse av målet</span><span class="sxs-lookup"><span data-stu-id="cd516-146">A longer description of the goal</span></span>
+-   <span data-ttu-id="cd516-147">Forventet startdato for målet</span><span class="sxs-lookup"><span data-stu-id="cd516-147">The anticipated start date for the goal</span></span>
+-   <span data-ttu-id="cd516-148">Forventet fullføringsdato for målet</span><span class="sxs-lookup"><span data-stu-id="cd516-148">The estimated completion date for the goal</span></span>
+
+<span data-ttu-id="cd516-149">Du kan også angi en målkategori som kan hjelpe deg med å organisere målene dine.</span><span class="sxs-lookup"><span data-stu-id="cd516-149">You can also specify a goal category to help you organize your goals.</span></span> <span data-ttu-id="cd516-150">Ledere vil også se navnet på personen som målet er tilordnet til.</span><span class="sxs-lookup"><span data-stu-id="cd516-150">Managers will also see the name of the person that the goal is assigned to.</span></span> 
+
+<span data-ttu-id="cd516-151">Hvis du har mer detaljerte instruksjoner for et mål, kan du opprette målemner.</span><span class="sxs-lookup"><span data-stu-id="cd516-151">If you have more detailed instructions for a goal, you can create goal topics.</span></span> <span data-ttu-id="cd516-152">Disse emnene inkluderer en tittel og en beskrivelse.</span><span class="sxs-lookup"><span data-stu-id="cd516-152">These topics include a title and a description.</span></span> <span data-ttu-id="cd516-153">Du kan inkludere så mange emner du vil, slik at du er sikker på at målet er klart både for ansatte og ledere.</span><span class="sxs-lookup"><span data-stu-id="cd516-153">You can include as many topics as you require to help guarantee that the details of the goal are clear to both the employee and the manager.</span></span> <span data-ttu-id="cd516-154">Både ansatte og ledere kan også angi kommentarer om fremdriften til målene.</span><span class="sxs-lookup"><span data-stu-id="cd516-154">Both employees and managers can also enter comments about the progress of the goals.</span></span> 
+
+<span data-ttu-id="cd516-155">Mål har ofte målbare resultater.</span><span class="sxs-lookup"><span data-stu-id="cd516-155">Goals often have measurable results.</span></span> <span data-ttu-id="cd516-156">Du kan legge til målinger for å spore målresultater og faktiske resultater.</span><span class="sxs-lookup"><span data-stu-id="cd516-156">You can add measurements to track the target goal results and the actual results.</span></span> <span data-ttu-id="cd516-157">Hvis målingen er et strekkmål, kan du merke målingen ved hjelp av **Strekkmål**-alternativet.</span><span class="sxs-lookup"><span data-stu-id="cd516-157">If the measurement is a stretch goal, you can mark the measurement by using the **Stretch goal** option.</span></span> 
+
+<span data-ttu-id="cd516-158">Ytelsesjournalen inneholder aktiviteter som gir lederen mer informasjon om hvordan du oppnådde målet.</span><span class="sxs-lookup"><span data-stu-id="cd516-158">Your performance journal will contain activities that provide your manager with more information about how you accomplished your goal.</span></span> <span data-ttu-id="cd516-159">Hvis du har knyttet en ytelsesjournal til målet, vises det i **Aktiviteter**-delen av dette målet.</span><span class="sxs-lookup"><span data-stu-id="cd516-159">If you’ve linked a performance journal to the goal, it appears in the **Activities** section of that goal.</span></span> <span data-ttu-id="cd516-160">Du kan også legge til en ny ytelsesjournal fra **Ytelsesmål**-siden.</span><span class="sxs-lookup"><span data-stu-id="cd516-160">You can also add a new performance journal from the **performance goals** page.</span></span> <span data-ttu-id="cd516-161">Denne ytelsesjournalen kobles automatisk til målet.</span><span class="sxs-lookup"><span data-stu-id="cd516-161">That performance journal will be automatically linked to the goal.</span></span> 
+
+<span data-ttu-id="cd516-162">Hvis du vil knytte et dokument til målet, for eksempel en fullførelsesattest, kan du legge det ved i**Vedlegg**-delen på **Ytelsesmål**-siden.</span><span class="sxs-lookup"><span data-stu-id="cd516-162">If you want to attach a document to the goal, such as a certificate of completion, you can attach it in the **Attachments** section of the **performance goals** page.</span></span> <span data-ttu-id="cd516-163">Et visningsprogram gjør at du raskt kan vise innholdet i et vedlagt dokument.</span><span class="sxs-lookup"><span data-stu-id="cd516-163">A document viewer is provided so that you can quickly view the contents of any attached document.</span></span> 
+
+<span data-ttu-id="cd516-164">Du kan opprette en mal fra et mål, og deretter bruke malen til å opprette nye mål som er basert på malen.</span><span class="sxs-lookup"><span data-stu-id="cd516-164">You can create a template from a goal and then use the template to create new goals that are based on the template.</span></span> <span data-ttu-id="cd516-165">Når du oppretter en mal fra et mål, lagres beskrivelsen, emnene og målingene for målet.</span><span class="sxs-lookup"><span data-stu-id="cd516-165">When you create a template from a goal, the description, topics, and target measurements are saved.</span></span> <span data-ttu-id="cd516-166">Alle faktiske målinger, fullføringsdatoer og emnekommentarer fjernes imidlertid.</span><span class="sxs-lookup"><span data-stu-id="cd516-166">However, all actual measurements, completion dates, and topic comments are removed.</span></span>
+
+## <a name="performance-reviews"></a><span data-ttu-id="cd516-167">Ytelsesvurderinger</span><span class="sxs-lookup"><span data-stu-id="cd516-167">Performance reviews</span></span>
+<span data-ttu-id="cd516-168">Ytelsesvurderinger er også kjent som diskusjoner.</span><span class="sxs-lookup"><span data-stu-id="cd516-168">Performance reviews are more formally known as discussions.</span></span> <span data-ttu-id="cd516-169">De er fleksible nok til å støtte fortløpende tilbakemelding, utviklingsplaner og mer formelle vurderinger.</span><span class="sxs-lookup"><span data-stu-id="cd516-169">They are now flexible enough to support continuous feedback, development plans and more formal reviews.</span></span> <span data-ttu-id="cd516-170">Du kan raskt opprette mindre møter for to personer, for eksempel et én-til-én-møte, eller du kan lage en mer omfattende vurdering som samsvarer med vurderingsprosessen i firmaet.</span><span class="sxs-lookup"><span data-stu-id="cd516-170">You can quickly create small meetings for two people, such as a one-on-one meeting, or you can build a more complex review that matches the review process of your company.</span></span> 
+
+<span data-ttu-id="cd516-171">Et møte av typen én-til-én er en enkel vurdering, og krever et kort navn, en lengre beskrivelse av innholdet i møtet og datoen for møtet.</span><span class="sxs-lookup"><span data-stu-id="cd516-171">A meeting such as a one-on-one is a simple review, and requires a short name, a longer description of the contents of the meeting, and the date of the meeting.</span></span> <span data-ttu-id="cd516-172">En enkel vurdering inneholder den samme informasjonen samt vurderingsperioden som diskuteres.</span><span class="sxs-lookup"><span data-stu-id="cd516-172">A simple review includes the same information, plus the review period that is being discussed.</span></span> <span data-ttu-id="cd516-173">Ledere vil også se navnet på personen som vurderingen opprettes for.</span><span class="sxs-lookup"><span data-stu-id="cd516-173">Managers will also see the name of the person that the review is created for.</span></span> 
+
+<span data-ttu-id="cd516-174">Hvis du vil ha mer detaljerte vurderinger, kan du trekke inn aktive og fullførte mål, og angi kommentarer om dem.</span><span class="sxs-lookup"><span data-stu-id="cd516-174">For more detailed reviews, you can pull in active and completed goals, and enter comments about them.</span></span> <span data-ttu-id="cd516-175">Alle ytelsesjournalaktiviteter og målinger som er knyttet til et mål, vil vises i vurderingen.</span><span class="sxs-lookup"><span data-stu-id="cd516-175">All performance journal activities and measurements that are related to a goal will appear on the review.</span></span> <span data-ttu-id="cd516-176">Når vurderingen er fullført, lagres et øyeblikksbilde av målingene for å bevare historikken for disse elementene på tidspunktet for vurderingen.</span><span class="sxs-lookup"><span data-stu-id="cd516-176">After the review is finalized, a snapshot of the measurements is stored to retain the history of those items at the time of the review.</span></span> 
+
+<span data-ttu-id="cd516-177">Du kan også bruke **Kompetanser**-delen for å diskutere, gjennomgå og vurdere den ansattes kompetanser.</span><span class="sxs-lookup"><span data-stu-id="cd516-177">You can also use the **Competencies** section to discuss, review, and rate the employee’s competencies.</span></span> <span data-ttu-id="cd516-178">Du kan legge til så mange kompetanser som du trenger, og du kan velge om kompetansen skal vurderes.</span><span class="sxs-lookup"><span data-stu-id="cd516-178">You can add as many competencies as you require, and you can choose whether the competency must be rated.</span></span> 
+
+<span data-ttu-id="cd516-179">Du kan opprette nye vurderinger som er basert på maler som du har opprettet.</span><span class="sxs-lookup"><span data-stu-id="cd516-179">You can create new reviews that are based on templates that you’ve created.</span></span> <span data-ttu-id="cd516-180">Du kan for eksempel ha en mal for én-til-én-vurderinger, utviklingsplaner eller periodiske vurderinger.</span><span class="sxs-lookup"><span data-stu-id="cd516-180">For example, you can have a template for one-on-ones, development plans, or periodic reviews.</span></span> <span data-ttu-id="cd516-181">Du kan velge malen når du oppretter en ny vurdering.</span><span class="sxs-lookup"><span data-stu-id="cd516-181">You can select the template when you create a new review.</span></span>
+
+## <a name="components-you-can-include-in-performance-reviews"></a><span data-ttu-id="cd516-182">Komponenter som kan inkluderes i ytelsesvurderinger</span><span class="sxs-lookup"><span data-stu-id="cd516-182">Components you can include in performance reviews</span></span>
+<span data-ttu-id="cd516-183">Du kan inkludere mange typer informasjon i ytelsesvurderinger.</span><span class="sxs-lookup"><span data-stu-id="cd516-183">You can include a number of types of information in performance reviews.</span></span> <span data-ttu-id="cd516-184">Disse inkluderer detaljer om gjennomganger, målinger, aktiviteter, vurderinger, godkjenninger og vedlegg.</span><span class="sxs-lookup"><span data-stu-id="cd516-184">They include review detail, measurements, activities, ratings, sign-offs and attachments.</span></span>
+
+### <a name="review-detail"></a><span data-ttu-id="cd516-185">Vurderingsdetaljer</span><span class="sxs-lookup"><span data-stu-id="cd516-185">Review detail</span></span>
+
+<span data-ttu-id="cd516-186">Du kan trekke inn målene dine i vurderingsdetaljene og legge til kommentarer om dem.</span><span class="sxs-lookup"><span data-stu-id="cd516-186">You can pull in your goals into the review details and make comments on them.</span></span> <span data-ttu-id="cd516-187">Du kan også konfigurere kompetanser og legge til kommentarer om dem.</span><span class="sxs-lookup"><span data-stu-id="cd516-187">You can also set up competencies and make comments on them.</span></span>
+
+### <a name="measurements"></a><span data-ttu-id="cd516-188">Mål</span><span class="sxs-lookup"><span data-stu-id="cd516-188">Measurements</span></span>
+
+<span data-ttu-id="cd516-189">Du kan vise målinger som er knyttet til et mål eller en vurdering.</span><span class="sxs-lookup"><span data-stu-id="cd516-189">You can view measurements that are related to a goal or review.</span></span> <span data-ttu-id="cd516-190">Du kan også legge til en ny måling som er knyttet til vurderingen.</span><span class="sxs-lookup"><span data-stu-id="cd516-190">You can also add a new measurement that is related to the review.</span></span>
+
+### <a name="activities"></a><span data-ttu-id="cd516-191">Aktiviteter</span><span class="sxs-lookup"><span data-stu-id="cd516-191">Activities</span></span>
+
+<span data-ttu-id="cd516-192">Du kan vise ytelsesjournalelementer som er knyttet til vurderingen.</span><span class="sxs-lookup"><span data-stu-id="cd516-192">You can show performance journal items that are related to the review.</span></span> <span data-ttu-id="cd516-193">Du kan også legge til en ytelsesjournal som skal kobles automatisk til vurderingen.</span><span class="sxs-lookup"><span data-stu-id="cd516-193">You can also add a performance journal, which will be automatically linked to the review.</span></span>
+
+### <a name="ratings"></a><span data-ttu-id="cd516-194">Vurderinger</span><span class="sxs-lookup"><span data-stu-id="cd516-194">Ratings</span></span>
+
+<span data-ttu-id="cd516-195">Du kan bruke en vurdering på mål eller kompetanser som er i vurderingen.</span><span class="sxs-lookup"><span data-stu-id="cd516-195">You can apply a rating to any goal or competency that is on the review.</span></span> <span data-ttu-id="cd516-196">Du kan definere vurderingsmodellene for hver vurdering.</span><span class="sxs-lookup"><span data-stu-id="cd516-196">You can define the rating models for each review.</span></span> <span data-ttu-id="cd516-197">Standarder for vurderinger finner du på siden **Delte parametere for personaladministrasjon** under **Ytelse**.</span><span class="sxs-lookup"><span data-stu-id="cd516-197">The defaults for ratings are on the **Human resources shared parameters** page under **Performance.**</span></span>
+
+### <a name="sign-offs"></a><span data-ttu-id="cd516-198">Godkjenninger</span><span class="sxs-lookup"><span data-stu-id="cd516-198">Sign-offs</span></span>
+
+<span data-ttu-id="cd516-199">Ansatte og/eller ledere vises i vurderingen basert på vurderingsparameterne du angir.</span><span class="sxs-lookup"><span data-stu-id="cd516-199">The employee and/or the manager will be listed on the review based on the review parameters that you set.</span></span> <span data-ttu-id="cd516-200">Vurderingene kan være obligatoriske eller valgfrie.</span><span class="sxs-lookup"><span data-stu-id="cd516-200">The reviews can be required or optional.</span></span> <span data-ttu-id="cd516-201">Når alle nødvendige godkjenninger er foretatt, merkes vurderingen med statusen Fullført.</span><span class="sxs-lookup"><span data-stu-id="cd516-201">Once all of the required sign-offs are made, the review will be marked with a status of Complete.</span></span>
+
+### <a name="attachments"></a><span data-ttu-id="cd516-202">Vedlegg</span><span class="sxs-lookup"><span data-stu-id="cd516-202">Attachments</span></span>
+
+<span data-ttu-id="cd516-203">Du kan knytte et dokument til en vurdering i **Vedlegg**-delen på siden med **vurderinger**.</span><span class="sxs-lookup"><span data-stu-id="cd516-203">You can attach a document to a review in the **Attachments** section of the **reviews** page.</span></span> <span data-ttu-id="cd516-204">Et visningsprogram gjør at du raskt kan vise innholdet i et vedlagt dokument.</span><span class="sxs-lookup"><span data-stu-id="cd516-204">A document viewer is provided so that you can quickly view the contents of any attached document.</span></span>
+
+### 
+
+## <a name="workflow-for-performance-management"></a><span data-ttu-id="cd516-205">Arbeidsflyt for ytelsesstyring</span><span class="sxs-lookup"><span data-stu-id="cd516-205">Workflow for performance management</span></span>
+<span data-ttu-id="cd516-206">Du kan bruke arbeidsflyten Vurdering av arbeider til å styre godkjenningen av en vurdering.</span><span class="sxs-lookup"><span data-stu-id="cd516-206">You can use the Worker Review workflow to control the approval of a review.</span></span> <span data-ttu-id="cd516-207">Du kan også velge å hoppe over den automatiserte arbeidsflyten og manuelt endre statusen på vurderingen, slik at du kan opprette enklere dokumenter som én-til-én uten å måtte bruke arbeidsflytprosessen.</span><span class="sxs-lookup"><span data-stu-id="cd516-207">You can also choose to skip the automated workflow and manually change the status of the review, which allows you to create simpler documents like a one-on-one without having to use the workflow process.</span></span> <span data-ttu-id="cd516-208">Tilgangen til en vurdering styres av statusen på vurderingen.</span><span class="sxs-lookup"><span data-stu-id="cd516-208">Access to a review is controlled by the status of the review.</span></span>
+
+1.  <span data-ttu-id="cd516-209">Når vurderingen opprettes, får den statusen **Ikke startet**.</span><span class="sxs-lookup"><span data-stu-id="cd516-209">When the review is created, it’s set to the **Not started** status.</span></span> <span data-ttu-id="cd516-210">Vurderingen kan redigeres av alle.</span><span class="sxs-lookup"><span data-stu-id="cd516-210">The review is editable by anyone.</span></span>
+2.  <span data-ttu-id="cd516-211">Når den ansatte trykker **Start vurdering**-knappen, settes statusen til **Pågår** for vurderingen.</span><span class="sxs-lookup"><span data-stu-id="cd516-211">Once the employee presses the **Begin review** button, the review is set to the **In progress** status.</span></span> <span data-ttu-id="cd516-212">Den ansatte begynner deretter å legge til innhold.</span><span class="sxs-lookup"><span data-stu-id="cd516-212">The employee then begins to add content.</span></span> <span data-ttu-id="cd516-213">Nå kan ikke lederen lenger vise vurderingsdokumentet.</span><span class="sxs-lookup"><span data-stu-id="cd516-213">At this point, the manager can no longer view the review document.</span></span>
+3.  <span data-ttu-id="cd516-214">Den ansatte endrer statusen til **Klar til vurdering**.</span><span class="sxs-lookup"><span data-stu-id="cd516-214">The employee changes the status to **Ready for review**.</span></span>
+4.  <span data-ttu-id="cd516-215">Lederen kan legge til kommentarer og vurderinger.</span><span class="sxs-lookup"><span data-stu-id="cd516-215">The manager can add comments and ratings.</span></span> <span data-ttu-id="cd516-216">Nå er det bare lederen som kan se vurderingen.</span><span class="sxs-lookup"><span data-stu-id="cd516-216">At this point, only the manager can see the review.</span></span>
+5.  <span data-ttu-id="cd516-217">Lederen endrer statusen til **Endelig vurdering**, slik at både den overordnede og den ansatte kan se vurderingen og diskutere den.</span><span class="sxs-lookup"><span data-stu-id="cd516-217">The manager changes the status to **Final review**, so that both the manager and the employee can see the review and discuss it.</span></span> <span data-ttu-id="cd516-218">Du kan angi i parameterne hvorvidt vurderingen kan redigeres nå.</span><span class="sxs-lookup"><span data-stu-id="cd516-218">You can specify in the parameters whether or not the review can be edited at this point.</span></span> <span data-ttu-id="cd516-219">Dette trinnet er også valgfritt hvis lederen ganske enkelt ønsker å dele vurderingen med den ansatte og merke den som **Fullført** når de er ferdige.</span><span class="sxs-lookup"><span data-stu-id="cd516-219">This step is also optional if the manager simply wants to share the review with the employee and mark it as **Complete** when they are finished.</span></span>
+6.  <span data-ttu-id="cd516-220">Når godkjenningene er fullført, endres statusen til **Fullført**.</span><span class="sxs-lookup"><span data-stu-id="cd516-220">After the sign-offs are completed, the status is changed to **Complete**.</span></span> <span data-ttu-id="cd516-221">På dette tidspunktet kan ikke vurderingen endres.</span><span class="sxs-lookup"><span data-stu-id="cd516-221">At this point, the review can’t be changed.</span></span>
+
+<span data-ttu-id="cd516-222">Arbeidsflyten Vurdering av arbeider har to elementer:</span><span class="sxs-lookup"><span data-stu-id="cd516-222">The Worker Review workflow has two elements:</span></span>
+
+1.  <span data-ttu-id="cd516-223">Godkjenn vurdering.</span><span class="sxs-lookup"><span data-stu-id="cd516-223">Approve review.</span></span> <span data-ttu-id="cd516-224">Legg til dette elementet for å kontrollere statusendringen fra **Pågår** til **Klar til vurdering**.</span><span class="sxs-lookup"><span data-stu-id="cd516-224">Add this element to control the status change from **In progress** to **Ready for review**.</span></span> <span data-ttu-id="cd516-225">Endre tilordningen for å bruke lederhierarkiet der det overordnede nivået for ansattlinje = 1.</span><span class="sxs-lookup"><span data-stu-id="cd516-225">Change the assignment to use the managerial hierarchy where the Employee.line manager level = 1.</span></span>
+2.  <span data-ttu-id="cd516-226">Endelig vurdering.</span><span class="sxs-lookup"><span data-stu-id="cd516-226">Final review.</span></span> <span data-ttu-id="cd516-227">Legg til dette elementet for å kontrollere statusendringen fra **Klar til vurdering** til **Endelig vurdering**.</span><span class="sxs-lookup"><span data-stu-id="cd516-227">Add this element to control the status change from **Ready for review** to **Final review**.</span></span> <span data-ttu-id="cd516-228">Endre tilordningen for å bruke lederhierarkiet der ledernivå på Employee.line = 1, hvis du vil at lederen skal godkjenne den endelige gjennomgangen.</span><span class="sxs-lookup"><span data-stu-id="cd516-228">Change the assignment to use the managerial hierarchy where the Employee.line manager level = 1 if you want the manager to approve the final review.</span></span> <span data-ttu-id="cd516-229">Endre tilordningen til arbeidsflytbrukeren hvis du vil at den ansatte skal godkjenne den.</span><span class="sxs-lookup"><span data-stu-id="cd516-229">Change the assignment to Workflow user if you want the employee to approve it.</span></span> <span data-ttu-id="cd516-230">Hvis du vil at både overordnet og ansatt skal godkjenne den, legger du til to trinn i arbeidsflyten og gjør riktig tilordning for hvert trinn i den rekkefølgen som godkjenningene skal gjøres i.</span><span class="sxs-lookup"><span data-stu-id="cd516-230">If you want both the manager and employee to approve it, add two steps in the workflow and make the appropriate assignment for each step in the order that you want the approvals to follow.</span></span>
+
+## <a name="setup"></a><span data-ttu-id="cd516-231">Konfigurer</span><span class="sxs-lookup"><span data-stu-id="cd516-231">Setup</span></span>
+<span data-ttu-id="cd516-232">Det finnes tre sider som hjelper deg med å angi informasjon som kreves for å fullføre ytelsesprosessen: siden **Målinger**, **Kildetyper for ytelsesjournal** og **Vurderingstyper**.</span><span class="sxs-lookup"><span data-stu-id="cd516-232">There are three pages that help you set up information that is required in order to complete the performance process: the **measurements** page,  the **performance journal source types** page and the **review types** page.</span></span>
+
+### <a name="measurements"></a><span data-ttu-id="cd516-233">Mål</span><span class="sxs-lookup"><span data-stu-id="cd516-233">Measurements</span></span>
+
+<span data-ttu-id="cd516-234">På Målinger-siden kan du opprette standardmålinger som skal brukes på siden for **ytelsesmål** og **vurderinger**.</span><span class="sxs-lookup"><span data-stu-id="cd516-234">The measurements page lets you create standard measurements that will be used on the **performance goals** and **reviews** pages.</span></span> <span data-ttu-id="cd516-235">Du kan opprette målinger som er datoer, beløp, antall eller prosenter, eller målinger som er basert på en vurderingsmodell.</span><span class="sxs-lookup"><span data-stu-id="cd516-235">You can create measurements that are dates, amounts, quantities, or percentages, or measurements that are based on a rating model.</span></span>
+
+### <a name="performance-journal-source-types"></a><span data-ttu-id="cd516-236">Kildetyper for ytelsesjournal</span><span class="sxs-lookup"><span data-stu-id="cd516-236">Performance journal source types</span></span>
+
+<span data-ttu-id="cd516-237">Kildetyper for ytelsesjournaler beskriver hvor ytelsesjournalene kommer fra.</span><span class="sxs-lookup"><span data-stu-id="cd516-237">Performance journal source types describe where the performance journals come from.</span></span> <span data-ttu-id="cd516-238">Du kan se om et journalelement kan vises som standard bare av lederen, bare av den ansatte, eller både overordnet og ansatt.</span><span class="sxs-lookup"><span data-stu-id="cd516-238">You can see whether a journal item will be viewed by default by the manager only, the employee only, or both the manager and the employee.</span></span> <span data-ttu-id="cd516-239">Du kan også aktivere eller deaktivere funksjonen Send ros ved å endre roskildetypen.</span><span class="sxs-lookup"><span data-stu-id="cd516-239">You can also enable or disable the Send Praise feature by changing the Praise source type.</span></span> <span data-ttu-id="cd516-240">Du kan ikke deaktivere de andre kildetypene på dette tidspunktet.</span><span class="sxs-lookup"><span data-stu-id="cd516-240">You cannot disable the other source types at this time.</span></span>
+
+### <a name="review-types"></a><span data-ttu-id="cd516-241">Vurderingstyper</span><span class="sxs-lookup"><span data-stu-id="cd516-241">Review types</span></span>
+
+<span data-ttu-id="cd516-242">Ytelsesvurderingstyper kan hjelpe deg med å styre virkemåten til en vurdering.</span><span class="sxs-lookup"><span data-stu-id="cd516-242">Performance review types help you control the behavior of a review.</span></span> <span data-ttu-id="cd516-243">Du kan aktivere eller deaktivere arbeidsflyten for en vurdering.</span><span class="sxs-lookup"><span data-stu-id="cd516-243">You can enable or disable workflow for a review.</span></span> <span data-ttu-id="cd516-244">Hvis vurderingen ikke bruker arbeidsflyt, kan du definere standardstatus som skal brukes når vurderingen opprettes.</span><span class="sxs-lookup"><span data-stu-id="cd516-244">If the review does not use workflow, you can define the default status that will be used when the review is created.</span></span> <span data-ttu-id="cd516-245">Du kan også bestemme om den ansatte, lederen eller begge må godkjenne vurderingen.</span><span class="sxs-lookup"><span data-stu-id="cd516-245">You can also decide if the employee, the manager, or both will be required to sign off on the review.</span></span>
+
+
+
