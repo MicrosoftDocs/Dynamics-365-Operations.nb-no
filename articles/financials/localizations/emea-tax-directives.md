@@ -1,48 +1,33 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<xliff xmlns:logoport="urn:logoport:xliffeditor:xliff-extras:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xliffext="urn:microsoft:content:schema:xliffextensions" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
-  <file datatype="xml" source-language="en-US" original="emea-tax-directives.md" target-language="nb-NO">
-    <header>
-      <tool tool-company="Microsoft" tool-version="1.0-7889195" tool-name="mdxliff" tool-id="mdxliff"/>
-      <xliffext:skl_file_name>emea-tax-directives.c8eacb.42861a66b44d6156341bf2d4d895a4bf35295ee6.skl</xliffext:skl_file_name>
-      <xliffext:version>1.2</xliffext:version>
-      <xliffext:ms.openlocfilehash>42861a66b44d6156341bf2d4d895a4bf35295ee6</xliffext:ms.openlocfilehash>
-      <xliffext:ms.sourcegitcommit>9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b</xliffext:ms.sourcegitcommit>
-      <xliffext:ms.lasthandoff>05/15/2019</xliffext:ms.lasthandoff>
-      <xliffext:ms.openlocfilepath>articles\financials\localizations\emea-tax-directives.md</xliffext:ms.openlocfilepath>
-    </header>
-    <body>
-      <group extype="content" id="content">
-        <trans-unit xml:space="preserve" translate="yes" id="101" restype="x-metadata">
-          <source>Tax directives for Europe</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Mva-direktiver for Europa</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="102" restype="x-metadata">
-          <source>You can specify to include an explanation of sales tax codes on sales invoices and project invoices.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Du kan angi å inkludere en forklaring for avgiftskoder på salgsfakturaer og prosjektfakturaer.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="103" restype="x-metadata">
-          <source>You can print reference numbers on sales invoices, free text invoices, and project invoices.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Du kan skrive ut referansenumre på salgsfakturaer, fritekstfakturaer og prosjektfakturaer.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="104">
-          <source>Tax directives for Europe</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Mva-direktiver for Europa</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="105">
-          <source>EU Directive provides regulations to be followed by all Member States regarding invoice rules and information that must be included when creating invoices.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">EU-direktiv inneholder bestemmelser som alle medlemslandene skal følge, om regler for fakturaer og informasjon som må være med når du oppretter fakturaer.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="106">
-          <source>EU Directive lists the information that is required by suppliers for their customers in the EU.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">EU-direktiv viser hvilken informasjon leverandører må oppgi til sine kunder i EU.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="107">
-          <source>For example, an invoice could include a reference that describes the legal grounds for a VAT zero-rating or an exemption.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">En faktura kan for eksempel inneholde en referanse som beskriver det juridiske grunnlaget for nullsats eller fritak for mva.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="108">
-          <source>If an invoice adjusts an earlier issued invoice, such as a credit note, an unambiguous reference should be made to the original invoice.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Hvis en faktura justerer en tidligere utstedt faktura, for eksempel en kreditnota, skal den inneholde en entydig henvisning til den opprinnelige fakturaen.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="109">
-          <source>To print a description of sales tax codes on a sales invoice, free text invoice, or project invoice report, set up the Tax Directive reference text on the sales tax codes.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">His du vil skrive ut en beskrivelse av mva-koder på en salgsfaktura, en fritekstfaktura eller en prosjektfakturarapport, definerer du avgiftsdirektivets referansetekst på mva-kodene.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="110">
-          <source>For credit notes, the number and date of the original invoice are printed along with the reason for correction.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">For kreditnotaer skrives nummeret og datoen for den opprinnelige fakturaen ut sammen med årsaken til rettelsen.</target></trans-unit>
-      </group>
-    </body>
-  </file>
-</xliff>
+---
+title: Mva-direktiver for Europa
+description: Du kan angi å inkludere en forklaring for avgiftskoder på salgsfakturaer og prosjektfakturaer. Du kan skrive ut referansenumre på salgsfakturaer, fritekstfakturaer og prosjektfakturaer.
+author: epodkolz
+manager: AnnBe
+ms.date: 05/12/2017
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-ax-applications
+ms.technology: ''
+audience: Application User
+ms.reviewer: shylaw
+ms.search.scope: Core, Operations
+ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, France, Germany, Hungary, Latvia, Lithuania, Netherlands, Norway, Poland, Spain, Sweden, Switzerland, Turkey, United Kingdom
+ms.author: epodkolz
+ms.search.validFrom: 2017-06-30
+ms.dyn365.ops.version: July 2017 update
+ms.openlocfilehash: 42861a66b44d6156341bf2d4d895a4bf35295ee6
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.translationtype: HT
+ms.contentlocale: nb-NO
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1568103"
+---
+# <a name="tax-directives-for-europe"></a><span data-ttu-id="d2ec8-104">Mva-direktiver for Europa</span><span class="sxs-lookup"><span data-stu-id="d2ec8-104">Tax directives for Europe</span></span>
+
+[!include [banner](../includes/banner.md)]
+
+<span data-ttu-id="d2ec8-105">EU-direktiv inneholder bestemmelser som alle medlemslandene skal følge, om regler for fakturaer og informasjon som må være med når du oppretter fakturaer.</span><span class="sxs-lookup"><span data-stu-id="d2ec8-105">EU Directive provides regulations to be followed by all Member States regarding invoice rules and information that must be included when creating invoices.</span></span> <span data-ttu-id="d2ec8-106">EU-direktiv viser hvilken informasjon leverandører må oppgi til sine kunder i EU.</span><span class="sxs-lookup"><span data-stu-id="d2ec8-106">EU Directive lists the information that is required by suppliers for their customers in the EU.</span></span> <span data-ttu-id="d2ec8-107">En faktura kan for eksempel inneholde en referanse som beskriver det juridiske grunnlaget for nullsats eller fritak for mva.</span><span class="sxs-lookup"><span data-stu-id="d2ec8-107">For example, an invoice could include a reference that describes the legal grounds for a VAT zero-rating or an exemption.</span></span> <span data-ttu-id="d2ec8-108">Hvis en faktura justerer en tidligere utstedt faktura, for eksempel en kreditnota, skal den inneholde en entydig henvisning til den opprinnelige fakturaen.</span><span class="sxs-lookup"><span data-stu-id="d2ec8-108">If an invoice adjusts an earlier issued invoice, such as a credit note, an unambiguous reference should be made to the original invoice.</span></span>
+
+- <span data-ttu-id="d2ec8-109">His du vil skrive ut en beskrivelse av mva-koder på en salgsfaktura, en fritekstfaktura eller en prosjektfakturarapport, definerer du avgiftsdirektivets referansetekst på mva-kodene.</span><span class="sxs-lookup"><span data-stu-id="d2ec8-109">To print a description of sales tax codes on a sales invoice, free text invoice, or project invoice report, set up the Tax Directive reference text on the sales tax codes.</span></span>
+- <span data-ttu-id="d2ec8-110">For kreditnotaer skrives nummeret og datoen for den opprinnelige fakturaen ut sammen med årsaken til rettelsen.</span><span class="sxs-lookup"><span data-stu-id="d2ec8-110">For credit notes, the number and date of the original invoice are printed along with the reason for correction.</span></span>
+
