@@ -1,1056 +1,696 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<xliff xmlns:logoport="urn:logoport:xliffeditor:xliff-extras:1.0" xmlns:tilt="urn:logoport:xliffeditor:tilt-non-translatables:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xliffext="urn:microsoft:content:schema:xliffextensions" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
-  <file datatype="xml" source-language="en-US" original="TOC.yml" target-language="nb-NO">
-    <header>
-      <tool tool-company="Microsoft" tool-version="1.0-d915bc8" tool-name="mdxliff" tool-id="mdxliff"/>
-      <xliffext:skl_file_name>TOC.1b20fc.88485598ac4a9d5d2829a3021361885065ad76a4.skl</xliffext:skl_file_name>
-      <xliffext:version>1.2</xliffext:version>
-      <xliffext:ms.openlocfilehash>88485598ac4a9d5d2829a3021361885065ad76a4</xliffext:ms.openlocfilehash>
-      <xliffext:ms.sourcegitcommit>bbc9aa0d6b94a942e1f4d5b038601509dcc87937</xliffext:ms.sourcegitcommit>
-      <xliffext:ms.lasthandoff>06/05/2019</xliffext:ms.lasthandoff>
-      <xliffext:ms.openlocfilepath>articles\retail\TOC.yml</xliffext:ms.openlocfilepath>
-    </header>
-    <body>
-      <group extype="content" id="content">
-        <trans-unit xml:space="preserve" translate="yes" id="101">
-          <source>Welcome to Dynamics 365 for Retail</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Velkommen til Dynamics 365 for Retail</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="102">
-          <source>Get started</source><target logoport:matchpercent="98" state="translated" state-qualifier="fuzzy-match">Komme i gang</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="103">
-          <source>What's new or changed</source><target logoport:matchpercent="98" state="translated" state-qualifier="fuzzy-match">Hva er nytt eller endret?</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="104">
-          <source>Preview features in Dynamics 365 for Retail 10.0.3</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">Forhåndsvisningsfunksjoner i Dynamics 365 for Retail 10.0.3</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="105">
-          <source>What's new or changed in Dynamics 365 for Retail 10.0.2</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">Hva er nytt eller endret i Dynamics 365 for Retail 10.0.2</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="106">
-          <source>What's new ot changed in Dynamics 365 for Retail 10.0.1</source><target logoport:matchpercent="87" state="translated" state-qualifier="x-fuzzy-match-unedited">Hva er nytt eller endret i Dynamics 365 for Retail 10.0.1</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="107">
-          <source>What's new or changed in Dynamics 365 for Retail (April 2019)</source><target logoport:matchpercent="87" state="translated" state-qualifier="x-fuzzy-match-unedited">Hva er nytt eller endret i Dynamics 365 for Retail (april 2019)</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="108">
-          <source>Before you buy Retail</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">Før du kjøper Retail</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="109">
-          <source>Sign up for a preview subscription</source><target logoport:matchpercent="98" state="translated" state-qualifier="fuzzy-match">Registrere deg for et forhåndsvisningsabonnement</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="110">
-          <source>Deploy a demo environment</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Distribuere et demomiljø</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="111">
-          <source>Deployment options</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Distribusjonsalternativer</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="112">
-          <source>Get support for Retail</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Få kundestøtte for Retail</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="113">
-          <source>One Version service updates FAQ</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vanlige spørsmål om oppdatering av én versjonstjeneste</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="114">
-          <source>Understand the implementation lifecycle</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Forstå implementeringslivssyklusen</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="115">
-          <source>Microsoft FastTrack for Dynamics 365</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Microsoft FastTrack for Dynamics 365</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="116">
-          <source>Onboarding</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jobbintroduksjon</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="117">
-          <source>Preparing for go-live</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klargjøre for aktivering</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="118">
-          <source>Go-live FAQ</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vanlige spørsmål om aktivering</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="119">
-          <source>Submit a service request</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Sende en serviceforespørsel</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="120">
-          <source>Subscriptions, LCS projects, and Azure Active Directory tenants FAQ</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vanlige spørsmål om abonnementer, LCS-prosjekter og Azure Active Directory-leiere</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="121">
-          <source>Move environments between data centers</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Flytte miljøer mellom datasentre</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="122">
-          <source>Move licenses between agreement types</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Flytte lisenser mellom avtaletyper</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="123">
-          <source>Move an LCS Implementation project to another Azure Active Directory tenant</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Flytte et LCS-implementeringsprosjekt til en annen Azure Active Directory-leier</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="124">
-          <source>Implement multiple LCS projects and production environments on the same Azure Active Directory tenant</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Implementere flere LCS-prosjekter og produksjonsmiljøer på samme Azure Active Directory-leier</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="125">
-          <source>Implement Finance and Operations Retail projects</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">Implementere Retail-prosjekter for Finance and Operations</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="126">
-          <source>Set up new environments, Azure DevOps, and branches for Retail projects</source><target logoport:matchpercent="94" state="translated" state-qualifier="fuzzy-match">Definere nye miljøer, Azure DevOps og grener for Retail-prosjekter</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="127">
-          <source>Update code and environments for Retail projects</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">Oppdatere kode og miljøer for Retail-prosjekter</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="128">
-          <source>Testing and performance issues</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">Testings- og ytelsesproblemer</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="129">
-          <source>Distributed order management (DOM)</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">Behandling av distribuert ordre (DOM)</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="130">
-          <source>DOM overview</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">DOM-oversikt</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="131">
-          <source>Cost configuration</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">Kostnadskonfigurasjon</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="132">
-          <source>Payments</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">Betalinger</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="133">
-          <source>Payment methods</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">Betalingsmåter</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="134">
-          <source>Credit card setup, authorization, and capture</source><target logoport:matchpercent="98" state="translated" state-qualifier="fuzzy-match">Kredittkortoppsett, autorisasjon og registrering</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="135">
-          <source>Configure cash denominations for the POS</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">Konfigurere kontantstørrelser for salgsstedet</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="136">
-          <source>Dynamics 365 Payment Connector for Adyen</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">Dynamics 365 Payment Connector for Adyen</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="137">
-          <source>Saving online payment instruments with the Adyen connector</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Lagre betalingsmåter på nett med Adyen-koblingen</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="138">
-          <source>Set up pay invoice scenarios</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">Definere scenarier for betaling av faktura</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="139">
-          <source>Payments FAQ</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">Vanlige spørsmål om betalinger</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="140">
-          <source>Duplicate payments prevention</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">Forhindring av like betalinger</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="141">
-          <source>Purchase orders</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Bestillinger</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="142">
-          <source>Purchase order overview</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Oversikt over bestilling</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="143">
-          <source>Create purchase orders</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Opprette bestillinger</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="144">
-          <source>Product receipt against purchase orders</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Mottaksseddel mot bestillinger</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="145">
-          <source>Approve and confirm purchase orders</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Godkjenne og bekrefte bestillinger</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="146">
-          <source>Purchase order approval mobile workspace</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Mobilt arbeidsområde for bestillingsgodkjenning</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="147">
-          <source>Statements</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kontoutdrag</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="148">
-          <source>Retail statements</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Detaljhandelsutdrag</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="149">
-          <source>Retail transaction consistency checker</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Konsekvenskontroll for detaljhandelstransaksjon</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="150">
-          <source>Create, calculate, and post statements for a retail store</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">Opprette, beregne og postere utdrag for en detaljhandel</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="151">
-          <source>Improvements to statement posting functionality</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">Forbedringer for utdragsposteringsfunksjonalitet</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="152">
-          <source>Improved handling of batch tracked items</source><target logoport:matchpercent="98" state="translated" state-qualifier="fuzzy-match">Forbedret håndtering av varer med partisporing</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="153">
-          <source>Configure Retail parameters that affect retail statements</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">Konfigurere detaljhandelsparametere som påvirker detaljhandelsutdrag</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="154">
-          <source>Configure payment method settings that affect retail statements</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Konfigurere innstillinger for betalingsmåte som påvirker detaljhandelsutdrag</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="155">
-          <source>Configure and run a job to calculate statements</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Konfigurere og kjøre en jobb for å beregne utdrag</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="156">
-          <source>Configure and run a job to post statements</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Konfigurere og kjøre en jobb for å postere utdrag</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="157">
-          <source>Configure store settings that affect retail statements</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Konfigurere oppbevaringsinnstillinger som påvirker detaljhandelsutdrag</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="158">
-          <source>Sales tax</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Merverdiavgift</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="159">
-          <source>Sales tax overview</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Oversikt over merverdiavgift</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="160">
-          <source>Sales tax calculation methods in the Origin field</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Beregningsmåter for merverdiavgift i grunnlagsfeltet</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="161">
-          <source>Sales tax assignment and overrides</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"> Mva-tilordning og overstyringer</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="162">
-          <source>Whole amount and Interval calculation options for sales tax codes</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">Hele beløp og alternativer for intervallberegning for mva-koder</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="163">
-          <source>Omni-channel payments overview</source><target logoport:matchpercent="77" state="translated" state-qualifier="fuzzy-match">Oversikt over betalinger for omnikanal</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="164">
-          <source>Omni-channel advanced auto charges</source><target logoport:matchpercent="98" state="translated" state-qualifier="fuzzy-match">Avanserte automatiske tillegg for omnikanal</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="165">
-          <source>Configure and use advanced auto charges</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">Konfigurere og bruke avanserte automatiske tillegg</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="166">
-          <source>Prorate header charges to matching sales lines</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Fordel hodegebyrer til samsvarende salgslinjer</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="167">
-          <source>Call center</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Telefonsenter</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="168">
-          <source>Call center sales functionality</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Salgsfunksjonalitet for telefonsenter</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="169">
-          <source>Call center catalogs</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Telefonsenterkataloger</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="170">
-          <source>Configure delivery modes and charges</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Konfigurere leveringsmåter og tillegg</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="171">
-          <source>Set up and work with fraud alerts</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Definere og arbeide med svindelvarsler</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="172">
-          <source>Set up call center channels</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Definere telefonsenterkanaler</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="173">
-          <source>Set up continuity programs for call centers</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Definere kontinuitetsprogrammer for telefonsentre</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="174">
-          <source>Configure and work with call center order holds</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Konfigurere og arbeide med ordresperrer i telefonsenter</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="175">
-          <source>Payment methods</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Betalingsmåter</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="176">
-          <source>Channel setup and management</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kanaloppsett og -behandling</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="177">
-          <source>Initialize seed data in new Retail environments</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Initialisere data for utgangsverdi i nye Retail-miljøer</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="178">
-          <source>Define and maintain retail channels</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Definere og vedlikeholde detaljhandelskanaler</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="179">
-          <source>Assortment management</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Sortimentstyring</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="180">
-          <source>Set up online stores</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Konfigurere nettbutikker</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="181">
-          <source>Configure and install Retail hardware station</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Konfigurere og installere Retail hardware station</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="182">
-          <source>Time and attendance in Retail</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Timeregistrering i Retail</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="183">
-          <source>Modern Point of Sale (MPOS) and Cloud POS</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Modern Point of Sale (MPOS) og Cloud POS</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="184">
-          <source>Choose between MPOS and Cloud POS</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Velge mellom MPOS og Cloud POS</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="185">
-          <source>Online and offline POS operations</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">Tilkoblede og frakoblede POS-operasjoner</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="186">
-          <source>Device activation of a customized Retail MPOS</source><target logoport:matchpercent="83" state="translated" state-qualifier="fuzzy-match">Enhetsaktivering av en tilpasset Retail MPOS</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="187">
-          <source>Demo data screen layouts in MPOS and Cloud POS</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">Skjermoppsett for demonstrasjonsdata i MPOS og Cloud POS</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="188">
-          <source>Product and customer search in the POS</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">Produkt- og kundesøk på salgsstedet</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="189">
-          <source>Cash management improvements</source><target logoport:matchpercent="68" state="translated" state-qualifier="fuzzy-match">Forbedringer for kontanttransaksjoner</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="190">
-          <source>Inventory lookup in the POS</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">Beholdningsoppslag på salgsstedet</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="191">
-          <source>Suspend and resume transactions in the POS</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">Suspendere og gjenoppta transaksjoner på salgsstedet</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="192">
-          <source>Hardware peripherals</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Eksterne enheter for maskinvare</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="193">
-          <source>Retail peripherals</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Eksterne enheter for Retail</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="194">
-          <source>Retail peripheral simulator</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Simulator for eksterne enheter for Retail</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="195">
-          <source>Connect peripherals to the POS</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Koble eksterne enheter til salgsstedet</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="196">
-          <source>Screen layouts</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Skjermoppsett</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="197">
-          <source>Demo data screen layouts in MPOS/CPOS</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Skjermoppsett for demonstrasjonsdata i MPOS/CPOS</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="198">
-          <source>Screen layouts for the POS</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Skjermoppsett for salgsstedet</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="199">
-          <source>Install the Retail POS layout designer</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Installere oppsettsutforming for Retail POS</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="200">
-          <source>Choose notification settings</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Velge varslingsinnstillinger</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="201">
-          <source>POS application and user language settings</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">POS-program og innstillinger for brukerspråk</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="202">
-          <source>Set up and manage images for MPOS</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Definere og administrere bilder for MPOS</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="203">
-          <source>Info codes and info code groups</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Informasjonskoder og informasjonskodegrupper</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="204">
-          <source>POS improvements for serialized products</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">POS-forbedringer for serialiserte produkter</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="205">
-          <source>Product recommendations</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Produktanbefalinger</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="206">
-          <source>Personalized product recommendations</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Personlige produktanbefalinger</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="207">
-          <source>Add a recommendations control on POS devices</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Legge til en kontroll for anbefalinger i POS-enheter</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="208">
-          <source>Offline POS functionality</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Frakoblet funksjonalitet for POS</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="209">
-          <source>Shift and cash drawer management</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Behandling av skift og kassaskuff</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="210">
-          <source>Cash out gift card balance</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Balanse for innløsing av gavekort i kontanter</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="211">
-          <source>Customer orders</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kundeordrer</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="212">
-          <source>Customer orders in MPOS</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kundeordrer i MPOS</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="213">
-          <source>Hybrid customer orders</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Hybride kundeordrer</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="214">
-          <source>Sales associates</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Salgsmedarbeidere</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="215">
-          <source>Track commissions in the POS using sales groups</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Spore provisjoner på salgsstedet ved hjelp av salgsgrupper</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="216">
-          <source>Ship orders from another store</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Levere ordrer fra en annen butikk</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="217">
-          <source>Device activation</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Enhetsaktivering</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="218">
-          <source>Configure, install and activate MPOS</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Konfigurere, installere og aktivere MPOS</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="219">
-          <source>Set up extended logon functionality for MPOS and Cloud POS</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Definere funksjonalitet for utvidet pålogging MPOS og Cloud POS</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="220">
-          <source>Manage Retail activation accounts and validate devices</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Administrere aktiveringskontoer for Retail og validere enheter</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="221">
-          <source>Receipts</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kvitteringer</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="222">
-          <source>Set up and design receipt formats</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Definere og utforme kvitteringsformater</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="223">
-          <source>Send email receipts from MPOS</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Sende e-postkvitteringer fra MPOS</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="224">
-          <source>Task recorder and Help for MPOS and Cloud POS</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Oppgaveopptaker og hjelp for POS og Cloud POS</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="225">
-          <source>Order fulfillment</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ordreoppfyllelse</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="226">
-          <source>Store order fulfillment</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Butikkordreoppfyllelse</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="227">
-          <source>Set up order fulfillment for stores</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Definere ordreoppfyllelse for butikker</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="228">
-          <source>Show order notifications in the POS</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vise ordrevarslinger på salgsstedet</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="229">
-          <source>Returns</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Returer</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="230">
-          <source>Sell and return products not included in a store's assortment</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Selge og gå tilbake til produkter som ikke er inkludert i et butikksortiment</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="231">
-          <source>Configure and process an exchange on a return order</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Konfigurere og behandle en utveksling i en returordre</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="232">
-          <source>Restrict payment methods for returns without a receipt</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Begrense betalingsmåter for returer uten en kvittering</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="233">
-          <source>Return items across multiple customer orders and invoices</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Returnere varer på tvers av flere kunder, ordrer og fakturaer</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="234">
-          <source>Monitoring and analysis</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Overvåkning og analyse</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="235">
-          <source>Monitor sales and margin performance</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Overvåke salgs- og marginytelse</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="236">
-          <source>Analyze sales trends and patterns</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Analysere salgstrender og -mønstre</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="237">
-          <source>Assess sales performance by product</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vurdere salgsytelse etter produkt</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="238">
-          <source>Assess customer and product profitability</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vurdere kunde- og produktlønnsomhet</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="239">
-          <source>Analyze store performance</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Analysere butikkytelse</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="240">
-          <source>Set up Recency, Frequency, and Monetary (RFM) analysis</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Definere RFM-analyse (Recency, Frequency, and Monetary)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="241">
-          <source>Retail price reports</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Rapporter for utsalgspris</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="242">
-          <source>Pricing and discounts</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Priser og rabatter</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="243">
-          <source>Retail discounts</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Detaljhandelsrabatter</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="244">
-          <source>Retail sales price management</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Salgsprisbehandling for detaljhandel</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="245">
-          <source>Price adjustments and discounts</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Prisjusteringer og rabatter</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="246">
-          <source>Apply multiple discounts to a product</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Bruke flere rabatter for et produkt</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="247">
-          <source>Determine the optimal combination of overlapping discounts</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Fastslå den optimale kombinasjonen av overlappende rabatter</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="248">
-          <source>Define channel-specific discounts</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Definere kanalspesifikke rabatter</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="249">
-          <source>Options for preventing discounts for retail products</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Alternativer for å hindre rabatter for detaljhandelsprodukter</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="250">
-          <source>Shipping discount overview</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Oversikt over leveringsrabatt</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="251">
-          <source>Set up coupons for retail sales</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Definere kuponger for detaljhandelssalg</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="252">
-          <source>Products and merchandising</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Produkter og varehandel</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="253">
-          <source>Product information overview</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Oversikt over produktinformasjon</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="254">
-          <source>Retail hierarchies</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Detaljhandelshierarkier</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="255">
-          <source>Attributes and attribute groups</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Attributter og attributtgrupper</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="256">
-          <source>Create and manage attributes</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Opprette og administrere attributter</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="257">
-          <source>Set up retail products</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Definere detaljhandelsprodukter</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="258">
-          <source>Manage Retail product categories and products</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Administrere produktkategorier og produkter for Retail</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="259">
-          <source>Product dimensions</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Produktdimensjoner</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="260">
-          <source>Set up bar codes</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Definere strekkoder</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="261">
-          <source>Set up bar code masks</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Definere strekkodemasker</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="262">
-          <source>Set up assortments</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Definere sortimenter</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="263">
-          <source>Sell and return products not included in a store's assortment</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Selge og gå tilbake til produkter som ikke er inkludert i et butikksortiment</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="264">
-          <source>Default order settings for dimensions and product variants</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Standard ordreinnstillinger for dimensjoner og produktvarianter</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="265">
-          <source>Search for products and product variants during order entry</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Søke etter produkter og produktvarianter under ordreregistrering</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="266">
-          <source>Loyalty</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Fordel</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="267">
-          <source>Loyalty overview</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Fordelsoversikt</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="268">
-          <source>Inventory</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Beholdning</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="269">
-          <source>Store inventory management</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Butikklagerstyring</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="270">
-          <source>Register serial numbers in the sales process</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Registrere serienumre i salgsprosessen</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="271">
-          <source>Inventory journals</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Lagerjournaler</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="272">
-          <source>Inventory tag counting</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Lagerbrikkeopptelling</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="273">
-          <source>FIFO with physical value and marking</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">FIFO med fysisk verdi og merking</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="274">
-          <source>LIFO Date with physical value and marking</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">LIFO-dato med fysisk verdi og merking</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="275">
-          <source>LIFO with physical value and marking</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">LIFO med fysisk verdi og merking</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="276">
-          <source>Weighted average date</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Dato for avveid gjennomsnitt</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="277">
-          <source>Weighted average with physical value and marking</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Direkte utligning med fysisk verdi og merking</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="278">
-          <source>Quarantine orders</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Karanteneordrer</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="279">
-          <source>Running average cost price</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Løpende gjennomsnittlig kostpris</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="280">
-          <source>Track running average cost per inventory dimension</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Spore glidende gjennomsnitt av kostpris per lagerdimensjon</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="281">
-          <source>Human resources</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Personale</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="282">
-          <source>Organize your workforce using departments, jobs, and positions</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Organisere arbeidsstyrken ved bruk av avdelinger, jobber og stillinger</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="283">
-          <source>Set up the components of a job</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Definere komponentene for en jobb</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="284">
-          <source>Localization and regulatory features</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Lokalisering og forskriftsmessige funksjoner</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="285">
-          <source>Fiscal integration overview for Retail channel</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Oversikt over økonomisk integrering for detaljhandelskanal</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="286">
-          <source>Set up fiscal integration for Retail channel</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Definere økonomisk integrering for detaljhandelskanal</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="287">
-          <source>Austria</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Østerrike</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="288">
-          <source>Fiscal registration service integration sample for Austria</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Eksempel på integrering av tjenesten for avgiftsmessig transaksjon for Østerrike</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="289">
-          <source>Eastern Europe</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Øst-Europa</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="290">
-          <source>Advance invoices for Retail for Eastern Europe</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Forskuddsfakturaer for Retail for Øst-Europa</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="291">
-          <source>Petty cash management for Retail for Eastern Europe</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Administrere håndkasse for Retail for Øst-Europa</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="292">
-          <source>Retail customer invoices and return sales orders in Eastern European countries</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kundefakturaer for Retail og retursalgsordrer i østeuropeiske land</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="293">
-          <source>Deployment guidelines for cash registers for Czech Republic, Hungary, and Poland</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Retningslinjer for distribusjon for kassaapparater for Tsjekkia, Ungarn og Polen</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="294">
-          <source>Fiscal printer integration sample for Poland</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Eksempel på integrering av bilagsskriver for Polen</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="295">
-          <source>Fiscal registration service integration sample for Czech Republic</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Eksempel på integrering av tjenesten for avgiftsmessig transaksjon for Tsjekkia</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="296">
-          <source>France</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Frankrike</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="297">
-          <source>Cash register functionality</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kassefunksjonalitet</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="298">
-          <source>Deployment guidelines for cash registers</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Retningslinjer for distribusjon for kassaapparater</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="299">
-          <source>India</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">India</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="300">
-          <source>Goods and Services Tax (GST) integration for cash registers</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">GST-integrering (Goods and Services Tax) for kasser</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="301">
-          <source>Deployment guidelines for cash registers</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Retningslinjer for distribusjon for kassaapparater</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="302">
-          <source>Support for upgrade and N-1 for India</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Støtte for oppgradering og N-1 for India</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="303">
-          <source>Italy</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Italia</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="304">
-          <source>Fiscal printer integration sample for Italy</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Eksempel på integrering av bilagsskriver for Italia</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="305">
-          <source>Norway</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Norge</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="306">
-          <source>Cash register functionality</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kassefunksjonalitet</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="307">
-          <source>Deployment guidelines for cash registers</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Retningslinjer for distribusjon for kassaapparater</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="308">
-          <source>Sweden</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Sverige</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="309">
-          <source>Cash register functionality</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kassefunksjonalitet</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="310">
-          <source>Sample for Retail POS integration with control units</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Eksempel for Retail POS-integrering med kontrollenheter</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="311">
-          <source>Retail tasks</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Oppgaver i Retail</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="312">
-          <source>Create a product</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Opprette et produkt</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="313">
-          <source>Configure linked products</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Konfigurere koblede produkter</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="314">
-          <source>Release a product/product master to legal entities</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Frigi produkt/produktstandard til juridiske enheter</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="315">
-          <source>Create channel-specific trade agreements</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Opprette kanalspesifikke forretningsavtaler</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="316">
-          <source>Create trade agreements using category pricing rules</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Opprette forretningsavtaler ved hjelp av kategoriprisregler</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="317">
-          <source>Configure credit card processing</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Konfigurere kredittkortbehandling</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="318">
-          <source>Configure functionality profiles for sales representatives</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Konfigurere funksjonalitetsprofiler for salgsrepresentanter</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="319">
-          <source>Configure machine learning-powered product recommendations</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Konfigurere maskinlæringsbaserte produktanbefalinger</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="320">
-          <source>Create devices and associate them with registers</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Opprette enheter og knytte dem til registre</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="321">
-          <source>Create hardware stations</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Opprette maskinvarestasjoner</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="322">
-          <source>Create POS registers</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Opprette kasser på salgssted</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="323">
-          <source>Create call center orders</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Opprette telefonsenterordrer</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="324">
-          <source>Create financial dimensions for POS registers and configure dimension values on registers</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Opprette finansdimensjoner for kasser på salgssted og konfigurere dimensjonsverdier i kasser</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="325">
-          <source>Create financial dimensions for retail channels and configure dimension values on stores</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Opprette finansdimensjoner for detaljhandelskanaler og konfigurere dimensjonsverdier i butikker</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="326">
-          <source>Create online channels and define channel attributes</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Opprette Internett-kanaler og definere kanalattributter</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="327">
-          <source>Create POS permission groups</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Opprette tillatelsesgrupper for salgssted</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="328">
-          <source>Create POS visual profiles</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Opprette visuelle POS-profiler</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="329">
-          <source>Create product packages for purchase orders</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Opprette produktpakker for bestillinger</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="330">
-          <source>Create call center channels and define channel attributes</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Opprette telefonsenterkanaler og definere kanalattributter</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="331">
-          <source>Define channel attributes</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Definere kanalattributter</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="332">
-          <source>Define continuity schedules</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Definere kontinuitetsplaner</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="333">
-          <source>Define loyalty programs</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"> Definere fordelsprogrammer</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="334">
-          <source>Define loyalty reward points</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"> Definere fordelspoeng</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="335">
-          <source>Define loyalty schemes</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"> Definere fordelsskjemaer</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="336">
-          <source>Design the relationships between organizational units</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Utforme relasjonene mellom organisasjonsenheter</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="337">
-          <source>Manage assortments</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Administrere sortimenter</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="338">
-          <source>Download hardware stations by using self-service</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Laste ned maskinvarestasjoner ved hjelp av selvbetjening</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="339">
-          <source>Post online sales and payments</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Postere elektroniske salg og betalinger</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="340">
-          <source>Process adjustments of loyalty reward points</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Behandle justeringer av fordelspoeng</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="341">
-          <source>Push products from distribution centers to stores via buyer's push</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Overføre produkter fra distribusjonssentre til butikker via sentralt innkjøp</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="342">
-          <source>Create retail price adjustments</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Opprette prisjusteringer for detaljhandel</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="343">
-          <source>Generate and run out-of-box reports</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Generere og kjøre medfølgende rapporter</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="344">
-          <source>Set up rules and parameters for cross-docking and buyer's push</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Definere regler og parametere for direkteoverføring og sentralt innkjøp</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="345">
-          <source>Selling continuity programs and processing sales orders</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Selge kontinuitetsprogrammer og behandle salgsordrer</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="346">
-          <source>Configure retail workers</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Konfigurere detaljhandelsarbeidere</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="347">
-          <source>Retail development and administration</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Utvikling og administrasjon for detaljhandel</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="348">
-          <source>Architecture</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Arkitektur</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="349">
-          <source>Retail components</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Retail-komponenter</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="350">
-          <source>Retail Server architecture</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Arkitektur for Retail Server</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="351">
-          <source>Select an in-store topology</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Velg topologi i butikk</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="352">
-          <source>Commerce Data Exchange and retail channel communications</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Commerce Data Exchange og kommunikasjon på detaljhandelskanal</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="353">
-          <source>Retail Modern POS architecture</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Retail Modern POS-arkitektur</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="354">
-          <source>Retail online store publishing architecture</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Publiseringsarkitektur for nettbutikk for Retail</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="355">
-          <source>Retail Channel Performance Power BI content</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Power BI-innhold for Retail Channel Performance</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="356">
-          <source>Payment Application Data Security Standards (PA-DSS) certification</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">PA-DSS-sertifisering (Payment Application Data Security Standards)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="357">
-          <source>Retail capabilities available in on-premises deployments</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Detaljhandelsfunksjoner som er tilgjengelige i lokale distribusjoner</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="358">
-          <source>Deployment and hotfixes</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Distribusjon og hurtigreparasjoner</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="359">
-          <source>Retail Store Scale Unit</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Retail Store Scale Unit</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="360">
-          <source>Configure and install Retail Store Scale Unit</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Konfigurere og installere Retail Store Scale Unit</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="361">
-          <source>Retail Modern POS configuration and installation</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Konfigurasjon og installasjon av Retail Modern POS</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="362">
-          <source>Manage Retail accounts and devices from headquarters</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Administrere Retail-kontoer og -enheter fra hovedkvarter</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="363">
-          <source>Retail POS device activation</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Aktivering av enhet for Retail POS</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="364">
-          <source>Help secure Cloud POS in shared environments</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Hjelpe med å sikre Cloud POS i delte miljøer</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="365">
-          <source>Retail Hardware Station configuration and installation</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Konfigurasjon og installasjon av Retail hardware station</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="366">
-          <source>Mass deployment of Retail self-service components</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Massedistribusjon av selvbetjeningskomponenter for Retail</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="367">
-          <source>Retail component events for diagnostics and troubleshooting</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Hendelser for Retail-komponenter for diagnose og feilsøking</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="368">
-          <source>Apply a deployable package</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Bruke en distribuerbar pakke</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="369">
-          <source>Upgrade and N-1 support</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Oppgradering og N-1-støtte</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="370">
-          <source>Upgrade and N-1 support for Retail</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Støtte for oppgradering og N-1 for detaljhandel</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="371">
-          <source>Phased Rollout (N-1) installation, configuration, and cutover</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Installasjon, konfigurasjon og overgang for distribusjon i faser (N-1)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="372">
-          <source>Upgrade the Retail channel extension to the latest Retail SDK</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Oppgradere utvidelsen for Retail-kanalen til siste SDK for Retail</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="373">
-          <source>Implementation guidance</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Implementeringsveiledning</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="374">
-          <source>Device management implementation guidance</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Implementeringsveiledning for enhetsbehandling</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="375">
-          <source>Environment configuration</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Miljøkonfigurasjon</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="376">
-          <source>Add links to your organization's legal terms and privacy statement</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Legge til koblinger i organisasjonens juridiske vilkår og personvernerklæring</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="377">
-          <source>Manage Bing Maps</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Administrere Bing-kart</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="378">
-          <source>Localize Retail extension resources and label files</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Lokalisere utvidelsesressurser og etikettfiler for Retail</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="379">
-          <source>Point of sale extensibility</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Utvidelsesmuligheter for salgssted</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="380">
-          <source>Retail POS screen layouts</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Skjermoppsett for Retail POS</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="381">
-          <source>Open URL in POS</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Åpne URL-adresse i POS</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="382">
-          <source>Install the POS Layout designer</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Installere utforming av oppsett for salgssted</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="383">
-          <source>Retail Modern POS in offline mode</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Retail Modern POS i frakoblet modus</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="384">
-          <source>Extend the POS Dual display view</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Utvide skjermvisningen for POS Dual</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="385">
-          <source>Retail Modern POS and Cloud POS trigger extensibility</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Utvidelsesmulighet for Retail Modern POS- og skysalgsstedsutløser</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="386">
-          <source>Add custom controls to POS views</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Legge til egendefinerte kontroller i salgsstedsvisninger</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="387">
-          <source>Add POS operations to POS layouts using Button grid designer</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Legge til salgsstedsoperasjoner i salgsstedsoppsett ved hjelp av utforming for knappegruppe</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="388">
-          <source>Retail POS APIs</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">API-er for Retail POS</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="389">
-          <source>POS payment extension</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Utvidelse for salgsstedsbetaling</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="390">
-          <source>Support for external gift cards</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Støtte for eksterne gavekort</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="391">
-          <source>Create and apply branding to the Retail Experience app</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Opprette og bruke merking i appen Retail Experience</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="392">
-          <source>Set up POS Hybrid app on Android and iOS</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Definere POS Hybrid-app på Android og iOS</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="393">
-          <source>Override POS request handler</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Overstyre forespørselsbehandling for salgssted</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="394">
-          <source>View POS extension package information</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vise informasjon om utvidelsespakke for salgssted</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="395">
-          <source>Hardware Station and extensibility</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Utvidelsesmulighet for Hardware Station</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="396">
-          <source>Retail Server extensibility</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Utvidelsesmuligheter for Retail Server</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="397">
-          <source>Extend a Retail Server OData controller</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Utvide en OData-kontroller for Retail Server</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="398">
-          <source>Create a Web API controller for Retail Server</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Opprette en Web-API-kontroller for Retail Server</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="399">
-          <source>Retail Server customer and consumer APIs</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kunde- og forbruker-API-er for Retail Server</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="400">
-          <source>Extend the default Retail Server metadata controller</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">Utvide standard metadatakontroller for Retail Server</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="401">
-          <source>Call the CRT service in offline mode</source><target logoport:matchpercent="96" state="translated" state-qualifier="fuzzy-match">Kalle CRT-tjenesten i frakoblet modus</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="402">
-          <source>Commerce runtime (CRT) extensibility</source><target logoport:matchpercent="96" state="translated" state-qualifier="fuzzy-match">Utvidelsesmulighet for Commerce Runtime (CRT)</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="403">
-          <source>CRT architecture and configuration</source><target logoport:matchpercent="98" state="translated" state-qualifier="fuzzy-match">Arkitektur for og konfigurasjon av CRT</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="404">
-          <source>CRT services</source><target logoport:matchpercent="98" state="translated" state-qualifier="fuzzy-match">CRT-tjenester</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="405">
-          <source>CRT and Retail Server extensibility</source><target logoport:matchpercent="98" state="translated" state-qualifier="fuzzy-match">Utvidelsesmulighet for CRT og Retail Server</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="406">
-          <source>Add customer preference data to channel databases</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">Legge til kundeinnstillingsdata i kanaldatabaser</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="407">
-          <source>Add properties to sales orders</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">Legge til egenskaper i salgsordrer</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="408">
-          <source>CRT extensibility and triggers</source><target logoport:matchpercent="98" state="translated" state-qualifier="fuzzy-match">Utvidelsesmulighet og utløsere for CRT</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="409">
-          <source>Block transactions using triggers</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">Blokkere transaksjoner ved hjelp av utløsere</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="410">
-          <source>Implement a return policy using triggers</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Implementere en returpolicy ved hjelp av utløsere</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="411">
-          <source>e-Commerce extensibility</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Utvidelsesmuligheter for e-handel</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="412">
-          <source>Configure online stores</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Konfigurer nettbutikker</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="413">
-          <source>Configure authentication providers</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Konfigurere godkjenningsleverandører</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="414">
-          <source>e-Commerce platform</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">E-handelsplattform</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="415">
-          <source>e-Commerce platform SDK</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">SDK for e-handelsplattform</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="416">
-          <source>Payment connector extensibility</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Utvidelsesmuligheter for betalingskobling</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="417">
-          <source>Create a payment integration for a payment terminal</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Opprette en betalingsintegrering for en betalingsterminal</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="418">
-          <source>Implementing a payment connector and payment device (white paper)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Implementere en betalingskobling og betalingsenhet (hvitbok)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="419">
-          <source>Deploy payment connectors</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Distribuere betalingskoblinger</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="420">
-          <source>Create custom localized error messages for payment terminal extensions</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Opprette egendefinerte, lokaliserte feilmeldinger for utvidelser av betalingsterminal</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="421">
-          <source>Create Windows installers for payment connectors</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Opprette Windows-installasjonsprogrammer for betalingskoblinger</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="422">
-          <source>Payment data use</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Betalingsdatabruk</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="423">
-          <source>Enable duplicate payment protection for payment connector</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Aktivere duplisert betalingsbeskyttelse for betalingskobling</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="424">
-          <source>Retail SDK</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Retail SDK</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="425">
-          <source>Upcoming changes in the Retail SDK</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kommende endringer i SDK for Retail</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="426">
-          <source>Merge the build systems for Retail and Finance and Operations</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Flette byggesystemene for Retail og Finance and Operations</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="427">
-          <source>Retail SDK extensibility samples</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Eksempler på utvidelsesmulighet for SDK for Retail</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="428">
-          <source>Create retail deployable packages</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Opprette distribuerbare pakker for detaljhandel</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="429">
-          <source>Retail SDK samples</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Eksempler på SDK for Retail</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="430">
-          <source>Extension points for packing slips</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Utvidelsespunkt for følgesedler</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="431">
-          <source>Channel database extensions</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Utvidelser for kanaldatabase</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="432">
-          <source>Enable custom CDX synchronization via extension</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Aktivere egendefinert CDX-synkronisering via utvidelse</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="433">
-          <source>Add custom fields to the POS Totals panel</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Legge til egendefinerte felt i panelet POS-totaler</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="434">
-          <source>Define and set order attributes</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Definere og angi ordreattributter</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="435">
-          <source>Customer attributes</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kundeattributter</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="436">
-          <source>Retail Typescript and C# proxies</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Retail Typescript og C#-proxyer</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="437">
-          <source>Run the Retail POS samples</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kjøre eksemplene for Retail POS</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="438">
-          <source>Extend POS views to add custom columns and app bar buttons</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Utvide POS-visninger for å legge til egendefinerte kolonner og applinjeknapper</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="439">
-          <source>Add custom controls to Retail Modern POS transaction pages</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Legge til egendefinerte kontroller på sider for transaksjon for Retail Modern POS</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="440">
-          <source>Add custom columns to a POS transaction grid</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Legge til egendefinerte kolonner i et rutenett for POS-transaksjon</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="441">
-          <source>Call POS APIs or operations from POS extensions</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ringe API-er eller operasjoner for salgssted fra POS-utvidelser</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="442">
-          <source>Retail Modern POS triggers and printing</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Utløsere og utskrift for Retail Modern POS</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="443">
-          <source>Add custom controls to non-screen designer-based POS views</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Legge til egendefinerte kontroller i POS-visninger som ikke er skjermutformingsbaserte</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="444">
-          <source>Development in cloud-hosted dev environments without admin access</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Utvikling i skydriftede utviklingsmiljøer uten administratortilgang</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="445">
-          <source>Commerce runtime</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Commerce Runtime</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="446">
-          <source>Loyalty extension</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Fordelsutvidelse</target></trans-unit>
-      </group>
-    </body>
-  </file>
-</xliff>
+- name: Velkommen til Dynamics 365 for Retail
+  href: index.md
+- name: Komme i gang
+  items:
+    - name: Hva er nytt eller endret?
+      href: get-started/whats-new.md
+    - name: Forhåndsvisningsfunksjoner i Dynamics 365 for Retail 10.0.3
+      href: get-started/whats-new-10-0-3.md
+    - name: Hva er nytt eller endret i Dynamics 365 for Retail 10.0.2
+      href: get-started/whats-new-10-0-2.md
+    - name: Hva er nytt eller endret i Dynamics 365 for Retail 10.0.1
+      href: get-started/whats-new-10-0-1.md
+    - name: Hva er nytt eller endret i Dynamics 365 for Retail (april 2019)
+      href: get-started/april-whats-new.md
+    - name: Før du kjøper Retail
+      href: get-started/before-you-buy.md
+    - name: Registrere deg for et forhåndsvisningsabonnement
+      href: ../dev-itpro/dev-tools/sign-up-preview-subscription.md?toc=/retail/toc.json
+    - name: Distribuere et demomiljø
+      href: ../dev-itpro/deployment/deploy-demo-environment.md?toc=/retail/toc.json
+    - name: Distribusjonsalternativer
+      href: dev-itpro/choose-deployment.md
+    - name: Få kundestøtte for Retail
+      href: retail-support.md
+    - name: Vanlige spørsmål om oppdatering av én versjonstjeneste
+      href: ../fin-and-ops/get-started/one-version.md
+- name: Forstå implementeringslivssyklusen
+  href: ../fin-and-ops/imp-lifecycle/implementation-lifecycle.md
+  items:
+    - name: Microsoft FastTrack for Dynamics 365
+      href: ../fin-and-ops/get-started/fasttrack-dynamics-365-overview.md
+    - name: Jobbintroduksjon
+      href: ../fin-and-ops/imp-lifecycle/onboard.md
+    - name: Klargjøre for aktivering
+      href: ../fin-and-ops/imp-lifecycle/prepare-go-live.md
+    - name: Vanlige spørsmål om aktivering
+      href: ../fin-and-ops/imp-lifecycle/go-live-faq.md
+    - name: Sende en serviceforespørsel
+      href: ../dev-itpro/lifecycle-services/submit-request-dynamics-service-engineering-team.md?toc=/fin-and-ops/toc.json
+    - name: 'Vanlige spørsmål om abonnementer, LCS-prosjekter og Azure Active Directory-leiere'
+      href: ../fin-and-ops/get-started/subscription-overview.md
+    - name: Flytte miljøer mellom datasentre
+      href: ../fin-and-ops/get-started/move-environments-data-center.md
+    - name: Flytte lisenser mellom avtaletyper
+      href: ../fin-and-ops/get-started/move-licenses-between-agreement-types.md
+    - name: Flytte et LCS-implementeringsprosjekt til en annen Azure Active Directory-leier
+      href: ../fin-and-ops/get-started/move-lcs-implementation-project-tenant.md
+    - name: Implementere flere LCS-prosjekter og produksjonsmiljøer på samme Azure Active Directory-leier
+      href: ../fin-and-ops/get-started/implement-multiple-projects-aad-tenant.md
+    - name: Implementere Retail-prosjekter for Finance and Operations
+      href: dev-itpro/implementing-dynamics-365-fin-and-ops-retail-projects.md
+    - name: 'Definere nye miljøer, Azure DevOps og grener for Retail-prosjekter'
+      href: dev-itpro/new-environments-visual-studio-teams-branch-retail-projects.md
+    - name: Oppdatere kode og miljøer for Retail-prosjekter
+      href: dev-itpro/updating-environments.md
+    - name: Testings- og ytelsesproblemer
+      href: dev-itpro/retail-implementation-testing-performance.md
+- name: Behandling av distribuert ordre (DOM)
+  items:
+    - name: DOM-oversikt
+      href: dom.md
+    - name: Kostnadskonfigurasjon
+      href: cost.md
+- name: Betalinger
+  items:
+    - name: Betalingsmåter
+      href: payment-methods.md
+    - name: 'Kredittkortoppsett, autorisasjon og registrering'
+      href: ../financials/accounts-receivable/credit-card-authorizations.md
+    - name: Konfigurere kontantstørrelser for salgsstedet
+      href: cash-denominations.md
+    - name: Dynamics 365 Payment Connector for Adyen
+      href: dev-itpro/adyen-connector.md
+    - name: Lagre betalingsmåter på nett med Adyen-koblingen
+      href: dev-itpro/adyen-connector-listPI.md
+    - name: Definere scenarier for betaling av faktura
+      href: payinvoice.md
+    - name: Vanlige spørsmål om betalinger
+      href: dev-itpro/payments-retail.md
+    - name: Forhindring av like betalinger
+      href: duplicate-payment-protection.md
+- name: Bestillinger
+  items:
+    - name: Oversikt over bestilling
+      href: ../supply-chain/procurement/purchase-order-overview.md
+    - name: Opprette bestillinger
+      href: ../supply-chain/procurement/purchase-order-creation.md
+    - name: Mottaksseddel mot bestillinger
+      href: ../supply-chain/procurement/product-receipt-against-purchase-orders.md
+    - name: Godkjenne og bekrefte bestillinger
+      href: ../supply-chain/procurement/purchase-order-approval-confirmation.md
+    - name: Mobilt arbeidsområde for bestillingsgodkjenning
+      href: ../supply-chain/procurement/purchase-order-mobile-workspace.md
+- name: Kontoutdrag
+  items:
+    - name: Detaljhandelsutdrag
+      href: retail-statements.md
+    - name: Konsekvenskontroll for detaljhandelstransaksjon
+      href: valid-checker.md
+    - name: 'Opprette, beregne og postere utdrag for en detaljhandel'
+      href: tasks/create-calculate-post-statement-retail-store.md
+    - name: Forbedringer for utdragsposteringsfunksjonalitet
+      href: statement-posting-EOD.md
+    - name: Forbedret håndtering av varer med partisporing
+      href: batch.md
+    - name: Konfigurere detaljhandelsparametere som påvirker detaljhandelsutdrag
+      href: tasks/parameter-configurations-retail-statements.md
+    - name: Konfigurere innstillinger for betalingsmåte som påvirker detaljhandelsutdrag
+      href: tasks/payment-configurations-retail-statements.md
+    - name: Konfigurere og kjøre en jobb for å beregne utdrag
+      href: tasks/run-job-calculate-statements.md
+    - name: Konfigurere og kjøre en jobb for å postere utdrag
+      href: tasks/run-job-post-statements.md
+    - name: Konfigurere oppbevaringsinnstillinger som påvirker detaljhandelsutdrag
+      href: tasks/store-configurations-retail-statements.md
+- name: Merverdiavgift
+  items:
+    - name: Oversikt over merverdiavgift
+      href: ../financials/general-ledger/indirect-taxes-overview.md
+    - name: Beregningsmåter for merverdiavgift i grunnlagsfeltet
+      href: ../financials/general-ledger/sales-tax-calculation-methods-origin-field.md
+    - name: ' Mva-tilordning og overstyringer'
+      href: ../supply-chain/procurement/tasks/sales-tax-assignment-overrides.md
+    - name: Hele beløp og alternativer for intervallberegning for mva-koder
+      href: ../financials/general-ledger/whole-amount-interval-options-sales-tax-codes.md
+- name: Oversikt over betalinger for omnikanal
+  href: omni-channel-payments.md
+- name: Avanserte automatiske tillegg for omnikanal
+  items:
+    - name: Konfigurere og bruke avanserte automatiske tillegg
+      href: omni-auto-charges.md
+    - name: Fordel hodegebyrer til samsvarende salgslinjer
+      href: pro-rate-charges-matching-lines.md
+- name: Telefonsenter
+  items:
+    - name: Salgsfunksjonalitet for telefonsenter
+      href: call-center-functionality.md
+    - name: Telefonsenterkataloger
+      href: call-center-catalogs.md
+    - name: Konfigurere leveringsmåter og tillegg
+      href: configure-call-center-delivery.md
+    - name: Definere og arbeide med svindelvarsler
+      href: set-up-fraud-alerts.md
+    - name: Definere telefonsenterkanaler
+      href: set-up-order-processing-options.md
+    - name: Definere kontinuitetsprogrammer for telefonsentre
+      href: set-up-continuity-program.md
+    - name: Konfigurere og arbeide med ordresperrer i telefonsenter
+      href: work-with-order-holds.md
+    - name: Betalingsmåter
+      href: work-with-payments.md
+- name: Kanaloppsett og -behandling
+  items:
+    - name: Initialisere data for utgangsverdi i nye Retail-miljøer
+      href: enable-configure-retail-functionality.md
+    - name: Definere og vedlikeholde detaljhandelskanaler
+      href: define-maintain-retail-channels.md
+    - name: Sortimentstyring
+      href: assortments.md
+    - name: Konfigurere nettbutikker
+      href: online-stores.md
+    - name: Konfigurere og installere Retail hardware station
+      href: retail-hardware-station-configuration-installation.md
+    - name: Timeregistrering i Retail
+      href: retail-time-attendance.md
+- name: Modern Point of Sale (MPOS) og Cloud POS
+  items:
+    - name: Velge mellom MPOS og Cloud POS
+      href: MPOS-or-CPOS.md
+    - name: Tilkoblede og frakoblede POS-operasjoner
+      href: pos-operations.md
+    - name: Enhetsaktivering av en tilpasset Retail MPOS
+      href: dev-itpro/retail-POS-activation-changes.md
+    - name: Skjermoppsett for demonstrasjonsdata i MPOS og Cloud POS
+      href: demo-data.md
+    - name: Produkt- og kundesøk på salgsstedet
+      href: POS-search-improvements.md
+    - name: Forbedringer for kontanttransaksjoner
+      href: cash-mgmt.md
+    - name: Beholdningsoppslag på salgsstedet
+      href: product-variants-POS.md
+    - name: Suspendere og gjenoppta transaksjoner på salgsstedet
+      href: pos-suspend-recall-transactions.md
+    - name: Eksterne enheter for maskinvare
+      items:
+        - name: Eksterne enheter for Retail
+          href: retail-peripherals-overview.md
+        - name: Simulator for eksterne enheter for Retail
+          href: dev-itpro/retail-peripheral-simulator.md
+        - name: Koble eksterne enheter til salgsstedet
+          href: define-maintain-channel-clients-registers-hw-stations.md
+    - name: Skjermoppsett
+      items:
+        - name: Skjermoppsett for demonstrasjonsdata i MPOS/CPOS
+          href: demo-data.md
+        - name: Skjermoppsett for salgsstedet
+          href: pos-screen-layouts.md
+        - name: Installere oppsettsutforming for Retail POS
+          href: install-pos-layout-designer.md
+        - name: Velge varslingsinnstillinger
+          href: Notifications-POS.md
+        - name: POS-program og innstillinger for brukerspråk
+          href: pos-application-user-language-settings.md
+        - name: Definere og administrere bilder for MPOS
+          href: set-up-manage-images-retail-mpos.md
+    - name: Informasjonskoder og informasjonskodegrupper
+      href: info-codes-retail.md
+    - name: POS-forbedringer for serialiserte produkter
+      href: serialized-inventory.md
+    - name: Produktanbefalinger
+      items:
+        - name: Personlige produktanbefalinger
+          href: personalized-product-recommendations.md
+        - name: Legge til en kontroll for anbefalinger i POS-enheter
+          href: add-recommendations-control-pos-screen.md
+    - name: Frakoblet funksjonalitet for POS
+      href: pos-offline-functionality.md
+    - name: Behandling av skift og kassaskuff
+      href: shift-drawer-management.md
+    - name: Balanse for innløsing av gavekort i kontanter
+      href: dev-itpro/gift-card-cash-out.md
+    - name: Kundeordrer
+      items:
+        - name: Kundeordrer i MPOS
+          href: customer-orders-overview.md
+        - name: Hybride kundeordrer
+          href: hybrid-customer-orders.md
+    - name: Salgsmedarbeidere
+      items:
+        - name: Spore provisjoner på salgsstedet ved hjelp av salgsgrupper
+          href: pos-sales-groups-track-commissions.md
+    - name: Levere ordrer fra en annen butikk
+      href: charge-send.md
+    - name: Enhetsaktivering
+      items:
+        - name: 'Konfigurere, installere og aktivere MPOS'
+          href: retail-modern-pos-device-activation.md
+        - name: Definere funksjonalitet for utvidet pålogging MPOS og Cloud POS
+          href: extended-logon.md
+        - name: Administrere aktiveringskontoer for Retail og validere enheter
+          href: set-up-activation-accounts-validate-devices-hq.md
+    - name: Kvitteringer
+      items:
+        - name: Definere og utforme kvitteringsformater
+          href: receipt-templates-printing.md
+        - name: Sende e-postkvitteringer fra MPOS
+          href: email-receipts.md
+    - name: Oppgaveopptaker og hjelp for POS og Cloud POS
+      href: task-recorder-retail-pos.md
+- name: Ordreoppfyllelse
+  items:
+    - name: Butikkordreoppfyllelse
+      href: Order-fulfillment-overview.md
+    - name: Definere ordreoppfyllelse for butikker
+      href: Order-fulfillment-POS-setup.md
+    - name: Vise ordrevarslinger på salgsstedet
+      href: Notifications-POS.md
+- name: Returer
+  items:
+    - name: Selge og gå tilbake til produkter som ikke er inkludert i et butikksortiment
+      href: sell-return-outside-assortments.md
+    - name: Konfigurere og behandle en utveksling i en returordre
+      href: orderexchanges.md
+    - name: Begrense betalingsmåter for returer uten en kvittering
+      href: payment-methods-restrictions.md
+    - name: 'Returnere varer på tvers av flere kunder, ordrer og fakturaer'
+      href: multireturn.md
+- name: Overvåkning og analyse
+  items:
+    - name: Overvåke salgs- og marginytelse
+      href: monitor-sales-margin-performance.md
+    - name: Analysere salgstrender og -mønstre
+      href: analyze-sales-trends-patterns.md
+    - name: Vurdere salgsytelse etter produkt
+      href: sales-performance-products.md
+    - name: Vurdere kunde- og produktlønnsomhet
+      href: assess-customer-product-profitability.md
+    - name: Analysere butikkytelse
+      href: store-performance-information.md
+    - name: 'Definere RFM-analyse (Recency, Frequency, and Monetary)'
+      href: set-up-rfm-analysis.md
+- name: Rapporter for utsalgspris
+  href: price-report.md
+- name: Priser og rabatter
+  items:
+    - name: Detaljhandelsrabatter
+      href: retail-discounts-overview.md
+    - name: Salgsprisbehandling for detaljhandel
+      href: price-management.md
+    - name: Prisjusteringer og rabatter
+      href: price-adjustments-discounts.md
+    - name: Bruke flere rabatter for et produkt
+      href: Apply-multiple-retail-discounts.md
+    - name: Fastslå den optimale kombinasjonen av overlappende rabatter
+      href: optimal-combination-overlapping-discounts.md
+    - name: Definere kanalspesifikke rabatter
+      href: define-channel-specific-discounts.md
+    - name: Alternativer for å hindre rabatter for detaljhandelsprodukter
+      href: prevent-discounts.md
+    - name: Oversikt over leveringsrabatt
+      href: retail-shipping-discount.md
+    - name: Definere kuponger for detaljhandelssalg
+      href: retail-coupons.md
+- name: Produkter og varehandel
+  items:
+    - name: Oversikt over produktinformasjon
+      href: ../supply-chain/pim/product-information.md
+    - name: Detaljhandelshierarkier
+      href: retail-hierarchies.md
+    - name: Attributter og attributtgrupper
+      href: attribute-attributegroups-lifecycle.md
+    - name: Opprette og administrere attributter
+      href: create-manage-attributes.md
+    - name: Definere detaljhandelsprodukter
+      href: set-up-retail-products.md
+    - name: Administrere produktkategorier og produkter for Retail
+      href: category-management-product-creation.md
+    - name: Produktdimensjoner
+      href: ../supply-chain/pim/product-dimensions.md
+    - name: Definere strekkoder
+      href: set-up-bar-codes.md
+    - name: Definere strekkodemasker
+      href: set-up-bar-code-masks.md
+    - name: Definere sortimenter
+      href: set-up-assortments.md
+    - name: Selge og gå tilbake til produkter som ikke er inkludert i et butikksortiment
+      href: sell-return-outside-assortments.md
+    - name: Standard ordreinnstillinger for dimensjoner og produktvarianter
+      href: ../supply-chain/production-control/default-order-settings.md
+    - name: Søke etter produkter og produktvarianter under ordreregistrering
+      href: ../supply-chain/pim/search-products-product-variants.md
+- name: Fordel
+  items:
+    - name: Fordelsoversikt
+      href: set-up-customer-loyalty-program.md
+- name: Beholdning
+  items:
+    - name: Butikklagerstyring
+      href: work-with-store-inventory.md
+    - name: Registrere serienumre i salgsprosessen
+      href: ../supply-chain/sales-marketing/register-serial-numbers-sales-process.md
+    - name: Lagerjournaler
+      href: ../supply-chain/inventory/inventory-journals.md
+    - name: Lagerbrikkeopptelling
+      href: ../supply-chain/inventory/inventory-tag-counting.md
+    - name: FIFO med fysisk verdi og merking
+      href: ../supply-chain/cost-management/fifo-physical-value-marking.md
+    - name: LIFO-dato med fysisk verdi og merking
+      href: ../supply-chain/cost-management/lifo-date-physical-value-marking.md
+    - name: LIFO med fysisk verdi og merking
+      href: ../supply-chain/cost-management/lifo-physical-value-marking.md
+    - name: Dato for avveid gjennomsnitt
+      href: ../supply-chain/cost-management/weighted-average-date.md
+    - name: Direkte utligning med fysisk verdi og merking
+      href: ../supply-chain/cost-management/weighted-average-physical-value-marking.md
+    - name: Karanteneordrer
+      href: ../supply-chain/inventory/quarantine-orders.md
+    - name: Løpende gjennomsnittlig kostpris
+      href: ../supply-chain/cost-management/running-average-cost-price.md
+    - name: Spore glidende gjennomsnitt av kostpris per lagerdimensjon
+      href: ../supply-chain/cost-management/track-running-average-cost-per-inventory-dimension.md
+- name: Personale
+  items:
+    - name: 'Organisere arbeidsstyrken ved bruk av avdelinger, jobber og stillinger'
+      href: ../talent/departments-jobs-positions.md
+    - name: Definere komponentene for en jobb
+      href: ../talent/create-job.md
+- name: Lokalisering og forskriftsmessige funksjoner
+  items:
+    - name: Oversikt over økonomisk integrering for detaljhandelskanal
+      href: localizations/fiscal-integration-for-retail-channel.md
+    - name: Definere økonomisk integrering for detaljhandelskanal
+      href: localizations/setting-up-fiscal-integration-for-retail-channel.md
+    - name: Østerrike
+      items:
+        - name: Eksempel på integrering av tjenesten for avgiftsmessig transaksjon for Østerrike
+          href: localizations/emea-aut-fi-sample.md
+    - name: Øst-Europa
+      items:
+        - name: Forskuddsfakturaer for Retail for Øst-Europa
+          href: localizations/emea-eeu-advance-invoices-for-retail.md
+        - name: Administrere håndkasse for Retail for Øst-Europa
+          href: localizations/emea-eeu-petty-cash-for-retail.md
+        - name: Kundefakturaer for Retail og retursalgsordrer i østeuropeiske land
+          href: localizations/emea-eeu-retail-invoices.md
+        - name: "Retningslinjer for distribusjon for\_kassaapparater for Tsjekkia, Ungarn og Polen"
+          href: localizations/emea-eeu-deployment.md
+        - name: Eksempel på integrering av bilagsskriver for Polen
+          href: localizations/emea-pol-fpi-sample.md
+        - name: Eksempel på integrering av tjenesten for avgiftsmessig transaksjon for Tsjekkia
+          href: localizations/emea-cze-fi-sample.md
+    - name: Frankrike
+      items:
+        - name: Kassefunksjonalitet
+          href: localizations/emea-fra-cash-registers.md
+        - name: Retningslinjer for distribusjon for kassaapparater
+          href: localizations/emea-fra-deployment.md
+    - name: India
+      items:
+        - name: GST-integrering (Goods and Services Tax) for kasser
+          href: localizations/apac-ind-cash-registers.md
+        - name: Retningslinjer for distribusjon for kassaapparater
+          href: localizations/apac-ind-loc-deployment-guidelines.md
+        - name: Støtte for oppgradering og N-1 for India
+          href: localizations/apac-ind-n-1-for-india.md
+    - name: Italia
+      items:
+        - name: Eksempel på integrering av bilagsskriver for Italia
+          href: localizations/emea-ita-fpi-sample.md
+    - name: Norge
+      items:
+        - name: Kassefunksjonalitet
+          href: localizations/emea-nor-cash-registers.md
+        - name: Retningslinjer for distribusjon for kassaapparater
+          href: localizations/emea-nor-loc-deployment-guidelines.md
+    - name: Sverige
+      items:
+        - name: Kassefunksjonalitet
+          href: localizations/emea-swe-cash-registers.md
+        - name: Eksempel for Retail POS-integrering med kontrollenheter
+          href: localizations/retail-sdk-control-unit-sample.md
+- name: Oppgaver i Retail
+  items:
+    - name: Opprette et produkt
+      href: ../supply-chain/pim/tasks/create-product.md
+    - name: Konfigurere koblede produkter
+      href: ../supply-chain/pim/tasks/configure-linked-products.md
+    - name: Frigi produkt/produktstandard til juridiske enheter
+      href: ../supply-chain/pim/tasks/release-product-product-master-legal-entities.md
+    - name: Opprette kanalspesifikke forretningsavtaler
+      href: tasks/base-price-trade-agreements.md
+    - name: Opprette forretningsavtaler ved hjelp av kategoriprisregler
+      href: tasks/category-pricing-rules-trade-agreements.md
+    - name: Konfigurere kredittkortbehandling
+      href: tasks/configure-credit-card-processing.md
+    - name: Konfigurere funksjonalitetsprofiler for salgsrepresentanter
+      href: tasks/configure-functionality-profile-sales-representative.md
+    - name: Konfigurere maskinlæringsbaserte produktanbefalinger
+      href: tasks/configure-machine-learning-product-recommendations.md
+    - name: Opprette enheter og knytte dem til registre
+      href: tasks/create-associate-device.md
+    - name: Opprette maskinvarestasjoner
+      href: tasks/create-associate-hardware-station.md
+    - name: Opprette kasser på salgssted
+      href: tasks/create-associate-registers.md
+    - name: Opprette telefonsenterordrer
+      href: tasks/create-call-center-orders.md
+    - name: Opprette finansdimensjoner for kasser på salgssted og konfigurere dimensjonsverdier i kasser
+      href: tasks/create-financial-dimensions-pos.md
+    - name: Opprette finansdimensjoner for detaljhandelskanaler og konfigurere dimensjonsverdier i butikker
+      href: tasks/create-financial-dimensions-retail-channels.md
+    - name: Opprette Internett-kanaler og definere kanalattributter
+      href: tasks/create-online-channel-define-channel-attributes.md
+    - name: Opprette tillatelsesgrupper for salgssted
+      href: tasks/create-pos-permission-groups.md
+    - name: Opprette visuelle POS-profiler
+      href: tasks/create-pos-visual-profile-2016-02.md
+    - name: Opprette produktpakker for bestillinger
+      href: tasks/create-product-packages-purchase-orders.md
+    - name: Opprette telefonsenterkanaler og definere kanalattributter
+      href: tasks/define-call-center-channel-channel-attributes.md
+    - name: Definere kanalattributter
+      href: tasks/define-channel-attributes.md
+    - name: Definere kontinuitetsplaner
+      href: tasks/define-continuity-schedules.md
+    - name: ' Definere fordelsprogrammer'
+      href: tasks/define-loyalty-programs.md
+    - name: ' Definere fordelspoeng'
+      href: tasks/define-loyalty-reward-points.md
+    - name: ' Definere fordelsskjemaer'
+      href: tasks/define-loyalty-schemes.md
+    - name: Utforme relasjonene mellom organisasjonsenheter
+      href: tasks/design-relationships-between-organizational-units.md
+    - name: Administrere sortimenter
+      href: tasks/manage-assortments-2016-11.md
+    - name: Laste ned maskinvarestasjoner ved hjelp av selvbetjening
+      href: tasks/perform-self-service-download-hardware-station.md
+    - name: Postere elektroniske salg og betalinger
+      href: tasks/posting-online-sales-payments.md
+    - name: Behandle justeringer av fordelspoeng
+      href: tasks/process-loyalty-reward-point-adjustments.md
+    - name: Overføre produkter fra distribusjonssentre til butikker via sentralt innkjøp
+      href: tasks/push-products-distribution-center-store-buyers-push.md
+    - name: Opprette prisjusteringer for detaljhandel
+      href: tasks/retail-price-adjustments.md
+    - name: Generere og kjøre medfølgende rapporter
+      href: tasks/run-out-box-reports.md
+    - name: Definere regler og parametere for direkteoverføring og sentralt innkjøp
+      href: tasks/set-up-rules-parameters-cross-docking-buyers-push.md
+    - name: Selge kontinuitetsprogrammer og behandle salgsordrer
+      href: tasks/use-continuity-program.md
+    - name: Konfigurere detaljhandelsarbeidere
+      href: tasks/worker.md
+- name: Utvikling og administrasjon for detaljhandel
+  href: dev-itpro/dev-retail-home-page.md
+  items:
+    - name: Arkitektur
+      items:
+        - name: Retail-komponenter
+          href: retail-components.md
+        - name: Arkitektur for Retail Server
+          href: dev-itpro/retail-server-architecture.md
+        - name: Velg topologi i butikk
+          href: dev-itpro/retail-in-store-topology.md
+        - name: Commerce Data Exchange og kommunikasjon på detaljhandelskanal
+          href: dev-itpro/define-retail-channel-communications-cdx.md
+        - name: Retail Modern POS-arkitektur
+          href: dev-itpro/retail-modern-pos-architecture.md
+        - name: Publiseringsarkitektur for nettbutikk for Retail
+          href: dev-itpro/retail-online-store-publishing-architecture.md
+        - name: Power BI-innhold for Retail Channel Performance
+          href: ../dev-itpro/analytics/retail-channel-performance-dashboard-power-bi-data.md?toc=/retail/toc.json
+        - name: PA-DSS-sertifisering (Payment Application Data Security Standards)
+          href: dev-itpro/PA-DSS-Certification.md
+        - name: Detaljhandelsfunksjoner som er tilgjengelige i lokale distribusjoner
+          href: retail-onprem.md
+    - name: Distribusjon og hurtigreparasjoner
+      items:
+        - name: Retail Store Scale Unit
+          href: dev-itpro/retail-store-system-begin.md
+        - name: Konfigurere og installere Retail Store Scale Unit
+          href: dev-itpro/retail-store-scale-unit-configuration-installation.md
+        - name: Konfigurasjon og installasjon av Retail Modern POS
+          href: retail-modern-pos-device-activation.md
+        - name: Administrere Retail-kontoer og -enheter fra hovedkvarter
+          href: set-up-activation-accounts-validate-devices-hq.md
+        - name: Aktivering av enhet for Retail POS
+          href: dev-itpro/retail-device-activation.md
+        - name: Hjelpe med å sikre Cloud POS i delte miljøer
+          href: dev-itpro/secure-retail-cloud-pos.md
+        - name: Konfigurasjon og installasjon av Retail hardware station
+          href: retail-hardware-station-configuration-installation.md
+        - name: Massedistribusjon av selvbetjeningskomponenter for Retail
+          href: dev-itpro/retail-mass-deployment.md
+        - name: Hendelser for Retail-komponenter for diagnose og feilsøking
+          href: dev-itpro/retail-component-events-diagnostics-troubleshooting.md
+        - name: Bruke en distribuerbar pakke
+          href: ../dev-itpro/deployment/apply-deployable-package-system.md?toc=/retail/toc.json
+    - name: Oppgradering og N-1-støtte
+      items:
+        - name: Støtte for oppgradering og N-1 for detaljhandel
+          href: dev-itpro/overview-upgrade-n-minus1.md
+        - name: 'Installasjon, konfigurasjon og overgang for distribusjon i faser (N-1)'
+          href: dev-itpro/n-1-installation-configuration.md
+        - name: Oppgradere utvidelsen for Retail-kanalen til siste SDK for Retail
+          href: dev-itpro/retailSDK-update.md
+    - name: Implementeringsveiledning
+      items:
+        - name: Implementeringsveiledning for enhetsbehandling
+          href: implementation-considerations-devices.md
+    - name: Miljøkonfigurasjon
+      items:
+        - name: Legge til koblinger i organisasjonens juridiske vilkår og personvernerklæring
+          href: ../dev-itpro/sysadmin/legal-terms-privacy-statement.md?toc=/retail/toc.json
+        - name: Administrere Bing-kart
+          href: dev-itpro/manage-bing-maps.md
+    - name: Lokalisere utvidelsesressurser og etikettfiler for Retail
+      href: dev-itpro/extension-resource-localization.md
+    - name: Utvidelsesmuligheter for salgssted
+      items:
+        - name: Skjermoppsett for Retail POS
+          href: pos-screen-layouts.md
+        - name: Åpne URL-adresse i POS
+          href: Open-URL-in-POS.md
+        - name: Installere utforming av oppsett for salgssted
+          href: install-pos-layout-designer.md
+        - name: Retail Modern POS i frakoblet modus
+          href: dev-itpro/retail-modern-pos-offline.md
+        - name: Utvide skjermvisningen for POS Dual
+          href: dev-itpro/pos-dual-display-extension.md
+        - name: Utvidelsesmulighet for Retail Modern POS- og skysalgsstedsutløser
+          href: dev-itpro/modern-pos-trigger-extensibility.md
+        - name: Legge til egendefinerte kontroller i salgsstedsvisninger
+          href: dev-itpro/pos-custom-control.md
+        - name: Legge til salgsstedsoperasjoner i salgsstedsoppsett ved hjelp av utforming for knappegruppe
+          href: dev-itpro/add-POS-operations.md
+        - name: API-er for Retail POS
+          href: dev-itpro/POS-APIs.md
+        - name: Utvidelse for salgsstedsbetaling
+          href: dev-itpro/pos-payment-extension.md
+        - name: Støtte for eksterne gavekort
+          href: dev-itpro/gift-card.md
+        - name: Opprette og bruke merking i appen Retail Experience
+          href: dev-itpro/create-retail-experience-app.md
+        - name: Definere POS Hybrid-app på Android og iOS
+          href: dev-itpro/hybridApp.md
+        - name: Overstyre forespørselsbehandling for salgssted
+          href: dev-itpro/pos-handler.md
+        - name: Vise informasjon om utvidelsespakke for salgssted
+          href: dev-itpro/view-pos-extension-package-details.md
+    - name: Utvidelsesmulighet for Hardware Station
+      href: dev-itpro/hardware-station-extensibility.md
+    - name: Utvidelsesmuligheter for Retail Server
+      items:
+        - name: Utvide en OData-kontroller for Retail Server
+          href: dev-itpro/extend-retail-server-odata-controller.md
+        - name: Opprette en Web-API-kontroller for Retail Server
+          href: dev-itpro/odata-controllers-api.md
+        - name: Kunde- og forbruker-API-er for Retail Server
+          href: dev-itpro/retail-server-customer-consumer-api.md
+        - name: Utvide standard metadatakontroller for Retail Server
+          href: dev-itpro/extend-metadata.md
+        - name: Kalle CRT-tjenesten i frakoblet modus
+          href: dev-itpro/call-crt-service-offline.md
+    - name: Utvidelsesmulighet for Commerce Runtime (CRT)
+      items:
+        - name: Arkitektur for og konfigurasjon av CRT
+          href: dev-itpro/commerce-runtime-overview.md
+        - name: CRT-tjenester
+          href: dev-itpro/crt-services.md
+        - name: Utvidelsesmulighet for CRT og Retail Server
+          href: dev-itpro/commerce-runtime-extensibility.md
+        - name: Legge til kundeinnstillingsdata i kanaldatabaser
+          href: dev-itpro/add-customer-preference-channel.md
+        - name: Legge til egenskaper i salgsordrer
+          href: dev-itpro/add-properties-sales-order.md
+        - name: Utvidelsesmulighet og utløsere for CRT
+          href: dev-itpro/commerce-runtime-extensibility-trigger.md
+        - name: Blokkere transaksjoner ved hjelp av utløsere
+          href: dev-itpro/trigger-example-blocking-transaction.md
+        - name: Implementere en returpolicy ved hjelp av utløsere
+          href: dev-itpro/trigger-example-return-policy.md
+    - name: Utvidelsesmuligheter for e-handel
+      items:
+        - name: Konfigurer nettbutikker
+          href: dev-itpro/configure-online-store.md
+        - name: Konfigurere godkjenningsleverandører
+          href: dev-itpro/configure-authentication-providers.md
+        - name: E-handelsplattform
+          href: dev-itpro/ecommerce-platform.md
+        - name: SDK for e-handelsplattform
+          href: dev-itpro/ecommerce-platform-sdk.md
+    - name: Utvidelsesmuligheter for betalingskobling
+      items:
+        - name: Opprette en betalingsintegrering for en betalingsterminal
+          href: dev-itpro/end-to-end-payment-extension.md
+        - name: Implementere en betalingskobling og betalingsenhet (hvitbok)
+          href: 'http://download.microsoft.com/download/4/D/7/4D7C6B05-0C23-4C6C-BA13-AB62ED08AA61/The%20Guide%20to%20Implementing%20Payment%20Connector%20and%20Payment%20Device.docx'
+        - name: Distribuere betalingskoblinger
+          href: dev-itpro/deploy-payment-connector.md
+        - name: 'Opprette egendefinerte, lokaliserte feilmeldinger for utvidelser av betalingsterminal'
+          href: dev-itpro/payment-custom-error-messages.md
+        - name: Opprette Windows-installasjonsprogrammer for betalingskoblinger
+          href: dev-itpro/create-windows-installer-payment-connector.md
+        - name: Betalingsdatabruk
+          href: payment-connector-data-fields.md
+        - name: Aktivere duplisert betalingsbeskyttelse for betalingskobling
+          href: dev-itpro/duplicate-payment-protection.md
+    - name: Retail SDK
+      href: dev-itpro/retail-sdk/retail-sdk-overview.md
+      items:
+        - name: Kommende endringer i SDK for Retail
+          href: dev-itpro/UpcomingSDKChanges.md
+        - name: Flette byggesystemene for Retail og Finance and Operations
+          href: dev-itpro/retail-sdk/integrate-retail-sdk-continuous-build.md
+        - name: Eksempler på utvidelsesmulighet for SDK for Retail
+          href: dev-itpro/retail-sdk/retail-sdk-extensibility-samples.md
+        - name: Opprette distribuerbare pakker for detaljhandel
+          href: dev-itpro/retail-sdk/retail-sdk-packaging.md
+        - name: Eksempler på SDK for Retail
+          href: dev-itpro/retail-sdk/retail-sdk-samples.md
+          items:
+            - name: Utvidelsespunkt for følgesedler
+              href: dev-itpro/extensions-shipping-carrier-integration.md
+        - name: Utvidelser for kanaldatabase
+          href: dev-itpro/channel-db-extensions.md
+        - name: Aktivere egendefinert CDX-synkronisering via utvidelse
+          href: dev-itpro/cdx-extensibility.md
+        - name: Legge til egendefinerte felt i panelet POS-totaler
+          href: dev-itpro/custom-field-pos-totals.md
+        - name: Definere og angi ordreattributter
+          href: dev-itpro/order-attributes.md
+        - name: Kundeattributter
+          href: dev-itpro/customer-attributes.md
+        - name: 'Retail Typescript og C#-proxyer'
+          href: dev-itpro/typescript-proxy-retail-pos.md
+        - name: Kjøre eksemplene for Retail POS
+          href: dev-itpro/pos-run-samples.md
+        - name: Utvide POS-visninger for å legge til egendefinerte kolonner og applinjeknapper
+          href: dev-itpro/pos-view-extension.md
+        - name: Legge til egendefinerte kontroller på sider for transaksjon for Retail Modern POS
+          href: dev-itpro/pos-custom-transaction.md
+        - name: Legge til egendefinerte kolonner i et rutenett for POS-transaksjon
+          href: dev-itpro/pos-custom-transaction-column.md
+        - name: Ringe API-er eller operasjoner for salgssted fra POS-utvidelser
+          href: dev-itpro/pos-api-extension.md
+        - name: Utløsere og utskrift for Retail Modern POS
+          href: dev-itpro/pos-trigger-printing.md
+        - name: Legge til egendefinerte kontroller i POS-visninger som ikke er skjermutformingsbaserte
+          href: dev-itpro/pos-control-non-screen.md
+        - name: Utvikling i skydriftede utviklingsmiljøer uten administratortilgang
+          href: dev-itpro/cloud-dev-box.md
+    - name: Commerce Runtime
+      items:
+        - name: Fordelsutvidelse
+          href: dev-itpro/retail-sdk/loyalty-extension-sample.md
