@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 17697677e0264c98088d5803e867e78ff3fdb5de
-ms.sourcegitcommit: 86d48d077589470bd1ea23b9c6fe01835088b6ae
+ms.openlocfilehash: 7c74ff55e0a9a81c058de802d70365d13d34c8ff
+ms.sourcegitcommit: 574d4dda83dcab94728a3d35fc53ee7e2b90feb0
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "1538962"
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "1595645"
 ---
 # <a name="finance-and-operations-help-system"></a>Hjelpesystem for Finance and Operations
 
@@ -192,7 +192,7 @@ Følgende tabell viser nettstedene våre. Områder med en stjerne (\*) ved siden
 | [Docs.microsoft.com](/dynamics365/)                                                            | Er vert for eller kobler til all produktdokumentasjon for Dynamics 365. |
 | [Microsoft Learn](https://docs.microsoft.com/learn/)                                           | Microsofts område for gratis e-læring. |
 | [Lifecycle Services](https://lcs.dynamics.com/)\*                                              | Gir et skybasert samarbeidsområde som kunder og partnere kan bruke til å administrere Dynamics 365 for Finance and Operations-prosjekter fra før salg til implementering og operasjoner. Dette området er nyttig i alle fasene ved implementering. |
-| [Kundestøtteblogg](http://aka.ms/AXSupportBlog)                                                    | Gir tips som posteres av Dynamics 365 for Finance and Operations-kundestøtteteamet. |
+| [Kundestøtteblogg](https://aka.ms/AXSupportBlog)                                                    | Gir tips som posteres av Dynamics 365 for Finance and Operations-kundestøtteteamet. |
 | [Docs.microsoft.com/tidligere versjoner](https://docs.microsoft.com/previous-versions/dynamics/) | Vert for innhold fra tidligere versjoner. |
 | [Dynamics-fellesskap](https://community.dynamics.com/)                                          | Vert for blogger, forum og videoer. |
 | [Microsoft.com/dynamics365/](https://www.microsoft.com/dynamics365/home)                       | Gir informasjon om evaluering og salg. |

@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: epopov
 ms.search.validFrom: 2017-10-31
 ms.dyn365.ops.version: Application update 4
-ms.openlocfilehash: 04b495caf201a47692bbdc026c9264434bb4e538
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 3a6ac115f2805e94563ae72cda2467a94283b22f
+ms.sourcegitcommit: ffc37f7c2a63bada3055f37856a30424040bc9a3
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1515743"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "1577858"
 ---
 # <a name="cash-register-functionality-for-norway"></a>Kassefunksjoner for Norge
 
@@ -204,9 +204,9 @@ Hvis du vil ha mer informasjon om hvordan du arbeider med kvitteringsformater, k
 
 Konfigurasjon av SAF-T-kasse er tilgjengelig for nedlasting fra Microsoft Dynamics Lifecycle Services (LCS). Hvis du vil ha mer informasjon, kan du se [Importere elektroniske rapporteringskonfigurasjoner](../../dev-itpro/analytics/electronic-reporting-import-ger-configurations.md). Du må laste ned følgende konfigurasjoner:
 
-- **Data for detaljhandelskanal.versjon.1** – datamodellkonfigurasjonen,
-- **DMM Data for detaljhandelskanal.versjon.1.6** – datamodelltilordningskonfigurasjonen,
-- **NO SAF T-kasse.version.1.15** – formatkonfigurasjonen.
+- **Data for detaljhandelskanal.versjon.1** – Datamodellkonfigurasjonen.
+- **DMM Data for detaljhandelskanal.versjon.1.6** – Datamodelltilordningskonfigurasjonen.
+- **NO SAF T-kasse.version.1.15** – Formatkonfigurasjonen.
 
 Når du har importert konfigurasjonene på siden **Detaljhandelsparametere**, går du til kategorien **Elektroniske dokumenter** og velger navnet på formatkonfigurasjonen som ble importert, i feltet **Format for eksport av SAF-T-kasse**.
 

@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-12-31
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 438c2b5689e450b9aae9c55168993f2ee84be4d5
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: db542e4df79480624ff6e5ff1996ad930fc1564b
+ms.sourcegitcommit: aec1dcd44274e9b8d0770836598fde5533b7b569
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1518793"
+ms.lasthandoff: 06/03/2019
+ms.locfileid: "1617349"
 ---
 # <a name="dynamics-365-for-talent-to-dynamics-365-for-finance-and-operations-integration-faq"></a>Vanlige spørsmål om integrering fra Dynamics 365 for Talent til Dynamics 365 for Finance and Operations
 
@@ -46,7 +46,7 @@ Finansdimensjoner er ikke i Common Data Service og er dermed ikke en del av stan
 
 For data som ligger i Finance and Operations, men ikke finnes i Talent, koble sammen de to systemene ved å bruke **Konfigurer koblinger** i Talent. Hvis du vil ha mer informasjon om hvordan du konfigurerer koblinger mellom Talent og Finance and Operations, se [Hva er nytt eller endret i Dynamics 365 for Talent Core HR (31. oktober 2018)](whats-new-talent-october-31.md).
 
-![](media/MapFinancialDimensions.png)
+![Tilordne finansdimensjoner](media/MapFinancialDimensions.png)
 
 ## <a name="sometimes-when-i-import-employees-they-go-into-inactive-workers-in-finance-and-operations-why"></a>Noen ganger når jeg importerer ansatte, blir de inaktive arbeidere i Finance and Operations. Hvorfor?
 
@@ -60,14 +60,14 @@ Datasynkronisering følger tidsplanen for kjøring. Integreringen henter en post
 
 Ved hjelp av "Avansert spørring" kan du filtrere og endre kildedataene før de sendes til målet.
 
-![](media/MapOnlyActiveWorkersAdvancedQuery.png)
+![Avansert spørring for aktive arbeidere](media/MapOnlyActiveWorkersAdvancedQuery.png)
 
 ## <a name="can-i-specify-which-fields-to-send-to-finance-and-operations-for-a-specific-entity"></a>Kan jeg angi hvilke felt som skal sendes til Finance and Operations for en bestemt enhet?
 
 Feltene kan legges til eller fjernes fra integrasjonsoppgaven. Ikke alle datafelt som finnes på Common Data Service-enheten, fylles ut fra Core HR.
 Tilleggsdata fylles via PowerApps.
 
-![](media/SpecifyFieldsIncludedInIntegration.png)
+![Legge til eller fjerne felt fra en integrasjonsoppgave](media/SpecifyFieldsIncludedInIntegration.png)
 
 ## <a name="i-set-up-integration-as-a-batch-job-but-talent-lost-connection-to-the-destination-system-how-can-i-send-the-same-set-of-changes-to-the-destination-system"></a>Jeg har satt opp integrasjon som en satsvis jobb, men Talent mistet forbindelsen til målsystemet. Hvordan kan jeg sende det samme settet med endringer til målsystemet?
 

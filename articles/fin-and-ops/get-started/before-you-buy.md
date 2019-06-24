@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: AX 7.0.0, Operations
-ms.openlocfilehash: 7aed6895d526011e353eef7b85e4e2f096a25e5a
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: dc34ca33d2844eaedfa1734fe6d7c7f2ef4a622d
+ms.sourcegitcommit: 574d4dda83dcab94728a3d35fc53ee7e2b90feb0
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1546842"
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "1595691"
 ---
 # <a name="before-you-buy"></a>Før du kjøper
 
@@ -63,7 +63,7 @@ Det er to måter å kjøpe et abonnement for en lokal distribusjon
 
 ### <a name="buy-through-volume-licensing"></a>Kjøpe via volumlisensiering
 
-Hvis organisasjonen har 250 eller flere brukere i Dynamics 365, kan du kanskje interessert i en [volumlisenieringssavtale](https://www.microsoft.com/en-us/Licensing/product-licensing/dynamics365).
+Hvis organisasjonen har 250 eller flere brukere i Dynamics 365, kan du kanskje interessert i en [volumlisenieringssavtale](https://www.microsoft.com/Licensing/product-licensing/dynamics365).
 
 I volumlisensiering er Finance and Operations tilgjengelig via:
 
@@ -87,7 +87,7 @@ Microsoft tilbyr fleksible, bransjeledende støtte, tjenester og ressurser som b
 Mer informasjon:
 
 - [Dynamics 365-støtte](https://www.microsoft.com/dynamics365/support)
-- [Hurtigstartveiledning for Microsoft Dynamics Cloud-tjenesten støtter fordeler](http://go.microsoft.com/fwlink/?LinkId=530335) (PDF)
+- [Hurtigstartveiledning for Microsoft Dynamics Cloud-tjenesten støtter fordeler](https://go.microsoft.com/fwlink/?LinkId=530335) (PDF)
 
 ## <a name="step-four-learn-about-fasttrack-and-plan-your-deployment"></a>Trinn fire: Lære om FastTrack og planlegge distribusjonen
 

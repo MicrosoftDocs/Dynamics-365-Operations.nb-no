@@ -3,7 +3,7 @@ title: Konfigurer kontostrukturer
 description: Dette emnet gir informasjon om kontostrukturer og finansdimensjoner.
 author: aprilolson
 manager: AnnBe
-ms.date: 05/21/2018
+ms.date: 06/03/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a0665f5aec2a0809ecb383c1d4adf4c2072c9569
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 5fbd4b34d09b4ba8e1d34234c8e32268bba18778
+ms.sourcegitcommit: aec1dcd44274e9b8d0770836598fde5533b7b569
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1552021"
+ms.lasthandoff: 06/03/2019
+ms.locfileid: "1617302"
 ---
 # <a name="configure-account-structures"></a>Konfigurer kontostrukturer
 
@@ -70,6 +70,16 @@ I dette forenklede eksempelet er alle verdier og tomme tillatt, så * og “ “
 
 [![Tillat verdier](./media/account.png)](./media/account.png) 
 
+Tillatte verdier skal brukes på en journal- eller en regnskapsdistribusjonside der det ikke er noen andre mulige verdier å velge i henhold til kontostrukturoppsettet.
+
+Her er et eksempel på **Resultatkontostruktur**.
+
+|Hovedkonto          | Forretningsenhet    |Avdeling          | Kostsenter    |
+|----------------------|-----------|----------------------|-----------|
+|400000..999999 | 002 | 022 | 014 |
+
+Når du angir en journal og velger en konto i resultatområdet, vil valg av forretningsenhet "002" gjøre at verdiene 022 og 014 er standard på kontokontrollen. Dette vil også oppstå med siden for regnskapsdistribusjon. 
+
 ## <a name="more-than-7-criteria-needed"></a>Mer enn 7 kriterier er nødvendig
 
 Hvis du har mer enn 7 vilkår som kreves, kan du fortsette å legge dem på neste linje. Du vil se når du arbeider i **Tillatte verdidetaljer**-delen at **+Legg til ny**-vilkåret ikke lenger er aktivt etter at det syvende vilkåret er angitt. Dette skyldes mange faktorer som: 
@@ -79,8 +89,6 @@ Hvis du har mer enn 7 vilkår som kreves, kan du fortsette å legge dem på nest
  - Brukervennlighet  
  
 For å fortsette å legge til flere vilkår, klikk på **Duplikat i segmentet** og **Tillatte verdier-del**. Dette kopierer kriteriene til en ny linje. Du kan deretter skrive over eller endre **Tillatt verdidetaljer**-delen.
-
-(KOBLING TIL VIDEOER SOM BLIR OPPRETTET)
 
 ## <a name="best-practices"></a>Anbefalte fremgangsmåter
 Når du definerer kontostrukturer, finnes det noen gode fremgangsmåter du kan følge. Dette er imidlertid bare veiledning, så en helhetlig diskusjon om virksomheten, plan for vekst og vedlikeholdsplan må betraktes som en del av diskusjonen.

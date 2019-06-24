@@ -227,8 +227,9 @@
             - name: X-klasser
               href: dev-ref/x-classes.md
     - name: Utvidelsesmulighet
-      href: extensibility/extensibility-home-page.md
       items:
+        - name: Startside med utvidelsesmuligheter
+          href: extensibility/extensibility-home-page.md
         - name: Innføring og Komme i gang
           items:
             - name: Plan for programutvidelse
@@ -243,38 +244,40 @@
               href: extensibility/customize-model-elements-extensions.md
             - name: Tilpasse via utvidelse og overlag
               href: extensibility/customization-overlayering-extensions.md
-        - name: Nyheter
+        - name: Hva er nytt
           items:
-            - name: Endringer i utvidelsesmulighet juli 2017
-              href: extensibility/changes-july-2017.md
-            - name: Endringer i utvidelsesmulighet i versjon 7.3
-              href: extensibility/extensibility-changes-73.md
-            - name: Endringer i utvidelsesmulighet i versjon 8.0
-              href: extensibility/changes-80.md
-            - name: Endringer i utvidelsesmulighet versjon 8.0.1
-              href: extensibility/extensibility-changes-801.md
-            - name: Endringer i utvidelsesmulighet versjon 8.0.2
-              href: extensibility/extensibility-changes-802.md
-            - name: Endringer i utvidelsesmulighet versjon 8.0.3
-              href: extensibility/extensibility-changes-803.md
-            - name: Endringer i utvidelsesmuligheter versjon 8.0.4
-              href: extensibility/extensibility-changes-804.md
-            - name: Endringer i utvidelsesmuligheter versjon 8.1
-              href: extensibility/extensibility-changes-81.md
-            - name: Endringer i utvidelsesmuligheter versjon 8.1.1
-              href: extensibility/extensibility-changes-811.md
-            - name: Endringer i utvidelsesmuligheter versjon 8.1.2
-              href: extensibility/extensibility-changes-812.md
-            - name: Endringer i utvidelsesmuligheter versjon 8.1.3
-              href: extensibility/extensibility-changes-813.md
-            - name: Endringer i utvidelsesmuligheter versjon 10.0
-              href: extensibility/extensibility-changes-10.md
-            - name: Endringer i utvidelsesmulighet versjon 10.0.1
-              href: extensibility/extensibility-changes-10-1.md
-            - name: Endringer i utvidelsesmulighet versjon 10.0.2
-              href: extensibility/extensibility-changes-10-2.md
+            - name: Hva er nytt eller endret for utvidelsesmulighet
+              href: extensibility/extensibility-new.md
             - name: Endringer i utvidelsesmulighet versjon 10.0.3
               href: extensibility/extensibility-changes-10-3.md
+            - name: Endringer i utvidelsesmulighet versjon 10.0.2
+              href: extensibility/extensibility-changes-10-2.md
+            - name: Endringer i utvidelsesmulighet versjon 10.0.1
+              href: extensibility/extensibility-changes-10-1.md
+            - name: Endringer i utvidelsesmulighet versjon 10.0
+              href: extensibility/extensibility-changes-10.md
+            - name: Endringer i utvidelsesmulighet versjon 8.1.3
+              href: extensibility/extensibility-changes-813.md
+            - name: Endringer i utvidelsesmulighet versjon 8.1.2
+              href: extensibility/extensibility-changes-812.md
+            - name: Endringer i utvidelsesmulighet versjon 8.1.1
+              href: extensibility/extensibility-changes-811.md
+            - name: Endringer i utvidelsesmulighet versjon 8.1
+              href: extensibility/extensibility-changes-81.md
+            - name: Endringer i utvidelsesmulighet versjon 8.0.4
+              href: extensibility/extensibility-changes-804.md
+            - name: Endringer i utvidelsesmulighet versjon 8.0.3
+              href: extensibility/extensibility-changes-803.md
+            - name: Endringer i utvidelsesmulighet versjon 8.0.2
+              href: extensibility/extensibility-changes-802.md
+            - name: Endringer i utvidelsesmulighet versjon 8.0.1
+              href: extensibility/extensibility-changes-801.md
+            - name: Endringer i utvidelsesmulighet i versjon 8.0
+              href: extensibility/changes-80.md
+            - name: Endringer i utvidelsesmulighet i versjon 7.3
+              href: extensibility/extensibility-changes-73.md
+            - name: Endringer i utvidelsesmulighet juli 2017
+              href: extensibility/changes-july-2017.md
         - name: Grunnleggende
           items:
             - name: Påtrengende tilpassinger
@@ -361,8 +364,14 @@
       items:
         - name: Registrere sporinger ved hjelp av Trace Parser
           href: perf-test/trace-trace-tutorial.md
-        - name: SDK for ytelse og testing av flere brukere via Visual Studio Online
-          href: perf-test/perfsdk-tutorial.md
+        - name: Testing av én bruker med oppgaveopptaker og SDK for ytelse
+          href: perf-test/single-user-test-perf-sdk.md
+        - name: Testing av flere brukere med SDK for ytelse og en lokal testkontroller
+          href: perf-test/multi-user-testing-local-test-controller.md
+        - name: Testing av flere brukere med SDK for ytelse og Azure DevOps
+          href: perf-test/multi-user-testing-perfsdk-azuredevops.md
+        - name: Feilsøkingsveiledning for testing av én eller flere brukere med SDK for ytelse
+          href: perf-test/troubleshoot-perf-sdk-user-testing.md
         - name: SDK for ytelse og testing av flere brukere i lokale miljøer
           href: perf-test/perfsdk-tutorial-lbd.md
         - name: Diagnostisere problemer og analysere ytelsesproblemer ved hjelp av Trace Parser
@@ -922,6 +931,8 @@
           href: financial/create-exchange-rate-providers.md
         - name: Opprette valutakursleverandører i Finance and Operations-versjon 8.0
           href: financial/create-exchange-rate-8.md
+    - name: 'Utligne transaksjoner ved hjelp av CustTrans::settleTransaction'
+      href: financial/settletransact-obsolete.md
 - name: Forsyningskjedeutvikling
   items:
     - name: Veiledning til utvikling av Gantt-kontroll
@@ -1203,7 +1214,7 @@
           href: lifecycle-services/lcs-works-lcs.md
         - name: LCS for partnere
           href: lifecycle-services/getting-started-lcs.md
-        - name: Nyheter
+        - name: Hva er nytt
           href: lifecycle-services/whats-new-lcs.md
         - name: Kjente problemer
           href: lifecycle-services/known-issues.md

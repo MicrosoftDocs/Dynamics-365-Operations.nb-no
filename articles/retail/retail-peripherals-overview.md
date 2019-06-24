@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 8fa2be91db8213845c2be16b1cc0a0f5457a708b
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: a9fa49d0b3553ae70547aeea19d14bc6e6e08983
+ms.sourcegitcommit: ffc37f7c2a63bada3055f37856a30424040bc9a3
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1571564"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "1577935"
 ---
 # <a name="retail-peripherals"></a>Eksterne enheter for detaljhandel
 
@@ -295,7 +295,7 @@ Nettverksenheter kan støttes direkte gjennom maskinvarestasjonen som er bygd in
 <ul>
 <li>OPOS</li>
 <li>Nettverk
-<blockquote>MERK: Bare én skuff kan defineres hvis <strong>Bruk delte skift</strong> er konfigurert på skuffen.</blockquote>
+<p><strong>Merk:</strong> Bare én skuff kan defineres hvis <strong>Bruk delte skift</strong> er konfigurert på skuffen.</p>
 </li>
 </ul>
 </td>
@@ -306,7 +306,7 @@ Nettverksenheter kan støttes direkte gjennom maskinvarestasjonen som er bygd in
 <ul>
 <li>OPOS</li>
 <li>Nettverk
-<blockquote>MERK: Bare én skuff kan defineres hvis <strong>Bruk delte skift</strong> er konfigurert på skuffen.</blockquote>
+<p><strong>Merk:</strong> Bare én skuff kan defineres hvis <strong>Bruk delte skift</strong> er konfigurert på skuffen.</p>
 </li>
 </ul>
 </td>
@@ -374,7 +374,7 @@ Nettverksenheter kan støttes direkte gjennom maskinvarestasjonen som er bygd in
 <ul>
 <li>OPOS</li>
 <li>Windows-driver
-<blockquote>MERK: For Windows-skrivere på et nettverk må brukeren av maskinvarestasjonen har tilgang til skriveren.</blockquote>
+<p><strong>Merk:</strong> For Windows-skrivere på et nettverk må brukeren av maskinvarestasjonen har tilgang til skriveren.</p>
 </li>
 <li>Nettverk</li>
 </ul>
@@ -404,7 +404,7 @@ Nettverksenheter kan støttes direkte gjennom maskinvarestasjonen som er bygd in
 <ul>
 <li>OPOS</li>
 <li>Nettverk
-<blockquote>MERK: Bare én skuff per maskinvareprofil kan defineres hvis <strong>Bruk delte skift</strong> er konfigurert på skuffen.</blockquote>
+<p><strong>Merk:</strong> Bare én skuff per maskinvareprofil kan defineres hvis <strong>Bruk delte skift</strong> er konfigurert på skuffen.</p>
 </li>
 </ul>
 </td>
@@ -469,7 +469,7 @@ Nettverksenheter kan støttes direkte gjennom maskinvarestasjonen som er bygd in
 <ul>
 <li>OPOS</li>
 <li>Windows-driver
-<blockquote>MERK: For Windows-skrivere på et nettverk må brukeren av maskinvarestasjonen har tilgang til skriveren.</blockquote>
+<p><strong>Merk:</strong> For Windows-skrivere på et nettverk må brukeren av maskinvarestasjonen har tilgang til skriveren.</p>
 </li>
 <li>Nettverk</li>
 </ul>
@@ -491,7 +491,7 @@ Nettverksenheter kan støttes direkte gjennom maskinvarestasjonen som er bygd in
 <ul>
 <li>OPOS</li>
 <li>Nettverk
-<blockquote>MERK: Bare én skuff per maskinvareprofil kan defineres hvis <strong>Bruk delte skift</strong> er konfigurert på skuffen.</blockquote>
+<p><strong>Merk:</strong> Bare én skuff per maskinvareprofil kan defineres hvis <strong>Bruk delte skift</strong> er konfigurert på skuffen.</p>
 </li>
 </ul>
 </td>

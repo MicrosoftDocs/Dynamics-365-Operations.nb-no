@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 4314c81823940ce3192da23dfdf777e8ebf781f2
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: c7cb79fa82b579bee01e51cb635597cc5f711a98
+ms.sourcegitcommit: e2fb0846fcc6298050a0ec82c302e5eb5254e0b5
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1553051"
+ms.lasthandoff: 05/27/2019
+ms.locfileid: "1606832"
 ---
 # <a name="set-up-recency-frequency-and-monetary-rfm-analysis"></a>Sette opp recency-, frekvens- og pengeanalyse (RFM)
 
@@ -46,7 +46,7 @@ Organisasjonen har for eksempel satt vurderingene på en skala fra 1 til 5, der 
 
 Hvis organisasjonen bruker en sum av tallene, legges de individuelle rangeringene sammen. For det samme eksemplet har kunden en rangering på 13 (5 + 3 + 5).
 
-## <a name="to-set-up-rfm-analysis-for-the-customers-in-your-organization"></a>Slik konfigurerer du RFM-analyse for kundene i organisasjonen
+## <a name="set-up-rfm-analysis-for-the-customers-in-your-organization"></a>Konfigurere RFM-analyse for kundene i organisasjonen
 
 1. Gå til **Telefonsenter** \> **Periodisk** \> **RFM-analyse**.
 2. På siden **RFM-analyse** velger du **Ny**. I feltet **RFM-definisjon** angir du et beskrivende navn på RFM-definisjonen. Du kan for eksempel kalle definisjonen RFM-A.

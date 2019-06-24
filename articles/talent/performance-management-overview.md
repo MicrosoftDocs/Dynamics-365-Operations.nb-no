@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 1954b691d84b0aa8710da621af21415c6c116539
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 05d8986d69abba4dbba7c30aad5a7e4626ceb5b1
+ms.sourcegitcommit: cadce85ca3004d53caf6bc49147a524c1bfd421f
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1518739"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "1590511"
 ---
 # <a name="performance-management"></a>Ytelsesstyring
 
@@ -109,7 +109,7 @@ Du kan vise ytelsesjournalelementer som er knyttet til vurderingen. Du kan også
 
 ### <a name="ratings"></a>Vurderinger
 
-Du kan bruke en vurdering på mål eller kompetanser som er i vurderingen. Du kan definere vurderingsmodellene for hver vurdering. Standarder for vurderinger finner du på siden **Personalparametere** under **Ytelse**.
+Du kan bruke en vurdering på mål eller kompetanser som er i vurderingen. Du kan definere vurderingsmodellene for hver vurdering. Standarder for vurderinger finner du på siden **Delte parametere for personaladministrasjon** under **Ytelse**.
 
 ### <a name="sign-offs"></a>Godkjenninger
 

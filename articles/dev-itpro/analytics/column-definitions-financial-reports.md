@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 872e7c833416f0f7d9aa0c55aadf72aec65ddaab
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: bb08833cca843c370e2c845bce56d6f5a8b5f2ed
+ms.sourcegitcommit: 574d4dda83dcab94728a3d35fc53ee7e2b90feb0
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1502736"
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "1595345"
 ---
 # <a name="column-definitions-in-financial-reports"></a>Kolonnedefinisjoner i finansrapporter
 
@@ -120,7 +120,7 @@ Tabellen nedenfor beskriver kodene for kolonnebegrensning.
 | ADJ                     | Begrens beløpene i kolonnen til justeringsbeløpene for perioden, hvis disse beløpene er tilgjengelige. |
 | XAD                     | Begrens beløpene i kolonnen, slik at justeringsbeløpene for perioden utelates. |
 | OF                      | Begrens beløpene i kolonnen, slik at bare posterte transaksjoner tas med, hvis disse transaksjonene er tilgjengelige. |
-| UPT                     | Begrens beløpene i kolonnen, slik at bare uposterte transaksjoner tas med, hvis disse transaksjonene er tilgjengelige.<blockquote>[!NOTE] Ikke alle dataleverandører støtter ikke-posterte transaksjoner. Hvis du vil ha mer informasjon, kan du se <a href='http://go.microsoft.com/fwlink/?LinkID=162565'>veiledningen for dataintegrering</a> for Microsoft Dynamics ERP-systemet.</blockquote> |
+| UPT                     | Begrens beløpene i kolonnen, slik at bare uposterte transaksjoner tas med, hvis disse transaksjonene er tilgjengelige.<p><strong>Obs!</strong>  Ikke alle leverandører støtter uposterte transaksjoner. Hvis du vil ha mer informasjon, kan du se <a href='https://go.microsoft.com/fwlink/?LinkID=162565'>veiledningen for dataintegrering</a> for Microsoft Dynamics ERP-systemet.</p> |
 
 ### <a name="restrict-a-column-to-a-reporting-unit"></a>Begrense en kolonne til en rapporteringsenhet
 
@@ -310,7 +310,7 @@ Cellen **Utskriftskontroll** kan inneholde koder som justerer visningen eller ut
 | Kontrollkode for utskrift | Oversettelse                                     | Beskrivelse |
 |--------------------|-------------------------------------------------|-------------|
 | NP                 | Skrives ikke ut                                     | Utelater beløpene i denne kolonnen fra rapporten som skrives ut og fra beregninger. Hvis du vil inkludere en kolonne som ikke skrives ut, i en beregning, kan du referere kolonnen direkte i beregningsformelen. Hvis kolonne C som ikke skrives ut, for eksempel er inkludert i følgende beregning: **B+C+D**. Hvis kolonne C som ikke skrives ut, imidlertid ikke er inkludert i følgende beregning: **B:D**. |
-| XCR                | Endre fortegn hvis vanlig saldo for rad er kredit | Oppretter et budsjett eller en sammenlignende rapport der alle ugunstige avvik (for eksempel omsetningsunderskudd eller utgiftsoverskridelser) alltid er negative. Bruk denne koden for en **CALC**-kolonnen for å snu fortegnet for kolonnebeløpet hvis den vanlige saldoen for en bestemt rad er kredit (som angitt av en **C** i **Normal saldo**-kolonnen i raddefinisjonen).<blockquote>[!NOTE] For <strong>TOT</strong>- og </strong>CAL</strong>-rader som vanligvis har en kreditsaldo, må du passe på å angi en <strong>C</strong> i <strong>Normal saldo</strong>-kolonnen i raddefinisjonen.</blockquote> |
+| XCR                | Endre fortegn hvis vanlig saldo for rad er kredit | Oppretter et budsjett eller en sammenlignende rapport der alle ugunstige avvik (for eksempel omsetningsunderskudd eller utgiftsoverskridelser) alltid er negative. Bruk denne koden for en **CALC**-kolonnen for å snu fortegnet for kolonnebeløpet hvis den vanlige saldoen for en bestemt rad er kredit (som angitt av en **C** i **Normal saldo**-kolonnen i raddefinisjonen).<p><strong>Obs!</strong>  For <strong>TOT</strong>- og </strong>CAL</strong>-rader som vanligvis har en kreditsaldo, må du passe på å angi en <strong>C</strong> i <strong>Normal saldo</strong>-kolonnen i raddefinisjonen.</p> |
 | X0                 | Skjul kolonne hvis bare null eller tomme celler          | Utelater en **FD**-kolonne fra rapporten hvis alle celler i kolonnen er tomme eller inneholde nuller. |
 | SR                 | Skjul avrunding                               | Hindrer at beløpene i denne kolonnen avrundes. |
 | XR                 | Skjul opprulling                                 | Skjuler en opprulling. Hvis rapporten bruker et rapporteringstre, rulles ikke beløpene i denne kolonnen opp til etterfølgende overordnede noder. |
@@ -546,8 +546,8 @@ Tabellen nedenfor viser rapportresultatene som kan oppstå for ulike kombinasjon
 | Cellen Valutavisning                        | Cellen Valutafilter | Rapportresultat |
 |----------------------------------------------|----------------------|---------------|
 | Transaksjonsvaluta                 | **YEN**              | **Y6,000** – Resultatet viser bare transaksjoner som ble angitt i JPY. |
-| Regnskapsvaluta fra finans | **YEN**              |**$60** – Resultatet viser bare transaksjoner som ble angitt i JPY, og disse transaksjonene vises i USD.<blockquote>[!NOTE] Omregningssatsen er omtrent 100 JPY per USD.</blockquote> |
-| Regnskapsvaluta fra finans | Tom                | **$2,310** – Resultatet viser alle dataene i regnskapsvalutaen som er angitt i finans.<blockquote>[!NOTE] Dette beløpet er summen av alle transaksjoner i regnskapsvaluta.</blockquote> |
+| Regnskapsvaluta fra finans | **YEN**              |**$60** – Resultatet viser bare transaksjoner som ble angitt i JPY, og disse transaksjonene vises i USD.<p><strong>Obs!</strong>  Omregningssatsen er omtrent 100 JPY per USD.</p> |
+| Regnskapsvaluta fra finans | Tom                | **$2,310** – Resultatet viser alle dataene i regnskapsvalutaen som er angitt i finans.<p><strong>Merk:</strong> Dette beløpet er summen av alle transaksjoner i regnskapsvaluta.</p> |
 | Transaksjonsvaluta                 | Tom                | **$2,250** – Resultatet viser alle beløp i valutaen som transaksjonen ble utført i. Dette betyr at totalen legger sammen beløp fra ulike valutaer. |
 
 ### <a name="calculation-column-in-a-column-definition"></a>Beregningskolonne i en kolonnedefinisjon
@@ -565,7 +565,7 @@ Hvis du vil addere, subtrahere, multiplisere eller dividere kolonner, angir du k
 |----------|---------------------|-------------|
 | +        | A+C                 | Legger beløpet i kolonne A til beløpet i kolonne C. |
 | :        | A:C A:C-D           | Legger til en serie med etterfølgende kolonner. Formelen **A:C** legger for eksempel sammen summene av kolonnene A til C, og formelen **A:C-D** legger sammen summene av kolonnene A til C, og deretter trekkes beløpet i kolonne D fra. |
-| -        | A-C                 | Trekker beløpet i kolonne A fra beløpet i kolonne C.<blockquote>[!NOTE] Du kan også bruke minustegnet (-) til å reversere fortegnene i en kolonne. Bruke for eksempel <strong>-A+B</strong> for å legge det motsatte av beløpet i kolonne A til beløpet i kolonne B.</blockquote> |
+| -        | A-C                 | Trekker beløpet i kolonne A fra beløpet i kolonne C.<p><strong>Merk:</strong> Du kan også bruke minustegnet (-) til å snu fortegnene i en kolonne. Bruke for eksempel <strong>-A+B</strong> for å legge det motsatte av beløpet i kolonne A til beløpet i kolonne B.</p> |
 | \*       | A\*C                | Multipliserer beløpet i kolonne A med beløpet i kolonne C. |
 | /        | A/C                 | Dividerer beløpet i kolonne A med beløpet i kolonne C. |
 

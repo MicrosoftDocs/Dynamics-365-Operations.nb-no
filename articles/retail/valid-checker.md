@@ -3,7 +3,7 @@ title: Konsekvenskontroll for detaljhandelstransaksjon
 description: Dette emnet beskriver funksjonaliteten for konsekvenskontroll for detaljhandelstransaksjon i Microsoft Dynamics 365 for Retail.
 author: josaw1
 manager: AnnBe
-ms.date: 01/08/2019
+ms.date: 05/30/2019
 ms.topic: index-page
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2019-01-15
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 972c4d6b244eebc85cc801353ce8fb25ecbc0655
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 1fc894206f9d90fce1e2eab292ac241e9d943e23
+ms.sourcegitcommit: aec1dcd44274e9b8d0770836598fde5533b7b569
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1517135"
+ms.lasthandoff: 06/03/2019
+ms.locfileid: "1617326"
 ---
 # <a name="retail-transaction-consistency-checker"></a>Konsekvenskontroll for detaljhandelstransaksjon
 
@@ -33,12 +33,12 @@ ms.locfileid: "1517135"
 
 Dette emnet beskriver funksjonaliteten for konsekvenskontroll for detaljhandelstransaksjon som blir introdusert i Microsoft Dynamics 365 for Finance and Operations versjon 8.1.3. Konsekvenskontrollen identifiserer og isolerer inkonsekvente transaksjoner før de blir plukket opp av utdragsposteringsprosessen.
 
-Når et utdrag posteres i Retail, kan postering mislykkes på grunn av inkonsekvente data i transaksjonstabellene. Dataproblemet kan forårsakes av uforutsette problemer i POS-programmet, eller hvis transaksjoner ikke ble riktig importert fra POS-tredjepartssystemer. Eksempler på hvordan disse inkonsekvensene kan vises: 
+Når et utdrag posteres i Microsoft Dynamics 365 for Retail, kan postering mislykkes på grunn av inkonsekvente data i transaksjonstabellene. Dataproblemet kan forårsakes av uforutsette problemer i POS-programmet, eller hvis transaksjoner ikke ble riktig importert fra POS-tredjepartssystemer. Eksempler på hvordan disse inkonsekvensene kan vises: 
 
-  - Transaksjonsbeløpet i toppteksttabellen samsvarer ikke med transaksjonsbeløpet på linjene.
-  - Linjeantallet i toppteksttabellen samsvarer ikke med antallet linjer i transaksjonstabellen.
-  - Avgifter i toppteksttabellen samsvarer ikke med mva-beløpet på linjene. 
-  
+- Transaksjonsbeløpet i toppteksttabellen samsvarer ikke med transaksjonsbeløpet på linjene.
+- Linjeantallet i toppteksttabellen samsvarer ikke med antallet linjer i transaksjonstabellen.
+- Avgifter i toppteksttabellen samsvarer ikke med mva-beløpet på linjene. 
+
 Når inkonsekvente transaksjoner blir plukket opp av prosessen, blir inkonsekvente salgsfakturaer og betalingsjournaler opprettet, og derfor mislykkes hele utdragsposteringsprosessen. Gjenoppretting av utdrag fra en slik tilstand omfatter avanserte datakorrigeringer på tvers av flere transaksjonstabeller. Konsekvenskontrollen for detaljhandelstransaksjon hindrer slike problemer.
 
 Diagrammet nedenfor illustrerer posteringsprosessen med konsekvenskontrollen for transaksjon.
@@ -47,13 +47,24 @@ Diagrammet nedenfor illustrerer posteringsprosessen med konsekvenskontrollen for
 
 Den satsvise prosessen **Valider butikktransaksjoner** kontrollerer konsekvensen i transaksjonstabellene for detaljhandel for følgende scenarier.
 
-- Kundekonto – validerer at kundekontoen i transaksjonstabellene for detaljhandel finnes i malen Hovedkontorkunde.
-- Linjeantall – validerer at antallet linjer, som gjengitt i transaksjonstoppteksttabellen, samsvarer med antallet linjer i salgstransaksjonstabellene.
+- **Kundekonto** – validerer at kundekontoen i transaksjonstabellene for detaljhandel finnes i malen Hovedkontorkunde.
+- **Linjeantall** – validerer at antallet linjer, som gjengitt i transaksjonstoppteksttabellen, samsvarer med antallet linjer i salgstransaksjonstabellene.
+- **Pris inkluderer avgift** – validerer at parameteren **Pris inkluderer avgift** er konsekvent i alle transaksjonslinjene.
+- **Bruttobeløp** – validerer at bruttobeløpet i toppteksten er summen av nettobeløpene på linjene pluss avgiftsbeløpet.
+- **Nettobeløp** – validerer at nettobeløpet i toppteksten er summen av nettobeløpene på linjene.
+- **Under-/overbetaling** – validerer at differansen mellom bruttobeløpet i toppteksten og betalingsbeløpet ikke overskrider konfigurasjonen for maksimal under-/overbetaling.
+- **Rabattbeløp** – validerer at rabattbeløpet i rabattabellene og rabattbeløpet i tabellene med detaljhandelstransaksjonslinjer er konsekvente, og at rabattbeløpet i toppteksten er summen av rabattbeløpene på linjene.
+- **Linjerabatt** – validerer at linjerabatten på transaksjonslinjen er summen av alle linjene i rabattabellen som tilsvarer transaksjonslinjen.
+- **Gavekortvare** – Retail støtter ikke retur av gavekortvarer. Saldoen på et gavekort kan imidlertid innløses i kontanter. En gavekortvare som behandles som en returlinje i stedet for en linje for innløsing i kontanter, vil mislykkes i utdragsposteringsprosessen. Valideringsprosessen for gavekortvarer sikrer at de eneste returlinjene for gavekortvarer i detaljhandelstransaksjonstabellene er linjene for innløsing av gavekort i kontanter.
+- **Negativ pris** – validerer at det ikke finnes transaksjonslinjer med negativ pris.
+- **Vare og variant** – validerer at varer og varianter på transaksjonslinjene finnes i hovedfilen for varer og varianter.
 
 ## <a name="set-up-the-consistency-checker"></a>Definere konsekvenskontrollen
+
 Konfigurer den satsvise prosessen Valider butikktransaksjoner på **Detaljhandel \> Detaljhandel-IT \> POS-postering** for periodiske kjøringer. Den satsvise jobben kan planlegges basert på butikkens organisasjonshierarki, på samme måte som prosessene Beregne utdrag satsvis og Postere utdrag satsvis blir definert. Det anbefales at du konfigurerer denne satsvise prosessen til å kjøre flere ganger daglig, og planlegg den slik at den kjøres på slutten av hver kjøring av P-jobb.
 
 ## <a name="results-of-validation-process"></a>Resultater av valideringsprosess
+
 Resultatene av valideringskontrollen av den satsvise prosessen er kodet på den aktuelle detaljhandelstransaksjonen. Feltet **Valideringsstatus** i transaksjonsposten for detaljhandel er satt til **Vellykket** eller **Feil**, og datoen for siste valideringskjøring vises i feltet **Tidspunkt for siste validering**.
 
 Hvis du vil vise mer beskrivende feiltekst som er knyttet til en valideringsfeil, velger du den relevante transaksjonsposten for detaljhandel og klikker knappen **Valideringsfeil**.

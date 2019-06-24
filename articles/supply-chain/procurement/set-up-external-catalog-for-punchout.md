@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bc3879492f230b9477c6e5efd2edc8e1e4aca0a2
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 39baa331120d765543c3cf662ce53d2bcfe404ab
+ms.sourcegitcommit: 574d4dda83dcab94728a3d35fc53ee7e2b90feb0
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1571646"
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "1595617"
 ---
 # <a name="set-up-an-external-catalog-for-punchout-eprocurement"></a>Definere en ekstern katalog for PunchOut eProcurement
 
@@ -59,8 +59,10 @@ Denne delen gir mer informasjon om oppgave 4 i forrige del.
 4. Velg leverandøren for katalogen. I **juridiske enheter**-listen er det en rad for hver juridiske enhet der leverandøren er definert. Hvis du vil tillate brukere å be om produkter direkte fra leverandørens katalog i noen juridiske enheter, men ikke andre, kan du bruke **Hindre tilgang**- eller **Tillat tilgang**-knappen for hver juridiske enhet der du vil at katalogen skal, eller ikke skal, være tilgjengelig.
 5. I feltet **Standard utløp (dager)** angir du antallet dager som et tilbud mottatt fra den eksterne katalogen, er gyldig og kan brukes til innkjøp fra den eksterne leverandøren. Når et tilbud opprettes og hentes fra leverandørens eksterne katalogområde, er tilbudet gyldig i henhold til den gjeldende systemdatoen og forblir gyldig i antallet dager du angir i dette feltet.
 6. Klikk **Legg til** for å starte tilordning av innkjøpskategoriene til den eksterne katalogen. Velg deretter en kategori i kategorinavn-listen. Listen over kategorier er et overordnet sett innkjøpskategorier som leverandøren er tilordnet til i alle juridiske enheter som er definert for leverandøren.
-[!NOTE]
-Innkjøpspolicyer brukes til å tillate eller begrense tilgangen til kategorier for den juridiske enheten for innkjøp eller mottaksdriftsenheten. Utstempling til en ekstern katalog krever at det gis tilgang til minst én av innkjøpskategoriene som er tilordnet til katalogen.
+
+    > [!NOTE]
+    > Innkjøpspolicyer brukes til å tillate eller begrense tilgangen til kategorier for den juridiske enheten for innkjøp eller mottaksdriftsenheten. Utstempling til en ekstern katalog krever at det gis tilgang til minst én av innkjøpskategoriene som er tilordnet til katalogen.
+
 7. Definer forespørselsmeldingen for cXML-oppsett som skal sendes til leverandøren. Formatet for automatisk generert melding er den minste malen som kreves for å starte en økt. Fyll ut verdier for kodene.
 
 Du kan når som helst laste den systemgenererte meldingsmalen på nytt ved å klikke **Gjenopprett meldingsformatet**. 
@@ -85,7 +87,7 @@ Nedenfor finner du en beskrivelse av kodene som er inkludert i malen:
 
 Et eksternt element er tilleggsinformasjon, for eksempel et brukernavn som er basert på en bruker som stempler seg ut. Det eksterne elementet er satt når utstempling oppstår, og det kan sendes i oppsettmeldingen for forespørsel.
 Leverandøren kan ha behov for å motta et eksternt element i oppsettforespørselen. I så fall bør du legge til det eksterne elementet i listen over eksterne elementer i **Meldingsformat**-delen av **Ekstern katalog**-siden. Angi et navn for det eksterne elementet som leverandøren kan kjenne igjen, og tilordne det til en verdi. Alternativene for verdier er: brukernavn, en brukers e-postadresse eller tilfeldig verdi.
-Hvis du vil ha mer informasjon om cXML-protokollen, kan du se: http://cxml.org/.
+Hvis du vil ha mer informasjon om cXML-protokollen, se [cXML.org-nettsiden](http://cxml.org/).
 
 ## <a name="post-back-message"></a>Tilbakemelding
 Tilbakemeldingen er meldingen som mottas fra leverandøren når brukeren sjekker ut fra det eksterne området og går tilbake til Finance and Operations. Tilbakemeldinger kan ikke konfigureres. Meldingene er basert på definisjonen i cXML-protokollen. Her er informasjonen som kan være en del av tilbakemeldingen som mottas på en rekvisisjonslinje:

@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: d6706cbb7630aeb230bc9eb1c187397897c9de68
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: c73bc10332329e81986a259969f8fe34b57f4ee6
+ms.sourcegitcommit: e2fb0846fcc6298050a0ec82c302e5eb5254e0b5
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1559564"
+ms.lasthandoff: 05/27/2019
+ms.locfileid: "1607016"
 ---
 # <a name="personalized-product-recommendations"></a>Personlige produktanbefalinger
 
@@ -44,7 +44,7 @@ Produktanbefalingene er aktivert for følgende POS-scenarier. De er tilgjengelig
     - Hvis en butikkansatt besøker en **Produktdetaljer**-side når vedkommende ser på tidligere transaksjoner på tvers av forskjellige kanaler, foreslår anbefalingsmotoren flere varer som sannsynligvis kjøpes sammen.
     - Hvis den butikkansatte legger til en kunde i transaksjonen og deretter går til en **Produktdetaljer**-side, gir anbefalingsmotoren anbefalinger ved hjelp av kundens transaksjonshistorikk.
 
-    [![proddetails](./media/proddetails.png)](./media/proddetails.png)
+    [![Anbefalinger på siden Produktdetaljer](./media/proddetails.png)](./media/proddetails.png)
 
 2. På **Transaksjon**-siden:
 
@@ -54,13 +54,11 @@ Produktanbefalingene er aktivert for følgende POS-scenarier. De er tilgjengelig
     > [!NOTE]
     > For å vise anbefalinger på **Transaksjon**-siden må forhandler oppdatere skjermvisningen i Dynamics 365 for Retail. **Anbefalinger**-kontrollen må slippes på **Transaksjon**-siden.
 
-    [![transactionscreenmultipleproductslargemessengersbag-5](./media/transactionscreenmultipleproductslargemessengersbag-5.jpg)](./media/transactionscreenmultipleproductslargemessengersbag-5.jpg)
+    [![Anbefalinger på siden Transaksjoner](./media/transactionscreenmultipleproductslargemessengersbag-5.jpg)](./media/transactionscreenmultipleproductslargemessengersbag-5.jpg)
 
-3. På **Kundedetaljer**-siden:
+3. På siden **Kundedetaljer** foreslår anbefalingsmotoren varer basert på bruker-ID og varene på kundens ønskeliste.
 
-    - Anbefalingsmotoren foreslår varer basert på bruker-ID og varene på kundens ønskeliste.
-
-    [![customerdetailsrecommendations](./media/customerdetailsrecommendations.png)](./media/customerdetailsrecommendations.png)
+    [![Anbefalinger på siden Kundedetaljer](./media/customerdetailsrecommendations.png)](./media/customerdetailsrecommendations.png)
 
 ## <a name="configure-dynamics-365-for-retail-to-enable-pos-recommendations"></a>Konfigurere Dynamics 365 for Retail for å aktivere anbefalinger for salgssted
 
@@ -83,7 +81,7 @@ Når du oppdaterer den **Enhetslager**, følgende handlinger finner sted.
 Når du slår på **Aktiver anbefalinger** og kjører konfigurasjonjobbene, følgende handlinger finner sted.
 
 - Modellens legitimasjon og ID hentes fra API-en og lagres i Dynamics 365 for Retail operativ database, i filen web.config for AOS og også i detaljhandelsserveren.
-- Modellens legitimasjon og ID gjøres tilgjengelig for CRT slik at kall til produktanbefalinger fra Cloud POS og MPOS i tilkoblet modus kan opprettholdes.
+- Modellens legitimasjon og ID gjøres tilgjengelig for CRT, slik at kall til produktanbefalinger fra Cloud POS og MPOS i tilkoblet modus kan opprettholdes.
 
 ## <a name="troubleshoot-issues-where-you-have-product-recommendations-already-enabled"></a>Feilsøke problemer der du allerede har aktivert produktanbefalingene
 

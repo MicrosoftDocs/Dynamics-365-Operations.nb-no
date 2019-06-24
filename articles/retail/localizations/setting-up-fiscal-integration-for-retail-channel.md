@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: v-kikozl
 ms.search.validFrom: 2018-11-1
 ms.dyn365.ops.version: 8.1.1
-ms.openlocfilehash: 060075757dec64e83c46498380a920d580ac09e4
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: fda94e77480b9d9455fc0e214e43772ab2921f2d
+ms.sourcegitcommit: ffc37f7c2a63bada3055f37856a30424040bc9a3
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1525331"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "1577906"
 ---
 # <a name="set-up-the-fiscal-integration-for-retail-channels"></a>Definere økonomisk integrering for detaljhandelskanaler
 
@@ -88,7 +88,7 @@ Før du bruker regnskapsintegreringsfunksjonaliteten, bør du konfigurere følge
         Du kan endre datatilordningparametrene i en funksjonell profil for kobling. Hvis du vil gjenopprette standardparameterne som er definert i konfigurasjon av regnskapsdokumentleverandør, velger du **Oppdater**.
 
         **Eksempler**
-    
+
         |   | Formater | Eksempel |
         |---|--------|---------|
         | **Mva-satsinnstillinger** | verdi: VATrate | 1 : 2000, 2 : 1800 |
@@ -111,7 +111,7 @@ Før du bruker regnskapsintegreringsfunksjonaliteten, bør du konfigurere følge
 4. Opprett grupper for regnskapskobling.
 
     En gruppe for regnskapskobling kombinerer funksjonelle profiler for regnskapskoblinger som utfører identiske funksjoner, og brukes på samme trinn i en regnskapsregistreringsprosess. Hvis for eksempel flere bilagsskrivermodeller kan brukes i en detaljhandel, kan regnskapskoblinger for disse bilagsskriverne kombineres i en gruppe for regnskapskobling.
-    
+
     1. På siden **Gruppe for regnskapskobling** (**Detaljhandel \> Kanaloppsett \> Regnskapsintegrering \> Grupper for regnskapskobling**) oppretter du en ny gruppe for regnskapskobling.
     2. Legg til funksjonelle profiler i koblingsgruppen. I kategorien **Funksjonelle profiler** velger du **Legg til** og velger et profilnummer. Hver regnskapskobling i en koblingsgruppe kan bare ha én funksjonsprofil.
     3. Hvis du vil avbryte bruken av den funksjonelle profilen, må du sette **Deaktiver** til **Ja**. Denne endringen påvirker bare den gjeldende koblingsgruppen. Du kan fortsette å bruke den samme funksjonsprofilen i andre tilkoblingsgrupper.
@@ -119,7 +119,7 @@ Før du bruker regnskapsintegreringsfunksjonaliteten, bør du konfigurere følge
 5. Opprett en bilagsregistreringsprosess.
 
     En bilagsregistreringsprosess er definert av rekkefølgen på registreringstrinnene og koblingsgruppen som brukes for hvert trinn.
-    
+
     1. På siden **Bilagsregistreringsprosess** (**Detaljhandel \> Kanaloppsett \> Regnskapsintegrering \> Bilagsregistreringsprosesser**) oppretter du en ny post for hver unike prosess i bilagsregistreringen.
     2. Legg til registreringstrinn i prosessen:
 
@@ -145,7 +145,7 @@ Før du bruker regnskapsintegreringsfunksjonaliteten, bør du konfigurere følge
 7. På siden **Bilagsregistreringsprosess** (**Detaljhandel \> Kanaloppsett \> Regnskapsintegrering \> Bilagsregistreringsprosesser**) velger du **Valider** for å validere regnskapsregistreringsprosessen.
 
     Vi anbefaler at du kjører denne typen validering i følgende tilfeller:
-    
+
     - Når du har fullført alle innstillinger for en ny registreringsprosess, inkludert når du tilordner registreringsprosesser til salgsstedsfunksjonalitetsprofiler og maskinvareprofiler.
     - Når du endrer en eksisterende regnskapsregistreringsprosess, og disse endringene kan føre til at en annen registreringskobling velges ved kjøretid (for eksempel hvis du endrer koblingsgruppen for et trinn i regnskapsregistreringsprosessen, aktiverer en funksjonell profil for kobling i en tilkoblingsgruppe eller legger til en ny funksjonell profil for kobling i en koblingsgruppe).
     - Når du gjør endringer i tilordningen av tekniske profiler for kobling til maskinvareprofiler.

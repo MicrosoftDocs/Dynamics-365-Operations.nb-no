@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 24775044e5a502a5615392a6a8c4030bdfafb0ab
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: a34ae8084c0ad55221f4ab93eb8c6481fa8c4771
+ms.sourcegitcommit: e2fb0846fcc6298050a0ec82c302e5eb5254e0b5
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1558579"
+ms.lasthandoff: 05/27/2019
+ms.locfileid: "1606762"
 ---
 # <a name="configure-cash-denominations-for-the-point-of-sale-pos"></a>Konfigurere kontantstørrelser for salgsstedet
 
@@ -34,17 +34,17 @@ Kontantstørrelser for sedler og mynter kan defineres i Back Office som skal bru
 
 ## <a name="define-denominations"></a>Definere størrelser
 
-Størrelsene er definert per butikk i alternativet **Oppsett** \> **Kontantoppgjør fra butikkegenskap**-siden.
+Størrelsene er definert per butikk i alternativet **Oppsett** \> **Kontantoppgjør** fra butikkoppgjørsiden.
 
-![kontantstørrelser](./media/image1-denomination.png)
+![Kontantoppgjør-alternativet](./media/image1-denomination.png)
 
 Slik definerer du en størrelse:
 
-1. Klikk **Ny**.
+1. Klikk på **Ny**.
 1. Angi typen (mynt eller seddel).
 1. Angi beløpet (verdi).
 
-![kontantstørrelser](./media/image2-denomination.png)
+![Kontantoppgjørsstørrelser-side](./media/image2-denomination.png)
 
 ## <a name="configure-the-functionality-profile"></a>Konfigurer funksjonalitetsprofilen
 

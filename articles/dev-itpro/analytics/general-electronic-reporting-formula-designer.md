@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: dc02d51cedc7f732601c77c0ba5b473272fbccb4
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 85d2370353520ee588dfe2aedf9998d707f0eda6
+ms.sourcegitcommit: 97ed74889a09ef385f6ecbab69e84a05ff42ee41
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "1541274"
+ms.lasthandoff: 05/20/2019
+ms.locfileid: "1592666"
 ---
 # <a name="formula-designer-in-electronic-reporting-er"></a>Formeldesigner i elektronisk rapportering (ER)
 
@@ -443,7 +443,7 @@ IF (NOT (enumType_deCH.IsTranslated), enumType_de.Label, enumType_deCH.Label)
 <tr>
 <td>INDEKS (liste, indeks)</td>
 <td>Denne funksjonen returnerer en post som er valgt av en bestemt numerisk indeks i listen. Det oppstår et unntak hvis indeksen er utenfor området til postene i listen.</td>
-<td>Hvis du angir datakilden <strong>DS</strong> for typen <strong>Beregnet felt</strong>, og den inneholder uttrykket <strong>SPLIT ("A|B|C", “|”), 2)</strong>, returnerer <strong>DS.Value</strong>-uttrykket tekstverdien "B". Uttrykket <strong>INDEX (SPLIT ("A|B|C", “|”), 2).Value</strong> returnerer også tekstverdien “B”.</td>
+<td>Hvis du angir datakilden <strong>DS</strong> for typen <strong>Beregnet felt</strong>, og den inneholder uttrykket <strong>SPLIT ("A|B|C", “|”), 2</strong>, returnerer <strong>DS.Value</strong>-uttrykket tekstverdien "B". Uttrykket <strong>INDEX (SPLIT ("A|B|C", “|”), 2).Value</strong> returnerer også tekstverdien “B”.</td>
 </tr>
 </tbody>
 </table>

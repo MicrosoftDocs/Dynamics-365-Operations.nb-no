@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 213b47422a5e31c2cfc2d173b8c7d9efdecc7568
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: f17da3db6fbc19548544a0c6c090a0b6db093673
+ms.sourcegitcommit: e2fb0846fcc6298050a0ec82c302e5eb5254e0b5
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1573378"
+ms.lasthandoff: 05/27/2019
+ms.locfileid: "1606855"
 ---
 # <a name="add-a-recommendations-control-to-the-transaction-screen-on-pos-devices"></a>Legge til en kontroll for anbefalinger på transaksjonsskjermen på salgsstedsenheter
 
@@ -40,13 +40,13 @@ Du kan vise produktanbefalingene på salgsstedsenheten når du bruker Microsoft 
 ## <a name="open-layout-designer"></a>Åpne utforming av oppsett
 
 1. Gå til **Detaljhandel** &gt; **Kanaloppsett** &gt; **Salgsstedsoppsett** &gt; **Salgssted** &gt; **Skjermoppsett**.
-2. Bruk hurtigfilteret til å finne skjermen du vil legge til kontrollen på. Filtrer for eksempel i feltet **Skjermoppsett-ID** ved å bruke verdien "F2CP16:9M".
-3. Finn og velg ønsket post i listen. Velg for eksempel "Navn: F2CP16:9M Skjermoppsett-ID: F2CP16:9M".
+2. Bruk hurtigfilteret til å finne skjermen du vil legge til kontrollen på. Filtrer for eksempel i feltet **Skjermoppsett-ID** ved å bruke verdien **F2CP16:9M**.
+3. Finn og velg ønsket post i listen. Velg for eksempel **Navn: F2CP16:9M Skjermoppsett-ID: F2CP16:9M**.
 4. Klikk **Utforming av oppsett**.
 5. Følg instruksjonene for å starte utforming av oppsett. Når du blir spurt etter legitimasjon, angir du den samme legitimasjonen som var i bruk da utforming av oppsett ble startet fra siden **Skjermoppsett**.
 6. Når du logger deg på, vises det en side som ligner den nedenfor. Oppsettet vil være forskjellige avhengig av tilpasninger som er gjort for din butikk.
 
-    [![screenlayout-pic-1](./media/screenlayout-pic-1.png)](./media/screenlayout-pic-1.png)
+    [![Utforming av oppsett](./media/screenlayout-pic-1.png)](./media/screenlayout-pic-1.png)
 
 ## <a name="choose-a-display-option"></a>Velge et visningsalternativ
 
@@ -59,11 +59,11 @@ Det finnes to tilgjengelige konfigurasjonsalternativer. Velg alternativet som pa
 
 1. Reduser høyden på detaljområdet for transaksjonslinjer slik at det er samme høyde som kundepanelet til venstre.
 
-    [![screenlayout-pic-2](./media/screenlayout-pic-2.png)](./media/screenlayout-pic-2.png)
+    [![Høyde på detaljområdet for transaksjonslinjer er redusert](./media/screenlayout-pic-2.png)](./media/screenlayout-pic-2.png)
 
 2. På menyen til venstre drar og slipper du kontrollen for anbefalinger til mellom detaljområdet for transaksjonslinjer og knappegruppen nederst i midten på transaksjonsskjermen. Endre størrelse på kontrollen slik at den passer i dette området.
 
-    [![screenlayout-pic-3](./media/screenlayout-pic-3.png)](./media/screenlayout-pic-3.png)
+    [![Anbefalingskontroll er lagt til i oppsettet](./media/screenlayout-pic-3.png)](./media/screenlayout-pic-3.png)
 
 3. Klikk **X** for å lagre og avslutte utforming av oppsett.
 4. Gå til **Detaljhandel** &gt; **IT for detaljhandel** &gt; **Distribusjonsplaner** i Dynamics 365 for Retail.
@@ -75,13 +75,13 @@ Det finnes to tilgjengelige konfigurasjonsalternativer. Velg alternativet som pa
 1. Høyreklikk i det tomme området under den siste kategorien i knappegruppen plassert på høyre side av siden.
 2. Klikk på **Tilpass**.
 
-    [![pic-5](./media/pic-5.png)](./media/pic-5.png)
+    [![Tilpasning – Kategorikontroll-dialogboks](./media/pic-5.png)](./media/pic-5.png)
 
 3. Klikk **Ny kategori**.
 4. Finn den nye kategorien som du nettopp la til. Du må kanskje rulle nedover.
 5. I rullegardinlisten **Innhold** velger du **Anbefalte produkter**.
 
-    [![pic-6](./media/pic-6.png)](./media/pic-6.png)
+    [![Valg av Anbefalte produkter i Innhold-feltet](./media/pic-6.png)](./media/pic-6.png)
 
 6. I **Etikett**-feltet, skriv inn et navn for anbefalingsfanen. For eksempel, skriv «Anbefalte produkter».
 7. I **Bilde**-feltet velger du bildet som skal vises i kategorien.

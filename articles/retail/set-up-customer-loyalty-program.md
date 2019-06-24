@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: scotttuc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 9b73c52a72c82c109a1ff874d2369ce9c0b3a6d2
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 94f8cf5b5753c530c42327e251a2102b876c1c8a
+ms.sourcegitcommit: e2fb0846fcc6298050a0ec82c302e5eb5254e0b5
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1505893"
+ms.lasthandoff: 05/27/2019
+ms.locfileid: "1606878"
 ---
 # <a name="loyalty-overview"></a>Fordelsoversikt
 
@@ -93,10 +93,10 @@ Retail har nye fordelsfunksjoner som en del av oktober 2018-utgivelsen. Hver av 
 
     ![Generer fordelskort](./media/Generate%20loyalty%20card.png "Generer fordelskortnummer automatisk")
 
-- Opptjente og innløste fordelspoeng lagres nå for hver transaksjon og salgsordre mot salgslinjen, slik at det samme beløpet kan refunderes eller hentes tilbake ved fullstendige eller delvise returer. I tillegg gir poengsynlighet på salgslinjenivå mulighet for telefonsenterbrukere å svare på kundespørsmål om hvor mange poeng som er opptjent eller innløst for hver linje. Før denne endringen ble alltid fordelspoeng kalkulert på nytt under returnerer, som resulterte i et annet beløp enn det opprinnelige hvis opptjenings- eller innløsningsreglene ble endret. Dessuten hadde ikke telefonsenterbrukere synlighet med hensyn til poengnedbryting. Poengene vises i skjemaet **Korttransaksjoner** for hvert fordelskort. For å aktivere denne funksjonen aktiverer du konfigurasjonen **Poster fordelspoeng per salgslinje** under **Delte parametere for detaljhandel**  > **Generelt**-kategorien.
+- Opptjente og innløste fordelspoeng lagres nå for hver transaksjon og salgsordre mot salgslinjen, slik at det samme beløpet kan refunderes eller hentes tilbake ved fullstendige eller delvise returer. I tillegg gir poengsynlighet på salgslinjenivå mulighet for telefonsenterbrukere å svare på kundespørsmål om hvor mange poeng som er opptjent eller innløst for hver linje. Før denne endringen ble alltid fordelspoeng kalkulert på nytt under returnerer, som resulterte i et annet beløp enn det opprinnelige hvis opptjenings- eller innløsningsreglene ble endret. Dessuten hadde ikke telefonsenterbrukere synlighet med hensyn til poengnedbryting. Poengene vises i skjemaet **Korttransaksjoner** for hvert fordelskort. For å aktivere denne funksjonen aktiverer du konfigurasjonen **Poster fordelspoeng per salgslinje** under **Delte parametere for detaljhandel** \> **Generelt**-kategorien.
 
->[!NOTE]
-> Vi anbefaler på det sterkeste å slå på denne funksjonen for å sikre, i tilfelle returer, at riktig mengde poeng kan refunderes eller tas fra kunden.
+    > [!NOTE]
+    > Vi anbefaler på det sterkeste å slå på denne funksjonen for å sikre, i tilfelle returer, at riktig mengde poeng kan refunderes eller tas fra kunden.
 
 - Forhandlere kan nå definere rettighetsperioden for hvert fordelspoeng. En rettighetsperiodekonfigurasjon definerer varigheten fra opptjeningsdatoen, og deretter blir fordelspoengene tilgjengelige for kundene. Ikke opptjente poeng vises i kolonnen **Ikke opptjente poeng** på siden **Fordelskort**. Forhandlere kan også definere grensen for maksimale fordelspoeng per fordelskort. Dette feltet kan brukes til å redusere virkningen av fordelssvindel. Når de maksimale fordelspoengene er nådd, kan ikke brukeren få flere poeng. Forhandlere kan velge å blokkere slike kort helt til de har undersøkt en potensiell svindel. Hvis forhandleren avdekker svindel, kan ikke forhandleren bare blokkere fordelskortet for kunden, men også merke til kunden som blokkert. Hvis du vil gjøre dette, kan du sette egenskapen **Blokker kunde for fordelsregistrering** til **Ja** under **Alle kunder** på hurtigkategorien **Detaljhandel**. De blokkerte kundene vil ikke kunne få utstedt et fordelskort i noen av kanalene.
 
@@ -120,31 +120,32 @@ Retail har nye fordelsfunksjoner som en del av oktober 2018-utgivelsen. Hver av 
     ![Poeng som dekkes av fordelssaldoen](./media/Points%20covered%20by%20loyalty%20balance.png "Vis saldo som dekkes av fordelspoeng")
 
     ![Poeng som utløper](./media/Expiring%20points.png "Vis poeng som utløper")
-    
 
 - Med 8.1.3-versjonen har vi aktivert alternativet "betal etter lojalitet" i telefonsenterkanalen. Hvis du vil aktivere dette alternativet, kan du opprette et betalingsmiddel for loyalitet og knytte det til telefonsenteret. 
 
->[!NOTE]
-> Fordi lojalitetsbetalingene er definert som kortbetalinger, må du velge et kort fra **Kortoppsett**-siden. 
+    > [!NOTE]
+    > Fordi lojalitetsbetalingene er definert som kortbetalinger, må du velge et kort fra **Kortoppsett**-siden. 
 
-![Lojalitetskortoppsett](./media/LoyaltyCardSetup.png "Lojalitetskortoppsett")
+    ![Lojalitetskortoppsett](./media/LoyaltyCardSetup.png "Lojalitetskortoppsett")
 
-Når dette er satt opp, kan kunder innløse deres fordelspoeng i telefonsenteret. I tillegg har vi forbedret brukeropplevelsen ytterligere for å vise "Beløp som dekkes av fordelspoeng", slik at telefonsenterbrukere ikke trenger å navigere til en annen skjerm for å vise fordelssaldoen.
+    Når dette er satt opp, kan kunder innløse deres fordelspoeng i telefonsenteret. I tillegg har vi forbedret brukeropplevelsen ytterligere for å vise "Beløp som dekkes av fordelspoeng", slik at telefonsenterbrukere ikke trenger å navigere til en annen skjerm for å vise fordelssaldoen.
 
 - Mange forhandlere gir fordelspoeng bare basert på salgstransaksjonene, men jo mer vil kundefokuserte forhandlere belønne kundene for å engasjere seg i merkevaren deres. De vil for eksempel gi fordeler for å fullføre en Internett-undersøkelse, besøke en butikk, like forhandlerne på Facebook eller tvitre om forhandlere. For å gjøre dette kan forhandleren definere et hvilket som helst antall "Annen aktivitetstype" og definere de tilsvarende opptjeningsreglene for disse aktivitetene. Det vises også en detaljhandelsserver-API, "PostNonTransactionalActivityLoyaltyPoints", som kan kalles når en aktivitet er identifisert som belønner kunden med fordelspoeng. Denne API-en forventer lojalitetskort-ID, kanal-ID og den andre aktivitetstype-ID-en, slik at kunden som skal belønnes, spores, og opptjeningsregelen for aktiviteten kan identifiseres. 
 
     Tildeling av poeng for ikke-transaksjonsaktiviteter har vanligvis to hovedtrinn:
+
     - Det ha skjedd en realisering av en aktivitet som skal belønnes.
     - Gi riktige poeng.
 
     Det første trinnet er utenfor Microsoft Dynamics 365 for Retail, for eksempel tvitring om merket eller liking av merket på Facebook. Når denne aktiviteten er anerkjent, kan forhandlerne kalle den nevnte API-en for detaljhandelsserver og tildele loyalitetspoeng i sanntid. I slike tilfeller er det ikke nødvendig å utføre et kontrolltrinn, fordi en aktivitet har skjedd, og tilsvarende poeng bør tildeles. Det finnes imidlertid scenarioer der forhandleren vil gå gjennom postene før det tildeles poeng. Hvis forhandleren for eksempel har satt opp en workshop i butikken der kundene registrerer seg på nettstedet for e-handel eller i et annet hendelsesregistreringprogram. Bare de deltakende kundene bør imidlertid oppnå fordelspoeng. For slike scenarioer har vi introdusert en dataenhet, **Fordelslinjer og andre aktivitetstypelinjer i detaljhandel**, i 10.0-versjonen. Denne dataenheten gjør det mulig for forhandlerne å bruke rammeverket for dataimport/-eksport (DIXF) eller OData-API-en til å registrere aktivitetene som skal belønne kunder med fordelspoeng. Dataenheten lagrer aktivitetene i en journal som heter **Fordelslinjer for andre aktiviteter**, som kan brukes for gjennomgang og redigering. Etter at dataene er kontrollert, kan IT-brukeren postere aktivitetslinjene manuelt eller kjøre en jobb som heter **Behandle andre aktivitetstyper for fordelslinjer**, som vil postere alle ikke-posterte aktivitetslinjer og tildele poeng til kundene basert opptjeningsreglene. I scenarioet over vil hendelsesregistreringsprogrammet kalle opp OData-API-en for å sende kundeinformasjonen til Dynamics 365 for Retail. IT-brukeren kan imidlertid bare postere aktivitetslinjene for de kundene som har deltatt på en workshop, og slette aktivitetslinjene for de andre kundene. 
 
-> [!NOTE]
-> For øyeblikket tvinger systemet brukere til å definere en nummerserie for "andre aktivitetstyper", men dette vil ikke være et obligatorisk trinn i fremtidige versjoner. Hvis du vil angi en nummerserie, kan du gå til **Delte parametere for detaljhandel > Nummerserier** og velge en nummerserie for **Fordel annen aktivitetstype-ID**.
+    > [!NOTE]
+    > For øyeblikket tvinger systemet brukere til å definere en nummerserie for "andre aktivitetstyper", men dette vil ikke være et obligatorisk trinn i fremtidige versjoner. Hvis du vil angi en nummerserie, kan du gå til **Delte parametere for detaljhandel** \> **Nummerserier** og velge en nummerserie for **Fordel annen aktivitetstype-ID**.
 
 - For å gi god kundeservice og løse spørringer for kunden effektivt, er det viktig at butikkasserere har tilgang til å fylle ut kundens profil. Med 10.0-versjonen vil kasserere kunne se detaljer om fordelshistorikken sammen med det tilknyttede lojalitetsprogrammet og laginformasjon på salgsstedet.
-- Gratis eller til rabattert levering er et av de svært motivering faktorene for kunder som handler på Internett. For å gjøre det mulig for forhandlerne å definere forsendelseskampanjer, har vi introdusert en ny type kampanje i 10.0-versjonen som kalles “Terskelrabatt for levering”, der forhandleren kan definere terskler som, når de er oppfylt, vil du gjøre kunder berettiget til rabattert eller gratis levering. Bruk for eksempel $ 35 for gratis todagers levering eller gratis todagers levering for alle fordelskunder. Denne funksjonen støtter den nye funksjonen for avanserte automatiske gebyrer. Se i dokumentasjonen for avanserte automatiske tillegg her: https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/omni-auto-charges. Disse avanserte automatiske tilleggene må være aktivert for forsendelseskampanjer for å fungere. Disse kan aktiveres fra **Kundeordrer**-kategorien på siden **Detaljhandelsparametere** og aktivere "Bruk avanserte automatiske gebyrer"-konfigurasjonen. I tillegg, fordi en forhandler kan definere flere typer tillegg, for eksempel behandling eller installasjon, må forhandleren angi hvilket tillegg som betraktes som forsendelseskostnad. Forsendelsesrabattene brukes bare på forsendelseskostnader. Hvis du vil angi tillegget som Forsendelsesgebyr, kan du gå til **Gebyrkoder**-skjemaet under **Detaljhandel** > **IT for detaljhandel** > **Kanaloppsett** > **Tillegg** og merke av for "Forsendelsesgebyr" for de ønskede tilleggene. Nå kan du navigere til **Terskelrabatt for levering for detaljhandel**-skjemaet og definere rabatten.
+- Gratis eller til rabattert levering er et av de svært motivering faktorene for kunder som handler på Internett. For å gjøre det mulig for forhandlerne å definere forsendelseskampanjer, har vi introdusert en ny type kampanje i 10.0-versjonen som kalles “Terskelrabatt for levering”, der forhandleren kan definere terskler som, når de er oppfylt, vil du gjøre kunder berettiget til rabattert eller gratis levering. Bruk for eksempel $ 35 for gratis todagers levering eller gratis todagers levering for alle fordelskunder. Denne funksjonen støtter den nye funksjonen for avanserte automatiske gebyrer. Se i [dokumentasjonen for avanserte automatiske tillegg](https://docs.microsoft.com/dynamics365/unified-operations/retail/omni-auto-charges). Disse avanserte automatiske tilleggene må være aktivert for forsendelseskampanjer for å fungere. Disse kan aktiveres fra **Kundeordrer**-kategorien på siden **Detaljhandelsparametere** og aktivere "Bruk avanserte automatiske gebyrer"-konfigurasjonen. I tillegg, fordi en forhandler kan definere flere typer tillegg, for eksempel behandling eller installasjon, må forhandleren angi hvilket tillegg som betraktes som forsendelseskostnad. Forsendelsesrabattene brukes bare på forsendelseskostnader. Hvis du vil angi tillegget som Forsendelsesgebyr, kan du gå til **Gebyrkoder**-skjemaet under **Detaljhandel** \> **IT for detaljhandel** \> **Kanaloppsett** \> **Tillegg** og merke av for "Forsendelsesgebyr" for de ønskede tilleggene. Nå kan du navigere til **Terskelrabatt for levering for detaljhandel**-skjemaet og definere rabatten.
+
     På samme måte som produktrabatter tar denne rabatten hensyn til alle eksisterende standard rabattfunksjoner, for eksempel gjør det mulig for forhandleren å begrense disse rabattene med kupongene, slik at bare kunder med kuponger kan få disse rabattene. Disse rabattene utnytter også prisgruppefunksjonen for å fastslå rettigheten til slike rabatter. Forhandleren kan for eksempel velge å kjøre disse kampanjene bare i nettkanaler og/eller på tvers av kanaler for bestemte kundegrupper, for eksempel fordelskunder. Når ordrelinjene med den angitte leveringsmodusen når den definerte terskelen, anvendes forsendelsesrabatten, og forsendelseskostnaden reduseres basert på rabatten som er definert. 
 
-> [!NOTE]
-> I motsetning til andre tidsbestemte rabatter som kvantumsrabatt, enkel rabatt, samlerabatt og terskelrabatt, oppretter ikke forsendelsesrabatten rabattlinjer, men redigerer forsendelseskostnadene direkte og legger ved navnet på rabatten i beskrivelsen av tillegget.
+    > [!NOTE]
+    > I motsetning til andre tidsbestemte rabatter som kvantumsrabatt, enkel rabatt, samlerabatt og terskelrabatt, oppretter ikke forsendelsesrabatten rabattlinjer, men redigerer forsendelseskostnadene direkte og legger ved navnet på rabatten i beskrivelsen av tillegget.

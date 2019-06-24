@@ -17,12 +17,12 @@ ms.search.industry: retail
 ms.author: ShalabhjainMSFT
 ms.search.validFrom: 2017-10-30
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: e7aceed380f6722353574470d6dee75ebe105c18
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 6c813cfea9b570e8dfd5dbe7f3ca1f4ba8594420
+ms.sourcegitcommit: ffc37f7c2a63bada3055f37856a30424040bc9a3
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1530276"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "1577986"
 ---
 # <a name="show-order-notifications-in-the-point-of-sale-pos"></a>Vise ordrevarslinger på salgsstedet (POS)
 
@@ -68,7 +68,7 @@ Illustrasjonen nedenfor viser innstillingene for aktivt innhold i rutenettet for
 
 ![Innstillinger for aktivt innhold i rutenettet for knappen](./media/ButtonGridDesigner.png "Innstillinger for aktivt innhold i rutenettet for knappen")
 
-Hvis du vil vise varslingsantallet på en knapp, må du kontrollere at riktig skjermoppsett oppdateres. Hvis du vil bestemme skjermoppsettet som brukes av POS, velger du **Innstillinger**-ikonet øverst til høyre, og noterer **Skjermoppsett-ID** og **Oppsettsoppløsning**. Med Edge-leseren går du nå til **Skjermoppsett**-siden i Dynamics 365 for Finance and Operations, finner **Skjermoppsett-ID** og **Oppsettsoppløsning** som ble identifisert ovenfor, og merker av for **Aktiver direkte innhold**. Gå til **Detaljhandel > IT for detaljhandel > Distribusjonsplan** og kjør 1090 (registre)-jobben for å synkronisere oppsettsendringer. 
+Hvis du vil vise varslingsantallet på en knapp, må du kontrollere at riktig skjermoppsett oppdateres. Hvis du vil bestemme skjermoppsettet som brukes av POS, velger du **Innstillinger**-ikonet øverst til høyre, og noterer **Skjermoppsett-ID** og **Oppsettsoppløsning**. Med Edge-leseren går du nå til **Skjermoppsett**-siden i Dynamics 365 for Finance and Operations, finner **Skjermoppsett-ID** og **Oppsettsoppløsning** som ble identifisert ovenfor, og merker av for **Aktiver direkte innhold**. Gå til **Detaljhandel \> IT for detaljhandel \> Distribusjonsplan** og kjør 1090 (registre)-jobben for å synkronisere oppsettsendringer.
 
 ![Finn skjermoppsettet som brukes av POS](./media/Choose_screen_layout.png "Finn skjermoppsettet ")
 

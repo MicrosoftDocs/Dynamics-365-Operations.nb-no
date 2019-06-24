@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: cdd8acea22fb3298d1d0e7ccce0ca42c1427fe80
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: c5fb6b23d11ab263ed158a0a4476f77ed22b5084
+ms.sourcegitcommit: 574d4dda83dcab94728a3d35fc53ee7e2b90feb0
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1561816"
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "1595668"
 ---
 # <a name="whats-new-or-changed-in-dynamics-ax-70-february-2016"></a>Hva er nytt eller endret i Dynamics AX 7.0 (februar 2016)
 
@@ -548,7 +548,7 @@ Ingen nye funksjoner er lagt til.
 |------------------|------------------|-----------------|------------------------|
 | Advare brukeren hvis en salgsordre eller produksjonsordre er ikke klar for levering innen planlagt dato. | Advarsler som er opprettet av hovedplanlegging, kalles *terminmeldinger*. *Termin* er en kontrakt mellom to parter om å kjøpe eller selge aktiva til en pris som er avtalt i dag (*terminpris*), selv om leveringen og betalingen utføres på et tidspunkt i fremtiden (*leveringsdatoen*). | Navnet på *terminmeldinger* og *termindatoer* er endret til henholdsvis *beregnede forsinkelser* og *forsinkede datoer*. | Terminologien som ble brukt i AX 2012, var feil og førte til feil oversettelser. |
 | Få raskt innblikk i statusen for en hovedplanleggingskjøring, planlagte ordrer som haster, og planlagte ordrer som forårsaker forsinkelser. | Informasjonen er tilgjengelig, men den er spredt i flere skjemaer. | **Hovedplanlegging**-arbeidsområdet inneholder raskt informasjon om når den siste hovedplanleggingskjøring ble fullført, om eventuelle feil oppstod, hva de planlagte bestillingene er, og hvilke planlagte bestillinger som forårsaker forsinkelser. | Du har nytte av oversikten arbeidsområdet gir. Relevant informasjon er satt sammen for å veilede med hovedplanlegging og forbedre produktiviteten. |
-| Bruk Excel til å oppdatere behovsprognoser. | Ikke tilgjengelig | Du kan dra nytte av sømløs integrasjon med Microsoft Excel når du angir behovsprognoser, oppdaterer og sletter behovsprognoser. | Det bidrar til å øke effektiviteten og produktiviteten. |
+| Bruk Excel til å oppdatere behovsprognoser. | Ikke tilgjengelig | Du kan dra nytte av sømløs integrasjon med Excel når du angir behovsprognoser, oppdaterer og sletter behovsprognoser. | Det bidrar til å øke effektiviteten og produktiviteten. |
 | Beregne fremtidig behov og opprette behovsprognoser basert på historiske transaksjonsdata. | I Microsoft Dynamics AX 2012 R3 brukes prognosemodeller i Microsoft SQL Server Analysis Service til å opprette behovsprognoseforutsigelser. | Beregn fremtidig behov ved hjelp av kraften og utvidelsesmulighetene i Microsoft Azure Machine Learning-skytjenesten. Det er enkelt å bruke og utvide prognosemodellene i Machine Learning for å oppfylle kundekrav. Tjenesten velger modell i henhold til hvilken som passer best, og tilbyr nøkkelytelsesindikatorer (KPI-er) som kan brukes til å beregne prognosenøyaktighet. | Generer mer nøyaktige prognoser ved hjelp av Machine Learning-teknikker. |
 | Optimaliser ordredatoen og -antallet basert på en visuell oversikt over relaterte handlinger fra hovedplanleggingskjøringen. | Oversikten over handlingsdiagrammet er tilgjengelig, men viser alle de relaterte handlingene. Når handlinger brukes, forsvinner de øyeblikkelig fra visningen. | Handlingsdiagrammet gir en bedre oversikt. Det inneholder alternativer som lar deg vise bare brukte handlinger og direkte tilknyttede handlinger. Når handlinger brukes, vil de vises nedtonet, men vil fortsatt vises. Derfor er oversikten beholdt. Tilleggsinformasjon er lagt til handlingsdiagrammet for å vise dataene på én side. | Du drar nytte av forbedring av produktivitet fordi du fokuserer bare på de relevante handlingene. |
 
@@ -971,7 +971,7 @@ Det finnes en forbedret og forenklet klientkomponentinstallasjon via selvbetjeni
 </tr>
 <tr>
 <td>Overvåke tilstanden til systemet og analysere problemer og feil.</td>
-<td>Denne funksjonen krever <a href="http://www.microsoft.com/download/details.aspx?id=42636">System Center 2012-administrasjonspakken for Microsoft Dynamics AX 2012 R3 CU8 Retail</a>.</td>
+<td>Denne funksjonen krever <a href="https://www.microsoft.com/download/details.aspx?id=42636">System Center 2012-administrasjonspakken for Microsoft Dynamics AX 2012 R3 CU8 Retail</a>.</td>
 <td>Overvåking og diagnose for detaljhandelskomponenter er nå tilgjengelig gjennom <strong>Driftsinnsikt</strong>-instrumentbordet i LCS.</td>
 <td><strong>Driftsinnsikt</strong>-instrumentbordet er en skybasert overvåkingsportal som erstatter behovet for å installere SCOM-infrastrukturen (System Center Operations Manager).</td>
 </tr>

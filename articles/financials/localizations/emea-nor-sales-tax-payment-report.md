@@ -15,12 +15,12 @@ ms.search.scope: Core, Operations
 ms.search.region: Norway
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: fb06105ad4042cb0ff9f1fc68c770e0a9863aebf
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 9c289e1cce79a6f7fb211e52f42ac6b04570c747
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1538183"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1549061"
 ---
 # <a name="vat-statement-for-norway"></a>MVA-oppgave for Norge
 

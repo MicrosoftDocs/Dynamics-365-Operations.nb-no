@@ -3,7 +3,7 @@ title: Skjermoppsett for salgssted
 description: Dette emnet inneholder informasjon om skjermoppsett for Microsoft Dynamics 365 for Retail POS-opplevelser.
 author: jblucher
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 05/20/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 91d6e34c25710716788542dabb3bd7d935b2d4ab
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: e9536563ce7ddfc4aef54ae05267316ea8139263
+ms.sourcegitcommit: e2fb0846fcc6298050a0ec82c302e5eb5254e0b5
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1549434"
+ms.lasthandoff: 05/27/2019
+ms.locfileid: "1607049"
 ---
 # <a name="screen-layouts-for-the-point-of-sale-pos"></a>Skjermoppsett for salgssted
 
@@ -51,6 +51,7 @@ Visuelle profiler tilordnes til kasser, og de brukes til å angi de visuelle ele
 - **Tema** – Du kan velge mellom lyse eller mørke programtemaer. Temaet påvirker skrift- og bakgrunnsfargene i hele programmet.
 - **Uthevingsfarge** – Uthevingsfargen brukes på hele salgsstedet for å skille eller utheve spesifikke visuelle elementer, for eksempel fliser, kommandoknapper og hyperkoblinger. Disse elementene er vanligvis handlingskrevende.
 - **Topptekstfarge** – Du kan konfigurere fargen på sideoverskriften for å oppfylle varemerkebehovet til forhandleren. Denne funksjonen er ikke bare tilgjengelig i Microsoft Dynamics 365 for Retail versjon 1611.
+- **Vis dato/klokkeslett** – Når dette er aktivert, vil gjeldende dato og klokkeslett vises i POS-hodet.
 - **Påloggingsbakgrunner** – Du kan angi et bakgrunnsbilde for påloggingsskjermbildet. Størrelsen på bakgrunnsbilder bør holdes så liten som mulig, siden lagring og innlasting av store filer kan ha innvirkning på programmets virkemåte og ytelse.
 - **Programbakgrunn** – Du kan angi et bakgrunnsbilde som brukes i stedet for heldekkende temafarge i programmet. For påloggingsbakgrunner bør filstørrelsen holdes så liten som mulig.
 

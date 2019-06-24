@@ -3,7 +3,7 @@ title: Forskriftsmessige oppdateringer
 description: Dette emnet inneholder en liste over planlagte og frigitte forskriftsmessige oppdateringer for Microsoft Dynamics 365 for Finance and Operations.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 04/12/2019
+ms.date: 05/16/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 0bd72bb5bebed84c092142b2b18f8fbbc3d4f711
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 8b79dd65c38d878303a75490721a3c7e6f1c6d09
+ms.sourcegitcommit: d153bde74651400118bbd37b69ff5e7e161f1db7
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1530713"
+ms.lasthandoff: 05/21/2019
+ms.locfileid: "1593349"
 ---
 # <a name="regulatory-updates"></a>Forskriftsmessige oppdateringer
 
@@ -52,9 +52,20 @@ For de siste forskriftsmessige oppdateringsplanene kan du se tabellen nedenfor.
 |      2019. april          |   10.0.1      |   Tyskland     |E-fakturering – Kundefakturaeksport i xRechnung 1.1-format         |
 |      2019. april          |   10.0.1      |    Storbritannia     |[Mva-oppgave, innsendingsendringer (Gjøre mva digital)](emea-gbr-mtd-vat-integration.md)    |    
 |      2019. april          |   10.0.1      |    Brasil     |NF-e ny NT 2018.005         |
-|      2019. april          |   10.0.1      |    Russland     |Endringer i mva-deklareringsformat fra 2019         |
-|      2019. april          |   10.0.1      |    Russland     |Endringer i mva-deklareringsformat fra 2019 (salgs- og innkjøpsbøker) 
+|      2019. april          |   10.0.1      |    Russland     |[Endringer i mva-deklareringsformat fra 2019](rus-VAT-declaration.md) |
+|      2019. april          |   10.0.1      |    Russland     |Endringer i mva-deklareringsformat fra 2019 (salgs- og innkjøpsbøker) |
+|      2019. april          |   10.0.1      |    Russland     |Endringer i deklarering for landavgift fra 2018 |
+|      2019. april          |   10.0.1      |    Russland     |[Endringer i deklarering for eiendomsskatt fra 2019](rus-assessed-tax-declaration.md)|
+|      2019. april          |   10.0.1      |    Russland     |Endringer i deklarering for transportavgift fra 2019  |
+|      2019. april            |   10.0.1      | Ungarn      |  Ungarn: elektronisk fakturering v. 1.1 2019 på Microsoft Dynamics 365 for Finance and Operations  |
 |      2019. mai            |   10.0.2      | Brasil      |   SPED ECD Layout 7   |
+|      Uavsluttet            |   10.0.3      | Brasil      |   NF-e ny NT 2018.005 – v.1.20   |
+|      Uavsluttet            |   10.0.3      | Brasil      |   SPED ECD Layout 7   |
+|      Uavsluttet            |   10.0.3      | Brasil      |   SPED ECF – oppsett 5 for 2019   |
+|      Uavsluttet            |   10.0.3      | Litauen    |   Med i.SAF-rapporten kan brukere definere systemets merverdiavgiftkoder i tilknytning til juridiske mva-koder    |
+|      Uavsluttet            |   10.0.3      | Polen     |   SAF-fakturaer (JPK_FA) v.2 fra 1Jul2019  |
+|      Uavsluttet            |   10.0.3      | Brasil   |   ICMS-justeringer for regnskapsdokument aktiverer tabell 5.2   |
+|      Uavsluttet            |   10.0.3      | Brasil    |   NF-e-dekret 54.308/18 (RS)   |
 
 
 ## <a name="additional-resources"></a>Tilleggsressurser

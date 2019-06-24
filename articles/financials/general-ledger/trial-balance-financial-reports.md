@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c9e8c16724364df4dd62150056299e818470aa63
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: cd500c2880545ccae3cde7e2ead2fc5b83167d32
+ms.sourcegitcommit: 574d4dda83dcab94728a3d35fc53ee7e2b90feb0
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1553697"
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "1595368"
 ---
 # <a name="trial-balance-financial-reports"></a>Finansrapporter for råbalanse
 
@@ -106,7 +106,7 @@ Hver rapport for råbalanse bruker en annen kolonnedefinisjon. Disse kolonnedefi
 
 [Vise finansrapporter](view-financial-reports.md)
 
-[Blogg for Dynamics-finansrapportering](http://blogs.msdn.com/b/dynamics_financial_reporting/)
+[Blogg for Dynamics-finansrapportering](https://blogs.msdn.com/b/dynamics_financial_reporting/)
 
 
 

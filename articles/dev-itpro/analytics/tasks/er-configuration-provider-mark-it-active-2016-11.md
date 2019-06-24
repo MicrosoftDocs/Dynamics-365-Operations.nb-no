@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 13a27c2fec2a2b226e9ae8d5b8f9a61e8b79ceb0
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: a4b1cd7a02cdf4c650af50199f4425eb53cef0a8
+ms.sourcegitcommit: 574d4dda83dcab94728a3d35fc53ee7e2b90feb0
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1544915"
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "1595401"
 ---
 # <a name="create-configuration-providers-and-mark-them-as-active"></a>Opprette konfigurasjonsleverandører og merke dem som aktive
 
@@ -34,11 +34,11 @@ De følgende trinnene forklarer hvordan en bruker som er tilordnet til rollen sy
 1. Gå til Organisasjonsstyring > Arbeidsområder > Elektronisk rapportering.
 2. Klikk Konfigurasjonsleverandører.
 3. Klikk Ny.
-    * En leverandørpost har et unikt navn og URL-adresse. Gå gjennom innholdet på denne siden, og hopp over denne fremgangsmåten hvis en post for Litware, Inc. (http://www.litware.com) allerede finnes.  
+    * En leverandørpost har et unikt navn og URL-adresse. Gå gjennom innholdet på denne siden, og hopp over denne fremgangsmåten hvis en post for Litware, Inc. (https://www.litware.com) allerede finnes.  
 4. Skriv inn Litware, Inc. i Navn-feltet.
     * Litware, Inc  
-5. Skriv inn http://www.litware.com i feltet Internett-adresse.
-    * http://www.litware.com  
+5. Skriv inn https://www.litware.com i feltet Internett-adresse.
+    * https://www.litware.com  
 6. Klikk Lagre.
 7. Lukk siden.
 

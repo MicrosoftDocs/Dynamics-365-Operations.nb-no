@@ -3,7 +3,7 @@ title: Videoer for Finance and Operations
 description: Denne siden viser Microsoft-opprettede "Slik gjør du det"- og "Teknisk tale"-videoer i forbindelse med Dynamics 365 for Finance and Operations som er tilgjengelige på YouTube og andre områder.
 author: josaw1
 manager: AnnBe
-ms.date: 05/11/2018
+ms.date: 05/15/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.region: global
 ms.author: josaw
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.0.0, AX 8.0
-ms.openlocfilehash: 7675ae79cb1155919f95c7f2ff1d3d72628ab731
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 1b828382f9f81d796fcfaef0e9c7dc9450a97992
+ms.sourcegitcommit: 2bbc0eeca6826c529fb729b82d16f287c1ce05bb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1561674"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "1591554"
 ---
 # <a name="videos-for-finance-and-operations"></a>Videoer for Finance and Operations
 
@@ -50,7 +50,7 @@ Videoene er oppført etter funksjon, så rull nedover for å se hele listen over
 - [Optimaliseringsrådgiver](https://www.youtube.com/watch?v=MRsAzgFCUSQ&t=4s)
 - [Definere en avdeling for utvikling og bygg](https://www.youtube.com/watch?v=qXLd-NMx9OY)
 - [Definere en utviklingsmaskin](https://www.youtube.com/watch?v=cqp9MetfiyM)
-- [Azure DevOps-integrering med Lifecycle Services](https://www.youtube.com/watch?v=0QyyyUp1zHQ&t=1s)
+- [Azure DevOps-integrasjon med Lifecycle Services](https://www.youtube.com/watch?v=0QyyyUp1zHQ&t=1s)
 
 #### <a name="explore-the-user-interface"></a>Utforske brukergrensesnittet
 
@@ -63,6 +63,7 @@ Videoene er oppført etter funksjon, så rull nedover for å se hele listen over
 - [Mobilt arbeidsområde for kostnadskontroll](https://youtu.be/imsuTg8rUVk)
 - [Komme i gang med Kostnadsregnskap](https://youtu.be/1pUDtJQZ8FU)
 - [Bruke Excel til kostnadsanalyse](https://youtu.be/-HKHYdClvx8)
+- [Utgiftserfaring](https://youtu.be/Ocy-MsTvEE0)
 
 #### <a name="intelligence"></a>Intelligens
 

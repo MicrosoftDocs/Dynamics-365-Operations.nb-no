@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2019-1-31
 ms.dyn365.ops.version: 8.1.3
-ms.openlocfilehash: 14f2c6eb3baf0de65de3b72e10b42b03a8c6b21a
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 6e295456838ca0195a472518b5979dfdc7819f74
+ms.sourcegitcommit: 19859d8566a8c7840066b2c10c6b08b67f1b83f4
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1536716"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "1617979"
 ---
 # <a name="catch-weight-product-processing-with-warehouse-management"></a>Behandling av Faktisk vekt-produkt med lagerstyring
 
 [!include [banner](../includes/banner.md)]
 
-[!include [preview banner](../includes/pivate-preview-banner.md)]
+[!include [banner](../includes/pivate-preview-banner.md)]
 
 
 ## <a name="feature-exposure"></a>Funksjonseksponering
@@ -138,10 +138,6 @@ Ikke alle arbeidsflyter støtter behandling av faktisk vekt-produkter med lagers
 - Manuell oppretting av karanteneordrer støttes ikke for faktisk vekt-produkter.
 - Manuell flytting av beholdning som er knyttet til arbeid, støttes ikke for faktisk vekt-produkter.
 - Konsolidering av nummerskilt støttes ikke for faktisk vekt-produkter.
-- Endringer i lagerstatus som en del av en periodisk oppgave støttes ikke for faktisk vekt-produkter.
-- Endringer i lagerstatus som er definert av en spørring, støttes ikke for faktisk vekt-produkter. (Endringer i kvalitetsordrelagerstatus støttes ikke heller.)
-- For faktisk vekt-produkter kan ikke lagerstatusen endres fra **Beholdning etter lokasjon**-siden.
-- For faktisk vekt-produkter kan ikke lagerstatusen endres som en del av lagerappflyttearbeidet.
 - Nummerskiltlasting for å initialisere lagerlagring støttes ikke for faktisk vekt-produkter.
 - Partibalanseringsprosesser støttes ikke for faktisk vekt-produkter.
 - Behandling av negativt fysisk lager støttes ikke for faktisk vekt-produkter.
@@ -151,7 +147,6 @@ Ikke alle arbeidsflyter støtter behandling av faktisk vekt-produkter med lagers
 
 - Funksjonen for gruppeplukking støttes ikke for faktisk vekt-produkter.
 - Plukk og pakk-lagerbehandling støttes ikke for faktisk vekt-produkter.
-- For faktisk vekt-produkter kan ikke arbeid fullføres fra **Arbeid**-siden.
 - For faktisk vekt-produkter kan arbeid som er definert i en arbeidsmal, utføres automatisk.
 - Funksjonen for tilbakeføring av arbeid støttes ikke for faktisk vekt-produkter.
 - For faktisk vekt-produkter støttes ikke manuell pakkestasjonbehandling der arbeid opprettes etter beholdere er lukket.
@@ -163,7 +158,7 @@ Ikke alle arbeidsflyter støtter behandling av faktisk vekt-produkter med lagers
 - Kanban-funksjonen støttes ikke for faktisk vekt-produkter.
 - Serienumre for faktisk vekt-produkter kan ikke registreres før forbruk.
 - Funksjonen for tilbakeføring av nummerskilt støttes ikke for faktisk vekt-produkter.
-- For faktisk vekt-produkter kan ferdigmelding registreres etter serienummer.
+- For faktisk vekt-produkter kan ikke ferdigmelding registreres etter serienummer.
 
 ### <a name="transportation-management-processing"></a>Transportstyringbehandling
 

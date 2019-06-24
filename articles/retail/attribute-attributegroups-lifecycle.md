@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2018-03-30
 ms.dyn365.ops.version: Application pdate 5, AX 8.0
-ms.openlocfilehash: 76b78a898a619f1bc7faa4749e5380a0ccfef527
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 7c722c311048258ce75170ac4276d397fe2828fe
+ms.sourcegitcommit: e2fb0846fcc6298050a0ec82c302e5eb5254e0b5
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1552723"
+ms.lasthandoff: 05/27/2019
+ms.locfileid: "1606901"
 ---
 # <a name="attributes-and-attribute-groups"></a>Attributter og attributtgrupper
 
@@ -176,8 +176,8 @@ Følg denne fremgangsmåten for å tilordne attributtgrupper til kategorier i hi
 > [!NOTE]
 > Denne fremgangsmåten kan også brukes til å tilordne attributtgrupper til kategorier i navigasjonskategorihierarkiet for kanalen og Ekstra produktkategorihierarkiet. Bruk følgende navigasjonsbane i trinn 2:
 >
-> - **Detaljhandel** &gt; **Kategori- og produktstyring** &gt; **Navigasjonskategorier for kanal**
-> - Gå til **Detaljhandel** &gt; **Kategori- og produktstyring** &gt; **Ekstra produktkategorier**.
+> - Detaljhandel &gt; Kategori- og produktstyring &gt; Navigasjonskategorier for kanal
+> - Detaljhandel &gt; Kategori- og produktstyring &gt; Ekstra produktkategorier
 
 ### <a name="assign-attribute-groups-to-retail-stores"></a>Tilordne attributtgrupper til detaljhandelsbutikker
 

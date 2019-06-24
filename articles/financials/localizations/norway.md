@@ -16,12 +16,12 @@ ms.search.region: Norway
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ea6b05e06de23e76c85a660fea384f6a343cde21
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 36b2a7b42eefb430ed75a34488a1c10c43f9cf74
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1538178"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1565100"
 ---
 # <a name="norway"></a>Norge 
 

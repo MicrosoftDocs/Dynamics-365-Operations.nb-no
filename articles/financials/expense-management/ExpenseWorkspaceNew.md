@@ -3,7 +3,7 @@ title: Ny utforming av reiseregninger
 description: Dette emnet gir informasjon om den nye utformingen av og opplevelsen for reiseregningregistrering i Microsoft Dynamics 365 for Finance and Operations. Den nye opplevelsen forenkler prosessen med å fullføre reiseregninger og reduserer tiden som kreves.
 author: ryansandness
 manager: AnnBe
-ms.date: 05/07/2019
+ms.date: 05/20/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: ryansand
 ms.search.validFrom: 2019-6-30
 ms.dyn365.ops.version: 10.0.3
-ms.openlocfilehash: 3039cda3f2cf9259ca06207bdf941bc6b0fb28e1
-ms.sourcegitcommit: be447fc81bc874982bc0185fcb4d87d99bd742c5
+ms.openlocfilehash: c7a2b95456e812970b135d83f0f7e503310ce185
+ms.sourcegitcommit: 97ed74889a09ef385f6ecbab69e84a05ff42ee41
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/08/2019
-ms.locfileid: "1538702"
+ms.lasthandoff: 05/20/2019
+ms.locfileid: "1592643"
 ---
 # <a name="expense-reports-reimagined"></a>Ny utforming av reiseregninger
 
@@ -46,10 +46,9 @@ Hvis du vil aktivere den nye opplevelsen, bruker du arbeidsområdet **Funksjonsb
 
 ## <a name="getting-started-video-for-new-users"></a>Video for å komme i gang for nye brukere
 
-Du kan se en kort video som viser hovedfunksjonene for registrering av reiseregninger.
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE2Y7gO]
 
-> [!NOTE]
-> Videoen er ikke tilgjengelig ennå. Dette emnet vil bli oppdatert når videoen er tilgjengelig.
+Videoen [Utgiftsopplevelse i Dynamics 365 for Finance and Operations](https://youtu.be/Ocy-MsTvEE0) (vises over) er inkludert i [Finance and Operations-spillelisten](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) som er tilgjengelig på YouTube.
 
 ## <a name="new-features"></a>Nye funksjoner
 
