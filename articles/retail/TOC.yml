@@ -4,7 +4,7 @@
   items:
     - name: Hva er nytt eller endret?
       href: get-started/whats-new.md
-    - name: Forhåndsvisningsfunksjoner i Dynamics 365 for Retail 10.0.3
+    - name: Hva er nytt eller endret i Dynamics 365 for Retail 10.0.3
       href: get-started/whats-new-10-0-3.md
     - name: Hva er nytt eller endret i Dynamics 365 for Retail 10.0.2
       href: get-started/whats-new-10-0-2.md
@@ -407,6 +407,10 @@
       items:
         - name: Eksempel på integrering av bilagsskriver for Italia
           href: localizations/emea-ita-fpi-sample.md
+    - name: Mexico
+      items:
+        - name: Globale CFDI-e-fakturaer for Mexico
+          href: ../financials/localizations/latam-mex-global-cfdi-3-3.md
     - name: Norge
       items:
         - name: Kassefunksjonalitet
@@ -602,7 +606,7 @@
           href: dev-itpro/extend-metadata.md
         - name: Kalle CRT-tjenesten i frakoblet modus
           href: dev-itpro/call-crt-service-offline.md
-    - name: Utvidelsesmulighet for Commerce Runtime (CRT)
+    - name: Commerce Runtime (CRT) utvidelsesmulighet
       items:
         - name: Arkitektur for og konfigurasjon av CRT
           href: dev-itpro/commerce-runtime-overview.md
