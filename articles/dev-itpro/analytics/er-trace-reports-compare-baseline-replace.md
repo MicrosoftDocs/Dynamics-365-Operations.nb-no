@@ -1,0 +1,221 @@
+---
+title: Forbedringer i sporing av resultater av genererte ER-rapporter og i å sammenligne dem med grunnlinjeverdier
+description: Dette emnet gir informasjon om hvordan ER-grunnlinjefunksjonen er forbedret i Microsoft Dynamics 365 for Finance and Operations versjon 10.0.3 (juni 2019).
+author: NickSelin
+manager: AnnBe
+ms.date: 06/19/2019
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-ax-platform
+ms.technology: ''
+audience: Application User, Developer, IT Pro
+ms.reviewer: kfend
+ms.search.scope: Core, Operations
+ms.custom: 220314
+ms.assetid: 2685df16-5ec8-4fd7-9495-c0f653e82567
+ms.search.region: Global
+ms.author: nselin
+ms.search.validFrom: 2018-04-01
+ms.dyn365.ops.version: Release 8.0
+ms.openlocfilehash: 222a415f686c8028fc2a414f97eed0291d850ae7
+ms.sourcegitcommit: 9917df8c0c9320955c61186cd922c8df894a4f25
+ms.translationtype: HT
+ms.contentlocale: nb-NO
+ms.lasthandoff: 06/21/2019
+ms.locfileid: "1700688"
+---
+# <a name="improvements-in-tracing-the-results-of-generated-er-reports-and-comparing-them-with-baseline-values"></a><span data-ttu-id="29ec4-103">Forbedringer i sporing av resultater av genererte ER-rapporter og i å sammenligne dem med grunnlinjeverdier</span><span class="sxs-lookup"><span data-stu-id="29ec4-103">Improvements in tracing the results of generated ER reports and comparing them with baseline values</span></span>
+
+[!include[banner](../includes/banner.md)]
+
+<span data-ttu-id="29ec4-104">Dette emnet beskriver det første settet med forbedringer i grunnlinjefunksjonen i rammeverket for elektronisk rapportering (ER).</span><span class="sxs-lookup"><span data-stu-id="29ec4-104">This topic describes the first set of improvements that have been made to the baseline feature of the Electronic reporting (ER) framework.</span></span> <span data-ttu-id="29ec4-105">Disse forbedringene er tilgjengelige i Microsoft Dynamics 365 for Finance and Operations versjon 10.0.3 (juni 2019) og nyere.</span><span class="sxs-lookup"><span data-stu-id="29ec4-105">These improvements are available in Microsoft Dynamics 365 for Finance and Operations version 10.0.3 (June 2019) and later.</span></span>
+
+## <a name="automate-the-setting-of-baseline-rules"></a><span data-ttu-id="29ec4-106">Automatisere innstillingen for grunnlinjeregler</span><span class="sxs-lookup"><span data-stu-id="29ec4-106">Automate the setting of baseline rules</span></span>
+
+<span data-ttu-id="29ec4-107">Emnet [Spore genererte rapportresultater og sammenligne dem med grunnlinjeverdier](er-trace-reports-compare-baseline.md) forklarer hvordan du konfigurerer ER-rammeverket slik at det samler inn informasjon om ER-formatutførelser og evaluerer resultatene av disse utførelsene.</span><span class="sxs-lookup"><span data-stu-id="29ec4-107">The [Trace generated report results and compare them with baseline values](er-trace-reports-compare-baseline.md) topic explains how to configure the ER framework to collect information about ER format executions and evaluate the results of those executions.</span></span> <span data-ttu-id="29ec4-108">Eksemplet i dette emnet viser trinnene som må fullføres.</span><span class="sxs-lookup"><span data-stu-id="29ec4-108">The example in this topic shows the steps that must be completed.</span></span>
+
+<span data-ttu-id="29ec4-109">Her er noen av trinnene:</span><span class="sxs-lookup"><span data-stu-id="29ec4-109">Here are some of the steps:</span></span>
+
+- <span data-ttu-id="29ec4-110">Kjør et ER-format for å generere en utgående fil, og lagre filen lokalt.</span><span class="sxs-lookup"><span data-stu-id="29ec4-110">Run an ER format to generate an outbound file, and store the file locally.</span></span>
+- <span data-ttu-id="29ec4-111">Legg til den lokalt lagrede filen som et vedlegg til grunnlinjen som ble lagt til for et ER-format.</span><span class="sxs-lookup"><span data-stu-id="29ec4-111">Add the locally stored file as an attachment of the baseline that was added for an ER format.</span></span>
+- <span data-ttu-id="29ec4-112">Konfigurer grunnlinjeregelen for den tilføyde grunnlinjen.</span><span class="sxs-lookup"><span data-stu-id="29ec4-112">Configure the baseline rule for the added baseline.</span></span> <span data-ttu-id="29ec4-113">Denne konfigurasjonen omfatter følgende trinn:</span><span class="sxs-lookup"><span data-stu-id="29ec4-113">This configuration includes the following steps:</span></span>
+
+    - <span data-ttu-id="29ec4-114">Angi et ER-formatelement som brukes til å generere en utgående fil.</span><span class="sxs-lookup"><span data-stu-id="29ec4-114">Specify an ER format element that is used to generate an outbound file.</span></span>
+    - <span data-ttu-id="29ec4-115">Velg vedlegget som refererer til den genererte utgående filen.</span><span class="sxs-lookup"><span data-stu-id="29ec4-115">Select the attachment that refers to the generated outbound file.</span></span>
+
+> [!NOTE]
+> <span data-ttu-id="29ec4-116">Disse trinnene må gjøres manuelt selv om de nye ER-funksjonene gjør at de kan automatiseres.</span><span class="sxs-lookup"><span data-stu-id="29ec4-116">These steps must be done manually, even though the new ER capabilities enable them to be automated.</span></span> <span data-ttu-id="29ec4-117">Hvis du vil vite mer om denne funksjonen, kan du fullføre eksemplet nedenfor.</span><span class="sxs-lookup"><span data-stu-id="29ec4-117">To learn more about this feature, complete the following example.</span></span>
+
+## <a name="example-automate-the-setting-of-baseline-rules"></a><span data-ttu-id="29ec4-118">Eksempel: Automatisere innstillingen for grunnlinjeregler</span><span class="sxs-lookup"><span data-stu-id="29ec4-118">Example: Automate the setting of baseline rules</span></span>
+
+<span data-ttu-id="29ec4-119">For å kunne fullføre trinnene i dette eksemplet må du først fullføre trinnene i eksemplet i emnet [Spore genererte rapportresultater og sammenligne dem med grunnlinjeverdier](er-trace-reports-compare-baseline.md) frem til delen «Legge til en ny grunnlinje for et utformet ER-format».</span><span class="sxs-lookup"><span data-stu-id="29ec4-119">To complete the steps in this example, you must first complete the steps in the example in the [Trace generated report results and compare them with baseline values](er-trace-reports-compare-baseline.md) topic, up through the "Add a new baseline for a designed ER format" section.</span></span>
+
+### <a name="review-added-baseline"></a><span data-ttu-id="29ec4-120">Se gjennom tilføyd grunnlinje</span><span class="sxs-lookup"><span data-stu-id="29ec4-120">Review added baseline</span></span>
+
+1. <span data-ttu-id="29ec4-121">Gå til **Organisasjonsstyring** \> **Elektronisk rapportering** \> **Konfigurasjoner**.</span><span class="sxs-lookup"><span data-stu-id="29ec4-121">Go to **Organization administration** \> **Electronic reporting** \> **Configurations**.</span></span>
+2. <span data-ttu-id="29ec4-122">Velg **Grunnlinjer**.</span><span class="sxs-lookup"><span data-stu-id="29ec4-122">Select **Baselines**.</span></span>
+
+    > [!NOTE]
+    > <span data-ttu-id="29ec4-123">**Grunnlinjer**-knappen i handlingsruten er bare tilgjengelig når ER-brukerparameteren **Kjør i feilsøkingsmodus** er aktivert for det gjeldende firmaet.</span><span class="sxs-lookup"><span data-stu-id="29ec4-123">The **Baselines** button on the Action Pane is available only when the **Run in debug mode** ER user parameter is turned on for the current company.</span></span>
+
+<span data-ttu-id="29ec4-124">Grunnlinjen er lagt til for det valgte formatet **Format for å lære ER-grunnlinjer**, men grunnlinjereglene er ennå ikke lagt til for denne grunnlinjen.</span><span class="sxs-lookup"><span data-stu-id="29ec4-124">The baseline has been added for the selected **Format to learn ER baselines** format, but the baseline rules haven't yet been added for this baseline.</span></span>
+
+<span data-ttu-id="29ec4-125">![Siden Grunnlinjer for elektronisk rapporteringsformat](media/GER-BaselineSample-AddBaseline2.PNG "Skjermbilde av siden Grunnlinjer for elektronisk rapporteringsformat")</span><span class="sxs-lookup"><span data-stu-id="29ec4-125">![Electronic reporting format baselines page](media/GER-BaselineSample-AddBaseline2.PNG "Screenshot of the Electronic reporting format baselines page")</span></span>
+
+### <a name="make-a-new-baseline-rule"></a><span data-ttu-id="29ec4-126">Lage en ny grunnlinjeregel</span><span class="sxs-lookup"><span data-stu-id="29ec4-126">Make a new baseline rule</span></span>
+
+1. <span data-ttu-id="29ec4-127">Gå til **Organisasjonsstyring** \> **Elektronisk rapportering** \> **Konfigurasjoner**.</span><span class="sxs-lookup"><span data-stu-id="29ec4-127">Go to **Organization administration** \> **Electronic reporting** \> **Configurations**.</span></span>
+2. <span data-ttu-id="29ec4-128">Utvid **Modell for å lære ER-grunnlinjer** i treet.</span><span class="sxs-lookup"><span data-stu-id="29ec4-128">In the tree, expand **Model to learn ER baselines**.</span></span>
+3. <span data-ttu-id="29ec4-129">Velg **Modell for å lære ER-grunnlinjer\\Format for å lære ER-grunnlinjer** i treet.</span><span class="sxs-lookup"><span data-stu-id="29ec4-129">In the tree, select **Model to learn ER baselines\\Format to learn ER baselines**.</span></span>
+4. <span data-ttu-id="29ec4-130">Velg **Kjør** i hurtigfanen **Versjoner**.</span><span class="sxs-lookup"><span data-stu-id="29ec4-130">On the **Versions** FastTab, select **Run**.</span></span>
+5. <span data-ttu-id="29ec4-131">Angi **1** i **Angi ID**-feltet.</span><span class="sxs-lookup"><span data-stu-id="29ec4-131">In the **Enter Id** field, enter **1**.</span></span>
+6. <span data-ttu-id="29ec4-132">Sett alternativet **Lag grunnlinjefiler** til **Ja**.</span><span class="sxs-lookup"><span data-stu-id="29ec4-132">Set the **Make baseline files** option to **Yes**.</span></span>
+7. <span data-ttu-id="29ec4-133">Velg **OK**.</span><span class="sxs-lookup"><span data-stu-id="29ec4-133">Select **OK**.</span></span>
+
+    <span data-ttu-id="29ec4-134">![Dialogboksen Parametere for elektronisk rapport](media/GER-BaselineSample-FormatRunToMakeBaselineFile3.PNG "Skjermbilde av dialogboksen Parametere for elektronisk rapport")</span><span class="sxs-lookup"><span data-stu-id="29ec4-134">![Electronic report parameters dialog box](media/GER-BaselineSample-FormatRunToMakeBaselineFile3.PNG "Screenshot of the Electronic report parameters dialog box")</span></span>
+
+8. <span data-ttu-id="29ec4-135">Velg **Grunnlinjer**.</span><span class="sxs-lookup"><span data-stu-id="29ec4-135">Select **Baselines**.</span></span>
+
+    <span data-ttu-id="29ec4-136">![Siden Grunnlinjer for elektronisk rapporteringsformat](media/GER-BaselineSample-ReviewAddedBaselineLine.PNG "Skjermbilde av siden Grunnlinjer for elektronisk rapporteringsformat")</span><span class="sxs-lookup"><span data-stu-id="29ec4-136">![Electronic reporting format baselines page](media/GER-BaselineSample-ReviewAddedBaselineLine.PNG "Screenshot of the Electronic reporting format baselines page")</span></span>
+
+    <span data-ttu-id="29ec4-137">Den genererte utgående filen knyttes automatisk til grunnlinjen for det utførte ER-formatet.</span><span class="sxs-lookup"><span data-stu-id="29ec4-137">The generated outbound file has been automatically attached to the baseline of the executed ER format.</span></span> <span data-ttu-id="29ec4-138">Grunnlinjeregelen har blitt lagt til denne grunnlinjen automatisk og inneholder også referansen til den vedlagte filen.</span><span class="sxs-lookup"><span data-stu-id="29ec4-138">The baseline rule has been automatically added to this baseline and also contains the reference to the attached file.</span></span>
+
+9. <span data-ttu-id="29ec4-139">Angi **Grunnlinje 1** i **Navn**-feltet.</span><span class="sxs-lookup"><span data-stu-id="29ec4-139">In the **Name** field, enter **Baseline 1**.</span></span>
+10. <span data-ttu-id="29ec4-140">I feltet **Filnavnmaske** angir du **.xml**.</span><span class="sxs-lookup"><span data-stu-id="29ec4-140">In the **File name mask** field, enter **.xml**.</span></span>
+11. <span data-ttu-id="29ec4-141">Velg **Lagre**.</span><span class="sxs-lookup"><span data-stu-id="29ec4-141">Select **Save**.</span></span>
+
+### <a name="run-the-format"></a><span data-ttu-id="29ec4-142">Kjøre formatet</span><span class="sxs-lookup"><span data-stu-id="29ec4-142">Run the format</span></span>
+
+<span data-ttu-id="29ec4-143">Du er nå klar til å fullføre resten av trinnene i eksemplet i emnet [Spore genererte rapportresultater og sammenligne dem med grunnlinjeverdier](er-trace-reports-compare-baseline.md) ved å starte fra delen «Kjøre det utformede ER-formatet og se gjennom loggen for å analysere resultatene».</span><span class="sxs-lookup"><span data-stu-id="29ec4-143">You're now ready to complete the remaining steps in the example in the [Trace generated report results and compare them with baseline values](er-trace-reports-compare-baseline.md) topic, starting from the "Run the designed ER format and review the log to analyze the results" section.</span></span>
+
+> [!NOTE]
+> <span data-ttu-id="29ec4-144">Når du sletter den automatisk tilføyde grunnlinjeregelen i hurtigfanen **Grunnlinjer**, blir ikke vedlegget som det refereres til, slettet automatisk.</span><span class="sxs-lookup"><span data-stu-id="29ec4-144">When you delete the automatically added baseline rule on the **Baselines** FastTab, the referenced attachment isn't automatically deleted.</span></span>
+
+## <a name="configure-the-baseline-so-that-it-ignores-constantly-changing-parts-of-the-er-output"></a><span data-ttu-id="29ec4-145">Konfigurere grunnlinjen slik at den ignorerer deler av ER-utdataene som er i stadig endring</span><span class="sxs-lookup"><span data-stu-id="29ec4-145">Configure the baseline so that it ignores constantly changing parts of the ER output</span></span>
+
+<span data-ttu-id="29ec4-146">Når et ER-format er utformet slik at det inneholder informasjon som endres når formatet kjøres, må formatet bruke ER-grunnlinjefunksjonen til å sammenligne de genererte resultatene med grunnlinjeverdier.</span><span class="sxs-lookup"><span data-stu-id="29ec4-146">When an ER format has been designed to contain information that is changed when the format is run, the format must be required to use the ER baseline feature to compare the generated results with baseline values.</span></span> <span data-ttu-id="29ec4-147">Informasjonen kan for eksempel være behandlingsdatoen og -klokkeslettet eller den unike identifikatoren til et generert dokument i ulike formater (globalt unik identifikator \[GUID\] og så videre).</span><span class="sxs-lookup"><span data-stu-id="29ec4-147">For example, the information might be the processing date and time or the unique identifier of a generated document in different formats (globally unique identifier \[GUID\], and so on).</span></span> <span data-ttu-id="29ec4-148">De nye ER-funksjonene gjør at du kan konfigurere grunnlinjeregelen slik at den ignorerer elementer som kan endres, i et ER-format når formatet kjøres for å sammenligne grunnlinjeverdier med resultatene av formatets utførelse.</span><span class="sxs-lookup"><span data-stu-id="29ec4-148">The new ER capabilities let you configure the baseline rule so that it ignores changeable elements of an ER format when the format is run with the purpose of comparing baseline values with the results of the format's execution.</span></span> <span data-ttu-id="29ec4-149">Hvis du vil vite mer om denne funksjonen, kan du fullføre eksemplet nedenfor.</span><span class="sxs-lookup"><span data-stu-id="29ec4-149">To learn more about this feature, complete the following example.</span></span>
+
+## <a name="example-configure-the-baseline-so-that-it-ignores-constantly-changing-parts-of-the-er-output"></a><span data-ttu-id="29ec4-150">Eksempel: Konfigurere grunnlinjen slik at den ignorerer deler av ER-utdataene som er i stadig endring</span><span class="sxs-lookup"><span data-stu-id="29ec4-150">Example: Configure the baseline so that it ignores constantly changing parts of the ER output</span></span>
+
+<span data-ttu-id="29ec4-151">For å kunne fullføre trinnene i dette eksemplet må du først fullføre trinnene i eksemplet i emnet [Spore genererte rapportresultater og sammenligne dem med grunnlinjeverdier](er-trace-reports-compare-baseline.md).</span><span class="sxs-lookup"><span data-stu-id="29ec4-151">To complete the steps in this example, you must first complete the steps in the example in the [Trace generated report results and compare them with baseline values](er-trace-reports-compare-baseline.md) topic.</span></span>
+
+### <a name="modify-a-configured-er-format"></a><span data-ttu-id="29ec4-152">Endre et konfigurert ER-format</span><span class="sxs-lookup"><span data-stu-id="29ec4-152">Modify a configured ER format</span></span>
+
+1. <span data-ttu-id="29ec4-153">Gå til **Organisasjonsstyring** \> **Elektronisk rapportering** \> **Konfigurasjoner**.</span><span class="sxs-lookup"><span data-stu-id="29ec4-153">Go to **Organization administration** \> **Electronic reporting** \> **Configurations**.</span></span>
+2. <span data-ttu-id="29ec4-154">Utvid **Modell for å lære ER-grunnlinjer** i treet.</span><span class="sxs-lookup"><span data-stu-id="29ec4-154">In the tree, expand **Model to learn ER baselines**.</span></span>
+3. <span data-ttu-id="29ec4-155">Velg **Modell for å lære ER-grunnlinjer\\Format for å lære ER-grunnlinjer** i treet.</span><span class="sxs-lookup"><span data-stu-id="29ec4-155">In the tree, select **Model to learn ER baselines\\Format to learn ER baselines**.</span></span>
+4. <span data-ttu-id="29ec4-156">Velg **Utforming**.</span><span class="sxs-lookup"><span data-stu-id="29ec4-156">Select **Designer**.</span></span>
+5. <span data-ttu-id="29ec4-157">Velg **Utdata\\Dokument** i treet.</span><span class="sxs-lookup"><span data-stu-id="29ec4-157">In the tree, select **Output\\Document**.</span></span>
+6. <span data-ttu-id="29ec4-158">Velg **Legg til**.</span><span class="sxs-lookup"><span data-stu-id="29ec4-158">Select **Add**.</span></span>
+7. <span data-ttu-id="29ec4-159">Velg **XML\\Attributt** i treet i rullegardinboksen.</span><span class="sxs-lookup"><span data-stu-id="29ec4-159">In the drop-down dialog box, in the tree, select **XML\\Attribute**.</span></span>
+8. <span data-ttu-id="29ec4-160">I **Navn**-feltet angir du **ProcessingDateTime**.</span><span class="sxs-lookup"><span data-stu-id="29ec4-160">In the **Name** field, enter **ProcessingDateTime**.</span></span>
+9. <span data-ttu-id="29ec4-161">Velg **OK**.</span><span class="sxs-lookup"><span data-stu-id="29ec4-161">Select **OK**.</span></span>
+10. <span data-ttu-id="29ec4-162">Velg **Utdata\\Dokument\\ProcessingDateTime** i treet i **Tilordning**-fanen.</span><span class="sxs-lookup"><span data-stu-id="29ec4-162">On the **Mapping** tab, in the tree, select **Output\\Document\\ProcessingDateTime**.</span></span>
+11. <span data-ttu-id="29ec4-163">Velg **Rediger formel**.</span><span class="sxs-lookup"><span data-stu-id="29ec4-163">Select **Edit formula**.</span></span>
+12. <span data-ttu-id="29ec4-164">I **Formel**-feltet angir du følgende uttrykk: **DATETIMEFORMAT(NOW(), "O")**</span><span class="sxs-lookup"><span data-stu-id="29ec4-164">In the **Formula** field, enter the following expression: **DATETIMEFORMAT(NOW(), "O")**</span></span>
+13. <span data-ttu-id="29ec4-165">Velg **Lagre**, og velg deretter **Test**.</span><span class="sxs-lookup"><span data-stu-id="29ec4-165">Select **Save**, and then select **Test**.</span></span>
+14. <span data-ttu-id="29ec4-166">Velg **Test** på nytt for å teste det konfigurerte uttrykket på nytt.</span><span class="sxs-lookup"><span data-stu-id="29ec4-166">Select **Test** again to retest the configured expression.</span></span>
+
+    <span data-ttu-id="29ec4-167">![Formeldesigner-siden](media/GER-BaselineSample-DefineProcessingDTExpression.PNG "Skjermbilde av Formeldesigner-siden")</span><span class="sxs-lookup"><span data-stu-id="29ec4-167">![Formula designer page](media/GER-BaselineSample-DefineProcessingDTExpression.PNG "Screenshot of the Formula designer page")</span></span>
+
+    > [!NOTE]
+    > <span data-ttu-id="29ec4-168">Fanen **Testresultat** viser at det konfigurerte uttrykket returnerer en ny verdi for dato og klokkeslett hver gang det kalles.</span><span class="sxs-lookup"><span data-stu-id="29ec4-168">The **Test result** tab shows that the configured expression returns a different date and time value whenever it's called.</span></span>
+
+15. <span data-ttu-id="29ec4-169">Lukk **Formeldesigner**-siden, og velg deretter **Lagre**.</span><span class="sxs-lookup"><span data-stu-id="29ec4-169">Close the **Formula designer** page, and then select **Save**.</span></span>
+
+    <span data-ttu-id="29ec4-170">![Formatutforming-siden](media/GER-BaselineSample-FormatMappingDesign2.PNG "Skjermbilde av Formatutforming-siden")</span><span class="sxs-lookup"><span data-stu-id="29ec4-170">![Format designer page](media/GER-BaselineSample-FormatMappingDesign2.PNG "Screenshot of the Format designer page")</span></span>
+
+16. <span data-ttu-id="29ec4-171">Lukk **Formatutforming**-siden.</span><span class="sxs-lookup"><span data-stu-id="29ec4-171">Close the **Format designer** page.</span></span>
+
+### <a name="remove-an-existing-baseline-rule"></a><span data-ttu-id="29ec4-172">Fjerne en eksisterende grunnlinjeregel</span><span class="sxs-lookup"><span data-stu-id="29ec4-172">Remove an existing baseline rule</span></span>
+
+1. <span data-ttu-id="29ec4-173">Gå til **Organisasjonsstyring** \> **Elektronisk rapportering** \> **Konfigurasjoner**.</span><span class="sxs-lookup"><span data-stu-id="29ec4-173">Go to **Organization administration** \> **Electronic reporting** \> **Configurations**.</span></span>
+2. <span data-ttu-id="29ec4-174">Velg **Grunnlinjer**.</span><span class="sxs-lookup"><span data-stu-id="29ec4-174">Select **Baselines**.</span></span>
+3. <span data-ttu-id="29ec4-175">I listen over grunnlinjer velger du grunnlinjen som konfigureres for formatet **Format for å lære ER-grunnlinjer**.</span><span class="sxs-lookup"><span data-stu-id="29ec4-175">In the list of baselines, select the baseline that is configured for the **Format to learn ER baselines** format.</span></span>
+4. <span data-ttu-id="29ec4-176">I hurtigfanen **Grunnlinjer** velger du **Slett** for å fjerne grunnlinjeregelen du konfigurerte tidligere.</span><span class="sxs-lookup"><span data-stu-id="29ec4-176">On the **Baselines** FastTab, select **Delete** to remove the baseline rule that you configured earlier.</span></span>
+
+<span data-ttu-id="29ec4-177">![Siden Grunnlinjer for elektronisk rapporteringsformat](media/GER-BaselineSample-AddBaseline3.PNG "Skjermbilde av siden Grunnlinjer for elektronisk rapporteringsformat")</span><span class="sxs-lookup"><span data-stu-id="29ec4-177">![Electronic reporting format baselines page](media/GER-BaselineSample-AddBaseline3.PNG "Screenshot of the Electronic reporting format baselines page")</span></span>
+
+### <a name="define-replacements-for-bindings-of-designed-er-format"></a><span data-ttu-id="29ec4-178">Definere erstatninger for bindinger for utformet ER-format</span><span class="sxs-lookup"><span data-stu-id="29ec4-178">Define replacements for bindings of designed ER format</span></span>
+
+1. <span data-ttu-id="29ec4-179">Velg **Velg komponenter** i hurtigfanen **Erstatninger** på **Konfigurasjoner**-siden.</span><span class="sxs-lookup"><span data-stu-id="29ec4-179">On the **Configurations** page, on the **Replacements** FastTab, select **Select components**.</span></span>
+2. <span data-ttu-id="29ec4-180">Utvid **Utdata** i treet for formatkomponenter, utvid **Utdata\\Dokument**, og merk deretter av for **Utdata\\Dokument\\ProcessingDateTime**.</span><span class="sxs-lookup"><span data-stu-id="29ec4-180">In the format components tree, expand **Output**, expand **Output\\Document**, and then select the check box for **Output\\Document\\ProcessingDateTime**.</span></span>
+
+    <span data-ttu-id="29ec4-181">![Dialogboksen Velg komponenter](media/GER-BaselineSample-SelectComponentForBindingReplacement.PNG "Skjermbilde av dialogboksen Velg komponenter")</span><span class="sxs-lookup"><span data-stu-id="29ec4-181">![Select Components dialog box](media/GER-BaselineSample-SelectComponentForBindingReplacement.PNG "Screenshot of the Select Components dialog box")</span></span>
+
+3. <span data-ttu-id="29ec4-182">Velg **OK**.</span><span class="sxs-lookup"><span data-stu-id="29ec4-182">Select **OK**.</span></span>
+
+<span data-ttu-id="29ec4-183">![Siden Grunnlinjer for elektronisk rapporteringsformat](media/GER-BaselineSample-AddBaseline4.PNG "Skjermbilde av siden Grunnlinjer for elektronisk rapporteringsformat")</span><span class="sxs-lookup"><span data-stu-id="29ec4-183">![Electronic reporting format baselines page](media/GER-BaselineSample-AddBaseline4.PNG "Screenshot of the Electronic reporting format baselines page")</span></span>
+
+<span data-ttu-id="29ec4-184">Den valgte ER-formatkomponenten er lagt til i listen over komponenter i hurtigfanen **Erstatninger**.</span><span class="sxs-lookup"><span data-stu-id="29ec4-184">The selected ER format component has been added to the list of components on the **Replacements** FastTab.</span></span> <span data-ttu-id="29ec4-185">Når basis-ER-formatet kjører i feilsøkingsmodus, erstattes formatets binding for hver komponent med bindingen som vises i **Binding**-kolonnen.</span><span class="sxs-lookup"><span data-stu-id="29ec4-185">When the base ER format is run in debug mode, the format's binding for each component will be replaced by the binding that is shown in the **Binding** column.</span></span> <span data-ttu-id="29ec4-186">Hvis du vil endre standardbindingen for en komponent som er oppført i hurtigfanen **Erstatninger**, velger du **Rediger**.</span><span class="sxs-lookup"><span data-stu-id="29ec4-186">To change the default binding for a component that is listed on the **Replacements** FastTab, select **Edit**.</span></span>
+
+### <a name="make-a-new-baseline-rule"></a><span data-ttu-id="29ec4-187">Lage en ny grunnlinjeregel</span><span class="sxs-lookup"><span data-stu-id="29ec4-187">Make a new baseline rule</span></span>
+
+<span data-ttu-id="29ec4-188">Følg trinnene i delen «Eksempel: Automatisere innstillingen for grunnlinjeregler» tidligere i dette emnet.</span><span class="sxs-lookup"><span data-stu-id="29ec4-188">Follow the steps in the "Example: Automate the setting of baseline rules" section earlier in this topic.</span></span> <span data-ttu-id="29ec4-189">En varsling advarer deg om at den utgående filen er generert ved hjelp av grunnlinjeinnstillinger, og at det har oppstått en tvungen erstatning av formatbindingene.</span><span class="sxs-lookup"><span data-stu-id="29ec4-189">A notification warns you that the outbound file has been generated by using baseline settings, and that a forced replacement of the format bindings has occurred.</span></span>
+
+<span data-ttu-id="29ec4-190">![Varsling på Konfigurasjoner-siden](media/GER-BaselineSample-FormatRunToMakeBaselineFile4.PNG "Skjermbilde av varslingen på Konfigurasjoner-siden")</span><span class="sxs-lookup"><span data-stu-id="29ec4-190">![Notification on the Configurations page](media/GER-BaselineSample-FormatRunToMakeBaselineFile4.PNG "Screenshot of the notification on the Configurations page")</span></span>
+
+### <a name="suppress-warnings-about-the-replacement-of-format-bindings"></a><span data-ttu-id="29ec4-191">Utelate advarsler om erstatningen av formatbindinger</span><span class="sxs-lookup"><span data-stu-id="29ec4-191">Suppress warnings about the replacement of format bindings</span></span>
+
+<span data-ttu-id="29ec4-192">Hvis du angir bestemte ER-parametere, kan du utelate varslinger med advarsel om erstatning av formatbindinger.</span><span class="sxs-lookup"><span data-stu-id="29ec4-192">By setting specific ER parameters, you can suppress notifications that warn about the replacement of format bindings.</span></span> <span data-ttu-id="29ec4-193">Denne utelatelsen kan være nyttig når formatbindinger erstattes i en uovervåket modus ved hjelp av Regression Suite Automation Tool.</span><span class="sxs-lookup"><span data-stu-id="29ec4-193">This suppression can be useful when format bindings are replaced in an unattended mode by using the Regression Suite Automation Tool.</span></span> <span data-ttu-id="29ec4-194">I dette tilfellet kan advarselen regnes som en feil i testtilfellet som kjører.</span><span class="sxs-lookup"><span data-stu-id="29ec4-194">In this case, the warning can be considered a failure of the test case that is running.</span></span>
+
+1. <span data-ttu-id="29ec4-195">Velg **Brukerparametere** i **Konfigurasjoner**-fanen i handlingsruten på **Konfigurasjoner**-siden.</span><span class="sxs-lookup"><span data-stu-id="29ec4-195">On the **Configurations** page, on the Action Pane, on the **Configurations** tab, select **User parameters**.</span></span>
+2. <span data-ttu-id="29ec4-196">Sett alternativet **Utelat grunnlinjeadvarsler** til **Ja**, og velg deretter **OK**.</span><span class="sxs-lookup"><span data-stu-id="29ec4-196">Set the **Suppress baseline warnings** option to **Yes**, and then select **OK**.</span></span>
+
+<span data-ttu-id="29ec4-197">![Dialogboksen Brukerparametere](media/GER-BaselineSample-ERUserParameters1.png "Skjermbilde av dialogboksen Brukerparametere")</span><span class="sxs-lookup"><span data-stu-id="29ec4-197">![User parameters dialog box](media/GER-BaselineSample-ERUserParameters1.png "Screenshot of the User parameters dialog box")</span></span>
+
+### <a name="review-the-generated-baseline-file"></a><span data-ttu-id="29ec4-198">Se gjennom den genererte grunnlinjefilen</span><span class="sxs-lookup"><span data-stu-id="29ec4-198">Review the generated baseline file</span></span>
+
+1. <span data-ttu-id="29ec4-199">Gå til **Organisasjonsstyring** \> **Elektronisk rapportering** \> **Konfigurasjoner**.</span><span class="sxs-lookup"><span data-stu-id="29ec4-199">Go to **Organization administration** \> **Electronic reporting** \> **Configurations**.</span></span>
+2. <span data-ttu-id="29ec4-200">Velg **Grunnlinjer**.</span><span class="sxs-lookup"><span data-stu-id="29ec4-200">Select **Baselines**.</span></span>
+3. <span data-ttu-id="29ec4-201">Velg **Vedlegg**.</span><span class="sxs-lookup"><span data-stu-id="29ec4-201">Select **Attachments**.</span></span>
+
+    <span data-ttu-id="29ec4-202">![Vedlegg-siden](media/GER-BaselineSample-AttachedBaselineFile.PNG "Skjermbilde av Vedlegg-siden")</span><span class="sxs-lookup"><span data-stu-id="29ec4-202">![Attachments page](media/GER-BaselineSample-AttachedBaselineFile.PNG "Screenshot of the Attachments page")</span></span>
+
+    > [!NOTE]
+    > <span data-ttu-id="29ec4-203">Den genererte filen inneholder teksten for behandlingsdato og -klokkeslett (**"#"**) fra bindingen som ble konfigurert i den tilføyde grunnlinjeregelen, ikke fra formatets binding.</span><span class="sxs-lookup"><span data-stu-id="29ec4-203">The generated file contains the processing date and time text (**"#"**) from the binding that was configured in the added baseline rule, not from the format's binding.</span></span>
+
+4. <span data-ttu-id="29ec4-204">Lukk **Vedlegg**-siden.</span><span class="sxs-lookup"><span data-stu-id="29ec4-204">Close the **Attachments** page.</span></span>
+
+### <a name="run-the-designed-er-format-and-review-the-log-to-analyze-the-results"></a><span data-ttu-id="29ec4-205">Kjøre det utformede ER-formatet og se gjennom loggen for å analysere resultatene</span><span class="sxs-lookup"><span data-stu-id="29ec4-205">Run the designed ER format and review the log to analyze the results</span></span>
+
+1. <span data-ttu-id="29ec4-206">Gå til **Organisasjonsstyring** \> **Elektronisk rapportering** \> **Konfigurasjoner**.</span><span class="sxs-lookup"><span data-stu-id="29ec4-206">Go to **Organization administration** \> **Electronic reporting** \> **Configurations**.</span></span>
+2. <span data-ttu-id="29ec4-207">Utvid **Modell for å lære ER-grunnlinjer** i treet.</span><span class="sxs-lookup"><span data-stu-id="29ec4-207">In the tree, expand **Model to learn ER baselines**.</span></span>
+3. <span data-ttu-id="29ec4-208">Velg **Modell for å lære ER-grunnlinjer\\Format for å lære ER-grunnlinjer** i treet.</span><span class="sxs-lookup"><span data-stu-id="29ec4-208">In the tree, select **Model to learn ER baselines\\Format to learn ER baselines**.</span></span>
+4. <span data-ttu-id="29ec4-209">Velg **Kjør** i hurtigfanen **Versjoner**.</span><span class="sxs-lookup"><span data-stu-id="29ec4-209">On the **Versions** FastTab select **Run**.</span></span>
+5. <span data-ttu-id="29ec4-210">Skriv inn **1** i **Angi ID**-feltet.</span><span class="sxs-lookup"><span data-stu-id="29ec4-210">In the **Enter Id** field, type **1**.</span></span>
+6. <span data-ttu-id="29ec4-211">Velg **OK**.</span><span class="sxs-lookup"><span data-stu-id="29ec4-211">Select **OK**.</span></span>
+7. <span data-ttu-id="29ec4-212">Gå til **Organisasjonsstyring** \> **Elektronisk rapportering** \> **Feilsøkingslogger for konfigurasjon**.</span><span class="sxs-lookup"><span data-stu-id="29ec4-212">Go to **Organization administration** \> **Electronic reporting** \> **Configuration debug logs**.</span></span>
+
+<span data-ttu-id="29ec4-213">Utførelsesloggen inneholder informasjon om resultatene av sammenligningen av den genererte filen med den konfigurerte grunnlinjen.</span><span class="sxs-lookup"><span data-stu-id="29ec4-213">The execution log contains information about the results of the comparison of the generated file with the configured baseline.</span></span> <span data-ttu-id="29ec4-214">Loggen angir at den genererte filen og grunnlinjen er like, selv om det utførte formatet inneholder bindingen for å angi en verdi for dato og klokkeslett som er i stadig endring, i den utgående filen.</span><span class="sxs-lookup"><span data-stu-id="29ec4-214">The log indicates that the generated file and the baseline are equal, even though the executed format contains the binding to enter a constantly changing date and time value in the outbound file.</span></span>
+
+> [!NOTE]
+> <span data-ttu-id="29ec4-215">Selv om den utgående filen er generert ved hjelp av grunnlinjeinnstillinger som fremtvinger erstatningen av formatets bindinger, får du ingen advarsler om erstatningen.</span><span class="sxs-lookup"><span data-stu-id="29ec4-215">Although the outbound file has been generated by using baseline settings that force the replacement of the format's bindings, you don't receive any warnings about the replacement.</span></span>
+
+## <a name="exchange-baseline-settings-between-environments"></a><span data-ttu-id="29ec4-216">Utveksle grunnlinjeinnstillinger mellom miljøer</span><span class="sxs-lookup"><span data-stu-id="29ec4-216">Exchange baseline settings between environments</span></span>
+
+### <a name="export-baseline-settings"></a><span data-ttu-id="29ec4-217">Eksportere grunnlinjeinnstillinger</span><span class="sxs-lookup"><span data-stu-id="29ec4-217">Export baseline settings</span></span>
+
+<span data-ttu-id="29ec4-218">De nye ER-funksjonene gjør at du kan eksportere grunnlinjeinnstillinger for det valgte ER-formatet fra det gjeldende Finance and Operations-miljøet og lagre dem som XML-filer.</span><span class="sxs-lookup"><span data-stu-id="29ec4-218">The new ER capabilities let you export baseline settings for the selected ER format from the current Finance and Operations environment and store them as XML files.</span></span> 
+
+<span data-ttu-id="29ec4-219">Hvis du vil eksportere grunnlinjeinnstillinger, velger du **Eksporter** på siden **Grunnlinjer for elektronisk rapporteringsformat**.</span><span class="sxs-lookup"><span data-stu-id="29ec4-219">To export baseline settings, on the **Electronic reporting format baselines** page, select **Export**.</span></span>
+
+### <a name="import-baseline-settings"></a><span data-ttu-id="29ec4-220">Importer grunnlinjeinnstillinger</span><span class="sxs-lookup"><span data-stu-id="29ec4-220">Import baseline settings</span></span>
+
+<span data-ttu-id="29ec4-221">Eksporterte grunnlinjeinnstillinger kan importeres til et annet Finance and Operations-miljø.</span><span class="sxs-lookup"><span data-stu-id="29ec4-221">Exported baseline settings can be imported into a different Finance and Operations environment.</span></span> <span data-ttu-id="29ec4-222">Miljøet må først importeres som et ER-format.</span><span class="sxs-lookup"><span data-stu-id="29ec4-222">The environment must first be imported as an ER format.</span></span> <span data-ttu-id="29ec4-223">Du kan deretter importere grunnlinjeinnstillingene.</span><span class="sxs-lookup"><span data-stu-id="29ec4-223">You can then import the baseline settings.</span></span>
+
+<span data-ttu-id="29ec4-224">Hvis du vil importere grunnlinjeinnstillinger fra en lokalt lagret XML-fil, velger du **Importer** på siden **Grunnlinjer for elektronisk rapporteringsformat**, og deretter velger du **Bla gjennom** for å velge XML-filen.</span><span class="sxs-lookup"><span data-stu-id="29ec4-224">To import baseline settings from a locally stored XML file, on the **Electronic reporting format baselines** page, select **Import**, and then select **Browse** to select the XML file.</span></span>
+
+<span data-ttu-id="29ec4-225">![Dialogboksen Importer grunnlinjeinnstillinger](media/GER-BaselineSample-ImportBaseline1.PNG "Skjermbilde av dialogboksen Importer grunnlinjeinnstillinger")</span><span class="sxs-lookup"><span data-stu-id="29ec4-225">![Import baseline settings dialog box](media/GER-BaselineSample-ImportBaseline1.PNG "Screenshot of the Import baseline settings dialog box")</span></span>
+
+<span data-ttu-id="29ec4-226">Hvis du vil importere grunnlinjeinnstillinger fra en XML-fil som er lagret på Microsoft SharePoint Server, basert på gjeldende innstillinger for dokumentstyring og den valgte dokumenttypen, velger du **Importer fra kilde** på siden **Grunnlinjer for elektronisk rapporteringsformat**.</span><span class="sxs-lookup"><span data-stu-id="29ec4-226">To import baseline settings from an XML file that is stored on the Microsoft SharePoint Server, based on the current Document management settings and the selected document type, on the **Electronic reporting format baselines** page, select **Import from source**.</span></span> <span data-ttu-id="29ec4-227">Velg deretter dokumenttypen og XML-filen.</span><span class="sxs-lookup"><span data-stu-id="29ec4-227">Then select the document type and the XML file.</span></span> <span data-ttu-id="29ec4-228">Dokumenttypen som kreves for å få tilgang til SharePoint-mappen, må konfigureres på forhånd.</span><span class="sxs-lookup"><span data-stu-id="29ec4-228">The required document type to access the SharePoint folder must be configured in advance.</span></span>
+
+<span data-ttu-id="29ec4-229">![Dialogboksen Importer fra kilde](media/GER-BaselineSample-ImportBaseline2.PNG "Skjermbilde av dialogboksen Importer fra kilde")</span><span class="sxs-lookup"><span data-stu-id="29ec4-229">![Import from source dialog box](media/GER-BaselineSample-ImportBaseline2.PNG "Screenshot of the Import from source dialog box")</span></span>
+
+> [!NOTE]
+> <span data-ttu-id="29ec4-230">Du kan bruke Oppgaveopptaker til å ta opp trinnene for å velge den nødvendige dokumenttypen og filnavnet i dialogboksen **Importer fra kilde**.</span><span class="sxs-lookup"><span data-stu-id="29ec4-230">You can use Task recorder to record the steps for selecting the required document type and the file name in the **Import from source** dialog box.</span></span> <span data-ttu-id="29ec4-231">På denne måten kan du beholde de nødvendige grunnlinjeinnstillingene på SharePoint Server og deretter automatisk importere dem ved å spille av et oppgaveopptak når du kjører automatiserte tester ved hjelp av Regression Suite Automation Tool.</span><span class="sxs-lookup"><span data-stu-id="29ec4-231">In this way, you can keep required baseline settings on SharePoint Server and then automatically import them by playing a task recording when you run automated tests by using the Regression Suite Automation Tool.</span></span>
+
+## <a name="additional-resources"></a><span data-ttu-id="29ec4-232">Tilleggsressurser</span><span class="sxs-lookup"><span data-stu-id="29ec4-232">Additional resources</span></span>
+
+- [<span data-ttu-id="29ec4-233">Spore genererte rapportresultater og sammenligne dem med basisverdier</span><span class="sxs-lookup"><span data-stu-id="29ec4-233">Trace generated report results and compare them with baseline values</span></span>](er-trace-reports-compare-baseline.md)
+- [<span data-ttu-id="29ec4-234">Oppgaveregistrering</span><span class="sxs-lookup"><span data-stu-id="29ec4-234">Task recorder</span></span>](../user-interface/task-recorder.md)
