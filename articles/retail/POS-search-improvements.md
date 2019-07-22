@@ -3,7 +3,7 @@ title: Produkt- og kundesøk på salgssted
 description: Dette emnet gir en oversikt over forbedringer som har blitt gjort for produkt- og kundesøkfunksjonalitet i Microsoft Dynamics 365 for Retail.
 author: ShalabhjainMSFT
 manager: AnnBe
-ms.date: 03/08/2019
+ms.date: 06/10/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: shajain
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Retail April 2017 update
-ms.openlocfilehash: a1593445af41cba30bdc35933302d0873e313585
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: b2f1d522a60721c746d03e477615265f9a8ba9a0
+ms.sourcegitcommit: 3d8c951898e05febc160515127c1bcc5de5882a1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1530782"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "1625648"
 ---
 # <a name="product-search-and-customer-search-in-the-point-of-sale-pos"></a>Produkt- og kundesøk på salgssted
 
@@ -40,7 +40,7 @@ Som standard gjøres produktsøk i butikkens sortiment. Denne typen søk er ogs�
 På siden **Endre katalog** kan ansatte enkelt søke en hvilken som helst butikk, eller de kan søke etter produkter på tvers av alle butikker.
 
 ![Endring av katalogen](./media/Changecatalog.png "Endring av katalogen")
- 
+
 Et lokalt produktsøk søker i følgende produktegenskaper:
 
 - Produktnummer
@@ -55,7 +55,7 @@ Et lokalt produktsøk søker i følgende produktegenskaper:
 Opplevelsen for lokale produktsøk er nå mer brukervennlig. Følgende forbedringer er gjort:
 
 - Rullegardinmenyer for produkt og kunde er lagt til i søkefeltet, slik at ansatte kan velge enten **Produkt** eller **Kunde** før de gjør søket. Som standard er **Produkt** valgt, som vist i følgende illustrasjon.
-- For søk med flere søkeord kan forhandlere konfigurere om søkeresultatene skal inneholde resultater som samsvarer med et *hvilket som helst* søkeord, eller bare resultater som samsvarer med *alle* søkeordene. Denne innstillingen er tilgjengelig i POS-funksjonalitetsprofilen, i en ny gruppe som heter **Produktsøk**. Standardinnstillingen er **Match et hvilket som helst søkeord**. Dette er også den anbefalte innstillingen. Når **Samsvar alle søkeord**-innstillingen brukes, returneres alle produkter som helt eller delvis samsvarer med ett eller flere søkeord. Disse resultatene sorteres automatisk i stigende rekkefølge for produkter som har de fleste nøkkelordtreffene (fullstendig eller delvis).
+- For søk med flere søkeord kan forhandlere konfigurere om søkeresultatene skal inneholde resultater som samsvarer med et *hvilket som helst* søkeord, eller bare resultater som samsvarer med *alle* søkeordene. Innstillingen for denne funksjonaliteten er tilgjengelig i POS-funksjonalitetsprofilen, i en ny gruppe kalt **Produktsøk**. Standardinnstillingen er **Match et hvilket som helst søkeord**. Dette er også den anbefalte innstillingen. Når **Samsvar alle søkeord**-innstillingen brukes, returneres alle produkter som helt eller delvis samsvarer med ett eller flere søkeord. Disse resultatene sorteres automatisk i stigende rekkefølge for produkter som har de fleste nøkkelordtreffene (fullstendig eller delvis).
 
     Innstillingen **Match alle søkeord** gir bare produkter som matcher alle søkeordene (helt eller delvis). Denne innstillingen er nyttig når produktnavnene er lange, og ansatte vil bare se begrensede produkter i søkeresultatene. Denne typen søk har imidlertid to begrensninger:
 
@@ -65,11 +65,20 @@ Opplevelsen for lokale produktsøk er nå mer brukervennlig. Følgende forbedrin
 - Forhandlere kan nå konfigurere produktsøk for å vise søkeforslag når brukere skriver inn produktnavn. En ny innstilling for denne funksjonaliteten er tilgjengelig i POS-funksjonalitetsprofilen, i en gruppe som heter **Produktsøk**. Innstillingen heter **Vis søkeforslag under skriving**. Denne funksjonaliteten kan hjelpe ansatte å raskt å finne produktet de søker etter, fordi de ikke trenger å skrive hele navnet manuelt.
 - Produktsøkalgoritmen søker nå også etter de søkevilkårene i **Søkenavn**-egenskapen for produktet.
 
-    ![Produktforslag](./media/Productsuggestions.png "Produktforslag")
+![Produktforslag](./media/Productsuggestions.png "Produktforslag")
 
 ## <a name="customer-search"></a>Kundesøk
 
-Kundesøk brukes til å finne kunder til ulike formål. For eksempel kan kasserere vise kundens ønskeliste eller kjøpshistorikk, eller knytte kunden til en transaksjon. Søkealgoritmen samsvarer søkeordene mot verdiene i de følgende kundeegenskapene: navn, e-post, telefon, fordelskortnummer, adresse og kontonummer. Blant disse er det navneegenskapen som gir mest fleksibilitet når det gjelder flere nøkkelordsøk, fordi algoritmen returnerer alle kunder som oppfyller et hvilket som helst av nøkkelordene det søkes etter, og kundene som samsvarer med de fleste nøkkelordene, vises øverst i resultatene. Denne virkemåte gjør det enklere for kasserere i situasjoner der de søker ved å skrive inn det fullstendige navnet, men der etter- og fornavn ble byttet under den innledende dataregistreringen. Av ytelsesårsaker beholder imidlertid alle de andre egenskapene rekkefølgen på søkeordene, så hvis søkeordene ikke stemmer med rekkefølgen som dataene er lagret i, vil ingen resultater returneres.
+Kundesøk brukes til å finne kunder til ulike formål. For eksempel kan kasserere vise kundens ønskeliste eller kjøpshistorikk, eller knytte kunden til en transaksjon. Søkealgoritmen samsvarer søkeordene mot verdiene i følgende kundeegenskaper:
+
+- Navn
+- E-postadresse
+- Telefonnummer
+- Fordelskortnummer
+- Adresse
+- Kontonummer
+
+Blant disse egenskapene gir navnet størst fleksibilitet når det gjelder søk med flere søkeord, fordi algoritmen returnerer alle kunder som oppfyller et hvilket som helst av søkeordene. Kundene som samsvarer med flest søkeord, vises øverst i resultatene. Denne virkemåten gjør det enklere for kasserere i situasjoner der de søker ved å skrive inn fullt navn, men der for- og etternavn ble ombyttet i den første dataregistreringen. Av hensyn til ytelsen beholder imidlertid alle de andre egenskapene rekkefølgen til søkeordene. Derfor returneres ingen resultater hvis rekkefølgen til søkeordene ikke samsvarer med rekkefølgen som dataene er lagret i.
 
 Som standard gjøres et kundesøk på kundeadresseboken som er knyttet til butikken. Denne typen søk er kjent som et *lokalt kundesøk*. Men ansatte kan også søke etter kunder globalt. Med andre ord kan de søke på tvers av butikkene i selskapet og på tvers av alle andre juridiske enheter. Denne typen søk er også kjent som et *eksternt kundesøk*.
 
@@ -86,7 +95,7 @@ I et eksternt kundesøk vises ikke kunde-ID for kunder fra de andre juridiske en
 
 Søk som er basert på telefonnummeret, er forenklet. Disse søkene ignorerer nå spesialtegn, for eksempel mellomrom, bindestreker og parenteser, som kan ha blitt lagt til da kunden ble opprettet. Kasserere trenger derfor ikke tenke på telefonnummerformatet når de søker. De kan også søke etter kunder ved å skrive inn et delvis telefonnummer. Hvis et telefonnummer inneholder spesialtegn, kan det også bli funnet ved å søke etter numrene som vises etter spesialtegnene. For eksempel, hvis en kundes telefonnummer ble oppgitt som **123-456-7890,** kan en kasserere søke etter kunden ved å skrive **123**, **456**, **7890** eller **1234567890**, eller ved å skrive inn de første tallene i telefonnummeret.
 
-Det vanlige kundesøket kan være tidkrevende fordi det søker i flere felt. I stedet kan kasserere nå søke i en enkelt egendefinert egenskap, for eksempel navn, e-postadresse eller telefonnummer. Egenskapene som kundesøkealgoritmen bruker, kalles *kundesøkekriterier*. Systemadministratoren kan lett konfigurere ett eller flere kriterier som snarveier som vises i POS. Ettersom søket er begrenset til ett kriterium, vises bare de relevante søkeresultatene, og ytelsen er mye bedre ut enn ytelsen til et standard kundesøk. Illustrasjonen nedenfor viser kundesøksnarveiene i POS.
+Det vanlige kundesøket kan være tidkrevende fordi det søker i flere felt. I stedet kan kasserere nå søke i en enkelt kundeegenskap, for eksempel navn, e-postadresse eller telefonnummer. Egenskapene som kundesøkealgoritmen bruker, kalles *kundesøkekriterier*. Systemadministratoren kan lett konfigurere ett eller flere kriterier som snarveier som vises i POS. Ettersom søket er begrenset til ett kriterium, vises bare de relevante søkeresultatene, og ytelsen er mye bedre ut enn ytelsen til et standard kundesøk. Illustrasjonen nedenfor viser kundesøksnarveiene i POS.
 
 ![Kundesøksnarveier](./media/SearchShortcutsPOS.png "Kundesøksnarveier")
 
@@ -101,3 +110,7 @@ Når du skal angi søkekriterier som snarveier, må administratoren åpne **Deta
 
 > [!NOTE]
 > En egendefinert egenskap som legges til opplistingen, påvirker ikke standard kundesøkalgoritme. Med andre ord kundesøkalgoritmen søker ikke i den egendefinerte egenskapen. Brukere kan bare bruke en egendefinert egenskap for søk hvis den egendefinerte egenskapen legges til som snarvei, eller hvis standard søkealgoritme overstyres.
+
+I en kommende utgave av Microsoft Dynamics 365 for Retail kan forhandlere sette standard kundesøkemodus i Salgssted til **Søk i alle butikker**. Denne konfigurasjonen kan være nyttig i scenarier der kunder som ble opprettet utenfor Salgssted, umiddelbart må søkes etter (for eksempel til og med før datadistribusjonsjobben kjøres). Det nye alternativet **Standard kundesøkemodus** blir tilgjengelig i funksjonalitetsprofilen for salgssted. Sett den til **På** for å angi standard søkemodus til **Søk i alle butikker**. Hvert forsøk på kundesøk foretar deretter et sanntidskall til hovedkvarteret.
+
+For å unngå uventede ytelsesproblemer er denne konfigurasjonen skjult bak et testversjoneringsflagg kalt **CUSTOMERSEARCH_ENABLE_DEFAULTSEARCH_FLIGHTING**. For å vise innstillingen **Standard kundesøkemodus** i brukergrensesnittet må forhandleren opprette en støtteforespørsel for dets testemiljø for brukeraksept (UAT) og produksjonsmiljø. Etter at forespørselen er mottatt, samarbeider teknikerteamet med forhandleren for å sikre at forhandleren foretar testing i ikke-produksjonsmiljøene for å vurdere ytelsen og implementere eventuelle optimaliseringer som trengs.

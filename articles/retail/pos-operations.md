@@ -3,7 +3,7 @@ title: Tilkoblede og frakoblede salgsstedsoperasjoner (POS)
 description: Dette emnet inneholder informasjon om salgsstedsoperasjoner i Microsoft Dynamics 365 for Retail. Den angir hvor i programmet operasjonene kan startes, og om de er tilgjengelige i frakoblet modus.
 author: jblucher
 manager: AnnBe
-ms.date: 10/12/2017
+ms.date: 05/21/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2017-09-27
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 44a2ec48f868c803c80c8df8eb809bc2254e63da
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: e21f8677144c7293409e409082e8125c05f3a8fe
+ms.sourcegitcommit: 3d8c951898e05febc160515127c1bcc5de5882a1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1505102"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "1625671"
 ---
 # <a name="online-and-offline-point-of-sale-pos-operations"></a>Tilkoblede og frakoblede salgsstedsoperasjoner (POS)
 
@@ -159,9 +159,9 @@ Følgende kolonner angir hvor operasjonene kan startes:
 | 114 | Returtransaksjon | Tilbakekall en tidligere transaksjon etter kvitteringsnummer for å returnere noen av eller alle produktene. | Ja | Ja | Ja | Ja§ | Antall |
 | 1211 | Deponer til safe | Utfør en deponering til safe, og flytt penger fra kassen til safen. | Ja | Ja | Ja | Ja | Antall |
 | 516 | Salgsfaktura | Denne operasjonen lar kunden betale mot den valgte salgsfakturaen. | Ja | Ja | Antall | Antall | Antall |
-| 502 | Selger | Denne operasjonen lar brukeren sette verdien **Salgstaker** på en salgsordre for kundeordrer i POS. | Ja | Ja | Antall | Ja\* | Antall |
-| 2000 | Planlegg behandling | Denne operasjonen lar brukeren opprette, endre eller vise tidsplaner for ansatte. | Ja | Ja | Ja | Antall | Antall |
-| 2001 | Planlegg forespørsler | Denne operasjonen lar brukeren be om fri, bytte av skift eller tilby skift til andre ansatte. | Ja | Ja | Ja | Antall | Antall |
+| 502 | Selger | Denne operasjonen lar brukeren sette verdien **Salgstaker** på en salgsordre for kundeordrer i POS. | Ja | Ja | Nei | Ja\* | Nei |
+| 2000 | Planlegg behandling | Denne operasjonen støttes ikke ennå. | Ja | Ja | Ja | Nei | Nei |
+| 2001 | Planlegg forespørsler | Denne operasjonen støttes ikke ennå. | Ja | Ja | Ja | Nei | Nei |
 | 622 | Søk i ordrer | Denne operasjonen lar brukere forhåndsdefinere POS-knapper til å utføre søk etter vare, kunde eller kategori. | Ja | Ja | Ja | Ja | Antall |
 | 1213 | Søk etter leveringsadresse | Denne operasjonen støttes ikke. | Gjelder ikke her | Gjelder ikke her | Gjelder ikke her | Gjelder ikke her | Antall |
 | 709 | Velg maskinvarestasjon | Denne operasjonen lar brukeren velger en maskinvarestasjon i en liste over tilgjengelige maskinvarestasjoner. | Ja | Ja | Ja | Ja | Antall |

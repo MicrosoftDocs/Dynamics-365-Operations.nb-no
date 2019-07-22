@@ -3,7 +3,7 @@ title: Spore utførelse av ER-format for å feilsøke ytelsesproblemer
 description: Dette emnet inneholder informasjon om hvordan du bruker funksjonen ytelsessporing i elektronisk rapportering (ER) for å feilsøke ytelsesproblemer.
 author: NickSelin
 manager: AnnBe
-ms.date: 05/08/2019
+ms.date: 06/12/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: aa71db2752889bc905c22bab1cf2fa46d7ee07c7
-ms.sourcegitcommit: 67d00b95952faf0db580d341249d4e50be59119c
+ms.openlocfilehash: 55f3fd95a87bcf62824021ebfbf3bcd11af6013f
+ms.sourcegitcommit: f6581bab16225a027f4fbfad25fdef45bd286489
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1576552"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "1703881"
 ---
 # <a name="trace-the-execution-of-er-formats-to-troubleshoot-performance-issues"></a>Spore utførelse av ER-formater for å feilsøke ytelsesproblemer
 
@@ -346,3 +346,29 @@ Hvis du bruker en av disse versjonene av Finance and Operations, kan du analyser
 Gjenta trinnene i delen [Kjør ER-formatet](#run-format) tidligere i dette emnet for å generere en ny ytelsessporing.
 
 Legg merke til at nettleseren tilbyr en zip-fil for nedlasting. Denne filen inneholder ytelsessporingen i PerfView-format. Du kan deretter bruke verktøyet for PerfView-ytelsesanalyse til å analysere detaljene i ER-formatkjøringen.
+
+![Sporingsinformasjon for det utførte ER-formatet i PerfView](./media/GER-PerfTrace2-PerfViewTrace1.PNG)
+
+## <a name="use-external-tools-to-review-an-execution-trace-that-includes-database-queries"></a>Bruke eksterne verktøy til å se gjennom en utførelsessporing som inneholder databasespørringer
+
+På grunn av forbedringer i ER-rammeverket gir ytelsessporingen som genereres i PerfView-formatet, nå flere detaljer om ER-formatutførelsen. I Microsoft Dynamics 365 for Finance and Operations versjon 10.0.4 (juli 2019) kan denne sporingen også inneholde detaljer om utførte SQL-spørringer til programdatabasen.
+
+### <a name="configure-user-parameters"></a>Konfigurere brukerparametere
+
+1. I Finance and Operations går du til **Organisasjonsstyring** \> **Elektronisk rapportering** \> **Konfigurasjoner**.
+2. På **Konfigurasjoner**-siden, i handlingsruten i kategorien **Konfigurasjoner** i gruppen **Avanserte innstillinger**, velger du **Brukerparametere**.
+3. I delen **Kjøringssporing** i dialogboksen **Brukerparametere** angir du følgende parametere:
+
+    - I feltet **Sporingsformat for kjøring** velger du **PerfView XML**.
+    - Sett alternativet **Samle inn spørringsstatistikk** til **Ja**.
+    - Sett alternativet **Spor spørring** til **Ja**.
+
+    ![Dialogboksen Brukerparametere i Finance and Operations](./media/GER-PerfTrace2-GER-UserParameters.PNG)
+
+### <a name="run-the-er-format"></a>Kjøre ER-formatet
+
+Gjenta trinnene i delen [Kjør ER-formatet](#run-format) tidligere i dette emnet for å generere en ny ytelsessporing.
+
+Legg merke til at nettleseren tilbyr en zip-fil for nedlasting. Denne filen inneholder ytelsessporingen i PerfView-format. Du kan deretter bruke verktøyet for PerfView-ytelsesanalyse til å analysere detaljene i ER-formatkjøringen. Denne sporingen inneholder nå detaljene for tilgang til SQL-database under utførelsen av ER-formatet.
+
+![Sporingsinformasjon for det utførte ER-formatet i PerfView](./media/GER-PerfTrace2-PerfViewTrace2.PNG)

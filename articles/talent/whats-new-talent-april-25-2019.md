@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-04-23
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 13cfe68e3d06001c56770fa60838404c43d0b38d
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 5ec10820761cb22cbff6229babe8a250848214b7
+ms.sourcegitcommit: 15154b0aa86110ce5fad6f63e6763103a676a1d2
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1518720"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "1624587"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-talent-april-23-2019"></a>Hva er nytt eller endret i Dynamics 365 for Talent (23. april 2019)?
 
@@ -46,7 +46,7 @@ Med denne ukens versjon støtter følgende enheter egendefinerte felt: Kompensas
 ### <a name="additional-odata-entities-302992"></a>Ekstra OData-enheter (302992)
 Følgende enheter støttes nå i OData: Yrkeserfaring for arbeider og Utdanning for arbeider.
    
-### <a name="performance-journal-attachments-for-nanagers-and-employees-308248"></a>Ytelsesjournalvedlegg for ledere og ansatte (308248)
+### <a name="performance-journal-attachments-for-managers-and-employees-308248"></a>Ytelsesjournalvedlegg for ledere og ansatte (308248)
 Med denne versjonen er vedlegg nå tilgjengelige for både ledere og ansatte når de oppretter og oppdaterer ytelsesjournalposter.
 
 ### <a name="employee-rehire-flag-always-available-310047"></a>Flagg for ny ansettelse av ansatte er alltid tilgjengelig (310047)

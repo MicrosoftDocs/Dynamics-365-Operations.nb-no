@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2017-11-20
 ms.dyn365.ops.version: Talent July 2017 update
-ms.openlocfilehash: 03edb5d626f221863f45804ce84168692c2bd1f3
-ms.sourcegitcommit: 3c4e59f55af2eafb3adbae3bb0091e4f6caacc8b
+ms.openlocfilehash: c249df697553cd42eccd59d3f2c3f5f083ead1cb
+ms.sourcegitcommit: 15154b0aa86110ce5fad6f63e6763103a676a1d2
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1576927"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "1624613"
 ---
 # <a name="provision-talent"></a>Klargjøre Talent
 
@@ -48,6 +48,8 @@ Når du har opprettet et LCS-prosjekt, kan du klargjøre Talent i et miljø.
 
 1. I LCS prosjektet velger du flisen **Talent-appbehandling**.
 2. Angi om dette er en Sandkasse- eller Produksjon-forekomst av Talent. Tidlig forhåndsvisning-funksjonene kan være tilgjengelige i Sandbox-forekomstene for å tillate tidlig tilbakemelding og testing. 
+    > [!NOTE]
+    > Forekomsttypen Talent er atskilt fra forekomsttypen i PowerApps-miljøet, som du angir i PowerApps-administrasjonssenteret.
 3. Velg alternativet **Omfatter demodata** hvis du vil at ditt miljø skal ta med samme demodatasett brukt i testversjonen av Talent. Dette er nyttig for langsiktig demo eller opplæring miljøer, og bør aldri brukes for produksjonsmiljøer.  Vær oppmerksom på at du må velge dette alternativet ved innledende distribusjon. Du kan ikke oppdatere en eksisterende distribusjon senere.
 4. Talent klargjøres alltid i et Microsoft PowerApps-miljø for å aktivere PowerApps-integrering og -utvidelsesmuligheter. Les delen "Velge et PowerApps-miljø" i dette emnet før du fortsetter. Hvis du ikke allerede har et PowerApps-miljø, velger du Administrer miljøer i LCS eller navigerer til PowerApps-administrasjonssenteret. Følg deretter trinnene til [Opprette et PowerApps-miljø](https://docs.microsoft.com/en-us/powerapps/administrator/create-environment).
 
