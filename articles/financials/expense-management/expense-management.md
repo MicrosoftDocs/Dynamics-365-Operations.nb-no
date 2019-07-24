@@ -3,7 +3,7 @@ title: Reiseregning
 description: Dette emnet inneholder generell informasjon om reiseregninger og koblinger til ytterligere ressurser. Du kan bruke Reiseregning for å opprette en integrert arbeidsflyt der du kan lagre betalingsmetodeinformasjon, importere kredittkorttransaksjoner og spore pengene de ansatte bruker når de pådrar seg utgifter for bedriften din.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 05/07/2019
+ms.date: 06/18/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,17 +18,16 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fe1e92dbf63d2683a53684b350f77c978b14c75e
-ms.sourcegitcommit: be447fc81bc874982bc0185fcb4d87d99bd742c5
+ms.openlocfilehash: 7509553df57b9cba206e606b78c70732da32074d
+ms.sourcegitcommit: 169b593b0d9afb228d2cfb0f3b742e4777ec81af
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/08/2019
-ms.locfileid: "1538615"
+ms.lasthandoff: 06/18/2019
+ms.locfileid: "1633981"
 ---
 # <a name="expense-management"></a>Reiseregning
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
 
 Du kan bruke Reiseregning for å opprette en integrert arbeidsflyt der du kan lagre betalingsmetodeinformasjon, importere kredittkorttransaksjoner og spore pengene de ansatte bruker når de pådrar seg utgifter for bedriften din. Du kan også definerer utgiftspolicyer og automatisere refusjon av reiseutgifter.
 

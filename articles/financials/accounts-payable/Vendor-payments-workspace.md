@@ -3,7 +3,7 @@ title: Arbeidsområde for leverandørbetalinger
 description: Dette emnet gir informasjon om det mobile arbeidsområdet for leverandørbetalinger. Arbeidsområdet for leverandørbetalinger viser informasjon som er knyttet til behandling av leverandørbetalinger.
 author: abruer
 manager: AnnBe
-ms.date: 05/09/2017
+ms.date: 06/25/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,18 +17,26 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 789acd3f403e322ec00388ca8184ccd30c3ea436
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 6f5ffe65b2f9be7423f1fe420594c936e15550fb
+ms.sourcegitcommit: 6f0e5bf82a5f61bab52c3cf4c82849fae5c5d50b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1509228"
+ms.lasthandoff: 06/25/2019
+ms.locfileid: "1702941"
 ---
 # <a name="vendor-payments-workspace"></a>Arbeidsområde for leverandørbetalinger
 
 [!include [banner](../includes/banner.md)]
 
 Arbeidsområdet for **leverandørbetalinger** viser informasjon som er knyttet til behandling av leverandørbetalinger. Arbeidsområdet inneholder en **Mitt arbeid**-visning og en **Analyse**-side. **Mitt arbeid**-visningen viser sammendragsfliser, rutenett for leverandørtransaksjoner og tilknyttet leverandørinformasjon. **Analyse**-siden bruker funksjonene i Microsoft Power BI for å vise bilder som er knyttet til leverandørbetalinger.
+
+## <a name="setup-needed-to-view-power-bi-content"></a>Oppsett måtte vise Power BI-innhold
+
+Følgende oppsett må fullføres for at data skal kunne vises i Power BI-visualobjekter for **Leverandørbetalinger**.
+1. Gå til **Systemadministrasjon > Oppsett > Systemparametere** for å angi **Systemvaluta** og **Valutakurs for system**.
+2. Gå til **Økonomimodul > Oppsett > Finans** for å angi **Regnskapsvaluta** og **Type valutakurs**. 
+2. Definer valutakurser mellom transaksjonsvalutaer og regnskapsvaluta og mellom regnskapsvaluta og systemvaluta. Du kan gjøre dette ved å gå til **Økonomimodul > Valutaer > Valutakurser**.
+3. Gå til **Systemadministrasjon > Oppsett > Enhetslager** for å oppdatere den aggregerte målingen **VendPaymentBIMeasure**. 
 
 ## <a name="my-work-view"></a>Mitt arbeid-visning
 

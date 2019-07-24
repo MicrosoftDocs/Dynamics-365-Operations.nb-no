@@ -15,18 +15,16 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2018-03-16
 ms.dyn365.ops.version: April 2018 update
-ms.openlocfilehash: 96ad2af40ffb68649dca7a90d5ae14cd64b43ce9
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: a7eff0ce166785cb777fbf58ecf08ca8915be5af
+ms.sourcegitcommit: a237fc58ddb94ff798fac70feaf1431e00080489
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1557335"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "1624890"
 ---
 # <a name="project-timesheets-on-a-mobile-device"></a>Timeregistreringer for prosjekt på en mobilenhet
 
 [!include [banner](../includes/banner.md)]
-
-# <a name="overview"></a>Oversikt
 
 **Mine timeregistreringer (optimalisert for mobil)** lar ansatte opprette og sende prosjekttimelister for å registrere timene sine på et bestemt prosjekt på en mobil enhet. Ansatte kan opprette en ny timeregistrering eller kopiere data fra en eksisterende timeregistrering for å sikre rask og nøyaktig timeregistrering. Hvis du er tilordnet som representant, kan du også angi en timeregistrering for en annen arbeider. Programmet lar ansatte filtrere etter prosjekt, ressurs eller godkjenningsstatus for å raskt finne og velge en timeregistrering. Det gir også ansatte mulighet til å lagre favoritter, som lagrer informasjon om prosjektet og aktiviteten i timeregistreringen. De lagrede favorittene kan brukes til å opprette fremtidige timeregistreringer, som gjør timeføringsprosessen raskere. Redigering eller visning av informasjon om finansdimensjon støttes ikke fra mobilappen. **Mine timeregistreringer (optimalisert for mobil)** kan nås via webleseren på den mobile enheten.
 
@@ -35,8 +33,7 @@ ms.locfileid: "1557335"
 Denne mobilapplikasjonen er kompatibel for iPhone med Dynamics 365 for Finance and Operations plattformoppdatering 15.
 Android vil være kompatibel med plattformoppdatering 16, når den blir tilgjengelig.
 
-<a name="create-a-project-timesheet-on-your-mobile-device"></a>Opprette en prosjekttimeregistrering på mobilenheten
-------------------------------------------------
+## <a name="create-a-project-timesheet-on-your-mobile-device"></a>Opprette en prosjekttimeregistrering på mobilenheten
 
 1.  Legg merke til Dynamics 365-URL-adressen for **Prosjektstyring og regnskap** \> **Timeregistreringer** \> **Mine timeregistreringer (optimalisert for mobil)**-siden.
 

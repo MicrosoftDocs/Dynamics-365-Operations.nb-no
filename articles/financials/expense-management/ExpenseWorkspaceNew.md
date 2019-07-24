@@ -3,7 +3,7 @@ title: Ny utforming av reiseregninger
 description: Dette emnet gir informasjon om den nye utformingen av og opplevelsen for reiseregningregistrering i Microsoft Dynamics 365 for Finance and Operations. Den nye opplevelsen forenkler prosessen med å fullføre reiseregninger og reduserer tiden som kreves.
 author: ryansandness
 manager: AnnBe
-ms.date: 05/20/2019
+ms.date: 06/14/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,17 +15,16 @@ ms.search.region: Global
 ms.author: ryansand
 ms.search.validFrom: 2019-6-30
 ms.dyn365.ops.version: 10.0.3
-ms.openlocfilehash: c7a2b95456e812970b135d83f0f7e503310ce185
-ms.sourcegitcommit: 97ed74889a09ef385f6ecbab69e84a05ff42ee41
+ms.openlocfilehash: 9e87a61bd6dd7bc1c7ef569882daf2074c7cade9
+ms.sourcegitcommit: 672c94704e9a2b0ec7ee3c111d4ceb1bb8597969
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "1592643"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "1631961"
 ---
 # <a name="expense-reports-reimagined"></a>Ny utforming av reiseregninger
 
 [!include[banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
 
 Registrering av reiseregninger er endret for å forenkle prosessen med å fullføre reiseregninger og redusere tiden som kreves. Her er hovedkomponentene i den nye opplevelsen:
 

@@ -3,7 +3,7 @@ title: Tilpasse brukeropplevelsen
 description: Dette emnet forklarer hvordan du kan tilpasse Microsoft Dynamics 365 for Finance and Operations.
 author: jasongre
 manager: AnnBe
-ms.date: 05/17/2019
+ms.date: 06/11/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 67ba1a95299de09c74e2fa2808cb63f61acf5862
-ms.sourcegitcommit: c576b81dc3c93c09fb08fb0ba0c19f417360c5ab
+ms.openlocfilehash: 51c4cbbba36ed4c93fbbba907031023060d51495
+ms.sourcegitcommit: 0273905ceb371ba17d3a37d690e1f568aa968b4f
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "1620020"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "1625017"
 ---
 # <a name="personalize-the-user-experience"></a>Tilpasse brukeropplevelsen
 
@@ -41,7 +41,7 @@ Alle tilpasninger som en bruker gjør i Finance and Operations, er bare for denn
 
 ## <a name="system-wide-options-for-the-current-user"></a>Systemomfattende alternativer for gjeldende bruker
 
-Siden **Brukeralternativer** inneholder flere systeminnstillinger for gjeldende bruker. For å åpne siden **Brukeralternativer** velger du **Innstillinger**-menyen (tannhjulssymbolet) på navigeringslinjen, og deretter velger du **Brukeralternativer**. Siden **Brukeralternativer** har fire faneblader med ulike brukerinnstillinger:
+Siden **Brukeralternativer** inneholder flere systeminnstillinger for gjeldende bruker. For å åpne siden **Brukeralternativer** velger du **Innstillinger**-menyen (tannhjulsymbolet) på navigeringslinjen, og deretter velger du **Brukeralternativer**. Siden **Brukeralternativer** har fire faneblader med ulike brukerinnstillinger:
 
 - **Visuelt** – Velg et fargetema og standardstørrelsen på elementer på sidene.
 - **Innstillinger** – Velg standardverdier som brukes hver gang du åpner Finance and Operations. Disse verdiene inkluderer firmaet, startsiden og standard visnings-/ redigeringsmodus. (Vis-/redigeringsmodus avgjør om en side er låst for visning eller åpnet for redigering hver gang du åpner den.) Denne kategorien omfatter også alternativer for språk, tidssone, og dato, klokkeslett og tallformat. Denne kategorien inneholder dessuten flere diverse innstillinger som varierer fra versjon til versjon.
@@ -169,6 +169,6 @@ Brukere som har administratorrettigheter, kan også administrere tilpasninger fo
 
 Når du tilpasser oppsettet av lagerdimensjoner på en side, tar du hensyn til innstillingene som er opprettet ved hjelp av alternativet **Visningsdimensjoner**. Du bruker eksempelvis tilpasning for å skjule en kolonne for lagerdimensjonen for partinummer, men kolonnen vises neste gang siden åpnes. Dette skjer fordi **Dimensjonsvisning**-innstillingene kontrollerer lagerdimensjonskolonnene som vises.
 
-Innstillingene for **Dimensjonsvisning** gjelder på tvers av alle sider og overstyrer tilpassede oppsett av lagerdimensjonsfelt på enkeltsider.
+Innstillingene for **Dimensjonsvisning** gjelder på tvers av alle sider og overstyrer tilpassede oppsett av lagerdimensjonsfelt på hver enkelt side.
 
-Derfor, i eksemplet ovenfor, hvis du ikke vil at kolonnen for lagerdimensjonen for partinummer skal vises, må du fjerne den dimensjonen som en del av **Visningsdimensjoner**-alternativ for tabellen. Til slutt vil denne endringen ikke bare gjelde på én bestemt side, men på alle sider.
+I eksemplet ovenfor må du derfor fjerne lagerdimensjonen for partinummer som en del av alternativet **Visningsdimensjoner** for en side hvis du ikke vil at kolonnen for denne dimensjonen skal vises på denne siden.

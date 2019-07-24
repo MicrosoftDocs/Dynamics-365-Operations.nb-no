@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: hasrivas
 ms.search.validFrom: 2019-02-12
 ms.dyn365.ops.version: AX 7.1.0, Talent April 2018 update
-ms.openlocfilehash: a56f162ccc6b6099fd62e0cb7e10076368d8e653
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: e51fb00536884d2b3815c05a0968714d8b9326f2
+ms.sourcegitcommit: a6b32be10b6eb6340f8f68261bf62d0202c03dd1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1518785"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "1729709"
 ---
 # <a name="career-site-functionality-in-attract"></a>Karriereområde-funksjonalitet i Attract
 
@@ -48,11 +48,14 @@ Hvis du vil angi verdier for følgende elementer, logger du deg på Attract som 
  
 Hvis du vil angi verdier for følgende elementer, logger du deg på Attract som administrator, velger **Administrasjonssenter** på **Innstillinger**-menyen og velger deretter **Karrierestedsledelse**-kategorien.
 
--   **Optimalisering av søkemotor** – Når aktivert er alle offentlige jobber som er postert til Attract-karriereområdet, søkbare ved hjelp av søkemotorer som Bing og Google.
+-   **Optimalisering av søkemotor** – Når aktivert er alle offentlige jobber som er postert til Attract-karriereområdet, søkbare ved hjelp av søkemotorer som Bing og Google. 
 
     > [!NOTE] 
     > Det kan være en forsinkelse fra aktivering av denne innstillingen til at søkeresultatene vises, avhengig av søkemotoren du bruker.
-         
+    
+-   **Vilkår og betingelser** – Når denne er aktivert, må alle kandidater samtykke i organisasjonens vilkår og betingelser når det søker på en jobb. Attract-administratoren kan konfigurere sin egen samtykketekst og koblingen til siden med vilkår og betingelser. 
+
+        
 ## <a name="career-site-urls"></a>URL-adresser for karriereområde
 
 Følgende liste inneholder vanlige URL-adresser for karriereområde og hvordan du åpner dem.
@@ -126,7 +129,7 @@ Du kan gjøre det lettere for kandidater å søke på stillingene dine ved å ko
 > Du må ha én eller flere rekrutteringslisenser fra LinkedIn før du kan la kandidater søke via LinkedIn.
 
 1. Logge på Attract som en administrator.
-2. Velg **Innstillinger**-knappen (tannhjulssymbolet) i øvre høyre hjørne på siden, og velg deretter **Administrasjonssenter**.
+2. Velg **Innstillinger**-knappen (tannhjulsymbolet) i øvre høyre hjørne på siden, og velg deretter **Administrasjonssenter**.
 3. Velg **LinkedIn-integrering**-kategorien, og koble til med en LinkedIn Recruiter-konto.
 4. I **LinkedIn Recruiter System Connect -integrering**-delen velger du **Aktivert** for **Bruk med LinkedIn**-innstillingen.
 

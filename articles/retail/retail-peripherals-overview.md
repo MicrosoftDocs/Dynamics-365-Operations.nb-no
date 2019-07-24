@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: a9fa49d0b3553ae70547aeea19d14bc6e6e08983
-ms.sourcegitcommit: ffc37f7c2a63bada3055f37856a30424040bc9a3
+ms.openlocfilehash: eda7744a6365b4c3a884342a429c2340e5a13d66
+ms.sourcegitcommit: 7feb5d279adedd44f038195ce0f5e1c27d374049
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "1577935"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "1624818"
 ---
 # <a name="retail-peripherals"></a>Eksterne enheter for detaljhandel
 
@@ -156,13 +156,13 @@ Opprinnelige skrivere (eller "Enhet" som typen heter i maskinvareprofilen) kan k
 
 ### <a name="network"></a>Nettverk
 
-Nettverksadresserbare kassaskuffer, kvitteringsskrivere og betalingsterminaler kan brukes via et nettverk, direkte via IPC-maskinvarestasjonen som er bygget inn i Modern POS for Windows-programmet eller IIS-maskinvarestasjonen for andre Modern POS-klienter.
+Nettverksadresserbare kassaskuffer, kvitteringsskrivere og betalingsterminaler kan brukes via et nettverk, direkte via IPC-maskinvarestasjonen som er bygget inn i programmene Modern POS for Windows og Modern POS for Android, eller via IIS-maskinvarestasjonen for andre Modern POS-klienter.
 
 ## <a name="hardware-station-deployment-options"></a>Distribusjonsalternativer for maskinvarestasjon
 
 ### <a name="ipc-built-in"></a>IPC (innebygd)
 
-IPC-maskinvarestasjonen er bygget inn i Modern POS for Windows-programmet. Hvis du vil bruke IPC-maskinvarestasjonen, tilordner du en maskinvareprofil til en kasse som skal bruke Modern POS for Windows-programmet. Deretter oppretter du en maskinvarestasjon av **Dedikert**-typen for butikken der kassen skal brukes. Når du starter Modern POS, vil IPC-maskinvarestasjonen være aktiv, og POS-enheter som er konfigurert, vil være klare til bruk. Hvis du midlertidig ikke trenger den lokale maskinvaren, kan du bruke operasjonen **Administrer maskinvarestasjoner** for å deaktivere funksjonene for maskinvarestasjon. Modern POS kan også bruke IPC-maskinvarestasjonen til å kommunisere direkte med nettverksenheter.
+IPC-maskinvarestasjonen er bygget inn i programmene Modern POS for Windows og Modern POS for Android. Hvis du vil bruke IPC-maskinvarestasjonen, tilordner du en maskinvareprofil til en kasse som skal bruke Modern POS for Windows-programmet. Deretter oppretter du en maskinvarestasjon av **Dedikert**-typen for butikken der kassen skal brukes. Når du starter Modern POS, vil IPC-maskinvarestasjonen være aktiv, og POS-enheter som er konfigurert, vil være klare til bruk. Hvis du midlertidig ikke trenger den lokale maskinvaren, kan du bruke operasjonen **Administrer maskinvarestasjoner** for å deaktivere funksjonene for maskinvarestasjon. Modern POS kan også bruke IPC-maskinvarestasjonen til å kommunisere direkte med nettverksenheter.
 
 ### <a name="iis"></a>IIS
 
@@ -190,7 +190,11 @@ Nettverksangivelsen for enheter i maskinvareprofilen lar kassaskuffer, kvitterin
 
 Du kan angi IP-adresser for nettverksenheter på to steder. Hvis Modern POS-Windows-klienten bruker ett enkelt sett med nettverksenheter, må du angi IP-adressene for disse enhetene ved hjelp av alternativet **IP-konfigurasjon** i handlingsruten for selve kassen. For nettverksenheter som skal deles mellom kasser på salgsstedet, kan en maskinvareprofil som er tilordnet nettverksenheter, tilordnes direkte til en delt maskinvarestasjon. Hvis du vil tildele IP-adresser, velger du denne maskinvarestasjonen på siden **Detaljhandelbutikker**, og deretter bruke du alternativet **IP-konfigurasjon** i delen **Maskinvarestasjoner** for å angi nettverksenhetene som er tilordnet til denne maskinvarestasjonen. For maskinvarestasjoner som bare har nettverksenheter trenger du ikke å distribuere selve maskinvarestasjonen. I slike tilfeller kreves maskinvarestasjonen bare for å begrepsmessig gruppere nettverksadresserbare enheter i henhold til deres plassering i detaljhandelsbutikken.
 
-#### <a name="cloud-pos-modern-pos-for-ios-and-modern-pos-for-android"></a>Cloud POS, Modern POS for iOS og Modern POS for Android
+#### <a name="modern-pos-for-android"></a>Modern POS for Android
+
+Fra og med Dynamics 365 for Retail versjon 8.1.3 har programmet Modern POS for Android en innebygd IPC-maskinvarestasjon. Denne maskinvarestasjonen støtter kommunikasjon med nettverksskrivere og betalingskoblinger. Hvis du vil ha mer informasjon, kan du gå til [artikkelen om hybrid app for Android](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/dev-itpro/hybridapp#dedicated-hardware-station-support-for-the-hybrid-android-app). 
+
+#### <a name="cloud-pos-and-modern-pos-for-ios"></a>Cloud POS og Modern POS for iOS
 
 Logikken som styrer fysisk tilkoblede og nettverksadresserbare enheter finnes i maskinvarestasjonen. For alle salgsstedsklienter bortsett fra Modern POS for Windows, må derfor en IIS-maskinvarestasjon distribueres og aktives for å aktivere kommunikasjon mellom salgsstedet og eksterne enheter, uavhengig av om de eksterne enhetene er fysisk koblet til en maskinvarestasjon eller adresseres over nettverket.
 
@@ -222,9 +226,9 @@ Tabellen nedenfor viser topologier og distribusjonsscenarier som støttes.
 | Kunde      | IPC-maskinvarestasjon | IIS-maskinvarestasjon |
 |-------------|----------------------|----------------------|
 | Windows-app | Ja                  | Ja                  |
-| Skybasert salgssted   | Nr.                   | Ja                  |
-| Android     | Nr.                   | Ja                  |
-| iOS         | Nr.                   | Ja                  |
+| Skybasert salgssted   | Nei                   | Ja                  |
+| Android     | Ja                  | Ja                  |
+| iOS         | Nei                   | Ja                  |
 
 ### <a name="network-peripherals"></a>Nettverksenheter
 
@@ -233,9 +237,9 @@ Nettverksenheter kan støttes direkte gjennom maskinvarestasjonen som er bygd in
 | Kunde      | IPC-maskinvarestasjon | IIS-maskinvarestasjon |
 |-------------|----------------------|----------------------|
 | Windows-app | Ja                  | Ja                  |
-| Skybasert salgssted   | Nr.                   | Ja                  |
-| Android     | Nr.                   | Ja                  |
-| iOS         | Nr.                   | Ja                  |
+| Skybasert salgssted   | Nei                   | Ja                  |
+| Android     | Ja                  | Ja                  |
+| iOS         | Nei                   | Ja                  |
 
 ## <a name="supported-device-types-by-hardware-station-type"></a>Enhetstyper som støttes av maskinvarestasjonstype
 
@@ -661,14 +665,15 @@ De eksterne enhetene nedenfor ble testet ved hjelp av IPC-maskinvarestasjonen so
 
 #### <a name="printer"></a>Skriver
 
-| Produsent | Modell    | Grensesnitt | Kommentarer                |
-|--------------|----------|-----------|-------------------------|
-| Epson        | Tm-T88IV | OPOS      |                         |
-| Epson        | TM-T88V  | OPOS      |                         |
-| Star         | TSP650II | OPOS      |                         |
-| Star         | TSP650II | Egendefinert    | Tilkoblet via nettverket   |
-| Star         | mPOP     | OPOS      | Tilkoblet via Bluetooth |
-| HP           | F7M67AA  | OPOS      | USB-drevet             |
+| Produsent | Modell      | Grensesnitt | Kommentarer                |
+|--------------|------------|-----------|-------------------------|
+| Epson        | Tm-T88IV   | OPOS      |                         |
+| Epson        | TM-T88V    | OPOS      |                         |
+| Epson        | ePOS-Print | Egendefinert    | Tilkoblet via nettverket   |
+| Star         | TSP650II   | OPOS      |                         |
+| Star         | TSP650II   | Egendefinert    | Tilkoblet via nettverket   |
+| Star         | mPOP       | OPOS      | Tilkoblet via Bluetooth |
+| HP           | F7M67AA    | OPOS      | USB-drevet             |
 
 #### <a name="bar-code-scanner"></a>Strekkodeleser
 
@@ -688,11 +693,12 @@ De eksterne enhetene nedenfor ble testet ved hjelp av IPC-maskinvarestasjonen so
 
 #### <a name="payment-terminal"></a>Betalingsterminal 
 
-| Produsent | Modell | Grensesnitt | Kommentarer                                                                       |
-|--------------|-------|-----------|--------------------------------------------------------------------------------|
-| Equinox      | L5300 | Egendefinert    | Krever tilpassing av betalingskoblingen                                |
-| VeriFone     | MX925 | Egendefinert    | Krever tilpassing av betalingskoblingen, tilkobling via nettverk og USB |
-| VeriFone     | MX915 | Egendefinert    | Krever tilpassing av betalingskoblingen, tilkobling via nettverk og USB |
+| Produsent | Modell        | Grensesnitt | Kommentarer                                                                       |
+|--------------|--------------|-----------|--------------------------------------------------------------------------------|
+| Equinox      | L5300        | Egendefinert    | Krever tilpassing av betalingskoblingen                                |
+| VeriFone     | MX925        | Egendefinert    | Krever tilpassing av betalingskoblingen, tilkobling via nettverk og USB |
+| VeriFone     | MX915        | Egendefinert    | Krever tilpassing av betalingskoblingen, tilkobling via nettverk og USB |
+| Verifone     | Se kommentarer | Adyen     | Adyen-koblingen støtter alle enheter som er oppført [her](https://www.adyen.com/pos-payments/terminals) |
 
 #### <a name="cash-drawer"></a>Kassaskuff
 

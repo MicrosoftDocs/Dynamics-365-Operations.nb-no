@@ -3,7 +3,7 @@ title: Finne kandidater ved hjelp av talentsamlinger
 description: Dette emnet forklarer hvordan du kan opprette og definere talentsamlinger i Attract.
 author: andreabichsel
 manager: AnnBe
-ms.date: 04/02/2019
+ms.date: 06/28/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-talent
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-22-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: 13b5e3091a4bcdbf1bfbe077ffb04ec8d08a0911
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: d2d680aa54e4610959c12bc1feef11ba8f30b0ca
+ms.sourcegitcommit: 40be0096af50e74d9946e382d3bbd2683bed1fc5
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1518707"
+ms.lasthandoff: 06/29/2019
+ms.locfileid: "1711300"
 ---
 # <a name="source-candidates-by-using-talent-pools"></a>Finne kandidater ved hjelp av talentsamlinger
 
@@ -110,15 +110,16 @@ Alle brukere har en samlet oversikt over kandidatprofiler. **Profil**-kategorien
 
 - Du kan vise kontaktinformasjon for kandidaten. Du kan også redigere eller oppdatere informasjonen etter behov ved hjelp av **Rediger detaljer**-knappen.
 
-- Du kan legge til flere kompetansemerker for å identifisere en kandidats ferdigheter.
-
 - Du kan vise hele søknadshistorikken til kandidaten. Du kan se alle jobbene som kandidaten har søkt på i organisasjonen, og statusen for disse søknadene. Hvis du er en del av et ansettelsesteam, kan du velge **Vis** for å se på søknaden i detalj.
 
-- **Dokumenter**-kategorien viser alle dokumenter som kandidaten har lagt til fra sin profil eller under stillingssøknader. Denne kategorien kan brukes til å administrere kandidatens CVer, følgebrev, porteføljearbeid og så videre. Du kan også bruke denne kategorien til å legge til dokumenter.
+- **Dokumenter**-kategorien viser alle dokumenter som kandidaten har lagt til fra sin profil eller under stillingssøknader. Du kan bruke denne fanen til å administrere kandidatens CVer, følgebrev, porteføljearbeid og så videre. Du kan også bruke denne kategorien til å legge til dokumenter.
 
     Hvis du vil vise et dokument, merker du dokumentnavnet i listen over dokumenter. Du kan vise Microsoft Word-dokumenter i programmet ved hjelp av Microsoft Office 365. Du kan også laste ned dokumenter til den lokale datamaskinen ved hjelp av **Last ned**-alternativet for hvert dokument.
 
 - **LinkedIn**-kategorien viser kandidatens LinkedIn-informasjon. Hvis du vil bruke denne kategorien, må du koble til LinkedIn-kontoen i brukerinnstillingene, og det må opprettes en tilkobling til miljøets LinkedIn Recruiter. Hvis du vil ha mer informasjon, se [Kandidatsondering med LinkedIn Recruiter](./attract-linked-in-recruiter.md).
+
+> [!NOTE]
+> Bare kandidater kan oppdatere kompetansen, utdanningsloggen og arbeidserfaringen.
 
 ## <a name="add-candidates-from-a-talent-pool-to-a-job"></a>Legge til kandidater fra en talentsamling i en jobb
 

@@ -3,7 +3,7 @@ title: Power BI-innholdet Behandling av kreditt og innkrevinger
 description: Dette emnet beskriver hva som er inkludert i Power BI-innholdet Behandling av kreditt og innkrevinger. Det forklarer hvordan du kan få tilgang til Power BI-rapporter, og gir informasjon om datamodellen og enhetene som brukes til å bygge innholdet.
 author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 12/01/2017
+ms.date: 06/25/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: a80a180623d1cca77c633f12bcd92a088e089ee5
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 5f6b1c9338670a2f2f26ecbef1d349171457e1ac
+ms.sourcegitcommit: d599bc1fc60a010c2753ca547219ae21456b1df9
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1547238"
+ms.lasthandoff: 06/25/2019
+ms.locfileid: "1702778"
 ---
 # <a name="credit-and-collections-management-power-bi-content"></a>Power BI-innholdet Behandling av kreditt og innkrevinger
 
@@ -42,7 +42,17 @@ Alle beløpene vises i systemvalutaen. Du kan definere systemvalutaen på **Syst
 
 Som standard vises kredit- og innkrevingsdataene for gjeldende firma. Hvis du vil se dataene på tvers av alle firmaer, tilordner du plikten **CustCollectionsBICrossCompany** til rollen.
 
+## <a name="setup-needed-to-view-power-bi-content"></a>Oppsett måtte vise Power BI-innhold
+
+Følgende oppsett må fullføres for at data skal kunne vises i Power BI-visualobjekter for **Kundekreditt og innkrevinger**.
+
+1. Gå til **Systemadministrasjon > Oppsett > Systemparametere** for å angi **Systemvaluta** og **Valutakurs for system**.
+2. Gå til **Økonomimodul > Oppsett > Finans** og angi **Regnskapsvaluta** og **Type valutakurs**.
+3. Definer valutakurser mellom transaksjonsvalutaer og regnskapsvaluta og mellom regnskapsvaluta og systemvaluta. Du kan gjøre dette ved å gå til **Økonomimodul > Valutaer > Valutakurser**.
+4. Gå til **Systemadministrasjon > Oppsett > Enhetslager** for å oppdatere den aggregerte målingen **CustCollectionsBIMeasurements**.
+
 ## <a name="accessing-the-power-bi-content"></a>Tilgang til Power BI-innholdet
+
 Power BI-innholdet **Behandling av kreditt og innkrevinger** vises i **Kundekreditt og innkrevinger**-arbeidsområdet.
 
 ## <a name="reports-that-are-included-in-the-power-bi-content"></a>Rapporter som er inkludert i Power BI-innholdet
@@ -63,28 +73,3 @@ Power BI-innholdet **CustCollectionsBICrossCompany** omfatter en rapport som bes
 | Purringer         | <ul><li>Purrekodebeløp</li><li>Detaljer om purrekodebeløp</li><li>Purrebeløp per firma</li><li>Purrebeløp per kundegruppe</li><li>Purrebeløp etter område</li></ul> |
 
 Diagrammer og fliser for alle disse rapportene kan filtreres og festes på instrumentbordet. Hvis du vil ha mer informasjon om hvordan du filtrerer og fester i Power BI, kan du se [Opprette og konfigurere et instrumentbord](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards/). Du kan også bruke funksjonen for eksport av underliggende data til å eksportere underliggende data som oppsummeres i en visualisering.
-
-## <a name="understanding-the-data-model-and-entities"></a>Forstå datamodellen og enheter
-
-Følgende data brukes til å fylle ut rapporten i Power BI-innholdet **Behandling av kreditt og innkrevinger**. Disse dataene vises som aggregerte mål som er oppsamlet i enhetslageret. Enhetslageret er en Microsoft SQL Server-database som er optimalisert for analyse. Hvis du vil ha mer informasjon, se [Oversikt over Power BI-integrering med enhetslager](../../dev-itpro/analytics/power-bi-integration-entity-store.md).
-
-
-|                   Enhet                    |      Aggregerte nøkkelmålinger      |             Datakilde              |                           Felt                            |                                    beskrivelse                                     |
-|---------------------------------------------|--------------------------------------|--------------------------------------|------------------------------------------------------------|------------------------------------------------------------------------------------|
-| CustCollectionsBIActivitiesAverageCloseTime | NumOfActivities, AveragecClosedTime  |            smmActivities             | AverageOfChildren(AverageClosedTime) Count(ActivityNumber) |     Antall lukkede aktiviteter og gjennomsnittlig lukketid for disse aktivitetene.     |
-|       CustCollectionsBIActivitiesOpen       |            ActivityNumber            |            smmActivities             |                   Count(ActivityNumber)                    |                           Antall åpne aktiviteter.                            |
-|        CustCollectionsBIAgedBalances        |             AgedBalances             |  CustCollectionsBIAgedBalancesView   |                 Sum(SystemCurrencyBalance)                 |                             Summen av aldersfordelte saldoer.                              |
-|        CustCollectionsBIBalancesDue         |         SystemCurrencyAmount         |   CustCollectionsBIBalanceDueView    |                 Sum(SystemCurrencyAmount)                  |                           Beløpene som er forfalt.                            |
-|    CustCollectionsBICaseAverageCloseTIme    |  NumOfCases, CaseAverageClosedTime   |      CustCollectionsCaseDetail       | AverageOfChildren(CaseAverageClosedTime) Count(NumOfCases) |        Antall lukkede saker og gjennomsnittlig lukketid for disse sakene.        |
-|         CustCollectionsBICasesOpen          |                CaseId                |      CustCollectionsCaseDetail       |                       Count(CaseId)                        |                              Antall åpne saker.                              |
-|      CustCollectionsBICollectionLetter      |         CollectionLetterNum          |       CustCollectionLetterJour       |                 Count(CollectionLetterNum)                 |                       Antall åpne purringer.                        |
-|   CustCollectionsBICollectionLetterAmount   |       CollectionLetterAmounts        | CustCollectionsBIAccountsReceivables |                 Sum(SystemCurrencyAmount)                  |                     Saldoen for posterte purringer.                      |
-|      CustCollectionsBICollectionStatus      |       CollectionStatusAmounts        | CustCollectionsBIAccountsReceivables |                 Sum(SystemCurrencyAmount)                  |                Saldoen for transaksjoner med purrestatus.                 |
-|           CustCollectionsBICredit           | CreditExposed, AmountOverCreditLimit |     CustCollectionsBICreditView      |       Sum(CreditExposed), Sum(AmountOverCreditLimit)       | Summen av kreditteksponering og -beløp som kunder er over kredittgrensen. |
-|         CustCollectionsBICustOnHold         |               Blokkert                |      CustCollectionsBICustTable      |                       Count(Blocked)                       |                     Antall kunder som er på vent.                      |
-|            CustCollectionsBIDSO             |                DSO30                 |       CustCollectionsBIDSOView       |                  AverageOfChildren(DSO30)                  |                        Dager utestående salg i 30 dager.                         |
-|      CustCollectionsBIExpectedPayment       |           ExpectedPayment            | CustCollectionsBIExpectedPaymentView |                 Sum(SystemCurrencyAmounts)                 |                 Summen av forventede betalinger innen neste år.                 |
-|        CustCollectionsBIInterestNote        |             InterestNote             |           CustInterestJour           |                    Count(InterestNote)                     |                Antallet rentenotaer som har blitt opprettet.                |
-|        CustCollectionsBISalesOnHold         |               SalesId                |              SalesTable              |                       Count(SalesId)                       |                 Antall salgsordrer totalt som er på vent.                 |
-|          CustCollectionsBIWriteOff          |            WriteOffAmount            |    CustCollectionsBIWriteOffView     |                 Sum(SystemCurrencyAmount)                  |                Summen av transaksjoner som er avskrevet.                 |
-

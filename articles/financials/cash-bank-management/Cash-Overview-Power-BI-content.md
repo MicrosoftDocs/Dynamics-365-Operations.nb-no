@@ -3,7 +3,7 @@ title: Power BI-innholdet Kontantstrømoversikt
 description: Dette emnet beskriver Power BI-innholdet Kontantstrømoversikt. Det forklarer også hvordan du får tilgang til rapportene som er inkludert i innholdet, og inneholder informasjon om datamodellen og enhetene som brukes til å bygge innholdet.
 author: saraschi2
 manager: AnnBe
-ms.date: 12/19/2017
+ms.date: 06/25/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 5dccb5c5c6c336607603dfc7a935c039e5ac4aa5
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: bff0b1b0a68eccec1cebf130bc40ec3e6d88c3a9
+ms.sourcegitcommit: d599bc1fc60a010c2753ca547219ae21456b1df9
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1568923"
+ms.lasthandoff: 06/25/2019
+ms.locfileid: "1702801"
 ---
 # <a name="cash-overview-power-bi-content"></a>Power BI-innholdet Kontantstrømoversikt
 
@@ -33,6 +33,17 @@ Dette emnet beskriver Microsoft Power BI-innholdet **Kontantstrømoversikt**. De
 
 Power BI-innholdet **Kontantstrømoversikt** ble opprettet for personer som er ansvarlige for kontanter i organisasjonen. Power BI-innholdet **Kontantstrømoversikt** gir oversikt over kontantstrømmen. Det gir i tillegg prognoser som kan hjelpe deg å ta bedre beslutninger og derfor forbedre tilstanden til kontantstrømmen. Du kan analysere kontanter etter juridisk enhet, valuta og bankkonto for å få en bedre forståelse av overskudd og underskudd.
 
+## <a name="setup-needed-to-view-power-bi-content"></a>Oppsett måtte vise Power BI-innhold
+
+Følgende oppsett må være fullført for at data skal kunne vises i Power BI-visualobjektene **Kontantstrømoversikt** og **Bank**.
+
+1. Gå til **Systemadministrasjon > Oppsett > Systemparametere** for å angi **Systemvaluta** og **Valutakurs for system**.
+2. Gå til **Økonomimodul > Oppsett > Finans** for å angi **Regnskapsvaluta** og **Type valutakurs**.
+2. Definer valutakurser mellom transaksjonsvalutaer og regnskapsvaluta, regnskapsvaluta og systemvaluta samt regnskapsvaluta og bankvalutaer. Du kan gjøre dette ved å gå til **Økonomimodul > Valutaer > Valutakurser**.
+3. Konfigurer og kjør kontantstrømprognoser. Hvis du vil ha mer informasjon om hvordan du definerer kontantstrømprognoser, kan du se <a href="https://docs.microsoft.com/en-us/dynamics365/unified-operations/financials/cash-bank-management/cash-flow-forecasting
+">Kontantstrømprognose</a>. 
+4. Gå til **Systemadministrasjon > Oppsett > Enhetslager** for å oppdatere den aggregerte målingen **LedgerCovLiquidityMeasurement**.
+
 ## <a name="accessing-the-power-bi-content"></a>Tilgang til Power BI-innholdet
 
 Rapporter fra Power BI-innholdet **Kontantstrømoversikt** vises i **Kontantstrømoversikt**- og **Bank**-arbeidsområdet.
@@ -42,6 +53,7 @@ Hvis du vil vise kontantstrømmen prognoserapporter med data, må du først kjø
 For demonstrasjonsformål kan du legge til kontantstrøm prognostedemodataene ved hjelp av siden **Generer data** fra modulen Demodata.  Dette skriptet vil sette inn data i kontantstrømmens prognosetabeller for å raskt fylle ut informasjonen som kreves for rapporter.  Denne modulen er bare tilgjengelig hvis du har Demodatapakkemodellen distribuert i miljøet. 
 
 ## <a name="reports-that-are-included-in-the-power-bi-content"></a>Rapporter som er inkludert i Power BI-innholdet
+
 Tabellen nedenfor viser detaljer om mål som finnes på hver rapportside i Power BI-innholdet **Kontantstrømoversikt**.
 
 | Rapporter                                | Innhold |
@@ -67,5 +79,3 @@ Tabellen nedenfor viser enhetene som Power BI-innholdet **Kontantstrømoversikt*
 | LedgerCovLiquidityMeasurement\_LedgerCovLiquidityInflowOutflowBalanceCompany    | Summering av kontant innflyt, utflyt og saldo ved hjelp av regnskapsvalutaen for hvert firma |
 | LedgerCovLiquidityMeasurement\_LedgerCovLiquidityInflowOutflowBalanceEnterprise | Summering av kontant innflyt, utflyt og saldo ved hjelp av systemvalutaen for alle firmaer |
 | LedgerCovLiquidityMeasurement\_LedgerCovLiquidityTransactionCurrency            | Summering av netto transaksjonsbeløp og saldo for valutaer ved hjelp av transaksjonsvalutaen |
-
-

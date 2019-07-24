@@ -3,7 +3,7 @@ title: Endre banner eller logo
 description: Følgende prosedyre viser hvordan systemansvarlige kan oppdatere banneret eller logobilde som vises for en juridisk enhet.
 author: aneesmsft
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 06/21/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: aneesa
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: ed0a4e31e840f771f1620b42518ed0e03dbad151
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 78300008ac819f8ba82212f7aecaa73246ab774d
+ms.sourcegitcommit: 33e98f89294086334fe9c0a350abb6a52ef9dacb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1561790"
+ms.lasthandoff: 06/28/2019
+ms.locfileid: "1711160"
 ---
 # <a name="change-the-banner-or-logo"></a>Endre banner eller logo
 
@@ -29,16 +29,14 @@ ms.locfileid: "1561790"
 
 Følgende prosedyre viser hvordan systemansvarlige kan oppdatere banneret eller logobilde som vises for en juridisk enhet. Demonstrasjonsdatafirmaet USMF brukes til å opprette denne fremgangsmåten.
 
-1. Gå til Organisasjonsstyring > Organisasjoner > Juridiske enheter.
+1. Gå til **Navigasjonsrute > Moduler > Organisasjonsstyring > Organisasjoner > Juridiske enheter**.
 2. Velg den juridiske enheten som du vil oppdatere banneret eller en logoen for, i listen til venstre. Hvis det allerede er valgt, kan du gå til neste trinn.
-3. Utvid Bilder-delen. Hvis den allerede er utvidet, kan du gå til neste trinn.
-4. Klikk Rediger
-5. Velg Banner i feltet Firmabildetype for instrumentbord.
-6. Klikk Endre.
-    * Tips!  Den ideelle oppløsningen for et bannerbilde er 1920 x 281 piksler. Ideell bredde for et logobilde er 350 piksler.  
-    * Når opplastingen er fullført, skal du se det nye banner- eller logobildet i delen Instrumentbordbilde.  
-7. Klikk Lagre.
-8. Gå til Felles > Felles > Standard instrumentbord.
-    * Det nye banner- eller logobildet skal vises på instrumentbordet.  
-    * Du må kanskje endre firmaet til det du lastet opp banneret for, ved hjelp av firmavelgeren.  
-
+3. Utvid fanen **Instrumentbordbilde**.
+4. Velg **Endre**.
+    
+    Den ideelle oppløsningen for et bannerbilde er 1920 x 281 piksler. Ideell bredde for et logobilde er 350 piksler.
+    
+5. Velg **Lagre**.
+6. Gå til **Navigasjonsrute > Moduler > Felles > Felles > Standard instrumentbord**. Det nye banner- eller logobildet skal vises på instrumentbordet.  
+    
+    Du må kanskje endre firmaet til det du lastet opp banneret for, ved hjelp av firmavelgeren.  

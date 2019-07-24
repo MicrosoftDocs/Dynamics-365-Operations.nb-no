@@ -3,7 +3,7 @@ title: Hjelpesystem for Finance and Operations
 description: Dette emnet gir en oversikt over komponentene til hjelpesystemet for Microsoft Dynamics 365 for Finance and Operations.
 author: margoc
 manager: AnnBe
-ms.date: 11/13/2018
+ms.date: 06/11/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7c74ff55e0a9a81c058de802d70365d13d34c8ff
-ms.sourcegitcommit: 574d4dda83dcab94728a3d35fc53ee7e2b90feb0
+ms.openlocfilehash: da5b67bd67ff1a227a5f1812d41cdad9f062dfd0
+ms.sourcegitcommit: ad4d378afd88028d2002633a3cc8a67313cbeddd
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/22/2019
-ms.locfileid: "1595645"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "1625335"
 ---
 # <a name="finance-and-operations-help-system"></a>Hjelpesystem for Finance and Operations
 
@@ -95,16 +95,18 @@ Hvis du har tilbakemelding eller spørsmål om et emne, legger du igjen en komme
 
     ![Legg inn kommentar](./media/feedback.png)
 
-##### <a name="suggest-a-change-or-contribute-content-through-github"></a>Foreslå en endring eller bidra med innhold via GitHub
+### <a name="contribute-to-the-documentation"></a>Bidra til dokumentasjonen
 
-Hvis du vil foreslå en endring, må du har en GitHub-konto og signerer en lisensavtale for bidragsyter. Når du sender en pull-forespørsel, vil vi gå gjennom de foreslåtte endringene. Hvis det er nødvendig, vil vi diskutere dem internt og deretter kontakte deg.
+Du kan bidra til og redigere i dokumentasjonen for Finance and Operations. Begynn med å klikke **Rediger**-knappen (blyant) for et emne, eller gå til vårt repositorium på <https://github.com/MicrosoftDocs/dynamics-365-unified-operations-public>. Følgende video viser hvordan du kan bidra til dokumentasjonen vår.
 
-Begynn med å klikke **Rediger**-knappen (blyant) for et emne, eller gå til vårt repositorium på <https://github.com/MicrosoftDocs/dynamics-365-unified-operations-public>.
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE36liB]
 
-Hvis du vil ha mer informasjon, kan du se håndboken for vår bidragsyter: <https://github.com/MicrosoftDocs/dynamics-365-unified-operations-public/blob/live/CONTRIBUTING.md>.
+Videoen [Bidra til dokumentasjonen for Microsoft Dynamics 365](https://youtu.be/m5djioozRbg) (som vises ovenfor) er inkludert i [spillelisten for nyheter i Dynamics 365](https://www.youtube.com/playlist?list=PLcakwueIHoT-ErQZPP80qNKuEAr0wAAD9) på YouTube.
+
+Hvis du vil ha mer informasjon, kan du se veiledningen for bidragsytere på: <https://github.com/MicrosoftDocs/dynamics-365-unified-operations-public/blob/live/CONTRIBUTING.md>.
 
 > [!NOTE]
-> Vi godtar for øyeblikket bare bidrag til vårt engelske innholdssett.
+> Vi godtar for øyeblikket bare bidrag til vårt engelske innhold.
 
 ## <a name="task-guides"></a>Oppgaveveiledninger
 

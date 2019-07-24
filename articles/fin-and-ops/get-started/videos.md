@@ -3,7 +3,7 @@ title: Videoer for Finance and Operations
 description: Denne siden viser Microsoft-opprettede "Slik gjør du det"- og "Teknisk tale"-videoer i forbindelse med Dynamics 365 for Finance and Operations som er tilgjengelige på YouTube og andre områder.
 author: josaw1
 manager: AnnBe
-ms.date: 05/15/2019
+ms.date: 06/11/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.region: global
 ms.author: josaw
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.0.0, AX 8.0
-ms.openlocfilehash: 1b828382f9f81d796fcfaef0e9c7dc9450a97992
-ms.sourcegitcommit: 2bbc0eeca6826c529fb729b82d16f287c1ce05bb
+ms.openlocfilehash: 5ede5bfa3b7a61461adb1514b7e96c4eba5a75c7
+ms.sourcegitcommit: fdc37a3c2ca2bac5741e7017fb225344e64f041a
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "1591554"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "1625403"
 ---
 # <a name="videos-for-finance-and-operations"></a>Videoer for Finance and Operations
 
@@ -63,7 +63,11 @@ Videoene er oppført etter funksjon, så rull nedover for å se hele listen over
 - [Mobilt arbeidsområde for kostnadskontroll](https://youtu.be/imsuTg8rUVk)
 - [Komme i gang med Kostnadsregnskap](https://youtu.be/1pUDtJQZ8FU)
 - [Bruke Excel til kostnadsanalyse](https://youtu.be/-HKHYdClvx8)
-- [Utgiftserfaring](https://youtu.be/Ocy-MsTvEE0)
+- [Utgiftsopplevelse](https://youtu.be/Ocy-MsTvEE0)
+
+#### <a name="help-system"></a>Hjelpesystem
+
+- [Bidra til dokumentasjonen for Microsoft Dynamics 365](https://youtu.be/m5djioozRbg)
 
 #### <a name="intelligence"></a>Intelligens
 

@@ -18,17 +18,17 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: b88ba4386dbf3513d75990acca1c07fa6f0dc9b0
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 1c7c017cce26b6b250d899bba891d6823b40c282
+ms.sourcegitcommit: a6b32be10b6eb6340f8f68261bf62d0202c03dd1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1518761"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "1729732"
 ---
 # <a name="email-templates"></a>E-postmaler
 [!include[banner](../includes/banner.md)]
 
-Ved hjelp av e-postmalbiblioteket kan administratorer opprette et enhetlig tema og varemerking for alle e-postmeldinger som sendes via Microsoft Dynamics 365 for Talent: Attract. Administratorer kan også kuratere en samling med e-postinnholdsmaler som andre brukere kan bruke. Ansettelsesgruppen kan bruke disse malene i arbeidsflyten til å sende e-postmeldinger mer effektivt. Noen e-postmeldinger i Attract er konfigurert til å bli sendt automatisk, og administratoren kan bruke e-postmalbiblioteket til å tilpasse innholdet for disse e-postene.
+Ved hjelp av e-postmalbiblioteket kan administratorer opprette et enhetlig tema og varemerking for alle e-postmeldinger som sendes via Microsoft Dynamics 365 for Talent: Attract and Offer. Administratorer kan også kuratere en samling med e-postinnholdsmaler som andre brukere kan bruke. Ansettelsesgruppen kan bruke disse malene i arbeidsflyten til å sende e-postmeldinger mer effektivt. Noen e-postmeldinger er konfigurert til å bli sendt automatisk, og administratoren kan bruke e-postmalbiblioteket til å tilpasse innholdet for disse e-postene.
 
 > [!NOTE]
 > Hvis du vil bruke e-postmaler, må organisasjonen ha tillegget for omfattende ansettelse.
@@ -37,7 +37,7 @@ Ved hjelp av e-postmalbiblioteket kan administratorer opprette et enhetlig tema 
 
 Hvis du vil opprette konsekvent merking for alle e-postmeldinger, må administrator først konfigurere den globale toppteksten og bunnteksten for alle e-postmaler. I administrasjonssenteret, i **Innstillinger for e-postmal** i **Topptekst**-delen kan administratoren laste opp et bilde som skal brukes som topptekst eller banner for alle e-postmeldinger. Bildet kan være en firmalogo, et brevhode eller et hvilken som helst annet representativt bilde. Vi anbefaler at bredden er mellom 25 og 800 piksler, og at høyden er mellom 25 og 150 piksler, fordi disse dimensjonene er optimale for de fleste e-postklienter, for eksempel Microsoft Outlook. Bildet må være en JPEG-, JPG-, PNG- eller SVG-fil, og størrelsen på må være mindre enn 1 megabyte (MB). Når et bilde er lastet opp, genereres og vises det en forhåndsvisning av hodet. Hvis hodebildet må fjernes eller erstattes, kan administratoren bruke **Fjern**-alternativet over forhåndsvisningen.
 
-I **Bunntekst**-delen kan administratoren gi koblinger til firmaets personvernerklæring for kommunikasjon og vilkårene. Disse koblingene er inkludert i en bunntekst som blir generert automatisk. Deretter vises en forhåndsvisning av denne bunnteksten.
+I **Bunntekst**-delen kan administratoren gi koblinger til firmaets personvernerklæring for kommunikasjon og vilkårene. Disse koblingene er inkludert i en bunntekst som blir generert automatisk. Deretter vises en forhåndsvisning av denne bunnteksten. Administratoren kan også velge et bestemt språk som bunntekster i e-postmeldinger skal sendes på, som en del av alle e-postmeldinger. Den samme språkkonfigurasjonen brukes også til å sette sammen tabellen for intervjusammendrag. 
 
 Husk å lagre endringene før du lukker administrasjonssenteret.
 
@@ -46,7 +46,7 @@ Husk å lagre endringene før du lukker administrasjonssenteret.
 
 ## <a name="email-template-library"></a>E-postmalbibliotek 
 
-Når de globale malkonfigurasjonene er satt opp, kan administratoren begynne å opprette og kuratere maler for alle e-postmeldinger som sendes fra Attract. E-postmalbiblioteket er bare tilgjengelig for administratorer. Hvis du vil åpne biblioteket, velger du **E-postmaler**-kategorien på hovednavigasjonsmenyen. Biblioteket er inndelt etter de ulike aktivitetene i Attract som e-postmeldinger må sendes til, for eksempel planlegging, vurdering og jobboppretting. Administratoren kan velge en hvilken som helst kategori for å vise alle e-typene som er knyttet til aktiviteten. Velg for eksempel **Planlegging** for å vise de forskjellige typene e-post som sendes i løpet av planleggingsprosessen, og alle malene som er tilgjengelige for hver type e-post. Hvert avsnitt i en kategori representerer en type e-post.
+Når de globale malkonfigurasjonene er satt opp, kan administratoren begynne å opprette og kuratere maler for alle e-postmeldinger som sendes fra Attract and Offer. E-postmalbiblioteket er bare tilgjengelig for administratorer. Hvis du vil åpne biblioteket, velger du **E-postmaler**-kategorien på hovednavigasjonsmenyen. Biblioteket er inndelt etter de ulike aktivitetene i Attract som e-postmeldinger må sendes til, for eksempel planlegging, vurdering og jobboppretting og -tilbud. Administratoren kan velge en hvilken som helst kategori for å vise alle e-typene som er knyttet til aktiviteten. Velg for eksempel **Planlegging** for å vise de forskjellige typene e-post som sendes i løpet av planleggingsprosessen, og alle malene som er tilgjengelige for hver type e-post. Hvert avsnitt i en kategori representerer en type e-post.
 
 Noen typer e-post kan ha flere mottakere. I **Planlegging**-kategorien sendes for eksempel e-postmeldingene som sendes når tidsplansammendraget for intervjuet er nødvendig, både til kandidater og intervjuere. Hver del har to primære kolonner: **Maltittel** og **Mottaker**. Hver rad i en del representerer én enkelt mal for en type e-post. Et hengelåssymbol vises først i raden for hver mal. Dette symbolet indikerer at malen er standardmalen som følger med Attract, og at den ikke kan slettes. For en hvilken som helst mal kan administratoren bruke ellipseknappen (**...**) til å kopiere malen, angi den som en standardmal, eller slette den. Når en mal er angitt som en standardmal, kan én av to virkemåter forekomme. Virkemåten er angitt av merket eller merkene som vises i raden for malen:
 

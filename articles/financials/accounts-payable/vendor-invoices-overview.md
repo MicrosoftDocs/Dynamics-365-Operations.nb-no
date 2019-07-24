@@ -3,7 +3,7 @@ title: Oversikt over leverandørfakturaer
 description: Dette emnet inneholder generell informasjon om leverandørfakturaer. Leverandørfakturaer er forespørsler om betaling for produkter og tjenester som er mottatt. Leverandørfakturaer kan representere en faktura for pågående tjenester, eller den kan være basert på bestillinger for bestemte varer og tjenester.
 author: abruer
 manager: AnnBe
-ms.date: 06/04/2019
+ms.date: 06/11/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b57c18b5b2cf690111511e4c5a92d51fc23dd68c
-ms.sourcegitcommit: 901ec3b360303bb8b4d9a9dcfecc6d75d7f844a0
+ms.openlocfilehash: d02eee989e5bebd1cad0b1392ec19aaa918d9db5
+ms.sourcegitcommit: f9444077022a6c678090d02d0f9d4ec0e54b7ca9
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "1618279"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "1625085"
 ---
 # <a name="vendor-invoices-overview"></a>Oversikt over leverandørfakturaer
 
@@ -91,13 +91,6 @@ Du kan bruke siden **Gjenopprett leverandørfakturaer** til å gjenopprette elle
 
 Du kan få tilgang til siden **Gjenopprett leverandørfakturaer** bare hvis **Gjenopprett leverandørfakturaer i bruk**-sikkerhetsplikten og -rettigheten er tilordnet til deg. I tillegg må **Tillat gjenoppretting av leverandørfaktura**-parameter på siden **Leverandørparametere** være aktivert.
 
-## <a name="resetting-the-workflow-status-for-vendor-invoices-from-unrecoverable-to-draft"></a>Tilbakestille arbeidsflytstatusen for leverandørfakturaer fra Uopprettelig til Utkast
-
-En arbeidsflytforekomst som er stoppet på grunn av en uopprettelig feil, vil ha arbeidsflytstatusen **Uopprettelig**. Når statusen til en leverandørfakturaarbeidsflyt er **Uopprettelig**, kan du tilbakestille den til **Utkast**. Du kan deretter redigere leverandørfakturaen. Denne funksjonen er tilgjengelig hvis parameteren **Tilbakestill utkaststatus for arbeidsflyt for leverandørfaktura** på siden **Funksjonsbehandling** er slått på.
-
-Du kan bruke siden **Tilbakestill leverandørfakturastatus** for å tilbakestille arbeidsflytstatusen til **Utkast**. Du kan åpne denne siden fra **Periodisk oppgave**-navigasjon. Siden viser alle leverandørfakturaer som har arbeidsflytstatusen **Uopprettelig** i den gjeldende juridiske enheten. Den viser også brukeren som sendte hver faktura til arbeidsflyten og fakturaidentifikatoren, og gir en kobling til arbeidsflytloggen. Hvis du vil tilbakestille arbeidsflytstatusen til **Utkast**, merker du én eller flere fakturaer, og deretter velger du **Oppdater til utkast**. Når arbeidsflytstatusen er tilbakestilt til **Utkast**, blir den tilgjengelig for redigering på siden **Leverandørfaktura**.
-
-Du kan bare få tilgang til siden **Tilbakestill leverandørfakturastatus** hvis sikkerhetsplikten **Oppretthold status for arbeidsflyt for leverandørfaktura** og rettigheten **Tilbakestill status for arbeidsflyt for leverandørfaktura** er tilordnet til deg.
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 
