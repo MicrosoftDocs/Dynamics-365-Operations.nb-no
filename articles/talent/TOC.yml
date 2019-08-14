@@ -8,6 +8,12 @@
         - name: Hva er nytt eller endret i Talent?
           href: whats-new.md
           items:
+            - name: 23. juli 2019
+              href: whats-new-talent-july-24-2019.md
+            - name: 16. juli 2019
+              href: whats-new-talent-july-16-2019.md
+            - name: 9. juli 2019
+              href: whats-new-talent-july-9-2019.md
             - name: 2. juli 2019
               href: whats-new-talent-july-2-2019.md
             - name: 25. juni 2019
@@ -102,8 +108,6 @@
           href: ../fin-and-ops/get-started/embed-power-apps.md?toc=/dynamics365/unified-operations/talent/toc.json
         - name: Core HR og Common Data Service
           href: CoreHREntities.md
-        - name: Få tilgang til forhåndsvisningsfunksjoner
-          href: access-preview-feature.md
         - name: Få kundestøtte for Talent
           href: talent-support.md
     - name: Bemanne organisasjonen med Attract
@@ -112,48 +116,68 @@
           href: attract-comprehensive-hiring.md
         - name: Funksjoner og egenskaper for Attract
           href: attract-overview.md
-        - name: Vanlige spørsmål om LinkedIn
-          href: attract-linkedin-faq.md
-        - name: Konfigurere e-postinnstillinger
-          href: attract-configure-email-settings.md
-        - name: Opprette en prosessmal i Attract
-          href: Process-templates-Attract.md
+        - name: Vanlige spørsmål
+          items:
+            - name: Vanlige spørsmål om LinkedIn-integrering
+              href: attract-linkedin-faq.md
+        - name: Konfigurere systeminnstillinger
+          items:
+            - name: Konfigurere firmainformasjon
+              href: admin-settings-attract.md
+            - name: Angi brukertillatelser
+              href: security-attract.md
+            - name: Behandle funksjoner
+              href: access-preview-feature.md
+            - name: Konfigurere karriereområdet
+              href: career-site.md
+            - name: Aktivere Broadbean-integrering
+              href: attract-admin-job-board-settings.md
+            - name: Konfigurere e-postinnstillinger
+              href: attract-configure-email-settings.md
+            - name: Konfigurere LinkedIn-integrering
+              href: attract-admin-linkedin.md
+        - name: Opprette en ansettelsesprosess
+          items:
+            - name: Opprette en prosessmal
+              href: process-templates-attract.md
+            - name: Aktiviteter i ansettelsesprosesser
+              href: activities-attract.md
+            - name: E-postmaler
+              href: email-templates.md
+            - name: Bruke analyserapporter
+              href: analytic-reports.md
         - name: Opprette og postere jobber
-          href: Creating-jobs-Attract.md
-        - name: Konfigurere integrering med LinkedIn
-          href: attract-admin-linkedin.md
-        - name: Postere jobber til LinkedIn fra Attract
-          href: attract-post-jobs-to-linkedin.md
-        - name: Postere jobber til Broadbean fra Attract
-          href: posting-jobs-external.md
-        - name: Finne kandidater ved hjelp av talentsamlinger
-          href: attract-talent-pools.md
-        - name: Finne kandidater med LinkedIn Recruiter
-          href: attract-linkedin-recruiter.md
-        - name: Aktiviteter i ansettelsesprosessene
-          href: activities-attract.md
-        - name: Planlegging og tilbakemelding for intervju
-          href: interview-scheduling-feedback.md
+          items:
+            - name: Opprette en jobb
+              href: creating-jobs-attract.md
+            - name: Postere jobber til LinkedIn
+              href: attract-post-jobs-to-linkedin.md
+            - name: Postere jobber til Broadbean
+              href: posting-jobs-external.md
+            - name: Lukke en jobb
+              href: attract-close-job.md
+        - name: Finne kandidater
+          items:
+            - name: Finne kandidater med talentsamlinger
+              href: attract-talent-pools.md
+            - name: Finne kandidater med LinkedIn Recruiter
+              href: attract-linkedin-recruiter.md
+            - name: Spore kandidatkilder
+              href: source-tracking.md
+            - name: Intelligente anbefalinger
+              href: Intelligent-Recommendations.md
+        - name: Konfigurere intervjuer
+          items:
+            - name: Planlegging og tilbakemelding for intervju
+              href: interview-scheduling-feedback.md
+        - name: Opprette et tilbud
+          items:
+            - name: Konfigurere tilbudsbehandling
+              href: offer-setup.md
+            - name: 'Opprette, godkjenne og signere tilbud'
+              href: creating-offers.md
         - name: Utvidelsesmulighet i Attract
           href: extensibility-attract.md
-        - name: Karriereområde-funksjonalitet i Attract
-          href: career-site.md
-        - name: Konfigurere tilbudsbehandling
-          href: offer-setup.md
-        - name: 'Opprette, godkjenne og signere tilbud'
-          href: creating-offers.md
-        - name: E-postmaler
-          href: email-templates.md
-        - name: Administrasjon av sikkerhet og rolle i Attract
-          href: security-attract.md
-        - name: Administratorinnstillinger i Attract
-          href: Admin-Settings-Attract.md
-        - name: Intelligente anbefalinger
-          href: Intelligent-Recommendations.md
-        - name: Spore kilder for kandidatprofiler og søknader
-          href: source-tracking.md
-        - name: Bruke analyserapporter for å få innsikt i ansettelsesprosesser
-          href: analytic-reports.md
     - name: Ønske nyansatte velkommen med Onboard
       items:
         - name: Komme i gang med Onboard
@@ -186,6 +210,8 @@
               href: set-up-hr-parameters-across-legal-entities.md
             - name: Definere firmaspesifikke parametere for Personale
               href: set-up-company-specific-hr-parameters.md
+            - name: Dato- og klokkeslettfelt i Talent
+              href: date-time-fields-in-talent.md
             - name: Vanlige spørsmål om personalhandlinger
               href: personnel-actions-faq.md
             - name: Formalisere forretningsprosesser
