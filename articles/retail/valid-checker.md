@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2019-01-15
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 1fc894206f9d90fce1e2eab292ac241e9d943e23
-ms.sourcegitcommit: aec1dcd44274e9b8d0770836598fde5533b7b569
+ms.openlocfilehash: f94a674e021d4f23480433440cd239b851491d87
+ms.sourcegitcommit: 2c73749779274e0b0abbcb4041bbc1df0fb6d6e4
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2019
-ms.locfileid: "1617326"
+ms.lasthandoff: 07/26/2019
+ms.locfileid: "1790427"
 ---
 # <a name="retail-transaction-consistency-checker"></a>Konsekvenskontroll for detaljhandelstransaksjon
 
@@ -50,7 +50,8 @@ Den satsvise prosessen **Valider butikktransaksjoner** kontrollerer konsekvensen
 - **Kundekonto** – validerer at kundekontoen i transaksjonstabellene for detaljhandel finnes i malen Hovedkontorkunde.
 - **Linjeantall** – validerer at antallet linjer, som gjengitt i transaksjonstoppteksttabellen, samsvarer med antallet linjer i salgstransaksjonstabellene.
 - **Pris inkluderer avgift** – validerer at parameteren **Pris inkluderer avgift** er konsekvent i alle transaksjonslinjene.
-- **Bruttobeløp** – validerer at bruttobeløpet i toppteksten er summen av nettobeløpene på linjene pluss avgiftsbeløpet.
+- **Betalingsbeløp** – validerer at betalingspostene samsvarer med betalingsbeløpet i hodet.
+- **Bruttobeløp** – validerer at bruttobeløpet i hodet er summen av nettobeløpene på linjene pluss avgiftsbeløpet.
 - **Nettobeløp** – validerer at nettobeløpet i toppteksten er summen av nettobeløpene på linjene.
 - **Under-/overbetaling** – validerer at differansen mellom bruttobeløpet i toppteksten og betalingsbeløpet ikke overskrider konfigurasjonen for maksimal under-/overbetaling.
 - **Rabattbeløp** – validerer at rabattbeløpet i rabattabellene og rabattbeløpet i tabellene med detaljhandelstransaksjonslinjer er konsekvente, og at rabattbeløpet i toppteksten er summen av rabattbeløpene på linjene.
@@ -58,10 +59,11 @@ Den satsvise prosessen **Valider butikktransaksjoner** kontrollerer konsekvensen
 - **Gavekortvare** – Retail støtter ikke retur av gavekortvarer. Saldoen på et gavekort kan imidlertid innløses i kontanter. En gavekortvare som behandles som en returlinje i stedet for en linje for innløsing i kontanter, vil mislykkes i utdragsposteringsprosessen. Valideringsprosessen for gavekortvarer sikrer at de eneste returlinjene for gavekortvarer i detaljhandelstransaksjonstabellene er linjene for innløsing av gavekort i kontanter.
 - **Negativ pris** – validerer at det ikke finnes transaksjonslinjer med negativ pris.
 - **Vare og variant** – validerer at varer og varianter på transaksjonslinjene finnes i hovedfilen for varer og varianter.
+- **Avgiftsbeløp** – validerer at mva-poster samsvarer med avgiftsbeløpet på linjene. 
 
 ## <a name="set-up-the-consistency-checker"></a>Definere konsekvenskontrollen
 
-Konfigurer den satsvise prosessen Valider butikktransaksjoner på **Detaljhandel \> Detaljhandel-IT \> POS-postering** for periodiske kjøringer. Den satsvise jobben kan planlegges basert på butikkens organisasjonshierarki, på samme måte som prosessene Beregne utdrag satsvis og Postere utdrag satsvis blir definert. Det anbefales at du konfigurerer denne satsvise prosessen til å kjøre flere ganger daglig, og planlegg den slik at den kjøres på slutten av hver kjøring av P-jobb.
+Konfigurer partiprosessen Valider butikktransaksjoner på **Detaljhandel \> Detaljhandel-IT \> Salgsstedspostering** for periodiske kjøringer. Den satsvise jobben kan planlegges basert på butikkens organisasjonshierarki, på samme måte som prosessene Beregne utdrag satsvis og Postere utdrag satsvis blir definert. Det anbefales at du konfigurerer denne satsvise prosessen til å kjøre flere ganger daglig, og planlegg den slik at den kjøres på slutten av hver kjøring av P-jobb.
 
 ## <a name="results-of-validation-process"></a>Resultater av valideringsprosess
 
