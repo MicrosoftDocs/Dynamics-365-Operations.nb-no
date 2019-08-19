@@ -10,64 +10,64 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ProdTableListPage, ProdTableCreate, ProdTable, ProdBOM, ProdRoute
 audience: Application User
-ms.reviewer: shylaw
+ms.reviewer: josaw
 ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 468465e3e82ff608d7d290b71f058cd790a0f013
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 67a15a5c52bd1032c8bee8652f1f13d1f1a4cb64
+ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1564120"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1838589"
 ---
-# <a name="create-a-production-order"></a><span data-ttu-id="4aa91-103">Opprette en produksjonsordre</span><span class="sxs-lookup"><span data-stu-id="4aa91-103">Create a production order</span></span>
+# <a name="create-a-production-order"></a><span data-ttu-id="59f9a-103">Opprette en produksjonsordre</span><span class="sxs-lookup"><span data-stu-id="59f9a-103">Create a production order</span></span>
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="4aa91-104">Denne fremgangsmåten viser hvordan du oppretter en produksjonsordre.</span><span class="sxs-lookup"><span data-stu-id="4aa91-104">This procedure shows how to create a production order.</span></span> <span data-ttu-id="4aa91-105">Demonstrasjonsdatafirmaet USMF brukes til å opprette denne fremgangsmåten.</span><span class="sxs-lookup"><span data-stu-id="4aa91-105">The demo data company used to create this procedure is USMF.</span></span> <span data-ttu-id="4aa91-106">Dette er den første fremgangsmåten av sju som forklarer livssyklusen for produksjonsordren.</span><span class="sxs-lookup"><span data-stu-id="4aa91-106">This is the first procedure out of seven which explains the production order lifecycle.</span></span>
+<span data-ttu-id="59f9a-104">Denne fremgangsmåten viser hvordan du oppretter en produksjonsordre.</span><span class="sxs-lookup"><span data-stu-id="59f9a-104">This procedure shows how to create a production order.</span></span> <span data-ttu-id="59f9a-105">Demonstrasjonsdatafirmaet USMF brukes til å opprette denne fremgangsmåten.</span><span class="sxs-lookup"><span data-stu-id="59f9a-105">The demo data company used to create this procedure is USMF.</span></span> <span data-ttu-id="59f9a-106">Dette er den første fremgangsmåten av sju som forklarer livssyklusen for produksjonsordren.</span><span class="sxs-lookup"><span data-stu-id="59f9a-106">This is the first procedure out of seven which explains the production order lifecycle.</span></span>
 
 
-## <a name="create-a-production-order"></a><span data-ttu-id="4aa91-107">Opprette en produksjonsordre</span><span class="sxs-lookup"><span data-stu-id="4aa91-107">Create a production order</span></span>
-1. <span data-ttu-id="4aa91-108">Gå til Produksjonskontroll > Produksjonsordrer > Alle produksjonsordrer.</span><span class="sxs-lookup"><span data-stu-id="4aa91-108">Go to Production control > Production orders > All production orders.</span></span>
-2. <span data-ttu-id="4aa91-109">Klikk Ny produksjonsordre.</span><span class="sxs-lookup"><span data-stu-id="4aa91-109">Click New production order.</span></span>
-3. <span data-ttu-id="4aa91-110">Skriv inn D0001 i feltet Varenummer.</span><span class="sxs-lookup"><span data-stu-id="4aa91-110">In the Item number field, type 'D0001'.</span></span>
-4. <span data-ttu-id="4aa91-111">Angi en leveringsdato i Levering-feltet.</span><span class="sxs-lookup"><span data-stu-id="4aa91-111">In the Delivery field, enter a date.</span></span>
-    * <span data-ttu-id="4aa91-112">Leveringsdatoen angir når produksjonsordren skal avsluttes for å levere i tide.</span><span class="sxs-lookup"><span data-stu-id="4aa91-112">The delivery date indicates when the production order should end in order to deliver on time.</span></span> <span data-ttu-id="4aa91-113">Denne datoen kan brukes i planleggingsprosessen.</span><span class="sxs-lookup"><span data-stu-id="4aa91-113">This date can be used in the scheduling process.</span></span> <span data-ttu-id="4aa91-114">Du kan for eksempel planlegge ordren baklengs fra leveringsdatoen.</span><span class="sxs-lookup"><span data-stu-id="4aa91-114">For example, you can schedule the order backward from the delivery date.</span></span>  
-5. <span data-ttu-id="4aa91-115">Sett verdien for Antall til 20.</span><span class="sxs-lookup"><span data-stu-id="4aa91-115">Set Quantity to '20'.</span></span>
-    * <span data-ttu-id="4aa91-116">Merk: Feltet for stykklistenummer viser automatisk nummeret til eventuelle aktive stykklister for den gjeldende varen, men du kan endre stykklisten for produksjonsordren ved å velge en aktiv stykkliste fra listen over godkjente stykklisteversjoner.</span><span class="sxs-lookup"><span data-stu-id="4aa91-116">Note: The BOM number field automatically displays the number of any active BOM for the current item, but you can change the BOM for the production order by selecting an active BOM from the list of approved BOM versions.</span></span>    <span data-ttu-id="4aa91-117">Feltet for rutenummer viser automatisk nummeret til eventuelle aktive ruter for den gjeldende varen, men du kan endre ruten for produksjonsordren ved å velge en aktiv rute fra listen over godkjente ruteversjoner.</span><span class="sxs-lookup"><span data-stu-id="4aa91-117">The Route number field automatically displays the number of any active Route for the current item, but you can change the Route for the production order by selecting an active Route from the list of approved Route versions.</span></span>  
-6. <span data-ttu-id="4aa91-118">Klikk Opprett.</span><span class="sxs-lookup"><span data-stu-id="4aa91-118">Click Create.</span></span>
+## <a name="create-a-production-order"></a><span data-ttu-id="59f9a-107">Opprette en produksjonsordre</span><span class="sxs-lookup"><span data-stu-id="59f9a-107">Create a production order</span></span>
+1. <span data-ttu-id="59f9a-108">Gå til Produksjonskontroll > Produksjonsordrer > Alle produksjonsordrer.</span><span class="sxs-lookup"><span data-stu-id="59f9a-108">Go to Production control > Production orders > All production orders.</span></span>
+2. <span data-ttu-id="59f9a-109">Klikk Ny produksjonsordre.</span><span class="sxs-lookup"><span data-stu-id="59f9a-109">Click New production order.</span></span>
+3. <span data-ttu-id="59f9a-110">Skriv inn D0001 i feltet Varenummer.</span><span class="sxs-lookup"><span data-stu-id="59f9a-110">In the Item number field, type 'D0001'.</span></span>
+4. <span data-ttu-id="59f9a-111">Angi en leveringsdato i Levering-feltet.</span><span class="sxs-lookup"><span data-stu-id="59f9a-111">In the Delivery field, enter a date.</span></span>
+    * <span data-ttu-id="59f9a-112">Leveringsdatoen angir når produksjonsordren skal avsluttes for å levere i tide.</span><span class="sxs-lookup"><span data-stu-id="59f9a-112">The delivery date indicates when the production order should end in order to deliver on time.</span></span> <span data-ttu-id="59f9a-113">Denne datoen kan brukes i planleggingsprosessen.</span><span class="sxs-lookup"><span data-stu-id="59f9a-113">This date can be used in the scheduling process.</span></span> <span data-ttu-id="59f9a-114">Du kan for eksempel planlegge ordren baklengs fra leveringsdatoen.</span><span class="sxs-lookup"><span data-stu-id="59f9a-114">For example, you can schedule the order backward from the delivery date.</span></span>  
+5. <span data-ttu-id="59f9a-115">Sett verdien for Antall til 20.</span><span class="sxs-lookup"><span data-stu-id="59f9a-115">Set Quantity to '20'.</span></span>
+    * <span data-ttu-id="59f9a-116">Merk: Feltet for stykklistenummer viser automatisk nummeret til eventuelle aktive stykklister for den gjeldende varen, men du kan endre stykklisten for produksjonsordren ved å velge en aktiv stykkliste fra listen over godkjente stykklisteversjoner.</span><span class="sxs-lookup"><span data-stu-id="59f9a-116">Note: The BOM number field automatically displays the number of any active BOM for the current item, but you can change the BOM for the production order by selecting an active BOM from the list of approved BOM versions.</span></span>    <span data-ttu-id="59f9a-117">Feltet for rutenummer viser automatisk nummeret til eventuelle aktive ruter for den gjeldende varen, men du kan endre ruten for produksjonsordren ved å velge en aktiv rute fra listen over godkjente ruteversjoner.</span><span class="sxs-lookup"><span data-stu-id="59f9a-117">The Route number field automatically displays the number of any active Route for the current item, but you can change the Route for the production order by selecting an active Route from the list of approved Route versions.</span></span>  
+6. <span data-ttu-id="59f9a-118">Klikk Opprett.</span><span class="sxs-lookup"><span data-stu-id="59f9a-118">Click Create.</span></span>
 
-## <a name="validate-the-production-order"></a><span data-ttu-id="4aa91-119">Validere produksjonsordren</span><span class="sxs-lookup"><span data-stu-id="4aa91-119">Validate the production order</span></span>
-1. <span data-ttu-id="4aa91-120">Klikk koblingen i den valgte raden i listen.</span><span class="sxs-lookup"><span data-stu-id="4aa91-120">In the list, click the link in the selected row.</span></span>
-    * <span data-ttu-id="4aa91-121">Klikk koblingen for produksjonsordrenummeret du nettopp opprettet.</span><span class="sxs-lookup"><span data-stu-id="4aa91-121">Click the link for the production order number that you have just created.</span></span> <span data-ttu-id="4aa91-122">Dette åpner siden med detaljer for ordren.</span><span class="sxs-lookup"><span data-stu-id="4aa91-122">This will open the details page for the order.</span></span>  
-2. <span data-ttu-id="4aa91-123">Klikk Rediger.</span><span class="sxs-lookup"><span data-stu-id="4aa91-123">Click Edit.</span></span>
-3. <span data-ttu-id="4aa91-124">Angi en leveringsdato i Levering-feltet.</span><span class="sxs-lookup"><span data-stu-id="4aa91-124">In the Delivery field, enter a date.</span></span>
-    * <span data-ttu-id="4aa91-125">Du kan for eksempel endre leveringsdatoen for produksjonsordren.</span><span class="sxs-lookup"><span data-stu-id="4aa91-125">For example, you can change the delivery date for the production order.</span></span>  
-4. <span data-ttu-id="4aa91-126">Klikk Lagre.</span><span class="sxs-lookup"><span data-stu-id="4aa91-126">Click Save.</span></span>
-5. <span data-ttu-id="4aa91-127">Lukk siden.</span><span class="sxs-lookup"><span data-stu-id="4aa91-127">Close the page.</span></span>
+## <a name="validate-the-production-order"></a><span data-ttu-id="59f9a-119">Validere produksjonsordren</span><span class="sxs-lookup"><span data-stu-id="59f9a-119">Validate the production order</span></span>
+1. <span data-ttu-id="59f9a-120">Klikk koblingen i den valgte raden i listen.</span><span class="sxs-lookup"><span data-stu-id="59f9a-120">In the list, click the link in the selected row.</span></span>
+    * <span data-ttu-id="59f9a-121">Klikk koblingen for produksjonsordrenummeret du nettopp opprettet.</span><span class="sxs-lookup"><span data-stu-id="59f9a-121">Click the link for the production order number that you have just created.</span></span> <span data-ttu-id="59f9a-122">Dette åpner siden med detaljer for ordren.</span><span class="sxs-lookup"><span data-stu-id="59f9a-122">This will open the details page for the order.</span></span>  
+2. <span data-ttu-id="59f9a-123">Klikk Rediger.</span><span class="sxs-lookup"><span data-stu-id="59f9a-123">Click Edit.</span></span>
+3. <span data-ttu-id="59f9a-124">Angi en leveringsdato i Levering-feltet.</span><span class="sxs-lookup"><span data-stu-id="59f9a-124">In the Delivery field, enter a date.</span></span>
+    * <span data-ttu-id="59f9a-125">Du kan for eksempel endre leveringsdatoen for produksjonsordren.</span><span class="sxs-lookup"><span data-stu-id="59f9a-125">For example, you can change the delivery date for the production order.</span></span>  
+4. <span data-ttu-id="59f9a-126">Klikk Lagre.</span><span class="sxs-lookup"><span data-stu-id="59f9a-126">Click Save.</span></span>
+5. <span data-ttu-id="59f9a-127">Lukk siden.</span><span class="sxs-lookup"><span data-stu-id="59f9a-127">Close the page.</span></span>
 
-## <a name="update-the-bom"></a><span data-ttu-id="4aa91-128">Oppdatere stykklisten</span><span class="sxs-lookup"><span data-stu-id="4aa91-128">Update the BOM</span></span>
-1. <span data-ttu-id="4aa91-129">Klikk Produksjonsordre i handlingsruten.</span><span class="sxs-lookup"><span data-stu-id="4aa91-129">On the Action Pane, click Production order.</span></span>
-2. <span data-ttu-id="4aa91-130">Klikk Stykkliste.</span><span class="sxs-lookup"><span data-stu-id="4aa91-130">Click BOM.</span></span>
-    * <span data-ttu-id="4aa91-131">Åpne stykklistesiden for å validere stykklistedataene som ble kopiert fra standarddataene da produksjonsordren ble opprettet.</span><span class="sxs-lookup"><span data-stu-id="4aa91-131">Open the BOM page to validate the BOM data that was copied from the default data when the production order was created.</span></span> <span data-ttu-id="4aa91-132">I denne prosedyren må du oppdatere antallet for en stykkliste.</span><span class="sxs-lookup"><span data-stu-id="4aa91-132">In this procedure, you need to update the quantity for a BOM.</span></span>  
-3. <span data-ttu-id="4aa91-133">Klikk Rediger.</span><span class="sxs-lookup"><span data-stu-id="4aa91-133">Click Edit.</span></span>
-4. <span data-ttu-id="4aa91-134">Angi et tall i feltet Antall.</span><span class="sxs-lookup"><span data-stu-id="4aa91-134">In the Quantity field, enter a number.</span></span>
-    * <span data-ttu-id="4aa91-135">Endring av antallet på stykklistelinjen påvirker kostnadsestimatet av materialforbruk for produksjonsordren.</span><span class="sxs-lookup"><span data-stu-id="4aa91-135">Changing the quantity on the BOM line affects the cost estimate of material consumption for the production order.</span></span>  
-5. <span data-ttu-id="4aa91-136">Klikk Lagre.</span><span class="sxs-lookup"><span data-stu-id="4aa91-136">Click Save.</span></span>
-6. <span data-ttu-id="4aa91-137">Lukk siden.</span><span class="sxs-lookup"><span data-stu-id="4aa91-137">Close the page.</span></span>
+## <a name="update-the-bom"></a><span data-ttu-id="59f9a-128">Oppdatere stykklisten</span><span class="sxs-lookup"><span data-stu-id="59f9a-128">Update the BOM</span></span>
+1. <span data-ttu-id="59f9a-129">Klikk Produksjonsordre i handlingsruten.</span><span class="sxs-lookup"><span data-stu-id="59f9a-129">On the Action Pane, click Production order.</span></span>
+2. <span data-ttu-id="59f9a-130">Klikk Stykkliste.</span><span class="sxs-lookup"><span data-stu-id="59f9a-130">Click BOM.</span></span>
+    * <span data-ttu-id="59f9a-131">Åpne stykklistesiden for å validere stykklistedataene som ble kopiert fra standarddataene da produksjonsordren ble opprettet.</span><span class="sxs-lookup"><span data-stu-id="59f9a-131">Open the BOM page to validate the BOM data that was copied from the default data when the production order was created.</span></span> <span data-ttu-id="59f9a-132">I denne prosedyren må du oppdatere antallet for en stykkliste.</span><span class="sxs-lookup"><span data-stu-id="59f9a-132">In this procedure, you need to update the quantity for a BOM.</span></span>  
+3. <span data-ttu-id="59f9a-133">Klikk Rediger.</span><span class="sxs-lookup"><span data-stu-id="59f9a-133">Click Edit.</span></span>
+4. <span data-ttu-id="59f9a-134">Angi et tall i feltet Antall.</span><span class="sxs-lookup"><span data-stu-id="59f9a-134">In the Quantity field, enter a number.</span></span>
+    * <span data-ttu-id="59f9a-135">Endring av antallet på stykklistelinjen påvirker kostnadsestimatet av materialforbruk for produksjonsordren.</span><span class="sxs-lookup"><span data-stu-id="59f9a-135">Changing the quantity on the BOM line affects the cost estimate of material consumption for the production order.</span></span>  
+5. <span data-ttu-id="59f9a-136">Klikk Lagre.</span><span class="sxs-lookup"><span data-stu-id="59f9a-136">Click Save.</span></span>
+6. <span data-ttu-id="59f9a-137">Lukk siden.</span><span class="sxs-lookup"><span data-stu-id="59f9a-137">Close the page.</span></span>
 
-## <a name="update-the-production-route"></a><span data-ttu-id="4aa91-138">Oppdatere produksjonsruten</span><span class="sxs-lookup"><span data-stu-id="4aa91-138">Update the production route</span></span>
-1. <span data-ttu-id="4aa91-139">Klikk Produksjonsordre i handlingsruten.</span><span class="sxs-lookup"><span data-stu-id="4aa91-139">On the Action Pane, click Production order.</span></span>
-2. <span data-ttu-id="4aa91-140">Klikk Rute.</span><span class="sxs-lookup"><span data-stu-id="4aa91-140">Click Route.</span></span>
-    * <span data-ttu-id="4aa91-141">Åpne rutesiden for å validere dataene i produksjonsruten som ble kopiert fra standarddataene da produksjonsordren ble opprettet.</span><span class="sxs-lookup"><span data-stu-id="4aa91-141">Open the Route page to validate the data of the production route that was copied from the default data when the order was created.</span></span> <span data-ttu-id="4aa91-142">I denne prosedyren må du oppdatere antallet for en av operasjonene i produksjonsruten.</span><span class="sxs-lookup"><span data-stu-id="4aa91-142">In this procedure, you need to update the quantity for one of the operations in the production route.</span></span>  
-3. <span data-ttu-id="4aa91-143">Finn og velg ønsket post i listen.</span><span class="sxs-lookup"><span data-stu-id="4aa91-143">In the list, find and select the desired record.</span></span>
-4. <span data-ttu-id="4aa91-144">Klikk Rediger.</span><span class="sxs-lookup"><span data-stu-id="4aa91-144">Click Edit.</span></span>
-5. <span data-ttu-id="4aa91-145">I feltet Prosessantall angir du et nummer.</span><span class="sxs-lookup"><span data-stu-id="4aa91-145">In the Process qty. field, enter a number.</span></span>
-    * <span data-ttu-id="4aa91-146">Endring av behandlingstiden påvirker det estimerte ruteforbruket og kostnadene for produksjonsordren.</span><span class="sxs-lookup"><span data-stu-id="4aa91-146">Changing the process time affects the estimated route consumption and the cost of the production order.</span></span>  
-6. <span data-ttu-id="4aa91-147">Klikk Lagre.</span><span class="sxs-lookup"><span data-stu-id="4aa91-147">Click Save.</span></span>
-7. <span data-ttu-id="4aa91-148">Lukk siden.</span><span class="sxs-lookup"><span data-stu-id="4aa91-148">Close the page.</span></span>
+## <a name="update-the-production-route"></a><span data-ttu-id="59f9a-138">Oppdatere produksjonsruten</span><span class="sxs-lookup"><span data-stu-id="59f9a-138">Update the production route</span></span>
+1. <span data-ttu-id="59f9a-139">Klikk Produksjonsordre i handlingsruten.</span><span class="sxs-lookup"><span data-stu-id="59f9a-139">On the Action Pane, click Production order.</span></span>
+2. <span data-ttu-id="59f9a-140">Klikk Rute.</span><span class="sxs-lookup"><span data-stu-id="59f9a-140">Click Route.</span></span>
+    * <span data-ttu-id="59f9a-141">Åpne rutesiden for å validere dataene i produksjonsruten som ble kopiert fra standarddataene da produksjonsordren ble opprettet.</span><span class="sxs-lookup"><span data-stu-id="59f9a-141">Open the Route page to validate the data of the production route that was copied from the default data when the order was created.</span></span> <span data-ttu-id="59f9a-142">I denne prosedyren må du oppdatere antallet for en av operasjonene i produksjonsruten.</span><span class="sxs-lookup"><span data-stu-id="59f9a-142">In this procedure, you need to update the quantity for one of the operations in the production route.</span></span>  
+3. <span data-ttu-id="59f9a-143">Finn og velg ønsket post i listen.</span><span class="sxs-lookup"><span data-stu-id="59f9a-143">In the list, find and select the desired record.</span></span>
+4. <span data-ttu-id="59f9a-144">Klikk Rediger.</span><span class="sxs-lookup"><span data-stu-id="59f9a-144">Click Edit.</span></span>
+5. <span data-ttu-id="59f9a-145">I feltet Prosessantall angir du et nummer.</span><span class="sxs-lookup"><span data-stu-id="59f9a-145">In the Process qty. field, enter a number.</span></span>
+    * <span data-ttu-id="59f9a-146">Endring av behandlingstiden påvirker det estimerte ruteforbruket og kostnadene for produksjonsordren.</span><span class="sxs-lookup"><span data-stu-id="59f9a-146">Changing the process time affects the estimated route consumption and the cost of the production order.</span></span>  
+6. <span data-ttu-id="59f9a-147">Klikk Lagre.</span><span class="sxs-lookup"><span data-stu-id="59f9a-147">Click Save.</span></span>
+7. <span data-ttu-id="59f9a-148">Lukk siden.</span><span class="sxs-lookup"><span data-stu-id="59f9a-148">Close the page.</span></span>
 

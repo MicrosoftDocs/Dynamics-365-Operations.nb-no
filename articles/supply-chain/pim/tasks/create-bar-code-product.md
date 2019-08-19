@@ -1,53 +1,45 @@
 ---
 title: Opprette en strekkode for et produkt
-description: Denne fremgangsmåten viser hvordan du oppretter en strekkode manuelt ved hjelp av varenummer M0001 som eksempel.
+description: Dette emnet viser hvordan du oppretter en strekkode manuelt ved hjelp av varenummer M0001 som eksempel.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 07/08/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: DefaultDashboard, EcoResProductMaintainWorkspace, EcoResProductOpenCasesFormPart, EcoResProductDetailsExtended, InventItemBarcode, InventItemBarcodeLookup
 audience: Application User
-ms.reviewer: shylaw
+ms.reviewer: josaw
 ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 2ae2765a125045d60566267d01e380069d5d527c
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 55801b2355eeee7dc136a1812a68e825b99098a4
+ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1568610"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1844951"
 ---
-# <a name="create-a-bar-code-for-a-product"></a><span data-ttu-id="25f72-103">Opprette en strekkode for et produkt</span><span class="sxs-lookup"><span data-stu-id="25f72-103">Create a bar code for a product</span></span>
+# <a name="create-a-bar-code-for-a-product"></a><span data-ttu-id="364ce-103">Opprette en strekkode for et produkt</span><span class="sxs-lookup"><span data-stu-id="364ce-103">Create a bar code for a product</span></span>
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="25f72-104">Denne fremgangsmåten viser hvordan du oppretter en strekkode manuelt ved hjelp av varenummer M0001 som eksempel.</span><span class="sxs-lookup"><span data-stu-id="25f72-104">This procedure shows how to manually create a bar code using the item number M0001 as an example.</span></span> <span data-ttu-id="25f72-105">Demonstrasjonsdatafirmaet USMF brukes til å opprette denne fremgangsmåten.</span><span class="sxs-lookup"><span data-stu-id="25f72-105">The demo data company used to create this procedure is USMF.</span></span>
+<span data-ttu-id="364ce-104">Dette emnet viser hvordan du oppretter en strekkode manuelt ved hjelp av varenummer M0001 som eksempel.</span><span class="sxs-lookup"><span data-stu-id="364ce-104">This topic shows how to manually create a bar code using the item number M0001 as an example.</span></span> <span data-ttu-id="364ce-105">Demonstrasjonsdatafirmaet USMF brukes til å opprette denne fremgangsmåten.</span><span class="sxs-lookup"><span data-stu-id="364ce-105">The demo data company used to create this procedure is USMF.</span></span>
 
-1. <span data-ttu-id="25f72-106">Klikk Vedlikehold av frigitt produkt.</span><span class="sxs-lookup"><span data-stu-id="25f72-106">Click Released product maintenance.</span></span>
-2. <span data-ttu-id="25f72-107">Klikk Frigitte produkter.</span><span class="sxs-lookup"><span data-stu-id="25f72-107">Click Released products.</span></span>
-3. <span data-ttu-id="25f72-108">Finn og velg ønsket post i listen.</span><span class="sxs-lookup"><span data-stu-id="25f72-108">In the list, find and select the desired record.</span></span>
-4. <span data-ttu-id="25f72-109">Klikk Administrer lager i handlingsruten.</span><span class="sxs-lookup"><span data-stu-id="25f72-109">On the Action Pane, click Manage inventory.</span></span>
-5. <span data-ttu-id="25f72-110">Klikk Strekkoder.</span><span class="sxs-lookup"><span data-stu-id="25f72-110">Click Bar codes.</span></span>
-6. <span data-ttu-id="25f72-111">Klikk Ny.</span><span class="sxs-lookup"><span data-stu-id="25f72-111">Click New.</span></span>
-7. <span data-ttu-id="25f72-112">Merk den valgte raden i listen.</span><span class="sxs-lookup"><span data-stu-id="25f72-112">In the list, mark the selected row.</span></span>
-8. <span data-ttu-id="25f72-113">Angi eller velg en verdi i feltet Strekkodeoppsett.</span><span class="sxs-lookup"><span data-stu-id="25f72-113">In the Barcode setup field, enter or select a value.</span></span>
-9. <span data-ttu-id="25f72-114">Angi eller velg en verdi i feltet Strekkode.</span><span class="sxs-lookup"><span data-stu-id="25f72-114">In the Bar code field, enter or select a value.</span></span>
-10. <span data-ttu-id="25f72-115">Skriv inn en verdi i feltet Strekkode.</span><span class="sxs-lookup"><span data-stu-id="25f72-115">In the Bar code field, type a value.</span></span>
-    * <span data-ttu-id="25f72-116">Trykk Tab-tasten.</span><span class="sxs-lookup"><span data-stu-id="25f72-116">Press the Tab key.</span></span>  
-11. <span data-ttu-id="25f72-117">Lukk siden.</span><span class="sxs-lookup"><span data-stu-id="25f72-117">Close the page.</span></span>
-12. <span data-ttu-id="25f72-118">Angi et tall i feltet Antall.</span><span class="sxs-lookup"><span data-stu-id="25f72-118">In the Quantity field, enter a number.</span></span>
-13. <span data-ttu-id="25f72-119">Klikk Lagre.</span><span class="sxs-lookup"><span data-stu-id="25f72-119">Click Save.</span></span>
-    * <span data-ttu-id="25f72-120">Når du klikker Lagre, kjøres strekkodekontrollen, og i dette tilfellet vises en feilmelding som sier at forventet kontrollsiffer er 8, men at den fant 3.</span><span class="sxs-lookup"><span data-stu-id="25f72-120">When you click Save, the barcode check is run, and in this case it will display an error stating that the expected check digit is 8, but that 3 was found.</span></span> <span data-ttu-id="25f72-121">Oppdater strekkodenummeret manuelt slik at 8 er på slutten.</span><span class="sxs-lookup"><span data-stu-id="25f72-121">Manually update the barcode number so that 8 is at the end.</span></span>  
-14. <span data-ttu-id="25f72-122">Angi eller velg en verdi i feltet Strekkode.</span><span class="sxs-lookup"><span data-stu-id="25f72-122">In the Bar code field, enter or select a value.</span></span>
-15. <span data-ttu-id="25f72-123">Skriv inn en verdi i feltet Strekkode.</span><span class="sxs-lookup"><span data-stu-id="25f72-123">In the Bar code field, type a value.</span></span>
-    * <span data-ttu-id="25f72-124">Trykk Tab-tasten.</span><span class="sxs-lookup"><span data-stu-id="25f72-124">Press the Tab key.</span></span>  
-16. <span data-ttu-id="25f72-125">Lukk siden.</span><span class="sxs-lookup"><span data-stu-id="25f72-125">Close the page.</span></span>
-17. <span data-ttu-id="25f72-126">Klikk Lagre.</span><span class="sxs-lookup"><span data-stu-id="25f72-126">Click Save.</span></span>
-18. <span data-ttu-id="25f72-127">Lukk siden.</span><span class="sxs-lookup"><span data-stu-id="25f72-127">Close the page.</span></span>
+1. <span data-ttu-id="364ce-106">Velg **Vedlikehold av frigitt produkt** på startsiden.</span><span class="sxs-lookup"><span data-stu-id="364ce-106">Select **Released product maintenance** on the homepage.</span></span>
+2. <span data-ttu-id="364ce-107">Gå til **Produkter > Frigitte produkter** under **Koblinger**-delen.</span><span class="sxs-lookup"><span data-stu-id="364ce-107">Go to **Products > Released products** under the **Links** section.</span></span>
+3. <span data-ttu-id="364ce-108">Finn og velg ønsket post i listen.</span><span class="sxs-lookup"><span data-stu-id="364ce-108">In the list, find and select the desired record.</span></span> <span data-ttu-id="364ce-109">I dette eksemplet velger du varenummer **M0001**.</span><span class="sxs-lookup"><span data-stu-id="364ce-109">For this example, select item number **M0001**.</span></span>
+4. <span data-ttu-id="364ce-110">Velg **Administrer lager** på handlingsruten.</span><span class="sxs-lookup"><span data-stu-id="364ce-110">On the Action Pane, select **Manage inventory**.</span></span>
+5. <span data-ttu-id="364ce-111">Velg **Strekkoder**.</span><span class="sxs-lookup"><span data-stu-id="364ce-111">Select **Bar codes**.</span></span>
+6. <span data-ttu-id="364ce-112">Velg **Ny**.</span><span class="sxs-lookup"><span data-stu-id="364ce-112">Select **New**.</span></span>
+7. <span data-ttu-id="364ce-113">Merk den valgte raden som opprettes i listen nedenfor.</span><span class="sxs-lookup"><span data-stu-id="364ce-113">Mark the selected row that is created in the list below.</span></span>
+8. <span data-ttu-id="364ce-114">Angi eller velg en verdi i feltet **Strekkodeoppsett**.</span><span class="sxs-lookup"><span data-stu-id="364ce-114">In the **Barcode setup** field, enter or select a value.</span></span>
+9. <span data-ttu-id="364ce-115">Angi eller velg en verdi i feltet **Strekkode**.</span><span class="sxs-lookup"><span data-stu-id="364ce-115">In the **Bar code** field, enter or select a value.</span></span>
+10. <span data-ttu-id="364ce-116">Skriv inn en verdi i feltet **Strekkode**.</span><span class="sxs-lookup"><span data-stu-id="364ce-116">In the **Bar code** field, type a value.</span></span>  
+11. <span data-ttu-id="364ce-117">Angi et tall i **Antall**-feltet.</span><span class="sxs-lookup"><span data-stu-id="364ce-117">In the **Quantity** field, enter a number.</span></span>
+12. <span data-ttu-id="364ce-118">Velg **Lagre**.</span><span class="sxs-lookup"><span data-stu-id="364ce-118">Select **Save**.</span></span>
+13. <span data-ttu-id="364ce-119">Lukk siden.</span><span class="sxs-lookup"><span data-stu-id="364ce-119">Close the page.</span></span> 
 

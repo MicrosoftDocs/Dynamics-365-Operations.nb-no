@@ -10,50 +10,50 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SalesTableListPage, SalesCreateOrder, SalesTable, LeanPeggingTree
 audience: Application User
-ms.reviewer: shylaw
+ms.reviewer: josaw
 ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 2e2448dfd83304d4f7e5dfc8ce0d02cdac998779
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 90032539d59b310cb2d4c1324312eac6593fba6b
+ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1555633"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1843607"
 ---
-# <a name="lean-pegging-from-sales-orders"></a><span data-ttu-id="3facc-103">Lean-utligning fra salgsordrer</span><span class="sxs-lookup"><span data-stu-id="3facc-103">Lean pegging from sales orders</span></span>
+# <a name="lean-pegging-from-sales-orders"></a><span data-ttu-id="da89b-103">Lean-utligning fra salgsordrer</span><span class="sxs-lookup"><span data-stu-id="da89b-103">Lean pegging from sales orders</span></span>
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="3facc-104">Denne prosedyren fokuserer på å validere utligningstreet fra en salgslinje der varen produseres med Kanbaner.</span><span class="sxs-lookup"><span data-stu-id="3facc-104">This procedure focuses on validating the pegging tree from a sales line where the item is produced with kanbans.</span></span> <span data-ttu-id="3facc-105">Alle Kanban-jobbene planlegges etter valideringen av utligningstreet.</span><span class="sxs-lookup"><span data-stu-id="3facc-105">After validating the pegging tree, all the kanban jobs are planned.</span></span> <span data-ttu-id="3facc-106">Dette er nyttig for ordrescenarier der ordremottakeren må sikre at produksjonen kan starte umiddelbart.</span><span class="sxs-lookup"><span data-stu-id="3facc-106">This is useful for order scenarios where the order taker needs to ensure that production can start right away.</span></span> <span data-ttu-id="3facc-107">Demonstrasjonsdatafirmaet USMF brukes til å opprette denne fremgangsmåten.</span><span class="sxs-lookup"><span data-stu-id="3facc-107">The demo data company used to create this procedure is USMF.</span></span> <span data-ttu-id="3facc-108">Denne prosedyren er ment for avanserte ordremottakere som jobber i et lean-firma.</span><span class="sxs-lookup"><span data-stu-id="3facc-108">This procedure is intended for the advanced order taker working in a lean company.</span></span>
+<span data-ttu-id="da89b-104">Denne prosedyren fokuserer på å validere utligningstreet fra en salgslinje der varen produseres med Kanbaner.</span><span class="sxs-lookup"><span data-stu-id="da89b-104">This procedure focuses on validating the pegging tree from a sales line where the item is produced with kanbans.</span></span> <span data-ttu-id="da89b-105">Alle Kanban-jobbene planlegges etter valideringen av utligningstreet.</span><span class="sxs-lookup"><span data-stu-id="da89b-105">After validating the pegging tree, all the kanban jobs are planned.</span></span> <span data-ttu-id="da89b-106">Dette er nyttig for ordrescenarier der ordremottakeren må sikre at produksjonen kan starte umiddelbart.</span><span class="sxs-lookup"><span data-stu-id="da89b-106">This is useful for order scenarios where the order taker needs to ensure that production can start right away.</span></span> <span data-ttu-id="da89b-107">Demonstrasjonsdatafirmaet USMF brukes til å opprette denne fremgangsmåten.</span><span class="sxs-lookup"><span data-stu-id="da89b-107">The demo data company used to create this procedure is USMF.</span></span> <span data-ttu-id="da89b-108">Denne prosedyren er ment for avanserte ordremottakere som jobber i et lean-firma.</span><span class="sxs-lookup"><span data-stu-id="da89b-108">This procedure is intended for the advanced order taker working in a lean company.</span></span>
 
 
-## <a name="create-a-sales-order-for-a-kanban-controlled-item"></a><span data-ttu-id="3facc-109">Opprette en salgsordre for en Kanban-styrt vare</span><span class="sxs-lookup"><span data-stu-id="3facc-109">Create a sales order for a kanban controlled item</span></span>
-1. <span data-ttu-id="3facc-110">Gå til Alle salgsordrer.</span><span class="sxs-lookup"><span data-stu-id="3facc-110">Go to All sales orders.</span></span>
-2. <span data-ttu-id="3facc-111">Klikk Ny.</span><span class="sxs-lookup"><span data-stu-id="3facc-111">Click New.</span></span>
-3. <span data-ttu-id="3facc-112">Angi eller velg en verdi i Kundekonto-feltet.</span><span class="sxs-lookup"><span data-stu-id="3facc-112">In the Customer account field, enter or select a value.</span></span>
-    * <span data-ttu-id="3facc-113">Bruk US-001.</span><span class="sxs-lookup"><span data-stu-id="3facc-113">Use US-001.</span></span>  
-4. <span data-ttu-id="3facc-114">Klikk OK.</span><span class="sxs-lookup"><span data-stu-id="3facc-114">Click OK.</span></span>
-5. <span data-ttu-id="3facc-115">Skriv inn L0001 i feltet Varenummer.</span><span class="sxs-lookup"><span data-stu-id="3facc-115">In the Item number field, type 'L0001'.</span></span>
-6. <span data-ttu-id="3facc-116">Sett verdien for Antall til 30.</span><span class="sxs-lookup"><span data-stu-id="3facc-116">Set Quantity to '30'.</span></span>
-    * <span data-ttu-id="3facc-117">Det er viktig at antallet er høyere enn 24 for å utløse Kanban-regelen for hendelse.</span><span class="sxs-lookup"><span data-stu-id="3facc-117">It is important that the quantity is higher than 24 in order to trigger the event kanban rule.</span></span>  
+## <a name="create-a-sales-order-for-a-kanban-controlled-item"></a><span data-ttu-id="da89b-109">Opprette en salgsordre for en Kanban-styrt vare</span><span class="sxs-lookup"><span data-stu-id="da89b-109">Create a sales order for a kanban controlled item</span></span>
+1. <span data-ttu-id="da89b-110">Gå til Alle salgsordrer.</span><span class="sxs-lookup"><span data-stu-id="da89b-110">Go to All sales orders.</span></span>
+2. <span data-ttu-id="da89b-111">Klikk Ny.</span><span class="sxs-lookup"><span data-stu-id="da89b-111">Click New.</span></span>
+3. <span data-ttu-id="da89b-112">Angi eller velg en verdi i Kundekonto-feltet.</span><span class="sxs-lookup"><span data-stu-id="da89b-112">In the Customer account field, enter or select a value.</span></span>
+    * <span data-ttu-id="da89b-113">Bruk US-001.</span><span class="sxs-lookup"><span data-stu-id="da89b-113">Use US-001.</span></span>  
+4. <span data-ttu-id="da89b-114">Klikk OK.</span><span class="sxs-lookup"><span data-stu-id="da89b-114">Click OK.</span></span>
+5. <span data-ttu-id="da89b-115">Skriv inn L0001 i feltet Varenummer.</span><span class="sxs-lookup"><span data-stu-id="da89b-115">In the Item number field, type 'L0001'.</span></span>
+6. <span data-ttu-id="da89b-116">Sett verdien for Antall til 30.</span><span class="sxs-lookup"><span data-stu-id="da89b-116">Set Quantity to '30'.</span></span>
+    * <span data-ttu-id="da89b-117">Det er viktig at antallet er høyere enn 24 for å utløse Kanban-regelen for hendelse.</span><span class="sxs-lookup"><span data-stu-id="da89b-117">It is important that the quantity is higher than 24 in order to trigger the event kanban rule.</span></span>  
 
-## <a name="open-a-pegging-tree"></a><span data-ttu-id="3facc-118">Åpne et utligningstre</span><span class="sxs-lookup"><span data-stu-id="3facc-118">Open a pegging tree</span></span> 
-1. <span data-ttu-id="3facc-119">Klikk Produkt og forsyning.</span><span class="sxs-lookup"><span data-stu-id="3facc-119">Click Product and supply.</span></span>
-2. <span data-ttu-id="3facc-120">Klikk Vis utligningstre.</span><span class="sxs-lookup"><span data-stu-id="3facc-120">Click View pegging tree.</span></span>
-    * <span data-ttu-id="3facc-121">Legg merke til at utligningstreet viser alle nivåer av utligningen som kreves for salgsordrelinjen.</span><span class="sxs-lookup"><span data-stu-id="3facc-121">Notice that the pegging tree shows all levels of the pegging needed for the sales order line.</span></span> <span data-ttu-id="3facc-122">I dette tilfellet er det to nivåer med Kanbaner og alle de nødvendige komponentene.</span><span class="sxs-lookup"><span data-stu-id="3facc-122">In this case, there are two levels of kanbans and all the required components.</span></span>  
+## <a name="open-a-pegging-tree"></a><span data-ttu-id="da89b-118">Åpne et utligningstre</span><span class="sxs-lookup"><span data-stu-id="da89b-118">Open a pegging tree</span></span> 
+1. <span data-ttu-id="da89b-119">Klikk Produkt og forsyning.</span><span class="sxs-lookup"><span data-stu-id="da89b-119">Click Product and supply.</span></span>
+2. <span data-ttu-id="da89b-120">Klikk Vis utligningstre.</span><span class="sxs-lookup"><span data-stu-id="da89b-120">Click View pegging tree.</span></span>
+    * <span data-ttu-id="da89b-121">Legg merke til at utligningstreet viser alle nivåer av utligningen som kreves for salgsordrelinjen.</span><span class="sxs-lookup"><span data-stu-id="da89b-121">Notice that the pegging tree shows all levels of the pegging needed for the sales order line.</span></span> <span data-ttu-id="da89b-122">I dette tilfellet er det to nivåer med Kanbaner og alle de nødvendige komponentene.</span><span class="sxs-lookup"><span data-stu-id="da89b-122">In this case, there are two levels of kanbans and all the required components.</span></span>  
 
-## <a name="plan-the-pegging-tree"></a><span data-ttu-id="3facc-123">Planlegge utligningstreet</span><span class="sxs-lookup"><span data-stu-id="3facc-123">Plan the pegging tree</span></span>
-1. <span data-ttu-id="3facc-124">Velg Salgslinje 000832 \ Kanban 000558.</span><span class="sxs-lookup"><span data-stu-id="3facc-124">In the tree, select 'Sales line 000832\Kanban 000558'.</span></span>
-2. <span data-ttu-id="3facc-125">Vis delen Kanban-jobber.</span><span class="sxs-lookup"><span data-stu-id="3facc-125">Expand the Kanban jobs section.</span></span>
-    * <span data-ttu-id="3facc-126">Legg merke til at jobbstatusen for Kanban-jobben er Ikke planlagt.</span><span class="sxs-lookup"><span data-stu-id="3facc-126">Notice that the job status for the kanban job is Not planned.</span></span>  
-3. <span data-ttu-id="3facc-127">Klikk Planlegg helt utligningstre.</span><span class="sxs-lookup"><span data-stu-id="3facc-127">Click Plan entire pegging tree.</span></span>
-    * <span data-ttu-id="3facc-128">Dette vil planlegge alle Kanban-jobber i utligningstreet, og endre jobbstatusen fra Ikke planlagt til Planlagt.</span><span class="sxs-lookup"><span data-stu-id="3facc-128">This will plan all kanban jobs in the pegging tree, changing the Job status from Not planned to Planned.</span></span>  
-4. <span data-ttu-id="3facc-129">Oppdater siden.</span><span class="sxs-lookup"><span data-stu-id="3facc-129">Refresh the page.</span></span>
-    * <span data-ttu-id="3facc-130">Legg merke til at Kanban-jobbstatusen endres fra Ikke planlagt til Planlagt.</span><span class="sxs-lookup"><span data-stu-id="3facc-130">Notice that the kanban Job status changed from Not planned to Planned.</span></span>  
-5. <span data-ttu-id="3facc-131">Velg Salgslinje 000832 \ Kanban 000558\ Problem for L0001\ Kanban 000559 i treet.</span><span class="sxs-lookup"><span data-stu-id="3facc-131">In the tree, select 'Sales line 000832\Kanban 000558\Issue for L0001\Kanban 000559'.</span></span>
-    * <span data-ttu-id="3facc-132">Jobben for den andre Kanbanen planlegges også fordi hele utligningstreet planlegges.</span><span class="sxs-lookup"><span data-stu-id="3facc-132">The job for the second kanban is also planned, because the entire pegging tree is planned.</span></span> <span data-ttu-id="3facc-133">Legg merke til at Kanban-jobbstatusen endres fra Ikke planlagt til Planlagt.</span><span class="sxs-lookup"><span data-stu-id="3facc-133">Notice that the kanban job status is changed from Not planned to Planned.</span></span>  
+## <a name="plan-the-pegging-tree"></a><span data-ttu-id="da89b-123">Planlegge utligningstreet</span><span class="sxs-lookup"><span data-stu-id="da89b-123">Plan the pegging tree</span></span>
+1. <span data-ttu-id="da89b-124">Velg Salgslinje 000832 \ Kanban 000558.</span><span class="sxs-lookup"><span data-stu-id="da89b-124">In the tree, select 'Sales line 000832\Kanban 000558'.</span></span>
+2. <span data-ttu-id="da89b-125">Vis delen Kanban-jobber.</span><span class="sxs-lookup"><span data-stu-id="da89b-125">Expand the Kanban jobs section.</span></span>
+    * <span data-ttu-id="da89b-126">Legg merke til at jobbstatusen for Kanban-jobben er Ikke planlagt.</span><span class="sxs-lookup"><span data-stu-id="da89b-126">Notice that the job status for the kanban job is Not planned.</span></span>  
+3. <span data-ttu-id="da89b-127">Klikk Planlegg helt utligningstre.</span><span class="sxs-lookup"><span data-stu-id="da89b-127">Click Plan entire pegging tree.</span></span>
+    * <span data-ttu-id="da89b-128">Dette vil planlegge alle Kanban-jobber i utligningstreet, og endre jobbstatusen fra Ikke planlagt til Planlagt.</span><span class="sxs-lookup"><span data-stu-id="da89b-128">This will plan all kanban jobs in the pegging tree, changing the Job status from Not planned to Planned.</span></span>  
+4. <span data-ttu-id="da89b-129">Oppdater siden.</span><span class="sxs-lookup"><span data-stu-id="da89b-129">Refresh the page.</span></span>
+    * <span data-ttu-id="da89b-130">Legg merke til at Kanban-jobbstatusen endres fra Ikke planlagt til Planlagt.</span><span class="sxs-lookup"><span data-stu-id="da89b-130">Notice that the kanban Job status changed from Not planned to Planned.</span></span>  
+5. <span data-ttu-id="da89b-131">Velg Salgslinje 000832 \ Kanban 000558\ Problem for L0001\ Kanban 000559 i treet.</span><span class="sxs-lookup"><span data-stu-id="da89b-131">In the tree, select 'Sales line 000832\Kanban 000558\Issue for L0001\Kanban 000559'.</span></span>
+    * <span data-ttu-id="da89b-132">Jobben for den andre Kanbanen planlegges også fordi hele utligningstreet planlegges.</span><span class="sxs-lookup"><span data-stu-id="da89b-132">The job for the second kanban is also planned, because the entire pegging tree is planned.</span></span> <span data-ttu-id="da89b-133">Legg merke til at Kanban-jobbstatusen endres fra Ikke planlagt til Planlagt.</span><span class="sxs-lookup"><span data-stu-id="da89b-133">Notice that the kanban job status is changed from Not planned to Planned.</span></span>  
 

@@ -10,36 +10,36 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: FinancialDimensionDefaultTemplates, DimensionLookup
 audience: Application User
-ms.reviewer: twheeloc
+ms.reviewer: roschlom
 ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 374c162fce2bc9ff5006737ac31fcb3d436fd540
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 27ce6df8ad4bc359f2cbf802f83149bc6966321a
+ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1553172"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1846445"
 ---
-# <a name="maintain-financial-dimension-default-templates"></a><span data-ttu-id="83c48-103">Vedlikehold standardmaler for finansdimensjon</span><span class="sxs-lookup"><span data-stu-id="83c48-103">Maintain financial dimension default templates</span></span>
+# <a name="maintain-financial-dimension-default-templates"></a><span data-ttu-id="bbf08-103">Vedlikehold standardmaler for finansdimensjon</span><span class="sxs-lookup"><span data-stu-id="bbf08-103">Maintain financial dimension default templates</span></span>
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="83c48-104">Denne fremgangsmåten viser hvordan du setter opp standardmaler for finansdimensjon.</span><span class="sxs-lookup"><span data-stu-id="83c48-104">This procedure shows how to set up financial dimension default templates.</span></span> <span data-ttu-id="83c48-105">Malene kan brukes til å fordele beløp på kildedokumenter raskt.</span><span class="sxs-lookup"><span data-stu-id="83c48-105">The templates can be used to quickly distribute amounts on source documents.</span></span>
+<span data-ttu-id="bbf08-104">Denne fremgangsmåten viser hvordan du setter opp standardmaler for finansdimensjon.</span><span class="sxs-lookup"><span data-stu-id="bbf08-104">This procedure shows how to set up financial dimension default templates.</span></span> <span data-ttu-id="bbf08-105">Malene kan brukes til å fordele beløp på kildedokumenter raskt.</span><span class="sxs-lookup"><span data-stu-id="bbf08-105">The templates can be used to quickly distribute amounts on source documents.</span></span>
 
-1. <span data-ttu-id="83c48-106">Gå til Økonomimodul > Kontoplan > Dimensjoner > Standardmaler for finansdimensjon.</span><span class="sxs-lookup"><span data-stu-id="83c48-106">Go to General ledger > Chart of accounts > Dimensions > Financial dimension default templates.</span></span>
-2. <span data-ttu-id="83c48-107">Klikk Ny.</span><span class="sxs-lookup"><span data-stu-id="83c48-107">Click New.</span></span>
-3. <span data-ttu-id="83c48-108">I Mal-ID-feltet angir du en mal-ID.</span><span class="sxs-lookup"><span data-stu-id="83c48-108">In the Template ID field, enter a Template ID..</span></span>
-4. <span data-ttu-id="83c48-109">Angi prosentsatsen for de første dimensjonsverdiene.</span><span class="sxs-lookup"><span data-stu-id="83c48-109">Enter the percentage for the first dimension values.</span></span>
-5. <span data-ttu-id="83c48-110">Angi finansdimensjonsverdiene som svarer til den angitte prosenten.</span><span class="sxs-lookup"><span data-stu-id="83c48-110">Enter the financial dimension values that correspond to the percent entered.</span></span>
-6. <span data-ttu-id="83c48-111">Klikk Legg til.</span><span class="sxs-lookup"><span data-stu-id="83c48-111">Click Add.</span></span>
-7. <span data-ttu-id="83c48-112">Angi en ny prosent for de neste dimensjonsverdiene.</span><span class="sxs-lookup"><span data-stu-id="83c48-112">Enter another percent for the next dimension values.</span></span>
-    * <span data-ttu-id="83c48-113">I dette eksemplet angir du en prosent slik at du fremdeles har mindre enn 100 % tildelt.</span><span class="sxs-lookup"><span data-stu-id="83c48-113">For this example, enter a percentage so you still have less than 100% allocated.</span></span>  
-8. <span data-ttu-id="83c48-114">Angi finansdimensjonsverdiene som svarer til den angitte prosenten.</span><span class="sxs-lookup"><span data-stu-id="83c48-114">Enter the financial dimension values that correspond to the percent entered.</span></span>
-9. <span data-ttu-id="83c48-115">Klikk Legg til.</span><span class="sxs-lookup"><span data-stu-id="83c48-115">Click Add.</span></span>
-10. <span data-ttu-id="83c48-116">Angi en ny prosent, som gjør at den totale prosenten blir 100 %.</span><span class="sxs-lookup"><span data-stu-id="83c48-116">Enter another percent, which will make the total percent equal to 100%.</span></span>
-11. <span data-ttu-id="83c48-117">Angi finansdimensjonsverdiene som svarer til den angitte prosenten.</span><span class="sxs-lookup"><span data-stu-id="83c48-117">Enter the financial dimension values that correspond to the percent entered.</span></span>
-12. <span data-ttu-id="83c48-118">Klikk Lagre.</span><span class="sxs-lookup"><span data-stu-id="83c48-118">Click Save.</span></span>
+1. <span data-ttu-id="bbf08-106">Gå til Økonomimodul > Kontoplan > Dimensjoner > Standardmaler for finansdimensjon.</span><span class="sxs-lookup"><span data-stu-id="bbf08-106">Go to General ledger > Chart of accounts > Dimensions > Financial dimension default templates.</span></span>
+2. <span data-ttu-id="bbf08-107">Klikk Ny.</span><span class="sxs-lookup"><span data-stu-id="bbf08-107">Click New.</span></span>
+3. <span data-ttu-id="bbf08-108">I Mal-ID-feltet angir du en mal-ID.</span><span class="sxs-lookup"><span data-stu-id="bbf08-108">In the Template ID field, enter a Template ID..</span></span>
+4. <span data-ttu-id="bbf08-109">Angi prosentsatsen for de første dimensjonsverdiene.</span><span class="sxs-lookup"><span data-stu-id="bbf08-109">Enter the percentage for the first dimension values.</span></span>
+5. <span data-ttu-id="bbf08-110">Angi finansdimensjonsverdiene som svarer til den angitte prosenten.</span><span class="sxs-lookup"><span data-stu-id="bbf08-110">Enter the financial dimension values that correspond to the percent entered.</span></span>
+6. <span data-ttu-id="bbf08-111">Klikk Legg til.</span><span class="sxs-lookup"><span data-stu-id="bbf08-111">Click Add.</span></span>
+7. <span data-ttu-id="bbf08-112">Angi en ny prosent for de neste dimensjonsverdiene.</span><span class="sxs-lookup"><span data-stu-id="bbf08-112">Enter another percent for the next dimension values.</span></span>
+    * <span data-ttu-id="bbf08-113">I dette eksemplet angir du en prosent slik at du fremdeles har mindre enn 100 % tildelt.</span><span class="sxs-lookup"><span data-stu-id="bbf08-113">For this example, enter a percentage so you still have less than 100% allocated.</span></span>  
+8. <span data-ttu-id="bbf08-114">Angi finansdimensjonsverdiene som svarer til den angitte prosenten.</span><span class="sxs-lookup"><span data-stu-id="bbf08-114">Enter the financial dimension values that correspond to the percent entered.</span></span>
+9. <span data-ttu-id="bbf08-115">Klikk Legg til.</span><span class="sxs-lookup"><span data-stu-id="bbf08-115">Click Add.</span></span>
+10. <span data-ttu-id="bbf08-116">Angi en ny prosent, som gjør at den totale prosenten blir 100 %.</span><span class="sxs-lookup"><span data-stu-id="bbf08-116">Enter another percent, which will make the total percent equal to 100%.</span></span>
+11. <span data-ttu-id="bbf08-117">Angi finansdimensjonsverdiene som svarer til den angitte prosenten.</span><span class="sxs-lookup"><span data-stu-id="bbf08-117">Enter the financial dimension values that correspond to the percent entered.</span></span>
+12. <span data-ttu-id="bbf08-118">Klikk Lagre.</span><span class="sxs-lookup"><span data-stu-id="bbf08-118">Click Save.</span></span>
 
