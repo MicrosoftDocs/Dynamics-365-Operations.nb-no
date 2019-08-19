@@ -10,7 +10,7 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: FinanicalReports
 audience: Application User
-ms.reviewer: shylaw
+ms.reviewer: roschlom
 ms.search.scope: Core, Operations
 ms.custom: 12274
 ms.assetid: 52f78229-f531-4d16-b337-e2628994acb6
@@ -18,67 +18,67 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2d54748daa27011e0222123ee2b9a19b9288734c
-ms.sourcegitcommit: 574d4dda83dcab94728a3d35fc53ee7e2b90feb0
+ms.openlocfilehash: d9dcac902118c643b9a9d783c12f02fa5c90827b
+ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/22/2019
-ms.locfileid: "1595322"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1839575"
 ---
-# <a name="balance-sheet-financial-reports"></a><span data-ttu-id="90073-104">Finansrapporter for balanse</span><span class="sxs-lookup"><span data-stu-id="90073-104">Balance sheet financial reports</span></span>
+# <a name="balance-sheet-financial-reports"></a><span data-ttu-id="303e8-104">Finansrapporter for balanse</span><span class="sxs-lookup"><span data-stu-id="303e8-104">Balance sheet financial reports</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="90073-105">Denne artikkelen beskriver standardrapportene for balansen.</span><span class="sxs-lookup"><span data-stu-id="90073-105">This article describes the default reports for balance sheets.</span></span> <span data-ttu-id="90073-106">Den beskriver også byggeblokker som er knyttet til disse rapportene.</span><span class="sxs-lookup"><span data-stu-id="90073-106">It also describes the building blocks that are associated with these reports.</span></span> 
+<span data-ttu-id="303e8-105">Denne artikkelen beskriver standardrapportene for balansen.</span><span class="sxs-lookup"><span data-stu-id="303e8-105">This article describes the default reports for balance sheets.</span></span> <span data-ttu-id="303e8-106">Den beskriver også byggeblokker som er knyttet til disse rapportene.</span><span class="sxs-lookup"><span data-stu-id="303e8-106">It also describes the building blocks that are associated with these reports.</span></span> 
 
-<a name="default-balance-sheet-reports"></a><span data-ttu-id="90073-107">Standardrapporter for balanse</span><span class="sxs-lookup"><span data-stu-id="90073-107">Default balance sheet reports</span></span>
+<a name="default-balance-sheet-reports"></a><span data-ttu-id="303e8-107">Standardrapporter for balanse</span><span class="sxs-lookup"><span data-stu-id="303e8-107">Default balance sheet reports</span></span>
 -----------------------------
 
-<span data-ttu-id="90073-108">Det finnes to standardrapporter for balanse.</span><span class="sxs-lookup"><span data-stu-id="90073-108">There are two default balance sheet reports.</span></span> <span data-ttu-id="90073-109">På en av rapportene er delene er stablet.</span><span class="sxs-lookup"><span data-stu-id="90073-109">On one report, the sections are stacked.</span></span> <span data-ttu-id="90073-110">På den andre rapporten er delene ved siden av hverandre.</span><span class="sxs-lookup"><span data-stu-id="90073-110">On the other report, the sections are side by side.</span></span>
+<span data-ttu-id="303e8-108">Det finnes to standardrapporter for balanse.</span><span class="sxs-lookup"><span data-stu-id="303e8-108">There are two default balance sheet reports.</span></span> <span data-ttu-id="303e8-109">På en av rapportene er delene er stablet.</span><span class="sxs-lookup"><span data-stu-id="303e8-109">On one report, the sections are stacked.</span></span> <span data-ttu-id="303e8-110">På den andre rapporten er delene ved siden av hverandre.</span><span class="sxs-lookup"><span data-stu-id="303e8-110">On the other report, the sections are side by side.</span></span>
 
-| <span data-ttu-id="90073-111">Standardrapport</span><span class="sxs-lookup"><span data-stu-id="90073-111">Default report</span></span>                       | <span data-ttu-id="90073-112">Resultat</span><span class="sxs-lookup"><span data-stu-id="90073-112">What it does</span></span>                                                                                                                           |
+| <span data-ttu-id="303e8-111">Standardrapport</span><span class="sxs-lookup"><span data-stu-id="303e8-111">Default report</span></span>                       | <span data-ttu-id="303e8-112">Resultat</span><span class="sxs-lookup"><span data-stu-id="303e8-112">What it does</span></span>                                                                                                                           |
 |--------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------|
-| <span data-ttu-id="90073-113">Balanse – Standard</span><span class="sxs-lookup"><span data-stu-id="90073-113">Balance Sheet – Default</span></span>              | <span data-ttu-id="90073-114">Gir en oversikt over organisasjonens finansiell stilling for året.</span><span class="sxs-lookup"><span data-stu-id="90073-114">Provides a view of the organization's financial position for the year.</span></span>                                                                 |
-| <span data-ttu-id="90073-115">Side ved side Balanse – Standard</span><span class="sxs-lookup"><span data-stu-id="90073-115">Side by Side Balance Sheet – Default</span></span> | <span data-ttu-id="90073-116">Gir en oversikt over organisasjonens finansiell stilling for året.</span><span class="sxs-lookup"><span data-stu-id="90073-116">Provides a view of the organization's financial position for the year.</span></span> <span data-ttu-id="90073-117">Aktiva og gjeld og egenkapital for aksjeeiere er ved siden av hverandre.</span><span class="sxs-lookup"><span data-stu-id="90073-117">Assets and liability and shareholder’s equity are side by side.</span></span> |
+| <span data-ttu-id="303e8-113">Balanse – Standard</span><span class="sxs-lookup"><span data-stu-id="303e8-113">Balance Sheet – Default</span></span>              | <span data-ttu-id="303e8-114">Gir en oversikt over organisasjonens finansiell stilling for året.</span><span class="sxs-lookup"><span data-stu-id="303e8-114">Provides a view of the organization's financial position for the year.</span></span>                                                                 |
+| <span data-ttu-id="303e8-115">Side ved side Balanse – Standard</span><span class="sxs-lookup"><span data-stu-id="303e8-115">Side by Side Balance Sheet – Default</span></span> | <span data-ttu-id="303e8-116">Gir en oversikt over organisasjonens finansiell stilling for året.</span><span class="sxs-lookup"><span data-stu-id="303e8-116">Provides a view of the organization's financial position for the year.</span></span> <span data-ttu-id="303e8-117">Aktiva og gjeld og egenkapital for aksjeeiere er ved siden av hverandre.</span><span class="sxs-lookup"><span data-stu-id="303e8-117">Assets and liability and shareholder’s equity are side by side.</span></span> |
 
-## <a name="building-blocks"></a><span data-ttu-id="90073-118">Byggeblokker</span><span class="sxs-lookup"><span data-stu-id="90073-118">Building blocks</span></span>
-<span data-ttu-id="90073-119">Finansrapportene for balansen bruker byggeblokkene nedenfor.</span><span class="sxs-lookup"><span data-stu-id="90073-119">The balance sheet financial reports use the following building blocks.</span></span>
+## <a name="building-blocks"></a><span data-ttu-id="303e8-118">Byggeblokker</span><span class="sxs-lookup"><span data-stu-id="303e8-118">Building blocks</span></span>
+<span data-ttu-id="303e8-119">Finansrapportene for balansen bruker byggeblokkene nedenfor.</span><span class="sxs-lookup"><span data-stu-id="303e8-119">The balance sheet financial reports use the following building blocks.</span></span>
 
-| <span data-ttu-id="90073-120">Standardrapport</span><span class="sxs-lookup"><span data-stu-id="90073-120">Default report</span></span>                       | <span data-ttu-id="90073-121">Raddefinisjon</span><span class="sxs-lookup"><span data-stu-id="90073-121">Row definition</span></span>                       | <span data-ttu-id="90073-122">Kolonnedefinisjon</span><span class="sxs-lookup"><span data-stu-id="90073-122">Column definition</span></span>             |
+| <span data-ttu-id="303e8-120">Standardrapport</span><span class="sxs-lookup"><span data-stu-id="303e8-120">Default report</span></span>                       | <span data-ttu-id="303e8-121">Raddefinisjon</span><span class="sxs-lookup"><span data-stu-id="303e8-121">Row definition</span></span>                       | <span data-ttu-id="303e8-122">Kolonnedefinisjon</span><span class="sxs-lookup"><span data-stu-id="303e8-122">Column definition</span></span>             |
 |--------------------------------------|--------------------------------------|-------------------------------|
-| <span data-ttu-id="90073-123">Balanse – Standard</span><span class="sxs-lookup"><span data-stu-id="90073-123">Balance Sheet - Default</span></span>              | <span data-ttu-id="90073-124">Balanse – Standard</span><span class="sxs-lookup"><span data-stu-id="90073-124">Balance Sheet - Default</span></span>              | <span data-ttu-id="90073-125">Hittil i år og avvik – Standard</span><span class="sxs-lookup"><span data-stu-id="90073-125">YTD and Variance - Default</span></span>    |
-| <span data-ttu-id="90073-126">Side ved side Balanse – Standard</span><span class="sxs-lookup"><span data-stu-id="90073-126">Side by Side Balance Sheet – Default</span></span> | <span data-ttu-id="90073-127">Side ved side Balanse – Standard</span><span class="sxs-lookup"><span data-stu-id="90073-127">Side by Side Balance Sheet – Default</span></span> | <span data-ttu-id="90073-128">Hittil i år-kolonne – Standard</span><span class="sxs-lookup"><span data-stu-id="90073-128">Year to Date Column - Default</span></span> |
+| <span data-ttu-id="303e8-123">Balanse – Standard</span><span class="sxs-lookup"><span data-stu-id="303e8-123">Balance Sheet - Default</span></span>              | <span data-ttu-id="303e8-124">Balanse – Standard</span><span class="sxs-lookup"><span data-stu-id="303e8-124">Balance Sheet - Default</span></span>              | <span data-ttu-id="303e8-125">Hittil i år og avvik – Standard</span><span class="sxs-lookup"><span data-stu-id="303e8-125">YTD and Variance - Default</span></span>    |
+| <span data-ttu-id="303e8-126">Side ved side Balanse – Standard</span><span class="sxs-lookup"><span data-stu-id="303e8-126">Side by Side Balance Sheet – Default</span></span> | <span data-ttu-id="303e8-127">Side ved side Balanse – Standard</span><span class="sxs-lookup"><span data-stu-id="303e8-127">Side by Side Balance Sheet – Default</span></span> | <span data-ttu-id="303e8-128">Hittil i år-kolonne – Standard</span><span class="sxs-lookup"><span data-stu-id="303e8-128">Year to Date Column - Default</span></span> |
 
-### <a name="row-definition"></a><span data-ttu-id="90073-129">Raddefinisjon</span><span class="sxs-lookup"><span data-stu-id="90073-129">Row definition</span></span>
+### <a name="row-definition"></a><span data-ttu-id="303e8-129">Raddefinisjon</span><span class="sxs-lookup"><span data-stu-id="303e8-129">Row definition</span></span>
 
-<span data-ttu-id="90073-130">Raddefinisjonene for begge balanserapportene inneholder inndelinger for hver del av en tradisjonell balanse.</span><span class="sxs-lookup"><span data-stu-id="90073-130">The row definitions for both balance sheet reports contain sections for each part of a traditional balance sheet.</span></span> <span data-ttu-id="90073-131">Side-ved-side-rapporten inneholder et spalteskift, slik at gjeld og eiernes egenkapital vises ved siden av anleggsmidler.</span><span class="sxs-lookup"><span data-stu-id="90073-131">The side-by-side report includes a column break, so that liability and the owner’s equity appear next to assets.</span></span> <span data-ttu-id="90073-132">Dimensjonen for hovedkontokategorien brukes til å opprette begge raddefinisjoner.</span><span class="sxs-lookup"><span data-stu-id="90073-132">The Main Account Category dimension is used to build both row definitions.</span></span> <span data-ttu-id="90073-133">Derfor kan alle generere rapportene uten å gjøre endringer.</span><span class="sxs-lookup"><span data-stu-id="90073-133">Therefore, anyone can generate the reports without having to make any modifications.</span></span>
+<span data-ttu-id="303e8-130">Raddefinisjonene for begge balanserapportene inneholder inndelinger for hver del av en tradisjonell balanse.</span><span class="sxs-lookup"><span data-stu-id="303e8-130">The row definitions for both balance sheet reports contain sections for each part of a traditional balance sheet.</span></span> <span data-ttu-id="303e8-131">Side-ved-side-rapporten inneholder et spalteskift, slik at gjeld og eiernes egenkapital vises ved siden av anleggsmidler.</span><span class="sxs-lookup"><span data-stu-id="303e8-131">The side-by-side report includes a column break, so that liability and the owner’s equity appear next to assets.</span></span> <span data-ttu-id="303e8-132">Dimensjonen for hovedkontokategorien brukes til å opprette begge raddefinisjoner.</span><span class="sxs-lookup"><span data-stu-id="303e8-132">The Main Account Category dimension is used to build both row definitions.</span></span> <span data-ttu-id="303e8-133">Derfor kan alle generere rapportene uten å gjøre endringer.</span><span class="sxs-lookup"><span data-stu-id="303e8-133">Therefore, anyone can generate the reports without having to make any modifications.</span></span>
 
-### <a name="column-definition"></a><span data-ttu-id="90073-134">Kolonnedefinisjon</span><span class="sxs-lookup"><span data-stu-id="90073-134">Column definition</span></span>
+### <a name="column-definition"></a><span data-ttu-id="303e8-134">Kolonnedefinisjon</span><span class="sxs-lookup"><span data-stu-id="303e8-134">Column definition</span></span>
 
-<span data-ttu-id="90073-135">Kolonnedefinisjonene inneholder ulike typer kolonner for å angi ulike nivåer av detaljer og økonomiske data.</span><span class="sxs-lookup"><span data-stu-id="90073-135">The column definitions contain different types of columns to provide different levels of detail and financial data.</span></span>
+<span data-ttu-id="303e8-135">Kolonnedefinisjonene inneholder ulike typer kolonner for å angi ulike nivåer av detaljer og økonomiske data.</span><span class="sxs-lookup"><span data-stu-id="303e8-135">The column definitions contain different types of columns to provide different levels of detail and financial data.</span></span>
 
--   <span data-ttu-id="90073-136">**Hittil i år og avvik – Standard kolonnetyper:**</span><span class="sxs-lookup"><span data-stu-id="90073-136">**YTD and Variance – Default column types:**</span></span>
-    -   <span data-ttu-id="90073-137">**DESC** – Beskrivelsen fra raddefinisjonen.</span><span class="sxs-lookup"><span data-stu-id="90073-137">**DESC** – The description from the row definition</span></span>
-    -   <span data-ttu-id="90073-138">**FD** – Økonomiske data hittil i år for inneværende år</span><span class="sxs-lookup"><span data-stu-id="90073-138">**FD** – Year-to-date financial data for the current year</span></span>
-    -   <span data-ttu-id="90073-139">**FD** – Økonomiske data hittil i år for forrige år</span><span class="sxs-lookup"><span data-stu-id="90073-139">**FD** – Year-to-date financial data for the last year</span></span>
-    -   <span data-ttu-id="90073-140">**CALC** – Avviket fra å trekke forrige år fra i år</span><span class="sxs-lookup"><span data-stu-id="90073-140">**CALC** – The variance from subtracting last year from this year</span></span>
+-   <span data-ttu-id="303e8-136">**Hittil i år og avvik – Standard kolonnetyper:**</span><span class="sxs-lookup"><span data-stu-id="303e8-136">**YTD and Variance – Default column types:**</span></span>
+    -   <span data-ttu-id="303e8-137">**DESC** – Beskrivelsen fra raddefinisjonen.</span><span class="sxs-lookup"><span data-stu-id="303e8-137">**DESC** – The description from the row definition</span></span>
+    -   <span data-ttu-id="303e8-138">**FD** – Økonomiske data hittil i år for inneværende år</span><span class="sxs-lookup"><span data-stu-id="303e8-138">**FD** – Year-to-date financial data for the current year</span></span>
+    -   <span data-ttu-id="303e8-139">**FD** – Økonomiske data hittil i år for forrige år</span><span class="sxs-lookup"><span data-stu-id="303e8-139">**FD** – Year-to-date financial data for the last year</span></span>
+    -   <span data-ttu-id="303e8-140">**CALC** – Avviket fra å trekke forrige år fra i år</span><span class="sxs-lookup"><span data-stu-id="303e8-140">**CALC** – The variance from subtracting last year from this year</span></span>
 
 <!-- -->
 
--   <span data-ttu-id="90073-141">**Hittil i år-kolonne – Standard:**</span><span class="sxs-lookup"><span data-stu-id="90073-141">**Year to Date Column – Default:**</span></span>
-    -   <span data-ttu-id="90073-142">**DESC** – Beskrivelsen fra raddefinisjonen.</span><span class="sxs-lookup"><span data-stu-id="90073-142">**DESC** – The description from the row definition</span></span>
-    -   <span data-ttu-id="90073-143">**FD** – Økonomiske data hittil i år for inneværende år</span><span class="sxs-lookup"><span data-stu-id="90073-143">**FD** – Year-to-date financial data for the current year</span></span>
+-   <span data-ttu-id="303e8-141">**Hittil i år-kolonne – Standard:**</span><span class="sxs-lookup"><span data-stu-id="303e8-141">**Year to Date Column – Default:**</span></span>
+    -   <span data-ttu-id="303e8-142">**DESC** – Beskrivelsen fra raddefinisjonen.</span><span class="sxs-lookup"><span data-stu-id="303e8-142">**DESC** – The description from the row definition</span></span>
+    -   <span data-ttu-id="303e8-143">**FD** – Økonomiske data hittil i år for inneværende år</span><span class="sxs-lookup"><span data-stu-id="303e8-143">**FD** – Year-to-date financial data for the current year</span></span>
 
 
 
-<a name="additional-resources"></a><span data-ttu-id="90073-144">Tilleggsressurser</span><span class="sxs-lookup"><span data-stu-id="90073-144">Additional resources</span></span>
+<a name="additional-resources"></a><span data-ttu-id="303e8-144">Tilleggsressurser</span><span class="sxs-lookup"><span data-stu-id="303e8-144">Additional resources</span></span>
 --------
 
-[<span data-ttu-id="90073-145">Finansrapportering</span><span class="sxs-lookup"><span data-stu-id="90073-145">Financial reporting</span></span>](financial-reporting-getting-started.md)
+[<span data-ttu-id="303e8-145">Finansrapportering</span><span class="sxs-lookup"><span data-stu-id="303e8-145">Financial reporting</span></span>](financial-reporting-getting-started.md)
 
-[<span data-ttu-id="90073-146">Vise finansrapporter</span><span class="sxs-lookup"><span data-stu-id="90073-146">View financial reports</span></span>](view-financial-reports.md)
+[<span data-ttu-id="303e8-146">Vise finansrapporter</span><span class="sxs-lookup"><span data-stu-id="303e8-146">View financial reports</span></span>](view-financial-reports.md)
 
-[<span data-ttu-id="90073-147">Blogg for Dynamics-finansrapportering</span><span class="sxs-lookup"><span data-stu-id="90073-147">Dynamics Financial Reporting Blog</span></span>](https://blogs.msdn.com/b/dynamics_financial_reporting/)
+[<span data-ttu-id="303e8-147">Blogg for Dynamics-finansrapportering</span><span class="sxs-lookup"><span data-stu-id="303e8-147">Dynamics Financial Reporting Blog</span></span>](https://blogs.msdn.com/b/dynamics_financial_reporting/)
 
 
 

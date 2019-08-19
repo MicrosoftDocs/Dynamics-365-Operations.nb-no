@@ -10,57 +10,57 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: KanbanRules, LeanProductionFlowActivityLookup, InventItemIdLookupSimple, UnitOfMeasureLookup, KanbanCreate
 audience: Application User
-ms.reviewer: shylaw
+ms.reviewer: josaw
 ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: a77c66b64512274f2703543293c2f48f2df2acf5
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 5d8647a88773b3d4c0193d64307426736d0d085d
+ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1570152"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1837764"
 ---
-# <a name="create-a-withdrawal-kanban-rule"></a><span data-ttu-id="f1e38-103">Opprette en Kanban-regel for uttak</span><span class="sxs-lookup"><span data-stu-id="f1e38-103">Create a withdrawal kanban rule</span></span>
+# <a name="create-a-withdrawal-kanban-rule"></a><span data-ttu-id="b1e3e-103">Opprette en Kanban-regel for uttak</span><span class="sxs-lookup"><span data-stu-id="b1e3e-103">Create a withdrawal kanban rule</span></span>
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="f1e38-104">Denne fremgangsmåten viser oppsettet som kreves for å opprette en kanban-regel for uttak for overføring av materialer i en lean-miljø.</span><span class="sxs-lookup"><span data-stu-id="f1e38-104">This procedure shows the setup that is needed to create a withdrawal kanban rule for transferring material in a lean environment.</span></span> <span data-ttu-id="f1e38-105">Demonstrasjonsdatafirmaet USMF brukes til å opprette denne fremgangsmåten.</span><span class="sxs-lookup"><span data-stu-id="f1e38-105">The demo data company used to create this procedure is USMF.</span></span> <span data-ttu-id="f1e38-106">Denne fremgangsmåten er ment for prosessingeniøren eller verdistrømlederen, når de klargjør etterfylling av et nytt eller endret materiale.</span><span class="sxs-lookup"><span data-stu-id="f1e38-106">This procedure is intended for the Process Engineer or the Value Stream Manager, as they prepare replenishment of new or modified material.</span></span>
+<span data-ttu-id="b1e3e-104">Denne fremgangsmåten viser oppsettet som kreves for å opprette en kanban-regel for uttak for overføring av materialer i en lean-miljø.</span><span class="sxs-lookup"><span data-stu-id="b1e3e-104">This procedure shows the setup that is needed to create a withdrawal kanban rule for transferring material in a lean environment.</span></span> <span data-ttu-id="b1e3e-105">Demonstrasjonsdatafirmaet USMF brukes til å opprette denne fremgangsmåten.</span><span class="sxs-lookup"><span data-stu-id="b1e3e-105">The demo data company used to create this procedure is USMF.</span></span> <span data-ttu-id="b1e3e-106">Denne fremgangsmåten er ment for prosessingeniøren eller verdistrømlederen, når de klargjør etterfylling av et nytt eller endret materiale.</span><span class="sxs-lookup"><span data-stu-id="b1e3e-106">This procedure is intended for the Process Engineer or the Value Stream Manager, as they prepare replenishment of new or modified material.</span></span>
 
 
-## <a name="create-new-kanban-rule"></a><span data-ttu-id="f1e38-107">Opprette ny Kanban-regel</span><span class="sxs-lookup"><span data-stu-id="f1e38-107">Create new kanban rule</span></span>
-1. <span data-ttu-id="f1e38-108">Gå til Kanban-regler.</span><span class="sxs-lookup"><span data-stu-id="f1e38-108">Go to Kanban rules.</span></span>
-2. <span data-ttu-id="f1e38-109">Klikk Ny.</span><span class="sxs-lookup"><span data-stu-id="f1e38-109">Click New.</span></span>
-3. <span data-ttu-id="f1e38-110">Velg Uttak i Type-feltet.</span><span class="sxs-lookup"><span data-stu-id="f1e38-110">In the Type field, select 'Withdrawal'.</span></span>
-    * <span data-ttu-id="f1e38-111">Typen Uttak brukes for kanban-regler for å overføre materialer eller varer.</span><span class="sxs-lookup"><span data-stu-id="f1e38-111">The Withdrawal type is used for kanban rules to transfer material or goods.</span></span>  
-4. <span data-ttu-id="f1e38-112">Angi eller velg en verdi i feltet Første planaktivitet.</span><span class="sxs-lookup"><span data-stu-id="f1e38-112">In the First plan activity field, enter or select a value.</span></span>
-    * <span data-ttu-id="f1e38-113">Velg ReplenishSpeakerComponents.</span><span class="sxs-lookup"><span data-stu-id="f1e38-113">Select ReplenishSpeakerComponents.</span></span>   <span data-ttu-id="f1e38-114">Denne aktiviteten er konfigurert til å flytte komponenter fra lager 11, lokasjon 11 til lager 12 og lokasjon 12.</span><span class="sxs-lookup"><span data-stu-id="f1e38-114">This activity is set up to move components from warehouse 11, location 11 to warehouse 12, and location 12.</span></span>  
-5. <span data-ttu-id="f1e38-115">Angi eller velg en verdi i feltet Produkt.</span><span class="sxs-lookup"><span data-stu-id="f1e38-115">In the Product field, enter or select a value.</span></span>
-    * <span data-ttu-id="f1e38-116">Velg M0007.</span><span class="sxs-lookup"><span data-stu-id="f1e38-116">Select M0007.</span></span>  
-6. <span data-ttu-id="f1e38-117">Angi et tall i feltet Leveringstid.</span><span class="sxs-lookup"><span data-stu-id="f1e38-117">In the Lead time field, enter a number.</span></span>
-    * <span data-ttu-id="f1e38-118">For eksempel 60.</span><span class="sxs-lookup"><span data-stu-id="f1e38-118">For example, 60.</span></span>  
-7. <span data-ttu-id="f1e38-119">I Måleenhet-feltet angir eller velger du en verdi.</span><span class="sxs-lookup"><span data-stu-id="f1e38-119">In the Unit of measure field, enter or select a value.</span></span>
-    * <span data-ttu-id="f1e38-120">For eksempel Minutter.</span><span class="sxs-lookup"><span data-stu-id="f1e38-120">For example, Minutes.</span></span>  
+## <a name="create-new-kanban-rule"></a><span data-ttu-id="b1e3e-107">Opprette ny Kanban-regel</span><span class="sxs-lookup"><span data-stu-id="b1e3e-107">Create new kanban rule</span></span>
+1. <span data-ttu-id="b1e3e-108">Gå til Kanban-regler.</span><span class="sxs-lookup"><span data-stu-id="b1e3e-108">Go to Kanban rules.</span></span>
+2. <span data-ttu-id="b1e3e-109">Klikk Ny.</span><span class="sxs-lookup"><span data-stu-id="b1e3e-109">Click New.</span></span>
+3. <span data-ttu-id="b1e3e-110">Velg Uttak i Type-feltet.</span><span class="sxs-lookup"><span data-stu-id="b1e3e-110">In the Type field, select 'Withdrawal'.</span></span>
+    * <span data-ttu-id="b1e3e-111">Typen Uttak brukes for kanban-regler for å overføre materialer eller varer.</span><span class="sxs-lookup"><span data-stu-id="b1e3e-111">The Withdrawal type is used for kanban rules to transfer material or goods.</span></span>  
+4. <span data-ttu-id="b1e3e-112">Angi eller velg en verdi i feltet Første planaktivitet.</span><span class="sxs-lookup"><span data-stu-id="b1e3e-112">In the First plan activity field, enter or select a value.</span></span>
+    * <span data-ttu-id="b1e3e-113">Velg ReplenishSpeakerComponents.</span><span class="sxs-lookup"><span data-stu-id="b1e3e-113">Select ReplenishSpeakerComponents.</span></span>   <span data-ttu-id="b1e3e-114">Denne aktiviteten er konfigurert til å flytte komponenter fra lager 11, lokasjon 11 til lager 12 og lokasjon 12.</span><span class="sxs-lookup"><span data-stu-id="b1e3e-114">This activity is set up to move components from warehouse 11, location 11 to warehouse 12, and location 12.</span></span>  
+5. <span data-ttu-id="b1e3e-115">Angi eller velg en verdi i feltet Produkt.</span><span class="sxs-lookup"><span data-stu-id="b1e3e-115">In the Product field, enter or select a value.</span></span>
+    * <span data-ttu-id="b1e3e-116">Velg M0007.</span><span class="sxs-lookup"><span data-stu-id="b1e3e-116">Select M0007.</span></span>  
+6. <span data-ttu-id="b1e3e-117">Angi et tall i feltet Leveringstid.</span><span class="sxs-lookup"><span data-stu-id="b1e3e-117">In the Lead time field, enter a number.</span></span>
+    * <span data-ttu-id="b1e3e-118">For eksempel 60.</span><span class="sxs-lookup"><span data-stu-id="b1e3e-118">For example, 60.</span></span>  
+7. <span data-ttu-id="b1e3e-119">I Måleenhet-feltet angir eller velger du en verdi.</span><span class="sxs-lookup"><span data-stu-id="b1e3e-119">In the Unit of measure field, enter or select a value.</span></span>
+    * <span data-ttu-id="b1e3e-120">For eksempel Minutter.</span><span class="sxs-lookup"><span data-stu-id="b1e3e-120">For example, Minutes.</span></span>  
 
-## <a name="set-quantities-for-kanban"></a><span data-ttu-id="f1e38-121">Angi antall for Kanban</span><span class="sxs-lookup"><span data-stu-id="f1e38-121">Set quantities for kanban</span></span>
-1. <span data-ttu-id="f1e38-122">Angi Standardantall som 5.</span><span class="sxs-lookup"><span data-stu-id="f1e38-122">Set Default quantity to '5'.</span></span>
-    * <span data-ttu-id="f1e38-123">Dette er antallet som skal overføres til hver kanban.</span><span class="sxs-lookup"><span data-stu-id="f1e38-123">This is the quantity that will be transferred for each kanban.</span></span>  
-2. <span data-ttu-id="f1e38-124">Angi 2 i feltet Fast Kanban-antall.</span><span class="sxs-lookup"><span data-stu-id="f1e38-124">In the Fixed kanban quantity field, enter '2'.</span></span>
-    * <span data-ttu-id="f1e38-125">Dette er antall Kanbaner som skal være aktive.</span><span class="sxs-lookup"><span data-stu-id="f1e38-125">This is the amount of kanbans that should be active.</span></span> <span data-ttu-id="f1e38-126">I dette tilfellet overfører 2 Kanbaner 5 hver.</span><span class="sxs-lookup"><span data-stu-id="f1e38-126">In this case, 2 kanbans transferring 5 each.</span></span>  
-3. <span data-ttu-id="f1e38-127">Angi 1 i feltet Nedre varslingsgrense.</span><span class="sxs-lookup"><span data-stu-id="f1e38-127">In the Alert boundary minimum field, enter '1'.</span></span>
-    * <span data-ttu-id="f1e38-128">Brukes til å holde oversikt over minimumsbeløpet for alle Kanbaner som skal være på målet.</span><span class="sxs-lookup"><span data-stu-id="f1e38-128">Used to keep track of the minimum amount of full kanbans that should be at the destination.</span></span> <span data-ttu-id="f1e38-129">Dette brukes for eksempel brukes i oversikten over kanban-antall.</span><span class="sxs-lookup"><span data-stu-id="f1e38-129">For example, this is used on the kanban quantity overview.</span></span>  
-4. <span data-ttu-id="f1e38-130">Angi 2 i feltet Øvre varslingsgrense.</span><span class="sxs-lookup"><span data-stu-id="f1e38-130">In the Alert boundary maximum field, enter '2'.</span></span>
-    * <span data-ttu-id="f1e38-131">Brukes til å holde oversikt over maksimumsbeløpet for alle Kanbaner som skal være på målet.</span><span class="sxs-lookup"><span data-stu-id="f1e38-131">Used to keep track of the maximum amount of full kanbans that should be at the destination.</span></span> <span data-ttu-id="f1e38-132">Dette brukes for eksempel brukes i oversikten over kanban-antall.</span><span class="sxs-lookup"><span data-stu-id="f1e38-132">For example, this is used on the kanban quantity overview.</span></span>  
+## <a name="set-quantities-for-kanban"></a><span data-ttu-id="b1e3e-121">Angi antall for Kanban</span><span class="sxs-lookup"><span data-stu-id="b1e3e-121">Set quantities for kanban</span></span>
+1. <span data-ttu-id="b1e3e-122">Angi Standardantall som 5.</span><span class="sxs-lookup"><span data-stu-id="b1e3e-122">Set Default quantity to '5'.</span></span>
+    * <span data-ttu-id="b1e3e-123">Dette er antallet som skal overføres til hver kanban.</span><span class="sxs-lookup"><span data-stu-id="b1e3e-123">This is the quantity that will be transferred for each kanban.</span></span>  
+2. <span data-ttu-id="b1e3e-124">Angi 2 i feltet Fast Kanban-antall.</span><span class="sxs-lookup"><span data-stu-id="b1e3e-124">In the Fixed kanban quantity field, enter '2'.</span></span>
+    * <span data-ttu-id="b1e3e-125">Dette er antall Kanbaner som skal være aktive.</span><span class="sxs-lookup"><span data-stu-id="b1e3e-125">This is the amount of kanbans that should be active.</span></span> <span data-ttu-id="b1e3e-126">I dette tilfellet overfører 2 Kanbaner 5 hver.</span><span class="sxs-lookup"><span data-stu-id="b1e3e-126">In this case, 2 kanbans transferring 5 each.</span></span>  
+3. <span data-ttu-id="b1e3e-127">Angi 1 i feltet Nedre varslingsgrense.</span><span class="sxs-lookup"><span data-stu-id="b1e3e-127">In the Alert boundary minimum field, enter '1'.</span></span>
+    * <span data-ttu-id="b1e3e-128">Brukes til å holde oversikt over minimumsbeløpet for alle Kanbaner som skal være på målet.</span><span class="sxs-lookup"><span data-stu-id="b1e3e-128">Used to keep track of the minimum amount of full kanbans that should be at the destination.</span></span> <span data-ttu-id="b1e3e-129">Dette brukes for eksempel brukes i oversikten over kanban-antall.</span><span class="sxs-lookup"><span data-stu-id="b1e3e-129">For example, this is used on the kanban quantity overview.</span></span>  
+4. <span data-ttu-id="b1e3e-130">Angi 2 i feltet Øvre varslingsgrense.</span><span class="sxs-lookup"><span data-stu-id="b1e3e-130">In the Alert boundary maximum field, enter '2'.</span></span>
+    * <span data-ttu-id="b1e3e-131">Brukes til å holde oversikt over maksimumsbeløpet for alle Kanbaner som skal være på målet.</span><span class="sxs-lookup"><span data-stu-id="b1e3e-131">Used to keep track of the maximum amount of full kanbans that should be at the destination.</span></span> <span data-ttu-id="b1e3e-132">Dette brukes for eksempel brukes i oversikten over kanban-antall.</span><span class="sxs-lookup"><span data-stu-id="b1e3e-132">For example, this is used on the kanban quantity overview.</span></span>  
 
-## <a name="create-kanbans"></a><span data-ttu-id="f1e38-133">Opprett Kanbaner</span><span class="sxs-lookup"><span data-stu-id="f1e38-133">Create kanbans</span></span>
-1. <span data-ttu-id="f1e38-134">Klikk Lagre.</span><span class="sxs-lookup"><span data-stu-id="f1e38-134">Click Save.</span></span>
-    * <span data-ttu-id="f1e38-135">Kanban-regelen må lagres før du kan opprette Kanbaner.</span><span class="sxs-lookup"><span data-stu-id="f1e38-135">The kanban rule needs to be saved before kanbans can be created.</span></span>  
-2. <span data-ttu-id="f1e38-136">Klikk Legg til.</span><span class="sxs-lookup"><span data-stu-id="f1e38-136">Click Add.</span></span>
-    * <span data-ttu-id="f1e38-137">Legg merke til at det ikke finnes noen aktive Kanbaner fordi foreslått antall nye Kanban er 2, og dette er lik Fast Kanban-antall.</span><span class="sxs-lookup"><span data-stu-id="f1e38-137">Note that there are no active kanbans because the suggested 'Number of new kanbans' is 2, which is equal to the 'Fixed kanban quantity'.</span></span>  
-3. <span data-ttu-id="f1e38-138">Klikk Opprett.</span><span class="sxs-lookup"><span data-stu-id="f1e38-138">Click Create.</span></span>
-    * <span data-ttu-id="f1e38-139">Dette vil opprette to Kanbaner.</span><span class="sxs-lookup"><span data-stu-id="f1e38-139">This will create two kanbans.</span></span>  
-    * <span data-ttu-id="f1e38-140">Legg merke til at 2 Kanbaner, for 5 hver, ble opprettet for denne kanban-regelen for uttak.</span><span class="sxs-lookup"><span data-stu-id="f1e38-140">Note that 2 kanbans, for 5 each, was created for this withdrawal kanban rule.</span></span>  <span data-ttu-id="f1e38-141">Dette er det siste trinnet i prosedyren.</span><span class="sxs-lookup"><span data-stu-id="f1e38-141">This is the last step in this procedure.</span></span>  
+## <a name="create-kanbans"></a><span data-ttu-id="b1e3e-133">Opprett Kanbaner</span><span class="sxs-lookup"><span data-stu-id="b1e3e-133">Create kanbans</span></span>
+1. <span data-ttu-id="b1e3e-134">Klikk Lagre.</span><span class="sxs-lookup"><span data-stu-id="b1e3e-134">Click Save.</span></span>
+    * <span data-ttu-id="b1e3e-135">Kanban-regelen må lagres før du kan opprette Kanbaner.</span><span class="sxs-lookup"><span data-stu-id="b1e3e-135">The kanban rule needs to be saved before kanbans can be created.</span></span>  
+2. <span data-ttu-id="b1e3e-136">Klikk Legg til.</span><span class="sxs-lookup"><span data-stu-id="b1e3e-136">Click Add.</span></span>
+    * <span data-ttu-id="b1e3e-137">Legg merke til at det ikke finnes noen aktive Kanbaner fordi foreslått antall nye Kanban er 2, og dette er lik Fast Kanban-antall.</span><span class="sxs-lookup"><span data-stu-id="b1e3e-137">Note that there are no active kanbans because the suggested 'Number of new kanbans' is 2, which is equal to the 'Fixed kanban quantity'.</span></span>  
+3. <span data-ttu-id="b1e3e-138">Klikk Opprett.</span><span class="sxs-lookup"><span data-stu-id="b1e3e-138">Click Create.</span></span>
+    * <span data-ttu-id="b1e3e-139">Dette vil opprette to Kanbaner.</span><span class="sxs-lookup"><span data-stu-id="b1e3e-139">This will create two kanbans.</span></span>  
+    * <span data-ttu-id="b1e3e-140">Legg merke til at 2 Kanbaner, for 5 hver, ble opprettet for denne kanban-regelen for uttak.</span><span class="sxs-lookup"><span data-stu-id="b1e3e-140">Note that 2 kanbans, for 5 each, was created for this withdrawal kanban rule.</span></span>  <span data-ttu-id="b1e3e-141">Dette er det siste trinnet i prosedyren.</span><span class="sxs-lookup"><span data-stu-id="b1e3e-141">This is the last step in this procedure.</span></span>  
 

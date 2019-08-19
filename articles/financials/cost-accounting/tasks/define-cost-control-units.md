@@ -9,34 +9,34 @@ ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: roschlom
 ms.search.scope: Operations
 ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 296d74a9ca68758d43be1c46acdba7d13d99e9d1
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 77583232ee69819ea9ba28dd101326341d61c42d
+ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1543707"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1841207"
 ---
-# <a name="define-cost-control-units"></a><span data-ttu-id="1de0b-103">Definere kostnadskontrollenheter</span><span class="sxs-lookup"><span data-stu-id="1de0b-103">Define cost control units</span></span>
+# <a name="define-cost-control-units"></a><span data-ttu-id="5e2a9-103">Definere kostnadskontrollenheter</span><span class="sxs-lookup"><span data-stu-id="5e2a9-103">Define cost control units</span></span>
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="1de0b-104">Denne fremgangsmåten viser hvordan du definerer kostnadskontrollenheter i kostnadsregnskapsfinans.</span><span class="sxs-lookup"><span data-stu-id="1de0b-104">This procedure shows how to define cost control units in the cost accounting ledger.</span></span> <span data-ttu-id="1de0b-105">Du velger kostnadsobjektdimensjonen som du vil kontrollere kostnadene for i finans.</span><span class="sxs-lookup"><span data-stu-id="1de0b-105">You select the cost object dimension for which you want to control costs in the ledger.</span></span> <span data-ttu-id="1de0b-106">Kostnadsobjektdimensjonsmedlemmene blir omgjort til kostnadsobjekter av kostnadskontrollenhetene.</span><span class="sxs-lookup"><span data-stu-id="1de0b-106">The cost object dimension members are transformed into cost objects of the cost control units.</span></span> <span data-ttu-id="1de0b-107">Demonstrasjonsdatafirmaet USP2 brukes til å opprette denne fremgangsmåten.</span><span class="sxs-lookup"><span data-stu-id="1de0b-107">The demo data company used to create this procedure is USP2.</span></span>
+<span data-ttu-id="5e2a9-104">Denne fremgangsmåten viser hvordan du definerer kostnadskontrollenheter i kostnadsregnskapsfinans.</span><span class="sxs-lookup"><span data-stu-id="5e2a9-104">This procedure shows how to define cost control units in the cost accounting ledger.</span></span> <span data-ttu-id="5e2a9-105">Du velger kostnadsobjektdimensjonen som du vil kontrollere kostnadene for i finans.</span><span class="sxs-lookup"><span data-stu-id="5e2a9-105">You select the cost object dimension for which you want to control costs in the ledger.</span></span> <span data-ttu-id="5e2a9-106">Kostnadsobjektdimensjonsmedlemmene blir omgjort til kostnadsobjekter av kostnadskontrollenhetene.</span><span class="sxs-lookup"><span data-stu-id="5e2a9-106">The cost object dimension members are transformed into cost objects of the cost control units.</span></span> <span data-ttu-id="5e2a9-107">Demonstrasjonsdatafirmaet USP2 brukes til å opprette denne fremgangsmåten.</span><span class="sxs-lookup"><span data-stu-id="5e2a9-107">The demo data company used to create this procedure is USP2.</span></span>
 
-1. <span data-ttu-id="1de0b-108">Gå til Kostnadsregnskap > Finansoppsett > Kostnadsregnskapsfinans.</span><span class="sxs-lookup"><span data-stu-id="1de0b-108">Go to Cost accounting > Ledger setup > Cost accounting ledgers.</span></span>
-2. <span data-ttu-id="1de0b-109">Finn og velg ønsket post i listen.</span><span class="sxs-lookup"><span data-stu-id="1de0b-109">In the list, find and select the desired record.</span></span>
-3. <span data-ttu-id="1de0b-110">Klikk Kontrollenheter.</span><span class="sxs-lookup"><span data-stu-id="1de0b-110">Click Control units.</span></span>
-4. <span data-ttu-id="1de0b-111">Klikk Ny.</span><span class="sxs-lookup"><span data-stu-id="1de0b-111">Click New.</span></span>
-5. <span data-ttu-id="1de0b-112">Skriv inn en verdi i Navn-feltet.</span><span class="sxs-lookup"><span data-stu-id="1de0b-112">In the Name field, type a value.</span></span>
-6. <span data-ttu-id="1de0b-113">Angi eller velg en verdi i feltet Dimensjon.</span><span class="sxs-lookup"><span data-stu-id="1de0b-113">In the Dimension field, enter or select a value.</span></span>
-7. <span data-ttu-id="1de0b-114">Klikk Lagre.</span><span class="sxs-lookup"><span data-stu-id="1de0b-114">Click Save.</span></span>
-8. <span data-ttu-id="1de0b-115">Klikk Ny.</span><span class="sxs-lookup"><span data-stu-id="1de0b-115">Click New.</span></span>
-9. <span data-ttu-id="1de0b-116">Skriv inn en verdi i Navn-feltet.</span><span class="sxs-lookup"><span data-stu-id="1de0b-116">In the Name field, type a value.</span></span>
-10. <span data-ttu-id="1de0b-117">Angi eller velg en verdi i feltet Dimensjon.</span><span class="sxs-lookup"><span data-stu-id="1de0b-117">In the Dimension field, enter or select a value.</span></span>
-11. <span data-ttu-id="1de0b-118">Klikk Lagre.</span><span class="sxs-lookup"><span data-stu-id="1de0b-118">Click Save.</span></span>
+1. <span data-ttu-id="5e2a9-108">Gå til Kostnadsregnskap > Finansoppsett > Kostnadsregnskapsfinans.</span><span class="sxs-lookup"><span data-stu-id="5e2a9-108">Go to Cost accounting > Ledger setup > Cost accounting ledgers.</span></span>
+2. <span data-ttu-id="5e2a9-109">Finn og velg ønsket post i listen.</span><span class="sxs-lookup"><span data-stu-id="5e2a9-109">In the list, find and select the desired record.</span></span>
+3. <span data-ttu-id="5e2a9-110">Klikk Kontrollenheter.</span><span class="sxs-lookup"><span data-stu-id="5e2a9-110">Click Control units.</span></span>
+4. <span data-ttu-id="5e2a9-111">Klikk Ny.</span><span class="sxs-lookup"><span data-stu-id="5e2a9-111">Click New.</span></span>
+5. <span data-ttu-id="5e2a9-112">Skriv inn en verdi i Navn-feltet.</span><span class="sxs-lookup"><span data-stu-id="5e2a9-112">In the Name field, type a value.</span></span>
+6. <span data-ttu-id="5e2a9-113">Angi eller velg en verdi i feltet Dimensjon.</span><span class="sxs-lookup"><span data-stu-id="5e2a9-113">In the Dimension field, enter or select a value.</span></span>
+7. <span data-ttu-id="5e2a9-114">Klikk Lagre.</span><span class="sxs-lookup"><span data-stu-id="5e2a9-114">Click Save.</span></span>
+8. <span data-ttu-id="5e2a9-115">Klikk Ny.</span><span class="sxs-lookup"><span data-stu-id="5e2a9-115">Click New.</span></span>
+9. <span data-ttu-id="5e2a9-116">Skriv inn en verdi i Navn-feltet.</span><span class="sxs-lookup"><span data-stu-id="5e2a9-116">In the Name field, type a value.</span></span>
+10. <span data-ttu-id="5e2a9-117">Angi eller velg en verdi i feltet Dimensjon.</span><span class="sxs-lookup"><span data-stu-id="5e2a9-117">In the Dimension field, enter or select a value.</span></span>
+11. <span data-ttu-id="5e2a9-118">Klikk Lagre.</span><span class="sxs-lookup"><span data-stu-id="5e2a9-118">Click Save.</span></span>
 
