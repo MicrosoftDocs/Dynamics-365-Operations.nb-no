@@ -3,25 +3,25 @@ title: Definer mva-utligningsperioder
 description: Mva-utligningsperioder inneholder informasjon om periodintervallene som det må rapporteres og betales merverdiavgift for.
 author: twheeloc
 manager: AnnBe
-ms.date: 10/15/2018
+ms.date: 08/05/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: TaxPeriod
 audience: Application User
-ms.reviewer: twheeloc
+ms.reviewer: roschlom
 ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: vstehman
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 1087ed78e91b487ca7157bfdac1d72ae3f477875
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 8304d9e8997a5d31740ee1203aa4bf0603014056
+ms.sourcegitcommit: d0fa8d0140fa81029527edb317623c1a7737c593
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1569592"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "1862994"
 ---
 # <a name="set-up-sales-tax-settlement-periods"></a>Definer mva-utligningsperioder
 
@@ -50,6 +50,8 @@ Denne oppgaven bruker demonstrasjonsfirmaet USMF.
 12. Angi antall enheter i periodeintervallet per periode. Et kvartal har for eksempel 3 måneder.
 13. Merk av eller fjern merket i avmerkingsboksen Bruk satsvis behandling for utligning av merverdiavgift.
     * Utligningsprosessen for utligningsperioden kan behandles som en satsvis jobb i bakgrunnen. Dette anbefales for et stort antall mva-transaksjoner i et periodeintervall.  
+    > [!NOTE]
+    > For øyeblikket støttes ikke dette i Østerrike, Belgia, Spania, Italia, Japan og Nederland.
 14. Merk eller fjern merket i avmerkingsboksen Hindre generering av transaksjoner for motregningsavgift.
     * Som standard genererer systemet transaksjoner for motregningsavgift under utligningsprosessen, som kan føre til ytelsesproblemer hvis det finnes et stort antall avgiftstransaksjoner i et periodeintervall. Merk av i denne avmerkingsboksen for å hindre generering av transaksjoner for motregningsavgift.
 15. Utvid kategorien Periodeintervaller.

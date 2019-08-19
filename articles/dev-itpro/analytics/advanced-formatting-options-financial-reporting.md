@@ -10,7 +10,7 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: FinancialReports
 audience: Application User
-ms.reviewer: sericks
+ms.reviewer: kfend
 ms.search.scope: Core, Operations
 ms.custom: 106571
 ms.assetid: 895b5127-01d6-4495-b127-343387b743aa
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 70f69fdad3d9186886190c62fba08af06d2a24d6
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: a46ff0a1d6e29cc567a86fae60ff803a102d1a2e
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1502571"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1848553"
 ---
 # <a name="advanced-formatting-options-in-financial-reporting"></a>Avanserte formateringsalternativer i finansrapportering
 
@@ -216,7 +216,7 @@ I dette eksemplet betyr beregningsformelen **@100+@330** at beløpet i rad 100 l
 Når raden i en raddefinisjon, har formatkoden **CAL** og du angir en matematisk beregning i cellen **Relaterte formler/rader/enheter**, må du også angi bokstaven for den tilknyttede kolonnen og raden i rapporten. Angi for eksempel **A.120** for å representere kolonne A, rad 120. Du kan også bruke en krøllalfa (@) for å angi alle kolonner. Angi for eksempel **@120** for å representere alle kolonner i rad 120. En matematisk beregning som ikke har en kolonnebokstav eller krøllalfa (@) antas for å være et reelt tall.
 
 > [!NOTE]
-> Hvis du bruker en etikettradkode som referanse til en rad, må du bruke et punktum (.) som skilletegn mellom kolonnebokstaven og etiketten (for eksempel **A.BRUTTO\_FORTJENESTE/A.SALG**). Hvis du bruker en krøllalfa (@), kreves ikke skilletegn (for eksempel **@BRUTTOFORTJENESTE/@SALG**).
+> Hvis du bruker en etikettradkode som referanse til en rad, må du bruke et punktum (.) som skilletegn mellom kolonnebokstaven og etiketten (for eksempel **A.BRUTTO\_FORTJENESTE/A.SALG**). Hvis du bruker en krøllalfa (@), kreves ikke skilletegn (for eksempel **@BRUTTOFORTJENESTE\_@SALG**).
 
 ### <a name="example-of-a-calculation-formula-for-a-specific-column"></a>Eksempel på en beregningsformel for en bestemt rad
 
@@ -250,7 +250,7 @@ Når du endrer et tall eller en beregning i en bestemt rad i en kolonne, men ikk
 
 ### <a name="ifthenelse-statements-in-a-row-definition"></a>IF/THEN/ELSE-setninger i en raddefinisjon
 
-**IF/THEN/ELSE**-setninger kan legges til alle gyldige beregninger og brukes med **CAL**-formatet. Du angir **IF/THEN/ELSE**-beregningsformler i cellen i kolonnen **Relaterte formler/rader/enheter**. **IF/THEN/ELSE**-beregningsformler bruker følgende format: IF&lt;sann/usann-setning&gt; THEN &lt;formel&gt; ELSE &lt;formel&gt; **ELSE &lt;-formel&gt;**-delen av setningen er valgfri.
+**IF/THEN/ELSE**-setninger kan legges til alle gyldige beregninger og brukes med **CAL**-formatet. Du angir **IF/THEN/ELSE**-beregningsformler i cellen i kolonnen **Relaterte formler/rader/enheter**. **IF/THEN/ELSE**-beregningsformler bruker følgende format: IF &lt;sann/usann-setning&gt; THEN &lt;formel&gt; ELSE &lt;formel&gt; **ELSE &lt;-formel&gt;**-delen av setningen er valgfri.
 
 #### <a name="if-statements"></a>IF-setninger
 
@@ -267,8 +267,8 @@ Begrepet **Perioder** i en **IF**-setning, representerer antall perioder for rap
 **THEN**- og **ELSE**-formler kan være alle gyldige beregninger, fra svært enkel verditilordninger til komplekse formler. Setningen **IF A.200&gt;0 THEN A=B.200** betyr "Hvis verdien i cellen i kolonne A i rad 200 er større enn 0 (null), plasserer verdien fra cellen i kolonne B i rad 200 i cellen i kolonne A i gjeldende rad." Den foregående **IF/THEN**-setning legger til en verdi i én kolonne i gjeldende rad. Du kan imidlertid også bruke en krøllalfa (@) i sann/usann-evalueringer eller formelen for å representere alle kolonner. Her er noen andre eksempler som er beskrevet i følgende deler:
 
 - **IF A.200 &gt;0 THEN B.200**: Hvis verdien i celle A.200 er positiv, blir verdien fra celle B.200 lagt til i alle kolonner i gjeldende rad.
-- **IF A.200 &gt; 0 THEN @200**: Hvis verdien i celle A.200 er positiv, blir verdien fra hver kolonne i rad 200 lag til i den tilsvarende kolonnen i gjeldende rad.
-- **IF @200 &gt; 0 THEN @200**: Hvis verdien i rad 200 i gjeldende kolonne er positiv, blir verdien fra rad 200 lagt til i samme kolonne i gjeldende rad.
+- **IF A.200 &gt;0 THEN @200**: Hvis verdien i celle A.200 er positiv, blir verdien fra hver kolonne i rad 200 lag til i den tilsvarende kolonnen i gjeldende rad.
+- **IF @200 &gt;0 THEN @200**: Hvis verdien i rad 200 i gjeldende kolonne er positiv, blir verdien fra rad 200 lagt til i samme kolonne i gjeldende rad.
 
 ### <a name="restricting-a-calculation-to-a-reporting-unit-in-a-row-definition"></a>Begrense en beregning for en rapporteringsenhet i en raddefinisjon
 

@@ -10,17 +10,17 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 manager: annbe
 audience: Application User
-ms.reviewer: shylaw
+ms.reviewer: kfend
 ms.search.scope: Core, Operations
 ms.search.region: Norway
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 9c289e1cce79a6f7fb211e52f42ac6b04570c747
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: fa8939a212a53c6c5fc70ed396b7fafdff3c64e6
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1549061"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1852444"
 ---
 # <a name="vat-statement-for-norway"></a>MVA-oppgave for Norge
 

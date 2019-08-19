@@ -3,28 +3,29 @@ title: Dataimport- og -eksportjobber
 description: Bruk arbeidsområdet Datahåndtering for å opprette og administrere dataimport- og -eksportjobber.
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 03/11/2019
+ms.date: 07/19/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application user
-ms.reviewer: margoc
+ms.reviewer: sericks
 ms.search.scope: Operations
 ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ceb2dfa37b53af83c4faedffa5b312d654c44593
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: b16966fe1c3a48d772c7c9982f8802119675255f
+ms.sourcegitcommit: d0fa8d0140fa81029527edb317623c1a7737c593
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1505800"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "1862910"
 ---
 # <a name="data-import-and-export-jobs"></a>Dataimport- og -eksportjobber
 
 [!include [banner](../includes/banner.md)]
+[!include [banner](../includes/preview-banner.md)]
 
 For å opprette og administrere dataimport- og -eksportjobber i Microsoft Dynamics 365 for Finance and Operations, bruker du arbeidsområdet **Dataadministrasjon**. Som standard oppretter dataimporterings- og eksportprosessen et oppstartstabell for hver enhet i måldatabasen. Staging-tabeller lar deg verifisere, rydde opp eller konvertere data før du flytter den.
 
@@ -129,8 +130,8 @@ En jobb kan sikres av roller, brukere og juridiske enheter samtidig.
 ## <a name="run-the-import-or-export-job"></a>Kjør import- eller eksportjobben
 Du kan kjøre en jobb én gang ved å velge **Import** eller **Eksport**-knappen etter at du har definert jobben. For å sette opp gjentakende jobber, velg **Opprett gjentakende datajobb**.
 
-[!NOTE]
-En import- eller eksportjobb kan kjøres asynkront ved å velge **Import**- eller **Eksport**-knappen. Kjøring i asynkron bruker asynkront rammeverk i Finance and Operations, som er forskjellig fra det satsvise rammeverket. Men, som i det satsvise rammeverket, kan asynkront rammeverk også gjennomgå begrensning som et resultat, og jobben kjøres kanskje ikke umiddelbart. Jobbene kan også kjøres synkront ved å velge **Importer nå** eller **Eksporter nå**. Dette starter jobben umiddelbart og er nyttig hvis asynkront eller et parti ikke starter på grunn av begrensning. Jobbene kan også utføres i et parti ved å velge **Kjør satsvis**-alternativet. Satsvise ressurser er underlagt begrensning, slik at den satsvise jobben kanskje ikke starter umiddelbart. Asynkron-alternativet er nyttig når brukerne samhandler direkte med brukergrensesnittet, og ikke er privilegerte brukere for å forstå satsvis planlegging. Bruk av et parti er et annet alternativ hvis store volumer må bli eksportert eller importert. Satsvise jobber kan planlegges til å kjøre på en bestemt satsvis gruppe, som gir mer kontroll fra et perspektiv for belastningsfordeling. Hvis både asynkront og parti gjennomgår begrensning på grunn av høy ressursutnyttelse på systemet, kan det som en øyeblikkelig løsning brukes synkron versjon for import/eksport. Synkron-alternativet starter umiddelbart og blokkerer brukergrensesnittet, fordi den kjører synkront. Leservinduet må være åpent når synkron operasjon pågår.
+> [!NOTE]
+> En import- eller eksportjobb kan kjøres asynkront ved å velge **Import**- eller **Eksport**-knappen. Kjøring i asynkron bruker asynkront rammeverk i Finance and Operations, som er forskjellig fra det satsvise rammeverket. Men, som i det satsvise rammeverket, kan asynkront rammeverk også gjennomgå begrensning som et resultat, og jobben kjøres kanskje ikke umiddelbart. Jobbene kan også kjøres synkront ved å velge **Importer nå** eller **Eksporter nå**. Dette starter jobben umiddelbart og er nyttig hvis asynkront eller et parti ikke starter på grunn av begrensning. Jobbene kan også utføres i et parti ved å velge **Kjør satsvis**-alternativet. Satsvise ressurser er underlagt begrensning, slik at den satsvise jobben kanskje ikke starter umiddelbart. Asynkron-alternativet er nyttig når brukerne samhandler direkte med brukergrensesnittet, og ikke er privilegerte brukere for å forstå satsvis planlegging. Bruk av et parti er et annet alternativ hvis store volumer må bli importert eller eksportert. Satsvise jobber kan planlegges til å kjøre på en bestemt satsvis gruppe, som gir mer kontroll fra et perspektiv for belastningsfordeling. Hvis både asynkront og parti gjennomgår begrensning på grunn av høy ressursutnyttelse på systemet, kan det som en øyeblikkelig løsning brukes synkron versjon for import/eksport. Synkron-alternativet starter umiddelbart og blokkerer brukergrensesnittet, fordi den kjører synkront. Leservinduet må være åpent når synkron operasjon pågår.
 
 ## <a name="validate-that-the-job-ran-as-expected"></a>Bekreft at jobben kjørte som forventet.
 Jobbhistorikken er tilgjengelig for feilsøking og etterforskning på både import- og eksportjobber. Historiske jobber er organisert av tidsintervall.
@@ -144,15 +145,17 @@ Hver jobbkjøring gir følgende detaljer:
 
 Utførelsesdetaljer viser status for hver dataenheter som jobben behandlet. Derfor kan du raskt finne følgende informasjon:
 
-- Hvilke enheter ble behandlet
+- Hvilke enheter ble behandlet.
 - Hvor mange oppføringer som ble behandlet og hvor mange som mislyktes for en enhet.
-- Staging-oppføringer for hver enhet
+- Staging-oppføringer for hver enhet.
 
 Du kan laste ned staging-dataene i en fil for eksportjobber, eller du kan laste den ned som en pakke for import- og eksportjobber.
 
 Fra utførelsesdetaljene kan du også åpne utførelsesloggen.
 
 ## <a name="clean-up-the-staging-tables"></a>Rydd opp i staging-tabellene
+Starter i Platform-oppdatering 29, denne funksjonaliteten er avverget. Dette er erstattet av en ny versjon av jobbhistorie oppryddingsfunksjonalitet forklart nedenfor.
+
 Du kan rydde opp i staging-tabellene ved å bruke **Rydd opp i staging**-funksjonen i **Databehandling**-arbeidsområdet. Du kan bruke følgende alternativer for å velge hvilke oppføringer som skal slettes fra hvilke staging-tabeller:
 
 - **Enhet** – Kun hvis en enhet er gitt, vil alle oppføringer fra den enhetens staging-tabeller slettes. Velg dette alternativet for å rydde opp i alle data for enheten på tvers av alle dataprosjekter og alle jobber.
@@ -160,3 +163,37 @@ Du kan rydde opp i staging-tabellene ved å bruke **Rydd opp i staging**-funksjo
 - **Dataprosjekter** – Hvis kun ett dataprosjekt er valgt, vil alle oppføringer for alle enheter på tvers av jobber for valgte dataprosjekter slettes.
 
 Du kan også kombinere alternativene for å ytterligere begrense oppføringssettet som er slettet.
+
+## <a name="job-history-clean-up-available-in-platform-update-29-and-later"></a>Opprydding i jobbhistorie (tilgjengelig i plattformoppdatering 29 og senere)
+
+Oppryddingsfunksjonen for jobblogg i databehandling må brukes til å planlegge en periodisk opprydding av kjøringsloggen. Denne funksjonaliteten erstatter den tidligere oppryddingsfunksjonaliteten for oppsamlingstabellen, som nå er foreldet. De følgende tabellene vil bli fjernet av oppryddingsprosessen.
+
+-   Alle oppsamlingstabeller
+
+-   DMFSTAGINGVALIDATIONLOG
+
+-   DMFSTAGINGEXECUTIONERRORS
+
+-   DMFSTAGINGLOGDETAIL
+
+-   DMFSTAGINGLOG
+
+-   DMFDEFINITIONGROUPEXECUTIONHISTORY
+
+-   DMFEXECUTION
+
+-   DMFDEFINITIONGROUPEXECUTION
+
+Du får tilgang til funksjonaliteten fra **Databehandling \> Opprydding i jobblogg**.
+
+### <a name="scheduling-parameters"></a>Planleggingsparametere
+
+Når du planlegger oppryddingsprosessen, må du angi følgende parametere for å definere oppryddingsskriteriene.
+
+-   **Antall dager for å beholde loggen** – denne innstillingen brukes til å kontrollere hvor mye av kjøringsloggen som skal beholdes. Dette angis i antall dager. Når oppryddingsjobben er planlagt som en gjentakende satsvis jobb, vil denne innstillingen fungere som et kontinuerlig bevegelig vindu og dermed blir loggen for det angitte antallet dager intakt mens du sletter resten. Standardverdien er 7 dager.
+
+-   **Antall timer for å utføre jobben** – avhengig av hvor mye av historikken som skal ryddes opp, kan den totale utførelsestiden for oppryddingsjobben variere fra noen få minutter til noen timer. Fordi opprydding av de nevnte tabellene må gjøres når det ikke er annen databehandlingsaktivitet i systemet, blir det viktig å sørge for at oppryddingsarbeidet utføres og avsluttes før starten av forretningsaktiviteten.
+
+    Du kan angi maksimal utførelsestid ved å angi en maksimumsgrense for antall timer jobben må kjøres med denne innstillingen. Oppryddingslogikken går gjennom én jobbutførelses-ID om gangen i en kronologisk ordnet rekkefølge, med eldste først for opprydding av relatert kjøreloggen. Den slutter å hente nye kjøre-ID-er for opprydding når den resterende kjørevarigheten er innen de siste 10 % av den spesifiserte varigheten. I noen tilfeller vil det forventes at oppryddingsjobben vil fortsette utover den angitte maksimumstiden. Dette vil i stor grad avhenge av antall poster som skal slettes for gjeldende utførelses-ID som ble startet før grensen på 10 % ble nådd. Oppryddingen som ble startet, må fullføres for å sikre dataintegritet, noe som betyr at opprydding vil fortsette til tross for overskridelse av den angitte grensen. Når dette er fullført, hentes ikke nye utførelses-ID-er, og oppryddingsjobben fullføres. Den gjenstående utførelsesloggen som ikke ble ryddet opp på grunn av mangel på nok utførelsestid, vil bli plukket opp neste gang oppryddingsjobben er planlagt. Standard- og minimumsverdien for denne innstillingen er satt til 2 timer.
+
+-   **Gjentakende parti** – oppryddingsjobben kan kjøres som en éngangs, manuell kjøring, eller den kan også planlegges for gjentakende kjøring satsvis. Den satsvise jobben kan planlegges ved hjelp innstillingene for **kjøring i bakgrunnen**, som er standardpartiet som er satt opp.

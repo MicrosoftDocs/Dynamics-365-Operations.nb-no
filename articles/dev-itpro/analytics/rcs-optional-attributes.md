@@ -1,5 +1,5 @@
 ---
-title: Klargjøre programspesifikke metadata for RCS og ER
+title: Importere filer i XML-format med valgfrie attributter
 description: Dette emnet inneholder informasjon om utforming av ER-formater som angir XML-attributter for å analysere innkommende elektroniske dokumenter i XML-format.
 author: NickSelin
 manager: AnnBe
@@ -10,20 +10,20 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: EROperationDesigner
 audience: Application User, Developer, IT Pro
-ms.reviewer: shylaw
+ms.reviewer: kfend
 ms.search.scope: Core, Operations
 ms.search.region: global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 7a6fc1e54444584895aa75ae91d39143f27e34d8
-ms.sourcegitcommit: d0fa7eb2166a30314205e7f70bbeaff6fbd5fb55
+ms.openlocfilehash: eb5d721784f45097ab466f75d43256495aac36ca
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "1726581"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1850001"
 ---
-# <a name="prepare-application-specific-metadata-for-rcs-and-er"></a>Klargjøre programspesifikke metadata for RCS og ER
+# <a name="import-files-in-xml-format-with-optional-attributes"></a>Importere filer i XML-format med valgfrie attributter
 
 Du kan utforme ER-formater (elektronisk rapportering) for å analysere innkommende elektroniske dokumenter i XML-format. Visse attributter i XML-elementer kan angis som valgfrie i et utformet ER-format. Dette gjør at du kan håndtere innkommende filer med og uten slike XML-attributter på riktig måte. Du kan deretter bruke innholdet fra disse filene til å oppdatere programdata.
 
@@ -98,10 +98,10 @@ Fremgangsmåten nedenfor forklarer hvordan en bruker i rollen Systemansvarlig el
 6.  Klikk **Utforming**.
 7.  Utvid **format** i treet.
 8.  I treet utvider du **format\rot: XML-element(rot)**.
-9.  I treet velger du **format\rot: XML-element(rot)\dokument: XML-element 1..* (dokument)**.
+9.  I treet velger du **format\root: XML-element(rot)\dokument: XML-element 1..* (dokument)**.
 10. Klikk på **Bind**.
 11. I treet utvider du **format\rot: XML-element(rot)\dokument: XML-element 1..* (dokument)**.
-12. I treet velger du **format\rot: XML-element(rot)\dokument: XML-element 1..* (dokument)\id**.
+12. I treet velger du **format\root: XML-element(rot)\dokument: XML-element 1..* (dokument)\id**.
 13. I treet utvider du **Liste = format.rot.dokument**.
 14. I treet velger du **Liste = format.rot.dokument\Kode**.
 15. Klikk på **Bind**.

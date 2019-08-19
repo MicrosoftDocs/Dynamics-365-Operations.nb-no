@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: ShylaThompson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4da0b965f3719bc16b5a73538df111ff6df071be
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: b4d347556d25831bb3f9175e8606e0b41d98bdd8
+ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1555378"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "1743261"
 ---
 # <a name="service-orders"></a>Serviceordrer   
 
@@ -76,7 +76,7 @@ En av de andre serviceordrene som ble generert for januar, foreldes fordi jobben
 
 ## <a name="post-from-projects"></a>Postere fra prosjekter
 
-På slutten av hver uke vil fordelingsansvarlig postere alle serviceordrer som er tilknyttet et bestemt prosjekt. Derfor fordelingsansvarlig finner det relevante prosjektet i **Prosjekter**-skjemaet og posterer serviceordrene som er fullført. Hvis du vil ha mer informasjon, se [Postere serviceordrer (klasseskjema)](https://technet.microsoft.com/en-us/library/aa574685\(v=ax.60\)).
+På slutten av hver uke vil fordelingsansvarlig postere alle serviceordrer som er tilknyttet et bestemt prosjekt. Derfor fordelingsansvarlig finner det relevante prosjektet i **Prosjekter**-skjemaet og posterer serviceordrene som er fullført. Hvis du vil ha mer informasjon, se [Postere serviceordrer (klasseskjema)](https://technet.microsoft.com/library/aa574685\(v=ax.60\)).
 
 ## <a name="delete-service-orders"></a>Slett serviceordrer
 
@@ -84,7 +84,7 @@ I løpet av årets andre halvdel bestemmer kunden seg for at servicebesøkene er
 
 ## <a name="see-also"></a>Se også
 
-[Serviceordrer (skjema)](https://technet.microsoft.com/en-us/library/aa554361\(v=ax.60\))
+[Serviceordrer (skjema)](https://technet.microsoft.com/library/aa554361\(v=ax.60\))
 
   
 

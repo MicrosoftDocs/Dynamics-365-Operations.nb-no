@@ -10,18 +10,18 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ERWorkspace, ERSolutionTable, EROperationDesigner,  LedgerJournalTable, LedgerJournalTransVendPaym
 audience: Application User
-ms.reviewer: shylaw
+ms.reviewer: kfend
 ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: dc47d44285af4c720d2f450d11fb1004ef461d0f
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: fd138fb5fea4098a862fbecba5e8ec226ed6afa9
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1551524"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1850309"
 ---
 # <a name="design-er-configurations-to-generate-reports-in-word-format"></a>Utforme ER-konfigurasjoner for å generere rapporter i Word-format
 
@@ -64,7 +64,7 @@ Denne fremgangsmåten gjelder for en funksjon som ble lagt til i Microsoft Dynam
     * I tillegg til å lagre konfigurasjonsendringer, oppdaterer Lagre-handlingen den vedlagte Word-malen. Strukturen til det utformede formatet er overført til det vedlagte Word-dokumentet som en ny egendefinert XML-del med navnet "Rapport". Legg merke til at den tilknyttede Word-malen ikke bare inneholder oppsettet for dokumentet vi vil generere som ER-utdata, den inneholder også strukturen til dataene som ER fyller ut i denne malen under kjøring.  
 2. Klikk Vedlegg.
     * Nå må du binde elementene i den egendefinerte XML-delen "Rapport" til deler på Word-dokumentet.  
-    * Hvis du har kjennskap til Word-dokumenter som kan utformes som skjemaer som inneholder innholdskontroller som er avgrenset med elementer av egendefinerte XML-deler – spill av alle trinnene i den neste delaktiviteten for å opprette et slikt dokument. Hvis du vil ha mer informasjon, følg koblingen https://support.office.com/en-us/article/Create-forms-that-users-complete-or-print-in-Word-040c5cc1-e309-445b-94ac-542f732c8c8b?ui=en-US&rs=en-US&ad=US. Hvis ikke hopper du over alle trinnene i den neste delaktiviteten.  
+    * Hvis du har kjennskap til Word-dokumenter som kan utformes som skjemaer som inneholder innholdskontroller som er avgrenset med elementer av egendefinerte XML-deler – spill av alle trinnene i den neste delaktiviteten for å opprette et slikt dokument. Hvis du vil ha mer informasjon, følg koblingen https://support.office.com/article/Create-forms-that-users-complete-or-print-in-Word-040c5cc1-e309-445b-94ac-542f732c8c8b?ui=en-US&rs=en-US&ad=US. Hvis ikke hopper du over alle trinnene i den neste delaktiviteten.  
 
 ## <a name="get-word-with-custom-xml-part-to-do-data-bindings"></a>Få Word med egendefinert XML-delen for å utføre databindinger
     * Åpne dette dokumentet i Word, og gjør følgende: – Åpne fanen Word-utvikler (tilpass båndet hvis det ikke er aktivert ennå).  - Velg ruten XML-tilordning.  - Velg den egendefinerte XML-delen "Rapport" i oppslaget.  - Utfør tilordning av elementene i den valgte egendefinerte XML-delen og innholdskontrollene for Word-dokumentet.  - Lagre det oppdaterte Word-dokumentet på en lokal stasjon.  
@@ -72,7 +72,7 @@ Denne fremgangsmåten gjelder for en funksjon som ble lagt til i Microsoft Dynam
 ## <a name="upload-the-word-template-with-custom-xml-part-bounded-to-content-controls"></a>Last opp Word-malen med egendefinert XML-del bundet til innholdskontroller
 1. Klikk Slett.
 2. Klikk Ja.
-    * Legg til ny mal. Hvis du har fullført trinnene i den forrige delaktiviteten, velger du Word-dokumentet du opprettet og lagret lokalt. Ellers velger du Microsoft Word-malen SampleVendPaymDocReportBounded.docx som du lastet ned tidligere.  
+    * Legg til ny mal. Hvis du har fullført trinnene i den forrige delaktiviteten, velger du Word-dokumentet du opprettet og lagret lokalt. Ellers velger du MS Word-malen SampleVendPaymDocReportBounded.docx som du lastet ned tidligere.  
 3. Klikk Ny.
 4. Klikk Fil.
 5. Klikk Bla gjennom. Gå til og velg SampleVendPaymDocReportBounded.docx som du lastet ned tidligere. Klikk OK.

@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: scotttuc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 94f8cf5b5753c530c42327e251a2102b876c1c8a
-ms.sourcegitcommit: e2fb0846fcc6298050a0ec82c302e5eb5254e0b5
+ms.openlocfilehash: 8c2a2347abddf03ed884dcfe68f645fde84c092a
+ms.sourcegitcommit: 9b4c3fff2f30006b7bb491ef6ffe89d41bcbfa11
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/27/2019
-ms.locfileid: "1606878"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "1863778"
 ---
 # <a name="loyalty-overview"></a>Fordelsoversikt
 
@@ -83,15 +83,15 @@ Retail har nye fordelsfunksjoner som en del av oktober 2018-utgivelsen. Hver av 
     > [!NOTE]
     > Opptjeningsreglene i en fordelsplan kommer i tillegg. Hvis du for eksempel oppretter en regel som belønner et gullnivåmedlem med 10 poeng for hvert amerikanske dollar, og du også oppretter en regel for en kunde med "veteran"-tilknytning, slik at en fordel på 5 poeng for hvert amerikanske dollar oppnås, vil en veteran som også er gullmedlem, oppnå 15 poeng for 1 amerikansk dollar, fordi kunden er kvalifisert for begge. Men hvis veterankunden ikke er gullmedlem, vil han oppnå 5 poeng for hver dollar. For å gjenspeile endringene i kanalene, kan du kjøre **Behandle fordelsplaner**- og **1050**-jobbene (fordelskortinformasjon).
     
-    ![Tilknytningsbasert opptjening](./media/Affiliation%20based%20earning.png "Tilknytningsbasert opptjening")
+    ![Tilknytningsbasert opptjening](./media/Affiliation-based-earning.png "Tilknytningsbasert opptjening")
 
 - Forhandlere har ofte spesialpriser for en bestemt gruppe av kunder som de ikke vil at fordelsprogrammene skal gjelde for. For eksempel grossister eller ansatte som får spesialpriser og ingen fordelspoeng. "Tilknytninger" brukes vanligvis til å gi spesialpriser til slike kundegrupper. Hvis du vil hindre at bestemte kundegrupper oppnår fordelspoeng, kan forhandleren angi én eller flere tilknytninger i delen **Utelatte tilknytninger** i fordelsplanen. På denne måten, når kunder som tilhører ekskluderte tilknytninger, allerede er fordelsmedlemmer, vil de ikke kunne oppnå fordelspoeng for innkjøpene sine. For å gjenspeile endringene i kanalene, kan du kjøre **Behandle fordelsplaner**- og **1050**-jobbene (fordelskortinformasjon).
 
-    ![Utelatte tilknytninger](./media/Excluded%20affiliations.png "Utelate tilknytninger fra å tjene opp fordelspoeng")
+    ![Utelatte tilknytninger](./media/Excluded-affiliations.png "Utelate tilknytninger fra å tjene opp fordelspoeng")
     
 - Forhandlere kan generere fordelskortnumre i kanalene. Før oktober 2018-oppdateringen kunne forhandlerne bruke fysiske fordelskort eller generere et fordelskort ved hjelp av en unik kundeinformasjonen, for eksempel et telefonnummer. Hvis du vil aktivere den automatiske genereringen av fordelskort i detaljhandel, kan du slå på **Generer fordelskortnummer** i funksjonalitetsprofilen som er knyttet til butikken. For Internett-kanaler kan forhandlerne bruke API-en IssueLoyaltyCard til å utstede fordelskort til kunder. Forhandlere kan enten oppgi et fordelskortnummer til denne API-en, som skal brukes til å generere fordelskortet, eller systemet vil bruke fordelskortnummerserien i Dynamics 365 for Retail. Men hvis nummerserien ikke finnes, og forhandleren ikke oppgir et fordelskortnummer ved å kalle opp API-en, vises en feilmelding.
 
-    ![Generer fordelskort](./media/Generate%20loyalty%20card.png "Generer fordelskortnummer automatisk")
+    ![Generer fordelskort](./media/Generate-loyalty-card.png "Generer fordelskortnummer automatisk")
 
 - Opptjente og innløste fordelspoeng lagres nå for hver transaksjon og salgsordre mot salgslinjen, slik at det samme beløpet kan refunderes eller hentes tilbake ved fullstendige eller delvise returer. I tillegg gir poengsynlighet på salgslinjenivå mulighet for telefonsenterbrukere å svare på kundespørsmål om hvor mange poeng som er opptjent eller innløst for hver linje. Før denne endringen ble alltid fordelspoeng kalkulert på nytt under returnerer, som resulterte i et annet beløp enn det opprinnelige hvis opptjenings- eller innløsningsreglene ble endret. Dessuten hadde ikke telefonsenterbrukere synlighet med hensyn til poengnedbryting. Poengene vises i skjemaet **Korttransaksjoner** for hvert fordelskort. For å aktivere denne funksjonen aktiverer du konfigurasjonen **Poster fordelspoeng per salgslinje** under **Delte parametere for detaljhandel** \> **Generelt**-kategorien.
 
@@ -100,26 +100,26 @@ Retail har nye fordelsfunksjoner som en del av oktober 2018-utgivelsen. Hver av 
 
 - Forhandlere kan nå definere rettighetsperioden for hvert fordelspoeng. En rettighetsperiodekonfigurasjon definerer varigheten fra opptjeningsdatoen, og deretter blir fordelspoengene tilgjengelige for kundene. Ikke opptjente poeng vises i kolonnen **Ikke opptjente poeng** på siden **Fordelskort**. Forhandlere kan også definere grensen for maksimale fordelspoeng per fordelskort. Dette feltet kan brukes til å redusere virkningen av fordelssvindel. Når de maksimale fordelspoengene er nådd, kan ikke brukeren få flere poeng. Forhandlere kan velge å blokkere slike kort helt til de har undersøkt en potensiell svindel. Hvis forhandleren avdekker svindel, kan ikke forhandleren bare blokkere fordelskortet for kunden, men også merke til kunden som blokkert. Hvis du vil gjøre dette, kan du sette egenskapen **Blokker kunde for fordelsregistrering** til **Ja** under **Alle kunder** på hurtigkategorien **Detaljhandel**. De blokkerte kundene vil ikke kunne få utstedt et fordelskort i noen av kanalene.
 
-    ![Opptjening og maksimalt antall fordelspoeng](./media/Vesting%20and%20maximum%20reward%20points.png "Definere opptjening og maksimalt antall fordelspoeng")
+    ![Opptjening og maksimalt antall fordelspoeng](./media/Vesting-and-maximum-reward-points.png "Definere opptjening og maksimalt antall fordelspoeng")
 
 - Tilknytninger brukes til å gi spesiell prissetting og rabatter, men det finnes noen tilknytninger som forhandlerne ikke vil at kundene skal se. En tilknytningen med navnet "Kunde med stort forbruk" vil kanskje ikke bli godt mottatt av noen kunder. Det finnes dessuten noen tilknytninger som ikke bør administreres i butikken, for eksempel ansatte, fordi du ikke vil at kasserere skal avgjøre hvem som er en ansatt, og dermed gi ansattbaserte rabatter. Forhandlere kan nå velge tilknytninger som bør skjules i detaljhandelskanalene. Tilknytningsforhold merket som **Skjul i kanaler**, kan ikke vises, legges til eller fjernes på salgsstedet. Prissettingen og rabattene som er knyttet til tilknytningen, vil imidlertid fortsatt brukes på produktene.
 
-    ![Skjul tilknytninger](./media/Hide%20affiliations.png "Skjul tilknytninger i kanaler")
+    ![Skjul tilknytninger](./media/Hide-affiliations.png "Skjul tilknytninger i kanaler")
     
 - Telefonsenterbrukere kan nå enklere søke etter en kunde med deres fordelskortinformasjon og navigere til kundens fordelskort- og fordelskorttransaksjonssider fra siden **Kundeservice**.
 
-    ![Kundeservice](./media/Customer%20service.png "Finn lojalitetsinformasjon for kunden")
+    ![Kundeservice](./media/Customer-service.png "Finn lojalitetsinformasjon for kunden")
     
 - Hvis et fordelskort settes på spill, må et erstatningskort genereres, og de eksisterende poengene må overføres til det nye kortet. Erstatningskortflyten er forenklet i denne versjonen. I tillegg kan kunder gi noen eller alle fordelspoengene til venner og familie. Når det overføres poeng, opprettes poengjusteringsposter for hvert fordelskort. Funksjonaliteten for erstatningskortet og saldooverføring er tilgjengelig på siden **Fordelskort**.
 
-    ![Erstatt og overfør poeng](./media/Replace%20and%20transfer%20points.png "Erstatt fordelskort eller overfør saldo")
+    ![Erstatt og overfør poeng](./media/Replace-and-transfer-points.png "Erstatt fordelskort eller overfør saldo")
     
 - Forhandlere vil kanskje registrere effektiviteten til en bestemt kanal for å registrere kundene i et fordelsprogram. Registreringskilden for fordelskortene er nå lagret slik at forhandlere kan kjøre rapporter på disse dataene. Registreringskilden registreres automatisk for alle utstedte fordelskort fra MPOS/CPOS eller e-handelskanaler. For fordelskort som er utstedt fra back office-programmet, kan telefonsenterbrukeren velge en riktig kanal.
 - I tidligere versjoner kunne forhandlere bruke MPOS/CPOS til å løse inn fordelspoeng for kunder i en butikk. I disse versjonene kunne ikke kassereren vise valutaverdibeløpet som kunne brukes mot den gjeldende transaksjonen, fordi fordelssaldoen vises i fordelspoeng. Kassereren måtte utføre valutaomregning på poengene før betaling med fordelspoeng. I den gjeldende versjonen, etter at linjer er lagt til i transaksjonen, kan kassereren se beløpet som fordelspoengene kan dekke for den gjeldende transaksjon, noe som gjør det enkelt å bruke noen av eller alle fordelspoengene på transaksjonen. Kassereren kan også se poengene som utløper neste 30 dagene, slik at de kan utføre mersalg eller kryssalg for å motivere kunden til å bruke poengene som utløper på den gjeldende transaksjonen.
 
-    ![Poeng som dekkes av fordelssaldoen](./media/Points%20covered%20by%20loyalty%20balance.png "Vis saldo som dekkes av fordelspoeng")
+    ![Poeng som dekkes av fordelssaldoen](./media/Points-covered-by-loyalty-balance.png "Vis saldo som dekkes av fordelspoeng")
 
-    ![Poeng som utløper](./media/Expiring%20points.png "Vis poeng som utløper")
+    ![Poeng som utløper](./media/Expiring-points.png "Vis poeng som utløper")
 
 - Med 8.1.3-versjonen har vi aktivert alternativet "betal etter lojalitet" i telefonsenterkanalen. Hvis du vil aktivere dette alternativet, kan du opprette et betalingsmiddel for loyalitet og knytte det til telefonsenteret. 
 

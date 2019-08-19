@@ -10,7 +10,7 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: SysHelpSetup
 audience: Application User, IT Pro
-ms.reviewer: josaw
+ms.reviewer: sericks
 ms.search.scope: Core, Operations
 ms.custom: 25391
 ms.assetid: 59bf39f8-1464-441e-8b23-9a856c73471b
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fc5b0798397047d1adedfc19406a7875c853bea6
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 2ca39c372b50724cff2aa38c1012468489484d05
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1571006"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1851071"
 ---
 # <a name="create-documentation-or-training-by-using-task-recordings"></a>Lage dokumentasjon eller opplæring ved hjelp av oppgaveopptak
 
@@ -39,12 +39,12 @@ Dette emnet forklarer hva Oppgaveopptaker og oppgaveveiledninger er, hvordan du 
 
 Oppgaveopptak er et verktøy du kan bruke til å registrere handlingene du utfører i brukergrensesnittet for produktet. Når du bruker oppgaveopptakeren, blir alt du gjør i brukergrensesnittet som kjøres mot serveren, for eksempel tilføying av verdier, endring av innstillinger og fjerning av verdier, tatt opp. Samlet kalles trinnene som du registrerer en *oppgaveregistrering*. Oppgaveopptak kan brukes på mange måter:
 
--   **Oppgaveopptak kan spilles av som oppgaveveiledninger.** Oppgaveopptak er en integrert del av hjelpeopplevelsen. En oppgaveveiledning er en styrt, veiledet, interaktiv opplevelse gjennom trinnene i en forretningsprosess. Brukeren blir veiledet gjennom hvert trinn ved hjelp av en popup-melding (eller «boble») som animeres i brukergrensesnittet og peker på elementet i brukergrensesnittet som brukeren skal bruke. "Boblen" gir også informasjon om hvordan du bruker elementet, for eksempel "Klikk her" eller "Angi en verdi i dette feltet". En oppgaveveiledning kjører mot brukerens gjeldende datasett, og dataene som angis, lagres i brukerens miljø.
--   **Oppgaveopptak kan vises som fremgangsmåtetrinn i Hjelp-ruten.** Du kan bruke Hjelp-ruten til å søke etter og vise oppgaveopptak. Du får tilgang til Hjelp-ruten ved å klikke på **?** ikonet i navigasjonsfeltet øverst, eller du kan bruke hurtigtasten  **Ctrl+Skift+?**. Du kan lese trinnene i et oppgaveopptak i Hjelp-ruten, eller du kan velge å spille av opptaket som en oppgaveveiledning, slik at den veileder deg gjennom brukergrensesnittet.
+-   **Oppgaveopptak kan spilles av som oppgaveveiledninger.** Oppgaveopptak er en integrert del av hjelpeopplevelsen. En oppgaveveiledning er en styrt, veiledet, interaktiv opplevelse gjennom trinnene i en forretningsprosess. Brukeren blir veiledet gjennom hvert trinn ved hjelp av en popup-melding (eller «boble») som animeres i brukergrensesnittet og peker på elementet i brukergrensesnittet som brukeren skal bruke. "Boblen" gir også informasjon om hvordan du bruker elementet, for eksempel "Klikk her" eller "Angi en verdi i dette feltet". En oppgaveveiledning kjører mot brukerens gjeldende datasett, og dataene som angis, lagres i brukerens miljø.
+-   **Oppgaveopptak kan vises som fremgangsmåtetrinn i Hjelp-ruten.** Du kan bruke Hjelp-ruten til å søke etter og vise oppgaveopptak. Du får tilgang til Hjelp-ruten ved å klikke på **?** ikonet i navigasjonsfeltet øverst, eller du kan bruke hurtigtasten **Ctrl+Skift+?**. Du kan lese trinnene i et oppgaveopptak i Hjelp-ruten, eller du kan velge å spille av opptaket som en oppgaveveiledning, slik at den veileder deg gjennom brukergrensesnittet.
 -   **Du kan lagre oppgaveopptak i Forretningsprosessmodelerer.** Du kan lagre oppgaveopptaket på en linje i et hierarki i et BPM-bibliotek (forretningsprosessmodellerer) i Lifecycle Services (LCS). En liste over trinn og et flytskjema for forretningsprosess genereres fra opptaket. Oppgaveopptak som er lagret i et Forretningsprosessmodelerer-bibliotek, kan vises som hjelp.
 -   **Du kan lagre oppgaveopptak som Word-dokumenter.** Dette gjør at du enkelt kan lage opplæringsveiledninger som skrives ut.
 
-Du kan opprette dine egne oppgaveopptak, spille av oppgaveopptak fra Microsoft, eller endre oppgaveopptak fra Microsoft for å gjenspeile konfigurasjonen din. Hvis du vil ha mer informasjon om Oppgaveopptak, kan du se [Oppgaveopptak](task-recorder.md).
+Du kan opprette dine egne oppgaveopptak, spille av oppgaveopptak fra Microsoft, eller endre oppgaveopptak fra Microsoft for å gjenspeile konfigurasjonen din. Hvis du vil ha mer informasjon om Oppgaveopptak, kan du se [Oppgaveopptak](task-recorder.md).
 
 ## <a name="plan-your-task-recording"></a>Planlegge oppgaveopptaket
 Husk følgende informasjon uansett om du lager et nytt oppgaveopptak eller baserer opptaket på et oppgaveopptak fra Microsoft.
@@ -64,7 +64,7 @@ Husk følgende informasjon uansett om du lager et nytt oppgaveopptak eller baser
 
 **Forstå de ulike typene merknader** Alle merknader er valgfrie. Bare legg dem til når de gir brukeren nyttig informasjon.
 
--   **TIttel**: En tittelmerknad vises før trinnteksten som oppgaveopptakeren genererer automatisk. I oppgaveveiledningen vises tittelmerknaden over den automatisk genererte teksten. Bruk denne typen merknad til å forklare hvorfor brukeren gjør trinnet eller til å gi ytterligere kontekst.
+-   **TIttel**: En tittelmerknad vises før trinnteksten som oppgaveopptakeren genererer automatisk. I oppgaveveiledningen vises tittelmerknaden over den automatisk genererte teksten. Bruk denne typen merknad til å forklare hvorfor brukeren gjør trinnet eller til å gi ytterligere kontekst.
 
 Dette er redigeringsruten du ser når du legger til en merknad mens du lager opptaket. Angi en tittelmerknad i **Tittel**-boksen. 
 
@@ -84,7 +84,7 @@ Slik ser notatmerknaden ut i "boblen" i oppgaveveiledningen.
 
 [![Skjerm4](./media/screen4.png)](./media/screen4.png)
 
--   **Informasjonstrinn**: Du oppretter disse merknadene ved å høyreklikke en kontroll eller hvor som helst i et skjema &lt; **Oppgaveregistrering** &lt; **Legg til informasjonstrinn.** Informasjonstrinn vises som et nummerert trinn der du setter det inn, selv om ingen handling ble tatt opp i brukergrensesnittet. Du kan legge til et informasjonstrinn på skjemanivå eller et informasjonstrinn som er knyttet til en kontroll. Når et informasjonstrinn er knyttet til et skjema, vises «boblen» i oppgaveveiledningen et sted i skjemaet, uten peker, når oppgaveveiledningen spilles av. Når et informasjonstrinn er knyttet til en kontroll, peker "boblen" i oppgaveveiledningen mot kontrollen når oppgaveveiledningen spilles av. I Hjelp-ruten vises merknaden for et informasjonstrinn som et nummerert trinn med tekst du skrev inn. Bruk informasjonstrinn til å forberede brukeren på de neste trinnene, til å beskrive trinnene som må gjøres utenfor Microsoft Dynamics 365 for Finance and Operations, eller til å henvise til andre opptak (selv om du ikke kan bruke hyperkoblinger i merknader).
+-   **Informasjonstrinn**: Du oppretter disse merknadene ved å høyreklikke en kontroll eller hvor som helst i et skjema &lt; **Oppgaveregistrering** &lt; **Legg til informasjonstrinn.** Informasjonstrinn vises som et nummerert trinn der du setter det inn, selv om ingen handling ble tatt opp i brukergrensesnittet. Du kan legge til et informasjonstrinn på skjemanivå eller et informasjonstrinn som er knyttet til en kontroll. Når et informasjonstrinn er knyttet til et skjema, vises «boblen» i oppgaveveiledningen et sted i skjemaet, uten peker, når oppgaveveiledningen spilles av. Når et informasjonstrinn er knyttet til en kontroll, peker "boblen" i oppgaveveiledningen mot kontrollen når oppgaveveiledningen spilles av. I Hjelp-ruten vises merknaden for et informasjonstrinn som et nummerert trinn med tekst du skrev inn. Bruk informasjonstrinn til å forberede brukeren på de neste trinnene, til å beskrive trinnene som må gjøres utenfor Microsoft Dynamics 365 for Finance and Operations, eller til å henvise til andre opptak (selv om du ikke kan bruke hyperkoblinger i merknader).
 
 **Avgjøre hvor langt opptaket skal være**
 
@@ -94,7 +94,7 @@ Slik ser notatmerknaden ut i "boblen" i oppgaveveiledningen.
 -   Hvis prosessen omfatter flere oppgaver som brukeren sannsynligvis gjør samtidig, kan du ha oppgavene i ett opptak, for eksempel «Konfigurere og tilordne funksjonalitetsprofiler».
 -   Hvis det er noe noen gjør én gang (for eksempel konfigurasjon), og deretter en annen oppgave de kan gjøre like etterpå, men kan gjøre gjentatte ganger og separat, kan du dele dem opp i to oppgaveopptak.
 
-**Avgjøre hvor du skal starte et opptak i brukergrensesnittet** Siden du er på når du begynner å ta opp en oppgave, påvirker hvilken side oppgaveveiledningen vises for. Hvis du for eksempel vil at oppgaveopptaket skal vises i Hjelp-ruten når brukeren klikker på Hjelp på siden Parametere for økonomimodul, må du starte opptaket på siden Parametere for økonomimodul. **Lagre opptak som AXTR-filer** Når du er ferdig med å lage eller redigere et oppgaveopptak, har du flere alternativer for hvordan du vil laste ned eller lagre opptaket. Du kan laste ned filen som en oppgaveopptakspakke (AXTR), laste den ned som en rå opptaksfil (XML), laste den ned som et Word-dokument, eller lagre filen i et LCS-bibliotek. Det er alltid lurt å lagre oppgaveopptaket som en oppgaveopptakspakkefil (AXTR). Dette gjør det enklere å vedlikeholde filen hvis fremgangsmåter eller merknader må endres senere. Hvis du vil laste ned filen som et Word-dokument, må du også lagre den som en oppgaveopptakspakkefil.
+**Avgjøre hvor du skal starte et opptak i brukergrensesnittet** Siden du er på når du begynner å ta opp en oppgave, påvirker hvilken side oppgaveveiledningen vises for. Hvis du for eksempel vil at oppgaveopptaket skal vises i Hjelp-ruten når brukeren klikker på Hjelp på siden Parametere for økonomimodul, må du starte opptaket på siden Parametere for økonomimodul. **Lagre opptak som AXTR-filer** Når du er ferdig med å lage eller redigere et oppgaveopptak, har du flere alternativer for hvordan du vil laste ned eller lagre opptaket. Du kan laste ned filen som en oppgaveopptakspakke (AXTR), laste den ned som en rå opptaksfil (XML), laste den ned som et Word-dokument, eller lagre filen i et LCS-bibliotek. Det er alltid lurt å lagre oppgaveopptaket som en oppgaveopptakspakkefil (AXTR). Dette gjør det enklere å vedlikeholde filen hvis fremgangsmåter eller merknader må endres senere. Hvis du vil laste ned filen som et Word-dokument, må du også lagre den som en oppgaveopptakspakkefil.
 
 ## <a name="create-your-task-recording"></a>Lage oppgaveopptaket
 Hvis du vil se de detaljerte trinnene i fremgangsmåten, kan du se [Opprette et oppgaveopptak](task-recorder.md).

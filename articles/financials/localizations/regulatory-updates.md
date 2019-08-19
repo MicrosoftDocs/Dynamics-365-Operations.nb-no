@@ -9,18 +9,18 @@ ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
-ms.reviewer: shylaw
+ms.reviewer: kfend
 ms.search.scope: Operations
 ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: ba01fe7ad3e4326e8ab52b78220d3ba79e94af7c
-ms.sourcegitcommit: 51dc11919fcb2324482b48cc4ce4484945ade803
+ms.openlocfilehash: a33212acce6bf53b1077e54b9556e4d5e933519c
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "1624317"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1849338"
 ---
 # <a name="regulatory-updates"></a>Forskriftsmessige oppdateringer
 
@@ -59,19 +59,22 @@ For de siste forskriftsmessige oppdateringsplanene kan du se tabellen nedenfor.
 |      2019. april          |   10.0.1      |    Russland     |Endringer i deklarering for transportavgift fra 2019  |
 |      2019. april            |   10.0.1      | Ungarn      |  Ungarn: elektronisk fakturering v. 1.1 2019 på Microsoft Dynamics 365 for Finance and Operations  |
 |      2019. mai            |   10.0.2      | Brasil      |   SPED ECD Layout 7   |
-|      Uavsluttet            |   10.0.3      | Brasil      |   NF-e ny NT 2018.005 – v.1.20   |
-|      Uavsluttet            |   10.0.3      | Brasil      |   SPED ECD Layout 7   |
-|      Uavsluttet            |   10.0.3      | Brasil      |   SPED ECF – oppsett 5 for 2019   |
-|      Uavsluttet            |   10.0.3      | Litauen    |   Med i.SAF-rapporten kan brukere definere systemets merverdiavgiftkoder i tilknytning til juridiske mva-koder    |
-|      Uavsluttet            |   10.0.3      | Polen     |   SAF-fakturaer (JPK_FA) v.2 fra 1Jul2019  |
-|      Uavsluttet            |   10.0.3      | Brasil   |   ICMS-justeringer for regnskapsdokument aktiverer tabell 5.2   |
-|      Uavsluttet            |   10.0.3      | Brasil    |   NF-e-dekret 54.308/18 (RS)   |
-  | Uavsluttet            |   10.0.4      | Brasil    |   Innkommende regnskapsdokument 66   |
-   | Uavsluttet            |   10.0.4      | Brasil    |   NF-e og NFC-e – Vedtak 13/2019 og forordning SUCIEF 55/2019- RJ – nye betingelser for fritakskodeutdata i NF-e.   |
-   | Uavsluttet            |   10.0.4      | India   |   Visning av Forsyningssted og Stat i GST-avgiftsfakturaen  |
-   | Uavsluttet            |   10.0.4      | Mexico   |  DIOT-tredjepartsdeklarering – endringer i oppsett 2019   |
-   | Uavsluttet            |   10.0.4      | Brasil    |   NF-e ICMS-ST – forordning CAT 42/18 for SP-tilstand – CAT 42/18
-   | Uavsluttet            |   10.0.4      | Brasil    |   NF-e-dekret 54.308/18 – RS NF   |
+|      2019. juni            |   10.0.3      | Brasil      |   NF-e ny NT 2018.005 – v.1.20   |
+|      2019. juni            |   10.0.3      | Brasil      |   SPED ECD Layout 7   |
+|      2019. juni            |   10.0.3      | Brasil      |   SPED ECF – oppsett 5 for 2019   |
+|      2019. juni            |   10.0.3      | Litauen    |   Med i.SAF-rapporten kan brukere definere systemets merverdiavgiftkoder i tilknytning til juridiske mva-koder    |
+|      2019. juni            |   10.0.3      | Polen     |   SAF-fakturaer (JPK_FA) v.2 fra 1Jul2019  |
+|      2019. juni            |   10.0.3      | Brasil   |   ICMS-justeringer for regnskapsdokument aktiverer tabell 5.2   |
+|      2019. juni            |   10.0.3      | Brasil    |   NF-e-dekret 54.308/18 (RS)   |
+  | Juli 2019            |   10.0.4      | Brasil    |   Innkommende regnskapsdokument 66   |
+   | Juli 2019            |   10.0.4      | Brasil    |   NF-e og NFC-e – Vedtak 13/2019 og forordning SUCIEF 55/2019- RJ – nye betingelser for fritakskodeutdata i NF-e.   |
+   | Juli 2019            |   10.0.4      | India   |   Visning av Forsyningssted og Stat i GST-avgiftsfakturaen  |
+   | Juli 2019            |   10.0.4      | Mexico   |  DIOT-tredjepartsdeklarering – endringer i oppsett 2019   |
+   | Juli 2019            |   10.0.4      | Brasil    |   NF-e ICMS-ST – forordning CAT 42/18 for SP-tilstand – CAT 42/18
+   | Juli 2019            |   10.0.4      | Brasil    |   NF-e-dekret 54.308/18 – RS NF   |
+       | Uavsluttet            |   10.0.5      | Brasil    |   Praktisk veiledning for Sped-bidrag 1.31. ny veiledning   |
+         | Uavsluttet            |   10.0.5      | Brasil    |   En ny versjon av tekniske notater for NF-e: NT 2019.001 versjon 1.00   |
+          | Uavsluttet            |   10.0.5      | Spania    |   Valideringsregler endres fra 1. oktober 2019   |
    
 
 

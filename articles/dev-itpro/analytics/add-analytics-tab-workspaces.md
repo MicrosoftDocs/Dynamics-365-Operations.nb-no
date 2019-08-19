@@ -9,18 +9,18 @@ ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application user, IT Pro
-ms.reviewer: robinr
+ms.reviewer: kfend
 ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: tjvass
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: a190e15dc304f60739c80d75222830ee737c5a32
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 5cfb2377ad290bff9c50819876d79a9d4b2a73d8
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1548191"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1848603"
 ---
 # <a name="add-analytics-to-workspaces-by-using-power-bi-embedded"></a>Legge til analyse i arbeidsområder ved hjelp av Power BI Embedded
 
@@ -45,10 +45,10 @@ Enten du utvider et eksisterende arbeidsområde for programmet eller introdusere
 4. Valgfritt: Legg til filtyper hvis du vil tilpasse visningen.
 
 > [!NOTE]
-> Hvis du vil ha mer informasjon om hvordan du oppretter analyserapporter, se [Komme i gang med Power BI Desktop](https://powerbi.microsoft.com/en-us/documentation/powerbi-desktop-getting-started/). Denne siden er en god kilde for innsikt som kan hjelpe deg med å opprette overbevisende analytiske rapporteringsløsninger.
+> Hvis du vil ha mer informasjon om hvordan du oppretter analyserapporter, se [Komme i gang med Power BI Desktop](https://powerbi.microsoft.com/documentation/powerbi-desktop-getting-started/). Denne siden er en god kilde for innsikt som kan hjelpe deg med å opprette overbevisende analytiske rapporteringsløsninger.
 
 ## <a name="add-a-pbix-file-as-a-resource"></a>Legge til en .pbix-fil som en ressurs
-Før du begynner, må du opprette eller få tak i Power BI-rapporten som du vil bygge inn i arbeidsområdet. Hvis du vil ha mer informasjon om hvordan du oppretter analyserapporter, se [Komme i gang med Power BI Desktop](https://powerbi.microsoft.com/en-us/documentation/powerbi-desktop-getting-started/).
+Før du begynner, må du opprette eller få tak i Power BI-rapporten som du vil bygge inn i arbeidsområdet. Hvis du vil ha mer informasjon om hvordan du oppretter analyserapporter, se [Komme i gang med Power BI Desktop](https://powerbi.microsoft.com/documentation/powerbi-desktop-getting-started/).
 
 Følg denne fremgangsmåten for å legge til en .pbix-fil som en artefakt i et Visual Studio-prosjekt.
 

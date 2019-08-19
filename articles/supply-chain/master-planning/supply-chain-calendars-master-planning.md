@@ -10,19 +10,19 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: shylaw
+ms.reviewer: josaw
 ms.search.scope: Core, Operations
 ms.search.region: global
 ms.search.industry: Manufacturing
 ms.author: t-benebo
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 266eec2bb870be270b7796b35903a402e014c67c
-ms.sourcegitcommit: 1f211ac6bd384fd8a2b5352104baf264d88f39b0
+ms.openlocfilehash: ca473de65135ddddea12ddc72e902056cc7b1db7
+ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/08/2019
-ms.locfileid: "1538732"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1845309"
 ---
 # <a name="calendars-and-master-planning"></a>Kalendere og hovedplanlegging
 
@@ -93,7 +93,7 @@ For å angi datoene når en kunde kan motta leveringer, kan du tilordne en motta
 
 Legg merke til at det er bare er mulig å inkludere én kalender per kunde. Hvis du vil inkludere en kalender for hver ulik adresse for en kunde, kan du opprette én kunde per adresse og deretter tilordne den aktuelle kalenderen. 
 
-Den ønskede leveringsdatoen på salgsordrelinjene påvirkes av kundekalenderen og metoden for leveringsdatokontroll. Du kan lese mer om hvordan den tidligste leveringsdatoen beregnes, i [Ordrebekreftelse.](https://docs.microsoft.com/en-us/dynamics365/unified-operations/supply-chain/sales-marketing/delivery-dates-available-promise-calculations).
+Den ønskede leveringsdatoen på salgsordrelinjene påvirkes av kundekalenderen og metoden for leveringsdatokontroll. Du kan lese mer om hvordan den tidligste leveringsdatoen beregnes, i [Ordrebekreftelse.](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/sales-marketing/delivery-dates-available-promise-calculations).
 
 ### <a name="shipping-calendar-for-a-legal-entity"></a>Leveringskalender for en juridisk enhet
 For å angi datoene som en juridisk enhet kan sende varer, kan du definere en leveringskalender under **Organisasjonsstyring > Organisasjoner > Juridiske enheter**. Velg juridisk enhet, og legg til kalenderen i **Utenrikshandel og logistikk**-kategorien i **Leveringskalender**-feltet. Leveringskalenderen vil fungere som en kilde for standarder for alle lagerkalendere i den juridiske enheten. 
