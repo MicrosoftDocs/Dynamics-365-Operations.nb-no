@@ -1,88 +1,75 @@
 ---
-title: Definer leverandørfakturapolicyer
-description: Leverandørfakturapolicyer kjøres når du posterer en leverandørfaktura ved hjelp av Leverandørfaktura-siden, og når du åpner siden for brudd på leverandørfakturapolicy.
+title: Definere leverandørfakturapolicyer
+description: Dette emnet forklarer hvordan du definerer leverandørfakturapolicyer i Dynamics 365 for Finance and Operations.
 author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 07/11/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: VendParameters,  SysPolicyListPage, SysPolicyParameters, SysPolicySourceDocumentRuleType, SysPolicy, SysPolicySourceDocumentRule, SysQueryForm, SysQueryTableLookUp, SysQueryPrefixLookUp, SysQueryFieldLookUp
 audience: Application User
-ms.reviewer: twheeloc
+ms.reviewer: roschlom
 ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: b424eee7c91ef1085c98828c0d5e5cf674717a81
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 328aafd16496fdbb963c9aa40a5c13005be7a382
+ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1559670"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1842815"
 ---
-# <a name="set-up-vendor-invoice-policies"></a>Definer leverandørfakturapolicyer
+# <a name="set-up-vendor-invoice-policies"></a>Definere leverandørfakturapolicyer
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-Leverandørfakturapolicyer kjøres når du posterer en leverandørfaktura ved hjelp av Leverandørfaktura-siden, og når du åpner siden for brudd på leverandørfakturapolicy. Du kan også konfigurere av arbeidsflyt for leverandørfaktura for å kjøre leverandørfakturapolicyer hver gang du sender en faktura til arbeidsflyten. 
+Dette emnet forklarer hvordan du definerer leverandørfakturapolicyer i Dynamics 365 for Finance and Operations. Leverandørfakturapolicyer kjøres når du posterer en leverandørfaktura ved hjelp av Leverandørfaktura-siden, og når du åpner siden for brudd på leverandørfakturapolicy. Du kan også konfigurere av arbeidsflyt for leverandørfaktura for å kjøre leverandørfakturapolicyer hver gang du sender en faktura til arbeidsflyten. 
 
-Leverandørfakturapolicyer gjelder ikke for fakturaer som ble opprettet i fakturaregisteret eller fakturajournalen. 
-
-Validering av fakturakontroll bruker ikke leverandørfakturapolicyer, men defineres i stedet på siden Leverandørparametere.
-
-Denne registreringen bruker demonstrasjonsfirmaet USMF. Rollen regnskapssjef leverandørreskontro eller regnskapssjef kan utføre disse trinnene. Før du begynner, må du kontrollere at konfigurasjonsnøkkelen for fakturasamsvar er valgt.
+- Leverandørfakturapolicyer gjelder ikke for fakturaer som ble opprettet i fakturaregisteret eller fakturajournalen.  
+- Validering av fakturakontroll bruker ikke leverandørfakturapolicyer, men defineres i stedet på siden Leverandørparametere.  
+- Denne registreringen bruker demonstrasjonsfirmaet USMF. Rollen regnskapssjef leverandørreskontro eller regnskapssjef kan utføre disse trinnene. Før du begynner, må du kontrollere at konfigurasjonsnøkkelen for fakturasamsvar er valgt.
 
 
 ## <a name="prepare-to-create-vendor-invoice-policies"></a>Forberede oppretting av leverandørfakturapolicyer
-1. Gå til Leverandører > Oppsett > Leverandørparametere.
-2. Klikk kategorien Fakturavalidering.
-3. Merk av eller fjern merket for Oppdater fakturahodestatus automatisk.
-4. Klikk OK.
-5. Velg et alternativ i feltet Poster faktura med avvik.
+1. Gå til **Navigasjonsrute > Moduler > Leverandører > Oppsett > Leverandørparametere**.
+2. Velg **Fakturavalidering**-fanen.
+3. Merk av eller fjern merket for **Oppdater fakturahodestatus automatisk**.
+4. Velg **OK**.
+5. Velg et alternativ i feltet **Poster faktura med avvik**.
 6. Lukk siden.
-7. Gå til Leverandører > Policyoppsett > Leverandørfakturapolicyer.
-8. Klikk Parametere.
-9. Klikk btnAdd.
-10. Lukk siden.
+7. Gå til **Navigasjonsrute > Moduler > Leverandører > Policyoppsett > Leverandørfakturapolicyer**.
+8. Velg **Parametre**.
+9. Velg **Legg til**.
+10. Lukk siden for å gå tilbake til startsiden.
 
 ## <a name="create-policy-rule-types-for-vendor-invoices"></a>Opprette policyregeltyper for leverandørfakturaer
-1. Gå til Leverandører > Policyoppsett > Policyregeltyper for leverandørfaktura.
-2. Klikk Ny.
-3. Skriv inn en verdi i feltet Regelnavn.
-4. Skriv inn en verdi i feltet Beskrivelse.
-5. Klikk rullegardinknappen i Spørringsnavn-feltet for å åpne oppslaget.
-6. Finn og velg ønsket post i listen.
-7. Klikk koblingen i den valgte raden i listen.
-8. Klikk Lagre.
-9. Lukk siden.
+1. Gå til **Navigasjonsrute > Moduler > Leverandører > Policyoppsett > Policyregeltyper for leverandørfaktura**.
+2. Velg **Ny**.
+3. Angi verdier i feltene **Regelnavn** og **Beskrivelse**.
+4. I feltet **Spørringsnavn** velger du rullegardinknappen for å åpne oppslaget, og velg deretter den ønskede posten.
+5. Velg **Lagre**.
+6. Lukk siden for å gå tilbake til startsiden.
 
 ## <a name="define-a-vendor-invoice-policy"></a>Definere en leverandørfakturapolicy
-1. Gå til Leverandører > Policyoppsett > Leverandørfakturapolicyer.
-2. Klikk Ny.
-3. Skriv inn en verdi i Navn-feltet.
-4. Skriv inn en verdi i feltet Beskrivelse.
-5. Vis eller skjul delen Policyorganisasjoner.
-6. Velg "Contoso Entertainment System USA" i treet.
-7. Klikk Legg til.
-8. Vis eller skjul delen Policyregler.
-9. Klikk Opprett policyregel.
-10. Skriv inn en verdi i feltet Beskrivelse av policyregel.
-11. Klikk Filter.
-12. Klikk Legg til.
-13. Merk den valgte raden i listen.
-14. Klikk rullegardinknappen i Tabell-feltet for å åpne oppslaget.
-15. Klikk koblingen i den valgte raden i listen.
-16. Klikk rullegardinknappen i feltet Avledet tabell for å åpne oppslaget.
-17. Klikk koblingen i den valgte raden i listen.
-18. Klikk rullegardinknappen i Felt-feltet for å åpne oppslaget.
-19. Skriv inn en verdi i Felt-feltet.
-20. Lukk siden.
-21. Skriv inn en verdi i Kriterier-feltet.
-22. Klikk OK.
-23. Klikk OK.
-24. Lukk siden.
-25. Lukk siden.
+1. Gå til **Navigasjonsrute > Moduler > Leverandører > Policyoppsett > Leverandørfakturapolicyer**.
+2. Velg **Ny**.
+3. Angi verdier i feltene **Navn** og **Beskrivelse**.
+4. Vis eller skjul delen **Policyorganisasjoner**.
+5. Velg **Contoso Entertainment System USA** i treet.
+6. Velg **Legg til**.
+7. Vis eller skjul delen **Policyregler**.
+8. Velg **Opprett policyregel**.
+9. Skriv inn en verdi i feltet **Beskrivelse av policyregel**.
+10. Velg **Filter**.
+11. Velg **Legg til**. Velg den ønskede posten.
+12. I feltene **Tabell**, **Avledet tabell** og **Felt** velger eller angir du alternativer fra rullegardinmenyene.
+13. Lukk siden.
+14. Skriv inn en verdi i **Kriterier**-feltet.
+15. Velg **OK**.
+16. Velg **OK**.
+17. Lukk sidene for å gå tilbake til startsiden.
 

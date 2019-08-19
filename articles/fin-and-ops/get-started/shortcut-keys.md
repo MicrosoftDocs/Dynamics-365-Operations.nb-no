@@ -3,7 +3,7 @@ title: Hurtigtaster
 description: Følgende hurtigtaster gjelder i hele Dynamics 365 for Finance and Operations.
 author: jasongre
 manager: AnnBe
-ms.date: 12/12/2017
+ms.date: 07/22/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 497fdb303abb9fe94caa1ebc03da005b88a40e4b
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 95a6b6bd70c4a5bb684c605d364a28b85ed4e120
+ms.sourcegitcommit: d88d3d504e85c5bf6f6e9dc842488a2b644261cf
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1561839"
+ms.lasthandoff: 07/22/2019
+ms.locfileid: "1780064"
 ---
 # <a name="keyboard-shortcuts"></a>Hurtigtaster
 
@@ -138,9 +138,13 @@ Fra og med plattformoppdatering 11 kan brukere finne hurtigtaster som er tilgjen
 | Legg til en rekke rader til det valgte settet<blockquote>[!NOTE] Denne snarveien gjelder kun for flere valgscenarier.</blockquote>         | Skift+klikk                     |
 | Gå til neste/forrige side med data                                                                                   | Side opp / Side ned             |
 | Opprett en ny rad nederst i rutenettet                                                                             | Pil ned (fra den siste raden)  |
-| Merk eller tøm alle rader                                                                                               | Ctrl+Skift+M                    |
 | Gå til den første posten                                                                                               | CTRL+HOME                       |
 | Gå til den siste posten                                                                                                | CTRL+END                        |
+| Merk eller tøm alle rader                                                                                               | Ctrl+Skift+M                    |
+| Gå til den første markerte raden                                                                                           | Alt+Skift+M, F                    |
+| Gå til den neste markerte raden                                                                                            | Alt+Skift+M, L                    |
+| Gå til den forrige markerte raden                                                                                        | Alt+Skift+M, P                    |
+| Gå til den siste markerte raden                                                                                           | Alt+Skift+M, N                    |
 | Utfør standardhandling i et rutenett<blockquote>[!NOTE] Denne snarveien er aktivert når fokus er på en celle som inneholder en hyperkobling, og alle celler i den kolonnen har hyperkoblinger.</blockquote> | Enter                           |
 | Bytte fokus mellom den merkede raden, og overskriftsraden                                                               | Alt+Skift+H                     |
 | Gjøre den gjeldende kolonnen større/mindre (med fokus i overskriftsraden)                                                  | Pil høyre / pil venstre        |

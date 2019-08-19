@@ -10,7 +10,7 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: BudgetPlanningConfiguration
 audience: Application User
-ms.reviewer: shylaw
+ms.reviewer: roschlom
 ms.search.scope: Core, Operations
 ms.custom: 17251
 ms.assetid: a2e06633-a800-4840-a962-88fed8462104
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8a262b5200c8071bec78ff6d3ed7976d4b2057ea
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 560a5346e33e1b98a7513b6d7c033fe35458f63a
+ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1570978"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1834156"
 ---
 # <a name="budget-planning-overview"></a>Oversikt over budsjettplanlegging
 
@@ -154,6 +154,8 @@ For eksempelskjemaet kan det hende du vil opprette kolonner for PY-salgs-, kontr
 [![Kolonner](./media/columns.png)](./media/columns.png) 
 
 Du kan også angi om hvert oppsettelement (kolonne) kan redigeres, og om de er tilgjengelige i alle regnearkmaler som opprettes for dette oppsettet. I oppsettet som brukes for estimatstadiet i eksempelskjemaet, kan prognosekolonnene redigeres, mens kolonnene for PY-salg og kontrakter.
+
+[!Note] Som standard vil du være begrenset til 36 kolonner med mindre du utvider budsjetteringsplanleggingen med trinnene i [Utvide budsjettplanleggingsoppsettet](./extending-budget-planning-layout.md).
 
 ### <a name="templates"></a>Maler
 

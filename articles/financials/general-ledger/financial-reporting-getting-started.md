@@ -10,7 +10,7 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: FinancialReports
 audience: Application User
-ms.reviewer: shylaw
+ms.reviewer: roschlom
 ms.search.scope: Core, Operations
 ms.custom: 10444
 ms.assetid: 3eae6dc3-ee06-4b6d-9e7d-1ee2c3b10339
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b8d3630e60fb2f1a8ca7e3610bbb4fcd32c17dec
-ms.sourcegitcommit: 06c8dc5bc4e1c41f68e1cda141d61529768be958
+ms.openlocfilehash: 7a55c0a1ac8ac833315afa179c1b6d4eb78195fc
+ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/22/2019
-ms.locfileid: "1594966"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1839213"
 ---
 # <a name="financial-reporting"></a>Finansrapportering
 
@@ -81,7 +81,7 @@ Funksjonene for økonomisk rapportering er tilgjengelige for brukere som er tilo
 Når en bruker er lagt til eller en rolle er endret, skal brukeren kunne få tilgang til økonomisk rapportering på noen få minutter. **Merk:** Sysadmin-rollen er lagt til alle roller i finansrapportering.
 
 ## <a name="default-reports"></a>Standardrapporter
-Finansrapportering gir 22 standard finansrapporter. Alle rapportene bruker standard hovedkontokategorier i Dynamics 365 for Finance and Operations. Du kan bruke disse rapportene som de er eller som et utgangspunkt for ditt finansrapporteringsbehov. I tillegg til de tradisjonelle regnskapsoppgjørene, for eksempel resultatregnskap og balanse, inkluderer disse standardrapportene rapporter som viser de forskjellige typene finansrapporter du kan opprette. 
+Finansrapportering gir 22 standard finansrapporter. Alle rapportene bruker standard hovedkontokategorier i Finance and Operations. Du kan bruke disse rapportene som de er eller som et utgangspunkt for ditt finansrapporteringsbehov. I tillegg til de tradisjonelle regnskapsoppgjørene, for eksempel resultatregnskap og balanse, inkluderer disse standardrapportene rapporter som viser de forskjellige typene finansrapporter du kan opprette. 
 
 <!--Each report in the following table links to an Office Mix presentation about the report.-->
 
@@ -117,7 +117,7 @@ Når du klikker **Finansrapportering**-menyen, vises listen over standard finans
 Du kan opprette en ny rapport fra listen for finansrapporter eller endre en eksisterende rapport. Hvis du har de nødvendige tillatelsene, kan du opprette en ny finansrapport ved å klikke **Ny** i handlingsruten. Et rapportutforming-program lastes ned til enheten. Du kan deretter opprette den nye rapporten etter at rapportutformingen starter. Når du har lagret den nye rapporten, vises den i finansrapportlisten. Listen viser bare rapporter som er opprettet for firmaet som du bruker i Finance and Operations. 
 
 > [!NOTE] 
-> Datamaskinen som du laster ned klienten for rapportutforming på, må ha versjon 4.6.2 av Microsoft .NET Framework installert. Denne versjonen av Microsoft .NET Framework kan lastes ned og installeres fra [Microsoft Download Center](https://www.microsoft.com/en-us/download/details.aspx?id=53345). Hvis du bruker Chrome, må du installere et ClickOnce-tillegg for å kunne laste ned klienten for rapportutforming. Hvis du kjører i inkognitomodus, må du kontrollere at ClickOnce-tillegget er aktivert for inkognitomodus. Du kan også endre en rapport som vises i finansrapportlisten. Når området rundt rapportnavnet er merket, klikker du **Rediger** i handlingsruten. Rapportutformingsprogrammet starter.
+> Datamaskinen som du laster ned klienten for rapportutforming på, må ha versjon 4.6.2 av Microsoft .NET Framework installert. Denne versjonen av Microsoft .NET Framework kan lastes ned og installeres fra [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=53345). Hvis du bruker Chrome, må du installere et ClickOnce-tillegg for å kunne laste ned klienten for rapportutforming. Hvis du kjører i inkognitomodus, må du kontrollere at ClickOnce-tillegget er aktivert for inkognitomodus. Du kan også endre en rapport som vises i finansrapportlisten. Når området rundt rapportnavnet er merket, klikker du **Rediger** i handlingsruten. Rapportutformingsprogrammet starter.
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 - [Vise finansrapporter](view-financial-reports.md)

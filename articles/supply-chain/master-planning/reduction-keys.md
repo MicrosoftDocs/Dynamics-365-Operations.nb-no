@@ -3,7 +3,7 @@ title: Prognosereduksjonsnøkler
 description: Dette emnet inneholder eksempler som viser hvordan du definerer en reduksjonsnøkkel. Den inneholder informasjon om de ulike innstillingene for reduksjonsnøkler for og resultatene av hver. Du kan bruke en reduksjonsnøkkel til å definere hvordan du kan redusere prognosebehov.
 author: roxanadiaconu
 manager: AnnBe
-ms.date: 02/28/2019
+ms.date: 07/09/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b915570145a48db7a182b9fce34e1544e3600107
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 5efa5b2c7a4c45bbf6e940170000b391384fe7ff
+ms.sourcegitcommit: add48ece3864645a89a28327c4add607714befb5
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1504085"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "1736310"
 ---
 # <a name="method-used-to-reduce-forecast-requirements"></a>Metode som brukes til å redusere prognosebehov
 
@@ -138,14 +138,14 @@ I dette eksemplet kan du inkludere følgende behovsprognose i en hovedplan.
 | Dato       | Behovsprognose |
 |------------|-----------------|
 | 1. januar  | 1 000           |
-| 1. februar | 500             |
+| 1. februar | 1 000             |
 
 Du kan også opprette følgende salgsordrer:
 
 | Dato        | Salgsordreantall |
 |-------------|----------------------|
-| 15. januar  | 500                  |
-| 15. februar | 100                  |
+| 15. januar  | 200                  |
+| 15. februar | 400                  |
 
 I dette tilfellet blir følgende planlagte ordrer opprettet:
 

@@ -10,7 +10,7 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: BudgetControlConfiguration
 audience: Application User
-ms.reviewer: shylaw
+ms.reviewer: roschlom
 ms.search.scope: Core, Operations
 ms.custom: 60493
 ms.assetid: be964167-43bc-431d-9adb-48bff32d68d5
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4dbbbdf403c3e3f7c1bfa391cc32f80505098db9
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: b33057bc28c1a03cb7c72e369beec4a78ff2d1a1
+ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1568195"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1834301"
 ---
 # <a name="budget-control-overview"></a>Oversikt over budsjettkontroll
 
@@ -36,7 +36,7 @@ Denne artikkelen introduserer budsjettkontroll og gir informasjon om hvordan du 
 
 Budsjettkontroll i Microsoft Dynamics 365 for Finance and Operations støtter behandling av en organisasjons økonomiske ressurser ved hjelp av kontoplaner, arbeidsflyter, brukergrupper, kildedokumentene og journaler, konfigurerbar beregning av tilgjengelige midler, budsjettsykluser og terskelverdier. Når kontrollene er på plass, kan en organisasjon planlegge, måle, administrere og utarbeide prognoser for sine økonomiske ressursene i hele regnskapsåret. 
 
-Når budsjetter er godkjent i Dynamics 365 for Finance and Operations, kan du bruke budsjettplaner til å generere budsjettregisteroppføringer for å registrere utgiftsbudsjettet for en organisasjon. Du kan også opprette eller importere budsjettregisteroppføringer fra et tredjepartsprogram i stedet for å bruke funksjonaliteten for budsjettplanlegging. 
+Når budsjetter er godkjent i Finance and Operations, kan du bruke budsjettplaner til å generere budsjettregisteroppføringer for å registrere utgiftsbudsjettet for en organisasjon. Du kan også opprette eller importere budsjettregisteroppføringer fra et tredjepartsprogram i stedet for å bruke funksjonaliteten for budsjettplanlegging. 
 
 Utgifter kan registreres ved hjelp av hovedkontoer og finansdimensjoner. Du kan konfigurere kontroll over de totale utgiftsene for å oppfylle organisasjonens retningslinjer og krav, ved å gruppere kombinasjoner av finansdimensjoner og hovedkontoer. 
 

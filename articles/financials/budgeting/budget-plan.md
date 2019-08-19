@@ -10,7 +10,7 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: BudgetPlanningConfiguration
 audience: Application User
-ms.reviewer: shylaw
+ms.reviewer: roschlom
 ms.search.scope: Core, Operations
 ms.custom: 10763
 ms.assetid: 0f2ba752-1f6d-4f28-b9e9-b2e97d10b6d1
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ac2e98dbbd45becf06e28b6ea4eb9d0ec15e30f6
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: b898a908fe78b7cf12f075686e323296d0babe50
+ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1568172"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1834253"
 ---
 # <a name="budget-planning"></a>Budsjettplanlegging
 
@@ -40,7 +40,7 @@ Formålet med denne øvelsen er å gi en veiledet visning av Microsoft Dynamics 
 <a name="prerequisites"></a>Nødvendig programvare 
 ------------------
 
-I denne opplæringen må du ha tilgang til Finance and Operations-miljøet med Contoso-demonstrasjonsdata og være klargjort som administrator på forekomsten. Ikke bruk nettleseren i privat modus i denne laben. Logg om nødvendig av eventuelle andre kontoer i nettleseren, og logg på med administratorlegitimasjon for Finance and Operations. Når du logger på Finance and Operations, **MÅ** du merke av for La meg være pålogget. Dermed opprettes det en fast informasjonskapsel som Excel-appen trenger. Hvis du logger på Finance and Operations ved å bruke en annen nettleser enn Internet Explorer, blir du bedt om å logge på i Excel-appen. Når du klikker Logg på i Excel-appen, åpnes et popup-vindu for Internet Explorer, og når du logger på, **MÅ** du merke av for La meg være pålogget. Hvis du klikker Logg på i Excel-programmet og ingenting ser ut til å skje, må du tømme hurtigbufferen for informasjonskapsler i Internet Explorer.
+I denne opplæringen må du ha tilgang til Finance and Operations-miljøet med Contoso-demonstrasjonsdata og være klargjort som administrator på forekomsten. Ikke bruk nettleseren i privat modus i denne laben. Logg om nødvendig av eventuelle andre kontoer i nettleseren, og logg på med administratorlegitimasjon for Finance and Operations. Når du logger på Finance and Operations, **MÅ** du merke av for La meg være pålogget. Dermed opprettes det en fast informasjonskapsel som Excel-appen trenger. Hvis du logger på Finance and Operations ved å bruke en annen nettleser enn IE, blir du bedt om å logge på i Excel-appen. Når du klikker Logg på i Excel-appen, åpnes et popup-vindu for IE, og når du logger på, **MÅ** du merke av for La meg være pålogget. Hvis du klikker Logg på i Excel-programmet og ingenting ser ut til å skje, må du tømme hurtigbufferen for informasjonskapsler i IE.
 
 ## <a name="scenario-overview"></a>**Oversikt over scenariet**
 Julie jobber som regnskapssjef i Contoso Entertainment Systems i Tyskland (DEMF). Når FY2016 nærmer seg, må hun arbeide med å sette opp firmaets budsjett for kommende år. Budsjettforberedelsen ser slik ut:
@@ -113,7 +113,7 @@ Budsjettplanlegging bruker spesielle sikkerhetspolicyer for å konfigurere tilga
 ### <a name="task-3-create-scenarios"></a>Oppgave 3: opprette scenarier
 3.1. Gå til Budsjettering&gt;Oppsett &gt; Budsjettplanlegging &gt; Budsjettplanleggingskonfigurasjon. Legg merke til scenariene vi skal bruke videre i denne laben, på Scenarier-siden: Faktisk, forrige år og Budsjettert. 
 
-*Obs!  Hvis du vil, kan du opprette nye scenarier for denne øvelsen og bruke dem i stedet.* 
+*Obs! Hvis du vil, kan du opprette nye scenarier for denne øvelsen og bruke dem i stedet.* 
 
 [![Nye scenarier](./media/screenshot15.png)](./media/screenshot15.png) 
 
@@ -122,7 +122,7 @@ Budsjettplanlegging bruker spesielle sikkerhetspolicyer for å konfigurere tilga
 ### <a name="task-4-create-budget-plan-columns"></a>Oppgave 4: opprette budsjettplankolonner
 Budsjettplankolonner er enten monetære eller antallsbaserte kolonner som kan brukes i oppsett for budsjettplandokument. I vårt eksempel må vi opprette en kolonne for Faktisk, forrige år og 12 kolonner som skal representere hver måned i et budsjettert år. Kolonner kan opprettes ved ganske enkelt å klikke Legg til-knappen og fylle inn verdiene, eller ved hjelp av Dataenhet. Vi skal bruke Dataenhet til å fylle inn verdiene i denne laben. 
 
-4.1. Åpne Kolonner-siden i Budsjettering&gt; Oppsett &gt; Budsjettplanlegging &gt; Budsjettplanleggingskonfigurasjon. Klikk Office-knappen i øvre høyre hjørne i skjemaet, og velg Kolonner (ufiltrerte) 
+4.1. Åpne Kolonner-siden i Budsjettering&gt;Oppsett &gt; Budsjettplanlegging &gt; Budsjettplanleggingskonfigurasjon. Klikk Office-knappen i øvre høyre hjørne i skjemaet, og velg Kolonner (ufiltrerte) 
 
 [![Ufiltrerte kolonner](./media/screenshot16.png)](./media/screenshot16.png) 
 
@@ -185,7 +185,7 @@ Julie må opprette og aktivere en ny budsjettplanleggingsprosess der hele oppset
 -   Arbeidsflyt for budsjettplanlegging – tilordne automatisk godkjenning av arbeidsflyt for økonomiavdelingen
 -   I stadieregler og maler for budsjettplanlegging velger du om det er tillatt å legge til linjer og å endre linjer og hvilket oppsett som skal brukes som standard, for hvert arbeidsflytstadium for budsjettplanlegging.
 
-*Obs!  Du kan opprette flere dokumentoppsett og tilordne dem slik at de er tilgjengelige på arbeidsflytstadiet for budsjettplanlegging, ved å klikke knappen Alternative oppsett.* 
+*Obs! Du kan opprette flere dokumentoppsett og tilordne dem slik at de er tilgjengelige på arbeidsflytstadiet for budsjettplanlegging, ved å klikke knappen Alternative oppsett.* 
 
 [![Alternative oppsett](./media/screenshot27.png)](./media/screenshot27.png) 
 

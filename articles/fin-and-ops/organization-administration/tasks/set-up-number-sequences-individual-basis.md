@@ -1,9 +1,9 @@
 ---
 title: Konfigurere nummerserier enkeltvis
-description: Nummerserier brukes til å generere lesbare, unike IDer for hoveddataposter og transaksjonsposter som krever dem.
+description: Dette emnet forklarer hvordan du konfigurerer nummerserier enkeltvis.
 author: sericks007
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 07/09/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,31 +16,28 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 6734d66a06f8a8dc90a48bd68b7b4e22177b4672
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 58e69b680c006c814e9408135b6947161ad7c4f3
+ms.sourcegitcommit: 81e6eaa2178fda7f7d086ad978f4c891bc4ec10a
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1560596"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "1738887"
 ---
 # <a name="set-up-number-sequences-on-an-individual-basis"></a>Konfigurere nummerserier enkeltvis
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-Nummerserier brukes til å generere lesbare, unike IDer for hoveddataposter og transaksjonsposter som krever dem. En hoveddata- eller transaksjonspost som krever en ID kalles en referanse. Du må konfigurere en nummerserie og tilknytte den referansen før du kan opprette nye poster for en referanse. Du kan konfigurere alle nødvendige nummerserier samtidig ved å bruke veiviseren Definer nummerserier, eller du kan opprette eller endre enkeltnummerserier ved å bruke siden Nummerserier.
+Dette emnet forklarer hvordan du konfigurerer nummerserier enkeltvis. Nummerserier brukes til å generere lesbare, unike IDer for hoveddataposter og transaksjonsposter som krever dem. En hoveddata- eller transaksjonspost som krever en ID kalles en referanse. Du må konfigurere en nummerserie og tilknytte den referansen før du kan opprette nye poster for en referanse. Du kan konfigurere alle nødvendige nummerserier samtidig ved å bruke veiviseren **Definer nummerserier**, eller du kan opprette eller endre enkeltnummerserier ved å bruke siden **Nummerserier**.
 
-1. Gå til Organisasjonsadministrasjon > Nummerserier > Nummerserier.
-2. Klikk Nummerserie.
-3. Skriv inn en verdi i feltet Nummerserie.
-4. Skriv inn en verdi i Navn-feltet.
-5. Vis delen Omfangsparametere.
-    * I hurtigfanen Omfangsparametere velger du et omfang for nummerserien og velger omfangsverdier.     Omfanget angir hvilke organisasjoner som bruker nummerserien. Nummerserier som har et annet omfang enn Delt, kan i tillegg ha segmenter som samsvarer med omfanget. En nummerserie med omfanget Juridisk enhet kan for eksempel inneholder et segment for en juridisk enhet. Hvis du vil ha mer informasjon om omfang, kan du se hjelpeemnet Oversikt over nummerserie.  
-6. Utvid seksjonen Segmenter.
-    * I hurtigfanen Segmenter angir du formatet for nummerserien ved å legge til, fjerne og ordne segmenter.  
-    * Nummerserier for alle områder kan inneholde Konstant-segmenter og Alfanumerisk-segmenter. Konstant-segmenter inneholder et sett med alfanumeriske tegn som ikke endres. Bruk denne segmenttypen til å legge til en bindestrek eller andre skilletegn mellom nummerseriesegmenter. Alfanumerisk-segmenter inneholder en kombinasjon av nummertegn (#) og &-tegn. Disse tegnene representerer bokstaver og tall som økes hver gang et nummer i serien brukes. Bruk nummertegnet (#) for å angi økende tall og et &-tegn for å angi økende bokstaver. Formatet #####_2014 oppretter for eksempel serien 00001_2014, 00002_2014 og så videre.     Det må finnes minimum ett alfanumerisk segment. Omfangselementer, for eksempel firma eller juridisk enhet, er ikke obligatorisk. Hvis du ikke inkluderer omfangselementer i formatet, genereres det imidlertid tall per omfang for den valgte referansen.  
-7. Vis delen Referanser.
-    * I hurtigfanen Referanser velger du dokumenttypen eller posten nummerserien skal tilordnes.     Dette trinnet er valgfritt for serier som er angitt for mønstre for bruk av spesialprogrammer. I slike scenarier genereres et nytt tall ved hjelp av verdien for en nummerseriekode eller ID, uten bruk av en referanse. Et eksempel på et mønster for bruk av spesialprogram er en bilagsserie som brukes for spesifikke journalnavn. Det anbefales imidlertid ikke at du bruker slike mønstre.  
-8. Utvid seksjonen Generelt.
-    * I hurtigfanen Generelt angir du om en nummerserie er manuell, sammenhengende eller ikke-sammenhengende. Angi i tillegg det minste og største tallet som kan brukes i nummerserien.     Det anbefales ikke at du endrer ikke-sammenhengende nummerserier til sammenhengende nummerserier. Nummerserien vil ikke være virkelig sammenhengende. Denne endringen kan også føre til duplikatnøkkelbrudd i databasen. Sammenhengende nummerserier har i tillegg en større innvirkning på ytelsen.   
-9. Klikk Lagre.
+1. Gå til **Navigasjonsrute > Moduler > Organisasjonsadministrasjon > Nummerserier > Nummerserier**.
+2. Velg **Nummerserie**.
+3. Skriv inn en verdi i feltet **Nummerseriekode**.
+4. Skriv inn en verdi i **Navn**-feltet.
+5. I hurtigfanen **Omfangsparametere** velger du et omfang for nummerserien og velger omfangsverdier fra rullegardinlisten. Omfanget angir hvilke organisasjoner som bruker nummerserien. Nummerserier som har et annet omfang enn **Delt**, kan i tillegg ha segmenter som samsvarer med omfanget. En nummerserie med omfanget **Juridisk enhet** kan for eksempel inneholder et segment for en juridisk enhet. Hvis du vil ha mer informasjon om omfang, kan du se [Oversikt over nummerserie](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/master/articles/fin-and-ops/organization-administration/number-sequence-overview.md).  
+6. Utvid seksjonen **Segmenter**.
+    - Definer formatet for nummerserien ved å legge til, fjerne og ordne segmenter.  
+    - Nummerserier for alle områder kan inneholde *Konstant-segmenter* og *Alfanumerisk-segmenter*. Konstant-segmenter inneholder et sett med alfanumeriske tegn som ikke endres. Bruk denne segmenttypen til å legge til en bindestrek eller andre skilletegn mellom nummerseriesegmenter. Alfanumerisk-segmenter inneholder en kombinasjon av nummertegn (#) og &-tegn. Disse tegnene representerer bokstaver og tall som økes hver gang et nummer i serien brukes. Bruk nummertegnet (#) for å angi økende tall og et &-tegn for å angi økende bokstaver. Formatet `#####_2014` oppretter for eksempel serien `00001_2014`, `00002_2014` og så videre. Det må finnes minimum ett alfanumerisk segment. Omfangselementer, for eksempel firma eller juridisk enhet, er ikke obligatorisk. Hvis du ikke inkluderer omfangselementer i formatet, genereres det imidlertid tall per omfang for den valgte referansen.  
+7. Vis delen **Referanser**. Velg dokumenttypen eller posten nummerserien skal tilordnes. Dette trinnet er valgfritt for serier som er angitt for mønstre for bruk av spesialprogrammer. I slike scenarier genereres et nytt tall ved hjelp av verdien for en nummerseriekode eller ID, uten bruk av en referanse. Et eksempel på et mønster for bruk av spesialprogram er en bilagsserie som brukes for spesifikke journalnavn. Det anbefales imidlertid ikke at du bruker slike mønstre.  
+8. Utvid delen **Generelt**. I hurtigfanen Generelt angir du om en nummerserie er manuell, sammenhengende eller ikke-sammenhengende. Angi i tillegg det minste og største tallet som kan brukes i nummerserien. Det anbefales ikke at du endrer ikke-sammenhengende nummerserier til sammenhengende nummerserier. Nummerserien vil ikke være virkelig sammenhengende. Denne endringen kan også føre til duplikatnøkkelbrudd i databasen. Sammenhengende nummerserier har i tillegg en større innvirkning på ytelsen.   
+9. Klikk **Lagre**.
 

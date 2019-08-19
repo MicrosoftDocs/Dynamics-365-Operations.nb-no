@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8fd7022eb1ed2671fcfc2861eb8ec7504ebf9f98
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 37e860a969d527a334af7524c70e5ea15be7801e
+ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1551820"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "1742384"
 ---
 # <a name="credit-limits-for-customers"></a>Kredittgrenser for kunder
 
@@ -93,7 +93,7 @@ Bruk skjemaet **Parametere for kundefordringer** for å spesifisere informasjone
 
 **Hvor brukes informasjon om kundens gjenværende kreditt?**
 
-Informasjon om en kundes saldo og gjenværende kredittbeløp kalkuleres og lagres når du oppretter et aldrende øyeblikksbilde, og vises i **Samlinger**-skjemaet. Belpene som vises i **Samlinger**-skjemaet kan ikke inkludere all transaksjonsaktivitet før et nytt eldre øyeblikksbilde er opprettet. Hvis du vil ha mer informasjon, kan du se [Samlinger og kreditt i kundefordringer](https://technet.microsoft.com/en-us/library/hh209221.aspx).
+Informasjon om en kundes saldo og gjenværende kredittbeløp kalkuleres og lagres når du oppretter et aldrende øyeblikksbilde, og vises i **Samlinger**-skjemaet. Belpene som vises i **Samlinger**-skjemaet kan ikke inkludere all transaksjonsaktivitet før et nytt eldre øyeblikksbilde er opprettet. Hvis du vil ha mer informasjon, kan du se [Samlinger og kreditt i kundefordringer](https://technet.microsoft.com/library/hh209221.aspx).
 
 Avhengig av dokumentene som er valgt, beregnes informasjon om kundens saldo og gjenværende kredittbeløp når salgsordrer, pakksedler og kundefakturaer oppdateres. Hvis mengden av dokumentet du arbeider med ville føre til at kredittgrensen overskrides, vises en melding.
 
