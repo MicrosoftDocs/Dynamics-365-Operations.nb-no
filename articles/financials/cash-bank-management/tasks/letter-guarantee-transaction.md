@@ -10,18 +10,18 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: Reasons, SalesTableListPage, SalesCreateOrder, SalesTable, BankLGRequestForm, BankLGRequestFormRequest, BankLGGuarantee, BankLGFormSubmitToBank, BankDocumentAgreementLineLookup, BankLGFormReceiveFromBank, LedgerJournalTable, LedgerJournalTransDaily, BankLGRequestFormGiveToBeneficiary, BankLGFormGiveToBeneficiary, BankLGRequestFormIncreaseValue, BankLGFormIncreaseValue, BankLGRequestFormLiquidate, BankLGFormLiquidate
 audience: Application User
-ms.reviewer: twheeloc
+ms.reviewer: roschlom
 ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 4dc6ee178121fae05d538f5103919442d91e65eb
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: ff105bdefff2ea93c853d590c77391653f50a4dc
+ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1566116"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1841999"
 ---
 # <a name="letter-of-guarantee-transaction"></a>Garantibrevtransaksjon
 
@@ -61,7 +61,7 @@ Denne fremgangsmåten bruker demonstrasjonsfirmaet USMF.
 15. Angi en dato i feltet Ønsket forsendelsesdato.
 16. Angi en dato i Bekreftet forsendelsesdato-feltet.
 
-## <a name="process-letter-of-guaranteerequest"></a>Behandle garantibrev_Forespørsel
+## <a name="process-letter-of-guarantee_request"></a>Behandle garantibrev_Forespørsel
 1. Klikk Administrer i handlingsruten.
 2. Klikk Garantibrev.
 3. Klikk Garantibrev i handlingsruten.
@@ -73,7 +73,7 @@ Denne fremgangsmåten bruker demonstrasjonsfirmaet USMF.
 9. Klikk OK.
 10. Lukk siden.
 
-## <a name="process-letter-of-guaranteesubmit-to-bank"></a>Behandle garantibrev_Send til bank
+## <a name="process-letter-of-guarantee_submit-to-bank"></a>Behandle garantibrev_Send til bank
 1. Gå til Kontant- og bankbehandling > Garantibrev > Garantibrev.
 2. Finn og velg ønsket post i listen.
 3. Klikk Send til bank for å åpne nedtrekksdialogen.
@@ -81,7 +81,7 @@ Denne fremgangsmåten bruker demonstrasjonsfirmaet USMF.
 5. Klikk koblingen i den valgte raden i listen.
 6. Klikk OK.
 
-## <a name="process-letter-of-guaranteereceive-from-bank"></a>Behandle garantibrev_Motta fra bank
+## <a name="process-letter-of-guarantee_receive-from-bank"></a>Behandle garantibrev_Motta fra bank
 1. Klikk Motta fra bank for å åpne nedtrekksdialogen.
 2. Skriv inn en verdi i feltet Banknummer.
     * Kontroller verdiene som er beregnet, i feltene Margin og Utgift.  
@@ -93,7 +93,7 @@ Denne fremgangsmåten bruker demonstrasjonsfirmaet USMF.
     * Kontroller posteringen av journaloppføringer.  
 7. Lukk siden.
 
-## <a name="process-letter-of-guaranteegive-to-beneficiary"></a>Behandle garantibrev_Gi til mottaker
+## <a name="process-letter-of-guarantee_give-to-beneficiary"></a>Behandle garantibrev_Gi til mottaker
 1. Gå til Kunder > Ordrer > Alle salgsordrer.
 2. Klikk koblingen i den valgte raden i listen.
 3. Klikk Administrer i handlingsruten.
@@ -108,7 +108,7 @@ Denne fremgangsmåten bruker demonstrasjonsfirmaet USMF.
 12. Utvid Handlinger-delen.
     * Valider posten Gi til mottaker.  
 
-## <a name="process-letter-of-guaranteeincrease-value"></a>Behandle garantibrev_Øk verdi
+## <a name="process-letter-of-guarantee_increase-value"></a>Behandle garantibrev_Øk verdi
 1. Gå til Kunder > Ordrer > Alle salgsordrer.
 2. Klikk koblingen i den valgte raden i listen.
 3. Klikk Administrer i handlingsruten.
@@ -128,7 +128,7 @@ Denne fremgangsmåten bruker demonstrasjonsfirmaet USMF.
 16. Klikk Linjer.
     * Kontroller de posterte journaloppføringene.  
 
-## <a name="process-letter-of-guaranteeliquidate"></a>Behandle garantibrev_Avvikle
+## <a name="process-letter-of-guarantee_liquidate"></a>Behandle garantibrev_Avvikle
 1. Gå til Kunder > Ordrer > Alle salgsordrer.
 2. Klikk koblingen i den valgte raden i listen.
 3. Klikk Administrer i handlingsruten.

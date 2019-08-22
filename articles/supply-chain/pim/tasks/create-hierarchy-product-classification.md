@@ -3,25 +3,25 @@ title: Opprette et hierarki for produktklassifisering
 description: Denne fremgangsmåten viser hvordan du oppretter et nytt kategorihierarki og tilordner en varekodehierarkitype.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 07/11/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EcoResCategoryHierarchyListPage, EcoResCategoryHierarchyCreate, EcoResCategory, EcoResCategoryHierarchyRole
 audience: Application User
-ms.reviewer: shylaw
+ms.reviewer: josaw
 ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: fb49f5f3f8a5a788cb4c6d1be69534ba808e3675
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: faf43eb15283ffd7e36ad38728f166884dddcd85
+ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1568426"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1844831"
 ---
 # <a name="create-a-hierarchy-of-product-classification"></a>Opprette et hierarki for produktklassifisering
 
@@ -31,39 +31,38 @@ Denne fremgangsmåten viser hvordan du oppretter et nytt kategorihierarki og til
 
 
 ## <a name="create-the-new-category-hierarchy"></a>Opprette det nye kategorihierarkiet
-1. Gå til Behandling av produktinformasjon > Oppsett > Kategorier og attributter > Kategorihierarkier.
-2. Klikk Ny.
-3. Skriv inn en verdi i Navn-feltet.
-4. Skriv inn en verdi i feltet Beskrivelse.
-5. Klikk Opprett.
+1. Gå til **Navigasjonsrute > Moduler > Gå til Behandling av produktinformasjon > Oppsett > Kategorier og attributter > Kategorihierarkier**.
+2. Klikk på **Ny**.
+3. Skriv inn en verdi i **Navn**-feltet.
+4. Skriv inn en verdi i **Beskrivelse**-feltet.
+5. Klikk **Opprett**.
 
 ## <a name="build-the-hierarchy"></a>Bygge hierarkiet
-1. Klikk Ny kategorinode.
-2. Skriv inn en verdi i Navn-feltet.
-3. Skriv inn en verdi i feltet Kode.
-4. Skriv inn en verdi i feltet Egendefinert navn.
-5. Klikk Ny kategorinode.
-6. Skriv inn en verdi i Navn-feltet.
-7. Skriv inn en verdi i feltet Kode.
-8. Skriv inn en verdi i feltet Egendefinert navn.
-9. Klikk Ny kategorinode.
-10. Skriv inn en verdi i Navn-feltet.
-11. Skriv inn en verdi i feltet Kode.
-12. Skriv inn en verdi i feltet Egendefinert navn.
-13. Klikk Ny kategorinode.
-14. Skriv inn en verdi i Navn-feltet.
-15. Skriv inn en verdi i feltet Kode.
-16. Skriv inn en verdi i feltet Egendefinert navn.
+1. Klikk på **Ny** kategorinode.
+2. Skriv inn en verdi i **Navn**-feltet.
+3. Skriv inn en verdi i feltet **Kode**.
+4. Skriv inn en verdi i feltet **Egendefinert navn**.
+5. Klikk på **Ny** kategorinode.
+6. Skriv inn en verdi i **Navn**-feltet.
+7. Skriv inn en verdi i feltet **Kode**.
+8. Skriv inn en verdi i feltet **Egendefinert navn**.
+9. Klikk på **Ny** kategorinode.
+10. Skriv inn en verdi i **Navn**-feltet.
+11. Skriv inn en verdi i feltet **Kode**.
+12. Skriv inn en verdi i feltet **Egendefinert navn**.
+13. Klikk på **Ny** kategorinode.
+14. Skriv inn en verdi i **Navn**-feltet.
+15. Skriv inn en verdi i feltet **Kode**.
+16. Skriv inn en verdi i feltet **Egendefinert navn**.
 17. Lukk siden.
 
 ## <a name="classify-the-hierarchy"></a>Klassifisere hierarkiet
 1. Finn og velg ønsket post i listen.
-2. I handlingsruten, klikker du Kategorihierarki.
-3. Klikk Tilknytt hierarkitype.
-4. Klikk Ny.
-5. Velg et alternativ i feltet Kategorihierarkitype.
-    * Velg kategorihierarkitype for artikkelkode for produktklassifisering.  
-6. Klikk rullegardinknappen i feltet Kategorihierarki for å åpne oppslaget.
+2. I **handlingsruten** klikker du **Kategorihierarki**.
+3. Klikk på **Tilknytt hierarkitype**.
+4. Klikk på **Ny**.
+5. Velg et alternativ i feltet **Kategorihierarkitype**. Velg **kategorihierarkitype for artikkelkode for produktklassifisering**.  
+6. Klikk rullegardinknappen i feltet **Kategorihierarki** for å åpne oppslaget.
 7. Finn og velg ønsket post i listen.
 8. Klikk koblingen i den valgte raden i listen.
 9. Lukk siden.

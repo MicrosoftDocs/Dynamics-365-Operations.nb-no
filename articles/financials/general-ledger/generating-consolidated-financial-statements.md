@@ -10,18 +10,18 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: shylaw
+ms.reviewer: roschlom
 ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2018-5-31
 ms.dyn365.ops.version: 8.0.1
-ms.openlocfilehash: 76e675373212195cbe3f6cf43d128b2104f92fc6
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 55c5d02ca4e487782f020aa5eb85e6ebb36d4ce8
+ms.sourcegitcommit: 9b4c3fff2f30006b7bb491ef6ffe89d41bcbfa11
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1557737"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "1863706"
 ---
 # <a name="generate-consolidated-financial-statements"></a>Generere konsoliderte regnskapsoppgjør
 
@@ -49,11 +49,11 @@ Som den konsoliderte rapporten i illustrasjonen nedenfor viser, når du bruker r
 
 Du kan også opprette et rapporteringstre med en liste med flere nivåer som har så mange nivåer du trenger. Illustrasjonen nedenfor viser en liste med flere nivåer rapporteringstredefinisjon med fremhevinger ved globalt område.
 
-![Definsjon av rapporteringstre for flere nivåer med opprullinger etter region](./media/multilevel-reporting-tree-definition-roll-ups%20-worldwide-region.png "Definsjon av rapporteringstre for flere nivåer med opprullinger etter region")
+![Definsjon av rapporteringstre for flere nivåer med opprullinger etter region](./media/multilevel-reporting-tree-definition-roll-ups-worldwide-region.png "Definsjon av rapporteringstre for flere nivåer med opprullinger etter region")
 
 Illustrasjonen nedenfor viser en liste med flere nivåer rapporteringstredefinisjon med fremhevinger etter funksjon.
 
-![Definsjon av rapporteringstre for flere nivåer med opprullinger etter funksjon](./media/multilevel-reporting-tree-definition-roll-ups%20-by-function.png "Definsjon av rapporteringstre for flere nivåer med opprullinger etter funksjon")
+![Definsjon av rapporteringstre for flere nivåer med opprullinger etter funksjon](./media/multilevel-reporting-tree-definition-roll-ups-by-function.png "Definsjon av rapporteringstre for flere nivåer med opprullinger etter funksjon")
 
 ### <a name="viewing-companies-side-by-side"></a>Vise firmaer side ved side
 Mange kunder foretrekker rapporter der firmaene vises side ved side, og der en kolonne viser den konsoliderte totalsummen. Dette formatet er enkelt å oppnå når du har opprettet rapporteringstreet. Her er trinnene på høyt nivå for å vise firmaer side ved side i konsoliderte regnskapsoppgjør.
@@ -98,7 +98,7 @@ I rapporteringstredefinisjonen kan du angi prosenten av eierskap i kolonnen **Op
 > [!NOTE]
 > Du kan bruke denne eierskapsprosenten på en hvilken som helst rapporteringsenhet, ikke bare på firmanivå. 
 
-![Bruke prosentverdi i rapporteringstredefinisjonen](./media/Using-reporting%20tree-definition-percentage.png "Bruke prosentverdi i rapporteringstredefinisjonen")
+![Bruke prosentverdi i rapporteringstredefinisjonen](./media/Using-reporting-tree-definition-percentage.png "Bruke prosentverdi i rapporteringstredefinisjonen")
 
 Når rapporten er generert, viser Contoso Tyskland-rapporten 100 prosent av salgsbeløpet, og 80 prosent av beløpet blir fordelt og rullet opp til det konsoliderte salgsnivået.
 

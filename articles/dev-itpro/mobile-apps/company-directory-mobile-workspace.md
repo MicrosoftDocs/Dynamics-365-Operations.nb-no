@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 527d40452bcf52875e3f7b04d328110147417072
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 37b338d5971395264bd2ff673ee7892814859846
+ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1554445"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "1741165"
 ---
 # <a name="company-directory-mobile-workspace"></a>Mobilt arbeidsområde for firmakatalog
 
@@ -57,7 +57,7 @@ Før du kan bruke dette mobile arbeidsområdet, må du oppfylle følgende foruts
 </ul>
 </td>
 <td>Systemansvarlig</td>
-<td>Hvis du ikke allerede har Finance and Operations distribuert i organisasjonen, kan du se <a href="../deployment/deploy-demo-environment.md">Distribuere et demomiljø</a>. Hvis du ikke allerede har Talent distribuert i organisasjonen, kan en systemansvarlig få tilgang til en prøveversjon fra <a href="https://www.microsoft.com/en-us/dynamics365/talent">nettsiden for Talent</a>.
+<td>Hvis du ikke allerede har Finance and Operations distribuert i organisasjonen, kan du se <a href="../deployment/deploy-demo-environment.md">Distribuere et demomiljø</a>. Hvis du ikke allerede har Talent distribuert i organisasjonen, kan systemansvarlig få tilgang til en prøveversjon fra <a href="https://www.microsoft.com/dynamics365/talent">Talent-nettsiden</a>.
 </td>
 </tr>
 <tr class="even">

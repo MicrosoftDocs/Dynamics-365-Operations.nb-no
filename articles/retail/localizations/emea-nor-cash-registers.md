@@ -10,19 +10,19 @@ ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: RetailPosPermissionGroup, RetailFunctionalityProfile, RetailFormLayout, RetailParameters
 audience: Application User
-ms.reviewer: shylaw
+ms.reviewer: josaw
 ms.search.scope: Core, Operations, Retail
 ms.search.region: Norway
 ms.search.industry: Retail
 ms.author: epopov
 ms.search.validFrom: 2017-10-31
 ms.dyn365.ops.version: Application update 4
-ms.openlocfilehash: 3a6ac115f2805e94563ae72cda2467a94283b22f
-ms.sourcegitcommit: ffc37f7c2a63bada3055f37856a30424040bc9a3
+ms.openlocfilehash: 5808b4e13f427bba7a4a0db0eab69755ebd36c33
+ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "1577858"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1845656"
 ---
 # <a name="cash-register-functionality-for-norway"></a>Kassefunksjoner for Norge
 

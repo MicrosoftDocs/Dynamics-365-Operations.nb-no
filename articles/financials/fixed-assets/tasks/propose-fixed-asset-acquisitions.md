@@ -1,49 +1,46 @@
 ---
 title: Foreslå anleggsmiddelanskaffelser
-description: Denne fremgangsmåte viser hvordan du anskaffer et anleggsmiddel ved hjelp av anskaffelsesforslaget i anleggsmiddeljournalen.
+description: Dette emnet beskriver hvordan du anskaffer et anleggsmiddel ved hjelp av anskaffelsesforslaget i anleggsmiddeljournalen.
 author: saraschi2
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 07/22/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AssetTable, AssetBook, LedgerJournalTable, LedgerJournalTransAsset, SysQueryForm
 audience: Application User
-ms.reviewer: twheeloc
+ms.reviewer: roschlom
 ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 1891206bb266b126eccfa789b8c8062c9bfa688b
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 4b35b13dc266fd5bccde437526400832d394b9aa
+ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1570886"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1839911"
 ---
 # <a name="propose-fixed-asset-acquisitions"></a>Foreslå anleggsmiddelanskaffelser
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-Denne fremgangsmåte viser hvordan du anskaffer et anleggsmiddel ved hjelp av anskaffelsesforslaget i anleggsmiddeljournalen. Den bruker regnskapsførerrollen og demodataene for den juridiske enheten USMF.
+Dette emnet beskriver hvordan du anskaffer et anleggsmiddel ved hjelp av anskaffelsesforslaget i anleggsmiddeljournalen. Den bruker regnskapsførerrollen og demodataene for den juridiske enheten USMF.
 
-1. Gå til Anleggsmidler > Journaloppføringer > Anleggsmiddeljournal.
-2. Klikk Ny.
-3. Angi eller velg en verdi i Navn-feltet.
-4. Klikk Linjer.
-5. Klikk Forslag.
-6. Klikk Anskaffelsesforslag.
-7. Klikk Filter.
-8. Klikk Tilbakestill for å fjerne de tidligere verdiene.
-9. Velg raden Anleggsmiddelets nummer.
-10. Angi eller velg en verdi i Kriterier-feltet.
-    * Angi de gjenværende vilkårene for anleggsmidlene du vil anskaffe med dette forslaget.  
-11. Klikk OK.
-12. Klikk OK.
-    * Kontroller transaksjonslinjene som er opprettet.  
-    * Bare anleggsmidler med anskaffelsesdato og anskaffelsespris som er angitt i tablået, inkluderes i anskaffelsesforslaget.  
-13. Klikk kategorien Tablåer.
-14. Klikk Poster.
+1. I navigasjonsruten går du til **Moduler > Anleggsmidler > Journaloppføringer > Anleggsmiddeljournal**.
+2. Velg **Ny**.
+3. Angi eller velg en verdi i **Navn**-feltet.
+4. Velg **Linjer** i handlingsruten.
+5. Velg **Forslag**.
+6. Velg **Anskaffelsesforslag**.
+7. Velg **Filter**. Velg **Tilbakestill** for å fjerne de tidligere verdiene.
+8. Velg raden **Anleggsmidlets** nummer.
+9. Angi eller velg en verdi i **Kriterier**-feltet. Angi de gjenværende vilkårene for anleggsmidlene du vil anskaffe med dette forslaget.  
+10. Velg **OK** to ganger for å gå ut av ruten.
+- Kontroller transaksjonslinjene som er opprettet.  
+- Bare anleggsmidler med anskaffelsesdato og anskaffelsespris som er angitt i tablået, inkluderes i anskaffelsesforslaget.  
+11. Velg kategorien **Tablåer** på siden.
+12. Velg **Poster**.
 

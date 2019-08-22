@@ -9,18 +9,18 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User
-ms.reviewer: shylaw
+ms.reviewer: josaw
 ms.search.scope: Operations
 ms.search.region: Global
 ms.author: t-benebo
 ms.search.validFrom: 2018-01-31
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 907d59f850d8d761e2dd4e04bd288a696f00964d
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 550815c5c3fc9a24ec8b67f2a340e0553eef072d
+ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1569200"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1843343"
 ---
 # <a name="trade-allowance-management"></a>Handelsrabattbehandling
 
@@ -61,7 +61,7 @@ En handelsrabattavtale er et belønningsprogram der betal for ytelse monetære b
 
 Midler som er tildelt til handelsrabattavtaler, registreres på **Midler**-siden. Du åpner **Midler**-siden ved å velge **Salg og markedsføring** \> **Handelsrabatter** \> **Midler** \> **Midler**.
 
-![Midler-siden](./media/trade-allowance-management-funds-page.png "Midler-side")
+![Midler-siden](./media/trade-allowance-management-funds-page.png "Midler-siden")
 
 På **Midler**-siden kan du vise detaljene for kampanjemidler.
 

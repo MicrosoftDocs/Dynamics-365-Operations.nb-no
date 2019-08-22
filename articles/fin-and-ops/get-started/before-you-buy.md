@@ -9,19 +9,19 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User, Developer, IT Pro
-ms.reviewer: margoc
+ms.reviewer: sericks
 ms.search.scope: Core, Operations
 ms.custom: 21761
 ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: AX 7.0.0, Operations
-ms.openlocfilehash: dc34ca33d2844eaedfa1734fe6d7c7f2ef4a622d
-ms.sourcegitcommit: 574d4dda83dcab94728a3d35fc53ee7e2b90feb0
+ms.openlocfilehash: f6074906dc77f17d10cc2fb94a4ded7cb8b32f14
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/22/2019
-ms.locfileid: "1595691"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1850957"
 ---
 # <a name="before-you-buy"></a>Før du kjøper
 
@@ -39,7 +39,7 @@ Nå kan du distribuere Microsoft Dynamics 365 for Finance and Operations i skyen
 
 Følgende hensyn må tas når du velger lokal som distribusjonsalternativ:
 
-- Forskriftsmessige behov og samsvarsbehov som ikke er tilgjengelige i [skysertifiseringene](https://explore.dynamics.com/operations/microsoft-dynamics-365-for-operations-certification-priorities)
+- Forskriftsmessige behov og samsvarsbehov som ikke er tilgjengelige i skysertifiseringene
 - Frakoblet forretningsprosess med uregelmessig Internett-tilkobling som kreves for å få tilgang til Microsoft Dynamics Lifecycle Services (LCS) for å administrere programlivssyklusen
 - [Funksjoner som ikke er implementert i lokale distribusjoner nå](features-not-implemented-on-prem.md)
 - [Minimumskrav til infrastruktur](system-requirements-on-prem.md#minimum-infrastructure-requirements)

@@ -3,14 +3,14 @@ title: Oversikt over leverandørfakturaer
 description: Dette emnet inneholder generell informasjon om leverandørfakturaer. Leverandørfakturaer er forespørsler om betaling for produkter og tjenester som er mottatt. Leverandørfakturaer kan representere en faktura for pågående tjenester, eller den kan være basert på bestillinger for bestemte varer og tjenester.
 author: abruer
 manager: AnnBe
-ms.date: 06/11/2019
+ms.date: 07/17/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: VendorInvoiceWorkspace, VendInvoiceInfoListPage
 audience: Application User
-ms.reviewer: sericks
+ms.reviewer: roschlom
 ms.search.scope: Core, Operations
 ms.custom: 13971
 ms.assetid: 0ec4dbc0-2eeb-423b-8592-4b5d37e559d3
@@ -18,17 +18,17 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d02eee989e5bebd1cad0b1392ec19aaa918d9db5
-ms.sourcegitcommit: f9444077022a6c678090d02d0f9d4ec0e54b7ca9
+ms.openlocfilehash: c69291214796847af7169cf261865860998f0d27
+ms.sourcegitcommit: 299e20b59ebefa584ed46a13da3f1a7ff709e43c
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/11/2019
-ms.locfileid: "1625085"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "1863329"
 ---
 # <a name="vendor-invoices-overview"></a>Oversikt over leverandørfakturaer
 
 [!include [banner](../includes/banner.md)]
-
+[!include [banner](../includes/preview-banner.md)]
 
 Dette emnet inneholder generell informasjon om leverandørfakturaer. Leverandørfakturaer er forespørsler om betaling for produkter og tjenester som er mottatt. Leverandørfakturaer kan representere en faktura for pågående tjenester, eller den kan være basert på bestillinger for bestemte varer og tjenester.
 
@@ -90,6 +90,13 @@ Når en leverandørfaktura er i bruk, kan den ikke kan redigeres av en annen bru
 Du kan bruke siden **Gjenopprett leverandørfakturaer** til å gjenopprette eller frigi leverandørfakturaer som har vært i bruk i mer enn fire timer, slik at de kan redigeres. Du kan åpne denne siden fra **Periodisk oppgave**-navigasjonen eller en flis i arbeidsområdet **Leverandørfakturaregistrering**. Når en faktura er gjenopprettet, vil den være tilgjengelige for redigering på siden **Leverandørfaktura**.
 
 Du kan få tilgang til siden **Gjenopprett leverandørfakturaer** bare hvis **Gjenopprett leverandørfakturaer i bruk**-sikkerhetsplikten og -rettigheten er tilordnet til deg. I tillegg må **Tillat gjenoppretting av leverandørfaktura**-parameter på siden **Leverandørparametere** være aktivert.
+
+## <a name="resetting-the-workflow-status-for-vendor-invoices-from-unrecoverable-to-draft"></a>Tilbakestille arbeidsflytstatusen for leverandørfakturaer fra Uopprettelig til Utkast
+
+En arbeidsflytforekomst som er stoppet på grunn av en uopprettelig feil, vil ha arbeidsflytstatusen **Uopprettelig**. Når statusen til en leverandørfakturaarbeidsflyt er **Uopprettelig**, kan du tilbakestille den til **Utkast** ved å velge **Tilbakekall**. Du kan deretter redigere leverandørfakturaen. Denne funksjonen er tilgjengelig hvis parameteren **Tilbakestill utkaststatus for arbeidsflyt for leverandørfaktura** på siden **Funksjonsbehandling** er slått på.
+
+Du kan bruke siden **Arbeidsflytlogg** for å tilbakestille arbeidsflytstatusen til **Utkast**. Du kan åpne denne siden fra **Leverandørfaktura** eller fra **Felles > Forespørsler > Arbeidsflyt**. Hvis du vil tilbakestille arbeidsflytstatusen til **Utkast**, velger du **Tilbakekall**. Du kan også tilbakestille arbeidsflytstatusen til Utkast ved å velge handlingen **Tilbakekall** på siden **Leverandørfaktura** eller **Ventende leverandørfakturaer**. Når arbeidsflytstatusen er tilbakestilt til **Utkast**, blir den tilgjengelig for redigering på siden **Leverandørfaktura**.
+
 
 
 ## <a name="additional-resources"></a>Tilleggsressurser

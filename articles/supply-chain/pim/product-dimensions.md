@@ -3,7 +3,7 @@ title: Produktdimensjoner
 description: Det finnes fire produktdimensjoner – farge, konfigurasjon, størrelse og stil. Du kan kombinere produktdimensjoner i dimensjonsgrupper og tilordne dimensjonsgrupper til produktstandarder. Kombinasjonene av produktdimensjoner bestemmer hvordan produktvarianter defineres.
 author: cvocph
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 08/05/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ccb9d47bf6f081dbcc9590bddd4516cf7385ec23
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 3391679696c0e1dd84840821480ccbfb544829a6
+ms.sourcegitcommit: d0fa8d0140fa81029527edb317623c1a7737c593
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1563580"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "1863042"
 ---
 # <a name="product-dimensions"></a>Produktdimensjoner
 
@@ -35,8 +35,8 @@ ms.locfileid: "1563580"
 Det finnes fire produktdimensjoner – farge, konfigurasjon, størrelse og stil. Du kan kombinere produktdimensjoner i dimensjonsgrupper og tilordne dimensjonsgrupper til produktstandarder. Kombinasjonene av produktdimensjoner bestemmer hvordan produktvarianter defineres.
 
 Produktdimensjoner er egenskaper som brukes til å identifisere en produktvariant. Du kan bruke kombinasjoner av produktdimensjoner til å definere produktvariantene. Du må definere minst én produktdimensjon for en produktstandard for å opprette en produktvariant.
-Produktvarianter
-----------------
+
+## <a name="product-variants"></a>Produktvarianter
 
 Produktvarianter omtales også som varer. En vare er et materielt produkt, som ikke er det samme som en tjeneste. Det er også mulig å definere en produktstandard tjenestetypen. Når du bruker tjenestetypen, kan du angi produktvarianter som omfatter tjenester. Du kan for eksempel angi en produktstandard for konsulentarbeid og produktvarianter for arbeid som utføres av seniorkonsulenter og juniorkonsulenter.
 

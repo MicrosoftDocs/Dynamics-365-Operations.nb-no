@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User, IT Pro
-ms.reviewer: sericks
+ms.reviewer: kfend
 ms.search.scope: Core, Operations
 ms.custom: 106233
 ms.assetid: 517e6a88-e7a1-4398-9971-b22fa83306ba
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 78512e39e82e24f94dae93bbac116e6f07d25438
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 35db2b51274afa6dae4cb5f75b4ba5390b167a49
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1553958"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1849589"
 ---
 # <a name="financial-performance-powerbicom-solution"></a>Finansresultat for PowerBI.com-løsning
 
@@ -34,7 +34,7 @@ ms.locfileid: "1553958"
 Dette emnet beskriver PowerBI.com-løsningen for **finansresultat**. Det beskriver instrumentbordet og rapporter som er inkludert, og gir informasjon om datamodellen og enhetene som brukes til å bygge løsningen.
 
 ## <a name="main-account-setup"></a>Hovedkontooppsett
-Fordi organisasjoner vil at gjeld og omsetningsbeløp skal vises som positive beløp i rapporter, er oppsettet av hovedkontoene viktig. For at disse hovedkontoene skal vises som positive beløp, må hovedkontotypen settes til **Gjeld** eller **Inntekt**. Når du bruker disse kontotypene, vil rapportering via Power BI tilbakeføre tegnene og vise beløpene som positive.
+Fordi organisasjoner vil at gjeld og omsetningsbeløp skal vises som positive beløp i rapporter, er oppsettet av hovedkontoene viktig. For at disse hovedkontoene skal vises som positive beløp, må hovedkontotypen settes til **Gjeld** eller **Inntekt**. Når du bruker disse kontotypene, vil rapportering via Power BI tilbakeføre tegnene og vise beløpene som positive.
 
 ## <a name="dashboard-and-reports-that-are-included-in-the-powerbicom-solution"></a>Instrumentbord og rapporter som er inkludert i PowerBI.com-løsningen
 Instrumentbordet inneholder fliser med oppsummerte data som er basert på underliggende rapporter. Hver flis viser sammendragsinformasjon for inneværende år for alle firmaer i en organisasjon. Her er noen av flisene:
@@ -70,7 +70,7 @@ Hver flis leveres med en tilhørende rapport. Disse rapportene inneholder både 
 | Utgiftsanalyse            | Totale utgifter, faktiske i forhold til budsjetterte totale utgifter etter juridisk enhet, faktiske og budsjetterte totale utgifter etter kvartal, totale utgifter etter kontokategori og driftsutgiftsgrad |
 | Analyse av fakturert inntekt     | Total kundereskontro, total kundereskontro etter juridisk enhet, total kundereskontro etter kvartal og saldoer for kontiene for kundereskontro<blockquote>[!NOTE] Informasjonen inkluderer ikke startsaldoer for kundesfinanskontoene. Den viser summen av nye transaksjoner som er postert til kunder.</blockquote> |
 
-Diagrammer og fliser for alle disse rapportene kan filtreres og festes på instrumentbordet. Hvis du vil ha mer informasjon om hvordan du filtrerer og fester i Power BI, kan du se [Opprette og konfigurere et instrumentbord](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards).
+Diagrammer og fliser for alle disse rapportene kan filtreres og festes på instrumentbordet. Hvis du vil ha mer informasjon om hvordan du filtrerer og fester i Power BI, kan du se [Opprette og konfigurere et instrumentbord](https://powerbi.microsoft.com/guided-learning/powerbi-learning-4-2-create-configure-dashboards).
 
 ## <a name="understanding-the-data-model-and-entities"></a>Forstå datamodellen og enheter
 Følgende enheter ble brukt som grunnlag for PowerBI.com-løsningen **finansresultat**:

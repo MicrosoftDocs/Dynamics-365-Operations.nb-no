@@ -10,7 +10,7 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: FinancialReports
 audience: Application User
-ms.reviewer: shylaw
+ms.reviewer: kfend
 ms.search.scope: Core, Operations
 ms.custom: 58881
 ms.assetid: 0af492df-a84e-450c-8045-78ef1211abaf
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: d6f6e94fd8e7ddf92e89fedfab09ef0684505819
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 318c6edc03153e02c2c4f23b07f33e8d6ebe9737
+ms.sourcegitcommit: 9b4c3fff2f30006b7bb491ef6ffe89d41bcbfa11
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1551846"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "1863730"
 ---
 # <a name="modify-row-definition-cells"></a>Endre celler for raddefinisjon
 
@@ -402,7 +402,7 @@ Cellen **Kobling til finansdimensjoner** inneholder koblinger til de økonomiske
 2. Dobbeltklikk en celle i kolonnen **Kobling til finansdimensjoner**.
 3. Dobbeltklikk en celle under dimensjonsnavnet i dialogboksen **Dimensjoner**.
 4. I dialogboksen for dimensjonen velger du **Enkeltvis eller område**.
-5. I **Fra**-feltet angir du startdimensjonen eller klikker ![Bla gjennom](https://i-technet.sec.s-msft.com/dynimg/IC679490.gif "Bla gjennom") for å søke etter tilgjengelige dimensjoner. Hvis du vil angi et intervall av dimensjoner, kan du angi sluttdimensjonen i **Til**-feltet.
+5. I **Fra**-feltet angir du startdimensjonen eller klikker ![Bla gjennom](media/browse.gif "Bla gjennom") for å søke etter tilgjengelige dimensjoner. Hvis du vil angi et intervall av dimensjoner, kan du angi sluttdimensjonen i **Til**-feltet.
 6. Klikk **OK** for å lukke dialogboksen for dimensjonen. Dialogboksen **Dimensjoner** viser oppdatert dimensjon eller område.
 7. Klikk **OK** for å lukke dialogboksen **Dimensjoner**..
 
@@ -479,7 +479,7 @@ Tabellen nedenfor beskriver feltene i dialogboksen **Dimensjoner**.
 
 | Vare                | Beskrivelse |
 |---------------------|-------------|
-| Enkeltvis eller område | I **Fra**-feltet angir du navnet på en konto eller klikker **Bla gjennom**-knappen ![Bla gjennom](https://i-technet.sec.s-msft.com/dynimg/IC679490.gif "Bla gjennom") for å bla gjennom etter kontoen. Hvis du vil merke et område, kan du angi eller bla gjennom etter en verdi i **Til**-feltet. |
+| Enkeltvis eller område | I **Fra**-feltet angir du navnet på en konto eller klikker **Bla gjennom**-knappen ![Bla gjennom](media/browse.gif "Bla gjennom") for å bla gjennom etter kontoen. Hvis du vil merke et område, kan du angi eller bla gjennom etter en verdi i **Til**-feltet. |
 | Dimensjonsverdisett | I **Navn**-feltet angir du navnet på et dimensjonsverdisett. Hvis du vil opprette, endre, kopiere, eller slette et sett, klikker du **Behandle dimensjonsverdisett**. **Formel**-feltet fylles ut med formelen fra cellen **Kobling til finansdimensjoner** for dette dimensjonsverdisettet i raddefinisjonen. |
 | Totalkontoer   | I **Navn**-feltet angir eller blar du gjennom etter en dimensjon for totalkontoer. **Formel**-feltet fylles ut med formelen i cellen **Kobling til finansdimensjoner** for denne totalkontoen i rapportdefinisjonen. |
 

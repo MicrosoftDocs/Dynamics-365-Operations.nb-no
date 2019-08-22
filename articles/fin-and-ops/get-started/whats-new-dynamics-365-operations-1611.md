@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User, Developer, IT Pro
-ms.reviewer: sericks
+ms.reviewer: josaw
 ms.search.scope: Operations
 ms.custom: 221294
 ms.assetid: 357931ed-f843-4bf5-bc85-0da3de0619ec
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 7e907813323ef6b1c8b83675be75456f5844fa0a
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: b200f6b8a636a5e7c4ee2625226510f538ff023c
+ms.sourcegitcommit: 299e20b59ebefa584ed46a13da3f1a7ff709e43c
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1548038"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "1863499"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-operations-version-1611-november-2016"></a>Hva er nytt eller endret i Dynamics 365 for Operations versjon 1611 (november 2016)
 
@@ -620,7 +620,7 @@ Dette emnet beskriver funksjoner som enten er nye eller endret i Dynamics 365 fo
 | Hva du kan gjøre | Hvorfor dette er viktig |
 |-----------------|-----------------------|
 | Konfigurer ER-rapporter for å sette inn data, i flere formater, fra lager for dokumentbehandling i elektroniske meldinger som genereres. | ER-rapporter kan sette inn data i elektroniske meldinger som genereres, fra lageret for dokumentbehandling. Derfor kan vedleggene i et forretningsdokument legges til elektroniske meldinger som genereres for dokumentet, i samsvar med de lovlige kravene. For øyeblikket kan disse vedleggene legges til i MIME-format i en XML-postmelding som genereres. Vedlegg kan eventuelt legges til i Base64-format i en binær melding som genereres. |
-| Konfigurer ER rapporter til å generere elektroniske dokumenter i Excel-, Microsoft Word- eller PDF-format. | Én konfigurasjon gir ER-rapporter muligheten til å generere elektroniske dokumenter i tre forskjellige formater: OpenXML-regneark (Excel), Word og XML Forms Data Format (XFDF) (PDF). Brukere kan velge et format ved å legge til en formatmal i en ER-rapport som et Microsoft Excel-, Word- eller PDF-dokument. |
+| Konfigurer ER rapporter til å generere elektroniske dokumenter i Excel-, Microsoft Word- eller PDF-format. | Én konfigurasjon gir ER-rapporter muligheten til å generere elektroniske dokumenter i tre forskjellige formater: OpenXML-regneark (Excel), Word og XML Forms Data Format (XFDF) (PDF). Brukere kan velge et format ved å legge til en formatmal i en ER-rapport som et Excel-, Word- eller PDF-dokument. |
 | Konfigurer ER-rapporter til å sette inn data i topp- og bunntekster i elektroniske dokumenter som er generert i OpenXML-regnearkformat, og til å kontrollere sideskift. | ER-rapporter kan skrive inn forretningsdata i topp- og bunntekster, og de kan også styre hvor sideskift oppstår. Rapportene kan derfor støtte statisk topp- og bunndeler for sidene i de elektroniske dokumentene som genereres. De kan også støtte bestemt sideveksling til disse dokumentene, slik at de overholder juridiske krav. |
 | Konfigurer målet for ER-rapporter slik at utdataene sendes som e-post, og slik at forretningsdata og ER-logikk (uttrykk) kan brukes til å angi e-postadressen skal brukes under kjøring. | Da du tidligere konfigurerte et ER-mål, kunne e-postadressen til utdataenes mottaker defineres under utformingen. Du kan nå konfigurere et uttrykk i ER-formatet. Dette uttrykket kan deretter velges i et mål som kilde for e-postadressen for hver formatkonfigurasjon og hver komponent (mappe eller fil) separat. Når du kjører en ER-rapport, kan hver fil som er genereres, derfor sendes til en annen mottaker, og e-postadressen kan defineres basert på ER-logikken og forretningsdataene. |
 | Konfigurer målet for ER-rapporter slik at utdataene sendes til Microsoft SharePoint-mappen som en ny navngitt fil eller en ny versjon av den eksisterende filen, og slik at forretningsdata kan brukes i rammeverket for Microsoft Power BI som et datasett eller en rapport. | Når du konfigurerer ER-rapporter, kan du nå lett (uten koding) forberede de ønskede forretningsdataene slik at de kan brukes av Power BI-rammeverket. Når du kjører disse ER-rapportene, kan du formidle riktige forretningsdata og/eller Excel-rapporter som er tilgjengelige, til Power BI-rammeverket. Hvis du planlegger at rapporten kjøres i gjentakende modus, kan du opprette den planlagte sendingen av forretningsdata fra Dynamics 365 for Operations til Power BI for å støtte oppdateringstidsplanen Power BI-baserte rapporter. |
@@ -784,7 +784,7 @@ Butikksystemet er et distribusjonsvalg for forhandlere som bidrar til å gjennom
 - Støtter scenarier på tvers av terminaler der det mangler HQ-tilkobling.
 - Retail Modern POS og Cloud POS kommuniserer alltid med detaljhandelsserveren i butikken.
 - Støtter Retail Modern POS og Cloud POS der det ikke finnes HQ-tilkobling.
-- Støtter en spesifikk frakoblet database for Retail Modern POS (isolert til hver forekomst av Retail Modern POS) der det mangler HQ-tilkobling.
+- Støtter en spesifikk frakoblet database for Retail Modern POS (isolert til hver Retail Modern POS-forekomst) der det mangler HQ-tilkobling.
 - Godkjenning er basert på tjeneste-til-tjeneste bare for butikksystemet.
 - Servicebesøk i sanntid støttes ikke uten en Internett-tilkobling.
 - Direkte databasetilkobling for Retail Modern POS til kanaldatabasen støttes ikke.
@@ -818,7 +818,7 @@ For øyeblikket er Retail Modern POS bare tilgjengelig som et Windows 8.1-progra
 | Som leverandør kan du få informasjon om hvor mye av forsendelseslageret som overføres til kunden. | Når du fakturerer en kunde, krever leverandøren informasjon om råvarene som ble kjøpt fra forsendelseslageret og datoen for innkjøpet. Leverandøren kan også overvåke lagerbeholdningen hos kunden ved hjelp av grensesnittet for leverandørsamarbeid. |
 | Flytt leverandøreid lager ved hjelp av en overføringsjournal. | Hvis du vil spore den fysiske plasseringen av leverandøreid lager, må du kunne registrere plasseringen i systemet. Bruk en overføringsjournal til å registrere den fysiske flyttingen av lageret, for eksempel flytting fra ett sted på et lager til et annet sted i det lageret. |
 | Juster leverandøreid lager ved hjelp av en tellingsjournal. | Det er viktig at du beholder den systemets lagerbeholdningen synkronisert med den faktiske fysiske beholdningen. Det leverandøreide lageret kan justeres inn og ut ved hjelp av tellingsprosesser, for eksempel justering av antall og prosesser for journaltelling. |
-| Få mer informasjon om støtte for forsendelse i Dynamics 365 for Operations | Hvis du vil ha mer informasjon om støtte for forsendelsesprosesser, kan du se [Forsendelse](../../supply-chain/inventory/consignment.md), [Definere forsendelse](../../supply-chain/inventory/set-up-consignment.md), [Opprette en etterfyllingsordre for forsendelse (oppgaveveiledning)](../../supply-chain/inventory/tasks/create-consignment-replenishment-order.md) og [Endre eierskap for forsendelseslager basert på produksjonsbehov (oppgaveveiledning)](../../supply-chain/inventory/tasks/change-ownership-consignment.md). |
+| Få mer informasjon om støtte for forsendelse i Dynamics 365 for Operations | Hvis du vil ha mer informasjon om støtte for forsendelsesprosesser, kan du se [Forsendelse](../../supply-chain/inventory/consignment.md), [Definere forsendelse](../../supply-chain/inventory/set-up-consignment.md), [Opprette en etterfyllingsordre for forsendelse (oppgaveveiledning)](../../supply-chain/inventory/tasks/create-consignment-replenishment-order.md) og [Endre eierskap for forsendelseslager basert på produksjonsbehov (oppgaveveiledning)](../../supply-chain/inventory/tasks/change-ownership-consignment.md). |
 
 ### <a name="vendor-collaboration-previously-known-as-the-vendor-portal"></a>Leverandørsamarbeid (tidligere kjent som leverandørportalen)
 

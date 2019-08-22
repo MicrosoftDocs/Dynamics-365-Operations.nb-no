@@ -1,6 +1,6 @@
 ---
-title: " Opprette, beregne og postere et utdrag for en detaljhandel"
-description: Denne prosedyren hjelper deg gjennom de manuelle trinnene for å opprette, beregne og postere et utdrag for en butikk.
+title: Opprette, beregne og postere utdrag for en detaljhandel
+description: Dette emnet beskriver de manuelle trinnene for å opprette, beregne og postere et utdrag for en butikk.
 author: jashanno
 manager: AnnBe
 ms.date: 08/29/2018
@@ -17,34 +17,34 @@ ms.search.industry: Retail
 ms.author: jashanno
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 9ea30e7e008bfcce77a7ee2f4d7d01a6cf1ababc
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 693d1821779d5f7af95b900daa3bb7a2c38a6354
+ms.sourcegitcommit: cb63259ad8fa5649ff12bc4a7f195bd1e40bd968
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1548330"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "1755529"
 ---
-# <a name="create-calculate-and-post-a-statement-for-a-retail-store"></a> Opprette, beregne og postere et utdrag for en detaljhandel
+# <a name="create-calculate-and-post-statements-for-a-retail-store"></a>Opprette, beregne og postere utdrag for en detaljhandel
 
 [!include[task guide banner](../includes/task-guide-banner.md)]
 
-Denne prosedyren hjelper deg gjennom de manuelle trinnene for å opprette, beregne og postere et utdrag for en butikk. Det finnes også satsvise jobber som kan konfigureres for de samme oppgavene. Du finner fremgangsmåten for å konfigurere og kjøre de satsvise jobbene i andre emner. Hvis du vil fullføre denne prosedyren, må du ha transaksjoner som ble fullført i POS, og deretter overført til Dynamics AX. Denne registreringen bruker firmaet USRT i demonstrasjonsdataene. Denne fremgangsmåten kan referere til Microsoft Dynamics AX. Legg merke til at Dynamics AX nå kalles Microsoft Dynamics 365 for Operations.
+Dette emnet beskriver de manuelle trinnene for å opprette, beregne og postere et utdrag for en butikk. Det finnes også satsvise jobber som kan konfigureres for de samme oppgavene. Du finner fremgangsmåten for å konfigurere og kjøre de satsvise jobbene i andre emner. Hvis du vil fullføre denne prosedyren, må du ha transaksjoner som ble fullført i POS, og deretter overført til Dynamics 365 for Finance and Operations. Denne registreringen bruker firmaet USRT i demonstrasjonsdataene.
 
-1. Gå til Alle arbeidsområder > .. > Finans for detaljhandelsbutikk.
-2. Klikk Nytt utdrag.
-3. Klikk rullegardinknappen i feltet Butikknummer for å åpne oppslaget.
-4. Klikk koblingen i den valgte raden i listen.
-5. Klikk OK.
-    * Oppsett-gruppen inneholder innstillingene som styrer hvilke transaksjoner som inkluderes i utdraget, og hvordan de grupperes i utdragslinjene. Du kan åpne Oppsett-gruppen og endre disse innstillingene, eller du kan bruke standardinnstillingene.  
-    * Feltet Utdragsmetode angir hvordan utdragslinjene skal grupperes.  
-    * Velg et stabsmedlem eller en kasse hvis du vil beregne et utdrag bare for bestemte stabsmedlemmer eller kasser.  
-6. Velg et alternativ i Avslutningsmetode-feltet.
-7. Klikk Beregn utdrag.
-8. Klikk Ja.
-    * Når du har beregnet utdraget, skal det være opprettet linjer med totalbeløp for hver betalingsmåte og utdragsmetode som ble brukt.  
-    * Angi et opptelt beløp i hver linje hvis den må angis eller oppdateres. Telt opp-feltet fylles ut med beløp fra kasseoppgjør i POS.  
-9. Klikk Poster utdrag.
-10. Klikk Lukk.
-11. Gå til Detaljhandel og handel > Kanaler > Finans for detaljhandelsbutikk.
-12. Klikk kategorien Posterte utdrag.
+1. Velg **Finans for detaljhandelsbutikk** fra hjemmesiden.
+2. Velg **Nytt utdrag**.
+3. I **Butikknummer**-feltet velger du et alternativ fra rullegardinlisten.
+4. Velg **OK**.
+5. **Oppsett**-gruppen inneholder innstillingene som styrer hvilke transaksjoner som inkluderes i utdraget, og hvordan de grupperes i utdragslinjene. Du kan åpne **Oppsett**-gruppen og endre disse innstillingene, eller du kan bruke standardinnstillingene.  
+    - Feltet **Utdragsmetode** angir hvordan utdragslinjene skal grupperes.  
+    - Velg et stabsmedlem eller en kasse i feltet **Stab/kasse** hvis du vil beregne et utdrag bare for bestemte stabsmedlemmer eller kasser.  
+6. Velg et alternativ i **Avslutningsmetode**-feltet.
+7. Velg **Beregn utdrag** fra handlingsruten.
+8. Velg **Ja**.
+    - Når du har beregnet utdraget, skal det være opprettet linjer med totalbeløp for hver betalingsmåte og utdragsmetode som ble brukt.  
+    - Angi et opptelt beløp i hver linje hvis den må angis eller oppdateres. Telt opp-feltet fylles ut med beløp fra kasseoppgjør i POS.  
+9. Velg **Poster utdrag** fra handlingsruten.
+10. Velg **Lukk**.
+11. Lukk ruten.
+12. Velg **Finans for detaljhandelsbutikk** på hjemmesiden.
+13. Velg kategorien **Posterte utdrag**.
 

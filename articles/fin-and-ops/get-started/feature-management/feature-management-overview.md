@@ -3,7 +3,7 @@ title: Oversikt over funksjonsbehandling
 description: Dette emnet beskriver funksjonen Funksjonsbehandling og hvordan du kan bruke den.
 author: mikefalkner
 manager: AnnBe
-ms.date: 06/14/2019
+ms.date: 07/17/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,16 +18,17 @@ ms.search.validFrom:
 - month/year of release that feature was introduced in
 - in format yyyy-mm-dd
 ms.dyn365.ops.version: 10.0.2
-ms.openlocfilehash: d6aea8651c00b975cf158492e38bb147e908bc56
-ms.sourcegitcommit: 672c94704e9a2b0ec7ee3c111d4ceb1bb8597969
+ms.openlocfilehash: 21eaf2fdcadf8fe9f91438a97a88cc3bddab8286
+ms.sourcegitcommit: d0fa8d0140fa81029527edb317623c1a7737c593
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "1632059"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "1862944"
 ---
 # <a name="feature-management-overview"></a>Oversikt over funksjonsbehandling
 
 [!include [banner](../../includes/banner.md)]
+[!include [banner](../../includes/preview-banner.md)]
 
 Funksjoner legges til og oppdateres i hver versjon av Microsoft Dynamics 365 for Finance and Operations. Funksjonsbehandling-opplevelsen gir et arbeidsområde der du kan vise en liste over funksjoner som er levert i hver versjon. Nye funksjoner er deaktivert som standard. Du kan bruke arbeidsområdet til å aktivere dem og vise dokumentasjonen for dem.
 
@@ -38,7 +39,7 @@ Du kan åpne arbeidsområdet **Funksjonsbehandling** ved å velge den aktuelle f
 Funksjonslisten inneholder følgende informasjon:
 
 - **Funksjonsnavn** – En beskrivelse av funksjonen som ble lagt til.
-- **Statusen Aktivert** – Et symbol angir om en funksjon er aktivert (hake), ikke er aktivert (tom), er planlagt aktivert (klokke) eller er obligatorisk aktivert (lås). Innstillingen som vises her, brukes for alle juridiske enheter. Legg merke til at selv om en funksjon er aktivert, kontrolleres den fortsatt av sikkerhet. Funksjonen vil derfor bare være tilgjengelig for brukere som har tilgang til den, basert på sikkerhetsrollen deres. Den vil også bare være tilgjengelig i juridiske enheter som brukeren har tilgang til.
+- **Statusen Aktivert** – Et symbol angir om en funksjon er aktivert (hake), ikke er aktivert (tom), er planlagt aktivert (klokke) eller er obligatorisk aktivert (lås), trenger tilsyn før du aktiverer den (advarsel) eller kan ikke aktiveres (X). Innstillingen som vises, brukes for alle juridiske enheter. Legg merke til at selv om en funksjon er aktivert, kontrolleres den fortsatt av sikkerhet. Funksjonen vil derfor bare være tilgjengelig for brukere som har tilgang til den, basert på sikkerhetsrollen deres. Den vil også bare være tilgjengelig i juridiske enheter som brukeren har tilgang til.
 - **Aktiveringsdato** – Datoen da funksjonen ble aktivert eller planlegges å aktiveres.
 - **Funksjon lagt til** – Datoen da funksjonen ble lagt til i miljøet ditt. Denne datoen angis automatisk når du oppdaterer miljøet under de månedlige versjonssyklusene.
 - **Modul** – Modulen som påvirkes av den nye funksjonen.
@@ -59,6 +60,10 @@ Hvis en funksjon ikke er aktivert, vises en **Aktiver nå**-knapp i detaljruten.
 - Velg funksjonen du vil aktivere, og velg deretter **Aktiver nå** i detaljruten. Funksjonen er slått på.
 
 Enkelte funksjoner kan ikke slås av etter at du har aktivert dem. Hvis funksjonen du prøver å aktivere, ikke kan slås av, får du en advarsel. På dette stadiet kan du velge **Avbryt** for å avbryte operasjonen og la funksjonen være deaktivert. Hvis du imidlertid velger **Aktiver** og aktiverer funksjonen, kan du ikke deaktivere den senere.
+
+Noen funksjoner viser en melding som inneholder tilleggsinformasjon, før du slår dem på. Disse funksjonene indikeres av et gult advarselssymbol. Du bør lese tilleggsinformasjonen nøye for å få en bedre forståelse av hva som vil skje når funksjonen er aktivert. Du kan imidlertid fortsatt velge **Aktiver** for å aktivere funksjonen.
+
+Noen funksjoner vil vise en melding om at funksjonen ikke kan aktiveres før en handling er utført. Disse funksjonene indikeres av et rødt X-symbol. Du må utføre handlingene som er beskrevet i beskrivelsen, før funksjonen aktiveres. Hvis du for eksempel ikke kan bruke en funksjon før en konfigurasjonsnøkkel er deaktivert, må du deaktivere konfigurasjonsnøkkelen først og deretter gå tilbake til funksjonsbehandling for å aktivere funksjonen.
 
 Når en funksjon er aktivert, vises en melding under **Finn ut mer**-koblingen i detaljruten. Denne meldingen angir enten at funksjonen ble aktivert eller den fremtidige datoen når funksjonen er planlagt å bli aktivert. Den vises hver gang du velger funksjonen i funksjonslisten.
 
@@ -84,12 +89,28 @@ Når en funksjon deaktiveres, vises en melding under **Finn ut mer**-koblingen i
 
 Noen ganger forekommer en kritisk funksjon som må aktiveres automatisk når du gjør en oppdatering. Disse funksjonene aktiveres automatisk på datoen som er angitt i feltet **Aktiver dato**. For disse funksjonene vises en melding under **Finn ut mer**-koblingen i detaljruten. Denne meldingen angir enten at funksjonen ble aktivert eller den fremtidige datoen når funksjonen blir aktivert. Den vises hver gang du velger funksjonen i funksjonslisten.
 
+## <a name="enable-all-features"></a>Aktiver alle funksjoner
+
+Som standard deaktiveres alle funksjoner som legges til i miljøet. Du kan aktivere alle funksjonene ved å velge **Aktiver alle**-knappen. 
+
+Når du velger **Aktiver alle**, vises et alternativ der du må oppgi følgende informasjon:
+- En liste over alle funksjoner som krever bekreftelse før de kan aktiveres. Hvis du vil aktivere funksjonene i listen, velger du **Ja** for knappen **Aktiver funksjoner som krever bekreftelse**.
+- En liste over alle funksjoner som ikke kan aktiveres, vises. Disse funksjonene vil ikke bli aktivert.
+
+Alle funksjoner som kan aktiveres, aktiveres. Hvis en funksjon allerede er planlagt aktivert i fremtiden, vil ikke tidsplanen endres. 
+
 ## <a name="turn-on-all-features-automatically"></a>Aktivere alle funksjoner automatisk
 
 Som standard deaktiveres alle funksjoner som legges til i miljøet, med mindre de er obligatoriske funksjoner. Hvis du vil aktivere alle nye funksjoner automatisk, kan du imidlertid bruke rullegardinlisten under arbeidsområdetittelen til å endre hva som skjer når nye funksjoner legges til.
 
 - Velg **Alle nye funksjonene aktiveres som standard** for å slå på alle nye funksjoner automatisk når de legges til i ditt miljø.
 - Velg **Alle nye funksjonene deaktiveres som standard** for å slå av alle nye funksjoner automatisk når de legges til i ditt miljø.
+
+Når du aktiverer alle funksjonene automatisk, vil dette aktivere alle funksjonene som vil bli aktivert når du klikker på **Aktiver alle**-knappen. Det vil ikke aktivere funksjonene som krever bekreftelse eller funksjoner som ikke kan aktiveres før en handling er utført.
+
+## <a name="check-for-updates"></a>Se etter oppdateringer
+
+Funksjoner legges til i miljøet etter hver oppdatering. Imidlertid du kan manuelt sjekke for oppdateringer ved å klikke på **Se etter oppdateringer**-knappen. Alle funksjoner som ble lagt til systemet etter oppdateringen vil bli lagt til i listen over funksjoner. For eksempel, hvis en ny funksjon er aktivert etter en utgivelse, så kan du se etter oppdateringer og funksjonen vil bli lagt til i listen.
 
 ## <a name="assigning-roles"></a>Tilordne roller
 

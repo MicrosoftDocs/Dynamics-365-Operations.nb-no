@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 01474a82e860c6f51b316cb683cd44fb9bf2a6bc
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 85cb5c5618346f1e5132f818911be21df86fbfcb
+ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1554996"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "1741116"
 ---
 # <a name="open-entity-data-in-excel-and-update-it-by-using-the-excel-add-in"></a>Åpne enhetsdata i Excel og oppdatere dataene ved hjelp av Excel-tillegget
 
@@ -60,7 +60,7 @@ Excel-tillegg leser automatisk dataene for enheten du valgte. Legg merke til at 
 
 6. Velg **OK**, og velg deretter **Ja** for å bekrefte endringen. Excel-tillegget startes på nytt og laster inn metadata.
 
-    **Utforming**-knappen er nå tilgjengelig. Hvis Excel-tillegget har en **Laste inn appleter**-knapp, er du sannsynligvis ikke logget på som riktig bruker. Hvis du vil ha mer informasjon, kan du se "Laste inn appleter-knappen vises" i delen [Feilsøking](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/office-integration/use-excel-add-in#troubleshooting) i dette emnet.
+    **Utforming**-knappen er nå tilgjengelig. Hvis Excel-tillegget har en **Laste inn appleter**-knapp, er du sannsynligvis ikke logget på som riktig bruker. Hvis du vil ha mer informasjon, kan du se "Laste inn appleter-knappen vises" i delen [Feilsøking](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/office-integration/use-excel-add-in#troubleshooting) i dette emnet.
 
 7. Velg **Utforming**. Excel-tillegget henter metadata for enhet.
 8. Velg **Legg til tabell**. Det vises en liste over enheter. Enhetene vises i formatet "Navn – Etikett".

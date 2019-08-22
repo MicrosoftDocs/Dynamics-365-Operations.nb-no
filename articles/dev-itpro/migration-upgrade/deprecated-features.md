@@ -3,7 +3,7 @@ title: Funksjoner som er fjernet eller avskrevet
 description: Dette emnet beskriver funksjoner som er fjernet eller som er planlagt for fjerning.
 author: sericks007
 manager: AnnBe
-ms.date: 06/10/2019
+ms.date: 07/30/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: dffe6e41ef99ca7e5ca8f9a67b26b69151026f35
-ms.sourcegitcommit: a237fc58ddb94ff798fac70feaf1431e00080489
+ms.openlocfilehash: 0c8cc578ce2f8928fcdbe0210c9151e8979bc2e9
+ms.sourcegitcommit: 299e20b59ebefa584ed46a13da3f1a7ff709e43c
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "1624913"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "1863389"
 ---
 # <a name="removed-or-deprecated-features"></a>Fjernede eller avskrevne funksjoner
 
@@ -40,10 +40,32 @@ Denne listen er ment å hjelpe deg med å vurdere disse fjerningene og avskrivni
 
 > Detaljert informasjon om objekter i Finance and Operations finnes i [Tekniske referanserapporter](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep). Du kan sammenligne de ulike versjonene av disse rapportene for å lære om objekter som er endret eller fjernet i hver versjon av Finance and Operations.
 
-## <a name="dynamics-365-for-finance-and-operations-1004-with-platform-update-28"></a>Dynamics 365 for Finance and Operations 10.0.4 med Platform update 28
+## <a name="dynamics-365-for-finance-and-operations-1005-with-platform-update-29"></a>Dynamics 365 for Finance and Operations 10.0.5 med Platform update 29
 
 > [!IMPORTANT]
-> Dynamics 365 for Finance and Operations 10.0.4 med Platform update 28 er tilgjengelig for angitte brukere som en del av en forhåndsversjon. Innholdet og funksjonaliteten kan bli endret. Hvis du vil ha mer informasjon om forhåndsversjoner, kan du se [Tilgjengelighet av serviceoppdatering](../../fin-and-ops/get-started/public-preview-releases.md).
+> Dynamics 365 for Finance and Operations 10.0.5 med Platform update 29 er tilgjengelig for angitte brukere som en del av en forhåndsversjon. Innholdet og funksjonaliteten kan bli endret. Hvis du vil ha mer informasjon om forhåndsversjoner, kan du se [Tilgjengelighet av serviceoppdatering](../../fin-and-ops/get-started/public-preview-releases.md).
+
+### <a name="us-payroll-tax-updates"></a>Oppdateringer om arbeidsgiveravgift i USA
+
+|   |  |
+|------------|--------------------|
+| **Årsak til avskrivning/fjerning** | Vi trekker tilbake skatteoppdateringer for den amerikanske lønnsfunksjonaliteten på grunn av lav bruk og forbedret funksjonalitet som nå tilbys via strategiske integrasjoner.  |
+| **Erstattet med en annen funksjon?**   | Ja |
+| **Berørte produktområder**         | Lønn |
+| **Distribusjonsalternativ**              | Alle |
+| **Status**                         | Utgått: Innen 1. oktober 2021 planlegger vi å ikke lenger gi skatteoppdateringer til amerikanske lønnskunder. Funksjonaliteten vil forbli i produktet, men forbedringene vil ikke lenger holde funksjonaliteten oppdatert og eventuelle produktfeil vil bli evaluert på et sak-til-sak grunnlag. Hvis du vil ha mer informasjon, se [Skatteoppdateringer avsluttes for lønnsfunksjonen i USA i Microsoft Dynamics 365 for Finance and Operations](https://aka.ms/financepayrollfaq). |
+
+
+### <a name="data-management-staging-clean-up"></a>Opprydding av oppsamling i Databehandling
+|   |  |
+|------------|--------------------|
+| **Årsak til avskrivning/fjerning** | Oppfyller ikke kjernekravene som kreves for planlegging av periodisk opprydding. |
+| **Erstattet med en annen funksjon?**   | Ja, oppryddingsfunksjonen for jobblogg legges til for å oppfylle scenarioene helhetlig. |
+| **Berørte produktområder**         | Databehandling |
+| **Distribusjonsalternativ**              | Alle  |
+| **Status**                         | Avskrevet: Måltidsrammen for funksjonaliteten som skal fjernes, er desember 2020. |
+
+## <a name="dynamics-365-for-finance-and-operations-1004-with-platform-update-28"></a>Dynamics 365 for Finance and Operations 10.0.4 med Platform update 28
 
 ### <a name="france-fec-accounting-data-export-in-xml"></a>Frankrike: dataeksport til FEC-regnskap i XML
 
@@ -1235,7 +1257,7 @@ Sites Services lar deg bygge webområder som utvider forretningsprosesser til In
 
 ### <a name="virtual-company-accounts"></a>Virtuelle firmakontoer
 
-Virtuelle firmaer-funksjonen støttes ikke lenger i Dynamics AX. Virtuelle firmaer-funksjonen lar brukere definere tabeller som kan deles av et sett med firmaer. Hvis du vil ha en beskrivelse av funksjonen, kan du se [Firmakontoer og virtuelle firmakontoer](https://msdn.microsoft.com/en-us/library/aa834382(v=ax.10).aspx). Funksjonen fungerer ved å gruppere tabeller i samlinger som tilordnes til virtuelle firmaer, som er grupper av eksisterende "virkelige" firmaer. Spørringer opprettes slik at alle selskaper i det virtuelle firmaet kan få tilgang til dataene i tabellene til de tilknyttede tabellsamlingene.
+Virtuelle firmaer-funksjonen støttes ikke lenger i Dynamics AX. Virtuelle firmaer-funksjonen lar brukere definere tabeller som kan deles av et sett med firmaer. Hvis du vil ha en beskrivelse av funksjonen, kan du se [Firmakontoer og virtuelle firmakontoer](https://msdn.microsoft.com/library/aa834382(v=ax.10).aspx). Funksjonen fungerer ved å gruppere tabeller i samlinger som tilordnes til virtuelle firmaer, som er grupper av eksisterende "virkelige" firmaer. Spørringer opprettes slik at alle selskaper i det virtuelle firmaet kan få tilgang til dataene i tabellene til de tilknyttede tabellsamlingene.
 
 |   |  | 
 |------------|--------------------|

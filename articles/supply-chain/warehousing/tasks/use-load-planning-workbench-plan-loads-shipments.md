@@ -1,9 +1,9 @@
 ---
 title: Planlegge laster og leveringer ved hjelp av arbeidsområdet for lastplanlegging
-description: Denne fremgangsmåten viser hvordan du bruker arbeidsområdet for lastplanlegging til å opprette en last for en salgsordre.
+description: Dette emnet viser hvordan du bruker arbeidsområdet for lastplanlegging til å opprette en last for en salgsordre.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 11/11/2016
+ms.date: 07/08/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,53 +16,47 @@ ms.search.industry: Distribution
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1927cff48beb30f934bd066c32ab48dfb9d06f74
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: c5e20eef8aa748bb64c6c14dd7e1d92ccf6592e0
+ms.sourcegitcommit: 81e6eaa2178fda7f7d086ad978f4c891bc4ec10a
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1564808"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "1739071"
 ---
 # <a name="plan-loads-and-shipments-using-the-load-planning-workbench"></a>Planlegge laster og leveringer ved hjelp av arbeidsområdet for lastplanlegging
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-Denne fremgangsmåten viser hvordan du bruker arbeidsområdet for lastplanlegging til å opprette en last for en salgsordre. Som en forutsetning skal vi først opprette salgsordren. Denne prosedyren er en del av det daglige arbeidet for transportkoordinator. Demonstrasjonsdatafirmaet USMF brukes til å opprette denne fremgangsmåten.
+Dette emnet viser hvordan du bruker arbeidsområdet for lastplanlegging til å opprette en last for en salgsordre. Som en forutsetning skal vi først opprette salgsordren. Denne prosedyren er en del av det daglige arbeidet for transportkoordinator. Demonstrasjonsdatafirmaet USMF brukes til å opprette denne fremgangsmåten.
 
 
 ## <a name="create-a-sales-order"></a>Opprette en salgsordre
-1. Gå til Kunder > Ordrer > Alle salgsordrer.
-2. Klikk Ny.
-3. Klikk rullegardinknappen i Kundekonto-feltet for å åpne oppslaget.
-4. Velg konto US-004.
-5. Klikk OK.
-6. Klikk rullegardinknappen i Varenummer-feltet for å åpne oppslaget.
-7. Velg vare A0001.
-    * A0001 er aktivert for transportstyring.  
-8. Klikk koblingen i den valgte raden i listen.
-9. Angi et tall i feltet Antall.
-10. Skriv inn 24 i Lager-feltet.
-    * I dette eksemplet velger du lager 24. Dette lageret er aktivert for transportstyring og avansert lagerstyring.  
-11. Klikk Lagre.
+1. Gå til **Navigasjonsrute > Moduler > Kunder > Ordrer > Alle salgsordrer**.
+2. Velg **Ny**.
+3. Klikk på rullegardinknappen i **Kundekonto**-feltet for å åpne oppslaget.
+4. Velg konto **US-004**.
+5. Velg **OK**.
+6. Klikk på rullegardinknappen i **Varenummer**-feltet for å åpne oppslaget.
+7. Velg vare **A0001**. **A0001** er aktivert for transportstyring.  
+8. Klikk på rullegardinknappen i feltet **Område** for å velge et element.
+9. Angi et tall i **Antall**-feltet.
+10. I **Lager**-feltet skriver du inn 24 for dette eksemplet. Dette lageret er aktivert for transportstyring og avansert lagerstyring.  
+11. Velg **Lagre**.
 12. Lukk siden.
 
 ## <a name="create-a-new-load"></a>Opprette en ny last
-1. Gå til Transportstyring > Planlegging > Arbeidsområde for lastplanlegging.
-2. Klikk kategorien Salgslinjer.
-    * Nå vil du bygge belastningen for salgsordren som du nettopp opprettet. Belastninger kan bygges basert på tilbud og etterspørsel fra bestillinger, salgsordrer og overføringsordrer.  
-3. Klikk Forsyning og behov i handlingsruten.
-4. Klikk Til ny belastning.
-5. Klikk rullegardinknappen i feltet Lastmal-ID for å åpne oppslaget.
-    * Lastmalen angir maksimale mål for vekt og volum for hele belastningen. Lastmalen kan for eksempel representere størrelsen på en container eller lastebil.  
-6. Klikk koblingen i den valgte raden i listen.
-7. Klikk OK.
+1. Gå til **Navigasjonsrute > Moduler > Transportatstyring > Planlegging > Arbeidsområde for lastplanlegging**.
+2. Velg kategorien **Salgslinjer**. Nå vil du bygge belastningen for salgsordren som du nettopp opprettet. Belastninger kan bygges basert på tilbud og etterspørsel fra bestillinger, salgsordrer og overføringsordrer.  
+3. Velg **Forsyning og behov** i handlingsruten.
+4. Velg **Til ny belastning**.
+5. Klikk rullegardinknappen i feltet **Lastmal-ID** for å åpne oppslaget. Lastmalen angir maksimale mål for vekt og volum for hele belastningen. Lastmalen kan for eksempel representere størrelsen på en container eller lastebil. Velg en vare.
+6. Velg **OK**.
 
 ## <a name="rate-and-route-the-load"></a>Vurdere og rute lasten
-1. Klikk Vurdering og ruting.
-2. Klikk Arbeidsområde for vurderingsrute.
-3. Klikk Vurder butikk.
+1. Velg **Vurdering og ruting**.
+2. Velg **Arbeidsområde for vurderingsrute**.
+3. Velg **Vurder butikk**.
 4. Finn og velg ønsket post i listen.
-5. Velg Tilordne.
+5. Velg **Tilordne**.
 6. Lukk siden.
-7. Lukk siden.
 
