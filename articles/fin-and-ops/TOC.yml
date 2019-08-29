@@ -1,20 +1,23 @@
 - name: Dynamics 365 for Finance and Operations
-  href: index.md
   items:
+    - name: Dokumentasjon for Dynamics 365 for Finance and Operations
+      href: index.md
     - name: Komme i gang
       items:
         - name: Før du kjøper
-          href: get-started/before-you-buy.md
           items:
+            - name: Startside for før du kjøper
+              href: get-started/before-you-buy.md
             - name: Registrere deg for forhåndsvisningsabonnement
               href: ../dev-itpro/dev-tools/sign-up-preview-subscription.md?toc=/fin-and-ops/toc.json
             - name: Distribuere et demomiljø
               href: ../dev-itpro/deployment/deploy-demo-environment.md?toc=/fin-and-ops/toc.json
             - name: Sammenligning av skyfunksjoner og lokale funksjoner
               href: get-started/cloud-prem-comparison.md
-            - name: Distribusjonsalternativer
-              href: ../dev-itpro/deployment/choose-deployment-type.md?toc=/fin-and-ops/toc.json
+            - name: Distribusjonshensyn
               items:
+                - name: Distribusjonsalternativer
+                  href: ../dev-itpro/deployment/choose-deployment-type.md?toc=/fin-and-ops/toc.json
                 - name: Skydistribusjon
                   href: ../dev-itpro/deployment/cloud-deployment-overview.md?toc=/fin-and-ops/toc.json
                 - name: Systemkrav for skydistribusjoner
@@ -35,9 +38,10 @@
               items:
                 - name: Kjøpe Finance and Operations (on-premises)
                   href: get-started/purchase-on-premises.md
-        - name: Hva er nytt eller endret?
-          href: get-started/whats-new-changed.md
+        - name: Hva er nytt eller endret
           items:
+            - name: Startside for Hva er nytt eller endret
+              href: get-started/whats-new-changed.md
             - name: Slutten av vanlig støtte for Microsoft Dynamics AX 2009 og 2012
               href: get-started/mainstream-support-ax-2009-2012.md
             - name: Funksjoner som er fjernet eller avskrevet
@@ -140,6 +144,8 @@
                   href: get-started/new-task-guides-available-february-2016.md
         - name: Utforske brukergrensesnittet
           items:
+            - name: Elementer i brukergrensesnitt
+              href: get-started/user-interface-elements.md
             - name: Tilgjengelighetsfunksjoner
               href: get-started/accessibility-features.md
             - name: Oversikt over funksjonsbehandling
@@ -186,9 +192,9 @@
               href: get-started/help-custom.md
             - name: Vise og eksportere feltbeskrivelser
               href: get-started/view-export-field-descriptions.md
-            - name: Oppgaveveiledninger og oppgaveopptaker
+            - name: Oppgaveveiledninger og oppgaveregistrering
               items:
-                - name: Oppgaveopptaker
+                - name: Oppgaveregistrering
                   href: ../dev-itpro/user-interface/task-recorder.md?toc=/fin-and-ops/toc.json
                 - name: Opprette dokumentasjon eller opplæring
                   href: ../dev-itpro/user-interface/task-recorder-training-docs.md?toc=/fin-and-ops/toc.json
@@ -197,8 +203,9 @@
         - name: Videoer for Finance and Operations
           href: get-started/videos.md
     - name: Implementering av livssyklus for ressurs
-      href: imp-lifecycle/implementation-lifecycle.md
       items:
+        - name: Startside for implementering av livssyklus for ressurs
+          href: imp-lifecycle/implementation-lifecycle.md
         - name: Arkitektur for Finance and Operations
           href: imp-lifecycle/architecture-overview.md
         - name: Microsoft FastTrack for Finance and Operations
@@ -224,8 +231,9 @@
         - name: Flere LCS-prosjekter og -produksjonsmiljøer på én Azure AD-leier
           href: get-started/implement-multiple-projects-aad-tenant.md
     - name: Oppdatering av én versjonstjeneste
-      href: ../dev-itpro/lifecycle-services/oneversion-overview.md
       items:
+        - name: Oversikt over oppdatering av én versjonstjeneste
+          href: ../dev-itpro/lifecycle-services/oneversion-overview.md
         - name: Vanlige spørsmål om oppdatering av én versjonstjeneste
           href: get-started/one-version.md
         - name: Policy for programvarelivssyklus – sky
@@ -246,17 +254,12 @@
           href: ../dev-itpro/data-entities/data-task-automation.md
         - name: Levere ISV-løsninger med én versjon
           href: ../dev-itpro/lifecycle-services/oneversion-isv.md
-        - name: Testautomatisering
-          items:
-            - name: Opprette og automatisere brukergodkjenningstester
-              href: ../dev-itpro/lifecycle-services/using-task-guides-and-bpm-to-create-user-acceptance-tests.md
-            - name: Konfigurere opplæring for Regression Suite Automation Tool
-              href: get-started/hol-set-up-regression-suite-automation-tool.md
-            - name: Bruke opplæring for Regression Suite Automation Tool
-              href: get-started/hol-use-regression-suite-automation-tool.md
+        - name: Opprette og automatisere brukergodkjenningstester
+          href: ../dev-itpro/lifecycle-services/using-task-guides-and-bpm-to-create-user-acceptance-tests.md
     - name: Forretningshendelser
-      href: ../dev-itpro/business-events/home-page.md
       items:
+        - name: Oversikt over forretningshendelser
+          href: ../dev-itpro/business-events/home-page.md
         - name: Forretningshendelser for applikasjon
           href: ../dev-itpro/business-events/app-business-events.md
         - name: Forretningshendelser for arbeidsflyt
@@ -271,24 +274,36 @@
           href: ../dev-itpro/business-events/troubleshooting.md
         - name: Brukstilfeller for forretningshendelser
           href: ../dev-itpro/business-events/potential-use-cases.md
-        - name: Opplæring
+        - name: Opplæringer
           items:
-            - name: Forbruke forretningshendelser med Microsoft Flow
+            - name: Forretningshendelser og Microsoft Flow
               href: ../dev-itpro/business-events/how-to/how-to-flow.md
-            - name: Forbruke forretningshendelser med Azure Event Grid
+            - name: Forretningshendelser og Azure Event Grid
               href: ../dev-itpro/business-events/how-to/how-to-eventgrid.md
-            - name: Forbruke forretningshendelser med Azure Service Bus
+            - name: Forretningshendelser og Azure Service Bus
               href: ../dev-itpro/business-events/how-to/how-to-servicebus.md
-            - name: Forbruke forretningshendelser for arbeidsflytgodkjenning
+            - name: Forretningshendelser og arbeidsflytgodkjenninger
               href: ../dev-itpro/business-events/how-to/how-to-workflow.md
-            - name: Bruke Microsoft Forms Pro med forretningshendelser
+            - name: Forretningshendelser og Microsoft Forms Pro
               href: ../dev-itpro/business-events/how-to/FormsPro.md
-    - name: Kostnadsstyring
-      href: ../supply-chain/cost-management/cost-management-home-page.md
+            - name: Forretningshendelser og Azure Event Hubs
+              href: ../dev-itpro/business-events/how-to/event-hub.md
+    - name: Samsvar
       items:
+        - name: Regler for overvåkingspolicy
+          href: ../financials/general-ledger/audit-policy-rules.md
+        - name: Brudd på og saker for overvåkingspolicy
+          href: ../financials/general-ledger/audit-policy-violations-cases.md
+        - name: Definere overvåkingspolicyer for kildedokumenter
+          href: ../financials/general-ledger/tasks/define-audit-policies-source-documents.md
+    - name: Kostnadsstyring
+      items:
+        - name: Startside for kostnadsstyring
+          href: ../supply-chain/cost-management/cost-management-home-page.md
         - name: Forutsetninger for standardkostnader
-          href: ../supply-chain/cost-management/prerequisites-standard-costs.md
           items:
+            - name: Oversikt over forutsetninger for standardkostnader
+              href: ../supply-chain/cost-management/prerequisites-standard-costs.md
             - name: Oversikt over standard kostnadskonvertering
               href: ../supply-chain/cost-management/standard-cost-conversion-overview.md
             - name: Forutsetning for konvertering av standardkostnad
@@ -308,8 +323,9 @@
             - name: Forberede vedlikehold av standardkostnader for produserte varer
               href: ../supply-chain/cost-management/prepare-maintain-standard-costs-manufactured-items.md
         - name: Etterkalkuleringsversjoner
-          href: ../supply-chain/cost-management/costing-versions.md
           items:
+            - name: Oversikt over etterkalkuleringsversjoner
+              href: ../supply-chain/cost-management/costing-versions.md
             - name: Kostark
               href: ../supply-chain/cost-management/costing-sheets.md
             - name: Simulere kostnadsendinger ved hjelp av en kostnadsberegningsversjon for planlagte kostnader
@@ -397,8 +413,9 @@
             - name: REST API for databehandlingspakke
               href: ../dev-itpro/data-entities/data-management-api.md?toc=/fin-and-ops/toc.json
             - name: Tjenestesluttpunkter
-              href: ../dev-itpro/data-entities/services-home-page.md?toc=/fin-and-ops/toc.json
               items:
+                - name: Oversikt over tjenestesluttpunkter
+                  href: ../dev-itpro/data-entities/services-home-page.md?toc=/fin-and-ops/toc.json
                 - name: Feilsøking av tjenestegodkjenning
                   href: ../dev-itpro/data-entities/troubleshoot-service-authentication.md?toc=/fin-and-ops/toc.json
             - name: OData
@@ -414,8 +431,9 @@
         - name: Utvikling for integrering
           items:
             - name: Dataintegrering ved hjelp av dataenheter
-              href: ../dev-itpro/data-entities/data-management-integration-data-entity.md?toc=/fin-and-ops/toc.json
               items:
+                - name: Oversikt over dataintegrering ved hjelp av dataenheter
+                  href: ../dev-itpro/data-entities/data-management-integration-data-entity.md?toc=/fin-and-ops/toc.json
                 - name: Utvikle en enhet for dataoverføring
                   href: ../dev-itpro/data-entities/develop-entity-for-data-migration.md?toc=/fin-and-ops/toc.json
                 - name: Utvikle sammensatte dataenheter
@@ -428,11 +446,11 @@
                   href: ../dev-itpro/data-entities/tasks/use-record-template-new-record.md?toc=/fin-and-ops/toc.json
             - name: Dataintegrering ved hjelp av Common Data Service
               items:
-                - name: Oversikt over dataintegrering
+                - name: Oversikt over dataintegrering ved hjelp av Common Data Service
                   href: ../dev-itpro/data-entities/data-integration-cds.md?toc=/fin-and-ops/toc.json
-                - name: Synkron toveisintegrasjon
+                - name: Synkron toveisintegrering
                   items:
-                    - name: Dataintegrasjon nesten i sanntid
+                    - name: Dataintegrering nesten i sanntid
                       href: ../dev-itpro/data-entities/dual-write-overview.md?toc=/fin-and-ops/toc.json
                     - name: Organisasjonshierarki på Common Data Service
                       href: ../dev-itpro/data-entities/dual-write-organization.md?toc=/fin-and-ops/toc.json
@@ -446,11 +464,11 @@
                       href: ../dev-itpro/data-entities/dual-write-initial.md?toc=/fin-and-ops/toc.json
                     - name: Feilsøke dataintegrering
                       href: ../dev-itpro/data-entities/dual-write-troubleshooting.md?toc=/fin-and-ops/toc.json
-                - name: Asynkron énveisintegrasjon
+                - name: Asynkron énveisintegrering
                   items:
-                    - name: Kundeemne til kontanter
+                    - name: Konfigurere et kundeemne til kontanter-scenario
                       items:
-                        - name: Konfigurere et kundeemne til kontanter-scenario
+                        - name: Kundeemne til kontanter
                           href: ../supply-chain/sales-marketing/prospect-to-cash.md
                         - name: Synkronisere kontoer direkte fra Sales til kunder i Finance and Operations
                           href: ../supply-chain/sales-marketing/accounts-template-mapping-direct.md
@@ -464,9 +482,9 @@
                           href: ../supply-chain/sales-marketing/sales-order-template-mapping-direct-two-ways.md
                         - name: Synkronisere salgsfakturahoder og -linjer direkte fra Finance and Operations til Sales
                           href: ../supply-chain/sales-marketing/sales-invoice-template-mapping-direct.md
-                    - name: Field Service
+                    - name: Konfigurere integrering med Field Service
                       items:
-                        - name: Konfigurere integrering med Field Service
+                        - name: Oversikt over å konfigurere integrering med Field Service
                           href: ../supply-chain/sales-marketing/field-service.md
                         - name: "Synkronisere produkter\_i Finance and Operations til produkter i Field Service"
                           href: ../supply-chain/sales-marketing/field-service-product.md
@@ -486,9 +504,9 @@
                           href: ../supply-chain/sales-marketing/synchronize-warehouse.md
                         - name: Synkronisere arbeidsordrer med prosjekt fra Field Service til Finance and Operations
                           href: ../supply-chain/sales-marketing/synchronize-work-orders.md
-                    - name: Project Service Automation
+                    - name: Konfigurere integrering av Project Service Automation
                       items:
-                        - name: Konfigurere integrering av Project Service Automation
+                        - name: Oversikt over Project Service Automation
                           href: ../financials/project-management/PSA-integration.md?toc=/fin-and-ops/toc.json
                         - name: Parametere for integrering av Project Service Automation
                           href: ../financials/project-management/PSA-parameters.md?toc=/fin-and-ops/toc.json
@@ -507,16 +525,19 @@
         - name: Elektronisk meldingssystem
           href: ../financials/general-ledger/electronic-messaging.md
     - name: Databehandling
-      href: ../dev-itpro/data-entities/data-entities-data-packages.md?toc=/fin-and-ops/toc.json
       items:
+        - name: Oversikt over databehandling
+          href: ../dev-itpro/data-entities/data-entities-data-packages.md?toc=/fin-and-ops/toc.json
         - name: Dataenheter
-          href: ../dev-itpro/data-entities/data-entities.md?toc=/fin-and-ops/toc.json
           items:
+            - name: Oversikt over dataenheter
+              href: ../dev-itpro/data-entities/data-entities.md?toc=/fin-and-ops/toc.json
             - name: Prosjekter for konfigurasjonsdata
               href: ../dev-itpro/data-entities/configuration-data-projects.md?toc=/fin-and-ops/toc.json
             - name: Kopiere konfigurasjonsdata mellom firmaer eller juridiske enheter
-              href: ../dev-itpro/data-entities/copy-configuration.md?toc=/fin-and-ops/toc.json
               items:
+                - name: Oversikt over å kopiere konfigurasjonsdata
+                  href: ../dev-itpro/data-entities/copy-configuration.md?toc=/fin-and-ops/toc.json
                 - name: Konfigurasjonsdatapakker
                   href: ../dev-itpro/data-entities/configuration-data-packages.md
                 - name: Konfigurasjon av datapakker (bare versjon fra juli 2017)
@@ -538,8 +559,9 @@
             - name: Konfigurasjonsdatapakker
               href: ../dev-itpro/data-entities/configuration-data-packages.md?toc=/fin-and-ops/toc.json
         - name: Dataimport- og -eksportjobber
-          href: ../dev-itpro/data-entities/data-import-export-job.md?toc=/fin-and-ops/toc.json
           items:
+            - name: Oversikt over dataimport- og -eksportjobber
+              href: ../dev-itpro/data-entities/data-import-export-job.md?toc=/fin-and-ops/toc.json
             - name: Anbefalte fremgangsmåter for å importere bilag ved hjelp av enheten Økonomijournal
               href: ../dev-itpro/data-entities/tips-tricks-import-general-journal-entity.md?toc=/fin-and-ops/toc.json
         - name: Utvikling for dataenheter
@@ -581,17 +603,20 @@
         - name: Feilbeskrivelser for databehandling
           href: ../dev-itpro/data-entities/dm-error-descriptions.md
     - name: Økonomistyring
-      href: ../financials/index.md
       items:
-        - name: Leverandører
-          href: ../financials/accounts-payable/accounts-payable.md
+        - name: Startside for økonomistyring
+          href: ../financials/index.md
+        - name: Leverandør
           items:
+            - name: Startside for leverandør
+              href: ../financials/accounts-payable/accounts-payable.md
             - name: Oversikt over leverandørfakturaer
               href: ../financials/accounts-payable/vendor-invoices-overview.md
-            - name: Konfigurere Leverandør
-              href: ../financials/accounts-payable/accounts-payable-overview.md
+            - name: Konfigurere leverandør
               items:
-                - name: Registrere fakturadata i Leverandører ved hjelp av en leverandørfaktura
+                - name: Oversikt over å konfigurere leverandør
+                  href: ../financials/accounts-payable/accounts-payable-overview.md
+                - name: Registrere fakturadata i Leverandør ved hjelp av en leverandørfaktura
                   href: ../financials/accounts-payable/tasks/key-invoice-data-ap-system-vendor-invoice.md
                 - name: Registrere fakturadata i Leverandører ved hjelp av en godkjenningsjournal
                   href: ../financials/accounts-payable/tasks/key-invoice-data-into-ap-system-approval-journal.md
@@ -604,8 +629,9 @@
             - name: Treveis kontrollpolicyer
               href: ../financials/accounts-payable/three-way-matching-policies.md
             - name: Fakturaavstemming for leverandør
-              href: ../financials/accounts-payable/accounts-payable-invoice-matching.md
               items:
+                - name: Oversikt over samsvar for leverandørfaktura
+                  href: ../financials/accounts-payable/accounts-payable-invoice-matching.md
                 - name: Definere validering av leverandørfakturakontroll
                   href: ../financials/accounts-payable/tasks/set-up-accounts-payable-invoice-matching-validation.md
             - name: Regnskapsdistribusjoner og underfinansjournaloppføringer for leverandørfakturaer
@@ -624,9 +650,10 @@
               href: ../financials/accounts-payable/default-offset-accounts-vendor-invoice-journals.md
             - name: Arbeidsflyt for leverandør
               href: ../financials/accounts-payable/vendor-workflow.md
-            - name: "Løse avvik under\_samsvaring av\_fakturatotaler"
-              href: ../financials/accounts-payable/resolve-invoice-totals-invoice-matching-discrepancies.md
+            - name: Løse avvik under samsvar av fakturatotaler
               items:
+                - name: Oversikt over å løse avvik under kontroll for fakturatotaler
+                  href: ../financials/accounts-payable/resolve-invoice-totals-invoice-matching-discrepancies.md
                 - name: Undersøke eller løse unntak
                   href: ../financials/accounts-payable/tasks/research-resolve-exceptions.md
             - name: Leverandørposteringsprofiler
@@ -687,9 +714,10 @@
                   href: ../financials/accounts-payable/vendor-payments-partial-amount.md
                 - name: "Listeside for\_leverandørtransaksjoner"
                   href: ../financials/accounts-payable/vendor-transaction-list-page.md
-        - name: Kunder
-          href: ../financials/accounts-receivable/accounts-receivable.md
+        - name: Kunde
           items:
+            - name: Startside for kunde
+              href: ../financials/accounts-receivable/accounts-receivable.md
             - name: Kredit og innkrevinger i Kunde
               href: ../financials/accounts-receivable/collections-credit-accounts-receivable.md
             - name: 'Konfigurere Kunde, kredit og innkrevinger'
@@ -783,13 +811,14 @@
                 - name: "Listeside for\_kundetransaksjoner"
                   href: ../financials/accounts-receivable/customer-transactions-list-page.md
         - name: Budsjettering
-          href: ../financials/budgeting/budgeting-overview.md
           items:
+            - name: Startside for budsjettering
+              href: ../financials/budgeting/budgeting-overview.md
             - name: Oversikt over budsjettplanlegging
               href: ../financials/budgeting/budget-planning-overview-configuration.md
             - name: Oversikt over budsjettkontroll
               href: ../financials/budgeting/budget-control-overview-configuration.md
-            - name: 'Oversikt over budsjettering '
+            - name: Oversikt over budsjettering
               href: ../financials/budgeting/basic-budgeting-overview-configuration.md
             - name: Stillingsprognose
               href: ../financials/budgeting/position-forecasting.md
@@ -808,8 +837,9 @@
             - name: Integrering av budsjettplanlegging med andre moduler
               href: ../financials/budgeting/budget-planning-integration-other-modules.md
         - name: Kontant- og bankbehandling
-          href: ../financials/cash-bank-management/cash-bank-management.md
           items:
+            - name: Startside for kontant- og bankbehandling
+              href: ../financials/cash-bank-management/cash-bank-management.md
             - name: Kontantstrømprognose
               href: ../financials/cash-bank-management/cash-flow-forecasting.md
             - name: Arbeidsområde for bank
@@ -885,8 +915,9 @@
                 - name: Oppdatere sammensatt enhet for bankjournal
                   href: ../financials/cash-bank-management/upgrade-bank-journal-composite-entity.md
         - name: Kostnadsregnskap
-          href: ../financials/cost-accounting/cost-accounting-home-page.md
           items:
+            - name: Startside for kostnadsregnskap
+              href: ../financials/cost-accounting/cost-accounting-home-page.md
             - name: Terminologi for kostnadsregnskap
               href: ../financials/cost-accounting/terms-cost-accounting.md
             - name: 'Regnskapskalendere, regnskapsår og perioder'
@@ -957,9 +988,10 @@
               href: ../dev-itpro/analytics/cost-accounting-analysis-content-pack.md?toc=/fin-and-ops/toc.json
             - name: Bruke arbeidsområde for kostnadskontroll for mobilappen for Finance and Operations
               href: ../financials/cost-accounting/cost-controlling-mobile-workspace.md
-        - name: Reiseregning
-          href: ../financials/expense-management/expense-management.md
+        - name: Reiseregning og utlegg
           items:
+            - name: Oversikt over reiseregning og utlegg
+              href: ../financials/expense-management/expense-management.md
             - name: Ny utforming av utgiftsrapporter
               href: ../financials/expense-management/ExpenseWorkspaceNew.md
             - name: Planlegge reiseregninger og utlegg
@@ -970,7 +1002,7 @@
               href: ../financials/expense-management/expense-management-mobile-workspace.md
             - name: Konfigurere arbeidsflyter for reiseregning og utlegg
               href: ../financials/expense-management/expense-workflows.md
-            - name: Arbeidsflyt for reiseregninger
+            - name: Arbeidsflyt for reiseregninger og utlegg
               href: ../financials/expense-management/expense-workflow.md
             - name: Importere og opprettholde kredittkorttransaksjoner
               href: ../financials/expense-management/import-credit-card.md
@@ -995,8 +1027,9 @@
             - name: Personlige utgifter i en reiseregningsrapport
               href: ../financials/expense-management/personal-expenses.md
         - name: Anleggsmidler
-          href: ../financials/fixed-assets/fixed-assets.md
           items:
+            - name: Startside for anleggsmidler
+              href: ../financials/fixed-assets/fixed-assets.md
             - name: Opprette et anleggsmiddel
               href: ../financials/fixed-assets/tasks/create-fixed-asset.md
             - name: Legge inn et tillegg til et anleggsmiddel
@@ -1100,15 +1133,187 @@
                 - name: Lineær levetidsavskrivning
                   href: ../financials/fixed-assets/straight-line-service-life-depreciation.md
         - name: Økonomimodul
-          href: ../financials/general-ledger/general-ledger.md
           items:
+            - name: Oversikt over økonomimodul
+              href: ../financials/general-ledger/general-ledger.md
+            - name: Kontoer
+              items:
+                - name: Oversikt over avsetninger
+                  href: ../financials/general-ledger/accruals-overview.md
+                - name: Elimineringsregler
+                  href: ../financials/general-ledger/elimination-rules.md
+                - name: Kombinasjoner av konto og dimensjon
+                  href: ../financials/general-ledger/enter-account-dimension-combinations-segmented-entry-control.md
+                - name: Balanserte journaler for interenhetsregnskap
+                  href: ../financials/general-ledger/example-balanced-journals-interunit-accounting.md
+                - name: Posteringsdefinisjoner
+                  href: ../financials/general-ledger/posting-definitions.md
+                - name: 'Eksempler på posteringsdefinisjon '
+                  href: ../financials/general-ledger/example-posting-definitions.md
+                - name: Kontosaldoer i økonomimodulen
+                  href: ../financials/general-ledger/general-ledger-account-balances.md
+                - name: Definere finansdimensjoner
+                  href: ../financials/general-ledger/tasks/define-financial-dimensions.md
+                - name: Vedlikeholde standardmaler for finansdimensjon
+                  href: ../financials/general-ledger/tasks/maintain-financial-dimension-default-templates.md
+                - name: Opprette kontostrukturer
+                  href: ../financials/general-ledger/tasks/create-account-structures.md
+                - name: Finansdimensjoner og postering
+                  href: ../financials/general-ledger/default-dimensions.md
+                - name: Opprette avsetningsplaner
+                  href: ../financials/general-ledger/tasks/create-accrual-schemes.md
+                - name: Finanskonsolideringer og valutaomveksling
+                  items:
+                    - name: Oversikt over finanskonsolideringer og valutaomveksling
+                      href: ../financials/general-ledger/financial-consolidations-currency-translation.md
+                    - name: Konsolidere på nettet
+                      href: ../financials/general-ledger/consolidate-online.md
+                    - name: Generere konsoliderte regnskapsoppgjør
+                      href: ../financials/general-ledger/generating-consolidated-financial-statements.md
+                - name: Opprette konsolideringsgrupper og en ekstra konsolideringskonto
+                  href: ../financials/general-ledger/tasks/create-consolidation-groups.md
+                - name: Hovedkontotyper
+                  href: ../financials/general-ledger/main-account-types.md
+                - name: Opprette en hovedkonto
+                  href: ../financials/general-ledger/tasks/create-main-account.md
+                - name: Planlegge kontoplanen
+                  href: ../financials/general-ledger/plan-chart-of-accounts.md
+                - name: Utligne transaksjoner mellom finanskontoer
+                  href: ../financials/general-ledger/tasks/settle-transactions-between-ledger-accounts.md
+                - name: Definere et finanskontoalias
+                  href: ../financials/general-ledger/tasks/set-up-ledger-account-alias.md
+                - name: Definere hovedkontokategorier
+                  href: ../financials/general-ledger/tasks/set-up-main-account-categories.md
+                - name: Regnskapskildeutforsker
+                  href: ../financials/accounts-payable/accounting-source-explorer.md
+                - name: Regnskapsdistribusjoner
+                  href: ../financials/accounts-payable/accounting-distributions.md
+                - name: Behandle tildelinger
+                  href: ../financials/general-ledger/process-allocations.md
+                - name: Finansdimensjoner
+                  href: ../financials/general-ledger/financial-dimensions.md
+                - name: Konvertere regnskaps- eller rapporteringsvalutaer
+                  href: ../financials/general-ledger/convert-accounting-reporting-currencies.md
+                - name: Konsolideringskontogrupper og kontoer
+                  href: ../financials/budgeting/consolidation-account-groups-consolidation-accounts.md
+                - name: Konsoliderings- og elimineringsoversikt
+                  href: ../financials/budgeting/consolidation-elimination-overview.md
+                - name: 'Regnskapskalendere, regnskapsår og perioder'
+                  href: ../financials/budgeting/fiscal-calendars-fiscal-years-periods.md
+                - name: Konfigurere kontostrukturer
+                  href: ../financials/general-ledger/configure-account-structures.md
+                - name: Dobbel valuta
+                  href: ../financials/general-ledger/dual-currency.md
+            - name: Journaler og finans
+              items:
+                - name: Behandling av generell journal
+                  href: ../financials/general-ledger/general-journal-processing.md
+                - name: Postere periodiske journaler
+                  href: ../financials/general-ledger/tasks/post-periodic-journals.md
+                - name: Behandle finansfordelingsjournal
+                  href: ../financials/general-ledger/tasks/process-ledger-allocation-journal.md
+                - name: Oppsett for konserninternt regnskap
+                  href: ../financials/general-ledger/intercompany-accounting-setup.md
+                - name: Finansfordelingsregler
+                  href: ../financials/general-ledger/ledger-allocation-rules.md
+                - name: Opprette avanserte regler for journaler
+                  href: ../financials/general-ledger/tasks/create-advanced-rules-journals.md
+                - name: Opprette og tilordne avanserte regelstrukturer
+                  href: ../financials/general-ledger/tasks/create-assign-advanced-rule-structures.md
+                - name: Finansjournaltyper
+                  href: ../financials/general-ledger/ledger-journal-types.md
+                - name: Opprette og validere journaler
+                  href: ../financials/general-ledger/tasks/create-validate-journals.md
+                - name: Vise journaloppføringer eller transaksjoner
+                  href: ../financials/general-ledger/tasks/view-journal-entries-or-transactions.md
+                - name: Vise et relatert konserninternt bilag fra en journal
+                  href: ../financials/general-ledger/tasks/view-related-intercompany-voucher-journal.md
+                - name: Opprette en journaloppføring ved hjelp av en mal
+                  href: ../financials/general-ledger/tasks/create-journal-entry-template.md
+                - name: Opprette finansavsettingstransaksjoner
+                  href: ../financials/general-ledger/tasks/create-ledger-accrual-transactions.md
+                - name: Publisere journallinjer og dokumenter fra Excel
+                  href: ../financials/general-ledger/open-lines-excel-journals-documents.md
+                - name: Vise journaloppføringer og transaksjoner
+                  href: ../financials/general-ledger/view-journal-entries-transactions.md
+                - name: Journalføre posterte journaloppføringer
+                  href: ../financials/general-ledger/tasks/journalize-posted-journal-entries.md
+                - name: Revaluering av valuta i et konsolideringsfirma
+                  href: ../financials/general-ledger/currency-revaluation-consolidation-company.md
+                - name: Revaluering av utenlandsk valuta for økonomimodul
+                  href: ../financials/general-ledger/foreign-currency-revaluation-general-ledger.md
+                - name: Importere valutakurser
+                  href: ../financials/general-ledger/import-currency-exchange-rates.md
+                - name: Ett bilag
+                  href: ../financials/general-ledger/one-voucher.md
+                - name: Finansutligninger
+                  href: ../financials/general-ledger/ledger-settlements.md
+            - name: Lukking av periodeslutt
+              items:
+                - name: Lukke økonomimodulen ved periodeslutt
+                  href: ../financials/general-ledger/close-general-ledger-at-period-end.md
+                - name: Arbeidsområde for regnskapsperiodeavslutning
+                  href: ../financials/general-ledger/financial-period-close-workspace.md
+                - name: Årsavslutning
+                  href: ../financials/general-ledger/year-end-close.md
+                - name: Lukke regnskapsåret
+                  href: ../financials/general-ledger/tasks/close-fiscal-year.md
+                - name: Lukke masseregnskapsperiode
+                  href: ../financials/general-ledger/tasks/mass-financial-period-close.md
+            - name: Merverdiavgift
+              items:
+                - name: Oversikt over merverdiavgift
+                  href: ../financials/general-ledger/indirect-taxes-overview.md
+                - name: Mva-satser basert på grensegrunnlaget og beregningsmetodene
+                  href: ../financials/general-ledger/marginal-base-field.md
+                - name: Mva-betalinger og avrundingsregler
+                  href: ../financials/general-ledger/round-sales-tax-payments.md
+                - name: Beregningsmåter for merverdiavgift i grunnlagsfeltet
+                  href: ../financials/general-ledger/sales-tax-calculation-methods-origin-field.md
+                - name: Hele beløp og alternativer for intervallberegning for mva-koder
+                  href: ../financials/general-ledger/whole-amount-interval-options-sales-tax-codes.md
+                - name: Beregne og justere merverdiavgift på en leverandørfaktura
+                  href: ../financials/general-ledger/tasks/calculate-adjust-sales-tax-vendor-invoice.md
+                - name: Opprette en mva-betaling
+                  href: ../financials/general-ledger/tasks/create-sales-tax-payment.md
+                - name: Opprette mva-transaksjoner på dokumenter
+                  href: ../financials/general-ledger/tasks/create-sales-tax-transactions-documents.md
+                - name: Definere finansposteringsgrupper for merverdiavgift
+                  href: ../financials/general-ledger/tasks/set-up-ledger-posting-groups-sales-tax.md
+                - name: Definere skattemyndigheter
+                  href: ../financials/general-ledger/tasks/set-up-sales-tax-authorities.md
+                - name: Definer mva-koder
+                  href: ../financials/general-ledger/tasks/set-up-sales-tax-codes.md
+                - name: Definere mva-grupper og mva-grupper for vare
+                  href: ../financials/general-ledger/tasks/set-up-sales-tax-groups-item-sales-tax-groups.md
+                - name: Definere mva-rapporteringskoder
+                  href: ../financials/general-ledger/tasks/set-up-sales-tax-reporting-codes.md
+                - name: Definere mva-utligningsperioder
+                  href: ../financials/general-ledger/tasks/set-up-sales-tax-settlement-periods.md
+                - name: Definere kildeskatt
+                  href: ../financials/general-ledger/tasks/set-up-withholding-tax.md
+                - name: Vise posterte mva-transaksjoner
+                  href: ../financials/general-ledger/tasks/view-posted-sales-tax-transactions.md
+            - name: Arbeidsområde for overvåking
+              items:
+                - name: Regler for overvåkingspolicy
+                  href: ../financials/general-ledger/audit-policy-rules.md
+                - name: Brudd på og saker for overvåkingspolicy
+                  href: ../financials/general-ledger/audit-policy-violations-cases.md
+                - name: Definere overvåkingspolicyer for kildedokumenter
+                  href: ../financials/general-ledger/tasks/define-audit-policies-source-documents.md
+        - name: Offentlig sektor
+          items:
+            - name: Startside for offentlig sektor
+              href: ../financials/public-sector/public-sector-functionality.md
             - name: Planlegge for funksjonalitet for offentlig sektor
               href: ../financials/public-sector/plan-public-sector-functionality.md
             - name: Opprette forside og signatursider for en betalingsrapport for offentlig sektor
               href: ../financials/public-sector/tasks/create-cover-signature-pages-payments-report-public-sector.md
             - name: Leverandør i offentlig sektor
-              href: ../financials/public-sector/accounts-payable-public-sector.md
               items:
+                - name: Oversikt over leverandør i offentlig sektor
+                  href: ../financials/public-sector/accounts-payable-public-sector.md
                 - name: Bestillingskoder i offentlig sektor
                   href: ../financials/public-sector/purchase-order-codes-public-sector.md
                 - name: Opprette og tilordne en handelspartnerkode i offentlig sektor
@@ -1130,8 +1335,9 @@
                 - name: Definere kjøpsavtaleklassifiseringer i offentlig sektor
                   href: ../financials/public-sector/tasks/set-up-purchase-agreement-classifications-public-sector.md
             - name: Kunde i offentlig sektor
-              href: ../financials/public-sector/accounts-receivable-public-sector.md
               items:
+                - name: Oversikt over kunde i offentlig sektor
+                  href: ../financials/public-sector/accounts-receivable-public-sector.md
                 - name: Faktureringsklassifiseringer og faktureringskoder i offentlig sektor
                   href: ../financials/public-sector/billing-classifications-billing-codes-public-sector.md
                 - name: Opprette en faktureringsklassifisering i offentlig sektor
@@ -1145,8 +1351,9 @@
                 - name: Refusjoner i offentlig sektor
                   href: ../financials/public-sector/reimbursements-public-sector.md
             - name: Budsjettering i offentlig sektor
-              href: ../financials/public-sector/budgeting-public-sector.md
               items:
+                - name: Oversikt over budsjettering i offentlig sektor
+                  href: ../financials/public-sector/budgeting-public-sector.md
                 - name: Opprette et opprinnelig budsjett og tilbakeføre foreløpige budsjettposter i offentlig sektor
                   href: ../financials/public-sector/tasks/create-original-budget.md
                 - name: Opprette et foreløpig budsjett for offentlig sektor
@@ -1171,9 +1378,10 @@
                   href: ../financials/public-sector/general-budget-reservations-project-accounting.md
             - name: Anleggsmidler i offentlig sektor
               href: ../financials/public-sector/fixed-asset-public-sector.md
-            - name: "Finans\_i offentlig sektor"
-              href: ../financials/public-sector/general-ledger-public-sector.md
+            - name: Økonomimodul i offentlig sektor
               items:
+                - name: Oversikt over økonomimodul i offentlig sektor
+                  href: ../financials/public-sector/general-ledger-public-sector.md
                 - name: Avansert finansoppføringer i offentlig sektor
                   href: ../financials/public-sector/advanced-ledger-entries-public-sector.md
                 - name: Opprette en avansert finansoppføring i offentlig sektor
@@ -1199,8 +1407,9 @@
             - name: Legge til en sertifiseringstype for en leverandør i offentlig sektor
               href: ../financials/public-sector/tasks/add-certification-type-vendor-public-sector.md
         - name: Finansrapportering
-          href: ../financials/general-ledger/financial-reporting-getting-started.md
           items:
+            - name: Oversikt over finansrapportering
+              href: ../financials/general-ledger/financial-reporting-getting-started.md
             - name: Oversikt over finansrapportering
               href: ../dev-itpro/analytics/financial-reporting-intro.md?toc=/fin-and-ops/toc.json
             - name: Komponenter for finansrapport
@@ -1231,18 +1440,20 @@
               href: ../dev-itpro/analytics/column-definitions-financial-reports.md?toc=/fin-and-ops/toc.json
             - name: Endre celler for raddefinisjon
               href: ../dev-itpro/analytics/modify-row-definition-cells-financial-reporting.md?toc=/fin-and-ops/toc.json
-            - name: Tilbakestille datatorg for finansrapportering
+            - name: Tilbakestille datatorget for finansrapportering
               href: ../dev-itpro/analytics/reset-financial-reporting-datamart-after-restore.md?toc=/fin-and-ops/toc.json
         - name: Elektronisk meldingssystem
           href: ../financials/general-ledger/electronic-messaging.md
     - name: Globalisering
-      href: ../dev-itpro/lcs-solutions/country-region.md?toc=/fin-and-ops/toc.json
       items:
+        - name: Globaliseringsressurser
+          href: ../dev-itpro/lcs-solutions/country-region.md?toc=/fin-and-ops/toc.json
         - name: Forskriftsmessige oppdateringer
           href: ../financials/localizations/regulatory-updates.md
         - name: Australia
-          href: ../financials/localizations/australia.md
           items:
+            - name: Oversikt over Australia
+              href: ../financials/localizations/australia.md
             - name: Business Activity Statement (BAS)
               href: ../financials/localizations/apac-aus-business-activity-statement.md
             - name: Legge til rapportbokser og generere BAS
@@ -1252,8 +1463,9 @@
             - name: Definere årsakskoder for BAS
               href: ../financials/localizations/tasks/set-up-reason-codes-australia-bas.md
         - name: Østerrike
-          href: ../financials/localizations/austria.md
           items:
+            - name: Oversikt over Østerrike
+              href: ../financials/localizations/austria.md
             - name: Halvårsavskrivning på ekstraanskaffelser
               href: ../financials/localizations/emea-aut-half-year-depreciation.md
             - name: Emballasjematerialegebyrer
@@ -1261,8 +1473,9 @@
             - name: Mva-oppgave
               href: ../financials/localizations/emea-aut-vat-statement-details.md
         - name: Belgia
-          href: ../financials/localizations/belgium.md
           items:
+            - name: Oversikt over Belgia
+              href: ../financials/localizations/belgium.md
             - name: CODA-bankkontoutdrag
               href: ../financials/localizations/emea-bel-coda-bank-statement-import.md
             - name: Opprette og overføre transaksjoner til BLWI
@@ -1276,13 +1489,15 @@
             - name: Definer og vedlikehold PRODCOM
               href: ../financials/localizations/emea-bel-prodcom-report.md
         - name: Brasil
-          href: ../financials/localizations/brazil.md
           items:
+            - name: Oversikt over Brasil
+              href: ../financials/localizations/brazil.md
             - name: Omfang for lokalisering
               href: ../financials/localizations/latam-bra-scope.md
             - name: Regnskapsbøker
-              href: ../financials/localizations/latam-bra-fiscal-books.md
               items:
+                - name: Oversikt over regnskapsbøker for Brasil
+                  href: ../financials/localizations/latam-bra-fiscal-books.md
                 - name: Konfigurere regnskapsbøker
                   href: ../financials/localizations/latam-bra-configure-fiscal-books.md
                 - name: Regnskapsdokumenter for ICMS-avgift
@@ -1350,8 +1565,9 @@
                 - name: Prosjektdebetnotaer
                   href: ../financials/localizations/tasks/br-00076-project-debit-notes.md
             - name: NF-e-prosess
-              href: ../financials/localizations/latam-bra-nf-e-process.md
               items:
+                - name: Oversikt over NF-e-prosess for Brasil
+                  href: ../financials/localizations/latam-bra-nf-e-process.md
                 - name: Automatisk overføring av regnskapsdokumenter for NF-e
                   href: ../financials/localizations/tasks/br-00058-automatic-transmission-nf-e-fiscal-documents.md
                 - name: Generere e-postmeldinger for godkjent NF-e og legge ved DANFE PDF-filer og XML-filer for NF-e i e-postmeldinger
@@ -1397,8 +1613,9 @@
             - name: Beregne rente og bøter i kundebetalinger
               href: ../financials/localizations/tasks/br-00066-2-calculate-interest-fines-customer-payments.md
             - name: Avgifter
-              href: ../financials/localizations/latam-bra-calculate-taxes.md
               items:
+                - name: Oversikt over Brasil-avgifter
+                  href: ../financials/localizations/latam-bra-calculate-taxes.md
                 - name: Beregne mva på innkjøpstilbud
                   href: ../financials/localizations/tasks/br-00031-tax-calculation-purchase-quotation.md
                 - name: Opprette et avgiftsoppgjør – ICMS
@@ -1444,8 +1661,9 @@
                 - name: Kildeskatt i leverandørbetalinger
                   href: ../financials/localizations/tasks/br-00061-withholding-taxes-vendors-payments.md
         - name: Kina
-          href: ../financials/localizations/china.md
           items:
+            - name: Oversikt over Kina
+              href: ../financials/localizations/china.md
             - name: Finance and Operations styrt av 21Vianet i Kina
               href: ../dev-itpro/deployment/china-local-deployment.md
             - name: Stykklistesammenligning
@@ -1485,8 +1703,9 @@
             - name: Vanlige spørsmål om mva-kundefakturaer
               href: ../financials/localizations/apac-chn-tax-integration-vat-customer-invoices.md
         - name: Tsjekkia
-          href: ../financials/localizations/czech-republic.md
           items:
+            - name: Tsjekkia
+              href: ../financials/localizations/czech-republic.md
             - name: Kreditnota på kontantrabatt
               href: ../financials/localizations/emea-cze-credit-note-cash-discount.md
             - name: Anleggsmidler
@@ -1514,8 +1733,9 @@
             - name: Årsavslutning
               href: ../financials/localizations/emea-cze-hun-year-end.md
         - name: Danmark
-          href: ../financials/localizations/denmark.md
           items:
+            - name: Oversikt over Danmark
+              href: ../financials/localizations/denmark.md
             - name: Tilordne et format for betalingsbilag til en kundekonto
               href: ../financials/localizations/tasks/assign-payment-slip-format-customer-account.md
             - name: Opprette og postere en kundefaktura for en kunde i offentlig sektor
@@ -1539,18 +1759,21 @@
             - name: Definere format for betalingsbilag
               href: ../financials/localizations/tasks/set-up-payment-slip-format.md
         - name: Estland
-          href: ../financials/localizations/estonia.md
           items:
+            - name: Oversikt over Estland
+              href: ../financials/localizations/estonia.md
             - name: Forespørsler om personlige opplysninger
               href: ../financials/localizations/emea-est-personal-info.md
             - name: Mva-oppgave
               href: ../financials/localizations/emea-est-vat-statement-details.md
         - name: Europa
-          href: ../financials/localizations/europe.md
           items:
+            - name: Oversikt over Europa
+              href: ../financials/localizations/europe.md
             - name: Forskuddsinnehavere
-              href: ../financials/localizations/emea-advance-holders.md
               items:
+                - name: Oversikt over forskuddsinnehavere
+                  href: ../financials/localizations/emea-advance-holders.md
                 - name: Transaksjoner for innehavere av forskudd
                   href: ../financials/localizations/emea-advance-holders-transactions.md
                 - name: Forskuddsbetaling til en ansatt (Øst-Europa)
@@ -1606,8 +1829,9 @@
                 - name: Opprette og eksportere leverandørbetalinger ved hjelp av ISO20022-betalingsformat
                   href: ../financials/localizations/tasks/create-export-vendor-payments-iso20022-payment-format.md
             - name: Intrastat
-              href: ../financials/localizations/emea-intrastat.md
               items:
+                - name: Oversikt over Intrastat
+                  href: ../financials/localizations/emea-intrastat.md
                 - name: Overføre transaksjoner til Intrastat
                   href: ../financials/localizations/tasks/transfer-transactions-intrastat.md
                 - name: Angi en lasteadresse for en fellesskapstransaksjon
@@ -1685,8 +1909,9 @@
             - name: Vise transaksjoner ved utligning
               href: ../financials/localizations/emea-transactions-settlement-form.md
         - name: Frankrike
-          href: ../financials/localizations/france.md
           items:
+            - name: Oversikt over Frankrike
+              href: ../financials/localizations/france.md
             - name: Offentlig sektor
               items:
                 - name: Regnskap i offentlig sektor
@@ -1740,13 +1965,15 @@
                 - name: Retningslinjer for distribusjon for kassaapparater
                   href: ../retail/localizations/emea-fra-deployment.md
         - name: Tyskland
-          href: ../financials/localizations/germany.md
           items:
+            - name: Oversikt over Tyskland
+              href: ../financials/localizations/germany.md
             - name: Avskrivning for ekstraanskaffelser
               href: ../financials/localizations/emea-deu-additional-acquisition-depreciation.md
             - name: Revisjonsfil
-              href: ../financials/localizations/emea-deu-gdpdu-audit-data-export.md
               items:
+                - name: Oversikt over tysk revisjonsfil
+                  href: ../financials/localizations/emea-deu-gdpdu-audit-data-export.md
                 - name: Tilpasse konfigurasjon av revisjonsfil
                   href: ../financials/localizations/tasks/customize-german-audit-file-configuration.md
                 - name: Generere revisjonsfil
@@ -1762,8 +1989,9 @@
             - name: Definere elektroniske avgiftsdeklareringer
               href: ../dev-itpro/analytics/tasks/setup-electronic-tax-declaration-germany.md?toc=/fin-and-ops/toc.json
         - name: Ungarn
-          href: ../financials/localizations/hungary.md
           items:
+            - name: Oversikt over Ungarn
+              href: ../financials/localizations/hungary.md
             - name: Valutakursberegning
               href: ../financials/localizations/tasks/hu-00001-exchange-rate-calculation.md
             - name: Metoder for avskrivning av anleggsmidler
@@ -1777,8 +2005,9 @@
             - name: Årsavslutning
               href: ../financials/localizations/emea-cze-hun-year-end.md
         - name: Island
-          href: ../financials/localizations/iceland.md
           items:
+            - name: Oversikt over Island
+              href: ../financials/localizations/iceland.md
             - name: Opprette en leverandørkonto og tilknytte kategorien for fakturadeklarering
               href: ../financials/localizations/tasks/create-vendor-account-attach-invoice-declaration-category.md
             - name: Definere en deklarering av faktura for leverandører
@@ -1788,11 +2017,15 @@
             - name: Oppdatere deklareringer av leverandørfaktura og generere rapporten
               href: ../financials/localizations/tasks/update-vendor-invoice-declarations-report.md
         - name: India
-          href: ../financials/localizations/india.md
           items:
+            - name: Oversikt over India
+              href: ../financials/localizations/india.md
+            - name: Omfang for indiske lokaliseringer
+              href: ../financials/localizations/apac-ind-scope.md
             - name: Anleggsmidler
-              href: ../financials/localizations/apac-ind-fixed-assets.md
               items:
+                - name: Oversikt over anleggsmidler i India
+                  href: ../financials/localizations/apac-ind-fixed-assets.md
                 - name: Knytte en dagsbasert kalender til et anleggsmiddeltablå
                   href: ../financials/localizations/tasks/apac-ind-attach-day-based-calendar.md
                 - name: Beregn skiftavskrivning
@@ -1816,8 +2049,9 @@
                 - name: Overføring av kapitalvarer til anleggsmiddelet
                   href: ../financials/localizations/tasks/apac-ind-transfer-capital-items.md
             - name: India GST
-              href: ../financials/localizations/apac-ind-gst.md
               items:
+                - name: Oversikt over India GST
+                  href: ../financials/localizations/apac-ind-gst.md
                 - name: Referansegrupper for India GST
                   href: ../financials/localizations/apac-ind-gst-reference-groups.md
                 - name: GST-integrering for kassaapparater
@@ -1960,22 +2194,27 @@
                   href: ../financials/localizations/apac-ind-GST-tax-inquiry.md
                 - name: Retningslinjer for distribusjon for kassaapparater
                   href: ../retail/localizations/apac-ind-loc-deployment-guidelines.md?toc=/fin-and-ops/toc.json
-            - name: Oversikt over avgiftsmotor
-              href: ../financials/general-ledger/tax-engine.md
+            - name: Avgiftsmotor
               items:
-                - name: Importere konfigurasjon
-                  href: ../financials/general-ledger/tax-engine-import-configuration.md
-                - name: Relevans for avgiftsmotor
-                  href: ../financials/general-ledger/tax-engine-applicability.md
-                - name: Integrering av avgiftsmotor
-                  href: ../financials/general-ledger/tax-engine-integration.md
-                - name: Utvidelse av avgiftsmotoren
-                  href: ../financials/general-ledger/extend-tax-engine-configurations.md
+                - name: Oversikt over avgiftsmotor
+                  href: ../financials/general-ledger/tax-engine.md
+                  items:
+                    - name: Importere konfigurasjon
+                      href: ../financials/general-ledger/tax-engine-import-configuration.md
+                    - name: Relevans for avgiftsmotor
+                      href: ../financials/general-ledger/tax-engine-applicability.md
+                    - name: Integrering av avgiftsmotor
+                      href: ../financials/general-ledger/tax-engine-integration.md
+                    - name: Utvidelse av avgiftsmotoren
+                      href: ../financials/general-ledger/extend-tax-engine-configurations.md
             - name: Vanlige spørsmål om mva-terskler
               href: ../financials/localizations/apac-ind-tax-thresholds.md
+            - name: Lageroverføringer
+              href: ../financials/localizations/apac-ind-stock-transfer.md
         - name: Italia
-          href: ../financials/localizations/italy.md
           items:
+            - name: Oversikt over Italia
+              href: ../financials/localizations/italy.md
             - name: Detaljer om mva-oppgaver
               href: ../financials/localizations/emea-ita-vat-statements-details.md
             - name: Svartelisterapport
@@ -1997,8 +2236,9 @@
             - name: Kildeskatt
               href: ../financials/localizations/emea-ita-withholding-tax.md
         - name: Japan
-          href: ../financials/localizations/japan.md
           items:
+            - name: Oversikt over Japan
+              href: ../financials/localizations/japan.md
             - name: Anskaffe et anleggsmiddel og gjøre krav om offentlig tilskudd
               href: ../financials/localizations/tasks/acquire-fixed-asset-claim-government-grant-subsidy.md
             - name: Anskaffe et anleggsmiddel med realiseringsforpliktelse for anleggsmiddel
@@ -2156,8 +2396,9 @@
             - name: Bruke demonteringsliste for anleggsmidler
               href: ../financials/localizations/tasks/use-disassemble-list-fixed-assets.md
         - name: Latvia
-          href: ../financials/localizations/latvia.md
           items:
+            - name: Oversikt over Latvia
+              href: ../financials/localizations/latvia.md
             - name: Regnskap for anleggsmidler
               href: ../financials/localizations/emea-lva-fixed-assets-accounting.md
             - name: Plassering av endringssporing for anleggsmidler
@@ -2169,8 +2410,9 @@
             - name: Detaljer om mva-oppgave
               href: ../financials/localizations/emea-lva-vat-statement-details.md
         - name: Litauen
-          href: ../financials/localizations/lithuania.md
           items:
+            - name: Oversikt over Litauen
+              href: ../financials/localizations/lithuania.md
             - name: Oppgave for reparasjon av anleggsmiddel
               href: ../financials/localizations/emea-ltu-fixed-asset-repair-statement.md
             - name: Generere et dokument for overføring av anleggsmiddel mellom lagre
@@ -2180,8 +2422,9 @@
             - name: Detaljer om mva-oppgave
               href: ../financials/localizations/emea-ltu-vat-statement-details.md
         - name: Malaysia
-          href: ../financials/localizations/malaysia.md
           items:
+            - name: Oversikt over Malaysia
+              href: ../financials/localizations/malaysia.md
             - name: Generere kundekreditt for prosjektsalg
               href: ../financials/localizations/tasks/my-00011-03-customer-credit-note-project-sales.md
             - name: Generere kundedebet for prosjektsalg
@@ -2203,8 +2446,9 @@
             - name: Definere GST-frigivelsesklausuler
               href: ../financials/localizations/tasks/my-00006-01-gst-relief-clauses.md
         - name: Mexico
-          href: ../financials/localizations/mexico.md
           items:
+            - name: Oversikt over Mexico
+              href: ../financials/localizations/mexico.md
             - name: Omfang for lokalisering
               href: ../financials/localizations/latam-mex-scope.md
             - name: Deklareringsrapport for justeringsinflasjon
@@ -2242,15 +2486,17 @@
             - name: ID-er for leverandørregistrering
               href: ../financials/localizations/tasks/mx-00008-vendor-registration-ids.md
         - name: Nederland
-          href: ../financials/localizations/netherlands.md
           items:
+            - name: Oversikt over Nederland
+              href: ../financials/localizations/netherlands.md
             - name: Elektroniske avgiftsdeklareringer (EVAT)
               href: ../financials/localizations/tasks/nl-00010-electronic-tax-declarations-evat.md
             - name: Semansys XBRL-integrering
               href: ../financials/localizations/tasks/nl-00003-semansys-xbrl-integration.md
         - name: Norge
-          href: ../financials/localizations/norway.md
           items:
+            - name: Oversikt over Norge
+              href: ../financials/localizations/norway.md
             - name: Betalingsformater for kunde og leverandør
               href: ../financials/localizations/tasks/no-00003-customer-vendor-payment-formats.md
             - name: Kundebetaling basert på betalings-ID
@@ -2264,8 +2510,9 @@
             - name: Retningslinjer for distribusjon for kassaapparater
               href: ../retail/localizations/emea-nor-loc-deployment-guidelines.md?toc=/fin-and-ops/toc.json
         - name: Polen
-          href: ../financials/localizations/poland.md
           items:
+            - name: Oversikt over Polen
+              href: ../financials/localizations/poland.md
             - name: Aktivere Storno-regnskapsføring
               href: ../financials/localizations/emea-pol-red-storno.md
             - name: Beregne linjerabatter fra enhetsprisen
@@ -2293,8 +2540,9 @@
             - name: Omsetnings- og saldoutdrag
               href: ../financials/localizations/emea-pol-turnover-balances-statement.md
         - name: Russland
-          href: ../financials/localizations/russia.md
           items:
+            - name: Oversikt over Russland
+              href: ../financials/localizations/russia.md
             - name: Økonomimodul
               items:
                 - name: Samsvar av kontoer
@@ -2306,8 +2554,9 @@
                 - name: Importere valutakurser fra CBRF
                   href: ../financials/general-ledger/import-currency-exchange-rates.md
             - name: Forskuddsinnehavere
-              href: ../financials/localizations/rus-advance-holders.md
               items:
+                - name: Oversikt over forskuddsinnehavere i Russland
+                  href: ../financials/localizations/rus-advance-holders.md
                 - name: Opprette en forskuddsinnehaver
                   href: '../financials/localizations/emea-advance-holders.md#create-an-advance-holder'
                 - name: Daglig drift for forskuddsinnehavere
@@ -2318,18 +2567,26 @@
                   href: ../financials/localizations/rus-advance-adjustment-parameters.md
                 - name: Rapporter for innehaver av forskudd
                   href: ../financials/localizations/rus-local-management-reports-primary-forms.md
-            - name: Bank
+            - name: Kontant og bank
               items:
                 - name: Konfigurere bankkontoer
                   href: ../financials/localizations/rus-local-settings-requisites-bank-module.md
                 - name: Konfigurere og behandle betalingsordrer
                   href: ../financials/localizations/rus-payment-order-settings-processing.md
+                - name: Kursjustering
+                  href: ../financials/localizations/rus-exchange-adjustment.md
                 - name: 'Salg, kjøp og overføringer i utenlandsk valuta'
                   href: ../financials/localizations/rus-currency-sale-purchase.md
+                - name: Håndkasse
+                  href: ../financials/localizations/emea-petty-cash.md
             - name: Mva
               items:
                 - name: 'Lokal, spesifikk postering av utgående mva'
                   href: ../financials/localizations/rus-local-specific-posting-sales-vat.md
+                - name: Behandle og skrive ut fakturaer
+                  href: ../financials/localizations/rus-invoice-facture-process-print.md
+                - name: Revisjonsfakturaer og korrigeringsfakturaer
+                  href: ../financials/localizations/rus-revise-invoice-facture.md
                 - name: Merverdiavgift (mva) for mva-agenter
                   href: ../financials/localizations/rus-tax-agent.md
                 - name: Mva-deklarering
@@ -2382,6 +2639,8 @@
                   href: ../financials/localizations/rus-not-valuable-assets.md
             - name: Leverandører og kunder
               items:
+                - name: Kreditnotakorrigeringer (Russland)
+                  href: ../financials/localizations/rus-credit-note-correction.md
                 - name: Fakturaer for betaling
                   href: ../financials/localizations/rus-invoice-payment.md
                 - name: Konfigurere dimensjonskontroll for utligninger
@@ -2412,37 +2671,40 @@
                   href: ../financials/localizations/rus-officials.md
                 - name: Firmaavdelinger
                   href: ../financials/localizations/rus-company-divisions.md
-            - name: Henvisninger
+            - name: Periodiseringer
               items:
-                - name: Oppsett av henvisninger
+                - name: Definere periodiseringer
                   href: ../financials/localizations/rus-set-up-deferrals.md
-                - name: Opprette eller generere henvisninger
+                - name: Opprette eller generere periodiseringer
                   href: ../financials/localizations/rus-create-generate-deferrals.md
-                - name: Mottak av henvisninger
+                - name: Mottak av periodiseringer
                   href: ../financials/localizations/rus-deferral-transactions.md
-                - name: Avskrive henvisninger
+                - name: Avskrive periodiseringer
                   href: ../financials/localizations/rus-write-off-deferral.md
-                - name: Fjerne henvisninger
+                - name: Fjerne periodiseringer
                   href: ../financials/localizations/rus-dispose-deferrals.md
-                - name: Opptelling av henvisninger
+                - name: Opptelling av periodiseringer
                   href: ../financials/localizations/rus-counting-deferrals.md
-                - name: Rapportering av henvisninger
+                - name: Rapportering av periodiseringer
                   href: ../financials/localizations/rus-reporting-deferrals.md
         - name: Saudi-Arabia
-          href: ../financials/localizations/saudi-arabia.md
           items:
+            - name: Oversikt over Saudi-Arabia
+              href: ../financials/localizations/saudi-arabia.md
             - name: Merverdiavgift
               href: ../financials/localizations/apac-sau-sales-tax.md
             - name: Zakat-rapportering for Saudi-Arabia
               href: ../financials/localizations/emea-sau-zakat-reporting.md
         - name: Singapore
-          href: ../financials/localizations/singapore.md
           items:
-            - name: Generere rapporten GST-05
+            - name: Oversikt over Singapore
+              href: ../financials/localizations/singapore.md
+            - name: Generer rapporten GST-05
               href: ../financials/localizations/apac-sgp-generate-gst-05-report.md
         - name: Spania
-          href: ../financials/localizations/spain.md
           items:
+            - name: Oversikt over Spania
+              href: ../financials/localizations/spain.md
             - name: Bruke kontantrabatter i fakturaen
               href: ../financials/localizations/emea-esp-cash-discount-applied-invoice.md
             - name: Alternativer for veksel
@@ -2472,8 +2734,9 @@
             - name: Spesielle oppføringer og åpningsark
               href: ../financials/localizations/emea-esp-opening-sheets-spain.md
         - name: Sverige
-          href: ../financials/localizations/sweden.md
           items:
+            - name: Oversikt over Sverige
+              href: ../financials/localizations/sweden.md
             - name: Eksportere økonomisk informasjon til revisorer i Sverige
               href: ../financials/localizations/emea-swe-sie-standard-report.md
             - name: Importere betalingsformater
@@ -2481,13 +2744,15 @@
             - name: Kassaapparater
               href: ../retail/localizations/emea-swe-cash-registers.md?toc=/fin-and-ops/toc.json
         - name: Sveits
-          href: ../financials/localizations/switzerland.md
           items:
+            - name: Oversikt over Sveits
+              href: ../financials/localizations/switzerland.md
             - name: Importere kundebetalinger i ESR
               href: ../financials/localizations/emea-che-esr-customer-payments-import.md
         - name: Thailand
-          href: ../financials/localizations/thailand.md
           items:
+            - name: Oversikt over Thailand
+              href: ../financials/localizations/thailand.md
             - name: Lagerkortrapporter
               href: ../financials/localizations/apac-tha-stock-card-reports.md
             - name: Avgiftsfaktura for erstatning/justering
@@ -2497,8 +2762,9 @@
             - name: Kildeskatt
               href: ../financials/localizations/apac-tha-withholding-tax.md
         - name: Storbritannia
-          href: ../financials/localizations/united-kingdom.md
           items:
+            - name: Oversikt over Storbritannia
+              href: ../financials/localizations/united-kingdom.md
             - name: Skjema for byggebransjen
               href: ../financials/localizations/emea-gbr-cis-construction-industry-scheme.md
             - name: Opprette en kreditt på utligningsrabatten
@@ -2516,15 +2782,17 @@
             - name: Gjøre mva digital
               href: ../financials/localizations/emea-gbr-mtd-vat-integration.md
         - name: USA
-          href: ../financials/localizations/united-states.md
           items:
+            - name: Oversikt over USA
+              href: ../financials/localizations/united-states.md
             - name: 1099-rapportering ved årsavslutning i USA
               href: ../financials/localizations/noam-usa-year-end-1099-reporting.md
             - name: Skjema 1099 for offentlig sektor
               href: ../financials/localizations/noam-usa-form-1099-public-sector.md
     - name: Personale
-      href: hr/hr-landing-page.md
       items:
+        - name: Oversikt over personale
+          href: hr/hr-landing-page.md
         - name: Utvikle en personalstrategi
           items:
             - name: Opprette mål
@@ -2675,9 +2943,10 @@
               href: hr/tasks/set-up-injury-illness-information.md
             - name: Vedlikeholde informasjon om ansattskade og -sykdom
               href: hr/tasks/maintain-employee-injury-illness-information.md
-        - name: US Payroll
-          href: hr/localizations/noam-usa-payroll.md
+        - name: Amerikansk lønn
           items:
+            - name: Oversikt over amerikansk lønn
+              href: hr/localizations/noam-usa-payroll.md
             - name: Lønnsoppsett
               items:
                 - name: Definere lønn for arbeidere
@@ -2743,13 +3012,15 @@
                 - name: Standard lønnsrapporter
                   href: hr/localizations/noam-usa-generate-payroll-reports.md
     - name: Intelligens
-      href: ../dev-itpro/analytics/bi-reporting-home-page.md?toc=/fin-and-ops/toc.json
       items:
+        - name: Startside for intelligens
+          href: ../dev-itpro/analytics/bi-reporting-home-page.md?toc=/fin-and-ops/toc.json
         - name: Informasjonstilgang og rapportering
           href: ../dev-itpro/analytics/information-access-reporting.md?toc=/fin-and-ops/toc.json
         - name: Power BI-innhold
-          href: ../dev-itpro/analytics/power-bi-home-page.md?toc=/fin-and-ops/toc.json
           items:
+            - name: Startside for Power BI-innhold
+              href: ../dev-itpro/analytics/power-bi-home-page.md?toc=/fin-and-ops/toc.json
             - name: Faktisk i forhold til budsjett
               href: ../dev-itpro/analytics/ledger-budgets-power-bi.md?toc=/fin-and-ops/toc.json
             - name: Fordeler
@@ -2763,8 +3034,9 @@
             - name: Kompensasjon og fordeler
               href: ../dev-itpro/analytics/compensation-and-benefits-analysis-power-bi-content-pack.md?toc=/fin-and-ops/toc.json
             - name: Kostnadsregnskapsanalyse
-              href: ../dev-itpro/analytics/cost-accounting-analysis-content-pack.md?toc=/fin-and-ops/toc.json
               items:
+                - name: Power BI-innholdet Kostnadsregnskapsanalyse
+                  href: ../dev-itpro/analytics/cost-accounting-analysis-content-pack.md?toc=/fin-and-ops/toc.json
                 - name: Definere sikkerhet for Power BI-innhold for analyse av kostnadsregnskap
                   href: ../dev-itpro/analytics/setup-security-cost-accounting-content-pack.md?toc=/fin-and-ops/toc.json
             - name: Kostnadsstyring
@@ -2807,13 +3079,14 @@
               href: ../dev-itpro/analytics/workforce-analysis-power-bi-content-pack.md?toc=/fin-and-ops/toc.json
         - name: Rapportere og skrive ut og dokumenter
           items:
-            - name: Oversikt over Document Reporting Services
+            - name: Oversikt over dokumentrapporteringstjenester
               href: ../dev-itpro/analytics/document-reporting-services.md?toc=/fin-and-ops/toc.json
             - name: Konfigurere SSRS for lokale distribusjoner
               href: ../dev-itpro/analytics/configure-ssrs-on-premises.md?toc=/fin-and-ops/toc.json
-            - name: Utskrift
-              href: ../dev-itpro/analytics/print-documents.md?toc=/fin-and-ops/toc.json
+            - name: Skriver ut
               items:
+                - name: Oversikt over utskrift av dokument
+                  href: ../dev-itpro/analytics/print-documents.md?toc=/fin-and-ops/toc.json
                 - name: Installere dokumentrutingsagenten slik at nettverksutskrift kan brukes
                   href: ../dev-itpro/analytics/install-document-routing-agent.md?toc=/fin-and-ops/toc.json
                 - name: Oppgradere dokumentrutingsagenten
@@ -2910,10 +3183,8 @@
                       href: ../dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-part-3-generate-reports.md?toc=/fin-and-ops/toc.json
             - name: Endre formater for elektronisk rapportering ved å bruke Excel-maler på nytt
               href: ../dev-itpro/analytics/modify-electronic-reporting-format-reapply-excel-template.md?toc=/fin-and-ops/toc.json
-            - name: Utforme avhengige ER-konfigurasjoner for versjon av Finance and Operations
-              items:
-                - name: Definere avhengigheten av ER-konfigurasjonene i andre komponenter
-                  href: ../dev-itpro/analytics/tasks/er-define-dependency-er-configurations-from-other-components-july-2017.md?toc=/fin-and-ops/toc.json
+            - name: Definere avhengigheten av ER-konfigurasjonene i andre komponenter
+              href: ../dev-itpro/analytics/tasks/er-define-dependency-er-configurations-from-other-components-july-2017.md?toc=/fin-and-ops/toc.json
             - name: Utforme en ER-løsning for å bruke finansdimensjoner
               items:
                 - name: Utforme datamodeller til å bruke finansdimensjoner som datakilder
@@ -3032,9 +3303,11 @@
                       href: ../dev-itpro/analytics/er-generate-printable-fti-forms.md?toc=/fin-and-ops/toc.json
                 - name: Spore kjøring av ER-formater for å feilsøke ytelsesproblemer
                   href: ../dev-itpro/analytics/trace-execution-er-troubleshoot-perf.md?toc=/fin-and-ops/toc.json
+                - name: Oversikt over administrasjon av forretningsdokument
+                  href: ../dev-itpro/analytics/er-business-document-management.md?toc=/fin-and-ops/toc.json
             - name: API for ER-rammeverk
               items:
-                - name: Utvide listen over funksjoner for elektronisk rapportering (ER)
+                - name: Utvide listen over funksjoner for elektronisk rapportering
                   href: ../dev-itpro/analytics/general-electronic-reporting-formulas-list-extension.md?toc=/fin-and-ops/toc.json
                 - name: API-endringer for elektronisk rapporteringsrammeverk for Application update 7.3
                   href: ../dev-itpro/analytics/er-apis-app73.md?toc=/fin-and-ops/toc.json
@@ -3081,16 +3354,19 @@
             - name: Vise din egen database
               href: ../dev-itpro/analytics/export-entities-to-your-own-database.md?toc=/fin-and-ops/toc.json
     - name: Lagerstyring
-      href: ../supply-chain/inventory/inventory-home-page.md
       items:
-        - name: Ankomstoversikt
-          href: ../supply-chain/inventory/arrival-overview.md
+        - name: Oversikt over lagerstyring
+          href: ../supply-chain/inventory/inventory-home-page.md
+        - name: Ankomst
           items:
+            - name: Ankomstoversikt
+              href: ../supply-chain/inventory/arrival-overview.md
             - name: Definere en profil for vareankomstoversikt
               href: ../supply-chain/inventory/tasks/set-up-item-arrival-overview-profile.md
         - name: Kvalitetsstyring
-          href: ../supply-chain/inventory/enable-quality-management.md
           items:
+            - name: Oversikt over kvalitetsstyring
+              href: ../supply-chain/inventory/enable-quality-management.md
             - name: Kvalitetsstyringsprosesser
               href: ../supply-chain/inventory/quality-management-processes.md
             - name: Avviksstyring
@@ -3156,8 +3432,9 @@
             - name: Mobilt arbeidsområde for lagerbeholdning
               href: ../supply-chain/inventory/inventory-on-hand-mobile-workspace.md
         - name: Utgående prosess
-          href: ../supply-chain/inventory/outbound-process.md
           items:
+            - name: Oversikt over utgående prosess
+              href: ../supply-chain/inventory/outbound-process.md
             - name: Reservere lagerantall
               href: ../supply-chain/inventory/reserve-inventory-quantities.md
             - name: Reservere samme parti for en salgsordre
@@ -3265,12 +3542,140 @@
               href: ../supply-chain/asset-management/manage-maintenance-requests/inbound-and-outbound-assets.md
             - name: Rapporter om vedlikeholdsanmodninger
               href: ../supply-chain/asset-management/manage-maintenance-requests/maintenance-request-reports.md
-    - name: Hovedplanlegging
-      href: ../supply-chain/master-planning/master-planning-home-page.md
-      items:
-        - name: Hovedplaner
-          href: ../supply-chain/master-planning/master-plans.md
+        - name: Oppsett for arbeidsordrer
           items:
+            - name: 'Kategorier for vedlikeholdsjobbtype og vedlikeholdsjobbtyper, varianter av vedlikeholdsjobbtype, handel for vedlikeholdsjobb og sjekklister for vedlikehold'
+              href: ../supply-chain/asset-management/setup-for-work-orders/job-groups-and-job-types-variants-trades-and-checklists.md
+            - name: Livssyklustilstand for arbeidsordre
+              href: ../supply-chain/asset-management/setup-for-work-orders/work-order-lifecycle-states.md
+            - name: Arbeidsordretyper
+              href: ../supply-chain/asset-management/setup-for-work-orders/work-order-types.md
+            - name: Prosjektoppsett for arbeidsordre
+              href: ../supply-chain/asset-management/setup-for-work-orders/work-order-project-setup.md
+            - name: Servicenivå og -beskrivelse
+              href: ../supply-chain/asset-management/setup-for-work-orders/service-level-and-description.md
+            - name: Planlagt utførelse
+              href: ../supply-chain/asset-management/setup-for-work-orders/scheduled-execution.md
+            - name: Feilstyring
+              href: ../supply-chain/asset-management/setup-for-work-orders/fault-management.md
+        - name: Arbeidsordrer
+          items:
+            - name: Innføring i arbeidsordrer
+              href: ../supply-chain/asset-management/work-orders/introduction-to-work-orders.md
+            - name: Manuelt opprettede arbeidsordrer
+              href: ../supply-chain/asset-management/work-orders/manually-created-workorders.md
+            - name: Vedlikeholdsprognoser
+              href: ../supply-chain/asset-management/work-orders/maintenance-forecasts.md
+            - name: Innkjøp
+              href: ../supply-chain/asset-management/work-orders/procurement.md
+            - name: Manuell oppdatering av anleggsmiddeltellere
+              href: ../supply-chain/asset-management/work-orders/manual-update-of-asset-counters.md
+            - name: Automatisk oppdatering av anleggsmiddeltellere
+              href: ../supply-chain/asset-management/work-orders/automatic-update-of-asset-counters.md
+            - name: Sjekklister for vedlikehold
+              href: ../supply-chain/asset-management/work-orders/maintenance-checklists.md
+            - name: Nedetid ved vedlikehold
+              href: ../supply-chain/asset-management/work-orders/maintenance-downtime.md
+            - name: Legge til feil i arbeidsordre
+              href: ../supply-chain/asset-management/work-orders/add-fault-to-work-order.md
+            - name: Arbeidsordrerapport
+              href: ../supply-chain/asset-management/work-orders/work-order-report.md
+            - name: Arbeidsordresamlinger
+              href: ../supply-chain/asset-management/work-orders/work-order-pools.md
+            - name: Vedlikeholdsjobber for aktive arbeidsordrer
+              href: ../supply-chain/asset-management/work-orders/active-work-order-jobs-overview.md
+            - name: Arbeidsordrer og anleggsmidler
+              href: ../supply-chain/asset-management/work-orders/work-orders-and-fixed-assets.md
+        - name: Integrering til prosjektstyring og regnskap
+          items:
+            - name: 'Prognoser, arbeidsordrer og prosjekter'
+              href: ../supply-chain/asset-management/integration-to-project-management-and-accounting/forecasts-work-orders-and-projects.md
+        - name: Forebyggende og reaktivt vedlikehold
+          items:
+            - name: Forebyggende vedlikehold
+              href: ../supply-chain/asset-management/preventive-and-reactive-maintenance/preventive-maintenance-overview.md
+            - name: Vedlikeholdsplaner
+              href: ../supply-chain/asset-management/preventive-and-reactive-maintenance/maintenance-plans.md
+            - name: Planlegg vedlikeholdsplaner
+              href: ../supply-chain/asset-management/preventive-and-reactive-maintenance/schedule-maintenance-plans.md
+            - name: Vedlikeholdsrunder
+              href: ../supply-chain/asset-management/preventive-and-reactive-maintenance/maintenance-rounds.md
+            - name: Vedlikeholdsplan
+              href: ../supply-chain/asset-management/preventive-and-reactive-maintenance/maintenance-schedule.md
+            - name: Kostnader for vedlikeholdsplan
+              href: ../supply-chain/asset-management/preventive-and-reactive-maintenance/maintenance-schedule-cost.md
+            - name: Opprett arbeidsordrer
+              href: ../supply-chain/asset-management/preventive-and-reactive-maintenance/creating-work-orders.md
+            - name: Nedetid ved vedlikehold
+              href: ../supply-chain/asset-management/preventive-and-reactive-maintenance/maintenance-stop.md
+        - name: Kapasitetsplanlegging
+          items:
+            - name: Beregn kapasitetsbelastning
+              href: ../supply-chain/asset-management/capacity-planning/calculate-capacity-load.md
+            - name: Beregn vareprognose
+              href: ../supply-chain/asset-management/capacity-planning/calculate-item-forecast.md
+        - name: Planlegging av arbeidsordre
+          items:
+            - name: Arbeidskalender og planlegging for vedlikehold
+              href: ../supply-chain/asset-management/work-order-scheduling/maintenance-worker-calendar-and-scheduling.md
+            - name: Foretrukne vedlikeholdspersoner
+              href: ../supply-chain/asset-management/work-order-scheduling/preferred-maintenance-workers.md
+            - name: Planlegg arbeidsordrer
+              href: ../supply-chain/asset-management/work-order-scheduling/schedule-work-orders.md
+            - name: Fordelingsarbeidsordre
+              href: ../supply-chain/asset-management/work-order-scheduling/dispatch-work-order.md
+            - name: Planlegge arbeidsordre på bestemt dato og klokkeslett
+              href: ../supply-chain/asset-management/work-order-scheduling/schedule-work-order-on-specific-date-and-time.md
+            - name: Planlagte vedlikeholdsjobber for arbeidsordrer
+              href: ../supply-chain/asset-management/work-order-scheduling/scheduled-work-order-maintenance-jobs.md
+            - name: Beregne kapasitetsbelastning på planlagte arbeidsordrer
+              href: ../supply-chain/asset-management/work-order-scheduling/calculate-capacity-load-on-scheduled-work-orders.md
+        - name: Forbruk
+          items:
+            - name: Registrere forbruk
+              href: ../supply-chain/asset-management/consumption/register-consumption.md
+            - name: Opprette forbruksrapporter
+              href: ../supply-chain/asset-management/consumption/create-consumption-reports.md
+        - name: Garanti
+          items:
+            - name: Garantiavtale
+              href: ../supply-chain/asset-management/warranty/warranty-agreement.md
+            - name: Garanti for eiendeler og anleggsmiddeltyper
+              href: ../supply-chain/asset-management/warranty/warranty-on-assets-and-asset-types.md
+        - name: Vedlikeholdsbudsjetter
+          items:
+            - name: Vedlikeholdsbudsjetter
+              href: ../supply-chain/asset-management/maintenance-budgets/create-maintenance-budget.md
+            - name: Oppdatere vedlikeholdsbudsjetter
+              href: ../supply-chain/asset-management/maintenance-budgets/update-maintenance-budget.md
+        - name: Kontroll og rapportering
+          items:
+            - name: Kostnads- og datokontroll
+              href: ../supply-chain/asset-management/controlling-and-reporting/cost-and-date-control.md
+            - name: Arbeidstidskontroll
+              href: ../supply-chain/asset-management/controlling-and-reporting/work-hour-control.md
+            - name: Kostnadskontroll for aktivumfeil
+              href: ../supply-chain/asset-management/controlling-and-reporting/asset-fault-cost-control.md
+            - name: Feilanalyse av aktivum
+              href: ../supply-chain/asset-management/controlling-and-reporting/asset-fault-analysis.md
+            - name: KPI-er for aktivum
+              href: ../supply-chain/asset-management/controlling-and-reporting/asset-kpis.md
+            - name: Brukssted for vare
+              href: ../supply-chain/asset-management/controlling-and-reporting/item-where-used.md
+            - name: Vedlikeholdsstatus
+              href: ../supply-chain/asset-management/controlling-and-reporting/maintenance-status.md
+        - name: Databehandling
+          items:
+            - name: Målenheter
+              href: ../supply-chain/asset-management/data-management/target-entities.md
+    - name: Hovedplanlegging
+      items:
+        - name: Startside for hovedplanlegging
+          href: ../supply-chain/master-planning/master-planning-home-page.md
+        - name: Hovedplaner
+          items:
+            - name: Oversikt over hovedplaner
+              href: ../supply-chain/master-planning/master-plans.md
             - name: Definere hovedplaner
               href: ../supply-chain/master-planning/master-planning-setup.md
             - name: Veiviser for oppsett for hovedplanlegging
@@ -3304,8 +3709,9 @@
             - name: Forbedre ytelsen for hovedplanlegging
               href: ../supply-chain/master-planning/master-planning-performance.md
             - name: Hovedplaner og multisite-funksjonalitet
-              href: ../supply-chain/master-planning/master-plan-multisite-functionality.md
               items:
+                - name: Oversikt over hovedplanlegging og multisite-funksjonalitet
+                  href: ../supply-chain/master-planning/master-plan-multisite-functionality.md
                 - name: 'Hovedplanlegging for områdedekning, obligatorisk lager'
                   href: ../supply-chain/master-planning/master-plan-site-coverage-warehouse-mandatory.md
                 - name: 'Hovedplanlegging for områdedekning, lager ikke obligatorisk'
@@ -3327,8 +3733,9 @@
             - name: Samarbeide med kunder for intern forsyningskjede
               href: ../supply-chain/master-planning/tasks/collaborate-internal-supply-chain-customers.md
         - name: Behovsprognose
-          href: ../supply-chain/master-planning/introduction-demand-forecasting.md
           items:
+            - name: Oversikt over behovsprognose
+              href: ../supply-chain/master-planning/introduction-demand-forecasting.md
             - name: Oppsett av behovsprognose
               href: ../supply-chain/master-planning/demand-forecasting-setup.md
             - name: Importere historiske data for behovsprognoser
@@ -3349,17 +3756,19 @@
               href: ../supply-chain/master-planning/tasks/create-baseline-forecast.md
             - name: Endre en behovsprognose manuelt
               href: ../supply-chain/master-planning/tasks/modify-demand-forecast-manually.md
-    - name: Mobilapp
-      href: ../dev-itpro/mobile-apps/Mobile-app-home-page.md?toc=/fin-and-ops/toc.json
+    - name: Mobilappen Dynamics 365 for Unified Operations
       items:
-        - name: Tilgjengelige mobile arbeidsområder
-          href: ../dev-itpro/mobile-apps/mobile-workspaces-released.md?toc=/fin-and-ops/toc.json
+        - name: Startside for mobilappen Dynamics 365 for Unified Operations
+          href: ../dev-itpro/mobile-apps/Mobile-app-home-page.md?toc=/fin-and-ops/toc.json
+        - name: Mobile arbeidsområder
           items:
+            - name: Tilgjengelige mobile arbeidsområder
+              href: ../dev-itpro/mobile-apps/mobile-workspaces-released.md?toc=/fin-and-ops/toc.json
             - name: Firmakatalog
               href: ../dev-itpro/mobile-apps/company-directory-mobile-workspace.md?toc=/fin-and-ops/toc.json
             - name: Kostnadskontroll
               href: ../financials/cost-accounting/cost-controlling-mobile-workspace.md
-            - name: Reiseregning
+            - name: Reiseregning og utlegg
               href: ../financials/expense-management/expense-management-mobile-workspace.md
             - name: Lagerbeholdning
               href: ../supply-chain/inventory/inventory-on-hand-mobile-workspace.md
@@ -3367,11 +3776,11 @@
               href: ../dev-itpro/mobile-apps/invoice-approval-mobile-workspace.md?toc=/fin-and-ops/toc.json
             - name: Mitt team
               href: ../dev-itpro/mobile-apps/manager-self-service-mobile-workspace.md?toc=/fin-and-ops/toc.json
-            - name: Oversikt over mobilapper for prosjekt
+            - name: Oversikt over mobilapper for Project
               href: ../financials/project-management/project-mobile-application-overview.md
             - name: Tidsoppføring for prosjekt
               href: ../financials/project-management/project-time-entry-mobile-workspace.md
-            - name: Timeregistreringer for prosjekt
+            - name: Project Timesheet
               href: ../financials/project-management/project-timesheet.md
             - name: Godkjenning av bestilling
               href: ../supply-chain/procurement/purchase-order-mobile-workspace.md
@@ -3382,8 +3791,9 @@
         - name: Publisere mobile arbeidsområder
           href: ../dev-itpro/mobile-apps/publish-mobile-workspace.md?toc=/fin-and-ops/toc.json
     - name: Office-integrering
-      href: ../dev-itpro/office-integration/office-integration.md?toc=/fin-and-ops/toc.json
       items:
+        - name: Oversikt over Office-integrering
+          href: ../dev-itpro/office-integration/office-integration.md?toc=/fin-and-ops/toc.json
         - name: Opplæring i Office-integrering
           href: ../dev-itpro/office-integration/office-integration-tutorial.md?toc=/fin-and-ops/toc.json
         - name: Åpne enhetsdata i Excel og oppdatere dem ved hjelp av Excel-tillegg
@@ -3401,25 +3811,29 @@
         - name: Feilsøke Office-integreringen
           href: ../dev-itpro/office-integration/office-integration-troubleshooting.md?toc=/fin-and-ops/toc.json
     - name: Innkjøp og leverandører
-      href: ../supply-chain/procurement/procurement-sourcing-overview.md
       items:
+        - name: Oversikt over innkjøp og leverandører
+          href: ../supply-chain/procurement/procurement-sourcing-overview.md
         - name: Arbeidsflyt for innkjøp og leverandører
           href: ../supply-chain/procurement/procurement-sourcing-workflows.md
         - name: Innkjøpskataloger
-          href: ../supply-chain/procurement/procurement-catalogs.md
           items:
+            - name: Oversikt over innkjøpskataloger
+              href: ../supply-chain/procurement/procurement-catalogs.md
             - name: Opprette en innkjøpskatalog
               href: ../supply-chain/procurement/tasks/create-procurement-catalog.md
             - name: Definere et innkjøpskategorihierarki
               href: ../supply-chain/procurement/tasks/set-up-procurement-category-hierarchy.md
         - name: Innkjøpsrekvisisjoner
-          href: ../supply-chain/procurement/purchase-requisitions-overview.md
           items:
+            - name: Oversikt over innkjøpsrekvisisjoner
+              href: ../supply-chain/procurement/purchase-requisitions-overview.md
             - name: Arbeidsflyt for innkjøpsrekvisisjon
               href: ../supply-chain/procurement/purchase-requisitions-workflow.md
         - name: Tilbudsforespørsler (RFQ-er)
-          href: ../supply-chain/procurement/request-quotations.md
           items:
+            - name: Oversikt over tilbudsforespørsler (RFQ-er)
+              href: ../supply-chain/procurement/request-quotations.md
             - name: Opprette en tilbudsforespørsel
               href: ../supply-chain/procurement/tasks/create-request-quotation.md
             - name: Opprette en rekvisisjon som bruker en tilbudsforespørsel
@@ -3471,8 +3885,9 @@
             - name: Leverandørrabatter
               href: ../supply-chain/procurement/vendor-rebates.md
         - name: Innkjøpspolicyer
-          href: ../supply-chain/procurement/purchase-policies.md
           items:
+            - name: Oversikt over innkjøpspolicyer
+              href: ../supply-chain/procurement/purchase-policies.md
             - name: Opprette innkjøpspolicyer
               href: ../supply-chain/procurement/tasks/create-purchasing-policies.md
             - name: Definere policyer for innkjøpskategorihierarkier
@@ -3530,18 +3945,21 @@
             - name: Sende og godkjenne prosjektbudsjettendringer
               href: ../supply-chain/procurement/tasks/submit-approve-project-budget-revision.md
     - name: Organisasjonsstyring
-      href: organization-administration/organization-administration-home-page.md
       items:
+        - name: Startside for organisasjonsstyring
+          href: organization-administration/organization-administration-home-page.md
         - name: Nummerserier
-          href: organization-administration/number-sequence-overview.md
           items:
+            - name: Oversikt over nummerserier
+              href: organization-administration/number-sequence-overview.md
             - name: Konfigurere nummerserier enkeltvis
               href: organization-administration/tasks/set-up-number-sequences-individual-basis.md
             - name: Konfigurere alle nødvendige nummerserier ved hjelp av en veiviser
               href: organization-administration/tasks/set-up-number-sequences-wizard.md
         - name: Organisasjoner og organisasjonshierarkier
-          href: organization-administration/organizations-organizational-hierarchies.md
           items:
+            - name: Oversikt over organisasjoner og organisasjonshierarkier
+              href: organization-administration/organizations-organizational-hierarchies.md
             - name: Planlegge organisasjonshierarkiet
               href: organization-administration/plan-organizational-hierarchy.md
             - name: Opprette et organisasjonshierarki
@@ -3551,8 +3969,9 @@
             - name: Opprette driftsenheter
               href: organization-administration/tasks/create-operating-unit.md
         - name: Global adressebok
-          href: organization-administration/overview-global-address-book.md
           items:
+            - name: Oversikt over global adressebok
+              href: organization-administration/overview-global-address-book.md
             - name: Planlegge den globale adresseboken og andre adressebøker
               href: organization-administration/plan-configuration-global-address-book-additional-address-books.md
             - name: Konfigurere den globale adresseboken
@@ -3562,8 +3981,9 @@
             - name: Konfigurere adressebøker
               href: organization-administration/tasks/address-books.md
         - name: Arbeidsflytsystem
-          href: organization-administration/overview-workflow-system.md
           items:
+            - name: Oversikt over arbeidsflytsystem
+              href: organization-administration/overview-workflow-system.md
             - name: Arkitektur i arbeidsflytsystemet
               href: organization-administration/workflow-system-architecture.md
             - name: Arbeidsflytelementer
@@ -3571,8 +3991,9 @@
             - name: Arbeidsflythandlinger
               href: organization-administration/workflow-actions.md
             - name: Opprette arbeidsflyter
-              href: organization-administration/create-workflow.md
               items:
+                - name: Oversikt over å opprette arbeidsflyter
+                  href: organization-administration/create-workflow.md
                 - name: Konfigurere egenskaper for arbeidsflyt
                   href: organization-administration/configure-workflow-properties.md
                 - name: Konfigurere manuelle oppgaver
@@ -3623,28 +4044,32 @@
               href: organization-administration/workflow-types-report.md
             - name: Vanlige spørsmål om arbeidsflyt
               href: organization-administration/workflow-FAQ.md
-        - name: Varslinger
-          href: get-started/alerts-overview.md
+        - name: Varsler
           items:
-            - name: Opprette varslingsregler
+            - name: Oversikt over varsler
+              href: get-started/alerts-overview.md
+            - name: Opprette varselregler
               href: get-started/create-alerts.md
             - name: Satsvis behandling for varsler
               href: get-started/alerts-managing.md
             - name: Varselmeldinger til klient via e-post
               href: get-started/alert-email-notifications.md
         - name: Elektroniske signaturer
-          href: organization-administration/electronic-signature-overview.md
           items:
+            - name: Oversikt over elektroniske signaturer
+              href: organization-administration/electronic-signature-overview.md
             - name: Definere elektroniske signaturer
               href: organization-administration/tasks/set-up-electronic-signatures.md
         - name: Saksbehandling
-          href: organization-administration/cases.md
           items:
+            - name: Oversikt over saksbehandling
+              href: organization-administration/cases.md
             - name: 'Planlegge sakssikkerhet, prosesser og kategorier'
               href: organization-administration/plan-case-management.md
         - name: Postmaler
-          href: organization-administration/record-templates.md
           items:
+            - name: Oversikt over postmaler
+              href: organization-administration/record-templates.md
             - name: Opprette en postmal
               href: ../dev-itpro/data-entities/tasks/create-record-template-facilitate-data-entry.md?toc=/fin-and-ops/toc.json
             - name: Bruke en postmal til å opprette en ny post
@@ -3656,8 +4081,9 @@
         - name: Dato-/klokkeslettdata og tidssoner
           href: organization-administration/date-time-zones.md
     - name: Produksjonskontroll
-      href: ../supply-chain/production-control/production-process-overview.md
       items:
+        - name: Oversikt over produksjonsprosess
+          href: ../supply-chain/production-control/production-process-overview.md
         - name: 'Blandet modusplanlegging: Kombinere diskret, behandle og lean-leverandører'
           href: ../supply-chain/production-control/mixed-mode-plan.md
         - name: Administrere utsettingsarbeid i produksjon
@@ -3721,8 +4147,9 @@
             - name: Operere produksjonsjobber
               items:
                 - name: Behandle livssyklus for produksjonsordre
-                  href: ../supply-chain/production-control/create-production-orders.md
                   items:
+                    - name: Oversikt over livssyklus for produksjonsordre
+                      href: ../supply-chain/production-control/create-production-orders.md
                     - name: Opprette en produksjonsordre
                       href: ../supply-chain/production-control/tasks/create-production-order.md
                     - name: Estimere en produksjonsordre
@@ -3782,8 +4209,9 @@
                 - name: Produksjonspostering
                   href: ../supply-chain/cost-management/production-posting.md
             - name: Timeregistrering
-              href: ../supply-chain/production-control/time-attendance-registrations.md
               items:
+                - name: Oversikt over timeregistreringsarbeidere
+                  href: ../supply-chain/production-control/time-attendance-registrations.md
                 - name: Lønn basert på registreringer
                   href: ../supply-chain/production-control/pay-based-on-registrations.md
                 - name: Fraværsregistrering i Timeregistrering
@@ -3945,8 +4373,9 @@
                 - name: Produksjonspostering
                   href: ../supply-chain/cost-management/production-posting.md
     - name: Behandling av produktinformasjon
-      href: ../supply-chain/pim/product-information.md
       items:
+        - name: Oversikt over produktinformasjon
+          href: ../supply-chain/pim/product-information.md
         - name: Produktinformasjon
           items:
             - name: Produktidentifikatorer
@@ -3972,8 +4401,9 @@
             - name: Opprette et frigitt produkt for ett firma
               href: ../supply-chain/pim/tasks/create-released-product-single-company.md
             - name: Livssyklustilstand for produkt
-              href: ../supply-chain/pim/product-lifecycle.md
               items:
+                - name: Oversikt over tilstand for produktlivssyklus
+                  href: ../supply-chain/pim/product-lifecycle.md
                 - name: Opprette en ny livssyklustilstand for produkt
                   href: ../supply-chain/pim/tasks/new-product-lifecycle-state.md
                 - name: Opprette en standard livssyklustilstand for produkt
@@ -4017,11 +4447,13 @@
             - name: Stykklisteberegninger
               href: ../supply-chain/cost-management/bom-calculations.md
         - name: Produktkonfigurasjon
-          href: ../supply-chain/pim/build-product-configuration-model.md
           items:
+            - name: Oversikt over produktkonfigurasjon
+              href: ../supply-chain/pim/build-product-configuration-model.md
             - name: Opprette dimensjonsbasert konfigurasjon
-              href: ../supply-chain/pim/dimension-based-product-configuration.md
               items:
+                - name: Oversikt over dimensjonsbasert produktkonfigurasjon
+                  href: ../supply-chain/pim/dimension-based-product-configuration.md
                 - name: Produktdimensjon
                   href: ../supply-chain/pim/product-dimensions.md
                 - name: Opprette en dimensjonsbasert produktstandard
@@ -4041,8 +4473,9 @@
                 - name: Opprette dimensjonsbaserte konfigurasjoner
                   href: ../supply-chain/pim/tasks/create-dimension-based-configurations.md
             - name: Opprette restriksjonsbasert konfigurasjon
-              href: ../supply-chain/pim/set-up-maintain-product-configuration-model.md
               items:
+                - name: Definere en produktkonfigurasjonsmodell
+                  href: ../supply-chain/pim/set-up-maintain-product-configuration-model.md
                 - name: Vanlige spørsmål om beregning for produktkonfigurasjonsmodell
                   href: ../supply-chain/pim/calculate-product-configuration-models.md
                 - name: Konfigurasjonsregel
@@ -4072,8 +4505,9 @@
                 - name: Overføre data for produktmodeller
                   href: ../supply-chain/pim/tasks/transfer-data-product-models.md
     - name: Prosjektstyring og regnskap
-      href: ../financials/project-management/overview-project-management-accounting.md
       items:
+        - name: Oversikt over prosjektstyring og regnskap
+          href: ../financials/project-management/overview-project-management-accounting.md
         - name: Konsernintern fakturering
           href: ../financials/project-management/intercompany-invoicing.md
         - name: Konfigurere konsernintern prosjektfakturering
@@ -4099,23 +4533,25 @@
         - name: Motta varer i bestilling fra varebehov
           href: ../financials/project-management/tasks/receive-items-purchase-order-item-requirement.md
         - name: Arbeidsnedbrytningsstruktur
-          href: ../financials/project-management/work-breakdown-structures.md
           items:
-            - name: Integrering av Microsoft Project-klient
+            - name: Oversikt over arbeidsnedbrytningsstruktur
+              href: ../financials/project-management/work-breakdown-structures.md
+            - name: Integrering av Microsoft Project Client
               href: ../financials/project-management/project-integration.md
-        - name: Oversikt over mobilapper for prosjekt
+        - name: Oversikt over mobilapper for Project
           href: ../financials/project-management/project-mobile-application-overview.md
         - name: Mobilt arbeidsområde for registrering av prosjekttid
           href: ../financials/project-management/project-time-entry-mobile-workspace.md
-        - name: Mobilapp for timeregistreringer for prosjekt
+        - name: Mobilappen Project Timesheet
           href: ../financials/project-management/project-timesheet.md
         - name: Timeregistreringer for prosjekt på en mobilenhet
           href: ../financials/project-management/mobile-timesheets.md
-        - name: Implementere egendefinerte felt for mobilappen for timeregistreringer for prosjekt
+        - name: Implementere egendefinerte felt for mobilappen Project Timesheet
           href: ../financials/project-management/custom-fields-mobile.md
     - name: Salg og markedsføring
-      href: ../supply-chain/sales-marketing/overview-sales-marketing.md
       items:
+        - name: Oversikt over salg og markedsføring
+          href: ../supply-chain/sales-marketing/overview-sales-marketing.md
         - name: Salgsordrer
           items:
             - name: Ordrebekreftelse
@@ -4149,8 +4585,9 @@
             - name: Bekrefte salgsordrer
               href: ../supply-chain/sales-marketing/tasks/confirm-sales-orders.md
         - name: Salgsavtaler
-          href: ../supply-chain/sales-marketing/sales-agreements.md
           items:
+            - name: Oversikt over salgsavtaler
+              href: ../supply-chain/sales-marketing/sales-agreements.md
             - name: Angi salgsavtaler
               href: ../supply-chain/sales-marketing/tasks/enter-sales-agreements.md
             - name: Oppfylle salgsavtaler
@@ -4184,13 +4621,15 @@
         - name: Opprette en ny forretningsavtale
           href: ../supply-chain/sales-marketing/tasks/create-new-trade-agreement.md
     - name: Servicestyring
-      href: ../supply-chain/service-management/service-management-home-page.md
       items:
+        - name: Oversikt over servicestyring
+          href: ../supply-chain/service-management/service-management-home-page.md
         - name: Definere kundeservice
           items:
             - name: Definere serviceavtaler
-              href: ../supply-chain/service-management/service-agreement-groups.md
               items:
+                - name: Oversikt over serviceavtaler
+                  href: ../supply-chain/service-management/service-agreement-groups.md
                 - name: Opprette serviceavtaler
                   href: ../supply-chain/service-management/create-service-agreements.md
                 - name: Serviceintervaller
@@ -4204,13 +4643,15 @@
                 - name: Opprette en servicemalgruppe
                   href: ../supply-chain/service-management/create-service-template-group.md
             - name: Definer serviceoppgaver
-              href: ../supply-chain/service-management/service-tasks.md
               items:
+                - name: Oversikt over serviceoppgaver
+                  href: ../supply-chain/service-management/service-tasks.md
                 - name: Opprette serviceoppgaverelasjoner
                   href: ../supply-chain/service-management/create-service-task-relations.md
             - name: Definer serviceobjekter
-              href: ../supply-chain/service-management/service-objects.md
               items:
+                - name: Oversikt over serviceobjekter
+                  href: ../supply-chain/service-management/service-objects.md
                 - name: Opprette serviceobjekter
                   href: ../supply-chain/service-management/create-service-task-relations.md
                 - name: Knytte lagervarer til serviceobjekter
@@ -4230,8 +4671,9 @@
                 - name: Tilknytte maler til serviceobjekter
                   href: ../supply-chain/service-management/attach-templates-service-objects.md
             - name: Definere årsakskoder for serviceordrer
-              href: ../supply-chain/service-management/reason-codes-service-orders.md
               items:
+                - name: Årsakskoder for serviceordrer
+                  href: ../supply-chain/service-management/reason-codes-service-orders.md
                 - name: Serviceordrestadier
                   href: ../supply-chain/service-management/service-order-stages.md
                 - name: Definere serviceordrestadier
@@ -4239,8 +4681,9 @@
                 - name: Opprette årsakskoder
                   href: ../supply-chain/service-management/create-reason-codes.md
             - name: Definere serviceavtaler og abonnementer
-              href: ../supply-chain/service-management/service-level-agreements.md
               items:
+                - name: Oversikt over servicenivåavtaler
+                  href: ../supply-chain/service-management/service-level-agreements.md
                 - name: Salgspriser for abonnement
                   href: ../supply-chain/service-management/subscription-sales-prices.md
                 - name: Abonnementsgrupper
@@ -4254,8 +4697,9 @@
             - name: Definere reparasjonsstyring
               href: ../supply-chain/service-management/repair-management.md
             - name: Definere kundereturer
-              href: ../supply-chain/service-management/disposition-and-return-reason-codes.md
               items:
+                - name: Oversikt over kundereturer
+                  href: ../supply-chain/service-management/disposition-and-return-reason-codes.md
                 - name: Definere disposisjonskoder
                   href: ../supply-chain/service-management/set-up-disposition-codes.md
                 - name: Definere returårsakskoder
@@ -4263,14 +4707,17 @@
                 - name: Angi hvordan du kvitter deg med returnerte varer
                   href: ../supply-chain/service-management/specify-how-to-dispose-of-returned-items.md
         - name: Arbeide med kundeservice
-          href: ../supply-chain/service-management/working-with-customer-service.md
           items:
+            - name: Oversikt over å arbeide med kundeservice
+              href: ../supply-chain/service-management/working-with-customer-service.md
             - name: Oppfylle serviceavtaler
-              href: ../supply-chain/service-management/fulfill-service-agreements-overview.md
               items:
+                - name: Oversikt over å oppfylle serviceavtaler
+                  href: ../supply-chain/service-management/fulfill-service-agreements-overview.md
                 - name: Utvikle og etablere avtaler
-                  href: ../supply-chain/service-management/service-agreements.md
                   items:
+                    - name: Oversikt over å utvikle og etablere serviceavtaler
+                      href: ../supply-chain/service-management/service-agreements.md
                     - name: Opprette serviceavtaler
                       href: ../supply-chain/service-management/create-service-agreements.md
                     - name: Serviceabonnementer
@@ -4296,8 +4743,9 @@
                     - name: Oppdatere og indeksere salgspriser for abonnement
                       href: ../supply-chain/service-management/update-and-index-subscription-sales-prices.md
             - name: Behandle kundeforespørsler
-              href: ../supply-chain/service-management/fulfill-service-agreements-overview.md
               items:
+                - name: Oversikt over å oppfylle serviceavtaler
+                  href: ../supply-chain/service-management/fulfill-service-agreements-overview.md
                 - name: Starte og stoppe tidsregistrering på en serviceordre
                   href: ../supply-chain/service-management/start-and-stop-time-recording-on-a-service-order.md
                 - name: Vise starttidspunktet og varigheten for en serviceordre
@@ -4404,11 +4852,12 @@
                       href: ../supply-chain/service-management/accrue-subscription-revenue.md
                     - name: Slette serviceordrer
                       href: ../supply-chain/service-management/delete-service-orders.md
-                    - name: Fakturere abonnementtransaksjoner
+                    - name: Fakturere abonnementstransaksjoner
                       href: ../supply-chain/service-management/invoice-subscription-transactions.md
     - name: Transportstyring
-      href: ../supply-chain/transportation/transportation-management-overview.md
       items:
+        - name: Oversikt over transportstyring
+          href: ../supply-chain/transportation/transportation-management-overview.md
         - name: Transportstyringsmotorer
           href: ../supply-chain/transportation/transportation-management-engines.md
         - name: Opprette en ny transportstyringsmotor
@@ -4420,8 +4869,9 @@
         - name: Planlegge frakttransportruter
           href: ../supply-chain/transportation/plan-freight-transportation-routes-multiple-stops.md
         - name: Planlegge laster ved hjelp av hubkonsolidering
-          href: ../supply-chain/transportation/plan-loads-hub-consolidation.md
           items:
+            - name: Oversikt over å planlegge laster ved hjelp av hubkonsolidering
+              href: ../supply-chain/transportation/plan-loads-hub-consolidation.md
             - name: Planlegge laster og leveringer ved hjelp av arbeidsområdet for lastplanlegging
               href: ../supply-chain/warehousing/tasks/use-load-planning-workbench-plan-loads-shipments.md
         - name: Inkludere containervekt og -volum for last
@@ -4451,11 +4901,13 @@
         - name: Definere transportbegrensninger for en vare
           href: ../supply-chain/transportation/tasks/set-up-transportation-constraints-item.md
     - name: Lagerstyring
-      href: ../supply-chain/warehousing/warehouse-management-overview.md
       items:
+        - name: Oversikt over lagerstyring
+          href: ../supply-chain/warehousing/warehouse-management-overview.md
         - name: Lagerkonfigurasjon
-          href: ../supply-chain/warehousing/warehouse-configuration.md
           items:
+            - name: Oversikt over lagerkonfigurasjon
+              href: ../supply-chain/warehousing/warehouse-configuration.md
             - name: Definere et lager ved hjelp av en lagerkonfigurasjonsmal
               href: ../supply-chain/inventory/warehouse-template.md
             - name: Kontrollere arbeid ved hjelp av arbeidsmaler og plasseringsdirektiver
@@ -4485,8 +4937,9 @@
             - name: Definere lager for overføringsordrer
               href: ../supply-chain/warehousing/transfer-orders-warehouse.md
         - name: Arbeidspolicyer for lager
-          href: ../supply-chain/warehousing/warehouse-work-policies.md
           items:
+            - name: Oversikt over arbeidspolicyer for lager
+              href: ../supply-chain/warehousing/warehouse-work-policies.md
             - name: Definere arbeidspolicyer for lager
               href: ../supply-chain/warehousing/tasks/set-up-warehouse-work-policies-2016-05.md
             - name: Flytting av beholdning med tilknyttet arbeid i Lagerstyring
@@ -4546,17 +4999,19 @@
             - name: Lagerbrikkeopptelling
               href: ../supply-chain/inventory/inventory-tag-counting.md
         - name: Etterfylling
-          href: ../supply-chain/warehousing/replenishment.md
           items:
+            - name: Oversikt over etterfylling
+              href: ../supply-chain/warehousing/replenishment.md
             - name: Umiddelbar etterfylling
               href: ../supply-chain/warehousing/immediate-replenishment.md
             - name: Etterfylling med uttak – Kanbaner
               href: ../supply-chain/warehousing/material-replenishment-withdrawal-kanban.md
             - name: Definere en prosess for minimums-/maksimumsetterfylling
               href: ../supply-chain/warehousing/tasks/set-up-min-max-replenishment-process.md
-        - name: 'Installere og konfigurere lagerappen '
-          href: ../supply-chain/warehousing/install-configure-warehousing-app.md
+        - name: Installere og konfigurere lagerappen
           items:
+            - name: Oversikt over å installere og konfigurere
+              href: ../supply-chain/warehousing/install-configure-warehousing-app.md
             - name: Konfigurere feltnavn i lagerapp
               href: ../supply-chain/warehousing/configure-app-field-names-priorities-warehouse.md
             - name: Definere mobilenheter for lagerarbeid

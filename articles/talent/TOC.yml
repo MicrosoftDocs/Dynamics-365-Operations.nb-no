@@ -8,6 +8,14 @@
         - name: Hva er nytt eller endret i Talent?
           href: whats-new.md
           items:
+            - name: 22. august 2019
+              href: whats-new-talent-august-21-2019.md
+            - name: 13. august 2019
+              href: whats-new-talent-august-15-2019.md
+            - name: 6. august 2019
+              href: whats-new-talent-august-7-2019.md
+            - name: 30. juli 2019
+              href: whats-new-talent-july-31-2019.md
             - name: 23. juli 2019
               href: whats-new-talent-july-24-2019.md
             - name: 16. juli 2019
@@ -24,16 +32,16 @@
               href: whats-new-talent-june-11-2019.md
             - name: 4. juni 2019
               href: whats-new-talent-june-4-2019.md
-            - name: 28. mai 2019
-              href: whats-new-talent-may-28-2019.md
-            - name: 21. mai 2019
-              href: whats-new-talent-may-21-2019.md
-            - name: 13. mai 2019
-              href: whats-new-talent-may-13-2019.md
-            - name: 6. mai 2019
-              href: whats-new-talent-may-6-2019.md
             - name: Nye arkiver 2019
               items:
+                - name: 28. mai 2019
+                  href: whats-new-talent-may-28-2019.md
+                - name: 21. mai 2019
+                  href: whats-new-talent-may-21-2019.md
+                - name: 13. mai 2019
+                  href: whats-new-talent-may-13-2019.md
+                - name: 6. mai 2019
+                  href: whats-new-talent-may-6-2019.md
                 - name: 30. april 2019
                   href: whats-new-talent-april-30-2019.md
                 - name: 25. april 2019
@@ -204,6 +212,8 @@
               href: departments-jobs-positions.md
             - name: Definere komponentene for en jobb
               href: create-job.md
+            - name: Strømlinjeformet ansattoppføring og navigasjon
+              href: streamlined-employee-entry.md
             - name: Opprette avdelinger og inkludere dem i avdelingshierarkiet
               href: create-department-add-department-hierarchy.md
             - name: Definere parametere for Personale på tvers av juridiske enheter
@@ -291,7 +301,7 @@
               items:
                 - name: Oversikt over varsler
                   href: ../fin-and-ops/get-started/alerts-overview.md?toc=/dynamics365/unified-operations/talent/toc.json
-                - name: Opprette varslingsregler
+                - name: Opprette varselregler
                   href: ../fin-and-ops/get-started/create-alerts.md?toc=/dynamics365/unified-operations/talent/toc.json
                 - name: Satsvis behandling for varsler
                   href: ../fin-and-ops/get-started/alerts-managing.md?toc=/dynamics365/unified-operations/talent/toc.json
