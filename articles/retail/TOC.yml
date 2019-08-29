@@ -26,9 +26,10 @@
       href: retail-support.md
     - name: Vanlige spørsmål om oppdatering av én versjonstjeneste
       href: ../fin-and-ops/get-started/one-version.md
-- name: Forstå implementeringslivssyklusen
-  href: ../fin-and-ops/imp-lifecycle/implementation-lifecycle.md
+- name: Implementering av livssyklus for ressurs
   items:
+    - name: Startside for implementering av livssyklus for ressurs
+      href: ../fin-and-ops/imp-lifecycle/implementation-lifecycle.md
     - name: Microsoft FastTrack for Dynamics 365
       href: ../fin-and-ops/get-started/fasttrack-dynamics-365-overview.md
     - name: Jobbintroduksjon
@@ -161,10 +162,12 @@
       href: assortments.md
     - name: Konfigurere nettbutikker
       href: online-stores.md
-    - name: Konfigurere og installere Retail hardware station
+    - name: Konfigurere og installere Retail Hardware Station
       href: retail-hardware-station-configuration-installation.md
     - name: Timeregistrering i Retail
       href: retail-time-attendance.md
+    - name: Opprette og endre åpningstid
+      href: dev-itpro/store-hours.md
 - name: Modern Point of Sale (MPOS) og Cloud POS
   items:
     - name: Velge mellom MPOS og Cloud POS
@@ -317,8 +320,10 @@
       href: create-manage-attributes.md
     - name: Definere detaljhandelsprodukter
       href: set-up-retail-products.md
-    - name: Administrere produktkategorier og produkter for Retail
+    - name: Administrere produktkategorier og produkter for detaljhandel
       href: category-management-product-creation.md
+    - name: Endre sorteringsrekkefølgen for varehandelsenheter
+      href: custom-order-categories-nav-retail-prod-hierarchy.md
     - name: Produktdimensjoner
       href: ../supply-chain/pim/product-dimensions.md
     - name: Definere strekkoder
@@ -499,9 +504,10 @@
       href: tasks/use-continuity-program.md
     - name: Konfigurere detaljhandelsarbeidere
       href: tasks/worker.md
-- name: Utvikling og administrasjon for detaljhandel
-  href: dev-itpro/dev-retail-home-page.md
+- name: Utvikling og administrasjon for Retail
   items:
+    - name: Retail for IT-eksperter og utviklere
+      href: dev-itpro/dev-retail-home-page.md
     - name: Arkitektur
       items:
         - name: Retail-komponenter
@@ -536,7 +542,7 @@
           href: dev-itpro/retail-device-activation.md
         - name: Hjelpe med å sikre Cloud POS i delte miljøer
           href: dev-itpro/secure-retail-cloud-pos.md
-        - name: Konfigurasjon og installasjon av Retail hardware station
+        - name: Konfigurasjon og installasjon av Retail Hardware Station
           href: retail-hardware-station-configuration-installation.md
         - name: Massedistribusjon av selvbetjeningskomponenter for Retail
           href: dev-itpro/retail-mass-deployment.md
@@ -598,6 +604,8 @@
           href: dev-itpro/view-pos-extension-package-details.md
     - name: Utvidelsesmulighet for Hardware Station
       href: dev-itpro/hardware-station-extensibility.md
+    - name: Integrer POS med en ny maskinvareenhet
+      href: dev-itpro/hardware-device-extension.md
     - name: Utvidelsesmuligheter for Retail Server
       items:
         - name: Utvide en OData-kontroller for Retail Server
@@ -654,9 +662,10 @@
           href: payment-connector-data-fields.md
         - name: Aktivere duplisert betalingsbeskyttelse for betalingskobling
           href: dev-itpro/duplicate-payment-protection.md
-    - name: Retail SDK
-      href: dev-itpro/retail-sdk/retail-sdk-overview.md
+    - name: SDK for Retail
       items:
+        - name: Arkitektur for SDK for Retail
+          href: dev-itpro/retail-sdk/retail-sdk-overview.md
         - name: Kommende endringer i SDK for Retail
           href: dev-itpro/UpcomingSDKChanges.md
         - name: Flette byggesystemene for Retail og Finance and Operations
@@ -667,9 +676,8 @@
           href: dev-itpro/retail-sdk/retail-sdk-packaging.md
         - name: Eksempler på SDK for Retail
           href: dev-itpro/retail-sdk/retail-sdk-samples.md
-          items:
-            - name: Utvidelsespunkt for følgesedler
-              href: dev-itpro/extensions-shipping-carrier-integration.md
+        - name: Utvidelsespunkt for følgesedler
+          href: dev-itpro/extensions-shipping-carrier-integration.md
         - name: Utvidelser for kanaldatabase
           href: dev-itpro/channel-db-extensions.md
         - name: Aktivere egendefinert CDX-synkronisering via utvidelse

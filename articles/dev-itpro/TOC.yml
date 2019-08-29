@@ -5,13 +5,15 @@
 - name: Systemkrav for lokale distribusjoner
   href: ../fin-and-ops/get-started/system-requirements-on-prem.md?toc=/dev-itpro/toc.json
 - name: Demonstrasjonsdata
-  href: ../fin-and-ops/get-started/demo-data.md?toc=/dev-itpro/toc.json
   items:
+    - name: Oversikt over demonstrasjonsdata
+      href: ../fin-and-ops/get-started/demo-data.md?toc=/dev-itpro/toc.json
     - name: Generere demonstrasjonsdata ved hjelp av datapakker
       href: data-entities/generate-demo-data-packages.md
 - name: Utvikle og tilpasse
-  href: dev-tools/developer-home-page.md
   items:
+    - name: Startside for å utvikle og tilpasse
+      href: dev-tools/developer-home-page.md
     - name: Programstakk og serverarkitektur
       href: dev-tools/application-stack-server-architecture.md
     - name: Få evalueringskopier
@@ -19,8 +21,9 @@
     - name: Registrere deg for forhåndsvisningsabonnementer
       href: dev-tools/sign-up-preview-subscription.md
     - name: Distribuere og få tilgang til utviklingsmiljøer
-      href: dev-tools/access-instances.md
       items:
+        - name: Utviklingsmiljøer
+          href: dev-tools/access-instances.md
         - name: Konfigurere utviklingsmiljøer med én boks
           href: dev-tools/configure-developer-vm.md
         - name: Opprette nye brukere på en utviklingsmaskiner
@@ -58,8 +61,9 @@
         - name: Koderedigeringsfunksjoner
           href: dev-tools/code-editor.md
         - name: Opprette modeller og datamodellelementer
-          href: dev-tools/create-data-model-elements.md
           items:
+            - name: Oversikt over å opprette modeller og datamodellelementer
+              href: dev-tools/create-data-model-elements.md
             - name: Gi navn til retningslinjer for utvidelser
               href: extensibility/NamingGuidelines.md
             - name: Deaktivere modelltilpassings- og avskrivningsfunksjonalitet
@@ -86,8 +90,6 @@
       items:
         - name: X++ og feilsøkerfunksjoner
           href: dev-tools/new-x-debugger-features.md
-        - name: Feilsøke X++ mot kopier av produksjonsdatabaser
-          href: dev-tools/debug-x-issue-against-copy-of-production.md
         - name: Feilsøke X++-kode
           href: dev-tools/debug-xpp.md
         - name: EventHandlerResult-klasser i forespørsels- eller svarscenarier
@@ -104,7 +106,7 @@
           href: dev-ref/application-explorer-aot-properties.md
         - name: Språkreferanse for X++
           items:
-            - name: Språkreferanse for X++
+            - name: Oversikt over språkreferanse for X++
               href: dev-ref/xpp-language-reference.md
             - name: Variabler og datatyper
               items:
@@ -135,7 +137,19 @@
             - name: Forrang for X++-operator
               href: dev-ref/xpp-operator-precedence.md
             - name: Klasser og metoder for X++
-              href: dev-ref/xpp-classes-methods.md
+              items:
+                - name: Klasser og metoder
+                  href: dev-ref/xpp-classes-methods.md
+                - name: Arv
+                  href: dev-ref/xpp-inheritance.md
+                - name: Medlemmer av statisk klasse
+                  href: dev-ref/xpp-static-classes.md
+                - name: Grensesnitt
+                  href: dev-ref/xpp-interfaces.md
+                - name: Biblioteker
+                  href: dev-ref/xpp-library-objects.md
+                - name: Hendelser
+                  href: dev-ref/xpp-events.md
             - name: Datavalg og redigering for X++
               href: dev-ref/xpp-data-query.md
             - name: Datatilgang ved hjelp av SysDa-API-en
@@ -149,13 +163,15 @@
             - name: Syntaks for X++
               href: dev-ref/xpp-syntax.md
     - name: 'API, klasse og tabellreferanse'
-      href: dev-ref/api-reference.md
       items:
+        - name: 'API, klasse og tabellressurser'
+          href: dev-ref/api-reference.md
         - name: Kompileringstidsfunksjoner for X++
           href: dev-ref/xpp-compile-time-functions.md
         - name: Kjøretidsfunksjoner for X++
-          href: dev-ref/xpp-run-time-functions.md
           items:
+            - name: Ressurser for kjøretidsfunksjon for X++
+              href: dev-ref/xpp-run-time-functions.md
             - name: Kjøretidsfunksjoner for X++-virksomhet
               href: dev-ref/xpp-business-run-time-functions.md
             - name: Kjøretidsfunksjoner for X++-container
@@ -408,9 +424,10 @@
           href: perf-test/continuous-build-test-automation.md
         - name: SysTest-filtrering ved hjelp av klasse- og metodeattributter
           href: perf-test/systest-filtering.md
-        - name: Bibilotek for aksepttest
-          href: perf-test/acceptance-test-library.md
+        - name: Bibliotek for aksepttest
           items:
+            - name: Biblioteksressurser for aksepttest
+              href: perf-test/acceptance-test-library.md
             - name: Navigasjonskonsepter
               href: perf-test/concepts-navigation.md
             - name: Teste datametoder
@@ -438,8 +455,9 @@
     - name: ISV-lisensiering lokalt
       href: dev-tools/isv-licensing-on-prem.md
 - name: Utvikling av brukergrensesnitt
-  href: user-interface/user-interface-development-home-page.md
   items:
+    - name: Startside for utvikling av brukergrensesnitt
+      href: user-interface/user-interface-development-home-page.md
     - name: Opplæringer
       items:
         - name: Utarbeide skjemaet Avgiftstype for utleie
@@ -632,19 +650,22 @@
           href: user-interface/build-workspaces.md
         - name: Flisvisning og opplisting av bufring for arbeidsområder
           href: user-interface/tile-list-caching-workspaces.md
-    - name: Oppgaveopptaker
-      href: user-interface/task-recorder.md
+    - name: Oppgaveregistrering
       items:
-        - name: Hurtigreferanse for oppgaveopptaker
+        - name: Ressurser for Oppgaveregistrering
+          href: user-interface/task-recorder.md
+        - name: Hurtigreferanse for Oppgaveregistrering
           href: user-interface/task-recorder-quick-reference.md
         - name: Lage dokumentasjon eller opplæring basert på oppgaveopptak
           href: user-interface/task-recorder-training-docs.md
 - name: Mobil plattform
-  href: mobile-apps/platform/mobile-platform-home-page.md
   items:
+    - name: Ressurser for mobil plattform
+      href: mobile-apps/platform/mobile-platform-home-page.md
     - name: Komme i gang
-      href: mobile-apps/platform/mobile-platform-getting-started.md
       items:
+        - name: Komme i gang med mobile platform
+          href: mobile-apps/platform/mobile-platform-getting-started.md
         - name: Hensyn om arkitektur og utforming
           href: mobile-apps/platform/mobile-platform-architecture.md
         - name: Hendelser for forretningslogikk
@@ -678,8 +699,9 @@
         - name: APIer for utforming på klientsiden
           href: mobile-apps/platform/scenarios/client-api-design-overview.md
         - name: APIer for klient
-          href: mobile-apps/platform/client-apis/client-apis-reference.md
           items:
+            - name: Startside for klient-API-er
+              href: mobile-apps/platform/client-apis/client-apis-reference.md
             - name: PageState-opplisting
               href: mobile-apps/platform/client-apis/enums/view-model-ipage-pagestate.md
             - name: Programmodul
@@ -843,11 +865,13 @@
             - name: ValueMetadata-type
               href: mobile-apps/platform/client-apis/interfaces/view-model-control-value-ivalue-ivaluemetadata.md
 - name: "EUs personvernforordning\_(GDPR)"
-  href: gdpr/gdpr-guide.md
   items:
-    - name: Ressurser for å svare på forespørsler om GDPR-data
-      href: gdpr/gdpr-home-page.md
+    - name: Oversikt over EUs personvernforordning (GDPR)
+      href: gdpr/gdpr-guide.md
+    - name: Svare på forespørsler om GDPR-data
       items:
+        - name: Svare på forespørsler om ressurser for GDPR-data
+          href: gdpr/gdpr-home-page.md
         - name: Aktivaklassifiseringer
           href: gdpr/gdpr-asset-classification-values.md
         - name: Rapport om personsøk
@@ -863,8 +887,9 @@
         - name: GDPR-dataforespørsler for LCS
           href: gdpr/gdpr-lcs.md
 - name: Kontinuerlig levering
-  href: dev-tools/continuous-delivery-home-page.md
   items:
+    - name: Startside for kontinuerlig levering
+      href: dev-tools/continuous-delivery-home-page.md
     - name: Vanlige spørsmål om utvikling og kontinuerlig levering
       href: dev-tools/continuous-delivery-faq.md
     - name: Utelukke testpakker fra byggeutdata
@@ -873,6 +898,24 @@
       href: dev-tools/manage-runtime-packages.md
     - name: Oppdatere modellversjoner i det automatiske bygget
       href: dev-tools/version-models-build.md
+- name: Regression Suite Automation Tool
+  items:
+    - name: Oversikt over Regression Suite Automation Tool
+      href: perf-test/rsat/rsat-overview.md
+    - name: Installasjon og konfigurasjon
+      href: perf-test/rsat/rsat-install-configure.md
+    - name: Kjøre testtilfeller
+      href: perf-test/rsat/rsat-run.md
+    - name: Validere forventede verdier
+      href: perf-test/rsat/rsat-validate-expected.md
+    - name: Kjedetesttilfeller
+      href: perf-test/rsat/rsat-chain-test-cases.md
+    - name: Avledede testtilfeller
+      href: perf-test/rsat/rsat-derived-test-cases.md
+    - name: Anbefalte fremgangsmåter
+      href: perf-test/rsat/rsat-best-practices.md
+    - name: Feilsøking
+      href: perf-test/rsat/rsat-troubleshooting.md
 - name: Utgaveløsninger ved hjelp av Lifecycle Services
   items:
     - name: Utvikle og frigi
@@ -892,8 +935,9 @@
     - name: Sikkerhetskopiere løsningsdatabaser
       href: lcs-solutions/database-backup-lcs-solutions.md
     - name: Lokalisering og forskriftsmessige funksjoner
-      href: lcs-solutions/country-region.md
       items:
+        - name: Globaliseringsressurser
+          href: lcs-solutions/country-region.md
         - name: Klassifisering av lokaliseringsfunksjoner
           href: lcs-solutions/classify-localization-features.md
         - name: Bruke lands-/områdekontekst
@@ -907,8 +951,9 @@
         - name: Sende forskriftsmessige varsler
           href: lcs-solutions/submit-localization-alerts.md
 - name: Finansutvikling
-  href: financial/financial-dev-home-page.md
   items:
+    - name: Startside for finansutvikling
+      href: financial/financial-dev-home-page.md
     - name: Rammeverk for finansdimensjon
       items:
         - name: Finanskontokombinasjoner
@@ -968,11 +1013,13 @@
     - name: Distribuere demomiljøer
       href: deployment/deploy-demo-environment.md
     - name: Skydistribusjon
-      href: deployment/cloud-deployment-overview.md
       items:
+        - name: Oversikt over skydistribusjon
+          href: deployment/cloud-deployment-overview.md
         - name: Distribusjon av selvbetjening
-          href: deployment/infrastructure-stack.md
           items:
+            - name: Oversikt over distribusjon av selvbetjening
+              href: deployment/infrastructure-stack.md
             - name: Distribuere et nytt miljø
               href: deployment/deployenvironment-newinfrastructure.md
             - name: Vanlige spørsmål om distribusjon
@@ -1000,9 +1047,10 @@
         - name: Datalagring i Retail
           href: deployment/retail-data-residency.md
     - name: Lokal distribusjon
-      href: deployment/on-premises-deployment-landing-page.md
       items:
-        - name: Alternativ for lokal distribusjon
+        - name: Startside for lokal distribusjon
+          href: deployment/on-premises-deployment-landing-page.md
+        - name: Oversikt over lokal distribusjon
           href: deployment/on-premises-overview.md
         - name: Planlegge og klargjøre for lokale distribusjoner
           href: deployment/plan-onprem-deployment.md
@@ -1011,8 +1059,9 @@
         - name: Konfigurere lokale prosjekter
           href: lifecycle-services/lbd-create-lcs-on-prem-project.md
         - name: Konfigurere og distribuere lokale miljøer
-          href: deployment/setup-deploy-on-premises-environments.md
           items:
+            - name: Startside for å konfigurere og distribuere lokale miljøer
+              href: deployment/setup-deploy-on-premises-environments.md
             - name: "Distribuere lokale miljøer (Platform update\_12 og nyere)"
               href: deployment/setup-deploy-on-premises-pu12.md
             - name: Distribuere lokale miljøer (Platform update 8 og 11)
@@ -1031,8 +1080,14 @@
           href: deployment/on-premises-diagnostics.md
         - name: Distribuere lokale distribusjoner på nytt
           href: deployment/redeploy-on-prem.md
-        - name: Oppdatere den lokale agenten
-          href: lifecycle-services/update-local-agent.md
+        - name: Lokal agent
+          items:
+            - name: Kompatibilitet med AD FS Office 365
+              href: deployment/onprem-adfscompatibility.md
+            - name: Lokal agent og skript for distribusjon før og etter
+              href: lifecycle-services/pre-post-scripts.md
+            - name: Oppdatere den lokale agenten
+              href: lifecycle-services/update-local-agent.md
         - name: Konfigurere miljøer på nytt
           href: lifecycle-services/reconfigure-environment.md
         - name: Internett-tilkobling for klient
@@ -1052,11 +1107,13 @@
         - name: Feilsøke problemer med pakkeprogram
           href: deployment/deployable-package-troubleshooting.md
 - name: 'Oppgraderinger, oppdateringer og hurtigreparasjoner'
-  href: migration-upgrade/upgrade-home-page.md
   items:
-    - name: Oppgradere fra AX 2012 til Finance and Operations
-      href: migration-upgrade/upgrade-overview-2012.md
+    - name: 'Ressurser for oppgraderinger, oppdateringer og hurtigreparasjoner'
+      href: migration-upgrade/upgrade-home-page.md
+    - name: Oppgradere fra AX 2012
       items:
+        - name: Oppgradere fra AX 2012 til Finance and Operations
+          href: migration-upgrade/upgrade-overview-2012.md
         - name: AX 2012-oppgradering – Planlegge ved hjelp av verktøyet for oppgraderingsanalyse
           href: migration-upgrade/upgrade-analyzer-tool.md
         - name: AX 2012-oppgradering – Anslå hva som må gjøres ved hjelp av kodeoppgraderingstjenesten
@@ -1095,9 +1152,10 @@
               href: migration-upgrade/migrate-upgraded-cube-entity-store.md
             - name: Oppgradere budsjettplanlegging
               href: migration-upgrade/upgrade-budget-planning.md
-    - name: Overføre data fra AX 2009 til Finance and Operations
-      href: migration-upgrade/data-migration-tool.md
+    - name: Overføre data fra AX 2009
       items:
+        - name: Overføre data fra AX 2009 til Finance and Operations
+          href: migration-upgrade/data-migration-tool.md
         - name: Overføring av AX 2009 – Installere dataoverføringsverktøyet
           href: migration-upgrade/install-dmt.md
         - name: Overføring av AX 2009 – Generere tilordninger
@@ -1111,8 +1169,9 @@
         - name: Overføring av AX 2009 – Importpakker
           href: migration-upgrade/ax2009-upgrade-import-package.md
     - name: Overføring og oppgradering av kode
-      href: migration-upgrade/code-migration-home-page.md
       items:
+        - name: Startside for overføring og oppgradering av kode
+          href: migration-upgrade/code-migration-home-page.md
         - name: Gjøre klar til å overføre kode
           href: migration-upgrade/prepare-migration.md
         - name: Konfigurere Azure DevOps-tilordningen
@@ -1135,8 +1194,6 @@
           href: migration-upgrade/versions-update-policy.md
         - name: Ta i bruk den nyeste plattformoppdateringen i miljøer
           href: migration-upgrade/upgrade-latest-platform-update.md
-        - name: Oppgradere Dynamics AX-plattformen til utgaven fra august 2016
-          href: migration-upgrade/update-platform-each-release.md
         - name: Oppgradere data i utviklings- eller demonstrasjonsmiljøer
           href: migration-upgrade/upgrade-data-to-latest-update.md
         - name: Oppdatere utviklingsverktøy
@@ -1172,8 +1229,9 @@
         - name: Avskrevne API-er (juni 2017)
           href: migration-upgrade/deprecated-apis.md
 - name: Systemadministrasjon
-  href: sysadmin/system-administration-home-page.md
   items:
+    - name: Startside for systemadministrasjon
+      href: sysadmin/system-administration-home-page.md
     - name: Legge til koblinger i juridiske vilkår og personvernerklæring
       href: sysadmin/legal-terms-privacy-statement.md
     - name: Rapport for lisenskoder og konfigurasjonsnøkler
@@ -1186,13 +1244,14 @@
       href: sysadmin/pre-configured-system-accounts.md
     - name: Eksportere B2B-brukere til Azure AD
       href: sysadmin/implement-b2b.md
-    - name: Angi tidsavbrudd for inaktiv økt
-      href: sysadmin/session-idle-timeout.md
-    - name: Rollebasert sikkerhet
-      href: sysadmin/role-based-security.md
+    - name: Sikkerhet
       items:
+        - name: Rollebasert sikkerhet
+          href: sysadmin/role-based-security.md
         - name: Sikkerhetsarkitektur
           href: sysadmin/security-architecture.md
+        - name: Angi tidsavbrudd for inaktiv økt
+          href: sysadmin/session-idle-timeout.md
         - name: Medfølgende sikkerhetsrapporter
           href: sysadmin/security-reports.md
         - name: Opprette nye brukere
@@ -1206,8 +1265,9 @@
         - name: Tilordne brukere til sikkerhetsroller
           href: sysadmin/tasks/assign-users-security-roles.md
     - name: Satsvis behandling
-      href: sysadmin/batch-processing-overview.md
       items:
+        - name: Oversikt over satsvis behandling
+          href: sysadmin/batch-processing-overview.md
         - name: Satsvis behandling og satsvise servere
           href: sysadmin/batch-server-overview.md
         - name: Opprette satsvise jobber
@@ -1229,8 +1289,9 @@
         - name: Avbryte en satsvis jobb under utførelse
           href: sysadmin/batch-abort.md
     - name: Optimaliseringsrådgiver
-      href: sysadmin/optimization-advisor-overview.md
       items:
+        - name: Oversikt over optimaliseringsrådgiver
+          href: sysadmin/optimization-advisor-overview.md
         - name: Opprette regler for optimaliseringsrådgiver
           href: sysadmin/create-rules-optimization-advisor.md
     - name: "Rapportere en\_produksjonsnedetid"
@@ -1238,8 +1299,9 @@
 - name: Lifecycle Services
   items:
     - name: Ressurser for Lifecycle Services
-      href: lifecycle-services/lcs.md
       items:
+        - name: Ressurser for Lifecycle Services
+          href: lifecycle-services/lcs.md
         - name: LCS for kunder
           href: lifecycle-services/lcs-works-lcs.md
         - name: LCS for partnere
@@ -1257,8 +1319,9 @@
     - name: Problemsøk
       href: lifecycle-services/issue-search-lcs.md
     - name: Konfigurasjonsbehandling
-      href: lifecycle-services/configuration-manager-lcs.md
       items:
+        - name: Oversikt over konfigurasjonsbehandling
+          href: lifecycle-services/configuration-manager-lcs.md
         - name: Konfigurere Konfigurasjonsbehandling
           href: lifecycle-services/set-up-configuration-manager-lcs.md
     - name: Konfigurere tjenesten for kodeoppgradering
@@ -1298,8 +1361,9 @@
     - name: Veiledning for spørringen
       href: lifecycle-services/querycookbook.md
     - name: Microsoft Dynamics 365 Translation Service
-      href: lifecycle-services/translation-service-overview.md
       items:
+        - name: Oversikt over Dynamics 365 Translation Service
+          href: lifecycle-services/translation-service-overview.md
         - name: Oversette brukergrensesnittfiler
           href: lifecycle-services/use-translation-service.md
         - name: Oversette dokumentasjonsfiler
