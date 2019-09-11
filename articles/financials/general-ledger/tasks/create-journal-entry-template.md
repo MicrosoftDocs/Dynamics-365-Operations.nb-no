@@ -3,7 +3,7 @@ title: Opprette en journaloppføring ved hjelp av en mal
 description: Posterte journalbilag kan lagres som bilagsmaler og brukes i et nytt journalbilag.
 author: aprilolson
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 07/01/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,51 +16,50 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 1a3fb750e04fb134fc9ac38d9a47201803566113
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: babbc5ee067743d368680970556f8e5d3d8585f0
+ms.sourcegitcommit: cbcf344b3b552acca56c3e27606eac7f2f124afe
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1846637"
+ms.lasthandoff: 08/22/2019
+ms.locfileid: "1916163"
 ---
-# <a name="create-a-journal-entry-using-template"></a><span data-ttu-id="b59f5-103">Opprette en journaloppføring ved hjelp av en mal</span><span class="sxs-lookup"><span data-stu-id="b59f5-103">Create a journal entry using template</span></span>
+# <a name="create-a-journal-entry-using-template"></a><span data-ttu-id="5dd67-103">Opprette en journaloppføring ved hjelp av en mal</span><span class="sxs-lookup"><span data-stu-id="5dd67-103">Create a journal entry using template</span></span>
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="b59f5-104">Posterte journalbilag kan lagres som bilagsmaler og brukes i et nytt journalbilag.</span><span class="sxs-lookup"><span data-stu-id="b59f5-104">Posted journal vouchers can be saved as Voucher templates and applied in a new journal voucher.</span></span> <span data-ttu-id="b59f5-105">Denne fremgangsmåten bruker demonstrasjonsfirmaet USMF.</span><span class="sxs-lookup"><span data-stu-id="b59f5-105">This procedure uses the USMF demo company.</span></span>
+<span data-ttu-id="5dd67-104">Posterte journalbilag kan lagres som bilagsmaler og brukes i et nytt journalbilag.</span><span class="sxs-lookup"><span data-stu-id="5dd67-104">Posted journal vouchers can be saved as Voucher templates and applied in a new journal voucher.</span></span> <span data-ttu-id="5dd67-105">Denne fremgangsmåten bruker demonstrasjonsfirmaet USMF.</span><span class="sxs-lookup"><span data-stu-id="5dd67-105">This procedure uses the USMF demo company.</span></span>
 
-1. <span data-ttu-id="b59f5-106">Økonomimodul > Journaloppføringer > Økonomijournaler.</span><span class="sxs-lookup"><span data-stu-id="b59f5-106">General ledger > Journal entries > General journals.</span></span> <span data-ttu-id="b59f5-107">Klikk Ny.</span><span class="sxs-lookup"><span data-stu-id="b59f5-107">Click New.</span></span>
-    * <span data-ttu-id="b59f5-108">Denne prosedyren starter ved å opprette og postere et journalbilag, men eventuelle tidligere posterte journalbilag kan lagres som en mal.</span><span class="sxs-lookup"><span data-stu-id="b59f5-108">This procedure starts by creating and posting a journal voucher, but any previously posted journal voucher can be saved as a template.</span></span>  
-2. <span data-ttu-id="b59f5-109">Klikk rullegardinknappen i Navn-feltet for å åpne oppslaget.</span><span class="sxs-lookup"><span data-stu-id="b59f5-109">In the Name field, click the drop-down button to open the lookup.</span></span>
-3. <span data-ttu-id="b59f5-110">Finn og velg ønsket post i listen.</span><span class="sxs-lookup"><span data-stu-id="b59f5-110">In the list, find and select the desired record.</span></span>
-4. <span data-ttu-id="b59f5-111">Klikk koblingen i den valgte raden i listen.</span><span class="sxs-lookup"><span data-stu-id="b59f5-111">In the list, click the link in the selected row.</span></span>
-5. <span data-ttu-id="b59f5-112">Klikk Linjer.</span><span class="sxs-lookup"><span data-stu-id="b59f5-112">Click Lines.</span></span>
-6. <span data-ttu-id="b59f5-113">Angi en konto for kontotypen.</span><span class="sxs-lookup"><span data-stu-id="b59f5-113">Enter an account for the Account type.</span></span>
-7. <span data-ttu-id="b59f5-114">Skriv inn en verdi i feltet Beskrivelse.</span><span class="sxs-lookup"><span data-stu-id="b59f5-114">In the Description field, type a value.</span></span>
-8. <span data-ttu-id="b59f5-115">Angi et beløp i Debet-feltet.</span><span class="sxs-lookup"><span data-stu-id="b59f5-115">Enter an amount in the Debit field.</span></span>
-9. <span data-ttu-id="b59f5-116">Klikk Ny.</span><span class="sxs-lookup"><span data-stu-id="b59f5-116">Click New.</span></span>
-10. <span data-ttu-id="b59f5-117">Angi en annen konto for kontotypen.</span><span class="sxs-lookup"><span data-stu-id="b59f5-117">Enter a different account for the Account type.</span></span>
-11. <span data-ttu-id="b59f5-118">Skriv inn en verdi i feltet Beskrivelse.</span><span class="sxs-lookup"><span data-stu-id="b59f5-118">In the Description field, type a value.</span></span>
-12. <span data-ttu-id="b59f5-119">Angi et beløp i Debet-feltet.</span><span class="sxs-lookup"><span data-stu-id="b59f5-119">Enter an amount in the Debit field.</span></span>
-13. <span data-ttu-id="b59f5-120">Klikk Ny.</span><span class="sxs-lookup"><span data-stu-id="b59f5-120">Click New.</span></span>
-14. <span data-ttu-id="b59f5-121">Angi de ønskede verdiene i Konto-feltet.</span><span class="sxs-lookup"><span data-stu-id="b59f5-121">In the Account field, specify the desired values.</span></span>
-15. <span data-ttu-id="b59f5-122">Skriv inn en verdi i Beskrivelse-feltet.</span><span class="sxs-lookup"><span data-stu-id="b59f5-122">In the Description field, type a value.</span></span>
-16. <span data-ttu-id="b59f5-123">Angi et beløp i Kredit-feltet for å balansere bilaget.</span><span class="sxs-lookup"><span data-stu-id="b59f5-123">Enter an amount in the Credit field to balance the voucher.</span></span>
-17. <span data-ttu-id="b59f5-124">Klikk Poster.</span><span class="sxs-lookup"><span data-stu-id="b59f5-124">Click Post.</span></span>
-18. <span data-ttu-id="b59f5-125">Klikk Funksjoner.</span><span class="sxs-lookup"><span data-stu-id="b59f5-125">Click Functions.</span></span>
-19. <span data-ttu-id="b59f5-126">Klikk Lagre bilag som mal.</span><span class="sxs-lookup"><span data-stu-id="b59f5-126">Click Save voucher template.</span></span>
-20. <span data-ttu-id="b59f5-127">Denne fremgangsmåten forutsetter en maltype som prosent.</span><span class="sxs-lookup"><span data-stu-id="b59f5-127">This procedure assumes a Percent Template type.</span></span> <span data-ttu-id="b59f5-128">Klikk OK.</span><span class="sxs-lookup"><span data-stu-id="b59f5-128">Click OK.</span></span>
-    * <span data-ttu-id="b59f5-129">• Prosent: beløpene i bilaget konverteres til prosentfaktorer, som gjør at alle beløp kan brukes når bilagsmalen er valgt.</span><span class="sxs-lookup"><span data-stu-id="b59f5-129">• Percent: The amounts in the voucher are converted into percentage factors, which allows any amount to be applied when the Voucher template is selected.</span></span>  <span data-ttu-id="b59f5-130">• Beløp: de faktiske beløpene lagres og brukes.</span><span class="sxs-lookup"><span data-stu-id="b59f5-130">• Amount: The actual amounts will be stored and applied.</span></span>  
-21. <span data-ttu-id="b59f5-131">Klikk Økonomijournaler.</span><span class="sxs-lookup"><span data-stu-id="b59f5-131">Click General journals.</span></span>
-22. <span data-ttu-id="b59f5-132">Klikk Ny.</span><span class="sxs-lookup"><span data-stu-id="b59f5-132">Click New.</span></span>
-23. <span data-ttu-id="b59f5-133">Klikk rullegardinknappen i Navn-feltet for å åpne oppslaget.</span><span class="sxs-lookup"><span data-stu-id="b59f5-133">In the Name field, click the drop-down button to open the lookup.</span></span>
-24. <span data-ttu-id="b59f5-134">Klikk koblingen i den valgte raden i listen.</span><span class="sxs-lookup"><span data-stu-id="b59f5-134">In the list, click the link in the selected row.</span></span>
-25. <span data-ttu-id="b59f5-135">Klikk Linjer.</span><span class="sxs-lookup"><span data-stu-id="b59f5-135">Click Lines.</span></span>
-26. <span data-ttu-id="b59f5-136">Klikk Funksjoner.</span><span class="sxs-lookup"><span data-stu-id="b59f5-136">Click Functions.</span></span>
-27. <span data-ttu-id="b59f5-137">Klikk Velg bilagsmal.</span><span class="sxs-lookup"><span data-stu-id="b59f5-137">Click Select voucher template.</span></span>
-28. <span data-ttu-id="b59f5-138">Finn malen som du opprettet før.</span><span class="sxs-lookup"><span data-stu-id="b59f5-138">Find the template that you created earlier.</span></span> <span data-ttu-id="b59f5-139">Klikk OK.</span><span class="sxs-lookup"><span data-stu-id="b59f5-139">Click OK.</span></span>
-    * <span data-ttu-id="b59f5-140">Du må kanskje klikke Forrige trinn og deretter velge riktig mal hvis det finnes andre maler.</span><span class="sxs-lookup"><span data-stu-id="b59f5-140">You may need to click Previous step and then select the correct template if other templates exist.</span></span>  
-29. <span data-ttu-id="b59f5-141">I feltet Beløp kan du angi beløpet som skal brukes for bilaget.</span><span class="sxs-lookup"><span data-stu-id="b59f5-141">In the Amount field, enter the amount to be applied to the voucher.</span></span>
-    * <span data-ttu-id="b59f5-142">Beløpsfeltet vises bare hvis bilagsmalen er av typen Prosent.</span><span class="sxs-lookup"><span data-stu-id="b59f5-142">The amount field is only displayed if the voucher template is of type Percent.</span></span>  
-30. <span data-ttu-id="b59f5-143">Klikk OK.</span><span class="sxs-lookup"><span data-stu-id="b59f5-143">Click OK.</span></span>
+1. <span data-ttu-id="5dd67-106">Gå til **Navigasjonsrute > Moduler > Økonomimodul > Journaloppføringer > Økonomijournaler**.</span><span class="sxs-lookup"><span data-stu-id="5dd67-106">Go to **Navigation pane > Modules > General ledger > Journal entries > General journals**.</span></span>
+2. <span data-ttu-id="5dd67-107">Klikk **Ny** i **handlingsruten**.</span><span class="sxs-lookup"><span data-stu-id="5dd67-107">On the **Action pane**, click **New**.</span></span> <span data-ttu-id="5dd67-108">Denne prosedyren starter ved å opprette og postere et journalbilag, men eventuelle tidligere posterte journalbilag kan lagres som en mal.</span><span class="sxs-lookup"><span data-stu-id="5dd67-108">This procedure starts by creating and posting a journal voucher, but any previously posted journal voucher can be saved as a template.</span></span>  
+3. <span data-ttu-id="5dd67-109">Klikk på rullegardinknappen i **Navn**-feltet for å åpne oppslaget.</span><span class="sxs-lookup"><span data-stu-id="5dd67-109">In the **Name** field, click the drop-down button to open the lookup.</span></span>
+4. <span data-ttu-id="5dd67-110">Finn og velg ønsket post i listen.</span><span class="sxs-lookup"><span data-stu-id="5dd67-110">In the list, find and select the desired record.</span></span>
+5. <span data-ttu-id="5dd67-111">Klikk koblingen i den valgte raden i listen.</span><span class="sxs-lookup"><span data-stu-id="5dd67-111">In the list, click the link in the selected row.</span></span>
+6. <span data-ttu-id="5dd67-112">Klikk **Linjer**.</span><span class="sxs-lookup"><span data-stu-id="5dd67-112">Click **Lines**.</span></span>
+7. <span data-ttu-id="5dd67-113">Angi en verdi i **Kontotype**-feltet.</span><span class="sxs-lookup"><span data-stu-id="5dd67-113">In the **Account type** field, type a value.</span></span>
+8. <span data-ttu-id="5dd67-114">Skriv inn en verdi i **Beskrivelse**-feltet.</span><span class="sxs-lookup"><span data-stu-id="5dd67-114">In the **Description** field, type a value.</span></span>
+9. <span data-ttu-id="5dd67-115">Skriv inn en verdi i **Debet**-feltet.</span><span class="sxs-lookup"><span data-stu-id="5dd67-115">In the **Debit** field, type a value.</span></span>
+10. <span data-ttu-id="5dd67-116">Klikk på **Ny**.</span><span class="sxs-lookup"><span data-stu-id="5dd67-116">Click **New**.</span></span>
+11. <span data-ttu-id="5dd67-117">Angi en verdi i **Kontotype**-feltet.</span><span class="sxs-lookup"><span data-stu-id="5dd67-117">In the **Account type** field, type a value.</span></span>
+12. <span data-ttu-id="5dd67-118">Skriv inn en verdi i **Beskrivelse**-feltet.</span><span class="sxs-lookup"><span data-stu-id="5dd67-118">In the **Description** field, type a value.</span></span>
+13. <span data-ttu-id="5dd67-119">Skriv inn en verdi i **Debet**-feltet.</span><span class="sxs-lookup"><span data-stu-id="5dd67-119">In the **Debit** field, type a value.</span></span>
+14. <span data-ttu-id="5dd67-120">Klikk på **Ny**.</span><span class="sxs-lookup"><span data-stu-id="5dd67-120">Click **New**.</span></span>
+14. <span data-ttu-id="5dd67-121">Angi de ønskede verdiene i **Konto**-feltet.</span><span class="sxs-lookup"><span data-stu-id="5dd67-121">In the **Account** field, specify the desired values.</span></span>
+15. <span data-ttu-id="5dd67-122">Skriv inn en verdi i **Beskrivelse**-feltet.</span><span class="sxs-lookup"><span data-stu-id="5dd67-122">In the **Description** field, type a value.</span></span>
+16. <span data-ttu-id="5dd67-123">Skriv inn en verdi i **Kredit**-feltet for å balansere bilaget.</span><span class="sxs-lookup"><span data-stu-id="5dd67-123">In the **Credit** field, type a value to balance the voucher.</span></span>
+17. <span data-ttu-id="5dd67-124">Klikk **Poster** i **handlingsruten**.</span><span class="sxs-lookup"><span data-stu-id="5dd67-124">On the **Action pane**, click **Post**.</span></span>
+18. <span data-ttu-id="5dd67-125">Klikk **Funksjoner**.</span><span class="sxs-lookup"><span data-stu-id="5dd67-125">Click **Functions**.</span></span>
+19. <span data-ttu-id="5dd67-126">Klikk **Lagre bilag som mal**.</span><span class="sxs-lookup"><span data-stu-id="5dd67-126">Click **Save voucher** template.</span></span>
+20. <span data-ttu-id="5dd67-127">Denne fremgangsmåten forutsetter en **maltype som prosent**.</span><span class="sxs-lookup"><span data-stu-id="5dd67-127">This procedure assumes a **Percent Template** type.</span></span> <span data-ttu-id="5dd67-128">Klikk OK.</span><span class="sxs-lookup"><span data-stu-id="5dd67-128">Click OK.</span></span>
+    - <span data-ttu-id="5dd67-129">Prosent: beløpene i bilaget konverteres til prosentfaktorer, som gjør at alle beløp kan brukes når bilagsmalen er valgt.</span><span class="sxs-lookup"><span data-stu-id="5dd67-129">Percent: The amounts in the voucher are converted into percentage factors, which allows any amount to be applied when the Voucher template is selected.</span></span>
+    - <span data-ttu-id="5dd67-130">Beløp: de faktiske beløpene lagres og brukes.</span><span class="sxs-lookup"><span data-stu-id="5dd67-130">Amount: The actual amounts will be stored and applied.</span></span>  
+21. <span data-ttu-id="5dd67-131">Klikk **Økonomijournaler**.</span><span class="sxs-lookup"><span data-stu-id="5dd67-131">Click **General journals**.</span></span>
+22. <span data-ttu-id="5dd67-132">Klikk på **Ny**.</span><span class="sxs-lookup"><span data-stu-id="5dd67-132">Click **New**.</span></span>
+23. <span data-ttu-id="5dd67-133">Klikk på rullegardinknappen i **Navn**-feltet for å åpne oppslaget.</span><span class="sxs-lookup"><span data-stu-id="5dd67-133">In the **Name** field, click the drop-down button to open the lookup.</span></span>
+24. <span data-ttu-id="5dd67-134">Klikk koblingen i den valgte raden i listen.</span><span class="sxs-lookup"><span data-stu-id="5dd67-134">In the list, click the link in the selected row.</span></span>
+25. <span data-ttu-id="5dd67-135">Klikk **Linjer**.</span><span class="sxs-lookup"><span data-stu-id="5dd67-135">Click **Lines**.</span></span>
+26. <span data-ttu-id="5dd67-136">Klikk **Funksjoner**.</span><span class="sxs-lookup"><span data-stu-id="5dd67-136">Click **Functions**.</span></span>
+27. <span data-ttu-id="5dd67-137">Klikk **Velg bilagsmal**.</span><span class="sxs-lookup"><span data-stu-id="5dd67-137">Click **Select voucher template**.</span></span>
+28. <span data-ttu-id="5dd67-138">Finn malen som du opprettet før.</span><span class="sxs-lookup"><span data-stu-id="5dd67-138">Find the template that you created earlier.</span></span> <span data-ttu-id="5dd67-139">Klikk **OK**.</span><span class="sxs-lookup"><span data-stu-id="5dd67-139">Click **OK**.</span></span> <span data-ttu-id="5dd67-140">Du må kanskje klikke **Forrige trinn** og deretter velge riktig mal hvis det finnes andre maler.</span><span class="sxs-lookup"><span data-stu-id="5dd67-140">You may need to click **Previous step** and then select the correct template if other templates exist.</span></span>  
+29. <span data-ttu-id="5dd67-141">I feltet **Beløp** kan du angi beløpet som skal brukes for bilaget.</span><span class="sxs-lookup"><span data-stu-id="5dd67-141">In the **Amount** field, enter the amount to be applied to the voucher.</span></span> <span data-ttu-id="5dd67-142">**Beløp**-feltet vises bare hvis bilagsmalen er av typen Prosent.</span><span class="sxs-lookup"><span data-stu-id="5dd67-142">The **Amount** field is only displayed if the voucher template is of type Percent.</span></span>  
+30. <span data-ttu-id="5dd67-143">Klikk **OK**.</span><span class="sxs-lookup"><span data-stu-id="5dd67-143">Click **OK**.</span></span>
 
