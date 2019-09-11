@@ -1,9 +1,9 @@
 ---
-title: Vis posterte mva-transaksjoner
-description: Du kan vise posterte mva-transaksjoner fra forskjellige sider avhengig av hva du vil vise.
+title: Vise posterte mva-transaksjoner
+description: Dette emnet beskriver noen måter å vise posterte mva-transaksjoner på.
 author: twheeloc
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 08/08/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,29 +16,36 @@ ms.search.region: Global
 ms.author: vstehman
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: c5668c1cd4325f557d83a2291c8139f65c4d170e
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 5a2ff8b46d20fa012cbce817ae4e95b4799149ec
+ms.sourcegitcommit: 0e2e4d8419c03a30d2223662ba8d403a28fa31eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1846205"
+ms.lasthandoff: 08/12/2019
+ms.locfileid: "1870874"
 ---
-# <a name="view-posted-sales-tax-transactions"></a>Vis posterte mva-transaksjoner
+# <a name="view-posted-sales-tax-transactions"></a>Vise posterte mva-transaksjoner
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-Du kan vise posterte mva-transaksjoner fra forskjellige sider avhengig av hva du vil vise. Denne oppgaven bruker demonstrasjonsfirmaet USMF.
+Dette emnet beskriver noen måter å vise posterte mva-transaksjoner på. Du kan vise posterte mva-transaksjoner fra forskjellige sider avhengig av hva du vil vise. Denne oppgaven bruker demonstrasjonsfirmaet USMF.
 
-1. Gå til Avgift > Forespørsler og rapporter > Merverdiavgiftforespørsler > Postert merverdiavgift.
-2. Klikk Vis filtre.
+# <a name="posted-sales-tax-page"></a>Siden Postert merverdiavgift
+
+1. I navigasjonsruten går du til **Moduler > Avgift > Forespørsler og rapporter > Merverdiavgiftforespørsler > Postert merverdiavgift**.
+2. Velg **Vis filtre** for å begrense visningen til bestemte transaksjoner.
 3. Lukk siden.
-4. Gå til Avgift > Indirekte avgifter > Merverdiavgift > Mva-utligningsperioder.
-5. Utvid delen Periodeintervaller.
-6. Velg intervallet du vil bruke.
-7. Vis posterte mva-transaksjoner for det valgte utligningsperiodeintervallet.
-8. Du kan filtrere listen over posterte mva-transaksjoner ytterligere.
-9. Lukk siden.
-10. Gå til Avgift > Indirekte avgifter > Merverdiavgift > Mva-koder.
-11. Klikk Mva-kode i handlingsruten.
-12. Klikk Postert merverdiavgift.
+
+# <a name="sales-tax-settlement-periods-page"></a>Siden Mva-utligningsperioder
+
+1. I navigasjonsruten går du til **Moduler > Avgift > Indirekte avgifter > Merverdiavgift > Mva-utligningsperioder**.
+2. Utvid delen **Periodeintervaller**.
+3. Velg intervallet du vil bruke.
+4. Du kan filtrere listen over posterte mva-transaksjoner ytterligere.
+5. Lukk siden.
+
+# <a name="sales-tax-codes-page"></a>Siden Mva-koder
+
+1. I navigasjonsruten går du til **Moduler > Avgift > Indirekte avgifter > Merverdiavgift > Mva-koder**.
+2. Velg **Mva-kode** i handlingsruten.
+3. Velg **Postert merverdiavgift**.
 

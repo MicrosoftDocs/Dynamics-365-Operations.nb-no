@@ -1,9 +1,9 @@
 ---
 title: Opprette et nytt lageroppsett
-description: Denne fremgangsmåten viser hvordan du definerer informasjon om lokasjonene i lageret.
+description: Dette emnet beskriver hvordan du definerer informasjon om lokasjoner i et lager.
 author: perlynne
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 07/29/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,62 +17,49 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: f0a52c5d68816a81a94db019387b9ea3ec3efc5a
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 302c028a93dfdb57972e4759abbbc4fdedabbd17
+ms.sourcegitcommit: a368682f9cf3897347d155f1a2d4b33e555cc2c4
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1845528"
+ms.lasthandoff: 08/08/2019
+ms.locfileid: "1867247"
 ---
 # <a name="create-a-new-warehouse-layout"></a>Opprette et nytt lageroppsett
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-Denne fremgangsmåten viser hvordan du definerer informasjon om lokasjonene i lageret. Dette gjelder bare for lagrene som er opprettet ved hjelp av "grunnleggende lageraktiviteter" i lagermodulen, ikke for lagre som er opprettet i lagerstyringsmodulen. Du kan bruke denne fremgangsmåten i demonstrasjonsselskapet USMF eller ved hjelp av dine egne data.
+Dette emnet beskriver hvordan du definerer informasjon om lokasjoner i et lager. Dette gjelder bare for lagrene som er opprettet ved hjelp av "grunnleggende lageraktiviteter" i lagermodulen, ikke for lagre som er opprettet i lagerstyringsmodulen. Du kan bruke denne fremgangsmåten i demonstrasjonsselskapet USMF eller ved hjelp av dine egne data.
 
 
 ## <a name="set-the-default-location-capacity"></a>Angi standard lokasjonskapasitet
-1. Gå til Lagerstyring > Oppsett > Parametere for beholdnings- og lagerstyring.
-2. Klikk kategorien Lokasjoner.
-3. Angi et nummer i Standardbredde-feltet.
-4. Angi et nummer i Standarddybde-feltet.
-5. Angi et tall i Standardhøyde-feltet.
-6. Klikk Lagre.
+1. I navigasjonsruten går du til **Moduler > Lagerstyring > Oppsett > Parametere for beholdnings- og lagerstyring**.
+2. Velg fanen **Lokasjoner**.
+3. Angi et nummer i **Standardbredde**-feltet.
+4. Angi et nummer i **Standarddybde**-feltet.
+5. Angi et tall i **Standardhøyde**-feltet.
+6. Velg **Lagre**.
 7. Lukk siden.
 
 ## <a name="define-the-location-name-format"></a>Definer formatet for plasseringsnavn
-1. Gå til Lagerstyring > Oppsett > Lageroppdeling > Lagre.
-2. Klikk Ny.
-3. Skriv inn en verdi i Lager-feltet.
-4. Skriv inn en verdi i Navn-feltet.
-5. Klikk rullegardinknappen i Område-feltet for å åpne oppslaget.
-6. Finn og velg ønsket post i listen.
-7. Aktiver/deaktiver utvidelsen av delen Lokasjonsnavn.
-    * Alternativene i denne delen definerer standardformatet for lokasjonsnavn. I vårt eksempel skal vi ta med gangnummer, reolnummer og hyllenummer.  
-8. Sett alternativet Inkluder gang til Ja.
-9. Sett alternativet Ta med reol til Ja. 
-10. I Format-feltet velger du en verdi for reolen.
-    * For eksempel: -##  
-11. Sett alternativet Ta med hylle til Ja.
-12. I Format-feltet velger du en verdi for hyllen.
-    * For eksempel: -##  
+1. I navigasjonsruten går du til **Moduler > Lagerstyring > Oppsett > Lageroppdeling > Lagre**.
+2. Velg **Ny**.
+3. Skriv inn en verdi i **Lager**-feltet.
+4. Skriv inn en verdi i **Navn**-feltet.
+5. Velg det ønskede oppslaget i **Område**-feltet.
+6. Aktiver/deaktiver utvidelsen av delen **Lokasjonsnavn**. Alternativene i denne delen definerer standardformatet for lokasjonsnavn. I vårt eksempel skal vi ta med gangnummer, reolnummer og hyllenummer.  
+7. Sett alternativet **Inkluder gang** til **Ja**.
+8. Sett alternativet **Ta med reol** til **Ja**. 
+9. I **Format**-feltet velger du en verdi for reolen.
+10. Sett alternativet **Ta med hylle** til **Ja**.
+11. I **Format**-feltet velger du en verdi for hyllen.
 
 ## <a name="define-warehouse-locations"></a>Definer lagerlokasjoner
-1. Klikk Lager i handlingsruten.
-2. Klikk Lokasjonsveiviser.
-3. Klikk Neste.
-4. Fjern merkingen av alternativet Utleveringsporter
-5. Fjern merkingen av alternativet Bulklokasjoner
-6. Klikk Neste.
-7. Klikk Neste.
-8. Klikk Neste.
-9. Klikk Neste.
-10. Klikk Neste.
-11. Klikk Neste.
-12. Klikk Neste.
-    * Legg merke til at de fysiske dimensjonene som vises på denne siden er de du angir i begynnelsen av denne fremgangsmåten.  
-13. Klikk Neste.
-14. Klikk Finish.
-15. Lukk siden.
-16. Oppdater siden.
+1. Velg **Lager** i handlingsruten.
+2. Velg **Lokasjonsveiviser**.
+3. Velg **Neste**.
+4. Fjern merkingen av alternativet **Utleveringsporter**
+5. Fjern merkingen av alternativet **Bulklokasjoner**
+6. Velg **Neste** til du kommer til alternativet for å velge **Fullfør**.
+7. Lukk siden.
+8. Oppdater siden.
 

@@ -19,50 +19,55 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: b74bc2d3133af7e87663a4e6bafb8780e0a6a66f
-ms.sourcegitcommit: efcc0dee8bde5f8f93f6291e7f059ad426843e57
+ms.openlocfilehash: 1473c3bad55734d5f83ee3e4c1654921b872f3bb
+ms.sourcegitcommit: 3f05ede8b8acdf0550240a83a013e093b4ad043d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "1797304"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "1873134"
 ---
-# <a name="execution-order-for-initial-sychronization-of-finance-and-operations-and-common-data-service"></a>Utføringsordre for innledende synkronisering av Finance and Operations og Common Data Service
+# <a name="execution-order-for-initial-synchronization-of-finance-and-operations-and-common-data-service"></a>Utføringsordre for innledende synkronisering av Finance and Operations og Common Data Service
 
-Før du bruker dataintegrering, må du opprette de første dataene som kreves for kunder, leverandører og kontakter. Hvis du for eksempel vil opprette en ny **Leverandørgruppe**-vare og angi **betalingsbetingelsene** som **Net30**, før du prøver å opprette **Leverandørgruppe**-varen, må du kontrollere at **Net30** finnes både i Finance and Operations og Common Data Service. (I fremtiden vil vi gi ut en dobbel skrive plattform funksjonalitet kalt **Initial Sync**. Det vil gjøre en éngangs datasynkronisering mellom Finance and Operations og Common Data Service som en del av dual-Write-oppsettet.)
+[!include [banner](../includes/banner.md)]
 
-Tips: Vi lanserer et dual-Write-kart for alle referansedata inkludert **betalingsbetingelser**. Hvis du allerede har de opprinnelige dataene i ett system, kan en liten oppdateringsoperasjon på en oppføring utløse dobbel skriving på denne oppføringen. 
+[!include [preview](../includes/preview-banner.md)]
 
-Du må følge følgende prioritetsrekkefølge og kontrollere at de opprinnelige dataene er tilgjengelige både i Finance and Operations og Common Data Service.   
+Før du bruker dataintegrering, må du opprette de første dataene som kreves for kunder, leverandører og kontakter. Du vil for eksempel opprette en ny **Leverandørgruppe**-vare og sette **Betalingsvilkår**-verdien til **Net30**. Før du prøver å opprette **Leverandørgruppe**-varen, må du i dette tilfellet kontrollere at **Net30** finnes i både Microsoft Dynamics 365 for Finance and Operations og Common Data Service. (I fremtiden vil Microsoft gi ut en dobbel skrive plattform funksjonalitet kalt Initial Sync. Denne funksjonaliteten vil gjøre en éngangs datasynkronisering mellom Finance and Operations og Common Data Service som en del av dual-Write-oppsettet.)
+
+> [!TIP]
+> Microsoft lanserer et dual-Write-kart for alle referansedata, inkludert **betalingsbetingelser**. Hvis du allerede har de opprinnelige dataene i ett system, kan en liten oppdateringsoperasjon på en oppføring utløse dobbel skriving på denne oppføringen.
+
+Du må følge følgende prioritetsrekkefølge og kontrollere at de opprinnelige dataene er tilgjengelige både i Finance and Operations og Common Data Service.
 
 ## <a name="vendor"></a>Leverandør
 
-Rekkefølgen for utførelse av leverandør er:
+Her er utførelsesrekkefølgen for **Leverandør**-enheten:
 
-```
-Vendor Group
-    Terms of payment
-        Payment day & lines
-        Payment schedule
-Vendor payment method
-```
+1. Leverandørgruppe
+
+    1. Betalingsbetingelser
+
+        1. Betalingsdag og linjer
+        2. Betalingsplan
+
+2. Betalingsmåte for leverandør
 
 ## <a name="customer-organization"></a>Kunde (organisasjon)
 
-Rekkefølgen for utførelse av kunde er:
+Her er utførelsesrekkefølgen for **Kunde**-enheten:
 
-```
-Customer Group
-    Terms of payment
-        Payment day & lines
-        Payment 
-Customer payment method
-```
+1. Kundegruppe
+
+    1. Betalingsbetingelser
+
+        1. Betalingsdag og linjer
+        2. Betaling 
+
+2. Kundebetalingsmåte
 
 ## <a name="contact-person"></a>Kontakt (person)
 
-Rekkefølgen for utførelse av kontakt er:
+Her er utførelsesrekkefølgen for **Kontakt**-enheten:
 
-```
-Customer
-Vendor               
-```
+1. Kunde
+2. Leverandør

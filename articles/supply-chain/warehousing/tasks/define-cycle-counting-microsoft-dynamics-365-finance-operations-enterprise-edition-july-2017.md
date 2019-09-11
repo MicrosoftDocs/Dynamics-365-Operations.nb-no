@@ -3,7 +3,7 @@ title: 'Definere syklustelling '
 description: Syklustelling er en lagerprosess som du kan bruke til å overvåke varer i lagerbeholdning.
 author: MarkusFogelberg
 manager: AnnBe
-ms.date: 06/23/2017
+ms.date: 08/12/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2832547f81b0153d42ac4664184f18bd66f1acdd
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 24c4c27745a15f013d20b52efc6e36de848a0251
+ms.sourcegitcommit: cbcf344b3b552acca56c3e27606eac7f2f124afe
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1571697"
+ms.lasthandoff: 08/22/2019
+ms.locfileid: "1916789"
 ---
 # <a name="define-cycle-counting"></a>Definere syklustelling  
 
@@ -30,74 +30,68 @@ Syklustelling er en lagerprosess som du kan bruke til å overvåke varer i lager
 
 
 ## <a name="set-the-priority-of-counting-work"></a>Angi prioritet for opptellingsarbeid
-1. Gå til Lagerstyring > Oppsett > Lagerstyringsparametere.
-2. Klikk kategorien for Syklustelling.
-3. Angi et nummer i feltet Standardprioritet for arbeid for syklustelling.
-    * Dette trinnet endrer prioriteten til syklustellingsarbeidet, sammenlignet med andre typer varer i lageret. Ved å skrive inn et tall som er lavere enn tallet for andre typer arbeid, kan du øke prioriteten for syklustellingsarbeidet.  
-4. Klikk Lagre.
+1. I **navigasjonsruten** går du til **Moduler > Lagerstyring > Oppsett > Lagerstyringsparametere**.
+2. Klikk fanen **Syklustelling**.
+3. Angi et nummer i feltet **Standardprioritet for arbeid for syklustelling**. Dette trinnet endrer prioriteten til syklustellingsarbeidet, sammenlignet med andre typer varer i lageret. Ved å skrive inn et tall som er lavere enn tallet for andre typer arbeid, kan du øke prioriteten for syklustellingsarbeidet.  
+4. Klikk **Lagre**.
 5. Lukk siden.
 
 ## <a name="enable-the-mobile-device"></a>Aktivere mobilenheten
-1. Gå til Lagerstyring > Oppsett > Mobilenhet > Menyelementer på mobilenheten.
-2. Klikk Ny.
-3. Skriv inn en verdi i feltet Menyelementnavn.
-4. Skriv inn en verdi i Tittel-feltet.
-5. Velg Arbeid i feltet Modus.
-6. Angi alternativet Bruk eksisterende arbeid til Ja.
-    * Når du setter dette alternativet til Ja, vil systemet se etter eksisterende arbeid når menyelementet for mobilenhet brukes.  
-7. Velg Systemstyrt i feltet Styrt av.
-    * Når "Systemrettet" er valgt, kommer lagermedarbeideren til å åpne arbeid som er i definerte arbeidsklasser. (Vi vil opprette disse arbeidsklassene etterpå.)  
-8. Vis eller skjul delen Arbeidsklasser.
-    * Nå skal vi opprette to klasser for arbeid som skal brukes med dette menyelementet for mobil enhet. Når menyelementet brukes, spørres det etter disse arbeidsklassene, og arbeidet med høyest prioritet blir vist for brukeren.  
-9. Klikk Ny.
-10. Velg en verdi i feltet Arbeidsklasse-ID.
-11. Klikk Ny.
-12. Velg en verdi i feltet Arbeidsklasse-ID.
-13. Klikk Lagre.
+1. I **navigasjonsruten** går du til **Moduler > Lagerstyring > Oppsett > Mobilenhet >Menyelementer på mobilenheten**.
+2. Klikk på **Ny**.
+3. Skriv inn en verdi i feltet **Menyelementnavn**.
+4. Skriv inn en verdi i **Tittel**-feltet.
+5. Velg Arbeid i feltet **Modus**.
+6. Angi alternativet **Bruk eksisterende arbeid** til Ja. Når du setter dette alternativet til Ja, vil systemet se etter eksisterende arbeid når menyelementet for mobilenhet brukes.  
+7. Velg Systemstyrt i feltet **Styrt av**. Når "Systemrettet" er valgt, kommer lagermedarbeideren til å åpne arbeid som er i definerte arbeidsklasser. (Vi vil opprette disse arbeidsklassene etterpå.)  
+8. Utvid **Arbeidsklasser**-hurtigfanen. Nå skal vi opprette to klasser for arbeid som skal brukes med dette menyelementet for mobil enhet. Når menyelementet brukes, spørres det etter disse arbeidsklassene, og arbeidet med høyest prioritet blir vist for brukeren.  
+9. Klikk på **Ny**.
+10. Velg en verdi i feltet **Arbeidsklasse-ID**.
+11. Klikk på **Ny**.
+12. Velg en verdi i feltet **Arbeidsklasse-ID**.
+13. Klikk på **Lagre** i **handlingsruten**.
 14. Lukk siden.
-15. Gå til Lagerstyring > Oppsett > Mobilenhet > Meny på mobilenheten.
+15. I **navigasjonsruten** går du til **Moduler > Lagerstyring > Oppsett > Mobilenhet > Meny på mobilenheten**.
 16. Finn og velg ønsket post i listen.
 17. Velg menyelementet du har nettopp opprettet, i treet.
-18. Klikk Rediger.
+18. Klikk **Rediger**.
 19. Klikk pilen for å legge til menyelementet i menyen.
-20. Klikk Lagre.
+20. Klikk **Lagre**.
 
 ## <a name="create-a-counting-threshold"></a>Opprette en opptellingsterskel
-1. Gå til Lagerstyring > Oppsett > Syklustelling > Terskler for syklustelling.
-2. Klikk Ny.
-3. Skriv inn en verdi i feltet ID for syklustellingsterskel.
-4. Angi alternativet Behandle syklustelling umiddelbart som Ja.
-5. Skriv inn en verdi i feltet Beskrivelse.
-6. Klikk Lagre.
-7. Klikk Velg lokasjoner.
+1. I **navigasjonsruten** går du til **Moduler > Lagerstyring > Oppsett > Syklustelling > Terskler for syklustelling**.
+2. Klikk på **Ny**.
+3. Skriv inn en verdi i feltet **ID for syklustellingsterskel**.
+4. Angi alternativet **Behandle syklustelling umiddelbart** til Ja.
+5. Skriv inn en verdi i **Beskrivelse**-feltet.
+6. Klikk **Lagre**.
+7. Klikk **Velg lokasjoner**.
 8. Merk den valgte raden i listen.
-9. Velg en verdi i feltet Vilkår.
-10. Klikk OK.
+9. Velg en verdi i **Kriterier**-feltet.
+10. Klikk **OK**.
 11. Lukk siden.
 
 ## <a name="create-a-cycle-count-plan"></a>Opprette en plan for syklustelling
-1. Gå til Lagerstyring > Oppsett > Syklustelling > Planer for syklustelling.
-2. Klikk Ny.
-3. Skriv inn en verdi i feltet ID for syklustellingsplan.
-4. Skriv inn en verdi i Beskrivelse-feltet.
-5. Angi et tall i feltet Største antall syklustellinger.
-6. Klikk Lagre.
-7. Klikk Velg lokasjoner.
+1. I **navigasjonsruten** går du til **Moduler > Lagerstyring > Oppsett > Syklustelling > Planer for syklustelling**.
+2. Klikk på **Ny**.
+3. Skriv inn en verdi i feltet **ID for syklustellingsplan**.
+4. Skriv inn en verdi i **Beskrivelse**-feltet.
+5. Angi et tall i feltet **Største antall syklustellinger**.
+6. Klikk **Lagre**.
+7. Klikk **Velg lokasjoner**.
 8. Merk den valgte raden i listen.
-9. Velg en verdi i feltet Vilkår.
-10. Klikk OK.
-11. Angi et tall i feltet Dager mellom syklustellinger.
-    * Hvis for eksempel feltet Dager mellom syklustellinger er angitt til 5, opprettes syklustellingsarbeidet hver femte dag. Hvis syklustellingsarbeid imidlertid behandles på dag tre, opprettes neste syklustellingsarbeid fem dager etter den siste syklustellingen ble behandlet, på dag 8.  
-12. Klikk Lagre.
-13. Klikk Ny.
-14. Angi et nummer i Sekvensnummer-feltet.
-    * Sorteringen er fra det laveste tallet til det høyeste tallet. Verdien må være over 0 (null).  
+9. Velg en verdi i **Kriterier**-feltet.
+10. Klikk **OK**.
+11. Angi et tall i feltet **Dager mellom syklustellinger**. Hvis for eksempel feltet **Dager mellom syklustellinger** er angitt til 5, opprettes syklustellingsarbeidet hver femte dag. Hvis syklustellingsarbeid imidlertid behandles på dag tre, opprettes neste syklustellingsarbeid fem dager etter den siste syklustellingen ble behandlet, på dag 8.  
+12. Klikk **Lagre**.
+13. Klikk på **Ny**.
+14. Angi et nummer i **Sekvensnummer**-feltet. Sorteringen er fra det laveste tallet til det høyeste tallet. Verdien må være over 0 (null).  
 15. Merk den valgte raden i listen.
-16. Skriv inn en verdi i feltet Beskrivelse.
-17. Klikk Lagre.
-18. Klikk Definer produktspørring.
+16. Skriv inn en verdi i **Beskrivelse**-feltet.
+17. Klikk **Lagre**.
+18. Klikk **Definer produktspørring**.
 19. Merk den valgte raden i listen.
-20. Angi eller velg en verdi i Kriterier-feltet.
-21. Klikk OK.
+20. Angi eller velg en verdi i **Kriterier**-feltet.
+21. Klikk **OK**.
 22. Lukk siden.
 

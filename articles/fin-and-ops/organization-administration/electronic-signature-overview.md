@@ -1,9 +1,9 @@
 ---
-title: Elektroniske signaturer
+title: Oversikt over elektroniske signaturer
 description: Denne artikkelen emnet gir en oversikt over elektroniske signaturer, og beskriver hvordan de brukes i Microsoft Dynamics 365 for Finance and Operations.
 author: maertenm
 manager: AnnBe
-ms.date: 08/24/2017
+ms.date: 07/25/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,14 +18,14 @@ ms.search.region: Global
 ms.author: maertenm
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 676510ef503d51d914ba762e7ac15e2c4811c6ba
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: f66999d61c63b2ace0ed06d0ecdd0cfc95cbd778
+ms.sourcegitcommit: e286572ce94a9442a5b3076c3ff5b429be0ed512
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1553230"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "1865022"
 ---
-# <a name="electronic-signatures"></a>Elektroniske signaturer
+# <a name="electronic-signatures-overview"></a>Oversikt over elektroniske signaturer
 
 [!include [banner](../includes/banner.md)]
 
@@ -42,7 +42,7 @@ Elektroniske signaturer er et krav til samsvar med lovgivning for flere regulert
 
 ## <a name="electronic-signatures-in-dynamics-365-for-finance-and-operations"></a>Elektroniske signaturer i Dynamics 365 for Finance and Operations
 
-I Dynamics 365 for Finance and Operations kan du bruke elektroniske signaturer for viktige forretningsprosesser. Noen prosesser har innebygde funksjoner for elektronisk signatur. Du kan også opprette egendefinerte signaturkrav for en hvilken som helst databasetabell og et hvilket som helst felt.
+I Finance and Operations kan du bruke elektroniske signaturer for viktige forretningsprosesser. Noen prosesser har innebygde funksjoner for elektronisk signatur. Du kan også opprette egendefinerte signaturkrav for en hvilken som helst databasetabell og et hvilket som helst felt.
 
 Elektroniske signaturer har innebygd funksjonalitet for digital signatur. Alle brukere som signerer dokumenter, må ha et gyldig kryptografisk sertifikat. Når et dokument signeres, valideres den private nøkkelen som er tilordnet dette sertifikatet. Finance and Operations registrerer informasjon om elektronisk signatur i en logg for å angi et revisjonsspor. Hvis du vil definere elektroniske signaturer, kan du se [Opprette elektroniske signaturer (oppgaveveiledning)](tasks/set-up-electronic-signatures.md).
 

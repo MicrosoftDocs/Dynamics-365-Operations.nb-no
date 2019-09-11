@@ -3,7 +3,7 @@ title: Innbetale kundebetalinger
 description: Betale inn kundebetalinger.
 author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 07/18/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: afbf74d1cf3dc87e97dda0873115b5c7fa49ca3d
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 595d1b609ae83af8f1581caeff9ef7d3892a6207
+ms.sourcegitcommit: a368682f9cf3897347d155f1a2d4b33e555cc2c4
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1834469"
+ms.lasthandoff: 08/08/2019
+ms.locfileid: "1867780"
 ---
 # <a name="deposit-customer-payments"></a>Innbetale kundebetalinger
 
@@ -29,29 +29,22 @@ ms.locfileid: "1834469"
 
 Betale inn kundebetalinger. Denne oppgaven bruker demonstrasjonsfirmaet USMF.
 
-1. Gå til Kunder > Betalinger > Betalingsjournal.
-2. Klikk Ny.
-3. Klikk rullegardinknappen i Navn-feltet for å åpne oppslaget.
-4. Velg betalingsjournalen. 
-5. Klikk Linjer.
-6. Velg kunden du registrerer betalingen for, i Konto-feltet.
-7. Angi betalingsbeløpet i Kredit-feltet.
-    * Du kan velge å la beløpet stå tomt, og la programmet beregne det ved å velge fakturaene som ble betalt.  
-8. Skriv inn en verdi i Betalingsreferanse-feltet.
-    * Betalingsreferansen kan være sjekknummeret for betalingen du angir. Betalingsreferansen er nødvendig hvis du skal inkludere betalingen på et betalingsbilag.  
-9. Merk av for Bruk et betalingsbilag.
-    * Hvis betalingen skal inkluderes i innbetalingen, kan du endre denne innstillingen til Ja.  
-10. Klikk Ny.
-11. Velg kunden for den neste betalingen i Konto-feltet.
-12. Angi betalingsbeløpet i Kredit-feltet.
-13. Skriv inn en verdi i Betalingsreferanse-feltet.
-14. Merk av for Bruk et betalingsbilag.
-15. Klikk Poster.
-    * Betalinger må være postert før betalingsbilaget kan genereres. Dette sikrer at betalingene ikke endres etter at betalingsbilaget er generert.  
-16. Klikk Funksjoner.
-17. Klikk betalingsbilag.
-18. Klikk OK.
-    * Den første siden brukes til å opprette betalingsbilaget.  
-19. Klikk OK.
-    * Det andre trinnet er å skrive ut betalingsbilaget, men dette trinnet er ikke nødvendig.  
+1. Gå til **Moduler > Kunder > Betalinger > Betalingsjournal** i navigasjonsruten.
+2. Velg **Ny**.
+3. I **Navn**-feltet velger du **CustPay** i rullegardinmenyen.
+4. Velg **Linjer**.
+5. Velg kunden du registrerer betalingen for, i **Konto**-feltet.
+6. Angi betalingsbeløpet i **Kredit**-feltet. Du kan velge å la beløpet stå tomt, og la programmet beregne det ved å velge fakturaene som ble betalt.  
+7. Skriv inn en verdi i **Betalingsreferanse**-feltet. Betalingsreferansen kan være sjekknummeret for betalingen du angir. Betalingsreferansen er nødvendig hvis du skal inkludere betalingen på et betalingsbilag.  
+8. Merk av for Bruk et betalingsbilag. Hvis betalingen skal inkluderes i innbetalingen, kan du endre denne innstillingen til Ja.  
+9. Velg **Ny**.
+10. Velg kunden for den neste betalingen i **Konto**-feltet.
+11. Angi betalingsbeløpet i **Kredit**-feltet.
+12. Skriv inn en verdi i **Betalingsreferanse**-feltet.
+13. Merk av for **Bruk et betalingsbilag**.
+14. Velg **Poster**. Betalinger må være postert før betalingsbilaget kan genereres. Dette sikrer at betalingene ikke endres etter at betalingsbilaget er generert.  
+15. Velg **Funksjoner**.
+16. Velg **Betalingsbilag**.
+17. Velg **OK**. Den første siden brukes til å opprette betalingsbilaget.  
+18. Velg **OK**. Det andre trinnet er å skrive ut betalingsbilaget, men dette trinnet er ikke nødvendig.  
 

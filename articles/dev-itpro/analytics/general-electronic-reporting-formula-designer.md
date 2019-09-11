@@ -2,8 +2,8 @@
 title: Formeldesigner i elektronisk rapportering (ER)
 description: Dette emnet beskriver hvordan du bruker formeldesigneren i elektronisk rapportering (ER).
 author: NickSelin
-manager: AnnBe
-ms.date: 05/14/2014
+manager: kfend
+ms.date: 07/30/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 690dd1f83cb345d3dac67eef059ad890f03afb01
-ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
+ms.openlocfilehash: 1f6caa6afd0ce36340caf237c1acca0ea343824f
+ms.sourcegitcommit: 4ff8c2c2f3705d8045df66f2c4393253e05b49ed
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/02/2019
-ms.locfileid: "1849515"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "1864300"
 ---
 # <a name="formula-designer-in-electronic-reporting-er"></a>Formeldesigner i elektronisk rapportering (ER)
 
@@ -113,6 +113,33 @@ ER-formeldesigner kan også brukes til å generere et filnavn for et genererende
 - Et uttrykk aktiverer (ved å returnere **SANN**) filopprettingsprosessen for partier som inneholder minst én post.
 
 [![Filkontroll](./media/picture-file-control.jpg)](./media/picture-file-control.jpg)
+
+### <a name="documents-content-control"></a>Kontroll av dokumentinnhold
+
+ER-formeldesigneren kan brukes til å konfigurere uttrykk som kontrollerer hvilke data som skal plasseres i genererte, elektroniske dokumenter ved kjøring. Uttrykkene kan aktivere eller deaktivere utdataene for bestemte elementer i formatet, avhengig av behandling av data og konfigurert logikk. Dette uttrykket kan angis for ett enkelt formatelement i **Aktivert**-feltet i **Tilordning**-fanen på **Operasjonsutforming**-siden som en logisk betingelse som returnerer den **boolske** verdien:
+
+-   Når **True** returneres, kjøres det gjeldende formatelementet.
+-   Når **False** returneres, blir det gjeldende formatelementet hoppet over.
+
+Følgende illustrasjon viser uttrykk av denne typen (versjonen **11.12.11** av formatkonfigurasjonen **ISO20022-kredittoverføring (NO)** som angis av Microsoft, er et eksempel). **XMLHeader**-formatkomponenten er konfigurert til å beskrive strukturen til kredittoverføringsmeldingen ved å følge ISO-meldingsstandardene 20022 XML. Formatkomponenten **XMLHeader/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/RmtInf/Ustrd** er konfigurert til å legge til i den genererte meldingen, **Ustrd** XML-element, og plassere remisseinformasjonen i et ustrukturert format som tekst i følgende XML-elementer:
+
+-   **PaymentNotes**-komponenten brukes til å produsere teksten i betalingsmerknadene.
+-   **DelimitedSequence**-komponenten produserer kommadelte fakturanumre som brukes til å utligne gjeldende kredittoverføring.
+
+[![Operasjonsutforming](./media/GER-FormulaEditor-ControlContent-1.png)](./media/GER-FormulaEditor-ControlContent-1.png)
+
+> [!NOTE]
+> **PaymentNotes**- og **DelimitedSequence**-komponentene merkes ved hjelp av et spørsmålstegn. Dette betyr at bruk av begge komponentene er betinget, basert på følgende kriterier:
+
+-   Definert for **PaymentNote**-komponenten aktiverer **@.PaymentsNotes<>""**-uttrykket (ved å returnere **TRUE**) utfyllingen til **Ustrd** XML-elementet, teksten for betalingsmerknader når denne teksten for gjeldende kredittoverføring ikke er tom.
+
+[![Operasjonsutforming](./media/GER-FormulaEditor-ControlContent-2.png)](./media/GER-FormulaEditor-ControlContent-2.png)
+
+-   Definert for **DelimitedSequence**-komponenten aktiverer **@.PaymentsNotes=""**-uttrykket (ved å returnere **TRUE**) utfyllingen til **Ustrd** XML-elementet, atskilt med kommadelte fakturanumre som brukes til å utligne gjeldende kredittoverføring når teksten for betalingsmerknader for denne kredittoverføringen er tom.
+
+[![Operasjonsutforming](./media/GER-FormulaEditor-ControlContent-3.png)](./media/GER-FormulaEditor-ControlContent-3.png)
+
+Basert på denne innstillingen vil den genererte meldingen for hver debitorbetaling **Ustrd** XML-element, inneholde enten tekst for betalingsmerknader eller, når denne teksten er tom, tekst atskilt med kommadelte tall som brukes til å utligne denne betalingen.
 
 ### <a name="basic-syntax"></a>Grunnleggende syntaks
 

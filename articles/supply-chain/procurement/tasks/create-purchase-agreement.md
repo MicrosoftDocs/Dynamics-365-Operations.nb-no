@@ -1,9 +1,9 @@
 ---
 title: Opprette en kjøpsavtale
-description: Denne prosedyren fører deg gjennom oppretting av en kjøpsavtale.
+description: Dette emnet fører deg gjennom oppretting av en kjøpsavtale.
 author: mkirknel
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 07/18/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,72 +16,59 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: df74eaad51fc4ef28caf96e4bcdc7b03f7e6ec3b
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: ec792ca27bf0245ff25e59cfe28122f17caec7fc
+ms.sourcegitcommit: a368682f9cf3897347d155f1a2d4b33e555cc2c4
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1836370"
+ms.lasthandoff: 08/08/2019
+ms.locfileid: "1866856"
 ---
 # <a name="create-a-purchase-agreement"></a>Opprette en kjøpsavtale
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-Denne prosedyren fører deg gjennom oppretting av en kjøpsavtale. Dette gjøres vanligvis av en innkjøpssjef. Du kan bruke denne fremgangsmåten i demonstrasjonsselskapet USMF eller ved hjelp av dine egne data. Du må ha definert kjøpsavtaleklassifiseringer før du starter. Når du har opprettet en avtale, kan du bruke den når du oppretter en bestilling, og dette kopierer kjøpsavtalebetingelsene til hodet og linjene i rekkefølgen som er påvirket av avtalen.
+Dette emnet fører deg gjennom oppretting av en kjøpsavtale. Dette gjøres vanligvis av en innkjøpssjef. Du kan bruke denne fremgangsmåten i demonstrasjonsselskapet USMF eller ved hjelp av dine egne data. Du må ha definert kjøpsavtaleklassifiseringer før du starter. Når du har opprettet en avtale, kan du bruke den når du oppretter en bestilling, og dette kopierer kjøpsavtalebetingelsene til hodet og linjene i rekkefølgen som er påvirket av avtalen.
 
 
 ## <a name="create-a-new-purchase-agreement"></a>Opprette en ny kjøpsavtale
-1. Gå til Innkjøp og leverandører > Kjøpsavtaler > Kjøpsavtaler.
-2. Klikk Ny.
-3. Klikk rullegardinknappen i Leverandørkonto-feltet for å åpne oppslaget.
-4. Finn og velg ønsket post i listen.
-5. Klikk koblingen i den valgte raden i listen.
-6. Klikk rullegardinknappen i feltet Kjøpsavtaleklassifisering for å åpne oppslaget.
-7. Finn og velg ønsket post i listen.
-8. Klikk koblingen i den valgte raden i listen.
-9. Utvid seksjonen Generelt.
-10. Angi en dato i Utløpsdato-feltet.
-    * Denne utløpsdatoen er standard for alle forpliktelseslinjene og bestemmer hvor lenge hver bestemte forpliktelse er gyldig.  
-11. I feltet Dokumenttittel skriver du inn et navn for kjøpsavtalen.
-    * La feltet Standardforpliktelse være satt til Produktantallsforpliktelse (eller endre det hvis det ikke er satt til dette).  
-    * Standardforpliktelsesverdien bestemmer alternativene på avtalelinjene. Hvis du trenger en ny forpliktelsestype når du oppretter avtalelinjene, må du endre standard forpliktelsen i hodet.  Det finnes 4 forskjellige forpliktelser: Produktantallsforpliktelse - for et bestemt antall av et produkt; Produktverdiforpliktelse - for et bestemt valutabeløp for et produkt; Verdiforpliktelse for produktkategori - for et bestemt valutabeløp i en innkjøpskategori der beløpet kan være for en katalogvare eller en ikke-katalogvare; Verdiforpliktelse - for et bestemt valutabeløp som kan bli oppfylt av et et hvilket som helst produkt eller en hvilken som helst innkjøpskategori.  
-12. Klikk OK.
+1. Gå til **Navigasjonsrute > Moduler > Innkjøp og leverandører > Kjøpsavtaler > Kjøpsavtaler**.
+2. Klikk på **Ny**.
+3. I **Leverandørkonto**-feltet velger du raden i den ønskede posten på rullegardinmenyen.
+4. I feltet **Klassifisering av kjøpsavtale** velger du raden i den ønskede posten på rullegardinmenyen.
+5. Vis hurtigfanen **Generelt**.
+6. Angi en dato i **Utløpsdato**-feltet.
+
+    - Denne utløpsdatoen er standard for alle forpliktelseslinjene og bestemmer hvor lenge hver bestemte forpliktelse er gyldig.  
+
+7. I feltet **Dokumenttittel** skriver du inn et navn for kjøpsavtalen.
+
+    - La feltet **Standardforpliktelse** være satt til **Produktantallsforpliktelse** (eller endre det hvis det ikke er satt til dette).  
+    - Standardforpliktelsesverdien bestemmer alternativene på avtalelinjene. Hvis du trenger en ny forpliktelsestype når du oppretter avtalelinjene, må du endre standard forpliktelsen i hodet. Det finnes 4 forskjellige forpliktelser: **Produktantallsforpliktelse** - for et bestemt antall av et produkt; **Produktverdiforpliktelse** - for et bestemt valutabeløp for et produkt; **Verdiforpliktelse for produktkategori** - for et bestemt valutabeløp i en innkjøpskategori der beløpet kan være for en katalogvare eller en ikke-katalogvare; **Verdiforpliktelse** - for et bestemt valutabeløp som kan bli oppfylt av et hvilket som helst produkt eller en hvilken som helst innkjøpskategori.  
+
+8. Velg **OK**.
 
 ## <a name="add-a-commitment"></a>Legge til en forpliktelse
-1. Klikk Legg til linje.
-2. Merk den valgte raden i listen.
-3. Klikk rullegardinknappen i Varenummer-feltet for å åpne oppslaget.
-4. Velg produktet du vil legge til en forpliktelse for.
-5. Klikk koblingen i den valgte raden i listen.
-6. Angi et tall i feltet Antall.
-    * Dette er det totale antallet som du har avtalt å kjøpe fra leverandøren.  
-7. Angi et tall i feltet Enhetspris.
-8. Vis seksjonen Linjedetaljer.
-9. Angi alternativet Maks. håndheves til Ja.
-    * Maks. håndheves-alternativet begrenser bruken av forpliktelse. Du kan bare kjøpe opptil antallet som er angitt i Antall-feltet for linjen.  
-10. Skjul Linjedetaljer-delen.
+1. Velg **Legg til linje**.
+2. Velg det ønskede oppslaget fra rullegardinmenyen i **Varenummer**-feltet.
+3. Angi et tall i **Antall**-feltet. Dette er det totale antallet som du har avtalt å kjøpe fra leverandøren.  
+4. Angi et tall i **Enhetspris**-feltet.
+5. Vis delen **Linjedetaljer**.
+6. Angi alternativet **Max Maks. håndheves** til **Ja**. **Maks. håndheves**-alternativet begrenser bruken av forpliktelse. Du kan bare kjøpe opptil antallet som er angitt i **Antall**-feltet for linjen.  
 
 ## <a name="add-header-conditions"></a>Legge til topptekstbetingelser
-1. Klikk Alternativer i handlingsruten.
-2. Klikk Bytt visning.
-3. Klikk Hodevisning.
-4. Utvid Vilkår-delen.
-5. Klikk rullegardinknappen i Betalingsmåte-feltet for å åpne oppslaget.
-    * Betalingsbetingelsene fra leverandørkontoen vises her som standard.       
-6. Finn og velg ønsket post i listen.
-7. Klikk koblingen i den valgte raden i listen.
-8. Klikk rullegardinknappen i feltet Leveringsmåte for å åpne oppslaget.
-9. Klikk koblingen i den valgte raden i listen.
-10. Klikk rullegardinknappen i feltet Leveringsbetingelser for å åpne oppslaget.
-11. Klikk koblingen i den valgte raden i listen.
+1. Velg **Alternativer** i handlingsruten.
+2. Velg **Endre visning**.
+3. Velg **Topptekstvisning**.
+4. Utvid **Vilkår**-delen.
+5. Velg det ønskede oppslaget på rullegardinmenyen **Betalingsmåte**. Betalingsbetingelsene fra leverandørkontoen vises her som standard.  
+6. Velg det ønskede oppslaget på rullegardinmenyen i feltet **Leveringsmåte**.
+7. Klikk rullegardinknappen i feltet **Leveringsbetingelser** for å åpne oppslaget.
 
 ## <a name="confirm-and-activate-the-agreement"></a>Kontrollere og aktivere avtalen
-1. Klikk Kjøpsavtale i handlingsruten.
-2. Klikk Bekreftelse.
-    * Angi alternativet Merk avtale som gyldig som Ja.  
-3. Klikk OK.
-4. Klikk Kjøpsavtale i handlingsruten.
-5. Klikk Innkjøpsavtalebekreftelser.
-    * Med alternativet Forhåndsvis/Skriv ut kan du generere et dokument for kjøpsavtalen som du kan deretter skrive ut eller sende til leverandøren. Hvis du oppdaterer avtalen senere, og bekrefter den på nytt, vil begge versjoner vises her.  
+1. Klikk **Kjøpsavtale** i handlingsruten.
+2. Velg **Bekreftelse**. Angi alternativet **Merk avtale som gyldig** som **Ja**.  
+3. Velg **OK**.
+4. Klikk **Kjøpsavtale** i handlingsruten.
+5. Velg **Innkjøpsavtalebekreftelser**. Med alternativet **Forhåndsvis/Skriv ut** kan du generere et dokument for kjøpsavtalen som du deretter kan skrive ut eller sende til leverandøren. Hvis du oppdaterer avtalen senere, og bekrefter den på nytt, vil begge versjoner vises her.  
 6. Lukk siden.
 

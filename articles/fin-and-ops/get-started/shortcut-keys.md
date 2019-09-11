@@ -3,7 +3,7 @@ title: Hurtigtaster
 description: Følgende hurtigtaster gjelder i hele Dynamics 365 for Finance and Operations.
 author: jasongre
 manager: AnnBe
-ms.date: 07/22/2019
+ms.date: 08/26/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 95a6b6bd70c4a5bb684c605d364a28b85ed4e120
-ms.sourcegitcommit: d88d3d504e85c5bf6f6e9dc842488a2b644261cf
+ms.openlocfilehash: 91e3f202d479fd77893da3cc746f3d23587107b1
+ms.sourcegitcommit: 69bd97dcc191a0cabfed91f678bac0ba2aebb1b8
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 07/22/2019
-ms.locfileid: "1780064"
+ms.lasthandoff: 08/26/2019
+ms.locfileid: "1920657"
 ---
 # <a name="keyboard-shortcuts"></a>Hurtigtaster
 
@@ -155,8 +155,8 @@ Fra og med plattformoppdatering 11 kan brukere finne hurtigtaster som er tilgjen
 | Hvis du vil gjøre dette                                                                   | Trykk                         |
 |------------------------------------------------------------------------------|-------------------------------|
 | Åpne hyperkoblingen                                                           | Ctrl+Enter                    |
-| Angi øktdatoen i et datofelt                                       | D+Tab                         |
-| Angi gjeldende dato i et datofelt                                       | T+Tab                         |
+| Angi øktdatoen i et datofelt                                       | D                         |
+| Angi gjeldende dato i et datofelt                                       | T                         |
 | Åpne oppslag, kombinasjonsboks, datovelger, rullegardinboks                         | Alt+Pil ned                |
 | Lukk oppslag, kombinasjonsboks, datovelger, rullegardinboks                        | ESC                           |
 | Flytt fokus til et oppslag (når oppslaget allerede er åpent)                   | Alt+Pil ned                |

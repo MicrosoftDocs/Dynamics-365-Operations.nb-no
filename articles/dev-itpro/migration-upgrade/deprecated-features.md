@@ -3,7 +3,7 @@ title: Funksjoner som er fjernet eller avskrevet
 description: Dette emnet beskriver funksjoner som er fjernet eller som er planlagt for fjerning.
 author: sericks007
 manager: AnnBe
-ms.date: 07/30/2019
+ms.date: 08/07/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0c8cc578ce2f8928fcdbe0210c9151e8979bc2e9
-ms.sourcegitcommit: 299e20b59ebefa584ed46a13da3f1a7ff709e43c
+ms.openlocfilehash: 4aad4f2cf42b72256b5c4727bfd145d16af033ed
+ms.sourcegitcommit: a368682f9cf3897347d155f1a2d4b33e555cc2c4
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "1863389"
+ms.lasthandoff: 08/08/2019
+ms.locfileid: "1867107"
 ---
 # <a name="removed-or-deprecated-features"></a>Fjernede eller avskrevne funksjoner
 
@@ -157,6 +157,17 @@ Støtte for opprettelse av prosjektbaserte salgsordrer der prosjektkontrakten ha
 | **Berørte produktområder**         | Visual Studio-utviklingsverktøy |
 | **Distribusjonsalternativ**              | Alle |
 | **Status**                         | Avskrevet: Advarselen vil bli en kompileringsfeil i Platform update 26. |
+
+## <a name="dynamics-365-for-finance-and-operations-1000-with-platform-update-24"></a>Dynamics 365 for Finance and Operations 10.0.0 med plattformoppdatering 24
+
+### <a name="renaming-released-products"></a>Gi nytt navn til frigitte produkter 
+|   |  |
+|------------|--------------------|
+| **Årsak til avskrivning/fjerning** | Når du bruker funksjonen **Gi primærnøkkelen nytt navn** til å endre Itemid for et frigitt produkt, oppdateres bare direkte referanser til sekundærnøkkel. Alle andre referanser til det frigitte produktet, for eksempel fra produksjonsordrer, vil beholde det gamle ItemId. Det kan derfor være inkonsekvente data som til slutt vil blokkere forretningsprosesser. |
+| **Erstattet med en annen funksjon?**   | Nr. |
+| **Berørte produktområder**         | Behandling av produktinformasjon |
+| **Distribusjonsalternativ**              | Alle  |
+| **Status**                         | Fjernet fra og med Dynamics 365 for Finance and Operations 10.0.0 med plattformoppdatering 24. I uvanlige tilfeller, for eksempel for å gjenopprette fra en tidligere primærnøkkel for et frigitt produkt, er det mulig å be Microsoft om å fjerne denne begrensningen midlertidig i operasjonen der primærnøkler får nye navn for frigitte produkter. |
 
 
 ## <a name="dynamics-365-for-finance-and-operations-813-with-platform-update-23"></a>Dynamics 365 for Finance and Operations 8.1.3 med plattformoppdatering 23

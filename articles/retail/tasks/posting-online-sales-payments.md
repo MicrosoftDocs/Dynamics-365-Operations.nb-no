@@ -1,9 +1,9 @@
 ---
 title: Postering av elektroniske salg og betalinger
 description: Denne prosedyren hjelper med å konfigurere og kjøre en gjentakende satsvis jobb for å opprette salgsordrer og betalinger for nettbutikktransaksjoner.
-author: jashanno
+author: psimolin
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 08/06/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,16 +17,69 @@ ms.search.industry: Retail
 ms.author: jashanno
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 13839bbe6ca03f3cfc7036fce87477bf7d5af2a7
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 1d42b585a61214628980cd45a859215443ed55b5
+ms.sourcegitcommit: c461758290d7ddc19f0b60701368937c35ef78b0
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1550214"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "1864159"
 ---
 # <a name="posting-of-online-sales-and-payments"></a>Postering av elektroniske salg og betalinger
 
 [!include[task guide banner](../includes/task-guide-banner.md)]
+
+Denne prosedyren hjelper med å konfigurere og kjøre en gjentakende satsvis jobb for å opprette salgsordrer og betalinger for nettbutikktransaksjoner.
+
+Postering av elektroniske salg og betalinger er en prosess i to trinn.
+
+- Henter de elektroniske detaljhandelstransaksjonsdataene i HK.
+- Synkroniserer ordrer for å opprette salgsordrer på hovedkontoret.
+
+Å hente elektroniske detaljhandelstransaksjonsdata kan gjøres manuelt ved å kjøre P-jobben eller ved å opprette en gjentakende satsvis jobb.
+
+### <a name="manually-running-the-p-job"></a>Kjøre P-jobben manuelt
+
+1. Gå til Alle arbeidsområder > IT for detaljhandel.
+2. Klikk på Distribusjonsplan.
+3. Velg P-0001.
+4. Juster kanaldatabasegrupper hvis det er nødvendig.
+5. Klikk Kjør nå.
+6. Klikk Ja.
+
+### <a name="scheduling-a-recurring-p-job"></a>Planlegge en regelmessig P-jobb
+
+1. Gå til Alle arbeidsområder > IT for detaljhandel.
+2. Klikk på Distribusjonsplan.
+3. Velg P-0001.
+4. Klikk på Opprett satsvis jobb.
+5. Klikk på Kjør i bakgrunnen.
+5. Aktiver satsvis behandling.
+6. Klikk på Regelmessighet.
+7. Velg Ingen sluttdato.
+8. I Antall-feltet angir du intervallet mellom kjøringer i minutter. Vanligvis vil dette være 5-10.
+9. Klikk OK.
+10. Klikk OK.
+
+Ordrer kan synkroniseres enten ved å kjøre Synkroniser ordrer-jobben manuelt, eller ved å opprette en gjentakende satsvis jobb.
+
+### <a name="manually-running-order-synchronization"></a>Kjøre ordresynkronisering manuelt 
+
+Følg denne fremgangsmåten for å kjøre jobben Synkroniser ordrer manuelt én gang.
+
+1. Gå til Alle arbeidsområder > Finans for detaljhandelsbutikk.
+2. Klikk Synkroniser ordrer.
+3. Velg Detaljhandelbutikker etter område i Organisasjonshierarki-feltet.
+    * Velg en bestemt nettbutikk eller velg en node hvis du vil opprette den satsvise jobben for en gruppe med butikker.  
+    * Klikk pilen for å legge til valget.  
+4. Klikk fanen Kjør i bakgrunnen.
+5. Deaktiver satsvis behandling.
+6. Klikk Regelmessighet.
+7. Velg Avslutt etter-alternativet.
+8. Angi 1 i feltet Avslutt etter.
+9. Klikk OK.
+10. Klikk OK.
+
+### <a name="scheduling-recurring-order-synchronization"></a>Planlegge regelmessig ordresynkronisering
 
 Denne prosedyren hjelper med å konfigurere og kjøre en gjentakende satsvis jobb for å opprette salgsordrer og betalinger for nettbutikktransaksjoner. Denne prosedyren bruker firmaet USRT i demonstrasjonsdataene.
 
@@ -36,10 +89,23 @@ Denne prosedyren hjelper med å konfigurere og kjøre en gjentakende satsvis job
     * Velg en bestemt nettbutikk eller velg en node hvis du vil opprette den satsvise jobben for en gruppe med butikker.  
     * Klikk pilen for å legge til valget.  
 4. Klikk fanen Kjør i bakgrunnen.
-5. Merk av eller fjern merket for Satsvis behandling.
+5. Aktiver satsvis behandling.
 6. Klikk Regelmessighet.
 7. Velg Ingen sluttdato.
-8. Angi et tall i Antall-feltet.
+8. I Antall-feltet angir du intervallet mellom kjøringer i minutter. Vanligvis vil dette være 2-20.
 9. Klikk OK.
 10. Klikk OK.
 
+## <a name="data-entities-involved-in-the-process"></a>Dataenheter som er involvert i prosessen
+
+- RetailTransactionTable
+- RetailTransactionAddressTrans
+- RetailTransactionInfocodeTrans
+- RetailTransactionTaxTrans
+- RetailTransactionSalesTrans
+- RetailTransactionTaxMeasure
+- RetailTransactionDiscountTrans
+- RetailTransactionTaxTransGTE
+- RetailTransactionMarkupTrans
+- RetailTransactionPaymentTrans
+- RetailTransactionAttributeTrans

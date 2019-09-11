@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c6587505fc5a729ffd82ab65aca7d5aa6ca4a265
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: db9208c8e76d963d5b8f6bee6b7c73268af68734
+ms.sourcegitcommit: a368682f9cf3897347d155f1a2d4b33e555cc2c4
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1837258"
+ms.lasthandoff: 08/08/2019
+ms.locfileid: "1867756"
 ---
 # <a name="reverse-a-vendor-payment"></a>Tilbakeføre en leverandørbetaling
 
@@ -48,7 +48,7 @@ Hvis du vil vite hvilken metode organisasjonen din bruker, ser du siden **Parame
 Hvis organisasjonen vil postere sjekkannulleringer umiddelbart når du klikker **Betalingsannullering** på **Sjekker**-siden. På siden **Parametere for kontant- og bankbehandling** angir du alternativet **Bruk vurderingsprosess for betalingsannulleringer** til **Nei**. På **Sjekker**-siden kan du velge sjekken som skal tilbakeføres, og velge **Betalingsannullering**. Du kan deretter skrive inn datoen og velge en årsak for tilbakeføringen.
 
 ## <a name="reverse-posted-checks-after-they-are-reviewed-in-the-check-reversal-journal"></a>Tilbakefør posterte sjekker etter å ha gått gjennom dem i journalen for sjekkannullering.
-Hvis organisasjonen vil gjennomgå sjekkannulleringer før de posteres, kan du opprette en sjekkannuleringsjournal og deretter, på siden **Parametere for kontant- og bankbehandling**, angi alternativet **Bruk vurderingsprosess for betalingsannulleringer** til **Ja**. På **Sjekker**-siden kan du velge sjekken som skal tilbakeføres, og velge **Betalingsannullering**. Du kan deretter skrive inn datoen og velge en årsak for tilbakeføringen. Du må også velge et journalnavn for å opprette en journal i banksjekkannulleringen.
+Hvis organisasjonen vil gjennomgå sjekkannulleringer før de posteres, kan du opprette en sjekkannuleringsjournal og deretter, på siden **Parametere for kontant- og bankbehandling**, angi alternativet **Bruk vurderingsprosess for betalingsannulleringer** til **Ja**. På **Sjekker**-siden kan du velge sjekken som skal tilbakeføres, og velge **Betalingsannullering**. Du kan deretter skrive inn datoen og velge en årsak for tilbakeføringen. Finansårsaken må defineres for både bank -og leverandørtyper. Du må også velge et journalnavn for å opprette en journal i banksjekkannulleringen.
 
 ### <a name="review-a-reversal"></a>Gjennomgå en tilbakeføring
 

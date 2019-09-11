@@ -3,7 +3,7 @@ title: Dobbel valuta
 description: Dette emnet gir informasjon om dobbel valuta, der rapporteringsvalutaen brukes som en ekstra regnskapsvaluta for Microsoft Dynamics 365 for Finance and Operations.
 author: kweekley
 manager: AnnBe
-ms.date: 05/06/2019
+ms.date: 08/07/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,20 +16,31 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-10
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: dfd4c116552510ee42cd2f3e8a0f31100826b9d2
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 6d5128ea9daaf22ee962ca5fc70a05cba05c7edb
+ms.sourcegitcommit: a368682f9cf3897347d155f1a2d4b33e555cc2c4
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1839408"
+ms.lasthandoff: 08/08/2019
+ms.locfileid: "1867517"
 ---
 # <a name="dual-currency"></a>Dobbel valuta
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 Funksjonen som ble innført i Microsoft Dynamics 365 for Finance and Operations versjon 8.1 (oktober 2018), gjør det mulig å bruke rapporteringsvalutaen på nytt som en ekstra regnskapsvaluta. Denne funksjonen kalles *dobbel valuta*. Endringene for dobbel valuta kan ikke slås av ved hjelp av en konfigurasjonsnøkkel eller parameter. Fordi rapporteringsvalutaen brukes som en sekundær regnskapsvaluta, er måten rapporteringsvalutaen beregnes på i posteringslogikken, endret.
 
-I tillegg er forskjellige moduler forbedret for å spore, rapportere og bruke rapporteringsvalutaen i forskjellige prosesser. Modulene som er påvirket, inkluderer **økonomimodul**, **finansrapportering**, **leverandører**, **kunder**, **kontant- og bankbehandling** og **anleggsmidler**. Etter en oppgradering må du utføre bestemte trinn for kontant- og bankbehandling og anleggsmidler. Derfor må du lese de relevante delene i dette emnet nøye.
+I tillegg er forskjellige moduler forbedret for å spore, rapportere og bruke rapporteringsvalutaen i forskjellige prosesser. Modulene som berøres, omfatter følgende:
+
+- Økonomimodul 
+- Finansrapportering 
+- Leverandører
+- Kunder 
+- Kontant- og bankbehandling 
+- Anleggsmidler 
+- Konsolideringer
+
+Etter en oppgradering må du utføre bestemte trinn for kontant- og bankbehandling og anleggsmidler. Derfor må du lese og forstå de relevante delene i dette emnet.
 
 ## <a name="posting-process"></a>Posteringsprosess
 
@@ -75,6 +86,7 @@ Følgende moduler bruker rapporteringsvalutaen som en sekundær regnskapsvaluta:
 - [Kunder](#accounts-payable-and-accounts-receivable)
 - [Kontant- og bankbehandling](#cash-and-bank-management)
 - [Anleggsmidler](#fixed-assets)
+- [Konsolideringer](#consolidations)
 
 ### <a name="general-ledger"></a>Økonomimodul
 
@@ -124,6 +136,8 @@ Tidligere sporet ikke **Anleggsmidler**-modulen noen rapporteringsvalutabeløp f
 I tillegg er store endringer gjort i avskrivningsprosessen. Disse endringene krever brukerhandling etter en oppgradering. Det er viktig at du leser og forstår følgende endringer, selv om du ennå ikke bruker anleggsmidler.
 
 - Måten avskrivningsprosessen bestemmer rapporteringsvalutabeløpet på, er endret. Følgende scenario sammenligner hvordan avskrivning tidligere bestemte rapporteringsvalutabeløpet og hvordan den bestemmer rapporteringsvalutabeløpet nå.
+
+
 
     **Scenario for avskrivning**
 
@@ -186,3 +200,13 @@ I tillegg er store endringer gjort i avskrivningsprosessen. Disse endringene kre
     - Hvis en type avskrivningstransaksjon angis i anleggsmiddeljournalen, vises rapporteringvalutabeløpene i de nye kolonnene. Disse beløpene kan endres.
     - Hvis regnskapsvalutaen og rapporteringsvalutaene i finans er identiske, vil beløpene holdes synkroniserte. Hvis du endrer **kredit**-beløpet, endres **Kredit i rapporteringsvaluta**-beløpet automatisk slik at det samsvarer.
     - Hvis en annen transaksjonstype angis i anleggsmiddeljournalen, vises aldri beløpene **Debet i rapporteringsvaluta** og **Kredit i rapporteringsvaluta**, verken før eller etter postering. Regnskapsvaluta- og rapporteringsvalutabeløpene er fremdeles tilgjengelige på bilaget som posteres til økonomimodulen.
+    
+### <a name="consolidations"></a>Konsolideringer
+    
+Funksjonalitet som ble introdusert i Microsoft Dynamics 365 for Finance and Operations versjon 10.0.5 (oktober 2019), aktiverer funksjonalitet gjennom funksjonsstyring for forbedret fleksibilitet for konsolidering og dobbel valuta. Hvis du vil aktivere denne funksjonaliteten, går du til arbeidsområdet **Funksjonsbehandling** og velger **Aktiver funksjonalitet for dobbel valuta i konsolidering for økonomimodul**.
+
+I konsolidering for økonomimodul er det lagt til et nytt alternativ for å konsolidere beløp for regnskaps- eller rapporteringsvaluta fra kildefirmaene. Hvis regnskaps- eller rapporteringsvalutaen er den samme som regnskaps- eller rapporteringsvalutaen i konsolideringsfirmaet, vil beløpene bli kopiert direkte i stedet for å bli oversatt.
+
+-  Du kan nå velge om du vil bruke regnskapsvalutaen eller rapporteringsvalutaen fra kildefirmaet som transaksjonsvalutaen i konsolideringsfirmaet.
+
+- Beløpene for regnskaps- eller rapporteringsvaluta fra kildefirmaet kopieres direkte til beløpene for regnskaps- eller rapporteringsvaluta hvis en av valutaene er den samme. Beløpene for regnskaps- og rapporteringsvaluta i konsolideringsfirmaet beregnes ved hjelp av valutakursen hvis ingen av valutaene er den samme.
