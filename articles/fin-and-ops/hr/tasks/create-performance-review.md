@@ -1,9 +1,9 @@
 ---
-title: Opprette en prestasjonsvurdering
-description: Denne fremgangsmåten viser hvordan du oppretter en prestasjonsvurdering og beskriver formålet med hver del i vurderingen.
+title: Opprette prestasjonsvurderinger
+description: Dette emnet viser hvordan du oppretter en prestasjonsvurdering og beskriver formålet med hver del i vurderingen.
 author: andreabichsel
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 08/06/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,67 +16,66 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: a387180386d65d31bf89004b374c43d377e7d349
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 3583f974d1768e0efefb80f0ad8aa011669c1301
+ms.sourcegitcommit: a368682f9cf3897347d155f1a2d4b33e555cc2c4
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1508156"
+ms.lasthandoff: 08/08/2019
+ms.locfileid: "1867359"
 ---
-# <a name="create-a-performance-review"></a>Opprette en prestasjonsvurdering
+# <a name="create-performance-reviews"></a>Opprette prestasjonsvurderinger
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-Denne fremgangsmåten viser hvordan du oppretter en prestasjonsvurdering og beskriver formålet med hver del i vurderingen. Denne fremgangsmåten ble opprettet med demonstrasjonsdatafirmaet USMF. Denne fremgangsmåten gjelder for en funksjon som ble lagt til i Dynamics 365 for Operations versjon 1611.
+Dette emnet viser hvordan du oppretter en prestasjonsvurdering og beskriver formålet med hver del i vurderingen. Denne fremgangsmåten ble opprettet med demonstrasjonsdatafirmaet USMF.
 
-1. Klikk Ansattselvbetjening.
-2. Klikk Ny vurdering for å opprette en ny vurdering.
-3. Angi eller velg en verdi i Vurderingstype-feltet.
-4. Angi eller velg en verdi i feltet Ytelsesperiode.
-5. Angi en dato i Sluttdato-feltet.
-6. Klikk OK.
-    * Du kan også opprette en vurdering fra en mal. Dette er den beste måten å opprette en vurdering på fordi hver inndeling vil inneholde informasjonen du trenger for å starte en vurdering.  
-7. Klikk Vis seksjoner for å åpne nedtrekksdialogen.
-8. Velg Nei i Vis vedlegg-feltet.
-9. Klikk Lagre.
-    * Legg merke til at kategorien Vedlegg er nå skjult.  
-10. Klikk Vis seksjoner for å åpne nedtrekksdialogen.
-11. Velg Ja i Vis vedlegg-feltet.
-12. Klikk Lagre.
-13. Klikk Legg til mål i vurderingen.
-14. Klikk Avbryt.
-15. Klikk Legg til kompetanse for å åpne nedtrekksdialogen.
-16. Skriv inn en verdi i Tittel-feltet.
-17. I Beskrivelse-feltet angir du Øk kundeferdigheter ved å arbeide med støtteteamet.
-18. Klikk OK.
-19. Klikk Skjul alle.
-20. Klikk Vis alle.
-21. Klikk Legg til kommentar.
-22. Klikk Poster.
-23. Klikk kategorien Målinger.
-24. Klikk Legg til måling for å åpne nedtrekksdialogen.
-25. Angi eller velg en verdi i feltet Måling.
-26. Angi et tall i Målbeløp-feltet.
-27. Klikk OK.
-28. Klikk kategorien Aktiviteter.
-29. Klikk Legg til.
-30. Skriv inn en verdi i Tittel-feltet.
-31. Skriv inn en verdi i feltet Beskrivelse.
-32. Angi en dato i Startdato-feltet.
-33. Angi en dato i Fullført dato-feltet.
-34. Velg Ja i Utviklingsplan-feltet.
-35. Skriv inn en verdi i feltet Nøkkelord.
-36. Klikk Lagre.
-37. Klikk kategorien Vurderinger.
-    * I Vurderingsdetaljer-hurtigfanen kan ansatte vurdere seg selv og lederen vurdere den ansatte. Hvis det brukes vekter, beregnes vektverdien av poengsummene automatisk.    Hvis du vil se denne delen, kan du aktivere parameterinnstillingene til å vise ansattvurderinger.  
-38. Klikk kategorien Godkjenninger.
-    * Hvis vurderingen bruker arbeidsflyt, vises godkjenningene bare etter at arbeidsflyten er fullført. Hvis det ikke brukes arbeidsflyt, er både arbeideren og lederen oppført her. Avmerkingsboksen for nødvendig merkes på basis av innstillingene for vurderingstypen.  
-39. Klikk kategorien Generelt.
-    * Ytelsesperioden oppretter standard start- og sluttdatoer. Disse datoene kan redigeres.  
-    * Statusene kontrollerer tilgangen til vurderingen. Ikke startet-statusen tillater alle å redigere vurderingen. Pågår-statusen lar bare den ansatte vise og redigere vurderingen. Klar til vurdering lar bare lederen vise og redigere vurderingen. Endelig vurdering-statusen lar både den ansatte og lederen vise vurderingen og også redigere den hvis dette er angitt for vurderingstypen. Statusen Fullført, Avvist og Annullert gjør at vurderingen blir skrivebeskyttet.  
-40. Skriv inn en verdi i feltet Oversikt.
-41. Klikk kategorien Gjennomgang.
-    * Etter hvert som vurderingen endrer status, kan den ansatte og lederen legge til kommentarer for hvert mål eller hver kompetanse.  
-42. Klikk kategorien Godkjenninger.
-    * Arbeideren og lederen kan godkjenne vurderingen. Når alle nødvendige godkjenninger er foretatt, endres statusen til Fullført, og da kan det ikke gjøres flere endringer.  
+1. Velg arbeidsområdet for **Ansattselvbetjening** på startsiden.
+2. Klikk **Ny vurdering** for å opprette en ny vurdering.
+3. Angi eller velg en verdi i **Vurderingstype**-feltet.
+4. Angi eller velg en verdi i feltet **Ytelsesperiode**.
+5. Angi en dato i **Sluttdato**-feltet.
+6. Velg **OK**. Du kan også opprette en vurdering fra en mal. Dette er den beste måten å opprette en vurdering på fordi hver inndeling vil inneholde informasjonen du trenger for å starte en vurdering.  
+7. Du kan vise eller skjule kategorier som vedleggskategorien:
+
+    1. I handlingsruten velger du **Vis seksjoner** for å åpne nedtrekksdialogen.
+    1. Velg **Ja** eller **Nei** i **Vis vedlegg**-feltet for å vise eller skjule vedleggskategorien.
+    1. Velg **Lagre**.
+
+8. Velg **Legg til mål i vurderingen** for å legge til et mål. Når du er ferdig, velg **OK**.
+9. Velg **Legg til kompetanse** for å åpne nedtrekksdialogen.
+10. Skriv inn en verdi i **Tittel**-feltet.
+11. I **Beskrivelse**-feltet skriver du inn `Increase customer skills by working with the support team`.
+12. Velg **OK**.
+13. Velg **Skjul alle**.
+14. Velg **Vis alle**.
+15. Velg **Legg til kommentar**.
+16. Velg **Poster**.
+17. Velg kategorien **Målinger**.
+18. Velg **Legg til måling** for å åpne nedtrekksdialogen.
+19. Angi eller velg en verdi i feltet **Måling**.
+26. Angi et tall i **Målbeløp**-feltet.
+20. Velg **OK**.
+21. Velg fanen **Aktiviteter**.
+22. Velg **Legg til**.
+23. Skriv inn en verdi i **Tittel**-feltet.
+24. Skriv inn en verdi i **Beskrivelse**-feltet.
+25. Angi en dato i **Startdato**-feltet.
+26. Angi en dato i **Fullført dato**-feltet.
+27. Velg **Ja** i **Utviklingsplan**-feltet.
+28. Skriv inn en verdi i feltet **Nøkkelord**.
+29. Velg **Lagre**.
+30. Velg kategorien **Vurderinger**.  
+
+    - I **Vurderingsdetaljer**-hurtigfanen kan ansatte vurdere seg selv og lederen vurdere den ansatte. Hvis det brukes vekter, beregnes vektverdien av poengsummene automatisk.  
+    - Hvis du vil se denne delen, kan du aktivere parameterinnstillingene til å vise ansattvurderinger.  
+
+31. Velg fanen **Godkjenninger**. Hvis vurderingen bruker arbeidsflyt, vises godkjenningene bare etter at arbeidsflyten er fullført. Hvis det ikke brukes arbeidsflyt, er både arbeideren og lederen oppført her. Avmerkingsboksen for nødvendig merkes på basis av innstillingene for vurderingstypen.  
+32. Velg kategorien **Generelt**.
+
+    - Ytelsesperioden oppretter standard start- og sluttdatoer. Disse datoene kan redigeres.  
+    - Statusene kontrollerer tilgangen til vurderingen. **Ikke startet**-statusen tillater alle å redigere vurderingen. **Pågår**-statusen lar bare den ansatte vise og redigere vurderingen. Klar til vurdering lar bare lederen vise og redigere vurderingen. Endelig vurdering-statusen lar både den ansatte og lederen vise vurderingen og også redigere den hvis dette er angitt for vurderingstypen. Statusen **Fullført**, **Avvist** og **Annullert** gjør at vurderingen blir skrivebeskyttet.  
+
+33. Skriv inn en verdi i feltet **Oversikt**.
+34. Velg fanen **Gjennomgang**. Etter hvert som vurderingen endrer status, kan den ansatte og lederen legge til kommentarer for hvert mål eller hver kompetanse.  
+35. Velg kategorien **Godkjenninger**. Arbeideren og sjefen kan godkjenne gjennomgangen. Når alle nødvendige godkjenninger er foretatt, endres statusen til **Fullført**, og da kan det ikke gjøres flere endringer.  
 

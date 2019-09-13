@@ -1,9 +1,9 @@
 ---
-title: Fakturasamsvar for leverandører
-description: Fakturasamsvar for leverandører er prosessen med å sjekke samsvar mellom leverandørfakturaen, bestillingen og produktkvitteringsinformasjonen.
+title: Oversikt over samsvar for leverandørfaktura
+description: Leverandørfakturakontroll er prosessen med å sjekke samsvar mellom leverandørfakturaen, bestillingen og produktkvitteringsinformasjonen.
 author: abruer
 manager: AnnBe
-ms.date: 02/13/2019
+ms.date: 07/25/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fe464c714620590d77a0a5b2c2aeadb29381bf60
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: b45c6f20bf5b6fb02379f71b5806c6c147789e73
+ms.sourcegitcommit: e286572ce94a9442a5b3076c3ff5b429be0ed512
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1837500"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "1865070"
 ---
-# <a name="accounts-payable-invoice-matching"></a>Fakturasamsvar for leverandører
+# <a name="accounts-payable-invoice-matching-overview"></a>Oversikt over samsvar for leverandørfaktura
 
 [!include [banner](../includes/banner.md)]
 
-Fakturasamsvar for leverandører er prosessen med å sjekke samsvar mellom leverandørfakturaen, bestillingen og produktkvitteringsinformasjonen.
+Leverandørfakturakontroll er prosessen med å sjekke samsvar mellom leverandørfakturaen, bestillingen og produktkvitteringsinformasjonen.
 
 Ved dokumentsamsvar kalles forskjeller mellom disse dokumentene samsvarende avvik. Samsvarende avvik blir sammenlignet med toleransen som er angitt. Hvis et samsvarsavvik er større enn toleranseprosenten eller -beløpet, vises ikoner for samsvarsavvik på siden Leverandørfaktura og på siden Fakturahistorikk og samsvarende detaljer. 
 

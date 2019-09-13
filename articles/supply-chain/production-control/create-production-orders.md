@@ -1,9 +1,9 @@
 ---
-title: Opprett produksjonsordrer
+title: Oversikt over livssyklus for produksjonsordre
 description: Når en produksjonsordre opprettes, startes en forespørsel om å starte produksjonen av en vare. Produksjonsordren inneholder informasjon om hva som skal produseres, antallet som skal produseres og den planlagte sluttdatoen. Den inneholder også informasjon om hvilke materialer som skal brukes og prosessen som skal følges for å produsere varen.
 author: johanhoffmann
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 07/25/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,14 +19,14 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2957b387aac9e0218f88572fa605cde1a30c52e5
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 79b1866cdca885d408aca07c546ca54aa0c3616b
+ms.sourcegitcommit: e286572ce94a9442a5b3076c3ff5b429be0ed512
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1572633"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "1865203"
 ---
-# <a name="create-production-orders"></a>Opprett produksjonsordrer
+# <a name="production-order-lifecycle-overview"></a>Oversikt over livssyklus for produksjonsordre
 
 [!include [banner](../includes/banner.md)]
 

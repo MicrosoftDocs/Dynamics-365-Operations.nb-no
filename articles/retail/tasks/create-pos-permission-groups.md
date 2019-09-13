@@ -1,9 +1,9 @@
 ---
-title: " Opprette tillatelsesgrupper for salgssted"
-description: Denne prosedyren viser hvordan du oppretter en salgsstedstillatelsesgruppe.
+title: Opprette tillatelsesgrupper for salgssted
+description: Dette emnet forklarer hvordan du oppretter en salgsstedstillatelsesgruppe.
 author: scott-tucker
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 08/20/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,41 +17,34 @@ ms.search.industry: Retail
 ms.author: scotttuc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 1b30c9a1d7fe4598695423ba700ebc88a794a49c
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 4e6782c60aa659523775cc6c4eb1694430a4bf4f
+ms.sourcegitcommit: e10491a2ff04f65d9f306ef6e068ee123213b23b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1566370"
+ms.lasthandoff: 08/21/2019
+ms.locfileid: "1914824"
 ---
-# <a name="create-pos-permission-groups"></a> Opprette tillatelsesgrupper for salgssted
+# <a name="create-pos-permission-groups"></a>Opprette tillatelsesgrupper for salgssted
 
 [!include[task guide banner](../includes/task-guide-banner.md)]
 
-Denne prosedyren viser hvordan du oppretter en salgsstedstillatelsesgruppe. Demonstrasjonsdatafirmaet USRT brukes til å opprette denne oppgaven. Denne oppgaven er ment for rollen Driftsleder for detaljhandel.
+Dette emnet forklarer hvordan du oppretter en salgsstedstillatelsesgruppe. Demonstrasjonsdatafirmaet USRT brukes til å opprette denne oppgaven. Denne oppgaven er ment for rollen Driftsleder for detaljhandel.
 
-1. Gå til Tillatelsesgrupper.
-2. Klikk Ny.
-3. Skriv inn en verdi i feltet ID for salgsstedstillatelsesgruppe.
-4. Skriv inn en verdi i feltet Beskrivelse.
-5. Velg Ja i feltet Vis tidsklokkeoppføringer.
-    * Nå kan du aktivere eller deaktivere ulike tillatelser for salgsstedstillatelsesgruppen. For enkelte tillatelser kan du angi en verdi som skal brukes til å vurdere om salgsstedsbrukeren kan utføre handlingen.  Denne oppgaveveiledningen angir noen tillatelser som kan gis til en kasserer.  
-6. Velg Ja i feltet Tillat oppretting av ordre.
-7. Velg Ja i feltet Tillat redigering av ordre.
-8. Velg Ja i feltet Tillat oppretting av ordre.
-9. Velg Ja i feltet Tillat passordendring.
-10. Velg Ja i feltet Tillat usporet lukking.
-11. Klikk Lagre.
-    * Når endringene er lagret, må du kjøre stabsdistribusjonsplanen for å overføre endringene til detaljhandelskanalene.  
-12. Lukk siden.
-13. Gå til Jobber.
-    * Vi vil nå tilordne salgsstedstillatelsesgruppen til en jobb.  
-14. Finn og velg ønsket post i listen.
-15. Klikk koblingen i den valgte raden i listen.
-16. Klikk Rediger
-17. Vis delen Jobbklassifisering.
-18. Angi eller velg en verdi i feltet Gruppe for salgsstedstillatelse.
-    * Alle arbeidere i stillinger for denne jobben bruker salgsstedstillatelsesgruppens innstillinger med mindre arbeidernes salgsstedstillatelser har blitt overstyrt på stillingsnivået.  
-19. Klikk Lagre.
-    * Når endringene er lagret, må du kjøre stabsdistribusjonsplanen for å overføre endringene til detaljhandelskanalene.  
+1. I navigasjonsruten går du til **Moduler > Detaljhandel > Ansatte > Tillatelsesgrupper**.
+2. Velg **Ny**.
+3. Skriv inn en verdi i feltet **ID for salgsstedstillatelsesgruppe**.
+4. Skriv inn en verdi i **Beskrivelse**-feltet.
+5. Velg **Ja** i feltet **Vis tidsklokkeoppføringer**. Nå kan du aktivere eller deaktivere ulike tillatelser for salgsstedstillatelsesgruppen. For enkelte tillatelser kan du angi en verdi som skal brukes til å vurdere om salgsstedsbrukeren kan utføre handlingen. Denne oppgaveveiledningen angir noen tillatelser som kan gis til en kasserer.  
+6. Velg **Ja** i feltet **Tillat oppretting av ordre**.
+7. Velg **Ja** i feltet **Tillat redigering av ordre**.
+8. Velg **Ja** i feltet **Tillat oppretting av ordre**.
+9. Velg **Ja** i feltet **Tillat passordendring**.
+10. Velg **Ja** i feltet **Tillat usporet lukking**.
+11. Velg **Lagre**. Når endringene er lagret, må du kjøre stabsdistribusjonsplanen for å overføre endringene til detaljhandelskanalene. 
+12. I navigasjonsruten går du til **Moduler > Personale > Jobber > Jobber**.
+13. Vi vil nå tilordne salgsstedstillatelsesgruppen til en jobb. Finn og velg ønsket post i listen.
+14. Velg **Rediger**.
+15. Vis delen **Jobbklassifisering**.
+16. Angi eller velg en verdi i feltet Gruppe for salgsstedstillatelse. Alle arbeidere i stillinger for denne jobben bruker salgsstedstillatelsesgruppens innstillinger med mindre arbeidernes salgsstedstillatelser har blitt overstyrt på stillingsnivået.  
+17. Velg **Lagre**. Når endringene er lagret, må du kjøre stabsdistribusjonsplanen for å overføre endringene til detaljhandelskanalene.  
 

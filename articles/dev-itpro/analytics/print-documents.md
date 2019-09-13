@@ -1,9 +1,9 @@
 ---
-title: Dokumentutskrift
+title: Oversikt over utskrift av dokument
 description: I Microsoft Dynamics 365 for Finance and Operations kan du skrive ut dokumenter med en lokal skriver eller en enhet som er koblet til nettverket. Denne artikkelen gir en oversikt over hvordan dokumenter skrives ut.
 author: TJVass
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 07/25/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,14 +17,14 @@ ms.search.region: Global
 ms.author: tjvass
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bbc45865b55b4794202408ca19a0776440382fdd
-ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
+ms.openlocfilehash: 779931a779cdb8fcbc8e85c3d6c2a4e123d8ec47
+ms.sourcegitcommit: e286572ce94a9442a5b3076c3ff5b429be0ed512
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/02/2019
-ms.locfileid: "1850077"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "1864670"
 ---
-# <a name="document-printing"></a>Dokumentutskrift
+# <a name="document-printing-overview"></a>Oversikt over utskrift av dokument
 
 [!include [banner](../includes/banner.md)]
 

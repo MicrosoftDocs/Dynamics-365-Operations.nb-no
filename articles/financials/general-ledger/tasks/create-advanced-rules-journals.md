@@ -3,7 +3,7 @@ title: Opprette avanserte regler for journaler
 description: Denne fremgangsmåten viser hvordan du oppretter avanserte regler for journaler.
 author: aprilolson
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 08/08/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 8ec0db1bc5018649acaca05c71a510880b415777
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 3eb34ac419aeab3663a8931d022abf7bcbfddd37
+ms.sourcegitcommit: cbcf344b3b552acca56c3e27606eac7f2f124afe
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1846685"
+ms.lasthandoff: 08/22/2019
+ms.locfileid: "1916157"
 ---
 # <a name="create-advanced-rules-for-journals"></a>Opprette avanserte regler for journaler
 
@@ -31,30 +31,30 @@ Denne fremgangsmåten viser hvordan du oppretter avanserte regler for journaler.
 
 
 ## <a name="set-up-journal-control"></a>Definere journalkontroll
-1. Gå til Økonomimodul > Journaloppsett > Journalnavn.
+1. I **navigasjonsruten** går du til **Moduler > Økonomimodul > Journaloppsett > Journalnavn**.
 2. Finn og velg ønsket post i listen.
-3. Klikk Journalkontroll.
-4. Klikk Legg til.
-5. Klikk rullegardinknappen i feltet Firmakontoer for å åpne oppslaget.
+3. Klikk **Journalkontroll** i **handlingsruten**.
+4. Klikk **Legg til** i hurtigfanen**Hvilke kontotyper kan posteres?**
+5. Klikk rullegardinknappen i feltet **Firmakontoer** for å åpne oppslaget.
 6. Finn og velg ønsket post i listen.
 7. Klikk koblingen i den valgte raden i listen.
-8. Klikk Legg til.
-9. Klikk rullegardinknappen i feltet Kontostruktur for å åpne oppslaget.
+8. Klikk **Legg til** i hurtigfanen **Hvilke segmentverdier er gyldige for denne journalen?**
+9. Klikk rullegardinknappen i feltet **Kontostruktur** for å åpne oppslaget.
 10. Finn og velg ønsket post i listen.
 11. Klikk koblingen i den valgte raden i listen.
-12. Klikk rullegardinknappen i feltet Segment for å åpne oppslaget.
+12. Klikk rullegardinknappen i feltet **Segment** for å åpne oppslaget.
 13. Klikk koblingen i den valgte raden i listen.
-14. Klikk rullegardinknappen i feltet Fra verdi for å åpne oppslaget.
+14. Klikk rullegardinknappen i feltet **Fra verdi** for å åpne oppslaget.
 15. Finn og velg ønsket post i listen.
 16. Klikk koblingen i den valgte raden i listen.
-17. Klikk rullegardinknappen i feltet Til verdi for å åpne oppslaget.
+17. Klikk rullegardinknappen i feltet **Til verdi** for å åpne oppslaget.
 18. Finn og velg ønsket post i listen.
 19. Klikk koblingen i den valgte raden i listen.
 
 ## <a name="set-up-posting-restrictions"></a>Definere posteringsrestriksjoner
 1. Lukk siden.
-2. Klikk Posteringsrestriksjoner.
-3. Velg Etter brukergruppe i Hvordan vil du konfigurere posteringsrestriksjoner.
+2. Klikk **Posteringsrestriksjoner**.
+3. Velg Etter brukergruppe i feltet **Hvordan vil du konfigurere posteringsrestriksjoner?**
 4. Merk av for gruppen som du vil tillate postering for dette journalnavnet for, i treet.
-5. Klikk OK.
+5. Klikk **OK**.
 

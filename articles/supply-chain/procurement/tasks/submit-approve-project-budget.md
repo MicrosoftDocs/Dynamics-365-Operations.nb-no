@@ -3,7 +3,7 @@ title: Sende og godkjenne prosjektbudsjett
 description: Denne prosedyren viser hvordan du oppretter og sender inn budsjettet for et prosjekt.
 author: mkirknel
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 08/13/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.industry: Service industries
 ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: ffa7b4f23e63196947fef1b2180145702531e0a6
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 798bbc68e625c58d56cdd769f48ba734ace1d028
+ms.sourcegitcommit: e10491a2ff04f65d9f306ef6e068ee123213b23b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1843919"
+ms.lasthandoff: 08/21/2019
+ms.locfileid: "1914867"
 ---
 # <a name="submit-and-approve-project-budget"></a>Sende og godkjenne prosjektbudsjett
 
@@ -34,26 +34,26 @@ Når du oppretter et prosjektbudsjett, kan du angi estimerte inntekter og kostna
 
 Denne oppgaven ble opprettet med USSI-datasettet.
 
-1. Gå til Prosjektstyring og regnskap > Prosjekter > Alle prosjekter.
+1. Gå til **Moduler > Prosjektstyring og regnskap > Prosjekter > Alle prosjekter** i **navigasjonsruten**.
 2. Finn og velg ønsket post i listen.
 3. Klikk koblingen i den valgte raden i listen.
-4. Klikk Plan i handlingsruten.
-5. Klikk Prosjektbudsjett.
-6. Skriv inn en verdi i feltet Beskrivelse.
-7. Utvid delen Kostnad.
-8. Klikk Ny.
-9. Velg et alternativ i Transaksjonstype-feltet.
-10. Angi eller velg en verdi i Kategori-feltet.
-11. Angi et tall i feltet Opprinnelig budsjett.
-12. Utvid delen Omsetning.
-13. Klikk Ny.
+4. Klikk **Plan** i **handlingsruten**.
+5. Klikk på **Prosjektbudsjett**.
+6. Skriv inn en verdi i **Beskrivelse**-feltet.
+7. Utvid **Kostnad**-hurtigfanen.
+8. Klikk på **Ny**.
+9. Velg et alternativ i **Transaksjonstype**-feltet.
+10. Angi eller velg en verdi i **Kategori**-feltet.
+11. Angi et tall i feltet **Opprinnelig budsjett**.
+12. Vis hurtigfanen **Omsetning**.
+13. Klikk på **Ny**.
 14. Merk den valgte raden i listen.
-15. Velg et alternativ i Transaksjonstype-feltet.
-16. Angi eller velg en verdi i Kategori-feltet.
-17. Angi et tall i feltet Opprinnelig budsjett.
-18. Klikk Lagre.
-19. Klikk Arbeidsflyt.
-20. Klikk Send.
-21. Skriv inn en verdi i feltet Kommentar.
-22. Klikk Send.
+15. Velg et alternativ i **Transaksjonstype**-feltet.
+16. Angi eller velg en verdi i **Kategori**-feltet.
+17. Angi et tall i feltet **Opprinnelig budsjett**.
+18. Klikk **Lagre**.
+19. Klikk på **Arbeidsflyt**.
+20. Klikk **Send**.
+21. Skriv inn en verdi i feltet **Kommentar**.
+22. Klikk **Send**.
 

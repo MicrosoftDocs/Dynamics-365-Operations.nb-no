@@ -1,9 +1,9 @@
 ---
-title: Installere og konfigurere Microsoft Dynamics 365 for Finance and Operations – lager
+title: Oversikt over Installere og konfigurere lagerappen
 description: Dette emnet beskriver hvordan du installerer og konfigurerer Microsoft Dynamics 365 for Finance and Operations – lager.
 author: MarkusFogelberg
 manager: AnnBe
-ms.date: 11/12/2018
+ms.date: 07/25/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,14 +19,14 @@ ms.search.industry: Manufacturing
 ms.author: mafoge
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: f5e99351d79cb5898c6d5565d3d3197a8fe860df
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 742e8753aafca670b94c9f0361ef1dbbe42f0eb8
+ms.sourcegitcommit: e286572ce94a9442a5b3076c3ff5b429be0ed512
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1559192"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "1866119"
 ---
-# <a name="install-and-configure-microsoft-dynamics-365-for-finance-and-operations-8211-warehousing"></a>Installere og konfigurere Microsoft Dynamics 365 for Finance and Operations – lager
+# <a name="install-and-configure-the-warehousing-app-overview"></a>Oversikt over Installere og konfigurere lagerappen
 
 [!include [banner](../includes/banner.md)]
 
@@ -94,7 +94,7 @@ Du må konfigurere appen på enheten til å koble til Finance and Operations-ser
     + **Klient-ID for Azure Active Directory** - Klient-ID hentes i trinn 9 i "Opprette et webtjenesteprogram i Active Directory". 
     + **Klienthemmelighet for Azure Active Directory** - Klienthemmeligheten hentes i trinn 11 i "Opprette et webtjenesteprogram i Active Directory". 
     + **Azure Active Directory-ressurs** - Azure AD Directory-ressursen viser rot-URL-adressen for Finance and Operations. **Obs!** Ikke avslutt dette feltet med en skråstrek (/). 
-    + **Azure Active Directory-leietaker** - Azure AD Directory-leietakeren som brukes med Finance and Operations-serveren: .`https://login.windows.net/your-AD-tenant-ID` For eksempel: `https://login.windows.net/contosooperations.onmicrosoft.com.` 
+    + **Azure Active Directory-leietaker** - Azure AD Directory-leietakeren som brukes med Finance and Operations-serveren: `https://login.windows.net/your-AD-tenant-ID` For eksempel: `https://login.windows.net/contosooperations.onmicrosoft.com.` 
     <br>**Obs!** Ikke avslutt dette feltet med en skråstrek (/). 
     + **Firma** - Angi den juridiske enheten i Finance and Operations du vil koble programmet til. <br>[![wh-12-app-tilkobling-innstillinger](./media/wh-12-app-connection-settings-169x300.png)](./media/wh-12-app-connection-settings.png)
 4.  Velg **Tilbake**-knappen øverst til venstre i programmet. Programmet vil nå koble til Finance and Operations-serveren, og påloggingsskjermbildet for lagermedarbeideren vises. <br>[![wh-13-pålogging-skjerm](./media/wh-13-log-in-screen-180x300.png)](./media/wh-13-log-in-screen.png)

@@ -17,12 +17,12 @@ ms.search.industry: Distribution
 ms.author: mirzaab
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 7a3c635c32a53226da6ce72db86ee7d9d0c17bdb
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 964302cb7e7835b6e619602ac7165c9e7adbcefb
+ms.sourcegitcommit: cbcf344b3b552acca56c3e27606eac7f2f124afe
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1847093"
+ms.lasthandoff: 08/22/2019
+ms.locfileid: "1916766"
 ---
 # <a name="set-up-short-picking-item-reallocation"></a>Definere ny tildeling av vare for plukking med mangler
 
@@ -32,25 +32,20 @@ Denne fremgangsmåten viser hvordan du kan la lagerarbeidere raskt finne alterna
 
 
 ## <a name="set-up-work-exceptions"></a>Konfigurer arbeidsunntak
-1. Gå til Lagerstyring > Oppsett > Arbeid > Arbeidsunntak.
-2. Klikk Ny.
-    * Det er mulig å definere flere arbeidsunntak med ulike varetildelingspolicyer, slik at lagermedarbeideren kan velge én basert på behovene i forsendelsen de behandler.  
-3. Skriv inn en verdi i feltet Kode for arbeidsunntak.
-    * Gi arbeidsunntaket en tittel for å angi hva den skal brukes til. Eksempel: Plukking med mangler manuelt.  
-4. Skriv inn en verdi i feltet Beskrivelse.
-5. Velg Plukk med mangler i Unntakstype-feltet.
-6. Merk av for Juster beholdning.
-    * Dette alternativet betyr at lageret blir automatisk justert til 0 på lokasjonen med mangler.  
-7. Angi eller velg en verdi i feltet Standard justeringstypekode.
-    * I USMF kan du for eksempel velge Remove Res Adj Out.  
-8. Velg Manuell i feltet Ny fordeling av vare.
-    * Hvis du velger Manuell, eller Automatisk og Manuell, må lagermedarbeideren aktiveres for å bruke manuell ny tildeling.  
+1. I **navigasjonsruten** går du til **Lagerstyring > Oppsett > Arbeid > Arbeidsunntak**.
+2. Klikk på **Ny**. Det er mulig å definere flere arbeidsunntak med ulike varetildelingspolicyer, slik at lagermedarbeideren kan velge én basert på behovene i forsendelsen de behandler.  
+3. Skriv inn en verdi i feltet **Kode for arbeidsunntak**. Gi arbeidsunntaket en tittel for å angi hva den skal brukes til. Eksempel: Plukking med mangler manuelt.  
+4. Skriv inn en verdi i **Beskrivelse**-feltet.
+5. Velg Plukk med mangler i **Unntakstype**-feltet.
+6. Merk av for **Juster beholdning**. Dette alternativet betyr at lageret blir automatisk justert til 0 på lokasjonen med mangler.  
+7. Angi eller velg en verdi i feltet **Standard justeringstypekode**. I USMF kan du for eksempel velge Remove Res Adj Out.  
+8. Velg Manuell i feltet **Ny fordeling av vare**. Hvis du velger Manuell, eller Automatisk og Manuell, må lagermedarbeideren aktiveres for å bruke manuell ny tildeling.  
 
 ## <a name="set-up-a-worker-to-use-manual-item-reallocation"></a>Konfigurere en arbeider til å bruke manuell ny tildeling av vare
 1. Lukk siden.
-2. Gå til Lagerstyring > Oppsett > Arbeider.
-3. Klikk Rediger.
+2. I **navigasjonsruten** går du til **Lagerstyring > Oppsett > Arbeider**.
+3. Klikk **Rediger**.
 4. Velg arbeider 24 i listen.
-5. Utvid seksjonen Arbeid.
-6. Velg Ja i feltet Tillat manuell ny tildeling av vare.
+5. Utvid **Arbeid**-hurtigfanen.
+6. Velg Ja i feltet **Tillat manuell ny tildeling av vare**.
 

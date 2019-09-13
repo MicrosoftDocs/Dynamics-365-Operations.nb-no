@@ -1,9 +1,9 @@
 ---
-title: Norge
+title: Oversikt over Norge
 description: Dette emnet inneholder koblinger til dokumentasjonsressurser for Microsoft Dynamics 365 for Finance and Operations for Norge.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 07/17/2018
+ms.date: 07/25/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,14 +16,14 @@ ms.search.region: Norway
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 42f8a06501a2c0acb678d97f6a64f77a6bd02f03
-ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
+ms.openlocfilehash: 4b01b1697ac868ea0bba98b6213976c6cdea72a9
+ms.sourcegitcommit: e286572ce94a9442a5b3076c3ff5b429be0ed512
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/02/2019
-ms.locfileid: "1849347"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "1865650"
 ---
-# <a name="norway"></a>Norge 
+# <a name="norway-overview"></a>Oversikt over Norge
 
 [!include [banner](../includes/banner.md)]
 

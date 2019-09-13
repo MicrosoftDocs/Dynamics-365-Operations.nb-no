@@ -3,7 +3,7 @@ title: Oversikt over funksjonsbehandling
 description: Dette emnet beskriver funksjonen Funksjonsbehandling og hvordan du kan bruke den.
 author: mikefalkner
 manager: AnnBe
-ms.date: 07/17/2019
+ms.date: 08/19/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.validFrom:
 - month/year of release that feature was introduced in
 - in format yyyy-mm-dd
 ms.dyn365.ops.version: 10.0.2
-ms.openlocfilehash: 21eaf2fdcadf8fe9f91438a97a88cc3bddab8286
-ms.sourcegitcommit: d0fa8d0140fa81029527edb317623c1a7737c593
+ms.openlocfilehash: 6aeb5383520f799223d62420f6e0c1079c6c961f
+ms.sourcegitcommit: f93ead945afe5ae18706c66bce6e64a6b57aac50
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "1862944"
+ms.lasthandoff: 08/19/2019
+ms.locfileid: "1887117"
 ---
 # <a name="feature-management-overview"></a>Oversikt over funksjonsbehandling
 
@@ -103,8 +103,9 @@ Alle funksjoner som kan aktiveres, aktiveres. Hvis en funksjon allerede er planl
 
 Som standard deaktiveres alle funksjoner som legges til i miljøet, med mindre de er obligatoriske funksjoner. Hvis du vil aktivere alle nye funksjoner automatisk, kan du imidlertid bruke rullegardinlisten under arbeidsområdetittelen til å endre hva som skjer når nye funksjoner legges til.
 
-- Velg **Alle nye funksjonene aktiveres som standard** for å slå på alle nye funksjoner automatisk når de legges til i ditt miljø.
-- Velg **Alle nye funksjonene deaktiveres som standard** for å slå av alle nye funksjoner automatisk når de legges til i ditt miljø.
+- Velg **Aktiver nye funksjoner automatisk** for å slå på alle nye funksjoner automatisk når de legges til i ditt miljø.
+- Velg **Ikke aktiver nye funksjoner automatisk** for å slå av alle nye funksjoner når de legges til i ditt miljø.
+
 
 Når du aktiverer alle funksjonene automatisk, vil dette aktivere alle funksjonene som vil bli aktivert når du klikker på **Aktiver alle**-knappen. Det vil ikke aktivere funksjonene som krever bekreftelse eller funksjoner som ikke kan aktiveres før en handling er utført.
 

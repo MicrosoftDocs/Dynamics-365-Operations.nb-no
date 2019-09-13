@@ -3,7 +3,7 @@ title: Utforme ER-konfigurasjoner for å generere rapporter i Word-format
 description: De følgende trinnene forklarer hvordan en bruker med rollen systemansvarlig eller utvikler av elektronisk rapportering kan konfigurere et elektronisk rapporteringsformat til å generere rapporter som Microsoft Word-filer.
 author: NickSelin
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 08/12/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: fd138fb5fea4098a862fbecba5e8ec226ed6afa9
-ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
+ms.openlocfilehash: 327f03435ab55551953fd998dd89c831c76c4c26
+ms.sourcegitcommit: cbcf344b3b552acca56c3e27606eac7f2f124afe
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/02/2019
-ms.locfileid: "1850309"
+ms.lasthandoff: 08/22/2019
+ms.locfileid: "1916028"
 ---
 # <a name="design-er-configurations-to-generate-reports-in-word-format"></a>Utforme ER-konfigurasjoner for å generere rapporter i Word-format
 
@@ -39,64 +39,64 @@ Denne fremgangsmåten gjelder for en funksjon som ble lagt til i Microsoft Dynam
 
 
 ## <a name="select-the-existing-er-report-configuration"></a>Velg den eksisterende ER-rapportkonfigurasjonen
-1. Gå til Organisasjonsstyring > Arbeidsområder > Elektronisk rapportering.
-    * Kontroller at konfigurasjonsleverandøren Litware, Inc er merket som aktiv.  
-2. Klikk Rapporteringskonfigurasjoner.
-    * Vi vil bruke den eksisterende ER-konfigurasjonen som er opprinnelig utformet for å generere rapportutdataene i OPENXML-formatet, på nytt.  
+1. I **navigasjonsruten går du til Moduler > Organisasjonsstyring > Arbeidsområder > Elektronisk rapportering**. Kontroller at konfigurasjonsleverandøren Litware, Inc er merket som aktiv.  
+2. Klikk på **Rapporteringskonfigurasjoner**. Vi vil bruke den eksisterende ER-konfigurasjonen som er opprinnelig utformet for å generere rapportutdataene i OPENXML-formatet, på nytt.  
 3. Utvid Betalingsmodell i treet.
 4. Velg Betalingsmodell\Regnearkeksempelrapport i treet.
 5. Klikk Utforming.
 
 ## <a name="replace-the-excel-template-with-the-word-template"></a>Erstatt Excel-malen med Word-malen
-    * For øyeblikket brukes Excel-dokumentet som en mal til å generere utdataene i OPENXML-format. Vi vil importere rapportens mal i Word-format.  
-1. Klikk Vedlegg.
-    * Erstatt den eksisterende Excel-malen med Word-malen som du lastet ned tidligere, SampleVendPaymDocReport.docx. Legg merke til at denne malen bare inneholder oppsettet for dokumentet vi vil generere som ER-utdata.  
-2. Klikk Slett.
-3. Klikk Ja.
-4. Klikk Ny.
-5. Klikk Fil.
-6. Klikk Bla gjennom. Gå til og velg SampleVendPaymDocReport.docx som du lastet ned tidligere. Klikk OK.
-    * Velg malen du lastet ned i den forrige fremgangsmåten.  
-7. Angi eller velg en verdi i feltet Mal.
+
+For øyeblikket brukes Excel-dokumentet som en mal til å generere utdataene i OPENXML-format. Vi vil importere rapportens mal i Word-format.
+
+1. Klikk **Vedlegg**. Erstatt den eksisterende Excel-malen med Word-malen som du lastet ned tidligere, SampleVendPaymDocReport.docx. Legg merke til at denne malen bare inneholder oppsettet for dokumentet vi vil generere som ER-utdata.  
+2. Klikk **Slett**.
+3. Klikk **Ja**.
+4. Klikk på **Ny**.
+5. Klikk **Fil**.
+6. Klikk **Bla gjennom**. Gå til og velg SampleVendPaymDocReport.docx som du lastet ned tidligere. Klikk **OK**. Velg malen du lastet ned i den forrige fremgangsmåten.  
+7. Angi eller velg en verdi i feltet **Mal**.
 
 ## <a name="extend-the-word-template-by-adding-a-custom-xml-part"></a>Utvid Word-malen ved å legge til en egendefinert XML-del
-1. Klikk Lagre.
-    * I tillegg til å lagre konfigurasjonsendringer, oppdaterer Lagre-handlingen den vedlagte Word-malen. Strukturen til det utformede formatet er overført til det vedlagte Word-dokumentet som en ny egendefinert XML-del med navnet "Rapport". Legg merke til at den tilknyttede Word-malen ikke bare inneholder oppsettet for dokumentet vi vil generere som ER-utdata, den inneholder også strukturen til dataene som ER fyller ut i denne malen under kjøring.  
-2. Klikk Vedlegg.
-    * Nå må du binde elementene i den egendefinerte XML-delen "Rapport" til deler på Word-dokumentet.  
-    * Hvis du har kjennskap til Word-dokumenter som kan utformes som skjemaer som inneholder innholdskontroller som er avgrenset med elementer av egendefinerte XML-deler – spill av alle trinnene i den neste delaktiviteten for å opprette et slikt dokument. Hvis du vil ha mer informasjon, følg koblingen https://support.office.com/article/Create-forms-that-users-complete-or-print-in-Word-040c5cc1-e309-445b-94ac-542f732c8c8b?ui=en-US&rs=en-US&ad=US. Hvis ikke hopper du over alle trinnene i den neste delaktiviteten.  
+1. Klikk **Lagre**. I tillegg til å lagre konfigurasjonsendringer, oppdaterer Lagre-handlingen den vedlagte Word-malen. Strukturen til det utformede formatet er overført til det vedlagte Word-dokumentet som en ny egendefinert XML-del med navnet "Rapport". Legg merke til at den tilknyttede Word-malen ikke bare inneholder oppsettet for dokumentet vi vil generere som ER-utdata, den inneholder også strukturen til dataene som ER fyller ut i denne malen under kjøring.  
+2. Klikk **Vedlegg**.
+    + Nå må du binde elementene i den egendefinerte XML-delen "Rapport" til deler på Word-dokumentet.  
+    + Hvis du har kjennskap til Word-dokumenter som kan utformes som skjemaer som inneholder innholdskontroller som er avgrenset med elementer av egendefinerte XML-deler – spill av alle trinnene i den neste delaktiviteten for å opprette et slikt dokument. Hvis du vil ha mer informasjon, se [Opprette skjemaer som brukere fullfører eller skriver ut i Word](https://support.office.com/article/Create-forms-that-users-complete-or-print-in-Word-040c5cc1-e309-445b-94ac-542f732c8c8b?ui=en-US&rs=en-US&ad=US). Hvis ikke hopper du over alle trinnene i den neste delaktiviteten.  
 
 ## <a name="get-word-with-custom-xml-part-to-do-data-bindings"></a>Få Word med egendefinert XML-delen for å utføre databindinger
-    * Åpne dette dokumentet i Word, og gjør følgende: – Åpne fanen Word-utvikler (tilpass båndet hvis det ikke er aktivert ennå).  - Velg ruten XML-tilordning.  - Velg den egendefinerte XML-delen "Rapport" i oppslaget.  - Utfør tilordning av elementene i den valgte egendefinerte XML-delen og innholdskontrollene for Word-dokumentet.  - Lagre det oppdaterte Word-dokumentet på en lokal stasjon.  
+
+Åpne dokumentet i Word, og gjør følgende:  
+1. Åpne Utvikler-fanen i Word-(tilpass båndet hvis den ikke er aktivert ennå).
+2. Velg ruten XML-tilordning.
+3. Velg den egendefinerte XML-delen "Rapport" i oppslaget.
+4. Utfør tilordning av elementene i den valgte egendefinerte XML-delen og innholdskontrollene for Word-dokumentet.  5 Lagre det oppdaterte Word-dokumentet på en lokal stasjon.  
 
 ## <a name="upload-the-word-template-with-custom-xml-part-bounded-to-content-controls"></a>Last opp Word-malen med egendefinert XML-del bundet til innholdskontroller
-1. Klikk Slett.
-2. Klikk Ja.
-    * Legg til ny mal. Hvis du har fullført trinnene i den forrige delaktiviteten, velger du Word-dokumentet du opprettet og lagret lokalt. Ellers velger du MS Word-malen SampleVendPaymDocReportBounded.docx som du lastet ned tidligere.  
-3. Klikk Ny.
-4. Klikk Fil.
-5. Klikk Bla gjennom. Gå til og velg SampleVendPaymDocReportBounded.docx som du lastet ned tidligere. Klikk OK.
-6. I Mal-feltet velger du dokumentet du lastet ned i den forrige fremgangsmåten.
-7. Klikk Lagre.
+1. Klikk **Slett**.
+2. Klikk **Ja**. Legg til ny mal. Hvis du har fullført trinnene i den forrige delaktiviteten, velger du Word-dokumentet du opprettet og lagret lokalt. Ellers velger du MS Word-malen SampleVendPaymDocReportBounded.docx som du lastet ned tidligere.  
+3. Klikk på **Ny**.
+4. Klikk **Fil**.
+5. Klikk **Bla gjennom**. Gå til og velg SampleVendPaymDocReportBounded.docx som du lastet ned tidligere. Klikk **OK**.
+6. I **Mal**-feltet velger du dokumentet du lastet ned i den forrige fremgangsmåten.
+7. Klikk **Lagre**.
 8. Lukk siden.
 
 ## <a name="execute-the-format-to-create-word-output"></a>Kjør formatet for å opprette Word-utdata
-1. Klikk Konfigurasjoner i handlingsruten.
-2. Klikk Brukerparametere.
-3. Velg Ja i feltet Kjøringsinnstillinger.
-4. Klikk OK.
-5. Klikk Rediger.
-6. Velg Ja i feltet Kjøringsutkast.
-7. Klikk Lagre.
+1. Klikk **Konfigurasjoner** i **handlingsruten**.
+2. Klikk **Brukerparametere**.
+3. Velg Ja i feltet **Kjøringsinnstillinger**.
+4. Klikk **OK**.
+5. Klikk **Rediger**.
+6. Velg Ja i feltet **Kjøringsutkast**.
+7. Klikk **Lagre**.
 8. Lukk siden.
 9. Lukk siden.
-10. Gå til Leverandører > Betalinger > Betalingsjournal.
-11. Klikk Linjer.
+10. I **navigasjonsruten** går du til **Moduler > Leverandører > Betalinger > Betalingsjournal**.
+11. Klikk **Linjer**.
 12. Merk eller fjern merking for alle rader i listen.
-13. Klikk Betalingsstatus.
-14. Velg Ingen.
-15. Klikk Generer betalinger.
-16. Klikk OK.
-17. Klikk OK.
-    * Analyser de genererte utdataene. Legg merke til at de opprettede utdataene vises i Word-format og inneholder detaljer for de behandlede betalingene.  
+13. Klikk **Betalingsstatus**.
+14. Klikk **Ingen**.
+15. Klikk **Generer betalinger**.
+16. Klikk **OK**.
+17. Klikk **OK**. Analyser de genererte utdataene. Legg merke til at de opprettede utdataene vises i Word-format og inneholder detaljer for de behandlede betalingene.  
 

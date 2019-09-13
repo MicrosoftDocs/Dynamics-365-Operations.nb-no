@@ -3,7 +3,7 @@ title: Behandling av Faktisk vekt-produkt med lagerstyring
 description: Dette emnet beskriver hvordan du bruker arbeidsmaler og lokasjonsdirektiver for å bestemme hvordan og hvor arbeid utføres i lageret.
 author: perlynne
 manager: AnnBe
-ms.date: 03/18/2019
+ms.date: 08/19/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2019-1-31
 ms.dyn365.ops.version: 8.1.3
-ms.openlocfilehash: ed588ea28bec3e734f9648c1fbd7551ab0b3cdda
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: d5e9f8e4d154e5f56ee7ceae666cd935d6ceb460
+ms.sourcegitcommit: f93ead945afe5ae18706c66bce6e64a6b57aac50
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1836123"
+ms.lasthandoff: 08/19/2019
+ms.locfileid: "1887141"
 ---
 # <a name="catch-weight-product-processing-with-warehouse-management"></a>Behandling av Faktisk vekt-produkt med lagerstyring
 
@@ -136,7 +136,6 @@ Ikke alle arbeidsflyter støtter behandling av faktisk vekt-produkter med lagers
 
 - Manuell oppretting av karanteneordrer støttes ikke for faktisk vekt-produkter.
 - Manuell flytting av beholdning som er knyttet til arbeid, støttes ikke for faktisk vekt-produkter.
-- Konsolidering av nummerskilt støttes ikke for faktisk vekt-produkter.
 - Nummerskiltlasting for å initialisere lagerlagring støttes ikke for faktisk vekt-produkter.
 - Partibalanseringsprosesser støttes ikke for faktisk vekt-produkter.
 - Behandling av negativt fysisk lager støttes ikke for faktisk vekt-produkter.
@@ -147,7 +146,6 @@ Ikke alle arbeidsflyter støtter behandling av faktisk vekt-produkter med lagers
 - Funksjonen for gruppeplukking støttes ikke for faktisk vekt-produkter.
 - Plukk og pakk-lagerbehandling støttes ikke for faktisk vekt-produkter.
 - For faktisk vekt-produkter kan arbeid som er definert i en arbeidsmal, utføres automatisk.
-- Funksjonen for tilbakeføring av arbeid støttes ikke for faktisk vekt-produkter.
 - For faktisk vekt-produkter støttes ikke manuell pakkestasjonbehandling der arbeid opprettes etter beholdere er lukket.
 - Funksjonen for stykkevis skanning støttes ikke for faktisk vekt-produkter.
  

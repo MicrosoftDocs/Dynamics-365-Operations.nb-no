@@ -1,9 +1,9 @@
 ---
-title: Arbeidsnedbrytningsstruktur
+title: Oversikt over arbeidsnedbrytningsstruktur
 description: En arbeidsnedbrytningsstruktur (WBS) er en beskrivelse av arbeidet som skal utføres for et prosjekt. Det er et hierarki av oppgaver som representerer prosjektteamets forståelse av arbeidssammensetningen og av størrelsen, kostnaden og varigheten til hver komponent eller oppgave.
 author: KimANelson
 manager: AnnBe
-ms.date: 06/05/2017
+ms.date: 07/25/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,14 +18,14 @@ ms.search.region: Global
 ms.author: knelson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 068a811c3f1e7033e2625a99975652e0d6f1a139
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 78509898d0c2279750df3860a670d3d7a6badfc0
+ms.sourcegitcommit: e286572ce94a9442a5b3076c3ff5b429be0ed512
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1838229"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "1865586"
 ---
-# <a name="work-breakdown-structures"></a>Arbeidsnedbrytningsstruktur
+# <a name="work-breakdown-structures-overview"></a>Oversikt over arbeidsnedbrytningsstruktur
 
 [!include [banner](../includes/banner.md)]
 

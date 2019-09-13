@@ -1,5 +1,5 @@
 ---
-title: Hva er nytt eller endret?
+title: Startside for Hva er nytt eller endret
 description: Denne siden peker til emner som gir deg informasjon om de nye funksjonene i de siste versjonene av Microsoft Dynamics 365 for Finance and Operations.
 author: josaw1
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
-ms.openlocfilehash: 300db1170a9dbb6a83dd628c0430e03d7746fe53
-ms.sourcegitcommit: 299e20b59ebefa584ed46a13da3f1a7ff709e43c
+ms.openlocfilehash: 9505f386cdc891c855e4ac38dffd16858d79a1ac
+ms.sourcegitcommit: e286572ce94a9442a5b3076c3ff5b429be0ed512
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "1863445"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "1865166"
 ---
-# <a name="whats-new-or-changed"></a>Hva er nytt eller endret?
+# <a name="whats-new-or-changed-home-page"></a>Startside for Hva er nytt eller endret
 
 [!include [banner](../includes/banner.md)]
 
