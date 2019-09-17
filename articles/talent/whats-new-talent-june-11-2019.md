@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-06-11
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 42b9541b152d2a6daa1dbf95ecf30a2f51eb36f3
-ms.sourcegitcommit: 31a918d357a7182f3870713a9c4455bd5c44cd58
+ms.openlocfilehash: a1413ea43e852c78ede227b69c0f49c07944a872
+ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/18/2019
-ms.locfileid: "1634486"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "1741629"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-talent-june-11-2019"></a>Hva er nytt eller endret i Dynamics 365 for Talent (11. juni 2019)
 
@@ -76,9 +76,9 @@ Oppgavegruppe-enheten er lagt til.
 
 ### <a name="preview-features-will-be-enabled-only-in-sandbox-environments"></a>Forhåndsvisningsfunksjoner blir bare aktivert i sandkassemiljøer
 
-Hvis du vil ha mer informasjon om hvordan du publiserer endringer, kan du se [Klargjøre Talent](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/provisioning-talent).
+Hvis du vil ha mer informasjon om hvordan du publiserer endringer, kan du se [Klargjøre Talent](https://docs.microsoft.com/dynamics365/unified-operations/talent/provisioning-talent).
 
-Når du klargjør en ny forekomst av Talent, kan du angi om forekomsttypen er Produksjon eller Sandkasse. Forekomsten av typen Sandkasse gjør at nye funksjoner kan testes tidlig. Alle eksisterende Talent-forekomster vil bli oppdatert til **Produksjon**-forekomsttypen. Hvis du vil at en av de eksisterende forekomstene skal oppdateres til forekomsttypen **Sandkasse**, kan du kontakte [kundestøtten](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/talent-support) for å starte endringsforespørselen.
+Når du klargjør en ny forekomst av Talent, kan du angi om forekomsttypen er Produksjon eller Sandkasse. Forekomsten av typen Sandkasse gjør at nye funksjoner kan testes tidlig. Alle eksisterende Talent-forekomster vil bli oppdatert til **Produksjon**-forekomsttypen. Hvis du vil at en av de eksisterende forekomstene skal oppdateres til forekomsttypen **Sandkasse**, kan du kontakte [kundestøtten](https://docs.microsoft.com/dynamics365/unified-operations/talent/talent-support) for å starte endringsforespørselen.
 
 ### <a name="restrict-the-leave-types-in-time-off-requests"></a>Begrens permisjonstypene i fritidforespørsler
 

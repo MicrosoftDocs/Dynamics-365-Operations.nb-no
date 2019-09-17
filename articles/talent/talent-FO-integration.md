@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-12-31
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: db542e4df79480624ff6e5ff1996ad930fc1564b
-ms.sourcegitcommit: aec1dcd44274e9b8d0770836598fde5533b7b569
+ms.openlocfilehash: cb9e01316f4b154a3e9a73042eaf0492f016c46c
+ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2019
-ms.locfileid: "1617349"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "1742724"
 ---
 # <a name="dynamics-365-for-talent-to-dynamics-365-for-finance-and-operations-integration-faq"></a>Vanlige spørsmål om integrering fra Dynamics 365 for Talent til Dynamics 365 for Finance and Operations
 
@@ -38,7 +38,7 @@ For Attract og Onboard hører alle data til i Common Data Service.
 
 ## <a name="can-i-create-a-new-mapping-without-using-the-templates"></a>Kan jeg opprette en ny tilordning uten å bruke malene?
 
-Malene er startpunktet. Du kan opprette din egen mal, men en mal er alltid nødvendig når du oppretter et prosjekt for integrasjon. Hvis du vil ha mer informasjon om dataintegrator (DI), maler og prosjekter, kan du se [Integrere data til Common Data Service](https://docs.microsoft.com/en-us/powerapps/administrator/data-integrator).
+Malene er startpunktet. Du kan opprette din egen mal, men en mal er alltid nødvendig når du oppretter et prosjekt for integrasjon. Hvis du vil ha mer informasjon om dataintegrator (DI), maler og prosjekter, kan du se [Integrere data til Common Data Service](https://docs.microsoft.com/powerapps/administrator/data-integrator).
 
 ## <a name="can-i-map-financial-dimensions-to-transfer-between-talent-and-finance-and-operations"></a>Kan jeg tilordne finansdimensjoner for å overføre mellom Talent og Finance and Operations?
 
@@ -133,7 +133,7 @@ Integreringen til Finance and Operations er en totrinns prosess. Først bekrefte
 
 Hvis dataene ikke vises som forventet i Common Data Service, må du kontrollere at enheten støttes i integreringen. Hvis du vil inkludere flere data i Common Data Service, må en endring utføres på Microsoft-siden.
 
-Hvis enheten støttes og dataene er tilgjengelige i Common Data Service, må du kontrollere tilordningen er riktig i Dataintegrator. Hvis integratoren ser ok ut, må du bekrefte at databehandlingsjobbene er kjørt. Feil kan oppstå under kjøring av satsvise jobber. Hvis du vil ha mer informasjon om Databehandling, kan du se [Databehandling](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-data-packages?toc=/fin-and-ops/toc.json).
+Hvis enheten støttes og dataene er tilgjengelige i Common Data Service, må du kontrollere tilordningen er riktig i Dataintegrator. Hvis integratoren ser ok ut, må du bekrefte at databehandlingsjobbene er kjørt. Feil kan oppstå under kjøring av satsvise jobber. Hvis du vil ha mer informasjon om Databehandling, kan du se [Databehandling](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-data-packages?toc=/fin-and-ops/toc.json).
 
 ## <a name="the-addresses-for-my-employees-are-incorrect-after-i-import-them-into-finance-and-operations-what-should-i-do"></a>Adressene til mine ansatte er feil når jeg importere dem til Finance and Operations. Hva gjør jeg?
 
@@ -145,7 +145,7 @@ Under implementering av Talent må du kontrollere at nummerseriene ikke er de sa
 
 Kontroller at du velger Dynamics 365 for Finance and Operations (som er i forhåndsvisning) og Common Data Service når du oppretter tilkoblinger.
 
-## <a name="when-syncing-employments-i-get-the-errors-companyinfofk-doesnt-exist-or-the-value-12312154-115959-pm-in-field-employment-end-date-is-not-found-in-the-related-table-employment-what-should-i-do"></a>Under synkronisering av distribusjoner får jeg feilen "CompanyInfo_FK finnes ikke" eller "Verdien '12/31/2154 11:59:59 pm' i feltet 'Sluttdato for ansettelse' finnes ikke i den relaterte tabellen 'Ansettelse'". Hva gjør jeg?
+## <a name="when-syncing-employments-i-get-the-errors-companyinfo_fk-doesnt-exist-or-the-value-12312154-115959-pm-in-field-employment-end-date-is-not-found-in-the-related-table-employment-what-should-i-do"></a>Under synkronisering av distribusjoner får jeg feilen "CompanyInfo_FK finnes ikke" eller "Verdien '12/31/2154 11:59:59 pm' i feltet 'Sluttdato for ansettelse' finnes ikke i den relaterte tabellen 'Ansettelse'". Hva gjør jeg?
 
 Kontroller at du tilordner til de riktige juridiske enhetene. Den juridiske enheten er ikke en del av standardmalen, så det forventes at hver juridiske enhet som finnes i Talent og Common Data Service, også finnes i Finance and Operations.
 Kontroller også at du velger de riktige juridiske enhetene for det tilknyttede tilkoblingssettet.
@@ -160,12 +160,12 @@ Oppdater dataenhetene i Finance and Operations ved å gå til **Databehandling \
 
 - Dataintegrator (DI): 
 
-  - [Integrere data til Common Data Service](https://docs.microsoft.com/en-us/powerapps/administrator/data-integrator)
+  - [Integrere data til Common Data Service](https://docs.microsoft.com/powerapps/administrator/data-integrator)
 
-  - [Feiladministrasjon og feilsøking av dataintegrator](https://docs.microsoft.com/en-us/powerapps/administrator/data-integrator-error-management)
+  - [Feiladministrasjon og feilsøking av dataintegrator](https://docs.microsoft.com/powerapps/administrator/data-integrator-error-management)
 
-  - [Svarer på DSR-forespørsler om systemgenererte logger i PowerApps, Microsoft Flow og Common Data Service](https://docs.microsoft.com/en-us/powerapps/administrator/powerapps-gdpr-dsr-guide-systemlogs)
+  - [Svarer på DSR-forespørsler om systemgenererte logger i PowerApps, Microsoft Flow og Common Data Service](https://docs.microsoft.com/powerapps/administrator/powerapps-gdpr-dsr-guide-systemlogs)
 
 - Databehandling:
 
-  - [Databehandling](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-data-packages?toc=/fin-and-ops/toc.json)
+  - [Databehandling](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-data-packages?toc=/fin-and-ops/toc.json)

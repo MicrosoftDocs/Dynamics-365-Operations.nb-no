@@ -18,26 +18,26 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: ebc82ada31d2803800358cd9aecfe389ada8f0dc
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 2cfa180f992a4f7a9b2e21e0fb3e0845c7546c94
+ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1518774"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "1742728"
 ---
-# <a name="track-sources-for-candidate-profiles-and-applications"></a>Spore kilder for kandidatprofiler og søknader 
+# <a name="track-candidate-sources"></a>Spore kandidatkilder
 
 [!include[banner](../includes/banner.md)]
 
 > [!NOTE] 
-> Funksjonalitet som er nevnt i dette emnet, er tilgjengelig som en del av en forhåndsversjon. Innholdet og funksjonaliteten kan bli endret. Hvis du vil bruke denne funksjonen, kan du be administratoren om å aktivere den ved hjelp av **Administrasjonsinnstillinger** i Attract. En fremtidig versjon vil inneholde kilderapporteringssporing. Hvis du vil ha mer informasjon, se [Tilgang til forhåndsvisningsfunksjoner i Talent](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/access-preview-feature).
+> Funksjonalitet som er nevnt i dette emnet, er tilgjengelig som en del av en forhåndsversjon. Innholdet og funksjonaliteten kan bli endret. Hvis du vil bruke denne funksjonen, kan du be administratoren om å aktivere den ved hjelp av **Administrasjonsinnstillinger** i Attract. En fremtidig versjon vil inneholde kilderapporteringssporing. Hvis du vil ha mer informasjon, se [Tilgang til forhåndsvisningsfunksjoner i Talent](https://docs.microsoft.com/dynamics365/unified-operations/talent/access-preview-feature).
 
 Når kandidater søker på en jobb, registrerer Attract automatisk kilden for søknadene og gir deg verdifull informasjon som hjelper deg å målrette rekrutteringsinnsatsen din. Rekrutteringspersoner og -ledere kan også velge en søknadskilde når en kandidat legges til manuelt til en jobb- eller talentsamling.
 
 Du kan vise søknadskilden i søknadsaktivitetdetaljene i **Aktivitet**-kategorien og i søknadsloggen som er tilgjengelig under **Profil** i talensamlinger. Du kan finne en kandidats profilkilde i kandidatdetaljene i **Profil**-kategorien i både søknads- og talentsamlinger.
 
 > [!NOTE] 
-> Du finner prosessmaler i [tillegget for omfattende ansettelse](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/attract-comprehensive-hiring).
+> Du finner prosessmaler i [tillegget for omfattende ansettelse](https://docs.microsoft.com/dynamics365/unified-operations/talent/attract-comprehensive-hiring).
 
 ## <a name="pre-configured-sources"></a>Forhåndskonfigurerte kilder
 
@@ -93,7 +93,7 @@ Standardkildelisten inneholder vanlige søknadskilder. Noen kildetyper, som **Jo
 
 ## <a name="customize-the-source-list"></a>Tilpasse kildelisten 
 
-Du kan utvide kildelisten for å inkludere ekstra søknadskilder. For å tilpasse denne listen følger du instruksjonene i [Utvide alternativsett i Attract](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/extensibility-attract#extending-option-sets-in-attract). Rediger **TalentSource**-enhet slik at den inkluderer flere kilder. 
+Du kan utvide kildelisten for å inkludere ekstra søknadskilder. For å tilpasse denne listen følger du instruksjonene i [Utvide alternativsett i Attract](https://docs.microsoft.com/dynamics365/unified-operations/talent/extensibility-attract#extending-option-sets-in-attract). Rediger **TalentSource**-enhet slik at den inkluderer flere kilder. 
 
 For å unngå negativ påvirkning på brukergrensesnittet må du ikke redigere eller slette **TalentCategory**-opplistingsverdiene (ikke navn) for følgende:
 

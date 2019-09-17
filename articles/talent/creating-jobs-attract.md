@@ -3,7 +3,7 @@ title: Opprette, godkjenne og postere jobber i Attract
 description: Dette emnet beskriver elementene i en jobb i Attract. Det forklarer også hvordan du oppretter en jobb.
 author: hasrivas
 manager: AnnBe
-ms.date: 03/20/2019
+ms.date: 07/18/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-talent
@@ -19,14 +19,14 @@ ms.search.industry: ''
 ms.author: hasrivas
 ms.search.validFrom: 2018-10-24
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: 1e76572c1a843fe7abd515333d5b7cb03b91eb11
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 351fd03f6a27073b850729e2eef5516556292225
+ms.sourcegitcommit: b24c36cdd3b6f6085447bf81cb034d13d5b081fe
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1518730"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "1773268"
 ---
-# <a name="create-approve-and-post-jobs-in-attract"></a>Opprette, godkjenne og postere jobber i Attract
+# <a name="create-a-job"></a>Opprette en jobb
 
 [!include [banner](includes/banner.md)]
 
@@ -81,33 +81,6 @@ Hvis du vil ha mer informasjon om ledige stillinger, se [Karriereområde-funksjo
 > [!NOTE]
 > Stillingsposteringsfunksjonaliteten er bare tilgjengelig med tilegget for omfattende ansettelse for Attract.
 
-### <a name="posting-jobs-to-linkedin"></a>Postere jobber til LinkedIn 
-
-Før postering av en jobb fra Attract til LinkedIn må administratoren legge til LinkedIn-firma-ID-en og LinkedIn-firmanavnet i **Administrasjonsinnstillinger**. LinkedIn-firma-IDen kreves for å sikre at jobbene som er postert fra Attract, tilordnes til riktig firmaside.
-
-LinkedIn-firma-IDen er en streng med tall som unikt identifiserer firmaet i LinkedIn. Hvis du vil ha mer informasjon om hvordan du finner firma-IDen for LinkedIn, kan du besøke [LinkedIn-området](https://aka.ms/findID).
-
-For å oppdatere firmaets LinkedIn, velg **Administrasjonssenter** på **Innstillinger** -menyen (tannhjulssymbolet), og velg deretter **LinkedIn-integrering** -kategorien. Under **Koble til LinkedIn**-delen angir du LinkedIn-firmanavnet og firma-IDen, og deretter lagrer du innstillingene.
-
-> [!NOTE]
-> Det er fire viktige ting å merke seg om jobbposteringsprosessen til LinkedIn.
-> 1. Jobber som posteres til LinkedIn, posteres som "Begrensede oppføringer" (Limited Listings). Begrensede oppføringer kan ikke fremmes på LinkedIn-området. Hvis du vil fremme begrensede oppføringer-jobber som er postert på LinkedIn, fra Attract, må du bruke LinkedIn for å aktivere "jobbpakking" (Job Wrapping). Se koblingene nedenfor og ta kontakt med kundestøtte for LinkedIn hvis du vil ha mer informasjon.
->
->    [Begrensede oppføringer kontra premium jobbplasser for jobbpakking](https://www.linkedin.com/help/recruiter/answer/79049/limited-listings-vs-premium-job-slots-for-job-wrapping)
->
->    [Vanlige spørsmål om jobbpakking](https://www.linkedin.com/help/recruiter/answer/79050/job-wrapping-frequently-asked-questions)
->
-> 1. Når du posterer jobber på LinkedIn, sender Attract Microsoft 365-organisasjonsnavnet mot jobben. LinkedIn kobler jobbene til et firma på LinkedIn-siden basert på organisasjonsnavnet som blir sendt. Hvis jobben er oppført mot feil firma på LinkedIn, må du kontrollere at Microsoft 365-organisasjonsnavnet samsvarer med firmanavnet på LinkedIn.  
->
->    [Endre adressekontakt og mye mer](https://docs.microsoft.com/en-us/office365/admin/manage/change-address-contact-and-more)
->
->    Hvis du har problemer etter dette trinnet, kontakt kundestøtte for LinkedIn. 
-> 
-> 1. Jobber som posteres til LinkedIn, vises på det live LinkedIn-området. Det finnes ingen testmiljø for postering av jobber til LinkedIn. 
->
-> 1. Det kan ta opptil 24 timer før jobber som posteres på LinkedIn, blir synlige for kandidater fra LinkedIn på grunn av gjeldende satsvise LinkedIn-jobbposteringsprosess.
-
-
 ## <a name="activate"></a>Aktiver
 
 Når en en jobb er aktivert, kan den posteres, og kundeemner og søkere kan legges til den. Alternativet for å legge til kundeemner i en jobb er angitt i kundeemneaktiviteten i ansettelsesprosessen.
@@ -142,7 +115,7 @@ Hvis en bruker redigerer jobben etter at den er godkjent, men ikke aktivert, vil
 Folk som er oppført som godkjennere, mottar en melding i Attract og en e-post for å informere dem om at de har et element å godkjenne.  I e-posten kan godkjennere klikke koblingen for å åpne jobben, gå gjennom detaljene, og enten godkjenne eller avvise. Etter at jobbstatusen er satt til **Godkjent** eller **Avvist**, får avsenderen beskjed i Attract, og de vil motta en e-post. Godkjennere vil også motta en påminnelsese-post hvis de ikke har svart på forespørselen om godkjenning innen 24 timer.
 
 > [!NOTE]
-> Du kan opprette egendefinerte e-postmaler for e-post for godkjenning. Hvis du vil ha mer informasjon, se [Opprette og administrere e-postmaler](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/email-templates).
+> Du kan opprette egendefinerte e-postmaler for e-post for godkjenning. Hvis du vil ha mer informasjon, se [Opprette og administrere e-postmaler](https://docs.microsoft.com/dynamics365/unified-operations/talent/email-templates).
 
 ## <a name="create-a-job"></a>Opprette en jobb
 

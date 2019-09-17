@@ -1,6 +1,6 @@
 ---
-title: Finne kandidater ved hjelp av talentsamlinger
-description: Dette emnet forklarer hvordan du kan opprette og definere talentsamlinger i Attract.
+title: Finne kandidater med talentsamlinger i Microsoft Dynamics 365 for Talent - Attract
+description: Dette emnet forklarer hvordan du kan opprette og definere talentsamlinger i Microsoft Dynamics 365 for Talent - Attract.
 author: andreabichsel
 manager: AnnBe
 ms.date: 06/28/2019
@@ -18,14 +18,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-22-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: d2d680aa54e4610959c12bc1feef11ba8f30b0ca
-ms.sourcegitcommit: 40be0096af50e74d9946e382d3bbd2683bed1fc5
+ms.openlocfilehash: 98b93f69c4f4c8ca6c9a0fc2530578afed4b967c
+ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/29/2019
-ms.locfileid: "1711300"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "1741873"
 ---
-# <a name="source-candidates-by-using-talent-pools"></a>Finne kandidater ved hjelp av talentsamlinger
+# <a name="source-candidates-with-talent-pools"></a>Finne kandidater med talentsamlinger
 
 [!include[banner](../includes/banner.md)]
 
@@ -79,7 +79,7 @@ Eieren og bidragsyterne til talentsamlingen kan legge til kandidater i talentsam
 ## <a name="search-and-view-candidate-profiles"></a>Søke etter og vise kandidatprofiler
 
 > [!NOTE] 
-> Denne funksjonen er for øyeblikket i forhåndsvisningen. Hvis du vil prøve dette, må du [aktiverer funksjonen i innstillingene for administrasjon av Attract](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/access-preview-feature). 
+> Denne funksjonen er for øyeblikket i forhåndsvisningen. Hvis du vil prøve dette, må du [aktiverer funksjonen i innstillingene for administrasjon av Attract](https://docs.microsoft.com/dynamics365/unified-operations/talent/access-preview-feature). 
 
 Talentsamlinger lar deg vise en kandidatprofil, LinkedIn-informasjon, relaterte dokumenter og søknadsloggen. Du kan søke i hele databasen med alle kandidater som er lagt til i talentsamlinger, inkludert lukkede og aktive søkere.
 
@@ -116,7 +116,7 @@ Alle brukere har en samlet oversikt over kandidatprofiler. **Profil**-kategorien
 
     Hvis du vil vise et dokument, merker du dokumentnavnet i listen over dokumenter. Du kan vise Microsoft Word-dokumenter i programmet ved hjelp av Microsoft Office 365. Du kan også laste ned dokumenter til den lokale datamaskinen ved hjelp av **Last ned**-alternativet for hvert dokument.
 
-- **LinkedIn**-kategorien viser kandidatens LinkedIn-informasjon. Hvis du vil bruke denne kategorien, må du koble til LinkedIn-kontoen i brukerinnstillingene, og det må opprettes en tilkobling til miljøets LinkedIn Recruiter. Hvis du vil ha mer informasjon, se [Kandidatsondering med LinkedIn Recruiter](./attract-linked-in-recruiter.md).
+- **LinkedIn**-kategorien viser kandidatens LinkedIn-informasjon. Hvis du vil bruke denne kategorien, må du koble til LinkedIn-kontoen i brukerinnstillingene, og det må opprettes en tilkobling til miljøets LinkedIn Recruiter. Hvis du vil ha mer informasjon, se [Kandidatsondering med LinkedIn Recruiter](./attract-linkedin-recruiter.md).
 
 > [!NOTE]
 > Bare kandidater kan oppdatere kompetansen, utdanningsloggen og arbeidserfaringen.

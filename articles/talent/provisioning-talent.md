@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2017-11-20
 ms.dyn365.ops.version: Talent July 2017 update
-ms.openlocfilehash: c249df697553cd42eccd59d3f2c3f5f083ead1cb
-ms.sourcegitcommit: 15154b0aa86110ce5fad6f63e6763103a676a1d2
+ms.openlocfilehash: 781487997ceb95f4e3f528f47e8ed2aa5b25fd0e
+ms.sourcegitcommit: eb501d8712212a6ed33bec1e3e2c02f994e0a724
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "1624613"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "1869942"
 ---
 # <a name="provision-talent"></a>Klargjøre Talent
 
@@ -51,10 +51,10 @@ Når du har opprettet et LCS-prosjekt, kan du klargjøre Talent i et miljø.
     > [!NOTE]
     > Forekomsttypen Talent er atskilt fra forekomsttypen i PowerApps-miljøet, som du angir i PowerApps-administrasjonssenteret.
 3. Velg alternativet **Omfatter demodata** hvis du vil at ditt miljø skal ta med samme demodatasett brukt i testversjonen av Talent. Dette er nyttig for langsiktig demo eller opplæring miljøer, og bør aldri brukes for produksjonsmiljøer.  Vær oppmerksom på at du må velge dette alternativet ved innledende distribusjon. Du kan ikke oppdatere en eksisterende distribusjon senere.
-4. Talent klargjøres alltid i et Microsoft PowerApps-miljø for å aktivere PowerApps-integrering og -utvidelsesmuligheter. Les delen "Velge et PowerApps-miljø" i dette emnet før du fortsetter. Hvis du ikke allerede har et PowerApps-miljø, velger du Administrer miljøer i LCS eller navigerer til PowerApps-administrasjonssenteret. Følg deretter trinnene til [Opprette et PowerApps-miljø](https://docs.microsoft.com/en-us/powerapps/administrator/create-environment).
+4. Talent klargjøres alltid i et Microsoft PowerApps-miljø for å aktivere PowerApps-integrering og -utvidelsesmuligheter. Les delen "Velge et PowerApps-miljø" i dette emnet før du fortsetter. Hvis du ikke allerede har et PowerApps-miljø, velger du Administrer miljøer i LCS eller navigerer til PowerApps-administrasjonssenteret. Følg deretter trinnene til [Opprette et PowerApps-miljø](https://docs.microsoft.com/powerapps/administrator/create-environment).
 
     > [!NOTE]
-    > Hvis du vil vise eksisterende miljøer eller opprette nye miljøer, må leieradministratoren som klargjør Talent, være tilordnet til PowerApps P2-lisensen. Hvis organisasjonen ikke har en PowerApps P2-lisens, kan du få en fra CSP-en eller fra [PowerApps-prisingssiden](https://powerapps.microsoft.com/en-us/pricing/).
+    > Hvis du vil vise eksisterende miljøer eller opprette nye miljøer, må leieradministratoren som klargjør Talent, være tilordnet til PowerApps P2-lisensen. Hvis organisasjonen ikke har en PowerApps P2-lisens, kan du få en fra CSP-en eller fra [PowerApps-prisingssiden](https://powerapps.microsoft.com/pricing/).
 
 5. Velg miljøet som Talent skal klargjøres i.
 6. Velg **Ja** for å godta vilkårene og begynne distribusjonen.
@@ -66,11 +66,11 @@ Når du har opprettet et LCS-prosjekt, kan du klargjøre Talent i et miljø.
     > [!NOTE]
     > Hvis du ennå ikke har godkjent for de endelige kravene, kan du distribuere en testforekomst av Talent i prosjektet. Du kan deretter bruke denne forekomsten til å teste løsningen til du godkjenner. Hvis du bruker det nye miljøet for testing, må du gjenta denne fremgangsmåten for å opprette et produksjonsmiljø.
 
-    > Siden bare to LCS-miljøer er tillatt som en del av Talent-abonnementet, kan du vurdere et gratis 60-dagers [Talent-prøvemiljø](https://dynamics.microsoft.com/en-us/talent/overview/). Selv om et prøvemiljø eies av brukeren som ba om det, kan andre brukere inviteres gjennom systemadministrasjonsopplevelsen for kjerne-HR. Prøvemiljøer inneholder fiktive data som kan brukes til å utforske programmet på en sikker måte. De er ikke ment å brukes som produksjonsmiljøer. Merk at når prøvemiljøet utløper etter 60 dager, slettes alle dataene i miljøet og de kan ikke gjenopprettes. Du kan registrere deg for et nytt prøvemiljø etter det eksisterende miljøet er utløpt.
+    > Siden bare to LCS-miljøer er tillatt som en del av Talent-abonnementet, kan du vurdere et gratis 60-dagers [Talent-prøvemiljø](https://dynamics.microsoft.com/talent/overview/). Selv om et prøvemiljø eies av brukeren som ba om det, kan andre brukere inviteres gjennom systemadministrasjonsopplevelsen for kjerne-HR. Prøvemiljøer inneholder fiktive data som kan brukes til å utforske programmet på en sikker måte. De er ikke ment å brukes som produksjonsmiljøer. Merk at når prøvemiljøet utløper etter 60 dager, slettes alle dataene i miljøet og de kan ikke gjenopprettes. Du kan registrere deg for et nytt prøvemiljø etter det eksisterende miljøet er utløpt.
 
 ## <a name="select-a-powerapps-environment"></a>Velge et PowerApps-miljø
 
-Integreringen mellom Talent- og PowerApps-miljøer gjør at du kan integrere og utvide bruken av Talent-data ved hjelp av PowerApps-verktøy. Å forstå formålet med PowerApps-miljøer vil ikke bare hjelpe deg med å lage apper for å utvide Talent, men kan også hjelpe deg med å velge det riktige miljøet ved klargjøring av Talent. For informasjon om PowerApps-miljøer, blant annet miljøomfang, miljøtilgang og opprettelse og valg av miljø, kan du se [Kunngjøre PowerApps-miljøer](https://powerapps.microsoft.com/en-us/blog/powerapps-environments/). 
+Integreringen mellom Talent- og PowerApps-miljøer gjør at du kan integrere og utvide bruken av Talent-data ved hjelp av PowerApps-verktøy. Å forstå formålet med PowerApps-miljøer vil ikke bare hjelpe deg med å lage apper for å utvide Talent, men kan også hjelpe deg med å velge det riktige miljøet ved klargjøring av Talent. For informasjon om PowerApps-miljøer, blant annet miljøomfang, miljøtilgang og opprettelse og valg av miljø, kan du se [Kunngjøre PowerApps-miljøer](https://powerapps.microsoft.com/blog/powerapps-environments/). 
 
 Bruk følgende retningslinjer når du skal avgjøre hvilket PowerApps-miljø Talent skal distribueres i: 
 
@@ -84,9 +84,9 @@ Bruk følgende retningslinjer når du skal avgjøre hvilket PowerApps-miljø Tal
    
     - **Testmiljøer** – Disse miljøene opprettes med en utløpsdato og utløper etter dette tidspunktet, noe som fører til at miljøet og eventuelle Talent-forekomster i miljøet fjernes automatisk.
    
-    - **Områder som ikke støttes** – Talent støttes for øyeblikket bare i følgende områder: USA, Europa, Storbriannia og Australia.
+    - **Områder som ikke støttes** – Talent støttes for øyeblikket bare i følgende områder: USA, Europa, Storbritannia, Australia, Canada og Asia.
   
 6. Når du har valgt det riktige miljøet som skal brukes, kan du fortsette med klargjøringsprosessen. 
  
 ## <a name="grant-access-to-the-environment"></a>Gi tilgang til miljøet
-Som standard har den globale administratoren som opprettet miljøet, tilgang til den. Flere brukere må imidlertid eksplisitt gis tilgang. For å gi tilgang må du legge til brukere og tilordne de riktige rollene til dem i Core HR-miljøet. Globale administratoren som distribuerte Talent, må også starte både Attract- og Onboard-programmene for å fullføre initialiseringen og aktivere tilgang for andre leierbrukere.  Før dette skjer, andre brukere vil ikke kunne få tilgang til Attract og Onboard og få tilgangsbruddfeil. Hvis du vil ha mer informasjon, se [Opprette nye brukere](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/create-new-users) og [Tilordne brukere til sikkerhetsroller](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/assign-users-security-roles). 
+Som standard har den globale administratoren som opprettet miljøet, tilgang til den. Flere brukere må imidlertid eksplisitt gis tilgang. For å gi tilgang må du legge til brukere og tilordne de riktige rollene til dem i Core HR-miljøet. Globale administratoren som distribuerte Talent, må også starte både Attract- og Onboard-programmene for å fullføre initialiseringen og aktivere tilgang for andre leierbrukere.  Før dette skjer, andre brukere vil ikke kunne få tilgang til Attract og Onboard og få tilgangsbruddfeil. Hvis du vil ha mer informasjon, se [Opprette nye brukere](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/create-new-users) og [Tilordne brukere til sikkerhetsroller](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/assign-users-security-roles). 

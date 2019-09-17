@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-07-02
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 32eb177da53ffa4cf8ecdc73a93e88f30778f69c
-ms.sourcegitcommit: a6b32be10b6eb6340f8f68261bf62d0202c03dd1
+ms.openlocfilehash: 7c474b0ba40db238db33cfa45ddde55cd0724a9b
+ms.sourcegitcommit: f5556189a80ad9f23f1af3333837eae034ddb247
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 07/05/2019
-ms.locfileid: "1729794"
+ms.lasthandoff: 07/29/2019
+ms.locfileid: "1791982"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-talent-july-02-2019"></a>Hva er nytt eller endret i Dynamics 365 for Talent (02. juli 2019)
 
@@ -37,13 +37,18 @@ Dette emnet beskriver funksjoner som enten er nye eller endret i Microsoft Dynam
 
 Du kan nå konfigurere e-postinnstillinger slik at e-postmeldinger til kandidater, intervjuere, rekrutterere og ansettelsesansvarlige sendes fra organisasjonens e-posttjenestekonto. Hvis du vil ha mer informasjon, kan du se [Koble til en e-posttjenestekonto](./attract-configure-email-settings.md#connect-an-email-service-account).
 
-#### <a name="offer-email-templates"></a>E-postmaler for tilbud 
+### <a name="offer-email-templates"></a>E-postmaler for tilbud 
 
 Du kan nå konfigurere organisasjonens e-postmal for alle stadier under klargjøring, godkjenning og akseptering av tilbud. Brukere kan enten bruke standardmalen eller tilpasse den før de sender e-post. Hvis du vil ha mer informasjon, kan du se [Konfigurere innstillinger for e-postmal](./attract-configure-email-settings.md#configure-email-template-settings).
 
 ### <a name="candidate-consent-on-application"></a>Kandidatsamtykke på søknad
 
 Du kan nå aktivere Kobling til vilkår og betingelser for organisasjonen. Når denne innstillingen er aktivert, må kandidater samtykke i vilkårene og betingelsene før de sender jobbsøknadene. 
+
+### <a name="coming-soon-in-attract"></a>Kommer snart i Attract
+#### <a name="job-approvals-appear-on-the-home-page"></a>Jobbgodkjenninger vises på startsiden
+
+Godkjenninger vises i en **Godkjenning**-del på instrumentbordet. Godkjennere kan se gjennom godkjenningene sine under **Tilordnet til deg**, som viser jobb-ID, jobbtittel, andre godkjennere og datoen da jobben ble tilordnet. Brukere som sender inn en jobb til godkjenning, kan se gjennom jobbene under **Forespurt av deg**, som viser godkjennerne som fortsatt må godkjenne den sendte jobben.
 
 ## <a name="changes-in-onboard"></a>Endringer i Onboard
 

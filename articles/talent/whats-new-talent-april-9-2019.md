@@ -10,7 +10,7 @@ ms.service: dynamics-365-talent
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: anbichse
 ms.search.scope: Talent
 ms.custom: ''
 ms.assetid: ''
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-04-09
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 25ef0d49c2600833aefa84d404e00c0c57cfbf52
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 4959f28e0768d43f90a664022c714a126c88e38d
+ms.sourcegitcommit: 1bf6a8b2f872394a4f242f9ff13c67e8e1ae8f65
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1518719"
+ms.lasthandoff: 08/03/2019
+ms.locfileid: "1856430"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-talent-april-9-2019"></a>Hva er nytt eller endret i Dynamics 365 for Talent (9. april 2019)?
 
@@ -37,10 +37,10 @@ Dette emnet beskriver funksjoner som enten er nye eller endret i Dynamics 365 fo
 Problemer som er logget av sluttbrukere som bruker rapporter-et-problem-funksjonen i Attract og Onboard, oppretter nå automatisk kundestøtteproblemer i kundens LCS-prosjekt. Administratorer kan deretter sortere problemene og sende dem til Microsoft når det er nødvendig. Dette er konsekvent med hvordan Core HR behandler kundestøtteproblemer for sluttbrukeren.
 
 ### <a name="relevance-search"></a>Relevanssøk
-I talentsamlinger kan du nå søke i hele kandidatdatabasen etter bestemt kompetanse, navn eller utdanningsbakgrunn. Du trenger ikke lenger å angi hvilken del av kandidatprofilen du vil søke gjennom. Attract søker i hele profilen og uthever alle treff som blir funnet. Attract søker også i alle dokumenter som er tilgjengelige for en kandidat, og rangerer søkeresultatene på en intelligent måte. I tillegg kan du filtrere resultatene etter kilde eller om de er innstilt som nummer to. Hvis du vil ha mer informasjon, se [Søke etter og vise kandidatprofiler](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/attract-talent-pools#search-and-view-candidate-profiles).
+I talentsamlinger kan du nå søke i hele kandidatdatabasen etter bestemt kompetanse, navn eller utdanningsbakgrunn. Du trenger ikke lenger å angi hvilken del av kandidatprofilen du vil søke gjennom. Attract søker i hele profilen og uthever alle treff som blir funnet. Attract søker også i alle dokumenter som er tilgjengelige for en kandidat, og rangerer søkeresultatene på en intelligent måte. I tillegg kan du filtrere resultatene etter kilde eller om de er innstilt som nummer to. Hvis du vil ha mer informasjon, se [Søke etter og vise kandidatprofiler](https://docs.microsoft.com/dynamics365/unified-operations/talent/attract-talent-pools#search-and-view-candidate-profiles).
 
 ### <a name="prospect-recommendations"></a>Kandidatanbefalinger
-Attract kan kickstarte rekrutteringen til en jobb så snart du aktiverer den ved å foreta intelligente kandidatanbefalinger fra organisasjonens kandidatdatabasen. Anbefalingene inkluderer kompetanse- og utdanningsinformasjonen som ble identifisert under søking etter relevante kandidater. Disse anbefalingene vises i kategorien **Jobbkandidater** under en jobb hvis du aktiverer den under jobbansettelsesprosessen. Hvis du vil ha mer informasjon, kan du se [Kandidatanbefalinger](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/intelligent-recommendations#prospect-recommendations).
+Attract kan kickstarte rekrutteringen til en jobb så snart du aktiverer den ved å foreta intelligente kandidatanbefalinger fra organisasjonens kandidatdatabasen. Anbefalingene inkluderer kompetanse- og utdanningsinformasjonen som ble identifisert under søking etter relevante kandidater. Disse anbefalingene vises i kategorien **Jobbkandidater** under en jobb hvis du aktiverer den under jobbansettelsesprosessen. Hvis du vil ha mer informasjon, kan du se [Kandidatanbefalinger](https://docs.microsoft.com/dynamics365/unified-operations/talent/intelligent-recommendations#prospect-recommendations).
 
 ### <a name="interviewer-availability-statuses"></a>Tilgjengelighetsstatus for intervjuer
 Intervjuplanleggere vil snart kunne se **Fraværende, arbeider fra et annet sted**-statuser for intervjuerne, for å planlegge tider som kan fungere bedre for intervjuerne.

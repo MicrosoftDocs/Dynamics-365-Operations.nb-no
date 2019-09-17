@@ -3,7 +3,7 @@ title: Definere og administrere et fordelsprogram
 description: Personale inneholder et sett med verktøy som kan brukes til å definere og vedlikeholde fordeler, fradrag og arbeideres kompensasjonsplaner som en organisasjon tilbyr eller behandler for sine arbeidere. Denne artikkelen inneholder informasjon om hvordan du definerer og behandler fordeler.
 author: andreabichsel
 manager: AnnBe
-ms.date: 11/01/2017
+ms.date: 07/16/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-talent
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
-ms.openlocfilehash: 033377f7d45bfa2b798c098be2dde0c21739bb51
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 5c54e5fccd7ddc5f8f024e692bb46f4140134578
+ms.sourcegitcommit: 282f05635a7b933fe9bdda7a8187f322ed5ede17
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1518791"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "1755403"
 ---
 # <a name="define-and-manage-a-benefits-program"></a>Definere og administrere et fordelsprogram
 
@@ -39,6 +39,7 @@ Før arbeidere kan registreres i fordeler, må du opprette elementene i hver enk
 [![Prosessflyt for fordel](./media/benefit-process-flow1.png)](./media/benefit-process-flow1.png)
 
 ## <a name="benefit-elements"></a>Fordelselementer
+
 Før du begynner å opprette fordeler og registrer arbeidere i dem, må du definere elementene som utgjør en fordel: type, plan og alternativer.
 
 -   **Type** – En samling av planer for en bestemt fordel, for eksempel en medisinsk fordel eller en parkeringsfordel.

@@ -10,7 +10,7 @@ ms.service: dynamics-365-talent
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: anbichsew
+ms.reviewer: anbichse
 ms.search.scope: Talent, Core
 ms.custom: 7521
 ms.assetid: 3b953d5f-6325-4c9e-8b9b-6ab0458a73f8
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: 52790fbe500d9f55bc9cc86fba5d54f30b11e559
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 9360ac52bd53dc473ca61a424f3be933bcf357d1
+ms.sourcegitcommit: ef08bf1258aefb525d56bf85ef19311be26ab94c
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1505870"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "1795226"
 ---
 # <a name="extensibility-in-attract"></a>Utvidelsesmulighet i Attract
 
@@ -33,7 +33,7 @@ Microsoft Dynamics 365 for Talent er bygd på toppen av Common Data Service-plat
 
 ## <a name="extending-option-sets-in-attract"></a>Utvide alternativsett i Attract
 
-Et **Alternativsett** (plukkliste) er et type felt som kan inkluderes i en enhet. Det definerer et sett med alternativer. Når et alternativsett vises i et skjema, brukes en rullegardinlistekontroll.  I Attract finnes det flere felt som er alternativsett.  Vi introduserer muligheten til å utvide alternativsettene og begynner med Avslag-årsaksfeltet, Ansettelsestype-feltet og Ansiennitetstype-feltet.   Du kan også legge til lokaliserte visningsetiketter for alternativene du legger til. Hvis du vil ha mer informasjon, se [Tilpasse alternativsettetiketter](https://docs.microsoft.com/en-us/powerapps/developer/common-data-service/customize-labels-support-multiple-languages).
+Et **Alternativsett** (plukkliste) er et type felt som kan inkluderes i en enhet. Det definerer et sett med alternativer. Når et alternativsett vises i et skjema, brukes en rullegardinlistekontroll.  I Attract finnes det flere felt som er alternativsett.  Vi introduserer muligheten til å utvide alternativsettene og begynner med Avslag-årsaksfeltet, Ansettelsestype-feltet og Ansiennitetstype-feltet.   Du kan også legge til lokaliserte visningsetiketter for alternativene du legger til. Hvis du vil ha mer informasjon, se [Tilpasse alternativsettetiketter](https://docs.microsoft.com/powerapps/developer/common-data-service/customize-labels-support-multiple-languages).
 
 > [!NOTE]
 > Jobbposteringen til LinkedIn-funksjonaliteten krever bruk av feltet **Ansettelsestype** og **Ansiennitetstype** på siden **Jobbdetaljer**. Standardverdiene i disse feltene støttes av LinkedIn og vises når jobben posteres. Hvis du posterer jobber i LinkedIn og endrer de eksisterende alternativsettverdiene for disse feltene, vil jobben derfor fortsatt posteres, men LinkedIn vil ikke vise de egendefinerte **Ansettelsestype**- og **Ansiennitetstype**-verdiene.  
@@ -62,15 +62,15 @@ Fordi alle dataene fra Attract ligger i Common Data Service, kan du bruke verkt�
 
 Du kan bruke PowerApps til å opprette programmer som koble til Attract-dataene, og som bruker uttrykk som uttrykkene i Microsoft Excel, til å legge til logikk. Apper du lager med PowerApps, kan kjøre på Internett, og på Apple iOS og Google Android-enheter.
 
-Du kan for eksempel forenkle universitetsmesser for rekrutteringspersoner ved å bygge en enkel app som lar dem skanne CVer og legge kandidater til en stilling i Attract. Du kan også bygge en app som bidrar til å dekke organisasjonens samsvarsbehov. Hvis du vil ha mer informasjon om PowerApps og hvordan den brukes til å bygge apper, se [Integrere data i Common Data Service](https://docs.microsoft.com/en-us/powerapps).
+Du kan for eksempel forenkle universitetsmesser for rekrutteringspersoner ved å bygge en enkel app som lar dem skanne CVer og legge kandidater til en stilling i Attract. Du kan også bygge en app som bidrar til å dekke organisasjonens samsvarsbehov. Hvis du vil ha mer informasjon om PowerApps og hvordan den brukes til å bygge apper, se [Integrere data i Common Data Service](https://docs.microsoft.com/powerapps).
 
 ### <a name="microsoft-flow"></a>Microsoft Flow 
 
-Du kan bruke Microsoft Flow til å opprette automatisert arbeidsflyt som kjører på toppen av Attract-data. Du kan enkelt koble til hundrevis av populære apper og tjenester uten å måtte skrive kode. Ved å bygge flyter som samhandler med Attract-jobben, kandidaten og søknadsenheter i Common Data Service, kan du automatisere forskjellige handlinger. Når en kandidat for eksempel har godtatt et tilbud, kan en varsling sendes til et jobbintroduksjonsteam, eller nyhetene kan kunngjøres på Twitter. Hvis du vil ha mer informasjon om flyter, se [dokumentasjonen for Microsoft Flow](https://docs.microsoft.com/en-us/flow/).
+Du kan bruke Microsoft Flow til å opprette automatisert arbeidsflyt som kjører på toppen av Attract-data. Du kan enkelt koble til hundrevis av populære apper og tjenester uten å måtte skrive kode. Ved å bygge flyter som samhandler med Attract-jobben, kandidaten og søknadsenheter i Common Data Service, kan du automatisere forskjellige handlinger. Når en kandidat for eksempel har godtatt et tilbud, kan en varsling sendes til et jobbintroduksjonsteam, eller nyhetene kan kunngjøres på Twitter. Hvis du vil ha mer informasjon om flyter, se [dokumentasjonen for Microsoft Flow](https://docs.microsoft.com/flow/).
 
 ### <a name="power-bi"></a>Power BI
 
-Med Power BI kan du lage og vise egendefinerte rapporter og instrumentbord som gir deg større innsikt i Attract-dataene. Hvis du vil ha mer informasjon om Power BI og hvordan du kan bygge interaktive rapporter og instrumentbord, se [Power BI-dokumentasjonen](https://docs.microsoft.com/en-us/power-bi/).
+Med Power BI kan du lage og vise egendefinerte rapporter og instrumentbord som gir deg større innsikt i Attract-dataene. Hvis du vil ha mer informasjon om Power BI og hvordan du kan bygge interaktive rapporter og instrumentbord, se [Power BI-dokumentasjonen](https://docs.microsoft.com/power-bi/).
 
 ### <a name="custom-activities"></a>Egendefinert aktiviteter 
 
