@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-03-05
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: e4ad32ef71c87f52e59959d80c21ae7fcd6d6524
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: fe24846ab98a75d474df045a62a72bfc41c64866
+ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1518781"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "1741896"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-talent-march-5-2019"></a>Hva er nytt eller endret i Dynamics 365 for Talent (5. mars 2019)?
 
@@ -43,10 +43,10 @@ I Attract finnes det flere felt som er alternativsett i Common Data Service. Nye
 ## <a name="changes-in-onboarding"></a>Endringer i jobbintroduksjon
 
 ### <a name="private-preview-for-onboard-teams"></a>Privat forhåndsvisning for jobbintroduksjonsteam
-Du kan nå enkelt dele og samarbeide om maler på tvers av hele organisasjonen. Hvis du vil ha mer informasjon, se [Dele gode fremgangsmåter i hele organisasjonen ved hjelp av jobbintroduksjonsteam](https://docs.microsoft.com/en-us/business-applications-release-notes/April19/dynamics365-talent/onboard/share-best-practices-teams).
+Du kan nå enkelt dele og samarbeide om maler på tvers av hele organisasjonen. Hvis du vil ha mer informasjon, se [Dele gode fremgangsmåter i hele organisasjonen ved hjelp av jobbintroduksjonsteam](https://docs.microsoft.com/business-applications-release-notes/April19/dynamics365-talent/onboard/share-best-practices-teams).
 
 ### <a name="private-preview-for-assignee-placeholders"></a>Privat forhåndsvisning for tilordnetplassholdere
-Du kan berike malene ved å tilordne aktiviteter til roller i stedet for enkeltpersoner. Roller tilordnes deretter til enkeltpersoner ved oppretting av veiledningen. Hvis du vil ha mer informasjon, se [Strømlinjeforme veiledningsadministrasjon ved å tilordne aktiviteter til roller](https://docs.microsoft.com/en-us/business-applications-release-notes/April19/dynamics365-talent/onboard/assign-activities-roles).
+Du kan berike malene ved å tilordne aktiviteter til roller i stedet for enkeltpersoner. Roller tilordnes deretter til enkeltpersoner ved oppretting av veiledningen. Hvis du vil ha mer informasjon, se [Strømlinjeforme veiledningsadministrasjon ved å tilordne aktiviteter til roller](https://docs.microsoft.com/business-applications-release-notes/April19/dynamics365-talent/onboard/assign-activities-roles).
 
 ## <a name="changes-in-core-hr"></a>Endringer i Core HR
 **Build 8.1.2178**
@@ -71,7 +71,7 @@ Med denne endringen, når du ber om endringer i eksisterende stillinger, vil lø
 Andre mindre feilrettinger er inkludert i denne utgivelsen.
 
 ### <a name="upgrade-to-common-data-service"></a>Oppgradere til Common Data Service
-Tidsfrister for å oppgradere til Common Data Service nærmer deg raskt. Logg på PowerApps-administrasjonssenteret for å bestemme om databasen må oppgraderes. Hvis du vil ha mer informasjon om tidsfrister og de nødvendige trinnene for å oppgradere, kan du se [Oppgradere til Common Data Service](https://docs.microsoft.com/en-us/common-data-service/upgradecds/introduction-upgrade-cds).
+Tidsfrister for å oppgradere til Common Data Service nærmer deg raskt. Logg på PowerApps-administrasjonssenteret for å bestemme om databasen må oppgraderes. Hvis du vil ha mer informasjon om tidsfrister og de nødvendige trinnene for å oppgradere, kan du se [Oppgradere til Common Data Service](https://docs.microsoft.com/common-data-service/upgradecds/introduction-upgrade-cds).
 
 ## <a name="coming-soon"></a>Kommer snart
 
@@ -79,4 +79,4 @@ Tidsfrister for å oppgradere til Common Data Service nærmer deg raskt. Logg p�
 I mange organisasjoner har kompensasjons- og fordelsansvarlige bare tilgang til bestemte kompensasjonsposter, for eksempel poster for ledere eller regionsbaserte ansatte. Med denne endringen kan du administrere og vedlikeholde kompensasjonsplanene for ulike ansattgrupper i organisasjonen. Faste og variable planer kan tilordnes til sikkerhetsroller, som bestemmer tilgangen til planene og ansattdataene som er knyttet til dem, for eksempel lønns- eller bonusposter. Bare rollene som har den rette tilgangen, vil kunne behandle kompensasjon for disse ansatte.
 
 ###  <a name="platform-update-24"></a>Plattform update 24
-Hvis du vil ha mer informasjon om Plattformoppdatering 24, kan du se [Hva er nytt eller endret i Finance and Operations Plattformoppdatering 24 (mars 2019)](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-24).
+Hvis du vil ha mer informasjon om Plattformoppdatering 24, kan du se [Hva er nytt eller endret i Finance and Operations Plattformoppdatering 24 (mars 2019)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-24).

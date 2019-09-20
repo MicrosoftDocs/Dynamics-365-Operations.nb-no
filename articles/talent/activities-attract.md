@@ -1,9 +1,9 @@
 ---
-title: Aktiviteter i prosessene
-description: Dette emnet gir informasjon om forskjellige typer aktiviteter som kan brukes i ansettelsesprosessen.
+title: Aktiviteter i prosessene i Microsoft Dynamics 365 for Talent - Attract
+description: Dette emnet gir informasjon om forskjellige typer aktiviteter som kan brukes i ansettelsesprosessen i Microsoft Dynamics 365 for Talent - Attract.
 author: hasrivas
 manager: AnnBe
-ms.date: 04/10/2019
+ms.date: 05/28/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-talent
@@ -18,14 +18,14 @@ ms.search.region: Global
 ms.author: shielas
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: c975b95e4195c795ec4c816b1f3a50461715feea
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 4d52f3a384ad2a54986d1bd23baeefbaae30c9e2
+ms.sourcegitcommit: 7c49475402632069685df714546770d30804af7f
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1518780"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "1739727"
 ---
-# <a name="activities-in-the-hiring-processes"></a>Aktiviteter i ansettelsesprosessene
+# <a name="activities-in-hiring-processes"></a>Aktiviteter i ansettelsesprosesser
 
 [!include[banner](../includes/banner.md)]
 
@@ -37,6 +37,9 @@ Aktiviteter kan legges til som en del av ansettelsesprosessen i Microsoft Dynami
 ## <a name="prospect-activity"></a>Kundeemneaktivitet
 
 Kundeemneaktiviteten styrer om kundeemner kan legges til en jobb. Kundeemner kan legges til en jobb som standard. Hvis du vil deaktivere aktiviteten for kundeemnet, kan du angi alternativet **Aktiverer kandidater** til **Av**. Når aktiviteten for kundeemnet er aktivert, kan ansettelsesansvarlige legge til og vise kundeemner, og **Kundeemne**-kategorien vises for jobben.
+
+> [!NOTE]
+> Hvis du vil la kandidater legge til en jobb fra LinkedIn, må du sette alternativet **Aktiver kandidater** til **På**.
 
 ## <a name="application-activity"></a>Søknadsaktivitet
 

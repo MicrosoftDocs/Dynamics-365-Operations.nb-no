@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2019-01-22
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: d5a2c61fc21578d1db4c1bf0c3dfaf0c7a93298c
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: a9c2324321baf0a313b8b7aa9701909336b5c34b
+ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1518736"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "1742755"
 ---
 # <a name="azure-active-directory-users-not-found-in-people-picker"></a>Fant ikke Azure Active Directory-brukere i Personvelger
 
@@ -36,9 +36,9 @@ Noen gyldige brukere i Microsoft Azure Active Directory (Azure AD) for leier vis
 
 Visse brukertyper støttes ikke i Attract- og Onboard-programmene. Kontroller at brukeren ikke er en Azure AD B2B-gjestebruker (bedrift til bedrift). "Brukertype"-informasjon finnes i Azure Active Directory-bladet på Azure-portalen.
 
-Hvis du vil ha mer informasjon om Azure B2B, se [Hva er gjestebrukertilgang i Azure Active Directory B2B](https://docs.microsoft.com/en-us/azure/active-directory/b2b/what-is-b2b).
+Hvis du vil ha mer informasjon om Azure B2B, se [Hva er gjestebrukertilgang i Azure Active Directory B2B](https://docs.microsoft.com/azure/active-directory/b2b/what-is-b2b).
 
-For ikke-B2B-brukere er det enkelte brukere som kan ha en ufullstendig "Brukertype"-egenskap i **Bruker**-objektet. Dette kan bekreftes og løses ved hjelp av Azure AD Powershell-modulen. Hvis du vil ha mer informasjon, kan du se [Azure AD](https://docs.microsoft.com/en-us/powershell/module/azuread/?view=azureadps-2.0).
+For ikke-B2B-brukere er det enkelte brukere som kan ha en ufullstendig "Brukertype"-egenskap i **Bruker**-objektet. Dette kan bekreftes og løses ved hjelp av Azure AD Powershell-modulen. Hvis du vil ha mer informasjon, kan du se [Azure AD](https://docs.microsoft.com/powershell/module/azuread/?view=azureadps-2.0).
 
 ## <a name="resolution"></a>Oppløsning
 

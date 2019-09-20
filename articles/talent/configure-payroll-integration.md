@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 59234ef44ad22383ae5daf71d4b663c6183e6c05
-ms.sourcegitcommit: d599bc1fc60a010c2753ca547219ae21456b1df9
+ms.openlocfilehash: c26dfed9909b0dbd05fc18c206e5adc947feaef5
+ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/25/2019
-ms.locfileid: "1702824"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "1742923"
 ---
 # <a name="configure-the-payroll-integration-between-talent-and-dayforce"></a>Konfigurere lønnsintegrering mellom Talent og Dayforce
 
@@ -52,8 +52,8 @@ Når integreringen er slått på, opprettes dataeksportpakken og -filene, og fre
 
 Hvis du vil ha mer informasjon om Azure Storage-kontoer og Azure Storage-tilkoblingsstrenger, kan du se følgende Azure-emner:
 
-- [Om Azure Storage-kontoer](https://docs.microsoft.com/en-us/azure/storage/common/storage-create-storage-account?toc=%2fazure%2fstorage%2ffiles%2ftoc.json)
-- [Konfigurere Azure Storage-tilkoblingsstrenger](https://docs.microsoft.com/en-us/azure/storage/common/storage-configure-connection-string)
+- [Om Azure Storage-kontoer](https://docs.microsoft.com/azure/storage/common/storage-create-storage-account?toc=%2fazure%2fstorage%2ffiles%2ftoc.json)
+- [Konfigurere Azure Storage-tilkoblingsstrenger](https://docs.microsoft.com/azure/storage/common/storage-configure-connection-string)
 
 ### <a name="technical-details-when-payroll-integration-is-enabled"></a>Tekniske detaljer når lønnsintegrasjon er aktivert
 
@@ -123,10 +123,10 @@ Dayforce oppretter følgende fradrag, basert på lønnsinnvirkning som er define
 
 Hvis du vil ha mer informasjon om hvordan du definerer og administrerer et program for fordeler, kan du se følgende emner:
 
-- [Levere et program for ansattfordeler](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/hr/tasks/deliver-employee-benefits-program)
-- [Opprette en ny fordel](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/hr/tasks/create-new-benefit)
-- [Definere rettighetsregler og policyer for fordel](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/hr/tasks/define-benefit-eligibility-rules-policies)
-- [Registrere og fjerne fordeler fra arbeidere](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/hr/tasks/enroll-remove-benefits-workers)
+- [Levere et program for ansattfordeler](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/hr/tasks/deliver-employee-benefits-program)
+- [Opprette en ny fordel](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/hr/tasks/create-new-benefit)
+- [Definere rettighetsregler og policyer for fordel](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/hr/tasks/define-benefit-eligibility-rules-policies)
+- [Registrere og fjerne fordeler fra arbeidere](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/hr/tasks/enroll-remove-benefits-workers)
 
 #### <a name="compensation"></a>Kompensasjon 
 
@@ -136,20 +136,20 @@ Dayforce bruker kompensasjonsinformasjon til å beregne timesats eller årlig sa
 
 Hvis du vil ha mer informasjon om kompensasjonsplaner, kan du se følgende emner:
 
-- [Opprette planer for fast kompensasjon](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/create-fixed-compensation-plans)
-- [Opprette variable kompensasjonsplaner](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/create-variable-compensation-plans)
-- [Utvikle struktur og planer for lønn/kompensasjon](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/hr/tasks/develop-salary-compensation-structure-plan)
-- [Behandle kompensasjon](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/process-compensation)
-- [Definere kompensasjonsprosess og beregne resultater](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/hr/tasks/define-compensation-process-calculate-results)
-- [Registrere en ansatt i en fast kompensasjonsplan](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/hr/tasks/enroll-employee-fixed-compensation-plan)
-- [Registrere en ansatt i en variabel kompensasjonsplan](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/hr/tasks/enroll-employee-variable-compensation-plan)
+- [Opprette planer for fast kompensasjon](https://docs.microsoft.com/dynamics365/unified-operations/talent/create-fixed-compensation-plans)
+- [Opprette variable kompensasjonsplaner](https://docs.microsoft.com/dynamics365/unified-operations/talent/create-variable-compensation-plans)
+- [Utvikle struktur og planer for lønn/kompensasjon](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/hr/tasks/develop-salary-compensation-structure-plan)
+- [Behandle kompensasjon](https://docs.microsoft.com/dynamics365/unified-operations/talent/process-compensation)
+- [Definere kompensasjonsprosess og beregne resultater](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/hr/tasks/define-compensation-process-calculate-results)
+- [Registrere en ansatt i en fast kompensasjonsplan](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/hr/tasks/enroll-employee-fixed-compensation-plan)
+- [Registrere en ansatt i en variabel kompensasjonsplan](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/hr/tasks/enroll-employee-variable-compensation-plan)
 
 #### <a name="jobs"></a>Jobber 
 
 En jobb er en samling oppgaver og ansvarsområder som kreves av en person som utfører en jobb. Hvis du vil ha mer informasjon, se følgende emner:
 
-- [Definere komponentene for en jobb](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/create-job)
-- [Definere nye jobber](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/hr/tasks/define-new-jobs)
+- [Definere komponentene for en jobb](https://docs.microsoft.com/dynamics365/unified-operations/talent/create-job)
+- [Definere nye jobber](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/hr/tasks/define-new-jobs)
 
 ##### <a name="positions"></a>Stillinger
 
@@ -173,8 +173,8 @@ Hvis flere stillinger i samme avdeling er knyttet til den samme jobben, konsolid
 
 Hvis du vil ha mer informasjon, se følgende emner:
 
-- [Organisere arbeidsstyrken ved bruk av avdelinger, jobber og stillinger](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/departments-jobs-positions#positions)
-- [Definere stillinger](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/hr/tasks/set-up-positions)
+- [Organisere arbeidsstyrken ved bruk av avdelinger, jobber og stillinger](https://docs.microsoft.com/dynamics365/unified-operations/talent/departments-jobs-positions#positions)
+- [Definere stillinger](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/hr/tasks/set-up-positions)
 
 #### <a name="departments"></a>Avdelinger
 
@@ -182,8 +182,8 @@ En avdeling er en driftsenhet som representerer en kategori eller et funksjonsom
 
 Hvis du vil ha mer informasjon, se følgende emner:
 
-- [Opprette en avdeling og knytte den til avdelingshierarkiet](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/create-department-add-department-hierarchy)
-- [Definere nye avdelinger](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/hr/tasks/define-new-departments)
+- [Opprette en avdeling og knytte den til avdelingshierarkiet](https://docs.microsoft.com/dynamics365/unified-operations/talent/create-department-add-department-hierarchy)
+- [Definere nye avdelinger](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/hr/tasks/define-new-departments)
 
 #### <a name="pay-cycles-and-pay-periods"></a>Lønnssykluser og lønnsperioder
 

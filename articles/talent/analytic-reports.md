@@ -1,6 +1,6 @@
 ---
-title: Bruke analyserapporter for å få innsikt i ansettelsesprosesser
-description: Dette emnet beskriver analyserapportene i Attract
+title: Bruke analyserapporter i Microsoft Dynamics 365 for Talent - Attract
+description: Dette emnet beskriver analyserapportene for å få innsikt i ansettelsesprosesser i Microsoft Dynamics 365 for Talent - Attract
 author: fewatson
 manager: AnnBe
 ms.date: 04/30/2019
@@ -19,14 +19,14 @@ ms.search.industry: ''
 ms.author: fewatson
 ms.search.validFrom: 2019-04-30
 ms.dyn365.ops.version: Talent April 2019 update
-ms.openlocfilehash: 33ed6072a9ad99144fb96ad19389a57461324f71
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: f69c45e885d789d05a081064f30ccd6ce6bfec52
+ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1516566"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "1742895"
 ---
-# <a name="use-analytic-reports-for-hiring-process-insights"></a>Bruke analyserapporter for å få innsikt i ansettelsesprosesser
+# <a name="use-analytic-reports"></a>Bruke analyserapporter
 
 Analyserapporter i Attract har en standardløsning for å få innsikt i ansettelsesprosesser. Tilgjengelige funksjoner omfatter:
 
@@ -81,8 +81,8 @@ Jobbanalyse-rapporter viser data for den valgte jobben. Analysehub-rapporter sam
 
 ## <a name="cross-filter"></a>Kryssfilter
 
-En av de flotte funksjonene i Power BI er måten alle visuelle effekter på en rapportside er sammenkoblet på. Hvis du velger et datapunkt i en av de visuelle effektene, endres alle de andre visuelle effektene på siden som inneholder disse dataene, basert på det merkede området. Finn ut mer og se et eksempel i [Hvordan visuelle effekter kryssfiltrerer hverandre i en Power BI-rapport](https://docs.microsoft.com/en-us/power-bi/consumer/end-user-interactions).
+En av de flotte funksjonene i Power BI er måten alle visuelle effekter på en rapportside er sammenkoblet på. Hvis du velger et datapunkt i en av de visuelle effektene, endres alle de andre visuelle effektene på siden som inneholder disse dataene, basert på det merkede området. Finn ut mer og se et eksempel i [Hvordan visuelle effekter kryssfiltrerer hverandre i en Power BI-rapport](https://docs.microsoft.com/power-bi/consumer/end-user-interactions).
 
 ## <a name="export-to-excel"></a>Eksporter til Excel
 
-Hvis du vil vise rapportdata i Excel, kan du klikke på Alternativer-menyen (tre prikker) i en visuell effekt og velge **Eksporter underliggende data**. Eksporterte data eksporteres som filtrert, og brukertillatelser i Attract respekteres. Hvis du vil ha mer informasjon, kan du se [Eksportere data fra visuelle effekter](https://docs.microsoft.com/en-us/power-bi/visuals/power-bi-visualization-export-data).
+Hvis du vil vise rapportdata i Excel, kan du klikke på Alternativer-menyen (tre prikker) i en visuell effekt og velge **Eksporter underliggende data**. Eksporterte data eksporteres som filtrert, og brukertillatelser i Attract respekteres. Hvis du vil ha mer informasjon, kan du se [Eksportere data fra visuelle effekter](https://docs.microsoft.com/power-bi/visuals/power-bi-visualization-export-data).

@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-11-02
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: e3b20e1d0a873c32b8f6f5e28f786febf62db355
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 7c0dcdd7e2f407267cf99906b4d0b317858710af
+ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1518792"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "1742825"
 ---
 # <a name="embed-powerapps-apps-in-core-hr"></a>Bygge inn PowerApps-apper i Core HR
 
@@ -40,7 +40,7 @@ Brukergrensesnittutformingen (UI) er endret, og Microsoft PowerApps er nå inklu
 
 Måten PowerApps-programmer er innebygget på, er endret. PowerApps-programmer legges nå til via tilpasningsmodellen. Du kan legge til PowerApps-programmer på nesten alle sider i Microsoft Dynamics 365 for Talent.
 
-Hvis du vil ha mer informasjon om hvordan du bygger inn PowerApps-apper i Talent, kan du se  [Bygge inn PowerApps-apper](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/embed-power-apps).
+Hvis du vil ha mer informasjon om hvordan du bygger inn PowerApps-apper i Talent, kan du se  [Bygge inn PowerApps-apper](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/embed-power-apps).
 
 PowerApps-kunder som bygde inn apper før endringen, skal ha blitt oppgradert til den nye modellen.
 

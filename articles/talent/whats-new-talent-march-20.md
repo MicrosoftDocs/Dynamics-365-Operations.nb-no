@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-03-20
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: d69294b64c841c5486d694b129cf6c0f26fd93fd
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: d316aff83bd9f60f054a970e223777db5e214adb
+ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1518756"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "1741642"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-talent-march-20-2019"></a>Hva er nytt eller endret i Dynamics 365 for Talent (20. mars 2019)?
 
@@ -46,7 +46,7 @@ Hvis en kandidat har glemt den sosiale legitimasjonen de brukte til å søke ett
 Et problem er løst der eksterne kandidater kunne se navnet på rekrutteringspersonen eller ansettelseslederen for en jobb. Bare interne kandidater kan nå se ansettelsesteammedlemmene for en jobb. Det er også enklere for interne kandidater å vise og søke på bare interne jobber. Når en kandidat prøver å få tilgang til koblingen for å vise eller søke på en intern jobb, må de godkjennes ved hjelp av Azure Active Directory-legitimasjon. Interne kandidater har også muligheten til å kontakte ansettelsesteammedlemmene for å uttrykke interesse for eller finne ut mer om jobben. Denne funksjonen er tilgjengelig for alle jobber for bare interne kandidater. Hvis du vil ha mer informasjon, se [Karriereområde-funksjonalitet i Attract](./career-site.md).
 
 ### <a name="designate-silver-medalists-to-assign-high-value-applicants-for-future-positions"></a>Registrere personer som er innstilt som nummer to, for å tilordne søkere med høy verdi til fremtidige stillinger
-Rekrutteringspersoner og -ledere vedlikeholder ofte en løpende liste over søkere som passer godt for stillingen, men som ikke kunne få et tilbud om jobb, fordi stillingen allerede var besatt. Slike søkere, som er innstilt som nummer to, er verdifulle fordi de kan bidra til å redusere tiden det tar å ansette neste gang en lignende stilling lyses ut. I Attract er det nå mulig for rekrutteringspersoner og -lederne å angi personer som er innstilt som nummer to på søkerlisten, hvis søkeren har avansert til tilbudsstadiet. Angivelsen av personer som er innstilt som nummer to, vil vises i søkerlisten for jobben, men også i talentsamlingsvisningen når disse søkerne er medlemmer av samlingene til bemanningskonsulenter eller -ledere. I tillegg vises angivelsen i loggen for jobben, som en del av talentsamlingsprofilen for en kandidat. Du kan forhåndsvise denne funksjonen ved at en administrator aktiverer den ved hjelp av [funksjonsbehandling i administrasjonssenteret](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/access-preview-feature).
+Rekrutteringspersoner og -ledere vedlikeholder ofte en løpende liste over søkere som passer godt for stillingen, men som ikke kunne få et tilbud om jobb, fordi stillingen allerede var besatt. Slike søkere, som er innstilt som nummer to, er verdifulle fordi de kan bidra til å redusere tiden det tar å ansette neste gang en lignende stilling lyses ut. I Attract er det nå mulig for rekrutteringspersoner og -lederne å angi personer som er innstilt som nummer to på søkerlisten, hvis søkeren har avansert til tilbudsstadiet. Angivelsen av personer som er innstilt som nummer to, vil vises i søkerlisten for jobben, men også i talentsamlingsvisningen når disse søkerne er medlemmer av samlingene til bemanningskonsulenter eller -ledere. I tillegg vises angivelsen i loggen for jobben, som en del av talentsamlingsprofilen for en kandidat. Du kan forhåndsvise denne funksjonen ved at en administrator aktiverer den ved hjelp av [funksjonsbehandling i administrasjonssenteret](https://docs.microsoft.com/dynamics365/unified-operations/talent/access-preview-feature).
 
 ### <a name="add-applicants-to-talent-pools"></a>Legge til søkere i talentsamlinger
 Nå er det enklere å legge til søkere i talentsamlinger ved å vise en ny handling i søkerlisten. Ved å velge ikonet **Legg til i talentsamling** kan bemanningskonsulenten eller -lederen velge fra listen over talentsamlinger og enkelt legge til søkere i talentsamlinger rett fra søkerlisten for en jobb.
@@ -58,7 +58,7 @@ Basert på tilbakemeldinger fra kunder kan rekrutteringspersoner nå konfigurere
 Kandidater som allerede har en oppdatert profil på LinkedIn, kan søke på jobber med ett enkelt klikk ved hjelp av denne profilen.
 
 ### <a name="track-how-a-candidate-profile-originated-in-the-system-and-where-your-applicants-discover-the-jobs-they-applied-for"></a>Spore hvor en kandidatprofil kommer fra i systemet, og hvor søkerne fant jobbene de søkte på
-Du kan nå finne ut hvor profilen til en bestemt kandidat kommer fra i Attract ved å se på profilkilden under kandidatdetaljene på **Profil**-siden for en søknads- eller talentsamlingsprofil. På samme måte kan du finne ut hvordan en søker oppdaget jobben, ved å se på søknadskilden i **Søknadsaktivitet** i aktivitetsfeeden for søknaden. Denne informasjonen er også tilgjengelig i loggen for jobben i talentsamlingsprofilen. Når rekrutteringspersoner eller -ledere legger til kandidater manuelt, vil de også bli bedt om å angi søknadskilden eller kandidatprofilen. Når en kandidat søker for første gang, blir profilkilden den samme som opprinnelsen til søknaden. Du kan forhåndsvise denne funksjonen ved at en administrator aktiverer den ved hjelp av [funksjonsbehandling i administrasjonssenteret](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/access-preview-feature). Legg merke til at eksisterende kandidater og søkere ikke har noen kildeinformasjon. Rekrutteringspersoner kan imidlertid legge til disse opplysningene manuelt.
+Du kan nå finne ut hvor profilen til en bestemt kandidat kommer fra i Attract ved å se på profilkilden under kandidatdetaljene på **Profil**-siden for en søknads- eller talentsamlingsprofil. På samme måte kan du finne ut hvordan en søker oppdaget jobben, ved å se på søknadskilden i **Søknadsaktivitet** i aktivitetsfeeden for søknaden. Denne informasjonen er også tilgjengelig i loggen for jobben i talentsamlingsprofilen. Når rekrutteringspersoner eller -ledere legger til kandidater manuelt, vil de også bli bedt om å angi søknadskilden eller kandidatprofilen. Når en kandidat søker for første gang, blir profilkilden den samme som opprinnelsen til søknaden. Du kan forhåndsvise denne funksjonen ved at en administrator aktiverer den ved hjelp av [funksjonsbehandling i administrasjonssenteret](https://docs.microsoft.com/dynamics365/unified-operations/talent/access-preview-feature). Legg merke til at eksisterende kandidater og søkere ikke har noen kildeinformasjon. Rekrutteringspersoner kan imidlertid legge til disse opplysningene manuelt.
 
 ## <a name="changes-in-onboard"></a>Endringer i Onboard
 

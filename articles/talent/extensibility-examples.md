@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: negudava
 ms.search.validFrom: 2019-03-04
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: a9ebfd1f2621b8ad65d7623c37b6851cc0b5cb54
-ms.sourcegitcommit: ffc37f7c2a63bada3055f37856a30424040bc9a3
+ms.openlocfilehash: 0b455a8194f58b41a349f004ceda8183c7ee3f7c
+ms.sourcegitcommit: 9f94eff93d29bc27352569824e00bbccc2f961b8
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "1577801"
+ms.lasthandoff: 07/22/2019
+ms.locfileid: "1781448"
 ---
 # <a name="extend-talent-by-using-powerapps-and-microsoft-flow---example-scenarios"></a>Utvide Talent ved hjelp av PowerApps og Microsoft Flow – eksempelscenarier
 
@@ -101,24 +101,15 @@ Denne malen kan utvides, slik at den kan brukes på alle scenarioer som involver
 
 For å laste ned **Flyt – SharePoint-integrering**-malen, gå til [Flyt – SharePoint-integrering](https://go.microsoft.com/fwlink/?linkid=2082109) på Microsoft Download Center.
 
-## <a name="admin-console-to-manage-talent-pools"></a>Administrasjonskonsoll for å administrere talentsamlinger
+## <a name="referral-app"></a>Henvisning-appen
+Du kan bruke henvisningsappen for å legge til kandidater i en delt talentsamling. Henviseren kan angi **fornavn**, **etternavn** **e-post** og **URL-adresse til LinkedIn** når en kandidat sendes inn. Metadataene for kandidatkilden fylles deretter ut med henviserens informasjon.
 
-Når du aktiverer integrering med LinkedIn, oppretter Attract automatisk en LinkedIn-talentsamling. Når en rekrutterer utveksler InMail med en rekrutt via LinkedIn, oppretter Attract en profil for rekrutten, og rekrutten blir medlem av LinkedIn-talentsamlingen. Denne PowerApps-appen er nyttig for omorganisering av kandidater i talentsamlinger på basis av kompetanse.
+Du kan bygge inn denne appen i Employee Self-Service (ESS) for innsending av henvisninger, eller du kan bruke den som en hyperkobling i firmaportalen og kjøre som en frittstående app.
 
-Kjør denne PowerApps-appen som administrasjonskonsoll for å utføre følgende oppgaver:
-
-- Angi kandidater i en talentsamling
-- Legge til og fjerne kandidater fra en talentsamling
-- Flytte kandidater fra én talentsamling til en annen
-- Finne ut om kandidater allerede er del av en talentsamling før du flytter dem
-- Kontrollere kompetansen til kandidater før du flytter dem til andre talentsamlinger
-
-Denne PowerApps-appen bruker mange-til-mange-relasjoner, slik at du kan bruke den som en mal for andre scenarier der du må trekke ut poster som har mange-til-mange-relasjoner.
-
-Hvis du vil laste ned malen **Administrasjonskonsoll for å administrere talentsamlinger**, går du til [Administrasjonskonsoll for å administrere talentsamlinger](https://www.microsoft.com/downloads/details.aspx?FamilyID=780a5eee-0e2a-4159-9a83-009f9ccdc469) på Microsoft Download Center.
+Hvis du vil laste ned **henvisningsappen**, går du til [Dynamics 365 for Talent-utvidelsesløsning: Henvisningsapp](http://www.microsoft.com/downloads/details.aspx?FamilyID=9a59c9d1-f8a1-4d4d-b768-cfc4f4eb9d0d) på Microsoft Download Center. Du kan importere denne appen og tilpasse den for å legge til flere funksjoner.
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 
 [Microsoft Power Platform](https://docs.microsoft.com/power-platform/admin/admin-documentation)
 
-[Overføre app mellom leiere og miljøer](https://docs.microsoft.com/en-us/power-platform/admin/environment-and-tenant-migration)
+[Overføre app mellom leiere og miljøer](https://docs.microsoft.com/power-platform/admin/environment-and-tenant-migration)

@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-11-02
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 7e00a6e4fc01f72e1ef2347e08754997135215ed
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 8e7348a515b08523c15aa8f74d5616a3daf645b7
+ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1518762"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "1741804"
 ---
 # <a name="reporting-options-in-talent"></a>Rapporteringsalternativer i Talent
 
@@ -42,7 +42,7 @@ Brukeren kan ikke tilpasse de innebygde Microsoft Power BI-rapportene.
 
 **Løsning**
 
-- Core HR-dataene som flyter til Common Data Service, kan rapporteres via PowerApps Common Data Service-koblingen til Power BI Desktop. Legg merke til at Common Data Service inneholder et delsett med Core HR-data. Hvis du vil ha mer informasjon om Power BI og instrumentbord, kan du se [Opprette Power BI-rapporter og -instrumentbord med PowerApps Common Data Service](https://powerapps.microsoft.com/en-us/blog/cdsconnectortopowerbi).
+- Core HR-dataene som flyter til Common Data Service, kan rapporteres via PowerApps Common Data Service-koblingen til Power BI Desktop. Legg merke til at Common Data Service inneholder et delsett med Core HR-data. Hvis du vil ha mer informasjon om Power BI og instrumentbord, kan du se [Opprette Power BI-rapporter og -instrumentbord med PowerApps Common Data Service](https://powerapps.microsoft.com/blog/cdsconnectortopowerbi).
 - Elektronisk rapportering (ER) er tilgjengelig for noen av rapportene i Talent. Kundedrevne tilpasninger kan gjøres via ER-konfigurasjonsalternativene.
 - Data kan eksporteres til Microsoft Excel eller Microsoft Word ved hjelp av ulike dataenheter som leveres av Talent via Microsoft Office-integreringen.
 

@@ -1,6 +1,6 @@
 ---
-title: Administratorinnstillinger i Attract
-description: Dette emnet forklarer hvordan du aktiverer funksjonalitet for organisasjoner og brukere i Attract.
+title: Konfigurere firmainformasjon i Microsoft Dynamics 365 for Talent - Attract
+description: Dette emnet forklarer hvordan du konfigurerer firmainformasjon og varemerking for Microsoft Dynamics 365 for Talent - Attract.
 author: andreabichsel
 manager: AnnBe
 ms.date: 12/07/2018
@@ -18,14 +18,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: 0de215103306ef7115ba390b1b4855179979c77b
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: c5b051497777a01ab304736f1d454391b5d98e63
+ms.sourcegitcommit: 7c49475402632069685df714546770d30804af7f
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1518783"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "1739570"
 ---
-# <a name="admin-settings-in-attract"></a>Administratorinnstillinger i Attract
+# <a name="configure-company-information"></a>Konfigurere firmainformasjon
 [!include[banner](../includes/banner.md)]
 
 Administrasjonssenteret i Microsoft Dynamics 365 for Talent: Attract inneholder konfigurasjonsinnstillinger, integrasjonsalternativer og oppsettalternativer for Attract-programmet.
@@ -36,7 +36,7 @@ Angi et visningsnavn for firmaet, og legg til en firmalogo. Visningsnavnet og lo
 
 ## <a name="linkedin-integration"></a>LinkedIn-integrering
 
-Sett opp integrering med LinkedIn Recruiter System Connect .(RSC). Når du kobler til LinkedIn med påloggingsinformasjonen for LinkedIn, kan du synkronisere en kandidats LinkedIn-profil, søknader, intervjutilbakemelding og merknader fra ansettelsesteam. Det kreves en full LinkedIn-rekrutterer-lisens. Hvis du vil ha mer informasjon om LinkedIn Recruiter, se [Tilkobling til rekrutterersystem (RSC) – vanlige spørsmål](https://www.linkedin.com/help/recruiter/answer/90483).
+Sett opp integrering med LinkedIn Recruiter System Connect.(RSC). Når du kobler til LinkedIn med påloggingsinformasjonen for LinkedIn, kan du synkronisere en kandidats LinkedIn-profil, søknader, intervjutilbakemelding og merknader fra ansettelsesteam. Det kreves en full LinkedIn-rekrutterer-lisens. Hvis du vil ha mer informasjon om LinkedIn Recruiter, se [Tilkobling til rekrutterersystem (RSC) – vanlige spørsmål](https://www.linkedin.com/help/recruiter/answer/90483).
 
 ## <a name="user-permissions"></a>Brukerrettigheter
 

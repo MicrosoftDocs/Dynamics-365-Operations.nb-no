@@ -1,6 +1,6 @@
 ---
-title: Karriereområde-funksjonalitet i Attract
-description: Dette emnet gir en oversikt over den kandidatrettede karriereområde-funksjonaliteten i Attract.
+title: Konfigurere karriereområdet i Microsoft Dynamics 365 for Talent - Attract
+description: Dette emnet gir en oversikt over den kandidatrettede karriereområde-funksjonaliteten i Microsoft Dynamics 365 for Talent - Attract.
 author: hasrivas
 manager: AnnBe
 ms.date: 03/20/2019
@@ -18,14 +18,14 @@ ms.search.region: Global
 ms.author: hasrivas
 ms.search.validFrom: 2019-02-12
 ms.dyn365.ops.version: AX 7.1.0, Talent April 2018 update
-ms.openlocfilehash: e51fb00536884d2b3815c05a0968714d8b9326f2
-ms.sourcegitcommit: a6b32be10b6eb6340f8f68261bf62d0202c03dd1
+ms.openlocfilehash: 32fb5e0c00b80653cf32f37a21f94aa448a20191
+ms.sourcegitcommit: 7c49475402632069685df714546770d30804af7f
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 07/05/2019
-ms.locfileid: "1729709"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "1739777"
 ---
-# <a name="career-site-functionality-in-attract"></a>Karriereområde-funksjonalitet i Attract
+# <a name="set-up-your-career-site"></a>Konfigurere karriereområdet
 
 [!include[banner](../includes/banner.md)]
 
@@ -131,7 +131,7 @@ Du kan gjøre det lettere for kandidater å søke på stillingene dine ved å ko
 1. Logge på Attract som en administrator.
 2. Velg **Innstillinger**-knappen (tannhjulsymbolet) i øvre høyre hjørne på siden, og velg deretter **Administrasjonssenter**.
 3. Velg **LinkedIn-integrering**-kategorien, og koble til med en LinkedIn Recruiter-konto.
-4. I **LinkedIn Recruiter System Connect -integrering**-delen velger du **Aktivert** for **Bruk med LinkedIn**-innstillingen.
+4. I **LinkedIn Recruiter System Connect-integrering**-delen velger du **Aktivert** for **Bruk med LinkedIn**-innstillingen.
 
 Når du har aktivert innstillingen, kan kandidater søke ved hjelp av eksisterende LinkedIn-profildata. Når kandidater søker ved å velge **Søk med LinkedIn**-knappen, blir de bedt om å legitimere seg med LinkedIn hvis de ikke allerede er logget på. Etter at de er godkjent, erstatter LinkedIn-profilen eksisterende profildata som vises på søknadssiden. Kandidater kan redigere informasjonen etter behov og deretter sende søknaden. Hvis en kandidat går bort fra siden uten å søke på prosjektet, oppdateres ikke profildataene i Attract.
 

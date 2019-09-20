@@ -17,42 +17,24 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2019-03-19
 ms.dyn365.ops.version: Platform update 24
-ms.openlocfilehash: 9c27d1810a89ed7d7a7745e41c5f118dbdfe5dda
-ms.sourcegitcommit: cadce85ca3004d53caf6bc49147a524c1bfd421f
+ms.openlocfilehash: 936ff85a4dabb715cb83b875a5c58c9fb7a0ac26
+ms.sourcegitcommit: 7c49475402632069685df714546770d30804af7f
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "1590488"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "1739823"
 ---
-# <a name="post-jobs-to-external-career-sites-from-attract"></a>Postere jobber på eksterne karriereområder fra Attract
+# <a name="post-jobs-to-broadbean"></a>Postere jobber til Broadbean
 
 [!include [banner](../includes/banner.md)]
 
-Du vil gjerne vise ledige stillingene for så mange kvalifiserte kandidater som mulig. Rekrutteringsområder, for eksempel Broadbean, hjelper deg med å oppnå dette målet. Microsoft Dynamics 365 Talent: Med Attract kan du postere jobber til Broadbean, og Microsoft gir deg kontinuerlig nye tilbud på dette området.
+Microsoft Dynamics 365 for Talent : Attract hjelper deg å få talentet du trenger, ved å la deg postere jobber direkte fra Attract til Broadbean. Når du [har opprettet en jobb](./creating-jobs-attract.md), må du bare klikke på en knapp for å vise jobben for alle potensielle jobbkandidater på Broadbean.
 
-## <a name="post-jobs-to-broadbean"></a>Legge inn jobber på Broadbean
+Postering av jobber til Broadbean krever en passende Broadbean-lisens. Broadbean tilbyr ulike produkter og planer. For mer informasjon om Broadbean-lisensiering og -priser, [kontakt Broadbean](https://www.broadbean.com/contact-us/).
 
-Før du kan postere jobber til Broadbean må du konfigurere Broadbean-integreringen.
+Hvis du er en administrator som trenger mer informasjon om hvordan du konfigurerer Broadbean-integrasjon med Attract, kan du se [Angi innstillinger for eksterne jobbtavler](./attract-admin-job-board-settings.md).
 
-> [!NOTE]
-> - Hvis du vil postere jobber til eksterne områder, må du ha [tillegget for omfattende ansettelse](https://docs.microsoft.com/dynamics365/unified-operations/talent/attract-comprehensive-hiring).
-> - Hvis du vil postere jobber til Broadbean via Attract, må du ha et Broadbean-abonnement.
-> - Denne funksjonen er for øyeblikket i forhåndsvisningen. Hvis du vil prøve dette, må du [aktiverer funksjonen i innstillingene for administrasjon av Attract](https://docs.microsoft.com/dynamics365/unified-operations/talent/access-preview-feature).
-
-### <a name="configure-broadbean-integration"></a>Konfigurere Broadbean-integrering
-
-1. Logge på Attract som en administrator.
-2. Velg **Innstillinger**-knappen (tannhjulssymbolet) i øvre høyre hjørne på siden, og velg deretter **Administrasjonssenter**.
-3. I kategorien **Innstillinger for jobbtavle** i delen **Aktiver Broadbean-integrering** aktiverer du integreringen.
-4. Kontakt Broadbean, og skriv inn informasjonen din i **Brukernavn, Klient-ID, Krypteringstoken**.
-
-> [!WARNING]
-> Broadbean-legitimasjonen din er sensitiv og konfidensiell. Derfor må du lagre og dele den på en ansvarlig måte. Alle som har en Administrator-rolle i Attract, kan vise denne legitimasjonen.
-
-> [!NOTE]
-> Microsoft og Attract er ikke er involvert i å opprette og vedlikeholde disse verdiene. Det er ditt ansvar å holde dem oppdatert i Attract og arbeide sammen med Broadbean for å løse problemer som involverer legitimasjonen.
-
-### <a name="post-a-job-to-broadbean"></a>Legge inn en jobb på Broadbean
+## <a name="post-jobs-to-broadbean"></a>Postere jobber til Broadbean
 
 Når Broadbean er aktivert, kan rekrutteringspersoner og administratorer postere en jobb til den. Du må ha en URL-adresse for jobben.
 
@@ -80,7 +62,7 @@ Når Broadbean har fullført posteringen, viser **Posteringer**-delen av jobben 
 Når du posterer en jobb til Broadbean, kan du vise den fra Attract.
 
 1. I Attract åpner du jobben du vil vise på Broadbean.
-2. I delen **Posteringer** velger du ellipseknappen (**...**) som tilsvarer Broadbean, og velg deretter **Vis**.
+2. I kategorien **Posteringer** velger du ellipseknappen (**...**) som tilsvarer Broadbean, og velg deretter **Vis**.
 
 Broadbean-jobbposteringen vises i et nytt vindu.
 
@@ -107,10 +89,16 @@ Du kan fjerne en jobbpostering fra Broadbean etter behov.
 
 Når Broadbean fjerner jobben, har Broadbean-elementet i Attract en **Legg ut nå**-knapp. Denne knappen angir at jobben er fjernet og kan posteres på nytt.
 
-### <a name="troubleshoot-the-broadbean-integration"></a>Feilsøke Broadbean-integreringen
+### <a name="troubleshoot-job-posting-to-broadbean"></a>Feilsøke jobbpostering til Broadbean
 
 Hvis du har problemer med å postere en jobb til Broadbean, kan du prøve følgende fremgangsmåte:
 
 1. Kontroller at Broadbean-legitimasjonen du har angitt, er gyldig og korrekt.
 2. Hvis legitimasjonen er gyldig og korrekt, kan du kontakte [Broadbean-støtten](https://www.broadbean.com/resources/support/).
 3. Hvis problemet vedvarer, kontakter du [Microsoft Kundestøtte](./talent-support.md).
+
+## <a name="see-also"></a>Se også
+
+[Opprette jobber](./creating-jobs-attract.md)
+
+[Angi innstillinger for eksterne jobbtavler](./attract-admin-job-board-settings.md)

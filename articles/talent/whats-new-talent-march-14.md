@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-03-14
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 38641d6a84340112ce15335533795ed7faf91123
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: ee8e076174acba8e706991f3086d6299a10945ec
+ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1518769"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "1742499"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-talent-march-14-2019"></a>Hva er nytt eller endret i Dynamics 365 for Talent (14. mars 2019)?
 
@@ -47,7 +47,7 @@ Endringer i denne versjonen aktiverer ytelsesstyringsscenarioer ved bruk av stan
 Med denne endringen kan du nå velge flere ansatte og bulktilordne én eller flere sjekklister til de ansatte. 
 
 ### <a name="platform-update-24"></a>Plattform update 24
-Hvis du vil ha mer informasjon om Plattformoppdatering 24, kan du se [Hva er nytt eller endret i Finance and Operations Plattformoppdatering 24 (mars 2019)](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-24). Viktige endringer i 24-plattformen omfatter: 
+Hvis du vil ha mer informasjon om Plattformoppdatering 24, kan du se [Hva er nytt eller endret i Finance and Operations Plattformoppdatering 24 (mars 2019)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-24). Viktige endringer i 24-plattformen omfatter: 
 
 - Varsler er aktivert i Talent.
 - Det oppdaterte navigasjonsfeltet er nå justert til Office-toppteksten.
