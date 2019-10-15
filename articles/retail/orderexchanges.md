@@ -1,6 +1,6 @@
 ---
 title: Konfigurere og behandle en utveksling i en returordre
-description: Dette emnet forklarer hvordan du konfigurerer en utveksling ved en retur i Microsoft Dynamics 365 for Retail.
+description: Dette emnet forklarer hvordan du konfigurerer en utveksling ved en retur i Dynamics 365 Retail.
 author: josaw1
 manager: AnnBe
 ms.date: 11/12/2018
@@ -18,18 +18,18 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2018-11-15
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 43571099727830e81c41416b6fe250dba398b3f8
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 3ce327a918159771df0acab276b1169d2ad77825
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1561393"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2025385"
 ---
 # <a name="configure-and-process-an-exchange-on-a-return-order"></a>Konfigurere og behandle en utveksling i en returordre
 
 [!include [banner](includes/banner.md)]
 
-I tidligere versjoner av Microsoft Dynamics 365 for Retail ble returer mot kundeordrer behandlet ved hjelp av returordredokumentet i Retail Headquarters. Returordredokumentet kan imidlertid brukes til å behandle bare produkter som returneres. De returnerte produktene angis med et negativt antall på returordrelinjene. Derimot angis salg med et positivt antall. Returordredokumentet støtter imidlertid ikke positive antall. På grunn av denne begrensningen støttet ikke tidligere versjoner av Retail scenarier der produktutvekslinger ble utført ved hjelp av returordredokumentet.
+I tidligere versjoner av Dynamics 365 Retail ble returer mot kundeordrer behandlet ved hjelp av returordredokumentet i Retail Headquarters. Returordredokumentet kan imidlertid brukes til å behandle bare produkter som returneres. De returnerte produktene angis med et negativt antall på returordrelinjene. Derimot angis salg med et positivt antall. Returordredokumentet støtter imidlertid ikke positive antall. På grunn av denne begrensningen støttet ikke tidligere versjoner av Retail scenarier der produktutvekslinger ble utført ved hjelp av returordredokumentet.
 
 Funksjonaliteten er imidlertid lagt til for å støtte scenarier der utvekslinger blir utført på returordrer. Retail bruker nå salgsordredokumentet i stedet for returordredokumentet til å behandle disse transaksjonstypene.
 

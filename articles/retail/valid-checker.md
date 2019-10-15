@@ -1,6 +1,6 @@
 ---
 title: Konsekvenskontroll for detaljhandelstransaksjon
-description: Dette emnet beskriver funksjonaliteten for konsekvenskontroll for detaljhandelstransaksjon i Microsoft Dynamics 365 for Retail.
+description: Dette emnet beskriver funksjonaliteten for konsekvenskontroll for detaljhandelstransaksjon i Dynamics 365 Retail.
 author: josaw1
 manager: AnnBe
 ms.date: 05/30/2019
@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2019-01-15
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: f94a674e021d4f23480433440cd239b851491d87
-ms.sourcegitcommit: 2c73749779274e0b0abbcb4041bbc1df0fb6d6e4
+ms.openlocfilehash: 0413c2b236e442fb56098f1902b4d5b247ed4649
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "1790427"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2018425"
 ---
 # <a name="retail-transaction-consistency-checker"></a>Konsekvenskontroll for detaljhandelstransaksjon
 
@@ -31,9 +31,9 @@ ms.locfileid: "1790427"
 [!include [banner](includes/banner.md)]
 [!include [preview banner](includes/preview-banner.md)]
 
-Dette emnet beskriver funksjonaliteten for konsekvenskontroll for detaljhandelstransaksjon som blir introdusert i Microsoft Dynamics 365 for Finance and Operations versjon 8.1.3. Konsekvenskontrollen identifiserer og isolerer inkonsekvente transaksjoner før de blir plukket opp av utdragsposteringsprosessen.
+Dette emnet beskriver funksjonaliteten for konsekvenskontroll for detaljhandelstransaksjon. Konsekvenskontrollen identifiserer og isolerer inkonsekvente transaksjoner før de blir plukket opp av utdragsposteringsprosessen.
 
-Når et utdrag posteres i Microsoft Dynamics 365 for Retail, kan postering mislykkes på grunn av inkonsekvente data i transaksjonstabellene. Dataproblemet kan forårsakes av uforutsette problemer i POS-programmet, eller hvis transaksjoner ikke ble riktig importert fra POS-tredjepartssystemer. Eksempler på hvordan disse inkonsekvensene kan vises: 
+Når et utdrag posteres i Retail, kan postering mislykkes på grunn av inkonsekvente data i transaksjonstabellene. Dataproblemet kan forårsakes av uforutsette problemer i POS-programmet, eller hvis transaksjoner ikke ble riktig importert fra POS-tredjepartssystemer. Eksempler på hvordan disse inkonsekvensene kan vises: 
 
 - Transaksjonsbeløpet i toppteksttabellen samsvarer ikke med transaksjonsbeløpet på linjene.
 - Linjeantallet i toppteksttabellen samsvarer ikke med antallet linjer i transaksjonstabellen.

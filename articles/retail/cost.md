@@ -1,6 +1,6 @@
 ---
 title: Kostnadskonfigurasjon for behandling av distribuert ordre (DOM)
-description: Dette emnet beskriver kostnadskonfigurasjon for DOM-funksjonaliteten i Microsoft Dynamics 365 for Retail.
+description: Dette emnet beskriver kostnadskonfigurasjon for DOM-funksjonaliteten i Dynamics 365 Retail.
 author: josaw1
 manager: AnnBe
 ms.date: 12/05/2018
@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2018-12-15
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 80e7a033467c3d94d55f06daa05f99bd27e19a29
-ms.sourcegitcommit: e2fb0846fcc6298050a0ec82c302e5eb5254e0b5
+ms.openlocfilehash: b5e3e1997f3d3b61b7b3c7486f5531e386293537
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/27/2019
-ms.locfileid: "1606785"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2019445"
 ---
 # <a name="cost-configuration-for-distributed-order-management-dom"></a>Kostnadskonfigurasjon for behandling av distribuert ordre (DOM)
 
@@ -31,7 +31,7 @@ ms.locfileid: "1606785"
 
 Organisasjoner vurderer flere kostnadskomponenter for å fastslå hvilken lokasjon som er best å oppfylle ordrer fra. Noen av disse kostnadskomponentene er knyttet til frakt, håndtering og emballasje. En kombinasjon av disse kostnadene beregnes for å bestemme oppfyllingslokasjonen.
 
-Da den første gjentakelsen av behandling av distribuert ordre (DOM) i Microsoft Dynamics 365 for Retail optimaliserte tilordningen av ordrer til oppfyllingslokasjoner, ble det bare tatt hensyn til avstand. Selv om avstand kan korreleres med kostnad, er det ikke det samme som kostnad. En leveranse til neste dag koster for eksempel mer enn tredagers leveranse eller sjudagers leveranse med samme avstand.
+Da den første gjentakelsen av behandling av distribuert ordre (DOM) i Dynamics 365 Retail optimaliserte tilordningen av ordrer til oppfyllingslokasjoner, ble det bare tatt hensyn til avstand. Selv om avstand kan korreleres med kostnad, er det ikke det samme som kostnad. En leveranse til neste dag koster for eksempel mer enn tredagers leveranse eller sjudagers leveranse med samme avstand.
 
 Med funksjonen for kostnadskonfigurasjon kan forhandlere definere og konfigurere ytterligere kostnadskomponenter som skal beregnes og tas hensyn til når den beste lokasjonen for oppfylling av ordrelinjer fastsettes.
 

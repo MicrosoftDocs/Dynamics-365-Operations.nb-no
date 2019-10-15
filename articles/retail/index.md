@@ -1,6 +1,6 @@
 ---
-title: Velkommen til Dynamics 365 for Retail
-description: Startside for Dynamics 365 for Retail
+title: Hjelperessurser for Dynamics 365 Retail
+description: Startside for Dynamics 365 Retail
 author: josaw1
 manager: AnnBe
 ms.date: 08/14/2019
@@ -18,23 +18,26 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2017-6-19
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 22dc340ff5ea381dd2a335c8c81332d11d1257a0
-ms.sourcegitcommit: 315388bba3a766691e341f9f2a4fa7a091f2aa18
+ms.openlocfilehash: 57d3b66e7ebc5a8a6e2ddda9135e27cd24535365
+ms.sourcegitcommit: 5b53bdafa5cb9a1279576bfece0452a50383b122
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/14/2019
-ms.locfileid: "1874933"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "2278112"
 ---
-# <a name="welcome-to-dynamics-365-for-retail"></a>Velkommen til Dynamics 365 for Retail
+# <a name="help-resources-for-dynamics-365-retail"></a>Hjelperessurser for Dynamics 365 Retail
 
 [!include [banner](includes/banner.md)]
 
-Microsoft Dynamics 365 for Retail er en ende-til-ende-detaljhandelsløsning som leverer enhetlig handel på tvers av alle kanaler. Den omfatter salg, mobilitet, intelligens og produktivitet for å hjelpe forhandlere og arbeidere med å oppnå mer ved å bruke den mobile skyen. Retail formidler omfattende støtte for bruk av en rekke forretningsprosesser, for eksempel funksjoner for varehandels-, lager- og kanaladministrasjon. Løsningen formidler også dyptgående kundeopplevelser på tvers av alle berøringspunkter.
-
-> [!NOTE]
-> Dynamics 365 for Retail er tett knyttet til Dynamics 365 for Finance and Operations og Dynamics 365 for Talent. Den samme funksjonaliteten kan forekomme i alle tre produkter. Det fører til at i emner som først og fremst gjelder Retail, blir produktnavnet Microsoft Dynamics 365 for Retail, i emner som først og fremst er knyttet til kjerneproduktet (Finance and Operations), blir produktnavnet Microsoft Dynamics 365 for Finance and Operations, og i emner som først og fremt er knyttet til Personale, blir produktnavnet Dynamics 365 for Talent.
+Microsoft Dynamics 365 Retail er en ende-til-ende-detaljhandelsløsning som leverer enhetlig handel på tvers av alle kanaler. Den omfatter salg, mobilitet, intelligens og produktivitet for å hjelpe forhandlere og arbeidere med å oppnå mer ved å bruke den mobile skyen. Retail formidler omfattende støtte for bruk av en rekke forretningsprosesser, for eksempel funksjoner for varehandels-, lager- og kanaladministrasjon. Løsningen formidler også dyptgående kundeopplevelser på tvers av alle berøringspunkter.
 
 I ruten til venstre velger du et funksjonsområde du vil finne ut mer om.
+
+## <a name="dynamics-365-commerce-preview"></a>Dynamics 365 Commerce (forhåndsvisning)
+
+Dynamics 365 Commerce – bygget med de anerkjente Dynamics 365 Retail-funksjonene – formidler en omfattende omnikanalløsning som forener opplevelser i Back Office, butikk, telefonsenter samt digitale opplevelser. Handel er tilgjengelig for forhåndsvisning av kunder nå. Eksisterende Dynamics 365 Retail-kunder vil kunne oppdatere til Handel når programmet blir allment tilgjengelig.
+
+Hvis du vil ha mer informasjon om Dynamics 365 Commerce, går du til siden [Hjelperessurser for Dynamics 365 Commerce](../commerce/index.md).
 
 ## <a name="channel-management"></a>Kanaladministrasjon
 
@@ -78,8 +81,8 @@ Du konfigurerer flere komponenter for å definere relasjonene mellom en butikk, 
 
 Hvis du har blitt bedt om å tilpasse miljøet, eller hvis du har ansvar for å distribuere og vedlikeholde systemet, må du sørge for at du ser innholdet for utvikleren og systemadministratoren som er spesifikt for Retail, i tillegg til det mer generelle innholdet.
 
-- [Dynamics 365 for Retail for IT-eksperter og utviklere](dev-itpro/dev-retail-home-page.md)
-- [Utvikling og administrasjon for Dynamics 365 for Finance and Operations](../dev-itpro/dev-tools/developer-home-page.md)
+- [Dynamics 365 Retail for IT-eksperter og utviklere](dev-itpro/dev-retail-home-page.md)
+- [Utvikling og administrasjon for Dynamics 365 Finance](../dev-itpro/dev-tools/developer-home-page.md)
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 
