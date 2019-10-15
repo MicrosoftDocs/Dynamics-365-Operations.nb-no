@@ -1,0 +1,2396 @@
+- name: Dynamics 365 Supply Chain Management
+  items:
+    - name: Dynamics 365 Supply Chain Management
+      items:
+        - name: Dynamics 365 Supply Chain Management
+          href: index.md
+        - name: Komme i gang
+          items:
+            - name: Før du kjøper
+              href: ../fin-ops-core/fin-ops/get-started/before-you-buy.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Registrere deg for forhåndsvisningsabonnementer
+              href: ../fin-ops-core/dev-itpro/dev-tools/sign-up-preview-subscription.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Oppdatering av én versjonstjeneste
+              items:
+                - name: Oversikt over oppdatering av én versjonstjeneste
+                  href: ../fin-ops-core/dev-itpro/lifecycle-services/oneversion-overview.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Vanlige spørsmål om oppdatering av én versjonstjeneste
+                  href: ../fin-ops-core/fin-ops/get-started/one-version.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Policy for programvarelivssyklus – sky
+                  href: ../fin-ops-core/dev-itpro/migration-upgrade/versions-update-policy.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Policy for programvarelivssyklus – lokalt
+                  href: ../fin-ops-core/dev-itpro/migration-upgrade/on-prem-version-update-policy.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Tilgjengelighet av serviceoppdatering
+                  href: ../fin-ops-core/fin-ops/get-started/public-preview-releases.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Ta i bruk oppdateringer i skymiljøer
+                  href: ../fin-ops-core/dev-itpro/deployment/apply-deployable-package-system.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Konfigurere serviceoppdateringer
+                  href: ../fin-ops-core/dev-itpro/lifecycle-services/configure-service-updates.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Stanse serviceoppdateringer midlertidig
+                  href: ../fin-ops-core/dev-itpro/lifecycle-services/pause-service-updates.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Bli varslet om serviceoppdateringer
+                  href: ../fin-ops-core/dev-itpro/lifecycle-services/notifications-service-updates.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Automatisering av dataoppgave
+                  href: ../fin-ops-core/dev-itpro/data-entities/data-task-automation.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Levere ISV-løsninger med én versjon
+                  href: ../fin-ops-core/dev-itpro/lifecycle-services/oneversion-isv.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Opprette og automatisere brukergodkjenningstester
+                  href: ../fin-ops-core/dev-itpro/lifecycle-services/using-task-guides-and-bpm-to-create-user-acceptance-tests.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Distribuere et demomiljø
+              href: ../fin-ops-core/dev-itpro/deployment/deploy-demo-environment.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Distribusjonshensyn
+              items:
+                - name: Distribusjonsalternativer
+                  href: ../fin-ops-core/dev-itpro/deployment/choose-deployment-type.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Skydistribusjon
+                  href: ../fin-ops-core/dev-itpro/deployment/cloud-deployment-overview.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Systemkrav for skydistribusjoner
+                  href: ../fin-ops-core/fin-ops/get-started/system-requirements.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Lokal distribusjon
+                  href: ../fin-ops-core/dev-itpro/deployment/on-premises-deployment-landing-page.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Systemkrav for lokale distribusjoner
+                  href: ../fin-ops-core/fin-ops/get-started/system-requirements-on-prem.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Kjøpe Finance + Operations (on-premises)
+                  href: ../fin-ops-core/fin-ops/get-started/purchase-on-premises.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Konfigurere lager for lokale distribusjoner
+                  href: ../fin-ops-core/dev-itpro/deployment/warehousing-for-on-premise-deployments.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Finance and Operations-apper styrt av 21Vianet i Kina
+                  href: ../fin-ops-core/dev-itpro/deployment/china-local-deployment.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Finance and Operations-apper i Frankrike
+                  href: ../fin-ops-core/dev-itpro/deployment/france-local-deployment.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Hva er nytt eller endret
+              items:
+                - name: Startside for Hva er nytt eller endret
+                  href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md
+                - name: Forhåndsvisningsfunksjoner i Finance and Operations-apper 10.0.6 (november 2019)
+                  href: ../fin-ops-core/fin-ops/get-started/whats-new-changed-10-0-6.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Finance and Operations-apper 10.0.5 (oktober 2019)
+                  href: ../fin-ops-core/fin-ops/get-started/whats-new-changed-10-0-5.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Finance and Operations 10.0.4 (juli 2019)
+                  href: ../fin-ops-core/fin-ops/get-started/whats-new-changed-10-0-4.md?toc=/dynamics365/supply-chain/toc.json
+                - name: 'Finance and Operations, Enterprise edition 7.3'
+                  href: ../fin-ops-core/fin-ops/get-started/whats-new-application-7.3-update.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Funksjoner som er fjernet eller avskrevet
+                  href: ../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md?toc=/dynamics365/supply-chain/toc.json
+                - name: AX 2012-funksjoner som er utsatt
+                  href: ../fin-ops-core/fin-ops/get-started/ax-2012-features-not-implemented-but-not-deprecated.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Funksjoner som ikke er implementert i lokale distribusjoner
+                  href: ../fin-ops-core/fin-ops/get-started/features-not-implemented-on-prem.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Slutten av vanlig støtte for Microsoft Dynamics AX 2009 og 2012
+                  href: ../fin-ops-core/fin-ops/get-started/mainstream-support-ax-2009-2012.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Dokumentasjonsressurser
+              items:
+                - name: Hjelpesystem
+                  href: ../fin-ops-core/fin-ops/get-started/help-overview.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Koble til hjelpesystemet
+                  href: ../fin-ops-core/fin-ops/get-started/help-connect.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Koble til et tilpasset hjelpeområde
+                  href: ../fin-ops-core/fin-ops/get-started/help-custom.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Vise og eksportere feltbeskrivelser
+                  href: ../fin-ops-core/fin-ops/get-started/view-export-field-descriptions.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Oppgaveopptaker
+                  href: ../fin-ops-core/dev-itpro/user-interface/task-recorder.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Lage dokumentasjon eller opplæring med Oppgaveopptaker
+                  href: ../fin-ops-core/dev-itpro/user-interface/task-recorder-training-docs.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Videoer
+                  href: ../fin-ops-core/fin-ops/get-started/videos.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Ordliste
+                  href: ../fin-ops-core/fin-ops/get-started/glossary.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Læringskatalog
+              items:
+                - name: Startside for læringskatalog
+                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Beslutningstakere
+                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-bdm.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Forretningsbrukere
+                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-business-user.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Ledere for implementeringsprosjekt
+                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-project-manager.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Administratorer
+                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-administrator.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Utviklere
+                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-developer.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Salg og markedsføring for partner
+                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-partner-sales.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Funksjonelle konsulenter
+                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-functional-consultant.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Løsningsarkitekter
+                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-solution-architect.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Utforske brukergrensesnittet
+              items:
+                - name: Elementer i brukergrensesnitt
+                  href: ../fin-ops-core/fin-ops/get-started/user-interface-elements.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Tilgjengelighetsfunksjoner
+                  href: ../fin-ops-core/fin-ops/get-started/accessibility-features.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Oversikt over funksjonsbehandling
+                  href: ../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Vanlige spørsmål om klient
+                  href: ../fin-ops-core/fin-ops/get-started/client-faq.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Handlingssøk
+                  href: ../fin-ops-core/fin-ops/get-started/action-search.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Avansert syntaks for filtrering og spørring
+                  href: ../fin-ops-core/fin-ops/get-started/advanced-filtering-query-options.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Konfigurere og filtrere arbeidsområder
+                  href: ../fin-ops-core/fin-ops/get-started/configure-filter-workspaces.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Vise sider side ved side ved hjelp av funksjonen Åpne i nytt vindu
+                  href: ../fin-ops-core/fin-ops/get-started/display-pages-side-by-side.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Hurtigtaster
+                  href: ../fin-ops-core/fin-ops/get-started/shortcut-keys.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Endre bannerne eller logobildene for juridiske enheter
+                  href: ../fin-ops-core/fin-ops/get-started/tasks/change-banner-or-logo.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Navigasjonssøk
+                  href: ../fin-ops-core/fin-ops/get-started/navigation-search.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Tilpasse brukeropplevelsen
+                  href: ../fin-ops-core/fin-ops/get-started/personalize-user-experience.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Lagrede visninger
+                  href: ../fin-ops-core/fin-ops/get-started/saved-views.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Opprette og arbeide med egendefinerte felt
+                  href: ../fin-ops-core/fin-ops/get-started/user-defined-fields.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Bygge inn PowerApps-apper
+                  href: ../fin-ops-core/fin-ops/get-started/embed-power-apps.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Finne informasjon ved hjelp av oppslag
+                  href: ../fin-ops-core/fin-ops/get-started/use-lookups-to-find-information.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Endre datoen for en økt
+                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/change-date-session.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Angi en brukers foretrukkede tidssone
+                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/set-users-preferred-time-zone.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Forstå Lifecycle Services
+                  href: ../fin-ops-core/dev-itpro/lifecycle-services/lcs-works-lcs.md?toc=/fin-and-ops/toc.json?toc=/dynamics365/supply-chain/toc.json
+            - name: Implementering av livssyklus for ressurs
+              items:
+                - name: Startside for implementering av livssyklus for ressurs
+                  href: ../fin-ops-core/fin-ops/imp-lifecycle/implementation-lifecycle.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Arkitektur for Finance and Operations-apper
+                  href: ../fin-ops-core/fin-ops/imp-lifecycle/architecture-overview.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Microsoft FastTrack for Finance and Operations
+                  href: ../fin-ops-core/fin-ops/get-started/fasttrack-dynamics-365-overview.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Jobbintroduksjon for et implementeringsprosjekt
+                  href: ../fin-ops-core/fin-ops/imp-lifecycle/onboard.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Miljøplanlegging
+                  href: ../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Klargjøre for aktivering
+                  href: ../fin-ops-core/fin-ops/imp-lifecycle/prepare-go-live.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Vanlige spørsmål om aktivering
+                  href: ../fin-ops-core/fin-ops/imp-lifecycle/go-live-faq.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Sende en serviceforespørsel
+                  href: ../fin-ops-core/dev-itpro/lifecycle-services/submit-request-dynamics-service-engineering-team.md?toc=/dynamics365/supply-chain/toc.json
+                - name: 'Vanlige spørsmål om abonnementer, LCS-prosjekter og Azure AD-leiere'
+                  href: ../fin-ops-core/fin-ops/get-started/subscription-overview.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Flytte miljøer mellom datasentre
+                  href: ../fin-ops-core/fin-ops/get-started/move-environments-data-center.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Flytte lisenser mellom avtaletyper
+                  href: ../fin-ops-core/fin-ops/get-started/move-licenses-between-agreement-types.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Flytte LCS-implementeringsprosjekter til forskjellige Azure AD-leiere
+                  href: ../fin-ops-core/fin-ops/get-started/move-lcs-implementation-project-tenant.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Flere LCS-prosjekter og -produksjonsmiljøer på én Azure AD-leier
+                  href: ../fin-ops-core/fin-ops/get-started/implement-multiple-projects-aad-tenant.md?toc=/dynamics365/supply-chain/toc.json
+        - name: Globalisering
+          items:
+            - name: Globaliseringsressurser
+              href: ../fin-ops-core/dev-itpro/lcs-solutions/country-region.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Forskriftsmessige oppdateringer
+              href: ../finance/localizations/regulatory-updates.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Russland
+              items:
+                - name: Oversikt over Russland
+                  href: ../finance/localizations/russia.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Beholdning
+                  items:
+                    - name: Varer i transitt fra leverandør
+                      href: ../finance/localizations/rus-goods-transit-vendor.md?toc=/dynamics365/supply-chain/toc.json
+        - name: Aktivabehandling
+          items:
+            - name: Oversikt over anleggsmiddelbehandling
+              href: asset-management/index.md
+              items:
+                - name: Arbeidssteder og aktiva
+                  href: asset-management/overview/functional-locations-and-objects.md
+                - name: Aktiva og arbeidsordrer
+                  href: asset-management/overview/objects-and-work-orders.md
+            - name: Oppsett for arbeidssteder
+              items:
+                - name: Livsløpstilstander for arbeidssted
+                  href: asset-management/setup-for-functional-locations/functional-location-stages.md
+                - name: Vedlikeholdsattributtyper
+                  href: asset-management/setup-for-functional-locations/functional-location-types.md
+                - name: Arbeidsstedstyper
+                  href: asset-management/setup-for-functional-locations/specification-types.md
+            - name: Arbeidssteder
+              items:
+                - name: Innføring i arbeidssteder
+                  href: asset-management/functional-locations/introduction-to-functional-locations.md
+                - name: Opprette arbeidssteder
+                  href: asset-management/functional-locations/create-functional-locations.md
+                - name: Installere aktiva på arbeidssteder
+                  href: asset-management/functional-locations/install-objects-on-functional-locations.md
+            - name: Oppsett for aktiva
+              items:
+                - name: Aktivatyper
+                  href: asset-management/setup-for-objects/object-types.md
+                - name: Betingelsesvurdering
+                  href: asset-management/setup-for-objects/condition-assessment.md
+                - name: Aktivaprodusent og -modell
+                  href: asset-management/setup-for-objects/product-and-model.md
+                - name: Tellere
+                  href: asset-management/setup-for-objects/counters.md
+                - name: Aktivabehandlingsparametere
+                  href: asset-management/setup-for-objects/enterprise-asset-management-parameters.md
+                - name: Livsløpstilstander for aktiva
+                  href: asset-management/setup-for-objects/object-stages.md
+                - name: Tjenestenivåer for aktiva
+                  href: asset-management/setup-for-objects/object-priorities.md
+                - name: Kritiske forhold omkring aktiva
+                  href: asset-management/setup-for-objects/object-criticalities.md
+                - name: Aktivadokumenter
+                  href: asset-management/setup-for-objects/object-documents.md
+                - name: Vedlikeholdsarbeidere og arbeidsgrupper
+                  href: asset-management/setup-for-objects/workers-and-worker-groups.md
+            - name: Aktiva
+              items:
+                - name: Introduksjon til aktiva
+                  href: asset-management/objects/introduction-to-objects.md
+                - name: Opprette et aktiva
+                  href: asset-management/objects/create-an-object.md
+                - name: Aktiva på flere nivåer
+                  href: asset-management/objects/multi-level-objects.md
+                - name: 'Flytte, erstatte og installere aktiva'
+                  href: asset-management/objects/move-replace-and-install-objects.md
+                - name: Opprette aktiva basert på bestillinger
+                  href: asset-management/objects/create-objects-based-on-purchase-orders.md
+                - name: Stykkliste for aktiva
+                  href: /asset-management/objects/object-bom.md
+                - name: Historikk for aktivahendelse
+                  href: asset-management/objects/object-timeline.md
+                - name: Aktivavisning
+                  href: asset-management/objects/object-view.md
+                - name: Oversikt over aktivaattributt
+                  href: asset-management/objects/object-specification-overview.md
+            - name: Oppsett for vedlikeholdsanmodninger
+              items:
+                - name: Vedlikeholdsanmodninger
+                  href: asset-management/setup-for-maintenance-requests/requests.md
+                - name: Livsløpstilstander for vedlikeholdsanmodning
+                  href: asset-management/setup-for-maintenance-requests/request-stages.md
+                - name: Typer vedlikeholdsanmodninger
+                  href: asset-management/setup-for-maintenance-requests/request-types.md
+                - name: Ansvarlige vedlikeholdsarbeidere
+                  href: asset-management/setup-for-maintenance-requests/responsible-workers.md
+            - name: Behandle vedlikeholdsanmodninger
+              items:
+                - name: Vedlikeholdsanmodninger
+                  href: asset-management/manage-maintenance-requests/maintenance-request-overview.md
+                - name: Opprette en vedlikeholdsanmodning
+                  href: asset-management/manage-maintenance-requests/create-a-maintenance-request.md
+                - name: Opprette en arbeidsordre fra en vedlikeholdsanmodning
+                  href: asset-management/manage-maintenance-requests/create-work-order-from-a-maintenance-request.md
+                - name: Lånte aktiva
+                  href: asset-management/manage-maintenance-requests/asset-loan.md
+                - name: Innkommende og utgående aktiva
+                  href: asset-management/manage-maintenance-requests/inbound-and-outbound-assets.md
+                - name: Rapporter om vedlikeholdsanmodninger
+                  href: asset-management/manage-maintenance-requests/maintenance-request-reports.md
+            - name: Oppsett for arbeidsordrer
+              items:
+                - name: 'Kategorier for vedlikeholdsjobbtype og vedlikeholdsjobbtyper, varianter av vedlikeholdsjobbtype, handel for vedlikeholdsjobb og sjekklister for vedlikehold'
+                  href: asset-management/setup-for-work-orders/job-groups-and-job-types-variants-trades-and-checklists.md
+                - name: Livssyklustilstand for arbeidsordre
+                  href: asset-management/setup-for-work-orders/work-order-lifecycle-states.md
+                - name: Arbeidsordretyper
+                  href: asset-management/setup-for-work-orders/work-order-types.md
+                - name: Prosjektoppsett for arbeidsordre
+                  href: asset-management/setup-for-work-orders/work-order-project-setup.md
+                - name: Servicenivå og -beskrivelse
+                  href: asset-management/setup-for-work-orders/service-level-and-description.md
+                - name: Planlagt utførelse
+                  href: asset-management/setup-for-work-orders/scheduled-execution.md
+                - name: Feilstyring
+                  href: asset-management/setup-for-work-orders/fault-management.md
+            - name: Arbeidsordrer
+              items:
+                - name: Innføring i arbeidsordrer
+                  href: asset-management/work-orders/introduction-to-work-orders.md
+                - name: Manuelt opprettede arbeidsordrer
+                  href: asset-management/work-orders/manually-created-workorders.md
+                - name: Vedlikeholdsprognoser
+                  href: asset-management/work-orders/maintenance-forecasts.md
+                - name: Innkjøp
+                  href: asset-management/work-orders/procurement.md
+                - name: Manuell oppdatering av anleggsmiddeltellere
+                  href: asset-management/work-orders/manual-update-of-asset-counters.md
+                - name: Automatisk oppdatering av anleggsmiddeltellere
+                  href: asset-management/work-orders/automatic-update-of-asset-counters.md
+                - name: Sjekklister for vedlikehold
+                  href: asset-management/work-orders/maintenance-checklists.md
+                - name: Nedetid ved vedlikehold
+                  href: asset-management/work-orders/maintenance-downtime.md
+                - name: Legge til feil i arbeidsordre
+                  href: asset-management/work-orders/add-fault-to-work-order.md
+                - name: Arbeidsordrerapport
+                  href: asset-management/work-orders/work-order-report.md
+                - name: Arbeidsordresamlinger
+                  href: asset-management/work-orders/work-order-pools.md
+                - name: Vedlikeholdsjobber for aktive arbeidsordrer
+                  href: asset-management/work-orders/active-work-order-jobs-overview.md
+                - name: Arbeidsordrer og anleggsmidler
+                  href: asset-management/work-orders/work-orders-and-fixed-assets.md
+            - name: Integrering til prosjektstyring og regnskap
+              items:
+                - name: 'Prognoser, arbeidsordrer og prosjekter'
+                  href: asset-management/integration-to-project-management-and-accounting/forecasts-work-orders-and-projects.md
+            - name: Forebyggende og reaktivt vedlikehold
+              items:
+                - name: Oversikt over forebyggende vedlikehold
+                  href: asset-management/preventive-and-reactive-maintenance/preventive-maintenance-overview.md
+                - name: Vedlikeholdsplaner
+                  href: asset-management/preventive-and-reactive-maintenance/maintenance-plans.md
+                - name: Planlegg vedlikeholdsplaner
+                  href: asset-management/preventive-and-reactive-maintenance/schedule-maintenance-plans.md
+                - name: Vedlikeholdsrunder
+                  href: asset-management/preventive-and-reactive-maintenance/maintenance-rounds.md
+                - name: Vedlikeholdsplan
+                  href: asset-management/preventive-and-reactive-maintenance/maintenance-schedule.md
+                - name: Kostnader for vedlikeholdsplan
+                  href: asset-management/preventive-and-reactive-maintenance/maintenance-schedule-cost.md
+                - name: Opprett arbeidsordrer
+                  href: asset-management/preventive-and-reactive-maintenance/creating-work-orders.md
+                - name: Nedetid ved vedlikehold
+                  href: asset-management/preventive-and-reactive-maintenance/maintenance-stop.md
+            - name: Kapasitetsplanlegging
+              items:
+                - name: Beregn kapasitetsbelastning
+                  href: asset-management/capacity-planning/calculate-capacity-load.md
+                - name: Beregn vareprognose
+                  href: asset-management/capacity-planning/calculate-item-forecast.md
+            - name: Planlegging av arbeidsordre
+              items:
+                - name: Arbeidskalender og planlegging for vedlikehold
+                  href: asset-management/work-order-scheduling/maintenance-worker-calendar-and-scheduling.md
+                - name: Foretrukne vedlikeholdspersoner
+                  href: asset-management/work-order-scheduling/preferred-maintenance-workers.md
+                - name: Planlegg arbeidsordrer
+                  href: asset-management/work-order-scheduling/schedule-work-orders.md
+                - name: Fordelingsarbeidsordre
+                  href: asset-management/work-order-scheduling/dispatch-work-order.md
+                - name: Planlegge arbeidsordre på bestemt dato og klokkeslett
+                  href: asset-management/work-order-scheduling/schedule-work-order-on-specific-date-and-time.md
+                - name: Planlagte vedlikeholdsjobber for arbeidsordrer
+                  href: asset-management/work-order-scheduling/scheduled-work-order-maintenance-jobs.md
+                - name: Beregne kapasitetsbelastning på planlagte arbeidsordrer
+                  href: asset-management/work-order-scheduling/calculate-capacity-load-on-scheduled-work-orders.md
+            - name: Forbruk
+              items:
+                - name: Registrere forbruk
+                  href: asset-management/consumption/register-consumption.md
+                - name: Opprette forbruksrapporter
+                  href: asset-management/consumption/create-consumption-reports.md
+            - name: Garanti
+              items:
+                - name: Garantiavtale
+                  href: asset-management/warranty/warranty-agreement.md
+                - name: Garanti for eiendeler og anleggsmiddeltyper
+                  href: asset-management/warranty/warranty-on-assets-and-asset-types.md
+            - name: Vedlikeholdsbudsjetter
+              items:
+                - name: Vedlikeholdsbudsjetter
+                  href: asset-management/maintenance-budgets/create-maintenance-budget.md
+                - name: Oppdatere vedlikeholdsbudsjetter
+                  href: asset-management/maintenance-budgets/update-maintenance-budget.md
+            - name: Kontroll og rapportering
+              items:
+                - name: Kostnads- og datokontroll
+                  href: asset-management/controlling-and-reporting/cost-and-date-control.md
+                - name: Arbeidstidskontroll
+                  href: asset-management/controlling-and-reporting/work-hour-control.md
+                - name: Kostnadskontroll for aktivumfeil
+                  href: asset-management/controlling-and-reporting/asset-fault-cost-control.md
+                - name: Feilanalyse av aktivum
+                  href: asset-management/controlling-and-reporting/asset-fault-analysis.md
+                - name: KPI-er for aktivum
+                  href: asset-management/controlling-and-reporting/asset-kpis.md
+                - name: Brukssted for vare
+                  href: asset-management/controlling-and-reporting/item-where-used.md
+                - name: Vedlikeholdsstatus
+                  href: asset-management/controlling-and-reporting/maintenance-status.md
+            - name: Mobilt arbeidsområde for aktivabehandling
+              href: asset-management/asset-management-mobile-workspace.md
+        - name: Databehandling
+          items:
+            - name: Målenheter
+              href: asset-management/data-management/target-entities.md
+        - name: Kostnadsregnskap
+          items:
+            - name: Startside for kostnadsregnskap
+              href: ../finance/cost-accounting/cost-accounting-home-page.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Terminologi for kostnadsregnskap
+              href: ../finance/cost-accounting/terms-cost-accounting.md?toc=/dynamics365/supply-chain/toc.json
+            - name: 'Regnskapskalendere, regnskapsår og perioder'
+              href: ../finance/budgeting/fiscal-calendars-fiscal-years-periods.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Finansdimensjoner
+              href: ../finance/general-ledger/financial-dimensions.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Finansdimensjoner og postering
+              href: ../finance/general-ledger/Default-dimensions.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Legge til finansdimensjoner i arbeidsområdet for økonomidirektøren
+              href: ../finance/general-ledger/CFO-workspace.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Opprette kontostrukturer
+              href: ../finance/general-ledger/tasks/create-account-structures.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Oversikt over budsjettering
+              href: ../finance/budgeting/basic-budgeting-overview-configuration.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Opprette dimensjoner og importere dimensjonsmedlemmer
+              href: ../finance/cost-accounting/cost-dimension.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Kostnadselementdimensjoner
+              href: ../finance/cost-accounting/cost-elements.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Opprette kostnadselementer
+              href: ../finance/cost-accounting/tasks/create-cost-elements.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Dimensjoner for kostnadsobjekt
+              href: ../finance/cost-accounting/cost-objects.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Opprette kostnadsobjekter
+              href: ../finance/cost-accounting/tasks/create-cost-objects.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Tilordne dimensjonsmedlemmer for kostnadselement til et felles sett med dimensjonsmedlemmer
+              href: ../finance/cost-accounting/map-cost-elements-dimension-members.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Tilordne en kostnadselementdimensjon
+              href: ../finance/cost-accounting/tasks/map-cost-element-dimension.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Dimensjonshierarki
+              href: ../finance/cost-accounting/dimension-hierarchy.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Opprette et hierarki for organisasjonsrapport
+              href: ../finance/cost-accounting/tasks/create-an-organization-report-hierarchy.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Tilgangsrettigheter til en kontroller for kostnadsobjekt
+              href: ../finance/cost-accounting/access-rights-cost-object-controller.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Konfigurere tilgangsrettigheter for en kontroller for kostnadsobjekt
+              href: ../finance/cost-accounting/tasks/configure-access-rights-cost-object-controller.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Definere kostnadskontrollenheter
+              href: ../finance/cost-accounting/tasks/define-cost-control-units.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Opprette en kostnadsregnskapsfinans
+              href: ../finance/cost-accounting/tasks/create-cost-accounting-ledger.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Statistiske dimensjonsmedlemmer og maler for leverandør av statistisk måling
+              href: ../finance/cost-accounting/statistical-measure-provider-template.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Tildelingsgrunnlag
+              href: ../finance/cost-accounting/allocation-bases.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Opprette og tilordne en kostnadsfordelingspolicy til en kostnadskontrollenhet
+              href: ../finance/cost-accounting/tasks/create-assign-cost-allocation-policy-cost-control-unit.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Opprette og tilordne en kostnadsatferdspolicy til en kostnadskontrollenhet
+              href: ../finance/cost-accounting/tasks/create-assign-cost-behavior-policy-cost-control-unit.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Opprette og tilordne en kostnadsdistribusjonspolicy til en kostnadskontrollenhet
+              href: ../finance/cost-accounting/tasks/create-assign-cost-distribution-policy-cost-control-unit.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Opprette en policy for opprullet kost
+              href: ../finance/cost-accounting/tasks/create-cost-rollup-policy.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Administrere datakilde for kostnadsregnskapsfinansen
+              href: ../finance/cost-accounting/tasks/manage-data-source-cost-accounting-ledger.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Behandle og spore kildedata
+              href: ../finance/cost-accounting/tasks/process-trace-source-data.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Beregning av indirekte kostnader
+              href: ../finance/cost-accounting/overhead-calculation.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Policy for opprullet kost og beregning av administrasjonskostnader
+              href: ../finance/cost-accounting/cost-rollup.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Konfigurere arbeidsområde for kostnadskontroll
+              href: ../finance/cost-accounting/cost-control-workspace.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Konfigurere parametere for arbeidsområde for kostnadskontroll
+              href: ../finance/cost-accounting/tasks/configure-cost-control-workspace-parameters.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Forstå tilgangslistesikkerhet og RLS i Microsoft Power BI
+              href: ../fin-ops-core/dev-itpro/analytics/setup-security-cost-accounting-content-pack.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Bruke innholdspakke for Microsoft Power BI-rapportering
+              href: ../fin-ops-core/dev-itpro/analytics/cost-accounting-analysis-content-pack.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Bruke arbeidsområde for kostnadskontroll for mobilappen for Finance and Operations
+              href: ../finance/cost-accounting/cost-controlling-mobile-workspace.md?toc=/dynamics365/supply-chain/toc.json
+        - name: Kostnadsstyring
+          items:
+            - name: Startside for kostnadsstyring
+              href: cost-management/cost-management-home-page.md
+            - name: Forutsetninger for standardkostnader
+              items:
+                - name: Oversikt over forutsetninger for standardkostnader
+                  href: cost-management/prerequisites-standard-costs.md
+                - name: Oversikt over standard kostnadskonvertering
+                  href: cost-management/standard-cost-conversion-overview.md
+                - name: Forutsetning for konvertering av standardkostnad
+                  href: cost-management/prerequisites-standard-cost-conversion.md
+                - name: Behandle oppdateringer av standardkostnad
+                  href: cost-management/manage-standard-cost-updates.md
+                - name: Begrensninger på etterkalkuleringsversjoner for standardkostnader
+                  href: cost-management/restrictions-costing-versions-standard-costs.md
+                - name: Informasjon som brukes i stykklisteberegninger med standardkostnader
+                  href: cost-management/information-used-bom-calculations-standard-costs.md
+                - name: Oppdatere standardkostnader i et produksjonsmiljø
+                  href: cost-management/update-standard-costs-manufacturing-environment.md
+                - name: Oppdatere standardkostnader for en ny produsert vare
+                  href: cost-management/update-standard-costs-new-manufactured-item.md
+                - name: Oppdatere standardkostnader i et ikke-produksjonsmiljø
+                  href: cost-management/update-standard-costs-non-manufacturing-environment.md
+                - name: Forberede vedlikehold av standardkostnader for produserte varer
+                  href: cost-management/prepare-maintain-standard-costs-manufactured-items.md
+            - name: Etterkalkuleringsversjoner
+              items:
+                - name: Oversikt over etterkalkuleringsversjoner
+                  href: cost-management/costing-versions.md
+                - name: Kostark
+                  href: cost-management/costing-sheets.md
+                - name: Simulere kostnadsendinger ved hjelp av en kostnadsberegningsversjon for planlagte kostnader
+                  href: cost-management/simulate-cost-changes-costing-version-planned-costs.md
+            - name: Lagerregnskap
+              items:
+                - name: Kostnadsobjekter
+                  href: cost-management/cost-object.md
+                - name: Vise saldo for kostnadsobjekt
+                  href: cost-management/tasks/view-cost-object-balance.md
+                - name: Vise beholdningsoppgave og KPI etter kostnadsobjekt
+                  href: cost-management/tasks/view-inventory-statement-kpi-cost-object.md
+                - name: Kostnadsoppføringer
+                  href: cost-management/cost-entries.md
+                - name: Vis kostnadsoppføringer for et kostnadsobjekt
+                  href: cost-management/tasks/view-cost-entries-cost-object.md
+                - name: Kostgrupper
+                  href: cost-management/cost-groups.md
+                - name: FIFO med fysisk verdi og merking
+                  href: cost-management/fifo-physical-value-marking.md
+                - name: Ta med fysisk verdi
+                  href: cost-management/include-physical-value.md
+                - name: Lagerobjektverdier
+                  href: cost-management/physical-quantity.md
+                - name: LIFO-dato med fysisk verdi og merking
+                  href: cost-management/lifo-date-physical-value-marking.md
+                - name: LIFO med fysisk verdi og merking
+                  href: cost-management/lifo-physical-value-marking.md
+                - name: Glidende gjennomsnitt
+                  href: cost-management/moving-average.md
+                - name: Fysiske og økonomiske oppdateringer
+                  href: cost-management/physical-financial-updates.md
+                - name: Løpende gjennomsnittlig kostpris
+                  href: cost-management/running-average-cost-price.md
+                - name: Spore glidende gjennomsnittskostnad per beholdningsdimensjon
+                  href: cost-management/track-running-average-cost-per-inventory-dimension.md
+                - name: Dato for avveid gjennomsnitt
+                  href: cost-management/weighted-average-date.md
+                - name: Direkte utligning med fysisk verdi og merking
+                  href: cost-management/weighted-average-physical-value-marking.md
+                - name: Lagerlukking
+                  href: cost-management/inventory-close.md
+                - name: Justere kostnadsverdier for lagerbeholdning
+                  href: cost-management/adjust-hand-inventory-cost-values.md
+            - name: Produksjonsregnskap
+              items:
+                - name: Stykklisteberegninger
+                  href: cost-management/bom-calculations.md
+                - name: Beregningsgrupper for stykkliste
+                  href: cost-management/bom-calculation-groups.md
+                - name: Backflush-etterkalkulering
+                  href: cost-management/backflush-costing.md
+                - name: Vanlige kilder til produksjonsavvik
+                  href: cost-management/common-sources-of-production-variances.md
+                - name: Kostnadskategorier brukt i produksjonsruting
+                  href: cost-management/cost-categories-used-production-routings.md
+                - name: Kostnadskategorier brukt i produksjonskontroll og i prosjektstyring og regnskap
+                  href: cost-management/cost-categories-used-production-control-project-management-accounting.md
+                - name: Vise tillegg for en produsert vare
+                  href: cost-management/charges-manufactured-item.md
+                - name: Kostnadsanalyse for produksjonsordre
+                  href: cost-management/production-order-cost-analysis.md
+                - name: Kostnadsberegning for produksjonsordre
+                  href: /cost-management/production-order-cost-estimation.md
+                - name: Vise gjeldende VIA-status for en produksjonsordre
+                  href: cost-management/tasks/view-current-wip-status-production-order.md
+                - name: Sammenligne aktive estimerte og faktiske kostnader på en produksjonsordre
+                  href: cost-management/tasks/compare-active-estimated-realized-costs.md
+                - name: Produksjonspostering
+                  href: cost-management/production-posting.md
+                - name: Definere produkter som kan produseres eller fremskaffes
+                  href: cost-management/manufactured-items-treated-as-purchased-items.md
+                - name: Metode for total kostnadsfordeling
+                  href: cost-management/methodology-total-cost-allocation.md
+                - name: Amortisere konstante kostnader for en produsert vare
+                  href: cost-management/amortize-constant-costs-manufactured-item.md
+            - name: Innholdspakke for kostnadsstyring i Power BI
+              href: ../fin-ops-core/dev-itpro/analytics/cost-management-content-pack.md?toc=/dynamics365/supply-chain/toc.json
+        - name: Intelligens
+          items:
+            - name: Startside for intelligens
+              href: ../fin-ops-core/dev-itpro/analytics/bi-reporting-home-page.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Informasjonstilgang og rapportering
+              href: ../fin-ops-core/dev-itpro/analytics/information-access-reporting.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Power BI-innhold
+              items:
+                - name: Startside for Power BI-innhold
+                  href: ../fin-ops-core/dev-itpro/analytics/power-bi-home-page.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Faktisk i forhold til budsjett
+                  href: ../fin-ops-core/dev-itpro/analytics/ledger-budgets-power-bi.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Fordeler
+                  href: ../fin-ops-core/dev-itpro/analytics/benefits-power-bi.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Kontantstrømoversikt
+                  href: ../finance/cash-bank-management/Cash-Overview-Power-BI-content.md?toc=/dynamics365/supply-chain/toc.json
+                - name: CFO-oversikt
+                  href: ../fin-ops-core/dev-itpro/analytics/CFO-power-bi.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Kompensasjon
+                  href: ../fin-ops-core/dev-itpro/analytics/compensation-power-bi.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Kompensasjon og fordeler
+                  href: ../fin-ops-core/dev-itpro/analytics/compensation-and-benefits-analysis-power-bi-content-pack.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Kostnadsregnskapsanalyse
+                  items:
+                    - name: Power BI-innholdet Kostnadsregnskapsanalyse
+                      href: ../fin-ops-core/dev-itpro/analytics/cost-accounting-analysis-content-pack.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Definere sikkerhet for Power BI-innhold for analyse av kostnadsregnskap
+                      href: ../fin-ops-core/dev-itpro/analytics/setup-security-cost-accounting-content-pack.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Kostnadsstyring
+                  href: ../fin-ops-core/dev-itpro/analytics/cost-management-content-pack.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Behandling av kreditt og innkrevinger
+                  href: ../finance/accounts-receivable/credit-collections-power-bi.md
+                - name: Kompetanser og utvikling for ansatt
+                  href: ../fin-ops-core/dev-itpro/analytics/employee-competencies-and-development-analysis-power-bi-content-pack.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Ansattutvikling
+                  href: ../fin-ops-core/dev-itpro/analytics/employee-development-PBI.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Reiseregning og utlegg for Power BI-innhold
+                  href: ../fin-ops-core/dev-itpro/analytics/expense-management-content-pack.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Finansresultat
+                  href: ../fin-ops-core/dev-itpro/analytics/financial-performance-power-bi-content-pack.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Økonomisk innsikt
+                  href: ../fin-ops-core/dev-itpro/analytics/financial-insights.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Anleggsmiddelbehandling
+                  href: ../finance/fixed-assets/Fixed-asset-management-workspace.md
+                - name: Opplæring
+                  href: ../fin-ops-core/dev-itpro/analytics/learning-power-bi.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Organisasjonsopplæring
+                  href: ../fin-ops-core/dev-itpro/analytics/organizational-training-analysis-power-bi-content-pack.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Praksisleder
+                  href: ../fin-ops-core/dev-itpro/analytics/practice-manager-power-bi.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Produksjonsytelse
+                  href: ../fin-ops-core/dev-itpro/analytics/production-performance-power-bi.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Analyse av innkjøp og forbruk
+                  href: ../fin-ops-core/dev-itpro/analytics/purchase-content-pack-for-power-bi.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Rekruttering
+                  href: ../fin-ops-core/dev-itpro/analytics/recruiting-analysis-power-bi-content-pack.md?toc=/dynamics365/supply-chain/toc.json
+                - name: 'Resultat for detaljhandelskanal '
+                  href: ../fin-ops-core/dev-itpro/analytics/retail-channel-performance-dashboard-power-bi-data.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Resultat av salg og fortjeneste
+                  href: ../fin-ops-core/dev-itpro/analytics/sales-profitability-performance-content-pack.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Leverandørbetalinger
+                  href: ../finance/accounts-payable/Vendor-payments-workspace.md
+                - name: Lagerytelse
+                  href: ../fin-ops-core/dev-itpro/analytics/warehouse-power-bi-content.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Metrikk for arbeidsstyrke
+                  href: ../fin-ops-core/dev-itpro/analytics/workforce-analysis-power-bi-content-pack.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Rapportere og skrive ut og dokumenter
+              items:
+                - name: Oversikt over dokumentrapporteringstjenester
+                  href: ../fin-ops-core/dev-itpro/analytics/document-reporting-services.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Konfigurere SSRS for lokale distribusjoner
+                  href: ../fin-ops-core/dev-itpro/analytics/configure-ssrs-on-premises.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Skriver ut
+                  items:
+                    - name: Oversikt over utskrift av dokument
+                      href: ../fin-ops-core/dev-itpro/analytics/print-documents.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Installere dokumentrutingsagenten slik at nettverksutskrift kan brukes
+                      href: ../fin-ops-core/dev-itpro/analytics/install-document-routing-agent.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Oppgradere dokumentrutingsagenten
+                      href: ../fin-ops-core/dev-itpro/analytics/upgrade-document-routing-agent.md
+                    - name: Installere nettverksskriverenheter i lokale miljøer
+                      href: ../fin-ops-core/dev-itpro/analytics/install-network-printer-onprem.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: 'Dokumentgenerering, publisering og utskrift i lokale distribusjoner'
+                      href: ../fin-ops-core/dev-itpro/analytics/printing-capabilities-on-premises.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Kjøre dokumentrutingsagenten som en Windows-tjeneste
+                      href: ../fin-ops-core/dev-itpro/analytics/run-document-routing-agent-as-windows-service.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Hjelpe med å unngå at tidkrevende rapporter blir tidsavbrutt
+                  href: ../fin-ops-core/dev-itpro/analytics/prevent-long-running-reports-timing-out.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Tilgjengelige rapporter i SQL Server Reporting Services
+                  href: ../fin-ops-core/dev-itpro/analytics/SSRS-report.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Opprette sorteringsalternativer
+                  href: ../fin-ops-core/dev-itpro/analytics/create-nextgen-reporting-solutions.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Installere rapportutformingsmalene
+                  href: ../fin-ops-core/dev-itpro/analytics/install-modern-report-design-templates.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Tilpasse App Suite-rapporter ved hjelp av filtyper
+                  href: ../fin-ops-core/dev-itpro/analytics/customize-app-suite-reports-with-extensions.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Utvide datasett for Application Suite-rapport
+                  href: ../fin-ops-core/dev-itpro/analytics/expand-app-suite-report-data-sets.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Utvide rapportmenyelementer for å omdirigere brukernavigering
+                  href: ../fin-ops-core/dev-itpro/analytics/extend-report-menu-items.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Opprette tilpassede utforminger for forretningsdokumenter
+                  href: ../fin-ops-core/dev-itpro/analytics/custom-designs-business-docs.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Forhåndsvise PDF-dokumenter med et innebygd visningsprogram
+                  href: ../fin-ops-core/dev-itpro/analytics/preview-pdf-documents.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Elektronisk rapportering
+              items:
+                - name: Oversikt over elektronisk rapportering
+                  href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Konfigurasjoner
+                  items:
+                    - name: Opprette konfigurasjoner
+                      href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-configuration.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Klargjøre komponenter i den elektroniske rapporteringsløsningen
+                      items:
+                        - name: Utforme domenespesifikk datamodell
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-design-domain-specific-data-model-2016-11.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Klargjøre programspesifikke metadata
+                          items:
+                            - name: (ER) Klargjøre programmetadataene som skal brukes i RCS
+                              href: ../fin-ops-core/dev-itpro/analytics/tasks/prepare-application-metadata-rcs.md?toc=/dynamics365/supply-chain/toc.json
+                            - name: (RCS) Få tilgang til programmetadata ved hjelp av ER-konfigurasjon
+                              href: ../fin-ops-core/dev-itpro/analytics/tasks/access-application-metadata-er-configuration.md?toc=/dynamics365/supply-chain/toc.json
+                            - name: (RCS) Få tilgang til programmetadata ved hjelp av tilkoblede programmer
+                              href: ../fin-ops-core/dev-itpro/analytics/tasks/access-application-metadata-using-connected-applications.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Definere modelltilordninger og velge datakilder
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-define-model-mapping-select-data-sources-2016-11.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Tilordne datamodell til valgte datakilder
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-map-data-model-selected-data-sources-2016-11.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Opprette en formatkonfigurasjon
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-format-configuration-2016-11.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Tilordne komponenter for det opprettede formatet til datamodellelementer
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-map-components-data-model-elements--2016-11.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Teste den klargjorte ER-løsningen i målprogrammet
+                      items:
+                        - name: (ER) Importere konfigurasjoner fra RCS
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Generere elektroniske dokumenter for betalinger ved hjelp av en formatkonfigurasjon
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-electronic-payments.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: 'Oppgradere formatet ved å ta i bruk en ny, grunnleggende versjon av det formatet'
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-upgrade-format.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Formeldesigner i elektronisk rapportering
+                  href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting-formula-designer.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Administrere ER-modelltilordning i separate ER-konfigurasjoner
+                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-manage-model-mapping-configurations-july-2017.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Velge datamodelldefinisjoner når du oppretter formater
+                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-select-data-model-definition-creating-er-format-july-2017.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Generere rapporter ved å legge til innhold som rå XML
+                  href: ../fin-ops-core/dev-itpro/analytics/er-generate-reports-raw-xml.md?toc=/dynamics365/supply-chain/toc.json
+                - name: (ER) Kryssfirmadatakilder i elektronisk rapportering
+                  href: ../fin-ops-core/dev-itpro/analytics/er-cross-company-data-sources.md?toc=/dynamics365/supply-chain/toc.json
+                - name: 'Utforme ER-formater til å generere utgående, elektroniske dokumenter i ulike formater'
+                  items:
+                    - name: (ER) Utforme en konfigurasjon for generering av rapporter i OPENXML-format
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-design-reports-openxml-2016-11.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: (ER) Utforme konfigurasjoner til å generere rapporter i Word-format
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-design-configuration-word-2016-11.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Utforme konfigurasjoner til å fylle ut PDF-maler
+                      href: ../fin-ops-core/dev-itpro/analytics/er-fillable-pdf.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Bygge inn bilder og figurer
+                  items:
+                    - name: (ER) Bygge inn bilder og figurer i dokumenter du genererer
+                      href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-embed-images-shapes.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Eksempel på innebygging av bilder og figurer
+                      items:
+                        - name: Utforme konfigurasjoner for å generere rapporter i Office-formatene som har innebygde bilder
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-july-2017.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Gå gjennom konfigurasjoner for å generere rapporter i Office-formatene som har innebygde bilder
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-part-2-review-configurations.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Generere rapporter i Office-formater som har innebygde bilder
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-part-3-generate-reports.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Endre formater for elektronisk rapportering ved å bruke Excel-maler på nytt
+                  href: ../fin-ops-core/dev-itpro/analytics/modify-electronic-reporting-format-reapply-excel-template.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Definere avhengigheten av ER-konfigurasjonene i andre komponenter
+                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-define-dependency-er-configurations-from-other-components-july-2017.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Utforme en ER-løsning for å bruke finansdimensjoner
+                  items:
+                    - name: Utforme datamodeller til å bruke finansdimensjoner som datakilder
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-1.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Tilordne modeller for å bruke finansdimensjoner som datakilder
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-2.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Utforme rapporter for å bruke finansdimensjoner som datakilder
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-3.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Kjøre rapporter som bruker finansdimensjoner som datakilder
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-4.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Utforme ER-formater til å utføre telling og summering ved hjelp av informasjon fra genererte utdata
+                  items:
+                    - name: Opprette formater til å utføre telling og summering
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-format-counting-summing-1.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Konfigurere format til å utføre telling og summering
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-format-counting-summing-2.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Bruke beregninger til å generere utdataene for telling og summering
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-format-counting-summing-3.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Kjøre formater for å utføre telling og summering
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-format-counting-summing-4.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Legge til kolonner i Excel-rapporter dynamisk som horisontalt utvidbare områder
+                  items:
+                    - name: Utforme formater for å legge til kolonner i Excel-rapporter dynamisk som horisontalt utvidbare områder
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-horizontal-1.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Kjøre formater for å legge til kolonner i Excel-rapporter dynamisk som horisontalt utvidbare områder
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-horizontal-2.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Bruke dokumentbehandlingsfiler i formatutdata
+                  items:
+                    - name: Klargjøre datamodeller til å bruke dokumentbehandlingsfiler i ER-utdata
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-1.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Utvide datamodeller til å bruke dokumentbehandlingsfiler i ER-utdata
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-2.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Opprette formater til å bruke dokumentbehandlingsfiler i ER-utdata
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-3.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Kjøre formater for å bruke dokumentbehandlingsfiler i ER-utdata
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-4.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Endre og kjøre formater for å bruke dokumentbehandlingsfiler i ER-utdata
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-5.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Oppdatere programdata ved hjelp av elektronisk rapportering
+                  items:
+                    - name: Generere elektroniske dokumenter og oppdatere programdata
+                      href: ../fin-ops-core/dev-itpro/analytics/generate-electronic-documents-update-application-data.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Importere konfigurasjoner for å generere dokumenter med programdata
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-1-import-configurations.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Utforme konfigurasjoner for å generere dokumenter med programdata
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-2-generate-documents.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Endre modeller og tilordninger for å generere dokumenter med programdata
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-3-modify-model-mapping.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Endre formater for å generere dokumenter med programdata
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-4-modify-format.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Generere dokumenter som inneholder programdata
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-5-generate-documents-application-data-update.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Importere data fra innkommende filer ved hjelp av ER-løsninger
+                  items:
+                    - name: Analysere innkommende dokumenter i ulike formater
+                      href: ../fin-ops-core/dev-itpro/analytics/er-parse-incoming-documents.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Konfigurere dataimport fra manuelt valgte filer
+                      items:
+                        - name: Opprette konfigurasjoner for å importere data fra en ekstern XML-fil
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-required-configurations-import-data.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Konfigurere dataimport i satsvis modus fra SharePoint-plasserte filer
+                      href: ../fin-ops-core/dev-itpro/analytics/er-configure-data-import-sharepoint.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Importere filer i XML-format
+                      items:
+                        - name: Importere filer i XML-format med valgfrie attributter
+                          href: ../fin-ops-core/dev-itpro/analytics/rcs-optional-attributes.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Konfigurere ER-formater til å importere XML-formatfiler med valgfrie attributter
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/import-files-xml-format-optional-attributes.md
+                - name: Dele opp genererte XML-filer basert på filstørrelse og innholdsmengde
+                  href: ../fin-ops-core/dev-itpro/analytics/er-split-files.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Støtte for parametriserte kall av ER-datakilder av felttypen Beregnet
+                  href: ../fin-ops-core/dev-itpro/analytics/er-calculated-field-type.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Konfigurasjonslivssyklus
+                  items:
+                    - name: Administrere konfigurasjonslivssyklus
+                      href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting-manage-configuration-lifecycle.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Laste opp konfigurasjoner til Lifecycle Services
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-upload-configuration-into-lifecycle-services.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Importere konfigurasjoner fra Lifecycle Services
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-import-configuration-lifecycle-services.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Laste ned konfigurasjoner fra Lifecycle Services
+                      href: ../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Importere konfigurasjoner
+                      href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-import-ger-configurations.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Laste ned ER-konfigurasjoner fra RCS-repositoriet
+                      items:
+                        - name: Laste ned konfigurasjoner fra ER-repositoriet til RCS-typen
+                          href: ../fin-ops-core/dev-itpro/analytics/rcs-download-configurations.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Importere konfigurasjoner fra RCS
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md
+                - name: Bruke løsninger for elektronisk rapportering i Finance and Operations
+                  items:
+                    - name: Konfigurere rammeverket
+                      items:
+                        - name: Konfigurere rammeverket for elektronisk rapportering
+                          href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-er-configure-parameters.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Sikkerhetskopiere og gjenopprette ER-maler
+                          href: ../fin-ops-core/dev-itpro/analytics/er-backup-storage-templates.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Opprette konfigurasjonsleverandører og merke dem som aktive
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Mål
+                      items:
+                        - name: Oversikt over mål
+                          href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-destinations.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Konfigurere mål
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-destinations-2016-11.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Validere genererte rapporter automatisk
+                      items:
+                        - name: Spore genererte rapportresultater og sammenligne dem med grunnlinjeverdier
+                          href: ../fin-ops-core/dev-itpro/analytics/er-trace-reports-compare-baseline.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Forbedringer i sporing av resultater av genererte ER-rapporter og sammenligninger med grunnlinjeverdier
+                          href: ../fin-ops-core/dev-itpro/analytics/er-trace-reports-compare-baseline-replace.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Automatisere testing med elektronisk rapportering
+                          href: ../fin-ops-core/dev-itpro/analytics/er-automate-testing.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Automatisere forretningsprosesser ved hjelp av konfigurasjon av elektronisk rapportering
+                      items:
+                        - name: Konfigurere elektronisk rapportering for å hente data til Power BI
+                          href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting-report-configuration-get-data-powerbi.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Generere skjemaer for fritekstfaktura (FTI) som kan skrives ut
+                          href: ../fin-ops-core/dev-itpro/analytics/er-generate-printable-fti-forms.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Spore kjøring av ER-formater for å feilsøke ytelsesproblemer
+                      href: ../fin-ops-core/dev-itpro/analytics/trace-execution-er-troubleshoot-perf.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Oversikt over administrasjon av forretningsdokument
+                      href: ../fin-ops-core/dev-itpro/analytics/er-business-document-management.md?toc=/dynamics365/supply-chain/toc.json
+                - name: API for ER-rammeverk
+                  items:
+                    - name: Utvide listen over funksjoner for elektronisk rapportering
+                      href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting-formulas-list-extension.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: API-endringer for elektronisk rapporteringsrammeverk for Application update 7.3
+                      href: ../fin-ops-core/dev-itpro/analytics/er-apis-app73.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Angi en egendefinert lagerplassering for genererte dokumenter
+                      href: ../fin-ops-core/dev-itpro/analytics/er-custom-storage-generated-documents.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Innebygde analytisk løsninger
+              items:
+                - name: Innebygd Power BI i arbeidsområder
+                  href: ../fin-ops-core/dev-itpro/analytics/embed-power-bi-workspaces.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Power BI Embedded-integrering
+                  href: ../fin-ops-core/dev-itpro/analytics/power-bi-embedded-integration.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Tilpasse innebygde rapporter i analytiske arbeidsområder
+                  href: ../fin-ops-core/dev-itpro/analytics/customize-analytical-workspace.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Tilpasningsalternativer med PowerBI.com
+              items:
+                - name: Funksjoner og tjenester som er tilgjengelige via Power BI-integrering
+                  href: ../fin-ops-core/dev-itpro/analytics/power-bi-integration.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Feste Power BI-rapporter til arbeidsområder
+                  href: ../fin-ops-core/dev-itpro/analytics/pin-power-bi-reports.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Velge analytiske arbeidsområder fra PowerBI.com
+                  href: ../fin-ops-core/dev-itpro/analytics/select-analytical-workspace.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Verktøy for å opprette og utvide løsninger
+              items:
+                - name: 'Analyse, aggregerte målinger og KPI-modellering'
+                  href: ../fin-ops-core/dev-itpro/analytics/analytics.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Opprette analyserapporter ved hjelp av Power BI Desktop
+                  href: ../fin-ops-core/dev-itpro/analytics/author-distribute-power-bi-reports.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Modellere og aggregere data
+                  href: ../fin-ops-core/dev-itpro/analytics/model-aggregate-data.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Legge til finansdimensjoner i aggregerte målinger
+                  href: ../fin-ops-core/dev-itpro/analytics/add-financial-dimensions-aggregate-measurements.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Legge til analyse i arbeidsområder ved hjelp av Power BI Embedded
+                  href: ../fin-ops-core/dev-itpro/analytics/add-analytics-tab-workspaces.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Sikre analytiske arbeidsområder og rapporter ved hjelp av Power BI Embedded
+                  href: ../fin-ops-core/dev-itpro/analytics/secure-analytical-workspaces.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Verktøy for administrasjon av storbruker
+              items:
+                - name: Power BI-integrering med enhetslager
+                  href: ../fin-ops-core/dev-itpro/analytics/power-bi-integration-entity-store.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Løse problemer etter vedlikehold av enhetslager
+                  href: ../fin-ops-core/dev-itpro/analytics/entity-store-maintenance.md
+                - name: Konfigurere Power BI-integrering for arbeidsområder
+                  href: ../fin-ops-core/dev-itpro/analytics/configure-power-bi-integration.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Vise din egen database
+                  href: ../fin-ops-core/dev-itpro/analytics/export-entities-to-your-own-database.md?toc=/dynamics365/supply-chain/toc.json
+        - name: Lagerstyring
+          items:
+            - name: Oversikt over lagerstyring
+              href: inventory/inventory-home-page.md
+            - name: Ankomst
+              items:
+                - name: Ankomstoversikt
+                  href: inventory/arrival-overview.md
+                - name: Definere en profil for vareankomstoversikt
+                  href: inventory/tasks/set-up-item-arrival-overview-profile.md
+            - name: Kvalitetsstyring
+              items:
+                - name: Oversikt over kvalitetsstyring
+                  href: inventory/enable-quality-management.md
+                - name: Kvalitetsstyringsprosesser
+                  href: inventory/quality-management-processes.md
+                - name: Avviksstyring
+                  href: inventory/enable-nonconformance-management.md
+                - name: Definere forutsetninger for behandling
+                  href: inventory/tasks/set-up-prerequisites-nonconformance-management.md
+                - name: Opprette og behandle et avvik
+                  href: inventory/tasks/create-process-non-conformance.md
+                - name: Karanteneordrer
+                  href: inventory/quarantine-orders.md
+                - name: Definere kvalitetsordrer
+                  href: inventory/tasks/set-up-quality-orders.md
+                - name: Kontrollere varekvaliteten
+                  href: inventory/tasks/inspect-quality-goods.md
+                - name: Lagerblokkering
+                  href: inventory/inventory-blocking.md
+                - name: Opprette og vedlikeholde lagerblokkering
+                  href: inventory/tasks/create-maintain-inventory-blocking.md
+            - name: Lageroperasjoner
+              items:
+                - name: Lagerjournaler
+                  href: inventory/inventory-journals.md
+                - name: Lagerlokasjoner
+                  href: inventory/inventory-locations.md
+                - name: Beholdningsstatuser
+                  href: inventory/inventory-statuses.md
+                - name: Opprette et nytt lageroppsett
+                  href: inventory/tasks/create-new-warehouse-layout.md
+                - name: Opprettholde strekkodetyper
+                  href: inventory/tasks/maintain-barcode-types.md
+                - name: Kontrollere lagertilgjengeligheten
+                  href: inventory/tasks/check-availability-stock.md
+                - name: Initialisere lagernivåer i lageret
+                  href: inventory/tasks/initialize-stock-levels-warehouse.md
+                - name: Overføre aktuell beholdning på lageret
+                  href: inventory/tasks/transfer-physical-inventory-within-warehouse.md
+                - name: Justere lagernivåer i lageret (grunnleggende lageraktiviteter)
+                  href: inventory/tasks/adjust-stock-levels-warehouse-basic-warehousing.md
+                - name: Lagerbrikkeopptelling
+                  href: inventory/inventory-tag-counting.md
+                - name: Lageropptelling på et lager
+                  href: inventory/tasks/count-inventory-warehouse.md
+                - name: Definere prosesser for lageropptelling
+                  href: inventory/tasks/define-inventory-counting-processes.md
+                - name: Definere forsendelse
+                  href: inventory/consignment.md
+                - name: Endre eierskap for forsendelseslager basert på produksjonsbehov
+                  href: inventory/tasks/change-ownership-consignment.md
+                - name: Opprette en ny etterfyllingsordre for forsendelse
+                  href: inventory/tasks/create-consignment-replenishment-order.md
+                - name: Overvåke forsendelseslager ved hjelp av leverandørsamarbeid
+                  href: inventory/tasks/monitor-consignment-inventory-vendor-collaboration.md
+                - name: 'Sporing av varer og råmaterialer i beholdning, produksjon og salg'
+                  href: inventory/trace-items-raw-materials-inventory-production-sales.md
+                - name: Spore en vare eller råvare
+                  href: inventory/tasks/trace-item-or-raw-material.md
+                - name: Slå sammen lagerparti
+                  href: inventory/merge-inventory-batches.md
+                - name: Riktig lagersporingsinformasjon
+                  href: inventory/tasks/correct-inventory-tracking-information.md
+                - name: Registrere serienummer i salgsprosessen
+                  href: sales-marketing/register-serial-numbers-sales-process.md
+                - name: Mobilt arbeidsområde for lagerbeholdning
+                  href: inventory/inventory-on-hand-mobile-workspace.md
+            - name: Utgående prosess
+              items:
+                - name: Oversikt over utgående prosess
+                  href: inventory/outbound-process.md
+                - name: Reservere lagerantall
+                  href: inventory/reserve-inventory-quantities.md
+                - name: Reservere samme parti for en salgsordre
+                  href: sales-marketing/reserve-same-batch-sales-order.md
+            - name: Lagerstyr.
+              items:
+                - name: Lagerlukking
+                  href: cost-management/inventory-close.md
+                - name: Løpende gjennomsnittlig kostpris
+                  href: cost-management/running-average-cost-price.md
+                - name: Justere kostnadsverdi for lagerbeholdning
+                  href: cost-management/adjust-hand-inventory-cost-values.md
+                - name: Spore glidende gjennomsnittskostnad per beholdningsdimensjon
+                  href: cost-management/track-running-average-cost-per-inventory-dimension.md
+        - name: Hovedplanlegging
+          items:
+            - name: Startside for hovedplanlegging
+              href: master-planning/master-planning-home-page.md
+            - name: Hovedplaner
+              items:
+                - name: Oversikt over hovedplaner
+                  href: master-planning/master-plans.md
+                - name: Definere hovedplaner
+                  href: master-planning/master-planning-setup.md
+                - name: Veiviser for oppsett for hovedplanlegging
+                  href: master-planning/master-planning-setup-wizard.md
+                - name: Dekningsinnstillinger
+                  href: master-planning/coverage-settings.md
+                - name: Definere dekningsregler for varer
+                  href: master-planning/tasks/define-coverage-rules-items.md
+                - name: Generere en begrenset plan
+                  href: master-planning/tasks/constrained-plan.md
+                - name: Opprette en materialplan for koprodukter
+                  href: master-planning/tasks/create-material-plan-co-products.md
+                - name: Vedlikeholde planlagte ordrer
+                  href: master-planning/maintain-planned-orders.md
+                - name: Fullføring av sikkerhetslager for varer
+                  href: master-planning/safety-stock-replenishment.md
+                - name: Forsinkelser
+                  href: master-planning/delays.md
+                - name: Bruke sporing for nedbryting
+                  href: master-planning/trace-explosion.md
+                - name: Handlingsmeldinger
+                  href: master-planning/action-messages.md
+                - name: Overvåke en kjøring av hovedplanlegging
+                  href: master-planning/tasks/monitor-master-planning-run.md
+                - name: Opprette en tidsplan for et område
+                  href: master-planning/tasks/create-schedule-site.md
+                - name: Opprette en plan for et område
+                  href: master-planning/tasks/create-plan-site.md
+                - name: Kalendere og hovedplanlegging
+                  href: master-planning/supply-chain-calendars-master-planning.md
+                - name: Forbedre ytelsen for hovedplanlegging
+                  href: master-planning/master-planning-performance.md
+                - name: Hovedplaner og multisite-funksjonalitet
+                  items:
+                    - name: Oversikt over hovedplanlegging og multisite-funksjonalitet
+                      href: master-planning/master-plan-multisite-functionality.md
+                    - name: 'Hovedplanlegging for områdedekning, obligatorisk lager'
+                      href: master-planning/master-plan-site-coverage-warehouse-mandatory.md
+                    - name: 'Hovedplanlegging for områdedekning, lager ikke obligatorisk'
+                      href: master-planning/master-plan-site-coverage-warehouse-not-mandatory.md
+                    - name: 'Hovedplanlegging for område- og lagerdekning, lager obligatorisk'
+                      href: master-planning/master-plan-site-warehouse-coverage-warehouse-mandatory.md
+                    - name: 'Hovedplanlegging for område- og lagerdekning, lager ikke obligatorisk'
+                      href: master-planning/master-plan-site-warehouse-coverage-warehouse-not-mandatory.md
+                    - name: Fastslå stykklisteversjonen
+                      href: master-planning/master-plan-bom-version-determined.md
+                    - name: Nedbryting av en stykklisteversjon
+                      href: master-planning/master-plan-explosion-bom-version.md
+                - name: Negative dager og dynamiske negative dager
+                  href: master-planning/more-about-dynamic-negative-days.md
+                - name: Opprette en konsernintern plan
+                  href: master-planning/tasks/create-intercompany-plan.md
+                - name: Vise utgående planlagt konsernintern etterspørsel
+                  href: master-planning/tasks/view-outbound-planned-intercompany-demand.md
+                - name: Samarbeide med kunder for intern forsyningskjede
+                  href: master-planning/tasks/collaborate-internal-supply-chain-customers.md
+            - name: Behovsprognose
+              items:
+                - name: Oversikt over behovsprognose
+                  href: master-planning/introduction-demand-forecasting.md
+                - name: Oppsett av behovsprognose
+                  href: master-planning/demand-forecasting-setup.md
+                - name: Importere historiske data for behovsprognoser
+                  href: master-planning/import-historical-data.md
+                - name: Generere en statistisk basislinjeprognose
+                  href: master-planning/generate-statistical-baseline-forecast.md
+                - name: Utføre manuell justering i basislinjeprognose
+                  href: master-planning/manual-adjustments-baseline-forecast.md
+                - name: Autorisere en justert prognose
+                  href: master-planning/authorize-adjusted-forecast.md
+                - name: Overvåke prognosenøyaktighet
+                  href: master-planning/monitor-forecast-accuracy.md
+                - name: Fjerne utestående fra historiske transaksjonsdata ved beregning av en behovsprognose
+                  href: master-planning/remove-historical-outliers-calculating-demand-forecast.md
+                - name: Reduksjonsnøkler
+                  href: master-planning/reduction-keys.md
+                - name: Opprette en basislinjeprognose
+                  href: master-planning/tasks/create-baseline-forecast.md
+                - name: Endre en behovsprognose manuelt
+                  href: master-planning/tasks/modify-demand-forecast-manually.md
+        - name: Mobilapp
+          items:
+            - name: Startside for mobilapp
+              href: ../fin-ops-core/dev-itpro/mobile-apps/Mobile-app-home-page.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Mobile arbeidsområder
+              items:
+                - name: Tilgjengelige mobile arbeidsområder
+                  href: ../fin-ops-core/dev-itpro/mobile-apps/mobile-workspaces-released.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Aktivabehandling
+                  href: asset-management/asset-management-mobile-workspace.md
+                - name: Firmakatalog
+                  href: ../fin-ops-core/dev-itpro/mobile-apps/company-directory-mobile-workspace.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Kostnadskontroll
+                  href: ../finance/cost-accounting/cost-controlling-mobile-workspace.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Reiseregning og utlegg
+                  href: ../finance/expense-management/expense-management-mobile-workspace.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Lagerbeholdning
+                  href: inventory/inventory-on-hand-mobile-workspace.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Fakturagodkjenninger
+                  href: ../fin-ops-core/dev-itpro/mobile-apps/invoice-approval-mobile-workspace.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Mitt team
+                  href: ../fin-ops-core/dev-itpro/mobile-apps/manager-self-service-mobile-workspace.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Oversikt over mobilapper for Project
+                  href: ../finance/project-management/project-mobile-application-overview.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Tidsoppføring for prosjekt
+                  href: ../finance/project-management/project-time-entry-mobile-workspace.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Project Timesheet
+                  href: ../finance/project-management/project-timesheet.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Godkjenning av bestilling
+                  href: procurement/purchase-order-mobile-workspace.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Salgsordrer
+                  href: sales-marketing/sales-orders-mobile-workspace.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Leverandørsamarbeid
+                  href: procurement/vendor-collaboration-mobile-workspace.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Publisere mobile arbeidsområder
+              href: ../fin-ops-core/dev-itpro/mobile-apps/publish-mobile-workspace.md?toc=/dynamics365/supply-chain/toc.json
+        - name: Office-integrering
+          items:
+            - name: Oversikt over Office-integrering
+              href: ../fin-ops-core/dev-itpro/office-integration/office-integration.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Opplæring i Office-integrering
+              href: ../fin-ops-core/dev-itpro/office-integration/office-integration-tutorial.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Åpne enhetsdata i Excel og oppdatere dem ved hjelp av Excel-tillegg
+              href: ../fin-ops-core/dev-itpro/office-integration/use-excel-add-in.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Opprette opplevelser for Åpne i Excel
+              href: ../fin-ops-core/dev-itpro/office-integration/office-integration-edit-excel.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Legge til maler på menyen Åpne linjer i Excel
+              href: ../fin-ops-core/dev-itpro/user-interface/add-templates-open-lines-excel-menu.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Tilpasse menyen Åpne i Microsoft Office
+              href: ../fin-ops-core/dev-itpro/office-integration/customize-open-office-menu.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Konfigurere og sende e-post
+              href: ../fin-ops-core/fin-ops/organization-administration/configure-email.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Utvikle e-posterfaringer
+              href: ../fin-ops-core/dev-itpro/dev-tools/sysmailer-develop.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Feilsøke Office-integreringen
+              href: ../fin-ops-core/dev-itpro/office-integration/office-integration-troubleshooting.md?toc=/dynamics365/supply-chain/toc.json
+        - name: Organisasjonsstyring
+          items:
+            - name: Startside for organisasjonsstyring
+              href: ../fin-ops-core/fin-ops/organization-administration/organization-administration-home-page.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Nummerserier
+              items:
+                - name: Oversikt over nummerserier
+                  href: ../fin-ops-core/fin-ops/organization-administration/number-sequence-overview.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Konfigurere nummerserier enkeltvis
+                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/set-up-number-sequences-individual-basis.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Konfigurere alle nødvendige nummerserier ved hjelp av en veiviser
+                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/set-up-number-sequences-wizard.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Organisasjoner og organisasjonshierarkier
+              items:
+                - name: Oversikt over organisasjoner og organisasjonshierarkier
+                  href: ../fin-ops-core/fin-ops/organization-administration/organizations-organizational-hierarchies.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Planlegge organisasjonshierarkiet
+                  href: ../fin-ops-core/fin-ops/organization-administration/plan-organizational-hierarchy.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Opprette et organisasjonshierarki
+                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/create-organization-hierarchy.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Opprett juridiske enheter
+                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/create-legal-entity.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Opprette driftsenheter
+                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/create-operating-unit.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Global adressebok
+              items:
+                - name: Oversikt over global adressebok
+                  href: ../fin-ops-core/fin-ops/organization-administration/overview-global-address-book.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Planlegge den globale adresseboken og andre adressebøker
+                  href: ../fin-ops-core/fin-ops/organization-administration/plan-configuration-global-address-book-additional-address-books.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Konfigurere den globale adresseboken
+                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/configure-global-address-book.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Vanlige spørsmål om adressebøker
+                  href: ../fin-ops-core/fin-ops/organization-administration/qa-address-books.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Konfigurere adressebøker
+                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/address-books.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Arbeidsflytsystem
+              items:
+                - name: Oversikt over arbeidsflytsystem
+                  href: ../fin-ops-core/fin-ops/organization-administration/overview-workflow-system.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Arkitektur i arbeidsflytsystemet
+                  href: ../fin-ops-core/fin-ops/organization-administration/workflow-system-architecture.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Arbeidsflytelementer
+                  href: ../fin-ops-core/fin-ops/organization-administration/workflow-elements.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Arbeidsflythandlinger
+                  href: ../fin-ops-core/fin-ops/organization-administration/workflow-actions.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Opprette arbeidsflyter
+                  items:
+                    - name: Oversikt over å opprette arbeidsflyter
+                      href: ../fin-ops-core/fin-ops/organization-administration/create-workflow.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Konfigurere egenskaper for arbeidsflyt
+                      href: ../fin-ops-core/fin-ops/organization-administration/configure-workflow-properties.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Konfigurere manuelle oppgaver
+                      href: ../fin-ops-core/fin-ops/organization-administration/configure-manual-task-workflow.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Konfigurere automatiserte oppgaver
+                      href: ../fin-ops-core/fin-ops/organization-administration/configure-automated-task-workflow.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Konfigurere godkjenningsprosesser
+                      href: ../fin-ops-core/fin-ops/organization-administration/configure-approval-process-workflow.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Konfigurere godkjenningstrinn
+                      href: ../fin-ops-core/fin-ops/organization-administration/configure-approval-step-workflow.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Konfigurere manuelle beslutninger
+                      href: ../fin-ops-core/fin-ops/organization-administration/configure-manual-decision-workflow.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Konfigurere betingede beslutninger
+                      href: ../fin-ops-core/fin-ops/organization-administration/configure-conditional-decision-workflow.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Konfigurere parallelle aktiviteter
+                      href: ../fin-ops-core/fin-ops/organization-administration/configure-parallel-activity-workflow.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Konfigurere parallelle avdelinger
+                      href: ../fin-ops-core/fin-ops/organization-administration/configure-parallel-branch-workflow.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Konfigurere arbeidsflyter for linjeelement
+                      href: ../fin-ops-core/fin-ops/organization-administration/configure-line-item-workflow.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Konfigurere den satsvise jobben Meldingsbehandling for arbeidsflyt som kritisk
+                  href: ../fin-ops-core/fin-ops/organization-administration/workflow-batch-job-critical.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Delegere arbeidselementer i en arbeidsflyt
+                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/delegate-work-items-workflow.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Vise arbeidsflytlogg
+                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/view-workflow-history.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Konfigurere systemet til å sende arbeidsflytrelatert e-post til brukere
+                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/users-receive-workflow-related-email-messages.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Arbeidsflyttyper
+                  items:
+                    - name: Opprette en arbeidsflyttype
+                      href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-create.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Sjekkliste for arbeidsflyttype
+                      href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-checklist.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Opprette en arbeidsflytkategori
+                      href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-category.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Opprette en spørring for en arbeidsflyttype
+                      href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-query.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Opprett en ny arbeidsflyttype
+                      href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-create-new.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Opprette en arbeidsflytdokumentklasse
+                      href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-document-create.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Opprette en SubmitToWorkflow-klasse
+                      href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-submit-to-workflow.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Tilknytte en arbeidsflytdokumentklasse til en arbeidsflyttype
+                      href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-associate-document.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Rapport for arbeidsflyttyper
+                  href: ../fin-ops-core/fin-ops/organization-administration/workflow-types-report.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Vanlige spørsmål om arbeidsflyt
+                  href: ../fin-ops-core/fin-ops/organization-administration/workflow-FAQ.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Varsler
+              items:
+                - name: Oversikt over varsler
+                  href: ../fin-ops-core/fin-ops/get-started/alerts-overview.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Opprette varselregler
+                  href: ../fin-ops-core/fin-ops/get-started/create-alerts.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Satsvis behandling for varsler
+                  href: ../fin-ops-core/fin-ops/get-started/alerts-managing.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Varselmeldinger til klient via e-post
+                  href: ../fin-ops-core/fin-ops/get-started/alert-email-notifications.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Elektroniske signaturer
+              items:
+                - name: Oversikt over elektroniske signaturer
+                  href: ../fin-ops-core/fin-ops/organization-administration/electronic-signature-overview.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Definere elektroniske signaturer
+                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/set-up-electronic-signatures.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Saksbehandling
+              items:
+                - name: Oversikt over saksbehandling
+                  href: ../fin-ops-core/fin-ops/organization-administration/cases.md?toc=/dynamics365/supply-chain/toc.json
+                - name: 'Planlegge sakssikkerhet, prosesser og kategorier'
+                  href: ../fin-ops-core/fin-ops/organization-administration/plan-case-management.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Postmaler
+              items:
+                - name: Oversikt over postmaler
+                  href: ../fin-ops-core/fin-ops/organization-administration/record-templates.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Opprette en postmal
+                  href: ../fin-ops-core/dev-itpro/data-entities/tasks/create-record-template-facilitate-data-entry.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Bruke en postmal til å opprette en ny post
+                  href: ../fin-ops-core/dev-itpro/data-entities/tasks/use-record-template-new-record.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Konfigurere dokumentstyring
+              href: ../fin-ops-core/fin-ops/organization-administration/configure-document-management.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Konfigurere og sende e-post
+              href: ../fin-ops-core/fin-ops/organization-administration/configure-email.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Dato-/klokkeslettdata og tidssoner
+              href: ../fin-ops-core/fin-ops/organization-administration/date-time-zones.md?toc=/dynamics365/supply-chain/toc.json
+        - name: Innkjøp og leverandører
+          items:
+            - name: Oversikt over innkjøp og leverandører
+              href: procurement/procurement-sourcing-overview.md
+            - name: Arbeidsflyt for innkjøp og leverandører
+              href: procurement/procurement-sourcing-workflows.md
+            - name: Innkjøpskataloger
+              items:
+                - name: Oversikt over innkjøpskataloger
+                  href: procurement/procurement-catalogs.md
+                - name: Opprette en innkjøpskatalog
+                  href: procurement/tasks/create-procurement-catalog.md
+                - name: Definere et innkjøpskategorihierarki
+                  href: procurement/tasks/set-up-procurement-category-hierarchy.md
+            - name: Innkjøpsrekvisisjoner
+              items:
+                - name: Oversikt over innkjøpsrekvisisjoner
+                  href: procurement/purchase-requisitions-overview.md
+                - name: Arbeidsflyt for innkjøpsrekvisisjon
+                  href: procurement/purchase-requisitions-workflow.md
+            - name: Tilbudsforespørsler (RFQ-er)
+              items:
+                - name: Oversikt over tilbudsforespørsler (RFQ-er)
+                  href: procurement/request-quotations.md
+                - name: Opprette en tilbudsforespørsel
+                  href: procurement/tasks/create-request-quotation.md
+                - name: Opprette en rekvisisjon som bruker en tilbudsforespørsel
+                  href: procurement/tasks/create-requisition-uses-rfq.md
+                - name: Opprette en poengsummetode for tilbudsforespørsler
+                  href: procurement/tasks/create-scoring-method-rfqs.md
+                - name: Opprette forespørselstyper og poengkriterier for tilbudsforespørsler
+                  href: procurement/tasks/create-solicitation-types-scoring-criteria-rfqs.md
+                - name: Angi og sammenligne tilbudsforespørsler og inngå kontrakter
+                  href: procurement/tasks/enter-compare-rfq-bids-award-contracts.md
+            - name: Bestillinger
+              items:
+                - name: Oversikt over bestilling
+                  href: procurement/purchase-order-overview.md
+                - name: Godkjenne og bekrefte bestillinger
+                  href: procurement/purchase-order-approval-confirmation.md
+                - name: Mobilt arbeidsområde for bestillingsgodkjenning
+                  href: procurement/purchase-order-mobile-workspace.md
+                - name: Registrere mottaket av varene i bestillingen
+                  href: ../supply-chain/procurement/tasks/record-receipt-goods-purchase-order.md
+            - name: Opprett bestilling
+              items:
+                - name: Opprette bestillinger manuelt
+                  href: procurement/purchase-order-creation.md
+                - name: Opprette en bestilling
+                  href: procurement/tasks/create-purchase-order.md
+                - name: Opprette en bestilling med en leveringsplan
+                  href: procurement/tasks/create-purchase-order-delivery-schedule.md
+                - name: Opprette en bestilling for en engangsleverandør
+                  href: procurement/tasks/create-purchase-order-one-time-supplier.md
+                - name: Opprette en frigivelsesordre for innkjøp ved oppretting av bestillingen
+                  href: procurement/tasks/create-purchase-release-order-creating-purchase-order.md
+                - name: Opprette en frigivelsesordre for innkjøp fra en innkjøpsavtale
+                  href: procurement/tasks/create-purchase-release-order-purchase-agreement.md
+                - name: Opprette en innkjøpsreturordre
+                  href: procurement/tasks/create-purchase-return-order.md
+                - name: Opprette prosjektbestilling
+                  href: procurement/tasks/create-project-purchase-order.md
+                - name: Opprette en innkjøpsgjentakelsesordre
+                  href: procurement/tasks/create-repeat-purchase-order.md
+                - name: Opprette en rekvisisjon for forbruk
+                  href: procurement/tasks/create-requisition-consumption.md
+            - name: Priser og rabatter
+              items:
+                - name: Kjøpsavtaler
+                  href: procurement/purchase-agreements.md
+                - name: Opprette en kjøpsavtale
+                  href: procurement/tasks/create-purchase-agreement.md
+                - name: Leverandørrabatter
+                  href: procurement/vendor-rebates.md
+            - name: Innkjøpspolicyer
+              items:
+                - name: Oversikt over innkjøpspolicyer
+                  href: procurement/purchase-policies.md
+                - name: Opprette innkjøpspolicyer
+                  href: procurement/tasks/create-purchasing-policies.md
+                - name: Definere policyer for innkjøpskategorihierarkier
+                  href: procurement/tasks/set-up-policies-procurement-category-hierarchies.md
+            - name: Mottakssedler og fakturering
+              items:
+                - name: Mottaksseddel mot bestillinger
+                  href: procurement/product-receipt-against-purchase-orders.md
+                - name: Oversikt over leverandørfakturaer
+                  href: ../finance/accounts-payable/vendor-invoices-overview.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Leverandørbehandling og samarbeid
+              items:
+                - name: Definere og vedlikeholde leverandørsamarbeid
+                  href: procurement/set-up-maintain-vendor-collaboration.md
+                - name: Administrere brukere av leverandørsamarbeid
+                  href: procurement/manage-vendor-collaboration-users.md
+                - name: Definere leverandørkontoer
+                  href: procurement/set-up-vendor-accounts.md
+                - name: Opprette en leverandørkonto
+                  href: procurement/tasks/create-vendor-account.md
+                - name: Opprette en leverandørbankkonto
+                  href: procurement/tasks/create-vendor-bank-account.md
+                - name: Leverandørposteringsprofiler
+                  href: ../finance/accounts-payable/vendor-posting-profiles.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Leverandørforespørselskonfigurasjoner
+                  href: procurement/vendor-request-configurations.md
+                - name: Jobbintroduksjon for leverandør
+                  href: procurement/vendor-onboarding.md
+                - name: Leverandørsamarbeid med eksterne leverandører
+                  href: procurement/vendor-collaboration-work-external-vendors.md
+                - name: Leverandørsamarbeid med kunder
+                  href: procurement/vendor-collaboration-work-customers-dynamics-365-operations.md
+                - name: Import leverandørkataloger
+                  href: procurement/vendor-catalogs-import.md
+                - name: Definere en ekstern katalog for PunchOut eProcurement
+                  href: procurement/set-up-external-catalog-for-punchout.md
+                - name: Bruke eksterne kataloger for PunchOut eProcurement
+                  href: procurement/use-external-catalogs-for-punchout.md
+                - name: Mobilt arbeidsområde for leverandørsamarbeid
+                  href: procurement/vendor-collaboration-mobile-workspace.md
+                - name: Godkjenne leverandører for spesifikke innkjøpskategorier
+                  href: procurement/tasks/approve-vendors-specific-procurement-categories.md
+                - name: Godkjenne leverandører for bestemte produkter
+                  href: procurement/tasks/approve-vendors-specific-products.md
+                - name: Søke etter leverandører
+                  href: procurement/tasks/search-vendors.md
+                - name: Definere tillatelser for bestilling av produkter på vegne av andre
+                  href: procurement/tasks/set-up-permissions-ordering-products.md
+            - name: Oppgaver i Innkjøp og leverandører
+              items:
+                - name: Definere informasjon om prosjektressurs
+                  href: procurement/tasks/set-up-project-resource-information.md
+                - name: Sende og godkjenne prosjektbudsjetter
+                  href: procurement/tasks/submit-approve-project-budget.md
+                - name: Sende og godkjenne prosjektbudsjettendringer
+                  href: procurement/tasks/submit-approve-project-budget-revision.md
+        - name: Behandling av produktinformasjon
+          items:
+            - name: Oversikt over produktinformasjon
+              href: pim/product-information.md
+            - name: Produktinformasjon
+              items:
+                - name: Produktidentifikatorer
+                  href: pim/product-identifiers.md
+                - name: Opprette et hierarki for produktklassifisering
+                  href: pim/tasks/create-hierarchy-product-classification.md
+                - name: Klassifisere et produkt ved hjelp av kategorihierarkier
+                  href: pim/tasks/classify-product-category-hierarchies.md
+                - name: Produktnummerterminologi
+                  href: pim/product-variant-identification-nomenclature.md
+                - name: Opprette en produktnummerterminologi for forhåndsdefinerte produktvarianter
+                  href: pim/tasks/create-product-number-nomenclature-predefined-variants-2016-11.md
+                - name: Opprette en produktnummerterminologi for konfigurerte produktvarianter
+                  href: pim/tasks/create-product-number-nomenclature-product-variants_2016_11.md
+                - name: Opprette et nytt produkt
+                  href: pim/tasks/create-new-product.md
+                - name: Opprette en produktstandard
+                  href: pim/tasks/create-product-master.md
+                - name: Opprette forhåndsdefinerte produktvarianter
+                  href: pim/tasks/create-predefined-product-variants.md
+                - name: Konvertering av måleenhet per produktvariant
+                  href: pim/uom-conversion-per-product-variant.md
+                - name: Opprette et frigitt produkt for ett firma
+                  href: pim/tasks/create-released-product-single-company.md
+                - name: Livssyklustilstand for produkt
+                  items:
+                    - name: Oversikt over tilstand for produktlivssyklus
+                      href: pim/product-lifecycle.md
+                    - name: Opprette en ny livssyklustilstand for produkt
+                      href: pim/tasks/new-product-lifecycle-state.md
+                    - name: Opprette en standard livssyklustilstand for produkt
+                      href: pim/tasks/default-product-lifecycle-state.md
+                    - name: Tilordne en tilstand for produktlivssyklus til en utgitt produktstandard
+                      href: pim/tasks/product-lifecycle-state-released-product-master.md
+                    - name: Tilordne en tilstand for produktlivssyklus til et utgitt produkt
+                      href: pim/tasks/product-lifecycle-state-released-product.md
+                    - name: Finne utdaterte produktvarianter
+                      href: pim/tasks/obsolete-product-variants.md
+                    - name: Utelukke produkter fra hovedplanlegging
+                      href: pim/tasks/exclude-products-master-planning.md
+                - name: Opprette en strekkode for et produkt
+                  href: pim/tasks/create-bar-code-product.md
+                - name: Angi GTIN-koden for et produkt
+                  href: pim/tasks/enter-gtin-code-product.md
+                - name: Opprette bunkeattributter for et produkt
+                  href: pim/tasks/create-batch-attributes-product.md
+                - name: Legge til et bilde i et produkt
+                  href: pim/tasks/add-image-product.md
+                - name: Vanlige spørsmål om oversettelse av produktinformasjon
+                  href: pim/translations-product-related-information.md
+                - name: Søke etter produkt under ordreregistrering
+                  href: pim/search-products-product-variants.md
+                - name: Standard ordreinnstillinger for dimensjoner og produktvarianter
+                  href: production-control/default-order-settings.md
+                - name: Stykklister og formler
+                  href: production-control/bill-of-material-bom.md
+                - name: Bruke stykklisteutformingen
+                  href: production-control/bom-designer-functionality.md
+                - name: Bruke formeldesigneren
+                  href: production-control/formula-designer.md
+                - name: Legge til variantprodukter i bestillinger ved hjelp av variantvekt
+                  href: pim/tasks/add-variant-products-purchase-order-variant-weights.md
+                - name: Opprette en salgsordre for et konfigurerbart produkt
+                  href: pim/tasks/create-sales-order-configurable-product.md
+                - name: Opprette valgkriterier for salgspris
+                  href: pim/tasks/create-sales-price-selection-criteria.md
+                - name: Definere attributtbasert prissetting for konfigurerbare produkter
+                  href: pim/tasks/set-up-attribute-based-pricing-configurable-products.md
+                - name: Stykklisteberegninger
+                  href: cost-management/bom-calculations.md
+            - name: Produktkonfigurasjon
+              items:
+                - name: Oversikt over produktkonfigurasjon
+                  href: pim/build-product-configuration-model.md
+                - name: Opprette dimensjonsbasert konfigurasjon
+                  items:
+                    - name: Oversikt over dimensjonsbasert produktkonfigurasjon
+                      href: pim/dimension-based-product-configuration.md
+                    - name: Produktdimensjon
+                      href: pim/product-dimensions.md
+                    - name: Opprette en dimensjonsbasert produktstandard
+                      href: pim/tasks/create-dimension-based-product-master.md
+                    - name: Frigi en dimensjonsbasert produktstandard
+                      href: pim/tasks/release-dimension-based-product-master.md
+                    - name: Fullføre grunnleggende oppsett av en frigitt produktstandard
+                      href: pim/tasks/complete-basic-setup-released-product-master.md
+                    - name: Definere konfigurasjonsgrupper
+                      href: pim/tasks/define-configuration-groups.md
+                    - name: Opprette en stykkliste for en dimensjonsbasert produktstandard
+                      href: pim/tasks/create-bill-materials-dimension-based-product-master.md
+                    - name: Definere konfigurasjonsruter
+                      href: pim/tasks/define-configuration-route.md
+                    - name: Opprette konfigurasjonsregler
+                      href: pim/tasks/create-configuration-rules.md
+                    - name: Opprette dimensjonsbaserte konfigurasjoner
+                      href: pim/tasks/create-dimension-based-configurations.md
+                - name: Opprette restriksjonsbasert konfigurasjon
+                  items:
+                    - name: Definere en produktkonfigurasjonsmodell
+                      href: pim/set-up-maintain-product-configuration-model.md
+                    - name: Vanlige spørsmål om beregning for produktkonfigurasjonsmodell
+                      href: pim/calculate-product-configuration-models.md
+                    - name: Konfigurasjonsregel
+                      href: pim/configuration-rules.md
+                    - name: Uttrykksbegrensning og tabellbegrensning
+                      href: pim/expression-constraints-table-constraints-product-configuration-models.md
+                    - name: Problemløserstrategi for produktkonfigurasjon
+                      href: pim/solver-strategy-product-configuration.md
+                    - name: Bruke produktkonfigurasjon på nytt
+                      href: pim/reuse-product-configurations.md
+                    - name: Systemdefinert og brukerdefinert tabellbegrensning
+                      href: pim/system-defined-user-defined-table-constraints.md
+                    - name: Opprette produktmodellkomponenter
+                      href: pim/tasks/create-product-model-components.md
+                    - name: Opprette en produktkonfigurasjonsmodell
+                      href: pim/tasks/create-product-configuration-model.md
+                    - name: Legge til en uttrykksbegrensning i en produktkonfigurasjonsmodell
+                      href: pim/tasks/add-expression-constraint-product-configuration-model.md
+                    - name: Legge til beregning i en produktkonfigurasjonsmodell
+                      href: pim/tasks/add-calculation-product-configuration-model.md
+                    - name: Vedlikeholde stykkliste for en produktkonfigurasjonsmodell
+                      href: pim/tasks/maintain-bom-product-configuration-model.md
+                    - name: Vedlikeholde en rute for en produktmodell
+                      href: pim/tasks/maintain-route-product-model.md
+                    - name: Godkjenne en produktkonfigurasjonsmodell
+                      href: pim/tasks/approve-product-configuration-model.md
+                    - name: Overføre data for produktmodeller
+                      href: pim/tasks/transfer-data-product-models.md
+        - name: Produksjonskontroll
+          items:
+            - name: Oversikt over produksjonsprosess
+              href: production-control/production-process-overview.md
+            - name: 'Blandet modusplanlegging: Kombinere diskret, behandle og lean-leverandører'
+              href: production-control/mixed-mode-plan.md
+            - name: Administrere utsettingsarbeid i produksjon
+              href: production-control/manage-subcontract-work-production.md
+            - name: Stykkproduksjon
+              items:
+                - name: Opprettholde produksjonshoveddata
+                  items:
+                    - name: Krav til produksjonsoppsett
+                      href: production-control/production-set-up-requirements.md
+                    - name: Stykklister og formler
+                      href: production-control/bill-of-material-bom.md
+                    - name: Funksjonalitet for stykklisteutforming
+                      href: production-control/bom-designer-functionality.md
+                    - name: Fantomvarer
+                      href: production-control/phantom-items.md
+                    - name: Stykklisteberegninger
+                      href: cost-management/bom-calculations.md
+                    - name: Administrere måleenhet
+                      href: pim/tasks/manage-unit-measure.md
+                    - name: Produksjonsparametere i Produksjonsutførelse
+                      href: production-control/production-parameters-manufacturing-execution.md
+                    - name: Operasjonsressurser
+                      href: production-control/operations-resources.md
+                    - name: Opprette en operasjonsressurs
+                      href: production-control/tasks/create-operations-resource.md
+                    - name: Ressursfunksjoner
+                      href: production-control/resource-capabilities.md
+                    - name: Definere ressursfunksjoner
+                      href: production-control/tasks/define-resource-capabilities.md
+                    - name: Ruter og operasjoner
+                      href: production-control/routes-operations.md
+                    - name: Arbeidspolicyer for lager
+                      href: warehousing/warehouse-work-policies.md
+                    - name: Opprette egenskaper for planlegging av driftstider
+                      href: production-control/tasks/create-working-time-scheduling-properties.md
+                    - name: Opprette driftstidsmaler
+                      href: production-control/tasks/create-working-time-templates.md
+                    - name: Definere ressursgruppe for stykkproduksjon
+                      href: production-control/tasks/define-discrete-manufacturing-resource-group.md
+                    - name: Legge til en eksisterende aktivitet i en produksjonsflytversjon
+                      href: production-control/tasks/add-existing-activity-production-flow-version.md
+                    - name: Deaktivere en produksjonsflytversjon
+                      href: production-control/tasks/deactivate-production-flow-version.md
+                    - name: Angi en utløpsdato for en produksjonsflytversjon
+                      href: production-control/tasks/define-expiry-date-production-flow-version.md
+                    - name: Definere produksjonsflytmodeller
+                      href: production-control/tasks/define-production-flow-models.md
+                - name: Planlegge produksjonsoperasjoner
+                  items:
+                    - name: Grovplanlegging
+                      href: production-control/operations-scheduling.md
+                    - name: Finplanlegging
+                      href: production-control/job-scheduling.md
+                    - name: Gantt-diagram til finplanlegging
+                      href: production-control/visual-scheduling-production.md
+                    - name: Alternativer for grovplanlegging
+                      href: production-control/operation-scheduling-options.md
+                    - name: Planlegge en produksjonsordre med operasjoner og finplanlegging
+                      href: production-control/tasks/schedule-production-order-operations-job-scheduling.md
+                - name: Operere produksjonsjobber
+                  items:
+                    - name: Behandle livssyklus for produksjonsordre
+                      items:
+                        - name: Oversikt over livssyklus for produksjonsordre
+                          href: production-control/create-production-orders.md
+                        - name: Opprette en produksjonsordre
+                          href: production-control/tasks/create-production-order.md
+                        - name: Estimere en produksjonsordre
+                          href: production-control/tasks/estimate-production-order.md
+                        - name: Planlegge en produksjonsordre
+                          href: production-control/tasks/schedule-production-order.md
+                        - name: Frigi en produksjonsordre
+                          href: production-control/tasks/release-production-order.md
+                        - name: Starte en produksjonsordre
+                          href: production-control/tasks/start-production-order.md
+                        - name: Rapportere en produksjonsordre som avsluttet
+                          href: production-control/tasks/report-production-order-finished.md
+                        - name: Avslutte en produksjonsordre
+                          href: production-control/tasks/end-production-order.md
+                    - name: Frigi produksjonsordrer
+                      href: production-control/release-production-orders.md
+                    - name: Rapportere produksjonsordrer som ferdigstilte
+                      href: production-control/report-production-orders-as-finished.md
+                    - name: Ferdigmelde til en skiltkontrollert lokasjon
+                      href: production-control/report-finished-job-device.md
+                    - name: Reversere produksjonsordrestatusen
+                      href: production-control/reverse-production-order-status.md
+                    - name: Innsikt i materialunntak
+                      href: production-control/improved-visibility-into-material-exceptions.md
+                    - name: Frigi stykkliste og formellinjer til lageret
+                      href: production-control/releasing-bom-and-formula-lines-to-warehouse.md
+                    - name: Registrere materialforbruk med en mobilenhet
+                      href: production-control/register-material-consumption-hand-held-device.md
+                    - name: Kontrollere råvareforbruk ved å bruke trekkprinsipper
+                      href: production-control/flushing-principles.md
+                    - name: Direkteoverføring fra produksjonsordrer til utleveringsporter
+                      href: production-control/cross-docking-opportunities.md
+                    - name: Angi produksjonsutleveringsstedet for ferdigvarer
+                      href: production-control/production-output-location.md
+                    - name: Rapportere stykklister som ferdigstilte
+                      href: production-control/report-boms-as-finished.md
+                    - name: Ferdigmelde til en skiltkontrollert lokasjon
+                      href: production-control/tasks/report-finished-non-license-plate-controlled-location-2016-11.md
+                    - name: Rapportere fremdrift på en mobil jobbenhet
+                      href: production-control/tasks/report-progress-mobile-job-device.md
+                    - name: Bruke sikkerhetslagerjournalen til å oppdatere minste dekning
+                      href: production-control/tasks/use-safety-stock-journal-update-minimum-coverage.md
+                    - name: Materialerstatning i produksjon
+                      href: production-control/substitute-items-bom-lines.md
+                    - name: Registrering for produksjonsutførelse
+                      href: production-control/registration-manufacturing-execution.md
+                    - name: Tilbakemeldinger på produksjon
+                      href: production-control/production-feedback.md
+                    - name: Aktivere lønnsprosessen for timeregistrering
+                      href: production-control/tasks/payroll-process-time-attendance.md
+                    - name: Konfigurere en arbeider som bruker den mobile jobbenheten
+                      href: production-control/tasks/worker-mobile-job-device.md
+                - name: Behandle finans i produksjon
+                  items:
+                    - name: Tildele tid til jobber i en jobbunt
+                      href: production-control/allocate-time-jobs-job-bundle.md
+                    - name: Beregne materialforbruk
+                      href: production-control/consumption.md
+                    - name: Produksjonspostering
+                      href: cost-management/production-posting.md
+                - name: Timeregistrering
+                  items:
+                    - name: Oversikt over timeregistreringsarbeidere
+                      href: production-control/time-attendance-registrations.md
+                    - name: Lønn basert på registreringer
+                      href: production-control/pay-based-on-registrations.md
+                    - name: Fraværsregistrering i Timeregistrering
+                      href: production-control/absence-registration-in-time-and-attendance.md
+                    - name: Fleksigrupper
+                      href: production-control/time-attendance-flex-groups.md
+            - name: Lean manufacturing
+              items:
+                - name: Oversikt over lean manufacturing
+                  href: production-control/lean-manufacturing-overview.md
+                - name: Aktivitetsbasert utsetting
+                  href: production-control/activity-based-subcontracting.md
+                - name: Opprettholde produksjonshoveddata
+                  items:
+                    - name: Modellere en lean-organisasjon
+                      href: production-control/lean-manufacturing-modeling-lean-organization.md
+                    - name: Operasjonsressurser
+                      href: production-control/operations-resources.md
+                    - name: Definere arbeidsceller for lean manufacturing
+                      href: production-control/tasks/define-lean-manufacturing-work-cells.md
+                    - name: Definere lean-planleggingsgrupper
+                      href: production-control/tasks/define-lean-schedule-groups.md
+                - name: Planlegge Kanban-jobber
+                  items:
+                    - name: Visuell planlegging for lean manufacturing
+                      href: production-control/visual-scheduling-lean-manufacturing.md
+                    - name: Kanban-jobbplanlegging for lean manufacturingl
+                      href: production-control/lean-manufacturing-kanban-job-scheduling.md
+                    - name: Finplanlegging
+                      href: production-control/job-scheduling.md
+                - name: Operere Kanban-jobber
+                  items:
+                    - name: Støtte for Kanban-overføringskort for strekkodelesere
+                      href: production-control/kanban-transfer-board-support-barcode-scanner.md
+                    - name: Tilbakemeldinger på produksjon
+                      href: production-control/production-feedback.md
+                    - name: Opprette en produksjonsflytversjon
+                      href: production-control/tasks/create-production-flow-version.md
+                    - name: Opprette prosessaktiviteter for lean manufacturing
+                      href: production-control/tasks/create-process-activities-lean-manufacturing.md
+                    - name: Opprette overføringsaktiviteter for lean manufacturing
+                      href: production-control/tasks/create-transfer-activities-lean-manufacturing.md
+                    - name: Validere en produksjonsflyt og -versjon
+                      href: production-control/tasks/validate-production-flow-version.md
+                    - name: Aktivere en produksjonsflytversjon
+                      href: production-control/tasks/activate-production-flow-version.md
+                    - name: 'Opprette aktivitetsrelasjon: Etterfølger'
+                      href: production-control/tasks/create-activity-relation-successor.md
+                    - name: Legge til en foregående aktivitet i en produksjonsflytaktivitet
+                      href: production-control/tasks/add-predecessor-production-flow-activity.md
+                    - name: Opprette en verdistrøm
+                      href: production-control/tasks/create-value-stream.md
+                    - name: Lean-utligning fra salgsordrer
+                      href: production-control/tasks/lean-pegging-sales-orders.md
+                    - name: Opprette en arbeidscelle for underleveranse for lean manufacturing
+                      href: production-control/tasks/create-subcontracted-work-cell-lean-manufacturing.md
+                    - name: Legge til en policy for beregning av Kanban-antall i en Kanban-regel
+                      href: production-control/tasks/add-kanban-quantity-calculation-policy-kanban-rule.md
+                    - name: Beregne forslag til Kanban-antall
+                      href: production-control/tasks/calculate-kanban-quantity-suggestions.md
+                    - name: Endre Kanban-regler for en prosessjobb
+                      href: production-control/tasks/change-kanban-rules-process-job.md
+                    - name: Opprette en Kanban-regel for hendelse for stykklistelinje
+                      href: production-control/tasks/create-bom-line-event-kanban-rule.md
+                    - name: Opprette en Kanban-regel med fast antall for produksjon
+                      href: production-control/tasks/create-fixed-quantity-kanban-rule-manufacturing.md
+                    - name: Opprette Kanban-regel ved hjelp av en hendelse for Kanban-linje
+                      href: production-control/tasks/create-kanban-rule-kanban-line-event.md
+                    - name: Opprette en Kanban-regel ved hjelp av en hendelse for minste beholdning
+                      href: production-control/tasks/create-kanban-rule-minimum-stock-event.md
+                    - name: Opprette en Kanban-regel for flere aktiviteter
+                      href: production-control/tasks/create-kanban-rule-multiple-activities.md
+                    - name: Opprette en ny Kanban-regel ved å duplisere en eksisterende Kanban-regel
+                      href: production-control/tasks/create-new-kanban-rule-duplicating-existing-kanban-rule.md
+                    - name: Opprette en ny Kanban-regel
+                      href: production-control/tasks/create-replacement-kanban-rule.md
+                    - name: Opprette en Kanban-regel for salgshendelse
+                      href: production-control/tasks/create-sales-event-kanban-rule.md
+                    - name: Opprette en Kanban-regel for uttak
+                      href: production-control/tasks/create-withdrawal-kanban-rule.md
+                    - name: Kjøre Kanban-prosessjobber
+                      href: production-control/tasks/execute-kanban-process-jobs.md
+                    - name: Flytte planlagte Kanban-jobber
+                      href: production-control/tasks/move-scheduled-kanban-jobs.md
+                    - name: Klargjøre en Kanban-prosessjobb når materialer er tilgjengelige for arbeidscellen
+                      href: production-control/tasks/prepare-kanban-job-materials.md
+                    - name: Klargjøre en Kanban-prosessjobb når materialer ikke er tilgjengelige for arbeidscellen
+                      href: production-control/tasks/prepare-process-kanban-job-materials-not-available.md
+                    - name: Fjerne en Kanban-jobb fra tidsplanen
+                      href: production-control/tasks/remove-kanban-job-schedule.md
+                    - name: Tilbakestille Kanban-jobbstatus
+                      href: production-control/tasks/revert-kanban-job-status.md
+                    - name: Planlegge Kanban-jobber)
+                      href: production-control/tasks/schedule-kanban-jobs.md
+                    - name: Overføre materialer med Kanban-jobber
+                      href: production-control/tasks/transfer-materials-kanban-jobs.md
+                    - name: Oppdatere Kanban-status
+                      href: production-control/tasks/update-kanban-status.md
+            - name: Prosessproduksjon
+              items:
+                - name: Opprettholde produksjonshoveddata
+                  items:
+                    - name: Stykklister og formler
+                      href: production-control/bill-of-material-bom.md
+                    - name: Formler og formelversjoner
+                      href: production-control/formulas-versions.md
+                    - name: Operasjonsressurser
+                      href: production-control/operations-resources.md
+                    - name: Ressursfunksjoner
+                      href: production-control/resource-capabilities.md
+                    - name: Partiattributter
+                      href: production-control/batch-attributes.md
+                    - name: Partibalansering
+                      href: production-control/batch-balancing.md
+                    - name: Behandling av Faktisk vekt-produkt
+                      href: warehousing/catch-weight-processing.md
+                    - name: Kopiere en formel
+                      href: production-control/tasks/copy-formula.md
+                    - name: Kopiere koprodukter fra en eksisterende formelversjon
+                      href: production-control/tasks/copy-co-products-existing-formula-version.md
+                    - name: Opprette en formel ved å kopiere fra en eksisterende formel
+                      href: production-control/tasks/create-formula-copying-existing-formula.md
+                    - name: Produksjonsparametere i Produksjonsutførelse
+                      href: production-control/production-parameters-manufacturing-execution.md
+                    - name: Krav til produksjonsoppsett
+                      href: production-control/production-set-up-requirements.md
+                - name: Planlegge produksjonsoperasjoner
+                  items:
+                    - name: Grovplanlegging
+                      href: production-control/operations-scheduling.md
+                    - name: Alternativer for grovplanlegging
+                      href: production-control/operation-scheduling-options.md
+                    - name: Finplanlegging
+                      href: production-control/job-scheduling.md
+                - name: Operere produksjonsjobber
+                  items:
+                    - name: Konsoliderte partiordrer
+                      href: production-control/consolidated-batch-orders.md
+                    - name: Livssyklus for partiordre fra oppretting til start
+                      href: production-control/tasks/batch-order-lifecycle-start.md
+                    - name: Sekvensiere produksjonsjobber for prosessproduksjon
+                      href: production-control/tasks/sequence-production-jobs-process-manufacturing.md
+                    - name: Materialerstatning i produksjon
+                      href: production-control/substitute-items-bom-lines.md
+                    - name: Registrering for produksjonsutførelse
+                      href: production-control/registration-manufacturing-execution.md
+                    - name: Tilbakemeldinger på produksjon
+                      href: production-control/production-feedback.md
+                    - name: Timeregistrering
+                      href: production-control/time-attendance-registrations.md
+                - name: Behandle finans i produksjon
+                  items:
+                    - name: Tildele tid til jobber i en jobbunt
+                      href: production-control/allocate-time-jobs-job-bundle.md
+                    - name: Beregne materialforbruk
+                      href: production-control/consumption.md
+                    - name: Produksjonspostering
+                      href: cost-management/production-posting.md
+        - name: Salg og markedsføring
+          items:
+            - name: Oversikt over salg og markedsføring
+              href: sales-marketing/overview-sales-marketing.md
+            - name: Salgsordrer
+              items:
+                - name: Ordrebekreftelse
+                  href: sales-marketing/delivery-dates-available-promise-calculations.md
+                - name: Tidsfrister for ordreregistrering
+                  href: sales-marketing/order-entry-deadlines.md
+                - name: Leveringsalternativer
+                  href: sales-marketing/delivery-alternatives.md
+                - name: Direkte leveringer
+                  href: sales-marketing/direct-deliveries.md
+                - name: Leveringsplaner
+                  href: sales-marketing/delivery-schedules.md
+                - name: Opprette en leveringsplan
+                  href: sales-marketing/tasks/create-delivery-schedule.md
+                - name: Serienumre i salgsprosessen
+                  href: sales-marketing/register-serial-numbers-sales-process.md
+                - name: Reservasjon fra samme parti
+                  href: sales-marketing/reserve-same-batch-sales-order.md
+                - name: Det mobile arbeidsområdet Salgsordrer
+                  href: sales-marketing/sales-orders-mobile-workspace.md
+                - name: Sende ordrer som direkte leveringer
+                  href: sales-marketing/tasks/ship-orders-direct-deliveries.md
+                - name: Sende salgsordrer uten lagerstyring
+                  href: sales-marketing/tasks/ship-sales-orders-without-warehousing.md
+                - name: Opprette en bestilling fra en salgsordre
+                  href: sales-marketing/tasks/create-purchase-order-sales-order.md
+                - name: Opprette salgsordrer
+                  href: sales-marketing/tasks/create-sales-orders.md
+                - name: Behandle ordresperrer
+                  href: sales-marketing/tasks/manage-order-holds.md
+                - name: Bekrefte salgsordrer
+                  href: sales-marketing/tasks/confirm-sales-orders.md
+            - name: Salgsavtaler
+              items:
+                - name: Oversikt over salgsavtaler
+                  href: sales-marketing/sales-agreements.md
+                - name: Angi salgsavtaler
+                  href: sales-marketing/tasks/enter-sales-agreements.md
+                - name: Oppfylle salgsavtaler
+                  href: sales-marketing/tasks/fulfill-sales-agreements.md
+                - name: Generere og behandle kunderabatter
+                  href: sales-marketing/tasks/process-customer-rebates.md
+                - name: Behandle rabatter for betaling
+                  href: sales-marketing/tasks/process-rebates-payment.md
+                - name: Slå opp gjeldende priser og rabatter
+                  href: sales-marketing/tasks/look-up-applicable-prices-discounts.md
+            - name: Salgstilbud
+              items:
+                - name: Prissimulering
+                  href: sales-marketing/price-simulation.md
+                - name: Masseopprette salgstilbud
+                  href: sales-marketing/tasks/mass-sales-quotations.md
+                - name: Opprette og redigere salgstilbud
+                  href: sales-marketing/tasks/create-edit-sales-quotations.md
+            - name: Returer
+              items:
+                - name: Salgsreturer
+                  href: warehousing/sales-returns.md
+            - name: Provisjon
+              items:
+                - name: Registrere salgsprovisjoner
+                  href: sales-marketing/tasks/register-sales-commissions.md
+                - name: Definere regler for salgsprovisjon
+                  href: sales-marketing/tasks/set-up-sales-commission-rules.md
+            - name: Handelsrabatt
+              href: sales-marketing/trade-allowance.md
+            - name: Opprette en ny forretningsavtale
+              href: sales-marketing/tasks/create-new-trade-agreement.md
+        - name: Servicestyring
+          items:
+            - name: Oversikt over servicestyring
+              href: service-management/service-management-home-page.md
+            - name: Definere kundeservice
+              items:
+                - name: Definere serviceavtaler
+                  items:
+                    - name: Oversikt over serviceavtaler
+                      href: service-management/service-agreement-groups.md
+                    - name: Opprette serviceavtaler
+                      href: service-management/create-service-agreements.md
+                    - name: Serviceintervaller
+                      href: service-management/service-intervals.md
+                    - name: Definere serviceintervaller
+                      href: service-management/set-up-service-intervals.md
+                    - name: Tidsvinduer
+                      href: service-management/time-windows.md
+                    - name: Opprette tidsvinduer
+                      href: service-management/create-time-windows.md
+                    - name: Opprette en servicemalgruppe
+                      href: service-management/create-service-template-group.md
+                - name: Definer serviceoppgaver
+                  items:
+                    - name: Oversikt over serviceoppgaver
+                      href: service-management/service-tasks.md
+                    - name: Opprette serviceoppgaverelasjoner
+                      href: service-management/create-service-task-relations.md
+                - name: Definer serviceobjekter
+                  items:
+                    - name: Oversikt over serviceobjekter
+                      href: service-management/service-objects.md
+                    - name: Opprette serviceobjekter
+                      href: service-management/create-service-task-relations.md
+                    - name: Knytte lagervarer til serviceobjekter
+                      href: service-management/attach-inventory-items-service-objects.md
+                    - name: Serviceobjektgrupper
+                      href: service-management/service-object-groups.md
+                    - name: Definere mal som skal representere objekter hos kunden
+                      href: service-management/set-up-template-to-represent-objects-at-customer-site.md
+                    - name: Serviceobjektrelasjoner
+                      href: service-management/service-object-relations.md
+                    - name: Opprette serviceobjektrelasjoner
+                      href: service-management/create-service-object-relations.md
+                    - name: Malstykklister
+                      href: service-management/template-boms.md
+                    - name: Opprette en malstykkliste
+                      href: service-management/create-template-bom.md
+                    - name: Tilknytte maler til serviceobjekter
+                      href: service-management/attach-templates-service-objects.md
+                - name: Definere årsakskoder for serviceordrer
+                  items:
+                    - name: Årsakskoder for serviceordrer
+                      href: service-management/reason-codes-service-orders.md
+                    - name: Serviceordrestadier
+                      href: service-management/service-order-stages.md
+                    - name: Definere serviceordrestadier
+                      href: service-management/set-up-service-order-stages.md
+                    - name: Opprette årsakskoder
+                      href: service-management/create-reason-codes.md
+                - name: Definere serviceavtaler og abonnementer
+                  items:
+                    - name: Oversikt over servicenivåavtaler
+                      href: service-management/service-level-agreements.md
+                    - name: Salgspriser for abonnement
+                      href: service-management/subscription-sales-prices.md
+                    - name: Abonnementsgrupper
+                      href: service-management/subscription-groups.md
+                    - name: Definere abonnementsgrupper
+                      href: service-management/set-up-subscription-groups.md
+                    - name: Bruke stadieårsakskoder
+                      href: service-management/use-stage-reason-codes.md
+                    - name: Integrering for serviceavtaler og prosjekter
+                      href: service-management/integration-service-agreements-projects.md
+                - name: Definere reparasjonsstyring
+                  href: service-management/repair-management.md
+                - name: Definere kundereturer
+                  items:
+                    - name: Oversikt over kundereturer
+                      href: service-management/disposition-and-return-reason-codes.md
+                    - name: Definere disposisjonskoder
+                      href: service-management/set-up-disposition-codes.md
+                    - name: Definere returårsakskoder
+                      href: service-management/set-up-return-reason-code.md
+                    - name: Angi hvordan du kvitter deg med returnerte varer
+                      href: service-management/specify-how-to-dispose-of-returned-items.md
+            - name: Arbeide med kundeservice
+              items:
+                - name: Oversikt over å arbeide med kundeservice
+                  href: service-management/working-with-customer-service.md
+                - name: Oppfylle serviceavtaler
+                  items:
+                    - name: Oversikt over å oppfylle serviceavtaler
+                      href: service-management/fulfill-service-agreements-overview.md
+                    - name: Utvikle og etablere avtaler
+                      items:
+                        - name: Oversikt over å utvikle og etablere serviceavtaler
+                          href: service-management/service-agreements.md
+                        - name: Opprette serviceavtaler
+                          href: service-management/create-service-agreements.md
+                        - name: Serviceabonnementer
+                          href: service-management/service-subscriptions.md
+                        - name: Servicemaler
+                          href: service-management/service-template.md
+                        - name: Kopiere servicemallinjer
+                          href: service-management/copy-service-template-lines.md
+                    - name: Endre serviceordrestadiet
+                      href: service-management/change-service-order-stage.md
+                    - name: Oppdatere og evaluere avtaler
+                      items:
+                        - name: Behandle malstykklister på objektrelasjoner
+                          href: service-management/manage-template-boms-on-object-relations.md
+                        - name: Slette en servicestykkliste
+                          href: service-management/delete-service-bom.md
+                        - name: Indekserte salgspriser
+                          href: service-management/indexed-sales-prices.md
+                        - name: Redusere dagene på abonnementsgebyr
+                          href: service-management/reduce-the-days-on-subscription-fees.md
+                        - name: Reduksjonsdager – eksempel
+                          href: service-management/reduction-days-example.md
+                        - name: Oppdatere og indeksere salgspriser for abonnement
+                          href: service-management/update-and-index-subscription-sales-prices.md
+                - name: Behandle kundeforespørsler
+                  items:
+                    - name: Oversikt over å oppfylle serviceavtaler
+                      href: service-management/fulfill-service-agreements-overview.md
+                    - name: Starte og stoppe tidsregistrering på en serviceordre
+                      href: service-management/start-and-stop-time-recording-on-a-service-order.md
+                    - name: Vise starttidspunktet og varigheten for en serviceordre
+                      href: service-management/view-the-start-time-and-duration-of-a-service-order.md
+                    - name: Vise årsakskoder for stadium
+                      href: service-management/view-stage-reason-codes.md
+                    - name: Vise samsvar med servicenivåavtaler
+                      href: service-management/view-compliance-with-service-level-agreements.md
+                - name: Autorisere kundereturer
+                  items:
+                    - name: Disposisjonskoder og returårsakskoder
+                      href: service-management/disposition-and-return-reason-codes.md
+                    - name: Returkostpris og returparti-ID
+                      href: service-management/return-cost-price-and-return-lot-id.md
+                    - name: Annullere en returordre
+                      href: service-management/cancel-return-order.md
+                    - name: Opprette en erstatningsordre for vare
+                      href: service-management/create-item-replacement-order.md
+                    - name: Slette en returordre
+                      href: service-management/delete-return-order.md
+                    - name: Sende returnerte varer til inspeksjon
+                      href: service-management/pass-returned-items-on-to-inspection.md
+                    - name: Postere ankomstjournal for returnerte produkter
+                      href: service-management/post-arrival-journal-for-returned-products.md
+                    - name: Motta delleveringer av returnerte varer
+                      href: service-management/receive-partial-deliveries-returned-items.md
+                    - name: Motta returnerte varer
+                      href: service-management/receiving-returned-items.md
+                    - name: Registrere mottaket av returnerte varer
+                      href: service-management/register-the-receipt-of-returned-items.md
+                    - name: Ta returnerte varer gjennom inspeksjon
+                      href: service-management/take-returned-items-through-inspection.md
+                    - name: Følgesedddeloppdateringer for returer
+                      href: service-management/packing-slip-updates-returns.md
+                    - name: Utføre fakturaoppdateringer for returer
+                      href: service-management/perform-invoice-updates-for-returns.md
+                - name: Levere servicer
+                  items:
+                    - name: Planlegge og tilordne serviceordrer
+                      items:
+                        - name: Serviceordrer
+                          href: service-management/service-orders.md
+                        - name: Automatisk opprette serviceordrer
+                          href: service-management/auto-create-service-orders.md
+                        - name: Servicestatus og fremdriftsfeltinteraksjon
+                          href: service-management/service-status-and-progress-field-interaction.md
+                        - name: Opprette serviceordrer automatisk
+                          href: service-management/create-service-orders-automatically.md
+                        - name: Opprette varebehov for serviceordrer
+                          href: service-management/create-item-requirements-service-orders.md
+                        - name: Varebehov for serviceordre
+                          href: service-management/service-order-item-requirements.md
+                        - name: Oversikt over abonnementsarbeidsflyt
+                          href: service-management/subscription-workflow-overview.md
+                        - name: Kombiner serviceordrer
+                          href: service-management/combine-service-orders.md
+                        - name: Opprette serviceabonnementer fra en abonnementsgruppe
+                          href: service-management/create-service-subscriptions-from-subscription-group.md
+                        - name: Prosjekt tilknyttet serviceavtale
+                          href: service-management/project-attached-to-service-agreement.md
+                        - name: Opprette serviceabonnementer fra et prosjekt
+                          href: service-management/create-service-subscriptions-from-project.md
+                    - name: Fordele serviceordreaktiviteter
+                      items:
+                        - name: Serviceaktiviteter
+                          href: service-management/service-activities.md
+                        - name: Tjenestefordeling
+                          href: service-management/dispatch-board.md
+                        - name: Definere serviceaktivitetstyper
+                          href: service-management/set-up-service-activity-types.md
+                        - name: Definere en foretrukket tekniker
+                          href: service-management/set-up-preferred-technician.md
+                        - name: Definer fordelingsteam
+                          href: service-management/set-up-dispatch-teams.md
+                        - name: Prioritere serviceordrer
+                          href: service-management/prioritize-service-orders.md
+                        - name: Vise statusen for serviceordrer
+                          href: service-management/view-the-status-of-service-orders.md
+                        - name: Overvåke serviceaktiviteter
+                          href: service-management/monitor-service-activities.md
+                        - name: Tilordne aktiviteter på nytt
+                          href: service-management/reassign-activities.md
+                        - name: Tilbakeføre endringer i en tjenestefordeling
+                          href: service-management/reverse-changes-in-a-dispatch-board.md
+                        - name: Vise ikke fordelte serviceordrer
+                          href: service-management/view-undispatched-service-orders.md
+                        - name: 'Endre en servicestykkliste '
+                          href: service-management/modify-service-bom.md
+                    - name: Levere service
+                      items:
+                        - name: Kreditere abonnementstransaksjoner
+                          href: service-management/credit-subscription-transactions.md
+                        - name: Opprette abonnementsgebyrtransaksjoner
+                          href: service-management/create-subscription-fee-transactions.md
+                        - name: Avsetning av abonnementer
+                          href: service-management/accruing-subscriptions.md
+                        - name: Flytte serviceordrelinjer
+                          href: service-management/move-service-order-lines.md
+                        - name: Annuller serviceordrer
+                          href: service-management/cancel-service-orders.md
+                        - name: Opprette serviceordrer manuelt
+                          href: service-management/create-service-orders-manually.md
+                        - name: Avsette abonnementsomsetning
+                          href: service-management/accrue-subscription-revenue.md
+                        - name: Slette serviceordrer
+                          href: service-management/delete-service-orders.md
+                        - name: Fakturere abonnementstransaksjoner
+                          href: service-management/invoice-subscription-transactions.md
+        - name: Transportstyring
+          items:
+            - name: Oversikt over transportstyring
+              href: transportation/transportation-management-overview.md
+            - name: Transportstyringsmotorer
+              href: transportation/transportation-management-engines.md
+            - name: Opprette en ny transportstyringsmotor
+              href: transportation/create-new-transportation-management-engine.md
+            - name: Knytte en indeks for drivstoff til en operatør som et tilbehørsgebyr
+              href: transportation/tasks/associate-fuel-index-carrier-accessorial-charge.md
+            - name: Opprette et fraktbrev
+              href: transportation/create-bill-of-lading.md
+            - name: Planlegge frakttransportruter
+              href: transportation/plan-freight-transportation-routes-multiple-stops.md
+            - name: Planlegge laster ved hjelp av hubkonsolidering
+              items:
+                - name: Oversikt over å planlegge laster ved hjelp av hubkonsolidering
+                  href: transportation/plan-loads-hub-consolidation.md
+                - name: Planlegge laster og leveringer ved hjelp av arbeidsområdet for lastplanlegging
+                  href: warehousing/tasks/use-load-planning-workbench-plan-loads-shipments.md
+            - name: Inkludere containervekt og -volum for last
+              href: transportation/include-container-weight-volume-on-load.md
+            - name: Avstemme frakt manuelt
+              href: transportation/tasks/reconcile-freight-manually.md
+            - name: Avstemme frakt
+              href: transportation/reconcile-freight-transportation-management.md
+            - name: Registrere innsjekking og utsjekking for sjåfør for en avtale
+              href: transportation/tasks/register-driver-check-check-out-appointment.md
+            - name: Definere en transportørdrivstoffindeks
+              href: transportation/tasks/set-up-carrier-fuel-index.md
+            - name: Definere et transportbetalingsmiddel
+              href: transportation/tasks/set-up-transportation-tender.md
+            - name: Definere tilbehørstilordninger
+              href: transportation/tasks/set-up-accessorial-assignments.md
+            - name: Sette opp en avtale for en last
+              href: transportation/tasks/set-up-appointment-load.md
+            - name: Definere automatisk fraktavstemming
+              href: transportation/tasks/set-up-automatic-freight-reconciliation.md
+            - name: Definere gebyrer for hubtilbehør og tilbehørsmaler
+              href: transportation/tasks/set-up-hub-accessorial-charges-accessorial-masters.md
+            - name: Definere vurderingsstandarder
+              href: transportation/tasks/set-up-rate-masters.md
+            - name: Definere transportører
+              href: transportation/tasks/set-up-shipping-carriers.md
+            - name: Definere transportbegrensninger for en vare
+              href: transportation/tasks/set-up-transportation-constraints-item.md
+        - name: Lagerstyring
+          items:
+            - name: Oversikt over lagerstyring
+              href: warehousing/warehouse-management-overview.md
+            - name: Lagerkonfigurasjon
+              items:
+                - name: Oversikt over lagerkonfigurasjon
+                  href: warehousing/warehouse-configuration.md
+                - name: Definere et lager ved hjelp av en lagerkonfigurasjonsmal
+                  href: inventory/warehouse-template.md
+                - name: Kontrollere arbeid ved hjelp av arbeidsmaler og plasseringsdirektiver
+                  href: warehousing/control-warehouse-location-directives.md
+                - name: Bølgetrinnkoder
+                  href: warehousing/wave-step-codes.md
+                - name: Konfigurere bølgebehandling
+                  href: warehousing/tasks/configure-wave-processing.md
+                - name: Oppdatere forsendelser automatisk
+                  href: warehousing/auto-update-shipment.md
+                - name: Opprette en lokasjonsprofil
+                  href: warehousing/tasks/create-location-profile.md
+                - name: Konfigurere lokasjoner i et WMS-aktivert lager
+                  href: warehousing/tasks/configure-locations-wms-enabled-warehouse.md
+                - name: Planlegg kapasitetsutnyttelse
+                  href: warehousing/schedule-load-utilization.md
+                - name: Planlegge kapasitet for arbeidsmengde
+                  href: warehousing/schedule-workload-capacity.md
+                - name: Definere disposisjonskoder
+                  href: warehousing/tasks/set-up-dispositions-codes.md
+                - name: Måleenhet og lagringspolicyer
+                  href: warehousing/unit-measure-stocking-policies.md
+                - name: Innhold i Power BI-lager
+                  href: ../fin-ops-core/dev-itpro/analytics/warehouse-power-bi-content.md?toc=/fin-and-ops/toc.json
+                - name: Systemgruppering i en åpen arbeidsliste
+                  href: warehousing/system-group-on-open-work-list.md
+                - name: Skanne strekkoder ved hjelp av et kamera i Dynamics 365 for Finance and Operations
+                  href: warehousing/scan-bar-codes-using-a-camera.md
+                - name: Støtte for mobil strekkode
+                  href: warehousing/mobile-barcode-support.md
+                - name: Definere lager for overføringsordrer
+                  href: warehousing/transfer-orders-warehouse.md
+            - name: Arbeidspolicyer for lager
+              items:
+                - name: Oversikt over arbeidspolicyer for lager
+                  href: warehousing/warehouse-work-policies.md
+                - name: Definere arbeidspolicyer for lager
+                  href: warehousing/tasks/set-up-warehouse-work-policies-2016-05.md
+                - name: Flytting av beholdning med tilknyttet arbeid i Lagerstyring
+                  href: warehousing/move-inventory-associated-work.md
+                - name: Opprette en arbeidsklasse
+                  href: warehousing/tasks/create-work-class.md
+                - name: Administrere lagerarbeidere
+                  href: warehousing/manage-warehouse-workers.md
+                - name: Utsatt behandling av lagerarbeid
+                  href: warehousing/deferred-put.md
+            - name: Delvis frigivelse og delvis forsendelse
+              items:
+                - name: Delvis forsendelse av transportlast
+                  href: warehousing/partial-shipping-of-transport-loads.md
+                - name: Satsvis frigivelse av delvis reserverte overføringsordrer
+                  href: warehousing/batch-release-of-partially-reserved-transfer-orders.md
+            - name: Plukking og pakking
+              items:
+                - name: Definere gruppeplukking
+                  href: warehousing/set-up-cluster-picking.md
+                - name: Definere containerbruk
+                  href: warehousing/tasks/set-up-containerization.md
+                - name: Parti- og nummerskiltbekreftelse
+                  href: warehousing/batch-and-license-plate-confirmation.md
+                - name: Aktivere utskrift av nummerskiltetikett
+                  href: warehousing/tasks/license-plate-label-printing.md
+                - name: Skanne strekkoder ved hjelp av et kamera i Dynamics 365 for Finance and Operations
+                  href: warehousing/scan-bar-codes-using-a-camera.md
+                - name: Stykkplukkingsbekreftelse
+                  href: warehousing/piece-picking-confirmation.md
+                - name: Pakkematerialer og -gebyrer
+                  href: warehousing/pack-materials-packing-material-fees.md
+                - name: Definere manuell pakking (bare februar og mai 2016)
+                  href: warehousing/tasks/set-up-manual-packing-2016-02-05.md
+                - name: Definere ny tildeling av vare for plukking med mangler
+                  href: warehousing/tasks/set-up-short-picking-item-reallocation.md
+            - name: Lageropptelling
+              items:
+                - name: Årsakskoder for lagertelling
+                  href: warehousing/reason-codes-for-counting-journals.md
+                - name: Blokkere lager
+                  href: inventory/inventory-blocking.md
+                - name: Syklustelling
+                  href: warehousing/cycle-counting.md
+                - name: 'Definere syklustelling '
+                  href: warehousing/tasks/define-cycle-counting-microsoft-dynamics-365-finance-operations-enterprise-edition-july-2017.md
+                - name: Delvis lokasjonssyklustelling
+                  href: warehousing/partial-location-cycle-counting.md
+                - name: 'Definere delvis prosess for syklustelling for lokasjon '
+                  href: warehousing/tasks/define-partial-location-cycle-counting-process.md
+                - name: Lagerjournal
+                  href: inventory/inventory-journals.md
+                - name: Lagerlokasjon
+                  href: inventory/inventory-locations.md
+                - name: Beholdningsstatus
+                  href: inventory/inventory-statuses.md
+                - name: Lagerbrikkeopptelling
+                  href: inventory/inventory-tag-counting.md
+            - name: Etterfylling
+              items:
+                - name: Oversikt over etterfylling
+                  href: warehousing/replenishment.md
+                - name: Umiddelbar etterfylling
+                  href: warehousing/immediate-replenishment.md
+                - name: Etterfylling med uttak – Kanbaner
+                  href: warehousing/material-replenishment-withdrawal-kanban.md
+                - name: Definere en prosess for minimums-/maksimumsetterfylling
+                  href: warehousing/tasks/set-up-min-max-replenishment-process.md
+                - name: Definere en arbeidsmal for bestillinger
+                  href: ../supply-chain/warehousing/tasks/set-up-work-template-purchase-orders.md
+            - name: Installere og konfigurere lagerappen
+              items:
+                - name: Oversikt over å installere og konfigurere
+                  href: warehousing/install-configure-warehousing-app.md
+                - name: Konfigurere feltnavn i lagerapp
+                  href: warehousing/configure-app-field-names-priorities-warehouse.md
+                - name: Definere mobilenheter for lagerarbeid
+                  href: warehousing/configure-mobile-devices-warehouse.md
+                - name: Definere et menyelement for mobilenhet for å fullføre arbeid i en bestilling
+                  href: warehousing/tasks/set-up-mobile-device-menu.md
+                - name: Definere et menyelement for mobilenhet for å registrere mottatte varer
+                  href: warehousing/tasks/set-up-mobile-device-menu-item-register-received-items.md
+                - name: Opprette et nytt menyelement for en mobilenhet for nummerskiltkonsolidering
+                  href: warehousing/tasks/create-mobile-device-license-plate-consolidation.md
+                - name: Mottak av kombinerte nummerskilt på en mobilenhet
+                  href: warehousing/mixed-license-plate-receiving.md
+                - name: Konfigurere Vis eldre partier i lageret på en mobilenhet
+                  href: warehousing/display-older-batches-within-warehouses.md
+                - name: Plukke eldste parti på en mobilenhet
+                  href: warehousing/pick-oldest-batch.md
+                - name: Rammeverk for prosessveiledning
+                  href: warehousing/process-guide-framework.md
+            - name: Oppgradering og overføring
+              items:
+                - name: Oppgradere lagerstyringsprosesser fra Microsoft Dynamics AX 2012 til Finance and Operations
+                  href: warehousing/upgrade-migration-warehouse-management-processes.md
+            - name: Mottak for registrering og plassering
+              items:
+                - name: Registrere varer for en vare for avanserte lageraktiviteter ved hjelp av en journal for vareankomst
+                  href: warehousing/tasks/register-items-advanced-warehousing.md
+                - name: Registrere varer for en vare for en grunnleggende lageraktivitet ved hjelp av en journal for vareankomst
+                  href: warehousing/tasks/register-items-basic-warehousing.md
+                - name: Direkteoverføre produkter fra mottakende lager til butikker
+                  href: warehousing/tasks/cross-dock-products-receiving-warehouse-stores.md
+                - name: Definere et lokasjonsdirektiv for bestillings
+                  href: transportation/tasks/set-up-location-directive-purchase-order-put-away.md
+                - name: Definere en arbeidsmal for bestillinger
+        - name: Utvikling av Supply Chain Management
+          items:
+            - name: Veiledning til utvikling av Gantt-kontroll
+              href: ../fin-ops-core/dev-itpro/user-interface/gantt-development-guide.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Opprette en ny transportstyringsmotor
+              href: transportation/create-new-transportation-management-engine.md?toc=/dynamics365/supply-chain/toc.json
+    - name: Utvikling og administrasjon for Finance and Operations-apper
+      href: ../fin-ops-core/dev-itpro/index.md
+    - name: Dynamics 365 Finance
+      href: ../finance/index.md
+    - name: Dynamics 365 Retail
+      href: ../retail/index.md
