@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 7f785b0935b952d6de68fd120a3639077ad124bd
-ms.sourcegitcommit: c0b581e4c647b6c47bc14d1d7bfe267832afecba
+ms.openlocfilehash: 174c816c7a6442b07e4722c03045293b94c59153
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/21/2019
-ms.locfileid: "1913101"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2024666"
 ---
 # <a name="register-consumption"></a>Registrere forbruk
 
@@ -93,5 +93,5 @@ Når du utfører forbruksregistreringer, legges finansdimensjoner som er knyttet
 *Vareregistreringer:* Først blir finansdimensjoner fra journalhodet lagt til. Så legges finansdimensjoner fra det tilknyttede arbeidsordreprosjektet til. Deretter legges finansdimensjoner fra området til. Til slutt legges finansdimensjoner fra varen til.
 
 >[!NOTE]
->For alle tre registreringstypene valideres finansdimensjonskombinasjonen, og ugyldige kombinasjoner er tomme. Dette er standardoppsett i Dynamics 365 for Finance and Operations.
+>For alle tre registreringstypene valideres finansdimensjonskombinasjonen, og ugyldige kombinasjoner er tomme. Dette er standardoppsett i Finance and Operations.
 

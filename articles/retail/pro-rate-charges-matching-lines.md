@@ -19,29 +19,29 @@ ms.search.industry: Retail
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: 07eea8fd7af4da611b4bd0c9340923f8894fab2c
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: d9f36da025528272b1a95456acf597dd5d923819
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1526021"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2025178"
 ---
 # <a name="prorate-header-charges-to-matching-sales-lines"></a>Fordele hodegebyrer til samsvarende salgslinjer
 
 
 [!include [banner](includes/banner.md)]
 
-Dette emnet beskriver funksjonen for å gruppere automatiske gebyrer på hodenivå og fordele dem proporsjonalt til detaljhandelslinjer. Denne funksjonen er tilgjengelig for transaksjoner som opprettes ved salgsstedet (POS) i Microsoft Dynamics 365 for Retail versjon 10.0.1 og salg som er opprettet i et telefonsenter i Microsoft Dynamics 365 for Retail versjon 10.0.2.
+Dette emnet beskriver funksjonen for å gruppere automatiske gebyrer på hodenivå og fordele dem proporsjonalt til detaljhandelslinjer. Denne funksjonen er tilgjengelig for transaksjoner som opprettes ved salgsstedet (POS) i Retail-versjon 10.0.1 og salg som er opprettet i et telefonsenter i Retail-versjon 10.0.2.
 
 Denne funksjonen er tilgjengelig bare hvis funksjonen [avanserte automatiske tillegg](https://docs.microsoft.com/dynamics365/unified-operations/retail/omni-auto-charges) er aktivert ved hjelp av alternativet på **Detaljhandelsparametere**-siden. I tillegg kan utvidet beregningsmetode for automatiske gebyrer bare brukes på detaljhandelssalgsordrer som er opprettet ved hjelp av kanaler for detaljhandel (salgsstedet, et telefonsenter og e-handelsplattformen til Dynamics).
 
 Den nye funksjonaliteten gir organisasjoner større fleksibilitet i måten automatiske gebyrer på hodenivå beregnes og brukes på salgstransaksjoner for handel.
 
-I versjoner av Microsoft Dynamics 365 for Retail som er eldre enn versjon 10.0.1, beregnes automatiske gebyrer på hodenivå som har en bestemt leveringsmåte bare når det er samsvar med leveringsmåten som er definert i salgsordrehodet.
+I versjoner av Retail som er eldre enn versjon 10.0.1, beregnes automatiske gebyrer på hodenivå som har en bestemt leveringsmåte bare når det er samsvar med leveringsmåten som er definert i salgsordrehodet.
 
 For eksempel er automatiske gebyrer på hodenivå definert for leveringsmåten **99** og leveringsmåten **11**. Det opprettes en salgsordre, og leveringsmåten **99** er definert i ordrehodet. Men noen av linjene for salg er satt opp slik at de er sendt ved hjelp av leveringsmåten **11**. I dette tilfellet er det bare gebyrer på hodenivå som er knyttet til leveringsmåten **99**, som blir tatt hensyn til og brukt på salgsordren.
 
-I Dynamics 365 for Retail har gebyrer på hodenivå en tilleggsfunksjon som lar deg definere en [konfigurasjon av fordelt tillegg](https://docs.microsoft.com/dynamics365/unified-operations/retail/configure-call-center-delivery) som er basert på ordreverdien. Hvis orderverdien er mellom USD 50,00 og USD 200,00, kan en organisasjon for eksempel belaste et fraktgebyr på USD 5,00. Hvis orderverdien er mellom USD 200,01 og USD 500,00, kan imidlertid fraktkostnadene være USD 4,00.
+I Retail har gebyrer på hodenivå en tilleggsfunksjon som lar deg definere en [konfigurasjon av fordelt tillegg](https://docs.microsoft.com/dynamics365/unified-operations/retail/configure-call-center-delivery) som er basert på ordreverdien. Hvis orderverdien er mellom USD 50,00 og USD 200,00, kan en organisasjon for eksempel belaste et fraktgebyr på USD 5,00. Hvis orderverdien er mellom USD 200,01 og USD 500,00, kan imidlertid fraktkostnadene være USD 4,00.
 
 Noen organisasjoner ønsker fordelene med beregningen av fordelte tillegg som følger med gebyrer på hodenivå. I scenarioer med blandede leveringsmåter vil de også være sikre på at tilleggene som er beregnet, er basert på treff med leveringsmåten som er definert på hver salgslinje.
 

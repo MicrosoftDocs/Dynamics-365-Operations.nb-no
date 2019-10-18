@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: be5e512dcb23ce525439f11b7674cc35d7306159
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: cd86bf525ae33f78fb472e6c333083592ff8a012
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1570509"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2024390"
 ---
 # <a name="inventory-statuses"></a>Beholdningsstatuser
 
@@ -42,7 +42,7 @@ Her er noen eksempler på hvordan du kan bruke lagerstatuser:
 
 En beholdningsstatus er én av dimensjonene i lagringsdimensjonsgruppen. Lagerstatuser kan kategoriseres som tilgjengelige eller utilgjengelige, og du kan bruke parameteren **Lagerblokkering** til å blokkere varer som har en tilgjengelig lagerstatus. Varer som har en blokkert status, regnes som aktuell beholdning og kan ikke brukes i produksjonsordrer, salgsordrer, overføringsordrer eller utgående transaksjoner.
 
-Du kan bruke lagervarer som har enten tilgjengelig eller utilgjengelig lagerstatus for innkommende arbeid. La oss si at du for eksempel oppretter en tilgjengelig status kalt **Klar**, en utilgjengelig status kalt **Skadet**, og en blokkert status kalt **Sperret**. Hvis du oppretter en bestilling for mottatte eller returnerte varer og eventuelle varer er skadet eller ødelagt, kan du endre lagerstatusen for disse varene til **Skadet** på bestillingslinjen. Etter at disse varene er mottatt, settes statusen automatisk til **Sperret**. Hvis du skanner de skadede varene med en mobil enhet, kan Microsoft Dynamics 365 for Finance and Operations bruke lokasjonsdirektiver og arbeidsmaler til å vise informasjon om en passende lokasjon eller et lokasjonsområde der du kan plassere disse varene. Når det gjelder returnerte varer, opprettes avgangstypen **Reservering** på **Lagertransaksjoner**-siden.
+Du kan bruke lagervarer som har enten tilgjengelig eller utilgjengelig lagerstatus for innkommende arbeid. La oss si at du for eksempel oppretter en tilgjengelig status kalt **Klar**, en utilgjengelig status kalt **Skadet**, og en blokkert status kalt **Sperret**. Hvis du oppretter en bestilling for mottatte eller returnerte varer og eventuelle varer er skadet eller ødelagt, kan du endre lagerstatusen for disse varene til **Skadet** på bestillingslinjen. Etter at disse varene er mottatt, settes statusen automatisk til **Sperret**. Hvis du skanner de skadede varene med en mobil enhet, kan Finance and Operations bruke lokasjonsdirektiver og arbeidsmaler til å vise informasjon om en passende lokasjon eller et lokasjonsområde der du kan plassere disse varene. Når det gjelder returnerte varer, opprettes avgangstypen **Reservering** på **Lagertransaksjoner**-siden.
 
 Når det gjelder utgående arbeid, bruker du varer som har en tilgjengelig lagerstatus. Hvis du har varer med statusen **Brutt** og hovedplanlegging kjøres på disse varene, regnes de som manglende, og beholdningen etterfylles automatisk.
 

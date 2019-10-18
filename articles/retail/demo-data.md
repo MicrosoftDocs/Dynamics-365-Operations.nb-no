@@ -1,6 +1,6 @@
 ---
 title: Skjermoppsett for demonstrasjonsdata i Retail Modern POS (MPOS) og Cloud POS
-description: Dette emnet inneholder informasjon om skjermoppsett som er inkludert i settet med demonstrasjonsdata for salgsstedsopplevelser i Microsoft Dynamics 365 for Retail.
+description: Dette emnet inneholder informasjon om skjermoppsett som er inkludert i settet med demonstrasjonsdata for salgsstedsopplevelser i Dynamics 365 Retail.
 author: zlinster
 manager: AnnBe
 ms.date: 10/05/2017
@@ -19,18 +19,18 @@ ms.search.industry: Retail
 ms.author: zlinster
 ms.search.validFrom: 2017-10-05
 ms.dyn365.ops.version: Retail April 2017 update
-ms.openlocfilehash: 8fe0ea3e7715fcbebc3ed590c85ee399c6192584
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 8c8d2fac82541b768f8e0a31049177bdc1262d44
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1570650"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2019330"
 ---
 # <a name="demo-data-screen-layouts-in-retail-modern-pos-mpos-and-cloud-pos"></a>Skjermoppsett for demonstrasjonsdata i Retail Modern POS (MPOS) og Cloud POS
 
 [!include [banner](includes/banner.md)]
 
-Dette emnet inneholder informasjon om skjermoppsett som er inkludert i settet med demonstrasjonsdata for salgsstedsopplevelser i Microsoft Dynamics 365 for Retail.
+Dette emnet inneholder informasjon om skjermoppsett som er inkludert i settet med demonstrasjonsdata for salgsstedsopplevelser i Dynamics 365 Retail.
 
 ## <a name="overview"></a>Oversikt
 
@@ -40,7 +40,7 @@ Eksempelskjermoppsett som er inkludert i Retail-demonstrasjonsdata har innhold s
 
 ## <a name="anatomy-of-a-screen-layout-id"></a>Innholdet i en skjermoppsett-ID
 
-Du kan finne skjermoppsett i Retail ved å gå til **Retail** \> **Kanaloppsett** \> **Salgsstedsoppsett** \> **Salgssted** \> **Skjermoppsett**.
+Du kan finne skjermoppsett ved å gå til **Retail** \> **Kanaloppsett** \> **Salgsstedsoppsett** \> **Salgssted** \> **Skjermoppsett**.
 
 ![Skjermoppsettside i Retail](../retail/media/demo-screen-layouts-fig-2-1.png)
 
@@ -107,7 +107,7 @@ Tabellen nedenfor viser oppsettstørrelsene som finnes for vanlige skjermoppløs
 \* Disse ekstra oppsettstørrelsene er bare tilgjengelige i oppsett for Adventure Works og Fabrikam.
 
 > [!TIP]
-> POS velger automatisk oppsettstørrelser basert på den nærmeste størrelsen som er tilgjengelig for skjermoppløsningen for gjeldende appvindu. Hvis du vil finne skjermoppsett-ID og oppsettoppløsning som brukes for øyeblikket i Retail Modern POS (MPOS) eller Retail Cloud POS (CPOS), kan du åpne siden **Innstillinger** og se i delen **Øktinformasjon**. Du kan også se den faktiske vindusoppløsningen for gjeldende appe eller nettleserramme. Når du har denne informasjonen, kan du finne kilden til oppsettinnholdet i Retail ved å gå til **Kanaloppsett** \> **Salgsstedsoppsett** \> **Salgssted** \> **Skjermoppsett**.
+> POS velger automatisk oppsettstørrelser basert på den nærmeste størrelsen som er tilgjengelig for skjermoppløsningen for gjeldende appvindu. Hvis du vil finne skjermoppsett-ID og oppsettoppløsning som brukes for øyeblikket i Retail Modern POS (MPOS) eller Retail Cloud POS (CPOS), kan du åpne siden **Innstillinger** og se i delen **Øktinformasjon**. Du kan også se den faktiske vindusoppløsningen for gjeldende appe eller nettleserramme. Når du har denne informasjonen, kan du finne kilden til oppsettinnholdet ved å gå til **Kanaloppsett** \> **Salgsstedsoppsett** \> **Salgssted** \> **Skjermoppsett**.
 
 ![Skjermoppsett og oppsettoppløsninger/-størrelser og Retail POS](../retail/media/demo-screen-layouts-fig-3-1.png)
 

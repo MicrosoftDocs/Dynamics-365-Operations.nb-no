@@ -19,18 +19,18 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Retail July 2017 update
-ms.openlocfilehash: 9e88a8b22b73aca5c2cee6984ecad3c62e597102
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 63cad6b2f7240bb14fe7a9237498c0140df77774
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1568005"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2025035"
 ---
 # <a name="retail-statements"></a>Detaljhandelsutdrag
 
 [!include [banner](includes/banner.md)]
 
-I Microsoft Dynamics 365 for Retail brukes posteringsprosessen for utdraget til å ta hensyn til transaksjoner som forekommer i sky-salgsstedet eller Modern POS (MPOS). Posteringsprosessen for utdrag bruker distribusjonstidsplanen til å hente et sett med salgsstedstransaksjoner til klienten på hovedkontoret. Parameterne som er definert på sidene **Detaljhandelsparametere** og **Lagre**, brukes til å velge transaksjonene som hentes til enkeltstående utdrag.
+I Dynamics 365 Retail brukes posteringsprosessen for utdraget til å ta hensyn til transaksjoner som forekommer i sky-salgsstedet eller Modern POS (MPOS). Posteringsprosessen for utdrag bruker distribusjonstidsplanen til å hente et sett med salgsstedstransaksjoner til klienten på hovedkontoret. Parameterne som er definert på sidene **Detaljhandelsparametere** og **Lagre**, brukes til å velge transaksjonene som hentes til enkeltstående utdrag.
 
 Illustrasjonen nedenfor viser utdragposteringsprosessen. I denne prosessen vil transaksjoner som registreres i salgsstedet, overføres til klienten ved hjelp av Detaljhandel Planlegger. Når klienten mottar transaksjonene, kan du opprette, beregne og bokføre transaksjonskontoutdraget for butikken.
 
@@ -85,6 +85,6 @@ Hvis merket for **Poster som arbeidsdag** fjernes for den samme butikken, genere
 Når du posterer et utdrag, opprettes salgsordrer og fakturaer for detaljhandelssalgene i utdraget.
 
 - Hentesalg aggregeres i én salgsordre og faktureres til standardkunden som er tilordnet butikken.
-- Detaljhandelsalg der en kunde ble lagt til for transaksjonen i Microsoft Dynamics 365 for Retail POS, genererer separate salgsordrer og fakturaer, én for hver unike kunde.
+- Detaljhandelsalg der en kunde ble lagt til for transaksjonen i Retail POS, genererer separate salgsordrer og fakturaer, én for hver unike kunde.
 
 Betalingsjournaler opprettes automatisk for betalingene i utdraget, og lageret oppdateres for salgsstedsbutikken.

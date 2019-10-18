@@ -17,18 +17,19 @@ ms.search.industry: retail
 ms.author: ShalabhjainMSFT
 ms.search.validFrom: 2017-10-30
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 6c813cfea9b570e8dfd5dbe7f3ca1f4ba8594420
-ms.sourcegitcommit: ffc37f7c2a63bada3055f37856a30424040bc9a3
+ms.openlocfilehash: 57f4b58a11606a1193a1124a426c837ddfab9533
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "1577986"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2023711"
 ---
 # <a name="show-order-notifications-in-the-point-of-sale-pos"></a>Vise ordrevarslinger på salgsstedet (POS)
 
 [!include [banner](includes/banner.md)]
 
-I moderne detaljhandelsmiljø har butikkansatte forskjellige oppgaver, for eksempel hjelpe kunder, slå inn transaksjoner, utføre lagertelling og motta ordrer i butikken. Salgsstedsklienten (POS) er ett enkelt program som gjør det mulig for ansatte å utføre disse oppgavene og mye mer. Fordi forskjellige oppgaver utføres i løpet av dagen, kan det hende at ansatte trenger å bli varslet når noe krever deres oppmerksomhet. Varslingsrammeverket i POS hjelper med dette ved at forhandlerne kan konfigurere rollebaserte meldinger. I Microsoft Dynamics 365 for Retail med programoppdatering 5 kan disse meldingene bare konfigureres for salgsstedsoperasjoner.
+I moderne detaljhandelsmiljø har butikkansatte forskjellige oppgaver, for eksempel hjelpe kunder, slå inn transaksjoner, utføre lagertelling og motta ordrer i butikken. Salgsstedsklienten (POS) er ett enkelt program som gjør det mulig for ansatte å utføre disse oppgavene og mye mer. Fordi forskjellige oppgaver utføres i løpet av dagen, kan det hende at ansatte trenger å bli varslet når noe krever deres oppmerksomhet. Varslingsrammeverket i POS hjelper med dette ved at forhandlerne kan konfigurere rollebaserte meldinger. I Dynamics 365 for Retail med programoppdatering 5 kan disse meldingene bare konfigureres for salgsstedsoperasjoner.
+
 
 For øyeblikket kan systemet bare vise meldinger for ordreoppfyllelsesoperasjoner. Men fordi rammeverket er utformet for å være utvidbar, skal utviklerne til slutt kunne skrive en varslingsbehandler for alle typer operasjoner, og vise meldingene for operasjonen på salgsstedet.
 
@@ -68,7 +69,8 @@ Illustrasjonen nedenfor viser innstillingene for aktivt innhold i rutenettet for
 
 ![Innstillinger for aktivt innhold i rutenettet for knappen](./media/ButtonGridDesigner.png "Innstillinger for aktivt innhold i rutenettet for knappen")
 
-Hvis du vil vise varslingsantallet på en knapp, må du kontrollere at riktig skjermoppsett oppdateres. Hvis du vil bestemme skjermoppsettet som brukes av POS, velger du **Innstillinger**-ikonet øverst til høyre, og noterer **Skjermoppsett-ID** og **Oppsettsoppløsning**. Med Edge-leseren går du nå til **Skjermoppsett**-siden i Dynamics 365 for Finance and Operations, finner **Skjermoppsett-ID** og **Oppsettsoppløsning** som ble identifisert ovenfor, og merker av for **Aktiver direkte innhold**. Gå til **Detaljhandel \> IT for detaljhandel \> Distribusjonsplan** og kjør 1090 (registre)-jobben for å synkronisere oppsettsendringer.
+Hvis du vil vise varslingsantallet på en knapp, må du kontrollere at riktig skjermoppsett oppdateres. Hvis du vil bestemme skjermoppsettet som brukes av POS, velger du **Innstillinger**-ikonet øverst til høyre, og noterer **Skjermoppsett-ID** og **Oppsettsoppløsning**. Med Edge-leseren går du nå til **Skjermoppsett**-siden i , finner **Skjermoppsett-ID** og **Oppsettsoppløsning** som ble identifisert ovenfor, og merker av for **Aktiver direkte innhold**. Gå til **Detaljhandel \> IT for detaljhandel \> Distribusjonsplan** og kjør 1090 (registre)-jobben for å synkronisere oppsettsendringer.
+
 
 ![Finn skjermoppsettet som brukes av POS](./media/Choose_screen_layout.png "Finn skjermoppsettet ")
 

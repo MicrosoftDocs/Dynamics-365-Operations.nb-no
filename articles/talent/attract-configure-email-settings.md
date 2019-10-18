@@ -1,6 +1,6 @@
 ---
-title: Konfigurere e-postinnstillinger i Microsoft Dynamics 365 for Talent - Attract
-description: Dette emnet beskriver hvordan konfigurerer innstillinger for e-post som sendes av Microsoft Dynamcis 365 for Talent - Attract.
+title: Konfigurere e-postinnstillinger i Microsoft Dynamics 365 Talent – Attract
+description: Dette emnet beskriver hvordan konfigurerer innstillinger for e-post som sendes av Microsoft Dynamcis 365 Talent – Attract.
 author: andreabichsel
 manager: AnnBe
 ms.date: 06/04/2019
@@ -19,18 +19,18 @@ ms.search.industry: ''
 ms.author: anbichse
 ms.search.validFrom: 2019-06-04
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: a8cf59064dd2f66ee50a0b0566aa712ba1f72dea
-ms.sourcegitcommit: 7c49475402632069685df714546770d30804af7f
+ms.openlocfilehash: c891a36f01d36774bd921475fa5995d207cd2d51
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "1739501"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2008668"
 ---
 # <a name="configure-email-settings"></a>Konfigurere e-postinnstillinger
 
 [!include[banner](../includes/banner.md)]
 
-Varemerket ditt vekker tillit og hjelper deg å utvikle et forhold til kandidater selv før de søker på stillinger. Positive oppfatninger av varemerket tiltrekker de største talentene og øker lojaliteten til eksisterende ansatte. Microsoft Dynamics 365 for Talent: Attract gjør at du kan konfigurere e-postmeldinger slik at de gjenspeiler firmaets varemerke. Derfor kan du gi jobbkandidater en konsekvent opplevelse etter hvert som de går gjennom søknadsprosessen.
+Varemerket ditt vekker tillit og hjelper deg å utvikle et forhold til kandidater selv før de søker på stillinger. Positive oppfatninger av varemerket tiltrekker de største talentene og øker lojaliteten til eksisterende ansatte. Microsoft Dynamics 365 Talent: Attract lar deg konfigurere e-postmeldinger slik at de gjenspeiler firmaets varemerke. Derfor kan du gi jobbkandidater en konsekvent opplevelse etter hvert som de går gjennom søknadsprosessen.
 
 Med Attract kan du utføre følgende handlinger:
 

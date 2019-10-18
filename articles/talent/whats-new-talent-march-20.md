@@ -1,6 +1,6 @@
 ---
-title: Hva er nytt eller endret i Dynamics 365 for Talent (20. mars 2019)?
-description: Dette emnet beskriver funksjoner som enten er nye eller endret i Microsoft Dynamics 365 for Talent.
+title: Hva er nytt eller endret i Dynamics 365 Talent (20. mars 2019)?
+description: Dette emnet beskriver funksjoner som enten er nye eller endret i Microsoft Dynamics 365 Talent.
 author: Darinkramer
 manager: AnnBe
 ms.date: 03/20/2019
@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-03-20
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: d316aff83bd9f60f054a970e223777db5e214adb
-ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
+ms.openlocfilehash: c16082bb18ac5c170aab30f1a2033e0790cbacc1
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "1741642"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2026012"
 ---
-# <a name="whats-new-or-changed-in-dynamics-365-for-talent-march-20-2019"></a>Hva er nytt eller endret i Dynamics 365 for Talent (20. mars 2019)?
+# <a name="whats-new-or-changed-in-dynamics-365-talent-march-20-2019"></a>Hva er nytt eller endret i Dynamics 365 Talent (20. mars 2019)?
 
 [!include [banner](includes/banner.md)]
 
-Dette emnet beskriver funksjoner som enten er nye eller endret i Microsoft Dynamics 365 for Talent.
+Dette emnet beskriver funksjoner som enten er nye eller endret i Microsoft Dynamics 365 Talent.
 
 ## <a name="changes-in-attract"></a>Endringer i Attract
 
@@ -80,7 +80,7 @@ Endringer er gjort for å løse et problem når du redigerer navnerekkefølgen i
 I mange organisasjoner kan kompensasjons- og fordelsansvarlige bare ha tilgang til bestemte kompensasjonsposter. Disse kan være for ledere eller regionale ansatte. Med denne endringen kan HR administrere og vedlikeholde kompensasjonsplanene for ulike ansattgrupper i organisasjonen. Faste og variable planer kan tilordnes til sikkerhetsroller, som bestemmer tilgangen til planene og ansattdataene som er knyttet til dem, for eksempel lønns- eller bonusposter. Bare rollene der tilgang er gitt, kan behandle kompensasjon for disse ansatte.
 
 ###  <a name="email-support-for-alerts"></a>E-poststøtte for varsler
-Med Platform update 24 kan brukere opprette varslingsregler som automatisk leverer e-postmeldinger til kontakter når de utløses av en hendelse.
+Med Platform update 24 for Finance and Operations kan brukere opprette varslingsregler som automatisk leverer e-postmeldinger til kontakter når de utløses av en hendelse.
 
 ### <a name="duplicate-employee-check-interface-changes"></a>Kontroller av dupliserte ansatte: Endringer i grensesnittet
 Med denne endringen oppdages duplikater når du angir navnefelt, og statusen viser hvor mange duplikater som ble funnet. Du kan velge den angitte lenken for å åpne en ny side for å vurdere om du vil bruke resultatet som ble funnet. For å unngå å forstyrre dataregistreringen åpnes duplikatskjemaet ikke automatisk.

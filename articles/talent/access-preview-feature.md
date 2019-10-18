@@ -1,6 +1,6 @@
 ---
-title: Tilgang til forhåndsvisningsfunksjoner i Microsoft Dynamics 365 for Talent
-description: Dette emnet beskriver hvordan en administrator kan aktivere forhåndsvisningsfunksjonene i Microsoft Dynamics 365 for Talent, og det viser hvilke funksjoner som er aktivert for forhåndsvisning.
+title: Tilgang til forhåndsvisningsfunksjoner i Microsoft Dynamics 365 Talent
+description: Dette emnet beskriver hvordan en administrator kan aktivere forhåndsvisningsfunksjonene i Microsoft Dynamics 365 Talent, og det viser hvilke funksjoner som er aktivert for forhåndsvisning.
 author: tracykeya
 manager: AnnBe
 ms.date: 05/30/2019
@@ -18,20 +18,20 @@ ms.search.region: Global
 ms.author: trkeya
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.1.0, Talent April 2019 update
-ms.openlocfilehash: 6a5aa8d6ea72ec3d3910edea291c4340ab607326
-ms.sourcegitcommit: 7c49475402632069685df714546770d30804af7f
+ms.openlocfilehash: e607c2ba4b544d60c97d98bd49b07d912d83ebc6
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "1739593"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2008708"
 ---
 # <a name="manage-preview-features"></a>Administrere forhåndsvisningsfunksjoner
 
 [!include[banner](../includes/banner.md)]
 
-Som en del av vår kontinuerlige distribusjonen av funksjonalitet for administrasjon av menneskelig kapital (HCM) for Microsoft Dynamics 365 for Talent vil vi at kunder får nye funksjoner så snart som mulig. Administratorer kan se og bruke forhåndsvisning av funksjoner i miljøet. Disse funksjonene er nesten klar for generelle tilgjengeligheten og har gjennomgått omfattende testing. Vi er bare ute etter en endelig runde med tilbakemelding og godkjenning før vi gjør dem generelt tilgjengelige.
+Som en del av vår kontinuerlige distribusjonen av funksjonalitet for administrasjon av menneskelig kapital (HCM) for Microsoft Dynamics 365 Talent vil vi at kunder får nye funksjoner så snart som mulig. Administratorer kan se og bruke forhåndsvisning av funksjoner i miljøet. Disse funksjonene er nesten klar for generelle tilgjengeligheten og har gjennomgått omfattende testing. Vi er bare ute etter en endelig runde med tilbakemelding og godkjenning før vi gjør dem generelt tilgjengelige.
 
-Dette emnet beskriver hvordan du kan aktivere forhåndsvisningsfunksjonene, og det viser hvilke funksjoner som er tilgjengelige for forhåndsvisning. Denne listen oppdateres etter funksjoner som er frigitt til generelle tilgjengeligheten og nye funksjoner som utgis for å forhåndsvise. Det gis ingen varsling når nye funksjoner er frigitt til å forhåndsvise. Brukere starter bare for å se funksjonene. Hvis du vil ha mer informasjon om nye funksjoner i Talent, kan du se [Hva er nytt eller endret i Dynamics 365 for Talent](./whats-new.md) og [Produktmerknader for Dynamics 365 og Power Platform](https://docs.microsoft.com/business-applications-release-notes).
+Dette emnet beskriver hvordan du kan aktivere forhåndsvisningsfunksjonene, og det viser hvilke funksjoner som er tilgjengelige for forhåndsvisning. Denne listen oppdateres etter funksjoner som er frigitt til generelle tilgjengeligheten og nye funksjoner som utgis for å forhåndsvise. Det gis ingen varsling når nye funksjoner er frigitt til å forhåndsvise. Brukere starter bare for å se funksjonene. Hvis du vil ha mer informasjon om nye funksjoner i Talent, kan du se [Hva er nytt eller endret i Dynamics 365 Talent](./whats-new.md) og [Produktmerknader for Dynamics 365 og Power Platform](https://docs.microsoft.com/business-applications-release-notes).
 
 ## <a name="enable-or-disable-preview-features"></a>Aktivere eller deaktivere forhåndsvisning av funksjoner
 
@@ -40,9 +40,9 @@ Hvis du vil ha tilgang til forhåndsvisningsfunksjoner, må du først aktivere d
 > [!IMPORTANT]
 > Når du aktiverer innstillingen **Forhåndsvisningsfunksjoner**, aktiverer du forhåndsvisningsfunksjoner for alle brukere i organisasjonen som er i miljøet. Når du deaktiverer innstillingen, kan du deaktivere forhåndsvisningsfunksjoner og gjøre dem utilgjengelig for brukerne. Forhåndsvisningsfunksjoner har begrenset støtte i Talent. Du kan bruke færre personvern- og sikkerhetstiltak, og de er ikke inkludert i Talent-servicenivåavtalen (SLA). Du bør ikke bruke forhåndsvisningsfunksjoner til å behandle personlige data (det vil si all informasjon som kan identifisere deg), eller til å behandle andre data som er gjenstand for juridiske eller samsvarskrav.
 
-### <a name="attract"></a>Tiltrekk
+### <a name="attract"></a>Attract
 
-1. Logg på Microsoft Dynamics 365 for Talent: Attract.
+1. Logg på Microsoft Dynamics 365 Talent: Attract.
 2. På **Oppsett**-menyen (tannhjulssymbolet) i øvre høyre hjørne, velg **Administrasjonssenter**.
 3. På fanen **Funksjonsbehandling** velger du alternativet ved siden av **Forhåndsvisningsfunksjoner**, slik at det blir blått og viser **På**.
 
@@ -69,11 +69,11 @@ Hvis du vil ha tilgang til forhåndsvisningsfunksjoner, må du først aktivere d
 
 ### <a name="onboard"></a>Jobbintroduksjon
 
-Ingen forhåndsvisningsfunksjoner er tilgjengelige for Microsoft Dynamics 365 for Talent: Onboard.
+Ingen forhåndsvisningsfunksjoner er tilgjengelige for Microsoft Dynamics 365 Talent: Onboard.
 
 ## <a name="features-that-are-currently-in-preview"></a>Funksjoner som for øyeblikket forhåndsvises
 
-### <a name="attract"></a>Tiltrekk
+### <a name="attract"></a>Attract
 
 - [Kandidatanbefaling](./intelligent-recommendations.md#candidate-recommendations) – Hvis mer enn ti kandidater har CV-er eller fullstendige profiler, vises kandidatene som oppfyller jobbkravene best, i delen **Søkere som bør vurderes** på jobbsiden.
 - [Jobbanbefaling](./intelligent-recommendations.md#job-recommendations) – Hvis mer enn ti jobber er lagt inn på ditt karriereområde, gir Attract jobbanbefalinger til kandidater.

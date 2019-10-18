@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: b42f86fc243312d18654b1a048f9dffb29afd187
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: afd4509bc9bdff345e48a590a12cc84ae25aebb8
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1550076"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2018442"
 ---
 # <a name="generate-and-run-out-of-box-reports"></a>Generere og kjøre medfølgende rapporter
 
@@ -43,7 +43,7 @@ Demonstrasjonsdatafirmaet USRT brukes til å opprette dette opptaket. Denne regi
 5. Angi en dato i Til dato-feltet.
 6. Klikk rullegardinknappen i Kanal-feltet for å åpne oppslaget.
 7. Velg Contoso Retail\Contoso Retail USA\Central\Houston i treet.
-    * Viser standard organisasjonshierarki for detaljhandel for rapporteringsformål for detaljhandel.   Gå til Organisasjonsstyring >Organisasjoner > Formål for organisasjonshierarki og velg Detaljhandelsrapportering og under Tilordnede hierarkier kontrollerer du hierarkinavnet for hvilken standardkolonne som er avmerket.      Som en del av demonstrasjonsdataene (brukes i denne oppgaveregistreringen) vil du se at Detaljhandelbutikker etter område er standard organisasjonshierarki for rapporteringsformålet for detaljhandel.     
+    * Viser standard organisasjonshierarki for detaljhandel for rapporteringsformål for detaljhandel.   Gå til Organisasjonsstyring > Organisasjoner > Formål for organisasjonshierarki, og velg Detaljhandelsrapportering og under Tilordnede hierarkier kontrollerer du hierarkinavnet for hvilken standardkolonne som er avmerket. Som en del av demonstrasjonsdataene (brukes i denne oppgaveregistreringen) vil du se at Detaljhandelbutikker etter område er standard organisasjonshierarki for rapporteringsformålet for detaljhandel.     
 8. Klikk OK.
 9. Velg et alternativ i Vis-feltet.
 10. Velg et alternativ i Etter-feltet.
@@ -55,7 +55,7 @@ Demonstrasjonsdatafirmaet USRT brukes til å opprette dette opptaket. Denne regi
 3. Angi en dato i Til dato-feltet.
 4. Klikk rullegardinknappen i Kanal-feltet for å åpne oppslaget.
 5. Velg Contoso Retail\Contoso Retail USA\West\Seattle i treet.
-    * Viser standard organisasjonshierarki for detaljhandel for rapporteringsformål for detaljhandel.   Gå til Organisasjonsstyring >Organisasjoner > Formål for organisasjonshierarki og velg Detaljhandelsrapportering og under Tilordnede hierarkier kontrollerer du hierarkinavnet for hvilken standardkolonne som er avmerket.      Som en del av demonstrasjonsdataene (brukes i denne oppgaveregistreringen) vil du se at Detaljhandelbutikker etter område er standard organisasjonshierarki for rapporteringsformålet for detaljhandel.     
+    * Viser standard organisasjonshierarki for detaljhandel for rapporteringsformål for detaljhandel.   Gå til Organisasjonsstyring > Organisasjoner > Formål for organisasjonshierarki, og velg Detaljhandelsrapportering og under Tilordnede hierarkier kontrollerer du hierarkinavnet for hvilken standardkolonne som er avmerket. Som en del av demonstrasjonsdataene (brukes i denne oppgaveregistreringen) vil du se at Detaljhandelbutikker etter område er standard organisasjonshierarki for rapporteringsformålet for detaljhandel.     
 6. Klikk OK.
 7. Klikk OK.
 

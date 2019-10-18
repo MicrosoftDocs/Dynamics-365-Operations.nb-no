@@ -17,18 +17,18 @@ ms.search.industry: Retail
 ms.author: epopov
 ms.search.validFrom: 2017-10-31
 ms.dyn365.ops.version: Application update 4
-ms.openlocfilehash: 5808b4e13f427bba7a4a0db0eab69755ebd36c33
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 657f638c1a3ebd74aa4a91ad7049967a1aec676f
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1845656"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2025421"
 ---
 # <a name="cash-register-functionality-for-norway"></a>Kassefunksjoner for Norge
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet gir en oversikt over hvilke kasse-funksjoner som er tilgjengelige for Norge i Microsoft Dynamics 365 for Retail. Det inneholder også retningslinjer for hvordan du konfigurerer funksjonen. Funksjonaliteten består av følgende deler:
+Dette emnet gir en oversikt over hvilke kasse-funksjoner som er tilgjengelige for Norge i Dynamics 365 Retail. Det inneholder også retningslinjer for hvordan du konfigurerer funksjonen. Funksjonaliteten består av følgende deler:
 
 - Vanlige POS-funksjoner som er tilgjengelige for kunder i alle land eller områder. Eksempler inkluderer et alternativ som lar deg forhindre at en kopi av en kvittering skrives ut mer enn én gang.
 - Spesifikke funksjoner for Norge, for eksempel digitale signaturer for salgstransaksjoner.
@@ -116,9 +116,9 @@ SAF-T-kasseformatet er implementert i Retail Headquarters ved hjelp av [elektron
 
 ## <a name="setting-up-retail-for-norway"></a>Konfigurere Retail for Norge
 
-Denne delen beskriver innstillingene for Retail som er spesifikke og anbefalte for Norge. Hvis du vil ha mer informasjon om hvordan du definerer detaljhandel, kan du se [dokumentasjonen for Microsoft Dynamics 365 for Retail](../index.md).
+Denne delen beskriver innstillingene som er spesifikke og anbefalte for Norge. Hvis du vil ha mer informasjon om hvordan du definerer detaljhandel, kan du se [dokumentasjonen for Microsoft Dynamics 365 for Retail](../index.md).
 
-Hvis du vil bruke de spesifikke funksjonene for Norge for Retail, må du fullføre disse oppgavene:
+Hvis du vil bruke de spesifikke funksjonene for Norge, må du fullføre disse oppgavene:
 
 - Sett feltet **Land/område** til **NOR** (Norge) i den primære adressen for den juridiske enheten.
 - Sett feltet **ISO-kode** til **NO** (Norge) i POS-funksjonalitetsprofilen for hver butikk som finnes i Norge.
@@ -133,7 +133,8 @@ I tillegg angir du organisasjonsnummeret i **Registreringsnummer**-feltet i hurt
 
 ### <a name="set-up-value-added-tax-vat-per-norwegian-requirements"></a>Definere merverdiavgift (mva) i henhold til norske krav
 
-Du må opprette mva-koder, mva-grupper og mva-grupper for varer. Du må også definere mva-informasjon for produkter og tjenester. Hvis du vil ha mer informasjon om hvordan du definerer og bruker mva i Microsoft Dynamics 365 for Finance and Operations og i Retail, kan du se [Oversikt over merverdiavgift](../../financials/general-ledger/indirect-taxes-overview.md).
+
+Du må opprette mva-koder, mva-grupper og mva-grupper for varer. Du må også definere mva-informasjon for produkter og tjenester. Hvis du vil ha mer informasjon om hvordan du definerer og bruker mva, kan du se [Oversikt over merverdiavgift](../../financials/general-ledger/indirect-taxes-overview.md).
 
 Du må også angi mva-grupper og aktiverer alternativet **Priser inkluderer merverdiavgift** for butikker som finnes i Norge.
 
@@ -218,4 +219,4 @@ Du må også tilordne nødvendige hoveddata til forhåndsdefinerte SAF-T-standar
 
 ### <a name="configure-retail-channel-components"></a>Konfigurer komponenter for detaljhandelskanal
 
-Hvis du vil aktivere spesifikke funksjoner for Norge, må du konfigurere utvidelser for komponenter for detaljhandelskanal. Hvis du vil ha mer informasjon, kan du se [retningslinjene for distribusjon](./emea-nor-loc-deployment-guidelines.md).
+Hvis du vil aktivere spesifikke funksjoner for Norge, må du konfigurere utvidelser for komponenter for kanal. Hvis du vil ha mer informasjon, kan du se [retningslinjene for distribusjon](./emea-nor-loc-deployment-guidelines.md).
