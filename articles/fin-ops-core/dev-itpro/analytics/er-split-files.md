@@ -1,0 +1,50 @@
+---
+title: Dele opp genererte XML-filer basert på filstørrelse og innholdsmengde
+description: Dette emnet gir informasjon om deling av genererte filer basert på filstørrelsen og innholdselementmengden.
+author: NickSelin
+manager: AnnBe
+ms.date: 05/25/2018
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-ax-platform
+ms.technology: ''
+audience: Application User, Developer, IT Pro
+ms.reviewer: kfend
+ms.search.scope: Core, Operations
+ms.custom: 220314
+ms.assetid: 2685df16-5ec8-4fd7-9495-c0f653e82567
+ms.search.region: Global
+ms.author: nselin
+ms.search.validFrom: 2018-04-01
+ms.dyn365.ops.version: Release 8.0
+ms.openlocfilehash: cde95430022d94c42bdd985b5e4a8f9f5147d000
+ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.translationtype: HT
+ms.contentlocale: nb-NO
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "2181364"
+---
+# <a name="split-generated-xml-files-based-on-file-size-and-content-quantity"></a><span data-ttu-id="776f5-103">Dele opp genererte XML-filer basert på filstørrelse og innholdsmengde</span><span class="sxs-lookup"><span data-stu-id="776f5-103">Split generated XML files based on file size and content quantity</span></span>
+
+[!include[banner](../includes/banner.md)]
+
+<span data-ttu-id="776f5-104">Du kan utforme elektronisk rapportering (ER)-formater for å generere utgående dokumenter i XML-format.</span><span class="sxs-lookup"><span data-stu-id="776f5-104">You can design Electronic reporting (ER) formats to generate outgoing documents in XML format.</span></span> <span data-ttu-id="776f5-105">Disse dokumentene kan noen ganger kan godtas bare når de oppfyller bestemte kriterier, for eksempel maksimal filstørrelse eller maksimalt antall noen XML-noder.</span><span class="sxs-lookup"><span data-stu-id="776f5-105">Sometimes, those documents can be accepted only when they meet specific criteria, such a maximum file size or a maximum number of some XML nodes.</span></span> <span data-ttu-id="776f5-106">Du kan utforme ER-formater for å generere elektroniske dokumenter som oppfyller kravene som mottakerne av dokumentene angir.</span><span class="sxs-lookup"><span data-stu-id="776f5-106">You can design ER formats to generate electronic documents that satisfy the requirements that the recipients of those documents specify.</span></span>
+
+- <span data-ttu-id="776f5-107">For FILE-formatelementet kan du definere en grense på filstørrelsen som et ER-uttrykk.</span><span class="sxs-lookup"><span data-stu-id="776f5-107">For the FILE format element, you can define a limit on the file size as an ER expression.</span></span> <span data-ttu-id="776f5-108">Hvis den definerte grensen overskrides når en ER-rapport genereres, avslutter ER laging av filen og flytter deretter videre for å opprette den neste filen.</span><span class="sxs-lookup"><span data-stu-id="776f5-108">If the defined limit is exceeded when an ER report is generated, ER finishes creating the current file and then moves on to create the next file.</span></span>
+- <span data-ttu-id="776f5-109">For et XML ELEMENT-format kan du definere en grense for antall elementer som et ER-uttrykk.</span><span class="sxs-lookup"><span data-stu-id="776f5-109">For any XML ELEMENT format, you can define a limit on the number of elements as an ER expression.</span></span> <span data-ttu-id="776f5-110">Hvis antall XML-noder i filen som genereres, overskrider den definerte grensen når en ER-rapport kjøres, avslutter ER laging av filen og flytter deretter videre for å opprette den neste filen.</span><span class="sxs-lookup"><span data-stu-id="776f5-110">If the number of XML nodes in the file that is generated exceeds the defined limit when an ER report is run, ER finishes creating the current file and then moves on to create the next file.</span></span>
+- <span data-ttu-id="776f5-111">For et XML SEKVENS-formatelement kan du definere en grense for antall underordnede elementer som et ER-uttrykk.</span><span class="sxs-lookup"><span data-stu-id="776f5-111">For any XML SEQUENCE format element, you can define a limit on the number of child elements as an ER expression.</span></span> <span data-ttu-id="776f5-112">Hvis antall nestede XML-noder for formatelementet i filen som genereres, overskrider den definerte grensen når en ER-rapport kjøres, avslutter ER laging av filen og flytter deretter videre for å opprette den neste filen.</span><span class="sxs-lookup"><span data-stu-id="776f5-112">If the number of nested XML nodes of the format element in the generated file exceeds the defined limit when an ER report is run, ER finishes creating the current file and then moves on to create the next file.</span></span>
+- <span data-ttu-id="776f5-113">Du kan merke XML ELEMENT-formatelementer som ikke-brytbare.</span><span class="sxs-lookup"><span data-stu-id="776f5-113">You can mark any XML ELEMENT format element as non-breakable.</span></span> <span data-ttu-id="776f5-114">På denne måten kan du organisere de nestede elementene i XML-noder som genereres under formatelementet, i én enkelt generert fil.</span><span class="sxs-lookup"><span data-stu-id="776f5-114">In this way, you can keep the nested items of XML nodes that are generated under the format element in a single generated file.</span></span>
+
+<span data-ttu-id="776f5-115">I tillegg til å bruke XML ELEMENT- og XML SEKVENS-formatelementene for å legge til XML-noder i den genererte filen, kan du bruke RÅ XML-formatelementet.</span><span class="sxs-lookup"><span data-stu-id="776f5-115">In addition to using the XML ELEMENT and XML SEQUENCE format elements to add XML nodes to the generated file, you can use the RAW XML format element.</span></span> <span data-ttu-id="776f5-116">Men noder som du legger til ved hjelp av RÅ XML-formatelementet, vurderes ikke når antall noder beregnes for å evaluere grensene for antall elementer.</span><span class="sxs-lookup"><span data-stu-id="776f5-116">However, nodes that you add by using the RAW XML format element aren't considered when the number of nodes is calculated to evaluate the limits on the number of elements.</span></span>
+
+<span data-ttu-id="776f5-117">Hvis du har konfigurert filmålene for et FILE-formatelement som er konfigurert for å dele de genererte utdataene når spesifikke grenser er overskredet, sendes hver del av genererte utdata til den konfigurerte fildestinasjonen som en enkeltfil.</span><span class="sxs-lookup"><span data-stu-id="776f5-117">If you configured file destinations for a FILE format element that has been configured to split the generated output whenever specific limits are exceeded, each piece of generated output is sent to the configured file destination as an individual file.</span></span> <span data-ttu-id="776f5-118">For å gi et unikt navn til filene som opprettes ved å dele utdataene, må du konfigurere et ER-uttrykk for FILE-formatelementet.</span><span class="sxs-lookup"><span data-stu-id="776f5-118">To uniquely name the files that are created by splitting the output, you must configure an ER expression for the FILE format element.</span></span> <span data-ttu-id="776f5-119">Hvis du tar med en ER-datakilde av NUMMERSERIE-typen, øker nummerserien for hver del av de delte utdataene.</span><span class="sxs-lookup"><span data-stu-id="776f5-119">If you include an ER data source of the NUMBER SEQUENCE type, the number sequence will be incremented for each piece of the split output.</span></span>
+
+<span data-ttu-id="776f5-120">Hvis du vil vite mer om denne funksjonen, spiller du av oppgaveveiledningen **ER Del XML-filer basert på filstørrelse eller innholdselementmengde**, som er en del av forretningsprosessen **7.5.4.3 Anskaffe/utvikle komponenter for IT-tjeneste/-løsning (10677)**, og kan være lastet ned fra [Microsoft Download Center](https://go.microsoft.com/fwlink/?linkid=874684).</span><span class="sxs-lookup"><span data-stu-id="776f5-120">To learn more about this feature, play the **ER Split XML files based on the file size or content item quantity** task guide, which is part of the **7.5.4.3 Acquire/Develop IT service/solution components (10677)** business process and can be downloaded from the [Microsoft Download Center](https://go.microsoft.com/fwlink/?linkid=874684).</span></span> <span data-ttu-id="776f5-121">Denne oppgaveveiledning hjelper deg med å konfigurere et ER-format for å dele genererte filer basert på begrensninger på filstørrelse og innholdselementmengde.</span><span class="sxs-lookup"><span data-stu-id="776f5-121">This task guide walks you through the process of configuring an ER format to split generated files based on limits on the file size and content item quantity.</span></span> <span data-ttu-id="776f5-122">For å fullføre oppgaveveiledning må du laste ned følgende filer:</span><span class="sxs-lookup"><span data-stu-id="776f5-122">To complete the task guide, you must download the following files:</span></span>
+
+- [<span data-ttu-id="776f5-123">ER-modellkonfigurasjon - XmlFilesSplittingModel.xml</span><span class="sxs-lookup"><span data-stu-id="776f5-123">ER model configuration - XmlFilesSplittingModel.xml</span></span>](https://go.microsoft.com/fwlink/?linkid=874111)
+- [<span data-ttu-id="776f5-124">ER-formatkonfigurasjon - XmlFilesSplittingFormat.xml</span><span class="sxs-lookup"><span data-stu-id="776f5-124">ER format configuration - XmlFilesSplittingFormat.xml</span></span>](https://go.microsoft.com/fwlink/?linkid=874111)
+
+## <a name="additional-resources"></a><span data-ttu-id="776f5-125">Tilleggsressurser</span><span class="sxs-lookup"><span data-stu-id="776f5-125">Additional resources</span></span>
+[<span data-ttu-id="776f5-126">Mål for elektronisk rapportering</span><span class="sxs-lookup"><span data-stu-id="776f5-126">Electronic reporting destinations</span></span>](electronic-reporting-destinations.md)
+
+[<span data-ttu-id="776f5-127">Formeldesigner i elektronisk rapportering</span><span class="sxs-lookup"><span data-stu-id="776f5-127">Formula designer in Electronic reporting</span></span>](general-electronic-reporting-formula-designer.md)

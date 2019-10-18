@@ -17,51 +17,51 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-11-02
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 1128a1d9b54935e44be76bf93549c0cae82e1d38
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: e84f0c18cfb52de2c6c8c40af9a08a88c947e38c
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1518741"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2010574"
 ---
-# <a name="save-task-guides-to-lcs-and-replay-them"></a><span data-ttu-id="c87c8-103">Lagre oppgaveveiledninger i LCS og spille dem av på nytt</span><span class="sxs-lookup"><span data-stu-id="c87c8-103">Save task guides to LCS and replay them</span></span>
+# <a name="save-task-guides-to-lcs-and-replay-them"></a><span data-ttu-id="95dd3-103">Lagre oppgaveveiledninger i LCS og spille dem av på nytt</span><span class="sxs-lookup"><span data-stu-id="95dd3-103">Save task guides to LCS and replay them</span></span>
 
 [!include [banner](includes/banner.md)]
 
-<span data-ttu-id="c87c8-104">**Miljødetaljer**</span><span class="sxs-lookup"><span data-stu-id="c87c8-104">**Environment details**</span></span> 
+<span data-ttu-id="95dd3-104">**Miljødetaljer**</span><span class="sxs-lookup"><span data-stu-id="95dd3-104">**Environment details**</span></span> 
 
-<span data-ttu-id="c87c8-105">Microsoft Dynamics 365 for Talent, som ble distribuert via Microsoft Dynamics Lifecycle Services (LCS)</span><span class="sxs-lookup"><span data-stu-id="c87c8-105">Microsoft Dynamics 365 for Talent, which was deployed via Microsoft Dynamics Lifecycle Services (LCS)</span></span>
+<span data-ttu-id="95dd3-105">Microsoft Dynamics 365 Talent, som ble distribuert via Microsoft Dynamics Lifecycle Services (LCS)</span><span class="sxs-lookup"><span data-stu-id="95dd3-105">Microsoft Dynamics 365 Talent, which was deployed via Microsoft Dynamics Lifecycle Services (LCS)</span></span>
 
-<span data-ttu-id="c87c8-106">**Avgang**</span><span class="sxs-lookup"><span data-stu-id="c87c8-106">**Issue**</span></span>
+<span data-ttu-id="95dd3-106">**Avgang**</span><span class="sxs-lookup"><span data-stu-id="95dd3-106">**Issue**</span></span>
 
-<span data-ttu-id="c87c8-107">Kunden ønsker å lagre nye oppgaveopptak til vedkommendes LCS-prosjekt og deretter spille av de lagrede oppgaveveiledningene på nytt.</span><span class="sxs-lookup"><span data-stu-id="c87c8-107">The customer wants to save new task recordings to his or her LCS project, and then replay the saved task guides.</span></span>
+<span data-ttu-id="95dd3-107">Kunden ønsker å lagre nye oppgaveopptak til vedkommendes LCS-prosjekt og deretter spille av de lagrede oppgaveveiledningene på nytt.</span><span class="sxs-lookup"><span data-stu-id="95dd3-107">The customer wants to save new task recordings to his or her LCS project, and then replay the saved task guides.</span></span>
 
-<span data-ttu-id="c87c8-108">**Oppløsning**</span><span class="sxs-lookup"><span data-stu-id="c87c8-108">**Resolution**</span></span>
+<span data-ttu-id="95dd3-108">**Oppløsning**</span><span class="sxs-lookup"><span data-stu-id="95dd3-108">**Resolution**</span></span>
 
-<span data-ttu-id="c87c8-109">Følg disse trinnene for å lagre oppgaveopptak til LCS.</span><span class="sxs-lookup"><span data-stu-id="c87c8-109">Follow these steps to save a task recording to LCS.</span></span>
+<span data-ttu-id="95dd3-109">Følg disse trinnene for å lagre oppgaveopptak til LCS.</span><span class="sxs-lookup"><span data-stu-id="95dd3-109">Follow these steps to save a task recording to LCS.</span></span>
 
-1. <span data-ttu-id="c87c8-110">Logg på LCS, og velg prosjektet.</span><span class="sxs-lookup"><span data-stu-id="c87c8-110">Sign in to LCS, and select the project.</span></span>
-2. <span data-ttu-id="c87c8-111">Velg **Forretningsprosessmodelerer**-flisen.</span><span class="sxs-lookup"><span data-stu-id="c87c8-111">Select the **Business process modeler** tile.</span></span>
-3. <span data-ttu-id="c87c8-112">Vis denne siden i den "oppdaterte BPM-opplevelsen".</span><span class="sxs-lookup"><span data-stu-id="c87c8-112">View the page in the "Updated BPM experience."</span></span>
-4. <span data-ttu-id="c87c8-113">Velg et bibliotek, og velg deretter **Kopier**.</span><span class="sxs-lookup"><span data-stu-id="c87c8-113">Select a library, and then select **Copy**.</span></span>
-5. <span data-ttu-id="c87c8-114">Angi et navn for Forretningsprosessmodelerer-modellen (BPM).</span><span class="sxs-lookup"><span data-stu-id="c87c8-114">Enter a name for the Business process modeler (BPM) model.</span></span>
-6. <span data-ttu-id="c87c8-115">Logg på Talent fra LCS.</span><span class="sxs-lookup"><span data-stu-id="c87c8-115">Sign in to Talent from LCS.</span></span>
-7. <span data-ttu-id="c87c8-116">I **Søk**-feltet angir du **Hjelp**.</span><span class="sxs-lookup"><span data-stu-id="c87c8-116">In the **Search** field, enter **help**.</span></span> <span data-ttu-id="c87c8-117">Lifecycle Services-hjelpen åpnes.</span><span class="sxs-lookup"><span data-stu-id="c87c8-117">Lifecycle Services Help is opened.</span></span>
-8. <span data-ttu-id="c87c8-118">Velg knappen **Oppdater** for konfigurasjon av Lifecycle Services-hjelpen.</span><span class="sxs-lookup"><span data-stu-id="c87c8-118">Select the **Refresh** button for Lifecycle Services Help configuration.</span></span>
+1. <span data-ttu-id="95dd3-110">Logg på LCS, og velg prosjektet.</span><span class="sxs-lookup"><span data-stu-id="95dd3-110">Sign in to LCS, and select the project.</span></span>
+2. <span data-ttu-id="95dd3-111">Velg **Forretningsprosessmodelerer**-flisen.</span><span class="sxs-lookup"><span data-stu-id="95dd3-111">Select the **Business process modeler** tile.</span></span>
+3. <span data-ttu-id="95dd3-112">Vis denne siden i den "oppdaterte BPM-opplevelsen".</span><span class="sxs-lookup"><span data-stu-id="95dd3-112">View the page in the "Updated BPM experience."</span></span>
+4. <span data-ttu-id="95dd3-113">Velg et bibliotek, og velg deretter **Kopier**.</span><span class="sxs-lookup"><span data-stu-id="95dd3-113">Select a library, and then select **Copy**.</span></span>
+5. <span data-ttu-id="95dd3-114">Angi et navn for Forretningsprosessmodelerer-modellen (BPM).</span><span class="sxs-lookup"><span data-stu-id="95dd3-114">Enter a name for the Business process modeler (BPM) model.</span></span>
+6. <span data-ttu-id="95dd3-115">Logg på Talent fra LCS.</span><span class="sxs-lookup"><span data-stu-id="95dd3-115">Sign in to Talent from LCS.</span></span>
+7. <span data-ttu-id="95dd3-116">I **Søk**-feltet angir du **Hjelp**.</span><span class="sxs-lookup"><span data-stu-id="95dd3-116">In the **Search** field, enter **help**.</span></span> <span data-ttu-id="95dd3-117">Lifecycle Services-hjelpen åpnes.</span><span class="sxs-lookup"><span data-stu-id="95dd3-117">Lifecycle Services Help is opened.</span></span>
+8. <span data-ttu-id="95dd3-118">Velg knappen **Oppdater** for konfigurasjon av Lifecycle Services-hjelpen.</span><span class="sxs-lookup"><span data-stu-id="95dd3-118">Select the **Refresh** button for Lifecycle Services Help configuration.</span></span>
 
-    <span data-ttu-id="c87c8-119">Det nye BPM-biblioteket skal vises, og det skal være aktivt.</span><span class="sxs-lookup"><span data-stu-id="c87c8-119">Your new BPM library should appear, and it should be active.</span></span>
+    <span data-ttu-id="95dd3-119">Det nye BPM-biblioteket skal vises, og det skal være aktivt.</span><span class="sxs-lookup"><span data-stu-id="95dd3-119">Your new BPM library should appear, and it should be active.</span></span>
 
-9. <span data-ttu-id="c87c8-120">Lukk siden.</span><span class="sxs-lookup"><span data-stu-id="c87c8-120">Close the page.</span></span>
-10. <span data-ttu-id="c87c8-121">Opprett et oppgaveopptak.</span><span class="sxs-lookup"><span data-stu-id="c87c8-121">Create a task recording.</span></span>
-11. <span data-ttu-id="c87c8-122">Når du er ferdig, velger **Lagre i Lifecycle Services**.</span><span class="sxs-lookup"><span data-stu-id="c87c8-122">When you've finished, select **Save to Lifecycle Services**.</span></span>
+9. <span data-ttu-id="95dd3-120">Lukk siden.</span><span class="sxs-lookup"><span data-stu-id="95dd3-120">Close the page.</span></span>
+10. <span data-ttu-id="95dd3-121">Opprett et oppgaveopptak.</span><span class="sxs-lookup"><span data-stu-id="95dd3-121">Create a task recording.</span></span>
+11. <span data-ttu-id="95dd3-122">Når du er ferdig, velger **Lagre i Lifecycle Services**.</span><span class="sxs-lookup"><span data-stu-id="95dd3-122">When you've finished, select **Save to Lifecycle Services**.</span></span>
 
     ![Lagre i Lifecycle Services](media/task-guides.png)
 
-12. <span data-ttu-id="c87c8-124">Velg BPM-biblioteket og noden for å lagre oppgaveopptaket.</span><span class="sxs-lookup"><span data-stu-id="c87c8-124">Select the BPM library and node to save the task recording to.</span></span>
+12. <span data-ttu-id="95dd3-124">Velg BPM-biblioteket og noden for å lagre oppgaveopptaket.</span><span class="sxs-lookup"><span data-stu-id="95dd3-124">Select the BPM library and node to save the task recording to.</span></span>
 
-<span data-ttu-id="c87c8-125">Følg denne fremgangsmåten for å spille av en oppgaveveiledningen på nytt fra LCS.</span><span class="sxs-lookup"><span data-stu-id="c87c8-125">Follow these steps to replay a task guide from LCS.</span></span>
+<span data-ttu-id="95dd3-125">Følg denne fremgangsmåten for å spille av en oppgaveveiledningen på nytt fra LCS.</span><span class="sxs-lookup"><span data-stu-id="95dd3-125">Follow these steps to replay a task guide from LCS.</span></span>
 
-1. <span data-ttu-id="c87c8-126">Start oppgaveopptakeren.</span><span class="sxs-lookup"><span data-stu-id="c87c8-126">Start Task recorder.</span></span>
-2. <span data-ttu-id="c87c8-127">Velg **Åpne fra LCS**.</span><span class="sxs-lookup"><span data-stu-id="c87c8-127">Select **Open from LCS**.</span></span>
-3. <span data-ttu-id="c87c8-128">Velg biblioteket og BPM-noden som har den lagrede oppgaveveiledningen.</span><span class="sxs-lookup"><span data-stu-id="c87c8-128">Select the library and the BPM node that have the saved task guide.</span></span>
-4. <span data-ttu-id="c87c8-129">Åpne oppgaveveiledningen.</span><span class="sxs-lookup"><span data-stu-id="c87c8-129">Open the task guide.</span></span>
+1. <span data-ttu-id="95dd3-126">Start oppgaveopptakeren.</span><span class="sxs-lookup"><span data-stu-id="95dd3-126">Start Task recorder.</span></span>
+2. <span data-ttu-id="95dd3-127">Velg **Åpne fra LCS**.</span><span class="sxs-lookup"><span data-stu-id="95dd3-127">Select **Open from LCS**.</span></span>
+3. <span data-ttu-id="95dd3-128">Velg biblioteket og BPM-noden som har den lagrede oppgaveveiledningen.</span><span class="sxs-lookup"><span data-stu-id="95dd3-128">Select the library and the BPM node that have the saved task guide.</span></span>
+4. <span data-ttu-id="95dd3-129">Åpne oppgaveveiledningen.</span><span class="sxs-lookup"><span data-stu-id="95dd3-129">Open the task guide.</span></span>

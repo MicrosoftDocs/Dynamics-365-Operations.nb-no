@@ -1,6 +1,6 @@
 ---
 title: Analysere butikkytelse
-description: Denne artikkelen forklarer hvordan du kan bruke analyse i minnet og i sanntid til å få tilgang til, utforske og få oversikt over butikkytelse, basert på data i Microsoft Dynamics 365 for Retail.
+description: Denne artikkelen forklarer hvordan du kan bruke analyse i minnet og i sanntid til å få tilgang til, utforske og få oversikt over butikkytelse, basert på data i Dynamics 365 Retail.
 author: ashishmsft
 manager: AnnBe
 ms.date: 06/20/2017
@@ -19,29 +19,29 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: c975c021b6db49d1e25fd036f4955c7223e438ea
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: b2ea6ad2e3d9589face06cd5f950973209c17d41
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1569269"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2017788"
 ---
-# <a name="analyze-store-performance"></a><span data-ttu-id="a8a33-103">Analysere butikkytelse</span><span class="sxs-lookup"><span data-stu-id="a8a33-103">Analyze store performance</span></span>
+# <a name="analyze-store-performance"></a><span data-ttu-id="07c3e-103">Analysere butikkytelse</span><span class="sxs-lookup"><span data-stu-id="07c3e-103">Analyze store performance</span></span>
 
 [!include [banner](includes/banner.md)]
 
-<span data-ttu-id="a8a33-104">Denne artikkelen forklarer hvordan du kan bruke analyse i minnet og i sanntid til å få tilgang til, utforske og få oversikt over butikkytelse, basert på data i Microsoft Dynamics 365 for Retail.</span><span class="sxs-lookup"><span data-stu-id="a8a33-104">This article explains how you can use the in-memory and real-time analytics to access, explore, and gain insight about store performance, based on your Microsoft Dynamics 365 for Retail data.</span></span>
+<span data-ttu-id="07c3e-104">Denne artikkelen forklarer hvordan du kan bruke analyse i minnet og i sanntid til å få tilgang til, utforske og få oversikt over butikkytelse, basert på data i Dynamics 365 Retail.</span><span class="sxs-lookup"><span data-stu-id="07c3e-104">This article explains how you can use the in-memory and real-time analytics to access, explore, and gain insight about store performance, based on your Dynamics 365 Retail data.</span></span>
 
-<span data-ttu-id="a8a33-105">Som en del av Dynamics 365 for Retail kan brukere studere butikkytelse i sanntid på tvers av forskjellige nivåer i organisasjonshierarkiet i en valgt periode ved å åpne den medfølgende rapporten **Kanalsammendrag** fra ett av følgende steder:</span><span class="sxs-lookup"><span data-stu-id="a8a33-105">As part of Dynamics 365 for Retail, users can study store performance in real time across different levels of the organization hierarchy over a selected period by opening the out-of-box **Channel summary** report from any of the following locations:</span></span>
+<span data-ttu-id="07c3e-105">Som en del av Retail kan brukere studere butikkytelse i sanntid på tvers av forskjellige nivåer i organisasjonshierarkiet i en valgt periode ved å åpne den medfølgende rapporten **Kanalsammendrag** fra ett av følgende steder:</span><span class="sxs-lookup"><span data-stu-id="07c3e-105">As part of Retail, users can study store performance in real time across different levels of the organization hierarchy over a selected period by opening the out-of-box **Channel summary** report from any of the following locations:</span></span>
 
-- <span data-ttu-id="a8a33-106">Arbeidsområdet **Administrasjon av detaljhandelsbutikk** &gt; **Detaljhandel** &gt; **Kanaler** &gt; **Administrasjon av detaljhandelsbutikk** &gt; **Rapporter** &gt; **Rapport for kanalsammendrag**</span><span class="sxs-lookup"><span data-stu-id="a8a33-106">**Retail store management** workspace &gt; **Retail** &gt; **Channels** &gt; **Retail store management** &gt; **Reports** &gt; **Channel summary report**</span></span>
-- <span data-ttu-id="a8a33-107">Arbeidsområdet **Finans for detaljhandelsbutikk** &gt; **Detaljhandel** &gt; **Kanaler** &gt; **Finans for detaljhandelsbutikk** &gt; **Rapporter** &gt; **Rapport for kanalsammendrag**</span><span class="sxs-lookup"><span data-stu-id="a8a33-107">**Retail store financials** workspace &gt; **Retail** &gt; **Channels** &gt; **Retail store financials** &gt; **Reports** &gt; **Channel summary report**</span></span>
-- <span data-ttu-id="a8a33-108">Delen **Forespørsler og rapporter** &gt; **Detaljhandel** &gt; **Forespørsler og rapporter** &gt; **Salgsrapporter** &gt; **Rapport for kanalsammendrag**</span><span class="sxs-lookup"><span data-stu-id="a8a33-108">**Inquiries and reports** section &gt; **Retail** &gt; **Inquiries and reports** &gt; **Sales reports** &gt; **Channel summary report**</span></span>
+- <span data-ttu-id="07c3e-106">Arbeidsområdet **Administrasjon av detaljhandelsbutikk** &gt; **Detaljhandel** &gt; **Kanaler** &gt; **Administrasjon av detaljhandelsbutikk** &gt; **Rapporter** &gt; **Rapport for kanalsammendrag**</span><span class="sxs-lookup"><span data-stu-id="07c3e-106">**Retail store management** workspace &gt; **Retail** &gt; **Channels** &gt; **Retail store management** &gt; **Reports** &gt; **Channel summary report**</span></span>
+- <span data-ttu-id="07c3e-107">Arbeidsområdet **Finans for detaljhandelsbutikk** &gt; **Detaljhandel** &gt; **Kanaler** &gt; **Finans for detaljhandelsbutikk** &gt; **Rapporter** &gt; **Rapport for kanalsammendrag**</span><span class="sxs-lookup"><span data-stu-id="07c3e-107">**Retail store financials** workspace &gt; **Retail** &gt; **Channels** &gt; **Retail store financials** &gt; **Reports** &gt; **Channel summary report**</span></span>
+- <span data-ttu-id="07c3e-108">Delen **Forespørsler og rapporter** &gt; **Detaljhandel** &gt; **Forespørsler og rapporter** &gt; **Salgsrapporter** &gt; **Rapport for kanalsammendrag**</span><span class="sxs-lookup"><span data-stu-id="07c3e-108">**Inquiries and reports** section &gt; **Retail** &gt; **Inquiries and reports** &gt; **Sales reports** &gt; **Channel summary report**</span></span>
 
-<span data-ttu-id="a8a33-109">Denne rapporten gir en oversikt over følgende sammendrag som en del av butikkytelse:</span><span class="sxs-lookup"><span data-stu-id="a8a33-109">This report provides a snapshot of following summaries as part of store performance:</span></span>
+<span data-ttu-id="07c3e-109">Denne rapporten gir en oversikt over følgende sammendrag som en del av butikkytelse:</span><span class="sxs-lookup"><span data-stu-id="07c3e-109">This report provides a snapshot of following summaries as part of store performance:</span></span>
 
-- <span data-ttu-id="a8a33-110">Bruttosalgssammendrag</span><span class="sxs-lookup"><span data-stu-id="a8a33-110">Gross sales summary</span></span>
-- <span data-ttu-id="a8a33-111">Sammendrag for betalingsmiddeltype</span><span class="sxs-lookup"><span data-stu-id="a8a33-111">Tender type summary</span></span>
-- <span data-ttu-id="a8a33-112">Mva-sammendrag</span><span class="sxs-lookup"><span data-stu-id="a8a33-112">Tax summary</span></span>
-- <span data-ttu-id="a8a33-113">Sammendrag for prisoverstyringer</span><span class="sxs-lookup"><span data-stu-id="a8a33-113">Price overrides summary</span></span>
-- <span data-ttu-id="a8a33-114">Rabattsammendrag</span><span class="sxs-lookup"><span data-stu-id="a8a33-114">Discounts summary</span></span>
+- <span data-ttu-id="07c3e-110">Bruttosalgssammendrag</span><span class="sxs-lookup"><span data-stu-id="07c3e-110">Gross sales summary</span></span>
+- <span data-ttu-id="07c3e-111">Sammendrag for betalingsmiddeltype</span><span class="sxs-lookup"><span data-stu-id="07c3e-111">Tender type summary</span></span>
+- <span data-ttu-id="07c3e-112">Mva-sammendrag</span><span class="sxs-lookup"><span data-stu-id="07c3e-112">Tax summary</span></span>
+- <span data-ttu-id="07c3e-113">Sammendrag for prisoverstyringer</span><span class="sxs-lookup"><span data-stu-id="07c3e-113">Price overrides summary</span></span>
+- <span data-ttu-id="07c3e-114">Rabattsammendrag</span><span class="sxs-lookup"><span data-stu-id="07c3e-114">Discounts summary</span></span>
