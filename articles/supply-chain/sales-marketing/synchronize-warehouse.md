@@ -1,6 +1,6 @@
 ---
-title: Synkronisere lagre fra Finance and Operations til Field Service
-description: Dette emnet omhandler malene og de underliggende oppgavene som brukes til å synkronisere lagre fra Microsoft Dynamics 365 for Finance and Operations til Microsoft Dynamics 365 for Field Service.
+title: Synkronisere lagre fra Supply Chain Management til Field Service
+description: Dette emnet omhandler malene og de underliggende oppgavene som brukes til å synkronisere lagre fra Dynamics 365 Supply Chain Management til Dynamics 365 Field Service.
 author: ChristianRytt
 manager: AnnBe
 ms.date: 03/13/2019
@@ -19,41 +19,41 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: 8.1.3
 ms.search.validFrom: 2018-12-01
-ms.openlocfilehash: ae99624076eecda2969961d0361d1adf42c6c5f3
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 94fb6720152cbf6aec58d2b8d9d02fc5343c05e2
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1835676"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2251184"
 ---
-# <a name="synchronize-warehouses-from-finance-and-operations-to-field-service"></a>Synkronisere lagre fra Finance and Operations til Field Service
+# <a name="synchronize-warehouses-from-supply-chain-management-to-field-service"></a>Synkronisere lagre fra Supply Chain Management til Field Service
 
 [!include[banner](../includes/banner.md)]
 
-Dette emnet omhandler malene og de underliggende oppgavene som brukes til å synkronisere lagre fra Microsoft Dynamics 365 for Finance and Operations til Microsoft Dynamics 365 for Field Service.
+Dette emnet omhandler malene og de underliggende oppgavene som brukes til å synkronisere lagre fra Dynamics 365 Supply Chain Management til Dynamics 365 Field Service.
 
-[![Synkronisering av forretningsprosesser mellom Finance and Operations og Field Service](./media/FSWarehouseOW.png)](./media/FSWarehouseOW.png)
+[![Synkronisering av forretningsprosesser mellom Supply Chain Management og Field Service](./media/FSWarehouseOW.png)](./media/FSWarehouseOW.png)
 
 ## <a name="templates-and-tasks"></a>Maler og oppgaver
-Følgende mal og underliggende oppgavene brukes til å utføre synkronisering av lagrene fra Microsoft Dynamics 365 for Finance and Operations til Microsoft Dynamics 365 for Field Service.
+Følgende mal og underliggende oppgaver brukes til å utføre synkronisering av lagre fra Supply Chain Management til Field Service.
 
 **Mal i Dataintegrasjon**
-- Lagre (Fin and Ops til Field Service)
+- Lagre (Supply Chain Management til Field Service)
 
 **Oppgave i Dataintegrasjonprosjektet**:
 - Lager
 
 ## <a name="entity-set"></a>Enhetssett
-| Field Service    | Finance and Operations                 |
+| Field Service    | Forsyningskjedeadministrasjon                 |
 |------------------|----------------------------------------|
 | msdyn_warehouses | Lagre                             |
 
 ## <a name="entity-flow"></a>Enhetsflyt
-Lagre som opprettes og vedlikeholdes i Finance and Operations, kan synkroniseres til Field Service via et Common Data Service (CDS)-dataintegreringsprosjekt. Lagrene du vil synkronisere til Field Service, kan styres med avansert spørring og filtrering på prosjektet. Lagre som synkroniseres fra Finance and Operations, opprettes i Field Service med feltet **Vedlikeholdes eksternt** satt til **Ja**, og posten gjøres skrivebeskyttet.
+Lagre som opprettes og vedlikeholdes i Supply Chain Management, kan synkroniseres til Field Service via et Common Data Service (CDS)-dataintegreringsprosjekt. Lagrene du vil synkronisere til Field Service, kan styres med avansert spørring og filtrering på prosjektet. Lagre som synkroniseres fra Supply Chain Management, opprettes i Field Service med feltet **Vedlikeholdes eksternt** satt til **Ja**, og posten gjøres skrivebeskyttet.
 
 ## <a name="field-service-crm-solution"></a>CRM-løsning for Field Service
-For å støtte integrasjon mellom Field Service og Finance and Operations, kreves det ekstra funksjonalitet fra Field Service CRM-løsningen. I løsningen er feltet **Vedlikeholdes eksternt** lagt til i **Lager (msdyn_warehouses)**-enheten. Dette feltet brukes til å identifisere om lageret håndteres fra Finance and Operations, eller om det bare finnes i Field Service. Innstillingene for dette feltet inkluderer:
-- **Ja** – Lageret kommer fra Finance and Operations og kan ikke redigeres i Sales.
+For å støtte integrasjon mellom Field Service og Finance and Operations, kreves det ekstra funksjonalitet fra Field Service CRM-løsningen. I løsningen er feltet **Vedlikeholdes eksternt** lagt til i **Lager (msdyn_warehouses)**-enheten. Dette feltet brukes til å identifisere om lageret håndteres fra Supply Chain Management, eller om det bare finnes i Field Service. Innstillingene for dette feltet inkluderer:
+- **Ja** – Lageret kommer fra Supply Chain Management og kan ikke redigeres i Sales.
 - **Nei** – Lageret ble registrert direkte i Field Service og vedlikeholdes her.
 
 Feltet **Vedlikeholdes eksternt** gjør det mulig å kontrollere synkroniseringen av lagernivåer, justeringer, overføringer og bruk av arbeidsordrer. Det er bare lagre med **Vedlikeholdes eksternt** satt til **Ja** som kan brukes til å synkronisere direkte til det samme lageret i det andre systemet. 
@@ -63,7 +63,7 @@ Feltet **Vedlikeholdes eksternt** gjør det mulig å kontrollere synkroniseringe
 
 ## <a name="prerequisites-and-mapping-setup"></a>Forutsetninger og tilordningsdefinisjon
 ### <a name="data-integration-project"></a>Dataintegrasjonsprosjekt
-Før synkronisering av lagrene må du huske å oppdatere avansert spørring og filtrering for prosjektet, slik at det bare inneholder lagrene du vil hente fra Finance and Operations til Field Service. Vær oppmerksom på at du trenger lageret i Field Service for bruk i arbeidsordrer, justeringer og overføringer.  
+Før synkronisering av lagrene må du huske å oppdatere avansert spørring og filtrering for prosjektet, slik at det bare inneholder lagrene du vil hente fra Supply Chain Management til Field Service. Vær oppmerksom på at du trenger lageret i Field Service for bruk i arbeidsordrer, justeringer og overføringer.  
 
 For å kontroller at **Integreringsnøkkel** finnes for **msdyn_warehouses**:
 1. Gå til Dataintegrering.
@@ -76,6 +76,6 @@ For å kontroller at **Integreringsnøkkel** finnes for **msdyn_warehouses**:
 
 Følgende illustrasjon viser en tilordning av malen i Dataintegrering.
 
-### <a name="warehouses-fin-and-ops-to-field-service-warehouse"></a>Lagre (Fin and Ops til Field Service): Lager
+### <a name="warehouses-supply-chain-management-to-field-service-warehouse"></a>Lagre (Supply Chain Management til Field Service): Lagre
 
 [![Maltilordning i Dataintegrering](./media/Warehouse1.png)](./media/Warehouse1.png)

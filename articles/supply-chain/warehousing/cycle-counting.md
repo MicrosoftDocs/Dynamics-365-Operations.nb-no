@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3a76082a7aa375424e6f118744e2f63600a8cbda
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: aef99a7e8964dba0e3c3a507bb214b79ae723357
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1560672"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2251529"
 ---
 # <a name="cycle-counting"></a>Syklustelling
 
@@ -34,7 +34,7 @@ Denne artikkelen beskriver hvordan du kan bruke syklustelling med datalagerstyri
 Syklustelling er en lagerprosess som du kan bruke til å overvåke varer i lagerbeholdning. Prosessen for syklustelling kan beskrives i tre trinn:
 
 1.  **Opprette syklustellingsarbeid** – Syklustellingsarbeid kan opprettes automatisk basert på terskelparameterne for varer, eller ved å bruke en syklustellingsplan. Du kan også opprette syklustellingsarbeid manuelt ved hjelp av vare- eller lagerparameterne på siden **Syklustellingsarbeid etter vare** eller siden **Syklustellingsarbeid etter lokasjon**.
-2.  **Behandle syklustellingen** – Når du har opprettet syklustellingsarbeid, utfører du syklustellingsarbeidet ved å telle varene på en lagerlokasjon og bruker deretter en mobilenhet til å angi resultatet i Microsoft Dynamics 365 for Finance and Operations. Alternativt kan du telle varer i en lagerlokasjon uten å opprette syklustellingsarbeid. Denne prosessen kalles *spotsyklustelling*.
+2.  **Behandle syklustellingen** – Når du har opprettet syklustellingsarbeid, utfører du syklustellingsarbeidet ved å telle varene på en lagerlokasjon og bruker deretter en mobilenhet til å angi resultatet i Dynamics 365 Supply Chain Management. Alternativt kan du telle varer i en lagerlokasjon uten å opprette syklustellingsarbeid. Denne prosessen kalles *spotsyklustelling*.
 3.  **Rette opp differanser i tellingsverdien** – Etter en syklustelling får alle varer som har differanser i tellingsverdien, arbeidsstatusen **Venter på gjennomgang** på **Alt arbeid**-siden. Du kan løse disse forskjellene på siden **Syklustellingsarbeid venter på gjennomgang**.
 
 Illustrasjonen nedenfor viser syklustellingsprosessen. ![Behandle flyt for syklustelling](./media/performcyclecountinginawarehouselocation.jpg)
@@ -113,10 +113,10 @@ Du kan planlegge at syklustellingsplaner skal opprette syklustellingsarbeid umid
 Hvis du vil opprette syklustellingsarbeid manuelt, kan du bruke siden **Syklustellingsarbeid etter vare** eller **Syklustellingsarbeid etter lokasjon**. Du kan angi det maksimale antallet syklustellinger som kan opprettes om gangen. Hvis lagersjefen for eksempel angir en verdi på fem, opprettes syklustellingsarbeid for **fem** lokasjoner selv om varen finnes på ti lokasjoner. Du kan også velge en arbeisdpulje-ID som syklustellingsarbeids-ID-ene som er opprettet, skal tilordnes til. Når en arbeidspulje-ID behandles for syklustelling, vil arbeids-ID-en for syklustellingen som er tilordnet denne arbeidspuljen bli behandlet som en gruppe.
 
 ## <a name="perform-a-cycle-count-by-using-a-mobile-device"></a>Utføre en syklustelling ved hjelp av en mobilenhet
-Det finnes flere metoder for å behandle syklustellingsarbeid ved hjelp av Finance and Operations på en mobilenhet:
+Det finnes flere metoder for å behandle syklustellingsarbeid ved hjelp av Supply Chain Management på en mobilenhet:
 
 -   **Brukerstyrt** – Arbeideren kan angi en arbeids-ID for syklustelling som har statusen **Åpen**.
--   **Systemstyrt** – Finance and Operations tilordner en arbeids-ID for syklustelling til arbeideren.
+-   **Systemstyrt** – Supply Chain Management tilordner en arbeids-ID for syklustelling til arbeideren.
 -   **Gruppering av syklustelling** – Arbeideren kan gruppere ID-er for syklustellingsarbeid som er spesifikke for en bestemt lokasjon, sone eller arbeidspulje.
 -   **Spotsyklustelling** – Arbeideren kan telle varer på en lagerlokasjon når som helst, uten å opprette syklustellingsarbeid, ved å angi en lokasjons-ID. For å utføre syklustelling på en lokasjon, må arbeideren angi ID-en for lokasjonen.
 

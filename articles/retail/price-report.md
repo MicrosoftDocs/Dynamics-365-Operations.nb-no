@@ -19,19 +19,19 @@ ms.search.industry: Retail
 ms.author: shajain
 ms.search.validFrom: 2019-01-18
 ms.dyn365.ops.version: AX 10.0.0
-ms.openlocfilehash: 72f4d248f3ac49bbfd8e5a7a12352d92b89bb0eb
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 4fb02bdeca2d71d84ebdddfd16d471a532823e42
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1564953"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2025201"
 ---
 # <a name="retail-price-reports"></a>Rapporter for utsalgspris
 
 [!include [banner](includes/banner.md)]
 
 
-Hvis du vil gi konkurransedyktige priser til kundene, endrer forhandlerne ofte priser på varer. Butikksjefer ønsker muligheten til å få enkel tilgang til nylige eller kommende priser, slik at de kan planlegge de nødvendige ressursene for å oppdatere prisetikettene som vises på butikkhyllene. Med frigivelse 10.0 av Dynamics 365 for Retail kan en butikksjef åpne **Pris**-rapporten ved å gå til **Alle detaljhandelbutikker \> Butikk \> Prisrapport** og vise de oppdaterte prisene for produktene som er knyttet til butikken. 
+Hvis du vil gi konkurransedyktige priser til kundene, endrer forhandlerne ofte priser på varer. Butikksjefer ønsker muligheten til å få enkel tilgang til nylige eller kommende priser, slik at de kan planlegge de nødvendige ressursene for å oppdatere prisetikettene som vises på butikkhyllene. Med frigivelse 10.0 av Retail kan en butikksjef åpne **Pris**-rapporten ved å gå til **Alle detaljhandelbutikker \> Butikk \> Prisrapport** og vise de oppdaterte prisene for produktene som er knyttet til butikken. 
 
 For å aktivere rapporten må parameteren **Aktiver prisrapport for detaljhandelbutikk** være aktivert. Denne parameteren ligger i fanen **Detaljhandelsparametere \> Rabatter \> Diverse**. Ved å åpne siden **Prisrapport** vises en dialogboks med forskjellige konfigurasjoner. De tilgjengelige konfigurasjonene vises nedenfor.
 

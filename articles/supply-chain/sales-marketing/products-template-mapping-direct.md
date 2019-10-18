@@ -1,6 +1,6 @@
 ---
-title: Synkronisere produkter direkte fra Finance and Operations til produkter i Sales
-description: Dette emnet omhandler malene og de underliggende oppgavene som brukes til å synkronisere produkter fra Microsoft Dynamics 365 for Finance and Operations til Microsoft Dynamics 365 for Sales.
+title: Synkronisere produkter direkte fra Supply Chain Management til produkter i Sales
+description: Dette emnet beskriver malene og de underliggende oppgavene som brukes til å synkronisere produkter fra Dynamics 365 Supply Chain Management til Dynamics 365 Sales.
 author: ChristianRytt
 manager: AnnBe
 ms.date: 06/10/2019
@@ -19,25 +19,25 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: b4a6fab3a4831bc3d18313b351e453c615788843
-ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
+ms.openlocfilehash: 38f0db7db0cc4f65d46cd241f75a7274f19f62cf
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "1742430"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2251391"
 ---
-# <a name="synchronize-products-directly-from-finance-and-operations-to-products-in-sales"></a>Synkronisere produkter direkte fra Finance and Operations til produkter i Sales
+# <a name="synchronize-products-directly-from-supply-chain-management-to-products-in-sales"></a>Synkronisere produkter direkte fra Supply Chain Management til produkter i Sales
 
 [!include [banner](../includes/banner.md)]
 
 > [!NOTE]
 > Før du kan bruke kundeemnet til kontanter løsning må du ha kjennskap til [Integrere data til Common Data Service for Apps](https://docs.microsoft.com/powerapps/administrator/data-integrator).
 
-Dette emnet omhandler malene og de underliggende oppgavene som brukes til å synkronisere produkter direkte fra Microsoft Dynamics 365 for Finance and Operations til Microsoft Dynamics 365 for Sales.
+Dette emnet beskriver malene og de underliggende oppgavene som brukes til å synkronisere produkter direkte fra Dynamics 365 Supply Chain Management til Dynamics 365 Sales.
 
 ## <a name="data-flow-in-prospect-to-cash"></a>Dataflyt i Kundeemne til kontanter
 
-Løsningen Kundeemne til kontanter bruker Dataintegrering-funksjonen til å synkronisere data på tvers av forekomster av Finance and Operations og Sales. Kundeemne til kontanter-maler som er tilgjengelige med Dataintegrering-funksjonen,tillater flyt av data om kontoer, kontakter, produkter, salgstilbud, salgsordrer og salgsfakturaer mellom Finance and Operations og Sales. Illustrasjonen nedenfor viser hvordan dataene blir synkronisert mellom Finance and Operations og Sales.
+Løsningen Kundeemne til kontanter bruker Dataintegrering-funksjonen til å synkronisere data på tvers av forekomster av Supply Chain Management og Sales. Kundeemne til kontanter-maler som er tilgjengelige med Dataintegrering-funksjonen,tillater flyt av data om kontoer, kontakter, produkter, salgstilbud, salgsordrer og salgsfakturaer mellom Supply Chain Management og Sales. Illustrasjonen nedenfor viser hvordan dataene blir synkronisert mellom Supply Chain Management og Sales.
 
 [![Dataflyt i Kundeemne til kontanter](./media/prospect-to-cash-data-flow.png)](./media/prospect-to-cash-data-flow.png)
 
@@ -45,22 +45,22 @@ Løsningen Kundeemne til kontanter bruker Dataintegrering-funksjonen til å synk
 
 Hvis du vil ha tilgang til de tilgjengelige malene, kan du åpne [administrasjonssenteret for PowerApps](https://admin.powerapps.com/dataintegration). Velg **Prosjekter**, og velg deretter **Nytt prosjekt** til øverst til høyre for å velge offentlig maler.
 
-Følgende mal og underliggende oppgavene brukes til å synkronisere produkter fra til Finance and Operations til sales.
+Malen nedenfor og de underliggende oppgavene brukes til å synkronisere produkter fra Supply Chain Management til Sales.
 
-- **Navnet på malen i Dataintegrering:** Produkter (Fin and Ops til Sales) – direkte
+- **Navnet på malen i Dataintegrering:** Produkter (Supply Chain Management til Sales) – direkte
 - **Navnet på oppgaven i Dataintegrasjonprosjektet**: Produkter
 
 Ingen synkroniseringsoppgaver kreves før produktsynkronisering kan utføres.
 
 ## <a name="entity-set"></a>Enhetssett
 
-| Finance and Operations     | Salg    |
+| Forsyningskjedeadministrasjon    | Salg    |
 |----------------------------|----------|
 | Salgbare frigitte produkter | Produkter |
 
 ## <a name="entity-flow"></a>Enhetsflyt
 
-Produkter administreres i Finance and Operations og synkroniseres med Sales. Sataenheten **Salgbare frigitte produkter** i Finance and Operations eksporterer bare produkter som er *salgbare*. salgbare produkter er produkter som inneholder informasjon som kreves for å kunne brukes på en salgsordre. De samme reglene gjelder når et produkt er bekreftet ved å bruke **Valider**-funksjonen på siden **Frigitt produkt**.
+Produkter administreres i Supply Chain Management og synkroniseres til Sales. Sataenheten **Salgbare frigitte produkter** i Supply Chain Management eksporterer bare produkter som er *salgbare*. salgbare produkter er produkter som inneholder informasjon som kreves for å kunne brukes på en salgsordre. De samme reglene gjelder når et produkt er bekreftet ved å bruke **Valider**-funksjonen på siden **Frigitt produkt**.
 
 Produktnummeret brukes som en nøkkel. Når produktvarianter synkroniseres til Sales, har hver produktvariant én enkelt produkt-ID.
 
@@ -68,13 +68,13 @@ Produktnummeret brukes som en nøkkel. Når produktvarianter synkroniseres til S
 
 I Sales legges det til et nytt **Vedlikeholdes eksternt**-felt på produktene for å angi at et bestemt produkt vedlikeholdes eksternt. Verdien er satt til **Ja** som standard under import til Sales. Følgende verdier er tilgjengelige:
 
-- **Ja** – Produktet kommer fra Finance and Operations, og kan ikke redigeres i Sales.
+- **Ja** – Produktet kommer fra Supply Chain Management og kan ikke redigeres i Sales.
 - **Nei** – Produktet ble lagt inn direkte i Sales.
 - **(Tom)** – Produktet fantes i Sales før løsningen Kundeemne til kontanter ble aktivert.
 
-Informasjonen i feltet **Vedlikeholdes eksternt** brukes til å garantere at bare tilbud og salgsordrer med eksternt vedlikeholdte produkter synkroniseres til Finance and Operations.
+Informasjonen i feltet **Vedlikeholdes eksternt** brukes til å sikre at bare tilbud og salgsordrer med eksternt vedlikeholdte produkter synkroniseres til Supply Chain Management.
 
-Eksternt vedlikeholdte produkter legges automatisk til den første gyldige prislisten med samme valuta. Prislister er ordnet alfabetisk etter navn. Produktets salgspris fra Finance and Operations brukes som prisen på prislisten. Derfor må det være en prisliste i Sales for alle produktsalgsvaluta i Finance and Operations. Valutaen på frigitte salgbare produkter er satt til regnskapsvalutaen i den juridiske enheten som produktet er eksportert fra.
+Eksternt vedlikeholdte produkter legges automatisk til den første gyldige prislisten med samme valuta. Prislister er ordnet alfabetisk etter navn. Produktets salgspris fra Supply Chain Management brukes som prisen på prislisten. Derfor må det være en prisliste i Sales for alle produktsalgsvaluta i Supply Chain Management. Valutaen på frigitte salgbare produkter er satt til regnskapsvalutaen i den juridiske enheten som produktet er eksportert fra.
 
 > [!NOTE]
 > - Produktsynkronisering lykkes ikke hvis det ikke er en prisliste som har en tilhørende valuta.
@@ -82,18 +82,18 @@ Eksternt vedlikeholdte produkter legges automatisk til den første gyldige prisl
 
 ## <a name="preconditions-and-mapping-setup"></a>Forutsetninger og tilordningsdefinisjon
 
-- Før du kjører synkroniseringen for første gang, må du fylle ut den spesifikke produkttabellen for eksisterende produkter i Finance and Operations. Eksisterende produkter vil ikke bli synkronisert før denne jobben er fullført.
+- Før du kjører synkroniseringen for første gang, må du fylle ut den spesifikke produkttabellen for eksisterende produkter i Supply Chain Management. Eksisterende produkter vil ikke bli synkronisert før denne jobben er fullført.
 
-    1. I Finance and Operations kan du bruke Søk til å søke etter **Fyll ut tabell for spesifikt produkt**.
+    1. I Supply Chain Management kan du bruke Søk til å søke etter **Fyll ut tabell for spesifikt produkt**.
     2. Velg **Fyll ut tabell for spesifikt produkt** for å kjøre jobben. Jobben må kjøres bare én gang.
 
-- Pass på at den nødvendige verditilordningen for selgende måleenheten mellom Finance and Operations og Sales finnes i tilordnignen for **SalesUnitSymbol** til **DefaultUnit (Name)**.
+- Pass på at den nødvendige verditilordningen for selgende måleenheten mellom Supply Chain Management og Sales finnes i tilordningen for **SalesUnitSymbol** til **DefaultUnit (Name)**.
 - Oppdater verditilordningen for **enhetsgruppen** (**defaultuomscheduleid.name**), slik at den samsvarer med **enhetsgruppene** i Sales.
 
     Standard malverdi er **Standardenhet**.
 
-- Kontroller at målenheter for alle produkter fra Finance and Operations finnes i Sales.
-- Kontroller at prislister finnes i Sales for alle produktsalgsvaluta i Finance and Operations.
+- Kontroller at målenheter for alle produkter fra Supply Chain Management finnes i Sales.
+- Kontroller at prislister finnes i Sales for alle produktsalgsvaluta i Supply Chain Management.
 - Når produkter opprettes i Sales, får de statusen **Utkast** eller **Aktiv**. Virkemåten kontrolleres under **Innstillinger** > **Administrasjon** > **Systeminnstillinger** > **Salg** i Sales.
 
     Produkter som har statusen **Utkast** når de opprettes, må aktiveres før de kan legges til i tilbud eller salgsordrer.
@@ -103,7 +103,7 @@ Eksternt vedlikeholdte produkter legges automatisk til den første gyldige prisl
 Illustrasjonen nedenfor viser et eksempel på en tilordning av malen i Dataintegrering. 
 
 > [!NOTE]
-> Tilordningen viser hvilken feltinformasjon som vil bli synkronisert fra Sales til Finance and Operations.
+> Tilordningen viser hvilken feltinformasjon som vil bli synkronisert fra Sales til Supply Chain Management.
 
 ![Maltilordning i Dataintegrator](./media/products-direct-template-mapping-data-integrator-1.png)
 
@@ -112,13 +112,13 @@ Illustrasjonen nedenfor viser et eksempel på en tilordning av malen i Datainteg
 
 [Kundeemne til kontanter](prospect-to-cash.md)
 
-[Synkronisere kontoer direkte fra Sales til kunder i Finance and Operations](accounts-template-mapping-direct.md)
+[Synkronisere kontoer direkte fra Sales til kunder i Supply Chain Management](accounts-template-mapping-direct.md)
 
-[Synkronisere kontakter direkte fra Sales til kontakter eller kunder i Finance and Operations](contacts-template-mapping-direct.md)
+[Synkronisere kontakter direkte fra Sales til kontakter eller kunder i Supply Chain Management](contacts-template-mapping-direct.md)
 
-[Synkronisere salgsordrehoder og -linjer direkte fra Finance and Operations til Sales](sales-order-template-mapping-direct-two-ways.md)
+[Synkronisere salgsordrehoder og -linjer direkte fra Supply Chain Management til Sales](sales-order-template-mapping-direct-two-ways.md)
 
-[Synkronisere salgsfakturahoder og -linjer direkte fra Finance and Operations til Sales](sales-invoice-template-mapping-direct.md)
+[Synkronisere salgsfakturahoder og -linjer direkte fra Supply Chain Management til Sales](sales-invoice-template-mapping-direct.md)
 
 
 

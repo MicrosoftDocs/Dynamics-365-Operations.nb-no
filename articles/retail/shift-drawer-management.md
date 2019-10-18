@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 7ad3c3fd17e88f364be12c122e2f5c155b7b9064
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: e600e1d2bb4bc1a49d55fb58b3e74fa7e13fc2af
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1556446"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2017903"
 ---
 # <a name="shift-and-cash-drawer-management"></a>Behandling av skift og kassaskuff
 
@@ -32,7 +32,7 @@ ms.locfileid: "1556446"
 
 Dette emnet beskriver hvordan du definerer og bruker skift på salgssted for detaljhande.
 
-I Microsoft Dynamics 365 for Retail beskriver *skift* samlingen av transaksjonsdata og aktiviteter mellom to punkter i tid for salgsstedet. For hvert skift sammenlignes forventet beløp sammenlignet med beløpet som ble talt og deklarert.
+I Dynamics 365 Retail beskriver *skift* samlingen av transaksjonsdata og aktiviteter mellom to punkter i tid for salgsstedet. For hvert skift sammenlignes forventet beløp sammenlignet med beløpet som ble talt og deklarert.
 
 Skift åpnes vanligvis i begynnelsen av arbeidsdagen. På dette tidspunktet deklarerer brukeren startbeløpet som kassaskuffen inneholder. Salgstransaksjoner blir deretter utført i løpet av dagen. På slutten av dagen telles kassaskuffen, og sluttbeløpet deklareres. Skiftet lukkes, og det genereres en Z-rapport. Z-rapporten angir om det er for mye eller for lite.
 
@@ -69,7 +69,7 @@ For delte skift som skal brukes i en butikk må kassaskuffen konfigureres som en
 
 ## <a name="shift-and-drawer-operations"></a>Skift og skuffoperasjoner
 
-Forskjellige operasjoner kan utføres for å endre statusen for et skift, eller for å øke eller redusere pengebeløpet i kassaskuffen. Dette avsnittet beskriver disse skiftoperasjonene for Microsoft Dynamics 365 for Retail Modern POS og Cloud POS.
+Forskjellige operasjoner kan utføres for å endre statusen for et skift, eller for å øke eller redusere pengebeløpet i kassaskuffen. Dette avsnittet beskriver disse skiftoperasjonene for Retail Modern POS og Cloud POS.
 
 ### <a name="open-shift"></a>Åpne skift
 

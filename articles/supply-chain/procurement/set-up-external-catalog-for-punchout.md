@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 39baa331120d765543c3cf662ce53d2bcfe404ab
-ms.sourcegitcommit: 574d4dda83dcab94728a3d35fc53ee7e2b90feb0
+ms.openlocfilehash: e9b6c3cb5b6bbc83604bee11a2472b2ad1136269
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/22/2019
-ms.locfileid: "1595617"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2249399"
 ---
 # <a name="set-up-an-external-catalog-for-punchout-eprocurement"></a>Definere en ekstern katalog for PunchOut eProcurement
 
@@ -37,12 +37,12 @@ Hvis du vil opprette kommunikasjonen, må leverandøren gi deg informasjon til b
 
 ## <a name="setting-up-an-external-catalog"></a>Definere en ekstern katalog
 
-Den eksterne katalogen skal kunne omdirigere en ansatt som legger inn en innkjøpsrekvisisjon, til et eksternt område for å velge produkter. Produktene som de ansatte velger fra den eksterne katalogen, returneres til Dynamics 365 for Finance and Operations med oppdatert prisinformasjon, og herfra kan de legges til i innkjøpsrekvisisjonen. Hensikten er ikke å la ansatte å bestille på det eksterne området. Når du setter opp den eksterne katalogen, må du å være sikker på at formålet med området den eksterne katalogen har tilgang til, er å innhente tilbudsinformasjon og ikke å foreta en ekte bestilling.
+Den eksterne katalogen skal kunne omdirigere en ansatt som legger inn en innkjøpsrekvisisjon, til et eksternt område for å velge produkter. Produktene som de ansatte velger fra den eksterne katalogen, returneres med oppdatert prisinformasjon, og herfra kan de legges til i innkjøpsrekvisisjonen. Hensikten er ikke å la ansatte å bestille på det eksterne området. Når du setter opp den eksterne katalogen, må du å være sikker på at formålet med området den eksterne katalogen har tilgang til, er å innhente tilbudsinformasjon og ikke å foreta en ekte bestilling.
 
 ### <a name="to-set-up-an-external-vendor-catalog-complete-the-following-tasks"></a>Fullfør følgende oppgaver hvis du vil definere en ekstern levernadørkatalog:
 
 1. Definer et innkjøpskategorihierarki. Hvis du vil ha mer informasjo, kan du se [Definere policyer for innkjøpskategori](tasks/set-up-policies-procurement-category-hierarchies.md)
-2. Registrer leverandøren i Finance and Operations. Før du kan definere konfigurasjoner for tilgang til en ekstern leverandørs katalog, må du definere leverandøren og leverandørkontakten i Microsoft Dynamics 365. Den eksterne katalogens leverandør må også legges til den valgte innkjøpskatagorien. Hvis du vil ha mer informasjon om hvordan du registrerer leverandører i Microsoft Dynamics 365, kan du se [Administrere brukere av leverandørsamarbeid](manage-vendor-collaboration-users.md). Hvis du vil ha informasjon om hvordan du tilordner leverandører til en innkjøpskategori, kan du se [Godkjenne leverandører for spesifikke innkjøpskategorier](tasks/approve-vendors-specific-procurement-categories.md).
+2. Registrer leverandøren i Supply Chain Management. Før du kan definere konfigurasjoner for tilgang til en ekstern leverandørs katalog, må du definere leverandøren og leverandørkontakten i Microsoft Dynamics 365. Den eksterne katalogens leverandør må også legges til den valgte innkjøpskatagorien. Hvis du vil ha mer informasjon om hvordan du registrerer leverandører, kan du se [Administrere brukere av leverandørsamarbeid](manage-vendor-collaboration-users.md). Hvis du vil ha informasjon om hvordan du tilordner leverandører til en innkjøpskategori, kan du se [Godkjenne leverandører for spesifikke innkjøpskategorier](tasks/approve-vendors-specific-procurement-categories.md).
 3. Kontroller at måleenhetene og valutaen som leverandøren bruker, er konfigurert. Hvis du vil ha informasjon om hvordan du oppretter en måleenhet, se [Administrere måleenheter](../pim/tasks/manage-unit-measure.md).
 4. Konfigurer den eksterne leverandørkatalogen ved hjelp av kravene til leverandørens eksterne katalogområde. Hvis du vil ha mer informasjon om denne oppgaven, kan du se [Konfigurere den eksterne leverandørkatalogen](#configure-the-external-vendor-catalog).
 5. Test konfigurasjonene for leverandørens eksterne katalog for å kontrollere at innstillingene er gyldige og at du har tilgang til leverandørens eksterne katalog. Bruk handlingen **Valider innstillinger** til å validere meldingen du har definert for oppsettforespørsel. Denne meldingen skal få leverandørens eksterne katalogområde til å åpnes i et nettleservindu. Under validering, kan du ikke bestille varer og tjenester fra leverandøren. For å bestille varer og tjenester, må du åpne leverandørens katalog fra en innkjøpsrekvisisjon.
@@ -90,9 +90,9 @@ Leverandøren kan ha behov for å motta et eksternt element i oppsettforespørse
 Hvis du vil ha mer informasjon om cXML-protokollen, se [cXML.org-nettsiden](http://cxml.org/).
 
 ## <a name="post-back-message"></a>Tilbakemelding
-Tilbakemeldingen er meldingen som mottas fra leverandøren når brukeren sjekker ut fra det eksterne området og går tilbake til Finance and Operations. Tilbakemeldinger kan ikke konfigureres. Meldingene er basert på definisjonen i cXML-protokollen. Her er informasjonen som kan være en del av tilbakemeldingen som mottas på en rekvisisjonslinje:
+Tilbakemeldingen er meldingen som mottas fra leverandøren når brukeren sjekker ut fra det eksterne området og går tilbake til Supply Chain Management. Tilbakemeldinger kan ikke konfigureres. Meldingene er basert på definisjonen i cXML-protokollen. Her er informasjonen som kan være en del av tilbakemeldingen som mottas på en rekvisisjonslinje.
 
-| Melding som mottas fra leverandøren | Kopiert til en rekvisisjonslinje i Finance and Operations|
+| Melding som mottas fra leverandøren | Kopiert til rekvisisjonslinje|
 |------------------------------|----------------------------------------------------------|
 |< ItemIn quantity=”” > |Antall|
 |< ItemIn>< ItemID >< SupplierPartID >< /SupplierPartID >|ID for ekstern vare|

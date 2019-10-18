@@ -1,6 +1,6 @@
 ---
-title: Skanne strekkoder ved hjelp av et kamera i Dynamics 365 for Finance and Operations – Warehousing
-description: Dette emnet forklarer hvordan du konfigurerer Dynamics 365 for Finance and Operations – Warehousing for å skanne strekkoder med et kamera på en mobil enhet.
+title: Skanne strekkoder ved hjelp av et kamera i Dynamics 365 Supply Chain Management – Warehousing-appen
+description: Dette emnet forklarer hvordan du konfigurerer Dynamics 365 Supply Chain Management – Warehousing-appen for å skanne strekkoder med et kamera på en mobil enhet.
 author: MarkusFogelberg
 manager: AnnBe
 ms.date: 01/03/2018
@@ -17,26 +17,26 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2017-01-03
 ms.dyn365.ops.version: AX 8.0.0
-ms.openlocfilehash: 5ec9197c2e8b7970fcbf5ea42612c60f940bcae0
-ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
+ms.openlocfilehash: 8062a981f792bcfed2713d3cb6a42f414394f6a4
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "1742940"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2251473"
 ---
-# <a name="scan-bar-codes-using-a-camera-in-dynamics-365-for-finance-and-operations--warehousing"></a>Skanne strekkoder ved hjelp av et kamera i Dynamics 365 for Finance and Operations – Warehousing
+# <a name="scan-bar-codes-using-a-camera-in-dynamics-365-supply-chain-management---warehousing-app"></a>Skanne strekkoder ved hjelp av et kamera i Dynamics 365 Supply Chain Management – Warehousing-appen
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet forklarer hvordan du konfigurerer Dynamics 365 for Finance and Operations – Warehousing for å skanne strekkoder med et kamera på en mobil enhet. 
+Dette emnet forklarer hvordan du konfigurerer Dynamics 365 Supply Chain Management – Warehousing-appen for å skanne strekkoder med et kamera på en mobil enhet. 
 
-## <a name="prerequisites"></a>Nødvendig programvare
-Hvis du vil bruke denne funksjonen, må du ha versjon 1.2.0.0 av Warehousing installert, og enheten må ha et kamera. Når du åpner appen når du har oppdatert, blir du bedt om å tillate at Dynamics 365 for Finance and Operations – Warehousing-programmet kan bruke kameraet. Hvis enheten ikke har kamera, vises ingen ledetekst, og du kan ikke bruke kamera som skanner. 
+## <a name="prerequisites"></a>Forutsetninger
+Hvis du vil bruke denne funksjonen, må du ha versjon 1.2.0.0 av Warehousing-appen installert, og enheten må ha et kamera. Når du åpner appen når du har oppdatert, blir du bedt om å tillate at appen kan bruke kameraet. Hvis enheten ikke har kamera, vises ingen ledetekst, og du kan ikke bruke kamera som skanner. 
 
 ## <a name="setup"></a>Definere
 Du kan velge om kameraet skal brukes til å skanne strekkoder, i innstillingene for visning i Warehousing-programmet. Hvis du aktiverer **Bruk kameraet som skanner**, kan du bruke kameraet på alle inndatafelt som har den foretrukne inndatamodusen satt til **Skanning**. 
 
-For å kontrollere om inndatafeltet kan skannes, går du til siden **Navn på lagerappfelt** i Dynamics 365 for Finance and Operations og setter **Foretrukket inndatamodus** til **Skanning**. Når dette alternativet er valgt, kan kameraet brukes til å skanne i programmet Warehousing. Hvis du vil ha informasjon om hvordan du konfigurerer appfeltnavn i Warehousing, kan du se [Konfigurere appfeltnavn i Warehousing-appen](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/warehousing/configure-app-field-names-priorities-warehouse).
+For å kontrollere om inndatafeltet kan skannes går du til siden **Navn på lagerappfelt** og setter **Foretrukket inndatamodus** til **Skanning**. Når dette alternativet er valgt, kan kameraet brukes til å skanne i programmet Warehousing. Hvis du vil ha informasjon om hvordan du konfigurerer appfeltnavn i Warehousing, kan du se [Konfigurere appfeltnavn i Warehousing-appen](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/warehousing/configure-app-field-names-priorities-warehouse).
 
 ## <a name="supported-bar-code-formats"></a>Støttede strekkodeformater
 De vanligste strekkodeformatene støttes, inkludert Code 128, Code 39, Code 93, EAN-8, EAN-13, UPC-E, UPC-A og QR-koder. 

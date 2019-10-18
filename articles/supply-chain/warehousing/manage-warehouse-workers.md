@@ -1,6 +1,6 @@
 ---
 title: Administrere lagerarbeidere
-description: Denne artikkelen beskriver hvordan du kan bruke Dynamics 365 for Finance and Operations for å kontrollere og overvåke arbeidet som utføres av ansatte i lagrene.
+description: Denne artikkelen beskriver hvordan du kan bruke Dynamics 365 Supply Chain Management – Warehousing-appen for å kontrollere og overvåke arbeidet som utføres av ansatte i lagrene.
 author: perlynne
 manager: AnnBe
 ms.date: 06/20/2017
@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b5a35d0a52d6f5bf995ce54f10eab92147b0e76a
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: f0de87e10f9213838dd5e5436b8b5699b19547bf
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1572564"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2018627"
 ---
 # <a name="manage-warehouse-workers"></a>Administrere lagerarbeidere
 
 [!include [banner](../includes/banner.md)]
 
-Denne artikkelen beskriver hvordan du kan bruke Microsoft Dynamics 365 for Finance and Operations for å kontrollere og overvåke arbeidet som utføres av ansatte i lagrene.
+Denne artikkelen beskriver hvordan du kan bruke Dynamics 365 Supply Chain Management – Warehousing-appen for å kontrollere og overvåke arbeidet som utføres av ansatte i lagrene.
 
 Hvis du bruker funksjonaliteten i Lagerstyring, refereres alle lagerarbeideroperasjoner til som *arbeid*. Arbeid, for eksempel plukking, flytting og telling av lagerbeholdningen, registreres ved hjelp av mobilenheter. Før en lagermedarbeider kan utføre arbeidet må han eller hun være knyttet til en arbeider i Personale. Hver **arbeider**-konto kan ha flere lagerarbeidsbrukere tilknyttet. Disse arbeidsbrukerene kan arbeide i forskjellige lagre og kan ha ulike tilgangsnivåer til de ulike mobilenhetsmenyene. Du kan tenke på lagerarbeidsbrukerne som flere pålogginger for den valgte arbeideren. Hver arbeidsbruker har et standardlager, og bestemte arbeidsflyter vises av menyeelementene som er tilgjengelig for denne arbeidsbrukeren. 
 

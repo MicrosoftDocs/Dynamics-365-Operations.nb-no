@@ -16,18 +16,18 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c900ef715b62484c1fb6576b7f0c97cdea4e4284
-ms.sourcegitcommit: e286572ce94a9442a5b3076c3ff5b429be0ed512
+ms.openlocfilehash: abb78c9ac43dad80e45729f4b42651d9807f71f1
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "1865142"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2251068"
 ---
 # <a name="warehouse-management-overview"></a>Oversikt over lagerstyring
 
 [!include [banner](../includes/banner.md)]
 
-Med lagerstyringsmodulen for Dynamics 365 for Finance and Operations kan du administrere lagerprosesser i produksjons-, distribusjons- og detaljhandelfirmaer. Denne modulen har et bredt spekter av funksjoner for å støtte lageret på et optimalt nivå, når som helst. Lagerstyring er fullt integrert med andre forretningsprosesser i Finance and Operations, slik som transport, produksjon, kvalitetskontroll, innkjøp, overføring, salg og retur.
+Med lagerstyringsmodulen kan du administrere lagerprosesser i produksjons-, distribusjons- og detaljhandelsfirmaer. Denne modulen har et bredt spekter av funksjoner for å støtte lageret på et optimalt nivå, når som helst. Lagerstyring er fullt integrert med andre forretningsprosesser, slik som transport, produksjon, kvalitetskontroll, innkjøp, overføring, salg og retur.
 
 ## <a name="get-started"></a>Komme i gang
 For å begynne å jobbe med Lagerstyring må du fullføre oppsetttet av generelle lagerparametere for å støtte virksomhetsprosessene til selskapet ditt.

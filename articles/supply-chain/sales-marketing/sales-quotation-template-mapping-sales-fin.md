@@ -1,6 +1,6 @@
 ---
-title: Synkronisere salgstilbudshoder og -linjer direkte fra Sales til Finance and Operations
-description: Dette emnet drøfter maler og underliggende oppgaver som brukes til å synkronisere salgstilbudshoder og -linjer direkte fra Microsoft Dynamics 365 for Sales til Microsoft Dynamics 365 for Finance and Operations.
+title: Synkronisere salgstilbudshoder og -linjer direkte fra Sales til Supply Chain Management
+description: Dette emnet beskriver maler og underliggende oppgaver som brukes til å synkronisere salgstilbudshoder og -linjer direkte fra Dynamics 365 Sales til Dynamics 365 Supply Chain Management.
 author: ChristianRytt
 manager: AnnBe
 ms.date: 10/25/2018
@@ -19,33 +19,33 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: 0894f4728d3f1df21db130cd9e87d9881726e7fa
-ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
+ms.openlocfilehash: ddc81aa7ff462304cb6e22c919221217f7a1e019
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "1743377"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2251253"
 ---
-# <a name="synchronize-sales-quotation-headers-and-lines-directly-from-sales-to-finance-and-operations"></a>Synkronisere salgstilbudshoder og -linjer direkte fra Sales til Finance and Operations
+# <a name="synchronize-sales-quotation-headers-and-lines-directly-from-sales-to-supply-chain-management"></a>Synkronisere salgstilbudshoder og -linjer direkte fra Sales til Supply Chain Management
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet drøfter maler og underliggende oppgaver som brukes til å synkronisere salgstilbudshoder og -linjer direkte fra Microsoft Dynamics 365 for Sales til Microsoft Dynamics 365 for Finance and Operations.
+Dette emnet beskriver maler og underliggende oppgaver som brukes til å synkronisere salgstilbudshoder og -linjer direkte fra Dynamics 365 Sales til Dynamics 365 Supply Chain Management.
 
 > [!NOTE]
 > Før du kan bruke kundeemnet til kontanter løsning må du ha kjennskap til [Integrere data til Common Data Service for Apps](https://docs.microsoft.com/powerapps/administrator/data-integrator).
 
 ## <a name="data-flow-in-prospect-to-cash"></a>Dataflyt i Kundeemne til kontanter
 
-Løsningen Kundeemne til kontanter bruker Dataintegrering-funksjonen til å synkronisere data på tvers av forekomster av Finance and Operations og Sales. Kundeemne til kontanter-maler som er tilgjengelige med Dataintegrering-funksjonen,tillater flyt av data for kontoer, kontakter, produkter, salgstilbud, salgsordrer og salgsfakturaer mellom Finance and Operations og Sales. Illustrasjonen nedenfor viser hvordan dataene blir synkronisert mellom Finance and Operations og Sales.
+Løsningen Kundeemne til kontanter bruker Dataintegrering-funksjonen til å synkronisere data på tvers av forekomster av Supply Chain Management og Sales. Kundeemne til kontanter-maler som er tilgjengelige med Dataintegrering-funksjonen,tillater flyt av data for kontoer, kontakter, produkter, salgstilbud, salgsordrer og salgsfakturaer mellom Supply Chain Management og Sales. Illustrasjonen nedenfor viser hvordan dataene blir synkronisert mellom Supply Chain Management og Sales.
 
 [![Dataflyt i Kundeemne til kontanter](./media/prospect-to-cash-data-flow.png)](./media/prospect-to-cash-data-flow.png)
 
 ## <a name="template-and-tasks"></a>Mal og oppgaver
 
-Følgende mal og underliggende oppgavene brukes til å synkronisere salgstilbudshoder og -linjer direkte fra Sales til Finance and Operations:
+Følgende mal og underliggende oppgavene brukes til å synkronisere salgstilbudshoder og -linjer direkte fra Sales til Supply Chain Management:
 
-- **Navnet på malen i Dataintegrering:** Salgstilbud (Sales til Fin and Ops) – direkte
+- **Navnet på malen i Dataintegrering:** Salgstilbud (Supply Chain Management) – direkte
 - **Navnet på oppgaven i Dataintegrasjonprosjektet**:
 
     - QuoteHeader
@@ -53,9 +53,9 @@ Følgende mal og underliggende oppgavene brukes til å synkronisere salgstilbuds
 
 Følgende synkroniseringsoppgaver er påkrevd før synkronisering av salgstilbudshoder og -linjer kan inntreffe:
 
-- Produkter (Fin and Ops til Sales) – direkte
-- Kontoer (Sales til Fin and Ops) – direkte (hvis brukt)
-- Kontakter til Kunder (Sales til Fin and Ops) – direkte (hvis brukt)
+- Produkter (Supply Chain Management til Sales) – direkte
+- Kontoer (Sales til Supply Chain Management) – direkte (hvis brukt)
+- Kontakter til Kunder (Sales til Supply Chain Management) – direkte (hvis brukt)
 
 ## <a name="entity-set"></a>Enhetssett
 
@@ -66,7 +66,7 @@ Følgende synkroniseringsoppgaver er påkrevd før synkronisering av salgstilbud
 
 ## <a name="entity-flow"></a>Enhetsflyt
 
-Salgstilbud opprettes i Sales og synkroniseres til Finance and Operations.
+Salgstilbud opprettes i Sales og synkroniseres til Supply Chain Management.
 
 Salgstilbud fra Sales synkroniseres bare hvis følgende betingelser er oppfylt:
 
@@ -75,13 +75,13 @@ Salgstilbud fra Sales synkroniseres bare hvis følgende betingelser er oppfylt:
 
 ## <a name="prospect-to-cash-solution-for-sales"></a>Kundeemnet til kontanter løsning for Sales
 
-Feltet **Har bare eksternt vedlikeholdte produkter** er lagt til **tilbudsenheten** for konsistent sporing av om salgstilbudet består av bare eksternt vedlikeholdes produkter. Hvis et salgstilbud har bare eksternt vedlikeholdte produkter, vedlikeholdes produktene i Finance and Operations. Dette kan garantere at du ikke prøver å synkronisere salgstilbudslinjer med produkter som er ukjent for Finance and Operations.
+Feltet **Har bare eksternt vedlikeholdte produkter** er lagt til **tilbudsenheten** for konsistent sporing av om salgstilbudet består av bare eksternt vedlikeholdes produkter. Hvis et salgstilbud har bare eksternt vedlikeholdte produkter, vedlikeholdes produktene i Supply Chain Management. Dette kan garantere at du ikke prøver å synkronisere salgstilbudslinjer med produkter som er ukjent for Supply Chain Management.
 
 Alle tilbudsprodukter i salgstilbudet oppdateres med informasjon fra **Har bare eksternt vedlikeholdte produkter** fra salgstilbudshodet. Denne informasjonen finnes i feltet **Tilbud har bare eksternt vedlikeholdte produkter** på **QuoteDetails**-enheten.
 
-En rabatt kan legges til tilbudsproduktet og vil bli synkronisert til Finance and Operations. Feltene **Rabatt**, **Gebyrer** og **Avgift** feltene på hodet kontrolleres av et oppsett i Finance and Operations. Dette oppsettet støtter for øyeblikket ikke integreringstilordning. I den gjeldende utformingen adminstreres og vedlikeholdes feltene **Pris**, **Rabatt**, **Gebyrer** og **Avgift** i Finance and Operations.
+En rabatt kan legges til tilbudsproduktet og vil bli synkronisert til Supply Chain Management. Feltene **Rabatt**, **Gebyrer** og **Avgift** feltene på hodet kontrolleres av et oppsett i Supply Chain Management. Dette oppsettet støtter for øyeblikket ikke integreringstilordning. I den gjeldende utformingen administreres og vedlikeholdes feltene **Pris**, **Rabatt**, **Gebyrer** og **Avgift** i Supply Chain Management.
 
-I Sales gjør løsningen at følgende felt er skrivebeskyttet, fordi verdiene ikke er synkronisert til Finance and Operations:
+I Sales gjør løsningen at følgende felt er skrivebeskyttet, fordi verdiene ikke er synkronisert til Supply Chain Management:
 
 - Skrivebeskyttede felt i salgstilbudshodet: **Rabattprosent**, **Rabatt** og **Fraktbeløp**
 - Skrivebeskyttede felt på tilbudsprodukter: **Mva**
@@ -111,20 +111,20 @@ Før salgstilbud synkroniseres, er det viktig at du oppdaterer innstillingene ne
 
 #### <a name="quoteline"></a>QuoteLine
 
-- Kontroller at den nødvendige verditilordningen finnes for **SalesUnitSymbol** i Finance and Operations.
+- Kontroller at den nødvendige verditilordningen finnes for **SalesUnitSymbol** i Supply Chain Management.
 - Kontroller at de nødvendige enhetene er definert i Sales.
 
     En malverdi som har en verditilordningen er definert for **oumid.name** til **SalesUnitSymbol**.
 
-- Valgfritt: Du kan legge til følgende tilordninger for å garantere at salgstilbudslinjene importeres til Finance and Operations hvis det finnes ingen standardinformasjon fra kunden eller produktet:
+- Valgfritt: Du kan legge til følgende tilordninger for å garantere at salgstilbudslinjene importeres til Supply Chain Management hvis det finnes ingen standardinformasjon fra kunden eller produktet:
 
-    - **SiteId** – et område er nødvendig for å generere tilbud og salgsordrelinjer i Finance and Operations. Det finnes ingen standardmalverdi for **SiteId**.
-    - **WarehouseId** – et lager er nødvendig for å behandle tilbud og salgsordrelinjer i Finance and Operations. Det finnes ingen standardmalverdi for **WarehouseId**.
+    - **SiteId** – et område er nødvendig for å generere tilbud og salgsordrelinjer i Supply Chain Management. Det finnes ingen standardmalverdi for **SiteId**.
+    - **WarehouseId** – et lager er nødvendig for å behandle tilbud og salgsordrelinjer i Supply Chain Management. Det finnes ingen standardmalverdi for **WarehouseId**.
 
 ## <a name="template-mapping-in-data-integrator"></a>Tilordninge mal i dataintegrator
 
 > [!NOTE]
-> - Feltene **Rabatt**, **Gebyrer** og **Avgift** feltene kontrolleres av et sammensatt oppsett i Finance and Operations. Dette oppsettet støtter for øyeblikket ikke integreringstilordning. I den gjeldende utformingen håndteres feltene **Pris**, **Rabatt**, **Gebyrer** og **Avgift** av Finance and Operations.
+> - Feltene **Rabatt**, **Gebyrer** og **Avgift** feltene kontrolleres av et sammensatt oppsett i Supply Chain Management. Dette oppsettet støtter for øyeblikket ikke integreringstilordning. I den gjeldende utformingen håndteres feltene **Pris**, **Rabatt**, **Gebyrer** og **Avgift** av Supply Chain Management.
 > - Feltene **Betalingsbetingelser**, **Fraktvilkår**, **Leveringsbetingelser**, **Leveringsmetode** og **Leveringsmåte** er ikke en del av standardtilordningene. Hvis du vil tilordne disse feltene, må du definere en verditilordning som er spesifikk for dataene i organisasjoner som enheten synkroniseres mellom.
 
 Følgende illustrasjoner viser et eksempel på en tilordning av malen i dataintegratoren.

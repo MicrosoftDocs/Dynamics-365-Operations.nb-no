@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3b3247f693f5934b3fbf83b7b831c7ed221514cb
-ms.sourcegitcommit: 747bcd25ce7c6c20ce9eaa0027e730f74d4fd6aa
+ms.openlocfilehash: 067d1085d9afa04cb76b78393a8a8b9834ce4d8c
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "1783482"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2250950"
 ---
 # <a name="maintenance-attribute-types"></a>Vedlikeholdsattributtyper
 
@@ -42,10 +42,10 @@ Attributtene du kan definere, varierer avhengig av elementet. Hvis du for eksemp
 
 ## <a name="create-attribute-types"></a>Opprette attributtyper
 
-Du kan opprette dine egne attributtyper. I tillegg kan du overføre produktdimensjoner fra Microsoft Dynamics 365 for Finance and Operations til siden **Attributtyper**.
+Du kan opprette dine egne attributtyper. I tillegg kan du overføre produktdimensjoner til siden **Attributtyper**.
 
 1. Velg **Aktivastyring** \> **Oppsett** \> **Attributtyper**.
-2. Første gang du definerer attributtverdier, velger du **Opprett produktdimensjoner** for å overføre standard Finance and Operations-produktdimensjoner automatisk.
+2. Første gang du definerer attributtverdier, velger du **Opprett produktdimensjoner** for å overføre standard produktdimensjoner automatisk.
 3. Velg **Ny** for å opprette en ny attributtype.
 4. I **Attributtype**-feltet angir du et navn på attributtypen.
 5. Angi en beskrivelse i **Beskrivelse**-feltet.

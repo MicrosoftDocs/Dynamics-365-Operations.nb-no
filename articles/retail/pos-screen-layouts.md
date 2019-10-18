@@ -1,6 +1,6 @@
 ---
 title: Skjermoppsett for salgssted
-description: Dette emnet inneholder informasjon om skjermoppsett for Microsoft Dynamics 365 for Retail POS-opplevelser.
+description: Dette emnet inneholder informasjon om skjermoppsett for Dynamics 365 Retail POS-opplevelser.
 author: jblucher
 manager: AnnBe
 ms.date: 05/20/2019
@@ -19,18 +19,18 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: e9536563ce7ddfc4aef54ae05267316ea8139263
-ms.sourcegitcommit: e2fb0846fcc6298050a0ec82c302e5eb5254e0b5
+ms.openlocfilehash: 4852ec9b347f119a1007b63476b8609a3e38ba57
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/27/2019
-ms.locfileid: "1607049"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2025284"
 ---
 # <a name="screen-layouts-for-the-point-of-sale-pos"></a>Skjermoppsett for salgssted
 
 [!include [banner](includes/banner.md)]
 
-Dette emnet inneholder informasjon om skjermoppsett for Microsoft Dynamics 365 for Retail POS-opplevelser.
+Dette emnet inneholder informasjon om skjermoppsett for Dynamics 365 Retail POS-opplevelser.
 
 Brukergrensesnittet for Retail POS kan konfigureres ved hjelp av en kombinasjon av visuelle profiler og skjermoppsett, tilordnet til butikker, kasser og/eller brukere.
 
@@ -50,7 +50,7 @@ Visuelle profiler tilordnes til kasser, og de brukes til å angi de visuelle ele
 - **Beskrivelse** – Du kan angi et beskrivende navn som vil hjelpe deg med å finne den riktige profilen for din situasjon.
 - **Tema** – Du kan velge mellom lyse eller mørke programtemaer. Temaet påvirker skrift- og bakgrunnsfargene i hele programmet.
 - **Uthevingsfarge** – Uthevingsfargen brukes på hele salgsstedet for å skille eller utheve spesifikke visuelle elementer, for eksempel fliser, kommandoknapper og hyperkoblinger. Disse elementene er vanligvis handlingskrevende.
-- **Topptekstfarge** – Du kan konfigurere fargen på sideoverskriften for å oppfylle varemerkebehovet til forhandleren. Denne funksjonen er ikke bare tilgjengelig i Microsoft Dynamics 365 for Retail versjon 1611.
+- **Topptekstfarge** – Du kan konfigurere fargen på sideoverskriften for å oppfylle varemerkebehovet til forhandleren. Denne funksjonen er ikke bare tilgjengelig i Retail versjon 1611.
 - **Vis dato/klokkeslett** – Når dette er aktivert, vil gjeldende dato og klokkeslett vises i POS-hodet.
 - **Påloggingsbakgrunner** – Du kan angi et bakgrunnsbilde for påloggingsskjermbildet. Størrelsen på bakgrunnsbilder bør holdes så liten som mulig, siden lagring og innlasting av store filer kan ha innvirkning på programmets virkemåte og ytelse.
 - **Programbakgrunn** – Du kan angi et bakgrunnsbilde som brukes i stedet for heldekkende temafarge i programmet. For påloggingsbakgrunner bør filstørrelsen holdes så liten som mulig.

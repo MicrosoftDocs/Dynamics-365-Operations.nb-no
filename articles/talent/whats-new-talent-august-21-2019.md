@@ -1,6 +1,6 @@
 ---
-title: Hva er nytt eller endret i Dynamics 365 for Talent (20. august 2019)
-description: Dette emnet beskriver funksjoner som enten er nye eller endret i Microsoft Dynamics 365 for Talent.
+title: Hva er nytt eller endret i Dynamics 365 Talent (20. august 2019)
+description: Dette emnet beskriver funksjoner som enten er nye eller endret i Microsoft Dynamics 365 Talent.
 author: Darinkramer
 manager: AnnBe
 ms.date: 8/20/2019
@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-08-20
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: f437dbbb786456cd335d5fb85e271d224e0a1383
-ms.sourcegitcommit: 4176c333ce3f88c5c68e95bd47e5791d32365dd2
+ms.openlocfilehash: 5e4272fa1c94a883a10b7893d5dc8addfa987e60
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/22/2019
-ms.locfileid: "1918216"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2024074"
 ---
-# <a name="whats-new-or-changed-in-dynamics-365-for-talent-august-20-2019"></a>Hva er nytt eller endret i Dynamics 365 for Talent (20. august 2019)
+# <a name="whats-new-or-changed-in-dynamics-365-talent-august-20-2019"></a>Hva er nytt eller endret i Dynamics 365 Talent (20. august 2019)
 
 [!include [banner](includes/banner.md)]
 
-Dette emnet beskriver funksjoner som enten er nye eller endret i Dynamics 365 for Talent.
+Dette emnet beskriver funksjoner som enten er nye eller endret i Dynamics 365 Talent.
 
 ## <a name="changes-in-attract"></a>Endringer i Attract
 
@@ -43,11 +43,11 @@ Avslagsårsak og -kommentarer vises nå i kategorien **Aktivitet** for en kandid
 
 ## <a name="changes-in-onboard"></a>Endringer i Onboard
 
-Denne versjonen inneholder mindre feilrettinger for Dynamics 365 for Talent: Onboard.
+Denne versjonen inneholder mindre feilrettinger for Dynamics 365 Talent: Onboard.
 
 ## <a name="changes-in-core-hr"></a>Endringer i Core HR
 
-Denne versjonen inneholder mindre feilrettinger for Dynamics 365 for Talent: Core HR. Endringer som er beskrevet i denne delen, gjelder build nummer 8.1.2429.
+Denne versjonen inneholder mindre feilrettinger for Dynamics 365 Talent: Core HR. Endringer som er beskrevet i denne delen, gjelder build nummer 8.1.2429.
 
 ### <a name="in-preview"></a>I forhåndsvisning
 
@@ -69,6 +69,6 @@ Et nytt alternativ lar ledere vise prestasjonen til både direkte underordnede o
 
 ### <a name="coming-soon"></a>Kommer snart
 
-#### <a name="platform-update-29"></a>Plattform update 29
+#### <a name="platform-update-29-for-finance-and-operations"></a>Platform update 29 for Finance and Operations
 
-Hvis du vil ha mer informasjon om Platform update 29, kan du se [Forhåndsvisningsfunksjoner i Dynamics 365 for Finance and Operations Platform Update 29 (oktober 2019)](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-29).
+Hvis du vil ha mer informasjon om Platform update 29 for Finance and Operations, kan du se [Forhåndsvisningsfunksjoner i Dynamics 365 Finance and Operations Platform Update 29 (oktober 2019)](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-29).

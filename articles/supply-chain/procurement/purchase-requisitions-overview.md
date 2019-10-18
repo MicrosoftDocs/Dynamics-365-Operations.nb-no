@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f279474d4a1e2f76e810b0df80c8d91171352c17
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 0e571f5c83affa56c230e1f597e219eb60973225
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1572031"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2248889"
 ---
 # <a name="purchase-requisition-overview"></a>Oversikt over innkjøpsrekvisisjoner
 
@@ -38,7 +38,7 @@ Når en innkjøpsrekvisisjon er godkjent, kan den brukes til å generere en best
 ## <a name="creating-purchase-requisitions"></a>Opprette innkjøpsrekvisisjoner
 Du kan opprette en innkjøpsrekvisisjon på siden **Mine innkjøpsrekvisisjoner** og velge varene og tjenestene du trenger. Du kan velge varer fra en innkjøpskatalog som organisasjonen har opprettet, eller du kan be om varer som ikke finnes i katalogen, ved å velge en innkjøpskategori og angi produktdetaljene.  
 
-Før du kan sende en innkjøpsrekvisisjon til gjennomgang må en arbeidsflyter være konfigurert i Microsoft Dynamics 365 for Finance and Operations. Du bruker en arbeidsflyt til å flytte en innkjøpsrekvisisjon gjennom vurderingsprosessen, fra den innledende statusen **Utkast** til den endelige statusen **Godkjent**.
+Før du kan sende en innkjøpsrekvisisjon til gjennomgang må en arbeidsflyter være konfigurert. Du bruker en arbeidsflyt til å flytte en innkjøpsrekvisisjon gjennom vurderingsprosessen, fra den innledende statusen **Utkast** til den endelige statusen **Godkjent**.
 
 ### <a name="purchase-requisition-statuses"></a>Innkjøpsrekvisisjonsstatuser
 
@@ -141,7 +141,7 @@ I innkjøpspolicyene kan du kontrollere rekvisisjonsformålene som er tilgjengel
 
 ### <a name="requisitions-that-have-a-purpose-of-consumption"></a>Rekvisisjoner med forbruk som formål
 
-En rekvisisjon som har forbruk som formål, representerer et behov for varer eller tjenester som skal brukes internt av organisasjonen. Behovet som opprettes av denne typen rekvisisjon, oppfylles alltid av en bestilling. Hvis Microsoft Dynamics 365 for Finance and Operations er konfigurert slik at bestillinger genereres automatisk, opprettes bestillinger etter at innkjøpsrekvisisjonen er godkjent.
+En rekvisisjon som har forbruk som formål, representerer et behov for varer eller tjenester som skal brukes internt av organisasjonen. Behovet som opprettes av denne typen rekvisisjon, oppfylles alltid av en bestilling. Hvis Supply Chain Management er konfigurert slik at bestillinger genereres automatisk, opprettes bestillinger etter at innkjøpsrekvisisjonen er godkjent.
 
 ### <a name="requisitions-that-have-a-purpose-of-replenishment"></a>Rekvisisjoner med etterfylling som formål
 

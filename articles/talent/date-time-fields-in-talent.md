@@ -1,6 +1,6 @@
 ---
-title: Arbeide med dato og klokkeslett i Microsoft Dynamics 365 for Talent
-description: Forstå hva du kan forvente når du bruker dato- og klokkeslettfelt i Microsoft Dynamics 365 for Talent. Få klarhet i hva du kan forvente når du samhandler med dato- og klokkeslettdata i et skjema i Dynamics 365 for Talent, en ekstern kilde eller Common Data Service.
+title: Arbeide med dato og klokkeslett i Microsoft Dynamics 365 Talent
+description: Forstå hva du kan forvente når du bruker dato- og klokkeslettfelt i Microsoft Dynamics 365 Talent. Få klarhet i hva du kan forvente når du samhandler med dato- og klokkeslettdata i et skjema i Talent, en ekstern kilde eller Common Data Service.
 author: Darinkramer
 manager: AnnBe
 ms.date: 06/24/2019
@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-06-06
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: b4c652992272ed1a5aecbb4c78f0d11f077149d1
-ms.sourcegitcommit: 46bded82aa072adfedcf443629c2adc69f512c09
+ms.openlocfilehash: 1a1d1a47bfe6bd58b1e1a0d4d46c2133f3bf48ad
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "1791224"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2007973"
 ---
 # <a name="date-and-time-fields-in-talent"></a>Dato- og klokkeslettfelt i Talent
 
 [!include [banner](includes/banner.md)]
 
-**Dato og klokkeslett**-felt er et grunnleggende begrep i Dynamics 365 for Talent. Det er viktig å forstå hvordan du arbeider med **Dato og klokkeslett**-data i et Dynamics 365-skjema, Common Data Service og eksterne kilder.
+**Dato og klokkeslett**-felt er et grunnleggende begrep i Dynamics 365 Talent. Det er viktig å forstå hvordan du arbeider med **Dato og klokkeslett**-data i et Dynamics 365-skjema, Common Data Service og eksterne kilder.
 
 ## <a name="understanding-the-difference-between-date-and-date-and-time-field-data-types"></a>Forstå forskjellen mellom datatypene Dato- og Dato og klokkeslett-felt
 
