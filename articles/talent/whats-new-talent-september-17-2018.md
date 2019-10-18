@@ -1,6 +1,6 @@
 ---
-title: Hva er nytt eller endret i Dynamics 365 for Talent Core HR (17. september 2018)
-description: Dette emnet beskriver funksjoner som enten er nye eller endret i Microsoft Dynamics 365 for Talent Core HR.
+title: Hva er nytt eller endret i Dynamics 365 Talent – Core HR (17. september 2018)
+description: Dette emnet beskriver funksjoner som enten er nye eller endret i Microsoft Dynamics 365 Talent – Core HR.
 author: Darinkramer
 manager: AnnBe
 ms.date: 09/17/2018
@@ -18,41 +18,41 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2018-09-14
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 213324f9074f88d9fdc8efdfa46bc3ed7817d1e8
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 558c2cdb4addce54af937ff862535d65f1ebd602
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1518768"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2026048"
 ---
-# <a name="whats-new-or-changed-in-dynamics-365-for-talent-core-hr-september-17-2018"></a><span data-ttu-id="5b2ce-103">Hva er nytt eller endret i Dynamics 365 for Talent Core HR (17. september 2018)</span><span class="sxs-lookup"><span data-stu-id="5b2ce-103">What's new or changed in Dynamics 365 for Talent Core HR (September 17, 2018)</span></span>
+# <a name="whats-new-or-changed-in-dynamics-365-talent-core-hr-september-17-2018"></a><span data-ttu-id="19f88-103">Hva er nytt eller endret i Dynamics 365 Talent: Core HR (17. september 2018)</span><span class="sxs-lookup"><span data-stu-id="19f88-103">What's new or changed in Dynamics 365 Talent: Core HR (September 17, 2018)</span></span>
 
 [!include [banner](includes/banner.md)]
 
-<span data-ttu-id="5b2ce-104">**Build 8.1.154.0**</span><span class="sxs-lookup"><span data-stu-id="5b2ce-104">**Build 8.1.154.0**</span></span>
+<span data-ttu-id="19f88-104">**Build 8.1.154.0**</span><span class="sxs-lookup"><span data-stu-id="19f88-104">**Build 8.1.154.0**</span></span>
 
-<span data-ttu-id="5b2ce-105">Dette emnet beskriver funksjoner som enten er nye eller endret i Core HR.</span><span class="sxs-lookup"><span data-stu-id="5b2ce-105">This topic describes features that are either new or changed in Core HR.</span></span>
+<span data-ttu-id="19f88-105">Dette emnet beskriver funksjoner som enten er nye eller endret i Core HR.</span><span class="sxs-lookup"><span data-stu-id="19f88-105">This topic describes features that are either new or changed in Core HR.</span></span>
 
-## <a name="leave-and-absence--accrue-time-based-on-hours-worked"></a><span data-ttu-id="5b2ce-106">Permisjon og fravær – avsett arbeidstid basert på arbeidstimer</span><span class="sxs-lookup"><span data-stu-id="5b2ce-106">Leave and Absence – Accrue time based on hours worked</span></span>
+## <a name="leave-and-absence--accrue-time-based-on-hours-worked"></a><span data-ttu-id="19f88-106">Permisjon og fravær – avsett arbeidstid basert på arbeidstimer</span><span class="sxs-lookup"><span data-stu-id="19f88-106">Leave and Absence – Accrue time based on hours worked</span></span>
 
-<span data-ttu-id="5b2ce-107">En ny avsetningstype er lagt til for permisjonsplaner.</span><span class="sxs-lookup"><span data-stu-id="5b2ce-107">A new accrual type has been added to Leave plans.</span></span> <span data-ttu-id="5b2ce-108">Avsetningstidsplanen kan nå være basert på måneder med jobberfaring eller arbeidstimer.</span><span class="sxs-lookup"><span data-stu-id="5b2ce-108">The accrual schedule can now be based on months of service or hours worked.</span></span> <span data-ttu-id="5b2ce-109">Hvis du vil ha mer informasjon, se [Avsette fridager basert på arbeidstimer](leave-accrue-hours-worked.md).</span><span class="sxs-lookup"><span data-stu-id="5b2ce-109">For more information, see [Accrue time off based on hours worked](leave-accrue-hours-worked.md).</span></span>
+<span data-ttu-id="19f88-107">En ny avsetningstype er lagt til for permisjonsplaner.</span><span class="sxs-lookup"><span data-stu-id="19f88-107">A new accrual type has been added to Leave plans.</span></span> <span data-ttu-id="19f88-108">Avsetningstidsplanen kan nå være basert på måneder med jobberfaring eller arbeidstimer.</span><span class="sxs-lookup"><span data-stu-id="19f88-108">The accrual schedule can now be based on months of service or hours worked.</span></span> <span data-ttu-id="19f88-109">Hvis du vil ha mer informasjon, se [Avsette fridager basert på arbeidstimer](leave-accrue-hours-worked.md).</span><span class="sxs-lookup"><span data-stu-id="19f88-109">For more information, see [Accrue time off based on hours worked](leave-accrue-hours-worked.md).</span></span>
 
-## <a name="platform-update-18"></a><span data-ttu-id="5b2ce-110">Plattform update 18</span><span class="sxs-lookup"><span data-stu-id="5b2ce-110">Platform update 18</span></span>
+## <a name="platform-update-18-for-finance-and-operations"></a><span data-ttu-id="19f88-110">Platform update 18 for Finance and Operations</span><span class="sxs-lookup"><span data-stu-id="19f88-110">Platform update 18 for Finance and Operations</span></span>
 
-<span data-ttu-id="5b2ce-111">Plattformoppdatering 18 er nå en del av Talent-utgivelsen.</span><span class="sxs-lookup"><span data-stu-id="5b2ce-111">Platform update 18 is now part of the Talent release.</span></span> 
+<span data-ttu-id="19f88-111">Platform update 18 for Finance and Operations er nå en del av Talent-utgivelsen.</span><span class="sxs-lookup"><span data-stu-id="19f88-111">Platform update 18 for Finance and Operations is now part of the Talent release.</span></span> 
 
--   <span data-ttu-id="5b2ce-112">Obligatoriske og andre felt kan være skjult via tilpasning.</span><span class="sxs-lookup"><span data-stu-id="5b2ce-112">Mandatory and other fields can be hidden via personalization.</span></span> <span data-ttu-id="5b2ce-113">Dermed kan en bruker opprette en forenklet opplevelse der obligatoriske felt som er standard innen forretningslogikk, ikke vises.</span><span class="sxs-lookup"><span data-stu-id="5b2ce-113">This allows a user to create a simplified experience where mandatory fields that are defaulted by business logic are not shown.</span></span> <span data-ttu-id="5b2ce-114">Skjulte obligatoriske felt blir også midlertidig gjort synlig hvis de er tomme når lagring forsøkes.</span><span class="sxs-lookup"><span data-stu-id="5b2ce-114">Hidden mandatory fields are also temporarily made visible if they are empty when a save is attempted.</span></span>
+-   <span data-ttu-id="19f88-112">Obligatoriske og andre felt kan være skjult via tilpasning.</span><span class="sxs-lookup"><span data-stu-id="19f88-112">Mandatory and other fields can be hidden via personalization.</span></span> <span data-ttu-id="19f88-113">Dermed kan en bruker opprette en forenklet opplevelse der obligatoriske felt som er standard innen forretningslogikk, ikke vises.</span><span class="sxs-lookup"><span data-stu-id="19f88-113">This allows a user to create a simplified experience where mandatory fields that are defaulted by business logic are not shown.</span></span> <span data-ttu-id="19f88-114">Skjulte obligatoriske felt blir også midlertidig gjort synlig hvis de er tomme når lagring forsøkes.</span><span class="sxs-lookup"><span data-stu-id="19f88-114">Hidden mandatory fields are also temporarily made visible if they are empty when a save is attempted.</span></span>
 
--   <span data-ttu-id="5b2ce-115">I plattformoppdateringen 18 justerer Talent-webklienten nå det visuelle etter Microsoft Fluent Design.</span><span class="sxs-lookup"><span data-stu-id="5b2ce-115">In Platform update 18, the Talent web client now aligns its visuals with Microsoft Fluent Design.</span></span>
+-   <span data-ttu-id="19f88-115">I Platform update 18 for Finance and Operations justerer Talent-webklienten nå det visuelle etter Microsoft Fluent Design.</span><span class="sxs-lookup"><span data-stu-id="19f88-115">In Platform update 18 for Finance and Operations, the Talent web client now aligns its visuals with Microsoft Fluent Design.</span></span>
 
-    -   <span data-ttu-id="5b2ce-116">Når felt er i skrivebeskyttet modus, kan du ganske enkelt velge alternativet Rediger i feltene for å redigere skjemaet.</span><span class="sxs-lookup"><span data-stu-id="5b2ce-116">When fields are in “read mode”, you can simply select the edit option in the fields to switch the form to edit.</span></span>
+    -   <span data-ttu-id="19f88-116">Når felt er i skrivebeskyttet modus, kan du ganske enkelt velge alternativet Rediger i feltene for å redigere skjemaet.</span><span class="sxs-lookup"><span data-stu-id="19f88-116">When fields are in “read mode”, you can simply select the edit option in the fields to switch the form to edit.</span></span>
 
-    -   <span data-ttu-id="5b2ce-117">Endringer i hvordan felt vises i skrivebeskyttet modus.</span><span class="sxs-lookup"><span data-stu-id="5b2ce-117">Changes in how fields display when in read mode.</span></span>
+    -   <span data-ttu-id="19f88-117">Endringer i hvordan felt vises i skrivebeskyttet modus.</span><span class="sxs-lookup"><span data-stu-id="19f88-117">Changes in how fields display when in read mode.</span></span>
 
-    -   <span data-ttu-id="5b2ce-118">Overskrifter i arbeidsområder og på sider, er uthevet.</span><span class="sxs-lookup"><span data-stu-id="5b2ce-118">Headings in workspaces and pages are bold.</span></span>
+    -   <span data-ttu-id="19f88-118">Overskrifter i arbeidsområder og på sider, er uthevet.</span><span class="sxs-lookup"><span data-stu-id="19f88-118">Headings in workspaces and pages are bold.</span></span>
 
--   <span data-ttu-id="5b2ce-119">Virkemåten til ikke-erstattende oppslag er forbedret.</span><span class="sxs-lookup"><span data-stu-id="5b2ce-119">The behavior of non-replacing lookups has been improved.</span></span> <span data-ttu-id="5b2ce-120">Hvis du vil ha mer informasjon, se [Forbedret virkemåte for ikke-erstattende oppslag](https://na01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fdocs.microsoft.com%2Fen-us%2Fbusiness-applications-release-notes%2FOctober18%2Fdynamics365-finance-operations%2Fnon-replacing-lookups&data=02%7C01%7C%7Ce0b3b3bee47b4424aaa208d619ce86f2%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636724772137980342&sdata=RN1qjtZSLtS010zgs0KlcwFrrB8Z7uWWGtFjdxdaamg%3D&reserved=0).</span><span class="sxs-lookup"><span data-stu-id="5b2ce-120">For more information, see [Improved behavior for non-replacing lookups](https://na01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fdocs.microsoft.com%2Fen-us%2Fbusiness-applications-release-notes%2FOctober18%2Fdynamics365-finance-operations%2Fnon-replacing-lookups&data=02%7C01%7C%7Ce0b3b3bee47b4424aaa208d619ce86f2%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636724772137980342&sdata=RN1qjtZSLtS010zgs0KlcwFrrB8Z7uWWGtFjdxdaamg%3D&reserved=0).</span></span>
+-   <span data-ttu-id="19f88-119">Virkemåten til ikke-erstattende oppslag er forbedret.</span><span class="sxs-lookup"><span data-stu-id="19f88-119">The behavior of non-replacing lookups has been improved.</span></span> <span data-ttu-id="19f88-120">Hvis du vil ha mer informasjon, se [Forbedret virkemåte for ikke-erstattende oppslag](https://na01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fdocs.microsoft.com%2Fen-us%2Fbusiness-applications-release-notes%2FOctober18%2Fdynamics365-finance-operations%2Fnon-replacing-lookups&data=02%7C01%7C%7Ce0b3b3bee47b4424aaa208d619ce86f2%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636724772137980342&sdata=RN1qjtZSLtS010zgs0KlcwFrrB8Z7uWWGtFjdxdaamg%3D&reserved=0).</span><span class="sxs-lookup"><span data-stu-id="19f88-120">For more information, see [Improved behavior for non-replacing lookups](https://na01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fdocs.microsoft.com%2Fen-us%2Fbusiness-applications-release-notes%2FOctober18%2Fdynamics365-finance-operations%2Fnon-replacing-lookups&data=02%7C01%7C%7Ce0b3b3bee47b4424aaa208d619ce86f2%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636724772137980342&sdata=RN1qjtZSLtS010zgs0KlcwFrrB8Z7uWWGtFjdxdaamg%3D&reserved=0).</span></span>
 
-## <a name="bug-fixes"></a><span data-ttu-id="5b2ce-121">Feilrettinger</span><span class="sxs-lookup"><span data-stu-id="5b2ce-121">Bug fixes</span></span>
+## <a name="bug-fixes"></a><span data-ttu-id="19f88-121">Feilrettinger</span><span class="sxs-lookup"><span data-stu-id="19f88-121">Bug fixes</span></span>
 
-<span data-ttu-id="5b2ce-122">Denne versjonen inneholder flere ekstra feilrettinger, inkludert referanser til ACA og ADA, og I9 er nå bare aktivert i firmaer i USA.</span><span class="sxs-lookup"><span data-stu-id="5b2ce-122">This release includes several additional bug fixes, including references to ACA, ADA, and I9 now will only be enabled in US companies.</span></span>
+<span data-ttu-id="19f88-122">Denne versjonen inneholder flere ekstra feilrettinger, inkludert referanser til ACA og ADA, og I9 er nå bare aktivert i firmaer i USA.</span><span class="sxs-lookup"><span data-stu-id="19f88-122">This release includes several additional bug fixes, including references to ACA, ADA, and I9 now will only be enabled in US companies.</span></span>
