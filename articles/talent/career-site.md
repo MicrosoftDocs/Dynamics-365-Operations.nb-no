@@ -1,6 +1,6 @@
 ---
-title: Konfigurere karriereområdet i Microsoft Dynamics 365 for Talent - Attract
-description: Dette emnet gir en oversikt over den kandidatrettede karriereområde-funksjonaliteten i Microsoft Dynamics 365 for Talent - Attract.
+title: Konfigurere karriereområdet i Microsoft Dynamics 365 Talent – Attract
+description: Dette emnet gir en oversikt over den kandidatrettede karriereområde-funksjonaliteten i Microsoft Dynamics 365 Talent – Attract
 author: hasrivas
 manager: AnnBe
 ms.date: 03/20/2019
@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: hasrivas
 ms.search.validFrom: 2019-02-12
 ms.dyn365.ops.version: AX 7.1.0, Talent April 2018 update
-ms.openlocfilehash: 32fb5e0c00b80653cf32f37a21f94aa448a20191
-ms.sourcegitcommit: 7c49475402632069685df714546770d30804af7f
+ms.openlocfilehash: ec5fe31c6547b008b29e656729c35863d90bffc1
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "1739777"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2026285"
 ---
 # <a name="set-up-your-career-site"></a>Konfigurere karriereområdet
 
 [!include[banner](../includes/banner.md)]
 
-Dette emnet gir en oversikt over den kandidatrettede karriereområde-funksjonaliteten i Microsoft Dynamics 365 for Talent: Attract. Den forklarer også hvordan du konfigurerer denne funksjonen.
+Dette emnet gir en oversikt over den kandidatrettede karriereområde-funksjonaliteten i Microsoft Dynamics 365 Talent: Attract. Den forklarer også hvordan du konfigurerer denne funksjonen.
 
 Attract inneholder ett karriereområde for hvert miljø i en leier. Hvis en organisasjon for eksempel har et utviklingsmiljø og et testmiljø, klargjøres ett karriereområde for utviklingsmiljøet og et annet karriereområde klargjøres for testmiljøet. Hvert karriereområde er fullstendig isolert og har sin egen godkjenningsmekanisme. Jobber og kandidatprofiler deles ikke mellom karriereområder.
 
@@ -62,7 +62,7 @@ Følgende liste inneholder vanlige URL-adresser for karriereområde og hvordan d
 
 -   **URL-adresse til hjemmeside for karriereområde** – Hvis du vil vise URL-adressen til hjemmesiden for karriereområdet, logger du på Attract som administrator, velger **Administrasjonssenter** på **Innstillinger**-menyen og velger deretter **Karrierestedsledelse**-kategorien.
 
--   **Søk-URL for individuell jobbutlysning** – Når du [posterer en ekstern jobb](Creating-jobs-Attract.md#postings) for første gang, kan du kopiere **Søk**-koblingen fra programmet Attract. URL-adressen for denne koblingen vil være i følgende format: [https://jobs.talent.dynamics.com/jobs/\<company_name\>/\<environment_number\>/\<job_number\>/apply](https://jobs.talent.dynamics.com/jobs/%3ccompany_name%3e/%3cenvironment_number%3e/%3cjob_number%3e/apply)
+-   **Søk-URL for individuell jobbutlysning** – Når du [posterer en ekstern jobb](Creating-jobs-Attract.md#postings) for første gang, kan du kopiere **Søk**-koblingen fra Attract. URL-adressen for denne koblingen vil være i følgende format: [https://jobs.talent.dynamics.com/jobs/\<company_name\>/\<environment_number\>/\<job_number\>/apply](https://jobs.talent.dynamics.com/jobs/%3ccompany_name%3e/%3cenvironment_number%3e/%3cjob_number%3e/apply)
 
 -   **URL-adresse til jobbutlysning** – URL-adressen til jobbutlysningen er en delstreng til Søk-URL-en. Den består av alt opp til og med jobbnummeret. For den foregående Søk-URL-adressen er derfor URL-adressen for jobbutlysningen [https://jobs.talent.dynamics.com/jobs/\<company_name\>/\<environment_number\>/\<job_number\>](https://jobs.talent.dynamics.com/jobs/%3ccompany_name%3e/%3cenvironment_number%3e/%3cjob_number%3e)
 

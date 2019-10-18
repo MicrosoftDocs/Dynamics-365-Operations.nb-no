@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c0369c1a4bbc893a86cf14bd59a2d28a7bbca15c
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: fe8c4bc8f2efb06de4cb6fd727df93ba1a5d14bf
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1554650"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2251354"
 ---
 # <a name="price-simulation"></a>Prissimulering
 
@@ -51,7 +51,7 @@ For å sikre at rabatter og priser beregnes på riktig måte, må du være forsi
 
 ### <a name="types-of-discounts-in-trade-agreements"></a>Rabattypene i forretningsavtaler
 
-Forretningsavtalene i Microsoft Dynamics 365 for Finance and Operations kan ha fire typer prisrabatter. Disse rabattene kan defineres for ulike varer, kunder eller prisgrupper, og kan begrenses etter dato. Hvis du vil unngå feilberegninger, må du vurdere forretningsavtaler når du kjører prissimuleringer. Her er fire rabattypene i forretningsavtaler:
+Forretningsavtalene i Supply Chain Management kan ha fire typer prisrabatter. Disse rabattene kan defineres for ulike varer, kunder eller prisgrupper, og kan begrenses etter dato. Hvis du vil unngå feilberegninger, må du vurdere forretningsavtaler når du kjører prissimuleringer. Her er fire rabattypene i forretningsavtaler:
 
 -   **Salgspris** – Separate salgspriser kan angis for varer. Når det opprettes tilbudslinjer, søker programmet etter den riktige salgsprisen for en vare, og overfører den til tilbudslinjene. Derfor påvirkes ikke en forretningsavtale med denne typen rabatt, prissimuleringen. Salgsprisen som brukes i tilbudslinjen, reflekterer forretningsavtalen.
 -   **Linjerabatt** – Spesialrabatter angis for varer, avhengig av antallet som er bestilt. Linjebeløp reduseres typisk av linjerabatten før det kjøres en prissimulering. Derfor påvirkes en forretningsavtale med denne typen rabatt, prissimuleringen.

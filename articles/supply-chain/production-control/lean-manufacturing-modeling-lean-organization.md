@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7fe9a81f58423c3396493d0ea2c27bdea4eee102
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 40664936382f5edcb3c1680aa4af245bdef539a6
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1560146"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2250229"
 ---
 # <a name="modeling-a-lean-organization"></a>Modellere en lean-organisasjon
 
@@ -39,7 +39,7 @@ I produksjonsscenarioer som er basert på produksjonsordrer utstedes materialer 
 
 For å redusere leveringstider og overflødig beholdning mellom arbeidssentre som er forårsaket av partiproduksjon, introduserer lean manufacturing Kanban-etterfylling og supermarkeder i produksjon og lageretterfylling. Disse funksjonene forstyrrer vanligvis produksjonen av delvis uavhengige kanban-sykluser. Etterfylling for en kanban for et halvfabrikata utløses ikke lenger av en ordre for ferdige produkter. 
 
-Hvis du vil gjenopprette en kontekst for produksjon og kostnader for de forskjellige kanban-scenariene som foreslås i Microsoft Dynamics 365 for Finance and Operations, introduseres aktivitetsbaserte produksjonsflyter som ryggraden for lean manufacturing. Alle kanban-regler refererer til denne forhåndsdefinerte strukturen. Den aktivitetsbaserte modellen støtter oppsettet av en rekke ulike scenarier. Denne modellen øker imidlertid ikke kompleksiteten for produksjonsarbeidere, fordi alle scenarier bruker samme aktivitetsbaserte brukergrensesnittet.
+Hvis du vil gjenopprette en kontekst for produksjon og kostnader for de forskjellige kanban-scenariene som foreslås, introduseres aktivitetsbaserte produksjonsflyter som ryggraden for lean manufacturing. Alle kanban-regler refererer til denne forhåndsdefinerte strukturen. Den aktivitetsbaserte modellen støtter oppsettet av en rekke ulike scenarier. Denne modellen øker imidlertid ikke kompleksiteten for produksjonsarbeidere, fordi alle scenarier bruker samme aktivitetsbaserte brukergrensesnittet.
 
 ## <a name="semi-finished-products-non-bom-levels"></a>Halvfabrikata (ikke stykklistenivåer)
 Lean manufacturing integrerer Kanbaner for lagerførte produkter og halvfabrikata i ett enkelt rammeverk, og tilbyr derfor en felles brukeropplevelse i alle situasjoner. På grunn av denne arkitekturen trenger ikke lenger flere stykklistenivåer å introduseres for å aktivere kanbaner som skal brukes for halvfabrikata. Denne arkitekturen bidrar også til å redusere lagertransaksjoner til et minimum.
@@ -50,7 +50,7 @@ Reduksjonen av partistørrelser til den ideelle tilstanden for en enkelt flyt i 
 ## <a name="value-streams-and-value-stream-mapping"></a>Verdistrømmer og verdistrømtilordning
 Arkitekturen for Lean manufacturing for er inspirert av de fem Lean-prinsippene som ble formulert av Womack og Jones: kundeverdi, verdistrøm, flyt, pull og perfeksjon. En godkjent metode for å implementere løsninger for lean manufacturing i den fysiske verdenen på produksjonen, er verdistrømtilordning (VSM). Denne metoden ble innført av Rother og Shook i publikasjonen "Learning to See" ved Lean Manufacturing Institute. 
 
-I Finance and Operations kan den fremtidig tilstanden for verdistrøm modelleres som en produksjonsflytversjon. Alle prosesser i verdistrømmen modelleres som Prosessaktiviteter. Bevegelser eller overføringer kan modelleres som overføringsaktiviteter hvis overføringsstatusen må registreres eller hvis en integrering med lagerplukking eller konsoliderte leveranser er nødvendig. 
+Den fremtidige tilstanden for verdistrøm modelleres som en produksjonsflytversjon. Alle prosesser i verdistrømmen modelleres som Prosessaktiviteter. Bevegelser eller overføringer kan modelleres som overføringsaktiviteter hvis overføringsstatusen må registreres eller hvis en integrering med lagerplukking eller konsoliderte leveranser er nødvendig. 
 
 Selve verdistrømmen modelleres som en driftsenhet. Derfor kan verdistrømmen brukes som en finansdimensjon.
 

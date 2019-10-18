@@ -1,6 +1,6 @@
 ---
-title: Hva er nytt eller endret i Dynamics 365 for Talent (6. august 2019)
-description: Dette emnet beskriver funksjoner som enten er nye eller endret i Microsoft Dynamics 365 for Talent.
+title: Hva er nytt eller endret i Dynamics 365 Talent (6. august 2019)
+description: Dette emnet beskriver funksjoner som enten er nye eller endret i Microsoft Dynamics 365 Talent.
 author: Darinkramer
 manager: AnnBe
 ms.date: 8/6/2019
@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-08-06
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 90bac5aa9565549b2e257b0f6804a1bad53f2e9a
-ms.sourcegitcommit: a368682f9cf3897347d155f1a2d4b33e555cc2c4
+ms.openlocfilehash: b642b5745daa6aa06450cf82abee2c51c60ff9a6
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/08/2019
-ms.locfileid: "1867685"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2024051"
 ---
-# <a name="whats-new-or-changed-in-dynamics-365-for-talent-august-6-2019"></a>Hva er nytt eller endret i Dynamics 365 for Talent (6. august 2019)
+# <a name="whats-new-or-changed-in-dynamics-365-talent-august-6-2019"></a>Hva er nytt eller endret i Dynamics 365 Talent (6. august 2019)
 
 [!include [banner](includes/banner.md)]
 
-Dette emnet beskriver funksjoner som enten er nye eller endret i Dynamics 365 for Talent.
+Dette emnet beskriver funksjoner som enten er nye eller endret i Dynamics 365 Talent.
 
 ## <a name="changes-in-attract"></a>Endringer i Attract
 
@@ -59,6 +59,6 @@ Et nytt alternativ lar ledere vise prestasjonen til både direkte underordnede o
 
 ## <a name="coming-soon"></a>Kommer snart
 
-### <a name="platform-update-29"></a>Plattform update 29
+### <a name="platform-update-29-for-finance-and-operations"></a>Platform update 29 for Finance and Operations
 
-Hvis du vil ha mer informasjon om Platform update 29, kan du se [Forhåndsvisningsfunksjoner i Dynamics 365 for Finance and Operations Platform Update 29 (oktober 2019)](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-29).
+Hvis du vil ha mer informasjon om Platform update 29 for Finance and Operations, kan du se [Forhåndsvisningsfunksjoner i Dynamics 365 Finance and Operations Platform Update 29 (oktober 2019)](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-29).

@@ -1,6 +1,6 @@
 ---
-title: Postere jobber til LinkedIn fra Microsoft Dynamics 365 for Talent - Attract
-description: Dette emnet forklarer hvordan du bruker Dynamics 365 for Talent - Attract til å postere jobber til LinkedIn.
+title: Postere jobber til LinkedIn fra Microsoft Dynamics 365 Talent – Attract
+description: Dette emnet forklarer hvordan du bruker Dynamics 365 Talent – Attract til å postere jobber til LinkedIn.
 author: andreabichsel
 manager: AnnBe
 ms.date: 07/08/2019
@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2019-07-08
 ms.dyn365.ops.version: Platform update 24
-ms.openlocfilehash: f2109f5e90321598eb2317140eef6bcd86ab82f5
-ms.sourcegitcommit: c62756cb04549b2ff5de9b93d497e964a340335a
+ms.openlocfilehash: 014202ca49e5bd6204d450b2a43c7372ed84ff33
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 07/17/2019
-ms.locfileid: "1756182"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2008249"
 ---
 # <a name="post-jobs-to-linkedin"></a>Postere jobber til LinkedIn
 
 [!include [banner](../includes/banner.md)]
 
-LinkedIn er det største profesjonelle online-nettverket, som gir deg tilgang til verdens beste talenter. Microsoft Dynamics 365 for Talent : Attract hjelper deg å få talentet du trenger, ved å la deg postere jobber direkte fra Attract til LinkedIn.
+LinkedIn er det største profesjonelle online-nettverket, som gir deg tilgang til verdens beste talenter. Microsoft Dynamics 365 Talent: Attract hjelper deg å få talentet du trenger, ved å la deg postere jobber direkte fra Attract til LinkedIn.
 
 Attract lar deg postere begrensede oppføringer (Limited Listings) til LinkedIn uten ekstra kostnad. Disse oppføringene er bare tilgjengelige gjennom LinkedIn-programvarepartnere som Attract. De vises ikke i **Karriere**-panelet på firmaets LinkedIn-side fordi der vises bare betalte oppføringer. Men de vises når potensielle kandidater viser alle tilgjengelige jobber. Begrensede oppføringer vises også i jobbsøk på LinkedIn.
 

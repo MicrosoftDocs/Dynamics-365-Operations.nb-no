@@ -1,6 +1,6 @@
 ---
 title: Vurdere salgsytelse etter produkt
-description: Du kan se nærmere på fortjenesten for topp 10-produktene ved hjelp av Microsoft Dynamics 365 for Retail.
+description: Du kan se nærmere på fortjenesten for topp 10-produktene ved hjelp av Dynamics 365 Retail.
 author: ashishmsft
 manager: AnnBe
 ms.date: 06/20/2017
@@ -19,20 +19,20 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 059474a780f849d6e1920703c1f717a9adaa2617
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 7796aa830c99bd0fd5784ff95e509767a3b55b44
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1546392"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2024966"
 ---
 # <a name="assess-sales-performance-by-product"></a>Vurdere salgsytelse etter produkt
 
 [!include [banner](includes/banner.md)]
 
-Du kan se nærmere på fortjenesten for topp 10-produktene ved hjelp av Microsoft Dynamics 365 for Retail.
+Du kan se nærmere på fortjenesten for topp 10-produktene ved hjelp av Dynamics 365 Retail.
 
-Som en del av Dynamics 365 for Retail kan brukere også lese om lønnsomhet for de viktigste produktene (10 til 100) på tvers av forskjellige nivåer av organisasjonshierarkiet, basert på ett av følgende kriterier:
+Som en del av Retail kan brukere også lese om lønnsomhet for de viktigste produktene (10 til 100) på tvers av forskjellige nivåer av organisasjonshierarkiet, basert på ett av følgende kriterier:
 
 - Salgsbeløp
 - Antall

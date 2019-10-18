@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: pjacobse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 00ec888600dedbc740be0efc64cddf37c5c6f558
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 83d969fcc59af87da3921225974ebc2ae41d9fa1
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1572840"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2250996"
 ---
 # <a name="merge-inventory-batches"></a>Slå sammen lagerpartier
 
@@ -89,7 +89,7 @@ Nei, kan du bare flette partier som har samme område og lagringsdimensjoner for
 Nei, kan du flette bare hele antallet for partier. Funksjonaliteten for partisammenslåing er ment som en funksjon for lager, ikke en funksjon for produksjon.
 
 ## <a name="what-if-the-batches-have-different-batch-attribute-values"></a>Hva om bunkene har forskjellige bunkeattributtverdier?
-Når du velger kildepartiene som skal kombineres i det sammenslåtte partiet, kontrollerer Finance and Operations om egenskapene eller attributtverdiene er like i alle partiene. Når en attributtverdi er den samme, foreslås det en verdi for det sammenslåtte partiet. Du kan endre denne verdien. Attributtverdier som ikke er like, forblir tomme for det sammenslåtte partiet, og du kan angi disse verdiene manuelt. Hvis partiattributtypen for attributtverdien er et heltall eller en brøkdel og verdiene ikke er de samme for alle kildepartiene, beregnes verdien ved hjelp av en beregning av avveid gjennomsnitt. Den beregnede verdien rundes opp eller ned til nærmeste inkrement.. Hvis verdien er tom for et kildeparti, blir ikke partiet og tilhørende antall inkludert i beregningen. **Eksempel** Eksemplet nedenfor viser en beregning av avveid gjennomsnitt for et sammenslått parti. To av kildepartiene har en tom verdi for en partiattributtypen som er et heltall. Følgende attributt er tilordnet til kildepartiene.
+Når du velger kildepartiene som skal kombineres i det sammenslåtte partiet, kontrollerer Supply Chain Management om egenskapene eller attributtverdiene er like i alle partiene. Når en attributtverdi er den samme, foreslås det en verdi for det sammenslåtte partiet. Du kan endre denne verdien. Attributtverdier som ikke er like, forblir tomme for det sammenslåtte partiet, og du kan angi disse verdiene manuelt. Hvis partiattributtypen for attributtverdien er et heltall eller en brøkdel og verdiene ikke er de samme for alle kildepartiene, beregnes verdien ved hjelp av en beregning av avveid gjennomsnitt. Den beregnede verdien rundes opp eller ned til nærmeste inkrement.. Hvis verdien er tom for et kildeparti, blir ikke partiet og tilhørende antall inkludert i beregningen. **Eksempel** Eksemplet nedenfor viser en beregning av avveid gjennomsnitt for et sammenslått parti. To av kildepartiene har en tom verdi for en partiattributtypen som er et heltall. Følgende attributt er tilordnet til kildepartiene.
 
 | Attributt | Minimum | Økning | Maksimum |
 |-----------|---------|-----------|---------|

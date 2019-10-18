@@ -1,5 +1,5 @@
 ---
-title: Oppgradere lagerstyring fra Microsoft Dynamics AX 2012 til Finance and Operations
+title: Oppgradere lagerstyring fra Microsoft Dynamics AX 2012 til Supply Chain Management
 description: Dette emnet gir en oversikt over migreringsalternativer for produkt og lagerstyring.
 author: perlynne
 manager: AnnBe
@@ -18,29 +18,29 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 768d0bd16a41a3458b25606b74d606318d176ff0
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: c3dcb75653743d0d135eda197c6330f3ee9c5383
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1554052"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2251437"
 ---
-# <a name="upgrade-warehouse-management-from-microsoft-dynamics-ax-2012-to-finance-and-operations"></a>Oppgradere lagerstyring fra Microsoft Dynamics AX 2012 til Finance and Operations
+# <a name="upgrade-warehouse-management-from-microsoft-dynamics-ax-2012-to-supply-chain-management"></a>Oppgradere lagerstyring fra Microsoft Dynamics AX 2012 til Supply Chain Management 
 
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet gir en oversikt over prosessen med å oppgradere fra Microsoft Dynamics AX 2012 R3, kjører modulen WMSII til Microsoft Dynamics 365 for Finance and Operations.
+Dette emnet gir en oversikt over prosessen med å oppgradere fra Microsoft Dynamics AX 2012 R3, kjører modulen WMSII til Supply Chain Management.
 
-Finance and Operations støtter ikke lenger den gamle **WMSII**-modulen fra Microsoft Dynamics AX 2012. I stedet kan du bruke **Lagerstyring**-modulen. I WMSII-modulen kan lagerdimensjonene Sted og Pall-ID velges for økonomisk lager, men lagerdimensjonen Pall-ID kan ikke brukes for økonomisk lager i Finance and Operations.
+Supply Chain Management støtter ikke lenger den gamle **WMSII**-modulen fra Microsoft Dynamics AX 2012. I stedet kan du bruke **Lagerstyring**-modulen. I WMSII-modulen kan lagerdimensjonene Sted og Pall-ID velges for økonomisk lager, men lagerdimensjonen Pall-ID kan ikke brukes for økonomisk lager i Supply Chain Management.
 
 Under en oppgradering blir alle produkter som er tilknyttet en lagringsdimensjonsgruppe som bruker lagerdimensjonen Pall-ID identifisert, merket som blokkert og ikke behandlet for oppgradering.
 
-## <a name="upgrading-to-finance-and-operations-when-ax-2012-r3-wmsii-is-used"></a>Oppgradering til Finance and Operations når AX 2012 R3 WMSII brukes
+## <a name="upgrading-to-supply-chain-management-when-ax-2012-r3-wmsii-is-used"></a>Oppgradere til Supply Chain Management når AX 2012 R3 WMSII brukes
 Etter oppgraderingen kan du bruke et sett med alternativer i skjemaet **Endre lagringsdimensjonsgruppen for varer** for å fjerne blokkeringen av produkter som ble blokkert under oppgraderingen, og deretter behandle transaksjoner for disse produktene.
 
-### <a name="enabling-items-in-finance-and-operations"></a>Aktivere varer i Finance og Operations
-Denne endringen er nødvendig fordi varesporing en del av lagerstyringsprosessene i Finance and Operations. For disse prosessene må alle lagre og deres lokasjoner være tilknyttet en lokasjonsprofil. Hvis du vil bruke lagerstyringsprosesser, må følgende konfigureres:
+### <a name="enabling-items-in-supply-chain-management"></a>Aktivere varer i Supply Chain Management 
+Denne endringen er nødvendig fordi varesporing en del av lagerstyringsprosessene i Supply Chain Management. For disse prosessene må alle lagre og deres lokasjoner være tilknyttet en lokasjonsprofil. Hvis du vil bruke lagerstyringsprosesser, må følgende konfigureres:
 -   Eksisterende lagre må aktiveres for å bruke lagerstyringsprosesser 
 -   Eksisterende frigitte produkter må være knyttet til en lagringsdimensjonsgruppe som bruker lagerstyringsprosesser 
 

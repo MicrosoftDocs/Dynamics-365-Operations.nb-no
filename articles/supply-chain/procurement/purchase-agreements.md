@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7024104dfc76a33735199ad0871fe7ce29f8e011
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 1e022fbf182da9a07fe20e5bebdd99cbff3d9c90
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1570394"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2248940"
 ---
 # <a name="purchase-agreements"></a>Kjøpsavtaler
 
@@ -78,7 +78,7 @@ Når du bekrefter en kjøpsavtale, lagres den gjeldende versjonen av kjøpsavtal
 Når du oppretter en bestilling, kan du bruke en kjøpsavtale på den. Informasjon fra vilkårene for avtalen, som betalingsbetingelser, leveringsbetingelser og leveringsadresse, kopieres deretter til overskriften til bestillingen. Hvis PO-en inneholder én eller flere linjer for produkter eller kategorier som er dekket av avtalen, brukes prisene og rabattene fra kjøpsavtalen for disse linjene. Beløpet eller antallet på ordrelinjen bidrar til oppfyllelsen av forpliktelsen i kjøpsavtalen. Den samme bestillingen kan inneholde både linjer som ikke knyttet til en kjøpsavtale, og linjer som har en forpliktelse for en kjøpsavtale.  
 
 Du kan velge en kjøpsavtale bare når du oppretter en bestilling. Du kan ikke velge en kjøpsavtale etter at bestillingen er opprettet.  
-I enkelte tilfeller der bestillinger opprettes indirekte, kan du kontrollere om Finance and Operations automatisk søker etter gjeldende kjøpsavtaler. Du kan for eksempel gjøre dette når du autoriserer planlagte bestillinger automatisk eller oppretter bestillinger som er basert på salgsordrer.
+I enkelte tilfeller der bestillinger opprettes indirekte, kan du kontrollere om Supply Chain Management automatisk søker etter gjeldende kjøpsavtaler. Du kan for eksempel gjøre dette når du autoriserer planlagte bestillinger automatisk eller oppretter bestillinger som er basert på salgsordrer.
 
 ## <a name="purchase-agreements-and-intercompany-trade"></a>Kjøpsavtaler og konsernintern handel
 Du kan opprette konserninterne handelsforbindelser mellom leverandørkontoer og kundekontoer som er i forskjellige juridiske enheter. Når en salgsordre eller bestilling opprettes for den ene av partene, opprettes en konsernintern ordrekjede. I ordrekjeden opprettes salgsordren og bestillingen i de aktuelle juridiske enhetene.  

@@ -1,6 +1,6 @@
 ---
-title: Opprette og sende en veiledning for jobbintroduksjon med Dynamics 365 for Talent - Onboard
-description: Dette emnet forklarer hvordan du bruker Microsoft Dynamics 365 for Talent - Onboard-appen til å opprette en jobbintroduksjonsveiledning for nyansatte. Denne oppgaven er et viktig første skritt i en ansettelse-til-pensjonering-strategi for administrasjon av menneskelig kapital (HCM).
+title: Opprette og sende en veiledning for jobbintroduksjon med Dynamics 365 Talent – Onboard
+description: Dette emnet forklarer hvordan du bruker Microsoft Dynamics 365 Talent – Onboard-appen til å opprette en jobbintroduksjonsveiledning for nyansatte. Denne oppgaven er et viktig første skritt i en ansettelse-til-pensjonering-strategi for administrasjon av menneskelig kapital (HCM).
 author: andreabichsel
 manager: ''
 ms.date: 05/02/2019
@@ -16,18 +16,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2019-05-06
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: de5d584e3b7edba2751aa0c83b0465df2c3e4f7d
-ms.sourcegitcommit: 9f762fa89c5b432667aa156c22d679a7f601952d
+ms.openlocfilehash: e4dbfcc3b3fd611eea36109a516a7b9361a9f654
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 07/08/2019
-ms.locfileid: "1731592"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2009860"
 ---
-# <a name="create-and-send-an-onboarding-guide-by-using-dynamics-365-for-talent-onboard"></a>Opprette og sende en veiledning for jobbintroduksjon med Dynamics 365 for Talent: Onboard
+# <a name="create-and-send-an-onboarding-guide"></a>Opprette og sende en innebygd veiledning for jobbintroduksjon
 
 [!include [banner](includes/banner.md)]
 
-Med Microsoft Dynamics 365 for Talent: Onboard kan du opprette jobbintroduksjonsveiledninger fra maler som du har opprettet selv, fra maler som er tilgjengelige i et galleri, eller fra bunnen av.
+Med Microsoft Dynamics 365 Talent: Onboard kan du opprette jobbintroduksjonsveiledninger fra maler som du har opprettet selv, fra maler som er tilgjengelige i et galleri, eller fra bunnen av.
 
 Når du har opprettet en jobbintroduksjonsveiledning, kan du sende den til en nyansatt. Alternativt kan du sende den til flere nyansatte som du angir i en Microsoft Excel-fil som du laster ned fra Onboard-appen.
 

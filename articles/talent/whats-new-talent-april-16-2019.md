@@ -1,6 +1,6 @@
 ---
-title: Hva er nytt eller endret i Dynamics 365 for Talent (16. april 2019)?
-description: Dette emnet beskriver funksjoner som enten er nye eller endret i Microsoft Dynamics 365 for Talent.
+title: Hva er nytt eller endret i Dynamics 365 Talent (16. april 2019)?
+description: Dette emnet beskriver funksjoner som enten er nye eller endret i Microsoft Dynamics 365 Talent.
 author: Darinkramer
 manager: AnnBe
 ms.date: 04/16/2019
@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-04-16
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: adf8f470b00a565c62a27f857d490c6c000b21d8
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 0781a479ebf37334d8eba18ea6d69d7cfb9db9ea
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1518721"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2024143"
 ---
-# <a name="whats-new-or-changed-in-dynamics-365-for-talent-april-16-2019"></a>Hva er nytt eller endret i Dynamics 365 for Talent (16. april 2019)?
+# <a name="whats-new-or-changed-in-dynamics-365-talent-april-16-2019"></a>Hva er nytt eller endret i Dynamics 365 Talent (16. april 2019)?
 
 [!include [banner](includes/banner.md)]
 
-Dette emnet beskriver funksjoner som enten er nye eller endret i Dynamics 365 for Talent.
+Dette emnet beskriver funksjoner som enten er nye eller endret i Dynamics 365 Talent.
 
 ## <a name="changes-in-attract"></a>Endringer i Attract
 
@@ -47,11 +47,11 @@ Endringer som er beskrevet i denne delen, gjelder build nummer 8.1.2239. Tall i 
 
 ### <a name="compensation-region-compensation-level-benefit-option-and-skill-type-entities-in-common-data-service-updated-to-include-customer-field-support"></a>Enhetene Kompensasjonsområde, Kompensasjonsnivå, Fordelsalternativ og Kompetansetype i Common Data Service er oppdatert for å inkludere støtte for kundefelt
 
-I denne versjonen har disse Common Data Service-enhetene blitt oppdatert slik at de inkluderer muligheten for å inkludere egendefinert felt som legges til via Talent (Core HR).
+I denne versjonen har disse Common Data Service-enhetene blitt oppdatert slik at de inkluderer muligheten for å inkludere egendefinert felt som legges til via Talent: (Core HR).
 
 ### <a name="new-common-data-service-entity-support-for-compensation-vesting-rules-compensation-variable-plan-variable-compensation"></a>Støtte for ny Common Data Service-enhet: Kompensasjon, overdragelsesregler, Variabel plan for kompensasjon, Variabel kompensasjon
 
-I denne versjonen er enhetene Kompensasjon, overdragelsesregler, Variabel plan for kompensasjon og Variabel kompensasjon lagt til Common Data Service. Disse enhetene støtter også egendefinerte felt som legges til via Talent (Core HR).
+I denne versjonen er enhetene Kompensasjon, overdragelsesregler, Variabel plan for kompensasjon og Variabel kompensasjon lagt til Common Data Service. Disse enhetene støtter også egendefinerte felt som legges til via Talent: (Core HR).
 
 ### <a name="powerbi-refresh-issues-314342"></a>PowerBI-oppdateringsproblemer (314342)
 
@@ -95,6 +95,6 @@ Med denne endringen oppdages duplikater når du angir navnefelt, og statusen vis
 
 ### <a name="email-support-for-alerts"></a>E-poststøtte for varsler
 
-Med Platform update 25 kan brukere opprette varslingsregler som automatisk leverer e-postmeldinger til kontakter når de utløses av en hendelse.
+Med platform update 25 for Finance and Operations kan brukere opprette varslingsregler som automatisk leverer e-postmeldinger til kontakter når de utløses av en hendelse.
 
 

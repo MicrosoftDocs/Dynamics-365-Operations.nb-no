@@ -1,6 +1,6 @@
 ---
 title: Oversikt over lean manufacturing
-description: Denne artikkelen gir en oversikt over og beskrivelse av lean manufacturing-funksjonene i Dynamics 365 for Finance and Operations.
+description: Denne artikkelen gir en oversikt over og beskrivelse av lean manufacturing-funksjonene i Dynamics 365 Supply Chain Management.
 author: ChristianRytt
 manager: AnnBe
 ms.date: 06/20/2017
@@ -19,29 +19,29 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c6db940548018c9d6bbb31891c21f7c334ba8956
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: d338318d3f7a1b56fe98e5c093ccbe795bd8de44
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1562398"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2250078"
 ---
 # <a name="lean-manufacturing-overview"></a>Oversikt over lean manufacturing
 
 [!include [banner](../includes/banner.md)]
 
-Denne artikkelen gir en oversikt over og beskrivelse av lean manufacturing-funksjonene i Microsoft Dynamics 365 for Finance and Operations.
+Denne artikkelen gir en oversikt over og beskrivelse av lean manufacturing-funksjonene i Dynamics 365 Supply Chain Management.
 
 Lean-produksjon tilbyr verktøy som du kan bruke til å modellere lean-operasjoner. Disse verktøyene støtter og fremmer følgende konsepter og forretningsaktiviteter:
 -   Opprett et grunnlag for lean-produksjon ved å modellere produksjons- og logistikkprosesser som produksjonsflyter.
 -   Implementer et lean-pullsystem ved å bruke kanbaner til å signalisere behovskrav.
 -   Overvåke og vedlikeholde kanban-jobber.
 
-Arkitekturen for lean-produksjon i Finance and Operations består av produksjonsflyter, aktiviteter og kanban-regler. Disse strukturene er fullstendig integrert med prosessene i Finance and Operations. Du kan bruke lean-produksjon i et produksjonsmiljø med blandet modus som kombinerer forskjellige strategier for forsyning, produksjon, leverandører. Disse strategiene omfatter produksjonsordrer, partiordrer for prosessindustrier, bestillinger og overføringsordrer.
+Arkitekturen for lean-produksjon består av produksjonsflyter, aktiviteter og kanban-regler. Disse strukturene er fullstendig integrert med prosessene i Supply Chain Management. Du kan bruke lean-produksjon i et produksjonsmiljø med blandet modus som kombinerer forskjellige strategier for forsyning, produksjon, leverandører. Disse strategiene omfatter produksjonsordrer, partiordrer for prosessindustrier, bestillinger og overføringsordrer.
 
 | **Viktig**                                                                                                                                                                                                                                                                |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Du kan bruke Finance and Operations til å støtte implementeringen av lean-produksjon med kanbaner. En vellykket implementering av lean-prinsipper avhenger imidlertid av interne forretningsprosesser som du bruker, og faktiske produksjonsbetingelser og miljøet. |
+| Du kan bruke Supply Chain Management til å støtte implementeringen av lean-produksjon med kanbaner. En vellykket implementering av lean-prinsipper avhenger imidlertid av interne forretningsprosesser som du bruker, og faktiske produksjonsbetingelser og miljøet. |
 
 ## <a name="modeling-manufacturing-and-logistics-processes-as-production-flows"></a> Modellere produksjons- og logistikkprosesser som produksjonsflyter
 For å opprette et grunnlag for lean-produksjon modelleres produksjons- og logistikkprosesser som produksjonsflyter. Denne aktiviteten består av følgende oppgaver:
@@ -69,8 +69,8 @@ Listen nedenfor beskriver de spesialiserte kanban-tavlene:
 -   Kanban-tavle for overføringsjobber – Denne tavlen gir en oversikt over gjeldende overføringsjobber. Du kan oppdatere og registrere plukklister, starte og fullføre overføringsjobber og utføre andre oppgaver.
 -   Kanban-tavle for prosessjobber – Denne tavlen er utviklet for å støtte den vanlige produksjonsflyten og gi en oversikt over den gjeldende situasjonen i én eller flere arbeidsceller. Fra denne tavlen kan Kanbaner prioriteres, plukkes eller produseres. Tavlen er også utformet for å støtte strekkodeskanning for rapportering av Kanbaner.
 
-## <a name="kanban-jobs-and-integration-with-finance-and-operations-processes"></a>Kanban-jobber og integrasjon med Finance and Operations-prosesser
-Kanban-jobber er fullstendig integrert med prosesser for lagertransaksjoner i Finance and Operations.
+## <a name="kanban-jobs-and-integration-with-supply-chain-management-processes"></a>Kanban-jobber og integrasjon med prosesser for Supply Chain Management
+Kanban-jobber er fullstendig integrert med prosesser for lagertransaksjoner i Supply Chain Management.
 -   Du kan utføre plukkaktiviteter for å etterfylle materiale som brukes til å oppfylle kravene til kanban-jobber.
 -   Du kan skrive ut Kanban-kort, sirkulerende kanban-kort og plukklister for å støtte bruken av Kanbaner. Disse dokumentene brukes til å representere, spore og registrer Kanban-jobber i lageret og på produksjonsgulvet.
 -   Du kan registrere plukking og overføring av aktiviteter på lager ved å skanne strekkoder.

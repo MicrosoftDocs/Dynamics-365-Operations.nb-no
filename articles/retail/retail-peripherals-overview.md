@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 9aba1dabe3b2304c1f0dfd449982af1d4bc15d6b
-ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
+ms.openlocfilehash: cf4eb74acbd305eb67861ab3f09648bf8af8f86c
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "1742639"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2025059"
 ---
 # <a name="retail-peripherals"></a>Eksterne enheter for detaljhandel
 
@@ -116,9 +116,9 @@ Støtte for betalingsenheter er implementert via betalingskoblingen. Betalingsen
 
 ### <a name="opos"></a>OPOS
 
-For å garantere at et størst mulig utvalg av enheter kan brukes med Microsoft Dynamics 365 for Retail, er industristandarden OLE for POS den primære plattformen for eksterne enheter for detaljhandel som støttes i Microsoft Dynamics 365 for Retail. OLE for POS-standarden ble produsert ved den National Retail Federation (NRF), som etablerer industristandard kommunikasjonsprotokoller for detaljhandel eksterne enheter. OPOS er en mye brukte implementering av OLE for POS-standarden. Den ble utviklet på midten av 1990-tallet, og har blitt oppdatert flere ganger siden da. OPOS gir en enhetsdriverarkitektur som gir enkel integrering av POS-maskinvare med Windows-baserte POS-systemer. OPOS-kontroller håndterer kommunikasjon mellom kompatibel maskinvare og POS-programvare. En OPOS-kontroll består av to deler:
+For å garantere at et størst mulig utvalg av enheter kan brukes med Retail, er industristandarden OLE for POS den primære plattformen for eksterne enheter for detaljhandel som støttes. OLE for POS-standarden ble produsert ved den National Retail Federation (NRF), som etablerer industristandard kommunikasjonsprotokoller for detaljhandel eksterne enheter. OPOS er en mye brukte implementering av OLE for POS-standarden. Den ble utviklet på midten av 1990-tallet, og har blitt oppdatert flere ganger siden da. OPOS gir en enhetsdriverarkitektur som gir enkel integrering av POS-maskinvare med Windows-baserte POS-systemer. OPOS-kontroller håndterer kommunikasjon mellom kompatibel maskinvare og POS-programvare. En OPOS-kontroll består av to deler:
 
-- **Kontrollobjekt** – Kontrollobjektet for en enhetsklasse (for eksempel linjevisningsenheter) inneholder grensesnittet for programmet. Monroe Consulting Services ([www.monroecs.com](http://www.monroecs.com/)) leverer et standardisert sett med OPOS-kontrollobjekter som kalles Common Control Objects (CCO-er). CCOs brukes til å teste POS-komponenten i Microsoft Dynamics 365 for Retail. Derfor bidrar testingen til å garantere at hvis Microsoft Dynamics 365 for Retail støtter en enhetsklasse gjennom OPOS, kan mange enhetstyper støttes, forutsatt at produsenten leverer et tjenesteobjekt som er bygget for OPOS. Du trenger ikke å eksplisitt teste hver enhetstype.
+- **Kontrollobjekt** – Kontrollobjektet for en enhetsklasse (for eksempel linjevisningsenheter) inneholder grensesnittet for programmet. Monroe Consulting Services ([www.monroecs.com](http://www.monroecs.com/)) leverer et standardisert sett med OPOS-kontrollobjekter som kalles Common Control Objects (CCO-er). CCOs brukes til å teste POS-komponenten i Retail. Derfor bidrar testingen til å garantere at hvis Retail støtter en enhetsklasse gjennom OPOS, kan mange enhetstyper støttes, forutsatt at produsenten leverer et tjenesteobjekt som er bygget for OPOS. Du trenger ikke å eksplisitt teste hver enhetstype.
 - **Tjenesteobjekt** – Tjenesteobjektet leverer kommunikasjon mellom kontrollobjektet (CCO) og enheten. Tjenesteobjektet for en enhet leveres vanligvis av enhetsprodusenten. I noen tilfeller må du imidlertid laste ned tjenesteobjektet fra produsentens nettsted. Et nyere tjenesteobjekt kan for eksempel være tilgjengelig. Hvis du vil finne adressen til produsentens nettsted, kan du se i maskinvaredokumentasjonen.
 
 [![Kontrollobjekt og tjenesteobjekt](./media/retail_peripherals_overview01.png)](./media/retail_peripherals_overview01.png)
@@ -126,7 +126,7 @@ For å garantere at et størst mulig utvalg av enheter kan brukes med Microsoft 
 Støtte for OPOS-implementering av OLE for POS bidrar til å garantere at hvis enhetsprodusentene og POS-utgivere implementerer standarden på riktig måte, kan POS-systemer og støttede enheter samarbeide, selv om de ikke var tidligere testet sammen.
 
 > [!NOTE]
-> OPOS-støtte garanterer ikke støtte for alle enheter som har OPOS-drivere. Microsoft Dynamics 365 for Retail må først støtte denne enhetstypen, eller klassen, gjennom OPOS. I tillegg er tjenesteobjekter kanskje ikke alltid oppdaterte med den nyeste versjonen av CCO-er. Du må også være oppmerksom på at kvaliteten på tjenesteobjekter vanligvis varierer.
+> OPOS-støtte garanterer ikke støtte for alle enheter som har OPOS-drivere. Retail må først støtte denne enhetstypen, eller klassen, gjennom OPOS. I tillegg er tjenesteobjekter kanskje ikke alltid oppdaterte med den nyeste versjonen av CCO-er. Du må også være oppmerksom på at kvaliteten på tjenesteobjekter vanligvis varierer.
 
 ### <a name="windows"></a>Windows
 
@@ -136,7 +136,7 @@ Kvitteringsutskrift på salgsstedet er optimalisert for OPOS. OPOS pleier å væ
 - Enheter som er koblet gjennom skriveren ("seriekoblet") fungerer kanskje ikke slik de skal når Windows-drivere brukes. En kassaskuffen åpnes for eksempel kanskje ikke eller følgeseddelskriveren fungerer kanskje ikke som forventet.
 - OPOS støtter også et mer omfattende sett med variabler som er spesifikke for kvitteringsskrivere for detaljhandel, for eksempel papirkutting eller følgeseddelutskrift.
 
-Hvis OPOS-kontroller er tilgjengelige for Windows-skriveren du bruker, skal skriveren fungere riktig med Microsoft Dynamics 365 for Retail.
+Hvis OPOS-kontroller er tilgjengelige for Windows-skriveren du bruker, skal skriveren fungere riktig med Retail.
 
 ### <a name="universal-windows-platform"></a>Universal Windows Platform
 
@@ -192,7 +192,7 @@ Du kan angi IP-adresser for nettverksenheter på to steder. Hvis Modern POS-Wind
 
 #### <a name="modern-pos-for-android"></a>Modern POS for Android
 
-Fra og med Dynamics 365 for Retail versjon 8.1.3 har programmet Modern POS for Android en innebygd IPC-maskinvarestasjon. Denne maskinvarestasjonen støtter kommunikasjon med nettverksskrivere og betalingskoblinger. Hvis du vil ha mer informasjon, kan du gå til [artikkelen om hybrid app for Android](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/hybridapp#dedicated-hardware-station-support-for-the-hybrid-android-app). 
+Fra og med Retail versjon 8.1.3 har programmet Modern POS for Android en innebygd IPC-maskinvarestasjon. Denne maskinvarestasjonen støtter kommunikasjon med nettverksskrivere og betalingskoblinger. Hvis du vil ha mer informasjon, kan du gå til [artikkelen om hybrid app for Android](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/hybridapp#dedicated-hardware-station-support-for-the-hybrid-android-app). 
 
 #### <a name="cloud-pos-and-modern-pos-for-ios"></a>Cloud POS og Modern POS for iOS
 
@@ -526,7 +526,7 @@ Nettverksenheter kan støttes direkte gjennom maskinvarestasjonen som er bygd in
 Hvis du vil ha mer informasjon om hvordan du kan opprette maskinvareprofiler, kan du se [Definere og vedlikeholde kanalklienter, inkludert kasser og maskinvarestasjoner](define-maintain-channel-clients-registers-hw-stations.md).
 
 > [!NOTE]
-> For Microsoft Dynamics 365 for Retail versjon 1611 brukes ikke maskinvarestasjonprofilen lenger. Egenskaper som du tidligere har definert i profilen for maskinvarestasjon, er nå en del av selve maskinvarestasjonen.
+> For Retail versjon 1611 brukes ikke maskinvarestasjonprofilen lenger. Egenskaper som du tidligere har definert i profilen for maskinvarestasjon, er nå en del av selve maskinvarestasjonen.
 
 ### <a name="modern-pos-for-windows-with-an-ipc-built-in-hardware-station"></a>Moderne POS for Windows med en IPC-maskinvarestasjon (innebygd)
 

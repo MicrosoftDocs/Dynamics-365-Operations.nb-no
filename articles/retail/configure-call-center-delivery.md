@@ -1,6 +1,6 @@
 ---
 title: Konfigurere leveringsmåter og tillegg for telefonsenter
-description: Dette emnet beskriver hvordan du setter opp leveringsmåter og levering og tillegg for en telefonsenterordre i Microsoft Dynamics 365 for Retail.
+description: Dette emnet beskriver hvordan du setter opp leveringsmåter og levering og tillegg for en telefonsenterordre i Dynamics 365 Retail.
 author: josaw1
 manager: AnnBe
 ms.date: 04/26/2018
@@ -17,18 +17,18 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 2571b4ffd6c13dbf755ef2dfa93b757822890d96
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: b67a1d91e41e1a4c21e0e877c06812dededbe731
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1553605"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2019492"
 ---
 # <a name="configure-call-center-delivery-modes-and-charges"></a>Konfigurere leveringsmåter og tillegg for telefonsenter
 
 [!INCLUDE [banner](includes/banner.md)]
 
-Når en salgsordre er plassert i Microsoft Dynamics 365 for Retail, og personen som la inn salgsordren, er koblet til en telefonsenterkanal, brukes logikk og regler til å validere leveringsmåten og beregne tillegg for ordren.
+Når en salgsordre er plassert i Dynamics 365 Retail, og personen som la inn salgsordren, er koblet til en telefonsenterkanal, brukes logikk og regler til å validere leveringsmåten og beregne tillegg for ordren.
 
 Når du oppretter en salgsordre, kan du velge en leveringsmåte i salgsordrehodet og salgsordrelinjene. Leveringsmåten du velger i hodet, brukes som standard for alle salgsordrelinjer. Du kan imidlertid overstyre standard leveringsmåte på individuelle salglinjer etter behov. Du kan også definere en leveringsmåte i en kundepost. Deretter, når ordrer opprettes for kunden, brukes denne leveringsmetoden som standard i salgsordrehodet.
 

@@ -18,23 +18,23 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 65624ce5e668a506ae23b302559d8d0bf4141a12
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: b38fb087fb572362c27e747e7909060c55a242a4
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1546720"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2250215"
 ---
 # <a name="vendor-collaboration-with-external-vendors"></a>Leverandørsamarbeid med eksterne leverandører
 
 [!include [banner](../includes/banner.md)]
 
-Modulen **Leverandørsamarbeid** er beregnet på leverandører som ikke har integrering av utveksling av elektroniske data (EDI) med Microsoft Dynamics 365 for Finance and Operations. Den lar leverandører arbeide med bestillinger, fakturaer, lagerinformasjon for forsendelse og forespørsler om tilbud (tilbudsforespørsler), og gir dem også tilgang til deler av hoveddataene for leverandøren. Dette emnet forklarer hvordan du kan samarbeide med eksterne leverandører som bruker grensesnittet for leverandørsamarbeid for å arbeide med bestillinger, tilbudsforespørsler og forsendelseslager. Det forklarer også hvordan du aktiverer bruk av leverandørsamarbeid for en bestemt leverandør, og hvordan du definerer opplysningene alle leverandører ser når de svarer på en bestilling.
+Modulen **Leverandørsamarbeid** er beregnet på leverandører som ikke har integrering av utveksling av elektroniske data (EDI) med Microsoft Dynamics 365 Supply Chain Management. Den lar leverandører arbeide med bestillinger, fakturaer, lagerinformasjon for forsendelse og forespørsler om tilbud (tilbudsforespørsler), og gir dem også tilgang til deler av hoveddataene for leverandøren. Dette emnet forklarer hvordan du kan samarbeide med eksterne leverandører som bruker grensesnittet for leverandørsamarbeid for å arbeide med bestillinger, tilbudsforespørsler og forsendelseslager. Det forklarer også hvordan du aktiverer bruk av leverandørsamarbeid for en bestemt leverandør, og hvordan du definerer opplysningene alle leverandører ser når de svarer på en bestilling.
 
 Hvis du vil ha mer informasjon om hva eksterne leverandører kan gjøre i grensesnittet for leverandørsamarbeid, kan du se [Leverandørsamarbeid med kunder](vendor-collaboration-work-customers-dynamics-365-operations.md).
 
 > [!NOTE]
-> Informasjonen om leverandørsamarbeid i dette emnet gjelder bare for gjeldende versjonen av Finance and Operations. I Microsoft Dynamics AX 7.0 (februar 2016) og Microsoft Dynamics AX programversjon 7.0.1 (mai 2016) kan du samarbeide med leverandører ved hjelp av modulen **Leverandørportal**. Hvis du vil ha mer informasjon om modulen **Leverandørportal**, kan du se [Samarbeide med leverandører ved hjelp av leverandørportalen](collaborate-vendors-vendor-portal.md).
+> Informasjonen om leverandørsamarbeid i dette emnet gjelder bare for gjeldende versjonen av Supply Chain Management. I Microsoft Dynamics AX 7.0 (februar 2016) og Microsoft Dynamics AX programversjon 7.0.1 (mai 2016) kan du samarbeide med leverandører ved hjelp av modulen **Leverandørportal**. Hvis du vil ha mer informasjon om modulen **Leverandørportal**, kan du se [Samarbeide med leverandører ved hjelp av leverandørportalen](collaborate-vendors-vendor-portal.md).
 
 Hvis du vil ha mer informasjon om hvordan leverandører kan bruke leverandørsamarbeid i faktureringsprosesser, kan du se [Arbeidsområde for leverandørsamarbeidsfakturering](../../financials/accounts-payable/vendor-portal-invoicing-workspace.md). Hvis du vil ha informasjon om hvordan du klargjør en ny bruker for leverandørsamarbeid, kan du se[Administrere brukere av leverandørsamarbeid](manage-vendor-collaboration-users.md).
 
@@ -51,7 +51,7 @@ Hvis du må legge til meldinger på flere språk, kan du opprette egne meldinger
 
 ## <a name="setting-the-vendor-collaboration-options-for-a-specific-vendor"></a>Angi alternativer for leverandørsamarbeid for en bestemt leverandør
 
-En administrator konfigurerer de generelle innstillingene for samarbeid med leverandøren i Finance and Operations, for eksempel sikkerhetsroller som er tilgjengelige for alle leverandører som du kan samarbeide med. Det finnes imidlertid også innstillinger som kan være forskjellige for hver leverandørkonto. Du bør konfigurere disse innstillingene.
+En administrator konfigurerer de generelle innstillingene for samarbeid med leverandøren, for eksempel sikkerhetsroller som er tilgjengelige for alle leverandører som du kan samarbeide med. Det finnes imidlertid også innstillinger som kan være forskjellige for hver leverandørkonto. Du bør konfigurere disse innstillingene.
 
 - Aktiver leverandørsamarbeid.
 - Angi om leverandøren skal se prisinformasjon.
@@ -71,7 +71,7 @@ Hvis du vil dele prisinformasjon for bestillinger via grensesnittet for leverand
 
 ### <a name="sending-a-po-to-a-vendor"></a>Sende en bestilling til en leverandør
 
-Bestillinger klargjøres i Finance and Operations. Når en bestilling har statusen **Godkjent**, sender du den til leverandøren ved å velge **Send for bekreftelse** på **Bestilling**-siden. Statusen for bestillingen endres deretter til **Til ekstern vurdering**. Etter at bestillingen er sendt, kan leverandøren se den på siden **Bestillinger for vurdering** i grensesnittet for leverandørsamarbeid. Leverandøren kan deretter godta bestillingen, avvise den eller foreslå endringer. Leverandøren kan også legge til merknader for å formidle informasjon, for eksempel endringer i bestillingen. Hvis du vil trekke leverandørens oppmerksomhet til en ny bestilling, kan du også bruke utskriftsbehandlingssystemet til å sende bestillingen via e-post.
+Bestillinger klargjøres i Supply Chain Management. Når en bestilling har statusen **Godkjent**, sender du den til leverandøren ved å velge **Send for bekreftelse** på **Bestilling**-siden. Statusen for bestillingen endres deretter til **Til ekstern vurdering**. Etter at bestillingen er sendt, kan leverandøren se den på siden **Bestillinger for vurdering** i grensesnittet for leverandørsamarbeid. Leverandøren kan deretter godta bestillingen, avvise den eller foreslå endringer. Leverandøren kan også legge til merknader for å formidle informasjon, for eksempel endringer i bestillingen. Hvis du vil trekke leverandørens oppmerksomhet til en ny bestilling, kan du også bruke utskriftsbehandlingssystemet til å sende bestillingen via e-post.
 
 ### <a name="confirmation-and-acceptance-of-a-po-by-a-vendor"></a>Bekreftelse og godkjenning av en bestilling av en leverandør
 
@@ -92,13 +92,13 @@ Tabellen nedenfor viser den vanlige utvekslingen av informasjon, avhengig av sva
 </thead>
 <tbody>
 <tr class="even">
-<td>Leverandøren <strong>godtar</strong> bestillingen, og Finance and Operations konfigureres til automatisk bekreftelse av bestillinger som leverandøren godtar.</td>
+<td>Leverandøren <strong>godtar</strong> bestillingen, og Supply Chain Management konfigureres til automatisk bekreftelse av bestillinger som leverandøren godtar.</td>
 <td>Statusen for ordren oppdateres til <strong>Bekreftet</strong>. Hvis bestillingen av en eller annen grunn ikke kan oppdateres, registreres likevel leverandørsvaret som <strong>Godtatt</strong>, men statusen for bestillingen blir værende <strong>Til ekstern vurdering</strong>. 
 
 Bestillingen som ble sendt til leverandøren, og som har statusen <strong>Til ekstern vurdering</strong>, oppdateres med bekreftede leveringsdatoer på linjene. Denne oppdateringen starter en ny versjon som settes automatisk til <strong>Bekreftet</strong>-statusen. Når bestillingen er bekreftet, vises den i grensesnittet for leverandørsamarbeid.</td>
 </tr>
 <tr class="odd">
-<td>Leverandøren <strong>godtar</strong> bestillingen, men Finance and Operations konfigureres ikke til automatisk bekreftelse av bestillinger som leverandøren godtar.</td>
+<td>Leverandøren <strong>godtar</strong> bestillingen, men Supply Chain Management konfigureres ikke til automatisk bekreftelse av bestillinger som leverandøren godtar.</td>
 <td>Leverandørsvaret registreres som <strong>Godtatt</strong>, men statusen for bestillingen blir værende <strong>Til ekstern vurdering</strong>.
 
 Bestillingen som ble sendt til leverandøren, og som har statusen <strong>Til ekstern vurdering</strong>, oppdateres med bekreftede leveringsdatoer på linjene. Denne oppdateringen starter en ny versjon som settes automatisk til <strong>Til ekstern vurdering</strong>-statusen. Du kan deretter bekrefte bestillingen manuelt.</td>
@@ -180,14 +180,14 @@ Tabellen nedenfor viser et eksempel på endringene i status og versjon som en be
 
 | Handling | Status og versjon |
 |--------|--------------------|
-| Den første versjonen av Bestillingen opprettes i Finance and Operations. | Statusen er **Godkjent**. |
+| Den første versjonen av Bestillingen opprettes i Supply Chain Management. | Statusen er **Godkjent**. |
 | Bestillingen er sendt til leverandøren. | En versjon registreres i grensesnittet for leverandørsamarbeid, og statusen endres til **Til ekstern vurdering**. |
 | Leverandøren sender svaret **Godtatt med endringer**. | Statusen er fortsatt **Til ekstern vurdering**. |
 | Du kan gjøre noen endringer som leverandøren har forespurt. | Statusen endres til **Godkjent**. |
 | Du sender den nye versjonen av bestillingen til leverandøren. | En ny versjon registreres i grensesnittet for leverandørsamarbeid, og statusen endres til **Til ekstern vurdering**. |
 | Leverandøren godtar den nye versjonen av bestillingen. | Statusen er fortsatt **Til ekstern vurdering** hvis ikke leverandørkontoen er konfigurert til å automatisk sette bestillinger til statusen **Bekreftet** når leverandøren godkjenner den. |
 
-Leverandører trenger ikke bekrefte en bestilling ved hjelp av grensesnittet for leverandørsamarbeid. De kan også sende en e-postmelding eller formidle at de godtar en bestilling via andre kanaler. Deretter kan du bekrefte ordren manuelt i Finance and Operations. I så fall får du en advarsel om at ordren blir bekreftet, selv om det ikke finnes noe svar fra leverandøren. Bestillingen vil vises i bekreftelsesloggen som en åpen bekreftet ordre som ikke har noen svar. På dette tidspunktet har leverandøren ikke lenger muligheten til å bekrefte eller avvise bestillingen.
+Leverandører trenger ikke bekrefte en bestilling ved hjelp av grensesnittet for leverandørsamarbeid. De kan også sende en e-postmelding eller formidle at de godtar en bestilling via andre kanaler. Du kan deretter bekrefte ordren manuelt. I så fall får du en advarsel om at ordren blir bekreftet, selv om det ikke finnes noe svar fra leverandøren. Bestillingen vil vises i bekreftelsesloggen som en åpen bekreftet ordre som ikke har noen svar. På dette tidspunktet har leverandøren ikke lenger muligheten til å bekrefte eller avvise bestillingen.
 
 > [!NOTE]
 > Versjonen av bestillingen som er tilgjengelig for andre prosesser i Finance and Operations, er alltid den nyeste versjonen, selv om denne versjonen ennå ikke er registrert i grensesnittet for leverandørsamarbeid.
@@ -200,7 +200,7 @@ Tabellen nedenfor viser et eksempel på endringene i status og versjon som en be
 
 | Handling | Status og versjon |
 |--------|--------------------|
-| Den første versjonen av Bestillingen opprettes i Finance and Operations. | Statusen er **Utkast**. |
+| Den første versjonen av Bestillingen opprettes i Supply Chain Management. | Statusen er **Utkast**. |
 | Bestillingen sendes til godkjenningsprosessen. (Godkjenningsprosessen er en intern prosess som leverandøren ikke er involvert i.) | Statusen endres fra **Utkast** til **Til vurdering** til **Godkjenning** hvis bestillingen ikke avvises under godkjenningsprosessen. Den godkjente bestillingen registreres som en versjon. | 
 | Bestillingen er sendt til leverandøren. | Versjon registreres i grensesnittet for leverandørsamarbeid, og statusen endres til **Til ekstern vurdering**. |
 | Du kan gjøre noen endringer som kreves av leverandøren, enten manuelt eller ved hjelp av handlingen **Behandle bestillingsoppdatering** på svaret for å oppdatere bestillingen. | Statusen endres tilbake til **Utkast**. |
@@ -237,13 +237,13 @@ Denne delen beskriver interaksjonene mellom kunder og leverandører i løpet av 
 
 ## <a name="public-sector-extensions"></a>Utivdelser for offentlig sektor
 
-For offentlig sektor gjør den utvidede funksjonaliteten at en tilbudsforespørselssak kan sendes til leverandører og publiseres. Når du publiserer en tilbudsforespørsel, kan alle som ber om informasjonen, vise arbeidet som er i samsvar med de fleste offentlige bestemmelser. Alt tilgjengelig arbeid vises på listesiden **Åpne publiserte tilbudsforespørsler**, og de annullerte, ventende eller tildelte tilbudsforespørslene kan vises i på listesidden **Lukkede publiserte tilbudsforespørsler**. Disse dokumentene kan også vises på et område utenfor Finance and Operations via integrasjoner med følgende dataenheter:
+For offentlig sektor gjør den utvidede funksjonaliteten at en tilbudsforespørselssak kan sendes til leverandører og publiseres. Når du publiserer en tilbudsforespørsel, kan alle som ber om informasjonen, vise arbeidet som er i samsvar med de fleste offentlige bestemmelser. Alt tilgjengelig arbeid vises på listesiden **Åpne publiserte tilbudsforespørsler**, og de annullerte, ventende eller tildelte tilbudsforespørslene kan vises i på listesidden **Lukkede publiserte tilbudsforespørsler**. Disse dokumentene kan også vises på et område utenfor Supply Chain Management via integrasjoner med følgende dataenheter:
 
 - Publiserte tilbudsforespørsler
 - Publisert linje i tilbudsforespørsler
 - Publiserte hodevedlegg for tilbudsforespørsler
 
-Med disse enhetene kan personer som ikke er klargjorte brukere i Finance and Operations, men som har anonym tilgang til det eksterne området, vise arbeid som er tilgjengelig og lukket. I tillegg gjør den utvidede funksjonaliteten i **Send og publiser** det mulig for brukeren som definerer parametere for tilbudsforespørssaken, å definere en e-postmal. Deretter, når innkjøpsansvarlig oppretter tilbudsforespørselssaken, må han eller hun velge e-postmalen for å sende den nødvendige informasjonen til leverandørene i tilbudsforespørselssaken. 
+Med disse enhetene kan personer som ikke er klargjorte brukere i Supply Chain Management, men som har anonym tilgang til det eksterne området, vise arbeid som er tilgjengelig og lukket. I tillegg gjør den utvidede funksjonaliteten i **Send og publiser** det mulig for brukeren som definerer parametere for tilbudsforespørssaken, å definere en e-postmal. Deretter, når innkjøpsansvarlig oppretter tilbudsforespørselssaken, må han eller hun velge e-postmalen for å sende den nødvendige informasjonen til leverandørene i tilbudsforespørselssaken. 
 
 Brukeren som definerer parametere for tilbudsforespørselsprosessen, kan opprette flere e-postmaler. Disse e-postmaler kan inneholde både statisk tekst og følgende erstatningstokener. Tokene erstattes med kontekstavhengige verdier når det opprettes en e-post.
 

@@ -1,6 +1,6 @@
 ---
-title: Hva er nytt eller endret i Dynamics 365 for Talent (5. mars 2019)?
-description: Dette emnet beskriver funksjoner som enten er nye eller endret i Microsoft Dynamics 365 for Talent.
+title: Hva er nytt eller endret i Dynamics 365 Talent (5. mars 2019)?
+description: Dette emnet beskriver funksjoner som enten er nye eller endret i Microsoft Dynamics 365 Talent.
 author: Darinkramer
 manager: AnnBe
 ms.date: 03/05/2019
@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-03-05
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: fe24846ab98a75d474df045a62a72bfc41c64866
-ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
+ms.openlocfilehash: c7ee8f4cf14197d6bd4549741058fc5fe95ae55d
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "1741896"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2026676"
 ---
-# <a name="whats-new-or-changed-in-dynamics-365-for-talent-march-5-2019"></a>Hva er nytt eller endret i Dynamics 365 for Talent (5. mars 2019)?
+# <a name="whats-new-or-changed-in-dynamics-365-talent-march-5-2019"></a>Hva er nytt eller endret i Dynamics 365 Talent (5. mars 2019)?
 
 [!include [banner](includes/banner.md)]
 
-Dette emnet beskriver funksjoner som enten er nye eller endret i Talent
+Dette emnet beskriver funksjoner som enten er nye eller endret i Talent.
 
 ## <a name="changes-in-attract"></a>Endringer i Attract
 
@@ -78,5 +78,5 @@ Tidsfrister for å oppgradere til Common Data Service nærmer deg raskt. Logg p�
 ###  <a name="advanced-compensation-security-fixed-and-variable"></a>Avansert kompensasjonssikkerhet (fast og variabel)
 I mange organisasjoner har kompensasjons- og fordelsansvarlige bare tilgang til bestemte kompensasjonsposter, for eksempel poster for ledere eller regionsbaserte ansatte. Med denne endringen kan du administrere og vedlikeholde kompensasjonsplanene for ulike ansattgrupper i organisasjonen. Faste og variable planer kan tilordnes til sikkerhetsroller, som bestemmer tilgangen til planene og ansattdataene som er knyttet til dem, for eksempel lønns- eller bonusposter. Bare rollene som har den rette tilgangen, vil kunne behandle kompensasjon for disse ansatte.
 
-###  <a name="platform-update-24"></a>Plattform update 24
-Hvis du vil ha mer informasjon om Plattformoppdatering 24, kan du se [Hva er nytt eller endret i Finance and Operations Plattformoppdatering 24 (mars 2019)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-24).
+###  <a name="platform-update-24-for-finance-and-operations"></a>Platform update 24 for Finance and Operations
+Hvis du vil ha mer informasjon om Platform update 24 for Finance and Operations, kan du se [Hva er nytt eller endret i Platform update 24 for Finance and Operations (mars 2019)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-24).

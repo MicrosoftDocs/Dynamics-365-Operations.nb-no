@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 16a11c5030f5641abb87830f5221ded5bb7ac038
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 4a548d3536bbc0056ee22c07c464af062029da81
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1560307"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2250582"
 ---
 # <a name="solver-strategy-for-product-configuration"></a>Problemløserstrategi for produktkonfigurasjon
 
@@ -45,7 +45,7 @@ Problemløserstrategikonseptet består nå av følgende strategier:
 
 En produktkonfigurasjonsmodell kan formuleres som et [begrensningsbasert problem (CSP)](http://aima.cs.berkeley.edu/2nd-ed/newchap05.pdf). Microsoft Solver Foundation (MSF) inneholder to typer problemløserstrategier for å løse CSP-er som kan brukes fra produktkonfigurasjonsmodeller. Disse problemløserstrategiene er avhengige av [heuristikk](https://techterms.com/definition/heuristic), som brukes til å bestemme rekkefølgen som variablene i CSP-er blir vurdert når problemet løses. Heuristikk kan ha stor innvirkning på ytelsen når et problem eller en klasse med problemer løses.
 
-I Finance and Operations bestemmer problemløserstrategien for produktkonfigurasjonsmodeller hvilken problemløser som brukes med heuristikk. Strategien **Standard**, **Små domener først** og **Ovenfra og nedover** bruker de to problemløserne fra MSF, mens **Z3**-strategien bruker Z3-problemløseren. 
+Problemløserstrategien for produktkonfigurasjonsmodeller bestemmer hvilken problemløser som brukes med heuristikk. Strategien **Standard**, **Små domener først** og **Ovenfra og nedover** bruker de to problemløserne fra MSF, mens **Z3**-strategien bruker Z3-problemløseren. 
 
 Studier av kundeimplementering har vist at en endring i problemløserstrategien for en produktkonfigurasjonsmodell kan redusere svartiden fra minutter til millisekunder. Derfor er det verdt å prøve forskjellige problemløserstrategier for å finne den mest effektive strategien for produktkonfigurasjonsmodellen din.
 

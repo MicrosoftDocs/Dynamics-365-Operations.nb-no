@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: yabinl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 60f0a2e5fa2dc2bc37a04b159a4834a52117893d
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 65b59e1cc215d582fdaf02ff4746fe2158ace76e
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1559610"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2025362"
 ---
 # <a name="payment-methods"></a>Betalingsmåter
 
@@ -32,7 +32,7 @@ ms.locfileid: "1559610"
 
 Hver betalingstype en forhandler godtar, må konfigureres når systemet defineres. Denne artikkelen beskriver betalingstypene som du kan sette opp og beskriver fremgangsmåten for hvordan du definerer dem.
 
-Forhandlere kan ta imot ulike typer betaling i bytte mot produktene og tjenestene de selger. Selv om kontanter er den vanligste formen for betaling, kan forhandlerne også mottar betaling i form av sjekker, kort, bilag og så videre. Hver betalingstype en forhandler godtar, må konfigureres i Dynamics 365 for Retail når systemet defineres. Listen nedenfor beskriver hver betalingstype som kan settes opp i Dynamics 365 for Retail:
+Forhandlere kan ta imot ulike typer betaling i bytte mot produktene og tjenestene de selger. Selv om kontanter er den vanligste formen for betaling, kan forhandlerne også mottar betaling i form av sjekker, kort, bilag og så videre. Hver betalingstype en forhandler godtar, må konfigureres i Dynamics 365 Retail når systemet defineres. Listen nedenfor beskriver hver betalingstype som kan settes opp:
 
 - **Kontant** – Penger i den fysiske formen av valuta, for eksempel pengesedler og mynter. Valutaen kan være enten firmavalutaen eller butikkens lokale valuta.
 - **Sjekk** – Et omsettelig dokument som instruerer om betaling av et bestemt beløp av en angitt valuta, og dette trekkes fra en spesifikk bank. En sjekk er vanligvis gyldig på ubestemt tid eller i seks måneder etter utstedelsesdatoen, med mindre en annen gyldighetsperioden er angitt. Denne perioden varierer avhengig av banken som sjekken trekkes fra. Det finnes ulike typer sjekker, for eksempel ordresjekker, blankosjekker, ihendehaversjekker og kryssede sjekker. Du kan definere sjekker som betalingsmåte for hver butikk. Sjekker kan tas imot i valutaen som er definert på firmanivå eller butikknivå. Du må definere sjekker som betalingsmåte før du godkjenner en sjekk som betaling i en butikk.

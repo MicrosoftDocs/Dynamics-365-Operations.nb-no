@@ -1,6 +1,6 @@
 ---
 title: Definere og vedlikeholde detaljhandelskanaler
-description: Dette emnet inneholder en oversikt over prosessen for å definere bankens fysiske butikker, som kalles detaljhandelsbutikker i Microsoft Dynamics 365 for Retail. Den inneholder informasjon om oppgavene du må fullføre både før og etter at du har definert en detaljhandelsbutikk.
+description: Dette emnet inneholder en oversikt over prosessen for å definere bankens fysiske butikker, som kalles detaljhandelsbutikker i Dynamics 365 Retail. Den inneholder informasjon om oppgavene du må fullføre både før og etter at du har definert en detaljhandelsbutikk.
 author: mugunthanm
 manager: AnnBe
 ms.date: 11/14/2017
@@ -19,24 +19,24 @@ ms.search.industry: Retail
 ms.author: mumani
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 53ba6cdb2378ce9011c6e7e3ce4e67c789adb1e6
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: f55099ad283e665965aad0684b3c9d87223d5ed7
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1560355"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2019376"
 ---
 # <a name="define-and-maintain-retail-channels"></a>Definere og vedlikeholde detaljhandelskanaler
 
 [!include [banner](includes/banner.md)]
 
-Dette emnet inneholder en oversikt over prosessen for å definere bankens fysiske butikker, som kalles detaljhandelsbutikker i Microsoft Dynamics 365 for Retail. Den inneholder informasjon om oppgavene du må fullføre både før og etter at du har definert en detaljhandelsbutikk.
+Dette emnet inneholder en oversikt over prosessen for å definere bankens fysiske butikker, som kalles detaljhandelsbutikker i Dynamics 365 Retail. Den inneholder informasjon om oppgavene du må fullføre både før og etter at du har definert en detaljhandelsbutikk.
 
-Dynamics 365 for Retail støtter flere detaljhandelskanaler, for eksempel nettbutikker, telefonsentre og fysiske butikker. En fysisk butikk kalles detaljhandelbutikk. Hver detaljhandelsbutikk kan ha sine egne betalingsmåter, prisgrupper, salgsstedskasser, inntekts- og utgiftskontoer og ansatte. Du må definere alle disse elementene for en detaljhandelsbutikk, før du oppretter den. Når du har opprettet en detaljhandelsbutikk, tilordner du produktene du vil den skal føre. Du tilordner også ansatte, kasser og kunder til butikken. Til slutt legger du til den nye butikken i et organisasjonshierarki.
+Retail støtter flere detaljhandelskanaler, for eksempel nettbutikker, telefonsentre og fysiske butikker. En fysisk butikk kalles detaljhandelbutikk. Hver detaljhandelsbutikk kan ha sine egne betalingsmåter, prisgrupper, salgsstedskasser, inntekts- og utgiftskontoer og ansatte. Du må definere alle disse elementene for en detaljhandelsbutikk, før du oppretter den. Når du har opprettet en detaljhandelsbutikk, tilordner du produktene du vil den skal føre. Du tilordner også ansatte, kasser og kunder til butikken. Til slutt legger du til den nye butikken i et organisasjonshierarki.
 
 ## <a name="setting-up-retail-stores"></a>Definere detaljhandelsbutikker
 
-Før du kan definere en detaljhandelbutikk i Dynamics 365 for Retail, må du fullføre noen nødvendige oppgaver. Du kan deretter opprette detaljhandelsbutikken og legge til detaljer.
+Før du kan definere en detaljhandelbutikk i Retail, må du fullføre noen nødvendige oppgaver. Du kan deretter opprette detaljhandelsbutikken og legge til detaljer.
 
 ### <a name="prerequisites"></a>Nødvendig programvare
 
@@ -55,7 +55,7 @@ Du må fullføre følgende oppgaver før du kan definere en detaljhandelsbutikk:
 11. Definere stabsmedlemmer.
 
     > [!NOTE]
-    > Du må også tilordne aktuelle tillatelser til arbeiderne, slik at de kan logge på og utføre oppgaver ved hjelp av Dynamics 365 for Retail for Retail POS-systemet.
+    > Du må også tilordne aktuelle tillatelser til arbeiderne, slik at de kan logge på og utføre oppgaver ved hjelp av Retail POS-systemet.
 
 12. Konfigurer Retail POS-profilene som skal tilordnes butikken. Denne oppgaven omfatter mange andre oppgaver, for eksempel å definere kasser, definere frakoblede profiler og definere kvitteringsformater og -profiler.
 

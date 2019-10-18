@@ -1,6 +1,6 @@
 ---
 title: Tilkoblede og frakoblede salgsstedsoperasjoner (POS)
-description: Dette emnet inneholder informasjon om salgsstedsoperasjoner i Microsoft Dynamics 365 for Retail. Den angir hvor i programmet operasjonene kan startes, og om de er tilgjengelige i frakoblet modus.
+description: Dette emnet inneholder informasjon om salgsstedsoperasjoner i Dynamics 365 Retail. Den angir hvor i programmet operasjonene kan startes, og om de er tilgjengelige i frakoblet modus.
 author: jblucher
 manager: AnnBe
 ms.date: 05/21/2019
@@ -18,22 +18,22 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2017-09-27
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: e21f8677144c7293409e409082e8125c05f3a8fe
-ms.sourcegitcommit: 3d8c951898e05febc160515127c1bcc5de5882a1
+ms.openlocfilehash: fcb933438ec30ebe6d3b499b53e64c58ecec3626
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "1625671"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2025316"
 ---
 # <a name="online-and-offline-point-of-sale-pos-operations"></a>Tilkoblede og frakoblede salgsstedsoperasjoner (POS)
 
 [!include [banner](includes/banner.md)]
 
-De fleste handlinger som brukere utfører på salgsstedet (POS) anses som operasjoner. Operasjoner konfigureres og behandles i back office for Microsoft Dynamics 365 for Retail. Mange operasjoner kan legges til for knapper i POS-knappegruppen. Brukere kan deretter velge knappene for å aktivere operasjonene og utføre arbeidet. Andre operasjoner er en del av det primære POS-programmet, og startes fra knappene på skjermen eller som en del av andre arbeidsflyter eller prosesser.
+De fleste handlinger som brukere utfører på salgsstedet (POS) anses som operasjoner. Operasjoner konfigureres og behandles i back office for Dynamics 365 Retail. Mange operasjoner kan legges til for knapper i POS-knappegruppen. Brukere kan deretter velge knappene for å aktivere operasjonene og utføre arbeidet. Andre operasjoner er en del av det primære POS-programmet, og startes fra knappene på skjermen eller som en del av andre arbeidsflyter eller prosesser.
 
-Tabellen nedenfor gir informasjon om operasjonene som er tilgjengelige i Retail Modern POS og Cloud POS for Dynamics 365 for Retail. Tabellen angir også hvor i programmet operasjonene kan startes, og om de er tilgjengelige når POS er i frakoblet modus.
+Tabellen nedenfor gir informasjon om operasjonene som er tilgjengelige i Retail Modern POS og Cloud POS. Tabellen angir også hvor i programmet operasjonene kan startes, og om de er tilgjengelige når POS er i frakoblet modus.
 
-Enkelte operasjoner er ikke tilgjengelige i Retail Modern POS eller Cloud POS for Dynamics 365 for Retail. Noen av disse operasjonene kan være landsspesifikke operasjoner som krever ekstra tillegg og konfigurasjon. Andre er funksjoner fra Microsoft Dynamics AX 2012 som ikke støttes for øyeblikket.
+Enkelte operasjoner er ikke tilgjengelige i Retail Modern POS eller Cloud POS. Noen av disse operasjonene kan være landsspesifikke operasjoner som krever ekstra tillegg og konfigurasjon. Andre er funksjoner fra Microsoft Dynamics AX 2012 som ikke støttes for øyeblikket.
 
 Følgende kolonner angir hvor operasjonene kan startes:
 
@@ -42,7 +42,7 @@ Følgende kolonner angir hvor operasjonene kan startes:
 - **Velkomstskjerm** – Operasjonen kan startes fra POS-knappegrupper som er konfigurert på POS-velkomstskjermen.
 
 > [!NOTE]
-> Operasjonene nedenfor gjelder for den nyeste versjonen av Dynamics 365 for Retail. Noen operasjoner kan ha blitt endret eller er kanskje ikke tilgjengelig i tidligere versjoner.
+> Operasjonene nedenfor gjelder for den nyeste versjonen av Retail. Noen operasjoner kan ha blitt endret eller er kanskje ikke tilgjengelig i tidligere versjoner.
 
 | ID | Operasjon | beskrivelse | Knappegruppe | Transaksjonskjermbilde | Velkomstskjermbilde | Tilgjengelig frakoblet | Spesifikk for nasjonal innstilling |
 |----|-----------|-------------|-------------|--------------------|----------------|-------------------|-----------------|

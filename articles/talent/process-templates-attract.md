@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-10-01
 ms.dyn365.ops.version: AX 8.1
-ms.openlocfilehash: 55e0d128cdc12843763f81014edd1846b35ed220
-ms.sourcegitcommit: 7c49475402632069685df714546770d30804af7f
+ms.openlocfilehash: 694835d20e3401aaeb22aa19082a2cd0e3a0163a
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "1739800"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2010712"
 ---
 # <a name="create-a-process-template"></a>Opprette en prosessmal
 
 [!include [banner](includes/banner.md)]
 
-En *mal for ansettelsesprosess* inneholder alle aktivitetene som bør tas med som en del av ansettelsesprosessen for en jobb. Dette emnet beskriver elementene i en prosessmal i Microsoft Dynamics 365 for Talent: Attract. Det forklarer også hvordan du oppretter en mal.
+En *mal for ansettelsesprosess* inneholder alle aktivitetene som bør tas med som en del av ansettelsesprosessen for en jobb. Dette emnet beskriver elementene i en prosessmal i Microsoft Dynamics 365 Talent: Attract. Det forklarer også hvordan du oppretter en mal.
 
 > [!NOTE]
 > Maloppretting av er en del av tillegget for omfattende ansettelse for Attract.

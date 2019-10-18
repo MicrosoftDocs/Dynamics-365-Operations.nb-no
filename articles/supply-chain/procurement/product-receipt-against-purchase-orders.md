@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: fdahl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fea28da19c0aa1e9083091d0693404e0d8cb173c
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: c1aaae7a276d098587b5b9c73e433694e3a6f9bf
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1554351"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2248925"
 ---
 # <a name="product-receipt-against-purchase-orders"></a>Mottaksseddel mot bestillinger
 
@@ -52,7 +52,7 @@ Du kan opprette bestillingslinjer der alternativet **Nytt anleggsmiddel** er akt
 
 Du kan velge flere ordrer og behandle mottak på alle ordrer samtidig. Denne fremgangsmåten brukes ikke så ofte, men det kan hende du vil bruke den hvis en leverandør har konsolidert forsendelser for deg i én enkelt last. Under produktmottaket av kjøpet er det en funksjon for å gjøre samleoppdateringer. Samleoppdateringer lar deg postere en enkelt følgeseddel fra leverandøren for mer enn én bestilling.  
 
-Bestillinger kan opprettes fra en salgsordre der alternativet **Direktelevering** er valgt. Når direktelevering brukes, ankommer produktene aldri på lageret, men de leveres direkte fra leverandøren til kunden. I slike tilfeller registreres mottaket vanligvis direkte på bestillingen. Mottaket kan utføres automatisk, for eksempel via integrering av utveksling av elektroniske data (EDI) med leverandøren. Hvis bestillingen er en konsernintern bestilling, automatiserer Microsoft Dynamics 365 for Finance and Operations mottaket på den konserninterne salgsordren når forsendelse skjer. Når direktelevering brukes, registreres produkter fremdeles som beholdning, selv om de ikke mottas fysisk på lageret. Når produktmottaket registreres på bestillingen, oppdateres derfor salgsordren automatisk med en følgeseddel, slik at den totale endringen i beholdningen er 0 (null). I situasjoner med direktelevering bør du ikke kreve forhåndsregistrering. Hvis du bruker lagre som er aktivert for lagerstyring, kan du omgå kravet til nummerskiltregistrering ved å angi et virtuelt lager i stedet. Du angir dette lageret lager i feltet **Lager for direktelevering** på produktet. 
+Bestillinger kan opprettes fra en salgsordre der alternativet **Direktelevering** er valgt. Når direktelevering brukes, ankommer produktene aldri på lageret, men de leveres direkte fra leverandøren til kunden. I slike tilfeller registreres mottaket vanligvis direkte på bestillingen. Mottaket kan utføres automatisk, for eksempel via integrering av utveksling av elektroniske data (EDI) med leverandøren. Hvis bestillingen er en konsernintern bestilling, automatiserer Supply Chain Management mottaket på den konserninterne salgsordren når forsendelse skjer. Når direktelevering brukes, registreres produkter fremdeles som beholdning, selv om de ikke mottas fysisk på lageret. Når produktmottaket registreres på bestillingen, oppdateres derfor salgsordren automatisk med en følgeseddel, slik at den totale endringen i beholdningen er 0 (null). I situasjoner med direktelevering bør du ikke kreve forhåndsregistrering. Hvis du bruker lagre som er aktivert for lagerstyring, kan du omgå kravet til nummerskiltregistrering ved å angi et virtuelt lager i stedet. Du angir dette lageret lager i feltet **Lager for direktelevering** på produktet. 
 
 Når produktmottak er behandlet på bestillingen, sette bestillingsstatusen til **Mottatt** for å angi at fakturaen kan behandles for ordren. Du kan se gjennom informasjon om produkter som allerede er mottatt ved hjelp av siden **Produktkvitteringsjournaler**.  
 

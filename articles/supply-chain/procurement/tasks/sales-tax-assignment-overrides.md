@@ -16,20 +16,18 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: f08829bccbaea6fb70563e553f9042300b4d5ea9
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: fbaa467c22656aa8d1e39d26a8233250e2bb66f8
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1838004"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2026607"
 ---
 # <a name="sales-tax-assignment-and-overrides"></a>Mva-tilordning og overstyringer
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-Denne fremgangsmåten beskriver hvordan du tilordner mva-grupper til kanaler for detaljhandel. Den veileder deg også gjennom oppretting av en ny mva-overstyring og tilordning av den til en eksisterende mva-overstyringsgruppe. Denne prosedyren
-
-bruker demonstrasjonsdatafirmaet USRT.
+Denne fremgangsmåten beskriver hvordan du tilordner mva-grupper til kanaler for detaljhandel. Den veileder deg også gjennom oppretting av en ny mva-overstyring og tilordning av den til en eksisterende mva-overstyringsgruppe. Denne prosedyren bruker firmaet USRT i demonstrasjonsdataene.
 
 1. Gå til Detaljhandel og handel > Kanaler > Detaljhandelbutikker > Alle detaljhandelsbutikker.
 2. I listen klikker du koblingen ID for detaljhandelskanal for Houston.

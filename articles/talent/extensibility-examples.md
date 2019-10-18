@@ -1,13 +1,13 @@
 ---
-title: Utvide Talent ved hjelp av PowerApps og Microsoft Flow – eksempelscenarier
-description: Dette emnet beskriver noen eksempler på scenarier for utvidelsesmuligheter for Microsoft Dynamics 365 for Talent som bruker Microsoft PowerApps og Microsoft Flow.
+title: Vise Talent ved hjelp av PowerApps og Microsoft Flow – eksempelscenarier
+description: Dette emnet beskriver noen eksempler på scenarier for utvidelsesmuligheter for Microsoft Dynamics 365 Talent som bruker Microsoft PowerApps og Microsoft Flow.
 author: negudava
 manager: Annbe
 ms.date: 05/01/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: Dynamics 365 for Talent;PowerApps;Flow;Common Data Service
+ms.technology: Dynamics 365 Talent;PowerApps;Flow;Common Data Service
 ms.search.form: ''
 audience: Application User
 ms.reviewer: anbichse
@@ -18,16 +18,16 @@ ms.search.region: Global
 ms.author: negudava
 ms.search.validFrom: 2019-03-04
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: 0b455a8194f58b41a349f004ceda8183c7ee3f7c
-ms.sourcegitcommit: 9f94eff93d29bc27352569824e00bbccc2f961b8
+ms.openlocfilehash: 7bc3a18327f2d32770176eddcb7200681f0fb0da
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 07/22/2019
-ms.locfileid: "1781448"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2008065"
 ---
-# <a name="extend-talent-by-using-powerapps-and-microsoft-flow---example-scenarios"></a>Utvide Talent ved hjelp av PowerApps og Microsoft Flow – eksempelscenarier
+# <a name="extend-talent-by-using-powerapps-and-microsoft-flow---example-scenarios"></a>Vise Talent ved hjelp av PowerApps og Microsoft Flow – eksempelscenarier
 
-Dette emnet beskriver noen eksempler på scenarier for utvidelsesmuligheter for Microsoft Dynamics 365 for Talent som bruker Microsoft PowerApps og Microsoft Flow. Du kan importere løsningspakken som er tilknyttet hvert eksempel, i ditt miljø for PowerApps. Du kan deretter bruke pakkene som retningslinjer eller som utgangspunkt til å implementere scenarioene som gjelder for organisasjonen din.
+Dette emnet beskriver noen eksempler på scenarier for utvidelsesmuligheter for Microsoft Dynamics 365 Talent som bruker Microsoft PowerApps og Microsoft Flow. Du kan importere løsningspakken som er tilknyttet hvert eksempel, i ditt PowerApps-miljø. Du kan deretter bruke pakkene som retningslinjer eller som utgangspunkt til å implementere scenarioene som gjelder for organisasjonen din.
 
 > [!IMPORTANT]
 > Hvis du vil bruke malene og appen som er beskrevet i dette emnet, "som de er", må du teste dem å være sikker på at de dekker alle scenarioene som er spesifikke for implementeringen.
@@ -57,7 +57,7 @@ For å laste ned malen for **Flyt – skjematilkobling** og den egendefinerte en
 
 ## <a name="initiate-and-extract-parameters-passed-to-powerapps"></a>Starte og hente parametere som er sendt til Powerapps
 
-Malen for **Starte og hente parametere som er sendt til Powerapps** kan brukes som utgangspunkt for et hvilket som helst PowerApps-scenario som er spesifikt for Attract. Den inneholder alle standardparameterne som sendes av Attract, for eksempel **Stillingssøknad**, **Kandidat-ID** og **Jobb-ID**.
+Malen **Starte og hente parametere som er sendt til Powerapps** kan brukes som utgangspunkt for et hvilket som helst PowerApps-scenario som er spesifikt for Attract. Den inneholder alle standardparameterne som sendes av Attract, for eksempel **Stillingssøknad**, **Kandidat-ID** og **Jobb-ID**.
 
 Denne malen kan brukes til å hente et kandidatvurderingsskjema, slik at en ansettelsesansvarlig kan vise vurderingen som en kandidat fylte ut.
 
@@ -79,7 +79,7 @@ Malen **Flyt – e-postvarsling** kan brukes i e-postvarslingsscenarioer. Den ka
 
 Denne malen kan utvides til å spore endringer i kandidatstadiet i rekrutteringsprosessen og til å sende meldinger til ansettelsesteamet og kandidaten.
 
-Generelt for enhetene som er lagret i Common Data Service, kan flyter defineres til å sende varslinger for hendelser som forekommer i Core HR, Attract eller Dynamics 365 Talent: Onboard.
+Generelt for enhetene som er lagret i Common Data Service, kan flyter defineres til å sende varslinger for hendelser som forekommer i Core HR, Attract eller Onboard.
 
 For å laste ned **Flyt – e-postvarsling**-malen, gå til [Flyt – e-postvarsling](https://go.microsoft.com/fwlink/?linkid=2082103) på Microsoft Download Center.
 
@@ -106,7 +106,7 @@ Du kan bruke henvisningsappen for å legge til kandidater i en delt talentsamlin
 
 Du kan bygge inn denne appen i Employee Self-Service (ESS) for innsending av henvisninger, eller du kan bruke den som en hyperkobling i firmaportalen og kjøre som en frittstående app.
 
-Hvis du vil laste ned **henvisningsappen**, går du til [Dynamics 365 for Talent-utvidelsesløsning: Henvisningsapp](http://www.microsoft.com/downloads/details.aspx?FamilyID=9a59c9d1-f8a1-4d4d-b768-cfc4f4eb9d0d) på Microsoft Download Center. Du kan importere denne appen og tilpasse den for å legge til flere funksjoner.
+Hvis du vil laste ned **henvisningsappen**, går du til [Dynamics 365 Talent-utvidelsesløsning: Henvisningsapp](http://www.microsoft.com/downloads/details.aspx?FamilyID=9a59c9d1-f8a1-4d4d-b768-cfc4f4eb9d0d) på Microsoft Download Center. Du kan importere denne appen og tilpasse den for å legge til flere funksjoner.
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 

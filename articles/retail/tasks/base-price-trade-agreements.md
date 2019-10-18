@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 8138b6144cc6ba09834f2bfb61cc7334767307d6
-ms.sourcegitcommit: cbcf344b3b552acca56c3e27606eac7f2f124afe
+ms.openlocfilehash: 45d3d962958d0487c9e65910a2dce24097a83773
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/22/2019
-ms.locfileid: "1916559"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2017764"
 ---
 # <a name="base-price-and-trade-agreements"></a> Basispris og forretningsavtaler
 
@@ -56,7 +56,7 @@ Denne prosedyren hjelper med å opprette kanalspesifikke salgsprisforretningsavt
 24. Klikk **Opprett forretningsavtaler**.
 25. Klikk på **Ny**.
 26. Klikk på rullegardinknappen i **Navn**-feltet for å åpne oppslaget.
-27. Velg Detaljhandel i listen. I demonstrasjonsdataene har journalnavnet Detaljhandel standardrelasjonen Pris (salg). Det betyr at alle nye linjer som opprettes, bruker salgsprisforretningsavtaler som standard.  
+27. Velg **Detaljhandel** i listen. I demonstrasjonsdataene har journalnavnet **Detaljhandel** standardrelasjonen **Pris (salg)**. Det betyr at alle nye linjer som opprettes, bruker salgsprisforretningsavtaler som standard.  
 28. Klikk på **Linjer** i **handlingsruten**.
 29. Velg Gruppe i **Kontokode**-feltet.
 30. Klikk på rullegardinknappen i **Kontovalg**-feltet for å åpne oppslaget.

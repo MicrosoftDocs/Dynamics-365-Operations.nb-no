@@ -1,6 +1,6 @@
 ---
-title: Hva er nytt eller endret i Dynamics 365 for Talent (31. juli 2019)
-description: Dette emnet beskriver funksjoner som enten er nye eller endret i Microsoft Dynamics 365 for Talent.
+title: Hva er nytt eller endret i Dynamics 365 Talent (31. juli 2019)
+description: Dette emnet beskriver funksjoner som enten er nye eller endret i Microsoft Dynamics 365 Talent.
 author: Darinkramer
 manager: AnnBe
 ms.date: 7/30/2019
@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-07-30
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 1fffe1bd8739723294c027c174d5e959c1c6010a
-ms.sourcegitcommit: 4ff8c2c2f3705d8045df66f2c4393253e05b49ed
+ms.openlocfilehash: 83f3339e6cea1448f5b257acf602fe5ca3449555
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "1864585"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2010251"
 ---
-# <a name="whats-new-or-changed-in-dynamics-365-for-talent-july-30-2019"></a>Hva er nytt eller endret i Dynamics 365 for Talent (30. juli 2019)
+# <a name="whats-new-or-changed-in-dynamics-365-talent-july-30-2019"></a>Hva er nytt eller endret i Dynamics 365 Talent (30. juli 2019)
 
 [!include [banner](includes/banner.md)]
 
-Dette emnet beskriver funksjoner som enten er nye eller endret i Dynamics 365 for Talent.
+Dette emnet beskriver funksjoner som enten er nye eller endret i Dynamics 365 Talent.
 
 ## <a name="changes-in-attract"></a>Endringer i Attract
 Denne versjonen inneholder mindre feilrettinger for Dynamics 365 Talent: Attract.
@@ -43,7 +43,7 @@ Endringer som er beskrevet i denne delen, gjelder build nummer 8.1.2409.
 
 ### <a name="region-support-for-canada-and-southeast-asia"></a>Områdestøtte for Canada og Sørøst-Asia
 
-Vi er glad for å annonsere at områdene Canada og Sørøst-Asia er tilgjengelige for Microsoft Dynamics 365 for Talent 1. august 2019. Med denne endringen kan du opprette miljøer i de kanadiske og asiatiske områdene, og alle Talent-data vil bli oppbevart kun innenfor disse stedene. Du kan opprette et miljø i disse nye områdene ved å velge plasseringen i dialogboksen Nytt miljø og bruke dette miljøet til å klargjøre Talent i LCS som beskrevet i [Klargjøre Talent](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/provisioning-talent).
+Vi er glad for å annonsere at områdene Canada og Sørøst-Asia er tilgjengelige for Talent 1. august 2019. Med denne endringen kan du opprette miljøer i de kanadiske og asiatiske områdene, og alle Talent-data vil bli oppbevart kun innenfor disse stedene. Du kan opprette et miljø i disse nye områdene ved å velge plasseringen i dialogboksen Nytt miljø og bruke dette miljøet til å klargjøre Talent i LCS som beskrevet i [Klargjøre Talent](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/provisioning-talent).
 
 Dataoverføring av eksisterende prosjekter fra andre områder til de kanadiske og asiatiske områdene støttes ikke. Bare nye prosjekter kan klargjøres for de nye områdene som støttes.
 

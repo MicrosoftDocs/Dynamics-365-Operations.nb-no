@@ -3,7 +3,7 @@ title: Planlegg vedlikeholdsplaner
 description: Dette emnet beskriver planlegging av vedlikeholdsplaner i Aktivastyring.
 author: josaw1
 manager: AnnBe
-ms.date: 08/15/2019
+ms.date: 08/27/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,14 +16,14 @@ ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: mkirknel
-ms.search.validFrom: 2019-08-15
+ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 6b6e5bde83474fe8971e482af518f7cee23a2220
-ms.sourcegitcommit: f5bfa3212bc3ef7d944a358ef08fe8863fd93b91
+ms.openlocfilehash: 698888533bf503838f455585f61cc7afc7239b05
+ms.sourcegitcommit: 6476f27c8d3dced7c2e9a7344a4e378b51a1983e
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "1875815"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "1922051"
 ---
 # <a name="schedule-maintenance-plans"></a>Planlegg vedlikeholdsplaner
 
@@ -49,11 +49,11 @@ Forebyggende vedlikeholdsplanlegging genererer kalenderoppføringer for aktiva, 
 
 - Når det gjelder planlegging av vedlikeholdsplaner på arbeidssteder: Hvis du oppdaterer oppsettet for aktivatyper, produsenter og modeller i vedlikeholdsplaner i **Alle arbeidssteder** > hurtigfanen **Vedlikeholdsplaner** etter at du har opprettet vedlikeholdsplaner, blir eksisterende oppføringer i vedlikeholdsplanen relatert til arbeidsstedet slettet automatisk. Hvis du vil opprette nye kalenderoppføringer, som samsvarer med det oppdaterte vedlikeholdsplanoppsettet på arbeidsstedet, må du kjøre en ny tidsplan for vedlikeholdsplanen for dette arbeidsstedet. Les mer om oppsettet av aktivatyper, produsenter og modeller på arbeidssteder i [Opprette arbeidssteder](../functional-locations/create-functional-locations.md).
 
->*Eksempel:* Du vil opprette en vedlikeholdsplan for et bestemt arbeidssted, som betyr at alle anleggsmidler som er definert for dette arbeidsstedet på et gitt tidspunkt, blir tatt med når du planlegger vedlikeholdsplanen. I dette tilfellet oppretter du en vedlikeholdsplan og velger det bestemte arbeidsstedet, men du legger IKKE til noen objekter i vedlikeholdsplanen. Resultatet er at når du planlegger denne vedlikeholdsplanen, opprettes vedlikeholdsplanlinjer for alle anleggsmidlene som er knyttet til arbeidsstedet på dette tidspunktet.
+>*Eksempel:* Du vil opprette en vedlikeholdsplan for et bestemt arbeidssted, som betyr at alle anleggsmidler som er definert for dette arbeidsstedet på et gitt tidspunkt, blir tatt med når du planlegger vedlikeholdsplanen. I dette tilfellet oppretter du en vedlikeholdsplan og velger det bestemte arbeidsstedet, men du legger IKKE til noen aktiva i vedlikeholdsplanen. Resultatet er at når du planlegger denne vedlikeholdsplanen, opprettes vedlikeholdsplanlinjer for alle anleggsmidlene som er knyttet til arbeidsstedet på dette tidspunktet.
 
 - Hvis du endrer aktivatyper, produsenter og modeller i **Aktivatyper**, påvirker disse endringene bare nye anleggsmidler som bruker den oppdaterte aktivatypen. Les mer om oppsett av anleggsmiddeltyper i [Aktivatyper](../setup-for-objects/object-types.md).  
 
-5. Klikk på **OK** for å starte genereringen av vedlikeholdsplanoppføringer for aktiva. De genererte oppføringene vil vises på listesiden **Alle vedlikeholdsplaner**.
+5. Klikk på **OK** for å starte genereringen av vedlikeholdsplanoppføringer for aktiva. De genererte oppføringene vil vises på listesiden **Alle vedlikeholdsplaner**. Illustrasjonen nedenfor viser et eksempel på dialogboksen **Planlegg vedlikeholdsplaner**.
 
 ![Figur 1](media/09-preventive-maintenance.png)
 
@@ -75,3 +75,4 @@ Eksemplene som beskrives her, viser at alle tellerregistreringer som er utført 
 ![Figur 3](media/11-preventive-maintenance.png)
 
 ![Figur 4](media/12-preventive-maintenance.png)
+

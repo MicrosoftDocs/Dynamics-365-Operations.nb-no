@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c219208c7ba5dd3686473d094658ab7f4c1b2b59
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 35ec47a13d9119c755702e019d09c76e1281b4a6
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1549319"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2250234"
 ---
 # <a name="activity-based-subcontracting"></a>Aktivitetsbasert utsetting
 
@@ -32,7 +32,7 @@ ms.locfileid: "1549319"
 
 Dette emnet beskriver i detalj hvordan du bruker r aktiviteter i underleveranser i en produksjonsflyt for lean manufacturing.
 
-I Microsoft Dynamics 365 for Finance and Operations er det to fremgangsmåter for utsetting: produksjonsordrer og lean manufacturing. I lean manufacturing-tilnærmingen er utsettingen av arbeid modellert som en tjeneste som er knyttet til en aktivitet i en produksjonsflyt. En spesiell kostgruppetype som heter **Direkte utsetting**, er introdusert, og utsettingstjenester er ikke lenger en del av en stykkliste. Kostnadsregnskapet for underleveransearbeid er fullstendig integrert i etterkalkuleringsløsningen for lean manufacturing.
+I Microsoft Dynamics 365 Supply Chain Management er det to fremgangsmåter for utsetting: produksjonsordrer og lean manufacturing. I lean manufacturing-tilnærmingen er utsettingen av arbeid modellert som en tjeneste som er knyttet til en aktivitet i en produksjonsflyt. En spesiell kostgruppetype som heter **Direkte utsetting**, er introdusert, og utsettingstjenester er ikke lenger en del av en stykkliste. Kostnadsregnskapet for underleveransearbeid er fullstendig integrert i etterkalkuleringsløsningen for lean manufacturing.
 
 ## <a name="production-flows-that-involve-subcontractors"></a>Produksjonsflyter som involverer underleverandører
 Det grunnleggende prinsippet til en produksjonsflyt endres ikke når aktiviteter er underleveranser. Materiale flyter fremdeles mellom lokasjoner, prosessaktiviteter konverterer materiale til produkter, og overføringsaktiviteter flytter materiale eller produkter fra én lokasjon til en annen. Du kan modellere lokasjoner og arbeidsceller som leverandøradministrert ved å tilordne leverandørkontoen til et lager eller en ressurs for en ressursgruppe.  
@@ -102,7 +102,7 @@ Folk vurderer ofte transport som ikke-produktiv og mener at den ikke tilfører n
 
 Med aktivitetsbasert utsetting i lean manufacturing kan du integrere transportører og transportleverandører som flytter materialer og produkter mellom lokasjonene i en produksjonsflyt. Ved å modellere en overføringsaktivitet kan du tilordne en transportør eller leverandør. Overføringsaktivitetene-/jobben er basert på en tjeneste og kjøpsavtale, og du kan opprette bestillinger og mottaksveiledninger basert på de faktiske overføringsjobbene. Denne funksjonaliteten er den samme som funksjonaliteten for prosessaktiviteter i underleveranser.  
 
-Av den grunn støtter nå Finance and Operations stykklisteberegning som inkluderer transporttjenester, oppretting av relaterte bestillinger, integrert mottaksregistrering og integrering av kostnader for transporttjeneste i etterkalkulering for produksjonsflyt.
+Supply Chain Management støtter nå stykklisteberegning som inkluderer transporttjenester, oppretting av relaterte bestillinger, integrert mottaksregistrering og integrering av kostnader for transporttjeneste i etterkalkulering for produksjonsflyt.
 
 
 

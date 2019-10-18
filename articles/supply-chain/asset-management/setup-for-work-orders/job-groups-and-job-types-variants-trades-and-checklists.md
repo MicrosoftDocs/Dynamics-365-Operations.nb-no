@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 9efbd9651f6a2fa57e761238c6acfe6111e986e6
-ms.sourcegitcommit: 802dbf0a744d70f9e546632d419415b0993331ab
+ms.openlocfilehash: 6cb53322b9bdaaa06c6040d8244b7e2ea05336ca
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "1874768"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2249615"
 ---
 # <a name="maintenance-job-type-categories-and-maintenance-job-types-maintenance-job-type-variants-maintenance-job-trades-and-maintenance-checklists"></a>Kategorier for vedlikeholdsjobbtyper og vedlikeholdsjobbtyper, varianter av vedlikeholdsjobbtyper, vedlikeholdsjobbfag og sjekklister for vedlikehold
 
@@ -225,7 +225,7 @@ Maler for vedlikeholdssjekklister kan brukes som et felles sett med oppgaver som
 26. Når du skal definere vedlegg på en valgt linje for vedlikeholdsjobbtypestandard, velger du **Legg ved dokumenter**. Vedlegg som er definert på en linje for vedlikeholdsjobbtypestandard, tas automatisk med i arbeidsordrelinjer som bruker denne linjen for vedlikeholdsjobbtypestandard.
 27. Velg **Ny**, og velg deretter et dokumenttype.
 28. Last opp dokumentet eller filen.
-29. På siden **Vedlegg** angir du feltene. Vedleggsoppsettet bruker standard dokumentoppsettsfunksjonalitet i Microsoft Dynamics 365 for Finance and Operations.
+29. På siden **Vedlegg** angir du feltene. Vedleggsoppsettet bruker standard dokumentoppsettsfunksjonalitet.
 30. Velg **Lagre** for å lagre vedlegget.
 
     > [!NOTE]
@@ -261,7 +261,7 @@ Når du har opprettet de nødvendige kombinasjonene for standard vedlikeholdsjob
 
 ## <a name="automatic-update-of-maintenance-job-type-forecasts"></a>Automatisk oppdatering av prognoser for vedlikeholdsjobbtype
 
-I Aktivastyring kan du automatisk oppdatere eventuelle endringer i vedlikeholdsjobbtypeprognoser for timekostnader, varekost og utgifter som er oppdatert i andre moduler i Finance and Operations. På denne måten bidrar du til å sikre at prognosene for vedlikeholdsjobbtype alltid bruker de siste kostprisene.
+I Aktivastyring kan du automatisk oppdatere eventuelle endringer i vedlikeholdsjobbtypeprognoser for timekostnader, varekost og utgifter som er oppdatert i andre moduler. På denne måten bidrar du til å sikre at prognosene for vedlikeholdsjobbtype alltid bruker de siste kostprisene.
 
 1. Velg **Aktivastyring** \> **Periodisk** \> **Prognose** \> **Oppdater prognose for vedlikeholdsjobbtype**.
 2. I dialogboksen **Oppdater prognose for vedlikeholdsjobbtype** i hurtigfanen **Poster som skal inkluderes** kan du legge til valg for bestemte vedlikeholdsjobbtyper etter behov. Velg **Filter**, og velg deretter **Velg** for å utføre valgene.

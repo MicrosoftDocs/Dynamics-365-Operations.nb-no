@@ -3,7 +3,7 @@ title: Oversikt over produksjonsprosess
 description: Dette emnet gir en oversikt over produksjonsprosessen. Den beskriver de ulike stadiene til produksjonsordrer, partiordrer og Kanbaner, fra oppretting av ordren til lukking av regnskapsperioden.
 author: cvocph
 manager: AnnBe
-ms.date: 11/03/2017
+ms.date: 09/13/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: cd529afa5d8117e01784ed267709e1ac8c43290d
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 5b586a02d79fbbee698f32ab2ace3f86e7262fa7
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1546669"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2250029"
 ---
 # <a name="production-process-overview"></a>Oversikt over produksjonsprosess
 
@@ -36,12 +36,12 @@ Produksjonen av produkter, en prosess som også er kjent som produksjonens livss
 
 **Produksjonskontroll**-modulen er koblet til andre moduler, for eksempel **Behandling av produktinformasjon**, **Lagerstyring**, **Økonomimodul**, **Lagerstyring**, **Prosjektregnskap** og **Organisasjonsstyring**. Denne integreringen støtter informasjonsflyten som er nødvendig for å fullføre produksjonen av en ferdig vare.  
 
-Produksjonsprosessen påvirkes vanligvis av kostnadsregnskaps- og beholdningsvurderingsmetodene som er valgt for en bestemt produksjonsprosess. Finance and Operations støtter både faktiske kostnader (først inn, først ut \[FIFO\]; sist inn, først ut \[LIFO\]; glidende gjennomsnittet og periodisk avveid gjennomsnitt) og standardkostmetoder. Lean manufacturing implementeres basert på backflush-etterkalkuleringsprinsippet.  
+Produksjonsprosessen påvirkes vanligvis av kostnadsregnskaps- og beholdningsvurderingsmetodene som er valgt for en bestemt produksjonsprosess. Supply Chain Management støtter både faktiske kostnader (først inn, først ut \[FIFO\]; sist inn, først ut \[LIFO\]; glidende gjennomsnittet og periodisk avveid gjennomsnitt) og standardkostmetoder. Lean manufacturing implementeres basert på backflush-etterkalkuleringsprinsippet.  
 
 Valget av kostnadsmålemetoder definerer også kravene til rapportering om material- og ressursforbruk under produksjonsprosessen. Faktiske kostnadsmetoder krever som regel nøyaktig rapportering på jobbnivå, mens periodiske kostnadsmetoder gir mindre detaljert rapportering av material- og ressursforbruk.
 
 ## <a name="mixed-mode-manufacturing"></a>Blandet modus-produksjon
-Ulike produkter og produksjonstopologier krever bruk av forskjellige ordretyper. Finance and Operations kan bruke forskjellige ordretyper i blandet modus. Med andre ord kan alle ordretyper forekomme under hele prosessen med å produsere ett ferdig produkt.
+Ulike produkter og produksjonstopologier krever bruk av forskjellige ordretyper. Supply Chain Management kan bruke forskjellige ordretyper i blandet modus. Med andre ord kan alle ordretyper forekomme under hele prosessen med å produsere ett ferdig produkt.
 
 -   **Produksjonsordre** – Dette er den klassiske ordretypen for å produsere et bestemt produkt eller en produktvariant i et gitt antall på en bestemt dato. Produksjonsordrer er basert på stykklister og ruter.
 -   **Partiordre** – Denne ordretypen brukes for prosessindustri og atskilte prosesser der produksjonskonverteringen er basert på en formel, eller der koprodukter og biprodukter kan være sluttprodukter, i tillegg til eller i stedet for hovedproduktet. Partiordrer bruker stykklister og ruter av typen **formel**.

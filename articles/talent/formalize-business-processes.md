@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-01-09
 ms.dyn365.ops.version: AX 7.1.0, Talent October 2017 update
-ms.openlocfilehash: 85950a1413cfd8745bb78a52eb9f7c81b8976605
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 51f8102afc28b3836d5fee13aa1e950351af3c4f
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1518731"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2008389"
 ---
 # <a name="formalize-business-processes"></a>Formalisere forretningsprosesser
 
@@ -43,7 +43,7 @@ For hver forretningsprosess kan du definere en prosesseier. Prosesseieren har ov
 Prosesseier kan ikke opprette nye forretningsprosesser eller maler for forretningprosess eller slette aktive forretningsprosesser eller maler for forretningprosess.
 
 ## <a name="tasks"></a>Oppgaver
-En forretningsprosess består ofte av flere oppgaver. Noen oppgaver, for eksempel gjennomgang av interne kurstilbud, kan fullføres i Microsoft Dynamics 365 for Talent[?]. I dette tilfellet er et alternativ valgt i feltet **Oppgavekobling**. Andre oppgaver kan omfatte gjennomgang eller utfylling av sider på et nettsted. I så fall er **URL-adressen** valgt i feltet **Oppgavekobling**, og deretter kan webadressen angis. Du kan angi URL-adresser for både eksterne og interne nettsteder. Du kan også opprette oppgaver for oppgaver som du har fullført manuelt, for eksempel gjennomgang av tilgjengeligheten av alle strukturer. I dette tilfellet kreves det ikke en oppgavekobling. Med denne fleksibiliteten kan du spore flere typer oppgaver i en omfattende prosess.
+En forretningsprosess består ofte av flere oppgaver. Noen oppgaver, for eksempel gjennomgang av interne kurstilbud, kan fullføres i Microsoft Dynamics 365 Talent. I dette tilfellet er et alternativ valgt i feltet **Oppgavekobling**. Andre oppgaver kan omfatte gjennomgang eller utfylling av sider på et nettsted. I så fall er **URL-adressen** valgt i feltet **Oppgavekobling**, og deretter kan webadressen angis. Du kan angi URL-adresser for både eksterne og interne nettsteder. Du kan også opprette oppgaver for oppgaver som du har fullført manuelt, for eksempel gjennomgang av tilgjengeligheten av alle strukturer. I dette tilfellet kreves det ikke en oppgavekobling. Med denne fleksibiliteten kan du spore flere typer oppgaver i en omfattende prosess.
 
 Oppgaver kan tilordnes til en bestemt arbeider eller til en stilling. Kompensasjons- og fordelsansvarlig vil for eksempel alltid være personen som utfører en evaluering av forsikringspremier. Når du oppretter denne oppgaven, velger du derfor **Stilling** i feltet **Tilordningstype**, og deretter velger du **Kompensasjons- og fordelsansvarlig** i listen **Stilling**. Når forretningsprosessen stawwrtes, tilordnes oppgaven til arbeideren som har stillingen **Kompensasjons- og fordelsansvarlig**. Hvis du vil tilordne en oppgave til en spesifikk arbeider, velger du **Arbeider** i feltet **Tilordningstype**, og deretter velger du den aktuelle personen.
 

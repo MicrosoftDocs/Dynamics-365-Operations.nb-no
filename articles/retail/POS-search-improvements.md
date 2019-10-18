@@ -1,6 +1,6 @@
 ---
 title: Produkt- og kundesøk på salgssted
-description: Dette emnet gir en oversikt over forbedringer som har blitt gjort for produkt- og kundesøkfunksjonalitet i Microsoft Dynamics 365 for Retail.
+description: Dette emnet gir en oversikt over forbedringer som har blitt gjort for produkt- og kundesøkfunksjonalitet i Dynamics 365 Retail.
 author: ShalabhjainMSFT
 manager: AnnBe
 ms.date: 06/10/2019
@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: shajain
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Retail April 2017 update
-ms.openlocfilehash: b2f1d522a60721c746d03e477615265f9a8ba9a0
-ms.sourcegitcommit: 3d8c951898e05febc160515127c1bcc5de5882a1
+ms.openlocfilehash: 60db9e9936f7728d76f5c7a0d0c31b33477c7c61
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "1625648"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2023693"
 ---
 # <a name="product-search-and-customer-search-in-the-point-of-sale-pos"></a>Produkt- og kundesøk på salgssted
 
@@ -99,7 +99,10 @@ Det vanlige kundesøket kan være tidkrevende fordi det søker i flere felt. I s
 
 ![Kundesøksnarveier](./media/SearchShortcutsPOS.png "Kundesøksnarveier")
 
-Når du skal angi søkekriterier som snarveier, må administratoren åpne **Detaljhandelsparametre**-siden i Microsoft Dynamics 365 for Finance and Operations, og deretter i **POS-søkekriterier**-kategorien velge alle kriteriene som skal vises som snarveier.
+
+
+Når du skal angi søkekriterier som snarveier, må administratoren åpne **Detaljhandelsparametre**-siden i Microsoft Dynamics 365 Retail, og deretter i **POS-søkekriterier**-kategorien velge alle kriteriene som skal vises som snarveier.
+
 
 ![Konfigurere snarveier for søk](./media/ConfigureShortcutsAX.png "Konfigurere snarveier for søk")
 
@@ -111,6 +114,6 @@ Når du skal angi søkekriterier som snarveier, må administratoren åpne **Deta
 > [!NOTE]
 > En egendefinert egenskap som legges til opplistingen, påvirker ikke standard kundesøkalgoritme. Med andre ord kundesøkalgoritmen søker ikke i den egendefinerte egenskapen. Brukere kan bare bruke en egendefinert egenskap for søk hvis den egendefinerte egenskapen legges til som snarvei, eller hvis standard søkealgoritme overstyres.
 
-I en kommende utgave av Microsoft Dynamics 365 for Retail kan forhandlere sette standard kundesøkemodus i Salgssted til **Søk i alle butikker**. Denne konfigurasjonen kan være nyttig i scenarier der kunder som ble opprettet utenfor Salgssted, umiddelbart må søkes etter (for eksempel til og med før datadistribusjonsjobben kjøres). Det nye alternativet **Standard kundesøkemodus** blir tilgjengelig i funksjonalitetsprofilen for salgssted. Sett den til **På** for å angi standard søkemodus til **Søk i alle butikker**. Hvert forsøk på kundesøk foretar deretter et sanntidskall til hovedkvarteret.
+I en kommende utgave av Retail kan forhandlere sette standard kundesøkemodus i Salgssted til **Søk i alle butikker**. Denne konfigurasjonen kan være nyttig i scenarier der kunder som ble opprettet utenfor Salgssted, umiddelbart må søkes etter (for eksempel til og med før datadistribusjonsjobben kjøres). Det nye alternativet **Standard kundesøkemodus** blir tilgjengelig i funksjonalitetsprofilen for salgssted. Sett den til **På** for å angi standard søkemodus til **Søk i alle butikker**. Hvert forsøk på kundesøk foretar deretter et sanntidskall til hovedkvarteret.
 
 For å unngå uventede ytelsesproblemer er denne konfigurasjonen skjult bak et testversjoneringsflagg kalt **CUSTOMERSEARCH_ENABLE_DEFAULTSEARCH_FLIGHTING**. For å vise innstillingen **Standard kundesøkemodus** i brukergrensesnittet må forhandleren opprette en støtteforespørsel for dets testemiljø for brukeraksept (UAT) og produksjonsmiljø. Etter at forespørselen er mottatt, samarbeider teknikerteamet med forhandleren for å sikre at forhandleren foretar testing i ikke-produksjonsmiljøene for å vurdere ytelsen og implementere eventuelle optimaliseringer som trengs.

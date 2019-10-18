@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
-ms.openlocfilehash: 00facce5913fb82f67c5844d74d29032735db707
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: d95429dde38a7a528b1c1d9036194a3bf8e6f986
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1506109"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2009451"
 ---
 # <a name="set-up-company-specific-human-resources-hr-parameters"></a>Definere firmaspesifikke parametere for Personale (HR)
 
@@ -34,7 +34,7 @@ Innstillingene for noen parametere for Personale deles mellom firmaer, mens inns
 To sider brukes til å angi Personale-parametere. For parametere som deles på tvers av firmaer, bruker du siden **Delte parametere for personaladministrasjon**. For parameterne som er firmaspesifikke (altså innstillingene gjelder ett enkelt firma), bruker du siden **Personalparametere**. På siden **Personalparametere** er innstillingene delt inn i seks kategorier:
 
 -   Generelt
--   Rekruttering - dette er ikke inkludert i Dynamics 365 for Talent
+-   Rekruttering - dette er ikke inkludert i Dynamics 365 Talent
 -   Kompensasjon
 -   Nummerserier
 -   Sykemelding og permisjon (FMLA)
@@ -49,7 +49,7 @@ Innstillingene i kategorien **Kompensasjon** definerer om brukere må bekrefte a
 ### <a name="previously-released-functionality"></a>Tidligere utgitt funksjonalitet
 Innstillingene i kategorien **Nummerserie** bestemmer sekvensene som brukes til å automatisk tilordne ID-er til varer i Personale, for eksempel søknader, fraværsregistreringer, kompensasjonsprosessresultatene, saksnumre, kurs og kursagendaer. Hvis du vil beholde nummerseriereferanser og -koder, kan du bruke listesiden **Nummerserier** (klikk på **Organisasjonsstyring** &gt; **Nummerserier** &gt; **Nummerserier**).
 
-### <a name="if-youre-using-dynamics-365-for-talent"></a>Hvis du bruker Dynamics 365 for Talent
+### <a name="if-youre-using-dynamics-365-talent"></a>Hvis du bruker Dynamics 365 Talent
 Innstillingene i kategorien **Nummerserie** bestemmer sekvensene som brukes til å automatisk tilordne ID-er til varer i Personale, for eksempel søknader, fraværsregistreringer, kompensasjonsprosessresultatene, saksnumre, kurs og kursagendaer. Hvis du vil beholde nummerseriereferanser og -koder, kan du bruke listesiden **Nummerserier** (klikk på **Systemadministrasjon** &gt; **Koblinger-kategorien** &gt; **Nummerserier** &gt; **Nummerserier**). 
 
 Innstillingene i kategorien **FMLA** definerer hvor mange timer en ansatt må arbeide for å være kvalifisert for FMLA-fordeler, lengden på ansettelse som er nødvendig for berettigelse, og ansettelsesforholdets startdato som brukes til å fastslå lengden på ansettelse. Innstillingene definerer også antallet FMLA-timer som ansatte er berettiget til og FMLA-kalenderen som brukes til å beregne hvor mange FMLA-timer ansatte har brukt. Kategorien **FMLA** er bare tilgjengelig for firmaer i USA. 

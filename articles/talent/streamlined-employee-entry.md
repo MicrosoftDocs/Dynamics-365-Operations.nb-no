@@ -1,6 +1,6 @@
 ---
 title: Strømlinjeformet ansattoppføring og navigasjon
-description: Dataregistrering for arbeidere i Dynamics 365 for Talent er forbedret for å tillate rask registrering for alle ansatte, tidligere, aktive eller fremtidige. En forenklet/konsolidert navigasjonsmodell er oppdatert for å finne relatert informasjon raskt og vise og foreta eventuelle nødvendige oppdateringer.
+description: Dataregistrering for arbeidere i Dynamics 365 Talent er forbedret for å tillate rask registrering for alle ansatte, tidligere, aktive eller fremtidige. En forenklet/konsolidert navigasjonsmodell er oppdatert for å finne relatert informasjon raskt og vise og foreta eventuelle nødvendige oppdateringer.
 author: andreabichsel
 manager: AnnBe
 ms.date: 08/20/2019
@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent October 2019 update
-ms.openlocfilehash: be0253ffc4396f36050ef02c51a20d378e44473d
-ms.sourcegitcommit: 4176c333ce3f88c5c68e95bd47e5791d32365dd2
+ms.openlocfilehash: 40bbb8429355fa18fe12c7cf56f8d58f19766cad
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/22/2019
-ms.locfileid: "1918215"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2009428"
 ---
 # <a name="streamlined-employee-entry-and-navigation"></a>Strømlinjeformet ansattoppføring og navigasjon
 
 [!include [banner](includes/banner.md)]
 
-Dynamics 365 for Talent muliggjør effektiv registrering av ansatte og ansettelsesdata. Du kan raskt oppdatere arbeidshistorikkinformasjon for tidligere, aktive og fremtidige ansatte og oppdragstakere.
+Dynamics 365 Talent muliggjør effektiv registrering av ansatte og ansettelsesdata. Du kan raskt oppdatere arbeidshistorikkinformasjon for tidligere, aktive og fremtidige ansatte og oppdragstakere.
 
 Du kan også aktivere en forenklet navigasjonsopplevelse for å finne relatert informasjon raskt og foreta eventuelle nødvendige endringer. Denne funksjonaliteten er nå tilgjengelig i sandkassemiljøer. Hvis du vil aktivere denne funksjonen, går du til **Systemadministrasjon > Koblinger > Oppsett > Systemparametere> Forhåndsvisningsfunksjoner**. Velg **Utvidet arbeiderskjema og navigering**. Dette vil aktivere disse endringene for alle brukere. Du kan når som helst deaktivere dette alternativet.
 

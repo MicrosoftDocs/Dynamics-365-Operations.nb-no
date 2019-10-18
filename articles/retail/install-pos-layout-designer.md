@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: athinesh
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 7fc5b48b71816b662f016f4a2d909526da0595f4
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 98784c11c7393bb4c3e022d5bff4cca2daa1636e
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1572086"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2025458"
 ---
 # <a name="install-the-retail-point-of-sale-pos-layout-designer"></a>Installere utforming av oppsett for salgssted (POS) for detaljhandel
 
@@ -36,11 +36,11 @@ Den grensesnittet for grafiske utformingen for MPOS og skybasert POS styres av o
 
 ## <a name="install-the-one-click-designer"></a>Installere ettklikksutformingen
 
-1. I Microsoft Dynamics 365 for Retail bruker du menyen øverst til venstre til å navigere til **Detaljhandel** **og handel** &gt; **Kanaloppsett** &gt; **Salgsstedsoppsett** &gt; **Salgssted** &gt; **Skjermoppsett**.
+1. I Retail bruker du menyen øverst til venstre til å navigere til **Detaljhandel** **og handel** &gt; **Kanaloppsett** &gt; **Salgsstedsoppsett** &gt; **Salgssted** &gt; **Skjermoppsett**.
 2. Velg et oppsett som har programtypen **Moderne salgssted for Windows** eller **Skybasert salgssted**, og klikk deretter **Utforming av oppsett**.
 3. I varslingsfeltet som vises nederst i Internet Explorer-vinduet, klikker du **Åpne** for å installere ettklikksutformingen. (Varslingsfeltet vises kanskje et annet sted i andre lesere.)
 4. I meldingsboksen **Programinstallasjon – sikkerhetsvarsel** som vises, klikker du **Kjør** for å installere utformingsverten for detaljhandel. En fremdriftsindikator viser fremdriften for installasjonen.
-5. Når installasjonen er fullført, angir du Microsoft Dynamics 365 for Retail-brukernavnet og passordet på **Logg på**-siden , og klikker deretter på **Logg på** for å starte utformingen.
+5. Når installasjonen er fullført, angir du Retail-brukernavnet og passordet på **Logg på**-siden, og deretter klikker du på **Logg på** for å starte utformingen.
 6. Når legitimasjonen er validert og utformingen starter, kan du begynne å utforme ditt eget oppsett eller endre det eksisterende oppsettet.
 
     [![Oppsett i ettklikksutformingen](./media/screenlayoutdesign_mposdownload-1024x664.png)](./media/screenlayoutdesign_mposdownload.png)
@@ -52,11 +52,11 @@ Den grensesnittet for grafiske utformingen for MPOS og skybasert POS styres av o
     **Løsninger:**
 
     - I Internet Explorer kontrollerer du at popup-blokkering er deaktivert for dette området. Klikk **Innstillinger** &gt; **Alternativer** &gt; **Personvern** &gt; **Finn popup-blokkering**, og endre innstillingen, hvis det kreves en endring.
-    - I Internet Explorer legger du til URL-adressen for Dynamics 365 for Retail i klarerte områder. Klikk **Innstillinger** &gt; **Alternativer** &gt; **Sikkerhet** &gt; **Klarerte områder** &gt; **Områder** &gt; **Legg til**.
+    - I Internet Explorer legger du til URL-adressen for Retail i klarerte områder. Klikk **Innstillinger** &gt; **Alternativer** &gt; **Sikkerhet** &gt; **Klarerte områder** &gt; **Områder** &gt; **Legg til**.
 
 - Programmet starter ikke, og du blir bedt om å kontakte leverandøren.
 
-    **Løsning**: I Internet Explorer legger du til URL-adressen for Dynamics 365 for Retail i klarerte områder. Klikk **Innstilling** &gt; **Alternativer** &gt; **Sikkerhet** &gt; **Klarerte områder** &gt; **Områder** &gt; **Legg til**.
+    **Løsning**: I Internet Explorer legger du til URL-adressen for Retail i klarerte områder. Klikk **Innstilling** &gt; **Alternativer** &gt; **Sikkerhet** &gt; **Klarerte områder** &gt; **Områder** &gt; **Legg til**.
 
 **Kjent problem:** Utformingen fungerer ikke slik den skal i nettleserne Google Chrome eller Mozilla Firefox. Vi arbeider for å løse dette problemet.
 

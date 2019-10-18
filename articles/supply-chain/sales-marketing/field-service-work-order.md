@@ -1,6 +1,6 @@
 ---
-title: Synkronisere arbeidsordrer i Field Service til salgsordrer i Finance and Operations
-description: Dette emnet beskriver malene og de underliggende oppgavene som brukes til å synkronisere arbeidsordrer i Field Service til salgsordrer i Finance and Operations.
+title: Synkronisere arbeidsordrer i Field Service til salgsordrer i Supply Chain Management
+description: Dette emnet beskriver malene og de underliggende oppgavene som brukes til å synkronisere arbeidsordrer i Field Service til salgsordrer i Supply Chain Management.
 author: ChristianRytt
 manager: AnnBe
 ms.date: 04/09/2018
@@ -19,30 +19,29 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: 49cb5942532e4feab64aa271ebfecf5cb60b1c61
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 2aa37ada18120e3b2a6e6b309c7d7b7ca9d9158f
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1562724"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2249833"
 ---
-# <a name="synchronize-work-orders-in-field-service-to-sales-orders-in-finance-and-operations"></a>Synkronisere arbeidsordrer i Field Service til salgsordrer i Finance and Operations
+# <a name="synchronize-work-orders-in-field-service-to-sales-orders-in-supply-chain-management"></a>Synkronisere arbeidsordrer i Field Service til salgsordrer i Supply Chain Management
 
 [!include[banner](../includes/banner.md)]
 
-Dette emnet drøfter maler og underliggende oppgaver som brukes til å synkronisere arbeidsordrer i Microsoft Dynamics 365 for Field Service til salgsordrer i Microsoft Dynamics 365 for Finance and Operations.
+Dette emnet drøfter maler og underliggende oppgaver som brukes til å synkronisere arbeidsordrer i Dynamics 365 Field Service til salgsordrer i Dynamics 365 Supply Chain Management.
 
-[![Synkronisering av forretningsprosesser mellom Finance and Operations og Field Service](./media/field-service-integration.png)](./media/field-service-integration.png)
+[![Synkronisering av forretningsprosesser mellom Supply Chain Management og Field Service](./media/field-service-integration.png)](./media/field-service-integration.png)
 
-Dette emnet beskriver malene og de underliggende oppgavene som brukes til å synkronisere arbeidsordrer i Field Service til salgsordrer i Finance and Operations.
 
 ## <a name="templates-and-tasks"></a>Maler og oppgaver
 
-De følgende malene og de underliggende oppgavene brukes til å utføre synkroniseringen av arbeidsordrer i Field Service til salgsordrer i Finance and Operations.
+De følgende malene og de underliggende oppgavene brukes til å utføre synkroniseringen av arbeidsordrer i Field Service til salgsordrer i Supply Chain Management.
 
 ### <a name="names-of-the-templates-in-data-integration"></a>Navn på malene i Dataintegrering
 
-**Arbeidsordrer til salgsordrer (Field Service til Fin and Ops)**-malen brukes til å utføre synkronisering.
+**Arbeidsordrer til salgsordrer (Field Service til Supply Chain Management)**-malen brukes til å utføre synkronisering.
 
 ### <a name="names-of-the-tasks-in-the-data-integration-project"></a>Navnet på oppgaven i Dataintegrasjonprosjektet
 
@@ -54,12 +53,12 @@ De følgende malene og de underliggende oppgavene brukes til å utføre synkroni
 
 Følgende synkroniseringsoppgaver er påkrevd før synkronisering av salgsordrehoder og -linjer kan inntreffe:
 
-- Field Service-produkter (Fin and Ops til Field Service)
-- Kontoer (Sales til Fin and Ops) – direkte
+- Field Service-produkter (Supply Chain Management til Field Service)
+- Kontoer (Sales til Supply Chain Management) – direkte
 
 ## <a name="entity-set"></a>Enhetssett
 
-| **Field Service** | **Finance and Operations** |
+| **Field Service** | **Forsyningskjedeadministrasjon** |
 |-------------------------|-------------------------|
 | msdyn_workorders        | CDS-salgsordrehoder |
 | msdyn_workorderservices | CDS-salgsordrelinjer   |
@@ -67,13 +66,13 @@ Følgende synkroniseringsoppgaver er påkrevd før synkronisering av salgsordreh
 
 ## <a name="entity-flow"></a>Enhetsflyt
 
-Arbeidsordrer opprettes i Field Service. Hvis arbeidsordene inkluderer bare eksternt vedlikeholdte produkter, og hvis **Arbeidsordrestatus**-verdien er forskjellig fra **Åpen – uplanlagt** og **Lukket – avbrutt**, kan arbeidsordrene synkroniseres til Finance and Operations via et CDS-dataintegreringsprosjekt. Oppdateringer av arbeidsordene synkroniseres som salgsordrer i Finance and Operations. Disse oppdateringene inneholder informasjon om opprinnelsestypen og status.
+Arbeidsordrer opprettes i Field Service. Hvis arbeidsordene inkluderer bare eksternt vedlikeholdte produkter, og hvis **Arbeidsordrestatus**-verdien er forskjellig fra **Åpen – uplanlagt** og **Lukket – avbrutt**, kan arbeidsordrene synkroniseres til Supply Chain Management via et Common Data Service-dataintegreringsprosjekt. Oppdateringer av arbeidsordene synkroniseres som salgsordrer i Supply Chain Management. Disse oppdateringene inneholder informasjon om opprinnelsestypen og status.
 
 ## <a name="estimated-versus-used"></a>Estimert kontra brukt
 
-I Field Service har produkter og tjenester på arbeidsordrer både **Estimert**-verdier og **Brukt**-verdier for antall og beløp. I Finance and Operations derimot har ikke salgsordrer det samme konseptet for **Estimert**- og **Brukt**-verdier. For å støtte produkttilordning som bruker det forventede antallet på salgsordren i Finance and Operations, men for å beholde det brukte antallet som skal brukes og faktureres, synkroniserer to sett med oppgaver produktene og tjenestene på arbeidsordren. Ett sett med oppgaver for **Estimert**-verdier, og det andre settet med oppgaver for **Brukt**-verdier.
+I Field Service har produkter og tjenester på arbeidsordrer både **Estimert**-verdier og **Brukt**-verdier for antall og beløp. I Supply Chain Management derimot har ikke salgsordrer det samme konseptet for **Estimert**- og **Brukt**-verdier. For å støtte produkttilordning som bruker det forventede antallet på salgsordren i Supply Chain Management, men for å beholde det brukte antallet som skal brukes og faktureres, synkroniserer to sett med oppgaver produktene og tjenestene på arbeidsordren. Ett sett med oppgaver for **Estimert**-verdier, og det andre settet med oppgaver for **Brukt**-verdier.
 
-Dette gjør det mulig med scenarioer der estimerte verdier brukes for tildeling eller reservasjon i Finance and Operations, mens brukte verdier brukes for forbruk og fakturering.
+Dette gjør det mulig med scenarioer der estimerte verdier brukes for tildeling eller reservasjon i Supply Chain Management, mens brukte verdier brukes for forbruk og fakturering.
 
 ### <a name="estimated"></a>Estimert
 
@@ -87,7 +86,7 @@ For synkronisering av servicelinjer brukes **Estimert**-verdier når **Linjestat
 
 Tabellen nedenfor gir en oversikt over de forskjellige kombinasjonene for produktlinjer.
 
-| Systemstatus <br>(Field Service) | Linjestatus <br>(Field Service) | Tilordnet <br>(Field Service) |Synkroniseringsverdi <br>(Finance and Operations) |
+| Systemstatus <br>(Field Service) | Linjestatus <br>(Field Service) | Tilordnet <br>(Field Service) |Synkroniseringsverdi <br>(Supply Chain Management) |
 |--------------------|-------------|-----------|---------------------------------|
 | Åpen – planlagt   | Estimert   | Ja       | Estimert                       |
 | Åpen – planlagt   | Estimert   | Antall        | Brukt                            |
@@ -108,7 +107,7 @@ Tabellen nedenfor gir en oversikt over de forskjellige kombinasjonene for produk
 
 Tabellen nedenfor gir en oversikt over de forskjellige kombinasjonene for servicelinjer.
 
-| Systemstatus <br>(Field Service) | Linjestatus <br>(Field Service) | Synkroniseringsverdi <br>(Finance and Operations) |
+| Systemstatus <br>(Field Service) | Linjestatus <br>(Field Service) | Synkroniseringsverdi <br>(Supply Chain Management) |
 |--------------------|-------------|-----------|
 | Åpen – planlagt   | Estimert   | Estimert |
 | Åpen – planlagt   | Brukt        | Brukt      |
@@ -130,7 +129,7 @@ Synkronisering av **Estimert**-verdier i forhold til **Brukt**-verdier behandles
     - **Produktlinje:** Estimert antall = 5ea, brukt antall = 0ea, linjestatus = estimert, tilordnet = Nei
     - **Servicelinje:** Estimert antall = 2h, brukt antall = 0h, linjestatus = estimert
 
-    I dette eksemplet synkroniseres produktets **Brukt antall**-verdi **0** (null) og tjenestens **Estimert antall**-verdi **2h** til Finance and Operations.
+    I dette eksemplet synkroniseres produktets **Brukt antall**-verdi **0** (null) og tjenestens **Estimert antall**-verdi **2h** til Supply Chain Management.
 
 2. Produkter tilordnes i Field Service.
 
@@ -139,7 +138,7 @@ Synkronisering av **Estimert**-verdier i forhold til **Brukt**-verdier behandles
     - **Produktlinje:** Estimert antall = 5ea, brukt antall = 0ea, linjestatus = estimert, tilordnet = Ja
     - **Servicelinje:** Estimert antall = 2h, brukt antall = 0h, linjestatus = estimert
 
-    I dette eksemplet synkroniseres produktets **Estimert antall**-verdi **5ea** og tjenestens **Estimert antall**-verdi **2h** til Finance and Operations.
+    I dette eksemplet synkroniseres produktets **Estimert antall**-verdi **5ea** og tjenestens **Estimert antall**-verdi **2h** til Supply Chain Management.
 
 3. Serviceteknikeren begynner å arbeide med arbeidsordren og registrerer materialforbruk på 6.
 
@@ -148,7 +147,7 @@ Synkronisering av **Estimert**-verdier i forhold til **Brukt**-verdier behandles
     - **Produktlinje:** Estimert antall = 5ea, brukt antall = 6ea, linjestatus = brukt, tilordnet = Ja
     - **Servicelinje:** Estimert antall = 2h, brukt antall = 0h, linjestatus = estimert
 
-    I dette eksemplet synkroniseres produktets **Brukt antall**-verdi **6** og tjenestens **Estimert antall**-verdi **2h** til Finance and Operations.
+    I dette eksemplet synkroniseres produktets **Brukt antall**-verdi **6** og tjenestens **Estimert antall**-verdi **2h** til Supply Chain Management.
 
 4. Serviceteknikeren fullfører arbeidsordren og registrerer brukt tid på 1,5 time.
 
@@ -157,21 +156,21 @@ Synkronisering av **Estimert**-verdier i forhold til **Brukt**-verdier behandles
     - **Produktlinje:** Estimert antall = 5ea, brukt antall = 6ea, linjestatus = brukt, tilordnet = Ja
     - **Servicelinje:** Estimert antall = 2h, brukt antall = 1,5h, linjestatus = brukt
 
-    I dette eksemplet synkroniseres produktets **Brukt antall**-verdi **6** og tjenestens **Brukt antall** på **1,5h** til Finance and Operations.
+    I dette eksemplet synkroniseres produktets **Brukt antall**-verdi **6** og tjenestens **Brukt antall** på **1,5h** til Supply Chain Management.
 
 ## <a name="sales-order-origin-and-status"></a>Salgsordreopprinnelse og -status
 
 ### <a name="sales-origin"></a>Salgsopprinnelse
 
-Hvis du vil holde oversikt over salgsordrer i Finance and Operations som kommer fra arbeidsordrer, kan du opprette en salgsopprinnelse der **Tilordning av opprinnelsestype** er satt til **Ja** og **Salgsopprinnelsestype**-feltet er satt til **Integrering av arbeidsordre**.
+Hvis du vil holde oversikt over salgsordrer som kommer fra arbeidsordrer, kan du opprette en salgsopprinnelse der **Tilordning av opprinnelsestype** er satt til **Ja** og **Salgsopprinnelsestype**-feltet er satt til **Integrering av arbeidsordre**.
 
-Som standard velger tilordningen salgsopprinnelsen for salgsopprinnelsestypen **Integrering av arbeidsordre** som er opprettet fra arbeidsordrer. Dette kan være nyttig når du arbeider med salgsordren i Finance and Operations. Du må kontrollere at salgsordrer som stammer fra arbeidsordrer, ikke synkroniseres tilbake til Field Service som arbeidsordrer.
+Som standard velger tilordningen salgsopprinnelsen for salgsopprinnelsestypen **Integrering av arbeidsordre** som er opprettet fra arbeidsordrer. Dette kan være nyttig når du arbeider med salgsordren i Supply Chain Management. Du må kontrollere at salgsordrer som stammer fra arbeidsordrer, ikke synkroniseres tilbake til Field Service som arbeidsordrer.
 
-Hvis du vil ha mer informasjon om hvordan du oppretter riktig salgsopprinnelsesoppsett i Finance and Operations, kan du se delen Forutsetninger og tilordningsdefinisjon i dette emnet.
+Hvis du vil ha mer informasjon om hvordan du oppretter riktig salgsopprinnelsesoppsett i Supply Chain Management, kan du se delen Forutsetninger og tilordningsdefinisjon i dette emnet.
 
 ### <a name="status"></a>Status
 
-Når salgsordren stammer fra en arbeidsordre, vises feltet **Status for ekstern arbeidsordre** i **Oppsett**-kategorien i salgsordrehodet. Dette feltet viser systemstatusen fra arbeidsordren i Field Service, for å spore statusen for synkronisert arbeidsordre for salgsordrer i Finance and Operations. Dette feltet kan også hjelpe brukeren av Finance and Operations å bestemme når salgsordren skal leveres eller faktureres.
+Når salgsordren stammer fra en arbeidsordre, vises feltet **Status for ekstern arbeidsordre** i **Oppsett**-kategorien i salgsordrehodet. Dette feltet viser systemstatusen fra arbeidsordren i Field Service, for å spore statusen for synkronisert arbeidsordre for salgsordrer i Supply Chain Management. Dette feltet kan også hjelpe brukeren av Supply Chain Management å bestemme når salgsordren skal leveres eller faktureres.
 
 **Status for ekstern arbeidsordre**-feltet kan ha følgende verdier:
 
@@ -182,16 +181,16 @@ Når salgsordren stammer fra en arbeidsordre, vises feltet **Status for ekstern 
 
 ## <a name="field-service-crm-solution"></a>CRM-løsning for Field Service
 
-For å støtte integrasjon mellom Field Service og Finance and Operations, kreves det ekstra funksjonalitet fra Field Service CRM-løsningen. Løsningen inneholder følgende endringer.
+For å støtte integrasjon mellom Field Service og Supply Chain Management, kreves det ekstra funksjonalitet fra Field Service CRM-løsningen. Løsningen inneholder følgende endringer.
 
 ### <a name="work-order-entity"></a>Arbeidsordreenhet
 
-Feltet **Har bare eksternt vedlikeholdte produkter** er lagt til i **Arbeidsordre**-enheten og vises på siden. Det brukes til å spore om en arbeidsordre utelukkende består av eksternt vedlikeholdte produkter. En arbeidsordre består av bare eksternt vedlikeholdte produkter når alle relaterte produkter vedlikeholdes i Finance and Operations. Dette feltet sikrer at brukere ikke synkroniserer arbeidsordrer med produkter som er ukjent for Finance and Operations.
+Feltet **Har bare eksternt vedlikeholdte produkter** er lagt til i **Arbeidsordre**-enheten og vises på siden. Det brukes til å spore om en arbeidsordre utelukkende består av eksternt vedlikeholdte produkter. En arbeidsordre består av bare eksternt vedlikeholdte produkter når alle relaterte produkter vedlikeholdes i Supply Chain Management. Dette feltet sikrer at brukere ikke synkroniserer arbeidsordrer med produkter som er ukjent for Supply Chain Management.
 
 ### <a name="work-order-product-entity"></a>Arbeidsordreproduktenhet
 
-- Feltet **Ordre har bare eksternt vedlikeholdte produkter** er lagt til i **Arbeidsordreprodukt**-enheten og vises på siden. Det brukes til å spore om arbeidsordreproduktet vedlikeholdes i Finance and Operations. Dette feltet sikrer at brukere ikke synkroniserer arbeidsordreprodukter som er ukjent for Finance and Operations.
-- Feltet **Hodesystemstatus** er lagt til i **Arbeidsordreprodukt**-enheten og vises på siden. Det brukes til å spore systemstatusen til arbeidsordren og hjelper med å garantere riktig filtrering når arbeidsordreprodukter synkroniseres til Finance and Operations. Når filtre er definert for integreringsoppgavene, brukes også **Hodesystemstatus**-informasjonen til å bestemme om estimert- eller brukt-verdiene skal synkroniseres.
+- Feltet **Ordre har bare eksternt vedlikeholdte produkter** er lagt til i **Arbeidsordreprodukt**-enheten og vises på siden. Det brukes til å spore om arbeidsordreproduktet vedlikeholdes i Supply Chain Management. Dette feltet sikrer at brukere ikke synkroniserer arbeidsordreprodukter som er ukjent for Supply Chain Management.
+- Feltet **Hodesystemstatus** er lagt til i **Arbeidsordreprodukt**-enheten og vises på siden. Det brukes til å spore systemstatusen til arbeidsordren og hjelper med å garantere riktig filtrering når arbeidsordreprodukter synkroniseres til Supply Chain Management. Når filtre er definert for integreringsoppgavene, brukes også **Hodesystemstatus**-informasjonen til å bestemme om estimert- eller brukt-verdiene skal synkroniseres.
 - **Fakturert enhetsbeløp**-feltet viser beløpet som er fakturert per faktisk enhet som brukes. Verdien beregnes som **Totalbeløp**-verdien dividert med **Faktisk antall**-verdien. Feltet brukes for integrering til systemer som ikke støtter forskjellige verdier for det brukte antallet og det fakturerte antallet. Dette feltet vises ikke i brukergrensesnittet. 
 - **Fakturert rabattbeløp**-feltet beregnes som **Rabattbeløp**-verdien pluss avrundingen fra beregningen av **Fakturert enhetsbeløp**-verdien. Dette feltet brukes for integrering og vises ikke i brukergrensesnittet.
 - **Desimalantallet**-feltet lagrer verdien fra **Antall**-feltet som et desimaltall. Dette feltet brukes for integrering og vises ikke i brukergrensesnittet. 
@@ -199,8 +198,8 @@ Feltet **Har bare eksternt vedlikeholdte produkter** er lagt til i **Arbeidsordr
 
 ### <a name="work-order-service-entity"></a>Arbeidsordreserviceenhet
 
-- Feltet **Ordre har bare eksternt vedlikeholdte produkter** er lagt til i **Arbeidsordreservice**-enheten og vises på siden. Det brukes til å spore om arbeidsordreservicen vedlikeholdes i Finance and Operations. Dette feltet sikrer at brukere ikke synkroniserer arbeidsordreservicer som er ukjent for Finance and Operations.
-- Feltet **Hodesystemstatus** er lagt til i **Arbeidsordreservice**-enheten og vises på siden. Det brukes til å spore systemstatusen til arbeidsordren og hjelper med å garantere riktig filtrering når arbeidsordreservicer synkroniseres til Finance and Operations. Når filtre er definert for integreringsoppgavene, brukes også **Hodesystemstatus**-informasjonen til å bestemme om estimert- eller brukt-verdiene skal synkroniseres.
+- Feltet **Ordre har bare eksternt vedlikeholdte produkter** er lagt til i **Arbeidsordreservice**-enheten og vises på siden. Det brukes til å spore om arbeidsordretjenesten vedlikeholdes i Supply Chain Management. Dette feltet sikrer at brukere ikke synkroniserer arbeidsordretjenester som er ukjent for Supply Chain Management.
+- Feltet **Hodesystemstatus** er lagt til i **Arbeidsordreservice**-enheten og vises på siden. Det brukes til å spore systemstatusen til arbeidsordren og hjelper med å garantere riktig filtrering når arbeidsordretjenester synkroniseres til Supply Chain Management. Når filtre er definert for integreringsoppgavene, brukes også **Hodesystemstatus**-informasjonen til å bestemme om estimert- eller brukt-verdiene skal synkroniseres.
 - **Varighet i timer**-feltet lagrer verdien fra **Varighet**-feltet etter at denne verdien er konvertert fra minutter til timer. Dette feltet brukes for integrering og vises ikke i brukergrensesnittet.
 - **Estimert varighet i timer**-feltet lagrer verdien fra **Estimert varighet**-feltet etter at denne verdien er konvertert fra minutter til timer. Dette feltet brukes for integrering og vises ikke i brukergrensesnittet.
 - **Fakturert enhetsbeløp**-feltet lagrer beløpet som er fakturert per faktisk enhet som brukes. Verdien beregnes som **Totalbeløp**-verdien dividert med **Faktisk antall**-verdien. Dett feltet brukes for integrering til systemer som ikke støtter forskjellige verdier for det brukte antallet og det fakturerte antallet. Feltet vises ikke i brukergrensesnittet.
@@ -214,12 +213,12 @@ Før du synkroniserer arbeidsordrer, er det viktig å oppdatere innstillingene n
 
 ### <a name="setup-in-field-service"></a>Oppsett i Field Service
 
-- Kontroller at nummerserien som brukes til arbeidsorder i Field Service, ikke overlapper nummerserien som brukes for salgsordrer i Finance and Operations. Ellers kan eksisterende salgsordrer oppdateres feil i Field Service eller Finance and Operations.
-- **Oppretting av arbeidsordrefaktura**-feltet må settes til **Aldri**, fordi faktureringen foretas fra Finance and Operations. Gå til **Field Service** \> **Innstillinger** \> **Administrasjon** \> **Field Service-innstillinger**, og kontroller at **Oppretting av arbeidsordrefaktura**-feltet er satt til **Aldri**.
+- Kontroller at nummerserien som brukes til arbeidsorder i Field Service, ikke overlapper nummerserien som brukes for salgsordrer i Supply Chain Management. Ellers kan eksisterende salgsordrer oppdateres feil i Field Service eller Supply Chain Management.
+- **Oppretting av arbeidsordrefaktura**-feltet må settes til **Aldri**, fordi faktureringen foretas fra Supply Chain Management. Gå til **Field Service** \> **Innstillinger** \> **Administrasjon** \> **Field Service-innstillinger**, og kontroller at **Oppretting av arbeidsordrefaktura**-feltet er satt til **Aldri**.
 
-### <a name="setup-in-finance-and-operations"></a>Oppsett i Finance and Operations
+### <a name="setup-in-supply-chain-management"></a>Oppsett i Supply Chain Management
 
-Arbeidsordreintegrasjon krever at du definerer salgsopprinnelsen. Salgsopprinnelsen brukes til å skille salgsordrer i Finance and Operations som ble opprettet fra arbeidsorder i Field Service. Når en salgsordre har en salgsopprinnelse av typen **Arbeidsordreintegrasjon**, vises **Ekstern arbeidsordrestatus**-feltet i salgsordrehodet. I tillegg kan salgsopprinnelsen sikre at salgsordrer som ble opprettet fra arbeidsorder i Field Service, filtreres ut under synkronisering av salgsordrer fra Finance and Operations til Field Service.
+Arbeidsordreintegrasjon krever at du definerer salgsopprinnelsen. Salgsopprinnelsen brukes til å skille salgsordrer i Supply Chain Management som ble opprettet fra arbeidsorder i Field Service. Når en salgsordre har en salgsopprinnelse av typen **Arbeidsordreintegrasjon**, vises **Ekstern arbeidsordrestatus**-feltet i salgsordrehodet. I tillegg kan salgsopprinnelsen sikre at salgsordrer som ble opprettet fra arbeidsorder i Field Service, filtreres ut under synkronisering av salgsordrer fra Supply Chain Management til Field Service.
 
 1. Gå til **Salg og markedsføring** \> **Oppsett** \> **Salgsorder** \> **Salgsopprinnelse**.
 2. Velg **Ny** for å opprette en ny salgsopprinnelse.
@@ -243,31 +242,31 @@ Kontroller at **Integration-nøkkelen** finnes for **msdyn_workorders**
 
 Følgende illustrasjoner viser en tilordning av malen i Dataintegrering.
 
-### <a name="work-orders-to-sales-orders-field-service-to-fin-and-ops-workorderheader"></a>Arbeidordrer til salgsordrer (Field Service til Fin og Ops): WorkOrderHeader
+### <a name="work-orders-to-sales-orders-field-service-to-supply-chain-management-workorderheader"></a>Arbeidsordrer til salgsordrer (Field Service til Supply Chain Management): WorkOrderHeader
 
 Filter: (msdyn_systemstatus ne 690970005) and (msdyn_systemstatus ne 690970000) og (msdynce_hasexternallymaintainedproductsonly eq true)
 
 [![Maltilordning i Dataintegrering](./media/FSWorkOrder1.png )](./media/FSWorkOrder1.png)
 
-### <a name="work-orders-to-sales-orders-field-service-to-fin-and-ops-workorderservicelineestimate"></a>Arbeidordrer til salgsordrer (Field Service til Fin og Ops): WorkOrderServiceLineEstimate
+### <a name="work-orders-to-sales-orders-field-service-to-supply-chain-management-workorderservicelineestimate"></a>Arbeidsordrer til salgsordrer (Field Service til Supply Chain Management): WorkOrderServiceLineEstimate
 
 Filter: (msdynce_headersystemstatus ne 690970005) og (msdynce_headersystemstatus ne 690970000) og (msdynce_orderhasexternalmaintainedproductsonly eq true) og (msdyn_linestatus eq 690970000) and (msdynce_headersystemstatus ne 690970004)
 
 [![Maltilordning i Dataintegrering](./media/FSWorkOrder2.png )](./media/FSWorkOrder2.png)
 
-### <a name="work-orders-to-sales-orders-field-service-to-fin-and-ops-workorderservicelineused"></a>Arbeidordrer til salgsordrer (Field Service til Fin og Ops): WorkOrderServiceLineUsed
+### <a name="work-orders-to-sales-orders-field-service-to-supply-chain-management-workorderservicelineused"></a>Arbeidsordrer til salgsordrer (Field Service til Supply Chain Management): WorkOrderServiceLineUsed
 
 Filter: (msdynce_headersystemstatus ne 690970005) og (msdynce_headersystemstatus ne 690970000) og (msdynce_orderhasexternalmaintainedproductsonly eq true) og ((msdyn_linestatus eq 690970001) eller (msdynce_headersystemstatus eq 690970004))
 
 [![Maltilordning i Dataintegrering](./media/FSWorkOrder3.png )](./media/FSWorkOrder3.png)
 
-### <a name="work-orders-to-sales-orders-field-service-to-fin-and-ops-workorderproductlineestimate"></a>Arbeidordrer til salgsordrer (Field Service til Fin og Ops): WorkOrderProductLineEstimate
+### <a name="work-orders-to-sales-orders-field-service-to-supply-chain-management-workorderproductlineestimate"></a>Arbeidsordrer til salgsordrer (Field Service til Supply Chain Management): WorkOrderProductLineEstimate
 
 Filter: (msdynce_headersystemstatus ne 690970005) og (msdynce_headersystemstatus ne 690970000) og (msdynce_orderhasexternalmaintainedproductsonly eq true) og (msdyn_linestatus eq 690970000) and (msdynce_headersystemstatus ne 690970004) og (msdyn_allocated eq true)
 
 [![Maltilordning i Dataintegrering](./media/FSWorkOrder4.png )](./media/FSWorkOrder4.png)
 
-### <a name="work-orders-to-sales-orders-field-service-to-fin-and-ops-workorderproductlineused"></a>Arbeidordrer til salgsordrer (Field Service til Fin og Ops): WorkOrderProductLineUsed
+### <a name="work-orders-to-sales-orders-field-service-to-supply-chain-management-workorderproductlineused"></a>Arbeidsordrer til salgsordrer (Field Service til Supply Chain Management): WorkOrderProductLineUsed
 
 Filter: (msdynce_headersystemstatus ne 690970005) og (msdynce_headersystemstatus ne 690970000) og (msdynce_orderhasexternalmaintainedproductsonly eq true) og ((msdyn_linestatus eq 690970001) eller (msdynce_headersystemstatus eq 690970004) eller (msdyn_allocated ne true))
 

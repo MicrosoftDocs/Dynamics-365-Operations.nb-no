@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: conradv
 ms.dyn365.ops.version: 7.2999999999999998
 ms.search.validFrom: 2017-12-31
-ms.openlocfilehash: 58a32bd7f857e8173996cd4eb21f176bae508587
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 68be63370eca0089649c47de0ba0bc9bd335b905
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1546231"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2250606"
 ---
 # <a name="product-identifiers"></a>Produktidentifikatorer 
 
@@ -36,13 +36,13 @@ Når du arbeider med produkter på shop floor eller i et lager i Microsoft Dynam
 
 ## <a name="unique-product-numberproduct-id"></a>Unikt produktnummer/produkt-ID
 
-I Microsoft Dynamics 365 for Finance and Operations er den primære ID-en for et produkt produktnummeret (det vil si den unike produkt-ID-en) Dette nummeret kan genereres automatisk av en nummerserie, eller det kan knyttes manuelt til et produkt. For produktvarianter kan numrene defineres gjennom produktterminologimalen .
+I Dynamics 365 Supply Chain Management er den primære ID-en for et produkt produktnummeret (det vil si den unike produkt-ID-en) Dette nummeret kan genereres automatisk av en nummerserie, eller det kan knyttes manuelt til et produkt. For produktvarianter kan numrene defineres gjennom produktterminologimalen .
 
-I mange tilfeller er ikke produktnummeret opprinnelig opprettet i Finance and Operations. Det er derimot tilknyttet et produkt i et system for administrasjon av produktlivssyklus (PLM) eller administrasjon av produktdata (PDM). Du bruker i dette tilfellet dataenheter for å importere produkter og produktvarianter. Finance and Operations bruker deretter tallene i alle operasjoner.
+I mange tilfeller er ikke produktnummeret opprinnelig opprettet i Dynamics 365 Supply Chain Management. Det er derimot tilknyttet et produkt i et system for administrasjon av produktlivssyklus (PLM) eller administrasjon av produktdata (PDM). Du bruker i dette tilfellet dataenheter for å importere produkter og produktvarianter. Supply Chain Management bruker deretter tallene i alle operasjoner.
 
-Når du implementerer Finance and Operations, bør du gi særlige hensyn til din strategi for produktnumre. Et godt nummereringssystem forbedrer logistikkflyter og bidrar til å forhindre feil. En god produkt-ID har opptil 15 tegn. Ideelt sett har den færre enn 10 tegn og inneholder ikke mer enn fem klassifiseringstegn. Du kan også bruke søkenavn for å aktivere hurtigsøk. Et søkenavn er et ekstra navn som representerer klassifiseringene av et produkt.
+Når du implementerer Supply Chain Management, bør du gi særlige hensyn til din strategi for produktnumre. Et godt nummereringssystem forbedrer logistikkflyter og bidrar til å forhindre feil. En god produkt-ID har opptil 15 tegn. Ideelt sett har den færre enn 10 tegn og inneholder ikke mer enn fem klassifiseringstegn. Du kan også bruke søkenavn for å aktivere hurtigsøk. Et søkenavn er et ekstra navn som representerer klassifiseringene av et produkt.
 
-Når du bruker Common Data Service (CDS), er produktnummeret i Finance and Operations også produktnummeret i CDS. Produktvarianter synkroniseres til CDS som forskjellige produkter.
+Når du bruker Common Data Service, er produktnummeret i Supply Chain Management også produktnummeret i Common Data Service. Produktvarianter synkroniseres til Common Data Service som forskjellige produkter.
 
 ## <a name="item-number-and-product-dimensions"></a>Varenummer og produktdimensjoner
 
@@ -56,19 +56,19 @@ I tillegg skal du kunne søke og filtrere på produktnummeret, varenavnet og bes
 
 ## <a name="product-name-and-description"></a>Produktnavn og beskrivelse
 
-Produktnavnet og beskrivelsen er de lesbare identifikatorene til et produkt, og de kan brukes på mange språk. Klienten Finance and Operations vises som standard all produktinformasjon på standardspråket for firmaet, og ikke på brukerens foretrukne språk. Oversatte produktnavn og beskrivelser brukes imidlertid i all kommunikasjon med kunder og leverandører. Oversettelsene er basert på språkkoden for kunde- og leverandørkontiene.
+Produktnavnet og beskrivelsen er de lesbare identifikatorene til et produkt, og de kan brukes på mange språk. Supply Chain Management-klienten vises som standard all produktinformasjon på standardspråket for firmaet, og ikke på brukerens foretrukne språk. Oversatte produktnavn og beskrivelser brukes imidlertid i all kommunikasjon med kunder og leverandører. Oversettelsene er basert på språkkoden for kunde- og leverandørkontiene.
 
 For produktvarianter kan produktnavnet genereres via en produktterminologimal. Det ikke nødvendig at produktnavnet er unikt, og derfor kan det hende flere varer har samme navn.
 
 ## <a name="product-and-item-search-names"></a>Produkt- og varesøknavn
 
-Finance and Operations har et sekundært søkenavn for produkter og også for varer (frigitte produkter). Dette søkenavnet trenger ikke være unikt, og det kan endres etter at et produkt eller produktvarianten opprettes. Det anbefales at du bruker et søkenavn til å søke etter produkter etter kategorier. Søkenavnene aktiverer hurtigsøk, spesielt i salgs- og innkjøpsprosesser.
+Supply Chain Management har et sekundært søkenavn for produkter og også for varer (frigitte produkter). Dette søkenavnet trenger ikke være unikt, og det kan endres etter at et produkt eller produktvarianten opprettes. Det anbefales at du bruker et søkenavn til å søke etter produkter etter kategorier. Søkenavnene aktiverer hurtigsøk, spesielt i salgs- og innkjøpsprosesser.
 
 Søkenavnet kan også inneholde en ID for kunde- eller leverandørprodukt eller en ID for et annet eksternt produkt, hvis denne ID-en er det primære søkekriteriet for et produkt.
 
 ## <a name="external-product-identifiers-customer-and-vendor-identifiers"></a>ID-er for eksternt produkt (ID-er for kunde og leverandør)
 
-For frigitte produkter kan du opprettholde varenumrene, varenavnene og varebeskrivelsene som kunden eller leverandøren bruker. Referansene vises på eksterne dokumenter, for eksempel salgsordrer, bestillinger, følgesedler og fakturaer. I den gjeldende versjonen av Finance and Operations blir ikke eksterne referanser vist på kjernedriftssidene. Det eneste unntaket er leverandørens varenummer. Dette nummeret vises i dialogboksen **Produktinformasjon** hvis det er definert en standardleverandør for det frigitte produktet.
+For frigitte produkter kan du opprettholde varenumrene, varenavnene og varebeskrivelsene som kunden eller leverandøren bruker. Referansene vises på eksterne dokumenter, for eksempel salgsordrer, bestillinger, følgesedler og fakturaer. I den gjeldende versjonen av Supply Chain Management blir ikke eksterne referanser vist på kjernedriftssidene. Det eneste unntaket er leverandørens varenummer. Dette nummeret vises i dialogboksen **Produktinformasjon** hvis det er definert en standardleverandør for det frigitte produktet.
 
 Du kan vedlikeholde ID-ene for eksternt produkt basert på frigitt produkt, frigitt produktvariant, kunde eller kundegruppe eller leverandør eller leverandørgruppe.
 
@@ -77,7 +77,7 @@ På siden **Frigitte produkter** gjør du ett av følgende.
 - For kunder velger du **Ekstern varebeskrivelse** i gruppen **Beslektet informasjon** i fanen **Salg**.
 - For leverandører velger du **Ekstern varebeskrivelse** i gruppen **Beslektet informasjon** i fanen **Kjøp**.
 
-På siden **Eksterne varebeskrivelser** kan du knytte kundens eller leverandørens varenummer til et frigitt produkt. Denne tilknytningen må gjøres for hver juridiske enhet. Informasjonen nedenfor kan lagres. Etikettene er dessverre litt villedende i den gjeldende versjonen av Finance and Operations. Disse etikettene kan imidlertid endres i en fremtidig versjon.
+På siden **Eksterne varebeskrivelser** kan du knytte kundens eller leverandørens varenummer til et frigitt produkt. Denne tilknytningen må gjøres for hver juridiske enhet. Informasjonen nedenfor kan lagres. Etikettene er dessverre litt villedende i den gjeldende versjonen av Supply Chain Management. Disse etikettene kan imidlertid endres i en fremtidig versjon.
 
 | Felt | Tilsvarende kundeinformasjon | Tilsvarende leverandørinformasjon |
 |-------|------------------------------------|----------------------------------|
@@ -104,15 +104,15 @@ Hvis du vil vedlikeholde strekkoder, velger du **Strekkoder** i gruppen **Lager*
 
 I e-handel er det viktig at alle parter snakker felles språk og refererer til produkter ved hjelp av et felles sett med identifikatorer. Derfor er noen bransjer avhengige av [GTIN](https://www.gs1.org/id-keys/gtin), som er et globalt varenummersystem som styres av GS1.
 
-I Finance and Operations anbefales det at du vedlikeholder GTIN som en strekkode. Du kan imidlertid også vedlikeholde den på siden **Vare – GTIN**. Hvis du vil åpne denne siden, velger du **GTIN-koder** i gruppen **Lager** i fanen **Administrer lager** på siden **Frigitte produkter**. Legg merke til at GTIN ikke vedlikeholdes som et globalt nummer. I stedet vedlikeholdes det basert på juridisk enhet.
+Vi anbefaler at du vedlikeholder GTIN som en strekkode. Du kan imidlertid også vedlikeholde den på siden **Vare – GTIN**. Hvis du vil åpne denne siden, velger du **GTIN-koder** i gruppen **Lager** i fanen **Administrer lager** på siden **Frigitte produkter**. Legg merke til at GTIN ikke vedlikeholdes som et globalt nummer. I stedet vedlikeholdes det basert på juridisk enhet.
 
-I Finance and Operations kan du definere varianter av emballasjen i lageroperasjonene ved å definere bestemte måleenheter. En vare kan for eksempel lagres i deler, i pakker på seks, i brett på 18 eller i hele paller. En bestemt måleenhet defineres for hver av disse emballasjevariantene. GTIN er vanligvis relatert til emballasjeenheten for et produkt, og derfor kan du vedlikeholde flere GTIN-koder per produkt og enhet på siden **Vare – GTIN**. Du kan imidlertid bruke den samme GTIN-koden mer enn én gang for ulike varer eller produktvarianter for en juridisk enhet.
+I Supply Chain Management kan du definere varianter av emballasjen i lageroperasjonene ved å definere bestemte måleenheter. En vare kan for eksempel lagres i deler, i pakker på seks, i brett på 18 eller i hele paller. En bestemt måleenhet defineres for hver av disse emballasjevariantene. GTIN er vanligvis relatert til emballasjeenheten for et produkt, og derfor kan du vedlikeholde flere GTIN-koder per produkt og enhet på siden **Vare – GTIN**. Du kan imidlertid bruke den samme GTIN-koden mer enn én gang for ulike varer eller produktvarianter for en juridisk enhet.
 
 Hvis du vil vedlikeholde **GTIN-koder**, velger du **GTIN** i gruppen **Lager** i fanen **Administrer lager** på siden **Frigitte produkter**.
 
 ## <a name="external-codes"></a>Eksterne koder
 
-Eksterne koder kan defineres for mange enheter i Finance and Operations. Du kan for eksempel definere eksterne koder som identifiserer produkter og frigitte produkter. Disse eksterne kodene kan brukes til å knytte statistiske koder eller mva-koder til frigitte produkter og varianter av frigitte produkter. Eksterne koder defineres av juridisk enhet og kodetype. De må være unike basert på juridisk enhet, kodetype og tabellreferanse.
+Eksterne koder kan defineres for mange enheter. Du kan for eksempel definere eksterne koder som identifiserer produkter og frigitte produkter. Disse eksterne kodene kan brukes til å knytte statistiske koder eller mva-koder til frigitte produkter og varianter av frigitte produkter. Eksterne koder defineres av juridisk enhet og kodetype. De må være unike basert på juridisk enhet, kodetype og tabellreferanse.
 
 Det finnes dessverre ingen standardfunksjonalitet som lar deg søke etter produkter etter eksterne koder.
 
@@ -136,13 +136,13 @@ Det finnes dessverre ingen standardfunksjonalitet som lar deg søke etter produk
 
 ### <a name="product-and-item-number-sequences"></a>Nummerserier for produkt og vare
 
-Du kan definere to ulike nummerserier i Finance and Operations:
+Du kan definere to ulike nummerserier:
 
 - Nummerseriene for **Produktnummer** for det globale produktnummeret
 - Nummerserien **Varenummer** for varenummeret per juridiske enhet
 
 > [!NOTE]
-> Du må bruke varenummeret som en egen identifikator bare når du overfører andre juridiske enheter fra forskjellige kilder med ulike tallsystemer. Du bør alltid bruke en produkt-ID som er unik på tvers av alle juridiske enheter. Derfor bør du sette alternativet **Manuell** til **Ja** for nummerserien **Varenummer**. På denne måten følger varenummeret produktnummeret ved oppretting. Hvis Finance and Operations ikke er det ledende systemet for nye produktnumre, bør du sette alternativet **Manuell** til **Ja** for både nummerserien **Varenummer** og **Produktnummer**.
+> Du må bruke varenummeret som en egen identifikator bare når du overfører andre juridiske enheter fra forskjellige kilder med ulike tallsystemer. Du bør alltid bruke en produkt-ID som er unik på tvers av alle juridiske enheter. Derfor bør du sette alternativet **Manuell** til **Ja** for nummerserien **Varenummer**. På denne måten følger varenummeret produktnummeret ved oppretting. Hvis Supply Chain Management ikke er det ledende systemet for nye produktnumre, bør du sette alternativet **Manuell** til **Ja** for både nummerserien **Varenummer** og **Produktnummer**.
 
 Når du bruker enheten **Frigitt produkt V2** til å opprette produkter, kan flere innstillinger påvirke hvordan nummerseriene brukes til å opprette produktnummeret og varenummeretet:
 

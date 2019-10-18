@@ -1,9 +1,9 @@
 ---
 title: Legge til en kontroll for anbefalinger på transaksjonsskjermen på salgsstedsenheter
 description: Dette emnet beskriver hvordan du legger til en kontroll for anbefalinger på transaksjonsskjermbildet på en salgsstedsenhet ved hjelp av utforming av skjermoppsett i Microsoft Dynamics 365 for Retail.
-author: ashishmsft
+author: bebeale
 manager: AnnBe
-ms.date: 02/05/2018
+ms.date: 10/01/19
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -19,23 +19,22 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: f17da3db6fbc19548544a0c6c090a0b6db093673
-ms.sourcegitcommit: e2fb0846fcc6298050a0ec82c302e5eb5254e0b5
+ms.openlocfilehash: d646c8ba559ba3e8d2175911e76c57d25eff02ca
+ms.sourcegitcommit: 5b53bdafa5cb9a1279576bfece0452a50383b122
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/27/2019
-ms.locfileid: "1606855"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "2278135"
 ---
 # <a name="add-a-recommendations-control-to-the-transaction-screen-on-pos-devices"></a>Legge til en kontroll for anbefalinger på transaksjonsskjermen på salgsstedsenheter
 
 [!include [banner](includes/banner.md)]
 
-> [!NOTE]
-> Vi fjerner gjeldende versjon av produktanbefalingstjenesten fordi vi utformer denne funksjonen på nytt med en bedre algoritme og nyere detaljhandelsorienterte funksjoner. Hvis du vil ha mer informasjon, kan du se [Fjernede eller avskrevne funksjoner](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/migration-upgrade/deprecated-features).
 
-Dette emnet beskriver hvordan du legger til en kontroll for anbefalinger på transaksjonsskjermbildet på en salgsstedsenhet ved hjelp av utforming av skjermoppsett i Microsoft Dynamics 365 for Retail.
+Dette emnet beskriver hvordan du legger til en kontroll for anbefalinger på transaksjonsskjermbildet på en salgsstedsenhet ved hjelp av utforming av skjermoppsett i Microsoft Dynamics 365 Retail. Hvis du vil ha mer informasjon om produktanbefalinger, kan du lese [produktanbefalingene i POS-dokumentasjonen.](product.md)
 
-Du kan vise produktanbefalingene på salgsstedsenheten når du bruker Microsoft Dynamics 365 for Retail. *Anbefalinger* er varer som kunden kan være interessert i basert på kjøpshistorikken, varer i ønskelisten og varer som andre kunder har kjøpt på nettet og i fysiske butikker. Hvis du vil vise produktanbefalinger, må du legge til en kontroll på transaksjonsskjermen med utforming av skjermoppsett.
+
+Du kan vise produktanbefalingene på salgsstedsenheten når du bruker Microsoft Dynamics 365 Retail. Hvis du vil vise produktanbefalinger, må du legge til en kontroll på transaksjonsskjermen med utforming av skjermoppsett. 
 
 ## <a name="open-layout-designer"></a>Åpne utforming av oppsett
 
@@ -45,6 +44,7 @@ Du kan vise produktanbefalingene på salgsstedsenheten når du bruker Microsoft 
 4. Klikk **Utforming av oppsett**.
 5. Følg instruksjonene for å starte utforming av oppsett. Når du blir spurt etter legitimasjon, angir du den samme legitimasjonen som var i bruk da utforming av oppsett ble startet fra siden **Skjermoppsett**.
 6. Når du logger deg på, vises det en side som ligner den nedenfor. Oppsettet vil være forskjellige avhengig av tilpasninger som er gjort for din butikk.
+
 
     [![Utforming av oppsett](./media/screenlayout-pic-1.png)](./media/screenlayout-pic-1.png)
 
@@ -57,7 +57,9 @@ Det finnes to tilgjengelige konfigurasjonsalternativer. Velg alternativet som pa
 
 ### <a name="make-recommendations-always-visible"></a>Gjøre anbefalinger alltid synlige
 
+
 1. Reduser høyden på detaljområdet for transaksjonslinjer slik at det er samme høyde som kundepanelet til venstre.
+
 
     [![Høyde på detaljområdet for transaksjonslinjer er redusert](./media/screenlayout-pic-2.png)](./media/screenlayout-pic-2.png)
 
@@ -65,15 +67,18 @@ Det finnes to tilgjengelige konfigurasjonsalternativer. Velg alternativet som pa
 
     [![Anbefalingskontroll er lagt til i oppsettet](./media/screenlayout-pic-3.png)](./media/screenlayout-pic-3.png)
 
+
 3. Klikk **X** for å lagre og avslutte utforming av oppsett.
 4. Gå til **Detaljhandel** &gt; **IT for detaljhandel** &gt; **Distribusjonsplaner** i Dynamics 365 for Retail.
-5. Velg  **1090, Kasser** i listen.
+5. Velg **1090, Kasser** i listen.
 6. Klikk **Kjør nå**.
+
 
 ### <a name="add-a-recommendations-tab-to-the-button-grid-on-the-right-side-of-the-screen"></a>Legge til kategorien Anbefalinger i knappegruppen på høyre side av skjermen
 
 1. Høyreklikk i det tomme området under den siste kategorien i knappegruppen plassert på høyre side av siden.
-2. Klikk på **Tilpass**.
+
+2. Klikk på **Tilpass**.
 
     [![Tilpasning – Kategorikontroll-dialogboks](./media/pic-5.png)](./media/pic-5.png)
 
@@ -85,12 +90,14 @@ Det finnes to tilgjengelige konfigurasjonsalternativer. Velg alternativet som pa
 
 6. I **Etikett**-feltet, skriv inn et navn for anbefalingsfanen. For eksempel, skriv «Anbefalte produkter».
 7. I **Bilde**-feltet velger du bildet som skal vises i kategorien.
-8. Klikk **OK**. Den nye kategorien vises i knappegruppen.
+8. Klikk **OK**. Den nye kategorien vises i knappegruppen.
 9. Klikk **X** for å lagre og avslutte utforming av oppsett.
 10. Gå til **Detaljhandel** &gt; **IT for detaljhandel** &gt; **Distribusjonsplaner** i Dynamics 365 for Retail.
-11. Velg  **1090, Kasser** i listen.
+11. Velg **1090, Kasser** i listen.
 12. Klikk **Kjør nå**.
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 
-[Oversikt over personlige produktanbefalinger](personalized-product-recommendations.md)
+[produktanbefalinger på salgssted](product.md)
+
+[oversikt over produktanbefalinger](../commerce/product-recommendations.md)

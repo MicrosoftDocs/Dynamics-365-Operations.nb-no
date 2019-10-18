@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2b6555086d6c86c17b501af9d4d8155e9c08a447
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 14b0661c4c1fa8f2bc197a8a3983b71d73199b2a
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1536555"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2251552"
 ---
 # <a name="set-up-mobile-devices-for-warehouse-work"></a>Definere mobilenheter for lagerarbeid
 
@@ -163,7 +163,7 @@ Du kan definere et menyelement som oppretter arbeid for en annen arbeider etter 
 </tr>
 <tr>
 <td>Flytting etter mal</td>
-<td>Flytt varer fra én lokasjon til en annen på en delvis automatisert måte. Arbeideren velger lokasjonen som varer skal flyttes fra, og Finance and Operations bruker lokasjonsdirektivet til å avgjøre hvor varene skal flyttes.</td>
+<td>Flytt varer fra én lokasjon til en annen på en delvis automatisert måte. Arbeideren velger lokasjonen som varer skal flyttes fra, og systemet bruker lokasjonsdirektivet til å avgjøre hvor varene skal flyttes.</td>
 </tr>
 <tr>
 <td>Lageroverføring</td>
@@ -212,7 +212,7 @@ I tillegg til å definere menyelementer for å opprette lagerarbeid, kan du defi
 </tr>
 <tr class="even">
 <td>Systemstyrt</td>
-<td>Microsoft Dynamics 365 for Finance and Operations kontrollerer hvilken type arbeid som er tilordnet til en arbeider og rekkefølgen som arbeideren utfører arbeid i. Når du velger dette alternativet, kan du klikke <strong>Systemstyrt arbeid</strong> i handlingsruten for å åpne siden <strong>Systemstyrt sorteringsrekkefølge</strong>, der du kan definere sorteringskriterier for arbeidet. Sorteringskriteriene bestemmer i hvilken rekkefølge arbeideren vil utføre arbeidet. Du kan legge til så mange kriterier du vil.</td>
+<td>Supply Chain Management kontrollerer hvilken type arbeid som er tilordnet til en arbeider og rekkefølgen som arbeideren utfører arbeid i. Når du velger dette alternativet, kan du klikke <strong>Systemstyrt arbeid</strong> i handlingsruten for å åpne siden <strong>Systemstyrt sorteringsrekkefølge</strong>, der du kan definere sorteringskriterier for arbeidet. Sorteringskriteriene bestemmer i hvilken rekkefølge arbeideren vil utføre arbeidet. Du kan legge til så mange kriterier du vil.</td>
 </tr>
 <tr class="odd">
 <td>Brukerstyrt</td>
@@ -224,7 +224,7 @@ I tillegg til å definere menyelementer for å opprette lagerarbeid, kan du defi
 </tr>
 <tr class="odd">
 <td>Systemgruppering</td>
-<td>Microsoft Dynamics 365 for Finance and Operations-grupper arbeider for arbeideren basert på et angitt felt. Plukkarbeid for eksempel, grupperes når en arbeider skanner en forsendelses-ID, last-ID eller alle verdier som kan koble hver arbeidsenhet. Hvis du velger dette alternativet, er følgende felt obligatoriske:
+<td>Supply Chain Management-grupper arbeider for arbeideren basert på et angitt felt. Plukkarbeid for eksempel, grupperes når en arbeider skanner en forsendelses-ID, last-ID eller alle verdier som kan koble hver arbeidsenhet. Hvis du velger dette alternativet, er følgende felt obligatoriske:
 <ul>
 <li><strong>Systemgrupperingsfelt</strong> – Velg feltet som arbeideren skanner for å gruppere arbeidet.</li>
 <li><strong>Systemgrupperingsetikett</strong> – Skriv inn tekst for å informere arbeideren om hva som må skannes for å gruppere arbeidet.</li>
@@ -245,7 +245,7 @@ Dette alternativet er for eksempel nyttig når flere paller klargjøres for en l
 </tr>
 <tr class="even">
 <td>Gruppering av syklustelling</td>
-<td>Arbeideren velger en sone, arbeidspulje eller plassering, og Microsoft Dynamics 365 for Finance and Operations tilordner arbeid som er basert på valget. Hvis du velger dette alternativet, kan du klikke <strong>Syklustelling</strong> i handlingsruten for å angi tilleggsinformasjon du vil vise, og du kan også angi hvor mange ganger arbeideren må gjenta tellingen hvis det finnes en differanse.</td>
+<td>Arbeideren velger en sone, arbeidspulje eller plassering, og Supply Chain Management tilordner arbeid som er basert på valget. Hvis du velger dette alternativet, kan du klikke <strong>Syklustelling</strong> i handlingsruten for å angi tilleggsinformasjon du vil vise, og du kan også angi hvor mange ganger arbeideren må gjenta tellingen hvis det finnes en differanse.</td>
 </tr>
  <tr class="odd">
 <td>Transportlasting</td>
@@ -333,7 +333,7 @@ Tabellen nedenfor beskriver disse alternativene.
 </tr>
 <tr class="odd">
 <td>Gruppe plassert</td>
-<td>Velg dette alternativet for å gruppere plasseringsarbeidet. Dette alternativet er tilgjengelig når arbeidet ble gruppert av arbeideren eller av Microsoft Dynamics 365 for Finance and Operations. Når arbeideren er ferdig med alt plukkarbeidet i gruppen, opprettes plasseringsarbeid for den samme gruppen.</td>
+<td>Velg dette alternativet for å gruppere plasseringsarbeidet. Dette alternativet er tilgjengelig når arbeidet ble gruppert av arbeideren eller av Supply Chain Management. Når arbeideren er ferdig med alt plukkarbeidet i gruppen, opprettes plasseringsarbeid for den samme gruppen.</td>
 </tr>
 <tr class="even">
 <td>Lagerjusteringstyper</td>
@@ -366,11 +366,11 @@ Tabellen nedenfor beskriver disse alternativene.
 </tr>
 <tr class="even">
 <td>Systemgrupperingsfelt</td>
-<td>Velg feltet som bestemmer hvordan Microsoft Dynamics 365 for Finance and Operations grupperer plukkarbeid for arbeidere. Hvis du for eksempel felger <strong>ShipmentId</strong>-feltet vil arbeideren skanne forsendelses-IDen for å gruppere plukkarbeidet. Alt arbeid for forsendelsen tilordnes deretter til arbeideren. Dette feltet krever at du oppretter et menyelement for å bruke eksisterende arbeid som er gruppert av systemet. Du må også skrive inn tekst i feltet <strong>Systemgrupperingsetikett</strong> for å informere arbeideren om hva som må skannes.</td>
+<td>Velg feltet som bestemmer hvordan Supply Chain Management grupperer plukkarbeid for arbeidere. Hvis du for eksempel felger <strong>ShipmentId</strong>-feltet vil arbeideren skanne forsendelses-IDen for å gruppere plukkarbeidet. Alt arbeid for forsendelsen tilordnes deretter til arbeideren. Dette feltet krever at du oppretter et menyelement for å bruke eksisterende arbeid som er gruppert av systemet. Du må også skrive inn tekst i feltet <strong>Systemgrupperingsetikett</strong> for å informere arbeideren om hva som må skannes.</td>
 </tr>
 <tr class="odd">
 <td>Systemgrupperingsetikett</td>
-<td>Angi teksten som vil informere arbeideren om hva som skal skannes når plukkarbeid grupperes av Microsoft Dynamics 365 for Finance and Operations. Hvis du for eksempel bruker <strong>ShipmentId</strong>-feltet til å gruppere plukkarbeid etter forsendelse, kan du angi <strong>Forsendelses-ID</strong> i feltet. Dette feltet krever at du oppretter et menyelement for å bruke eksisterende arbeid som er gruppert av systemet. Du må også velge feltet du vil gruppere etter i <strong>Systemgrupperingsfelt</strong>-feltet.</td>
+<td>Angi teksten som vil informere arbeideren om hva som skal skannes når plukkarbeid grupperes av Supply Chain Management. Hvis du for eksempel bruker <strong>ShipmentId</strong>-feltet til å gruppere plukkarbeid etter forsendelse, kan du angi <strong>Forsendelses-ID</strong> i feltet. Dette feltet krever at du oppretter et menyelement for å bruke eksisterende arbeid som er gruppert av systemet. Du må også velge feltet du vil gruppere etter i <strong>Systemgrupperingsfelt</strong>-feltet.</td>
 </tr>
 <tr class="even">
 <td>Bruk standarddata</td>
@@ -386,13 +386,13 @@ Tabellen nedenfor beskriver disse alternativene.
 </tr>
 <tr class="odd">
 <td>Arbeidsmalkode</td>
-<td>Velg arbeidsmalen som oppretter arbeidet for en prosess. Hvis du for eksempel mottar en vare for en bestilling, blir plasseringsarbeidet generert basert på arbeidsmalen. Hvis du ikke velger en arbeidsmal, tilordner Microsoft Dynamics 365 for Finance and Operations en mal basert på spørringskriterier. Hvis du vil ha mer informasjon om arbeidsmaler, kan du se <a href="control-warehouse-location-directives.md">Kontrollere lagerarbeid ved hjelp av arbeidsmaler og lokasjonsdirektiver</a>.</td>
+<td>Velg arbeidsmalen som oppretter arbeidet for en prosess. Hvis du for eksempel mottar en vare for en bestilling, blir plasseringsarbeidet generert basert på arbeidsmalen. Hvis du ikke velger en arbeidsmal, tilordner Supply Chain Management en mal basert på spørringskriterier. Hvis du vil ha mer informasjon om arbeidsmaler, kan du se <a href="control-warehouse-location-directives.md">Kontrollere lagerarbeid ved hjelp av arbeidsmaler og lokasjonsdirektiver</a>.</td>
 </tr>
 </tbody>
 </table>
 
 ## <a name="require-workers-to-confirm-the-product-location-or-quantity-when-they-pick-items"></a>Krev at arbeidere bekrefter produktet, lokasjonen eller antallet ved plukking av varer
-Du kan definere arbeidsbekreftelser som krever at en arbeider bruker en mobilenhet til å registrere lokasjonen eller antallet når det utføres arbeid på lageret. Arbeidsbekreftelser bidrar til å sikre at arbeideren er på riktig sted, eller behandler det riktige antallet varer. Du kan også få Microsoft Dynamics 365 for Finance and Operations til å bekrefte arbeiderens registrering automatisk. Hvis du aktiverer automatisk bekreftelse, kan du ikke også kreve bekreftelser for lokasjon eller antall. Arbeidsbekreftelser inneholder også produkter og produktvarianter. I tillegg kan du registrere bekreftelser ved å skanne en strekkode. Hvis du vil bekrefte produkter og produktvarianter, må du angi en ID for produktet eller produktvarianten. Denne IDen kan være en produkt-ID, produktsøk-ID, ekstern ID, GTIN eller strekkode. Når du har angitt ID-en eller skannet strekkoden, vises dimensjonene for produktvarianten på mobilenheten. 
+Du kan definere arbeidsbekreftelser som krever at en arbeider bruker en mobilenhet til å registrere lokasjonen eller antallet når det utføres arbeid på lageret. Arbeidsbekreftelser bidrar til å sikre at arbeideren er på riktig sted, eller behandler det riktige antallet varer. Du kan også få Supply Chain Management til å bekrefte arbeiderens registrering automatisk. Hvis du aktiverer automatisk bekreftelse, kan du ikke også kreve bekreftelser for lokasjon eller antall. Arbeidsbekreftelser inneholder også produkter og produktvarianter. I tillegg kan du registrere bekreftelser ved å skanne en strekkode. Hvis du vil bekrefte produkter og produktvarianter, må du angi en ID for produktet eller produktvarianten. Denne IDen kan være en produkt-ID, produktsøk-ID, ekstern ID, GTIN eller strekkode. Når du har angitt ID-en eller skannet strekkoden, vises dimensjonene for produktvarianten på mobilenheten. 
 
 Tabellen nedenfor beskriver de ulike arbeidstypene som du kan bruke arbeidsbekreftelser med.
 

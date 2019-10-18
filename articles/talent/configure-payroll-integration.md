@@ -1,6 +1,6 @@
 ---
 title: Konfigurere lønnsintegreringen mellom Talent og Dayforce
-description: Dette emnet forklarer hvordan du konfigurerer integrasjonen mellom Microsoft Dynamics 365 for Talent og Ceridian Dayforce slik at du kan behandle en lønnskjøring.
+description: Dette emnet forklarer hvordan du konfigurerer integrasjonen mellom Microsoft Dynamics 365 Talent og Ceridian Dayforce slik at du kan behandle en lønnskjøring.
 author: andreabichsel
 manager: AnnBe
 ms.date: 06/24/2019
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: c26dfed9909b0dbd05fc18c206e5adc947feaef5
-ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
+ms.openlocfilehash: ec1d14cb14ab709dfc1bead4be0785904efcce4e
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "1742923"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2251045"
 ---
 # <a name="configure-the-payroll-integration-between-talent-and-dayforce"></a>Konfigurere lønnsintegrering mellom Talent og Dayforce
 
 [!include [banner](includes/banner.md)]
 
-Integrasjonen mellom Microsoft Dynamics 365 for Talent og Ceridian Dayforce bruker flere konfigurasjonstrinn som er beskrevet i dette emnet. Du må konfigurere integreringen i både Talent og Dayforce før du kan behandle en lønnskjøring.
+Integrasjonen mellom Microsoft Dynamics 365 Talent og Ceridian Dayforce bruker flere konfigurasjonstrinn som er beskrevet i dette emnet. Du må konfigurere integreringen i både Talent og Dayforce før du kan behandle en lønnskjøring.
 
 Når du bruker en tjeneste som Dayforce til å fullføre lønnskjøringer, må du aktivere integrering i Talent. Integreringen krever bestemte data fra Talent. Derfor må du kontrollere at data som tilordnes til Dayforce, er konfigurert i Talent på en måte som støtter integreringen. Integrasjonen bruker følgende brede datakategorier:
 
@@ -39,7 +39,7 @@ Dette emnet beskriver trinnene du må følge for å aktivere integreringen. Den 
 
 ## <a name="enable-the-integration"></a>Aktivere integrasjonen
 
-I Talent må du aktivere integreringen og angi konfigurasjonsinformasjonen for å koble til Dayforce. Hvis du vil at økonomimodultransaksjonen som produseres, skal importeres til Microsoft Dynamics 365 for Finance and Operations, må du også definere en Microsoft Azure-lagringskonto og angi Azure Storage-tilkoblingsstrengen i Finance and Operations.
+I Talent må du aktivere integreringen og angi konfigurasjonsinformasjonen for å koble til Dayforce. Hvis du vil at økonomimodultransaksjonen som produseres, skal importeres til Microsoft Dynamics 365 Finance, må du også definere en Microsoft Azure-lagringskonto og angi Azure Storage-tilkoblingsstrengen i Finance.
 
 Følg denne fremgangsmåten for å aktivere integrasjonen i Talent.
 

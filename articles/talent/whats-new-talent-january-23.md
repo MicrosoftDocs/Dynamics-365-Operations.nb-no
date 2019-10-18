@@ -1,6 +1,6 @@
 ---
-title: Hva er nytt eller endret i Dynamics 365 for Talent Core HR (23. januar 2019)?
-description: Dette emnet beskriver funksjoner som enten er nye eller endret i Microsoft Dynamics 365 for Talent Core HR.
+title: Hva er nytt eller endret i Dynamics 365 Talent – Core HR (23. januar 2019)
+description: Dette emnet beskriver funksjoner som enten er nye eller endret i Microsoft Dynamics 365 Talent – Core HR.
 author: Darinkramer
 manager: AnnBe
 ms.date: 01/23/2019
@@ -18,14 +18,14 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-01-23
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 4e492095d5269ec81c0c22145b7af356937c256b
-ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
+ms.openlocfilehash: f1983d5a58fb2e6b1984727e1d7b44803b94cdce
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "1742522"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2023982"
 ---
-# <a name="whats-new-or-changed-in-dynamics-365-for-talent-core-hr-january-23-2019"></a>Hva er nytt eller endret i Dynamics 365 for Talent Core HR (23. januar 2019)?
+# <a name="whats-new-or-changed-in-dynamics-365-talent-core-hr-january-23-2019"></a>Hva er nytt eller endret i Dynamics 365 Talent: Core HR (23. januar 2019)
 
 [!include [banner](includes/banner.md)]
 
@@ -53,5 +53,5 @@ Når jobben endres for en stilling, vil jobbfeltene som standard settes til stil
 ### <a name="probation-period-and-calendar-are-not-displayed-for-future-hired-employees"></a>Prøveperiode og kalender vises ikke for fremtidige ansatte.
 Med denne endringen er det lagt til **Prøveperiode** og **Kalender** på siden **Behandle endringer** for å tillate dataregistrering for fremtidige og tidligere ansatte.
 
-### <a name="platform-update-23"></a>Plattform update 23
-Mindre feilrettinger er inkludert som en del av plattformoppdatering 23. Hvis du vil ha mer informasjon, se [Hva er nytt eller endret i Dynamics 365 for Finance and Operations plattformoppdatering 23 (januar 2019)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-23). 
+### <a name="platform-update-23-for-finance-and-operations"></a>Platform update 23 for Finance and Operations
+Mindre feilrettinger er inkludert som en del av plattformoppdatering 23 for Finance and Operations. Hvis du vil ha mer informasjon, se [Hva er nytt eller endret i Dynamics 365 Finance and Operations plattformoppdatering 23 (januar 2019)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-23). 

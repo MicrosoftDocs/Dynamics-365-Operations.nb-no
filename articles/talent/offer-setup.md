@@ -1,6 +1,6 @@
 ---
 title: Konfigurere tilbudsbehandling
-description: Dette emnet beskriver hvordan du setter opp tilbud i Talent.
+description: Dette emnet beskriver hvordan du setter opp tilbud i Microsoft Dynamics 365 Talent.
 author: andreabichsel
 manager: AnnBe
 ms.date: 02/04/2019
@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-10-18
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7fa0e5d30c06db16e105631e492af022acfcfd66
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 706766ba5133af03d00df99dba1c2a7b0405cd86
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1518735"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2010850"
 ---
 # <a name="set-up-offer-management"></a>Konfigurere tilbudsbehandling 
 
 [!include [banner](includes/banner.md)]
 
-Når en kandidat flyttes til tilbudstrinnet i Dynamics 365 for Talent: Attract, må du forsikre deg om at tilbudene kan opprettes raskt for kandidaten, godkjent etter behov, og sendes ut til kandidaten. Siden de fleste tilbud er standard, kan de opprettes fra maler som kan brukes på nytt. I Attract er alle tilbud samlet i en pakke for tilbudet, som er en samling av ett eller flere tilbudsdokumenter. 
+Når en kandidat flyttes til tilbudstrinnet i Dynamics 365 Talent: Attract, må du forsikre deg om at tilbudene kan opprettes raskt for kandidaten, godkjent etter behov, og sendes ut til kandidaten. Siden de fleste tilbud er standard, kan de opprettes fra maler som kan brukes på nytt. I Attract er alle tilbud samlet i en pakke for tilbudet, som er en samling av ett eller flere tilbudsdokumenter. 
 
 Dette emnet viser alle trinnene som Attract-administrator vil bruke for å definere ulike tilbudspakkemaler som en del av funksjonen for tilbudsadministrasjon i Attract. Brukere med roller som ikke er administrator, får ikke tilgang til disse funksjonene.
 

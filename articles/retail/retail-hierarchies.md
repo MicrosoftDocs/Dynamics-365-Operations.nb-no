@@ -1,6 +1,6 @@
 ---
 title: Detaljhandelhierarkier
-description: Denne artikkelen beskriver detaljhandelshierarkier i Microsoft Dynamics 365 for Retail.
+description: Denne artikkelen beskriver detaljhandelshierarkier i Dynamics 365 Retail.
 author: jblucher
 manager: AnnBe
 ms.date: 06/20/2017
@@ -19,18 +19,18 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 198c8da336f3e225c5d6da2eb02c86581dc9b4d6
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: cb383c5bc5ad5d641db6f30e915ea43ba5980005
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1568028"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2025083"
 ---
 # <a name="retail-hierarchies"></a>Detaljhandelhierarkier
 
 [!include [banner](includes/banner.md)]
 
-Denne artikkelen beskriver detaljhandelshierarkier i Microsoft Dynamics 365 for Retail.
+Denne artikkelen beskriver detaljhandelshierarkier i Dynamics 365 Retail.
 
 Du kan opprette et handelskategorihierarki for å organisere produktene du selger gjennom kanalene dine for detaljhandel. Du kan bruke detaljhandelshierarkier til å kategorisere eller gruppere produkter. Du kan deretter bruke disse produktene til å opprette produktsortimenter og fordelsprogrammer for kunden. Du kan også tilordne produktattributter og egenskaper, tilordne en prissettingsstruktur, ta med produktene i produktkampanjer og bruke produktene for rapportering. Du kan opprette ett handelskategorihierarki som representerer alle produkter og kategorier i organisasjonen og deretter bruke dette kategorihierarkiet til flere formål. Du kan alternativt opprette flere handelskategorihierarkier til spesielle formål, for eksempel produktkampanjer. Når du oppretter et detaljprodukthierarki, må du tilordne en kategorihierarkitype for å identifisere formålet med kategorihierarkiet. Det er for eksempel bare produkthierarkier som er tilordnet typen **Navigasjonshierarki for detaljhandel**, som refereres når du blar gjennom produkter etter kategori elektronisk eller på et salgssted.
 

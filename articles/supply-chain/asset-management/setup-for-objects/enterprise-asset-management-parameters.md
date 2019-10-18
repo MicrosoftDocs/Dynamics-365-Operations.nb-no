@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2e6a2d428e433256339fff07f3805449a2604213
-ms.sourcegitcommit: 747bcd25ce7c6c20ce9eaa0027e730f74d4fd6aa
+ms.openlocfilehash: 3336a3357578b25522e1ac457a48349f88b7318d
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "1783481"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2024574"
 ---
 # <a name="asset-management-parameters"></a>Parametere i Aktivastyring
 
@@ -33,7 +33,7 @@ ms.locfileid: "1783481"
 
 I Aktivastyring må generelle parametere knyttet til aktiva, arbeidsordrer og arbeidsordreplanlegging defineres. Dette emnet forklarer hvordan du definerer dem. Velg **Aktivastyring** > **Oppsett** > **Parametere i Aktivastyring** for å åpne skjemaet.
 
-Knappen **Veiviser for oppretting av data** kan brukes til å automatisk opprette oppsettsdata for test- eller demodata i en bedrift i Dynamics 365 for Finance and Operations. Se i hvitboken "Konfigurere testdata i Aktivastyring" hvis du vil ha informasjon om hvordan du bruker veiviseren.
+Knappen **Veiviser for oppretting av data** kan brukes til å automatisk opprette oppsettsdata for test- eller demodata i en bedrift i Dynamics 365 Supply Chain Management. Se i hvitboken "Konfigurere testdata i Aktivastyring" hvis du vil ha informasjon om hvordan du bruker veiviseren.
 
 **Aktiva**-kobling
 
@@ -57,7 +57,7 @@ Knappen **Veiviser for oppretting av data** kan brukes til å automatisk opprett
 - Velg "Ja" på veksleknappen **Kopier feil** hvis du vil kopiere feil som er registrert på arbeidsordrer til relaterte vedlikeholdsforespørsler automatisk.  
 - I **Nivå**-feltet definerer du arbeidsstedsnivået som settes inn automatisk i en arbeidsordre hvis alle relaterte arbeidsordrejobber refererer til samme arbeidssted. Hvis arbeidsordrejobbene ikke alle er knyttet til det samme arbeidsstedet på det definerte nivået, forblir feltet **Arbeidssted** tomt på arbeidsordren. Eksempel: Hvis du setter inn tallet "1" i dette feltet, er dette det øverste nivået i en arbeidsstedsdstruktur. Hvis du setter inn tallet "0" i dette feltet, har du ikke definert et bestemt arbeidsstedsnivå, bare at alle arbeidsordrejobber i en arbeidsordre må være knyttet til det samme arbeidsstedet for at arbeidsstedet skal legges til i arbeidsordren.  
 - Journaler som brukes ved postering av forbruk på en arbeidsordre, kan velges på hurtigfanen **Generelt** i feltene **Time**, **Vare** og **Utgift**.  
-- I feltet **Språkkilde for produkt** velger du hvilket språk som skal brukes for produktnavn i rapporter i Aktivastyring. Du kan velge språket som er definert for firmakontoen, eller språket som er angitt for brukeren som er logget på Dynamics 365 for Finance and Operations.  
+- I feltet **Språkkilde for produkt** velger du hvilket språk som skal brukes for produktnavn i rapporter i Aktivastyring. Du kan velge språket som er definert for firmakontoen, eller språket som er angitt for brukeren som er logget på.  
 - Velg "Ja" for veksleknappen **Oppdatering i sanntid** hvis du vil automatisk oppdatere endringer i jobbtypestandarder, vedlikeholdsplaner og vedlikeholdsrunder.
 > - Hvis du velger "Nei", blir endringer i jobbtypestandarder, vedlikeholdsplaner og vedlikeholdsrunder ikke oppdatert automatisk i Aktivastyring.t  
 > - Velg "Nei" på veksleknappen hvis du har store datamengder som synkroniseres, for eksempel mange ressurser eller arbeidssteder som er satt opp på vedlikeholdsplaner eller vedlikeholdsrunder, eller et stort antall vedlikeholdsplaner eller runder.  
@@ -75,7 +75,7 @@ Kobling for **planlegging av arbeidsordrer**
 - **Hovedplanen** gjelder ressurser i modulen **Organisasjonsadministrasjon**. Hvis du velger en hovedplan i dette feltet, vil du kunne se kapasitetsreservasjoner som er knyttet til arbeidsordrer i **Kapasitetsreservasjoner** (**Organisasjonsadministrasjon** > **Ressurser** > **Ressurser** > velg ressurs > **Ressurs**-kategorien > **Kapasitetsreservasjoner**-knappen). Hvis du lar dette feltet stå tomt, kan du se kapasitetsbelastningen relatert til arbeidsordrer i **Kapasitetsbelastning** (**Organisasjonsadministrasjon** \> **Ressurser** \> **Ressurser** \> velg ressurs \> **Ressurs**-kategorien \> **Kapasitetsbelastning**-knappen).  
 
 >[!NOTE]
->Valget angående bruk av en hovedplan eller ikke i modulen **Aktivastyring** og det tilknyttede skjemaet som brukes til å få en oversikt over kapasitetsreservasjoner eller kapasitetsbelastning, er standard Dynamics 365 for Finance and Operations-oppsett. Avhengig av oppsettet i feltet **Hovedplan** kan du få tilgang til kapasitetsinformasjon i **Kapasitetsreservasjoner** eller **Kapasitetsbelastning** i modulen **Organisasjonsstyring**. Det er ikke mulig å opprette et oppsett der kapasitetsreservasjoner vises i begge visningene.  
+>Valget angående bruk av en hovedplan eller ikke i modulen **Aktivastyring** og det tilknyttede skjemaet som brukes til å få en oversikt over kapasitetsreservasjoner eller kapasitetsbelastning, er standard oppsett. Avhengig av oppsettet i feltet **Hovedplan** kan du få tilgang til kapasitetsinformasjon i **Kapasitetsreservasjoner** eller **Kapasitetsbelastning** i modulen **Organisasjonsstyring**. Det er ikke mulig å opprette et oppsett der kapasitetsreservasjoner vises i begge visningene.  
 
 Feltene som er beskrevet i punktlisten nedenfor, er knyttet til beregnede vurderingsresultater, som brukes til å beregne arbeidsordreprioritet under planlegging av arbeidsordrer.
 

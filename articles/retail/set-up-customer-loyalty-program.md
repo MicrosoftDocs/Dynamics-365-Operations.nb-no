@@ -1,6 +1,6 @@
 ---
 title: Fordelsoversikt
-description: Dette emnet beskriver fordelsfunksjonene i Microsoft Dynamics 365 for Retail og de tilhørende oppsettrinnene som hjelper forhandleren med å komme i gang med sine fordelsprogrammer.
+description: Dette emnet beskriver fordelsfunksjonene i Dynamics 365 Retail og de tilhørende oppsettrinnene som hjelper forhandleren med å komme i gang med sine fordelsprogrammer.
 author: scott-tucker
 manager: AnnBe
 ms.date: 03/08/2019
@@ -19,18 +19,18 @@ ms.search.industry: Retail
 ms.author: scotttuc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 8c2a2347abddf03ed884dcfe68f645fde84c092a
-ms.sourcegitcommit: 9b4c3fff2f30006b7bb491ef6ffe89d41bcbfa11
+ms.openlocfilehash: 9fbb5d6db16e2e145c4970b5dd6417d9e99f78b2
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "1863778"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2250973"
 ---
 # <a name="loyalty-overview"></a>Fordelsoversikt
 
 [!include [banner](includes/banner.md)]
 
-Fordelsprogrammer kan hjelpe deg med å øke kundenes lojalitet gjennom å belønne kunder for deres interaksjon med forhandlerens merke. I Microsoft Dynamics 365 for Retail kan du definere enkle eller komplekse fordelsprogrammer som gjelder på tvers av juridiske enheter i enhver detaljhandelskanal. Dette emnet beskriver fordelsfunksjonene i Microsoft Dynamics 365 for Retail og de tilhørende oppsettrinnene som hjelper forhandleren med å komme i gang med sine fordelsprogrammer.
+Fordelsprogrammer kan hjelpe deg med å øke kundenes lojalitet gjennom å belønne kunder for deres interaksjon med forhandlerens merke. I Dynamics 365 Retail kan du definere enkle eller komplekse fordelsprogrammer som gjelder på tvers av juridiske enheter i enhver detaljhandelskanal. Dette emnet beskriver fordelsfunksjonene i Retail og de tilhørende oppsettrinnene som hjelper forhandleren med å komme i gang med sine fordelsprogrammer.
 
 Du kan definere fordelsprogrammet slik at det inneholder følgende alternativer:
 
@@ -42,7 +42,7 @@ Du kan definere fordelsprogrammet slik at det inneholder følgende alternativer:
 
 ## <a name="setting-up-loyalty-programs"></a>Konfigurering av fordelsprogrammer
 
-Du må definere flere komponenter for å aktivere fordelsfunksjonen i Dynamics 365 for Retail. Diagrammet nedenfor illustrerer fordelskomponentene og hvordan de er relatert til hverandre.
+Du må definere flere komponenter for å aktivere fordelsfunksjonen i Retail. Diagrammet nedenfor illustrerer fordelskomponentene og hvordan de er relatert til hverandre.
 
 ![Lojalitetsoppsett, prosessflyt](./media/loyaltyprocess.gif "Lojalitetskomponenter og hvordan de er relatert til hverandre")
 
@@ -69,9 +69,9 @@ Tabellen nedenfor beskriver prosessene som må kjøres for å sende fordelskonfi
 
 | Prosessnavn                         | Beskrivelse | Sidenavn |
 |--------------------------------------|-------------|-----------|
-| 1050 (fordelsinformasjon)           | Kjør denne prosessen for å sende fordelskonfigurasjonsdataene fra Dynamics 365 for Retail til detaljhandelbutikkene. Det er lurt å planlegge denne prosessen til å kjøres ofte, slik at fordelsdata sendes til alle butikker. | Distribusjonsplan |
+| 1050 (fordelsinformasjon)           | Kjør denne prosessen for å sende fordelskonfigurasjonsdataene fra Retail til detaljhandelbutikkene. Det er lurt å planlegge denne prosessen til å kjøres ofte, slik at fordelsdata sendes til alle butikker. | Distribusjonsplan |
 | Behandle fordelsplaner              | Kjør denne prosessen for å knytte fordelsplaner til detaljhandelskanalene som fordelsplanen er tilordnet til. Denne prosessen kan planlegges å kjøres som en satsvis prosess. Hvis du endrer fordelskonfigurasjonsdata, for eksempel fordelsplaner, fordelsprogrammer eller fordelspoeng, må du kjøre denne prosessen. | Behandle fordelsplaner |
-| Behandle frakoblede fordelstransaksjoner | Kjør denne prosessen for å oppdatere fordelskort til å ta med transaksjoner som ble behandlet frakoblet. Denne prosessen gjelder bare hvis det er merket av for **Opptjen frakoblet** på siden **Delte parametere for detaljhandel**, slik at belønninger kan opptjenes frakoblet. | Behandle frakoblede fordelstransaksjoner |
+| Poster opptjente fordelspoeng i satsvise jobber | Kjør denne prosessen for å oppdatere fordelskort til å ta med transaksjoner som ble behandlet frakoblet. Denne prosessen gjelder bare hvis det er merket av for **Poster opptjente poeng i satsvise jobber** på siden **Delte parametere for detaljhandel**, slik at belønninger kan opptjenes frakoblet. | Poster opptjente fordelspoeng i satsvise jobber |
 | Oppdater lag for fordelskort            | Kjør denne prosessen for å evaluere kundens opptjeningsaktivitet mot reglene for lag i et fordelsprogram, og oppdater kundens lagstatus. Denne prosessen kreves bare hvis du endrer lagreglene i fordelsprogrammer og du vil at de oppdaterte reglene skal brukes i ettertid for fordelskort som allerede er utstedt. Denne prosessen kan kjøres som en satsvis prosess eller for individuelle kort. | Oppdater lag for fordelskort |
 
 ## <a name="loyalty-enhancements"></a>Fordelsforbedringer
@@ -89,7 +89,7 @@ Retail har nye fordelsfunksjoner som en del av oktober 2018-utgivelsen. Hver av 
 
     ![Utelatte tilknytninger](./media/Excluded-affiliations.png "Utelate tilknytninger fra å tjene opp fordelspoeng")
     
-- Forhandlere kan generere fordelskortnumre i kanalene. Før oktober 2018-oppdateringen kunne forhandlerne bruke fysiske fordelskort eller generere et fordelskort ved hjelp av en unik kundeinformasjonen, for eksempel et telefonnummer. Hvis du vil aktivere den automatiske genereringen av fordelskort i detaljhandel, kan du slå på **Generer fordelskortnummer** i funksjonalitetsprofilen som er knyttet til butikken. For Internett-kanaler kan forhandlerne bruke API-en IssueLoyaltyCard til å utstede fordelskort til kunder. Forhandlere kan enten oppgi et fordelskortnummer til denne API-en, som skal brukes til å generere fordelskortet, eller systemet vil bruke fordelskortnummerserien i Dynamics 365 for Retail. Men hvis nummerserien ikke finnes, og forhandleren ikke oppgir et fordelskortnummer ved å kalle opp API-en, vises en feilmelding.
+- Forhandlere kan generere fordelskortnumre i kanalene. Før oktober 2018-oppdateringen kunne forhandlerne bruke fysiske fordelskort eller generere et fordelskort ved hjelp av en unik kundeinformasjonen, for eksempel et telefonnummer. Hvis du vil aktivere den automatiske genereringen av fordelskort i detaljhandel, kan du slå på **Generer fordelskortnummer** i funksjonalitetsprofilen som er knyttet til butikken. For Internett-kanaler kan forhandlerne bruke API-en IssueLoyaltyCard til å utstede fordelskort til kunder. Forhandlere kan enten oppgi et fordelskortnummer til denne API-en, som skal brukes til å generere fordelskortet, eller systemet vil bruke fordelskortnummerserien i Retail. Men hvis nummerserien ikke finnes, og forhandleren ikke oppgir et fordelskortnummer ved å kalle opp API-en, vises en feilmelding.
 
     ![Generer fordelskort](./media/Generate-loyalty-card.png "Generer fordelskortnummer automatisk")
 
@@ -137,7 +137,7 @@ Retail har nye fordelsfunksjoner som en del av oktober 2018-utgivelsen. Hver av 
     - Det ha skjedd en realisering av en aktivitet som skal belønnes.
     - Gi riktige poeng.
 
-    Det første trinnet er utenfor Microsoft Dynamics 365 for Retail, for eksempel tvitring om merket eller liking av merket på Facebook. Når denne aktiviteten er anerkjent, kan forhandlerne kalle den nevnte API-en for detaljhandelsserver og tildele loyalitetspoeng i sanntid. I slike tilfeller er det ikke nødvendig å utføre et kontrolltrinn, fordi en aktivitet har skjedd, og tilsvarende poeng bør tildeles. Det finnes imidlertid scenarioer der forhandleren vil gå gjennom postene før det tildeles poeng. Hvis forhandleren for eksempel har satt opp en workshop i butikken der kundene registrerer seg på nettstedet for e-handel eller i et annet hendelsesregistreringprogram. Bare de deltakende kundene bør imidlertid oppnå fordelspoeng. For slike scenarioer har vi introdusert en dataenhet, **Fordelslinjer og andre aktivitetstypelinjer i detaljhandel**, i 10.0-versjonen. Denne dataenheten gjør det mulig for forhandlerne å bruke rammeverket for dataimport/-eksport (DIXF) eller OData-API-en til å registrere aktivitetene som skal belønne kunder med fordelspoeng. Dataenheten lagrer aktivitetene i en journal som heter **Fordelslinjer for andre aktiviteter**, som kan brukes for gjennomgang og redigering. Etter at dataene er kontrollert, kan IT-brukeren postere aktivitetslinjene manuelt eller kjøre en jobb som heter **Behandle andre aktivitetstyper for fordelslinjer**, som vil postere alle ikke-posterte aktivitetslinjer og tildele poeng til kundene basert opptjeningsreglene. I scenarioet over vil hendelsesregistreringsprogrammet kalle opp OData-API-en for å sende kundeinformasjonen til Dynamics 365 for Retail. IT-brukeren kan imidlertid bare postere aktivitetslinjene for de kundene som har deltatt på en workshop, og slette aktivitetslinjene for de andre kundene. 
+    Det første trinnet er utenfor Retail, for eksempel tvitring om merket eller liking av merket på Facebook. Når denne aktiviteten er anerkjent, kan forhandlerne kalle den nevnte API-en for detaljhandelsserver og tildele loyalitetspoeng i sanntid. I slike tilfeller er det ikke nødvendig å utføre et kontrolltrinn, fordi en aktivitet har skjedd, og tilsvarende poeng bør tildeles. Det finnes imidlertid scenarioer der forhandleren vil gå gjennom postene før det tildeles poeng. Hvis forhandleren for eksempel har satt opp en workshop i butikken der kundene registrerer seg på nettstedet for e-handel eller i et annet hendelsesregistreringprogram. Bare de deltakende kundene bør imidlertid oppnå fordelspoeng. For slike scenarioer har vi introdusert en dataenhet, **Fordelslinjer og andre aktivitetstypelinjer i detaljhandel**, i 10.0-versjonen. Denne dataenheten gjør det mulig for forhandlerne å bruke rammeverket for dataimport/-eksport (DIXF) eller OData-API-en til å registrere aktivitetene som skal belønne kunder med fordelspoeng. Dataenheten lagrer aktivitetene i en journal som heter **Fordelslinjer for andre aktiviteter**, som kan brukes for gjennomgang og redigering. Etter at dataene er kontrollert, kan IT-brukeren postere aktivitetslinjene manuelt eller kjøre en jobb som heter **Behandle andre aktivitetstyper for fordelslinjer**, som vil postere alle ikke-posterte aktivitetslinjer og tildele poeng til kundene basert opptjeningsreglene. I scenarioet over vil hendelsesregistreringsprogrammet kalle opp OData-API-en for å sende kundeinformasjonen til Dynamics 365 Retail. IT-brukeren kan imidlertid bare postere aktivitetslinjene for de kundene som har deltatt på en workshop, og slette aktivitetslinjene for de andre kundene. 
 
     > [!NOTE]
     > For øyeblikket tvinger systemet brukere til å definere en nummerserie for "andre aktivitetstyper", men dette vil ikke være et obligatorisk trinn i fremtidige versjoner. Hvis du vil angi en nummerserie, kan du gå til **Delte parametere for detaljhandel** \> **Nummerserier** og velge en nummerserie for **Fordel annen aktivitetstype-ID**.

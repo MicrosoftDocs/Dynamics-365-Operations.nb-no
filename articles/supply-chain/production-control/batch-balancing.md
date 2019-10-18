@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 8.0.0
-ms.openlocfilehash: 63b986f9f3a1505dba4c2f64f872b9472e1aca87
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 46411052c7db25c3d1410c5280e8e856f0a40d3d
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1558625"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2250160"
 ---
 # <a name="batch-balancing"></a>Partibalansering
 
@@ -31,7 +31,7 @@ ms.locfileid: "1558625"
 
 Dette emnet beskriver hvordan prosessen for partibalansering støttes. 
 
-Se en [video om partibalansering i Microsoft Dynamics 365 for Finance and Operations](https://www.youtube.com/watch?v=4SNLWsU9KyI&feature=youtu.be).
+Hvis du vil ha mer informasjon, kan du se en [video om partibalansering](https://www.youtube.com/watch?v=4SNLWsU9KyI&feature=youtu.be).
 
 I prosessen for partiblansering blir antallet ingredienser som skal brukes i et produksjonsparti, beregnet ut fra konsentrasjonen av aktive ingrediensene i valgte produktpartier.
 

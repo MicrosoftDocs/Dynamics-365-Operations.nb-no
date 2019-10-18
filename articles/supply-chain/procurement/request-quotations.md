@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e2276f5296a77d620e0084c0247b1e25071fe029
-ms.sourcegitcommit: e286572ce94a9442a5b3076c3ff5b429be0ed512
+ms.openlocfilehash: bb5255236fc48132d4d68dc6f515f32e7ec71dae
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "1865286"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2248848"
 ---
 # <a name="requests-for-quotation-rfqs-overview"></a>Oversikt over tilbudsforespørsler (RFQ-er)
 
@@ -48,16 +48,13 @@ Du kan opprette en tilbudsforespørselssak fra planlagte bestillinger, fra en in
 
 Når du har klargjort tilbudsforespørselssaken og lagt til leverandører, velger du **Send** (**Send og publiser** for offentlig sektor) for tilbudsforespørselssaken. Det genereres en RFQ-journal for hver leverandør som du har sendt tilbudsforespørselen til. Du kan konfigurere utskriftsinnstillingene for sendingshandlingen for å skrive ut en rapport for hver leverandør til et arkiv eller sende en rapport til e-postadressen for hver leverandør. Tilbudsforespørselsjournalen for hver leverandør kan dessuten brukes til å generere en rapport som du kan sende eller sende på nytt til en leverandør senere. Du kan også konfigurere handlingen Send slik at den genererer et svarark som leverandøren kan fylle ut.
 
-Dette emnet dekker prosessen for å håndtere tilbudsforespørsler når leverandørsamarbeid ikke er brukt. Hvis systemet er definert for leverandørsamarbeid, kan leverandører legge inn bud direkte i Microsoft Dynamics 365 for Finance and Operations. Hvis du vil ha mer informasjon, kan du se [Leverandørsamarbeid med kunder](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/procurement/vendor-collaboration-work-customers-dynamics-365-operations) og [Leverandørsamarbeid med eksterne leverandører](vendor-collaboration-work-external-vendors.md).
+Dette emnet dekker prosessen for å håndtere tilbudsforespørsler når leverandørsamarbeid ikke er brukt. Hvis systemet er definert for leverandørsamarbeid, kan leverandører legge inn bud direkte i Supply Chain Management. Hvis du vil ha mer informasjon, kan du se [Leverandørsamarbeid med kunder](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/procurement/vendor-collaboration-work-customers-dynamics-365-operations) og [Leverandørsamarbeid med eksterne leverandører](vendor-collaboration-work-external-vendors.md).
 
 Hvis du må endre en tilbudsforespørsel etter at du har sendt den, kan du sende tilbudsforespørselen på nytt til leverandører når du er ferdig, ved hjelp av de to tilleggshandlingene: Opprett og Fullfør.+
 
 Når du mottar bud via e-post, kan du angi dem på siden **Tilbudsforespørsler**.
 
 Hvis en ny gjentakelse av et svar fra en leverndør er nødvendig, velger du **Retur** på siden **Tilbudsforespørsel**. Returhandlingen genererer en ny journal og en rapport som blir skrevet ut, arkivert, og sendt i henhold til utskriftsinnstillingene.
-
-> [!NOTE]
-> Navnet på siden **Tilbudsforespørsel** er endret. I tidligere versjoner av Dynamics 365 for Finance and Operations kalles denne siden **Svar på tilbudsforespørsel**.
 
 Hvis du har lagt til poengkriterier i tilbudsforespørselssaken, vil tilbudsforespørselsen ha et poengpanel der du kan gi poeng. De totale resultatene vises i tilbudsforespørselen når du sammenligner svarene på siden **Sammenlign svar**. På siden **Sammenlign svar** kan du også sammenligne andre svardata, for eksempel linjepris, leveringsdato og totalpris.
 
