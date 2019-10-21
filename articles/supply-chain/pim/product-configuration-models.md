@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d908b9e58da06646e07ddc5fc4d937cc1f1849cd
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 883337979201b3059b301b7aebf9952a70016989
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1563603"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2250628"
 ---
 # <a name="product-configuration-models-overview"></a>Oversikt over produktkonfigurasjonsmodeller
 
@@ -118,7 +118,7 @@ Hvis attributtypen er <strong>Boolsk</strong>, <strong>Heltall</strong> med et o
 </tr>
 </tbody>
 </table>
-En systemdefinert tabellbegrensning representerer en tilordning mellom et attributtype og et felt i en Finance and Operations-tabell. En systemdefinert tabellbegrensning kobler dynamisk attributtypen til feltet. Koblingen gjør det mulig for attributtet i en produktkonfigurasjonsmodell å gjenspeile dataene i feltet i Finance and Operations-tabellen.</td>
+En systemdefinert tabellbegrensning representerer en tilordning mellom et attributtype og et felt i en Finance and Operations-tabell. En systemdefinert tabellbegrensning kobler dynamisk attributtypen til feltet. Koblingen gjør det mulig for attributtet i en produktkonfigurasjonsmodell å gjenspeile dataene i feltet i Supply Chain Management-tabellen.</td>
 </tr>
 <tr class="odd">
 <td>Beregninger</td>

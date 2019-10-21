@@ -1,6 +1,6 @@
 ---
-title: Hva er nytt eller endret i Dynamics 365 for Talent Core HR (juli 2018)
-description: Dette emnet beskriver funksjoner som enten er nye eller endret i Microsoft Dynamics 365 for Talent Core HR.
+title: Hva er nytt eller endret i Dynamics 365 Talent – Core HR (juli 2018)
+description: Dette emnet beskriver funksjoner som enten er nye eller endret i Microsoft Dynamics 365 Talent – Core HR.
 author: andreabichsel
 manager: AnnBe
 ms.date: 07/31/2018
@@ -18,24 +18,24 @@ ms.search.region: Global
 ms.author: kherr
 ms.search.validFrom: 2018-07-31
 ms.dyn365.ops.version: Talent July 2018 update
-ms.openlocfilehash: c0867fcf6203c303a700723d8c190378f495dac0
-ms.sourcegitcommit: 1bf6a8b2f872394a4f242f9ff13c67e8e1ae8f65
+ms.openlocfilehash: ba06183f32e9a788432bae640d1997f2ffb127f1
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/03/2019
-ms.locfileid: "1856263"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2010228"
 ---
-# <a name="whats-new-or-changed-in-dynamics-365-for-talent-core-hr-july-2018"></a>Hva er nytt eller endret i Dynamics 365 for Talent Core HR (juli 2018)
+# <a name="whats-new-or-changed-in-dynamics-365-talent-core-hr-july-2018"></a>Hva er nytt eller endret i Dynamics 365 Talent: Core HR (juli 2018)
 
 [!include [banner](includes/banner.md)]
 
-Dette emnet beskriver funksjoner som enten er nye eller endret i Microsoft Dynamics 365 for Talent Core HR.
+Dette emnet beskriver funksjoner som enten er nye eller endret i Microsoft Dynamics 365 Talent: Core HR.
 
 ## <a name="powerapps-personalization"></a>PowerApps-tilpasning
 
-Microsoft Dynamics 365 for Talent støtter integrasjon med Microsoft PowerApps-tjenesten. Med PowerApps kan både utviklere og ikke-tekniske brukere lage egendefinerte forretningsprogrammer for mobilenheter, nettbrett og nettet uten å måtte skrive kode. Apper som du, organisasjonen din eller det videre økosystemet utvikler ved å bruke PowerApps, kan deretter bygges inn i Talent-klienten for å øke produktets funksjonalitet. Du kan for eksempel bygge en app som utfyller Talent med informasjon som hentes fra et annet system.
+Talent støtter integrasjon med Microsoft PowerApps-tjenesten. PowerApps lar både utviklere og ikke-tekniske brukere lage egendefinerte forretningsprogrammer for mobilenheter, nettbrett og nettet uten å måtte skrive kode. Apper som du, organisasjonen din eller det videre økosystemet utvikler ved å bruke PowerApps, kan deretter bygges inn i Talent-klienten for å øke produktets funksjonalitet. Du kan for eksempel bygge en app som utfyller Talent med informasjon som hentes fra et annet system.
 
-Hvis du vil ha mer informasjon, se [Bygge inn PowerApps-apper](../fin-and-ops/get-started/embed-power-apps.md).
+Hvis du vil ha mer informasjon, kan du se [Bygge inn PowerApps-apper](../fin-and-ops/get-started/embed-power-apps.md).
 
 ## <a name="ceridian-payroll-integration"></a>Ceridian-lønnsintegrasjon
 

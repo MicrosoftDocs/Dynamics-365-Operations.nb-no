@@ -1,6 +1,6 @@
 ---
-title: Redigere veiledninger og maler for jobbintroduksjon i Dynamics 365 for Talent - Onboard
-description: Dette emnet forklarer hvordan du legger til aktiviteter og annen informasjon i veiledninger og maler for jobbintroduksjon i Microsoft Dynamics 365 for Talent - Onboard.
+title: Redigere veiledninger og maler for jobbintroduksjon i Dynamics 365 Talent – Onboard
+description: Dette emnet forklarer hvordan du legger til aktiviteter og annen informasjon i veiledninger og maler for jobbintroduksjon i Microsoft Dynamics 365 Talent – Onboard.
 author: andreabichsel
 manager: ''
 ms.date: 06/19/2019
@@ -16,18 +16,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2019-06-19
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 68afc5d789d1f4af67cd2ec73eb0e073efad0761
-ms.sourcegitcommit: 4ff8c2c2f3705d8045df66f2c4393253e05b49ed
+ms.openlocfilehash: 7803c7cd2c58b8544d2c8dd711c295d6882f9fca
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "1864399"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2010804"
 ---
-# <a name="edit-onboarding-guides-and-templates-in-dynamics-365-for-talent-onboard"></a>Redigere veiledninger og maler for jobbintroduksjon i Dynamics 365 for Talent: Onboard
+# <a name="edit-onboarding-guides-and-templates"></a>Redigere veiledninger og maler for jobbintroduksjon
 
 [!include [banner](includes/banner.md)]
 
-Når du har opprettet en veiledning eller mal for jobbintroduksjon i Microsoft Dynamics 365 for Talent: Onboard, må du legge til en innledning, aktiviteter, kontakter og ressurser. I Onboard kan du ta med rikt innhold i jobbintroduksjonsveiledningene, inkludert:
+Når du har opprettet en veiledning eller mal for jobbintroduksjon i Microsoft Dynamics 365 Talent: Onboard, må du legge til en innledning, aktiviteter, kontakter og ressurser. I Onboard kan du ta med rikt innhold i jobbintroduksjonsveiledningene, inkludert:
 
 - YouTube-videoer
 - Microsoft Sway-presentasjoner
@@ -124,7 +124,7 @@ Slik overfører du endringene:
 
     - Hvis du vil legge til en YouTube-video, drar du **YouTube**-elementet til redigeringsområdet, skriver inn et navn og en beskrivelse for aktiviteten, og skriver inn URL-adressen for YouTube-videoen.
     - Hvis du vil legge til en Sway-presentasjon eller et nyhetsbrev, drar du **Sway**-elementet til redigeringsområdet, skriver inn et navn og en beskrivelse for aktiviteten og skriver inn den innebygde URL-adressen for Sway-presentasjonen eller -nyhetsbrevet.
-    - Hvis du vil legge til en PowerApps-app, drar du **PowerApps**-elementet til redigeringsområdet, skriver inn et navn og en beskrivelse for aktiviteten og velger enten PowerApps-appen eller angir PowerApps-app-ID-en.
+    - Hvis du vil legge til en PowerApps-app, drar du **PowerApps**-elementet til redigeringsområdet, skriver inn et navn og en beskrivelse for aktiviteten og velger PowerApps-appen eller angir ID-en for PowerApps-appen.
     - Hvis du vil legge til en Microsoft Stream-video, drar du **Microsoft Stream**-elementet til redigeringsområdet, skriver inn et navn og en beskrivelse for aktiviteten, og skriver inn URL-adressen for Microsoft Stream-videoen.
     - Hvis du vil legge til et Microsoft Forms-skjema, drar du **Microsoft Forms**-elementet til redigeringsområdet, skriver inn et navn og en beskrivelse for aktiviteten, skriver inn URL-adressen for Microsoft Forms-skjemaet og angir størrelsen på skjermområdet.
     - Hvis du vil legge til en iframe som inneholder webinnhold, drar du **Webinnhold (iframe)**-elementet til redigeringsområdet, skriver inn et navn og en beskrivelse for aktiviteten, skriver inn URL-adressen for webinnholdet og angir størrelsen på skjermområdet.

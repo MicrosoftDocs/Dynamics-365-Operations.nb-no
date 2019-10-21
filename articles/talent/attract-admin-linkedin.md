@@ -1,6 +1,6 @@
 ---
-title: Konfigurere integrering med LinkedIn for Microsoft Dynamics 365 for Talent - Attract
-description: Dette emnet forklarer hvordan du konfigurerer LinkedIn-integrering for Microsoft Dynamics 365 for Talent - Attract, slik at du enkelt kan legge inn jobber på LinkedIn fra Attract, og slik at rekrutterere kan synkronisere sin rekrutteringsinformasjon med en kandidats LinkedIn-profil.
+title: Konfigurere integrering med LinkedIn for Microsoft Dynamics 365 Talent – Attract
+description: Dette emnet forklarer hvordan du konfigurerer LinkedIn-integrering for Microsoft Dynamics 365 Talent – Attract, slik at du enkelt kan legge inn jobber på LinkedIn fra Attract, og slik at rekrutterere kan synkronisere sin rekrutteringsinformasjon med en kandidats LinkedIn-profil.
 author: andreabichsel
 manager: AnnBe
 ms.date: 07/08/2019
@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2019-07-08
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: 8e42ec7d0bb74089b4e915b5a30277401e694cf9
-ms.sourcegitcommit: c62756cb04549b2ff5de9b93d497e964a340335a
+ms.openlocfilehash: 6b86cafdf364f2de051f3d8ceab7413c2c13c3a5
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 07/17/2019
-ms.locfileid: "1756228"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2009976"
 ---
 # <a name="set-up-linkedin-integration"></a>Konfigurere LinkedIn-integrering
 
 [!include[banner](../includes/banner.md)]
 
-Hjelp rekrutterere og ansettelsesansvarlige med å tiltrekke topptalent ved å konfigurere LinkedIn-integrasjon med Microsoft Dynamics 365 for Talent: Attract. Attract lar deg legge inn jobber direkte på LinkedIn, det største profesjonelle online-nettverket.
+Hjelp rekrutterere og ansettelsesansvarlige med å tiltrekke topptalent ved å konfigurere LinkedIn-integrasjon med Microsoft Dynamics 365 Talent: Attract. Attract lar deg legge inn jobber direkte på LinkedIn, det største profesjonelle online-nettverket.
 
 Jobber som du legger ut på LinkedIn via Attract, er "Begrensede oppføringer" (Limited Listings) og leveres uten ekstra kostnad til din bedrift. Disse oppføringene er bare tilgjengelige gjennom LinkedIn-programvarepartnere som Attract. De vises ikke i **Karriere**-panelet på firmaets LinkedIn-side fordi der vises bare betalte oppføringer. Men de vises når potensielle kandidater viser alle tilgjengelige jobber. Begrensede oppføringer vises også i jobbsøk på LinkedIn.
 

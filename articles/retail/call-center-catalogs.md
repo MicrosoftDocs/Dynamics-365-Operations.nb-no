@@ -1,6 +1,6 @@
 ---
 title: Telefonsenterkataloger
-description: Dette emnet beskriver telefonsenterspesifikke funksjoner for kataloger i Microsoft Dynamics 365 for Retail.
+description: Dette emnet beskriver telefonsenterspesifikke funksjoner for kataloger i Dynamics 365 Retail.
 author: josaw1
 manager: AnnBe
 ms.date: 05/15/2018
@@ -19,24 +19,24 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 65c1c3070aa48bf7a2016534071693716fabe831
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 2ad50be1394daf5bffa6391d2f56340aad14120b
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1562747"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2023665"
 ---
 # <a name="call-center-catalogs"></a>Telefonsenterkataloger
 
 [!include [banner](includes/banner.md)]
 
-Dette emnet beskriver telefonsenterspesifikke funksjoner som er koblet til katalogegenskaper i Microsoft Dynamics 365 for Retail.
+Dette emnet beskriver telefonsenterspesifikke funksjoner som er koblet til katalogegenskaper i Dynamics 365 Retail.
 
-Katalogfunksjonene i Dynamics 365 for Retail kan brukes til flere formål. Opprinnelig ble funksjonene for katalog opprettet for å støtte integreringer med tredjeparts e-handel. Katalogoppsett tillatte selskaper å opprette en gruppering av produkter og attributter som kan publiseres eksternt for forbruk av en tredjeparts e-handelsløsning.
+Katalogfunksjonene i Retail kan brukes til flere formål. Opprinnelig ble funksjonene for katalog opprettet for å støtte integreringer med tredjeparts e-handel. Katalogoppsett tillatte selskaper å opprette en gruppering av produkter og attributter som kan publiseres eksternt for forbruk av en tredjeparts e-handelsløsning.
 
-Når telefonsenterkanalstøtte ble lagt til Dynamics 365 for Retail, ble katalogkonseptet utvidet for å legge til flere muligheter for å støtte og behandle funksjoner relatert til tradisjonelle markedsføringskataloger direkte til kunde. Et selskap som er direkte til kunde vil ofte få utskrevne kataloger, som sendes til én eller flere segmenter av kunder. Disse katalogene får vanligvis bestemt kampanjer eller vil bare tre i kraft hvis kunden oppgir en identifikasjonskode for katalog ved oppretting av tilbudene.
+Når telefonsenterkanalstøtte ble lagt til Retail, ble katalogkonseptet utvidet for å legge til flere muligheter for å støtte og behandle funksjoner relatert til tradisjonelle markedsføringskataloger direkte til kunde. Et selskap som er direkte til kunde vil ofte få utskrevne kataloger, som sendes til én eller flere segmenter av kunder. Disse katalogene får vanligvis bestemt kampanjer eller vil bare tre i kraft hvis kunden oppgir en identifikasjonskode for katalog ved oppretting av tilbudene.
 
-Direkte til kunde-markedsføringsfirmaer er svært fokuserte på å spore responsen på disse katalogene for å sikre at kostnadene for å produsere og e-poste dem svarer seg. Hvis du vil spore responsen, skrives vanligvis en kode på baksiden av katalogen, og denne koden blir deretter forespurt og brukes når katalogmottakeren ringer for å bestille via telefon (eller nå er det mer vanlig at koden angis når kunden har sendt en ordre online). Selv om det finnes ulike bransjevilkår som brukes til å identifisere denne katalogsporingskoden (inkludert nøkkelkode, promokode, katalogkode, kildekode), refererer vi til koden i Dynamics 365 for Retail som **kilde kode-ID**.
+Direkte til kunde-markedsføringsfirmaer er svært fokuserte på å spore responsen på disse katalogene for å sikre at kostnadene for å produsere og e-poste dem svarer seg. Hvis du vil spore responsen, skrives vanligvis en kode på baksiden av katalogen, og denne koden blir deretter forespurt og brukes når katalogmottakeren ringer for å bestille via telefon (eller nå er det mer vanlig at koden angis når kunden har sendt en ordre online). Selv om det finnes ulike bransjevilkår som brukes til å identifisere denne katalogsporingskoden (inkludert nøkkelkode, promokode, katalogkode, kildekode), refererer vi til koden i Retail som **kilde kode-ID**.
 
 ## <a name="basic-catalog-setup"></a>Grunnleggende katalogoppsett
 
@@ -92,7 +92,7 @@ Når du konfigurerer produktene i katalogen, kan du bruke **Produktsideoppsett**
 
 ## <a name="catalog-requests"></a>Katalogforespørsler
 
-Ettersom kataloger konfigureres og publiseres i Dynamics 365 for Retail, kan **Send katalog**-funksjonen brukes. Denne funksjonen er tilgjengelig på **Kundesøk**- og **Kundeservice**-sider. Når du har valgt en kundepost gjennom **Kundesøk** eller ved visning av en bestemt kundekonto fra **Kundestøtte**, kan brukere velge **Send katalog**-alternativet, som åpner en dialogboks som tillater brukeren å velge fra en liste over alle publiserte og aktive kataloger. Brukeren kan velge en katalog og et antall og en bestemt kildekode-ID for sending. Når de klikker på **Send**-knappen, lagres en forespørsel som deretter kan administreres ved å skrive ut **Katalogforespørsler**-rapporten. Denne rapporten finner du ved å gå til **Retail** \> **Telefonsenterrapporter** \> **Katalogforespørselsrapport**. Den viser alle katalogforespørsler, inkludert kundenavnet og -adressedetaljene til kunden som ba om katalogen. Denne rapporten kan brukes internt, eller dataene kan overføres til en tredjepart som støtter eksterne prosesser for fysisk sending av katalogen til kunden.
+Ettersom kataloger konfigureres og publiseres i Retail, kan **Send katalog**-funksjonen brukes. Denne funksjonen er tilgjengelig på **Kundesøk**- og **Kundeservice**-sider. Når du har valgt en kundepost gjennom **Kundesøk** eller ved visning av en bestemt kundekonto fra **Kundestøtte**, kan brukere velge **Send katalog**-alternativet, som åpner en dialogboks som tillater brukeren å velge fra en liste over alle publiserte og aktive kataloger. Brukeren kan velge en katalog og et antall og en bestemt kildekode-ID for sending. Når de klikker på **Send**-knappen, lagres en forespørsel som deretter kan administreres ved å skrive ut **Katalogforespørsler**-rapporten. Denne rapporten finner du ved å gå til **Retail** \> **Telefonsenterrapporter** \> **Katalogforespørselsrapport**. Den viser alle katalogforespørsler, inkludert kundenavnet og -adressedetaljene til kunden som ba om katalogen. Denne rapporten kan brukes internt, eller dataene kan overføres til en tredjepart som støtter eksterne prosesser for fysisk sending av katalogen til kunden.
 
 ## <a name="additional-features"></a>Tilleggsfunksjoner
 

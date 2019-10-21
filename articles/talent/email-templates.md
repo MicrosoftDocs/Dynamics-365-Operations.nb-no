@@ -1,6 +1,6 @@
 ---
 title: E-postmaler
-description: Dette emnet gir informasjon om e-postmaler som du kan opprette og bruke i Microsoft Dynamics 365 for Talent - Attract.
+description: Dette emnet gir informasjon om e-postmaler som du kan opprette og bruke i Microsoft Dynamics 365 Talent – Attract.
 author: andreabichsel
 manager: AnnBe
 ms.date: 10/19/2018
@@ -18,17 +18,17 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: 1c7c017cce26b6b250d899bba891d6823b40c282
-ms.sourcegitcommit: a6b32be10b6eb6340f8f68261bf62d0202c03dd1
+ms.openlocfilehash: 7174fd96e5ddc9ba5a91eb423d08afd1daa45f48
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 07/05/2019
-ms.locfileid: "1729732"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2008042"
 ---
 # <a name="email-templates"></a>E-postmaler
 [!include[banner](../includes/banner.md)]
 
-Ved hjelp av e-postmalbiblioteket kan administratorer opprette et enhetlig tema og varemerking for alle e-postmeldinger som sendes via Microsoft Dynamics 365 for Talent: Attract and Offer. Administratorer kan også kuratere en samling med e-postinnholdsmaler som andre brukere kan bruke. Ansettelsesgruppen kan bruke disse malene i arbeidsflyten til å sende e-postmeldinger mer effektivt. Noen e-postmeldinger er konfigurert til å bli sendt automatisk, og administratoren kan bruke e-postmalbiblioteket til å tilpasse innholdet for disse e-postene.
+Ved hjelp av e-postmalbiblioteket kan administratorer opprette et enhetlig tema og varemerking for alle e-postmeldinger som sendes via Microsoft Dynamics 365 Talent: Attract and Offer. Administratorer kan også kuratere en samling med e-postinnholdsmaler som andre brukere kan bruke. Ansettelsesgruppen kan bruke disse malene i arbeidsflyten til å sende e-postmeldinger mer effektivt. Noen e-postmeldinger er konfigurert til å bli sendt automatisk, og administratoren kan bruke e-postmalbiblioteket til å tilpasse innholdet for disse e-postene.
 
 > [!NOTE]
 > Hvis du vil bruke e-postmaler, må organisasjonen ha tillegget for omfattende ansettelse.

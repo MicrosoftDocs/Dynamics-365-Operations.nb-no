@@ -1,6 +1,6 @@
 ---
 title: Brukeren ble ikke funnet i Personvelger i Attract eller Onboard
-description: Dette emnet forklarer hva du gjør når brukere i leieren i selskapet ikke vises i Personvelger i Attract- eller Onboard-programmene i Dynamics 365 for Talent.
+description: Dette emnet forklarer hva du gjør når brukere i leieren i selskapet ikke vises i Personvelger i Dynamics 365 Talent – Attract eller Onboard.
 author: andreabichsel
 manager: AnnBe
 ms.date: 01/22/2019
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2019-01-22
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: a9c2324321baf0a313b8b7aa9701909336b5c34b
-ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
+ms.openlocfilehash: 2a3c83fcc3f48aa235ffb2db2dc492b34a306c4c
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "1742755"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2024201"
 ---
 # <a name="azure-active-directory-users-not-found-in-people-picker"></a>Fant ikke Azure Active Directory-brukere i Personvelger
 
@@ -30,11 +30,11 @@ ms.locfileid: "1742755"
 
 ## <a name="issue"></a>Avgang
 
-Noen gyldige brukere i Microsoft Azure Active Directory (Azure AD) for leier vises ikke når du søker etter navnet i Personvelger i Dynamics 365 for Talent Attract- eller Onboard-programmene.
+Noen gyldige brukere i Microsoft Azure Active Directory (Azure AD) for leier vises ikke når du søker etter navnet i Personvelger i Dynamics 365 Talent: Attract eller Dynamics 365 Talent: Onboard.
 
 ## <a name="cause"></a>Årsak
 
-Visse brukertyper støttes ikke i Attract- og Onboard-programmene. Kontroller at brukeren ikke er en Azure AD B2B-gjestebruker (bedrift til bedrift). "Brukertype"-informasjon finnes i Azure Active Directory-bladet på Azure-portalen.
+Enkelte brukertyper støttes ikke i Attract og Onboard. Kontroller at brukeren ikke er en Azure AD B2B-gjestebruker (bedrift til bedrift). "Brukertype"-informasjon finnes i Azure Active Directory-bladet på Azure-portalen.
 
 Hvis du vil ha mer informasjon om Azure B2B, se [Hva er gjestebrukertilgang i Azure Active Directory B2B](https://docs.microsoft.com/azure/active-directory/b2b/what-is-b2b).
 

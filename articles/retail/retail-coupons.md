@@ -18,12 +18,12 @@ ms.search.industry: retail
 ms.author: scotttuc
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: bd3596b6c78c5959ca289c73bcc5785eb770be39
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 449a1f574cd32860cbdc2e43f21be1d3d692768f
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1553559"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2025108"
 ---
 # <a name="set-up-coupons-for-retail-sales"></a>Sette opp kuponger for detaljhandelssalg
 
@@ -37,10 +37,10 @@ Hver kupong er knyttet til en detaljhandelrabatt. Prisgruppene som er tilknyttet
 
 Kuponger er en tilleggsvalidering av detaljhandelrabatter. Kupongen inneholder kupongkoder og strekkoder som er obligatoriske, sammen med tidsrom for kodene. Kupongen tilbyr også valgfrie bruksgrenser og egenskaper som kreves for kunder. Rabatten gir settet med produkter som kupongen er gyldig for. Prisgruppene for rabatten inneholder settet med kunder, kanaler eller kataloger som kupongen er gyldig for.
 
-Hvis du vil opprette en kupong, oppretter du rabatten og kupongen separat. Deretter kobler du dem ved å velge rabatten på kupongsiden i Microsoft Dynamics 365 for Retail.
+Hvis du vil opprette en kupong, oppretter du rabatten og kupongen separat. Deretter kobler du dem ved å velge rabatten på kupongsiden i Retail.
 
 > [!NOTE]
-> Når en kupong er koblet til en rabatt, blir flere felt på rabattsiden i Microsoft Dynamics 365 for Retail skrivebeskyttet, fordi de styres av kuponginnstillingene. Disse feltene omfatter feltene for status og standard datointervall.
+> Når en kupong er koblet til en rabatt, blir flere felt på rabattsiden i Retail skrivebeskyttet, fordi de styres av kuponginnstillingene. Disse feltene omfatter feltene for status og standard datointervall.
 
 ### <a name="limited-use-coupons"></a>Kuponger med begrenset bruk
 
@@ -75,7 +75,7 @@ Før du kan definere en kupong, må du definere kupongens strekkode og to nummer
 
 ## <a name="the-effect-of-partial-updates-on-coupons"></a>Virkningen av delvis oppdateringer på kuponger
 
-Kupongfunksjonen består av flere forskjellige funksjoner i Dynamics 365 for Retail. Microsoft Dynamics 365 for Retail Hovedkontor (HQ) og kanalen kan delvis oppdateres på tvers av komponenter. Det er derfor viktig at du forstår hvordan delvise oppdateringer påvirker kupongfunksjonaliteten i sin helhet.
+Kupongfunksjonen består av flere forskjellige funksjoner. Dynamics 365 Retail Hovedkontor (HQ) og kanalen kan delvis oppdateres på tvers av komponenter. Det er derfor viktig at du forstår hvordan delvise oppdateringer påvirker kupongfunksjonaliteten i sin helhet.
 
 - **Hovedkontor oppdateres delvis, men Retail og POS oppdateres ikke.** I en Hovedkontor-oppdatering oppdateres kupong- og rabattsidene, og utsalgsprismotoren oppdateres også. Hvis bare én av de to komponentene oppdateres, vil enkelte av sidene i detaljhandel ikke stemme overens med prisberegningsdataene. Derfor kan uventede kontantberegninger eller feil oppstå under rabattberegninger.
 - **Hovedkontor oppdateres, men Retail og POS oppdateres ikke (N-1).** Fordi ikke alle detaljhandelbutikker kan oppdateres samtidig, anbefaler vi at du oppdaterer Hovedkontor før du oppdaterer detaljhandelbutikker. I scenarioet med N-1 vil ikke ny funksjonalitet som er knyttet til kuponger, være tilgjengelig i butikker som ennå ikke er oppdatert. Kupongfunksjonen introduserer for eksempel "utelat" linjer. Hvis du bruker utelat linjer i en rabatt, kan de ikke brukes i en butikk for detaljhandel som kjører en tidligere versjon.

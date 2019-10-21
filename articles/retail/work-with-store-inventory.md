@@ -18,18 +18,18 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 551a8408aa730bc1916f1c57b7cfd773966ce8bf
-ms.sourcegitcommit: e2fb0846fcc6298050a0ec82c302e5eb5254e0b5
+ms.openlocfilehash: c5da94e02b2381bbd058221567172cd428931c45
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/27/2019
-ms.locfileid: "1606809"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2024689"
 ---
 # <a name="store-inventory-management"></a>Butikklagerstyring
 
 [!include [banner](includes/banner.md)]
 
-Når du arbeider med lager i Dynamics 365 for Retail og bruker salgsstedsprogrammet, er det viktig å merke seg at salgsstedet gir begrenset støtte for lagerdimensjoner og bestemt lagervaretyper.
+Når du arbeider med lager i Dynamics 365 Retail og bruker salgsstedsprogrammet, er det viktig å merke seg at salgsstedet gir begrenset støtte for lagerdimensjoner og bestemt lagervaretyper.
 
 Salgsstedsløsningen støtter ikke følgende varekonfigurasjoner:
 
@@ -56,7 +56,7 @@ Salgsstedsløsningen gir begrenset støtte for følgende dimensjoner. Begrenset 
 
 ## <a name="purchase-orders"></a>Bestillinger
 
-Bestillinger opprettes ved hovedkontoret. Hvis et lager for detaljhandel er inkludert i bestillingshodet, kan ordren mottas i butikken ved hjelp av Modern POS (MPOS) eller Cloud POS i Microsoft Dynamics 365 for Retail via operasjonen **Plukk-/mottak**. Når antallene som mottas i butikken, angis i **Motta nå**-feltet i POS for bestillingsdokumentet, kan de lagres lokalt eller disponeres. Hvis du lagrer disse dataene lokalt, har det ingen innvirkning på beholdningen på lager. Lagring bør bare utføres hvis brukeren ikke er klar til å postere mottaket i HK, og bare trenger en måte å midlertidig lagre de tidligere angitte **Motta nå**-dataene på. Dette lagrer motta nå-dataene lokalt i brukerens kanaldatabase. Når dokumentet er behandlet med alternativet **Igangsett**, sendes **Motta nå**-dataene til HK, og bestillingsmottaket posteres. 
+Bestillinger opprettes ved hovedkontoret. Hvis et lager for detaljhandel er inkludert i bestillingshodet, kan ordren mottas i butikken ved hjelp av Modern POS (MPOS) eller Cloud POS via operasjonen **Plukk-/mottak**. Når antallene som mottas i butikken, angis i **Motta nå**-feltet i POS for bestillingsdokumentet, kan de lagres lokalt eller disponeres. Hvis du lagrer disse dataene lokalt, har det ingen innvirkning på beholdningen på lager. Lagring bør bare utføres hvis brukeren ikke er klar til å postere mottaket i HK, og bare trenger en måte å midlertidig lagre de tidligere angitte **Motta nå**-dataene på. Dette lagrer motta nå-dataene lokalt i brukerens kanaldatabase. Når dokumentet er behandlet med alternativet **Igangsett**, sendes **Motta nå**-dataene til HK, og bestillingsmottaket posteres. 
 
 ## <a name="transfer-orders"></a>Overføringsordrer
 

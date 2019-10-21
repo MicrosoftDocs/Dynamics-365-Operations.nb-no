@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-08-15
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: f03b7fa073c4e5338b7b5681ba7b8c9fe00a657b
-ms.sourcegitcommit: f5bfa3212bc3ef7d944a358ef08fe8863fd93b91
+ms.openlocfilehash: 95fe394d22f9fe81511c230a2cf7b8ddf00d896f
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "1875813"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2250835"
 ---
 # <a name="work-orders-and-fixed-assets"></a>Arbeidsordrer og anleggsmidler
 
@@ -33,7 +33,7 @@ ms.locfileid: "1875813"
 [!include [banner](../../includes/preview-banner.md)]
 
 
-I Aktivastyring kan aktiva relateres til anleggsmidler, og du kan opprette arbeidsordrer for disse aktivaene. Hvis du bruker denne funksjonen, kan du få en fullstendig oversikt over anleggsmidler, tilknyttede investeringsprosjekter og kostnadene som er registrert på investeringsprosjektene, i **Prosjektstyring og regnskap**-modulen og **Anleggsmidler**-modulen i Dynamics 365 for Finance and Operations.
+I Aktivastyring kan aktiva relateres til anleggsmidler, og du kan opprette arbeidsordrer for disse aktivaene. Hvis du bruker denne funksjonen, kan du få en fullstendig oversikt over anleggsmidler, tilknyttede investeringsprosjekter og kostnadene som er registrert på investeringsprosjektene, i **Prosjektstyring og regnskap**-modulen og **Anleggsmidler**-modulen.
 
 >[!NOTE]
 >**Anleggsmiddelnummer**-feltet fylles bare ut på arbeidsordrejobbprosjektet hvis typen Investering er valgt som prosjekttype i arbeidsordrejobbprosjektet.

@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9f15c6c5ccdcddebe7aa428cff48ca6e3b120d7f
-ms.sourcegitcommit: 747bcd25ce7c6c20ce9eaa0027e730f74d4fd6aa
+ms.openlocfilehash: bd963caed7f49db5dd7550dd30c3f831318d2b7a
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "1783489"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2250904"
 ---
 # <a name="create-an-asset"></a>Opprette et aktivum
 
@@ -63,12 +63,12 @@ Feltene **Servicenivå** og **Kritikalitet** relaterer til arbeidsordrer opprett
 
 ## <a name="asset"></a>Aktiva
 
-Du kan velge en **ressurs** for aktivaet. Ressursvalget bestemmer hvilken kalender som brukes for planlegging av arbeidsordrer. Ressursvalg brukes ofte for anleggsmidler. I Dynamics 365 for Finance and Operations er ressurser og ressursgrupper satt opp i **Organisasjonsstyring** > **Ressurser** > **Ressursgrupper** eller **Ressurser**.
+Du kan velge en **ressurs** for aktivaet. Ressursvalget bestemmer hvilken kalender som brukes for planlegging av arbeidsordrer. Ressursvalg brukes ofte for anleggsmidler. Ressurser og ressursgrupper satt opp i **Organisasjonsstyring** > **Ressurser** > **Ressursgrupper** eller **Ressurser**.
 
 I feltet **Anleggsmiddelnummer** kan du velge et anleggsmiddel som skal være relatert til aktivaet. Dette er relevant hvis aktivaet er knyttet til et investeringsprosjekt.
 
 - Hvis aktivaet er knyttet til et anleggsmiddel, kan du opprette en arbeidsordretype som skal brukes for arbeidsordrer som er knyttet til et investeringsprosjekt. 
-- Informasjon om anleggsmidler for et aktivum er knyttet til modulen **Anleggsmidler** i Dynamics 365 for Finance and Operations. Dette betyr at i **Anleggsmidler** > **Anleggsmidler** > **Anleggsmidler** kan du få en oversikt over prosjektene i Aktivastyring som kan være relatert til et anleggsmiddel, ved å velge aktivumet i listen og vise innholdet i ruten **Beslektet informasjon** > delen **Tilknyttede prosjekter**.
+- Informasjon om anleggsmidler for et aktivum er knyttet til modulen **Anleggsmidler** i Dynamics 365 Supply Chain Management. Dette betyr at i **Anleggsmidler** > **Anleggsmidler** > **Anleggsmidler** kan du få en oversikt over prosjektene i Aktivastyring som kan være relatert til et anleggsmiddel, ved å velge aktivumet i listen og vise innholdet i ruten **Beslektet informasjon** > delen **Tilknyttede prosjekter**.
 
 
 ## <a name="details"></a>Detaljer

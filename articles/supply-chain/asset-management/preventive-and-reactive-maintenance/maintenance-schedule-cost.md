@@ -3,7 +3,7 @@ title: Kostnader for vedlikeholdsplan
 description: Dette emnet beskriver kostnader for vedlikeholdsplan i Aktivastyring.
 author: josaw1
 manager: AnnBe
-ms.date: 08/15/2019
+ms.date: 08/27/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,22 +16,20 @@ ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: mkirknel
-ms.search.validFrom: 2019-08-15
+ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 71b958839a914d90a86a0dcd16a09285ca6dcfa4
-ms.sourcegitcommit: f5bfa3212bc3ef7d944a358ef08fe8863fd93b91
+ms.openlocfilehash: b2f53a4a64b06efc9269c607bfe1fc3a41c90cdd
+ms.sourcegitcommit: 6476f27c8d3dced7c2e9a7344a4e378b51a1983e
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "1875809"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "1922074"
 ---
 # <a name="maintenance-schedule-cost"></a>Kostnader for vedlikeholdsplan
-
 
 [!include [banner](../../includes/banner.md)]
 
 [!include [banner](../../includes/preview-banner.md)]
-
 
 I Aktivastyring kan du beregne budsjettkostnader på vedlikeholdsplanlinjer. Dette er nyttig hvis du vil ha en oversikt over forventede kostnader, for eksempel kostnader knyttet til planlagte forebyggende vedlikeholdsjobber for neste år. Beregningene er basert på eksisterende vedlikeholdsplanlinjer av typen Vedlikeholdsplaner, Vedlikeholdsrunder og Vedlikeholdsforespørsler.
 
@@ -48,10 +46,11 @@ I Aktivastyring kan du beregne budsjettkostnader på vedlikeholdsplanlinjer. Det
 
 5. Klikk på **OK** for å starte kostberegningen.
 
-6. I kategorien **Kostnader for vedlikeholdsplan** > i **Grupper etter...**-handlingsrutegruppene klikker du på de relevante knappene for å vise det nødvendige detaljnivået for kostnadsberegningen. De valgte handlingsrutegruppeknappene vises i blått. Klikk på en knapp for å aktivere eller deaktivere den.
+6. I kategorien **Kostnader for vedlikeholdsplan** > i **Grupper etter...**-handlingsrutegruppene klikker du på de relevante knappene for å vise det nødvendige detaljnivået for kostnadsberegningen. De valgte handlingsrutegruppeknappene er uthevet. Klikk på en knapp for å aktivere eller deaktivere den.
 
 7. Klikk på knappen **Beregn kostnad** hvis du vil foreta en ny kostberegning.
 
+Illustrasjonen nedenfor viser resultatet av en beregning av kostnader for vedlikeholdsplan.
 
 ![Figur 1](media/17-preventive-maintenance.png)
 

@@ -1,6 +1,6 @@
 ---
 title: Definer og utforme kvitteringsformater
-description: Denne artikkelen beskriver hvordan du oppretter og endrer skjemaoppsett for å styre hvordan kvitteringer, fakturaer og andre dokumenter blir skrevet ut. Microsoft Dynamics 365 for Retail inneholder en skjemaoppsettutforming der du enkelt og grafisk kan opprette og endre ulike typer skjemaoppsett.
+description: Denne artikkelen beskriver hvordan du oppretter og endrer skjemaoppsett for å styre hvordan kvitteringer, fakturaer og andre dokumenter blir skrevet ut. Dynamics 365 Retail inneholder en skjemaoppsettutforming der du enkelt og grafisk kan opprette og endre ulike typer skjemaoppsett.
 author: rubencdelgado
 manager: AnnBe
 ms.date: 06/20/2017
@@ -19,18 +19,18 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 13249e1b109586b2c520a1be30c47ac4393abe49
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: eb85752b53d0d48f07bfed9423637cb6c646ab61
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1553074"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2025131"
 ---
 # <a name="set-up-and-design-receipt-formats"></a>Definer og utforme kvitteringsformater
 
 [!include [banner](includes/banner.md)]
 
-Denne artikkelen beskriver hvordan du oppretter og endrer skjemaoppsett for å styre hvordan kvitteringer, fakturaer og andre dokumenter blir skrevet ut. Microsoft Dynamics 365 for Retail inneholder en skjemaoppsettutforming der du enkelt og grafisk kan opprette og endre ulike typer skjemaoppsett.
+Denne artikkelen beskriver hvordan du oppretter og endrer skjemaoppsett for å styre hvordan kvitteringer, fakturaer og andre dokumenter blir skrevet ut. Dynamics 365 Retail inneholder en skjemaoppsettutforming der du enkelt og grafisk kan opprette og endre ulike typer skjemaoppsett.
 
 > [!IMPORTANT]
 > Du må konfigurere skjemaoppsett og kvitteringsprofiler for å skrive ut kvitteringer og andre dokumenter fra Retail Modern POS og Cloud POS. Du kan inkludere flere skjemaoppsett i en kvitteringsprofil. Deretter kan du tilordne kvitteringsprofilen til en skriver ved å endre en maskinvareprofil.
@@ -55,7 +55,7 @@ Bruke skjemaoppsettutformingen til grafisk å opprette oppsettet for skjemadokum
 2. På siden **Kvitteringsformat** velger du et skjemaoppsett, og klikk deretter **Utforming**.
 3. Klikk **Kjør** for å installere utformingsverten for detaljhandel.
 4. I varslingsfeltet som vises nederst i Internet Explorer-vinduet, klikker du **Åpne** for å starte installasjonen av ettklikksutformingen. (Varslingsfeltet vises kanskje et annet sted i andre lesere.) Fremdriftsindikatoren viser fremdriften for installasjonen.
-5. Når installasjonen er fullført, angir du Dynamics 365 for Retail-brukernavnet og -passordet, og deretter klikker du **Logg på** for å starte utformingen.
+5. Når installasjonen er fullført, angir du Retail-brukernavnet og -passordet, og deretter klikker du **Logg på** for å starte utformingen.
 6. Når legitimasjonen er validert og utformingen starter, kan du begynne å utforme kvitteringsformatet eller endre et eksisterende format.
 7. Hvis du vil opprette elementene for skjemaet, velger du delen **Hode**, **Linjer** eller **Bunntekst**, og deretter drar du et element fra denne delen til arbeidsområdet. De fleste elementene inneholder variabler som automatisk fylles ut med data fra databasen. Andre elementer, for eksempel **Tekst**, lar deg skrive ut egendefinert tekst på kvitteringen.
 

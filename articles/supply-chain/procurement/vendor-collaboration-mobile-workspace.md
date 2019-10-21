@@ -17,12 +17,12 @@ ms.search.region: global
 ms.author: mkirknel
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: 253ba0bd991e8db17940d3d4b9ade599800bf924
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 2c2ba1f23cc068daf20474f05519c3c6865fd183
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1843871"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2250262"
 ---
 # <a name="vendor-collaboration-mobile-workspace"></a>Mobilt arbeidsområde for leverandørsamarbeid
 
@@ -30,10 +30,10 @@ ms.locfileid: "1843871"
 
 Dette emnet gir informasjon om det mobile arbeidsområdet for **leverandørsamarbeid**. Dette arbeidsområdet hjelper leverandørene med å holde seg oppdatert om bestillinger som er sendt til dem for godkjenning. De kan også vise informasjon om nye og oppdaterte bestillinger og kontakter.
 
-Dette mobile arbeidsområdet er ment å brukes med appen Microsoft Dynamics 365 for Unified Operations Mobile.
+Dette mobile arbeidsområdet er ment å brukes sammen med Finance and Operations-mobilappen.
 
 ## <a name="overview"></a>Oversikt 
-Det mobile området **Leverandørsamarbeid** holder leverandører informert om nye bestillinger, slik at de kan vise bestillinger og deretter svare på dem Microsoft Dynamics 365 for Finance and Operations, webklient. 
+Det mobile området **Leverandørsamarbeid** holder leverandører informert om nye bestillinger, slik at de kan vise bestillinger og deretter svare på dem i webklienten. 
 
 >[!NOTE]
 > Det mobile arbeidsområdet skal brukes som et supplement til webgrensesnittet for leverandørsamarbeid, ikke som en erstatning. 
@@ -59,8 +59,8 @@ Det mobile arbeidsområdet for **leverandørsamarbeid** gjør det mulig for en l
 ## <a name="prerequisites"></a>Forutsetninger
 Forutsetningene varierer avhengig av hvilken versjon av Microsoft Dynamics 365 som er distribuert i organisasjonen.
 
-### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-finance-and-operations"></a>Forutsetninger hvis du bruker Microsoft Dynamics 365 for Finance and Operations 
-Hvis Microsoft Dynamics 365 for Finance and Operations har blitt innført i organisasjonen din, må systemadministrator publisere det mobile arbeidsområdet **Leverandørsamarbeid**. Hvis du vil ha instruksjoner, kan du se [Publisere et mobilt arbeidsområde](../../dev-itpro/mobile-apps/publish-mobile-workspace.md).
+### <a name="prerequisites-if-you-use-supply-chain-management"></a>Forutsetninger hvis du bruker Supply Chain Management
+Hvis Supply Chain Management har blitt innført i organisasjonen din, må systemadministrator publisere det mobile arbeidsområdet **Leverandørsamarbeid**. Hvis du vil ha instruksjoner, kan du se [Publisere et mobilt arbeidsområde](../../dev-itpro/mobile-apps/publish-mobile-workspace.md).
 
 ### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-operations-version-1611-with-platform-update-3-or-later"></a>Forutsetninger hvis du bruker Microsoft Dynamics 365 for Operations versjon 1611 med plattformoppdatering 3 eller senere
 Hvis Microsoft Dynamics 365 for Operations versjon 1611 med plattformoppdatering 3 eller senere er distribuert i organisasjonen, må systemansvarlig oppfylle følgende forutsetninger. 
@@ -104,7 +104,7 @@ Hvis Microsoft Dynamics 365 for Operations versjon 1611 med plattformoppdatering
 <li><a href="vendor-collaboration-work-external-vendors.md">Bruke leverandørsamarbeid for å arbeide med eksterne leverandører</a></li>
 <li><a href="manage-vendor-collaboration-users.md">Administrere brukere av leverandørsamarbeid</a></li>
 <li><a href="set-up-maintain-vendor-collaboration.md">Definere og vedlikeholde leverandørsamarbeid</a></li>
-<li><a href="vendor-collaboration-work-customers-dynamics-365-operations.md">Bruke leverandørsamarbeid for å arbeide med kunder i Finance and Operations</a></li>
+<li><a href="vendor-collaboration-work-customers-dynamics-365-operations.md">Bruke leverandørsamarbeid for å arbeide med kunder i Supply Chain Managements</a></li>
 </ul></td>
 </tr>
 </tbody>
@@ -112,7 +112,7 @@ Hvis Microsoft Dynamics 365 for Operations versjon 1611 med plattformoppdatering
 
 ## <a name="download-and-install-the-mobile-app"></a>Laste ned og installere mobilappen
 
-Last ned og installer mobilappen Dynamics 365 for Unified Operations:
+Laste ned og installere Finance and Operations-mobilappen:
 
 -   [For Android-telefoner](https://go.microsoft.com/fwlink/?linkid=850662)
 -   [For iPhone](https://go.microsoft.com/fwlink/?linkid=850663)

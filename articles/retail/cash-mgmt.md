@@ -1,6 +1,6 @@
 ---
 title: Forbedringer for kontanttransaksjoner
-description: Dette emnet beskriver forbredringer for kontanttransaksjoner i POS for Dynamics 365 for Retail.
+description: Dette emnet beskriver forbredringer for kontanttransaksjoner i POS for Dynamics 365 Retail.
 author: anpurush
 manager: AnnBe
 ms.date: 05/21/2019
@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2019-05-21
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 845cba3b536b0f800b7c7c4eecee46a068ca8cff
-ms.sourcegitcommit: 432481001b986b54937d423516efd8f2af1511d6
+ms.openlocfilehash: 49d70a8d983bf3475e01f8fcb80d569b13568485
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "1630059"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2019537"
 ---
 # <a name="cash-management-improvements"></a>Forbedringer for kontanttransaksjoner
 
@@ -32,9 +32,11 @@ ms.locfileid: "1630059"
 
 Kontanttransaksjoner er en nøkkelfunksjon for forhandlere i fysiske butikker. Forhandlere vil at butikkene skal ha systemer som kan hjelpe dem med å gi fullstendig sporing og ansvarlighet for kontanter og bevegelsen på tvers av de forskjellige kassene og kassererne i en butikk. De må kunne avstemme eventuelle forskjeller og bestemme ansvarlighet.
 
-Microsoft Dynamics 365 for Retail har kontanttransaksjonsfunksjoner i salgsstedsapplikasjonen. I versjoner av Retail som er tidligere enn versjon 10.0.3, er imidlertid ikke kontanttransaksjonsfunksjonaliteten robust nok til å gi fullstendig sporing av kontantbevegelser i butikker. Selv om forhandlere kan avstemme kontanter for en butikk, kan de ikke nøyaktig bestemme ansvarlighet ved kontantavvik.
 
-I Microsoft Dynamics 365 for Retail versjon 10.0.3 og senere vil forhandlerne oppnå sporinger for kontanthåndtering. Som en del av denne sporingen vil forhandlere kunne angi safer, foreta tosidige kontanttransaksjoner og avstemme kontantstyringstransaksjoner.
+Microsoft Dynamics 365 Retail har kontanttransaksjonsfunksjoner i salgsstedsapplikasjonen. I versjoner av Retail som er tidligere enn versjon 10.0.3, er imidlertid ikke kontanttransaksjonsfunksjonaliteten robust nok til å gi fullstendig sporing av kontantbevegelser i butikker. Selv om forhandlere kan avstemme kontanter for en butikk, kan de ikke nøyaktig bestemme ansvarlighet ved kontantavvik.
+
+
+I Retail-versjon 10.0.3 og nyere vil forhandlerne oppnå sporinger for kontanthåndtering. Som en del av denne sporingen vil forhandlere kunne angi safer, foreta tosidige kontanttransaksjoner og avstemme kontantstyringstransaksjoner.
 
 ## <a name="set-up-traceability-and-define-safes"></a>Konfigurere sporingen og angi safer
 

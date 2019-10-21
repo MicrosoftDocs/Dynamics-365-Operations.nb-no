@@ -1,9 +1,9 @@
 ---
-title: Startside for forsyningskjedeadministrasjon
-description: Denne siden gir en oversikt over emnene i hjelpen og andre ressurser for funksjonene for forsyningskjedeadministrasjon i Microsoft Dynamics 365 for Finance and Operations.
-author: ShylaThompson
+title: Hjelperessurser for Supply Chain Management
+description: Denne siden gir en oversikt over emnene i hjelpen og andre ressurser for funksjonene for Supply Chain Management.
+author: josaw1
 manager: AnnBe
-ms.date: 05/09/2018
+ms.date: 10/01/2019
 ms.topic: index-page
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,18 +18,18 @@ ms.search.industry: ''
 ms.author: shylaw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 391f63fba2916b613f66bfd36cfbd3a052cbc8fe
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 8bc9445bacc764bd0c70be4a55d621fc3f8fb270
+ms.sourcegitcommit: 5b53bdafa5cb9a1279576bfece0452a50383b122
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1557598"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "2278330"
 ---
-# <a name="supply-chain-management-home-page"></a>Startside for forsyningskjedeadministrasjon
+# <a name="help-resources-for-supply-chain-management"></a>Hjelperessurser for Supply Chain Management
 
 [!include [banner](includes/banner.md)]
 
-Dette emnet gir en oversikt over emnene i hjelpen og andre ressurser for funksjonene for forsyningskjedeadministrasjon i Microsoft Dynamics 365 for Finance and Operations. 
+Dette emnet gir en oversikt over emnene i hjelpen og andre ressurser i Dynamics 365 Supply Chain Management. 
 
 ## <a name="whats-new-and-in-development"></a>Hva er nytt og hva er under utvikling?
 Gå til <a href="https://roadmap.dynamics.com/">Veikart for Dynamics 365</a> for å se hvilke nye funksjoner som er utgitt og hvilke nye funksjoner som er under utvikling. 
@@ -38,6 +38,7 @@ Gå til <a href="https://roadmap.dynamics.com/">Veikart for Dynamics 365</a> for
 
 Velg et funksjonsområde du vil finne ut mer om.
 
+- [Aktivabehandling](asset-management/index.md)
 - [Kostnadsregnskap](../financials/cost-accounting/cost-accounting-home-page.md)
 - [Kostnadsstyring](cost-management/cost-management-home-page.md)  
 - [Lagerstyring](inventory/inventory-home-page.md)
@@ -49,6 +50,10 @@ Velg et funksjonsområde du vil finne ut mer om.
 - [Servicestyring](service-management/service-management-home-page.md)
 - [Transportstyring](transportation/transportation-management-overview.md)
 - [Lagerstyring](warehousing/warehouse-configuration.md)
+
+## <a name="dynamics-365-finance"></a>Dynamics 365 Finance
+
+Hvis du vil ha informasjon om Dynamics 365 Finance, går du til siden [Hjelperessurser for Dynamics 365 Finance](../finance/index.md).
 
 ## <a name="videos"></a>Videoer
 
@@ -113,6 +118,6 @@ Det finnes mange emner om produksjon og forsyningskjedeadministrasjon i <a href=
 -  <a href="https://mbs.microsoft.com/customersource/northamerica/365Enterprise/learning/documentation/white-papers/MobilityWarehouse/">Mobilitet i lageret lagt til rette av Microsoft Dynamics 365 for Finance and Operations</a>
 
 ## <a name="elearning-courses"></a>e-læringskurs
-Hvis du vil ha informasjon om opplæring i Microsoft Dynamics 365 for Finance and Operations, kan du se <a href="https://mbspartner.microsoft.com/AX/LearningPlans/">læringsportalen for Microsoft Dynamics</a>. (krever CustomerSource-konto) 
+Hvis du vil ha informasjon om opplæring i Dynamics 365, kan du se <a href="https://mbspartner.microsoft.com/AX/LearningPlans/">Læringsportal for Microsoft Dynamics</a>. (krever CustomerSource-konto) 
 
 

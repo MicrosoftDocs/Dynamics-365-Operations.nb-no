@@ -1,6 +1,6 @@
 ---
 title: Administrer utsetting arbeid i produksjon
-description: Dette emnet forklarer hvordan underleveranseoperasjoner behandles i Microsoft Dynamics 365 for Finance and Operations. Med andre ord, forklarer det hvordan produksjonsoperasjoner som er tildelt en ressurs er styrt av en leverandør.
+description: Dette emnet forklarer hvordan underleveranseoperasjoner behandles i Dynamics 365 Supply Chain Management. Med andre ord, forklarer det hvordan produksjonsoperasjoner som er tildelt en ressurs er styrt av en leverandør.
 author: cvocph
 manager: AnnBe
 ms.date: 11/03/2017
@@ -19,18 +19,18 @@ ms.search.industry: Manufacturing
 ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f41f13bf1b587cb802579cc3b27ef4eea70a0380
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: ea2feccf9f74c0f035b8a46dc87eb41bdf85900a
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1569759"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2023547"
 ---
 # <a name="manage-subcontracting-work-in-production"></a>Administrer utsetting arbeid i produksjon
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet forklarer hvordan underleveranseoperasjoner behandles i Microsoft Dynamics 365 for Finance and Operations. Med andre ord, forklarer det hvordan produksjonsoperasjoner som er tildelt en ressurs er styrt av en leverandør.
+Dette emnet forklarer hvordan underleveranseoperasjoner behandles i Dynamics 365 Supply Chain Management. Med andre ord, forklarer det hvordan produksjonsoperasjoner som er tildelt en ressurs er styrt av en leverandør.
 
 I [produksjonsprosesser](production-process-overview.md), arbeidet kan gjøres av ressurser som eies eller administreres av leverandører. Leverandør ressurser brukes vanligvis til nivå periodiske overflødige behovet som bruke enn de som den disponible kapasiteten i et firma eier ressurser. Leverandøren vil kanskje også kunne tilby spesifikke [ressursfunksjoner](resource-capabilities.md) eller ressurser til en lavere pris.  
 
@@ -40,7 +40,7 @@ Når utsetting operasjoner eller aktiviteter, kan de påvirke alle faser av oper
 
 For interne ressurser fordeles vanligvis en fast kostnadssats for en periode. Derimot er kostnaden for underleveranse ressurser basert på kjøpsprisen for den tilknyttede tjenesten. Tjenesten er definert som et annet produkt, og brukes til å drive innkjøp og kjøpe prosesser for underleveranse behandlingshastigheten.  
 
-Det er for øyeblikket ingen eksplisitte begrepet halvferdige produkter i Microsoft Dynamics 365 for Finance and Operations. For en produksjonsordre som krever mer enn én operasjon for å transformere råvarer til en ferdig vare, posteres den ferdige varen tilbake på lageret bare i den siste operasjonen. De halvferdige produktene som tidligere operasjoner produserer, er etterkalkulert i varer i arbeid (via), men de ikke bokført eller registrert på lager. Selv om du kan dele ruter og stykklister malstykklister i flere mindre enheter, øker antall varer, stykklister og ruter som må behandles i denne fremgangsmåten.  
+Det er for øyeblikket ingen eksplisitte begrepet halvferdige produkter i Supply Chain Management. For en produksjonsordre som krever mer enn én operasjon for å transformere råvarer til en ferdig vare, posteres den ferdige varen tilbake på lageret bare i den siste operasjonen. De halvferdige produktene som tidligere operasjoner produserer, er etterkalkulert i varer i arbeid (via), men de ikke bokført eller registrert på lager. Selv om du kan dele ruter og stykklister malstykklister i flere mindre enheter, øker antall varer, stykklister og ruter som må behandles i denne fremgangsmåten.  
 
 Det finnes to metoder for modellering utsetting arbeid for produksjonsoperasjoner. Disse metodene er forskjellige på måten at subcontracting prosessen kan modelleres, slik at halvferdige varer representeres i prosessen, og måten kostnadskontroll administreres.
 

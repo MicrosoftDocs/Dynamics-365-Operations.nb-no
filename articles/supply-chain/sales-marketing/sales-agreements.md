@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a14801f3aa486da3af252695a3e2ccd58c0e9059
-ms.sourcegitcommit: e286572ce94a9442a5b3076c3ff5b429be0ed512
+ms.openlocfilehash: 37378b85b90f91c74da717f0a25c1847ac0b1598
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "1865975"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2251299"
 ---
 # <a name="sales-agreements-overview"></a>Oversikt over salgsavtaler
 
@@ -99,14 +99,14 @@ Hvis du har opprettet (frigitt) en salgsordre mot en salgsavtale, kan noen felt 
 | Antall                                                          | Hvis du angir et antall som overstiger antallet som er angitt på en salgsavtalelinje der det er merket av for **Maks. håndheves** vises en meldingsboks der du blir bedt om å lagre det endrede antallet. Klikk på **Ja** for å fjerne koblingen til salgsavtalelinjen og beregne prisen på nytt. Klikk på **Nei** for å fjerne koblingen til salgsavtalelinjen uten å beregne prisen på nytt.                                                            |
 
 ## <a name="returning-an-item-that-was-ordered-from-a-sales-agreement"></a>Returnere en vare som er bestilt fra en salgsavtale
-Når en kunde returnerer et produkt som er bestilt gjennom en salgsavtale, kan Microsoft Dynamics 365 for Finance and Operations finne og automatisk oppdatere den aktuelle salgsavtaleforpliktelsen for å gjenspeile endringen i antall eller beløp. Ved å opprette en returordre på grunnlag av den opprinnelige salgsordren som er koblet til en salgsavtale, oppretter du en relasjon mellom salgsavtaleforpliktelsen, salgsordrelinjen og returordrefakturaen.  
+Når en kunde returnerer et produkt som er bestilt gjennom en salgsavtale, kan Supply Chain Management finne og automatisk oppdatere den aktuelle salgsavtaleforpliktelsen for å gjenspeile endringen i antall eller beløp. Ved å opprette en returordre på grunnlag av den opprinnelige salgsordren som er koblet til en salgsavtale, oppretter du en relasjon mellom salgsavtaleforpliktelsen, salgsordrelinjen og returordrefakturaen.  
 
 Hvis du ikke ønsker å trekke returvareantallet fra salgsavtaleforpliktelsen, kan du bruke **Fjern kobling**-kontrollen på **Returordre**-siden for å fjerne koblingen mellom returordren og salgsavtaleforpliktelsen. Hvis du må gjenopprette koblingen senere, klikker du **Opprett kobling**.  
 
 **Obs!** En returordre kan bare kobles til én salgsavtale. Hvis en kunde returnerer flere produkter som ble bestilt gjennom flere salgsavtaler, må du opprette en ny returordre for hvert produkt og opprette en kobling til den tilhørende salgsavtalen.
 
 ## <a name="automatic-search-for-sales-agreements"></a>Automatisk søk etter salgsavtaler
-I noen tilfeller der salgsordrer opprettes indirekte, for eksempel når du oppretter en kreditnota eller konserninterne salgsordrer, kan du kontrollere om Microsoft Dynamics 365 for Finance and Operations søker automatisk etter gjeldende salgsavtaler.
+I noen tilfeller der salgsordrer opprettes indirekte, for eksempel når du oppretter en kreditnota eller konserninterne salgsordrer, kan du kontrollere om systemet søker automatisk etter gjeldende salgsavtaler.
 
 ## <a name="financial-dimensions-on-sales-agreements"></a>finansdimensjoner i salgsavtaler
 Du kan kopiere finansdimensjoner til dokumenthoder eller enkeltlinjer i en salgsavtale. Du kan endre dimensjonene i et avtalehode eller en avtalelinje når som helst. I dette tilfellet kopieres dimensjonene automatisk til frigivelseshodet eller frigivelseslinjen i frigivelsesordrer.

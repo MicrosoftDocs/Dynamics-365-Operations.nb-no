@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: mumani
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: c9cd9197f395b69f65137a59392a4d83d692f6fa
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 6939ed56944ecafb29c1cadd2744b5746b19cb46
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1572133"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2023370"
 ---
 # <a name="info-codes-and-info-code-groups"></a>Informasjonskoder og informasjonskodegrupper
 
@@ -42,7 +42,7 @@ Informasjonskoder gjør det mulig å hente data på i en salgsstedskasse (POS). 
 
 ## <a name="info-codes-group"></a>Informasjonskodegruppe
 
-I Dynamics 365 for Retail kan du opprette grupper med informasjonskoder. Informasjonskodegrupper legger til fleksibilitet ved å la deg definere færre informasjonskoder og deretter bruke dem på mer fleksible måter. Du kan bruke informasjonskodegrupper på følgende måter:
+I Retail kan du opprette grupper med informasjonskoder. Informasjonskodegrupper legger til fleksibilitet ved å la deg definere færre informasjonskoder og deretter bruke dem på mer fleksible måter. Du kan bruke informasjonskodegrupper på følgende måter:
 
 - Definere færre infokoder, og enkelt bruke dem på nytt. Informasjonskoder som er inkludert i informasjonskodegrupper, har ingen forhåndsdefinerte avhengigheter om andre informasjonskoder. Du kan ta med den samme informasjonskoden i flere informasjonskodegrupper og deretter bruke prioritering til å vise de samme informasjonskodene i rekkefølgen som er mest aktuell i en gitt situasjon.
 - Koble informasjonskoder til andre koder eller informasjonskodegrupper for å samle inn informasjon om et produkt eller en transaksjon, uten å definere en egen informasjonskode eller koblede informasjonskoden for hvert scenario.

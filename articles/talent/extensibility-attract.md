@@ -1,6 +1,6 @@
 ---
-title: Utvidelsesmuligheter i Attract
-description: Dette emnet beskriver hvordan du kan utvide programmet Microsoft Dynamics 365 for Talent - Attract ved hjelp av Microsoft Power-plattformen.
+title: Utvidelsesmulighet i Attract
+description: Dette emnet beskriver hvordan du kan utvide programmet Microsoft Dynamics 365 Talent – Attract ved hjelp av Microsoft Power Platform.
 author: andreabichsel
 manager: AnnBe
 ms.date: 03/18/2019
@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: 9360ac52bd53dc473ca61a424f3be933bcf357d1
-ms.sourcegitcommit: ef08bf1258aefb525d56bf85ef19311be26ab94c
+ms.openlocfilehash: 5db954d8847c252bee1c8e50acae546852ae9b94
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "1795226"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2026239"
 ---
 # <a name="extensibility-in-attract"></a>Utvidelsesmulighet i Attract
 
 [!include[banner](../includes/banner.md)]
 
-Microsoft Dynamics 365 for Talent er bygd på toppen av Common Data Service-plattformen og kan utvides på forskjellige måter ved hjelp av Microsoft Power Platform og funksjonene som tilbys i Common Data Service. Derfor kan du konfigurere og tilpasse systemet ved hjelp av Microsoft PowerApps og Microsoft Flow. Du kan også få ekstra analyse om personer ved hjelp av Microsoft Power BI. Dessuten gjør nye egendefinerte aktiviteter, for eksempel PowerApps og webinnhold-aktivitet (iframe), ansettelsesprosessen mer fleksibel enn noen gang. Ved hjelp av disse aktivitetene kan du tilpasse ansettelsesprosessen til dine forretningsbehov og prosesser, og du kan forsikre deg om at både ansettelsesteamet og kandidatene får en sømløs, tilpasset opplevelse.
+Microsoft Dynamics 365 Talent er bygd på toppen av Common Data Service og kan utvides på forskjellige måter ved hjelp av Microsoft Power Platform og funksjonene som tilbys i Common Data Service. Derfor kan du konfigurere og tilpasse systemet ved hjelp av Microsoft PowerApps og Microsoft Flow. Du kan også få ekstra analyse om personer ved hjelp av Microsoft Power BI. Dessuten gjør nye egendefinerte aktiviteter, for eksempel PowerApps og webinnhold-aktivitet (iframe), ansettelsesprosessen mer fleksibel enn noen gang. Ved hjelp av disse aktivitetene kan du tilpasse ansettelsesprosessen til dine forretningsbehov og prosesser, og du kan forsikre deg om at både ansettelsesteamet og kandidatene får en sømløs, tilpasset opplevelse.
 
 ## <a name="extending-option-sets-in-attract"></a>Utvide alternativsett i Attract
 
@@ -40,7 +40,7 @@ Et **Alternativsett** (plukkliste) er et type felt som kan inkluderes i en enhet
 
 Nedenfor finner du trinnene for å oppdatere **Avvisningsårsak**-feltet med verdier som er spesifikke for din virksomhet.  
 
-1. Hvis du vil utvide **Avvisningsårsak**-alternativsettet, navigerer du til [webområdet for PowerApps-administrasjon](https://admin.powerapps.com).
+1. Hvis du vil vise **Avvisningsårsak**-alternativsettet, går du til [nettstedet for PowerApps-administrasjon](https://admin.powerapps.com).
 2. Du kan bli bedt om å logge på kontoen. Oppgi bruker-ID-en og passordlegitimasjonen du bruker til å logge på Dynamics 365 og/eller Office 365, og klikk deretter **Neste**.
 3. I **Miljøer**-fanen velger du miljøet du vil administrere, og dobbeltklikker for å gå til **Detaljer**-kategorien.
 4. På **Detaljer**-kategorien velger du **Administrasjonssenter for Dynamics 365**.
@@ -62,7 +62,7 @@ Fordi alle dataene fra Attract ligger i Common Data Service, kan du bruke verkt�
 
 Du kan bruke PowerApps til å opprette programmer som koble til Attract-dataene, og som bruker uttrykk som uttrykkene i Microsoft Excel, til å legge til logikk. Apper du lager med PowerApps, kan kjøre på Internett, og på Apple iOS og Google Android-enheter.
 
-Du kan for eksempel forenkle universitetsmesser for rekrutteringspersoner ved å bygge en enkel app som lar dem skanne CVer og legge kandidater til en stilling i Attract. Du kan også bygge en app som bidrar til å dekke organisasjonens samsvarsbehov. Hvis du vil ha mer informasjon om PowerApps og hvordan den brukes til å bygge apper, se [Integrere data i Common Data Service](https://docs.microsoft.com/powerapps).
+Du kan for eksempel forenkle universitetsmesser for rekrutteringspersoner ved å bygge en enkel app som lar dem skanne CVer og legge kandidater til en stilling i Attract. Du kan også bygge en app som bidrar til å dekke organisasjonens samsvarsbehov. Hvis du vil ha mer informasjon om PowerApps og hvordan den brukes til å bygge apper, kan du se [Integrere data i Common Data Service](https://docs.microsoft.com/powerapps).
 
 ### <a name="microsoft-flow"></a>Microsoft Flow 
 

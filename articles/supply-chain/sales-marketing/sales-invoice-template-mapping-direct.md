@@ -1,6 +1,6 @@
 ---
-title: Synkronisere salgsfakturahoder og -linjer direkte fra Finance and Operations til Sales
-description: Dette emnet drøfter maler og underliggende oppgaver som brukes til å synkronisere salgsfakturahoder og -linjer direkte fra Microsoft Dynamics 365 for Finance and Operations, til Microsoft Dynamics 365 for Sales.
+title: Synkronisere salgsfakturahoder og -linjer direkte fra Supply Chain Management til Sales
+description: Dette emnet beskriver maler og underliggende oppgaver som brukes til å synkronisere salgsfakturahoder og -linjer direkte fra Dynamics 365 Supply Chain Management til Dynamics 365 Sales.
 author: ChristianRytt
 manager: AnnBe
 ms.date: 10/26/2017
@@ -19,22 +19,22 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: 70fc842463254b02d812447f93970a9da676057d
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 94442eb11aac3faf8a412944617686853a12128d
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1552936"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2251667"
 ---
 # <a name="synchronize-sales-invoice-headers-and-lines-directly-from-finance-and-operations-to-sales"></a>Synkronisere salgsfakturahoder og -linjer direkte fra Finance and Operations til Sales
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet drøfter maler og underliggende oppgaver som brukes til å synkronisere salgsfakturahoder og -linjer direkte fra Microsoft Dynamics 365 for Finance and Operations, til Microsoft Dynamics 365 for Sales.
+Dette emnet beskriver maler og underliggende oppgaver som brukes til å synkronisere salgsfakturahoder og -linjer direkte fra Dynamics 365 Supply Chain Management til Dynamics 365 Sales.
 
 ## <a name="data-flow-in-prospect-to-cash"></a>Dataflyt i Kundeemne til kontanter
 
-Løsningen Kundeemne til kontanter bruker Dataintegrering-funksjonen til å synkronisere data på tvers av forekomster av Finance and Operations og Sales. Kundeemne til kontanter-maler som er tilgjengelige med Dataintegrering-funksjonen,tillater flyt av data om kontoer, kontakter, produkter, salgstilbud, salgsordrer og salgsfakturaer mellom Finance and Operations og Sales. Illustrasjonen nedenfor viser hvordan dataene blir synkronisert mellom Finance and Operations og Sales.
+Løsningen Kundeemne til kontanter bruker Dataintegrering-funksjonen til å synkronisere data på tvers av forekomster av Supply Chain Management og Sales. Kundeemne til kontanter-maler som er tilgjengelige med Dataintegrering-funksjonen,tillater flyt av data om kontoer, kontakter, produkter, salgstilbud, salgsordrer og salgsfakturaer mellom Finance and Operations og Sales. Illustrasjonen nedenfor viser hvordan dataene blir synkronisert mellom Supply Chain Management og Sales.
 
 [![Dataflyt i Kundeemne til kontanter](./media/prospect-to-cash-data-flow.png)](./media/prospect-to-cash-data-flow.png)
 
@@ -52,30 +52,30 @@ Følgende mal og underliggende oppgaver brukes til å synkronisere salgsfakturah
 
 Følgende synkroniseringsoppgaver er påkrevd før synkronisering av salgsfakturahoder og -linjer kan inntreffe:
 
-- Produkter (Fin and Ops til Sales) – direkte
-- Kontoer (Sales til Fin and Ops) – direkte (hvis brukt)
-- Kontakter (Sales til Fin and Ops) – direkte (hvis brukt)
-- Salgsordrehoder og -linjer (Fin and Ops til Sales) – direkte
+- Produkter (Supply Chain Management til Sales) – direkte
+- Kontoer (Sales til Supply Chain Management) – direkte (hvis brukt)
+- Kontakter (Sales til Supply Chain Management) – direkte (hvis brukt)
+- Salgsordrehoder og -linjer (Supply Chain Management til Sales) – direkte
 
 ## <a name="entity-set"></a>Enhetssett
 
-| Finance and Operations                               | Salg          |
+| Forsyningskjedeadministrasjon                              | Salg          |
 |------------------------------------------------------|----------------|
 | Eksternt vedlikeholdte hoder for kundesalgsfaktura | Fakturaer       |
 | Eksternt vedlikeholdte linjer for kundesalgsfaktura   | InvoiceDetails |
 
 ## <a name="entity-flow"></a>Enhetsflyt
 
-Salgsfakturaer er opprettet i Finance and Operations og synkronisert til Sales.
+Salgsfakturaer er opprettet i Supply Chain Management og synkronisert til Sales.
 
 > [!NOTE]
-> Skatt knyttet til kostnader på salgsfakturahodet er for øyeblikket ikke inkludert i synkronisering fra Finance and Operations til Sales. Sales støtter ikke skatteinformasjon på hodenivå. Mva som er knyttet til tillegg på linjenivå er imidlertid inkludert i synkroniseringen.
+> Skatt knyttet til kostnader på salgsfakturahodet er for øyeblikket ikke inkludert i synkronisering fra Supply Chain Management til Sales. Sales støtter ikke skatteinformasjon på hodenivå. Mva som er knyttet til tillegg på linjenivå er imidlertid inkludert i synkroniseringen.
 
 ## <a name="prospect-to-cash-solution-for-sales"></a>Kundeemnet til kontanter løsning for Sales
 
 - Et **Fakturanummer**-felt er lagt til **Faktura**-enheten og vises på siden.
-- Knappen **Opprett faktura** på siden **Salgsordre** er skjult fordi fakturaer vil opprettes i Finance and Operations og synkroniseres til Sales. Siden **Faktura** kan ikke redigeres fordi fakturaer vil synkroniseres fra Finance and Operations.
-- **Salgsordrestatus**-verdien endres automatisk til **Fakturert** når relaterte fakturaer fra Finance and Operations er synkronisert til Sales. Eieren av salgsordren som fakturaen ble opprettet fra, tildeles også som eier av fakturaen. Eieren av salgsordren kan derfor vise fakturaen.
+- Knappen **Opprett faktura** på siden **Salgsordre** er skjult fordi fakturaer vil opprettes i Supply Chain Management og synkroniseres til Sales. Siden **Faktura** kan ikke redigeres fordi fakturaer vil synkroniseres fra Supply Chain Management.
+- **Salgsordrestatus**-verdien endres automatisk til **Fakturert** når relaterte fakturaer fra Supply Chain Management er synkronisert til Sales. Eieren av salgsordren som fakturaen ble opprettet fra, tildeles også som eier av fakturaen. Eieren av salgsordren kan derfor vise fakturaen.
 
 ## <a name="preconditions-and-mapping-setup"></a>Forutsetninger og tilordningsdefinisjon
 
@@ -103,7 +103,7 @@ Gå til **Innstillinger** > **Administrasjon** > **Systeminnstillinger** > **Sal
 #### <a name="salesinvoiceline-task"></a>SalesInvoiceLine-oppgave
 
 - Sørg for at nødvendig tilordning finnes for **måleenhet**.
-- Kontroller at den nødvendige verditilordningen finnes for **SalesUnitSymbol** i Finance and Operations.
+- Kontroller at den nødvendige verditilordningen finnes for **SalesUnitSymbol** i Supply Chain Management.
 
     En malverdi som har en verditilordning er definert for **SalesUnitSymbol** til **Quantity\_UOM**.
 
@@ -115,7 +115,7 @@ Gå til **Innstillinger** > **Administrasjon** > **Systeminnstillinger** > **Sal
 Følgende illustrasjoner viser et eksempel på en tilordning av malen i Dataintegrering. 
 
 > [!NOTE]
-> Tilordningen viser hvilken feltinformasjon som vil bli synkronisert fra Sales til Finance and Operations.
+> Tilordningen viser hvilken feltinformasjon som vil bli synkronisert fra Sales til Supply Chain Management.
 
 ### <a name="salesinvoiceheader"></a>SalesInvoiceHeader
 
@@ -131,16 +131,10 @@ Følgende illustrasjoner viser et eksempel på en tilordning av malen i Datainte
 
 [Kundeemne til kontanter](prospect-to-cash.md)
 
-[Synkronisere kontoer direkte fra Sales til kunder i Finance and Operations](accounts-template-mapping-direct.md)
+[Synkronisere kontoer direkte fra Sales til kunder i Supply Chain Management](accounts-template-mapping-direct.md)
 
-[Synkronisere produkter direkte fra Finance and Operations til produkter i Sales](products-template-mapping-direct.md)
+[Synkronisere produkter direkte fra Supply Chain Management til produkter i Sales](products-template-mapping-direct.md)
 
-[Synkronisere kontakter direkte fra Sales til kontakter eller kunder i Finance and Operations](contacts-template-mapping-direct.md)
+[Synkronisere kontakter direkte fra Sales til kontakter eller kunder i Supply Chain Management](contacts-template-mapping-direct.md)
 
-[Synkronisere salgsordrehoder og -linjer direkte fra Finance and Operations til Sales](sales-order-template-mapping-direct-two-ways.md)
-
-
-
-
-
-
+[Synkronisere salgsordrehoder og -linjer direkte fra Supply Chain Management til Sales](sales-order-template-mapping-direct-two-ways.md)

@@ -1,6 +1,6 @@
 ---
 title: Oversikt over regnskapsintegrering for detaljhandelskanaler
-description: Dette emnet gir en oversikt over funksjonene for regnskapsintegrering som er tilgjengelige i Microsoft Dynamics 365 for Retail.
+description: Dette emnet gir en oversikt over funksjonene for regnskapsintegrering som er tilgjengelige i Dynamics 365 Retail.
 author: josaw
 manager: annbe
 ms.date: 02/01/2019
@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: v-kikozl
 ms.search.validFrom: 2019-1-16
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 3c6092a7eba328048ef2f28188c42f33cb1f7136
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 647ef586b64699a891bd3b6702ac93bc5ee8292e
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1516244"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2025413"
 ---
 # <a name="overview-of-fiscal-integration-for-retail-channels"></a>Oversikt over regnskapsintegrering for detaljhandelskanaler
 
@@ -30,13 +30,13 @@ ms.locfileid: "1516244"
 
 ## <a name="introduction"></a>Innledning
 
-Dette emnet er en oversikt over funksjonene for regnskapsintegrering som er tilgjengelige i Microsoft Dynamics 365 for Retail. Regnskapsintegrering omfatter integrering med ulike regnskapsenheter og -tjenester som gir mulighet for bilagsregistrering av detaljhandelsalg i samsvar med lokale regnskapslover som er rettet mot å hindre avgiftssvindel i detaljhandelen. Her er noen vanlige scenarier som kan dekkes ved å bruke regnskapsintegrering:
+Dette emnet er en oversikt over funksjonene for regnskapsintegrering som er tilgjengelige i Dynamics 365 Retail. Regnskapsintegrering omfatter integrering med ulike regnskapsenheter og -tjenester som gir mulighet for bilagsregistrering av detaljhandelsalg i samsvar med lokale regnskapslover som er rettet mot å hindre avgiftssvindel i detaljhandelen. Her er noen vanlige scenarier som kan dekkes ved å bruke regnskapsintegrering:
 
 - Registrer et detaljhandelsalg på en regnskapsenhet som er koblet til Retail point of sale (POS), for eksempel en bilagsskriver, og skriv ut en bilagskvittering for kunden.
 - Send informasjon som er knyttet til salg og returer som er fullført i Retail POS, sikkert til en ekstern webtjeneste som styres av skattemyndighetene.
 - Bidra til å sikre at salgstransaksjonsdata ikke kan endres, gjennom digitale signaturer.
 
-Funksjonen for regnskapsintegrering i Retail er et rammeverk som gir en felles løsning for videre utvikling og tilpassing av integreringen mellom Retail POS og regnskapsenheter og -tjenester. Funksjonen inneholder også eksempler på regnskapsintegrering som støtter grunnleggende detaljhandelsscenarier for bestemte land eller områder, og som fungerer med bestemte regnskapsenheter eller -tjenester. Et eksempel på regnskapsintegrering består av flere utvidelser for Retail-komponenter og er inkludert i software development kit (SDK) for Retail. Hvis du vil ha mer informasjon om eksemplene på regnskapsintegrering som er tilgjengelige i Retail-SDK-et, se [Eksempler på regnskapsintegrering i Retail SDK-et](#fiscal-integration-samples-in-the-retail-sdk). Hvis du vil ha informasjon om hvordan du installerer og bruker Retail SDK, se [Oversikt over Retail SDK](../dev-itpro/retail-sdk/retail-sdk-overview.md).
+Funksjonen for regnskapsintegrering er et rammeverk som gir en felles løsning for videre utvikling og tilpassing av integreringen mellom Retail POS og regnskapsenheter og -tjenester. Funksjonen inneholder også eksempler på regnskapsintegrering som støtter grunnleggende detaljhandelsscenarier for bestemte land eller områder, og som fungerer med bestemte regnskapsenheter eller -tjenester. Et eksempel på regnskapsintegrering består av flere utvidelser for Retail-komponenter og er inkludert i software development kit (SDK). Hvis du vil ha mer informasjon om eksemplene på regnskapsintegrering, kan du se [Eksempler på regnskapsintegrering i SDK for Retail](#fiscal-integration-samples-in-the-retail-sdk). Hvis du vil ha informasjon om hvordan du installerer og bruker Retail SDK, se [Oversikt over Retail SDK](../dev-itpro/retail-sdk/retail-sdk-overview.md).
 
 For å støtte andre scenarier som ikke støttes av et regnskapsintegreringseksempel, for å integrere Retail POS med andre regnskapsenheter eller -tjenester, eller for å oppfylle kravene til andre land eller regioner, må du enten utvide et eksisterende regnskapsintegreringseksempel eller lage et nytt eksempel ved hjelp av et eksisterende eksempel.
 
@@ -132,7 +132,7 @@ Funksjonen for regnskapsintegrasjon støtter generering av dagsoppgjørsutdrag s
 
 ## <a name="fiscal-integration-samples-in-the-retail-sdk"></a>Eksempler på regnskapsintegrering i SDK for detaljhandel
 
-Følgende eksempler på regnskapsintegrering er for øyeblikket tilgjengelige i detaljhandel-SDK-et som utgis med Retail:
+Følgende eksempler på regnskapsintegrering er for øyeblikket tilgjengelige i SDK for Retail:
 
 - [Eksempel på integrering av bilagsskriver for Italia](emea-ita-fpi-sample.md)
 - [Eksempel på integrering av bilagsskriver for Polen](emea-pol-fpi-sample.md)

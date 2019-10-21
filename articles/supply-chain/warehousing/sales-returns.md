@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3dfeb393698431b1bbb0eb5069cc0930dc122374
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: b1f5658de1da8a0b6c36d99e4bb9cf401c09ad0b
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1559163"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2249802"
 ---
 # <a name="sales-returns"></a>Salgsreturer
 
@@ -31,7 +31,7 @@ ms.locfileid: "1559163"
 
 Dette emnet inneholder informasjon om prosessen for returordrer. Det inneholder informasjon om kundereturer og deres innvirkning på lagerantall for etterkalkulering og lagerbeholdning.
 
-Kunder kan returnere varer av ulike årsaker. En vare kan for eksempel være ødelagt, eller den oppfyller kanskje ikke kundens forventninger. Returprosessen starter når en kunde sender en forespørsel om å returnere en vare. Når kundens forespørsel mottas, opprettes en returordre i Microsoft Dynamics 365 for Finance and Operations.
+Kunder kan returnere varer av ulike årsaker. En vare kan for eksempel være ødelagt, eller den oppfyller kanskje ikke kundens forventninger. Returprosessen starter når en kunde sender en forespørsel om å returnere en vare. Når kundens forespørsel mottas, opprettes en returordre.
 
 ## <a name="return-order-process"></a>Ordrereturprosessen
 Illustrasjonen nedenfor gir en oversikt over returordreprosessen.  
@@ -281,7 +281,7 @@ Dette scenariet omfatter to selskaper i samme organisasjon, som vist i illustras
 
 ![Enkel konsernintern retur](./media/SalesReturn07.png)
 
-Ordrekjeden kan opprettes når det opprettes en bestillingsretur for leverandøren i det kjøpende selskapet eller en ordreretur fra kunden som er opprettet i det selgende selskapet. Finance and Operations oppretter den tilsvarende ordren i det andre selskapet, og sørger for at hode- og linjeinformasjon på leverandørreturordren gjenspeiler innstillingene på kundereturordren. Returordren som er opprettet, kan inkludere eller utelukke referansen (**Søk etter salgsordre**) til en eksisterende kundefaktura. Følgesedler og fakturaer for de to bestillingene kan behandles enkeltvis. Du behøver for eksempel ikke generere en følgeseddel for leverandørreturordren før du genererer følgeseddelen for kundereturordren.
+Ordrekjeden kan opprettes når det opprettes en bestillingsretur for leverandøren i det kjøpende selskapet eller en ordreretur fra kunden som er opprettet i det selgende selskapet. Den tilsvarende ordren opprettes i det andre selskapet, og sørger for at hode- og linjeinformasjon på leverandørreturordren gjenspeiler innstillingene på kundereturordren. Returordren som er opprettet, kan inkludere eller utelukke referansen (**Søk etter salgsordre**) til en eksisterende kundefaktura. Følgesedler og fakturaer for de to bestillingene kan behandles enkeltvis. Du behøver for eksempel ikke generere en følgeseddel for leverandørreturordren før du genererer følgeseddelen for kundereturordren.
 
 ### <a name="direct-delivery-shipment-returns-among-three-parties"></a>Leveringsreturer for direktelevering mellom tre parter
 

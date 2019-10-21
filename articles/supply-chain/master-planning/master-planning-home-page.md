@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1a294327149cf46202fed8b63377ee77f13c11d5
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 2dd3915d9eb5b255e9d84e5ec7c331d184e5f485
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1543589"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2250697"
 ---
 # <a name="master-planning-home-page"></a>Startside for hovedplanlegging
 
@@ -74,7 +74,7 @@ Gå til [Veikart for Microsoft Dynamics 365](https://roadmap.dynamics.com/) for 
 Du kan finne meninger, nyheter og annen informasjon om hovedplanlegging og andre løsninger, i [Dynamics AX Manufacturing R&D-teambloggen](https://blogs.msdn.microsoft.com/axmfg) og [Supply Chain Management i Dynamics AX R&D-teambloggen](https://blogs.msdn.microsoft.com/dynamicsaxscm).
 
 ### <a name="task-guides"></a>Oppgaveveiledninger
-Mer hjelp er tilgjengelig som oppgaveveiledninger i Finance and Operations. For å få tilgang til oppgaveveiledninger klikker du på **Hjelp**-knappen på en side.
+Mer hjelp er tilgjengelig som oppgaveveiledninger. For å få tilgang til oppgaveveiledninger klikker du på **Hjelp**-knappen på en side.
 
 ### <a name="webinars"></a>Webinarer
 [Bruke Azure Machine Learning for behovsprognose](https://www.youtube.com/watch?v=4nQsccdFFDA&feature=youtu.be)

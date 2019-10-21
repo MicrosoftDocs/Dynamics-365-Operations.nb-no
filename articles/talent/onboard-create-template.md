@@ -1,6 +1,6 @@
 ---
-title: Opprette en jobbintroduksjonsmal med Dynamics 365 for Talent - Onboard
-description: Dette emnet forklarer hvordan du bruker Dynamics 365 for Talent - Onboard-appen til å opprette en mal for jobbintroduksjonsveiledning for nyansatte. Denne oppgaven er et viktig første skritt i en ansettelse-til-pensjonering-strategi for administrasjon av menneskelig kapital (HCM).
+title: Opprette en jobbintroduksjonsmal med Dynamics 365 Talent – Onboard
+description: Dette emnet forklarer hvordan du bruker Dynamics 365 Talent – Onboard-appen til å opprette en mal for jobbintroduksjonsveiledning for nyansatte. Denne oppgaven er et viktig første skritt i en ansettelse-til-pensjonering-strategi for administrasjon av menneskelig kapital (HCM).
 author: andreabichsel
 manager: ''
 ms.date: 05/02/2019
@@ -16,18 +16,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2019-05-06
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: c53c24b2913e3ca30cfc6491556b49d5d9230128
-ms.sourcegitcommit: 9f762fa89c5b432667aa156c22d679a7f601952d
+ms.openlocfilehash: 63f13380f3d2c31c4cc9009142f320ad8a41e8ee
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 07/08/2019
-ms.locfileid: "1731590"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2009883"
 ---
-# <a name="create-an-onboarding-template-by-using-dynamics-365-for-talent-onboard"></a>Opprette en jobbintroduksjonsmal med Dynamics 365 for Talent: Onboard
+# <a name="create-an-onboarding-template"></a>Opprette en jobbintroduksjonsmal
 
 [!include [banner](includes/banner.md)]
 
-Microsoft Dynamics 365 for Talent: Onboard inneholder ulike maler som kan hjelpe deg med å opprette en jobbintroduksjonsveiledning så raskt som mulig. Du kan bruke én eller flere av disse malene, eller du kan opprette dine egne maler. Onboard tilbyr eksempeltekst som du kan bruke når du oppretter dine egne maler. Derfor er prosessen enkel selv om du starter fra bunnen av.
+Microsoft Dynamics 365 Talent: Onboard inneholder ulike maler som kan hjelpe deg med å opprette en jobbintroduksjonsveiledning så raskt som mulig. Du kan bruke én eller flere av disse malene, eller du kan opprette dine egne maler. Onboard tilbyr eksempeltekst som du kan bruke når du oppretter dine egne maler. Derfor er prosessen enkel selv om du starter fra bunnen av.
 
 ## <a name="create-an-onboarding-template-from-an-existing-template"></a>Opprette en jobbintroduksjonsmal fra en eksisterende mal
 

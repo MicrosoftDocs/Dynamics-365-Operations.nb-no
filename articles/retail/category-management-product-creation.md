@@ -19,24 +19,24 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2017-09-01
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 0bcc5989edd9913fce414c0c24068f111d8c1aeb
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 27870fe6172479b891b885d9e84ca10b250e3399
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1553643"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2019515"
 ---
-# <a name="manage-retail-product-categories-and-products"></a>Administrere produktkategorier for detaljhandel og produkter
+# <a name="manage-retail-product-categories-and-products"></a>Administrere produktkategorier og produkter for detaljhandel
 
 [!include [banner](./includes/banner.md)]
 
-Dette emnet beskriver en utvidet måte å administrere produktkategorier for detaljhandel og produkter i Microsoft Dynamics 365 for Retail. Forbedringene lar forhandleransvarlige se en struktur av produktegenskaper som deles mellom hierarkiet for detaljhandelprodukt og detaljer om frigitt produkt.
+Dette emnet beskriver en utvidet måte å administrere produktkategorier og produkter i Dynamics 365 Retail. Forbedringene lar forhandleransvarlige se en struktur av produktegenskaper som deles mellom hierarkiet for produkt og detaljer om frigitt produkt.
 
-Hvis du vil lære mer om hvordan du administrerer produktkategorier for detaljhandel, velger du flisen **Hierarki for detaljhandelprodukt** i **Kategori- og produktstyring**-arbeidsområdet.
+Hvis du vil lære mer om hvordan du administrerer produktkategorier, velger du flisen **Hierarki for detaljhandelprodukt** i **Kategori- og produktstyring**-arbeidsområdet.
 
-Legg merke til den utvidede strukturen for **Hierarki for detaljhandelprodukt**-siden som vises. I tidligere utgaver av detaljhandel, ble produktegenskaper delt inn i *grunnleggende produktegenskaper* og *Detaljhandelproduktegenskaper*, basert på omfanget av anvendelighet. Egenskaper for detaljhandelprodukt er *globale* basert på deres relevans. Med andre ord, for en gitt egenskap for detaljhandelsprodukt, deles samme verdi over alle juridiske enheter. Grunnleggende produktegenskaper derimot er *spesifikk for hver juridiske enhet*. Med andre ord kan en gitt grunnleggende produktegenskap være forskjellig på tvers av juridiske enheter, avhengig av individuelle forretningsbehov til hver juridiske enhet.
+Legg merke til den utvidede strukturen for **Hierarki for detaljhandelprodukt**-siden som vises. I tidligere utgaver av detaljhandel, ble produktegenskaper delt inn i *grunnleggende produktegenskaper* og *Detaljhandelproduktegenskaper*, basert på omfanget av anvendelighet. Egenskaper for detaljhandelprodukt er *globale* basert på deres relevans. Med andre ord fordeles samme verdi på alle juridiske enheter for en gitt produktegenskap. Grunnleggende produktegenskaper derimot er *spesifikk for hver juridiske enhet*. Med andre ord kan en gitt grunnleggende produktegenskap være forskjellig på tvers av juridiske enheter, avhengig av individuelle forretningsbehov til hver juridiske enhet.
 
-I den utvidede strukturen for detaljhandelproduktkategorien, er produktegenskapene atskilt basert på deres anvendelighet i en gruppe, for å gjenspeile skjemastrukturen til detaljer om frigitt produkt.
+I den utvidede strukturen for produktkategorien, er produktegenskapene atskilt basert på deres anvendelighet i en gruppe, for å gjenspeile skjemastrukturen til detaljer om frigitt produkt.
 
 ![Felt gruppert basert på egenskapenes relevans](media/NoticeGroupingOfFieldsBasedOnTheirScope.PNG)
 
@@ -50,7 +50,7 @@ Hvis du vil behandle egenskapene for en bestemt juridisk enhet, velger du **Vis 
 
 ![Vise/redigere for en bestemt juridisk enhet](media/ToggleToEditForAllLegalEntities.PNG)
 
-I den forbedrede strukturen for detaljhandelproduktkategorien kan en varehandelsleder nå også definere standardverdier for et ekstra sett med produktegenskaper på nivået av den individuelle kategorien. Når produktene da opprettes, arver de standardverdiene for produktegenskapene, basert på tilknytningen til disse egenskapene med en individuell kategori i hierarkiet for detaljhandelprodukt. Disse arvede produktegenskaper kan endres for hvert produkt slik at de passer til individuelle forretningsbehov.
+I den forbedrede strukturen for detaljhandelproduktkategorien kan en varehandelsleder nå også definere standardverdier for et ekstra sett med produktegenskaper på nivået av den individuelle kategorien. Når produktene da opprettes, arver de standardverdiene for produktegenskapene, basert på tilknytningen til disse egenskapene med en individuell kategori i hierarkiet for produkt. Disse arvede produktegenskaper kan endres for hvert produkt slik at de passer til individuelle forretningsbehov.
 
 ## <a name="selecting-properties-to-update-products-on-the-retail-product-hierarchy-page"></a>Velge egenskaper for å oppdatere produkter på siden for hierarki for detaljhandelprodukt
 

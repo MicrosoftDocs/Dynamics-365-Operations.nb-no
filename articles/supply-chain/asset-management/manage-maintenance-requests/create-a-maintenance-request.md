@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 03e090633276cd264ad03f561ddb425a9816357e
-ms.sourcegitcommit: 871b76f8808a48d282f151144829323258ffc912
+ms.openlocfilehash: e97d96a5485f17d0abc7c2fc2f8c4fdf4bbd4bb4
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/02/2019
-ms.locfileid: "1847511"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2024643"
 ---
 # <a name="create-maintenance-requests"></a>Opprette vedlikeholdsforespørsler
 
@@ -41,7 +41,7 @@ Delen **Aktive vedlikeholdsforespørsler** i ruten **Relatert informasjon** til 
 2. Velg **Ny**.
 3. I dialogboksen **Opprett forespørsel** i feltet **Type vedlikeholdsforespørsel** velger du typen vedlikeholdsforespørsel. En standardtype foreslås.
 4. I **Beskrivelse**-feltet skriver du inn et navn eller en tittel som kort beskriver vedlikeholdsforespørselen.
-5. I feltene **Arbeidssted** og **Aktivum** velger du et arbeidssted eller et aktivum eller en kombinasjon av begge deler, alt etter behov. Du kan opprette en vedlikeholdsforespørsel uten å velge et aktivum, og aktivumet kan legges til i vedlikeholdsforespørselen senere. Hvis vedlikeholdspersonen som er logget på Microsoft Dynamics 365 for Finance and Operations, er knyttet til en ressurs som er knyttet til et aktivum, angis **Aktivum**-feltet automatisk.
+5. I feltene **Arbeidssted** og **Aktivum** velger du et arbeidssted eller et aktivum eller en kombinasjon av begge deler, alt etter behov. Du kan opprette en vedlikeholdsforespørsel uten å velge et aktivum, og aktivumet kan legges til i vedlikeholdsforespørselen senere. Hvis vedlikeholdspersonen som er logget på er knyttet til en ressurs som er knyttet til et aktivum, angis **Aktivum**-feltet automatisk.
 
     Hvis en vedlikeholdsforespørsel allerede er knyttet til det valgte aktivumet, vises en meldingslinje øverst i dialogboksen **Opprett forespørsel** for å varsle deg om ID-en for den eksisterende vedlikeholdsforespørselen. En meldingslinje varsler deg også hvis aktivumet dekkes av en garantiavtale.
 

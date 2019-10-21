@@ -3,7 +3,7 @@ title: Oversikt over forebyggende vedlikehold
 description: Dette emnet beskriver forebyggende vedlikehold i Aktivastyring.
 author: josaw1
 manager: AnnBe
-ms.date: 08/15/2019
+ms.date: 08/27/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,14 +16,14 @@ ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: mkirknel
-ms.search.validFrom: 2019-08-15
+ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 3b43c795426f40cb43962976824c44a7702d91b7
-ms.sourcegitcommit: f5bfa3212bc3ef7d944a358ef08fe8863fd93b91
+ms.openlocfilehash: 02ea3affca727802b241f87b801e0742ac0aa41a
+ms.sourcegitcommit: 6476f27c8d3dced7c2e9a7344a4e378b51a1983e
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "1875808"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "1922097"
 ---
 # <a name="preventive-maintenance-overview"></a>Oversikt over forebyggende vedlikehold
 
@@ -35,7 +35,7 @@ Dette emnet beskriver forebyggende vedlikehold i Aktivastyring. Forebyggende ved
 
 Vedlikeholdsplaner brukes til forebyggende og reaktivt vedlikehold på individuelle aktiva. Vedlikeholdsrunder brukes til forebyggende vedlikehold på en gruppe eller et sett med aktiva. Vedlikeholdsplaner og vedlikeholdsrunder brukes til generering av arbeidsordreforslag. Arbeidsordreforslagene lagres som vedlikeholdsplanlinjer, som kan grupperes og konverteres til arbeidsordrer.
 
-Figuren nedenfor gir en oversikt over arbeidsflyten fra oppretting av vedlikeholdsplaner og vedlikeholdsrunder til oppretting av arbeidsordrer for anleggsmidler, basert på disse vedlikeholdsplanene og vedlikeholdsrundene.
+Illustrasjonen nedenfor gir en oversikt over arbeidsflyten fra oppretting av vedlikeholdsplaner og vedlikeholdsrunder til oppretting av arbeidsordrer for anleggsmidler, basert på disse vedlikeholdsplanene og vedlikeholdsrundene.
 
 ![Figur 1](media/01-preventive-maintenance.png)
 

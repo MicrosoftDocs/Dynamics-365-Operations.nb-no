@@ -1,6 +1,6 @@
 ---
 title: Fantomvarer
-description: Dette emnet beskriver detaljer hvordan linjetype Fantom kan brukes for linjene i en stykkliste (BOM) og en formel i Microsoft Dynamics 365 for Finance and Operations.
+description: Dette emnet beskriver detaljer hvordan linjetype Fantom kan brukes for linjene i en stykkliste (BOM) og en formel i Dynamics 365 Supply Chain Management.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/15/2018
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validfrom: ''
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: f01a0321740365c23cbc117be42c0a5137960af7
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 7c39b0ac2eb8a2293c828fee23ed6a78cb5fe2c9
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1843895"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2250022"
 ---
 # <a name="phantom-items"></a>Fantomvarer
 
@@ -51,7 +51,7 @@ I denne strukturen kan du se at del F og G ikke er nevnt, og materialene som dis
 
 I motsetning til konstruksjonsstykklisten, som har to operasjonsark, har produksjonsstykklisten bare ett ark operasjonsark. Emballasjeoperasjonen som var koblet til en del G, er også forhøyet og er nå en del av operasjonsarket for produkt H. Montering av elektriske enheten er den første operasjonen. Denne rekkefølgen kan være lur, fordi denne enheten brukes i den neste operasjonen, som er maskinmonteringen. Den siste operasjon er emballasjeoperasjonen, som bruker to emballasjematerialer (C og D).
 
-I Microsoft Dynamics 365 for Finance and Operations aktiveres overgangen mellom konstruksjonsstykklisten og produksjonsstykklisten gjennom stykklistelinjetypen Fantom. Som begrepet "fantom" hentyder, er del F og G forsvunnet under overgangen mellom de to stykklistetypene. I dette eksemplet brukes linjetypen Fantom på stykklistelinjene for del F og G i konstruksjonsstykklisten. Når det opprettes en produksjons- eller partiordre, kopieres konstruksjonsstykklisten til produksjons- eller partiordren. Deretter, når ordren er beregnet, oppstår overgangen fra konstruksjonsstykklisten til produksjonsstykklisten, som vist i illustrasjonene ovenfor. Fra operasjonsarket i den andre illustrasjonen er emballasjemateriale C og D inndata for operasjonen. 
+Overgangen aktiveres mellom konstruksjonsstykklisten og produksjonsstykklisten gjennom stykklistelinjetypen Fantom. Som begrepet "fantom" hentyder, er del F og G forsvunnet under overgangen mellom de to stykklistetypene. I dette eksemplet brukes linjetypen Fantom på stykklistelinjene for del F og G i konstruksjonsstykklisten. Når det opprettes en produksjons- eller partiordre, kopieres konstruksjonsstykklisten til produksjons- eller partiordren. Deretter, når ordren er beregnet, oppstår overgangen fra konstruksjonsstykklisten til produksjonsstykklisten, som vist i illustrasjonene ovenfor. Fra operasjonsarket i den andre illustrasjonen er emballasjemateriale C og D inndata for operasjonen. 
 
 ## <a name="multilevel-phantom-bom-structures"></a>Stykklistestrukturer på flere nivåer for fantom
 Linjetype Fantom kan brukes i stykklistestrukturer på flere nivåer, som vist i illustrasjonen nedenfor. I denne illustrasjonen (a) er stykklisten for produkt G, og (b) er rutearket for del E og F og produkt G. 

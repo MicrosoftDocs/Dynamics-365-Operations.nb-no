@@ -16,26 +16,26 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 5fda191a41300eea7f3036af54852857d8ff653d
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: b1290617cc691f88f517a4f3cae5c20668173b0d
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1549004"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2250164"
 ---
 # <a name="onboard-vendors"></a>Ønske leverandører velkommen
 [!include [banner](../includes/banner.md)]
 
 ---
 
-Nye leverandører kan ønskes velkommen og registreres som leverandører i Microsoft Dynamics 365 for Finance and Operations basert på informasjonen som samles inn fra en person som representerer leverandøren.
+Nye leverandører kan ønskes velkommen og registreres som leverandører i Microsoft Dynamics 365 Supply Chain Management basert på informasjonen som samles inn fra en person som representerer leverandøren.
 
 Prosessen består av følgende trinn, der forskjellige roller utfører handlinger i systemet.
 
 1. **Behandling av OData** – Enhetsimport – Den innledende forespørselen er registreringsforespørselen fra en potensiell leverandør. Denne forespørselen kommer vanligvis fra en kilde, for eksempel et nettsted som drives av en kunde, som tillater anonym tilgang. Leverandører kan registrere seg ved å angi grunnleggende opplysninger, for eksempel leverandørnavn, begrunnelse, organisasjonsnummer og kontaktpersonens navn og e-postadresse. Forespørslene importeres via grensesnittet for databehandling.
-2. **Listeside for registreringsforespørselen fra potensielle leverandører** – Basert på informasjonen som er angitt i registreringsforespørselen fra den potensielle leverandøren, bestemmer en innkjøpsansvarlig om leverandøren skal ønskes velkommen. Innkjøpsansvarlig ser den innkommende forespørselen på listesiden **Registreringsforespørsler fra potensielle leverandører** i Finance and Operations.
+2. **Listeside for registreringsforespørselen fra potensielle leverandører** – Basert på informasjonen som er angitt i registreringsforespørselen fra den potensielle leverandøren, bestemmer en innkjøpsansvarlig om leverandøren skal ønskes velkommen. Innkjøpsansvarlig ser den innkommende forespørselen på listesiden **Registreringsforespørsler fra potensielle leverandører**.
 3. **Arbeidsflyt for brukerklargjøring** – Når en innkjøpsansvarlig har bekreftet informasjonen i den innkommende forespørselen og har bestemt seg for å fortsette med velkomstprosessen, klargjør arbeidsflyten for brukerforespørsler den nye brukeren og sender en e-postinvitasjonen om å godta kontaktpersonen som en godkjent bruker av Microsoft Dynamics 365.
-4. **Veiviser for registrering av leverandører** – Leverandørens kontaktpersoner logger seg på Finance and Operations ved hjelp av den nye brukerkontoen. Han eller hun fullfører veiviseren for registrering av leverandører for å oppgi informasjon, som adresser, forretningsinformasjon, innkjøpskategorier og svar på et spørreskjema.
+4. **Veiviser for registrering av leverandører** – Leverandørens kontaktpersoner logger seg på ved hjelp av den nye brukerkontoen. Han eller hun fullfører veiviseren for registrering av leverandører for å oppgi informasjon, som adresser, forretningsinformasjon, innkjøpskategorier og svar på et spørreskjema.
 5. **Arbeidsflyt for godkjenning** – En leverandørforespørsel som inneholder informasjon om registreringen, opprettes. Denne leverandørforespørselen blir sendt til en arbeidsflyt, og rutes til gjennomgang og godkjenning.
 6. **Oppretting av en original for leverandør og endring av brukerrolle** – Når leverandørforespørselen er godkjent, opprettes en leverandørpost. Brukerkontoen til leverandørens kontaktperson får enten tillatelse til å samarbeide med leverandøren, eller den deaktiveres.
 
@@ -45,14 +45,14 @@ Tabellen nedenfor viser trinnene og rollene som er involvert i prosessen.
 |--------------------------|---|---|---|---|---|---|
 | System                   | Forespørselen for en ny leverandør er importert. | | | | | Når leverandørforespørselen er godtatt, opprettes leverandørposten. |
 | Innkjøpsansvarlig | | Start velkomstprosessen. | | | Se gjennom og godta eller avvis leverandørforespørselen. | |
-| Administrator            | | | Opprett en bruker i Finance and Operations og Microsoft Azure. | | | |
+| Administrator            | | | Opprette en bruker i Supply Chain Management og Microsoft Azure. | | | |
 | Leverandørens kontaktperson    | | | Send e-post til kontaktpersonen. | Registrer leverandørinformasjon. | | |
 
-For en rask demonstrasjon av leverandørintroduksjonsprosessen, kan du se denne korte YouTube-videoen: [Introdusere en ny leverandør i Dynamics 365 for Finance and Operations](https://www.youtube.com/watch?v=0KUc3AGaTKk}.
+For en rask demonstrasjon av velkomstprosessen for leverandører kan du se denne korte YouTube-videoen: [Introdusere en ny leverandør i Finance and Operations](https://www.youtube.com/watch?v=0KUc3AGaTKk).
 
 ## <a name="importing-the-prospective-vendor-registration-request"></a>Importere forespørselen om registrering av potensiell leverandør
 
-Forespørselen om registrering av potensiell leverandør er en enhet i Finance and Operations. Du kan sette opp systemet til å importere data via denne entiteten. 
+Forespørselen om registrering av potensiell leverandør er en enhet i Supply Chain Management. Du kan sette opp systemet til å importere data via denne entiteten. 
 
 Tabellen nedenfor viser informasjonen som denne enheten inneholder, og som kan importeres.
 
@@ -65,18 +65,18 @@ Tabellen nedenfor viser informasjonen som denne enheten inneholder, og som kan i
 | Kontaktens fornavn.  | Fornavnet til personen som inviteres til å registrere leverandørinformasjonen. |
 | Kontaktens mellomnavn | Mellomnavnet til personen som inviteres til å registrere leverandørinformasjonen. |
 | Kontaktens etternavn   | Etternavnet til personen som inviteres til å registrere leverandørinformasjonen. |
-| Kontaktens e-post       | E-postadressen som skal brukes til å opprette en ny bruker i Finance and Operations, og som skal registreres i leierens Azure Active Directory (Azure AD)-konto. |
+| Kontaktens e-post       | E-postadressen som skal brukes til å opprette en ny bruker i Supply Chain Management, og som skal registreres i leierens Azure Active Directory (Azure AD)-konto. |
 | Sendt dato               | Datoen da forespørselen ble opprettet i et eksternt system. |
-| Juridisk enhet                 | Den juridiske enheten der leverandøren ber om å bli en leverandør. Denne verdien må være en kode for juridisk enhet som er registrert i Finance and Operations. Hvis ingen verdi er mottatt gjennom importprosessen, en verdi fra innkjøp og leverandører parametere brukes. |
+| Juridisk enhet                 | Den juridiske enheten der leverandøren ber om å bli en leverandør. Denne verdien må være en kode for juridisk enhet som er registrert i Supply Chain Management. Hvis ingen verdi er mottatt gjennom importprosessen, en verdi fra innkjøp og leverandører parametere brukes. |
 | Leverandørtype                  | Leverandøren kan være enten en organisasjon eller en person. Leverandørtypen bestemmer hvordan leverandøren opprettes til slutt. |
 
 Når den registreringsforespørselen fra den potensielle leverandøren er importert, vises den på listesiden **Forespørsel om registrering av potensiell leverandør**. Fra denne listesiden kan en innkjøpsansvarlig invitere brukeren. En brukerforespørsel for klargjøring av brukeren sendes til en arbeidsflyt.
 
 ## <a name="submitting-a-prospective-vendor-user-request"></a>Sende inn en brukerforespørsel for potensiell leverandør
 
-Formålet med en brukerforespørsel for potensiell leverandør er å klargjøre personen som sendte den første forespørselen, slik at han eller hun kan logge på Finance and Operations ved hjelp av e-kontoen som er angitt i registreringsforespørselen for potensiell leverandør.
+Formålet med en brukerforespørsel for potensiell leverandør er å klargjøre personen som sendte den første forespørselen, slik at han eller hun kan logge på Supply Chain Management ved hjelp av e-kontoen som er angitt i registreringsforespørselen for potensiell leverandør.
 
-Brukerforespørselen for potensiell leverandør behandles av arbeidsflyten for brukerforespørsel. Denne arbeidsflyten kommuniseres via Azure AD B2B-samarbeid. Den oppretter en bruker i Finance and Operations som har de aktuelle sikkerhetsinnstillingene.
+Brukerforespørselen for potensiell leverandør behandles av arbeidsflyten for brukerforespørsel. Denne arbeidsflyten kommuniseres via Azure AD B2B-samarbeid. Den oppretter en bruker i Supply Chain Management som har de aktuelle sikkerhetsinnstillingene.
 
 Nye brukere som er definert, har følgende sikkerhetsroller:
 
@@ -89,7 +89,7 @@ Hvis du vil ha informasjon om konfigurasjonen av e-postmeldingen og arbeidsflyte
 
 ## <a name="vendor-registration"></a>Leverandørregistrering
 
-En potensiell leverandørbruker som logger på Finance and Operations, ser den første siden i registreringsveiviseren for en leverandør, der han eller hun kan angi leverandørinformasjon.
+En potensiell leverandørbruker som logger på Supply Chain Management, ser den første siden i registreringsveiviseren for en leverandør, der han eller hun kan angi leverandørinformasjon.
 
 Veiviseren gjenspeiler konfigurasjonen av leverandørforespørselen. Landet eller regionen der leverandøren har forretningsforbindelser, bestemmer hvilken informasjon som kreves i veiviseren, og hvilken informasjon som er obligatorisk.
 
@@ -119,7 +119,7 @@ Leverandørforespørsler er tilgjengelige på siden **Brukerforespørsler for le
 
 En leverandørforespørsel inneholder informasjonen som den potensielle leverandørbrukeren har angitt i registreringsveiviseren for leverandører.
 
-I forespørselen kan du se leverandørinformasjonen og bestemme om leverandøren skal bli en registrert leverandør i Finance and Operations.
+I forespørselen kan du se leverandørinformasjonen og bestemme om leverandøren skal bli en registrert leverandør i Supply Chain Management.
 
 Leverandørforespørselen må sendes til en arbeidsflyt, og den må rutes til relevante godkjennere. For grunnleggende informasjon om hvordan du konfigurerer arbeidsflyter, se [Arbeidsflyter for innkjøp og leverandører](procurement-sourcing-workflows.md).
 
@@ -141,7 +141,7 @@ Når en leverandørforespørsel er godkjent, opprettes en leverandørkonto, og s
 
 Før du godkjenner en leverandørforespørsel, på siden **Ny leverandør**, på hurtigfanen **Generelt** velger du **Leverandørgruppe** for å velge en leverandørgruppe.
 
-Hvis den potensielle leverandørbrukeren skal ha tilgang til Finance and Operations som en leverandørsamarbeidsbruker som representerer leverandøren, setter du den tilgangstillatelsen for leverandørsamarbeid til **Ja**. Hvis du vil deaktivere brukerkontoen som den potensielle leverandøren bruker til å registrere, setter du denne tillatelsen til **Nei**.
+Hvis den potensielle leverandørbrukeren skal ha tilgang til Supply Chain Management som en leverandørsamarbeidsbruker som representerer leverandøren, setter du den tilgangstillatelsen for leverandørsamarbeid til **Ja**. Hvis du vil deaktivere brukerkontoen som den potensielle leverandøren bruker til å registrere, setter du denne tillatelsen til **Nei**.
 
 Hvis tilgangtillatelsen for leverandørensamarbeid er satt til **Ja**, når leverandørforespørselen er godkjent, sendes en forespørsel om å endre brukerens roller, slik at brukeren har rollene som er definert for typen **Leverandør** i **Eksterne roller**. Hvis denne tillatelsen er satt til **Nei**, når leverandørforespørselen er godkjent, sendes en forespørsel om å deaktivere brukeren. I så fall må arbeidsflyten for å deaktivere en brukerforespørsel, settes opp.
 

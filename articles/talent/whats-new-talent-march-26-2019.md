@@ -1,6 +1,6 @@
 ---
-title: Hva er nytt eller endret i Dynamics 365 for Talent (26. mars 2019)?
-description: Dette emnet beskriver funksjoner som enten er nye eller endret i Microsoft Dynamics 365 for Talent.
+title: Hva er nytt eller endret i Dynamics 365 Talent (26. mars 2019)?
+description: Dette emnet beskriver funksjoner som enten er nye eller endret i Microsoft Dynamics 365 Talent.
 author: Darinkramer
 manager: AnnBe
 ms.date: 03/26/2019
@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-03-26
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 24070d1efa3299c378d7a4a328531817a598d272
-ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
+ms.openlocfilehash: d4b59183116784f44f45fddacdfa4aa954383ecd
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "1741573"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2023890"
 ---
-# <a name="whats-new-or-changed-in-dynamics-365-for-talent-march-26-2019"></a>Hva er nytt eller endret i Dynamics 365 for Talent (26. mars 2019)?
+# <a name="whats-new-or-changed-in-dynamics-365-talent-march-26-2019"></a>Hva er nytt eller endret i Dynamics 365 Talent (26. mars 2019)?
 
 [!include [banner](includes/banner.md)]
 
-Dette emnet beskriver funksjoner som enten er nye eller endret i Dynamics 365 for Talent.
+Dette emnet beskriver funksjoner som enten er nye eller endret i Dynamics 365 Talent.
 
 ## <a name="changes-in-attract"></a>Endringer i Attract
 
@@ -53,7 +53,7 @@ Denne versjonen inneholder mindre feilrettinger for Dynamics 365 Talent: Onboard
 
 ### <a name="custom-field-support-available-for-select-entities-in-common-data-service"></a>Støtte for egendefinert felt er tilgjengelig for utvalgte enheter i Common Data Service 
 
-Følgende Common Data Service-enheter støtter nå kundefelt som er opprettet i Dynamics 365 for Talent:
+Følgende Common Data Service-enheter støtter nå kundefelt som er opprettet i Talent:
 
 - Arbeider
 - Etnisk opprinnelse
@@ -72,7 +72,7 @@ Med denne endringen viser nå ansettelsesloggsiden ansettelsesposter kronologisk
 I denne utgivelsen vises nå fast kompensasjon-planer når brukere begrenses etter firma i sikkerhet. Alle sikkerhetsinnstillinger vil tre i kraft, og faste planer vil vises for firmaene som brukeren har tilgang til. 
 
 ### <a name="cant-delete-job-records-using-open-in-excel-option-in-talent"></a>Kan ikke slette jobbposter ved hjelp av Åpne i Excel-alternativet i Talent
-Med denne versjonen kan du nå fjerne jobbposter ved hjelp av **Åpen i Excel**-alternativet i Dynamics 365 for Talent.
+Med denne versjonen kan du nå fjerne jobbposter ved hjelp av **Åpen i Excel**-alternativet i Talent.
 
 ### <a name="upgrade-to-common-data-service"></a>Oppgradere til Common Data Service
 Tidsfrister for å oppgradere til Common Data Service nærmer deg raskt. Logg på PowerApps-administrasjonssenteret for å bestemme om databasen må oppgraderes. Hvis du vil ha mer informasjon om tidsfrister og de nødvendige trinnene for å oppgradere, kan du se [Oppgradere til Common Data Service](https://docs.microsoft.com/common-data-service/upgradecds/introduction-upgrade-cds).
@@ -93,7 +93,7 @@ Organisasjoner kan kreve at årsakskoder skal angis for bestemte fraværstyper n
 I mange organisasjoner kan kompensasjons- og fordelsansvarlige bare ha tilgang til bestemte kompensasjonsposter. Disse kan være for ledere eller regionale ansatte. Med denne endringen kan HR administrere og vedlikeholde kompensasjonsplanene for ulike ansattgrupper i organisasjonen. Faste og variable planer kan tilordnes til sikkerhetsroller, som bestemmer tilgangen til planene og ansattdataene som er knyttet til dem, for eksempel lønns- eller bonusposter. Bare rollene som er gitt tilgang, kan behandle kompensasjon for disse ansatte.
 
 ###  <a name="email-support-for-alerts"></a>E-poststøtte for varsler
-Med Platform update 25 kan brukere opprette varslingsregler som automatisk leverer e-postmeldinger til kontakter når de utløses av en hendelse. 
+Med Platform update 25 for Finance and Operations kan brukere opprette varslingsregler som automatisk leverer e-postmeldinger til kontakter når de utløses av en hendelse. 
 
 ### <a name="duplicate-employee-checks-user-interface-changes"></a>Kontroll av dupliserte ansatte: Endringer i brukergrensesnittet
 Med denne endringen oppdages duplikater når du angir navnefelt, og statusen viser hvor mange duplikater som ble funnet. Du kan velge den angitte lenken for å åpne en ny side for å vurdere om du vil bruke resultatet som ble funnet. For å unngå å forstyrre dataregistreringen åpnes duplikatskjemaet ikke automatisk.

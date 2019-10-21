@@ -1,6 +1,6 @@
 ---
-title: Aktiviteter i prosessene i Microsoft Dynamics 365 for Talent - Attract
-description: Dette emnet gir informasjon om forskjellige typer aktiviteter som kan brukes i ansettelsesprosessen i Microsoft Dynamics 365 for Talent - Attract.
+title: Aktiviteter i prosessene i Microsoft Dynamics 365 Talent – Attract
+description: Dette emnet gir informasjon om forskjellige typer aktiviteter som kan brukes i ansettelsesprosessen i Microsoft Dynamics 365 Talent – Attract.
 author: hasrivas
 manager: AnnBe
 ms.date: 05/28/2019
@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: shielas
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: 4d52f3a384ad2a54986d1bd23baeefbaae30c9e2
-ms.sourcegitcommit: 7c49475402632069685df714546770d30804af7f
+ms.openlocfilehash: 2e40250bb801f6222d16400b2698e5b0df47a404
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "1739727"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2008691"
 ---
 # <a name="activities-in-hiring-processes"></a>Aktiviteter i ansettelsesprosesser
 
 [!include[banner](../includes/banner.md)]
 
-Aktiviteter kan legges til som en del av ansettelsesprosessen i Microsoft Dynamics 365 for Talent: Attract. Aktiviteter kan legges til en prosessmal, eller de kan legges direkte til ansettelsesprosessen i jobben. Når en jobb er definert, velges en prosessmal, og aktivitetene som er inkludert i malen, gjelder for jobben. Hvis det ikke er valgt en mal, brukes standardmalen. Ansettelsesprosessen kan også endres i jobben etter at malen er brukt.
+Aktiviteter kan legges til som en del av ansettelsesprosessen i Microsoft Dynamics 365 Talent: Attract. Aktiviteter kan legges til en prosessmal, eller de kan legges direkte til ansettelsesprosessen i jobben. Når en jobb er definert, velges en prosessmal, og aktivitetene som er inkludert i malen, gjelder for jobben. Hvis det ikke er valgt en mal, brukes standardmalen. Ansettelsesprosessen kan også endres i jobben etter at malen er brukt.
 
 > [!NOTE] 
 > Prosessmaler er tilgjengelige med tillegget for omfattende ansettelse. Hvis du vil ha mer informasjon, se [Omfattende muligheter for ansettelsestillegg i Attract](./attract-comprehensive-hiring.md).
@@ -53,7 +53,7 @@ Denne aktiviteten har tre komponenter: forespørsel om kandidattilgjengelighet, 
 
 PowerApps-aktiviteten lar deg bygge inn en Microsoft PowerApps-app i ansettelsesprosessen. Appen kan være nødvendig for alle søkere, bare interne søkere, bare ekstern søkere eller ingen søkere. Hvis appen er merket som påkrevd, må den fullføres før neste stadium. Skal anses som fullført må **JobApplicationStatus**-feltet settes til **Fullført**. Dette feltet er plassert i JobApplicationActivity-enheten, slik at PowerApps-appen må oppdatere dette feltet før neste stadium. Hvis appen ikke er merket som påkrevd, er aktiviteten et valgfritt trinn, og stadiet kan endres selv om appen ikke er fullført.
 
-Hvis du vil lagre PowerApps-aktiviteten i ansettelsesprosessen, må du angi en PowerApps-ID. Du kan finne PowerApps-IDen ved å gå til [PowerApps](https://web.powerapps.com), velge **Apper**  og deretter **Detaljer**.
+Hvis du vil lagre PowerApps-aktiviteten i ansettelsesprosessen, må du angi en PowerApps-ID. Du kan finne PowerApps-ID-en ved å gå til [PowerApps](https://web.powerapps.com), velge **Apper** og deretter **Detaljer**.
 
 Som standard er PowerApps-aktiviteten tilgjengelig for ansettelsesansvarlig, rekrutterer og deres representanter. Hvis du velger alternativet **Tillat tilføying av deltakere for denne aktiviteten**, kan flere deltakere fra rekrutteringsteamet legges til for et program som bruker PowerApps-aktiviteten. En organisasjon har for eksempel opprettet en PowerApps-app som er et bibliotek med intervjuspørsmål for tekniske roller. Organisasjonen ansetter nå en ny programvareutvikler og har lagt til PowerApps-aktiviteten i ansettelsesprosessen for programvareutvikler-rollen. Hvis alternativet **Tillat tilføying av deltakere for denne aktiviteten** er valgt, kan en rekrutterer eller ansettelsesansvarlig som viser en søker for programvareutvikler-rollen, legge til intervjuere i PowerApps-aktiviteten. Disse personene kan deretter vise appen som har intervjuspørsmålene.
 

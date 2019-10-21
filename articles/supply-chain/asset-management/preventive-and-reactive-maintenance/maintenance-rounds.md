@@ -3,7 +3,7 @@ title: Vedlikeholdsrunder
 description: Dette emnet beskriver vedlikeholdsrunder i Aktivastyring.
 author: josaw1
 manager: AnnBe
-ms.date: 08/15/2019
+ms.date: 08/27/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,22 +16,20 @@ ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: mkirknel
-ms.search.validFrom: 2019-08-15
+ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: a0ac4820d2efa37387382c2890e3ddc7dbc0878b
-ms.sourcegitcommit: f5bfa3212bc3ef7d944a358ef08fe8863fd93b91
+ms.openlocfilehash: eca732f245650c8e1f3dc976454536a0ab1ee117
+ms.sourcegitcommit: 6476f27c8d3dced7c2e9a7344a4e378b51a1983e
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "1875816"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "1922028"
 ---
 # <a name="maintenance-rounds"></a>Vedlikeholdsrunder
-
 
 [!include [banner](../../includes/banner.md)]
 
 [!include [banner](../../includes/preview-banner.md)]
-
 
 I **Aktivastyring** kan du opprette vedlikeholdsrunder for ulike aktiva, der du må utføre en lignende oppgave med jevne mellomrom. For eksempel smørejobber eller sikkerhetsinspeksjonsjobber som må utføres på flere maskiner i samme intervall. Første trinn er å opprette en vedlikeholdsrunde, inkludert aktiva som krever samme form for vedlikeholdsjobb. Deretter planlegger du vedlikeholdsrundene. Når du har fullført vedlikeholdsrundeplanen, kan du se alle jobbpostene knyttet til runden i **Alle vedlikeholdsplaner** og **Åpne vedlikeholdsplanlinjer**.
 
@@ -83,6 +81,8 @@ I **Aktivastyring** kan du opprette vedlikeholdsrunder for ulike aktiva, der du 
 >[!NOTE]
 >Feltene **Aktiva** og **Linjer** i **Detaljer**-gruppen i hurtigfanen **Hode** viser antall aktiva og linjer knyttet til den valgte vedlikeholdsrunden.
 
+Illustrasjonen nedenfor viser et eksempel på en vedlikeholdsrunding som inneholder tre aktiva.
+
 ![Figur 1](media/13-preventive-maintenance.png)
 
 
@@ -106,6 +106,8 @@ Når du har definert en vedlikeholdsrunde, kjører du en planleggingsjobb for å
 6. Klikk **OK**.
 
 7. Du kan nå vise vedlikeholdsrundejobbene i **Aktivastyring** > **Felles** > **Vedlikeholdsplan** > **Alle vedlikeholdsplaner** eller **Åpne vedlikeholdsplanlinjer**. Hvis de planlagte runden er koblet til en arbeidsordrepulje, kan du også se vedlikeholdsplanlinjer i **Åpne vedlikeholdsplanpuljer**. Vedlikeholdsplanlinjer som er opprettet fra en runde, har referansetypen Vedlikeholdsrunder.
+
+De to illustrasjonene nedenfor viser en planlagt jobb dialogboksen **Planlegg vedlikeholdsrunder** og linjer for vedlikeholdsplan som er opprettet i **Alle vedlikeholdsplaner**, som er basert på den planlagte jobben.
 
 ![Figur 2](media/14-preventive-maintenance.png)
 

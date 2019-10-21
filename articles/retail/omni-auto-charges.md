@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 47829a6fcae37e03510929dc46b942455016df0b
-ms.sourcegitcommit: ffc37f7c2a63bada3055f37856a30424040bc9a3
+ms.openlocfilehash: 829fa771003de7759b237d4499aa038040b46a3f
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "1577875"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2018044"
 ---
 # <a name="omni-channel-advanced-auto-charges"></a>Avanserte automatiske gebyrer for omnikanal
 
@@ -34,7 +34,7 @@ Dette emnet gir informasjon om konfigurasjon og distribusjon av funksjonen for a
 
 Når funksjonene for avanserte automatiske gebyrer er aktivert, kan ordrer som opprettes i en støttet detaljhandelskanal (salgssted, telefonsenter og online), dra nytte av konfigurasjonene for [automatisk gebyrer](https://docs.microsoft.com/dynamics365/unified-operations/retail/configure-call-center-delivery#define-charges-for-delivery-services) som er definert i ERP-programmet for både hode- og linjenivårelaterte gebyrer.
 
-I versjoner før Dynamics 365 for Retail versjon 10.0 er konfigurasjoner for [automatiske gebyrer](https://docs.microsoft.com/dynamics365/unified-operations/retail/configure-call-center-delivery#define-charges-for-delivery-services) bare tilgjengelige for ordrer som er opprettet i e-handels- og telefonsenterkanaler. I versjon 10.0 og senere kan ordrer opprettet på salgsstedet dra nytte av konfigurasjonene for automatiske gebyrer. På denne måten kan flere tillegg systematisk legges til salgstransaksjonene.
+I versjoner før Retail versjon 10.0 er konfigurasjoner for [automatiske gebyrer](https://docs.microsoft.com/dynamics365/unified-operations/retail/configure-call-center-delivery#define-charges-for-delivery-services) bare tilgjengelige for ordrer som er opprettet i e-handels- og telefonsenterkanaler. I versjon 10.0 og senere kan ordrer opprettet på salgsstedet dra nytte av konfigurasjonene for automatiske gebyrer. På denne måten kan flere tillegg systematisk legges til salgstransaksjonene.
 
 Ved bruk av versjoner før versjon 10.0 blir brukeren for salgsstedet bedt om å angi et fraktgebyr manuelt under opprettingen av en salgsstedstransaksjon av typen Send alle eller Valgt for forsendelse. Ettersom funksjonene for tilleggene i programmet brukes i forhold til hvordan gebyrene skrives til ordren, tilbys det ingen systematisk beregning. Beregningen er avhengig av brukerens inndata for å bestemme verdien på tillegget. Gebyrene kan bare legges til som en enkelt forsendelsesrelatert gebyrkode og kan ikke redigeres eller endres enkelt på salgsstedet etter at de er opprettet.
 

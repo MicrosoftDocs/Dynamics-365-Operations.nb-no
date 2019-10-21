@@ -1,6 +1,6 @@
 ---
 title: Oversikt over transportstyring
-description: Dette emnet gir en oversikt over transportstyringsfunksjoner i Microsoft Dynamics 365 for Finance and Operations.
+description: Dette emnet gir en oversikt over transportstyringsfunksjoner i Finance and Operations.
 author: MarkusFogelberg
 manager: AnnBe
 ms.date: 06/20/2017
@@ -18,20 +18,20 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 918167a3ab72b3d3665cf710d8e509417b94a056
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: d976ec4d3c294f0ce8e9732b21b9a429f1e47315
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1561178"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2027067"
 ---
 # <a name="transportation-management-overview"></a>Oversikt over transportstyring
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet gir en oversikt over transportstyringsfunksjoner i Microsoft Dynamics 365 for Finance and Operations.
+Dette emnet gir en oversikt over transportstyringsfunksjoner i Finance and Operations.
 
-Transportstyring lar deg bruke bedriftens transport, og lar deg også identifisere leverandør- og rutingsløsninger for innkommende og utgående bestillinger. Du kan for eksempel identifisere den raskeste ruten eller den billigste for en forsendelse. I tabellen nedenfor beskrives hovedscenariene for bruk av Transportstyring i Microsoft Dynamics 365 for Finance and Operations.
+Transportstyring lar deg bruke bedriftens transport, og lar deg også identifisere leverandør- og rutingsløsninger for innkommende og utgående bestillinger. Du kan for eksempel identifisere den raskeste ruten eller den billigste for en forsendelse. I tabellen nedenfor beskrives hovedscenariene for bruk av Transportstyring.
 
 <table>
 <colgroup>

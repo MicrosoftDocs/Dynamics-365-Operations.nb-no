@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 39d66bb9fd2e121b7ce842d869c2a0a0fa5fa8a5
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: a7acf4e5397ee7276b0f881f4859267371266de0
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1553444"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2249546"
 ---
 # <a name="inventory-journals"></a>Lagerjournaler
 
@@ -33,7 +33,7 @@ ms.locfileid: "1553444"
 
 Dette emnet beskriver hvordan du kan bruke lagerjournaler til å postere ulike typer transaksjoner for aktuell beholdning.
 
-Lagerjournaler i Microsoft Dynamics 365 for Finance and Operations brukes til å postere fysiske lagertransaksjoner av forskjellige typer, for eksempel postering av avganger og mottak, lagerbevegelser, oppretting av stykklister og avstemmingen av fysisk lager. Alle disse lagerjournalene brukes på lignende måte, men de er delt inn i forskjellige typer.
+Lagerjournaler i Supply Chain Management brukes til å postere fysiske lagertransaksjoner av forskjellige typer, for eksempel postering av avganger og mottak, lagerbevegelser, oppretting av stykklister og avstemmingen av fysisk lager. Alle disse lagerjournalene brukes på lignende måte, men de er delt inn i forskjellige typer.
 
 ## <a name="types-of-inventory-journals"></a>Typer lagerjournaler
 Følgende typer lagerjournaler er tilgjengelige:
@@ -68,7 +68,7 @@ Når du rapporterer en stykkliste som avsluttet, kan du opprette en stykklistejo
 
 ### <a name="item-arrival"></a>Vareankomst
 
-Du kan bruke vareankomstjournalen til å registrere mottak av varer (for eksempel fra bestillinger). En vareankomstjournal kan opprettes som en del av ankomstbehandlingen fra siden **Ankomstoversikt**, eller du kan manuelt opprette en journaloppføring fra siden **Vareankomst**. Hvis du aktiverer journalnavn for vareankomst for å kontrollere plukklokasjoner, søker Finance and Operations etter et sted for mottatte varer og, hvis det er plass, genererer lokasjonsmål for innkommende varer.
+Du kan bruke vareankomstjournalen til å registrere mottak av varer (for eksempel fra bestillinger). En vareankomstjournal kan opprettes som en del av ankomstbehandlingen fra siden **Ankomstoversikt**, eller du kan manuelt opprette en journaloppføring fra siden **Vareankomst**. Hvis du aktiverer journalnavn for vareankomst for å kontrollere plukklokasjoner, søker Supply Chain Management etter et sted for mottatte varer og, hvis det er plass, genererer lokasjonsmål for innkommende varer.
 
 ### <a name="production-input"></a>Produksjonsinnlevering
 
@@ -103,7 +103,7 @@ Dataenheter støtter følgende typer integrasjonsscenarioer:
 Hvis du vil ha mer informasjon, kan du se [Dataenheter](../../dev-itpro/data-entities/data-entities.md).
 
 > [!NOTE]
-> Ikke alle lagerjournaler er OData-aktivert. Derfor kan du ikke bruke Excel-datakoblingen for å hente data som er publisert, oppdatert og importert tilbake til Dynamics 365 for Finance and Operations. 
+> Ikke alle lagerjournaler er OData-aktivert. Derfor kan du ikke bruke Excel-datakoblingen for å hente data som er publisert, oppdatert og importert tilbake til Supply Chain Management. 
 
 En annen forskjell mellom journaldataenhetene er muligheten til å bruke sammensatte enheter som inneholder både hode- og linjedata. For øyeblikket kan du bruke de sammensatte enhetene for:
 -   Lagerjusteringsjournal

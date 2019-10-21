@@ -19,12 +19,12 @@ ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 961cc6fe5bd1bfbb0f5c9116024415a5d53f569e
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 4f91faa03718830474e8e2a79015955bcad1d02e
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1522203"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2249975"
 ---
 # <a name="routes-and-operations"></a>Ruter og operasjoner
 
@@ -35,7 +35,7 @@ Dette emnet gir informasjon om ruter og operasjoner. En rute definerer prosessen
 <a name="overview"></a>Oversikt
 --------
 
-En rute beskriver rekkefølgen for operasjonene som kreves for å produsere et produkt eller en produktvariant. For hver operasjon definerer ruten også operasjonsressurser som kreves, tiden som kreves for å definere og utføre operasjonen, og hvordan kostnader skal beregnes. Du kan bruke samme rute for å produsere flere produkter, eller du kan definere en unik rute for hvert produkt eller produktvariant. Du kan også ha flere ruter for samme produkt. I dette tilfellet varierer ruten som brukes, avhengig av faktorer som antallet som skal produseres. Definisjonen av en rute i Microsoft Dynamics 365 for Finance and Operations består av fire separate elementer som sammen beskriver produksjonsprosessen:
+En rute beskriver rekkefølgen for operasjonene som kreves for å produsere et produkt eller en produktvariant. For hver operasjon definerer ruten også operasjonsressurser som kreves, tiden som kreves for å definere og utføre operasjonen, og hvordan kostnader skal beregnes. Du kan bruke samme rute for å produsere flere produkter, eller du kan definere en unik rute for hvert produkt eller produktvariant. Du kan også ha flere ruter for samme produkt. I dette tilfellet varierer ruten som brukes, avhengig av faktorer som antallet som skal produseres. Definisjonen av en rute i Finance and Operations består av fire separate elementer som sammen beskriver produksjonsprosessen:
 
 -   **Rute** – En rute som definerer strukturen til produksjonsprosessen. Den definerer med andre ord rekkefølgen av operasjonene.
 -   **Operasjon** – En operasjon angir et navngitt trinn i en rute som **Montering**. Den samme operasjonen kan forekomme i flere ruter og kan ha forskjellige operasjonsnumre.
@@ -43,7 +43,7 @@ En rute beskriver rekkefølgen for operasjonene som kreves for å produsere et p
 -   **Ruteversjon** – En ruteversjon definerer ruten som brukes til å produsere et produkt eller en produktvariant. Ruteversjoner aktivere ruter som skal brukes på nytt på tvers av produkter eller endres over tid. De kan også aktivere forskjellige ruter som skal brukes til å produsere det samme produktet. I dette tilfellet varierer ruten som brukes, avhengig av faktorer som lokasjon eller antallet som skal produseres.
 
 ## <a name="routes"></a>Ruter
-En rute beskriver rekkefølgen for operasjonene som brukes for å produsere et produkt eller en produktvariant. Hver operasjon er tilordnet et operasjonsnummer og en etterfølgende operasjon. Rekkefølgen på operasjonene danner et rutenettverk som representeres av et styrt diagram som har ett eller flere startpunkter og ett enkelt sluttpunkt. I Finance and Operations skilles det mellom ruter basert på strukturtypen. De to rutetypene er enkle ruter og rutenettverk. I Parametere for produksjonskontroll kan du angi om bare enkle ruter kan brukes eller om de mer kompliserte rutenettverkene kan brukes.
+En rute beskriver rekkefølgen for operasjonene som brukes for å produsere et produkt eller en produktvariant. Hver operasjon er tilordnet et operasjonsnummer og en etterfølgende operasjon. Rekkefølgen på operasjonene danner et rutenettverk som representeres av et styrt diagram som har ett eller flere startpunkter og ett enkelt sluttpunkt. I Supply Chain Management skilles det mellom ruter basert på strukturtypen. De to rutetypene er enkle ruter og rutenettverk. I Parametere for produksjonskontroll kan du angi om bare enkle ruter kan brukes eller om de mer kompliserte rutenettverkene kan brukes.
 
 ### <a name="simple-routes"></a>Enkle ruter
 
@@ -51,7 +51,7 @@ En enkel rute er sekvensielle, og det er bare ett startpunkt for ruten.
 
 [![Enkel rute](./media/routes-and-operations-1-simple-route.png)](./media/routes-and-operations-1-simple-route.png)  
 
-Hvis du bruker bare enkle ruter i Parametere for produksjonskontroll, genererer Finance and Operations automatisk operasjonsnumrene (10, 20, 30 og så videre) når du definerer ruten.
+Hvis du bruker bare enkle ruter i Parametere for produksjonskontroll, genererer Supply Chain Management automatisk operasjonsnumrene (10, 20, 30 og så videre) når du definerer ruten.
 
 ### <a name="route-networks"></a>Rutenettverk
 
@@ -85,7 +85,7 @@ Hver rute kan godkjennes eller ikke godkjennes separat. Legg imidlertid merke ti
 Hvis du må ha en logg som registrerer hvem som godkjenner hver rute, kan du kreve elektroniske signaturer for rutegodkjenning. Brukerne må bekrefte sin identitet ved hjelp av en [elektronisk signatur](../../fin-and-ops/organization-administration/electronic-signature-overview.md).
 
 ## <a name="operations"></a>Operations
-En operasjon er et trinn i produksjonsprosessen. I Finance and Operations har hver operasjon en ID og en enkel beskrivelse. Tabellene nedenfor viser vanlige eksempler på operasjoner fra en maskinproduksjon.
+En operasjon er et trinn i produksjonsprosessen. Hver operasjon en ID og en enkel beskrivelse. Tabellene nedenfor viser vanlige eksempler på operasjoner fra en maskinproduksjon.
 
 | Operasjon  | beskrivelse        |
 |------------|--------------------|
@@ -126,7 +126,7 @@ Operasjonsrelasjoner gir deg stor fleksibilitet når du definerer rutene. Muligh
 
 ### <a name="modifying-product-specific-routes"></a>Endre produktspesifikke ruter
 
-Når du åpner **Rute**-siden fra siden **Detaljer om frigitt produkt**, vises ruteversjonene som er knyttet til det valgte frigitte produktet. I denne konteksten viser Finance and Operations operasjonsegenskapene for hver operasjon fra operasjonsrelasjonen som samsvarer best med ruteversjonen. Du vil legge merke til at listen over operasjoner inneholder egenskapene **Varekode** og **Rutekode** fra operasjonsrelasjonen. Derfor kan du bestemme hvilken operasjonsrelasjon som vises.  
+Når du åpner **Rute**-siden fra siden **Detaljer om frigitt produkt**, vises ruteversjonene som er knyttet til det valgte frigitte produktet. I denne konteksten viser Supply Chain Management operasjonsegenskapene for hver operasjon fra operasjonsrelasjonen som samsvarer best med ruteversjonen. Du vil legge merke til at listen over operasjoner inneholder egenskapene **Varekode** og **Rutekode** fra operasjonsrelasjonen. Derfor kan du bestemme hvilken operasjonsrelasjon som vises.  
 
 På **Rute**-siden kan du endre operasjonsegenskapene for operasjonen, for eksempel operasjonstiden eller kostnadskategoriene. Endringene lagres på operasjonsrelasjonen som er spesifikk for ruten og frigitt produkt som er referert til i gjeldende ruteversjon. Hvis operasjonsrelasjonen som vises ikke er spesifikk for ruten og det frigitte produktet, oppretter systemet en kopi av operasjonsrelasjonen før endringene lagres. Denne kopien *er* spesifikk for ruten og det frigitte produktet. Endringen påvirker derfor ikke andre ruter eller frigitte produkter. Hvis du vil kontrollere hvilken operasjonsrelasjon som endres på **Rute**-siden, kan du se på feltene **Varekode** og **Rutekode**.  
 
@@ -149,9 +149,9 @@ Hvis virksomheten din bruker standardoperasjoner og operasjonsparameterne er de 
 
 ### <a name="applying-operation-relations"></a>Bruke operasjonsrelasjoner
 
-I noen tilfeller må Finance and Operations først finner operasjonsegenskapene for en operasjon. Når for eksempel en bestilling opprettes, må operasjonsegenskapene for hver operasjon kopieres fra operasjonsrelasjonene til produksjonsruten. I slike tilfeller søker Finance and Operations etter relevante operasjonsrelasjoner fra den mest spesifikke kombinasjonen til den minst spesifikke kombinasjonen.  
+I noen tilfeller må Supply Chain Management først finner operasjonsegenskapene for en operasjon. Når for eksempel en bestilling opprettes, må operasjonsegenskapene for hver operasjon kopieres fra operasjonsrelasjonene til produksjonsruten. I slike tilfeller søker Supply Chain Management etter relevante operasjonsrelasjoner fra den mest spesifikke kombinasjonen til den minst spesifikke kombinasjonen.  
 
-Når Finance and Operations søker etter den mest relevante operasjonsrelasjonen for et frigitt produkt, vil en aktivitetsplan som samsvarer med vare-ID-en til det frigitte produktet, foretrekkes fremfor en operasjonsrelasjon som samsvarer med varegruppe-ID-en. En operasjonsrelasjon som samsvarer med varegruppe-ID-en foretrekkes fremfor standard operasjonsrelasjon. Søket utføres i følgende rekkefølge:
+Når Supply Chain Management søker etter den mest relevante operasjonsrelasjonen for et frigitt produkt, vil en aktivitetsplan som samsvarer med vare-ID-en til det frigitte produktet, foretrekkes fremfor en operasjonsrelasjon som samsvarer med varegruppe-ID-en. En operasjonsrelasjon som samsvarer med varegruppe-ID-en foretrekkes fremfor standard operasjonsrelasjon. Søket utføres i følgende rekkefølge:
 
 1.  **Varekode**=**Tabell** og **Varerelasjon**=&lt;vare-ID&gt;
 2.  **Varekode**=**Gruppe** og **Varerelasjon**=&lt;varegruppe-ID&gt;
@@ -198,7 +198,7 @@ Avhengig av dine forretningsbehov kan du kanskje redusere arbeidet som kreves fo
 
 ### <a name="making-routes-independent-of-resources"></a>Gjøre ruter uavhengige av ressurser
 
-I mange systemer må operasjonsressursene eller ressursgruppen som utfører en operasjon angis i ruten. I Finance and Operations kan du imidlertid definere et sett med krav som en operasjonsressurs må oppfylle for å kunne brukes for operasjonen. Den spesifikke operasjonsressursen eller ressursgruppen som skal brukes, trenger derfor ikke å bestemmes før operasjonen faktisk er planlagt. Denne funksjonen er spesielt nyttig når du har mange arbeidere eller maskiner som kan utføre den samme operasjonen.  
+I mange systemer må operasjonsressursene eller ressursgruppen som utfører en operasjon angis i ruten. I Supply Chain Management kan du imidlertid definere et sett med krav som en operasjonsressurs må oppfylle for å kunne brukes for operasjonen. Den spesifikke operasjonsressursen eller ressursgruppen som skal brukes, trenger derfor ikke å bestemmes før operasjonen faktisk er planlagt. Denne funksjonen er spesielt nyttig når du har mange arbeidere eller maskiner som kan utføre den samme operasjonen.  
 
 Du angir for eksempel at en operasjon krever en operasjonsressurs av typen **Maskin** som tillater **Stempling** opptil 20 tonn. Planleggingsmotoren vil deretter løse disse kravene til en bestemte operasjonsressurs eller ressursgruppe når operasjonen planlegges. Du har mye større fleksibilitet siden du kan angi disse kravene i stedet for å binde operasjonen til en bestemt maskin. I tillegg er vedlikehold enklere når ressurser flyttes eller nye ressurser legges til.  
 

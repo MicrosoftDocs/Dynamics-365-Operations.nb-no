@@ -1,6 +1,6 @@
 ---
-title: Hva er nytt eller endret i Dynamics 365 for Talent (27. februar 2019)?
-description: Dette emnet beskriver funksjoner som enten er nye eller endret i Microsoft Dynamics 365 for Talent.
+title: Hva er nytt eller endret i Dynamics 365 Talent (27. februar 2019)?
+description: Dette emnet beskriver funksjoner som enten er nye eller endret i Microsoft Dynamics 365 Talent.
 author: Darinkramer
 manager: AnnBe
 ms.date: 02/27/2019
@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-02-27
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: d8e6a02b43ad60e3a0c4382f98cb808066587da7
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: f175c6e60cf87c7dcbde0eaf35357130fa035712
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1518732"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2024005"
 ---
-# <a name="whats-new-or-changed-in-dynamics-365-for-talent-february-27-2019"></a>Hva er nytt eller endret i Dynamics 365 for Talent (27. februar 2019)?
+# <a name="whats-new-or-changed-in-dynamics-365-talent-february-27-2019"></a>Hva er nytt eller endret i Dynamics 365 Talent (27. februar 2019)?
 
 [!include [banner](includes/banner.md)]
 
-Dette emnet beskriver funksjoner som enten er nye eller endret i Microsoft Dynamics 365 for Talent.
+Dette emnet beskriver funksjoner som enten er nye eller endret i Microsoft Dynamics 365 Talent.
 
 ## <a name="changes-in-attract"></a>Endringer i Attract
 
@@ -77,9 +77,9 @@ Denne versjonen inneholder andre mindre feilrettinger.
 
 I mange organisasjoner kan kompensasjons- og fordelsansvarlige bare ha tilgang til bestemte kompensasjonsposter. Disse oppføringene kan være for ledere eller regionale ansatte. Med denne endringen kan HR-personale administrere og vedlikeholde kompensasjonsplanene for ulike ansattgrupper i organisasjonen. Sikkerhetsroller som kan tilordnes til faste og variable planer, bestemmer tilgangen til disse planene og ansattdataene som er knyttet til dem (for eksempel lønnsinformasjon og bonusposter). Bare rollene som har den angitte tilgangen, vil kunne behandle kompensasjon for disse ansatte.
 
-### <a name="platform-update-24"></a>Plattform update 24
+### <a name="platform-update-24-for-finance-and-operations"></a>Platform update 24 for Finance and Operations
 
-Hvis du vil ha mer informasjon om Microsoft Dynamics 365 for Finance and Operations Plattformoppdatering 24 (mars 2019), kan du se [forhåndsvisningsfunksjonene i Finance and Operations Plattformoppdatering 24 (mars 2019)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-24).
+Hvis du vil ha mer informasjon om Platform update 24 for Microsoft Dynamics 365 Finance and Operations (mars 2019), kan du se [forhåndsvisningsfunksjonene i Platform update 24 for Finance and Operations (mars 2019)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-24).
 
 ### <a name="make-employee-fixed-compensation-available-for-future-position-assignments"></a>Gjør fast kompensasjon for ansatte tilgjengelig for fremtidige stillingstilordninger
 
@@ -87,10 +87,10 @@ Det er vanlig at ansatte som deltar i en organisasjon, har en fremtidig startdat
 
 ## <a name="known-issues"></a>Kjente problemer
 
-### <a name="changes-to-the-core-hr-integration-template-talent-common-data-service-to-finance-and-operations"></a>Endringer i Core HR-integrasjonsmalen (Talent Common Data Service til Finance and Operations)
+### <a name="changes-to-the-core-hr-integration-template-talent-common-data-service-to-finance"></a>Endringer i Core HR-integrasjonsmalen (Talent Common Data Service til Finance)
 Malen for Core HR er oppdatert til en "avansert spørringsmal". Som standard vil derfor den avanserte spørringen være tilgjengelig for prosjekter som opprettes ved hjelp av denne malen. I tillegg vil eventuelle standardfunksjoner bare være synlige i redigeringsprogrammet for avansert spørring. (Standard tilordningsfunksjoner vises som "FN" i tilordningene.)
 
-Hvis du vil ha mer informasjon om tilordningsfeil, kan du se [Hva er nytt eller endret i Dynamics 365 for Talent Core HR (14. desember 2018)](https://docs.microsoft.com/dynamics365/unified-operations/talent/whats-new-talent-december-14).
+Hvis du vil ha mer informasjon om tilordningsfeil, kan du se [Hva er nytt eller endret i Dynamics 365 Talent: Core HR (14. desember 2018)](https://docs.microsoft.com/dynamics365/unified-operations/talent/whats-new-talent-december-14).
 
 For å bruke den nye malen oppretter du et nytt prosjekt og velger den nye Talent-integrasjonsmalen.
 

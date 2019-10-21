@@ -19,12 +19,12 @@ ms.search.industry: Distribution
 ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3f740ab481b8663ecc29169eee1ead5ff23bb3f5
-ms.sourcegitcommit: e286572ce94a9442a5b3076c3ff5b429be0ed512
+ms.openlocfilehash: 3c1989f11563db343129c678623725e2e61b27fc
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "1866143"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2251480"
 ---
 # <a name="replenishment-overview"></a>Oversikt over etterfylling
 
@@ -55,7 +55,7 @@ Etterfylling av behov støttes for salgsordrer, overføringsordrer, produksjonso
 ## <a name="minmax-replenishment"></a>Etterfylling basert på minimums- og maksimumsantall
 I etterfylling basert på minimums- og maksimumsantall etterfylles lageret slik at det er mellom minimums- og maksimumsgrensene som er angitt. Vanligvis skjer denne prosessen en gang hver dag for å sikre at alle plukklokasjoner fylles til maksimumsnivået før plukkingen starter. 
 
-Minimums- og maksimumsantallet angis i en etterfyllingsmal. Mange av de andre innstillingene i malen ligner på innstillinger i malene som brukes etterfylling basert på bølgebehov. Malen må inneholde én linje for hver vare og lokasjon. Når du kjører etterfylling ved hjelp av den satsvise jobben, evaluerer Microsoft Dynamics 365 for Finance and Operations om etterfylling kreves, ved å bruke rekkefølgen linjene er organisert i. 
+Minimums- og maksimumsantallet angis i en etterfyllingsmal. Mange av de andre innstillingene i malen ligner på innstillinger i malene som brukes etterfylling basert på bølgebehov. Malen må inneholde én linje for hver vare og lokasjon. Når du kjører etterfylling ved hjelp av den satsvise jobben, evaluerer systemet om etterfylling kreves, ved å bruke rekkefølgen linjene er organisert i. 
 
 Vær oppmerksom på at strategien for etterfylling basert på minimums- og maksimumsantall ikke kan etterfylle en tom lokasjon med mindre lokasjonen er definert som fast lokasjon for varen. Hvis lokasjonen som skal etterfylles ikke er en fast lokasjon, kan ikke systemet fastsette hvilket element som skal etterfylles. Derfor kreves det minst noe beholdning før etterfylling oppstår.
 

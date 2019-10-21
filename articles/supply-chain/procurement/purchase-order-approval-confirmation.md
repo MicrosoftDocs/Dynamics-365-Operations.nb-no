@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: fdahl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e274f52484d3fe1884152f155b6b7f0714f8842e
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 58ff596314d348a465ba6ee23369f09e74d580eb
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1572702"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2248886"
 ---
 # <a name="approve-and-confirm-purchase-orders"></a>Godkjenne og bekrefte bestillinger
 
@@ -39,7 +39,7 @@ Når du har opprettet en bestilling, må den kanskje går gjennom en godkjenning
 ## <a name="approval-of-purchase-orders"></a>Godkjenne bestillinger
 Bestillinger som ikke bruker endringsadministrasjon har statusen **Godkjent** så snart de er opprettet, mens bestillinger som bruker endringsadministrasjon har statusen **Utkast** når de opprettes. En bestilling som er opprettet ved å autorisere en planlagt bestilling fra hovedplanlegging, settes alltid til statusen **Godkjent**, uavhengig av innstillingene for endringsadministrasjon. En bestilling oppretter bare lagertransaksjoner når den får statusen **Godkjent**. Derfor vises ikke denne beholdningen som tilgjengelige for reservasjon eller merking før ordren er godtatt.  
 
-Du aktiverer endringsadministrasjon for bestillinger ved å angi alternativet **Aktiver endringsadministrasjon** på siden **Parametere for innkjøp og leverandører**. Når endringsadministrasjon er aktivert, må bestillinger gå gjennom en arbeidsflyt for godkjenning etter at de er fullført. Microsoft Dynamics 365 for Finance and Operations har et redigeringsprogram for arbeidsflytprosess der du kan definere en arbeidsflyt til å representere din godkjenningsprosess. Denne arbeidsflyten kan inneholde regler for automatisk godkjenning, regler som bestemmer hvem som skal tilordnes til godkjenning av bestemte bestillinger og regler for eskalering av en arbeidsflyt som har ventet godkjenning i lang tid. For alle aktivere prosessen for endringsadministrasjon for alle eller bestemte leverandører. Du kan også definere prosessen slik at den kan overstyres for individuelle bestillinger.  
+Du aktiverer endringsadministrasjon for bestillinger ved å angi alternativet **Aktiver endringsadministrasjon** på siden **Parametere for innkjøp og leverandører**. Når endringsadministrasjon er aktivert, må bestillinger gå gjennom en arbeidsflyt for godkjenning etter at de er fullført. Supply Chain Management har et redigeringsprogram for arbeidsflytprosess der du kan definere en arbeidsflyt til å representere din godkjenningsprosess. Denne arbeidsflyten kan inneholde regler for automatisk godkjenning, regler som bestemmer hvem som skal tilordnes til godkjenning av bestemte bestillinger og regler for eskalering av en arbeidsflyt som har ventet godkjenning i lang tid. For alle aktivere prosessen for endringsadministrasjon for alle eller bestemte leverandører. Du kan også definere prosessen slik at den kan overstyres for individuelle bestillinger.  
 
 Når endringsadministrasjon er aktivert, går bestillinger gjennom seks godkjenningsstatuser, fra **Utkast** til **Sluttført**. Når en ordre er godkjent, må brukere som vil endre den bruke handlingen **Be om endring**.
 
@@ -55,7 +55,7 @@ Når endringsadministrasjon er aktivert, går bestillinger gjennom seks godkjenn
 ## <a name="confirming-purchase-orders"></a>Bekrefte bestillinger
 Bestillinger som har godkjenningsstatusen **Godkjent** kan gå gjennom flere trinn før de er bekreftet. Det kan hende du for eksempel må sende en forespørsel om innkjøp til leverandøren for å spørre om priser, rabatter og leveringsdatoer. I så fall kan du sette bestillingen til statusen **Til eksterne vurdering** ved hjelp av handlingen **Innkjøpsforespørsel**.  
 
-Leverandører som er konfigurert til å bruke leverandørportalen, kan se gjennom bestillinger på portalen og godkjenne eller avvise dem. Under denne vurderingsprosessen har bestillingen statusen **Til eksterne vurdering**. Leverandørportalen kan konfigureres slik at en bekreftelse fra leverandøren automatisk bekrefter ordren i Finance and Operations. Du kan også manuelt bekrefte en bestilling når du mottar bekreftelse fra leverandøren. Hvis en leverandør avviser en bestilling, mottas avvisningen sammen med årsaken til avvisningen og forslag til endringer. I slike tilfeller forblir statusen for bestillingen **Til eksterne vurdering**.  
+Leverandører som er konfigurert til å bruke leverandørportalen, kan se gjennom bestillinger på portalen og godkjenne eller avvise dem. Under denne vurderingsprosessen har bestillingen statusen **Til eksterne vurdering**. Leverandørportalen kan konfigureres slik at en bekreftelse fra leverandøren automatisk bekrefter ordren i Supply Chain Management. Du kan også manuelt bekrefte en bestilling når du mottar bekreftelse fra leverandøren. Hvis en leverandør avviser en bestilling, mottas avvisningen sammen med årsaken til avvisningen og forslag til endringer. I slike tilfeller forblir statusen for bestillingen **Til eksterne vurdering**.  
 
 Det er også et alternativ for å generere en proformabekreftelse for en ordre før den faktiske bekreftelsen er behandlet. Dette alternativet oppretter bare en rapport som du kan dele med leverandøren. Det opprettes ikke journalinformasjon.  
 

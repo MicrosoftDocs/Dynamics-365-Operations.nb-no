@@ -1,6 +1,6 @@
 ---
 title: Komme i gang med Onboard
-description: Dette emnet vil hjelpe deg med å komme i gang med Microsoft Dynamics 365 for Talent - Onboard. Onboard hjelper de nyansatte med å få en sterk start ved å gi dem en veiledning som tar dem problemfritt gjennom innføringsprosessen.
+description: Dette emnet vil hjelpe deg med å komme i gang med Microsoft Dynamics 365 Talent – Onboard. Onboard hjelper de nyansatte med å få en sterk start ved å gi dem en veiledning som tar dem problemfritt gjennom innføringsprosessen.
 author: andreabichsel
 manager: ''
 ms.date: 06/21/2019
@@ -16,18 +16,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Talent July 2017 update
-ms.openlocfilehash: 6526f320be7d18af92406149633b3e15d0be2291
-ms.sourcegitcommit: 9f762fa89c5b432667aa156c22d679a7f601952d
+ms.openlocfilehash: 97082533831d592817e54e77469a3e22b0b47610
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 07/08/2019
-ms.locfileid: "1731219"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2008134"
 ---
 # <a name="get-started-with-onboard"></a>Komme i gang med Onboard
 
 [!include [banner](includes/banner.md)]
 
-Ved å bruke Microsoft Dynamics 365 for Talent: Onboard kan du hjelpe de nyansatte med å jobbe mer effektivt og få en følelse av tilhørighet i den nye rollen. En effektiv innføringsprosess hjelper nyansatte med å forstå sine nye roller. Den gir dem også en god start ved å etablere verdifulle relasjoner som vil bidra til at de lykkes.
+Ved å bruke Microsoft Dynamics 365 Talent: Onboard kan du hjelpe de nyansatte med å jobbe mer effektivt og få en følelse av tilhørighet i den nye rollen. En effektiv innføringsprosess hjelper nyansatte med å forstå sine nye roller. Den gir dem også en god start ved å etablere verdifulle relasjoner som vil bidra til at de lykkes.
 
 Med Onboard kan du raskt opprette en jobbintroduksjonsveiledning som ønsker nyansatte velkommen og gjør dem glad for å bli med i organisasjonen.
 

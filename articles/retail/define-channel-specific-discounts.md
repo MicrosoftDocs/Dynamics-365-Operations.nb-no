@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: scotttuc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: a136e245beaf8dfd8bcf19d49f8a355c8871cde7
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: a23176cefde1f4d119828c9b124750d6106a3bfa
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1568074"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2019353"
 ---
 # <a name="define-channel-specific-discounts"></a>Definer kanalspesifikke rabatter
 
@@ -36,7 +36,7 @@ Forhandlere angir ofte ulike rabatter i forskjellige kanaler. Dette emnet beskri
 
 Forhandlere tilbyr ofte ulike rabatter i forskjellige kanaler. Det kan gjøres for å målrette lokale markedsforhold eller for å forholde seg til konkurrerende forhandlere.
 
-Microsoft Dynamics 365 for Retail bruker prisgrupper til å definere kanalspesifikke rabatter. Prisgrupper kan tilordnes til én eller flere av følgende enheter: kanaler, kataloger, tilknytninger og fordelsprogrammer. Denne artikkelen inneholder informasjon om kanaler, men de samme konseptene gjelder for katalograbatter, tilknytningsrabatter og lojalitetsrabatter.
+Retail bruker prisgrupper til å definere kanalspesifikke rabatter. Prisgrupper kan tilordnes til én eller flere av følgende enheter: kanaler, kataloger, tilknytninger og fordelsprogrammer. Denne artikkelen inneholder informasjon om kanaler, men de samme konseptene gjelder for katalograbatter, tilknytningsrabatter og lojalitetsrabatter.
 
 ## <a name="price-groups"></a>Prisgrupper
 

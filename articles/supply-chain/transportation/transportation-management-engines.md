@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: dff811723e25952b4c5af20262010ff4b910be7f
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 40539d649d3ee43fea8dc71f608dd6281d1c0e39
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1554005"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2251690"
 ---
 # <a name="transportation-management-engines"></a>Transportbehandlingsmotorer
 
@@ -31,15 +31,15 @@ ms.locfileid: "1554005"
 
 Transportbehandlingsmotorer definerer logikken som brukes til å generere og behandle transportsatser i transportbehandling. 
 
-En transportbehandlingsmotor beregner oppgaver, for eksempel transportørens transportsats. Med motorsystemet kan du endre beregningsstrategier under kjøring, basert på data i Microsoft Dynamics 365 for Finance and Operations. En transportbehandlingsmotor ligner en plugin-modul som er relatert til en bestemt transportørkontrakt.
+En transportbehandlingsmotor beregner oppgaver, for eksempel transportørens transportsats. Med motorsystemet kan du endre beregningsstrategier under kjøring, basert på data i Supply Chain Management. En transportbehandlingsmotor ligner en plugin-modul som er relatert til en bestemt transportørkontrakt.
 
 ## <a name="what-engines-are-available"></a>Hvilke motorer er tilgjengelige?
-Tabellen nedenfor viser transportbehandlingsmotorene som er tilgjengelige i Microsoft Dynamics 365 for Finance and Operations.
+Tabellen nedenfor viser transportbehandlingsmotorene som er tilgjengelige.
 
-| Transportbehandlingmotor | beskrivelse                                                                                                                                                                                                                                                                                                                 |
+| Transportbehandlingmotor | Beskrivelse                                                                                                                                                                                                                                                                                                                 |
 |----------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Ratemotor**                  | Beregn satser.                                                                                                                                                                                                                                                                                                           |
-| **Generell motor**               | Enkle hjelpemotorer som brukes av andre søkemotorer som ikke krever data fra Microsoft Dynamics 365 for Finance and Operations, for eksempel en fordelingsmotor. Fordelingsmotorer brukes til å redusere de endelige kostnadene for transport for bestemte ordrer og linjer, basert på dimensjoner, for eksempel volum og vekt. |
+| **Generell motor**               | Enkle hjelpemotorer som brukes av andre søkemotorer som ikke krever data fra Supply Chain Management, for eksempel en fordelingsmotor. Fordelingsmotorer brukes til å redusere de endelige kostnadene for transport for bestemte ordrer og linjer, basert på dimensjoner, for eksempel volum og vekt. |
 | **Kjørelengdemotor**               | Beregner transportavstanden.                                                                                                                                                                                                                                                                                     |
 | **Transittidmotor**          | Beregner tiden det tar å reise fra startstedet til bestemmelsesstedet.                                                                                                                                                                                                                                       |
 | **Sonemotor**                  | Beregner sonen basert på gjeldende adresse, og beregner antall soner som må krysses for å reise fra adresse A til adresse B.                                                                                                                                                                    |
@@ -62,23 +62,23 @@ I de fleste tilfeller kan du klikke **Parametere**-knappen i oppsettskjemaene fo
 |          Parameter           |                                                                                  Beskrivelse                                                                                  |
 |------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |  <em>RateBaseAssigner</em>   | .NET-typen som tolker dataene for tilordning av satsgrunnlag for et bestemt skjema. Syntaksen for parameterverdien består av to segmenter som er avgrenset av en loddrett strek ( |
-|  <em>MileageEngineCode</em>  |                       Kode for kjørelengdemotor som identifiserer posten for kjørelengdemotor i Microsoft Dynamics 365 for Finance and Operations-databasen.                        |
-| <em>ApportionmentEngine</em> |                        Kode for generell motor som identifiserer fordelingsmotoren i Microsoft Dynamics 365 for Finance and Operations-databasen.                        |
+|  <em>MileageEngineCode</em>  |                       Kode for kjørelengdemotor som identifiserer posten for kjørelengdemotor i databasen.                        |
+| <em>ApportionmentEngine</em> |                        Kode for generell motor som identifiserer fordelingsmotoren i databasen.                        |
 
 <a name="how-is-metadata-used-in-transportation-management-engines"></a>Hvordan brukes metadata i transportbehandlingsmotorer?
 ----------------------------------------------------------
 
-Transportbehandlingsmotorer som er avhengige av data som er definert i Dynamics 365 for Finance and Operations, kan bruke forskjellige dataskjemaer. Transportbehandlingssystemet aktiverer ulike transportbehandlingsmotorer til å bruke de samme generelle fysiske databasetabellene. Hvis du vil sikre at kjøretidstolkingen av motordataene er riktig, kan du definere metadata for databasetabellene. Dette reduserer kostnadene ved bygging av nye transportbehandlingsmotorer fordi flere tabell- og skjemastrukturer ikke er nødvendig i Operations.
+Transportbehandlingsmotorer som er avhengige av data som er definert i Supply Chain Management kan bruke forskjellige dataskjemaer. Transportbehandlingssystemet aktiverer ulike transportbehandlingsmotorer til å bruke de samme generelle fysiske databasetabellene. Hvis du vil sikre at kjøretidstolkingen av motordataene er riktig, kan du definere metadata for databasetabellene. Dette reduserer kostnadene ved bygging av nye transportbehandlingsmotorer fordi flere tabell- og skjemastrukturer ikke er nødvendig i Operations.
 
 ## <a name="what-can-be-used-as-search-data-in-rate-calculations"></a>Hva kan brukes som søkedata i satsberegninger?
-Dataene som du bruker når du beregner satser i Microsoft Dynamics 365 for Finance and Operations, kontrolleres av metadatakonfigurasjonen. Hvis du for eksempel vil søke etter satser basert på postnumre, må du definere metadata som er basert på oppslagstypen for et postnummer.
+Dataene som du bruker når du beregner satser, kontrolleres av metadatakonfigurasjonen. Hvis du for eksempel vil søke etter satser basert på postnumre, må du definere metadata som er basert på oppslagstypen for et postnummer.
 
 ## <a name="do-all-engine-configurations-require-metadata"></a>Krever alle motorkonfigurasjoner metadata?
 Nei, transportbehandlingsmotorer som brukes til å hente dataene som kreves for satsberegning fra eksterne systemer, trenger ikke metadata. Satsdataene for disse motorene kan hentes fra eksterne transportsystemer, vanligvis via en webtjeneste. Du kan for eksempel bruke en kjørelengdemotor som henter data direkte fra Bing-kart, slik at du ikke trenger et metadata for denne motoren.
 
 | **Obs!**                                                                                                                                                                                                                                                                                                                                                                     |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Transportbehandlingsmotorer som leveres med  Finance and Operations, bruker data som hentes fra programmet. Søkemotorer som kobler til eksterne systemer, er ikke inkludert i Operations. Den motorbaserte utvidelsesmodellen lar deg imidlertid bygge tillegg ved hjelp av Visual Studio Tools for Microsoft Dynamics 365 for Finance and Operations. |
+| Transportbehandlingsmotorer som leveres med Supply Chain Management, bruker data som hentes fra programmet. Søkemotorer som kobler til eksterne systemer, er ikke inkludert i Operations. Den motorbaserte utvidelsesmodellen lar deg imidlertid bygge tillegg ved hjelp av Visual Studio Tools. |
 
 ## <a name="how-do-i-configure-metadata-for-a-transportation-management-engine"></a>Hvordan konfigurerer jeg metadataene for en transportbehandlingsmotor?
 Metadata for transportbehandlingsmotorer konfigureres forskjellig for ulike typer motorer.
@@ -99,8 +99,3 @@ Metadata for transportbehandlingsmotorer konfigureres forskjellig for ulike type
 | 3        | Første målpostnummer | Tildeling | Streng    | Postnummer    | Valgt  |
 | 4        | Siste målpostnummer   | Tildeling | Streng    | Postnummer    | Valgt  |
 | 5        | Målland           | Tildeling | Streng    | Land/område |           |
-
-
-
-
-

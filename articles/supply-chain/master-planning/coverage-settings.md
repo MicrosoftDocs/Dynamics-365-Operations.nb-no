@@ -3,7 +3,7 @@ title: Dekningsinnstillinger
 description: Dette emnet inneholder informasjon om dekningsinnstillingene som hovedplanlegging bruker til å beregne varebehov.
 author: roxanadiaconu
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 09/13/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 99e094a7131b6d3a299fc72abd0141529908ddd2
-ms.sourcegitcommit: 9e50bee6a67f0fe2fa6f86e02c7e8de16d0e2482
+ms.openlocfilehash: 3a63184852751bb65fb7e80d721f8c48fd847609
+ms.sourcegitcommit: edfd805356894710488ce07cb1c89313f448b222
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/08/2019
-ms.locfileid: "1538900"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "1998977"
 ---
 # <a name="coverage-settings"></a>Dekningsinnstillinger
 
@@ -49,6 +49,19 @@ Du kan angi dekningsinnstillinger på flere måter:
 - Angi dekningsinnstillinger for en dimensjonsgruppe.
 
     Gå til **Behandling av produktinformasjon &gt; Produkter &gt; Frigitte produkter**. På **Detaljer om frigitt produkt**-siden, i hurtigfanen **Generelt** i **Administrasjon**-delen, velger du koblingen i feltet **Lagringsdimensjonsgruppe**. På **Lagringsdimensjonsgrupper**-siden merker du av for **Dekningsplanlegg etter dimensjon** for å opprette dekningsinnstillinger for en dimensjon i lagringsdimensjonsgruppen. Feltet **Dekningsplanlegg etter dimensjon** må være valgt for alle produktdimensjoner, for eksempel konfigurasjon, farge, størrelse og stil.
+
+
+## <a name="coverage-codes"></a>Dekningskoder
+
+Hovedplanlegging kan konfigureres til å bruke forskjellige metoder for etterfylling. Metodene for etterfylling eller justering av partistørrelse er teknikkene som brukes av systemet for å fastslå den satsvise størrelsen for kjøpte eller produserte varer. 
+
+Hver etterfyllingsmetode tilordnes én av følgende dekningskoder:
+
+- **Manuell** – Metoden for justering av partistørrelse der systemet ikke foreslår kjøps-, overførings- eller produksjonsordrer for varen. Planleggeren for varen vil være ansvarlig for å opprette de nødvendige ordrene for etterfylling av varen.
+- **Per behov** – Metoden for justering av partistørrelse der systemet oppretter et bestillingsforslag, en overføring eller en produksjonsordre per behov for varen. Dette brukes vanligvis for kostbare varer med periodisk etterspørsel.  
+- **Per periode** – Metoden for justering av partistørrelse som kombinerer alt behov for en periode i én ordre for varen. Ordren vil bli planlagt for den første dagen i perioden, og antallet vil oppfylle nettobehovet i den etablerte perioden. Perioden begynner med det første behovet for varen og dekker den definerte lengden i tid. Neste periode starter med de neste behovene til varen.
+- **Min/maks** – Metoden for justering av partistørrelse som inneholder etterfyllingen av lager opptil et bestemt nivå når beholdningsprognosen er under en terskel. Etterfyllingsantallet vil være differansen mellom maksimumsnivået og det forhåndsberegnede nivået.
+
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 

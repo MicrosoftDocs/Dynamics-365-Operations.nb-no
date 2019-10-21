@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 00ce4a31c0b0f466911658c79f6e32788273c127
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: a7168d13ef0b24d06aa28fbbc22bbb4e6093df24
+ms.sourcegitcommit: 58db26b7edf02e7c33aaaf1c934e3263aa74b01f
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1834008"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "1994916"
 ---
 # <a name="manage-order-holds"></a>Behandle ordresperrer
 
@@ -33,45 +33,40 @@ Du kan kjøre denne fremgangsmåten i demonstrasjonsselskapet USMF eller ved hje
 
 
 ## <a name="set-up-order-holds"></a>Definer ordresperrer
-1. Gå til Salg og markedsføring > Oppsett > Salgsordrer > Ordresperrekoder.
-2. Klikk Ny.
-3. Skriv inn en verdi i Sperrekode-feltet.
-    * Skriv for eksempel Ring tilbake.  
-4. Skriv inn en verdi i feltet Beskrivelse.
-    * For eksempel Ordre sperret i påvente av at kunden ringer tilbake.  
-    * Eventuelt kan du merke av for Fjernede reservasjoner for å fjerne fysiske reservasjoner fra ordren når denne sperrekoden legges til.  
-5. Klikk Lagre.
+1. Gå til **Navigasjonsrute > Moduler > Salg og markedsføring > Oppsett > Salgsordrer > Ordresperrekoder**.
+2. Klikk på **Ny**.
+3. Skriv inn en verdi i **Sperrekode**-feltet. Skriv for eksempel inn Ring tilbake.  
+4. Skriv inn en verdi i **Beskrivelse**-feltet.
+    - For eksempel Ordre sperret i påvente av at kunden ringer tilbake.  
+    - Du kan også merke av for **Fjernede reservasjoner** for å fjerne fysiske reservasjoner fra ordren når denne sperrekoden legges til.  
+5. Klikk **Lagre**.
 
 ## <a name="place-order-on-hold"></a>Sett ordre på vent
-1. Gå til Salg og markedsføring > Salgsordrer > Alle salgsordrer.
-2. Klikk Ny.
-3. Angi eller velg en verdi i Kundekonto-feltet.
-4. Klikk OK.
-5. Angi eller velg en verdi i Varenummer-feltet.
-6. Angi et tall i feltet Antall.
-7. Klikk Salgsordre i handlingsruten.
-8. Klikk Ordresperrer.
-9. Klikk Ny.
-10. Velg koden du har opprettet i den forrige underoppgaven, i Sperrekode-feltet.
-11. Klikk Lagre.
+1. Gå til **Navigasjonsrute > Moduler > Salg og markedsføring > Salgsordrer > Alle salgsordrer**.
+2. Klikk på **Ny**.
+3. Angi eller velg en verdi i **Kundekonto**-feltet.
+4. Klikk **OK**.
+5. Angi eller velg en verdi i **Varenummer**-feltet.
+6. Angi et tall i **Antall**-feltet.
+7. Klikk på **Salgsordre** i **handlingsruten**.
+8. Klikk på **Ordresperrer**.
+9. Klikk på **Ny**.
+10. Velg koden du har opprettet i den forrige underoppgaven, i **Sperrekode**-feltet.
+11. Klikk **Lagre**.
 12. Lukk siden.
-13. Gå til Salg og markedsføring > Salgsordrer > Alle salgsordrer.
-14. Merk den valgte raden i listen.
-    * Ordrer som er på vent, har feltene "Ikke behandle" og "Vent" merket av.    
-15. Klikk Plukk og pakk i handlingsruten.
+13. Gå til **Salg og markedsføring > Salgsordrer > Alle salgsordrer**.
+14. Merk den valgte raden i listen. Ordrer som er på vent, har feltene "Ikke behandle" og "Vent" merket av.
+15. Klikk på **Plukk og pakk** i handlingsruten.
 
 ## <a name="manage-order-holds"></a>Behandle ordresperrer
-1. Gå til Salg og markedsføring > Salgsordrer > Åpne ordrer > Ordresperrer.
-    * Siden Ordresperrer fungerer som et arbeidsområde der du kan få en oversikt over alle gjeldende og behandlede sperrer, og behandle dem og tilknyttede salgsordrer.      
+1. Gå til **Salg og markedsføring > Salgsordrer > Åpne ordrer > Ordresperrer**. Siden **Ordresperrer** fungerer som et arbeidsområde der du kan få en oversikt over alle gjeldende og behandlede sperrer, og behandle dem og tilknyttede salgsordrer.     
 2. Merk den valgte raden i listen.
-3. Klikk Sperre - utsjekking i handlingsruten.
-4. Klikk Sjekk ut.
-5. Fjern merket for den valgte raden i listen.
-    * Feltet Sjekk ut til viser nå bruker-IDen din.   
-6. Klikk Fjern utsjekking.
-7. Klikk Fjern sperre i handlingsruten.
-    * Når du er klar til å fjerne sperren og la ordren gå videre til neste trinn i fullføringen, må du fjerne sperren. Hvis ordren ikke krever noen endringer, kan du kjøre Fjern sperrer-handlingen. Du kan imidlertid bruke Fjern og endre-handlingen hvis ordren må oppdateres når du fjerner en sperre.      
-    * Fjern og send-handlingen gjelder bare når du bruker Telefonsenterfunksjonalitet.  
-8. Klikk Fjern sperrer.
-    * Sperringen er nå fjernet fra ordren og fjernet fra listen over aktive sperringer. Hvis du vil se alle sperringene eller delsettet i henhold til en bestemt status, kan du endre verdien i Vis-feltet.     
+3. Klikk på **Sperre - utsjekking** i **handlingsruten**.
+4. Klikk på **Sjekk ut**.
+5. Fjern merket for den valgte raden i listen. Feltet **Sjekk ut til** viser nå bruker-ID-en din.   
+6. Klikk på **Fjern utsjekking**.
+7. Klikk på **Fjern sperre** i **handlingsruten**.
+    - Når du er klar til å fjerne sperren og la ordren gå videre til neste trinn i fullføringen, må du fjerne sperren. Hvis ordren ikke krever noen endringer, kan du kjøre Fjern sperrer-handlingen. Du kan imidlertid bruke Fjern og endre-handlingen hvis ordren må oppdateres når du fjerner en sperre.      
+    - **Fjern og send**-handlingen gjelder bare når du bruker Telefonsenterfunksjonalitet.  
+8. Klikk på **Fjern sperrer**. Sperringen er nå fjernet fra ordren og fjernet fra listen over aktive sperringer. Hvis du vil se alle sperringene eller delsettet i henhold til en bestemt status, kan du endre verdien i Vis-feltet.     
 

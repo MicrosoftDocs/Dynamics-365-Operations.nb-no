@@ -1,6 +1,6 @@
 ---
 title: Initialisere utgangsverdidata i nye miljøer for detaljhandel
-description: Denne artikkelen beskriver dataene som opprettes som en del av initialiseringsprosessen for Microsoft Dynamics 365 for Retail.
+description: Denne artikkelen beskriver dataene som opprettes som en del av initialiseringsprosessen for Dynamics 365 Retail.
 author: josaw1
 manager: AnnBe
 ms.date: 06/20/2017
@@ -19,18 +19,18 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 52f0c52748958f0bebb6c40df01cfac10c0ed427
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 49b21d81437ebd7cc55076444ee71ae1143bfac0
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1556904"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2025522"
 ---
 # <a name="initialize-seed-data-in-new-retail-environments"></a>Initialisere data for utgangsverdi i nye Retail-miljøer
 
 [!include [banner](includes/banner.md)]
 
-Denne artikkelen beskriver dataene som opprettes som en del av initialiseringsprosessen for Microsoft Dynamics 365 for Retail.
+Denne artikkelen beskriver dataene som opprettes som en del av initialiseringsprosessen for Dynamics 365 Retail.
 
 Etter at detaljhandelsløsningen er distribuert via Microsoft Dynamics Lifecycle Services (LCS) må du initialisere detaljhandelskonfigurasjonen for å opprette grunnleggende konfigurasjonsdata.
 
@@ -39,7 +39,7 @@ Etter at detaljhandelsløsningen er distribuert via Microsoft Dynamics Lifecycle
 
 Bruk følgende fremgangsmåte for å initialisere detaljhandelskonfigurasjonen.
 
-1. Start Dynamics 365 for Retail-klienten.
+1. Start Retail-klienten.
 2. Klikk **Detaljhandel** &gt; **Hovedkvarteroppsett** &gt; **Parametere** &gt; **Detaljhandelsparametere**.
 3. Klikk **Initialiser**.
 
@@ -57,7 +57,7 @@ Initialisering oppretter følgende standardkonfigurasjonsdata:
 - Maler for validering av enhet
 - Satsvis jobb for å tømme økthistorikk for Commerce Data Exchange
 
-I tillegg aktiveres logging som er knyttet til betalingskortbransjen (PCI) for Dynamics 365 for Retail-databasen.
+I tillegg aktiveres logging som er knyttet til betalingskortbransjen (PCI) for Retail-databasen.
 
 > [!NOTE]
 > Det finnes et alternativ for å konfigurere Detaljhandel Planlegger separat. Dette alternativet lar deg tilbakestille Detaljhandel Planlegger-konfigurasjonen til standardinnstillingene.

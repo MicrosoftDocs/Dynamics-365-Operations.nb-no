@@ -1,6 +1,6 @@
 ---
 title: Konfigurere og arbeide med telefonsenterordresperringer
-description: Dette emnet beskriver hvordan du arbeider med sperringer på ordrer ved hjelp av Microsoft Dynamics 365 for Retail.
+description: Dette emnet beskriver hvordan du arbeider med sperringer på ordrer ved hjelp av Dynamics 365 Retail.
 author: josaw1
 manager: AnnBe
 ms.date: 05/14/2018
@@ -19,18 +19,18 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: ba8fade84358c960dcfd1e8d9ffef1ffede34871
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 5f20cd5266f2fec02d11c6ac5f0268765b3ad1ec
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1564884"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2018372"
 ---
 # <a name="configure-and-work-with-call-center-order-holds"></a>Konfigurere og arbeide med ordresperrer i telefonsenter
 
 [!include [banner](includes/banner.md)]
 
-Dette emnet beskriver ordresperrefunksjonene som Microsoft Dynamics 365 for Retail har for telefonsenterordrer.
+Dette emnet beskriver ordresperrefunksjonene som Dynamics 365 Retail har for telefonsenterordrer.
 
 ## <a name="configuring-call-center-order-holds"></a>Konfigurere telefonsenterordresperrer
 

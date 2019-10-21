@@ -3,7 +3,7 @@ title: Nedetid ved vedlikehold
 description: Dette emnet beskriver nedetid ved vedlikehold i Aktivastyring.
 author: josaw1
 manager: AnnBe
-ms.date: 08/15/2019
+ms.date: 08/27/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,17 +16,16 @@ ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: mkirknel
-ms.search.validFrom: 2019-08-15
+ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: a831d56116c57b640993162473e74e5ce181f09c
-ms.sourcegitcommit: f5bfa3212bc3ef7d944a358ef08fe8863fd93b91
+ms.openlocfilehash: c035f54e833b9bc25b4502901cf307213789b439
+ms.sourcegitcommit: 6476f27c8d3dced7c2e9a7344a4e378b51a1983e
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "1875810"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "1922189"
 ---
 # <a name="maintenance-downtime"></a>Nedetid ved vedlikehold
-
 
 [!include [banner](../../includes/banner.md)]
 
@@ -44,12 +43,12 @@ Når det er valgt aktiva i en registrering av vedlikeholdsnedetid, inkluderes al
 
 ## <a name="maintenance-downtime-activities"></a>Aktiviteter for nedetid ved vedlikehold
 
-Klikk på **Aktivastyring** > **Felles** > **Aktiviteter for vedlikeholdsnedetid** > **Alle aktiviteter for vedlikeholdsnedetid** for å åpne en liste over alle aktivitetene for vedlikeholdsnedetid og se informasjon om aktivitetene. Klikk på en kobling i kolonnen **Aktiviteter for vedlikeholdsnedetid** for å åpne detaljvisningen.
+Klikk på **Aktivastyring** > **Felles** > **Aktiviteter for vedlikeholdsnedetid** > **Alle aktiviteter for vedlikeholdsnedetid** for å åpne en liste over alle aktivitetene for vedlikeholdsnedetid og se informasjon om aktivitetene. Klikk på en kobling i kolonnen **Aktiviteter for vedlikeholdsnedetid** for å åpne detaljvisningen. Illustrasjonen nedenfor viser et eksempel på listen **Aktiviteter for vedlikeholdsnedetid**.
 
 ![Figur 1](media/19-preventive-maintenance.png)
 
 
-## <a name="create-a-maintenance-downtime-registration"></a>Opprette en registrering for nedetid ved vedlikehold
+## <a name="create-a-maintenance-downtime-activity"></a>Opprette en aktivitet for vedlikeholdsnedetid
 
 1. Klikk på **Aktivastyring** > **Felles** > **Aktiviteter for vedlikeholdsnedetid** > **Alle aktiviteter for vedlikeholdsnedetid** eller **Aktive aktiviteter for vedlikeholdsnedetid**.
 
@@ -61,9 +60,11 @@ Klikk på **Aktivastyring** > **Felles** > **Aktiviteter for vedlikeholdsnedetid
 
 5. I hurtigfanen **Aktiva for aktiviteter for vedlikeholdsnedetid** klikker du på **Legg til linje** for å legge til aktiva, ett om gangen, i vedlikeholdsnedetidsaktiviteten.
 
-6. Klikk på **Lagre** når alle aktivaene er lagt til.
+6. Klikk på **Lagre** når alle aktivaene er lagt til. Illustrasjonen nedenfor viser et eksempel på en aktivitet for vedlikeholdsnedetid med tilknyttede aktiva og vedlikeholdsjobber.
 
 7. Vedlikeholdsjobbene for arbeidsordrer og åpne vedlikeholdsplanlinjer for de valgte aktivaene vises i hurtigfanene **Resulterende vedlikeholdsjobber for arbeidsordrer** og **Vedlikeholdsplanlinjer**. I hurtigfanen **Generelt** > **Arbeidsordrer**-gruppen > **Vedlikeholdsprognosetimer**-feltet og hurtigfanen **Generelt** > **Vedlikeholdsplan**-gruppen > **Vedlikeholdsprognosetimer**-feltet , ser du totalt antall timer anslått for vedlikeholdsjobber for arbeidsordrer og vedlikeholdsplanlinjer.
+
+Illustrasjonen nedenfor viser et eksempel på detaljvisningen **Aktiviteter for vedlikeholdsnedetid**.
 
 ![Figur 2](media/20-preventive-maintenance.png)
 
@@ -74,7 +75,7 @@ Klikk på **Aktivastyring** > **Felles** > **Aktiviteter for vedlikeholdsnedetid
 
 9. I dialogboksen **Beregn kapasitetsbelastning** redigerer du start- og sluttidspunktene om nødvendig, og velger om du vil ta med arbeidsordrer og vedlikeholdsplaner i beregningen. Du kan bruke **Nivå**-feltet til å angi hvor detaljert beregningen av kapasitetsbelastning skal være når det gjelder arbeidssted. Hvis du for eksempel setter inn tallet 1 i feltet, og du har en arbeidsstedsstruktur med flere nivåer, vises alle aktivaene for et arbeidssted som er valgt i aktiviteten for vedlikeholdsnedetid, på øverste nivå, og derfor kan det hende at timene på en linje blir lagt til fra arbeidssteder plassert på et lavere nivå. Hvis du setter inn tallet 0 i **Nivå**-feltet, vil du se et detaljert resultat som viser alle kapasitetsbelastningslinjene på alle arbeidsstedsnivåene de er relatert til.
 
-10. Klikk på **OK** for å starte beregningen. Totalt antall timer vises i oversikten **Kapasitetsbelastning**. I kategorien **Kapasitetsbelastning** > **Grupper etter...**-handlingsrutegruppene klikker du på de relevante knappene for å få en mer detaljert oversikt over fordelingen av prognosetimer.
+10. Klikk på **OK** for å starte beregningen. Totalt antall timer vises i oversikten **Kapasitetsbelastning**. I kategorien **Kapasitetsbelastning** > **Grupper etter...**-handlingsrutegruppene klikker du på de relevante knappene for å få en mer detaljert oversikt over fordelingen av prognosetimer. Illustrasjonen nedenfor viser resultatet av en **Kapasitetsbelastning**-beregning.
 
 ![Figur 3](media/21-preventive-maintenance.png)
 
@@ -91,7 +92,7 @@ Klikk på **Aktivastyring** > **Felles** > **Aktiviteter for vedlikeholdsnedetid
 
 15. I dialogboksen **Beregn vareprognose** redigerer du start- og sluttidspunktene om nødvendig, og velger om du vil ta med arbeidsordrer og vedlikeholdsplaner i beregningen. Du kan bruke **Nivå**-feltet til å angi hvor detaljert beregningen av kapasitetsbelastning skal være når det gjelder arbeidssted. Hvis du for eksempel setter inn tallet 1 i feltet, og du har en arbeidsstedsstruktur med flere nivåer, vises alle aktivaene for et arbeidssted som er valgt i aktiviteten for vedlikeholdsnedetid, på øverste nivå, og derfor kan det hende at timene på en linje blir lagt til fra arbeidssteder plassert på et lavere nivå. Hvis du setter inn tallet 0 i **Nivå**-feltet, vil du se et detaljert resultat som viser alle kapasitetsbelastningslinjene på alle arbeidsstedsnivåene de er relatert til.
 
-16. Klikk på **OK** for å starte beregningen. Totalt antall vareprognoser vises i oversikten **Vareprognose**. I kategorien **Vareprognose** > **Grupper etter...**-handlingsrutegruppene klikker du på de relevante knappene for å få en mer detaljert oversikt over fordelingen av prognosevarer.
+16. Klikk på **OK** for å starte beregningen. Totalt antall vareprognoser vises i oversikten **Vareprognose**. I kategorien **Vareprognose** > **Grupper etter...**-handlingsrutegruppene klikker du på de relevante knappene for å få en mer detaljert oversikt over fordelingen av prognosevarer. Illustrasjonen nedenfor viser resultatet av en **Vareprognose**-beregning.
 
 ![Figur 4](media/22-preventive-maintenance.png)
 

@@ -1,6 +1,6 @@
 ---
 title: Opprette en lokasjonsprofil
-description: Dette emnet forklarer hvordan du oppretter en lokasjonsprofil i Dynamics 365 for Finance and Operations.
+description: Dette emnet forklarer hvordan du oppretter en lokasjonsprofil i Dynamics 365 Supply Chain Management.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 07/29/2019
@@ -17,18 +17,18 @@ ms.search.industry: Distribution
 ms.author: mirzaab
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 46aa1001c21ae39c158062444303ca02c0f41a45
-ms.sourcegitcommit: a368682f9cf3897347d155f1a2d4b33e555cc2c4
+ms.openlocfilehash: 36bad7424ac247b8fd9a819928837de619e9e258
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/08/2019
-ms.locfileid: "1866985"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2026791"
 ---
 # <a name="create-a-location-profile"></a>Opprette en lokasjonsprofil
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-Dette emnet forklarer hvordan du oppretter en lokasjonsprofil i Dynamics 365 for Finance and Operations. Hver lokasjon på lageret må ha en tilknyttet lokasjonsprofil som beskriver egenskapene til lokasjonen, for eksempel om den tillater kombinerte varer. I denne fremgangsmåten skal vi opprette en profil for en lokasjon som ikke krever nummerskiltkontroll. Vi skal aktivere kombinerte varer og kombinerte lagerstatuser, og tillate syklustelling. Du kan bruke prosedyren i USMF-demodatafirmaet.
+Dette emnet forklarer hvordan du oppretter en lokasjonsprofil i Dynamics 365 Supply Chain Management. Hver lokasjon på lageret må ha en tilknyttet lokasjonsprofil som beskriver egenskapene til lokasjonen, for eksempel om den tillater kombinerte varer. I denne fremgangsmåten skal vi opprette en profil for en lokasjon som ikke krever nummerskiltkontroll. Vi skal aktivere kombinerte varer og kombinerte lagerstatuser, og tillate syklustelling. Du kan bruke prosedyren i USMF-demodatafirmaet.
 
 
 1. I navigasjonsruten går du til **Moduler > Lagerstyring > Oppsett > Lager > Lokasjonsprofiler**.

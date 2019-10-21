@@ -1,6 +1,6 @@
 ---
-title: Oppdatere jobbintroduksjonsveiledninger i Dynamics 365 for Talent - Onboard
-description: Dette emnet forklarer hvordan du oppdaterer jobbintroduksjonsveiledninger i Microsoft Dynamics 365 for Talent - Onboard, og hvordan du overfører endringer i eksisterende veiledninger.
+title: Oppdatere jobbintroduksjonsveiledninger i Dynamics 365 Talent – Onboard
+description: Dette emnet forklarer hvordan du oppdaterer jobbintroduksjonsveiledninger i Microsoft Dynamics 365 Talent – Onboard, og hvordan du overfører endringer i eksisterende veiledninger.
 author: andreabichsel
 manager: ''
 ms.date: 06/21/2019
@@ -16,18 +16,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2019-06-21
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: d2be450685724510db2f0fd2af8545f8f40278e7
-ms.sourcegitcommit: 9f762fa89c5b432667aa156c22d679a7f601952d
+ms.openlocfilehash: 6175061456a03228043ea13767845cf4b54d6b2e
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 07/08/2019
-ms.locfileid: "1731589"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2010735"
 ---
-# <a name="update-onboarding-guides-in-dynamics-365-for-talent-onboard"></a>Oppdatere jobbintroduksjonsveiledninger i Dynamics 365 for Talent: Onboard
+# <a name="update-onboarding-guides"></a>Oppdatere jobbintroduksjonsveiledninger
 
 [!include [banner](includes/banner.md)]
 
-Hvis du må gjøre endringer i jobbintroduksjonsveiledninger i Microsoft Dynamics 365 for Talent: Onboard, kan du oppdatere dem og overføre endringene selv om du allerede har sendt veiledningene. Du har to alternativer for å oppdatere en jobbintroduksjonsveiledning:
+Hvis du må gjøre endringer i jobbintroduksjonsveiledninger i Microsoft Dynamics 365 Talent: Onboard, kan du oppdatere dem og overføre endringene selv om du allerede har sendt veiledningene. Du har to alternativer for å oppdatere en jobbintroduksjonsveiledning:
 
 - Rediger jobbintroduksjonsveiledningen direkte, og lagre endringene.
 - Rediger jobbintroduksjonsmalen, og overfør deretter endringene til alle jobbintroduksjonsveiledningene som ble opprettet fra den.

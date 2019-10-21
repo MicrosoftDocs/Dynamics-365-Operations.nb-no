@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: conradv
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: 484bac74ccb498f0b006458f5e6d8fb0e9461a8f
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: be4dbadaeac747953af44236156453edc596fcd5
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1556076"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2018118"
 ---
 # <a name="backflush-costing"></a>Backflush-etterkalkulering
 
@@ -61,11 +61,11 @@ Stykklisteberegningen må være basert på en ruteversjon eller en produksjonsfl
 
 ### <a name="calculation-that-is-based-on-the-production-flow"></a>Beregning som er basert på produksjonsflyten
 
-Lean manufacturing for Microsoft Dynamics 365 for Finance and Operations er uavhengig av ruter. Kostnadsberegningen for produkter som leveres fra en produksjonsflyt, kan baseres på selve produksjonsflyten. Før du kan utføre beregningen, må en kanban-regel opprettes som leverer produktet utenfor produksjonsflyten. Hvis et produkt kan angis fra flere produksjonsflyter fra samme sted på beregningsdatoen, kan du velge produksjonsflyten for stykklisteberegningen. På siden **Standard produksjonsflyt** kan du konfigurere en standard produksjonsflyt for hver vare. Hvis det finnes flere kanban-regler for det samme produktet i den samme produksjonsflyten som er aktiv på beregningsdatoen, velger beregningen den første kanban-regelen som er aktiv for beregningen.
+Lean manufacturing for Dynamics 365 Supply Chain Management er uavhengig av ruter. Kostnadsberegningen for produkter som leveres fra en produksjonsflyt, kan baseres på selve produksjonsflyten. Før du kan utføre beregningen, må en kanban-regel opprettes som leverer produktet utenfor produksjonsflyten. Hvis et produkt kan angis fra flere produksjonsflyter fra samme sted på beregningsdatoen, kan du velge produksjonsflyten for stykklisteberegningen. På siden **Standard produksjonsflyt** kan du konfigurere en standard produksjonsflyt for hver vare. Hvis det finnes flere kanban-regler for det samme produktet i den samme produksjonsflyten som er aktiv på beregningsdatoen, velger beregningen den første kanban-regelen som er aktiv for beregningen.
 
 ### <a name="calculation-that-is-based-on-the-route"></a>Beregning som er basert på ruten
 
-Beregning som er basert på en rute, er like gyldig som beregning som er basert på en produksjonsflyt. Beregning som er basert på en rute, bruker imidlertid ikke etterkalkulering for Lean manufacturing-funksjonalitet. Ruten bør bruke ressurskrav for ressursgrupper. For å unngå systematiske avvik bør den også bruke de samme arbeidscellene, eller i det minste samme kostnadskategorier. Igjen bør du unngå kostnadskategorier for oppsett og antall. De bidrar ikke til å beregne kostnadene i en mer detaljert analyse enn etterkalkulering for Lean manufacturing. Vurder resultatet av kostnadsoppdelingen for å finne ut hvilket alternativ (produksjonsflyt eller rute) du bør bruke til å beregne kostnaden. Versjonen som er nærmere utgangspunktet og gir færre avvik generelt, er det beste alternativet. I et Lean manufacturing-miljø der et produkt leveres av en enkelt produksjonsflyt og en enkelt kanban-regel, er beregningen som er basert på produksjonsflyten, sannsynligvis mer nøyaktig. For et produkt som kan leveres av Lean manufacturing og produksjonsordrer i samme område, eller som kan ha flere produksjonsflyter eller flere kanban-regler i den samme flyten, kan en beregning bli mer nøyaktige hvis den er basert på en ruteversjon som er bygget spesielt for kostnadsberegningen, ikke for produksjonen. Beregningen av produksjonsflyt må brukes til å beregne produkter som involverer bruk av underleverandører. I Microsoft Dynamics 365 for Finance and Operations bruker kostmodellene for bruk av underleverandører via produksjonsordrer og bruk av underleverandører i Lean manufacturing to ulike tilnærminger. Lean manufacturing introduserer en ny kostgruppetype, **Direkte outsourcing**, for å beregne underleveranser.
+Beregning som er basert på en rute, er like gyldig som beregning som er basert på en produksjonsflyt. Beregning som er basert på en rute, bruker imidlertid ikke etterkalkulering for Lean manufacturing-funksjonalitet. Ruten bør bruke ressurskrav for ressursgrupper. For å unngå systematiske avvik bør den også bruke de samme arbeidscellene, eller i det minste samme kostnadskategorier. Igjen bør du unngå kostnadskategorier for oppsett og antall. De bidrar ikke til å beregne kostnadene i en mer detaljert analyse enn etterkalkulering for Lean manufacturing. Vurder resultatet av kostnadsoppdelingen for å finne ut hvilket alternativ (produksjonsflyt eller rute) du bør bruke til å beregne kostnaden. Versjonen som er nærmere utgangspunktet og gir færre avvik generelt, er det beste alternativet. I et Lean manufacturing-miljø der et produkt leveres av en enkelt produksjonsflyt og en enkelt kanban-regel, er beregningen som er basert på produksjonsflyten, sannsynligvis mer nøyaktig. For et produkt som kan leveres av Lean manufacturing og produksjonsordrer i samme område, eller som kan ha flere produksjonsflyter eller flere kanban-regler i den samme flyten, kan en beregning bli mer nøyaktige hvis den er basert på en ruteversjon som er bygget spesielt for kostnadsberegningen, ikke for produksjonen. Beregningen av produksjonsflyt må brukes til å beregne produkter som involverer bruk av underleverandører. Kostmodellene for bruk av underleverandører via produksjonsordrer og bruk av underleverandører i Lean manufacturing to ulike tilnærminger. Lean manufacturing introduserer en ny kostgruppetype, **Direkte outsourcing**, for å beregne underleveranser.
 
 ## <a name="material-consumption"></a>Materialforbruk
 Når materiale forbrukes fra lager til VIA, legges kostnaden for materialer til VIA ved de faktiske standardkostnadene for en kostgruppe. Denne operasjonen skjer under følgende betingelser:
@@ -82,7 +82,7 @@ Du mottar varer fra produksjonsflyten under følgende betingelser:
 Produkter som er mottatt fra produksjonsflyten, trekkes fra VIA.
 
 ## <a name="products-in-wip"></a>Produkter i VIA
-VIA-modellen for Lean manufacturing i Microsoft Dynamics 365 for Finance and Operations lar deg bruke kanban-håndteringsenhetsstatusen til å administrere materialer, halvfabrikata og ferdige produkter som er en del av VIA.
+VIA-modellen for Lean manufacturing lar deg bruke kanban-håndteringsenhetsstatusen til å administrere materialer, halvfabrikata og ferdige produkter som er en del av VIA.
 
 -   **Tilordnet** - Kanbanen kan ha brukt materiale som er etterkalkulert i VIA.
 -   **Mottatt** - Hvis Kanbanen refererer til en siste aktivitet der **Oppdater beholdning ved mottak** er satt til **Nei**, representerer den en full håndteringsenhet for et produkt eller et halvfabrikata som ikke er registrert på lager.

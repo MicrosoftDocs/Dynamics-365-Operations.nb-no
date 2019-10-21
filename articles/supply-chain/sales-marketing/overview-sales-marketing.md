@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 10c8b548f2e295bf344459370ab6eecd577a0efb
-ms.sourcegitcommit: e286572ce94a9442a5b3076c3ff5b429be0ed512
+ms.openlocfilehash: 5d55dfe26cd298372701aeb98a6aafc49977f381
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "1865999"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2248637"
 ---
 # <a name="sales-and-marketing-overview"></a>Oversikt over salg og markedsføring
 
@@ -41,7 +41,7 @@ I salg og markedsføring kan de første samhandlingene du har med potensielle ku
 
 ### <a name="campaigns"></a>Kampanjer
 
-En kampanje er målrettet mot kontakter for prospekter, kundeemner, salgsmuligheter og kunder som er valgt til å delta i kampanjen. I Microsoft Dynamics 365 for Finance and Operations kan du kan opprette flere typer kampanjer, for eksempel telemarketing, post- og e-post-kampanjer, for maksimere kundepotensialet. Etter hvert som kampanjen går fremover og du får positive svar, kan du starte salgsprosessen med disse mottakerne som har respondert positivt på kampanjen.
+En kampanje er målrettet mot kontakter for prospekter, kundeemner, salgsmuligheter og kunder som er valgt til å delta i kampanjen. I Supply Chain Management kan du kan opprette flere typer kampanjer, for eksempel telemarketing, post- og e-post-kampanjer, for maksimere kundepotensialet. Etter hvert som kampanjen går fremover og du får positive svar, kan du starte salgsprosessen med disse mottakerne som har respondert positivt på kampanjen.
 
 ## <a name="sales"></a>Salg
 Du kan bruke salgsfunksjonaliteten til å opprette tilbud, mersalg og kryssalg til nye og eksisterende kunder, opprette salgsordrer og opprette salgsfakturaer for kunder. Denne arbeidsflyten viser forretningsprosessen for salg. [![Forretningsprosess for salg](./media/sales01.jpg)](./media/sales01.jpg)

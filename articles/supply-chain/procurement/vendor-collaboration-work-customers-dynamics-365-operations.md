@@ -1,6 +1,6 @@
 ---
 title: Leverandørsamarbeid med kunder
-description: Dette emnet beskriver hvordan du kan bruke leverandørsamarbeid i Microsoft Dynamics 365 for Finance and Operations for å arbeide med bestillinger og overvåke forsendelseslager.
+description: Dette emnet beskriver hvordan du kan bruke leverandørsamarbeid for å arbeide med bestillinger og overvåke forsendelseslager.
 author: mkirknel
 manager: AnnBe
 ms.date: 06/20/2017
@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: bd3967da105b3cec4a722ee8e04fac13c798feec
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: e968a57c09837a5cfa5a0476426a274021122959
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1567590"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2250144"
 ---
 # <a name="vendor-collaboration-with-customers"></a>Leverandørsamarbeid med kunder
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet beskriver hvordan du kan bruke leverandørsamarbeid for å arbeide med kunder i Microsoft Dynamics 365 for Finance and Operations. Leverandører kan utføre en rekke forretningsprosesser fra følgende arbeidsområder:
+Dette emnet beskriver hvordan du kan bruke leverandørsamarbeid for å arbeide med kunder i Microsoft Dynamics 365 Supply Chain Management. Leverandører kan utføre en rekke forretningsprosesser fra følgende arbeidsområder:
 
 - **Bestillingsbekreftelse** – overvåke og svare på bestillinger (POs).
 - **Leverandørbud** – vise tilbudsforespørsler (RFQ-er), og svare på dem ved å legge inn bud.

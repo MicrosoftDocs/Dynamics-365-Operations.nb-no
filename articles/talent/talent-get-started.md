@@ -17,24 +17,24 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Talent July 2017 update
-ms.openlocfilehash: 0993119de785d5e3826075778c018bdfa50071e2
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: ff9cfdff410001f08f920e3c05df6bc4ab1b77fd
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1518773"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2024258"
 ---
 # <a name="get-started-with-talent"></a>Komme i gang med Talent
 
 [!include [banner](includes/banner.md)]
 
-I Microsoft Dynamics 365 for Talent er det enkelt å endre brukergrensesnittet og angi alternativer som gjør programvaren mer intuitiv for dine behov. Dette emnet inneholder koblinger til emner som inneholder informasjon om hvordan du kan tilpasse brukergrensesnittet til dine behov. Dette emnet inneholder også koblinger til informasjon som kan hjelpe deg med å finne informasjon i systemet, effektivt og nøyaktig. 
+I Microsoft Dynamics 365 Talent er det enkelt å endre brukergrensesnittet og angi alternativer som gjør programvaren mer intuitiv for dine behov. Dette emnet inneholder koblinger til emner som inneholder informasjon om hvordan du kan tilpasse brukergrensesnittet til dine behov. Dette emnet inneholder også koblinger til informasjon som kan hjelpe deg med å finne informasjon i systemet, effektivt og nøyaktig. 
 
 > [!NOTE] 
-> Følgende tre produkter henger nøye sammen: Dynamics 365 for Finance and Operations, Dynamics 365 for Retail og Dynamics 365 for Talent. Den samme funksjonaliteten kan forekomme i alle de tre produktene. Det fører til at i emner som først og fremst gjelder Retail, blir produktnavnet Dynamics 365 for Retail, i emner som først og fremst er knyttet til Talent, blir produktnavnet Dynamics 365 for Talent, og i emner som er knyttet til kjerneproduktet, blir produktnavnet Dynamics 365 for Finance and Operations. Emner som er skrevet for ett produkt, gjelder kanskje for den samme funksjonaliteten i et relatert produkt.
+> Følgende tre produkter henger nøye sammen: Dynamics 365 Finance, Dynamics 365 Retail og Dynamics 365 Talent. Den samme funksjonaliteten kan forekomme i alle tre produkter. Det fører til at i emner som først og fremst gjelder Retail, blir produktnavnet Dynamics 365 Retail, i emner som først og fremst er knyttet til Talent, blir produktnavnet Dynamics 365 Talent, og i emner som er knyttet til kjerneproduktet, blir produktnavnet Dynamics 365 Finance. Emner som er skrevet for ett produkt, gjelder kanskje for den samme funksjonaliteten i et relatert produkt.
 
 ## <a name="personalizing-talent"></a>Tilpasse Talent 
-Emnene nedenfor viser hvordan du definerer mange funksjoner i Dynamics 365 for Talent som gjør det enklere å få arbeidet gjort i tide. 
+Emnene nedenfor viser hvordan du definerer mange funksjoner i Talent som gjør det enklere å få arbeidet gjort i tide. 
 
 -   [Tilpasse brukeropplevelsen](../fin-and-ops/get-started/personalize-user-experience.md) – Dette emnet forklarer de forskjellige måtene du kan tilpasse Talent og tilpasse deler av produktet slik at det passer bedre til dine behov.
 
@@ -51,7 +51,7 @@ Emnene nedenfor forklarer hvordan du bruker funksjonene for oppslag, søk og fil
 
 -   [Avansert syntaks for filtrering og spørring](../fin-and-ops/get-started/advanced-filtering-query-options.md) – Dette emnet beskriver alternativene for filtrering og spørringer som er tilgjengelige når du bruker operatoren "treff" i dialogboksen Avansert filter/sortering.
 
--   [Navigasjonssøk](../fin-and-ops/get-started/navigation-search.md) – Dette emnet forklarer hvordan du bruker søkefunksjonen til å navigere til sider. Talent-programmet inneholder en rekke områder og sider for å utføre forskjellige oppgaver. Bruk av funksjonen for navigasjonssøk kan bidra til at du raskt finner sider som du trenger for å fullføre oppgavene. 
+-   [Navigasjonssøk](../fin-and-ops/get-started/navigation-search.md) – Dette emnet forklarer hvordan du bruker søkefunksjonen til å navigere til sider. Talent inneholder en rekke områder og sider for å utføre forskjellige oppgaver. Bruk av funksjonen for navigasjonssøk kan bidra til at du raskt finner sider som du trenger for å fullføre oppgavene. 
 
 -   [Handlingssøk](../fin-and-ops/get-started/action-search.md) – Dette emnet beskriver funksjonen for handlingssøk. Handlingssøk hjelper deg med å finne og kjøre handlinger på en side. Sidene i produktet viser hovedsakelig kommandoer i handlingsruter, både standard handlingsruten som vises øverst på en side, og verktøylinjene som vises i ulike deler av en side.
 
@@ -61,7 +61,7 @@ Emnene nedenfor forklarer hvordan du bruker funksjonene for oppslag, søk og fil
 Gå til [Veikart for Microsoft Dynamics 365](https://roadmap.dynamics.com/#application=c6ae025f-e42a-e711-810d-3863bb363e80) for å se hvilke nye funksjoner som har blitt utgitt og hvilke nye funksjoner som er under utvikling.
 
 ### <a name="blogs"></a>Blogger
-Du kan finne meninger, nyheter og annen informasjon om Leverandører og andre løsninger i [Dynamics 365 for Talent](https://community.dynamics.com/enterprise/b/dynamics365fortalent). 
+Du kan finne meninger, nyheter og annen informasjon om Leverandører og andre løsninger i [Dynamics 365 Talent](https://community.dynamics.com/enterprise/b/dynamics365fortalent). 
 
 ### <a name="videos"></a>Videoer
 Se instruksjonsvideoene som nå er tilgjengelige på [Microsoft Dynamics 365 YouTube-kanalen](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ).

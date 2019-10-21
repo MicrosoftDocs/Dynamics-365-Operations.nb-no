@@ -1,6 +1,6 @@
 ---
 title: Lagerblokkering
-description: Denne artikkelen inneholder en oversikt over lagerblokkering, som er en del av kvalitetsinspeksjonsprosessen i Microsoft Dynamics 365 for Finance and Operations. Du kan bruke lagerblokkering til å forhindre at varer behandles eller forbrukes.
+description: Dette emnet inneholder en oversikt over lagerblokkering, som er en del av kvalitetsinspeksjonsprosessen i Supply Chain Management. Du kan bruke lagerblokkering til å forhindre at varer behandles eller forbrukes.
 author: perlynne
 manager: AnnBe
 ms.date: 06/20/2017
@@ -19,18 +19,18 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: eb6291e2f012f148b247b747f84155b96cf09677
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: fc8200380ac3aeb9e3b73f43212458660a15ade6
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1557482"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2250812"
 ---
 # <a name="inventory-blocking"></a>Lagerblokkering
 
 [!include [banner](../includes/banner.md)]
 
-Denne artikkelen inneholder en oversikt over lagerblokkering, som er en del av kvalitetsinspeksjonsprosessen i Microsoft Dynamics 365 for Finance and Operations. Du kan bruke lagerblokkering til å forhindre at varer behandles eller forbrukes.
+Denne artikkelen inneholder en oversikt over lagerblokkering, som er en del av kvalitetsinspeksjonsprosessen i Supply Chain Management. Du kan bruke lagerblokkering til å forhindre at varer behandles eller forbrukes.
 
 Du kan blokkere lagervarer på følgende måter:
 -   Manuelt

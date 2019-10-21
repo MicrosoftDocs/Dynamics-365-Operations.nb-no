@@ -19,18 +19,18 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 0a9e05fd2a08921d2718fc239afd56a957f80915
-ms.sourcegitcommit: e286572ce94a9442a5b3076c3ff5b429be0ed512
+ms.openlocfilehash: 7476cf797685feb4c50e3cefef4c53ca37b82dff
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "1865118"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2251414"
 ---
 # <a name="warehouse-work-policies-overview"></a>Oversikt over arbeidspolicyer for lager
 
 [!include [banner](../includes/banner.md)]
 
-Arbeidspolicyer for lager i Microsoft Dynamics 365 for Finance and Operations kontrollerer om lagerarbeid opprettes for lagerprosesser i produksjon, basert på arbeidsordretype, lagerlokasjon og produkt.
+Arbeidspolicyer for lager kontrollerer om lagerarbeid opprettes for lagerprosesser i produksjon, basert på arbeidsordretype, lagerlokasjon og produkt.
 
 Denne arbeidspolicyen kontrollerer om lagerarbeid opprettes for lagerprosesser i produksjon. Du kan definere arbeidspolicyen ved hjelp av en kombinasjon av **arbeidsordretyper**, en **lagerplassering** og et **produkt**. Produkt L0101 rapporteres for eksempel som ferdig til utleveringslokasjon 001. Den ferdige varen forbrukes senere i en annen produksjonsordre på utleveringslokasjon 001. I så fall kan du definere en arbeidspolicy for å hindre at arbeidet for plassering av ferdigvarer blir opprettet når du rapporterer produkt L0101 som ferdige, til utleveringslokasjon 001. Arbeidspolicyen er en enkeltenhet som kan beskrives ved hjelp av følgende informasjon:
 
