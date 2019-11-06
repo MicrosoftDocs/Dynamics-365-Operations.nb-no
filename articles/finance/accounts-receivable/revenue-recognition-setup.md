@@ -16,18 +16,20 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
-ms.openlocfilehash: ff513d2e2d2968e531e4515c45abdc470b384123
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 73acfc92777b8fe07b89bea782e13213d38000cd
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2184100"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2570339"
 ---
 # <a name="revenue-recognition-setup"></a>Inntektsføringsoppsett
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Den nye modulen **Inntektsføring** har blitt lagt til, og den omfatter menyelementer for alle nødvendige oppsett. Dette emnet beskriver alternativene for oppsett og deres betydning.
+
+> [!NOTE]
+> Funksjonen Inntektsføring kan ikke aktiveres via Funksjonsbehandling. For øyeblikket må du bruke konfigurasjonsnøkler for å aktivere den.
 
 Modulen **Inntektsføring** har følgende alternativer for oppsett:
 

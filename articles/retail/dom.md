@@ -3,7 +3,7 @@ title: Behandling av distribuert ordre (DOM)
 description: Dette emnet beskriver DOM-funksjonaliteten i Dynamics 365 Retail.
 author: josaw1
 manager: AnnBe
-ms.date: 11/15/2018
+ms.date: 10/14/2019
 ms.topic: index-page
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2018-11-15
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: fee0d9257af86a734a60b469db3a006435f1d3d2
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: 0ebac1c3f9f79ee49ae11a121a4a0dd3bd456c8f
+ms.sourcegitcommit: bdbca89bd9b328c282ebfb681f75b8f1ed96e7a8
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2023425"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "2578490"
 ---
 # <a name="distributed-order-management-dom"></a>Behandling av distribuert ordre (DOM)
 
@@ -94,6 +94,7 @@ Illustrasjonen nedenfor viser livssyklusen til en salgsordre i et DOM-system.
         - **Oppfylle delvise linjer?** – Hvis dette alternativet er satt til **Ja**, kan DOM oppfylle et delvist antall ordrelinjer. Denne delvise oppfyllelsen oppnås ved å dele opp ordrelinjen.
         - **Bare oppfylle ordre fra én lokasjon?** – Hvis dette alternativet er satt til **Ja**, sørger DOM for at alle linjer i en ordre blir oppfylt fra ett lokasjon.
 
+
         Tabellen nedenfor forklarer virkemåten når en kombinasjon av disse parameterne er definert.
 
         |      | Oppfylle delvise ordrer | Oppfylle delvise linjer | Bare oppfylle ordre fra én lokasjon | Beskrivelse |
@@ -110,19 +111,22 @@ Illustrasjonen nedenfor viser livssyklusen til en salgsordre i et DOM-system.
 
         \* Hvis **Oppfyll delvise ordrer** er satt til **Nei**, vil **Oppfyll delvise linjer** alltid bli vurdert til å settes til **Nei**, uavhengig av hvordan verdien faktisk er satt.
 
-    - **Regel for frakoblet oppfyllelseslokasjon** – Denne regelen lar organisasjoner angi en lokasjon eller en gruppe lokasjoner som frakoblet eller utilgjengelig for DOM, slik at ordrer ikke kan tilordnes dit for oppfyllelse.
+> [!NOTE]
+> I Retail versjon 10.0.5 ble verdien for parameteren **Bare oppfylle ordre fra én lokasjon** endret til **Maksimale oppfyllelseslokasjoner**. I stedet for å tillate at en bruker konfigurerer om ordrer bare kan oppfylles fra én lokasjon, eller oppfylles fra så mange lokasjoner som mulig, kan brukere nå angi om oppfyllelse kan være fra et bestemt sett med lokasjoner (opptil 5) eller fra så mange steder som den kan oppfylles. Dette gir større fleksibilitet når det gjelder hvor mange lokasjoner ordren kan oppfylles fra.
+
+   - **Regel for frakoblet oppfyllelseslokasjon** – Denne regelen lar organisasjoner angi en lokasjon eller en gruppe lokasjoner som frakoblet eller utilgjengelig for DOM, slik at ordrer ikke kan tilordnes til de lokasjonene for oppfyllelse.
     - **Regel for maksimalt antall avvisninger** – Denne regelen lar organisasjoner definere en terskel for avvisninger. Når terskelen er nådd, vil DOM-prosessoren merke en ordre eller en ordrelinje som et unntak, og utelate den fra videre behandling.
 
         Etter at ordrelinjene er tilordnet til en lokasjon, kan lokasjonen avvise en tilordnede ordrelinje, fordi lokasjonen kanskje ikke kan oppfylle den linjen av en eller annen grunn. Avviste linjer blir merket som et unntak, og de blir lagt tilbake i utvalget for behandling i den neste kjøringen. I løpet av den neste kjøringen vil DOM prøve å tilordne den avviste linjen til en annen lokasjon. Den nye lokasjonen kan også avvise den tilordnede ordrelinjen. Denne syklusen med tilordning og avslag kan forekomme flere ganger. Når antallet avvisninger når terskelen som er definert, vil DOM markere ordrelinjen som et fast unntak, og linjen vil ikke bli valgt flere ganger for ny tilordning. DOM vil vurdere ordrelinjen en gang til for ny tilordning bare hvis en bruker tilbakestiller statusen for ordrelinjen manuelt.
 
-    - **Regel for maksimal avstand** – Denne regelen lar organisasjoner definere maksimumsavstanden som en lokasjon eller gruppe med lokasjoner kan være for å oppfylle ordren. Hvis overlappende regler for maksimal avstand er definert for en lokasjon, bruker DOM den laveste maksimumsavstanden som er definert for den lokasjonen.
+   - **Regel for maksimal avstand** – Denne regelen lar organisasjoner definere maksimumsavstanden som en lokasjon eller gruppe med lokasjoner kan være for å oppfylle ordren. Hvis overlappende regler for maksimal avstand er definert for en lokasjon, bruker DOM den laveste maksimumsavstanden som er definert for den lokasjonen.
     - **Regel for maksimalt antall ordrer** – Denne regelen lar organisasjoner definere det maksimale antallet ordrer som en lokasjon eller gruppe med lokasjoner kan behandle i løpet av en dag i kalenderen. Hvis det maksimale antallet ordrer er tilordnet til en lokasjon på én dag, vil ikke DOM tilordne flere ordrer til den lokasjonen resten av den kalenderdagen.
 
-    Her er noen av de vanlige attributtene som kan defineres for alle de foregående regeltypene:
+   Her er noen av de vanlige attributtene som kan defineres for alle de foregående regeltypene:
 
-    - **Startdato** og **Sluttdato** – Hver regel kan gjøres datoeffektiv ved hjelp av disse feltene.
-    - **Deaktivert** – Bare regler som har verdien **Nei** for dette feltet, blir vurdert i en DOM-kjøring.
-    - **Hard begrensning** – En regel kan defineres som en hard begrensning eller ikke en hard begrensning. Alle DOM-kjøringer går gjennom to gjentakelser. I den første gjentakelsen behandles hver regel som en regel med hard begrensning, uavhengig av innstillingen til dette feltet. Med andre ord blir hver regel brukt. Det eneste unntaket er regelen **Prioritet for lokasjon**. I den andre gjentakelsen fjernes reglene som ikke ble definert som regler for hard begrensning, og ordren eller ordrelinjene som ikke ble tilordnet til lokasjoner da alle reglene ble tatt i bruk, blir tilordnet til lokasjoner.
+   - **Startdato** og **Sluttdato** – Hver regel kan gjøres datoeffektiv ved hjelp av disse feltene.
+   - **Deaktivert** – Bare regler som har verdien **Nei** for dette feltet, blir vurdert i en DOM-kjøring.
+   - **Hard begrensning** – En regel kan defineres som en hard begrensning eller ikke en hard begrensning. Alle DOM-kjøringer går gjennom to gjentakelser. I den første gjentakelsen behandles hver regel som en regel med hard begrensning, uavhengig av innstillingen til dette feltet. Med andre ord blir hver regel brukt. Det eneste unntaket er regelen **Prioritet for lokasjon**. I den andre gjentakelsen fjernes reglene som ikke ble definert som regler for hard begrensning, og ordren eller ordrelinjene som ikke ble tilordnet til lokasjoner da alle reglene ble tatt i bruk, blir tilordnet til lokasjoner.
 
 10. Oppfyllelsesprofiler brukes til å gruppere en samling med regler, juridiske enheter, salgsordreopprinnelser og leveringsmåter. Alle DOM-kjøringer gjelder for en bestemt oppfyllelsesprofil. På denne måten kan organisasjoner definere og kjøre et sett med regler for et sett med juridiske enheter for ordrer som har bestemte salgsordreopprinnelser og leveringsmåter. Hvis ulike sett med regler må kjøres for ulike typer salgsordreopprinnelser eller leveringsmåter, kan oppfyllelsesprofilene derfor defineres i henhold til dette. Gjør følgende for å konfigurere oppfyllelsesprofiler:  
 

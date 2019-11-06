@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b48313e93573e3214de0ee02c4894b000dc18f67
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 34af4cc05b6966b5f118c1dd2adbda288a0f3da1
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2176036"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2570131"
 ---
 # <a name="financial-management-home-page"></a>Startside for økonomistyring
 
@@ -68,5 +68,9 @@ Se instruksjonsvideoene som nå er tilgjengelige på [Microsoft Dynamics 365 You
 
 ### <a name="countryregion-functionality"></a>Funksjonalitet per land/område
 
-Bestemmelser for land/område påvirker avgiftsoppsettet og andre områder innen økonomistyring. Se delen [Lokalisering og forskriftsmessige funksjoner​](../dev-itpro/lcs-solutions/country-region.md?toc=/fin-and-ops/toc.json) i hjelpeinnholdet, for å lære mer om to lands-/områdespesifikke funksjoner.
+Bestemmelser for land/område påvirker avgiftsoppsettet og andre områder innen økonomistyring. Se delen [Lokalisering og forskriftsmessige funksjoner](../dev-itpro/lcs-solutions/country-region.md?toc=/fin-and-ops/toc.json) i hjelpeinnholdet, for å lære mer om to lands-/områdespesifikke funksjoner.
+
+### <a name="additional-content"></a>Tilleggsinnhold
+
+Funksjonalitet for forsyningskjedeadministrasjon dekker deler av Procure-to-Pay-prosessen, som omfatter rekvisisjon, bestilling, mottak, fakturering og betaling for varer og tjenester som organisasjonen kjøper. Se [startsiden for Supply Chain Management](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/WhatsNew-SCM-10-0-6/articles/supply-chain/index.md) hvis du vil ha informasjon om funksjoner for styring av innkjøp, lager og produksjon. 
 
