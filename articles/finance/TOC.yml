@@ -42,6 +42,8 @@
               items:
                 - name: Distribusjonsalternativer
                   href: ../fin-ops-core/dev-itpro/deployment/choose-deployment-type.md?toc=/dynamics365/finance/toc.json
+                - name: Sammenligning av skyfunksjoner og lokale funksjoner
+                  href: ../fin-ops-core/fin-ops/get-started/cloud-prem-comparison.md?toc=/dynamics365/finance/toc.json
                 - name: Skydistribusjon
                   href: ../fin-ops-core/dev-itpro/deployment/cloud-deployment-overview.md?toc=/dynamics365/finance/toc.json
                 - name: Systemkrav for skydistribusjoner
@@ -60,16 +62,20 @@
                   href: ../fin-ops-core/dev-itpro/deployment/france-local-deployment.md?toc=/dynamics365/finance/toc.json
             - name: Hva er nytt eller endret
               items:
-                - name: Startside for Hva er nytt eller endret
-                  href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/finance/toc.json
-                - name: Forhåndsvisningsfunksjoner i Finance and Operations-apper 10.0.6 (november 2019)
-                  href: ../fin-ops-core/fin-ops/get-started/whats-new-changed-10-0-6.md?toc=/dynamics365/finance/toc.json
-                - name: Finance and Operations-apper 10.0.5 (oktober 2019)
-                  href: ../fin-ops-core/fin-ops/get-started/whats-new-changed-10-0-5.md?toc=/dynamics365/finance/toc.json
-                - name: Finance and Operations 10.0.4 (juli 2019)
-                  href: ../fin-ops-core/fin-ops/get-started/whats-new-changed-10-0-4.md?toc=/dynamics365/finance/toc.json
-                - name: 'Finance and Operations, Enterprise edition 7.3'
-                  href: ../fin-ops-core/fin-ops/get-started/whats-new-application-7.3-update.md?toc=/dynamics365/finance/toc.json
+                - name: Forhåndsvisningsfunksjoner i Finance-versjon 10.0.7 (januar 2020)
+                  href: get-started/whats-new-changed-10-0-7.md
+                - name: Finance-versjon 10.0.6 (november 2019)
+                  href: get-started/whats-new-finance-10-0-6.md
+                - name: Nyheter eller endringer i de forrige versjonene
+                  items:
+                    - name: Startsiden Hva er nytt eller endret i Finance and Operations
+                      href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/finance/toc.json
+                    - name: Finance and Operations-apper 10.0.5 (oktober 2019)
+                      href: ../fin-ops-core/fin-ops/get-started/whats-new-changed-10-0-5.md?toc=/dynamics365/finance/toc.json
+                    - name: Finance and Operations 10.0.4 (juli 2019)
+                      href: ../fin-ops-core/fin-ops/get-started/whats-new-changed-10-0-4.md?toc=/dynamics365/finance/toc.json
+                    - name: 'Finance and Operations, Enterprise edition 7.3'
+                      href: ../fin-ops-core/fin-ops/get-started/whats-new-application-7.3-update.md?toc=/dynamics365/finance/toc.json
                 - name: Funksjoner som er fjernet eller avskrevet
                   href: ../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md?toc=/dynamics365/finance/toc.json
                 - name: AX 2012-funksjoner som er utsatt
@@ -306,6 +312,12 @@
               href: accounts-receivable/tasks/review-collections-information.md
             - name: Oversikt over inntektsføring
               href: accounts-receivable/revenue-recognition-overview.md
+            - name: Inntektsføringsoppsett
+              href: accounts-receivable/revenue-recognition-setup.md
+            - name: Føre utsatt inntekt
+              href: accounts-receivable/revenue-recognition-recognize-deferred-revenue.md
+            - name: Inntektsføring av salgsordrer
+              href: accounts-receivable/revenue-recognition-so-basics.md
             - name: Definere og behandle gjentakende fakturaer
               href: accounts-receivable/set-up-process-recurring-invoices.md
             - name: Regnskapsdistribusjoner og underfinansjournaloppføringer for fritekstfakturaer
@@ -734,8 +746,10 @@
                   href: general-ledger/example-balanced-journals-interunit-accounting.md
                 - name: Posteringsdefinisjoner
                   href: general-ledger/posting-definitions.md
-                - name: 'Eksempler på posteringsdefinisjon '
+                - name: Eksempler på posteringsdefinisjon
                   href: general-ledger/example-posting-definitions.md
+                - name: Definere standardbeskrivelser for automatisk postering
+                  href: general-ledger/set-up-default-descriptions-for-automatic-posting.md
                 - name: Kontosaldoer i økonomimodulen
                   href: general-ledger/general-ledger-account-balances.md
                 - name: Definere finansdimensjoner
@@ -794,6 +808,8 @@
                   href: general-ledger/general-journal-processing.md
                 - name: Postere periodiske journaler
                   href: general-ledger/tasks/post-periodic-journals.md
+                - name: Tilbakeføre journalpostering
+                  href: general-ledger/reverse-journal-posting.md
                 - name: Behandle finansfordelingsjournal
                   href: general-ledger/tasks/process-ledger-allocation-journal.md
                 - name: Oppsett for konserninternt regnskap
@@ -856,8 +872,12 @@
                   href: general-ledger/sales-tax-calculation-methods-origin-field.md
                 - name: Hele beløp og alternativer for intervallberegning for mva-koder
                   href: general-ledger/whole-amount-interval-options-sales-tax-codes.md
+                - name: Mva-beregning på generelle journallinjer
+                  href: general-ledger/sales-tax-calculation-on-general-journal.md
                 - name: Beregne og justere merverdiavgift på en leverandørfaktura
                   href: general-ledger/tasks/calculate-adjust-sales-tax-vendor-invoice.md
+                - name: Aktiver forsinket avgiftsberegning i journal
+                  href: general-ledger/enable-delayed-tax-calculation.md
                 - name: Opprette en mva-betaling
                   href: general-ledger/tasks/create-sales-tax-payment.md
                 - name: Opprette mva-transaksjoner på dokumenter
@@ -940,6 +960,10 @@
               href: public-sector/plan-public-sector-functionality.md
             - name: Opprette forside og signatursider for en betalingsrapport for offentlig sektor
               href: public-sector/tasks/create-cover-signature-pages-payments-report-public-sector.md
+            - name: Prognosestillingsdistribusjon
+              href: public-sector/forecast-positions.md
+            - name: Rapporter om prognosestilling i den offentlige sektoren
+              href: public-sector/forecast-position-reports.md
             - name: Leverandør i offentlig sektor
               items:
                 - name: Oversikt over leverandør i offentlig sektor
@@ -1016,6 +1040,8 @@
                   href: public-sector/advanced-ledger-entries-public-sector.md
                 - name: Opprette en avansert finansoppføring i offentlig sektor
                   href: public-sector/tasks/create-advanced-ledger-entry-public-sector.md
+                - name: Bruke kontantkontrollgrenser
+                  href: public-sector/cash-control.md
                 - name: Årsavslutningsbehandling i offentlig sektor
                   href: public-sector/year-end-processing-public-sector.md
                 - name: Avledede økonomiske hierarkier i offentlig sektor
@@ -1214,6 +1240,8 @@
                   href: localizations/latam-bra-sped-ecd.md
                 - name: SPED-Reinf-avgiftsoppgave
                   href: localizations/latam-bra-sped-reinf.md
+                - name: SPED-regnskapsoppløsing 13/2019 RJ
+                  href: localizations/latam-bra-resolution-13-2019-RJ.md
                 - name: Parametere for juridiske enheter
                   href: localizations/latam-bra-legal-entity-parameters.md
                 - name: Definere parametere for juridisk enhet
@@ -1863,8 +1891,12 @@
                   href: localizations/emea-ita-packing-slip.md
                 - name: Bøker om salgsskatt
                   href: localizations/emea-ita-fiscal-books.md
+                - name: MVA-styring og rapportering etter avgiftspunktdato (dato i mva-register)
+                  href: localizations/emea-ita-vat-management.md
                 - name: Dele opp betaling for fakturaer som er utstedt til offentlig administrasjon
                   href: localizations/emea-ita-split-payment-invoices-issued-public-administration.md
+                - name: Krediter fakturering (Italia)
+                  href: localizations/emea-ita-credit-invoicing.md
                 - name: Kildeskatt
                   href: localizations/emea-ita-withholding-tax.md
             - name: Japan
@@ -2221,6 +2253,8 @@
                       href: localizations/rus-VAT-declaration.md
                     - name: 'Salgsbøker, kjøpsbøker og fakturajournaler'
                       href: localizations/rus-sales-books-purchase-books.md
+                    - name: Forskuddsbetalingsstyring
+                      href: localizations/rus-prepayments-management.md
                 - name: Anleggsmidler
                   items:
                     - name: Behandle anleggsmidler
@@ -2277,6 +2311,8 @@
                       href: ../supply-chain/localizations/rus-goods-transit-postponed.md
                     - name: Administrasjon av kontantstrøm
                       href: localizations/rus-cash-flow.md
+                    - name: Tilordning av tillegg i forhold til vekt og volum
+                      href: localizations/rus-miscellaneous-charges.md
                 - name: Rapportering
                   items:
                     - name: Finansrapportering
