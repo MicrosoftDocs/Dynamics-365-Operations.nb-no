@@ -18,43 +18,45 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 3b1621cf0f1e47d7bd5fe2fa0b41fbcd61f14def
-ms.sourcegitcommit: f93ead945afe5ae18706c66bce6e64a6b57aac50
+ms.openlocfilehash: 026b34934d6527416a4632d8e1aee76a8836dcb0
+ms.sourcegitcommit: fb66731f05207094149a6bc7b8549a4dabbb071a
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/19/2019
-ms.locfileid: "1887211"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "2652017"
 ---
-# <a name="dispatch-work-order"></a><span data-ttu-id="ef136-103">Fordelingsarbeidsordre</span><span class="sxs-lookup"><span data-stu-id="ef136-103">Dispatch work order</span></span>
+# <a name="dispatch-work-order"></a><span data-ttu-id="d8a5b-103">Fordelingsarbeidsordre</span><span class="sxs-lookup"><span data-stu-id="d8a5b-103">Dispatch work order</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
-<span data-ttu-id="ef136-104">Du kan planlegge én arbeidsordre eller arbeidsordrejobber til én arbeider ved hjelp av **fordeling**-funksjonen.</span><span class="sxs-lookup"><span data-stu-id="ef136-104">You can schedule one work order or work order jobs to one worker using the **Dispatch** functionality.</span></span>
+<span data-ttu-id="d8a5b-104">Du kan planlegge én arbeidsordre eller arbeidsordrejobber til én arbeider ved hjelp av **fordeling**-funksjonen.</span><span class="sxs-lookup"><span data-stu-id="d8a5b-104">You can schedule one work order or work order jobs to one worker using the **Dispatch** functionality.</span></span>
 
-1. <span data-ttu-id="ef136-105">Klikk på **Aktivastyring** > **Felles** > **Arbeidsordrer** > **Alle arbeidsordrer** eller **Aktive arbeidsordrer**.</span><span class="sxs-lookup"><span data-stu-id="ef136-105">Click **Asset management** > **Common** > **Work orders** > **All Work orders** or **Active work orders**.</span></span>
+1. <span data-ttu-id="d8a5b-105">Klikk på **Aktivastyring** > **Felles** > **Arbeidsordrer** > **Alle arbeidsordrer** eller **Aktive arbeidsordrer**.</span><span class="sxs-lookup"><span data-stu-id="d8a5b-105">Click **Asset management** > **Common** > **Work orders** > **All Work orders** or **Active work orders**.</span></span>
 
-2. <span data-ttu-id="ef136-106">Velg arbeidsordren i listen.</span><span class="sxs-lookup"><span data-stu-id="ef136-106">Select the work order in the list.</span></span>
+2. <span data-ttu-id="d8a5b-106">Velg arbeidsordren i listen.</span><span class="sxs-lookup"><span data-stu-id="d8a5b-106">Select the work order in the list.</span></span>
 
-3. <span data-ttu-id="ef136-107">Gå til kategorien **Generelt**, og klikk på **Fordeling**.</span><span class="sxs-lookup"><span data-stu-id="ef136-107">On the **General** tab, click **Dispatch**.</span></span>
+3. <span data-ttu-id="d8a5b-107">Gå til kategorien **Generelt**, og klikk på **Fordeling**.</span><span class="sxs-lookup"><span data-stu-id="d8a5b-107">On the **General** tab, click **Dispatch**.</span></span>
 
-4. <span data-ttu-id="ef136-108">I dialogboksen **Planlegg arbeidsordre** velger du arbeideren i **Arbeider**-feltet.</span><span class="sxs-lookup"><span data-stu-id="ef136-108">n the **Schedule work order** dialog, select the worker in the **Worker** field.</span></span>
+4. <span data-ttu-id="d8a5b-108">I dialogboksen **Planlegg arbeidsordre** velger du arbeideren i **Arbeider**-feltet.</span><span class="sxs-lookup"><span data-stu-id="d8a5b-108">In the **Schedule work order** dialog, select the worker in the **Worker** field.</span></span>
 
-5. <span data-ttu-id="ef136-109">I feltet **Planlegg timer** kan du sette inn forventede arbeidstimer i tilfelle forventede arbeidstimer avviker fra prognosetimer.</span><span class="sxs-lookup"><span data-stu-id="ef136-109">In the **Schedule hours** field, you can insert expected work hours in case expected work hours differ from forecast hours.</span></span>
+5. <span data-ttu-id="d8a5b-109">I feltet **Planlegg timer** kan du sette inn forventede arbeidstimer i tilfelle forventede arbeidstimer avviker fra prognosetimer.</span><span class="sxs-lookup"><span data-stu-id="d8a5b-109">In the **Schedule hours** field, you can insert expected work hours in case expected work hours differ from forecast hours.</span></span>
 
-6. <span data-ttu-id="ef136-110">I **Planlagt start** -feltet kan du redigere startdato og -klokkeslett om nødvendig.</span><span class="sxs-lookup"><span data-stu-id="ef136-110">In the **Scheduled start** field, you can edit start date and time, if required.</span></span>
+6. <span data-ttu-id="d8a5b-110">I **Planlagt start** -feltet kan du redigere startdato og -klokkeslett om nødvendig.</span><span class="sxs-lookup"><span data-stu-id="d8a5b-110">In the **Scheduled start** field, you can edit start date and time, if required.</span></span>
 
-7. <span data-ttu-id="ef136-111">Hvis planleggingsprosessen skal observere kapasitetsbegrensninger for ressurser som allerede er planlagt for andre jobber, må du kontrollere at veksleknappene for **Aktivum**, **Verktøy** og **Arbeider** er satt til Ja.</span><span class="sxs-lookup"><span data-stu-id="ef136-111">If the scheduling process should observe capacity limitations regarding resources already scheduled on other jobs, make sure that the **Asset**, **Tool**, and **Worker** toggle buttons are set to "Yes".</span></span> <span data-ttu-id="ef136-112">Hvis du vil ha detaljert informasjon om planleggingsprosessen, velger du Ja på **Detaljert**-veksleknappen.</span><span class="sxs-lookup"><span data-stu-id="ef136-112">If you want to see detailed information about the scheduling process, select "Yes" on the **Verbose** toggle button.</span></span> <span data-ttu-id="ef136-113">Dette betyr at detaljert informasjon om de beregnede resultatene for arbeidsordren vises i informasjonsloggen.</span><span class="sxs-lookup"><span data-stu-id="ef136-113">This means detailed information about the calculated scores on the work order is shown in the Infolog.</span></span>
+7. <span data-ttu-id="d8a5b-111">Hvis planleggingsprosessen skal observere kapasitetsbegrensninger for ressurser som allerede er planlagt for andre jobber, må du kontrollere at veksleknappene for **Aktivum**, **Verktøy** og **Arbeider** er satt til **Ja**.</span><span class="sxs-lookup"><span data-stu-id="d8a5b-111">If the scheduling process should observe capacity limitations regarding resources already scheduled on other jobs, make sure that the **Asset**, **Tool**, and **Worker** toggle buttons are set to **Yes**.</span></span> <span data-ttu-id="d8a5b-112">Hvis du vil ha detaljert informasjon om planleggingsprosessen, velger du **Ja** på **Detaljert**-veksleknappen.</span><span class="sxs-lookup"><span data-stu-id="d8a5b-112">If you want to see detailed information about the scheduling process, select **Yes** on the **Verbose** toggle button.</span></span> <span data-ttu-id="d8a5b-113">Dette betyr at detaljert informasjon om de beregnede resultatene for arbeidsordren vises i informasjonsloggen.</span><span class="sxs-lookup"><span data-stu-id="d8a5b-113">This means detailed information about the calculated scores on the work order is shown in the Infolog.</span></span>
 
-8. <span data-ttu-id="ef136-114">Velg Ja i knappen **Ignorer tidsplan** for å ignorere lukkede dager i kalenderen (gjelder for aktiva, arbeider og verktøy).</span><span class="sxs-lookup"><span data-stu-id="ef136-114">Select "Yes" on the **Ignore schedule** toggle button to ignore closed days in the calendar (applies to asset, worker, and tools).</span></span> <span data-ttu-id="ef136-115">Velg Ja på veksleknappen **Ignorer planlagt kjøring** for å ignorere begrensninger som kan ha blitt valgt for arbeidsordren angående planlegging.</span><span class="sxs-lookup"><span data-stu-id="ef136-115">Select "Yes" on the **Ignore scheduled execution** toggle button to ignore limitations that may have been selected on the work order regarding scheduling.</span></span> <span data-ttu-id="ef136-116">Se delen [Planlagt kjøring](../setup-for-work-orders/scheduled-execution.md) hvis du vil ha informasjon om oppsett av planlagt kjøring.</span><span class="sxs-lookup"><span data-stu-id="ef136-116">Refer to the [Scheduled execution](../setup-for-work-orders/scheduled-execution.md) section for information on the setup of scheduled execution.</span></span>
+8. <span data-ttu-id="d8a5b-114">Velg **Ja** på veksleknappen **Ignorer tidsplan** for å ignorere lukkede dager i kalenderen (gjelder for aktiva, arbeider og verktøy).</span><span class="sxs-lookup"><span data-stu-id="d8a5b-114">Select **Yes** on the **Ignore schedule** toggle button to ignore closed days in the calendar (applies to asset, worker, and tools).</span></span> <span data-ttu-id="d8a5b-115">Velg **Ja** på veksleknappen **Ignorer planlagt kjøring** for å ignorere begrensninger som kan ha blitt valgt for arbeidsordren angående planlegging.</span><span class="sxs-lookup"><span data-stu-id="d8a5b-115">Select **Yes** on the **Ignore scheduled execution** toggle button to ignore limitations that may have been selected on the work order regarding scheduling.</span></span> 
 
-9. <span data-ttu-id="ef136-117">Klikk **OK**.</span><span class="sxs-lookup"><span data-stu-id="ef136-117">Click **OK**.</span></span> <span data-ttu-id="ef136-118">Livsløpstilstanden for arbeidsordren oppdateres automatisk til livsløpstilstanden "Planlagt" angitt i **Aktivastyring** > **Oppsett** > **Arbeidsordrer** > **Livssyklusmodeller**.</span><span class="sxs-lookup"><span data-stu-id="ef136-118">The work order lifecycle state is automatically updated to the "Scheduled" lifecycle state specified **Asset management** > **Setup** > **Work orders** > **Lifecycle models**.</span></span>
+    <span data-ttu-id="d8a5b-116">Se delen [Planlagt kjøring](../setup-for-work-orders/scheduled-execution.md) hvis du vil ha informasjon om oppsett av planlagt kjøring.</span><span class="sxs-lookup"><span data-stu-id="d8a5b-116">For information on the setup of scheduled execution, see the [Scheduled execution](../setup-for-work-orders/scheduled-execution.md) section.</span></span>
 
-<span data-ttu-id="ef136-119">Figuren nedenfor viser et eksempel på fordelingsvalg i dialogboksen **Planlegge arbeidsordre**.</span><span class="sxs-lookup"><span data-stu-id="ef136-119">The figure below shows an example of dispatch selections in the **Schedule work order** dialog.</span></span>
+9. <span data-ttu-id="d8a5b-117">Klikk **OK**.</span><span class="sxs-lookup"><span data-stu-id="d8a5b-117">Click **OK**.</span></span> <span data-ttu-id="d8a5b-118">Livsløpstilstanden for arbeidsordren oppdateres automatisk til livsløpstilstanden **Planlagt** som er angitt i **Aktivastyring** > **Oppsett** > **Arbeidsordrer** > **Livssyklusmodeller**.</span><span class="sxs-lookup"><span data-stu-id="d8a5b-118">The work order lifecycle state is automatically updated to the **Scheduled** lifecycle state specified **Asset management** > **Setup** > **Work orders** > **Lifecycle models**.</span></span>
+
+<span data-ttu-id="d8a5b-119">Figuren nedenfor viser et eksempel på fordelingsvalg i dialogboksen **Planlegge arbeidsordre**.</span><span class="sxs-lookup"><span data-stu-id="d8a5b-119">The figure below shows an example of dispatch selections in the **Schedule work order** dialog.</span></span>
 
 ![Figur 1](media/04-work-order-scheduling.png)
 
->[!NOTE]
-><span data-ttu-id="ef136-121">Hvis du vil slette tidsplanen for en arbeidsordre, gjør du dette ved å velge arbeidsordren i **Alle arbeidsordrer** og klikke **Slett tidsplan** i kategorien **Generelt**. Husk å oppdatere livsløpstilstanden for arbeidsordren manuelt hvis du sletter tidsplanen.</span><span class="sxs-lookup"><span data-stu-id="ef136-121">If you want to delete the schedule on a work order, this is done by selecting the work order in **All work orders** and clicking **Delete schedule** on the **General** tab. Remember to manually update the work order lifecycle state if you delete the schedule.</span></span>
+[!NOTE]
+<span data-ttu-id="d8a5b-121">Hvis du vil slette tidsplanen for en arbeidsordre, velger du arbeidsordren i **Alle arbeidsordrer**, og deretter klikker du på **Slett tidsplan** i kategorien **Generelt**. Husk å oppdatere livsløpstilstanden for arbeidsordren manuelt hvis du sletter tidsplanen.</span><span class="sxs-lookup"><span data-stu-id="d8a5b-121">If you want to delete the schedule on a work order, select the work order in **All work orders**, and then click **Delete schedule** on the **General** tab. Remember to manually update the work order lifecycle state if you delete the schedule.</span></span>
 

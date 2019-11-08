@@ -3,7 +3,7 @@ title: Arbeidsordresamlinger
 description: Dette emnet beskriver hvordan du arbeider med arbeidsordresamlinger i Aktivastyring.
 author: josaw1
 manager: AnnBe
-ms.date: 08/15/2019
+ms.date: 10/15/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,95 +16,96 @@ ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: mkirknel
-ms.search.validFrom: 2019-08-15
+ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 069fa02073808fd7bbaac9bc1603e49ce4d450eb
-ms.sourcegitcommit: f5bfa3212bc3ef7d944a358ef08fe8863fd93b91
+ms.openlocfilehash: 161244cb4451ddc7b13b579fd02e828a61adeea4
+ms.sourcegitcommit: deb87e518a151d8bb084891851a39758938a96e4
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "1875820"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "2626368"
 ---
-# <a name="work-order-pools"></a><span data-ttu-id="0a6c1-103">Arbeidsordresamlinger</span><span class="sxs-lookup"><span data-stu-id="0a6c1-103">Work order pools</span></span>
-
+# <a name="work-order-pools"></a><span data-ttu-id="d1139-103">Arbeidsordresamlinger</span><span class="sxs-lookup"><span data-stu-id="d1139-103">Work order pools</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+
+<span data-ttu-id="d1139-104">Du kan bruke arbeidsordresamlinger til å gruppere arbeidsordrer som har noe til felles.</span><span class="sxs-lookup"><span data-stu-id="d1139-104">You can use work order pools to group work orders that have something in common.</span></span> <span data-ttu-id="d1139-105">Her er noen eksempler på ting du kan opprette arbeidsordresamlinger for:</span><span class="sxs-lookup"><span data-stu-id="d1139-105">Here are some examples of things that you can create  work order pools for:</span></span>
+
+- <span data-ttu-id="d1139-106">Arbeidslag, for eksempel vedlikeholdslag A eller vedlikeholdslag B</span><span class="sxs-lookup"><span data-stu-id="d1139-106">Work crews, for example, Maintenance Crew A or Maintenance Crew B</span></span>  
+
+- <span data-ttu-id="d1139-107">Fagkompetanse, for eksempel elektrikere og rørleggere</span><span class="sxs-lookup"><span data-stu-id="d1139-107">Professional skills, such as electricians or plumbers</span></span>  
+
+- <span data-ttu-id="d1139-108">Fysiske lokasjoner</span><span class="sxs-lookup"><span data-stu-id="d1139-108">Physical locations</span></span>  
+
+- <span data-ttu-id="d1139-109">Tidsplaner, for eksempel uker eller andre perioder</span><span class="sxs-lookup"><span data-stu-id="d1139-109">Time schedules, such as weeks or other periods</span></span>  
+
+<span data-ttu-id="d1139-110">Du kan du plassere én arbeidsordre i flere arbeidsordresamlinger, etter behov.</span><span class="sxs-lookup"><span data-stu-id="d1139-110">As you require, you can put one work order in multiple work order pools.</span></span>
 
 
-<span data-ttu-id="0a6c1-104">Du kan bruke arbeidsordresamlinger til å gruppere arbeidsordrer som har noe til felles.</span><span class="sxs-lookup"><span data-stu-id="0a6c1-104">You can use work order pools to group work orders that have something in common.</span></span> <span data-ttu-id="0a6c1-105">Du kan for eksempel opprette arbeidsordresamlinger for</span><span class="sxs-lookup"><span data-stu-id="0a6c1-105">For example, you can create work order pools for</span></span>
+## <a name="create-a-work-order-pool"></a><span data-ttu-id="d1139-111">Opprette en arbeidsordresamling</span><span class="sxs-lookup"><span data-stu-id="d1139-111">Create a work order pool</span></span>
 
-- <span data-ttu-id="0a6c1-106">arbeidslag, for eksempel vedlikeholdslag A, vedlikeholdslag B</span><span class="sxs-lookup"><span data-stu-id="0a6c1-106">work crews, for example, Maintenance Crew A, Maintenance Crew B</span></span>  
+<span data-ttu-id="d1139-112">På listesiden **Alle arbeidsordresamlinger** eller **Aktive arbeidsordresamlinger** kan du få en oversikt over arbeidsordresamlingene og opprette nye samlinger.</span><span class="sxs-lookup"><span data-stu-id="d1139-112">On the **All work order pools** or **Active work order pools** list page, you can get an overview of your work order pools and create new pools.</span></span>
 
-- <span data-ttu-id="0a6c1-107">fagkompetanse, for eksempel elektrikere og rørleggere</span><span class="sxs-lookup"><span data-stu-id="0a6c1-107">professional skills, for example, electricians or plumbers</span></span>  
+1. <span data-ttu-id="d1139-113">Velg **Aktivastyring** > **Felles** > **Arbeidsordresamlinger** > **Alle arbeidsordresamlinger** eller **Aktive arbeidsordresamlinger**.</span><span class="sxs-lookup"><span data-stu-id="d1139-113">Select **Asset management** > **Common** > **Work order pools** > **All work order pools** or **Active work order pools**.</span></span>
 
-- <span data-ttu-id="0a6c1-108">fysiske lokasjoner</span><span class="sxs-lookup"><span data-stu-id="0a6c1-108">physical locations</span></span>  
+2. <span data-ttu-id="d1139-114">Velg **Ny**.</span><span class="sxs-lookup"><span data-stu-id="d1139-114">Select **New**.</span></span>
 
-- <span data-ttu-id="0a6c1-109">tidsplaner, for eksempel uker eller andre perioder</span><span class="sxs-lookup"><span data-stu-id="0a6c1-109">time schedules, for example, weeks or other periods</span></span>  
+3. <span data-ttu-id="d1139-115">Angi en ID for arbeidsordresamlingen i feltet **Pulje**.</span><span class="sxs-lookup"><span data-stu-id="d1139-115">In the **Pool** field, enter an ID for the work order pool.</span></span>
 
+4. <span data-ttu-id="d1139-116">Angi et navn i **Navn**-feltet.</span><span class="sxs-lookup"><span data-stu-id="d1139-116">the **Name** field, enter a name.</span></span>
 
-<span data-ttu-id="0a6c1-110">Hvis det er nødvendig, kan én arbeidsordre plasseres i mange arbeidsordresamlinger.</span><span class="sxs-lookup"><span data-stu-id="0a6c1-110">If required, one work order can be placed in many work order pools.</span></span>
+5. <span data-ttu-id="d1139-117">Sett alternativet **Aktiv** til **Ja** for å angi at arbeidsordresamlingen er aktiv.</span><span class="sxs-lookup"><span data-stu-id="d1139-117">Set the **Active** option to **Yes** to indicate that the work order pool is active.</span></span>
 
+6. <span data-ttu-id="d1139-118">Sett alternativet **Slett arbeidsordrerelasjoner** til **Ja** hvis arbeidsordrer automatisk skal fjernes fra arbeidsordresamlingen.</span><span class="sxs-lookup"><span data-stu-id="d1139-118">Set the **Delete work order relations** option to **Yes** if work orders should automatically be removed from the work order pool.</span></span>
 
-## <a name="create-work-order-pool"></a><span data-ttu-id="0a6c1-111">Opprette arbeidsordresamling</span><span class="sxs-lookup"><span data-stu-id="0a6c1-111">Create work order pool</span></span>
+7. <span data-ttu-id="d1139-119">I feltet **Slett livssyklustilstand** velger du livssyklustilstanden for arbeidsordren.</span><span class="sxs-lookup"><span data-stu-id="d1139-119">In the **Delete lifecycle state** field, select the work order lifecycle state.</span></span> <span data-ttu-id="d1139-120">For eksempel kan livssyklustilstanden for arbeidsordre for å fullføre en arbeidsordre settes til å slette relasjoner til arbeidsordresamlinger automatisk.</span><span class="sxs-lookup"><span data-stu-id="d1139-120">For example, the work order lifecycle state for completing a work order could be set to automatically delete relations to work order pools.</span></span>
 
-<span data-ttu-id="0a6c1-112">I **Alle arbeidsordresamlinger** eller **Aktive arbeidsordresamlinger** kan du få en oversikt over arbeidsordresamlingene og opprette nye samlinger.</span><span class="sxs-lookup"><span data-stu-id="0a6c1-112">In **All work order pools** or **Active work order pools**, you can get an overview of your work order pools and create new pools.</span></span>
+    <span data-ttu-id="d1139-121">Du kan begynne å legge til arbeidsordrer i arbeideordresamlingen med én gang.</span><span class="sxs-lookup"><span data-stu-id="d1139-121">You can start adding work orders to your work order pool right away.</span></span>
 
-1. <span data-ttu-id="0a6c1-113">Klikk på **Aktivastyring** > **Felles** > **Arbeidsordresamlinger** > **Alle arbeidsordresamlinger** eller **Aktive arbeidsordresamlinger**.</span><span class="sxs-lookup"><span data-stu-id="0a6c1-113">Click **Asset management** > **Common** > **Work order pools** > **All work order pools** or **Active work order pools**.</span></span>
+8. <span data-ttu-id="d1139-122">Velg **Legg til linje** på hurtigfanen **Arbeidsordrer**.</span><span class="sxs-lookup"><span data-stu-id="d1139-122">On the **Work orders** FastTab, select **Add line**.</span></span>
 
-2. <span data-ttu-id="0a6c1-114">Klikk på **Ny**.</span><span class="sxs-lookup"><span data-stu-id="0a6c1-114">Click **New**.</span></span>
+9. <span data-ttu-id="d1139-123">Velg en arbeidsordre i feltet **Arbeidsordre**.</span><span class="sxs-lookup"><span data-stu-id="d1139-123">In the **Work order** field, select a work order.</span></span> <span data-ttu-id="d1139-124">De tilknyttede feltene oppdateres automatisk.</span><span class="sxs-lookup"><span data-stu-id="d1139-124">The related fields are automatically updated.</span></span>
 
-3. <span data-ttu-id="0a6c1-115">Sett inn en ID for arbeidsordresamling i **Samling**-feltet og et navn i **Navn**-feltet.</span><span class="sxs-lookup"><span data-stu-id="0a6c1-115">Insert a work order pool ID in the **Pool** field and a name in the **Name** field.</span></span>
+10. <span data-ttu-id="d1139-125">Gjenta trinn 8 til og med 9 hvis du vil legge til flere arbeidsordrer.</span><span class="sxs-lookup"><span data-stu-id="d1139-125">Repeat steps 8 through 9 to add more work orders.</span></span>
 
-4. <span data-ttu-id="0a6c1-116">Velg Ja på **Aktiv**-veksleknappen for å angi at arbeidsordresamlingen er aktiv.</span><span class="sxs-lookup"><span data-stu-id="0a6c1-116">Select "Yes" on the **Active** toggle button to indicate that the work order pool is active.</span></span>
+11. <span data-ttu-id="d1139-126">Hvis arbeidsordrene du la til, skal utføres i en bestemt rekkefølge, kan du angi tallene **1**, **2**, **3** og så videre i feltet **Sorteringsrekkefølge** for å angi rekkefølgen.</span><span class="sxs-lookup"><span data-stu-id="d1139-126">If the work orders that you added should be done in a specific order, in the **Sort order** field, you can enter the numbers **1**, **2**, **3**, and so on, to specify that order.</span></span>
 
-5. <span data-ttu-id="0a6c1-117">Velg Ja på veksleknappen **Slett arbeidsordrerelasjoner** hvis du vil at arbeidsordrer skal fjernes automatisk fra arbeidsordresamlingen.</span><span class="sxs-lookup"><span data-stu-id="0a6c1-117">Select "Yes" on the **Delete work order relations** toggle button if you want work orders to be automatically removed from the work order pool.</span></span>
+12. <span data-ttu-id="d1139-127">Hvis du vil vise en liste over alle arbeidsordrene som er inkludert i arbeidsordren, går du til handlingsruten, kategorien **Arbeidsordresamling**, gruppen **Vis arbeidsordresamlingsrelatert** og velger **Arbeidsordrer** for å åpne listesiden **Alle arbeidsordrer**.</span><span class="sxs-lookup"><span data-stu-id="d1139-127">To view a list of all the work orders that are included in the work order pool, on the Action Pane, on the **Work order pool** tab, in the **View work order pool related** group, select **Work orders** to open the **All work orders** list page.</span></span>
 
-6. <span data-ttu-id="0a6c1-118">I feltet **Slett livssyklustilstand** velger du livssyklustilstanden for arbeidsordren.</span><span class="sxs-lookup"><span data-stu-id="0a6c1-118">In the **Delete lifecycle state** field, select the work order lifecycle state.</span></span> <span data-ttu-id="0a6c1-119">For eksempel kan livssyklustilstanden for arbeidsordre for å fullføre en arbeidsordre settes til å slette relasjoner til arbeidsordresamlinger automatisk.</span><span class="sxs-lookup"><span data-stu-id="0a6c1-119">For example, the work order lifecycle state for completing a work order could be set to automatically delete relations to work order pools.</span></span>
+13. <span data-ttu-id="d1139-128">Hvis du vil beregne og vise kapasitetsbelastningen for vedlikeholdsplanen, ikke-planlagte arbeidsordrer og planlagte arbeidsordrer, går du til handlingsruten, kategorien **Arbeidsordresamling**, gruppen **Vis arbeidsordresamlingsrelatert** og velger **Kapasitetsbelastning** for å åpne dialogboksen **Beregn kapasitetsbelastning**.</span><span class="sxs-lookup"><span data-stu-id="d1139-128">To calculate and view capacity load for the maintenance schedule, unscheduled work orders, and scheduled work orders, on the Action Pane, on the **Work order pool** tab, in the **View work order pool related** group, select **Capacity load** to open the **Calculate capacity load** dialog.</span></span>
 
-7. <span data-ttu-id="0a6c1-120">Du kan begynne å legge til arbeidsordrer i arbeideordresamlingen med én gang.</span><span class="sxs-lookup"><span data-stu-id="0a6c1-120">You can start adding work orders to your work order pool right away.</span></span> <span data-ttu-id="0a6c1-121">Klikk på **Legg til linje** på hurtigfanen **Arbeidsordrer**.</span><span class="sxs-lookup"><span data-stu-id="0a6c1-121">On the **Work orders** FastTab, click **Add line**.</span></span>
+14. <span data-ttu-id="d1139-129">Hvis du vil beregne og vise prognoser for elementene (reservedeler og andre nødvendige varer) som er relatert til vedlikeholdsplanen, ikke-planlagte arbeidsordrer og planlagte arbeidsordrer, går du til handlingsruten, kategorien **Arbeidsordresamling**, gruppen **Vis arbeidsordresamlingsrelatert** og velger **Vareprognose** for å åpne dialogboksen **Beregn vareprognose**.</span><span class="sxs-lookup"><span data-stu-id="d1139-129">To calculate and view forecasts for items (spare parts and other required items) that are related to maintenance schedule, unscheduled work orders, and scheduled work orders, on the Action Pane, on the **Work order pool** tab, in the **View work order pool related** group, select **Item forecast** to open the **Calculate item forecast** dialog.</span></span>
 
-8. <span data-ttu-id="0a6c1-122">Velg en arbeidsordre i feltet **Arbeidsordre**.</span><span class="sxs-lookup"><span data-stu-id="0a6c1-122">Select a work order in the **Work order** field.</span></span> <span data-ttu-id="0a6c1-123">De tilknyttede feltene oppdateres automatisk.</span><span class="sxs-lookup"><span data-stu-id="0a6c1-123">The related fields are automatically updated.</span></span>
+15. <span data-ttu-id="d1139-130">Hvis du vil vise en liste over innkjøpsrekvisisjoner som er relatert til arbeidsordrene i arbeidsordresamlingen, går du til handlingsruten, kategorien **Arbeidsordresamling**, gruppen **Innkjøp** og velger **Innkjøpsrekvisisjon for arbeidsordre** for å åpne listesiden **Innkjøpsrekvisisjon for arbeidsordre**.</span><span class="sxs-lookup"><span data-stu-id="d1139-130">To view a list of purchase requisitions that are related to the work orders in the work order pool, on the Action Pane, on the **Work order pool** tab, in the **Procurement** group, select **Work order purchase requisition** to open the **Work order purchase requisition** list page.</span></span>
 
-9. <span data-ttu-id="0a6c1-124">Gjenta trinn 7-8 hvis du vil legge til flere arbeidsordrer.</span><span class="sxs-lookup"><span data-stu-id="0a6c1-124">Repeat steps 7-8 if you want to add more work orders.</span></span>
-
-10. <span data-ttu-id="0a6c1-125">I feltet **Sorteringsrekkefølge** kan du angi om arbeidsordrene skal utføres i en bestemt rekkefølge.</span><span class="sxs-lookup"><span data-stu-id="0a6c1-125">In the **Sort order** field, you can indicate if the work orders should be carried out in a certain order.</span></span> <span data-ttu-id="0a6c1-126">Sett inn tallene 1, 2, 3 og så videre for å angi en bestemt rekkefølge for de valgte arbeidsordrene.</span><span class="sxs-lookup"><span data-stu-id="0a6c1-126">Insert numbers 1, 2, 3, and so on to indicate a specific sequence for the selected work orders.</span></span>
-
-11. <span data-ttu-id="0a6c1-127">Klikk på **Arbeidsordrer**-knappen for å vise en liste over alle arbeidsordrene som er inkludert i arbeidsordresamlingen.</span><span class="sxs-lookup"><span data-stu-id="0a6c1-127">Click the **Work orders** button to see a list of all the work orders included in the work order pool.</span></span>
-
-12. <span data-ttu-id="0a6c1-128">Klikk på knappen **Kapasitetsbelastning** for å åpne **Kapasitetsbelastning** for å beregne og vise kapasitetsbelastning for vedlikeholdsplan, ikke-planlagte arbeidsordrer og planlagte arbeidsordrer.</span><span class="sxs-lookup"><span data-stu-id="0a6c1-128">Click the **Capacity load** button to open **Capacity load** to calculate and view capacity load for maintenance schedule, not-scheduled work orders, and scheduled work orders.</span></span>
-
-13. <span data-ttu-id="0a6c1-129">Klikk på knappen **Vareprognose** for å åpne **Vareprognose** for å beregne og vise prognoser for varer (reservedeler og andre nødvendige varer) knyttet til vedlikeholdsplan, ikke-planlagte arbeidsordrer og planlagte arbeidsordrer.</span><span class="sxs-lookup"><span data-stu-id="0a6c1-129">Click the **Item forecast** button to open **Item forecast** to calculate and view forecasts for items (spare parts and other required items) related to maintenance schedule, not-scheduled work orders, and scheduled work orders.</span></span>
-
-14. <span data-ttu-id="0a6c1-130">Klikk på knappen **Innkjøpsrekvisisjon for arbeidsordre** for å åpne listen **Innkjøpsrekvisisjon for arbeidsordre** for å vise en liste over innkjøpsrekvisisjoner knyttet til arbeidsordrene i arbeidsordresamlingen.</span><span class="sxs-lookup"><span data-stu-id="0a6c1-130">Click the **Work order purchase requisition** button to open the **Work order purchase requisition** list to see a list of purchase requisitions related to the work orders in the work order pool.</span></span>
-
-15. <span data-ttu-id="0a6c1-131">Klikk på knappen **Arbeidsordrekjøp** for å åpne listen **Arbeidsordrekjøp** for å vise en liste over bestillinger knyttet til arbeidsordrene i arbeidsordresamlingen.</span><span class="sxs-lookup"><span data-stu-id="0a6c1-131">Click the **Work order purchase** button to open the **Work order purchase** list to see a list of purchase orders related to the work orders in the work order pool.</span></span>
+16. <span data-ttu-id="d1139-131">Hvis du vil vise en liste over bestillinger som er relatert til arbeidsordrene i arbeidsordresamlingen, går du til handlingsruten, kategorien **Arbeidsordresamling**, gruppen **Innkjøp** og velger **Innkjøp for arbeidsordre** for å åpne listesiden **Innkjøp for arbeidsordre**.</span><span class="sxs-lookup"><span data-stu-id="d1139-131">To view a list of purchase orders that are related to the work orders in the work order pool, on the Action Pane, on the **Work order pool** tab, in the **Procurement** group, select **Work order purchase** to open the **Work order purchase** list page.</span></span>
 
 >[!NOTE]
-><span data-ttu-id="0a6c1-132">Når en arbeidsordresamling ikke lenger er relevant for arbeidsplanleggingen, setter du **Aktiv**-avmerkingsboksen for denne samlingen til Nei i listevisningen **Arbeidsordresamling**.</span><span class="sxs-lookup"><span data-stu-id="0a6c1-132">When a work order pool is no longer relevant for your work planning, set the **Active** check box for that pool to "No" in the **Work order pool** list view.</span></span>
+><span data-ttu-id="d1139-132">Når en arbeidsordresamling ikke lenger er relevant for arbeidsplanleggingen, setter du alternativet **Aktiv** for denne samlingen til **Nei** i listevisningen på siden **Arbeidsordresamling**.</span><span class="sxs-lookup"><span data-stu-id="d1139-132">When a work order pool is no longer relevant to your work planning, set the **Active** option for that pool to **No** in the list view of the **Work order pool** page.</span></span>
 
-<span data-ttu-id="0a6c1-133">Merk av for **Slett arbeidsordrerelasjoner** hvis du vil slette alle arbeidsordrelinjene, for eksempel for å opprette en tom samling som du kan bruke senere i andre arbeidsordrer.</span><span class="sxs-lookup"><span data-stu-id="0a6c1-133">Select the **Delete work order relations** check box if you want to delete all work order lines, for example to create an empty pool that you can later use for other work orders.</span></span> <span data-ttu-id="0a6c1-134">Husk å fjerne merket for **Slett arbeidsordrerelasjoner** hvis du vil bruke arbeidsordresamlingen til å opprette nye arbeidsordrerelasjoner senere.</span><span class="sxs-lookup"><span data-stu-id="0a6c1-134">Remember to clear the **Delete work order relations** check box if you want to use the work order pool to create new work order relations later.</span></span>
+<span data-ttu-id="d1139-133">Hvis du vil slette alle arbeidsordrelinjer, setter du alternativet **Slett arbeidsordrerelasjoner** til **Ja**.</span><span class="sxs-lookup"><span data-stu-id="d1139-133">To delete all worker order lines, set the **Delete work order relations** option to **Yes**.</span></span> <span data-ttu-id="d1139-134">Dette alternativet er nyttig hvis du for eksempel vil opprette et tomt utvalg som du kan bruke senere for andre arbeidsordrer.</span><span class="sxs-lookup"><span data-stu-id="d1139-134">This option is useful if, for example, you want to create an empty pool that you can use later for other work orders.</span></span> <span data-ttu-id="d1139-135">Når du er klar til å bruke arbeidsordresamlingen til å opprette nye arbeidsordrerelasjoner senere, må du huske å sette **Slett arbeidsordrerelasjoner** til **Nei**.</span><span class="sxs-lookup"><span data-stu-id="d1139-135">When you're ready to use the work order pool to create new work order relations later, remember to set the **Delete work order relations** option to **No**.</span></span>
 
+<span data-ttu-id="d1139-136">Illustrasjonen nedenfor viser et eksempel på listesiden **Arbeidsordresamling**.</span><span class="sxs-lookup"><span data-stu-id="d1139-136">The illustration below shows an example of the **Work order pool** list page.</span></span>
 
 ![Figur 1](media/22-work-orders.png)
 
 
-## <a name="add-work-order-to-a-work-order-pool"></a><span data-ttu-id="0a6c1-136">Legge til arbeidsordre i en arbeidsordresamling</span><span class="sxs-lookup"><span data-stu-id="0a6c1-136">Add work order to a work order pool</span></span>
+## <a name="add-a-work-order-to-a-work-order-pool"></a><span data-ttu-id="d1139-138">Legge til en arbeidsordre i en arbeidsordresamling</span><span class="sxs-lookup"><span data-stu-id="d1139-138">Add a work order to a work order pool</span></span>
 
-<span data-ttu-id="0a6c1-137">Som beskrevet i delen ovenfor, kan du legge til arbeidsordrer i en arbeidsordresamling når du oppretter samlingen.</span><span class="sxs-lookup"><span data-stu-id="0a6c1-137">As described in the section above, you can add work orders to a work order pool when you create the pool.</span></span> <span data-ttu-id="0a6c1-138">Du kan også legge til en arbeidsordre i en arbeidsordresamling fra **Alle arbeidsordrer**-listen.</span><span class="sxs-lookup"><span data-stu-id="0a6c1-138">You can also add a work order to a work order pool from one of the **All work orders** list.</span></span>
+<span data-ttu-id="d1139-139">Som beskrevet i forrige del, kan du legge til arbeidsordrer i en arbeidsordresamling når du oppretter samlingen.</span><span class="sxs-lookup"><span data-stu-id="d1139-139">As described in the previous section, you can add work orders to a work order pool when you create that pool.</span></span> <span data-ttu-id="d1139-140">Du kan også legge til arbeidsordrer i en arbeidsordresamling på listesiden **Alle arbeidsordrer** eller **Aktive arbeidsordrer**.</span><span class="sxs-lookup"><span data-stu-id="d1139-140">You can also add work orders to a work order pool on the **All work orders** or **Active work orders** list page.</span></span>
 
-1. <span data-ttu-id="0a6c1-139">Klikk på **Aktivastyring** > **Felles** > **Arbeidsordrer** > **Alle arbeidsordrer** eller **Aktive arbeidsordrer**.</span><span class="sxs-lookup"><span data-stu-id="0a6c1-139">Click **Asset management** > **Common** > **Work orders** > **All work orders** or **Active work orders**.</span></span>
+1. <span data-ttu-id="d1139-141">Velg arbeidsordren, og deretter går du til handlingsruten, kategorien **Arbeidsordre**, gruppen **Vedlikehold** og velger **Arbeidsordresamling**.</span><span class="sxs-lookup"><span data-stu-id="d1139-141">Select the work order, and then, on the Action Pane, on the **Work order** tab, in the **Maintain** group, select **Work order pool**.</span></span>
 
-2. <span data-ttu-id="0a6c1-140">Velg arbeidsordren i listen, og klikk på **Arbeidsordresamling**.</span><span class="sxs-lookup"><span data-stu-id="0a6c1-140">Select the work order in the list, and click **Work order pool**.</span></span>
+2. <span data-ttu-id="d1139-142">Velg arbeidsordren i listen, og klikk på **Arbeidsordresamling**.</span><span class="sxs-lookup"><span data-stu-id="d1139-142">Select the work order in the list, and click **Work order pool**.</span></span>
 
-3. <span data-ttu-id="0a6c1-141">Velg Legg til i **Legg til / fjern**-feltet.</span><span class="sxs-lookup"><span data-stu-id="0a6c1-141">Select "Add" in the **Add/remove** field.</span></span>
+3. <span data-ttu-id="d1139-143">I dialogboksen **Vedlikehold arbeidsordresamling** i feltet **Legg til/fjern** velger du **Legg til**.</span><span class="sxs-lookup"><span data-stu-id="d1139-143">In the **Maintain work order pool** dialog, in the **Add/remove** field, select **Add**.</span></span>
 
-4. <span data-ttu-id="0a6c1-142">Velg arbeidsordresamlingen i **Samling**-feltet.</span><span class="sxs-lookup"><span data-stu-id="0a6c1-142">Select the work order pool in the **Pool** field.</span></span>
+4. <span data-ttu-id="d1139-144">Velg arbeidsordresamlingen i **Pulje**-feltet.</span><span class="sxs-lookup"><span data-stu-id="d1139-144">In the **Pool** field, select the work order pool.</span></span>
 
-5. <span data-ttu-id="0a6c1-143">Klikk **OK**.</span><span class="sxs-lookup"><span data-stu-id="0a6c1-143">Click **OK**.</span></span>
+5. <span data-ttu-id="d1139-145">Velg **OK**.</span><span class="sxs-lookup"><span data-stu-id="d1139-145">Select **OK**.</span></span>
 
-6. <span data-ttu-id="0a6c1-144">Når du har lagt til en arbeidsordre i en arbeidsordresamling, og du vil plassere arbeidsordren i en bestemt rekkefølge i puljen: Åpne en av listesidene for arbeidsordresamlinger, velg samlingen, klikk på **Rediger**, og juster sorteringsrekkefølgen for arbeidsordrene som er inkludert i samlingen, i **Arbeidsordresamling**-skjemaet > **Arbeidsordrer**-hurtigfanen > **Sorteringsrekkefølge**-feltet.</span><span class="sxs-lookup"><span data-stu-id="0a6c1-144">After you have added a work order to a work order pool, if you want to place the work order in a specific sequence in the pool: Open one of the work order pools list pages, select the pool and click **Edit**, and adjust the sort order of the work orders included in pool in the **Work order pool** form > **Work orders** FastTab > **Sort order** field.</span></span>
+6. <span data-ttu-id="d1139-146">Hvis du vil plassere arbeidsordren du la til, i en bestemt rekkefølge i arbeidsordreutvalget, går du til listesiden **Alle arbeidsordresamlinger** eller **Aktive arbeidsordresamlinger**, velger samlingen og deretter **Rediger**.</span><span class="sxs-lookup"><span data-stu-id="d1139-146">To put the work order that you added in a specific order in the work order pool, on the **All work order pools** or **Active work order pools** list page, select the pool, and then select **Edit**.</span></span> <span data-ttu-id="d1139-147">Deretter, på siden **Arbeidsordresamling** i hurtigfanen **Arbeidsordrer**, bruker du feltet **Sorteringsrekkefølge** til å justere sorteringsrekkefølgen for arbeidsordrene som er inkludert i samlingen.</span><span class="sxs-lookup"><span data-stu-id="d1139-147">Then, on the **Work order pool** page, on the **Work orders** FastTab, use the **Sort order** field to adjust the sort order of the work orders that are included in pool.</span></span>
 
-<span data-ttu-id="0a6c1-145">Hvis du vil fjerne den valgte arbeidsordren fra en arbeidsordresamling, velger du Fjern i trinn 3.</span><span class="sxs-lookup"><span data-stu-id="0a6c1-145">If you want to remove the selected work order from a work order pool, select "Remove" in step 3.</span></span>
+<span data-ttu-id="d1139-148">Hvis du vil fjerne en arbeidsordre fra en arbeidsordresamling, gjentar du disse trinnene, men velger **Fjern** i trinn 3.</span><span class="sxs-lookup"><span data-stu-id="d1139-148">To remove a work order from a work order pool, repeat these steps, but select **Remove** in step 3.</span></span>
 

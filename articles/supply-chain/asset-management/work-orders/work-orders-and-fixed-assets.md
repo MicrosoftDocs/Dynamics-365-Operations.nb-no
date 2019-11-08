@@ -3,7 +3,7 @@ title: Arbeidsordrer og anleggsmidler
 description: Dette emnet forklarer arbeidsordrer og anleggsmidler i Aktivastyring.
 author: josaw1
 manager: AnnBe
-ms.date: 08/15/2019
+ms.date: 10/15/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,53 +16,52 @@ ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: mkirknel
-ms.search.validFrom: 2019-08-15
+ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 95fe394d22f9fe81511c230a2cf7b8ddf00d896f
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: c87a2b94692e279a9c2f35dc38ac87bfd9bf7d27
+ms.sourcegitcommit: deb87e518a151d8bb084891851a39758938a96e4
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2250835"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "2626230"
 ---
-# <a name="work-orders-and-fixed-assets"></a><span data-ttu-id="cb841-103">Arbeidsordrer og anleggsmidler</span><span class="sxs-lookup"><span data-stu-id="cb841-103">Work orders and fixed assets</span></span>
-
+# <a name="work-orders-and-fixed-assets"></a><span data-ttu-id="17544-103">Arbeidsordrer og anleggsmidler</span><span class="sxs-lookup"><span data-stu-id="17544-103">Work orders and fixed assets</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
 
-
-<span data-ttu-id="cb841-104">I Aktivastyring kan aktiva relateres til anleggsmidler, og du kan opprette arbeidsordrer for disse aktivaene.</span><span class="sxs-lookup"><span data-stu-id="cb841-104">In Asset Management, assets can be related to fixed assets, and you can create work orders for those assets.</span></span> <span data-ttu-id="cb841-105">Hvis du bruker denne funksjonen, kan du få en fullstendig oversikt over anleggsmidler, tilknyttede investeringsprosjekter og kostnadene som er registrert på investeringsprosjektene, i **Prosjektstyring og regnskap**-modulen og **Anleggsmidler**-modulen.</span><span class="sxs-lookup"><span data-stu-id="cb841-105">If you use this functionality, you can get a complete overview of fixed assets, related investment projects, and the costs registered on the investment projects in the **Project management and accounting** module and the **Fixed assets** module.</span></span>
+<span data-ttu-id="17544-104">I Aktivastyring kan aktiva relateres til anleggsmidler, og du kan opprette arbeidsordrer for disse aktivaene.</span><span class="sxs-lookup"><span data-stu-id="17544-104">In Asset Management, assets can be related to fixed assets, and you can create work orders for those assets.</span></span> <span data-ttu-id="17544-105">Hvis du bruker denne funksjonen, kan du få en fullstendig oversikt over anleggsmidler, tilknyttede investeringsprosjekter og kostnadene som er registrert på investeringsprosjektene, i **Prosjektstyring og regnskap** og **Anleggsmidler**-modulene i Microsoft Dynamics 365 for Finance and Operations.</span><span class="sxs-lookup"><span data-stu-id="17544-105">If you use this functionality, you can get a complete overview of fixed assets, related investment projects, and the costs that are registered on the investment projects in the **Project management and accounting** and **Fixed assets** modules in Microsoft Dynamics 365 for Finance and Operations.</span></span>
 
 >[!NOTE]
-><span data-ttu-id="cb841-106">**Anleggsmiddelnummer**-feltet fylles bare ut på arbeidsordrejobbprosjektet hvis typen Investering er valgt som prosjekttype i arbeidsordrejobbprosjektet.</span><span class="sxs-lookup"><span data-stu-id="cb841-106">The **Fixed asset number** field is only filled out on the work order job project if type "Investment" is selected as the project type on the work order job project.</span></span>
+><span data-ttu-id="17544-106">Feltet **Anleggsmidlets nummer** fylles bare ut på arbeidsordrejobbprosjektet hvis **Investering** er valgt som prosjekttype i arbeidsordrejobbprosjektet.</span><span class="sxs-lookup"><span data-stu-id="17544-106">The **Fixed asset number** field on the work order job project is set only if **Investment** is selected as the project type on the work order job project.</span></span>
+
+<span data-ttu-id="17544-107">Illustrasjonen nedenfor viser forholdet mellom et investeringsprosjekt i modulen **Prosjektstyring og regnskap** og et arbeidsordrejobbprosjekt.</span><span class="sxs-lookup"><span data-stu-id="17544-107">The illustration below shows the relation between an investment project in the **Project management and accounting** module and a work order job project.</span></span>
 
 ![Figur 1](media/24-work-orders.png)
 
-<span data-ttu-id="cb841-108">Følgende fremgangsmåte beskriver forholdet mellom aktiva, arbeidsordrer, arbeidsordrejobbprosjekter og anleggsmidler.</span><span class="sxs-lookup"><span data-stu-id="cb841-108">The following procedure describes the relation between assets, work orders, work order job projects, and fixed assets.</span></span>
+<span data-ttu-id="17544-109">Følgende fremgangsmåte beskriver forholdet mellom aktiva, arbeidsordrer, arbeidsordrejobbprosjekter og anleggsmidler.</span><span class="sxs-lookup"><span data-stu-id="17544-109">The following procedure describes the relation between assets, work orders, work order job projects, and fixed assets.</span></span>
 
-1. <span data-ttu-id="cb841-109">Du oppretter et aktivum som du knytter til et anleggsmiddel, som vist i figuren nedenfor.</span><span class="sxs-lookup"><span data-stu-id="cb841-109">You create an asset that you relate to a fixed asset, as shown in the figure below.</span></span>
+1. <span data-ttu-id="17544-110">Du oppretter et aktivum som du knytter til et anleggsmiddel.</span><span class="sxs-lookup"><span data-stu-id="17544-110">You create an asset that you relate to a fixed asset.</span></span>
 
 ![Figur 2](media/25-work-orders.png)
 
-2. <span data-ttu-id="cb841-111">Når du definerer arbeidsordretyper (**Aktivastyring** > **Oppsett** > **Arbeidsordrer** > **Arbeidsordretyper**), oppretter du en arbeidsordretype for behandling av investeringer.</span><span class="sxs-lookup"><span data-stu-id="cb841-111">When you set up work order types (**Asset management** > **Setup** > **Work orders** > **Work order types**), you create a work order type for handling investments.</span></span> <span data-ttu-id="cb841-112">Se også [Arbeidsordretyper](../setup-for-work-orders/work-order-types.md).</span><span class="sxs-lookup"><span data-stu-id="cb841-112">See also [Work order types](../setup-for-work-orders/work-order-types.md).</span></span>
+2. <span data-ttu-id="17544-112">Når du definerer arbeidsordretyper på siden **Arbeidsordretyper** (**Aktivabehandling** > **Oppsett** > **Arbeidsordrer** > **Arbeidsordretyper**), oppretter du en arbeidsordretype for behandling av investeringer.</span><span class="sxs-lookup"><span data-stu-id="17544-112">When you set up work order types on the **Work order types** page (**Asset management** > **Setup** > **Work orders** > **Work order types**), you create a work order type for handling investments.</span></span> <span data-ttu-id="17544-113">Se også [Arbeidsordretyper](../setup-for-work-orders/work-order-types.md).</span><span class="sxs-lookup"><span data-stu-id="17544-113">See also [Work order types](../setup-for-work-orders/work-order-types.md).</span></span>
 
 ![Figur 3](media/26-work-orders.png)
 
-3. <span data-ttu-id="cb841-114">Når du definerer prosjektgrupper for arbeidsordrer (**Aktivastyring** > **Oppsett** > **Arbeidsordrer** > **Prosjektoppsett** > **Prosjektgruppe**-koblingen), oppretter du en relasjon mellom arbeidsordretypen som brukes for investeringer, og prosjektgruppen opprettet for investeringer i **Prosjektstyring og regnskap**-modulen (**Prosjektstyring og regnskap** > **Oppsett** > **Postering** > **Prosjektgrupper**).</span><span class="sxs-lookup"><span data-stu-id="cb841-114">When you set up work order project groups (**Asset management** > **Setup** > **Work orders** > **Project setup** > **Project group** link), you create a relation between the work order type used for investments and the project group created for investments in the **Project management and accounting** module (**Project management and accounting** > **Setup** > **Posting** > **Project groups**).</span></span>
+3. <span data-ttu-id="17544-115">Når du definerer prosjektgrupper for arbeidsordrer i kategorien **Prosjektgruppe** på siden **Prosjektoppsett for arbeidsordre** (**Aktivastyring** > **Oppsett** > **Arbeidsordrer** > **Prosjektoppsett**), oppretter du en relasjon mellom arbeidsordretypen som brukes for investeringer, og prosjektgruppen som ble opprettet for investeringer på siden **Prosjektgrupper** i modulen **Prosjektstyring og regnskap** (**Prosjektstyring og regnskap** > **Oppsett** > **Postering** > **Prosjektgrupper**).</span><span class="sxs-lookup"><span data-stu-id="17544-115">When you set up work order project groups on the **Project group** tab of the **Work order project setup** page (**Asset management** > **Setup** > **Work orders** > **Project setup**), you create a relation between the work order type that is used for investments and the project group that was created for investments on the **Project groups** page in the **Project management and accounting** module (**Project management and accounting** > **Setup** > **Posting** > **Project groups**).</span></span>
 
 ![Figur 4](media/27-work-orders.png)
 
-4. <span data-ttu-id="cb841-116">Når du oppretter en arbeidsordre som er knyttet til et anleggsmiddelobjekt, velger du arbeidsordretypen som brukes til å behandle investeringer, for eksempel Investering.</span><span class="sxs-lookup"><span data-stu-id="cb841-116">When you create a work order that relates to a fixed asset object, you select the work order type used for handling investments, for example, "Investment".</span></span>
+4. <span data-ttu-id="17544-117">Når du oppretter en arbeidsordre som er relatert til et anleggsmiddel, velger du arbeidsordretypen som brukes til å behandle investeringer, for eksempel **Investering**.</span><span class="sxs-lookup"><span data-stu-id="17544-117">When you create a work order that is related to a fixed asset, you select the work order type that is used to handle investments, such as **Investment**.</span></span>
 
-5. <span data-ttu-id="cb841-117">Når arbeidsordren opprettes, vises den tilknyttede arbeidsordretypen i **Alle arbeidsordrer**.</span><span class="sxs-lookup"><span data-stu-id="cb841-117">When the work order is created, the related work order type is shown in **All work orders**.</span></span>
+5. <span data-ttu-id="17544-118">Når arbeidsordren opprettes, vises den tilknyttede arbeidsordretypen på siden **Alle arbeidsordrer**.</span><span class="sxs-lookup"><span data-stu-id="17544-118">When the work order is created, the related work order type is shown on the **All work orders** page.</span></span>
 
 ![Figur 5](media/28-work-orders.png)
 
-6. <span data-ttu-id="cb841-119">Når arbeidsordren opprettes, opprettes prosjektet som er knyttet til arbeidsordren, i **Prosjektstyring og regnskap** > **Alle prosjekter**.</span><span class="sxs-lookup"><span data-stu-id="cb841-119">When the work order is created, the project related to the work order is created in **Project management and accounting** > **All projects**.</span></span> <span data-ttu-id="cb841-120">Du kan vise prosjektrelatert informasjon ved å klikke på koblingen **Prosjekt-ID** i arbeidsordren (i **Aktivastyring** åpner du arbeidsordren i detaljvisningen > hurtigfanen **Linjedetaljer** > kategorien **Generelt** > feltet **Prosjekt-ID**).</span><span class="sxs-lookup"><span data-stu-id="cb841-120">You can see project-related information by clicking the **Project ID** link on the work order (in **Asset management**, open the work order in Details view > **Line details** FastTab > **General** tab > **Project ID** field).</span></span>
+6. <span data-ttu-id="17544-120">Når arbeidsordren opprettes, opprettes prosjektet som er knyttet til arbeidsordren, på siden **Alle prosjekter** i modulen **Prosjektstyring og regnskap** (**Prosjektstyring og regnskap** > **Prosjekter** > **Alle prosjekter**).</span><span class="sxs-lookup"><span data-stu-id="17544-120">When the work order is created, the project that is related to the work order is created on the **All projects** page in the **Project management and accounting** module (**Project management and accounting** > **Projects** > **All projects**).</span></span> <span data-ttu-id="17544-121">Hvis du vil vise prosjektrelatert informasjon, velger du koblingen i feltet **Prosjekt-ID** i kategorien **Generelt** i hurtigfanen **Linjedetaljer** i detaljvisningen på siden **Alle arbeidsordrer** i modulen **Aktivabehandling** (**Aktivabehandling** > **Felles** > **Arbeidsordrer** > **Alle arbeidsordrer**).</span><span class="sxs-lookup"><span data-stu-id="17544-121">To view project-related information, select the link in the **Project ID** field on the **General** tab on the **Line details** FastTab in the details view of the **All work orders** page in the **Asset management** module (**Asset management** > **Commom** > **Work orders** > **All work orders**).</span></span>
 
 ![Figur 6](media/29-work-orders.png)
 
-7. <span data-ttu-id="cb841-122">I **Anleggsmidler** kan du se en oversikt over prosjektene som er knyttet til et anleggsmiddel (**Anleggsmidler** > **Anleggsmidler** > **Anleggsmidler**> klikk på anleggsmidlet i feltet **Anleggsmiddelnummer** > vis innholdet i **Relatert informasjon**-ruten > delen **Tilknyttede prosjekter**).</span><span class="sxs-lookup"><span data-stu-id="cb841-122">In **Fixed assets**, you are able to see an overview of the projects associated with a fixed asset (**Fixed assets** > **Fixed assets** > **Fixed assets** > click on the fixed asset in the **Fixed asset number** field > view the contents in the **Related information** pane > **Associated projects** section).</span></span>
+7. <span data-ttu-id="17544-123">Hvis du vil se en oversikt over prosjektene som er knyttet til et anleggsmiddel, velger du **Anleggsmidler** > **Anleggsmidler** > **Anleggsmidler** og deretter, i feltet **Anleggsmidlets nummer**, velger du koblingen til anleggsmidlet for å åpne detaljvisningen.</span><span class="sxs-lookup"><span data-stu-id="17544-123">To see an overview of the projects associated with a fixed asset, select **Fixed assets** > **Fixed assets** > **Fixed assets**, and then, in the **Fixed asset number** field, select the link for the fixed asset to open the details view.</span></span> <span data-ttu-id="17544-124">Utvid ruten **Beslektet informasjon** til høyre på siden, og velg hurtigfanen **Tilknyttede prosjekter**.</span><span class="sxs-lookup"><span data-stu-id="17544-124">Expand the **Related information** pane on the right side of the page, and select the **Associated projects** FastTab.</span></span>
 

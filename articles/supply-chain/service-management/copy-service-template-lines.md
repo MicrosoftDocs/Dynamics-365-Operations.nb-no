@@ -3,7 +3,7 @@ title: Kopiere servicemallinjer
 description: Malinformasjon kan kopieres til en serviceavtale eller en serviceordre.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 02/19/2018
+ms.date: 10/11/2018
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,45 +18,45 @@ ms.search.region: Global
 ms.author: ShylaThompson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 533fe7fbecb8878a7f9ddf527c33dd68b53ec698
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 26b400d00a73c43ab74bb74b58dee833c792dad8
+ms.sourcegitcommit: 0099fb24f5f40ff442020b488ef4171836c35c48
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1554673"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "2653232"
 ---
-# <a name="copy-service-templates-lines"></a><span data-ttu-id="36721-103">Kopiere servicemallinjer</span><span class="sxs-lookup"><span data-stu-id="36721-103">Copy service templates lines</span></span> 
+# <a name="copy-service-templates-lines"></a><span data-ttu-id="e936d-103">Kopiere servicemallinjer</span><span class="sxs-lookup"><span data-stu-id="e936d-103">Copy service templates lines</span></span> 
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="36721-104">Malinformasjon kan kopieres til en serviceavtale eller en serviceordre.</span><span class="sxs-lookup"><span data-stu-id="36721-104">Template information can be copied to either a service agreement or a service order.</span></span>
+<span data-ttu-id="e936d-104">Malinformasjon kan kopieres til en serviceavtale eller en serviceordre.</span><span class="sxs-lookup"><span data-stu-id="e936d-104">Template information can be copied to either a service agreement or a service order.</span></span>
 
-## <a name="copy-service-template-lines-into-a-service-agreement"></a><span data-ttu-id="36721-105">Kopiere servicemalllinjer til en serviceavtale</span><span class="sxs-lookup"><span data-stu-id="36721-105">Copy service template lines into a service agreement</span></span>
+## <a name="copy-service-template-lines-into-a-service-agreement"></a><span data-ttu-id="e936d-105">Kopiere servicemalllinjer til en serviceavtale</span><span class="sxs-lookup"><span data-stu-id="e936d-105">Copy service template lines into a service agreement</span></span>
 
-1. <span data-ttu-id="36721-106">Klikk på **Serviceavtaler**.</span><span class="sxs-lookup"><span data-stu-id="36721-106">Click **Service agreements**.</span></span>
-2. <span data-ttu-id="36721-107">Dobbeltklikk en serviceavtale for å åpne **Serviceavtaler**-siden.</span><span class="sxs-lookup"><span data-stu-id="36721-107">Double-click a service agreement to open the **Service agreements** page.</span></span>
-3. <span data-ttu-id="36721-108">Klikk **Mallinjer** for å åpne **Kopier servicemallinjer**-siden.</span><span class="sxs-lookup"><span data-stu-id="36721-108">Click **Template lines** to open the **Copy service template lines** page.</span></span>
-4. <span data-ttu-id="36721-109">I kategorien **Trekontroll** utvider du trestrukturen, finner malen som inneholder linjene du vil kopiere til serviceavtalen, og velger deretter servicemalen.</span><span class="sxs-lookup"><span data-stu-id="36721-109">On the **Tree control** tab, expand the tree, find the template that contains the lines that you want to copy to the service agreement, and then select the service template.</span></span>
-5. <span data-ttu-id="36721-110">I kategorien **Linjer** merker du av for **Velg** for servicemallinjene du vil kopiere.</span><span class="sxs-lookup"><span data-stu-id="36721-110">On the **Lines** tab, select the **Select** check box for the service template lines that you want to copy.</span></span>
-6. <span data-ttu-id="36721-111">Klikk **OK**.</span><span class="sxs-lookup"><span data-stu-id="36721-111">Click **OK**.</span></span>
-7. <span data-ttu-id="36721-112">Lukk sidene for å lagre endringene.</span><span class="sxs-lookup"><span data-stu-id="36721-112">Close the pages to save your changes.</span></span>
+1. <span data-ttu-id="e936d-106">Klikk på **Serviceavtaler**.</span><span class="sxs-lookup"><span data-stu-id="e936d-106">Click **Service agreements**.</span></span>
+2. <span data-ttu-id="e936d-107">Dobbeltklikk en serviceavtale for å åpne **Serviceavtaler**-siden.</span><span class="sxs-lookup"><span data-stu-id="e936d-107">Double-click a service agreement to open the **Service agreements** page.</span></span>
+3. <span data-ttu-id="e936d-108">Klikk **Mallinjer** for å åpne **Kopier servicemallinjer**-siden.</span><span class="sxs-lookup"><span data-stu-id="e936d-108">Click **Template lines** to open the **Copy service template lines** page.</span></span>
+4. <span data-ttu-id="e936d-109">I kategorien **Trekontroll** utvider du trestrukturen, finner malen som inneholder linjene du vil kopiere til serviceavtalen, og velger deretter servicemalen.</span><span class="sxs-lookup"><span data-stu-id="e936d-109">On the **Tree control** tab, expand the tree, find the template that contains the lines that you want to copy to the service agreement, and then select the service template.</span></span>
+5. <span data-ttu-id="e936d-110">I kategorien **Linjer** merker du av for **Velg** for servicemallinjene du vil kopiere.</span><span class="sxs-lookup"><span data-stu-id="e936d-110">On the **Lines** tab, select the **Select** check box for the service template lines that you want to copy.</span></span>
+6. <span data-ttu-id="e936d-111">Klikk **OK**.</span><span class="sxs-lookup"><span data-stu-id="e936d-111">Click **OK**.</span></span>
+7. <span data-ttu-id="e936d-112">Lukk sidene for å lagre endringene.</span><span class="sxs-lookup"><span data-stu-id="e936d-112">Close the pages to save your changes.</span></span>
 
-<span data-ttu-id="36721-113">Servicemallinjene er nå kopiert til serviceavtalen sammen med de vedlagte serviceobjekt- og serviceoppgaverelasjonene.</span><span class="sxs-lookup"><span data-stu-id="36721-113">The service template lines are now copied to the service agreement, together with the attached service object and service task relations.</span></span>
+<span data-ttu-id="e936d-113">Servicemallinjene er nå kopiert til serviceavtalen sammen med de vedlagte serviceobjekt- og serviceoppgaverelasjonene.</span><span class="sxs-lookup"><span data-stu-id="e936d-113">The service template lines are now copied to the service agreement, together with the attached service object and service task relations.</span></span>
 
-## <a name="copy-service-template-lines-into-a-service-order"></a><span data-ttu-id="36721-114">Kopiere servicemalllinjer til en serviceordre</span><span class="sxs-lookup"><span data-stu-id="36721-114">Copy service template lines into a service order</span></span>
+## <a name="copy-service-template-lines-into-a-service-order"></a><span data-ttu-id="e936d-114">Kopiere servicemalllinjer til en serviceordre</span><span class="sxs-lookup"><span data-stu-id="e936d-114">Copy service template lines into a service order</span></span>
 
-1. <span data-ttu-id="36721-115">Klikk på **Serviceordrer**.</span><span class="sxs-lookup"><span data-stu-id="36721-115">Click **Service orders**.</span></span>
-2. <span data-ttu-id="36721-116">Dobbeltklikk en serviceordre for å åpne **Serviceordrer**-siden.</span><span class="sxs-lookup"><span data-stu-id="36721-116">Double-click a service order to open the **Service orders** page.</span></span>
-3. <span data-ttu-id="36721-117">Klikk Kopier \> Kopier mallinjer for å åpne **Kopier servicemallinjer**-siden.</span><span class="sxs-lookup"><span data-stu-id="36721-117">Click Copy \> Copy template lines to open the **Copy service template lines** page.</span></span>
-4. <span data-ttu-id="36721-118">I kategorien **Trekontroll** utvider du trestrukturen, finner malen som inneholder linjene du vil kopiere til serviceordren, og velger deretter servicemalen.</span><span class="sxs-lookup"><span data-stu-id="36721-118">On the **Tree control** tab, expand the tree, find the template that contains the lines that you want to copy to the service order, and then select the service template.</span></span>
-5. <span data-ttu-id="36721-119">I kategorien **Linjer** merker du av for **Velg** for servicemallinjene du vil kopiere.</span><span class="sxs-lookup"><span data-stu-id="36721-119">On the **Lines** tab, select the **Select** check box for the service template lines that you want to copy.</span></span>
-6. <span data-ttu-id="36721-120">Klikk **OK**.</span><span class="sxs-lookup"><span data-stu-id="36721-120">Click **OK**.</span></span>
-7. <span data-ttu-id="36721-121">Lukk sidene for å lagre endringene.</span><span class="sxs-lookup"><span data-stu-id="36721-121">Close the pages to save your changes.</span></span>
+1. <span data-ttu-id="e936d-115">Klikk på **Serviceordrer**.</span><span class="sxs-lookup"><span data-stu-id="e936d-115">Click **Service orders**.</span></span>
+2. <span data-ttu-id="e936d-116">Dobbeltklikk en serviceordre for å åpne **Serviceordrer**-siden.</span><span class="sxs-lookup"><span data-stu-id="e936d-116">Double-click a service order to open the **Service orders** page.</span></span>
+3. <span data-ttu-id="e936d-117">Klikk Kopier \> Kopier mallinjer for å åpne **Kopier servicemallinjer**-siden.</span><span class="sxs-lookup"><span data-stu-id="e936d-117">Click Copy \> Copy template lines to open the **Copy service template lines** page.</span></span>
+4. <span data-ttu-id="e936d-118">I kategorien **Trekontroll** utvider du trestrukturen, finner malen som inneholder linjene du vil kopiere til serviceordren, og velger deretter servicemalen.</span><span class="sxs-lookup"><span data-stu-id="e936d-118">On the **Tree control** tab, expand the tree, find the template that contains the lines that you want to copy to the service order, and then select the service template.</span></span>
+5. <span data-ttu-id="e936d-119">I kategorien **Linjer** merker du av for **Velg** for servicemallinjene du vil kopiere.</span><span class="sxs-lookup"><span data-stu-id="e936d-119">On the **Lines** tab, select the **Select** check box for the service template lines that you want to copy.</span></span>
+6. <span data-ttu-id="e936d-120">Klikk **OK**.</span><span class="sxs-lookup"><span data-stu-id="e936d-120">Click **OK**.</span></span>
+7. <span data-ttu-id="e936d-121">Lukk sidene for å lagre endringene.</span><span class="sxs-lookup"><span data-stu-id="e936d-121">Close the pages to save your changes.</span></span>
 
-<span data-ttu-id="36721-122">Servicemallinjene er nå kopiert til den nye serviceordren sammen med de vedlagte serviceobjekt- og serviceoppgaverelasjonene.</span><span class="sxs-lookup"><span data-stu-id="36721-122">The service template lines are now copied to the new service order, together with the attached service object and service task relations.</span></span> 
+<span data-ttu-id="e936d-122">Servicemallinjene er nå kopiert til den nye serviceordren sammen med de vedlagte serviceobjekt- og serviceoppgaverelasjonene.</span><span class="sxs-lookup"><span data-stu-id="e936d-122">The service template lines are now copied to the new service order, together with the attached service object and service task relations.</span></span> 
 
-## <a name="related-topics"></a><span data-ttu-id="36721-123">Relaterte emner</span><span class="sxs-lookup"><span data-stu-id="36721-123">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="e936d-123">Relaterte emner</span><span class="sxs-lookup"><span data-stu-id="e936d-123">Related topics</span></span>
 
-[<span data-ttu-id="36721-124">Servicemaler</span><span class="sxs-lookup"><span data-stu-id="36721-124">Service templates</span></span>](service-template.md)
+[<span data-ttu-id="e936d-124">Servicemaler</span><span class="sxs-lookup"><span data-stu-id="e936d-124">Service templates</span></span>](service-template.md)
 
 
