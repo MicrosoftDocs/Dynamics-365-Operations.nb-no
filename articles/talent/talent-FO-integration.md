@@ -3,7 +3,7 @@ title: Vanlige spørsmål om integrering fra Dynamics 365 Talent til Dynamics 36
 description: Dette emnet beskriver hvilke data som synkroniseres i en integrasjon med Talent og Finance.
 author: andreabichsel
 manager: AnnBe
-ms.date: 09/17/2019
+ms.date: 10/14/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-talent
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-12-31
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 5bb855e6dd7ff236b7bda9e59e12ed8cc8ab9bc9
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 8b9fa6b8d5109f873c784d384d49f685f94da228
+ms.sourcegitcommit: dd991154231280aff9c9c5799e42799e2bfc02fb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2251020"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "2622774"
 ---
 # <a name="dynamics-365-talent-to-dynamics-365-finance-integration-faq"></a>Vanlige spørsmål om integrering fra Dynamics 365 Talent til Dynamics 365 Finance
 
@@ -35,6 +35,10 @@ Dette emnet gir svar på vanlige spørsmål som er tilknyttet hvilke data som sy
 For Core HR synkroniseres et delsett av dataene. For en liste over alle enheter, kan du se [Integrasjon fra Dynamics 365 Talent til Dynamics 365 Finance](talent-financeandoperations-integration.md).
 
 For Attract og Onboard hører alle data til i Common Data Service.
+
+## <a name="why-dont-i-see-any-data-synced-to-common-data-service"></a>Hvorfor ser jeg ingen data synkronisert til Common Data Service?
+
+Som standard er Common Data Service-integreringen deaktivert i nye miljøer som ikke inneholder demodataene. Som standard er den slått på i nye miljøer som inneholder demonstrasjonsdata, og datasynkronisering begynner når miljøet klargjøres. Når miljøet er klart til å synkronisere data, kan du aktivere integreringen. Hvis du vil ha mer informasjon, kan du se [Konfigurere Common Data Service-integrasjon](hr-common-data-service-integration.md).
 
 ## <a name="can-i-create-a-new-mapping-without-using-the-templates"></a>Kan jeg opprette en ny tilordning uten å bruke malene?
 

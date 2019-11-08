@@ -1,6 +1,6 @@
 ---
 title: Oversikt over transportstyring
-description: Dette emnet gir en oversikt over transportstyringsfunksjoner i Finance and Operations.
+description: Dette emnet gir en oversikt over transportstyringsfunksjoner i Supply Chain Management.
 author: MarkusFogelberg
 manager: AnnBe
 ms.date: 06/20/2017
@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d976ec4d3c294f0ce8e9732b21b9a429f1e47315
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: fa59a8e6e4744c776ec0e1dc84b1f004dbd796f6
+ms.sourcegitcommit: 0099fb24f5f40ff442020b488ef4171836c35c48
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2027067"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "2653585"
 ---
 # <a name="transportation-management-overview"></a>Oversikt over transportstyring
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet gir en oversikt over transportstyringsfunksjoner i Finance and Operations.
+Dette emnet gir en oversikt over transportstyringsfunksjoner i Supply Chain Management.
 
 Transportstyring lar deg bruke bedriftens transport, og lar deg også identifisere leverandør- og rutingsløsninger for innkommende og utgående bestillinger. Du kan for eksempel identifisere den raskeste ruten eller den billigste for en forsendelse. I tabellen nedenfor beskrives hovedscenariene for bruk av Transportstyring.
 
@@ -67,23 +67,23 @@ Transportstyring lar deg bruke bedriftens transport, og lar deg også identifise
 </tbody>
 </table>
 
-## <a name="planning-transportation-in-finance-and-operations"></a>Planlegge transport i Finance og Operations
+## <a name="planning-transportation-in-supply-chain-management"></a>Planlegging av transport i Supply Chain Management
 I Transportstyring kan transportplanlegging baseres på ordrer eller på forsendelsene som opprettes basert på disse ordrene. Forsendelsene finnes alltid på et bestemt tidspunkt, men de kreves ikke for planlegging av transport. Overføringsordrer inngår i det utgående scenariet og kan planlegges sammen med salgsordrer. 
 
 ![Laste inn tegning](./media/Load-drawing1-1024x477.jpg)
 
 ## <a name="inbound-transportation"></a>Innkommende transport
-Når du bestiller varer fra en leverandør og varene må leveres til lageret, kan det være aktuelt å ordne med transporten av varene selv. Du kan bruke Finance and Operations til å planlegge transport og mottak av en innkommende last. Illustrasjonen nedenfor viser forretningsprosessflyten for planlegging av transport for en innkommende last. 
+Når du bestiller varer fra en leverandør og varene må leveres til lageret, kan det være aktuelt å ordne med transporten av varene selv. Du kan bruke Supply Chain Management til å planlegge transport og mottak av en innkommende last. Illustrasjonen nedenfor viser forretningsprosessflyten for planlegging av transport for en innkommende last. 
 
 ![Forretningsprosessflyt for transport av innkommende last](./media/Businessprocessflowforinboundloadtransportation.jpg)
 
 ## <a name="outbound-transportation"></a>Utgående transport
-Du kan planlegge og behandle en utgående last for å sende bestemte varer fra lageret for et firma til en kunde. Du kan bruke Finance and Operations til å planlegge transport forsendelse av en utgående last. Illustrasjonen nedenfor viser forretningsprosessflyten for planlegging og behandling av utgående laster for forsendelse. 
+Du kan planlegge og behandle en utgående last for å sende bestemte varer fra lageret for et firma til en kunde. Du kan bruke Supply Chain Management til å planlegge transport og forsendelse av en utgående last. Illustrasjonen nedenfor viser forretningsprosessflyten for planlegging og behandling av utgående laster for forsendelse. 
 
 ![Planlegge og behandle utgående laster](./media/Planningandprocessingoutboundloads.jpg)
 
 ## <a name="load-building"></a>Lastplanlegging
-Finance and Operations inneholder strategi for bygging av laster som heter Volumbasert lastplanleggingsstrategi. Med denne strategien kan du bruke de maksimale verdiene som er angitt for høyde og vekt i lastmalen, eller du kan overstyre innstillingene ved å angi nye verdier. Hvis du vil bruke denne strategien, velger du den i feltet **Strategi for lastplanlegging** i hurtigfanen **Oppsett** på siden **Arbeidsområde for lastplanlegging**. I tillegg kan du legge til dine egne strategier for lastplanlegging ved å opprette en ny klasse i applikasjonsobjekttreet (AOT).
+Supply Chain Management inneholder strategi for bygging av last som heter Volumbasert lastplanleggingsstrategi. Med denne strategien kan du bruke de maksimale verdiene som er angitt for høyde og vekt i lastmalen, eller du kan overstyre innstillingene ved å angi nye verdier. Hvis du vil bruke denne strategien, velger du den i feltet **Strategi for lastplanlegging** i hurtigfanen **Oppsett** på siden **Arbeidsområde for lastplanlegging**. I tillegg kan du legge til dine egne strategier for lastplanlegging ved å opprette en ny klasse i applikasjonsobjekttreet (AOT).
 
 
 

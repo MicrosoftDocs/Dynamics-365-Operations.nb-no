@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
-ms.openlocfilehash: a260be0f8659106907b26bf69bee3b33b09d0c24
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 1e144e2623f3ddfafaee749bb334de40ef5aec1b
+ms.sourcegitcommit: dd960cf07d8be791fd27c7bb72e6baa2d63ccd51
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2181341"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "2578224"
 ---
 # <a name="improvements-in-tracing-the-results-of-generated-er-reports-and-comparing-them-with-baseline-values"></a>Forbedringer i sporing av resultater av genererte ER-rapporter og i å sammenligne dem med grunnlinjeverdier
 
@@ -71,9 +71,6 @@ Grunnlinjen er lagt til for det valgte formatet **Format for å lære ER-grunnli
 5. Angi **1** i **Angi ID**-feltet.
 6. Sett alternativet **Lag grunnlinjefiler** til **Ja**.
 7. Velg **OK**.
-
-    ![Dialogboksen Parametere for elektronisk rapport](media/GER-BaselineSample-FormatRunToMakeBaselineFile3.PNG "Skjermbilde av dialogboksen Parametere for elektronisk rapport")
-
 8. Velg **Grunnlinjer**.
 
     ![Siden Grunnlinjer for elektronisk rapporteringsformat](media/GER-BaselineSample-ReviewAddedBaselineLine.PNG "Skjermbilde av siden Grunnlinjer for elektronisk rapporteringsformat")
@@ -140,9 +137,6 @@ For å kunne fullføre trinnene i dette eksemplet må du først fullføre trinne
 
 1. Velg **Velg komponenter** i hurtigfanen **Erstatninger** på **Konfigurasjoner**-siden.
 2. Utvid **Utdata** i treet for formatkomponenter, utvid **Utdata\\Dokument**, og merk deretter av for **Utdata\\Dokument\\ProcessingDateTime**.
-
-    ![Dialogboksen Velg komponenter](media/GER-BaselineSample-SelectComponentForBindingReplacement.PNG "Skjermbilde av dialogboksen Velg komponenter")
-
 3. Velg **OK**.
 
 ![Siden Grunnlinjer for elektronisk rapporteringsformat](media/GER-BaselineSample-AddBaseline4.PNG "Skjermbilde av siden Grunnlinjer for elektronisk rapporteringsformat")
@@ -162,19 +156,14 @@ Hvis du angir bestemte ER-parametere, kan du utelate varslinger med advarsel om 
 1. Velg **Brukerparametere** i **Konfigurasjoner**-fanen i handlingsruten på **Konfigurasjoner**-siden.
 2. Sett alternativet **Utelat grunnlinjeadvarsler** til **Ja**, og velg deretter **OK**.
 
-![Dialogboksen Brukerparametere](media/GER-BaselineSample-ERUserParameters1.png "Skjermbilde av dialogboksen Brukerparametere")
-
 ### <a name="review-the-generated-baseline-file"></a>Se gjennom den genererte grunnlinjefilen
 
 1. Gå til **Organisasjonsstyring** \> **Elektronisk rapportering** \> **Konfigurasjoner**.
 2. Velg **Grunnlinjer**.
 3. Velg **Vedlegg**.
-
-    ![Vedlegg-siden](media/GER-BaselineSample-AttachedBaselineFile.PNG "Skjermbilde av Vedlegg-siden")
-
     > [!NOTE]
     > Den genererte filen inneholder teksten for behandlingsdato og -klokkeslett (**"#"**) fra bindingen som ble konfigurert i den tilføyde grunnlinjeregelen, ikke fra formatets binding.
-
+    
 4. Lukk **Vedlegg**-siden.
 
 ### <a name="run-the-designed-er-format-and-review-the-log-to-analyze-the-results"></a>Kjøre det utformede ER-formatet og se gjennom loggen for å analysere resultatene

@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 3c84b08ec45dfa7aa9c7b913087a2518bfeedf87
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 05dee1efc4e817795824e3fa1c41093d48a97d78
+ms.sourcegitcommit: 219a73371638a9a4c6076d4c88b95fb2ebe95b00
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2181571"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "2652623"
 ---
 # <a name="business-document-management-overview"></a>Oversikt over administrasjon av forretningsdokument
 
@@ -120,7 +120,7 @@ Bruk fremgangsmåten nedenfor til å aktivere funksjonalitet for administrasjon 
 
 ![Arbeidsområde for funksjonsbehandling](./media/BDM-Overview-FMEnabling.png)
 
-Hvis du vil ha mer informasjon om hvordan du aktiverer nye funksjoner, kan du se [Oversikt over funksjonsbehandling](../../fin-and-ops/get-started/feature-management/feature-management-overview.md).
+Hvis du vil ha mer informasjon om hvordan du aktiverer nye funksjoner, kan du se [Oversikt over funksjonsbehandling](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview).
 
 ## <a name="configure-parameters"></a>Konfigurere parametere
 
@@ -137,7 +137,7 @@ Følgende attributtverdier må være valgt for denne dokumenttypen.
 | Gruppere               | Fil                  |
 | Lokasjon            | SharePoint            |
 
-Hvis du vil ha informasjon om hvordan du definerer de nødvendige dokumentbehandlingsparameterne og dokumenttypene, kan du se [Konfigurere dokumentstyring](../../fin-and-ops/organization-administration/configure-document-management.md).
+Hvis du vil ha informasjon om hvordan du definerer de nødvendige dokumentbehandlingsparameterne og dokumenttypene, kan du se [Konfigurere dokumentstyring](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/organization-administration/configure-document-management).
 
 ![Definere dokumenttype for dokumentstyring](./media/BDM-Overview-DMSetting.png)
 

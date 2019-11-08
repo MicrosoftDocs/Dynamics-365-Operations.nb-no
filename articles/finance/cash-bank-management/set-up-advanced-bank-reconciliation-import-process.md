@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: aba85b63abc11c9f32023e8499a02728dfc86bd1
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 4d9a2f6efad6b8ddf3a445fe7831244e161c35d5
+ms.sourcegitcommit: dd960cf07d8be791fd27c7bb72e6baa2d63ccd51
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2188263"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "2578201"
 ---
 # <a name="set-up-the-advanced-bank-reconciliation-import-process"></a>Definere importprosess for avansert bankavstemming
 
@@ -36,7 +36,7 @@ Oppsettet for import av bankkontoutdrag varierer, avhengig av formatet på der e
 ## <a name="set-time-zone-preference"></a>Angi foretrukket tidssone
 Når du konfigurerer importinnstillingene for bankkontoutdraget, kan det være viktig å ta hensyn til tidssonen for dato- og klokkeslettdataene i bankkontoutdragsfilene som skal importeres. Standard er å anta at alle dato- og klokkeslettverdier allerede er i UTC/format (Coordinated Universal Time), slik at ingen tidssonekonvertering brukes når du importerer dataene. 
 
-Det finnes et alternativ som er tilgjengelig for å angi tidssonen som skal brukes til å importere data. Dette alternativet er i feltet **Foretrukket tidssone** på hver **Detaljer om kildedataformat**-sider (hurtigfanen **Arbeidsområdet for databehandling > Konfigurer datakilder > Velge et dataformat > Regionale innstillinger**). Den foretrukne tidssonen du angir, gjelder for alle importene som bruker dette kildedataformatet. Du kan opprette så mange datakildeformater du trenger for å importere data fra flere tidssoner. Den foretrukne tidssonen bør være den lokale tidssonen for dato- og klokkeslettdataene i importfilen. Den foretrukne tidssonen bør være den lokale tidssonen for dato- og klokkeslettdataene i importfilen. 
+Det finnes et alternativ som er tilgjengelig for å angi tidssonen som skal brukes til å importere data. Dette alternativet er i feltet **Foretrukket tidssone** på hver **Detaljer om kildedataformat**-sider (hurtigfanen **Arbeidsområdet for databehandling > Konfigurer datakilder > Velge et dataformat > Regionale innstillinger**). Den foretrukne tidssonen du angir, gjelder for alle importene som bruker dette kildedataformatet. Du kan opprette så mange datakildeformater du trenger for å importere data fra flere tidssoner.  
 
 Denne tidssonen er kanskje ikke det samme som brukerens eller firmaets tidssone, så pass på at du klargjør hvilken tidssone dato- og klokkeslettdataene bruker. Vi anbefaler at du tar hensyn til punktene nedenfor når du angir en foretrukket tidssone. 
 

@@ -19,14 +19,14 @@ ms.search.industry: ''
 ms.author: anbichse
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: 366dc2be6e35098dba4b26a34bb75a84913549f5
-ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
+ms.openlocfilehash: 8f2e95e74bbc8d78ed5d970f29b61150a45c6740
+ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "2008576"
+ms.lasthandoff: 10/03/2019
+ms.locfileid: "2551570"
 ---
-# <a name="source-candidates-with-linkedin-recruiter"></a>Finne kandidater med LinkedIn Recruiter
+# <a name="source-candidates-with-linkedin-recruiter-in-microsoft-dynamics-365-talent---attract"></a>Finne kandidater med LinkedIn Recruiter i Microsoft Dynamics 365 Talent – Attract
 [!include[banner](../includes/banner.md)]
 
 LinkedIn er verdens største profesjonelle online-nettverk, som gir deg tilgang til verdens beste talenter. Med Microsoft Dynamics 365 Talent: Attract kan du finne kandidater direkte fra LinkedIn. Derfor er det enklere enn noensinne å finne talentet du trenger for å besette de åpne stillingene. Når du har satt opp tilkoblingen til LinkedIn via Attract, kan du vise potensielle LinkedIn-kandidater for stillingene dine og eksportere dem til Attract med bare ett klikk.

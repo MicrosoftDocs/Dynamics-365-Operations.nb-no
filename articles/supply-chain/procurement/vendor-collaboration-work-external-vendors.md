@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: b38fb087fb572362c27e747e7909060c55a242a4
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 22d16219df9319d276514c62348c0e1995d22715
+ms.sourcegitcommit: 0099fb24f5f40ff442020b488ef4171836c35c48
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2250215"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "2653608"
 ---
 # <a name="vendor-collaboration-with-external-vendors"></a>Leverandørsamarbeid med eksterne leverandører
 
@@ -190,7 +190,7 @@ Tabellen nedenfor viser et eksempel på endringene i status og versjon som en be
 Leverandører trenger ikke bekrefte en bestilling ved hjelp av grensesnittet for leverandørsamarbeid. De kan også sende en e-postmelding eller formidle at de godtar en bestilling via andre kanaler. Du kan deretter bekrefte ordren manuelt. I så fall får du en advarsel om at ordren blir bekreftet, selv om det ikke finnes noe svar fra leverandøren. Bestillingen vil vises i bekreftelsesloggen som en åpen bekreftet ordre som ikke har noen svar. På dette tidspunktet har leverandøren ikke lenger muligheten til å bekrefte eller avvise bestillingen.
 
 > [!NOTE]
-> Versjonen av bestillingen som er tilgjengelig for andre prosesser i Finance and Operations, er alltid den nyeste versjonen, selv om denne versjonen ennå ikke er registrert i grensesnittet for leverandørsamarbeid.
+> Versjonen av bestillingen som er tilgjengelig for andre prosesser i Supply Chain Management, er alltid den nyeste versjonen, selv om denne versjonen ennå ikke er registrert i grensesnittet for leverandørsamarbeid.
 
 ### <a name="versions-and-statuses-if-you-use-change-management"></a>Versjoner og status hvis du bruker endringsadministrasjon
 

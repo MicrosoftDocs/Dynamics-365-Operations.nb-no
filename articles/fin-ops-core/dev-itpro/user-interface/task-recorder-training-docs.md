@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bbc8e4b942c3c5307d90bfd08a33a8b27c4352d2
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 6c3d83334bcccc62a2cbe761272b13cc80e10c11
+ms.sourcegitcommit: 574309903f15eeab7911091114885b5c7279d22a
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2249733"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "2658816"
 ---
 # <a name="create-documentation-or-training-with-task-recorder"></a>Lage dokumentasjon eller opplæring med Oppgaveopptaker
 
@@ -68,23 +68,23 @@ Husk følgende informasjon uansett om du lager et nytt oppgaveopptak eller baser
 
 Dette er redigeringsruten du ser når du legger til en merknad mens du lager opptaket. Angi en tittelmerknad i **Tittel**-boksen. 
 
-[![Skjerm1](./media/screen1.png)](./media/screen1.png) 
+[![Redigeringsrute med tittelmerknad](./media/screen1.png)](./media/screen1.png) 
 
 Slik ser tittelmerknaden ut i «boblen» i oppgaveveiledningen. 
 
-[![Skjerm2](./media/screen2.png)](./media/screen2.png)
+[![Utseende på tittelmerknad i oppgaveveiledning](./media/screen2.png)](./media/screen2.png)
 
 -   **Obs!** En notatmerknad vises etter trinnteksten som oppgaveopptakeren genererer automatisk. I oppgaveveiledningen vises den bare hvis brukeren klikker **Vis mer**-koblingen i boblen i oppgaveveiledningen. Bruk denne typen merknad til å beskrive det en bruker må vite for å kunne fullføre trinnet.
 
 Dette er redigeringsruten du ser når du legger til en merknad mens du lager opptaket. Angi en tittelmerknad i **Merknader**-boksen. 
 
-[![Skjerm3](./media/screen3.png)](./media/screen3.png) 
+[![Redigeringsrute med merknad i boksen Merknader](./media/screen3.png)](./media/screen3.png) 
 
 Slik ser notatmerknaden ut i "boblen" i oppgaveveiledningen.
 
-[![Skjerm4](./media/screen4.png)](./media/screen4.png)
+[![Utseende på notatmerknad i oppgaveveiledning](./media/screen4.png)](./media/screen4.png)
 
--   **Informasjonstrinn**: Du oppretter disse merknadene ved å høyreklikke en kontroll eller hvor som helst i et skjema &lt; **Oppgaveregistrering** &lt; **Legg til informasjonstrinn.** Informasjonstrinn vises som et nummerert trinn der du setter det inn, selv om ingen handling ble tatt opp i brukergrensesnittet. Du kan legge til et informasjonstrinn på skjemanivå eller et informasjonstrinn som er knyttet til en kontroll. Når et informasjonstrinn er knyttet til et skjema, vises «boblen» i oppgaveveiledningen et sted i skjemaet, uten peker, når oppgaveveiledningen spilles av. Når et informasjonstrinn er knyttet til en kontroll, peker "boblen" i oppgaveveiledningen mot kontrollen når oppgaveveiledningen spilles av. I Hjelp-ruten vises merknaden for et informasjonstrinn som et nummerert trinn med tekst du skrev inn. Bruk informasjonstrinn til å forberede brukeren på de neste trinnene, til å beskrive trinnene som må gjøres utenfor programmet, eller til å henvise til andre opptak (selv om du ikke kan bruke hyperkoblinger i merknader).
+-   **Informasjonstrinn**: Du oppretter disse merknadene ved å høyreklikke en kontroll eller hvor som helst i et skjema &lt; **Oppgaveregistrering** &lt; **Legg til informasjonstrinn**. Informasjonstrinn vises som et nummerert trinn der du setter det inn, selv om ingen handling ble tatt opp i brukergrensesnittet. Du kan legge til et informasjonstrinn på skjemanivå eller et informasjonstrinn som er knyttet til en kontroll. Når et informasjonstrinn er knyttet til et skjema, vises «boblen» i oppgaveveiledningen et sted i skjemaet, uten peker, når oppgaveveiledningen spilles av. Når et informasjonstrinn er knyttet til en kontroll, peker "boblen" i oppgaveveiledningen mot kontrollen når oppgaveveiledningen spilles av. I Hjelp-ruten vises merknaden for et informasjonstrinn som et nummerert trinn med tekst du skrev inn. Bruk informasjonstrinn til å forberede brukeren på de neste trinnene, til å beskrive trinnene som må gjøres utenfor programmet, eller til å henvise til andre opptak (selv om du ikke kan bruke hyperkoblinger i merknader).
 
 **Avgjøre hvor langt opptaket skal være**
 

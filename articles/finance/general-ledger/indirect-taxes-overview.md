@@ -3,7 +3,7 @@ title: Oversikt over merverdiavgift
 description: Dette emnet inneholder en oversikt over avgiftssystemet. Den beskriver elementene i mva-oppsettet, og hvordan de fungerer sammen.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 10/26/2017
+ms.date: 10/28/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,18 +18,16 @@ ms.search.region: Global
 ms.author: vstehman
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d2741eb51f93f2f0b627dd8676629077b6df0f1b
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 08d128e3006d019fa19b52f320b262ae49105e5d
+ms.sourcegitcommit: ddd66bd329e76d88178032566b0a57637159b537
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2186469"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "2666836"
 ---
 # <a name="sales-tax-overview"></a>Oversikt over merverdiavgift
 
 [!include [banner](../includes/banner.md)]
-
-[!include [retail name](../includes/retail-name.md)]
 
 Dette emnet inneholder en oversikt over avgiftssystemet. Den beskriver elementene i mva-oppsettet, og hvordan de fungerer sammen.
 
@@ -94,5 +92,8 @@ Vanligvis ville du måtte utligne og betale 2 500 til skattemyndighetene når fa
 
 Hvis du bruker en betinget mva, utligner du imidlertid med skattemyndighetene når du mottar betaling fra kunden den 30. juli.
 
+### <a name="postdated-check"></a>Etterdatert sjekk
+
+Hvis du bruker etterdatert sjekk som betalingsmåte når betalingen opprettes, blir ikke bankkontoen tømt. I noen land blir mva "realisert" gjeld når betalingen fjerner banken, som betyr at den etterdaterte sjekken er utlignet. Du kan aktivere den ved å velge alternativet for **Realiser betinget merverdiavgift når etterdaterte sjekker trekkes** i **Kontant- og bankbehandling > Oppsett > Parametere for kontant- og bankbehandling > Etterdaterte sjekker**.
 
 Hvis du vil ha mer informasjon, kan du se [Definere kildeskattgrupper](tasks/set-up-withholding-tax.md).

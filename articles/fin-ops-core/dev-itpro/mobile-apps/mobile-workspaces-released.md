@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: d3a2de4aa1a49eaef43fca385033dd2bab4c9849
-ms.sourcegitcommit: 5b53bdafa5cb9a1279576bfece0452a50383b122
+ms.openlocfilehash: 9af92ea64b98581b02c2ed1797332281dccc74b3
+ms.sourcegitcommit: bbb64b3475eef155b3f9d1bdc440545da8a7182f
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "2277972"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "2553027"
 ---
 # <a name="available-mobile-workspaces"></a>Tilgjengelige mobile arbeidsområder
 
@@ -34,11 +34,11 @@ Dette emnet viser de mobile arbeidsområdene som er tilgjengelige for bruk med D
 |[Firmakatalog](company-directory-mobile-workspace.md)| Lar deg vise og kontakte andre ansatte i organisasjonen.| 2017. juni |    
 |[Mitt team](manager-self-service-mobile-workspace.md)| Du kan vise direkte underordnede og underordnede og utvidede stab, samt gi ros til enkeltpersoner i rapporteringskjeden.|2017. juni |     
 |[Fakturagodkjenning](invoice-approval-mobile-workspace.md)| Gir en oversikt over fakturaer som er tilordnet til deg gjennom arbeidsflytprosessen leverandørfakturahode.| 2017. juni   |
-| [Reiseregning og utlegg](../../financials/expense-management/expense-management-mobile-workspace.md) | Du kan registrere og laste opp en kvittering, slik at du kan knytte det til en reiseregningsrapport senere. Det mobile arbeidsområdet lar deg også raskt opprette en utgiftslinje ved hjelp av en tilknyttet kvittering. | 2017. april |
-| [Godkjenning av bestilling](../../supply-chain/procurement/purchase-order-mobile-workspace.md) | Vise og svare på bestillinger med handlinger som «godta» eller «avvis». | 2017. april |
-| [Tidsoppføring for prosjekt](../../financials/project-management/project-time-entry-mobile-workspace.md) | Du kan angi og lagre tid mot et prosjekt ved hjelp av mobilenheten. | 2017. mars |
-| [Kostnadskontroll](../../financials/cost-accounting/cost-controlling-mobile-workspace.md)     | Kostsenterledere kan se kostsenterresultater.                                                                                               |  2017. januar        |
-| [Lagerbeholdning ](../../supply-chain/inventory/inventory-on-hand-mobile-workspace.md)    | Få innsikt i reservert og tilgjengelig beholdning.                                                                                                    |   2017. januar       |
-| [Salgsordrer](../../supply-chain/sales-marketing/sales-orders-mobile-workspace.md)         | Du kan holde deg oppdatert om salgsordrene.                                                                                                                          |  2017. januar                  |
-| [Leverandørsamarbeid](../../supply-chain/procurement/vendor-collaboration-mobile-workspace.md) | Leverandører kan holde seg oppdatert om bestillinger som er sendt til dem for godkjenning. De kan også vise informasjon om nye og oppdaterte bestillinger og kontakter. |2017. januar    |
-| [Aktivabehandling](../../supply-chain/procurement/asset-management-mobile-workspace.md) | Dette arbeidsområdet lar brukere vise og opprette vedlikeholdsforespørsler og arbeidsordrer. Brukere kan også vise tilordnede arbeidsordrejobber i en kalender- eller listevisning. Du kan også vise og søke etter aktiva og arbeidssteder. |2019. oktober    |
+| [Reiseregning og utlegg](../../../finance/expense-management/expense-management-mobile-workspace.md) | Du kan registrere og laste opp en kvittering, slik at du kan knytte det til en reiseregningsrapport senere. Det mobile arbeidsområdet lar deg også raskt opprette en utgiftslinje ved hjelp av en tilknyttet kvittering. | 2017. april |
+| [Godkjenning av bestilling](../../../supply-chain/procurement/purchase-order-mobile-workspace.md) | Vise og svare på bestillinger med handlinger som «godta» eller «avvis». | 2017. april |
+| [Tidsoppføring for prosjekt](../../../finance/project-management/project-time-entry-mobile-workspace.md) | Du kan angi og lagre tid mot et prosjekt ved hjelp av mobilenheten. | 2017. mars |
+| [Kostnadskontroll](../../../finance/cost-accounting/cost-controlling-mobile-workspace.md)     | Kostsenterledere kan se kostsenterresultater.                                                                                               |  2017. januar        |
+| [Lagerbeholdning ](../../../supply-chain/inventory/inventory-on-hand-mobile-workspace.md)    | Få innsikt i reservert og tilgjengelig beholdning.                                                                                                    |   2017. januar       |
+| [Salgsordrer](../../../supply-chain/sales-marketing/sales-orders-mobile-workspace.md)         | Du kan holde deg oppdatert om salgsordrene.                                                                                                                          |  2017. januar                  |
+| [Leverandørsamarbeid](../../../supply-chain/procurement/vendor-collaboration-mobile-workspace.md) | Leverandører kan holde seg oppdatert om bestillinger som er sendt til dem for godkjenning. De kan også vise informasjon om nye og oppdaterte bestillinger og kontakter. |2017. januar    |
+| [Aktivabehandling](../../../supply-chain/asset-management/asset-management-mobile-workspace.md) | Dette arbeidsområdet lar brukere vise og opprette vedlikeholdsforespørsler og arbeidsordrer. Brukere kan også vise tilordnede arbeidsordrejobber i en kalender- eller listevisning. Du kan også vise og søke etter aktiva og arbeidssteder. |2019. oktober    |

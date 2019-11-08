@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 4fc32d337be1f71932555fcb062a8d05c9ca9bda
-ms.sourcegitcommit: 2292b54e2da96f71b59ec9ccf17cd32d3d1d8b21
+ms.openlocfilehash: 1aee14c869d84bef38a738bfe78fd09ee7f82d94
+ms.sourcegitcommit: fb66731f05207094149a6bc7b8549a4dabbb071a
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/23/2019
-ms.locfileid: "1918424"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "2652385"
 ---
 # <a name="asset-kpis"></a>KPI-er for aktivum
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 I Aktivastyring kan du beregne forskjellige KPIer for aktiva og aktivatyper. Du bruker KPIer til å få en oversikt over ytelse på anleggsmidler i forbindelse med for eksempel oppetid, nedetid, reparasjonstid og gjennomsnittstid mellom feil (MTBF).
 
@@ -85,7 +85,7 @@ I tabellen nedenfor finner du en beskrivelse av feltene på siden **KPI-er for a
 
 Figuren nedenfor viser et skjermbilde av en KPI-beregning for fire aktiva.
 
-![Figur 1](media/11-controlling-and-reporting.png)
+![Skjermbilde av en KPI-beregning for fire aktiva](media/11-controlling-and-reporting.png)
 
 - Du kan velge flere aktiva i **Alle aktiva** og klikke knappen **KPI-er for aktiva** i fanen **Generelt**. Deretter klikker du **OK** i dialogboksen **Beregn KPI-er for aktivum** for å beregne KPIer for de valgte aktivaene.  
 - Resultater fra en KPI-beregning kan omfatte [registreringer av nedetid ved vedlikehold](../work-orders/maintenance-downtime.md), avhengig av oppsettet og bruken av årsakskoder for nedetid ved vedlikehold. 

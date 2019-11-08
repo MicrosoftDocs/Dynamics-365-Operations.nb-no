@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-08-13
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 8b4e783f79b02c77a27fc59c2f4be8a192f2f476
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 932ba44b4223bf9c9d93ffb19e17f6e57bb303b5
+ms.sourcegitcommit: bbb64b3475eef155b3f9d1bdc440545da8a7182f
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2248706"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "2553097"
 ---
 # <a name="backup-storage-of-er-templates"></a>Sikkerhetskopiere ER-maler
 
@@ -33,7 +33,7 @@ ms.locfileid: "2248706"
 
 Hvert konfigurerte format kan publiseres som en del av en ER-løsning. Hver enkelt ER-løsning kan eksporteres fra en forekomst av Finance and Operations og importeres til en annen forekomst.
 
-ER-rammeverket bruker [dokumentbehandlingsrammeverket](../../fin-and-ops/organization-administration/configure-document-management.md) til å beholde de nødvendige malene for gjeldende Finance and Operations-forekomsten. Avhengig av innstillingene for ER-rammeverket kan Microsoft Azure Blob Storage eller en Microsoft SharePoint-mappe velges som fysisk primær lagringsplassering for maler. (Hvis du vil ha mer informasjon, kan du se [Konfigurere ER-rammeverket](electronic-reporting-er-configure-parameters.md).) DocuValue-tabellen inneholder en enkeltpost for hver mal. I hver post lagrer feltet **AccessInformation** banen til en malfil som er plassert på den konfigurerte lagringsplasseringen.
+ER-rammeverket bruker [dokumentbehandlingsrammeverket](../../fin-ops/organization-administration/configure-document-management.md) til å beholde de nødvendige malene for gjeldende Finance and Operations-forekomsten. Avhengig av innstillingene for ER-rammeverket kan Microsoft Azure Blob Storage eller en Microsoft SharePoint-mappe velges som fysisk primær lagringsplassering for maler. (Hvis du vil ha mer informasjon, kan du se [Konfigurere ER-rammeverket](electronic-reporting-er-configure-parameters.md).) DocuValue-tabellen inneholder en enkeltpost for hver mal. I hver post lagrer feltet **AccessInformation** banen til en malfil som er plassert på den konfigurerte lagringsplasseringen.
 
 Når du administrerer dine Finance and Operations-forekomster, kan det hende du vil overføre gjeldende forekomst til en annen plassering. Du kan for eksempel overføre produksjonsforekomsten til et nytt sandkassemiljø. Hvis du har konfigurert ER-rammeverket til å lagre maler i Blob Storage, refererer DocuValue-tabellen i det nye sandkassemiljøet til forekomsten av Blob Storage i produksjonsmiljøet. Denne forekomsten er imidlertid ikke tilgjengelig fra sandkassemiljøet, fordi overføringsprosessen ikke støtter overføring av artefakter i Blob Storage. Hvis du prøver å kjøre et ER-format som bruker en mal til å generere forretningsdokumenter, oppstår det derfor et unntak, og du blir varslet om den manglende malen. Du blir også veiledet til å bruke ER-oppryddingsverktøyet til å slette og deretter importere på nytt ER-formatkonfigurasjonen som inneholder malen. Fordi du kan ha flere ER-formatkonfigurasjoner kan denne prosessen være tidkrevende.
 

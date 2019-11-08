@@ -3,7 +3,7 @@ title: Kolonnedefinisjoner i finansrapporter
 description: Denne artikkelen gir informasjon om kolonnedefinisjoner. En kolonnedefinisjon er en rapportkomponent eller byggeblokk som angir innholdet i kolonner i en rapport. Grunnleggende kolonnedefinisjoner kan i likhet med raddefinisjoner brukes på flere rapporter.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 10/10/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 76de08290058d43fbd1b4c0670db55ebcfbb8494
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 54e7d517e704b7162f3e091330a246386f0203ea
+ms.sourcegitcommit: d800613020d5548d100c8f240fb81bb6258a3646
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2174311"
+ms.lasthandoff: 10/11/2019
+ms.locfileid: "2572647"
 ---
 # <a name="column-definitions-in-financial-reports"></a>Kolonnedefinisjoner i finansrapporter
 
@@ -170,7 +170,7 @@ Du kan bruke dialogboksen **Kolonneoverskrift** for å legge til, endre og slett
 
 ### <a name="create-an-automatically-generated-header"></a>Opprette en automatisk generert overskrift
 
-Rapportutforming kan automatisk generere kolonneoverskrifter, basert på autotekstkoder. Autotekstkoder er variabler som oppdateres hver gang en rapport genereres. En kolonneoverskrift kan inneholde disse kodene for å angi rapportinformasjon som kan variere, for eksempel datoer eller periodenumre. Du kan derfor bruke én kolonnedefinisjon for flere rapportdefinisjoner, tidsperioder og rapporteringstrær. Siden autotekstkoder avhenger av kalenderinformasjonen fra detaljradene for kolonnedefinisjonen, støttes de bare for kolonnene **CALC** og **FD**. Hvordan en autotekstkode vises i kolonneoverskriften har innvirkning på hvordan denne informasjonen vises i rapporten. I dialogboksen **Kolonneoverskrift** vises autotekstkodene med store og små bokstaver. Derfor vises teksten i små og store bokstaver i rapporten. I et standard kalenderår løser for eksempel **@CalMonthLong** måned **7** til **juli**. Hvis navnet på måneden skal være i store bokstaver (for eksempel **JULI**), skriver du inn autotekstkoden med store bokstaver i feltet **Kolonnehodetekst**. Angi for eksempel **@CALMONTHLONG**. Du kan blande koder og tekst. Du skriver for eksempel inn følgende overskrift: **Periode @FiscalPeriod-@FiscalYear fra @StartDate til @EndDate**. Rapportoverskriften som genereres ligner på følgende tekst: **Periode 1-02 fra 01.01.02 til 01.31.02**.
+Rapportutforming kan automatisk generere kolonneoverskrifter, basert på autotekstkoder. Autotekstkoder er variabler som oppdateres hver gang en rapport genereres. En kolonneoverskrift kan inneholde disse kodene for å angi rapportinformasjon som kan variere, for eksempel datoer eller periodenumre. Du kan derfor bruke én kolonnedefinisjon for flere rapportdefinisjoner, tidsperioder og rapporteringstrær. Siden autotekstkoder avhenger av kalenderinformasjonen fra detaljradene for kolonnedefinisjonen, støttes de bare for kolonnene **CALC** og **FD**. Hvordan en autotekstkode vises i kolonneoverskriften har innvirkning på hvordan denne informasjonen vises i rapporten. I dialogboksen **Kolonneoverskrift** vises autotekstkodene med store og små bokstaver. Derfor vises teksten i små og store bokstaver i rapporten. I et standard kalenderår løser for eksempel **\@CalMonthLong** måned **7** til **juli**. Hvis navnet på måneden skal være i store bokstaver (for eksempel **JULI**), skriver du inn autotekstkoden med store bokstaver i feltet **Kolonnehodetekst**. Angi for eksempel **\@CALMONTHLONG**. Du kan blande koder og tekst. Du skriver for eksempel inn følgende overskrift: **Periode \@FiscalPeriod-\@FiscalYear fra \@StartDate til \@EndDate**. Rapportoverskriften som genereres ligner på følgende tekst: **Periode 1-02 fra 01.01.02 til 01.31.02**.
 
 > [!NOTE]
 > Formatet på noe av teksten, for eksempel den lange datoen, avhenger av de regionale innstillingene på serveren. Hvis du vil endre disse innstillingene, klikker du **Start**, **Kontrollpanel** og deretter **Område og språk**. Tabellen nedenfor viser en liste over tilgjengelige alternativer for autotekst for kolonneoverskrifter.

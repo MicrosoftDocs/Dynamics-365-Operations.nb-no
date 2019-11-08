@@ -18,37 +18,45 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 7c9330cc7b3a8839d94c8945418548033254786b
-ms.sourcegitcommit: 2292b54e2da96f71b59ec9ccf17cd32d3d1d8b21
+ms.openlocfilehash: 43772903f6845409cb33c7f2a13a049a3e9aa208
+ms.sourcegitcommit: fb66731f05207094149a6bc7b8549a4dabbb071a
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/23/2019
-ms.locfileid: "1918447"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "2652408"
 ---
 # <a name="asset-fault-analysis"></a>Feilanalyse av aktivum
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 I Aktivastyring kan du analysere feilregistreringer for anleggsmidler for å få en oversikt over det totale antallet feil som er registrert i en bestemt periode. Feilregistreringer kan analyseres fra ulike perspektiver, for eksempel fokus på aktiva, anleggsmiddeltyper, arbeidssteder, feilsymptomer eller feiltyper.
 
 1. Klikk **Aktivastyring** > **Forespørsler** > **Aktivumfeil** > **Feilanalyse av aktivum**.
 
-2. I dialogboksen **Beregning av feilanalyse av aktivum** kan du bruke **Nivå**-feltet til å angi hvor detaljert du vil at anleggsmiddellinjene skal være angående arbeidssteder. Hvis du for eksempel setter inn tallet 1 i feltet, og du har en arbeidsstedsstruktur med flere nivåer, vises alle anleggsmiddellinjer for et arbeidssted på øverste nivå, og derfor kan det hende at timene på en linje blir lagt til fra arbeidssteder plassert på et lavere nivå. Hvis du setter inn tallet 0 i **Nivå**-feltet, vil du se et detaljert resultat som viser alle anleggsmiddellinjer på alle arbeidsstedsnivået de er relatert til.
+2. I dialogboksen **Beregning av feilanalyse av aktivum** kan du bruke **Nivå**-feltet til å angi hvor detaljert du vil at anleggsmiddellinjene skal være angående arbeidssteder. 
+
+    Hvis du for eksempel setter inn tallet 1 i feltet, og du har en arbeidsstedsstruktur med flere nivåer, vises alle anleggsmiddellinjer for et arbeidssted på øverste nivå, og derfor kan det hende at timene på en linje blir lagt til fra arbeidssteder plassert på et lavere nivå. 
+        
+    Hvis du setter inn tallet 0 i **Nivå**-feltet, vil du se et detaljert resultat som viser alle anleggsmiddellinjer på alle arbeidsstedsnivået de er relatert til.
 
 3. Hvis du vil begrense søket, kan du velge bestemte anleggsmidler, feildatoer, feilårsaker og feilløsninger i hurtigfanen **Poster som skal inkluderes**.
 
 4. Klikk på **OK** for å starte beregningen.
 
-5. I kategorien **Feilanalyse av aktivum** klikker du én eller flere knapper i handlingsrutegruppene **Grupper etter...** for å vise detaljnivået du vil se. Aktiverte knapper er uthevet. Aktiver eller deaktiver en knapp ved å klikke på den.
+5. I kategorien **Feilanalyse av aktivum** klikker du én eller flere **Grupper etter**-knapper for å vise detaljnivået du vil se. Aktiverte knapper er uthevet. Aktiver eller deaktiver en knapp ved å klikke på den.
 
 6. Klikk **Oppdater beregninger** for å vise valgene dine på skjermen. 
 
 >[!NOTE]
->Hver gang du aktiverer eller deaktiverer knapper i handlingsrutegruppene **Grupper etter...**, må du huske å klikke **Oppdater beregninger**-knappen etter at du har endret valgene. Dette er obligatorisk fordi en stor mengde data behandles når du beregner feilsannsynlighet på nytt.
+>Hver gang du aktiverer eller deaktiverer en **Grupper etter** -knapp, må du huske å klikke på **Oppdater beregninger**-knappen. Dette er obligatorisk fordi en stor mengde data behandles når du beregner feilsannsynlighet på nytt.
 
-Det er mange måter å analysere feilregistreringer på. Nedenfor ser du eksempler i fem skjermbilder på hvordan ulike datavalg gir forskjellige typer informasjon. Du vil se hvordan forskjellige valg gir mer innsikt og detaljer når du analyserer feilregistreringer for anleggsmidler.
+## <a name="examples"></a>Eksempler
+
+Det er mange måter å analysere feilregistreringer på. Denne delen inneholder fem eksempler som viser hvordan ulike datavalg kan gi mer innsikt og detaljer når du analyserer feilregistreringer for anleggsmidler.
+
+### <a name="group-by-symptoms"></a>Gruppere etter symptomer
 
 I skjermbildet nedenfor er det bare merket av for **Symptom**-knappen.
 
@@ -57,6 +65,7 @@ I skjermbildet nedenfor er det bare merket av for **Symptom**-knappen.
 
 ![Figur 1](media/06-controlling-and-reporting.png)
 
+### <a name="group-by-symptoms-and-time-period"></a>Gruppere etter symptomer og tidsperiode
 
 I skjermbildet nedenfor er **År** og **Måned** lagt til for å vise hvordan du kan vise feilregistreringer i en valgt periode.
 
@@ -65,9 +74,13 @@ I skjermbildet nedenfor er **År** og **Måned** lagt til for å vise hvordan du
 
 ![Figur 2](media/07-controlling-and-reporting.png)
 
+### <a name="group-by-multiple-symptoms-and-assets"></a>Gruppere etter flere symptomer og aktiva
 
-- Kombinasjonen av aktiva og en aktivatype brukes som grunnlag for beregningene som vises i de tre skjermbildene nedenfor, som øker i detaljnivå.  
-- Knappene i handlingsrutegruppene **Grupper etter dato**, **Grupper etter aktiva**, **Grupper etter arbeidssted** samt **Feil**-knappen (feil-ID) inneholder vanligvis perioder eller aktivarelasjoner. Knappene **Symptom**, **Område**, **Type**, **Årsak** og **Løsning** er kategoriseringer som brukes i feilbehandling til å analysere registreringer av aktivafeil og finne problemområder.  
+Kombinasjonen av aktiva og en aktivatype brukes som grunnlag for beregningene som vises i de tre skjermbildene nedenfor, som øker i detaljnivå.  
+
+Knappene i handlingsrutegruppene **Grupper etter dato**, **Grupper etter aktiva**, **Grupper etter arbeidssted** samt **Feil**-knappen (feil-ID) inneholder vanligvis perioder eller aktivarelasjoner. Knappene **Symptom**, **Område**, **Type**, **Årsak** og **Løsning** er kategoriseringer som brukes i feilbehandling til å analysere registreringer av aktivafeil og finne problemområder.  
+
+**Grupper etter symptom, aktiva og aktivatype**
 
 I skjermbildet nedenfor ble **Aktiva** og **Aktivatype** lagt til for å gi mer informasjon om feilregistreringer.
 
@@ -76,6 +89,7 @@ I skjermbildet nedenfor ble **Aktiva** og **Aktivatype** lagt til for å gi mer 
 
 ![Figur 3](media/08-controlling-and-reporting.png)
 
+**Grupper etter to symptomer, aktiva og aktivatype**
 
 I skjermbildet nedenfor ble **Område** lagt til i **Symptom**, **Aktiva** og **Aktivatype** for å gi mer informasjon om feilregistreringer.
 
@@ -83,6 +97,7 @@ I skjermbildet nedenfor ble **Område** lagt til i **Symptom**, **Aktiva** og **
 
 ![Figur 4](media/09-controlling-and-reporting.png)
 
+**Grupper etter tre symptomer, aktiva og aktivatyper**
 
 I skjermbildet nedenfor ble **Type** lagt til, og den mest detaljerte beregningen i dette eksemplet vises.
  

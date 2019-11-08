@@ -16,12 +16,12 @@ ms.search.industry: retail
 ms.author: anpurush
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 8c22137ad29bf947bc7a9e4c9a4d1332e03b1298
-ms.sourcegitcommit: e2fb0846fcc6298050a0ec82c302e5eb5254e0b5
+ms.openlocfilehash: 1e3fc0e8cb5c9a6cc7729dfbddd5d918a1d6bdb5
+ms.sourcegitcommit: 0099fb24f5f40ff442020b488ef4171836c35c48
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/27/2019
-ms.locfileid: "1606970"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "2653377"
 ---
 # <a name="improvements-to-statement-posting-functionality"></a>Forbedringer for utdragsposteringsfunksjonalitet
 
@@ -37,7 +37,7 @@ Som standard, under distribusjon av Finance and Operations 7.3.2, konfigureres p
 
 Når den nye konfigurasjonsnøkkelen for **Detaljhandelsutdrag** er aktivert, et nytt menyelement som heter **Detaljhandelsutdrag** er tilgjengelig. Med dette alternativet kan du manuelt opprette, beregne og postere utdrag. Alle utdrag som forårsaker en feil når den satsvise posteringsprosessen brukes, vil også være tilgjengelig via dette menyelementet. (Når konfigurasjonsnøkkelen for **Detaljhandelsutdrag (eldre)** er aktivert, heter menyelementet **Åpne utdrag**.)
 
-Finance and Operations omfatter følgende valideringer som er knyttet til disse konfigurasjonsnøkler:
+Retail omfatter følgende valideringer som er knyttet til disse konfigurasjonsnøkler:
 
 - Begge konfigurasjonsnøkler kan ikke være aktivert samtidig.
 - Samme konfigurasjonsnøklene som skal brukes for alle operasjoner som utføres på en angitt setning under livssyklusen (Opprett, Beregn, Slett, Poster og så videre). For eksempel du kan ikke opprette og beregne et utdrag når **Detaljhandelsutdrag (eldre)**-konfigurasjonsnøkkelen er aktivert, og deretter prøve å postere det samme utdraget når **Detaljhandelsutdrag**-konfigurasjonsnøkkelen er aktivert.

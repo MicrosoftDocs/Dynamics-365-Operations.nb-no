@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-07-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: dfd62a18d6b4cfc8c41d9025a8fc5deb8768ed3f
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 609146ebc5a31e5b28ca9ed6e04ed82b6bb1b03e
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2250927"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2571122"
 ---
 # <a name="maintenance-requests"></a>Vedlikeholdsanmodninger
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 Du kan definere ulike typer forespørsler som skal brukes i firmaet. Vedlikeholdsanmodninger er én type. Vedlikeholdsanmodninger brukes til å be om at en arbeidsordre kreves for en bestemt jobb. En vedlikeholdsanmodning kan opprettes av alle brukere som har tilgang til Aktivastyring-funksjonalitet. En planlegger eller leder kan deretter bestemme om en vedlikeholdsanmodning skal konverteres til en arbeidsordre, eller om den skal fullføre sitt eget livsløp.
 
@@ -41,4 +41,4 @@ Du kan definere ulike typer forespørsler som skal brukes i firmaet. Vedlikehold
 
 Illustrasjonen nedenfor viser et eksempel på listesiden **Alle vedlikeholdsanmodninger**.
 
-![Figur 1](media/01-setup-for-requests.png)
+![Listesiden Alle vedlikeholdsforespørsler](media/01-setup-for-requests.png)

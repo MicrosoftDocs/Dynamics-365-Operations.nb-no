@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-08-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 71905d5b362c80d48b78210b59cacfb1e7899757
-ms.sourcegitcommit: 802dbf0a744d70f9e546632d419415b0993331ab
+ms.openlocfilehash: da60d098aff96780ca1e40832db34e3c9cc835e7
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "1874699"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2569691"
 ---
 # <a name="warranty-agreements"></a>Garantiavtaler
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 
 I Aktivastyring kan du definere garantibetingelser som kan knyttes til et anleggsmiddel eller en anleggsmiddeltype. Garantibetingelser opprettes for en bestemt periode. Garanti kan defineres for å gi fullstendig dekning eller delvis dekning, og du kan definere betingelser som er knyttet til timer, utgifter og varer.
@@ -54,4 +54,4 @@ En garantiavtale kan inkludere flere avtalelinjer for å dekke garantien for arb
     3. Angi et tall i **Intervall**-feltet. Dette feltet definerer antall perioder som garantien skal være gyldig for.
     4. I **Prosent**-feltet angir du dekningsprosenten for garantilinjen. Prosentsatsen viser hvor mye som dekkes av firmaet.
 
-![Figur 1](media/01-warranty.png)
+![Garantisiden](media/01-warranty.png)

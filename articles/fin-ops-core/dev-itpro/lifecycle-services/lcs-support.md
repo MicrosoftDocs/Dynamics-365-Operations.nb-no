@@ -3,7 +3,7 @@ title: Få støtte for Finance and Operations-apper eller Lifecycle Services (LC
 description: Dette emnet forklarer hvordan du får hjelp med Finance and Operations-apper eller Microsoft Dynamics Lifecycle Services (LCS).
 author: kfend
 manager: AnnBe
-ms.date: 10/02/2019
+ms.date: 10/14/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anupams
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: af4cbbd0f594b07e791d6ab7a5ac4dc58b97e1de
-ms.sourcegitcommit: 7bec89b33a56447072d01066af4da473b8092ca8
+ms.openlocfilehash: c36adc1f754c918a9fdf8410572f3199cdb63766
+ms.sourcegitcommit: e16b8c248fc2c2a60dc7b803320f942a35b443c5
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "2537056"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "2577502"
 ---
 # <a name="get-support-for-finance-and-operations-apps-or-lifecycle-services-lcs"></a>Få støtte for Finance and Operations-apper eller Lifecycle Services (LCS)
 
@@ -91,5 +91,5 @@ Hvis du har tekniske spørsmål som er knyttet til pålogging og tilgang til Cus
 ## <a name="additional-resources"></a>Tilleggsressurser
 - [Få kundestøtte for Dynamics 365 Retail](../../../retail/retail-support.md)
 - [Få kundestøtte for Dynamics 365 Talent](../../../talent/talent-support.md)
-- Hvis du vil ha mer informasjon om støttetilbud for Microsoft Dynamics, kan du se [Støtte for Microsoft Dynamics Online](https://www.microsoft.com/dynamics/dynamics-online-support.aspx).
+- Hvis du vil ha informasjon om Microsoft Dynamics-støttetilbud, se [Behandle støtteopplevelser for Finance and Operations-apper](cloud-powered-support-lcs.md).
 

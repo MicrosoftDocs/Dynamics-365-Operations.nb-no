@@ -18,19 +18,19 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-08-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 69d06ff649f4453df22d55062b43bcc8d4ecd763
-ms.sourcegitcommit: 802dbf0a744d70f9e546632d419415b0993331ab
+ms.openlocfilehash: f531f51d7f42f88e4da2d046e61313e9ada2b259
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "1874722"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2569806"
 ---
 # <a name="work-order-lifecycle-states"></a>Livssyklustilstand for arbeidsordre
 
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 Livssyklustilstander for arbeidsordre definerer tilstandene som en arbeidsordre kan gå gjennom. Eksempler er **opprettet**, **planlagt**, **pågår** og **avsluttet**. Livssyklustilstander for arbeidsordre kan oppdateres manuelt i en arbeidsordre, eller de kan oppdateres automatisk (for eksempel under planlegging av arbeidsordren).
 
@@ -38,7 +38,7 @@ Livssyklustilstandene for arbeidsordre som kreves for arbeidsordrene, må være 
 
 I tabellen nedenfor beskrives alternativene i delene **Arbeidsordre** og **Tidsplan** i hurtigfanen **Generelt** på siden **Livssyklustilstand for arbeidsordre** (**Aktivastyring** \> **Oppsett** \> **Arbeidsordrer** \> **Livssyklustilstander**).
 
-![Figur 1](media/09-setup-for-work-orders.png)
+![Siden Livssyklustilstand for arbeidsordre](media/09-setup-for-work-orders.png)
 
 | Navn på alternativ                   | Beskrivelse |
 |-------------------------------|-------------|
@@ -96,7 +96,7 @@ I tabellen nedenfor beskrives alternativene i delene **Arbeidsordre** og **Tidsp
     - Hvis alternativet **Nedetid for vedlikehold** settes til **Ja** for livssyklustilstanden som en arbeidsordre oppdateres til, utføres validering av vedlikeholdsnedetid på anleggsmidlet som er knyttet til arbeidsordren. Hvis det er gjort en registrering av vedlikeholdsnedetid, men det finnes ingen **Avsluttet**-registrering, vises en melding når arbeidsordren oppdateres til denne livssyklustilstanden.
     - Hvis standard prosjektoppsett ikke omfatter alle stadiene du trenger for aktivastyringsoppsettet, kan du sette opp brukerdefinerte prosjektstadier i kategorien **Prosjektstadium** på siden **Parametere for prosjektstyring og regnskap**. Følgende illustrasjon viser kategorien **Prosjektstadium** på siden **Parametere for prosjektstyring og regnskap**.
 
-    ![Figur 2](media/10-setup-for-work-orders.png)
+    ![Siden Definer prosjektstadier for diverse prosjekttyper](media/10-setup-for-work-orders.png)
 
 > [!NOTE]
 > Hvis livssyklustilstanden som du oppdaterer en arbeidsordre til, er inaktiv, blir journaler som er knyttet til arbeidsordren, men som ennå ikke er postert, slettet automatisk. Denne virkemåten bidrar til å garantere automatisk opprydding av ubrukte data. (En livssyklustilstand er inaktiv hvis alternativet **Aktiv** er satt til **Nei** på hurtigfanen **Generelt** på siden **Livssyklustilstand for arbeidsordre**.)
@@ -114,7 +114,7 @@ Livssyklusmodeller refererer til arbeidsflyter, og livssyklustilstander velges i
 
 Følgende illustrasjon viser forholdet mellom arbeidsordretyper, livssyklusmodeller og livssyklustilstander.
 
-![Figur 3](media/11-setup-for-work-orders.png)
+![Siden Arbeidsordretype sammenlignet med siden Livsløpsmodeller for arbeidsordre](media/11-setup-for-work-orders.png)
 
 ## <a name="work-order-lifecycle-models"></a>Livsløpsmodeller for arbeidsordre
 
@@ -138,4 +138,4 @@ Når du har opprettet livsløpstilstandene for arbeidsordrer som kreves for arbe
 8. I feltet **Ikke-planlagt livssyklustilstand** velger du livssyklustilstanden som alltid skal velges for en arbeidsordre hvis arbeidsordreplanlegging slettes.
 9. Lagre livssyklusmodellen for arbeidsordrer.
 
-![Figur 4](media/15-setup-for-work-orders.png)
+![Siden Livsløpsmodeller for arbeidsordre](media/15-setup-for-work-orders.png)

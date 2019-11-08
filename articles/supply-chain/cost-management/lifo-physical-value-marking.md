@@ -19,18 +19,16 @@ ms.search.industry: Retail
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c0ea2c71458f92d048706a6e263d0da1830bdcde
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 792ff4d7b72ce092fe1ad92e53172cf40f0ecf26
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1565702"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2569277"
 ---
 # <a name="lifo-with-physical-value-and-marking"></a>LIFO med fysisk verdi og merking
 
 [!include [banner](../includes/banner.md)]
-
-[!include [retail name](../includes/retail-name.md)]
 
 LIFO ("Last in, First out") er en lagermodell der de siste (nyeste) tilgangene tas ut først. Avganger fra lageret utlignes mot de siste mottakene til lageret, basert på datoen for lagertransaksjonen. 
 
@@ -56,7 +54,9 @@ I dette eksemplet er det ikke merket av for Ta med fysisk verdi for varemodellgr
 -   5a. Økonomisk lageravgang av et antall på 1 til kostpris USD 20,00 per stykk (glidende gjennomsnitt av økonomisk oppdaterte transaksjoner).
 -   6. Lagerlukking utføres. I samsvar med LIFO-metoden blir den sist økonomisk oppdaterte avgangen utlignet mot den sist økonomisk oppdaterte tilgangen. Avgangstransaksjonen justeres med USD 10,00.
 
-Det nye glidende gjennomsnittet for kostpris gjenspeiler gjennomsnittet for økonomisk oppdaterte transaksjoner, det vil si USD 15,00. Illustrasjonen nedenfor viser virkningene av LIFO-lagermodellen for denne transaksjonsserien når alternativet **Ta med fysisk verdi** ikke brukes. ![LIFO uten ta med fysisk verdi](./media/lifowithoutincludephysicalvalue.gif) 
+Det nye glidende gjennomsnittet for kostpris gjenspeiler gjennomsnittet for økonomisk oppdaterte transaksjoner, det vil si USD 15,00. Illustrasjonen nedenfor viser virkningene av LIFO-lagermodellen for denne transaksjonsserien når alternativet **Ta med fysisk verdi** ikke brukes. 
+
+![LIFO uten ta med fysisk verdi](./media/lifowithoutincludephysicalvalue.gif) 
 
 **Nøkkel til diagrammet**
 
@@ -90,7 +90,9 @@ Illustrasjonen nedenfor viser disse transaksjonene:
 
 Transaksjonen 6a justeres mot tilgangstransaksjonen 4b. Systemet vil ikke utligne disse transaksjonene, fordi mottaket bare oppdateres fysisk, ikke økonomisk. I stedet vil bare en justering på USD 8,75 posteres mot den fysiske avgangstransaksjonen. Transaksjonen 5b justeres mot den fysiske mottakstransaksjonen 3a. Systemet vil ikke utligne disse transaksjonene, fordi de ikke er økonomisk oppdatert. I stedet vil bare en justering med beløpet USD 3,75 gjøres i denne avgangstransaksjonen. Det nye glidende gjennomsnittet av kostprisen gjenspeiler gjennomsnittet av de økonomisk og fysisk oppdaterte transaksjonene, USD 20,00. 
 
-Illustrasjonen nedenfor viser virkningene av LIFO-lagermodellen for denne transaksjonsserien når alternativet **Ta med fysisk verdi** brukes. ![LIFO med ta med fysisk verdi](./media/lifowithincludephysicalvalue.gif) 
+Illustrasjonen nedenfor viser virkningene av LIFO-lagermodellen for denne transaksjonsserien når alternativet **Ta med fysisk verdi** brukes. 
+
+![LIFO med ta med fysisk verdi](./media/lifowithincludephysicalvalue.gif) 
 
 **Nøkkel til diagrammet**
 
@@ -132,7 +134,9 @@ Illustrasjonen nedenfor viser disse transaksjonene:
 
 Det nye glidende gjennomsnittet av kostprisen gjenspeiler gjennomsnittet av de økonomisk og fysisk oppdaterte transaksjonene, USD 27,50. 
 
-Illustrasjonen nedenfor viser virkningen LIFO-lagermodellen på denne transaksjonsserien når det brukes merking mellom avganger og tilganger. ![LIFO med merking](./media/lifowithmarking.gif) 
+Illustrasjonen nedenfor viser virkningen LIFO-lagermodellen på denne transaksjonsserien når det brukes merking mellom avganger og tilganger. 
+
+![LIFO med merking](./media/lifowithmarking.gif) 
 
 **Nøkkel til diagram**
 
@@ -146,7 +150,4 @@ Illustrasjonen nedenfor viser virkningen LIFO-lagermodellen på denne transaksjo
 - Hver loddrett pil har en etikett med en sekvensiell ID, for eksempel *1a*. ID-ene viser i hvilken rekkefølge lagertransaksjonene posteres.
 - Lagerlukkinger vises med en rød linje med vannrette streker, og med etiketten *Lagerlukking*.
 - Utligninger som skjer før lagerlukking, vises med prikkede røde diagonale prikkede piler som går diagonalt fra tilgang til avgang.
-
-
-
 

@@ -18,20 +18,20 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 3f86f6475e5226443f5e4d43fb91acafe2afdbb9
-ms.sourcegitcommit: f93ead945afe5ae18706c66bce6e64a6b57aac50
+ms.openlocfilehash: aa2d50a976af7ee7dde5335f94336b995fdc2d11
+ms.sourcegitcommit: fb66731f05207094149a6bc7b8549a4dabbb071a
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/19/2019
-ms.locfileid: "1887394"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "2652063"
 ---
 # <a name="maintenance-worker-calendar-and-scheduling"></a>Kalender for vedlikeholdspersoner og planlegging
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
-Når du planlegger arbeidsordrer, oppretter du en plan for vedlikeholdspersoner, verktøy og aktiva. For å kunne utføre planlegging for vedlikeholdspersoner må du definere en kalender for hver enkelt vedlikeholdsperson. Vedlikeholdspersoner er knyttet til en ressurs, og arbeidstidskalendere defineres for ressurser. Du definerer ressursen og kalenderen knyttet til en arbeider i **Aktivastyring** > **Oppsett** > **Arbeidere** > **Arbeidere**, som er beskrevet i [Vedlikeholdsarbeidere og arbeidsgrupper](../setup-for-objects/workers-and-worker-groups.md).
+Når du planlegger arbeidsordrer, oppretter du en plan for vedlikeholdspersoner, verktøy og aktiva. For å kunne planlegge vedlikeholdspersoner må du definere en kalender for hver enkelt vedlikeholdsperson. Vedlikeholdspersoner er knyttet til en ressurs, og arbeidstidskalendere defineres for ressurser. Du definerer ressursen og kalenderen i **Aktivastyring** > **Oppsett** > **Arbeidere** > **Arbeidere**, som er beskrevet i [Vedlikeholdsarbeidere og arbeidsgrupper](../setup-for-objects/workers-and-worker-groups.md).
 
 Skjermbildet nedenfor viser et eksempel på en vedlikeholdsperson som er knyttet til en ressurs som bruker arbeidstidskalenderen "Produksjon".
 

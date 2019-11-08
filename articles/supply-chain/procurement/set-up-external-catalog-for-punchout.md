@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e9b6c3cb5b6bbc83604bee11a2472b2ad1136269
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: e1bddb65fd5fd73e879d8a95decc9f3e4f7f37e4
+ms.sourcegitcommit: 0099fb24f5f40ff442020b488ef4171836c35c48
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2249399"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "2653447"
 ---
 # <a name="set-up-an-external-catalog-for-punchout-eprocurement"></a>Definere en ekstern katalog for PunchOut eProcurement
 
 [!include [banner](../includes/banner.md)]
 
-Ved hjelp av den eksterne katalogen kan du sikre at produkt- og prisinformasjonen som du deretter behandler i Dynamics 365 for Finance and Operations juli 2017, er nøyaktig og oppdatert. Rekvisisjonen kan deretter godkjennes og konverteres til en bestilling, og en ordre kan plasseres hos leverandøren.
+Ved hjelp av den eksterne katalogen kan du sikre at produkt- og prisinformasjonen som du deretter behandler i Supply Chain Management, er nøyaktig og oppdatert. Rekvisisjonen kan deretter godkjennes og konverteres til en bestilling, og en ordre kan plasseres hos leverandøren.
 
 Når den eksterne katalogen er definert og en ansatt forbereder en rekvisisjon, vil det være et alternativ som omdirigerer til et eksternt område, den eksterne katalogen, og returnere handlekurven som ble opprettet på det eksterne området. Denne kommunikasjonen er basert på cXML-protokollen og den må være definert mellom systemene for i kjøper- og selgerorganisasjonen.
 

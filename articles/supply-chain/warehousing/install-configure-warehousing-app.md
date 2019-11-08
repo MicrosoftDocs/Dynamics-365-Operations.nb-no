@@ -1,6 +1,6 @@
 ---
 title: Oversikt over Installere og konfigurere lagerappen
-description: Dette emnet beskriver hvordan du installerer og konfigurerer Dynamics 365 Supply Chain Management – Warehousing-appen.
+description: Dette emnet beskriver hvordan du installerer og konfigurerer Dynamics 365 for Finance and Operations – Warehousing-appen.
 author: MarkusFogelberg
 manager: AnnBe
 ms.date: 07/25/2019
@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: mafoge
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: b8eb8dee88d8664391d2dcf485dff9dee4722cac
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: f629fffc5c424c244a25bb8faef0435814398ee1
+ms.sourcegitcommit: 4aac45c84b87f463b22b318f5f6f729f8d737090
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2251506"
+ms.lasthandoff: 10/03/2019
+ms.locfileid: "2548974"
 ---
 # <a name="install-and-configure-the-warehousing-app-overview"></a>Oversikt over Installere og konfigurere lagerappen
 
@@ -35,7 +35,7 @@ ms.locfileid: "2251506"
 > Dette emnet beskriver hvordan du konfigurerer lager for skydistribusjoner. Hvis du leter etter hvordan du konfigurerer lager for lokale distribusjoner, kan du se [Lager for lokale distribusjoner](../../dev-itpro/deployment/warehousing-for-on-premise-deployments.md).
 
 
-Dette emnet beskriver hvordan du installerer og konfigurerer Dynamics 365 Supply Chain Management – Warehousing-appen.
+Dette emnet beskriver hvordan du installerer og konfigurerer Dynamics 365 for Finance and Operations – Warehousing-appen.
 
 Warehousing-appen er tilgjengelig på Google Play-butikken og Windows Store. Denne appen tilbys for gjeldende versjon av Dynamics 365 Supply Chain Management som en frittstående komponent, som betyr selvdistribuering på enheter som brukes til lageroppgaver. For å bruke appen må du laste ned appen på hver enkelt enhet og konfigurere den til å koble til Supply Chain Management-miljøet. Dette emnet beskriver hvordan du installerer appen på enhetene. Det forklarer også hvordan du konfigurerer appen til å koble til Supply Chain Management-miljøet.
 

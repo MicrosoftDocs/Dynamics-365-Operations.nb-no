@@ -1,5 +1,5 @@
 ---
-title: Gjøre skilletegnet ' unikt
+title: Gjøre skilletegnet for kontoplan unikt
 description: Dette emnet beskriver hvordan du ikke kan ha samme skilletegn for kontoplanen og dimensjonsverdier. Du må endre skilletegnverdier etter oppgraderingen.
 author: ryansandness
 manager: AnnBe
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: 8
-ms.openlocfilehash: 2622245c7ce7213665ab32f4020c282df28cb886
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 5861bcaa42f7bc5ec20916fe1a44418bdd9c2ffe
+ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2248786"
+ms.lasthandoff: 10/03/2019
+ms.locfileid: "2550914"
 ---
 # <a name="make-the-chart-of-accounts-delimiter-unique"></a>Gjøre skilletegnet for kontoplan unikt
 

@@ -3,7 +3,7 @@ title: Funksjoner som er fjernet eller utgått for Finance and Operations
 description: Dette emnet beskriver funksjoner som er fjernet eller som er planlagt for fjerning.
 author: sericks007
 manager: AnnBe
-ms.date: 09/17/2019
+ms.date: 10/08/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 70bb8404c5b0e2422948d0b89311c384e3686710
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 4e1c5dea039ae6482bfd9e036642c23463f5bc3a
+ms.sourcegitcommit: 574309903f15eeab7911091114885b5c7279d22a
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2181088"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "2658696"
 ---
 # <a name="removed-or-deprecated-features-for-finance-and-operations"></a>Funksjoner som er fjernet eller utgått for Finance and Operations
 
@@ -38,13 +38,42 @@ Denne listen er ment å hjelpe deg med å vurdere disse fjerningene og avskrivni
 > [!NOTE]
 > Fra og med juli 2017-versjonen av Finance and Operations med Platform update 8, oppgis distribusjonstypen for hver av funksjonene som er fjernet eller avskrevet. Alle de tidligere versjonene som er nevnt i dette emnet, støttet bare skydistribusjoner.
 
-> Detaljert informasjon om objekter i Finance and Operations finnes i [Tekniske referanserapporter](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep). Du kan sammenligne de ulike versjonene av disse rapportene for å lære om objekter som er endret eller fjernet i hver versjon av Finance and Operations.
+Detaljert informasjon om objekter i Finance and Operations finnes i [Tekniske referanserapporter](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep). Du kan sammenligne de ulike versjonene av disse rapportene for å lære om objekter som er endret eller fjernet i hver versjon av Finance and Operations.
 
+## <a name="finance-1007-with-platform-update-31"></a>Finance 10.0.7 med Platform update 31
+
+### <a name="chinese-voucher-types-without-account-groups-selection"></a>Kinesiske bilagstyper uten valg av kontogrupper
+|   |  |
+|------------|--------------------|
+| **Årsak til avskrivning/fjerning** | Endret til funksjonen med kontogruppevalg. |
+| **Erstattet med en annen funksjon?**   | Ja |
+| **Berørte produktområder**         | Søknad |
+| **Distribusjonsalternativ**              | Alle |
+| **Status**                         | Avskrevet: Etter 1. desember 2020 planlegger vi å ikke lenger støtte kinesiske bilagstyper uten kontogruppevalg. Finne flere detaljer om ny funksjonsutforming i Hva er nytt i 10.0.7 |
 
 ## <a name="finance-and-operations-1006-with-platform-update-30"></a>Finance and Operations 10.0.6 med Platform update 30
 
-> [!IMPORTANT]
-> Dynamics 365 for Finance and Operations 10.0.6 med Platform update 30 er tilgjengelig for angitte brukere som en del av en forhåndsversjon. Innholdet og funksjonaliteten kan bli endret. Hvis du vil ha mer informasjon om forhåndsversjoner, kan du se [Tilgjengelighet av serviceoppdatering](../../fin-and-ops/get-started/public-preview-releases.md).
+
+### <a name="dimensionhashgethashstr-_message"></a>DimensionHash.getHash(str _message)
+
+|   |  |
+|------------|--------------------|
+| **Årsak til avskrivning/fjerning** | Windows avskriver bruken av SHA1, som dokumentert i [Windows-håndhevelse av SHA1-sertifikater](https://social.technet.microsoft.com/wiki/contents/articles/32288.windows-enforcement-of-sha1-certificates.aspx).  |
+| **Erstattet med en annen funksjon?**   | Ja |
+| **Berørte produktområder**         | Søknad |
+| **Distribusjonsalternativ**              | Alle |
+| **Status**                         | Avskrevet: Etter 1. april 2020 må utviklerne bruke den nye API-en. |
+
+### <a name="hashcomputesha1hashstring-message"></a>Hash.ComputeSHA1Hash(string message)
+
+|   |  |
+|------------|--------------------|
+| **Årsak til avskrivning/fjerning** | Windows avskriver bruken av SHA1, som dokumentert i [Windows-håndhevelse av SHA1-sertifikater](https://social.technet.microsoft.com/wiki/contents/articles/32288.windows-enforcement-of-sha1-certificates.aspx).  |
+| **Erstattet med en annen funksjon?**   | Ja |
+| **Berørte produktområder**         | Plattform |
+| **Distribusjonsalternativ**              | Alle |
+| **Status**                         | Avskrevet: Etter 1. april 2020 må utviklerne bruke den nye API-en. |
+
 
 ### <a name="formdatetimecontrolsetutcstring"></a>FormDateTimeControl.setUtcString()
 
@@ -308,7 +337,7 @@ Ingen funksjoner er fjernet eller avskrevet med denne versjonen. Plattformoppdat
 ## <a name="finance-and-operations-enterprise-edition-73-with-platform-update-12"></a>Finance and Operations, Enterprise Edition 7.3 med Platform update 12
 
 ### <a name="personalized-product-recommendations"></a>Personlige produktanbefalinger 
-Fra 15. februar 2018 vil forhandlere ikke lenger kunne vise personlige produktanbefalinger på en salgsstedsenhet. Hvis du vil ha mer informasjon, kan du se [Personlige produktanbefalinger](../../retail/personalized-product-recommendations.md).  
+Fra 15. februar 2018 vil forhandlere ikke lenger kunne vise personlige produktanbefalinger på en salgsstedsenhet. Hvis du vil ha mer informasjon, kan du se [Oversikt over produktanbefalinger](../../../commerce/product-recommendations.md).  
 
 |   |  |
 |------------|--------------------|
@@ -413,7 +442,7 @@ Brukere kan laste ned dette fra den offentlige portalen.
 ## <a name="dynamics-365-for-retail-72"></a>Dynamics 365 for Retail 7.2
 
 ### <a name="personalized-product-recommendations"></a>Personlige produktanbefalinger 
-Fra 15. februar 2018 vil forhandlere ikke lenger kunne vise personlige produktanbefalinger på en salgsstedsenhet. Hvis du vil ha mer informasjon, kan du se [Personlige produktanbefalinger](../../retail/personalized-product-recommendations.md).  
+Fra 15. februar 2018 vil forhandlere ikke lenger kunne vise personlige produktanbefalinger på en salgsstedsenhet. Hvis du vil ha mer informasjon, kan du se [Oversikt over produktanbefalinger](../../../commerce/product-recommendations.md).  
 
 |   |  |
 |------------|--------------------|
@@ -445,7 +474,7 @@ Portal for lagermobilenheter (WMDP) var en frittstående komponent som var bereg
 |   |  |
 |------------|--------------------|
 | **Årsak til avskrivning/fjerning** | Duplikat funksjonalitet.       |
-| **Erstattet med en annen funksjon?**   | Ja. Denne funksjonen er erstattet med Finance and Operations - Warehousing. Hvis du vil ha mer informasjon om oppsett og forutsetninger, kan du se [Installere og konfigurere Microsoft Dynamics 365 for Finance and Operations - lager](../../supply-chain/warehousing/install-configure-warehousing-app.md). |
+| **Erstattet med en annen funksjon?**   | Ja. Denne funksjonen er erstattet med Finance and Operations - Warehousing. Hvis du vil ha mer informasjon om oppsett og forutsetninger, kan du se [Installere og konfigurere Microsoft Dynamics 365 for Finance and Operations - lager](../../../supply-chain/warehousing/install-configure-warehousing-app.md). |
 | **Berørte produktområder**         | Lagerstyring, transportstyring     |
 | **Distribusjonsalternativ**              | Portal for lagermobilenheter (WMDP) var en frittstående komponent som var beregnet for selvdrevet lokal distribusjon.               |
 | **Status**                         | Avskrevet: Måltidsrammen for funksjonaliteten som skal fjernes, er 4. kvartal 2019.   |
@@ -1215,7 +1244,7 @@ Produktkonfigurator ble brukt til å konfigurere varer dynamisk fra en salgsordr
 |   |  |
 |------------|--------------------|
 | **Årsak til avskrivning/fjerning** | Produktkonfigurator viste X ++-kode til sluttbrukere og støttes ikke i den gjeldende versjonen av Dynamics AX. Den er fjernet for å unngå dupliserte vedlikeholdsforsøk på overlappende, skalerbare kodebaser.  |
-| **Erstattet med en annen funksjon?**   | Ja. Restriksjonsbasert konfigurasjon ble innført i Dynamics AX 2012, der avskrivningen av Produktkonfigurator i fremtidige versjoner allerede var annonsert. Restriksjonsbasert konfigurasjonsteknologi er valgt i produktstandardene for å muliggjøre konfigurasjonen. Hvis du vil ha mer informasjon, kan du se [Bygge en produktkonfigurasjonsmodell](../../supply-chain/pim/build-product-configuration-model.md). |
+| **Erstattet med en annen funksjon?**   | Ja. Restriksjonsbasert konfigurasjon ble innført i Dynamics AX 2012, der avskrivningen av Produktkonfigurator i fremtidige versjoner allerede var annonsert. Restriksjonsbasert konfigurasjonsteknologi er valgt i produktstandardene for å muliggjøre konfigurasjonen. Hvis du vil ha mer informasjon, kan du se [Bygge en produktkonfigurasjonsmodell](../../../supply-chain/pim/build-product-configuration-model.md). |
 | **Berørte produktområder**         | Behandling av produktinformasjon, salg og markedsføring  |
 | **Status**                         | Fjernet fra og med Dynamics AX 7.0.      |
 

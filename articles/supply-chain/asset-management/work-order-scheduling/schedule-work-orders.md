@@ -18,20 +18,22 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: b6fad4d57b8e08c839ac0ffac2324c02304335ef
-ms.sourcegitcommit: f93ead945afe5ae18706c66bce6e64a6b57aac50
+ms.openlocfilehash: 953c4bb17329205c5d8d14b6570a6bac152e9320
+ms.sourcegitcommit: fb66731f05207094149a6bc7b8549a4dabbb071a
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/19/2019
-ms.locfileid: "1887234"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "2652155"
 ---
 # <a name="schedule-work-orders"></a>Planlegg arbeidsordrer
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
-Dette emnet forklarer hvordan du planlegger arbeidsordrer i Aktivastyring. Det nødvendige antallet timer for en arbeidsordre defineres av summen av prognosetimer for arbeidsordrejobbene minus posterte timer. Hvis det kreves mer tid, må prognosen for arbeidsordren justeres tilsvarende. I **Aktivastyring** > **Felles** > **Arbeidsordrer** > **Alle arbeidsordrer** eller **Aktive arbeidsordrer** kan du vise eller redigere prognoser i en arbeidsordre ved å velge arbeidsordren og klikke på **Prognose** i kategorien **Arbeidsordre**. Når arbeidsordrer er opprettet og estimert, er neste trinn å tildele nødvendige vedlikeholdspersoner og verktøy for å fullføre arbeidsordrene.
+Dette emnet forklarer hvordan du planlegger arbeidsordrer i Aktivastyring. 
+
+Det nødvendige antallet timer for en arbeidsordre defineres av summen av prognosetimer minus posterte timer. Hvis det kreves mer tid, må prognosen justeres tilsvarende. I **Aktivastyring** > **Felles** > **Arbeidsordrer** > **Alle arbeidsordrer** eller **Aktive arbeidsordrer** kan du vise eller redigere prognoser i en arbeidsordre ved å velge arbeidsordren og klikke på **Prognose** i kategorien **Arbeidsordre**. Når arbeidsordrer er opprettet og estimert, er neste trinn å tildele nødvendige vedlikeholdspersoner og verktøy.
 
 Bare arbeidsordrer med en arbeidsordrelivssyklustilstand som tillater planlegging, kan planlegges. Tillat planlegging defineres i **Aktivastyring** > **Oppsett** > **Arbeidsordrer** > **Livssyklustilstander** > **Generelt**-hurtigfanen > **Tillat planlegging**-veksleknappen.
 
@@ -43,8 +45,8 @@ Bare arbeidsordrer med en arbeidsordrelivssyklustilstand som tillater planleggin
 
 4. I dialogboksen **Planlegg arbeidsordrer** kan du legge til valg som gjelder forventet startdato og servicenivå, om nødvendig. Hvis planleggingsprosessen skal observere kapasitetsbegrensninger for ressurser som allerede er planlagt for andre jobber, må du kontrollere at veksleknappene for **Aktivum**, **Verktøy** og **Arbeider** er satt til Ja.
 
->[!NOTE]
->Hvis du setter veksleknappene for **Aktivum**, **Verktøy** og **Arbeider** til Nei, vil eksisterende reservasjoner bli ignorert. I infologgen vises en liste over overlappende arbeidsordreplaner, og du kan klikke på meldingene for å åpne en arbeidsordre og planlegge på nytt om nødvendig.
+    [!NOTE]
+    Hvis du setter veksleknappene for **Aktivum**, **Verktøy** og **Arbeider** til Nei, vil eksisterende reservasjoner bli ignorert. I infologgen vises en liste over overlappende arbeidsordreplaner, og du kan klikke på meldingene for å åpne en arbeidsordre og planlegge på nytt om nødvendig.
 
 5. Hvis du vil ha detaljert informasjon om planleggingsprosessen, velger du Ja på **Detaljert**-veksleknappen. Dette betyr at detaljert informasjon om de beregnede resultatene for arbeidsordrene og vedlikeholdspersonene vil vises i informasjonsloggen.
 
@@ -110,9 +112,11 @@ Vurderingsresultatene relatert til beregning av hvilke vedlikeholdsarbeidere som
 | Arbeiderens startdato               | For hver dato som den planlagte startdatoen er senere enn forventet startdato, trekkes poengsummen fra.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
 
 >[!NOTE]
->Hvis en poengsum settes til 0, beregnes ikke denne poengsummen. Dette er nyttig hvis du for eksempel ikke vil ta med ansvarlig arbeider i planleggingen.
+>Hvis en poengsum settes til 0, beregnes ikke denne poengsummen. Dette er nyttig hvis du for eksempel ikke vil ta med en ansvarlig arbeider i planleggingen.
 
 ## <a name="competencies-used-in-work-order-scheduling"></a>Kompetanser som brukes i arbeidsordreplanlegging
 
-Krav til kompetanse og sertifikater kan defineres i vedlikeholdsjobbtyper (**Aktivastyring** > **Oppsett** > **Jobber** > **Vedlikeholdsjobbtyper**) og vedlikeholdsjobbfag (**Aktivastyring** > **Oppsett** > **Jobber** > **Vedlikeholdsjobbfag**). Vedlikeholdsjobbtyper og vedlikeholdsjobbfag velges i arbeidsordrejobber. Hvis kompetanse eller sertifikater er valgt for en vedlikeholdsjobbtype eller et vedlikeholdsjobbfag, og vedlikeholdsjobbtypen eller vedlikeholdsjobbfaget brukes på en arbeidsordrejobb, er det bare vedlikeholdsarbeidere med samsvarende ferdigheter og sertifikater som tilordnes til å jobbe på arbeidsordren.
+Krav til kompetanse og sertifikater kan defineres i vedlikeholdsjobbtyper (**Aktivastyring** > **Oppsett** > **Jobber** > **Vedlikeholdsjobbtyper**) og vedlikeholdsjobbfag (**Aktivastyring** > **Oppsett** > **Jobber** > **Vedlikeholdsjobbfag**). 
+
+Vedlikeholdsjobbtyper og vedlikeholdsjobbfag velges i arbeidsordrejobber. Hvis kompetanse eller sertifikater er valgt for en vedlikeholdsjobbtype eller et vedlikeholdsjobbfag, og vedlikeholdsjobbtypen eller vedlikeholdsjobbfaget brukes på en arbeidsordrejobb, er det bare vedlikeholdsarbeidere med samsvarende ferdigheter og sertifikater som tilordnes til å jobbe på arbeidsordren.
 

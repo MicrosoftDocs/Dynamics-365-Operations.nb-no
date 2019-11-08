@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-08-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 8d9c8afc139c96e32efb3161d35fde685b8abcc5
-ms.sourcegitcommit: 802dbf0a744d70f9e546632d419415b0993331ab
+ms.openlocfilehash: 89e13179e17b7cf075d631bc65d82da5f24da624
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "1874676"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2569852"
 ---
 # <a name="scheduled-execution"></a>Planlagt utførelse
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 Du kan bruke servicenivåer for arbeidsordrer til å definere planlagt utførelse. (Hvis du vil ha mer informasjon om servicenivåer for arbeidsordrer, se [Servicenivå og -beskrivelse](service-level-and-description.md).) Planlagt utførelse gir fleksibilitet i arbeidsplanlegging for vedlikeholdsarbeidere fordi du kan definere mer detaljerte eller mindre detaljerte krav for intervallet som en arbeidsordre skal fullføres i. For eksempel kan en vedlikeholdsarbeider som fullfører en jobb raskere enn forventet i et produksjonslokale, kunne gå videre til en annen jobb i nærheten som var planlagt for gjeldende uke, men ikke nødvendigvis for gjeldende dag. Denne metoden gjør det mulig å optimalisere arbeiderplanlegging og jobbfullførelse.
 
@@ -42,4 +42,4 @@ Oppsett av planlagt utførelse, som er knyttet til arbeidsordrer, kan være gene
 5. Velg tidsintervall i **Planlagt utførelse**-feltet.
 6. Velg **Lagre**.
 
-![Figur 1](media/20-setup-for-work-orders.png)
+![Planlagt utførelse](media/20-setup-for-work-orders.png)

@@ -3,7 +3,7 @@ title: Oversikt over kvalitetsstyring
 description: Dette emnet beskriver hvordan du kan bruke kvalitetsstyring i Dynamics 365 Supply Chain Management for å forbedre produktkvalitet i forsyningskjeden.
 author: perlynne
 manager: AnnBe
-ms.date: 11/02/2017
+ms.date: 10/15/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c9600e165da76948bb53a0188ec0b212a0fed84a
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: ba38f9c43fed81768155a27dda88a4bfb4a7828e
+ms.sourcegitcommit: 0099fb24f5f40ff442020b488ef4171836c35c48
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2249592"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "2653562"
 ---
 # <a name="quality-management-overview"></a>Oversikt over kvalitetsstyring
 
@@ -32,7 +32,7 @@ ms.locfileid: "2249592"
 
 Dette emnet beskriver hvordan du kan bruke kvalitetsstyring i Dynamics 365 Supply Chain Management for å forbedre produktkvalitet i forsyningskjeden.
 
-Kvalitetsstyring kan hjelpe deg med å administrere behandlingstiden når du håndterer produkter med avvik, uavhengig av opprinnelsespunktet. Fordi diagnosetyper er knyttet til rettelsesrapportering, kan Finance and Operations planlegge oppgaver for å rette opp problemer og hindre at de skjer igjen.
+Kvalitetsstyring kan hjelpe deg med å administrere behandlingstiden når du håndterer produkter med avvik, uavhengig av opprinnelsespunktet. Fordi diagnosetyper er knyttet til rettelsesrapportering, kan Supply Chain Management planlegge oppgaver for å rette opp problemer og hindre at de skjer igjen.
 
 I tillegg til funksjonalitet for håndtering av avvik inneholder kvalitetsstyring funksjonalitet for å spore problemer etter problemtype (selv interne problemer) og identifisere løsninger som kortsiktige eller langsiktige. Statistikk om nøkkelytelsesindikator (KPI-er) gir innsikt i loggen for tidligere avviksproblemer og løsninger som ble brukt til å rette feilene. Du kan bruke historiske data for å undersøke effektiviteten til tidligere kvalitetsmål og bestemme nødvendige tiltak som skal brukes i fremtiden.
 
@@ -290,6 +290,256 @@ Tabellen nedenfor inneholder mer informasjon om hvordan kvalitetsordrer kan gene
 <td></td>
 <td></td>
 <td>En kvalitetsordre må opprettes manuelt for en vares lagerantall. Varens fysiske lagerbeholdning kreves.</td>
+</tr>
+</tbody>
+</table>
+
+## <a name="quality-order-auto-generation-examples"></a>Eksempler på automatisk generering av kvalitetsordre
+
+### <a name="purchasing"></a>Innkjøp
+
+I innkjøp, hvis du du angir feltet **Hendelsestype** til **Produktkvittering** og feltet **Utførelse** til **Etter** på siden **Kvalitetstilknytninger**, får du følgende resultater: 
+
+- Hvis alternativet **Per oppdatert mengde** er satt til **Ja**, genereres det en kvalitetsordre for hvert mottak mot bestillingen basert på det mottatte antallet og innstillingene i vareprøven. Hver gang et antall mottas mot bestillingen, genereres nye kvalitetsordrer basert på det nylig mottatte antallet.
+- Hvis alternativet **Per oppdatert mengde** er satt til **Nei**, genereres det en kvalitetsordre for det første mottaket mot bestillingen basert på det mottatte antallet. I tillegg blir én eller flere kvalitetsordrer opprettet på grunnlag av restantallet, avhengig av sporingsdimensjonene. Kvalitetsordrer genereres ikke for etterfølgende mottak mot bestillingen.
+
+<table>
+<tbody>
+<tr>
+<th>Kvalitetsspesifikasjon</th>
+<th>Per oppdatert mengde</th>
+<th>Per sporingsdimensjon</th>
+<th>Resultat</th>
+</tr>
+<tr>
+<td>Prosent: 10 %</td>
+<td>Ja</td>
+<td>
+<p>Partinummer: Nei</p>
+<p>Serienummer: Nei</p>
+</td>
+<td>
+<p>Ordreantall: 100</p>
+<ol>
+<li>Rapporter som ferdig for 30
+<ul>
+<li>Kvalitetsordre #1 for 3 (10 % av 30)</li>
+</ul>
+</li>
+<li>Rapporter som ferdig for 70
+<ul>
+<li>Kvalitetsordre #2 for 7 (10 % av restordreantallet, som er lik 70 i dette tilfellet)</li>
+</ul>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>Fast antall: 1</td>
+<td>Nei</td>
+<td>
+<p>Partinummer: Nei</p>
+<p>Serienummer: Nei</p>
+</td>
+<td>Ordreantall: 100
+<ol>
+<li>Rapporter som ferdig for 30
+<ul>
+<li>Kvalitetsordre #1 opprettes for 1 (for det første ferdigmeldte antallet, som har en fast verdi på 1).</li>
+<li>Det opprettes ingen flere kvalitetsordrer mot restantallet.</li>
+</ul>
+</li>
+<li>Rapporter som ferdig for 10
+<ul>
+<li>Ingen kvalitetsordrer er opprettet.</li>
+</ul>
+</li>
+<li>Rapporter som ferdig for 60
+<ul>
+<li>Ingen kvalitetsordrer er opprettet.</li>
+</ul>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>Fast antall: 1</td>
+<td>Ja</td>
+<td>
+<p>Partinummer: Ja</p>
+<p>Serienummer: Ja</p>
+</td>
+<td>
+<p>Ordreantall: 10</p>
+<ol>
+<li>Rapporter som ferdig for 3
+<ul>
+<li>Kvalitetsordre #1 for 1 av parti #b1, serie #s1</li>
+<li>Kvalitetsordre #2 for 1 av parti #b2, serie #s2</li>
+<li>Kvalitetsordre #3 for 1 av parti #b3, serie #s3</li>
+</ul>
+</li>
+<li>Rapporter som ferdig for 2
+<ul>
+<li>Kvalitetsordre #4 for 1 av parti #b4, serie #s4</li>
+<li>Kvalitetsordre #5 for 1 av parti #b5, serie #s5</li>
+</ul>
+</li>
+</ol>
+<p><strong>Merk:</strong> Partiet kan brukes på nytt.</p>
+</td>
+</tr>
+<tr>
+<td>Fast antall: 2</td>
+<td>Nei</td>
+<td>
+<p>Partinummer: Ja</p>
+<p>Serienummer: Ja</p>
+</td>
+<td>
+<p>Ordreantall: 10</p>
+<ol>
+<li>Rapporter som ferdig for 4
+<ul>
+<li>Kvalitetsordre #1 for 1 av parti #b1, serie #s1.</li>
+<li>Kvalitetsordre #2 for 1 av parti #b2, serie #s2.</li>
+<li>Kvalitetsordre #3 for 1 av parti #b3, serie #s3.</li>
+<li>Kvalitetsordre #4 for 1 av parti #b4, serie #s4.</li>
+<li>Det opprettes ingen flere kvalitetsordrer mot restantallet.</li>
+</ul>
+</li>
+<li>Rapporter som ferdig for 6
+<ul>
+<li>Ingen kvalitetsordrer er opprettet.</li>
+</ul>
+</li>
+</ol>
+</td>
+</tr>
+</tbody>
+</table>
+
+### <a name="production"></a>Produksjon
+
+I produksjon, hvis du du angir feltet **Hendelsestype** til **Ferdigmeld** og feltet **Utførelse** til **Etter** på siden **Kvalitetstilknytninger**, får du følgende resultater:
+
+- Hvis alternativet **Per oppdatert mengde** er satt til **Ja**, genereres det en kvalitetsordre for hver fullførte antall og innstillingene i vareprøven. Hver gang et antall rapporteres som fullført mot produksjonsordren, genereres nye kvalitetsordrer basert på det nylig fullførte antallet. Denne genereringslogikken er konsekvent med innkjøp.
+- Hvis alternativet **Per oppdatert mengde** er satt til **Nei**, genereres det en kvalitetsordre første gang antallet rapporteres som fullført, basert på det fullførte antallet. I tillegg blir én eller flere kvalitetsordrer opprettet på grunnlag av restantallet, avhengig av sporingsdimensjonene for vareprøven. Kvalitetsordrer genereres ikke for etterfølgende ferdigmeldte antall.
+
+<table>
+<tbody>
+<tr>
+<th>Kvalitetsspesifikasjon</th>
+<th>Per oppdatert mengde</th>
+<th>Per sporingsdimensjon</th>
+<th>Resultat</th>
+</tr>
+<tr>
+<td>Prosent: 10 %</td>
+<td>Ja</td>
+<td>
+<p>Partinummer: Nei</p>
+<p>Serienummer: Nei</p>
+</td>
+<td>
+<p>Ordreantall: 100</p>
+<ol>
+<li>Rapporter som ferdig for 30
+<ul>
+<li>Kvalitetsordre #1 for 3 (10 % av 30)</li>
+</ul>
+</li>
+<li>Rapporter som ferdig for 70
+<ul>
+<li>Kvalitetsordre #2 for 7 (10 % av restordreantallet, som er lik 70 i dette tilfellet)</li>
+</ul>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>Fast antall: 1</td>
+<td>Nei</td>
+<td>
+<p>Partinummer: Nei</p>
+<p>Serienummer: Nei</p>
+</td>
+<td>Ordreantall: 100
+<ol>
+<li>Rapporter som ferdig for 30
+<ul>
+<li>Kvalitetsordre #1 for 1 (for det første ferdigmeldte antallet, som har en fast verdi på 1)</li>
+<li>Kvalitetsordre #2 for 1 (for det resterende antallet, som fremdeles har en fast verdi på 1)</li>
+</ul>
+</li>
+<li>Rapporter som ferdig for 10
+<ul>
+<li>Ingen kvalitetsordrer er opprettet.</li>
+</ul>
+</li>
+<li>Rapporter som ferdig for 60
+<ul>
+<li>Ingen kvalitetsordrer er opprettet.</li>
+</ul>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>Fast antall: 1</td>
+<td>Ja</td>
+<td>
+<p>Partinummer: Ja</p>
+<p>Serienummer: Ja</p>
+</td>
+<td>
+<p>Ordreantall: 10</p>
+<ol>
+<li>Rapporter som ferdig for 3: 1 for #b1, #s1; 1 for #b2, #s2; og 1 for #b3, #s3
+<ul>
+<li>Kvalitetsordre #1 for 1 av parti #b1, serie #s1</li>
+<li>Kvalitetsordre #2 for 1 av parti #b2, serie #s2</li>
+<li>Kvalitetsordre #3 for 1 av parti #b3, serie #s3</li>
+</ul>
+</li>
+<li>Rapporter som ferdig for 2: 1 for #b4, #s4; og 1 for #b5, #s5
+<ul>
+<li>Kvalitetsordre #4 for 1 av parti #b4, serie #s4</li>
+<li>Kvalitetsordre #5 for 1 av parti #b5, serie #s5</li>
+</ul>
+</li>
+</ol>
+<p><strong>Merk:</strong> Partiet kan brukes på nytt.</p>
+</td>
+</tr>
+<tr>
+<td>Fast antall: 2</td>
+<td>Nei</td>
+<td>
+<p>Partinummer: Ja</p>
+<p>Serienummer: Ja</p>
+</td>
+<td>
+<p>Ordreantall: 10</p>
+<ol>
+<li>Rapporter som ferdig for 4: 1 for #b1, #s1; 1 for #b2, #s2; 1 for #b3, #s3; og 1 for #b4, #s4
+<ul>
+<li>Kvalitetsordre #1 for 1 av parti #b1, serie #s1</li>
+<li>Kvalitetsordre #2 for 1 av parti #b2, serie #s2</li>
+<li>Kvalitetsordre #3 for 1 av parti #b3, serie #s3</li>
+<li>Kvalitetsordre #4 for 1 av parti #b4, serie #s4</li>
+</ul>
+<ul>
+<li>Kvalitetsordre #5 for 2, uten referanse til et parti og et serienummer</li>
+</ul>
+</li>
+<li>Rapporter som ferdig for 6: 1 for #b5, #s5; 1 for #b6, #s6; 1 for #b7, #s7; 1 for #b8, #s8; 1 for #b9, #s9; og 1 for #b10, #s10
+<ul>
+<li>Ingen kvalitetsordrer er opprettet.</li>
+</ul>
+</li>
+</ol>
+</td>
 </tr>
 </tbody>
 </table>

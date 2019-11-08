@@ -3,7 +3,7 @@ title: Lagrede visninger
 description: Dette emnet beskriver hvordan du bruker lagrede visninger-funksjonene.
 author: jasongre
 manager: AnnBe
-ms.date: 08/01/2019
+ms.date: 10/16/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2019-07-31
 ms.dyn365.ops.version: Platform update 28
-ms.openlocfilehash: 4b1bd7b869b68f82ce8056ac9f87a0d3bdce4102
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 2f76c4e50649d3eda951940a2186348c29474dc6
+ms.sourcegitcommit: 574309903f15eeab7911091114885b5c7279d22a
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2190885"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "2658673"
 ---
 # <a name="saved-views"></a>Lagrede visninger
 
@@ -37,9 +37,11 @@ Med tradisjonell tilpasning kan brukere bare ha ett sett av personlige tilpasnin
 
 -    Visninger som opprettes for bestemte sidetyper, kan også inneholde brukertillagte filtre eller sorteringer, som gjør at brukere raskt kan gå tilbake til vanlige datasett. Se delen [Hvilke sider som støtter visninger](saved-views.md#what-pages-support-views) for mer informasjon. 
 
--    Visninger kan publiseres til sikkerhetsroller, noe som betyr at alle brukere med denne rollen vil kunne få tilgang til og bruke denne visningen, uavhengig av brukerens mulighet til å tilpasse. Ved hjelp av denne publiseringsfunksjonen kan organisasjoner definere standardvisninger som er optimalisert for deres virksomhet. Se delen [Administrere tilpasninger på organisasjonsnivå med visninger](saved-views.md#managing-personalizations-at-an-organizational-level-with-views) for mer informasjon.
+-    Visninger kan publiseres til brukere i bestemte sikkerhetsroller og bestemte juridiske enheter. Derfor kan alle brukere som har en bestemt rolle i en bestemt juridisk enhet, få tilgang til og bruke denne visningen, selv om brukeren kanskje ikke kan tilpasse den. Ved hjelp av denne publiseringsfunksjonen kan organisasjoner definere standardvisninger som er optimalisert for deres virksomhet. Se delen [Administrere tilpasninger på organisasjonsnivå med visninger](saved-views.md#managing-personalizations-at-an-organizational-level-with-views) for mer informasjon.
 
 -    I motsetning til tradisjonell tilpasning lagres ikke visninger automatisk når en bruker utfører eksplisitte tilpasninger eller filtrerer en liste. Eksplisitte lagre er nødvendig for å gi fleksibilitet ved oppretting av en visning før eller etter at endringene som er knyttet til denne visningen, er gjort, og for å sikre at visningsdefinisjoner ikke endres utilsiktet av filtre eller personlige tilpasninger som ikke er ment for langsiktig bruk.  
+
+-    Visninger kan legges til arbeidsområder som fliser, lister eller koblinger. Derfor kan et filtrert datasett vises i et arbeidsområde, og brukere kan knytte sammen et sett med tilpasninger som er relevante for dette datasettet med flisen eller koblingen.
 
 ## <a name="switching-between-views"></a>Bytte mellom visninger
 Når visninger har blitt aktivert for et miljø, vil alle sider som støtter visninger, ha en skjult visningsvelgerkontroll øverst på skjemaet som viser navnet på gjeldende visning.  
@@ -52,9 +54,9 @@ Visningsvelgeren har to størrelsesvariasjoner:
  
 Hvis du klikker på visningsnavnet, åpnes visningsvelgeren og viser listen over tilgjengelige visninger for denne siden.
 
--    **Klassisk visning**: Den klassiske visningen er standardvisningen av siden, uten eksplisitte tilpasninger.  
+-    **Standardvisning**: **Standard**-visningen (tidligere kjent som **klassisk** visning) er den medfølgende siden, der ingen eksplisitte tilpasninger brukes.
 -    **Personlige visninger**: Visningene uten hengelås representerer dine personlige visninger. Dette er visninger som enten du har opprettet, eller som en administrator har gitt deg.  
--    **Låste visninger**: Noen visninger (for eksempel Klassisk visning og visninger som er publisert til din rolle) har en hengelås ved siden av i visningsvelgeren, som angir at du ikke kan redigere disse visningene. Implisitte tilpasninger som gjenspeiler sidebruk, lagres imidlertid automatisk, for eksempel det å endre bredden på en rutenettkolonne eller vise eller skjule en hurtigfane. Du kan imidlertid opprette en personlig visning basert på en låst visning ved hjelp av handlingen **Lagre en kopi** hvis du har rettigheter til personalisering.
+-    **Låste visninger**: Noen visninger (for eksempel **Standard**-visningen og alle visninger som publiseres til din rolle) har et hengelåssymbol ved siden av seg i visningsvelgeren. Dette symbolet angir at du ikke kan redigere disse visningene. Implisitte tilpasninger som gjenspeiler sidebruk, lagres imidlertid automatisk. Disse implisitte tilpasningene omfatter en endring i bredden til en rutenettkolonne eller utvidelse eller skjuling av en hurtigfane. Du kan imidlertid opprette en personlig visning basert på en låst visning ved hjelp av handlingen **Lagre som** hvis du har rettigheter til personalisering.
 -    **Nye visninger**: Publiserte visninger som ennå ikke er åpnet, er merket med en gnist til venstre for visningsnavnet.  
 
 Hvis du vil bytte til en annen visning, åpner du først visningsvelgeren og velger deretter visningen du vil laste inn. 
@@ -69,7 +71,7 @@ Hvis du vil lagre disse endringene, følger du disse trinnene.
 2.  Slik endrer du den eksisterende visningen:
      1. Velg **Lagre**. Merk at denne handlingen ikke vil bli aktivert for låste visninger. 
 3.  Slik oppretter du en ny visning:
-     1.    Velg **Lagre en kopi**. 
+     1.    Velg **Lagre som**. 
      2.    Skriv inn et visningsnavn og (eventuelt) en beskrivelse.
      3.    Velg **Lagre**.
 
@@ -81,7 +83,7 @@ Følg disse trinnene for å endre standardvisningen for en side:
 2.  Velg visningsnavnet for å åpne visningsvelgeren. 
 3.  Velg **Merk** og deretter **Bruk som standard**.  
 
-Når du oppretter en ny visning (ved hjelp av **Lagre som kopi**-handling), kan du gjøre denne nye visningen til standardvisning ved å velge **Bruk som standard**-valget før du lagrer visningen.  
+Når du oppretter en ny visning (ved hjelp av **Lagre som**-handling), kan du gjøre denne nye visningen til standardvisning ved å velge **Bruk som standard**-valget før du lagrer visningen.
 
 Vær oppmerksom på at i noen tilfeller vil spørringen som er knyttet til standardvisningen, ikke utføres første gang du navigerer til en side. Hvis du for eksempel navigerer via en flis til en side, blir flisens spørring utført uansett hvilken spørring som er knyttet til standardvisningen. Hvis du navigerer til en side der Klassisk visning allerede har en definert spørring, vil den opprinnelige spørringen utføres opprinnelig i stedet for standardvisningens spørring. Når dette skjer, vil du bli varslet av en informasjonsmelding når visningen lastes inn. Bytting av visninger etter at siden er lastet inn, skal gjøre at visningsspørringen kjøres som forventet.
 
@@ -97,24 +99,27 @@ Hvis du vil ha en liste over tilgjengelige visninger for denne siden, er følgen
 Endringer som gjøres i denne dialogboksen, vil tre i kraft når du har valgt **Lagre**-knappen.
 
 ## <a name="managing-personalizations-at-an-organizational-level-with-views"></a>Administrere personlige tilpasninger på et organisasjonsnivå med visninger
-For å forstå forbedringene ved å administrere personlige tilpasninger på et organisasjonsnivå, må du først se hvordan behandling av personlige tilpasninger fungerte før visninger.  
+For å hjelpe deg med å forstå hvordan lagrede visninger bidrar til å forbedre administrasjonen av personlige tilpasninger på et organisasjonsnivå, beskriver dette avsnittet hvordan administrasjon av personlige data fungerte før visninger var tilgjengelige.
 
 Uten visninger vil administratorer bruke et sett med personlige tilpasninger på en side for en bruker eller en gruppe av brukere via personaliseringssiden. Hvis disse brukerne hadde tilpasningsrettigheter, ville de personlige tilpasningene gjelde for den siden. Det var imidlertid ikke mulig å hindre brukere i å tilpasse siden ytterligere, som betød at organisasjonen ikke kan sikre at brukerne har et konsekvent brukergrensesnitt. Hvis noen av disse brukerne ikke hadde tilpasningsrettigheter, ble ikke tilpasningene som ble gitt til dem av en administrator, lastet inn. Hvis nye brukere ble ansatt i en organisasjon, måtte administratorer manuelt laste inn et sett med personlige tilpasninger for brukeren. Det var ingen automatisk mekanisme for å angi at et bestemt sett med personlige tilpasninger skal være tilgjengelig for brukere i denne rollen.
 
-Med funksjonen for lagrede visninger er organisasjonens administrasjon av tilpasninger betydelig enklere, primært på grunn av muligheten for å publisere visninger til sikkerhetsroller. Når en visning er publisert, kan en hvilken som helst bruker med denne rollen få tilgang til og bruke visningen, uavhengig av brukerens mulighet til å tilpasse. Hver bruker har en kopi av den publiserte visningen der sidebruk (implisitte tilpasninger) brukes automatisk, og ingen brukere kan lagre eksplisitte personlige tilpasninger eller oppdateringer i spørringen i den publiserte visningen (det vil si at publiserte visninger er låst). Hvis nye brukere får en rolle som visningen ble publisert til, vil de automatisk se visningene som er tilknyttet rollene sine, uten handling fra administratoren. På samme måte, hvis en bruker endrer roller i en organisasjon, vil ikke visningene som er tilknyttet den gamle rollen, lenger være tilgjengelige for dem, også denne gangen uten noen handling fra administratoren. Oppdateringer til en publisert visning kan lett distribueres til brukere ved å publisere visningen på nytt til de riktige sikkerhetsrollene.
+Med funksjonen for lagrede visninger er organisasjonens administrasjon av tilpasninger betydelig enklere, primært fordi visninger kan publiseres til grupper av brukere. Når en visning er publisert, vil alle brukere som har en av de definerte sikkerhetsrollene, og som er i de angitte juridiske enhetene, ha tilgang til og kunne bruke visningen, selv om den brukeren kanskje ikke kan tilpasse den. Selv om hver bruker har en kopi av den publiserte visningen der sidebruk (implisitte tilpasninger) brukes automatisk, kan ingen brukere lagre eksplisitte personlige tilpasninger eller spørringsoppdateringer til en publisert visning. (Med andre ord låses publiserte visninger.) Hvis nye brukere får roller i juridiske enheter som visninger er publisert til, vil de automatisk se visningene som er knyttet til rollene og juridiske enheter. Ingen tilleggshandling kreves av administratoren. Hvis brukere endrer roller i en organisasjon eller får tilgang til ulike juridiske enheter, kan det hende at de ikke lenger får tilgang til visningene som tidligere ble publisert til dem. Her kreves det heller ingen tilleggshandling av administratoren.
+
+Oppdateringer til en publisert visning kan lett distribueres til brukere ved å publisere visningen på nytt til de riktige sikkerhetsrollene og juridiske enhetene.
 
 Publiseringsfunksjonen gjør det mulig for organisasjoner å definere standardvisninger som er optimalisert for deres virksomhet, som er målrettet til brukere i spesifikke sikkerhetsroller.  
 
 ## <a name="publishing-views"></a>Publiseringsvisninger
-Under publiseringsprosessen kan visninger tilordnes én eller flere sikkerhetsroller, noe som betyr at en hvilken som helst bruker med denne rollen vil ha tilgang til og bruke denne visningen, men de kan ikke redigere visningen. Det er for øyeblikket bare systemansvarlige som har rettigheter til **Publiser**-handlingen i rullegardinmenyen Vis velger, men en ny sikkerhetsrolle vil være tilgjengelig i en fremtidig oppdatering for å gi publiseringsrettigheter til andre klarerte brukere.  
+Under publiseringsprosessen kan visninger tilordnes til én eller flere sikkerhetsroller for én eller flere juridiske enheter. Derfor har alle brukere som har tilgang til en juridisk enhet, og som er tilordnet til én av disse rollene, tilgang til og kan bruke visningene, selv om de ikke kan redigere dem. Systemadministratorer har rettigheter til **Publiser**-handlingen i rullegardinmenyen for visningsvalg. Andre klarerte brukere i organisasjonen kan imidlertid også få tilgang til å vise publiseringen via den nye administratorrollen **Lagrede visninger**.
 
 Hvis du vil publisere en visning, gjør du følgende: 
 1.  Opprett og lagre en personlig kopi av visningen du vil publisere. 
 2.  Når den aktuelle visningen er lastet, velger du visningsnavnet for å åpne rullegardinmenyen for visningsvalg. 
 3.  Velg **Mer**-knappen, og velg deretter **Publiser**. Dialogboksen Publiser åpnes.  
-4.  Oppgi et navn og (eventuelt) en beskrivelse av visningen. Dette er navnet som brukeren som mottar denne visningen, vil se i visningsvelgerne. Vær oppmerksom på at det ikke er tillatt med like navn for publiserte visninger for en side, selv om listen over roller de brukes på, er forskjellige.  
-5.  Legg til eventuelle sikkerhetsroller som samsvarer med brukerne som skal få denne visningen.  
-6.  Velg **Publiser**.
+4.  Oppgi et navn og (eventuelt) en beskrivelse av visningen. Navnet du angir, er navnet som brukeren som mottar denne visningen, vil se i visningsvelgerne. Navnene på publiserte visninger for en side må være unike. Ingen like navn er tillatt, selv om listen over roller eller judiriske enheter som visningene brukes på, varierer.
+5.  Legg til sikkerhetsrollene som samsvarer med brukerne som målrettes av denne visningen.
+6. Legg til de juridiske enhetene som denne visningen skal være tilgjengelig for. 
+7.  Velg **Publiser**.
 
 Legg merke til at i noen miljøer kan det ta litt tid (opptil en time) før brukerne ser den publiserte visningen.
 
@@ -142,7 +147,7 @@ Alle brukere ser kategorien **Mine visninger**, som viser personlige visninger, 
 
 Hvis du vil ha en liste over alle publiserte visninger for siden, er følgende sett med handlinger tilgjengelige. 
 
--    **Publiser**: Bruk handlingen **Publiser** til å publisere en visning på nytt med endrede publiseringsparametere (navn, beskrivelse, sikkerhetsroller).  
+-    **Publiser**: Bruk handlingen **Publiser** til å publisere en visning på nytt etter at publiseringsparametere (navn, beskrivelse, sikkerhetsroller eller juridiske enheter) er endret.
 -    **Fjern**: Bruk handlingen **Fjern** til å slette en publisert visning permanent. Denne handlingen fjerner visningen for alle brukere i systemet.  
  
 Endringer som gjøres i denne dialogboksen, vil tre i kraft når **Lagre**-knappen er valgt.
@@ -161,7 +166,9 @@ Hvis du vil aktivere lagrede visninger mens funksjonen er i forhåndsvisning, f�
 
 4.  **Aktiver funksjonen**: Finn funksjonen **Lagrede visninger** i listen over funksjoner, og velg **Aktiver nå** i detaljruten.
 
-Alle etterfølgende brukerøkter starter med at lagrede visninger er aktivert.  
+Alle etterfølgende brukerøkter starter med at lagrede visninger er aktivert.
+
+Lagrede visninger er bare til bruk i miljøer med Lag 1 (dev/test) og Lag 2 (i sandkasse) for å gi flere endringer i testing og utforming. En forhåndsvisning av lagrede visninger er tilgjengelig i produksjonsmiljøer i en fremtidig frigivelse.
 
 Vær oppmerksom på at hvis tilpassing er deaktivert for miljøet, vil visninger bli deaktivert selv om du følger fremgangsmåten ovenfor. Dette er fordi visningsfunksjonen er bygget på toppen av delsystemet for personalisering.
 
@@ -172,7 +179,7 @@ Når visninger aktiveres, blir eksisterende personlige tilpasninger for en bruke
 Visninger er tilgjengelige på de fleste, men ikke alle sider. Spesifikt er visninger tilgjengelige for alle fullskjermsider, bortsett fra instrumentbord og arbeidsområder. Sider som ikke er fullskjerm, som inkluderer dialogbokser, rullegardindialogbokser, oppslag, utvidede forhåndsvisninger, støtter for øyeblikket heller ikke visninger. Visningsstøtte for flere sidetyper, for eksempel arbeidsområder og dialogbokser, kan bli vurdert for en fremtidig oppdatering.   
 
 ### <a name="who-is-allowed-to-publish-views"></a>Hvem kan publisere visninger?
-Gjeldende systemadministratorer er de eneste brukerne som har rettigheter til å publisere visninger.  En ny sikkerhetsrolle er planlagt i en senere oppdatering, noe som vil gi kundene mer fleksibilitet i forhold til hvem som kan publisere.  
+Bare systemadministratorer og brukere som er tilordnet til administratorrollen **Lagrede visninger**, har rettigheter til å publisere visninger. 
 
 ### <a name="why-am-i-not-able-to-save-filters-with-this-view"></a>Hvorfor kan jeg ikke lagre filtre med denne visningen? 
 Det kan være flere grunner til at et filter ikke ser ut til å lagres med en visning: 

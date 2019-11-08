@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: athinesh
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 8f4658696a2e6c2959b87aa852c25c108b9ba302
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: 1776220766984339c7c289f7b55252fb0c0bb2a8
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2024850"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2570662"
 ---
 # <a name="set-up-and-manage-images-for-retail-modern-pos-mpos"></a>Definere og administrere bilder for Retail Modern POS (MPOS)
 
@@ -83,9 +83,7 @@ I prosedyrene nedenfor er bilder definert for enheten Katalog som et eksempel. D
     [![Dialogboksen Bilder](./media/catalog4.png)](./media/catalog4.png)
 
 > [!NOTE]
-> Du kan bruke samme fremgangsmåte for alle de fem enhetene som støttes: arbeider, kunde, katalog, kategori og produkter. "Katalogprodukter" (produkter som er angitt på katalognivå) og "Kanalprodukter" (varer som er angitt på kanal-nivå) bruker mediemalen som er angitt for produktenheten. For produktmediemalen kan du velge hvor mange produktbilder som skal vises per produkt. Du kan også angi standardbildet for et bestemt produkt. På denne måten kan du unngå tomme bilder i MPOS og hjelpe med å kontrollere hvilket bilde som brukes som standardbilde for en produktvare. I eksemplet nedenfor har hvert produkt fem bilder, og det første bildet settes som standardbilde. Variantprodukter behandles på samme måte som hovedprodukter. Navnet på bildefilen skal baseres på produktnummer. Noen tegn er også escapet når filnavnet genereres. Det er derfor lurt å kontrollere navnet på filen ved hjelp av delen **Generer bilde-URL-adresser for Excel**.
->
-> [![Dialogboksen Definer mal for medier](./media/prods.png)](./media/prods.png)
+> Du kan bruke samme fremgangsmåte for alle de fem enhetene som støttes: arbeider, kunde, katalog, kategori og produkter. "Katalogprodukter" (produkter som er angitt på katalognivå) og "Kanalprodukter" (varer som er angitt på kanal-nivå) bruker mediemalen som er angitt for produktenheten. For produktmediemalen kan du velge hvor mange produktbilder som skal vises per produkt. Du kan også angi standardbildet for et bestemt produkt. På denne måten kan du unngå tomme bilder i MPOS og hjelpe med å kontrollere hvilket bilde som brukes som standardbilde for en produktvare. I eksemplet nedenfor har hvert produkt fem bilder, og det første bildet settes som standardbilde. Variantprodukter behandles på samme måte som hovedprodukter. Navnet på bildefilen skal baseres på produktnummer. Noen tegn er også escapet når filnavnet genereres. Det er derfor lurt å kontrollere navnet på filen ved hjelp av delen **Generer bilde-URL-adresser for Excel**. Se [Overskrive ved hjelp av Rediger i Excel](#overwrite-by-using-edit-in-excel) senere i denne artikkelen.
 
 ## <a name="synchronization-jobs-to-send-a-media-template-to-the-channel-side"></a>Synkroniseringsjobber for å sende en mediemal til kanal-siden
 
@@ -110,8 +108,6 @@ Som du lærte i forrige del, støtter media malen for en gitt enhet bare én fel
 
     > [!IMPORTANT]
     > Når mediemalen endres, må du klikke **Generer** før du kan bruke funksjonalitet for Rediger i Excel.
-
-    [![Hurtigkategorien Generer bilde-URL-adresser for Excel](./media/excel1.jpg)](./media/excel1.jpg)
 
     Du ser nå en forhåndsvisning av bilde URL-adressene som ble generert basert på den siste lagrede media-malen.
 

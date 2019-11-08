@@ -3,7 +3,7 @@ title: Vedlikeholdsprognoser
 description: Dette emnet beskriver vedlikeholdsprognoser i Aktivastyring.
 author: josaw1
 manager: AnnBe
-ms.date: 08/15/2019
+ms.date: 10/15/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,104 +16,111 @@ ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: mkirknel
-ms.search.validFrom: 2019-08-15
+ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 383c910b40199f2da863144c6dc85a579d0091e9
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: a1596b283c3eaffca25ff7f03c722a2bcce109fb
+ms.sourcegitcommit: deb87e518a151d8bb084891851a39758938a96e4
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2024505"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "2626299"
 ---
 # <a name="maintenance-forecasts"></a>Vedlikeholdsprognoser
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
 
 
 Når du oppretter en arbeidsordre, oppretter du arbeidsordrejobber med tilknyttede aktiva og vedlikeholdsjobbtyper. Når du velger en vedlikeholdsjobbtype som inneholder vedlikeholdsprognoser, kopieres prognosene automatisk til arbeidsordren.
 
-Du kan kanskje legge til eller slette prognoselinjer i en arbeidsordre. Oppsettet for en arbeidsordrelivssyklustilstand, den tilknyttede prosjekttypen og stadiereglene knyttet til prosjekttypen bestemmer om du kan legge til eller redigere prognoselinjer. 
+Det kan hende at du kan legge til prognoselinjer i en arbeidsordre eller slette dem fra en arbeidsordre. Oppsettet for arbeidsordrelivssyklustilstanden, den tilknyttede prosjekttypen og stadiereglene som er knyttet til prosjekttypen, bestemmer om du kan legge til eller redigere prognoselinjer. Hvis du vil ha mer informasjon om livssyklustilstander for arbeidsordrer og relaterte prosjektstadier, kan du se [Prognoser, arbeidsordrer og prosjekter](../integration-to-project-management-and-accounting/forecasts-work-orders-and-projects.md).
 
-1. Klikk på **Aktivastyring** > **Felles** > **Arbeidsordrer** > **Alle arbeidsordrer** eller **Aktive arbeidsordrer**.
+1. Velg **Aktivastyring** > **Felles** > **Arbeidsordrer** > **Alle arbeidsordrer** eller **Aktive arbeidsordrer**.
 
-2. Velg arbeidsordren i listen, og klikk på **Prognose**. I **Vedlikeholdsprognose for arbeidsordre** vises prognoselinjer fra vedlikeholdsjobbtypen som er valgt i arbeidsordrejobben.
+2. Velg arbeidsordren i listen, og deretter, i handlingsruten > kategorien **Arbeidsordre** > gruppen **Prosjekt** og deretter **Prognose**. Siden **Vedlikeholdsprognose for arbeidsordre** viser prognoselinjer fra vedlikeholdsjobbtypen som velges i arbeidsordrejobben.
 
 
-## <a name="add-hours-forecast-to-a-work-order"></a>Legge til prognose for timer i en arbeidsordre
+## <a name="add-an-hours-forecast-to-a-work-order"></a>Legge til prognose for timer i en arbeidsordre
 
-1. Velg arbeidsordrejobben som du vil legge til en prognose for.
+1. På siden **Prognose for vedlikehold av arbeidsordre** velger du arbeidsordrejobben du vil legge til en prognose i.
 
-2. På hurtigfanen **Timer** klikker du på **Legg til** for å opprette en ny linje.
+2. På hurtigfanen **Timer** velger du **Legg til** for å opprette en ny linje.
 
-3. Velg en kategori i **Kategori**-feltet.
+3. Velg en kategori i feltet **Kategori**.
 
 4. Sett inn antall prognosetimer i **Timer**-feltet.
 
 5. I **Linjeegenskap**-feltet velger du tilleggstypen som skal brukes på linjen.
 
 
-## <a name="add-items-forecast-to-a-work-order"></a>Legge til prognose for varer i en arbeidsordre
+## <a name="add-an-items-forecast-to-a-work-order"></a>Legge til prognoser for varer i en arbeidsordre
 
-Det finnes tre måter å legge til varer på i en vedlikeholdsprognose for arbeidsordre: Du kan opprette linjer for varer (reservedeler) som ikke er inkludert i reservedellisten eller stykklisten for aktiva, du kan velge reservedeler fra listen over godkjente reservedeler, og du kan velge varer fra stykklisten for aktiva.
+Det er tre måter å legge til varer i en vedlikeholdsprognose for arbeidsordre. Du kan opprette linjer for varer (reservedeler) som ikke er inkludert i reservedellisten eller stykklisten for aktiva, du kan velge reservedeler fra listen over godkjente reservedeler, eller du kan velge varer fra stykklisten for aktiva.
 
-1. Velg arbeidsordrejobben som du vil legge til en prognose for.
+- På siden **Prognose for vedlikehold av arbeidsordre** velger du arbeidsordrejobben du vil legge til en prognose i.
 
-2. Velg hurtigfanen **Varer**.
+- I hurtigfanen **Varer** legger du til varer i vedlikeholdsprognosen ved å bruke den riktige metoden.
 
-3. Klikk på **Legg til** for å opprette en ny linje for en reservedel som ikke er i reservedellisten eller stykklisten for aktiva.
+For å opprette en linje for en reservedel som ikke er i reservedellisten eller stykklisten for aktiva, følger du disse trinnene:
 
-4. Velg varen i **Varenummer**-feltet.
+1. Velg **Legg til**.
+2. Velg varen i **Varenummer**-feltet.
+3. Angi antallet i **Salgsantall**-feltet.
+4. I **Enhet**-feltet velger du måleenheten for antallet.
+5. I feltene **Kostpris** og **Valuta** angir du riktige verdier.
+6. I feltet **Linjeegenskap** velger du en linjeegenskap.
+7. Hvis du vil endre listen over dimensjoner som vises på varelinjene, velger du **Lager** > **Visningsdimensjoner**, velger dimensjonene, og deretter setter du **Lagre oppsett** til **Ja**.
 
-5. Sett inn antall i **Salgsantall**-feltet, og velg en antallsenhet i **Enhet**-feltet.
+Hvis du vil legge til en reservedel fra en godkjent reservedelsliste, følger du denne fremgangsmåten:
 
-6. Sett inn kostpris og valuta i de relevante feltene, og velg en **Linjeegenskap**.
+1. Velg **Legg til reservedeler**.
+2. Velg reservedelen, og rediger den tilknyttede informasjonen slik du ønsker.
+3. Velg **OK**.
 
-7. Hvis du vil endre listen over dimensjoner som vises på varelinjene, kan du klikke på **Lager** > **Visningsdimensjoner**, velge dimensjonene og velge Ja på veksleknappen **Lagre oppsett**.
+Følg denne fremgangsmåten for å legge til en vare fra stykklisten for aktiva:
 
-8. Hvis du vil legge til en godkjent reservedel i vedlikeholdsprognosen, klikker du på **Legg til reservedeler**, velger reservedelen, redigerer relatert informasjon om nødvendig, og klikker på **OK**.
+1. Velg **Legg til stykklistevarer**.
+2. Velg varen, og rediger den tilknyttede informasjonen slik du ønsker.
+3. Velg **OK**.
 
-9. Hvis du vil legge til stykklistevarer for aktiva i prognosen, klikker du på **Legg til stykklistevarer**, velger varen, redigerer relatert informasjon hvis nødvendig, og klikker på **OK**.
-
-10. Klikk på **Vare der brukt** hvis du vil ha en oversikt over hvor i Aktivastyring varen på den valgte linjen brukes, i forhold til aktiva, vedlikeholdsjobbtypestandarder, reservedeler og arbeidsordrer. 
+Hvis du vil ha en oversikt som viser hvor varen på den valgte linjen brukes i forhold til aktiva, vedlikeholdjobbtypestandarder, reservedeler og arbeidsordrer i Aktivastyring, velger du **Vare der brukt**. Hvis du vil ha mer informasjon om denne oversikten, kan du se [Brukssted for vare](../controlling-and-reporting/item-where-used.md).
 
 
+## <a name="add-an-expense-forecast-to-a-work-order"></a>Legge til en utgiftsprognose i en arbeidsordre
 
-## <a name="add-expense-forecast-to-a-work-order"></a>Legge til utgiftsprognose i en arbeidsordre
+1. På siden **Prognose for vedlikehold av arbeidsordre** velger du arbeidsordrejobben du vil legge til en prognose i.
 
-1. Dette emnet forklarer hvordan du legger til en utgiftsprognose i en arbeidsordre. Til venstre i skjemaet velger du arbeidsordrejobben du vil legge til en prognose i.
+2. På hurtigfanen **Utgift** velger du **Legg til** for å opprette en linje.
 
-2. Velg hurtigfanen **Utgift**.
+3. Velg en kategori i feltet **Kategori**.
 
-3. Klikk på **Legg til** for å opprette en ny linje.
+4. Angi antallet i **Antall**-feltet.
 
-4. Velg en kategori i **Kategori**-feltet.
+5. I feltene **Kostpris**, **Salgsvaluta** og **Salgspris** angir du de gjeldende verdiene.
 
-5. Sett inn antallet i **Antall**-feltet.
-
-6. Sett inn kostpris, salgsvaluta og salgspris i de relevante feltene.
-
-7. I **Linjeegenskap**-feltet velger du tilleggstypen som skal brukes på linjen.
+6. I **Linjeegenskap**-feltet velger du tilleggstypen som skal brukes på linjen.
 
 >[!NOTE]
->I hurtigfanen **Totaler for vedlikeholdsprognose** får du en oversikt over antall linjer som er opprettet i hver kategori, for den valgte arbeidsordrejobben og for arbeidsordren. Du kan også se en sum for prognosearbeidstimer for arbeidsordrejobben og for arbeidsordren.
+>Hurtigfanen **Totaler for vedlikeholdsprognose** viser en oversikt over antall linjer som er opprettet, for den valgte arbeidsordrejobben og for arbeidsordren, på hver hurtigfane. Den viser også totale prognosearbeidstimer for arbeidsordrejobben og arbeidsordren.
+
+Illustrasjonen nedenfor viser et eksempel på siden **Prognose for vedlikehold av arbeidsordre**.
 
 ![Figur 1](media/06-work-orders.png)
 
 
 ## <a name="automatic-update-of-work-order-forecasts"></a>Automatisk oppdatering av arbeidsordreprognoser
 
-I Aktivastyring kan du automatisk oppdatere eventuelle endringer i arbeidsordreprognoser for timekostnader, varekost og utgifter som er oppdatert i andre moduler. Dette gjøres for å sikre at de siste kostprisene alltid brukes i arbeidsordreprognosene. Det er også mulig å utføre lignende oppdateringer for [vedlikeholdsjobbtypeprognoser](../setup-for-work-orders/job-groups-and-job-types-variants-trades-and-checklists.md).
+Hvis timekostnader, varekost og utgifter oppdateres i andre moduler i Microsoft Dynamics 365 for Finance and Operations, kan arbeidsordreprognoser i Aktivastyring oppdateres automatisk for å reflektere disse endringene. Denne funksjonaliteten garanterer at de siste kostprisene alltid brukes i arbeidsordreprognosene. Du kan også gjøre lignende oppdateringer for [vedlikeholdsjobbtypeprognoser](../setup-for-work-orders/job-groups-and-job-types-variants-trades-and-checklists.md).
 
-1. Klikk på **Aktivastyring** > **Periodisk** > **Prognose** > **Oppdater arbeidsordreprognose**.
+1. Velg **Aktivastyring** > **Periodisk** > **Prognose** > **Oppdater arbeidsordreprognose**.
 
-2. I rullegardinlisten **Oppdater arbeidsordreprognose** kan du legge til valg for bestemte arbeidsordrer eller arbeidsordrejobber om nødvendig. Klikk på **Filter** for å gjøre disse valgene.
+2. I dialogboksen **Oppdater arbeidsordreprognose** på hurtigfanen **Poster som skal inkluderes** kan du legge til valg for bestemte arbeidsordrer eller arbeidsordrejobber, etter behov. Klikk på **Filter** for å gjøre de relevante valgene.
 
-3. På hurtigfanen **Kjør i bakgrunnen** kan du definere den automatiske oppdateringen som en satsvis jobb, om nødvendig.
+3. På hurtigfanen **Kjør i bakgrunnen** kan du definere den automatiske oppdateringen som en satsvis jobb, slik du ønsker.
 
-4. Klikk på **OK** for å starte prognoseoppdateringen.
+4. Velg **OK** for å starte prognoseoppdateringen.
 
+
+Illustrasjonen nedenfor viser et eksempel på dialogboksen **Oppdater arbeidsordreprognose**.
 
 ![Figur 2](media/07-work-orders.png)
-

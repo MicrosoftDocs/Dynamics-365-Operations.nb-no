@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 02ea3affca727802b241f87b801e0742ac0aa41a
-ms.sourcegitcommit: 6476f27c8d3dced7c2e9a7344a4e378b51a1983e
+ms.openlocfilehash: 2d079c10331360c035ff800650ed3102c2cc3ad4
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "1922097"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2569990"
 ---
 # <a name="preventive-maintenance-overview"></a>Oversikt over forebyggende vedlikehold
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 Dette emnet beskriver forebyggende vedlikehold i Aktivastyring. Forebyggende vedlikehold er et fag som omfatter planlagte vedlikeholdsjobber, for eksempel regelmessig service, kalibrering og inspeksjoner. I **Aktivastyring** kan du opprette vedlikeholdsplaner og definere dem for aktiva og arbeidssteder. Du kan også definere vedlikeholdsrunder for arbeidssteder. Vedlikeholdsplaner for anleggsmidler er aktive, uansett hvor anleggsmidlet er installert. Vedlikeholdsplaner og vedlikeholdsrunder på arbeidssteder er aktive for anleggsmidlene som er installert på lokasjonen for øyeblikket. I stedet for å definere vedlikeholdsplaner for aktiva eller definere vedlikeholdsrunder for arbeidssteder, kan du opprette vedlikeholdsrunder som omfatter flere aktiva der du må utføre relaterte typer av vedlikeholdsjobber i samme arbeidsrutine. Vedlikeholdsrunder opprettet fra anleggsmidler – i stedet for opprettet for arbeidssteder – betyr at du kan velge flere anleggsmidler for én vedlikeholdsrunde, som ikke er installert på samme arbeidssted.
 

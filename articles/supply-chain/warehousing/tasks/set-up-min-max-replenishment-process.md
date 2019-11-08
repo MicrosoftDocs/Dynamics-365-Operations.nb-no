@@ -3,7 +3,7 @@ title: Definere en prosess for minimums-/maksimumsetterfylling
 description: Denne fremgangsmåten viser hvordan du definerer en ny etterfyllingprosess som bruker strategien for minimums-/maksimumsetterfylling.
 author: perlynne
 manager: AnnBe
-ms.date: 06/26/2019
+ms.date: 10/02/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,18 +17,18 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: ef3c33125850662cfb0dfba6e6349ce32ceda0af
-ms.sourcegitcommit: 62d66f98d4bbf916e19184506b90055bb68d219f
+ms.openlocfilehash: e9002b1d9f8507af42277ccc47621d92a4a00f62
+ms.sourcegitcommit: 7b74425637ddcf02087f1d391755e5cb8ce25949
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/28/2019
-ms.locfileid: "1924453"
+ms.lasthandoff: 10/05/2019
+ms.locfileid: "2559195"
 ---
 # <a name="set-up-a-min-max-replenishment-process"></a>Definere en prosess for minimums-/maksimumsetterfylling
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-Denne fremgangsmåten viser hvordan du definerer en ny etterfyllingprosess som bruker strategien for minimums-/maksimumsetterfylling. Når lagernivået synker til under minimumsnivået, opprettes det arbeid for å etterfylle lokasjonen. Fremgangsmåten viser også hvordan du bruker faste plukklokasjoner for å tillate etterfylling selv om lagernivået synker til under minimumsnivået, og hvordan du aktiverer at etterfyllingsprosessen skal kjøres regelmessig ved hjelp av en satsvis jobb. Disse oppgavene vil vanligvis utføres av en lagersjef. Du kan kjøre denne prosedyren i USMF-demodatafirmaet ved hjelp av eksempelverdiene i notatene, eller du kan kjøre den på dine egne data. Hvis du bruker dine egne data, må du kontrollere at du har et lager som er aktivert for lagerstyringsprosesser.
+Denne fremgangsmåten viser hvordan du definerer en ny etterfyllingprosess som bruker strategien for minimums-/maksimumsetterfylling. Når lagernivået synker til under minimumsnivået, opprettes det arbeid for å etterfylle lokasjonen. Fremgangsmåten viser også hvordan du bruker faste plukklokasjoner for å tillate etterfylling selv om lagernivået synker til under minimumsnivået, og hvordan du aktiverer at etterfyllingsprosessen skal kjøres regelmessig ved hjelp av en satsvis jobb. Disse oppgavene vil vanligvis utføres av en lagersjef. Du kan kjøre denne prosedyren i USMF-demodatafirmaet ved hjelp av eksempelverdiene nedenfor, eller du kan kjøre den på dine egne data. Hvis du bruker dine egne data, må du kontrollere at du har et lager som er aktivert for lagerstyringsprosesser.
 
 
 ## <a name="create-a-fixed-picking-location"></a>Opprette en fast plukklokasjon

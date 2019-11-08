@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f68e11a1cd14bc35282b957a4262cbecdd627b3b
-ms.sourcegitcommit: 2c73749779274e0b0abbcb4041bbc1df0fb6d6e4
+ms.openlocfilehash: 151db9ca8a121759e39b690ec296b36a18dc1729
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "1790526"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2571168"
 ---
-# <a name="maintenance-request-states"></a>Tilstander for vedlikeholdsanmodninger
+# <a name="maintenance-request-lifecycle-states"></a>Livsløpstilstander for vedlikeholdsanmodning
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 
 Livsløpstilstander for vedlikeholdsanmodninger definerer stadiene som en forespørsel kan gå gjennom. Eksempler er **Opprettet**, **Aktiv** og **Avsluttet**. Når en vedlikeholdsanmondning konverteres til en arbeidsordre, bør livsløpstilstanden for vedlikeholdsanmodningen oppdateres til **Avsluttet** eller **Lukket** for å indikere at vedlikeholdsanmodningen ikke lenger er aktiv. På listesiden **Alle vedlikeholdsanmodninger** kan du vise alle vedlikeholdsanmodninger, uavhengig av livsløpstilstanden.
@@ -51,7 +51,7 @@ Livsløpstilstander for vedlikeholdsanmodninger definerer stadiene som en foresp
 
 Illustrasjonen nedenfor viser et eksempel på siden **Livsløpstilstander for vedlikeholdsanmodning**.
 
-![Figur 1](media/02-setup-for-requests.png)
+![Siden Livsløpstilstander for vedlikeholdsanmodning](media/02-setup-for-requests.png)
 
 > [!NOTE]
 > Livsløpstilstander for vedlikeholdsanmodninger, livsløpstilstandsgrupper og -typer er knyttet til, og brukes på samme måte som, livsløpstilstander for arbeidsordre, livsløpstilstandsgrupper og -typer. 
@@ -80,4 +80,4 @@ Når du har opprettet livsløpstilstandene som kreves for vedlikeholdsanmodninge
 
 Illustrasjonen nedenfor viser et eksempel på siden **Livsløpsmodeller for vedlikeholdsanmodning**.
 
-![Figur 2](media/06-setup-for-requests.png)
+![Siden Livsløpsmodeller for vedlikeholdsanmodning](media/06-setup-for-requests.png)

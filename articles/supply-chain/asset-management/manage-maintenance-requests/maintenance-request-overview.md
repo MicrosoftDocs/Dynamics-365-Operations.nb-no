@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 56d4abee451e6e22b9b9cc2fd36a13648202e7df
-ms.sourcegitcommit: 871b76f8808a48d282f151144829323258ffc912
+ms.openlocfilehash: b19a92924d73847d9d2c09cd0ed111a9cbfdccbf
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/02/2019
-ms.locfileid: "1847442"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2571651"
 ---
 # <a name="maintenance-requests"></a>Vedlikeholdsanmodninger
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 Vedlikeholdsanmodninger er notater eller deklarasjoner som opprettes for å varsle en leder eller planlegger at et aktivum kan kreve en vedlikeholds- eller reparasjonsjobb, men uten å opprette en arbeidsordre. Hvis innholdet i en vedlikeholdsanmodning anses som gyldig, kan en arbeidsordre opprettes basert på vedlikeholdsanmodningen.
 
@@ -45,7 +45,7 @@ Vedlikeholdsanmodninger kan opprettes for alle aktiva i Aktivastyring. Ulike typ
 
 Hvis du vil vise vedlikeholdsanmodninger, velger du **Aktivastyring** \> **Felles** \> **Vedlikeholdsanmondninger** \> **Alle vedlikeholdsanmodninger**, **Aktive vedlikeholdsanmodninger** eller **Mine vedlikeholdsforespørsler for arbeidssted**. Hver listeside viser noe av informasjonen som er knyttet til en vedlikeholdsanmodning.
 
-![Figur 1](media/01-manage-maintenance-requests.png)
+![Vis forespørsler om vedlikehold](media/01-manage-maintenance-requests.png)
 
 > [!NOTE]
 > Bruk listesiden **Mine vedlikeholdsforespørsler for arbeidssted** for å vise en liste over vedlikeholdsforespørsler som inneholder enten arbeidssteder som du er knyttet til som arbeider, eller aktiva som er installert på arbeidssteder som du knyttet til som arbeider. (Hvis du vil ha informasjon om hvordan du definerer arbeidssteder for vedlikeholdspersoner, kan du se [Vedlikeholdspersoner og arbeidsgrupper](../setup-for-objects/workers-and-worker-groups.md).)
@@ -54,7 +54,7 @@ Hvis du vil vise vedlikeholdsanmodninger, velger du **Aktivastyring** \> **Felle
 
 Hvis du vil åpne detaljvisningen for en post, går du til listesiden **Alle vedlikeholdsanmodninger**, og i rutenettvisningen velger du en kobling i kolonnen **Vedlikeholdsanmodning**.
 
-![Figur 2](media/02-manage-maintenance-requests.png)
+![Vise detaljer for vedlikeholdsforespørsel](media/02-manage-maintenance-requests.png)
 
 Knappene i handlingsruten er ordnet i kategorier. Følgende tabell beskriver kort hvilke knapper som er knyttet til Aktivastyring.
 

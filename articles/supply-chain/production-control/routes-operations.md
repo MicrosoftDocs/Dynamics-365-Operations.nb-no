@@ -19,12 +19,12 @@ ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4f91faa03718830474e8e2a79015955bcad1d02e
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 6ecdece43b9d609e70e385dc5c3ec70b82f582ab
+ms.sourcegitcommit: 0099fb24f5f40ff442020b488ef4171836c35c48
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2249975"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "2653677"
 ---
 # <a name="routes-and-operations"></a>Ruter og operasjoner
 
@@ -35,7 +35,7 @@ Dette emnet gir informasjon om ruter og operasjoner. En rute definerer prosessen
 <a name="overview"></a>Oversikt
 --------
 
-En rute beskriver rekkefølgen for operasjonene som kreves for å produsere et produkt eller en produktvariant. For hver operasjon definerer ruten også operasjonsressurser som kreves, tiden som kreves for å definere og utføre operasjonen, og hvordan kostnader skal beregnes. Du kan bruke samme rute for å produsere flere produkter, eller du kan definere en unik rute for hvert produkt eller produktvariant. Du kan også ha flere ruter for samme produkt. I dette tilfellet varierer ruten som brukes, avhengig av faktorer som antallet som skal produseres. Definisjonen av en rute i Finance and Operations består av fire separate elementer som sammen beskriver produksjonsprosessen:
+En rute beskriver rekkefølgen for operasjonene som kreves for å produsere et produkt eller en produktvariant. For hver operasjon definerer ruten også operasjonsressurser som kreves, tiden som kreves for å definere og utføre operasjonen, og hvordan kostnader skal beregnes. Du kan bruke samme rute for å produsere flere produkter, eller du kan definere en unik rute for hvert produkt eller produktvariant. Du kan også ha flere ruter for samme produkt. I dette tilfellet varierer ruten som brukes, avhengig av faktorer som antallet som skal produseres. Definisjonen av en rute i Supply Chain Management består av fire separate elementer som sammen beskriver produksjonsprosessen:
 
 -   **Rute** – En rute som definerer strukturen til produksjonsprosessen. Den definerer med andre ord rekkefølgen av operasjonene.
 -   **Operasjon** – En operasjon angir et navngitt trinn i en rute som **Montering**. Den samme operasjonen kan forekomme i flere ruter og kan ha forskjellige operasjonsnumre.
