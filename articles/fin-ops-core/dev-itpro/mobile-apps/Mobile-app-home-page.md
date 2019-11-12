@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.dyn365.ops.version: Platform update 4
 ms.search.validFrom: 2017-02-28
-ms.openlocfilehash: a8183dd834b1f39773d25fa7c546d5db1c7b7749
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 219bb1b5ac8360acf267fb792b8e23f961096abc
+ms.sourcegitcommit: bbb64b3475eef155b3f9d1bdc440545da8a7182f
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2249032"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "2553074"
 ---
 # <a name="mobile-app-home-page"></a>Startside for mobilapp
 
@@ -86,16 +86,16 @@ Tabellen nedenfor inneholder koblinger til ressurser som kan hjelpe deg med å i
 <tr class="even">
 <td>2</td>
 <td>Systemansvarlig</td>
-<td><strong>Hvis du bruker Microsoft Dynamics 365 for Operations versjon 1611:</strong>Laste ned og installere KB-er som aktiverer de mobile arbeidsområdene fra Microsoft.</td>
+<td><strong>Hvis du bruker Microsoft Dynamics 365 for Operations versjon 1611:</strong> Last ned og installer KB-er som aktiverer de mobile arbeidsområdene fra Microsoft.</td>
 <td>Hvis du vil ha mer informasjon, se følgende emner:
 <ul>
 
-<li><a href="../../financials/cost-accounting/cost-controlling-mobile-workspace.md">Mobile arbeidsområder for kostnadskontroll</a></li>
-<li><a href="../../supply-chain/inventory/inventory-on-hand-mobile-workspace.md">Mobilt arbeidsområde for lagerbeholdning</a></li>
-<li><a href="../../supply-chain/sales-marketing/sales-orders-mobile-workspace.md">Mobile arbeidsområder for salgsordrer</a></li>
-<li><a href="../../supply-chain/procurement/vendor-collaboration-mobile-workspace.md">Mobilt arbeidsområde for leverandørsamarbeid</a></li>
-<li><a href="../../financials/project-management/project-time-entry-mobile-workspace.md">Mobilt arbeidsområde for registrering av prosjekttid</a></li>
-<li><a href="../../financials/expense-management/expense-management-mobile-workspace.md">Mobilt arbeidsområde for reiseregninger og utlegg</a></li>
+<li><a href="../../../finance/cost-accounting/cost-controlling-mobile-workspace.md">Mobile arbeidsområder for kostnadskontroll</a></li>
+<li><a href="../../../supply-chain/inventory/inventory-on-hand-mobile-workspace.md">Mobilt arbeidsområde for lagerbeholdning</a></li>
+<li><a href="../../../supply-chain/sales-marketing/sales-orders-mobile-workspace.md">Mobile arbeidsområder for salgsordrer</a></li>
+<li><a href="../../../supply-chain/procurement/vendor-collaboration-mobile-workspace.md">Mobilt arbeidsområde for leverandørsamarbeid</a></li>
+<li><a href="../../../finance/project-management/project-time-entry-mobile-workspace.md">Mobilt arbeidsområde for registrering av prosjekttid</a></li>
+<li><a href="../../../finance/expense-management/expense-management-mobile-workspace.md">Mobilt arbeidsområde for reiseregninger og utlegg</a></li>
 
 </ul></td>
 </tr>

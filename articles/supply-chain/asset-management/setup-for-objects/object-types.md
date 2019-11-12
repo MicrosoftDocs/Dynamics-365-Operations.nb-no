@@ -3,35 +3,35 @@ title: Aktivatyper
 description: Dette emnet forklarer hvordan du oppretter aktivatyper i Aktivastyring. Det beskriver også elementene som er relatert til aktivatyper.
 author: josaw1
 manager: AnnBe
-ms.date: 06/26/2019
+ms.date: 10/15/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: CatProcureCatalogEdit, CatProcureCatalogListPage
+ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
-ms.custom: 2214
-ms.assetid: 2f3e0441-414d-402b-b28b-7ab0d650d658
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
 ms.author: mkirknel
-ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 288dac77f9d999012ec930ef2bca5c0921c2955f
-ms.sourcegitcommit: 747bcd25ce7c6c20ce9eaa0027e730f74d4fd6aa
+ms.search.validFrom: 2019-09-30
+ms.dyn365.ops.version: 10.0.5
+ms.openlocfilehash: a19b8c40dd7d48b2d78723c4411f1699819c4026
+ms.sourcegitcommit: deb87e518a151d8bb084891851a39758938a96e4
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "1783494"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "2626091"
 ---
 # <a name="asset-types"></a>Aktivatyper
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
 
-Dette emnet forklarer hvordan du oppretter aktivatyper. Det beskriver også elementene som er relatert til aktivatyper. Aktivatyper brukes som generelle kategorier for aktiva. Eksempler inkluderer CNC-maskiner, måleutstyr og lastebilmotorer. Aktivatyper brukes til å administrere jobbtypene (vedlikeholdsoppgaver), livsløpstilstander for aktiva, aktivamål, aktivaattributter, maler for tilstandsvurdering og aktivamodeller som kan velges for et aktivum. Når du oppretter et aktivum, må du angi type.
+
+Dette emnet forklarer hvordan du oppretter aktivatyper. Det beskriver også elementene som er relatert til aktivatyper. Aktivatyper brukes som generelle kategorier for aktiva. Eksempler inkluderer CNC-maskiner, måleutstyr og lastebilmotorer. Aktivatyper brukes til å administrere vedlikeholdsjobbtypene (vedlikeholdsoppgaver), livsløpstilstander for aktiva, tellere, aktivaattributter, maler for tilstandsvurdering og aktivamodeller som kan velges for et aktivum. Når du oppretter et aktivum, må du angi type.
 
 For hver aktivatype kan varianter av aktivatypeoppsettet opprettes. Hvis du for eksempel har en aktivatype som heter **Lastebiler**, kan du opprette varianter av denne aktivatypen for forskjellige aktivaprodusenter og aktivamodeller. For hvert oppsett av aktivatype kan du legge til de nødvendige reservedels- og vedlikeholdsplanene.
 
@@ -39,35 +39,35 @@ Først definerer du de nødvendige aktivatypene. Deretter oppretter du aktivamod
 
 ## <a name="create-an-asset-type"></a>Opprette en aktivatype
 
-1. Velg **Aktivastyring** \> **Oppsett** \> **Aktivatyper** \> **Aktivatyper**.
+1. Velg **Aktivastyring** > **Oppsett** > **Aktivatyper** > **Aktivatyper**.
 2. Velg **Ny** for å opprette en aktivatype.
 3. I **Aktivatype**-feltet angir du en ID for aktivatype.
 4. Angi et navn i **Navn**-feltet.
 5. Velg en livsløpsmodell for aktivumet i feltet **Livsløpsmodell for aktiva**. Hvis du vil ha mer informasjon om livsløpstilstander og livsløpsmodeller for aktiva, kan du se [Livsløpstilstander for aktiva](object-stages.md).
 6. Angi **Total**-alternativet til **Ja** hvis oppsummerte KPI-verdier skal beregnes for aktiva som har denne aktivatypen.
 7. Velg **Lagre**.
-8. I hurtigfanen **Jobbtyper** velger du jobbtypene som skal relateres til aktivatypen.
+8. I hurtigfanen **Vedlikeholdsjobbtyper** velger du vedlikeholdsjobbtypene som skal relateres til aktivatypen.
 
-    - Hvis du vil velge en jobbtype, velger du den i feltet **Gjenværende jobbtyper**, og deretter velger du pil høyre ![Pil høyre](media/29-setup-for-objects.png) for å flytte den til delen **Valgte jobbtyper**.
-    - Hvis du vil velge alle tilgjengelige jobbtyper, velger du ![Videresend alle-pilknappen](media/30-setup-for-objects.png). Alle jobbtyper overføres fra feltet **Gjenværende jobbtyper** til feltet **Valgte jobbtyper**.
-    - Hvis du vil avbryte valget av en jobbtype, velger du den i feltet **Valgte jobbtyper**, og deretter velger du pil venstre ![Pil venstre](media/31-setup-for-objects.png) for å flytte den til feltet **Gjenværende jobbtyper**.
+    - Hvis du vil velge en vedlikeholdsjobbtype, velger du den i feltet **Gjenværende vedlikeholdsjobbtyper**, og deretter velger du pil høyre ![Pil høyre](media/29-setup-for-objects.png) for å flytte den til delen **Valgte vedlikeholdsjobbtyper**.
+    - Hvis du vil velge alle tilgjengelige vedlikeholdsjobbtyper, velger du ![Videresend alle-pilknappen](media/30-setup-for-objects.png). Alle vedlikeholdsjobbtyper overføres fra feltet **Gjenværende vedlikeholdsjobbtyper** til feltet **Valgte vedlikeholdsjobbtyper**.
+    - Hvis du vil avbryte valget av en vedlikeholdsjobbtype, velger du den i feltet **Valgte vedlikeholdsjobbtyper**, og deretter velger du pil venstre ![Pil venstre](media/31-setup-for-objects.png) for å flytte den til feltet **Gjenværende vedlikeholdsjobbtyper**.
 
-9. Du kan også velge aktivamålene som skal være knyttet til aktivatypen. På hurtigfanen **Aktivamål** foretar du valg ved hjelp av metodene som er beskrevet for jobbtyper i trinn 8. Hvis du vil ha mer informasjon om oppsettet av aktivamål, se [Mål av vedlikeholdsgjenstand](counters.md).
-10. Du kan også velge attributtypene som skal være knyttet til aktivatypen. På hurtigfanen **Attributtyper** foretar du valg ved hjelp av metodene som er beskrevet for jobbtyper i trinn 8. Hvis du vil opprette den foretrukne sekvensen med attributtverdier, velger du en attributtype i feltet **Valgte attributtyer** og bruker pil opp og pil ned til å flytte den. Sekvensen av attributtyper vises på aktiva som bruker denne aktivatypen. Hvis du vil ha mer informasjon om aktivaattributter, se [Vedlikeholdsattributtyper](../setup-for-functional-locations/specification-types.md).
+9. Du kan også velge tellere som skal være knyttet til aktivatypen. På hurtigfanen **Tellere** foretar du valg ved hjelp av metodene som er beskrevet for vedlikeholdsjobbtyper i trinn 8. Hvis du vil ha informasjon om hvordan du definerer tellere, se [Tellere](counters.md).
+10. Du kan også velge attributtypene som skal være knyttet til aktivatypen. På hurtigfanen **Attributtyper** foretar du valg ved hjelp av metodene som er beskrevet for vedlikeholdsjobbtyper i trinn 8. Hvis du vil opprette den foretrukne sekvensen med attributtverdier, velger du en attributtype i feltet **Valgte attributtyer** og bruker pil opp og pil ned til å flytte den. Sekvensen av attributtyper vises på aktiva som bruker denne aktivatypen. Hvis du vil ha mer informasjon om aktivaattributter, se [Vedlikeholdsattributtyper](../setup-for-functional-locations/specification-types.md).
 
     > [!NOTE]
     > Når du legger til nye attributtyper på hurtigfanen **Attributtyper**, oppdateres eksisterende aktiva automatisk med denne informasjonen.
 
-11. Du kan også velge malene for tilstandsvurdering som skal være knyttet til aktivatypen. På hurtigfanen **Tilstandsvurderinger** foretar du valg ved hjelp av metodene som er beskrevet for jobbtyper i trinn 8. Hvis du vil ha mer informasjon om maler og registreringer for tilstandsvurdering, se [Tilstandsvurdering](../setup-for-objects/condition-assessment.md).
+11. Du kan også velge malene for tilstandsvurdering som skal være knyttet til aktivatypen. På hurtigfanen **Tilstandsvurderinger** foretar du valg ved hjelp av metodene som er beskrevet for vedlikeholdsjobbtyper i trinn 8. Hvis du vil ha mer informasjon om maler og registreringer for tilstandsvurdering, se [Tilstandsvurdering](../setup-for-objects/condition-assessment.md).
 12. Hurtigfanen **Aktivamodell** viser alle kombinasjonene av aktivaprodusenter og -modeller som er definert for den valgte aktivatypen. Hvis du vil se kombinasjonene som er delt i henhold produsent, velger du **Aktivamodell** for å åpne **Aktivamodell**-siden.
 
     På siden **Aktivamodell** kan du legge til relasjoner for aktivamodell – aktivatype. På siden **Aktivatyper** kan du også legge til relasjoner for aktivaprodusent – aktivamodell direkte for en aktivatype. På siden **Aktivamodell** (**Aktivastyring** \> **Oppsett** \> **Aktiva** \> **Aktivamodell**) kan du opprette nye relasjoner for aktivaprodusent – aktivamodell – aktivatype. Derfor er det tre måter å definere og redigere relasjoner for aktivaprodusent – aktivamodell – aktivatype. Alle tilgjengelige kombinasjoner vises fra ulike perspektiver, og du kan velge ditt foretrukne inngangspunkt når du arbeider med oppsettet.
 
 > [!NOTE]
-> - Hvis du velger aktivamål på en aktivatype, oppdateres valgene automatisk på siden **Aktivamål** (**Aktivastyring** \> **Oppsett** \> **Aktiva** \> **Aktivatyper** \> **Aktivamål**).
-> - Feltene i **Detaljer**-delen i hurtigfanen **Generelt** viser antall jobbtyper, aktivamål, attributter og så videre, som er definert for den valgte aktivatypen.
+> - Hvis du velger tellere for en aktivatype, oppdateres valgene automatisk på siden **Tellere** (**Aktivabehandling** > **Oppsett** > **Aktiva** > **Aktivatyper** > **Tellere**).
+> - Feltene i **Detaljer**-delen i hurtigfanen **Generelt** viser antall vedlikeholdsjobbtyper, tellere, attributter og så videre, som er definert for den valgte aktivatypen.
 
-Vanligvis er arbeidsordrer som opprettes manuelt, knyttet til korrigerende vedlikehold, mens arbeidsordrer som opprettes automatisk, er knyttet til forebyggende vedlikehold. Når du oppretter arbeidsordrer manuelt, kan bare jobbtyper som er valgt på hurtigfanen **Jobbtyper** på siden **Aktivatyper** brukes. Automatisk opprettede arbeidsordrer kan imidlertid bruke alle jobbtypene du oppretter på siden **Jjobbtyper** (**Aktivastyring** \> **Oppsett** \> **Jobber** \> **Jobbtyper**).
+Vanligvis er arbeidsordrer som opprettes manuelt, knyttet til korrigerende vedlikehold, mens arbeidsordrer som opprettes automatisk, er knyttet til forebyggende vedlikehold. Når du oppretter arbeidsordrer manuelt, kan bare vedlikeholdsjobbtyper som er valgt på hurtigfanen **Vedlikeholdsjobbtyper** på siden **Aktivatyper**, brukes. Automatisk opprettede arbeidsordrer kan imidlertid bruke alle vedlikeholdsjobbtypene du oppretter på siden **Vedlikeholdsjobbtyper** (**Aktivastyring** \> **Oppsett** \> **Jobber** \> **Vedlikeholdsjobbtyper**).
 
 ## <a name="create-asset-type-setup-lines"></a>Opprett oppsettslinjer for aktivatype
 

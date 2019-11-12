@@ -18,20 +18,20 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 4b3cc32d6ff263967c1ee843702c28968219ac33
-ms.sourcegitcommit: f93ead945afe5ae18706c66bce6e64a6b57aac50
+ms.openlocfilehash: d9f1cd6d22fd17505c3a4ece8a881629b00694d2
+ms.sourcegitcommit: fb66731f05207094149a6bc7b8549a4dabbb071a
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/19/2019
-ms.locfileid: "1887188"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "2652086"
 ---
 # <a name="scheduled-work-order-maintenance-jobs"></a>Planlagte vedlikeholdsjobber for arbeidsordre
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
-Siden **Planlagte vedlikeholdsjobber for arbeidsordrer** brukes til å få en oversikt over arbeidsordrene som er tildelt en ressurs. Arbeidsordrer som bruker ressurstypene personale, verktøy og maskin, vises i listen. Listen kan brukes til å få en oversikt over arbeidsordrer som er tildelt en bestemt ressurs. Du kan også bruke den til raskt å finne en arbeidsordre som er tildelt en vedlikeholdsarbeider som for eksempel ringte inn og sa han var syk, og deretter raskt tilordne en annen vedlikeholdsarbeider til jobben.
+Siden **Planlagte vedlikeholdsjobber for arbeidsordrer** viser en oversikt over arbeidsordrene som er tildelt en ressurs. Arbeidsordrer som bruker ressurstypene personale, verktøy og maskin, vises. Hvis for eksempel en vedlikeholdsarbeider er syk, kan du bruke denne siden til raskt å finne arbeidsordrer som er tildelt arbeideren, og deretter tilordne en annen vedlikeholdsarbeider til jobben.
 
 ## <a name="view-scheduled-work-order-maintenance-jobs"></a>Vise planlagte vedlikeholdsjobber for arbeidsordrer
 
@@ -39,16 +39,16 @@ Siden **Planlagte vedlikeholdsjobber for arbeidsordrer** brukes til å få en ov
 
 2. Du kan sortere listen, for eksempel etter vedlikeholdsperson. Du kan også bruke filteret til å begrense listen til å vise arbeidsordrer som er tildelt en bestemt ressurs eller vedlikeholdsarbeider.
 
-3. Du kan se merknader i arbeidsordren, og eventuelt legge til nye notater ved å velge arbeidsordrejobben i listen og klikke på **Notater**.
+3. Du kan se merknader i arbeidsordren og eventuelt legge til nye notater ved å velge arbeidsordrejobben og deretter klikke på **Notater**.
 
-4. Hvis du vil tildele én vedlikeholdsarbeider til en arbeidsordre, velger du arbeidsordren i listen og klikker på **Arbeidsordre**.
+4. Hvis du vil tildele én vedlikeholdsarbeider til en arbeidsordre, velger du arbeidsordren og klikker på **Arbeidsordre**.
 
 5. Siden **Arbeidsordre** åpnes. Klikk på **Fordeling** for å planlegge arbeidsordren til en bestemt vedlikeholdsarbeider.
 
 >[!NOTE]
 >Les mer om planlegging av flere arbeidsordrer eller én arbeidsordre i [Planlegg arbeidsordrer](../work-order-scheduling/schedule-work-orders.md) og [Fordelingsarbeidsordre](../work-order-scheduling/dispatch-work-order.md).
 
-Figuren nedenfor viser et eksempel på siden **Planlagte vedlikeholdsjobber for arbeidsordrer**.
+Skjermbildet nedenfor viser et eksempel på siden **Planlagte vedlikeholdsjobber for arbeidsordrer**.
 
 ![Figur 1](media/07-work-order-scheduling.png)
 

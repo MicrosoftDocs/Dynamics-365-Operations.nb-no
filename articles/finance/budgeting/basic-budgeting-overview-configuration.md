@@ -18,12 +18,12 @@ ms.search.region: global
 ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 349f720ee4cfb612ca4f4f50a9e081f3343f756d
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 36144474defc4849a112a180247f37796de00a27
+ms.sourcegitcommit: 1eaa3451275fe4223d4d25b37aaa1cd2b183e803
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2188700"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "2667466"
 ---
 # <a name="budgeting-overview"></a>Oversikt over budsjettering 
 
@@ -69,6 +69,12 @@ Opprett *budsjettkoder* som identifiserer typen budsjettransaksjoner som skal re
 Med budsjettkoder kan du ha et revisjonsspor for godkjente budsjettendringer gjennom utviklingen av budsjettsyklusen. Hvis en arbeidsflyt er knyttet til en budsjettkode, aktiveres arbeidsflyten for alle budsjettregisteroppføringer som bruker denne budsjettkoden, og trinn i arbeidsflyten må være fullført før budsjettregisteroppføringen kan nå stadiet **Fullført**.  
 
 Du kan også sette opp *regler for budsjettoverføring*. Hvis du vil bruke regler for budsjettoverføring, velger du **Bruk regler for budsjettoverføringer** på **Budsjettparametere**-siden. Når regler for budsjettoverføring brukes, hvis en bruker oppretter et dokument ved hjelp av en budsjettkode av typen **overføring**, vil ikke budsjettsaldoer bli oppdatert hvis reglene for budsjettoverføring er brutt. Du kan for eksempel tillate budsjettoverføringsdokumenter der utgiftsbudsjettet overføres mellom hovedkontoene for avdelingen for salg og markedsføring, men du kan hindre at budsjettet blir overført fra eller til denne avdelingen med mindre arbeidsflytgodkjenning er gitt for denne typen budsjettkontooppføring.
+
+Funksjonalitet som ble introdusert i Microsoft Dynamics 365 Finance versjon 10.0.7 (januar 2020), tilførte kapasitet og fleksibilitet for budsjettregisteroppføringer. Hvis du vil aktivere disse forbedringene, går du til **Funksjonsbehandling**-arbeidsområdet og velger **Budsjettregisteroppføringer bare for antall** og/eller **Standard beløpstype for budsjettregisteroppføringer**.
+
+Med funksjonen for **Budsjettregisteroppføringer bare for antall** kan du postere en budsjettregistreringsoppføring med bare antall-beløp. Du kan for eksempel postere en budsjettoppføring med et antall på 32 og en pris på null, som resulterer i et beløp på null. Du kan deretter bruke dette antallet i konteksten til en regnskapsrapport for å bestemme en pris per antall. Vær oppmerksom på at ingen forespørsler eller rapporter ble oppdatert som en del av denne funksjonen. Funksjonen gjør det bare mulig å postere et beløp på null.
+
+Funksjonen for **Standard beløpstype for budsjettregisteroppføringer** tillater at standard beløpstype i en budsjettregisteroppføring er en annen beløpstype enn utgift. Linjen for budsjettregisteroppføring vil nå være utgift som standard når hovedkontotypen er utgift. Den vil være inntekt som standard når hovedkontotypen er utgift og vil være utgift som standard for alle andre kontotyper.
 
 ## <a name="using-workspaces-and-inquiry-pages-to-track-budget-vs-actuals"></a>Bruke arbeidsområder og forespørselssider til å spore budsjett i forhold til faktisk
 Budsjettlederen kan gå gjennom gjeldende tilstand for et budsjett i arbeidsområdet **Finansbudsjetter og prognoser**. Kategoriene for **utgifter over budsjett** og **omsetning under budsjett** gir en rask oversikt over kombinasjonene av finansdimensjoner der budsjettmål ikke oppfylles, eller er nærmer seg terskelen. Du kan tilpasse budsjetterskelprosenten og finansdimensjonssettene som brukes i disse kategoriene ved å klikke **Konfigurer mitt arbeidsområde**. Kan du klikke **Enhetsledere** for å se arbeidere som er ansvarlige for bestemte finansdimensjonskombinasjoner som er valgt i disse kategoriene. Hvis du for eksempel ser at Utgiftsbudsjett for driftsavdelingen overskrider budsjetterskelen, kan du enkelt finne og kontakte lederen for driftsavdelingen for å diskutere saken. 

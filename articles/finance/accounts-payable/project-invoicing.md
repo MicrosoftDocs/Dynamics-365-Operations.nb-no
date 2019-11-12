@@ -3,7 +3,7 @@ title: Prosjektfakturering
 description: Denne artikkelen inneholder en oversikt over prosjektfakturering for etter regning-prosjekter og reparert og fastprisprosjekter. Den inneholder informasjon om fakturaforslag (foreløpig fakturaer), fakturakontroll, a konto-fakturering, leverandørfakturering og kreditnotaer.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 10/24/2017
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e3d91f6b1ccc3254e2c04d24c5f9bf2014c64e50
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: a68ed1cf21039ec1077bae428dea242f19514b51
+ms.sourcegitcommit: 574309903f15eeab7911091114885b5c7279d22a
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2179291"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "2658626"
 ---
 # <a name="project-invoicing"></a>Prosjektfakturering
 
@@ -55,6 +55,9 @@ Du kan opprette fakturaforslag for følgende transaksjoner:
 -   Beløp som holdes tilbake av kunder på tidligere prosjektfakturaer
 -   Kreditnotaer
 -   Beløp som en kunde har betalt til deg, før et prosjekt starter
+
+> [!NOTE]
+> Funksjonen **Aktiver sortering etter ressurs under oppretting av prosjektfakturaforslag** gjør at prosjektregnskapsføreren kan sortere prosjekttransaksjonene som er tilgjengelige for fakturering etter ressursen ved oppretting av et nytt prosjektfakturaforslag. Rutenettet som viser de tilgjengelige prosjekttransaksjonene, har et separat felt for ressurs-ID og ressurs, slik at brukeren kan filtrere og sortere på ressursnavnet. Denne funksjonen er som standard deaktivert og kan aktiveres i **Arbeidsområder > Funksjonsbehandling**. Ta kontakt med systemansvarlig for å få hjelp til å aktivere denne funksjonen.
 
 Du kan opprette gebyrtransaksjoner i et fakturaforslag. Du kan også endre salgsprisen i time-, utgifts-, vare- og gebyrtransaksjoner. Når du posterer et fakturaforslag, legges de oppdaterte prisene og transaksjonene til i prosjektrapporter og transaksjonshistorikken. 
 

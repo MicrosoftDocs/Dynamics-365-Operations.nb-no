@@ -1,12 +1,14 @@
-- name: Utvikling og administrasjon for Finance and Operations
+- name: Utvikling og administrasjon for Finance and Operations-apper
   items:
-    - name: Utvikling og administrasjon for Finance and Operations
+    - name: Utvikling og administrasjon for Finance and Operations-apper
       items:
-        - name: Utvikling og administrasjon for Finance and Operations
+        - name: Utvikling og administrasjon for Finance and Operations-apper
           href: index.md
         - name: Hva er nytt eller endret
           items:
-            - name: Forhåndsvisningsfunksjoner i Platform Update 30 (november 2019)
+            - name: Forhåndsvisningsfunksjoner i Platform Update 31 (januar 2020)
+              href: get-started/whats-new-platform-update-31.md
+            - name: Platform update 30 (november 2019)
               href: ../fin-ops/get-started/whats-new-platform-update-30.md
             - name: Platform update 29 (oktober 2019)
               href: ../fin-ops/get-started/whats-new-platform-update-29.md
@@ -62,6 +64,8 @@
                   href: business-events/how-to/FormsPro.md
                 - name: Forretningshendelser og Azure Event Hubs
                   href: business-events/how-to/event-hub.md
+                - name: Forretningshendelser i regnskapsperiodeavslutning
+                  href: business-events/how-to/period-close.md
         - name: Kontinuerlig levering
           items:
             - name: Startside for kontinuerlig levering
@@ -80,7 +84,7 @@
               href: data-entities/integration-overview.md
             - name: API-er for dataintegrering
               items:
-                - name: REST API for databehandlingspakke
+                - name: REST-API for databehandlingspakke
                   href: data-entities/data-management-api.md
                 - name: Tjenestesluttpunkter
                   items:
@@ -302,6 +306,26 @@
                   href: database/dbmovement-scenario-goldenconfig.md
                 - name: Destruktiv testing
                   href: database/dbmovement-scenario-destructivetests.md
+            - name: RESTful API
+              items:
+                - name: Oversikt
+                  href: database/api/dbmovement-api-overview.md
+                - name: Versjonskontroll og støtte
+                  href: database/api/dbmovement-api-versioning-support.md
+                - name: Godkjenning
+                  href: database/api/dbmovement-api-authentication.md
+                - name: Begrensning
+                  href: database/api/dbmovement-api-throttling.md
+                - name: Referanse
+                  items:
+                    - name: API v1-referanse
+                      href: database/api/v1/dbmovement-api-v1-overview.md
+                    - name: Vise en liste med sikkerhetskopier av database
+                      href: database/api/v1/reference-list-backups.md
+                    - name: Opprette databaseoppdatering
+                      href: database/api/v1/reference-create-refresh.md
+                    - name: Hente status for operasjonsaktivitet
+                      href: database/api/v1/reference-get-status.md
         - name: Demonstrasjonsdata
           items:
             - name: Oversikt over demonstrasjonsdata
@@ -1213,7 +1237,7 @@
             - name: Få støtte for Finance and Operations og Lifecycle Services
               href: lifecycle-services/lcs-support.md
             - name: Oversikt over Dynamics 365-støtte
-              href: 'https://docs.microsoft.com/power-platform/admin/support-overview?toc=/dynamics365/dev-itpro/toc.json&bc=/dynamics365/unified-operations/breadcrumb/toc.json'
+              href: 'https://docs.microsoft.com/power-platform/admin/support-overview?toc=/dynamics365/fin-ops-core/dev-itpro/toc.json&bc=/dynamics365/breadcrumb/toc.json'
             - name: Få støtte for Finance and Operations styrt av 21Vianet i Kina
               href: lifecycle-services/21vianet-support.md
             - name: Sende forespørsler til Dynamics Service Engineering-teamet

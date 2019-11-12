@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 660038060826ade9301e50143e49b53ba3fcd3ab
-ms.sourcegitcommit: 747bcd25ce7c6c20ce9eaa0027e730f74d4fd6aa
+ms.openlocfilehash: f96fcc7ebb8928c6d6b17b30465ad1625d9b5be4
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "1783493"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2571076"
 ---
-# <a name="asset-criticalities"></a>Kritiske forhold omkring aktiva
+# <a name="asset-criticality-types"></a>Type kritisk aktivitet for aktiva
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 Emnet forklarer typer kritsk aktivitet for aktiva i Aktivastyring. Kritiske forhold omkring aktiva er knyttet til aktiva og overføres til arbeidsordrer. Dette kan ikke endres på en arbeidsordre. Kritiske forhold omkring aktiva brukes til å beregne arbeidsordrekritikalitet under planlegging av arbeidsordrer. Det brukes med andre ord til å beregne i hvilken grad en vedlikeholdsjobb på et aktivum påvirker produksjonsplanen og produktiviteten i selskapet. Hvis du vil ha mer informasjon om oppsettet som er knyttet til beregning av poengsummer for arbeidsordreplanlegging, kan du se [Parametere i Aktivastyring](../setup-for-objects/enterprise-asset-management-parameters.md).
 
@@ -43,7 +43,7 @@ Hvis du vil definere kritikalitet, må du først opprette kritikalitetstypene so
 4. I **Navn**-feltet angir du et navn på kritikalitetstypen.
 5. Angi en faktor i feltet **Faktor**. Denne faktoren brukes under beregning av arbeidsordreplanlegging for å bestemme kritikalitetsposten som skal brukes. (Posten som har den høyeste faktoren er alltid brukt.) Denne innstillingen er relevant hvis, som vist i illustrasjonen nedenfor, det opprettes kritikalitetslinjer som har samme kritikalitetsverdi.
 
-    ![Figur 1](media/23-setup-for-objects.png)
+    ![Siden Type kritisk aktivitet](media/23-setup-for-objects.png)
 
 ## <a name="set-up-asset-criticalities"></a>Definer kritiske forhold omkring aktiva
 

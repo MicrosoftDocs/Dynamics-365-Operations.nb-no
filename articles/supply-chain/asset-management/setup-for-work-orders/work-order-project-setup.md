@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-08-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 29f9975d8270b3f79d0aac0c62609b4a9c71ae89
-ms.sourcegitcommit: 802dbf0a744d70f9e546632d419415b0993331ab
+ms.openlocfilehash: 322e3ac6f7c37fffdd4d59ed86bccec10559f4b9
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "1874630"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2569783"
 ---
 # <a name="work-order-project-setup"></a>Prosjektoppsett for arbeidsordre
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 I modulen **Aktivastyring** kreves det en prosjektrelasjon for hver arbeidsordrejobb. Prosjektet som er knyttet til en arbeidsordrejobb, lar deg spore kostnader på forskjellige prosjekter som er relatert til Aktivastyring, for eksempel interne vedlikeholdsprosjekter, servicestyringsprosjekter og investeringsprosjekter. 
 
@@ -72,7 +72,7 @@ Oppsettet tillater fullstendig integrasjon med **Prosjektstyring og regnskap**-m
 
     Som standard er startdatoen datoen da du legger til arbeidsordreprosjektet på siden. Den styres av feltet **Gyldig fra**, som er skjult som standard. Hvis du vil vise **Gyldig fra**-feltet, velger du **Vis** \> **Alle**. Du kan deretter bruke **Gyldig fra**-feltet sammen med **Sluttdato**-feltet til å definere en begrenset gyldighetsperiode for arbeidsordreprosjektet.
 
-    ![Figur 1](media/17-setup-for-work-orders.png)
+    ![Siden for prosjektoppsett for arbeidsordre](media/17-setup-for-work-orders.png)
 
 6. I kategorien **Prosjektgruppe**, velg **Legg til**.
 7. Velg en arbeidsordretype i feltet **Arbeidsordretype**.
@@ -80,7 +80,7 @@ Oppsettet tillater fullstendig integrasjon med **Prosjektstyring og regnskap**-m
 9. I **Prosjektgruppe**-feltet velger du prosjektgruppen som skal knyttes til arbeidsordretypen. En arbeidsordretype med navnet **Forebyggende vedlikehold** kan for eksempel knyttes til en prosjektgruppe med navnet **Tidl vedl** eller **Intern**. Eventuelt kan arbeidsordretypen **Investering** som brukes for arbeidsordrer som er knyttet til investeringer og anleggsmidler, knyttes til en prosjektgruppe som heter **Invest** eller **Investering**.
 10. Velg **Lagre**.
 
-![Figur 2](media/18-setup-for-work-orders.png)
+![Siden for oppsett av arbeidsordrer, legg til arbeidsordre](media/18-setup-for-work-orders.png)
 
 > [!NOTE]
 > Hver gang det opprettes en arbeidsordrelinje, søker Aktivastyring etter en prosjektgruppe som skal knyttes til arbeidsordrejobbprosjektet. Søket er basert på oppsettet som er beskrevet i dette emnet. Hver prosjektgruppe har en tilknyttet prosjekttype. Prosjektgrupper som har prosjekttypen **Tid og materialer** eller **Fast pris**, er bare gyldige for anleggsmidler som er knyttet til en kundekonto.

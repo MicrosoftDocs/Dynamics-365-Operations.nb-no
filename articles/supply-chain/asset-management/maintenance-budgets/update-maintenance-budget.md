@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-08-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 486782968816cc585d9cf2d753f32e82f85e4f7e
-ms.sourcegitcommit: 802dbf0a744d70f9e546632d419415b0993331ab
+ms.openlocfilehash: 8f3b771319eeb602a371500fdc69c68f88afe341
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "1874791"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2571743"
 ---
 # <a name="update-maintenance-budgets"></a>Oppdatere vedlikeholdsbudsjetter
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 Siden **Vedlikeholdsbudsjettlinjer** viser alle budsjettlinjene som er opprettet for budsjettet som er valgt på siden **Vedlikeholdsbudsjetter**. (Hvis du vil ha mer informasjon, se [Opprette vedlikeholdsbudsjetter](create-maintenance-budget.md).) Du kan beregne på nytt og justere linjer for vedlikeholdsbudsjett til vedlikeholdsbudsjettet er godkjent. Når budsjettperioden er passert, og kostnadene er postert i Aktivastyring, kan du også oppdatere budsjettlinjene med faktiske kostnader.
 

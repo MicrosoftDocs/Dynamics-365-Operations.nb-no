@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-07-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 432a235668bbd969f497003a98b7f66390e5308f
-ms.sourcegitcommit: 2c73749779274e0b0abbcb4041bbc1df0fb6d6e4
+ms.openlocfilehash: 63f436ffd01ac56bb4bc0021e226dad46d7c3377
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "1790524"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2569921"
 ---
 # <a name="responsible-maintenance-workers"></a>Ansvarlige vedlikeholdsarbeidere
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 Ansvarlige vedlikeholdsarbeidere kan være relatert til aktivatyper, aktiva, arbeidssteder, kategorier for vedlikeholdsjobbtype, vedlikeholdsjobbtyper, varianter av vedlikeholdsjobbtype og fag. De kan brukes på arbeidsordrer og vedlikeholdsanmodninger for å angi en preferanse om vedlikeholdsarbeiderne som skal være ansvarlig for en arbeidsordre. (Disse vedlikeholdsarbeiderne er imidlertid ikke nødvendigvis de samme arbeiderne som er planlagt å utføre arbeidsordren.) Bruk av denne funksjonen er valgfritt. Den kan for eksempel brukes til å velge ansvarlige arbeidere eller arbeidergrupper for bestemte arbeidstyper eller arbeidsområder.
 
@@ -53,4 +53,4 @@ Før du kan definere ansvarlige vedlikeholdsarbeidere, må du definere arbeidere
 
 Illustrasjonen nedenfor viser et eksempel på siden **Ansarlige vedlikeholdsarbeidere**.
 
-![Figur 1](media/08-setup-for-requests.png)
+![Siden Ansvarlige vedlikeholdsarbeidere](media/08-setup-for-requests.png)

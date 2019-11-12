@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-03-16
 ms.dyn365.ops.version: 8.0.2
-ms.openlocfilehash: 2b755dcfbcdf41ada0302fc04f527ce7c309f4bb
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: a39654d4b6d74aa640db682fa052651736552db1
+ms.sourcegitcommit: bbb64b3475eef155b3f9d1bdc440545da8a7182f
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2186400"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "2553193"
 ---
 # <a name="one-voucher"></a>Ett bilag
 
@@ -51,7 +51,7 @@ Med den eksisterende funksjonaliteten for finansjournaler (generell journal, anl
 
 ## <a name="issues-with-one-voucher"></a>Problemer med Ett bilag
 
-Funksjonen Ett bilag forårsaker problemer under utligning, avgiftsberegning, transaksjonstilbakeføring, avstemming av en underfinansjournal til økonomimodulen, finansrapportering og så videre. (Hvis du for eksempel vil ha mer informasjon om problemer som kan oppstå under utligning, kan du se [Enkelt bilag med flere poster for kunde eller leverandør](https://docs.microsoft.com/dynamics365/unified-operations/financials/accounts-payable/single-voucher-multiple-customer-vendor-records).) Hvis du vil arbeide og rapportere riktig, krever disse prosessene og rapportene transaksjonsdetaljer. Selv om noen scenarier fremdeles kanskje fungerer på riktig måte, avhengig av oppsettet i organisasjonen, er det ofte problemer når flere transaksjoner er angitt på ett bilag.
+Funksjonen Ett bilag forårsaker problemer under utligning, avgiftsberegning, transaksjonstilbakeføring, avstemming av en underfinansjournal til økonomimodulen, finansrapportering og så videre. (Hvis du for eksempel vil ha mer informasjon om problemer som kan oppstå under utligning, kan du se [Enkelt bilag med flere poster for kunde eller leverandør](https://docs.microsoft.com/dynamics365/finance/accounts-payable/single-voucher-multiple-customer-vendor-records).) Hvis du vil arbeide og rapportere riktig, krever disse prosessene og rapportene transaksjonsdetaljer. Selv om noen scenarier fremdeles kanskje fungerer på riktig måte, avhengig av oppsettet i organisasjonen, er det ofte problemer når flere transaksjoner er angitt på ett bilag.
 
 La oss for eksempel si at du posterer følgende bilag med flere linjer.
 

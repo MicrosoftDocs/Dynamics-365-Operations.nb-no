@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 536795ac8ac164a6cc16e9ba22b0aa7bf30ddfd8
-ms.sourcegitcommit: 747bcd25ce7c6c20ce9eaa0027e730f74d4fd6aa
+ms.openlocfilehash: 6eba14e285f23338cad0243fca567b30c6d4d3f2
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "1783503"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2571582"
 ---
 # <a name="create-assets-based-on-purchase-orders"></a>Opprette aktiva basert på bestillinger
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 Dette emnet forklarer hvordan du kan opprette en liste over aktiva som kan brukes som grunnlag for oppretting av aktiva for vedlikeholdsjobber i Aktivastyring. Du kan vise en liste over bestillingslinjene som er opprettet på disse varene, basert på aktivavarene. Formålet med denne funksjonaliteten er å enkelt opprette et aktivum i Aktivastyring basert på en bestilling.
 

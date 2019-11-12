@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 42631e8a5ac03eda65bf0f6ede03fa40a5ed2c4e
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: bea02c6fe7b8e50be22be89eeb43a913851ddbfb
+ms.sourcegitcommit: 0099fb24f5f40ff442020b488ef4171836c35c48
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2250766"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "2653539"
 ---
 # <a name="demand-forecasting-overview"></a>Oversikt over behovsprognose
 
@@ -49,11 +49,11 @@ Tre viktige temaer er implementert i behovsprognose:
 
 -   **Modularitet** – behovsprognose er modulær og enkel å konfigurere. Du kan aktivere eller deaktivere funksjonen ved å endre konfigurasjonsnøkkelen på **Handel** &gt; **Lagerprognose** &gt; **Behovsprognose**.
 -   **Gjenbruk av Microsoft-stakken** – Microsoft startet Machine Learning-plattformen i februar 2015. Machine Learning, som nå er en del av Microsoft Cortana Analytics Suite, lar deg raskt og enkelt opprette prediksjonsanalyseeksperimenter, for eksempel behovsanslagseksperimenter, ved hjelp av algoritmene R eller Python programmeringsspråk og et enkelt dra-og-slipp-grensesnitt.
-    -   Du kan laste ned behovsprognoseeksperimenter, endre dem slik at de overholder dine forretningskrav, publisere dem som en webtjeneste på Azure og bruke dem til å generere behovsprognoser. Eksperimentene er tilgjengelige for nedlasting hvis du har kjøpt et abonnement for Finance and Operations for produksjonsplanlegger som bruker på virksomhetsnivå.
-    -   Du kan laste ned de tilgjengelige behovsprediksjonseksperimentene fra [Cortana Analytics Gallery](https://gallery.cortanaanalytics.com/). Mens behovsprognoseeksperimenter automatisk er integrert med Finance and Operations, må kunder og partnere håndtere integreringen av eksperimenter de laster ned fra [Cortana Analytics Gallery](https://gallery.cortanaanalytics.com/). Derfor er ikke eksperimenter fra [Cortana Analytics Gallery](https://gallery.cortanaanalytics.com/) like enkle å bruke som behovsprognoseeksperimenter for Finance and Operations. Du må endre koden for eksperimentene slik at de bruker Finance and Operations Application Programming Interface (API).
+    -   Du kan laste ned behovsprognoseeksperimenter, endre dem slik at de overholder dine forretningskrav, publisere dem som en webtjeneste på Azure og bruke dem til å generere behovsprognoser. Eksperimentene er tilgjengelige for nedlasting hvis du har kjøpt et abonnement for Supply Chain Management for produksjonsplanlegger som bruker på virksomhetsnivå.
+    -   Du kan laste ned de tilgjengelige behovsprediksjonseksperimentene fra [Cortana Analytics Gallery](https://gallery.cortanaanalytics.com/). Mens behovsprognoseeksperimenter automatisk er integrert med Supply Chain Management, må kunder og partnere håndtere integreringen av eksperimenter de laster ned fra [Cortana Analytics Gallery](https://gallery.cortanaanalytics.com/). Derfor er ikke eksperimenter fra [Cortana Analytics Gallery](https://gallery.cortanaanalytics.com/) like enkle å bruke som behovsprognoseeksperimenter for Finance and Operations. Du må endre koden for eksperimentene slik at de bruker Finance and Operations Application Programming Interface (API).
     -   Du kan opprette dine egne eksperimenter i Microsoft Azure Machine Learning Studio, publisere dem som tjenester på Azure og bruke dem til å generere behovsprognoser.
     -   Hvis du ikke trenger høy ytelse, eller hvis du ikke krever at en stor mengde data skal behandles, kan du bruke gratisnivået for Machine Learning. Vi anbefaler at du alltid starter fra dette nivået, spesielt ved implementerings- og testfaser. Hvis du trenger høyere ytelse og ekstra lagringsplass, kan du bruke standardnivået for Machine Learning. Dette nivået krever et abonnement på Azure og omfatter ekstra kostnader. For opplysninger om priser for Machine Learning kan du se [Machine Learning Studio-priser](https://aka.ms/machine-learning-price-info).
--   **Prognosereduksjon på et hvilket som helst frakoblingspunkt** – Behovsprognose i Finance and Operations bygger på denne funksjonaliteten, som lar deg prognostisere både avhengig og uavhengig behov på et hvilket som helst frakoblingspunkt.
+-   **Prognosereduksjon på et hvilket som helst frakoblingspunkt** – Behovsprognose bygger på denne funksjonaliteten, som lar deg prognostisere både avhengig og uavhengig behov på et hvilket som helst frakoblingspunkt.
 
 ## <a name="basic-flow-in-demand-forecasting"></a>Grunnleggende flyt i behovsprognose
 Diagrammet nedenfor viser grunnleggende flyt i behovsprognose. 
@@ -64,7 +64,7 @@ Generering av behovsprognose starter i Supply Chain Management. Historiske trans
 
 Hvis du bruker Machine Learning-eksperimentene behovsprognose, ser de etter en beste tilpasning blant tidsserieprognosemetoder for å beregne en basislinjeprognose. Parameterne for disse prognosemetodene styres i Supply Chain Management. 
 
-Prognosene, historiske data og eventuelle endringer som ble gjort i behovsprognosene i tidligere gjentakelser, er deretter tilgjengelige i Finance and Operations. 
+Prognosene, historiske data og eventuelle endringer som ble gjort i behovsprognosene i tidligere gjentakelser, er deretter tilgjengelige i Supply Chain Management. 
 
 Du kan bruke Supply Chain Management til å visualisere og endre basislinjeprognosene. Manuelle justeringer må være autorisert før prognosene kan brukes til planlegging.
 

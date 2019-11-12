@@ -3,7 +3,7 @@ title: Arbeidsordresamlinger
 description: Dette emnet beskriver hvordan du arbeider med arbeidsordresamlinger i Aktivastyring.
 author: josaw1
 manager: AnnBe
-ms.date: 08/15/2019
+ms.date: 10/15/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,95 +16,96 @@ ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: mkirknel
-ms.search.validFrom: 2019-08-15
+ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 069fa02073808fd7bbaac9bc1603e49ce4d450eb
-ms.sourcegitcommit: f5bfa3212bc3ef7d944a358ef08fe8863fd93b91
+ms.openlocfilehash: 161244cb4451ddc7b13b579fd02e828a61adeea4
+ms.sourcegitcommit: deb87e518a151d8bb084891851a39758938a96e4
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "1875820"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "2626368"
 ---
 # <a name="work-order-pools"></a>Arbeidsordresamlinger
 
-
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+
+Du kan bruke arbeidsordresamlinger til å gruppere arbeidsordrer som har noe til felles. Her er noen eksempler på ting du kan opprette arbeidsordresamlinger for:
+
+- Arbeidslag, for eksempel vedlikeholdslag A eller vedlikeholdslag B  
+
+- Fagkompetanse, for eksempel elektrikere og rørleggere  
+
+- Fysiske lokasjoner  
+
+- Tidsplaner, for eksempel uker eller andre perioder  
+
+Du kan du plassere én arbeidsordre i flere arbeidsordresamlinger, etter behov.
 
 
-Du kan bruke arbeidsordresamlinger til å gruppere arbeidsordrer som har noe til felles. Du kan for eksempel opprette arbeidsordresamlinger for
+## <a name="create-a-work-order-pool"></a>Opprette en arbeidsordresamling
 
-- arbeidslag, for eksempel vedlikeholdslag A, vedlikeholdslag B  
+På listesiden **Alle arbeidsordresamlinger** eller **Aktive arbeidsordresamlinger** kan du få en oversikt over arbeidsordresamlingene og opprette nye samlinger.
 
-- fagkompetanse, for eksempel elektrikere og rørleggere  
+1. Velg **Aktivastyring** > **Felles** > **Arbeidsordresamlinger** > **Alle arbeidsordresamlinger** eller **Aktive arbeidsordresamlinger**.
 
-- fysiske lokasjoner  
+2. Velg **Ny**.
 
-- tidsplaner, for eksempel uker eller andre perioder  
+3. Angi en ID for arbeidsordresamlingen i feltet **Pulje**.
 
+4. Angi et navn i **Navn**-feltet.
 
-Hvis det er nødvendig, kan én arbeidsordre plasseres i mange arbeidsordresamlinger.
+5. Sett alternativet **Aktiv** til **Ja** for å angi at arbeidsordresamlingen er aktiv.
 
+6. Sett alternativet **Slett arbeidsordrerelasjoner** til **Ja** hvis arbeidsordrer automatisk skal fjernes fra arbeidsordresamlingen.
 
-## <a name="create-work-order-pool"></a>Opprette arbeidsordresamling
+7. I feltet **Slett livssyklustilstand** velger du livssyklustilstanden for arbeidsordren. For eksempel kan livssyklustilstanden for arbeidsordre for å fullføre en arbeidsordre settes til å slette relasjoner til arbeidsordresamlinger automatisk.
 
-I **Alle arbeidsordresamlinger** eller **Aktive arbeidsordresamlinger** kan du få en oversikt over arbeidsordresamlingene og opprette nye samlinger.
+    Du kan begynne å legge til arbeidsordrer i arbeideordresamlingen med én gang.
 
-1. Klikk på **Aktivastyring** > **Felles** > **Arbeidsordresamlinger** > **Alle arbeidsordresamlinger** eller **Aktive arbeidsordresamlinger**.
+8. Velg **Legg til linje** på hurtigfanen **Arbeidsordrer**.
 
-2. Klikk på **Ny**.
+9. Velg en arbeidsordre i feltet **Arbeidsordre**. De tilknyttede feltene oppdateres automatisk.
 
-3. Sett inn en ID for arbeidsordresamling i **Samling**-feltet og et navn i **Navn**-feltet.
+10. Gjenta trinn 8 til og med 9 hvis du vil legge til flere arbeidsordrer.
 
-4. Velg Ja på **Aktiv**-veksleknappen for å angi at arbeidsordresamlingen er aktiv.
+11. Hvis arbeidsordrene du la til, skal utføres i en bestemt rekkefølge, kan du angi tallene **1**, **2**, **3** og så videre i feltet **Sorteringsrekkefølge** for å angi rekkefølgen.
 
-5. Velg Ja på veksleknappen **Slett arbeidsordrerelasjoner** hvis du vil at arbeidsordrer skal fjernes automatisk fra arbeidsordresamlingen.
+12. Hvis du vil vise en liste over alle arbeidsordrene som er inkludert i arbeidsordren, går du til handlingsruten, kategorien **Arbeidsordresamling**, gruppen **Vis arbeidsordresamlingsrelatert** og velger **Arbeidsordrer** for å åpne listesiden **Alle arbeidsordrer**.
 
-6. I feltet **Slett livssyklustilstand** velger du livssyklustilstanden for arbeidsordren. For eksempel kan livssyklustilstanden for arbeidsordre for å fullføre en arbeidsordre settes til å slette relasjoner til arbeidsordresamlinger automatisk.
+13. Hvis du vil beregne og vise kapasitetsbelastningen for vedlikeholdsplanen, ikke-planlagte arbeidsordrer og planlagte arbeidsordrer, går du til handlingsruten, kategorien **Arbeidsordresamling**, gruppen **Vis arbeidsordresamlingsrelatert** og velger **Kapasitetsbelastning** for å åpne dialogboksen **Beregn kapasitetsbelastning**.
 
-7. Du kan begynne å legge til arbeidsordrer i arbeideordresamlingen med én gang. Klikk på **Legg til linje** på hurtigfanen **Arbeidsordrer**.
+14. Hvis du vil beregne og vise prognoser for elementene (reservedeler og andre nødvendige varer) som er relatert til vedlikeholdsplanen, ikke-planlagte arbeidsordrer og planlagte arbeidsordrer, går du til handlingsruten, kategorien **Arbeidsordresamling**, gruppen **Vis arbeidsordresamlingsrelatert** og velger **Vareprognose** for å åpne dialogboksen **Beregn vareprognose**.
 
-8. Velg en arbeidsordre i feltet **Arbeidsordre**. De tilknyttede feltene oppdateres automatisk.
+15. Hvis du vil vise en liste over innkjøpsrekvisisjoner som er relatert til arbeidsordrene i arbeidsordresamlingen, går du til handlingsruten, kategorien **Arbeidsordresamling**, gruppen **Innkjøp** og velger **Innkjøpsrekvisisjon for arbeidsordre** for å åpne listesiden **Innkjøpsrekvisisjon for arbeidsordre**.
 
-9. Gjenta trinn 7-8 hvis du vil legge til flere arbeidsordrer.
-
-10. I feltet **Sorteringsrekkefølge** kan du angi om arbeidsordrene skal utføres i en bestemt rekkefølge. Sett inn tallene 1, 2, 3 og så videre for å angi en bestemt rekkefølge for de valgte arbeidsordrene.
-
-11. Klikk på **Arbeidsordrer**-knappen for å vise en liste over alle arbeidsordrene som er inkludert i arbeidsordresamlingen.
-
-12. Klikk på knappen **Kapasitetsbelastning** for å åpne **Kapasitetsbelastning** for å beregne og vise kapasitetsbelastning for vedlikeholdsplan, ikke-planlagte arbeidsordrer og planlagte arbeidsordrer.
-
-13. Klikk på knappen **Vareprognose** for å åpne **Vareprognose** for å beregne og vise prognoser for varer (reservedeler og andre nødvendige varer) knyttet til vedlikeholdsplan, ikke-planlagte arbeidsordrer og planlagte arbeidsordrer.
-
-14. Klikk på knappen **Innkjøpsrekvisisjon for arbeidsordre** for å åpne listen **Innkjøpsrekvisisjon for arbeidsordre** for å vise en liste over innkjøpsrekvisisjoner knyttet til arbeidsordrene i arbeidsordresamlingen.
-
-15. Klikk på knappen **Arbeidsordrekjøp** for å åpne listen **Arbeidsordrekjøp** for å vise en liste over bestillinger knyttet til arbeidsordrene i arbeidsordresamlingen.
+16. Hvis du vil vise en liste over bestillinger som er relatert til arbeidsordrene i arbeidsordresamlingen, går du til handlingsruten, kategorien **Arbeidsordresamling**, gruppen **Innkjøp** og velger **Innkjøp for arbeidsordre** for å åpne listesiden **Innkjøp for arbeidsordre**.
 
 >[!NOTE]
->Når en arbeidsordresamling ikke lenger er relevant for arbeidsplanleggingen, setter du **Aktiv**-avmerkingsboksen for denne samlingen til Nei i listevisningen **Arbeidsordresamling**.
+>Når en arbeidsordresamling ikke lenger er relevant for arbeidsplanleggingen, setter du alternativet **Aktiv** for denne samlingen til **Nei** i listevisningen på siden **Arbeidsordresamling**.
 
-Merk av for **Slett arbeidsordrerelasjoner** hvis du vil slette alle arbeidsordrelinjene, for eksempel for å opprette en tom samling som du kan bruke senere i andre arbeidsordrer. Husk å fjerne merket for **Slett arbeidsordrerelasjoner** hvis du vil bruke arbeidsordresamlingen til å opprette nye arbeidsordrerelasjoner senere.
+Hvis du vil slette alle arbeidsordrelinjer, setter du alternativet **Slett arbeidsordrerelasjoner** til **Ja**. Dette alternativet er nyttig hvis du for eksempel vil opprette et tomt utvalg som du kan bruke senere for andre arbeidsordrer. Når du er klar til å bruke arbeidsordresamlingen til å opprette nye arbeidsordrerelasjoner senere, må du huske å sette **Slett arbeidsordrerelasjoner** til **Nei**.
 
+Illustrasjonen nedenfor viser et eksempel på listesiden **Arbeidsordresamling**.
 
 ![Figur 1](media/22-work-orders.png)
 
 
-## <a name="add-work-order-to-a-work-order-pool"></a>Legge til arbeidsordre i en arbeidsordresamling
+## <a name="add-a-work-order-to-a-work-order-pool"></a>Legge til en arbeidsordre i en arbeidsordresamling
 
-Som beskrevet i delen ovenfor, kan du legge til arbeidsordrer i en arbeidsordresamling når du oppretter samlingen. Du kan også legge til en arbeidsordre i en arbeidsordresamling fra **Alle arbeidsordrer**-listen.
+Som beskrevet i forrige del, kan du legge til arbeidsordrer i en arbeidsordresamling når du oppretter samlingen. Du kan også legge til arbeidsordrer i en arbeidsordresamling på listesiden **Alle arbeidsordrer** eller **Aktive arbeidsordrer**.
 
-1. Klikk på **Aktivastyring** > **Felles** > **Arbeidsordrer** > **Alle arbeidsordrer** eller **Aktive arbeidsordrer**.
+1. Velg arbeidsordren, og deretter går du til handlingsruten, kategorien **Arbeidsordre**, gruppen **Vedlikehold** og velger **Arbeidsordresamling**.
 
 2. Velg arbeidsordren i listen, og klikk på **Arbeidsordresamling**.
 
-3. Velg Legg til i **Legg til / fjern**-feltet.
+3. I dialogboksen **Vedlikehold arbeidsordresamling** i feltet **Legg til/fjern** velger du **Legg til**.
 
-4. Velg arbeidsordresamlingen i **Samling**-feltet.
+4. Velg arbeidsordresamlingen i **Pulje**-feltet.
 
-5. Klikk **OK**.
+5. Velg **OK**.
 
-6. Når du har lagt til en arbeidsordre i en arbeidsordresamling, og du vil plassere arbeidsordren i en bestemt rekkefølge i puljen: Åpne en av listesidene for arbeidsordresamlinger, velg samlingen, klikk på **Rediger**, og juster sorteringsrekkefølgen for arbeidsordrene som er inkludert i samlingen, i **Arbeidsordresamling**-skjemaet > **Arbeidsordrer**-hurtigfanen > **Sorteringsrekkefølge**-feltet.
+6. Hvis du vil plassere arbeidsordren du la til, i en bestemt rekkefølge i arbeidsordreutvalget, går du til listesiden **Alle arbeidsordresamlinger** eller **Aktive arbeidsordresamlinger**, velger samlingen og deretter **Rediger**. Deretter, på siden **Arbeidsordresamling** i hurtigfanen **Arbeidsordrer**, bruker du feltet **Sorteringsrekkefølge** til å justere sorteringsrekkefølgen for arbeidsordrene som er inkludert i samlingen.
 
-Hvis du vil fjerne den valgte arbeidsordren fra en arbeidsordresamling, velger du Fjern i trinn 3.
+Hvis du vil fjerne en arbeidsordre fra en arbeidsordresamling, gjentar du disse trinnene, men velger **Fjern** i trinn 3.
 

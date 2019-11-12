@@ -18,24 +18,24 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 9091ff7a394cd08b68e78c8f668d7cd962003e6d
-ms.sourcegitcommit: 109a6ef2d20758dc4a25c51b11e22dd2214a1cc4
+ms.openlocfilehash: 65d95507e27ade373008e2046ac4691c271484ca
+ms.sourcegitcommit: fb66731f05207094149a6bc7b8549a4dabbb071a
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "1886776"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "2652454"
 ---
 # <a name="calculate-item-forecast"></a>Beregn vareprognose
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
-På samme måte som du kan foreta beregninger av kapasitetsbelastning, som beskrevet i den forrige delen, kan du også foreta beregninger av vareprognoser
+På samme måte som du kan foreta beregninger av kapasitetsbelastning, som beskrevet i den forrige delen, kan du også foreta beregninger av vareprognoser:
 
-- Linjer for vedlikeholdsplan  
-- Arbeidsordrer som ennå ikke er planlagt  
-- Planlagte arbeidsordrer
+- linjer for vedlikeholdsplan  
+- arbeidsordrer som ennå ikke er planlagt  
+- planlagte arbeidsordrer
 
 Dette er nyttig hvis du vil ha en oversikt over forventet vareforbruk (reservedeler i tillegg til andre varer som er nødvendige for å fullføre arbeidsordrer) for en bestemt periode. Beregning av vareprognose kan utføres for alle aktiva eller valgte aktiva. Du kan også foreta en beregning av en aktivitet for vedlikeholdsnedetid (**Alle aktiviteter for vedlikeholdsnedetid** eller **Aktive aktiviteter for vedlikeholdsnedetid**), eller en arbeidsordrepulje (**Alle arbeidsordrepuljer** eller **Aktive arbeidsordrepuljer**).
 
@@ -47,14 +47,16 @@ Dette er nyttig hvis du vil ha en oversikt over forventet vareforbruk (reservede
 
 4. Velg "Ja" på veksleknappen **Inkluder arbeidsordre** hvis du vil inkludere arbeidsordrejobber i prognoseberegningen.
 
-5. Du kan bruke **Nivå**-feltet til å angi hvor detaljert prognoselinjene skal være når det gjelder arbeidssted. Hvis du for eksempel setter inn tallet 1 i feltet, og du har en arbeidsstedsstruktur med flere nivåer, vises alle vedlikeholdsplanlinjene og arbeidsordrene for et arbeidssted på øverste nivå, og derfor kan det hende at timene på en linje blir lagt til fra arbeidssteder plassert på et lavere nivå. Hvis du setter inn tallet 0 i **Nivå**-feltet, vil du se et detaljert resultat som viser alle vedlikeholdsplanlinjene og alle arbeidsordrene på alle arbeidsstedsnivåene de er relatert til.
+5. Du kan bruke **Nivå**-feltet til å angi hvor detaljert prognoselinjene skal være når det gjelder arbeidssted. 
+
+      Hvis du for eksempel setter inn tallet 1 i feltet, og du har en arbeidsstedsstruktur med flere nivåer, vises alle vedlikeholdsplanlinjene og arbeidsordrene for et arbeidssted på øverste nivå, og derfor kan det hende at timene på en linje blir lagt til fra arbeidssteder plassert på et lavere nivå. 
+  
+      Hvis du setter inn tallet 0 i **Nivå**-feltet, vil du se et detaljert resultat som viser alle vedlikeholdsplanlinjene og alle arbeidsordrene på alle arbeidsstedsnivåene de er relatert til.
 
 6. Klikk på **OK** for å starte beregningen.
 
-7. I handlingsrutegruppene **Grupper etter...** klikker du de relevante knappene for å vise det nødvendige detaljnivået for beregningen. De valgte handlingsrutegruppeknappene vises i blått. Klikk på en knapp for å aktivere eller deaktivere den.
+7. I **Grupper etter...**-gruppene klikker du de relevante knappene for å vise det nødvendige detaljnivået for beregningen. I skjermbildet nedenfor er de valgte **Grupper etter**-knappene uthevet med blått. Klikk på en knapp for å aktivere eller deaktivere den.
 
 8. Klikk **Vis dimensjoner**-knappen hvis du vil se produkt-, lagrings- eller sporingsdimensjonene som er knyttet til varene. Merk av i de aktuelle avmerkingsboksene, og klikk **OK**.
-
-Figuren nedenfor viser et skjermbilde av grensesnittet.
 
 ![Figur 1](media/02-capacity-planning.png)

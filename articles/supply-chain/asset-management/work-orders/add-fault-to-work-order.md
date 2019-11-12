@@ -3,7 +3,7 @@ title: Legge til feil i arbeidsordre
 description: Dette emnet beskriver hvordan du legger til feilregistreringer i arbeidsordrer i Aktivastyring.
 author: josaw1
 manager: AnnBe
-ms.date: 08/15/2019
+ms.date: 10/15/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,41 +16,42 @@ ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: mkirknel
-ms.search.validFrom: 2019-08-31
+ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 7c86973ca44d9113d14e180e27cc51343da5d2c0
-ms.sourcegitcommit: f5bfa3212bc3ef7d944a358ef08fe8863fd93b91
+ms.openlocfilehash: 2b58cc31578d7bb102c6b5aa8b4ce2d6cfe8c893
+ms.sourcegitcommit: deb87e518a151d8bb084891851a39758938a96e4
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "1875824"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "2626207"
 ---
 # <a name="add-fault-to-work-order"></a>Legge til feil i arbeidsordre
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
 
 
-Du kan legge til feil som er definert i feilutformingen, i en arbeidsordre. Anleggsmiddelet som er valgt i arbeidsordren, må inneholde anleggsmiddeltyper som har én eller flere feilposter tilknyttet. Les mer om oppsett i delen [Feilstyring](../setup-for-work-orders/fault-management.md).
+Du kan legge til feil som er definert i feilutformingen, i en arbeidsordre. Én eller flere feilposter må knyttes til aktivatyper som brukes for aktivumet som velges i arbeidsordren. Hvis du vil ha mer informasjon om det generelle oppsettet for vurdering, kan du se [Feilstyring](../setup-for-work-orders/fault-management.md).
 
-1. Klikk på **Aktivastyring** > **Felles** > **Arbeidsordrer** > **Alle arbeidsordrer** eller **Aktive arbeidsordrer**.
+1. Velg **Aktivastyring** > **Felles** > **Arbeidsordrer** > **Alle arbeidsordrer** eller **Aktive arbeidsordrer**.
 
-2. I listen velger du arbeidsordren du vil utføre en feilregistrering for, og klikker på **Aktivumfeil**.
+2. Velg arbeidsordren det skal utføres en feilregistrering på, og deretter går du til handlingsruten, kategorien **Arbeidsordre**, gruppen **Aktiva** og velger **Aktivumfeil**.
 
-3. Klikk på **Legg til linje** på hurtigfanen **Symptomer**. Et sekvensielt feilnummer settes automatisk inn i **Feil**-feltet.
+3. Velg **Legg til linje** på hurtigfanen **Symptomer**. Et sekvensielt feilnummer settes automatisk inn i **Feil**-feltet.
 
 4. Velg det relevante symptomet i **Feilsymptom**-feltet.
 
-5. Velg **Feilområde** og **Feiltype**.
+5. Velg de aktuelle verdiene i feltene **Feilområde** og **Feiltype**.
 
-6. Den gjeldende datoen settes automatisk inn i **Feildato**-feltet. Hvis det er nødvendig, kan du velge en annen dato.
+6. Den gjeldende datoen settes automatisk inn i **Feildato**-feltet. Du kan velge en annen dato etter behov.
 
 7. I hurtigfanen **Årsaker til valgte symptom** legger du til en linje som beskriver årsaken til problemet.
 
-8. I hurtigfanen **Løsninger på valgte symptom** legger du til en linje som beskriver en mulig løsning problemet.
+8. I hurtigfanen **Løsninger på valgte symptom** legger du til en linje som beskriver en mulig løsning på problemet.
 
-9. Klikk **Lagre**.
+9. Velg **Lagre**.
+
+Illustrasjonen nedenfor viser et eksempel på en feilregistrering.
 
 ![Figur 1](media/19-work-orders.png)
 
@@ -59,23 +60,23 @@ Du kan legge til feil som er definert i feilutformingen, i en arbeidsordre. Anle
 
 I listen **Aktivumfeil** kan du få en oversikt over alle feilene som er registrert på aktiva.
 
-Klikk **Aktivastyring** > **Forespørsler** > **Aktivumfeil** > **Aktivafeil** for å åpne listen.
+På listesiden **Aktivumfeil** kan du få en oversikt over alle feilene som er registrert på aktiva. Velg **Aktivastyring** > **Forespørsler** > **Aktivafeil** > **Aktivafeil** for å åpne listen.
 
 
 ## <a name="print-asset-fault-report"></a>Skriv ut rapport for aktivumfeil
 
 Fra listesiden **Alle aktiva** kan du skrive ut en rapport om aktivumfeil som viser alle feilregistreringer, i tillegg til en grafisk oversikt over feilstatistikk.
 
-1. Klikk på **Aktivastyring** > **Felles** > **Aktiva** > **Alle aktiva**.
+1. Velg **Aktivastyring** > **Felles** > **Aktiva** > **Alle aktiva**.
 
-2. I listen **Aktiva** velger du aktivumet du vil skrive ut en feilrapport for.
+2. Velg aktivumet det skal skrives ut en rapport for.
 
-3. I fanen **Generelt** > **delen Rapporter** klikker du **Aktivumfeil**.
+3. I handlingsruten velger du fanen **Generelt** i gruppen **Rapporter** og deretter **Aktivafeil**.
 
 4. Sett inn en bestemt periode, eller velg en feiltype.
 
 5. Velg **OK** for å skrive ut rapporten.
 
 >[!NOTE]
->Du kan også skrive ut en feilrapport for flere aktiva eller aktivatyper ved å klikke **Aktivastyring** > **Rapporter** > **Aktiva** > **Aktivafeil**.
+>For å skrive ut en feilrapport for flere aktiva eller aktivatyper, velg **Aktivastyring** > **Rapporter** > **Aktiva** > **Aktivafeil**.
 

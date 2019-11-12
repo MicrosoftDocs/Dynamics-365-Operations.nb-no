@@ -3,7 +3,7 @@ title: Automatisk oppdatering av anleggsmiddeltellere
 description: Dette emnet beskriver automatisk oppdatering av aktivatellere i Aktivastyring.
 author: josaw1
 manager: AnnBe
-ms.date: 08/15/2019
+ms.date: 10/15/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,52 +16,57 @@ ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: mkirknel
-ms.search.validFrom: 2019-08-15
+ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 97e6912cd37d6f82d8bf022141f04645a3364ee1
-ms.sourcegitcommit: f5bfa3212bc3ef7d944a358ef08fe8863fd93b91
+ms.openlocfilehash: d51b9a7684e460d555632c3896e9dd8a4e10d92c
+ms.sourcegitcommit: deb87e518a151d8bb084891851a39758938a96e4
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "1875826"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "2626184"
 ---
 # <a name="automatic-update-of-asset-counters"></a>Automatisk oppdatering av anleggsmiddeltellere
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+Hvis du vil ha informasjon om manuell registrering av aktivatellere, se [Manuell oppdatering av aktivatellere](../work-orders/manual-update-of-asset-counters.md) Hvis du vil ha informasjon om hvordan du definerer aktivatellere, se [Tellere](../setup-for-objects/counters.md).
 
-I den forrige delen beskrives manuell registrering av anleggsmiddeltellere. Oppsett av anleggsmiddeltellere beskrives i [Tellere](../setup-for-objects/counters.md).
+Tellerverdier kan også oppdateres automatisk fra produksjonsregistreringer, basert på produksjonstimer eller produksjonsantall (dvs. antallet som produseres). Denne oppdateringen utføres på siden **Oppdater aktivatellere**. Du kan oppdatere ett eller flere aktiva ved å angi én parameter, **Fra dato**. Denne parameteren angir startdatoen for produksjonsregistreringer (produksjonstimer eller produksjonsantall). Den angir med andre ord datoen som tellerverdiene skal oppdateres fra.
 
-Tellerverdier kan også oppdateres automatisk fra produksjonsregistreringer, basert på produksjonstimer eller produksjonsantall. Dette gjøres i **Oppdater anleggsmiddeltellere**. Du kan oppdatere ett eller flere anleggsmidler ved å sette inn én parameter, **Fra dato**. Denne parameteren angir startdatoen for produksjonsregistreringer (timer eller produsert antall), som betyr startdatoen som tellerverdier skal oppdateres fra.
+Alle aktiva som er relatert til en ressurs *og* som har aktivatellere som er definert til å oppdateres basert på produksjonstimene eller produksjonsantallet, blir inkludert i en automatisk oppdatering. Nye tellerverdier blir opprettet.
 
-Alle aktiva som er relatert til en ressurs *og* og har anleggsmiddeltellere, som er definert til å oppdateres basert på produsert antall eller produksjonstimer, blir inkludert i en automatisk oppdatering, og nye tellerverdier blir opprettet.
+For tellere som er basert på produksjonsantallet, inneholder tellingen både antall korrekte og antall feil som er registrert. Hvis enheten som brukes til registrering av produsert antall, er forskjellig fra enheten som brukes for telleren, konverteres antallet slik at det samsvarer med tellerenheten.
 
-Når det gjelder tellere basert på produksjonsantall, blir både korrekt antall og feil antall registrert i tellingen. Hvis enheten som brukes til registrering av produsert antall, er forskjellig fra enheten som brukes på telleren, konverteres antallet for å samsvare med tellerenheten.
+Som nevnt ovenfor kan automatiske tellere oppdateres fra produksjonsregistreringer. Derfor må anleggsmiddelet du vil oppdatere tellere automatisk for, være relatert til en ressurs (maskin). Når produsert antall eller produksjonstimer er registrert på ressursen, kan du oppdatere de tilknyttede anleggsmiddeltellerne.
 
-Som nevnt ovenfor kan automatiske tellere oppdateres fra produksjonsregistreringer. Derfor må anleggsmiddelet du vil oppdatere tellere automatisk for, være relatert til en ressurs (maskin). Beskrivelsene nedenfor gir en oversikt over oppsett og behandling av produksjonsordrer (i modulen for **produksjonskontroll**), som brukes som et grunnlag for automatisk oppdatering av tellere for et anleggsmiddel i modulen **Aktivastyring**.
-
-Når produsert antall eller produksjonstimer er registrert på ressursen, kan du oppdatere de tilknyttede anleggsmiddeltellerne.
-
-1. Klikk på **Aktivastyring** > **Periodisk** > **Aktiva** > **Oppdater anleggsmiddeltellere**.
+1. Velg **Aktivastyring** > **Periodisk** > **Aktiva** > **Oppdater aktivatellere**.
 
 2. Velg startdatoen for den automatiske oppdateringen i **Fra dato**-feltet.
 
 >[!NOTE]
 >Datoen i dette feltet er datoen for arbeid som pågår fra **Rutetransaksjoner** (**Produksjonskontroll** > **Forespørsler og rapporterer** > **Produksjon** > **Rutetransaksjoner** > **Fysisk dato**-feltet).
 
-3. Hvis du vil velge bestemte aktiva, aktivatyper eller ressurser for den automatisk oppdateringen, klikker du på **Filter** i hurtigfanen **Poster som skal inkluderes**, og gjør de aktuelle valgene.
+3. I hurtigfanen **Poster som skal inkluderes** kan du velge bestemte aktiva, aktivatyper eller ressurser for den automatiske oppdateringen. Velg **Filter**, og gjør de relevante valgene.
 
-4. På hurtigfanen **Kjør i bakgrunnen** kan du definere den automatiske oppdateringen som en satsvis jobb, om nødvendig.
+4. På hurtigfanen **Kjør i bakgrunnen** kan du definere den automatiske oppdateringen som en satsvis jobb, slik du ønsker.
+
+Illustrasjonen nedenfor viser et eksempel på dialogboksen **Oppdater aktivatellere**.
 
 ![Figur 1](media/12-work-orders.png)
 
-5. Klikk **OK**. Når den automatiske oppdateringen av anleggsmiddelteller er utført, kan du se tellerregistreringene som er knyttet til aktivumet i **Aktivatetellere** (**Aktivastyring** > **Felles** > **Aktiva** > **Alle aktiva** > velg aktivum **Tellere** -knappen).
+5. Velg **OK**. 
 
-I **Aktivateller totalt** kan du få en oversikt over den siste registreringen utført på alle tellertyper på alle anleggsmidler. Klikk **Aktivastyring** > **Forespørsler** > **Aktiva** > **Akkumulert verdi for aktivum**. Visningen ligner veldig **Aktivatellere**, men du kan ikke legge til eller redigere registreringer i **Akkumulert verdi for aktivum**. Den gjelder bare for oversikt.
+Når oppdateringen for den automatiske aktivatelleren er utført, kan du vise tellerregistreringer som er knyttet til aktivumet, på siden **Aktivatellere**. Velg **Aktivabehandling** > **Felles** > **Aktiva** > **Alle aktiva**, velg aktivumet, gå til handlingsruten, kategorien **Aktiva**, gruppen **Foregyggende**, og velg **Tellere**.
+
+På siden **Akkumulert verdi for aktivum** kan du få en oversikt over den siste registreringen som er utført på alle tellertyper på alle aktiva. Velg **Aktivastyring** > **Forespørsler** > **Aktiva** > **Akkumulert verdi for aktivum**. Denne siden ligner på siden **Aktivatellere**, men du kan ikke legge til eller redigere registreringer. Den er bare en oversikt.
+
+Illustrasjonen nedenfor viser et eksempel på siden **Akkumulert verdi for aktivum**.
 
 ![Figur 2](media/13-work-orders.png)
 
+Merk følgende punkt:
 
-- Det er fremdeles mulig å opprette manuelle registreringer av tellerverdi for tellertyper som oppdateres automatisk. Se delen "Manuell oppdatering av anleggsmiddeltellere" hvis du vil ha mer informasjon.
-- Du kan definere tellere relatert til en annen teller, som betyr at når en teller oppdateres, oppdateres relaterte tellere automatisk samtidig. Se emnet [Tellere](../setup-for-objects/counters.md) om oppsett av relaterte tellere.
+- Det er fremdeles mulig å opprette manuelle registreringer av tellerverdi for tellertyper som oppdateres automatisk. Se [Manuell oppdatering av anleggsmiddeltellere](../work-orders/manual-update-of-asset-counters.md) hvis du vil ha mer informasjon.
+
+- Du kan definere tellere som er relatert til en annen teller. I dette tilfellet oppdateres tilknyttede tellere automatisk samtidig når en teller oppdateres. Hvis du vil ha informasjon om hvordan du definerer relaterte tellere, se [Tellere](../setup-for-objects/counters.md).
+

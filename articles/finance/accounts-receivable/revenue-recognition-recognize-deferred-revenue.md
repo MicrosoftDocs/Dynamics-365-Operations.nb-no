@@ -16,20 +16,19 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
-ms.openlocfilehash: 244321e1eb246c46260326a8892924d9d9da75d3
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: ace1d00ec25a57b26b1858369c32d9134a380977
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2176041"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2570362"
 ---
 # <a name="recognize-deferred-revenue"></a>Føre utsatt inntekt
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 > [!NOTE]
-> Funksjonen Inntektsføring kan ikke aktiveres via Funksjonsbehandling ennå. For øyeblikket må du bruke konfigurasjonsnøkler for å aktivere den.
+> Funksjonen Inntektsføring kan ikke aktiveres via Funksjonsbehandling. For øyeblikket må du bruke konfigurasjonsnøkler for å aktivere den.
 
 Dette emnet beskriver prosessen med å føre inntekt i inntektsføringsplanen. Etter at en faktura er postert for en salgsordre, blir det opprettet en inntektsføringsplan for hver salgsordrelinje som har en inntektsplan. Inntektsplanen på en linje brukes til å bestemme om linjens inntekt skal utsettes.
 

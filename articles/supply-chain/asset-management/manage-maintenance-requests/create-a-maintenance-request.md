@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: e97d96a5485f17d0abc7c2fc2f8c4fdf4bbd4bb4
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: 7fc9ec2f6a9a8a11d824e4b5c13d5aa173541454
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2024643"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2571927"
 ---
 # <a name="create-maintenance-requests"></a>Opprette vedlikeholdsforespørsler
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 Vedlikeholdsforespørsler kan brukes hvis vedlikeholdsarbeidere eller produksjonsarbeidere oppdager at utstyr krever reparasjon, men reparasjonsjobben kan ikke utføres med en gang.
 
@@ -55,7 +55,7 @@ Delen **Aktive vedlikeholdsforespørsler** i ruten **Relatert informasjon** til 
 11. Angi eventuelle tilleggsmerknader i feltet **Notater**.
 12. Velg **OK**.
 
-![Figur 1](media/03-manage-maintenance-requests.png)
+![Opprett forespørsel om vedlikehold](media/03-manage-maintenance-requests.png)
 
 ## <a name="subsequent-processing-of-maintenance-requests"></a>Påfølgende behandling av vedlikeholdsforespørsler
 
@@ -70,7 +70,7 @@ I detaljvisningen kan du oppdatere forskjellig informasjon. Her er noen eksemple
 - Velg en vedlikeholdsjobbtype og, hvis denne informasjonen er relevant, en relatert vedlikeholdsjobbvariant og et jobbfag.
 - Angi geografiske koordinater i feltene **Breddegrad** og **Lengdegrad**. Alle koordinater som legges til i en vedlikeholdsforespørsel, overføres automatisk til en relatert arbeidsordre. 
 
-![Figur 2](media/04-manage-maintenance-requests.png)
+![Oppdatere vedlikeholdsforespørsel](media/04-manage-maintenance-requests.png)
 
 > [!NOTE]
 > Hvis du velger et aktivum når du oppretter en vedlikeholdsforespørsel, kan du legge til én feil i aktivumet. Etter at vedlikeholdsforespørselen er opprettet, kan du legge til flere feil, etter behov. Hvis du vil legge til feil, velger du **Aktivafeil** på siden **Alle vedlikeholdsforespørsler**.

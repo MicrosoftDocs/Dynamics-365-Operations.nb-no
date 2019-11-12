@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0f38253317ed8f06318fc501511ca5263a614e20
-ms.sourcegitcommit: 747bcd25ce7c6c20ce9eaa0027e730f74d4fd6aa
+ms.openlocfilehash: 5c2a4052f9beca554932d7f2547288e02358b603
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "1783485"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2571513"
 ---
 # <a name="multi-level-assets"></a>Aktiva på flere nivåer
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 Dette emnet forklarer hvordan du oppretter og sletter aktiva på flere nivåer. Du kan opprette aktiva og relaterte underaktiva i en hierarkisk trestruktur. På denne måten kan du vise relasjoner og avhengigheter blant aktiva. Vedlikeholdsjobber kan knyttes til alle nivåer i trestrukturen. Statistikk kan også opprettes for et enkeltnivå eller som en sum for alle underaktivanivåer.
 

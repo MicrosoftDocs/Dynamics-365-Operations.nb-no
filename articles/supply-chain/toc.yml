@@ -42,6 +42,8 @@
               items:
                 - name: Distribusjonsalternativer
                   href: ../fin-ops-core/dev-itpro/deployment/choose-deployment-type.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Sammenligning av skyfunksjoner og lokale funksjoner
+                  href: ../fin-ops-core/fin-ops/get-started/cloud-prem-comparison.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Skydistribusjon
                   href: ../fin-ops-core/dev-itpro/deployment/cloud-deployment-overview.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Systemkrav for skydistribusjoner
@@ -60,16 +62,20 @@
                   href: ../fin-ops-core/dev-itpro/deployment/france-local-deployment.md?toc=/dynamics365/supply-chain/toc.json
             - name: Hva er nytt eller endret
               items:
-                - name: Startside for Hva er nytt eller endret
-                  href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md
-                - name: Forhåndsvisningsfunksjoner i Finance and Operations-apper 10.0.6 (november 2019)
-                  href: ../fin-ops-core/fin-ops/get-started/whats-new-changed-10-0-6.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Finance and Operations-apper 10.0.5 (oktober 2019)
-                  href: ../fin-ops-core/fin-ops/get-started/whats-new-changed-10-0-5.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Finance and Operations 10.0.4 (juli 2019)
-                  href: ../fin-ops-core/fin-ops/get-started/whats-new-changed-10-0-4.md?toc=/dynamics365/supply-chain/toc.json
-                - name: 'Finance and Operations, Enterprise edition 7.3'
-                  href: ../fin-ops-core/fin-ops/get-started/whats-new-application-7.3-update.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Forhåndsvisningsfunksjoner i versjon 10.0.7 av Supply Chain Management (desember 2019)
+                  href: get-started/whats-new-scm-10-0-7.md
+                - name: Supply Chain Management 10.0.6 (november 2019)
+                  href: get-started/whats-new-scm-10-0-6.md
+                - name: Nyheter eller endringer i de forrige versjonene
+                  items:
+                    - name: Startsiden Hva er nytt eller endret i Finance and Operations
+                      href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Finance and Operations-apper 10.0.5 (oktober 2019)
+                      href: ../fin-ops-core/fin-ops/get-started/whats-new-changed-10-0-5.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Finance and Operations 10.0.4 (juli 2019)
+                      href: ../fin-ops-core/fin-ops/get-started/whats-new-changed-10-0-4.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: 'Finance and Operations, Enterprise edition 7.3'
+                      href: ../fin-ops-core/fin-ops/get-started/whats-new-application-7.3-update.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Funksjoner som er fjernet eller avskrevet
                   href: ../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md?toc=/dynamics365/supply-chain/toc.json
                 - name: AX 2012-funksjoner som er utsatt
@@ -1687,8 +1693,6 @@
                       href: production-control/register-material-consumption-hand-held-device.md
                     - name: Kontrollere råvareforbruk ved å bruke trekkprinsipper
                       href: production-control/flushing-principles.md
-                    - name: Direkteoverføring fra produksjonsordrer til utleveringsporter
-                      href: production-control/cross-docking-opportunities.md
                     - name: Angi produksjonsutleveringsstedet for ferdigvarer
                       href: production-control/production-output-location.md
                     - name: Rapportere stykklister som ferdigstilte
@@ -2285,6 +2289,12 @@
                   href: warehousing/manage-warehouse-workers.md
                 - name: Utsatt behandling av lagerarbeid
                   href: warehousing/deferred-put.md
+            - name: Direkteoverføring
+              items:
+                - name: Direkteoverføring fra produksjonsordrer til utleveringsporter
+                  href: production-control/cross-docking-opportunities.md
+                - name: Automatisk frigivelse av forsendelse for kryssoverføring
+                  href: warehousing/auto-release-shipment-for-cross-docking.md
             - name: Delvis frigivelse og delvis forsendelse
               items:
                 - name: Delvis forsendelse av transportlast
@@ -2311,6 +2321,8 @@
                   href: warehousing/tasks/set-up-manual-packing-2016-02-05.md
                 - name: Definere ny tildeling av vare for plukking med mangler
                   href: warehousing/tasks/set-up-short-picking-item-reallocation.md
+                - name: Avbryte lagerarbeid for unntaksbehandling
+                  href: warehousing/cancel-warehouse-work.md
             - name: Lageropptelling
               items:
                 - name: Årsakskoder for lagertelling

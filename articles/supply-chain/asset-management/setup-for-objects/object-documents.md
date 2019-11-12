@@ -18,22 +18,22 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c5b791fd3e060c4f4ecdb1ca599a6041d421db74
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: 5b830d835d99122a8c0572481f4c229c37d97d0c
+ms.sourcegitcommit: 0099fb24f5f40ff442020b488ef4171836c35c48
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2024541"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "2653257"
 ---
 # <a name="asset-documents"></a>Aktivadokumenter
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 Dette emnet beskriver aktivadokumenter i Aktivastyring.
 
-I Aktivastyring kan du definere dokumenter slik at de automatisk er knyttet til jobbtyper, aktivaprodusenter, aktivatyper eller aktiva. Denne funksjonaliteten er nyttig når det utgis oppdaterte dokumentversjoner. I så fall må du bare plassere det oppdaterte dokumentet på standardstedet du bruker for Finance and Operations-dokumentene, og knytte dokumentet til aktivadokumentposten du har opprettet. Du får da tilgang til det oppdaterte dokumentet fra menyelementene **Alle aktiva**, **Aktive aktiva**, **Mine aktiva aktiva**, **Alle arbeidsordrer** og **Aktive arbeidsordrejobber**. Prosessen for å knytte dokumenter til en aktivadokumentpost bruker standardsystemet for dokumenthåndtering.
+I Aktivastyring kan du definere dokumenter slik at de automatisk er knyttet til jobbtyper, aktivaprodusenter, aktivatyper eller aktiva. Denne funksjonaliteten er nyttig når det utgis oppdaterte dokumentversjoner. I så fall må du bare plassere det oppdaterte dokumentet på standardstedet du bruker for Supply Chain Management-dokumentene, og knytte dokumentet til aktivadokumentposten du har opprettet. Du får da tilgang til det oppdaterte dokumentet fra menyelementene **Alle aktiva**, **Aktive aktiva**, **Mine aktiva aktiva**, **Alle arbeidsordrer** og **Aktive arbeidsordrejobber**. Prosessen for å knytte dokumenter til en aktivadokumentpost bruker standardsystemet for dokumenthåndtering.
 
 **Eksempel 1:** Et dokument som er relatert til en jobbtype, kan beskrive en fremgangsmåte for denne jobbtypen.
 

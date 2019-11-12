@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-08-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: d2c748fd230796643f1ed6279743da532e7cb320
-ms.sourcegitcommit: 802dbf0a744d70f9e546632d419415b0993331ab
+ms.openlocfilehash: 99f76c684150f154404cbb241daacb7a8d05f7f9
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "1874814"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2571766"
 ---
 # <a name="create-maintenance-budgets"></a>Opprette vedlikeholdsbudsjetter
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 
 
@@ -53,7 +53,7 @@ Vedlikeholdsbudsjetter er basert på kosttypene som brukes i Aktivastyring: **Fo
     > [!NOTE]
     > Når du har godkjent et vedlikeholdsbudsjett, kan du ikke beregne på nytt eller justere de relaterte linjene på siden **Vedlikeholdsbudsjettlinjer** hvis du ikke først fjerner godkjenningen. Hvis du vil fjerne godkjenningen av et vedlikeholdsbudsjett, velger du det på siden **Vedlikeholdsbudsjetter** og velger deretter **Godkjenn**. Deretter velger **OK** i dialogboksen **Godkjenn budsjett**.
 
-![Figur 1](media/01-maintenance-budgets.png)
+![Vedlikeholdsbudsjetter](media/01-maintenance-budgets.png)
 
 Du kan også opprette et nytt vedlikeholdsbudsjett ved å kopiere et eksisterende budsjett. På siden **Vedlikeholdsbudsjetter** velger du budsjettet du vil kopiere, og deretter velger du **Kopier**. Denne fremgangsmåten er nyttig hvis du for eksempel har opprettet et budsjett for én måned og vil kopiere det til andre måneder.
 

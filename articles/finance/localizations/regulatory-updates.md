@@ -3,7 +3,7 @@ title: Forskriftsmessige oppdateringer
 description: Dette emnet inneholder en liste over planlagte og frigitte forskriftsmessige oppdateringer for Microsoft Dynamics 365 Finance.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 09/30/2019
+ms.date: 10/23/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: dc5a9669a9c6c298a4f9df52346b8a075ba177e0
-ms.sourcegitcommit: a4e1a28b4733f3356e5a2237c8ba5d93f9799391
+ms.openlocfilehash: adb88a5fb79b24a26aa2976464d3e838922322c6
+ms.sourcegitcommit: 0099fb24f5f40ff442020b488ef4171836c35c48
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "2517317"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "2653210"
 ---
 # <a name="regulatory-updates"></a>Forskriftsmessige oppdateringer
 
@@ -28,9 +28,7 @@ ms.locfileid: "2517317"
 
 Dette emnet viser de forskriftsmessige oppdateringene som er planlagt og utgitt i Dynamics 365 Finance-støttede lokaliseringer. Leveringstidslinjer kan bli endret, og forventet funksjonalitet kan være forskjellig eller blir kanskje ikke utgitt. Les [Microsofts-policy](https://go.microsoft.com/fwlink/p/?linkid=2007332) for mer informasjon. 
 
-Forskriftsmessige oppdateringer er funksjoner som er implementert for å støtte ny eller endret landspesifikk lovgivning. Hvis du vil ha mer informasjon om andre planlagte og utgitte landsspesifikke funksjoner, kan du se følgende ressurser:
-- [Produktmerknader for Dynamics 365 og Power Platform](https://docs.microsoft.com/business-applications-release-notes/index)
-- [Nyheter for Microsoft Dynamics 365 for Finance and Operations](../../fin-and-ops/get-started/whats-new-changed.md)
+Forskriftsmessige oppdateringer er funksjoner som er implementert for å støtte ny eller endret landspesifikk lovgivning. Hvis du vil ha mer informasjon om planlagte og utgitte landsspesifikke funksjoner, kan du se [Lanseringsplaner for Dynamics 365 og Power Platform](https://docs.microsoft.com/business-applications-release-notes/index).
 
 Microsoft arbeider for å implementere nye lovbestemte krav så tidlig som mulig. Den faktiske leveringsdatoen avhenger av kunngjøringsdatoen for loven, tilgjengeligheten til kravdetaljene fra de lokale myndighetene, tilgjengeligheten av verktøyene for validering og størrelsen og kompleksiteten i endringen.
 
@@ -44,13 +42,19 @@ For de siste forskriftsmessige oppdateringsplanene kan du se tabellen nedenfor.
 
 |Planlagt utgivelsesdato|Versjon|Land|Forskriftsmessig oppdatering|
 |--------------------|---------------|-------|-------|
-|      August 2019          |   10.0.6(PEAP), 10.0.5HF, 10.0.4HF, 10.0.3HF      | Brasil      |   En ny versjon av tekniske notater for NF-e: NT 2019.001 versjon 1.10    |
-|      August 2019          |   10.0.6(PEAP), 10.0.5HF, 10.0.4HF, 10.0.3HF      | Brasil      |   En ny versjon av tekniske notater for NF-e: NT 2019.001 versjon 1.20    |
-|      August 2019          |   10.0.6(PEAP)      | Brasil      |   DRCST-deklarering SC   |
-|      August 2019          |   10.0.6(PEAP), 10.0.5HF      | Brasil     |   Ny lovgivning implementeres av RJ-tilstand relatert til EFD-ICMS/IPI. Vedtak 13/19 av Rio de Janeiro-implementeringen (RJ), er for "Spesielle prosedyrer som skal brukes ved fritak     |
-|      August 2019          |   10.0.6(PEAP)      | Brasil      |   Avgiftsoppgave CAT 42/18    |
-|      August 2019          |   10.0.6(PEAP)      | Italia      |   Endringer i mva-styring etter D.L. 119 av 23. oktober 2018 – Dynamics 365 for Finance and Operations v.10.0.6  |
-|      August 2019          |   10.0.6(PEAP), 10.0.5HF, 10.0.4HF, 10.0.3HF      | Japan      |   Endringer i forbruksavgiftssats og redusert mva-sats introduseres    |
+|      November 2019          |   10.0.7(PEAP)      | Italia      |   Endringer i mva-styring etter D.L. 119 av 23. okt. 2019: Kvartalsvis mva-kommunikasjon ("Lipe 2018")    |
+|      November 2019          |   10.0.7(PEAP)      | Italia      |   Retail – Administrere kundeinformasjon på salgssted |
+|      November 2019          |   10.0.7(PEAP)      | Italia      |   Retail – Skrive ut kundeinformasjon på bilagskvittering | 
+|      November 2019          |   10.0.7(PEAP)      | Japan      |   Endring i forbrukssats og redusert mva-sats introduseres (fakturaoppsett) | 
+|      November 2019          |   10.0.7(PEAP)      | Mexico      |   Oppdaterer regel 2.7.2.9 – Bruke tidssonen for postnummeret til bedriften som utsteder CFDI-dokumentet | 
+|      November 2019          |   10.0.7(PEAP)      | Storbritannia     |   Gjøre mva digital – Oppretting av rapport for mva-retur for selskaper som rapporterer som mva-gruppe innenfor samme systemdatabase v.10 | 
+|      November – august 2019          |   10.0.7(PEAP), 10.0.6, 10.0.5HF, 10.0.4HF, 10.0.3HF      | Brasil      |   En ny versjon av tekniske notater for NF-e: NT 2019.001 versjon 1.20    |
+|      November – august 2019          |   10.0.7(PEAP), 10.0.6      | Brasil      |   DRCST-deklarering SC   |
+|      November – august 2019          |   10.0.7(PEAP), 10.0.6      | Italia      |   Endringer i mva-styring etter D.L. 119 av 23. okt 2018 – Dynamics 365 for Finance and Operations  |
+|      August 2019          |   10.0.6, 10.0.5HF, 10.0.4HF, 10.0.3HF      | Brasil      |   En ny versjon av tekniske notater for NF-e: NT 2019.001 versjon 1.10    |
+|      August 2019          |   10.0.6, 10.0.5HF      | Brasil     |   Ny lovgivning implementeres av RJ-tilstand relatert til EFD-ICMS/IPI. Vedtak 13/19 av Rio de Janeiro-implementeringen (RJ), er for "Spesielle prosedyrer som skal brukes ved fritak     |
+|      August 2019          |   10.0.6      | Brasil      |   Avgiftsoppgave CAT 42/18    |
+|      August 2019          |   10.0.6, 10.0.5HF, 10.0.4HF, 10.0.3HF      | Japan      |   Endringer i forbruksavgiftssats og redusert mva-sats introduseres    |
 |      August–juli 2019          |   10.0.5, 10.0.4HF, 10.0.3HF      | Spania      |   Spania: SII: Valideringsregler endres fra 1. oktober 2019    |
 |      Juli 2019          |   10.0.5, 10.0.4HF, 10.0.2HF      | Brasil      |   En ny versjon av tekniske notater for NF-e: NT 2019.001 versjon 1.00  |
 |      Juli 2019          |   10.0.5      | Brasil      |   Praktisk veiledning for Sped-bidrag 1.31. ny veiledning    |
@@ -66,7 +70,7 @@ For de siste forskriftsmessige oppdateringsplanene kan du se tabellen nedenfor.
 |      2019. april          |   10.0.3, 10.0.2HF, 10.0.1HF      | Brasil     |   SPED ECD Layout 7    |
 |      2019. april          |   10.0.3      | Brasil      |   SPED ECF – oppsett 5 for 2019    |
 |      2019. april          |   10.0.3      | India      |   Justering av avgift i tollvaluta i veksel i stedet for å gjøre i transaksjonsvaluta    |
-|      2019. april          |   10.0.3      | India      |   Beregning av avgift i tollvaluta i veksel i stedet for å gjøre i transaksjonsvaluta)    |
+|      2019. april          |   10.0.3      | India      |   Beregning av avgift i tollvaluta i veksel i stedet for å gjøre i transaksjonsvaluta   |
 |      2019. april          |   10.0.3, 10.02HF, 10.0.1HF      | India      |   Endring i IEC-nummerformat    |
 |      2019. april          |   10.0.3      | Litauen      |   Litauen i.SAF-rapporten kan brukere definere systemets merverdiavgiftkoder i tilknytning til juridiske mva-koder)    |
 |      2019. april          |   10.0.3      | Polen      |   SAF-fakturaer (JPK_FA) v.2 fra 1. juli 2019    |

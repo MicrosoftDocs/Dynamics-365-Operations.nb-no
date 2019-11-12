@@ -18,22 +18,22 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 174c816c7a6442b07e4722c03045293b94c59153
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: 43f14a1cbd016335b857fdff1147740b27d5c765
+ms.sourcegitcommit: 0099fb24f5f40ff442020b488ef4171836c35c48
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2024666"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "2653329"
 ---
 # <a name="register-consumption"></a>Registrere forbruk
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 Når en vedlikeholdsjobb er fullført i en arbeidsordre, er neste trinn å gjøre forbruksregistreringer og postere journalene. Du kan gjøre registreringer for følgende forbrukstyper: timer, varer og utgifter. De forskjellige forbrukstypene registreres og posteres på siden **Arbeidsordrejournaler**. Journaloppsettet i **Aktivastyring** brukes til å opprette og postere separate journaler for timer, varer og utgifter i modulen **Prosjektstyring og regnskap**.
 
-Du kan kanskje legge til eller slette prognoselinjer i en arbeidsordre. Oppsettet for en arbeidsordrelivssyklustilstand, den tilknyttede prosjekttypen og stadiereglene knyttet til prosjekttypen bestemmer om du kan legge til eller redigere journallinjer. Les mer om livssyklustilstander for arbeidsordrer og relaterte prosjektstadier i [Integrering til prosjektstyring og regnskap](../integration-to-project-management-and-accounting/forecasts-work-orders-and-projects.md).
+I noen tilfeller kan du legge til eller slette prognoselinjer i en arbeidsordre. Oppsettet for en arbeidsordrelivssyklustilstand, den tilknyttede prosjekttypen og stadiereglene knyttet til prosjekttypen bestemmer om du kan legge til eller redigere journallinjer. Les mer om livssyklustilstander for arbeidsordrer og relaterte prosjektstadier i [Integrering til prosjektstyring og regnskap](../integration-to-project-management-and-accounting/forecasts-work-orders-and-projects.md).
 
 >[!NOTE]
 >Det er mulig å definere automatisk postering av journaler for en livssyklustilstand for arbeidsordrer. Se [Livssyklustilstand for arbeidsordre](../setup-for-work-orders/work-order-lifecycle-states.md) hvis du vil ha mer informasjon.
@@ -50,10 +50,10 @@ Du kan kanskje legge til eller slette prognoselinjer i en arbeidsordre. Oppsette
 
 6. Klikk på **Poster journaler** for å postere journallinjene.
 
-7. Når du har postert forbruksjournalene, kan du oppdatere livssyklustilstanden for arbeidsordren, for eksempel Avsluttet, for å angi at arbeidsordren er fullført.
+7. Når du har postert forbruksjournalene, kan du oppdatere livssyklusstatusen for arbeidsordren. Hvis du for eksempel vil angi at arbeidsordren er fullført, kan du oppdatere livssyklusstatusen til "Avsluttet".
 
-- I **Vis**-feltet som er plassert øverst på siden **Arbeidsordrejournaler**, velger du hvilke journallinjer du vil vise: alle, ikke postert eller postert. Posterte journaler har en hake i avmerkingsboksen **Postert**.  
-- Når varelinjer opprettes i arbeidsordrejournalen, blir produktdimensjoner og sporingsdimensjoner som er knyttet til varen, automatisk overført til journallinjen.  
+    - I **Vis**-feltet som er plassert øverst på siden **Arbeidsordrejournaler**, velger du hvilke journallinjer du vil vise: **Alle**, **Ikke postert** eller **Postert**. Posterte journaler har en hake i avmerkingsboksen **Postert**.  
+    - Når varelinjer opprettes i arbeidsordrejournalen, blir produktdimensjoner og sporingsdimensjoner som er knyttet til varen, automatisk overført til journallinjen.  
 
 Skjermbildet nedenfor viser et eksempel på time- og vareregistreringer for en arbeidsordre i **Arbeidsordrejournaler**.
 
@@ -76,7 +76,7 @@ Hvis en arbeidsordre inneholder flere arbeidsordrejobber, kan du registrere arbe
 
 6. Sett inn antall arbeidstimer som skal deles, i **Timer**-feltet.
 
-![Figur 2](media/02-consumption.png)
+    ![Figur 2](media/02-consumption.png)
 
 7. Klikk **OK**.
 
@@ -88,10 +88,10 @@ Hvis en arbeidsordre inneholder flere arbeidsordrejobber, kan du registrere arbe
 
 Når du utfører forbruksregistreringer, legges finansdimensjoner som er knyttet til de ulike registreringstypene, til i registreringene i en bestemt rekkefølge. 
 
-*Time- og utgiftsregistreringer:* Først blir finansdimensjoner fra journalhodet lagt til. Så legges finansdimensjoner fra det tilknyttede arbeidsordreprosjektet til. Til slutt legges finansdimensjoner fra ressursen (arbeideren) til.
+- *Time- og utgiftsregistreringer:* Først blir finansdimensjoner fra journalhodet lagt til. Så legges finansdimensjoner fra det tilknyttede arbeidsordreprosjektet til. Til slutt legges finansdimensjoner fra ressursen (arbeideren) til.
 
-*Vareregistreringer:* Først blir finansdimensjoner fra journalhodet lagt til. Så legges finansdimensjoner fra det tilknyttede arbeidsordreprosjektet til. Deretter legges finansdimensjoner fra området til. Til slutt legges finansdimensjoner fra varen til.
+- *Vareregistreringer:* Først blir finansdimensjoner fra journalhodet lagt til. Så legges finansdimensjoner fra det tilknyttede arbeidsordreprosjektet til. Deretter legges finansdimensjoner fra området til. Til slutt legges finansdimensjoner fra varen til.
 
 >[!NOTE]
->For alle tre registreringstypene valideres finansdimensjonskombinasjonen, og ugyldige kombinasjoner er tomme. Dette er standardoppsett i Finance and Operations.
+>For alle tre registreringstypene valideres finansdimensjonskombinasjonen, og ugyldige kombinasjoner er tomme. Dette er standardoppsett i andre Finance and Operations-apper.
 

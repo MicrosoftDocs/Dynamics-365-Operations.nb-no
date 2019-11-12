@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: c035f54e833b9bc25b4502901cf307213789b439
-ms.sourcegitcommit: 6476f27c8d3dced7c2e9a7344a4e378b51a1983e
+ms.openlocfilehash: 4a7c57452b2f639b1f1b76bc79959c620c58ace1
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "1922189"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2571306"
 ---
 # <a name="maintenance-downtime"></a>Nedetid ved vedlikehold
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 Nedetid ved vedlikehold brukes til å få en oversikt over kapasiteten som kreves for å utføre vedlikeholdsjobber på bestemte aktiva i en bestemt periode. Du kan for eksempel opprette en registrering av vedlikeholdsnedetid for produksjonslinje 10 i produksjonshall 29-A på produksjonsområde 02. Vedlikeholdsnedetidregistreringen har et start- og sluttidspunkt som angir perioden som aktivaene knyttet til vedlikeholdsstoppen ikke er tilgjengelige for produksjon.
 

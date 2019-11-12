@@ -3,7 +3,7 @@ title: Rapporteringstredefinisjoner finansrapporter
 description: Denne artikkelen gir informasjon om rapporteringstredefinisjoner. En rapporteringstredefinisjon er en rapportkomponent eller byggeblokk, som bidrar til å definere strukturen og hierarkiet i organisasjonen.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 01/11/2018
+ms.date: 10/07/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 8127c694d21064392b1932525a87044b9554973d
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 6bb16ada206434c0588ed6c140a49b6a5d94d7ed
+ms.sourcegitcommit: a3fbcd63f10f204350a058a124ba80abeb34309e
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2181824"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "2564173"
 ---
 # <a name="reporting-tree-definitions-in-financial-reports"></a>Rapporteringstredefinisjoner finansrapporter
 
@@ -50,7 +50,7 @@ En rapporteringstredefinisjonen inneholder kolonnene som er beskrevet i tabellen
 
 | Rapporteringstrekolonne | Beskrivelse |
 |-----------------------|-------------|
-| Firma               | Firmanavnet for rapporteringsenheten. Verdien **@ANY**, som vanligvis tilordnes bare til sammendragsnivået, aktiverer rapporteringstreet slik at det kan brukes for alle firmaer. Alle underordnede avdelinger er tilordnet til et firma. |
+| Bedrift               | Firmanavnet for rapporteringsenheten. Verdien **\@ANY**, som vanligvis tilordnes bare til sammendragsnivået, aktiverer rapporteringstreet slik at det kan brukes for alle firmaer. Alle underordnede avdelinger er tilordnet til et firma. |
 | Enhetsnavn             | Koden som identifiserer rapporteringsenheten i det grafiske rapporteringstreet. Pass på å opprette et unik fargekodingssystem som er konsekvent, og som skal være enkelt for brukerne å forstå. |
 | Enhetsbeskrivelse      | Tittelen for rapporteringsenheten vises i topp- eller bunnteksten på rapporten hvis du angir **UnitDesc** som kode i kategorien **Topptekst og bunntekst** i rapportdefinisjonen. Tittelen vises i radbeskrivelsen for rapporten hvis du angir **UnitDesc** i **Beskrivelse**-cellen for raddefinisjonen. |
 | Dimensjoner            | En rapporteringsenhet som henter informasjon direkte fra de økonomiske dataen. Den definerer den logisk plassering og lengdene for kontoen og tilknyttede segmenter. Hver rad for rapporteringsenhet må ha en dimensjon i denne kolonnen. Du kan også legge en dimensjon i en rad for sammendragsenhet (for eksempel for utgifter som er direkte relatert til denne enheten). Hvis du angir en dimensjon i en rad for sammendragsenhet, må kontoer som brukes i overordnede enheter ikke brukes i underordnede enheter. Hvis ikke, kan det hende beløpene blir duplisert. |

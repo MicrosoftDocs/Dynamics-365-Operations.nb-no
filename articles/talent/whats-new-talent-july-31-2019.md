@@ -1,9 +1,9 @@
 ---
-title: Hva er nytt eller endret i Dynamics 365 Talent (31. juli 2019)
+title: Hva er nytt eller endret i Dynamics 365 Talent (30. juli 2019)
 description: Dette emnet beskriver funksjoner som enten er nye eller endret i Microsoft Dynamics 365 Talent.
 author: Darinkramer
 manager: AnnBe
-ms.date: 7/30/2019
+ms.date: 07/30/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-talent
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-07-30
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 83f3339e6cea1448f5b257acf602fe5ca3449555
-ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
+ms.openlocfilehash: 3676a0a1fa77285d0203e8e49725cb1c1b742d39
+ms.sourcegitcommit: 029c1882bef558b6a45843548e94ab8369ed9870
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "2010251"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "2651717"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-talent-july-30-2019"></a>Hva er nytt eller endret i Dynamics 365 Talent (30. juli 2019)
 
@@ -45,7 +45,7 @@ Endringer som er beskrevet i denne delen, gjelder build nummer 8.1.2409.
 
 Vi er glad for å annonsere at områdene Canada og Sørøst-Asia er tilgjengelige for Talent 1. august 2019. Med denne endringen kan du opprette miljøer i de kanadiske og asiatiske områdene, og alle Talent-data vil bli oppbevart kun innenfor disse stedene. Du kan opprette et miljø i disse nye områdene ved å velge plasseringen i dialogboksen Nytt miljø og bruke dette miljøet til å klargjøre Talent i LCS som beskrevet i [Klargjøre Talent](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/provisioning-talent).
 
-Dataoverføring av eksisterende prosjekter fra andre områder til de kanadiske og asiatiske områdene støttes ikke. Bare nye prosjekter kan klargjøres for de nye områdene som støttes.
+Dataoverføring av eksisterende prosjekter fra andre områder til de kanadiske og asiatiske områdene støttes ikke. Bare nye prosjekter kan klargjøres for disse nye områdene som støttes.
 
 ### <a name="new-active-positions-list-page"></a>Ny listeside for aktive stillinger
 
@@ -57,7 +57,7 @@ Denne ukens endringer løser et problem der bare direkte rapporter kan registrer
 
 ### <a name="fte-analysis-displaying-incorrect-fte-number"></a>FTE-analyse som viser feil FTE-nummer
 
-**FTE-analyse** er korrigert i **Analyse**-fanen i **Personaladministrasjon**.
+**FTE-analyse** er korrigert i **Analyse**-fanen for **Personaladministrasjon**.
 
 ### <a name="final-comments-label-translation"></a>Etikettoversettelse av endelige kommentarer
 

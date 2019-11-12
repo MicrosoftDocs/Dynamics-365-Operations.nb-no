@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: shylaw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 8bc9445bacc764bd0c70be4a55d621fc3f8fb270
-ms.sourcegitcommit: 5b53bdafa5cb9a1279576bfece0452a50383b122
+ms.openlocfilehash: 510a36668bf131b48733e486a43f1d630ae9f3ea
+ms.sourcegitcommit: 0099fb24f5f40ff442020b488ef4171836c35c48
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "2278330"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "2653700"
 ---
 # <a name="help-resources-for-supply-chain-management"></a>Hjelperessurser for Supply Chain Management
 
@@ -39,7 +39,7 @@ Gå til <a href="https://roadmap.dynamics.com/">Veikart for Dynamics 365</a> for
 Velg et funksjonsområde du vil finne ut mer om.
 
 - [Aktivabehandling](asset-management/index.md)
-- [Kostnadsregnskap](../financials/cost-accounting/cost-accounting-home-page.md)
+- [Kostnadsregnskap](../finance/cost-accounting/cost-accounting-home-page.md)
 - [Kostnadsstyring](cost-management/cost-management-home-page.md)  
 - [Lagerstyring](inventory/inventory-home-page.md)
 - [Hovedplanlegging](master-planning/master-planning-home-page.md)
@@ -109,7 +109,7 @@ Disse registreringene for tekniske konferanser omhandler produktfunksjonalitet i
 -  [Transportstyring (TMS) i den nye Microsoft Dynamics AX](https://youtu.be/jgmTgJIgEFQ)
 
 ## <a name="blogs"></a>Blogger
-Det finnes mange emner om produksjon og forsyningskjedeadministrasjon i <a href="https://blogs.msdn.microsoft.com/axmfg/">teambloggen for Dynamics AX Manufacturing R&D</a> og <a href="https://blogs.msdn.microsoft.com/dynamicsaxscm/">Forsyningskjedeadministrasjon i teambloggen for Dynamics AX R&D</a>. De fleste av disse ble skrevet for tidligere versjoner av Finance and Operations, men fortsatt kan de samme begrepene brukes, og fremgangsmåtene ligner på den gjeldende versjonen. 
+Det finnes mange emner om produksjon og forsyningskjedeadministrasjon i <a href="https://blogs.msdn.microsoft.com/axmfg/">teambloggen for Dynamics AX Manufacturing R&D</a> og <a href="https://blogs.msdn.microsoft.com/dynamicsaxscm/">Forsyningskjedeadministrasjon i teambloggen for Dynamics AX R&D</a>. De fleste av disse ble skrevet for den tidligere versjonen, men fortsatt kan de samme begrepene brukes, og fremgangsmåtene ligner på den gjeldende versjonen. 
 
 ## <a name="white-papers"></a>Hvitbøker
 -  <a href="https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/msd365optgtstcostacc/">Praktiske øvelser for kostnadsregnskap</a> 

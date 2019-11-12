@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: eca732f245650c8e1f3dc976454536a0ab1ee117
-ms.sourcegitcommit: 6476f27c8d3dced7c2e9a7344a4e378b51a1983e
+ms.openlocfilehash: 4c9a2fee7d43142f8bb17f4e819c9949a2a20c41
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "1922028"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2570036"
 ---
 # <a name="maintenance-rounds"></a>Vedlikeholdsrunder
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 I **Aktivastyring** kan du opprette vedlikeholdsrunder for ulike aktiva, der du må utføre en lignende oppgave med jevne mellomrom. For eksempel smørejobber eller sikkerhetsinspeksjonsjobber som må utføres på flere maskiner i samme intervall. Første trinn er å opprette en vedlikeholdsrunde, inkludert aktiva som krever samme form for vedlikeholdsjobb. Deretter planlegger du vedlikeholdsrundene. Når du har fullført vedlikeholdsrundeplanen, kan du se alle jobbpostene knyttet til runden i **Alle vedlikeholdsplaner** og **Åpne vedlikeholdsplanlinjer**.
 

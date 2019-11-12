@@ -3,7 +3,7 @@ title: Opprette nye brukere
 description: Brukere er interne ansatte i din organisasjon, eller eksterne kunder og leverandører, som trenger tilgang til systemet for å utføre jobbene sine.
 author: maertenm
 manager: AnnBe
-ms.date: 08/30/2019
+ms.date: 10/08/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,17 +16,16 @@ ms.search.region: Global
 ms.author: maertenm
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 4a5635f96132b2e52227b569e7e480fa55e82d61
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 3c347a34a389c32d005cc8086c4a1349ecb8a698
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2180950"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2570527"
 ---
 # <a name="create-new-users"></a>Opprette nye brukere
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
-[!include [banner](../../includes/preview-banner.md)]
 
 Brukere er interne ansatte i din organisasjon, eller eksterne kunder og leverandører, som trenger tilgang til systemet for å utføre jobbene sine.
 

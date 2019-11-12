@@ -1,6 +1,6 @@
 ---
-title: Skanne strekkoder ved hjelp av et kamera i Dynamics 365 Supply Chain Management – Warehousing-appen
-description: Dette emnet forklarer hvordan du konfigurerer Dynamics 365 Supply Chain Management – Warehousing-appen for å skanne strekkoder med et kamera på en mobil enhet.
+title: Skanne strekkoder ved hjelp av et kamera i Dynamics 365 for Finance and Operations – Warehousing-appen
+description: Dette emnet forklarer hvordan du konfigurerer Dynamics 365 for Finance and Operations – Warehousing-appen for å skanne strekkoder med et kamera på en mobil enhet.
 author: MarkusFogelberg
 manager: AnnBe
 ms.date: 01/03/2018
@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2017-01-03
 ms.dyn365.ops.version: AX 8.0.0
-ms.openlocfilehash: 8062a981f792bcfed2713d3cb6a42f414394f6a4
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 58cf27a250778d68bdffa1eefa5e939276e467fc
+ms.sourcegitcommit: dd960cf07d8be791fd27c7bb72e6baa2d63ccd51
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2251473"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "2578155"
 ---
 # <a name="scan-bar-codes-using-a-camera-in-dynamics-365-supply-chain-management---warehousing-app"></a>Skanne strekkoder ved hjelp av et kamera i Dynamics 365 Supply Chain Management – Warehousing-appen
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet forklarer hvordan du konfigurerer Dynamics 365 Supply Chain Management – Warehousing-appen for å skanne strekkoder med et kamera på en mobil enhet. 
+Dette emnet forklarer hvordan du konfigurerer Dynamics 365 for Finance and Operations – Warehousing-appen for å skanne strekkoder med et kamera på en mobil enhet. 
 
 ## <a name="prerequisites"></a>Forutsetninger
 Hvis du vil bruke denne funksjonen, må du ha versjon 1.2.0.0 av Warehousing-appen installert, og enheten må ha et kamera. Når du åpner appen når du har oppdatert, blir du bedt om å tillate at appen kan bruke kameraet. Hvis enheten ikke har kamera, vises ingen ledetekst, og du kan ikke bruke kamera som skanner. 
@@ -49,7 +49,7 @@ Kamerasiden startes på hver side der inndatafeltet har den foretrukne inndatamo
 
 | Oppgave- og detaljsiden | Kamerasiden | 
 | :---------------------: | :--------------------: |
-| ![camera-scanning-example-task-detail-page](./media/camera-scanning-example-task-detail-page50.png)          | ![camera-scanning-example-camera-page-smaller](./media/camera-scanning-example-camera-page50.png)          |
+| ![Detaljside med oppgaveeksempel på kameraskanning](./media/camera-scanning-example-task-detail-page50.png)          | ![Mindre kameraside med eksempel på kameraskanning](./media/camera-scanning-example-camera-page50.png)          |
 
 På kamerasiden, når du klikker Kamera-knappen, vises den nedtonet ved forsøk på å identifisere en strekkode. Hvis en strekkode ikke identifiseres innen 5 sekunder, deaktiveres prosessen og Kamera-knappen blir tilgjengelig igjen. Du kan deretter prøve å skanne en strekkode på nytt.
 
