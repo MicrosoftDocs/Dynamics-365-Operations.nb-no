@@ -2,6 +2,8 @@
   items:
     - name: Utvikling og administrasjon for Finance and Operations-apper
       items:
+        - name: Dokumentasjon for programmet Finance and Operations
+          href: ../fin-ops/index.md
         - name: Utvikling og administrasjon for Finance and Operations-apper
           href: index.md
         - name: Hva er nytt eller endret
@@ -128,16 +130,28 @@
                           href: data-entities/dual-write-overview.md
                         - name: Organisasjonshierarki på Common Data Service
                           href: data-entities/dual-write-organization.md
-                        - name: Firmabegrep i Common Data Service-er
-                          href: data-entities/dual-write-company.md
+                        - name: Firmaintegrering
+                          items:
+                            - name: Firmabegrep i Common Data Service-er
+                              href: data-entities/dual-write-company.md
+                            - name: Oppstartsprogram med firmadata
+                              href: data-entities/dual-write-bootstrap.md
                         - name: Integrert original for kunde
                           href: data-entities/dual-write-customer.md
+                        - name: Integrert finans
+                          href: data-entities/dual-write-ledger.md
                         - name: Samlet produktopplevelse
                           href: data-entities/dual-write-product.md
-                        - name: Integrert original for leverandør
-                          href: data-entities/dual-write-vendor.md
+                        - name: Leverandørintegrering
+                          items:
+                            - name: Integrert original for leverandør
+                              href: data-entities/dual-write-vendor.md
+                            - name: Bytte mellom leverandørutforminger
+                              href: data-entities/dual-write-vendor-switch.md
                         - name: Integrerte områder og lagre
                           href: data-entities/dual-write-sites-and-warehouses.md
+                        - name: Integrert original for avgift
+                          href: data-entities/dual-write-tax.md
                         - name: Innledende synkronisering
                           href: data-entities/dual-write-initial.md
                         - name: Feilsøke dataintegrering
@@ -418,6 +432,8 @@
                   href: user-interface/client-disconnected.md
                 - name: Feilsøke lokale distribusjoner
                   href: deployment/troubleshoot-on-prem.md
+                - name: Skript for å løse problemer i lokale miljøer
+                  href: deployment/onprem-tsg-implementations.md
                 - name: Sertifikatrotasjon
                   href: deployment/certificate-rotation-on-prem.md
             - name: Distribuere tilpasset kode
