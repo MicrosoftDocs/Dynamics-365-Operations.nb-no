@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 17774053badb00cc464c34c7c90194a26839cc7d
-ms.sourcegitcommit: 807dec193cd163c9f5d949e744cfde40f2eb24b4
+ms.openlocfilehash: 89139c149146b64125370c3840f8d3011b92e067
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "2469008"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2770925"
 ---
 # <a name="finance-and-operations-application-documentation"></a>Dokumentasjon for programmet Finance and Operations
 
@@ -68,7 +68,7 @@ Mye av dette innholdet gjelder også for de tilknyttede produktene: Dynamics 365
 <h3><a href="../dev-itpro/data-entities/integration-overview.md">Integreringer</a></h3>
 <p><a href="../dev-itpro/business-events/home-page.md">Forretningshendelser</a></p>
 <p><a href="../dev-itpro/data-entities/data-entities.md">Dataenheter</a></p>
-<p><a href="../dev-itpro/data-entities/fin-ops-connector.md">Integrering ved hjelp av Microsoft Flow</a></p>
+<p><a href="../dev-itpro/data-entities/fin-ops-connector.md">Integrering ved hjelp av Microsoft Power Automate</a></p>
 
 <h3><a href="../../finance/index.md">Økonomistyring</a></h3>
 <p><a href="../../finance/accounts-payable/accounts-payable.md">Leverandører</a></p>

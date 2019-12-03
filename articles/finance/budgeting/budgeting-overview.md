@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e0c6a9e4dd3f3182c98a9f5491b07f8687c21e5c
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 531fd219cc2db79e01a277c72eba66fb8a9b8bbd
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2184077"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2772657"
 ---
 # <a name="budgeting-home-page"></a>Startside for budsjettering
 
@@ -42,12 +42,12 @@ Prosessene for både langsiktig strategisk planlegging og årlig budsjettplanleg
 
 Svært modne organisasjoner kan opprette en organisasjonskultur der ansatte har kunnskap om organisasjonsmål og følger disse målene gjennom policyer, for eksempel «Vurder nettmøte i stedet for en reise». Programmet omfatter et rammeverk for budsjettkontroll som lar ledelsen i firmaet velge hard kontroll (som forhindrer at posteringer går over budsjettet) eller myk kontroll (der brukere blir varslet om at de kommer til å overskride de tilgjengelige budsjettmidlene, men kan selv avgjøre hvordan de vil gå frem). Du kan også bruke rullerende prognoser. En rullerende prognose er en vanlig sammenligning av budsjettbeløp kontra faktiske beløp og brukes til å definere hvor bra firmaet gjør det med hensyn til budsjettet. En rullerende prognose brukes også til å identifisere trender. I Finance and Operations støttes rullerende prognoser – via et budsjettplandokument – som innledende planleggingsaktiviteter. Rullerende prognoser kan utføres parallelt med planleggingen for den kommende budsjettsyklusen.
 
--   [Grunnleggende budsjettering: Oversikt og konfigurasjon](basic-budgeting-overview-configuration.md)
--   [Budsjettkontroll: Oversikt og konfigurasjon](budget-control-overview-configuration.md)
--   [Budsjettplanlegging: Oversikt og konfigurasjon](budget-planning-overview-configuration.md)
+-   [Oversikt over budsjettering](basic-budgeting-overview-configuration.md)
+-   [Oversikt over budsjettkontroll](budget-control-overview-configuration.md)
+-   [Oversikt over budsjettplanlegging](budget-planning-overview-configuration.md)
 -   [Stillingsprognose](position-forecasting.md)
 -   [Justeringsdokumenter for budsjettplanlegging](budget-planning-justification-docs.md)
--   [Microsoft Excel-maler for budsjettplanlegging](budget-planning-excel-templates.md)
+-   [Budsjettplanleggingsmaler for Excel](budget-planning-excel-templates.md)
 
 ## <a name="budgeting-tools"></a>Budsjetteringsverktøy
 [![Budsjetteringsverktøy](./media/budgeting-tools.jpg)](./media/budgeting-tools.jpg) 

@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: ce6ce9c3c08a165ca19eb8d83643fd87b970f1ca
-ms.sourcegitcommit: 574309903f15eeab7911091114885b5c7279d22a
+ms.openlocfilehash: e9fbc0e3f3960f25930f9587d489009bc34181c7
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "2658742"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2772243"
 ---
 # <a name="accounts-payable-home-page"></a>Startside for leverandører
 
@@ -41,7 +41,7 @@ Du kan registrere leverandørfakturaer manuelt eller motta dem elektronisk via e
 
 Definer leverandørgrupper, leverandører, posteringsprofiler, ulike betalingsalternativer og parametere i forbindelse med leverandører, tillegg, leveranser og mål, egenveksler, og annen type informasjon om leverandører. 
 
-[Konfigurere Leverandør](accounts-payable-overview.md)
+[Oversikt over å konfigurere leverandør](accounts-payable-overview.md)
 
 [Regnskapsdistribusjoner og underfinansjournaloppføringer for leverandørfakturaer](accounting-distributions-subledger-journal-entries-vendor-invoices.md) 
 
@@ -51,7 +51,7 @@ Definer leverandørgrupper, leverandører, posteringsprofiler, ulike betalingsal
 
 Bruk leverandører til å spore fakturaer og utgående utgifter til leverandører.
 
-[Samsvar for kundefaktura](accounts-payable-invoice-matching.md)
+[Oversikt over samsvar for leverandørfaktura](accounts-payable-invoice-matching.md)
 
 [Leverandørposteringsprofiler](vendor-posting-profiles.md)
 
@@ -61,7 +61,7 @@ Bruk leverandører til å spore fakturaer og utgående utgifter til leverandøre
 
 [Fakturasamsvar og konserninterne bestillinger](invoice-matching-intercompany-purchase-orders.md)
 
-[Løse avvik under kontroll for fakturatotaler](resolve-invoice-totals-invoice-matching-discrepancies.md)
+[Oversikt over å løse avvik under kontroll for fakturatotaler](resolve-invoice-totals-invoice-matching-discrepancies.md)
 
 [Standard motkontoer for leverandørfakturajournaler og fakturagodkjenningsjournaler](default-offset-accounts-vendor-invoice-journals.md)
 
@@ -93,11 +93,11 @@ Tilordne en systemdefinert betalingstype, for eksempel sjekk, elektronisk betali
 
 [Bruke en kontantrabatt utenfor kontantrabattperioden](take-cash-discount-outside-cash-discount-timeframe.md)
 
-[Elektronisk rapportering for leverandørsjekker](electronic-reporting-sample-vendor-checks.md)
+[Eksempel på leverandørsjekker for elektronisk rapportering](electronic-reporting-sample-vendor-checks.md)
 
 [Tilbakeføre en leverandørbetaling](reverse-vendor-payment.md)
 
-[Oversikt over forskuddsbetalte fakturaer og forskuddsbetalinger](prepayments-invoices-vs-prepayments.md)
+[Forskuddsbetalte fakturaer i forhold til forskuddsbetalinger](prepayments-invoices-vs-prepayments.md)
 
 [Sentraliserte betalinger leverandører](centralized-payments-accounts-payable.md)
 
@@ -107,13 +107,13 @@ Emnene nedenfor gir informasjon om utligninger. Utligning er prosessen med å ut
 
 [Konfigurere utligning](../cash-bank-management/configure-settlement.md)
 
-[Utligne en delvis leverandørbetaling før rabattdatoen](settle-partial-vendor-payment-before-discount-or-final-payment-after.md)
+[Utligne en delvis leverandørbetaling før rabattdatoen med en endelige betaling etter rabattdatoen](settle-partial-vendor-payment-before-discount-or-final-payment-after.md)
 
 [Utligne en delvis leverandørbetaling som har rabatter på leverandørkreditnotaer](settle-partial-vendor-payment-discounts-vendor-credit-notes.md)
 
 [Utligne en delvis leverandørbetaling som har flere rabattperioder](settle-partial-vendor-payment-multiple-discount-periods.md)
 
-[Utligne en delvis leverandørbetaling eller endelig betaling før rabatt](settle-partial-vendor-payment-or-final-payment-before-discount.md)
+[Utligne en delvis leverandørbetaling og den endelige betalingen i sin helhet før rabattdatoen](settle-partial-vendor-payment-or-final-payment-before-discount.md)
 
 [Enkelt bilag med flere poster for kunde eller leverandør](single-voucher-multiple-customer-vendor-records.md)
 
@@ -123,7 +123,7 @@ Emnene nedenfor gir informasjon om utligninger. Utligning er prosessen med å ut
 
 #### <a name="whats-new-and-in-development"></a>Hva er nytt og hva er under utvikling?
 
-Gå til [Produktmerknader for Microsoft Dynamics 365](https://go.microsoft.com/fwlink/?linkid=2010158) for å se hvilke nye funksjoner som er planlagt. 
+Gå til [Lanseringsplaner for Microsoft Dynamics 365](https://go.microsoft.com/fwlink/?linkid=2010158) for å se hvilke nye funksjoner som er planlagt. 
 
 #### <a name="blogs"></a>Blogger
 

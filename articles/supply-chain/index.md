@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: shylaw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 510a36668bf131b48733e486a43f1d630ae9f3ea
-ms.sourcegitcommit: 0099fb24f5f40ff442020b488ef4171836c35c48
+ms.openlocfilehash: 4926cd63aa360c7e08a0a435f7609017f02cb229
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "2653700"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2814427"
 ---
 # <a name="help-resources-for-supply-chain-management"></a>Hjelperessurser for Supply Chain Management
 
@@ -53,7 +53,7 @@ Velg et funksjonsområde du vil finne ut mer om.
 
 ## <a name="dynamics-365-finance"></a>Dynamics 365 Finance
 
-Hvis du vil ha informasjon om Dynamics 365 Finance, går du til siden [Hjelperessurser for Dynamics 365 Finance](../finance/index.md).
+Hvis du vil ha informasjon om Dynamics 365 Finance, går du til siden [Startside for økonomistyring](../finance/index.md).
 
 ## <a name="videos"></a>Videoer
 

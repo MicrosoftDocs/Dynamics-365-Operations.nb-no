@@ -19,12 +19,12 @@ ms.search.industry: Public sector
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5493c46183e7b599e82153f5b3ac36c81faa4955
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: f850b28c4d6ed6ce13438f4de87ef0c04065c7f9
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2174702"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2770239"
 ---
 # <a name="public-sector-home-page"></a>Startside for offentlig sektor
 
@@ -43,12 +43,12 @@ Bruk funksjonen Offentlig sektor til å overholde regler, forskrifter og rapport
   Hvis du vil ha mer informasjon, kan du se følgende emner:
 
 - [Planlegge for funksjonalitet for offentlig sektor](plan-public-sector-functionality.md)
-- [Leverandør i offentlig sektor](accounts-payable-public-sector.md)
-- [Kunde i offentlig sektor](accounts-receivable-public-sector.md)
-- [Budsjettering i offentlig sektor](budgeting-public-sector.md)
+- [Oversikt over leverandør i offentlig sektor](accounts-payable-public-sector.md)
+- [Oversikt over kunde i offentlig sektor](accounts-receivable-public-sector.md)
+- [Oversikt over budsjettering i offentlig sektor](budgeting-public-sector.md)
 - [Anleggsmidler i offentlig sektor](fixed-asset-public-sector.md)
-- [Franske forskriftsmessige funksjoner](../localizations/emea-fra-public-sector-accounting.md)
-- [Finans i offentlig sektor](general-ledger-public-sector.md)
+- [Regnskap i offentlig sektor i Frankrike](../localizations/emea-fra-public-sector-accounting.md)
+- [Oversikt over økonomimodul i offentlig sektor](general-ledger-public-sector.md)
 - [Innkjøp og sondering i offentlig sektor](procurement-sourcing-public-sector.md)
 - [Sikkerhetsroller i offentlig sektor](security-roles-public-sector.md)
 

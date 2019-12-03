@@ -850,6 +850,8 @@
           items:
             - name: Fordelsoversikt
               href: set-up-customer-loyalty-program.md
+            - name: Oversikt over kundeaktiviteter
+              href: clienteling-overview.md
         - name: Betalinger
           items:
             - name: Betalingsmåter
@@ -1268,8 +1270,6 @@
                   href: Open-URL-in-POS.md
                 - name: Installere utforming av oppsett for salgssted
                   href: install-pos-layout-designer.md
-                - name: Retail Modern POS i frakoblet modus
-                  href: dev-itpro/retail-modern-pos-offline.md
                 - name: Utvide skjermvisningen for POS Dual
                   href: dev-itpro/pos-dual-display-extension.md
                 - name: Utvidelsesmulighet for Retail Modern POS- og skysalgsstedsutløser
@@ -1294,7 +1294,7 @@
                   href: dev-itpro/view-pos-extension-package-details.md
                 - name: Teste registrering og Regression Suite Automation Tool for Retail Cloud POS
                   href: dev-itpro/pos-rsat.md
-            - name: Utvidelsesmulighet for Hardware Station
+            - name: Hardware Station og utvidelsesmulighet
               href: dev-itpro/hardware-station-extensibility.md
             - name: Integrer POS med en ny maskinvareenhet
               href: dev-itpro/hardware-device-extension.md
@@ -1332,6 +1332,8 @@
                   href: dev-itpro/trigger-example-blocking-transaction.md
                 - name: Implementere en returpolicy ved hjelp av utløsere
                   href: dev-itpro/trigger-example-return-policy.md
+                - name: Logge utvidelseshendelser til Application Insights
+                  href: dev-itpro/commerce-application-insights.md
             - name: Utvidelsesmuligheter for e-handel
               items:
                 - name: Konfigurer nettbutikker

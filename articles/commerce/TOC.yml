@@ -62,6 +62,14 @@
                   href: ../fin-ops-core/dev-itpro/deployment/china-local-deployment.md?toc=/dynamics365/commerce/toc.json
                 - name: Finance and Operations-apper i Frankrike
                   href: ../fin-ops-core/dev-itpro/deployment/france-local-deployment.md?toc=/dynamics365/commerce/toc.json
+            - name: Oppgradering og N-1-støtte
+              items:
+                - name: Støtte for oppgradering og N-1 for detaljhandel
+                  href: ../retail/dev-itpro/overview-upgrade-n-minus1.md?toc=/dynamics365/commerce/toc.json
+                - name: 'Installasjon, konfigurasjon og overgang for distribusjon i faser (N-1)'
+                  href: ../retail/dev-itpro/n-1-installation-configuration.md?toc=/dynamics365/commerce/toc.json
+                - name: Oppgradere utvidelsen for Retail-kanalen til siste SDK for Retail
+                  href: ../retail/dev-itpro/retailSDK-update.md?toc=/dynamics365/commerce/toc.json
             - name: Hva er nytt eller endret
               items:
                 - name: Forhåndsvisningsfunksjoner i Retail versjon 10.0.7
@@ -168,6 +176,50 @@
                   href: ../fin-ops-core/fin-ops/organization-administration/tasks/set-users-preferred-time-zone.md?toc=/dynamics365/commerce/toc.json
                 - name: Forstå Lifecycle Services
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/lcs-works-lcs.md?toc=/fin-and-ops/toc.json?toc=/dynamics365/commerce/toc.json
+        - name: Oversikt over arkitektur
+          items:
+            - name: Arkitektur
+              items:
+                - name: Retail-komponenter
+                  href: ../retail/retail-components.md?toc=/dynamics365/commerce/toc.json
+                - name: Arkitektur for Retail Server
+                  href: ../retail/dev-itpro/retail-server-architecture.md?toc=/dynamics365/commerce/toc.json
+                - name: Velg topologi i butikk
+                  href: ../retail/dev-itpro/retail-in-store-topology.md?toc=/dynamics365/commerce/toc.json
+                - name: Commerce Data Exchange og kommunikasjon på detaljhandelskanal
+                  href: ../retail/dev-itpro/define-retail-channel-communications-cdx.md?toc=/dynamics365/commerce/toc.json
+                - name: Retail Modern POS-arkitektur
+                  href: ../retail/dev-itpro/retail-modern-pos-architecture.md?toc=/dynamics365/commerce/toc.json
+                - name: Publiseringsarkitektur for nettbutikk for Retail
+                  href: ../retail/dev-itpro/retail-online-store-publishing-architecture.md?toc=/dynamics365/commerce/toc.json
+                - name: Power BI-innhold for Retail Channel Performance
+                  href: ../fin-ops-core/dev-itpro/analytics/retail-channel-performance-dashboard-power-bi-data.md?toc=/dynamics365/commerce/toc.json
+                - name: PA-DSS-sertifisering (Payment Application Data Security Standards)
+                  href: ../retail/dev-itpro/PA-DSS-Certification.md?toc=/dynamics365/commerce/toc.json
+                - name: Detaljhandelsfunksjoner som er tilgjengelige i lokale distribusjoner
+                  href: ../retail/retail-onprem.md?toc=/dynamics365/commerce/toc.json
+            - name: Distribusjon og hurtigreparasjoner
+              items:
+                - name: Retail Store Scale Unit
+                  href: ../retail/dev-itpro/retail-store-system-begin.md?toc=/dynamics365/commerce/toc.json
+                - name: Konfigurere og installere Retail Store Scale Unit
+                  href: ../retail/dev-itpro/retail-store-scale-unit-configuration-installation.md?toc=/dynamics365/commerce/toc.json
+                - name: Konfigurasjon og installasjon av Retail Modern POS
+                  href: ../retail/retail-modern-pos-device-activation.md?toc=/dynamics365/commerce/toc.json
+                - name: Administrere Retail-kontoer og -enheter fra hovedkvarter
+                  href: ../retail/set-up-activation-accounts-validate-devices-hq.md?toc=/dynamics365/commerce/toc.json
+                - name: Aktivering av enhet for Retail POS
+                  href: ../retail/dev-itpro/retail-device-activation.md?toc=/dynamics365/commerce/toc.json
+                - name: Hjelpe med å sikre Cloud POS i delte miljøer
+                  href: ../retail/dev-itpro/secure-retail-cloud-pos.md?toc=/dynamics365/commerce/toc.json
+                - name: Konfigurasjon og installasjon av Retail Hardware Station
+                  href: ../retail/retail-hardware-station-configuration-installation.md?toc=/dynamics365/commerce/toc.json
+                - name: Massedistribusjon av selvbetjeningskomponenter for Retail
+                  href: ../retail/dev-itpro/retail-mass-deployment.md?toc=/dynamics365/commerce/toc.json
+                - name: Hendelser for Retail-komponenter for diagnose og feilsøking
+                  href: ../retail/dev-itpro/retail-component-events-diagnostics-troubleshooting.md?toc=/dynamics365/commerce/toc.json
+                - name: Bruke en distribuerbar pakke
+                  href: ../fin-ops-core/dev-itpro/deployment/apply-deployable-package-system.md?toc=/dynamics365/commerce/toc.json
             - name: Implementering av livssyklus for ressurs
               items:
                 - name: Startside for implementering av livssyklus for ressurs
@@ -203,7 +255,15 @@
                 - name: Oppdatere kode og miljøer for Retail-prosjekter
                   href: ../retail/dev-itpro/updating-environments.md?toc=/dynamics365/commerce/toc.json
                 - name: Testings- og ytelsesproblemer
-                  href: ../retail/dev-itpro/retail-implementation-testing-performance.md
+                  href: ../retail/dev-itpro/retail-implementation-testing-performance.md?toc=/dynamics365/commerce/toc.json
+        - name: Systemadministrasjon
+          items:
+            - name: Miljøkonfigurasjon
+              items:
+                - name: Legge til koblinger i organisasjonens juridiske vilkår og personvernerklæring
+                  href: ../fin-ops-core/dev-itpro/sysadmin/legal-terms-privacy-statement.md?toc=/dynamics365/commerce/toc.json
+                - name: Administrere Bing-kart
+                  href: ../retail/dev-itpro/manage-bing-maps.md?toc=/dynamics365/commerce/toc.json
         - name: Kanaloppsett og -behandling
           items:
             - name: Kjerneoppsett på tvers av kanal
@@ -211,7 +271,7 @@
                 - name: Initialisere data for utgangsverdi i nye Retail-miljøer
                   href: ../retail/enable-configure-retail-functionality.md?toc=/dynamics365/commerce/toc.json
                 - name: Informasjonskoder og informasjonskodegrupper
-                  href: ../retail/info-codes-retail.md
+                  href: ../retail/info-codes-retail.md?toc=/dynamics365/commerce/toc.json
             - name: Lagre kanaladministrasjon
               items:
                 - name: Definere detaljhandelskanaler
@@ -220,152 +280,242 @@
                   href: ../retail/dev-itpro/store-hours.md?toc=/dynamics365/commerce/toc.json
                 - name: Konfigurere og installere Retail Hardware Station
                   href: ../retail/retail-hardware-station-configuration-installation.md?toc=/dynamics365/commerce/toc.json
+                - name: Modern Point of Sale (MPOS) og Cloud POS
+                  items:
+                    - name: Velge mellom MPOS og Cloud POS
+                      href: ../retail/MPOS-or-CPOS.md?toc=/dynamics365/commerce/toc.json
+                    - name: Tilkoblede og frakoblede POS-operasjoner
+                      href: ../retail/pos-operations.md?toc=/dynamics365/commerce/toc.json
+                    - name: Enhetsaktivering av en tilpasset Retail MPOS
+                      href: ../retail/dev-itpro/retail-POS-activation-changes.md?toc=/dynamics365/commerce/toc.json
+                    - name: Skjermoppsett for demonstrasjonsdata i MPOS og Cloud POS
+                      href: ../retail/demo-data.md?toc=/dynamics365/commerce/toc.json
+                    - name: Produkt- og kundesøk på salgsstedet
+                      href: ../retail/POS-search-improvements.md?toc=/dynamics365/commerce/toc.json
+                    - name: Søke etter produkter og produktvarianter under ordreregistrering
+                      href: ../supply-chain/pim/search-products-product-variants.md?toc=/dynamics365/commerce/toc.json
+                    - name: Forbedringer for kontanttransaksjoner
+                      href: ../retail/cash-mgmt.md?toc=/dynamics365/commerce/toc.json
+                    - name: Beholdningsoppslag på salgsstedet
+                      href: ../retail/product-variants-POS.md?toc=/dynamics365/commerce/toc.json
+                    - name: Suspendere og gjenoppta transaksjoner på salgsstedet
+                      href: ../retail/pos-suspend-recall-transactions.md?toc=/dynamics365/commerce/toc.json
+                    - name: Frakoblet funksjonalitet for POS
+                      href: ../retail/pos-offline-functionality.md?toc=/dynamics365/commerce/toc.json
+                    - name: Behandling av skift og kassaskuff
+                      href: ../retail/shift-drawer-management.md?toc=/dynamics365/commerce/toc.json
+                    - name: Balanse for innløsing av gavekort i kontanter
+                      href: ../retail/dev-itpro/gift-card-cash-out.md?toc=/dynamics365/commerce/toc.json
+                    - name: Levere ordrer fra en annen butikk
+                      href: ../retail/charge-send.md?toc=/dynamics365/commerce/toc.json
+                    - name: 'Skjule leveringsmåter som ikke er transportør, fra dialogboksen for forsendelse av salgssted'
+                      href: ../retail/hide-non-carrier-modes.md?toc=/dynamics365/commerce/toc.json
+                    - name: Oppgaveopptaker og hjelp for POS og Cloud POS
+                      href: ../retail/task-recorder-retail-pos.md?toc=/dynamics365/commerce/toc.json
+                    - name: Eksterne enheter for maskinvare
+                      items:
+                        - name: Eksterne enheter for detaljhandel
+                          href: ../retail/retail-peripherals-overview.md?toc=/dynamics365/commerce/toc.json
+                        - name: Simulator for eksterne enheter for Retail
+                          href: ../retail/dev-itpro/retail-peripheral-simulator.md?toc=/dynamics365/commerce/toc.json
+                        - name: Koble eksterne enheter til salgsstedet
+                          href: ../retail/define-maintain-channel-clients-registers-hw-stations.md?toc=/dynamics365/commerce/toc.json
+                    - name: Skjermoppsett
+                      items:
+                        - name: Skjermoppsett for demonstrasjonsdata i MPOS/CPOS
+                          href: ../retail/demo-data.md?toc=/dynamics365/commerce/toc.json
+                        - name: Skjermoppsett for salgsstedet
+                          href: ../retail/pos-screen-layouts.md?toc=/dynamics365/commerce/toc.json
+                        - name: Installere oppsettsutforming for Retail POS
+                          href: ../retail/install-pos-layout-designer.md?toc=/dynamics365/commerce/toc.json
+                        - name: Velge varslingsinnstillinger
+                          href: ../retail/Notifications-POS.md?toc=/dynamics365/commerce/toc.json
+                        - name: POS-program og innstillinger for brukerspråk
+                          href: ../retail/pos-application-user-language-settings.md?toc=/dynamics365/commerce/toc.json
+                        - name: Definere og administrere bilder for MPOS
+                          href: ../retail/set-up-manage-images-retail-mpos.md?toc=/dynamics365/commerce/toc.json
+                        - name: Klientavbildninger i POS
+                          href: ../retail/pos-image.md?toc=/dynamics365/commerce/toc.json
+                    - name: Kundeordrer
+                      items:
+                        - name: Kundeordrer i MPOS
+                          href: ../retail/customer-orders-overview.md?toc=/dynamics365/commerce/toc.json
+                        - name: Hybride kundeordrer
+                          href: ../retail/hybrid-customer-orders.md?toc=/dynamics365/commerce/toc.json
+                    - name: Salgsmedarbeidere
+                      items:
+                        - name: Spore provisjoner på salgsstedet ved hjelp av salgsgrupper
+                          href: ../retail/pos-sales-groups-track-commissions.md?toc=/dynamics365/commerce/toc.json
+                    - name: Enhetsaktivering
+                      items:
+                        - name: 'Konfigurere, installere og aktivere MPOS'
+                          href: ../retail/retail-modern-pos-device-activation.md?toc=/dynamics365/commerce/toc.json
+                        - name: Definere funksjonalitet for utvidet pålogging MPOS og Cloud POS
+                          href: ../retail/extended-logon.md?toc=/dynamics365/commerce/toc.json
+                        - name: Administrere aktiveringskontoer for Retail og validere enheter
+                          href: ../retail/set-up-activation-accounts-validate-devices-hq.md?toc=/dynamics365/commerce/toc.json
+                    - name: Kvitteringer
+                      items:
+                        - name: Definere og utforme kvitteringsformater
+                          href: ../retail/receipt-templates-printing.md?toc=/dynamics365/commerce/toc.json
+                        - name: Sende e-postkvitteringer fra MPOS
+                          href: ../retail/email-receipts.md?toc=/dynamics365/commerce/toc.json
             - name: Nettbasert kanaladministrasjon
               items:
-                - name: Konfigurere nettbutikker
-                  href: ../retail/online-stores.md?toc=/dynamics365/commerce/toc.json
-                - name: Hurtiginnføring i startside
-                  href: quick-tour-home-page.md
-                - name: Hurtiginnføring i side for produktdetaljer
-                  href: quick-tour-pdp.md
-                - name: Hurtiginnføring i handlekurv og kasse
-                  href: quick-tour-cart-checkout.md
-                - name: Hurtiginnføring i kontobehandling
-                  href: quick-tour-account-management.md
+                - name: Oversikt over nettbutikk
+                  href: online-store-overview.md
                 - name: Opprette et e-handelsområde
                   items:
-                    - name: Oversikt over nettbutikk
-                      href: online-store-overview.md
-                    - name: Opprette et e-handelsområde
-                      href: create-ecommerce-site.md
-                    - name: Distribuere et nytt e-handelsområde
-                      href: deploy-ecommerce-site.md
-                    - name: Knytte et nettområde til en kanal
-                      href: associate-site-online-store.md
                     - name: Konfigurere domenenavnet
                       href: configure-your-domain-name.md
+                    - name: Distribuere en ny e-handelsleier
+                      href: deploy-ecommerce-site.md
+                    - name: Definere en kanal for nettbutikk
+                      href: ../retail/online-stores.md?toc=/dynamics365/commerce/toc.json
+                    - name: Opprette et e-handelsområde
+                      href: create-ecommerce-site.md
+                    - name: Knytte et e-handelsområde til en Internett-kanal
+                      href: associate-site-online-store.md
+                    - name: Definere egendefinerte sider for brukerpålogginger
+                      href: custom-pages-user-logins.md
                     - name: Legge til støtte for et innholdsleveringsnettverk (CDN)
                       href: add-cdn-support.md
                     - name: Aktivere stedsbasert butikkregistrering
                       href: enable-store-detection.md
-                    - name: Definere egendefinerte sider for brukerpålogginger
-                      href: custom-pages-user-logins.md
-                - name: Redigeringsverktøy
+                - name: Oversikt over eksempelområde
                   items:
-                    - name: Oversikt over redigering av startside
+                    - name: Oversikt over startsiden
+                      href: quick-tour-home-page.md
+                    - name: Oversikt over standard kategorimålside og søkeresultatside
+                      href: category-search-page-overview.md
+                    - name: Oversikt over produktdetaljsider
+                      href: quick-tour-pdp.md
+                    - name: Oversikt over sider for handlekurv og kasse
+                      href: quick-tour-cart-checkout.md
+                    - name: Oversikt over kontobehandlingssider
+                      href: quick-tour-account-management.md
+                - name: Administrere områdeinnstillingene dine
+                  items:
+                    - name: Oversikt over redigering av side
                       href: authoring-home-overview.md
-                - name: Administrere området ditt
-                  items:
                     - name: Behandle brukere og roller
                       href: manage-ecommerce-users-roles.md
-                    - name: Legge til skript kode i områdes ID-er for å støtte telemetri
-                      href: add-telemetry.md
                     - name: Vurderinger for søkemotoroptimalisering (SEO) for området
                       href: search-engine-optimization-considerations.md
                     - name: Behandle policy for innholdssikkerhet (CSP)
                       href: manage-csp.md
-                - name: Legge til og behandle innhold på området
+                - name: Administrere områdeinnholdet ditt
                   items:
                     - name: Måter å legge til innhold på
                       href: add-manage-content.md
-                    - name: Sideelementer
+                    - name: Ordliste for sidemodell
                       href: page-elements-overview.md
                     - name: Dokumentere statuser og livssyklus
                       href: document-states-overview.md
-                - name: Merke området og legge til butikkdetaljer
-                  items:
-                    - name: Legge til en logo
-                      href: add-logo.md
-                    - name: Velge et områdetema
-                      href: select-site-theme.md
-                    - name: Legge til et favorittikon
-                      href: add-favicon.md
-                    - name: Legge til en velkomstmelding
-                      href: add-welcome-message.md
-                    - name: Legge til en opphavsrettserklæring
-                      href: add-copyright-notice.md
-                    - name: Legge til språk
-                      href: add-languages-to-site.md
-                - name: Sider
-                  items:
-                    - name: Endre en eksisterende områdeside
-                      href: modify-existing-page.md
-                    - name: Legg til en ny områdeside
-                      href: add-new-page.md
-                    - name: Velge sideoppsett
-                      href: select-page-layouts.md
-                    - name: Behandle metadata for søkemotor
-                      href: manage-seo-metadata.md
-                    - name: 'Lagre, forhåndsvise og publisere en side'
-                      href: save-preview-publish-page.md
-                    - name: Supplere en produktside
-                      href: enrich-product-page.md
-                    - name: Supplere en kategorimålside
-                      href: enrich-category-page.md
-                - name: Moduler
-                  items:
-                    - name: Arbeide med moduler
-                      href: work-with-modules.md
-                - name: Fragmenter
-                  items:
-                    - name: Arbeide med fragmenter
-                      href: work-with-fragments.md
-                - name: Maler og oppsett
-                  items:
-                    - name: Oversikt over maler og oppsett
-                      href: templates-layouts-overview.md
+                    - name: Merke området og legge til butikkdetaljer
+                      items:
+                        - name: Legge til en logo
+                          href: add-logo.md
+                        - name: Velge et områdetema
+                          href: select-site-theme.md
+                        - name: Legge til et favorittikon
+                          href: add-favicon.md
+                        - name: Legge til en velkomstmelding
+                          href: add-welcome-message.md
+                        - name: Legge til en opphavsrettserklæring
+                          href: add-copyright-notice.md
+                        - name: Legge til språk
+                          href: add-languages-to-site.md
+                        - name: Legge til skript kode i områdes ID-er for å støtte telemetri
+                          href: add-telemetry.md
+                    - name: Moduler
+                      items:
+                        - name: Arbeide med moduler
+                          href: work-with-modules.md
+                    - name: Fragmenter
+                      items:
+                        - name: Arbeide med fragmenter
+                          href: work-with-fragments.md
                     - name: Maler
                       items:
+                        - name: Oversikt over maler og oppsett
+                          href: templates-layouts-overview.md
                         - name: Arbeide med maler
                           href: work-with-templates.md
-                    - name: Oppsett
-                      items:
                         - name: Arbeide med forhåndsinnstilte oppsett
                           href: work-with-layouts.md
-                - name: Områdenavigering
-                  items:
-                    - name: Tilpasse områdenavigering
-                      href: customize-site-navigation.md
-                    - name: Opprette en URL-adresse for side
-                      href: create-page-URL.md
+                    - name: Sider
+                      items:
+                        - name: Endre en eksisterende områdeside
+                          href: modify-existing-page.md
+                        - name: Legg til en ny områdeside
+                          href: add-new-page.md
+                        - name: Velge sideoppsett
+                          href: select-page-layouts.md
+                        - name: Behandle metadata for søkemotor
+                          href: manage-seo-metadata.md
+                        - name: 'Lagre, forhåndsvise og publisere en side'
+                          href: save-preview-publish-page.md
+                        - name: Supplere en produktside
+                          href: enrich-product-page.md
+                        - name: Supplere en kategorimålside
+                          href: enrich-category-page.md
+                    - name: Områdenavigering
+                      items:
+                        - name: Tilpasse områdenavigering
+                          href: customize-site-navigation.md
+                        - name: Opprette en URL-adresse for side
+                          href: create-page-URL.md
                 - name: Startpakke
                   items:
                     - name: 'Startpakke, oversikt'
                       href: starter-kit-overview.md
-                    - name: Kontobehandlingsside
-                      href: account-management.md
-                    - name: Legge til en varselmodul
-                      href: add-alert.md
-                    - name: Legge til en kjøpsboks
-                      href: add-buy-box.md
-                    - name: Legge til en karusellmodul
-                      href: add-carousel.md
-                    - name: Legge til en handlekurvmodul
-                      href: add-cart-module.md
-                    - name: Legge til en kassemodul
-                      href: add-checkout-module.md
-                    - name: Legge til en beholdermodul
-                      href: add-container-module.md
-                    - name: Legge til en modul for innholdsplassering
-                      href: add-content-placement-modules.md
-                    - name: Legge til en innholdsrik blokkmodul
-                      href: add-content-rich-block.md
-                    - name: Legge til en funksjonsmodul
-                      href: add-feature-module.md
-                    - name: Opprette en bunntekstmodul
-                      href: author-footer-module.md
-                    - name: Opprette en topptekstmodul
-                      href: author-header-module.md
-                    - name: Legge til en hovedbannermodul
-                      href: add-hero-module.md
-                    - name: Opprette en ordrebekreftelsesmodul
-                      href: order-confirmation-module.md
-                    - name: Oversikt over produktsamlingsmodul
-                      href: product-collection-module-overview.md
-                    - name: Legge til en produktsamlingsmodul
-                      href: add-product-collection-modules.md
-                    - name: Legge til en videospillermodul
-                      href: add-video-player.md
+                    - name: Beholdermoduler
+                      items:
+                        - name: Containermodul
+                          href: add-container-module.md
+                    - name: Markedsføringsmoduler
+                      items:
+                        - name: Varselmodul
+                          href: add-alert.md
+                        - name: Karusellmodul
+                          href: add-carousel.md
+                        - name: Modul for innholdsplassering
+                          href: add-content-placement-modules.md
+                        - name: Innholdsrik blokkmodul
+                          href: add-content-rich-block.md
+                        - name: Funksjonsmodul
+                          href: add-feature-module.md
+                        - name: Hovedbannermodul
+                          href: add-hero-module.md
+                        - name: Videospillermodul
+                          href: add-video-player.md
+                    - name: Moduler for topptekst og bunntekst
+                      items:
+                        - name: Topptekstmodul
+                          href: author-header-module.md
+                        - name: Bunntekstmodul
+                          href: author-footer-module.md
+                    - name: Moduler for produktdetaljside
+                      items:
+                        - name: Kjøpsboksmodul
+                          href: add-buy-box.md
+                    - name: Innkjøpsmoduler
+                      items:
+                        - name: Handlekurvmodul
+                          href: add-cart-module.md
+                        - name: Kassemodul
+                          href: add-checkout-module.md
+                        - name: Ordrebekreftelsesmodul
+                          href: order-confirmation-module.md
+                    - name: Kontobehandlingsmoduler
+                      items:
+                        - name: Kontobehandlingssider og -moduler
+                          href: account-management.md
+                    - name: Produktsamlingsmoduler
+                      items:
+                        - name: Produktsamlingsmoduler
+                          href: product-collection-module-overview.md
                 - name: Søke
                   items:
                     - name: Standard kategorimålside og søkeresultatside
@@ -452,6 +602,8 @@
               items:
                 - name: Fordelsoversikt
                   href: ../retail/set-up-customer-loyalty-program.md?toc=/dynamics365/commerce/toc.json
+                - name: Oversikt over kundeaktiviteter
+                  href: ../retail/clienteling-overview.md?toc=/dynamics365/commerce/toc.json
             - name: Betalinger
               items:
                 - name: Betalingsmåter
@@ -508,28 +660,8 @@
               items:
                 - name: Butikklagerstyring
                   href: ../retail/work-with-store-inventory.md?toc=/dynamics365/commerce/toc.json
-                - name: Registrere serienumre i salgsprosessen
+                - name: Arbeide med serialiserte varer
                   href: ../supply-chain/sales-marketing/register-serial-numbers-sales-process.md?toc=/dynamics365/commerce/toc.json
-                - name: Lagerjournaler
-                  href: ../supply-chain/inventory/inventory-journals.md?toc=/dynamics365/commerce/toc.json
-                - name: Lagerbrikkeopptelling
-                  href: ../supply-chain/inventory/inventory-tag-counting.md?toc=/dynamics365/commerce/toc.json
-                - name: FIFO med fysisk verdi og merking
-                  href: ../supply-chain/cost-management/fifo-physical-value-marking.md?toc=/dynamics365/commerce/toc.json
-                - name: LIFO-dato med fysisk verdi og merking
-                  href: ../supply-chain/cost-management/lifo-date-physical-value-marking.md?toc=/dynamics365/commerce/toc.json
-                - name: LIFO med fysisk verdi og merking
-                  href: ../supply-chain/cost-management/lifo-physical-value-marking.md?toc=/dynamics365/commerce/toc.json
-                - name: Dato for avveid gjennomsnitt
-                  href: ../supply-chain/cost-management/weighted-average-date.md?toc=/dynamics365/commerce/toc.json
-                - name: Direkte utligning med fysisk verdi og merking
-                  href: ../supply-chain/cost-management/weighted-average-physical-value-marking.md?toc=/dynamics365/commerce/toc.json
-                - name: Karanteneordrer
-                  href: ../supply-chain/inventory/quarantine-orders.md?toc=/dynamics365/commerce/toc.json
-                - name: Løpende gjennomsnittlig kostpris
-                  href: ../supply-chain/cost-management/running-average-cost-price.md?toc=/dynamics365/commerce/toc.json
-                - name: Spore glidende gjennomsnitt av kostpris per lagerdimensjon
-                  href: ../supply-chain/cost-management/track-running-average-cost-per-inventory-dimension.md?toc=/dynamics365/commerce/toc.json
             - name: Kontoutdrag
               items:
                 - name: Detaljhandelsutdrag
@@ -588,86 +720,6 @@
                   href: ../retail/payment-methods-restrictions.md?toc=/dynamics365/commerce/toc.json
                 - name: 'Returnere varer på tvers av flere kunder, ordrer og fakturaer'
                   href: ../retail/multireturn.md?toc=/dynamics365/commerce/toc.json
-        - name: Modern Point of Sale (MPOS) og Cloud POS
-          items:
-            - name: Velge mellom MPOS og Cloud POS
-              href: ../retail/MPOS-or-CPOS.md?toc=/dynamics365/commerce/toc.json
-            - name: Tilkoblede og frakoblede POS-operasjoner
-              href: ../retail/pos-operations.md?toc=/dynamics365/commerce/toc.json
-            - name: Enhetsaktivering av en tilpasset Retail MPOS
-              href: ../retail/dev-itpro/retail-POS-activation-changes.md?toc=/dynamics365/commerce/toc.json
-            - name: Skjermoppsett for demonstrasjonsdata i MPOS og Cloud POS
-              href: ../retail/demo-data.md?toc=/dynamics365/commerce/toc.json
-            - name: Produkt- og kundesøk på salgsstedet
-              href: ../retail/POS-search-improvements.md?toc=/dynamics365/commerce/toc.json
-            - name: Søke etter produkter og produktvarianter under ordreregistrering
-              href: ../supply-chain/pim/search-products-product-variants.md?toc=/dynamics365/commerce/toc.json
-            - name: Forbedringer for kontanttransaksjoner
-              href: ../retail/cash-mgmt.md
-            - name: Beholdningsoppslag på salgsstedet
-              href: ../retail/product-variants-POS.md?toc=/dynamics365/commerce/toc.json
-            - name: Suspendere og gjenoppta transaksjoner på salgsstedet
-              href: ../retail/pos-suspend-recall-transactions.md?toc=/dynamics365/commerce/toc.json
-            - name: Frakoblet funksjonalitet for POS
-              href: ../retail/pos-offline-functionality.md?toc=/dynamics365/commerce/toc.json
-            - name: Behandling av skift og kassaskuff
-              href: ../retail/shift-drawer-management.md?toc=/dynamics365/commerce/toc.json
-            - name: Balanse for innløsing av gavekort i kontanter
-              href: ../retail/dev-itpro/gift-card-cash-out.md?toc=/dynamics365/commerce/toc.json
-            - name: Levere ordrer fra en annen butikk
-              href: ../retail/charge-send.md?toc=/dynamics365/commerce/toc.json
-            - name: 'Skjule leveringsmåter som ikke er transportør, fra dialogboksen for forsendelse av salgssted'
-              href: ../retail/hide-non-carrier-modes.md?toc=/dynamics365/commerce/toc.json
-            - name: Oppgaveopptaker og hjelp for POS og Cloud POS
-              href: ../retail/task-recorder-retail-pos.md?toc=/dynamics365/commerce/toc.json
-            - name: Eksterne enheter for maskinvare
-              items:
-                - name: Eksterne enheter for detaljhandel
-                  href: ../retail/retail-peripherals-overview.md?toc=/dynamics365/commerce/toc.json
-                - name: Simulator for eksterne enheter for Retail
-                  href: ../retail/dev-itpro/retail-peripheral-simulator.md?toc=/dynamics365/commerce/toc.json
-                - name: Koble eksterne enheter til salgsstedet
-                  href: ../retail/define-maintain-channel-clients-registers-hw-stations.md?toc=/dynamics365/commerce/toc.json
-            - name: Skjermoppsett
-              items:
-                - name: Skjermoppsett for demonstrasjonsdata i MPOS/CPOS
-                  href: ../retail/demo-data.md?toc=/dynamics365/commerce/toc.json
-                - name: Skjermoppsett for salgsstedet
-                  href: ../retail/pos-screen-layouts.md?toc=/dynamics365/commerce/toc.json
-                - name: Installere oppsettsutforming for Retail POS
-                  href: ../retail/install-pos-layout-designer.md?toc=/dynamics365/commerce/toc.json
-                - name: Velge varslingsinnstillinger
-                  href: ../retail/Notifications-POS.md?toc=/dynamics365/commerce/toc.json
-                - name: POS-program og innstillinger for brukerspråk
-                  href: ../retail/pos-application-user-language-settings.md?toc=/dynamics365/commerce/toc.json
-                - name: Definere og administrere bilder for MPOS
-                  href: ../retail/set-up-manage-images-retail-mpos.md?toc=/dynamics365/commerce/toc.json
-                - name: Klientavbildninger i POS
-                  href: ../retail/pos-image.md?toc=/dynamics365/commerce/toc.json
-            - name: Kundeordrer
-              items:
-                - name: Kundeordrer i MPOS
-                  href: ../retail/customer-orders-overview.md?toc=/dynamics365/commerce/toc.json
-                - name: Hybride kundeordrer
-                  href: ../retail/hybrid-customer-orders.md?toc=/dynamics365/commerce/toc.json
-            - name: Salgsmedarbeidere
-              items:
-                - name: Spore provisjoner på salgsstedet ved hjelp av salgsgrupper
-                  href: ../retail/pos-sales-groups-track-commissions.md?toc=/dynamics365/commerce/toc.json
-            - name: Enhetsaktivering
-              items:
-                - name: 'Konfigurere, installere og aktivere MPOS'
-                  href: ../retail/retail-modern-pos-device-activation.md?toc=/dynamics365/commerce/toc.json
-                - name: Definere funksjonalitet for utvidet pålogging MPOS og Cloud POS
-                  href: ../retail/extended-logon.md?toc=/dynamics365/commerce/toc.json
-                - name: Administrere aktiveringskontoer for Retail og validere enheter
-                  href: ../retail/set-up-activation-accounts-validate-devices-hq.md?toc=/dynamics365/commerce/toc.json
-            - name: Kvitteringer
-              items:
-                - name: Definere og utforme kvitteringsformater
-                  href: ../retail/receipt-templates-printing.md?toc=/dynamics365/commerce/toc.json
-                - name: Sende e-postkvitteringer fra MPOS
-                  href: ../retail/email-receipts.md?toc=/dynamics365/commerce/toc.json
         - name: Vurderinger og omtaler
           items:
             - name: Oversikt over vurderinger og anmeldelser
@@ -761,7 +813,7 @@
             - name: Mexico
               items:
                 - name: Globale CFDI-e-fakturaer for Mexico
-                  href: ../finance/localizations/latam-mex-global-cfdi-3-3.md
+                  href: ../finance/localizations/latam-mex-global-cfdi-3-3.md?toc=/dynamics365/commerce/toc.json
             - name: Norge
               items:
                 - name: Kassefunksjonalitet
@@ -837,7 +889,7 @@
                 - name: Fordeler
                   href: ../fin-ops-core/dev-itpro/analytics/benefits-power-bi.md?toc=/dynamics365/commerce/toc.json
                 - name: Kontantstrømoversikt
-                  href: ../finance/cash-bank-management/Cash-Overview-Power-BI-content.md
+                  href: ../finance/cash-bank-management/Cash-Overview-Power-BI-content.md?toc=/dynamics365/commerce/toc.json
                 - name: CFO-oversikt
                   href: ../fin-ops-core/dev-itpro/analytics/CFO-power-bi.md?toc=/dynamics365/commerce/toc.json
                 - name: Kompensasjon
@@ -853,7 +905,7 @@
                 - name: Kostnadsstyring
                   href: ../fin-ops-core/dev-itpro/analytics/cost-management-content-pack.md?toc=/dynamics365/commerce/toc.json
                 - name: Behandling av kreditt og innkrevinger
-                  href: ../finance/accounts-receivable/credit-collections-power-bi.md
+                  href: ../finance/accounts-receivable/credit-collections-power-bi.md?toc=/dynamics365/commerce/toc.json
                 - name: Kompetanser og utvikling for ansatt
                   href: ../fin-ops-core/dev-itpro/analytics/employee-competencies-and-development-analysis-power-bi-content-pack.md?toc=/dynamics365/commerce/toc.json
                 - name: Ansattutvikling
@@ -865,7 +917,7 @@
                 - name: Økonomisk innsikt
                   href: ../fin-ops-core/dev-itpro/analytics/financial-insights.md?toc=/dynamics365/commerce/toc.json
                 - name: Anleggsmiddelbehandling
-                  href: ../finance/fixed-assets/Fixed-asset-management-workspace.md
+                  href: ../finance/fixed-assets/Fixed-asset-management-workspace.md?toc=/dynamics365/commerce/toc.json
                 - name: Opplæring
                   href: ../fin-ops-core/dev-itpro/analytics/learning-power-bi.md?toc=/dynamics365/commerce/toc.json
                 - name: Organisasjonsopplæring
@@ -883,7 +935,7 @@
                 - name: Resultat av salg og fortjeneste
                   href: ../fin-ops-core/dev-itpro/analytics/sales-profitability-performance-content-pack.md?toc=/dynamics365/commerce/toc.json
                 - name: Leverandørbetalinger
-                  href: ../finance/accounts-payable/Vendor-payments-workspace.md
+                  href: ../finance/accounts-payable/Vendor-payments-workspace.md?toc=/dynamics365/commerce/toc.json
                 - name: Lagerytelse
                   href: ../fin-ops-core/dev-itpro/analytics/warehouse-power-bi-content.md?toc=/dynamics365/commerce/toc.json
                 - name: Metrikk for arbeidsstyrke
@@ -901,7 +953,7 @@
                     - name: Installere dokumentrutingsagenten slik at nettverksutskrift kan brukes
                       href: ../fin-ops-core/dev-itpro/analytics/install-document-routing-agent.md?toc=/dynamics365/commerce/toc.json
                     - name: Oppgradere dokumentrutingsagenten
-                      href: ../fin-ops-core/dev-itpro/analytics/upgrade-document-routing-agent.md
+                      href: ../fin-ops-core/dev-itpro/analytics/upgrade-document-routing-agent.md?toc=/dynamics365/commerce/toc.json
                     - name: Installere nettverksskriverenheter i lokale miljøer
                       href: ../fin-ops-core/dev-itpro/analytics/install-network-printer-onprem.md?toc=/dynamics365/commerce/toc.json
                     - name: 'Dokumentgenerering, publisering og utskrift i lokale distribusjoner'
@@ -1063,7 +1115,7 @@
                         - name: Importere filer i XML-format med valgfrie attributter
                           href: ../fin-ops-core/dev-itpro/analytics/rcs-optional-attributes.md?toc=/dynamics365/commerce/toc.json
                         - name: Konfigurere ER-formater til å importere XML-formatfiler med valgfrie attributter
-                          href: ../fin-ops-core/dev-itpro/analytics/tasks/import-files-xml-format-optional-attributes.md
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/import-files-xml-format-optional-attributes.md?toc=/dynamics365/commerce/toc.json
                 - name: Dele opp genererte XML-filer basert på filstørrelse og innholdsmengde
                   href: ../fin-ops-core/dev-itpro/analytics/er-split-files.md?toc=/dynamics365/commerce/toc.json
                 - name: Støtte for parametriserte kall av ER-datakilder av felttypen Beregnet
@@ -1085,7 +1137,7 @@
                         - name: Laste ned konfigurasjoner fra ER-repositoriet til RCS-typen
                           href: ../fin-ops-core/dev-itpro/analytics/rcs-download-configurations.md?toc=/dynamics365/commerce/toc.json
                         - name: Importere konfigurasjoner fra RCS
-                          href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md?toc=/dynamics365/commerce/toc.json
                 - name: Bruke løsninger for elektronisk rapportering i Finance and Operations
                   items:
                     - name: Konfigurere rammeverket
@@ -1163,7 +1215,7 @@
                 - name: Power BI-integrering med enhetslager
                   href: ../fin-ops-core/dev-itpro/analytics/power-bi-integration-entity-store.md?toc=/dynamics365/commerce/toc.json
                 - name: Løse problemer etter vedlikehold av enhetslager
-                  href: ../fin-ops-core/dev-itpro/analytics/entity-store-maintenance.md
+                  href: ../fin-ops-core/dev-itpro/analytics/entity-store-maintenance.md?toc=/dynamics365/commerce/toc.json
                 - name: Konfigurere Power BI-integrering for arbeidsområder
                   href: ../fin-ops-core/dev-itpro/analytics/configure-power-bi-integration.md?toc=/dynamics365/commerce/toc.json
                 - name: Vise din egen database
@@ -1177,7 +1229,7 @@
                 - name: Tilgjengelige mobile arbeidsområder
                   href: ../fin-ops-core/dev-itpro/mobile-apps/mobile-workspaces-released.md?toc=/dynamics365/commerce/toc.json
                 - name: Aktivabehandling
-                  href: ../supply-chain/asset-management/asset-management-mobile-workspace.md
+                  href: ../supply-chain/asset-management/asset-management-mobile-workspace.md?toc=/dynamics365/commerce/toc.json
                 - name: Firmakatalog
                   href: ../fin-ops-core/dev-itpro/mobile-apps/company-directory-mobile-workspace.md?toc=/dynamics365/commerce/toc.json
                 - name: Kostnadskontroll
@@ -1193,7 +1245,7 @@
                 - name: Oversikt over mobilapper for Project
                   href: ../finance/project-management/project-mobile-application-overview.md?toc=/dynamics365/commerce/toc.json
                 - name: Tidsoppføring for prosjekt
-                  href: ../finance/project-management/project-time-entry-mobile-workspace.md?toc=/retailtoc.json
+                  href: ../finance/project-management/project-time-entry-mobile-workspace.md?toc=/dynamics365/commerce/toc.json
                 - name: Project Timesheet
                   href: ../finance/project-management/project-timesheet.md?toc=/dynamics365/commerce/toc.json
                 - name: Godkjenning av bestilling
@@ -1360,11 +1412,14 @@
               href: ../fin-ops-core/fin-ops/organization-administration/configure-email.md?toc=/dynamics365/commerce/toc.json
             - name: Dato-/klokkeslettdata og tidssoner
               href: ../fin-ops-core/fin-ops/organization-administration/date-time-zones.md?toc=/dynamics365/commerce/toc.json
-        - name: Utvidelsesmulighet
+        - name: Utvikling
           items:
+            - name: Utvikling og utvidelse av handel
+              href: ../retail/dev-itpro/dev-retail-home-page.md?toc=/dynamics365/commerce/toc.json
             - name: Utvidelsesmulighet for Internett-kanal
-              href: e-commerce-extensibility/overview.md
               items:
+                - name: Oversikt over utvidelsesmulighet for Internett-kanal
+                  href: e-commerce-extensibility/overview.md
                 - name: Komme i gang
                   items:
                     - name: Systemkrav
@@ -1477,222 +1532,160 @@
                       href: e-commerce-extensibility/package-deploy.md
                     - name: Oppdateringer for SDK og kjernebibliotek
                       href: e-commerce-extensibility/sdk-updates.md
-            - name: Retail-utvikling
+            - name: SDK for Retail
               items:
-                - name: Oversikt over utvikling og administrasjon for Retail
-                  href: ../retail/dev-itpro/dev-retail-home-page.md?toc=/dynamics365/commerce/toc.json
-                - name: Arkitektur
-                  items:
-                    - name: Retail-komponenter
-                      href: ../retail/retail-components.md?toc=/dynamics365/commerce/toc.json
-                    - name: Arkitektur for Retail Server
-                      href: ../retail/dev-itpro/retail-server-architecture.md?toc=/dynamics365/commerce/toc.json
-                    - name: Velg topologi i butikk
-                      href: ../retail/dev-itpro/retail-in-store-topology.md?toc=/dynamics365/commerce/toc.json
-                    - name: Commerce Data Exchange og kommunikasjon på detaljhandelskanal
-                      href: ../retail/dev-itpro/define-retail-channel-communications-cdx.md?toc=/dynamics365/commerce/toc.json
-                    - name: Retail Modern POS-arkitektur
-                      href: ../retail/dev-itpro/retail-modern-pos-architecture.md?toc=/dynamics365/commerce/toc.json
-                    - name: Publiseringsarkitektur for nettbutikk for Retail
-                      href: ../retail/dev-itpro/retail-online-store-publishing-architecture.md?toc=/dynamics365/commerce/toc.json
-                    - name: Power BI-innhold for Retail Channel Performance
-                      href: ../fin-ops-core/dev-itpro/analytics/retail-channel-performance-dashboard-power-bi-data.md?toc=/dynamics365/commerce/toc.json
-                    - name: PA-DSS-sertifisering (Payment Application Data Security Standards)
-                      href: ../retail/dev-itpro/PA-DSS-Certification.md?toc=/dynamics365/commerce/toc.json
-                    - name: Detaljhandelsfunksjoner som er tilgjengelige i lokale distribusjoner
-                      href: ../retail/retail-onprem.md?toc=/dynamics365/commerce/toc.json
-                - name: Distribusjon og hurtigreparasjoner
-                  items:
-                    - name: Retail Store Scale Unit
-                      href: ../retail/dev-itpro/retail-store-system-begin.md?toc=/dynamics365/commerce/toc.json
-                    - name: Konfigurere og installere Retail Store Scale Unit
-                      href: ../retail/dev-itpro/retail-store-scale-unit-configuration-installation.md?toc=/dynamics365/commerce/toc.json
-                    - name: Konfigurasjon og installasjon av Retail Modern POS
-                      href: ../retail/retail-modern-pos-device-activation.md?toc=/dynamics365/commerce/toc.json
-                    - name: Administrere Retail-kontoer og -enheter fra hovedkvarter
-                      href: ../retail/set-up-activation-accounts-validate-devices-hq.md?toc=/dynamics365/commerce/toc.json
-                    - name: Aktivering av enhet for Retail POS
-                      href: ../retail/dev-itpro/retail-device-activation.md?toc=/dynamics365/commerce/toc.json
-                    - name: Hjelpe med å sikre Cloud POS i delte miljøer
-                      href: ../retail/dev-itpro/secure-retail-cloud-pos.md?toc=/dynamics365/commerce/toc.json
-                    - name: Konfigurasjon og installasjon av Retail Hardware Station
-                      href: ../retail/retail-hardware-station-configuration-installation.md?toc=/dynamics365/commerce/toc.json
-                    - name: Massedistribusjon av selvbetjeningskomponenter for Retail
-                      href: ../retail/dev-itpro/retail-mass-deployment.md?toc=/dynamics365/commerce/toc.json
-                    - name: Hendelser for Retail-komponenter for diagnose og feilsøking
-                      href: ../retail/dev-itpro/retail-component-events-diagnostics-troubleshooting.md?toc=/dynamics365/commerce/toc.json
-                    - name: Bruke en distribuerbar pakke
-                      href: ../fin-ops-core/dev-itpro/deployment/apply-deployable-package-system.md?toc=/dynamics365/commerce/toc.json
-                - name: Oppgradering og N-1-støtte
-                  items:
-                    - name: Støtte for oppgradering og N-1 for detaljhandel
-                      href: ../retail/dev-itpro/overview-upgrade-n-minus1.md?toc=/dynamics365/commerce/toc.json
-                    - name: 'Installasjon, konfigurasjon og overgang for distribusjon i faser (N-1)'
-                      href: ../retail/dev-itpro/n-1-installation-configuration.md?toc=/dynamics365/commerce/toc.json
-                    - name: Oppgradere utvidelsen for Retail-kanalen til siste SDK for Retail
-                      href: ../retail/dev-itpro/retailSDK-update.md?toc=/dynamics365/commerce/toc.json
-                - name: Implementeringsveiledning
-                  items:
-                    - name: Implementeringsveiledning for enhetsbehandling
-                      href: ../retail/implementation-considerations-devices.md?toc=/dynamics365/commerce/toc.json
-                - name: Miljøkonfigurasjon
-                  items:
-                    - name: Legge til koblinger i organisasjonens juridiske vilkår og personvernerklæring
-                      href: ../fin-ops-core/dev-itpro/sysadmin/legal-terms-privacy-statement.md?toc=/dynamics365/commerce/toc.json
-                    - name: Administrere Bing-kart
-                      href: ../retail/dev-itpro/manage-bing-maps.md?toc=/dynamics365/commerce/toc.json
-                - name: Lokalisere utvidelsesressurser og etikettfiler for Retail
-                  href: ../retail/dev-itpro/extension-resource-localization.md?toc=/dynamics365/commerce/toc.json
-                - name: Utvidelsesmuligheter for salgssted
-                  items:
-                    - name: Skjermoppsett for Retail POS
-                      href: ../retail/pos-screen-layouts.md?toc=/dynamics365/commerce/toc.json
-                    - name: Åpne URL-adresse i POS
-                      href: ../retail/Open-URL-in-POS.md?toc=/dynamics365/commerce/toc.json
-                    - name: Installere utforming av oppsett for salgssted
-                      href: ../retail/install-pos-layout-designer.md?toc=/dynamics365/commerce/toc.json
-                    - name: Retail Modern POS i frakoblet modus
-                      href: ../retail/dev-itpro/retail-modern-pos-offline.md?toc=/dynamics365/commerce/toc.json
-                    - name: Utvide skjermvisningen for POS Dual
-                      href: ../retail/dev-itpro/pos-dual-display-extension.md?toc=/dynamics365/commerce/toc.json
-                    - name: Utvidelsesmulighet for Retail Modern POS- og skysalgsstedsutløser
-                      href: ../retail/dev-itpro/modern-pos-trigger-extensibility.md?toc=/dynamics365/commerce/toc.json
-                    - name: Legge til egendefinerte kontroller i salgsstedsvisninger
-                      href: ../retail/dev-itpro/pos-custom-control.md?toc=/dynamics365/commerce/toc.json
-                    - name: Legge til salgsstedsoperasjoner i salgsstedsoppsett ved hjelp av utforming for knappegruppe
-                      href: ../retail/dev-itpro/add-POS-operations.md
-                    - name: API-er for Retail POS
-                      href: ../retail/dev-itpro/POS-APIs.md?toc=/dynamics365/commerce/toc.json
-                    - name: Utvidelse for salgsstedsbetaling
-                      href: ../retail/dev-itpro/pos-payment-extension.md?toc=/dynamics365/commerce/toc.json
-                    - name: Støtte for eksterne gavekort
-                      href: ../retail/dev-itpro/gift-card.md?toc=/dynamics365/commerce/toc.json
-                    - name: Opprette og bruke merking i appen Retail Experience
-                      href: ../retail/dev-itpro/create-retail-experience-app.md?toc=/dynamics365/commerce/toc.json
-                    - name: Definere POS Hybrid-app på Android og iOS
-                      href: ../retail/dev-itpro/hybridApp.md?toc=/dynamics365/commerce/toc.json
-                    - name: Overstyre forespørselsbehandling for salgssted
-                      href: ../retail/dev-itpro/pos-handler.md?toc=/dynamics365/commerce/toc.json
-                    - name: Vise informasjon om utvidelsespakke for salgssted
-                      href: ../retail/dev-itpro/view-pos-extension-package-details.md?toc=/dynamics365/commerce/toc.json
-                    - name: Teste registrering og Regression Suite Automation Tool for Retail Cloud POS
-                      href: ../retail/dev-itpro/pos-rsat.md?toc=/dynamics365/commerce/toc.json
-                - name: Utvidelsesmulighet for Hardware Station
+                - name: Arkitektur for SDK for Retail
+                  href: ../retail/dev-itpro/retail-sdk/retail-sdk-overview.md?toc=/dynamics365/commerce/toc.json
+                - name: Kommende endringer i SDK for Retail
+                  href: ../retail/dev-itpro/UpcomingSDKChanges.md?toc=/dynamics365/commerce/toc.json
+                - name: Flette byggesystemene for Retail og Finance and Operations
+                  href: ../retail/dev-itpro/retail-sdk/integrate-retail-sdk-continuous-build.md?toc=/dynamics365/commerce/toc.json
+                - name: Eksempler på utvidelsesmulighet for SDK for Retail
+                  href: ../retail/dev-itpro/retail-sdk/retail-sdk-extensibility-samples.md?toc=/dynamics365/commerce/toc.json
+                - name: Opprette distribuerbare pakker for detaljhandel
+                  href: ../retail/dev-itpro/retail-sdk/retail-sdk-packaging.md?toc=/dynamics365/commerce/toc.json
+                - name: Utvikling i skydriftede utviklingsmiljøer uten administratortilgang
+                  href: ../retail/dev-itpro/cloud-dev-box.md?toc=/dynamics365/commerce/toc.json
+            - name: Utvidelsesmuligheter for salgssted
+              items:
+                - name: Skjermoppsett for Retail POS
+                  href: ../retail/pos-screen-layouts.md?toc=/dynamics365/commerce/toc.json
+                - name: Åpne URL-adresse i POS
+                  href: ../retail/Open-URL-in-POS.md?toc=/dynamics365/commerce/toc.json
+                - name: Installere utforming av oppsett for salgssted
+                  href: ../retail/install-pos-layout-designer.md?toc=/dynamics365/commerce/toc.json
+                - name: Utvide skjermvisningen for POS Dual
+                  href: ../retail/dev-itpro/pos-dual-display-extension.md?toc=/dynamics365/commerce/toc.json
+                - name: Utvidelsesmulighet for Retail Modern POS- og skysalgsstedsutløser
+                  href: ../retail/dev-itpro/modern-pos-trigger-extensibility.md?toc=/dynamics365/commerce/toc.json
+                - name: Legge til egendefinerte kontroller i salgsstedsvisninger
+                  href: ../retail/dev-itpro/pos-custom-control.md?toc=/dynamics365/commerce/toc.json
+                - name: Legge til salgsstedsoperasjoner i salgsstedsoppsett ved hjelp av utforming for knappegruppe
+                  href: ../retail/dev-itpro/add-POS-operations.md
+                - name: API-er for Retail POS
+                  href: ../retail/dev-itpro/POS-APIs.md?toc=/dynamics365/commerce/toc.json
+                - name: Utvidelse for salgsstedsbetaling
+                  href: ../retail/dev-itpro/pos-payment-extension.md?toc=/dynamics365/commerce/toc.json
+                - name: Støtte for eksterne gavekort
+                  href: ../retail/dev-itpro/gift-card.md?toc=/dynamics365/commerce/toc.json
+                - name: Opprette og bruke merking i appen Retail Experience
+                  href: ../retail/dev-itpro/create-retail-experience-app.md?toc=/dynamics365/commerce/toc.json
+                - name: Definere POS Hybrid-app på Android og iOS
+                  href: ../retail/dev-itpro/hybridApp.md?toc=/dynamics365/commerce/toc.json
+                - name: Overstyre forespørselsbehandling for salgssted
+                  href: ../retail/dev-itpro/pos-handler.md?toc=/dynamics365/commerce/toc.json
+                - name: Vise informasjon om utvidelsespakke for salgssted
+                  href: ../retail/dev-itpro/view-pos-extension-package-details.md?toc=/dynamics365/commerce/toc.json
+                - name: Teste registrering og Regression Suite Automation Tool for Retail Cloud POS
+                  href: ../retail/dev-itpro/pos-rsat.md?toc=/dynamics365/commerce/toc.json
+                - name: Legge til egendefinerte felt i panelet POS-totaler
+                  href: ../retail/dev-itpro/custom-field-pos-totals.md?toc=/dynamics365/commerce/toc.json
+                - name: Vise egendefinerte varslinger i POS.
+                  href: ../retail/dev-itpro/extend-pos-notification.md?toc=/dynamics365/commerce/toc.json
+                - name: Signere MPOS med kodesigneringssertifikat
+                  href: ../retail/dev-itpro/pos-app-signing-certificate.md?toc=/dynamics365/commerce/toc.json
+                - name: Utvide POS-visninger for å legge til egendefinerte kolonner og applinjeknapper
+                  href: ../retail/dev-itpro/pos-view-extension.md?toc=/dynamics365/commerce/toc.json
+                - name: Legge til egendefinerte kontroller på sider for transaksjon for Retail Modern POS
+                  href: ../retail/dev-itpro/pos-custom-transaction.md?toc=/dynamics365/commerce/toc.json
+                - name: Legge til egendefinerte kolonner i et rutenett for POS-transaksjon
+                  href: ../retail/dev-itpro/pos-custom-transaction-column.md?toc=/dynamics365/commerce/toc.json
+                - name: Ringe API-er eller operasjoner for salgssted fra POS-utvidelser
+                  href: ../retail/dev-itpro/pos-api-extension.md?toc=/dynamics365/commerce/toc.json
+                - name: Utløsere og utskrift for Retail Modern POS
+                  href: ../retail/dev-itpro/pos-trigger-printing.md?toc=/dynamics365/commerce/toc.json
+                - name: Legge til egendefinerte kontroller i POS-visninger som ikke er skjermutformingsbaserte
+                  href: ../retail/dev-itpro/pos-control-non-screen.md?toc=/dynamics365/commerce/toc.json
+                - name: Kjøre eksemplene for Retail POS
+                  href: ../retail/dev-itpro/pos-run-samples.md?toc=/dynamics365/commerce/toc.json
+                - name: Implementeringsveiledning for enhetsbehandling
+                  href: ../retail/implementation-considerations-devices.md?toc=/dynamics365/commerce/toc.json
+            - name: Utvidelsesmulighet for Hardware Station
+              items:
+                - name: Hardware Station og utvidelsesmulighet
                   href: ../retail/dev-itpro/hardware-station-extensibility.md?toc=/dynamics365/commerce/toc.json
                 - name: Integrer POS med en ny maskinvareenhet
                   href: ../retail/dev-itpro/hardware-device-extension.md?toc=/dynamics365/commerce/toc.json
-                - name: Utvidelsesmuligheter for Retail Server
-                  items:
-                    - name: Utvide en OData-kontroller for Retail Server
-                      href: ../retail/dev-itpro/extend-retail-server-odata-controller.md?toc=/dynamics365/commerce/toc.json
-                    - name: Opprette en Web-API-kontroller for Retail Server
-                      href: ../retail/dev-itpro/odata-controllers-api.md?toc=/dynamics365/commerce/toc.json
-                    - name: Kunde- og forbruker-API-er for Retail Server
-                      href: ../retail/dev-itpro/retail-server-customer-consumer-api.md?toc=/dynamics365/commerce/toc.json
-                    - name: Utvide standard metadatakontroller for Retail Server
-                      href: ../retail/dev-itpro/extend-metadata.md?toc=/dynamics365/commerce/toc.json
-                    - name: Kalle CRT-tjenesten i frakoblet modus
-                      href: ../retail/dev-itpro/call-crt-service-offline.md?toc=/dynamics365/commerce/toc.json
-                    - name: Opprette ny Retail-serverutvidelse
-                      href: ../retail/dev-itpro/retail-server-extension.md?toc=/dynamics365/commerce/toc.json
-                - name: Commerce Runtime (CRT) utvidelsesmulighet
-                  items:
-                    - name: Arkitektur for og konfigurasjon av CRT
-                      href: ../retail/dev-itpro/commerce-runtime-overview.md?toc=/dynamics365/commerce/toc.json
-                    - name: CRT-tjenester
-                      href: ../retail/dev-itpro/crt-services.md?toc=/dynamics365/commerce/toc.json
-                    - name: Utvidelsesmulighet for CRT og Retail Server
-                      href: ../retail/dev-itpro/commerce-runtime-extensibility.md?toc=/dynamics365/commerce/toc.json
-                    - name: Legge til kundeinnstillingsdata i kanaldatabaser
-                      href: ../retail/dev-itpro/add-customer-preference-channel.md?toc=/dynamics365/commerce/toc.json
-                    - name: Behandle hemmeligheter for detaljhandelskanaler
-                      href: ../retail/dev-itpro/manage-secrets.md?toc=/dynamics365/commerce/toc.json
-                    - name: Legge til egenskaper i salgsordrer
-                      href: ../retail/dev-itpro/add-properties-sales-order.md?toc=/dynamics365/commerce/toc.json
-                    - name: Utvidelsesmulighet og utløsere for CRT
-                      href: ../retail/dev-itpro/commerce-runtime-extensibility-trigger.md?toc=/dynamics365/commerce/toc.json
-                    - name: Blokkere transaksjoner ved hjelp av utløsere
-                      href: ../retail/dev-itpro/trigger-example-blocking-transaction.md?toc=/dynamics365/commerce/toc.json
-                    - name: Implementere en returpolicy ved hjelp av utløsere
-                      href: ../retail/dev-itpro/trigger-example-return-policy.md?toc=/dynamics365/commerce/toc.json
-                - name: Utvidelsesmuligheter for e-handel
-                  items:
-                    - name: Konfigurer nettbutikker
-                      href: ../retail/dev-itpro/configure-online-store.md?toc=/dynamics365/commerce/toc.json
-                    - name: Konfigurere godkjenningsleverandører
-                      href: ../retail/dev-itpro/configure-authentication-providers.md?toc=/dynamics365/commerce/toc.json
-                    - name: E-handelsplattform
-                      href: ../retail/dev-itpro/ecommerce-platform.md?toc=/dynamics365/commerce/toc.json
-                    - name: SDK for e-handelsplattform
-                      href: ../retail/dev-itpro/ecommerce-platform-sdk.md?toc=/dynamics365/commerce/toc.json
-                - name: Utvidelsesmuligheter for betalingskobling
-                  items:
-                    - name: Opprette en betalingsintegrering for en betalingsterminal
-                      href: ../retail/dev-itpro/end-to-end-payment-extension.md?toc=/dynamics365/commerce/toc.json
-                    - name: Implementere en betalingskobling og betalingsenhet (hvitbok)
-                      href: 'https://download.microsoft.com/download/e/2/7/e2735c65-1e66-4b8d-8a3c-e6ef3a319137/The Guide to Implementing Payment Connector and Payment Device_update.pdf'
-                    - name: Distribuere betalingskoblinger
-                      href: ../retail/dev-itpro/deploy-payment-connector.md?toc=/dynamics365/commerce/toc.json
-                    - name: 'Opprette egendefinerte, lokaliserte feilmeldinger for utvidelser av betalingsterminal'
-                      href: ../retail/dev-itpro/payment-custom-error-messages.md?toc=/dynamics365/commerce/toc.json
-                    - name: Opprette Windows-installasjonsprogrammer for betalingskoblinger
-                      href: ../retail/dev-itpro/create-windows-installer-payment-connector.md?toc=/dynamics365/commerce/toc.json
-                    - name: Betalingsdatabruk
-                      href: ../retail/payment-connector-data-fields.md?toc=/dynamics365/commerce/toc.json
-                    - name: Aktivere duplisert betalingsbeskyttelse for betalingskobling
-                      href: ../retail/dev-itpro/duplicate-payment-protection.md?toc=/dynamics365/commerce/toc.json
-                - name: SDK for Retail
-                  items:
-                    - name: Arkitektur for SDK for Retail
-                      href: ../retail/dev-itpro/retail-sdk/retail-sdk-overview.md?toc=/dynamics365/commerce/toc.json
-                    - name: Kommende endringer i SDK for Retail
-                      href: ../retail/dev-itpro/UpcomingSDKChanges.md?toc=/dynamics365/commerce/toc.json
-                    - name: Flette byggesystemene for Retail og Finance and Operations
-                      href: ../retail/dev-itpro/retail-sdk/integrate-retail-sdk-continuous-build.md?toc=/dynamics365/commerce/toc.json
-                    - name: Eksempler på utvidelsesmulighet for SDK for Retail
-                      href: ../retail/dev-itpro/retail-sdk/retail-sdk-extensibility-samples.md?toc=/dynamics365/commerce/toc.json
-                    - name: Opprette distribuerbare pakker for detaljhandel
-                      href: ../retail/dev-itpro/retail-sdk/retail-sdk-packaging.md?toc=/dynamics365/commerce/toc.json
-                    - name: Eksempler på SDK for Retail
-                      href: ../retail/dev-itpro/retail-sdk/retail-sdk-samples.md?toc=/dynamics365/commerce/toc.json
-                    - name: Utvidelsespunkt for følgesedler
-                      href: ../retail/dev-itpro/extensions-shipping-carrier-integration.md?toc=/dynamics365/commerce/toc.json
-                    - name: Utvidelser for kanaldatabase
-                      href: ../retail/dev-itpro/channel-db-extensions.md?toc=/dynamics365/commerce/toc.json
-                    - name: Aktivere egendefinert CDX-synkronisering via utvidelse
-                      href: ../retail/dev-itpro/cdx-extensibility.md?toc=/dynamics365/commerce/toc.json
-                    - name: Legge til egendefinerte felt i panelet POS-totaler
-                      href: ../retail/dev-itpro/custom-field-pos-totals.md?toc=/dynamics365/commerce/toc.json
-                    - name: Definere og angi ordreattributter
-                      href: ../retail/dev-itpro/order-attributes.md?toc=/dynamics365/commerce/toc.json
-                    - name: Kundeattributter
-                      href: ../retail/dev-itpro/customer-attributes.md?toc=/dynamics365/commerce/toc.json
-                    - name: 'Retail Typescript og C#-proxyer'
-                      href: ../retail/dev-itpro/typescript-proxy-retail-pos.md?toc=/dynamics365/commerce/toc.json
-                    - name: Kjøre eksemplene for Retail POS
-                      href: ../retail/dev-itpro/pos-run-samples.md?toc=/dynamics365/commerce/toc.json
-                    - name: Utvide POS-visninger for å legge til egendefinerte kolonner og applinjeknapper
-                      href: ../retail/dev-itpro/pos-view-extension.md?toc=/dynamics365/commerce/toc.json
-                    - name: Legge til egendefinerte kontroller på sider for transaksjon for Retail Modern POS
-                      href: ../retail/dev-itpro/pos-custom-transaction.md?toc=/dynamics365/commerce/toc.json
-                    - name: Legge til egendefinerte kolonner i et rutenett for POS-transaksjon
-                      href: ../retail/dev-itpro/pos-custom-transaction-column.md?toc=/dynamics365/commerce/toc.json
-                    - name: Ringe API-er eller operasjoner for salgssted fra POS-utvidelser
-                      href: ../retail/dev-itpro/pos-api-extension.md?toc=/dynamics365/commerce/toc.json
-                    - name: Utløsere og utskrift for Retail Modern POS
-                      href: ../retail/dev-itpro/pos-trigger-printing.md?toc=/dynamics365/commerce/toc.json
-                    - name: Legge til egendefinerte kontroller i POS-visninger som ikke er skjermutformingsbaserte
-                      href: ../retail/dev-itpro/pos-control-non-screen.md?toc=/dynamics365/commerce/toc.json
-                    - name: Utvikling i skydriftede utviklingsmiljøer uten administratortilgang
-                      href: ../retail/dev-itpro/cloud-dev-box.md?toc=/dynamics365/commerce/toc.json
-                    - name: Vise egendefinerte varslinger i POS.
-                      href: ../retail/dev-itpro/extend-pos-notification.md?toc=/dynamics365/commerce/toc.json
-                    - name: Signere MPOS med kodesigneringssertifikat
-                      href: ../retail/dev-itpro/pos-app-signing-certificate.md?toc=/dynamics365/commerce/toc.json
-                - name: Commerce Runtime
-                  items:
-                    - name: Fordelsutvidelse
-                      href: ../retail/dev-itpro/retail-sdk/loyalty-extension-sample.md?toc=/dynamics365/commerce/toc.json
+            - name: Utvidelsesmuligheter for Retail Server
+              items:
+                - name: Utvide en OData-kontroller for Retail Server
+                  href: ../retail/dev-itpro/extend-retail-server-odata-controller.md?toc=/dynamics365/commerce/toc.json
+                - name: Opprette en Web-API-kontroller for Retail Server
+                  href: ../retail/dev-itpro/odata-controllers-api.md?toc=/dynamics365/commerce/toc.json
+                - name: Kunde- og forbruker-API-er for Retail Server
+                  href: ../retail/dev-itpro/retail-server-customer-consumer-api.md?toc=/dynamics365/commerce/toc.json
+                - name: Utvide standard metadatakontroller for Retail Server
+                  href: ../retail/dev-itpro/extend-metadata.md?toc=/dynamics365/commerce/toc.json
+                - name: Kalle CRT-tjenesten i frakoblet modus
+                  href: ../retail/dev-itpro/call-crt-service-offline.md?toc=/dynamics365/commerce/toc.json
+                - name: Opprette ny Retail-serverutvidelse
+                  href: ../retail/dev-itpro/retail-server-extension.md?toc=/dynamics365/commerce/toc.json
+                - name: 'Retail Typescript og C#-proxyer'
+                  href: ../retail/dev-itpro/typescript-proxy-retail-pos.md?toc=/dynamics365/commerce/toc.json
+            - name: Commerce Runtime (CRT) utvidelsesmulighet
+              items:
+                - name: Arkitektur for og konfigurasjon av CRT
+                  href: ../retail/dev-itpro/commerce-runtime-overview.md?toc=/dynamics365/commerce/toc.json
+                - name: CRT-tjenester
+                  href: ../retail/dev-itpro/crt-services.md?toc=/dynamics365/commerce/toc.json
+                - name: Utvidelsesmulighet for CRT og Retail Server
+                  href: ../retail/dev-itpro/commerce-runtime-extensibility.md?toc=/dynamics365/commerce/toc.json
+                - name: Legge til kundeinnstillingsdata i kanaldatabaser
+                  href: ../retail/dev-itpro/add-customer-preference-channel.md?toc=/dynamics365/commerce/toc.json
+                - name: Behandle hemmeligheter for detaljhandelskanaler
+                  href: ../retail/dev-itpro/manage-secrets.md?toc=/dynamics365/commerce/toc.json
+                - name: Legge til egenskaper i salgsordrer
+                  href: ../retail/dev-itpro/add-properties-sales-order.md?toc=/dynamics365/commerce/toc.json
+                - name: Utvidelsesmulighet og utløsere for CRT
+                  href: ../retail/dev-itpro/commerce-runtime-extensibility-trigger.md?toc=/dynamics365/commerce/toc.json
+                - name: Blokkere transaksjoner ved hjelp av utløsere
+                  href: ../retail/dev-itpro/trigger-example-blocking-transaction.md?toc=/dynamics365/commerce/toc.json
+                - name: Implementere en returpolicy ved hjelp av utløsere
+                  href: ../retail/dev-itpro/trigger-example-return-policy.md?toc=/dynamics365/commerce/toc.json
+                - name: Fordelsutvidelse
+                  href: ../retail/dev-itpro/retail-sdk/loyalty-extension-sample.md?toc=/dynamics365/commerce/toc.json
+                - name: Utvidelsespunkt for følgesedler
+                  href: ../retail/dev-itpro/extensions-shipping-carrier-integration.md?toc=/dynamics365/commerce/toc.json
+                - name: Utvidelser for kanaldatabase
+                  href: ../retail/dev-itpro/channel-db-extensions.md?toc=/dynamics365/commerce/toc.json
+                - name: Aktivere egendefinert CDX-synkronisering via utvidelse
+                  href: ../retail/dev-itpro/cdx-extensibility.md?toc=/dynamics365/commerce/toc.json
+                - name: Definere og angi ordreattributter
+                  href: ../retail/dev-itpro/order-attributes.md?toc=/dynamics365/commerce/toc.json
+                - name: Kundeattributter
+                  href: ../retail/dev-itpro/customer-attributes.md?toc=/dynamics365/commerce/toc.json
+                - name: CRT SDK-eksempler
+                  href: ../retail/dev-itpro/retail-sdk/retail-sdk-samples.md?toc=/dynamics365/commerce/toc.json
+                - name: Logge utvidelseshendelser til Application Insights
+                  href: ../retail/dev-itpro/commerce-application-insights.md?toc=/dynamics365/commerce/toc.json
+            - name: Utvidelsesmuligheter for betalingskobling
+              items:
+                - name: Opprette en betalingsintegrering for en betalingsterminal
+                  href: ../retail/dev-itpro/end-to-end-payment-extension.md?toc=/dynamics365/commerce/toc.json
+                - name: Implementere en betalingskobling og betalingsenhet (hvitbok)
+                  href: 'https://download.microsoft.com/download/e/2/7/e2735c65-1e66-4b8d-8a3c-e6ef3a319137/The Guide to Implementing Payment Connector and Payment Device_update.pdf'
+                - name: Distribuere betalingskoblinger
+                  href: ../retail/dev-itpro/deploy-payment-connector.md?toc=/dynamics365/commerce/toc.json
+                - name: 'Opprette egendefinerte, lokaliserte feilmeldinger for utvidelser av betalingsterminal'
+                  href: ../retail/dev-itpro/payment-custom-error-messages.md?toc=/dynamics365/commerce/toc.json
+                - name: Opprette Windows-installasjonsprogrammer for betalingskoblinger
+                  href: ../retail/dev-itpro/create-windows-installer-payment-connector.md?toc=/dynamics365/commerce/toc.json
+                - name: Betalingsdatabruk
+                  href: ../retail/payment-connector-data-fields.md?toc=/dynamics365/commerce/toc.json
+                - name: Aktivere duplisert betalingsbeskyttelse for betalingskobling
+                  href: ../retail/dev-itpro/duplicate-payment-protection.md?toc=/dynamics365/commerce/toc.json
+            - name: Utvidelsesmulighet for e-handel med tredjepart
+              items:
+                - name: Konfigurer nettbutikker
+                  href: ../retail/dev-itpro/configure-online-store.md?toc=/dynamics365/commerce/toc.json
+                - name: Konfigurere godkjenningsleverandører
+                  href: ../retail/dev-itpro/configure-authentication-providers.md?toc=/dynamics365/commerce/toc.json
+                - name: E-handelsplattform
+                  href: ../retail/dev-itpro/ecommerce-platform.md?toc=/dynamics365/commerce/toc.json
+                - name: SDK for e-handelsplattform
+                  href: ../retail/dev-itpro/ecommerce-platform-sdk.md?toc=/dynamics365/commerce/toc.json
+            - name: Lokalisere utvidelsesressurser og etikettfiler for Retail
+              href: ../retail/dev-itpro/extension-resource-localization.md?toc=/dynamics365/commerce/toc.json
     - name: Utvikling og administrasjon for Finance and Operations-apper
       href: ../fin-ops-core/dev-itpro/index.md
     - name: Dynamics 365 Retail
