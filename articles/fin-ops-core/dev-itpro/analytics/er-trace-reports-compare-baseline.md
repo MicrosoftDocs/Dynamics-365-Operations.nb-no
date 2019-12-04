@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
-ms.openlocfilehash: 1643e7fb3128faf6ad638d4cdad313b3667463b1
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 6cdfbbd7d4f41503e97620b8738679ad572b2a4a
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2181686"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2771243"
 ---
 # <a name="trace-generated-report-results-and-compare-them-with-baseline-values"></a>Spore genererte rapportresultater og sammenligne dem med basisverdier
 
@@ -44,10 +44,10 @@ Hvis du vil vite mer om denne funksjonen, kan du spille av oppgaveveiledningene 
 
 Denne fremgangsmåten forklarer hvordan du konfigurerer ER-rammeverket for å samle inn informasjon om ER-formatutførelser, og deretter evaluerer resultatene av disse utførelsene. Som en del av denne evalueringen sammenlignes genererte dokumenter med grunnlinjefilene. I dette eksemplet skal du opprette de nødvendige ER-konfigurasjonene for eksempelfirmaet Litware, Inc. Denne fremgangsmåten er ment for brukere som har den systemansvarlige eller elektronisk rapportering utvikler-rolle tilordnet. Disse trinnene kan fullføres ved hjelp av et hvilket som helst datasett.
 
-For å kunne fullføre disse trinnene i dette eksemplet må du først fullføre trinnene i fremgangsmåten [Opprette en konfigurasjonsleverandør og merke den som aktiv](tasks/er-configuration-provider-mark-it-active-2016-11.md).
+For å kunne fullføre trinnene i dette eksemplet må du først fullføre trinnene i fremgangsmåten [Opprette konfigurasjonsleverandører og merke dem som aktive](tasks/er-configuration-provider-mark-it-active-2016-11.md).
 
 1. Gå til **Organisasjonsstyring** \> **Arbeidsområder** \> **Elektronisk rapportering**.
-2. I delen **Konfigurasjonsleverandører** på siden **Lokaliseringskonfigurasjoner** kontrollerer du at konfigurasjonsleverandøren for eksempelfirmaet Litware, Inc. er oppført og merket som **Aktiv**. Hvis du ikke ser denne konfigurasjonsleverandøren, følger du trinnene i [Opprette en konfigurasjonsleverandør og merke den som aktiv](tasks/er-configuration-provider-mark-it-active-2016-11.md).
+2. I delen **Konfigurasjonsleverandører** på siden **Lokaliseringskonfigurasjoner** kontrollerer du at konfigurasjonsleverandøren for eksempelfirmaet Litware, Inc. er oppført og merket som **Aktiv**. Hvis du ikke ser denne konfigurasjonsleverandøren, følger du trinnene i [Opprette konfigurasjonsleverandører og merke dem som aktive](tasks/er-configuration-provider-mark-it-active-2016-11.md).
 
 ### <a name="configure-document-management-parameters"></a>Konfigurere parametere for dokumentstyring
 
@@ -55,7 +55,7 @@ For å kunne fullføre disse trinnene i dette eksemplet må du først fullføre 
 2. I **Klasse**-feltet angir du **Tilknytt fil**.
 3. I **Gruppe**-feltet angir du **Fil**.
 
-![Dokumenttyper-siden](media/GER-BaselineSample-SetupDocumentType.PNG "Skjermbilde av Dokumenttyper-siden")
+![Siden Dokumenttyper](media/GER-BaselineSample-SetupDocumentType.PNG "Skjermbilde av siden Dokumenttyper")
 
 > [!NOTE]
 > Du må konfigurere en ny dokumenttype som har det samme navnet, for hvert datasett der du planlegger å bruke ER-grunnlinjefunksjonen.
@@ -64,11 +64,11 @@ For å kunne fullføre disse trinnene i dette eksemplet må du først fullføre 
 
 1. I delen **Relaterte koblinger** i arbeidsområdet **Elektronisk rapportering** velger du **Parametere for elektronisk rapportering**.
 
-    ![Arbeidsområdet Elektronisk rapportering](media/GER-BaselineSample-ERWorkspace.PNG "Skjermbilde av arbeidsområdet Elektronisk rapportering")
+    ![Arbeidsområdet Elektronisk rapportering](media/GER-BaselineSample-ERWorkspace.PNG "Skjermbilde av siden arbeidsområdet Elektronisk rapportering")
 
 2. I **Grunnlinje**-feltet i **Vedlegg**-fanen angir eller velger du dokumenttypen du nettopp opprettet.
 
-    ![Vedlegg-fanen på siden Parametere for elektronisk rapportering](media/GER-BaselineSample-ERParameters.PNG "Skjermbilde av Parametere for elektronisk rapportering")
+    ![Vedlegg-kategorien på siden Parametere for elektronisk rapportering](media/GER-BaselineSample-ERParameters.PNG "Skjermbilde av siden Parametere for elektronisk rapportering")
 
 3. Velg **Lagre**, og lukk deretter siden **Parametere for elektronisk rapportering**.
 
@@ -79,7 +79,7 @@ For å kunne fullføre disse trinnene i dette eksemplet må du først fullføre 
 3. Skriv inn **Modell for å lære ER-grunnlinjer** i **Navn**-feltet i rullegardinboksen.
 4. Velg **Opprett konfigurasjon** for å bekrefte opprettelsen av en ny ER-datamodelloppføring.
 
-![Rullegardinboksen Opprett konfigurasjon](media/GER-BaselineSample-ModelAdd.PNG "Skjermbilde av rullegardinboksen Opprett konfigurasjon")
+![Rullegardinlisten Opprett konfigurasjon](media/GER-BaselineSample-ModelAdd.PNG "Skjermbilde av Rullegardinlisten Opprett konfigurasjon")
 
 ### <a name="design-a-data-model"></a>Utforme en datamodell
 
@@ -93,7 +93,7 @@ For å kunne fullføre disse trinnene i dette eksemplet må du først fullføre 
 8. Velg **Endre status**.
 9. Velg **Fullfør**, og velg deretter **OK**.
 
-![Konfigurasjoner-siden](media/GER-BaselineSample-ModelComplete.PNG "Skjermbilde av Konfigurasjoner-siden")
+![Siden Konfigurasjoner](media/GER-BaselineSample-ModelComplete.PNG "Skjermbilde av Konfigurasjoner-siden")
 
 ### <a name="add-a-new-er-format-configuration"></a>Legg til en ny ER-formatkonfigurasjon
 
@@ -102,7 +102,7 @@ For å kunne fullføre disse trinnene i dette eksemplet må du først fullføre 
 3. I **Navn**-feltet angir du **Format for å lære ER-grunnlinjer**.
 4. Velg **Opprett konfigurasjon** for å bekrefte opprettelsen av en ny ER-formatoppføring.
 
-![Rullegardinboksen Opprett konfigurasjon](media/GER-BaselineSample-FormatAdd.PNG "Skjermbilde av rullegardinboksen Opprett konfigurasjon")
+![Rullegardinlisten Opprett konfigurasjon](media/GER-BaselineSample-FormatAdd.PNG "Skjermbilde av Rullegardinlisten Opprett konfigurasjon")
 
 ### <a name="design-a-format"></a>Utforme et format
 
@@ -131,7 +131,7 @@ I dette eksemplet skal du opprette et enkelt ER-format for å generere XML-dokum
     2. Angi **ID** i **Navn**-feltet.
     3. Velg **OK**.
 
-    ![Formatutforming-siden](media/GER-BaselineSample-FormatLayoutDesign.PNG "Skjermbilde av Formatutforming-siden")
+    ![Formatutformingsside](media/GER-BaselineSample-FormatLayoutDesign.PNG "Skjermbilde av siden Formatutforming")
 
 8. Velg **Slett** i **Tilordning**-fanen.
 9. Velg **Legg til rot**.
@@ -144,7 +144,7 @@ I dette eksemplet skal du opprette et enkelt ER-format for å generere XML-dokum
 11. Velg **Utdata\\Dokument\\ID** i treet.
 12. Velg **Bind**, og velg deretter **Lagre**.
 
-![Formatutforming-siden](media/GER-BaselineSample-FormatMappingDesign.PNG "Skjermbilde av Formatutforming-siden")
+![Formatutformingsside](media/GER-BaselineSample-FormatMappingDesign.PNG "Skjermbilde av siden Formatutforming")
 
 Det konfigurerte formatet genererer en XML-fil basert på den utformede strukturen. Denne XML-filen inneholder **Rot**-elementet som har **ID**-attributtet som er satt til verdien brukeren angir i dialogboksen for ER-kjøretid.
 
@@ -173,7 +173,7 @@ Det konfigurerte formatet genererer en XML-fil basert på den utformede struktur
 1. Gå til **Organisasjonsstyring** \> **Elektronisk rapportering** \> **Konfigurasjoner**.
 2. Velg **Grunnlinjer** i handlingsruten.
 
-    ![Grunnlinjer-knappen på Konfigurasjoner-siden](media/GER-BaselineSample-OpenBaselinePage.PNG "Skjermbilde av Grunnlinjer-knappen på Konfigurasjoner-siden")
+    ![Skjermbilde av Grunnlinjer-knapper på Konfigurasjoner-siden](media/GER-BaselineSample-OpenBaselinePage.PNG "Skjermbilde av Grunnlinjer-knapen på Konfigurasjoner-siden")
 
 3. Velg **Ny** i handlingsruten.
 4. Velg ER-formatet **Format for å lære ER-grunnlinjer** du utformet tidligere.
@@ -243,4 +243,4 @@ Grunnlinjen legges til for formatet **Format for å lære ER-grunnlinjer**.
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 
-- [Konfigurere ER-rammeverket](electronic-reporting-er-configure-parameters.md)
+- [Konfigurere rammeverket for elektronisk rapportering (ER)](electronic-reporting-er-configure-parameters.md)

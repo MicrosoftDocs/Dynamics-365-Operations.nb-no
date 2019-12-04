@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: knelson
 ms.search.validFrom: 2016-11-28
 ms.dyn365.ops.version: AX 7.3.0
-ms.openlocfilehash: 977037f0e2b313ebf05a3e1616d34567f82e82d7
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: ba475721b69e7c75dfd2197597b54050a3598d37
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2250398"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2770272"
 ---
 # <a name="synchronize-project-tasks-directly-from-project-service-automation-to-finance-and-operations"></a>Synkronisere prosjektoppgaver direkte fra Project Service Automation til Finance and Operations
 
@@ -45,7 +45,7 @@ Illustrasjonen nedenfor viser hvordan dataene synkroniseres mellom Project Servi
 
 ## <a name="template-and-task"></a>Mal og oppgave
 
-For å få tilgang til malen velg **Prosjekter** i administrasjonssenter for Microsoft PowerApps, og deretter, i øvre høyre hjørne, velg **Nytt prosjekt** for å velge offentlige maler.
+For å få tilgang til malen velg **Prosjekter** i administrasjonssenter for Microsoft Power Apps, og deretter, i øvre høyre hjørne, velg **Nytt prosjekt** for å velge offentlige maler.
 
 Følgende mal og underliggende oppgave brukes til å synkronisere prosjektoppgaver fra Project Service Automation til Finance:
 

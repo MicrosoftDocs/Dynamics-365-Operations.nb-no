@@ -1,6 +1,6 @@
 ---
-title: Intelligente anbefalinger
-description: Dette emnet forklarer hvordan maskinopplæring kan brukes til å gi anbefalinger for jobber og jobbkandidater.
+title: Intelligente anbefalinger i Attract
+description: Denne artikkelen forklarer hvordan maskinopplæring kan brukes til å gi anbefalinger for jobber og jobbkandidater i Microsoft Dynamics 365 Talent - Attract.
 author: andreabichsel
 manager: AnnBe
 ms.date: 05/16/2019
@@ -18,22 +18,22 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: beb54753c50e398197353f86c2a1239a96b879eb
-ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
+ms.openlocfilehash: fa06821c98e42dcd8590a764db9beb4a5c33fca2
+ms.sourcegitcommit: 9cc6a011bfdd1b0fe505760b6bf429eb6c65862a
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "1741758"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "2832797"
 ---
-# <a name="intelligent-recommendations"></a>Intelligente anbefalinger
+# <a name="intelligent-recommendations-in-attract"></a>Intelligente anbefalinger i Attract
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Maskinopplæring kan hjelpe rekrutteringspersoner og ansettelsesansvarlige med å finne kandidater til en stilling raskt. Det kan også hjelpe kandidater med å finne stillingene som passer best til deres profil og interesser. Etterhvert som disse funksjonene brukes, og det gis tilbakemelding, forbedres anbefalinger.
 
 > [!NOTE] 
 > - De intelligente anbefalingsfunksjonene er bare tilgjengelige med [tillegget for omfattende ansettelse](https://docs.microsoft.com/dynamics365/unified-operations/talent/attract-comprehensive-hiring).
-> - Funksjonalitet som er nevnt i dette emnet, er tilgjengelig som en del av en forhåndsversjon. Innholdet og funksjonaliteten kan bli endret. Hvis du vil bruke denne funksjonen, kan du be administratoren om å aktivere den ved hjelp av **Administrasjonssenter** i Attract. Sett **Kandidatanbefaling**, **Jobbanbefaling** og **Kundeemneanbefaling** til **På**. Hvis du vil ha mer informasjon, se [Tilgang til forhåndsvisningsfunksjoner i Talent](./access-preview-feature.md). 
+> - Funksjonalitet som er nevnt i dette emnet, er tilgjengelig som en del av en forhåndsversjon. Innholdet og funksjonaliteten kan bli endret. Hvis du vil bruke denne funksjonen, kan du be administratoren om å aktivere den ved hjelp av **Administrasjonssenter** i Attract. Sett **Kandidatanbefaling**, **Jobbanbefaling** og **Kundeemneanbefaling** til **På**. Hvis du vil ha mer informasjon, se [Tilgang til forhåndsvisningsfunksjoner i Microsoft Dynamics 365 Talent](./access-preview-feature.md). 
 
 
 ## <a name="candidate-recommendations"></a>Kandidatanbefalinger

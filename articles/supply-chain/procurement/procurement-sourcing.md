@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 461c89a220ec75f3f693da6f52291ebb498e7a05
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: cce822f76323b6ce514d3793ce19f0160957e7a8
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1558225"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2813392"
 ---
 # <a name="procurement-and-sourcing-home-page"></a>Startside for innkjøp og leverandører
 
@@ -36,10 +36,10 @@ Innkjøp og leverandører dekker alle trinnene fra å identifisere et behov for 
 -   [Oversikt over innkjøpsrekvisisjoner](purchase-requisitions-overview.md)
 -   [Opprette en rekvisisjon for forbruk](tasks/create-requisition-consumption.md)
 -   [Opprette en rekvisisjon som bruker en tilbudsforespørsel](tasks/create-requisition-uses-rfq.md)
--   [Konfigurere tillatelser for bestilling på vegne av andre](tasks/set-up-permissions-ordering-products.md)
+-   [Definere tillatelser for bestilling av produkter på vegne av andre](tasks/set-up-permissions-ordering-products.md)
 
 ## <a name="requests-for-quotation"></a>Tilbudsforespørsler
--   [Tilbudsforespørsler](request-quotations.md)
+-   [Oversikt over tilbudsforespørsler (RFQ-er)](request-quotations.md)
 -   [Opprette en tilbudsforespørsel](tasks/create-request-quotation.md)
 -   [Angi og sammenligne tilbudsforespørsler og inngå kontrakter](tasks/enter-compare-rfq-bids-award-contracts.md)
 -   [Opprette en poengsummetode for tilbudsforespørsler](tasks/create-scoring-method-rfqs.md)
@@ -48,7 +48,7 @@ Innkjøp og leverandører dekker alle trinnene fra å identifisere et behov for 
 ## <a name="vendor-management-and-collaboration"></a>Leverandørbehandling og samarbeid
 -   [Definere leverandørkontoer](set-up-vendor-accounts.md)
 -   [Opprette en leverandørkonto](tasks/create-vendor-account.md)
--   [Opprette en bankkonto for leverandør](tasks/create-vendor-bank-account.md)
+-   [Opprette en leverandørbankkonto](tasks/create-vendor-bank-account.md)
 -   [Søke etter leverandører](tasks/search-vendors.md)
 -   [Godkjenne leverandører for bestemte produkter](tasks/approve-vendors-specific-products.md)
 -   [Leverandørsamarbeid med eksterne leverandører](vendor-collaboration-work-external-vendors.md)
@@ -58,12 +58,12 @@ Innkjøp og leverandører dekker alle trinnene fra å identifisere et behov for 
 -   [Demonstrasjonsskript for forsendelseslager for Microsoft Dynamics 365 for Finance and Operations](https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/InboundConsignmentInventoryDemoScriptDynamics365Operations)(hvitbok)
 -   [Overvåke forsendelseslager ved hjelp av leverandørsamarbeid](../inventory/tasks/monitor-consignment-inventory-vendor-collaboration.md)
 -   [Samarbeide med leverandører ved å bruke leveandørportalen](collaborate-vendors-vendor-portal.md) (bare februar 2016- og mai 2016-versjonene av Dynamics AX)
--   [Konfigurasjon av sikkerhet for leverandørportalbrukere](configure-security-vendor-portal-users.md) (bare februar 2016- og mai 2016-versjonene av Finance and Operations)
--   [Mobilt arbeidsområde for leverandørsamarbeid for Microsoft Dynamics 365 for Finance and Operations-app](vendor-collaboration-mobile-workspace.md)
+-   [Brukersikkerhet for leverandørportal](configure-security-vendor-portal-users.md) (bare februar 2016- og mai 2016-versjonene av Finance and Operations)
+-   [Mobilt arbeidsområde for leverandørsamarbeid](vendor-collaboration-mobile-workspace.md)
 
 ## <a name="procurement-product-management"></a>Innkjøpsproduktstyring
--   [Innkjøpskataloger](procurement-catalogs.md)
--   [Opprette en innkjøpskatalog](tasks/create-procurement-catalog.md)
+-   [Oversikt over innkjøpskataloger](procurement-catalogs.md)
+-   [Opprette bestillinger](tasks/create-procurement-catalog.md)
 -   [Importere leverandørkataloger](https://blogs.msdn.microsoft.com/dynamicsaxscm/2016/05/25/vendor-catalogs-in-dynamics-ax/) (blogginnlegg)
 -   [Definere et innkjøpskategorihierarki](tasks/set-up-procurement-category-hierarchy.md)
 -   [Definere policyer for innkjøpskategorihierarkier](tasks/set-up-policies-procurement-category-hierarchies.md)
@@ -72,9 +72,9 @@ Innkjøp og leverandører dekker alle trinnene fra å identifisere et behov for 
 ## <a name="procurement"></a>Innkjøp
 -   [Oversikt over bestilling](purchase-order-overview.md)
 -   [Opprett bestilling](purchase-order-creation.md)
--   [Bestillingsgodkjenning og -bekreftelse](purchase-order-approval-confirmation.md)
+-   [Godkjenne og bekrefte bestillinger](purchase-order-approval-confirmation.md)
 -   [Opprette en bestilling](tasks/create-purchase-order.md)
--   [Opprette en gjentatt bestilling](tasks/create-repeat-purchase-order.md)
+-   [Opprette en innkjøpsgjentakelsesordre](tasks/create-repeat-purchase-order.md)
 -   [Opprette en bestilling fra en salgsordre](../sales-marketing/tasks/create-purchase-order-sales-order.md)
 -   [Opprette bestilling for en engangsleverandør](tasks/create-purchase-order-one-time-supplier.md)
 -   [Opprette en bestilling med en leveringsplan](tasks/create-purchase-order-delivery-schedule.md)
@@ -99,11 +99,8 @@ Innkjøp og leverandører dekker alle trinnene fra å identifisere et behov for 
 -   [Registrere mottaket av varene i bestillingen](tasks/record-receipt-goods-purchase-order.md)
 -   [Arbeidsflyt for innkjøpsrekvisisjon](purchase-requisitions-workflow.md)
 -   [Definere arbeidsflyter for forretningsprosesser for innkjøpsrekvisisjoner](https://mbs.microsoft.com/customersource/Global/AX/learning/documentation/white-papers/Defining_business_process_workflows_for_purchase_requisitions) (hvitebok)
--   [Innkjøpspolicyer](purchase-policies.md)
+-   [Oversikt over innkjøpspolicyer](purchase-policies.md)
 -   [Opprette innkjøpspolicyer](tasks/create-purchasing-policies.md)
-
-
-
 
 
 

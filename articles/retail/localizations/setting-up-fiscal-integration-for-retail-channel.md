@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: v-kikozl
 ms.search.validFrom: 2018-11-1
 ms.dyn365.ops.version: 8.1.1
-ms.openlocfilehash: fda94e77480b9d9455fc0e214e43772ab2921f2d
-ms.sourcegitcommit: ffc37f7c2a63bada3055f37856a30424040bc9a3
+ms.openlocfilehash: a987e75834ddde486421a425a621e66f0b6e063f
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "1577906"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811171"
 ---
 # <a name="set-up-the-fiscal-integration-for-retail-channels"></a>Definere økonomisk integrering for detaljhandelskanaler
 
@@ -210,7 +210,7 @@ Feilbehandlingsalternativene som er tilgjengelige i regnskapsintegrasjonen, defi
 
 For å aktivere X-/Z-regnskapsrapporter fra salgsstedet bør du legge til nye knapper i et salgsstedsoppsett.
 
-- På siden **Knappegrupper** følger du instruksjonene i [Legge til en egendefinert operasjonsknapp i salgsstedsoppsettet i Detaljhandel Hovedkontor](../dev-itpro/add-pos-operations.md#add-a-custom-operation-button-to-the-pos-layout-in-retail-headquarters) for å installere utformingen og oppdatere et salgsstedsoppsett.
+- På siden **Knappegrupper** følger du instruksjonene i [Legge til salgsstedsoperasjoner i salgsstedsoppsett ved hjelp av utforming for knappegruppe](../dev-itpro/add-pos-operations.md#add-a-custom-operation-button-to-the-pos-layout-in-retail-headquarters) for å installere utformingen og oppdatere et salgsstedsoppsett.
 
     1. Velg oppsettet som skal oppdateres. 
     2. Legg til en ny knapp, og angi **Skriv ut regnskapsår X**-knappeegenskapen.
@@ -221,7 +221,7 @@ For å aktivere X-/Z-regnskapsrapporter fra salgsstedet bør du legge til nye kn
 
 For å aktivere manuell utføring av en utsatt bilagsregistrering bør du legge til en ny knapp i et POS-oppsett.
 
-- På siden **Knappegrupper** følger du instruksjonene i [Legge til en egendefinert operasjonsknapp i salgsstedsoppsettet i Detaljhandel Hovedkontor](../dev-itpro/add-pos-operations.md#add-a-custom-operation-button-to-the-pos-layout-in-retail-headquarters) for å installere utformingen og oppdatere et salgsstedsoppsett.
+- På siden **Knappegrupper** følger du instruksjonene i [Legge til salgsstedsoperasjoner i salgsstedsoppsett ved hjelp av utforming for knappegruppe](../dev-itpro/add-pos-operations.md#add-a-custom-operation-button-to-the-pos-layout-in-retail-headquarters) for å installere utformingen og oppdatere et salgsstedsoppsett.
 
     1. Velg oppsettet som skal oppdateres.
     2. Legg til en ny knapp, og angi **Fullfør bilagsregistreringsprosess**-knappeegenskapen.

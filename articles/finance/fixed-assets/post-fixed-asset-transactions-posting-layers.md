@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ab5adfdec259207898d25778e4e3bbbaebb452f1
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: bc8c4f4f41ed39447ae441dd8e01cfcf80c939b5
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2179200"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2770718"
 ---
 # <a name="post-fixed-asset-transactions-to-posting-layers"></a>Postere anleggsmiddeltransaksjoner til posteringslag
 
@@ -42,7 +42,7 @@ Du kan angi finanskontoer for anleggsmiddeltransaksjoner på siden Posteringspro
 > [!NOTE] 
 > Ved å bruke avledede tablåer, kan du postere transaksjoner til forskjellige posteringslag samtidig. Du oppretter transaksjonene for det primære tablået i en journal der posteringslaget samsvarer med posteringslaget for tablået. Under posteringen posteres de avledede tablåtransaksjonene til de respektive posteringslagene.
 
-Hvis du vil ha mer informasjon, kan du se [Avledede bøker](derived-books.md) og [Postering med avledede bøker](post-derived-value-models.md).
+Hvis du vil ha mer informasjon, kan du se [Avledede tablåer](derived-books.md) og [Postere med avledede tablåer](post-derived-value-models.md).
 
 
 

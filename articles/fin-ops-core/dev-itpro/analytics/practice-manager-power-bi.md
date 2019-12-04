@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: knelson
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: c526bc42595c20024016d0d7da78b8638b0daa4b
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: a6e6b8d6243c1f7c5831baaee91baf38d51e0c26
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2185250"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2770003"
 ---
 # <a name="practice-manager-power-bi-content"></a>Power BI-innholdet Praksisleder
 
@@ -58,7 +58,7 @@ Diagrammer og fliser for alle disse rapportene kan filtreres og festes på instr
 
 ## <a name="understanding-the-data-model-and-entities"></a>Forstå datamodellen og enheter
 
-Følgende data brukes til å fylle ut rapportsidene i **Praksisleder**-innholdet for Power BI. Disse dataene vises som aggregerte mål som er oppsamlet i enhetslageret. Enhetslageret er en Microsoft SQL Server-database som er optimalisert for analyse. Hvis du vil ha mer informasjon, se [Oversikt over Power BI-integrering med enhetslager](power-bi-integration-entity-store.md).
+Følgende data brukes til å fylle ut rapportsidene i **Praksisleder**-innholdet for Power BI. Disse dataene vises som aggregerte mål som er oppsamlet i enhetslageret. Enhetslageret er en Microsoft SQL Server-database som er optimalisert for analyse. Hvis du vil ha mer informasjon, se [Power BI-integrering med enhetslager](power-bi-integration-entity-store.md).
 
 Delene nedenfor forklarer de samlede målene som brukes i hver enhet.
 

@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: cb55d7d00e5676fc5a1326d77889b4adb86c3ca6
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 50ce332673e130dace38f596020973d37c34b566
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2248963"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2813506"
 ---
 # <a name="manage-vendor-collaboration-users"></a>Administrere brukere av leverandørsamarbeid
 
@@ -31,7 +31,7 @@ ms.locfileid: "2248963"
 
 Dette emnet beskriver hvordan du kan be om klargjøring av nye brukere for leverandørsamarbeid og hvordan du legger til nye kontakter for leverandørsamarbeid. 
 
-Grensesnittet for leverandørsamarbeid i Dynamics 365 Supply Chain Management viser informasjon om bestillinger, fakturaer og forsendelseslager til eksterne leverandører. Du kan opprette nye kontakter for leverandørsamarbeid og be om at nye brukere skal klargjøres hvis du arbeider med som en ekstern leverandør med sikkerhetsrollen **Leverandøradministrasjon (ekstern)** eller lignende tillatelser. Du kan også utføre disse oppgavene, hvis du arbeider som innkjøpsansvarlig. I dette emnet refererer denne rollen til en innkjøpsansvarlig som arbeider i firmaet som eier forekomsten av Supply Chain Management. Hvis du vil ha mer informasjon om hvordan du bruker samarbeid med leverandøren hvis du er en ekstern leverandør, kan du se [leverandør med kunder](vendor-collaboration-work-customers-dynamics-365-operations.md).  
+Grensesnittet for leverandørsamarbeid i Dynamics 365 Supply Chain Management viser informasjon om bestillinger, fakturaer og forsendelseslager til eksterne leverandører. Du kan opprette nye kontakter for leverandørsamarbeid og be om at nye brukere skal klargjøres hvis du arbeider med som en ekstern leverandør med sikkerhetsrollen **Leverandøradministrasjon (ekstern)** eller lignende tillatelser. Du kan også utføre disse oppgavene, hvis du arbeider som innkjøpsansvarlig. I dette emnet refererer denne rollen til en innkjøpsansvarlig som arbeider i firmaet som eier forekomsten av Supply Chain Management. Hvis du vil ha mer informasjon om hvordan du bruker samarbeid med leverandøren hvis du er en ekstern leverandør, kan du se [Leverandørsamarbeid med kunder](vendor-collaboration-work-customers-dynamics-365-operations.md).  
 
 Hvis du vil ha mer informasjon om hvordan du bruker samarbeid med leverandøren hvis du er en innkjøpsansvarlig, kan du se [Leverandørsamarbeid med eksterne leverandører](vendor-collaboration-work-external-vendors.md).
 

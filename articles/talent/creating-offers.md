@@ -1,6 +1,6 @@
 ---
-title: Opprette, godkjenne og signere tilbud
-description: Dette emnet beskriver hvordan du kan opprette, godkjenne og registrere et tilbud for en kandidat ved hjelp av Dynamics 365 Talent.
+title: Opprette, godkjenne og signere tilbud i Attract
+description: Dette emnet beskriver hvordan du kan opprette, godkjenne og registrere et tilbud for en kandidat ved hjelp av Dynamics 365 Talent - Attract.
 author: andreabichsel
 manager: AnnBe
 ms.date: 02/26/2019
@@ -18,16 +18,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-10-19
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: acc484ea57ce13d8a7c48a0ca7a2aa8723558dc9
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: dee545b6ca5d2791dea6609b4e1b25eba128f8b7
+ms.sourcegitcommit: 9cc6a011bfdd1b0fe505760b6bf429eb6c65862a
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2551055"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "2832913"
 ---
-# <a name="create-approve-and-sign-offers"></a>Opprette, godkjenne og signere tilbud
+# <a name="create-approve-and-sign-offers-in-attract"></a>Opprette, godkjenne og signere tilbud i Attract
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 I mange tilfeller må klargjøring av en tilbudspakke for en kandidat være en svært rask prosess.
 Bruk av malene som er definert av Attract-administratoren, vil redusere tiden og innsatsen som kreves for å forberede og sende tilbud til en kandidat.

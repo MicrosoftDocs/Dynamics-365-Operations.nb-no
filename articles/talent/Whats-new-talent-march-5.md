@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-03-05
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: c7ee8f4cf14197d6bd4549741058fc5fe95ae55d
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: 561b6fad0facad86e9a7bc8f36218ab98fcec73c
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2026676"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2773271"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-talent-march-5-2019"></a>Hva er nytt eller endret i Dynamics 365 Talent (5. mars 2019)?
 
@@ -71,7 +71,7 @@ Med denne endringen, når du ber om endringer i eksisterende stillinger, vil lø
 Andre mindre feilrettinger er inkludert i denne utgivelsen.
 
 ### <a name="upgrade-to-common-data-service"></a>Oppgradere til Common Data Service
-Tidsfrister for å oppgradere til Common Data Service nærmer deg raskt. Logg på PowerApps-administrasjonssenteret for å bestemme om databasen må oppgraderes. Hvis du vil ha mer informasjon om tidsfrister og de nødvendige trinnene for å oppgradere, kan du se [Oppgradere til Common Data Service](https://docs.microsoft.com/common-data-service/upgradecds/introduction-upgrade-cds).
+Tidsfrister for å oppgradere til Common Data Service nærmer deg raskt. Logg på Power Apps-administrasjonssenteret for å bestemme om databasen må oppgraderes. Hvis du vil ha mer informasjon om tidsfrister og de nødvendige trinnene for å oppgradere, kan du se [Oppgradere til Common Data Service](https://docs.microsoft.com/common-data-service/upgradecds/introduction-upgrade-cds).
 
 ## <a name="coming-soon"></a>Kommer snart
 

@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3bb30ddffb86c7083f40863c0c336fc5f65ce8f5
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 96cd2fc988df11c616faf06cf0905acd6b3d6dcc
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2248986"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2813529"
 ---
 # <a name="collaborate-with-vendors-by-using-the-vendor-portal"></a>Samarbeide med leverandører ved hjelp av leverandørportalen
 
@@ -31,7 +31,7 @@ ms.locfileid: "2248986"
 
 Dette emnet forklarer hvordan innkjøpsagenter kan bruke leverandørportalen til å samarbeide med eksterne leverandører under bekreftelse av bestillinger. Denne informasjonen i dette emnet gjelder bare for februar 2016- og mai 2016-versjonene av Dynamics AX.
 
-Informasjonen i dette emnet gjelder bare for februar 2016- og mai 2016-versjonene av Dynamics AX. Hvis du vil ha mer informasjon om den nye leverandørsamarbeidsfunksjonen, kan du se [Bruke leverandørsamarbeid til å arbeide med eksterne leverandører](vendor-collaboration-work-external-vendors.md).  
+Informasjonen i dette emnet gjelder bare for februar 2016- og mai 2016-versjonene av Dynamics AX. Hvis du vil ha mer informasjon om den nye leverandørsamarbeidsfunksjonen, kan du se [Leverandørsamarbeid med eksterne leverandører](vendor-collaboration-work-external-vendors.md).  
 
 Leverandørportalen er utformet for leverandører som ikke har EDI-integrasjon (utveksling av elektroniske data) med Microsoft Dynamics AX for å utveksle bestillingsinformasjon. Med portalen kan innkjøpsagenter sende en bestilling til leverandøren og deretter motta et bekreftet eller avvist svar direkte i Dynamics AX.  
 
@@ -98,7 +98,7 @@ Tabellen nedenfor viser et eksempel på endringene i status og versjon som en be
 <a name="additional-resources"></a>Tilleggsressurser
 --------
 
-[Konfigurering av sikkerhet for brukere av leverandørsamarbeid](configure-security-vendor-portal-users.md)
+[Brukersikkerhet for leverandørportal](configure-security-vendor-portal-users.md)
 
 [Arbeidsområde for leverandørsamarbeidsfakturering](../../financials/accounts-payable/vendor-portal-invoicing-workspace.md)
 

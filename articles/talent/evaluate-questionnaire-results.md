@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
-ms.openlocfilehash: 38b694b6dd4b1b9a198452e409bd64d7934b4685
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 6be2f79d4f0c234028c0cc98b81cfa8ff4fcc992
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1518778"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2813989"
 ---
 # <a name="view-and-evaluate-the-results-of-questionnaires"></a>Vise og evaluere resultatene i spørreskjemaer
 
@@ -57,7 +57,8 @@ På **Svar**-siden kan du vise detaljer om svar, poeng respondenten har fått, s
 -   **Svarrapport** – Denne rapporten viser svarene som respondenten valgte for hvert spørsmål i spørreskjemaet.
 -   **Feil svar** – Denne rapporten viser informasjon som er knyttet til de uriktige svarene som respondenten har valgt.
 
-**Obs!** **Resultater**-rapporten er bare tilgjengelig hvis du bruker resultatgrupper i spørreskjemaet, og hvis du har valgt **Resultatside** på **Spørreskjemaer**-siden. **Svar**-rapporten og **Feil svar**-rapporten er bare tilgjengelige hvis du har valgt **Svarrapport** på **Spørreskjemaer**-siden.
+> [!NOTE]
+> **Resultater**-rapporten er bare tilgjengelig hvis du bruker resultatgrupper i spørreskjemaet, og hvis du har valgt **Resultatside** på **Spørreskjemaer**-siden. **Svar**-rapporten og **Feil svar**-rapporten er bare tilgjengelige hvis du har valgt **Svarrapport** på **Spørreskjemaer**-siden.
 
 ## <a name="questionnaire-statistics"></a>Spørreskjemastatistikk
 Du kan bruke spørreskjemastatistikk til å analysere resultatene av et utfylt spørreskjema, basert på beregninger du definerer. Hvis du vil definere beregninger, må du utføre følgende oppgaver:
@@ -77,7 +78,7 @@ Innstillingene du definerer, lagres og kan brukes til å beregne resultatene på
 
 [Utforme spørreskjemaer](design-questionnaires.md)
 
-[Bruke spørreskjemaer](questionnaires.md)
+[Spørreskjemaer](questionnaires.md)
 
-[Distribuere og fylle ut spørreskjemaer](distribute-questionnaires.md)
+[Distribuere og planlegge spørreskjemaer](distribute-questionnaires.md)
 

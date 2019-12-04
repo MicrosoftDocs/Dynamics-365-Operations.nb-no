@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 36784311294f80f56f680cd6d14cc989b629ba12
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 9b1b519d116a55c255cf90d9478ee1714de90264
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2179308"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811338"
 ---
 # <a name="organization-administration-home-page"></a>Startside for organisasjonsstyring
 
@@ -36,8 +36,8 @@ Mye av innholdet som er oppført her gjelder for funksjoner i modulen **Organisa
 
 Nummerserier brukes for å generere lesbare, unike ID-er for hoveddataposter og transaksjonsposter som krever ID-er. En hoveddatapost eller transaksjonspost som krever en ID kalles en *referanse*. Du må konfigurere en nummerserie og tilknytte den referansen før du kan opprette nye poster for en referanse.
 
-- [Oversikt over nummerserie](number-sequence-overview.md)
-- [Konfigurere alle nødvendige nummerserier ved å bruke en veiviser](tasks/set-up-number-sequences-wizard.md) (Oppgaveveiledning)
+- [Oversikt over nummerserier](number-sequence-overview.md)
+- [Konfigurere nummerserier ved å bruke en veiviser](tasks/set-up-number-sequences-wizard.md) (Oppgaveveiledning)
 - [Konfigurere nummerserier enkeltvis](tasks/set-up-number-sequences-individual-basis.md) (Oppgaveveiledning)
 
 ## <a name="organizations"></a>Organisasjoner
@@ -46,7 +46,7 @@ En organisasjon er en gruppe personer som jobber sammen for å utføre en forret
 
 Før du definerer organisasjoner og organisasjonshierarkier, må du passe på å planlegge hvordan virksomheten skal modelleres. Organisasjonsmodellen har en betydelig innvirkning på implementering og forretningsprosesser.
 
-- [Organisasjoner og organisasjonshierarkier](organizations-organizational-hierarchies.md)
+- [Oversikt over organisasjoner og organisasjonshierarkier](organizations-organizational-hierarchies.md)
 - [Planlegge organisasjonshierarkiet](plan-organizational-hierarchy.md)
 - [Opprette et organisasjonshierarki](tasks/create-organization-hierarchy.md) (Oppgaveveiledning)
 - [Opprette en juridisk enhet](tasks/create-legal-entity.md) (Oppgaveveiledning)
@@ -58,8 +58,8 @@ Den globale adresseboken er et sentralisert lager for stamdata som må lagres fo
 
 Når du oppretter den globale adresseboken, kan du opprette flere adressebøker i henhold til behovet ditt, for eksempel en egen adressebok for hvert firma i organisasjonen din eller for hver bransje.
 
-- [Global adressebok](overview-global-address-book.md)
-- [Planlegg hvordan du konfigurerer den globale adresseboken og flere adressebøker](plan-configuration-global-address-book-additional-address-books.md)
+- [Oversikt over global adressebok](overview-global-address-book.md)
+- [Planlegge den globale adresseboken og andre adressebøker](plan-configuration-global-address-book-additional-address-books.md)
 - [Konfigurere den globale adresseboken](tasks/configure-global-address-book.md)
 - [Vanlige spørsmål om adressebøker](qa-address-books.md)
 
@@ -67,10 +67,10 @@ Når du oppretter den globale adresseboken, kan du opprette flere adressebøker 
 
 Arbeidsflyt er et system du kan bruke til å opprette enkle arbeidsflyter eller forretningsprosesser. Når du oppretter en arbeidsflyt spesifiserer du hvordan et dokument flyter eller flyttes gjennom systemet ved å vise hvem som må fullføre en oppgave, ta en avgjørelse, eller godkjenne et dokument.
 
-- [Arbeidsflytoversikt](overview-workflow-system.md)
+- [Oversikt over arbeidsflytsystem](overview-workflow-system.md)
 - [Arbeidsflytelementer](workflow-elements.md)
-- [Arbeidsflythandlinger](workflow-actions.md)
-- [Opprette en arbeidsflyt](create-workflow.md)
+- [Handlinger i godkjenningsprosesser i en arbeidsflyt](workflow-actions.md)
+- [Oversikt over å opprette arbeidsflyter](create-workflow.md)
 
 ## <a name="electronic-signatures"></a>Elektroniske signaturer
 
@@ -78,7 +78,7 @@ En elektronisk signatur bekrefter identiteten til en person som er i ferd med å
 
 Du kan du bruke elektroniske signaturer for viktige forretningsprosesser. Noen prosesser har innebygde funksjoner for elektronisk signatur. Du kan også opprette egendefinerte signaturkrav for en hvilken som helst databasetabell og et hvilket som helst felt.
 
-- [Oversikt over elektronisk signatur](electronic-signature-overview.md)
+- [Oversikt over elektroniske signaturer](electronic-signature-overview.md)
 - [Definere elektroniske signaturer](tasks/set-up-electronic-signatures.md) (Oppgaveveiledning)
 
 ## <a name="case-management"></a>Saksbehandling
@@ -86,15 +86,15 @@ Du kan du bruke elektroniske signaturer for viktige forretningsprosesser. Noen p
 Når du planlegger, sporer og analyserer tilfeller, kan du utvikle effektive løsninger som kan brukes ved lignende problemer. For eksempel, når kundeservicerepresentanter eller HR-generalister oppretter saker, kan de finne informasjon i kunnskapsartikler for å hjelpe dem med å arbeide med eller løse en sak mer effektivt.
 
 - [Oversikt over saksbehandling](cases.md)
-- [Konfigurere sakssikkerhet, prosesser og kategorier](plan-case-management.md)
+- [Planlegge kategorisikkerhet, saksprosesser og sakskategorier](plan-case-management.md)
 
 ## <a name="record-templates"></a>Postmaler
 
 Postmaler kan hjelpe deg å opprette poster mer effektivt. Du kan opprette en postmal så feltverdiene som brukes ofte ikke behøver fylles inn eksplisitt for en ny post.
 
-- [Postmaler](record-templates.md)
+- [Oversikt over postmaler](record-templates.md)
 - [Opprett en postmal for å fasilitere dataoppføring](../../dev-itpro/data-entities/tasks/create-record-template-facilitate-data-entry.md) (Oppgaveveiledning)
-- [Bruk en postmal for å fasilitere opprettelse av en ny oppføring](../../dev-itpro/data-entities/tasks/use-record-template-new-record.md) (Oppgaveveiledning)
+- [Bruke postmaler til å opprette en ny post](../../dev-itpro/data-entities/tasks/use-record-template-new-record.md) (Oppgaveveiledning)
 
 ## <a name="general-organization-administration"></a>Generell organisasjonsadministrasjon
 

@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: shylaw
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: 6c045f82f3288dba193721dd80c90e68750af9a7
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 954e0669c3d24bcc20fe667c22b7dcc367aba1e7
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2179232"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2770810"
 ---
 # <a name="overhead-calculation"></a>Beregning av indirekte kostnader
 
@@ -1411,7 +1411,7 @@ I finansbokføring blir en kostnad på 10 000,00 for strøm postert til en midl
 </table>
 
 > [!NOTE]
-> Dette emnet beskriver hvordan et primærkostnadselementet, 10001 Strøm, flyter gjennom kostnadsobjektene. Denne indirekte kostnaden tildeles derfor til det laveste nivået i organisasjonen. Med andre ord vil kostnadsobjektene på laveste nivå bære kostnaden. Hvis du trenger en visuell flyt for kostnaden mellom kostnadsobjektene, kan du bruke policyreglene for kostnadsakkumulering til å visualisere kostnadsflyten. Hvis du vil ha mer informasjon, kan du se [Kostnadsopprulling](cost-rollup.md).
+> Dette emnet beskriver hvordan et primærkostnadselementet, 10001 Strøm, flyter gjennom kostnadsobjektene. Denne indirekte kostnaden tildeles derfor til det laveste nivået i organisasjonen. Med andre ord vil kostnadsobjektene på laveste nivå bære kostnaden. Hvis du trenger en visuell flyt for kostnaden mellom kostnadsobjektene, kan du bruke policyreglene for kostnadsakkumulering til å visualisere kostnadsflyten. Hvis du vil ha mer informasjon, se [Policy for opprullet kost og beregning av administrasjonskostnader](cost-rollup.md)
 
 
 

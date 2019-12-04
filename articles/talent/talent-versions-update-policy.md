@@ -1,9 +1,9 @@
 ---
-title: Systemkrav og oppdateringspolicy for Talent
-description: Dette emnet viser kravene for Dynamics 365 Talent. Oppdateringspolicyen blir også gjennomgått.
+title: Talent-systemkrav
+description: Dette emnet viser kravene for Dynamics 365 Talent.
 author: andreabichsel
 manager: AnnBe
-ms.date: 05/02/2019
+ms.date: 10/21/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-talent
@@ -17,14 +17,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: b8bf44fc76be968b0b04fd894c39b4c19fd374ce
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: 0bd7d7051dd01834f306e165af55d740192b99e0
+ms.sourcegitcommit: caeb24027831efccbc316ff8e7f9e62b42010d65
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2024166"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "2818485"
 ---
-# <a name="talent-system-requirements-and-update-policy"></a>Systemkrav og oppdateringspolicy for Talent
+# <a name="talent-system-requirements"></a>Talent-systemkrav
 
 [!include [banner](includes/banner.md)]
 
@@ -66,8 +66,3 @@ Du kan laste ned en PDF-fil med landene, områdene og språkene Talent støtter,
 
 Hvis du er utvikler og interessert i å lage lands- eller områdespesifikke tilpasninger, eller hvis du vil opprette en løsning for et land eller område som ikke støttes av Microsoft for øyeblikket, kan du se [Globalisering](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/lcs-solutions/country-region).
 
-## <a name="update-policy"></a>Oppdateringspolicy
-
-Talent betjenes som et skytilbud. Oppdateringer for Talent er kontinuerlig og brukes automatisk av Microsoft.
-
-Oppdateringer utgis regelmessig og til alle miljøer. Talent støttes i henhold til [Microsoft Support Lifecycle-policyen](https://support.microsoft.com/gp/lifecycle#gp/OSSLpolicy "Microsoft Support Lifecycle"), som gir konsekvente og forutsigbare retningslinjer for tilgjengelighet av produktstøtte.

@@ -1,5 +1,5 @@
 ---
-title: Opprette, godkjenne og postere jobber i Attract
+title: Opprette en jobb i Attract
 description: Dette emnet beskriver elementene i en jobb i Attract. Det forklarer også hvordan du oppretter en jobb.
 author: hasrivas
 manager: AnnBe
@@ -19,14 +19,14 @@ ms.search.industry: ''
 ms.author: hasrivas
 ms.search.validFrom: 2018-10-24
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: db725c230de5e3dfe971098249b280d9da47ae20
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: 9dcdbcea995285c879f91c0bff435103865cc10f
+ms.sourcegitcommit: 9cc6a011bfdd1b0fe505760b6bf429eb6c65862a
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2551078"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "2832937"
 ---
-# <a name="create-approve-and-post-jobs-in-attract"></a>Opprette, godkjenne og postere jobber i Attract
+# <a name="create-a-job-in-attract"></a>Opprette en jobb i Attract
 
 [!include [banner](includes/banner.md)]
 
@@ -49,7 +49,7 @@ Hvis stillingsadministrasjon er aktivert i administrasjonssenteret, er **Oppdate
 > [!NOTE]
 > Stillingsadministrasjon er tilgjengelig med tillegget for omfattende ansettelse.
 
-Avhengig av innstillingene i tilbudsaktiviteten for ansettelsesprosessen, kan et posisjonsnummer brukes to ganger i et tilbud. Hvis du vil ha mer informasjon, se [Ansettelsesprosess](./activities-attract.md).
+Avhengig av innstillingene i tilbudsaktiviteten for ansettelsesprosessen, kan et posisjonsnummer brukes to ganger i et tilbud. Hvis du vil ha mer informasjon, kan du se [Aktiviteter i ansettelsesprosesser](./activities-attract.md).
 
 Attract inkluderer et standardsett med **Ferdigheter**. Disse ferdighetene vises som forslag mens du skriver. Du kan legge til flere ferdigheter ved å angi ny kompetansetekst i feltet og deretter trykke Enter.
 
@@ -67,7 +67,7 @@ Ansettelsesteamet kan oppdateres når jobben er aktivert.
 
 Standardinformasjon om ansettelsesprosessen er basert på prosessmalen for som ble valgt da jobben ble opprettet. Hvis en bestemt mal ikke var merket da, brukes standardmalen. Når du definerer ansettelsesprosessen, kan du legge til eller fjerne forskjellige stadier, bortsett fra stadiene kundeemne, søknad og tilbud. Selv om kundeemne-stadiet ikke kan fjernes, kan den deaktiveres. Du kan legge til eller fjerne en eller flere forhåndsdefinerte aktiviteter i hvert trinn.
 
-Hvis du vil ha mer informasjon om aktiviteter som kan legges til ansettelsesprosessen, kan du se [Aktiviteter i ansettelsesprosess i Attract](./activities-attract.md).
+Hvis du vil ha mer informasjon om aktiviteter som kan legges til ansettelsesprosessen, kan du se [Aktiviteter i ansettelsesprosesser](./activities-attract.md).
 
 > [!NOTE]
 > Ansettelsesprosessen kan ikke oppdateres når en jobb er aktivert.
@@ -76,7 +76,7 @@ Hvis du vil ha mer informasjon om aktiviteter som kan legges til ansettelsespros
 
 Når en jobb er aktivert, kan den posteres. Bare rekrutteringspersoner og administratorer kan postere jobber. Jobben kan posteres til Talent Careers (et karriereområde i Dynamics 365 Talent) eller LinkedIn. Attract-teamet jobber kontinuerlig for å samarbeide med jobbtavleaggregatorer. Denne listen utvides over tid. Når en jobb er postert som bare intern, må kandidater ha en AAD-konto for å vise og søke på jobben. Hvis jobben er oppført som offentlig, kan kandidsater vise og søke på jobber ved hjelp av alle godkjenningsalternativer. 
 
-Hvis du vil ha mer informasjon om ledige stillinger, se [Karriereområde-funksjonalitet i Attract](career-site.md).
+Hvis du vil ha mer informasjon om ledige stillinger, se [Konfigurere karriereområdet i Microsoft Dynamics 365 Talent - Attract](career-site.md).
 
 > [!NOTE]
 > Stillingsposteringsfunksjonaliteten er bare tilgjengelig med tilegget for omfattende ansettelse for Attract.
@@ -90,7 +90,7 @@ Når en en jobb er aktivert, kan den posteres, og kundeemner og søkere kan legg
 
 ## <a name="prospects-and-applicants"></a>Kundeemner og søkere
 
-Alternativet for å legge til kundeemner i en jobb er angitt i [kundeemneaktiviteten](./activities-attract.md#prospect-activity) i ansettelsesprosessen. Dette alternativet må angis før du aktiverer jobben. Når en en jobb er aktivert, kan kundeemner og søkere legges til den.
+Alternativet for å legge til kundeemner i en jobb er angitt i [Aktiviteter i ansettelsesprosesser](./activities-attract.md#prospect-activity) i ansettelsesprosessen. Dette alternativet må angis før du aktiverer jobben. Når en en jobb er aktivert, kan kundeemner og søkere legges til den.
 
 ## <a name="approvals"></a>Godkjenninger
 

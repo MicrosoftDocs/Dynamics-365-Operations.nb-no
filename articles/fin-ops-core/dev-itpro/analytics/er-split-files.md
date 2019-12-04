@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
-ms.openlocfilehash: cde95430022d94c42bdd985b5e4a8f9f5147d000
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 804878150f035adc051e89ec6be44457ad58e87e
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2181364"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2771197"
 ---
 # <a name="split-generated-xml-files-based-on-file-size-and-content-quantity"></a>Dele opp genererte XML-filer basert på filstørrelse og innholdsmengde
 
@@ -45,6 +45,6 @@ Hvis du vil vite mer om denne funksjonen, spiller du av oppgaveveiledningen **ER
 - [ER-formatkonfigurasjon - XmlFilesSplittingFormat.xml](https://go.microsoft.com/fwlink/?linkid=874111)
 
 ## <a name="additional-resources"></a>Tilleggsressurser
-[Mål for elektronisk rapportering](electronic-reporting-destinations.md)
+[Mål for elektronisk rapportering (ER)](electronic-reporting-destinations.md)
 
-[Formeldesigner i elektronisk rapportering](general-electronic-reporting-formula-designer.md)
+[Formeldesigner i elektronisk rapportering (ER)](general-electronic-reporting-formula-designer.md)

@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Talent July 2017 update
-ms.openlocfilehash: 97082533831d592817e54e77469a3e22b0b47610
-ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
+ms.openlocfilehash: 8c11186ff3f95a7f1e00f9e42d7b78f5a68957b0
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "2008134"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2813943"
 ---
 # <a name="get-started-with-onboard"></a>Komme i gang med Onboard
 
@@ -35,17 +35,17 @@ Med Onboard kan du raskt opprette en jobbintroduksjonsveiledning som ønsker nya
 
 Hvis du vil vite hvordan du får tak i og bruker Onboard-appen, kan du se følgende emner:
 
-- [Skaffe deg Onboard-appen](./onboard-get-app.md)
-- [Opprette en jobbintroduksjonsveiledning](./onboard-create-guide.md)
-- [Opprette en jobbintroduksjonsmal](./onboard-create-template.md)
-- [Redigere veiledninger og maler for jobbintroduksjon](./onboard-edit-guides-templates.md)
-- [Dele innhold med andre bidragsytere](./onboard-share-template.md)
-- [Vise statusen for oppgaver og jobbintroduksjonsmedarbeidere](./onboard-view-status.md)
-- [Opprette ansettelsesteam i Onboard](./onboard-create-team.md)
+- [Få Dynamics 365 Talent - Onboard-appen](./onboard-get-app.md)
+- [Opprette og sende en veiledning for jobbintroduksjon med Dynamics 365 Talent - Onboard](./onboard-create-guide.md)
+- [Opprette en jobbintroduksjonsmal med Dynamics 365 Talent - Onboard](./onboard-create-template.md)
+- [Redigere veiledninger og maler for jobbintroduksjon i Dynamics 365 Talent - Onboard](./onboard-edit-guides-templates.md)
+- [Dele innhold med andre bidragsytere i Dynamics 365 Talent - Onboard](./onboard-share-template.md)
+- [Vise statusen for jobbintroduksjonsmedarbeidere og oppgavene dine](./onboard-view-status.md)
+- [Opprette et ansettelsesteam med Dynamics 365 Talent - Onboard](./onboard-create-team.md)
 
 ## <a name="see-also"></a>Se også
 
 - [Prøve eller kjøpe Onboard-appen](https://dynamics.microsoft.com/talent/onboard/)
-- [Hva er nytt](./whats-new.md)
-- [Produktmerknader](https://docs.microsoft.com/business-applications-release-notes/index)
-- [Få kundestøtte](./talent-support.md)
+- [Hva er nytt eller endret i Dynamics 365 Talent](./whats-new.md)
+- [Lanseringsplaner](https://docs.microsoft.com/business-applications-release-notes/index)
+- [Få kundestøtte for Microsoft Dynamics 365 Talent](./talent-support.md)

@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 08141615e36c7bfe8b8a7984322dbb985568ee51
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: b8bcfb4d3720d03ce84024766a66ccfc546767ab
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2179257"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2772082"
 ---
 # <a name="budget-planning-data-allocation"></a>Datafordeling for budsjettplanlegging
 
@@ -36,10 +36,10 @@ Du kan distribuere dataene i en budsjettplan på flere måter for å vise nøyak
 ## <a name="allocation-methods"></a>Tildelingsmetoder
 Tre tildelingsmetoder (tildele på tvers av perioder, tildele til dimensjoner og bruke finansfordelingsregler) kan opprette budsjettplanlinjer som er basert på linjene i den samme budsjettplanen. Tre andre metoder (aggregere, distribuere og kopiere fra budsjettplanen) kan opprette budsjettplanlinjer i andre budsjettplaner. Du kan angi målscenariet for alle seks tildelingsmetoder. Målscenariet kan være det samme som kildescenariet eller forskjellig fra kildescenariet. Du kan også angi om nye linjer legges til budsjettplanen eller erstatter gjeldende linjer i budsjettplanen.
 
-[![Tildele på tvers av perioder](./media/allocateacrossperiods-300x259.png)](./media/allocateacrossperiods.png)
+[![Tildelingsmetoden Tildele på tvers av perioder](./media/allocateacrossperiods-300x259.png)](./media/allocateacrossperiods.png)
 **Tildele på tvers av perioder** – En periodetildelingskategori brukes for å tildele budsjettplanlinjer fra kildebudsjettplanscenariet på tvers av perioder i målscenariet. Kildebeløpet tilordnes til flere linjer i målscenariet, basert på prosentdelen og datoen som er definert i periodetildelingsperioden.         
 
-[![Tildele til dimensjoner](./media/allocatetodimensions.jpg)](./media/allocatetodimensions.jpg)
+[![Tildeldingsmetoden Tildele til dimensjoner](./media/allocatetodimensions.jpg)](./media/allocatetodimensions.jpg)
 **Tildele til dimensjoner** – Budsjettplanlinjene tildeles fra kildebudsjettplanleggingsscenariet til én eller flere linjer i målscenariet, basert på prosentdelene og finansdimensjonene som er definert i en valgt budsjettfordelingsbetingelse.           
 
 ![Aggregere diagram](./media/aggregatechart-300x230.png)
@@ -48,7 +48,7 @@ Tre tildelingsmetoder (tildele på tvers av perioder, tildele til dimensjoner og
 [![Fordele diagram](./media/distributechart-300x230.png)](./media/distributechart.png)
 **Fordele** – Budsjettplanlinjene fordeles fra kildebudsjettplanleggingsscenariet i den overordnede budsjettplanen, til målscenariet i de tilknyttede (underordnede) budsjettplanene, basert på finansdimensjonene for organisasjonsenhetene for de tilknyttede planene. Denne metoden gjør det mulig for budsjetterte beløp som er klargjort på et høyere nivå i organisasjonen, å spres ut for mer lokalisert gjennomgang.           
 
-[![FInansfordelingsregler](./media/ledgerallocationrules-300x202.png)](./media/ledgerallocationrules.png)
+[![Finansfordelingsregler](./media/ledgerallocationrules-300x202.png)](./media/ledgerallocationrules.png)
 **Bruk finansfordelingsregler** – Budsjettplanlinjene fordeles fra kildebudsjettplanscenariet i til målbudsjettplanleggingsscenariet basert på den valgte finansfordelingsregelen. 
 
 [![Kopier fra budsjettplan](./media/copyfrombudgetplan-187x300.png)](./media/copyfrombudgetplan.png)
@@ -57,7 +57,7 @@ Tre tildelingsmetoder (tildele på tvers av perioder, tildele til dimensjoner og
 ## <a name="using-allocation-methods-in-a-budget-plan"></a>Bruke tildelingsmetoder i en budsjettplan
 Hvis du vil utføre tildelinger på pudsjettplansiden, velger du linjene som skal tildele og klikker deretter **Tildel budsjett**.
 
-[![AllocateBudgetButton](./media/allocatebudgetbutton-300x84.png)](./media/allocatebudgetbutton.png) 
+[![Tildel budsjett-knapp](./media/allocatebudgetbutton-300x84.png)](./media/allocatebudgetbutton.png) 
 
 Velg en tildelingsmetode. Deretter angis de gjenværende feltene i samsvar med metoden du har valgt. Disse feltene inneholder kilden og målet for budsjettplandataene og et alternativ som lar deg multiplisere kilden med en bestemt faktor når målbeløpene opprettes, for å forenkle samlet justering. Du kan også angi alternativet **Legg til i plan**. Velg **Nei** for å erstatte de eksisterende budsjettplanlinjene, eller velg **Ja** for å beholde de eksisterende budsjettplanlinjene og legge til nye linjer for de tilordnede beløpene.
 
@@ -70,7 +70,7 @@ Deretter oppretter du en stadietildeling på siden **Budsjettplanleggingskonfigu
 
 Til slutt legger du til en automatisert oppgave for tildeling for budsjettplanleggingsstadiet på det aktuelle arbeidsflytstadiet. I eksemplet nedenfor er to tildelinger for budsjettplanleggingsstadiet (uthevet i rødt) satt inn i arbeidsflyten.
 
-[![Tildelinger for budsjettplanleggingsstadium](./media/budgetplanningstageallocations-300x300.png)](./media/budgetplanningstageallocations.png)
+[![Fordelinger for budsjettplanleggingsstadium](./media/budgetplanningstageallocations-300x300.png)](./media/budgetplanningstageallocations.png)
 
 
 

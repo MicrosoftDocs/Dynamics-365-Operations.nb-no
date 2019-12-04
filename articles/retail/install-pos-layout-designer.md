@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: athinesh
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 98784c11c7393bb4c3e022d5bff4cca2daa1636e
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: 67d8ee101546470ff54404eeebd736233e34f26f
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2025458"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811884"
 ---
 # <a name="install-the-retail-point-of-sale-pos-layout-designer"></a>Installere utforming av oppsett for salgssted (POS) for detaljhandel
 
@@ -62,4 +62,4 @@ Den grensesnittet for grafiske utformingen for MPOS og skybasert POS styres av o
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 
-[Konfigurere, laste ned, installere og aktivere Retail Modern POS](retail-modern-pos-device-activation.md)
+[Konfigurere, installere og aktivere Retail Modern POS MPOS](retail-modern-pos-device-activation.md)

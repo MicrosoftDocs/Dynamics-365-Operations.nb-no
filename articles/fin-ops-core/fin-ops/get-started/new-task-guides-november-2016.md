@@ -17,12 +17,12 @@ ms.search.region: global
 ms.author: josaw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 15a645c98fe38e8ddaa34c0c21581eac6636502f
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 40317cdef777ca6524feb66caf66ddec3d855d32
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2190977"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811607"
 ---
 # <a name="new-or-updated-task-guides-november-2016"></a>Nye eller oppdaterte oppgaveveiledninger (november 2016)
 
@@ -30,7 +30,7 @@ ms.locfileid: "2190977"
 
 Dette emnet viser nye eller oppdaterte oppgaveveiledninger som ble utgitt til Microsoft (november 2016 – alle språk) APQC Unified Library for Microsoft Dynamics 365 for Operations. Det ble ikke utgitt nytt bibliotek for Komme i gang.
 
-(November 2016 – alle språk) APQC Unified Library inneholder oppgaveveiledningene som skal brukes for å få hjelp med Microsoft Dynamics 365 for Operations, Microsoft Dynamics 365 for Operations plattformoppdatering 3, Microsoft Dynamics AX plattformoppdatering 2, Dynamics AX-oppdateringen fra mai 2016 og Microsoft Dynamics AX-versjonen fra februar 2016. Hvis du vil ha mer informasjon om disse versjonene, kan du se [Hva er nytt eller endret](whats-new-changed.md). Lokaliserte versjoner av oppgaveveiledningene er tilgjengelige i dette biblioteket. Hvis du vil ha mer informasjon om hvordan du kobler hjelpesystemet til et oppgaveveiledningsbibliotek, kan du se [Komme i gang med hjelp](help-overview.md).
+(November 2016 – alle språk) APQC Unified Library inneholder oppgaveveiledningene som skal brukes for å få hjelp med Microsoft Dynamics 365 for Operations, Microsoft Dynamics 365 for Operations plattformoppdatering 3, Microsoft Dynamics AX plattformoppdatering 2, Dynamics AX-oppdateringen fra mai 2016 og Microsoft Dynamics AX-versjonen fra februar 2016. Hvis du vil ha mer informasjon om disse utgivelsene, se [Startsiden Hva er nytt eller endret i Finance and Operations](whats-new-changed.md). Lokaliserte versjoner av oppgaveveiledningene er tilgjengelige i dette biblioteket. Hvis du vil ha mer informasjon om hvordan du kobler hjelpesystemet til et oppgaveveiledningsbibliotek, kan du se [Hjelpesystem](help-overview.md).
 
 > [!NOTE]
 > En stjerne (\*) ved siden av tittelen på en linje for forretningsprosessmodeller (BPM) angir at oppgaveveiledningen for forretningsprosessen ble opprettet for Dynamics 365 for Operations-versjonen fra november 2016 og ikke støttes i tidligere versjoner av Microsoft Dynamics AX.
@@ -543,8 +543,8 @@ Dette emnet viser nye eller oppdaterte oppgaveveiledninger som ble utgitt til Mi
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 
-[Nye oppgaveveiledninger tilgjengelige (februar 2016)](new-task-guides-available-february-2016.md)
+[Nye oppgaveveiledninger (februar 2016)](new-task-guides-available-february-2016.md)
 
-[Nye eller oppdaterte oppgaveveiledninger som er tilgjengelige (mai 2016)](new-updated-task-guides-available-may-2016.md)
+[Nye eller oppdaterte oppgaveveiledninger (mai 2016)](new-updated-task-guides-available-may-2016.md)
 
-[Nye eller oppdaterte oppgaveveiledninger som er tilgjengelige (august 2016)](new-updated-task-guides-available-august-2016.md)
+[Nye eller oppdaterte oppgaveveiledninger (august 2016)](new-updated-task-guides-available-august-2016.md)

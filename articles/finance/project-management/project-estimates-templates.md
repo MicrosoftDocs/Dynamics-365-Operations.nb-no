@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: knelson
 ms.search.validFrom: 2016-11-28
 ms.dyn365.ops.version: AX 7.3.0
-ms.openlocfilehash: 3b885610ac9ca8645358ba8ab6d46ab82143a534
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: ebf0fce60ad006e798aa4f404fbffcf10a0b31f9
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2250490"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2770295"
 ---
 # <a name="synchronize-project-estimates-directly-from-project-service-automation-to-finance-and-operations"></a>Synkronisere prosjektestimater direkte fra Project Service Automation til Finance and Operations
 
@@ -46,7 +46,7 @@ Illustrasjonen nedenfor viser hvordan dataene synkroniseres mellom Project Servi
 
 ### <a name="template-and-tasks"></a>Mal og oppgaver
 
-For å få tilgang til tilgjengelige maler velg **Prosjekter** i administrasjonssenter for Microsoft PowerApps, og deretter, i øvre høyre hjørne, velg **Nytt prosjekt** for å velge offentlige maler.
+For å få tilgang til tilgjengelige maler velg **Prosjekter** i administrasjonssenter for Microsoft Power Apps, og deretter, i øvre høyre hjørne, velg **Nytt prosjekt** for å velge offentlige maler.
 
 Følgende mal og underliggende oppgaver brukes til å synkronisere prosjekttimeestimater fra Project Service Automation til Finance:
 

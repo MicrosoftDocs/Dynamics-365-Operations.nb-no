@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: fdahl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b01e7e8e79061c7a306f00f041413cc1c5185cfe
-ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
+ms.openlocfilehash: 2f39ce63b6d9d57e245fbdce27bd11a8cbc3eebf
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "2572273"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2813415"
 ---
 # <a name="product-receipt-against-purchase-orders"></a>Mottaksseddel mot bestillinger
 
@@ -61,9 +61,9 @@ Du får tilgang til denne siden fra handlingsgruppen **Mottak** på siden **Best
 
 [Oversikt over bestilling](purchase-order-overview.md)
 
-[Opprett bestilling](purchase-order-creation.md)
+[Opprette bestillinger](purchase-order-creation.md)
 
-[Bestillingsgodkjenning og -bekreftelse](purchase-order-approval-confirmation.md)
+[Godkjenne og bekrefte bestillinger](purchase-order-approval-confirmation.md)
 
 [Oversikt over leverandørfakturaer](../../financials/accounts-payable/vendor-invoices-overview.md)
 

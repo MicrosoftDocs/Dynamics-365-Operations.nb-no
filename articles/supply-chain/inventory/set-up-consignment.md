@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 24500ff46cc77ca8fa59c0c16427d9f05f33a87e
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 04b3fb3038a1373e203ec240a0163cf67de655cc
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1550022"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2813866"
 ---
 # <a name="set-up-consignment"></a>Definere forsendelse
 
@@ -31,7 +31,7 @@ ms.locfileid: "1550022"
 
 Dette emnet forklarer hvordan du konfigurerer operasjoner for innkommende forsendelseslager.
 
-Forsendeleslager er lager som eies av en leverandør, men lagres på ditt område. Når du er klar til å forbruke eller bruke lageret, kan du ta over eierskapet for lageret. Dette emnet beskriver oppsettet for å aktivere forsendelsesprosessene. Hvis du vil ha mer informasjon om forsendelsesprosesser, kan du se [Forsendelse](consignment.md).
+Forsendeleslager er lager som eies av en leverandør, men lagres på ditt område. Når du er klar til å forbruke eller bruke lageret, kan du ta over eierskapet for lageret. Dette emnet beskriver oppsettet for å aktivere forsendelsesprosessene. Hvis du vil ha mer informasjon om forsendelsesprosesser, kan du se [Definere forsendelse](consignment.md).
 
 ## <a name="inventory-owners"></a>Beholdningseiere
 Hvis du vil registrere fysisk forsendelse for innkommende lager, må du definere en leverandøreier. Dette gjøres på siden **Lagereier**. Når du velger en **leverandørkonto**, genereres det standardverdier for feltene **Navn** og **Eier**. Verdien i **Eier**-feltet vil være synlig for leverandøren, slik at du kanskje vil endre dette hvis dine navn på leverandørkontoer ikke er enkle for eksterne brukere å gjenkjenne. Det er mulig å redigere **Eier**-feltet, men bare frem til når du lagrer posten **Lagereier**. **Navn**-feltet fylles ut med navnet på parten som leverandørkontoen som er knyttet til, og dette kan ikke endres.
@@ -49,4 +49,4 @@ Journalen **Endring av lagereierskap** brukes til å registrere overføring av e
 [![Endringsjournal for lagereierskap](./media/inventory-ownership-change-journal.png)](./media/inventory-ownership-change-journal.png)
 
 ## <a name="vendor-collaboration-in-consignment-processes"></a>Leverandørsamarbeid i forsendelsesprosesser
-Hvis leverandørene bruker grensesnittet for leverandørsamarbeid, kan de bruke dette til å overvåke forbruket av beholdningen på området. Hvis du vil ha mer informasjon om hvordan du definerer leverandører med leverandørsamarbeid, kan du se [Konfigurere sikkerhet for brukere av leverandørsamarbeid](../procurement/configure-security-vendor-portal-users.md).
+Hvis leverandørene bruker grensesnittet for leverandørsamarbeid, kan de bruke dette til å overvåke forbruket av beholdningen på området. Hvis du vil ha mer informasjon om hvordan du definerer leverandører med leverandørsamarbeid, kan du se [Brukersikkerhet for leverandørportal](../procurement/configure-security-vendor-portal-users.md).

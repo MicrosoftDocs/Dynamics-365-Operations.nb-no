@@ -3,7 +3,7 @@ title: Ta med fysisk verdi
 description: Du bruker avmerkingsboksen Ta med fysisk verdi i hurtigkategorien Lagermodell på Varemodellgrupper-siden til å angi om fysisk oppdaterte transaksjoner skal tas med i beregningen av løpende gjennomsnittlig kostpris for en vare.
 author: AndersGirke
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 10/31/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: mguada
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e96d5e2a658a027d66663868329cf4eedcb1d46f
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 834438f8389e295bbb992f0b8397ff45559690c3
+ms.sourcegitcommit: 92322167f57b66d2accc134aaf862e6b9931ec94
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1551981"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "2693003"
 ---
 # <a name="include-physical-value"></a>Ta med fysisk verdi
 
@@ -50,7 +50,13 @@ Avmerkingsboksen har litt forskjellige effekter, avhengig av hvilken lagermodell
 -   En bestilling av et antall på 2 og en kostpris på USD 10,00 har en oppdatert følgeseddel.
 -   En bestilling av et antall på 3 og en kostpris på USD 12,00 har en oppdatert faktura.
 
-I dette tilfellet, vil løpende gjennomsnittlig kostpris være USD 11,20, fordi både fysisk og økonomisk oppdaterte transaksjoner brukes til å beregne kostprisen. **Eksempel 2** Du har ikke merket av for **Ta med fysisk verdi**, og kostprisen i vareoppsettet er USD 10,00. Du mottar en bestilling av et antall på 20 og en kostpris på USD 12,00 med en oppdatert følgeseddel. Når en salgsordre posteres, er det posterte kostbeløpet USD 10,00, fordi løpende gjennomsnittlig kostpris ikke omfatter fysisk posterte transaksjoner. **Merk:** For sammenligning: Hvis du merker av for **Ta med fysisk verdi** for denne varen, når en salgsordre posteres, blir det posterte kostnadsbeløpet USD 12,00.
+I dette tilfellet, vil løpende gjennomsnittlig kostpris være USD 11,20 = (2x10+3x12)/(2+3), fordi både fysisk og økonomisk oppdaterte transaksjoner brukes til å beregne kostprisen. 
 
+**Eksempel 2** Du har ikke merket av for **Ta med fysisk verdi**, og kostprisen i vareoppsettet er USD 10,00. 
 
+-   Du mottar en bestilling av et antall på 20 og en kostpris på USD 12,00 med en oppdatert følgeseddel.
 
+Når en salgsordre posteres, er det posterte kostbeløpet USD 10,00, fordi løpende gjennomsnittlig kostpris ikke omfatter fysisk posterte transaksjoner. 
+
+> [!NOTE]
+> For sammenligning: Hvis du merker av for **Ta med fysisk verdi** for denne varen, når en salgsordre posteres, blir det posterte kostnadsbeløpet USD 12,00.

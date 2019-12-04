@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: knelson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0d461b85f89eff63c8747fb17b3ee34ebfeb2218
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 79e12f39589f9cf3f4b1515fa3ab10bb10ffb97f
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2185641"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2770365"
 ---
 # <a name="project-management-and-accounting-overview"></a>Oversikt over prosjektstyring og regnskap
 
@@ -72,7 +72,7 @@ Hvis du vil ha mer informasjon om prosjektkontrakter, kan du se [Prosjektkontrak
 
 Detaljnivået i en arbeidsnedbrytningsstruktur avhenger av nøyaktighetsnivået som kreves i estimater, og sporingsnivået som er nødvendig mot disse estimatene. Prosjekter som har svært lite slingringsmonn i tidsplan eller kostnader, krever vanligvis en mer detaljert arbeidsnedbrytningsstruktur samt grundig sporing av arbeidsfremdriften og kostnadene mot arbeidsnedbrytningsstrukturen. 
 
-Hvis du vil ha mer informasjon, kan du se [Arbeidsnedbrytningsstrukturer](work-breakdown-structures.md).
+Hvis du vil ha mer informasjon, kan du se [Oversikt over arbeidsnedbrytningsstrukturer](work-breakdown-structures.md).
 
 ### <a name="create-project-forecasts-and-budgets"></a>Opprette prosjektprognoser og -budsjetter
 
@@ -134,7 +134,7 @@ Under prosjektutførelse registrerer teammedlemmer eller ledere arbeid og utgift
 
 En arbeidsnedbrytningsstruktur er en beskrivelse av arbeid som skal fullføres for et prosjekt. En arbeidsnedbrytningsstruktur er et hierarki av oppgaver. Den representerer ikke bare arbeidet for hver oppgave, men også størrelsen, kostnaden og varigheten til oppgaven. 
 
-Hvis du vil ha mer informasjon, kan du se [Arbeidsnedbrytningsstrukturer](work-breakdown-structures.md).
+Hvis du vil ha mer informasjon, kan du se [Oversikt over arbeidsnedbrytningsstrukturer](work-breakdown-structures.md).
 
 ### <a name="manage-project-forecasts-and-budgets"></a>Behandle prosjektprognoser og -budsjetter
 

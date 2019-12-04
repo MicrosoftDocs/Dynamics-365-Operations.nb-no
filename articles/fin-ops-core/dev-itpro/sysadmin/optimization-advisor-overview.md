@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: roxanad
 ms.search.validFrom: 2017-12-01
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 4e47aea3a9d1ce62a85aac9a4acce398b5847f1b
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 4bcc6937da0e9f66014d9c00668e0c6790433ba8
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2191414"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811976"
 ---
 # <a name="optimization-advisor-overview"></a>Oversikt over optimaliseringsrådgiver
 
@@ -38,7 +38,7 @@ Ugyldig konfigurasjon og oppsett av en modul kan påvirke tilgjengeligheten av p
 
 Arbeidsområdet **Optimaliseringsrådgiver** er et verktøy som lar privilegerte brukere, forretningsanalytikere, funksjonelle konsulenter og IT-støtte finne problemer i modulkonfigurasjon og forretningsdata. Optimaliseringsrådgiver foreslår anbefalte fremgangsmåter for modulkonfigurasjon og identifiserer forretningsdata som er foreldet eller feil.
 
-Optimaliseringsrådgiver kjører et sett med regler for anbefalt fremgangsmåte med jevne mellomrom. Et standardsett med regler er tilgjengelig, men brukere kan imidlertid også opprette regler som gjelder for deres tilpasninger, løsninger fra uavhengige programvareleverandører (ISVer) og forretningsdata. Hvis du vil ha mer informasjon om hvordan du oppretter regler, kan du se [Opprette nye regler](./create-rules-optimization-advisor.md).
+Optimaliseringsrådgiver kjører et sett med regler for anbefalt fremgangsmåte med jevne mellomrom. Et standardsett med regler er tilgjengelig, men brukere kan imidlertid også opprette regler som gjelder for deres tilpasninger, løsninger fra uavhengige programvareleverandører (ISVer) og forretningsdata. Hvis du vil ha mer informasjon om hvordan du oppretter regler, kan du se [Opprette regler for optimaliseringsrådgiver](./create-rules-optimization-advisor.md).
 
 Når det er oppdaget et brudd på en regel, genereres en optimaliseringssalgsmulighet som vises i arbeidsområdet **Optimaliseringsrådgiver**. En bruker kan iverksette passende korrigerende tiltak direkte fra **Optimaliseringsrådgiver**-arbeidsområdet.
 
@@ -92,6 +92,6 @@ Hvis du vil deaktivere evalueringen av bestemte regler, velger du salgsmulighete
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 
-[Opprette nye regler](./create-rules-optimization-advisor.md)
+[Opprette regler for optimaliseringsrådgiver](./create-rules-optimization-advisor.md)
 
 [Optimaliseringsrådgiver i Dynamics 365 for Finance and Operations (video)](https://www.youtube.com/watch?v=MRsAzgFCUSQ)

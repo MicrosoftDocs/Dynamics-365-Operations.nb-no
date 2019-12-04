@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: chwolf
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: 6e83a2607f4840139143fb473ef7d6daf4b8b7ad
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 65f21d71c22d295902b968e6c18134e1577e01f2
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2180674"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812563"
 ---
 # <a name="hardware-sizing-requirements-for-on-premises-environments"></a>Krav til størrelsesangivelse for maskinvare for lokale miljøer
 
 [!include [banner](../includes/banner.md)]
 
-Før du begynner maskinvaren og infrastruktur endrer størrelsen på arbeid for et lokale miljø, gjøre deg kjent med den [systemkrav](system-requirements.md) og [instruksjoner for installasjon og distribusjon](../../dev-itpro/deployment/setup-deploy-on-premises-environments.md) for å få en grundig forståelse av den underliggende infrastrukturen.
+Før du begynner prosessen for størrelsesangivelse på maskinvaren og infrastrukturen for et lokalt miljø, gjør du deg kjent med [systemkrav for skydistribusjoner](system-requirements.md) og [instruksjoner for installasjon og distribusjon](../../dev-itpro/deployment/setup-deploy-on-premises-environments.md) for å få en grundig forståelse av den underliggende infrastrukturen.
 
 > [!NOTE]
 > Se nøye på anbefalte fremgangsmåter for systemoppsett for optimal ytelse.

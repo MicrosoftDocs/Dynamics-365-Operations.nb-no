@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: v-kikozl
 ms.search.validFrom: 2019-1-16
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 647ef586b64699a891bd3b6702ac93bc5ee8292e
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: 03853e1f80bd32c1dfe5cfcbcd77e79168f26249
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2025413"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812313"
 ---
 # <a name="overview-of-fiscal-integration-for-retail-channels"></a>Oversikt over regnskapsintegrering for detaljhandelskanaler
 
@@ -36,7 +36,7 @@ Dette emnet er en oversikt over funksjonene for regnskapsintegrering som er tilg
 - Send informasjon som er knyttet til salg og returer som er fullført i Retail POS, sikkert til en ekstern webtjeneste som styres av skattemyndighetene.
 - Bidra til å sikre at salgstransaksjonsdata ikke kan endres, gjennom digitale signaturer.
 
-Funksjonen for regnskapsintegrering er et rammeverk som gir en felles løsning for videre utvikling og tilpassing av integreringen mellom Retail POS og regnskapsenheter og -tjenester. Funksjonen inneholder også eksempler på regnskapsintegrering som støtter grunnleggende detaljhandelsscenarier for bestemte land eller områder, og som fungerer med bestemte regnskapsenheter eller -tjenester. Et eksempel på regnskapsintegrering består av flere utvidelser for Retail-komponenter og er inkludert i software development kit (SDK). Hvis du vil ha mer informasjon om eksemplene på regnskapsintegrering, kan du se [Eksempler på regnskapsintegrering i SDK for Retail](#fiscal-integration-samples-in-the-retail-sdk). Hvis du vil ha informasjon om hvordan du installerer og bruker Retail SDK, se [Oversikt over Retail SDK](../dev-itpro/retail-sdk/retail-sdk-overview.md).
+Funksjonen for regnskapsintegrering er et rammeverk som gir en felles løsning for videre utvikling og tilpassing av integreringen mellom Retail POS og regnskapsenheter og -tjenester. Funksjonen inneholder også eksempler på regnskapsintegrering som støtter grunnleggende detaljhandelsscenarier for bestemte land eller områder, og som fungerer med bestemte regnskapsenheter eller -tjenester. Et eksempel på regnskapsintegrering består av flere utvidelser for Retail-komponenter og er inkludert i software development kit (SDK). Hvis du vil ha mer informasjon om eksemplene på regnskapsintegrering, kan du se [Eksempler på regnskapsintegrering i SDK for Retail](#fiscal-integration-samples-in-the-retail-sdk). Hvis du vil ha informasjon om hvordan du installerer og bruker Retail SDK, se [Retail SDK-arkitektur](../dev-itpro/retail-sdk/retail-sdk-overview.md).
 
 For å støtte andre scenarier som ikke støttes av et regnskapsintegreringseksempel, for å integrere Retail POS med andre regnskapsenheter eller -tjenester, eller for å oppfylle kravene til andre land eller regioner, må du enten utvide et eksisterende regnskapsintegreringseksempel eller lage et nytt eksempel ved hjelp av et eksisterende eksempel.
 
@@ -141,6 +141,6 @@ Følgende eksempler på regnskapsintegrering er for øyeblikket tilgjengelige i 
 
 Følgende funksjon for regnskapsintegrering er også tilgjengelig i detaljhandel-SDK-et, men drar for øyeblikket ikke nytte av regnskapsintegreringsrammeverket. Overføring av denne funksjonaliteten til rammeverket for regnskapsintegrering er planlagt i senere oppdateringer.
 
-- [Digital signatur for Frankrike](emea-fra-cash-registers.md)
-- [Digital signatur for Norge](emea-nor-cash-registers.md)
-- [Eksempel på integrering med kontrollenheter for Sverige](./retail-sdk-control-unit-sample.md)
+- [Kassefunksjoner for Frankrike](emea-fra-cash-registers.md)
+- [Kassefunksjoner for Norge](emea-nor-cash-registers.md)
+- [Eksempel for Retail POS-integrering med kontrollenheter for Sverige](./retail-sdk-control-unit-sample.md)

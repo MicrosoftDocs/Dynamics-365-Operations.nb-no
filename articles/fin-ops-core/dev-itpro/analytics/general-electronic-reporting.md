@@ -18,12 +18,12 @@ ms.search.region: global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 11ed2101304c4e09744bbd10e94e9cd2a8db4da5
-ms.sourcegitcommit: dd960cf07d8be791fd27c7bb72e6baa2d63ccd51
+ms.openlocfilehash: ad6c1c7544f3c9d53b9d5759b246f81dae6cfe2c
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/14/2019
-ms.locfileid: "2578247"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2771079"
 ---
 # <a name="electronic-reporting-er-overview"></a>Oversikt over elektronisk rapportering (ER)
 
@@ -71,7 +71,7 @@ En modelltilordning som støtter utgående elektroniske dokumenter har følgende
 
 - Den kan bruke forskjellige datatyper som datakilder for en datamodell. Den kan for eksempel bruke tabeller, dataenheter, metoder eller opplistinger.
 - Den støtter parametere for inndata som kan defineres som datakilder for en datamodell når noen data må angis under kjøring.
-- Det støtter transformasjon av data i nødvendige grupper. Den også kan du filtrere, sortere og summere data og legge til logiske beregnede felt som er laget ved hjelp av formler som ligner på Microsoft Excel-formler. Hvis du vil ha mer informasjon, se [Formeldesigner i Elektronisk rapportering](general-electronic-reporting-formula-designer.md)).
+- Det støtter transformasjon av data i nødvendige grupper. Den også kan du filtrere, sortere og summere data og legge til logiske beregnede felt som er laget ved hjelp av formler som ligner på Microsoft Excel-formler. Hvis du vil ha mer informasjon, se [Formeldesigner i Elektronisk rapportering (ER)](general-electronic-reporting-formula-designer.md)).
 
 
 En modelltilordning som støtter innkommende elektroniske dokumenter har følgende funksjoner:
@@ -362,5 +362,5 @@ ER lar deg automatisk innføre endringer av den nyeste versjonen av basiskompone
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 
-- [Lokaliseringskrav – Opprette en elektronisk rapporteringskonfigurasjon](electronic-reporting-configuration.md)
-- [Administrere livssyklus til konfigurasjoner for elektronisk rapportering](general-electronic-reporting-manage-configuration-lifecycle.md)
+- [Opprette en konfigurasjon for elektronisk rapportering (ER)](electronic-reporting-configuration.md)
+- [Administrere livssyklus til konfigurasjoner for elektronisk rapportering (ER)](general-electronic-reporting-manage-configuration-lifecycle.md)

@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: knelson
 ms.search.validFrom: 2016-11-28
 ms.dyn365.ops.version: AX 8.0.0
-ms.openlocfilehash: 482febc91a04766216f9887ab59d30cc9aed5096
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 7b0b3721c3b0755218c834d2bf77ec976be3bdcc
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2250513"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2770318"
 ---
 # <a name="synchronize-project-expense-categories-between-finance-and-operations-and-project-service-automation"></a>Synkronisere prosjektutgiftskategorier mellom Finance and Operations og Project Service Automation
 
@@ -64,7 +64,7 @@ Illustrasjonen nedenfor viser hvordan dataene synkroniseres mellom Project Servi
 
 ### <a name="template-and-task"></a>Mal og oppgave
 
-For å få tilgang til malen velg **Prosjekter** i administrasjonssenter for Microsoft PowerApps, og deretter, i øvre høyre hjørne, velg **Nytt prosjekt** for å velge offentlige maler.
+For å få tilgang til malen velg **Prosjekter** i administrasjonssenter for Microsoft Power Apps, og deretter, i øvre høyre hjørne, velg **Nytt prosjekt** for å velge offentlige maler.
 
 Følgende mal og underliggende oppgave brukes til å synkronisere prosjektutgiftskategorier fra Finance til Project Service Automation:
 

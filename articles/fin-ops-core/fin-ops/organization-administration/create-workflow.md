@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: donaldc
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
-ms.openlocfilehash: 2168b33c8495eab61ec0c8262b042cd16420031c
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: a643be553f3fcdfbe53f2024982a596e498830a8
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2190103"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811308"
 ---
 # <a name="create-workflows-overview"></a>Oversikt over å opprette arbeidsflyter
 
@@ -54,21 +54,21 @@ Følg disse fremgangsmåtene for å konfigurere egenskapene for arbeidsflyten.
 
 1. Klikk lerretet for å være sikker på at ingen arbeidsflytelementer er valgt.
 2. Klikk **Egenskaper** for å åpne **Egenskaper**-siden for arbeidsflyten.
-3. Følg fremgangsmåten i emnet [Konfigurere egenskapene for en arbeidsflyt](configure-workflow-properties.md).
+3. Følg fremgangsmåten i emnet [Konfigurere egenskaper arbeidsflyt](configure-workflow-properties.md).
 
 ## <a name="configure-the-elements-of-the-workflow"></a>Konfigurere elementene for arbeidsflyten
 
 Konfigurer hvert element du dro til lerretet. Hvis du vil ha informasjon om hvordan du konfigurerer hvert arbeidsflytelement, kan du se emnet nedenfor .
 
-- [Konfigurere en manuell oppgave](configure-manual-task-workflow.md)
-- [Konfigurere en automatisert oppgave](configure-automated-task-workflow.md)
-- [Konfigurere en godkjenningsprosess](configure-approval-process-workflow.md)
-- [Konfigurere et godkjenningstrinn](configure-approval-step-workflow.md)
-- [Konfigurere en manuell beslutning](configure-manual-decision-workflow.md)
-- [Konfigurere en betinget beslutning](configure-conditional-decision-workflow.md)
-- [Konfigurere en parallell aktivitet](configure-parallel-activity-workflow.md)
+- [Konfigurere manuelle oppgaver i en arbeidsflyt](configure-manual-task-workflow.md)
+- [Konfigurere automatiserte oppgaver i en arbeidsflyt](configure-automated-task-workflow.md)
+- [Konfigurere godkjenningsprosesser i en arbeidsflyt](configure-approval-process-workflow.md)
+- [Konfigurere godkjenningstrinn i en arbeidsflyt](configure-approval-step-workflow.md)
+- [Konfigurere manuelle beslutninger i en arbeidsflyt](configure-manual-decision-workflow.md)
+- [Konfigurere en betingede beslutninger i en arbeidsflyt](configure-conditional-decision-workflow.md)
+- [Konfigurere parallelle avdelinger i en arbeidsflyt](configure-parallel-activity-workflow.md)
 - [Konfigurere en parallell avdeling](configure-parallel-branch-workflow.md)
-- [Konfigurere en arbeidsflyt for linjeelement](configure-line-item-workflow.md)
+- [Konfigurere arbeidsflyter for linjeelement](configure-line-item-workflow.md)
 
 ## <a name="resolve-any-errors-or-warnings"></a>Løse eventuelle feil eller advarsler
 

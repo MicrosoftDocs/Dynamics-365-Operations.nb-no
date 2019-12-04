@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7ce94f3bbb988640bc53ca2170c7ed54c6c01c18
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 5a33ced073394f0f3aa1b0b2e177e4608ca5bcf6
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2179256"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2772036"
 ---
 # <a name="budget-planning-overview"></a>Oversikt over budsjettplanlegging
 
@@ -155,7 +155,8 @@ For eksempelskjemaet kan det hende du vil opprette kolonner for PY-salgs-, kontr
 
 Du kan også angi om hvert oppsettelement (kolonne) kan redigeres, og om de er tilgjengelige i alle regnearkmaler som opprettes for dette oppsettet. I oppsettet som brukes for estimatstadiet i eksempelskjemaet, kan prognosekolonnene redigeres, mens kolonnene for PY-salg og kontrakter.
 
-[!Note] Som standard vil du være begrenset til 36 kolonner med mindre du utvider budsjetteringsplanleggingen med trinnene i [Utvide budsjettplanleggingsoppsettet](./extending-budget-planning-layout.md).
+> [!NOTE] 
+> Som standard vil du være begrenset til 36 kolonner med mindre du utvider budsjetteringsplanleggingen med trinnene i [Utvide budsjettplanleggingsoppsettet](./extending-budget-planning-layout.md).
 
 ### <a name="templates"></a>Maler
 

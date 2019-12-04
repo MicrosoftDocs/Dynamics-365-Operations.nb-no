@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1a4759f55eceba923b47d906a764edcad34bf2f2
-ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
+ms.openlocfilehash: 80236da5220aa9c70d5c488c09b457a470f0225a
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "2571605"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811855"
 ---
 # <a name="create-an-asset"></a>Opprette et aktivum
 
@@ -36,15 +36,15 @@ Dette emnet beskriver hvordan du oppretter et aktivum i Aktivumbehandling.
 1. Klikk på **Aktivastyring** > **Felles** > **Aktiva** > **Alle aktiva** eller **Aktive aktiva**.
 2. Klikk på **Ny**-knappen.
 3. I dialogboksen **Opprett aktiva** setter du inn data angående **Aktiva** (aktiva-ID) og aktivanavn. Velg dato og klokkeslett for aktivumet i feltet **Gjelder fra**. Fra denne datoen kan du installere aktivumet på et arbeidssted, i tillegg til å flytte og erstatte aktivumet i en aktivagruppe.
-4. I **Aktivatype**-feltet velger du aktivatypen (obligatorisk felt). Velg om nødvendig også **Aktivaprodusent** og **Aktivamodell**. Hvis bare ett produkt er definert, velges dette produktet automatisk i feltet **Aktivaprodusent**. Valgene som er tilgjengelige i feltene **Aktivaprodusent** og **Aktivamodell**, avhenger av oppsettet i [Aktivaprodusent og -modell](../setup-for-objects/product-and-model.md).
+4. I **Aktivatype**-feltet velger du aktivatypen (obligatorisk felt). Velg om nødvendig også **Aktivaprodusent** og **Aktivamodell**. Hvis bare ett produkt er definert, velges dette produktet automatisk i feltet **Aktivaprodusent**. Valgene som er tilgjengelige i feltene **Aktivaprodusent** og **Aktivamodell**, avhenger av oppsettet i [Aktivaprodusenter og -modeller](../setup-for-objects/product-and-model.md).
 5. I **Overordnet objekt**-gruppen er **Aktivum**-feltet tomt som standard. Hvis det er nødvendig, kan du velge et overordnet objekt, og deretter fylles alle feltene i gruppen **Overordnet objekt** ut.
 >[!NOTE]  
->Når du velger et overordnet objekt, er to eller tre kategorier tilgjengelige: kategorien **Mine aktiva** inneholder aktiva som er knyttet til arbeidsstedene der du (vedlikeholdspersonen som er logget på systemet), kan være tilordnet. Hvis ingen arbeidssteder er definert for en vedlikeholdsperson i skjemaet [Vedlikeholdspersoner](../setup-for-objects/workers-and-worker-groups.md), er ikke kategorien **Mine aktiva** synlig. Kategorien **Aktive aktiva** inneholder en liste over alle aktiva med statusen "Aktiv" for livsløpstilstanden. Kategorien **Aktivavisning** viser en trevisning av arbeidssteder og aktiva som er installert på disse stedene.
+>Når du velger et overordnet objekt, er to eller tre kategorier tilgjengelige: kategorien **Mine aktiva** inneholder aktiva som er knyttet til arbeidsstedene der du (vedlikeholdspersonen som er logget på systemet), kan være tilordnet. Hvis ingen arbeidssteder er definert for en vedlikeholdsperson i skjemaet [Vedlikeholdsarbeidere og arbeidsgrupper](../setup-for-objects/workers-and-worker-groups.md), er ikke kategorien **Mine aktiva** synlig. Kategorien **Aktive aktiva** inneholder en liste over alle aktiva med statusen "Aktiv" for livsløpstilstanden. Kategorien **Aktivavisning** viser en trevisning av arbeidssteder og aktiva som er installert på disse stedene.
 
 6. Standard arbeidssted du har definert, foreslås for aktivumet i **Aktiva**-gruppen > **Arbeidssted**-feltet. Velg et annet arbeidssted, om nødvendig.
 
 >[!NOTE]
->Når du har opprettet et aktivum, kan du installere det på et annet arbeidssted, om nødvendig. Bare aktiva på øverste nivå (aktiva uten et overordnet objekt) kan installeres på et arbeidssted. Dette betyr at du installerer både det øverste nivået i tillegg til eventuelle underordnede objekter på det valgte arbeidsstedet. Les mer om hvordan du installerer aktiva på arbeidssteder i [Arbeidssteder](../functional-locations/introduction-to-functional-locations.md).
+>Når du har opprettet et aktivum, kan du installere det på et annet arbeidssted, om nødvendig. Bare aktiva på øverste nivå (aktiva uten et overordnet objekt) kan installeres på et arbeidssted. Dette betyr at du installerer både det øverste nivået i tillegg til eventuelle underordnede objekter på det valgte arbeidsstedet. Les mer om hvordan du installerer aktiva på arbeidssteder i [Innføring i arbeidssteder](../functional-locations/introduction-to-functional-locations.md).
 
 7. Klikk **OK**.
 8. Velg aktivumet i **Alle aktiva**-listen, og klikk på **Rediger**-knappen for å legge til mer informasjon om aktivumet.
@@ -53,15 +53,15 @@ Dette emnet beskriver hvordan du oppretter et aktivum i Aktivumbehandling.
 
 Arbeidsstedet som aktivumet er relatert til, vises i **Arbeidssted**-feltet. Hvis aktivumet er et overordnet objekt, vises antallet underordnede som er knyttet til aktivumet, i feltet **Underordnet**. Hvis aktivumet er et underaktivum til et eksisterende aktivum, vises ID-en til det overordnede objektet i feltet **Overordnet**.
 
-Du kan redigere **Aktivaprodusent** og **Aktivamodell** for aktivumet, som brukes til å administrere reservedeler, alternative reservedeler og jobbtypestandarder. Referer til [Aktivaprodusent og -modell](../setup-for-objects/product-and-model.md) for mer informasjon. Du kan også legge til informasjon om **modellår** og **serienummer**, om nødvendig.
+Du kan redigere **Aktivaprodusent** og **Aktivamodell** for aktivumet, som brukes til å administrere reservedeler, alternative reservedeler og jobbtypestandarder. Referer til [Aktivaprodusenter og -modeller](../setup-for-objects/product-and-model.md) for mer informasjon. Du kan også legge til informasjon om **modellår** og **serienummer**, om nødvendig.
 
 **Gjeldende livsløpstilstand** brukes til å definere om aktivaet er aktivt eller inaktivt. Når du oppretter et aktivum, settes stadiet alltid til den første fasen i aktivafasegruppen. Når du er klar til å aktivere et aktivum, klikker du på **Oppdater aktivatilstand**og velger deretter livsløpstilstanden du har definert som "aktivum aktivt", og klikk på **OK**.
 
 **Merk:** Når et aktivum er satt til "inaktiv", er det ikke lenger mulig å opprette arbeidsordrer for aktivumet. Du kan heller ikke planlegge forebyggende vedlikeholdsjobber for et inaktivt aktivum.
 
-Feltene **Servicenivå** og **Kritikalitet** relaterer til arbeidsordrer opprettet for aktivumet. Feltene viser tallene for **Servicenivå** og **Kritikalitet** som er beregnet for det gjeldende oppsettet for aktivumet. Se [Servicenivåer for aktivum](../setup-for-objects/object-priorities.md) og [Kritikaliteter for aktivum](../setup-for-objects/object-criticalities.md) angående oppsettet av disse verdiene.
+Feltene **Servicenivå** og **Kritikalitet** relaterer til arbeidsordrer opprettet for aktivumet. Feltene viser tallene for **Servicenivå** og **Kritikalitet** som er beregnet for det gjeldende oppsettet for aktivumet. Se [Servicenivåer for aktivum](../setup-for-objects/object-priorities.md) og [Type kritisk aktivitet for aktiva](../setup-for-objects/object-criticalities.md) angående oppsettet av disse verdiene.
 
-## <a name="asset"></a>Aktiva
+## <a name="asset"></a>Aktivum
 
 Du kan velge en **ressurs** for aktivaet. Ressursvalget bestemmer hvilken kalender som brukes for planlegging av arbeidsordrer. Ressursvalg brukes ofte for anleggsmidler. Ressurser og ressursgrupper satt opp i **Organisasjonsstyring** > **Ressurser** > **Ressursgrupper** eller **Ressurser**.
 

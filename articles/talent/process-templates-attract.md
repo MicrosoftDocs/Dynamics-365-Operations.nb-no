@@ -1,6 +1,6 @@
 ---
-title: Opprette en prosessmal i Attract
-description: Dette emnet gir informasjon om hvordan du oppretter en prosessmal i Attract.
+title: Opprette en ansettelsesprosessmal i Attract
+description: Dette emnet gir informasjon om hvordan du oppretter en ansettelsesprosessmal i Attract.
 author: andreabichsel
 manager: AnnBe
 ms.date: 10/15/2017
@@ -17,14 +17,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-10-01
 ms.dyn365.ops.version: AX 8.1
-ms.openlocfilehash: 533b9abd3d57c5bf8f3d9da85020c86012436f2f
-ms.sourcegitcommit: dd991154231280aff9c9c5799e42799e2bfc02fb
+ms.openlocfilehash: 82046d43cf7366b760c140bdb8b017337b4f41da
+ms.sourcegitcommit: 9cc6a011bfdd1b0fe505760b6bf429eb6c65862a
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "2622724"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "2832564"
 ---
-# <a name="create-a-process-template-in-attract"></a>Opprette en prosessmal i Attract
+# <a name="create-a-hiring-process-template-in-attract"></a>Opprette en ansettelsesprosessmal i Attract
 
 [!include [banner](includes/banner.md)]
 
@@ -48,7 +48,7 @@ Administratorer, rekrutterere og ansettelsesansvarlige kan opprette prosessmaler
 > [!NOTE]
 > Navn på stadium er synlig for kandidater på siden **Søknadsstatus**. Dette bør du tenke over når du velger navn for stadier.
 
-Hvis du vil ha mer informasjon om aktiviteter, kan du se [Aktiviteter i ansettelsesprosess i Attract](./activities-attract.md).
+Hvis du vil ha mer informasjon om aktiviteter, kan du se [Aktiviteter i ansettelsesprosess](./activities-attract.md).
 
 Følg denne fremgangsmåten for å opprette en mal for ansettelsesprosess.
 

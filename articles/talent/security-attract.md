@@ -1,5 +1,5 @@
 ---
-title: Administrasjon av sikkerhet og rolle i Attract
+title: Angi brukertillatelser i Attract
 description: Dette emnet inneholder informasjon om rollesikkerhet i Microsoft Dynamics 365 Talent – Attract.
 author: andreabichsel
 manager: AnnBe
@@ -18,16 +18,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: 7db2ac241db121f07eb3524c7c5c9a8f64e78537
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: efac512cfa07bb2183f06b8be45f74bef9af0767
+ms.sourcegitcommit: 9cc6a011bfdd1b0fe505760b6bf429eb6c65862a
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2551432"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "2832704"
 ---
-# <a name="security-and-role-management-in-attract"></a>Administrasjon av sikkerhet og rolle i Attract
+# <a name="set-user-permissions-in-attract"></a>Angi brukertillatelser i Attract
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Microsoft Dynamics 365 Talent: Attract bruker rollebasert sikkerhet. Med andre ord gis ikke tilgang til individuelle brukere, men til sikkerhetsrollene som brukere er tilordnet. En bruker som er tilordnet en sikkerhetsrolle, har tilgang til settet med rettigheter som er knyttet til denne rollen.
 
@@ -52,7 +52,7 @@ Delene nedenfor gir en beskrivelse på høyt nivå av hver rolle. Tabellene sene
 
 ## <a name="administrator"></a>Administrator
 
-Brukere som er tilordnet rollen som administrator, kan få tilgang til og endre alle dataene i Attract. Administratorer kan opprette, lese, oppdatere og slette data. De har også tilgang til administrasjonssenteret, der de kan konfigurere Attract og sette opp brukerinformasjon. Vi anbefaler at minst én person tilordnes til administratorrollen. Som standard settes miljøadministratoren i Microsoft PowerApps som administrator i Attract. Hvis du har registrert deg for prøveversjonen av Attract, tilordnes automatisk administratorrollen til deg. For å opprette jobber, må brukere som har rollen administrator, for øyeblikket også ha rekruttererrollen eller rollen som ansettelsesansvarlig
+Brukere som er tilordnet rollen som administrator, kan få tilgang til og endre alle dataene i Attract. Administratorer kan opprette, lese, oppdatere og slette data. De har også tilgang til administrasjonssenteret, der de kan konfigurere Attract og sette opp brukerinformasjon. Vi anbefaler at minst én person tilordnes til administratorrollen. Som standard settes miljøadministratoren i Microsoft Power Apps som administrator i Attract. Hvis du har registrert deg for prøveversjonen av Attract, tilordnes automatisk administratorrollen til deg. For å opprette jobber, må brukere som har rollen administrator, for øyeblikket også ha rekruttererrollen eller rollen som ansettelsesansvarlig
 
 ## <a name="hiring-manager"></a>Ansettelsesansvarlig
 

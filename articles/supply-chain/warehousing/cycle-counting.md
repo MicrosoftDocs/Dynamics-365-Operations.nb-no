@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: aef99a7e8964dba0e3c3a507bb214b79ae723357
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: d7ec95b230c5ea17f208bc1288c10fce15631a5d
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2251529"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2813069"
 ---
 # <a name="cycle-counting"></a>Syklustelling
 
@@ -136,7 +136,7 @@ Det oppstår en syklustellingsdifferanse i følgende scenarier: hvis **Er en syk
 Du kan justere forskjeller i den opptelte verdien og deretter godta den opptelte verdien på siden **Syklustelling venter på gjennomgang**. Du kan kontrollere den endrede tellingen av vareantallet på siden **Beholdning etter lokasjon**. Tellingsverdien avvises hvis forskjellen ikke kan godkjennes.
 
 ## <a name="additional-resources"></a>Tilleggsressurser
-[Konfigurere mobilenheter for lagerarbeid](configure-mobile-devices-warehouse.md)
+[Definere mobilenheter for lagerarbeid](configure-mobile-devices-warehouse.md)
 
 
 

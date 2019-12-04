@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ef630ca56888eb61ab0519a29c89c3ccb2f24a87
-ms.sourcegitcommit: d554faca895609b8124bf2ea5aca5a55c407534a
+ms.openlocfilehash: bf1a417130cb9d17f33d96f5e510582c79e875ca
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "2537838"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811678"
 ---
 # <a name="help-system"></a>Hjelpesystem
 
@@ -82,7 +82,7 @@ Hvis du vil ha mer informasjon, kan du se [veiledningen for bidragsytere](https:
 
 En oppgaveveiledning er en kontrollert, veiledet, interaktiv opplevelse som leder deg gjennom trinnene for en aktivitet eller forretningsprosess. Du kan åpne (spille av) en oppgaveveiledning fra Hjelp-ruten. Når du først klikker en oppgaveveiledning, vil Hjelp-ruten vise de trinnvise instruksjonene for oppgaven. Lokaliserte oppgaveveiledninger er tilgjengelige.
 
-Microsoft sendte oppgaveveiledningbiblioteker for versjoner til desember 2017 for Dynamics 365 for Finance and Operations. Delen [Tilgang til oppgaveveiledninger fra Hjelp-ruten](help-overview.md#accessing-task-guides-from-the-help-pane) beskriver hvordan du finner de riktige oppgaveveiledningene for produktet.
+Microsoft sendte oppgaveveiledningbiblioteker for versjoner til desember 2017 for Dynamics 365 for Finance and Operations. Delen [Hjelpesystem](help-overview.md#accessing-task-guides-from-the-help-pane) beskriver hvordan du finner de riktige oppgaveveiledningene for produktet.
 
 ![Oppgaveveiledning – lesevisning](./media/task-guide-ops.png)
 
@@ -93,7 +93,7 @@ Hvis du vil starte den veiledede interaktive opplevelsen, klikker du **Start opp
 > [!IMPORTANT]
 > Dataene som du angir når du spiller av en oppgaveveiledning, er ekte. Hvis du er i et produksjonsmiljø, legges dataene inn i firmaet som du bruker for øyeblikket.
 
-Du kan bruke oppgaveopptakeren til å opprette dine egne egendefinerte oppgaveveiledninger. Hvis du vil ha mer informasjon, se [Lage dokumentasjon eller opplæring ved hjelp av oppgaveopptak](../../dev-itpro/user-interface/task-recorder-training-docs.md).
+Du kan bruke oppgaveopptakeren til å opprette dine egne egendefinerte oppgaveveiledninger. Hvis du vil ha mer informasjon, se [Lage dokumentasjon eller opplæring med Oppgaveopptaker](../../dev-itpro/user-interface/task-recorder-training-docs.md).
 
 ## <a name="in-product-help"></a>Hjelp i produktet
 
@@ -144,13 +144,12 @@ Oversatte oppgaveveiledninger er utgitt i biblioteker med "Alle språk" i tittel
 
 Du kan opprette hjelp for brukerne ved å opprette egendefinerte oppgaveveiledninger eller koble ditt eget nettsted til Hjelp-ruten. Hvis du vil ha mer informasjon, kan du se:
 
-- [Opprette en oppgaveregistrering som skal brukes som dokumentasjon eller opplæring](../../dev-itpro/user-interface/task-recorder.md).
+- [Ressurser for Oppgaveregistrering](../../dev-itpro/user-interface/task-recorder.md).
 - [Lage egendefinert hjelp (hvitbok)](https://go.microsoft.com/fwlink/?linkid=2041185)
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 
-- [Oppgaveregistrering](../../dev-itpro/user-interface/task-recorder.md)
-- [Lage dokumentasjon eller opplæring ved hjelp av oppgaveopptak](../../dev-itpro/user-interface/task-recorder.md)
+- [Ressurser for Oppgaveregistrering](../../dev-itpro/user-interface/task-recorder.md)
 
 Følgende tabell viser nettstedene våre. Områder med en stjerne (\*) ved siden av navnet, krever at du logger på med en konto som er knyttet til en serviceplan.
 

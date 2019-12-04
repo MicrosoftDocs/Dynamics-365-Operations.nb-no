@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 07774e607abc90951c27100e749645d8a476b6a7
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 79329b60f0aa7ce196b55a1483b07f8b9ea7e3cf
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2175555"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2771711"
 ---
 # <a name="view-journal-entries-and-transactions"></a>Vise journaloppføringer og transaksjoner
 
@@ -56,8 +56,8 @@ I tillegg til finansrapporter kan du bruke følgende rapporter til å vise økon
 ## <a name="additional-resources"></a>Tilleggsressurser
 - [Kontosaldoer i økonomimodulen](general-ledger-account-balances.md) 
 - [Regnskapskildeutforsker](../accounts-payable/accounting-source-explorer.md)
-- [Finansrapportering](financial-reporting-getting-started.md)
-- [Vis journaloppføringer](tasks/view-journal-entries-or-transactions.md)
+- [Oversikt over finansrapportering](financial-reporting-getting-started.md)
+- [Vise journaloppføringer eller transaksjoner](tasks/view-journal-entries-or-transactions.md)
 
 
 

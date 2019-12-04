@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: e74edfc5cf17499c080e825cf4b1fd39b6063e35
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: f7929aeed9a1f1e334d8c75ef941b601d8c6b664
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2182767"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2769930"
 ---
 # <a name="sales-and-profitability-performance-power-bi-content"></a>Power BI-innholdet Resultat av salg og fortjeneste
 
@@ -77,7 +77,7 @@ Power BI-innholdet **Resultat av salg og fortjeneste** vises på **Resultat av s
 \* Inntekt i år og forrige år. og vekst etter salgskategori.
 
 ## <a name="understanding-the-data-model-and-entities"></a>Forstå datamodellen og enheter
-Følgende data brukes til å fylle ut rapporten i Power BI-innholdet **Resultat av salg og fortjeneste**. Disse dataene vises som aggregerte mål som er oppsamlet i enhetslageret. Enhetslageret er en Microsoft SQL Server-database som er optimalisert for analyse. Hvis du vil ha mer informasjon, se [Oversikt over Power BI-integrering med enhetslager](power-bi-integration-entity-store.md).
+Følgende data brukes til å fylle ut rapporten i Power BI-innholdet **Resultat av salg og fortjeneste**. Disse dataene vises som aggregerte mål som er oppsamlet i enhetslageret. Enhetslageret er en Microsoft SQL Server-database som er optimalisert for analyse. Hvis du vil ha mer informasjon, se [Power BI-integrering med enhetslager](power-bi-integration-entity-store.md).
 
 De aggregerte målingene i denne innholdspakken er delsett av aggregerte målinger som var tilgjengelige i salgskuben i Microsoft Dynamics AX 2012 og Microsoft Dynamics AX 2012 R3. For å plassere kubens aggregerte målinger i enhetslageret må du gjøre dem distribuerbare. Hvis du vil ha mer informasjon, kan du se fremgangsmåten for hvordan du plasserer aggregerte målinger i enhetsbutikken i blogginnlegget [Power BI-integrering med enhetslageret i Dynamics](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/06/09/power-bi-integration-with-entity-store-in-dynamics-ax-7-may-update/).
 

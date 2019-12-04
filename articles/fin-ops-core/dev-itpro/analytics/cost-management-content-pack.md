@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6bd76fc771c370d8d769a97d3b33003f632717f2
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: d0bf2f843401811d601b5fe90709bf995f550870
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2174196"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2771523"
 ---
 # <a name="cost-management-power-bi-content"></a>Power BI-innholdet Kostnadsstyring
 
@@ -37,7 +37,7 @@ Microsoft Power BI-innholdet for **Kostnadsstyring** er ment for lagerregnskapsf
 > [!NOTE]
 > Power BI-innholdet **Kostnadsbehandling** som er beskrevet i dette emnet, gjelder for Dynamics 365 Finance and Operations 8.0.
 > 
-> Power BI-innholdspakken for **Kostnadsstyring**, tilgjengelig på AppSource-nettstedet, er foreldet. Hvis du vil ha mer informasjon om denne fjerningen, kan du se [Power BI-innholdspakker tilgjengelig på AppSource](../migration-upgrade/deprecated-features.md#power-bi-content-packs-available-on-appsource).
+> Power BI-innholdspakken for **Kostnadsstyring**, tilgjengelig på AppSource-nettstedet, er foreldet. Hvis du vil ha mer informasjon om denne avskrivingen, kan du se [Funksjoner som er fjernet eller utgått for Finance and Operations](../migration-upgrade/deprecated-features.md#power-bi-content-packs-available-on-appsource).
 
 Power BI-innholdet gir et kategoriserte format som hjelper deg å overvåke ytelsen til beholdninger og visualisere hvordan kostnadene flyter gjennom dem. Du kan få innsikt, for eksempel omsetningshastighet, antall dager beholdningen er på lager, presisjon og ABC-klassifisering på det foretrukne aggregerte nivået (firma, vare, varegruppe eller område). Informasjonen som gjøres tilgjengelig, kan også brukes som et detaljert supplement til regnskapsoppgjøret.
 

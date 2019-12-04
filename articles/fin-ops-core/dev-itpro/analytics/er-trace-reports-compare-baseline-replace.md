@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
-ms.openlocfilehash: 1e144e2623f3ddfafaee749bb334de40ef5aec1b
-ms.sourcegitcommit: dd960cf07d8be791fd27c7bb72e6baa2d63ccd51
+ms.openlocfilehash: 45c0e3b569ca733ae3b70187633d2e84db5ecd87
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/14/2019
-ms.locfileid: "2578224"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2771172"
 ---
 # <a name="improvements-in-tracing-the-results-of-generated-er-reports-and-comparing-them-with-baseline-values"></a>Forbedringer i sporing av resultater av genererte ER-rapporter og i å sammenligne dem med grunnlinjeverdier
 
@@ -113,14 +113,14 @@ For å kunne fullføre trinnene i dette eksemplet må du først fullføre trinne
 13. Velg **Lagre**, og velg deretter **Test**.
 14. Velg **Test** på nytt for å teste det konfigurerte uttrykket på nytt.
 
-    ![Formeldesigner-siden](media/GER-BaselineSample-DefineProcessingDTExpression.PNG "Skjermbilde av Formeldesigner-siden")
+    ![Formeldesigner-siden](media/GER-BaselineSample-DefineProcessingDTExpression.PNG "Skjermbilde av siden Formelutforming")
 
     > [!NOTE]
     > Fanen **Testresultat** viser at det konfigurerte uttrykket returnerer en ny verdi for dato og klokkeslett hver gang det kalles.
 
 15. Lukk **Formeldesigner**-siden, og velg deretter **Lagre**.
 
-    ![Formatutforming-siden](media/GER-BaselineSample-FormatMappingDesign2.PNG "Skjermbilde av Formatutforming-siden")
+    ![Formatutformingsside](media/GER-BaselineSample-FormatMappingDesign2.PNG "Skjermbilde av siden Formatutforming")
 
 16. Lukk **Formatutforming**-siden.
 
@@ -147,7 +147,7 @@ Den valgte ER-formatkomponenten er lagt til i listen over komponenter i hurtigfa
 
 Følg trinnene i delen «Eksempel: Automatisere innstillingen for grunnlinjeregler» tidligere i dette emnet. En varsling advarer deg om at den utgående filen er generert ved hjelp av grunnlinjeinnstillinger, og at det har oppstått en tvungen erstatning av formatbindingene.
 
-![Varsling på Konfigurasjoner-siden](media/GER-BaselineSample-FormatRunToMakeBaselineFile4.PNG "Skjermbilde av varslingen på Konfigurasjoner-siden")
+![Varsling om Konfigurasjoner-siden](media/GER-BaselineSample-FormatRunToMakeBaselineFile4.PNG "Skjermbilde av varslingen på Konfigurasjoner-siden")
 
 ### <a name="suppress-warnings-about-the-replacement-of-format-bindings"></a>Utelate advarsler om erstatningen av formatbindinger
 
@@ -206,5 +206,5 @@ Hvis du vil importere grunnlinjeinnstillinger fra en XML-fil som er lagret på M
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 
-- [Spore genererte rapportresultater og sammenligne dem med basisverdier](er-trace-reports-compare-baseline.md)
-- [Oppgaveregistrering](../user-interface/task-recorder.md)
+- [Spore genererte rapportresultater og sammenligne dem med grunnlinjeverdier](er-trace-reports-compare-baseline.md)
+- [Ressurser for Oppgaveregistrering](../user-interface/task-recorder.md)

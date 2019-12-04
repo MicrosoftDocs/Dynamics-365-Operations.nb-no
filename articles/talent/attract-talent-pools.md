@@ -1,5 +1,5 @@
 ---
-title: Finne kandidater med talentsamlinger i Microsoft Dynamics 365 Talent – Attract
+title: Finne kandidater med talentsamlinger i Attract
 description: Dette emnet forklarer hvordan du kan opprette og definere talentsamlinger i Microsoft Dynamics 365 Talent – Attract.
 author: andreabichsel
 manager: AnnBe
@@ -18,17 +18,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-22-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: 454ba987eef924d520af17e8b9ae694fe9b82ec2
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: ea10ccd5e4b1f1ffbb8f736e886240e223a4eeb3
+ms.sourcegitcommit: 9cc6a011bfdd1b0fe505760b6bf429eb6c65862a
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2551124"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "2833029"
 ---
-# <a name="source-candidates-with-talent-pools-in-microsoft-dynamics-365-talent---attract"></a>Finne kandidater med talentsamlinger i Microsoft Dynamics 365 Talent – Attract
+# <a name="source-candidates-with-talent-pools-in-attract"></a>Finne kandidater med talentsamlinger i Attract
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](includes/banner.md)]
 
 Rekrutteringspersoner og ansettelsesansvarlige kan organisere kandidater ved hjelp av funksjonen for talentsamlinger i Attract. Talentsamlinger kan hjelpe deg med å holde orden på og engasjere deg med alle kandidater som søker på jobber i firmaet.
 
@@ -116,7 +115,7 @@ Alle brukere har en samlet oversikt over kandidatprofiler. **Profil**-kategorien
 
     Hvis du vil vise et dokument, merker du dokumentnavnet i listen over dokumenter. Du kan vise Microsoft Word-dokumenter i programmet ved hjelp av Microsoft Office 365. Du kan også laste ned dokumenter til den lokale datamaskinen ved hjelp av **Last ned**-alternativet for hvert dokument.
 
-- **LinkedIn**-kategorien viser kandidatens LinkedIn-informasjon. Hvis du vil bruke denne kategorien, må du koble til LinkedIn-kontoen i brukerinnstillingene, og det må opprettes en tilkobling til miljøets LinkedIn Recruiter. Hvis du vil ha mer informasjon, se [Kandidatsondering med LinkedIn Recruiter](./attract-linkedin-recruiter.md).
+- **LinkedIn**-kategorien viser kandidatens LinkedIn-informasjon. Hvis du vil bruke denne kategorien, må du koble til LinkedIn-kontoen i brukerinnstillingene, og det må opprettes en tilkobling til miljøets LinkedIn Recruiter. Hvis du vil ha mer informasjon, se [Finne kandidater med LinkedIn Recruiter i Microsoft Dynamics 365 Talent - Attract](./attract-linkedin-recruiter.md).
 
 > [!NOTE]
 > Bare kandidater kan oppdatere kompetansen, utdanningsloggen og arbeidserfaringen.

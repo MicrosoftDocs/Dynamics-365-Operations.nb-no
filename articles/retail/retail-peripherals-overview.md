@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: cf4eb74acbd305eb67861ab3f09648bf8af8f86c
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: ba01f0d16341eb9b0ec0918798e458626b5ef90e
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2025059"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811199"
 ---
 # <a name="retail-peripherals"></a>Eksterne enheter for detaljhandel
 
@@ -35,11 +35,17 @@ Dette emnet forklarer begrepene som er knyttet til detaljhandelsenheter. Det bes
 
 ### <a name="pos-registers"></a>Kasser på salgssted
 
-Navigering: Klikk **Detaljhandel** &gt; **Kanaloppsett** &gt; **Salgsstedsoppsett** &gt; **Kasser**. Kassen på salgsstedet er en enhet som brukes til å definere egenskapene til en bestemt forekomst av salgsstedet. Disse egenskapene inkluderer maskinvareprofilen eller oppsettet for detaljhandelsenheter som skal brukes i kassen, butikken som kassen er tilordnet og den visuelle opplevelsen for brukeren som logger på kassen.
+Navigering: Klikk **Detaljhandel** &gt; **Kanaloppsett** &gt; **Salgsstedsoppsett** &gt; **Kasser**. 
+
+Kassen på salgsstedet er en enhet som brukes til å definere egenskapene til en bestemt forekomst av salgsstedet. Disse egenskapene inkluderer maskinvareprofilen eller oppsettet for detaljhandelsenheter som skal brukes i kassen, butikken som kassen er tilordnet og den visuelle opplevelsen for brukeren som logger på kassen.
 
 ### <a name="devices"></a>Enheter
 
-Navigering: Klikk **Detaljhandel** &gt; **Kanaloppsett** &gt; **Salgsstedsoppsett** &gt; **Enheter**. En enhet er en enhet som representerer en fysisk forekomst av en enhet som er tilordnet en kasse på salgsstedet. Når en enhet opprettes, tilordnes den til en kasse på salgsstedet. Enhetsenheten registrerer informasjon om når en kasse på salgsstedet aktiveres, klienttypen som brukes og programpakken som er distribuert til en bestemt enhet. Enheter som kan tilordnes til følgende programtyper: Retail Modern POS, Retail Cloud POS, Retail Modern POS – Windows Phone, Retail Modern POS – Android og Retail Modern POS – iOS.
+Navigering: Klikk **Detaljhandel** &gt; **Kanaloppsett** &gt; **Salgsstedsoppsett** &gt; **Enheter**. 
+
+En enhet er en enhet som representerer en fysisk forekomst av en enhet som er tilordnet en kasse på salgsstedet. Når en enhet opprettes, tilordnes den til en kasse på salgsstedet. Enhetsenheten registrerer informasjon om når en kasse på salgsstedet aktiveres, klienttypen som brukes og programpakken som er distribuert til en bestemt enhet. 
+
+Enheter som kan tilordnes til følgende programtyper: Retail Modern POS, Retail Cloud POS, Retail Modern POS – Windows Phone, Retail Modern POS – Android og Retail Modern POS – iOS.
 
 ### <a name="retail-modern-pos"></a>Retail Modern POS
 
@@ -63,11 +69,15 @@ POS-enheter er enheter som er eksplisitt støttes for POS-funksjoner. Disse ekst
 
 ### <a name="hardware-station"></a>Hardware Station
 
-Navigering: Klikk **Detaljhandel** &gt; **Kanaler** &gt; **Detaljhandelbutikker** &gt; **Alle detaljhandelsbutikker**. Velg en butikk, og klikk deretter hurtigfanen **Maskinvarestasjoner**. Innstillingen **Maskinvarestasjon** er en innstilling på kanalnivå som brukes til å definere forekomster der ekstern logikk for detaljhandel skal distribueres. Denne innstillingen på kanalnivå, brukes til å bestemme egenskapene til maskinvarestasjonen. Den brukes også til å vise maskinvarestasjoner som er tilgjengelige for en Modern POS-forekomst i et angitt lager. Maskinvarestasjonen er bygget inn i Modern POS-programmet for Windows. Maskinvarestasjonen kan også distribueres uavhengig som et frittstående program for Microsoft Internet Information Services (IIS). I slike tilfeller er det tilgang via et nettverk.
+Navigering: Klikk **Detaljhandel** &gt; **Kanaler** &gt; **Detaljhandelbutikker** &gt; **Alle detaljhandelsbutikker**. 
+
+Velg en butikk, og klikk deretter hurtigfanen **Maskinvarestasjoner**. Innstillingen **Maskinvarestasjon** er en innstilling på kanalnivå som brukes til å definere forekomster der ekstern logikk for detaljhandel skal distribueres. Denne innstillingen på kanalnivå, brukes til å bestemme egenskapene til maskinvarestasjonen. Den brukes også til å vise maskinvarestasjoner som er tilgjengelige for en Modern POS-forekomst i et angitt lager. Maskinvarestasjonen er bygget inn i Modern POS-programmet for Windows. Maskinvarestasjonen kan også distribueres uavhengig som et frittstående program for Microsoft Internet Information Services (IIS). I slike tilfeller er det tilgang via et nettverk.
 
 ### <a name="hardware-profile"></a>Maskinvareprofil
 
-Navigering: Klikk **Detaljhandel** &gt; **Kanaloppsett** &gt; **Salgsstedsoppsett** &gt; **Salgsstedsprofiler** &gt; **Maskinvareprofiler**. Maskinvareprofilen er en liste over enheter som er konfigurert for en kasse på salgssted eller en maskinvarestasjon. Maskinvareprofilen tilordnes direkte til en kasse på salgsstedet eller til en maskinvarestasjon.
+Navigering: Klikk **Detaljhandel** &gt; **Kanaloppsett** &gt; **Salgsstedsoppsett** &gt; **Salgsstedsprofiler** &gt; **Maskinvareprofiler**. 
+
+Maskinvareprofilen er en liste over enheter som er konfigurert for en kasse på salgssted eller en maskinvarestasjon. Maskinvareprofilen tilordnes direkte til en kasse på salgsstedet eller til en maskinvarestasjon.
 
 ## <a name="devices-classes"></a>Enhetsklasser
 POS-enheter deles vanligvis inn i bestemte klasser. Denne delen beskriver og inneholder en oversikt over enhetene som støtter i Modern POS.
@@ -202,11 +212,11 @@ Logikken som styrer fysisk tilkoblede og nettverksadresserbare enheter finnes i 
 
 ### <a name="hardware-station-installation"></a>Installasjon av maskinvarestasjon
 
-Hvis du vil ha mer informasjon, kan du se [Konfigurere og installere maskinvarestasjon for detaljhandel](retail-hardware-station-configuration-installation.md).
+Hvis du vil ha mer informasjon, kan du se [Konfigurere og installere Retail Hardware Station](retail-hardware-station-configuration-installation.md).
 
 ### <a name="modern-pos-for-windows-setup-and-configuration"></a>Oppsett og konfigurasjon av Modern POS for Windows
 
-Hvis du vil ha mer informasjon, kan du se [Konfigurasjon og installasjon av Retail Modern POS](retail-modern-pos-device-activation.md).
+Hvis du vil ha mer informasjon, kan du se [Konfigurere, installere og aktivere Retail Modern POS (MPOS)](retail-modern-pos-device-activation.md).
 
 ### <a name="opos-device-setup-and-configuration"></a>Oppsett og konfigurasjon av OPOS-enhet
 
@@ -523,7 +533,7 @@ Nettverksenheter kan støttes direkte gjennom maskinvarestasjonen som er bygd in
 
 ## <a name="configuration-for-supported-scenarios"></a>Konfigurasjon for scenarier som støttes
 
-Hvis du vil ha mer informasjon om hvordan du kan opprette maskinvareprofiler, kan du se [Definere og vedlikeholde kanalklienter, inkludert kasser og maskinvarestasjoner](define-maintain-channel-clients-registers-hw-stations.md).
+Hvis du vil ha mer informasjon om hvordan du oppretter maskinvareprofiler, se [Koble eksterne enheter til salgsstedet](define-maintain-channel-clients-registers-hw-stations.md).
 
 > [!NOTE]
 > For Retail versjon 1611 brukes ikke maskinvarestasjonprofilen lenger. Egenskaper som du tidligere har definert i profilen for maskinvarestasjon, er nå en del av selve maskinvarestasjonen.
@@ -566,8 +576,8 @@ Denne konfigurasjonen kan brukes for alle Modern POS-klienter som har en maskinv
 4. Klikk på **Detaljhandel** &gt; **IT for detaljhandel** &gt; **Distribusjonsplan**.
 5. Velg distribusjonsplanen **1090** for å synkronisere den nye maskinvareprofilen til butikken. Klikk på **Kjør nå** for å synkronisere endringer til salgsstedet.
 6. Velg distribusjonsplanen **1040** for å synkronisere den nye maskinvarestasjonen til butikken. Klikk på **Kjør nå** for å synkronisere endringer til salgsstedet.
-7. Installer maskinvarestasjonen. Hvis du vil ha mer informasjon om hvordan du installerer maskinvarestasjonen, kan du se [Konfigurere og installere maskinvarestasjon for detaljhandel](retail-hardware-station-configuration-installation.md).
-8. Installer og aktiver Modern POS. Hvis du vil ha mer informasjon om hvordan du installerer Modern POS, kan du se [Konfigurere og installere Retail Modern POS](retail-modern-pos-device-activation.md).
+7. Installer maskinvarestasjonen. Hvis du vil ha mer informasjon om hvordan du installerer maskinvarestasjonen, kan du se [Konfigurere og installere Retail Hardware Station](retail-hardware-station-configuration-installation.md).
+8. Installer og aktiver Modern POS. Hvis du vil ha mer informasjon om hvordan du installerer Modern POS, kan du se [Konfigurere, installere og aktivere Retail Modern POS (MPOS)](retail-modern-pos-device-activation.md).
 9. Logg på Modern POS, og velg **Utfør en ikke-skuff-operasjon**.
 10. Start operasjonen **Administrer maskinvarestasjoner**.
 11. Klikk på **Administrer**.
@@ -595,8 +605,8 @@ Denne konfigurasjonen kan brukes for alle Modern POS-klienter som deler maskinva
 5. Klikk på **Detaljhandel** &gt; **IT for detaljhandel** &gt; **Distribusjonsplan**.
 6. Velg distribusjonsplanen **1090** for å synkronisere den nye maskinvareprofilen til butikken. Klikk på **Kjør nå** for å synkronisere endringer til salgsstedet.
 7. Velg distribusjonsplanen **1040** for å synkronisere den nye maskinvarestasjonen til butikken. Klikk på **Kjør nå** for å synkronisere endringer til salgsstedet.
-8. Installer maskinvarestasjonen på hver vertsdatamaskin som du opprettet i trinn 2 og 3. Hvis du vil ha mer informasjon om hvordan du installerer maskinvarestasjonen, kan du se [Konfigurere og installere maskinvarestasjon for detaljhandel](retail-hardware-station-configuration-installation.md).
-9. Installer og aktiver Modern POS. Hvis du vil ha mer informasjon om hvordan du installerer Modern POS, kan du se [Konfigurere og installere Retail Modern POS](retail-modern-pos-device-activation.md).
+8. Installer maskinvarestasjonen på hver vertsdatamaskin som du opprettet i trinn 2 og 3. Hvis du vil ha mer informasjon om hvordan du installerer maskinvarestasjonen, kan du se [Konfigurere og installere Retail Hardware Station](retail-hardware-station-configuration-installation.md).
+9. Installer og aktiver Modern POS. Hvis du vil ha mer informasjon om hvordan du installerer Modern POS, kan du se [Konfigurere, installere og aktivere Retail Modern POS (MPOS)](retail-modern-pos-device-activation.md).
 10. Logg på Modern POS, og velg **Utfør en ikke-skuff-operasjon**.
 11. Start operasjonen **Administrer maskinvarestasjoner**.
 12. Klikk på **Administrer**.
@@ -655,7 +665,7 @@ Følgende innstillinger skal brukes i et produksjonsmiljø i henhold til gjelden
 
 ## <a name="peripheral-simulator"></a>Ekstern simulator
 
-Hvis du vil ha mer informasjon, kan du se [Simulator for eksterne detaljhandelsenheter](dev-itpro/retail-peripheral-simulator.md).
+Hvis du vil ha mer informasjon, kan du se [Ekstern simulator for detaljhandel](dev-itpro/retail-peripheral-simulator.md).
 
 ## <a name="microsoft-tested-peripheral-devices"></a>Microsoft-testede eksterne enheter
 
@@ -896,4 +906,4 @@ De eksterne enhetene nedenfor ble testet ved hjelp av en delt IIS-maskinvarestas
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 
-[Simulator for eksterne enheter for Retail](dev-itpro/retail-peripheral-simulator.md)
+[Ekstern simulator for detaljhandel](dev-itpro/retail-peripheral-simulator.md)

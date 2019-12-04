@@ -3,7 +3,7 @@ title: Utsatt behandling av lagerarbeid
 description: Dette emnet beskriver funksjonaliteten som gjør utsatt behandling av plasseringsoperasjoner for lagerarbeidet tilgjengelig i Dynamics 365 Supply Chain Management.
 author: josaw1
 manager: AnnBe
-ms.date: 06/17/2019
+ms.date: 11/18/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2019-6-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 1acfa41b9a94b5f27eefda006c8e2950059f3489
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: b67b3899a506c02b581d04f51691cb4408ee012e
+ms.sourcegitcommit: 0af4caa9f5ea6f6c1d1f4b30090e02e7f755df36
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2026940"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "2815794"
 ---
 # <a name="deferred-processing-of-warehouse-work"></a>Utsatt behandling av lagerarbeid
 
@@ -30,7 +30,6 @@ ms.locfileid: "2026940"
 [!include [banner](../includes/pivate-preview-banner.md)]
 
 Dette emnet beskriver funksjonaliteten som gjør utsatt behandling av plasseringsoperasjoner for lagerarbeid tilgjengelig i Dynamics 365 Supply Chain Management.
-
 
 Den utsatte behandlingsfunksjonaliteten lar lagerarbeidere fortsette å utføre annet arbeid mens plasseringsoperasjonen behandles i bakgrunnen. Utsatt behandling er nyttig når mange arbeidslinjer må behandles, og arbeideren kan la dette arbeidet behandles asynkront. Det er også nyttig når serveren kan ha ad hoc eller ikke-planlagte økninger i behandlingstiden, og den økte behandlingstiden kan påvirke brukerens produktivitet.
 
@@ -50,6 +49,8 @@ Policyer konfigureres på siden **Arbeidsbehandlingspolicyer**. Følgende tabell
 | Arbeidsbehandlingsmetode          | Metoden som brukes til å behandle arbeidslinjen. Hvis metoden er satt til **Umiddelbar**, ligner virkemåten når ingen arbeidsbehandlingspolicyer brukes til å behandle linjen. Hvis metoden er satt til **Utsatt**, brukes utsatt behandling som bruker det satsvise rammeverket. |
 | Terskel for utsatt behandling   | Verdien **0** (null) angir at det finnes ikke noen terskel. I dette tilfellet brukes utsatt behandling hvis den kan brukes. Hvis den spesifikke terskelberegningen er under terskelen, brukes den umiddelbare metoden. Ellers brukes den utsatte metoden hvis den kan brukes. For salgs- og overføringsrelatert arbeid beregnes terskelen som antall tilknyttede kildelastlinjer som behandles for arbeidet. For etterfyllingsarbeid beregnes terskelen som antall arbeidslinjer som etterfylles av arbeidet. Ved å angi en terskel på, for eksempel **5** for salg, vil mindre arbeid som har færre enn fem første kildelastlinjer, ikke bruke utsatt behandling, men større arbeide vil bruke den. Terskelen har bare en effekt hvis metoden for arbeidsbehandling er satt til **Utsatt**. |
 | Satsvis gruppe for utsatt behandling |Den satsvise gruppen som brukes for behandling. |
+
+Følgende arbeidsordretyper støttes for utsatt plasseringsbehandling: salgsordre, overføringsordreavgang og etterfylling.
 
 ## <a name="assigning-the-work-creation-policy"></a>Tilordne policyen for arbeidsopprettelse
 
@@ -99,7 +100,7 @@ Det er flere scenarioer der utsatt plasseringsbehandling ikke brukes, selv om po
 - Manuell arbeidsfullføring brukes.
 - Arbeidet er fullført ved hjelp av autofullføring.
 - Revisjonsmaler brukes.
-- Arbeidet bruker containere.
+
 
 ## <a name="monitoring-the-deferred-processing-tasks-from-the-outbound-work-monitoring-workspace"></a>Overvåke utsatte behandlingsoppgaver fra arbeidsområdet for overvåking av utgående arbeid
 

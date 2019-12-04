@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 8a8494bdefcf11dc331be18bfe02e0df1e39d602
-ms.sourcegitcommit: deb87e518a151d8bb084891851a39758938a96e4
+ms.openlocfilehash: 2652458a5fea9e46b8b68d3b197d2ccb1385731d
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "2626253"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811755"
 ---
 # <a name="manually-created-work-orders"></a>Manuelt opprettede arbeidsordrer
 
@@ -70,7 +70,7 @@ Merk følgende punkt:
 
 - I detaljvisningen på listesiden **Alle arbeidsordrer** kan du legge til flere aktiva i en arbeidsordre ved å legge til linjer i hurtigfanen **Vedlikeholdsjobber for arbeidsordre**. I et aktivum kan du bare velge vedlikeholdsjobbtypene som er definert for aktivatypen som er valgt for aktivumet.  
 
-- Hvis du endrer servicenivået eller aktivakritikalitet for aktivumet etter at du har brukt det på en arbeidsordre, oppdateres ikke servicenivået eller kritikaliteten i arbeidsordren i henhold til dette. Hvis du vil ha mer informasjon om servicenivåer og kritikaliteter, se [Tjenestenivåer for aktiva](../setup-for-objects/object-priorities.md) og [Kritiske forhold omkring aktiva](../setup-for-objects/object-criticalities.md).
+- Hvis du endrer servicenivået eller aktivakritikalitet for aktivumet etter at du har brukt det på en arbeidsordre, oppdateres ikke servicenivået eller kritikaliteten i arbeidsordren i henhold til dette. Hvis du vil ha mer informasjon om servicenivåer og kritikaliteter, se [Tjenestenivåer for aktiva](../setup-for-objects/object-priorities.md) og [Type kritisk aktivitet for aktiva](../setup-for-objects/object-criticalities.md).
 
 - Kritikaliteten i en arbeidsordre beregnes på nytt hver gang en arbeidsordrejobb legges til eller slettes fra arbeidsordren.
 

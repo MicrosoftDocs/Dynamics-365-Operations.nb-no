@@ -3,7 +3,7 @@ title: Betalingsmiddelbaserte rabatter
 description: Dette emnet gir en oversikt over funksjoner som gjør det mulig for forhandlerne å konfigurere rabatter for bestemte betalingsmidler.
 author: bebeale
 manager: AnnBe
-ms.date: 10/25/19
+ms.date: 10/30/19
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: shajain
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: Version 10.0.7
-ms.openlocfilehash: 245ee647a3b86303df046fda5bba406c7a2485b5
-ms.sourcegitcommit: b0c176d5d24939307c6d0a6dbe7656007ca53710
+ms.openlocfilehash: ed17b43ac16ebcd310716271b84bbbd904a3253a
+ms.sourcegitcommit: dc31a0f0d9216aa05be76046ac7410702b20706f
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "2673571"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "2692229"
 ---
 # <a name="tender-based-discounts"></a>Betalingsmiddelbaserte rabatter
 
@@ -40,6 +40,7 @@ I Microsoft Dynamics 365 Retail kan forhandlere konfigurere en rabattprosent som
 Betalingsmiddelbaserte rabatter konkurrerer ikke med varebaserte rabatter, for eksempel periodiske eller manuelle rabatter. De er alltid sammensatt over varerabattene. Selv om en eksklusiv tidsbestemt rabatt blir brukt på en vare, blir den betalingsbaserte rabatten fremdeles tatt i bruk på toppen av den eksklusive periodiske rabatten. Hvis en terskelrabatt skal brukes på transaksjonen, og den betalingsbaserte rabatten reduserer totalen under terskelen, blir terskelrabatten fremdeles brukt på transaksjonen.
 
 Selv om betalingsbaserte rabatter reduserer delsummen for transaksjonen, påvirkes ikke automatiske tillegg som er brukt på transaksjonen. Hvis for eksempel leveringstilleggene er beregnet til $5 fordi delsummen var mer enn $100, og den betalingsbaserte rabatten reduserer beløpet slik at det er mindre enn $100, blir leveringskostnadene fortsatt $5 for ordren.
+
 
 > [!NOTE]
 > Betalingsbaserte rabatter er proporsjonalt fordelt på de kvalifiserte salgslinjene og reduserer forhåndsavgiftsbeløpet for de enkelte linjene. Hvis flere betalingsbaserte rabatter konfigureres for et betalingsmiddel (for eksempel kontant), brukes bare den beste betalingsbaserte rabatten.
@@ -57,6 +58,7 @@ Når det gjelder kortbetalinger, kan forhandlere definere betalingsbasert rabatt
 
 For å unngå denne situasjonen vil kassereren se en dialogboks som viser kredittkort, som vil føre til ytterligere besparelse for kunden hvis vedkommende betaler med et kredittkort. Kassereren kan deretter spørre om kunden ønsker å bruke et av de foretrukne kortene for å få en ekstra rabatt. Hvis kassereren bruker et foretrukket kort, brukes den betalingsbaserte rabatten på transaksjonen, og det reduserte beløpet vises på betalingsskjermen. Autorisasjonen vil gjelde for det reduserte beløpet. Hvis kunden setter inn et kort som er forskjellig fra kortet som kassereren valgte, vises det en feilmelding, og autorisasjonen blir annullert.
 
+
 ## <a name="call-center-user-experience"></a>Brukeropplevelse for kundesenter
 
 Når brukeren velger **Ferdig** under en telefonsenterordre, vises **Totaler**-skjermen. Først inkluderer ikke totalsummene på denne skjermen noen betalingsbasert rabatt fordi betalingsmåten ikke er valgt ennå. Hvis brukeren velger betalingsmetoden som den betalingsbaserte rabatten er konfigurert for, på **Legg til betaling**-skjermen, vil betalingsbeløpet automatisk bli justert, slik at det gjenspeiler rabattbeløpet. På lik linje med kunden på salgsstedet kan telefonsenterkunden bestemme seg for fullstendige betaling eller delbetaling. Basert på beløpet som betales, brukes den betalingsbaserte rabatten på salgsordren.
@@ -66,7 +68,7 @@ Når brukeren velger **Ferdig** under en telefonsenterordre, vises **Totaler**-s
 
 ## <a name="exclude-items-from-discounts"></a>Utelate varer fra rabatter
 
-Forhandlere velger ofte å utelate noen produkter, for eksempel nye varer eller varer med stor etterspørsel, fra rabatter. De kan imidlertid fremdeles bruke betalingsbaserte rabatter. En detaljhandler konfigurerer for eksempel Retail slik at den ikke tillater varebaserte rabatter eller manuelle rabatter. Hvis kunden betaler ved hjelp av det foretrukne betalingsmiddelet, vil Retail likevel bruke den betalingsbaserte rabatten. Hvis du vil definere Retail på denne måten, må forhandlerne slå av alternativene **Hindre alle rabatter** og **Hindre betalingsbaserte rabatter** og aktivere alternativene **Hindre detaljhandelsrabatter** og **Hindre manuelle rabatter**. Alternativene finnes på siden **Frigitte produkter** i kategorien **Detaljhandel**.
+Forhandlere velger ofte å utelate noen produkter, for eksempel nye varer eller varer med stor etterspørsel, fra rabatter. De kan imidlertid fremdeles bruke betalingsbaserte rabatter. En detaljhandler konfigurerer for eksempel Retail slik at den ikke tillater varebaserte rabatter eller manuelle rabatter. Hvis kunden betaler ved hjelp av det foretrukne betalingsmiddelet, vil Retail likevel bruke den betalingsbaserte rabatten. For å sette opp Retail på denne måten må forhandlere gå til **Behandling av produktinformasjon > Produkter > Frigitte produkter**, velge varen, og deretter, i **Retail**-hurtigfanen, sette alternativene **Hindre alle rabatter** og **Hindre betalingsbaserte rabatter** til **Nei**, og **Hindre detaljhandelsrabatter** og **Hindre manuelle rabatter** til **Ja**.
 
 > [!NOTE]
-> Når konfigurasjonen **Hindre alle rabatter** er slått på, vil det ikke bli brukt noen rabatter på produktet. Ikke engang betalingsbaserte rabatter vil bli brukt.
+> Når konfigurasjonen **Hindre alle rabatter** er satt til **Ja**, vil det ikke bli brukt noen rabatter på produktet. Ikke engang betalingsbaserte rabatter vil bli brukt.

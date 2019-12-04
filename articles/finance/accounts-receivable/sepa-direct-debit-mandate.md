@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 45cabc7d263299763b6ee457063c96cdf384eeeb
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: aba265e69bde9a9c194147d6ee6a806e9b2bd7c2
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2189022"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2772128"
 ---
 # <a name="set-up-sepa-direct-debit-mandate"></a>Definere mandat for SEPA Direct Debit
 
@@ -50,7 +50,7 @@ Tabellen nedenfor viser forutsetninger som må være på plass før du starter.
 
 Tilleggsressurser
 
-[Oversikt over avtalegiro](sepa-direct-debit-overview.md) 
+[Oversikt over SEPA-avtalegiro](sepa-direct-debit-overview.md) 
 
 [Opprette et nytt avtalegiromandat for en kunde](tasks/create-direct-debit-mandate-customer.md) 
 

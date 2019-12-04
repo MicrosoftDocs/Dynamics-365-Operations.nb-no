@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: aevengir
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 21ff82df71e352ca176aa1635a5ffb478bbcaf0e
-ms.sourcegitcommit: 7bec89b33a56447072d01066af4da473b8092ca8
+ms.openlocfilehash: 0fc9877fdca2d2f85f4f9609616d8d21ab7b5174
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "2536830"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2771593"
 ---
 # <a name="cost-accounting-analysis-power-bi-content"></a>Power BI-innholdet Kostnadsregnskapsanalyse
 
@@ -40,7 +40,7 @@ Siden innholdet **Kostnadsregnskapsanalyse** fremhever avvik mellom faktiske kos
 
 Hvis du vil ha mer informasjon om kostnadsregnskap, se [startside for kostnadsregnskap](../../../finance/cost-accounting/cost-accounting-home-page.md).
 
-Ved å definere tilgangsnivåsikkerhet i kostnadsregnskap og kombinere det med radnivåsikkerhet i Power BI, kan du gi alle kostnadsobjekteiere tilgang til **Kostregnskapsanalyse**-innhold for Power BI. Alle data i visualiseringen blir deretter filtrert basert på tilgangsnivået som styres i kostnadsregnskap. Hvis du vil vite mer om tilgangsnivåsikkerhet og radnivåsikkerhet, kan du se [Konfigurere sikkerhet for Kostnadsregnskaps-innhold for Power BII](setup-security-cost-accounting-content-pack.md).
+Ved å definere tilgangsnivåsikkerhet i kostnadsregnskap og kombinere det med radnivåsikkerhet i Power BI, kan du gi alle kostnadsobjekteiere tilgang til **Kostregnskapsanalyse**-innhold for Power BI. Alle data i visualiseringen blir deretter filtrert basert på tilgangsnivået som styres i kostnadsregnskap. Hvis du vil vite mer om tilgangsnivåsikkerhet og radnivåsikkerhet, kan du se [Definere sikkerhet for Power BI-innhold for analyse av kostnadsregnskap](setup-security-cost-accounting-content-pack.md).
 
 ## <a name="accessing-the-power-bi-content"></a>Tilgang til Power BI-innholdet
 Du kan finne **Kostnadsregnskapsanalyse**-innhold for Power BI i det delte aktivabiblioteket i Microsoft Dynamics Lifecycle Services (LCS). Hvis du vil ha mer informasjon om hvordan du laster ned innholdet og implementerer det i organisasjonen, kan du se [Power BI-innhold i LCS fra Microsoft og partnerne](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/12/12/power-bi-content-from-microsoft-and-your-partners/).
@@ -74,7 +74,7 @@ Innholdet inneholder et sett med rapportsider. Hver side består av et sett med 
 |                                  | Faktiske kostnader etter navn på medlem av dimensjon for kostnadsobjekt og navn på medlem av dimensjon for kostnadselement                                       |                                               |
 
 ## <a name="understanding-the-data-model-and-entities"></a>Forstå datamodellen og enheter
-Følgende data brukes til å fylle ut rapportsidene i Power BI-innholdet **Kostnadsregnskapsanalyse**. Disse dataene vises som aggregerte mål som er oppsamlet i enhetslageret. Enhetslageret er en Microsoft SQL Server-database som er optimalisert for analyse. Hvis du vil ha mer informasjon, se [Oversikt over Power BI-integrering med enhetslager](power-bi-integration-entity-store.md).
+Følgende data brukes til å fylle ut rapportsidene i Power BI-innholdet **Kostnadsregnskapsanalyse**. Disse dataene vises som aggregerte mål som er oppsamlet i enhetslageret. Enhetslageret er en Microsoft SQL Server-database som er optimalisert for analyse. Hvis du vil ha mer informasjon, se [Power BI-integrering med enhetslager](power-bi-integration-entity-store.md).
 
 De aggregerte nøkkelmålingene som du finner nedenfor, brukes som grunnlag for innholdet.
 

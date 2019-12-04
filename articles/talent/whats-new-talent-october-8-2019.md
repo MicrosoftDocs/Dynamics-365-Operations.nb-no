@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-10-08
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 159320dcbdf257862378b347172ef71832e293dc
-ms.sourcegitcommit: deb87e518a151d8bb084891851a39758938a96e4
+ms.openlocfilehash: 496603731eb343a64be1e8d9482ac8d42e6aa79a
+ms.sourcegitcommit: 7ef9e61f0388b5241894d40ff39f84a112232a5f
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "2626068"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "2694412"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-talent-october-8-2019"></a>Hva er nytt eller endret i Dynamics 365 Talent (8. oktober 2019)
 
@@ -57,15 +57,15 @@ Funksjonaliteten for ansattoppføring og navigasjon er nå tilgjengelig i alle m
 
 Hvis du vil ha mer informasjon, se [Strømlinjeformet ansattoppføring og navigasjon](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-talent/streamlined-employee-data-entry) i Dynamics 365: 2019-frigivelsesbølge 2-planen.
 
-### <a name="issue-attract-and-onboard-create-inactive-workers-in-core-hr-380517"></a>Problem: Attract og Onboard oppretter inaktive arbeidere i Core HR (380517)
+### <a name="attract-and-onboard-create-inactive-workers-in-core-hr-380517"></a>Attract og Onboard oppretter inaktive arbeidere i Core HR (380517)
 
 Frigivelsen denne uken retter opp et problem der Attract og Onboard oppretter inaktive arbeidere i Core HR.
 
-### <a name="issue-the-workflow-fails-when-the-manager-is-signed-in-to-another-company-while-terminating-an-employee-346852"></a>Problem: Arbeidsflyten mislykkes når lederen er logget på et annet firma under avslutning av en ansatt (346852)
+### <a name="the-workflow-fails-when-the-manager-is-signed-in-to-another-company-while-terminating-an-employee-346852"></a>Arbeidsflyten mislykkes når lederen er logget på et annet firma under avslutning av en ansatt (346852)
 
 Arbeidsflyten mislykkes ikke lenger basert på den juridiske enheten som lederen er logget på.
 
-### <a name="issue-missing-information-on-hcmonboardingworkerchecklisttaskentity-349591"></a>Problem: Mangler informasjon for HcmOnboardingWorkerChecklistTaskEntity (349591)
+### <a name="missing-information-on-hcmonboardingworkerchecklisttaskentity-349591"></a>Mangler informasjon for HcmOnboardingWorkerChecklistTaskEntity (349591)
 
 Denne versjonen inneholder tilleggsinformasjon om **HcmOnboardingWorkerChecklistTaskEntity**. Her er noen eksempler:
 
@@ -73,35 +73,35 @@ Denne versjonen inneholder tilleggsinformasjon om **HcmOnboardingWorkerChecklist
 - **Ansattnavn** når den tilordnede typen er **ansatt**
 - **Ledernavn** når den tilordnede typen er **leder**
 
-### <a name="issue-entities-arent-listed-in-alphabetical-order-in-common-data-service-administration-377414"></a>Problem: Enheter vises ikke i alfabetisk rekkefølge i Common Data Service-administrasjon (377414)
+### <a name="entities-arent-listed-in-alphabetical-order-in-common-data-service-administration-377414"></a>Enheter vises ikke i alfabetisk rekkefølge i Common Data Service-administrasjon (377414)
 
 Enheter vises nå i alfabetisk rekkefølge på siden **CDS-administrasjon**.
 
-### <a name="issue-changing-the-employment-type-with-a-future-date-doesnt-allow-a-position-assignment-339958"></a>Problem: Hvis du endrer ansettelsestypen med en fremtidig dato, tillates ikke en stillingstilordning (339958)
+### <a name="changing-the-employment-type-with-a-future-date-doesnt-allow-a-position-assignment-339958"></a>Hvis du endrer ansettelsestypen med en fremtidig dato, tillates ikke en stillingstilordning (339958)
 
 Denne endringen tillater stillingstilordninger når arbeidertyper endres (for eksempel fra ansatt til oppdragstaker).
 
-### <a name="issue-updating-the-common-data-service-leave-bank-transaction-entity-creates-a-new-record-in-talent-352938"></a>Problem: Oppdatering av enheten for permisjonsbanktransaksjonen for Common Data Service oppretter en ny post i Talent (352938)
+### <a name="updating-the-common-data-service-leave-bank-transaction-entity-creates-a-new-record-in-talent-352938"></a>Oppdatering av enheten for permisjonsbanktransaksjonen for Common Data Service oppretter en ny post i Talent (352938)
 
 Permisjonstransaksjonen er nå oppdatert når det gjøres en oppdatering for Common Data Service for permisjonsbanktransaksjoner.
 
-### <a name="issue-the-title-of-attachments-for-feedback-items-shows-the-feedback-description-343765"></a>Problem: Tittelen på vedlegg for tilbakemeldingselementer viser beskrivelsen av tilbakemeldingen (343765)
+### <a name="the-title-of-attachments-for-feedback-items-shows-the-feedback-description-343765"></a>Tittelen på vedlegg for tilbakemeldingselementer viser beskrivelsen av tilbakemeldingen (343765)
 
 Beskrivelsen av tilbakemeldingen vises ikke lenger i vedleggstittelen.
 
-### <a name="issue-compensation-workflow-comments-field-shows-incorrect-content-339297"></a>Problem: Kommentarfeltet for kompensasjonsarbeidsflyt viser feil innhold (339297)
+### <a name="compensation-workflow-comments-field-shows-incorrect-content-339297"></a>Kommentarfeltet for kompensasjonsarbeidsflyt viser feil innhold (339297)
 
 Denne endringen viser innholdet i feltet **%HcmActionState.HcmWorkerActionComment.Comments%** field.
 
-### <a name="issue-workcalendarentity-and-workcalendardayentity-arent-exposed-through-odata-376329"></a>Problem: WorkCalendarEntity og WorkCalendarDayEntity er ikke eksponert via OData (376329)
+### <a name="workcalendarentity-and-workcalendardayentity-arent-exposed-through-odata-376329"></a>WorkCalendarEntity og WorkCalendarDayEntity er ikke eksponert via OData (376329)
 
 I denne versjonen er **WorkCalendarEntity** og **WorkCalendarDayEntity** nå tilgjengelige via Open Data Protocol (OData).
 
-### <a name="issue-hcmworkerentity-is-slow-when-odata-is-used-375221"></a>Problem: HCMWorkerEntity er treg når OData brukes (375221)
+### <a name="hcmworkerentity-is-slow-when-odata-is-used-375221"></a>HCMWorkerEntity er treg når OData brukes (375221)
 
 Endringer forbedrer ytelsen til **HCMWorkerEntity** når Microsoft Excel-arbeidsbokutformingen brukes.
 
-### <a name="issue-manager-performance-journal-entry-shows-an-error-after-deleting-a-performance-journal-and-creating-a-new-one-336061"></a>Problem: Journaloppføring for lederytelse viser en feil etter sletting av en ytelsesjournal og oppretting av en ny (336061)
+### <a name="manager-performance-journal-entry-shows-an-error-after-deleting-a-performance-journal-and-creating-a-new-one-336061"></a>Journaloppføring for lederytelse viser en feil etter sletting av en ytelsesjournal og oppretting av en ny (336061)
 
 Denne versjonen retter opp et problem som oppstår etter at én ytelseslogg er slettet og en ny opprettes umiddelbart etterpå. Denne korrigeringen endrer virkemåten i lederens selvbetjening.
 

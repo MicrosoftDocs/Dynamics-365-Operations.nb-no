@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 616d3f5560d18c7fdd8a092c3fbca0fde44be069
-ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
+ms.openlocfilehash: b9708c37f10cd08e6b98167fe24d9ae0380c3dac
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "2570431"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2772174"
 ---
 # <a name="vendor-invoices-overview"></a>Oversikt over leverandørfakturaer
 
@@ -101,7 +101,7 @@ Du kan bruke siden **Arbeidsflytlogg** for å tilbakestille arbeidsflytstatusen 
 ## <a name="additional-resources"></a>Tilleggsressurser
 
 - [Definere leverandørfakturapolicyer](../accounts-receivable/tasks/set-up-vendor-invoice-policies.md)
-- [Registrere fakturadata i Leverandører ved hjelp av en leverandørfaktura](tasks/key-invoice-data-ap-system-vendor-invoice.md)
+- [Hovedfakturadata i AP-systemet ved hjelp av leverandørfaktura](tasks/key-invoice-data-ap-system-vendor-invoice.md)
 - [Registrere fakturadata i Leverandører ved hjelp av en godkjenningsjournal](tasks/key-invoice-data-into-ap-system-approval-journal.md)
 - [Registrere fakturadata i AP-systemet ved hjelp av fakturapulje](tasks/key-invoice-data-into-ap-system-invoice-pool.md)
 - [Registrere en leverandørfaktura i fakturajournalen](tasks/record-vendor-invoice-invoice-journal.md)

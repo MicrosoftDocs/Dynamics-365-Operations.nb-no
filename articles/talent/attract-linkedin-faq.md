@@ -1,5 +1,5 @@
 ---
-title: Vanlige spørsmål om Attract-integrering med LinkedIn
+title: Vanlige spørsmål om LinkedIn-integrering
 description: Dette emnet svarer på spørsmål du kan ha om integrering mellom LinkedIn og Microsoft Microsoft Dynamics 365 Talent – Attract.
 author: hasrivas
 manager: AnnBe
@@ -19,14 +19,14 @@ ms.search.industry: ''
 ms.author: hasrivas
 ms.search.validFrom: 2019-07-08
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: b77ad598ba209dbbd73765c49947e84a3995153d
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: 35428da709f480e1d3842b7e92deacba200326ee
+ms.sourcegitcommit: 9cc6a011bfdd1b0fe505760b6bf429eb6c65862a
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2550373"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "2833098"
 ---
-# <a name="attract-integration-with-linkedin-faq"></a>Vanlige spørsmål om Attract-integrering med LinkedIn
+# <a name="linkedin-integration-faq"></a>Vanlige spørsmål om LinkedIn-integrering
 
 [!include [banner](includes/banner.md)]
 
@@ -41,8 +41,8 @@ Her er svar på ofte stilte spørsmål om hvordan du bruker Attract og LinkedIn 
 Attracts integrering med LinkedIn lar deg utføre følgende oppgaver:
 
 - [Postere jobber på LinkedIn](./attract-post-jobs-to-linkedin.md) (som gratis "Begrensede oppføringer" (Limited Listings)).
-- [Eksportere kandidatinformasjon fra LinkedIn til Attract](./attract-linkedin-recruiter.md#export-linkedin-candidates-to-attract-with-one-click).
-- [La jobbkandidater søke på jobbene dine med LinkedIn](./attract-admin-linkedin.md#set-up-apply-with-linkedin-in-attract).
+- [Finne kandidater med LinkedIn Recruiter i Microsoft Dynamics 365 Talent - Attract](./attract-linkedin-recruiter.md#export-linkedin-candidates-to-attract-with-one-click).
+- [Konfigurere integrering med LinkedIn for Microsoft Dynamics 365 Talent - Attract](./attract-admin-linkedin.md#set-up-apply-with-linkedin-in-attract).
 
 ### <a name="what-do-i-need-before-i-can-post-jobs-to-linkedin"></a>Hva trenger jeg før jeg kan legge inn jobber på LinkedIn?
 
@@ -50,17 +50,17 @@ Din administrator må [konfigurere LinkedIn-integrasjon i Attract](./attract-adm
 
 ### <a name="how-do-i-post-jobs-to-linkedin-from-attract"></a>Hvordan posterer jeg jobber til LinkedIn fra Attract?
 
-Når du har opprettet en jobb i Attract, må du bare velge **Poster nå**-knappen som tilsvarer LinkedIn. For mer informasjon, se [Postere jobber til LinkedIn fra Attract](./attract-post-jobs-to-linkedin.md#post-jobs-to-linkedin).
+Når du har opprettet en jobb i Attract, må du bare velge **Poster nå**-knappen som tilsvarer LinkedIn. For mer informasjon, se [Postere jobber til LinkedIn fra Microsoft Dynamics 365 Talent - Attract](./attract-post-jobs-to-linkedin.md#post-jobs-to-linkedin).
 
 ### <a name="can-i-get-candidate-information-from-linkedin-into-attract"></a>Kan jeg hente kandidatinformasjon fra LinkedIn til Attract?
 
-Ja. Hvis du ser en god kandidat på LinkedIn, kan du enkelt eksportere denne kandidatens informasjon til Attract. Hvis du vil ha mer informasjon, se [Finne kandidater med LinkedIn Recruiter](attract-linkedin-recruiter.md).
+Ja. Hvis du ser en god kandidat på LinkedIn, kan du enkelt eksportere denne kandidatens informasjon til Attract. Hvis du vil ha mer informasjon, se [Finne kandidater med LinkedIn Recruiter i Microsoft Dynamics 365 Talent - Attract](attract-linkedin-recruiter.md).
 
 ### <a name="how-can-i-get-help-accessing-linkedin-from-attract"></a>Hvordan kan jeg få hjelp med å få tilgang til LinkedIn fra Attract?
 
-Hvis du har problemer med å logge på eller postere jobber til LinkedIn fra Attract, kan du se [Feilsøke integrering med LinkedIn](./attract-troubleshoot-linkedin.md).
+Hvis du har problemer med å logge på eller postere jobber til LinkedIn fra Attract, kan du se [Feilsøke integrering med LinkedIn og Microsoft Dynamics 365 Talent - Attract](./attract-troubleshoot-linkedin.md).
 
-For andre problemer med Attract, se [Få kundestøtte for Talent](./talent-support.md). Hvis du vil ha hjelp med LinkedIn, kan du se [kundestøttesiden for LinkedIn](https://www.linkedin.com/help).
+For andre problemer med Attract, se [Få kundestøtte for Microsoft Dynamics 365 Talent](./talent-support.md). Hvis du vil ha hjelp med LinkedIn, kan du se [kundestøttesiden for LinkedIn](https://www.linkedin.com/help).
 
 ## <a name="for-admins-and-developers"></a>For administratorer og utviklere
 
@@ -68,11 +68,11 @@ Her er svar på ofte stilte spørsmål om hvordan du konfigurerer integrering me
 
 ### <a name="how-do-i-configure-attract-so-that-recruiters-and-hiring-managers-can-post-jobs-to-linkedin"></a>Hvordan konfigurerer jeg Attract slik at rekrutterere og ansettelsesansvarlige kan postere jobber på LinkedIn?
 
-Du kan konfigurere de tilgjengelige alternativene i kategorien **LinkedIn-integrasjon** i administrasjonssenteret. Hvis du vil ha mer informasjon, kan du se [Konfigurere integrering med LinkedIn](./attract-admin-linkedin.md).
+Du kan konfigurere de tilgjengelige alternativene i kategorien **LinkedIn-integrasjon** i administrasjonssenteret. Hvis du vil ha mer informasjon, kan du se [Konfigurere integrering med LinkedIn for Microsoft Dynamics 365 Talent - Attract](./attract-admin-linkedin.md).
 
 ### <a name="can-i-export-candidate-information-from-linkedin"></a>Kan jeg eksportere kandidatinformasjon fra LinkedIn?
 
-Ja, men du må først konfigurere integrering med LinkedIn Recruiter. Hvis du vil ha mer informasjon, kan du se [Konfigurere integrering med LinkedIn](./attract-admin-linkedin.md).
+Ja, men du må først konfigurere integrering med LinkedIn Recruiter. Hvis du vil ha mer informasjon, kan du se [Konfigurere integrering med LinkedIn for Microsoft Dynamics 365 Talent - Attract](./attract-admin-linkedin.md).
 
 ### <a name="how-can-i-post-jobs-to-premium-job-slots-on-linkedin"></a>Hvordan kan jeg postere jobber til premium jobbplasser på LinkedIn?
 
@@ -103,17 +103,17 @@ Tabellen nedenfor beskriver de ulike alternativene for å postere jobber til Lin
 | **Hvor ofte posterer LinkedIn jobber?** | En gang om dagen | En gang om dagen | Flere ganger per dag, som definert av API-et |
 | **Anbefalt av LinkedIn?** | Nei | Ja | Nei |
 | **Hva trenger jeg?** | Kjøp av Attract | En jobbpakkingskontrakt med LinkedIn og kjøp av premium jobbplasser | En API-avtale med LinkedIn | 
-| **Hvor kan jeg finne mer informasjon?** | [Konfigurere integrering med LinkedIn](./attract-admin-linkedin.md) | [Jobbpakking via LinkedIn Recruiter - Oversikt](https://www.linkedin.com/help/recruiter/answer/79037) | [Recruiter System Connect](https://docs.microsoft.com/linkedin/talent/recruiter-system-connect) |
+| **Hvor kan jeg finne mer informasjon?** | [Konfigurere integrering med LinkedIn for Microsoft Dynamics 365 Talent - Attract](./attract-admin-linkedin.md) | [Jobbpakking via LinkedIn Recruiter - Oversikt](https://www.linkedin.com/help/recruiter/answer/79037) | [Recruiter System Connect](https://docs.microsoft.com/linkedin/talent/recruiter-system-connect) |
 
 > [!NOTE]
 > Du trenger ikke en LinkedIn Recruiter System Connect-lisens for å postere jobber til LinkedIn med Attract.
 
 ## <a name="see-also"></a>Se også
 
-[Konfigurere integrering med LinkedIn](./attract-admin-linkedin.md)
+[Konfigurere integrering med LinkedIn for Microsoft Dynamics 365 Talent - Attract](./attract-admin-linkedin.md)
 
-[Postere jobber til LinkedIn fra Attract](./attract-post-jobs-to-linkedin.md)
+[Postere jobber til LinkedIn fra Microsoft Dynamics 365 Talent - Attract](./attract-post-jobs-to-linkedin.md)
 
-[Finne kandidater med LinkedIn Recruiter](./attract-linkedin-recruiter.md)
+[Finne kandidater med LinkedIn Recruiter i Microsoft Dynamics 365 Talent - Attract](./attract-linkedin-recruiter.md)
 
-[Feilsøke integrering med LinkedIn](./attract-troubleshoot-linkedin.md)
+[Feilsøke integrering med LinkedIn og Microsoft Dynamics 365 Talent - Attract](./attract-troubleshoot-linkedin.md)

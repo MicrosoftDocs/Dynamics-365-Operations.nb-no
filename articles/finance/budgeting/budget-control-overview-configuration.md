@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a06224e4babab8315ebd9de34e7ada570564e8ec
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 464fd211eb5417265f8c737b23456769137a7c13
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2188631"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2772680"
 ---
 # <a name="budget-control-overview"></a>Oversikt over budsjettkontroll
 
@@ -42,7 +42,7 @@ Utgifter kan registreres ved hjelp av hovedkontoer og finansdimensjoner. Du kan 
 
 Diagrammet nedenfor viser budsjettkontrollenes plassering i fasene i en vanlig budsjettsyklus.
 
-[![Budsjetteringssyklus](./media/budgetingcycle-300x198.png)](./media/budgetingcycle.png) 
+[![Vanlig budsjetteringsyklus](./media/budgetingcycle-300x198.png)](./media/budgetingcycle.png) 
 
 Du kan du konfigurere budsjettkontroll basert på flere faktorer:
 

@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c689df9b00ad2d4ce161c6fdb1193f48cacbfcbc
-ms.sourcegitcommit: 0099fb24f5f40ff442020b488ef4171836c35c48
+ms.openlocfilehash: 048b0e8e57211893cae538fae20e87186399dd38
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "2653517"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2813805"
 ---
 # <a name="demand-forecasting-setup"></a>Oppsett av behovsprognose
 
@@ -70,7 +70,8 @@ Hvis du vil generere prognosen, bruker Supply Chain Management en Machine Learni
 -   Azure-lagringskontonavn
 -   Azure-lagringskontonøkkel
 
-**Obs!** Azure-lagringskontonavnet og -nøkkel kreves bare hvis du bruker en egendefinert lagring-konto. Hvis du distribuerer den lokale versjonen, må du ha en konto for egendefinert lagring på Azure, slik at Machine Learning-tjenesten får tilgang til historiske data. 
+> [!NOTE]
+> Azure-lagringskontonavnet og -nøkkel kreves bare hvis du bruker en egendefinert lagring-konto. Hvis du distribuerer den lokale versjonen, må du ha en konto for egendefinert lagring på Azure, slik at Machine Learning-tjenesten får tilgang til historiske data. 
 
 Hvis du vil opprette behovsprediksjoner, kan du distribuere din egen tjeneste ved å bruke Machine Learning Studio eller behovsprognoseeksperimenter for Supply Chain Management. Instruksjoner for distribusjon av behovsprognoseeksperimenter som en webtjeneste er tilgjengelige i Supply Chain Management. På siden **Parametere for behovsprognose** klikker du **Azure Machine Learning** kategorien.
 
@@ -93,11 +94,11 @@ I kategorien **Tilordningsnøkler** kan du angi parameterne **Prognosealgoritmep
 <a name="additional-resources"></a>Tilleggsressurser
 --------
 
-[Innføring i behovsprognoser](introduction-demand-forecasting.md)
+[Oversikt over behovsprognose](introduction-demand-forecasting.md)
 
 [Generere en statistisk basislinjeprognose](generate-statistical-baseline-forecast.md)
 
-[Gjøre manuelle justeringer i basislinjeprognosen](manual-adjustments-baseline-forecast.md)
+[Foreta manuelle justeringer i basislinjeprognosen](manual-adjustments-baseline-forecast.md)
 
 
 

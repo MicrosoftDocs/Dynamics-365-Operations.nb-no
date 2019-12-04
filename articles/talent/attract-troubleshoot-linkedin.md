@@ -17,16 +17,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2019-06-04
 ms.dyn365.ops.version: Platform update 24
-ms.openlocfilehash: b031fd95d2e7fc8405ad96139779091e00bb4d46
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: 42065f3d6b7ae9e7ad99b26c7692e41f8c36934d
+ms.sourcegitcommit: 9cc6a011bfdd1b0fe505760b6bf429eb6c65862a
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2551478"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "2832983"
 ---
 # <a name="troubleshoot-integration-with-linkedin-and-microsoft-dynamics-365-talent---attract"></a>Feilsøke integrering med LinkedIn og Microsoft Dynamics 365 Talent – Attract
 
-[!include [banner](../includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Bruk følgende informasjon til å feilsøke problemer som kan oppstå når du prøver å postere jobber til LinkedIn fra Microsoft Dynamics 365 Talent: Attract.
 
@@ -42,18 +42,18 @@ Hvis du har problemer med å logge på LinkedIn fra Attract, kan du prøve disse
 
 Hvis jobben din ikke vises på LinkedIn etter 24 timer, kan du prøve disse trinnene:
 
-1. Kontroller at LinkedIn-selskaps-ID-en er tilordnet til LinkedIn-selskapssiden og er korrekt angitt i administrasjonssenteret for Attract. Hvis du vil ha mer informasjon om hvordan du endrer LinkedIn-innstillinger i administrasjonssenteret, kan du se [Konfigurere integrering med LinkedIn](attract-admin-linkedin.md). Hvis du vil ha mer informasjon om firma-ID-er for LinkedIn, kan du se [Knytte LinkedIn-firma-ID-en til LinkedIn-jobbtavlen - Vanlige spørsmål](https://www.linkedin.com/help/linkedin/answer/98972).
+1. Kontroller at LinkedIn-selskaps-ID-en er tilordnet til LinkedIn-selskapssiden og er korrekt angitt i administrasjonssenteret for Attract. Hvis du vil ha mer informasjon om hvordan du endrer LinkedIn-innstillinger i administrasjonssenteret, kan du se [Konfigurere integrering med LinkedIn for Microsoft Dynamics 365 Talent - Attract](attract-admin-linkedin.md). Hvis du vil ha mer informasjon om firma-ID-er for LinkedIn, kan du se [Knytte LinkedIn-firma-ID-en til LinkedIn-jobbtavlen - Vanlige spørsmål](https://www.linkedin.com/help/linkedin/answer/98972).
 2. Kontroller jobbdetaljene på LinkedIn for å se at adressen er fullstendig. Når du skal postere en jobb, trenger LinkedIn minst byen og landet eller området for jobben.
 3. Kontroller at jobben ikke dupliserer en annen jobb som er postert på LinkedIn. LinkedIn vil ikke legge ut jobber som er duplikater av LinkedIn premium jobbplasser eller begrensede oppføringer fra en annen kilde. Kontroller at noen andre i firmaet ikke allerede har postert jobben manuelt.
 
 ## <a name="see-also"></a>Se også
 
-[Vanlige spørsmål om LinkedIn](./attract-linkedin-faq.md)
+[Vanlige spørsmål om Attract-integrering med LinkedIn](./attract-linkedin-faq.md)
 
-[Postere jobber til LinkedIn fra Attract](./attract-post-jobs-to-linkedin.md)
+[Postere jobber til LinkedIn fra Microsoft Dynamics 365 Talent - Attract](./attract-post-jobs-to-linkedin.md)
 
-[Finne kandidater med LinkedIn Recruiter](./attract-linkedin-recruiter.md)
+[Finne kandidater med LinkedIn Recruiter i Microsoft Dynamics 365 Talent - Attract](./attract-linkedin-recruiter.md)
 
-[Opprette jobber](./creating-jobs-attract.md)
+[Opprette, godkjenne og postere jobber i Attract](./creating-jobs-attract.md)
 
-[Feilsøke integrering med LinkedIn](./attract-troubleshoot-linkedin.md)
+[Feilsøke integrering med LinkedIn og Microsoft Dynamics 365 Talent - Attract](./attract-troubleshoot-linkedin.md)

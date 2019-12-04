@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: tjvass
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6e5e795ca6f7831ecd3fa28be9782f0b287eea6e
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: eef77a5d81d12ec92eea86b1dd9902d9e3d80b33
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2190011"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812369"
 ---
 # <a name="workflow-system-overview"></a>Oversikt over arbeidsflytsystem
 
@@ -57,18 +57,18 @@ Det er flere fordeler ved å bruke arbeidsflytsystemet i en organisasjon:
 
 ## <a name="workflow-content"></a>Arbeidsflytinnhold
 
-+ [Arbeidsflytarkitektur](workflow-system-architecture.md)
++ [Arkitektur i arbeidsflytsystemet](workflow-system-architecture.md)
 + [Arbeidsflytelementer](workflow-elements.md)
-+ [Arbeidsflythandlinger](workflow-actions.md)
-+ [Opprette en arbeidsflyt](create-workflow.md)
++ [Handlinger i godkjenningsprosesser i en arbeidsflyt](workflow-actions.md)
++ [Oversikt over å opprette arbeidsflyter](create-workflow.md)
 + [Konfigurere egenskaper for arbeidsflyt](configure-workflow-properties.md)
-+ [Konfigurere en manuell oppgave i en arbeidsflyt](configure-manual-task-workflow.md)
-+ [Konfigurere en automatisert oppgave i en arbeidsflyt](configure-automated-task-workflow.md)
-+ [Konfigurere en godkjenningsprosess i en arbeidsflyt](configure-approval-process-workflow.md)
-+ [Konfigurere et godkjenningstrinn i en arbeidsflyt](configure-approval-step-workflow.md)
-+ [Konfigurere en manuell beslutning i en arbeidsflyt](configure-manual-decision-workflow.md)
-+ [Konfigurere en betinget beslutning i en arbeidsflyt](configure-conditional-decision-workflow.md)
-+ [Konfigurere en parallell aktivitet i en arbeidsflyt](configure-parallel-activity-workflow.md)
-+ [Konfigurere en parallell avdeling i en arbeidsflyt](configure-parallel-branch-workflow.md)
-+ [Konfigurere en arbeidsflyt for linjeelement](configure-line-item-workflow.md)
++ [Konfigurere manuelle oppgaver i en arbeidsflyt](configure-manual-task-workflow.md)
++ [Konfigurere automatiserte oppgaver i en arbeidsflyt](configure-automated-task-workflow.md)
++ [Konfigurere godkjenningsprosesser i en arbeidsflyt](configure-approval-process-workflow.md)
++ [Konfigurere godkjenningstrinn i en arbeidsflyt](configure-approval-step-workflow.md)
++ [Konfigurere manuelle beslutninger i en arbeidsflyt](configure-manual-decision-workflow.md)
++ [Konfigurere en betingede beslutninger i en arbeidsflyt](configure-conditional-decision-workflow.md)
++ [Konfigurere parallelle aktiviter i en arbeidsflyt](configure-parallel-activity-workflow.md)
++ [Konfigurere parallelle avdelinger i en arbeidsflyt](configure-parallel-branch-workflow.md)
++ [Konfigurere arbeidsflyter for linjeelement](configure-line-item-workflow.md)
 + [Vanlige spørsmål om arbeidsflyt](workflow-FAQ.md)

@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
-ms.openlocfilehash: 6da9447386e8e56e20507d985ebcdbfce934debd
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: be641e1b2f90f4d19f7ed15e47413c0aa43d5073
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2181617"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2771450"
 ---
 # <a name="automate-testing-with-electronic-reporting"></a>Automatisere testing med elektronisk rapportering
 
@@ -44,8 +44,8 @@ Hvis du vil ha mer informasjon om hvordan du oppretter en egendefinert versjon a
 Avanserte funksjonsbrukere kan redigere testing av brukergodkjenning og integrering uten å måtte skrive kildekode.
 
 - Bruk ER-grunnlinjefunksjonen til å sammenligne genererte dokumenter med hovedkopier. Hvis du vil ha mer informasjon, kan du se [Spore genererte rapportresultater og sammenligne dem med grunnlinjeverdier](er-trace-reports-compare-baseline.md).
-- Bruk oppgaveopptakeren til å ta opp testtilfeller, og ta med grunnlinjevurdering. Hvis du vil ha mer informasjon, kan du se [Oppgaveopptaker](../user-interface/task-recorder.md).
-- Grupper testtilfeller for testscenarier som kreves. Hvis du vil ha mer informasjon, kan du se [Opprette biblioteker for test av brukergodkjenning ved hjelp av oppgaveopptak og BPM](../lifecycle-services/using-task-guides-and-bpm-to-create-user-acceptance-tests.md).
+- Bruk oppgaveopptakeren til å ta opp testtilfeller, og ta med grunnlinjevurdering. Hvis du vil ha mer informasjon, kan du se [Ressurser for Oppgaveregistrering](../user-interface/task-recorder.md).
+- Grupper testtilfeller for testscenarier som kreves. Hvis du vil ha mer informasjon, kan du se [Opprette og automatisere brukergodkjenningstester](../lifecycle-services/using-task-guides-and-bpm-to-create-user-acceptance-tests.md).
 
     - Bruk Forretningsprosessmodelerer (BPM) i LCS til å opprette biblioteker for brukergodkjenningstester.
     - Bruk BPM-testbiblioteker til å opprette en testplan og testserier i Microsoft Azure DevOps Services (Azure DevOps).
@@ -59,7 +59,7 @@ Avanserte funksjonsbrukere kan kjøre brukergodkjennings- og integreringstester.
 
 Før du kan fullføre oppgavene i dette emnet, må du ha oppfylt følgende forutsetninger:
 
-- Distribuer en topologi som støtter testautomatisering. Du må ha tilgang til forekomsten i denne topologien for rollen **Systemansvarlig**. Denne topologien må inneholde demonstrasjonsdataene som blir brukt i dette eksemplet. Hvis du vil ha mer informasjon, kan du se [Distribuere topologier som støtter sammenhengende automatisering av bygging og testing](../perf-test/continuous-build-test-automation.md).
+- Distribuer en topologi som støtter testautomatisering. Du må ha tilgang til forekomsten i denne topologien for rollen **Systemansvarlig**. Denne topologien må inneholde demonstrasjonsdataene som blir brukt i dette eksemplet. Hvis du vil ha mer informasjon, kan du se [Distribuere og bruke et miljø som støtter sammenhengende automatisering av bygging og testing](../perf-test/continuous-build-test-automation.md).
 - Hvis du vil kjøre brukergodkjennings- og integreringstester automatisk, må du installere RSAT i topologien du bruker, og konfigurere den på riktig måte. Hvis du vil ha mer informasjon om hvordan du installerer og konfigurerer RSAT og konfigurerer det slik at det fungerer med Finance and Operations-apper og Azure DevOps, kan du se [Regression Suite Automation Tool](https://www.microsoft.com/download/details.aspx?id=57357). Vær oppmerksom på forutsetningene for å bruke verktøyet. Illustrasjonen nedenfor viser et eksempel på RSAT-innstillingene. Det blå rektanglet vises rundt parameterne som angir tilgang til Azure DevOps. Det grønne rektanglet vises rundt parameterne som angir tilgang til forekomsten.
 
     ![RSAT-innstillinger](media/GER-Configure.png "Skjermbilde av dialogboksen RSAT-innstillinger")
@@ -81,7 +81,7 @@ Før du kan fullføre oppgavene i dette emnet, må du ha oppfylt følgende forut
     - **Betalingsmodelltilordning 1611** – ER-modelltilordningskonfigurasjon
     - **BBS (Storbritannia)** – ER-formatkonfigurasjon
 
-    ![Elektroniske rapporteringskonfigurasjoner](media/GER-Configurations.png "Skjermbilde av Konfigurasjoner-siden i Elektronisk rapportering")
+    ![Konfigurasjoner for elektronisk rapportering](media/GER-Configurations.png "Skjermbilde av Konfigurasjoner-siden i Elektronisk rapportering")
 
 3. Velg demonstrasjonsdatafirmaet **GBSI**, som har en lands-/områdekontekst i Storbritannia.
 4. Konfigurer leverandørparametere:
@@ -180,7 +180,7 @@ Hvis du aktiverer parameteren **Kjør i feilsøkingsmodus**, tvinger du ER-ramme
     3. Bla gjennom for å velge den lokalt lagrede kontrollrapportfilen **ERVendOutPaymControlReport** i XLSX-format.
     4. I **Beskrivelse**-feltet angir du **XLSX-fil for betalingskontrollrapport**.
 
-    ![Grunnlinjer for leverandørbetalingsfilen og kontrollrapporten](media/GER-BaselineAttachments.png "Skjermbilde av Konfigurasjoner-siden med XLSX-fil for betalingskontrollrapport valgt")
+    ![Grunnlinjer for leverandørbetalingsfilen og kontrollrapporten](media/GER-BaselineAttachments.png "Skjermbilde av Konfigurasjoner-siden med XLSX-fil for betalingskontrollrapport valg")
 
 8. Lukk siden.
 9. I hurtigfanen **Grunnlinjer** velger du **Ny** for å konfigurere en grunnlinje for betalingsfilen:
@@ -199,7 +199,7 @@ Hvis du aktiverer parameteren **Kjør i feilsøkingsmodus**, tvinger du ER-ramme
     4. I feltet **Filnavnmaske** angir du **\*.XLSX** for å bruke denne grunnlinjen bare på utdata i formatkomponenten **ERVendOutPaymControlReport** som har filtypen **.xslx**.
     5. I **Grunnlinje**-feltet velger du **XLSX-fil for betalingskontrollrapport**, slik at denne grunnlinjen brukes til sammenligning med de genererte utdataene.
 
-    ![Hurtigfanen Grunnlinjer på Konfigurasjoner-siden](media/GER-BaselineRules.png "Skjermbilde av hurtigfanen Grunnlinjer på Konfigurasjoner-siden")
+    ![Skjermbilde av hurtigfanen Grunnlinjer på Konfigurasjoner-siden](media/GER-BaselineRules.png "Skjermbilde av hurtigfanen Grunnlinjer på Konfigurasjoner-siden")
 
 ## <a name="record-tests-to-validate-vendor-payment-processing"></a>Ta opp tester for å validere behandling av leverandørbetaling
 
@@ -229,15 +229,15 @@ Dette oppgaveopptaket utfører følgende handlinger:
 
 1. Sett statusen for den behandlede betalingslinjen til **Ingen**.
 
-    ![Oppgaveopptakstrinn 3 til og med 4](media/GER-Recording1Review1.png "Skjermbilde av oppgaveopptakstrinn 3 til og med 4")
+    ![Skjermbilde av oppgaveopptakstrinn 3 til og med 4](media/GER-Recording1Review1.png "Skjermbilde av oppgaveopptakstrinn 3 til og med 4")
 
 2. Aktiver ER-brukerparameteren **Kjør i feilsøkingsmodus**.
 
-    ![Oppgaveopptakstrinn 9 til og med 10](media/GER-Recording1Review2.png "Skjermbilde av oppgaveopptakstrinn 9 til og med 10")
+    ![Skjermbilde av oppgaveopptakstrinn 9 til og med 10](media/GER-Recording1Review2.png "Skjermbilde av oppgaveopptakstrinn 9 til og med 10")
 
 3. Rydd opp i feilsøkingsloggen for ER som inneholder resultatene av sammenligningen av genererte filer og grunnlinjer.
 
-    ![Oppgaveopptakstrinn 13 til og med 15](media/GER-Recording1Review3.png "Skjermbilde av oppgaveopptakstrinn 13 til og med 15")
+    ![Skjermbilde av oppgaveopptakstrinn 13 til og med 15](media/GER-Recording1Review3.png "Skjermbilde av oppgaveopptakstrinn 13 til og med 15")
 
 ### <a name="record-the-steps-to-test-vendor-payment-processing"></a>Ta opp trinnene for å teste behandling av leverandørbetaling
 
@@ -256,7 +256,7 @@ Dette oppgaveopptaket utfører følgende handlinger:
 1. Start behandling av leverandørbetaling.
 2. Velg de riktige kjøretidsparameterne, og aktiver generering av en kontrollrapport.
 
-    ![Oppgaveopptakstrinn 3 til og med 8](media/GER-Recording2Review1.png "Skjermbilde av oppgaveopptakstrinn 3 til og med 8")
+    ![Skjermbilde av oppgaveopptakstrinn 3 til og med 8](media/GER-Recording2Review1.png "Skjermbilde av oppgaveopptakstrinn 3 til og med 8")
 
 3. Åpne feilsøkingsloggen for ER for å ta opp resultatene av sammenligningen av genererte utdata og tilsvarende grunnlinjer.
 
@@ -270,7 +270,7 @@ Dette oppgaveopptaket utfører følgende handlinger:
 
     Illustrasjonen nedenfor viser hvordan valideringstrinnene som er tatt opp, ser ut i oppgaveopptaket.
 
-    ![Oppgaveopptakstrinn 13 og 15](media/GER-Recording2Review2.png "Skjermbilde av oppgaveopptakstrinn 13 og 15")
+    ![Skjermbilde av oppgaveopptakstrinn 13 og 15](media/GER-Recording2Review2.png "Skjermbilde av oppgaveopptakstrinn 13 og 15")
 
 ## <a name="add-the-recorded-tests-to-azure-devops"></a>Legge til testene som er tatt opp, i Azure DevOps
 
@@ -318,7 +318,7 @@ Dette oppgaveopptaket utfører følgende handlinger:
 6. I Excel-arbeidsboken som åpnes, endrer du firmakoden til **GBSI** i regnearket **Generelt**.
 7. I regnearket **ERFormatMappingRunLogTable** legger du merke til at cellene A:3 og C:3 inneholder teksten til feltene i feilsøkingsloggtabellen for ER som brukes til å validere resultatene av sammenligningen av utdataene og grunnlinjen. Disse tekstene brukes til å evaluere poster i feilsøkingsloggen for ER som opprettes under testutførelsen.
 
-    ![Regnearket ERFormatMappingRunLogTable](media/GER-RSAT-RSAT-ExcelParameters.png "Skjermbilde av regnearket ERFormatMappingRunLogTable")
+    ![Skjermbilde av regnearket ERFormatMappingRunLogTable](media/GER-RSAT-RSAT-ExcelParameters.png "Skjermbilde av regnearket ERFormatMappingRunLogTable")
 
 ## <a name="run-the-tests-and-analyze-the-results"></a>Kjøre testene og analysere resultatene
 
@@ -337,7 +337,7 @@ Resultatene av testutførelsen lagres i RSAT. Legg merke til at begge testene ha
 
 Legg merke til at resultatene av testutførelsen også sendes til Azure DevOps, slik at du kan analysere ytterligere.
 
-![Resultater av testutførelse i Azure DevOps](media/GER-RSAT-DevOps-Tests-Added.png "Skjermbilde av resultatene av testutførelse i Azure DevOps")
+![Skjermbilde av resultatene av testutførelse i Azure DevOps](media/GER-RSAT-DevOps-Tests-Added.png "Skjermbilde av resultatene av testutførelse i Azure DevOps")
 
 ### <a name="simulate-a-situation-where-tests-fail"></a>Simulere en situasjon der tester ikke består
 
@@ -374,10 +374,10 @@ Som du har sett, kan derfor virkemåten til alle ER-format evalueres automatisk 
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 
-- [Oppgaveregistrering](../user-interface/task-recorder.md)
+- [Ressurser for Oppgaveregistrering](../user-interface/task-recorder.md)
 - [Regression Suite Automation Tool](https://www.microsoft.com/download/details.aspx?id=57357)
-- [Opprette biblioteker for test av brukergodkjenning ved hjelp av oppgaveopptak og BPM](../lifecycle-services/using-task-guides-and-bpm-to-create-user-acceptance-tests.md)
-- [Distribuere topologier som støtter sammenhengende automatisering av bygging og testing](../perf-test/continuous-build-test-automation.md)
-- [Spore genererte rapportresultater og sammenligne dem med ER-grunnlinjeverdier](er-trace-reports-compare-baseline.md)
-- [Oppgradere ER-formatet ved å ta i bruk en ny, grunnleggende versjon av dette formatet](tasks/er-upgrade-format.md)
-- [Importere ER-konfigurasjon fra Lifecycle Services](tasks/er-import-configuration-lifecycle-services.md)
+- [Opprette og automatisere brukergodkjenningstester](../lifecycle-services/using-task-guides-and-bpm-to-create-user-acceptance-tests.md)
+- [Distribuere og bruke et miljø som støtter sammenhengende automatisering av bygging og testing](../perf-test/continuous-build-test-automation.md)
+- [Spore genererte rapportresultater og sammenligne dem med grunnlinjeverdier](er-trace-reports-compare-baseline.md)
+- [ER Oppgradere formatet ved å ta i bruk en ny, grunnleggende versjon av dette formatet](tasks/er-upgrade-format.md)
+- [ER Importere en konfigurasjon fra Lifecycle Services](tasks/er-import-configuration-lifecycle-services.md)

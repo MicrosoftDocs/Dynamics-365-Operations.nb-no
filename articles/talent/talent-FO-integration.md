@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-12-31
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 8b9fa6b8d5109f873c784d384d49f685f94da228
-ms.sourcegitcommit: dd991154231280aff9c9c5799e42799e2bfc02fb
+ms.openlocfilehash: 747922294eaf971795177beeb73839d453f6475a
+ms.sourcegitcommit: ae0efac749ab34d423fac44d00a597801c143fbb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "2622774"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "2830192"
 ---
 # <a name="dynamics-365-talent-to-dynamics-365-finance-integration-faq"></a>Vanlige spørsmål om integrering fra Dynamics 365 Talent til Dynamics 365 Finance
 
@@ -48,7 +48,7 @@ Malene er startpunktet. Du kan opprette din egen mal, men en mal er alltid nødv
 
 Finansdimensjoner er ikke i Common Data Service og er dermed ikke en del av standardmalen. Denne enheten er planlagt, men ingen tidslinje for frigivelse er for øyeblikket tilgjengelig.
 
-For data som ligger i Finance, men ikke finnes i Talent, koble sammen de to systemene ved å bruke **Konfigurer koblinger** i Talent. Hvis du vil ha mer informasjon om hvordan du konfigurerer koblinger mellom Talent og Finance, kan du se [Hva er nytt eller endret i Dynamics 365 Talent: Core HR (31. oktober 2018)](whats-new-talent-october-31.md).
+For data som ligger i Finance, men ikke finnes i Talent, koble sammen de to systemene ved å bruke **Konfigurer koblinger** i Talent. Hvis du vil ha mer informasjon om hvordan du konfigurerer koblinger mellom Talent og Finance, kan du se [Hva er nytt eller endret i Dynamics 365 Talent - Core HR (31. oktober 2018)](whats-new-talent-october-31.md).
 
 ![Tilordne finansdimensjoner](media/MapFinancialDimensions.png)
 
@@ -69,7 +69,7 @@ Ved hjelp av "Avansert spørring" kan du filtrere og endre kildedataene før de 
 ## <a name="can-i-specify-which-fields-to-send-to-finance-for-a-specific-entity"></a>Kan jeg angi hvilke felt som skal sendes til Finance for en bestemt enhet?
 
 Feltene kan legges til eller fjernes fra integrasjonsoppgaven. Ikke alle datafelt som finnes på Common Data Service-enheten, fylles ut fra Core HR.
-Tilleggsdata fylles via PowerApps.
+Tilleggsdata fylles via Power Apps.
 
 ![Legge til eller fjerne felt fra en integrasjonsoppgave](media/SpecifyFieldsIncludedInIntegration.png)
 
@@ -119,19 +119,19 @@ Spor tiden fra Dataintegrator-kjøringshistorikken, og se etter indeksen -1 i Fi
 
 1. Lagre oppgaveindeksen fra Dataintegrator (i dette eksemplet er det "9").
 
-![Lagre oppgaveindeksen fra Dataintegrator](media/CaptureTaskIndex.png)
+    ![Lagre oppgaveindeksen fra Dataintegrator](media/CaptureTaskIndex.png)
 
 2. Spor kjøretiden for prosjektet.
 
-![Spore kjøretiden for prosjektet](media/CaptureTimeOfExecution.png)
+    ![Spore kjøretiden for prosjektet](media/CaptureTimeOfExecution.png)
 
 3. Identifiser indeks -1 i Finance. I dette eksemplet samsvarer prosjektet med suffikset "8" og utførelsestiden for indeksen "0"-prosjektet med kjøretiden i trinn 2.
 
-![Identifisere indeks](media/IdentifyIndex.png)
+    ![Identifisere indeks](media/IdentifyIndex.png)
 
 ## <a name="after-integrating-talent-and-finance-i-dont-see-my-talent-data-in-finance-what-do-i-do"></a>Etter integrering av Talent og Finance vises ikke Talent-dataene mine i Finance. Hva gjør jeg?
 
-Integreringen til Finance er en totrinns prosess. Først bekrefter du at Talent-dataene er oppdaterte og tilgjengelige i Common Data Service. Dette er en nær sanntidssynkronisering og kan kontrolleres i PowerApps ved å se på dataene i dataenhetene.
+Integreringen til Finance er en totrinns prosess. Først bekrefter du at Talent-dataene er oppdaterte og tilgjengelige i Common Data Service. Dette er en nær sanntidssynkronisering og kan kontrolleres i Power Apps ved å se på dataene i dataenhetene.
 
 ![Data i Common Data Service](media/DataInCDS.png)
 
@@ -168,7 +168,7 @@ Oppdater dataenhetene i Finance ved å gå til **Databehandling \> Rammeverkpara
 
   - [Feiladministrasjon og feilsøking av dataintegrator](https://docs.microsoft.com/powerapps/administrator/data-integrator-error-management)
 
-  - [Svare på DSR-forespørsler om systemgenererte logger i PowerApps, Microsoft Flow og Common Data Service](https://docs.microsoft.com/powerapps/administrator/powerapps-gdpr-dsr-guide-systemlogs)
+  - [Svare på DSR-forespørsler om systemgenererte logger i Power Apps, Microsoft Power Automate og Common Data Service](https://docs.microsoft.com/powerapps/administrator/powerapps-gdpr-dsr-guide-systemlogs)
 
 - Databehandling:
 

@@ -3,7 +3,7 @@ title: Behandling av Faktisk vekt-produkt med lagerstyring
 description: Dette emnet beskriver hvordan du bruker arbeidsmaler og lokasjonsdirektiver for å bestemme hvordan og hvor arbeid utføres i lageret.
 author: perlynne
 manager: AnnBe
-ms.date: 08/19/2019
+ms.date: 11/01/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2019-1-31
 ms.dyn365.ops.version: 8.1.3
-ms.openlocfilehash: d5e9f8e4d154e5f56ee7ceae666cd935d6ceb460
-ms.sourcegitcommit: f93ead945afe5ae18706c66bce6e64a6b57aac50
+ms.openlocfilehash: 5800f95de0ec773f40c506662a031887810b8c92
+ms.sourcegitcommit: db222a1719d4756d9ccb73fc71e7eaf4521c23a7
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/19/2019
-ms.locfileid: "1887141"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2696645"
 ---
 # <a name="catch-weight-product-processing-with-warehouse-management"></a>Behandling av Faktisk vekt-produkt med lagerstyring
 
@@ -181,7 +181,7 @@ Funksjonen for faktisk vekt-koder støttes for øyeblikket bare som en del av f�
 - Ved behandling av en lagerstatus som er endret ved hjelp av lagerappen.
 - Når en lageroverføring gjøres ved å bruke lagerappen.
 - Ved behandling av justering inn og ut via lagerappen.
-- Når plukkarbeid behandles for salgs- og overføringsordrer. (Vær oppmerksom på at faktisk vekt-koder ikke kan registreres for produksjonskomponentplukking.)
+- Når plukkarbeid behandles for salgs-, overførings- og produksjonslinjer.
 - Når plukket antall reduseres fra lastlinjer, uavhengig av om containere brukes.
 - Når produkter pakkes i containere på en pakkestasjon.
 - Når containere åpnes på nytt.

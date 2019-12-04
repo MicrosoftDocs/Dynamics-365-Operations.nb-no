@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: kherr
 ms.search.validFrom: 2018-07-31
 ms.dyn365.ops.version: Talent July 2018 update
-ms.openlocfilehash: 6ed1e4afcaeee03474d4c0ce20ac7864fb11ce78
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: 5538aef6599eeffee6d9b075f1b9630d55cf982a
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2551778"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812724"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-talent---core-hr-july-2018"></a>Hva er nytt eller endret i Dynamics 365 Talent – Core HR (juli 2018)
 
@@ -31,11 +31,11 @@ ms.locfileid: "2551778"
 
 Dette emnet beskriver funksjoner som enten er nye eller endret i Microsoft Dynamics 365 Talent: Core HR.
 
-## <a name="powerapps-personalization"></a>PowerApps-tilpasning
+## <a name="power-apps-personalization"></a>Power Apps-tilpasning
 
-Talent støtter integrasjon med Microsoft PowerApps-tjenesten. PowerApps lar både utviklere og ikke-tekniske brukere lage egendefinerte forretningsprogrammer for mobilenheter, nettbrett og nettet uten å måtte skrive kode. Apper som du, organisasjonen din eller det videre økosystemet utvikler ved å bruke PowerApps, kan deretter bygges inn i Talent-klienten for å øke produktets funksjonalitet. Du kan for eksempel bygge en app som utfyller Talent med informasjon som hentes fra et annet system.
+Talent støtter integrasjon med Microsoft Power Apps-tjenesten. Power Apps lar både utviklere og ikke-tekniske brukere lage egendefinerte forretningsprogrammer for mobilenheter, nettbrett og nettet uten å måtte skrive kode. Apper som du, organisasjonen din eller det videre økosystemet utvikler ved å bruke Power Apps, kan deretter bygges inn i Talent-klienten for å øke produktets funksjonalitet. Du kan for eksempel bygge en app som utfyller Talent med informasjon som hentes fra et annet system.
 
-Hvis du vil ha mer informasjon, kan du se [Bygge inn PowerApps-apper](../fin-and-ops/get-started/embed-power-apps.md).
+Hvis du vil ha mer informasjon, kan du se [Bygge inn Power Apps-apper](../fin-and-ops/get-started/embed-power-apps.md).
 
 ## <a name="ceridian-payroll-integration"></a>Ceridian-lønnsintegrasjon
 
@@ -46,7 +46,7 @@ Integrasjon mellom Talent og Ceridian Dayforce er nå tilgjengelig i USA, Canada
 - Lønnsdata, for eksempel lønnssykluser, lønnsperioder og inntektskoder
 - Arbeiderdata
 
-Hvis du vil ha mer informasjon, se [Konfigurere lønnsintegrasjon](configure-payroll-integration.md).
+Hvis du vil ha mer informasjon, se [Konfigurere lønnsintegrering mellom Talent og Dayforce](configure-payroll-integration.md).
 
 ## <a name="worker-tax-regions-have-been-expanded-beyond-the-us"></a>Avgiftsområder for arbeider er utvidet utenfor USA
 

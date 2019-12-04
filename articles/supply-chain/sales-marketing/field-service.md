@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: 2a5c3e49f09bf4f1f90449db10d439f563ecc2c0
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: cf1c4cbc18728b6094f862792d20a893b2a8d6ea
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2249848"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2815278"
 ---
 # <a name="integration-with-microsoft-dynamics-365-field-service-overview"></a>Oversikt over integrering med Microsoft Dynamics 365 Field Service
 
@@ -41,9 +41,9 @@ Den første fasen av integreringen mellom Field Service og Supply Chain Manageme
 
 Den første fasen av integreringen mellom Field Service og Supply Chain Management gjør det mulig med synkronisering av følgende elementer:
 
-- [Produkter i Supply Chain Management til produkter i Field Service som inneholder produkttypeinformasjon](field-service-product.md)
-- [Arbeidsordrer i Field Service til salgsordrer i Supply Chain Management](field-service-work-order.md)
-- [Fakturaer i Field Service til fritekstfakturaer i Supply Chain Management](field-service-invoice.md)
+- [Synkronisere produkter i Supply Chain Management til produkter i Field Service](field-service-product.md)
+- [Synkronisere arbeidsordrer i Field Service til salgsordrer i Supply Chain Management](field-service-work-order.md)
+- [Synkronisere avtalefakturaer i Field Service til fritekstfakturaer i Supply Chain Management](field-service-invoice.md)
 
 Hvis du vil se et eksempel på hvordan du kan synkronisere en arbeidsordre mellom Field Service og Supply Chain Management, se den korte YouTube-videoen [Synkronisere en arbeidsordre med Microsoft Dynamics 365-integrering](https://www.youtube.com/watch?v=46ylO7raZAo).
 

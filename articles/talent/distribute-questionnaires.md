@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1e0369be278519f39fc304b34ef3a270438f0bb1
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: 242e9fd5fd4b22f3081367cf33ff18ff5e4174a5
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2026262"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2814749"
 ---
 # <a name="distribute-and-schedule-questionnaires"></a>Planlegge og distribuere spørreskjemaer
 
@@ -54,7 +54,8 @@ Hvis du vil tilordne en spørreskjemagruppe til et spørreskjema, klikker du **B
 ## <a name="planned-answer-sessions-in-a-questionnaire"></a>Planlagte svarøkter i et spørreskjema
 Planlagte svarøkter er spørreskjemaer du har utformet og valgt respondentene for. 
 
-> **Obs!** Før du kan definere planlagte svarøkter, må du utforme et spørreskjema. 
+> [!NOTE]
+>   Før du kan definere planlagte svarøkter, må du utforme et spørreskjema. 
 
 Du kan opprette en planlagt svarøkt for én ansatt på siden **Planlagt svarøkt**. Listen på siden viser alle planlagte spørreskjemaer. 
 
@@ -108,12 +109,14 @@ Hvis du bruker en planlagt svarøkt, må du varsle personen direkte, for eksempe
 
 Bruk siden **Spørreskjemaplaner** til å klargjøre og sende e-post til alle respondenter som er tilordnet spørreskjemaet. Skriv inn e-postteksten i kategorien **E-post for ansattselvbetjening**. Etter at tidsplanen er startet, klikk **Funksjoner** &gt; **Send e-post** for å generere og sende e-posten til respondentene. Respondentene kan deretter logge seg på webområdet og fylle ut spørreskjemaet. 
 
-> **Obs!** Før du kan bruke e-postfunksjonaliteten, må IT-administratoren angi e-postinnstillingene på siden **E-postparametere**.
+> [!NOTE]
+>   Før du kan bruke e-postfunksjonaliteten, må IT-administratoren angi e-postinnstillingene på siden **E-postparametere**.
 
 ## <a name="ending-a-scheduled-questionnaire"></a>Avslutte et planlagt spørreskjema
 Du kan avslutte et planlagt spørreskjema når alle respondentene har fullført sin svarøkt. Når et planlagt spørreskjema er avsluttet, kan du ikke kopiere innstillingene til en ny plan. 
 
-> **Obs!** Hvis én eller flere respondenter ikke har fylt ut spørreskjemaet, men du likevel vil avslutte planleggingen, må du først slette disse respondentene fra listen, på siden **Planlagt svarøkt**. Du kan deretter avslutte tidsplanen.
+> [!NOTE]
+>   Hvis én eller flere respondenter ikke har fylt ut spørreskjemaet, men du likevel vil avslutte planleggingen, må du først slette disse respondentene fra listen, på siden **Planlagt svarøkt**. Du kan deretter avslutte tidsplanen.
 
 ## <a name="completing-questionnaires"></a>Fylle ut spørreskjemaer
 Når du har utformet og distribuert et spørreskjema, kan spørreskjemaet fylles ut av valgte respondenter. Du kan fylle ut spørreskjemaene som er tilgjengelige for deg fra to steder:
@@ -128,7 +131,7 @@ Spørreskjemaer kan gjøres tilgjengelige for bestemte brukere eller brukergrupp
 
 [Utforme spørreskjemaer](design-questionnaires.md)
 
-[Bruke spørreskjemaer](questionnaires.md)
+[Spørreskjemaer](questionnaires.md)
 
 [Vise og evaluere resultatene i spørreskjemaer](evaluate-questionnaire-results.md)
 

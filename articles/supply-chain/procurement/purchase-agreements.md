@@ -18,16 +18,17 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1e022fbf182da9a07fe20e5bebdd99cbff3d9c90
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: d3f90e963341efe854270134988cfc51b5280bf4
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2248940"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2813368"
 ---
 # <a name="purchase-agreements"></a>Kjøpsavtaler
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 Denne artikkelen inneholder informasjon om kjøpsavtaler. En kjøpsavtale er en kontrakt som forplikter en organisasjon til å kjøpe et bestemt antall eller beløp ved hjelp av flere bestillinger over tid. I bytte mot denne forpliktelsen mottar kjøperen spesialpriser og -rabatter. 
 
@@ -80,6 +81,9 @@ Når du oppretter en bestilling, kan du bruke en kjøpsavtale på den. Informasj
 Du kan velge en kjøpsavtale bare når du oppretter en bestilling. Du kan ikke velge en kjøpsavtale etter at bestillingen er opprettet.  
 I enkelte tilfeller der bestillinger opprettes indirekte, kan du kontrollere om Supply Chain Management automatisk søker etter gjeldende kjøpsavtaler. Du kan for eksempel gjøre dette når du autoriserer planlagte bestillinger automatisk eller oppretter bestillinger som er basert på salgsordrer.
 
+## <a name="matching-policy-on-purchase-agreements"></a>Kontrollpolicy for kjøpsavtaler
+Du kan definere en linjekontrollpolicy i hodet i kjøpsavtalen. Denne linjekontrollpolicyen vil respektere kontrollpolicyen for leverandørparametere når feltet **Tillat overstyring av kontrollpolicy** på siden **Leverandørparametere** (i hurtigfanen **Pris- og antallssamsvar**) er satt til **Høyere enn firmapolicy**. Dokumenter som refererer til kjøpsavtalen, bruker linjekontrollpolicyen som er definert i kjøpsavtalehodet, hvis ikke annet er definert i den tilsvarende innkjøpspolicyen for vare, vare og leverandør eller kategori.
+
 ## <a name="purchase-agreements-and-intercompany-trade"></a>Kjøpsavtaler og konsernintern handel
 Du kan opprette konserninterne handelsforbindelser mellom leverandørkontoer og kundekontoer som er i forskjellige juridiske enheter. Når en salgsordre eller bestilling opprettes for den ene av partene, opprettes en konsernintern ordrekjede. I ordrekjeden opprettes salgsordren og bestillingen i de aktuelle juridiske enhetene.  
 
@@ -93,9 +97,9 @@ Du kan kopiere finansdimensjoner til dokumenthoder eller enkeltlinjer i en kjøp
 <a name="additional-resources"></a>Tilleggsressurser
 --------
 
-[Opprette en ny kjøpsavtale (oppgaveveiledning)](tasks/create-purchase-agreement.md)
+[Opprette en kjøpsavtale](tasks/create-purchase-agreement.md)
 
-[Opprette en frigivelsesordre for innkjøp fra en innkjøpsavtale (oppgaveveiledning)](tasks/create-purchase-release-order-purchase-agreement.md)
+[Opprette en frigivelsesordre for innkjøp fra en innkjøpsavtale](tasks/create-purchase-release-order-purchase-agreement.md)
 
 
 

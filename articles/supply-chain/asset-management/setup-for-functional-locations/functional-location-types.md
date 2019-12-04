@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 74ccda77a97d1e104940bb10a605d3ebbf45af75
-ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
+ms.openlocfilehash: 0468cb0b1717b7cf0ccb391da09a4e7d788124f3
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "2571260"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812220"
 ---
 # <a name="functional-location-types"></a>Arbeidsstedstyper
 
@@ -56,7 +56,7 @@ Nå opprettes standard arbeidsstedstype, som bare skal brukes på et standard ar
 3. Sett inn en type-ID for arbeidsstedet i feltet **Arbeidsstedstype** og et navn i **Navn**-feltet.
 4. Velg en livsløpsmodell i feltet **Livsløpsmodell for arbeidssted**. Se [Livsløpstilstander for arbeidssteder](../setup-for-functional-locations/functional-location-stages.md) for mer informasjon om livsløpstilstander for arbeidssteder og livsløpsmodeller.
 5. Velg Ja på knappen **Flere aktiva** hvis det skal være mulig å installere flere aktiva på et som bruker denne arbeidsstedstypen. Hvis du velger Nei, kan du bare installere *ett* aktivum på et arbeidssted ved hjelp av denne arbeidsstedstypen.
-6. Velg Ja på knappen **Oppdater aktivadimensjon** hvis du vil at aktiva installert på et arbeidssted av denne typen automatisk skal bruke finansdimensjonene som er knyttet til arbeidsstedet. Dette betyr at hvis du endrer finansdimensjoner i skjemaet [Arbeidssted](../functional-locations/create-functional-locations.md) og arbeidsstedet bruker en arbeidsstedstype med denne veksleknappen satt til "Ja", oppdateres finansdimensjoner automatisk på alle aktiva installert på dette arbeidsstedet.
+6. Velg Ja på knappen **Oppdater aktivadimensjon** hvis du vil at aktiva installert på et arbeidssted av denne typen automatisk skal bruke finansdimensjonene som er knyttet til arbeidsstedet. Dette betyr at hvis du endrer finansdimensjoner i skjemaet [Opprette arbeidssteder](../functional-locations/create-functional-locations.md) og arbeidsstedet bruker en arbeidsstedstype med denne veksleknappen satt til "Ja", oppdateres finansdimensjoner automatisk på alle aktiva installert på dette arbeidsstedet.
 7. Feltet **Aktivatype** brukes hvis du vil opprette *ett* aktivum automatisk for arbeidsstedet med samme ID og navn som arbeidsstedet du oppretter. Dette kan for eksempel være relevant hvis du oppretter et statisk arbeidssted, for eksempel en bygning eller en rørledning. I så fall velger du aktivatypen du vil bruke for det automatisk opprettede aktivumet. Husk at hvis du velger noe i dette feltet, må knappen for **Flere aktiva** være satt til Nei.
 8. I hurtigfanen **Aktivatyper** velger du aktivatypene som skal relateres til arbeidsstedstypen. Velg **Legg til linje**, og velg aktivatypene. Hvis du legger til aktivatyper her, kan bare aktiva som bruker disse aktivatypene, installeres på et arbeidssted med denne arbeidsstedstypen. Hvis ingen aktivatyper er valgt på hurtigfanen **Aktivatyper**, kan alle aktivatyper installeres.
 9. I hurtigfanen **Vedlikeholdsplaner** velger du vedlikeholdsplanene som automatisk skal defineres på nye arbeidssteder ved hjelp av denne arbeidsstedstypen. Velg **Legg til linje**, og velg vedlikeholdsplanene. Hvis du legger til vedlikeholdsplaner her, kan bare disse planene brukes på et arbeidssted ved hjelp av denne arbeidsstedstypen.

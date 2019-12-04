@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: conradv
 ms.dyn365.ops.version: 7.2999999999999998
 ms.search.validFrom: 2017-12-31
-ms.openlocfilehash: 83c523a23973f4fd146d8308fbb5ecb486224ad9
-ms.sourcegitcommit: e286572ce94a9442a5b3076c3ff5b429be0ed512
+ms.openlocfilehash: c3674442dfec11afc26881f3e5c442ba05a4821b
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "1865334"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2813552"
 ---
 # <a name="product-lifecycle-state-overview"></a>Oversikt over tilstand for produktlivssyklus
 
@@ -107,9 +107,9 @@ Bruk følgende kriterier for å velge og oppdatere de frigitte produktene og pro
 
 ## <a name="related-topics"></a>Relaterte emner
 
--  [Opprette en ny livssyklustilstand for produkt (oppgaveveiledning)](tasks/new-product-lifecycle-state.md)
--  [Opprette en standard livssyklustilstand for produkt (oppgaveveiledning)](tasks/default-product-lifecycle-state.md)
--  [Tilordne en tilstand for produktlivssyklus til en utgitt produktstandard (oppgaveveilednign)](tasks/product-lifecycle-state-released-product-master.md)
--  [Tilordne en produktlivssyklustilstand til et frigitt produkt (oppgaveveiledning)](tasks/product-lifecycle-state-released-product.md)
--  [Finne utdaterte produktvarianter og tilordne en produktlivssyklustilstand (oppgaveveiledning)](tasks/obsolete-product-variants.md)
--  [Opprette en produktlivssyklustilstand for å utelukke produkter fra hovedplanlegging (oppgaveveiledning)](tasks/exclude-products-master-planning.md)
+-  [Opprette en ny livssyklustilstand for produkt](tasks/new-product-lifecycle-state.md)
+-  [Opprette en standard livssyklustilstand for produkt](tasks/default-product-lifecycle-state.md)
+-  [Tilordne en tilstand for produktlivssyklus til en utgitt produktstandard](tasks/product-lifecycle-state-released-product-master.md)
+-  [Tilordne en tilstand for produktlivssyklus til et utgitt produkt](tasks/product-lifecycle-state-released-product.md)
+-  [Finne utdaterte produktvarianter og tilordne en produktlivssyklustilstand](tasks/obsolete-product-variants.md)
+-  [Opprette en produktlivssyklustilstand for å utelukke produkter fra hovedplanlegging](tasks/exclude-products-master-planning.md)

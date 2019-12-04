@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: 7d3a4602a3d8462666dfcb26b97a4f652891f7bc
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 141464f2ce7cb4ccfd2a8fb7a266e657e8f52015
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2249984"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2814127"
 ---
 # <a name="synchronize-contacts-directly-from-sales-to-contacts-or-customers-in-supply-chain-management"></a>Synkronisere kontakter direkte fra Sales til kontakter eller kunder i Supply Chain Management
 
@@ -135,7 +135,7 @@ Følgende illustrasjoner viser et eksempel på en tilordning av malen i Datainte
 
 [Synkronisere produkter direkte fra Supply Chain Management til produkter i Sales](products-template-mapping-direct.md)
 
-[Synkronisere salgsordrehoder og -linjer direkte fra Supply Chain Management til Sales](sales-order-template-mapping-direct-two-ways.md)
+[Synkronisering av salgsordrer direkte mellom Sales og Supply Chain Management](sales-order-template-mapping-direct-two-ways.md)
 
 [Synkronisere salgsfakturahoder og -linjer direkte fra Supply Chain Management til Sales](sales-invoice-template-mapping-direct.md)
 

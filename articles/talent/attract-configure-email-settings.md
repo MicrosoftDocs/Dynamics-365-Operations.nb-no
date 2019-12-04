@@ -1,5 +1,5 @@
 ---
-title: Konfigurere e-postinnstillinger i Microsoft Dynamics 365 Talent – Attract
+title: Konfigurere e-postinnstillinger i Attract
 description: Dette emnet beskriver hvordan konfigurerer innstillinger for e-post som sendes av Microsoft Dynamcis 365 Talent – Attract.
 author: andreabichsel
 manager: AnnBe
@@ -19,16 +19,16 @@ ms.search.industry: ''
 ms.author: anbichse
 ms.search.validFrom: 2019-06-04
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: a457deec757a5d5a3e01c6903b2dd7a9d975ef0b
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: c1ebfaeb2e9bc2836bb70e87afa93484c829b6cb
+ms.sourcegitcommit: 9cc6a011bfdd1b0fe505760b6bf429eb6c65862a
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2551547"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "2833121"
 ---
-# <a name="configure-email-settings-in-microsoft-dynamics-365-talent---attract"></a>Konfigurere e-postinnstillinger i Microsoft Dynamics 365 Talent – Attract
+# <a name="configure-email-settings-in-attract"></a>Konfigurere e-postinnstillinger i Attract
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Varemerket ditt vekker tillit og hjelper deg å utvikle et forhold til kandidater selv før de søker på stillinger. Positive oppfatninger av varemerket tiltrekker de største talentene og øker lojaliteten til eksisterende ansatte. Microsoft Dynamics 365 Talent: Attract lar deg konfigurere e-postmeldinger slik at de gjenspeiler firmaets varemerke. Derfor kan du gi jobbkandidater en konsekvent opplevelse etter hvert som de går gjennom søknadsprosessen.
 
