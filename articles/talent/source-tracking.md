@@ -1,5 +1,5 @@
 ---
-title: Spore kilder for kandidatprofiler og søknader
+title: Spore kandidatkilder i Attract
 description: Dette emnet inneholder informasjon om hvordan du sporer kilden for kandidatprofiler og søknader.
 author: hachandr
 manager: AnnBe
@@ -18,87 +18,87 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: 5b368e97a716cd1ce4f668c2a97326877a2d3dff
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: 8860f508eebc377042c4e101eeb08a14a737ba0c
+ms.sourcegitcommit: 9cc6a011bfdd1b0fe505760b6bf429eb6c65862a
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2551893"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "2832674"
 ---
-# <a name="track-sources-for-candidate-profiles-and-applications"></a><span data-ttu-id="4d890-103">Spore kilder for kandidatprofiler og søknader</span><span class="sxs-lookup"><span data-stu-id="4d890-103">Track sources for candidate profiles and applications</span></span>
+# <a name="track-candidate-sources-in-attract"></a><span data-ttu-id="47ca9-103">Spore kandidatkilder i Attract</span><span class="sxs-lookup"><span data-stu-id="47ca9-103">Track candidate sources in Attract</span></span>
 
-[!include[banner](../includes/banner.md)]
-
-> [!NOTE] 
-> <span data-ttu-id="4d890-104">Funksjonalitet som er nevnt i dette emnet, er tilgjengelig som en del av en forhåndsversjon.</span><span class="sxs-lookup"><span data-stu-id="4d890-104">Functionality noted in this topic is available as part of a preview review release.</span></span> <span data-ttu-id="4d890-105">Innholdet og funksjonaliteten kan bli endret.</span><span class="sxs-lookup"><span data-stu-id="4d890-105">The content and the functionality are subject to change.</span></span> <span data-ttu-id="4d890-106">Hvis du vil bruke denne funksjonen, kan du be administratoren om å aktivere den ved hjelp av **Administrasjonsinnstillinger** i Attract.</span><span class="sxs-lookup"><span data-stu-id="4d890-106">To use this feature, ask an administrator to enable it using the **Admin settings** in Attract.</span></span> <span data-ttu-id="4d890-107">En fremtidig versjon vil inneholde kilderapporteringssporing.</span><span class="sxs-lookup"><span data-stu-id="4d890-107">A future release will provide source tracking reports.</span></span> <span data-ttu-id="4d890-108">Hvis du vil ha mer informasjon, se [Tilgang til forhåndsvisningsfunksjoner i Talent](https://docs.microsoft.com/dynamics365/unified-operations/talent/access-preview-feature).</span><span class="sxs-lookup"><span data-stu-id="4d890-108">For more information, see [Access preview features in Talent](https://docs.microsoft.com/dynamics365/unified-operations/talent/access-preview-feature).</span></span>
-
-<span data-ttu-id="4d890-109">Når kandidater søker på en jobb, registrerer Attract automatisk kilden for søknadene og gir deg verdifull informasjon som hjelper deg å målrette rekrutteringsinnsatsen din.</span><span class="sxs-lookup"><span data-stu-id="4d890-109">When candidates apply for a job, Attract automatically tracks the source of their applications, providing you with valuable information to help you target your recruiting efforts.</span></span> <span data-ttu-id="4d890-110">Rekrutteringspersoner og -ledere kan også velge en søknadskilde når en kandidat legges til manuelt til en jobb- eller talentsamling.</span><span class="sxs-lookup"><span data-stu-id="4d890-110">Recruiters and hiring managers can also select an application source while manually adding a candidate to a job or talent pool.</span></span>
-
-<span data-ttu-id="4d890-111">Du kan vise søknadskilden i søknadsaktivitetdetaljene i **Aktivitet**-kategorien og i søknadsloggen som er tilgjengelig under **Profil** i talensamlinger.</span><span class="sxs-lookup"><span data-stu-id="4d890-111">You can view the application source in the application activity details under the **Activity** tab, as well as in the application history available under **Profile** in talent pools.</span></span> <span data-ttu-id="4d890-112">Du kan finne en kandidats profilkilde i kandidatdetaljene i **Profil**-kategorien i både søknads- og talentsamlinger.</span><span class="sxs-lookup"><span data-stu-id="4d890-112">You can find a candidate's profile source in the candidate details under the **Profile** tab in both applications and talent pools.</span></span>
+[!include [banner](includes/banner.md)]
 
 > [!NOTE] 
-> <span data-ttu-id="4d890-113">Du finner prosessmaler i [tillegget for omfattende ansettelse](https://docs.microsoft.com/dynamics365/unified-operations/talent/attract-comprehensive-hiring).</span><span class="sxs-lookup"><span data-stu-id="4d890-113">You can find process templates in the [Comprehensive hiring add-on](https://docs.microsoft.com/dynamics365/unified-operations/talent/attract-comprehensive-hiring).</span></span>
+> <span data-ttu-id="47ca9-104">Funksjonalitet som er nevnt i dette emnet, er tilgjengelig som en del av en forhåndsversjon.</span><span class="sxs-lookup"><span data-stu-id="47ca9-104">Functionality noted in this topic is available as part of a preview review release.</span></span> <span data-ttu-id="47ca9-105">Innholdet og funksjonaliteten kan bli endret.</span><span class="sxs-lookup"><span data-stu-id="47ca9-105">The content and the functionality are subject to change.</span></span> <span data-ttu-id="47ca9-106">Hvis du vil bruke denne funksjonen, kan du be administratoren om å aktivere den ved hjelp av **Administrasjonsinnstillinger** i Attract.</span><span class="sxs-lookup"><span data-stu-id="47ca9-106">To use this feature, ask an administrator to enable it using the **Admin settings** in Attract.</span></span> <span data-ttu-id="47ca9-107">En fremtidig versjon vil inneholde kilderapporteringssporing.</span><span class="sxs-lookup"><span data-stu-id="47ca9-107">A future release will provide source tracking reports.</span></span> <span data-ttu-id="47ca9-108">Hvis du vil ha mer informasjon, se [Tilgang til forhåndsvisningsfunksjoner i Talent](https://docs.microsoft.com/dynamics365/unified-operations/talent/access-preview-feature).</span><span class="sxs-lookup"><span data-stu-id="47ca9-108">For more information, see [Access preview features in Talent](https://docs.microsoft.com/dynamics365/unified-operations/talent/access-preview-feature).</span></span>
 
-## <a name="pre-configured-sources"></a><span data-ttu-id="4d890-114">Forhåndskonfigurerte kilder</span><span class="sxs-lookup"><span data-stu-id="4d890-114">Pre-configured sources</span></span>
+<span data-ttu-id="47ca9-109">Når kandidater søker på en jobb, registrerer Attract automatisk kilden for søknadene og gir deg verdifull informasjon som hjelper deg å målrette rekrutteringsinnsatsen din.</span><span class="sxs-lookup"><span data-stu-id="47ca9-109">When candidates apply for a job, Attract automatically tracks the source of their applications, providing you with valuable information to help you target your recruiting efforts.</span></span> <span data-ttu-id="47ca9-110">Rekrutteringspersoner og -ledere kan også velge en søknadskilde når en kandidat legges til manuelt til en jobb- eller talentsamling.</span><span class="sxs-lookup"><span data-stu-id="47ca9-110">Recruiters and hiring managers can also select an application source while manually adding a candidate to a job or talent pool.</span></span>
 
-<span data-ttu-id="4d890-115">Standardkildelisten inneholder vanlige søknadskilder.</span><span class="sxs-lookup"><span data-stu-id="4d890-115">The default source list contains common application sources.</span></span> <span data-ttu-id="4d890-116">Noen kildetyper, som **Jobbtavle** og **Sosiale nettverk**, har flere kildedetaljer.</span><span class="sxs-lookup"><span data-stu-id="4d890-116">Some source types, like **Job board** and **Social Network**, have additional source details.</span></span> <span data-ttu-id="4d890-117">**Sosiale nettverk** inkluderer eksempelvis Facebook og Twitter.</span><span class="sxs-lookup"><span data-stu-id="4d890-117">For example, **Social Network** includes Facebook and Twitter.</span></span> <span data-ttu-id="4d890-118">Med kildetypen **Henvisning** kan du angi en intern ansatt som referanseperson.</span><span class="sxs-lookup"><span data-stu-id="4d890-118">The **Referral** source type allows you to specify an internal employee as the referrer.</span></span> <span data-ttu-id="4d890-119">Standard kildeliste inneholder følgende forhåndskonfigurerte kilder:</span><span class="sxs-lookup"><span data-stu-id="4d890-119">The default source list includes the following pre-configured sources:</span></span>
+<span data-ttu-id="47ca9-111">Du kan vise søknadskilden i søknadsaktivitetdetaljene i **Aktivitet**-kategorien og i søknadsloggen som er tilgjengelig under **Profil** i talensamlinger.</span><span class="sxs-lookup"><span data-stu-id="47ca9-111">You can view the application source in the application activity details under the **Activity** tab, as well as in the application history available under **Profile** in talent pools.</span></span> <span data-ttu-id="47ca9-112">Du kan finne en kandidats profilkilde i kandidatdetaljene i **Profil**-kategorien i både søknads- og talentsamlinger.</span><span class="sxs-lookup"><span data-stu-id="47ca9-112">You can find a candidate's profile source in the candidate details under the **Profile** tab in both applications and talent pools.</span></span>
 
--   <span data-ttu-id="4d890-120">Attract-karriereområde</span><span class="sxs-lookup"><span data-stu-id="4d890-120">Attract career site</span></span>
+> [!NOTE] 
+> <span data-ttu-id="47ca9-113">Du finner prosessmaler i [tillegget for omfattende ansettelse](https://docs.microsoft.com/dynamics365/unified-operations/talent/attract-comprehensive-hiring).</span><span class="sxs-lookup"><span data-stu-id="47ca9-113">You can find process templates in the [Comprehensive hiring add-on](https://docs.microsoft.com/dynamics365/unified-operations/talent/attract-comprehensive-hiring).</span></span>
 
--   <span data-ttu-id="4d890-121">Byrå</span><span class="sxs-lookup"><span data-stu-id="4d890-121">Agency</span></span>
+## <a name="pre-configured-sources"></a><span data-ttu-id="47ca9-114">Forhåndskonfigurerte kilder</span><span class="sxs-lookup"><span data-stu-id="47ca9-114">Pre-configured sources</span></span>
 
--   <span data-ttu-id="4d890-122">Rekrutteringsmesse</span><span class="sxs-lookup"><span data-stu-id="4d890-122">Career Fair</span></span>
+<span data-ttu-id="47ca9-115">Standardkildelisten inneholder vanlige søknadskilder.</span><span class="sxs-lookup"><span data-stu-id="47ca9-115">The default source list contains common application sources.</span></span> <span data-ttu-id="47ca9-116">Noen kildetyper, som **Jobbtavle** og **Sosiale nettverk**, har flere kildedetaljer.</span><span class="sxs-lookup"><span data-stu-id="47ca9-116">Some source types, like **Job board** and **Social Network**, have additional source details.</span></span> <span data-ttu-id="47ca9-117">**Sosiale nettverk** inkluderer eksempelvis Facebook og Twitter.</span><span class="sxs-lookup"><span data-stu-id="47ca9-117">For example, **Social Network** includes Facebook and Twitter.</span></span> <span data-ttu-id="47ca9-118">Med kildetypen **Henvisning** kan du angi en intern ansatt som referanseperson.</span><span class="sxs-lookup"><span data-stu-id="47ca9-118">The **Referral** source type allows you to specify an internal employee as the referrer.</span></span> <span data-ttu-id="47ca9-119">Standard kildeliste inneholder følgende forhåndskonfigurerte kilder:</span><span class="sxs-lookup"><span data-stu-id="47ca9-119">The default source list includes the following pre-configured sources:</span></span>
 
--   <span data-ttu-id="4d890-123">Firmamarkedsføring</span><span class="sxs-lookup"><span data-stu-id="4d890-123">Company Marketing</span></span>
+-   <span data-ttu-id="47ca9-120">Attract-karriereområde</span><span class="sxs-lookup"><span data-stu-id="47ca9-120">Attract career site</span></span>
 
--   <span data-ttu-id="4d890-124">Konferanser og varemesser</span><span class="sxs-lookup"><span data-stu-id="4d890-124">Conferences & Trade shows</span></span>
+-   <span data-ttu-id="47ca9-121">Byrå</span><span class="sxs-lookup"><span data-stu-id="47ca9-121">Agency</span></span>
 
--   <span data-ttu-id="4d890-125">Profesjonelle foreninger</span><span class="sxs-lookup"><span data-stu-id="4d890-125">Professional Association</span></span>
+-   <span data-ttu-id="47ca9-122">Rekrutteringsmesse</span><span class="sxs-lookup"><span data-stu-id="47ca9-122">Career Fair</span></span>
 
--   <span data-ttu-id="4d890-126">Jobbtavle</span><span class="sxs-lookup"><span data-stu-id="4d890-126">Job board</span></span>
+-   <span data-ttu-id="47ca9-123">Firmamarkedsføring</span><span class="sxs-lookup"><span data-stu-id="47ca9-123">Company Marketing</span></span>
 
-    -   <span data-ttu-id="4d890-127">Indeed</span><span class="sxs-lookup"><span data-stu-id="4d890-127">Indeed</span></span>
+-   <span data-ttu-id="47ca9-124">Konferanser og varemesser</span><span class="sxs-lookup"><span data-stu-id="47ca9-124">Conferences & Trade shows</span></span>
 
-    -   <span data-ttu-id="4d890-128">Seek</span><span class="sxs-lookup"><span data-stu-id="4d890-128">Seek</span></span>
+-   <span data-ttu-id="47ca9-125">Profesjonelle foreninger</span><span class="sxs-lookup"><span data-stu-id="47ca9-125">Professional Association</span></span>
 
-    -   <span data-ttu-id="4d890-129">CareerBuilder</span><span class="sxs-lookup"><span data-stu-id="4d890-129">CareerBuilder</span></span>
+-   <span data-ttu-id="47ca9-126">Jobbtavle</span><span class="sxs-lookup"><span data-stu-id="47ca9-126">Job board</span></span>
 
-    -   <span data-ttu-id="4d890-130">Google Jobs</span><span class="sxs-lookup"><span data-stu-id="4d890-130">Google Jobs</span></span>
+    -   <span data-ttu-id="47ca9-127">Indeed</span><span class="sxs-lookup"><span data-stu-id="47ca9-127">Indeed</span></span>
 
-    -   <span data-ttu-id="4d890-131">Xing</span><span class="sxs-lookup"><span data-stu-id="4d890-131">Xing</span></span>
+    -   <span data-ttu-id="47ca9-128">Seek</span><span class="sxs-lookup"><span data-stu-id="47ca9-128">Seek</span></span>
 
-    -   <span data-ttu-id="4d890-132">Glassdoor</span><span class="sxs-lookup"><span data-stu-id="4d890-132">Glassdoor</span></span>
+    -   <span data-ttu-id="47ca9-129">CareerBuilder</span><span class="sxs-lookup"><span data-stu-id="47ca9-129">CareerBuilder</span></span>
 
-    -   <span data-ttu-id="4d890-133">Monster Jobs</span><span class="sxs-lookup"><span data-stu-id="4d890-133">Monster Jobs</span></span>
+    -   <span data-ttu-id="47ca9-130">Google Jobs</span><span class="sxs-lookup"><span data-stu-id="47ca9-130">Google Jobs</span></span>
 
--   <span data-ttu-id="4d890-134">Tidsskrifter og publikasjoner</span><span class="sxs-lookup"><span data-stu-id="4d890-134">Magazines & Publications</span></span>
+    -   <span data-ttu-id="47ca9-131">Xing</span><span class="sxs-lookup"><span data-stu-id="47ca9-131">Xing</span></span>
 
--   <span data-ttu-id="4d890-135">Sosiale nettverk</span><span class="sxs-lookup"><span data-stu-id="4d890-135">Social Network</span></span>
+    -   <span data-ttu-id="47ca9-132">Glassdoor</span><span class="sxs-lookup"><span data-stu-id="47ca9-132">Glassdoor</span></span>
 
-    -   <span data-ttu-id="4d890-136">Facebook</span><span class="sxs-lookup"><span data-stu-id="4d890-136">Facebook</span></span>
+    -   <span data-ttu-id="47ca9-133">Monster Jobs</span><span class="sxs-lookup"><span data-stu-id="47ca9-133">Monster Jobs</span></span>
 
-    -   <span data-ttu-id="4d890-137">Twitter</span><span class="sxs-lookup"><span data-stu-id="4d890-137">Twitter</span></span>
+-   <span data-ttu-id="47ca9-134">Tidsskrifter og publikasjoner</span><span class="sxs-lookup"><span data-stu-id="47ca9-134">Magazines & Publications</span></span>
 
--   <span data-ttu-id="4d890-138">Universitetsrekruttering</span><span class="sxs-lookup"><span data-stu-id="4d890-138">University Recruiting</span></span>
+-   <span data-ttu-id="47ca9-135">Sosiale nettverk</span><span class="sxs-lookup"><span data-stu-id="47ca9-135">Social Network</span></span>
 
--   <span data-ttu-id="4d890-139">LinkedIn</span><span class="sxs-lookup"><span data-stu-id="4d890-139">LinkedIn</span></span>
+    -   <span data-ttu-id="47ca9-136">Facebook</span><span class="sxs-lookup"><span data-stu-id="47ca9-136">Facebook</span></span>
 
--   <span data-ttu-id="4d890-140">Klassifisert</span><span class="sxs-lookup"><span data-stu-id="4d890-140">Classifieds</span></span>
+    -   <span data-ttu-id="47ca9-137">Twitter</span><span class="sxs-lookup"><span data-stu-id="47ca9-137">Twitter</span></span>
 
--   <span data-ttu-id="4d890-141">Henvisning</span><span class="sxs-lookup"><span data-stu-id="4d890-141">Referral</span></span>
+-   <span data-ttu-id="47ca9-138">Universitetsrekruttering</span><span class="sxs-lookup"><span data-stu-id="47ca9-138">University Recruiting</span></span>
 
--   <span data-ttu-id="4d890-142">Lagt til av rekrutterer</span><span class="sxs-lookup"><span data-stu-id="4d890-142">Added by Recruiter</span></span>
+-   <span data-ttu-id="47ca9-139">LinkedIn</span><span class="sxs-lookup"><span data-stu-id="47ca9-139">LinkedIn</span></span>
 
--   <span data-ttu-id="4d890-143">Annet</span><span class="sxs-lookup"><span data-stu-id="4d890-143">Other</span></span>
+-   <span data-ttu-id="47ca9-140">Klassifisert</span><span class="sxs-lookup"><span data-stu-id="47ca9-140">Classifieds</span></span>
 
-## <a name="customize-the-source-list"></a><span data-ttu-id="4d890-144">Tilpasse kildelisten</span><span class="sxs-lookup"><span data-stu-id="4d890-144">Customize the source list</span></span> 
+-   <span data-ttu-id="47ca9-141">Henvisning</span><span class="sxs-lookup"><span data-stu-id="47ca9-141">Referral</span></span>
 
-<span data-ttu-id="4d890-145">Du kan utvide kildelisten for å inkludere ekstra søknadskilder.</span><span class="sxs-lookup"><span data-stu-id="4d890-145">You can extend the source list to include additional application sources.</span></span> <span data-ttu-id="4d890-146">For å tilpasse denne listen følger du instruksjonene i [Utvide alternativsett i Attract](https://docs.microsoft.com/dynamics365/unified-operations/talent/extensibility-attract#extending-option-sets-in-attract).</span><span class="sxs-lookup"><span data-stu-id="4d890-146">To customize this list, follow the instructions in [Extending Option Sets in Attract](https://docs.microsoft.com/dynamics365/unified-operations/talent/extensibility-attract#extending-option-sets-in-attract).</span></span> <span data-ttu-id="4d890-147">Rediger **TalentSource**-enhet slik at den inkluderer flere kilder.</span><span class="sxs-lookup"><span data-stu-id="4d890-147">Edit the **TalentSource** entity to include additional sources.</span></span> 
+-   <span data-ttu-id="47ca9-142">Lagt til av rekrutterer</span><span class="sxs-lookup"><span data-stu-id="47ca9-142">Added by Recruiter</span></span>
 
-<span data-ttu-id="4d890-148">For å unngå negativ påvirkning på brukergrensesnittet må du ikke redigere eller slette **TalentCategory**-opplistingsverdiene (ikke navn) for følgende:</span><span class="sxs-lookup"><span data-stu-id="4d890-148">To avoid negatively impacting the user interface (UI), don't edit or delete the **TalentCategory** enum values (not names) for the following:</span></span>
+-   <span data-ttu-id="47ca9-143">Annet</span><span class="sxs-lookup"><span data-stu-id="47ca9-143">Other</span></span>
 
-- <span data-ttu-id="4d890-149">**Henvisning**</span><span class="sxs-lookup"><span data-stu-id="4d890-149">**Referral**</span></span>
-- <span data-ttu-id="4d890-150">**LinkedIn**</span><span class="sxs-lookup"><span data-stu-id="4d890-150">**LinkedIn**</span></span>
-- <span data-ttu-id="4d890-151">**Annet**</span><span class="sxs-lookup"><span data-stu-id="4d890-151">**Other**</span></span>
+## <a name="customize-the-source-list"></a><span data-ttu-id="47ca9-144">Tilpasse kildelisten</span><span class="sxs-lookup"><span data-stu-id="47ca9-144">Customize the source list</span></span> 
 
-<span data-ttu-id="4d890-152">I stedet kan du utvide **TalentSource**-opplistingen for å legge til andre kildetyper.</span><span class="sxs-lookup"><span data-stu-id="4d890-152">Instead, you can extend the **TalentSource** enum to add other types of sources.</span></span>
+<span data-ttu-id="47ca9-145">Du kan utvide kildelisten for å inkludere ekstra søknadskilder.</span><span class="sxs-lookup"><span data-stu-id="47ca9-145">You can extend the source list to include additional application sources.</span></span> <span data-ttu-id="47ca9-146">For å tilpasse denne listen følger du instruksjonene i [Utvide alternativsett i Attract](https://docs.microsoft.com/dynamics365/unified-operations/talent/extensibility-attract#extending-option-sets-in-attract).</span><span class="sxs-lookup"><span data-stu-id="47ca9-146">To customize this list, follow the instructions in [Extending Option Sets in Attract](https://docs.microsoft.com/dynamics365/unified-operations/talent/extensibility-attract#extending-option-sets-in-attract).</span></span> <span data-ttu-id="47ca9-147">Rediger **TalentSource**-enhet slik at den inkluderer flere kilder.</span><span class="sxs-lookup"><span data-stu-id="47ca9-147">Edit the **TalentSource** entity to include additional sources.</span></span> 
+
+<span data-ttu-id="47ca9-148">For å unngå negativ påvirkning på brukergrensesnittet må du ikke redigere eller slette **TalentCategory**-opplistingsverdiene (ikke navn) for følgende:</span><span class="sxs-lookup"><span data-stu-id="47ca9-148">To avoid negatively impacting the user interface (UI), don't edit or delete the **TalentCategory** enum values (not names) for the following:</span></span>
+
+- <span data-ttu-id="47ca9-149">**Henvisning**</span><span class="sxs-lookup"><span data-stu-id="47ca9-149">**Referral**</span></span>
+- <span data-ttu-id="47ca9-150">**LinkedIn**</span><span class="sxs-lookup"><span data-stu-id="47ca9-150">**LinkedIn**</span></span>
+- <span data-ttu-id="47ca9-151">**Annet**</span><span class="sxs-lookup"><span data-stu-id="47ca9-151">**Other**</span></span>
+
+<span data-ttu-id="47ca9-152">I stedet kan du utvide **TalentSource**-opplistingen for å legge til andre kildetyper.</span><span class="sxs-lookup"><span data-stu-id="47ca9-152">Instead, you can extend the **TalentSource** enum to add other types of sources.</span></span>
