@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
-ms.openlocfilehash: b5c54d921e2955bc866ffd1ca516169790d33127
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: c8655af567ef56c535ce0e43cb76c28c58dc1eb3
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2024243"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2814611"
 ---
 # <a name="questionnaires"></a>Spørreskjemaer
 
@@ -44,7 +44,7 @@ Tabellen nedenfor inneholder koblinger til informasjon om viktige spørreskjemao
 | Emne| beskrivelse|
 |------|------------|
 | [Utforme et spørreskjema](design-questionnaires.md)  | Denne artikkelen inneholder informasjon om hvordan du utformer et spørreskjema. Utformingen består av å definere forutsetninger, svar og spørsmål og deretter kombinere dem til et spørreskjema. |
-| [Distribuere og fylle ut et spørreskjema](distribute-questionnaires.md)  | Denne artikkelen inneholder informasjon om hvordan du distribuerer et spørreskjema til respondenter, og hvordan du fyller ut spørreskjemaer.                                                                       |
+| [Distribuere og planlegge spørreskjemaer](distribute-questionnaires.md)  | Denne artikkelen inneholder informasjon om hvordan du distribuerer et spørreskjema til respondenter, og hvordan du fyller ut spørreskjemaer.                                                                       |
 | [Vise og evaluere resultatene i et spørreskjema](evaluate-questionnaire-results.md) | Denne artikkelen inneholder informasjon om hvordan du viser og evaluerer resultatene fra utfylte spørreskjemaer.                                                                                        |
 
 
@@ -54,7 +54,7 @@ Tabellen nedenfor inneholder koblinger til informasjon om viktige spørreskjemao
 
 [Utforme spørreskjemaer](design-questionnaires.md)
 
-[Distribuere og fylle ut spørreskjemaer](distribute-questionnaires.md)
+[Distribuere og planlegge spørreskjemaer](distribute-questionnaires.md)
 
 [Vise og evaluere resultatene i spørreskjemaer](evaluate-questionnaire-results.md)
 

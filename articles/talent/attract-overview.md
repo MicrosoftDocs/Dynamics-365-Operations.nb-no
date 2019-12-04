@@ -1,5 +1,5 @@
 ---
-title: Microsoft Dynamics 365 Talent – Funksjoner og egenskaper for Attract
+title: Funksjoner og egenskaper for Attract
 description: Dette emnet beskriver funksjonene i Microsoft Dynamics 365 Talent – Attract for å administrere prosessen med å ansette nye talenter.
 author: andreabichsel
 manager: AnnBe
@@ -17,14 +17,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9c8860602bd293c158aa33ea22b5f73de15a6b6f
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: 4186dddc471de676cc6d26050f16711f581da7ca
+ms.sourcegitcommit: 9cc6a011bfdd1b0fe505760b6bf429eb6c65862a
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2552077"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "2833075"
 ---
-# <a name="microsoft-dynamics-365-talent---attract-features-and-capabilities"></a>Microsoft Dynamics 365 Talent – Funksjoner og egenskaper for Attract
+# <a name="attract-features-and-capabilities"></a>Funksjoner og egenskaper for Attract
 
 [!include [banner](includes/banner.md)]
 
@@ -48,4 +48,4 @@ Attract gir en forhåndsdefinert ansettelsesprosess som har fire grunnleggende t
 Så snart de har blitt lagt til en jobb, mottar kandidater en e-post med en kobling for å laste ned webappen. Appen gir jobbinformasjon og brukes til å kommunisere med ansettelsesteamet. Kandidater kan også bruke den til å sende inn tilgjengelighet for intervjuer.
 
 ## <a name="analytic-reports"></a>Analyserapporter
-Ansettelsesteam kan vise viktige mål for ansettelsesprosess for en enkelt jobb eller aggregert på tvers av alle jobber med [analyserapporter i Attract](analytic-reports.md). Denne funksjonen er for øyeblikket i [forhåndsvisning](access-preview-feature.md) for kunder med [tillegget for omfattende ansettelse](attract-comprehensive-hiring.md).
+Ansettelsesteam kan vise viktige mål for ansettelsesprosess for en enkelt jobb eller aggregert på tvers av alle jobber med [analyserapporter i Attract](analytic-reports.md). Denne funksjonen er for øyeblikket i [forhåndsvisning](access-preview-feature.md) for kunder med [Hvilken versjon av Microsoft Dynamics 365 Talent - Attract](attract-comprehensive-hiring.md).

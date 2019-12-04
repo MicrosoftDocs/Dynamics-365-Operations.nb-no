@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: tjvass
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: dd88537506521fd37aa170c7e8f43bcf5a106836
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 1a357c4623f4f9dc441fe328ec0d5481c14ae4af
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2174357"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2771639"
 ---
 # <a name="add-analytics-to-workspaces-by-using-power-bi-embedded"></a>Legge til analyse i arbeidsområder ved hjelp av Power BI Embedded
 
@@ -102,7 +102,7 @@ Nå som du har lagt til skjemakontrollene som skal brukes til å bygge inn arbei
 > [!NOTE]
 > For innebygde arbeidsområder anbefaler vi at du bruker tilleggene for å skjule både **filtreringsruten** og **kategorisidene**, for konsekvens.
 
-Du har nå fullført oppgaven for å utvide programskjemadefinisjonen. Hvis du vil ha mer informasjon om hvordan du bruker tillegg til å gjøre tilpasninger, se [Tilpassing: Overlag og utvidelser](../extensibility/customization-overlayering-extensions.md).
+Du har nå fullført oppgaven for å utvide programskjemadefinisjonen. Hvis du vil ha mer informasjon om hvordan du bruker tillegg til å gjøre tilpasninger, se [Tilpasse via utvidelse og overlag](../extensibility/customization-overlayering-extensions.md).
 
 ## <a name="add-x-business-logic-to-embed-a-viewer-control"></a>Legge til X ++-forretningslogikk for å bygge inn en visningskontroll
 Gjør følgende for å legge til forretningslogikk som initialiserer rapportvisningskontrollen som er innebygd i arbeidsområdet **Reservasjonsbehandling**.

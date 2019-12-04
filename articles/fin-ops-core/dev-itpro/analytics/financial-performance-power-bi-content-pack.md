@@ -17,19 +17,19 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 35db2b51274afa6dae4cb5f75b4ba5390b167a49
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 3cbecf178d0588c51b831fbd55b536d3e4e41c27
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2181755"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2771125"
 ---
 # <a name="financial-performance-powerbicom-solution"></a>Finansresultat for PowerBI.com-løsning
 
 [!include [banner](../includes/banner.md)]
 
 > [!NOTE]
-> Denne PowerBI.com-løsningen er avskrevet slik det står i [Power BI-innholdspakker tilgjengelige på AppSource](../migration-upgrade/deprecated-features.md#power-bi-content-packs-available-on-appsource).
+> Denne PowerBI.com-løsningen er avskrevet som dokumentert i [Fjernede eller avskrevne funksjoner for Finance and Operations](../migration-upgrade/deprecated-features.md#power-bi-content-packs-available-on-appsource).
 
 Dette emnet beskriver PowerBI.com-løsningen for **finansresultat**. Det beskriver instrumentbordet og rapporter som er inkludert, og gir informasjon om datamodellen og enhetene som brukes til å bygge løsningen.
 

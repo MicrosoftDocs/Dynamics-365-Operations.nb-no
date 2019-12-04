@@ -17,12 +17,12 @@ ms.search.region: global
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1b220dfc90d4b850c774ff638c5b766f650dcef9
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: d4c912e8364a2503b98e511cbf22884528e467f0
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2190954"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811632"
 ---
 # <a name="new-task-guides-february-2016"></a>Nye oppgaveveiledninger (februar 2016)
 
@@ -32,9 +32,9 @@ Dette emnet viser oppgaveveiledningene som ble gitt til Microsoft BPM-biblioteke
 
 ## <a name="task-guides-in-the-february-2016-apqc-unified-library-for-microsoft-dynamics-ax"></a>Oppgaveveiledninger i (februar 2016) APQC Unified-biblioteket for Microsoft Dynamics AX
 
-(Februar 2016) APQC Unified Library inneholder oppgaveveiledningene som er ment å brukes for Hjelp for Dynamics AX 7.0.0-versjonen. Hvis du trenger lokaliserte versjoner av disse oppgaveveiledningene, er de tilgjengelige i (mai 2016) APQC Unified Library for Microsoft Dynamics AX. Hvis du vil ha mer informasjon om hvordan du kobler hjelpesystemet til et oppgaveveiledningsbibliotek, kan du se [Komme i gang med hjelp](help-overview.md).
+(Februar 2016) APQC Unified Library inneholder oppgaveveiledningene som er ment å brukes for Hjelp for Dynamics AX 7.0.0-versjonen. Hvis du trenger lokaliserte versjoner av disse oppgaveveiledningene, er de tilgjengelige i (mai 2016) APQC Unified Library for Microsoft Dynamics AX. Hvis du vil ha mer informasjon om hvordan du kobler hjelpesystemet til et oppgaveveiledningsbibliotek, kan du se [Hjelpesystem](help-overview.md).
 
-### <a name="accounts-payable"></a>Leverandørreskontro
+### <a name="accounts-payable"></a>Leverandør
 
 | BPM-linje                                                  | Land/område |
 |-----------------------------------------------------------|----------------|

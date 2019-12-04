@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1b1334dcba7d12f2da301f70e21a08fceb88e2b4
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: d5d878b0fe4e6b65aa2439d7ef7312eda1895823
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1559044"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2814933"
 ---
 # <a name="schedule-workload-capacity"></a>Planlegge kapasitet for arbeidsmengde
 
@@ -30,7 +30,7 @@ ms.locfileid: "1559044"
 
 Du kan planlegge arbeidsmengdekapasitet for lagre, og du kan også projisere gjeldende og fremtidig arbeidsmengde for arbeiderne på individuelle lagre. Du kan projisere arbeidsmengden for hele lageret, eller du kan projisere arbeidsmengden separat for innkommende og utgående arbeidsmengde.
 
-For å projisere levert arbeidsmengde for valgte lagre må det finnes hovedplanleggingsdata tilgjengelige for disse lagrene. Hvis du vil ha mer informasjon om hovedplaner, kan du se [Hovedplaner](../master-planning/master-plans.md).
+For å projisere levert arbeidsmengde for valgte lagre må det finnes hovedplanleggingsdata tilgjengelige for disse lagrene. Hvis du vil ha mer informasjon om hovedplaner, kan du se [Oversikt over hovedplaner](../master-planning/master-plans.md).
 
 ## <a name="schedule-and-view-workloads-for-a-warehouse"></a>Planlegg og vis arbeidsmengder for et lager
 

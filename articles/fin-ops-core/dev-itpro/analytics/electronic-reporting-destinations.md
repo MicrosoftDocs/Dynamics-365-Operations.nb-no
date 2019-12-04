@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mrolecki
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 5b52e1765d3afbe1730e96f58b601aebccd12787
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 7154a6e8aff62b1ebf79edfecb1e1b99048f7c44
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2181272"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2771475"
 ---
 # <a name="electronic-reporting-er-destinations"></a>Mål for elektronisk rapportering (ER)
 
@@ -122,7 +122,7 @@ Hvis du setter **Aktivert** til **Ja**, opprettes det en forhåndsvisning av utd
 
 ### <a name="power-bi-destination"></a>Power BI-mål
 
-Sett **Aktivert** til **Ja** for å bruke ER-konfigurasjonen for å ordne overføring av data fra din forekomst til Microsoft Power BI-tjenester. De overførte filene lagres på en Microsoft SharePoint-serverforekomst som må konfigureres for dette formålet. Hvis du vil ha mer informasjon, kan du se [Bruk en elektronisk rapporteringskonfigurasjon til å forsyne Power BI med data fra Finance](general-electronic-reporting-report-configuration-get-data-powerbi.md).
+Sett **Aktivert** til **Ja** for å bruke ER-konfigurasjonen for å ordne overføring av data fra din forekomst til Microsoft Power BI-tjenester. De overførte filene lagres på en Microsoft SharePoint-serverforekomst som må konfigureres for dette formålet. Hvis du vil ha mer informasjon, kan du se [Konfigurere elektronisk rapportering (ER) for å hente data til Power BI](general-electronic-reporting-report-configuration-get-data-powerbi.md).
 
 > [!TIP]
 > Hvis du vil overstyre standard virkemåte (det vil si i dialogboksen for konfigurasjon), kan du opprette en målreferanse og et filmål for den primære utdatakomponenten, og deretter deaktivere alle mål.
@@ -163,4 +163,4 @@ Forutsetningen er at formatet må være tilgjengelig i ER-konfigurasjoner. Hvis 
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 
-[Oversikt over elektronisk rapportering](general-electronic-reporting.md)
+[Oversikt over elektronisk rapportering (ER)](general-electronic-reporting.md)

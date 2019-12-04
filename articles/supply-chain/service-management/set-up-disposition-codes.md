@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: ShylaThompson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1e21854825019a73dc8d7bf5a3ee18d508123f72
-ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
+ms.openlocfilehash: a85f804344abec37d85e1ce15f064c8a0b901546
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "1743198"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2813115"
 ---
 # <a name="set-up-disposition-codes"></a>Definer disposisjonskoder 
 
@@ -32,7 +32,7 @@ ms.locfileid: "1743198"
 
 Du kan definere disposisjonskoder for å angi hvordan en vare som returneres av en kunde, skal behandles. Du kan for eksempel opprette en disposisjonskode med navnet **Reparer og returner** for å angi at den returnerte varen skal repareres og returneres til kunden. Du finner flere eksempler på disposisjonskoder som er vanlige å bruke for varer som returneres av kunder, under [Angi hvordan du kvitter deg med returnerte varer](specify-how-to-dispose-of-returned-items.md).
 
-Du kan også definere en årsakskode som forklarer hvorfor en vare ble returnert. Hvis du vil ha mer informasjon om årsakskoder, kan du se [Definere returårsakskoden](set-up-return-reason-code.md).
+Du kan også definere en årsakskode som forklarer hvorfor en vare ble returnert. Hvis du vil ha mer informasjon om årsakskoder, kan du se [Definere returårsakskoder](set-up-return-reason-code.md).
 
 1.  Klikk **Salg og markedsføring** \> **Oppsett** \> **Salgsordrer** \> **Returer** \> **Disposisjonskoder**.
 
@@ -46,7 +46,7 @@ Du kan også definere en årsakskode som forklarer hvorfor en vare ble returnert
 
 ## <a name="see-also"></a>Se også
 
-[Disposisjonskoder og returårsakskoder](disposition-and-return-reason-codes.md)
+[Oversikt over kundereturer](disposition-and-return-reason-codes.md)
 
 [Disposisjonskoder (skjema)](https://technet.microsoft.com/library/hh597113\(v=ax.60\))
 

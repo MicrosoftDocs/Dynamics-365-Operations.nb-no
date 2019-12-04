@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2019-06-19
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 0f4c68acfe021e736c259e91a40ce7d43d401246
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: 24369a878e95076783d670894236d56dca18e765
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2552008"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812885"
 ---
 # <a name="edit-onboarding-guides-and-templates-in-dynamics-365-talent---onboard"></a>Redigere veiledninger og maler for jobbintroduksjon i Dynamics 365 Talent – Onboard
 
@@ -124,7 +124,7 @@ Slik overfører du endringene:
 
     - Hvis du vil legge til en YouTube-video, drar du **YouTube**-elementet til redigeringsområdet, skriver inn et navn og en beskrivelse for aktiviteten, og skriver inn URL-adressen for YouTube-videoen.
     - Hvis du vil legge til en Sway-presentasjon eller et nyhetsbrev, drar du **Sway**-elementet til redigeringsområdet, skriver inn et navn og en beskrivelse for aktiviteten og skriver inn den innebygde URL-adressen for Sway-presentasjonen eller -nyhetsbrevet.
-    - Hvis du vil legge til en PowerApps-app, drar du **PowerApps**-elementet til redigeringsområdet, skriver inn et navn og en beskrivelse for aktiviteten og velger PowerApps-appen eller angir ID-en for PowerApps-appen.
+    - Hvis du vil legge til en Microsoft Power Apps-app, drar du **Power Apps**-elementet til redigeringsområdet, skriver inn et navn og en beskrivelse for aktiviteten og velger Power Apps-appen eller angir ID-en for Power Apps-appen.
     - Hvis du vil legge til en Microsoft Stream-video, drar du **Microsoft Stream**-elementet til redigeringsområdet, skriver inn et navn og en beskrivelse for aktiviteten, og skriver inn URL-adressen for Microsoft Stream-videoen.
     - Hvis du vil legge til et Microsoft Forms-skjema, drar du **Microsoft Forms**-elementet til redigeringsområdet, skriver inn et navn og en beskrivelse for aktiviteten, skriver inn URL-adressen for Microsoft Forms-skjemaet og angir størrelsen på skjermområdet.
     - Hvis du vil legge til en iframe som inneholder webinnhold, drar du **Webinnhold (iframe)**-elementet til redigeringsområdet, skriver inn et navn og en beskrivelse for aktiviteten, skriver inn URL-adressen for webinnholdet og angir størrelsen på skjermområdet.
@@ -186,6 +186,6 @@ Hvis du vil redigere en kontakt, velger du **Rediger**-knappen (blyantsymbolet) 
 ### <a name="see-also"></a>Se også
 
 - [Prøve eller kjøpe Onboard-appen](https://dynamics.microsoft.com/talent/onboard/)
-- [Hva er nytt](./whats-new.md)
-- [Produktmerknader](https://docs.microsoft.com/business-applications-release-notes/index)
-- [Få kundestøtte](./talent-support.md)
+- [Hva er nytt eller endret i Dynamics 365 Talent](./whats-new.md)
+- [Lanseringsplaner](https://docs.microsoft.com/business-applications-release-notes/index)
+- [Få kundestøtte for Microsoft Dynamics 365 Talent](./talent-support.md)

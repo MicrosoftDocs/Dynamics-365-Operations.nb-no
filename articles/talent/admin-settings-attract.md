@@ -1,5 +1,5 @@
 ---
-title: Konfigurere firmainformasjon i Microsoft Dynamics 365 Talent – Attract
+title: Konfigurere firmainformasjon i Attract
 description: Dette emnet forklarer hvordan du konfigurerer firmainformasjon og varemerking for Microsoft Dynamics 365 Talent – Attract.
 author: andreabichsel
 manager: AnnBe
@@ -18,15 +18,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: 7013065a9494cb407020de2ebcad4058dd57c6c4
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: db3ec965f3a52810d5f310697b9ed830c3abe681
+ms.sourcegitcommit: 9cc6a011bfdd1b0fe505760b6bf429eb6c65862a
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2551607"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "2833260"
 ---
-# <a name="configure-company-information-in-microsoft-dynamics-365-talent---attract"></a>Konfigurere firmainformasjon i Microsoft Dynamics 365 Talent – Attract
-[!include[banner](../includes/banner.md)]
+# <a name="configure-company-information-in-attract"></a>Konfigurere firmainformasjon i Attract
+
+[!include [banner](includes/banner.md)]
 
 Administrasjonssenteret i Microsoft Dynamics 365 Talent: Attract inneholder konfigurasjonsinnstillinger, integrasjonsalternativer og oppsettalternativer for Attract-programmet.
 
@@ -48,11 +49,11 @@ Når du legger til nye funksjoner, kan de utgis i en offentlig forhåndsvisning.
 
 ## <a name="template-management"></a>Malbehandling
 
-En prosessmal inneholder alle aktivitetene som skal tas med som en del av ansettelsesprosessen for en jobb. Organisasjonen kan enten tillate alle teammedlemmer eller bare administratorer å opprette maler for ansettelsesprosessen. Hvis du vil tillate at teammedlemmer oppretter sine egne maler for ansettelsesprosessen, må du aktivere malbehandlingsfunksjonen. Hvis du vil ha mer informasjon om prosessmaler, se [Prosessmaler i Attract](./process-templates-attract.md).
+En prosessmal inneholder alle aktivitetene som skal tas med som en del av ansettelsesprosessen for en jobb. Organisasjonen kan enten tillate alle teammedlemmer eller bare administratorer å opprette maler for ansettelsesprosessen. Hvis du vil tillate at teammedlemmer oppretter sine egne maler for ansettelsesprosessen, må du aktivere malbehandlingsfunksjonen. Hvis du vil ha mer informasjon om prosessmaler, se [Opprette en prosessmal i Attract](./process-templates-attract.md).
 
 ## <a name="email-template-settings"></a>Innstillinger for e-postmal
 
-Organisasjoner kan opprette e-postmaler for ulike scenarier. Du kan velge topptekstbildet som skal tas med i e-postmaler. Den valgte overskriften vises deretter i alle e-postmaler. I bunnteksten i malen kan du legge til en kobling til organisasjonens personvernerklæring og vilkårene for bruk for kommunikasjon. Hvis du vil ha mer informasjon, kan du se [E-postmaler i Attract](./email-templates.md).
+Organisasjoner kan opprette e-postmaler for ulike scenarier. Du kan velge topptekstbildet som skal tas med i e-postmaler. Den valgte overskriften vises deretter i alle e-postmaler. I bunnteksten i malen kan du legge til en kobling til organisasjonens personvernerklæring og vilkårene for bruk for kommunikasjon. Hvis du vil ha mer informasjon, kan du se [E-postmaler](./email-templates.md).
 
 ## <a name="offer-process"></a>Tilbudsprosess
 

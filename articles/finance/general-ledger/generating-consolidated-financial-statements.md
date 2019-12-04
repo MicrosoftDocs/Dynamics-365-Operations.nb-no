@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2018-5-31
 ms.dyn365.ops.version: 8.0.1
-ms.openlocfilehash: 55c5d02ca4e487782f020aa5eb85e6ebb36d4ce8
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: a32fb8cce4353f57155fc7a723aa90e3c17178e6
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2179174"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2770695"
 ---
 # <a name="generate-consolidated-financial-statements"></a>Generere konsoliderte regnskapsoppgjør
 
@@ -41,7 +41,7 @@ Den enkleste metoden for å konsolidere ved hjelp av Finansrapportering er å br
 
 Illustrasjonen nedenfor viser hvordan du kan bruke en definisjon for rapporteringstre i Finansrapport til å identifisere hvert enkelt firma som du vil konsolidere.
 
-![Definisjon av rapporteringstre](./media/reporting-tree-definition.png "Definisjon av rapporteringstre")
+![Rapporteringstredefinisjon](./media/reporting-tree-definition.png "Rapporteringstredefinisjon")
 
 Som den konsoliderte rapporten i illustrasjonen nedenfor viser, når du bruker rapporteringstreet sammen med en rapportdefinisjon, kan du vise hvert firma separat. De konsoliderte beløpene vises på sammendragsnivå.
 
@@ -221,6 +221,6 @@ For korrekt omregnede beløp når valutaer brukes, bruker Finansrapportering fø
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 
-Hvis du vil ha mer informasjon om konsolidering og valutavekslinger, kan du se det overordnede emnet i dette emnet, [Finanskonsolideringer og valutaomveksling](./financial-consolidations-currency-translation.md).
+Hvis du vil ha mer informasjon om konsolidering og valutavekslinger, kan du se det overordnede emnet i dette emnet, [Oversikt over finanskonsolideringer og valutaomveksling](./financial-consolidations-currency-translation.md).
 
-Hvis du vil ha mer informasjon om hvordan du registrerer detaljer om konsolideringer på nettet, kan du se [Konsolidere på nettet](./consolidate-online.md).
+Hvis du vil ha mer informasjon om hvordan du registrerer detaljer om konsolideringer på nettet, kan du se [Elektroniske finanskonsolideringer](./consolidate-online.md).

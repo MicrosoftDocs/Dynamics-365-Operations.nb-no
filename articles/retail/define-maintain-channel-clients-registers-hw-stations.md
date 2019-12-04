@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: a21394daeb797995418c3b139191dd700c129e12
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: 3f0180f63c32f3e88d7f5e245716ccc908cc026d
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2019399"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811246"
 ---
 # <a name="connect-peripherals-to-the-point-of-sale-pos"></a>Koble eksterne enheter til salgsstedet
 
@@ -33,7 +33,7 @@ ms.locfileid: "2019399"
 Dette emnet beskriver hvordan du kobler eksterne enheter til salgsstedet for detaljhandel.
 
 > [!NOTE]
-> For spesifikke installasjonsinstruksjoner, kan du se [Konfigurasjon og installasjon av Maskinvarestasjon for detaljhandel](retail-hardware-station-configuration-installation.md) og [Selvbetjeningsnedlasting og -installasjon av Retail Modern POS og enhetsaktivering av Modern POS og Cloud POS](retail-modern-pos-device-activation.md).
+> Hvis du vil ha bestemte installasjonsinstruksjoner, kan du se [Konfigurere og installere Retail Hardware Station](retail-hardware-station-configuration-installation.md) og [Konfigurere, installere og aktivere Retail Modern POS (MPOS)](retail-modern-pos-device-activation.md).
 
 ## <a name="key-components"></a>Nøkkelkomponenter
 
@@ -139,7 +139,7 @@ Funksjonsprofilen angis på butikknivå. Den brukes til å angi innstillinger fo
 
 - Hurtigfanen **Informasjonskoder**:
 
-    - Alle aspekter av hvordan informasjonskoder behandles på salgsstedet. Hvis du vil ha mer informasjon, kan du se [Infokoder](info-codes-retail.md).
+    - Alle aspekter av hvordan informasjonskoder behandles på salgsstedet. Hvis du vil ha mer informasjon, kan du se [Informasjonskoder og informasjonskodegrupper](info-codes-retail.md).
 
 - Hurtigfanen **Kvitteringsnummerering**:
 

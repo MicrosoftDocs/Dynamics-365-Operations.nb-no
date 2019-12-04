@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-03-20
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: c16082bb18ac5c170aab30f1a2033e0790cbacc1
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: a7a44e1c9d8dcb4b2cc81a682a044d26cdc1149e
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2026012"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812701"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-talent-march-20-2019"></a>Hva er nytt eller endret i Dynamics 365 Talent (20. mars 2019)?
 
@@ -43,7 +43,7 @@ Denne funksjonen gjør det mulig for søkemotorer å nå og indeksere ledige sti
 Hvis en kandidat har glemt den sosiale legitimasjonen de brukte til å søke etter en jobb under åpning av en kobling som ble lagret eller sendt med e-post til dem, vil de nå se et tips med navnet på leverandøren og brukernavnet (gjort uforståelig). Dette gjør at de bruker riktig legitimasjon for å få tilgang til jobbsøknaden.
 
 ### <a name="help-internal-candidates-explore-internal-jobs"></a>Hjelpe interne kandidater å utforske interne stillinger
-Et problem er løst der eksterne kandidater kunne se navnet på rekrutteringspersonen eller ansettelseslederen for en jobb. Bare interne kandidater kan nå se ansettelsesteammedlemmene for en jobb. Det er også enklere for interne kandidater å vise og søke på bare interne jobber. Når en kandidat prøver å få tilgang til koblingen for å vise eller søke på en intern jobb, må de godkjennes ved hjelp av Azure Active Directory-legitimasjon. Interne kandidater har også muligheten til å kontakte ansettelsesteammedlemmene for å uttrykke interesse for eller finne ut mer om jobben. Denne funksjonen er tilgjengelig for alle jobber for bare interne kandidater. Hvis du vil ha mer informasjon, se [Karriereområde-funksjonalitet i Attract](./career-site.md).
+Et problem er løst der eksterne kandidater kunne se navnet på rekrutteringspersonen eller ansettelseslederen for en jobb. Bare interne kandidater kan nå se ansettelsesteammedlemmene for en jobb. Det er også enklere for interne kandidater å vise og søke på bare interne jobber. Når en kandidat prøver å få tilgang til koblingen for å vise eller søke på en intern jobb, må de godkjennes ved hjelp av Azure Active Directory-legitimasjon. Interne kandidater har også muligheten til å kontakte ansettelsesteammedlemmene for å uttrykke interesse for eller finne ut mer om jobben. Denne funksjonen er tilgjengelig for alle jobber for bare interne kandidater. Hvis du vil ha mer informasjon, se [Konfigurere karriereområdet i Microsoft Dynamics 365 Talent - Attract](./career-site.md).
 
 ### <a name="designate-silver-medalists-to-assign-high-value-applicants-for-future-positions"></a>Registrere personer som er innstilt som nummer to, for å tilordne søkere med høy verdi til fremtidige stillinger
 Rekrutteringspersoner og -ledere vedlikeholder ofte en løpende liste over søkere som passer godt for stillingen, men som ikke kunne få et tilbud om jobb, fordi stillingen allerede var besatt. Slike søkere, som er innstilt som nummer to, er verdifulle fordi de kan bidra til å redusere tiden det tar å ansette neste gang en lignende stilling lyses ut. I Attract er det nå mulig for rekrutteringspersoner og -lederne å angi personer som er innstilt som nummer to på søkerlisten, hvis søkeren har avansert til tilbudsstadiet. Angivelsen av personer som er innstilt som nummer to, vil vises i søkerlisten for jobben, men også i talentsamlingsvisningen når disse søkerne er medlemmer av samlingene til bemanningskonsulenter eller -ledere. I tillegg vises angivelsen i loggen for jobben, som en del av talentsamlingsprofilen for en kandidat. Du kan forhåndsvise denne funksjonen ved at en administrator aktiverer den ved hjelp av [funksjonsbehandling i administrasjonssenteret](https://docs.microsoft.com/dynamics365/unified-operations/talent/access-preview-feature).

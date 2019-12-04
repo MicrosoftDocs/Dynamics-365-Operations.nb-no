@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: d51b9a7684e460d555632c3896e9dd8a4e10d92c
-ms.sourcegitcommit: deb87e518a151d8bb084891851a39758938a96e4
+ms.openlocfilehash: 005b04bd4c3476356f30ba8e97564f83307a64c7
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "2626184"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811757"
 ---
 # <a name="automatic-update-of-asset-counters"></a>Automatisk oppdatering av anleggsmiddeltellere
 
@@ -43,16 +43,16 @@ Som nevnt ovenfor kan automatiske tellere oppdateres fra produksjonsregistrering
 
 2. Velg startdatoen for den automatiske oppdateringen i **Fra dato**-feltet.
 
->[!NOTE]
->Datoen i dette feltet er datoen for arbeid som pågår fra **Rutetransaksjoner** (**Produksjonskontroll** > **Forespørsler og rapporterer** > **Produksjon** > **Rutetransaksjoner** > **Fysisk dato**-feltet).
+    >[!NOTE]
+    >Datoen i dette feltet er datoen for arbeid som pågår fra **Rutetransaksjoner** (**Produksjonskontroll** > **Forespørsler og rapporterer** > **Produksjon** > **Rutetransaksjoner** > **Fysisk dato**-feltet).
 
 3. I hurtigfanen **Poster som skal inkluderes** kan du velge bestemte aktiva, aktivatyper eller ressurser for den automatiske oppdateringen. Velg **Filter**, og gjør de relevante valgene.
 
 4. På hurtigfanen **Kjør i bakgrunnen** kan du definere den automatiske oppdateringen som en satsvis jobb, slik du ønsker.
 
-Illustrasjonen nedenfor viser et eksempel på dialogboksen **Oppdater aktivatellere**.
+    Illustrasjonen nedenfor viser et eksempel på dialogboksen **Oppdater aktivatellere**.
 
-![Figur 1](media/12-work-orders.png)
+    ![Figur 1](media/12-work-orders.png)
 
 5. Velg **OK**. 
 

@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: bb318c24424c291f08ba7527b2258c0da4cba9a8
-ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
+ms.openlocfilehash: 53100a897dc71758b8920672fea1e684817cb4b7
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "2571674"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812289"
 ---
 # <a name="inbound-and-outbound-assets"></a>Innkommende og utgående aktiva
 
@@ -34,7 +34,7 @@ ms.locfileid: "2571674"
 Hvis firmaet har reparasjonsjobber eller vedlikeholdsjobber på aktiva som mottas fra andre lokasjoner eller kunder, kan Aktivastyring spore både innkommende aktiva som er på vei til firmaet og utgående aktiva som returneres.
 
 > [!NOTE]
-> Hvis du vil bruke inngående og utgående livsløpstilstander til å administrere aktiva som kommer inn og blir returnert, må du definere livsløpstilstander for vedlikeholdsforespørsler og livsløpsmodeller for å støtte disse handlingene. Hvis du vil ha mer informasjon, kan du se [Oppsett for vedlikeholdsanmodninger](../setup-for-maintenance-requests/requests.md).
+> Hvis du vil bruke inngående og utgående livsløpstilstander til å administrere aktiva som kommer inn og blir returnert, må du definere livsløpstilstander for vedlikeholdsforespørsler og livsløpsmodeller for å støtte disse handlingene. Hvis du vil ha mer informasjon, kan du se [Vedlikeholdsanmodninger](../setup-for-maintenance-requests/requests.md).
 
 Oppsettet av Aktivastyring bestemmer om du kan arbeide med inngående og utgående aktiva.
 

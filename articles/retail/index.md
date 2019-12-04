@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2017-6-19
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 57d3b66e7ebc5a8a6e2ddda9135e27cd24535365
-ms.sourcegitcommit: 5b53bdafa5cb9a1279576bfece0452a50383b122
+ms.openlocfilehash: e77fd279ddec5eb02e226776eecb1223283313c3
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "2278112"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811932"
 ---
 # <a name="help-resources-for-dynamics-365-retail"></a>Hjelperessurser for Dynamics 365 Retail
 
@@ -81,7 +81,7 @@ Du konfigurerer flere komponenter for å definere relasjonene mellom en butikk, 
 
 Hvis du har blitt bedt om å tilpasse miljøet, eller hvis du har ansvar for å distribuere og vedlikeholde systemet, må du sørge for at du ser innholdet for utvikleren og systemadministratoren som er spesifikt for Retail, i tillegg til det mer generelle innholdet.
 
-- [Dynamics 365 Retail for IT-eksperter og utviklere](dev-itpro/dev-retail-home-page.md)
+- [Retail for IT-eksperter og utviklere](dev-itpro/dev-retail-home-page.md)
 - [Utvikling og administrasjon for Dynamics 365 Finance](../dev-itpro/dev-tools/developer-home-page.md)
 
 ## <a name="additional-resources"></a>Tilleggsressurser

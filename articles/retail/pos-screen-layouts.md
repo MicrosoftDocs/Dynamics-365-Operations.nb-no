@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 4852ec9b347f119a1007b63476b8609a3e38ba57
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: c4636f5a023786e3871eb5d907e2e9546181827a
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2025284"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811786"
 ---
 # <a name="screen-layouts-for-the-point-of-sale-pos"></a>Skjermoppsett for salgssted
 
@@ -171,7 +171,7 @@ Utforming for knappegruppe lar deg konfigurere knappegrupper som kan brukes på 
 
     - **Handling** – I listen over aktuelle POS-operasjoner velger du operasjonen som startes når knappen klikkes på salgsstedet.
 
-        Hvis du vil vise listen over POS-operasjoner som støttes, kan du se [POS-operasjoner, tilkoblede og frakoblede](pos-operations.md).
+        Hvis du vil vise listen over POS-operasjoner som støttes, kan du se [Tilkoblede og frakoblede salgsstedsoperasjoner (POS)](pos-operations.md).
 
     - **Handlingsparametere** – Noen POS-operasjoner bruker flere parametere når de startes. For operasjonen Legg til produkt kan for eksempel brukere angi produktet som skal legges til.
     - **Knappetekst** – Angi teksten som vises på knappen på salgsstedet.
@@ -193,4 +193,4 @@ Utforming for knappegruppe lar deg konfigurere knappegrupper som kan brukes på 
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 
-[Installere utforming av oppsett for Retail POS](install-pos-layout-designer.md)
+[Installere utforming av oppsett for salgssted (POS) for detaljhandel](install-pos-layout-designer.md)

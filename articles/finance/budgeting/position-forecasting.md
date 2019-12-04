@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 039b5d7ace19fa93e6db4920153f4a1a67519c85
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: d5bae90cf7c8f11fa5409014023d36cc68ae1bd0
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2179251"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2770879"
 ---
 # <a name="position-forecasting"></a>Stillingsprognose
 
@@ -33,7 +33,7 @@ Utgifter som er knyttet til arbeidere utgjør ofte en stor del av organisasjonen
 
 ## <a name="position-forecasting-in-budget-planning"></a>Stillingsprognoser i budsjettplanlegging
 
-[![Grafikk, topp](./media/graphic-top.png)](./media/graphic-top.png) 
+[![Komponenter i stillingsprognoser](./media/graphic-top.png)](./media/graphic-top.png) 
 
 Stillingsprognoser bruker tre hovedkomponenter for å gi nøyaktige budsjettbeløp for stillingsutgifter. Disse beløpene kan deretter hentes inn i en budsjettplan for budsjettberegninger. 
 
@@ -45,14 +45,14 @@ En **kompensasjonsgruppe** er en valgfri installasjonskomponent som brukes til �
 
 ### <a name="position-forecasting-processes"></a>Stillingsprognoseprosesser
 
-[![Grafikk1b](./media/graphic1b.png)](./media/graphic1b.png) 
+[![Illustrasjon av stillingsprognoseprosesser](./media/graphic1b.png)](./media/graphic1b.png) 
 
 I en vanlig prosess for stillingsprognose, oppretter du først installasjonskomponentene (budsjettkostnadselementer og kompensasjonsgrupper). Prognosestillinger genereres deretter basert på eksisterende stillinger. Deretter kan du foreta justeringer. Du kan for eksempel legge til eller avslutte stillinger, endre lønnssatser og fordelskostnader og legge til lønnsøkninger. Du kan opprette flere versjoner av en prognosestilling for å muliggjøre sammenligninger mellom ulike budsjetteringsscenarioer. Deretter kan du inkludere prognosestillingene i budsjettplaner og sette inn kostnadene fra prognosestillingene som budsjettplanlinjer.
 
 Du kan opprette flere prognosestillingsversjoner når budsjettplaner revideres. Disse nye versjonene danner grunnlag for endringene.
 
 ## <a name="position-forecasting-setup"></a>Oppsett av stillingsprognoser
-[![Grafikk2](./media/graphic2-1024x327.png)](./media/graphic2.png)
+[![Illustrasjon med utheving av oppsett](./media/graphic2-1024x327.png)](./media/graphic2.png)
 
 ### <a name="budget-cost-elements"></a>Budsjettkostnadselementer
 
@@ -89,7 +89,7 @@ Feltene **Tidsplan for økning** og **Dato for økning** i kompensasjonsgruppen 
 Inntjeningskostnadselementet som er valgt for kompensasjonsgruppen, brukes når du oppretter inntekter for prognosestillingene i gruppen, inkludert grunnlønnen og eventuelle trinnøkninger. Feltet **Fast plan for kompensasjon** knytter kompensasjonsgruppen til en fast kompensasjonsplan i Personale. Denne koblingen kan tilordne en arbeiders informasjon om fast kompensasjon til en prognosestilling, og kan derfor gjøre budsjettplanlegging mer nøyaktig. Husk at strukturen for kompensasjonsrutenettet (nivåer og trinn) for kompensasjonsgruppen skal samsvare med strukturen i den faste kompensasjonsplanen. Ellers kan ikke systemet koble riktig kompensasjonsgruppe til den faste kompensasjonsplanen.
 
 ## <a name="creating-forecast-positions"></a>Opprette prognosestillinger
-[![Grafikk3](./media/graphic3-1024x327.png)](./media/graphic3.png)
+[![Illustrasjon med utheving av "Opprett prognosestillinger"](./media/graphic3-1024x327.png)](./media/graphic3.png)
 
 ### <a name="creating-forecast-positions-for-existing-positions"></a>Opprette prognosestillinger for eksisterende stillinger
 
@@ -105,7 +105,7 @@ Når alternativet **Tilordne en kompensasjonsgruppe** er satt til **Ja**, hvis a
 
 Innstillingen for alternativet **Tilordne en kompensasjonsgruppe** får prioritet over innstillingen for **tilordning av budsjettkostnadselement**. De to innstillingene kan brukes samtidig. 
 
-[![Grafikk4](./media/graphic4.png)](./media/graphic4.png) 
+[![Diagrammet "Tilordne en kompensasjonsgruppe"](./media/graphic4.png)](./media/graphic4.png) 
 
 Et annet alternativ er å tilordne en jubileumsdato. Den valgte datoen (justert startdato, arbeiderstartdato, startdato for ansettelse eller ansiennitetsdato) fra den tilordnede arbeideren settes deretter som prognosestillingens jubileumsdato og brukes til informasjon og når lønnsøkninger genereres.
 
@@ -118,7 +118,7 @@ Når det velges en prognosestilling, velger du **Kopier den valgte prognosestill
 Du kan også opprette en helt ny prognosestilling. Velg en eksisterende jobb, og velg også budsjettplanleggingsprosessen og budsjettplanscenarioet. Du kan deretter legge til en hvilken som helst annen informasjon som du vil legge til. Igjen opprettes en ny stilling i Personale samtidig.
 
 ## <a name="working-with-forecast-positions"></a>Arbeide med prognosestillinger
-[![Grafikk5](./media/graphic5-1024x327.png)](./media/graphic5.png)
+[![Illustrasjon med utheving av "endre prognosestillinger"](./media/graphic5-1024x327.png)](./media/graphic5.png)
 
 ### <a name="multiple-versions-of-a-forecast-position"></a>Flere versjoner av en prognosestilling
 
@@ -174,7 +174,7 @@ Omberegningsprosessen brukes automatisk på alle prognosestillinger som endres.
 
 ## <a name="bringing-forecast-positions-into-budget-plans"></a>Overføre prognosestillinger til budsjettplaner
 
-[![Grafikk6](./media/graphic6-1024x327.png)](./media/graphic6.png)
+[![Illustrasjon med utheving av "Legg til i budsjettplan"](./media/graphic6-1024x327.png)](./media/graphic6.png)
 
 Formålet med å opprette og endre prognosestillingene er å legge dem til i budsjettplaner, slik at budsjettplanene omfatter de mest nøyaktige budsjettbeløpene. Det finnes to metoder for å legge til prognosestillingene i budsjettplaner. Du kan bruke enten en genereringsprosess eller en utvelgelsesprosess for budsjettplanen.
 

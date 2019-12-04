@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 54d6c432907b1b75307c56d3876c8b390d5ff376
-ms.sourcegitcommit: 0099fb24f5f40ff442020b488ef4171836c35c48
+ms.openlocfilehash: aa503f2ce3ae8ff6b221ea1d26a1c62d0ba37646
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "2653424"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2814910"
 ---
 # <a name="warehouse-configuration-overview"></a>Oversikt over lagerkonfigurasjon
 
@@ -31,7 +31,8 @@ ms.locfileid: "2653424"
 
 Denne artikkelen forklarer hvordan du konfigurerer et lager. Det inneholder informasjon om hvordan du aktiverer et oppsett for lageret og lagerprosesser.
 
-**Merk:** Denne artikkelen gjelder funksjoner i modulen **Lagerstyring** (avanserte lageraktiviteter). Det gjelder ikke for lagerfunksjoner i modulen **Lagerstyring**.
+> [!NOTE]
+> Denne artikkelen gjelder funksjoner i modulen **Lagerstyring** (avanserte lageraktiviteter). Det gjelder ikke for lagerfunksjoner i modulen **Lagerstyring**.
 
 ## <a name="warehouse-layout"></a>Lageroppsett
 Lagerstyringssystemet i Supply Chain Management gir deg fleksible måter å definere lageroppsettet på for å oppfylle bedriftens ulike behov, slik at du kan oppnå optimal lagereffektivitet.
@@ -114,7 +115,7 @@ Hvis du vil gjøre det lettere og raskere å angi hvilke handlinger som er knytt
 <a name="additional-resources"></a>Tilleggsressurser
 --------
 
-[Konfigurere lokasjoner i et WMS-aktivert lager (oppgaveveiledning)](tasks/configure-locations-wms-enabled-warehouse.md)
+[Konfigurere lokasjoner i et WMS-aktivert lager](tasks/configure-locations-wms-enabled-warehouse.md)
 
 
 

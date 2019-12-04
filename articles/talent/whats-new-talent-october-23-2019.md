@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-10-23
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 94243f83121a1306d8f9ae9be23d24e5c9b63a2d
-ms.sourcegitcommit: 07e109dec176a93eff0df8a37ba5d875f212e9f1
+ms.openlocfilehash: 66419d9093cff68aa6109b22ab57bcb46ac6c718
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "2662671"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2772902"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-talent-october-23-2019"></a>Hva er nytt eller endret i Dynamics 365 Talent (23. oktober 2019)
 
@@ -47,7 +47,7 @@ Hvis du vil ha mer informasjon, se [Hva er nytt eller endret i Platform Update 3
 
 ### <a name="remove-benefits-open-enrollment-preview-feature"></a>Fjerne åpen registrering for fordeler fra offentlig forhåndsvisning
 
-I forbindelse med vår kunngjøring i blogginnlegget Strategiske investeringene i Core HR gir til store driftsfordeler fjerner Microsoft funksjonen for åpen registrering av fordeler fra den offentlige forhåndsvisningen 18. oktober 2019. I stedet vil ny funksjonalitet bli utgitt i fremtiden. Produksjonsbruk av funksjonen for åpen registrering av fordeler som for øyeblikket er i den offentlige forhåndsvisningen, støttes ikke.
+I forbindelse med vår kunngjøring i blogginnlegget [Strategiske investeringene i Core HR gir til store driftsfordeler](https://cloudblogs.microsoft.com/dynamics365/bdm/2019/10/02/strategic-investments-in-core-hr-drive-operational-excellence) fjerner Microsoft funksjonen for åpen registrering av fordeler fra den offentlige forhåndsvisningen 18. oktober 2019. I stedet vil ny funksjonalitet bli utgitt i fremtiden. Produksjonsbruk av funksjonen for åpen registrering av fordeler som for øyeblikket er i den offentlige forhåndsvisningen, støttes ikke.
 
 ### <a name="error-while-selecting-the-countryregion-on-the-worker-form-a-second-time-350294"></a>Feil når land/område i arbeiderskjemaet velges én gang til (350294)
 
@@ -69,7 +69,7 @@ Med denne ukens utgivelse, der en ny listeverdi legges til i et eksisterende ege
 
 Med denne versjonen vil bare de valgte ansattes ansettelsesbetingelser åpnes i Excel. All selskapssikkerhet blir også respektert.
 
-### <a name="the-association-between-the-work-calendar-holiday-entity-and-the-work-calendar-entity-is-missing-in-common-data-service---324178"></a>Tilknytningen mellom ferieenheten for arbeidskalenderen og enheten for arbeidskalenderen mangler i Common Data Service – (324178)
+### <a name="the-association-between-the-work-calendar-holiday-entity-and-the-work-calendar-entity-is-missing-in-common-data-service-324178"></a>Tilknytningen mellom ferieenheten for arbeidskalenderen og enheten for arbeidskalenderen mangler i Common Data Service (324178)
 
 Denne relasjonen er lagt til i utgivelsen. Denne endringen vil gjøre det mulig å vise arbeidsdager for en ansatt i PowerApps. 
 

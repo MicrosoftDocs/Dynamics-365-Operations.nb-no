@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-03-26
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: d4b59183116784f44f45fddacdfa4aa954383ecd
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: b23860a7eda0ec9d75cca04728b7fc11d01bf967
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2023890"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812747"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-talent-march-26-2019"></a>Hva er nytt eller endret i Dynamics 365 Talent (26. mars 2019)?
 
@@ -75,11 +75,11 @@ I denne utgivelsen vises nå fast kompensasjon-planer når brukere begrenses ett
 Med denne versjonen kan du nå fjerne jobbposter ved hjelp av **Åpen i Excel**-alternativet i Talent.
 
 ### <a name="upgrade-to-common-data-service"></a>Oppgradere til Common Data Service
-Tidsfrister for å oppgradere til Common Data Service nærmer deg raskt. Logg på PowerApps-administrasjonssenteret for å bestemme om databasen må oppgraderes. Hvis du vil ha mer informasjon om tidsfrister og de nødvendige trinnene for å oppgradere, kan du se [Oppgradere til Common Data Service](https://docs.microsoft.com/common-data-service/upgradecds/introduction-upgrade-cds).
+Tidsfrister for å oppgradere til Common Data Service nærmer deg raskt. Logg på Power Apps-administrasjonssenteret for å bestemme om databasen må oppgraderes. Hvis du vil ha mer informasjon om tidsfrister og de nødvendige trinnene for å oppgradere, kan du se [Oppgradere til Common Data Service](https://docs.microsoft.com/common-data-service/upgradecds/introduction-upgrade-cds).
 
 ## <a name="in-preview"></a>I forhåndsvisning
 
-Hvis du vil ha informasjon om hvordan du aktiverer forhåndsvisningsfunksjoner, se [Tilgang til forhåndsvisningsfunksjoner i Talent](./access-preview-feature.md).
+Hvis du vil ha informasjon om hvordan du aktiverer forhåndsvisningsfunksjoner, se [Tilgang til forhåndsvisningsfunksjoner i Microsoft Dynamics 365 Talent](./access-preview-feature.md).
 
 ### <a name="allow-reason-codes-to-be-specified-on-leave-types"></a>Tillate angivelse av årsakskoder for permisjonstyper
 Organisasjoner må kanskje ha tilleggsinformasjon relatert til fraværsforespørsler. For å få denne informasjonen må ansatte inkludere en årsakskode i fraværsforespørslene. I denne versjonen kan du nå angi årsakskoden som er forbundet med en gitt permisjonstype, og gi de ansatte mulighet til å velge en årsakskode i fraværsforespørsler.

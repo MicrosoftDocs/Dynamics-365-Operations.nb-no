@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e39328c73fe3dd101e32ec04d895483335184ae7
-ms.sourcegitcommit: 4d6ec2b1a9674712e1efb8c46b919d554f21a2b3
+ms.openlocfilehash: 54f07e7037f818862db4a44f9ad3e3fe8545f6f9
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "2627657"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811488"
 ---
 # <a name="whats-new-or-changed-in-dynamics-ax-70-february-2016"></a>Hva er nytt eller endret i Dynamics AX 7.0 (februar 2016)
 
@@ -322,7 +322,7 @@ Denne funksjonen fungerer uavhengig av etterkalkuleringsmetoder som er tilordnet
 <tr>
 <td>Tilgang til veiledet prosedyremessig hjelp (oppgaveveiledning) og fremgangsmåter ved å klikke <strong>Hjelp</strong>.</td>
 <td>Hjelpesystemet for AX 2012 peker til HTML-emner som er lagret på en lokal webserver. Kunder og partnere kan opprette sin egen hjelp.</td>
-<td>Hjelpesystemet i den gjeldende versjonen av Dynamics AX viser oppgaveveiledninger som er lagret i Microsoft Dynamics Lifecycle Services (LCS) BPM. Hjelpesystemet viser også emner fra Microsofts nettsted for dokumenter. Hvis du vil ha mer informasjon, kan du se <a href="help-overview.md" data-raw-source="[Dynamics AX Help - Getting Started](help-overview.md)">Hjelp for Dynamics AX – Komme i gang</a> og <a href="new-task-guides-available-february-2016.md" data-raw-source="[New task guides available (February 2016)](new-task-guides-available-february-2016.md)">Nye oppgaveveiledninger tilgjengelige (februar 2016).</a></td>
+<td>Hjelpesystemet i den gjeldende versjonen av Dynamics AX viser oppgaveveiledninger som er lagret i Microsoft Dynamics Lifecycle Services (LCS) BPM. Hjelpesystemet viser også emner fra Microsofts nettsted for dokumenter. Hvis du vil ha mer informasjon, se <a href="help-overview.md" data-raw-source="[Help system](help-overview.md)">Hjelpesystem</a> og <a href="new-task-guides-available-february-2016.md" data-raw-source="[New task guides (February 2016)](new-task-guides-available-february-2016.md)">Nye oppgaveveiledninger (februar 2016)</a>.</td>
 <td>Oppgaveveiledninger gir en veiledet, interaktiv opplevelse som leder deg gjennom trinnene for en aktivitet eller forretningsprosess. Du kan laste ned og tilpasse oppgaveveiledningene som Microsoft tilbyr. Emnet gir en raskere og mer fleksibel måte å opprette, levere og oppdatere produktdokumentasjonen. Derfor garanterer det at du har tilgang til den nyeste tekniske informasjonen.</td>
 </tr>
 </tbody>
@@ -1031,6 +1031,6 @@ Ingen nye funksjoner er lagt til.
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 
-[Hva er nytt eller endret?](whats-new-changed.md)
+[Startsiden Hva er nytt eller endret i Finance and Operations](whats-new-changed.md)
 
-[Nye oppgaveveiledninger tilgjengelige (februar 2016)](new-task-guides-available-february-2016.md)
+[Nye oppgaveveiledninger (februar 2016)](new-task-guides-available-february-2016.md)

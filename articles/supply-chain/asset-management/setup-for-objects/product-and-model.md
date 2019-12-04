@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 14a73f49064911a2b28c742cfc19469f4bf95e74
-ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
+ms.openlocfilehash: b77605070387871335c480e25cbe23af1155d6e8
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "2569967"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812174"
 ---
 # <a name="asset-manufacturers-and-models"></a>Aktivaprodusenter og -modeller
 
@@ -45,7 +45,7 @@ Dette emnet forklarer hvordan du definerer aktivaprodusenter og beslektede model
 8. I feltet **Aktivatype** velger du aktivatypen som produsentmodellen skal være knyttet til.
 
     > [!NOTE]
-    > Du kan også definere relasjoner for aktivatyper, -produsenter og -modeller i oppslaget **Aktivatyper**. Hvis du vil ha mer informasjon, kan du se [Opprette aktivatype](../setup-for-objects/object-types.md).
+    > Du kan også definere relasjoner for aktivatyper, -produsenter og -modeller i oppslaget **Aktivatyper**. Hvis du vil ha mer informasjon, kan du se [Aktivatyper](../setup-for-objects/object-types.md).
 
     På hurtigfanen **Detaljer** viser **Modeller**-feltet antallet aktivamodeller som er definert for den valgte aktivaprodusenten. **Aktiva**-feltet viser antall aktiva som bruker den valgte produsenten.
     

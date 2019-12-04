@@ -16,12 +16,12 @@ ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, F
 ms.author: v-lenest
 ms.search.validFrom: 2017-06-01
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 4ef97d30ca2d8a9c27ce656c82d2a415682ce075
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: b809ba8d92772d8f3f416d4854d4af322e6f954a
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2551227"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2773435"
 ---
 # <a name="import-iso20022-files"></a>Importere ISO20022-filer
 
@@ -49,7 +49,7 @@ Du må oppfylle følgende forutsetninger for å importere bank varselmeldinger i
 
     - I feltet **Kundebetaling, kontolengde** angir du lengden på kundekoden for som skal brukes i-ISR referanser, eller til å identifisere kunden automatisk.
     - Pass på at kundenummeret og fakturanummeret (nummerserier) inneholder bare sifre. De må ikke inneholde andre tegn. Fakturanummeret kan ikke ha innledende nuller.
-    - Angi ESR, BESR og rutingnummeret for bankkontoen til den juridiske enheten. Hvis du vil ha mer informasjon, se [Eldre ESR-funksjon](emea-che-esr-customer-payments-import.md), fordi lignende innstillinger er nødvendig.
+    - Angi ESR, BESR og rutingnummeret for bankkontoen til den juridiske enheten. Hvis du vil ha mer informasjon, se [Import av ESR-kundebetalinger](emea-che-esr-customer-payments-import.md), fordi lignende innstillinger er nødvendig.
     
 ## <a name="import-the-camt054-credit-advice-file-into-the-customer-payment-journal"></a>Importer camt.054 credit advice-filen i kundebetalingsjournalen.
 1. På siden **Kundebetalingsjournallinjer** klikker du **Funksjoner** > **importerer betalinger**.

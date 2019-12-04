@@ -18,22 +18,22 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-08-13
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 932ba44b4223bf9c9d93ffb19e17f6e57bb303b5
-ms.sourcegitcommit: bbb64b3475eef155b3f9d1bdc440545da8a7182f
+ms.openlocfilehash: 5dad101ffe56c9266c0d81ede8be1f72b684a8fb
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "2553097"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2771427"
 ---
 # <a name="backup-storage-of-er-templates"></a>Sikkerhetskopiere ER-maler
 
 [!include [banner](../includes/banner.md)]
 
-[Rammeverket for elektronisk rapportering (ER)](general-electronic-reporting.md) lar bedriftsbrukere konfigurere formater for utgående dokumenter i overensstemmelse med de juridiske kravene i ulike land. Konfigurerte ER-formater kan bruke forhåndsdefinerte maler til å generere utgående dokumenter i forskjellige formater, for eksempel Microsoft Excel-regneark, Microsoft Word-dokumenter eller PDF-dokumenter. Malene er fylt ut med data som kreves av den konfigurerte dataflyten for genererte dokumenter.
+[Oversikt over elektronisk rapportering (ER)](general-electronic-reporting.md) lar bedriftsbrukere konfigurere formater for utgående dokumenter i overensstemmelse med de juridiske kravene i ulike land. Konfigurerte ER-formater kan bruke forhåndsdefinerte maler til å generere utgående dokumenter i forskjellige formater, for eksempel Microsoft Excel-regneark, Microsoft Word-dokumenter eller PDF-dokumenter. Malene er fylt ut med data som kreves av den konfigurerte dataflyten for genererte dokumenter.
 
 Hvert konfigurerte format kan publiseres som en del av en ER-løsning. Hver enkelt ER-løsning kan eksporteres fra en forekomst av Finance and Operations og importeres til en annen forekomst.
 
-ER-rammeverket bruker [dokumentbehandlingsrammeverket](../../fin-ops/organization-administration/configure-document-management.md) til å beholde de nødvendige malene for gjeldende Finance and Operations-forekomsten. Avhengig av innstillingene for ER-rammeverket kan Microsoft Azure Blob Storage eller en Microsoft SharePoint-mappe velges som fysisk primær lagringsplassering for maler. (Hvis du vil ha mer informasjon, kan du se [Konfigurere ER-rammeverket](electronic-reporting-er-configure-parameters.md).) DocuValue-tabellen inneholder en enkeltpost for hver mal. I hver post lagrer feltet **AccessInformation** banen til en malfil som er plassert på den konfigurerte lagringsplasseringen.
+ER-rammeverket bruker [Konfigurere dokumentstyring](../../fin-ops/organization-administration/configure-document-management.md) til å beholde de nødvendige malene for gjeldende Finance and Operations-forekomsten. Avhengig av innstillingene for ER-rammeverket kan Microsoft Azure Blob Storage eller en Microsoft SharePoint-mappe velges som fysisk primær lagringsplassering for maler. (Hvis du vil ha mer informasjon, kan du se [Konfigurere rammeverket for elektronisk rapportering (ER)](electronic-reporting-er-configure-parameters.md).) DocuValue-tabellen inneholder en enkeltpost for hver mal. I hver post lagrer feltet **AccessInformation** banen til en malfil som er plassert på den konfigurerte lagringsplasseringen.
 
 Når du administrerer dine Finance and Operations-forekomster, kan det hende du vil overføre gjeldende forekomst til en annen plassering. Du kan for eksempel overføre produksjonsforekomsten til et nytt sandkassemiljø. Hvis du har konfigurert ER-rammeverket til å lagre maler i Blob Storage, refererer DocuValue-tabellen i det nye sandkassemiljøet til forekomsten av Blob Storage i produksjonsmiljøet. Denne forekomsten er imidlertid ikke tilgjengelig fra sandkassemiljøet, fordi overføringsprosessen ikke støtter overføring av artefakter i Blob Storage. Hvis du prøver å kjøre et ER-format som bruker en mal til å generere forretningsdokumenter, oppstår det derfor et unntak, og du blir varslet om den manglende malen. Du blir også veiledet til å bruke ER-oppryddingsverktøyet til å slette og deretter importere på nytt ER-formatkonfigurasjonen som inneholder malen. Fordi du kan ha flere ER-formatkonfigurasjoner kan denne prosessen være tidkrevende.
 
@@ -94,6 +94,6 @@ I Finance and Operations versjon 10.0.5 er funksjonen for sikkerhetskopiering av
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 
-[Oversikt over elektronisk rapportering](general-electronic-reporting.md)
+[Oversikt over elektronisk rapportering (ER)](general-electronic-reporting.md)
 
-[Konfigurere rammeverket for elektronisk rapportering](electronic-reporting-er-configure-parameters.md)
+[Konfigurere rammeverket for elektronisk rapportering (ER)](electronic-reporting-er-configure-parameters.md)

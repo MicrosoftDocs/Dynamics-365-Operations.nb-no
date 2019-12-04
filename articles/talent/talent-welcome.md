@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
-ms.openlocfilehash: edc2f59752a32b9cd20902d0b7a1edfe3ba4d15b
-ms.sourcegitcommit: ff160a9f9879f3ec015ffef11fbc8b7c1b84a59d
+ms.openlocfilehash: 841ef8f2b7c319e0a6b3a9ce9a9e4959e70aa8cd
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2552956"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812770"
 ---
 # <a name="welcome-to-dynamics-365-talent"></a>Velkommen til Dynamics 365 Talent
 
@@ -52,20 +52,20 @@ Utforsk Dynamics 365 Talent ved å se på videoklippet [Komme i gang med Dynamic
 
 Når du arbeider med Talent, må du bestemme hvordan du vil strukturere organisasjonen ved hjelp av elementer, for eksempel avdelinger, jobber og stillinger. Disse er blant de grunnleggende elementene du må konfigurere. Enkeltansatte tilordnes til stillinger som er knyttet til jobber.
 
--   [Organisere arbeidsstyrken ved bruk av avdelinger, jobber og stillinger](departments-jobs-positions.md)
--   [Definere firmaspesifikke parametere for Personale](set-up-company-specific-hr-parameters.md)
--   [Definere parametere for Personale på tvers av juridiske enheter](set-up-hr-parameters-across-legal-entities.md) 
+-   [Organisere arbeidsstyrken ved hjelp av avdelinger, jobber og stillinger](departments-jobs-positions.md)
+-   [Definere firmaspesifikke parametere for Personale (HR)](set-up-company-specific-hr-parameters.md)
+-   [Definere parametere for Personale (HR) på tvers av juridiske enheter](set-up-hr-parameters-across-legal-entities.md) 
 -   [Vanlige spørsmål om personalhandlinger](personnel-actions-faq.md)
--   [Oversikt over permisjon og fravær](leave-absence-overview.md)
+-   [Administrasjon av permisjon og fravær](leave-absence-overview.md)
 -   [Bruke Dynamics 365 Talent: Permisjon og fravær (video)](https://www.youtube.com/watch?v=1q1UhKmO4tw)
 -   [Administrere medarbeidere i Dynamics 365 Talent (video)](https://www.youtube.com/watch?v=h1T5IjKKAuA)
 
 ## <a name="staffing-your-organization"></a>Bemanning av organisasjonen
 
-Talent inkluderer Attract, som kan hjelpe deg med å identifisere, intervjue og ansette kandidater som har ferdighetene som organisasjonen trenger. Når du flytter fra rekruttering til ansettelse, kan den innebygde appen hjelpe deg med å få de nyansatte inn i organisasjonen ved å definere nøyaktige forventninger, formidle informasjon de trenger å komme i gang, sette dem i kontakt med kollegaer og legge alt til rette for at de skal lykkes i den nye rollen.  
+Talent inkluderer Attract, som kan hjelpe deg med å identifisere, intervjue og ansette kandidater som har ferdighetene som organisasjonen trenger. Når du flytter fra rekruttering til ansettelse, kan Onboard-appen hjelpe deg med å få de nyansatte inn i organisasjonen ved å definere nøyaktige forventninger, formidle informasjon de trenger å komme i gang, sette dem i kontakt med kollegaer og legge alt til rette for at de skal lykkes i den nye rollen.  
 
-- [Oversikt over Attract](attract-overview.md)
-- [Oversikt over Onboard](create-onboarding-experience.md)
+- [Microsoft Dynamics 365 Talent – Funksjoner og egenskaper for Attract](attract-overview.md)
+- [Komme i gang med Onboard](create-onboarding-experience.md)
 
 ## <a name="retain-and-motivate-employees"></a>Beholde og motivere ansatte
 
@@ -82,15 +82,15 @@ Du kan definere planer for å behandle kompensasjon effektivt og rettferdig, sam
 For å hjelpe de ansatte med å nå sine karrieremål samtidig som de oppfyller kritiske forretningsbehov, kan du definere mål, opprette medarbeiderevalueringer og spore tilbakemeldinger. For å hjelpe ansatte med å utvikle nødvendige kvalifikasjoner kan også definere instruktører, kurstyper, kurs, kursbeskrivelser, agendaer, sporinger og økter før du tilordner en instruktør til et kurs eller registrerer noen for et kurs. Instruktører må allerede finnes som arbeidere, søkere eller kontakter.
 
 -   [Ytelsesstyring](performance-management-overview.md)
--   [Justere ferdigheter og forretningsbehov for arbeidsstyrke](skills.md)
--   [Administrere opplæring via kurs](courses.md)
+-   [Justere ferdigheter med forretningsbehov for arbeidsstyrke](skills.md)
+-   [Definere opplæringskurs](courses.md)
 -   [Administrere ansattes utvikling i Dynamics 365 Talent (video)](https://www.youtube.com/watch?v=xB8SU7fqBOQ)
 
 ## <a name="create-and-maintain-benefits"></a>Opprette og vedlikeholde fordeler
 
 I tillegg til å kompensere dine ansatte med lønn og bonuser, kan du utvikle fordelsprogrammer som sykeforsikring og pensjonsplaner. Du kan også administrere fordeler, for eksempel låneprogrammer, der firmaet låner ut elementer, for eksempel datamaskiner eller telefoner, til sine ansatte.
 
--   [Administrere et fordelsprogram](manage-benefit-program.md)
+-   [Definere og administrere et fordelsprogram](manage-benefit-program.md)
 -   [Policyer for fordelsrettigheter](benefit-eligibility-policies.md)
 -   [Administrere varer som er lånt ut til arbeidere](loan-items.md)
 -   [Administrere ansattes fordeler i Dynamics 365 Talent (video)](https://www.youtube.com/watch?v=nUWkeJTad1o)
@@ -107,6 +107,6 @@ Talent kan bidra til å vedlikeholde et sikkert arbeidsmiljø som er i samsvar m
 Du kan utforme og administrere spørreskjemaer for å samle inn informasjon som brukes til forskjellige formål. Spørreskjema-funksjonen lar deg utforme og lage spørreskjemaer. Når et spørreskjema er klart, distribuerer du det til mange eller til et bestemt sett av respondentene, for utfylling. Når respondentene har avgitt svarene, kan du gå gjennom og analysere resultatene.
 
 -   [Spørreskjemaer](questionnaires.md)
--   [Utforme et spørreskjema](design-questionnaires.md)
--   [Distribuere og fylle ut et spørreskjema](distribute-questionnaires.md)
--   [Vise og evaluere resultatene i et spørreskjema](evaluate-questionnaire-results.md)
+-   [Utforme spørreskjema](design-questionnaires.md)
+-   [Distribuere og planlegge spørreskjemaer](distribute-questionnaires.md)
+-   [Vise og evaluere resultatene i spørreskjemaer](evaluate-questionnaire-results.md)

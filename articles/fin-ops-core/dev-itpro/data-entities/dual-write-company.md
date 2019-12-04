@@ -19,18 +19,16 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: aa4d54fd7b3ab407751ad6ca1032d742c23eed41
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 21c2143f4fa58d51f64e349c7963cb17e04bad97
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2184537"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2772443"
 ---
 ## <a name="company-concept-in-common-data-service"></a>Bedriftskonsept i Common Data Service
 
 [!include [banner](../includes/banner.md)]
-
-[!include [preview](../includes/preview-banner.md)]
 
 I Finance and Operations er konseptet av et *selskap* både en juridisk konstruksjon og en virksomhetskonstruksjon. Det er også en sikkerhets- og synlighetsgrense for data. Brukerne arbeider alltid i sammenheng med et enkelt selskap, og de fleste dataene er stripete av selskapet.
 
@@ -60,12 +58,14 @@ Som den foregående illustrasjonen viser, er denne 1:1-tilordningen mellom forre
 
 Et siste emne for å diskutere er hvordan dobbel skriving bestemmer hvilket eierteam det skal tildeles poster til. Denne virkemåten styres av feltet **Standard eiende team** i cdm\_firmaoppføringen. Når en cdm\_firmaoppføring er aktivert for dobbel skriving, oppretter en plugin-modul automatisk den tilknyttede forretningsenheten og eiergruppen (hvis den ikke allerede finnes), og angir feltet **Standard eiende team**. Administratoren kan endre dette feltet til en annen verdi. Administratoren kan imidlertid ikke tømme feltet så lenge enheten er aktivert for dobbel skriving.
 
+> [!div class="mx-imgBorder"]
 ![Feltet Standard eiende team](media/dual-write-default-owning-team.jpg)
 
 ## <a name="company-striping-and-bootstrapping"></a>Selskapets striping og bootstrapping
 
 Common Data Service-integrasjon bringer selskapet paritet ved hjelp av en bedrifts-ID til stripe data. Som følgende illustrasjon viser, er alle firmaspesifikke enheter utvidet slik at de har en mange-til-en (N:1)-relasjon til cdm\_-firmaenheten.
 
+> [!div class="mx-imgBorder"]
 ![N:1-relasjon mellom en firmaspesifikk enhet og cdm_firmaenheten](media/dual-write-bootstrapping.png)
 
 + Når et selskap er lagt til og lagret for poster, blir verdien skrivebeskyttet. Derfor bør brukerne sørge for at de velger riktig firma.

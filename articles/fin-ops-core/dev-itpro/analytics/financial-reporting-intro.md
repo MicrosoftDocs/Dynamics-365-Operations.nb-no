@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 4e9fe8f78121428770e6516159f5eceb6976c4c9
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: cdfa9ed24d0456d9beaec03ebac89098131d0675
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2181801"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2771148"
 ---
 # <a name="financial-reporting"></a>Finansrapportering
 
@@ -47,14 +47,14 @@ Finansrapporteringskomponentene nedenfor gjør det enkelt å opprette, vise og p
 | Komponent        | Funksjoner | Tilleggsinformasjon |
 |------------------|-----------|------------------------|
 | Rapportutforming  | Opprett rapportbyggeblokker som kan kombineres for å definere og generere en rapport. Rapportveiviseren veileder mindre erfarne brukere gjennom utformingsprosessen. Avanserte brukere kan opprette nye rapportbyggeblokker eller endre eksisterende byggeblokker for å oppfylle sine behov. | |
-| Rapporttidsplaner | Planlegge én enkelt rapport eller en gruppe rapporter, slik at de blir generert med jevne mellomrom. | [Generere en finansrapport](generate-financial-report.md) |
+| Rapporttidsplaner | Planlegge én enkelt rapport eller en gruppe rapporter, slik at de blir generert med jevne mellomrom. | [Generer finansrapporter](generate-financial-report.md) |
 
 ## <a name="features"></a>Funksjoner
 <table>
 <thead>
 <tr>
 <th>Funksjon</th>
-<th>beskrivelse</th>
+<th>Beskrivelse</th>
 </tr>
 </thead>
 <tbody>
@@ -96,4 +96,4 @@ Finansrapporteringskomponentene nedenfor gjør det enkelt å opprette, vise og p
 </table>
 
 ## <a name="additional-resources"></a>Tilleggsressurser
-[Generere en finansrapport](generate-financial-report.md)
+[Generer finansrapporter](generate-financial-report.md)

@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 43f14a1cbd016335b857fdff1147740b27d5c765
-ms.sourcegitcommit: 0099fb24f5f40ff442020b488ef4171836c35c48
+ms.openlocfilehash: 3d23375ec7ebe9b43c2d2e3e376e26c348131bd3
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "2653329"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812266"
 ---
 # <a name="register-consumption"></a>Registrere forbruk
 
@@ -33,7 +33,7 @@ ms.locfileid: "2653329"
 
 Når en vedlikeholdsjobb er fullført i en arbeidsordre, er neste trinn å gjøre forbruksregistreringer og postere journalene. Du kan gjøre registreringer for følgende forbrukstyper: timer, varer og utgifter. De forskjellige forbrukstypene registreres og posteres på siden **Arbeidsordrejournaler**. Journaloppsettet i **Aktivastyring** brukes til å opprette og postere separate journaler for timer, varer og utgifter i modulen **Prosjektstyring og regnskap**.
 
-I noen tilfeller kan du legge til eller slette prognoselinjer i en arbeidsordre. Oppsettet for en arbeidsordrelivssyklustilstand, den tilknyttede prosjekttypen og stadiereglene knyttet til prosjekttypen bestemmer om du kan legge til eller redigere journallinjer. Les mer om livssyklustilstander for arbeidsordrer og relaterte prosjektstadier i [Integrering til prosjektstyring og regnskap](../integration-to-project-management-and-accounting/forecasts-work-orders-and-projects.md).
+I noen tilfeller kan du legge til eller slette prognoselinjer i en arbeidsordre. Oppsettet for en arbeidsordrelivssyklustilstand, den tilknyttede prosjekttypen og stadiereglene knyttet til prosjekttypen bestemmer om du kan legge til eller redigere journallinjer. Les mer om livssyklustilstander for arbeidsordrer og relaterte prosjektstadier i [Prognoser, arbeidsordrer og prosjekter](../integration-to-project-management-and-accounting/forecasts-work-orders-and-projects.md).
 
 >[!NOTE]
 >Det er mulig å definere automatisk postering av journaler for en livssyklustilstand for arbeidsordrer. Se [Livssyklustilstand for arbeidsordre](../setup-for-work-orders/work-order-lifecycle-states.md) hvis du vil ha mer informasjon.

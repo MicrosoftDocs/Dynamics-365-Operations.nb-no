@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: mafoge
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: a3251368e92eb2e24eb9e64bb615027d038ff660
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 11f6c96cc07c63d2c0c6a94385916b3396a77ed5
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2251091"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2814979"
 ---
 # <a name="configure-app-field-names-in-warehousing-app"></a>Konfigurere navn på appfelt i lagerapp
 
@@ -32,7 +32,8 @@ ms.locfileid: "2251091"
 
 Dette emnet beskriver hvordan du definerer og konfigurerer navn på lagerappfelt og prioriteter i Dynamics 365 Supply Chain Management. 
 
-**Obs!** Dette emnet artikkelen gjelder funksjoner i Lagerstyring. Den gjelder ikke for funksjoner i Beholdningsstyring. Warehousing er en app som du kan bruke til å utføre lageroppgaver. Du kan definere og konfigurere feltnavnene som brukes i appen, samt konfigurere prioriteten som feltnavnene skal tilordnes. Dette emnet forklarer hvordan du definerer og konfigurerer disse navnene og prioriteringene for lagerappfelt, og hvordan de brukes i Warehousing. Hvis du vil ha detaljert informasjon om hvordan du konfigurerer tilkoblingen til Warehousing, kan du se opplæringen [Installere og konfigurere Warehousing](install-configure-warehousing-app.md).
+> [!NOTE]
+> Dette emnet artikkelen gjelder funksjoner i Lagerstyring. Den gjelder ikke for funksjoner i Beholdningsstyring. Warehousing er en app som du kan bruke til å utføre lageroppgaver. Du kan definere og konfigurere feltnavnene som brukes i appen, samt konfigurere prioriteten som feltnavnene skal tilordnes. Dette emnet forklarer hvordan du definerer og konfigurerer disse navnene og prioriteringene for lagerappfelt, og hvordan de brukes i Warehousing. Hvis du vil ha detaljert informasjon om hvordan du konfigurerer tilkoblingen til Warehousing, kan du se opplæringen [Oversikt over Installere og konfigurere lagerappen](install-configure-warehousing-app.md).
 
 ## <a name="configure-warehouse-app-field-names"></a>Konfigurere navn på lagerappfelt
 
@@ -142,4 +143,4 @@ Gjenstående metadata, for eksempel lokasjon, vises ikke på oppgavesiden, men v
 <a name="additional-resources"></a>Tilleggsressurser
 --------
 
-[Installere og konfigurere Microsoft Dynamics 365 for Finance and Operations – lager](install-configure-warehousing-app.md)
+[Oversikt over Installere og konfigurere lagerappen](install-configure-warehousing-app.md)

@@ -16,26 +16,26 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-06-28
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: a476163ba6f66ab60ed8bfea6198d02f13ac5136
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 5020b523ca5d76d36f7436a8f43e8629c029e3e8
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2182721"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2769884"
 ---
 # <a name="access-application-metadata-by-using-connected-applications"></a>Få tilgang til programmetadata ved hjelp av tilkoblede programmer
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-De følgende trinnene forklarer hvordan en RCS-bruker (Regulatory Configuration Service) i rollen Systemansvarlig eller Utvikler av elektronisk rapportering kan utforme en ny modelltilordning for elektronisk rapportering (ER) ved å bruke metadataene i Finance and Operations. Du får tilgang til programmetadata på nettet ved å bruke det RCS-tilkoblede programmet. Et ER-modelltilordningseksempel blir konfigurert for å gi tilgang til utenrikshandelstransaksjoner. For å fullføre disse trinnene må du først fullføre trinnene i emnet [Opprette en konfigurasjonsleverandør og merke den som aktiv](er-configuration-provider-mark-it-active-2016-11.md) i RCS. Hvis du ikke har fullført trinnene i emnet [Få tilgang til programmetadata ved hjelp av ER-konfigurasjon](access-application-metadata-er-configuration.md), går du til [siden med eksempler på elektronisk rapportering](https://go.microsoft.com/fwlink/?linkid=862266) for å laste ned og lagre følgende ER-konfigurasjoner: Foreign trade metadata.xml, Foreign trade model.xml, Foreign trade mapping.xml og deretter fullføre trinnene i fremgangsmåten.
+De følgende trinnene forklarer hvordan en RCS-bruker (Regulatory Configuration Service) i rollen Systemansvarlig eller Utvikler av elektronisk rapportering kan utforme en ny modelltilordning for elektronisk rapportering (ER) ved å bruke metadataene i Finance and Operations. Du får tilgang til programmetadata på nettet ved å bruke det RCS-tilkoblede programmet. Et ER-modelltilordningseksempel blir konfigurert for å gi tilgang til utenrikshandelstransaksjoner. For å fullføre disse trinnene må du først fullføre trinnene i RCS i emnet [Opprette konfigurasjonsleverandører og merke dem som aktive](er-configuration-provider-mark-it-active-2016-11.md). Hvis du ikke har fullført trinnene i emnet [Få tilgang til programmetadata ved hjelp av ER-konfigurasjon](access-application-metadata-er-configuration.md), går du til [siden med eksempler på elektronisk rapportering](https://go.microsoft.com/fwlink/?linkid=862266) for å laste ned og lagre følgende ER-konfigurasjoner: Foreign trade metadata.xml, Foreign trade model.xml, Foreign trade mapping.xml og deretter fullføre trinnene i fremgangsmåten.
 
 ## <a name="prerequisites"></a>Forutsetninger
 1. Gå til **Alle arbeidsområder** > **Elektronisk rapportering**. 
-2. Kontroller at konfigurasjonsleverandøren for eksempelfirmaet Litware, Inc. er tilgjengelig og merket som **Aktiv**. Hvis du ikke ser denne konfigurasjonsleverandøren, må du fullføre trinnene i prosedyren [Opprette en konfigurasjonsleverandør og merke den som aktiv](er-configuration-provider-mark-it-active-2016-11.md). 
+2. Kontroller at konfigurasjonsleverandøren for eksempelfirmaet Litware, Inc. er tilgjengelig og merket som **Aktiv**. Hvis du ikke ser denne konfigurasjonsleverandøren, må du fullføre trinnene i prosedyren [Opprette konfigurasjonsleverandører og merke dem som aktive](er-configuration-provider-mark-it-active-2016-11.md). 
 
 ## <a name="get-required-er-configurations"></a>Hente nødvendige ER-konfigurasjoner
 1. Klikk på **Rapporteringskonfigurasjoner**. 
-2. Hvis du allerede har fullført trinnene i prosedyren [(RCS) Få tilgang til programmetadata ved hjelp av en ER-konfigurasjon](access-application-metadata-er-configuration.md), har du allerede alle nødvendige ER-konfigurasjoner (konfigurasjoner for metadata, modell og tilordning for utenrikshandel) i gjeldende RCS-forekomst. Du kan hoppe over alle gjenstående trinn i denne underoppgaven. 
+2. Hvis du allerede har fullført trinnene i prosedyren [Få tilgang til programmetadata ved hjelp av en ER-konfigurasjon](access-application-metadata-er-configuration.md), har du allerede alle nødvendige ER-konfigurasjoner (konfigurasjoner for metadata, modell og tilordning for utenrikshandel) i gjeldende RCS-forekomst. Du kan hoppe over alle gjenstående trinn i denne underoppgaven. 
 3. Klikk på **Veksle**. 
 4. Klikk på **Last fra XML-fil**. 
 5. Klikk på **Bla gjennom**, og velg filen **Foreign trade metadata.xml**. 
@@ -72,8 +72,8 @@ De følgende trinnene forklarer hvordan en RCS-bruker (Regulatory Configuration 
 4. Velg **Utenrikshandelsmodell\Utenrikshandelstilordning** i treet. 
 5. Utvid delen **Forutsetninger**. 
 
-> [!NOTE]
-> Denne tilordningen henviser til metadatakonfigurasjonen for øyeblikket. Programmetadata fra denne konfigurasjonen tilbys mens denne modelltilordningen utformes. 
+    > [!NOTE]
+    > Denne tilordningen henviser til metadatakonfigurasjonen for øyeblikket. Programmetadata fra denne konfigurasjonen tilbys mens denne modelltilordningen utformes. 
 
 6. Klikk **Utforming**. 
 7. Klikk **Utforming**. 
@@ -81,8 +81,8 @@ De følgende trinnene forklarer hvordan en RCS-bruker (Regulatory Configuration 
 9. Klikk på **Legg til rot**. 
 10. Angi eller velg en verdi i **Tabell**-feltet. 
 
-> [!NOTE]
-> Denne tilordningen henviser til metadatakonfigurasjonen for øyeblikket. Programmetadata fra denne konfigurasjonen tilbys mens denne modelltilordningen utformes. 
+    > [!NOTE]
+    > Denne tilordningen henviser til metadatakonfigurasjonen for øyeblikket. Programmetadata fra denne konfigurasjonen tilbys mens denne modelltilordningen utformes. 
 
 11. Klikk på **Avbryt**. 
 12. Lukk siden. 
@@ -92,8 +92,8 @@ De følgende trinnene forklarer hvordan en RCS-bruker (Regulatory Configuration 
 1. Klikk **Rediger**. 
 2. Velg programmet **MyConnectedApp**. 
 
-> [!NOTE]
-> Denne tilordningen henviser for øyeblikket til metadataene i det valgte tilkoblede programmet. Når den samme tilordningen henviser til metadatakonfigurasjonen og det tilkoblede programmet samtidig, brukes metadata for det tilkoblede programmet. 
+    > [!NOTE]
+    > Denne tilordningen henviser for øyeblikket til metadataene i det valgte tilkoblede programmet. Når den samme tilordningen henviser til metadatakonfigurasjonen og det tilkoblede programmet samtidig, brukes metadata for det tilkoblede programmet. 
 
 3. Klikk **Utforming**. 
 4. Klikk **Utforming**. 
@@ -101,14 +101,14 @@ De følgende trinnene forklarer hvordan en RCS-bruker (Regulatory Configuration 
 6. Klikk på **Legg til rot**. 
 7. Angi eller velg en verdi i **Tabell**-feltet. 
 
-> [!NOTE]
-> Nå ble flere enn to programtabeller tilbudt siden denne tilordningen bruker alle metadataene i det tilkoblede programmet som er tilordnet for den. 
+    > [!NOTE]
+    > Nå ble flere enn to programtabeller tilbudt siden denne tilordningen bruker alle metadataene i det tilkoblede programmet som er tilordnet for den. 
 
 8. Klikk på **Avbryt**. 
 9. Klikk på **Valider**. 
 
-> [!NOTE]
-> Vi har bundet elementer i datamodellen til elementer i datakildene som er beskrevet, ved å bruke detaljer i metadata for det tilkoblede programmet som er tilordnet for denne tilordningen. 
+    > [!NOTE]
+    > Vi har bundet elementer i datamodellen til elementer i datakildene som er beskrevet, ved å bruke detaljer i metadata for det tilkoblede programmet som er tilordnet for denne tilordningen. 
 
 10. Lukk siden. 
 11. Lukk siden. 

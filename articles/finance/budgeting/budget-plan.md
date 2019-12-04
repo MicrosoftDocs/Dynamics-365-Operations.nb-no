@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a59ff16555bfcb55d2f21c09675e7ae0637bca8f
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: c9558013236a728e0fb9691f4edd719fe58d5457
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2188608"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2772151"
 ---
 # <a name="budget-planning"></a>Budsjettplanlegging
 
@@ -60,21 +60,19 @@ Julie bruker følgende Excel-mal til å forberede budsjettet:
 ## <a name="exercise-1-configuration"></a>Øvelse 1: konfigurasjon
 
 ### <a name="task-1-create-organizational-hierarchy"></a>**Oppgave 1: opprette et organisasjonshierarki**
-Siden hele budsjetteringsprosessen skjer i økonomiavdelingen, må Julie opprette et svært enkelt organisasjonshierarki som bare består av økonomiavdelingen. 1.1. Naviger til organisasjonshierarkier (Organisasjonsstyring &gt; Organisasjoner &gt; Organisasjonshierarkier), og klikk Ny-knappen
+Siden hele budsjetteringsprosessen skjer i økonomiavdelingen, må Julie opprette et svært enkelt organisasjonshierarki som bare består av økonomiavdelingen. 
 
-![Organisasjonshierarki](./media/screenshot3.png) 
+1.1. Naviger til organisasjonshierarkier (Organisasjonsstyring &gt; Organisasjoner &gt; Organisasjonshierarkier), og klikk Ny-knappen.
 
-1.2. Skriv inn navnet på organisasjonshierarkiet, og klikk knappen Tilordne formål
+![Organisasjonshierarkier](./media/screenshot3.png) 
 
-[![Navn](./media/screenshot4.png)](./media/screenshot4.png) 
+1.2. Skriv inn navnet på organisasjonshierarkiet, og klikk knappen Tilordne formål i Navn-boksen.
 
-1.3. Velg budsjettplanleggingsformålet, klikk Legg til-knappen, og tilordne det nylig opprettede organisasjonshierarkiet: 
+1.3. Velg budsjettplanleggingsformålet, klikk Legg til, og tilordne det nylig opprettede organisasjonshierarkiet. 
 
 [![Tilordne formål](./media/screenshot5.png)](./media/screenshot5.png)
 
 1.4. Gjenta trinnet ovenfor for sikkerhetsorganisasjonsformålet. Lukk skjemaet når du er ferdig.
-
-[![Sikkerhetsorg](./media/screenshot6.png)](./media/screenshot6.png)
 
 1.5. Klikk Vis-knappen i skjemaet Organisasjonshierarkier. Klikk Rediger i hierarkidesigneren, og opprett et hierarki ved å klikke Sett inn-knappen.
 
@@ -86,7 +84,7 @@ Siden hele budsjetteringsprosessen skjer i økonomiavdelingen, må Julie opprett
 
 1.7. Når du er ferdig, klikker du knappen Publiser og lukk. Velg 01.01.2015 som ikrafttredelsesdato for publisering av hierarkiet.
 
-[![Gjelder fra](./media/screenshot9.png)](./media/screenshot9.png)
+[![Ikrafttredelsesdato](./media/screenshot9.png)](./media/screenshot9.png)
 
 ### <a name="task-2-configure-user-security"></a>Oppgave 2: konfigurere brukersikkerhet
 Budsjettplanlegging bruker spesielle sikkerhetspolicyer for å konfigurere tilgang til data for budsjettplaner. Julie må gi seg selv tilgang til budsjettplaner. 
@@ -94,7 +92,7 @@ Budsjettplanlegging bruker spesielle sikkerhetspolicyer for å konfigurere tilga
 2.1. Bytt til konteksten med den juridiske enheten. 
 
 
-2.2. Gå til Budsjettering &gt; Oppsett &gt; Budsjettplanlegging &gt; Budsjettplanleggingskonfigurasjon. I Parametere-fanen setter du Sikkerhetsmodell-verdien til Basert på sikkerhetsorganisasjoner 
+2.2. Gå til Budsjettering &gt; Oppsett &gt; Budsjettplanlegging &gt; Budsjettplanleggingskonfigurasjon. I Parametere-fanen setter du Sikkerhetsmodell-verdien til Basert på sikkerhetsorganisasjoner. 
 
 [![Parametere](./media/screenshot11.png)](./media/screenshot11.png) 
 
@@ -102,11 +100,11 @@ Budsjettplanlegging bruker spesielle sikkerhetspolicyer for å konfigurere tilga
 
 [![Budsjettbehandling](./media/screenshot12.png)](./media/screenshot12.png) 
 
-2.4. Velg brukerrolle, og klikk Tilordne organisasjoner 
+2.4. Velg brukerrolle, og klikk Tilordne organisasjoner. 
 
-[![Tilordne organisasjon](./media/screenshot13.png)](./media/screenshot13.png)
+[![Tilordne organisasjoner](./media/screenshot13.png)](./media/screenshot13.png)
 
-2.5. Velg Gi tilgang til bestemte organisasjoner. Velg organisasjonshierarkiet som ble opprettet i det første trinnet. Velg Finans-noden, og klikk Gi tilgang til underordnede 
+2.5. Velg Gi tilgang til bestemte organisasjoner. Velg organisasjonshierarkiet som ble opprettet i det første trinnet. Velg Finans-noden, og klikk Gi tilgang til underordnede. 
 
 ***Viktig!*** *Kontroller at du er i konteksten med den juridiske enheten DEMF når du utfører denne oppgaven, siden organisasjonssikkerhet brukes per juridiske enhet* 
 
@@ -122,31 +120,23 @@ Budsjettplanlegging bruker spesielle sikkerhetspolicyer for å konfigurere tilga
 ### <a name="task-4-create-budget-plan-columns"></a>Oppgave 4: opprette budsjettplankolonner
 Budsjettplankolonner er enten monetære eller antallsbaserte kolonner som kan brukes i oppsett for budsjettplandokument. I vårt eksempel må vi opprette en kolonne for Faktisk, forrige år og 12 kolonner som skal representere hver måned i et budsjettert år. Kolonner kan opprettes ved ganske enkelt å klikke Legg til-knappen og fylle inn verdiene, eller ved hjelp av Dataenhet. Vi skal bruke Dataenhet til å fylle inn verdiene i denne laben. 
 
-4.1. Åpne Kolonner-siden i Budsjettering&gt;Oppsett &gt; Budsjettplanlegging &gt; Budsjettplanleggingskonfigurasjon. Klikk Office-knappen i øvre høyre hjørne i skjemaet, og velg Kolonner (ufiltrerte) 
+4.1. Åpne Kolonner-siden i Budsjettering&gt;Oppsett &gt; Budsjettplanlegging &gt; Budsjettplanleggingskonfigurasjon. Klikk Office-knappen i øvre høyre hjørne i skjemaet, og velg Kolonner (ufiltrerte). 
 
 [![Ufiltrerte kolonner](./media/screenshot16.png)](./media/screenshot16.png) 
 
-4.2. Systemet åpner Excel-arbeidsboken som skal brukes til å fylle inn verdiene. Hvis du får spørsmål, klikker du Aktiver redigering og alternativet for å klarere denne appen 
+4.2. Systemet åpner en Excel-arbeidsbok som skal brukes til å fylle inn verdiene. Hvis du får spørsmål, klikker du Aktiver redigering og alternativet for å klarere denne appen. 
 
-[![Aktiver redigering](./media/screenshot18.png)](./media/screenshot18.png) 
-
-[![Klarer denne appen](./media/screenshot17.png)](./media/screenshot17.png)
-
-4.3. Vi trenger flere kolonner til å fylle ut verdiene. Klikk Utforming i ruten til høyre for å legge til kolonner i rutenettet: 
+4.3. Vi trenger flere kolonner til å fylle ut verdiene. Klikk Utforming i ruten til høyre for å legge til kolonner i rutenettet. 
 
 [![Utforming](./media/screenshot19.png)](./media/screenshot19.png) 
 
-4.4. Klikk den lille blyantknappen ved siden av PlanColumns for å se de tilgjengelige kolonnene som skal legges til i rutenettet 
+4.4. Klikk blyantknappen ved siden av PlanColumns for å se de tilgjengelige kolonnene som skal legges til i rutenettet. 
 
 [![Rediger](./media/screenshot20.png)](./media/screenshot20.png) 
 
-4.5. Dobbeltklikk hvert tilgjengelige felt for å legge dem til i Valgte felt, og klikk Oppdater 
+4.5. Dobbeltklikk hvert tilgjengelige felt for å legge dem til i Valgte felt, og klikk Oppdater. 
 
-![Oppdatering](./media/screenshot21.png)](./media/screenshot21.png) 
-
-4.6. Legg til alle kolonnene som skal opprettes, i Excel-tabellen. Bruk Autofyll-funksjonen i Excel til å legge til linjene raskt. Kontroller at linjene legges til som en del av tabellen (når du bruker loddrett rulling, skal du kunne se kolonneoverskrifter øverst i rutenettet) 
-
-[![Autofyll](./media/screenshot22.png)](./media/screenshot22.png) 
+4.6. Legg til alle kolonnene som skal opprettes, i Excel-tabellen. Bruk Autofyll-funksjonen i Excel til å legge til linjene raskt. Kontroller at linjene legges til som en del av tabellen (når du bruker loddrett rulling, skal du kunne se kolonneoverskrifter øverst i rutenettet). 
 
 4.7. Gå tilbake til programmet, og oppdater siden. Publiserte verdier vises. 
 
@@ -170,7 +160,8 @@ Basert på oppsettdefinisjonen for budsjettplan kan vi opprette en Excel-mal som
 *Obs! Pass på at du velger Lagre som, og velg hvor malen skal lagres, slik at du kan redigere den. Hvis brukeren velger Åpne i dialogboksen uten å lagre, beholdes ikke endringene i filen når filen lukkes.* 
 [![Malvisning](./media/screenshot25.png)](./media/screenshot25.png) 
 
-5.3. &lt; Valgfritt trinn&gt; Endre Excel-malen slik at den ser mer brukervennlig ut. Legg til totalformler, overskriftsfelt, formatering og så videre. Lagre endringene, og last opp filen til budsjettplanoppsettet ved å klikke Oppsett &gt; Last opp [![Last opp](./media/screenshot26.png)](./media/screenshot26.png)
+5.3. &lt; Valgfritt trinn&gt; Endre Excel-malen slik at den ser mer brukervennlig ut. Legg til totalformler, overskriftsfelt, formatering og så videre. Lagre endringene, og last opp filen til budsjettplanoppsettet ved å klikke Oppsett &gt; Last opp. 
+
 
 ### <a name="task-6-create-a-budget-planning-process"></a>Oppgave 6: opprette en budsjettplanleggingsprosess
 Julie må opprette og aktivere en ny budsjettplanleggingsprosess der hele oppsettet ovenfor kombineres, for å begynne å registrere budsjettplaner. Budsjettplanleggingsprosessen definerer hvilke budsjetteringsorganisasjoner, arbeidsflyter, oppsett og maler som skal brukes til å opprette budsjettplaner. 
@@ -189,7 +180,7 @@ Julie må opprette og aktivere en ny budsjettplanleggingsprosess der hele oppset
 
 [![Alternative oppsett](./media/screenshot27.png)](./media/screenshot27.png) 
 
-6.2. Velg Handlinger &gt; Aktiver for å aktivere denne arbeidsflyten for budsjettplanlegging 
+6.2. Velg Handlinger &gt; Aktiver for å aktivere denne arbeidsflyten for budsjettplanlegging. 
 
 [![Aktiver](./media/screenshot28.png)](./media/screenshot28.png)
 
@@ -198,24 +189,22 @@ Julie må opprette og aktivere en ny budsjettplanleggingsprosess der hele oppset
 ### <a name="task-7-generate-initial-data-for-budget-plan-from-general-ledger"></a>Oppgave 7: generere innledende data for budsjettplan fra Økonomimodul
 7.1. Gå til Budsjettering &gt; Periodisk &gt; Generer budsjettplan fra økonomimodul. Fyll ut parameterne for periodisk prosess, og klikk Generer. 
 
-[![Generer](./media/screenshot29.png)](./media/screenshot29.png) 
-
 7.2. Gå til Budsjettering &gt; Budsjettplaner for å finne en budsjettplan som er opprettet av genereringsprosessen. 
 
 [![Budsjettplan](./media/screenshot30.png)](./media/screenshot30.png) 
 
-7.3. Åpne dokumentdetaljene ved å klikke dokumentnummerhyperkoblingen. Budsjettplan vises som definert i oppsettet som ble opprettet i denne laben 
+7.3. Åpne dokumentdetaljene ved å klikke dokumentnummerhyperkoblingen. Budsjettplan vises som definert i oppsettet som ble opprettet i denne laben. 
 
 [![Visning av budsjettplan](./media/screenshot31.png)](./media/screenshot31.png)
 
 ### <a name="task-8-create-current-year-budget-based-on-previous-year-actuals"></a>Oppgave 8: opprette budsjett for gjeldende år basert på fjorårets faktiske data
 Tildelingsmetoder kan brukes i budsjettplaner til å kopiere informasjon for budsjettplaner fra ett scenario til et annet, spre dem på tvers av perioder, eller tildele dem til dimensjoner. Vi skal bruke tildelinger til å opprette budsjett for gjeldende år fra fjoråret faktiske data. 
 
-8.1. Velg alle linjene i rutenettet for budsjettplandokument, og klikk knappen for å tildele budsjett 
+8.1. Velg alle linjene i rutenettet for budsjettplandokument, og klikk knappen for å tildele budsjett. 
 
 [![Alle linjer](./media/screenshot32.png)](./media/screenshot32.png) 
 
-8.2. Velg tildelingsmetode, periodenøkkel, kilde- og målscenarier, og klikk Tildel 
+8.2. Velg tildelingsmetode, periodenøkkel, kilde- og målscenarier, og klikk Tildel. 
 
 [![Tildel](./media/screenshot33.png)](./media/screenshot33.png)
 
@@ -224,15 +213,11 @@ Systemet kopierer fjorårets faktiske beløp til budsjettet for gjeldende år, o
 [![Salgskurve](./media/screenshot34.png)](./media/screenshot34.png)
 
 ### <a name="task-9-adjust-budget-plan-document-using-excel-and-finalize-the-document"></a>Oppgave 9: justere budsjettplandokument ved hjelp av Excel og gjøre ferdig dokumentet
-9.1. Klikk knappen for regnearket for å åpne dokumentinnholdet i Excel
-
-[![Excel](./media/screenshot35.png)](./media/screenshot35.png)
+9.1. Klikk knappen for regnearket for å åpne dokumentinnholdet i Excel.
 
 9.2. Når Excel-arbeidsboken åpnes, justerer du tallene i budsjettplandokument og klikker Publiser.
 
-[![Publiser](./media/screenshot36.png)](./media/screenshot36.png)
-
-9.3. Gå tilbake til budsjettplandokumentet. Klikk Arbeidsflyt &gt; Send inn for å godkjenne dokumentet automatisk
+9.3. Gå tilbake til budsjettplandokumentet. Klikk Arbeidsflyt &gt; Send inn for å godkjenne dokumentet automatisk.
 
 [![Godkjenn automatisk](./media/screenshot37.png)](./media/screenshot37.png) 
 
@@ -242,21 +227,21 @@ Når arbeidsflyten er fullført, endres stadiet for budsjettplandokument til god
 
 ### <a name="auto-approve-workflow-configuration"></a>Konfigurasjon av automatisk godkjenning av arbeidsflyt
 
-A. Budsjettering &gt; Oppsett &gt; Budsjettplanlegging &gt; Budsjetteringsarbeidsflyter Opprett en ny arbeidsflyt ved å bruke malen Arbeidsflyter for budsjettplanlegging:
+A. Budsjettering &gt; Oppsett &gt; Budsjettplanlegging &gt; Budsjetteringsarbeidsflyter. Opprett en ny arbeidsflyt med malen Arbeidsflyter for budsjettplanlegging:
 
 [![Opprette en ny arbeidsflyt](./media/screenshot39.png)](./media/screenshot39.png)
 
-Denne arbeidsflyten inneholder bare én oppgave – Faseovergang for budsjettplan 
+Denne arbeidsflyten inneholder bare én oppgave – Faseovergang for budsjettplan. 
 
 [![Faseovergang for budsjettplan](./media/screenshot40.png)](./media/screenshot40.png) 
 
 Lagre og aktiver arbeidsflyten. 
 
-B. Gå til Budsjettering &gt; Oppsett &gt; Budsjettplanlegging &gt; Budsjettplanleggingskonfigurasjon. Opprett to stadier i Stadier-fanen – Innledende og Sendt 
+B. Gå til Budsjettering &gt; Oppsett &gt; Budsjettplanlegging &gt; Budsjettplanleggingskonfigurasjon. Opprett to stadier i Stadier-fanen – Innledende og Sendt. 
 
 [![Opprinnelig og sendt](./media/screenshot41.png)](./media/screenshot41.png)
 
-C. Gå til Budsjettering &gt; Oppsett &gt; Budsjettplanlegging &gt; Budsjettplanleggingskonfigurasjon. I Arbeidsflytstadier-fanen knytter du arbeidsflyten for automatisk godkjenning som ble opprettet i trinn A, til stadiene Innledende og Sendt 
+C. Gå til Budsjettering &gt; Oppsett &gt; Budsjettplanlegging &gt; Budsjettplanleggingskonfigurasjon. I Arbeidsflytstadier-fanen knytter du arbeidsflyten for automatisk godkjenning som ble opprettet i trinn A, til stadiene Innledende og Sendt.
 
 [![Budsjettering og budsjettplanlegging](./media/screenshot42.png)](./media/screenshot42.png)  
 

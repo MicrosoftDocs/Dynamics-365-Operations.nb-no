@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2dd3915d9eb5b255e9d84e5ec7c331d184e5f485
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 0588ad24cb28a32557361e1a2e5391502a8b46d7
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2250697"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2814267"
 ---
 # <a name="master-planning-home-page"></a>Startside for hovedplanlegging
 
@@ -39,9 +39,9 @@ Hovedplanlegging bruker informasjonen til å beregne behovene og generere planla
 
 De tre hovedplanleggingsprosessene er:
 
--  **Hovedplanlegging** - Hovedplanen beregner nettobehov. Den er basert på faktiske gjeldende ordrer og gjør det mulig for selskapet å kontrollere etterfylling av lagre på kort sikt, på daglig basis. En annen term som beskriver det, er *nettobehovsplan*. Hvis du vil ha mer informasjon, kan du se [Hovedplanlegging](master-plans.md). 
+-  **Hovedplanlegging** - Hovedplanen beregner nettobehov. Den er basert på faktiske gjeldende ordrer og gjør det mulig for selskapet å kontrollere etterfylling av lagre på kort sikt, på daglig basis. En annen term som beskriver det, er *nettobehovsplan*. Hvis du vil ha mer informasjon om hovedplaner, kan du se [Oversikt over hovedplaner](master-plans.md). 
 
--  **Prognoseplanlegging** - Prognoseplanen beregner bruttobehov. Det er basert på fremtidige overslag (eller prognoser), og gjør det mulig for selskaper å utføre langsiktig planlegging av materialer og kapasitet. Hvis du vil ha mer informasjon, kan du se [Prognoseplanlegging](introduction-demand-forecasting.md). 
+-  **Prognoseplanlegging** - Prognoseplanen beregner bruttobehov. Det er basert på fremtidige overslag (eller prognoser), og gjør det mulig for selskaper å utføre langsiktig planlegging av materialer og kapasitet. Hvis du vil ha mer informasjon, kan du se [Oversikt over behovsprognose](introduction-demand-forecasting.md). 
 
 -  **Konsernintern hovedplanlegging** - Den konserninterne hovedplanen beregner nettobehov på tvers av juridiske enheter. Den kobler behov og forsyning mellom firmaer, ikke bare for kortsiktig fast behov og forsyning, men også for langsiktig og planlagt (som ikke har autorisasjon) behov og forsyning. Hvis du vil ha mer informasjon, se [Konsernintern hovedplanlegging](https://mbspartner.microsoft.com/AX/CourseOverview/1276) (e-læring) (krever CustomerSource-konto). 
 
@@ -57,13 +57,13 @@ De følgende opplæringskart viser de store konseptene og oppgavene som utgjør 
 
 ## <a name="quick-links"></a>Hurtigkoblinger
 
-- [Hovedplaner](master-plans.md)  
+- [Oversikt over hovedplaner](master-plans.md)  
 - [Generere en begrenset plan](./tasks/constrained-plan.md)
 - [Opprette en materialplan for koprodukter](./tasks/create-material-plan-co-products.md)
-- [Hovedplanlegging og multisite-funksjonalitet](master-plan-multisite-functionality.md)
+- [Oversikt over hovedplanlegging og multisite-funksjonalitet](master-plan-multisite-functionality.md)
 - [Opprette en konsernintern plan](./tasks/create-intercompany-plan.md)
 - [Oversikt over behovsprognose](introduction-demand-forecasting.md)
-- [Reduksjonsnøkler](reduction-keys.md)
+- [Prognosereduksjonsnøkler](reduction-keys.md)
                                   
 ## <a name="additional-resources"></a>Tilleggsressurser
 

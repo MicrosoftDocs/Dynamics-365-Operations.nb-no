@@ -3,7 +3,7 @@ title: Startside for lokal distribusjon
 description: Dette emnet gir informasjon og koblinger til innhold om lokale distribusjoner.
 author: kfend
 manager: AnnBe
-ms.date: 10/02/2019
+ms.date: 11/04/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: 52418030c0c7a56e549e6645beae1d94ae7bfafd
-ms.sourcegitcommit: 7bec89b33a56447072d01066af4da473b8092ca8
+ms.openlocfilehash: 81698517dc501a6001f62216f3804510144c1045
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "2536953"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2770952"
 ---
 # <a name="on-premises-deployment-home-page"></a>Startside for lokal distribusjon
 
@@ -31,11 +31,11 @@ ms.locfileid: "2536953"
 Du kan distribuere Dynamics 365 Finance + Operations (lokal). Når du velger en lokal distribusjonstype, er systemkrav, maskinvarestørrelse og funksjonaliteten forskjellig fra en skydistribusjon. Dette emnet gir koblinger til innhold med spesifikk informasjon om lokale distribusjoner.
 
 ## <a name="get-started"></a>Komme i gang
-- [Alternativ for lokal distribusjon](on-premises-overview.md)
+- [Oversikt over lokal distribusjon](on-premises-overview.md)
 - [Planlegge og klargjøre for lokale distribusjoner](plan-onprem-deployment.md)
 - [Systemkrav for lokale distribusjoner](../../fin-ops/get-started/system-requirements-on-prem.md)
-- [Størrelsesangivelse for maskinvare for lokale miljøer](../../fin-ops/get-started/hardware-sizing-on-premises-environments.md)
-- [Kjøpe Finance + Operations (lokal)](../../fin-ops/get-started/purchase-on-premises.md)
+- [Krav til størrelsesangivelse for maskinvare for lokale miljøer](../../fin-ops/get-started/hardware-sizing-on-premises-environments.md)
+- [Kjøpe Finance + Operations (on-premises)](../../fin-ops/get-started/purchase-on-premises.md)
 - [Sammenligning av skyfunksjoner og lokale funksjoner](../../fin-ops/get-started/cloud-prem-comparison.md)
 
 ## <a name="onboard"></a>Jobbintroduksjon
@@ -50,8 +50,8 @@ Du kan distribuere Dynamics 365 Finance + Operations (lokal). Når du velger en 
 - [Konfigurere dokumentstyring](../../fin-ops/organization-administration/configure-document-management.md)
 - [Importere konfigurasjoner for elektronisk rapportering (ER)](../analytics/electronic-reporting-import-ger-configurations.md)
 - [Dokumentgenerering, publisering og utskrift i lokale distribusjoner](../analytics/printing-capabilities-on-premises.md)
-- [Konfigurere omvendte proxyer for lokale miljøer](onprem-reverseproxy.md)
-- [Konfigurere teknisk støtte](../lifecycle-services/support-experience.md)
+- [Konfigurere proxyer for lokale miljøer](onprem-reverseproxy.md)
+- [Konfigurere teknisk støtte for Finance and Operations-apper](../lifecycle-services/support-experience.md)
 - [Internett-tilkobling for klient](../user-interface/client-disconnected.md)
 - [Bruke oppdateringer i lokale distribusjoner](apply-updates-on-premises.md)
 - [Omplassere lokale miljøer](redeploy-on-prem.md)
@@ -67,9 +67,10 @@ Du kan distribuere Dynamics 365 Finance + Operations (lokal). Når du velger en 
 
 ## <a name="other-resources"></a>Andre ressurser
 - [Feilsøke lokale distribusjoner](troubleshoot-on-prem.md)
+- [Skript for å løse problemer i lokale miljøer](onprem-tsg-implementations.md)
 - [Sertifikatrotasjon](certificate-rotation-on-prem.md)
 - [Lokal diagnostikk](on-premises-diagnostics.md)
-- [Funksjoner som ikke implementeres i lokale distribusjoner](../../fin-ops/get-started/features-not-implemented-on-prem.md)
-- [Funksjoner som er fjernet eller avskrevet](../migration-upgrade/deprecated-features.md)
+- [Funksjoner som ikke er implementert i lokale distribusjoner](../../fin-ops/get-started/features-not-implemented-on-prem.md)
+- [Funksjoner som er fjernet eller utgått for Finance and Operations](../migration-upgrade/deprecated-features.md)
 - [Policy og lokale versjoner for programvarelivssyklus](../migration-upgrade/on-prem-version-update-policy.md)
  

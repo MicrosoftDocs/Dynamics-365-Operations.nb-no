@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: fdahl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a8e5fd05f3114eb99b7e8b4390827d5ccd52832a
-ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
+ms.openlocfilehash: c527735ea65dad84c5d3d405eac2ead35d3c792d
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "2572218"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2815371"
 ---
 # <a name="purchase-order-overview"></a>Oversikt over bestilling
 
@@ -41,9 +41,9 @@ Arbeidsområdene **Bestillingsklargjøring** og **Bestillingsmottak og oppfølgi
 
 Artiklene nedenfor inneholder en oversikt over de ulike stadiene som en bestilling går gjennom:
 
--   [Opprett bestilling](purchase-order-creation.md)
--   [Bestillingsgodkjenning og -bekreftelse](purchase-order-approval-confirmation.md)
--   [Produktkvittering mot kjøpsordrer](product-receipt-against-purchase-orders.md)
+-   [Opprette bestillinger](purchase-order-creation.md)
+-   [Godkjenne og bekrefte bestillinger](purchase-order-approval-confirmation.md)
+-   [Mottaksseddel mot bestillinger](product-receipt-against-purchase-orders.md)
 -   [Oversikt over leverandørfakturaer](../../financials/accounts-payable/vendor-invoices-overview.md)
 
 ## <a name="types-of-purchase-orders"></a>Bestillingstyper
@@ -82,11 +82,11 @@ Feltet **Godkjenningsstatus** brukes når en bestilling går gjennom en vurderin
 <a name="additional-resources"></a>Tilleggsressurser
 --------
 
-[Opprett bestilling](purchase-order-creation.md)
+[Opprette bestillinger](purchase-order-creation.md)
 
-[Bestillingsgodkjenning og -bekreftelse](purchase-order-approval-confirmation.md)
+[Godkjenne og bekrefte bestillinger](purchase-order-approval-confirmation.md)
 
-[Produktkvittering mot kjøpsordrer](product-receipt-against-purchase-orders.md)
+[Mottaksseddel mot bestillinger](product-receipt-against-purchase-orders.md)
 
 [Oversikt over leverandørfakturaer](../../financials/accounts-payable/vendor-invoices-overview.md)
 

@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 511108e689c10e27a42253d95b02e5394f9eb713
-ms.sourcegitcommit: fb66731f05207094149a6bc7b8549a4dabbb071a
+ms.openlocfilehash: 476b01a4bae34a271203f34481ff18042783d4df
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "2652362"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811269"
 ---
 # <a name="item-where-used"></a>Brukssted for vare
 
@@ -33,15 +33,15 @@ ms.locfileid: "2652362"
 
 Du kan foreta en beregning for en bestemt vare for å få en oversikt over hvor i Aktivastyring varen er brukt. Resultatene viser konteksten som varen ble brukt i, i løpet av varens levetid. Siden **Vare der brukt** kan åpnes fra hovedmenyen for Aktivastyring, og kan også nås fra følgende sider:
 
-- [Stykkliste for aktiva](../objects/object-BOM.md)
+- [Stykklister for aktiva](../objects/object-BOM.md)
 
-- [Reservedeler på aktivatypestandarder](../setup-for-objects/object-types.md)
+- [Reservedeler på aktivatypestandarder](../setup-for-objects/object-types.md#spare-parts-on-the-asset-type-setup)
 
-- [Vareprognose i prognose for vedlikeholdsjobbtypestandarder](../setup-for-work-orders/job-groups-and-job-types-variants-trades-and-checklists.md)
+- [Kategorier for vedlikeholdsjobbtype og vedlikeholdsjobbtyper, varianter av vedlikeholdsjobbtype, handel for vedlikeholdsjobb og sjekklister for vedlikehold](../setup-for-work-orders/job-groups-and-job-types-variants-trades-and-checklists.md)
 
-- [Prognose for vedlikehold av arbeidsordre](../work-orders/maintenance-forecasts.md)
+- [Vedlikeholdsprognose](../work-orders/maintenance-forecasts.md)
 
-- [Innkjøpsrekvisisjon for arbeidsordre](../work-orders/procurement.md)
+- [Innkjøp](../work-orders/procurement.md)
 
 - [Innkjøp for arbeidsordre](../work-orders/procurement.md)
 

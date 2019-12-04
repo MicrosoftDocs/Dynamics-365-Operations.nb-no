@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0734db6f777de2bcd6ea024c9255f589c155e44f
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: ec2874fb21184ccbf4f7039acf20db399e5cf5fb
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1569828"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2813345"
 ---
 # <a name="use-external-catalogs-for-punchout-eprocurement"></a>Bruke eksterne kataloger for PunchOut eProcurement
 
@@ -41,7 +41,7 @@ Bruk linjehandlingen **Eksterne kataloger** for å åpne en side som inneholder 
 
 Avhengig av tillatelsene dine, kan du endre bestiller, juridisk enhet for innkjøp og mottaksdriftsenhet. En endring i disse verdiene kan endre listen over eksterne kataloger som er tilgjengelige for en bestiller. De eksterne katalogene som er tilgjengelige, avhenger av de gjeldende aktive innkjøpspolicyene for den juridiske enheten for innkjøp eller mottaksdriftsenheten. Disse policyene kan tillate eller hindre tilgang til bestemte innkjøpskategorier. Listen over eksterne kataloger som er tilordnet disse innkjøpskategoriene, kan derfor bli påvirket.
 
-Hvis du vil ha mer informasjon om policyer, kan du se [Innkjøpspolicyer](../procurement/purchase-policies.md).
+Hvis du vil ha mer informasjon om policyer, kan du se [Oversikt over innkjøpspolicyer](../procurement/purchase-policies.md).
 
 - For å finne eksterne kataloger for bestemte innkjøpskategorier skriver du inn tekst i katalogsøkefeltet.
 - Hvis du vil legge til produkter fra ekstern katalog for en leverandør på leverandørens webområde, klikker du den eksterne katalogen. Legg deretter til produkter i handlekurven, og sjekk ut. Handlekurvene overføres til Microsoft Dynamics 365.

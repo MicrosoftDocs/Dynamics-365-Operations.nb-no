@@ -3,7 +3,7 @@ title: Vedlikeholde planlagte ordrer
 description: Dette emnet gir informasjon om hvordan du behandler planlagte ordrer. Den beskriver hvordan du kan oppdatere statusen for planlagte ordrer, autorisere dem og filtrere etter planlagte ordrer som har samme status som en valgt planlagt ordre.
 author: roxanadiaconu
 manager: AnnBe
-ms.date: 09/09/2019
+ms.date: 11/07/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5ddf2c7b4c67bec6c29387c78d1fdb021d85d702
-ms.sourcegitcommit: 620e15555d176eec3905b48d5001af1c50107ce6
+ms.openlocfilehash: 68bccb632255eac975dc150cf322d4c579ff2f24
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/09/2019
-ms.locfileid: "1993446"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2813782"
 ---
 # <a name="maintain-planned-orders"></a>Vedlikeholde planlagte ordrer
 
@@ -39,7 +39,7 @@ Du kan bruke **Status**-feltet til å spore fremdriften. Følgende verdier bruke
 
 -   Når hovedplanlegging genererer planlagte ordrer, har de planlagte ordrene statusen **Ubehandlet**.
 -   Hvis du velger ikke å autorisere en planlagt bestilling, kan du gi den statusen **Fullført**.
--   Hvis du vil autorisere en planlagt ordre, kan du endre statusen til **Godkjent**. Planlagte ordrer med **Godkjent**-status overholdes av hovedplanlegging, slik at de ikke blir endret eller slettet. 
+-   Hvis du vil autorisere en planlagt ordre, kan du endre statusen til **Godkjent**. Planlagte ordrer med **Godkjent**-status overholdes av hovedplanlegging, slik at de ikke blir endret eller slettet under en senere kjøring av hovedplanlegging. 
 
 ## <a name="firming-planned-orders"></a>Autorisere planlagte ordrer 
 Ved å autorisere planlagte ordre opprettes det reelle ordrer. Disse kalles også *frigitte* eller *åpne ordrer*. Når en planlagt bestilling autoriseres, flyttes den til bestillingsdelen i den aktuelle modulen.
@@ -62,7 +62,7 @@ Hvis du planlegger å autorisere mange ordrer samtidig, kan parallellisering av 
 <a name="additional-resources"></a>Tilleggsressurser
 --------
 
-[Hovedplaner](master-plans.md)
+[Oversikt over hovedplaner](master-plans.md)
 
 
 

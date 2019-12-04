@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: rschloma
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 974f99632738cfc6eec5ff85965f4e9f9608a8b5
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 3e110c7fe6881825fe2b075c1795bc4f7e938da4
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2179340"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811513"
 ---
 # <a name="view-and-export-field-descriptions"></a>Vise og eksportere feltbeskrivelser
 
@@ -35,7 +35,7 @@ Noen av de mer kompliserte feltene har feltbeskrivelser. Disse beskrivelsene vis
 
 Ikke alle sider har feltbeskrivelser. Vi vil bare gi beskrivelser for de mer komplekse feltene, og ikke der bruken av feltet er åpenbart. Derfor ha noen sider ikke noen feltbeskrivelser, noen sider har noen få beskrivelser og noen av de mer komplekse sidene, for eksempel mange av parametersidene, har mange beskrivelser.
 
-Hvis du har tilgang til utviklingsmiljøet, kan du legge til nye feltbeskrivelser og tilpasse eksisterende beskrivelser. Du kan for eksempel legge til firmaspesifikk informasjon i en feltbeskrivelse. Hvis du vil ha mer informasjon, kan du se [hjelpen for å tilpasse felt](../../dev-itpro/user-interface/customize-field-help.md).
+Hvis du har tilgang til utviklingsmiljøet, kan du legge til nye feltbeskrivelser og tilpasse eksisterende beskrivelser. Du kan for eksempel legge til firmaspesifikk informasjon i en feltbeskrivelse. Hvis du vil ha mer informasjon, kan du se [Tilpasse feltbeskrivelser](../../dev-itpro/user-interface/customize-field-help.md).
 
 ## <a name="see-field-descriptions-in-the-user-interface"></a>Se feltbeskrivelsene i brukergrensesnittet.
 
@@ -107,4 +107,4 @@ Hvis du vil ha informasjon om de forskjellige måtene å finne sider, kan du se 
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 
-[Hjelp for å tilpasse felt](../../dev-itpro/user-interface/customize-field-help.md)
+[Tilpasse feltbeskrivelser](../../dev-itpro/user-interface/customize-field-help.md)

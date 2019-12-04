@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: bdfd8ca5e4feb236bc1b4e88a4dd3817a07e8a3f
-ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
+ms.openlocfilehash: 2a5da707069966ea0dac282b2a0b2074ec5a41ff
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "2571007"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812243"
 ---
 # <a name="maintenance-job-type-categories-and-maintenance-job-types-maintenance-job-type-variants-maintenance-job-trades-and-maintenance-checklists"></a>Kategorier for vedlikeholdsjobbtyper og vedlikeholdsjobbtyper, varianter av vedlikeholdsjobbtyper, vedlikeholdsjobbfag og sjekklister for vedlikehold
 
@@ -33,7 +33,7 @@ ms.locfileid: "2571007"
 
 En aktivatype er knyttet til hvert aktiva. Aktivatyper definerer vedlikeholdsjobbtypene (og dermed vedlikeholdsjobbene) som kan utføres på aktiva. Når du oppretter en arbeidsordre, må du velge en vedlikeholdsjobbtype. Du kan bare velge vedlikeholdsjobbtypene som er relatert til oppsettet for aktivatypen som brukes for aktivaet.
 
-Hvis du vil ha en grafisk oversikt over aktiva og vedlikeholdsjobbtyper og deres tilknytning til arbeidsordrer, kan du se [Aktiva og arbeidsordrer](../overview/functional-locations-and-objects.md).
+Hvis du vil ha en grafisk oversikt over aktiva og vedlikeholdsjobbtyper og deres tilknytning til arbeidsordrer, kan du se [Arbeidssteder og aktiva](../overview/functional-locations-and-objects.md).
 
 Du kan definere varianter av vedlikeholdsjobbtyper for en vedlikeholdsjobbtype. Varianter av vedlikeholdsjobbtyper angir variasjoner av en jobbtype, for eksempel størrelse (liten, middels eller stor), perioder (ukentlig, annenhver uke, én måned eller tre måneder) og konfigurasjoner (lav standard, fleksibel eller høy ytelse).
 

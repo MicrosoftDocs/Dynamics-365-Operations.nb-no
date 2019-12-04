@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
-ms.openlocfilehash: 8d94cf24040e5f653bc053f2df0a45e1afa23adc
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 6405b6a680f31c62e16f3bb707ec0a4ccdad3d23
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1518764"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2813920"
 ---
 # <a name="design-questionnaires"></a>Utforme spørreskjemaer
 
@@ -110,7 +110,8 @@ Svargrupper og svar er komponenter som utgjør hoveddelen av informasjon som sp�
 
 En svargruppe kan brukes til flere spørsmål i det samme spørreskjemaet og kan også brukes i flere spørreskjemaer. 
 
-**Obs!** Hvis du endrer svarteksten i svargrupper som allerede er brukt i fullførte spørreskjemaer, kan data bli vanskelige å evaluere, og spørreskjemaresultater slutter kanskje å være gyldige. Hvis du må endre en svargruppe, bør du vurdere å opprette en ny svargruppe i stedet for å endre en eksisterende. Du kan ikke slette svargrupper som er knyttet til et spørsmål eller svar, eller som er besvart.
+> [!NOTE]
+> Hvis du endrer svarteksten i svargrupper som allerede er brukt i fullførte spørreskjemaer, kan data bli vanskelige å evaluere, og spørreskjemaresultater slutter kanskje å være gyldige. Hvis du må endre en svargruppe, bør du vurdere å opprette en ny svargruppe i stedet for å endre en eksisterende. Du kan ikke slette svargrupper som er knyttet til et spørsmål eller svar, eller som er besvart.
 
 ### <a name="questions"></a>Spørsmål
 
@@ -118,12 +119,16 @@ Et spørreskjema må inneholde spørsmål. Spørsmål kan enten være åpne elle
 
 -   Svarene på åpne spørsmål kontrolleres ikke, og respondentene kan skrive inn svarene sine.
 -   Lukkede spørsmål krever en liste over forhåndsdefinerte svaralternativer, og spørsmålene kan struktureres slik at en respondent kan velge flere svar. Spørsmål bør utformes slik at respondenten gir spesifikk informasjon, og de må kobles til en svargruppe som gir svaralternativene for hvert lukkede spørsmål. 
-     -  **Obs!** Før du kan definere lukkede spørsmål, må du opprette svargrupper og svar.
+
+    > [!NOTE]
+    > Før du kan definere lukkede spørsmål, må du opprette svargrupper og svar.
 
 Spørsmål kan ordnes i et hierarki for betingede spørsmål, slik at sekundære spørsmål avhenger av svaret respondenten valgte for det forrige spørsmålet. Du kan skrive spørsmålene først og deretter ordne dem i et hierarki senere.
 
 ## <a name="setting-up-questionnaires"></a>Definere spørreskjemaer
-**Obs!** Før du kan opprette et spørreskjema, må du definere svar, spørsmål og forutsetninger. 
+
+> [!NOTE]
+> Før du kan opprette et spørreskjema, må du definere svar, spørsmål og forutsetninger. 
 
 For hvert spørreskjema kan du angi følgende informasjon:
 
@@ -159,7 +164,8 @@ Du kan fullføre følgende oppgaver på **Spørreskjemaer**-siden:
 -   Slette og legge til spørsmål
 -   Gjøre endringer i resultatgruppene og serienummeret 
 
-**Forsiktig!** Vær forsiktig når endrer spørreskjemaer som allerede er besvart. Endringer kan redusere nøyaktigheten til statistikk og derfor gjøre statistikken til et dårlig evalueringsgrunnlag. Vurder å lage et nytt spørsmål i stedet for å endre et spørsmål som allerede er besvart.
+> [!CAUTION]
+> Vær forsiktig når endrer spørreskjemaer som allerede er besvart. Endringer kan redusere nøyaktigheten til statistikk og derfor gjøre statistikken til et dårlig evalueringsgrunnlag. Vurder å lage et nytt spørsmål i stedet for å endre et spørsmål som allerede er besvart.
 
 Du kan ikke slette følgende typer spørsmål i et spørreskjema:
 
@@ -177,7 +183,8 @@ En resultatgruppe brukes til å beregne poeng og kategorisere resultatene i et s
 -   Generere statistikk for hver resultatgruppe for å hjelpe deg med å analysere resultatene.
 -   Skrive ut en rapport som viser resultatene for hver resultatgruppe, samt valgfrie poeng/tekster som er basert på poeng som fås i hver resultatgruppe.
 
-**Obs!** Før du kan definere resultatgruppene, må du fullføre følgende oppgaver:
+> [!NOTE]
+> Før du kan definere resultatgruppene, må du fullføre følgende oppgaver:
 
 -   Definer lukkede spørsmål. Når det gjelder lukkede spørsmål, må inndatatypen på **Spørsmål**-siden være **Avmerkingsboks**, **Alternativknapp** eller **Kombinasjonsboks**.
 -   Definer poeng for svar i svargruppene som er tilordnet hvert spørsmål.
@@ -187,7 +194,8 @@ Hvis du vil knytte spørsmål til et spørreskjema ved hjelp av resultatgrupper,
 
 Du kan definere flere resultatgrupper for å evaluere poengene en respondent får i hver kategori. Når et spørreskjema er fullført, kan du vise poengene som er oppnådd for hver resultatgruppe. 
 
-**Tips!** Hvis du vil evaluere et spørreskjema ved å bruke poeng, men ikke separate kategorier, kan du legge til alle spørsmål i én resultatgruppe. 
+> [!TIP]
+> Hvis du vil evaluere et spørreskjema ved å bruke poeng, men ikke separate kategorier, kan du legge til alle spørsmål i én resultatgruppe. 
 
 For hver resultatgruppe kan du også definere én eller flere poengbaserte meldinger som respondenter får når de har fullført et spørreskjema. Teksten som vises, kan variere avhengig av poengsummen en respondent får i en resultatgruppe. Hvis du vil bruke poengbaserte meldinger, må du definere du poengintervaller og en beskrivelse av hvert intervall. Når en respondent oppnår en poengsum i et bestemt intervall, tas teksten for dette intervallet med i resultatrapporten. 
 
@@ -213,13 +221,15 @@ Tabellen nedenfor viser poengbaserte meldinger som du definerer for resultatgrup
 
 Du kan definere poengintervaller og tekster for hver resultatgruppe i et spørreskjema. Tekster som svarer til hver enkelt respondents poengsum, vises for hver resultatgruppe. 
 
-**Obs!** Du kan endre intervaller og tekster. Vær likevel oppmerksom på at hvis et spørreskjema er ferdig utfylt, kan endringer føre til forskjeller mellom tidligere og nye resultatrapporter.
+> [!NOTE]
+> Du kan endre intervaller og tekster. Vær likevel oppmerksom på at hvis et spørreskjema er ferdig utfylt, kan endringer føre til forskjeller mellom tidligere og nye resultatrapporter.
 
 ### <a name="conditional-question-hierarchies"></a>Hierarkier for betingede spørsmål
 
 Hierarkier for betingede spørsmål er valgfrie når du definerer et spørreskjema. 
 
-**Obs!** Før du kan opprette et hierarki for betingede spørsmål, må du knytte spørsmål som har tilordnede svargrupper, til spørreskjemaet. 
+> [!NOTE]
+> Før du kan opprette et hierarki for betingede spørsmål, må du knytte spørsmål som har tilordnede svargrupper, til spørreskjemaet. 
 
 Hvis du vil bruke betingede spørsmål til å opprette et spørsmålshierarki i et spørreskjema, kan du gjøre rekkefølgen som spørsmålene stilles i, avhengig av svaret en respondent velger for hvert spørsmål. Når du baserer spørsmålsrekkefølgen på svaret til en respondent, kan du endre spørreskjemaet mens respondenten fyller det ut.
 
@@ -232,9 +242,9 @@ Alternativt kan du definere du et spørreskjema slik at hvis en respondent velge
 <a name="additional-resources"></a>Tilleggsressurser
 --------
 
-[Bruke spørreskjemaer](questionnaires.md)
+[Spørreskjemaer](questionnaires.md)
 
-[Distribuere og fylle ut spørreskjemaer](distribute-questionnaires.md)
+[Distribuere og planlegge spørreskjemaer](distribute-questionnaires.md)
 
 [Vise og evaluere resultatene i spørreskjemaer](evaluate-questionnaire-results.md)
 

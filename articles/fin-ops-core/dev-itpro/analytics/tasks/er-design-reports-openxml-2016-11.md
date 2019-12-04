@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: d1229c89f43f9ded955dadf2f4d87825c9ab4e71
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: fcceb0e4d5f3bec54598515da0a5cbd8d11def3d
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2182583"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2769861"
 ---
 # <a name="er-design-a-configuration-for-generating-reports-in-openxml-format-november-2016"></a>ER Utforme en konfigurasjon for generering av rapporter i OPENXML-format (november 2016)
 
@@ -36,7 +36,7 @@ For å fullføre disse trinnene må du først fullføre trinnene i fremgangsmåt
 
 ## <a name="upload-the-payments-data-model-configuration"></a>Laste opp modellkonfigurasjon for betalingsdata
 1. I navigasjonsruten går du til **Moduler > Organisasjonsstyring > Arbeidsområder > Elektronisk rapportering**.
-2. I listen velger du konfigurasjonsleverandøren for eksempelfirmaet Litware, Inc. Hvis du ikke ser denne konfigurasjonsleverandøren, må du først fullføre trinnene i fremgangsmåten [Opprette en konfigurasjonsleverandør og merke den som aktiv](er-configuration-provider-mark-it-active-2016-11.md).
+2. I listen velger du konfigurasjonsleverandøren for eksempelfirmaet Litware, Inc. Hvis du ikke ser denne konfigurasjonsleverandøren, må du først fullføre trinnene i fremgangsmåten [Opprette en konfigurasjonsleverandører og merke dem som aktive](er-configuration-provider-mark-it-active-2016-11.md).
 3. Velg **Angi som aktiv**.
 4. Velg **Repositorier**. Velg et repositorium for operasjonsressurstypen, hvis tilgjengelig. Hvis den er tilgjengelige, hopper du over følgende trinn for hvordan du oppretter et nytt repositorium.  
 5. Velg **Legg til** for å åpne nedtrekksdialogen.

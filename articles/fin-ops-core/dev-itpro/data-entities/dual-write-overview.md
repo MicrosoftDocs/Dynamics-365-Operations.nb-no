@@ -19,18 +19,16 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: d70bce4e47c05a7974c1b974fdca17682e5370aa
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: 11a5792c9c039eb76337309ef2fdb2b994ce191a
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2550863"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2772393"
 ---
 # <a name="near-real-time-data-integration-with-common-data-service"></a>Dataintegrering i nær sanntid med Common Data Service
 
 [!include [banner](../includes/banner.md)]
-
-[!include [preview](../includes/preview-banner.md)]
 
 I dagens digitale verden bruker bedriftsøkosystemer Microsoft Dynamics 365-apper som en helhet. Fordi data fra personer, kunder, operasjoner og IoT-enheter (tingenes Internett) flyter over i én kilde, finnes det en mulighet for digitale tilbakemeldingsløkker. For å oppnå denne erfaringen er integrering mellom Finance and Operations-apper og Dynamics 365-apper viktig. Noen programmer er bygget på toppen av Common Data Service. Integrasjon mellom Finance and Operations-apper med Common Data Service lar andre programmer kommunisere sammenhengende og flytende med Finance and Operations.
 
@@ -38,13 +36,16 @@ Finance and Operations-apper og Common Data Service gir nær sanntid datasynkron
 
 ![Oversiktsdiagram over arkitekturen](media/dual-write-overview.jpg)
 
-Følgende verdiforslag er tilgjengelige for kunder:
+Følgende verdiforslag er tilgjengelige:
 
 + [Organisasjonshierarki i Common Data Service](dual-write-organization.md)
 + [Bedriftskonsept i Common Data Service](dual-write-company.md)
 + [Integrerte originalkunde](dual-write-customer.md)
++ [Integrert finans](dual-write-ledger.md)
++ [Samlet produktopplevelse](dual-write-product.md)
 + [Integrert original for leverandør](dual-write-vendor.md)
-+ Ensartet produktstandard
++ [Integrerte områder og lagre](dual-write-sites-and-warehouses.md)
++ [Integrert hoveddata for avgift](dual-write-tax.md)
 
 ## <a name="system-requirements"></a>Systemkrav
 

@@ -1,5 +1,5 @@
 ---
-title: Tilgang til forhåndsvisningsfunksjoner i Microsoft Dynamics 365 Talent
+title: Behandle funksjoner
 description: Dette emnet beskriver hvordan en administrator kan aktivere forhåndsvisningsfunksjonene i Microsoft Dynamics 365 Talent, og det viser hvilke funksjoner som er aktivert for forhåndsvisning.
 author: tracykeya
 manager: AnnBe
@@ -18,16 +18,16 @@ ms.search.region: Global
 ms.author: trkeya
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.1.0, Talent April 2019 update
-ms.openlocfilehash: 0f9a83aeea3942d3c56d32956f79490c91565e9e
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: 9f1fb4b929660bbe9018fb98169b3cfddcaec547
+ms.sourcegitcommit: 9cc6a011bfdd1b0fe505760b6bf429eb6c65862a
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2551613"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "2833306"
 ---
-# <a name="access-preview-features-in-microsoft-dynamics-365-talent"></a>Tilgang til forhåndsvisningsfunksjoner i Microsoft Dynamics 365 Talent
+# <a name="manage-features"></a>Behandle funksjoner
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Som en del av vår kontinuerlige distribusjonen av funksjonalitet for administrasjon av menneskelig kapital (HCM) for Microsoft Dynamics 365 Talent vil vi at kunder får nye funksjoner så snart som mulig. Administratorer kan se og bruke forhåndsvisning av funksjoner i miljøet. Disse funksjonene er nesten klar for generelle tilgjengeligheten og har gjennomgått omfattende testing. Vi er bare ute etter en endelig runde med tilbakemelding og godkjenning før vi gjør dem generelt tilgjengelige.
 
@@ -117,6 +117,6 @@ Sørg for at du ikke tar med personlige data (informasjon som kan identifisere d
 ## <a name="see-also"></a>Se også
 
 - [Prøv eller kjøp Talent-apper](https://dynamics.microsoft.com/talent/overview/)
-- [Nyheter](./whats-new.md)
-- [Produktmerknader](https://docs.microsoft.com/business-applications-release-notes/index)
-- [Få kundestøtte for Talent](./talent-support.md)
+- [Hva er nytt eller endret i Dynamics 365 Talent](./whats-new.md)
+- [Lanseringsplaner](https://docs.microsoft.com/business-applications-release-notes/index)
+- [Få kundestøtte for Microsoft Dynamics 365 Talent](./talent-support.md)

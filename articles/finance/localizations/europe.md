@@ -15,12 +15,12 @@ ms.search.region: global
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1dac72d7b5ca6a2817207c0bded1befee46406cc
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: ed1fdc4a44ff55586f6879d9fb7df44b4f88c568
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2175553"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2772851"
 ---
 # <a name="europe-overview"></a>Oversikt over Europa
 
@@ -28,23 +28,23 @@ ms.locfileid: "2175553"
 
 Dette emnet inneholder informasjon og koblinger til ressursene som kan hjelpe deg med å sette opp juridiske enheter med en primær postadresse i Europa. 
 
-- [Forskuddsinnehavere](emea-advance-holders.md)
- - [Transaksjoner for innehavere av forskudd](emea-advance-holders-transactions.md)
- - [Forskuddsbetaling til en ansatt (Øst-Europa)](tasks/advance-payment-employee.md)
-- [Avansert fakturering](emea-advance-invoice.md)
-- [Bankavstemming](emea-bank-reconciliation.md)
+- [Oversikt over forskuddsinnehavere](emea-advance-holders.md)
+ - [Transaksjoner for innehaver av forskudd](emea-advance-holders-transactions.md)
+ - [Forskudd til ansatt](tasks/advance-payment-employee.md)
+- [Forskuddsfakturaer for Øst-Europa](emea-advance-invoice.md)
+- [Bankkontoutdrag og betalingsavstemming](emea-bank-reconciliation.md)
 - [Korrigerende fakturering](emea-corrective-invoice.md)
-- [Opprette og postere journaler](emea-create-post-periodic-journals.md)
+- [Dele opp perioder i periodiske journaler](emea-create-post-periodic-journals.md)
 - [Opprette betalinger for en kunde som har avtalegiromandater](tasks/create-payments-customers-who-have-direct-debit-mandates.md)
-- [Redigere faktura-IDer på salgsordrer](emea-edit-invoice-id-sales-orders.md)
-- [Innførselssertifikater for EU](emea-entry-certificates.md)
+- [Redigere faktura-IDer på salgsordrer for Øst-Europa](emea-edit-invoice-id-sales-orders.md)
+- [EU-innførselssertifikater](emea-entry-certificates.md)
 - [Rapportering av EU-salgsliste](emea-eu-sales-list.md)
 - [Valutakursjusteringer](emea-exchange-rate-adjustments.md)
 - [Filformater for betalingsmåter](emea-select-file-formats-for-the-method-of-payments.md)
 - [Integrering av økonomisk service (ESR)](emea-fiscal-service-integration.md)
 - [Avhending av anleggsmidler i Estland og Litauen](emea-credit-note-reverse-fixed-asset-sale.md)
 - [Generere et overføringsdokument for en intern lageroverføring](tasks/transfer-document-internal-inventory-transfer.md)
-- [Generere en rapport om EU-salgsliste](tasks/eur-00011-eu-sales-list-report.md)
+- [Generere rapporten om EU-salgsliste](tasks/eur-00011-eu-sales-list-report.md)
 - ISO20022-filer
   - [Importere ISO20022-filer](emea-ISO20022-file-formats.md)
   - [Importere konfigurasjon for ISO20022-avtalegiro](tasks/import-iso20022-direct-debit-configuration.md)
@@ -56,25 +56,25 @@ Dette emnet inneholder informasjon og koblinger til ressursene som kan hjelpe de
   - [Definere kunders bankkontoer for ISO20022-avtalegiroer](tasks/set-up-bank-accounts-iso20022-direct-debits.md)
   - [Definere leverandørers bankkontoer for ISO20022-kreditoverføringer](tasks/set-up-vendor-iso20022-credit-transfers.md)
   - [Opprette og eksportere leverandørbetalinger ved hjelp av ISO20022-betalingsformat](tasks/create-export-vendor-payments-iso20022-payment-format.md)
-- [Intrastat](emea-intrastat.md)
+- [Oversikt over Intrastat](emea-intrastat.md)
   - [Overføre transaksjoner til Intrastat](tasks/transfer-transactions-intrastat.md)
   - [Angi en lasteadresse for en fellesskapstransaksjon](tasks/eur-00002-specify-lading-address-intra-community.md)
   - [Generere en Intrastat-deklarering for EU](tasks/eur-00002-eu-intrastat-declaration.md)
 - [Lagerjournalrapporter](emea-set-up-report-inventory-journal-names.md)
-- [Tidsfrister for utstedelse av faktura](emea-invoice-issue-deadline.md)
+- [Tidsfrist for utstedelse av faktura](emea-invoice-issue-deadline.md)
 - [Fakturabehandling](emea-invoice-processing.md)
 - [Utstede et EU-innførselssertifikat](tasks/eur-00012-issue-eu-entry-certificate.md)
-- [OIOUBL-standarder](emea-oioubl-standards-electronic-invoicing.md)
+- [Standarder som støttes for elektronisk fakturering](emea-oioubl-standards-electronic-invoicing.md)
 - [Opprinnelig fakturareferanse (Øst-Europa)](tasks/ee-00004-original-invoice-reference.md)
 - [Partssøk ved hjelp av mva-ID](tasks/eur-00015-party-search-vat-id.md)
-- [Verktøy for generering av betalingsreferanse (Øst-Europa)](tasks/ee-00015-payment-reference-generation-tool.md)
+- [Verktøy for generering av betalingsreferanse](tasks/ee-00015-payment-reference-generation-tool.md)
 - [Rapport for betalingsseddel](emea-eur-payment-slip-report-giro.md)
-- [Håndkasse](emea-petty-cash.md)
+- [Håndkasse for Øst-Europa og Russland](emea-petty-cash.md)
 - [Bokføre forhåndsanskaffelsen for et anleggsmiddel](emea-pre-acquisition-acquisition-fixed-asset.md)
 - [Postnumre](emea-import-create-postal-codes-manually.md)
 - [Motta et EU-innførselssertifikat](tasks/eur-00012-receive-eu-entry-certificate.md)
 - [Registrerings-ID-er](emea-registration-ids.md)
-- [Snudd avregning](emea-reverse-charge.md)
+- [Snudd avregning-mva](emea-reverse-charge.md)
 - [Oversikt over SEPA-kredittoverføring](../accounts-payable/sepa-credit-transfer.md)
 - [Oversikt over SEPA-avtalegiro](../accounts-receivable/sepa-direct-debit-overview.md)
 - [Opprette kunde- og leverandørkompensasjon](emea-compensation-customer-vendor-transactions.md)
@@ -85,15 +85,15 @@ Dette emnet inneholder informasjon og koblinger til ressursene som kan hjelpe de
 - [Avgiftsdirektiver](emea-tax-directives.md)
 - [Oppdatere hvordan beløp vises i rapporter og dokumenter](emea-amount-printing-forms.md)
 - Merverdiavgift
-  - [navn: Definere mva-ID](tasks/eur-00015-vat-id.md)
-  - [Registrere en mva-ID for leverandør](tasks/eur-00015-registration-vendor-vat-id.md)
-  - [Kursjusteringer for mva](emea-vat-exchange-rate.md)
+  - [Definere mva-ID](tasks/eur-00015-vat-id.md)
+  - [Registrering av mva-ID for leverandør](tasks/eur-00015-registration-vendor-vat-id.md)
+  - [Oversikt over mva-valutakurs](emea-vat-exchange-rate.md)
   - [Mva-avstemmingsrapport](tasks/eur-00018-vat-reconciliation-report.md)
   - [Mva-registertransaksjoner for Øst-Europa](emea-vat-register-transactions.md)
   - [VAT-rapportering](emea-vat-reporting.md)
   - [Opprette og sende inn mva-rapport](tasks/create-submit-vat-report.md)
-  - [Vise transaksjoner ved utligning](emea-transactions-settlement-form.md)
-  - [Avgiftspunktdato (Dato for mva-register)](emea-tax-point-date.md)
+  - [Vise transaksjoner ved utligning for Øst-Europa](emea-transactions-settlement-form.md)
+  - [Avgiftspunktdato (dato i mva-register)](emea-tax-point-date.md)
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 

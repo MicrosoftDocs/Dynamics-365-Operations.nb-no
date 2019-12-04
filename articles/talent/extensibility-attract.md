@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: 5db954d8847c252bee1c8e50acae546852ae9b94
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: 9d12a4d48aa369884804c2a0bce9834534b1bec6
+ms.sourcegitcommit: 9cc6a011bfdd1b0fe505760b6bf429eb6c65862a
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2026239"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "2832867"
 ---
 # <a name="extensibility-in-attract"></a>Utvidelsesmulighet i Attract
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
-Microsoft Dynamics 365 Talent er bygd på toppen av Common Data Service og kan utvides på forskjellige måter ved hjelp av Microsoft Power Platform og funksjonene som tilbys i Common Data Service. Derfor kan du konfigurere og tilpasse systemet ved hjelp av Microsoft PowerApps og Microsoft Flow. Du kan også få ekstra analyse om personer ved hjelp av Microsoft Power BI. Dessuten gjør nye egendefinerte aktiviteter, for eksempel PowerApps og webinnhold-aktivitet (iframe), ansettelsesprosessen mer fleksibel enn noen gang. Ved hjelp av disse aktivitetene kan du tilpasse ansettelsesprosessen til dine forretningsbehov og prosesser, og du kan forsikre deg om at både ansettelsesteamet og kandidatene får en sømløs, tilpasset opplevelse.
+Microsoft Dynamics 365 Talent er bygd på toppen av Common Data Service og kan utvides på forskjellige måter ved hjelp av Microsoft Power Platform og funksjonene som tilbys i Common Data Service. Derfor kan du konfigurere og tilpasse systemet ved hjelp av Microsoft Power Apps og Microsoft Power Automate. Du kan også få ekstra analyse om personer ved hjelp av Microsoft Power BI. Dessuten gjør nye egendefinerte aktiviteter, for eksempel Power Apps og webinnhold-aktivitet (iframe), ansettelsesprosessen mer fleksibel enn noen gang. Ved hjelp av disse aktivitetene kan du tilpasse ansettelsesprosessen til dine forretningsbehov og prosesser, og du kan forsikre deg om at både ansettelsesteamet og kandidatene får en sømløs, tilpasset opplevelse.
 
 ## <a name="extending-option-sets-in-attract"></a>Utvide alternativsett i Attract
 
@@ -40,7 +40,7 @@ Et **Alternativsett** (plukkliste) er et type felt som kan inkluderes i en enhet
 
 Nedenfor finner du trinnene for å oppdatere **Avvisningsårsak**-feltet med verdier som er spesifikke for din virksomhet.  
 
-1. Hvis du vil vise **Avvisningsårsak**-alternativsettet, går du til [nettstedet for PowerApps-administrasjon](https://admin.powerapps.com).
+1. Hvis du vil vise **Avvisningsårsak**-alternativsettet, går du til [nettstedet for Power Apps-administrasjon](https://admin.powerapps.com).
 2. Du kan bli bedt om å logge på kontoen. Oppgi bruker-ID-en og passordlegitimasjonen du bruker til å logge på Dynamics 365 og/eller Office 365, og klikk deretter **Neste**.
 3. I **Miljøer**-fanen velger du miljøet du vil administrere, og dobbeltklikker for å gå til **Detaljer**-kategorien.
 4. På **Detaljer**-kategorien velger du **Administrasjonssenter for Dynamics 365**.
@@ -58,15 +58,15 @@ Nedenfor finner du trinnene for å oppdatere **Avvisningsårsak**-feltet med ver
 
 Fordi alle dataene fra Attract ligger i Common Data Service, kan du bruke verktøy fra Microsoft Power Platform til å ta dine unike forretningsbehov til Attract.
 
-### <a name="powerapps"></a>PowerApps
+### <a name="power-apps"></a>Power Apps
 
-Du kan bruke PowerApps til å opprette programmer som koble til Attract-dataene, og som bruker uttrykk som uttrykkene i Microsoft Excel, til å legge til logikk. Apper du lager med PowerApps, kan kjøre på Internett, og på Apple iOS og Google Android-enheter.
+Du kan bruke Power Apps til å opprette programmer som koble til Attract-dataene, og som bruker uttrykk som uttrykkene i Microsoft Excel, til å legge til logikk. Apper du lager med Power Apps, kan kjøre på Internett, og på Apple iOS og Google Android-enheter.
 
-Du kan for eksempel forenkle universitetsmesser for rekrutteringspersoner ved å bygge en enkel app som lar dem skanne CVer og legge kandidater til en stilling i Attract. Du kan også bygge en app som bidrar til å dekke organisasjonens samsvarsbehov. Hvis du vil ha mer informasjon om PowerApps og hvordan den brukes til å bygge apper, kan du se [Integrere data i Common Data Service](https://docs.microsoft.com/powerapps).
+Du kan for eksempel forenkle universitetsmesser for rekrutteringspersoner ved å bygge en enkel app som lar dem skanne CVer og legge kandidater til en stilling i Attract. Du kan også bygge en app som bidrar til å dekke organisasjonens samsvarsbehov. Hvis du vil ha mer informasjon om Power Apps og hvordan den brukes til å bygge apper, kan du se [Integrere data i Common Data Service](https://docs.microsoft.com/powerapps).
 
-### <a name="microsoft-flow"></a>Microsoft Flow 
+### <a name="microsoft-power-automate"></a>Microsoft Power Automate 
 
-Du kan bruke Microsoft Flow til å opprette automatisert arbeidsflyt som kjører på toppen av Attract-data. Du kan enkelt koble til hundrevis av populære apper og tjenester uten å måtte skrive kode. Ved å bygge flyter som samhandler med Attract-jobben, kandidaten og søknadsenheter i Common Data Service, kan du automatisere forskjellige handlinger. Når en kandidat for eksempel har godtatt et tilbud, kan en varsling sendes til et jobbintroduksjonsteam, eller nyhetene kan kunngjøres på Twitter. Hvis du vil ha mer informasjon om flyter, se [dokumentasjonen for Microsoft Flow](https://docs.microsoft.com/flow/).
+Du kan bruke Microsoft Power Automate til å opprette automatisert arbeidsflyt som kjører på toppen av Attract-data. Du kan enkelt koble til hundrevis av populære apper og tjenester uten å måtte skrive kode. Ved å bygge flyter som samhandler med Attract-jobben, kandidaten og søknadsenheter i Common Data Service, kan du automatisere forskjellige handlinger. Når en kandidat for eksempel har godtatt et tilbud, kan en varsling sendes til et jobbintroduksjonsteam, eller nyhetene kan kunngjøres på Twitter. Hvis du vil ha mer informasjon om flyter, se [dokumentasjonen for Microsoft Power Automate](https://docs.microsoft.com/flow/).
 
 ### <a name="power-bi"></a>Power BI
 
@@ -74,18 +74,18 @@ Med Power BI kan du lage og vise egendefinerte rapporter og instrumentbord som g
 
 ### <a name="custom-activities"></a>Egendefinert aktiviteter 
 
-Du kan legge til egendefinerte aktiviteter, for eksempel PowerApps-apper og webinnhold-aktiviteter (iframe), på nivået av jobbprosessmalen eller mens du oppretter en ny jobb. Disse aktivitetene lar deg tilpasse ansettelsesprosessen og hente forretningslogikk som er unik for organisasjonen, til Attract.
+Du kan legge til egendefinerte aktiviteter, for eksempel Power Apps-apper og webinnhold-aktiviteter (iframe), på nivået av jobbprosessmalen eller mens du oppretter en ny jobb. Disse aktivitetene lar deg tilpasse ansettelsesprosessen og hente forretningslogikk som er unik for organisasjonen, til Attract.
 
-#### <a name="powerapps-activity"></a>PowerApps-aktivitet 
+#### <a name="power-apps-activity"></a>Power Apps-aktivitet 
 
-PowerApps-aktiviteten lar personen som oppretter en jobb eller jobbprosessmal, bygge inn en PowerApps-app i ansettelsesflyten. Når du har opprettet og publisert appen, kan du angi app-ID-en i aktivitetskonfigurasjonene. Ved hjelp av en PowerApps-app kan du lese og skrive data til Common Data Service. Du kan også koble appen til en flyt. Du har for eksempel en app som rekrutteringspersoner bruker til å fylle ut et skjema når de gjør telefonintervjuer. I dette tilfelle kan du koble appen til en flyt som vurderer om en søker kan tas videre i jobbsøknadsprosessen. Denne typen aktivitet kan bare vises av medlemmer av ansettelsesteamet. Hvis du vil ha mer informasjon om hvordan du konfigurerer PowerApps-aktiviteten, kan du se [Aktiviteter i Attract](./activities-attract.md).
+Power Apps-aktiviteten lar personen som oppretter en jobb eller jobbprosessmal, bygge inn en Power Apps-app i ansettelsesflyten. Når du har opprettet og publisert appen, kan du angi app-ID-en i aktivitetskonfigurasjonene. Ved hjelp av en Power Apps-app kan du lese og skrive data til Common Data Service. Du kan også koble appen til en flyt. Du har for eksempel en app som rekrutteringspersoner bruker til å fylle ut et skjema når de gjør telefonintervjuer. I dette tilfelle kan du koble appen til en flyt som vurderer om en søker kan tas videre i jobbsøknadsprosessen. Denne typen aktivitet kan bare vises av medlemmer av ansettelsesteamet. Hvis du vil ha mer informasjon om hvordan du konfigurerer Power Apps-aktiviteten, kan du se [Aktiviteter i ansettelsesprosesser](./activities-attract.md).
 
 > [!NOTE]
-> PowerApps-aktiviteten er bare tilgjengelig med tillegget for omfattende ansettelse.
+> Power Apps-aktiviteten er bare tilgjengelig med tillegget for omfattende ansettelse.
 
 #### <a name="web-content-iframe-activity"></a>Webinnhold-aktivitet (iframe)
 
-Webinnhold-aktivitet (iframe) lar deg bygge inn en egendefinert webløsning som du har opprettet i ansettelsesprosessen eller kandidatportalen. Du kan lese og skrive data direkte fra Common Data Service. Du kan også tilpasse løsningen slik at den utløser flyter eller utnytter Microsoft Azure-funksjoner. Hvis du vil ha mer informasjon om hvordan du konfigurerer webinnhold-aktiviteten, kan du se [Aktiviteter i Attract](./activities-attract.md).
+Webinnhold-aktivitet (iframe) lar deg bygge inn en egendefinert webløsning som du har opprettet i ansettelsesprosessen eller kandidatportalen. Du kan lese og skrive data direkte fra Common Data Service. Du kan også tilpasse løsningen slik at den utløser flyter eller utnytter Microsoft Azure-funksjoner. Hvis du vil ha mer informasjon om hvordan du konfigurerer webinnhold-aktiviteten, kan du se [Aktiviteter i ansettelsesprosesser](./activities-attract.md).
 
 > [!NOTE]
 > Webinnhold-aktiviteten er bare tilgjengelig med tillegget for omfattende ansettelse.

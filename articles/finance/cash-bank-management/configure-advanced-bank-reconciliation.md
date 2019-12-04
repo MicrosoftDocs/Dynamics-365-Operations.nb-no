@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2922b00dffe8e99f8331d7aaa7e2f1b7dc4f9ea6
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 405af4e3e122953bbfa74e7e91d2feef8f068708
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2179247"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2772634"
 ---
 # <a name="advanced-bank-reconciliation-setup-process"></a>Oppsettsprosess for avansert bankavstemming
 
@@ -31,7 +31,7 @@ ms.locfileid: "2179247"
 
 Avansert bankavstemming lar deg importere og avstemme elektroniske bankkontoutdrag og automatisk avstemme med banktransaksjoner i Microsoft Dynamics 365 Finance. Denne artikkelen beskriver prosessen for definisjon av avstemming.  
 
-Det finnes en rekke deler som må defineres før du kan bruke den avanserte funksjonen for bankavstemming. Hvis du vil ha mer informasjon om hvordan du konfigurerer import for bankkontoutdrag, se [Definere prosessen for import av bankkontoutdrag](set-up-advanced-bank-reconciliation-import-process.md).  Krav til oppsett av avstemmingsprosessen er beskrevet nedenfor.
+Det finnes en rekke deler som må defineres før du kan bruke den avanserte funksjonen for bankavstemming. Hvis du vil ha mer informasjon om hvordan du konfigurerer import for bankkontoutdrag, se [Definere prosessen for avansert bankavstemmingsimport](set-up-advanced-bank-reconciliation-import-process.md).  Krav til oppsett av avstemmingsprosessen er beskrevet nedenfor.
 
 ## <a name="transaction-codes"></a>Transaksjonskoder
 Transaksjonskoder kan brukes som en del av samsvarsregler for bankavstemmingen. Transaksjonskoder bidrar til å samsvare med bare de samme typene transaksjoner mellom Finance og bankkontoutdraget. Hvis du vil utføre denne typen samsvar, må du først definere transaksjonstypene som brukes for banktransaksjoner fra Finance, og deretter tilordne disse typene til utdragstransaksjonskoder som brukes av banken. Transaksjonstypene for banktransaksjoner i Finance er definert på siden **Banktransaksjonstype**. Det er også her du definerer hovedkontoen som skal brukes for posteringer som er tilknyttet denne transaksjonstypen. 

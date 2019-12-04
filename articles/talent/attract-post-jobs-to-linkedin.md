@@ -1,5 +1,5 @@
 ---
-title: Postere jobber til LinkedIn fra Microsoft Dynamics 365 Talent – Attract
+title: Postere jobber til LinkedIn fra Attract
 description: Dette emnet forklarer hvordan du bruker Dynamics 365 Talent – Attract til å postere jobber til LinkedIn.
 author: andreabichsel
 manager: AnnBe
@@ -17,16 +17,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2019-07-08
 ms.dyn365.ops.version: Platform update 24
-ms.openlocfilehash: e2b8065fe2521694efb30478a5a41676cff45127
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: 782a2e5de6edf0e85c4d32a0910f5f3c01981a01
+ms.sourcegitcommit: 9cc6a011bfdd1b0fe505760b6bf429eb6c65862a
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2551501"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "2833010"
 ---
-# <a name="post-jobs-to-linkedin-from-microsoft-dynamics-365-talent---attract"></a>Postere jobber til LinkedIn fra Microsoft Dynamics 365 Talent – Attract
+# <a name="post-jobs-to-linkedin-from-attract"></a>Postere jobber til LinkedIn fra Attract
 
-[!include [banner](../includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 LinkedIn er det største profesjonelle online-nettverket, som gir deg tilgang til verdens beste talenter. Microsoft Dynamics 365 Talent: Attract hjelper deg å få talentet du trenger, ved å la deg postere jobber direkte fra Attract til LinkedIn.
 
@@ -46,7 +46,7 @@ Tabellen nedenfor viser handlingene du kan utføre på LinkedIn, avhengig av bru
 
 Hvis du vil ha mer informasjon om brukerroller i Attract, kan du se [Administrasjon av sikkerhet og rolle i Attract](./security-attract.md).
 
-Hvis du er administrator og trenger mer informasjon om hvordan du konfigurerer LinkedIn-integrasjon med Attract, kan du se [Konfigurere integrering med LinkedIn](./attract-admin-linkedin.md).
+Hvis du er administrator og trenger mer informasjon om hvordan du konfigurerer LinkedIn-integrasjon med Attract, kan du se [Konfigurere integrering med LinkedIn for Microsoft Dynamics 365 Talent - Attract](./attract-admin-linkedin.md).
 
 Jobber som posteres til LinkedIn, vises på det live LinkedIn-området. LinkedIn har ikke et testmiljø for postering av jobber. Derfor må du passe på at du ikke ved et uhell legger ut testjobber.
 
@@ -67,15 +67,15 @@ Når interesserte kandidater velger **Vis** ved siden av oppføringen din, vil d
 
 Alle jobbposteringer som gjøres gjennom Attract, er begrensede oppføringer. Hvis du vil ha mer informasjon om begrensede oppføringer på LinkedIn, kan du se [Begrensede oppføringer kontra premium jobbplasser for jobbpakking](https://www.linkedin.com/help/recruiter/answer/79049).
 
-Hvis du har problemer med å publisere jobber til LinkedIn, kan du se [Feilsøke postering av jobber til LinkedIn](./attract-troubleshoot-linkedin.md).
+Hvis du har problemer med å postere jobber til LinkedIn, se [Feilsøke integrering med LinkedIn og Microsoft Dynamics 365 Talent - Attract](./attract-troubleshoot-linkedin.md).
 
 ## <a name="see-also"></a>Se også
 
-[Vanlige spørsmål om LinkedIn](./attract-linkedin-faq.md)
+[Vanlige spørsmål om Attract-integrering med LinkedIn](./attract-linkedin-faq.md)
 
-[Konfigurere integrering med LinkedIn](./attract-admin-linkedin.md)
+[Konfigurere integrering med LinkedIn for Microsoft Dynamics 365 Talent - Attract](./attract-admin-linkedin.md)
 
-[Opprette jobber](./creating-jobs-attract.md)
+[Opprette, godkjenne og postere jobber i Attract](./creating-jobs-attract.md)
 
 [Finne kandidater med LinkedIn Recruiter](./attract-linkedin-recruiter.md)
 

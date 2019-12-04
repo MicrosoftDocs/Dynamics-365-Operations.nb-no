@@ -15,18 +15,18 @@ ms.search.scope: Core, Operations
 ms.search.region: Norway
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: facae1788bcffd0adf0825934fd1f54d895529cc
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: 0500c4ea22c2a4579d43081d5608fb01656b0ba7
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2551137"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2773472"
 ---
 # <a name="vat-statement-for-norway"></a>MVA-oppgave for Norge
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet inneholder landsspesifikk informasjon om hvordan du setter opp MVA-oppgaven (merverdiavgift) for juridiske enheter som har en primæradresse i Norge. Hvis du vil ha mer informasjon om generell MVA-rapportering, kan du se [MVA-rapportering](emea-vat-reporting.md).
+Dette emnet inneholder landsspesifikk informasjon om hvordan du setter opp MVA-oppgaven (merverdiavgift) for juridiske enheter som har en primæradresse i Norge. Hvis du vil ha mer informasjon om generell MVA-rapportering, kan du se [MVA-rapportering for Europa](emea-vat-reporting.md).
 
 ## <a name="set-up-sales-tax-authorities"></a>Definere skattemyndigheter
 Hvis du vil generere en mva-oppgave i det riktige formatet for en bestemt skattemyndighet, må du definere rapportoppsettet for skattemyndighetene.

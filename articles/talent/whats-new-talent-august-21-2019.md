@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-08-20
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 5e4272fa1c94a883a10b7893d5dc8addfa987e60
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: a3e2178dbc60582d6167898c4c3446feac49dd04
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2024074"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2814496"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-talent-august-20-2019"></a>Hva er nytt eller endret i Dynamics 365 Talent (20. august 2019)
 
@@ -35,7 +35,7 @@ Dette emnet beskriver funksjoner som enten er nye eller endret i Dynamics 365 Ta
 
 ### <a name="simplified-apply-experience-for-candidates"></a>Forenklet søkeopplevelse for kandidater 
 
-En forenklet søkeopplevelse for kandidater er nå tilgjengelig i offentlig forhåndsvisning. Når aktivert, kan kandidatene søke på en jobb ved hjelp av CV-en, ved hjelp av **Bruk med LinkedIn** (hvis aktivert), eller ved hjelp av det eksisterende søknadsskjemaet. Med disse endringene kan kandidatene raskt sende inn jobbsøknaden med minimalt med felt som trenger manuell registrering. Hvis du vil ha informasjon om hvordan du aktiverer denne funksjonen, kan du se [Aktivere eller deaktivere forhåndsvisningsfunksjoner](./access-preview-feature.md#enable-or-disable-preview-features).
+En forenklet søkeopplevelse for kandidater er nå tilgjengelig i offentlig forhåndsvisning. Når aktivert, kan kandidatene søke på en jobb ved hjelp av CV-en, ved hjelp av **Bruk med LinkedIn** (hvis aktivert), eller ved hjelp av det eksisterende søknadsskjemaet. Med disse endringene kan kandidatene raskt sende inn jobbsøknaden med minimalt med felt som trenger manuell registrering. Hvis du vil ha mer informasjon om hvordan du aktiverer denne funksjonen, se [Tilgang til forhåndsvisningsfunksjoner i Microsoft Dynamics 365 Talent](./access-preview-feature.md#enable-or-disable-preview-features).
 
 ### <a name="view-rejection-comments-as-part-of-application-activity"></a>Vise avslagskommentarer som en del av søknadsaktiviteten
 

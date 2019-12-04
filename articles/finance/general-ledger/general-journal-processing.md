@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2becf8213cfa46e2c0cf0c553f0b5e503dfc3704
-ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
+ms.openlocfilehash: c067b7b6cbbcad4456df6037da8ab124776261e9
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "2570246"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2771828"
 ---
 # <a name="general-journal-processing"></a>Behandling av generell journal
 
@@ -84,8 +84,8 @@ Hovedkontoen oppsettet gir mange muligheter til økonomijournalen behandling:
 
 Regnskapsstrukturer og strukturer for avanserte regler er svært viktige for å sørge for at dataene som er nødvendige for økonomisk rapportering og sporing av ytelse, blir registrert under behandling av økonomijournalen og eventuell dokumentasjon. Regnskapsstrukturer og strukturer for avanserte regler lar deg tilpasse dataregistreringsopplevelsen. Du kan tillate dataregistrering bare for finansdimensjoner som er relevante i hvert tilfelle, og kan også sikre at obligatoriske og nøyaktige data alltid registreres.
 
-Hvis du vil ha mer informasjon, se følgende emner:
-- [Planlegging: kontoplan](plan-chart-of-accounts.md). 
+Hvis du vil ha mer informasjon, kan du se følgende emner:
+- [Planlegge kontoplanen](plan-chart-of-accounts.md) 
 - [Opprette avanserte regler for journaler](tasks/create-advanced-rules-journals.md)
 - [Opprette en journaloppføring ved hjelp av en mal](tasks/create-journal-entry-template.md)
 - [Opprette og validere journaler](tasks/create-validate-journals.md)

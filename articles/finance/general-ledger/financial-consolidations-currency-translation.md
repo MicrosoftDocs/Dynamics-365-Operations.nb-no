@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2018-5-31
 ms.dyn365.ops.version: 8.0.1
-ms.openlocfilehash: 7b6b3cced92920ef5a253ca15793f26f244475fa
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: a67e5e3aea33e874f225a6af606fc8cde2bdc6bf
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2186607"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2771851"
 ---
 # <a name="financial-consolidations-and-currency-translation-overview"></a>Oversikt over finanskonsolideringer og valutaomveksling
 
@@ -75,7 +75,7 @@ I den foregående organisasjonsstrukturen må du ha en juridisk enhet for Nord-A
 
 Når du oppretter den juridiske enheten, kan du angi om firmaet skal brukes for både konsolideringsprosessen og elimineringsprosessen, eller bare én av disse prosessene. I illustrasjonen nedenfor brukes firmaet for begge prosessene. Vær oppmerksom på at du ikke kan postere daglige journaler i et konsolidert selskap, men du kan postere dem i et elimineringsfirma. Derfor kan det hende at du vil ha et eget elimineringsfirma.
 
-![Juridisk enhet som brukes både for konsolidering og eliminering](./media/sep-elimination-company.png "Juridisk enhet som brukes både for konsolidering og eliminering")
+![Juridisk enhet som brukes til både konsolidering og eliminering](./media/sep-elimination-company.png "Juridisk enhet som brukes til både konsolidering og eliminering")
 
 ## <a name="main-accounts-and-consolidation-account-groups"></a>Hovedkontoer og konsolideringskontogrupper
 Ett valg som du må ta, er hvordan du vil konsolidere fra kontoplanen. I konsolideringsprosessen har du tre alternativer for konsolidering av hovedkontoer.
@@ -91,7 +91,7 @@ Det tredje alternativet er å bruke konsolideringskontogrupper. Du kan definere 
 ![Tilordne på siden Flere konsolideringskontoer](./media/additional-consolidation-accounts.png "Tilordne på siden Flere konsolideringskontoer")
 
 ## <a name="consolidating-online"></a>Konsolidere på nettet
-Hvis du vil vite hvordan du registrerer detaljer om konsolideringer på nettet, kan du se [Konsolidere på nettet](./consolidate-online.md).
+Hvis du vil vite hvordan du registrerer detaljer om konsolideringer på nettet, kan du se [Konsolideringer på nettet](./consolidate-online.md).
 
 ## <a name="managing-consolidation-transactions"></a>Administrere konsolideringstransaksjoner
 Hvis du vil vise resultatene av konsolideringen, har du flere alternativer:

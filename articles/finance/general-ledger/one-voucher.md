@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: ''
+ms.search.form: LedgerJournalSetup, LedgerParameters, AssetProposalDepreciation
 audience: Application User
 ms.reviewer: roschlom
 ms.search.scope: Core, Operations
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-03-16
 ms.dyn365.ops.version: 8.0.2
-ms.openlocfilehash: a39654d4b6d74aa640db682fa052651736552db1
-ms.sourcegitcommit: bbb64b3475eef155b3f9d1bdc440545da8a7182f
+ms.openlocfilehash: 233f31bd0b20ad5dd8ba21077797dd2f65069deb
+ms.sourcegitcommit: bc6db23825c94cd8305ef37bc18296765e9ce8a4
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "2553193"
+ms.lasthandoff: 11/16/2019
+ms.locfileid: "2810705"
 ---
 # <a name="one-voucher"></a>Ett bilag
 
@@ -83,6 +83,9 @@ Basert på samtaler med kunder har Microsoft kompilert følgende liste over scen
 
 Følgende scenarier kan gjennomføre bare ved hjelp av funksjonen Ett bilag. Hvis organisasjonen har noen av disse scenariene, må du aktivere flere transaksjoner som skal angis i et bilag, ved å endre innstillingen for parameteren **Tillat flere transaksjoner i ett bilag** på siden **Parametere for økonomimodul**. Disse funksjonshullene vil bli fylt med andre funksjoner i senere versjoner.
 
+> [!Note]
+> [For hvert av følgende scenarier må feltet **Tillat flere transaksjoner i ett bilag** settes til Ja i hurtigfanen **Generelt** på siden **Parametere for økonomimodul**.]
+
 ### <a name="post-vendor-or-customer-payments-in-summary-form-to-a-bank-account"></a>Postere leverandør- eller kundebetalinger i forenklet form til en bankkonto
 
 **Scenario** En organisasjon sender en liste over leverandører og beløp til banken, og banken bruker denne listen til å betale leverandører på organisasjonens vegne. Banken posterer summen av betalingene som ett enkelt uttak for bankkontoen.
@@ -120,6 +123,9 @@ Følgende anleggsmiddeltransaksjoner oppretter også flere transaksjoner i et en
 - Et anleggsmiddel er delt.
 - En parameter for å beregne avskrivning ved avhending aktiveres, og deretter avhendes anleggsmiddelet.
 - Servicedatoen for et anleggsmiddel er før anskaffelsesdatoen. Derfor posteres en avskrivningsjustering.
+
+> [!Note]
+> Når du angir transaksjoner, må du kontrollere at alle transaksjonene gjelder det samme anleggsmidlet. Bilaget blir ikke postert hvis det inneholder mer enn ett anleggsmiddel, selv om **Nytt bilag**-feltet er satt til Bare ett bilagsnummer på **Journalnavn**-siden i økonomimodulen. Hvis du tar med flere anleggsmidler i bilaget, vises meldingen **Det kan bare være én anleggsmiddeltransaksjon per bilag**, og du vil ikke kunne postere bilaget.  
 
 ### <a name="bills-of-exchange-and-promissory-notes"></a> Veksel og egenveksler
 Veksler og egenveksler krever at Ett bilag brukes, fordi transaksjonene flytter kunde- eller leverandørsaldoen fra én Kunder/Leverandører-finanskonto til en annen basert på statusen for betalingen.

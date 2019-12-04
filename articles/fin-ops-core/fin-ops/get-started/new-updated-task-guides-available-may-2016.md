@@ -17,12 +17,12 @@ ms.search.region: global
 ms.author: josaw
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-ms.openlocfilehash: 7134dc49c0e767d3bc4dc32e4feeb0e83a168e86
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 930c744ff2a28451d4267f060867b4b6474d45e7
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2190931"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811584"
 ---
 # <a name="new-or-updated-task-guides-may-2016"></a>Nye eller oppdaterte oppgaveveiledninger (mai 2016)
 
@@ -32,7 +32,7 @@ Denne artikkelen viser nye eller oppdaterte oppgaveveiledninger som ble utgitt t
 
 ## <a name="task-guides-in-the-may-2016---all-languages-apqc-unified-library-for-microsoft-dynamics-ax"></a>Oppgaveveiledninger i (mai 2016 – alle språk) APQC Unified Library for Microsoft Dynamics AX
 
-(Mai 2016) APQC Unified Library inneholder oppgaveveiledningene som er ment å brukes for hjelp for Microsoft Dynamics AX-oppdateringen fra mai 2016 og Microsoft Dynamics AX-versjonen fra februar 2016. Lokaliserte versjoner av oppgaveveiledningene ble utgitt i (februar 2016) APQC Unified Library, er tilgjengelige i dette biblioteket. Hvis du vil ha mer informasjon om hvordan du kobler hjelpesystemet til et oppgaveveiledningsbibliotek, kan du se [Komme i gang med hjelp](help-overview.md).
+(Mai 2016) APQC Unified Library inneholder oppgaveveiledningene som er ment å brukes for hjelp for Microsoft Dynamics AX-oppdateringen fra mai 2016 og Microsoft Dynamics AX-versjonen fra februar 2016. Lokaliserte versjoner av oppgaveveiledningene ble utgitt i (februar 2016) APQC Unified Library, er tilgjengelige i dette biblioteket. Hvis du vil ha mer informasjon om hvordan du kobler hjelpesystemet til et oppgaveveiledningsbibliotek, kan du se [Hjelpesystem](help-overview.md).
 
 > [!NOTE]
 > En stjerne (\*) ved siden av tittelen på en linje for forretningsprosessmodeller (BPM) angir at oppgaveveiledningen for forretningsprosessen ble opprettet for Dynamics AX-versjonen fra mai 2016 og ikke støttes i tidligere versjoner av Microsoft Dynamics AX.
@@ -185,7 +185,7 @@ Denne artikkelen viser nye eller oppdaterte oppgaveveiledninger som ble utgitt t
 | Konfigurer containerbruk                                         | Globalt         |
 | Definere manuell pakking                                           | Globalt         |
 | Definere transportbegrensninger for en vare                   | Globalt         |
-| \*Definere arbeidspolicyer for lager                                 | Globalt         |
+| \*Definere arbeidspolicyer for lager                                | Globalt         |
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 

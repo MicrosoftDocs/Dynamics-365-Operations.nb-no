@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-11-02
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 80b1f8aeabfd033f393463f4be5a61447377f2d9
-ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
+ms.openlocfilehash: 1a86936d756d8375761ce50c9d9bf33dc638dfad
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "2009312"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2772925"
 ---
 # <a name="user-can-access-core-hr-but-not-onboard-or-attract"></a>Brukeren har tilgang til Core HR, men ikke Onboard eller Attract
 
@@ -39,7 +39,7 @@ Bruker B har tilgang til Core HR, men har ikke tilgang til appene Talent: Attrac
 
 **Løsning**
 
-Bruker B må tilordnes rettigheter til å vise Microsoft PowerApps-miljøet som bruker A opprettet under klargjøringsprosessen.
+Bruker B må tilordnes rettigheter til å vise Microsoft Power Apps-miljøet som bruker A opprettet under klargjøringsprosessen.
 
 Hvis du vil ha informasjon, kan du se delen "Gi tilgang til utviklingsmiljøet" i [Klargjøre Talent](https://docs.microsoft.com/dynamics365/unified-operations/talent/provisioning-talent).
 

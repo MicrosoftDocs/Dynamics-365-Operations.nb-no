@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6c3d83334bcccc62a2cbe761272b13cc80e10c11
-ms.sourcegitcommit: 574309903f15eeab7911091114885b5c7279d22a
+ms.openlocfilehash: b4bb523c2817a220623d8a1b6cc1ac04d7b96283
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "2658816"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812655"
 ---
 # <a name="create-documentation-or-training-with-task-recorder"></a>Lage dokumentasjon eller opplæring med Oppgaveopptaker
 
@@ -84,7 +84,7 @@ Slik ser notatmerknaden ut i "boblen" i oppgaveveiledningen.
 
 [![Utseende på notatmerknad i oppgaveveiledning](./media/screen4.png)](./media/screen4.png)
 
--   **Informasjonstrinn**: Du oppretter disse merknadene ved å høyreklikke en kontroll eller hvor som helst i et skjema &lt; **Oppgaveregistrering** &lt; **Legg til informasjonstrinn**. Informasjonstrinn vises som et nummerert trinn der du setter det inn, selv om ingen handling ble tatt opp i brukergrensesnittet. Du kan legge til et informasjonstrinn på skjemanivå eller et informasjonstrinn som er knyttet til en kontroll. Når et informasjonstrinn er knyttet til et skjema, vises «boblen» i oppgaveveiledningen et sted i skjemaet, uten peker, når oppgaveveiledningen spilles av. Når et informasjonstrinn er knyttet til en kontroll, peker "boblen" i oppgaveveiledningen mot kontrollen når oppgaveveiledningen spilles av. I Hjelp-ruten vises merknaden for et informasjonstrinn som et nummerert trinn med tekst du skrev inn. Bruk informasjonstrinn til å forberede brukeren på de neste trinnene, til å beskrive trinnene som må gjøres utenfor programmet, eller til å henvise til andre opptak (selv om du ikke kan bruke hyperkoblinger i merknader).
+-   **Informasjonstrinn**: Du oppretter disse merknadene ved å høyreklikke på en kontroll eller hvor som helst i et skjem &lt; **Oppgaveopptaker** &lt; **Legg til informasjonstrinn.** Informasjonstrinn vises som et nummerert trinn der du setter det inn, selv om ingen handling ble tatt opp i brukergrensesnittet. Du kan legge til et informasjonstrinn på skjemanivå eller et informasjonstrinn som er knyttet til en kontroll. Når et informasjonstrinn er knyttet til et skjema, vises «boblen» i oppgaveveiledningen et sted i skjemaet, uten peker, når oppgaveveiledningen spilles av. Når et informasjonstrinn er knyttet til en kontroll, peker "boblen" i oppgaveveiledningen mot kontrollen når oppgaveveiledningen spilles av. I Hjelp-ruten vises merknaden for et informasjonstrinn som et nummerert trinn med tekst du skrev inn. Bruk informasjonstrinn til å forberede brukeren på de neste trinnene, til å beskrive trinnene som må gjøres utenfor programmet, eller til å henvise til andre opptak (selv om du ikke kan bruke hyperkoblinger i merknader).
 
 **Avgjøre hvor langt opptaket skal være**
 
@@ -97,7 +97,7 @@ Slik ser notatmerknaden ut i "boblen" i oppgaveveiledningen.
 **Avgjøre hvor du skal starte et opptak i brukergrensesnittet** Siden du er på når du begynner å ta opp en oppgave, påvirker hvilken side oppgaveveiledningen vises for. Hvis du for eksempel vil at oppgaveopptaket skal vises i Hjelp-ruten når brukeren klikker på Hjelp på siden Parametere for økonomimodul, må du starte opptaket på siden Parametere for økonomimodul. **Lagre opptak som AXTR-filer** Når du er ferdig med å lage eller redigere et oppgaveopptak, har du flere alternativer for hvordan du vil laste ned eller lagre opptaket. Du kan laste ned filen som en oppgaveopptakspakke (AXTR), laste den ned som en rå opptaksfil (XML), laste den ned som et Word-dokument, eller lagre filen i et LCS-bibliotek. Det er alltid lurt å lagre oppgaveopptaket som en oppgaveopptakspakkefil (AXTR). Dette gjør det enklere å vedlikeholde filen hvis fremgangsmåter eller merknader må endres senere. Hvis du vil laste ned filen som et Word-dokument, må du også lagre den som en oppgaveopptakspakkefil.
 
 ## <a name="create-your-task-recording"></a>Lage oppgaveopptaket
-Hvis du vil se de detaljerte trinnene i fremgangsmåten, kan du se [Opprette et oppgaveopptak](task-recorder.md).
+Hvis du vil se de detaljerte trinnene i fremgangsmåten, kan du se [Ressurser for Oppgaveregistrering](task-recorder.md).
 
 ## <a name="copy-and-customize-microsofts-task-recordings"></a>Kopiere og tilpasse oppgaveopptak fra Microsoft
 Du kan laste ned og redigere oppgaveopptak fra Microsoft for å bruke dem i din egen hjelpedokumentasjon eller opplæringsmateriell. Følg disse trinnene for å laste ned et oppgaveopptak fra Microsoft:
@@ -120,10 +120,10 @@ Hvis du vil vise dine egne oppgaveopptak i Hjelp-ruten, slik at de kan spilles a
 <a name="additional-resources"></a>Tilleggsressurser
 --------
 
-[Oversikt over Hjelp](../../fin-ops/get-started/help-overview.md)
+[Hjelpesystem](../../fin-ops/get-started/help-overview.md)
 
-[Koble til Hjelp](../../fin-ops/get-started/help-connect.md)
+[Koble til hjelpesystemet](../../fin-ops/get-started/help-connect.md)
 
-[Oppgaveopptaker](task-recorder.md)
+[Oppgaveregistrering](task-recorder.md)
 
 [Opprette rike hjelpeemner med oppgaveopptakeren (ekstern link)](https://mbspartner.microsoft.com/AX/Videos/970)

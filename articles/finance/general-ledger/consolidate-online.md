@@ -16,25 +16,25 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2018-5-31
 ms.dyn365.ops.version: 8.0.1
-ms.openlocfilehash: eadf0af285213a972cac83d7b6fc6a47317b21bb
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: 86be6d4cc0af3f2fd92523d4ecd3825f2383fc48
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2551663"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2770741"
 ---
 # <a name="online-financial-consolidations"></a>Elektroniske finanskonsolideringer
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet beskriver elektroniske finanskonsolideringer i Økonomimodul. Før du leser dette emnet, må du lese emnet [Finanskonsolideringer og valutaomveksling](financial-consolidations-currency-translation.md).
+Dette emnet beskriver elektroniske finanskonsolideringer i Økonomimodul. Før du leser dette emnet, må du lese emnet [Oversikt over finanskonsolideringer og valutaomveksling](financial-consolidations-currency-translation.md).
 
 Når du har fullført oppsettet, du angir detaljer om konsolideringer på siden **Konsolider [Online]**. Når du er ferdig, kan du klikke **OK** eller **Parti** for å behandle konsolideringen.
 
 ## <a name="criteria"></a>Vilkår
 I kategorien **Vilkår** på siden **Konsolider [Online]** definerer du kontoene, periodene og typen data som konsolideres.
 
-![Vilkår-kategorien](./media/criteria-consolidate-online.png "Vilkår-kategorien")
+![Kategorien Kriterier](./media/criteria-consolidate-online.png "Kategorien Kriterier")
 
 Her er en forklaring på feltene i denne kategorien:
 
@@ -60,7 +60,7 @@ Her er en forklaring på feltene i denne kategorien:
 ## <a name="financial-dimensions"></a>Finansdimensjoner
 I kategorien **Finansdimensjoner** kan du angi hvilke dimensjoner som skal inkluderes i konsolideringsfirmaet. Hvis du vil velge en dimensjon, kan du angi feltet **Spesifikasjon** til **Dimensjon** og deretter definere rekkefølgen på dimensjonen i konsolideringsfirmaet.
 
-![Kategorien Finansdimensjoner](./media/financial-dimensions-cons.png "Kategorien finansdimensjoner")
+![Kategorien Finansdimensjoner](./media/financial-dimensions-cons.png "Kategorien Finansdimensjoner")
 
 Uavhengig av hvilken rekkefølge du definerer, blir **Hovedkonto** alltid det første segmentet.
 
@@ -93,6 +93,6 @@ I kategorien **Valutaveksling** definerer du juridisk enhet, konto, valutakursty
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 
-Hvis du vil ha mer informasjon om konsolidering og valutavekslinger, kan du se det overordnede emnet i dette emnet, [Finanskonsolideringer og valutaomveksling](./financial-consolidations-currency-translation.md).
+Hvis du vil ha mer informasjon om konsolidering og valutavekslinger, kan du se det overordnede emnet i dette emnet, [Oversikt over finanskonsolideringer og valutaomveksling](./financial-consolidations-currency-translation.md).
 
 For informasjon om situasjoner der du kan generere konsoliderte regnskapsoppgjør, kan du se [Generere konsoliderte regnskapsoppgjør](./generating-consolidated-financial-statements.md).

@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 7be41e724cb715e4b7c9077bb30d26b2bd4899dd
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: c5401f310138d19f78412dff318959414c31a191
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2181916"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2770029"
 ---
 # <a name="configure-electronic-reporting-er-to-pull-data-into-power-bi"></a>Konfigurere elektronisk rapportering (ER) for å hente data til Power BI
 
@@ -194,6 +194,6 @@ Konfigurer integrering med Power BI. Hvis du vil ha mer informasjon, kan du se [
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 
-[Mål for elektronisk rapportering](electronic-reporting-destinations.md)
+[Mål for elektronisk rapportering (ER)](electronic-reporting-destinations.md)
 
-[Oversikt over elektronisk rapportering](general-electronic-reporting.md)
+[Oversikt over elektronisk rapportering (ER)](general-electronic-reporting.md)

@@ -571,6 +571,8 @@
                   href: cost-management/inventory-close.md
                 - name: Justere kostnadsverdier for lagerbeholdning
                   href: cost-management/adjust-hand-inventory-cost-values.md
+                - name: Rapport for aldersfordeling for lager
+                  href: cost-management/inventory-aging-report-storage.md
             - name: Produksjonsregnskap
               items:
                 - name: Stykklisteberegninger
@@ -868,7 +870,13 @@
                         - name: Laste ned konfigurasjoner fra ER-repositoriet til RCS-typen
                           href: ../fin-ops-core/dev-itpro/analytics/rcs-download-configurations.md?toc=/dynamics365/supply-chain/toc.json
                         - name: Importere konfigurasjoner fra RCS
-                          href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Opplæringer
+                      items:
+                        - name: Bruke JOIN-datakilder til å hente data fra flere programtabeller i modelltilordninger for elektronisk rapportering (ER)
+                          href: ../fin-ops-core/dev-itpro/analytics/er-join-data-sources.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Konfigurere modelltilordninger for landkontekstavhengig ER
+                          href: ../fin-ops-core/dev-itpro/analytics/er-country-dependent-model-mapping.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Bruke løsninger for elektronisk rapportering i Finance and Operations
                   items:
                     - name: Konfigurere rammeverket
@@ -903,6 +911,8 @@
                       href: ../fin-ops-core/dev-itpro/analytics/trace-execution-er-troubleshoot-perf.md?toc=/dynamics365/supply-chain/toc.json
                     - name: Oversikt over administrasjon av forretningsdokument
                       href: ../fin-ops-core/dev-itpro/analytics/er-business-document-management.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Legge til nye felt i en forretningsdokumentmal i Microsoft Excel
+                      href: ../fin-ops-core/dev-itpro/analytics/er-bdm-add-field-to-excel-template.md?toc=/dynamics365/supply-chain/toc.json
                 - name: API for ER-rammeverk
                   items:
                     - name: Utvide listen over funksjoner for elektronisk rapportering
@@ -1051,6 +1061,22 @@
           items:
             - name: Startside for hovedplanlegging
               href: master-planning/master-planning-home-page.md
+            - name: Planleggingsoptimalisering
+              items:
+                - name: Oversikt over planleggingsoptimalisering
+                  href: master-planning/planning-optimization/planning-optimization-overview.md
+                - name: Komme i gang med planleggingsoptimalisering
+                  href: master-planning/planning-optimization/get-started.md
+                - name: Analyse for tilpassing av planleggingsoptimalisering
+                  href: master-planning/planning-optimization/planning-optimization-fit-analysis.md
+                - name: Bruke filtre på en plan
+                  href: master-planning/planning-optimization/plan-filters.md
+                - name: Vise planhistorikk og planleggingslogger
+                  href: master-planning/planning-optimization/plan-history-logs.md
+                - name: Automatisk autorisasjon med planleggingsoptimalisering
+                  href: master-planning/planning-optimization/planning-optimization-auto-firming.md
+                - name: Avbryte en planleggingsjobb
+                  href: master-planning/planning-optimization/cancel-planning-job.md
             - name: Hovedplaner
               items:
                 - name: Oversikt over hovedplaner

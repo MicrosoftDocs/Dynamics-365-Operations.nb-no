@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 491024c9c3d6c7d20ef212e167ceab6abac8dac7
-ms.sourcegitcommit: d554faca895609b8124bf2ea5aca5a55c407534a
+ms.openlocfilehash: 2955464aa8a220563db1b9ebbb348be52f520659
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "2537861"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812586"
 ---
 # <a name="connect-the-help-system"></a>Koble til hjelpesystemet
 
@@ -80,7 +80,7 @@ Du kan bruke støttelinjer for å opprette egendefinert hjelp, eller du kan kobl
 
 Du kan opprette egendefinert hjelp for Supply Chain Management og for Retail ved å opprette oppgaveregistreringer som gjenspeiler implementeringen, og lagre dem i et bibliotek for LCS-forretningsprosess. Du kan ikke opprette egendefinerte oppgaveveiledninger for Talent.
 
-For partnere, hvis du hever nivået for et bibliotek til et firmabibliotek og inkludere det i en løsning, vil det være tilgjengelig for kundene dine. Du kan også lage en kopi av det globale APQC-enhetlige biblioteket og deretter åpne kopien din, åpne oppgaveregistreringer fra den, endre dem og lagre registreringene sammen med endringene. Hvis du vil ha mer informasjon, se [Opprette en oppgaveregistrering som skal brukes som dokumentasjon eller opplæring](../../dev-itpro/user-interface/task-recorder.md).
+For partnere, hvis du hever nivået for et bibliotek til et firmabibliotek og inkludere det i en løsning, vil det være tilgjengelig for kundene dine. Du kan også lage en kopi av det globale APQC-enhetlige biblioteket og deretter åpne kopien din, åpne oppgaveregistreringer fra den, endre dem og lagre registreringene sammen med endringene. Hvis du vil ha mer informasjon, kan du se [Ressurser for Oppgaveregistrering](../../dev-itpro/user-interface/task-recorder.md).
 
 ### <a name="connect-a-custom-site"></a>Koble til et tilpasset område
 
@@ -91,8 +91,8 @@ Microsoft har en hvitbok og eksempelkode som beskriver hvordan du kan opprette o
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 
-[Oversikt over Hjelp](help-overview.md)
+[Hjelpesystem](help-overview.md)
 
-[Oversikt over oppgaveopptaker](../../dev-itpro/user-interface/task-recorder.md)
+[Ressurser for Oppgaveregistrering](../../dev-itpro/user-interface/task-recorder.md)
 
-[Opprette en oppgaveregistrering som skal brukes som dokumentasjon eller opplæring](../../dev-itpro/user-interface/task-recorder-training-docs.md)
+[Lage dokumentasjon eller opplæring med Oppgaveopptaker](../../dev-itpro/user-interface/task-recorder-training-docs.md)

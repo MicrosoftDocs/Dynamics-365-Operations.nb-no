@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: a7db93e1877034051b6add4c11ddfe7cd7d17e0b
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 575b27de845d931c990b1d19254b5218fa6e4199
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2187918"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2770856"
 ---
 # <a name="create-dimensions-and-import-dimension-members"></a>Opprette dimensjoner og importere dimensjonsmedlemmer
 
@@ -44,11 +44,10 @@ De følgende diagrammer illustrerer dimensjoner som brukes for kostnadsregnskap.
 Etter at data er import i Kostnadsregnskap kan du bruke det for å bygge ulike perspektiver som gir innsikt til ledere på alle nivåer i organisasjonen. Følgende emner gir informasjon om hvordan du lager dimensjoner og importerer dimensjonsmedlemmer. 
 
 -  [Kostnadselementdimensjoner](cost-elements.md)
--  [Opprette kostnadselementer (oppgaveveiledning)](./tasks/create-cost-elements.md)
--  [Kostnadsobjektdimensjoner](cost-objects.md)
--  [Opprette kostnadselementer (oppgaveveiledning)](./tasks/create-cost-objects.md)
+-  [Opprette kostnadselementer](./tasks/create-cost-elements.md)
+-  [Dimensjoner for kostnadsobjekt](cost-objects.md)
 -  [Tilordne dimensjonsmedlemmer for kostnadselement til et felles sett med dimensjonsmedlemmer](map-cost-elements-dimension-members.md)
--  [Tilordne en kostnadselementdimensjon (oppgaveveiledning)](./tasks/map-cost-element-dimension.md)
+-  [Tilordne en kostnadselementdimensjon](./tasks/map-cost-element-dimension.md)
 -  [Statistiske dimensjonsmedlemmer og maler for leverandør av statistisk måling](statistical-measure-provider-template.md)
 
 

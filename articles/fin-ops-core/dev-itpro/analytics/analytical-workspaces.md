@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 76564c440d52f7eae4faa704cf9010c7754c3751
-ms.sourcegitcommit: 7bec89b33a56447072d01066af4da473b8092ca8
+ms.openlocfilehash: 4e466e6b1bbec0915b6fdb9b86d3b5cbb45364ad
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "2536876"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2771616"
 ---
 # <a name="analytical-workspaces"></a>Analytiske arbeidsområder
 [!include[banner](../includes/banner.md)]
@@ -34,15 +34,15 @@ ms.locfileid: "2536876"
 - [Power BI-innholdet Kostnadsstyring](cost-management-content-pack.md)
 - [Power BI-innholdet Behandling av kreditt og innkrevinger](../../../finance/accounts-receivable/credit-collections-power-bi.md)
 - [Power BI-innholdet Ansattutvikling](employee-development-PBI.md) 
-- [Power BI-innholdet Økonomisk innsikt](financial-insights.md)
-- [Power BI-innholdet Finansresultat](financial-performance-power-bi-content-pack.md)
-- [Power BI-innholdet Anleggsmiddelbehandling](../../../finance/fixed-assets/Fixed-asset-management-workspace.md)
+- [Økonomisk innsikt](financial-insights.md)
+- [Finansresultat for PowerBI.com-løsning](financial-performance-power-bi-content-pack.md)
+- [Arbeidsområde for anleggsmiddelbehandling](../../../finance/fixed-assets/Fixed-asset-management-workspace.md)
 - [Power BI-innholdet Opplæring](learning-power-bi.md)
 - [Power BI-innholdet Praksisleder](practice-manager-power-bi.md)
 - [Power BI-innholdet Produksjonsytelse](production-performance-power-bi.md)
 - [Power BI-innholdet Analyse av innkjøp og forbruk](purchase-content-pack-for-power-bi.md) 
 - [Power BI-innholdet Rekruttering](recruiting-analysis-power-bi-content-pack.md) 
 - [Power BI-innholdet Resultat av salg og fortjeneste](sales-profitability-performance-content-pack.md)
-- [Power BI-innholdet Leverandørbetalinger](../../../finance/accounts-payable/Vendor-payments-workspace.md)
+- [Arbeidsområde for leverandørbetalinger](../../../finance/accounts-payable/Vendor-payments-workspace.md)
 - [Power BI-innholdet Lagerytelse](warehouse-power-bi-content.md)
 - [Power BI-innholdet Metrikk for arbeidsstyrke](workforce-analysis-power-bi-content-pack.md)

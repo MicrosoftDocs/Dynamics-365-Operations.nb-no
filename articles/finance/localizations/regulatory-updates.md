@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: adb88a5fb79b24a26aa2976464d3e838922322c6
-ms.sourcegitcommit: 0099fb24f5f40ff442020b488ef4171836c35c48
+ms.openlocfilehash: 480253d1401c567e27f636f8a2b19fa3937e89e5
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "2653210"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2770390"
 ---
 # <a name="regulatory-updates"></a>Forskriftsmessige oppdateringer
 
@@ -82,11 +82,11 @@ For de siste forskriftsmessige oppdateringsplanene kan du se tabellen nedenfor.
 |      2019. april          |   10.0.1      | Ungarn      |  Ungarn: elektronisk fakturering v. 1.1 2019  |
 |      2019. april          |   10.0.1      | Japan      |  2019 - endring i japansk kalenderepoke  |
 |      2019. april          |   10.0.1      |    Russland     |Endringer i deklarering for landavgift fra 2018 |
-|      2019. april          |   10.0.1      |    Russland     |[Endringer i deklarering for eiendomsskatt fra 2019](rus-assessed-tax-declaration.md)|
+|      2019. april          |   10.0.1      |    Russland     |[Vurdert avgiftsdeklarering](rus-assessed-tax-declaration.md)|
 |      2019. april          |   10.0.1      |    Russland     |Endringer i deklarering for transportavgift fra 2019  |
-|      2019. april          |   10.0.1      |    Russland     |[Endringer i mva-deklareringsformat fra 2019](rus-VAT-declaration.md) |
+|      2019. april          |   10.0.1      |    Russland     |[Mva-deklarering](rus-VAT-declaration.md) |
 |      2019. april          |   10.0.1      |    Russland     |Endringer i mva-deklareringsformat fra 2019 (salgs- og innkjøpsbøker) |
-|      2019. april          |   10.0.1      |    Storbritannia     |[Mva-oppgave, innsendingsendringer (Gjøre mva digital)](emea-gbr-mtd-vat-integration.md)    |    
+|      2019. april          |   10.0.1      |    Storbritannia     |[Klargjøre Finance and Operations for integrasjon med MTD for mva](emea-gbr-mtd-vat-integration.md)    |    
 |      2019. mars          |   10.0.0      |    Østerrike   |   Endringer i Kammerumlage 2019 (innkjøpsavgift)    |
 |      2019. mars          |   10.0.0      |    Brasil    |     SPED EFD-bidrag – Oppsett 004 og 005  |
 |      2019. mars          |   10.0.0      |    Malaysia     |Malaysia erstatter merverdiavgift med SST, merverdi- og tjenesteavgift        |

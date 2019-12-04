@@ -3,7 +3,7 @@ title: Tilordne brukere til sikkerhetsroller
 description: For å få tilgang til Finance and Operations-apper må brukere tilordnes sikkerhetsroller.
 author: ChrisGarty
 manager: AnnBe
-ms.date: 09/16/2019
+ms.date: 11/14/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: a4daecc1acd589cd1656402244e5325382a407e7
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: e4f4ef4535de9e371829c2d86d4fdc1400510c7b
+ms.sourcegitcommit: 6aa74f66f1abd3a7977050a5339b0b17e62ff053
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2180973"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "2808002"
 ---
 # <a name="assign-users-to-security-roles"></a>Tilordne brukere til sikkerhetsroller
 
@@ -37,6 +37,9 @@ For å bruke noe annet enn vanlige funksjoner må brukerne tilordnes sikkerhetsr
 5. Klikk på koblingen i den valgte raden i listen **Navn på medlemskapsregel**.
 6. Klikk på **Rediger spørring**. Rediger spørringen etter behov.  
 7. Klikk **OK**.
+8. Klikk på **Kjør automatisk rolletilordning**.
+9. Gå til **Navigasjonsrute > Moduler > Systemadministrasjon > Brukere > Brukere** (ideelt i en egen webleserkategori).
+10. Gå gjennom rollene som er tilordnet ulike brukere for å bekrefte at rolletildelingsspørringen var riktig. Juster og kjør på nytt om nødvendig.
 
 ## <a name="exclude-users-from-automatic-role-assignment"></a>Utelate brukere fra automatisk rolletilordning
 1. Lukk siden.

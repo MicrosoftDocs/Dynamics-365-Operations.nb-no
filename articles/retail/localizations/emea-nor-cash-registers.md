@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: epopov
 ms.search.validFrom: 2017-10-31
 ms.dyn365.ops.version: Application update 4
-ms.openlocfilehash: 657f638c1a3ebd74aa4a91ad7049967a1aec676f
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: ab11bef346959e28df9016c9ee046fc26269b1d5
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2025421"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812320"
 ---
 # <a name="cash-register-functionality-for-norway"></a>Kassefunksjoner for Norge
 
@@ -37,7 +37,7 @@ Dette emnet gir en oversikt over hvilke kasse-funksjoner som er tilgjengelige fo
 
 ### <a name="common-pos-features"></a>Vanlige POS-funksjoner
 
-Hvis du vil finne ut mer om POS-funksjoner som er tilgjengelige for kunder i alle land eller områder, kan du se [Dokumentasjon for Microsoft Dynamics 365 for Retail](../index.md).
+Hvis du vil finne ut mer om POS-funksjoner som er tilgjengelige for kunder i alle land eller områder, kan du se [Hjelperessurser for Dynamics 365 Retail](../index.md).
 
 Følgende POS-lokaliseringsfunksjoner som tidligere ble implementert og gjort tilgjengelige for kunder i alle land eller områder, kan nå brukes spesielt for Norge:
 
@@ -116,7 +116,7 @@ SAF-T-kasseformatet er implementert i Retail Headquarters ved hjelp av [elektron
 
 ## <a name="setting-up-retail-for-norway"></a>Konfigurere Retail for Norge
 
-Denne delen beskriver innstillingene som er spesifikke og anbefalte for Norge. Hvis du vil ha mer informasjon om hvordan du definerer detaljhandel, kan du se [dokumentasjonen for Microsoft Dynamics 365 for Retail](../index.md).
+Denne delen beskriver innstillingene som er spesifikke og anbefalte for Norge. Du finner mer informasjon om hvordan du definerer Retail, under [Hjelperessurser for Dynamics 365 Retail](../index.md).
 
 Hvis du vil bruke de spesifikke funksjonene for Norge, må du fullføre disse oppgavene:
 
@@ -199,7 +199,7 @@ I Utforming av kvitteringsformat legger du til de egendefinerte feltene nedenfor
     - **Sum med avgift (salg)** – Dette feltet skriver ut kvitteringens totale beløp for kontantsalg. Beløpet med mva. Forskuddsbetalinger og gavekort utelates.
     - **Avgiftsbeløp (salg)** – Dette feltet skriver ut kvitteringens mva-beløp for kontantsalg per mva-kode. Forskuddsbetalinger og gavekort utelates.
 
-Hvis du vil ha mer informasjon om hvordan du arbeider med kvitteringsformater, kan du se [Kvitteringsmaler og utskrift](../receipt-templates-printing.md).
+Hvis du vil ha mer informasjon om hvordan du arbeider med kvitteringsformater, kan du se [Definere og utforme kvitteringsformater](../receipt-templates-printing.md).
 
 ### <a name="configure-the-saf-t-cash-register-export-format"></a>Konfigurere formatet for eksport av SAF-T-kasse
 

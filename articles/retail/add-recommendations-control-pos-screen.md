@@ -19,19 +19,19 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: d646c8ba559ba3e8d2175911e76c57d25eff02ca
-ms.sourcegitcommit: 5b53bdafa5cb9a1279576bfece0452a50383b122
+ms.openlocfilehash: e6f0b75c8d81a5ac6ec90020375aec39120d4406
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "2278135"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811222"
 ---
 # <a name="add-a-recommendations-control-to-the-transaction-screen-on-pos-devices"></a>Legge til en kontroll for anbefalinger på transaksjonsskjermen på salgsstedsenheter
 
 [!include [banner](includes/banner.md)]
 
 
-Dette emnet beskriver hvordan du legger til en kontroll for anbefalinger på transaksjonsskjermbildet på en salgsstedsenhet ved hjelp av utforming av skjermoppsett i Microsoft Dynamics 365 Retail. Hvis du vil ha mer informasjon om produktanbefalinger, kan du lese [produktanbefalingene i POS-dokumentasjonen.](product.md)
+Dette emnet beskriver hvordan du legger til en kontroll for anbefalinger på transaksjonsskjermbildet på en salgsstedsenhet ved hjelp av utforming av skjermoppsett i Microsoft Dynamics 365 Retail. Hvis du vil ha mer informasjon om produktanbefalinger, kan du lese [produktanbefalingene i POS-dokumentasjonen](product.md).
 
 
 Du kan vise produktanbefalingene på salgsstedsenheten når du bruker Microsoft Dynamics 365 Retail. Hvis du vil vise produktanbefalinger, må du legge til en kontroll på transaksjonsskjermen med utforming av skjermoppsett. 
@@ -98,6 +98,6 @@ Det finnes to tilgjengelige konfigurasjonsalternativer. Velg alternativet som pa
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 
-[produktanbefalinger på salgssted](product.md)
+[Produktanbefalinger i POS](product.md)
 
-[oversikt over produktanbefalinger](../commerce/product-recommendations.md)
+[Oversikt over produktanbefalinger](../commerce/product-recommendations.md)

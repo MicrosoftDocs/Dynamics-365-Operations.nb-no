@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c585bce468f87a32204893ea20ce6954e92b0e38
-ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
+ms.openlocfilehash: 8619c6cde484c41ec01e96eb4626366f1955b5d4
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "2571812"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811832"
 ---
 # <a name="install-assets-on-functional-locations"></a>Installere aktiva på arbeidssteder
 
@@ -31,7 +31,7 @@ ms.locfileid: "2571812"
 
  
 
-Når du har opprettet arbeidsstedsstrukturer, er neste trinn å installere aktiva på de relevante arbeidsstedene. Dette emnet forklarer hvordan du installerer aktiva på disse arbeidsstedene i Aktivastyring. Se [Aktiva](../objects/introduction-to-objects.md) hvis du vil ha mer informasjon om hvordan du oppretter aktiva.
+Når du har opprettet arbeidsstedsstrukturer, er neste trinn å installere aktiva på de relevante arbeidsstedene. Dette emnet forklarer hvordan du installerer aktiva på disse arbeidsstedene i Aktivastyring. Se [Introduksjon til aktiva](../objects/introduction-to-objects.md) hvis du vil ha mer informasjon om hvordan du oppretter aktiva.
 
 Hvis du har opprettet en aktivastruktur, må hele aktivastrukturen være installert på et arbeidssted. Derfor kan bare overordnede objekter (aktiva på øverste nivå som har ingen overordnede objekter) velges på et arbeidssted. Alle tilknyttede underordnede aktiva (underaktiva) vil også bli installert på arbeidsstedet. Når du installerer aktiva på et arbeidssted, kan finansdimensjonene for arbeidsstedet automatisk overføres til dem, avhengig av oppsettet for arbeidsstedstypen som er valgt for arbeidsstedet. Hvis du vil ha mer informasjon om hvordan du oppretter arbeidsstedstyper, se [Arbeidsstedstyper](../setup-for-functional-locations/functional-location-types.md).
 

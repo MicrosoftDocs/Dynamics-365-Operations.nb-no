@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 20d48795b23628bbba2896bf48940936a25e0435
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: 3f331401f8d191243f72961333e4f1dbe84d0be5
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2550090"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2771335"
 ---
 # <a name="support-parameterized-calls-of-er-data-sources-of-the-calculated-field-type"></a>Støtte for parameterkall fra ER-datakilder for Beregnet felt-typen
 
@@ -55,7 +55,7 @@ Fra [Microsoft Download Center](https://go.microsoft.com/fwlink/?linkid=874684) 
 | Eksempel ER-formatkonfigurasjon        | Format for å lære om parameterkall.versjon.1.1.XML  |
 
 ## <a name="sign-in-to-your-rcs-instance"></a>Logge på RCS-forekomsten
-I dette eksemplet skal du opprette en konfigurasjon for eksempelfirmaet, Litware, Inc. Først må du fullføre disse trinnene i RCS i fremgangsmåten [Opprette en konfigurasjonsleverandør og merke den som aktiv](tasks/er-configuration-provider-mark-it-active-2016-11.md):
+I dette eksemplet skal du opprette en konfigurasjon for eksempelfirmaet, Litware, Inc. Først må du fullføre disse trinnene i RCS i fremgangsmåten [Opprette konfigurasjonsleverandører og merke dem som aktive](tasks/er-configuration-provider-mark-it-active-2016-11.md):
 
 1. Velg **Elektronisk rapportering** på standard instrumentbord.
 2. Velg **Rapporteringskonfigurasjoner**.
@@ -75,21 +75,21 @@ I dette eksemplet skal du opprette en konfigurasjon for eksempelfirmaet, Litware
 3. Velg **Utforming**.
 4. Velg **Utforming**.  
    
-Denne ER-modelltilordningen er utformet for å gjøre følgende:
+    Denne ER-modelltilordningen er utformet for å gjøre følgende:
 
-- Hent listen over avgiftskoder (datakilden **Avgift**) som finnes i **TaxTable**-tabellen.
-- Hent listen over avgiftstransaksjoner (datakilden **Trans**) som finnes i **TaxTrans**-tabellen:
+    - Hent listen over avgiftskoder (datakilden **Avgift**) som finnes i **TaxTable**-tabellen.
+    - Hent listen over avgiftstransaksjoner (datakilden **Trans**) som finnes i **TaxTrans**-tabellen:
     
-    - Grupper listen over hentede transaksjoner (datakilden **Gr**) etter avgiftskode.
-    - Beregn for grupperte transaksjoner etter aggregerte verdier per avgiftskode:
+        - Grupper listen over hentede transaksjoner (datakilden **Gr**) etter avgiftskode.
+        - Beregn for grupperte transaksjoner etter aggregerte verdier per avgiftskode:
 
-        - Summen av basisverdier for avgift.
-        - Summen av verdier for avgift.
-        - Minimumsverdi for brukt avgiftssats.
+            - Summen av basisverdier for avgift.
+            - Summen av verdier for avgift.
+            - Minimumsverdi for brukt avgiftssats.
 
-Modelltilordningen i denne konfigurasjonen implementerer basisdatamodellen for alle ER-formatene som opprettes for denne modellen og som kjøres i Finance and Operations. Derfor vil inneholder i datakildene **Avgift** og **Gr** bli eksponert for ER-formater, for eksempel abstrakte datakilder.
+    Modelltilordningen i denne konfigurasjonen implementerer basisdatamodellen for alle ER-formatene som opprettes for denne modellen og som kjøres i Finance and Operations. Derfor vil inneholder i datakildene **Avgift** og **Gr** bli eksponert for ER-formater, for eksempel abstrakte datakilder.
 
-  ![Siden Modelltilordningsutforming viser datakildene Avgift og Gr](media/er-calculated-field-type-01.png)
+    ![Siden Modelltilordningsutforming viser datakildene Avgift og Gr](media/er-calculated-field-type-01.png)
 
 5.  Lukk siden **Modelltilordningsutforming**.
 6.  Lukk siden **Modelltilordning**.
@@ -100,25 +100,25 @@ Modelltilordningen i denne konfigurasjonen implementerer basisdatamodellen for a
 2. Velg **Format for å lære om parameterkall**.
 3. Velg **Utforming**. Dette ER-formatet er utformet for å gjøre følgende:
 
-  - Generer en avgiftsoppgave i XML-format.
-  - Presenter følgende nivåer for avgifter i avgiftsoppgaven: vanlig, redusert og ingen.
-  - Presenter flere detaljer for hvert avgiftsnivå med ulikt antall detaljer på hvert nivå.
+    - Generer en avgiftsoppgave i XML-format.
+    - Presenter følgende nivåer for avgifter i avgiftsoppgaven: vanlig, redusert og ingen.
+    - Presenter flere detaljer for hvert avgiftsnivå med ulikt antall detaljer på hvert nivå.
 
-  ![Formatutformingsside](media/er-calculated-field-type-02.png)
+    ![Formatutformingsside](media/er-calculated-field-type-02.png)
 
 4. Velg **Tilordning**.
 5. Vis elementene **Model**, **Data,** og **Summary**. 
 
-   Det beregnede feltet **Model.Data.Summary.Level** inneholder uttrykket som returnerer koden for avgiftsnivået (**Vanlig**, **Redusert**, **Ingen** eller **Annet**) som en tekstverdi for avgiftskoder som kan hentes fra datamodellen **Model.Data.Summary** ved kjøretid.
+    Det beregnede feltet **Model.Data.Summary.Level** inneholder uttrykket som returnerer koden for avgiftsnivået (**Vanlig**, **Redusert**, **Ingen** eller **Annet**) som en tekstverdi for avgiftskoder som kan hentes fra datamodellen **Model.Data.Summary** ved kjøretid.
 
-  ![Siden Formatutforming som viser detaljer for datamodellen Modell for å lære om parameterkall](media/er-calculated-field-type-03.png)
+    ![Siden Formatutforming som viser detaljer for datamodellen Modell for å lære om parameterkall](media/er-calculated-field-type-03.png)
 
 6. Vis elementet **Model**.**Data2**.
 7. Vis elementet **Model**.**Data2.Summary2**.
    
-   Datakilden **Model**.**Data2.Summary2** konfigureres til å gruppere transaksjonsdetaljene for datakilden **Model.Data.Summary** etter avgiftsnivå (returneres av det beregnede feltet **Model.Data.Summary.Level**) og beregne aggregeringene.
+    Datakilden **Model**.**Data2.Summary2** konfigureres til å gruppere transaksjonsdetaljene for datakilden **Model.Data.Summary** etter avgiftsnivå (returneres av det beregnede feltet **Model.Data.Summary.Level**) og beregne aggregeringene.
 
-  ![Siden Formatutforming som viser detaljer om datakilden Model.Data2.Summary2](media/er-calculated-field-type-04.png)
+    ![Siden Formatutforming som viser detaljer om datakilden Model.Data2.Summary2](media/er-calculated-field-type-04.png)
 
 8. Gå gjennom de beregnede feltene **Model**.**Data2.Level1**, **Model**.**Data2.Level2** og **Model**.**Data2.Level3.** Disse beregnede feltene brukes til å filtrere postlistene **Model**.**Data2. Summary2** og bare returnere poster som representerer et bestemt avgiftsnivå.
 9. Lukk **Formatutforming**-siden.
@@ -309,7 +309,7 @@ Når et parameterberegnet felt returnerer en post, må du støtte binding av enk
 Du kan kjøre de opprinnelige og forbedrede ER-formatene for å sikre at konfigurerte parameterberegnede felt fungerer slik de skal.
 
 ### <a name="import-er-configurations"></a>Importere ER-konfigurasjoner
-Du kan importere gjennomgåtte konfigurasjoner fra RCS ved å bruke ER-repositoriet til **RCS**-typen. Hvis du allerede har gått gjennom trinnene gjort i emnet [Importere konfigurasjoner for elektronisk rapportering fra Regulatory Configuration Services](rcs-download-configurations.md), bruker du det konfigurerte ER-repositoriet til å importere konfigurasjoner som er beskrevet tidligere i dette emnet, til miljøet. Hvis ikke følger du denne fremgangsmåten:
+Du kan importere gjennomgåtte konfigurasjoner fra RCS ved å bruke ER-repositoriet til **RCS**-typen. Hvis du allerede har gått gjennom trinnene gjort i emnet [Importere konfigurasjoner for elektronisk rapportering (ER) fra Regulatory Configuration Services](rcs-download-configurations.md), bruker du det konfigurerte ER-repositoriet til å importere konfigurasjoner som er beskrevet tidligere i dette emnet, til miljøet. Hvis ikke følger du denne fremgangsmåten:
 
 1. Velg firmaet **DEMF**, og velg **Elektronisk rapportering** på standard instrumentbord.
 2. Velg **Rapporteringskonfigurasjoner**.
@@ -339,4 +339,4 @@ Du kan importere gjennomgåtte konfigurasjoner fra RCS ved å bruke ER-repositor
 8. Sammenlign innholdet i de genererte utdataene.
 
 ## <a name="additional-resources"></a>Tilleggsressurser
-[Formeldesigner i elektronisk rapportering](general-electronic-reporting-formula-designer.md)
+[Formeldesigner i elektronisk rapportering (ER)](general-electronic-reporting-formula-designer.md)

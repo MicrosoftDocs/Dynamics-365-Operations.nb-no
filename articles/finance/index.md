@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 34af4cc05b6966b5f118c1dd2adbda288a0f3da1
-ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
+ms.openlocfilehash: 5b5ed05e9c53b17632e94e913f7f3663676c3e91
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "2570131"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2770580"
 ---
 # <a name="financial-management-home-page"></a>Startside for økonomistyring
 
@@ -41,11 +41,11 @@ Velg et funksjonsområde du vil finne ut mer om.
         - [Kostnadsregnskap](cost-accounting/cost-accounting-home-page.md)
     :::column-end:::
     :::column:::
-        - [Reiseregning](expense-management/expense-management.md)
+        - [Reiseregning og utlegg](expense-management/expense-management.md)
         - [Finansrapportering](../dev-itpro/analytics/financial-reporting-intro.md?toc=/fin-and-ops/toc.json)
         - [Anleggsmidler](fixed-assets/fixed-assets.md)
-        - [Økonomimodul](general-ledger/general-ledger.md) 
-        - [Prosjektstyring](project-management/overview-project-management-accounting.md)
+        - [Økonomimodul og Finansrapportering](general-ledger/general-ledger.md) 
+        - [Prosjektstyring og regnskap](project-management/overview-project-management-accounting.md)
         - [Offentlig sektor](public-sector/public-sector-functionality.md) 
     :::column-end:::
 :::row-end:::
