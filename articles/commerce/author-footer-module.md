@@ -1,0 +1,86 @@
+---
+title: Bunntekstmodul
+description: Dette emnet dekker bunntekstmoduler og hvordan du redigerer dem i Dynamics 365 Commerce.
+author: anupamar
+manager: annbe
+ms.date: 10/31/2019
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-365-commerce
+ms.technology: ''
+audience: Application user
+ms.reviewer: v-chgri
+ms.search.scope: Retail, Core, Operations
+ms.custom: ''
+ms.assetid: ''
+ms.search.region: Global
+ms.author: anupamar-ms
+ms.search.validFrom: 2019-10-31
+ms.dyn365.ops.version: Release 10.0.5
+ms.openlocfilehash: 7c253cd9620180b09f2f5cae232e46d236deabdd
+ms.sourcegitcommit: 295d940a345879b3dfc5991e387b91c7257019ea
+ms.translationtype: HT
+ms.contentlocale: nb-NO
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2697319"
+---
+# <a name="footer-module"></a>Bunntekstmodul  
+
+[!include [banner](includes/preview-banner.md)]
+[!include [banner](includes/banner.md)]
+
+Dette emnet dekker bunntekstmoduler og beskriver hvordan du oppretter dem i Microsoft Dynamics 365 Commerce.
+
+## <a name="overview"></a>Oversikt
+
+Bunntekstmodulen er en spesialcontainer som brukes til å være vert for modulene som vises i bunnteksten på siden. Den kan for eksempel inneholde koblinger til ulike sider på området, for eksempel sider for **Kontakt oss** og **Butikkpolicyer**.
+
+## <a name="footer-module-properties"></a>Egenskaper for bunntekstmodul 
+
+I likhet med de fleste containere støtter en bunntekstmodul egenskaper for overskriften og bredden. Den støtter også tillegging av flere bunntekstkategorimoduler. Hver bunntekstkategorimodul som legges til, gjengis som en kolonne i bunntekstmodulen.
+
+## <a name="modules-available-in-a-footer-module"></a>Moduler som er tilgjengelige i en bunntekstmodul
+
+**Bunntekstelementer** – En modul for bunntekstelementer kan inneholde en overskrift, et bilde og en kobling. Overskriften kan enten brukes alene eller sammen med et bilde og en kobling. Hver kobling i bunnteksten kan konfigureres slik at den har bare tekst (for eksempel "Kontakt oss"- og "Personvern"-koblinger), eller slik at den har både tekst og et bilde (for eksempel koblinger til sosiale medier).
+
+**Til toppen** – En Til toppen-modul gir en kobling for rask navigering til toppen av siden. Et mål kreves. Standard målverdi er #, som tar brukeren til toppen av siden.
+
+## <a name="author-a-footer-module"></a>Forfatte en bunntekstmodul
+
+1. I navigasjonsruten velger du **Fragmenter**, og deretter velger du **Nytt sidefragment**.
+1. I dialogboksen **Nytt sidefragment** velger du bunntekstmodulen, skriver inn et navn på sidefragmentet og velger **OK**.
+1. I disposisjonstreet til venstre velger du ellipseknappen (**...**) for bunntekstmodulen, og deretter velger du **Legg til modul**.
+1. I dialogboksen **Legg til modul** velger du bunntekstkategorimodulen, og deretter velger du **OK**.
+1. I disposisjonstreet velger du ellipseknappen for bunntekstkategorien, og deretter velger du **Legg til modul**.
+1. I dialogboksen **Legg til modul** velger du bunntekstelementmodulen, og deretter velger du **OK**.
+1. I disposisjonstreet velger du bunntekstelementmodulen. Deretter, i egenskapsruten til høyre, konfigurerer du overskriften, koblingen, koblingsteksten og bildet etter behov.
+1. Gjenta trinn 5 til og med 7 for å legge til flere bunntekstelementer.
+1. For å legge til "Til toppen"-kobling i bunnteksten velger du ellipseknappen for bunntekstkategorimodulen, og deretter velger du **Legg til modul**.
+1. I dialogboksen **Legg til modul** velger du Til toppen-modulen, og deretter velger du **OK**.
+1. I disposisjonstreet velger du Til toppen-modulen. I egenskapsruten til høyre konfigurerer du deretter Til toppen-modulen slik du ønsker.
+1. Lagre sidefragmentet, sjekk det inn, og publiser det.
+
+Følg denne fremgangsmåten for hver sidemal som er opprettet for området.
+
+1. I **Hoved**-sporet på standardsiden, i bunntekstmodulen, legger du til bunntekstfragmentet du opprettet.
+1. Lagre malen, sjekk den inn og publiser den.
+
+Ved å legge til sidefragmentet i sidemaler garanteres det at bunnteksten gjengis på hver side.
+
+## <a name="additional-resources"></a>Tilleggsressurser
+
+[Startpakke, oversikt](starter-kit-overview.md)
+
+[Containermodul](add-container-module.md)
+
+[Kjøpsboksmodul](add-buy-box.md)
+
+[Handlekurvmodul](add-cart-module.md)
+
+[Kassemodul](add-checkout-module.md)
+
+[Ordrebekreftelsesmodul](order-confirmation-module.md)
+
+[Topptekstmodul](author-header-module.md)
+
+[Bunntekstmodul](author-footer-module.md)
