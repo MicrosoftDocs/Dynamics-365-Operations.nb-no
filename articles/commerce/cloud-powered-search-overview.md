@@ -1,0 +1,80 @@
+---
+title: Oversikt over skybaserte søk
+description: Dette emnet gir en oversikt over skydrevne søk i Microsoft Dynamics 365 Commerce.
+author: v-chgri
+manager: annbe
+ms.date: 10/01/2019
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-365-commerce
+ms.technology: ''
+audience: Application user
+ms.reviewer: v-chgri
+ms.search.scope: Operations, Retail, Core
+ms.custom: ''
+ms.assetid: ''
+ms.search.region: Global
+ms.author: asharchw
+ms.search.validFrom: 2019-10-31
+ms.dyn365.ops.version: Release 10.0.5
+ms.openlocfilehash: 015f308640117b1354868c9f37e4b8df9cac6f2a
+ms.sourcegitcommit: 295d940a345879b3dfc5991e387b91c7257019ea
+ms.translationtype: HT
+ms.contentlocale: nb-NO
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2697204"
+---
+# <a name="cloud-powered-search-overview"></a>Oversikt over skybaserte søk
+
+[!include [banner](includes/preview-banner.md)]
+[!include [banner](includes/banner.md)]
+
+Dette emnet gir en oversikt over skydrevne søk i Microsoft Dynamics 365 Commerce.
+
+## <a name="overview"></a>Oversikt
+
+Produktoppdaging bidrar til å garantere at kunder raskt og enkelt kan finne produkter ved å bla gjennom kategorier, søke og filtrere. Forhandlere vurderer produktgjenkjenning som et primært verktøy for kundeinteraksjon på tvers av alle detaljhandelskanaler.
+
+Kundene er vant til nesten umiddelbare svartider i websøkemotorer, avanserte webområder for e-handel, sosiale apper, automatiske forslag som vises når de skriver inn søkeord, filterbasert navigasjon og utheving. Hvis kunder ikke finner produktet de leter etter raskt nok i én e-handelsbutikk, vil de ikke nøle med å gå til en annen e-handelsbutikk.
+
+Den skybaserte produktregistreringen i Dynamics 365 Commerce hjelper forhandlere med å fortsette å øke kundelojaliteten og konverteringssatsene på tvers av alle kanaler, både e-handelskanaler og salgsstedskanaler (POS).
+
+Dynamics 365 Commerce-søkeopplevelsen har forbedrede funksjoner for å hjelpe forhandlere med å oppnå bedre produktoppdaging. Samtidig gir disse funksjonene skalerbarheten og ytelsen som kreves for trafikk i e-handel.
+
+## <a name="browse-and-search"></a>Bla gjennom og søke
+
+Søkerelevans og ytelse er nøkkelfaktorer i omnikanalopplevelsen, fordi produktoppdaging hovedsakelig er avhengig av søkefunksjonalitet for informasjonshenting og innholdsnavigasjon. En effektiv bla- og søkeopplevelse bidrar til å øke konverteringen.
+
+Illustrasjonen nedenfor viser et eksempel på vanlig bla- og søkefunksjonalitet.
+
+![Målside for søk](./media/SearchLanding.png)
+
+## <a name="faceted-navigation-and-choice-summary"></a>Filterbasert navigasjon og valgsammendrag 
+
+Filterbasert navigasjon gjør at kundene enklere kan søke etter innhold ved å la dem filtrere på presiseringer som er koblet til termer i et termsett. Når en kunde har valgt og brukt presiseringer, vises et sammendrag av valgene. 
+
+Ved hjelp av filterbasert navigasjon kan du konfigurere ulike presiseringer for ulike termer i et termsett uten å måtte opprette flere sider. 
+
+Illustrasjonen nedenfor viser et eksempel på hvordan filterbasert navigasjon brukes i et søk.
+
+![Valgsammendrag](./media/ChoiceSummary.png)
+
+## <a name="immersive-autosuggest"></a>Dyptgående automatiske forslag
+
+Gjeldende funksjonalitet for automatiske forslag viser bare nøkkelord som utløser et søk etter det samsvarende nøkkelordet. På grunn av nye forbedringer i Dynamics 365 Commerce kan kunder ofte oppdage koblinger til produkter før de er skrevet ferdig.
+
+Dynamics 365 Commerce støtter også funksjonalitet for nøkkelordtreff i ulike kategorier. Med denne funksjonen kan kunder se antallet samsvarende nøkkelord på tvers av kategorier og utløse et søk etter et nøkkelord i andre kategorier.
+
+Illustrasjonen nedenfor viser et eksempel der det brukes dyptgående automatiske forslag.
+
+![dyptgående automatiske forslag](./media/ImmersiveAutoSuggestUX.png)
+
+## <a name="sort"></a>Sorter
+
+Bedre sortering i Dynamics 365 Commerce lar kundene sortere, søke etter og bla gjennom søkeresultater og finjustere dem etter kriterier som pris, produktnavn og produktnummer. Kunder kan også sortere resultatene basert på om et produkt er nytt, bestselgende eller nylig lagt til.
+
+## <a name="additional-resources"></a>Tilleggsressurser
+
+[Standard kategorimålside og søkeresultatside](category-search-page-overview.md)
+
+[Behandle metadata for søkemotor](manage-seo-metadata.md)
