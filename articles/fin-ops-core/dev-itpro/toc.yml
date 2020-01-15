@@ -8,7 +8,9 @@
           href: index.md
         - name: Hva er nytt eller endret
           items:
-            - name: Forhåndsvisningsfunksjoner i Platform Update 31 (januar 2020)
+            - name: Forhåndsvisningsfunksjoner i Platform Update 32 (februar 2020)
+              href: get-started/whats-new-platform-update-32.md
+            - name: Platform update 31 (januar 2020)
               href: get-started/whats-new-platform-update-31.md
             - name: Platform update 30 (november 2019)
               href: ../fin-ops/get-started/whats-new-platform-update-30.md
@@ -34,6 +36,10 @@
               href: ../fin-ops/get-started/whats-new-platform-update-20.md
             - name: Platform update 15 (mars 2018)
               href: ../fin-ops/get-started/whats-new-platform-update-15.md
+            - name: Nyheter eller endringer i de forrige versjonene
+              items:
+                - name: Startsiden Hva er nytt eller endret i Finance and Operations
+                  href: ../fin-ops/get-started/whats-new-changed.md
         - name: Forretningshendelser
           items:
             - name: Oversikt over forretningshendelser
@@ -410,7 +416,7 @@
                   href: deployment/develop-deploy-custom-models-on-premises.md
                 - name: PowerBI.com-integrering med lokale miljøer
                   href: analytics/entity-store-on-prem.md
-                - name: Konfigurere omvendte proxyer for lokale miljøer
+                - name: Konfigurere proxyer for lokale miljøer
                   href: deployment/onprem-reverseproxy.md
                 - name: Bruke oppdateringer i en lokal distribusjon
                   href: deployment/apply-updates-on-premises.md
@@ -716,7 +722,7 @@
                       href: extensibility/customize-model-elements-extensions.md
                     - name: Tilpasse via utvidelse og overlag
                       href: extensibility/customization-overlayering-extensions.md
-                - name: Hva er nytt
+                - name: Nyheter
                   items:
                     - name: Hva er nytt eller endret for utvidelsesmulighet
                       href: extensibility/extensibility-new.md
@@ -922,10 +928,12 @@
                   href: lifecycle-services/lcs-works-lcs.md
                 - name: LCS for partnere
                   href: lifecycle-services/getting-started-lcs.md
-                - name: Hva er nytt
+                - name: Nyheter
                   href: lifecycle-services/whats-new-lcs.md
                 - name: Kjente problemer
                   href: lifecycle-services/known-issues.md
+                - name: Fjernede eller utgåtte funksjoner i Lifecycle Services (LCS)
+                  href: lifecycle-services/removed-deprecated-features.md
             - name: Brukerveiledning for Lifecycle Services
               href: lifecycle-services/lcs-user-guide.md
             - name: Abonnementsberegner

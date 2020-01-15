@@ -8,6 +8,12 @@
         - name: Hva er nytt eller endret i Talent?
           href: whats-new.md
           items:
+            - name: 17. desember 2019
+              href: whats-new-talent-december-17-2019.md
+            - name: 12. desember 2019
+              href: whats-new-talent-december-12-2019.md
+            - name: 3. desember 2019
+              href: whats-new-talent-december-3-2019.md
             - name: 19. november 2019
               href: whats-new-talent-november-19-2019.md
             - name: 12. november 2019
@@ -26,16 +32,16 @@
               href: whats-new-talent-september-17-2019.md
             - name: 10. september 2019
               href: whats-new-talent-september-12-2019.md
-            - name: 27. august 2019
-              href: whats-new-talent-august-28-2019.md
-            - name: 22. august 2019
-              href: whats-new-talent-august-21-2019.md
-            - name: 13. august 2019
-              href: whats-new-talent-august-15-2019.md
-            - name: 6. august 2019
-              href: whats-new-talent-august-7-2019.md
             - name: Nye arkiver 2019
               items:
+                - name: 27. august 2019
+                  href: whats-new-talent-august-28-2019.md
+                - name: 22. august 2019
+                  href: whats-new-talent-august-21-2019.md
+                - name: 13. august 2019
+                  href: whats-new-talent-august-15-2019.md
+                - name: 6. august 2019
+                  href: whats-new-talent-august-7-2019.md
                 - name: 30. juli 2019
                   href: whats-new-talent-july-31-2019.md
                 - name: 23. juli 2019
@@ -134,32 +140,28 @@
           href: hr-copy-instance.md
         - name: Fjerne Talent-miljøer
           href: remove-talent-environment.md
-        - name: Klargjøre for Onboard-appen
+        - name: Behandle funksjoner
+          href: access-preview-feature.md
+        - name: Klargjøre Onboard
           href: modular-app-tech-faq.md
-        - name: Bygge inn PowerApps-apper
+        - name: Bygge inn Power Apps-apper
           href: ../fin-and-ops/get-started/embed-power-apps.md?toc=/dynamics365/unified-operations/talent/toc.json
-        - name: Core HR og Common Data Service
+        - name: Core HR-enheter i Common Data Service
           href: CoreHREntities.md
         - name: Få kundestøtte for Talent
           href: talent-support.md
     - name: Bemanne organisasjonen med Attract
       items:
-        - name: Hvilken versjon av Attract?
+        - name: Velge en versjon av Attract
           href: attract-comprehensive-hiring.md
         - name: Funksjoner og egenskaper for Attract
           href: attract-overview.md
-        - name: Vanlige spørsmål
-          items:
-            - name: Vanlige spørsmål om LinkedIn-integrering
-              href: attract-linkedin-faq.md
         - name: Konfigurere systeminnstillinger
           items:
             - name: Konfigurere firmainformasjon
               href: admin-settings-attract.md
             - name: Angi brukertillatelser
               href: security-attract.md
-            - name: Behandle funksjoner
-              href: access-preview-feature.md
             - name: Konfigurere karriereområdet
               href: career-site.md
             - name: Aktivere Broadbean-integrering
@@ -168,13 +170,15 @@
               href: attract-configure-email-settings.md
             - name: Konfigurere LinkedIn-integrering
               href: attract-admin-linkedin.md
+            - name: Vanlige spørsmål om LinkedIn-integrering
+              href: attract-linkedin-faq.md
         - name: Opprette en ansettelsesprosess
           items:
-            - name: Opprette en prosessmal
+            - name: Opprette en mal for ansettelsesprosess
               href: process-templates-attract.md
-            - name: Aktiviteter i ansettelsesprosesser
+            - name: Legge til aktiviteter i en ansettelsesprosess
               href: activities-attract.md
-            - name: E-postmaler
+            - name: Opprette e-postmaler
               href: email-templates.md
             - name: Bruke analyserapporter
               href: analytic-reports.md
@@ -197,10 +201,10 @@
             - name: Spore kandidatkilder
               href: source-tracking.md
             - name: Intelligente anbefalinger
-              href: Intelligent-Recommendations.md
+              href: intelligent-recommendations.md
         - name: Konfigurere intervjuer
           items:
-            - name: Planlegging og tilbakemelding for intervju
+            - name: Planlegge intervjuer
               href: interview-scheduling-feedback.md
         - name: Opprette et tilbud
           items:
@@ -433,7 +437,7 @@
       items:
         - name: Innebygd Power BI i arbeidsområder
           href: ../dev-itpro/analytics/embed-power-bi-workspaces.md?toc=/dynamics365/unified-operations/talent/toc.json
-        - name: Utvide Talent ved hjelp av PowerApps og Microsoft Flow – eksempelscenarier
+        - name: Utvide Talent med Power Apps og Power Automate
           href: extensibility-examples.md
         - name: Mobilapp
           items:
@@ -443,8 +447,6 @@
                   href: ../dev-itpro/mobile-apps/company-directory-mobile-workspace.md?toc=/dynamics365/unified-operations/talent/toc.json
                 - name: Mobilt arbeidsområde for mitt team
                   href: ../dev-itpro/mobile-apps/manager-self-service-mobile-workspace.md?toc=/dynamics365/unified-operations/talent/toc.json
-            - name: Publisere mobile arbeidsområder
-              href: ../dev-itpro/mobile-apps/publish-mobile-workspace.md?toc=/dynamics365/unified-operations/talent/toc.json
         - name: Spore endringer i rekrutteringsdata
           href: process-auditing.md
         - name: Utvidelsesmulighet i Attract
