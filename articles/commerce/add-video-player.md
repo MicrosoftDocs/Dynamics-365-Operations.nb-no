@@ -3,7 +3,7 @@ title: Videospillermodul
 description: Dette emnet dekker videospillermoduler og beskriver hvordan du legger dem til områdesider i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
-ms.date: 10/31/2019
+ms.date: 12/02/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 32504351f712c83ba8f593c17d2e51c532374311
-ms.sourcegitcommit: 3a4e137ef3a96ba0a58c5352f4a3b57467ace9ae
+ms.openlocfilehash: 1c78583f39dbacdc7b38e89c33e67ae23731bf8a
+ms.sourcegitcommit: 96bfc20eb748f4090a2b5e1ff9f54997d5a5d359
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/11/2019
-ms.locfileid: "2785335"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "2885907"
 ---
 # <a name="video-player-module"></a>Videospillermodul
 
@@ -57,6 +57,8 @@ Omgivelsesvideospillermodulen støtter korte informasjonsvideoer. Den bør bruke
 ## <a name="video-player-module"></a>Videospillermodul
 
 Videospillermodulen kan brukes til å vise videoer på et e-handelsområde. Den støtter alle avspillingsfunksjoner, for eksempel spill av, pause, fullstørrelsesmodus og teksting for hørselshemmede. Videospillermodulen støtter også tilpassing av teksting for hørselshemmede for å oppfylle Microsofts tilgjengelighetsstandarder. Du kan for eksempel tilpasse skriftstørrelsen og bakgrunnsfargen.
+
+Videospiller-modulen støtter også sekundære lydspor. Når en video er lastet opp, kan du også laste opp et sekundært lydspor. Videospiller-modulen kan deretter spille av det sekundære lydsporet hvis en bruker velger det.
 
 ### <a name="examples-of-video-player-modules-in-e-commerce"></a>Eksempler på omgivelsesvideospillermoduler i e-handel
 

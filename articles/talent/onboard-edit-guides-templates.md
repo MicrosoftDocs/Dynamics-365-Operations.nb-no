@@ -16,14 +16,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2019-06-19
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 24369a878e95076783d670894236d56dca18e765
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 291f7aefac61c26dfab81cfff28c1c6580d46de5
+ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2812885"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "2897126"
 ---
-# <a name="edit-onboarding-guides-and-templates-in-dynamics-365-talent---onboard"></a>Redigere veiledninger og maler for jobbintroduksjon i Dynamics 365 Talent – Onboard
+# <a name="edit-onboarding-guides-and-templates"></a>Redigere veiledninger og maler for jobbintroduksjon
 
 [!include [banner](includes/banner.md)]
 
@@ -114,11 +114,11 @@ Slik overfører du endringene:
 1. Dra elementer fra høyre til redigeringsområdet i kategorien **Aktiviteter**.
 2. Hvis du vil organisere veiledningen i inndelinger, drar du **Ny seksjon**-elementet til redigeringsområdet og skriver inn et navn og en valgfri beskrivelse for inndelingen.
 
-    ![[Legge til en ny inndeling i en veiledning eller mal for jobbintroduksjon](./media/onboard-edit-add-section.png)](./media/onboard-edit-add-section.png)
+    ![[Legge til en ny del i en jobbintroduksjonsveiledning eller -mal](./media/onboard-edit-add-section.png)](./media/onboard-edit-add-section.png)
 
 3. Hvis du vil legge til aktiviteter som den nyansatte skal fullføre, drar du elementet **Ny aktivitet** til redigeringsområdet og skriver inn et navn og en beskrivelse for aktiviteten.
 
-    ![[Legge til en ny aktivitet i en veiledning eller mal for jobbintroduksjon](./media/onboard-edit-add-activity.png)](./media/onboard-edit-add-activity.png)
+    ![[Legge til en ny aktivitet i en jobbintroduksjonsveiledning eller -mal](./media/onboard-edit-add-activity.png)](./media/onboard-edit-add-activity.png)
 
 4. Legge til rikt innhold i veiledningen for jobbintroduksjon:
 
@@ -129,7 +129,7 @@ Slik overfører du endringene:
     - Hvis du vil legge til et Microsoft Forms-skjema, drar du **Microsoft Forms**-elementet til redigeringsområdet, skriver inn et navn og en beskrivelse for aktiviteten, skriver inn URL-adressen for Microsoft Forms-skjemaet og angir størrelsen på skjermområdet.
     - Hvis du vil legge til en iframe som inneholder webinnhold, drar du **Webinnhold (iframe)**-elementet til redigeringsområdet, skriver inn et navn og en beskrivelse for aktiviteten, skriver inn URL-adressen for webinnholdet og angir størrelsen på skjermområdet.
 
-    ![[Legge til rikt innhold i en veiledning eller mal for jobbintroduksjon](./media/onboard-edit-add-rich-content.png)](./media/onboard-edit-add-rich-content.png)
+    ![[Legge til rikt innhold i en jobbintroduksjonsveiledning eller -mal](./media/onboard-edit-add-rich-content.png)](./media/onboard-edit-add-rich-content.png)
 
 2. Valgfritt: I området til høyre for hver aktivitet tilordner du aktiviteten til en bestemt person eller rolle, legger til en forfallsdato og kontaktperson og tilordner en kategorifarge. Når du tilordner en aktivitet til en person eller rolle, opprettes en oppgave for hver enkelt. Denne oppgaven vises på **Oppgaver**-menyen i Onboard.
 
@@ -148,7 +148,7 @@ Du kan legge til kontaktpersoner som kan hjelpe den nyansatte med å lykkes fra 
 1. Velg **Ny kontakt** i fanen **Kontakter**.
 2. Skriv inn kontaktpersonens navn eller e-postadresse i dialogboksen **Legg til teammedlem,** skriv inn en kort beskrivelse som forklarer hvordan kontaktpersonen kan hjelpe den nyansatte, og velg deretter **Legg til** . 
 
-    ![[Legge til kontakter i en veiledning eller mal for jobbintroduksjon](./media/onboard-edit-add-contact.png)](./media/onboard-edit-add-contact.png)
+    ![[Legge til kontakter i en jobbintroduksjonsveiledning eller -mal](./media/onboard-edit-add-contact.png)](./media/onboard-edit-add-contact.png)
 
     Du kan eventuelt velge én eller flere kontakter under **Forslag**.
 
@@ -169,7 +169,7 @@ Du kan legge til nyttige filer, kart og koblinger i **Ressurser**-delen i jobbin
     - Hvis du vil legge til en kobling , velger du kategorien **Kobling**, skriver inn et navn og en adresse for koblingen og velger deretter **Legg til**.
     - Hvis du vil legge til et kart , velger du kategorien **Kart**, skriver inn et navn og en adresse for kartet og velger deretter **Legg til**. Onboard vil ta med et kart over adressen du angir.
 
-    ![[Legge til en ressurs i en veiledning eller mal for jobbintroduksjon](./media/onboard-edit-add-resource.png)](./media/onboard-edit-add-resource.png)
+    ![[Legge til en ressurs i en jobbintroduksjonsveiledning eller -mal](./media/onboard-edit-add-resource.png)](./media/onboard-edit-add-resource.png)
 
 3. Velg **Lagre** for å lagre arbeidet.
 

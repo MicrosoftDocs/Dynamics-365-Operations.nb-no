@@ -3,7 +3,7 @@ title: Innebygg Power Apps
 description: Dette emnet beskriver hvordan du bygger inn Power Apps i klienten for å øke produktets funksjonalitet.
 author: jasongre
 manager: AnnBe
-ms.date: 09/20/2019
+ms.date: 12/02/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2018-02-28
 ms.dyn365.ops.version: Platform update 14
-ms.openlocfilehash: 755a30f89725ca0a7e1c14252984c617d6ba280e
-ms.sourcegitcommit: 4162d9ef4239c9d4e5297b8aaa903dd54f9cafc3
+ms.openlocfilehash: 8b5e64cb9ba916f9cbd628703394318b4044867b
+ms.sourcegitcommit: dc953c316c396c45ddd596e25c2b358e39a95d84
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "2824499"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2870247"
 ---
 # <a name="embed-microsoft-power-apps"></a>Innebygg Microsoft Power Apps
 
@@ -55,7 +55,7 @@ Fremgangsmåten nedenfor viser hvordan du bygger inn en PowerApp i webklienten.
 
     - Feltet **Navn** angir teksten for knappen eller fanen som inneholder den innebygde PowerApp. Ofte vil du kanskje gjenta navnet på PowerApp i dette feltet.
     - **Program-ID** er GUID-en for PowerApp som du vil bygge inn. Hvis du vil hente denne verdien, finner du PowerApp på [web.powerapps.com](https://web.powerapps.com), og gå deretter til feltet **Program-ID** under **Detaljer**.
-    - For **Inndata for PowerApp** kan du også velge feltet som inneholder dataene du vil sende til PowerApp som inndata. Se delen senere i dette emnet, kalt [Bygge en PowerApp som bruker data fra Finance and Operations-apper](#building-a-powerapp-that-leverages-data-sent-from-finance-and-operations-apps) for mer informasjon om hvordan PowerApp får tilgang til dataene som sendes fra Finance and Operations-apper.
+    - For **Inndata for PowerApp** kan du også velge feltet som inneholder dataene du vil sende til PowerApp som inndata. Se delen senere i dette emnet, kalt [Bygge en PowerApp som bruker data fra Finance and Operations-apper](#building-a-power-app-that-leverages-data-sent-from-finance-and-operations-apps) for mer informasjon om hvordan PowerApp får tilgang til dataene som sendes fra Finance and Operations-apper.
     - Velg **programstørrelsen** som samsvarer med typen PowerApp du bygger inn. Velg **Tynn** for Power Apps som er bygget for mobile enheter, og **Bred** for Power Apps som er bygget for nettbrett. Dette sørger for at tilstrekkelig mengde plass blir tildelt til den innebygde PowerApp.
     - Hurtigfanen **Juridiske enheter** gir muligheten til å velge hvilke juridiske enheter PowerApp er tilgjengelig for. Standarden er å vise PowerApp i alle juridiske enheter.
 
@@ -101,7 +101,7 @@ Følg denne fremgangsmåten for å redigere konfigurasjonen av en innebygd Power
 
 Når en PowerApp er innebygd på en side, er det to måter å fjerne den på om nødvendig:
 
-- Gå til ruten **Rediger en PowerApp** ved hjelp av instruksjonene fra delen [Redigere en innebygd PowerApp](#editing-an-embedded-powerapp) tidligere i dette emnet. Bekreft at ruten viser informasjon for den innebygde PowerApp som du vil fjerne, og klikk deretter **Slett**.
+- Gå til ruten **Rediger en PowerApp** ved hjelp av instruksjonene fra delen [Redigere en innebygd PowerApp](#editing-an-embedded-power-app) tidligere i dette emnet. Bekreft at ruten viser informasjon for den innebygde PowerApp som du vil fjerne, og klikk deretter **Slett**.
 - En innebygd PowerApp er lagret som personlige data, og derfor fjernes også alle innebygde Power Apps på den siden når du fjerner personlige data. Legg merke til at fjerning av personlige data på siden er permanent og ikke kan angres. Hvis du vil fjerne dine personlige data på en side, velger du **Alternativer** og klikk deretter **Tilpass dette skjemaet**. Velg **Fjern** under menyen **Administrer**. Når du har oppdatert leseren, er alle tidligere tilpassinger for denne siden fjernet. Se [Tilpasse brukeropplevelsen](personalize-user-experience.md) for mer informasjon om hvordan du optimaliserer sider ved hjelp av tilpassing.
 
 ## <a name="appendix"></a>Tillegg

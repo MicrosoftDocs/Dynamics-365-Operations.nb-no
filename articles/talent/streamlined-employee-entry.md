@@ -18,20 +18,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent October 2019 update
-ms.openlocfilehash: 40bbb8429355fa18fe12c7cf56f8d58f19766cad
-ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
+ms.openlocfilehash: 35cceb97442b05abc243cf7341e0ce7a0d09c613
+ms.sourcegitcommit: 36857283d70664742c8c04f426b231c42daf4ceb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "2009428"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "2915207"
 ---
 # <a name="streamlined-employee-entry-and-navigation"></a>Strømlinjeformet ansattoppføring og navigasjon
 
-[!include [banner](includes/banner.md)]
-
 Dynamics 365 Talent muliggjør effektiv registrering av ansatte og ansettelsesdata. Du kan raskt oppdatere arbeidshistorikkinformasjon for tidligere, aktive og fremtidige ansatte og oppdragstakere.
 
-Du kan også aktivere en forenklet navigasjonsopplevelse for å finne relatert informasjon raskt og foreta eventuelle nødvendige endringer. Denne funksjonaliteten er nå tilgjengelig i sandkassemiljøer. Hvis du vil aktivere denne funksjonen, går du til **Systemadministrasjon > Koblinger > Oppsett > Systemparametere> Forhåndsvisningsfunksjoner**. Velg **Utvidet arbeiderskjema og navigering**. Dette vil aktivere disse endringene for alle brukere. Du kan når som helst deaktivere dette alternativet.
+Du kan også aktivere en forenklet navigasjonsopplevelse for å finne relatert informasjon raskt og foreta eventuelle nødvendige endringer. Denne funksjonaliteten er nå tilgjengelig i alle sandkassemiljøer. Hvis du vil aktivere denne funksjonen, går du til **System administrasjon > funksjonsbehandling > Ny > Strømlinjeformet ansattoppføring > Aktiver**. Dette vil aktivere disse endringene for alle brukere. Du kan når som helst deaktivere dette alternativet.
 
 ## <a name="view-options"></a>Visningsalternativer
 

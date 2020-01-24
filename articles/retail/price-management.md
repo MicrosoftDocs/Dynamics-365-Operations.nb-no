@@ -3,7 +3,7 @@ title: Prisstyring av detaljsalg
 description: Dette emnet beskriver begrepene for å opprette og administrere salgspriser i Dynamics 365 Retail.
 author: ShalabhjainMSFT
 manager: AnnBe
-ms.date: 06/10/2019
+ms.date: 01/06/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-retail
@@ -17,12 +17,12 @@ ms.search.industry: retail
 ms.author: ShalabhjainMSFT
 ms.search.validFrom: 2018-03-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 081fadf0c120eba50af9e6c396fb3e492051bb3c
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: d8c6f8d7d368be8ffa192f8dee6b46a753b04cad
+ms.sourcegitcommit: 4d77d06a07ec9e7a3fcbd508afdffaa406fd3dd8
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2025224"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "2934777"
 ---
 # <a name="retail-sales-price-management"></a>Salgsprisbehandling for Retail
 
@@ -221,11 +221,11 @@ En enkelt prissettingsmotor brukes til å beregne priser for detaljhandel på tv
 
 Prissetting for detaljhandel er utformet for å fungere med detaljhandelsenheter i stedet for enheter som ikke gjelder for detaljhandel. Det er spesielt utformet for å angi priser per butikk, ikke etter lager.
 
-Prissettingsmotoren støtter ikke følgende prissettingsfunksjoner:
+Prissettingsmotoren **støtter ikke** følgende prissettingsfunksjoner:
 
-- Sette pris ved å bruke lagringsdimenejsonen Område og lager
-- Attributtbasert prissetting
-- Leverandørrabatt-overføring
+- Angivelse av priser etter lagringsdimensjoner for område eller område og lager støttes ikke. Hvis du bare angir områdedimensjonen i forretningsavtalene, ignorerer prissettingen for detaljhandel området og bruker forretningsavtalen på alle områder. Hvis du angir både område og lager, er virkemåten udefinert/ikke testet fordi det forventes at forhandlere bruker butikkprisgruppene til å kontrollere prisene for hver butikk/lager.
+- Attributtbasert prissetting støttes ikke.
+- Leverandørrabatt-overføring støttes ikke.
 
 I tillegg støtter **bare** prissettingsmotoren for detaljhandel følgende prissettingsfunksjoner:
 

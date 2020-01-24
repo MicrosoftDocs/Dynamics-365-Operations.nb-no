@@ -3,7 +3,7 @@ title: Vedlikeholde planlagte ordrer
 description: Dette emnet gir informasjon om hvordan du behandler planlagte ordrer. Den beskriver hvordan du kan oppdatere statusen for planlagte ordrer, autorisere dem og filtrere etter planlagte ordrer som har samme status som en valgt planlagt ordre.
 author: roxanadiaconu
 manager: AnnBe
-ms.date: 11/07/2019
+ms.date: 12/10/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 68bccb632255eac975dc150cf322d4c579ff2f24
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: ec67caf596b0efc256c957eca17a04509fe86855
+ms.sourcegitcommit: 274ff2bb6872ff714781b348b29fd9f1affff9d0
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2813782"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "2904042"
 ---
 # <a name="maintain-planned-orders"></a>Vedlikeholde planlagte ordrer
 
@@ -39,7 +39,7 @@ Du kan bruke **Status**-feltet til å spore fremdriften. Følgende verdier bruke
 
 -   Når hovedplanlegging genererer planlagte ordrer, har de planlagte ordrene statusen **Ubehandlet**.
 -   Hvis du velger ikke å autorisere en planlagt bestilling, kan du gi den statusen **Fullført**.
--   Hvis du vil autorisere en planlagt ordre, kan du endre statusen til **Godkjent**. Planlagte ordrer med **Godkjent**-status overholdes av hovedplanlegging, slik at de ikke blir endret eller slettet under en senere kjøring av hovedplanlegging. 
+-   Hvis du vil autorisere en planlagt ordre, kan du endre statusen til **Godkjent**. Planlagte ordrer med **Godkjent**-status overholdes av hovedplanlegging, slik at de ikke blir endret eller slettet under en senere kjøring av hovedplanlegging. For å oppnå dette kopierer planleggingslogikken de **godkjente** planlagte bestillingene fra den gamle planversjonen til den nye planversjonen under hovedplanlegging.
 
 ## <a name="firming-planned-orders"></a>Autorisere planlagte ordrer 
 Ved å autorisere planlagte ordre opprettes det reelle ordrer. Disse kalles også *frigitte* eller *åpne ordrer*. Når en planlagt bestilling autoriseres, flyttes den til bestillingsdelen i den aktuelle modulen.
@@ -58,6 +58,8 @@ Hvis du planlegger å autorisere mange ordrer samtidig, kan parallellisering av 
 -   **Parallellisering av autorisering** – Hvis **Ja**, vil autoriseringsprosessen parallelliseres med antallet tråder som er definert i **Antall tråder**.
 -   **Antall tråder** – Bestemmer antall tråder som brukes til å parallellisere autoriseringsprosessen. Parameteren vises bare når **Parallellisering av autorisering** er satt til **Ja.**
 
+> [!NOTE]
+> Alternativet for **Parallelliser autorisasjon** vises bare når du har mer enn én planlagt bestilling som er valgt for autorisasjon.
 
 <a name="additional-resources"></a>Tilleggsressurser
 --------

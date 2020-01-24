@@ -3,7 +3,7 @@ title: Legge til en velkomstmelding
 description: Dette emnet beskriver hvordan du legger til en velkomstmelding i Microsoft Dynamics 365 Commerce-webområdet.
 author: psimolin
 manager: annbe
-ms.date: 10/31/2019
+ms.date: 12/12/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 25a4e91646916b03c8a138fc713577f429ab633c
-ms.sourcegitcommit: 295d940a345879b3dfc5991e387b91c7257019ea
+ms.openlocfilehash: 4e9deeeaf491b77700ba0833e429f05d376a4392
+ms.sourcegitcommit: 36857283d70664742c8c04f426b231c42daf4ceb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2697388"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "2914522"
 ---
 # <a name="add-a-welcome-message"></a>Legge til en velkomstmelding
 
@@ -60,6 +60,8 @@ Velkomstmeldingen vil nå vises øverst på alle områdesider som bruker det val
 [Legge til en logo](add-logo.md)
 
 [Velge et områdetema](select-site-theme.md)
+
+[Arbeide med CSS-overstyringsfiler](css-override-files.md)
 
 [Legge til et favorittikon](add-favicon.md)
 

@@ -3,7 +3,7 @@ title: Tilgjengelighetsfunksjoner
 description: Dette emnet beskriver funksjonaliteten som er utviklet for å hjelpe brukere som har ulike funksjonshemminger.
 author: TLeforMicrosoft
 manager: AnnBe
-ms.date: 09/10/2019
+ms.date: 12/02/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: tlefor
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 7cc63320a3ba055a0c18ab59447f34a86bc0dc87
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 8ec4ee4654bdf306e179dcac5bf246df7f2b8cf7
+ms.sourcegitcommit: c3bc5dd007d9f063631232497bd4cda9214e2e5b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2180858"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2872448"
 ---
 # <a name="accessibility-features"></a>Tilgjengelighetsfunksjoner
 
@@ -40,7 +40,7 @@ For de fleste brukere innebærer systembruk mye dataregistrering og tastaturbruk
 
 En side som blir åpnet ved hjelp av Navigasjonsrute-menyen, ruten lengst til venstre, er også tilgjengelig fra **Søk**-boksen. Trykk på Alt+G for å flytte fokus til **Søk**-boksen, og skriv deretter inn navnet på eller beskrivelsen av siden.
 
-!["Bankkontoer" angitt i Søk-boksen](media/6d08b0be32808221023e2aa92d69fd70.png "\"bankkontoer\" angitt i Søk-boksen")
+!["Bankkontoer" angitt i Søk-boksen](media/6d08b0be32808221023e2aa92d69fd70.png ""bankkontoer" angitt i Søk-boksen")
 
 Hvis du vil ha mer informasjon, kan du se [Navigasjonssøk](navigation-search.md).
 
@@ -55,21 +55,21 @@ Alle handlinger som angis på en side, er tilgjengelige fra et tastatur via tabu
 
 Du vil kjøre **Logg for e-postvarsling**-handlingen som vises i **E-postvarsling**-gruppen i **Ordre**-kategorien i handlingsruten.
 
-![Handlingen Logg for e-postvarsling i handlingsruten](media/f0d78399e7fafcd85ded1cd1e3d34f3c.jpg "Handlingen \"Logg for e-postvarsling\" i handlingsruten")
+![Handlingen Logg for e-postvarsling i handlingsruten](media/f0d78399e7fafcd85ded1cd1e3d34f3c.jpg "Handlingen "Logg for e-postvarsling" i handlingsruten")
 
 Ett alternativ er å bruke tastaturet. Trykk på Ctrl+F6 for å flytte fokus til handlingsruten, og trykk deretter Tab gjentatte ganger for å gå gjennom alle kategoriene og handlingene til **Logg for e-postvarsling**-handlingen har fokus.
 
 Du kan imidlertid også kjøre handlingen mer direkte. Trykk på Ctrl+apostrof (') fra hvor som helst på siden for å vise søkeboksen for handlinger.
 
-![Søk-boksen for handlinger](media/80f7e8c5ac412fdf2c8a12f7728f135a.jpg "Søk-boksen for handlinger")
+![Søkeboks for handlinger](media/80f7e8c5ac412fdf2c8a12f7728f135a.jpg "Søkeboks for handlinger")
 
 I søkeboksen skriver du inn ord som beskriver handlingen. Handlingen blir gjort tilgjengelig for deg, og du kan kjøre den direkte. Hvis du for eksempel skriver inn **e-post**, **vars** (ett delvis ord) eller **logg**, kan du "hoppe" til funksjonen Logg for e-postvarsling.
 
-!["E-post" angitt i Søk-boksen](media/image4.png "\"e-post\" angitt i Søk-boksen")
+!["E-post" angitt i Søk-boksen](media/image4.png ""E-post" angitt i Søk-boksen")
 
-!["Varsling" angitt i Søk-boksen](media/image5.png "\"varsling\" angitt i Søk-boksen")
+!["Vars" angitt i Søk-boksen](media/image5.png ""Vars" angitt i Søk-boksen")
 
-!["Logg" angitt i Søk-boksen](media/image6.png "\"logg\" angitt i Søk-boksen")
+!["Logg" angitt i Søk-boksen](media/image6.png ""Logg" angitt i Søk-boksen")
 
 Når du er ferdig, kan du trykke Ctrl+apostrof på nytt for å få fokus tilbake på feltet som du arbeidet med før du kjørte handlingssøket.
 
@@ -81,7 +81,7 @@ I daglig systembruk er ikke alle felt nødvendige for å utføre vanlige oppgave
 
 Det kan imidlertid være at noen av feltene som du bruker ofte til å utføre oppgaver, ikke er inkludert i standardkategorisekvensen. I dette tilfellet, hvis du bruker Windows Skjermleser, kan du bruke Windows Skjermlesers tastaturhandlinger til å få tilgang til disse feltene og undersøke innholdet deres. Du kan også slå på **Utvidet tabulatorsekvens**-alternativet på **Alternativer**-siden. Dette alternativet gjør alle redigerbare og skrivebeskyttede felt del av kategorisekvensen. Du kan deretter bruke sidetilpassing til å opprette en egendefinert kategorisekvens, og utelate felt som du ikke trenger i kategorisekvensen. Hvis du vil ha mer informasjon om tilpassing, se [Tilpasse brukeropplevelsen](personalize-user-experience.md).
 
-![Alternativet "Utvidet tabulatorsekvens"](media/8c0f12bbb3f26032997ef0ba95d89b6a.png "Alternativet \"Utvidet tabulatorsekvens\"")
+!["Utvidet tabulatorsekvens"-alternativet](media/8c0f12bbb3f26032997ef0ba95d89b6a.png ""Utvidet tabulatorsekvens"-alternativet")
 
 ## <a name="form-patterns"></a>Skjemamønstre
 
@@ -92,6 +92,8 @@ Hvis du vil vite mer om skjemamønstre, kan du se [Skjemastiler og -mønstre](..
 ## <a name="responsive-layout"></a>Responsiv oppsett
 
 Produktet er utformet for å fungere med forskjellige enheter og formfaktorer, fra de minste skjermene til store skjermer som har den høyeste oppløsningen. Vår responsive oppsettsmotor lar brukere zoome inn til et forstørrelsesnivå på 200 prosent (eller i enkelte tilfeller mer enn 200 prosent).
+
+På smarttelefoner og andre små skjermer vil kontrollene og skjemaoppsettet responsivt tilpasse seg for å sikre at kjernedataene foretrekkes. Disse responsive virkemåtene kan også inkludere å redusere antall kolonner i grupper og kategorier til en enkelt kolonne, skjule skallelementer og skjule handlingsruten.
 
 ## <a name="guidance-to-help-developers-and-customers-incorporate-accessible-thinking-in-their-customizations"></a>Veiledning for å hjelpe utviklere og kunder å ta med tilgjengelighetshensyn i sine tilpassinger
 

@@ -18,12 +18,12 @@ ms.search.region: global
 ms.author: bicyclingfool
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: e0fad51fcb092c95103356f17618a647dd166b95
-ms.sourcegitcommit: 295d940a345879b3dfc5991e387b91c7257019ea
+ms.openlocfilehash: 62d3c168967bd680b3ded56e627730324f2a5ec6
+ms.sourcegitcommit: ef3a1d7527311d00b69a1072ae5eb021ce68034c
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2697369"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "2945588"
 ---
 # <a name="associate-an-e-commerce-site-with-an-online-channel"></a>Knytte et e-handelsområde til en Internett-kanal
 
@@ -40,16 +40,16 @@ Når området er opprettet, kan du kontrollere at det er tilknyttet nettbutikken
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 
-[Oversikt over nettbutikk](online-store-overview.md)
-
-[Opprette et e-handelsområde](create-ecommerce-site.md)
+[Konfigurere domenenavnet](configure-your-domain-name.md)
 
 [Distribuere et nytt e-handelsområde](deploy-ecommerce-site.md)
 
-[Konfigurere domenenavnet](configure-your-domain-name.md)
+[Opprette et e-handelsområde](create-ecommerce-site.md)
+
+[Administrere robots.txt-filer](manage-robots-txt-files.md)
+
+[Definere egendefinerte sider for brukerpålogginger](custom-pages-user-logins.md)
 
 [Legge til støtte for et innholdsleveringsnettverk (CDN)](add-cdn-support.md)
 
 [Aktivere stedsbasert butikkregistrering](enable-store-detection.md)
-
-[Definere egendefinerte sider for brukerpålogginger](custom-pages-user-logins.md)

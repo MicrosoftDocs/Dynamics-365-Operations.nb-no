@@ -3,12 +3,12 @@ title: Produktidentifikatorer
 description: Dette emnet gir informasjon om de ulike typene av produktidentifikatorer og forklarer hvordan du kan legge til produktidentifikatorer i produktdataene.
 author: cvocph
 manager: AnnBe
-ms.date: 03/23/2018
+ms.date: 01/06/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: EcoResProductEntityIdentifierCode
+ms.search.form: EcoResProductEntityIdentifierCode, EcoResProductListPage, EcoResProductDetailsExtended, EcoResProductVariantsPerCompany
 audience: Application User, IT Pro
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: conradv
 ms.dyn365.ops.version: 7.2999999999999998
 ms.search.validFrom: 2017-12-31
-ms.openlocfilehash: 68be63370eca0089649c47de0ba0bc9bd335b905
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 3199bccca19ab8ee4d7503e4a8443fcb05acbb1b
+ms.sourcegitcommit: 4d77d06a07ec9e7a3fcbd508afdffaa406fd3dd8
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2250606"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "2934892"
 ---
 # <a name="product-identifiers"></a>Produktidentifikatorer 
 
@@ -43,6 +43,9 @@ I mange tilfeller er ikke produktnummeret opprinnelig opprettet i Dynamics 365 S
 Når du implementerer Supply Chain Management, bør du gi særlige hensyn til din strategi for produktnumre. Et godt nummereringssystem forbedrer logistikkflyter og bidrar til å forhindre feil. En god produkt-ID har opptil 15 tegn. Ideelt sett har den færre enn 10 tegn og inneholder ikke mer enn fem klassifiseringstegn. Du kan også bruke søkenavn for å aktivere hurtigsøk. Et søkenavn er et ekstra navn som representerer klassifiseringene av et produkt.
 
 Når du bruker Common Data Service, er produktnummeret i Supply Chain Management også produktnummeret i Common Data Service. Produktvarianter synkroniseres til Common Data Service som forskjellige produkter.
+
+> [!NOTE]
+> Produktnummeret kan ikke starte med "%".
 
 ## <a name="item-number-and-product-dimensions"></a>Varenummer og produktdimensjoner
 

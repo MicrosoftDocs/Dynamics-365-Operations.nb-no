@@ -17,16 +17,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
-ms.openlocfilehash: 30b09f09875e37a6a909d0aad04117e577c5cd98
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 2faa5c02e3641a7b80e410e3b9cc05d08d99f92f
+ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1518745"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "2898185"
 ---
 # <a name="process-compensation"></a>Behandle kompensasjon
-
-[!include [banner](includes/banner.md)]
 
 Med kompensasjonsbehandling kan du beregne nye kompensasjonsbeløp for de ansatte basert på justeringer av egenkapitalen, mål for personlig tilleggsøkning og ytelse. Dette emnet dekker den grunnleggende flyten i faste kompensasjonsplaner uten faktorisering av ytelsen til en ansatt.
 

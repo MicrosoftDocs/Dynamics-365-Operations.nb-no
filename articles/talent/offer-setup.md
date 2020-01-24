@@ -3,7 +3,7 @@ title: Konfigurere tilbudsbehandling i Attract
 description: Dette emnet beskriver hvordan du setter opp tilbud i Microsoft Dynamics 365 Talent.
 author: andreabichsel
 manager: AnnBe
-ms.date: 02/04/2019
+ms.date: 12/04/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-talent
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-10-18
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 63f45f1493935f543cfd25a7d8ed7b54170800a0
-ms.sourcegitcommit: 9cc6a011bfdd1b0fe505760b6bf429eb6c65862a
+ms.openlocfilehash: bc91a83afd5ce1627376685bcf612d6998ddbc02
+ms.sourcegitcommit: 5022d63a81c3715c9a3dcf2a68217bb6b17c7805
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "2832728"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "2890561"
 ---
 # <a name="set-up-offer-management-in-attract"></a>Konfigurere tilbudsbehandling i Attract
 
@@ -45,9 +45,11 @@ Tilbudsdata er den minste enheten i tilbudspakkemalen. Et vanlig tilbud består 
 
     >[!NOTE]
     > På **Tilbudsdata**-siden finnes delene **Kandidatdetaljer** og **Jobbdetaljer**. Attract innehoder noen datatilbudsplassholdere som standard.
-    
+    > 
     > Det er inndelinger på siden for å organisere ulike tilbudsdataplassholdere sammen i logiske grupper. Disse delene kan hjelpe med vedlikehold av tilbudsdata og populasjon av data under oppretting av tilbud.
-
+    > 
+    > Hvis du vil opprette en liste over verdier for en plassholder, laster du opp et Excel-regneark som har én kolonne med plassholderen som kolonnetittel og listen over valg i radene under. Hvis det refereres til samme plassholder i et annet dataregelsett, må du kontrollere at de har et felles sett med verdier.
+    
 1.  For å opprette en ny tilbudsdatadel klikke på **Legg til en seksjon**, og angi et unikt navn for seksjonen.
 
 1.  For å legge til tilbudsdataplassholdere i en seksjon klikk på **Legg til tilbudsdata**, og angi et unikt navn for plassholderen.

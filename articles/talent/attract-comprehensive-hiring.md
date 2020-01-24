@@ -18,16 +18,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: 701ce0d710c20deb793534581c276edf02426a4b
-ms.sourcegitcommit: 9cc6a011bfdd1b0fe505760b6bf429eb6c65862a
+ms.openlocfilehash: 380f72f564d800d3f5b2e9f8fd3a5f8e8c9e81d5
+ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "2833167"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "2898553"
 ---
 # <a name="choose-a-version-of-attract"></a>Velg en versjon av Attract
 
-[[!include [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Versjonen av Microsoft Dynamics 365 Talent: Attract som er riktig for deg, er avhengig av organisasjonens størrelse og behov. Den grunnleggende versjonen av Attract inneholder et delsett av funksjonalitet som er utformet for mindre grupper eller organisasjoner der ansettelseslederen er primærbrukeren. Du kan begynne med den grunnleggende versjonen av Attract med én eller flere lisenser.
 

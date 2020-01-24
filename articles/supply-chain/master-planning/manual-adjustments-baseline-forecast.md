@@ -3,7 +3,7 @@ title: Foreta manuelle justeringer i basislinjeprognosen
 description: Dette emnet forklarer hvordan du gjør manuelle justeringer i en basislinjeprognose og viser detaljer for prognosen.
 author: roxanadiaconu
 manager: AnnBe
-ms.date: 11/02/2017
+ms.date: 01/07/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8897e0fe01e7ed5af9a8d5b99de6b9b4506554f1
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 1c9963a54a052549a6bfeabcb3d91b7b0f3cf68e
+ms.sourcegitcommit: 34395464ec80cea800b953eae49af579d436fc1b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2815140"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "2935422"
 ---
 # <a name="make-manual-adjustments-to-the-baseline-forecast"></a>Foreta manuelle justeringer i basislinjeprognosen
 
@@ -70,8 +70,9 @@ Siden **Detaljer om behovsprognose** viser følgende informasjon i grafisk forma
 
 **Merknader:**
 
+-   Hvis du aktiverer **Prognosemodellvalg på detaljer om behovsprognose** fra Funksjonsbehandling, vil du kunne velge prognosemodeller som skal inkluderes for den historiske prognosen, på siden **Detaljer om behovsprognose**.
 -   Konfidensintervallet som vises i delen **Prognose** på siden, representerer forskjellen mellom den øvre grensen for konfidensintervallet og den nedre grensen for konfidensintervallet. Hvis du vil se verdiene for øvre og nedre grense, holder du musepekeren over diagrammet i delen **Grafisk presentasjon av historisk behov og prognose**.
--   Hvis du bruker behovsprognose og Microsoft Azure Machine Learning-tjenesten, kan du angi konfidensnivåprosenten som prognosen som genereres, skal ha. Konfidensintervallet består av et verdiområde som fungerer som gode estimater for behovsprognosen. En konfidensnivåprosent på 95 angir at det er 5 prosent risiko for at behovsprognosen faller utenfor området for konfidensintervallet.
+-   Hvis du bruker behovsprognose og Microsoft Azure Machine Learning, kan du angi konfidensnivåprosenten som prognosen som genereres, skal ha. Konfidensintervallet består av et verdiområde som fungerer som gode estimater for behovsprognosen. En konfidensnivåprosent på 95 angir at det er 5 prosent risiko for at behovsprognosen faller utenfor området for konfidensintervallet.
 
 Du kan også gjøre manuelle justeringer i prognosen på siden **Detaljer om behovsprognose** ved å endre verdiene i **Prognose**-raden i delen **Prognose**.
 

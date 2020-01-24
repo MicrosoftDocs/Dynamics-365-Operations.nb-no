@@ -18,16 +18,16 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-08-01
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 0a2fa6a7f6efef05862a3727a80122c22d591487
-ms.sourcegitcommit: 4162d9ef4239c9d4e5297b8aaa903dd54f9cafc3
+ms.openlocfilehash: 3aac66cc39d854cabdb3d29bde029d93683e2ef7
+ms.sourcegitcommit: 3a06d3b38d9de2afc22839e5a794829405068024
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "2824526"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "2933914"
 ---
 # <a name="business-document-management-overview"></a>Oversikt over administrasjon av forretningsdokument
 
-Forretningsbrukere bruker [Oversikt over elektronisk rapportering (ER)](general-electronic-reporting.md) til å konfigurere formater for utgående dokumenter i overensstemmelse med de lovlige kravene i ulike land. Brukere kan også definere dataflyt for å angi hvilke programdata som skal plasseres i genererte dokumenter. ER-rammeverket genererer utgående dokumenter i Microsoft Office-formater (Excel-arbeidsbøker eller Word-dokumenter) ved å bruke forhåndsdefinerte maler. Malene fylles ut med nødvendige data i samsvar med konfigurert dataflyt mens påkrevde dokumenter genereres. Hvert konfigurerte format kan publiseres som en del av en ER-løsning for å generere bestemte utgående dokumenter. Dette representeres av en ER-formatkonfigurasjon som kan inneholde maler du kan bruke til å generere forskjellige utgående dokumenter. Forretningsbrukere kan bruke dette rammeverket til å administrere nødvendige forretningsdokumenter.
+Forretningsbrukere bruker [rammeverket for elektronisk rapportering (ER)](general-electronic-reporting.md) til å konfigurere formater for utgående dokumenter i overensstemmelse med de lovlige kravene i ulike land. Brukere kan også definere dataflyt for å angi hvilke programdata som skal plasseres i genererte dokumenter. ER-rammeverket genererer utgående dokumenter i Microsoft Office-formater (Excel-arbeidsbøker eller Word-dokumenter) ved å bruke forhåndsdefinerte maler. Malene fylles ut med nødvendige data i samsvar med konfigurert dataflyt mens påkrevde dokumenter genereres. Hvert konfigurerte format kan publiseres som en del av en ER-løsning for å generere bestemte utgående dokumenter. Dette representeres av en ER-formatkonfigurasjon som kan inneholde maler du kan bruke til å generere forskjellige utgående dokumenter. Forretningsbrukere kan bruke dette rammeverket til å administrere nødvendige forretningsdokumenter.
 
 **Administrasjon av forretningsdokument** er bygd på toppen av ER-rammeverket og gjør det mulig for bedriftsbrukere å redigere dokumentmaler ved hjelp av Microsoft Office 365-tjenesteprogram eller passende Microsoft Office-skrivebordsprogram. Endringer i dokumentene kan inkludere endring av forretningsdokumentutforminger og tillegg av plassholdere for tilleggsdata uten kildekodeendringer og nye distribusjoner. Det er ikke nødvendig å ha kjennskap til ER-rammeverket for å oppdatere maler for forretningsdokumenter.
 
@@ -59,7 +59,7 @@ Følgende rapporter, med Excel-baserte maler, vil være tilgjengelige med utgive
 
 Flere rapporter vil bli tilgjengelige. Spesielle varslinger om flere rapporter blir sendt separat. 
 
-Du finner en fullstendig liste over alle rapportene som er planlagt for oktober 2019-utgivelsen, i [Rapportering av konfigurerbare forretningsdokumenter i Word og Excel](https://docs.microsoft.com/en-us/dynamics365-release-plan/2019wave2/dynamics365-finance-operations/configurable-business-documents-reporting-word-excel-pdf#feature-details). Hvis du vil vite mer om denne funksjonen, kan du fullføre eksemplet i dette emnet.
+Du finner en fullstendig liste over alle rapportene som er planlagt for oktober 2019-utgivelsen, i [Rapportering av konfigurerbare forretningsdokumenter i Word og Excel](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-finance-operations/configurable-business-documents-reporting-word-excel-pdf#feature-details). Hvis du vil vite mer om denne funksjonen, kan du fullføre eksemplet i dette emnet.
 
 ## <a name="configure-er-parameters"></a>Konfigurere ER-parametere
 

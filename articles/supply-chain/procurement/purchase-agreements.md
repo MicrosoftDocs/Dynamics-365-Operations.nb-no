@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d3f90e963341efe854270134988cfc51b5280bf4
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: abe921b8658322bcf77aeea8fa05843e539f97f8
+ms.sourcegitcommit: 523d22f31010339b4ff5b4fbe0a75aa909843ba6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2813368"
+ms.lasthandoff: 12/09/2019
+ms.locfileid: "2902438"
 ---
 # <a name="purchase-agreements"></a>Kjøpsavtaler
 
@@ -36,7 +36,14 @@ Kjøpsavtaler kan gjelde et bestemt antall av et produkt, et bestemt valutabelø
 
 På siden **Kjøpsavtaler** kan du opprette, bruke og følge opp kjøpsavtaler som gjelder mellom organisasjonen og leverandørene. Når du har opprettet en kjøpsavtale, kan du for eksempel bestille direkte fra den. Hver kjøpsavtale har en gyldighetsperiode som er definert av personen som oppretter kjøpsavtalen. Leveringsdatoen for et kjøp må være innenfor de gyldige datoene i gyldighetsperioden.  
 
-Når du har opprettet en kjøpsavtale, må du aktivere den før den trer i kraft. Hvis du vil aktivere en kjøpsavtale, kan du sette alternativet **Merk avtale som gyldig** til **Ja**.
+Når du har opprettet en kjøpsavtale, må du aktivere den før den trer i kraft. Hvis du vil aktivere en kjøpsavtale, kan du sette alternativet **Merk avtale som gyldig** til **Ja**. 
+
+Hvis du vil hindre at kjøpsavtalen blir brukt og bekreftet, merker du avtalestatusen som **Lukket**. Du kan fortsatt oppdatere statusen til **Gyldig** når som helst etter at du har foretatt denne endringen.
+
+## <a name="responsible-workers-on-purchase-agreements"></a>Ansvarlige arbeidstakere i kjøpsavtaler
+
+Du kan identifisere en primær ansvarlig arbeider og sekundær ansvarlig arbeider i kjøpsavtaleklassifiseringen. Disse verdiene vil bli arvet av den resulterende kjøpsavtalen. Du er ikke pålagt å legge til ansvarlige arbeidere i kjøpsavtalen, og de kan endres direkte på en per sak-basis i selve kjøpsavtalen. Du kan ikke angi en sekundær ansvarlig arbeider uten en primær ansvarlig arbeider, selv om du ikke trenger å ha en sekundær ansvarlig arbeider. Du kan ikke angi den samme arbeideren som både den primære og den sekundære ansvarlige arbeideren. 
+
 
 ## <a name="commitment-types"></a>Forpliktelsestyper
 Hver linje i en kjøpsavtale er en forpliktelse til å kjøpe noe. Du kan bruke linjer fra flere bestillinger (PO-er) til å oppfylle forpliktelsen. Det finnes fire typer forpliktelser:

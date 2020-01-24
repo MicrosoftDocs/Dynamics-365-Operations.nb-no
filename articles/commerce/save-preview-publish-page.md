@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 8c1b82b1b8423c63d442ee581ed0cc8789ee63fd
-ms.sourcegitcommit: 295d940a345879b3dfc5991e387b91c7257019ea
+ms.openlocfilehash: 3fff8299ecc6833890b14fa421501236830b2c61
+ms.sourcegitcommit: ef3a1d7527311d00b69a1072ae5eb021ce68034c
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2697894"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "2945680"
 ---
 # <a name="save-preview-and-publish-a-page"></a>Lagre, forhåndsvise og publisere en side
 
@@ -100,3 +100,4 @@ Hvis du vil publisere en URL-adresse, følger du disse trinnene.
 
 [Supplere en kategorimålside](enrich-category-page.md)
 
+[Kontrollere tilgjengelighet for sideinnhold](verify-accessibility.md)

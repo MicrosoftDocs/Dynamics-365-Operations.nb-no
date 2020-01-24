@@ -3,7 +3,7 @@ title: Definere egendefinerte sider for brukerpålogginger
 description: Dette emnet beskriver hvordan du bygger egendefinerte sider i Microsoft Dynamics 365 Commerce som håndterer tilpassede pålogginger for brukere av Azure Active Directory (Azure AD)-firma-til-kunde-leiere (B2C).
 author: brianshook
 manager: annbe
-ms.date: 10/01/2019
+ms.date: 12/05/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 644d937ddd3c219ae869f22d977d2846dffc20e1
-ms.sourcegitcommit: 295d940a345879b3dfc5991e387b91c7257019ea
+ms.openlocfilehash: 20bfacbc2374003814e12e7737644d118d404cc0
+ms.sourcegitcommit: ef3a1d7527311d00b69a1072ae5eb021ce68034c
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2697572"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "2945565"
 ---
 # <a name="set-up-custom-pages-for-user-logins"></a>Definere egendefinerte sider for brukerpålogginger
 
@@ -136,11 +136,11 @@ Følg disse trinnene for å oppdatere policyen for registrering og pålogging me
 1. I policyen for **Pålogging og registrering** som du konfigurerte tidligere, velger du **Sideoppsett** i navigasjonsruten.
 1. Velg oppsettet for **Side for enhetlig registrering og pålogging**.
 1. Sett alternativet **Bruk egendefinert sideoppsett** til **Ja**.
-1. I feltet **Egendefinert side-URI** angir du URL-adressen for full pålogging. Inkluder suffikset **?preloadscripts=true**. Du kan for eksempel angi **www.\<mitt domene\>.com/sign-in?preloadscripts=true**.
+1. I feltet **Egendefinert side-URI** angir du URL-adressen for full pålogging. Inkluder suffikset **?preloadscripts=true**. Skriv for eksempel inn ``www.<my domain>.com/sign-in?preloadscripts=true``.
 1. I feltet for **Sideoppsettversjon (forhåndsvisning)** velger du **1.2.0** .
 1. Velg oppsettet **Registreringsside for lokal konto**.
 1. Sett alternativet **Bruk egendefinert sideoppsett** til **Ja**.
-1. I feltet **Egendefinert side-URI** angir du URL-adressen for full pålogging. Inkluder suffikset **?preloadscripts=true**. Du kan for eksempel angi **www.\<mitt domene\>.com/sign-in?preloadscripts=true**.
+1. I feltet **Egendefinert side-URI** angir du URL-adressen for full registrering. Inkluder suffikset **?preloadscripts=true**. Skriv for eksempel inn ``www.<my domain>.com/sign-up?preloadscripts=true``.
 1. I feltet for **Sideoppsettversjon (forhåndsvisning)** velger du **1.2.0** .
 1. I delen **Brukerattributter** følger du disse trinnene:
 
@@ -156,7 +156,7 @@ Følg disse trinnene for å oppdatere policyen for profilredigering med egendefi
 1. I policyen for **Profilredigering** som du konfigurerte tidligere, velger du **Sideoppsett** i navigasjonsruten.
 1. Velg oppsettet **Profilredigeringsside**.
 1. Sett alternativet **Bruk egendefinert sideoppsett** til **Ja**.
-1. I feltet **Egendefinert side-URI** angir du URL-adressen for full pålogging. Inkluder suffikset **?preloadscripts=true**. Du kan for eksempel angi **www.\<mitt domene\>.com/sign-in?preloadscripts=true**.
+1. I feltet **Egendefinert side-URI** angir du URL-adressen for profilredigering. Inkluder suffikset **?preloadscripts=true**. Skriv for eksempel inn ``www.<my domain>.com/profile-edit?preloadscripts=true``.
 1. I feltet for **Sideoppsettversjon (forhåndsvisning)** velger du **1.2.0** .
 1. I delen **Brukerattributter** følger du disse trinnene:
 
@@ -170,12 +170,14 @@ Følg disse trinnene for å oppdatere policyen for tilbakestilling av passord me
 1. I policyen for **Tilbakestilling av passord** som du konfigurerte tidligere, velger du **Sideoppsett** i navigasjonsruten.
 1. Velg oppsettet **Side for nytt passord**.
 1. Sett alternativet **Bruk egendefinert sideoppsett** til **Ja**.
-1. I feltet **Egendefinert side-URI** angir du URL-adressen for full pålogging. Inkluder suffikset **?preloadscripts=true**. Du kan for eksempel angi **www.\<mitt domene\>.com/sign-in?preloadscripts=true**.
+1. I feltet **Egendefinert side-URI** angir du URL-adressen for fullstendig tilbakestilling av passord. Inkluder suffikset **?preloadscripts=true**. Skriv for eksempel inn ``www.<my domain>.com/passwordreset?preloadscripts=true``.
 1. I feltet for **Sideoppsettversjon (forhåndsvisning)** velger du **1.2.0** .
 1. Velg oppsettet **Side for kontoverifisering**.
 1. Sett alternativet **Bruk egendefinert sideoppsett** til **Ja**.
-1. I feltet **Egendefinert side-URI** angir du URL-adressen for full pålogging. Inkluder suffikset **?preloadscripts=true**. Du kan for eksempel angi **www.\<mitt domene\>.com/sign-in?preloadscripts=true**.
+1. I feltet **Egendefinert side-URI** angir du URL-adressen for fullstendig verifisering av passord. Inkluder suffikset **?preloadscripts=true**. Skriv for eksempel inn ``www.<my domain>.com/passwordreset-verification?preloadscripts=true``.
 1. I feltet for **Sideoppsettversjon (forhåndsvisning)** velger du **1.2.0** .
+
+
 
 ## <a name="customize-default-text-strings-for-labels-and-descriptions"></a>Tilpasse standard tekststrenger for etiketter og beskrivelser
 
@@ -193,15 +195,15 @@ Når du har oppdatert global.json-filen og publisert endringene, vises den nye k
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 
-[Oversikt over nettbutikk](online-store-overview.md)
-
-[Opprette et e-handelsområde](create-ecommerce-site.md)
+[Konfigurere domenenavnet](configure-your-domain-name.md)
 
 [Distribuere et nytt e-handelsområde](deploy-ecommerce-site.md)
 
+[Opprette et e-handelsområde](create-ecommerce-site.md)
+
 [Knytte et nettområde til en kanal](associate-site-online-store.md)
 
-[Konfigurere domenenavnet](configure-your-domain-name.md)
+[Administrere robots.txt-filer](manage-robots-txt-files.md)
 
 [Legge til støtte for et innholdsleveringsnettverk (CDN)](add-cdn-support.md)
 

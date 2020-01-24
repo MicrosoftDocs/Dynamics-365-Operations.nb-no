@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: 11a5792c9c039eb76337309ef2fdb2b994ce191a
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 072564446b74318ffc8e8e6ad4fd16f4421e7854
+ms.sourcegitcommit: d0322d1ed6c798301058e44dae76227a0e1f49ac
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2772393"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "2853912"
 ---
 # <a name="near-real-time-data-integration-with-common-data-service"></a>Dataintegrering i nær sanntid med Common Data Service
 
@@ -59,7 +59,7 @@ Synkrone, toveis dataflyter i nær sanntid krever følgende versjoner:
 Følg disse trinnene for å konfigurere integrasjonen mellom Finance and Operations-apper og Common Data Service.
     
 1. For oppsett av dual-Write-systemet, se den [trinnvise veiledningen](https://aka.ms/dualwrite-docs) om kunngjøring av forhåndsvisning av Dual Write.
-2. Last ned og installer løsningen fra gruppen [Finance and Operations, Common Data Service Customer Engagement-integrasjon](https://www.yammer.com/dynamicsaxfeedbackprograms/#/threads/inGroup?type=in_group&feedId=66052096) Yammer. Pakken inneholder fem løsninger:
+2. Last ned og Installer løsningen fra [Fin Ops og CDS/CE-integreringen via Dual-Write](https://www.yammer.com/dynamicsaxfeedbackprograms/#/threads/inGroup?type=in_group&feedId=66052096)Yammer-gruppen. Pakken inneholder fem løsninger:
 
     + Dynamics365Company
     + CurrencyExchangeRates

@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: c2632632b9b21dd3a88e9a4df0e65cfd28e579d2
-ms.sourcegitcommit: 295d940a345879b3dfc5991e387b91c7257019ea
+ms.openlocfilehash: 10dab1e62446ff7f60ad48fd0841bde5cfd29e12
+ms.sourcegitcommit: ef3a1d7527311d00b69a1072ae5eb021ce68034c
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2697457"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "2945519"
 ---
 # <a name="deploy-a-new-e-commerce-tenant"></a>Distribuere en ny e-handelsleier
 
@@ -88,16 +88,16 @@ Du får tilgang til redigeringsmiljøet ved å gå til kategorien **e-handel** p
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 
-[Oversikt over nettbutikk](online-store-overview.md)
+[Konfigurere domenenavnet](configure-your-domain-name.md)
 
 [Opprette et e-handelsområde](create-ecommerce-site.md)
 
 [Knytte et nettområde til en kanal](associate-site-online-store.md)
 
-[Konfigurere domenenavnet](configure-your-domain-name.md)
+[Administrere robots.txt-filer](manage-robots-txt-files.md)
+
+[Definere egendefinerte sider for brukerpålogginger](custom-pages-user-logins.md)
 
 [Legge til støtte for et innholdsleveringsnettverk (CDN)](add-cdn-support.md)
 
 [Aktivere stedsbasert butikkregistrering](enable-store-detection.md)
-
-[Definere egendefinerte sider for brukerpålogginger](custom-pages-user-logins.md)

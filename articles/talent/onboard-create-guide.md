@@ -16,14 +16,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2019-05-06
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: a095fe97b05898403b501763204a462ee8dcc12a
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 2371d86165390503312c2848842acf4745a8ed7a
+ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2814634"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "2898254"
 ---
-# <a name="create-and-send-an-onboarding-guide-by-using-dynamics-365-talent---onboard"></a>Opprette og sende en veiledning for jobbintroduksjon med Dynamics 365 Talent – Onboard
+# <a name="create-and-send-an-onboarding-guide"></a>Opprette og sende en innebygd veiledning for jobbintroduksjon
 
 [!include [banner](includes/banner.md)]
 
@@ -42,7 +42,7 @@ Når du har opprettet en jobbintroduksjonsveiledning, kan du sende den til en ny
 
 5. I vinduet **Opprett en veiledning** under **Hvem introduserer du** skriver du inn navnet eller e-postadressen til den nyansatte. Hvis den nyansatte ikke finnes i systemet ennå, velger du **Legg til nå** og angir den ansattes informasjon.
 
-    ![[Angi informasjon for veiledningen for jobbintroduksjon](./media/onboard-create-a-guide-window.png)](./media/onboard-create-a-guide-window.png)
+    ![[Legge inn informasjon for innføringsveiledningen](./media/onboard-create-a-guide-window.png)](./media/onboard-create-a-guide-window.png)
 
 6. Under **Når starter de** velger du en startdato.
 7. Hvis veiledningen for jobbintroduksjon skal sendes automatisk til den nyansatte på en bestemt dato, må du kontrollere at alternativet **Planlegg en dato for automatisk sending** er slått på, og deretter velge den automatiske sendedatoen. Hvis du vil sende veiledningen med en gang, deaktiverer du alternativet **Planlegg en dato for automatisk sending**.
@@ -92,7 +92,7 @@ Du trenger ikke alltid å opprette en veiledning fra en mal. Hvis du foretrekker
 1. På menyen til venstre velger du **Veiledninger**, og deretter velger du **Legg til**-knappen (plusstegnet \[**+**\]).
 2. I vinduet **Opprett en veiledning** under **Hvem introduserer du** skriver du inn navnet eller e-postadressen til den nyansatte. Hvis den nyansatte ikke finnes i systemet ennå, velger du **Legg til nå** og angir den ansattes informasjon.
 
-    ![[Angi informasjon for veiledningen for jobbintroduksjon](./media/onboard-create-a-guide-window.png)](./media/onboard-create-a-guide-window.png)
+    ![[Legge inn informasjon for innføringsveiledningen](./media/onboard-create-a-guide-window.png)](./media/onboard-create-a-guide-window.png)
 
 3. Under **Når starter de** velger du en startdato.
 4. Hvis veiledningen for jobbintroduksjon skal sendes automatisk til den nyansatte på en bestemt dato, må du kontrollere at alternativet **Planlegg en dato for automatisk sending** er slått på, og deretter velge den automatiske sendedatoen. Hvis du vil sende veiledningen med en gang, deaktiverer du alternativet **Planlegg en dato for automatisk sending**.
@@ -105,7 +105,7 @@ Du kan lagre en jobbintroduksjonsveiledning som mal. På denne måten kan du spa
 1. Velg **Veiledninger** på menyen til venstre.
 2. Velg **Mer**-knappen (ellipsen \[**...**\]) for veiledningen du vil opprette en mal fra, og velg deretter **Lagre som mal**.
 
-    ![[Lagre en jobbintroduksjonsveiledning som mal] (./media/onboard-save-guide-as-template.png)](./media/onboard-save-guide-as-template.png)
+    ![[Lagre en jobbintroduksjonsveiledning som mal](./media/onboard-save-guide-as-template.png)](./media/onboard-save-guide-as-template.png)
 
 3. Skriv inn et navn på den nye malen i vinduet **Lagre som en ny mal**, og velg deretter **Lagre**.
 

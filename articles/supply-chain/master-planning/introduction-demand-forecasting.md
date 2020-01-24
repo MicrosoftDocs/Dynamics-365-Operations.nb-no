@@ -3,7 +3,7 @@ title: Oversikt over behovsprognose
 description: Behovsprognose brukes til å forutse uavhengig behov fra salgsordrer og avhengig behov på et hvilket som helst frakoblingspunkt for kundeordrer. Reglene for utvidet behovsprognosereduksjon er en ideell løsning for massetilpasning.
 author: roxanadiaconu
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 01/07/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 27c9bf32a88858ec2d2214f18ff96138c29e59bc
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 9280a2580d20d64f6542902aab1dbf55434bf84c
+ms.sourcegitcommit: 34395464ec80cea800b953eae49af579d436fc1b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2815163"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "2935520"
 ---
 # <a name="demand-forecasting-overview"></a>Oversikt over behovsprognose
 
@@ -51,7 +51,7 @@ Tre viktige temaer er implementert i behovsprognose:
 -   **Gjenbruk av Microsoft-stakken** – Microsoft startet Machine Learning-plattformen i februar 2015. Machine Learning, som nå er en del av Microsoft Cortana Analytics Suite, lar deg raskt og enkelt opprette prediksjonsanalyseeksperimenter, for eksempel behovsanslagseksperimenter, ved hjelp av algoritmene R eller Python programmeringsspråk og et enkelt dra-og-slipp-grensesnitt.
     -   Du kan laste ned behovsprognoseeksperimenter, endre dem slik at de overholder dine forretningskrav, publisere dem som en webtjeneste på Azure og bruke dem til å generere behovsprognoser. Eksperimentene er tilgjengelige for nedlasting hvis du har kjøpt et abonnement for Supply Chain Management for produksjonsplanlegger som bruker på virksomhetsnivå.
     -   Du kan laste ned de tilgjengelige behovsprediksjonseksperimentene fra [Cortana Analytics Gallery](https://gallery.cortanaanalytics.com/). Mens behovsprognoseeksperimenter automatisk er integrert med Supply Chain Management, må kunder og partnere håndtere integreringen av eksperimenter de laster ned fra [Cortana Analytics Gallery](https://gallery.cortanaanalytics.com/). Derfor er ikke eksperimenter fra [Cortana Analytics Gallery](https://gallery.cortanaanalytics.com/) like enkle å bruke som behovsprognoseeksperimenter for Finance and Operations. Du må endre koden for eksperimentene slik at de bruker Finance and Operations Application Programming Interface (API).
-    -   Du kan opprette dine egne eksperimenter i Microsoft Azure Machine Learning Studio, publisere dem som tjenester på Azure og bruke dem til å generere behovsprognoser.
+    -   Du kan opprette dine egne eksperimenter i Microsoft Azure Machine Learning Studio (klassisk), publisere dem som tjenester på Azure og bruke dem til å generere behovsprognoser.
     -   Hvis du ikke trenger høy ytelse, eller hvis du ikke krever at en stor mengde data skal behandles, kan du bruke gratisnivået for Machine Learning. Vi anbefaler at du alltid starter fra dette nivået, spesielt ved implementerings- og testfaser. Hvis du trenger høyere ytelse og ekstra lagringsplass, kan du bruke standardnivået for Machine Learning. Dette nivået krever et abonnement på Azure og omfatter ekstra kostnader. For opplysninger om priser for Machine Learning kan du se [Machine Learning Studio-priser](https://aka.ms/machine-learning-price-info).
 -   **Prognosereduksjon på et hvilket som helst frakoblingspunkt** – Behovsprognose bygger på denne funksjonaliteten, som lar deg prognostisere både avhengig og uavhengig behov på et hvilket som helst frakoblingspunkt.
 

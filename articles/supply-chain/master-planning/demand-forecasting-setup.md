@@ -3,7 +3,7 @@ title: Oppsett av behovsprognose
 description: Dette emnet beskriver konfigurasjonsoppgavene du må utføre for å klargjøre behovsprognoser.
 author: roxanadiaconu
 manager: AnnBe
-ms.date: 09/16/2017
+ms.date: 01/07/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 048b0e8e57211893cae538fae20e87186399dd38
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: f56157be8cc61486801fc4c01bb191432dd9a541
+ms.sourcegitcommit: 34395464ec80cea800b953eae49af579d436fc1b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2813805"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "2935497"
 ---
 # <a name="demand-forecasting-setup"></a>Oppsett av behovsprognose
 
@@ -63,7 +63,7 @@ Du kan legge til prognosedimensjoner i listen over dimensjonene som skal brukes 
 
 Ikke alle varer fungerer på samme måte fra et behovsprognoseperspektiv. Lignende varer kan grupperes i én varefordelingsnøkkel, og parametere, for eksempel transaksjonstyper og prognosemetodeinnstillinger, kan angis per varefordelingsnøkkel. Klikk **Varefordelingsnøkler** i den venstre ruten på siden **Parametere for behovsprognose**. 
 
-Hvis du vil generere prognosen, bruker Supply Chain Management en Machine Learning-webtjeneste. Hvis du vil koble til tjenesten, må du angi informasjonen nedenfor hvis du logger deg på Microsoft Azure Machine Learning Studio:
+Hvis du vil generere prognosen, bruker Supply Chain Management en Machine Learning-webtjeneste. Hvis du vil koble til tjenesten, må du angi informasjonen nedenfor hvis du logger deg på Microsoft Azure Machine Learning Studio (klassisk):
 
 -   API-nøkkel (application programming interface) for webtjenesten
 -   URL-adresse til webtjenestesluttpunkt
@@ -71,7 +71,7 @@ Hvis du vil generere prognosen, bruker Supply Chain Management en Machine Learni
 -   Azure-lagringskontonøkkel
 
 > [!NOTE]
-> Azure-lagringskontonavnet og -nøkkel kreves bare hvis du bruker en egendefinert lagring-konto. Hvis du distribuerer den lokale versjonen, må du ha en konto for egendefinert lagring på Azure, slik at Machine Learning-tjenesten får tilgang til historiske data. 
+> Azure-lagringskontonavnet og -nøkkel kreves bare hvis du bruker en egendefinert lagring-konto. Hvis du distribuerer den lokale versjonen, må du ha en konto for egendefinert lagring på Azure, slik at Machine Learning får tilgang til historiske data. 
 
 Hvis du vil opprette behovsprediksjoner, kan du distribuere din egen tjeneste ved å bruke Machine Learning Studio eller behovsprognoseeksperimenter for Supply Chain Management. Instruksjoner for distribusjon av behovsprognoseeksperimenter som en webtjeneste er tilgjengelige i Supply Chain Management. På siden **Parametere for behovsprognose** klikker du **Azure Machine Learning** kategorien.
 
