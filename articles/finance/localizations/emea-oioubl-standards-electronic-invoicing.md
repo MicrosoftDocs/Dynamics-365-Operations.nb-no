@@ -17,12 +17,12 @@ ms.search.industry: ''
 ms.author: mrolecki
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: c1d1ec695626404389dec2b07dd6e34358cd2d5a
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 2fb188498705dcbad841645ced43e6a1715cbbd0
+ms.sourcegitcommit: 36857283d70664742c8c04f426b231c42daf4ceb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2176146"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "2915165"
 ---
 # <a name="supported-standards-for-electronic-invoicing-in-europe"></a>Standarder som støttes for elektronisk fakturering i Europa
 
@@ -37,13 +37,15 @@ Implementering og bruk av elektronisk fakturering i hele EU er regulert [Council
 Følgende landspesifikke formater av elektroniske fakturaer er tilgjengelige:
 
 -   OIOUBL v.2.02 for Danmark
--   EHF v.2.0.8 for Norge
+-   EHF v. 3.0 for Norge
 -   PEPPOL BIS v.2 for Østerrike, Frankrike og Belgia
 -   UBL-OHNL 1.9 for Nederland
 -   FacturaE v.3.2.1 for Spania
 -   FatturaPA v.1.2 for Italia
+-   xRechnung v. 1.2 for Tyskland
+-   Åpne PEPPOL BIS Billing v. 3.0 for den europeiske union
 
-Elektronisk fakturering er basert på [elektronisk rapportering](../../dev-itpro/analytics/general-electronic-reporting.md). Det finnes en **Kundefakturamodell**-datamodell og et tallformat for landsspesifikke konfigurasjoner for elektronisk rapporteringsformat som er opprettet for Østerrike (AT), Danmark (DK), Italia (IT), Norge (NO), Spania (ES), Frankrike (FR), Belgia (BE) og Nederland (NL).
+Elektronisk fakturering er basert på [elektronisk rapportering](../../dev-itpro/analytics/general-electronic-reporting.md). En **Kundefakturamodell**-datamodell og flere lands/områdespesifikke ER-formatkonfigurasjoner er opprettet for Østerrike (AT), Danmark (DK), Italia (IT), Norge (NO), Spania (ES), Frankrike (FR), Belgia (BE), Nederland (NL), Tyskland (DE) og den europeiske uniun (EU).
 
 -   OIOUBL salgsfaktura - for AT, DK, og NO
 -   OIOUBL salgskreditnota - for AT, DK, og NO
@@ -65,6 +67,12 @@ Elektronisk fakturering er basert på [elektronisk rapportering](../../dev-itpro
 -   Salgsfaktura (IT)
 -   Prosjektfaktura (ES)
 -   Prosjektfaktura (IT)
+-   Salgsfaktura DE
+-   Prosjektfaktura DE
+-   Peppol-salgsfaktura - for EU
+-   Peppol-salgskreditnota - for EU
+-   Peppol-prosjektfaktura - for EU
+-   Peppol-prosjektkreditnota - for EU
 
 De elektroniske fakturaene og kreditnotaene du genrerer, inneholder obligatorisk informasjon, for eksempel EAN-nummeret, ordrenummer, kontakt, dimensjonskontokode og adresseopplysninger for kunden. Valideringsregler brukes når fakturaer genereres, slik at du kan verifisere at riktig informasjon er angitt. Settet med nødvendig informasjon kan variere fra land til land. Siden både kravene og de støttede landene og formatene kan endres, bør du alltid gå til det delte ativabiblioteket i Microsoft Dynamics Lifecycle Services (LCS) og viser den mest oppdaterte listen over tilgjengelige filer som har aktivatypen **TYSK konfigurasjon**.
 

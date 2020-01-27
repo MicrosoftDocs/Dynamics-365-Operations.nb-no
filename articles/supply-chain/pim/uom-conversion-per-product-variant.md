@@ -3,12 +3,12 @@ title: Konvertering for måleenhet per produktvariant
 description: Dette emnet forklarer hvordan konverteringer av måleenheter kan defineres for produktvarianter.
 author: johanhoffmann
 manager: AnnBe
-ms.date: 12/18/2018
+ms.date: 01/06/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: ''
+ms.search.form: UnitOfMeasureConversion
 ROBOTS: noindex, nofollow
 audience: Application User
 ms.reviewer: josaw
@@ -17,34 +17,26 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-04-01
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 196b68db02867f8d864be8bcc593aa01f554f7c3
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: c8181f0bda9b781a6c2b0feb0aba1beb51bfea65
+ms.sourcegitcommit: af36eb17b36092a3101bbfc96486b25036676558
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2249454"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "2935105"
 ---
 # <a name="unit-of-measure-conversion-per-product-variant"></a>Konvertering for måleenhet per produktvariant
 
 [!include [banner](../includes/banner.md)]
 
-[!include [pivate-preview](../includes/pivate-preview-banner.md)]
-
 Dette emnet forklarer hvordan konverteringer av måleenheter kan defineres for produktvarianter. Det inneholder et eksempel på oppsettet.
 
 Denne funksjonen gjør det mulig for firmaer å definere ulik enhetsomregning mellom variantene av samme produkt. Eksemplet nedenfor brukes i dette emnet. Et firma selger t-skjorter i størrelsene Liten, Middels, Stor og Ekstra stor. T-skjorten er definert som et produkt, og de ulike størrelsene er definert som varianter av produktet. T-skjortene pakkes i bokser, og det kan være fem t-skjorter i en boks, bortsett fra ekstra stor-størrelsen der det bare er plass til fire t-skjorter. Firmaet ønsker å spore de ulike variantene av t-skjorter i enheten **Stykker**, men selger t-skjortene i enheten **Boks**. Konverteringen mellom lagerenheten og salgsenheten er 1 boks = 5 stykker, med unntak av varianten ekstra stor, der konverteringen er 1 boks = 4 stykker.
-
-## <a name="setup"></a>Installasjon
-
-Du kan konfigurere parameterne for å bruke funksjonen for produkter som er aktivert for **Alle prosesser** eller bare for produkt som er aktivert for **Lagerprosesser** ved hjelp av **Aktiver måleenhetskonverteringer**-alternativet på **Produktinformasjonsparametere**-siden.
 
 ### <a name="set-up-a-product-for-unit-conversion-per-variant"></a>Definere et produkt for enhetsomregning per variant
 
 Produktvarianter kan bare opprettes for produkter av undertypen **Produkt**: **Produktstandard**. Hvis du vil ha mer informasjon, kan du se [Opprette en produktstandard](tasks/create-product-master.md).
 
 Funksjonen er ikke aktivert for produkter som er angitt for Faktisk vekt-prosesser. 
-
-Under opprettingen av en produktstandard aktiverer du konvertering for måleenhet ved hjelp av **Aktiver måleenhetskonverteringer**-alternativet på **Produktdetaljer**-siden.
 
 Når produktstandarden med frigitte produktvarianter er opprettet, kan enhetsomregninger per varianter defineres. Du finner menyelementet for å åpne enhetskonverteringssiden i forbindelse med et produkt eller en produktvariant på følgende sider.
 

@@ -3,7 +3,7 @@ title: Oversikt over tilstand for produktlivssyklus
 description: Livssyklustilstand for produkter dokumenterer livssyklustilstanden til et frigitt produkt eller produktvariant.
 author: cvocph
 manager: AnnBe
-ms.date: 07/25/2019
+ms.date: 01/06/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: conradv
 ms.dyn365.ops.version: 7.2999999999999998
 ms.search.validFrom: 2017-12-31
-ms.openlocfilehash: c3674442dfec11afc26881f3e5c442ba05a4821b
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: b5b0ceb1926de6efda239fdbc69fb36a9d4b28e0
+ms.sourcegitcommit: 4d77d06a07ec9e7a3fcbd508afdffaa406fd3dd8
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2813552"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "2934846"
 ---
 # <a name="product-lifecycle-state-overview"></a>Oversikt over tilstand for produktlivssyklus
 
@@ -74,11 +74,7 @@ Hvis du vil ha mer informasjon om hvordan du bruker produktlivssyklustilstand fo
 
 ## <a name="default-migration-import-and-export"></a>Standard overføring, import og eksport 
 
-Produktlivssyklustilstandene støttes ikke av dataenheter, og livssyklustilstanden kan ikke settes til variabel tilstand via de frigitte produktdataenhetene.
-
--  Ved overføring fra tidligere versjoner er livssyklustilstanden for alle produkter og produktvarianter tom.  
--  Når du importerer frigitte produkter gjennom en dataenhet, brukes standard livssyklustilstand ved oppretting.  
--  Når du importerer frigitte produktvarianter gjennom en dataenhet, importeres produktlivssyklustilstanden til den frigitte produktstandarden.   
+Produktlivssyklustilstandene støttes ikke av dataenheter, og livssyklustilstanden kan settes til variabel tilstand via den frigitte produktdataenheten eller den frigitte variantdataenheten.
 
 ## <a name="find-obsolete-products-and-products-variants"></a>Finn foreldede produkter og produktvarianter 
 

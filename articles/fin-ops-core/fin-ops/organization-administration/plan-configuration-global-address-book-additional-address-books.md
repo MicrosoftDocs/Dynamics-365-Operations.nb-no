@@ -3,7 +3,7 @@ title: Plan for den globale adresseboken og andre adressebøker
 description: Dette emnet beskriver vurderingene og beslutningene som du må ta i planleggingsprosessen før du definerer og konfigurerer den globale adresseboken og eventuelle tilleggsadressebøker.
 author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 11/03/2017
+ms.date: 12/02/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 25a99284b2773e7c9d473357356c69a39f23c92d
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 89c6e71e5f537f0f9309eca1025c8e74cdce6716
+ms.sourcegitcommit: 75bbcff474cfb8d2f282be2b9d2d7984d1505fa3
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2190034"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2883417"
 ---
 # <a name="plan-for-the-global-address-book-and-other-address-books"></a>Planlegge den globale adresseboken og andre adressebøker
 
@@ -35,7 +35,7 @@ Dette emnet beskriver vurderingene og beslutningene som du må ta i planleggings
 
 Før du begynner å arbeide med den globale adresseboken, må du bestemme standardverdiene for den. Disse standardverdiene brukes deretter til flere adressebøker du oppretter.
 
-**Beslutninger:**
+**Beslutninger**
 
 - Hvilken rekkefølge skal navn vises i for partsposter av typen **Person**? For eksempel er én rekkefølge etternavn, mellomnavn og fornavn.
 - Skal partsposter slettes fra adresseboken når rolleposten slettes? Hvis for eksempel en kundepost slettes, skal partsposten også slettes?
@@ -58,11 +58,3 @@ Når du oppretter den globale adresseboken, kan du opprette flere adressebøker 
 **Beslutning:**
 
 - Hvor mange flere adressebøker vil du opprette?
-
-### <a name="address-book-security"></a>Adresseboksikkerhet
-
-Du kan opprette adressebøker når som helst, og du kan også angi sikkerhetsparametere for adressebøkene når som helst. Du trenger ikke angi tilgangsrettigheter for en adressebok, men hvis du ikke gjør det, kan alle ansatte i organisasjonen se alle partsposter i denne adresseboken. Du kan definere tilgangsrettigheter til partsposter via adressebøker. Sikkerhetsrettigheter er basert på team. Denne tilnærmingen sikrer at bare arbeidere som er tilordnet et team som har tilgang til en adressebok, kan vise partipostene i denne adresseboken. Du må velge teamene som har tilgang til hver adressebok. For hver adressebok kan du angi tilgangsrettigheter som kan gi eller nekte tilgang for bestemte team. Hvis du gir et team rettigheter til en adressebok, kan alle medlemmer av teamet vise postene i adresseboken. Hvis du ikke gir et team tilgang til en adressebok, kan medlemmer av teamet ikke vise adresseboken eller innholdet.
-
-**Beslutning:**
-
-- Hvilke team skal ha tilgang til hver nye adressebok du vil opprette?

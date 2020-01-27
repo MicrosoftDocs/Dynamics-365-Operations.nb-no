@@ -16,14 +16,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2019-05-06
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: ee86f52a2e1c697d71549a39d9eb86bac33d9ff2
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 474c7cc82aaccf6b3bcfb3bbe879725497961c43
+ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2812839"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "2897149"
 ---
-# <a name="share-content-with-other-contributors-in-dynamics-365-talent---onboard"></a>Dele innhold med andre bidragsytere i Dynamics 365 Talent – Onboard
+# <a name="share-content-with-other-contributors"></a>Dele innhold med andre bidragsytere
 
 [!include [banner](includes/banner.md)]
 
@@ -38,7 +38,7 @@ Microsoft Dynamics 365 Talent: Onboard lar deg dele veiledninger og maler for jo
 
 3. Hvis mottakerne skal kunne revidere veiledningen, setter du alternativet **Kan disse personene foreta endringer** til **På** under **Del med**. Hvis mottakerne skal varsles via e-post om at du har delt veiledningen med dem, setter du alternativet **Send e-postvarsling til mottakere** til **På**.
 
-    ![[Angi tilgangs- og e-postinnstillinger for en veiledning for jobbintroduksjon](./media/onboard-share-guide-with-contributors.png)](./media/onboard-share-guide-with-contributors.png)
+    ![[Angi tilgangs- og e-postinnstillinger for en jobbintroduksjonsveiledning](./media/onboard-share-guide-with-contributors.png)](./media/onboard-share-guide-with-contributors.png)
 
 4. Skriv inn et navn eller en e-postadresse, og velg ønsket mottaker i rullegardinlisten.
 5. I kategorien **Administrer tilgang** kan du se gjennom eller endre hva mottakerne kan gjøre med veiledningen. Hvis du vil endre en mottakers tilgang, velger du **Kan vise**, **Kan redigere** eller **Fjern** etter behov, i rullegardinlisten ved siden av mottakerens navn.

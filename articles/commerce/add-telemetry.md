@@ -3,7 +3,7 @@ title: Legge til skript kode i områdes ID-er for å støtte telemetri
 description: Dette emnet beskriver hvordan du kan legge til skriptkode på klientsiden på områdesidene dine for å støtte innsamling av telemetri på klientsiden.
 author: bicyclingfool
 manager: annbe
-ms.date: 10/31/2019
+ms.date: 12/12/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: StuHarg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: a5f82426d87cd2e0faa0195a841899bb03f9df08
-ms.sourcegitcommit: 295d940a345879b3dfc5991e387b91c7257019ea
+ms.openlocfilehash: 79d0e11946f3c6f4704d3a726d33de0378eb53bd
+ms.sourcegitcommit: 36857283d70664742c8c04f426b231c42daf4ceb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2697342"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "2914545"
 ---
 # <a name="add-script-code-to-site-pages-to-support-telemetry"></a>Legge til skript kode i områdes ID-er for å støtte telemetri
 
@@ -63,6 +63,8 @@ Når du har opprettet et fragment for skriptkoden, kan det brukes på nytt på a
 [Legge til en logo](add-logo.md)
 
 [Velge et områdetema](select-site-theme.md)
+
+[Arbeide med CSS-overstyringsfiler](css-override-files.md)
 
 [Legge til et favorittikon](add-favicon.md)
 

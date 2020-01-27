@@ -3,7 +3,7 @@ title: Ytelsesstyring
 description: Ytelsesstyringsprosessen lar ansatte dokumentere og diskutere ytelsen deres med sin overordnede. Ledere kan deretter gi tilbakemelding og veiledning til ansatte.
 author: andreabichsel
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 12/11/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-talent
@@ -17,16 +17,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 05d8986d69abba4dbba7c30aad5a7e4626ceb5b1
-ms.sourcegitcommit: cadce85ca3004d53caf6bc49147a524c1bfd421f
+ms.openlocfilehash: 18e9606e62bc2739da99b75ab56161bd7cc7eafe
+ms.sourcegitcommit: 724b72412861d342c138a7935319da700b63c234
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "1590511"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "2921156"
 ---
 # <a name="performance-management"></a>Ytelsesstyring
-
-[!include [banner](includes/banner.md)]
 
 Ytelsesstyringsprosessen lar ansatte dokumentere og diskutere ytelsen deres med sin overordnede. Ledere kan deretter gi tilbakemelding og veiledning til ansatte.  
 
@@ -91,6 +89,8 @@ Hvis du vil ha mer detaljerte vurderinger, kan du trekke inn aktive og fullført
 Du kan også bruke **Kompetanser**-delen for å diskutere, gjennomgå og vurdere den ansattes kompetanser. Du kan legge til så mange kompetanser som du trenger, og du kan velge om kompetansen skal vurderes. 
 
 Du kan opprette nye vurderinger som er basert på maler som du har opprettet. Du kan for eksempel ha en mal for én-til-én-vurderinger, utviklingsplaner eller periodiske vurderinger. Du kan velge malen når du oppretter en ny vurdering.
+
+Hvis du vil skrive ut gjennomganger, velger du **Skriv ut gjennomgang**. Hvis du ikke ser knappen på siden for **Gjennomgang**, må du kontrollere at du har aktivert funksjonen i arbeidsområdet **Funksjonsbehandling**. Hvis du vil ha mer informasjon om funksjonsbehandling, kan du se [Oversikt over funksjonsbehandling](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview).
 
 ## <a name="components-you-can-include-in-performance-reviews"></a>Komponenter som kan inkluderes i ytelsesvurderinger
 Du kan inkludere mange typer informasjon i ytelsesvurderinger. Disse inkluderer detaljer om gjennomganger, målinger, aktiviteter, vurderinger, godkjenninger og vedlegg.

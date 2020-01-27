@@ -3,7 +3,7 @@ title: Velge et områdetema
 description: Dette emnet beskriver hvordan du angir eller endrer områdets tema i Microsoft Dynamics 365 Commerce.
 author: bicyclingfool
 manager: annbe
-ms.date: 10/31/2019
+ms.date: 12/12/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: StuHarg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 8ee56f1b135c71194f5e7c4b2a8f47a82294ea81
-ms.sourcegitcommit: 295d940a345879b3dfc5991e387b91c7257019ea
+ms.openlocfilehash: bcee3a3f29df316dff04cf22acbda7f968778c93
+ms.sourcegitcommit: 36857283d70664742c8c04f426b231c42daf4ceb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2698125"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "2914754"
 ---
 # <a name="select-a-site-theme"></a>Velge et områdetema
 
@@ -52,6 +52,8 @@ Følg denne fremgangsmåten for å velge temaet som skal brukes på området.
 ## <a name="additional-resources"></a>Tilleggsressurser
 
 [Legge til en logo](add-logo.md)
+
+[Arbeide med CSS-overstyringsfiler](css-override-files.md)
 
 [Legge til et favorittikon](add-favicon.md)
 

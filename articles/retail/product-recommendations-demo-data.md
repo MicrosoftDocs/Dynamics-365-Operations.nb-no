@@ -3,7 +3,7 @@ title: Demonstrasjonsdata for produktanbefalinger for omnikanal
 description: Målet med dette dokument er å gi råd om hvordan dra nytte av produktanbefalinger for omnikanal i Lag 1-ett-miljøer i en boks, med forhåndsutfylte demonstrasjonsdata som kan tilpasses.
 author: bebeale
 manager: AnnBe
-ms.date: 10/1/2019
+ms.date: 12/1/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -19,18 +19,18 @@ ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2019-07-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 81af4c1bb7828c9b346a3ef514d8657e853dcefb
-ms.sourcegitcommit: c526cfd1f823df1ff33ded95e599a72f0a15cc5a
+ms.openlocfilehash: 31aa5dbd2fa814fd572024a4ae36b9d9b46a2fb0
+ms.sourcegitcommit: 398c0652acde12c953de007d06055456d6e0a516
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2226277"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2872332"
 ---
 # <a name="omni-channel-product-recommendations-demo-data"></a>Demonstrasjonsdata for produktanbefalinger for omnikanal
 
 Målet med dette dokument er å gi råd om hvordan dra nytte av produktanbefalinger for omnikanal i Lag 1-ett-miljøer i en boks, med forhåndsutfylte demonstrasjonsdata som kan tilpasses.
 
-Produktanbefalinger for omnikanal gir et sett med ordnet liste over produkter som er kuratert eller programmatisk generert. Disse listene kan brukes i flere scenarier, avhengig av forretningsbehovet. Hvis du vil ha mer informasjon om produktanbefalingslister, kan du se [Oversikt over produktanbefalinger](product-recommendaitons-overview.md)
+Produktanbefalinger for omnikanal gir et sett med ordnet liste over produkter som er kuratert eller programmatisk generert. Disse listene kan brukes i flere scenarier, avhengig av forretningsbehovet. Hvis du vil ha mer informasjon om produktanbefalingslister, kan du se [Oversikt over produktanbefalinger](../commerce/product-recommendations.md)
 
 Produktanbefalinger for Lag 2-miljøer og høyere for Dynamics, beregnes automatisk basert på kundedata.
 Bruk av demonstrasjonsdata for produktanbefalinger deaktiverer ikke produktanbefalingerløsninger som allerede er klargjort i miljøet og kostnadene som er knyttet til bruken.
@@ -68,6 +68,6 @@ Utvidelsen inneholder en datafil med navnet RecoMockDataset.csv, som lar kunden 
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 
-[Oversikt over produktanbefalinger](product-recommendations-overview.md)
+[Oversikt over produktanbefalinger](../commerce/product-recommendations.md)
 
-[Miljøplanlegging](environment-planning.md)
+[Miljøplanlegging](../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md)

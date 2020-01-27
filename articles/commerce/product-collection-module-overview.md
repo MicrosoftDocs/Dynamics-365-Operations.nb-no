@@ -3,7 +3,7 @@ title: Produktsamlingsmoduler
 description: Dette emnet gir en oversikt over produktsamlingsmoduler i Microsoft Dynamics 365 Commerce.
 author: v-chgri
 manager: annbe
-ms.date: 10/01/2019
+ms.date: 01/07/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,14 +17,14 @@ ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 44f78b55b8e67b7358be75aa63c40a0147507e26
-ms.sourcegitcommit: 3a4e137ef3a96ba0a58c5352f4a3b57467ace9ae
+ms.openlocfilehash: 31307035014f2fae6146f33bc23e3e06103f82eb
+ms.sourcegitcommit: c237123ad94d9418994ac095fbd8634c05a927b1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/11/2019
-ms.locfileid: "2785473"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "2943269"
 ---
-# <a name="product-collection-modules"></a>Produktsamlingsmoduler  
+# <a name="product-collection-modules"></a>Produktsamlingsmoduler
 
 [!include [banner](includes/preview-banner.md)]
 [!include [banner](includes/banner.md)]
@@ -37,18 +37,19 @@ Produktgjenkjenning er et primærverktøy som forhandlere bruker for å engasjer
 
 Produktsamlingsmoduler representerer fysiske produkter og tjenester på webområdet. En produktsamlingsmodul er vanligvis koblet til en detaljside der kunder kan kjøpe et produkt eller en tjeneste, eller lære mer om den. 
 
-Kildene for produktsamlinger kan være lister med tre typer:
+Kildene for produktsamlinger kan være lister med følgende fire typer:
 
 - Redigeringslister med produkter som er manuelt definert i Dynamics 365 Retail som tilknyttede produkter for et produkt, eller produktlister
 - Lister over algoritmer, for eksempel lister over nye, bestselgende eller tendenser
 - Anbefalingslister som er basert på maskinopplæring
+- Tilpasningslister som støtter personlige resultater for en kunde. Kunder må være logget på webområdet for e-handel for å se personlige resultater. Gjestebrukere ser ikke personlige resultater. Kunder kan velge bort personlig tilpasning fra [siden for kontoadministrasjon](account-management.md).
 
 Følgende illustrasjon viser de ulike typene produktsamlinger som brukes på et e-handelsområde.
 
 ![Eksempel på de ulike typene produktsamlinger på et e-handelsområde](./media/ProductCollectionsAcrossTheSiteUseProductPlacement.png)
 
 > [!NOTE]
-> Bruk alltid produktsamlingsmoduler til å vise en gruppe med produkter av en lignende type eller et lignende tema.
+> Bruk alltid produktsamlingsmoduler til å vise en gruppe med produkter av en lignende type.
 
 ## <a name="product-collection-modules-and-types"></a>Produktsamlingsmoduler og -typer
 
@@ -56,15 +57,15 @@ Følgende tabell beskriver ulike typer produktsamlingsmoduler i Dynamics 365 Com
 
 | Produktsamlingsmodul  | Type | Beskrivelse |
 |----------------------------|------|-------------|
-| Kategorisøk            | Redaksjonell | Denne typen produktsamlingsmodul bruker navigasjonskategorihierarkiet som detaljhandeleren opprettet for en detaljhandelskanal, til å vise en nettleserflyt for produkter som tilbys i en bestemt områdekategori. |
-| Søkeresultater             | Søkespørring | Denne typen produktsamlingsmodul viser en liste over produkter som passer best til søkespørringen som kunden har angitt. |
-| Relaterte produkter           | Redaksjonell | Denne typen produktsamlingsmodul viser en liste over produkter som en salgssjef har konfigurert som tilknyttede produkter i detaljhandel for relasjonstypen som forfatteren valgte. |
-| Kuraterte produktlister      | Redaksjonell | Denne typen produktsamlingsmodul viser egendefinerte lister som forhandlere og redaktører har opprettet i Retail. |
-| Nye                        | Algoritme | Denne typen produktsamlingsmodul viser en liste over de nyeste produktene som er assortert til kanaler og kataloger. |
-| Bestselgere               | Algoritme | Denne typen produktsamlingsmodul viser en liste over produkter som er rangert av det høyeste salgsantallet. |
-| Populære                   | Algoritme | Denne typen produktsamlingsmodul viser en oversikt over produkter med høyest ytelse for en gitt periode. |
-| Kjøpes ofte sammen | Kunstig intelligens / maskinlæring | Denne typen produktsamlingsmodul bruker maskinopplæring til å analysere forbrukskjøpsmønstre og anbefale relaterte varer som kjøpes ofte sammen med et gitt produkt. |
-| Andre liker også           | Kunstig intelligens / maskinlæring | Denne typen produktsamlingsmodul bruker maskinopplæring til å analysere forbrukskjøpsmønstre og anbefale varer som er relatert til et gitt produkt. |
+| Kategori                   | Kategori | Denne modulen viser en liste over produkter i en kategori, som definert av navigasjonskategorihierarkiet som forhandleren opprettet for en detaljhandelskanal. |
+| Relaterte produkter           | Redaksjonell | Denne modulen viser en liste over produkter som en salgssjef har konfigurert som tilknyttede produkter i detaljhandel for relasjonstypen som forfatteren har valgt. |
+| Kuraterte produktlister      | Redaksjonell | Denne modulen viser egendefinerte lister som forhandlere og redaktører har opprettet i Retail. |
+| Nye                        | Algoritme | Denne modulen viser en liste over de nyeste produktene som er assortert til kanaler og kataloger. Denne listen kan vise personlige resultater for en pålogget bruker hvis områdeforfatteren velger dette alternativet. |
+| Bestselgere               | Algoritme | Denne modulen viser en liste over produkter som er rangert etter det høyeste salgstallet. Denne listen kan vise personlige resultater for en pålogget bruker hvis områdeforfatteren velger dette alternativet. |
+| Populære                   | Algoritme | Denne modulen viser en liste over produkter med høyest ytelse for en gitt periode. Denne listen kan vise personlige resultater for en pålogget bruker hvis områdeforfatteren velger dette alternativet. |
+| Kjøpes ofte sammen | Kunstig intelligens / maskinlæring | Denne modulen bruker maskinopplæring til å analysere forbrukskjøpsmønstre og anbefale relaterte varer som kjøpes ofte sammen med et gitt produkt. Denne listen kan vise personlige resultater for en pålogget bruker hvis områdeforfatteren velger dette alternativet. |
+| Andre liker også           | Kunstig intelligens / maskinlæring | Denne modulen bruker maskinopplæring til å analysere forbrukskjøpsmønstre og anbefale varer som er relatert til et gitt produkt. Denne listen kan vise personlige resultater for en pålogget bruker hvis områdeforfatteren velger dette alternativet. |
+| Plukkinger for deg              | Kunstig intelligens / maskinlæring | Denne modulen bruker maskinlæring til å analysere kjøpsmønstrene for den påloggede brukeren og gi personlige anbefalinger som er basert på disse kjøpsmønstrene. For en gjestebruker vil denne listen være skjult. |
 
 ## <a name="add-a-product-collection-module-to-a-category-page"></a>Legge til en produktsamlingsmodul på en kategoriside
 
@@ -74,7 +75,8 @@ Følg disse trinnene for å legge til en produktsamlingsmodul på en kategorisid
 1. På sideoppsettet velger du sporet for **Underbunntekst**, velger ellipseknappen (**...**), og deretter velger du **Legg til modul**.
 1. I dialogboksen **Legg til modul** velger du **Container**, og deretter velger du **OK**.
 1. I containermodulen velger du ellipseknappen, og deretter velger du **Legg til modul**.
-1. I dialogboksen **Legg til modul** velger du **Produktsamling**, og deretter velger du **OK**.
+1. I dialogboksen **Legg til modul** velger du **Produktsamling**, og deretter velger du **OK**.  
+![Eksempel på veiviserflyt for produktsamlingsmodul](./media/productCollectionModule.png)
 1. Konfigurer innstillinger for å velge aktuell datakilde og inndata for produktsamlingen.
 1. I egenskapsruten for produktsamlingsmodulen velger du **Legg til en produktliste**.
 1. I dialogboksen **Velg produktlistekonfigurasjon** velger du listetype, angir antall varer og velger eventuelle andre alternativer som er tilgjengelige for listetypen. Hvis du vil ha mer informasjon om listetyper, kan du se tabellen nedenfor. 
@@ -82,15 +84,16 @@ Følg disse trinnene for å legge til en produktsamlingsmodul på en kategorisid
 1. Lagre siden, og publiser den.
 
 Følgende tabell viser listetypene som er tilgjengelige for valg i dialogboksen **Velg produktlistekonfigurasjon**.
-   
-| Type                       | Beskrivelse | Generell fremgangsmåte | Kontekst som kan avledes fra sidekonteksten | Kontekst som forfatteren kan overstyre sidekonteksten med |
-|----------------------------|-------------|------------------|-------------------------------------|-----------------------------------------------|
-| Produkter etter kategori       | En liste over produkter som tilhører en gitt kategori. Denne kategorien bestemmes enten fra sidekonteksten eller konteksten som forfatteren gir. | Supplere kategoriside, startside, betalings- og handlekurvsider, og produktsider | Kategori | Kategori bestemmes av forfatter |
-| Relaterte produkter           | En liste over produkter som en varehandelsleder har konfigurert som tilknyttede produkter i Retail for relasjonstypen. | Produktsider, betalings- og handlekurvsider, ønskelisteside og kundekontoside | Produkt, relasjonstype (obligatorisk)  | Produkt, relasjonstype |
-| Kuratert                    | En egendefinert liste som forhandlere og redaktører har opprettet i Retail. | Supplere kategoriside, startside, betalings- og handlekurvsider, og produktsider | Gjelder ikke | Listeplukker |
-| Algoritme                | <ul><li>**Ny** – En liste over de nyeste produktene som er assortert til kanaler og kataloger.</li><li>**Bestselgere** – En liste over produkter som er rangert etter det høyeste salgstallet.</li><li>**Stjerneskudd** – En liste over produkter med høyest ytelse for en gitt periode.</li></ul> | Startside, suppler kategoriside, og betalings- og handlekurvsider | Kategori | Kategori bestemmes av forfatter |
-| Kjøpes ofte sammen | En liste som bruker maskinopplæring til å analysere forbrukskjøpsmønstre og anbefale relaterte varer som kjøpes ofte sammen med et gitt produkt. | Produktsider og betalings- og handlekurvsider | Produkt, handlekurv | Inkluder handlekurv |
-| Andre liker også           | En liste som bruker maskinopplæring til å analysere forbrukskjøpsmønstre og anbefale varer som er relatert til et gitt produkt. | Produktsider og betalings- og handlekurvsider | Produkt, handlekurv | Gjelder ikke |
+
+| Type                       | Beskrivelse | Bruk | Sidekontekst | Bestemt kontekst | Tilpassing |
+|----------------------------|-------------|-------|--------------|------------------|-----------------|
+| Produkter etter kategori       | En liste over produkter som tilhører en gitt kategori. Denne kategorien bestemmes enten fra sidekonteksten eller konteksten som forfatteren gir. | Denne typen liste kan brukes på en hvilken som helst side (for eksempel en startside, en kategoriside, en markedsføringsside eller en produktdetaljside \[PDP\]) for å promotere en bestemt kategori av produkter. | Kategori fra sidekonteksten, der det er tilgjengelig (for eksempel en kategoriside) | Forfatteren kan gi en bestemt kategori som kontekst for listen. | Gjelder ikke |
+| Relaterte produkter           | En liste over produkter som en varehandelsleder har konfigurert som tilknyttede produkter i Retail for relasjonstypen. | Denne typen liste brukes først og fremst på PDP-er, men den kan brukes på alle sider hvis et overordnet produkt er angitt. | Produkt fra siden, relasjonstype (obligatorisk) | Produktet kan velges i velgeren, og relasjonstypen brukes. | Gjelder ikke |
+| Kuratert                    | En egendefinert liste som forhandlere og redaktører har opprettet i Retail. | Supplere kategoriside, startside, betalings- og handlekurvsider, og produktsider | Gjelder ikke | Gjelder ikke | Gjelder ikke |
+| Algoritme                | <ul><li>**Ny** – En liste over de nyeste produktene som er assortert til kanaler og kataloger.</li><li>**Bestselgere** – En liste over produkter som er rangert etter det høyeste salgstallet.</li><li>**Stjerneskudd** – En liste over produkter med høyest ytelse for en gitt periode.</li></ul> | Startside, suppler kategoriside, og betalings- og handlekurvsider | Kategori fra sidekonteksten (for eksempel en kategoriside) | Kategorien som bestemmes av områdeforfatteren | Støttes |
+| Kjøpes ofte sammen | En liste som bruker maskinopplæring til å analysere forbrukskjøpsmønstre og anbefale relaterte varer som kjøpes ofte sammen med et gitt produkt. | Denne typen liste er bare tilgjengelig for handlevognsiden. | Handlekurv | Gjelder ikke | Støttes |
+| Andre liker også           | En liste som bruker maskinopplæring til å analysere forbrukskjøpsmønstre og anbefale varer som er relatert til et gitt produkt. | Denne typen liste brukes på PDP-er for å vise produkter som andre kunder har kjøpt. | Produktkontekst fra siden | Produktet som leveres av områdeforfatteren | Støttes |
+| Plukkinger for deg              | En liste som bruker maskinlæring til å avgjøre kundenes preferanser. | Denne typen liste kan brukes på en hvilken som helst side. | Gjelder ikke| Gjelder ikke | Støttes | 
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 
@@ -98,7 +101,7 @@ Følgende tabell viser listetypene som er tilgjengelige for valg i dialogboksen 
 
 [Karusellmodul](add-carousel.md)
 
-[Innholdsrik blokk-modul](add-content-rich-block.md)
+[Innholdsrik blokkmodul](add-content-rich-block.md)
 
 [Modul for innholdsplassering](add-content-placement-modules.md)
 
@@ -106,3 +109,4 @@ Følgende tabell viser listetypene som er tilgjengelige for valg i dialogboksen 
 
 [Kjøpsboksmodul](add-buy-box.md)
 
+[Oversikt over produktanbefalinger](product-recommendations.md)

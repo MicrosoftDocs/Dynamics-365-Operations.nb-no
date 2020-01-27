@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: a542d6987280451910b4ff3bcfb3a109a0e028c6
-ms.sourcegitcommit: 295d940a345879b3dfc5991e387b91c7257019ea
+ms.openlocfilehash: c5fb59a9798e2cddfb75b71235ee7754e54b0e28
+ms.sourcegitcommit: ef3a1d7527311d00b69a1072ae5eb021ce68034c
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2697618"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "2945783"
 ---
 # <a name="enable-location-based-store-detection"></a>Aktivere stedsbasert butikkregistrering
 
@@ -50,16 +50,16 @@ Følg denne fremgangsmåten for å aktivere stedsbasert butikkregistrering i Com
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 
-[Oversikt over nettbutikk](online-store-overview.md)
-
-[Opprette et e-handelsområde](create-ecommerce-site.md)
+[Konfigurere domenenavnet](configure-your-domain-name.md)
 
 [Distribuere et nytt e-handelsområde](deploy-ecommerce-site.md)
 
+[Opprette et e-handelsområde](create-ecommerce-site.md)
+
 [Knytte et nettområde til en kanal](associate-site-online-store.md)
 
-[Konfigurere domenenavnet](configure-your-domain-name.md)
-
-[Legge til støtte for et innholdsleveringsnettverk (CDN)](add-cdn-support.md)
+[Administrere robots.txt-filer](manage-robots-txt-files.md)
 
 [Definere egendefinerte sider for brukerpålogginger](custom-pages-user-logins.md)
+
+[Legge til støtte for et innholdsleveringsnettverk (CDN)](add-cdn-support.md)

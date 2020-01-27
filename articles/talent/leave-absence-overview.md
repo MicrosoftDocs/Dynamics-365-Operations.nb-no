@@ -18,16 +18,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ebfaeb0696d7200ddf3c715f96a259b91db08e7a
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 3376a9aec5c0003e9cc7c076c4d221a697df61ce
+ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1518726"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "2898300"
 ---
 # <a name="leave-and-absence-management"></a>Styre permisjon og fravær
-
-[!include [banner](includes/banner.md)]
 
 Modulen **Permisjons- og fraværsstyring** tilbyr et fleksibelt rammeverk for å definere fraværsstyringsprosessen. Permisjons- og fraværsplaner kan opprettes for å fastslå hvordan ansatte setter av eller får tildelt fridager. Når de er registrert i en plan, kan ansatte sende fritidsforespørsler til ledere for godkjenning. Permisjonssporing tillater at både ledere på øverste nivå og personalledere kan se hvem som bruker fridager, og hvor lang tid de har igjen av fritiden.  
 

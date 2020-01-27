@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: v-kikozl
 ms.search.validFrom: 2019-1-16
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 03853e1f80bd32c1dfe5cfcbcd77e79168f26249
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 7e32f408e5c68a3422906347981c6fc4a4579daf
+ms.sourcegitcommit: 36857283d70664742c8c04f426b231c42daf4ceb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2812313"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "2915253"
 ---
 # <a name="overview-of-fiscal-integration-for-retail-channels"></a>Oversikt over regnskapsintegrering for detaljhandelskanaler
 
@@ -138,9 +138,14 @@ Følgende eksempler på regnskapsintegrering er for øyeblikket tilgjengelige i 
 - [Eksempel på integrering av bilagsskriver for Polen](emea-pol-fpi-sample.md)
 - [Eksempel på integrering av tjenesten for avgiftsmessig transaksjon for Østerrike](emea-aut-fi-sample.md)
 - [Eksempel på integrering av tjenesten for avgiftsmessig transaksjon for Tsjekkia](emea-cze-fi-sample.md)
+- [Eksempel på integrering med kontrollenheter for Sverige](./emea-swe-fi-sample.md)
 
 Følgende funksjon for regnskapsintegrering er også tilgjengelig i detaljhandel-SDK-et, men drar for øyeblikket ikke nytte av regnskapsintegreringsrammeverket. Overføring av denne funksjonaliteten til rammeverket for regnskapsintegrering er planlagt i senere oppdateringer.
 
-- [Kassefunksjoner for Frankrike](emea-fra-cash-registers.md)
-- [Kassefunksjoner for Norge](emea-nor-cash-registers.md)
-- [Eksempel for Retail POS-integrering med kontrollenheter for Sverige](./retail-sdk-control-unit-sample.md)
+
+- [Digital signatur for Frankrike](emea-fra-cash-registers.md)
+- [Digital signatur for Norge](emea-nor-cash-registers.md)
+
+Følgende eldre funksjonalitet for økonomisk integrasjon som er tilgjengelig i Retail SDK bruker ikke rammeverket for økonomisk integrasjon og vil bli avskrevet i senere oppdateringer:
+
+- [Eksempel på integrering med kontrollenheter for Sverige (eldre)](./retail-sdk-control-unit-sample.md)

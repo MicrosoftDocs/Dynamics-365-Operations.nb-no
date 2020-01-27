@@ -3,7 +3,7 @@ title: Legge til et favorittikon
 description: Dette emnet forklarer hvordan du legger til et favorittikon på området.
 author: bicyclingfool
 manager: annbe
-ms.date: 10/31/2019
+ms.date: 12/12/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: StuHarg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 58cb6c592351a96876532ef53d5d477ff93fafa1
-ms.sourcegitcommit: 295d940a345879b3dfc5991e387b91c7257019ea
+ms.openlocfilehash: 18e12cbe46650fcf024a56b6de9a8cb2903d2bf8
+ms.sourcegitcommit: 36857283d70664742c8c04f426b231c42daf4ceb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2696997"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "2914586"
 ---
 # <a name="add-a-favicon"></a>Legge til et favorittikon
 
@@ -64,6 +64,8 @@ Hvis du vil legge til et favorittikon på området, bruker du den samme fremgang
 [Legge til en logo](add-logo.md)
 
 [Velge et områdetema](select-site-theme.md)
+
+[Arbeide med CSS-overstyringsfiler](css-override-files.md)
 
 [Legge til en velkomstmelding](add-welcome-message.md)
 

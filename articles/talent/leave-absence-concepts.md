@@ -15,16 +15,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 3dbf5807a213e425b24d5a4809df694393faeb9b
-ms.sourcegitcommit: 9cc6a011bfdd1b0fe505760b6bf429eb6c65862a
+ms.openlocfilehash: 03e2557e29194f17a9a586470ced5b352408b07c
+ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "2832774"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "2898648"
 ---
 # <a name="leave-and-absence-concepts"></a>Begreper for permisjon og fravær
-
-[!include [banner](includes/banner.md)]
 
 Begreper og termer som er beskrevet i dette emnet, kan hjelpe deg med å finne ut hvordan en ansatt belønnes med avspasering, og hvordan den ansattes tidssaldoer beregnes. Hvis du vil ha mer informasjon om permisjons- og fraværsadministrasjon, kan du se [Administrasjon av permisjon og fravær](https://docs.microsoft.com/dynamics365/unified-operations/talent/leave-absence-overview).
 

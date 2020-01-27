@@ -16,14 +16,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2019-05-06
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 8090fafc891d874c3f4fb646fe22a2b783ce37aa
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 7057c5b24ee3ae03574ec106a0c7d268dfffb98e
+ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2814841"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "2897195"
 ---
-# <a name="create-a-hiring-team-by-using-dynamics-365-talent---onboard"></a>Opprette et ansettelsesteam med Dynamics 365 Talent – Onboard
+# <a name="create-a-hiring-team"></a>Opprette et ansettelsesteam
 
 [!include [banner](includes/banner.md)]
 
@@ -51,11 +51,11 @@ I Microsoft Dynamics 365 Talent: Onboard kan du opprette ansettelsesteam. Du kan
 2. Velg teamet.
 3. I kategorien **Veiledninger**, velg **Legg til veiledninger**.
 
-    ![[Legge til veiledninger for jobbintroduksjon i et team](./media/onboard-add-guides-to-team.png)](./media/onboard-add-guides-to-team.png)
+    ![[Legge til jobbintroduksjonsveiledninger i et team](./media/onboard-add-guides-to-team.png)](./media/onboard-add-guides-to-team.png)
 
 4. Merk av for hver jobbintroduksjonsveiledning du vil tilordne til teamet, og velg deretter **Legg til**.
 
-    ![[Velge veiledningene for jobbintroduksjon som skal legges til teamet](./media/onboard-select-guides.png)](./media/onboard-select-guides.png)
+    ![[Velge jobbintroduksjonsveiledninger som skal legges til i teamet](./media/onboard-select-guides.png)](./media/onboard-select-guides.png)
 
 ## <a name="assign-onboarding-templates-to-a-hiring-team"></a>Tilordne maler for jobbintroduksjon til et ansettelsesteam
 
@@ -67,7 +67,7 @@ I Microsoft Dynamics 365 Talent: Onboard kan du opprette ansettelsesteam. Du kan
 
 4. Merk av for hver mal du vil tilordne til teamet, og velg deretter **Legg til**.
 
-    ![[Velge malene som skal legges til teamet](./media/onboard-select-templates.png)](./media/onboard-select-templates.png)
+    ![[Velge maler som skal legges til i teamet](./media/onboard-select-templates.png)](./media/onboard-select-templates.png)
 
 ### <a name="see-also"></a>Se også
 

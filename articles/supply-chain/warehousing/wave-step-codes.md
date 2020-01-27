@@ -18,19 +18,17 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 0f89c6098db9e2e3a9aa4ee3666e4b9ae608f054
-ms.sourcegitcommit: d8f1135cdbc2deca70bc4b2805a0519253c9a31f
+ms.openlocfilehash: 1a1a32495b63a5a67a49bf3b02710aba63c1e2f0
+ms.sourcegitcommit: bfd6142569196a060e3f37893c78f00c40a2a18c
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "1992363"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "2946196"
 ---
 # <a name="wave-step-codes"></a>Bølgetrinnkoder
 
 [!include [banner](../includes/preview-banner.md)]
 [!include [banner](../includes/banner.md)]
-
-## <a name="about-wave-step-codes"></a>Om bølgetrinnkoder
 
 Bølgetrinnkoder er koder som brukere kan definere og bruke til å koble bestemte forekomster av bølgemetoder til en tilsvarende mal. Malene omfatter maler for etterfylling, containerbruk, etikettutskrift, lastplanlegging og sortering.
 
@@ -39,7 +37,7 @@ Når bølgetrinnkoder ikke brukes, må brukerne angi en fritekst for å referere
 Bølgetrinnkoder for en bestemt bølgetrinntype konfigureres på en egen side. For alle bølgetrinnforekomster i en bølgemal som krever en bølgetrinnkode, må du velge bølgetrinnkoden i en rullegardinliste. Valg i en rullegardinliste erstatter fritekstoppføring og reduserer risikoen og innvirkningen av menneskelig feil. Oppsettkoder brukes til å koble en bølgetrinnmetode i en bølgemal til en målmal for metoden.
 
 > [!NOTE]
-> Bruk av funksjonen for bølgetrinnkoder er valgfri, og implementering er per juridisk enhet. Hvis en bestemt juridisk enhet bruker funksjonen, oppgraderes derfor alle eksisterende bølgetrinnkoder i den juridiske enheten til den nye strukturen.
+> Bruk av bølgetrinnkoder-funksjonen er valgfritt. Den er aktivert i hele organisasjonen for alle juridiske enheter.
 
 ## <a name="setup-demo"></a>Installere demonstrasjon 
 
@@ -49,20 +47,20 @@ For denne demonstrasjonen må demonstrasjons være installert, og du må bruke d
 
 Følg disse trinnene for å aktivere funksjonen for bølgetrinnkoder.
 
-1. Gå til **Lagerstyring \> Oppsett \> Lagerstyringsparametere**.
-2. I kategorien **Generelt** i hurtigfanen **Bølgebehandling** setter du alternativet **Aktiver bølgetrinnkoder** til **Ja**.
+1. Gå til **Funksjonsbehandling**.
+2. Velg dette for å aktivere funksjonen kalt **Organisasjonsomfattende bølgetrinnkode**.
 
-Alle eksisterende bølgetrinn i fritekst oppgraderes til den nye strukturen. Når denne oppgraderingen er fullført for en juridisk enhet, er ikke alternativet **Aktiver bølgetrinnkoder** tilgjengelig på siden **Lagerstyringsparametere**.
+Alle eksisterende bølgetrinn i fritekst i alle juridiske enheter oppgraderes til den nye strukturen. Når denne oppgraderingen er fullført for alle juridiske enheter, er funksjonen aktivert. Hvis funksjonen ikke kan aktiveres for én eller flere juridiske enheter, er ikke funksjonen aktivert for noen juridiske enheter.
 
-Valideringer utføres under oppgraderingen, og hvis oppgraderingen mislykkes, får du en feil melding. En oppgradering kan mislykkes på grunn av følgende konflikter:
+Under aktivering utføres valideringer under dataoppgraderingen. Hvis oppgraderingen mislykkes, får du en feilmelding. En oppgradering kan mislykkes på grunn av følgende konflikter:
 
 - Det finnes duplisert bølgetrinn i fritekst.
 - Det finnes tilpasninger.
 - Et bølgetrinn i fritekst som er knyttet til en bølgetrinnmetodeforekomst, samsvarer ikke med den forventede maltypen.
 
-Når du har løst eventuelle konflikter som identifiseres i løpet av valideringene, kan du kjøre oppgraderingsprosessen på nytt.
+Når du har løst eventuelle konflikter som identifiseres i løpet av valideringene, kan du prøve å aktivere funksjonen på nytt.
 
-Når oppgraderingen er fullført, blir siden **Bølgetrinnkoder** (**Lagerstyring \> Oppsett \> Bølger \> Bølgetrinnkoder**) tilgjengelig. Denne siden viser en liste over bølgetrinnkodene som ble oppgradert da funksjonen for bølgetrinnkoder ble aktivert.
+Når funksjonen er aktivert, blir siden **Bølgetrinnkoder** (**Lagerstyring \> Oppsett \> Bølger \> Bølgetrinnkoder**) tilgjengelig. Denne siden viser en liste over bølgetrinnkodene som ble oppgradert da funksjonen Organisasjonsomfattende bølgetrinnkode ble aktivert.
 
 ### <a name="create-new-wave-step-codes"></a>Opprette nye bølgetrinnkoder
 
@@ -94,3 +92,5 @@ Fremgangsmåten nedenfor hjelper deg med å garantere at etterfyllings malen du 
 4. Gå til **Lagerstyring \> Oppsett \> Bølger \> Bølgemaler**, og velg bølgemalen du vil bruke.
 5. I hurtigfanen **Metoder** i malen, velger du metoden **Etterfylling**.
 6. I feltet **Bølgetrinnkode** velger du bølgetrinnkoden du valgte i etterfyllingsmalen.
+
+Du utfører disse trinnene for hver juridiske enhet.

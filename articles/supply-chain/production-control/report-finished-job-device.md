@@ -3,7 +3,7 @@ title: Rapportere som fullført til en lokasjon som ikke er kontrollert av numme
 description: Dette emnet beskriver prosessen for å fullføre ferdige produkter på en produksjonsordre til lager når et nummerskilt styrer lokasjonen.
 author: johanhoffmann
 manager: AnnBe
-ms.date: 09/06/2019
+ms.date: 01/06/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2019-09-06
 ms.dyn365.ops.version: AX 10.0.6
-ms.openlocfilehash: cb809e596fd6bf3030bcee460838798435512b95
-ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
+ms.openlocfilehash: 63073035941cd2ef343c65364536fe76a9b71430
+ms.sourcegitcommit: af36eb17b36092a3101bbfc96486b25036676558
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "2572135"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "2935128"
 ---
 [!include [banner](../includes/banner.md)]
 
@@ -32,4 +32,10 @@ ms.locfileid: "2572135"
 
 Prosessen som kalles Ferdigmelding, fullfører ferdig produkter på en produksjonsordre til lageret. Hvis det ferdige produktet er aktivert for de avanserte lagerprosessene, blir produktet rapportert som ferdig til en lokasjon som kalles produksjonsutleveringssted. Hvis du vil ha informasjon om hvordan du definerer produksjonsutleveringssted, kan du se [Produksjonsutleveringssted](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/production-control/production-output-location).
 
-Du må velge et eksisterende skiltnummeret for å fullføre denne oppgaven. Hvis produksjonsutleveringsstedet er konfigurert for sporing etter nummerskilt, må et skiltnummer inkluderes ved rapportering av produksjonsutleveringsstedet som ferdig. Feltet **Nummerskilt** vises i meldingen **Rapportfremdrift** på siden **Jobbkortenhet**. Feltet vises bare i meldingen **Rapportfremdrift** ved rapportering om den siste operasjonen i produksjonsordren. Feltet vises bare hvis varen for produksjonsordren er aktivert for lagerstyrings prosessene. 
+Hvis produksjonsutleveringsstedet er nummerskiltkontrollert, må det oppgis et nummerskilt ved rapportering som fullført. Feltet **Nummerskilt** vises i meldingen **Rapportfremdrift** på siden **Jobbkortenhet**. Feltet er bare synlig i **Rapportfremdrift**-ledeteksten når rapportering på siste operasjon av produksjonsordren og varen for produksjonsordren er aktivert for lagerstyringsprosessene. 
+
+Det er to alternativer for å gi nummerskiltet
+- Brukeren velger et eksisterende nummerskilt i nummerskiltfeltet.
+- Nummerskiltet genereres automatisk fra en nummerserie og hentes som standard til nummerskiltfeltet.
+
+Alternativet for å få nummerskiltet genererert automatisk, konfigureres ved å velge alternativet **Generer nummerskilt** på siden **Konfigurer jobbkort for enheter**.

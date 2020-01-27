@@ -18,16 +18,14 @@ ms.search.region: Global
 ms.author: negudava
 ms.search.validFrom: 2019-03-04
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: 3bb61297e294aa3f2d06f542bebe29d7afae9c3b
-ms.sourcegitcommit: 9cc6a011bfdd1b0fe505760b6bf429eb6c65862a
+ms.openlocfilehash: 6c8a583a93c2ceb70d8c3b0e0047e2bf2047b56d
+ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "2832844"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "2898323"
 ---
 # <a name="extend-talent-with-power-apps-and-power-automate"></a>Utvide Talent med Power Apps og Power Automate
-
-[!include [banner](includes/banner.md)]
 
 Dette emnet beskriver noen eksempler på scenarier for utvidelsesmuligheter for Microsoft Dynamics 365 Talent som bruker Microsoft Power Apps og Microsoft Power Automate. Du kan importere løsningspakken som er tilknyttet hvert eksempel, i ditt Power Apps-miljø. Du kan deretter bruke pakkene som retningslinjer eller som utgangspunkt til å implementere scenarioene som gjelder for organisasjonen din.
 
@@ -108,7 +106,7 @@ Du kan bruke henvisningsappen for å legge til kandidater i en delt talentsamlin
 
 Du kan bygge inn denne appen i Employee Self-Service (ESS) for innsending av henvisninger, eller du kan bruke den som en hyperkobling i firmaportalen og kjøre som en frittstående app.
 
-Hvis du vil laste ned **henvisningsappen**, går du til [Dynamics 365 Talent-utvidelsesløsning: Henvisningsapp](http://www.microsoft.com/downloads/details.aspx?FamilyID=9a59c9d1-f8a1-4d4d-b768-cfc4f4eb9d0d) på Microsoft Download Center. Du kan importere denne appen og tilpasse den for å legge til flere funksjoner.
+Hvis du vil laste ned **henvisningsappen**, går du til [Dynamics 365 Talent-utvidelsesløsning: Henvisningsapp](https://www.microsoft.com/downloads/details.aspx?FamilyID=9a59c9d1-f8a1-4d4d-b768-cfc4f4eb9d0d) på Microsoft Download Center. Du kan importere denne appen og tilpasse den for å legge til flere funksjoner.
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 

@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: stuharg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: fd87a51b73deae64867b0420c00db9fce7c79336
-ms.sourcegitcommit: 295d940a345879b3dfc5991e387b91c7257019ea
+ms.openlocfilehash: 54259d3f5dfd8c8e1ff2caaadfac497cc0e133e0
+ms.sourcegitcommit: ef3a1d7527311d00b69a1072ae5eb021ce68034c
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2697135"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "2945841"
 ---
 # <a name="create-an-e-commerce-site"></a>Opprette et e-handelsområde
 
@@ -59,20 +59,16 @@ Når området er opprettet, kan du kontrollere at det er tilknyttet nettbutikken
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 
-[Oversikt over nettbutikk](online-store-overview.md)
+[Konfigurere domenenavnet](configure-your-domain-name.md)
 
 [Distribuere et nytt e-handelsområde](deploy-ecommerce-site.md)
 
 [Knytte et nettområde til en kanal](associate-site-online-store.md)
 
-[Konfigurere domenenavnet](configure-your-domain-name.md)
+[Administrere robots.txt-filer](manage-robots-txt-files.md)
+
+[Definere egendefinerte sider for brukerpålogginger](custom-pages-user-logins.md)
 
 [Legge til støtte for et innholdsleveringsnettverk (CDN)](add-cdn-support.md)
 
 [Aktivere stedsbasert butikkregistrering](enable-store-detection.md)
-
-[Definere egendefinerte sider for brukerpålogginger](custom-pages-user-logins.md)
-
-[Oversikt over redigering av startside](authoring-home-overview.md)
-
-[Legg til en ny områdeside](add-new-page.md)

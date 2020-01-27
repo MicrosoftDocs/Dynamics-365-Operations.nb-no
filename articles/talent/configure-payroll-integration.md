@@ -15,16 +15,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: ec1d14cb14ab709dfc1bead4be0785904efcce4e
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 075b2bdfa08bb190f66b6d60074e1263feedcf70
+ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2251045"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "2898545"
 ---
-# <a name="configure-the-payroll-integration-between-talent-and-dayforce"></a>Konfigurere lønnsintegrering mellom Talent og Dayforce
-
-[!include [banner](includes/banner.md)]
+# <a name="configure-payroll-integration-between-talent-and-dayforce"></a>Konfigurere lønnsintegrering mellom Talent og Dayforce
 
 Integrasjonen mellom Microsoft Dynamics 365 Talent og Ceridian Dayforce bruker flere konfigurasjonstrinn som er beskrevet i dette emnet. Du må konfigurere integreringen i både Talent og Dayforce før du kan behandle en lønnskjøring.
 

@@ -18,16 +18,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-01-09
 ms.dyn365.ops.version: AX 7.1.0, Talent October 2017 update
-ms.openlocfilehash: 2a245891e2e3e8c0eae4f28d0932776c3ee976dc
-ms.sourcegitcommit: 9cc6a011bfdd1b0fe505760b6bf429eb6c65862a
+ms.openlocfilehash: 0f4d2b8e5f78c5815c5ad7e5eae0d13ad7d15c12
+ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "2832821"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "2898695"
 ---
 # <a name="formalize-business-processes"></a>Formalisere forretningsprosesser
-
-[!include [banner](includes/banner.md)]
 
 Forretningsprosessfunksjonen lar deg opprette en mal for forretningsprosessen for forretningsprosesser som må fullføres i organisasjonen. Firmaet firmaet utfører for eksempel en personalevurdering hvert år. I så fall kan du opprette en mal som sporer alle aktivitetene som revisjonsprosessen består av. Denne malen kan deretter bidra til å sikre at alle oppgavene utføres hver gang det utføres en revisjon. Hvis aktivitetene må fullføres i en bestemt rekkefølge, hjelpe malen i tillegg å garantere at de gjøres i riktig rekkefølge.
 

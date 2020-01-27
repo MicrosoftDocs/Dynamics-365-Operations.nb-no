@@ -1,9 +1,9 @@
 ---
 title: Krav til størrelsesangivelse for maskinvare for lokale miljøer
 description: Dette emnet viser kravene til størrelsesangivelse for maskinvare for et lokalt miljø.
-author: kfend
+author: sericks007
 manager: AnnBe
-ms.date: 09/20/2019
+ms.date: 11/27/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: chwolf
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: 65f21d71c22d295902b968e6c18134e1577e01f2
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 8fa644f35a086af99cde74fd6a2062f9b59a6ff7
+ms.sourcegitcommit: dc953c316c396c45ddd596e25c2b358e39a95d84
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2812563"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2870270"
 ---
 # <a name="hardware-sizing-requirements-for-on-premises-environments"></a>Krav til størrelsesangivelse for maskinvare for lokale miljøer
 
@@ -137,7 +137,7 @@ For utgivelsen med generell tilgjengelighet, kan bare én SSRS-node distribueres
 
 ## <a name="environment-orchestrator"></a>Environment Orchestrator
 
-Tjenesten Orchestrator styrer distribusjonen og den tilknyttede kommunikasjonen med LCS. Denne tjenesten brukes som den primære Service Fabric-tjenesten og krever minst tre virtuelle maskiner. Denne tjenesten er plassert side om side med Service Fabric-orkestreringstjenester. Denne må også skaleres i henhold til toppbelastningen i klyngen. Hvis du vil ha mer informasjon, se [Betraktninger ved kapasitetsplanlegging for Service Fabric-klynger](/azure/service-fabric/service-fabric-cluster-capacity).
+Tjenesten Orchestrator styrer distribusjonen og den tilknyttede kommunikasjonen med LCS. Denne tjenesten brukes som den primære Service Fabric-tjenesten og krever minst tre virtuelle maskiner. Denne tjenesten er plassert side om side med Service Fabric-orkestreringstjenester. Denne må også skaleres i henhold til toppbelastningen i klyngen. For mer informasjon se [Planlegge og klargjøre distribusjonen av den frittstående Service Fabric-klyngen](https://docs.microsoft.com/azure/service-fabric/service-fabric-cluster-standalone-deployment-preparation).
 
 ## <a name="virtualization-and-oversubscription"></a>Virtualisering og overabonnering
 

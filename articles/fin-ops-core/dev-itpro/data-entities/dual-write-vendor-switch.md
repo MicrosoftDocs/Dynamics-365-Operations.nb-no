@@ -1,6 +1,6 @@
 ---
 title: Bytte mellom leverandørutforminger
-description: ''
+description: Dette emnet beskriver hvordan du bytter mellom integreringen av leverandørdata mellom Finance and Operations-apper og Common Data Service.
 author: RamaKrishnamoorthy
 manager: AnnBe
 ms.date: 09/20/2019
@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-09-20
-ms.openlocfilehash: 4e97ff0b0e6195b5e3703e15a0bb0de7644ef8d1
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 204d788e72e79e7acf744d24cbeacb0f9b47da7d
+ms.sourcegitcommit: 3306e451f04df01c51d8d332306b135d8ae1e254
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2772370"
+ms.lasthandoff: 12/09/2019
+ms.locfileid: "2902731"
 ---
 # <a name="switch-between-vendor-designs"></a>Bytte mellom leverandørutforminger
 
@@ -34,11 +34,11 @@ ms.locfileid: "2772370"
 
 Hvis du vil bruke andre Dynamics 365-apper for leverandørkontroll, og du vil isolere leverandørinformasjon fra kunder, kan du bruke denne grunnleggende leverandørutformingen.  
 
-![Grunnleggende leverandørflyt](media/dual-write-switch-1.png)
+![Grunnleggende leverandørflyt](media/dual-write-vendor-data-flow.png)
  
 Hvis du bruker andre Dynamics 365-apper for leverandørkontroll, og du vil fortsatt bruke **konto**-enheten til å lagre leverandørinformasjon, kan du bruke denne utvidede leverandørutformingen. I denne utformingen blir utvidet leverandørinformasjon som leverandør på vent-status og leverandørprofil lagret i **leverandører**-enheten i Common Data Service. 
 
-![Utvidet flyt for leverandør](media/dual-write-switch-2.png)
+![Utvidet flyt for leverandør](media/dual-write-vendor-detail.jpg)
  
 Følg fremgangsmåten nedenfor for å bruke den utvidede leverandørutformingen: 
  
@@ -60,5 +60,5 @@ Følg fremgangsmåten nedenfor for å bruke den utvidede leverandørutformingen:
     4. Du kan konfigurere arbeidsflytene som sanntids- eller bakgrunns-arbeidsflyter basert på dine behov. 
         > [!div class="mx-imgBorder"]
         > ![Konverter til en bakgrunnsarbeidsflyt](media/dual-write-switch-8.png)
-    5. Aktiver arbeidsflytene du opprettet for **konto**- og **leverandør**-enhetene for å begynne å bruke Customer Engagement **Konto**-enheten for lagring av leverandørinformasjon. 
+    5. Aktiver arbeidsflytene du opprettet for **konto**- og **leverandør**-enhetene for å begynne å bruke **Konto**-enheten for lagring av leverandørinformasjon. 
  
