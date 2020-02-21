@@ -1,5 +1,5 @@
 ---
-title: Dokumentasjon for programmet Finance and Operations
+title: Dokumentasjon for Finance and Operations-app
 description: Dokumentasjon for Finance and Operations-apper.
 author: robinarh
 manager: AnnBe
@@ -17,20 +17,20 @@ ms.search.region: Global
 ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 89139c149146b64125370c3840f8d3011b92e067
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 4249f2ec09e6742c843122c189cc7db7f72d1146
+ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2770925"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "3005546"
 ---
-# <a name="finance-and-operations-application-documentation"></a>Dokumentasjon for programmet Finance and Operations
+# <a name="finance-and-operations-application-documentation"></a>Dokumentasjon for Finance and Operations-app
 
 [!include [banner](includes/banner.md)]
 
 Finn ut hvordan du får Finance and Operations-appene til å fungere i din virksomhet ved hjelp av ressursene i dette emnet. Dermed kan du finne enestående innhold for sluttbrukere, utviklere og IT-teknikere. 
 
-Mye av dette innholdet gjelder også for de tilknyttede produktene: Dynamics 365 Retail og Talent. 
+Mye av dette innholdet gjelder også for de tilknyttede produktene: Dynamics 365 Commerce og Dynamics 365 Human Resources. 
 
 <table>
 <colgroup>
@@ -56,7 +56,7 @@ Mye av dette innholdet gjelder også for de tilknyttede produktene: Dynamics 365
 <p><a href="../dev-itpro/migration-upgrade/versions-update-policy.md">Policy for programvarelivssyklus: sky</a></p>
 <p><a href="../dev-itpro/migration-upgrade/on-prem-version-update-policy.md">Policy for programvarelivssyklus: lokalt</a></p>
 <p><a href="get-started/public-preview-releases.md">Serviceoppdateringer for Standard og første versjon</a></p>
-<p><a href="get-started/whats-new-changed.md">Hva er nytt eller endret?</a></p>
+<p><a href="get-started/whats-new-changed.md">Nyheter eller endringer</a></p>
 <p><a href="../dev-itpro/migration-upgrade/upgrade-home-page.md">Oppgraderinger, oppdateringer og hurtigreparasjoner</a></p>
 <p><a href="../dev-itpro/deployment/apply-deployable-package-system.md">Ta i bruk oppdateringer i skymiljøer</a></p>
 <p><a href="../dev-itpro/lifecycle-services/configure-service-updates.md">Konfigurere serviceoppdateringer</a></p>
@@ -84,9 +84,9 @@ Mye av dette innholdet gjelder også for de tilknyttede produktene: Dynamics 365
 <p><a href="../dev-itpro/lcs-solutions/country-region.md">Regionale forskriftsmessige funksjoner</a></p>
 
 <h3><a href="hr/hr-landing-page.md">Personale</a></h3>
-<p><a href="../../talent/manage-benefit-program.md">Fordeler</a></p>
-<p><a href="../../talent/performance-management-overview.md">Utvikling og opplæring for ansatte</a></p>
-<p><a href="../../talent/questionnaires.md">Spørreskjema</a></p>
+<p><a href="../../human-resources/hr-benefits-manage-program.md">Fordeler</a></p>
+<p><a href="../../human-resources/hr-develop-performance-management-overview.md">Utvikling og opplæring for ansatte</a></p>
+<p><a href="../../human-resources/hr-learning-questionnaires.md">Spørreskjemaer</a></p>
 <p><a href="hr/manage-recruiting-process.md">Rekruttering</a></p>
 <p><a href="hr/localizations/noam-usa-payroll.md">Amerikansk lønn</a></p>
 
@@ -129,16 +129,17 @@ Mye av dette innholdet gjelder også for de tilknyttede produktene: Dynamics 365
 </td>
 <td>
 <h3>Relaterte produkter</h3>
-<h4><a href="../../retail/index.md">Dynamics 365 Retail</a></h4>
+<h4><a href="../../retail/index.md">Dynamics 365 Commerce</a></h4>
 <p><a href="../../retail/call-center-functionality.md">Telefonsenter</p>
 <p><a href="../../retail/define-maintain-retail-channels.md">Kanaloppsett og -behandling</p>
 <p><a href="../../retail/retail-peripherals-overview.md">MPOS og Cloud POS</p>
-<p><a href="../../retail/dev-itpro/dev-retail-home-page.md">Utvikling og administrasjon av Retail</p>
+<p><a href="../../retail/dev-itpro/dev-retail-home-page.md">Utvikling og administrasjon av Commerce</p>
 
-<h4><a href="../../talent/index.yml">Dynamics 365 Talent</a></h4>
-<p><a href="../../talent/manage-benefit-program.md">Fordeler</a></p>
-<p><a href="../../talent/performance-management-overview.md">Utvikling og opplæring for ansatte</a></p>
-<p><a href="../../talent/questionnaires.md">Spørreskjema</a></p>
+<h4><a href="../../human-resources/hr-welcome.md">Dynamics 365 Human Resources</a></h4>
+<p><a href="../../human-resources/hr-admin-overview.md">Administratorveiledning</a></p>
+<p><a href="../../human-resources/hr-developer-overview.md">Utviklerveiledning</a></p>
+<p><a href="../../human-resources/hr-hrpro-overview.md">Brukerveiledning</a></p>
+
 
 </td>
 </tr>

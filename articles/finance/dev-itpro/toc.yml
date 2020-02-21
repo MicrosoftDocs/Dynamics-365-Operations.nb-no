@@ -1,6 +1,6 @@
 - name: Utvikling og administrasjon for Finance and Operations
   href: ../../dev-itpro/index.md?toc=/dynamics365/unified-operations/financials/toc.json
-- name: Hva er nytt eller endret
+- name: Nyheter eller endringer
   items:
     - name: Forhåndsvisningsfunksjoner i Platform Update 30 (november 2019)
       href: ../../fin-and-ops/get-started/whats-new-platform-update-30.md?toc=/dynamics365/unified-operations/financials/toc.json
@@ -76,7 +76,7 @@
       href: ../../dev-itpro/data-entities/integration-overview.md?toc=/dynamics365/unified-operations/financials/toc.json
     - name: API-er for dataintegrering
       items:
-        - name: REST API for databehandlingspakke
+        - name: REST-API for databehandlingspakke
           href: ../../dev-itpro/data-entities/data-management-api.md?toc=/dynamics365/unified-operations/financials/toc.json
         - name: Tjenestesluttpunkter
           items:
@@ -120,7 +120,7 @@
                   href: ../../dev-itpro/data-entities/dual-write-overview.md?toc=/dynamics365/unified-operations/financials/toc.json
                 - name: Organisasjonshierarki på Common Data Service
                   href: ../../dev-itpro/data-entities/dual-write-organization.md?toc=/dynamics365/unified-operations/financials/toc.json
-                - name: Firmabegrep i Common Data Service-er
+                - name: Firmabegrep i Common Data Services
                   href: ../../dev-itpro/data-entities/dual-write-company.md?toc=/dynamics365/unified-operations/financials/toc.json
                 - name: Integrert original for kunde
                   href: ../../dev-itpro/data-entities/dual-write-customer.md?toc=/dynamics365/unified-operations/financials/toc.json
@@ -150,13 +150,13 @@
                       href: ../../supply-chain/sales-marketing/sales-quotation-template-mapping-sales-fin.md?toc=/dynamics365/unified-operations/financials/toc.json
                     - name: Synkronisering av salgsordrer direkte mellom Sales og Finance and Operations
                       href: ../../supply-chain/sales-marketing/sales-order-template-mapping-direct-two-ways.md?toc=/dynamics365/unified-operations/financials/toc.json
-                    - name: Synkronisere salgsfakturahoder og -linjer direkte fra Finance and Operations til Sales
+                    - name: Synkronisere fakturahoder og -linjer direkte fra Finance and Operations til Sales
                       href: ../../supply-chain/sales-marketing/sales-invoice-template-mapping-direct.md?toc=/dynamics365/unified-operations/financials/toc.json
                 - name: Konfigurere integrering med Field Service
                   items:
                     - name: Oversikt over å konfigurere integrering med Field Service
                       href: ../../supply-chain/sales-marketing/field-service.md?toc=/dynamics365/unified-operations/financials/toc.json
-                    - name: "Synkronisere produkter\_i Finance and Operations til produkter i Field Service"
+                    - name: Synkronisere produkter i Finance and Operations til produkter i Field Service
                       href: ../../supply-chain/sales-marketing/field-service-product.md?toc=/dynamics365/unified-operations/financials/toc.json
                     - name: Synkronisere arbeidsordrer i Field Service til salgsordrer i Finance and Operations
                       href: ../../supply-chain/sales-marketing/field-service-work-order.md?toc=/dynamics365/unified-operations/financials/toc.json
@@ -332,7 +332,7 @@
           href: ../../dev-itpro/deployment/arm-onboarding.md?toc=/dynamics365/unified-operations/financials/toc.json
         - name: Azure ExpressRoute og Finance and Operations
           href: ../../dev-itpro/deployment/expressroute.md?toc=/dynamics365/unified-operations/financials/toc.json
-        - name: Arkitektur for Finance and Operations
+        - name: Finance and Operations-arkitektur
           href: ../../fin-and-ops/imp-lifecycle/architecture-overview.md?toc=/dynamics365/unified-operations/financials/toc.json
         - name: Ta i bruk oppdateringer i skymiljøer
           href: ../../dev-itpro/deployment/apply-deployable-package-system.md?toc=/dynamics365/unified-operations/financials/toc.json
@@ -472,7 +472,7 @@
           href: ../../dev-itpro/dev-tools/metadata-search-visual-studio.md?toc=/dynamics365/unified-operations/financials/toc.json
         - name: Modeller og pakker
           href: ../../dev-itpro/dev-tools/models.md?toc=/dynamics365/unified-operations/financials/toc.json
-        - name: Prosjekttype i Finance and Operations
+        - name: Prosjekttype for Finance and Operations
           href: ../../dev-itpro/dev-tools/projects.md?toc=/dynamics365/unified-operations/financials/toc.json
         - name: Verktøytillegg for Visual Studio
           href: ../../dev-itpro/dev-tools/developer-tools-add-ins.md?toc=/dynamics365/unified-operations/financials/toc.json
@@ -672,9 +672,9 @@
               href: ../../dev-itpro/extensibility/customize-model-elements-extensions.md?toc=/dynamics365/unified-operations/financials/toc.json
             - name: Tilpasse via utvidelse og overlag
               href: ../../dev-itpro/extensibility/customization-overlayering-extensions.md?toc=/dynamics365/unified-operations/financials/toc.json
-        - name: Hva er nytt
+        - name: Nyheter
           items:
-            - name: Hva er nytt eller endret for utvidelsesmulighet
+            - name: Nyheter eller endringer for utvidelsesmulighet
               href: ../../dev-itpro/extensibility/extensibility-new.md?toc=/dynamics365/unified-operations/financials/toc.json
             - name: Endringer i utvidelsesmulighet versjon 10.0.3
               href: ../../dev-itpro/extensibility/extensibility-changes-10-3.md?toc=/dynamics365/unified-operations/financials/toc.json
@@ -862,7 +862,7 @@
           href: ../../dev-itpro/gdpr/gdpr-extend-person-search-report.md?toc=/dynamics365/unified-operations/financials/toc.json
         - name: Administrere tilgang til sensitive data
           href: ../../dev-itpro/gdpr/gdpr-auditing-sensitive-data.md?toc=/dynamics365/unified-operations/financials/toc.json
-        - name: Svare på forespørsler om personlige data ved hjelp av Talent
+        - name: Svare på forespørsler om personlige data ved hjelp av Personale
           href: ../../dev-itpro/gdpr/respond-dsr-request-talent.md?toc=/dynamics365/unified-operations/financials/toc.json
         - name: Svare på forespørsler om personlige data i AX 2012
           href: ../../dev-itpro/gdpr/gdpr-ax2012.md?toc=/dynamics365/unified-operations/financials/toc.json
@@ -878,7 +878,7 @@
           href: ../../dev-itpro/lifecycle-services/lcs-works-lcs.md?toc=/dynamics365/unified-operations/financials/toc.json
         - name: LCS for partnere
           href: ../../dev-itpro/lifecycle-services/getting-started-lcs.md?toc=/dynamics365/unified-operations/financials/toc.json
-        - name: Hva er nytt
+        - name: Nyheter
           href: ../../dev-itpro/lifecycle-services/whats-new-lcs.md?toc=/dynamics365/unified-operations/financials/toc.json
         - name: Kjente problemer
           href: ../../dev-itpro/lifecycle-services/known-issues.md?toc=/dynamics365/unified-operations/financials/toc.json
@@ -1210,19 +1210,19 @@
       href: ../../dev-itpro/lifecycle-services/lcs-support.md?toc=/dynamics365/unified-operations/financials/toc.json
     - name: Oversikt over Dynamics 365-støtte
       href: 'https://docs.microsoft.com/power-platform/admin/support-overview?toc=/dynamics365/unified-operations/retail/toc.json&bc=/dynamics365/unified-operations/breadcrumb/toc.json'
-    - name: Få støtte for Finance and Operations styrt av 21Vianet i Kina
+    - name: Få støtte for Finance and Operations som styres av 21Vianet i Kina
       href: ../../dev-itpro/lifecycle-services/21vianet-support.md?toc=/dynamics365/unified-operations/financials/toc.json
     - name: Loggføre en henvendelse om Premier-kundestøtte
       href: ../../dev-itpro/lifecycle-services/premier-support.md?toc=/dynamics365/unified-operations/financials/toc.json
     - name: Sende forespørsler til Dynamics Service Engineering-teamet
       href: ../../dev-itpro/lifecycle-services/submit-request-dynamics-service-engineering-team.md?toc=/dynamics365/unified-operations/financials/toc.json
-    - name: Konfigurere teknisk støtte for Finance and Operations
+    - name: Konfigurere kundestøtte for Finance and Operations
       href: ../../dev-itpro/lifecycle-services/support-experience.md?toc=/dynamics365/unified-operations/financials/toc.json
     - name: Vanlige spørsmål om vinduet Planlagt vedlikehold
       href: ../../dev-itpro/lifecycle-services/planned-maintenance-window-faq.md?toc=/dynamics365/unified-operations/financials/toc.json
     - name: Skyoperasjoner og -betjening
       href: ../../dev-itpro/lifecycle-services/cloud-operations-servicing.md?toc=/dynamics365/unified-operations/financials/toc.json
-    - name: Administrere støtteopplevelser for Finance and Operations
+    - name: Behandle kundestøtteopplevelser for Finance and Operations
       href: ../../dev-itpro/lifecycle-services/cloud-powered-support-lcs.md?toc=/dynamics365/unified-operations/financials/toc.json
 - name: Systemadministrasjon
   items:
