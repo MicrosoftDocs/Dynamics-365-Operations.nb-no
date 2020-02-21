@@ -1,0 +1,8 @@
+## <a name="product-category-hierarchies-to-msdyn_productcategoryhierarchies"></a><span data-ttu-id="dfdfe-101">Produktkategorihierarkier til msdyn_productcategoryhierarchies</span><span class="sxs-lookup"><span data-stu-id="dfdfe-101">Product category hierarchies to msdyn_productcategoryhierarchies</span></span>
+
+<span data-ttu-id="dfdfe-102">Denne malen synkroniserer data mellom Finance and Operations-apper og Common Data Service.</span><span class="sxs-lookup"><span data-stu-id="dfdfe-102">This template synchronizes data between Finance and Operations apps and Common Data Service.</span></span>
+
+<span data-ttu-id="dfdfe-103">Finance and Operations-felt</span><span class="sxs-lookup"><span data-stu-id="dfdfe-103">Finance and Operations field</span></span> | <span data-ttu-id="dfdfe-104">Tilordningstype</span><span class="sxs-lookup"><span data-stu-id="dfdfe-104">Map type</span></span> | <span data-ttu-id="dfdfe-105">Annet Dynamics 365-felt</span><span class="sxs-lookup"><span data-stu-id="dfdfe-105">Other Dynamics 365 field</span></span> | <span data-ttu-id="dfdfe-106">Standardverdi</span><span class="sxs-lookup"><span data-stu-id="dfdfe-106">Default value</span></span>
+---|---|---|---
+<span data-ttu-id="dfdfe-107">HIERARCHYNAME</span><span class="sxs-lookup"><span data-stu-id="dfdfe-107">HIERARCHYNAME</span></span> | = | <span data-ttu-id="dfdfe-108">msdyn_name</span><span class="sxs-lookup"><span data-stu-id="dfdfe-108">msdyn_name</span></span> | 
+<span data-ttu-id="dfdfe-109">HIERARCHYDESCRIPTION</span><span class="sxs-lookup"><span data-stu-id="dfdfe-109">HIERARCHYDESCRIPTION</span></span> | = | <span data-ttu-id="dfdfe-110">msdyn_description</span><span class="sxs-lookup"><span data-stu-id="dfdfe-110">msdyn_description</span></span> | 

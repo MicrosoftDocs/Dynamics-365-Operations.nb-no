@@ -1,0 +1,7 @@
+## <a name="styles-to-msdyn_productstyles"></a><span data-ttu-id="80e3c-101">Stiler til msdyn_productstyles</span><span class="sxs-lookup"><span data-stu-id="80e3c-101">Styles to msdyn_productstyles</span></span>
+
+<span data-ttu-id="80e3c-102">Denne malen synkroniserer data mellom Finance and Operations-apper og Common Data Service.</span><span class="sxs-lookup"><span data-stu-id="80e3c-102">This template synchronizes data between Finance and Operations apps and Common Data Service.</span></span>
+
+<span data-ttu-id="80e3c-103">Finance and Operations-felt</span><span class="sxs-lookup"><span data-stu-id="80e3c-103">Finance and Operations field</span></span> | <span data-ttu-id="80e3c-104">Tilordningstype</span><span class="sxs-lookup"><span data-stu-id="80e3c-104">Map type</span></span> | <span data-ttu-id="80e3c-105">Annet Dynamics 365-felt</span><span class="sxs-lookup"><span data-stu-id="80e3c-105">Other Dynamics 365 field</span></span> | <span data-ttu-id="80e3c-106">Standardverdi</span><span class="sxs-lookup"><span data-stu-id="80e3c-106">Default value</span></span>
+---|---|---|---
+<span data-ttu-id="80e3c-107">STYLEID</span><span class="sxs-lookup"><span data-stu-id="80e3c-107">STYLEID</span></span> | >> | <span data-ttu-id="80e3c-108">msdyn_productstyle</span><span class="sxs-lookup"><span data-stu-id="80e3c-108">msdyn_productstyle</span></span> | 

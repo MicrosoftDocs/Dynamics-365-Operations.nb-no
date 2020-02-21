@@ -1,0 +1,8 @@
+## <a name="sales-tax-groups-to-msdyn_taxgroups"></a><span data-ttu-id="4b109-101">Mva-grupper til msdyn_taxgroups</span><span class="sxs-lookup"><span data-stu-id="4b109-101">Sales tax groups to msdyn_taxgroups</span></span>
+
+<span data-ttu-id="4b109-102">Denne malen synkroniserer data mellom Finance and Operations-apper og Common Data Service.</span><span class="sxs-lookup"><span data-stu-id="4b109-102">This template synchronizes data between Finance and Operations apps and Common Data Service.</span></span>
+
+<span data-ttu-id="4b109-103">Finance and Operations-felt</span><span class="sxs-lookup"><span data-stu-id="4b109-103">Finance and Operations field</span></span> | <span data-ttu-id="4b109-104">Tilordningstype</span><span class="sxs-lookup"><span data-stu-id="4b109-104">Map type</span></span> | <span data-ttu-id="4b109-105">Annet Dynamics 365-felt</span><span class="sxs-lookup"><span data-stu-id="4b109-105">Other Dynamics 365 field</span></span> | <span data-ttu-id="4b109-106">Standardverdi</span><span class="sxs-lookup"><span data-stu-id="4b109-106">Default value</span></span>
+---|---|---|---
+<span data-ttu-id="4b109-107">TAXGROUPCODE</span><span class="sxs-lookup"><span data-stu-id="4b109-107">TAXGROUPCODE</span></span> | = | <span data-ttu-id="4b109-108">msdyn_name</span><span class="sxs-lookup"><span data-stu-id="4b109-108">msdyn_name</span></span> | 
+<span data-ttu-id="4b109-109">DESCRIPTION</span><span class="sxs-lookup"><span data-stu-id="4b109-109">DESCRIPTION</span></span> | = | <span data-ttu-id="4b109-110">msdyn_description</span><span class="sxs-lookup"><span data-stu-id="4b109-110">msdyn_description</span></span> | 

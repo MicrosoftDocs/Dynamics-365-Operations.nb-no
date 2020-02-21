@@ -1,0 +1,8 @@
+## <a name="payment-days-cds-to-msdyn_paymentdays"></a><span data-ttu-id="e77da-101">CDS for betalingsdager til msdyn_paymentdays</span><span class="sxs-lookup"><span data-stu-id="e77da-101">Payment days CDS to msdyn_paymentdays</span></span>
+
+<span data-ttu-id="e77da-102">Denne malen synkroniserer data mellom Finance and Operations-apper og Common Data Service.</span><span class="sxs-lookup"><span data-stu-id="e77da-102">This template synchronizes data between Finance and Operations apps and Common Data Service.</span></span>
+
+<span data-ttu-id="e77da-103">Finance and Operations-felt</span><span class="sxs-lookup"><span data-stu-id="e77da-103">Finance and Operations field</span></span> | <span data-ttu-id="e77da-104">Tilordningstype</span><span class="sxs-lookup"><span data-stu-id="e77da-104">Map type</span></span> | <span data-ttu-id="e77da-105">Annet Dynamics 365-felt</span><span class="sxs-lookup"><span data-stu-id="e77da-105">Other Dynamics 365 field</span></span> | <span data-ttu-id="e77da-106">Standardverdi</span><span class="sxs-lookup"><span data-stu-id="e77da-106">Default value</span></span>
+---|---|---|---
+<span data-ttu-id="e77da-107">NAME</span><span class="sxs-lookup"><span data-stu-id="e77da-107">NAME</span></span> | = | <span data-ttu-id="e77da-108">msdyn_name</span><span class="sxs-lookup"><span data-stu-id="e77da-108">msdyn_name</span></span> | 
+<span data-ttu-id="e77da-109">DESCRIPTION</span><span class="sxs-lookup"><span data-stu-id="e77da-109">DESCRIPTION</span></span> | = | <span data-ttu-id="e77da-110">msdyn_description</span><span class="sxs-lookup"><span data-stu-id="e77da-110">msdyn_description</span></span> | 

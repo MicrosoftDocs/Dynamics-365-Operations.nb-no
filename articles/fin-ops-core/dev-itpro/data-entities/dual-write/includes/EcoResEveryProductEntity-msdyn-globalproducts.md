@@ -1,0 +1,8 @@
+## <a name="all-products-to-msdyn_globalproducts"></a><span data-ttu-id="77867-101">Alle produkter til msdyn_globalproducts</span><span class="sxs-lookup"><span data-stu-id="77867-101">All products to msdyn_globalproducts</span></span>
+
+<span data-ttu-id="77867-102">Denne malen synkroniserer data mellom Finance and Operations-apper og Common Data Service.</span><span class="sxs-lookup"><span data-stu-id="77867-102">This template synchronizes data between Finance and Operations apps and Common Data Service.</span></span>
+
+<span data-ttu-id="77867-103">Finance and Operations-felt</span><span class="sxs-lookup"><span data-stu-id="77867-103">Finance and Operations field</span></span> | <span data-ttu-id="77867-104">Tilordningstype</span><span class="sxs-lookup"><span data-stu-id="77867-104">Map type</span></span> | <span data-ttu-id="77867-105">Annet Dynamics 365-felt</span><span class="sxs-lookup"><span data-stu-id="77867-105">Other Dynamics 365 field</span></span> | <span data-ttu-id="77867-106">Standardverdi</span><span class="sxs-lookup"><span data-stu-id="77867-106">Default value</span></span>
+---|---|---|---
+<span data-ttu-id="77867-107">PRODUCTNAME</span><span class="sxs-lookup"><span data-stu-id="77867-107">PRODUCTNAME</span></span> | >> | <span data-ttu-id="77867-108">msdyn_productname</span><span class="sxs-lookup"><span data-stu-id="77867-108">msdyn_productname</span></span> | 
+<span data-ttu-id="77867-109">PRODUCTNUMBER</span><span class="sxs-lookup"><span data-stu-id="77867-109">PRODUCTNUMBER</span></span> | >> | <span data-ttu-id="77867-110">msdyn_productnumber</span><span class="sxs-lookup"><span data-stu-id="77867-110">msdyn_productnumber</span></span> | 

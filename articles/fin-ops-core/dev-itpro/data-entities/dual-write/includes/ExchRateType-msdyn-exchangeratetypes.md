@@ -1,0 +1,8 @@
+## <a name="exchange-rate-type-to-msdyn_exchangeratetypes"></a><span data-ttu-id="b96b7-101">Valutakurstype til msdyn_exchangeratetypes</span><span class="sxs-lookup"><span data-stu-id="b96b7-101">Exchange rate type to msdyn_exchangeratetypes</span></span>
+
+<span data-ttu-id="b96b7-102">Denne malen synkroniserer data mellom Finance and Operations-apper og Common Data Service.</span><span class="sxs-lookup"><span data-stu-id="b96b7-102">This template synchronizes data between Finance and Operations apps and Common Data Service.</span></span>
+
+<span data-ttu-id="b96b7-103">Finance and Operations-felt</span><span class="sxs-lookup"><span data-stu-id="b96b7-103">Finance and Operations field</span></span> | <span data-ttu-id="b96b7-104">Tilordningstype</span><span class="sxs-lookup"><span data-stu-id="b96b7-104">Map type</span></span> | <span data-ttu-id="b96b7-105">Annet Dynamics 365-felt</span><span class="sxs-lookup"><span data-stu-id="b96b7-105">Other Dynamics 365 field</span></span> | <span data-ttu-id="b96b7-106">Standardverdi</span><span class="sxs-lookup"><span data-stu-id="b96b7-106">Default value</span></span>
+---|---|---|---
+<span data-ttu-id="b96b7-107">NAME</span><span class="sxs-lookup"><span data-stu-id="b96b7-107">NAME</span></span> | = | <span data-ttu-id="b96b7-108">msdyn_name</span><span class="sxs-lookup"><span data-stu-id="b96b7-108">msdyn_name</span></span> | 
+<span data-ttu-id="b96b7-109">DESCRIPTION</span><span class="sxs-lookup"><span data-stu-id="b96b7-109">DESCRIPTION</span></span> | = | <span data-ttu-id="b96b7-110">msdyn_description</span><span class="sxs-lookup"><span data-stu-id="b96b7-110">msdyn_description</span></span> | 
