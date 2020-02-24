@@ -17,16 +17,16 @@ ms.search.region: Global
 ms.author: StuHarg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 642cb5c145dec68631eb9ab27d926ba8ab75c59b
-ms.sourcegitcommit: 36857283d70664742c8c04f426b231c42daf4ceb
+ms.openlocfilehash: c2235510c7ef386d66fe3b137f8e791d14706379
+ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "2914916"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "3001835"
 ---
 # <a name="customize-site-navigation"></a>Tilpasse områdenavigering
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 Dette emnet beskriver hvordan du oppretter et tilpasset elektronisk navigasjonshierarki for å organisere produktene for weblesing på Microsoft Dynamics 365 Commerce-området.
@@ -35,11 +35,11 @@ Dette emnet beskriver hvordan du oppretter et tilpasset elektronisk navigasjonsh
 
 Nettbutikkfasader lar vanligvis kunder oppdage og bla gjennom produkter ved å navigere gjennom produktkategorier. Denne funksjonen finnes vanligvis ved hjelp av kategorier øverst på siden eller ved hjelp av et navigasjonsfelt på venstre side. I Dynamics 365 Commerce kan du opprette og behandle hierarkistrukturen for kategorinavigasjonen og produktene som er inkludert i de ulike kategoriene.
 
-## <a name="create-a-retail-channel-navigation-hierarchy"></a>Opprette et navigasjonshierarki for detaljhandelskanal
+## <a name="create-a-channel-navigation-hierarchy"></a>Opprette et kanalnavigasjonshierarki
 
-Følg denne fremgangsmåten for å opprette et navigasjonshierarki for detaljhandelskanal.
+Følg denne fremgangsmåten for å opprette et kanalnavigasjonshierarki.
 
-1. Gå til **Detaljhandel \> > Produkter og kategorier \> Kategori- og produktstyring**.
+1. Gå til **Detaljhandel og handel \> Produkter og kategorier \> Kategori- og produktadministrering**.
 1. Velg **Kategorihierarkier**, og velg deretter **Ny**.
 1. Gi hierarkiet et navn.
 
@@ -57,28 +57,28 @@ Som standard vises kategoriene du definerer, i alfabetisk rekkefølge på områd
 
 ## <a name="assign-a-category-hierarchy-type"></a>Tilordne en kategorihierarkitype
 
-1. Gå til **Detaljhandel \> > Produkter og kategorier \> Kategori- og produktstyring**.
+1. Gå til **Detaljhandel og handel \> Produkter og kategorier \> Kategori- og produktadministrering**.
 1. Velg **Kategorihierarkier**.
 1. I handlingsruten, i kategorien **Kategorihierarki** i gruppen **Oppsett** velger du **Tilknytt hierarkitype**.
 1. Velg **Ny**.
-1. I feltet **Kategorihierarkitype** velger du **Navigasjonshierarki for detaljhandelskanal**.
+1. I feltet **Kategorihierarkitype** velger du **Kanalnavigasjonshierarki**.
 1. I feltet **Kategorihierarki** velger du kanalnavigeringshierarkiet du opprettet tidligere.
 
 ## <a name="publish-new-or-updated-navigation-hierarchies"></a>Publisere nye eller oppdaterte navigasjonshierarkier
 
 Følg denne fremgangsmåten for å gjøre navigasjonshierarkiet tilgjengelig for nettbutikkfasaden.
 
-1. Gå til **Detaljhandel \> Kanaloppsett \> Kanalkategorier og produktattributter**.
+1. Gå til **Detaljhandel og handel \> Kanaloppsett \> Kanalkategorier og produktattributter**.
 1. Velg nettbutikken i treet til venstre.
 1. Velg **Publiser kanaloppdateringer**.
-1. Gå til **Detaljhandel \> IT for detaljhandel \> Distribusjonsplan**.
+1. Gå til **Detaljhandel og handel \> IT for detaljhandel og handel \> Distribusjonsplan**.
 1. Finn og velg **Jobb 1040** i listen.
 1. Velg **Kjør nå**.
 1. Gjenta trinn 5 og 6 for jobbene 1070 og 1150.
 
 ## <a name="show-categories-on-your-site"></a>Vise kategorier på området
 
-Hvis du vil vise kategorihierarkiet i nettbutikkfasaden, må du legge til navigasjonsmenymodulen på riktig sted i en mal eller et fragment. Navigasjonsmenymodulen vil deretter vise navigasjonshierarkiet, forutsatt at du har publisert detaljhandelsnavigasjonshierarkiet til kanalen som området er bundet til.
+Hvis du vil vise kategorihierarkiet i nettbutikkfasaden, må du legge til navigasjonsmenymodulen på riktig sted i en mal eller et fragment. Navigasjonsmenymodulen vil deretter vise navigasjonshierarkiet, forutsatt at du har publisert navigasjonshierarkiet til kanalen som området er bundet til.
 
 > [!NOTE]
 > Navigasjonsmenymodulen som er inkludert i startpakken for butikk, gjør at brukere bare kan navigere til kategorier som ikke har underkategorier. Hvis kundene skal kunne navigere til kategorier som har underkategorier, må du tilpasse navigasjonsmenymodulen.

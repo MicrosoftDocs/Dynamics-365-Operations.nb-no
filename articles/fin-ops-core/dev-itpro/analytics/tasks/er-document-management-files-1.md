@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 29c13e729223a98d7f45244c5a796bca6e3baaf3
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: b82b1719990caeb1b383ab806a3e09a4c4a6e41a
+ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2550839"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "3026140"
 ---
 # <a name="er-use-document-management-files-in-format-outputs-part-1---prepare-data-model"></a>ER Bruke dokumentbehandlingsfiler i formatutdata (del 1 - Klargjøre datamodell)
 
@@ -61,7 +61,7 @@ Denne fremgangsmåten gjelder for en funksjon som ble lagt til i Dynamics 365 fo
 11. Velg Kundefakturamodell i treet.
 
 ## <a name="create-the-derived-model-to-support-access-to-the-document-management-files"></a>Opprett den avledede modellen for å støtte tilgang til dokumentbehandlingsfilene
-    * Du vil opprette vår egen konfigurasjon for kundefakturamodellen og avlede den fra konfigurasjonen som leveres av Microsoft. Du vil bruke denne konfigurasjonen til å implementere tilgang til dokumentbehandlingsfilene, og gjøre dem tilgjengelige for elektroniske dokumenter som du vil opprette basert på denne modellen.  
+Du vil opprette vår egen konfigurasjon for kundefakturamodellen og avlede den fra konfigurasjonen som leveres av Microsoft. Du vil bruke denne konfigurasjonen til å implementere tilgang til dokumentbehandlingsfilene, og gjøre dem tilgjengelige for elektroniske dokumenter som du vil opprette basert på denne modellen.  
 1. Klikk Opprett konfigurasjon for å åpne nedtrekksdialogen.
 2. I Ny-feltet angir du Avled fra navnet: Kundefakturamodell, Microsoft.
 3. I Navn-feltet skriver du inn Kundefakturamodell (egendefinert).

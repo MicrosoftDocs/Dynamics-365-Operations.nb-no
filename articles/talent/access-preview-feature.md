@@ -1,12 +1,12 @@
 ---
 title: Behandle funksjoner
 description: Dette emnet beskriver hvordan en administrator kan aktivere forhåndsvisningsfunksjonene i Microsoft Dynamics 365 Talent, og det viser hvilke funksjoner som er aktivert for forhåndsvisning.
-author: tracykeya
+author: andreabichsel
 manager: AnnBe
-ms.date: 05/30/2019
+ms.date: 02/03/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
+ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -15,21 +15,21 @@ ms.search.scope: Talent, Core
 ms.custom: 7521
 ms.assetid: 3b953d5f-6325-4c9e-8b9b-6ab0458a73f8
 ms.search.region: Global
-ms.author: trkeya
-ms.search.validFrom: 2018-04-30
-ms.dyn365.ops.version: AX 7.1.0, Talent April 2019 update
-ms.openlocfilehash: 9f1fb4b929660bbe9018fb98169b3cfddcaec547
-ms.sourcegitcommit: 9cc6a011bfdd1b0fe505760b6bf429eb6c65862a
+ms.author: anbichse
+ms.search.validFrom: 2020-02-03
+ms.dyn365.ops.version: AX 7.1.0, Talent
+ms.openlocfilehash: d818e9e04ce88e5ab285ef8176334809447fb477
+ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "2833306"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "3006436"
 ---
 # <a name="manage-features"></a>Behandle funksjoner
 
 [!include [banner](includes/banner.md)]
 
-Som en del av vår kontinuerlige distribusjonen av funksjonalitet for administrasjon av menneskelig kapital (HCM) for Microsoft Dynamics 365 Talent vil vi at kunder får nye funksjoner så snart som mulig. Administratorer kan se og bruke forhåndsvisning av funksjoner i miljøet. Disse funksjonene er nesten klar for generelle tilgjengeligheten og har gjennomgått omfattende testing. Vi er bare ute etter en endelig runde med tilbakemelding og godkjenning før vi gjør dem generelt tilgjengelige.
+Som en del av vår kontinuerlige distribusjonen av funksjonalitet for administrasjon av menneskelig kapital (HCM) for Microsoft Dynamics 365 Human Resources vil vi at kunder får nye funksjoner så snart som mulig. Administratorer kan se og bruke forhåndsvisning av funksjoner i miljøet. Disse funksjonene er nesten klar for generelle tilgjengeligheten og har gjennomgått omfattende testing. Vi er bare ute etter en endelig runde med tilbakemelding og godkjenning før vi gjør dem generelt tilgjengelige.
 
 Dette emnet beskriver hvordan du kan aktivere forhåndsvisningsfunksjonene, og det viser hvilke funksjoner som er tilgjengelige for forhåndsvisning. Denne listen oppdateres etter funksjoner som er frigitt til generelle tilgjengeligheten og nye funksjoner som utgis for å forhåndsvise. Det gis ingen varsling når nye funksjoner er frigitt til å forhåndsvise. Brukere starter bare for å se funksjonene. Hvis du vil ha mer informasjon om nye funksjoner i Talent, kan du se [Hva er nytt eller endret i Dynamics 365 Talent](./whats-new.md) og [Produktmerknader for Dynamics 365 og Power Platform](https://docs.microsoft.com/business-applications-release-notes).
 
@@ -54,50 +54,6 @@ Hvis du vil ha tilgang til forhåndsvisningsfunksjoner, må du først aktivere d
 > [!NOTE]
 > Noen forhåndsvisningsfunksjoner kan kreve ekstra konfigurasjon. Følg koblingene ved siden av forhåndsvisningsfunksjonen for å fullføre oppsettet av den.
 
-### <a name="core-hr"></a>Kjerne-HR
-
-1. Logg på Talent.
-2. Velg **Systemadministrasjon**, og velg deretter kategorien **Koblinger**.
-3. På siden **Systemadministrasjon**, under **Oppsett**, velger du **Systemparametere**.
-4. På siden **Systemparameterere** velger du kategorien **Forhåndsvisningsfunksjoner**.
-5. Sett alternativet **Aktiver forhåndsvisningsmodus for alle brukere** til **Ja** for å gjøre forhåndsvisningsfunksjoner tilgjengelige.
-
-    ![Aktivere forhåndsvisningsfunksjoner i Core HR](./media/corehr-enable-preview-features.png)
-
-> [!NOTE]
-> Følg den samme fremgangsmåten for å deaktivere forhåndsvisningsfunksjoner, men sett alternativet **Aktiver forhåndsvisningsmodus for alle brukere** til **Nei**. Når du deaktiverer forhåndsvisningsfunksjoner, blir de utilgjengelige for brukerne, og det kan oppstå feil i prosesser som er knyttet til funksjonene.
-
-### <a name="onboard"></a>Jobbintroduksjon
-
-Ingen forhåndsvisningsfunksjoner er tilgjengelige for Microsoft Dynamics 365 Talent: Onboard.
-
-## <a name="features-that-are-currently-in-preview"></a>Funksjoner som for øyeblikket forhåndsvises
-
-### <a name="attract"></a>Attract
-
-- [Kandidatanbefaling](./intelligent-recommendations.md#candidate-recommendations) – Hvis mer enn ti kandidater har CV-er eller fullstendige profiler, vises kandidatene som oppfyller jobbkravene best, i delen **Søkere som bør vurderes** på jobbsiden.
-- [Jobbanbefaling](./intelligent-recommendations.md#job-recommendations) – Hvis mer enn ti jobber er lagt inn på ditt karriereområde, gir Attract jobbanbefalinger til kandidater.
-- [Broadbean-integrering](./posting-jobs-external.md#post-jobs-to-broadbean) – Du kan postere jobber fra Attract til Broadbean, et eksternt jobbposteringsområde. Når du har aktivert denne forhåndsvisningsfunksjonen, må du fullføre installasjonen ved å skrive inn Broadbean-brukernavn, klient-ID og krypteringstoken.
-- [Analyse](./analytic-reports.md) – I Analysehub kan ansettelsesteam vise viktige mål for én enkelt jobb, i tillegg til aggregerte mål for alle jobber.
-- [EEO](./activities-attract.md) – Nye aktivitetstyper lar deg bruke et forhåndsdefinert skjema til å samle inn EEO- og OFCCP-data fra en kandidat. Det forhåndsdefinerte skjemaet kan ikke redigeres.
-- [Kandidatanbefalinger](./intelligent-recommendations.md#prospect-recommendations) – Attract gjennomgår tidligere søkere og gjeldende kandidater for å vise en liste over kandidater som stemmer overens med jobben din.
-- [Relevanssøk](./attract-talent-pools.md#search-and-view-candidate-profiles) – Du kan søke i hele kandidatdatabasen etter bestemte ferdigheter, navn eller utdannelsesbakgrunner. Attract søker i hele profilen og uthever alle treff som blir funnet. Attract søker også i alle dokumenter som er tilgjengelige for en kandidat, og rangerer søkeresultatene på en intelligent måte.
-- [Aktivitetsmålgruppe](./whats-new-talent-march-20.md#setting-the-audience-on-activities) – Du kan angi målgruppen for aktiviteter (for eksempel intervju, tidsplan eller tilbakemelding) til **Alle kandidater**, **Interne kandidater** eller **Eksterne kandidater**. Du kan levere kundeaktiviteter, for eksempel YouTube-videoer, webinnhold og Microsoft Forms, til alle kandidater, bare interne kandidater, bare eksterne kandidater eller ansettelsesteamet.
-- [Bruk med LinkedIn](./career-site.md#enable-applying-for-jobs-with-linkedin-profiles) – Du kan angi et alternativ på Attract-karriereområdet for å la jobbkandidater søke ved hjelp av LinkedIn. Denne funksjonen effektiviserer søknadsprosessen for kandidater ved å la dem bruke sin LinkedIn-profil til automatisk å fylle ut søknadene på ditt karriereområde.
-- [Sporing av kilde](./source-tracking.md) – Attract sporer kilden til kandidatsøknader for å gi verdifull informasjon som kan hjelpe deg med å identifisere rekrutteringstiltaket. Du kan også velge en søknadskilde når du legger til en kandidat til en jobb- eller talentsamling.
-- [Innstilt som nummer to](./whats-new-talent-march-20.md#designate-silver-medalists-to-assign-high-value-applicants-for-future-positions) – Hvis noen kandidater passer bra i organisasjonen din, men ikke ble tilbudt den gjeldende stillingen, kan du angi dem som nummer to. Denne funksjonen bidrar til å redusere ansettelsestiden neste gang du har en lignende stilling tilgjengelig.
-
-### <a name="core-hr"></a>Kjerne-HR
-
-- [Valider stillingshierarki](./whats-new-talent-may-13-2019.md#new-page-to-validate-position-hierarchy-data) – Du kan validere lederhierarkiet for alle sirkelreferanser som ved en feiltakelse ble importert.
-- [Angi årsakskoder for permisjonstyper](./whats-new-talent-may-13-2019.md#specify-reason-codes-on-leave-types) – Du kan angi årsakskoder for permisjonstyper.
-- [Kreve årsakskoder for fritidsforespørsler](./whats-new-talent-may-13-2019.md#require-reason-codes-for-specific-leave-types-on-time-off-requests) – I tillegg til å angi årsakskoder for permisjonstyper kan du kreve årsakskoder for fritidsforespørsler.
-- [Angi en transaksjonsliste for permisjon og fravær for HR](./whats-new-talent-may-13-2019.md#provide-a-leave-and-absence-transaction-list-for-hr) – Du kan vise en liste over permisjons- og fraværstransaksjoner for å gi innsikt i avspaseringssaldoer.
-
-### <a name="onboard"></a>Jobbintroduksjon
-
-Ingen forhåndsvisningsfunksjoner er tilgjengelige for Onboard.
-
 ## <a name="feedback"></a>Tilbakemelding
 
 Vi hører gjerne fra deg om din erfaring med noen av disse forhåndsvisningsfunksjonene. Vi oppfordrer deg til å postere regelmessig tilbakemelding på følgende områder når du bruker denne eller andre funksjoner:
@@ -106,7 +62,6 @@ Vi hører gjerne fra deg om din erfaring med noen av disse forhåndsvisningsfunk
 - Gi oss beskjed om funksjoner du vil se i produktet, eller si fra om eventuelle endringer du mener vi bør gjøre i eksisterende funksjoner. Foreslå produktideer på følgende områder:
 
     - [Attract-ideer](https://powerusers.microsoft.com/t5/Ideas-for-Attract/idb-p/Attract)
-    - [Core HR-ideer](https://powerusers.microsoft.com/t5/Ideas-for-Human-Resources/idb-p/HumanResources)
     - [Onboard-ideer](https://powerusers.microsoft.com/t5/Ideas-for-Onboard/idb-p/Onboard)
 
 Sørg for at du ikke tar med personlige data (informasjon som kan identifisere deg) i tilbakemeldingene eller innsendingene av produktgjennomgang. Innsamlet informasjon kan analyseres ytterligere, og den brukes ikke til å svare på forespørsler under gjeldende personvernlover. Personopplysninger som samles inn separat under disse programmene, er underlagt [Microsofts personvernerklæring](https://privacy.microsoft.com/privacystatement).

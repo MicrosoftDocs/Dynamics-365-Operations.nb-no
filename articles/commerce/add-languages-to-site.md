@@ -17,30 +17,30 @@ ms.search.region: Global
 ms.author: StuHarg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 111bcaba971b6223f670176135574633d2f1c5ec
-ms.sourcegitcommit: 36857283d70664742c8c04f426b231c42daf4ceb
+ms.openlocfilehash: fa3029387d5f1ca605fc9559c4272c8dfebcddaf
+ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "2914632"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "3001421"
 ---
 # <a name="add-languages-to-your-site"></a>Legge til språk på området
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 Dette emnet beskriver hvordan du kan legge til støtte for flere språk på Microsoft Dynamics 365 Commerce-området.
 
 ## <a name="overview"></a>Oversikt
 
-Du kan lokalisere webområdet ditt til et hvilket som helst språk som Dynamics 365 Commerce støtter. (Listen over støttede språk vises senere i dette emnet.) Hvis du vil legge til et språk på webområdet ditt, må du først legge det til i en nettbutikk som er bundet til området ditt.
+Du kan lokalisere webområdet ditt til et hvilket som helst språk som Commerce støtter. (Listen over støttede språk vises senere i dette emnet.) Hvis du vil legge til et språk på webområdet ditt, må du først legge det til i en nettbutikk som er bundet til området ditt.
 
 ## <a name="add-a-language-to-an-online-store"></a>Legge til et språk i en nettbutikk
 
 Hvis du vil legge til et språk i en nettbutikk, følger du trinnene nedenfor.
 
-1. Åpne Dynamics 365 Retail-miljøet for området ditt.
-1. Gå til **Detaljhandel \> Kanaler \> Nettbutikker** for å få tilgang til listen over nettbutikker som er konfigurert for ditt miljø. Alternativt kan du angi **nettbutikker** som et søkevilkår.
+1. Åpne Dynamics 365 Commerce-miljøet for området ditt.
+1. Gå til **Retail og Commerce \> Kanaler \> Nettbutikker** for å få tilgang til listen over nettbutikker som er konfigurert for ditt miljø. Alternativt kan du angi **nettbutikker** som et søkevilkår.
 1. Velg nettbutikken du vil legge til et språk for.
 1. Velg **Legg til** på hurtigfanen **Språk**.
 1. I **Språk**-feltet velger du språket som skal legges til.

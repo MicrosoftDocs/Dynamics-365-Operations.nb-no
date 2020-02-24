@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8c28c9e8c2573bcd82434f88daa8f9cadc946209
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: fc9064f0386fe7c0f4093fc30587be4baa259eb0
+ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2812392"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "3003685"
 ---
 # <a name="organizations-and-organizational-hierarchies-overview"></a>Oversikt over organisasjoner og organisasjonshierarkier
 
@@ -47,7 +47,7 @@ Et firma er en type juridisk enhet. Firmaer er for øyeblikket den eneste typen 
 
 En driftsenhet er en organisasjon som brukes til å fordele kontrollen over økonomiske ressurser og driftsprosesser i en virksomhet. Personer i en driftsenhet har plikt til å gjøre mest mulig ut av knappe ressurser, forbedre prosesser og gjøre rede for egen ytelse.
 
-Driftsenhetstypene omfatter kostsentre, forretningsenheter, verdistrømmer, avdelinger og detaljhandelskanaler. Følgende tabell inneholder mer informasjon om hver type driftsenhet.
+Driftsenhetstypene omfatter kostsentre, forretningsenheter, verdistrømmer, avdelinger og handelskanaler. Følgende tabell inneholder mer informasjon om hver type driftsenhet.
 
 | Driftsenhetstype | Beskrivelse | Formål |
 |---------------------|-------------|---------|
@@ -55,7 +55,7 @@ Driftsenhetstypene omfatter kostsentre, forretningsenheter, verdistrømmer, avde
 | Forretningsenhet       | En delvis uavhengig driftsenhet som er opprettet for å nå strategiske forretningsmål. | Brukes for finansrapportering som er basert på bransjer eller produktlinjer som organisasjonen leverer, uavhengig av juridiske enheter. |
 | Verdistrøm        | En driftsenhet som styrer én eller flere produksjonsflyter. | Brukes vanligvis i lean manufacturing til å styre aktivitetene og flytene som kreves for å forsyne forbrukere med et produkt eller en tjeneste. |
 | Avdeling          | En driftsenhet som representerer en kategori eller en funksjonell del i en organisasjon som utfører en bestemt oppgave, for eksempel salg eller regnskap. | Brukes for å rapportere om funksjonsområder. En avdeling kan ha resultatansvar, og kan bestå av en gruppe kostsentre. |
-| Detaljhandelkanal      | En driftsenhet som representerer en fysisk butikk, nettbutikk eller markedsplass på Internett. | Brukes for behandling og driftskontroll av én eller flere butikker i eller på tvers av juridiske enheter. |
+| Handelskanal      | En driftsenhet som representerer en fysisk butikk, nettbutikk eller markedsplass på Internett. | Brukes for behandling og driftskontroll av én eller flere butikker i eller på tvers av juridiske enheter. |
 
 ### <a name="teams"></a>Team
 

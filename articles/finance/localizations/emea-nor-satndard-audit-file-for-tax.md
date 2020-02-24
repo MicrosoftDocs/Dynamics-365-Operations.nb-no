@@ -15,12 +15,12 @@ ms.search.scope: Core, Operations
 ms.search.region: Norway
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: c5f3d5c7f4f2fb01027450dbb6545c86eb6a6723
-ms.sourcegitcommit: c1101d34299c189c30287e034d389da213ca9878
+ms.openlocfilehash: d4147632ccaf490bbfa75faab777f900782c26f4
+ms.sourcegitcommit: de715b7fda2f1548f2f443b9e0f6d09f5b881d61
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "2921139"
+ms.lasthandoff: 02/09/2020
+ms.locfileid: "3033930"
 ---
 # <a name="standard-audit-file-for-tax-saf-t-for-norway"></a>Standard revisjonsfil for avgift (SAF-T) for Norge
 
@@ -58,7 +58,11 @@ Importer de nyeste versjonene av konfigurasjonene. Versjonsbeskrivelsen innehold
 >
 > ![Standardalternativ for modelltilordning er satt til Ja](media/nor-saf-default-model-mapping.jpg)
 
-Hvis du vil ha mer informasjon om hvordan du laster ned ER-konfigurasjoner fra LCS, se [Laste ned konfigurasjoner for elektronisk rapportering fra Lifecycle Services](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/download-electronic-reporting-configuration-lcs).
+
+![Last opp og legg til-knappen](media/nor-saf-default-model-mapping.jpg)
+
+Hvis du vil ha mer informasjon om hvordan du laster ned ER-konfigurasjoner fra Microsoft Dynamics Lifecycle Services (LCS), kan du se [Laste ned konfigurasjoner for elektronisk rapportering fra Lifecycle Services](../../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).
+
 
 ## <a name="setup"></a>Oppsett
 
@@ -94,17 +98,22 @@ Hvis du vil knytte mva-koder som brukes i Finance, med norske standard mva-koder
 
 Som dokumentasjonen forklarer, i Norsk SAF-T økonomiske data, må hovedkontoer som brukes i Finance, være knyttet til norske standardkontoer for SAF-T-rapportering. Norske standardkontoer er tilgjengelige på <https://github.com/Skatteetaten/saf-t>.
 
-Hvis du vil knytte hovedkontoer som brukes i Finance, med norske standardkontoer, følger du denne fremgangsmåten.
 
-1. I Finance går du til **Økonomimodul** \> **Kontoplan** \> **Kontoer** \> **Hovedkontoer**.
-2. På siden **Hovedkontoer** velger du **Hovedkonto**-oppføringen, og deretter velger du **Rediger**i handlingsruten.
-3. På hurtigfanen **Generelt**, i delen **Standard finanskonto** i feltet **Standardkonto**, velger du **Standardkonto**.
+Fra og med **versjon 54.61** støtter det elektroniske rapporteringsformatet **“SAF-T-format (NO)”** oppsettet av **Standardkontoer** for selskapets **Hovedkontoer** ved å benytte **Applikasjonsspesifikke parametere**.
 
-![Standardkonto-feltet på siden Hovedkontoer](media/nor-saf-standard-main-accounts.jpg)
+Hvis du vil knytte **Hovedkontoer** som brukes i Finans, til norske standardkontoer via **Applikasjonsspesifikke parametere**, følger du trinnene nedenfor:
 
-Du må definere alle standardkontoene på siden **Standard finanskontoer** før du kan velge dem for en hovedkonto. Hvis du vil ha rask tilgang til siden **Standard finanskontoer** fra siden **Hovedkontoer**, høyreklikker du **Standardkonto**-feltet, og deretter velger du **Vis detaljer**.
+1. Åpne **Elektronisk rapportering**-arbeidsområdet, gå til konfigurasjonstreet og velg det elektroniske rapporteringsformatet **“SAF-T-format (NO)”**. 
+2. Kontroller at selskapet du arbeider med, er selskapet du vil definere **Applikasjonsspesifikke parametere** for.
+3. På Handling-panelet, i kategorien **Konfigurasjoner**, i gruppen **Programspesifikke parametere**, velg **Oppsett**.
+4. Velg versjonen av formatet som du vil bruke på venstre side av siden **Applikasjonsspesifikke parametere**.
+5. I **Oppslag**-hurtigfanen velger du **StandardMainAccount_Lookup** og spesifiserer deretter kriteriene på **Betingelser**-hurtigfanen ved å legge til linjer for hver **Resultat**-verdi som må brukes i det valgte selskapet. Hvis flere **Hovedkontoer** i det valgte selskapet må resultere i samme **Standardkonto**, legger du til en separat linje for hver **Hovedkonto** og spesifiserer samme **Standardkonto** for hver.
+6. Velg verdien **Ikke aktuelt** som den siste betingelsen i listen. Den må være satt til **\*Ikke tom\*** i **Hovedkonto**-kolonnen. Verifiser verdien i **Linje**-kolonnen for at **"Ikke aktuelt"** er den siste betingelsen i tabellen.
+7. Når du er ferdig med å sette opp betingelser, endrer du verdien i **Tilstand**-feltet til **Fullført**, lagrer endringene og lukker siden.
 
-![Kommandoen Vis detaljer på hurtigmenyen for feltet Standardkonto](media/nor-saf-standard-main-account-setup.jpg)
+![Standardkonto-feltet på siden Hovedkontoer](media/nor-saf-standard-main-accounts-appsppar.jpg)
+
+Du kan enkelt eksportere oppsettet av applikasjonsspesifikke parametere fra én versjon av en rapport og importere det til en annen versjon ved å velge **Eksporter** eller **Importer** i handlingsruten. Du kan også eksportere oppsettet fra én rapport og importere det til samme rapport i et annet selskap hvis hovedkontoene er de samme i begge selskapene.
 
 ## <a name="generate-the-norwegian-saf-t-financial-data-report"></a>Generer rapporten Norsk SAF-T økonomiske data
 

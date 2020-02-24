@@ -3,7 +3,7 @@ title: Tilpasse brukeropplevelsen
 description: Dette emnet forklarer hvordan du kan tilpasse appen.
 author: jasongre
 manager: AnnBe
-ms.date: 01/07/2020
+ms.date: 02/05/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ac8f154fdf892553f69d135727589bf13efd6076
-ms.sourcegitcommit: 34395464ec80cea800b953eae49af579d436fc1b
+ms.openlocfilehash: c745248a0c7e54b58b1d3e491f3bbb067ec0e2c2
+ms.sourcegitcommit: d8a2301eda0e5d0a6244ebbbe4459ab6caa88a95
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "2935471"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "3029368"
 ---
 # <a name="personalize-the-user-experience"></a>Tilpasse brukeropplevelsen
 
@@ -59,7 +59,8 @@ Når du bruker appen, lagres mange av valgene, slik at det blir lettere for deg 
 
 Implisitte tilpasninger er tilpasninger som utføres ved å samhandle med kontroller som lagrer gjeldende synlige tilstand.
 
-- **Rutenettkolonner:** – Du kan justere bredden på en kolonne i et rutenett ved å velge størrelseslinjen til venstre eller høyre for kolonneoverskriften og deretter dra den til venstre eller høyre helt til kolonnen har ønsket bredde. Appen lagrer bredden som du angir for en kolonne. Neste gang du åpner siden som inneholder rutenettet, endres størrelsen til denne bredden.
+- **Rutenettkolonnebredder:** – Du kan justere bredden på en kolonne i et rutenett ved å velge størrelseslinjen til venstre eller høyre for kolonneoverskriften og deretter dra den til venstre eller høyre helt til kolonnen har ønsket bredde. Appen lagrer bredden som du angir for en kolonne. Neste gang du åpner siden som inneholder rutenettet, endres størrelsen til denne bredden.
+- **Rutenettkolonner total** – (Bare tilgjengelig med den nye rutenett kontrollen aktivert) Du kan bestemme om en total skal vises nederst i en numerisk kolonne i et rutenett, og om bunnteksten i rutenettet er synlig. Appen lagrer disse dataene slik at innstillingene huskes neste gang du åpner siden. Se emnet [Rutenettfunksjoner](grid-capabilities.md) hvis du vil ha mer informasjon. 
 - **Hurtigfaner** – Noen sider har utvidbare deler kalt *Hurtigfaner*. Appen lagrer informasjon om hurtigfanene som du har vist og skjult. Neste gang du åpner siden, vil de samme hurtigfanene enten vises eller skjules, basert på siste samhandling med siden. I noen tilfeller kan du bidra til å forbedre systemytelsen ved å skjule en hurtigfane, fordi appen ikke trenger å hente informasjonen om hurtigfaner før hurtigfanen utvides. Som forklart senere i dette emnet kan du også endre rekkefølgen for hurtigfanene på en side.
 - **Faktabokser** – Noen sider har en **Relatert informasjon**-rute som viser skrivebeskyttet informasjon som er knyttet til gjeldende emne på siden. Hver del i ruten **Relatert informasjon** kalles en *Faktaboks*. Du kan vise eller skjule ruten **Relatert informasjon**, og du kan også vise eller skjule individuelle faktabokser. Appene lagrer disse innstillingene. Deretter, neste gang du åpner siden, vil ruten **Relatert informasjon** og de individuelle faktaboksene enten utvides eller skjules basert på den siste samhandlingen med siden. I noen tilfeller kan du bidra til å forbedre systemytelsen ved å skjule en faktaboks fordi appen ikke trenger å hente informasjonen for faktabokser før de utvides.
 - **Handlingsruter** – En *Handlingsrute* vises øverst på de fleste sidene. Handlingsruten inneholder knapper for mange av handlingene som du kan utføre på gjeldende side. Disse knappene er ofte organisert i kategorier. Du kan "feste" hele handlingsruten som åpen, eller du kan skjule den som standard. Neste gang du åpner siden, vil handlingsruten enten være åpen eller skjult basert på siste samhandling med siden. Hvis du låste handlingsruten åpen, vises den siste kategorien du brukte.
@@ -95,7 +96,7 @@ Egenskapsvinduet kan inneholde andre tilpasningsfunksjoner avhengig av elementet
 
 Hvis du vil gjøre flere endringer på en side eller gjøre endringer som ikke er tilgjengelige gjennom andre mekanismer (for eksempel hvis du vil endre rekkefølgen på elementene), kan du bruke **Tilpassing**-verktøylinjen. Hvis du vil åpne **Tilpassing**-verktøylinjen, følger du et av disse trinnene:
 
-- Velg **Tilpass dette skjemaet** i egenskapsvinduet for et element.
+- Velg **Tilpass denne siden** i egenskapsvinduet for et element.
 - Velg **Tilpass denne siden** i gruppen **Tilpass** i kategorien **Alternativer** på handlingssiden til en hvilken som helst side.
 - Velg knappen **Innstillinger** (tannhjulsymbolet) i navigasjonsfeltet, og velg deretter **Tilpass**.
 
@@ -116,7 +117,8 @@ Følgende verktøy er tilgjengelige på **Tilpassing**-verktøylinjen:
 - Bruk **Hopp over**-verktøyet for å fjerne et element fra sidens tastaturtabulatorsekvens. Når du velger **Hopp over**-knappen på verktøylinjen, vil alle elementer som hoppes over, vises i en skyggelagt container. Du kan interaktivt fjerne eller legge til felt i kategorisekvensen.
 - Bruk **Vis i hode**-verktøyet når du vil at et felt skal vises i sammendragsdelen i hurtigfanen. Når du velger knappen **Vis i hode** på verktøylinjen, vil alle felt som er merket som sammendragsfelt, vises med en skyggelagt beholder. Interaktivt kan du legge til felt i hurtigfanen sammendrag og fjerne felt fra den ved å velge feltene.
 - Bruk **Lås**-verktøyet når du vil merke et element som enten er redigerbart eller ikke redigerbart. Når du velger **Lås**-knappen på verktøylinjen, vil alle elementer som ikke kan redigeres, vises i en skyggelagt container. Du kan deretter gjøre dem redigerbare på nytt. Legg merke til at noen felt er nødvendige og ikke kan gjøres ikke-redigerbare. Et hengelåssymbol ved siden av disse feltene.
-- Bruk knappen **Legg til en PowerApp** for å bygge inn en app som ble opprettet ved hjelp av Microsoft PowerApps på siden. Hvis du vil ha mer informasjon om hvordan du bygger inn en PowerApps-app på en side, se [Bygge inn PowerApps-apper](embed-power-apps.md).
+- Bruk knappen **Legg til en app fra Power Apps** for å bygge inn en app som ble opprettet ved hjelp av Microsoft Power Apps, på siden. Hvis du vil ha mer informasjon om hvordan du bygger inn en app fra Power Apps på en side, kan du se [Bytte inn apper fra Power Apps](embed-power-apps.md). Dette alternativet er bare tilgjengelig når funksjonen [Lagrede visninger](saved-views.md) er deaktivert.  
+- Bruk knappen **Legg til en app** til å bygge inn en app, enten en opprettet fra Microsoft Power Apps eller en tredjeparts, på siden. Dette alternativet er bare tilgjengelig når funksjonen [Lagrede visninger](saved-views.md) er aktivert. 
 - Bruk verktøyet **Fjern** for å tilbakestille siden til standard installert tilstand. Alle tilpasninger på gjeldende side vil bli fjernet. Det finnes ingen angrehandling. Bruk derfor dette verktøyet bare hvis du er sikker på at du vil tilbakestille siden.
 - Bruk verktøyet **Importer** for å laste en tilpasning fra en fil som du eller noen andre har opprettet. Når du importerer personlige tilpasninger for en side, kan du velge om de skal legges til eller erstatte alle eksisterende personlige tilpasninger for siden. Det finnes ingen angrehandling. Etter at du har importert personlige tilpasninger, må du derfor fjerne eller angre endringene du ikke vil ha, manuelt.
 - Bruk verktøyet **Eksporter** til å lagre dine tilpasninger for siden i en fil. Du kan deretter dele dine tilpasninger med andre brukere. Disse brukerne trenger bare å importere filen som inneholder dine tilpasninger for siden.
@@ -152,7 +154,7 @@ Instrumentbordet er ofte den første siden som vises når du åpner appen. Du ka
 For å tilpasse instrumentbordet høyreklikker du på en flis og velger **Tilpass** til å åpne flisens egenskapsvindu.
 
 - Hvis du vil skjule eller gi nytt navn til den valgte flisen, kan du gjøre denne endringen direkte i egenskapsvinduet.
-- For å omorganisere arbeidsområdeflisene velger du **Tilpass dette skjemaet** i egenskapsvinduet for å åpne **Tilpasning**-verktøylinjen. Du kan deretter bruke verktøyet **Flytt** for å omorganisere flisene slik du vil.
+- For å omorganisere arbeidsområdeflisene velger du **Tilpass denne siden** i egenskapsvinduet for å åpne **Tilpasning**-verktøylinjen. Du kan deretter bruke verktøyet **Flytt** for å omorganisere flisene slik du vil.
 - For å legge til en arbeidsområdeflis velger du **Legg til et arbeidsområde** i egenskapsvinduet. En ny arbeidsområdeflis opprettes nederst på instrumentbordet. Du kan endre navn på denne nye arbeidsområdeflisen slik du vil. Du kan også legge til lister, fliser og koblinger til arbeidsområdet, som beskrevet i [Legge til lister, fliser eller koblinger til arbeidsområder](#adding-a-tile-list-or-link-to-a-workspace)-delen i dette emnet.
 
 ## <a name="administration-of-personalizations"></a>Administrasjon av tilpasninger

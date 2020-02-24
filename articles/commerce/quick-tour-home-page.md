@@ -3,7 +3,7 @@ title: Oversikt over startsiden
 description: Dette emnet inneholder en oversikt over startsiden i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
-ms.date: 10/31/2019
+ms.date: 01/23/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,16 +17,16 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 3fb42c9aa2e2ef1d620b310e9d30dbae5f84c788
-ms.sourcegitcommit: 295d940a345879b3dfc5991e387b91c7257019ea
+ms.openlocfilehash: 6f337af0b598322e9542a3c9462402e61dc11a88
+ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2698286"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "3025977"
 ---
 # <a name="overview-of-the-home-page"></a>Oversikt over startsiden
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 Dette emnet inneholder en oversikt over startsiden i Microsoft Dynamics 365 Commerce.
@@ -45,19 +45,19 @@ Hoveddelen av startsiden kan utheve produkter, kategorier eller kampanjer ved hj
 
 - **Hovedbanner** – Dette er vanligvis vil det første elementet øverst i hoveddelen som viser ett eller flere "hovedbanner"-bilder som uthever nye produkter og kampanjer i butikken. Hvis det finnes flere hovedbannerbilder, er de plassert i en karusellmodul, slik at brukerne kan bla gjennom dem.
 
-    Illustrasjonen nedenfor viser et eksempel på en startside der det første elementet i hoveddelen er en hovedbannermodul som heter **Nye varer**.
+    Illustrasjonen nedenfor viser et eksempel på en startside der det første elementet i hoveddelen er et hovedbanneroppsett av en innholdsblokkmodul som heter "Nye varer".
 
     ![Eksempel på en hovedbannermodul](./media/Hero.PNG)
 
-- **Funksjon** – En funksjonsmodul brukes til å markedsføre produkter eller kampanjer ved hjelp av en kombinasjon av bilder og tekst. Funksjonsmoduler kan brukes uavhengig, eller de kan være plassert i en karusellmodul.
+- **Funksjon** – Et funksjonsoppsett av en innholdsblokkmodul brukes til å markedsføre produkter eller kampanjer ved hjelp av en kombinasjon av bilder og tekst. Funksjonsoppsett kan brukes uavhengig, eller de kan være plassert i en karusellmodul.
 
-    Illustrasjonen nedenfor viser et eksempel på funksjonsmoduler på en startside.
+    Illustrasjonen nedenfor viser et eksempel på et funksjonsoppsett av en innholdsblokkmodul på en startside.
 
     ![Eksempler på funksjonsmoduler](./media/Feature.PNG)
 
-- **Innholdsplassering** – En innholds plasseringsmodul brukes til å vise flere produkter eller produktkategorier ved å bruke en kombinasjon av bilder og tekst i et oppsett med flere kolonner. I illustrasjonen til en startside som vises tidligere i dette emnet, brukes en innholdsplasseringsmodul for oppsettet av tre kolonner for varegruppene **Produkter for kvinner**, **Produkter for menn** og **Tilbehør**.
+- **Tittel** – Et titteloppsett av en innholdsblokkmodul brukes til å vise flere produkter eller produktkategorier ved å bruke en kombinasjon av bilder og tekst i et oppsett med flere kolonner. I illustrasjonen av en startside som vises tidligere i dette emnet, brukes et flisoppsett for gjengivelsen av tre kolonner for varegruppene **Produkter for kvinner**, **Produkter for menn** og **Tilbehør**.
 - **Videospiller** – En videospillermodul kan brukes til å vise videoinnhold på startsiden. Illustrasjonen av en startside som vises tidligere i dette emnet, inneholder en videospillermodul.
-- **Innholdsrik blokk** – En innholdsrik blokkmodul kan brukes til å presentere tekstinnhold på startsiden i et oppsett med én eller to kolonner.
+- **Tekstblokk** – En innholdsrik blokkmodul kan brukes til å presentere tekstinnhold på startsiden i et oppsett med én eller to kolonner.
 - **Produktanbefalinger** – Produktanbefalingsmoduler brukes til å vise lister som **Nye**, **Tendenser** og **Bestselgere** på startsiden. Disse listene viser produkter basert på handletrender, og de kan genereres algoritmisk eller lagres manuelt. De hjelper kunder med å finne toppvarer raskt og deretter fortsette å handle.
 
     Illustrasjonen nedenfor viser et eksempel på produktanbefalingsmoduler på en startside.

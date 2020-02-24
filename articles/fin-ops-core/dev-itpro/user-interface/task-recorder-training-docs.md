@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b4bb523c2817a220623d8a1b6cc1ac04d7b96283
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 268b95aad57c2e4863a3f58cd54828dbb0e09465
+ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2812655"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "3006201"
 ---
 # <a name="create-documentation-or-training-with-task-recorder"></a>Lage dokumentasjon eller opplæring med Oppgaveopptaker
 
@@ -32,7 +32,7 @@ ms.locfileid: "2812655"
 Dette emnet forklarer hva Oppgaveopptaker og oppgaveveiledninger er, hvordan du oppretter oppgaveopptak og hvordan du tilpasser Microsoft-oppgaveveiledninger og inkluderer dem i hjelpen.
 
 > [!IMPORTANT]
-> Du kan registrere dine egne oppgaveveiledninger for Dynamics 365 Talent, men du kan ikke lagre dem i et BPM-bibliotek (forretningsprosessmodellerer) eller åpne dem fra Hjelp-ruten nå. Du kan lagre dem lokalt eller på en nettverksplassering og deretter åpne og spille dem av ved hjelp av Oppgaveopptaker. 
+> Du kan registrere dine egne oppgaveveiledninger for Dynamics 365 Human Resources, men du kan ikke lagre dem i et BPM-bibliotek (forretningsprosessmodellerer) eller åpne dem fra Hjelp-ruten nå. Du kan lagre dem lokalt eller på en nettverksplassering og deretter åpne og spille dem av ved hjelp av Oppgaveopptaker. 
 
 <a name="learn-about-task-recorder"></a>Finn ut mer om oppgaveopptak
 -------------------------

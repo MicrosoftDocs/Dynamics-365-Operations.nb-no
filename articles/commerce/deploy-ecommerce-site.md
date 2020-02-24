@@ -3,7 +3,7 @@ title: Distribuere en ny e-handelsleier
 description: Dette emnet beskriver hvordan du distribuerer en ny e-handelsleier ved å bruke Microsoft Dynamics Lifecycle Services (LCS).
 author: psimolin
 manager: annbe
-ms.date: 10/31/2019
+ms.date: 01/23/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,22 +17,22 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 10dab1e62446ff7f60ad48fd0841bde5cfd29e12
-ms.sourcegitcommit: ef3a1d7527311d00b69a1072ae5eb021ce68034c
+ms.openlocfilehash: 6d7dfcaf244260de5f39a1201ec1ea78e94351e7
+ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "2945519"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "3001789"
 ---
 # <a name="deploy-a-new-e-commerce-tenant"></a>Distribuere en ny e-handelsleier
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 Dette emnet beskriver hvordan du distribuerer et nytt e-handelsområde ved å bruke Microsoft Dynamics Lifecycle Services (LCS).
 
 ## <a name="overview"></a>Oversikt
-    
+
 Microsoft Dynamics Lifecycle Services (LCS) er et skybasert samarbeidsområde som partnere og kunder kan bruke til å administrere sine prosjekter og miljøer, vise nyeste informasjon om Microsoft Dynamics-produkter og -funksjoner og opprette, spore og bla gjennom kundestøttehendelser. Funksjoner for e-handelsadministrasjon er integrert i LCS.
 
 Hvis du vil vite mer om LCS, se [Brukerveiledning for Lifecycle Services](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-user-guide).
@@ -80,11 +80,16 @@ Når du har samlet inn den nødvendige informasjonen, følger du denne fremgangs
 1. På neste side fyller du ut nødvendig informasjon, og deretter sender du inn skjemaet. Du kommer tilbake til kategorien **e-handel**, der du skal se at initialiseringen er startet.
 1. Hvis du vil vise initialiseringsegenskaper, kan du velge **Oppdater** eller gå tilbake til **e-handel**.
     
-Når e-handel startes fra LCS, klargjør systemet flere komponenter som kreves for e-handel, og knytter dem til miljøet. Når klargjøringen er fullført, oppdateres kategorien **e-handel** på siden **Detaljhandelsstyring** for å gjenspeile klargjøringen. Siden viser de siste tilpasningsdistribusjonene og statusen til eventuelle andre pågående distribusjoner. Den inneholder også koblinger til webområdet for e-handel og områdeadministrasjonsverktøyet for e-handel (redigeringsverktøyet).
+Når e-handel startes fra LCS, klargjør systemet flere komponenter som kreves for e-handel, og knytter dem til miljøet. Når klargjøringen er fullført, oppdateres kategorien **e-handel** på siden **Detaljhandelsstyring** for å gjenspeile klargjøringen. Siden viser de siste tilpasningsdistribusjonene og statusen til eventuelle andre pågående distribusjoner. Den inneholder også koblinger til e-handelsområdet og e-handelsområdebyggeren der områder redigeres.
 
-## <a name="access-the-authoring-environment"></a>Få tilgang til redigeirngsmiljøet
+## <a name="access-site-builder"></a>Tilgang til områdebygger
 
-Du får tilgang til redigeringsmiljøet ved å gå til kategorien **e-handel** på siden **Detaljhandelsstyring**. Der finner du koblinger til e-handelsområdet og områdebehandlingsverktøyet.
+Hvis du vil ha tilgang til områdebygger, går du til **e-handel**-fanen på **Administrasjon av detaljhandel**-siden i LCS og velger **Verktøy for administrasjon av e-handelsområdet**-koblingen. Målsiden for områdebygger viser en leiernivåvisning. Fra denne siden kan du gjøre følgende:
+
+- Endre innstillinger på leiernivå.
+- Navigere til et område du har opprettet og har tillatelse til å vise. 
+- Få tilgang til Gjennomgå-funksjoner, som endring og rapportering.
+- Opprette et nytt område. Hvis du vil ha mer informasjon om hvordan du oppretter et nytt område, kan du se [Opprette et e-handelsområde](create-ecommerce-site.md) . 
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 

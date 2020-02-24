@@ -1,5 +1,5 @@
 ---
-title: Definer kreditt og innkreving
+title: Definere innkreving
 description: Denne artikkelen forklarer hvordan du konfigurerer innkrevingsfunksjonene.
 author: ShivamPandey-msft
 manager: AnnBe
@@ -18,18 +18,30 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2ed075484f79d7ef7d0d4e6d62d037bb3e9cc96f
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 58d3e7f66ab5816849d393098d073ea7629e6b7c
+ms.sourcegitcommit: 6a70f9ac296158edd065d52a12703b3ce85ce5ee
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2179265"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "3013169"
 ---
-# <a name="set-up-credit-and-collections"></a>Definer kreditt og innkreving
+# <a name="set-up-collections"></a>Definere innkreving
 
 [!include [banner](../includes/banner.md)]
 
-Denne artikkelen forklarer hvordan du konfigurerer innkrevingsfunksjonene.
+Denne artikkelen forklarer hvordan du konfigurerer innkrevingsfunksjonene. Du må fullføre noen installasjonstrinn når du bruker funksjonen for samlinger. Det finnes også noen valgfrie funksjoner, inkludert kundepuljer og innkrevingsgrupper. 
+
+- Definisjoner av aldersfordelingsperiode
+- Øyeblikksbilder av aldersfordeling
+- Journalnavn
+- Årsakskode for avskrivningstransaksjoner
+- Innkrevingsagenter
+- Avskrivningskonto
+- NSF-informasjon (ingen dekning)
+- Outlook-innstillinger for brukere av siden **Innkrevinger**
+- E-postadresser
+
+Disse punktene diskuteres mer detaljert gjennom resten av dette emnet. 
 
 <a name="set-up-aging-period-definitions"></a>Definer definisjoner av aldersfordelingsperiode
 -------------------------------
@@ -46,7 +58,7 @@ Du kan definere kundepuljer for å representere kundegrupper. Du kan bruke kunde
 Hvis flere mennesker i organisasjonen gjør innkrevingsarbeid, kan du definere et innkrevingsteam. Du kan velge teamet på siden **Kundeparametere**. Hvis du ikke oppretter et innkrevingsteam, vil det bli opprettet ett automatisk når du definerer innkrevingsagenter på siden **Innkrevingsagent**.
 
 ## <a name="set-up-a-collections-case-category"></a>Definer en inkassosakskategori
-Hvis du vil organisere innkrevingsarbeidet ved hjelp av saker, definerer du en sakskategori med kategoritypen **Innkrevinger**. Dette oppsettet er bare nødvendig hvis du vil bruke saksfunksjonaliteten på siden **Innkrevinger**.
+Hvis du vil organisere innkrevingsarbeidet ved hjelp av saker, definerer du en sakskategori med kategoritypen **Innkrevinger**. Dette er bare nødvendig hvis du vil bruke saksfunksjonaliteten på siden **Innkrevinger**.
 
 ## <a name="set-up-journal-names-settlement-writeoff-and-nsf"></a>Definer journalnavn for (utligning, avskrivning og ingen dekning)
 Definere journalnavn som brukes når transaksjoner behandles på siden **Innkrevinger**. Denne prosessen inkluderer utligning av en transaksjon, avskriving av en transaksjon og behandling av en betaling uten dekning.
@@ -78,16 +90,19 @@ Oppdater bankkontoer slik at de har den riktige journalen når betalinger uten d
 ## <a name="set-up-outlook-settings-for-users-of-the-collections-page"></a>Definer Outlook-innstillinger for brukere av siden Innkrevinger
 Før arbeidere kan opprette aktiviteter eller sende e-postmeldinger ved hjelp av siden **Innkrevinger** må du kontrollere at **Microsoft Outlook-synkronisering**-konfigurasjonsnøkkelen er valgt, og at Outlook-synkronisering er definert for disse arbeiderne.
 
-## <a name="set-up-email-and-address-settings-for-collections-customer-contacts"></a>Definer e-post- og adresseinnstillinger for inkassokontakter for kunder
-Definer e-postadresser for kundekontakter hvis du vil sende e-postmeldinger til disse kontaktene fra siden **Innkrevinger**. Innkrevingskontakten brukes som standardkontakt på siden **Innkrevinger**. Du kan definere en utdragsadresse for en kunde hvis utdrag skal ha en annen adresse enn hovedadressen. 
+## <a name="set-up-email-and-addresses"></a>Definer e-post og adresser
+Du kan bruke e-post til å kommunisere både med kunder og selgere om innkrevingsproblemer og sende e-postmeldinger fra **Innkrevinger**-siden. 
+
+### <a name="set-up-email-and-address-settings-for-collections-customer-contacts"></a>Definer e-post- og adresseinnstillinger for inkassokontakter for kunder
+Definer e-postadresser for kundekontakter for å sende e-postmeldinger til disse kontaktene fra siden **Innkrevinger**. Innkrevingskontakten brukes som standardkontakt på siden **Innkrevinger**. Du kan definere en utdragsadresse for en kunde hvis utdrag skal ha en annen adresse enn hovedadressen. 
 
 På hurtigfanen **Kreditt og innkreving** for en bruker, i feltet **Innkrevingskontakt**, velger du personen i kundeorganisasjonen som arbeider med din innkrevingsagent. Denne personen brukes som standardkontakt på siden **Innkrevinger**, og e-postmeldinger sendes til vedkommende. 
 
 > [!NOTE] 
 > Hvis innkrevingskontakt ikke er angitt for en kunde, brukes kundens hovedkontakt. Hvis det ikke er angitt hovedkontakt, sendes e-postmeldinger til den første adressen som er oppført på **Kontakter**-siden.
 
-## <a name="set-up-email-settings-for-salespeople"></a>Definer e-postinnstillinger for selgere
-Definer e-postadresser for selgere hvis du vil sende e-postmeldinger til selgere fra siden **Innsamlinger**. Definer en e-postadresse for hver selter i hver provisjonssalgsgruppe. Selgeren som er merket av som **Kontakt**, er standardselgeren som e-postmeldinger sendes til. 
+### <a name="set-up-email-settings-for-salespeople"></a>Definer e-postinnstillinger for selgere
+Definer e-postadresser for selgere for å sende e-postmeldinger til selgere fra siden **Innkrevinger**. Definer en e-postadresse for hver selter i hver provisjonssalgsgruppe. Selgeren som er merket av som **Kontakt**, er standardselgeren som e-postmeldinger sendes til. 
 
 Hvis det ikke er angitt en selger, brukes kundeorganisasjonens hovedselger. Hvis det ikke er angitt hovedselger, sendes e-post meldinger til den første selgeren som er oppført på siden.
 

@@ -3,7 +3,7 @@ title: Konfigurere godkjenningsprosesser i en arbeidsflyt
 description: Bruk fremgangsmåten nedenfor for å konfigurere egenskapene for godkjenningsprosessen.
 author: sericks007
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 01/24/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: donaldc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d4032d5e56b9dd014ec0472abfc1b2ad4a15ff1d
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 1f58e227542b1e5ca1235748d14e71bddac826ee
+ms.sourcegitcommit: 759325234a763e14071348a6f5399999a92f8264
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2811387"
+ms.lasthandoff: 01/25/2020
+ms.locfileid: "2983770"
 ---
 # <a name="configure-approval-processes-in-a-workflow"></a>Konfigurere godkjenningsprosesser i en arbeidsflyt
 
@@ -138,11 +138,12 @@ Du kan sende meldinger til personer når et dokument er godkjent, avvist, delege
 
 ## <a name="specify-a-final-approver"></a> Angi en endelig godkjenner
 
-Du bør tilordne en endelig godkjenner for scenarier der godkjenneren er personen som sendte dokumentet til godkjenning. Hvis du vil angi en endelig godkjenner, følger du fremgangsmåten nedenfor.
+Du kan angi en endelig godkjenner for scenarier der godkjenneren er personen som sendte dokumentet til godkjenning, og Sperr godkjenning av innsender brukes. Hvis du vil angi en endelig godkjenner, følger du fremgangsmåten nedenfor.
 
-1. Klikk **Avanserte innstillinger** i ruten til venstre.
-2. Merk av for **Bruk siste godkjenner**.
-3. Velg den brukeren som skal være den endelig godkjenneren, fra listen.
+1. I redigeringsprogrammet for arbeidsflyt høyreklikker du godkjenningselementet og velger deretter **Egenskaper** for å åpne **Egenskaper**-skjemaet.
+2. Klikk **Avanserte innstillinger** i ruten til venstre.
+3. Merk av for **Bruk siste godkjenner**.
+4. Velg en bruker som skal være den endelig godkjenneren, fra listen.
 
 ## <a name="set-a-time-limit"></a>Angi en tidsfrist
 

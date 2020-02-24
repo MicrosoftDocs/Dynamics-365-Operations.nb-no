@@ -3,7 +3,7 @@ title: Arbeide med fragmenter
 description: Dette emnet beskriver hvorfor, når og hvordan du bruker fragmenter i Microsoft Dynamics 365 Commerce.
 author: v-chgri
 manager: annbe
-ms.date: 12/12/2019
+ms.date: 01/31/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,16 +17,16 @@ ms.search.industry: retail
 ms.author: phinneyridge
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 32482538b2913e6585257bcf7a1cbe780d3cdd30
-ms.sourcegitcommit: 36857283d70664742c8c04f426b231c42daf4ceb
+ms.openlocfilehash: f29046ded47ed9c49a2cc841aa7c1f6492b49aec
+ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "2914706"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "3026046"
 ---
 # <a name="work-with-fragments"></a>Arbeide med fragmenter 
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 Dette emnet beskriver hvorfor, når og hvordan du bruker fragmenter i Microsoft Dynamics 365 Commerce.
@@ -57,25 +57,34 @@ Illustrasjonen nedenfor viser hvordan fragmenter kan brukes til å sentralisere 
 
 Du kan enten opprette et nytt fragment eller lagre en eksisterende modulkonfigurasjon som et fragment.
 
+### <a name="save-an-existing-module-configuration-as-a-fragment"></a>Lagre en eksisterende modulkonfigurasjon som et fragment
+
+Følg denne fremgangsmåten for å konvertere en tidligere konfigurert modul til et fragment som kan brukes på nytt.
+
+1. Åpne en side eller mal som inneholder modulen du vil konvertere til et fragment.
+1. I disposisjonsruten til venstre velger du ellipseknappen (**...**) ved siden av navnet på modulen. 
+1. Velg **Del som fragment**. 
+1. En dialogboks vises. Angi et navn og metadata for fragmentet.
+1. Velg **OK** for å lagre modulkonfigurasjonen som et fragment som kan legges til andre sider.
+
+Bildet nedenfor viser hvordan du lagrer en modulkonfigurasjon som et fragment.
+
+![Et skjermbilde av hvordan du lagrer en modulkonfigurasjon som et fragment](./media/save-as-fragment.png)
+
 ### <a name="create-a-new-fragment"></a>Opprette et nytt fragment
 
 Hvis du vil opprette en nytt fragment, følger du trinnene nedenfor.
 
 1. Velg **Fragmenter**i navigasjonsruten til venstre.
 1. Velg **Nytt sidefragment**. Det vises en dialogboks som viser alle de tilgjengelige modultypene. Som ble nevnt tidligere kan fragmenter opprettes fra en hvilken som helst modultype.
-1. Velg en modultype for fragmentet, og velg deretter **OK**.
+1. Velg en modultype for fragmentet.
 
-    > [!TIP]
-    > Når du velger en generisk containermodultype, får du størst fleksibilitet når du må oppdatere og konfigurere fragmentet senere.
+Bildet nedenfor viser hvor du kan opprette et nytt fragment.
 
-### <a name="save-an-existing-module-configuration-as-a-fragment"></a>Lagre en eksisterende modulkonfigurasjon som et fragment
+![Et skjermbilde av stedet for å opprette et nytt fragment](./media/fragment-nav-menu.png)
 
-Følg denne fremgangsmåten for å konvertere en tidligere konfigurert modul til et fragment som kan brukes på nytt.
-
-1. Åpne en side eller mal som inneholder modulen du vil konvertere til et fragment.
-1. I disposisjonsruten til venstre velger du ellipseknappen (**...**) ved siden av navnet på modulen, og deretter velger du **Lagre som fragment**. En dialogboks vises.
-1. Angi et navn og metadata for fragmentet.
-1. Velg **OK** for å lagre modulkonfigurasjonen som et fragment som kan legges til andre sider.
+> [!TIP]
+> Når du velger en generisk containermodultype, får du størst fleksibilitet når du må oppdatere og konfigurere fragmentet senere.
 
 ## <a name="add-remove-or-edit-fragments-on-a-page"></a>Legge til, fjerne eller redigere fragmenter på en side
 
@@ -88,11 +97,15 @@ Hvis du vil legge til et fragment på en side, følger du disse trinnene.
 1. I disposisjonsruten til venstre velger du en container eller et spor som underordnede moduler kan legges til i.
 1. Velg ellipseknappen ved siden av navnet på containeren eller sporet, og velg deretter **Legg til fragment**. En dialogboks vises.
 
+    ![Et skjermbilde av hvordan du legger til et eksisterende fragment i et spor eller en container](./media/add-fragment.png)
+ 
     > [!NOTE]
     > Hvis containeren eller sporet ikke støtter nye underordnede moduler, er alternativet **Legg til fragment** ikke tilgjengelig.
-
+    
 1. Søk etter og velg et fragment du vil legge til, i dialogboksen. Hvis det ikke finnes noen tilgjengelige fragmenter, kan det være at du først må opprette et fragment fra en modultype som valgt container eller spor støtter.
-1. Velg **OK** for å legge det valgte fragmentet til valgt container eller spor på siden.
+1. Velg det ønskede fragmentet for å legge det til i containeren eller sporet på siden.
+
+    ![Et skjermbilde av et modalt vindu for fragmentvelgeren](./media/fragment-picker.png)
 
 > [!NOTE]
 > Modulene som er tillatt i en container eller et spor, er definert av malen for siden eller modulenes egne definisjoner.

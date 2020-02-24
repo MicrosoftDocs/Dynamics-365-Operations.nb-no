@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9f3ef8314c3b6122627de0a730e912c7ebcd99be
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: ec7a2c5a2b2b7ef22fd3dcf7f7d3859e8e07ea5e
+ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1568656"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "3003956"
 ---
 # <a name="configure-linked-products"></a>Konfigurere koblede produkter
 
@@ -30,9 +30,9 @@ Denne prosedyren hjelper med å konfigurere koblede produkter. Denne prosedyren 
 
 1. Gå til Behandling av produktinformasjon > Produkter > Frigitte produkter.
 2. Finn og velg ønsket post i listen.
-3. Klikk Detaljhandel i handlingsruten.
+3. Klikk Retail og Commerce i handlingsruten.
 4. Klikk Koblede produkter.
-5. Klikk Rediger.
+5. Klikk Rediger
 6. Klikk rullegardinknappen i feltet Koblet produktnummer for å åpne oppslaget.
 7. Klikk koblingen i den valgte raden i listen.
 8. Klikk rullegardinknappen i feltet Enhet for å åpne oppslaget.

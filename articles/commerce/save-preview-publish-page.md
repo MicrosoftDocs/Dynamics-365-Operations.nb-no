@@ -17,16 +17,16 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 3fff8299ecc6833890b14fa421501236830b2c61
-ms.sourcegitcommit: ef3a1d7527311d00b69a1072ae5eb021ce68034c
+ms.openlocfilehash: 04200264fabca265484b5e66426810efe8028a50
+ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "2945680"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "3002825"
 ---
 # <a name="save-preview-and-publish-a-page"></a>Lagre, forhåndsvise og publisere en side
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 Dette emnet beskriver hvordan du lagrer, forhåndsviser og publiserer en side i Microsoft Dynamics 365 Commerce.

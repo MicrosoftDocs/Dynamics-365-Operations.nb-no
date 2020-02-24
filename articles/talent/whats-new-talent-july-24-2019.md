@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-07-23
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: ffbb29fb89ed6a3fd6db11f2c8d656ab565c43f3
-ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
+ms.openlocfilehash: 8d89b1251429281521f32338f642cc7034420e0b
+ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "2897655"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "3005992"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-talent-july-23-2019"></a>Hva er nytt eller endret i Dynamics 365 Talent (23. juli 2019)
 
@@ -73,6 +73,6 @@ Et nytt alternativ lar ledere vise prestasjonen til både direkte underordnede o
 
 ### <a name="region-support-for-canada-and-southeast-asia"></a>Områdestøtte for Canada og Sørøst-Asia
 
-Vi er glad for å annonsere at områdene Canada og Sørøst-Asia er tilgjengelige for Talent 1. august 2019. Med denne endringen kan du opprette miljøer i de kanadiske og asiatiske områdene, og alle Talent-data vil bli oppbevart kun innenfor disse stedene. Du kan opprette et miljø i disse nye områdene ved å velge plasseringen i dialogboksen Nytt miljø og bruke dette miljøet til å klargjøre Talent i LCS som beskrevet her [Klargjøre Talent](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/provisioning-talent).
+Vi er glad for å annonsere at områdene Canada og Sørøst-Asia er tilgjengelige for Talent 1. august 2019. Med denne endringen kan du opprette miljøer i de kanadiske og asiatiske områdene, og alle Talent-data vil bli oppbevart kun innenfor disse stedene. Du kan opprette et miljø i disse nye områdene ved å velge plasseringen i dialogboksen Nytt miljø og bruke dette miljøet til å klargjøre Talent i LCS som beskrevet her [Klargjøre Talent](https://docs.microsoft.com/dynamics365/unified-operations/talent/provisioning-talent).
 
 Dataoverføring av eksisterende prosjekter fra andre områder til de kanadiske og asiatiske områdene støttes ikke. Bare nye prosjekter kan klargjøres for de nye områdene som støttes.

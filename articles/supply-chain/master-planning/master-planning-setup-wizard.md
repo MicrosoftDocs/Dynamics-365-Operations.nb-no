@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2019-05-31
 ms.dyn365.ops.version: AX 10.0.0
-ms.openlocfilehash: 8fbccce6e23c9bc965f66f761f4c1cab32224ef1
-ms.sourcegitcommit: fbd6d027ef3b50c056260e30e78066839efa3ddb
+ms.openlocfilehash: 9d7da31f2df31c7e5cbac73b3232233090ac369e
+ms.sourcegitcommit: 4e62c22b53693c201baa646a8f047edb5a0a2747
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "2635132"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "3031073"
 ---
 # <a name="master-planning-setup-wizard"></a>Veiviser for oppsett for hovedplanlegging
 
@@ -32,7 +32,7 @@ ms.locfileid: "2635132"
 
 Dette emnet inneholder en veiledning for **Veiviser for oppsett for hovedplanlegging**. Den forklarer hvordan parameterforslag beregnes, og inneholder også eksempler som viser hvordan ulike selskaper konfigurerer hovedplanlegging, basert på virksomhetens behov.
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE3YnSB]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3YnSB]
 
 Videoen [Veiviser for oppsett for hovedplanlegging Dynamics 365 Supply Chain Management](https://youtu.be/c-e6n-8rZb4) (vises over) er inkludert i [Finance and Operations-spillelisten](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) som er tilgjengelig på YouTube.
 
@@ -184,7 +184,7 @@ I veiviseren angis følgende verdier for Contoso Manufacturer:
 Contoso Retailer er et distribusjonsfirma i motebransjen. Den bruker hovedplanlegging til å beregne når bestillinger skal plasseres, basert på prognoser for salg. Her er noen av egenskapene:
 
 - Contoso Retailer bruker en behovsprognose til å forutsi salg. Bestillinger vil bli planlagt i henhold til prognosen.
-- Detaljhandelbutikker bruker rekvisisjoner for etterfylling.
+- Butikker bruker rekvisisjoner for etterfylling.
 - Leveringstiden fra hovedlageret til hver butikk er omtrent to uker for alle varer.
 
 I veiviseren angis følgende verdier for Contoso Retailer:
@@ -208,4 +208,4 @@ I veiviseren angis følgende verdier for Contoso Retailer:
     - **Spørsmål:** "Ønsker du å ta med etterspørsel fra godkjente rekvisisjoner til å etterfylle detaljhandelbutikker?"
     - **Svar:** "Ja, som definert i denne hovedplanen." **1 dag** angis.
 
-    Contoso bruker de godkjente rekvisisjonene fra sine detaljhandelsbutikker til å opprette bestillingsforslag for å etterfylle disse butikkene. Fordi hovedplanlegging kjøres hver dag, blir rekvisisjonen fra den siste dagen inkludert i planleggingen.
+    Contoso bruker de godkjente rekvisisjonene fra sine butikker til å opprette bestillingsforslag for å etterfylle disse butikkene. Fordi hovedplanlegging kjøres hver dag, blir rekvisisjonen fra den siste dagen inkludert i planleggingen.

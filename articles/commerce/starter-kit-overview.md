@@ -3,7 +3,7 @@ title: Startpakke, oversikt
 description: Dette emnet viser en oversikt over startpakken for Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
-ms.date: 10/01/2019
+ms.date: 01/23/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -18,16 +18,16 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 73af7fc8845fe08bc4aa014abe4d8c6dcf7ccb7d
-ms.sourcegitcommit: 3a4e137ef3a96ba0a58c5352f4a3b57467ace9ae
+ms.openlocfilehash: 1960e1354744fe1034783177ba331f5877d0bee7
+ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/11/2019
-ms.locfileid: "2785266"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "3025908"
 ---
 # <a name="starter-kit-overview"></a>Startpakke, oversikt
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 Dette emnet viser en oversikt over startpakken for Microsoft Dynamics 365 Commerce.
@@ -43,7 +43,7 @@ Temaer kan brukes på modulene i startpakken for å endre utseende og virkemåte
 Følgende modultyper finnes i startpakken:
 
 - **Containermodul** – En containermodul er en enkel modul som fungerer som vert for andre moduler. Den kontrollerer oppsettet til modulene som er i det.
-- **Markedsføringsmoduler** – Markedsføringsmoduler omfatter moduler for hovedbanner, funksjon, innholdsplassering, innholdsrik blokk, videospiller og karusell. Alle disse modulene kan brukes til å vise innhold. De kan plasseres på en hvilken som helst side og er drevet av data fra et innholdsbehandlingssystem (CMS).
+- **Markedsføringsmoduler** – Markedsføringsmoduler omfatter moduler for innholdsblokk, tekstblokk, videospiller og karusell. Alle disse modulene kan brukes til å vise innhold. De kan plasseres på en hvilken som helst side og er drevet av data fra et innholdsbehandlingssystem (CMS).
 - **Topptekst- og bunntekstmoduler** – Topptekst- og bunntekstmoduler vises i topp- og bunnteksten på alle områdesider. Disse modulene kan konfigureres som obligatoriske via egenskaper.
 - **Søkemoduler** – Produkter kan oppdages ved hjelp av søkemodulen i toppteksten. Søkeresultatene vises på søkeresultatsiden. Produkter kan også oppdages på kategorisider, som er dedikerte sider for hver kategori som støttes i kanalnavigeringshierarkiet. I tillegg kan presiseringsmoduler brukes til å filtrere resultater på søkeresultat- og kategorisider ytterligere.
 - **Moduler for produktdetaljside** – Produktdetaljsider bruker flere moduler til å vise produktinformasjon. Kjøpsboksmodulen lar kundene vise produkter og legge dem til handlekurven. Andre moduler, som modulen for tekniske spesifikasjoner, viser produktdetaljene. Modulen for vurderinger og omtale kan brukes til å vise og gi vurderinger.

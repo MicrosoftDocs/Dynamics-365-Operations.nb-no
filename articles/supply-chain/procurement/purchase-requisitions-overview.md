@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1bfec4660d9e6b0898cf81e1f1fdd2e4c1fdcaef
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 0a51d443e40dbf948a06657293dcca77dc177896
+ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2815348"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "3003659"
 ---
 # <a name="purchase-requisition-overview"></a>Oversikt over innkjøpsrekvisisjoner
 
@@ -81,7 +81,7 @@ Den overordnede statusen for en innkjøpsrekvisisjon bestemmes av statusen for i
 <li><strong>Til vurdering</strong> – Innkjøpsrekvisisjonslinjene er sendt til gjennomgang. Når arbeidsflytprosessen er fullført for en innkjøpsrekvisisjonslinje, forblir statusen for denne linjen <strong>Til vurdering</strong> til alle gjenværende innkjøpsrekvisisjonslinjer er gjennomgått.</li>
 <li><strong>Avvist</strong> – En innkjøpsrekvisisjonslinje er avvist. Innkjøpsrekvisisjonslinjer som er avvist kan endres og sendes på nytt.</li>
 </ul>
-Hvis du sende en innkjøpsrekvisisjonslinje som er avvist, på nytt, starter kontrollprosessen på nytt for alle linjene i innkjøpsrekvisisjonen som fortsatt er til vurdering. <strong>Obs!</strong> Du kan tilbakekalle en innkjøpsrekvisisjon som allerede er sendt. Når du tilbakekaller en innkjøpsrekvisisjon, blir også alle andre innkjøpsrekvisisjonslinjer tilbakekalt. Innkjøpsrekvisisjonslinjer som har blitt tilbakekalt, kan slettes.</td>
+Hvis du sende en innkjøpsrekvisisjonslinje som er avvist, på nytt, starter kontrollprosessen på nytt for alle linjene i innkjøpsrekvisisjonen som fortsatt er til vurdering. </br><strong>Obs!</strong> Du kan tilbakekalle en innkjøpsrekvisisjon som allerede er sendt. Når du tilbakekaller en innkjøpsrekvisisjon, blir også alle andre innkjøpsrekvisisjonslinjer tilbakekalt. Innkjøpsrekvisisjonslinjer som har blitt tilbakekalt, kan slettes.</td>
 </tr>
 <tr class="odd">
 <td>Avslått</td>
@@ -109,7 +109,7 @@ Hvis du sende en innkjøpsrekvisisjonslinje som er avvist, på nytt, starter kon
 <tr class="odd">
 <td>Annullert</td>
 <td>Annullert</td>
-<td>Innkjøpsrekvisisjonen og alle innkjøpsrekvisisjonslinjer har blitt avbrutt. <strong>Obs!</strong> Hvis du ikke lenger trenger en vare som er på en innkjøpsrekvisisjonslinje, må du avbryte innkjøpsrekvisisjonslinjen hvis den allerede er godkjent. Bare innkjøpsrekvisisjonslinjer som har blitt godkjent, kan avbrytes. Hvis innkjøpsrekvisisjonslinjer er til vurdering, får innkjøpsrekvisisjonen statusen <strong>Til vurdering</strong>. I så fall kan du tilbakekalle innkjøpsrekvisisjonen og slette den aktuelle innkjøpsrekvisisjonslinjen.</td>
+<td>Innkjøpsrekvisisjonen og alle innkjøpsrekvisisjonslinjer har blitt avbrutt.</br> <strong>Obs!</strong> Hvis du ikke lenger trenger en vare som er på en innkjøpsrekvisisjonslinje, må du avbryte innkjøpsrekvisisjonslinjen hvis den allerede er godkjent. Bare innkjøpsrekvisisjonslinjer som har blitt godkjent, kan avbrytes. Hvis innkjøpsrekvisisjonslinjer er til vurdering, får innkjøpsrekvisisjonen statusen <strong>Til vurdering</strong>. I så fall kan du tilbakekalle innkjøpsrekvisisjonen og slette den aktuelle innkjøpsrekvisisjonslinjen.</td>
 </tr>
 <tr class="even">
 <td>Lukket</td>
@@ -156,7 +156,8 @@ I noen tilfeller må du starte en prosess for tilbudsforespørsel for å identif
 
 Du kan sette en innkjøpsrekvisisjon på vent ved å merke av for **På vent** på siden **Detaljer om innkjøpsrekvisisjon**. Behandling av innkjøpsrekvisisjonen kan fortsette bare etter at du fjerner sperren ved å fjerne merket.  
 
-**Obs!** I eProcurement kan tilbudsforespørselen for din innkjøpsrekvisisjon kanskje tillate at leverandører kan legge til alternative linjer. I så fall gjenspeiler innkjøpsrekvisisjonen godkjente alternativer.
+> [!NOTE]
+> I eProcurement kan tilbudsforespørselen for din innkjøpsrekvisisjon kanskje tillate at leverandører kan legge til alternative linjer. I så fall gjenspeiler innkjøpsrekvisisjonen godkjente alternativer.
 
 ## <a name="demand-consolidation"></a>Behovskonsolidering
 Hvis du konsoliderer innkjøpsrekvisisjonslinjer fra flere innkjøpsrekvisisjoner, kan du forbedre forhandlingsposisjonen overfor leverandører for å oppnå bedre priser, lavere kostnader ved forsendelse og behandling og lavere administrasjonskostnader.  
@@ -172,7 +173,8 @@ En konsolideringsmulighet er et sett med innkjøpsrekvisisjonslinjer som er grup
 
 Når du har lagt til rekvisisjonslinjene i en konsolideringsmulighet og foretatt endringer som du ønsker, kan du opprette en bestilling for de konsoliderte innkjøpsrekvisisjonslinjene.  
 
-**Obs!** Endringer du foretar på en innkjøpsrekvisisjonslinje på siden **Konsolidering av innkjøpsrekvisisjon** gjenspeiles i bestillingen du oppretter. Linjen forblir imidlertid uendret i innkjøpsrekvisisjonen, slik at historikken beholdes.  
+> [!NOTE]
+> Endringer du foretar på en innkjøpsrekvisisjonslinje på siden **Konsolidering av innkjøpsrekvisisjon**, gjenspeiles i bestillingen du oppretter. Linjen forblir imidlertid uendret i innkjøpsrekvisisjonen, slik at historikken beholdes.  
 
 Hvis du vil opprette en bestilling for innkjøpsrekvisisjonslinjer som ikke er kvalifisert for behovskonsolidering, eller som ikke er valgt for en konsolideringsmulighet, må du behandle linjene manuelt.
 

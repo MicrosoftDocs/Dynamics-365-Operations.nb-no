@@ -3,7 +3,7 @@ title: Ordliste for sidemodell
 description: Dette emnet beskriver de ulike elementene som brukes på sidene på et Microsoft Dynamics 365 Commerce-område.
 author: phinneyridge
 manager: annbe
-ms.date: 12/12/2019
+ms.date: 01/31/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,16 +17,16 @@ ms.search.industry: ''
 ms.author: niholman
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 0285af2f73a25db3199b3cb089bc0b253a3b3f00
-ms.sourcegitcommit: 36857283d70664742c8c04f426b231c42daf4ceb
+ms.openlocfilehash: da41440581ad952540c7dcf3caa5e23582198a36
+ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "2914870"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "3026000"
 ---
 # <a name="page-model-glossary"></a>Ordliste for sidemodell
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 Dette emnet beskriver de ulike elementene som brukes på sidene på et Microsoft Dynamics 365 Commerce-område.
@@ -41,10 +41,10 @@ Følgende tabell gir et sammendrag av termene du bør være kjent med når du en
 | Modulegenskap | <p>**Definisjon:** Modulegenskaper er bestemte innstillinger som defineres av modulen. De kan redigeres i redigeringsverktøyene for e-handel. Modulegenskaper brukes for eksempel til å angi overskrifts- og bakgrunnsbildet for en bannermodul.</p><p>**Hvor de konfigureres:** Det velges og konfigureres modulegenskaper i egenskapsruten som vises i redigeringsmiljøene (redigeringsprogrammer) for maler, oppsett, sider, fragmenter og appinnstillinger.</p> |
 | [Mal](templates-layouts-overview.md) | <p>**Definisjon:** Maler definerer modulkombinasjonene og alternativene som skal brukes for en kategori med sider (for eksempel markedsføringssider, kategorisider og produktsider).</p><p>**Hvor de velges:** Maler kan velges under opprettingsarbeidsflyter for side eller oppsett.</p><p>**Hvor de redigeres:** Maler redigeres i redigeringsprogrammet for maler. Det kreves ingen kode for å opprette eller endre dem.</p> |
 | [Oppsett](templates-layouts-overview.md) | <p>**Definisjon:** Oppsett definerer det endelige utvalget og ordningen av moduler fra settet med alternativer for den overordnede malen. Et oppsett kan konfigureres for en enkelt side (*egendefinert oppsett*), eller den kan deles av flere sider (*forhåndsdefinert oppsett*).</p><p>**Hvor de velges:** Oppsett kan velges ved oppretting av nye sider eller når det er nødvendig med et annet oppsett for en eksisterende side.</p><p>**Hvor de redigeres:** Oppsett redigeres i redigeringsprogrammet for oppsett. Det kreves ingen kode for å opprette eller endre dem.</p> |
-| Sideforekomst | <p>**Definisjon:** Sideforekomster definerer det endelige, sidespesifikke lokaliserte innholdet for én enkelt side. Dette innholdet er avledet fra verdiene i modulegenskapene.</p><p>**Hvor de velges:** Sider velges når URL-adresser tilordnes.</p><p>**Hvor de redigeres:** Sider redigeres i redigeringsprogrammet for side. Det kreves ingen kode for å opprette eller endre dem.</p> |
+| [Sideforekomst](modify-existing-page.md) | <p>**Definisjon:** Sideforekomster definerer det endelige, sidespesifikke lokaliserte innholdet for én enkelt side. Dette innholdet er avledet fra verdiene i modulegenskapene.</p><p>**Hvor de velges:** Sider velges når URL-adresser tilordnes.</p><p>**Hvor de redigeres:** Sider redigeres i redigeringsprogrammet for side. Det kreves ingen kode for å opprette eller endre dem.</p> |
 | [Tema](select-site-theme.md) | <p>**Definisjon:** Temaer definerer det gjennomgripende stilarket (CSS) og bestemmer utseendet og funksjonaliteten til modulene som vises på en side.</p><p>**Hvor de velges:** Når et tema lastes opp til området ved hjelp av Microsoft Dynamics Lifecycle Services (LCS), kan det velges som en egenskap for sidecontainermodulen.</p><p>**Hvor de redigeres:** Temaer opprettes og redigeres for øyeblikket ved hjelp av SDK. Deretter lastes de opp til området ved hjelp av LCS.</p> |
 | [Fragment](work-with-fragments.md) | <p>**Definisjon:** Fragmenter er fullstendig konfigurerte moduler som har lokalisert innhold som kan brukes på nytt, og sentralt oppdateres på tvers av flere sider. Et fragment som er opprettet fra en topptekstmodul, kan for eksempel brukes i alle maler og på alle sider på tvers av området, og oppdateres sentralt på ett sted.</p><p>**Hvor de velges:** Fragmenter kan velges der moduler kan velges. De kan erstattes for en modul for å bidra til å øke effektiviteten via redigering som er sentralisert og kan brukes på nytt.</p><p>**Hvor de redigeres:** Fragmenter redigeres i redigeringsprogrammet for fragment. Det kreves ingen kode for å opprette eller endre dem.</p> |
-| URL-adresse | <p>**Definisjon:** Uniform Resource Locator (URL) er adresser som peker til nettsider eller andre URL-adresser.</p><p>**Hvor de velges:** URL-adresser velges når det kreves koblinger mellom sider.</p><p>**Hvor de redigeres:** URL-adresser redigeres i redigeringsprogrammet for URL-adresser. Det kreves ingen kode for å opprette eller endre dem.</p> |
+| [URL-adresse](create-page-URL.md) | <p>**Definisjon:** Uniform Resource Locator (URL) er adresser som peker til nettsider eller andre URL-adresser.</p><p>**Hvor de velges:** URL-adresser velges hvis det kreves koblinger mellom sider.</p><p>**Hvor de redigeres:** URL-adresser redigeres i redigeringsprogrammet for URL-adresser. Det kreves ingen kode for å opprette eller endre dem.</p> |
 | Aktivum | <p>**Definisjon:** Aktiva er binære filer med filtyper som jpg, docx, pdf eller mpg.</p><p>**Hvor de velges:** Aktiva velges som modulegenskaper for moduler som krever dem.</p><p>**Hvor de redigeres:** Aktivva lastes opp, og tilknyttede metadata redigeres i aktivabehandling.</p> |
 
 ## <a name="additional-resources"></a>Tilleggsressurser

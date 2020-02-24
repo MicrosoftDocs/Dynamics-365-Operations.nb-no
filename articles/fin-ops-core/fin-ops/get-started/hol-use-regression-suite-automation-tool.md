@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: AX 7.0.0, Operations
-ms.openlocfilehash: 654685a382ca5f3f462ad8a9c506b51b52c3758c
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 026d1d743b5150f152ef70aa642dcf6841a4e398
+ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2811655"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "3025810"
 ---
 # <a name="use-the-regression-suite-automation-tool-tutorial"></a>Bruke opplæringen for Regression Suite Automation Tool
 
@@ -93,7 +93,7 @@ I tidligere versjoner av RSAT kunne du bare validere verdier hvis en kontrollver
 
 - Hvis du vil bruke denne funksjonen, åpner du filen **Microsoft.Dynamics.RegressionSuite.WindowsApp.exe.config** under RSAT-installasjonsmappen (for eksempel **C:\\Programfiler (x86)\\Regression Suite Automation Tool**) og endrer verdien i følgende element fra **false** til **true**.
 
-    ```
+    ```xml
     <add key="AddOperatorFieldsToExcelValidation" value="false" />
     ```
 
@@ -136,7 +136,7 @@ Denne funksjonen oppretter en mappe som inneholder loggene for testtilfellene so
 
 - Hvis du vil bruke denne funksjonen, åpner du filen **Microsoft.Dynamics.RegressionSuite.WindowsApp.exe.config** under RSAT-installasjonsmappen (for eksempel **C:\\Programfiler (x86)\\Regression Suite Automation Tool**) og endrer verdien i følgende element fra **false** til **true**.
 
-    ```
+    ```xml
     <add key="LogGeneration" value="false" />
     ```
 
@@ -155,7 +155,7 @@ Denne funksjonen tar skjermbilder av trinnene som ble utført under oppgaveoppta
 
 - Hvis du vil bruke denne funksjonen, åpner du filen **Microsoft.Dynamics.RegressionSuite.WindowsApp.exe.config** under RSAT-installasjonsmappen (for eksempel **C:\\Programfiler (x86)\\Regression Suite Automation Tool**) og endrer verdien for følgende element fra **false** til **true**.
 
-    ```
+    ```xml
     <add key="VerboseSnapshotsEnabled" value="false" />
     ```
 
@@ -196,7 +196,7 @@ Illustrasjonen nedenfor viser forretningsprosessene for dette scenariet i RSAT.
 - Bruk tidsgjenoppretting av database for Azure til å kjøre tester på nytt i andre miljøer enn Lag 1-miljøer.
 - Selv om du kan bruke Excel-funksjonene **TILFELDIG** og **NÅ** til å generere en unik kombinasjon, er det langt fra lettvint. Her er et eksempel:
 
-    ```
+    ```Excel
     product = "AT" &TEXT(NOW(),"yyymmddhhmm")
     ```
 
@@ -227,13 +227,13 @@ RSAT kan kalles fra et **ledetekstvindu**.
 1. Åpne et **ledetekstvindu** som administrator.
 2. Kjør verktøyet fra installasjonskatalogen.
 
-    ```
+    ```Console
     cd "c:\Program Files (x86)\Regression Suite Automation Tool\"
     ```
 
 3. Vis alle kommandoer.
 
-    ```
+    ```Console
     C:\Program Files (x86)\Regression Suite Automation Tool>Microsoft.Dynamics.RegressionSuite.ConsoleApp.exe help
 
     Usage:
@@ -275,7 +275,7 @@ I det følgende eksemplet brukes én parameter, **start**, til å definere det f
 
 Åpne Microsoft Windows PowerShell Integrated Scripting Environment (ISE) i administratormodus, og lim inn følgende kode i vinduet kalt **Untitled1.ps1**.
 
-```
+```powershell
 param ( [int]$start = 1, [int]$nr = 1 )
 function UpdateCustomer
 {
@@ -314,7 +314,7 @@ for ($i = $start; $i -lt $start + $nr; $i++ )
 
 Det følgende eksemplet bruker et OData-kall (Open Data Protocol) til å finne ordrestatusen for en bestilling. Hvis statusen ikke er **fakturert**, kan du for eksempel kalle et RSAT-testtilfelle som posterer fakturaen.
 
-```
+```xpp
 function Odata_Get
 {
     Param ( [string] $environment, [string] $cmd )

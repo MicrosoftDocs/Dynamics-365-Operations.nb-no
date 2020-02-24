@@ -3,7 +3,7 @@ title: Oversikt over administrasjon av forretningsdokument
 description: Dette emnet gir informasjon om hvordan du bruker funksjonen for administrasjon av forretningsdokument i ER-rammeverket.
 author: NickSelin
 manager: AnnBe
-ms.date: 08/09/2019
+ms.date: 01/15/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-08-01
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 3aac66cc39d854cabdb3d29bde029d93683e2ef7
-ms.sourcegitcommit: 3a06d3b38d9de2afc22839e5a794829405068024
+ms.openlocfilehash: 0deb51bb23851b179e2c4166b6444af654a64e1d
+ms.sourcegitcommit: 380664bf10bb25449e3af3d62e235b76d46c0c89
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "2933914"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "2957373"
 ---
 # <a name="business-document-management-overview"></a>Oversikt over administrasjon av forretningsdokument
 
@@ -122,7 +122,7 @@ Bruk fremgangsmåten nedenfor til å aktivere funksjonalitet for administrasjon 
 4. Oppdater siden for å få tilgang til den nye funksjonen.
 
 >[!NOTE]
-> Du må også aktivere **Office-lignende brukergrensesnitterfaring for administrasjon av forretningsdokument** for bruk av nytt grensesnitt for administrasjon av forretningsdokumenter.
+> Hvis du vil ha mer informasjon om bruk av det nye dokumentbrukergrensesnittet i forretningsdokumentadministrering, kan du se [Nytt dokumentbrukergrensesnitt i forretningsdokumentadministrering](er-business-document-management-new-template-ui.md).
 
 ![Arbeidsområde for funksjonsbehandling](./media/BDM-Overview-FMEnabling.png)
 
@@ -147,7 +147,7 @@ Hvis du vil ha informasjon om hvordan du definerer de nødvendige dokumentbehand
 
 ![Definere dokumenttype for dokumentstyring](./media/BDM-Overview-DMSetting.png)
 
-### <a name="set-up-parameters"></a>Definere parametere
+### <a name="SetupBdmParameters">Definere parametere</a>
 
 Grunnleggende parametere for administrasjon av forretningsdokument kan defineres på siden **Parametere for forretningsdokument**. Bare bestemte brukere har tilgang til siden. Inkludert følgende:
 
@@ -166,6 +166,9 @@ Bruk fremgangsmåten nedenfor til å definere de grunnleggende parameterne for a
 ![Oppsett av parametere for administrasjon av forretningsdokument](./media/BDM-Overview-BDMSetting.png)
 
 Den valgte dokumenttypen er firmaspesifikk og vil bli brukt når brukeren arbeider med administrasjon av forretningsdokument i firmaet som den valgte dokumenttypen er konfigurert for. Når brukeren arbeider med administrasjon av forretningsdokument i et annet firma, vil den samme valgte dokumenttypen bli brukt hvis det ikke er definert en dokumenttype for dette firmaet. Når en dokumenttype er konfigurert, blir den brukt i stedet for den som er valgt i feltet **SharePoint-dokumenttype**.
+
+> [!NOTE]
+> **SharePoint-dokumenttype**-parameteren definerer en SharePoint-mappe som midlertidig lagringsplass for maler som kan redigeres ved å bruke Microsoft Excel eller Word. Du må definere denne parameteren hvis du har tenkt å bruke disse Office-skrivebordsapplikasjonene til å redigere maler. Hvis du vil ha mer informasjon, kan du se [Redigere en mal i Office-skrivebordsapplikasjonen](#EditInOfficeDesktopApp). Du kan la denne parameteren være tom hvis du planlegger å endre malen ved bare å bruke funksjonaliteten i Office 365. Hvis du vil ha mer informasjon, kan du se [Redigere en mal i Office 365](#EditInOffice365).
 
 ## <a name="configure-access-permissions"></a>Konfigurere tilgangstillatelser
 
@@ -258,23 +261,18 @@ Alternativet **Rediger mal** er tilgjengelig for den valgte malen. Dette alterna
 
 ### <a name="initiate-editing-templates-owned-by-other-providers"></a>Start redigering av maler som eies av andre leverandører
 
-1. Velg det **nye dokumentet**i arbeidsområdet administrasjon av forretningsdokument.
+1. I Forretningsdokumentadministrering-arbeidsområdet velger du dokumentet du vil bruke som en mal.
 
-![Arbeidsområdesiden Administrasjon av forretningsdokument](./media/BDM_overview_new_template1.png)
+![Arbeidsområdesiden Administrasjon av forretningsdokument](./media/BDM-Overview-EditingTemplate3.png)
 
-2. Velg dokumentet du vil bruke som mal.
+3. Velg **Nytt dokument**, gå til **Tittel**-feltet og endre om nødvendig tittelen på den redigerbare malen. Teksten brukes til å navngi ER-formatkonfigurasjonen som opprettes automatisk. Legg merke til at utkastversjonen av denne konfigurasjonen (**Kunde-FTI-rapport (GER) – kopi**) som vil inneholde den redigerte malen, automatisk vil bli merket for å kjøre dette ER-formatet for gjeldende bruker. Samtidig brukes den uendrede opprinnelige malen fra den grunnleggende ER-formatkonfigurasjonen til å kjøre dette ER-formatet for alle andre brukere.
+4. I **Navn** -feltet endrer du navnet på den første revisjonen av den redigerbare malen som skal opprettes automatisk.
+5. I **Kommentar**-feltet endrer du kommentaren for den automatisk opprettede revisjonen av den redigerbare malen.
+6. Velg **OK** for å bekrefte starten på redigeringsprosessen
 
-![Arbeidsområdesiden Administrasjon av forretningsdokument](./media/BDM_overview_new_template2.png)
+![Arbeidsområdesiden Administrasjon av forretningsdokument](./media/BDM-Overview-EditingTemplate4.png)
 
-3. Klikk **Opprett dokument**
-4. I **Tittel**-feltet endrer du tittelen på den redigerbare malen, om nødvendig. Teksten brukes til å navngi ER-formatkonfigurasjonen som opprettes automatisk. Legg merke til at utkastversjonen av denne konfigurasjonen (**Kunde-FTI-rapport (GER) – kopi**) som vil inneholde den redigerte malen, automatisk vil bli merket for å kjøre dette ER-formatet for gjeldende bruker. Samtidig brukes den uendrede opprinnelige malen fra den grunnleggende ER-formatkonfigurasjonen til å kjøre dette ER-formatet for alle andre brukere.
-5. I **Navn** -feltet endrer du navnet på den første revisjonen av den redigerbare malen som skal opprettes automatisk.
-6. I **Kommentar**-feltet endrer du kommentaren for den automatisk opprettede revisjonen av den redigerbare malen.
-7. Velg **OK** for å bekrefte starten på redigeringsprosessen
-
-![Arbeidsområdesiden Administrasjon av forretningsdokument](./media/BDM_overview_new_template3.png)
-
-Alternativet **Nytt dokument** er alltid tilgjengelig for en mal i en ER-formatkonfigurasjon som eies av en annen leverandør (Microsoft i dette eksemplet). Når du klikker **Nytt dokument**, ser du alle malene som eies av gjeldende og andre leverandører. Når du har valgt malen, åpnes den for redigering. Den redigerte malen blir deretter lagret i en ny ER-formatkonfigurasjon som genereres automatisk.
+**Nytt dokument**-alternativet er alltid tilgjengelig for en mal i en ER-formatkonfigurasjon levert av gjeldende og en annen leverandør (Microsoft i dette eksempelet) som ikke har noen revisjoner. Den redigerte malen blir deretter lagret i en ny ER-formatkonfigurasjon som genereres automatisk.
 
 ### <a name="start-editing-a-template"></a>Begynn å redigere en mal
 
@@ -282,7 +280,7 @@ Alternativet **Nytt dokument** er alltid tilgjengelig for en mal i en ER-formatk
 2. I **Navn** -feltet endrer du navnet på den første revisjonen av den redigerbare malen som skal opprettes automatisk.
 3. I **Kommentar**-feltet endrer du kommentaren for den automatisk opprettede revisjonen av den redigerbare malen.
 
-    ![Arbeidsområdesiden Administrasjon av forretningsdokument](./media/BDM_overview_new_template4.png)
+    ![Arbeidsområdesiden Administrasjon av forretningsdokument](./media/BDM-Overview-EditingTemplate5.png)
 
 5. Velg **OK** for å bekrefte starten på redigeringsprosessen.
 
@@ -290,13 +288,16 @@ Siden **BDM-malredigering** åpnes. Den valgte malen vil være tilgjengelig for 
 
 ![Arbeidsområdesiden Administrasjon av forretningsdokument](./media/BDM-Overview-EditingLayout1.png)
 
-### <a name="edit-a-template-in-office-365"></a>Redigere en mal i Office 365
+### <a name="EditInOffice365">Redigere en mal i Office 365</a>
 
-Endre malen ved hjelp av funksjonaliteten i Office 365. I Office Online kan du for eksempel endre skrifttypen til feltledetekstene i maloverskriften fra **Vanlig** til **Fet**. Disse endringene lagres automatisk for den redigerbare malen som er lagret i den primær malens lager (som standard Azure blob-lageret) som er konfigurert for ER-rammeverket.
+Du kan endre malen ved å bruke Office 365. I Office Online kan du for eksempel endre skrifttypen til feltledetekstene i maloverskriften fra **Vanlig** til **Fet**. Disse endringene lagres automatisk i den redigerbare malen som er lagret i den primære malens lagringsplass (som standard Azure Blob-lagring). Dette er konfigurert for ER-rammeverket.
 
 ![Side for redigering av mal for administrasjon av forretningsdokument](./media/BDM-Overview-EditingLayout2.png)
 
-### <a name="edit-a-template-in-the-office-desktop-application"></a>Redigere en mal i Office-skrivebordsprogrammet
+### <a name="EditInOfficeDesktopApp">Redigere en mal i Office-skrivebordsprogrammet</a>
+
+> [!NOTE]
+> Denne funksjonen er bare tilgjengelig når **SharePoint-dokumenttype**-parameteren er konfigurert riktig. Hvis du vil ha mer informasjon, kan du se [Konfigurere parametere](#SetupBdmParameters).
 
 1. Velg alternativet **Åpne i skrivebordsprogram** for å endre malen ved hjelp av funksjonaliteten i Office-skrivebordsprogrammet (Excel i dette eksemplet). Den redigerbare malen kopieres fra det permanente lageret til den midlertidige lagringsplassen som er konfigurert i parameterne for administrasjon av forretningsdokument som en SharePoint-mappe.
 2. Bekreft at du vil åpne malen fra den midlertidige fillagringen i Office Excel-programmet.
@@ -386,7 +387,7 @@ Når du redigerer malen fra et ER-format som eies av gjeldende aktive leverandø
 
 ## <a name="frequently-asked-questions"></a>Vanlige spørsmål
 
-#### <a name="i-selected-edit-document-but-instead-of-opening-the-bdm-template-editor-page-in-finance-and-operations-i-have-been-sent-to-the-office-365-web-page"></a>Jeg valgte **Rediger dokument**, men i stedet for å åpne siden **BDM-malredigering** i Finance and Operations, er jeg blitt sendt til Office 365-nettsiden.
+#### <a name="i-selected-edit-document-but-instead-of-opening-the-bdm-template-editor-page-in-finance-and-operations-i-have-been-sent-to-the-office-365-web-page"></a>Jeg valgte **Rediger dokument**, men i stedet for å åpne **BDM-malredigeringsprogram**-siden i Finance and Operations, ble jeg sendt til Office 365-nettstedet.
 Dette er et kjent problem med Office 365-omdirigeringen. Dette skjer når du logger på Office 365 for første gang. Du omgår dette problemet ved å velge **Tilbake**-knappen i nettleseren for å navigere tilbake.
 
 #### <a name="i-understand-how-to-edit-a-template-by-using-office-365-in-the-first-application-session-and-how-to-use-the-template-in-the-second-application-session-adjusting-the-template-to-see-how-my-changes-affect-the-generated-business-document-can-i-do-this-using-the-office-desktop-application"></a>Jeg forstår hvordan jeg redigerer en mal ved hjelp av Office 365 i den første programøkten, og hvordan jeg bruker malen i den andre programøkten til å justere malen for å se hvordan endringene påvirker det genererte forretningsdokumentet. Kan jeg gjøre dette ved hjelp av Office-skrivebordsprogrammet?
@@ -411,3 +412,4 @@ Sannsynligvis er du logget på den gjeldende forekomsten av appen for Azure AD-d
 [Bygge inn bilder og figurer i dokumenter du genererer ved hjelp av ER](electronic-reporting-embed-images-shapes.md)
 
 [Konfigurere elektronisk rapportering (ER) for å hente data til Power BI](general-electronic-reporting-report-configuration-get-data-powerbi.md)
+

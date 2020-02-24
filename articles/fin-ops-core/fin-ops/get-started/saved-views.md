@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2019-07-31
 ms.dyn365.ops.version: Platform update 28
-ms.openlocfilehash: 2f76c4e50649d3eda951940a2186348c29474dc6
-ms.sourcegitcommit: 574309903f15eeab7911091114885b5c7279d22a
+ms.openlocfilehash: 62d7dc1bd877cd1267f87ed24f8fb8be8f6c74a3
+ms.sourcegitcommit: 54baab2a04e5c534fc2d1fd67b67e23a152d4e57
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "2658673"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "3017710"
 ---
 # <a name="saved-views"></a>Lagrede visninger
 
@@ -37,7 +37,7 @@ Med tradisjonell tilpasning kan brukere bare ha ett sett av personlige tilpasnin
 
 -    Visninger som opprettes for bestemte sidetyper, kan også inneholde brukertillagte filtre eller sorteringer, som gjør at brukere raskt kan gå tilbake til vanlige datasett. Se delen [Hvilke sider som støtter visninger](saved-views.md#what-pages-support-views) for mer informasjon. 
 
--    Visninger kan publiseres til brukere i bestemte sikkerhetsroller og bestemte juridiske enheter. Derfor kan alle brukere som har en bestemt rolle i en bestemt juridisk enhet, få tilgang til og bruke denne visningen, selv om brukeren kanskje ikke kan tilpasse den. Ved hjelp av denne publiseringsfunksjonen kan organisasjoner definere standardvisninger som er optimalisert for deres virksomhet. Se delen [Administrere tilpasninger på organisasjonsnivå med visninger](saved-views.md#managing-personalizations-at-an-organizational-level-with-views) for mer informasjon.
+-    Visninger kan publiseres til brukere i bestemte sikkerhetsroller og bestemte juridiske enheter. Derfor kan alle brukere som har en bestemt rolle i og tilgang til en bestemt juridisk enhet, få tilgang til og bruke denne visningen, selv om brukeren kanskje ikke kan tilpasse den. Ved hjelp av denne publiseringsfunksjonen kan organisasjoner definere standardvisninger som er optimalisert for deres virksomhet. Se delen [Administrere tilpasninger på organisasjonsnivå med visninger](saved-views.md#managing-personalizations-at-an-organizational-level-with-views) for mer informasjon.
 
 -    I motsetning til tradisjonell tilpasning lagres ikke visninger automatisk når en bruker utfører eksplisitte tilpasninger eller filtrerer en liste. Eksplisitte lagre er nødvendig for å gi fleksibilitet ved oppretting av en visning før eller etter at endringene som er knyttet til denne visningen, er gjort, og for å sikre at visningsdefinisjoner ikke endres utilsiktet av filtre eller personlige tilpasninger som ikke er ment for langsiktig bruk.  
 
@@ -83,7 +83,7 @@ Følg disse trinnene for å endre standardvisningen for en side:
 2.  Velg visningsnavnet for å åpne visningsvelgeren. 
 3.  Velg **Merk** og deretter **Bruk som standard**.  
 
-Når du oppretter en ny visning (ved hjelp av **Lagre som**-handling), kan du gjøre denne nye visningen til standardvisning ved å velge **Bruk som standard**-valget før du lagrer visningen.
+Når du oppretter en ny visning (ved hjelp av **Lagre som**-handlingen), kan du gjøre denne nye visningen til standardvisning ved å velge **Bruk som standard**-valget før du lagrer visningen.
 
 Vær oppmerksom på at i noen tilfeller vil spørringen som er knyttet til standardvisningen, ikke utføres første gang du navigerer til en side. Hvis du for eksempel navigerer via en flis til en side, blir flisens spørring utført uansett hvilken spørring som er knyttet til standardvisningen. Hvis du navigerer til en side der Klassisk visning allerede har en definert spørring, vil den opprinnelige spørringen utføres opprinnelig i stedet for standardvisningens spørring. Når dette skjer, vil du bli varslet av en informasjonsmelding når visningen lastes inn. Bytting av visninger etter at siden er lastet inn, skal gjøre at visningsspørringen kjøres som forventet.
 
@@ -99,11 +99,11 @@ Hvis du vil ha en liste over tilgjengelige visninger for denne siden, er følgen
 Endringer som gjøres i denne dialogboksen, vil tre i kraft når du har valgt **Lagre**-knappen.
 
 ## <a name="managing-personalizations-at-an-organizational-level-with-views"></a>Administrere personlige tilpasninger på et organisasjonsnivå med visninger
-For å hjelpe deg med å forstå hvordan lagrede visninger bidrar til å forbedre administrasjonen av personlige tilpasninger på et organisasjonsnivå, beskriver dette avsnittet hvordan administrasjon av personlige data fungerte før visninger var tilgjengelige.
+For å hjelpe deg med å forstå hvordan lagrede visninger bidrar til å forbedre administrasjonen av personlige tilpasninger på et organisasjonsnivå, beskriver dette avsnittet noen forskjeller i administrasjon av personlige tilpasinger med og uten funksjonen for lagrede visninger.
 
 Uten visninger vil administratorer bruke et sett med personlige tilpasninger på en side for en bruker eller en gruppe av brukere via personaliseringssiden. Hvis disse brukerne hadde tilpasningsrettigheter, ville de personlige tilpasningene gjelde for den siden. Det var imidlertid ikke mulig å hindre brukere i å tilpasse siden ytterligere, som betød at organisasjonen ikke kan sikre at brukerne har et konsekvent brukergrensesnitt. Hvis noen av disse brukerne ikke hadde tilpasningsrettigheter, ble ikke tilpasningene som ble gitt til dem av en administrator, lastet inn. Hvis nye brukere ble ansatt i en organisasjon, måtte administratorer manuelt laste inn et sett med personlige tilpasninger for brukeren. Det var ingen automatisk mekanisme for å angi at et bestemt sett med personlige tilpasninger skal være tilgjengelig for brukere i denne rollen.
 
-Med funksjonen for lagrede visninger er organisasjonens administrasjon av tilpasninger betydelig enklere, primært fordi visninger kan publiseres til grupper av brukere. Når en visning er publisert, vil alle brukere som har en av de definerte sikkerhetsrollene, og som er i de angitte juridiske enhetene, ha tilgang til og kunne bruke visningen, selv om den brukeren kanskje ikke kan tilpasse den. Selv om hver bruker har en kopi av den publiserte visningen der sidebruk (implisitte tilpasninger) brukes automatisk, kan ingen brukere lagre eksplisitte personlige tilpasninger eller spørringsoppdateringer til en publisert visning. (Med andre ord låses publiserte visninger.) Hvis nye brukere får roller i juridiske enheter som visninger er publisert til, vil de automatisk se visningene som er knyttet til rollene og juridiske enheter. Ingen tilleggshandling kreves av administratoren. Hvis brukere endrer roller i en organisasjon eller får tilgang til ulike juridiske enheter, kan det hende at de ikke lenger får tilgang til visningene som tidligere ble publisert til dem. Her kreves det heller ingen tilleggshandling av administratoren.
+Med funksjonen for lagrede visninger er organisasjonens administrasjon av tilpasninger betydelig enklere, primært fordi visninger kan publiseres til grupper av brukere. Når en visning er publisert, vil alle brukere som har en av de definerte sikkerhetsrollene, og som har tilgang til en av de angitte juridiske enhetene, kunne se og bruke visningen, selv om den brukeren kanskje ikke kan tilpasse den. Selv om hver bruker har en kopi av den publiserte visningen der sidebruk (implisitte tilpasninger) brukes automatisk, kan ingen brukere lagre eksplisitte personlige tilpasninger eller spørringsoppdateringer til en publisert visning. Publiserte visninger er med andre ord låst. Hvis nye brukere får roller i juridiske enheter som visninger er publisert til, vil de automatisk se visningene som er knyttet til rollene og juridiske enheter. Ingen tilleggshandling kreves av administratoren. Hvis brukere endrer roller i en organisasjon eller får tilgang til ulike juridiske enheter, kan det hende at de ikke lenger får tilgang til visningene som tidligere ble publisert til dem. Her kreves det heller ingen tilleggshandling av administratoren.
 
 Oppdateringer til en publisert visning kan lett distribueres til brukere ved å publisere visningen på nytt til de riktige sikkerhetsrollene og juridiske enhetene.
 
@@ -119,7 +119,8 @@ Hvis du vil publisere en visning, gjør du følgende:
 4.  Oppgi et navn og (eventuelt) en beskrivelse av visningen. Navnet du angir, er navnet som brukeren som mottar denne visningen, vil se i visningsvelgerne. Navnene på publiserte visninger for en side må være unike. Ingen like navn er tillatt, selv om listen over roller eller judiriske enheter som visningene brukes på, varierer.
 5.  Legg til sikkerhetsrollene som samsvarer med brukerne som målrettes av denne visningen.
 6. Legg til de juridiske enhetene som denne visningen skal være tilgjengelig for. 
-7.  Velg **Publiser**.
+7. [10.0.9/Platform Update 33 eller senere] Avgjør om visningen skal publiseres som standardvisning for de valgte brukerne. Hvis du gjør en visning til standard, betyr det at dette er visningen brukerne vil se neste gang de åpner målsiden. Dette vil endre standardvisningen for disse brukerne. De kan imidlertid fremdeles endre standardvisningen etter at publiseringen har skjedd.    
+8.  Velg **Publiser**.
 
 Legg merke til at i noen miljøer kan det ta litt tid (opptil en time) før brukerne ser den publiserte visningen.
 
@@ -132,7 +133,8 @@ Hvis endringene du vil gjøre i en publisert visning, bare vil involvere publise
 3.  Velg **Ja** hvis du vil oppdatere den eksisterende visningen (eller **Nei** hvis du vil publisere dette under et annet navn).
 4.  Oppdater navnet, beskrivelsen og/eller sikkerhetsrollene for visningen. 
 5.  Velg **Publiser**. 
-6.  Hvis du oppdaterte navnet på den publiserte visningen, må du også slette den publiserte visningen med det gamle navnet (se delen **Behandle publiserte visninger** hvis du vil ha mer informasjon). 
+6.  [10.0.8/Platform Update 32 eller tidligere] Hvis du oppdaterte navnet på den publiserte visningen, må du også slette den publiserte visningen med det gamle navnet (se delen **Behandle publiserte visninger** hvis du vil ha mer informasjon). 
+7. [10.0.9/Platform Update 33 eller senere] Hvis du opprinnelig har valgt at denne publiserte visningen skal være standardvisning, vil den være standardvisning for disse brukerne på nytt etter den nye publiseringen.  
 
 Hvis endringene i den publiserte visningen omfatter endring av personlige tilpasninger eller filtre tilknyttet visningen, følger du denne fremgangsmåten: 
 1.  Bytt til den publiserte visningen du vil endre. 
@@ -148,13 +150,15 @@ Alle brukere ser kategorien **Mine visninger**, som viser personlige visninger, 
 Hvis du vil ha en liste over alle publiserte visninger for siden, er følgende sett med handlinger tilgjengelige. 
 
 -    **Publiser**: Bruk handlingen **Publiser** til å publisere en visning på nytt etter at publiseringsparametere (navn, beskrivelse, sikkerhetsroller eller juridiske enheter) er endret.
--    **Fjern**: Bruk handlingen **Fjern** til å slette en publisert visning permanent. Denne handlingen fjerner visningen for alle brukere i systemet.  
- 
-Endringer som gjøres i denne dialogboksen, vil tre i kraft når **Lagre**-knappen er valgt.
+-    **Fjern**: Bruk handlingen **Fjern** til å slette en publisert visning permanent. Denne handlingen fjerner visningen for alle brukere i systemet. Fjerning av publiserte visninger vil tre i kraft når **Lagre**-knappen er valgt.
 
 ## <a name="frequently-asked-questions"></a>Vanlige spørsmål
 ### <a name="how-do-i-enable-saved-views-in-my-environment"></a>Hvordan aktiverer jeg lagrede visninger i miljøet? 
-Hvis du vil aktivere lagrede visninger mens funksjonen er i forhåndsvisning, følger du fremgangsmåten nedenfor: 
+Obs! Funksjonen **Lagrede visninger** krever at tilpassingssystemet i Finance and Operations er aktivert. Hvis tilpassing er deaktivert for hele miljøet, vil visninger bli deaktivert selv om du følger fremgangsmåten nedenfor. 
+
+**10.0.9/Platform Update 33 og senere** Funksjonen **Lagrede visninger** er tilgjengelig direkte i funksjonsbehandling i et hvilket som helst miljø. I likhet med andre forhåndsvisningsfunksjoner er aktivering av denne funksjonen i produksjonen underlagt [Ekstra vilkår for bruksavtalen](https://go.microsoft.com/fwlink/?linkid=2105274).  
+
+**10.0.8/Platform Update 32 og tidligere** Funksjonen **Lagrede visninger** kan aktiveres i lag 1 (dev/test) og lag 2 (sandkasse) for å ytterligere testing og utformingsendringer ved å følge fremgangsmåten nedenfor.
 
 1.  **Aktiver testversjonen**: Kjør følgende SQL-setning: 
 
@@ -168,15 +172,12 @@ Hvis du vil aktivere lagrede visninger mens funksjonen er i forhåndsvisning, f�
 
 Alle etterfølgende brukerøkter starter med at lagrede visninger er aktivert.
 
-Lagrede visninger er bare til bruk i miljøer med Lag 1 (dev/test) og Lag 2 (i sandkasse) for å gi flere endringer i testing og utforming. En forhåndsvisning av lagrede visninger er tilgjengelig i produksjonsmiljøer i en fremtidig frigivelse.
-
-Vær oppmerksom på at hvis tilpassing er deaktivert for miljøet, vil visninger bli deaktivert selv om du følger fremgangsmåten ovenfor. Dette er fordi visningsfunksjonen er bygget på toppen av delsystemet for personalisering.
 
 ### <a name="what-happens-to-existing-personalizations-when-views-are-enabled"></a>Hva skjer med eksisterende personlige tilpasninger når visninger er aktivert? 
 Når visninger aktiveres, blir eksisterende personlige tilpasninger for en bruker og et skjema lagret i en ny visning kalt **Min visning**, som automatisk blir angitt som standardvisning. Dette er ment å sikre en konsekvent brukeropplevelse før og etter at visningene er aktivert, bortsett fra at visningsvelgerkontrollen vises i skjemaer.  
 
 ### <a name="what-pages-support-views"></a>Hvilke sider støtter visninger? 
-Visninger er tilgjengelige på de fleste, men ikke alle sider. Spesifikt er visninger tilgjengelige for alle fullskjermsider, bortsett fra instrumentbord og arbeidsområder. Sider som ikke er fullskjerm, som inkluderer dialogbokser, rullegardindialogbokser, oppslag, utvidede forhåndsvisninger, støtter for øyeblikket heller ikke visninger. Visningsstøtte for flere sidetyper, for eksempel arbeidsområder og dialogbokser, kan bli vurdert for en fremtidig oppdatering.   
+Visninger er tilgjengelige på de fleste, men ikke alle sider. Spesifikt er visninger tilgjengelige for alle fullskjermsider, bortsett fra instrumentbord og arbeidsområder. Sider som ikke er i fullskjerm, som inkluderer dialogbokser, rullegardindialogbokser, oppslag, utvidede forhåndsvisninger, støtter for øyeblikket heller ikke visninger. Visningsstøtte for flere sidetyper, for eksempel arbeidsområder og dialogbokser, kan bli vurdert for en fremtidig oppdatering.   
 
 ### <a name="who-is-allowed-to-publish-views"></a>Hvem kan publisere visninger?
 Bare systemadministratorer og brukere som er tilordnet til administratorrollen **Lagrede visninger**, har rettigheter til å publisere visninger. 
@@ -184,12 +185,14 @@ Bare systemadministratorer og brukere som er tilordnet til administratorrollen *
 ### <a name="why-am-i-not-able-to-save-filters-with-this-view"></a>Hvorfor kan jeg ikke lagre filtre med denne visningen? 
 Det kan være flere grunner til at et filter ikke ser ut til å lagres med en visning: 
 
-- Det kan hende at siden ikke støtter lagring av filtre som en del av visningsdefinisjonen. Vær oppmerksom på at bare sider med store visningsvelgere gjør det mulig å lagre endringer som en visning. Se delen "Bytte visninger" for mer informasjon. 
-
-- Hvis visningen er standardvisningen, og navigasjonsbanen til siden inneholder en spørring, kan ikke visningens spørring brukes i utgangspunktet. De to hovedscenarioene for dette er: 
-     - Hvis du navigerer til en side fra en flis, vil flisspørring utføres uansett hvilken spørring som er knyttet til standardvisningen. 
-     - Hvis du navigerer til en side, og det inngangspunktet inkluderer en spørring, vil den opprinnelige spørringen utføres opprinnelig i stedet for standardvisningens spørring. 
-     
-  Når slike situasjoner oppstår, skal du bli varslet av en informasjonsmelding når visningen lastes inn. Du kan også bekrefte ved å bytte til denne visningen etter at siden er lastet inn, som gjør at visningsspørringen kan kjøres uansett.  
+- Det kan hende at siden ikke støtter lagring av filtre som en del av visningsdefinisjonen. Vær oppmerksom på at bare sider med store visningsvelgere gjør det mulig å lagre endringer som en visning. Se delen **Bytte visninger** for mer informasjon. 
 
 - Den aktuelle siden støtter kanskje ikke visninger på riktig måte, siden den kan ignorere visningsspørringen fullstendig eller operere på en midlertidig tabell med data som ikke er vedvarende. 
+
+### <a name="what-data-will-i-see-when-i-visit-a-page"></a>Hvilke data får jeg se når jeg besøker en side? 
+For sider med små visningsvelgere (bare personlige tilpasninger kan lagres i visningen) vil du se de samme dataene som du alltid har når du besøker siden. 
+
+For sider med store visningsvelgere (personlige tilpasninger og spørringer kan lagres i visningen) vil du primært se dataene som er knyttet til spørringen som er forbundet med standardvisningen. Det finnes to hovedunntak til dette; - Hvis du navigerer til en side fra en flis, vil flisspørring utføres uansett hvilken spørring som er knyttet til standardvisningen. Hvis du opprettet denne flisen etter at visninger var aktivert, vil valg av en flis åpne siden med visningen som er knyttet til flisen.   
+     - Hvis du navigerer til en side, og det inngangspunktet inkluderer en spørring, vil den opprinnelige spørringen utføres opprinnelig i stedet for standardvisningens spørring. Når dette skjer, skal di bli varslet av en informasjonsmelding når visningen lastes inn. Du kan også bekrefte ved å bytte til denne visningen etter at siden er lastet inn, som gjør at visningsspørringen kan kjøres uansett.  
+
+

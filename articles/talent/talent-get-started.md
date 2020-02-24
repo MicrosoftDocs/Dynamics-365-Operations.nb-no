@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Talent July 2017 update
-ms.openlocfilehash: ff9cfdff410001f08f920e3c05df6bc4ab1b77fd
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: c3a2881ede53e4adfba775b9bb23071468c8f602
+ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2024258"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "3006523"
 ---
 # <a name="get-started-with-talent"></a>Komme i gang med Talent
 
@@ -31,7 +31,7 @@ ms.locfileid: "2024258"
 I Microsoft Dynamics 365 Talent er det enkelt å endre brukergrensesnittet og angi alternativer som gjør programvaren mer intuitiv for dine behov. Dette emnet inneholder koblinger til emner som inneholder informasjon om hvordan du kan tilpasse brukergrensesnittet til dine behov. Dette emnet inneholder også koblinger til informasjon som kan hjelpe deg med å finne informasjon i systemet, effektivt og nøyaktig. 
 
 > [!NOTE] 
-> Følgende tre produkter henger nøye sammen: Dynamics 365 Finance, Dynamics 365 Retail og Dynamics 365 Talent. Den samme funksjonaliteten kan forekomme i alle tre produkter. Det fører til at i emner som først og fremst gjelder Retail, blir produktnavnet Dynamics 365 Retail, i emner som først og fremst er knyttet til Talent, blir produktnavnet Dynamics 365 Talent, og i emner som er knyttet til kjerneproduktet, blir produktnavnet Dynamics 365 Finance. Emner som er skrevet for ett produkt, gjelder kanskje for den samme funksjonaliteten i et relatert produkt.
+> Følgende tre produkter henger nøye sammen: Dynamics 365 Finance, Dynamics 365 Commerce og Dynamics 365 Talent. Den samme funksjonaliteten kan forekomme i alle tre produkter. Det fører til at i emner som først og fremst gjelder Commerce, blir produktnavnet Dynamics 365 Commerce, i emner som først og fremst er knyttet til Talent, blir produktnavnet Dynamics 365 Talent, og i emner som er knyttet til kjerneproduktet, blir produktnavnet Dynamics 365 Finance. Emner som er skrevet for ett produkt, gjelder kanskje for den samme funksjonaliteten i et relatert produkt.
 
 ## <a name="personalizing-talent"></a>Tilpasse Talent 
 Emnene nedenfor viser hvordan du definerer mange funksjoner i Talent som gjør det enklere å få arbeidet gjort i tide. 

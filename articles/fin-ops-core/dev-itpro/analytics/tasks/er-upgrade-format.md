@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 648b750b311f902555eba4536767788b64a1ea1e
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 62047ef7bde137fbc4464a51d77a8a6efae94696
+ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2184652"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "3026223"
 ---
 # <a name="er-upgrade-your-format-by-adopting-a-new-base-version-of-that-format"></a>ER Oppgradere formatet ved å ta i bruk en ny, grunnleggende versjon av dette formatet
 
@@ -47,7 +47,10 @@ For å fullføre disse trinnene må du først fullføre trinnene i fremgangsmåt
     * Versjonen av formatet med statusen Fullført brukes av Proseware, Inc. for tilpassing.  
 
 ## <a name="create-a-new-configuration-for-your-custom-format-of-electronic-document"></a>Opprette en ny konfigurasjon for det egendefinerte formatet for elektronisk dokument
-    * Proseware, Inc. mottatte versjon 1.1 av BBS-konfigurasjon (Storbritannia fiktiv) som inneholder det innledende formatet for å generere elektroniske betalingsdokumenter fra Litware, Inc. i henhold til deres serviceabonnement. Proseware, Inc. vil begynne å bruke dette som standard for landet sitt, men noe tilpassing er nødvendig for å støtte bestemte områdekrav. Proseware, Inc. vil også beholde muligheten til å oppgradere et egendefinert format når det kommer en ny versjon av det (med endringer for å støtte nye landspesifikke krav) fra Litware, Inc, og de vil utføre oppgraderingen med lavest mulig kostnad.  For å gjøre dette må Proseware, Inc. opprette en konfigurasjon ved hjelp av Litware, Inc. konfigurasjonen BBS (Storbritannia fiktiv) som grunnlag.  
+Proseware, Inc. mottatte versjon 1.1 av BBS-konfigurasjon (Storbritannia fiktiv) som inneholder det innledende formatet for å generere elektroniske betalingsdokumenter fra Litware, Inc. i henhold til deres serviceabonnement. Proseware, Inc. vil begynne å bruke dette som standard for landet sitt, men noe tilpassing er nødvendig for å støtte bestemte områdekrav. Proseware, Inc. vil også beholde muligheten til å oppgradere et egendefinert format når det kommer en ny versjon av det (med endringer for å støtte nye landspesifikke krav) fra Litware, Inc, og de vil utføre oppgraderingen med lavest mulig kostnad.  
+
+For å gjøre dette må Proseware, Inc. opprette en konfigurasjon ved hjelp av Litware, Inc. konfigurasjonen BBS (Storbritannia fiktiv) som grunnlag.  
+
 1. Lukk siden.
 2. Velg Proseware, Inc. for å gjøre dette til en aktiv leverandør.
 3. Klikk Angi som aktiv
@@ -98,7 +101,7 @@ For å fullføre disse trinnene må du først fullføre trinnene i fremgangsmåt
 2. Lukk siden.
 
 ## <a name="change-the-status-of-the-current-version-of-the-custom-format-configuration"></a>Endre statusen for gjeldende versjon av egendefinert formatkonfigurasjon
-    * Endre statusen for utformet formatkonfigurasjon fra Utkast til Fullført for å gjøre den tilgjengelig for generering av betalingsdokument.  
+Endre statusen for utformet formatkonfigurasjon fra Utkast til Fullført for å gjøre den tilgjengelig for generering av betalingsdokument.  
 1. Klikk Endre status.
     * Legg merke til at gjeldende versjon av den valgte konfigurasjonen har statusen Utkast.  
 2. Klikk Fullført.
@@ -108,11 +111,12 @@ For å fullføre disse trinnene må du først fullføre trinnene i fremgangsmåt
     * Legg merke til at den opprettede konfigurasjonen er lagret som fullført versjon 1.1.1. Dette betyr at det er versjon 1 av egendefinerte BBS-format (Storbritannia fiktivt egendefinert), som er basert på versjon 1 av BBS-format (Storbritannia fiktivt), som er basert på versjon 1 av datamodellen Betalinger (forenklet modell).  
 
 ## <a name="test-the-customized-format-to-generate-payment-files"></a>Teste det egendefinerte formatet for å generere betalingsfiler
-    * Fullfør trinnene i fremgangsmåten "Bruke opprettet format for å generere elektroniske betalingsdokumenter" i en parallell Finance and Operations-økt. Velg BBS-formatet (Storbritannia fiktiv egendefinert) i parametere for elektronisk betalingmåte. Kontroller at den opprettede betalingsfilen inneholder den nylig introduserte XML-noden som presenterer IBAN-kode i henhold til områdekrav.  
+Fullfør trinnene i fremgangsmåten "Bruke opprettet format for å generere elektroniske dokumenter for betalinger" i en parallel Finance and Operations-økt. Velg BBS-formatet (Storbritannia fiktiv egendefinert) i parametere for elektronisk betalingmåte. Kontroller at den opprettede betalingsfilen inneholder den nylig introduserte XML-noden som presenterer IBAN-kode i henhold til områdekrav.  
 
 ## <a name="update-the-existing-country-specific-configuration"></a>Oppdatere den eksisterende landspesifikke konfigurasjonen
-    * Litware, Inc. må oppdatere BBS-konfigurasjonen (Storbritannia fiktiv) og bruke nye landkrav for administrasjon av formatet for det elektroniske dokumentet. Senere vil dette tas med i en ny versjon av denne konfigurasjonen, som vil tilbys for serviceabonnenter, inkludert Proseware, Inc.  
-    * I virkelige relaterte prosesser for klargjøring av tjeneste kan hver versjon av BBS (Storbritannia fiktiv) importeres av Proseware, Inc. fra Litware, Inc. Litware, Inc. -konfigurasjonens LCS-repositorium. I denne fremgangsmåten skal vi simuler dette ved å oppdatere BBS (Storbritannia fiktiv) på vegne av en tjenesteleverandør.  
+Litware, Inc. må oppdatere BBS-konfigurasjonen (Storbritannia fiktiv) og bruke nye landkrav for administrasjon av formatet for det elektroniske dokumentet. Senere vil dette tas med i en ny versjon av denne konfigurasjonen, som vil tilbys for serviceabonnenter, inkludert Proseware, Inc.  
+
+I virkelige relaterte prosesser for klargjøring av tjeneste kan hver versjon av BBS (Storbritannia fiktiv) importeres av Proseware, Inc. fra Litware, Inc. Litware, Inc. -konfigurasjonens LCS-repositorium. I denne fremgangsmåten skal vi simuler dette ved å oppdatere BBS (Storbritannia fiktiv) på vegne av en tjenesteleverandør.  
 1. Lukk siden.
 2. Velg Litware, inc-leverandør.
 3. Klikk Angi som aktiv
@@ -122,9 +126,12 @@ For å fullføre disse trinnene må du først fullføre trinnene i fremgangsmåt
     * Utkastversjonen som eies av Litware, Inc.-BBS-leverandøren (Storbritannia fiktiv), velges for å vise endringer for å støtte nye landspesifikke krav.  
 
 ## <a name="localize-the-base-format-of-the-electronic-document"></a>Lokalisere basisformatet for det elektroniske dokumentet
-    * Anta at det finnes nye landspesifikke krav som støttes av Litware, Inc.: – Verdien for SWIFT-kode for kreditors bank i hver betalingstransaksjon.  - En grense på 100 tegn for lengden på tekst for leverandørens navn i filen som genereres.  
-    * Nye landspesifikke krav  
-    * Velg utkastversjonen av den ønskede konfigurasjonen for å introdusere nødvendige endringer.  
+Gå ut ifra at det finnes nye landsspesifikke krav som skal støttes av Litware, Inc:  
+
+- En verdi for kreditorens SWIFT-bankkode i hver betalingstransaksjon.  - En grense på 100 tegn for lengden på tekst for leverandørens navn i filen som genereres.  
+- Nye landspesifikke krav  
+- Velg utkastversjonen av den ønskede konfigurasjonen for å introdusere nødvendige endringer.
+
 1. Klikk Utforming.
 2. Klikk Vis/skjul.
 3. Klikk Vis/skjul.
@@ -155,7 +162,7 @@ For å fullføre disse trinnene må du først fullføre trinnene i fremgangsmåt
 2. Lukk siden.
 
 ## <a name="change-the-status-of-the-current-version-of-the-base-format-configuration"></a>Endre statusen for gjeldende versjon av basisformatkonfigurasjonen
-    * Endre statusen for den oppdaterte grunnleggende formatkonfigurasjonen fra Utkast til Fullført for å gjøre den tilgjengelig for generering av betalingsdokumenter og oppdateringer av formatkonfigurasjoner som er avledet fra den.  
+Endre statusen for den oppdaterte grunnleggende formatkonfigurasjonen fra Utkast til Fullført for å gjøre den tilgjengelig for generering av betalingsdokumenter og oppdateringer av formatkonfigurasjoner som er avledet fra den.  
 1. Klikk Endre status.
     * Legg merke til at gjeldende versjon av den valgte konfigurasjonen har statusen Utkast.  
 2. Klikk Fullført.
@@ -164,7 +171,10 @@ For å fullføre disse trinnene må du først fullføre trinnene i fremgangsmåt
 5. Finn og velg ønsket post i listen.
 
 ## <a name="change-the-base-version-for-the-custom-format-configuration"></a>Endre basisversjonen for den egendefinerte formatkonfigurasjonen
-    * Proseware, Inc. blir informert om at en ny versjon 1.2 av BBS-konfigurasjon (Storbritannia fiktiv) er tilgjengelig for å generere elektroniske betalingsdokumenter i henhold til den nylig annonserte landspesifikke krav. Proseware, Inc. vil begynne å bruke det som standard for landet.  For å gjøre dette må Proseware, Inc. endre den grunnleggende konfigurasjonsversjonen for den tilpassede BBS-konfigurasjonen (Storbritannia fiktiv egendefinert). Bruk den nye versjon 1.2 i stedet for versjon 1.1 av BBS (Storbritannia fiktiv).  
+Proseware, Inc. blir informert om at en ny versjon 1.2 av BBS-konfigurasjon (Storbritannia fiktiv) er tilgjengelig for å generere elektroniske betalingsdokumenter i henhold til den nylig annonserte landspesifikke krav. Proseware, Inc. vil begynne å bruke det som standard for landet.  
+
+For å gjøre dette må Proseware, Inc. endre den grunnleggende konfigurasjonsversjonen for den tilpassede BBS-konfigurasjonen (Storbritannia fiktiv egendefinert). Bruk den nye versjon 1.2 i stedet for versjon 1.1 av BBS (Storbritannia fiktiv).  
+
 1. Gå til Organisasjonsstyring > Arbeidsområder > Elektronisk rapportering.
 2. Velg Proseware, Inc.-leverandøren for å merke den som aktiv.
 3. Klikk Angi som aktiv
@@ -198,5 +208,5 @@ For å fullføre disse trinnene må du først fullføre trinnene i fremgangsmåt
     * Vær oppmerksom på at den opprettede konfigurasjonen lagres som fullført versjon 1.2.2: versjon 2 av det grunnleggende BBS-formatet (Storbritannia fiktiv egendefinert), som er basert på versjon 2 av det grunnleggende BBS-formatet (Storbritannia fiktiv), som er basert på versjon 1 av datamodellen Betalinger (forenklet modell).  
 
 ## <a name="test-the-customized-format-for-payment-files-generation"></a>Teste det egendefinerte formatet for generering av betalingsfiler
-    * Fullfør trinnene i fremgangsmåten "Bruke opprettet format for å generere elektroniske betalingsdokumenter" i en parallell Finance and Operations-økt. Velg det opprettede BBS-formatet (Storbritannia fiktiv egendefinert) i parametere for elektronisk betalingmåte. Kontroller at den opprettede betalingsfilen inneholder den nylig introduserte Proseware, Inc. XML-noden som presenterer IBAN-kontokode i henhold til områdekrav. Filen skal også inneholde den nylig introduserte Litware, Inc. XML-noden som presenterer SWIFT-bankkode i henhold til landkrav.  
+Fullfør trinnene i fremgangsmåten "Bruke opprettet format til å generere elektroniske dokumenter for betalinger" i en parallel Finance and Operations-økt. Velg det opprettede BBS-formatet (Storbritannia fiktiv egendefinert) i parametere for elektronisk betalingmåte. Kontroller at den opprettede betalingsfilen inneholder den nylig introduserte Proseware, Inc. XML-noden som presenterer IBAN-kontokode i henhold til områdekrav. Filen skal også inneholde den nylig introduserte Litware, Inc. XML-noden som presenterer SWIFT-bankkode i henhold til landkrav.  
 

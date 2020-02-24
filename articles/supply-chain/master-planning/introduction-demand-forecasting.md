@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9280a2580d20d64f6542902aab1dbf55434bf84c
-ms.sourcegitcommit: 34395464ec80cea800b953eae49af579d436fc1b
+ms.openlocfilehash: ca463d821292a2ad53462a3575f2d5712b9e53cc
+ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "2935520"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "3004048"
 ---
 # <a name="demand-forecasting-overview"></a>Oversikt over behovsprognose
 
@@ -69,7 +69,7 @@ Prognosene, historiske data og eventuelle endringer som ble gjort i behovsprogno
 Du kan bruke Supply Chain Management til å visualisere og endre basislinjeprognosene. Manuelle justeringer må være autorisert før prognosene kan brukes til planlegging.
 
 ## <a name="limitations"></a>Begrensninger
-Behovsprognose er et verktøy som hjelper kunder i fabrikasjonsbransjen med å opprette prognoseprosesser. Det tilbyr kjernefunksjonaliteten for en behovsprognoseløsning og er utformet slik at det kan enkelt utvides. Behovsprognose egner seg kanskje ikke best for kunder i bransjer som detaljhandel, engros, lager, transport eller andre profesjonelle tjenester.
+Behovsprognose er et verktøy som hjelper kunder i fabrikasjonsbransjen med å opprette prognoseprosesser. Det tilbyr kjernefunksjonaliteten for en behovsprognoseløsning og er utformet slik at det kan enkelt utvides. Behovsprognose egner seg kanskje ikke best for kunder i bransjer som handel, engros, lager, transport eller andre profesjonelle tjenester.
 
 <a name="additional-resources"></a>Tilleggsressurser
 --------

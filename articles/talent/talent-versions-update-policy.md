@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 0bd7d7051dd01834f306e165af55d740192b99e0
-ms.sourcegitcommit: caeb24027831efccbc316ff8e7f9e62b42010d65
+ms.openlocfilehash: 509827d5736887f56e7754a0760af7dea76277f7
+ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "2818485"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "3006061"
 ---
 # <a name="talent-system-requirements"></a>Talent-systemkrav
 
 [!include [banner](includes/banner.md)]
 
-Dette emnet beskriver krav for Microsoft Dynamics 365 Talent, inkludert Attract, Onboard og Core HR. Det beskriver også landene og områdene der Talent er tilgjengelig, pluss informasjon om språk og lokalisering for Talent-data. I tillegg inneholder dette emnet oppdateringspolicyen for Talent.
+Dette emnet beskriver krav for Microsoft Dynamics 365 Talent, inkludert Attract og Onboard. Det beskriver også landene og områdene der Talent er tilgjengelig, pluss informasjon om språk og lokalisering for Talent-data. I tillegg inneholder dette emnet oppdateringspolicyen for Talent.
 
 ## <a name="supported-web-browsers"></a>Nettlesere som støttes
 

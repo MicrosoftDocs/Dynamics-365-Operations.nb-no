@@ -1,5 +1,5 @@
 ---
-title: Konfigurere et miljø for forhåndsvisning av Commerce
+title: Konfigurere et miljø for forhåndsvisning av Dynamics 365 Commerce
 description: Dette emnet forklarer hvordan du konfigurerer et Microsoft Dynamics 365 Commerce-forhåndsvisningsmiljø etter klargjøring.
 author: psimolin
 manager: annbe
@@ -17,16 +17,16 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-12-10
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: f19d03f3f2f5a9f6f7ba08b682277e4e3b764d10
-ms.sourcegitcommit: 610d5c3efadbaf11752b46f24680af619bcd70a6
+ms.openlocfilehash: 12d3a86698e9250f5d1645de51e0749c8d929f75
+ms.sourcegitcommit: 4ed1d8ad8a0206a4172dbb41cc43f7d95073059c
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "2906145"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "3024712"
 ---
-# <a name="configure-a-commerce-preview-environment"></a>Konfigurere et miljø for forhåndsvisning av Commerce
+# <a name="configure-a-dynamics-365-commerce-preview-environment"></a>Konfigurere et miljø for forhåndsvisning av Dynamics 365 Commerce
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 Dette emnet forklarer hvordan du konfigurerer et Microsoft Dynamics 365 Commerce-forhåndsvisningsmiljø etter klargjøring.
@@ -142,13 +142,13 @@ Hvis du vil konfigurere valgfrie funksjoner for Commerce-forhåndsvisningsmiljø
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 
-[Oversikt over Commerce-forhåndsvisningsmiljø](cpe-overview.md)
+[Oversikt over miljø for forhåndsvisning av Dynamics 365 Commerce](cpe-overview.md)
 
-[Klargjøre et Commerce-forhåndsvisningsmiljø](provisioning-guide.md)
+[Klargjøre et miljø for forhåndsvisning av Dynamics 365 Commerce](provisioning-guide.md)
 
-[Konfigurere valgfrie funksjoner for et Commerce-forhåndsvisningsmiljø](cpe-optional-features.md)
+[Konfigurere valgfrie funksjoner for et miljø for forhåndsvisning av Dynamics 365 Commerce](cpe-optional-features.md)
 
-[Vanlige spørsmål for Commerce-forhåndsvisningsmiljø](cpe-faq.md)
+[Vanlige spørsmål om miljø for forhåndsvisning av Dynamics 365 Commerce](cpe-faq.md)
 
 [Microsoft Lifecycle Services (LCS)](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-user-guide)
 
@@ -157,5 +157,3 @@ Hvis du vil konfigurere valgfrie funksjoner for Commerce-forhåndsvisningsmiljø
 [Microsoft Azure-portal](https://azure.microsoft.com/features/azure-portal)
 
 [Dynamics 365 Commerce-webområde](https://aka.ms/Dynamics365CommerceWebsite)
-
-[Hjelperessurser for Dynamics 365 Retail](../retail/index.md)

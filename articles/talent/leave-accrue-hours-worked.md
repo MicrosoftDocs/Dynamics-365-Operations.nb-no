@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-09-17
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 938d2eea7b9e85b19e9c1e3e0930f625224b880d
-ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
+ms.openlocfilehash: 229ae14b9e2dedcd0ade094a772f16c0524d32a7
+ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "2898625"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "3006084"
 ---
 # <a name="accrue-time-off-based-on-hours-worked"></a>Avsette fridager basert på arbeidstimer
 
 ## <a name="overview"></a>Oversikt
 
-Organisasjoner med timebaserte ansatte kan belønne dem med fridager basert på antall arbeidstimer i stedet for ansiennitet i organisasjonen. Data om arbeidstimer lagres vanligvis i et system for tid og fremmøte. I Talent: Core HR, vanlige og overtidstimer kan importeres og brukes som grunnlag for en ansatts belønning.
+Organisasjoner med timebaserte ansatte kan belønne dem med fridager basert på antall arbeidstimer i stedet for ansiennitet i organisasjonen. Data om arbeidstimer lagres vanligvis i et system for tid og fremmøte. 
 
 ## <a name="leave-plans"></a>Permisjonsplaner
 

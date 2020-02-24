@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: af8a30e69d9ed143e045950efdcece207f6da14c
-ms.sourcegitcommit: 295d940a345879b3dfc5991e387b91c7257019ea
+ms.openlocfilehash: 6abac72b7530dc7b82c8e95faebdce791cf7dbd1
+ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2697940"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "3003240"
 ---
 # <a name="get-product-recommendations-using-demo-data"></a>Få produktanbefalinger ved hjelp av demonstrasjonsdata
 Dette dokument gir råd om hvordan dra nytte av produktanbefalinger for omnikanal i Lag 1-ett-miljøer i en boks, med forhåndsutfylte demonstrasjonsdata som kan tilpasses.
@@ -39,7 +39,7 @@ Produktanbefalinger for Lag 1-miljøer er bare basert på statiske demonstrasjon
 For å aktivere demonstrasjonsdata for produktanbefalinger må du distribuere Dynamics 365 Commerce-forhåndsvisningens demonstrasjonsutvidelse til det aktuelle miljøet. Når du gjør dette, aktiveres demonstrasjonsdata for produktanbefalinger automatisk.
 
 ## <a name="default-demo-data"></a>Standard demonstrasjonsdata
-Alle miljøer i én boks leveres med forhåndslastede demonstrasjonsdata for produktanbefalinger som er lagret i den kommadelte filen reco_demo_data.csv, som er plassert på Retail Server.
+Alle miljøer i én boks leveres med forhåndslastede demonstrasjonsdata for produktanbefalinger som er lagret i den kommadelte filen reco_demo_data.csv, som er plassert på Commerce Scale Unit.
 
 Dataene er strukturert langs følgende kolonner.
 

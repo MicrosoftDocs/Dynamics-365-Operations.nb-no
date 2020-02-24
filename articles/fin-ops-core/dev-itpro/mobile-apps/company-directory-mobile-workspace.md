@@ -10,17 +10,17 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: sericks
-ms.search.scope: Operations, Talent
+ms.search.scope: Operations, Human Resources
 ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 5a96955b72fcc5b0e2975f4bb1e619062be33e20
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 445a2872dcd0e4d3aca9a50c7539fdabb0ed7818
+ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2248763"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "3005592"
 ---
 # <a name="company-directory-mobile-workspace"></a>Mobilt arbeidsområde for firmakatalog
 
@@ -53,11 +53,11 @@ Før du kan bruke dette mobile arbeidsområdet, må du oppfylle følgende foruts
 <tr class="odd">
 <td>Et av følgende produkter må distribueres i organisasjonen:
 <ul><li>En Finance and Operations-app</li>
-<li>Microsoft Dynamics 365 Talent</li>
+<li>Microsoft Dynamics 365 Human Resources</li>
 </ul>
 </td>
 <td>Systemansvarlig</td>
-<td>Hvis du ikke allerede har en Finance and Operations-app distribuert i organisasjonen, kan du se <a href="../deployment/deploy-demo-environment.md">Distribuere et demomiljø</a>. Hvis du ikke allerede har Talent distribuert i organisasjonen, kan systemansvarlig få tilgang til en prøveversjon fra <a href="https://www.microsoft.com/dynamics365/talent">Talent-nettsiden</a>.
+<td>Hvis du ikke allerede har en Finance and Operations-app distribuert i organisasjonen, kan du se <a href="../deployment/deploy-demo-environment.md">Distribuere et demomiljø</a>. Hvis du ikke allerede har Human Resources distribuert i organisasjonen, kan systemansvarlig få tilgang til en prøveversjon fra <a href="https://dynamics.microsoft.com/human-resources/overview/">Human Resources-nettsiden</a>.
 </td>
 </tr>
 <tr class="even">

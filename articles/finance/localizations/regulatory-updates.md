@@ -3,7 +3,7 @@ title: Forskriftsmessige oppdateringer
 description: Dette emnet inneholder en liste over planlagte og frigitte forskriftsmessige oppdateringer for Microsoft Dynamics 365 Finance.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 01/06/2020
+ms.date: 01/29/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: dc919d232f0e4f0cfbab372b9fdded2657906a1d
-ms.sourcegitcommit: 4d77d06a07ec9e7a3fcbd508afdffaa406fd3dd8
+ms.openlocfilehash: d596a543ca8aacc2c6530672111001a9dd161aa7
+ms.sourcegitcommit: 9168621ca9b5061c65f3e05dbc5918b6a11d53d5
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "2934683"
+ms.lasthandoff: 01/31/2020
+ms.locfileid: "3000007"
 ---
 # <a name="regulatory-updates"></a>Forskriftsmessige oppdateringer
 
@@ -40,44 +40,41 @@ Forskriftsmessige oppdateringer som utgis som en del av den månedlige oppdateri
 
 For de siste forskriftsmessige oppdateringsplanene kan du se tabellen nedenfor.   
 
-|Planlagt utgivelsesdato|Versjon|Land|Forskriftsmessig oppdatering|
+|Land|Planlagt utgivelsesdato|Versjon|Forskriftsmessig oppdatering|
 |--------------------|---------------|-------|-------|
-|      Brasil        |   2019. desember       | 10.0.8      |   SPED-regnskapsoppsett 014 |
-|      Brasil         |   November – august 2019       | 10.0.7, 10.0.6HF, 10.0.5HF, 10.0.4HF      |   En ny versjon av tekniske notater for NF-e: NT 2019.001 versjon 1.20    |
-|      Brasil          |   November – august 2019       | 10.0.7, 10.0.6      |   DRCST-deklarering SC   |
-|      Brasil         |   August 2019       | 10.0.6HF, 10.0.5HF, 10.0.4HF      |   En ny versjon av tekniske notater for NF-e: NT 2019.001 versjon 1.10    |
-|      Brasil          |   August 2019      | 10.0.6HF, 10.0.5HF, 10.0.4HF     |   En ny versjon av tekniske notater for NF-e: NT 2019.001 versjon 1.10    |
-|      Brasil          |   August 2019      | 10.0.6, 10.0.5HF     |   Ny lovgivning implementeres av RJ-tilstand relatert til EFD-ICMS/IPI. Vedtak 13/19 av Rio de Janeiro-implementeringen (RJ), er for "Spesielle prosedyrer som skal brukes ved fritak     |
-|      Brasil          |   August 2019      | 10.0.6        |   Avgiftsoppgave CAT 42/18    |
-|      Brasil          |   Juli 2019     | 10.0.5, 10.0.4HF, 10.0.2HF      |   En ny versjon av tekniske notater for NF-e: NT 2019.001 versjon 1.00  |
-|      Brasil          |   Juli 2019     | 10.0.5      |   Praktisk veiledning for Sped-bidrag 1.31. ny veiledning    |
-|      Brasil          |   20191. mai     | 10.0.4      |   Innkommende regnskapsdokument 66    |
-|      Brasil          |   2019. mai      | 10.0.4      |   NF-e-dekret 54.308/18 – RS    |
-|      Brasil          |   2019. mai      | 10.0.4      |   NF-e og NFC-e – Vedtak 13/2019 og forordning SUCIEF 55/2019- RJ – nye betingelser for fritakskodeutdata i NF-e.    |
-|      India          |   August 2019     | 10.0.6       |   Detaljhandel: behandling av kunderegistreringsnumre fra POS for India    |
-|      India          |   2019. mai     | 10.0.4      |   Visning av Forsyningssted og Stat i GST-avgiftsfakturaen    |
-|      Italia          |   2019. desember       | 10.0.8      |   Endringer i mva-styring etter D.L. 119 av 23. okt. 2018: årlig mva-kommunikasjon |
-|      Italia         |   November 2019       | 10.0.7      |   Endringer i mva-styring etter D.L. 119 av 23. okt. 2019: Kvartalsvis mva-kommunikasjon ("Lipe 2018")    |
-|      Italia         |   November 2019     | 10.0.7      |   Retail – Administrere kundeinformasjon på salgssted |
-|      Italia         |   November 2019      | 10.0.7      |   Retail – Skrive ut kundeinformasjon på bilagskvittering |
-|      Italia         |   November – august 2019     | 10.0.7, 10.0.6      |   Endringer i mva-styring etter D.L. 119 av 23. okt 2018 – Dynamics 365 for Finance and Operations  |
-|      Italia          |   August 2019      | 10.0.6      |   Dato for mva-register    |
-|      Italia          |   August 2019     | 10.0.6      |   MVA-styring etter dato for mva-register    |
-|      Japan          |   Desember-november 2019     | 10.0.8, 10.0.7HF       |   Endringer i forbruksavgiftssats og redusert mva-sats introduseres (Forbruksavgiftsrapport) |
-|      Japan         |   November 2019      | 10.0.7       |   Endring i forbrukssats og redusert mva-sats introduseres (fakturaoppsett) |
-|      Japan          |   November 2019     | 10.0.6HF     |   Endringer i forbruksavgiftssats og redusert mva-sats introduseres (Forbruksavgiftsrapport)  |
-|      Japan          |   August 2019      | 10.0.6, 10.0.5HF, 10.0.4HF, 10.0.3HF      |   Endringer i forbruksavgiftssats og redusert mva-sats introduseres    |
-|      Mexico          |   Desember - oktober 2019    | 10.0.8, 10.0.7HF, 10.0.6HF        |   Detaljhandel -  CFDI Global: Misc. Resol 2019 - c_CodigoPostal og tidssone |
-|     Mexico          |   November - september 2019       | 10.0.7, 10.0.6HF      |   Oppdaterer regel 2.7.2.9 – Bruke tidssonen for postnummeret til bedriften som utsteder CFDI-dokumentet |
-|      Mexico           |   Desember - oktober 2019      | 10.0.8, 10.0.7HF, 10.0.6HF     |   Kodevalidering i produkter og tjenester-katalog |
-|      Mexico         |   Juli 2019     | 10.0.5      |   MX – CFDI 3.3 – Detaljene i IEPS-avgiftstransaksjoner i XML må være valgfrie, avhengig av kundeprofil    |
-|      Mexico          |   2019. mai     | 10.0.4      |   DIOT-tredjepartsdeklarering – endringer i oppsett 2019    |
-|      Polen          |   November - oktober 2019     | 10.0.7, 10.0.6HF Polen     |   Obligatorisk oppdelt betaling - 10.0.7 |
-|      Singapore           |   2019. desember     | 10.0.7      |   Rapport for GST-retur |
-|      Spania          |   August–juli 2019      | 10.0.5, 10.0.4HF      |   Spania: SII: Valideringsregler endres fra 1. oktober 2019    |
-|      Storbritannia          |   2019. desember       | 10.0.8      |   Gjøre mva digital (MTD) - samtykke av systemadministrator til å overføre informasjon utenfor D365 ved hjelp av integrasjon med HMRC |
-|      Storbritannia          |   November 2019     | 10.0.7     |   Gjøre mva digital – Oppretting av rapport for mva-retur for selskaper som rapporterer som mva-gruppe innenfor samme systemdatabase v.10 |
-|      Storbritannia          |   Juni–juli 2019      | 10.0.5     |   Gjøre mva digital – parametere for unngåelse av bedrageri om den opprinnelige enheten – 10.0.5    |
+|      Brasil         |   2020. mars       | 10.0.9      |   SPED-regnskap – endringer i post D100-feltet COD_MUN_ORI    |
+|      Brasil         |   Mars 2020 til desember 2019       | 10.0.9, 10.0.8, 10.0.7HF      |   DRCST SC – Ordinance SEF Nº 254/19    |
+|      Brasil         |   Januar 2020 til desember 2019       | 10.0.8, 10.0.7HF      |   Komplementær informasjon fra ICMS-ST    |
+|      Brasil        |   Mars 2020 til desember 2019       | 10.0.9, 10.0.8HF, 10.0.7HF      |   SPED-regnskapsoppsett 014 |
+|      Brasil         |   2019. desember       | 10.0.7      |   En ny versjon av tekniske notater for NF-e: NT 2019.001 versjon 1.20    |
+|      Brasil         |   2019. desember       | 10.0.7      |   DRCST-deklarering SC    |
+|      Brasil          |   Mars 2020 til januar 2020       | 10.0.9, 10.0.8HF, 10.0.7HF      |   DRCST SC – Ordinance SEF Nº 343DR   |
+|      Frankrike          |   2020. mars       | 10.0.9      |   Fransk lokalisering: ISO 20022-format for internasjonal betaling og pengeoverføring   |
+|      India          |   2020. mars       | 10.0.9      |   Ny GSTR (ANX-1 & ANX-2) frakoblet verktøy for retur   |
+|      Italia          |   2020. januar       | 10.0.8      |   Endringer i mva-styring etter D.L. 119 av 23. okt. 2018: årlig mva-kommunikasjon |
+|      Italia         |   2019. desember       | 10.0.7      |   Endringer i mva-styring etter D.L. 119 av 23. okt. 2019: Kvartalsvis mva-kommunikasjon ("Lipe 2018")    |
+|      Italia         |   Mars 2020 til desember 2019     | 10.0.9, 10.0.8HF, 10.0.7HF      |   Retail – Administrere kundeinformasjon på salgssted |
+|      Italia         |   Mars 2020 til desember 2019      | 10.0.9, 10.0.8HF, 10.0.7HF      |   Retail – Skrive ut kundeinformasjon på bilagskvittering |
+|      Italia         |   2019. desember     | 10.0.7      |   Endringer i mva-styring etter D.L. 119 av 23- oktober 2018: Kommunikasjon for faktura  |
+|      Japan          |   Mars 2020 til desember 2019     | 10.0.9, 10.0.8HF, 10.0.7HF     |   Japan Bankers Association erstatter JBA-betalingsformater av fast lengde med ISO20022 |
+|      Japan          |   Januar 2020 til desember 2019     | 10.0.8, 10.0.7HF       |   Endringer i forbruksavgiftssats og redusert mva-sats introduseres (Forbruksavgiftsrapport) |
+|      Japan         |   2019. desember      | 10.0.7       |   Endring i forbrukssats og redusert mva-sats introduseres (fakturaoppsett) |
+|      Mexico          |   Januar 2020 til desember 2019    | 10.0.8, 10.0.7HF        |   Detaljhandel -  CFDI Global: Misc. Resol 2019 - c_CodigoPostal og tidssone |
+|     Mexico          |   2019. desember       | 10.0.7      |   Oppdaterer regel 2.7.2.9 – Bruke tidssonen for postnummeret til bedriften som utsteder CFDI-dokumentet |
+|      Mexico           |   Januar 2020 til desember 2019      | 10.0.8, 10.0.7HF     |   Kodevalidering i produkter og tjenester-katalog |
+|      Norge          |   Mars 2020 til desember 2019   | 10.0.9, 10.0.8HF, 10.7.7HF     |   SAF-T XSD-oppdatering til versjon 1.1 for Dynamics 365 for Finance and Operations |
+|      Polen          |   2020. mars    | 10.0.9     |   Inngående mva-registrer og SAF mav-register: Egendefinert byrå fra SAD-dokumenter må erstattes av navn på tredjepart og numme for avgiftsfritak |
+|      Polen          |   Mars 2020 til januar 2020   | 10.0.9, 10.0.8HF     |   Retail – Administrere kundeinformasjon på salgssted |
+|      Polen          |   Mars 2020 til januar 2020     | 10.0.9, 10.0.8HF     |   Retail – Skrive ut kundeinformasjon på bilagskvittering |
+|      Polen          |   Mars 2020 til desember 2019     | 10.0.9, 10.0.8, 10.0.7     |   SAF-fakturaer (JPK_FA) v.3 fra 2. des. 2019 |
+|      Polen          |   Mars 2020 til januar 2019     | 10.0.9, 10.0.8     |   JPK_VDEK erstatter JPK_VAT (SAF VAT) |
+|      Polen          |   2019. desember     | 10.0.7     |   Obligatorisk oppdelt betaling |
+|      Russland          |   2020. mars     | 10.0.9     |   Format for deklarering av eiendomsskatt for rapportering i 2019. |
+|      Russland          |   2020. mars     | 10.0.9     |   Oppdatering av format for avgiftsdeklarering for fortjeneste |
+|      Singapore           |   Januar 2020 til desember 2019     | 10.0.8, 10.0.7HF      |   Rapport for GST-retur |
+|      Sveits           |   2020. mars     | 10.0.9      |   Sveitsisk betalingsbilag ISR får nytt format (QR-kode) |
+|      Storbritannia          |   2020. januar       | 10.0.8      |   Gjøre mva digital (MTD) - samtykke av systemadministrator til å overføre informasjon utenfor D365 ved hjelp av integrasjon med HMRC |
+|      Storbritannia          |   2019. desember     | 10.0.7     |   Gjøre mva digital – Oppretting av rapport for mva-retur for selskaper som rapporterer som mva-gruppe innenfor samme systemdatabase v.10 |
 
 
 

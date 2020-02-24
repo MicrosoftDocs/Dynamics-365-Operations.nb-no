@@ -3,7 +3,7 @@ title: Kontrollere lagerarbeid ved hjelp av arbeidsmaler og lokasjonsdirektiver
 description: Dette emnet beskriver hvordan du bruker arbeidsmaler og lokasjonsdirektiver for å bestemme hvordan og hvor arbeid utføres i lageret.
 author: perlynne
 manager: AnnBe
-ms.date: 09/21/2018
+ms.date: 02/05/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d9a5292e88fe022482ab9c6c5a8f016745946988
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: 4645cf36201aa1b87c22ba4dbfb1b8d8117f425a
+ms.sourcegitcommit: fb7d0efd97754f1ae0b5aa765d0eeb3f57b8078f
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2026970"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "3028034"
 ---
 # <a name="control-warehouse-work-by-using-work-templates-and-location-directives"></a>Kontrollere lagerarbeid ved hjelp av arbeidsmaler og lokasjonsdirektiver
 
@@ -152,7 +152,7 @@ Velg dette for å bruke partistrategier for varene som er partiaktivert. Hvis en
 ### <a name="strategy"></a>Strategi
 
 -   **Konsolider** - Denne strategien brukes til å konsolidere varer på en bestemt lokasjon når det allerede finnes like varer. Dette fungerer bare med lokasjonsdirektiver av plasseringstypen. Vanlige oppsett for plassering skal konsolideres på den første handlingslinjen, og på den andre skal det forsøkes å plassere uten konsolidering. Konsolidering av varer gjør senere plukking mer effektivt.
--   **Samsvar pakkeantall** - Denne strategien brukes til å kontrollere om en plukklokasjon har det angitte pakkeantallet. Dette fungerer bare for lokasjonsdirektiver av plukktypen. 
+-   **Samsvar pakkeantall** - Denne strategien vil finne en lokasjon som inneholder et nummerskilt som har det nøyaktige antallet som kreves. Den kan ikke brukes med lokasjoner som ikke er styrt med nummerskilt. Denne strategien fungerer bare for lokasjonsdirektiver av plukktypen.
 -   **FEFO-partireservering** - Denne strategien brukes når beholdningen plasseres ved hjelp av en utløpsdato for parti og tilordnes partireserveringen. Du kan bare bruke denne strategien for partiaktiverte varer. Dette fungerer bare for lokasjonsdirektiver av plukktypen. 
 -   **Avrund oppover til fullstendig nummerskilt** - Denne strategien brukes til å avrunde lagerantallet oppover for å tilsvare nummerskiltantallet som er tilordnet varene som skal plukkes. Du kan bare bruke denne strategien for etterfyllingstypen av lokasjonsdirektiver av typen plukk. 
 -   **Tom plassering med innkommende arbeid** - Denne strategien brukes til å finne tomme lokasjoner. Lokasjonen anses som tom hvis den ikke har fysisk beholdning og ikke forventet innkommende arbeid. Denne strategien brukes bare for et lokasjonsdirektiv av plasseringstypen. 

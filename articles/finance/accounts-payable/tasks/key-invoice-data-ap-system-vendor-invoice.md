@@ -1,5 +1,5 @@
 ---
-title: Hovedfakturadata i AP-systemet ved hjelp av leverandørfaktura
+title: Hovedfakturadata i AP ved hjelp av en leverandørfaktura
 description: Denne oppgaveveiledningen hjelper deg med å opprette en leverandørfaktura fra en bestilling og vise resultatene av å samsvare bestillingen, kvitteringen og fakturaen (treveis kontroll).
 author: abruer
 manager: AnnBe
@@ -16,14 +16,14 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 7abae6d680d899a0294ad3c298a4b0264ba01d0b
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 22df9b71c6809e7633b7d573e6992be9d868cbac
+ms.sourcegitcommit: 9168621ca9b5061c65f3e05dbc5918b6a11d53d5
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2189436"
+ms.lasthandoff: 01/31/2020
+ms.locfileid: "3000226"
 ---
-# <a name="key-invoice-data-in-ap-system-using-vendor-invoice"></a>Hovedfakturadata i AP-systemet ved hjelp av leverandørfaktura
+# <a name="key-invoice-data-in-ap-using-a-vendor-invoice"></a>Hovedfakturadata i AP ved hjelp av en leverandørfaktura
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 

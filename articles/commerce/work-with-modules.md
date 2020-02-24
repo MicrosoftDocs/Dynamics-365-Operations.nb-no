@@ -3,7 +3,7 @@ title: Arbeide med moduler
 description: Dette emnet beskriver hvordan og når du bruker moduler i Microsoft Dynamics 365 Commerce.
 author: v-chgri
 manager: annbe
-ms.date: 12/12/2019
+ms.date: 01/31/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,18 +17,18 @@ ms.search.industry: ''
 ms.author: phinneyridge
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 3c4161e7a40cdbbb40292a6ce9acab58347460bd
-ms.sourcegitcommit: 36857283d70664742c8c04f426b231c42daf4ceb
+ms.openlocfilehash: 769d6754fa944830b989d657e0dad9cc42212932
+ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "2914800"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "3025885"
 ---
 # <a name="work-with-modules"></a>Arbeide med moduler
 
 Dette emnet beskriver hvordan og når du bruker moduler i Microsoft Dynamics 365 Commerce.
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 ## <a name="overview"></a>Oversikt
@@ -99,12 +99,10 @@ Følgende prosedyrer beskriver hvordan du konfigurerer innhold og innholdsmodule
 
 Hvis du vil konfigurere en innholdsmodul på en side, følger du disse trinnene.
 
-1. I disposisjonsruten til venstre velger du en innholdsmodultype (for eksempel **Funksjon**, **Hovedbanner** eller **Banner**).
-1. I egenskapsruten til høyre utvider du de nestede kontrollene ved å velge overskriftene og angi eventuelle nødvendige kontrollverdier.
-1. Hvis egenskapsruten har en **Datakonfigurasjon**-del, merker du den for å utvide den. Hvis ikke går du til trinn 5.
-1. Hvis det finnes en **Legg til datakilde**-knapp, velger du den, og deretter velger du innholdselementene for å legge til.
-1. Angi innstillinger for eventuelle nødvendige eller ønskede modulkontroller.
-1. Velg **Lagre**.
+1. I disposisjonsruten til venstre utvider du treet og velger en innholdsmodul (for eksempel **Funksjon**, **Hovedbanner** eller **Banner**).
+1. I egenskapsruten til høyre finner du innholdet og innstillingskontrollene for modulen.
+1. Angi egenskaper for de ønskede modulkontrollene.
+1. Velg **Lagre** på kommandolinjen. Dette vil også oppdatere forhåndsvisningslerretet.
 
 ### <a name="configure-a-container-module"></a>Konfigurere en containermodul
 
@@ -112,7 +110,7 @@ Hvis du vil konfigurere en containermodul på en side, følger du disse trinnene
 
 1. Velg en containermodul på siden (for eksempel en karusell eller en modul for flytende container).
 1. I egenskapsruten til høyre utvider du de nestede kontrollene ved å velge overskriftene og angi eventuelle nødvendige kontrollverdier.
-1. I disposisjonsruten til venstre velger du ellipseknappen ved siden av navnet på enten containeren eller eventuelle spor i containeren, og deretter velger du **Legg til modul**. Deretter legger du til underordnede moduler i den valgte containeren. Hvis du ha mer informasjon, kan du se prosedyren [Legge til en modul](#add-a-module) tidligere i dette emnet.
+1. I disposisjonsruten til venstre velger du ellipseknappen ved siden av navnet på enten containeren eller eventuelle spor i containeren, og deretter velger du **Legg til modul**. Deretter legger du til underordnede moduler i den valgte containeren. Hvis du ha mer informasjon, kan du se delen [Arbeide med moduler](#add-a-module) tidligere i dette emnet.
 1. Hvis det finnes flere underordnede moduler som sideordnede i en overordnet container, kan du endre visningsrekkefølgen i den overordnede containeren. Velg ellipseknappen for en modul, og bruk deretter tastene for pil opp og pil ned.
 
 ## <a name="additional-resources"></a>Tilleggsressurser
@@ -126,8 +124,6 @@ Hvis du vil konfigurere en containermodul på en side, følger du disse trinnene
 [Arbeide med fragmenter](work-with-fragments.md)
 
 [Legge til en containermodul på en side](add-container-module.md)
-
-[Legge til moduler for innholdsplassering på en side](add-content-placement-modules.md)
 
 [Arbeide med publiseringsgrupper](publish-groups.md)
 

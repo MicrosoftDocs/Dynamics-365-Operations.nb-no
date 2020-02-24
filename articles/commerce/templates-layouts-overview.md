@@ -17,16 +17,16 @@ ms.search.industry: ''
 ms.author: niholman
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 4ddae5b77c36151a279a463033079099722d166e
-ms.sourcegitcommit: 36857283d70664742c8c04f426b231c42daf4ceb
+ms.openlocfilehash: d805c39b77d653eaa9935751ae89012c98b930d2
+ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "2914847"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "3002688"
 ---
 # <a name="templates-and-layouts-overview"></a>Oversikt over maler og oppsett
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 Maler er et grunnleggende element i Microsoft Dynamics 365 Commerce-sidemodellen. Hvis målet er å oppnå størst mulig effektivitet og konsekvens for arbeidsflyter for områderedigering, er det viktig at du lærer deg hvordan du kan dra nytte av maler for webområdet ditt. Tidlige avgjørelser om malstruktur er viktig og kan påvirke kostnadene og fleksibiliteten for daglige, sesongbaserte og områdeomfattende merkeoppdateringer. Godt strukturerte maler har også andre fordeler. De hjelper for eksempel med å forbedre resultatene av søkemotoroptimalisering (SEO) på tvers av hele området og minimere antall feil.

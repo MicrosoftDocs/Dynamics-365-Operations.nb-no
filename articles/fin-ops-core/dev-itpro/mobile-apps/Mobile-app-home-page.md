@@ -1,9 +1,9 @@
 ---
 title: Startside for mobilapp
-description: Dette emnet beskriver Finance and Operations-mobilappen og inneholder koblinger til ressursene som kan hjelpe deg med å implementere den i din organisasjon.
+description: Dette emnet beskriver Finance and Operations-mobilappen (Dynamics 365) og inneholder koblinger til ressursene som kan hjelpe deg med å implementere den i din organisasjon.
 author: sericks007
 manager: AnnBe
-ms.date: 11/26/2019
+ms.date: 01/22/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: sericks
 ms.dyn365.ops.version: Platform update 4
 ms.search.validFrom: 2017-02-28
-ms.openlocfilehash: aaff4e3b3bfb079e183a12a5a85e452eed6df51d
-ms.sourcegitcommit: e30ced8f136ef23017d2d8215a756236e42eec25
+ms.openlocfilehash: 012b51b66c831a66a54c7c868735e310f05eb8c1
+ms.sourcegitcommit: f939bc6292840e29bc0f498efc8f4641dfe8f994
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "2853938"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "2975203"
 ---
 # <a name="mobile-app-home-page"></a>Startside for mobilapp
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet beskriver Finance and Operations-mobilappen og inneholder koblinger til ressursene som kan hjelpe deg med å implementere den i din organisasjon.
+Dette emnet beskriver **Finance and Operations-mobilappen (Dynamics 365)** og inneholder koblinger til ressursene som kan hjelpe deg med å implementere den i din organisasjon.
 
 <a name="overview"></a>Oversikt
 --------
@@ -80,7 +80,7 @@ Tabellen nedenfor inneholder koblinger til ressurser som kan hjelpe deg med å i
 <tr class="odd">
 <td>1</td>
 <td>Systemansvarlig</td>
-<td>Implementere Finance and Operations-apper i organisasjonen.</td>
+<td>Implementer Finance and Operations-appen i organisasjonen.</td>
 <td><ul><li>Hvis du ennå ikke har distribuert en versjon av Microsoft Dynamics 365, kan du se <a href="../deployment/deploy-demo-environment.md">Distribuere et demomiljø</a>.</li><li>Hvis du vil se en oversikt over mobile arbeidsområder som kan brukes, kan du se <a href="mobile-workspaces-released.md">Mobile arbeidsområder som nylig er utgitt</a>.</li></ul></td>
 </tr>
 <tr class="even">

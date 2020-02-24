@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d949be57d9e9fe744860f5c4045bef2923b7f284
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 97aedf17bb6fa67fd08497ec6e15a7c92866fa4d
+ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2249187"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "3026116"
 ---
 # <a name="define-the-dependency-of-er-configurations-on-other-components"></a>Definere avhengigheten av ER-konfigurasjoner i andre komponenter
 
@@ -47,9 +47,9 @@ Denne fremgangsmåten er ment for brukere som har den systemansvarlige eller ele
 5. Klikk Ny.
 6. Velg den nødvendige komponenten for produktet.
 7. Velg Microsoft Dynamics 365 for Operations (1611).
-8. Skriv inn '[7.1.1541.3036,8)' i Versjon-feltet.
+8. I Versjon-feltet skriver du inn [7.1.1541.3036,8).
     * [7.1.1541.3036,8)  
-    * Du angir avhengigheter blir evaluert når denne konfigurasjonen lastes ned fra en hvilken som helst ER repositoriet. Denne versjonen av konfigurasjonen skal lastes ned fra repositoriet ER når versjon 1 av "eksempel datamodellen-konfigurasjonen er enten allerede er på plass eller lastet ned på forhånd. Hvis det er lastet ned på forhånd, må være fullført i Finance and Operations versjon 7.1.1541.3036 eller nyere, men må ikke overskride hovedversjon 8.   
+    * Du angir avhengigheter blir evaluert når denne konfigurasjonen lastes ned fra en hvilken som helst ER repositoriet. Denne versjonen av konfigurasjonen skal lastes ned fra repositoriet ER når versjon 1 av "eksempel datamodellen-konfigurasjonen er enten allerede er på plass eller lastet ned på forhånd. Hvis det er lastet ned på forhånd, må være fullført i Finance and Operations-versjon 7.1.1541.3036 eller nyere, men må ikke overskride hovedversjon 8.   
 9. Klikk Lagre.
 10. Lukk siden.
 11. Klikk Endre status.
@@ -60,7 +60,7 @@ Denne fremgangsmåten er ment for brukere som har den systemansvarlige eller ele
 16. Klikk Ny.
 17. Velg den nødvendige komponenten for produktet.
 18. Velg Microsoft Dynamics AX 7.0 RTW.
-19. Skriv inn '[7.0.1265.3015,7.1)' i Versjon-feltet.
+19. I Versjon-feltet skriver du inn [7.0.1265.3015,7.1).
     * [7.0.1265.3015,7.1)  
     * Avhengigheter blir evaluert når denne konfigurasjonen lastes ned fra en hvilken som helst ER repositoriet. Denne versjonen av konfigurasjonen skal lastes ned fra repositoriet ER når versjon 1 av "eksempel datamodellen-konfigurasjonen er enten allerede er på plass eller lastet ned på forhånd. Hvis det er lastet ned på forhånd, den må fullføres i Microsoft Dynamics 365 for Finance and Operations, Enterprise edition er versjonen som må være 7.0.1265.3015 eller senere, men må ikke overskride underordnet versjon 1.   
 20. Klikk Lagre.
@@ -109,7 +109,7 @@ Denne fremgangsmåten er ment for brukere som har den systemansvarlige eller ele
     * Versjon 1.1 av denne modelltilordningskonfigurasjon er lastet opp til LCS ved hjelp av prosjektet LCS for ER lageret som tidligere ble konfigurert.   
 
 ## <a name="evaluate-er-configuration-dependencies"></a>Evaluere avhengigheter i ER-konfigurasjonen
-    * Vi skal slette opprettede konfigurasjoner fra systemet og laste dem ned fra LCS repositoriet.  
+Vi skal slette opprettede konfigurasjoner fra systemet og laste dem ned fra LCS repositoriet.  
 1. Velg 'Sample data model\Sample mapping' i treet.
 2. Klikk Slett.
 3. Klikk Ja.
@@ -139,5 +139,5 @@ Denne fremgangsmåten er ment for brukere som har den systemansvarlige eller ele
 25. Gå til Organisasjonsstyring > Elektronisk rapportering > Konfigurasjoner.
 26. Utvid 'Sample data model' i treet.
     * Legg merke til at den tilordning konfigurasjonen for tilordning av eksemplet er lastet ned sammen med konfigurasjonen for valgte dataene. De to filene lastes ned sammen fordi tilordning av eksemplet er definert som implementerer valgte datamodellen og fordi den er tilgjengelig for programmet. Eksempel på tilordning (alternativ) konfigurasjonen ikke er lastet ned fordi betingelsen for versjonen nødvendige programmet ikke er oppfylt.   
-    * Hvis du logger på Finance and Operations, registrere samme leverandør, tilgang til samme prosjekt LCS og laste ned den samme konfigurasjonen for data, konfigurasjonen eksempel tilordning (alternativ) lastes ned, mens tilordning av prøve konfigurasjonen vil bli hoppet over.  
+    * Hvis du logger deg på Finance and Operations, registrere samme leverandør, tilgang til samme prosjekt LCS og laste ned den samme konfigurasjonen for data, konfigurasjonen eksempel tilordning (alternativ) lastes ned, mens tilordning av prøve konfigurasjonen vil bli hoppet over.  
 

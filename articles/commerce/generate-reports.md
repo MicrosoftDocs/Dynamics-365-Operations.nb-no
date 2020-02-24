@@ -1,6 +1,6 @@
 ---
 title: Generere rapporter om Internett-kanal
-description: Dette emnet beskriver hvordan du genererer rapporter for Internett-kanalen i Microsoft Dynamics 365 Retail.
+description: Dette emnet beskriver hvordan du genererer rapporter for Internett-kanalen i Microsoft Dynamics 365 Commerce.
 author: psimolin
 manager: annbe
 ms.date: 10/01/2019
@@ -17,23 +17,23 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 77737c134df8f3ba598fe9026fa7c01ca9976733
-ms.sourcegitcommit: 295d940a345879b3dfc5991e387b91c7257019ea
+ms.openlocfilehash: fd40aabdf40e0f2bb257b914326df5595a0e6945
+ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2698056"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "3003010"
 ---
 # <a name="generate-online-channel-reports"></a>Generere rapporter om Internett-kanal
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
-Dette emnet beskriver hvordan du genererer rapporter for Internett-kanalen i Microsoft Dynamics 365 Retail.
+Dette emnet beskriver hvordan du genererer rapporter for Internett-kanalen i Microsoft Dynamics 365 Commerce.
 
 ## <a name="overview"></a>Oversikt
 
-Du kan generere og vise flere rapporter i Retail for å se hvordan det går med Internett-kanalen din.
+Du kan generere og vise flere rapporter i Handel for å se hvordan det går med Internett-kanalen din.
 
 ## <a name="channel-summary-report"></a>Rapport for kanalsammendrag
 
@@ -46,7 +46,7 @@ Rapporten **Kanalsammendrag** viser et sammendrag av følgende transaksjoner for
 
 Følg denne fremgangsmåten for å generere en **Kanalsammendrag**-rapport.
 
-1. Gå til **Retail \> Forespørsler og rapporter \> Salgsrapporter \> Rapport for kanalsammendrag**.
+1. Gå til **Detaljhandel og handel \> Forespørsler og rapporter \> Salgsrapporter \> Rapport for kanalsammendrag**.
 1. Angi en dato i **Fra dato**-feltet.
 1. Angi en dato i **Til dato**-feltet.
 1. I **Kanal**-feltet velger du Internett-kanalen.
@@ -58,7 +58,7 @@ Rapporten for **kanalsalg etter år** viser en sammenligning av årlig salg for 
 
 Følg denne fremgangsmåten for å generere en rapport for **kanalsalg etter år**.
 
-1. Gå til **Retail \> Forespørsler og rapporter \> Salgsrapporter \> Rapport for kanalsalg etter år**.
+1. Gå til **Detaljhandel og handel \> Forespørsler og rapporter \> Salgsrapporter \> Rapport for kanalsalg etter år**.
 1. Angi et år i feltet **Fra kalenderår**.
 1. Angi et år i feltet **Til kalenderår**.
 1. I **Kanal**-feltet velger du Internett-kanalen.
@@ -70,7 +70,7 @@ Rapporten for **kanalsalg etter time** viser salgsmål per time for en valgt kan
 
 Følg denne fremgangsmåten for å generere en rapport for **kanalsalg etter time**.
 
-1. Gå til **Retail \> Forespørsler og rapporter \> Salgsrapporter \> Rapport for kanalsalg etter time**.
+1. Gå til **Detaljhandel og handel \> Forespørsler og rapporter \> Salgsrapporter \> Rapport for kanalsalg etter time**.
 1. Angi en dato i **Fra dato**-feltet.
 1. Angi en dato i **Til dato**-feltet.
 1. I **Kanal**-feltet velger du Internett-kanalen.
@@ -82,7 +82,7 @@ Rapporten **Toppkunder** viser salgsmål for de viktigste *N* kundene for en val
 
 Følg denne fremgangsmåten for å generere en **Toppkunder**-rapport.
 
-1. Gå til **Retail \> Forespørsler og rapporter \> Salgsrapporter \> Rapport for beste kunder**.
+1. Gå til **Detaljhandel og handel \> Forespørsler og rapporter \> Salgsrapporter \> Rapport over toppkunder**.
 1. Angi en dato i **Fra dato**-feltet.
 1. Angi en dato i **Til dato**-feltet.
 1. I **Kanal**-feltet velger du Internett-kanalen.
@@ -94,7 +94,7 @@ Rapporten om **Topprabatter** viser salgsmål for de viktigste *N* rabattene for
 
 Følg denne fremgangsmåten for å generere en **Topprabatter**-rapport.
 
-1. Gå til **Retail \> Forespørsler og rapporter \> Salgsrapporter \> Rapport om topprabatter**.
+1. Gå til **Detaljhandel og handel \> Forespørsler og rapporter \> Salgsrapporter \> Rapport over topprabatter**.
 1. Angi en dato i **Fra dato**-feltet.
 1. Angi en dato i **Til dato**-feltet.
 1. I **Kanal**-feltet velger du Internett-kanalen.
@@ -106,7 +106,7 @@ Rapporten om **Topprodukter** viser salgsmål for de viktigste *N* produktene fo
 
 Følg denne fremgangsmåten for å generere en **Topprodukter**-rapport.
 
-1. Gå til **Retail \> Forespørsler og rapporter \> Salgsrapporter \> Rapport om topprodukter**.
+1. Gå til **Detaljhandel og handel \> Forespørsler og rapporter \> Salgsrapporter \> Rapport over topprodukter**.
 1. Angi en dato i **Fra dato**-feltet.
 1. Angi en dato i **Til dato**-feltet.
 1. I **Kanal**-feltet velger du Internett-kanalen.
@@ -118,7 +118,7 @@ Rapporten for **Kategorisalg** viser salgsmål for en valgt periode for hver nod
 
 Følg denne fremgangsmåten for å generere en **Kategorisalg**-rapport.
 
-1. Gå til **Retail \> Forespørsler og rapporter \> Salgsrapporter \> Rapport for kategorisalg**.
+1. Gå til **Detaljhandel og handel \> Forespørsler og rapporter \> Salgsrapporter \> Rapport for kategorisalg**.
 1. Angi en dato i **Fra dato**-feltet.
 1. Angi en dato i **Til dato**-feltet.
 1. I **Kanal**-feltet velger du Internett-kanalen.
@@ -126,11 +126,11 @@ Følg denne fremgangsmåten for å generere en **Kategorisalg**-rapport.
 
 ## <a name="organization-sales-report"></a>Rapport for organisasjonssalg
 
-Rapporten for **organisasjonssalg** viser resultatene for detaljhandelsbutikkene etter organisasjonsenhet. Denne rapporten inkluderer salgsantall og beløp etter butikk og fortjenestemarginen for hver butikk. Organisasjonsenheten er basert på standard rapporteringshierarki.
+Rapporten for **organisasjonssalg** viser resultatene for butikkene etter organisasjonsenhet. Denne rapporten inkluderer salgsantall og beløp etter butikk og fortjenestemarginen for hver butikk. Organisasjonsenheten er basert på standard rapporteringshierarki.
 
 Følg denne fremgangsmåten for å generere en **Organisasjonssalg**-rapport.
 
-1. Gå til **Retail \> Forespørsler og rapporter \> Salgsrapporter \> Rapport for organisasjonssalg**.
+1. Gå til **Detaljhandel og handel \> Forespørsler og rapporter \> Salgsrapporter \> Rapport for organisasjonssalg**.
 1. Angi en dato i **Fra dato**-feltet.
 1. Angi en dato i **Til dato**-feltet.
 1. Velg **OK**.

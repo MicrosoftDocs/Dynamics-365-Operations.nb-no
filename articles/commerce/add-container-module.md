@@ -3,7 +3,7 @@ title: Containermodul
 description: Dette emnet dekker containermoduler og beskriver hvordan du legger dem til områdesider i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
-ms.date: 10/31/2019
+ms.date: 01/23/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,27 +17,28 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 22a09b61fbe3bd1cca96011d3fb81a12ef1bc844
-ms.sourcegitcommit: 295d940a345879b3dfc5991e387b91c7257019ea
+ms.openlocfilehash: 93c16da0988cc955835231bdd1f7342f19063f85
+ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2697066"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "3025534"
 ---
 # <a name="container-module"></a>Containermodul
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 Dette emnet dekker containermoduler og beskriver hvordan du legger dem til områdesider i Microsoft Dynamics 365 Commerce.
 
 ## <a name="overview"></a>Oversikt
 
-En containermodul er en modul som er vert for andre moduler i den. Det er den mest generelle containeren som brukes i Dynamics 365 Commerce. Hovedformålet med en containermodul er å definere, gjennom egenskapene som er angitt for den, oppsettet til modulene som er inni. Disse modulene kan for eksempel vises side ved side i et oppsett med to kolonner, tre kolonner, fire kolonner eller seks kolonner. De kan også begrenses til bredden på containeren, eller de kan fylle skjermen. En overskrift kan også legges til i hver containermodul.
+En containermodul er en modul som er vert for andre moduler i den. Hovedformålet med en containermodul er å definere, gjennom egenskapene som er angitt for den, oppsettet til modulene som den inneholder. Disse modulene kan for eksempel vises side ved side i et oppsett med to kolonner, tre kolonner, fire kolonner eller seks kolonner. De kan også begrenses til bredden på containeren, eller de kan fylle skjermen. En overskrift kan også legges til i hver containermodul.
 
-Det finnes tre standardtyper containermoduler: container, container med 2 spor og container med 3 spor. Moduler av alle typer kan plasseres i disse containerne. Det finnes også spesielle typer containermoduler, for eksempel karusell, innholdsrik blokk, innholdsplassering, handlekurv, kasse, kjøpsboks, topptekst og bunntekst. Disse containerne har bestemte formål, og bare bestemte typer moduler som støttes, kan plasseres inne i dem.
+Tre containermoduler støttes: container, container med 2 spor og container med 3 spor. Moduler av alle typer kan plasseres i disse containerne. 
 
-Vi anbefaler at du plasserer moduler i en container, slik at de kan begrenses til bredden på containeren.
+> [!NOTE] 
+> Vi anbefaler at du alltid plasserer moduler i en containermodul, slik at de kan begrenses til bredden på containeren.
 
 ## <a name="examples-of-container-modules-in-e-commerce"></a>Eksempler på containermoduler i e-handel
 
@@ -98,20 +99,19 @@ Du kan bruke flere egenskaper til å optimalisere oppsettet for forskjellige vis
 
 Hvis du vil legge til en containerspillermodul på en ny side og angi de nødvendige egenskapene, følger du disse trinnene.
 
-1. Opprett en sidemal som heter **containermal**.
-1. I **Hoved**-sporet på standardsiden legger du til en containermodul.
-1. I containermodulen legger du til en funksjonsmodul.
-1. Sjekk inn malen, og publiser den.
+1. Opprett en sidemal som heter **containermal**. 
+1. Legg til en **Standardside**-modul i **Meldingstekst**-sporet.
+1. Fullfør redigeringen av malen, og publiser den.
 1. Bruk containermalen du nettopp opprettet, for å opprette en side som heter **containerside**.
 1. I **Hoved**-sporet på den nye siden legger du til en containermodul.
-1. I egenskapsruten for containermodulen settes **Antall kolonner**-egenskapen til **1** og **Bredde**-egenskapen til **Tilpass container**.
-1. I containermodulen legger du til en funksjonsmodul.
-1. I egenskapsruten for funksjonsmodulen konfigurerer du en overskrift.
+1. I egenskapsruten for containermodulen settes **Antall kolonner**-egenskapen til **1** og **Bredde**-egenskapen til **Fyll container**.
+1. Legg til en innholdsblokkmodul i containermodulen.
+1. I egenskapsruten for innholdsblokkmodulen konfigurerer du overskriften, bildet og oppsettet.
 1. Lagre og forhåndsvis siden. Du skal se én funksjonsmodul som passer innenfor bredden til containermodulen.
 1. I egenskapsruten for containermodulen endrer du verdien til egenskapen **Antall kolonner** til **3**.
-1. Legg til to funksjonsmoduler til i containermodulen.
-1. Lagre og forhåndsvis siden. Nå skal du se tre funksjonsmoduler som vises side ved side.
-1. Når du har fått oppsettet du vil bruke, sjekker du inn siden og publiserer den.
+1. Legg til to innholdsblokkmoduler til i containermodulen.
+1. Lagre og forhåndsvis siden. Nå skal du se tre innholdsblokkmoduler som vises side ved side.
+1. Når du har fått oppsettet du vil bruke, fullfører du redigeringen av siden og publiserer den.
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 
@@ -119,9 +119,7 @@ Hvis du vil legge til en containerspillermodul på en ny side og angi de nødven
 
 [Karusellmodul](add-carousel.md)
 
-[Innholdsrik blokk-modul](add-content-rich-block.md)
-
-[Modul for innholdsplassering](add-content-placement-modules.md)
+[Tekstblokkmodul](add-content-rich-block.md)
 
 [Kjøpsboksmodul](add-buy-box.md)
 
