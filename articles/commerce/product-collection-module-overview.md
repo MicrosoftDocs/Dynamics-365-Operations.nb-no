@@ -17,16 +17,16 @@ ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 31307035014f2fae6146f33bc23e3e06103f82eb
-ms.sourcegitcommit: c237123ad94d9418994ac095fbd8634c05a927b1
+ms.openlocfilehash: 069fa1cb6acad4b8d6618cebb754cbc0892ca9cf
+ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/08/2020
-ms.locfileid: "2943269"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "3025954"
 ---
 # <a name="product-collection-modules"></a>Produktsamlingsmoduler
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 Dette emnet gir en oversikt over produktsamlingsmoduler i Microsoft Dynamics 365 Commerce.
@@ -39,7 +39,7 @@ Produktsamlingsmoduler representerer fysiske produkter og tjenester på webområ
 
 Kildene for produktsamlinger kan være lister med følgende fire typer:
 
-- Redigeringslister med produkter som er manuelt definert i Dynamics 365 Retail som tilknyttede produkter for et produkt, eller produktlister
+- Redigeringslister med produkter som er manuelt definert i Dynamics 365 Commerce som tilknyttede produkter for et produkt, eller produktlister
 - Lister over algoritmer, for eksempel lister over nye, bestselgende eller tendenser
 - Anbefalingslister som er basert på maskinopplæring
 - Tilpasningslister som støtter personlige resultater for en kunde. Kunder må være logget på webområdet for e-handel for å se personlige resultater. Gjestebrukere ser ikke personlige resultater. Kunder kan velge bort personlig tilpasning fra [siden for kontoadministrasjon](account-management.md).
@@ -57,9 +57,10 @@ Følgende tabell beskriver ulike typer produktsamlingsmoduler i Dynamics 365 Com
 
 | Produktsamlingsmodul  | Type | Beskrivelse |
 |----------------------------|------|-------------|
-| Kategori                   | Kategori | Denne modulen viser en liste over produkter i en kategori, som definert av navigasjonskategorihierarkiet som forhandleren opprettet for en detaljhandelskanal. |
-| Relaterte produkter           | Redaksjonell | Denne modulen viser en liste over produkter som en salgssjef har konfigurert som tilknyttede produkter i detaljhandel for relasjonstypen som forfatteren har valgt. |
-| Kuraterte produktlister      | Redaksjonell | Denne modulen viser egendefinerte lister som forhandlere og redaktører har opprettet i Retail. |
+| Kategori                   | Kategori | Denne modulen viser en liste over produkter i en kategori, som definert av navigasjonskategorihierarkiet som forhandleren opprettet for en kanal. |
+| Relaterte produkter           | Redaksjonell | Denne modulen viser en liste over produkter som en salgssjef har konfigurert som tilknyttede produkter i Commerce for relasjonstypen som forfatteren har valgt. |
+| Søkeresultater             | Søkespørring | Denne typen produktsamlingsmodul viser en liste over produkter som passer best til søkespørringen som kunden har angitt. |
+| Kuraterte produktlister      | Redaksjonell | Denne modulen viser egendefinerte lister som forhandlere og redaktører har opprettet i Commerce. |
 | Nye                        | Algoritme | Denne modulen viser en liste over de nyeste produktene som er assortert til kanaler og kataloger. Denne listen kan vise personlige resultater for en pålogget bruker hvis områdeforfatteren velger dette alternativet. |
 | Bestselgere               | Algoritme | Denne modulen viser en liste over produkter som er rangert etter det høyeste salgstallet. Denne listen kan vise personlige resultater for en pålogget bruker hvis områdeforfatteren velger dette alternativet. |
 | Populære                   | Algoritme | Denne modulen viser en liste over produkter med høyest ytelse for en gitt periode. Denne listen kan vise personlige resultater for en pålogget bruker hvis områdeforfatteren velger dette alternativet. |
@@ -76,7 +77,6 @@ Følg disse trinnene for å legge til en produktsamlingsmodul på en kategorisid
 1. I dialogboksen **Legg til modul** velger du **Container**, og deretter velger du **OK**.
 1. I containermodulen velger du ellipseknappen, og deretter velger du **Legg til modul**.
 1. I dialogboksen **Legg til modul** velger du **Produktsamling**, og deretter velger du **OK**.  
-![Eksempel på veiviserflyt for produktsamlingsmodul](./media/productCollectionModule.png)
 1. Konfigurer innstillinger for å velge aktuell datakilde og inndata for produktsamlingen.
 1. I egenskapsruten for produktsamlingsmodulen velger du **Legg til en produktliste**.
 1. I dialogboksen **Velg produktlistekonfigurasjon** velger du listetype, angir antall varer og velger eventuelle andre alternativer som er tilgjengelige for listetypen. Hvis du vil ha mer informasjon om listetyper, kan du se tabellen nedenfor. 
@@ -88,8 +88,8 @@ Følgende tabell viser listetypene som er tilgjengelige for valg i dialogboksen 
 | Type                       | Beskrivelse | Bruk | Sidekontekst | Bestemt kontekst | Tilpassing |
 |----------------------------|-------------|-------|--------------|------------------|-----------------|
 | Produkter etter kategori       | En liste over produkter som tilhører en gitt kategori. Denne kategorien bestemmes enten fra sidekonteksten eller konteksten som forfatteren gir. | Denne typen liste kan brukes på en hvilken som helst side (for eksempel en startside, en kategoriside, en markedsføringsside eller en produktdetaljside \[PDP\]) for å promotere en bestemt kategori av produkter. | Kategori fra sidekonteksten, der det er tilgjengelig (for eksempel en kategoriside) | Forfatteren kan gi en bestemt kategori som kontekst for listen. | Gjelder ikke |
-| Relaterte produkter           | En liste over produkter som en varehandelsleder har konfigurert som tilknyttede produkter i Retail for relasjonstypen. | Denne typen liste brukes først og fremst på PDP-er, men den kan brukes på alle sider hvis et overordnet produkt er angitt. | Produkt fra siden, relasjonstype (obligatorisk) | Produktet kan velges i velgeren, og relasjonstypen brukes. | Gjelder ikke |
-| Kuratert                    | En egendefinert liste som forhandlere og redaktører har opprettet i Retail. | Supplere kategoriside, startside, betalings- og handlekurvsider, og produktsider | Gjelder ikke | Gjelder ikke | Gjelder ikke |
+| Relaterte produkter           | En liste over produkter som en varehandelsleder har konfigurert som tilknyttede produkter i Commerce for relasjonstypen. | Denne typen liste brukes først og fremst på PDP-er, men den kan brukes på alle sider hvis et overordnet produkt er angitt. | Produkt fra siden, relasjonstype (obligatorisk) | Produktet kan velges i velgeren, og relasjonstypen brukes. | Gjelder ikke |
+| Kuratert                    | En egendefinert liste som forhandlere og redaktører har opprettet i Commerce. | Supplere kategoriside, startside, betalings- og handlekurvsider, og produktsider | Gjelder ikke | Gjelder ikke | Gjelder ikke |
 | Algoritme                | <ul><li>**Ny** – En liste over de nyeste produktene som er assortert til kanaler og kataloger.</li><li>**Bestselgere** – En liste over produkter som er rangert etter det høyeste salgstallet.</li><li>**Stjerneskudd** – En liste over produkter med høyest ytelse for en gitt periode.</li></ul> | Startside, suppler kategoriside, og betalings- og handlekurvsider | Kategori fra sidekonteksten (for eksempel en kategoriside) | Kategorien som bestemmes av områdeforfatteren | Støttes |
 | Kjøpes ofte sammen | En liste som bruker maskinopplæring til å analysere forbrukskjøpsmønstre og anbefale relaterte varer som kjøpes ofte sammen med et gitt produkt. | Denne typen liste er bare tilgjengelig for handlevognsiden. | Handlekurv | Gjelder ikke | Støttes |
 | Andre liker også           | En liste som bruker maskinopplæring til å analysere forbrukskjøpsmønstre og anbefale varer som er relatert til et gitt produkt. | Denne typen liste brukes på PDP-er for å vise produkter som andre kunder har kjøpt. | Produktkontekst fra siden | Produktet som leveres av områdeforfatteren | Støttes |
@@ -102,8 +102,6 @@ Følgende tabell viser listetypene som er tilgjengelige for valg i dialogboksen 
 [Karusellmodul](add-carousel.md)
 
 [Innholdsrik blokkmodul](add-content-rich-block.md)
-
-[Modul for innholdsplassering](add-content-placement-modules.md)
 
 [Containermodul](add-container-module.md)
 

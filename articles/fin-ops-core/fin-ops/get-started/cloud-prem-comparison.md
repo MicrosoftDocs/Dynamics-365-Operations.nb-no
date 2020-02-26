@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2017-11-29
 ms.dyn365.ops.version: Platform update 9
-ms.openlocfilehash: 7837fbaaffdbd61a1adce1698800017bf4f6a018
-ms.sourcegitcommit: 282552609fdb82ec4463f801023b4bc01bc151d5
+ms.openlocfilehash: aa60f3bc35f2bc10902da060ccacd7767bc9af8f
+ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "2935393"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "3005732"
 ---
 # <a name="comparison-of-cloud-and-on-premises-features"></a>Sammenligning av skyfunksjoner og lokale funksjoner
 
@@ -32,8 +32,8 @@ Dette emnet viser en sammenligning av funksjoner som er tilgjengelige i skyen, s
 
 - [Dynamics 365 Finance](cloud-prem-comparison.md#dynamics-365-finance)
 - [Dynamics 365 Supply Chain Management](cloud-prem-comparison.md#dynamics-365-supply-chain-management)
-- [Dynamics 365 Retail](cloud-prem-comparison.md#dynamics-365-retail)
-- [Dynamics 365 Talent](cloud-prem-comparison.md#dynamics-365-talent)
+- [Dynamics 365 Commerce](cloud-prem-comparison.md#dynamics-365-commerce)
+- [Dynamics 365 Human Resources](cloud-prem-comparison.md#dynamics-365-human-resources)
 
 Informasjon om [funksjonene for utvikling og administrasjon](cloud-prem-comparison.md#development-and-administration-features) er også inkludert.
 
@@ -45,8 +45,7 @@ Tabellene nedenfor viser programområdene. Søttte for sky og lokalt er oppført
 |---------------------|-----------------------------|-----------|-----------------|
 | Overholdelse og sertifiseringer        |                                                                                           | Ja       | Ja             |
 |                                      | SOC 1 Type 1-sertifisering                                                                | Ja       | Nei              |
-| Databehandling og integrering      |                                                                                           | Ja       | Ja             |
-|                                      | Konfigurasjonsdrevet utvidelse                                                            | Ja       | Antall              |
+| Databehandling og integrering      |                                                                                           | Ja       | Ja             
 |                                      | Eksporter data til ditt eget datalager                                                    | Ja       | Ja             |
 |                                      | Aktiver eksport av inkrementelle oppdateringer til en dataenhet                                 | Ja       | Ja              |
 |                                      | Dataintegreringer                                                                         | Ja       | Ja             |
@@ -146,15 +145,15 @@ Tabellene nedenfor viser programområdene. Søttte for sky og lokalt er oppført
 | Støtte                              |                                                                                           | Ja       | Ja             |
 |                                      | Tilgang til support via hjelp- og støttemeny                                             | Ja       | Nei              |
 
-## <a name="dynamics-365-retail"></a>Dynamics 365 Retail 
+## <a name="dynamics-365-commerce"></a>Dynamics 365 Commerce 
 
-Hvis du vil se en liste over retail-funksjonene som er tilgjengelige i lokale distribusjoner, kan du se [Retail-funksjoner som er tilgjengelige i lokale distribusjoner](../../../retail/retail-onprem.md).
+Hvis du vil se en liste over funksjonene som er tilgjengelige i lokale distribusjoner, kan du se [Retail-funksjoner som er tilgjengelige i lokale distribusjoner](../../../retail/retail-onprem.md).
 
-## <a name="dynamics-365-talent"></a>Dynamics 365 Talent 
+## <a name="dynamics-365-human-resources"></a>Dynamics 365 Human Resources 
 
 | **Areal**         | **Funksjon**         | **Sky** | **Lokalt** |
 |------------------|---------------------|-----------|-----------------|
-| Alle Talent-områder | Alle Talent-funksjoner | Ja       | Nei              |
+| Alle personaleområder | Alle personalefunksjoner | Ja       | Nei              |
 
 ## <a name="development-and-administration-features"></a>Funksjoner for utvikling og administrasjon
 

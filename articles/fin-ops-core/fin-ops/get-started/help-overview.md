@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bf1a417130cb9d17f33d96f5e510582c79e875ca
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 4594da0feeb3b74eb066fb5761e36398804b4fc2
+ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2811678"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "3005709"
 ---
 # <a name="help-system"></a>Hjelpesystem
 
@@ -32,9 +32,9 @@ ms.locfileid: "2811678"
 Dette emnet gir en oversikt over komponentene til hjelpesystemet. Hjelpesystemet er felles for følgende produkter:
 
 - Dynamics 365 Finance 
-- Dynamics 365 Retail
+- Dynamics 365 Commerce
 - Dynamics 365 Supply Chain Management
-- Dynamics 365 Talent
+- Dynamics 365 Human Resources
 
 Du får tilgang til hjelp fra Hjelp-ruten i alle produkter du bruker. 
 
@@ -42,7 +42,7 @@ Du får tilgang til hjelp fra Hjelp-ruten i alle produkter du bruker.
 
 ## <a name="help-on-docsmicrosoftcom"></a>Hjelp på docs.microsoft.com
 
-docs.microsoft.com-området ([docs.microsoft.com/dynamics365/](https://docs.microsoft.com/dynamics365/) er den primære kilden til produktdokumentasjon for programmene som er oppført ovenfor. Området tilbyr følgende funksjoner:
+docs.microsoft.com-området ([docs.microsoft.com/dynamics365/](https://docs.microsoft.com/dynamics365/)) er den primære kilden til produktdokumentasjon for programmene som er oppført ovenfor. Området tilbyr følgende funksjoner:
 
 - **Tilgang til det mest oppdaterte innholdet** – Området gir oss en raskere og mer fleksibel måte å opprette, levere og oppdatere produktdokumentasjon på. Derfor bidrar det til å sørge for at du har tilgang til den nyeste tekniske informasjonen.
 - **Innhold som er skrevet av eksperter** – Området gir et omfattende sett med produktdokumentasjon som kan forbedres av fellesskapsmedlemmer både innenfor og utenfor Microsoft.
@@ -73,7 +73,7 @@ Du kan bidra til og redigere i dokumentasjonen. Begynn med å klikke på **Redig
 
 Videoen [Bidra til dokumentasjonen for Microsoft Dynamics 365](https://youtu.be/m5djioozRbg) (vist ovenfor) er inkluder i Microsoft Dynamics 365-kanalen på YouTube.
 
-Hvis du vil ha mer informasjon, kan du se [veiledningen for bidragsytere](https://docs.microsoft.com/en-us/contribute).
+Hvis du vil ha mer informasjon, kan du se [veiledningen for bidragsytere](https://docs.microsoft.com/contribute).
 
 > [!NOTE]
 > Vi godtar for øyeblikket bare bidrag til vårt engelske innhold.
@@ -106,12 +106,12 @@ Hvis du vil ha tilgang til hjelpeinnhold, velger du **Hjelp**-ikonet (**?**) og 
 Fra Hjelp-ruten har du tilgang til artikler som gjelder for klienten. Når du først åpner Hjelp-ruten og klikker på kategorien **Hjelp**, ser du artikler som gjelder for siden du er på. Hvis det ikke finnes noen artikler, kan du angi nøkkelord for å presisere søket. Når du klikker en artikkel i Hjelp-ruten, åpnes en ny kategori i leseren og viser artikkelen.
 
 > [!IMPORTANT]
-> Denne delen gjelder ikke for Dynamics 365 Talent. Hjelpesystemet for Talent kobles automatisk til oppgaveveiledningene for produktet. Du kan heller ikke opprette egendefinerte oppgaveveiledninger for Talent.
+> Denne delen gjelder ikke for Dynamics 365 Human Resources. Hjelpesystemet for Human Resources kobles automatisk til oppgaveveiledningene for produktet. Du kan heller ikke opprette tilpassede oppgaveveiledninger for Human Resources.
 
 
 ### <a name="accessing-task-guides-from-the-help-pane"></a>Tilgang til oppgaveveiledninger fra Hjelp-ruten
 
-Før du kan få tilgang til oppgaveveiledninger fra Hjelp-ruten må en systemadministrator gå til **Systemparametere**-siden i Finance, Supply Chain Managment og Retail, og konfigurere noen innstillinger.
+Før du kan få tilgang til oppgaveveiledninger fra Hjelp-ruten må en systemadministrator gå til **Systemparametere**-siden i Finance, Supply Chain Managment og Commerce, og konfigurere noen innstillinger.
 
 > [!NOTE]
 > - Hvis du vil konfigurere hjelp, må du være logget på med en konto i samme leier som leier som appen er distribuert i.

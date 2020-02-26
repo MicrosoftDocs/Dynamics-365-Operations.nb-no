@@ -2,44 +2,56 @@
   items:
     - name: Utvikling og administrasjon for Finance and Operations-apper
       items:
-        - name: Dokumentasjon for programmet Finance and Operations
+        - name: Dokumentasjon for Finance and Operations-app
           href: ../fin-ops/index.md
         - name: Utvikling og administrasjon for Finance and Operations-apper
           href: index.md
-        - name: Hva er nytt eller endret
+        - name: Nyheter eller endringer
           items:
-            - name: Forhåndsvisningsfunksjoner i Platform Update 32 (februar 2020)
-              href: get-started/whats-new-platform-update-32.md
-            - name: Platform update 31 (januar 2020)
-              href: get-started/whats-new-platform-update-31.md
-            - name: Platform update 30 (november 2019)
-              href: ../fin-ops/get-started/whats-new-platform-update-30.md
-            - name: Platform update 29 (oktober 2019)
-              href: ../fin-ops/get-started/whats-new-platform-update-29.md
-            - name: Platform update 28 (juli 2019)
-              href: ../fin-ops/get-started/whats-new-platform-update-28.md
-            - name: Platform update 27 (juni 2019)
-              href: ../fin-ops/get-started/whats-new-platform-update-27.md
-            - name: Platform update 26 (mai 2019)
-              href: ../fin-ops/get-started/whats-new-platform-update-26.md
-            - name: Platform update 25 (april 2019)
-              href: ../fin-ops/get-started/whats-new-platform-25.md
-            - name: Platform update 24 (mars 2019)
-              href: ../fin-ops/get-started/whats-new-platform-update-24.md
-            - name: Platform update 23 (januar 2019)
-              href: ../fin-ops/get-started/whats-new-platform-update-23.md
-            - name: "Platform update\_22 (desember 2018)"
-              href: ../fin-ops/get-started/whats-new-platform-update-22.md
-            - name: Platform update 21 (november 2018)
-              href: ../fin-ops/get-started/whats-new-platform-update-21.md
-            - name: Platform update 20 (september 2018)
-              href: ../fin-ops/get-started/whats-new-platform-update-20.md
-            - name: Platform update 15 (mars 2018)
-              href: ../fin-ops/get-started/whats-new-platform-update-15.md
-            - name: Nyheter eller endringer i de forrige versjonene
+            - name: Nyheter eller endringer i Finance and Operations-apper
+              href: ../fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.yml
+            - name: Nyheter eller endringer i Plattformoppdateringer
               items:
-                - name: Startsiden Hva er nytt eller endret i Finance and Operations
-                  href: ../fin-ops/get-started/whats-new-changed.md
+                - name: Nyheter eller endringer på startsiden for Plattformoppdateringer
+                  href: get-started/whats-new-home-page.md
+                - name: Platform update 33 (april 2020)
+                  href: get-started/whats-new-platform-update-33.md
+                - name: Platform update 32 (februar 2020)
+                  href: get-started/whats-new-platform-update-32.md
+                - name: Platform update 31 (januar 2020)
+                  href: get-started/whats-new-platform-update-31.md
+                - name: Platform update 30 (november 2019)
+                  href: ../fin-ops/get-started/whats-new-platform-update-30.md
+                - name: Platform update 29 (oktober 2019)
+                  href: ../fin-ops/get-started/whats-new-platform-update-29.md
+                - name: Platform update 28 (juli 2019)
+                  href: ../fin-ops/get-started/whats-new-platform-update-28.md
+                - name: Platform update 27 (juni 2019)
+                  href: ../fin-ops/get-started/whats-new-platform-update-27.md
+                - name: Platform update 26 (mai 2019)
+                  href: ../fin-ops/get-started/whats-new-platform-update-26.md
+                - name: Platform update 25 (april 2019)
+                  href: ../fin-ops/get-started/whats-new-platform-25.md
+                - name: Platform update 24 (mars 2019)
+                  href: ../fin-ops/get-started/whats-new-platform-update-24.md
+                - name: Platform update 23 (januar 2019)
+                  href: ../fin-ops/get-started/whats-new-platform-update-23.md
+                - name: "Platform update\_22 (desember 2018)"
+                  href: ../fin-ops/get-started/whats-new-platform-update-22.md
+                - name: Platform update 21 (november 2018)
+                  href: ../fin-ops/get-started/whats-new-platform-update-21.md
+                - name: Platform update 20 (september 2018)
+                  href: ../fin-ops/get-started/whats-new-platform-update-20.md
+                - name: Platform update 15 (mars 2018)
+                  href: ../fin-ops/get-started/whats-new-platform-update-15.md
+            - name: Funksjoner som er fjernet eller avskrevet
+              href: migration-upgrade/deprecated-features.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.yml
+            - name: AX 2012-funksjoner som er utsatt
+              href: ../fin-ops/get-started/ax-2012-features-not-implemented-but-not-deprecated.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.yml
+            - name: Funksjoner som ikke er implementert i lokale distribusjoner
+              href: ../fin-ops/get-started/features-not-implemented-on-prem.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.yml
+            - name: Slutten av vanlig støtte for Microsoft Dynamics AX 2009 og 2012
+              href: ../fin-ops/get-started/mainstream-support-ax-2009-2012.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.yml
         - name: Forretningshendelser
           items:
             - name: Oversikt over forretningshendelser
@@ -133,35 +145,35 @@
                     - name: Synkron toveisintegrering
                       items:
                         - name: Dataintegrering nesten i sanntid
-                          href: data-entities/dual-write-overview.md
+                          href: data-entities/dual-write/dual-write-overview.md
                         - name: Organisasjonshierarki på Common Data Service
-                          href: data-entities/dual-write-organization.md
+                          href: data-entities/dual-write/organization-mapping.md
                         - name: Firmaintegrering
                           items:
-                            - name: Firmabegrep i Common Data Service-er
-                              href: data-entities/dual-write-company.md
+                            - name: Firmabegrep i Common Data Services
+                              href: data-entities/dual-write/company-data.md
                             - name: Oppstartsprogram med firmadata
-                              href: data-entities/dual-write-bootstrap.md
+                              href: data-entities/dual-write/bootstrap-company-data.md
                         - name: Integrert original for kunde
-                          href: data-entities/dual-write-customer.md
+                          href: data-entities/dual-write/customer-mapping.md
                         - name: Integrert finans
-                          href: data-entities/dual-write-ledger.md
+                          href: data-entities/dual-write/ledger-mapping.md
                         - name: Samlet produktopplevelse
-                          href: data-entities/dual-write-product.md
+                          href: data-entities/dual-write/product-mapping.md
                         - name: Leverandørintegrering
                           items:
                             - name: Integrert original for leverandør
-                              href: data-entities/dual-write-vendor.md
+                              href: data-entities/dual-write/vendor-mapping.md
                             - name: Bytte mellom leverandørutforminger
-                              href: data-entities/dual-write-vendor-switch.md
+                              href: data-entities/dual-write/vendor-switch.md
                         - name: Integrerte områder og lagre
-                          href: data-entities/dual-write-sites-and-warehouses.md
+                          href: data-entities/dual-write/sites-warehouses-mapping.md
                         - name: Integrert original for avgift
-                          href: data-entities/dual-write-tax.md
+                          href: data-entities/dual-write/tax-mapping.md
                         - name: Innledende synkronisering
-                          href: data-entities/dual-write-initial.md
+                          href: data-entities/dual-write/initial-sync.md
                         - name: Feilsøke dataintegrering
-                          href: data-entities/dual-write-troubleshooting.md
+                          href: data-entities/dual-write/dual-write-troubleshooting.md
                     - name: Asynkron énveisintegrering
                       items:
                         - name: Konfigurere et kundeemne til kontanter-scenario
@@ -178,13 +190,13 @@
                               href: ../../supply-chain/sales-marketing/sales-quotation-template-mapping-sales-fin.md
                             - name: Synkronisering av salgsordrer direkte mellom Sales og Finance and Operations
                               href: ../../supply-chain/sales-marketing/sales-order-template-mapping-direct-two-ways.md
-                            - name: Synkronisere salgsfakturahoder og -linjer direkte fra Finance and Operations til Sales
+                            - name: Synkronisere fakturahoder og -linjer direkte fra Finance and Operations til Sales
                               href: ../../supply-chain/sales-marketing/sales-invoice-template-mapping-direct.md
                         - name: Konfigurere integrering med Field Service
                           items:
                             - name: Oversikt over å konfigurere integrering med Field Service
                               href: ../../supply-chain/sales-marketing/field-service.md
-                            - name: "Synkronisere produkter\_i Finance and Operations til produkter i Field Service"
+                            - name: Synkronisere produkter i Finance and Operations til produkter i Field Service
                               href: ../../supply-chain/sales-marketing/field-service-product.md
                             - name: Synkronisere arbeidsordrer i Field Service til salgsordrer i Finance and Operations
                               href: ../../supply-chain/sales-marketing/field-service-work-order.md
@@ -380,7 +392,7 @@
                   href: deployment/arm-onboarding.md
                 - name: Azure ExpressRoute og Finance and Operations
                   href: deployment/expressroute.md
-                - name: Arkitektur for Finance and Operations
+                - name: Finance and Operations-arkitektur
                   href: ../fin-ops/imp-lifecycle/architecture-overview.md
                 - name: Ta i bruk oppdateringer i skymiljøer
                   href: deployment/apply-deployable-package-system.md
@@ -522,7 +534,7 @@
                   href: dev-tools/metadata-search-visual-studio.md
                 - name: Modeller og pakker
                   href: dev-tools/models.md
-                - name: Prosjekttype i Finance and Operations
+                - name: Prosjekttype for Finance and Operations
                   href: dev-tools/projects.md
                 - name: Verktøytillegg for Visual Studio
                   href: dev-tools/developer-tools-add-ins.md
@@ -912,7 +924,7 @@
                   href: gdpr/gdpr-extend-person-search-report.md
                 - name: Administrere tilgang til sensitive data
                   href: gdpr/gdpr-auditing-sensitive-data.md
-                - name: Svare på forespørsler om personlige data ved hjelp av Talent
+                - name: Svare på forespørsler om personlige data ved hjelp av Personale
                   href: gdpr/respond-dsr-request-talent.md
                 - name: Svare på forespørsler om personlige data i AX 2012
                   href: gdpr/gdpr-ax2012.md
@@ -1262,17 +1274,17 @@
               href: lifecycle-services/lcs-support.md
             - name: Oversikt over Dynamics 365-støtte
               href: 'https://docs.microsoft.com/power-platform/admin/support-overview?toc=/dynamics365/fin-ops-core/dev-itpro/toc.json&bc=/dynamics365/breadcrumb/toc.json'
-            - name: Få støtte for Finance and Operations styrt av 21Vianet i Kina
+            - name: Få støtte for Finance and Operations som styres av 21Vianet i Kina
               href: lifecycle-services/21vianet-support.md
             - name: Sende forespørsler til Dynamics Service Engineering-teamet
               href: lifecycle-services/submit-request-dynamics-service-engineering-team.md
-            - name: Konfigurere teknisk støtte for Finance and Operations
+            - name: Konfigurere kundestøtte for Finance and Operations
               href: lifecycle-services/support-experience.md
             - name: Vanlige spørsmål om vinduet Planlagt vedlikehold
               href: lifecycle-services/planned-maintenance-window-faq.md
             - name: Skyoperasjoner og -betjening
               href: lifecycle-services/cloud-operations-servicing.md
-            - name: Administrere støtteopplevelser for Finance and Operations
+            - name: Behandle kundestøtteopplevelser for Finance and Operations
               href: lifecycle-services/cloud-powered-support-lcs.md
         - name: Systemadministrasjon
           items:
@@ -1672,5 +1684,7 @@
       href: ../../supply-chain/index.md
     - name: Dynamics 365 Finance
       href: ../../finance/index.md
+    - name: Dynamics 365 Commerce
+      href: ../../commerce/index.md
     - name: Dynamics 365 Retail
-      href: ../../retail/index.md
+      href: ../../commerce/index.md

@@ -1,9 +1,9 @@
 ---
 title: Opprette et e-handelsområde
-description: Dette emnet beskriver oppgavene som er knyttet til oppretting av et nytt e-handelsområde i Dynamics 365 Commerce.
+description: Dette emnet beskriver trinnene og informasjonen som kreves for å opprette et nytt e-handelsområde i Dynamics 365 Commerce-områdebyggeren.
 author: bicyclingfool
 manager: AnnBe
-ms.date: 10/31/2019
+ms.date: 01/23/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -19,29 +19,31 @@ ms.search.industry: ''
 ms.author: stuharg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 54259d3f5dfd8c8e1ff2caaadfac497cc0e133e0
-ms.sourcegitcommit: ef3a1d7527311d00b69a1072ae5eb021ce68034c
+ms.openlocfilehash: 3d3d8a290f06d9734be21f2d59152acac6857506
+ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "2945841"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "3002019"
 ---
 # <a name="create-an-e-commerce-site"></a>Opprette et e-handelsområde
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
-Dette emnet beskriver oppgavene som er knyttet til oppretting av et nytt e-handelsområde i Dynamics 365 Commerce.
+Dette emnet beskriver trinnene og informasjonen som kreves for å opprette et nytt e-handelsområde i Dynamics 365 Commerce-områdebyggeren.
 
-## <a name="overview"></a>Oversikt
+Før du kan begynne å utvikle e-handelsområdet, må du først etablere et nytt område i områdebyggeren. 
 
-Hvis du vil begynne å utvikle ditt e-handelsområde, må du først opprette et nytt område i områdetsredigeringsmiljøet. Før du kan opprette et nytt område må du opprette minst én nettbutikk i Dynamics 365 Retail. 
+
+Hvis du vil begynne å utvikle ditt e-handelsområde, må du først opprette et nytt område i områdetsredigeringsmiljøet. Før du kan opprette et nytt område må du opprette minst én nettbutikk i Commerce. 
+
 
 ## <a name="set-up-your-site"></a>Konfigurere området
 
 Gjør følgende for å opprette området.
 
-1. I Microsoft Lifecycle Services (LCS) klikker du koblingen for områderedigeringsmiljøet. 
+1. Åpne områdebyggermiljøet. Du kan finne en kobling til områdebyggertjenesten i Microsoft Lifecycle Services (LCS) på siden for miljøfunksjoner for Commerce.
 1. Velg **Nytt område**på startsiden for områderedigeringsmiljøet.
 1. Angi følgende informasjon i dialogboksen **Nytt område**.
 

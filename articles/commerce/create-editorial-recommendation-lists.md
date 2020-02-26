@@ -19,16 +19,15 @@ ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 6d075635b7b986cc854550d15f7e941a9ea9cf72
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 46fbd2d8c1235a6cb22c9341bcc21ee3754c8ede
+ms.sourcegitcommit: b5ecde955a69f577de46e7db10e89caaedeb2b49
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2770419"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "3024939"
 ---
 # <a name="create-curated-product-recommendation-lists"></a>Opprette kuraterte produktanbefalingslister
 
-[!include [banner](includes/preview-banner.md)]
 [!include [banner](includes/banner.md)]
 
 Dette emnet beskriver hvordan selgere kan opprette og administrere manuelle produktlister for Microsoft Dynamics 365 Commerce-kunder.
@@ -39,7 +38,7 @@ Kuraterte lister er samlinger av individuelt innhold som opprettes og kurateres 
 
 Hvis du vil opprette en kuratert produktanbefalingsliste, gjør du følgende.
 
-1. Gå til **Retail** &gt; **Produktanbefalinger** &gt; **Anbefalingslister**.
+1. Gå til **Detaljhandel og handel &gt; Produktanbefalinger &gt; Anbefalingslister**.
 1. Velg **Ny**.
 1. Angi en verdi i **Liste-ID**-feltet.
 1. Angi en verdi i **Listenavn**-feltet.
@@ -60,3 +59,5 @@ Hvis du vil opprette en kuratert produktanbefalingsliste, gjør du følgende.
 [Aktiver produktanbefalinger](enable-product-recommendations.md)
 
 [Legge til produktanbefalingslisten på sider](add-reco-list-to-page.md)
+
+[Oversikt over produktsamlingsmodul](product-collection-module-overview.md)

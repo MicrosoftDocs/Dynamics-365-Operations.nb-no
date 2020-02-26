@@ -62,18 +62,20 @@
                   href: ../fin-ops-core/dev-itpro/deployment/china-local-deployment.md?toc=/dynamics365/finance/toc.json
                 - name: Finance and Operations-apper i Frankrike
                   href: ../fin-ops-core/dev-itpro/deployment/france-local-deployment.md?toc=/dynamics365/finance/toc.json
-            - name: Hva er nytt eller endret
+            - name: Nyheter eller endringer
               items:
-                - name: Finance-versjon 10.0.7 (januar 2020)
-                  href: get-started/whats-new-changed-10-0-7.md
-                - name: Finance-versjon 10.0.6 (november 2019)
-                  href: get-started/whats-new-finance-10-0-6.md
-                - name: Nyheter eller endringer i de forrige versjonene
+                - name: Nyheter eller endringer i Finance and Operations-apper
+                  href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/finance/toc.json
+                - name: Nyheter eller endringer i Finance?
                   items:
-                    - name: Startsiden Hva er nytt eller endret i Finance and Operations
-                      href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/finance/toc.json
-                    - name: 'Finance and Operations, Enterprise edition 7.3'
-                      href: ../fin-ops-core/fin-ops/get-started/whats-new-application-7.3-update.md?toc=/dynamics365/finance/toc.json
+                    - name: Startsiden Nyheter eller endringer i Finance
+                      href: get-started/whats-new-home-page.md
+                    - name: Finance-versjon 10.0.9 (april 2020)
+                      href: get-started/whats-new-changed-10-0-9.md
+                    - name: Finance-versjon 10.0.8 (februar 2020)
+                      href: get-started/whats-new-changed-10-0-8.md
+                    - name: Finance-versjon 10.0.7 (januar 2020)
+                      href: get-started/whats-new-changed-10-0-7.md
                 - name: Funksjoner som er fjernet eller avskrevet
                   href: ../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md?toc=/dynamics365/finance/toc.json
                 - name: AX 2012-funksjoner som er utsatt
@@ -92,9 +94,9 @@
                   href: ../fin-ops-core/fin-ops/get-started/help-custom.md?toc=/dynamics365/finance/toc.json
                 - name: Vise og eksportere feltbeskrivelser
                   href: ../fin-ops-core/fin-ops/get-started/view-export-field-descriptions.md?toc=/dynamics365/finance/toc.json
-                - name: Oppgaveopptaker
+                - name: Oppgaveregistrering
                   href: ../fin-ops-core/dev-itpro/user-interface/task-recorder.md?toc=/dynamics365/finance/toc.json
-                - name: Lage dokumentasjon eller opplæring med Oppgaveopptaker
+                - name: Lage dokumentasjon eller opplæring med Oppgaveregistrering
                   href: ../fin-ops-core/dev-itpro/user-interface/task-recorder-training-docs.md?toc=/dynamics365/finance/toc.json
                 - name: Videoer
                   href: ../fin-ops-core/fin-ops/get-started/videos.md?toc=/dynamics365/finance/toc.json
@@ -204,6 +206,8 @@
                   href: accounts-payable/tasks/key-invoice-data-into-ap-system-approval-journal.md
                 - name: Registrere fakturadata i AP-systemet ved hjelp av fakturapulje
                   href: accounts-payable/tasks/key-invoice-data-into-ap-system-invoice-pool.md
+                - name: Kopiere leverandører ved hjelp av delte nummerserier
+                  href: accounts-payable/vendor-copy.md
                 - name: Registrere en leverandørfaktura i fakturajournalen
                   href: accounts-payable/tasks/record-vendor-invoice-invoice-journal.md
             - name: Revidere fakturaer og nøkkeldata i Leverandører
@@ -264,7 +268,7 @@
                   href: cash-bank-management/tasks/vendor-payment-overview.md
                 - name: Arbeidsområde for leverandørbetalinger
                   href: accounts-payable/vendor-payments-workspace.md
-                - name: Angi en krysskurs
+                - name: Angi krysskursen
                   href: accounts-payable/specify-cross-rate.md
                 - name: Definere leverandørbetalingsgebyrer
                   href: accounts-payable/tasks/define-vendor-payment-fees.md
@@ -274,7 +278,7 @@
                   href: accounts-payable/create-vendor-payments-payment-proposal.md
                 - name: Tilbakeføre en leverandørbetaling
                   href: accounts-payable/reverse-vendor-payment.md
-                - name: Elektronisk rapportering for leverandørsjekker
+                - name: Eksempel på leverandørsjekker for elektronisk rapportering
                   href: accounts-payable/electronic-reporting-sample-vendor-checks.md
                 - name: Oversikt over forskuddsbetalte fakturaer og forskuddsbetalinger
                   href: accounts-payable/prepayments-invoices-vs-prepayments.md
@@ -300,6 +304,18 @@
           items:
             - name: Startside for kunde
               href: accounts-receivable/accounts-receivable.md
+            - name: Opprette kundebetalingsbetingelser
+              href: general-ledger/tasks/establish-customer-payment-terms.md
+            - name: Opprette kundebetalingsmåte
+              href: accounts-receivable/tasks/establish-customer-method-payment.md
+            - name: Opprette kundebetalingsgebyrer
+              href: accounts-receivable/tasks/establish-customer-payment-fees.md
+            - name: Kundeposteringsprofiler
+              href: accounts-receivable/customer-posting-profiles.md
+            - name: Kopiere kunder ved hjelp av delte nummerserier
+              href: accounts-receivable/copy-customer.md
+            - name: Arbeidsflyt for kunde
+              href: accounts-receivable/customer-workflow.md
             - name: Kredit og innkrevinger i Kunde
               href: accounts-receivable/collections-credit-accounts-receivable.md
             - name: 'Konfigurere Kunde, kredit og innkrevinger'
@@ -324,66 +340,52 @@
               href: accounts-receivable/customer-posting-profiles.md
             - name: Oversikt over SEPA-avtalegiro
               href: accounts-receivable/sepa-direct-debit-overview.md
-            - name: SEPA-avtalegiromandat
+            - name: Definere mandat for SEPA Direct Debit
               href: accounts-receivable/sepa-direct-debit-mandate.md
             - name: 'Kredittkortoppsett, autorisasjon og registrering'
               href: accounts-receivable/credit-card-authorizations.md
             - name: Opprett en fritekstfaktura
               href: accounts-receivable/create-free-text-invoice-new.md
+            - name: Regnskapsdistribusjoner og underfinansjournaloppføringer for fritekstfakturaer
+              href: accounts-receivable/accounting-distributions-subledger-journal-entries-free-text-invoices.md
             - name: Opprette en mal for fritekstfaktura
               href: accounts-receivable/create-free-text-invoice-template-new.md
             - name: Korrigere en fritekstfaktura
               href: accounts-receivable/correct-free-text-invoice.md
             - name: Tilordne en mal for fritekstfaktura til en kunde
               href: accounts-receivable/tasks/assign-free-text-invoice-template-customer.md
+            - name: Definere og behandle gjentakende fakturaer
+              href: accounts-receivable/set-up-process-recurring-invoices.md
             - name: Generere og postere gjentakende fritekstfakturaer
               href: accounts-receivable/tasks/post-recurring-free-text-invoices.md
             - name: Opprette salgsordrefakturaer
               href: accounts-receivable/tasks/create-sales-order-invoices.md
-            - name: Definere rentesatser for en rentekode
-              href: accounts-receivable/set-up-interest-rates-interest-code.md
-            - name: 'Frafalle, gjenoppta eller reversere rentegebyrer'
-              href: accounts-receivable/waive-reinstate-reverse-interest-fees.md
-            - name: Behandle rente
-              href: accounts-receivable/tasks/process-interest.md
             - name: Opprette en kundefaktura
               href: accounts-receivable/configure-customer-invoices.md
-            - name: Innbetale kundebetalinger
-              href: accounts-receivable/tasks/deposit-customer-payments.md
-            - name: Opprette kundebetalingsbetingelser
-              href: general-ledger/tasks/establish-customer-payment-terms.md
-            - name: Opprette kundebetalingsmåte
-              href: accounts-receivable/tasks/establish-customer-method-payment.md
-            - name: Opprette kundebetalingsgebyrer
-              href: accounts-receivable/tasks/establish-customer-payment-fees.md
+            - name: "Listeside for\_kundetransaksjoner"
+              href: accounts-receivable/customer-transactions-list-page.md
             - name: Definere veksler
               href: accounts-receivable/set-up-bills-exchange.md
             - name: Lukke Kunde
               href: accounts-receivable/close-accounts-receivable.md
-            - name: Opprette et purreforløp
-              href: accounts-receivable/tasks/create-collection-letter-sequence.md
-            - name: Behandle purrebrev
-              href: accounts-receivable/tasks/process-collection-letters.md
-            - name: Opprette et nytt avtalegiromandat for en kunde
-              href: accounts-receivable/tasks/create-direct-debit-mandate-customer.md
-            - name: Opprette en rentekode med et område
-              href: accounts-receivable/tasks/create-interest-code-range.md
-            - name: Opprette en avskrivningsjournal for en kunde
-              href: accounts-receivable/tasks/create-write-off-journal-customer.md
-            - name: Definere og generere informasjon om aldersfordeling for kunde
-              href: accounts-receivable/tasks/set-up-accounts-receivable-aging-information.md
-            - name: Kopiere kunder ved hjelp av delte nummerserier
-              href: accounts-receivable/copy-customer.md
-            - name: Arbeidsflyt for kunde
-              href: accounts-receivable/customer-workflow.md
             - name: Betalinger og utligninger
               items:
+                - name: Oversikt over inntektsføring
+                  href: accounts-receivable/revenue-recognition-overview.md
                 - name: Oversikt over kundebetaling
                   href: cash-bank-management/tasks/customer-payment-overview.md
-                - name: Bruke en kundebetaling til å utligne flere fakturaer som strekker seg over flere rabattperioder
-                  href: accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md
                 - name: Sentraliserte betalinger for kunde
                   href: accounts-receivable/centralized-payments-accounts-receivable.md
+                - name: Innbetale kundebetalinger
+                  href: accounts-receivable/tasks/deposit-customer-payments.md
+                - name: Oversikt over SEPA-avtalegiro
+                  href: accounts-receivable/sepa-direct-debit-overview.md
+                - name: SEPA-avtalegiromandat
+                  href: accounts-receivable/sepa-direct-debit-mandate.md
+                - name: Opprette et nytt avtalegiromandat for en kunde
+                  href: accounts-receivable/tasks/create-direct-debit-mandate-customer.md
+                - name: Bruke en kundebetaling til å utligne flere fakturaer som strekker seg over flere rabattperioder
+                  href: accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md
                 - name: Utligne delvis kundebetaling eller endelig betaling før rabatt
                   href: accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md
                 - name: Utligne en delvis kundebetaling før rabattdatoen med en endelige betaling etter rabattdatoen
@@ -396,8 +398,48 @@
                   href: accounts-receivable/reimburse-customers.md
                 - name: Kundebetalinger for et delbeløp
                   href: accounts-receivable/customer-payments-partial-amount.md
-                - name: "Listeside for\_kundetransaksjoner"
-                  href: accounts-receivable/customer-transactions-list-page.md
+            - name: Kreditt og innkreving
+              items:
+                - name: Oversikt over kreditt og innkrevinger
+                  href: accounts-receivable/cm-credit-and-collections-overview.md
+                - name: Kredittbehandlingsoppsett
+                  href: accounts-receivable/cm-credit-mgmt-setup.md
+                - name: Informasjon om oppsett av kredittstyring
+                  href: accounts-receivable/cm-setup-information.md
+                - name: Legge til informasjon om kredittstyring for en kunde
+                  href: accounts-receivable/cm-add-credit-mgmt-information-customer.md
+                - name: Kundekredittgrupper
+                  href: accounts-receivable/cm-customer-credit-groups.md
+                - name: Kredittgrensejusteringer
+                  href: accounts-receivable/cm-credit-limit-adjustments.md
+                - name: Kredittgrenser for salgsordrer
+                  href: accounts-receivable/cm-sales-order-credit-holds.md
+                - name: Periodiske oppgaver for kredittstyring
+                  href: accounts-receivable/cm-periodic-tasks.md
+                - name: Nøkkelkonsepter for innkrevingsbehandling
+                  href: accounts-receivable/cm-collections-concepts.md
+                - name: 'Konfigurere Kunde, kredit og innkrevinger'
+                  href: accounts-receivable/accounts-receivables-set-up-overview.md
+                - name: Definere kredit og innkrevinger
+                  href: accounts-receivable/set-up-collections.md
+            - name: Definere rentesatser for en rentekode
+              href: accounts-receivable/set-up-interest-rates-interest-code.md
+            - name: Opprette en rentekode med et område
+              href: accounts-receivable/tasks/create-interest-code-range.md
+            - name: 'Frafalle, gjenoppta eller reversere rentegebyrer'
+              href: accounts-receivable/waive-reinstate-reverse-interest-fees.md
+            - name: Behandle rente
+              href: accounts-receivable/tasks/process-interest.md
+            - name: Gå gjennom innkrevingsinformasjon
+              href: accounts-receivable/tasks/review-collections-information.md
+            - name: Opprette et purreforløp
+              href: accounts-receivable/tasks/create-collection-letter-sequence.md
+            - name: Behandle purrebrev
+              href: accounts-receivable/tasks/process-collection-letters.md
+            - name: Definere og generere informasjon om aldersfordeling for kunde
+              href: accounts-receivable/tasks/set-up-accounts-receivable-aging-information.md
+            - name: Opprette en avskrivningsjournal for en kunde
+              href: accounts-receivable/tasks/create-write-off-journal-customer.md
         - name: Budsjettering
           items:
             - name: Startside for budsjettering
@@ -416,6 +458,8 @@
               href: budgeting/create-budget-transaction-accounts-total-accounts.md
             - name: Budsjettplanleggingsmaler for Excel
               href: budgeting/budget-planning-excel-templates.md
+            - name: Utvide budsjettplanleggingsoppsettet
+              href: budgeting/extending-budget-planning-layout.md
             - name: Feilsøking av stillingsbudsjettering
               href: budgeting/position-budgeting-set-up-issues.md
             - name: Budsjettplanlegging
@@ -452,9 +496,9 @@
               href: cash-bank-management/tasks/set-up-bank-facilities-posting-profiles-letter-credit.md
             - name: Purringer og importsamlinger
               href: cash-bank-management/letters-of-credit-import-collections.md
-            - name: Eksportere en remburs
+            - name: Eksportere remburs
               href: cash-bank-management/tasks/export-letter-credit.md
-            - name: Importere en remburs
+            - name: Importere remburs
               href: cash-bank-management/tasks/import-letter-credit.md
             - name: Garantibrev
               href: cash-bank-management/letters-of-guarantee.md
@@ -486,11 +530,11 @@
               href: cash-bank-management/set-up-centralized-payments.md
             - name: Automatisk utligning og prioritering
               href: accounts-receivable/automatic-settlement-prioritization.md
-            - name: Enkel bankavstemming
+            - name: Avstemme en bankkonto
               href: cash-bank-management/reconcile-bank-account.md
             - name: Avansert bankavstemming
               items:
-                - name: Oppgaver for avansert oppsett av bankavstemming
+                - name: Oppsettsprosess for avansert bankavstemming
                   href: cash-bank-management/configure-advanced-bank-reconciliation.md
                 - name: Definere prosessen for avansert bankavstemmingsimport
                   href: cash-bank-management/set-up-advanced-bank-reconciliation-import-process.md
@@ -562,7 +606,7 @@
               href: cost-accounting/tasks/create-assign-cost-distribution-policy-cost-control-unit.md
             - name: Opprette en policy for opprullet kost
               href: cost-accounting/tasks/create-cost-rollup-policy.md
-            - name: Administrere datakilde for kostnadsregnskapsfinansen
+            - name: Administrere en datakilde for kostnadsregnskapsfinansen
               href: cost-accounting/tasks/manage-data-source-cost-accounting-ledger.md
             - name: Behandle og spore kildedata
               href: cost-accounting/tasks/process-trace-source-data.md
@@ -598,6 +642,10 @@
               href: expense-management/expense-workflows.md
             - name: Arbeidsflyt for reiseregninger og utlegg
               href: expense-management/expense-workflow.md
+            - name: Behandle utgiftsdelegering
+              href: expense-management/manage-expense-delegation.md
+            - name: Behandling av utgiftsmottak
+              href: expense-management/expense-receipt-processing.md
             - name: Importere og opprettholde kredittkorttransaksjoner
               href: expense-management/import-credit-card.md
             - name: Distribusjoner i en reiseregning
@@ -790,7 +838,7 @@
                   href: general-ledger/process-allocations.md
                 - name: Finansdimensjoner
                   href: general-ledger/financial-dimensions.md
-                - name: Konsolideringskontogrupper og kontoer
+                - name: Konsolideringskontogrupper og en ekstra konsolideringskontoer
                   href: budgeting/consolidation-account-groups-consolidation-accounts.md
                 - name: Konsoliderings- og elimineringsoversikt
                   href: budgeting/consolidation-elimination-overview.md
@@ -830,6 +878,8 @@
                   href: general-ledger/tasks/create-journal-entry-template.md
                 - name: Opprette finansavsettingstransaksjoner
                   href: general-ledger/tasks/create-ledger-accrual-transactions.md
+                - name: Underfinansoverføring til økonomimodulen
+                  href: general-ledger/subledger-transfer.md
                 - name: Publisere journallinjer og dokumenter fra Excel
                   href: general-ledger/open-lines-excel-journals-documents.md
                 - name: Vise journaloppføringer og transaksjoner
@@ -962,6 +1012,8 @@
               href: public-sector/forecast-positions.md
             - name: Rapporter om prognosestilling i den offentlige sektoren
               href: public-sector/forecast-position-reports.md
+            - name: Definere og kjøre forespørselen om likviditetsbeholdning
+              href: public-sector/cash-position-inquiry-setup.md
             - name: Leverandør i offentlig sektor
               items:
                 - name: Oversikt over leverandør i offentlig sektor
@@ -1068,6 +1120,8 @@
               href: ../fin-ops-core/dev-itpro/analytics/financial-reporting-intro.md?toc=/dynamics365/finance/toc.json
             - name: Komponenter for finansrapport
               href: ../fin-ops-core/dev-itpro/analytics/financial-report-components.md?toc=/dynamics365/finance/toc.json
+            - name: Valutafunksjoner i finansrapportering
+              href: general-ledger/financial-reporting-currency-capability.md
             - name: Finansrapporter for balanse
               href: general-ledger/balance-sheet-financial-reports.md
             - name: Generer finansrapporter
@@ -1242,6 +1296,8 @@
                   href: localizations/latam-bra-resolution-13-2019-RJ.md
                 - name: SPED-regnskap 2020 – Utfyllende informasjon om ICMS-ST for SPED-regnskapsoppsett 014
                   href: localizations/latam-bra-complementary-information-icms-st-sped-fiscal-2020-layout-014.md
+                - name: SPED-regnskap – oppsett 014
+                  href: localizations/latam-bra-sped-fiscal-layout-014.md
                 - name: Parametere for juridiske enheter
                   href: localizations/latam-bra-legal-entity-parameters.md
                 - name: Definere parametere for juridisk enhet
@@ -1554,6 +1610,8 @@
                   href: localizations/emea-tax-directives.md
                 - name: Oppdatere hvordan beløp vises i rapporter og dokumenter
                   href: localizations/emea-amount-printing-forms.md
+                - name: Bruke regnskapsdata fra en fakturakonto
+                  href: localizations/use-fiscal-data-from-invoice-account.md
                 - name: Merverdiavgift
                   items:
                     - name: Definere mva-ID
@@ -1911,10 +1969,16 @@
                   href: localizations/emea-ita-exil-misc-charges-intrastat.md
                 - name: Behandling av avanserte merknader
                   href: localizations/emea-ita-exil-structured-notes.md
+                - name: Formålsbrev – fakturering av vanlige eksportører
+                  href: localizations/emea-ita-exil-intent-letter.md
                 - name: Avgiftsfaktura for varer levert gratis
                   href: localizations/emea-ita-exil-goods-for-free.md
                 - name: Forbedret forespørsel om debet- eller kreditutligninger
                   href: localizations/emea-ita-exil-improved-inquiry-settlement.md
+                - name: Simuleringer av økonomimodul (Italia)
+                  href: localizations/emea-ita-exil-general-ledger-simulations.md
+                - name: Unik sertifisering
+                  href: localizations/emea-ita-exil-unique-certification.md
             - name: Japan
               items:
                 - name: Oversikt over Japan
@@ -2099,6 +2163,8 @@
                   href: localizations/tasks/lt-00003-fixed-asset-transfer.md
                 - name: Detaljer om mva-oppgave
                   href: localizations/emea-ltu-vat-statement-details.md
+                - name: i.SAF-rapportering for Litauen
+                  href: localizations/emea-ltu-isaf.md
             - name: Malaysia
               items:
                 - name: Oversikt over Malaysia
@@ -2231,6 +2297,10 @@
                       href: general-ledger/import-currency-exchange-rates.md
                     - name: Finansoversetting
                       href: localizations/rus-ledger-translation-procedure.md
+                    - name: Rapporter for omsetnings- og saldoutdrag
+                      href: localizations/rus-turnover-balance-statement-reports.md
+                    - name: Rapporter for kontoaktivitet
+                      href: localizations/rus-account-activity-reports.md
                 - name: Forskuddsinnehavere
                   items:
                     - name: Oversikt over forskuddsinnehavere i Russland
@@ -2339,12 +2409,26 @@
                       href: localizations/rus-miscellaneous-charges.md
                     - name: Tredjepartstillegg
                       href: localizations/rus-third-party-misc-charges.md
+                    - name: Avtaler
+                      items:
+                        - name: Oversikt over avtaler
+                          href: localizations/rus-agreements.md
+                        - name: Definere og opprette avtaler
+                          href: localizations/rus-set-up-and-create-agreements.md
+                        - name: Registrere transaksjoner med referanse til avtaler
+                          href: localizations/rus-register-transactions-with-reference-to-agreements.md
+                        - name: Forespørsler og rapporter med avtaler
+                          href: localizations/rus-inquiries-reports-agreements.md
                 - name: Beholdning
                   items:
                     - name: Varer i transitt fra leverandør
                       href: localizations/rus-goods-transit-vendor.md
                     - name: Tolldeklareringsnumre
                       href: localizations/rus-custom-declaration-number.md
+                    - name: Lagerkoststruktur
+                      href: localizations/rus-inventory-cost-structure.md
+                    - name: Lagerjusteringsveiviser
+                      href: localizations/rus-inventory-adjustment-wizard.md
                 - name: Rapportering
                   items:
                     - name: Finansrapportering
@@ -2359,6 +2443,8 @@
                       href: localizations/rus-transport-tax-declaration.md
                     - name: Avgiftsdeklarering for land
                       href: localizations/rus-land-tax-declaration.md
+                    - name: Deklarering for fortjenesteavgift
+                      href: localizations/rus-profit-tax-declaration.md
                 - name: Organisasjonsstyring
                   items:
                     - name: Informasjon om avgiftsregistrering knyttet til adresse
@@ -2457,6 +2543,10 @@
                   href: localizations/apac-tha-unrealized-vat.md
                 - name: Kildeskatt
                   href: localizations/apac-tha-withholding-tax.md
+            - name: De forente arabiske emirater (UAE)
+              items:
+                - name: Definere og rapportere merverdiavgift (mva)
+                  href: localizations/uae-vat-setup-reporting.md
             - name: Storbritannia
               items:
                 - name: Oversikt over Storbritannia
@@ -2489,51 +2579,59 @@
           items:
             - name: Oversikt over personale
               href: ../fin-ops-core/fin-ops/hr/hr-landing-page.md
-            - name: Utvikle en personalstrategi
+            - name: Konfigurere Personale
               items:
-                - name: Opprette mål
-                  href: ../fin-ops-core/fin-ops/hr/tasks/create-goal.md
-                - name: 'Organisere arbeidsstyrken ved bruk av avdelinger, jobber og stillinger'
-                  href: ../talent/departments-jobs-positions.md?toc=/dynamics365/finance/toc.json
-                - name: Definere jobbkomponenter
-                  href: ../talent/create-job.md?toc=/dynamics365/finance/toc.json
-                - name: Definere nye avdelinger
-                  href: ../fin-ops-core/fin-ops/hr/tasks/define-new-departments.md
-                - name: Definere nye jobber
-                  href: ../fin-ops-core/fin-ops/hr/tasks/define-new-jobs.md
-                - name: Opprette en avdeling og knytte den til avdelingshierarkiet
-                  href: ../talent/create-department-add-department-hierarchy.md?toc=/dynamics365/finance/toc.json
-                - name: Opprette kalendere og generere arbeidstider
-                  href: ../fin-ops-core/fin-ops/hr/tasks/create-calendar-working-times.md
-                - name: Definere parametere for Personale på tvers av juridiske enheter
-                  href: ../talent/set-up-hr-parameters-across-legal-entities.md?toc=/dynamics365/finance/toc.json
-                - name: Definere firmaspesifikke parametere for Personale
-                  href: ../talent/set-up-company-specific-hr-parameters.md?toc=/dynamics365/finance/toc.json
-                - name: Vanlige spørsmål om personalhandlinger
-                  href: ../talent/personnel-actions-faq.md?toc=/dynamics365/finance/toc.json
-                - name: Bruke en arbeidsflyt til å administrere informasjon om ansatte
-                  href: ../talent/workflow-manage-employee-information.md?toc=/dynamics365/finance/toc.json
-                - name: Endre rapporteringsrelasjoner for stillinger
-                  href: ../fin-ops-core/fin-ops/hr/tasks/modify-reporting-relationships-position.md
-                - name: Godkjenne innboksposter for søknad
-                  href: ../fin-ops-core/fin-ops/hr/tasks/approve-application-inbox-records.md
+                - name: Konfigurere parametere for Personale
+                  href: ../human-resources/hr-setup-parameters.md?toc=/dynamics365/finance/toc.json
+                - name: Konfigurere delte parametere for Personale
+                  href: ../human-resources/hr-setup-shared-parameters.md?toc=/dynamics365/finance/toc.json
+                - name: Konfigurere arbeidsflyter for Personale
+                  href: ../human-resources/hr-setup-workflows.md?toc=/dynamics365/finance/toc.json
+                - name: Forstå felt for dato og klokkeslett
+                  href: ../human-resources/hr-setup-date-time-fields.md?toc=/dynamics365/finance/toc.json
+            - name: Administrere medarbeidere
+              items:
+                - name: Organisere arbeidsstyrken
+                  href: ../human-resources/hr-personnel-departments-jobs-positions.md?toc=/dynamics365/finance/toc.json
+                - name: Definere komponentene for en jobb
+                  href: ../human-resources/hr-personnel-jobs.md?toc=/dynamics365/finance/toc.json
+                - name: Definere avdelinger
+                  href: ../human-resources/hr-personnel-define-departments.md?toc=/dynamics365/finance/toc.json
+                - name: Legge til en avdeling i et hierarki
+                  href: ../human-resources/hr-personnel-add-department-hierarchy.md?toc=/dynamics365/finance/toc.json
+                - name: Definere jobber
+                  href: ../human-resources/hr-personnel-define-jobs.md?toc=/dynamics365/finance/toc.json
+                - name: Opprette en arbeidstidskalender
+                  href: ../human-resources/hr-personnel-create-working-time-calendar.md?toc=/dynamics365/finance/toc.json
+                - name: Vanlige spørsmål om medarbeiderhandlinger
+                  href: ../human-resources/hr-personnel-actions-faq.md?toc=/dynamics365/finance/toc.json
+                - name: Bruke arbeidsflyter til å administrere informasjon om ansatte
+                  href: ../human-resources/hr-workflow-manage-employee-information.md?toc=/dynamics365/finance/toc.json
+                - name: Endre rapporteringsrelasjoner for en stilling
+                  href: ../human-resources/hr-personnel-modify-reporting-relationships-position.md?toc=/dynamics365/finance/toc.json
                 - name: Angi arbeiderinformasjon
-                  href: ../fin-ops-core/fin-ops/hr/tasks/enter-worker-information.md
+                  href: ../human-resources/hr-personnel-enter-worker-information.md?toc=/dynamics365/finance/toc.json
                 - name: Utlånsvarer til arbeidere
-                  href: ../fin-ops-core/fin-ops/hr/tasks/loan-item-worker.md
+                  href: ../human-resources/hr-personnel-loan-item-worker.md?toc=/dynamics365/finance/toc.json
                 - name: Opprette utlånsvarer
-                  href: ../fin-ops-core/fin-ops/hr/tasks/create-loan-items.md
-                - name: Administrere varer som er lånt ut til arbeidere
-                  href: ../talent/loan-items.md?toc=/dynamics365/finance/toc.json
+                  href: ../human-resources/hr-personnel-create-loan-items.md?toc=/dynamics365/finance/toc.json
+                - name: Behandle utlånsvarer
+                  href: ../human-resources/hr-personnel-loan-items.md?toc=/dynamics365/finance/toc.json
                 - name: Utvikle en rekkefølgeplan
-                  href: ../fin-ops-core/fin-ops/hr/tasks/develop-succession-plan.md
+                  href: ../human-resources/hr-personnel-develop-succession-plan.md?toc=/dynamics365/finance/toc.json
                 - name: Angi prosjekttimeregistreringer
-                  href: ../fin-ops-core/fin-ops/hr/tasks/enter-project-timesheets.md
-                - name: Behandle e-postmaler
-                  href: ../fin-ops-core/fin-ops/hr/tasks/manage-email-templates.md
-                - name: Administrere permisjoner
-                  href: ../fin-ops-core/fin-ops/hr/tasks/manage-leave-absence.md
-            - name: Rekruttering
+                  href: ../human-resources/hr-personnel-enter-project-timesheets.md?toc=/dynamics365/finance/toc.json
+                - name: Masseansettelsesprosjekter
+                  href: ../human-resources/hr-personnel-mass-hire-projects.md?toc=/dynamics365/finance/toc.json
+                - name: Opprette et masseansettelsesprosjekt
+                  href: ../human-resources/hr-personnel-create-mass-hire-project.md?toc=/dynamics365/finance/toc.json
+                - name: Definere stillinger
+                  href: ../human-resources/hr-personnel-set-up-positions.md?toc=/dynamics365/finance/toc.json
+                - name: Definere informasjon om skade og sykdom
+                  href: ../human-resources/hr-personnel-set-up-injury-illness-information.md?toc=/dynamics365/finance/toc.json
+                - name: Vedlikeholde informasjon om ansattskade og -sykdom
+                  href: ../human-resources/hr-personnel-maintain-employee-injury-illness-information.md?toc=/dynamics365/finance/toc.json
+            - name: Rekruttere kandidater
               items:
                 - name: Administrere rekrutteringsprosesser
                   href: ../fin-ops-core/fin-ops/hr/manage-recruiting-process.md
@@ -2553,76 +2651,80 @@
                   href: ../fin-ops-core/fin-ops/hr/tasks/hire-existing-employee-through-recruiting.md
                 - name: Identifisere og distribuere verktøy for kandidatvalg
                   href: ../fin-ops-core/fin-ops/hr/tasks/identify-deploy-candidate-selection-tools.md
-            - name: Motivere ansatte
+            - name: Konfigurere kompensasjonsplaner
               items:
-                - name: Kompensasjonsplaner
-                  href: ../talent/compensation-plans.md?toc=/dynamics365/finance/toc.json
-                - name: Opprette planer for fast kompensasjon
-                  href: ../talent/create-fixed-compensation-plans.md?toc=/dynamics365/finance/toc.json
-                - name: Opprette variable kompensasjonsplaner
-                  href: ../talent/create-variable-compensation-plans.md?toc=/dynamics365/finance/toc.json
-                - name: Definere kompensasjonsprosesser og beregne resultater
-                  href: ../fin-ops-core/fin-ops/hr/tasks/define-compensation-process-calculate-results.md
-                - name: Behandle kompensasjon
-                  href: ../talent/process-compensation.md?toc=/dynamics365/finance/toc.json
+                - name: Oversikt over kompensasjonsplaner
+                  href: ../human-resources/hr-compensation-overview.md?toc=/dynamics365/finance/toc.json
                 - name: Definere kompensasjonsrutenett
-                  href: ../fin-ops-core/fin-ops/hr/tasks/set-up-compensation-grids.md
-                - name: Utvikle strukturer og planer for lønn/kompensasjon
-                  href: ../fin-ops-core/fin-ops/hr/tasks/develop-salary-compensation-structure-plan.md
-                - name: Legge til informasjon i ytelsesjournal og sende ros
-                  href: ../fin-ops-core/fin-ops/hr/tasks/add-your-performance-journal-send-praise-someone.md
+                  href: ../human-resources/hr-compensation-grids.md?toc=/dynamics365/finance/toc.json
+                - name: Utvikle en struktur og plan for kompensasjon
+                  href: ../human-resources/hr-compensation-structure.md?toc=/dynamics365/finance/toc.json
+                - name: Opprette planer for fast kompensasjon
+                  href: ../human-resources/hr-compensation-fixed-plans.md?toc=/dynamics365/finance/toc.json
+                - name: Opprette variable kompensasjonsplaner
+                  href: ../human-resources/hr-compensation-variable-plans.md?toc=/dynamics365/finance/toc.json
                 - name: Registrere ansatte i en fast kompensasjonsplan
-                  href: ../fin-ops-core/fin-ops/hr/tasks/enroll-employee-fixed-compensation-plan.md
+                  href: ../human-resources/hr-compensation-enroll-employees-fixed.md?toc=/dynamics365/finance/toc.json
                 - name: Registrere ansatte i en variabel kompensasjonsplan
-                  href: ../fin-ops-core/fin-ops/hr/tasks/enroll-employee-variable-compensation-plan.md
-                - name: Opprette prestasjonsvurderinger
-                  href: ../fin-ops-core/fin-ops/hr/tasks/create-performance-review.md
-            - name: Utvikle og lære opp ansatte
+                  href: ../human-resources/hr-compensation-enroll-employees-variable.md?toc=/dynamics365/finance/toc.json
+                - name: Definere kompensasjonsprosess og beregne resultater
+                  href: ../human-resources/hr-compensation-define-process.md?toc=/dynamics365/finance/toc.json
+                - name: Behandle kompensasjonsplaner
+                  href: ../human-resources/hr-compensation-process.md?toc=/dynamics365/finance/toc.json
+            - name: Administrere fordeler
+              items:
+                - name: Definere og administrere et fordelsprogram
+                  href: ../human-resources/hr-benefits-manage-program.md?toc=/dynamics365/finance/toc.json
+                - name: Policyer for fordelsrettighet
+                  href: ../human-resources/hr-benefits-eligibility-policies.md?toc=/dynamics365/finance/toc.json
+                - name: Fordelsrettighetsprosess
+                  href: ../human-resources/hr-benefits-eligibility-process.md?toc=/dynamics365/finance/toc.json
+                - name: Definere rettighetsregler og policyer for fordel
+                  href: ../human-resources/hr-benefits-define-eligibility-rules.md?toc=/dynamics365/finance/toc.json
+                - name: Levere et program for ansattfordeler
+                  href: ../human-resources/hr-benefits-deliver-employee-benefits-program.md?toc=/dynamics365/finance/toc.json
+                - name: Opprette nye fordeler
+                  href: ../human-resources/hr-benefits-create.md?toc=/dynamics365/finance/toc.json
+                - name: Registrere arbeidere i fordeler
+                  href: ../human-resources/hr-benefits-enroll-workers.md?toc=/dynamics365/finance/toc.json
+                - name: Administrere utløpsdatoer for fordel
+                  href: ../human-resources/hr-benefits-expiration-dates.md?toc=/dynamics365/finance/toc.json
+                - name: Generere ACA-rapporter
+                  href: ../human-resources/hr-benefits-aca-reports.md?toc=/dynamics365/finance/toc.json
+            - name: Utvikle ansatte
               items:
                 - name: Oversikt over ytelsesstyring
-                  href: ../talent/performance-management-overview.md?toc=/dynamics365/finance/toc.json
-                - name: Justere ferdigheter med forretningsbehov for arbeidsstyrke
-                  href: ../talent/skills.md?toc=/dynamics365/finance/toc.json
+                  href: ../human-resources/hr-develop-performance-management-overview.md?toc=/dynamics365/finance/toc.json
+                - name: Justere kompetanser for arbeidsstyrke
+                  href: ../human-resources/hr-develop-skills.md?toc=/dynamics365/finance/toc.json
+                - name: Legge til i ytelsesloggen
+                  href: ../human-resources/hr-develop-add-performance-journal.md?toc=/dynamics365/finance/toc.json
+                - name: Opprette et mål
+                  href: ../human-resources/hr-develop-create-goal.md?toc=/dynamics365/finance/toc.json
+                - name: Opprette en prestasjonsvurdering
+                  href: ../human-resources/hr-develop-create-performance-review.md?toc=/dynamics365/finance/toc.json
+            - name: Opprett kurs
+              items:
                 - name: Definere opplæringskurs
-                  href: ../talent/courses.md?toc=/dynamics365/finance/toc.json
-            - name: Opprette og vedlikeholde fordeler
-              items:
-                - name: Administrere et fordelsprogram
-                  href: ../talent/manage-benefit-program.md?toc=/dynamics365/finance/toc.json
-                - name: Policyer for fordelsrettigheter
-                  href: ../talent/benefit-eligibility-policies.md?toc=/dynamics365/finance/toc.json
-                - name: Fordelsrettighetsprosess
-                  href: ../fin-ops-core/fin-ops/hr/tasks/benefit-eligibility-process.md
-                - name: Definere rettighetsregler og policyer for fordel
-                  href: ../fin-ops-core/fin-ops/hr/tasks/define-benefit-eligibility-rules-policies.md
-                - name: Levere et program for ansattfordeler
-                  href: ../fin-ops-core/fin-ops/hr/tasks/deliver-employee-benefits-program.md
-                - name: Opprette nye fordeler
-                  href: ../fin-ops-core/fin-ops/hr/tasks/create-new-benefit.md
-                - name: Registrere arbeidere i fordeler og fjerne fordeler fra arbeidere
-                  href: ../fin-ops-core/fin-ops/hr/tasks/enroll-remove-benefits-workers.md
-                - name: Administrere utløpsdatoer for fordel
-                  href: ../fin-ops-core/fin-ops/hr/tasks/manage-benefit-expiration-dates.md
-            - name: Samle inn informasjon ved hjelp av spørreskjemaer
-              items:
-                - name: Spørreskjemaer
-                  href: ../talent/questionnaires.md?toc=/dynamics365/finance/toc.json
-                - name: Utforme et spørreskjema
-                  href: ../talent/design-questionnaires.md?toc=/dynamics365/finance/toc.json
-                - name: Distribuere og fylle ut et spørreskjema
-                  href: ../talent/distribute-questionnaires.md?toc=/dynamics365/finance/toc.json
+                  href: ../human-resources/hr-learning-courses.md?toc=/dynamics365/finance/toc.json
+                - name: Oversikt over spørreskjemaer
+                  href: ../human-resources/hr-learning-questionnaires.md?toc=/dynamics365/finance/toc.json
+                - name: Utforme spørreskjemaer
+                  href: ../human-resources/hr-learning-design-questionnaires.md?toc=/dynamics365/finance/toc.json
+                - name: Distribuere og planlegge spørreskjemaer
+                  href: ../human-resources/hr-learning-distribute-questionnaires.md?toc=/dynamics365/finance/toc.json
                 - name: Distribuere spørreskjemaer ved hjelp av planlegging
-                  href: ../fin-ops-core/fin-ops/hr/tasks/distribute-questionnaires-scheduling.md
-                - name: Evaluere resultatene i et spørreskjema
-                  href: ../talent/evaluate-questionnaire-results.md?toc=/dynamics365/finance/toc.json
+                  href: ../human-resources/hr-learning-distribute-questionnaires-scheduling.md?toc=/dynamics365/finance/toc.json
+                - name: Vis resultater av spørreskjema
+                  href: ../human-resources/hr-learning-evaluate-questionnaire-results.md?toc=/dynamics365/finance/toc.json
                 - name: Analysere resultater av spørreskjema
-                  href: ../fin-ops-core/fin-ops/hr/tasks/analyze-questionnaire-results.md
-                - name: Opprette åpne spørsmål
-                  href: ../fin-ops-core/fin-ops/hr/tasks/create-open-ended-question.md
-                - name: Opprette lukkede spørsmål
-                  href: ../fin-ops-core/fin-ops/hr/tasks/create-closed-ended-question.md
-                - name: Gjøre spørsmål avhengige av svaret på det forrige spørsmålet
-                  href: ../fin-ops-core/fin-ops/hr/tasks/make-question-dependent-answer-previous-question.md
+                  href: ../human-resources/hr-learning-analyze-questionnaire-results.md?toc=/dynamics365/finance/toc.json
+                - name: Opprette et åpent spørsmål
+                  href: ../human-resources/hr-learning-create-open-ended-question.md?toc=/dynamics365/finance/toc.json
+                - name: Opprette et lukket spørsmål
+                  href: ../human-resources/hr-learning-create-closed-ended-question.md?toc=/dynamics365/finance/toc.json
+                - name: Opprette et avhengig spørsmål
+                  href: ../human-resources/hr-learning-depending-question.md?toc=/dynamics365/finance/toc.json
             - name: Sikkerhet og overholdelse på arbeidsplassen (USA)
               items:
                 - name: Verifisering av skjema I-9
@@ -2635,10 +2737,6 @@
                   href: ../fin-ops-core/fin-ops/hr/localizations/noam-usa-comply-ada.md
                 - name: Behandle arbeidertilpassinger
                   href: ../fin-ops-core/fin-ops/hr/localizations/tasks/manage-worker-accommodations.md
-                - name: Definere informasjon om skade og sykdom
-                  href: ../fin-ops-core/fin-ops/hr/tasks/set-up-injury-illness-information.md
-                - name: Vedlikeholde informasjon om ansattskade og -sykdom
-                  href: ../fin-ops-core/fin-ops/hr/tasks/maintain-employee-injury-illness-information.md
         - name: Intelligens
           items:
             - name: Startside for intelligens
@@ -2653,7 +2751,7 @@
                   href: ../fin-ops-core/dev-itpro/analytics/ledger-budgets-power-bi.md?toc=/dynamics365/finance/toc.json
                 - name: Fordeler
                   href: ../fin-ops-core/dev-itpro/analytics/benefits-power-bi.md?toc=/dynamics365/finance/toc.json
-                - name: Kontantstrømoversikt
+                - name: Power BI-innhold i Kontantstrømoversikt
                   href: cash-bank-management/Cash-Overview-Power-BI-content.md
                 - name: CFO-oversikt
                   href: ../fin-ops-core/dev-itpro/analytics/CFO-power-bi.md?toc=/dynamics365/finance/toc.json
@@ -2779,8 +2877,12 @@
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-electronic-payments.md?toc=/dynamics365/finance/toc.json
                     - name: 'Oppgradere formatet ved å ta i bruk en ny, grunnleggende versjon av det formatet'
                       href: ../fin-ops-core/dev-itpro/analytics/tasks/er-upgrade-format.md?toc=/dynamics365/finance/toc.json
-                - name: Formeldesigner i elektronisk rapportering
-                  href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting-formula-designer.md?toc=/dynamics365/finance/toc.json
+                - name: Formeldesignere i elektronisk rapportering
+                  items:
+                    - name: Formeldesigner
+                      href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting-formula-designer.md?toc=/dynamics365/finance/toc.json
+                    - name: Avansert formeldesigner
+                      href: ../fin-ops-core/dev-itpro/analytics/er-advanced-formula-editor.md?toc=/dynamics365/finance/toc.json
                 - name: Formelspråk og -funksjoner
                   items:
                     - name: Formelspråk
@@ -2891,14 +2993,14 @@
                               href: ../fin-ops-core/dev-itpro/analytics/er-functions-mathematical-rounddown.md?toc=/dynamics365/finance/toc.json
                             - name: RoundUp
                               href: ../fin-ops-core/dev-itpro/analytics/er-functions-mathematical-roundup.md?toc=/dynamics365/finance/toc.json
-                        - name: Registreringer
+                        - name: Records
                           items:
                             - name: Registreringsfunksjoner
                               href: ../fin-ops-core/dev-itpro/analytics/er-functions-category-record.md?toc=/dynamics365/finance/toc.json
-                            - name: NullContainer
-                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-record-nullcontainer.md?toc=/dynamics365/finance/toc.json
                             - name: EmptyRecord
                               href: ../fin-ops-core/dev-itpro/analytics/er-functions-record-emptyrecord.md?toc=/dynamics365/finance/toc.json
+                            - name: NullContainer
+                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-record-nullcontainer.md?toc=/dynamics365/finance/toc.json
                         - name: Text
                           items:
                             - name: Tekstfunksjoner
@@ -2973,8 +3075,6 @@
                               href: ../fin-ops-core/dev-itpro/analytics/er-functions-other-curcredref.md?toc=/dynamics365/finance/toc.json
                             - name: FA_Balance
                               href: ../fin-ops-core/dev-itpro/analytics/er-functions-other-fabalance.md?toc=/dynamics365/finance/toc.json
-                            - name: CH_Bank_Mod_10
-                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-other-chbankmode10.md?toc=/dynamics365/finance/toc.json
                             - name: FA_Sum
                               href: ../fin-ops-core/dev-itpro/analytics/er-functions-other-fasum.md?toc=/dynamics365/finance/toc.json
                             - name: GetCurrentCompany
@@ -2995,37 +3095,37 @@
                           items:
                             - name: Typekonverteringsfunksjoner
                               href: ../fin-ops-core/dev-itpro/analytics/er-functions-category-type-conversion.md?toc=/dynamics365/finance/toc.json
-                            - name: Int64Value
+                            - name: 'Type: Int64Value'
                               href: ../fin-ops-core/dev-itpro/analytics/er-functions-conversion-int64value.md?toc=/dynamics365/finance/toc.json
-                            - name: IntValue
+                            - name: 'Type: IntValue'
                               href: ../fin-ops-core/dev-itpro/analytics/er-functions-conversion-intvalue.md?toc=/dynamics365/finance/toc.json
-                            - name: NumberValue
+                            - name: 'Type: NumberValue'
                               href: ../fin-ops-core/dev-itpro/analytics/er-functions-conversion-numbervalue.md?toc=/dynamics365/finance/toc.json
-                            - name: Value
+                            - name: 'Type: Value'
                               href: ../fin-ops-core/dev-itpro/analytics/er-functions-conversion-value.md?toc=/dynamics365/finance/toc.json
-                            - name: 'Dato- og klokkeslettkategori: DateTimeValue'
+                            - name: 'Date and Time: DateTimeValue'
                               href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-datetimevalue.md?toc=/dynamics365/finance/toc.json
-                            - name: 'Dato- og klokkeslettkategori: DateToDateTime'
+                            - name: 'Date and Time: DateToDateTime'
                               href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-datetodatetime.md?toc=/dynamics365/finance/toc.json
-                            - name: 'Dato- og klokkeslettkategori: DateValue'
+                            - name: 'Date and Time: DateValue'
                               href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-datevalue.md?toc=/dynamics365/finance/toc.json
-                            - name: 'Listekategori: List'
+                            - name: 'List: List'
                               href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-list.md?toc=/dynamics365/finance/toc.json
-                            - name: 'Listekategori: ListOfFields'
+                            - name: 'List: ListOfFields'
                               href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-listoffields.md?toc=/dynamics365/finance/toc.json
-                            - name: 'Listekategori: Split'
+                            - name: 'List: Split'
                               href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-split.md?toc=/dynamics365/finance/toc.json
-                            - name: 'Listekategori: StringJoin'
+                            - name: 'List: StringJoin'
                               href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-stringjoin.md?toc=/dynamics365/finance/toc.json
-                            - name: 'Tekstkategori: Char'
+                            - name: 'Text: Char'
                               href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-char.md?toc=/dynamics365/finance/toc.json
-                            - name: 'Tekstkategori: GuidValue'
+                            - name: 'Text: GuidValue'
                               href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-guidvalue.md?toc=/dynamics365/finance/toc.json
-                            - name: 'Tekstkategori: NumberFormat'
+                            - name: 'Text: NumberFormat'
                               href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-numberformat.md?toc=/dynamics365/finance/toc.json
-                            - name: 'Tekstkategori: QrCode'
+                            - name: 'Text: QrCode'
                               href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-qrcode.md?toc=/dynamics365/finance/toc.json
-                            - name: 'Tekstkategori: Text'
+                            - name: 'Text: Text'
                               href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-text.md?toc=/dynamics365/finance/toc.json
                 - name: Administrere ER-modelltilordning i separate ER-konfigurasjoner
                   href: ../fin-ops-core/dev-itpro/analytics/tasks/er-manage-model-mapping-configurations-july-2017.md?toc=/dynamics365/finance/toc.json
@@ -3151,7 +3251,7 @@
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md
                 - name: Opplæringer
                   items:
-                    - name: Bruke JOIN-datakilder til å hente data fra flere programtabeller i modelltilordninger for elektronisk rapportering (ER)
+                    - name: Bruke JOIN-datakilder til å hente data fra flere programtabeller
                       href: ../fin-ops-core/dev-itpro/analytics/er-join-data-sources.md
                     - name: Konfigurere modelltilordninger for landkontekstavhengig ER
                       href: ../fin-ops-core/dev-itpro/analytics/er-country-dependent-model-mapping.md
@@ -3159,7 +3259,13 @@
                       href: ../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-configure-format.md
                     - name: Definere parameterne for et ER-format per juridisk enhet
                       href: ../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-set-up.md
-                - name: Bruke løsninger for elektronisk rapportering i Finance and Operations
+                    - name: Utsette utføring av ER-formatelementer
+                      items:
+                        - name: Utsette utføring av et sekvenselement
+                          href: ../fin-ops-core/dev-itpro/analytics/er-defer-sequence-element.md
+                        - name: Utsette utføring av et XML-element
+                          href: ../fin-ops-core/dev-itpro/analytics/er-defer-xml-element.md
+                - name: Bruke elektroniske rapporteringsløsninger i Finance and Operations
                   items:
                     - name: Konfigurere rammeverket
                       items:
@@ -3173,8 +3279,24 @@
                       items:
                         - name: Oversikt over mål
                           href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-destinations.md?toc=/dynamics365/finance/toc.json
+                        - name: Måltyper
+                          items:
+                            - name: Arkivmål
+                              href: ../fin-ops-core/dev-itpro/analytics/er-destination-type-archive.md
+                            - name: E-postmål
+                              href: ../fin-ops-core/dev-itpro/analytics/er-destination-type-email.md
+                            - name: Filmål
+                              href: ../fin-ops-core/dev-itpro/analytics/er-destination-type-file.md
+                            - name: Power BI-mål
+                              href: ../fin-ops-core/dev-itpro/analytics/er-destination-type-powerbi.md
+                            - name: Skrivermål
+                              href: ../fin-ops-core/dev-itpro/analytics/er-destination-type-print.md
+                            - name: Skjermmål
+                              href: ../fin-ops-core/dev-itpro/analytics/er-destination-type-screen.md
                         - name: Konfigurere mål
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-destinations-2016-11.md?toc=/dynamics365/finance/toc.json
+                    - name: Definere en referanse til et ER-format
+                      href: ../fin-ops-core/dev-itpro/analytics/er-extended-format-lookup.md?toc=/dynamics365/finance/toc.json
                     - name: Validere genererte rapporter automatisk
                       items:
                         - name: Spore genererte rapportresultater og sammenligne dem med grunnlinjeverdier
@@ -3195,6 +3317,8 @@
                       items:
                         - name: Oversikt over administrasjon av forretningsdokument
                           href: ../fin-ops-core/dev-itpro/analytics/er-business-document-management.md?toc=/dynamics365/finance/toc.json
+                        - name: Nytt dokumentbrukergrensesnitt i Forretningsdokumentbehandling
+                          href: ../fin-ops-core/dev-itpro/analytics/er-business-document-management-new-template-ui.md
                         - name: Legge til nye felt i en forretningsdokumentmal i Microsoft Excel
                           href: ../fin-ops-core/dev-itpro/analytics/er-bdm-add-field-to-excel-template.md?toc=/dynamics365/finance/toc.json
                 - name: API for ER-rammeverk
@@ -3553,13 +3677,15 @@
               items:
                 - name: Opprette valutakursleverandører
                   href: ../fin-ops-core/dev-itpro/financial/create-exchange-rate-providers.md
-                - name: Opprette valutakursleverandører i Finance and Operations-versjon 8.0
+                - name: Opprette valutakursleverandører i Finance and Operations versjon 8.0
                   href: ../fin-ops-core/dev-itpro/financial/create-exchange-rate-8.md
             - name: 'Utligne transaksjoner ved hjelp av CustTrans::settleTransaction'
               href: ../fin-ops-core/dev-itpro/financial/settletransact-obsolete.md
-    - name: Utvikling og administrasjon for Finance and Operations-apper
+    - name: Utvikling og administrasjon av Finance and Operations-apper
       href: ../fin-ops-core/dev-itpro/index.md
     - name: Dynamics 365 Supply Chain Management
       href: ../supply-chain/index.md
+    - name: Dynamics 365 Commerce
+      href: ../commerce/index.md
     - name: Dynamics 365 Retail
-      href: ../retail/index.md
+      href: ../commerce/index.md

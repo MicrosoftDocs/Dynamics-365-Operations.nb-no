@@ -1,9 +1,9 @@
 ---
-title: Ordrebekreftelsesmodul
-description: Dette emnet dekker ordrebekreftelsesmoduler og beskriver hvordan du oppretter dem i Microsoft Dynamics 365 Commerce.
+title: Ordredetaljermodulen
+description: Dette emnet dekker ordredetaljmoduler og beskriver hvordan du bruker dem i Microsoft Dynamics 365 Commerce.
 author: anupamar
 manager: annbe
-ms.date: 10/31/2019
+ms.date: 01/23/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,52 +17,54 @@ ms.search.region: Global
 ms.author: anupamar-ms
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: e339ce02bb646d0d9a68c22b24fde9b72071de6f
-ms.sourcegitcommit: 295d940a345879b3dfc5991e387b91c7257019ea
+ms.openlocfilehash: cb09a0b6ce1e48707f96021e9fad0006d9c1c55c
+ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2698332"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "3026023"
 ---
-# <a name="order-confirmation-module"></a>Ordrebekreftelsesmodul
+# <a name="order-details-module"></a>Ordredetaljermodulen
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
-Dette emnet dekker ordrebekreftelsesmoduler og beskriver hvordan du oppretter dem i Microsoft Dynamics 365 Commerce.
+Dette emnet dekker ordredetaljmoduler og beskriver hvordan du bruker dem i Microsoft Dynamics 365 Commerce.
 
 ## <a name="overview"></a>Oversikt
 
-En ordrebekreftelsesmodul brukes til å vise en bekreftelsesmelding på en ordrebekreftelsesside etter at en ordre er plassert. Ordrebekreftelsesmodulen viser ordrebekreftelsesnummeret og kundens e-postadresse som ble angitt ved utsjekking.
-
-Når en ordre blir lagt inn under utsjekking, sendes ordrebekreftelsesnummeret og kundens e-postadresse til ordrebekreftelsessiden som en spørringsstreng i URL-adressen til siden. Ordrebekreftelsesmodulen mottar denne informasjonen og gjengir ordrestatusen på ordrebekreftelsessiden. Ordrebekreftelsesmodulen krever denne sidekonteksten for å angi statusen for ordren.
+Ordredetaljmodulen brukes til å vise ordrebekreftelsesdetaljer etter at en ordre er lagt inn. Den viser ID-en for ordrebekreftelse, ordrekontaktinformasjon og andre ordredetaljer, for eksempel varene som ble kjøpt, betalingsinformasjon og forsendelsesmetoden.
 
 ## <a name="order-confirmation-module-properties"></a>Egenskaper for ordrebekreftelsesmodul
 
-| Egenskapsnavn | Verdier | Beskrivelse |
-|---------------|--------|-------------|
-| Overskrift       | Overskriftstekst og overskriftskode (**H1**, **H2**, **H3**, **H4**, **H5** eller **H6**) | Ordrebekreftelsesmodulen kan ha en overskrift. Som standard brukes **H2**-overskriftskoden for overskriften. Koden kan imidlertid endres for å oppfylle tilgjengelighetskravene. |
+| Egenskapsnavn  | Verdier | Beskrivelse |
+|----------------|--------|-------------|
+| Overskrift        | Overskriftstekst og overskriftskode (**H1**, **H2**, **H3**, **H4**, **H5** eller **H6**) | Ordrebekreftelsesmodulen kan ha en overskrift. Som standard brukes **H2**-overskriftskoden for overskriften. Koden kan imidlertid endres for å oppfylle tilgjengelighetskravene. |
+| Kontaktnummer | Text | Et kontaktnummer kan angis for spørsmål som er knyttet til ordren. |
 
-## <a name="modules-that-can-be-used-in-an-order-confirmation-page-module"></a>Moduler som kan brukes i en modul for ordrebekreftelsesside 
+## <a name="modules-that-can-be-used-on-an-order-details-page"></a>Moduler som kan brukes på en ordredetaljside
 
-- **Anbefalinger** – Anbefalingsmodulen kan plasseres på ordrebekreftelsessiden for å foreslå andre produkter for kunden.
-- **Markedsføring** – Markedsføringsmodulen kan legge til markedsføringsinnhold på ordrebekreftelsessiden.
+Når du oppretter en ordredetaljside, kan du legge til andre relevante moduler i tillegg til ordredetaljmodulen. Her er noen eksempler:
 
-## <a name="create-an-order-confirmation-page-module"></a>Opprette en modul for ordrebekreftelsesside
+- **Anbefalingsmodulen** – Anbefalingsmodulen kan legges til på ordredetaljsiden for å foreslå andre produkter for kunden.
+- **Markedsføringsmoduler** – Enhver markedsføringsmodul kan legges til på ordredetaljsiden for å vise markedsføringsinnhold.
 
-1. Opprett en sidemal som heter **ordrebekreftelsesmal**.
-1. I **Hoved**-sporet på standardsiden legger du til en ordrebekreftelsesmodul.
-1. I ordrebekreftelsesmodulen legger du til en anbefalingsmodul.
-1. Lagre og forhåndsvis malen. Ordrebekreftelsesmodulen skal ikke gjengis, fordi den krever konteksten til ordrebekreftelsesnummeret.
-1. Sjekk inn malen, og publiser den.
-1. Bruk ordrebekreftelsesmalen du nettopp opprettet, til å opprette en side som heter **ordrebekreftelsesside**.
+## <a name="create-an-order-details-page-module"></a>Opprette en modul for ordredetaljside
+
+1. Opprett en sidemal som heter **Ordredetaljer**.
+1. I **Hoved**-sporet på standardsiden legger du til en ordredetaljmodul.
+1. I ordredetaljmodulen legger du til en anbefalingsmodul.
+1. Lagre og forhåndsvis malen. Ordredetaljmodulen blir ikke gjengitt, fordi den krever konteksten til ordrebekreftelsesnummeret.
+1. Fullfør redigeringen av malen, og publiser den.
+1. Bruk ordredetaljmalen du nettopp opprettet, til å opprette en side som heter **ordredetaljside**.
 1. Legg til standardsiden i sidedisposisjonen.
 1. Legg til et topptekstfragment i **Hode**-sporet.
 1. Legg til et bunntekstfragment i **Bunntekst**-sporet.
-1. I **Hoved**-sporet legger du til en ordrebekreftelsesmodul.
-1. I egenskapsruten i ordrebekreftelsesmodulen legger du til overskriften **Ordrebekreftelse**.
-1. Under ordrebekreftelsesmodulen legger du til en anbefalingsmodul og konfigurerer den slik at den bruker innstillingene for **Nye** og **Bestselgere**.
-1. Lagre og forhåndsvis siden, sjekk det inn, og publiser den.
+1. I **Hoved**-sporet legger du til en ordredetaljmodul.
+1. I egenskapsruten for ordredetaljmodulen legger du til overskriften **Ordredetaljer**.
+1. Under ordredetaljmodulen legger du til en anbefalingsmodul og konfigurerer den slik at den bruker innstillingene for **Nye** og **Bestselgere**.
+1. Lagre og forhåndsvis siden.
+1. Fullfør redigeringen av siden, og publiser den.
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 

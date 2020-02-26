@@ -3,7 +3,7 @@ title: Administrere vurderinger og anmeldelser
 description: Dette emnet forklarer hvordan du administrerer vurderinger og omtaler ved hjelp Microsoft Dynamics 365 Commerce-sensurverktøyet for vurderinger og omtaler.
 author: gvrmohanreddy
 manager: annbe
-ms.date: 10/01/2019
+ms.date: 01/30/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -18,16 +18,15 @@ ms.search.industry: ''
 ms.author: gmohanv
 ms.search.validFrom: 2019-10-01
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: e9becdce5ae36ac637043b9d0febfbbff2392aa9
-ms.sourcegitcommit: 295d940a345879b3dfc5991e387b91c7257019ea
+ms.openlocfilehash: a7fa2ae3124a0a68b3890987c5dce2730e5c2183
+ms.sourcegitcommit: 1e6c8163da5818196769eb278afb3a2335d0cbe3
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2698032"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "3027248"
 ---
 # <a name="manage-ratings-and-reviews"></a>Administrere vurderinger og anmeldelser
 
-[!include [banner](includes/preview-banner.md)]
 [!include [banner](includes/banner.md)]
 
 Dette emnet forklarer hvordan du administrerer vurderinger og omtaler ved hjelp Microsoft Dynamics 365 Commerce-sensurverktøyet for vurderinger og omtaler.
@@ -39,6 +38,16 @@ Dynamics 365 Commerce bruker Microsoft Azure Cognitive Service til å automatisk
 - Sensurere omtaler ved å svare på dem eller fjerne dem.
 - Slette omtalene til en kunde på en kundens forespørsel.
 - Masseimportere vurderings- og omtaledata for alle produkter i en Microsoft Power BI-mal, slik at tendenser for vurderinger og omtaler kan analyseres.
+
+## <a name="access-ratings-and-reviews-moderation-features"></a>Få tilgang til funksjoner for sensur av rangeringer og vurderinger
+
+For å få tilgang til sensurfunksjoner for rangeringer og vurderinger i administrasjonsverktøyet for e-handelsområdet gjør du følgende.
+
+1. Logg på [Microsoft Lifecycle Services (LCS)](https://lcs.dynamics.com).
+1. Åpne prosjektet som inneholder miljøet der du vil initialisere e-handel.
+1. Velg miljøet i delen **Miljøer**.
+1. Klikk **Detaljhandelsstyring** under **Miljøfunksjoner**.
+1. I kategorien **E-handel** under **Koblinger** velger du **Administrasjonsverktøy for e-handelsområde**.
 
 ## <a name="read-a-review"></a>Lese en omtale 
 

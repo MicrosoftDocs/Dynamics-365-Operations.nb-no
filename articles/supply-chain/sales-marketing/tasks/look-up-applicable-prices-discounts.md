@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: db9caaa7f425133eda7a5f225b39ca52e11e0716
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: debf66029d6efa42fe6d85eadb3866aadb312a97
+ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1835594"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "3025834"
 ---
 # <a name="look-up-applicable-prices-and-discounts"></a>Slå opp gjeldende priser og rabatter
 
@@ -49,7 +49,7 @@ Denne fremgangsmåten viser hvordan du finner prisen og/eller rabatten for et pr
 10. Lukk siden.
 
 ## <a name="find-the-applicable-discount"></a>Finne den aktuelle rabatten
-    * Kontroller at Kundekonto-feltet inneholder kundenummeret US-001    
+Kontroller at Kundekonto-feltet inneholder kundenummeret US-001    
 1. Skriv inn T0012 i feltet Varenummer.
     * Kontroller at Antall-feltet er satt til 1.  
     * De følgende prissettingsdetaljene som vises for produktet T0012, kommer fra én eller flere forretningsavtaler: enhetsprisen er CAD 1 000 og rabattprosenten er 5.  

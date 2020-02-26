@@ -3,7 +3,7 @@ title: Sentraliserte betalinger for kunder
 description: Organisasjoner som omfatter flere juridiske enheter, kan opprette og administrere betalinger ved hjelp av én juridisk enhet som håndterer alle betalinger. Derfor trenger ikke den samme transaksjonen angis i flere juridiske enheter. Denne artikkelen inneholder eksempler som viser hvordan postering for sentralisert betaling skal håndteres i ulike scenarier.
 author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 02/13/2019
+ms.date: 01/30/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 59942fadb0fb702c59c95f75359f1a3036e4668f
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 78c72bb9632d3501638d528822a3c30b05686796
+ms.sourcegitcommit: 9168621ca9b5061c65f3e05dbc5918b6a11d53d5
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2179274"
+ms.lasthandoff: 01/31/2020
+ms.locfileid: "3000099"
 ---
 # <a name="centralized-payments-for-accounts-receivable"></a>Sentraliserte betalinger for kunder
 
@@ -88,8 +88,8 @@ Fabrikam mottar en betaling på 580,00 til Fabrikams kundekonto 4000, Gastronor 
 
 | Konto                             | Debetbeløp | Kreditbeløp |
 |-------------------------------------|--------------|---------------|
-| Kunder (Fabrikam Øst) | 600,00       |               |
-| Salg (Fabrikam Øst)               |              | 600,00        |
+| Kunder (Fabrikam Øst) | 580.00       |               |
+| Salg (Fabrikam Øst)               |              | 580.00        |
 
 ### <a name="payment-is-received-and-posted-in-fabrikam-for-fabrikam-customer-4000"></a>Betalingen mottas og posteres i Fabrikam for Fabrikam-kunde 4000
 

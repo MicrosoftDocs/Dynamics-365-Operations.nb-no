@@ -3,7 +3,7 @@ title: Legge til en opphavsrettserklæring
 description: Dette emnet beskriver hvordan du legger til opphavsrettserklæring på e-handelsområdet.
 author: psimolin
 manager: AnnBe
-ms.date: 12/12/2019
+ms.date: 01/23/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,16 +17,16 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 58c2949057ef777f706d12cee2dd3341d1a3b7e6
-ms.sourcegitcommit: 36857283d70664742c8c04f426b231c42daf4ceb
+ms.openlocfilehash: 54b48ee74bc9d9f2b77f0584a0bf1739a8dfdbdb
+ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "2914583"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "3025488"
 ---
 # <a name="add-a-copyright-notice"></a>Legge til en opphavsrettserklæring
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 Dette emnet beskriver hvordan du legger til opphavsrettserklæring på e-handelsområdet.
@@ -48,8 +48,8 @@ Hvis du vil legge til en opphavsrettserklæring nederst på hver side som bruker
 1. I navigasjonsruten velger du ellipseknappen (**...**) ved siden av **Bunntekst**, og deretter velger du **Legg til modul**.
 1. I dialogboksen velger du **Bunntekstkategori**, og deretter velger du **OK**.
 1. I navigasjonsruten velger du ellipseknappen ved siden av **Bunntekstkategori**, og deretter velger du **Legg til modul**.
-1. I dialoigboksen velger du **Innholdsrikt blokkelement**, og velg deretter **OK**.
-1. I navigasjonsruten velger du **Innholdsrikt blokkelement**.
+1. I dialogboksen velger du **Tekstblokk**, og deretter velger du **OK**.
+1. I navigasjonsruten velger du **Tekstblokk**.
 1. Legg til melding om opphavsrett i feltet **Avsnitt** i egenskapsruten til høyre. Skriv for eksempel inn **(C) Fabrikam 2019**.
 1. Velg **Lagre**, velg **Sjekk inn**, og velg deretter **Publiser**.
 1. Gå til **Maler**, velg malen, og velg deretter **Sjekk ut**.

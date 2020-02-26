@@ -1,7 +1,7 @@
-Når du kopierer en database mellom miljøer, må du kjøre verktøyet for ny klargjøring av miljøet før den kopierte databasen kan tas i bruk, slik at alle Retail-komponenter er oppdatert.
+Når du kopierer en database mellom miljøer, må du kjøre verktøyet for ny klargjøring av miljøet før den kopierte databasen kan tas i bruk, slik at alle Commerce-komponenter er oppdatert.
 
 > [!IMPORTANT]
-> Vi anbefaler at du kjører denne prosedyren enten du bruker Retail-komponenter eller ikke, fordi Retail-funksjonalitet er inkludert i alle miljøer. 
+> Vi anbefaler at du kjører denne prosedyren enten du bruker Commerce-komponenter eller ikke, fordi Commerce-funksjonalitet er inkludert i alle miljøer. 
 
 Før du fortsetter, må du kontrollere at følgende forutsetninger er oppfylt:
 1. Hvis du oppgraderer til juli 2017-utgivelsen 7.2.11792.56024 (også kalt 7.2), bruker du følgende X++-hurtigreparasjoner til programmet i målmiljøet før du kjører dataoppgraderingen i dette miljøet. Dette forhindrer at ulike feil oppstår under dataoppgraderingen:

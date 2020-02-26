@@ -3,7 +3,7 @@ title: Kontobehandlingssider og -moduler
 description: Dette emnet dekker kontobehandlingssider og -moduler i Microsoft Dynamics 365 Commerce.
 author: v-chgri
 manager: annbe
-ms.date: 12/02/2019
+ms.date: 01/23/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -18,16 +18,16 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: f9fc3731cd9d21294b0161e1d419f255096d7790
-ms.sourcegitcommit: 96bfc20eb748f4090a2b5e1ff9f54997d5a5d359
+ms.openlocfilehash: 8787a7b01ecf15752569d2a3a8d7804fe492e63d
+ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "2885815"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "3025719"
 ---
 # <a name="account-management-pages-and-modules"></a>Kontobehandlingssider og -moduler
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 Dette emnet dekker kontobehandlingssider og -moduler i Microsoft Dynamics 365 Commerce.
@@ -40,13 +40,12 @@ Kontobehandling refererer til en gruppe med sider som brukes til å behandle inf
 
 Målsiden for kontoadministrasjons bruker følgende moduler:
 
-- **Innholdsplassering** – Denne modulen er en containermodul som inneholder alle modulene på målsiden for kontostyring.
-- **Velkomstelement for konto** – Denne modulen brukes til å gi en velkomstmelding på kontobehandlingssiden. Den inneholder egenskaper for overskriften og flisstørrelsen. Egenskapen **Flisstørrelse** angir bredden på modulen i innholdsplasseringsmodulen. Verdiområdet fra **1** til **12**, der **12** representerer den fullstendige bredden på innholdsplasseringscontaineren.
-- **Plasseringselement for kontoordre** – Denne modulen brukes til å gi et sammendrag av antall ordrer som er lagt inn av brukerkontoen. Den inneholder egenskaper for overskriften, flisstørrelsen og koblingen "vis detaljer". Vis detaljer-koblingen bør konfigureres til å omdirigere til ordreloggsiden.
-- **Plasseringselement for kontoprofil** – Denne modulen brukes til å gi et sammendrag av brukerprofilen. Den inneholder egenskaper for overskriften, flisstørrelsen og koblingen "vis detaljer". Vis detaljer-koblingen bør konfigureres til å omdirigere til brukerprofilsiden.
-- **Ønskelisteelement for konto** – Denne modulen brukes til å gi et sammendrag av varene i kundens ønskeliste. Det kan for eksempel stå "Du har 10 elementer i ønskelisten". Den inneholder egenskaper for overskriften, flisstørrelsen og koblingen "vis detaljer". Vis detaljer-koblingen bør konfigureres til å omdirigere til ønskelistesiden.
-- **Kontoadresseelement** – Denne modulen brukes til å gi et sammendrag av brukerens adresse. Det kan for eksempel stå "Du har lagt til 2 adresser i kontoen din". Den inneholder egenskaper for overskriften, flisstørrelsen og koblingen "vis detaljer". Vis detaljer-koblingen bør konfigureres til å omdirigere til brukeradressesiden.
-- **Kontofordelselement** – Denne modulen brukes til å vise og koble til informasjon om fordelsprogrammer. Den inneholder egenskaper for overskriften, flisstørrelsen, koblingen "vis detaljer" og koblingen "bli medlem". "Vis detaljer"-koblingen bør konfigureres til å omdirigere til fordelssiden. Koblingen "bli medlem" kan konfigureres til å omadressere til en side der brukere kan bli med i fordelsprogrammet.
+- **Container** - Alle modulene for målside for kontobehandlings må plasseres i en container. 
+- **Velkomstflis for konto** – Denne modulen brukes til å gi en velkomstmelding på kontobehandlingssiden. Den inneholder egenskaper for overskriften.
+- **Generell flis for konto** – Denne modulen kan brukes til å angi overskrifter og koblinger til kontobehandlingssider, for eksempel sidene Ordrehistorikk og Min profil. Generell flis-modulen kan brukes til å konfigurere en flis for en side. I Fabrikam brukes denne modulen for koblinger for Ordrehistorikk- og Min profil-siden på målsiden for kontobehandling.
+- **Ønskelisteflis for konto** – Denne modulen brukes til å gi et sammendrag av varene i kundens ønskeliste. Det kan for eksempel stå "Du har 10 elementer i ønskelisten". Den inneholder egenskaper for overskriften og koblingen "Vis detaljer". Vis detaljer-koblingen bør konfigureres til å omdirigere til ønskelistesiden. 
+- **Kontoadresseflis** – Denne modulen brukes til å gi et sammendrag av brukerens adresse. Det kan for eksempel stå "Du har lagt til 2 adresser i kontoen din". Den inneholder egenskaper for overskriften og koblingen "Vis detaljer". Vis detaljer-koblingen bør konfigureres til å omdirigere til brukeradressesiden.
+- **Kontofordelsflis** – Denne modulen brukes til å vise og koble til informasjon om fordelsprogrammer. Denne flisen har to tilstander: en tilstand viser koblinger til et fordelsprogram hvis brukeren ikke allerede er medlem. Den andre tilstanden viser koblinger for å vise siden med fordelsdetaljer når brukeren allerede er medlem. Egenskaper inkluderer overskriften, Registrering-koblingen og Vis fordel-koblingen. Vis fordel-koblingen bør konfigureres til å omdirigere til fordelssiden. Registrering-koblingen kan konfigureres til å omadressere til en side der brukere kan bli med i fordelsprogrammet. 
 
 ### <a name="order-history-page"></a>Siden Ordrehistorikk
 
@@ -58,7 +57,7 @@ Ordredetaljer-siden inneholder detaljert informasjon for hver ordre og er tilgje
 
 ### <a name="user-profile-page"></a>Brukerprofilside
 
-Siden brukerprofil viser brukerkontodetaljer, for eksempel brukerens navn og e-postadresse. Den bruker brukerprofilmodulen. Selv om epostadresse ikke kan fjernes, kan den redigeres. Brukerprofilsiden viser også brukerpreferansene som gjør en bruker i stand til å velge/velge bort bestemte funksjoner, for eksempel tilpassing av anbefalingslister. 
+Siden brukerprofil viser brukerkontodetaljer, for eksempel brukerens navn og e-postadresse. Den bruker brukerprofildetaljene og brukerprofilredigeringsmodulene. Selv om epostadresse ikke kan fjernes, kan den redigeres. Brukerprofilsiden viser også brukerpreferansene som gjør en bruker i stand til å velge/velge bort bestemte funksjoner, for eksempel tilpassing av anbefalingslister. 
 
 ### <a name="user-address-page"></a>Brukeradresseside
 
@@ -70,7 +69,9 @@ Siden for brukeradresse viser listen over adresser som er knyttet til brukerkont
 
 ### <a name="loyalty-page"></a>Fordelsside
 
-Fordelssiden lar kunder bli med i et fordelsprogram eller, hvis de allerede er medlemmer at fordelsprogrammet, vise programdetaljer. De kan også vise poengene de har tjent opp og løst inn i nylige transaksjoner.
+Fordelssiden lar kunder vise sine fordelsdetaljer hvis de allerede er medlemmer av fordelsprogrammet. De kan også vise poengene de har tjent opp og løst inn i nylige transaksjoner. Siden bruker modulen for fordelsdetaljer til å vise fordelsdetaljene. 
+
+For å bli med i et fordelsprogram kan det opprettes en markedsføringsside med moduler for fordelsregistrering og fordelsvilkår. Hvis brukeren ikke er medlem av et fordelsprogram, vil disse modulene gjøre det mulig for brukeren å registrere seg.
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 

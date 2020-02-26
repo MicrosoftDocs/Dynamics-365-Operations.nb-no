@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0028d1f64aced1bbff91b18456c81adbb95bce30
-ms.sourcegitcommit: 36857283d70664742c8c04f426b231c42daf4ceb
+ms.openlocfilehash: 14539ed6c00915b7d59a5a3c4870ab6d1a96ad95
+ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "2914824"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "3002526"
 ---
 # <a name="formula-designer-in-electronic-reporting-er"></a>Formeldesigner i elektronisk rapportering (ER)
 
@@ -51,7 +51,7 @@ Du kan åpne **Formeldesigner**-siden når du utfører følgende handlinger:
 - Definerer betingelsene for prosesskontrollvalideringer.
 - Definerer meldingsteksten for prosesskontrollvalideringer.
 
-## <a name="Binding">Databinding</a>
+## <a name="Binding"></a>Databinding
 
 ER-formeldesigneren kan brukes til å definere et uttrykk som transformerer data som mottas fra datakilder, slik at dataene kan angis i dataforbruker på følgende måter ved kjøretid:
 
@@ -69,7 +69,7 @@ Illustrasjonen nedenfor viser hvordan et uttrykk av denne typen kan brukes. I de
 
 Under kjøringen avrunder den utformede formelen `ROUND (Intrastat.AmountMST, 2)`, verdien i **AmountMST**-feltet for hver post i Intrastat-tabellen til to desimalplasser. Den angir så den avrundede verdien i **Transaction.InvoicedAmount**-komponenten i **Avgiftsrapportering**-datamodellen.
 
-## <a name="Transformation">Dataformatering</a>
+## <a name="Transformation"></a>Dataformatering
 
 ER-formeldesigneren kan brukes til å definere et uttrykk som formaterer data som mottas fra datakilder, slik at dataene kan sendes som en del av det genererende elektroniske dokumentet. Du kan ha formatering som må brukes som en vanlig regel som skal brukes på nytt for et format. I så fall kan du innføre denne formateringen én gang i formatkonfigurasjonen, som en navngitt transformasjon som har et formateringsuttrykk. Denne navngitte transformasjonen kan deretter knyttes til mange formatkomponenter der utdata må formateres i henhold til formateringsuttrykket som du opprettet.
 
@@ -87,7 +87,7 @@ Hvis du har en formatering som skal brukes individuelt, kan du introdusere denne
 
 [![Bruke formatering på en individuell komponent](./media/picture-binding-with-formula.jpg)](./media/picture-binding-with-formula.jpg)
 
-## <a name="Validation">Prosessflytkontroll</a>
+## <a name="Validation"></a>Prosessflytkontroll
 
 ER-formeldesigneren kan brukes til å definere uttrykk som styrer prosessflyten for generering av elektroniske dokumenter. Du kan utføre følgende oppgaver:
 
@@ -112,7 +112,7 @@ ER-formeldesigner kan også brukes til å generere et filnavn for et genererende
 
 [![Prosessflytkontroll](./media/picture-file-control.jpg)](./media/picture-file-control.jpg)
 
-## <a name="Enabled">Kontroll av dokumentinnhold</a>
+## <a name="Enabled"></a>Kontroll av dokumentinnhold
 
 ER-formeldesigneren kan brukes til å konfigurere uttrykk som kontrollerer hvilke data som skal plasseres i genererte, elektroniske dokumenter ved kjøring. Uttrykkene kan aktivere eller deaktivere utdataene for bestemte elementer i formatet, avhengig av behandling av data og konfigurert logikk. Disse uttrykkene kan angis for ett enkelt formatelement i **Aktivert**-feltet i **Tilordning**-fanen på **Operasjonsutforming**-siden. Du kan angi uttrykkene som en logisk betingelse som returnerer en *boolsk* verdi:
 
@@ -139,7 +139,7 @@ Illustrasjonen nedenfor viser uttrykk av denne typen. (Versjon 11.12.11 av **ISO
 > 
 > Basert på dette oppsettet vil den genererte meldingen for hver debitorbetaling, **Ustrd** XML-elementet, inneholde enten teksten for betalingsmerknader eller, når denne teksten er tom, en kommadelt liste over fakturanumre som brukes til å utligne betalingen.
 
-## <a name="TestFormula">Validering av konfigurerte formler</a>
+## <a name="TestFormula"></a>Validering av konfigurerte formler
 
 På **Formeldesigner**-siden velger du **Test** for å validere hvordan den konfigurerte formelen fungerer.
 

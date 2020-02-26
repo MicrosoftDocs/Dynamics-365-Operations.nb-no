@@ -1,5 +1,5 @@
 ---
-title: Vanlige spørsmål for Commerce-forhåndsvisningsmiljø
+title: Vanlige spørsmål om miljø for forhåndsvisning av Dynamics 365 Commerce
 description: Dette emnet gir svar på vanlige spørsmål om Microsoft Dynamics 365 Commerce-forhåndsvisningsmiljøet.
 author: v-chgri
 manager: annbe
@@ -17,16 +17,15 @@ ms.search.region: Global
 ms.author: v-chgri
 ms.search.validFrom: 2019-12-10
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 53e593931850d6b8b22bb756d5828f742416aa4d
-ms.sourcegitcommit: 610d5c3efadbaf11752b46f24680af619bcd70a6
+ms.openlocfilehash: 061a160380e500ea52afbc35f0a95fe84d971bcf
+ms.sourcegitcommit: 4ed1d8ad8a0206a4172dbb41cc43f7d95073059c
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "2906099"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "3024758"
 ---
-# <a name="commerce-preview-environment-faq"></a>Vanlige spørsmål for Commerce-forhåndsvisningsmiljø
+# <a name="dynamics-365-commerce-preview-environment-faq"></a>Vanlige spørsmål om miljø for forhåndsvisning av Dynamics 365 Commerce
 
-[!include [banner](includes/preview-banner.md)]
 [!include [banner](includes/banner.md)]
 
 Dette emnet gir svar på vanlige spørsmål om Microsoft Dynamics 365 Commerce-forhåndsvisningsmiljøet.
@@ -83,10 +82,10 @@ Hvis du får problemer når du prøver å få tilgang til Yammer-gruppen, kan du
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 
-[Oversikt over Commerce-forhåndsvisningsmiljø](cpe-overview.md)
+[Oversikt over miljø for forhåndsvisning av Dynamics 365 Commerce](cpe-overview.md)
 
-[Klargjøre et Commerce-forhåndsvisningsmiljø](provisioning-guide.md)
+[Klargjøre et miljø for forhåndsvisning av Dynamics 365 Commerce](provisioning-guide.md)
 
-[Konfigurere et Commerce-forhåndsvisningsmiljø](cpe-post-provisioning.md)
+[Konfigurere et miljø for forhåndsvisning av Dynamics 365 Commerce](cpe-post-provisioning.md)
 
-[Konfigurere valgfrie funksjoner for et Commerce-forhåndsvisningsmiljø](cpe-optional-features.md)
+[Konfigurere valgfrie funksjoner for et miljø for forhåndsvisning av Dynamics 365 Commerce](cpe-optional-features.md)

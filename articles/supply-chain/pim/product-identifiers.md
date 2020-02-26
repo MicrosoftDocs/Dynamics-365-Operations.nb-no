@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: conradv
 ms.dyn365.ops.version: 7.2999999999999998
 ms.search.validFrom: 2017-12-31
-ms.openlocfilehash: 3199bccca19ab8ee4d7503e4a8443fcb05acbb1b
-ms.sourcegitcommit: 4d77d06a07ec9e7a3fcbd508afdffaa406fd3dd8
+ms.openlocfilehash: 230cb7c2fe8f3c1972766a25414bb33a78b37a42
+ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "2934892"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "3004025"
 ---
 # <a name="product-identifiers"></a>Produktidentifikatorer 
 
@@ -88,7 +88,7 @@ På siden **Eksterne varebeskrivelser** kan du knytte kundens eller leverandøre
 | beskrivelse | Navnet som kunden knytter til varen | Navnet som leverandøren knytter til varen |
 | Ekstern varetekst | Kundens varebeskrivelse | Leverandørens varebeskrivelse |
 
-Hvis mange kunder eller leverandører bruker de samme varenumrene (som for eksempel i forbindelse med en kjøpstilknytning eller en detaljhandelsgruppe), kan du opprette grupper med kunder eller leverandører som forenkler vedlikehold av ekstern produktinformasjon.
+Hvis mange kunder eller leverandører bruker de samme varenumrene (som for eksempel i forbindelse med en kjøpstilknytning eller en handelsgruppe), kan du opprette grupper med kunder eller leverandører som forenkler vedlikehold av ekstern produktinformasjon.
 
 - For kundegrupper kan du gå til **Salg** &gt; **Oppsett** &gt; **Varer** &gt; **Ekstern varebeskrivelse** for å opprette og vedlikeholde gruppene og de tilknyttede varenumrene. Hvis du vil knytte kunder til en gruppe, kan du gå til **Kunder** &gt; **Kunder** &gt; **Alle kunder**, og deretter angir du en verdi i feltet **Vare – kundegruppe** i hurtigfanen **Standarder for salgsordre**.
 - For leverandørgrupper går du til **Innkjøp og leverandører** &gt; **Oppsett** &gt; **Ekstern varebeskrivelsesgruppe** for å opprette og vedlikeholde gruppene og de tilknyttede varenumrene. Hvis du vil knytte leverandører til en gruppe, kan du gå til **Leverandører** &gt; **Leverandører** &gt; **Alle leverandører**, og deretter angir du en verdi i feltet **Vare – leverandørgruppe** i hurtigfanen **Bestillingsstandarder**.

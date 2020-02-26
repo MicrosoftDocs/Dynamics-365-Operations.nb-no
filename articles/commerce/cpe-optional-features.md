@@ -1,5 +1,5 @@
 ---
-title: Konfigurere valgfrie funksjoner for et miljø for forhåndsvisning av Commerce
+title: Konfigurere valgfrie funksjoner for et miljø for forhåndsvisning av Dynamics 365 Commerce
 description: Dette emnet forklarer hvordan du konfigurerer valgfrie funksjoner for et Microsoft Dynamics 365 Commerce-forhåndsvisningsmiljø.
 author: psimolin
 manager: annbe
@@ -17,16 +17,16 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-12-10
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 2c4872cdebc414eaa865af025237bd9e1d14bfd2
-ms.sourcegitcommit: 610d5c3efadbaf11752b46f24680af619bcd70a6
+ms.openlocfilehash: 43b23b9ef881b2ab2f3d005d4ba761848a7fa4ed
+ms.sourcegitcommit: 4ed1d8ad8a0206a4172dbb41cc43f7d95073059c
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "2906122"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "3024735"
 ---
-# <a name="configure-optional-features-for-a-commerce-preview-environment"></a>Konfigurere valgfrie funksjoner for et miljø for forhåndsvisning av Commerce
+# <a name="configure-optional-features-for-a-dynamics-365-commerce-preview-environment"></a>Konfigurere valgfrie funksjoner for et miljø for forhåndsvisning av Dynamics 365 Commerce
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 Dette emnet forklarer hvordan du konfigurerer valgfrie funksjoner for et Microsoft Dynamics 365 Commerce-forhåndsvisningsmiljø.
@@ -173,13 +173,13 @@ Følgende tokener erstattes med verdier for hvert produkt i ordren.
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 
-[Oversikt over Commerce-forhåndsvisningsmiljø](cpe-overview.md)
+[Oversikt over miljø for forhåndsvisning av Dynamics 365 Commerce](cpe-overview.md)
 
-[Klargjøre et Commerce-forhåndsvisningsmiljø](provisioning-guide.md)
+[Klargjøre et miljø for forhåndsvisning av Dynamics 365 Commerce](provisioning-guide.md)
 
-[Konfigurere et Commerce-forhåndsvisningsmiljø](cpe-post-provisioning.md)
+[Konfigurere et miljø for forhåndsvisning av Dynamics 365 Commerce](cpe-post-provisioning.md)
 
-[Vanlige spørsmål for Commerce-forhåndsvisningsmiljø](cpe-faq.md)
+[Vanlige spørsmål om miljø for forhåndsvisning av Dynamics 365 Commerce](cpe-faq.md)
 
 [Microsoft Lifecycle Services (LCS)](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-user-guide)
 
@@ -188,5 +188,3 @@ Følgende tokener erstattes med verdier for hvert produkt i ordren.
 [Microsoft Azure-portal](https://azure.microsoft.com/features/azure-portal)
 
 [Dynamics 365 Commerce-webområde](https://aka.ms/Dynamics365CommerceWebsite)
-
-[Hjelperessurser for Dynamics 365 Retail](../retail/index.md)

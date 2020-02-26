@@ -16,12 +16,12 @@ ms.search.industry: Distribution
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6c8e25007cc4a204aeaf73a2e819c129fa8fa29d
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: f38c2ad9561cc1a1c775c27aec54681124cffeec
+ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1563395"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "3004094"
 ---
 # <a name="cross-dock-products-from-receiving-warehouse-to-stores"></a>Direkteoverføre produkter fra mottakende lager til butikker
 
@@ -31,9 +31,9 @@ Denne prosedyren hjelper deg gjennom trinnene med å opprette og behandle en dir
 
 1. Gå til Alle bestillinger.
 2. Velg en bestilling fra listen og klikk koblingen for å åpne den.
-3. Klikk Detaljhandel i handlingsruten.
+3. Klikk Retail og Commerce i handlingsruten.
 4. Klikk Direkteoverføring.
-5. Klikk Rediger.
+5. Klikk Rediger
     * Kategorien kan brukes til å filtrere elementene i Linjer-delen.  
 6. Finn og velg ønsket post i listen.
 7. Skriv inn en verdi i feltet Direkteoverføringsantall for å angi hvor mye av antallet som kjøpes av det valgte produktet, som skal distribueres.

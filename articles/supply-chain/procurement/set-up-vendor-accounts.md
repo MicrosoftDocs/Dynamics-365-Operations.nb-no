@@ -3,7 +3,7 @@ title: Definere leverandørkontoer
 description: Dette emnet beskriver hva slags type informasjon du må spesifisere når du oppretter en ny leverandørkonto.
 author: mkirknel
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 02/03/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c5ab1f10f0874df36d1227e39f2d2146e85de41e
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 63843381207fbe6cb72ac1b5533eda754b1ba55b
+ms.sourcegitcommit: 5457cbec3399d8ed9f87c3a9dc586173b5616c11
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2249404"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "3012451"
 ---
 # <a name="set-up-vendor-accounts"></a>Definere leverandørkontoer
 
@@ -88,7 +88,7 @@ Du kan sette en leverandør på vent for forskjellige transaksjonstyper. Følgen
 -   **Faktura** – Ingen fakturaer kan posteres for leverandøren.
 -   **Alle** – Leverandøren er satt på vent for alle transaksjonstyper. Disse transaksjonstypene inkluderer bestillinger, fakturaer og betalinger.
 -   **Betaling** – Ingen betalinger kan genereres for leverandøren.
--   **Rekvisisjon** – Bare én innkjøpsrekvisisjon kan opprettes. Ingen transaksjoner kan opprettes.
+-   **Rekvisisjon** – Innkjøpsrekvisisjoner kan ikke opprettes for leverandøren, og rekvisisjonslinjer som allerede var opprettet før leverandøren var satt på vent, kan ikke konverteres til en bestilling. Rekvisisjonslinjer for leverandøren blir avbrutt hvis policyen er angitt til å opprette bestillinger automatisk.
 -   **Aldri** – Leverandøren settes aldri på vent for inaktivitet.
 
 Når du setter en leverandør på vent, kan du også angi en årsak og en dato for når statusen på vent avsluttes. Hvis du ikke angir en sluttdato, varer leverandørens på vent-status i det uendelige.

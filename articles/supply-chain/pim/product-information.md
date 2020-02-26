@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 21ee0b835cbe6cc3a238247be29f8a8d3de42a8d
-ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
+ms.openlocfilehash: bdbff802ca85f7cc568efb8a1aacaf6f8fb2874a
+ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "2570754"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "3004002"
 ---
 # <a name="product-information-overview"></a>Oversikt over produktinformasjon
 
@@ -32,7 +32,7 @@ ms.locfileid: "2570754"
 
 Dette emnet inneholder informasjon om produktinformasjonsadministrasjon. Behandling av produktinformasjon fungerer sammen med en delt produktdefinisjon, -kategorisering og -identifikatorer på tvers av alle juridiske enheter, og bestemte konfigurasjoner av et produkt, slik at den passer til forretningsprosessene. 
 
-Produktinformasjon er ryggraden i forsyningskjeden og detaljhandelsprogrammer på tvers av alle bransjer. Den refererer til prosesser og teknologier som fokuserer på sentral administrasjon av informasjon om produkter (for eksempel på tvers av forsyningskjeder). Det er svært viktig at delte produktdefinisjoner, dokumentasjon, attributter og identifikatorer brukes. I de forskjellige modulene i en bedriftsløsning kreves produktspesifikk informasjon og konfigurasjon for å behandle forretningsprosesser som er knyttet til bestemte produkter, produktfamilier eller produktkategorier.
+Produktinformasjon er ryggraden i forsyningskjeden og handelsprogrammer på tvers av alle bransjer. Den refererer til prosesser og teknologier som fokuserer på sentral administrasjon av informasjon om produkter (for eksempel på tvers av forsyningskjeder). Det er svært viktig at delte produktdefinisjoner, dokumentasjon, attributter og identifikatorer brukes. I de forskjellige modulene i en bedriftsløsning kreves produktspesifikk informasjon og konfigurasjon for å behandle forretningsprosesser som er knyttet til bestemte produkter, produktfamilier eller produktkategorier.
 
 ## <a name="product-definition"></a>Produktdefinisjon
 

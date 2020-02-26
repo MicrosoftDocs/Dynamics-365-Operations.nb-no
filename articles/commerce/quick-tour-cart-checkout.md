@@ -17,16 +17,16 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 347db3af36521e11dc70d5188dcc54b07efa1fbe
-ms.sourcegitcommit: 295d940a345879b3dfc5991e387b91c7257019ea
+ms.openlocfilehash: 07905b9a843eb42d3031dcc80b4e185c122a9e50
+ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2697848"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "3002941"
 ---
 # <a name="overview-of-cart-and-checkout-pages"></a>Oversikt over sider for handlekurv og kasse
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 Dette emnet inneholder en oversikt over sider for handlekurv og kasse i Microsoft Dynamics 365 Commerce.
@@ -65,11 +65,11 @@ Hoveddelen av utsjekkingssiden er der all ordreinformasjon samles inn. Denne inf
 
 ### <a name="shipping-address"></a>Leveringsadresse
 
-Det kreves en forsendelsesadresse hvis varer må sendes. Formatet for forsendelsesadresser for hver nasjonal innstilling kan konfigureres i Dynamics 365 Retail. Hvis varene for eksempel skal leveres til USA, må leveringsadressen inneholde en gateadresse, stat og postnummer (ZIP). Noe grunnleggende inndatavalidering utføres for felt for leveringsadresse, for eksempel validering for alfanumeriske tegn, maksimumslengde og tall. Selv om selve adressen ikke er bekreftet, kan denne verifiseringen utføres ved hjelp av tilpassede tredjepartstjenester.
+Det kreves en forsendelsesadresse hvis varer må sendes. Formatet for forsendelsesadresser for hver nasjonal innstilling kan konfigureres i Dynamics 365 Commerce. Hvis varene for eksempel skal leveres til USA, må leveringsadressen inneholde en gateadresse, stat og postnummer (ZIP). Noe grunnleggende inndatavalidering utføres for felt for leveringsadresse, for eksempel validering for alfanumeriske tegn, maksimumslengde og tall. Selv om selve adressen ikke er bekreftet, kan denne verifiseringen utføres ved hjelp av tilpassede tredjepartstjenester.
 
 Leveringsadressen brukes for alle varene i handlekurven som "forsendelse"-alternativet er valgt for. Hvis du bruker utsjekkingsflyten som er oppgitt i startpakken på nettet, kan ikke individuelle handlekurvvarer sendes til forskjellige adresser. Hvis du trenger denne funksjonen, kan den implementeres ved hjelp av tilpasning av kassemodulene.
 
-Når leveringsadressen er angitt, vises forsendelsesmetodene som er tilgjengelige fra Dynamics 365 Commerce-nettbutikken. Forsendelsesmetodene og adressene de støtter, kan konfigureres i Retail.
+Når leveringsadressen er angitt, vises forsendelsesmetodene som er tilgjengelige fra Dynamics 365 Commerce-nettbutikken. Forsendelsesmetodene og adressene de støtter, kan konfigureres i Commerce.
 
 ### <a name="payment"></a>Betaling
 

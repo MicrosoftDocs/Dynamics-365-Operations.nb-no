@@ -17,25 +17,25 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: d9c0f329d21cdda5c36a39a8c602d5925b720f52
-ms.sourcegitcommit: ef3a1d7527311d00b69a1072ae5eb021ce68034c
+ms.openlocfilehash: d4c495fc6dfe4aa6561a1bb703253ef8ec71dc13
+ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "2945749"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "3003080"
 ---
 # <a name="enrich-a-product-page"></a>Supplere en produktside
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 Dette emnet beskriver hvordan du supplerer en produktside i Microsoft Dynamics 365 Commerce.
 
 ## <a name="overview"></a>Oversikt
 
-Som standard bruker webområdet en generell side til å vise produktdata. Denne siden inneholder grunnleggende informasjon om produktet og kontrollene som kreves for å selge den. Du kan imidlertid supplere informasjonen som kommer fra Retail Server, med tilleggsbilder eller -tekst for et bestemt produkt. Denne prosessen kalles å supplere produktsiden.
+Som standard bruker webområdet en generell side til å vise produktdata. Denne siden inneholder grunnleggende informasjon om produktet og kontrollene som kreves for å selge den. Du kan imidlertid supplere informasjonen som kommer fra Commerce Scale Unit, med tilleggsbilder eller -tekst for et bestemt produkt. Denne prosessen kalles å supplere produktsiden.
 
-I mange tilfeller vil du ha bruk for et bestemt tilleggsinnhold for produktene. Når du går til **Retail** i redigeringsverktøyet, vil du se en liste over produkter fra kanalen som er tilordnet området. I denne listen viser kolonnen for **Supplert** om produktsiden for et produkt er supplert. Hvis det vises et merke i kolonnen, finnes det en supplert produktside for produktet. Hvis det ikke vises noen avmerking, brukes standard produktside og -innhold for produktet. Du kan forhåndsvise både supplerte og ikke-supplerte produktsider ved å velge et produktnavn fra listen.
+I mange tilfeller vil du ha bruk for et bestemt tilleggsinnhold for produktene. Når du går til **Detaljhandel og handel** i redigeringsverktøyet, vil du se en liste over produkter fra kanalen som er tilordnet området. I denne listen viser kolonnen for **Supplert** om produktsiden for et produkt er supplert. Hvis det vises et merke i kolonnen, finnes det en supplert produktside for produktet. Hvis det ikke vises noen avmerking, brukes standard produktside og -innhold for produktet. Du kan forhåndsvise både supplerte og ikke-supplerte produktsider ved å velge et produktnavn fra listen.
 
 ## <a name="enrich-a-product-page"></a>Supplere en produktside
 

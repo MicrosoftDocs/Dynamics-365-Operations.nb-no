@@ -1,9 +1,9 @@
 ---
-title: Varselmodul
-description: Dette emnet dekker varselmoduler og beskriver hvordan du legger dem til områdesider i Microsoft Dynamics 365 Commerce.
+title: Kampanjebannermodul
+description: Dette emnet dekker kampanjebannermoduler og beskriver hvordan du legger dem til områdesider i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
-ms.date: 10/31/2019
+ms.date: 01/23/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -18,55 +18,66 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 82138dd7f0934f732215f67a3726638eb87075d4
-ms.sourcegitcommit: 3a4e137ef3a96ba0a58c5352f4a3b57467ace9ae
+ms.openlocfilehash: da5e220e4578d1064eb7b627b441d3f585b3c095
+ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/11/2019
-ms.locfileid: "2785358"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "3025626"
 ---
-# <a name="alert-module"></a>Varselmodul
+# <a name="promo-banner-module"></a>Kampanjebannermodul
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
-Dette emnet dekker varselmoduler og beskriver hvordan du legger dem til områdesider i Microsoft Dynamics 365 Commerce.
+Dette emnet dekker kampanjebannermoduler og beskriver hvordan du legger dem til områdesider i Microsoft Dynamics 365 Commerce.
 
 ## <a name="overview"></a>Oversikt
 
-En varselmodul brukes til å vise meldinger med innebygd informasjon på en side. Varselmoduler støtter en tekstmelding og en kobling. De kan brukes til å vise kampanjer på hele området som vises på alle sider av et e-handelsområde. 
+Kampanjebannermoduler brukes til å vise meldinger med innebygd informasjon på en side. De kan brukes til å vise kampanjer på hele området som vises på alle sider av et e-handelsområde. 
 
-Varselmoduler drives av data fra et innholdsbehandlingssystem (CMS) og kan plasseres på en hvilken som helst side.
+Kampanjebannermoduler støtter en tekstmelding og en kobling. Hvis det legges til flere meldinger i en kampanjebannermodul, blir den en roterende karusellbanner som lar kundene gå gjennom alle meldingene. 
 
-## <a name="examples-of-alert-modules-in-e-commerce"></a>Eksempler på varselmoduler i e-handel
+Kampanjebannermoduler drives av data fra et innholdsbehandlingssystem (CMS) og kan plasseres på en hvilken som helst side.
 
-Varselmoduler kan brukes på områdehodet for å angi kampanjer eller meldinger på hele området. Her er noen eksempler:
+## <a name="usage-examples-of-promo-banners-in-e-commerce"></a>Eksempler på bruk av kampanjebannere i e-handel
+
+Kampanjebannere kan brukes i områdehodet til å vise kampanjer eller meldinger på hele området, som i følgende eksempler.
 
 "Årlige salg avsluttes om 10 dager"
 
 "Gjør store besparelse på skolestartsalget. Handle nå. "
 
-## <a name="alert-module-properties"></a>Egenskaper for varselmodul
+## <a name="promo-banner-module-properties"></a>Egenskaper for kampanjebannermodul
 
-| Egenskapsnavn  | Verdi                              | Beskrivelse |
-|----------------|------------------------------------|-------------|
-| Tekst           | Tekst                               | Tekstmeldingen som vises i varselmodulen. |
-| Tekstjustering | **Høyre**, **Venstre** eller **Midtstilt** | En verdi som definerer hvordan tekst justeres i varselmodulen. |
-| Forkast varsel  | **Sann** eller **Usann**              | Hvis verdien settes til **Sann**, kan kunden forkaste varselet. |
-| Sammenkobling           | URL-adresse                                | URL-adresse for valgfri kobling. |
+| Egenskapsnavn             | Value                              | Beskrivelse |
+|---------------------------|------------------------------------|-------------|
+| Bannermeldinger           | Tekst og koblinger                     | En matrise med tekst og koblinger. |
+| Automatisk avspilling                  | **Sann** eller **Usann**              | En verdi som angir om meldinger gås gjennom automatisk hvis flere meldinger er konfigurert. |
+| Intervall for lysbildeovergang | Et tall i millisekunder (ms)      | Intervallet som brukes til å bla gjennom meldinger. |
+| Tillat forkastelse             | **Sann** eller **Usann**              | Hvis verdien settes til **Sann**, kan kundene forkaste varselet. |
+| Vis karusellflipper     | **Sann** eller **Usann**              | En verdi som angir om karusellflipperne skal vises, slik at kunder manuelt kan gå gjennom flere bannerelementer. |
+| Tekstjustering            | **Høyre**, **Venstre** eller **Midtstilt** | Tekstjusteringen i kampanjebannermodulen. |
+| Sammenkobling                      | En URL                              | URL-adresse for valgfri kobling. |
 
-## <a name="add-an-alert-module-to-a-page"></a>Legg til en varselmodul på en side 
+## <a name="add-a-promo-banner-module-to-a-page"></a>Legge til en kampanjebannermodul på en side 
 
-Hvis du vil legge til en varselmodul på en side og angi de nødvendige egenskapene, følger du disse trinnene.
+Hvis du vil legge til en kampanjebannermodul på en side og angi de nødvendige egenskapene, følger du disse trinnene.
 
-1. Opprett en sidemal som heter **varselmal**.
-1. I **Hoved**-sporet på standardsiden legger du til en varselmodul.
+1. Opprett en sidemal som heter **Kampanjebannermal**.
+1. Under **Sideoppsett** legger du til en **Standardside**-modul i **Meldingstekst**-sporet. 
 1. Sjekk inn malen, og publiser den. 
-1. Bruk varselmalen du nettopp opprettet, for å opprette en side som heter **varselside**. 
-1. I **Hoved**-sporet på den nye siden legger du til en varselmodul.
-1. Skriv inn varselteksten i innstillingene for varselmodulen. Du kan redigere de andre egenskapene hvis du vil tilpasse varselmodulen ytterligere.
-1. Lagre og forhåndsvis siden. Øverst på siden vil du se et varsel som inneholder teksten du la til.
-1. Sjekk inn siden, og publiser den. 
+1. Bruk malen du nettopp opprettet, for å opprette en side som heter **Kampanjebannerside**. 
+1. I **Hoved**-sporet på den nye siden legger du til en containermodul. 
+1. I ruten til høyre setter du **Bredde**-verdien til **Fyll container**.
+1. Under **Sideoppsett** legger du til en kampanjebannermodul i containermodulen.
+1. Legg til en eller flere bannermeldinger i innstillingene for bannermodulen. Hver melding kan inneholde tekst sammen med en kobling. Du kan redigere de andre egenskapene hvis du vil tilpasse modulen ytterligere.
+1. Lagre og forhåndsvis siden. Øverst på siden vil du se et varsel som angir teksten du la til.
+1. Fullfør redigeringen av siden, og publiser den. 
+
+> [!NOTE]
+> Et kampanjebanner brukes vanligvis i sporet for sideoverskrift eller et spor for underoverskrift.
+
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 
@@ -74,12 +85,8 @@ Hvis du vil legge til en varselmodul på en side og angi de nødvendige egenskap
 
 [Karusellmodul](add-carousel.md)
 
-[Innholdsrik blokk-modul](add-content-rich-block.md)
+[Tekstblokkmodul](add-content-rich-block.md)
 
-[Modul for innholdsplassering](add-content-placement-modules.md)
-
-[Funksjonsmodul](add-feature-module.md)
-
-[Hovedbannermodul](add-hero-module.md)
+[Innholdsblokkmodul](add-hero-module.md)
 
 [Videospillermodul](add-video-player.md)

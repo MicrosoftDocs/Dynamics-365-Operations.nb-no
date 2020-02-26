@@ -15,19 +15,19 @@ ms.search.region: Global
 ms.author: tjvass
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 1a357c4623f4f9dc441fe328ec0d5481c14ae4af
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: de85bf52d8e3415549db64501b2435ebd7377fef
+ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2771639"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "3025860"
 ---
 # <a name="add-analytics-to-workspaces-by-using-power-bi-embedded"></a>Legge til analyse i arbeidsområder ved hjelp av Power BI Embedded
 
 [!include [banner](../includes/banner.md)]
 
 > [!NOTE]
-> Denne funksjonen støttes i Finance and Operations (versjon 7.2 og nyere).
+> Denne funksjonen støttes i Finance and Operations (versjon 7.2 og senere).
 
 ## <a name="introduction"></a>Innledning
 Dette emnet forklarer hvordan du bygger inn en Microsoft Power BI-rapport i kategorien **Analyse** i et arbeidsområde. For eksempelet som er angitt her, vil vi utvide arbeidsområdet **Reservasjonsbehandling** i programmet Fleet Management til å bygge inn et analytisk arbeidsområde på en **Analyse**-kategori.
@@ -111,7 +111,7 @@ Gjør følgende for å legge til forretningslogikk som initialiserer rapportvisn
 2. Trykk F7 for å få tilgang til koden bak kodedefinisjonen.
 3. Legg til følgende X++-kode
 
-    ```
+    ```xpp
     [Form] 
     public class FMClerkWorkspace extends FormRun
     {
@@ -156,7 +156,7 @@ Du har nå fullført oppgaven med å legge til forretningslogikk for å initiali
 Denne delen gir informasjon om hjelpeklassen som brukes til å bygge inn en Power BI-rapport (.pbix-ressurs) i en skjemagruppekontroll.
 
 #### <a name="syntax"></a>Syntaks
-```
+```xpp
 public static void initializeReportControl(
     str                 _resourceName,
     FormGroupControl    _formGroupControl,

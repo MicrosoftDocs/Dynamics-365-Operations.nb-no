@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 2c7ee610c6e3c446a4bcc9d6d46ca72dd71cb23c
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 45a2335d7a661ddc1d8907c56ae8193387f44e26
+ms.sourcegitcommit: 4e62c22b53693c201baa646a8f047edb5a0a2747
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2771404"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "3030872"
 ---
 # <a name="specify-a-custom-storage-location-for-generated-documents"></a>Angi et egendefinert lagringssted for genererte dokumenter
 
@@ -56,7 +56,7 @@ I gjeldende topologi [oppretter du et nytt ER-format](tasks/er-format-configurat
 
 Hvis du vil angi hvordan dokumenter som et ER-format genererer, rutes, må du konfigurere [Mål for elektronisk rapportering (ER)](electronic-reporting-destinations.md). I hvert ER-mål som konfigureres til å lagre genererte dokumenter som filer, må du angi en dokumenttype for dokumentbehandlingsrammeverket. Ulike dokumenttyper kan brukes til å rute dokumenter som ulike ER-formater genererer.
 
-1. Legg til en ny [dokumenttype](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/organization-administration/configure-document-management) for ER-formatet som du opprettet eller importerte tidligere. I illustrasjonen nedenfor er dokumenttypen **FileX**.
+1. Legg til en ny [dokumenttype](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/organization-administration/configure-document-management) for ER-formatet som du opprettet eller importerte tidligere. I illustrasjonen nedenfor er dokumenttypen **FileX**.
 2. For å skille denne dokumenttypen fra andre dokumenttyper inkluderes et bestemt nøkkelord i navnet. I illustrasjonen nedenfor er navnet **(LOKAL) mappe**.
 3. I **Klasse**-feltet angir du **Tilknytt fil**.
 4. I **Gruppe**-feltet angir du **Fil**.
@@ -70,7 +70,7 @@ Hvis du vil angi hvordan dokumenter som et ER-format genererer, rutes, må du ko
 
 Gå gjennom koden for **insertFile()**-metoden for **ERDocuManagement**-klasse. Legg merke til at **AttachingFile()**-hendelsen starter når den genererte filen er knyttet til en post.
 
-```
+```xpp
 /// <summary>
 /// Inserts file as attachment in Document Management.
 /// </summary>
@@ -131,7 +131,7 @@ public DocuRef insertFile(
     1. Lagre genererte filer i en mappe i det lokale filsystemet på serveren som kjører tjenesten Application Object Server (AOS).
     2. Lagre disse genererte filene bare når den nye dokumenttypen (for eksempel **FileX**-typen med nøkkelordet "(LOKAL)" i navnet) brukes når en fil knyttes til posten i ER-kjøringsjobbloggen.
 
-    ```
+    ```xpp
     class ERDocuSubscriptionSample
     {
         void new()

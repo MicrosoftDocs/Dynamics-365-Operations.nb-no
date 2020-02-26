@@ -1,5 +1,5 @@
 ---
-title: Undersøke/løse unntak
+title: Undersøke eller løse unntak
 description: Leverandørfakturapolicyer kjøres når du posterer en leverandørfaktura ved hjelp av Leverandørfaktura-siden, og når du åpner siden for brudd på leverandørfakturapolicy.
 author: abruer
 manager: AnnBe
@@ -16,14 +16,14 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: a2f2e7d401e97aeab9dbc74f65e1a0c03eb0c880
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 68694e08550083c38feb4389f82d83c535e978c3
+ms.sourcegitcommit: 9168621ca9b5061c65f3e05dbc5918b6a11d53d5
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2189344"
+ms.lasthandoff: 01/31/2020
+ms.locfileid: "3000235"
 ---
-# <a name="researchresolve-exceptions"></a>Undersøke/løse unntak
+# <a name="research-or-resolve-exceptions"></a>Undersøke eller løse unntak
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
