@@ -3,8 +3,12 @@
   items:
     - name: Nyheter
       items:
-        - name: Nyheter eller endringer i Personale?
+        - name: Nyheter eller endringer i Human Resources
           href: hr-admin-whats-new.md
+        - name: 18. februar 2020
+          href: hr-whats-new-2020-02-18.md
+        - name: 12. februar 2020
+          href: hr-whats-new-2020-02-12.md
         - name: 7. februar 2020
           href: hr-whats-new-2020-02-07.md
         - name: 3. februar 2020
@@ -17,7 +21,7 @@
           href: hr-admin-system-requirements.md
         - name: Konfigurere og administrere forekomster
           items:
-            - name: Klargjøre Personale
+            - name: Klargjøre Human Resources
               href: hr-admin-setup-provision.md
             - name: Kopier en forekomst
               href: hr-admin-setup-copy-instance.md
@@ -105,7 +109,7 @@
               href: ../fin-ops-core/dev-itpro/user-interface/task-recorder.md?toc=/dynamics365/human-resources/toc.json
             - name: Lage dokumentasjon eller opplæring med Oppgaveregistrering
               href: ../fin-ops-core/dev-itpro/user-interface/task-recorder-training-docs.md?toc=/dynamics365/human-resources/toc.json
-        - name: Feilsøke Personale
+        - name: Feilsøke Human Resources
           items:
             - name: Få kundestøtte
               href: hr-admin-troubleshooting-support.md
@@ -125,7 +129,7 @@
               href: hr-admin-troubleshooting-task-guide.md
             - name: Tilgang til private adresser etter sikkerhetsrolle
               href: hr-admin-troubleshooting-private-addresses.md
-            - name: Personale vises ikke i Dynamics 365-apper
+            - name: Human Resources vises ikke i Dynamics 365-apper
               href: hr-admin-troubleshooting-not-in-apps.md
             - name: Rapporteringsalternativer
               href: hr-admin-troubleshooting-reporting.md
@@ -179,13 +183,13 @@
       items:
         - name: Oversikt
           href: hr-hrpro-overview.md
-        - name: Konfigurere Personale
+        - name: Konfigurere Human Resources
           items:
-            - name: Konfigurere parametere for Personale
+            - name: Konfigurere parametere for Human Resources
               href: hr-setup-parameters.md
-            - name: Konfigurere delte parametere for Personale
+            - name: Konfigurere delte parametere for Human Resources
               href: hr-setup-shared-parameters.md
-            - name: Konfigurere arbeidsflyter for Personale
+            - name: Konfigurere arbeidsflyter for Human Resources
               href: hr-setup-workflows.md
             - name: Forstå felt for dato og klokkeslett
               href: hr-setup-date-time-fields.md

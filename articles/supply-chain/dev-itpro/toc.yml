@@ -456,8 +456,6 @@
           items:
             - name: Oversikt over å opprette modeller og datamodellelementer
               href: ../../dev-itpro/dev-tools/create-data-model-elements.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
-            - name: Gi navn til retningslinjer for utvidelser
-              href: ../../dev-itpro/extensibility/NamingGuidelines.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
             - name: Deaktivere modelltilpassings- og avskrivningsfunksjonalitet
               href: ../../dev-itpro/dev-tools/lock-models.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
         - name: Rapport for tilpassingsanalyse
@@ -674,7 +672,7 @@
               href: ../../dev-itpro/extensibility/customization-overlayering-extensions.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
         - name: Nyheter
           items:
-            - name: Nyheter eller endringer for utvidelsesmulighet
+            - name: Hva er nytt eller endret for utvidelsesmulighet
               href: ../../dev-itpro/extensibility/extensibility-new.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
             - name: Endringer i utvidelsesmulighet versjon 10.0.3
               href: ../../dev-itpro/extensibility/extensibility-changes-10-3.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
@@ -862,7 +860,7 @@
           href: ../../dev-itpro/gdpr/gdpr-extend-person-search-report.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
         - name: Administrere tilgang til sensitive data
           href: ../../dev-itpro/gdpr/gdpr-auditing-sensitive-data.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
-        - name: Svare på forespørsler om personlige data ved hjelp av Personale
+        - name: Svare på forespørsler om personlige data ved hjelp av Human Resources
           href: ../../dev-itpro/gdpr/respond-dsr-request-talent.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
         - name: Svare på forespørsler om personlige data i AX 2012
           href: ../../dev-itpro/gdpr/gdpr-ax2012.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
