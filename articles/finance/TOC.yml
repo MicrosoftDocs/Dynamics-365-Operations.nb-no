@@ -150,6 +150,8 @@
                   href: ../fin-ops-core/fin-ops/get-started/personalize-user-experience.md?toc=/dynamics365/finance/toc.json
                 - name: Lagrede visninger
                   href: ../fin-ops-core/fin-ops/get-started/saved-views.md?toc=/dynamics365/finance/toc.json
+                - name: Rutenettfunksjoner
+                  href: ../fin-ops-core/fin-ops/get-started/grid-capabilities.md?toc=/dynamics365/finance/toc.json
                 - name: Opprette og arbeide med egendefinerte felt
                   href: ../fin-ops-core/fin-ops/get-started/user-defined-fields.md?toc=/dynamics365/finance/toc.json
                 - name: Bygge inn PowerApps-apper
@@ -940,6 +942,8 @@
                   href: general-ledger/tasks/set-up-sales-tax-groups-item-sales-tax-groups.md
                 - name: Definere mva-rapporteringskoder
                   href: general-ledger/tasks/set-up-sales-tax-reporting-codes.md
+                - name: Støtte for dobbel valuta for merverdiavgift
+                  href: general-ledger/dual-currency-for-tax.md
                 - name: Mva-spesifikasjon etter finanstransaksjonsrapport
                   href: general-ledger/Sales-tax-specification-by-ledger-transaction-report.md
                 - name: Definere mva-utligningsperioder
@@ -1100,8 +1104,10 @@
                   href: public-sector/tasks/set-up-derived-financial-hierarchy-public-sector.md
                 - name: Definere rentefordeling for kassakontoer
                   href: public-sector/interest-distribution.md
-            - name: Innkjøp og sondering i offentlig sektor
+            - name: Innkjøp og leverandører i offentlig sektor
               href: public-sector/procurement-sourcing-public-sector.md
+            - name: Beregne leveringsdatoen for en linje basert på leveringstiden
+              href: public-sector/po-delivery-date.md
             - name: Sikkerhetsroller i offentlig sektor
               href: public-sector/security-roles-public-sector.md
             - name: Midler i offentlig sektor
@@ -1298,6 +1304,8 @@
                   href: localizations/latam-bra-complementary-information-icms-st-sped-fiscal-2020-layout-014.md
                 - name: SPED-regnskap – oppsett 014
                   href: localizations/latam-bra-sped-fiscal-layout-014.md
+                - name: Angi SPED EFD-bidrag
+                  href: localizations/latam-bra-sped-contributions.md
                 - name: Parametere for juridiske enheter
                   href: localizations/latam-bra-legal-entity-parameters.md
                 - name: Definere parametere for juridisk enhet
@@ -2575,15 +2583,15 @@
                   href: localizations/noam-usa-year-end-1099-reporting.md
                 - name: Skjema 1099 for offentlig sektor
                   href: localizations/noam-usa-form-1099-public-sector.md
-        - name: Personale
+        - name: Human Resources
           items:
-            - name: Oversikt over personale
+            - name: Oversikt over Human Resources
               href: ../fin-ops-core/fin-ops/hr/hr-landing-page.md
-            - name: Konfigurere Personale
+            - name: Konfigurere Human Resources
               items:
-                - name: Konfigurere parametere for Personale
+                - name: Konfigurere parametere for Human Resources
                   href: ../human-resources/hr-setup-parameters.md?toc=/dynamics365/finance/toc.json
-                - name: Konfigurere delte parametere for Personale
+                - name: Konfigurere delte parametere for Human Resources
                   href: ../human-resources/hr-setup-shared-parameters.md?toc=/dynamics365/finance/toc.json
                 - name: Konfigurere arbeidsflyter for Personale
                   href: ../human-resources/hr-setup-workflows.md?toc=/dynamics365/finance/toc.json
@@ -2793,7 +2801,7 @@
                   href: ../fin-ops-core/dev-itpro/analytics/purchase-content-pack-for-power-bi.md?toc=/dynamics365/finance/toc.json
                 - name: Rekruttering
                   href: ../fin-ops-core/dev-itpro/analytics/recruiting-analysis-power-bi-content-pack.md?toc=/dynamics365/finance/toc.json
-                - name: 'Resultat for detaljhandelskanal '
+                - name: Resultat for Retail-kanal
                   href: ../fin-ops-core/dev-itpro/analytics/retail-channel-performance-dashboard-power-bi-data.md?toc=/dynamics365/finance/toc.json
                 - name: Resultat av salg og fortjeneste
                   href: ../fin-ops-core/dev-itpro/analytics/sales-profitability-performance-content-pack.md?toc=/dynamics365/finance/toc.json
@@ -2803,13 +2811,15 @@
                   href: ../fin-ops-core/dev-itpro/analytics/warehouse-power-bi-content.md?toc=/dynamics365/finance/toc.json
                 - name: Metrikk for arbeidsstyrke
                   href: ../fin-ops-core/dev-itpro/analytics/workforce-analysis-power-bi-content-pack.md?toc=/dynamics365/finance/toc.json
-            - name: Rapportere og skrive ut og dokumenter
+            - name: Rapportere og skrive ut dokumenter
               items:
                 - name: Oversikt over dokumentrapporteringstjenester
                   href: ../fin-ops-core/dev-itpro/analytics/document-reporting-services.md?toc=/dynamics365/finance/toc.json
+                - name: Skrifter som støttes
+                  href: ../fin-ops-core/dev-itpro/analytics/supported-fonts.md?toc=/dynamics365/finance/toc.json
                 - name: Konfigurere SSRS for lokale distribusjoner
                   href: ../fin-ops-core/dev-itpro/analytics/configure-ssrs-on-premises.md?toc=/dynamics365/finance/toc.json
-                - name: Skriver ut
+                - name: Utskrift
                   items:
                     - name: Oversikt over utskrift av dokument
                       href: ../fin-ops-core/dev-itpro/analytics/print-documents.md?toc=/dynamics365/finance/toc.json
@@ -3686,6 +3696,4 @@
     - name: Dynamics 365 Supply Chain Management
       href: ../supply-chain/index.md
     - name: Dynamics 365 Commerce
-      href: ../commerce/index.md
-    - name: Dynamics 365 Retail
       href: ../commerce/index.md

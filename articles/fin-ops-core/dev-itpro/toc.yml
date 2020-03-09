@@ -45,7 +45,11 @@
                 - name: Platform update 15 (mars 2018)
                   href: ../fin-ops/get-started/whats-new-platform-update-15.md
             - name: Funksjoner som er fjernet eller avskrevet
-              href: migration-upgrade/deprecated-features.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.yml
+              items:
+                - name: Fjernede eller avskrevne Platform-funksjoner
+                  href: get-started/removed-deprecated-features-platform-updates.md
+                - name: Fjernede eller avskrevne funksjoner i tidligere versjoner
+                  href: migration-upgrade/deprecated-features.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.yml
             - name: AX 2012-funksjoner som er utsatt
               href: ../fin-ops/get-started/ax-2012-features-not-implemented-but-not-deprecated.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.yml
             - name: Funksjoner som ikke er implementert i lokale distribusjoner
@@ -144,7 +148,9 @@
                       href: data-entities/data-integration-cds.md
                     - name: Synkron toveisintegrering
                       items:
-                        - name: Dataintegrering nesten i sanntid
+                        - name: Startside for dobbel skriving
+                          href: data-entities/dual-write/dual-write-home-page.md
+                        - name: Oversikt over dobbel skriving
                           href: data-entities/dual-write/dual-write-overview.md
                         - name: Organisasjonshierarki på Common Data Service
                           href: data-entities/dual-write/organization-mapping.md
@@ -924,7 +930,7 @@
                   href: gdpr/gdpr-extend-person-search-report.md
                 - name: Administrere tilgang til sensitive data
                   href: gdpr/gdpr-auditing-sensitive-data.md
-                - name: Svare på forespørsler om personlige data ved hjelp av Personale
+                - name: Svare på forespørsler om personlige data ved hjelp av Human Resources
                   href: gdpr/respond-dsr-request-talent.md
                 - name: Svare på forespørsler om personlige data i AX 2012
                   href: gdpr/gdpr-ax2012.md
@@ -940,7 +946,7 @@
                   href: lifecycle-services/lcs-works-lcs.md
                 - name: LCS for partnere
                   href: lifecycle-services/getting-started-lcs.md
-                - name: Nyheter
+                - name: Nyheter eller endringer i Lifecycle Services
                   href: lifecycle-services/whats-new-lcs.md
                 - name: Kjente problemer
                   href: lifecycle-services/known-issues.md
@@ -1685,6 +1691,4 @@
     - name: Dynamics 365 Finance
       href: ../../finance/index.md
     - name: Dynamics 365 Commerce
-      href: ../../commerce/index.md
-    - name: Dynamics 365 Retail
       href: ../../commerce/index.md
