@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: de0981d3200c2b1d62cab7600d2382bd11dd4b20
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 5501f4d39709990eb352511477b1427fb265afde
+ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3002249"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "3057839"
 ---
 # <a name="cloud-powered-search-overview"></a>Oversikt over skybaserte søk
 
@@ -33,7 +33,7 @@ Dette emnet gir en oversikt over skydrevne søk i Microsoft Dynamics 365 Commerc
 
 ## <a name="overview"></a>Oversikt
 
-Produktoppdaging bidrar til å garantere at kunder raskt og enkelt kan finne produkter ved å bla gjennom kategorier, søke og filtrere. Forhandlere vurderer produktgjenkjenning som et primært verktøy for kundeinteraksjon på tvers av alle detaljhandelskanaler.
+Produktoppdaging bidrar til å garantere at kunder raskt og enkelt kan finne produkter ved å bla gjennom kategorier, søke og filtrere. Forhandlere vurderer produktgjenkjenning som et primært verktøy for kundeinteraksjon på tvers av alle kanaler.
 
 Kundene er vant til nesten umiddelbare svartider i websøkemotorer, avanserte webområder for e-handel, sosiale apper, automatiske forslag som vises når de skriver inn søkeord, filterbasert navigasjon og utheving. Hvis kunder ikke finner produktet de leter etter raskt nok i én e-handelsbutikk, vil de ikke nøle med å gå til en annen e-handelsbutikk.
 

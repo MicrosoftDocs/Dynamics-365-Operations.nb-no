@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 51d344d7b7a792d0cdf3eeb7f5c6e1a9b2b8bf19
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: ec64cb8a7c490c6798a897fd20a56e5af5c8be3a
+ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3023504"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "3057943"
 ---
 # <a name="connect-peripherals-to-the-point-of-sale-pos"></a>Koble eksterne enheter til salgsstedet
 
@@ -43,7 +43,7 @@ Flere komponenter brukes til å definere relasjonene mellom en butikk, kasser p�
 
 Navigasjon: Klikk på **Detaljhandel og handel** &gt; **Kanaloppsett** &gt; **Oppsett av salgssted** &gt; **Kasser**.
 
-Kassen på salgsstedet er en enhet som brukes til å definere egenskapene til en bestemt forekomst av salgsstedet. Disse egenskapene inkluderer maskinvareprofilen eller oppsettet for detaljhandelsenheter som skal brukes i kassen, butikken som kassen er tilordnet og den visuelle opplevelsen for brukeren som logger på kassen.
+Kassen på salgsstedet er en enhet som brukes til å definere egenskapene til en bestemt forekomst av salgsstedet. Disse egenskapene inkluderer maskinvareprofilen eller oppsettet for eksterne enheter som skal brukes i kassen, butikken som kassen er tilordnet og den visuelle opplevelsen for brukeren som logger på kassen.
 
 ### <a name="devices"></a>Enheter
 
@@ -67,7 +67,7 @@ En maskinvareprofil identifiserer maskinvaren som er koblet til en kasse på sal
 
 ### <a name="hardware-station"></a>Hardware Station
 
-Navigasjon: Klikk på **Detaljhandel og handel** &gt; **Kanaler** &gt; **Detaljhandelsbutikker** &gt; **Alle detaljhandelsbutikker**. Velg en butikk, og klikk deretter hurtigfanen **Maskinvarestasjoner**.
+Navigasjon: Klikk på **Detaljhandel og handel** &gt; **Kanaler** &gt; **Butikker** &gt; **Alle butikker**. Velg en butikk, og klikk deretter hurtigfanen **Maskinvarestasjoner**.
 
 En maskinvarestasjon er en forekomst av forretningslogikk som styrer tilbehør for salgssted. EN maskinvarestasjon installeres automatisk sammen med MPOS. Maskinvarestasjonen kan eventuelt installeres som en frittstående komponent, og deretter brukes av MPOS eller Cloud POS via en webtjeneste. Maskinvarestasjonen må være definert på kanalnivå.
 
@@ -87,7 +87,7 @@ Hvis du vil koble MPOS til enheter på salgssted i et tradisjonelt scenario for 
 
 Når du har tilordnet maskinvareprofilen, synkroniserer du endringer til kanaldatabasen ved hjelp av distribusjonsplanen **Kasser**. Du finner distribusjonsplanene under **Detaljhandel og handel** &gt; **IT for handel og detaljhandel** &gt; **Distribusjonsplan**. 
 
-Deretter definerer du en "lokal" maskinvarestasjon på kanalen. Klikk på **Detaljhandel og handel** &gt; **Kanaler** &gt; **Detaljhandelsbutikker** &gt; **Alle detaljhandelsbutikker**, og velg butikk. 
+Deretter definerer du en "lokal" maskinvarestasjon på kanalen. Klikk på **Detaljhandel og handel** &gt; **Kanaler** &gt; **Butikker** &gt; **Alle butikker**, og velg butikk. 
 
 I hurtigfanen **Maskinvarestasjoner** klikker du **Legg til** for å legge til en maskinvarestasjon. Skriv inn en beskrivelse, skriv inn **localhost** som vertsnavnet, og synkroniser deretter endringene til kanalen ved hjelp av distribusjonsplan **Kanalkonfigurasjon**. Du finner distribusjonsplanene under **Detaljhandel og handel** &gt; **IT for handel og detaljhandel** &gt; **Distribusjonsplan**. 
 
@@ -104,7 +104,7 @@ Til slutt går du til MPOS og bruker operasjonen **Velg maskinvarestasjon** for 
 
 I dette scenariet er en frittstående maskinvarestasjon delt mellom MPOS- og Cloud POS-klienter. Dette scenariet krever at du oppretter en profil for maskinvarestasjon for å angi nedlastingspakken, port og maskinvareprofil som maskinvarestasjonen bruker. Du kan finne profilen for maskinvarestasjon på **Detaljhandel og handel** &gt; **Kanaloppsett** &gt; **Oppsett av salgssted** &gt; **Salgsstedsprofiler** &gt; **Maskinvarestasjonsprofiler**. 
 
-Når du har opprettet profilen for maskinvarestasjon, kan du gå til den spesifikke detaljhandelskanalen (**Detaljhandel og handel** &gt; **Kanaler** &gt; **Butikker** &gt; **Alle butikker**), og legge til en ny maskinvarestasjon. Tilordne denne nye maskinvarestasjonen til profilen for maskinvarestasjon som ble opprettet tidligere. 
+Når du har opprettet profilen for maskinvarestasjon, kan du gå til den spesifikke kanalen (**Retail og Commerce** &gt; **Kanaler** &gt; **Butikker** &gt; **Alle butikker**), og legge til en ny maskinvarestasjon. Tilordne denne nye maskinvarestasjonen til profilen for maskinvarestasjon som ble opprettet tidligere. 
 
 Deretter angir du en beskrivelse som hjelper kassereren med å identifisere maskinvarestasjonen. I feltet **Vertsnavn** angir du URL-adressen for vertsmaskinen i følgende format: `https://<MachineName:Port>/HardwareStation`. (Erstatt **&lt;Maskinnavn:Port&gt;** med det faktiske maskinnavnet på maskinvarestasjonen og porten som er angitt i profilen for maskinvarestasjonen.) For en frittstående maskinvarestasjon må du også angi terminal-ID-en for elektronisk pengeoverføring (EFT). Denne verdien identifiserer EFT-terminalen som er koblet til maskinvarestasjonen når betalingstilkoblingen kommuniserer med betalingsleverandøren. 
 

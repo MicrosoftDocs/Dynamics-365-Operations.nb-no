@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 68a92610a880c574b4a3a48951c432bc2764c24b
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 408767539628a14f8ea039155c72f5e9aa6803af
+ms.sourcegitcommit: 3dede95a3b17de920bb0adcb33029f990682752b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2771547"
+ms.lasthandoff: 02/18/2020
+ms.locfileid: "3070766"
 ---
 # <a name="column-definitions-in-financial-reports"></a>Kolonnedefinisjoner i finansrapporter
 
@@ -120,11 +120,11 @@ Tabellen nedenfor beskriver kodene for kolonnebegrensning.
 | ADJ                     | Begrens beløpene i kolonnen til justeringsbeløpene for perioden, hvis disse beløpene er tilgjengelige. |
 | XAD                     | Begrens beløpene i kolonnen, slik at justeringsbeløpene for perioden utelates. |
 | OF                      | Begrens beløpene i kolonnen, slik at bare posterte transaksjoner tas med, hvis disse transaksjonene er tilgjengelige. |
-| UPT                     | Begrens beløpene i kolonnen, slik at bare uposterte transaksjoner tas med, hvis disse transaksjonene er tilgjengelige.<p><strong>Obs!</strong>  Ikke alle leverandører støtter uposterte transaksjoner. Hvis du vil ha mer informasjon, kan du se <a href='https://go.microsoft.com/fwlink/?LinkID=162565'>veiledningen for dataintegrering</a> for Microsoft Dynamics ERP-systemet.</p> |
+| UPT                     | Begrens beløpene i kolonnen, slik at bare uposterte transaksjoner tas med, hvis disse transaksjonene er tilgjengelige.<p><strong>Obs!</strong>  Ikke alle leverandører støtter uposterte transaksjoner. </p> |
 
 ### <a name="restrict-a-column-to-a-reporting-unit"></a>Begrense en kolonne til en rapporteringsenhet
 
-1. Åpne kolonnedefinisjonen som skal endres, i Rapportutforming.
+1. Åpne kolonnedefinisjonen som skal endres i Rapportutforming.
 2. Dobbeltklikk **Rapporteringsenhet**-cellen for kolonnen som skal begrenses.
 3. I dialogboksen **Valg av rapporteringsenhet**, i **Rapporteringstre**-listen, velger du et tre.
 4. Vis eller skjul listen over enheter, velg en rapporteringsenhet og klikk deretter **OK**.

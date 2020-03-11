@@ -3,7 +3,7 @@ title: Forutsetninger for kanaloppsett
 description: Dette emnet viser en oversikt over forutsetninger for kanaloppsett i Microsoft Dynamics 365 Commerce.
 author: samjarawan
 manager: annbe
-ms.date: 01/27/2020
+ms.date: 02/21/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: b861d90f1333c8f6e61a83602ed74e30b65f3dc1
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 8a0927f6ee9b2d5bed1327bb223ceca85ecc16a0
+ms.sourcegitcommit: 161e85eb0a6b772b60ba8b2578a3de149ce5bfd7
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3002295"
+ms.lasthandoff: 02/22/2020
+ms.locfileid: "3081321"
 ---
 # <a name="channel-setup-prerequisites"></a>Forutsetninger for kanaloppsett
 
@@ -40,16 +40,16 @@ Før en Dynamics 365 Commerce-kanal kan opprettes, må du fullføre en rekke nø
 
 ## <a name="initialization"></a>Initialisering
 
-- [Initialisere utgangsverdidata](../retail/enable-configure-retail-functionality.md)
+- [Initialisere utgangsverdidata](enable-configure-retail-functionality.md)
 
 ## <a name="global-prerequisities-required-for-all-channel-types"></a>Globale forutsetninger kreves for alle kanaltyper
 
 - [Definere og konfigurere strukturen for juridisk enhet](channels-legal-entities.md) 
 - [Konfigurere organisasjonshierarkiet](channels-org-hierarchies.md)
 - [Definere et lager](channels-setup-warehouse.md)
-- [Konfigurere merverdiavgift](https://docs.microsoft.com/en-us/dynamics365/finance/general-ledger/indirect-taxes-overview?toc=/dynamics365/commerce/toc.json)
+- [Konfigurere merverdiavgift](https://docs.microsoft.com/dynamics365/finance/general-ledger/indirect-taxes-overview?toc=/dynamics365/commerce/toc.json)
 - [Definere en profil for e-postvarsling](email-notification-profiles.md)
-- [Definere nummerserier](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/organization-administration/number-sequence-overview?toc=/dynamics365/commerce/toc.json)
+- [Definere nummerserier](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/organization-administration/number-sequence-overview?toc=/dynamics365/commerce/toc.json)
 - [Definere en standardkunde og adressebok](default-customer.md)
 <!--
 - [Configure commerce parameters](commerce-parameters.md)
@@ -57,23 +57,21 @@ Før en Dynamics 365 Commerce-kanal kan opprettes, må du fullføre en rekke nø
 
 ## <a name="retail-channel-prerequisites"></a>Forutsetninger for detaljhandelskanal
 
-- [Informasjonskoder og informasjonskodegrupper](https://docs.microsoft.com/en-us/dynamics365/retail/info-codes-retail?toc=/dynamics365/commerce/toc.json)
+- [Informasjonskoder og informasjonskodegrupper](info-codes-retail.md)
 - [Definere en funksjonalitetsprofil for detaljhandel](retail-functionality-profile.md)
 - [Konfigurere en adressebok for ansatt](new-address-book.md)
-- [Definere et skjermoppsett](https://docs.microsoft.com/en-us/dynamics365/retail/pos-screen-layouts?toc=/dynamics365/commerce/toc.json)
-- [Konfigurere en maskinvarestasjon](https://docs.microsoft.com/en-us/dynamics365/retail/retail-hardware-station-configuration-installation?toc=/dynamics365/commerce/toc.json)
+- [Definere et skjermoppsett](pos-screen-layouts.md)
+- [Konfigurere en maskinvarestasjon](retail-hardware-station-configuration-installation.md)
 
 ## <a name="call-center-channel-prerequisites"></a>Forutsetninger for telefonsenterkanal
 
 - Telefonsenterparametere
-- Refunderingsmetoder for telefonsenter
-- Utleietyper
-- Betalingstjenester
-- Ordresperrekoder
+- [Telefonsenterordrer og refusjonsbetalingsmåter](work-with-payments.md)
+- [Leveringsmåter og tillegg for telefonsenter](configure-call-center-delivery.md)
 
-## <a name="online-channel-prerequisites"></a>Forutsetninger for Internett-kanal
+## <a name="online-channel-prerequisites"></a>Forutsetninger for nettkanal
 
-- [Opprett en Internett-funksjonalitetsprofil](online-functionality-profile.md)
+- [Opprette en nettbasert funksjonalitetsprofil](online-functionality-profile.md)
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 

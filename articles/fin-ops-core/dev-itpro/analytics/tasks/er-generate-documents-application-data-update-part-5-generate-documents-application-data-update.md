@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6af7113031fd77a0a7e06ec23a149a3fa7ad0012
-ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
+ms.openlocfilehash: 759869577ef30cd3f81eb74103a93cc5d1a3d608
+ms.sourcegitcommit: 3c1eb3d89c6ab9bd70b806ca42ef9df74cf850bc
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "3026069"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "3042856"
 ---
 # <a name="generate-documents-that-have-application-data"></a>Generere dokumenter som inneholder programdata
 
@@ -40,10 +40,14 @@ Denne fremgangsmåten er opprettet for brukere med rollen som systemansvarlig el
 ## <a name="set-up-foreign-trade-parameters"></a>Angi utenrikshandelsparametere
 1. Gå til Avgift > Oppsett > Utenrikshandel > Utenrikshandelsparametere.
 2. Klikk kategorien Nummerserier.
-    * Arkiverer detaljer om Intrastat-rapporteringsprosessen. Vi må identifisere poster i hvert arkiv vi har opprettet. En bestemt nummerserie må konfigureres for dette.  
+
+    Arkiverer detaljer om Intrastat-rapporteringsprosessen. Vi må identifisere poster i hvert arkiv vi har opprettet. En bestemt nummerserie må konfigureres for dette.  
+
 3. Velg referansen "ID for Intrastat-arkiv".
 4. Skriv inn en verdi i feltet Nummerserie.
-    * Angi eller velg verdien "Fore_2" i Nummerseriekode-feltet.  
+
+    Angi eller velg verdien "Fore_2" i Nummerseriekode-feltet.  
+
 5. ResolveChanges nummerseriekoden.
 6. Klikk Lagre.
 7. Lukk siden.
@@ -54,18 +58,23 @@ Denne fremgangsmåten er opprettet for brukere med rollen som systemansvarlig el
 3. Velg 'Intrastat (modell)\Intrastat (format)' i treet.
 4. Klikk Kjør.
 5. Skriv inn 'intrastat2.xml' i feltet Angi filnavn.
-    * intrastat2.xml  
 6. Klikk OK.
 
 ## <a name="review-er-format-executions-results"></a>Gå gjennom resultatene av kjøringen av ER-formatet
 Se gjennom den genererte XML-filen.  
 1. Lukk siden.
 2. Gå til Avgift > Deklareringer > Utenrikshandel > Intrastat.
-    * Åpmne dette skjemaet med Intrastat-transaksjoner som er inkludert i det genererte elektroniske dokumentet.  
+
+    Åpmne dette skjemaet med Intrastat-transaksjoner som er inkludert i det genererte elektroniske dokumentet.  
+
 3. Klikk Intrastat-arkiv.
-    * Siden det utførte ER-formatet må inneholder innstillinger for oppdatering av programdata, ble detaljer om den fullførte Intrastat-rapporten arkivert. I dette skjemaet kan du se hovedposten for det opprettede arkivet.  
+
+    Siden det utførte ER-formatet må inneholder innstillinger for oppdatering av programdata, ble detaljer om den fullførte Intrastat-rapporten arkivert. I dette skjemaet kan du se hovedposten for det opprettede arkivet.  
+
 4. Klikk Detaljer.
-    * I dette skjemaet kan du se detaljene for det opprettede arkivet.  
+
+    I dette skjemaet kan du se detaljene for det opprettede arkivet.  
+
 5. Lukk siden.
 6. Lukk siden.
 7. Lukk siden.

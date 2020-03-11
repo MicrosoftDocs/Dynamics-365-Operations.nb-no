@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-12-10
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 43b23b9ef881b2ab2f3d005d4ba761848a7fa4ed
-ms.sourcegitcommit: 4ed1d8ad8a0206a4172dbb41cc43f7d95073059c
+ms.openlocfilehash: 4b17f8e9b0d8a9a62714d0073561e66642b2eaf9
+ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "3024735"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "3057746"
 ---
 # <a name="configure-optional-features-for-a-dynamics-365-commerce-preview-environment"></a>Konfigurere valgfrie funksjoner for et miljø for forhåndsvisning av Dynamics 365 Commerce
 
@@ -63,8 +63,8 @@ Hvis du vil evaluere funksjoner for digital aktivastyring ved inntak av nye omni
 
 ### <a name="update-the-media-base-url"></a>Oppdatere primær URL-adresse for media
 
-1. Logg på Dynamics 365 Retail.
-1. Bruk menyen til venstre og gå til **Moduler \> Detaljhandel \> Kanaloppsett \> Kanalprofiler**.
+1. Logg på Dynamics 365 Commerce.
+1. Bruk menyen til venstre og gå til **Moduler \> Retail og Commerce \> Kanaloppsett \> Kanalprofiler**.
 1. Velg **Rediger**.
 1. Fra **Profilegenskaper** erstatter du egenskapsverdien for **Primær URL-adresse for medieserver** med den primære URL-adressen for media du opprettet tidligere.
 1. Velg den andre kanalen fra listen til venstre, under **Standard**-kanal.
@@ -77,7 +77,7 @@ Hvis du vil evaluere funksjoner for digital aktivastyring ved inntak av nye omni
 > [!NOTE]
 > SMTP-serveren eller e-posttjenesten du angir her, må være tilgjengelig fra Azure-abonnementet du bruker for miljøet.
 
-1. Logg på Retail.
+1. Logg på Commerce.
 1. Bruk menyen til venstre, og gå til **Moduler \> Systemadministrasjon \> Oppsett \> E-post \> E-postparametere**.
 1. I kategorien **SMTP-innstillinger** i feltet **Server for utgående e-post** angir du FQDN eller IP-adressen til SMTP-serveren eller e-posttjenesten.
 1. I feltet **SMTP-portnummer** angir du portnummeret. (Hvis du ikke bruker Secure Sockets Layer \[SSL\], er standard portnummer **25**.)
@@ -92,7 +92,7 @@ Hvis du vil evaluere funksjoner for digital aktivastyring ved inntak av nye omni
 
 E-postmalen for hver transaksjonshendelse du vil sende e-postmeldinger for, må oppdateres med en gyldig e-postadresse for avsender.
 
-1. Logg på Retail.
+1. Logg på Commerce.
 1. Bruk menyen til venstre, og gå til **Moduler \> Organisasjonsstyring \> Oppsett \> Maler for e-post til organisasjon**.
 1. Velg **Vis liste**.
 1. Følg disse trinnene for hver mal i listen:
@@ -115,7 +115,7 @@ Det kan være lurt å tilpasse e-postmalene slik at de bruker forskjellige bilde
     - Hent ordre-mal
 
 1. Tilpass malene ved hjelp av et tekst- eller HTML-redigeringsprogram. Se listen over [støttede tokener](#supported-tokens-in-the-email-template) senere i dette emnet.
-1. Logg på Retail.
+1. Logg på Commerce.
 1. Bruk menyen til venstre, og gå til **Moduler \> Organisasjonsstyring \> Oppsett \> Maler for e-post til organisasjon**.
 1. Utvid listen til venstre for å se alle malene.
 1. Følg denne fremgangsmåten for hver mal du vil tilpasse:

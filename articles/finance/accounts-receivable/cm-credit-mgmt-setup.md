@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: mfalkner
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 02d7e2238e58098428397121de848a1947a991ad
-ms.sourcegitcommit: 6a70f9ac296158edd065d52a12703b3ce85ce5ee
+ms.openlocfilehash: b4234ac428cc80836852d4edfb0f37098b4a1e8e
+ms.sourcegitcommit: 0dace221e8874021dd212271567666f717d39793
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3015342"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "3071666"
 ---
 # <a name="credit-management-parameters-setup"></a>Oppsett av parametere for kredittbehandling
 
@@ -38,8 +38,8 @@ Det finnes fire hurtigfaner der du kan endre parameterne som styrer kredittstyri
 - Sett alternativet **Tillat redigering av salgsordreverdi etter at ordresperre er frigitt** til **Ja** for å kreve at posteringsreglene sjekkes på nytt hvis salgsordreverdien (utvidet pris) er endret etter at salgsordren ble frigitt fra på vent-listen. .
 - I feltet **Årsaker til kansellerte ordrer** velger du frigivelsesårsaken som skal brukes som standard når en salgsordre som var på vent i kredittbehandling, avbrytes.
 - Sett alternativet **Kontroller kredittgrense for kundekredittgrupper** til **Ja** for å kontrollere kredittgrensen til en kundekredittgruppe når kunden på en salgsordre tilhører en kundekredittgruppe. Kredittgrensen for gruppen vil bli kontrollert, og deretter, hvis den er tilstrekkelig, blir kredittgrensen for kunden kontrollert.
-- Sett alternativet **Kontroller kredittgrense når betalingsbetingelser økes** til **Ja** for å kontrollere rangeringene for betalingsbetingelser for å avgjøre om betalingsbetingelsene i salgsordren er forskjellige fra betalingsbetingelsene i salgsordren. Hvis de nye betalingsbetingelsene har en høyere rangering enn de opprinnelige betalingsbetingelsene, settes ordren på vent for kredittbehandling.
-- Sett alternativet **Kontroller kredittgrense når en utligningsrabatt økes** til **Ja** for å kontrollere rangeringene for utligningsrabatter for å avgjøre om kontantrabatten i salgsordren er forskjellig fra kontantrabatten i salgsordren. Hvis den nye kontantrabatten har en høyere rangering enn den opprinnelige kontantrabatten, settes ordren på vent for kredittbehandling.
+- Sett alternativet **Kontroller kredittgrense når betalingsbetingelser økes** til **Ja** for å kontrollere rangeringene for betalingsbetingelser for å avgjøre om betalingsbetingelsene i salgsordren er forskjellige fra standard betalingsbetingelser for kunden. Hvis de nye betalingsbetingelsene har en høyere rangering enn de opprinnelige betalingsbetingelsene, settes ordren på vent for kredittbehandling.
+- Sett alternativet **Kontroller kredittgrense når en utligningsrabatt økes** til **Ja** for å kontrollere rangeringene for utligningsrabatter for å avgjøre om kontantrabatten i salgsordren er forskjellig fra standard kontantrabatt for kunden. Hvis den nye kontantrabatten har en høyere rangering enn den opprinnelige kontantrabatten, settes ordren på vent for kredittbehandling.
 - I feltet **Årsak til frigivelse av endrede order** velger du frigivelsesårsaken som skal brukes som standard når endrede ordrer frigis automatisk fra kredittbehandlingssperre.
 - Sett alternativet **Ignorer blokkeringsregel for kredittgrense utløpt når utløpsdato er tom** til **Ja** for å kontrollere virkemåten til regelen **Kredittgrense utløpt**. Sett alternativet til **Nei** for å blokkere en ordre når utløpsdatoen er tom.
 - I lagerstyring kan laster opprettes på tidspunktet for salgsordreregistrering. Sett alternativet **Fjern blokkerte lastelinjer** til **Nei** for å beholde salgsordrelinjer for lasten når en salgsordre er i kredittsperre. Lasten kan ikke behandles når salgsordren er på vent. Sett alternativet til **Ja** for å fjerne salgsordrelinjer fra lasten når en salgsordre er i kredittsperre. Lasten kan deretter behandles.

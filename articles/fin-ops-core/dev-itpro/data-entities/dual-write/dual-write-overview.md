@@ -1,9 +1,9 @@
 ---
-title: Dataintegrering i nær sanntid med Common Data Service
-description: Dette emnet inneholder en oversikt over integreringen mellom Finance and Operations og Common Data Service.
+title: Oversikt over dobbel skriving
+description: Dette emnet gir en oversikt over dobbel skriving. Dobbel skriving er en infrastruktur som gir nær sanntids interaksjon mellom modelldrevne Microsoft Dynamics 365-apper og Finance and Operations-apper.
 author: RamaKrishnamoorthy
 manager: AnnBe
-ms.date: 07/15/2019
+ms.date: 02/06/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,59 +18,91 @@ ms.search.region: global
 ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
-ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: 1c09b0c0bb695e7695acb7a8821ffb99ae1f6f06
-ms.sourcegitcommit: 54baab2a04e5c534fc2d1fd67b67e23a152d4e57
+ms.search.validFrom: 2020-01-06
+ms.openlocfilehash: 12c6a39700a260c138fab67ed370f94b3aa04213
+ms.sourcegitcommit: a688c864fc609e35072ad8fd2c01d71f6a5ee7b9
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "3019942"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "3075997"
 ---
-# <a name="near-real-time-data-integration-with-common-data-service"></a>Dataintegrering i nær sanntid med Common Data Service
+# <a name="dual-write-overview"></a>Oversikt over dobbel skriving
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [preview-banner](../../includes/preview-banner.md)]
+[!include [banner](../../includes/preview-banner.md)]
 
-I dagens digitale verden bruker bedriftsøkosystemer Microsoft Dynamics 365-apper som en helhet. Fordi data fra personer, kunder, operasjoner og IoT-enheter (tingenes Internett) flyter over i én kilde, finnes det en mulighet for digitale tilbakemeldingsløkker. For å oppnå denne erfaringen er integrering mellom Finance and Operations-apper og Dynamics 365-apper viktig. Noen programmer er bygget på toppen av Common Data Service. Integrasjon mellom Finance and Operations-appdata og Common Data Service lar andre apper kommunisere sammenhengende og jevnt med Finance and Operations.
+## <a name="what-is-dual-write"></a>Hva er dobbel skriving?
 
-Finance and Operations-apper og Common Data Service gi datasynkronisering i nær sanntid mellom Finance and Operations-apper og andre Dynamics 365-programmer via et dual-Write-rammeverk. Dekningen er bred og spenner over 28 overflateområder av programmet. Målet er å gi en brukeropplevelse av "Ett Dynamics 365" gjennom sømløse dataflyter som kobler sammen forretningsprosesser på tvers av programmer.
+Dobbel skriving er en integrert infrastruktur som gir nær sanntids interaksjon mellom modelldrevne apper i Microsoft Dynamics 365 og Finance and Operations-apper. Når data om kunder, produkter, personer og operasjoner flyter utenfor applikasjonens grenser, kan alle avdelingene i en organisasjon være på.
 
-![Oversiktsdiagram over arkitekturen](media/dual-write-overview.jpg)
+Dobbel skriving gir tett sammenkoblet, toveis integrering mellom Finance and Operations-apper og Common Data Service. Alle dataendringer i Finance and Operations-apper fører til skriving til Common Data Service, og alle dataendringer i Common Data Service fører til skriving til Finance and Operations-apper. Denne automatiserte dataflyten gir en integrert brukeropplevelse på tvers av appene.
 
-Følgende verdiforslag er tilgjengelige:
+![Datarelasjon mellom apper](media/dual-write-overview.jpg)
 
-+ [Organisasjonshierarki i Common Data Service](organization-mapping.md)
-+ [Bedriftskonsept i Common Data Service](company-data.md)
-+ [Integrerte originalkunde](customer-mapping.md)
-+ [Integrert finans](ledger-mapping.md)
-+ [Samlet produktopplevelse](product-mapping.md)
-+ [Integrert original for leverandør](vendor-mapping.md)
-+ [Integrerte områder og lagre](sites-warehouses-mapping.md)
-+ [Integrert hoveddata for avgift](tax-mapping.md)
+Dobbel skriving har to aspkter: *infrastruktur* og *app*.
 
-## <a name="system-requirements"></a>Systemkrav
+### <a name="infrastructure"></a>Infrastruktur
 
-Synkrone, toveis dataflyter i nær sanntid krever følgende versjoner:
+Infrastrukturen for dobbel skriving er utvidbar og pålitelig, og inneholder følgende nøkkelfunksjoner:
 
-+ Microsoft Dynamics 365 for Finance and Operations versjon 10.0.4 (juli 2019) med plattformoppdatering 28 eller senere
-+ Microsoft Dynamics 365 for Customer Engagement, plattformversjon 9.1 (4.2) eller senere
++ Synkron og toveis dataflyt mellom programmer
++ Synkronisering sammen med modus for avspilling, pause og oppsamling for å støtte systemet under tilkoblet og frakoblet/asynkron modus.
++ Mulighet til å synkronisere innledende data mellom apper
++ Konsolidert visning av aktivitets- og feillogger for dataadministratorer
++ Mulighet til å konfigurere egendefinerte varsler og terskler og abonnere på varslinger
++ Intuitivt brukergrensesnitt (UI) for filtrering og transformasjoner
++ Mulighet til å angi og vise enhetsavhengigheter og relasjoner
++ Utvidelse for både standard og egendefinerte enheter og tilordninger
++ Pålitelig livssyklus administrasjon for app
++ Integrert installasjonsopplevelse for nye kunder
 
-## <a name="setup-instructions"></a>Installasjonsinstruksjoner
+### <a name="application"></a>Søknad
 
-Følg disse trinnene for å sette opp integrasjon mellom Finance and Operations-apper og Common Data Service.
-    
-1. For oppsett av dual-Write-systemet, se den [trinnvise veiledningen](https://aka.ms/dualwrite-docs) om kunngjøring av forhåndsvisning av Dual Write.
-2. Last ned og Installer løsningen fra [Fin Ops og CDS/CE-integreringen via Dual-Write](https://www.yammer.com/dynamicsaxfeedbackprograms/#/threads/inGroup?type=in_group&feedId=66052096)Yammer-gruppen. Pakken inneholder fem løsninger:
+Ved dobbel skriving opprettes det en tilordning mellom konsepter i Finance and Operations-apper og konsepter i modelldrevne apper i Dynamics 365. Denne integreringen støtter følgende scenarier:
 
-    + Dynamics365Company
-    + CurrencyExchangeRates
-    + Dynamics365FinanceAndOperationsCommon
-    + Dynamics365FinanceCommon
-    + Dynamics365SupplyChainCommon
++ Integrert original for kunde
++ Tilgang til kundefordelskort og belønningspoeng
++ Samlet produktstandardopplevelse
++ Forståelse av organisasjonshierarkiet
++ Integrert original for leverandør
++ Tilgang til referansedata for finan og avgift
++ Prismotoropplevelse etter behov
++ Integrert opplevelse for kundeemne til kontant
++ Mulighet til å betjene både interne aktiva og kundeaktiva via feltagenter
++ Integrert opplevelse for innkjøp til betaling
++ Integrerte aktiviteter og notater for kundedata og dokumenter
++ Mulighet til å slå opp tilgjengelighet og detaljer for lagerbeholdning
++ Opplevelse for prosjekt til kontanter
++ Mulighet til å håndtere flere adresser og roller via partskonseptet
++ Administrasjon av enkelt kilde for brukere
++ Integrerte kanaler for detaljsalg og markedsføring
++ Innsyn i kampanjer og rabatter
++ Funksjoner for å be om service
++ Strømlinjeformede serviceoperasjoner
 
-3. Følg utføringsrekkefølgen for [synkronisering av innledende referansedata](initial-sync.md).
-4. Hvis du støter på problemer med dual-write-skrive synkronisering, kan du se [Feilsøkingsveiledning for dataintegrering](dual-write-troubleshooting.md).
+## <a name="top-reasons-to-use-dual-write"></a>Gode grunner til å bruke dobbel skriving
 
-> [!IMPORTANT]
-> Du kan ikke kjøre dual-write og dobbelt-skrive og [Kundeemne til kontanter](../../../../supply-chain/sales-marketing/prospect-to-cash.md) side ved side. Hvis du kjører Kundeemne til kontanter-løsningen, må du avinstallere den. Du må også deaktivere dual-write-maler for kunde og leverandør som er en del av Kundeemne til kontanter-løsningen.
+Dobbel skriving gir dataintegrering på tvers av Microsoft Dynamics 365-apper. Dette robuste rammeverket kobler sammen miljøer og gjør det mulig for forskjellige forretningsapper å fungere sammen. Her er de viktigste grunnene til at du bør bruke dobbel skriving:
+
++ Dobbel skriving gir tett sammenkoblet toveis integrering nær sagt i sanntid mellom Finance and Operations-apper og modelldrevne apper i Dynamics 365. Denne integreringen gjør at Microsoft Dynamics 365 kan brukes til alle forretningsløsningene dine. Kunder som bruker Dynamics 365 Finance og Dynamics 365 Supply Chain Management, men som bruker løsninger fra andre enn Microsoft for Customer Relationship Management (CRM), går over til å bruke Dynamics 365 for støtte for dobbel skriving.
++ Data fra kunder, produkter, operasjoner, prosjekter og tingenes Internett flyter automatisk til Common Data Service via dobbel skriving. Denne tilkoblingen er svært nyttig for bedrifter som er interessert i Microsoft Power Platform-utvidelser.
++ Infrastrukturen for dobbel skriving følger koden for ingen kode / lav kode. Det kreves minimalt teknisk arbeid for å utvide standardtilordninger fra tabell til tabell og inkludere tilpassede tilordninger.
++ Dobbel skriving støtter både tilkoblet og frakoblet modus. Microsoft er det eneste firmaet som tilbyr støtte for tilkoblet og frakoblet modus.
+
+## <a name="what-does-dual-write-mean-for-users-and-architects-of-crm-products"></a>Hva betyr dobbel skriving for brukere av og arkitekter for CRM-produkter?
+
+Dobbel skriving automatiserer dataflyten mellom Finance and Operations-apper og Common Data Service. I fremtidige versjoner vil begrepene i modelldrevne apper i Dynamics 365 (for eksempel kunde, kontakt, tilbud og ordre) for skaleres til kunder i mellomsjiktet og det øvre sjiktet.
+
+I den første versjonen håndteres det meste av automatiseringen av løsninger for dobbel skriving. I fremtidige versjoner blir disse løsningene en del av Common Data Service. Ved å forstå de kommende endringene i Common Data Service kan du spare deg selv for innsats på lang sikt. Her er noen av de viktige endringene:
+
++ Common Data Service vil ha nye konsepter, for eksempel firma og part. Disse konseptene vil påvirke alle apper som er utviklet med Common Data Service, for eksempel Dynamics 365 Sales, Dynamics 365 Marketing, Dynamics 365 Customer Service og Dynamics 365 Field Service.
++ Aktiviteter og notater er enhetlig og utvides for å støtte både C1-ere (brukere av systemet) og C2-ere (kunder av systemet).
++ Her er noen av de kommende endringene i Common Data Service:
+
+    - Datatypen for desimaler erstatter datatypen for penger.
+    - Datoeffektivitet vil støtte tidligere, nåværende og fremtidige data på samme sted.
+    - Det vil være mer støtte for valuta og valutakurser, og API-et (Application Programming Interface) **Valutakurs** vil bli revidert.
+    - Enhetskonverteringer vil støttes.
+
+Hvis du vil ha mer informasjon om kommende endringer, kan du se [Data i Common Data Service – fase 1 og 2](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/extensibility/extensibility-roadmap).

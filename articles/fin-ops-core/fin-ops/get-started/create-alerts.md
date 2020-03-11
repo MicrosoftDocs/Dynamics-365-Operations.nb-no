@@ -3,7 +3,7 @@ title: Opprette varslingsregler
 description: Dette emnet gir informasjon om varsler, og forklarer hvordan du oppretter en varslingsregel, slik at du får melding om hendelser, for eksempel en dato som kommer eller en bestemt endring som forekommer.
 author: tjvass
 manager: AnnBe
-ms.date: 09/20/2019
+ms.date: 02/19/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: tjvass
 ms.search.validFrom: 2018-3-30
 ms.dyn365.ops.version: Platform update 15
-ms.openlocfilehash: c37ddc52ef576a15dd35cc155e99821c74631a46
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 85d4774bc710f0c48b384601e5505f11394cf5d5
+ms.sourcegitcommit: a688c864fc609e35072ad8fd2c01d71f6a5ee7b9
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2180720"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "3075930"
 ---
 # <a name="create-alert-rules"></a>Opprette varslingsregler
 
@@ -31,7 +31,11 @@ ms.locfileid: "2180720"
 
 Før du oppretter en varslingsregel, må du vurdere når eller i hvilke situasjoner du vil motta varsler. Når du vet hvilke hendelser du vil varsles om, kan du finne siden der dataene som forårsaker den hendelsen, vises. Hendelsen kan være en dato som kommer, eller en bestemt endring som forekommer. Du må derfor finne siden der datoen er angitt, eller hvor feltet som endres eller den nye posten som opprettes, vises. Etter at du har denne informasjonen, kan du opprette varslingsregelen.
 
-Når du oppretter en varslingsregel, kan du definere vilkår som må oppfylles før varselet utløses. Du kan se på kriterier som et samsvar mellom en hendelse og innfrielsen av bestemte betingelser. Når en hendelse forekommer, begynner systemet å kontrollere i henhold til betingelsene som er definert.
+Når du oppretter en varslingsregel, kan du definere vilkår som må oppfylles før varselet utløses. Kriterier er stort sett et samsvar mellom en hendelse og innfrielsen av bestemte betingelser. Når en hendelse forekommer, begynner systemet å kontrollere i henhold til betingelsene som er definert.
+
+## <a name="ensure-the-alert-batch-jobs-are-running"></a>Sikre at de satsvise varslingsjobbene kjører
+
+De satsvise jobbene for dataendring og forfallsdatovarslinger må kjøre for at varslingsbetingelsene skal bli behandlet og varslene sendes. Du kan kjøre satsvise jobber ved å gå til **Systemadministrasjon** > **Periodiske oppgaver** > **Varsler** og legge til en ny satsvis jobb for **Endringsbaserte varslinger** og/eller **Forfallsdatovarslinger**. Hvis det er behov for en lang og ofte kjørende satsvis jobb, velger du **Regelmessighet** og setter **Ingen sluttdato** med et **Gjentakelsesmønster** til **Minutter** og et **Antall** på **1**.
 
 ## <a name="events"></a>Hendelser
 
@@ -70,16 +74,21 @@ I hurtigfanen **Varsle meg med** i dialogboksen **Opprett varslingsregel** kan d
 
 ## <a name="user-id"></a>Bruker-ID
 
-I hurtigfanen **Varsle meg med** i dialogboksen **Opprett varslingsregel** kan du angi hvilken bruker som skal motta varslene. Bruker-IDen er valgt som standard. Dette alternativet er begrenset til administratorer for organisasjonen.
+I hurtigfanen **Varsle meg med** i dialogboksen **Opprett varslingsregel** kan du angi hvilken bruker som skal motta varslene. Bruker-IDen er valgt som standard. Muligheten til å endre brukeren som mottar varselet, er begrenset til organisasjons administratorer.
+
+## <a name="alerts-as-business-events"></a>Varsler som forretningshendelser
+
+Varsler kan sendes eksternt ved hjelp av rammeverket for forretningshendelser. Når du oppretter et varsel, setter du **Hele organisasjonen** til **Nei** og **Send eksternt** til **Ja**. Når du har utløst varselet om forretningshendelsen, kan du utløse en flyt som er bygd i Power Automate ved hjelp av utløseren **Når en forretningshendelse oppstår** i Finance and Operations-koblingen, eller eksplisitt sende hendelsen til et sluttpunkt for forretningshendelser via **forretningshendelseskatalogen**.
 
 ## <a name="create-an-alert-rule"></a>Opprett en varslingsregel
 
+0. Sikre at de satsvise varslingsjobbene kjører (se ovenfor).
 1. Åpne siden som inneholder dataene du vil overvåke.
 2. Velg **Opprett varslingsregel** i gruppen **Del** i fanen **Alternativer** i handlingsruten.
 3. Velg feltet som skal overvåkes, i feltet **Felt** i dialogboksen **Opprett varslingsregel**.
 4. Velg hendelsestypen i feltet **Hendelse**.
-5. Velg et alternativ i hurtigfanen **Varsle meg i**.
+5. Velg ønsket alternativ i hurtigfanen **Varsle meg i**. Hvis du vil sende varslet som en forretningshendelse, må **Hele organisasjonen** være satt til **Nei**.
 6. Hvis varslingsregelen blir inaktiv på en bestemt dato, velger du en sluttdato i hurtigfanen **Varsle meg inntil**.
-7. Godta standard emneoverskrift for e-postmeldingen eller skriv inn et nytt emne, i feltet **Emne** i hurtigfanen **Varsle meg med**. Teksten brukes som emneoverskrift for e-postmeldingen du mottar når det utløses et varsel.
+7. Godta standard emneoverskrift for e-postmeldingen eller skriv inn et nytt emne, i feltet **Emne** i hurtigfanen **Varsle meg med**. Teksten brukes som emneoverskrift for e-postmeldingen du mottar når det utløses et varsel. Hvis du vil sende varselet som en forretningshendelse, setter du **Send eksternt** til **Ja**.
 8. Skriv inn en valgfri melding i feltet **Melding**. Teksten brukes som meldingen du mottar når det utløses et varsel.
 9. Velg **OK** for å lagre innstillingene og opprette varslingsregelen.

@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: dd72c8a54498cc6ffae7125c5c2f44bfac5a5995
-ms.sourcegitcommit: 574309903f15eeab7911091114885b5c7279d22a
+ms.openlocfilehash: 88ba96b1d9d2f722528a4a920eabe4ab64304a7a
+ms.sourcegitcommit: 4f668b23f5bfc6d6502858850d2ed59d7a79cfbb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "2658650"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "3059434"
 ---
 # <a name="mobile-invoice-approvals"></a>Mobile fakturagodkjenninger
 
@@ -54,8 +54,8 @@ Alle organisasjoner lager og definerer sin forretningsprosess for leverandørfak
     -   Hvor mange regnskapsdistribusjoner (utvidet pris, merverdiavgift, tillegg, delinger og så videre) er det for en fakturalinje? Igjen, bruke 80-20 regelen.
     -   Fakturaene også har regnskapsdistribusjoner i fakturahodet? I så fall bør disse regnskapsdistribusjoner være tilgjengelig på enheten?
 
-> [!NOTE]
-> Dette emnet forklarer ikke hvordan du redigerer regnskapsdistribusjoner, fordi denne funksjonaliteten ikke støttes for øyeblikket for mobile scenarier.
+    > [!NOTE]
+    > Dette emnet forklarer ikke hvordan du redigerer regnskapsdistribusjoner, fordi denne funksjonaliteten ikke støttes for øyeblikket for mobile scenarier.
 
 -   Brukere vil se vedlegg for fakturaen på enheten?
 
@@ -158,9 +158,9 @@ Den første mobile siden som du bør utforme er listen over fakturaer som er til
     - Fakturanummer
     - Fakturadato
 
-  Når feltene er lagt til, må mobilsiden ligne på følgende illustrasjon. 
+    Når feltene er lagt til, må mobilsiden ligne på følgende illustrasjon. 
     
-   [![Side når felt er lagt til](./media/mobile-invoice-approvals03.png)](./media/mobile-invoice-approvals03.png)
+    [![Side når felt er lagt til](./media/mobile-invoice-approvals03.png)](./media/mobile-invoice-approvals03.png)
 
 9.  Du må også legge til følgende kolonner nå, slik at vi kan aktivere arbeidsflythandlinger senere.
     - Vis fullført oppgave
@@ -247,9 +247,10 @@ Hvis du vil legge til arbeidsflythandlinger, kan du bruke siden **VendMobileInvo
     - De ekstra arbeidsflytrelaterte kolonnene som vi tidligere lagt til på den mobile listesiden, skjules. Vi har lagt til disse kolonnene slik at appen får denne informasjonen i kontekst og kan utføre det neste trinnet.
     - Basert på arbeidsflyttrinnet som er aktivt, brukes logikk til å vise bare disse handlingene.
 
-> [!NOTE]
-> Navnet på sidene og andre kontroller i JS-koden må være de samme som navnene i arbeidsområdet.
+    > [!NOTE]
+    > Navnet på sidene og andre kontroller i JS-koden må være de samme som navnene i arbeidsområdet.
 
+    ```javascript
     function main(metadataService, dataService, cacheService, $q) {
            return {
                appInit: function (appMetadata) {
@@ -308,6 +309,7 @@ Hvis du vil legge til arbeidsflythandlinger, kan du bruke siden **VendMobileInvo
                  },
            };
         }
+    ```
 
 2.  Last opp kodefilen til arbeidsområdet ved å velge **Logic**-kategorien
 3.  Klikk **Ferdig** for å avslutte redigeringsmodus.
@@ -341,7 +343,7 @@ Kravene for dette scenariet bekrefter at det vil bli bare distribusjoner på lin
 
 1.  Erstatt navnet på menyelementet i URL-adressen, slik du gjorde tidligere. Siden som vises bør ligne på følgende illustrasjon.
 
-[![Alle distribusjoner-siden](./media/mobile-invoice-approvals06.png)](./media/mobile-invoice-approvals06.png)
+    [![Alle distribusjoner-siden](./media/mobile-invoice-approvals06.png)](./media/mobile-invoice-approvals06.png)
 
 2.  Åpne utformingen for mobil fra **Innstillinger** (tannhjul)-knappen.
 
@@ -367,16 +369,18 @@ Kravene for dette scenariet bekrefter at det vil bli bare distribusjoner på lin
 
 10. Klikk **Publiser arbeidsområde** for å lagre arbeidet
 
-> [!NOTE] 
-> Mobilsiden **Vis regnskap** er ikke koblet til noen av mobilsidene som vi har utviklet så langt. Fordi brukeren bør være i stand til å navigere til siden **Vis regnskap** fra siden **Fakturaopplysninger** på den mobile enheten, må vi gi navigasjon fra siden **Fakturaopplysninger** til siden **Vis regnskap**. Vi etablerer denne navigasjonen ved hjelp av ekstra logikk via JavaScript.
+#### <a name="adding-navigation-to-view-accounting-page"></a>Legge til navigering på siden "Vis regnskap"
+
+Mobilsiden **Vis regnskap** er ikke koblet til noen av mobilsidene som vi har utviklet så langt. Fordi brukeren bør være i stand til å navigere til siden **Vis regnskap** fra siden **Fakturaopplysninger** på den mobile enheten, må vi gi navigasjon fra siden **Fakturaopplysninger** til siden **Vis regnskap**. Vi etablerer denne navigasjonen ved hjelp av ekstra logikk via JavaScript.
 
 1.  Åpne .js-filen som du opprettet tidligere, og legg til linjene som er uthevet i følgende kode. Denne koden gjør to ting:
     1.  Den hjelper å garantere at brukerne ikke kan gå direkte fra arbeidsområdet til siden **Vis regnskap**.
     2.  Den oppretter en navigasjonskontroll fra siden **Fakturaopplysninger** til siden **Vis regnskap**.
 
-> [!NOTE] 
-> Navnet på sidene og andre kontroller i JS-koden må være de samme som navnene i arbeidsområdet.
+    > [!NOTE] 
+    > Navnet på sidene og andre kontroller i JS-koden må være de samme som navnene i arbeidsområdet.
 
+    ```javascript
     function main(metadataService, dataService, cacheService, $q) {
            return {
                appInit: function (appMetadata) {
@@ -439,7 +443,8 @@ Kravene for dette scenariet bekrefter at det vil bli bare distribusjoner på lin
                  },
            };
         }
-
+    ```
+    
 2.  Last opp kodefilen til arbeidsområdet ved å velge **Logic**-kategorien for å overskrive den forrige koden
 3.  Klikk **Ferdig** for å avslutte redigeringsmodus.
 4.  Klikk **Tilbake** og deretter **Ferdig** for å gå ut av arbeidsområdet.

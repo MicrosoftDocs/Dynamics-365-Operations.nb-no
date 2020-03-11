@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 2ac5135d0606ffc9816c841637aa032826f87e28
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 0ac75d390b8bbb94c6e039b374b51462d348e355
+ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3023550"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "3057181"
 ---
 # <a name="create-and-associate-registers"></a> Opprette og tilknytte kasser
 
@@ -37,7 +37,7 @@ Denne fremgangsmåten beskriver hvordan du oppretter en kasse for et salgssted (
 4. I Navn-feltet skriver du inn et beskrivende navn på kassen.
 5. Angi eller velg en verdi i Butikknummer-feltet.
 6. Angi eller velg en verdi i Maskinvareprofil-feltet.
-    * Maskinvareprofiler brukes til å angi eksterne detaljhandelsenheter som skal kobles til kassen, for eksempel kassaskuffen og kvitteringsskriveren.  
+    * Maskinvareprofiler brukes til å angi eksterne enheter som skal kobles til kassen, for eksempel kassaskuffen og kvitteringsskriveren.  
 7. Angi eller velg en verdi i Visuell profil-feltet.
     * Visuelle profiler brukes til å angi bildene som brukes på bakgrunnen og påloggingssiden for salgsstedet, samt oppsett for salgsstedet.  
 8. Skriv inn en verdi i feltet EFT-registreringsnummer for POS.

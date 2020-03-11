@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: b82b1719990caeb1b383ab806a3e09a4c4a6e41a
-ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
+ms.openlocfilehash: c6085f2f06fb374887d504c332a34705f0fd9e99
+ms.sourcegitcommit: 3c1eb3d89c6ab9bd70b806ca42ef9df74cf850bc
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "3026140"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "3042833"
 ---
 # <a name="er-use-document-management-files-in-format-outputs-part-1---prepare-data-model"></a>ER Bruke dokumentbehandlingsfiler i formatutdata (del 1 - Klargjøre datamodell)
 
@@ -36,10 +36,14 @@ Denne fremgangsmåten gjelder for en funksjon som ble lagt til i Dynamics 365 fo
 
 ## <a name="get-access-to-the-list-of-configurations-provided-by-microsoft"></a>Få tilgang til listen over konfigurasjoner som leveres av Microsoft
 1. Gå til Organisasjonsstyring > Arbeidsområder > Elektronisk rapportering.
-    * Forsikre deg om at leverandøren Litware, Inc er tilgjengelig og merket som aktiv.  
+
+    Forsikre deg om at leverandøren Litware, Inc er tilgjengelig og merket som aktiv.  
+
 2. Velg Litware, Inc. som leverandør.
 3. Klikk Repositorier.
-    * Hvis det allerede finnes et repositorium av typen operasjonsressurser, kan du hoppe over resten av trinnene i gjeldende underoppgave.  
+
+    Hvis det allerede finnes et repositorium av typen operasjonsressurser, kan du hoppe over resten av trinnene i gjeldende underoppgave.  
+
 4. Klikk Legg til for å åpne nedtrekksdialogen.
 5. Skriv inn Operasjonsressurser i feltet Type konfigurasjonsrepositorium.
 6. Klikk Opprett repositorium.
@@ -51,9 +55,13 @@ Denne fremgangsmåten gjelder for en funksjon som ble lagt til i Dynamics 365 fo
 3. Klikk Vis filtre.
 4. Klikk Åpne.
 5. Velg Kundefakturamodell i treet.
-    * Velg modellkonfigurasjonen Kundefakturamodell for å importere den.  
+
+    Velg modellkonfigurasjonen Kundefakturamodell for å importere den.  
+
 6. Klikk Importer.
-    * Klikk Importer for versjon 1 av den valgte konfigurasjonen.  
+
+    Klikk Importer for versjon 1 av den valgte konfigurasjonen.  
+
 7. Klikk Ja.
 8. Lukk siden.
 9. Lukk siden.
@@ -65,6 +73,5 @@ Du vil opprette vår egen konfigurasjon for kundefakturamodellen og avlede den f
 1. Klikk Opprett konfigurasjon for å åpne nedtrekksdialogen.
 2. I Ny-feltet angir du Avled fra navnet: Kundefakturamodell, Microsoft.
 3. I Navn-feltet skriver du inn Kundefakturamodell (egendefinert).
-    * Kundefakturamodell (egendefinert)  
 4. Klikk Opprett konfigurasjon.
 

@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-12-10
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 12d3a86698e9250f5d1645de51e0749c8d929f75
-ms.sourcegitcommit: 4ed1d8ad8a0206a4172dbb41cc43f7d95073059c
+ms.openlocfilehash: d72caee25c03e8167b94dd387c7861f98bd0f4cb
+ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "3024712"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "3057723"
 ---
 # <a name="configure-a-dynamics-365-commerce-preview-environment"></a>Konfigurere et miljø for forhåndsvisning av Dynamics 365 Commerce
 
@@ -35,7 +35,7 @@ Dette emnet forklarer hvordan du konfigurerer et Microsoft Dynamics 365 Commerce
 
 Fullfør prosedyrene i dette emnet bare etter at forhåndsvisningsmiljøet i Commerce er klargjort. Hvis du vil ha informasjon om hvordan du klargjør Commerce-forhåndsvisningsmiljøet, kan du se [Klargjøre et Commerce-forhåndsvisningsmiljø](provisioning-guide.md).
 
-Når forhåndsvisningsmiljøet i Commerce er klargjort ende til ende, må du fullføre flere trinn etter klargjøring før du kan begynne å evaluere miljøet. Hvis du vil fullføre disse trinnene, må du bruke Microsoft Dynamics Lifecycle Services (LCS, Dynamics 365 Commerce) og Dynamics 365 Retail.
+Når forhåndsvisningsmiljøet i Commerce er klargjort ende til ende, må du fullføre flere trinn etter klargjøring før du kan begynne å evaluere miljøet. Hvis du vil fullføre disse trinnene, må du bruke Microsoft Dynamics Lifecycle Services (LCS, ) og Dynamics 365 Commerce.
 
 ## <a name="before-you-start"></a>Før du starter
 
@@ -53,7 +53,7 @@ Når forhåndsvisningsmiljøet i Commerce er klargjort ende til ende, må du ful
 
 Hvis du vil knytte en arbeider med identiteten din i LCS, følger du denne fremgangsmåten.
 
-1. Bruk menyen til venstre, og gå til **Moduler \> Detaljhandel \> Ansatte \> Arbeidere**.
+1. Bruk menyen til venstre, og gå til **Moduler \> Retail og Commerce \> Ansatte \> Arbeidere**.
 1. Finn og velg følgnede post i listen **000713 - Andrew Collette**.
 1. Velg **Detaljhandel** i handlingsruten.
 1. Velg **Tilknytt eksisterende ID**.
@@ -91,12 +91,12 @@ Følg denne fremgangsmåten for å begynne å konfigurere forhåndsvisningsområ
 1. Behold verdien i **Bane**-feltet slik det er.
 1. Velg **OK**. Listen over sider på området vises.
 
-## <a name="enable-jobs-in-retail"></a>Aktivere jobber i detaljhandel
+## <a name="enable-jobs"></a>Aktivere jobber
 
-Følg disse trinnene for å aktivere jobber i detaljhandel.
+Følg disse trinnene for å aktivere jobber i Commerce.
 
 1. Logg på miljøet (hovedkontor).
-1. Gå til **Detaljhandel \> Forespørsler og rapporter \> Satsvise jobber** ved hjelp av menyen til venstre.
+1. Gå til **Retail og Commerce \> Forespørsler og rapporter \> Satsvise jobber** ved hjelp av menyen til venstre.
 
     De resterende trinnene i denne prosedyren må fullføres for hver av følgende jobber:
 
@@ -112,11 +112,11 @@ Følg disse trinnene for å aktivere jobber i detaljhandel.
     1. Velg **Endre status** i kategorien **Satsvis jobb** i handlingsruten.
     1. Velg **Venter**, og velg deretter **OK**.
 
-### <a name="run-full-data-synchronization-in-retail"></a>Kjøre fullstendig datasynkronisering i detaljhandel
+### <a name="run-full-data-synchronization"></a>Kjøre fullstendig datasynkronisering
 
-Hvis du vil kjøre full datasynkronisering i detaljhandel, gjør du følgende:
+Hvis du vil kjøre full datasynkronisering i Commerce, gjør du følgende:
 
-1. Bruk menyen til venstre og gå til **Moduler \> Detaljhandel \> Hovedkvarteroppsett \> Detaljhandel Planlegger \> Kanaldatabase**.
+1. Bruk menyen til venstre og gå til **Moduler \> Retail og Commerce \> Hovedkvarteroppsett \> Detaljhandel Planlegger \> Kanaldatabase**.
 1. **Standard**-kanalen velges fra listen til venstre. Velg den andre tilgjengelige kanalen. Denne kanalen heter **scXXXXXXXXX**.
 1. I handlingsruten velger du **Fullstendig datasynkronisering**.
 1. Angi **9999** som distribusjonsplan.

@@ -3,7 +3,7 @@ title: Tilkoblede og frakoblede salgsstedsoperasjoner (POS)
 description: Dette emnet inneholder informasjon om salgsstedsoperasjoner i Dynamics 365 Commerce. Den angir hvor i programmet operasjonene kan startes, og om de er tilgjengelige i frakoblet modus.
 author: jblucher
 manager: AnnBe
-ms.date: 05/21/2019
+ms.date: 02/21/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2017-09-27
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: bf67c53ffd5bd530f484b60da604fd9338c964fd
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 24ef0ad8528d1d094f59736b7a36fd77f57fb227
+ms.sourcegitcommit: 161e85eb0a6b772b60ba8b2578a3de149ce5bfd7
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3023600"
+ms.lasthandoff: 02/22/2020
+ms.locfileid: "3081345"
 ---
 # <a name="online-and-offline-point-of-sale-pos-operations"></a>Tilkoblede og frakoblede salgsstedsoperasjoner (POS)
 
@@ -51,7 +51,9 @@ Følgende kolonner angir hvor operasjonene kan startes:
 | 135 | Legg til tilknytning fra en liste | Legg til en tilknytning til en transaksjon ved å velge den i en liste. | Ja | Ja | Ja | Ja | Antall |
 | 137 | Legge til en tilknytning for en kunde | Du kan legge til en tilknytning til en kunde på siden **Kundedetaljer**. | Antall | Antall | Antall | Ja | Antall |
 | 138 | Fjerne tilknytning fra kunde | Du kan fjerne en tilknytning på siden **Kundedetaljer**. | Antall | Antall | Antall | Ja | Antall |
-| 643 | Legg til kupongkode | Legg til en kupong ved å angi koden i POS. | Ja | Ja | Antall | Ja | Antall |
+| 643 | Legg til kupongkode | Legg til en kupong ved å angi koden i POS. | Ja | Ja | Nei | Ja | Nei |
+| 141 | Legg til hodegebyrer | Legg til et tillegg i ordrehodet. | Ja | Ja | Nei | Nei| Nei |
+| 141 | Legg til linjegebyrer | Legg til et tillegg på en valgt salgslinje. | Ja | Ja | Nei | Nei| Nei |
 | 117 | Legg til fordelskort | Be brukeren om å angi et fordelskortnummer som skal legges til den gjeldende transaksjonen. | Ja | Ja | Antall | Ja | Antall |
 | 136 | Legg til serienummer | Denne operasjonen lar brukeren angi et serienummer for det valgte produktet. | Ja | Ja | Antall | Ja | Antall |
 | 1214 | Legg til leveringsadresse | Denne operasjonen støttes ikke. | Gjelder ikke her | Gjelder ikke her | Gjelder ikke her | Gjelder ikke her | Antall |
@@ -63,7 +65,8 @@ Følgende kolonner angir hvor operasjonene kan startes:
 | 1053 | Lukk skift usporet | Sett gjeldende skift til lukket usporet, og logg brukeren av. Et usporet skift lukkes for flere transaksjoner, men er fortsatt åpen for kasseoperasjoner, for eksempel fjerning av betalingsmidler og kasseoppgjør. | Ja | Ja | Ja | Antall | Antall |
 | 310 | Beregn total | Når rabattberegning er forsinket, starter denne operasjonen beregningen for gjeldende transaksjon. | Ja | Ja | Antall | Ja | Antall |
 | 642 | Utfør alle produkter | Sett leveringsmåten for alle linjer til **Utlevering**. | Ja | Ja | Antall | Ja\* | Antall |
-| 641 | Utfør valgte produkter | Sett leveringsmåten for de valgte linjene til **Utlevering**. | Ja | Ja | Antall | Ja\* | Antall |
+| 641 | Utfør valgte produkter | Sett leveringsmåten for de valgte linjene til **Utlevering**. | Ja | Ja | Nei | Ja\* | Nei |
+| 647 | Endre leveringsmåte | Endre leveringsmåte for forhåndskonfigurerte forsendelseslinjer. | Ja | Ja | Nei | Nei| Nei |
 | 1215 | Endre passord | Denne operasjonen lar POS-brukeren endre passordet. | Ja | Ja | Ja | Antall | Antall |
 | 123 | Endre måleenhet | Endre måleenheten for det valgte linjeelementet. | Ja | Ja | Antall | Ja | Antall |
 | 639 | Fjern standard selger i transaksjon | Fjerne provisjonssalgsgruppen (selger) fra transaksjonen. | Ja | Ja | Antall | Ja | Antall |
@@ -99,7 +102,8 @@ Følgende kolonner angir hvor operasjonene kan startes:
 | 1201 | Flytoppføring | Denne operasjonen lar brukeren legge til mer penger i gjeldende skuff eller skift. | Ja | Ja | Ja | Ja | Antall |
 | 1218 | Bruk opplåsing for ekstern enhet | Systemet bruker denne operasjonen internt for å låse opp POS-enheter. | Gjelder ikke her | Gjelder ikke her | Gjelder ikke her | Gjelder ikke her | Antall |
 | 520 | Gavekortsaldo | Vis saldoen på et gavekort. | Ja | Ja | Antall | Antall | Antall |
-| 708 | Deaktiver enhet | Deaktiver gjeldende enhet, slik at den ikke kan brukes som kasse på salgssted. | Antall | Antall | Antall | Antall | Antall |
+| 708 | Deaktiver enhet | Deaktiver gjeldende enhet, slik at den ikke kan brukes som kasse på salgssted. | Nei | Nei | Nei | Nei | Nei |
+| 804 | Innkommende operasjon | Få tilgang til funksjonene i inngående butikklagerstyring. | Ja | Nei | Ja | Nei| Nei |
 | 517 | Inntektskontoer | Registrer penger som legges i kassaskuffen av andre grunner enn salg. | Ja | Ja | Ja | Ja | Antall |
 | 801 | Beholdningsoppslag | Slå opp antall tilgjengelig, i ordre og tilgjengelig for ordre (ATP) for gjeldende butikk og andre tilgjengelige lokasjoner. | Ja | Ja | Ja | Antall | Antall |
 | 122 | Fakturakommentar | Denne operasjonen lar brukeren skrive inn en kommentar om gjeldende transaksjon. | Ja | Ja | Antall | Ja | Antall |
@@ -110,11 +114,13 @@ Følgende kolonner angir hvor operasjonene kan startes:
 | 301 | Linjerabatt i prosent | Angi en rabattprosent for et linjeelement i transaksjonen. Denne operasjonen brukes bare for varer som det gis rabatt på, og bare innenfor de angitte rabattrammene. | Ja | Ja | Antall | Ja | Antall |
 | 703 | Lås kasse | Lås gjeldende kasse, slik at den ikke kan brukes, men ikke logg av gjeldende bruker. | Antall | Antall | Antall | Ja | Antall |
 | 701 | Logg av | Logg gjeldende bruker av kassen. | Ja | Ja | Ja | Ja | Antall |
-| 521 | Poengsaldo for fordelskort | Vis saldoen for poeng for det angitte fordelskortet. | Ja | Ja | Antall | Antall | Antall |
+| 521 | Poengsaldo for fordelskort | Vis saldoen for poeng for det angitte fordelskortet. | Ja | Ja | Nei | Nei | Nei |
+| 142 | Behandle gebyrer | Vis og behandle tillegg brukt på transaksjonen. | Ja | Ja | Nei | Nei| Nei |
 | 918 | Behandle skift | Vis en liste over skift som er aktive, suspendert eller blitt lukket usporet. | Ja | Ja | Ja | Antall | Antall |
 | 914 | Minimer salgsstedvinduet | Denne operasjonen støttes ikke. | Gjelder ikke her | Gjelder ikke her | Gjelder ikke her | Gjelder ikke her | Antall |
 | 1000 | Åpne skuff | Utfører en "ikke salg"-operasjon og åpner den valgte kassaskuffen. | Ja | Ja | Ja | Ja | Antall |
-| 928 | Ordreoppfyllelse | Denne operasjonen lar brukere plukke, pakke, sende eller tilbakekalle ordrer for butikken som er plukket. | Ja | Ja | Ja | Antall | Antall |
+| 928 | Ordreoppfyllelse | Denne operasjonen lar brukere plukke, pakke, sende eller tilbakekalle ordrer for butikken som er plukket. | Ja | Ja | Ja | Nei | Nei |
+| 805 | Utgående operasjon | Få tilgang til funksjoner for behandling av forsendelser for utgående overføringsordrer. | Ja | Nei | Ja | Nei| Nei |
 | 129 | Overstyr linjeproduktavgift | Overstyr avgiften på det valgte linjeelementet, og bruk en annen angitt avgift. | Ja | Ja | Antall | Ja | Antall |
 | 130 | Overstyr linjeproduktavgift fra liste | Overstyr avgiften på det valgte linjeelementet, og bruk avgiften som brukeren velger fra en liste. | Ja | Ja | Antall | Ja | Antall |
 | 127 | Overstyr transaksjonsavgift | Overstyr avgiften på transaksjonen, og bruk en annen angitt avgift. | Ja | Ja | Antall | Ja | Antall |
@@ -146,7 +152,8 @@ Følgende kolonner angir hvor operasjonene kan startes:
 | 100 | Produktsalg | Legg til et angitt produkt i transaksjonen. | Ja | Ja | Ja | Ja | Antall |
 | 108 | Produktsøk | Denne operasjonen lar brukeren søke etter et produkt ved å gå til produktsøkesiden i POS. | Ja | Ja | Ja | Ja | Antall |
 | 633 | Utløpsdato for tilbud | Denne operasjonen lar brukeren vise eller endre utløpsdatoen for et salgstilbud. | Ja | Ja | Antall | Ja\* | Antall |
-| 627 | Omberegn | Beregn alle kundeordrelinjer og avgifter på nytt basert på gjeldende konfigurasjon. | Ja | Ja | Antall | Ja\* | Antall |
+| 627 | Omberegn | Beregn alle kundeordrelinjer og avgifter på nytt basert på gjeldende konfigurasjon. | Ja | Ja | Nei | Ja\* | Nei |
+| 143 | Beregn gebyrer på nytt | Omberegn de automatiske tilleggene som er brukt på ordren. | Ja | Ja | Nei | Nei| Nei |
 | 515 | Tilbakekall ordre | Denne operasjonen lar brukeren søke etter og tilbakekalle kundeordrer og salgstilbud. | Ja | Ja | Ja | Antall | Antall |
 | 504 | Tilbakekall transaksjon | Denne operasjonen lar brukeren tilbakekalle en tidligere suspendert transaksjon fra gjeldende butikk. | Ja | Ja | Antall | Ja‡ | Antall |
 | 305 | Innløs fordelspoeng | Denne operasjonen støttes ikke. | Gjelder ikke her | Gjelder ikke her | Gjelder ikke her | Gjelder ikke her | Ja |

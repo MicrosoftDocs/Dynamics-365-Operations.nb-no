@@ -1,6 +1,6 @@
 ---
-title: Opprett en funksjonalitetsprofil for detaljhandel
-description: Dette emnet beskriver hvordan du oppretter en funksjonalitetsprofil for detaljhandel i Microsoft Dynamics 365 Commerce.
+title: Opprette en funksjonalitetsprofil for Retail
+description: Dette emnet beskriver hvordan du oppretter en funksjonalitetsprofil i Microsoft Dynamics 365 Commerce.
 author: samjarawan
 manager: annbe
 ms.date: 01/27/2020
@@ -17,27 +17,27 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 9fb0fd63b11e55f2b153fc9c135f148a6e343057
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 6bee51eb25b04eb65e588dd4cf54a0cef587aa15
+ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3002849"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "3057354"
 ---
-# <a name="create-a-retail-functionality-profile"></a>Opprett en funksjonalitetsprofil for detaljhandel
+# <a name="create-a-retail-functionality-profile"></a>Opprette en funksjonalitetsprofil for Retail
 
 
 [!include [banner](includes/banner.md)]
 
-Dette emnet beskriver hvordan du oppretter en funksjonalitetsprofil for detaljhandel i Microsoft Dynamics 365 Commerce.
+Dette emnet beskriver hvordan du oppretter en funksjonalitetsprofil i Microsoft Dynamics 365 Commerce.
 
 ## <a name="overview"></a>Oversikt
 
-Funksjonalitetsprofilen for detaljhandel inneholder ulike innstillinger som brukes for Internett-kanaler. Hver detaljhandelskanal må angi en funksjonalitetsprofil for detaljhandel.
+Funksjonalitetsprofilen for handel inneholder ulike innstillinger som brukes for Internett-kanaler. Hver kanal må angi en funksjonalitetsprofil.
 
-## <a name="create-a-retail-functionality-profile"></a>Opprett en funksjonalitetsprofil for detaljhandel
+## <a name="create-a-functionality-profile"></a>Opprett en funksjonalitetsprofil
 
-Hvis du vil opprette en profil for funksjonalitet for detaljhandel, gjør du følgende.
+Hvis du vil opprette en funksjonalitetsprofil, gjør du følgende.
 
 1. I navigasjonsruten går du til **Moduler \> Kanaloppsett \> Salgsstedsprofiler \> Funksjonalitetsprofiler**.
 1. I handlingsruten velger du **Ny**.
@@ -51,9 +51,9 @@ Hvis du vil opprette en profil for funksjonalitet for detaljhandel, gjør du fø
 1. I **Infokoder**-delen endrer du innstillinger etter behov.
 1. I **Kvitteringsnummerering**-delen endrer du innstillinger etter behov. 
   
-Bildet nedenfor viser et eksempel på en funksjonalitetsprofil for detaljhandel.
+Bildet nedenfor viser et eksempel på en funksjonalitetsprofil.
   
-![Eksempel på funksjonalitetsprofil for detaljhandel](media/retail-functionality-profile.png)
+![Eksempel på funksjonalitetsprofil](media/retail-functionality-profile.png)
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 

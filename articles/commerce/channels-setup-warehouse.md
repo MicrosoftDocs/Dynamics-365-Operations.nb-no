@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: fe785e3bfd503193a588958ae5df0d1c0fdb9e52
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 9ba12876a8c8f841733d8ec49c33e900211c4ab4
+ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3002318"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "3057862"
 ---
 # <a name="warehouse-set-up"></a>Lageroppsett
 
@@ -59,7 +59,7 @@ Følg denne fremgangsmåten for å definere et lager.
 
 1. I navigasjonsruten går du til **Moduler \> Detaljhandel og handel \> Kanaloppsett \> Lagre**.
 1. I handlingsruten velger du **Ny**.
-1. Angi en verdi i feltet **Lager**.  Hvis dette er en 1:1-tilordning til en detaljhandelsbutikk, kan du vurdere å bruke butikknavnet eller navnet på et regionalt distribusjonssenter.
+1. Angi en verdi i feltet **Lager**.  Hvis dette er en 1:1-tilordning til en butikk, kan du vurdere å bruke butikknavnet eller navnet på et regionalt distribusjonssenter.
 1. Angi en verdi i feltet **Navn**.
 1. I rullegardinlisten **Område** velger du lagerområdet som ble opprettet tidligere.
 1. I feltet **Type** velger du **Standard**.

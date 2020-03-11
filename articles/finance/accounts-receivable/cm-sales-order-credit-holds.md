@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: mfalkner
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 23f819139e74d81d24810c63bae1de19358983b9
-ms.sourcegitcommit: 6a70f9ac296158edd065d52a12703b3ce85ce5ee
+ms.openlocfilehash: 316a626e6a18f0afda632111138482f62f6809db
+ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3015345"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "3057676"
 ---
 # <a name="credit-holds-for-sales-orders"></a>Kredittsperrer for salgsordrer
 [!include [banner](../includes/banner.md)]
@@ -264,7 +264,7 @@ Salgsordrer som er tvunget på vent, kan ikke behandles med arbeidsflyt.
 #### <a name="releasing-orders-that-were-added-to-the-credit-management-hold-list-with-a-forced-credit-hold"></a>Frigi ordrer som ble lagt til i listen over kredittbehandling på vent med en tvungen kredittsperre
 Salgsordrer som har en tvungen sperreårsak, kan ikke frigis automatisk. Hvis salgsordren ble tvunget på vent, og du har brukt en prosess som automatisk frigir salgsordrer, vises salgsordren som **Klar til frigivelse** og forblir i sperrelisten. Du må bruke **Frigi**-menyen til å frigi ordren.
  
-## <a name="free-text-invoices-retail-orders-and-project-invoice-support-in-credit-management"></a>Fritekstfakturaer, detaljhandelsordrer og prosjektfakturastøtte i kredittbehandling 
-Kredittbehandling kan bare brukes for salgsordrer for øyeblikket. Fritekstfakturaer, detaljhandelsordrer og telefonsenterordrer bruker de midlertidige kredittgrensene og forsikring/garantier du legger til for å justere kredittgrensen. De bruker ikke blokkeringsreglene, og de plasseres ikke i sperrelisten hvis det oppstår et problem med kredittgrensen.
+## <a name="free-text-invoices-orders-and-project-invoice-support-in-credit-management"></a>Fritekstfakturaer, ordrer og prosjektfakturastøtte i kredittbehandling 
+Kredittbehandling kan bare brukes for salgsordrer for øyeblikket. Fritekstfakturaer, salgsstedsordrer og telefonsenterordrer bruker de midlertidige kredittgrensene og forsikring/garantier du legger til for å justere kredittgrensen. De bruker ikke blokkeringsreglene, og de plasseres ikke i sperrelisten hvis det oppstår et problem med kredittgrensen.
 
 Det er ikke støtte for prosjektfakturaer i kredittbehandling.
