@@ -18,41 +18,41 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 42a345fc48b0d87b353308060903a6b5156c0e62
-ms.sourcegitcommit: 36857283d70664742c8c04f426b231c42daf4ceb
+ms.openlocfilehash: 808e328bfcc35c96091da9a69850429b82a71070
+ms.sourcegitcommit: 3dede95a3b17de920bb0adcb33029f990682752b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "2915884"
+ms.lasthandoff: 02/18/2020
+ms.locfileid: "3070581"
 ---
-# <span data-ttu-id="0ba81-103"><a name="CH_BANK_MOD_10">CH_BANK_MOD_10-funksjon</a></span><span class="sxs-lookup"><span data-stu-id="0ba81-103"><a name="CH_BANK_MOD_10">CH_BANK_MOD_10 ER function</a></span></span>
+# <span data-ttu-id="b3d5c-103"><a name="CH_BANK_MOD_10">CH_BANK_MOD_10-funksjon</a></span><span class="sxs-lookup"><span data-stu-id="b3d5c-103"><a name="CH_BANK_MOD_10">CH_BANK_MOD_10 ER function</a></span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="0ba81-104">`CH_BANK_MOD_10`-funksjonen returnerer en *streng*-verdi som representerer en kreditorreferanse som et MOD10-uttrykk, basert på sifrene i det angitte fakturanummeret.</span><span class="sxs-lookup"><span data-stu-id="0ba81-104">The `CH_BANK_MOD_10` function returns a *String* value that represents a creditor reference as an MOD10 expression, based on the digits of the specified invoice number.</span></span>
+<span data-ttu-id="b3d5c-104">`CH_BANK_MOD_10`-funksjonen returnerer en *streng*-verdi som representerer en kreditorreferanse som et MOD10-uttrykk, basert på sifrene i det angitte fakturanummeret.</span><span class="sxs-lookup"><span data-stu-id="b3d5c-104">The `CH_BANK_MOD_10` function returns a *String* value that represents a creditor reference as an MOD10 expression, based on the digits of the specified invoice number.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="0ba81-105">Syntaks</span><span class="sxs-lookup"><span data-stu-id="0ba81-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="b3d5c-105">Syntaks</span><span class="sxs-lookup"><span data-stu-id="b3d5c-105">Syntax</span></span>
 
-```
+```vb
 CH_BANK_MOD_10 (invoice number digits)
 ```
 
-## <a name="arguments"></a><span data-ttu-id="0ba81-106">Argumenter</span><span class="sxs-lookup"><span data-stu-id="0ba81-106">Arguments</span></span>
+## <a name="arguments"></a><span data-ttu-id="b3d5c-106">Argumenter</span><span class="sxs-lookup"><span data-stu-id="b3d5c-106">Arguments</span></span>
 
-<span data-ttu-id="0ba81-107">`invoice number digits`: *Streng*</span><span class="sxs-lookup"><span data-stu-id="0ba81-107">`invoice number digits`: *String*</span></span>
+<span data-ttu-id="b3d5c-107">`invoice number digits`: *Streng*</span><span class="sxs-lookup"><span data-stu-id="b3d5c-107">`invoice number digits`: *String*</span></span>
 
-<span data-ttu-id="0ba81-108">En tekstverdi som representerer sifrene i et fakturanummer.</span><span class="sxs-lookup"><span data-stu-id="0ba81-108">A text value that represents the digits of an invoice number.</span></span>
+<span data-ttu-id="b3d5c-108">En tekstverdi som representerer sifrene i et fakturanummer.</span><span class="sxs-lookup"><span data-stu-id="b3d5c-108">A text value that represents the digits of an invoice number.</span></span>
 
-## <a name="return-values"></a><span data-ttu-id="0ba81-109">Returverdier</span><span class="sxs-lookup"><span data-stu-id="0ba81-109">Return values</span></span>
+## <a name="return-values"></a><span data-ttu-id="b3d5c-109">Returverdier</span><span class="sxs-lookup"><span data-stu-id="b3d5c-109">Return values</span></span>
 
-<span data-ttu-id="0ba81-110">*Streng*</span><span class="sxs-lookup"><span data-stu-id="0ba81-110">*String*</span></span>
+<span data-ttu-id="b3d5c-110">*Streng*</span><span class="sxs-lookup"><span data-stu-id="b3d5c-110">*String*</span></span>
 
-<span data-ttu-id="0ba81-111">Den resulterende tekstverdien.</span><span class="sxs-lookup"><span data-stu-id="0ba81-111">The resulting text value.</span></span>
+<span data-ttu-id="b3d5c-111">Den resulterende tekstverdien.</span><span class="sxs-lookup"><span data-stu-id="b3d5c-111">The resulting text value.</span></span>
 
-## <a name="example"></a><span data-ttu-id="0ba81-112">Eksempel</span><span class="sxs-lookup"><span data-stu-id="0ba81-112">Example</span></span>
+## <a name="example"></a><span data-ttu-id="b3d5c-112">Eksempel</span><span class="sxs-lookup"><span data-stu-id="b3d5c-112">Example</span></span>
 
-<span data-ttu-id="0ba81-113">`CH_BANK_MOD_10 ("VEND-200002")` returnerer **3**.</span><span class="sxs-lookup"><span data-stu-id="0ba81-113">`CH_BANK_MOD_10 ("VEND-200002")` returns **3**.</span></span>
+<span data-ttu-id="b3d5c-113">`CH_BANK_MOD_10 ("VEND-200002")` returnerer **3**.</span><span class="sxs-lookup"><span data-stu-id="b3d5c-113">`CH_BANK_MOD_10 ("VEND-200002")` returns **3**.</span></span>
 
-## <a name="additional-resources"></a><span data-ttu-id="0ba81-114">Tilleggsressurser</span><span class="sxs-lookup"><span data-stu-id="0ba81-114">Additional resources</span></span>
+## <a name="additional-resources"></a><span data-ttu-id="b3d5c-114">Tilleggsressurser</span><span class="sxs-lookup"><span data-stu-id="b3d5c-114">Additional resources</span></span>
 
-[<span data-ttu-id="0ba81-115">Andre funksjoner (spesifikke for forretningsområder)</span><span class="sxs-lookup"><span data-stu-id="0ba81-115">Other (business domain–specific) functions</span></span>](er-functions-category-other.md)
+[<span data-ttu-id="b3d5c-115">Andre funksjoner (spesifikke for forretningsområder)</span><span class="sxs-lookup"><span data-stu-id="b3d5c-115">Other (business domain–specific) functions</span></span>](er-functions-category-other.md)
