@@ -166,6 +166,8 @@
                   href: ../fin-ops-core/fin-ops/get-started/personalize-user-experience.md?toc=/dynamics365/commerce/toc.json
                 - name: Lagrede visninger
                   href: ../fin-ops-core/fin-ops/get-started/saved-views.md?toc=/dynamics365/commerce/toc.json
+                - name: Rutenettfunksjoner
+                  href: ../fin-ops-core/fin-ops/get-started/grid-capabilities.md?toc=/dynamics365/commerce/toc.json
                 - name: Opprette og arbeide med egendefinerte felt
                   href: ../fin-ops-core/fin-ops/get-started/user-defined-fields.md?toc=/dynamics365/commerce/toc.json
                 - name: Bygge inn PowerApps-apper
@@ -438,18 +440,22 @@
                   href: configure-call-center-delivery.md
                 - name: Definere og arbeide med svindelvarsler
                   href: set-up-fraud-alerts.md
-                - name: Definere kontinuitetsprogrammer for telefonsentre
-                  href: set-up-continuity-program.md
             - name: Konfigurasjon av tilleggskanal
               items:
-                - name: Legge til en kanal i et organisasjons
+                - name: Legge til en kanal i et organisasjonshierarki
                   href: channel-add-to-org-hierarchy.md
                 - name: Avanserte automatiske gebyrer
                   items:
                     - name: Konfigurere og bruke avanserte automatiske tillegg
                       href: omni-auto-charges.md
-                    - name: Fordel hodegebyrer til samsvarende salgslinjer
+                    - name: Fordele hodegebyrer til samsvarende salgslinjer
                       href: pro-rate-charges-matching-lines.md
+                - name: Behandle kontinuitetsprogrammer
+                  items:
+                    - name: Definere kontinuitetsprogrammer for telefonsentre
+                      href: set-up-continuity-program.md
+                    - name: Definere kontinuitetsplaner
+                      href: tasks/define-continuity-schedules.md
                 - name: Administrasjon av detaljhandelsbutikk
                   items:
                     - name: Opprette og endre åpningstid
@@ -460,8 +466,6 @@
                   items:
                     - name: Konfigurere og arbeide med ordresperrer i telefonsenter
                       href: work-with-order-holds.md
-                    - name: Definere kontinuitetsplaner
-                      href: tasks/define-continuity-schedules.md
                 - name: Betalinger
                   items:
                     - name: Betalingsmåter
@@ -478,6 +482,8 @@
                       href: dev-itpro/adyen-connector.md
                     - name: Lagre betalingsmåter på nett med Adyen-koblingen
                       href: dev-itpro/adyen-connector-listpi.md
+                    - name: Sømløs bryter for frakoblet modus for gavekort- og kreditnotaoperasjoner
+                      href: dev-itpro/seamless-offline-improvements.md
                     - name: Definere scenarier for betaling av faktura
                       href: payinvoice.md
                     - name: Forhindring av like betalinger
@@ -494,9 +500,9 @@
                   href: ../supply-chain/pim/product-information.md?toc=/dynamics365/commerce/toc.json
                 - name: Definere detaljhandelsprodukter
                   href: set-up-retail-products.md
-                - name: Hierarki for detaljhandelsprodukt
+                - name: Produkthierarki
                   items:
-                    - name: Detaljhandelshierarkier
+                    - name: Commerce-hierarkier
                       href: retail-hierarchies.md
                     - name: Opprette et nytt produkthierarki
                       href: create-product-hierarchy.md
@@ -624,6 +630,12 @@
                       href: tasks/push-products-distribution-center-store-buyers-push.md
                     - name: Definere regler og parametere for direkteoverføring og sentralt innkjøp
                       href: tasks/set-up-rules-parameters-cross-docking-buyers-push.md
+                    - name: Inngående lageroperasjon på salgsstedet
+                      href: pos-inbound-inventory-operation.md
+                    - name: Utgående lageroperasjon på salgsstedet
+                      href: pos-outbound-inventory-operation.md
+                    - name: Beregne lagertilgjengelighet for detaljhandelskanaler
+                      href: calculated-inventory-retail-channels.md
                 - name: Bestillinger
                   items:
                     - name: Oversikt over bestilling
@@ -714,7 +726,7 @@
               href: statement-posting-eod.md
             - name: Forbedret håndtering av varer med partisporing
               href: batch.md
-            - name: Konfigurere handelsparametere som påvirker utdrag
+            - name: Konfigurere Commerce-parametere som påvirker utdrag
               href: tasks/parameter-configurations-retail-statements.md
             - name: Konfigurere innstillinger for betalingsmåte som påvirker detaljhandelsutdrag
               href: tasks/payment-configurations-retail-statements.md
@@ -722,10 +734,22 @@
               href: tasks/run-job-calculate-statements.md
             - name: Konfigurere og kjøre en jobb for å postere utdrag
               href: tasks/run-job-post-statements.md
-            - name: Konfigurere oppbevaringsinnstillinger som påvirker detaljhandelsutdrag
+            - name: Konfigurere butikkinnstillinger som påvirker detaljhandelsutdrag
               href: tasks/store-configurations-retail-statements.md
             - name: Postering av elektroniske salg og betalinger
               href: tasks/posting-online-sales-payments.md
+        - name: Behandle arbeideroppgaver
+          items:
+            - name: Oversikt over oppgavebehandling
+              href: task-mgmt-overview.md
+            - name: Konfigurere oppgavebehandling
+              href: task-mgmt-configure.md
+            - name: Opprette oppgavelister og legge til oppgaver
+              href: task-mgmt-create-lists.md
+            - name: Tilordne oppgavelister til butikker eller ansatte
+              href: task-mgmt-assign-lists.md
+            - name: Oppgavebehandling på salgsstedet
+              href: task-mgmt-pos.md
         - name: Administrere e-handelsområdet ditt
           items:
             - name: Oversikt over nettbutikk
@@ -880,6 +904,8 @@
                   items:
                     - name: Kjøpsboksmodul
                       href: add-buy-box.md
+                    - name: Vurderings- og omtalemoduler
+                      href: ratings-reviews-modules.md
                 - name: Innkjøpsmoduler
                   items:
                     - name: Handlekurvmodul
@@ -1052,13 +1078,15 @@
                   href: ../fin-ops-core/dev-itpro/analytics/warehouse-power-bi-content.md?toc=/dynamics365/commerce/toc.json
                 - name: Metrikk for arbeidsstyrke
                   href: ../fin-ops-core/dev-itpro/analytics/workforce-analysis-power-bi-content-pack.md?toc=/dynamics365/commerce/toc.json
-            - name: Rapportere og skrive ut og dokumenter
+            - name: Rapportere og skrive ut dokumenter
               items:
                 - name: Oversikt over dokumentrapporteringstjenester
                   href: ../fin-ops-core/dev-itpro/analytics/document-reporting-services.md?toc=/dynamics365/commerce/toc.json
+                - name: Skrifter som støttes
+                  href: ../fin-ops-core/dev-itpro/analytics/supported-fonts.md?toc=/dynamics365/commerce/toc.json
                 - name: Konfigurere SSRS for lokale distribusjoner
                   href: ../fin-ops-core/dev-itpro/analytics/configure-ssrs-on-premises.md?toc=/dynamics365/commerce/toc.json
-                - name: Skriver ut
+                - name: Utskrift
                   items:
                     - name: Oversikt over utskrift av dokument
                       href: ../fin-ops-core/dev-itpro/analytics/print-documents.md?toc=/dynamics365/commerce/toc.json
@@ -1834,8 +1862,6 @@
                       href: e-commerce-extensibility/add-module-config-fields.md
                     - name: Forhåndsvise og feilsøke moduler
                       href: e-commerce-extensibility/test-module.md
-                    - name: Feilsøke moduler
-                      href: e-commerce-extensibility/debug-modules.md
                     - name: Teste moduler ved hjelp av simuleringer
                       href: e-commerce-extensibility/test-module-mock.md
                     - name: Teste moduler ved hjelp av sidesimuleringer
@@ -1972,10 +1998,12 @@
                   href: dev-itpro/pos-trigger-printing.md
                 - name: Legge til egendefinerte kontroller i POS-visninger som ikke er skjermutformingsbaserte
                   href: dev-itpro/pos-control-non-screen.md
-                - name: Kjøre eksemplene for POS
+                - name: Kjøre eksemplene for salgssted
                   href: dev-itpro/pos-run-samples.md
                 - name: Implementeringsveiledning for enhetsbehandling
                   href: implementation-considerations-devices.md
+                - name: Visningshendelser og -behandlinger for salgsstedshandlekurv
+                  href: dev-itpro/cart-view-handlers.md
             - name: Utvidelsesmulighet for Hardware Station
               items:
                 - name: Hardware Station og utvidelsesmulighet
@@ -2006,7 +2034,7 @@
                   href: dev-itpro/commerce-runtime-extensibility.md
                 - name: Legge til kundeinnstillingsdata i kanaldatabaser
                   href: dev-itpro/add-customer-preference-channel.md
-                - name: Behandle hemmeligheter for detaljhandelskanaler
+                - name: Behandle hemmeligheter for Retail-kanaler
                   href: dev-itpro/manage-secrets.md
                 - name: Legge til egenskaper i salgsordrer
                   href: dev-itpro/add-properties-sales-order.md
@@ -2032,6 +2060,8 @@
                   href: dev-itpro/retail-sdk/retail-sdk-samples.md
                 - name: Logge utvidelseshendelser til Application Insights
                   href: dev-itpro/commerce-application-insights.md
+                - name: Opprette asynkrone Commerce (CRT)-API-er i forretningslogikken
+                  href: dev-itpro/async-commerce-extension.md
             - name: Utvidelsesmuligheter for betalingskobling
               items:
                 - name: Opprette en betalingsintegrering for en betalingsterminal
@@ -2048,9 +2078,11 @@
                   href: payment-connector-data-fields.md
                 - name: Aktivere duplisert betalingsbeskyttelse for betalingskobling
                   href: dev-itpro/duplicate-payment-protection.md
+                - name: Opprette betalingspakke for Programutforsker i Service Fabric-distribusjoner
+                  href: dev-itpro/payment-connector-package.md
             - name: Utvidelsesmulighet for e-handel med tredjepart
               items:
-                - name: Konfigurer nettbutikker
+                - name: Konfigurere nettbutikker
                   href: dev-itpro/configure-online-store.md
                 - name: Konfigurere godkjenningsleverandører
                   href: dev-itpro/configure-authentication-providers.md
@@ -2060,8 +2092,6 @@
               href: dev-itpro/extension-resource-localization.md
     - name: Utvikling og administrasjon av Finance and Operations-apper
       href: ../fin-ops-core/dev-itpro/index.md
-    - name: Dynamics 365 Retail
-      href: index.md
     - name: Dynamics 365 Finance
       href: ../finance/index.md
     - name: Dynamics 365 Supply Chain Management

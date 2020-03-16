@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3b1c6a3f3fd5b55012d89a6c9f0bf2ed5dddd13c
-ms.sourcegitcommit: 36857283d70664742c8c04f426b231c42daf4ceb
+ms.openlocfilehash: bdd8b9c120fc4a860717a66b9dfa66e6b0daed93
+ms.sourcegitcommit: 3c1eb3d89c6ab9bd70b806ca42ef9df74cf850bc
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "2916666"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "3042717"
 ---
 # <a name="electronic-reporting-formula-language"></a>Formelspråk i elektronisk rapportering
 
@@ -154,7 +154,7 @@ ER lar deg utvide listen over funksjoner som brukes i ER-uttrykk. Det er nødven
 
 Du kan opprette sammensatte uttrykk som bruker funksjoner fra forskjellige kategorier, forutsatt at datatypene samsvarer. Når du bruker funksjoner sammen, må du samsvare datatypen for utdataene fra én funksjon med datatypen inndata som kreves av en annen funksjon. Hvis du for eksempel vil unngå en mulig "listen-er-tom"-feil i en binding av et felt til et ER-formatelement, kan du kombinere funksjoner fra [Liste](er-functions-category-list.md)-kategorien med en funksjon fra [Logisk](er-functions-category-logical.md)-kategorien, som følgende eksempel viser. Her bruker formelen [IF](er-functions-logical-if.md)-funksjonen til å teste om **IntrastatTotals**-listen er tom før den returnerer verdien for den nødvendige samlingen fra denne listen. Hvis **IntrastatTotals**-listen er tom, returnerer formelen **0** (null).
 
-```
+```vb
 IF(ISEMPTY(IntrastatTotals), 0.0, IntrastatTotals.aggregated.'$AmountMSTRounded') 
 ```
 
@@ -162,7 +162,7 @@ IF(ISEMPTY(IntrastatTotals), 0.0, IntrastatTotals.aggregated.'$AmountMSTRounded'
 
 Du kan ofte få samme datatransformasjonsresultat på flere måter ved å bruke funksjoner fra ulike kategorier eller ulike funksjoner fra samme kategori. Det forrige uttrykket kan for eksempel også konfigureres ved hjelp av [COUNT](er-functions-list-count.md)-funksjonen fra [Liste](er-functions-category-list.md)-kategorien.
 
-```
+```vb
 IF(COUNT (IntrastatTotals)=0, 0.0, IntrastatTotals.aggregated.'$AmountMSTRounded') 
 ```
 

@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-03-16
 ms.dyn365.ops.version: 8.0.2
-ms.openlocfilehash: 233f31bd0b20ad5dd8ba21077797dd2f65069deb
-ms.sourcegitcommit: bc6db23825c94cd8305ef37bc18296765e9ce8a4
+ms.openlocfilehash: 68ec3cb028462865e914cbcb25ff28dbaf9a4f01
+ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/16/2019
-ms.locfileid: "2810705"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "3058023"
 ---
 # <a name="one-voucher"></a>Ett bilag
 
@@ -156,7 +156,7 @@ Organisasjoner vil ofte postere til økonomimodulen i forenklet form for å redu
 
 ### <a name="settle-multiple-unposted-payments-to-the-same-invoice"></a>Utligne flere ikke-posterte betalinger til den samme fakturaen
 
-Dette scenariet finnes vanligvis i Retail-organisasjoner der kunder kan bruke flere betalingsmåter for å betale for innkjøp. I dette scenariet kan organisasjonen registrere flere uposterte betalinger og utligne dem mot kundefakturaen.
+Dette scenariet finnes vanligvis i organisasjoner der kunder kan bruke flere betalingsmåter for å betale for innkjøp. I dette scenariet kan organisasjonen registrere flere uposterte betalinger og utligne dem mot kundefakturaen.
 
 En ny funksjon som ble lagt til i Microsoft Dynamics 365 for Operations versjon 1611 (november 2016), gjør at flere uposterte betalinger kan utlignes mot én enkelt faktura. Flere kundebetalinger må ikke lenger registreres på ett bilag.
 

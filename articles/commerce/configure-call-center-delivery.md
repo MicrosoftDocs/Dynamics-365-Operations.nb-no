@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 9f043d66fbd417633de71b5fa12b13b3f04e3452
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 9919e76b5e3eb1a43c5a0ecd5dda1462bedad4f2
+ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3023508"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "3057816"
 ---
 # <a name="configure-call-center-delivery-modes-and-charges"></a>Konfigurere leveringsmåter og tillegg for telefonsenter
 
@@ -66,7 +66,7 @@ Tillegg kan konfigureres slik at de tas i bruk for en bestemt leveringsmåte, en
 
 I **Linjer**-delen kan du definere én eller flere tillegg per valuta, etter behov. Tillegg må være koblet til en tilleggskode som definerer økonomiske posteringsreglene for tillegget. **Kategori**-feltet brukes til å definere hvordan tillegg beregnes. Hvis for eksempel kunder skal belastes en flat sats på $9.95 på en ordre som er sendt med en bestemt leveringsmåte, bruker du **Fast**-kategorien. Hvis selskapet bestemmer seg for å belaste kunder med en prosent av totalsummen for å dekke leveringstilleggene, bruk **Prosent**-kategorien. Faktisk tillegg til kundene er definert i **Gebyrverdi**-feltet.
 
-Detaljhandelsfirmaer konfigurerer ofte fordelte tillegg. I slike tilfeller er beløpet som kunder betaler for levering, basert på ordreverdien. For å konfigurere fordelte tillegg angir du verdier i feltene **Fra beløp** og **Til beløp** i tillegg til å definere selve tillegget i **Gebyrverdi**-feltet. For eksempel for alle ordrer som har en verdi som er mindre enn $50, krever en forhandler $5.95 for frakt på land. For ordrer som har en verdi som er lik eller større enn $50, men mindre enn $100, krever en forhandleren $7.95. For ordrer som har en verdi som er lik eller større enn $100, gir forhandleren gratis frakt. Illustrasjonen nedenfor viser konfigurasjonen av disse tilleggene.
+Firmaer konfigurerer ofte fordelte tillegg. I slike tilfeller er beløpet som kunder betaler for levering, basert på ordreverdien. For å konfigurere fordelte tillegg angir du verdier i feltene **Fra beløp** og **Til beløp** i tillegg til å definere selve tillegget i **Gebyrverdi**-feltet. For eksempel for alle ordrer som har en verdi som er mindre enn $50, krever en forhandler $5.95 for frakt på land. For ordrer som har en verdi som er lik eller større enn $50, men mindre enn $100, krever en forhandleren $7.95. For ordrer som har en verdi som er lik eller større enn $100, gir forhandleren gratis frakt. Illustrasjonen nedenfor viser konfigurasjonen av disse tilleggene.
 
 ![Eksempel på fast fordelte tillegg](media/fixedtieredcharges.png)
 

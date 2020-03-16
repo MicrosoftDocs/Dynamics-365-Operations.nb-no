@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: t-benebo
 ms.search.validFrom: 2018-01-31
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 623c25490964ccdf6abc37acaffee7ac0844cf39
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 35aad9bf89ba8c1ed6451304d8fc4fc6ffa575b5
+ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2251161"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "3057785"
 ---
 # <a name="trade-allowance-management"></a>Handelsrabattbehandling
 
 [!include [banner](../includes/banner.md)]
 
-Handelsrabattbehandling hjelper firmaer med å administrere salgstilbudsprogrammer som støtter retail "betal for ytelse" monetære belønninger for kunder som oppnår volum- og atferdsmål. Funksjonene er utformet for firmaer som fokuserer på omfattende kampanje-til-fortjeneste-prosesser, fra kampanjefondbudsjettering og tildelingen, til fradrag Kontraktoppsett, krav for oppretting og behandling, til betalingsbehandling til analyse av kampanjeeffektiviteten.
+Handelsrabattbehandling hjelper firmaer med å administrere salgstilbudsprogrammer som støtter "betal for ytelse" monetære belønninger for kunder som oppnår volum- og atferdsmål. Funksjonene er utformet for firmaer som fokuserer på omfattende kampanje-til-fortjeneste-prosesser, fra kampanjefondbudsjettering og tildelingen, til fradrag Kontraktoppsett, krav for oppretting og behandling, til betalingsbehandling til analyse av kampanjeeffektiviteten.
 
 
 Denne artikkelen gir en omfattende oversikt over funksjonen godtgjørelse for behandling av handel og vil gjør deg kjent med de vanlige oppgaver som er involvert i behandling av et program for salgstilbud. Flere typer brukere som har drift og beslutningen om å gjøre ansvarsområder forventes å bruke denne funksjonaliteten til å oppnå sine respektive målene:

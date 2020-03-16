@@ -3,7 +3,7 @@ title: Kom i gang med planleggingsoptimalisering
 description: Dette emnet forklarer hvordan du begynner å bruke funksjonen for planleggingsoptimalisering.
 author: ChristianRytt
 manager: AnnBe
-ms.date: 01/17/2020
+ms.date: 02/10/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,17 +19,17 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: 3e0371c6addc0412dc2fc105891b012941e92a06
-ms.sourcegitcommit: e5a3c85a322a9216b8f176536d664fef40ae0bec
+ms.openlocfilehash: 3e64699005387adcc92e2e7c9fefad68a9de85c0
+ms.sourcegitcommit: a688c864fc609e35072ad8fd2c01d71f6a5ee7b9
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/17/2020
-ms.locfileid: "2971470"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "3076138"
 ---
+# <a name="get-started-with-planning-optimization"></a>Kom i gang med planleggingsoptimalisering
+
 [!include [banner](../../includes/preview-banner.md)]
 [!include [banner](../../includes/banner.md)]
-
-# <a name="get-started-with-planning-optimization"></a>Kom i gang med planleggingsoptimalisering
 
 Planleggingsoptimaliseringsfunksjonaliteten støtter for øyeblikket ikke alle funksjonene som er tilgjengelige i planleggingsmotoren som er innebygd i Microsoft Dynamics 365 Supply Chain Management. Det er derfor viktig at du vurderer om funksjonssettet som for øyeblikket er tilgjengelig i planleggingsoptimalisering, oppfyller kravene dine. Som standard er ikke planleggingsoptimaliseringsfunksjonaliteten aktivert i Dynamics Lifecycle Services (LCS). Du har derfor mulighet til å gjennomføre evalueringen før den er slått på.
 
@@ -44,6 +44,9 @@ Hvis du kan kjøre hovedplanlegging ved hjelp av den gjeldende lisensen, trenger
 ### <a name="install-the-add-in"></a>Installer tillegget
 
 Hvis du vil bruke planleggingsoptimalisering, må du installere tillegget for planleggingsoptimalisering for Dynamics 365 Supply Chain Management. Du får tilgang til tillegget fra LCS-prosjektet og kan aktivere funksjonaliteten for planleggingsoptimalisering fra brukergrensesnittet for Supply Chain Management.
+
+> [!NOTE]
+> Kravet for planleggingsoptimalisering er et LCS-aktivert miljø med høy tilgjengelighet (ikke et OneBox-miljø), med Dynamics 365 Supply Chain Management versjon 10.0.7 eller senere.
 
 1. Logg på LCS, og åpne ønsket miljø.
 1. Gå til **Detaljerte opplysninger**.

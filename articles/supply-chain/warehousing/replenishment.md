@@ -3,7 +3,7 @@ title: Oversikt over etterfylling
 description: Dette emnet beskriver etterfyllingsstrategiene som er tilgjengelige for lagre som bruker funksjonaliteten som er tilgjengelig i Lagerstyring.
 author: Mirzaab
 manager: AnnBe
-ms.date: 07/25/2019
+ms.date: 02/19/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.industry: Distribution
 ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3c1989f11563db343129c678623725e2e61b27fc
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 7aa17df3c3632c89f35a69022084bbd9f4171f36
+ms.sourcegitcommit: a688c864fc609e35072ad8fd2c01d71f6a5ee7b9
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2251480"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "3076368"
 ---
 # <a name="replenishment-overview"></a>Oversikt over etterfylling
 
@@ -49,6 +49,8 @@ Lokasjonsdirektiver brukes til å fastsette hvilken lokasjon som skal etterfylle
 I tillegg til å opprette en mal, må du angi noen innstillinger for etterfylling i bølgemalen. Denne bølgemalen bør inneholde et bølgetrinn for etterfylling, som kjøres kun hvis et element ikke er vellykket allokert. Dette bølgetrinnet for etterfylling bruker en bølgetrinnkode for å avgjøre hvilken etterfyllingsmal som skal brukes. I tillegg til å ha bølgetrinn for etterfylling, må du forsikre deg om at **Etterfylling** er valgt i delen **Metoder** for bølgemalen. 
 
 Siden **Etterfyllingsmal** inneholder alternativet **Tillat at bølgebehov kan bruke ureserverte antall**. Marker denne avkrysningsruten hvis behovsetterfylling skal kunne trekke ubehandlede mengder fra arbeid som genereres fra den valgte etterfyllingsmalen. Hvis du vil aktivere maler for behovsetterfylling til å bruke denne logikken, må du merke av for alternativet for alle eksisterende etterfyllingsmaler. Når etterfylling for behov utløses på lageret, vil dette trekke etterspørselen fra eksisterende etterfyllingsarbeid som har ikke-reservert antall, hvis jobben stammer fra etterfyllingsmaler der alternativet **La bølgebehov bruke ureserverte antall** er aktivert.
+
+**Etterfyllingsenhet** er minimumsenheten som skal etterfylles. Dette må være et heltall som er et multiplum av enheten. Systemet runder opp til den høyeste enheten som er mulig når du oppretter arbeid.
 
 Etterfylling av behov støttes for salgsordrer, overføringsordrer, produksjonsordrer og Kanbaner. 
 

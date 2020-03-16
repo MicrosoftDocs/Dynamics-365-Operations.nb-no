@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: b4ee6b128e473d0999885f1cb1b4dbb015026c4e
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 38649e40021d1caaf70f217b3ebae0d488806180
+ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3023564"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "3057215"
 ---
 # <a name="set-up-and-work-with-call-center-fraud-alerts"></a>Definere og arbeide med telefonsentersvindelvarsler
 
@@ -54,6 +54,7 @@ Til slutt bruk feltet **Kommentartype for svindel** for å angi dokumenttypen so
 Systemet refererer til to typer svindelkriterier for å fastsette om en ordre skal settes på vent for svindelgjennomgang:
 
 - **Statiske svindeldata** bruker en bestemt verdi, for eksempel et telefonnummer som er plassert på en liste over blokkerte numre eller en e-postadresse som er flagget fordi det er kjent for bli brukt for falske transaksjoner tidligere. Hvis du vil definere statiske svindeldata, kan du gå til **Retail og Commerce** \> **Kanaloppsett** \> **Telefonsenteroppsett** \> **Svindel** \> **Statiske svindeldata**. På siden **Statiske svindeldata** kan du legge til kriterier for svindel manuelt eller gjennom dataimport. Resultatene er knyttet til dem svindelinformasjonen. Hvis svindelkontrollfunksjonen er aktivert, vil alle salgsordrer som legges inn, sammenlignes med de statiske dataene. Hvis dataene finnes i kundens faktureringsadresse eller leveringsadressen som er knyttet til ordrehodet, eller hvis dataene finnes i leveringsadressene som er koblet til noen av linjene i salgsordren, legges resultatene for alle unike treff sammen og sammenlignes med **Minste poengsum**-verdien for å fastslå om ordren skal settes på vent.
+
 - **Regler for svindel** består av brukerdefinerte variabler og betingelsene som er definert for disse variablene. Hvis du vil opprette regler, kan du gå til **Retail og Commerce** \> **Kanaloppsett** \> **Telefonsenteroppsett** \> **Svindel** \> **Regler**. Regler for svindel lar et firma konfigurere et mer sammensatt regelsett som kan inneholde **AND** eller **OR** -setninger for å vurdere flere betingelser. En bruker vil for eksempel at alle ordrer for kunder som tilhører en bestemt kundegruppe, og som har bestilt et bestemt produkt, skal settes på vent for svindelgjennomgang. I så fall defineres betingelser for å validere kunden og produkter på **Regler**-siden, og en AND-betingelse brukes. En ordre blir deretter satt på vent bare hvis begge betingelser er oppfylt, og hvis poengsumverdien som er tilordnet til denne regelen, i tillegg til poengsumverdien for andre regler som samsvarer med orden, fører til at den totale svindelpoengsummen for ordren overskrider **Minimum poengsum**-verdi som er definert på siden **Telefonsenterparametere**.
 
 > [!NOTE]

@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 9e1087821b357c578993cdd5742399c5ec0ecc95
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: ba1d10a897f349703737068d772423f7d0292944
+ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3001812"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "3057968"
 ---
 # <a name="create-a-default-customer"></a>Opprette en standardkunde
 
@@ -33,7 +33,7 @@ Dette emnet beskriver hvordan du oppretter en standardkunde som skal brukes ved 
 
 ## <a name="overview"></a>Oversikt
 
-Når du oppretter en detaljhandelskanal eller en tilkoblet kanal, må du angi en standardkunde. En standardkunde kan enkelt opprettes etter at du først har opprettet kundegruppen og kundeadresseboken.
+Når du oppretter en kanal, må du angi en standardkunde. En standardkunde kan enkelt opprettes etter at du først har opprettet kundegruppen og kundeadresseboken.
 
 ## <a name="create-a-customer-group"></a>Opprette en kundegruppe
 

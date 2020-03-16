@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 08fb278a3de0c06715dcd9c252ee6c21b2172cff
-ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
+ms.openlocfilehash: ed7a47068c451cd3ffaa26ee709599373858721b
+ms.sourcegitcommit: 3cad15f8ecc257d3a45c1bc1fada7c094ff4bcec
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3010111"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "3087306"
 ---
 # <a name="create-a-leave-and-absence-plan"></a>Opprette en permisjons- og fraværsplan
 
@@ -61,8 +61,8 @@ Du kan også opprette stillingsbaserte permisjonsfordeler, for eksempel fordelst
 
       | Avsetningsperiodegrunnlag | Beskrivelse |
       | --- | --- |
-      | Startdato for plan | Startdatoen for avsetningsperioden er datoen da planen er tilgjengelig. |
-      | Spesifikk dato for ansatt | Startdatoen for avsetningsperioden avhenger av en ansatthendelse:</br><ul><li>Egendefinert (du må angi et grunnlag for en avsetningsdato for hver enkelt registrering)</li><li>Jubileumsdato</li><li>Opprinnelig ansettelsesdato</li><li>Ansiennitetsdato</li><li>Arbeiderens justerte startdato</li><li>Arbeiderens startdato</li></ul> |
+      | **Startdato for plan** | Startdatoen for avsetningsperioden er datoen da planen er tilgjengelig. |
+      | **Spesifikk dato for ansatt** | Startdatoen for avsetningsperioden avhenger av en ansatthendelse:</br><ul><li>Egendefinert (du må angi et grunnlag for en avsetningsdato for hver enkelt registrering)</li><li>Jubileumsdato</li><li>Opprinnelig ansettelsesdato</li><li>Ansiennitetsdato</li><li>Arbeiderens justerte startdato</li><li>Arbeiderens startdato</li></ul> |
 
    3. Velg et alternativ fra rullegardinboksen **Belønningsdato for avsetning**:
 

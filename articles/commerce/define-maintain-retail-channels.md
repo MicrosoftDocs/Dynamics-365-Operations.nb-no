@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: mumani
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 63639d69af90c6aa37bbf7af7868bca71942063f
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 0fbca2c9178cd372653287afdf72deaf75442604
+ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3023503"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "3057920"
 ---
 # <a name="define-and-maintain-retail-channels"></a>Definere og vedlikeholde detaljhandelskanaler
 
@@ -49,7 +49,7 @@ Du må fullføre følgende oppgaver før du kan definere en butikk:
 5. Definer betalingsmåtene butikken godtar.
 6. Hvis du vil behandle kredittkorttransaksjoner i kasser på salgssteder, kan du også konfigurere betalingstjenester.
 7. Definer mva-grupper.
-8. Definer detaljprodukter. Som en del av denne oppgaven definerer du også produkthierarkier, produktvarianter og produktsortimenter.
+8. Definer produkter. Som en del av denne oppgaven definerer du også produkthierarkier, produktvarianter og produktsortimenter.
 9. Definer produktgrupper.
 10. Sett opp produktprising. Som en del av denne oppgaven definerer du også prisjusteringer, rabatter og rabattperioder.
 11. Definere stabsmedlemmer.
@@ -87,5 +87,5 @@ Når du har angitt detaljene for butikken, fullfører du disse oppgavene for å 
 Handel bruker organisasjonshierarkier til å strukturere kanaler. Organisasjonshierarkier representerer relasjonene mellom organisasjonene som utgjør virksomheten. Når du definerer butikker, kan du legge dem til i et organisasjonshierarki. Butikken lagrer og deler data som brukes for sortimenter, etterfylling og rapportering.
 
 > [!NOTE]
-> Konfigurasjonsnøkkelen for **Flere forsendelsesadresser** må være aktivert for å bruke funksjonalitet for detaljhandelsalg. Denne konfigurasjonsnøkkelen kan finnes i nøklene for **Handelskonfigurasjon** under **Systemadministrasjon**\> **Oppsett** \> **Lisenskonfigurasjon**. Dette er nødvendig på grunn av Retail-funksjonalitet som utfører forskjellige valideringer basert på leveringsadressen som er konfigurert på salgsordrelinjenivå.
+> Konfigurasjonsnøkkelen for **Flere forsendelsesadresser** må være aktivert for å bruke funksjonalitet for Commerce-salg. Denne konfigurasjonsnøkkelen kan finnes i nøklene for **Handelskonfigurasjon** under **Systemadministrasjon**\> **Oppsett** \> **Lisenskonfigurasjon**. Dette er nødvendig på grunn av forskjellige valideringer basert på leveringsadressen som er konfigurert på salgsordrelinjenivå.
 

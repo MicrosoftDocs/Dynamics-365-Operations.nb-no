@@ -19,17 +19,17 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: 9d1431cc8db6fb28d1f1ec73ee07dd15e78f82e8
-ms.sourcegitcommit: 65f4b8a751670a7fe9ef4cb8b218213f792d57a2
+ms.openlocfilehash: ca28953846b4f1978a453d2ab2aa9759e4f45221
+ms.sourcegitcommit: a688c864fc609e35072ad8fd2c01d71f6a5ee7b9
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "2945425"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "3076115"
 ---
+# <a name="apply-filters-to-a-plan"></a>Bruke filtre på en plan
+
 [!include [banner](../../includes/preview-banner.md)]
 [!include [banner](../../includes/banner.md)]
-
-# <a name="apply-filters-to-a-plan"></a>Bruke filtre på en plan
 
 Når planleggingsoptimaliserings-funksjonaliteten brukes, kan du bruke et filter på en plan. **Planfilteret** blir alltid brukt under kjøring av en hovedplanlegging. Et **planfilter** er nyttig når du vil begrense en plan til en bestemt gruppe varer og kontrollere at ingen andre varer er inkludert som en del av den resulterende hovedplanleggingen.
 

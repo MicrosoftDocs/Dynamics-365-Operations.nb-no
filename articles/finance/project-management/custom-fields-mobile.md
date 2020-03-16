@@ -18,12 +18,12 @@ ms.search.industry: Service industries
 ms.author: knelson
 ms.dyn365.ops.version: 10.0.3
 ms.search.validFrom: 2019-05-29
-ms.openlocfilehash: c0c578ca44919671b67daeea51a9ec7687f755c9
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 48854c15e429d51dcf30ea804eb636dee7965443
+ms.sourcegitcommit: a356299be9a593990d9948b3a6b754bd058a5b3b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2773651"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "3080778"
 ---
 # <a name="implement-custom-fields-for-the-microsoft-dynamics-365-project-timesheet-mobile-app-on-ios-and-android"></a>Implementere egendefinerte felt for Microsoft Dynamics 365 Project Timesheet-mobilappen på IOS og Android
 
@@ -183,7 +183,7 @@ Følgende eksempel viser et strengfelt på tidsoppføringer. Dette feltet har to
 
 Legg merke til bruken av **TSTimesheetCustomField::newFromMetatdata()**-metoden for å forenkle initialiseringen av de egendefinerte feltegenskapene: **fieldBaseType**, **tableName**, **fieldname**, **label**, **isEditable**, **isMandatory**, **stringLength** og **numberOfDecimals**. Du kan også angi disse parameterne manuelt slik du vil.
 
-```
+```xpp
 ...
 [ExtensionOf(classStr(TsTimesheetSettings))]
 final class TSTimesheetSettings_Extension
@@ -212,7 +212,7 @@ final class TSTimesheetSettings_Extension
 
 Metoden **buildCustomFieldListForEntry** brukes til å angi verdier på de lagrede timeregistreringslinjene i mobilappen. Den bruker en TSTimesheetTrans-post som en parameter. Felt fra denne posten kan brukes til å fylle ut den egendefinerte feltverdien i appen.
 
-```
+```xpp
 ...
 [ExtensionOf(classStr(TsTimesheetEntry))]
 final class TsTimesheetEntry_Extension
@@ -250,7 +250,7 @@ Hvis du vil lagre et egendefinert felt tilbake til databasen i vanlig bruk, må 
 > [!NOTE]
 > Det følgende eksemplet lagrer verdien **firstOption** eller **secondOption** som brukeren velger, i databasen som en rå-strengverdi. Hvis databasefeltet er et felt av typen **Opplisting**, kan disse verdiene tilordnes til en opplistingsverdi manuelt og deretter lagres til et opplistingsfelt i databasetabellen.
 
-```
+```xpp
 ...
 [ExtensionOf(classStr(TSTimesheetEntryService))]
 final class TSTimesheetEntryService_Extension
@@ -339,7 +339,7 @@ Denne koden kontrollerer visningsinnstillingene for feltet i appen. Det kontroll
 
 Følgende eksempel viser en beregnet verdi i hodedelen i appen.
 
-```
+```xpp
 ...
 [ExtensionOf(classStr(TsTimesheetSettings))]
 final class TSTimesheetSettings_Extension
@@ -369,7 +369,7 @@ final class TSTimesheetSettings_Extension
 Metoden **buildCustomFieldListForHeader** brukes til å fylle ut timeregistreringshodedetaljene i mobilappen. Den bruker en TSTimesheetTable-post som en parameter. Felt fra denne posten kan brukes til å fylle ut den egendefinerte feltverdien i appen. Følgende eksempel leser ikke verdier fra databasen. I stedet brukes X++-logikk til å generere en beregnet verdi som deretter vises i appen.
 
 
-```
+```xpp
 ...
 [ExtensionOf(classStr(TSTimesheetDetails))]
 final class TSTimesheetDetails_Extension

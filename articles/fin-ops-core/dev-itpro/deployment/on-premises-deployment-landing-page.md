@@ -1,9 +1,9 @@
 ---
 title: Startside for lokal distribusjon
 description: Dette emnet gir informasjon og koblinger til innhold om lokale distribusjoner.
-author: kfend
+author: sericks007
 manager: AnnBe
-ms.date: 11/04/2019
+ms.date: 02/27/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -14,15 +14,15 @@ ms.search.scope: Core, Operations
 ms.custom: 55651
 ms.assetid: ''
 ms.search.region: Global
-ms.author: kfend
+ms.author: sericks
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: 81698517dc501a6001f62216f3804510144c1045
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 50fb53902e9f9796cac958f7cea2605ba00ba1bd
+ms.sourcegitcommit: ae8625f44453a71a94df6fb98d054c1c56b76700
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2770952"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "3090595"
 ---
 # <a name="on-premises-deployment-home-page"></a>Startside for lokal distribusjon
 
@@ -56,11 +56,11 @@ Du kan distribuere Dynamics 365 Finance + Operations (lokal). Når du velger en 
 - [Bruke oppdateringer i lokale distribusjoner](apply-updates-on-premises.md)
 - [Omplassere lokale miljøer](redeploy-on-prem.md)
 
-## <a name="retail"></a>Retail
-- [Retail-funksjoner som er tilgjengelige i lokale distribusjoner](../../../retail/retail-onprem.md)
+## <a name="commerce"></a>Commerce
+- [Commerce-funksjoner som er tilgjengelige i lokale distribusjoner](../../../retail/retail-onprem.md)
 - [Installasjonstrinn for komponenter i Retail-kanal i et lokalt miljø](deploy-retail-onprem.md)
-- [Konfigurere, installere og aktivere Retail Modern POS MPOS](../../../retail/retail-modern-pos-device-activation.md)
-- [Konfigurere og installere Retail Store Scale Unit](../../../retail/dev-itpro/retail-store-scale-unit-configuration-installation.md)
+- [Konfigurere, installere og aktivere Modern POS (MPOS)](../../../retail/retail-modern-pos-device-activation.md)
+- [Konfigurere og installere Commerce Scale Unit](../../../retail/dev-itpro/retail-store-scale-unit-configuration-installation.md)
 
 ## <a name="upgrade"></a>Oppgrader
 - [Oppgradering på stedet for lokale miljøer](../migration-upgrade/on-prem-upgrade.md)
@@ -71,6 +71,6 @@ Du kan distribuere Dynamics 365 Finance + Operations (lokal). Når du velger en 
 - [Sertifikatrotasjon](certificate-rotation-on-prem.md)
 - [Lokal diagnostikk](on-premises-diagnostics.md)
 - [Funksjoner som ikke er implementert i lokale distribusjoner](../../fin-ops/get-started/features-not-implemented-on-prem.md)
-- [Funksjoner som er fjernet eller utgått for Finance and Operations](../migration-upgrade/deprecated-features.md)
+- [Funksjoner som er fjernet eller avskrevet for Finance and Operations](../migration-upgrade/deprecated-features.md)
 - [Policy og lokale versjoner for programvarelivssyklus](../migration-upgrade/on-prem-version-update-policy.md)
  

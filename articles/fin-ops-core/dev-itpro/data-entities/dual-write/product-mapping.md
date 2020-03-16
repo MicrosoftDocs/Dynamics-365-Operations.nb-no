@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: a52e8f65e7e2a8d90ddf5efa47c07d6995ef645d
-ms.sourcegitcommit: 54baab2a04e5c534fc2d1fd67b67e23a152d4e57
+ms.openlocfilehash: 9593e8e54b18c6fe723a133eca699a30baabfdd0
+ms.sourcegitcommit: e0e013fa8a4cc994ef6d1e0a1a3389b36b5afffa
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "3019937"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "3081157"
 ---
 # <a name="unified-product-experience"></a>Samlet produktopplevelse
 
@@ -75,7 +75,7 @@ Enhet | uoms
 Enhetsomregninger | msdyn_ unitofmeasureconversions
 Konvertering av produktspesifikk måleenhet | msdyn_productspecificunitofmeasureconversion
 Produktkategorier | msdyn_productcategories | Hver av produktkategoriene og informasjonen om strukturen og kjennetegnene finnes i produktkategorienheten. 
-Produktkategorihierarkier | msdyn_productcategoryhierarhies | Produkthierarkier brukes til å kategorisere eller gruppeprodukter. Kategorihierarkiene er tilgjengelige i Common Data Service ved hjelp av enheten for kategorihierarkiroller. 
+Produktkategorihierarkier | msdyn_productcategoryhierarhies | Produkthierarkier brukes til å kategorisere eller gruppeprodukter. Kategorihierarkiene er tilgjengelige i Common Data Service ved hjelp av enheten for produktkategorihierarki. 
 Roller for produktkategorihierarki | msdyn_productcategoryhierarchies | Produkthierarkier kan brukes til forskjellige roller i D365 Finance and Operations. For å angi hvilken kategori som skal brukes i hver rolle, brukes enheten for produktkategori. 
 Produktkategoritilordninger | msdyn_productcategoryassignments | Hvis du vil tilordne et produkt til en kategori, kan du bruke enheten for produktkategoritilordninger.
 
@@ -109,7 +109,7 @@ Vær oppmerksom på at synkronisering av produkter skjer fra Finance and Operati
 
 Produktdimensjoner er egenskaper som identifiserer en produktvariant. De fire produktdimensjonene (Farge, Størrelse, Stil og Konfigurasjon) blir også tilordnet til Common Data Service for å definere produktvariantene. Illustrasjonen nedenfor viser datamodellen for produktdimensjonen Farge. Den samme modellen brukes for Størrelser, Stiler og Konfigurasjoner. 
 
-![Datamodell for produkter](media/dual-write-product-2.PNG)
+![Datamodell for produkter](media/dual-write-product-two.png)
 
 [!include [product colors](includes/EcoResProductColorEntity-msdyn-productcolor.md)]
 
@@ -145,7 +145,7 @@ Standard ordreinnstillinger definerer området og lageret der varene hentes fra 
 
 Måleenheten og de tilsvarende konverteringene er tilgjengelige i Common Data Service etter datamodellen som vises i diagrammet.
 
-![Datamodell for produkter](media/dual-write-product-3.PNG)
+![Datamodell for produkter](media/dual-write-product-three.png)
 
 Begrepet måleenhet er integrert mellom Finance and Operations-apper og andre Dynamics 365-apper. For hver enhetsklasse i en Finance and Operations-app opprettes en enhetsgruppe i en Dynamics 365-app, som inneholder enhetene som tilhører enhetsklassen. En standard basisenhet opprettes også for hver enhetsgruppe. 
 
@@ -205,13 +205,13 @@ Fo å identifisere produkter unikt mellom Dynamics 365 for Finance and Operation
 
 For en annen Dynamics 365 apps-bruker er produktet identifisert i brukergrensesnittet med **msdyn_productnumber** (vær oppmerksom på at etiketten for feltet er **produktnummer**). I produktskjemaet vises både selskapet og msydn_productnumber. Men (productnumber)-feltet, den unike nøkkelen for et produkt, vises ikke. 
 
-Vær oppmerksom på at hvis apper bygges på toppen av Common Data Service, bør spesiell oppmerksomhet rettes mot å bruke (productnumber), det vil si den unike produkt-IDen, som integrasjonsnøkkelen, og ikke msdyn_productnumber, fordi den siste ikke er unik. 
+Hvis du bygger apper på Common Data Service, bør du være oppmerksom på å bruke **productNumber** (den unike produkt-IDen) som integrerings nøkkel. Ikke bruk **msdyn_productnumber**, fordi det ikke er unikt. 
 
 ## <a name="initial-synchronization-of-products-and-migration-of-data-from-common-data-service-to-finance-and-operations"></a>Første synkronisering av produkter og overføring av data fra Common Data Service til Finance and Operations
 
 ### <a name="initial-synchronization-of-products"></a>Innledende synkronisering av produkter 
 
-Når dobbel skriving er aktivert, synkroniseres produkter fra Dynamics 365 Finance and Operations til Common Data Service og andre Dynamics 365-apper. Vær oppmerksom på at produkter som er opprettet i Common Data Service og andre Dynamics 365-apper før dobbel skriving, ikke blir oppdatert eller samsvart med produktdata fra Finance and Operations.
+Når dobbel skriving er aktivert, synkroniseres produkter fra Finance and Operations-apper til Common Data Service-apper og andre modelldrevne apper i Dynamics 365. Produkter som er opprettet i Common Data Service og andre Dynamics 365-apper før dobbel skriving ble lansert, ikke blir oppdatert eller samsvart med produktdata fra Finance and Operations-apper.
 
 ### <a name="matching-product-data-from-finance-and-operations-and-other-dynamics-365-apps"></a>Samsvare produktdata fra Finance and Operations og andre Dynamics 365-apper
 

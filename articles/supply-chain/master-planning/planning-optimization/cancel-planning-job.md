@@ -3,7 +3,7 @@ title: Annullere en planleggingsjobb
 description: Dette emnet beskriver hvordan du avbryter en aktiv planleggingsjobb som bruker planleggingsoptimaliserings-funksjonaliteten.
 author: ChristianRytt
 manager: AnnBe
-ms.date: 10/26/2019
+ms.date: 02/18/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,21 +19,22 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: a2d90f04985fdd66ca83582ee676100fffb26981
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 18c5c7b8030fc6adbc548dab750e4f454aebc867
+ms.sourcegitcommit: a688c864fc609e35072ad8fd2c01d71f6a5ee7b9
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2774024"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "3076355"
 ---
+# <a name="cancel-a-planning-job"></a>Avbryte en planleggingsjobb
+
 [!include [banner](../../includes/banner.md)]
 [!include [banner](../../includes/preview-banner.md)]
 
-# <a name="cancel-a-planning-job"></a>Annullere en planleggingsjobb
+I Microsoft Dynamics 365 Supply Chain Management kan du avbryte en aktiv planleggingsjobb som bruker planleggingsoptimaliserings-funksjonaliteten. Når du velger **Avbryt** i dialogboksen når en planleggingsoptimaliseringsjobb utløses direkte fra brukergrensesnittet (ikke i bakgrunnen), vil ikke dette avbryte planleggingsoptimaliseringsjobben. Selv om du får en advarsel som "operasjonen er avbrutt", må du likevel bruke følgende fremgangsmåte for å avbryte en planleggingsjobb med planleggingsoptimalisering.
 
-I Microsoft Dynamics 365 Supply Chain Management kan du avbryte en aktiv planleggingsjobb som bruker planleggingsoptimaliserings-funksjonaliteten.
 
-Hvis du vil avbryte en aktiv planleggingsjobb, følger du disse trinnene.
+Hvis du vil avbryte en aktiv planleggingsjobb, følger du disse trinnene. 
 
 > [!NOTE]
 > Bare aktive jobber kan avbrytes.
@@ -49,11 +50,11 @@ Jobbstatusen blir **Avbryter** til planleggingsoptimaliserings-tjenesten bekreft
 > [!NOTE]
 > Hvis du vil vise statusendringer, må du oppdatere siden ved å velge **Oppdater**-knappen.
 
-## <a name="related-resources"></a>Relaterte ressurser
+## <a name="additional-resources"></a>Tilleggsressurser
 
 [Oversikt over planleggingsoptimalisering](planning-optimization-overview.md)
 
-[Kom i gang med planleggingsoptimalisering](get-started.md)
+[Komme i gang med planleggingsoptimalisering](get-started.md)
 
 [Tilpassingsanalyse av planleggingsoptimalisering](planning-optimization-fit-analysis.md)
 

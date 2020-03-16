@@ -1,6 +1,6 @@
 ---
 title: Fordele feedbasert ordreoppretting for detaljhandelstransaksjoner
-description: Dette emnet beskriver den fordelte, feedbaserte ordreopprettingen for detaljhandelstransaksjoner i Microsoft Dynamics 365 Commerce.
+description: Dette emnet beskriver den fordelte, feedbaserte ordreopprettingen for butikktransaksjoner i Microsoft Dynamics 365 Commerce.
 author: josaw1
 manager: AnnBe
 ms.date: 10/14/2019
@@ -18,18 +18,16 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 3f691017ad06d3416e4ba0e86d7a0bc207aba5bd
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 7d5812893edff24a60a0e2eb3607701ac47a8a78
+ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3004280"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "3057174"
 ---
-# <a name="trickle-feed-based-order-creation-for-retail-store-transactions-public-preview"></a>Fordele feedbasert ordreoppretting for detaljhandelstransaksjoner (offentlig forhåndsvisning)
+# <a name="trickle-feed-based-order-creation-for-retail-store-transactions-public-preview"></a>Fordele feedbasert ordreoppretting for detaljhandelstransaksjoner (offentlig forhåndsversjon)
 
 [!include [banner](includes/banner.md)]
-
-
 
 I Dynamics 365 Retail versjon 10.0.4 og tidligere er postering av utdrag en operasjon på slutten av dagen, og alle transaksjoner posteres i bøkene på slutten av dagen. Store transaksjoner må deretter behandles i et begrenset tidsvindu, noe som noen ganger kan føre til belastning og låsing og feil i utdragsposteringen. Forhandlere kan heller ikke føre inntekter og betalinger i sine bøker gjennom hele dagen.
 
@@ -51,11 +49,11 @@ Med offentlig forhåndsvisning av fordeling av feedbasert ordreoppretting, som b
       
      - Regnskapsoppgjøret er utformet til å opprettes på slutten av dagen, og støtter bare avsluttingsmetoden **Skift**. Dette utdraget vil være begrenset til økonomisk avstemming, og vil bare opprette journaler for de ulike beholdningsbeløpene mellom telt beløp og transaksjonsbeløp for de forskjellige anleggsmidlene, sammen med journaler for andre kontantstyringstransaksjoner.   
 
-4. Hvis du vil beregne transaksjonsutdraget, klikker du **Detaljhandel og handel > IT for Detaljhandel og handel > Salgsstedspostering > Beregn transaksjonsutdrag satsvis**. Hvis du vil postere transaksjonsutdrag satsvis, klikker du **Detaljhandel og handel > IT for Detaljhandel og handel > Salgsstedspostering > Poster transaksjonsutdrag satsvis**.
+4. Hvis du vil beregne transaksjonsutdraget, klikker du **Retail og Commerce > IT for Retail og Commerce > Salgsstedspostering > Beregn transaksjonsutdrag satsvis**. Hvis du vil postere transaksjonsutdrag satsvis, klikker du **Retail og Commerce > IT for Retail og Commerce > Salgsstedspostering > Poster transaksjonsutdrag satsvis**.
 
-5. Hvis du vil beregne regnskapsoppgjøret, klikker du **Detaljhandel og handel > IT for Detaljhandel og handel > Salgsstedspostering > Beregn regnskapsoppgjør satsvis**. Hvis du vil postere regnskapsoppgjøret satsvis, klikker du **Detaljhandel og handel > IT for Detaljhandel og handel > Salgsstedspostering > Poster regnskapsoppgjør satsvis**.
+5. Hvis du vil beregne regnskapsoppgjøret, klikker du **Retail og Commerce > IT for Retail og Commerce > Salgsstedspostering > Beregn regnskapsoppgjør satsvis**. Hvis du vil postere regnskapsoppgjøret satsvis, klikker du **Retail og Commerce > IT for Retail og Commerce > Salgsstedspostering > Poster regnskapsoppgjør satsvis**.
 
 > [!NOTE]
-> Menyelementene **Detaljhandel og handel > IT for Detaljhandel og handel > Salgsstedspostering > Beregn utdrag satsvis** og **Detaljhandel og handel > IT for Detaljhandel og handel > Salgsstedspostering > Poster utdrag satsvis** blir fjernet med denne nye funksjonen.
+> Menyelementene **Retail og Commerce > IT for Retail og Commerce > Salgsstedspostering > Beregn utdrag satsvis** og **Retail og Commerce > IT for Retail og Commerce > Salgsstedspostering > Poster utdrag satsvis** blir fjernet med denne nye funksjonen.
 
-Du kan også opprette typer transaksjons- og regnskapsoppgjør manuelt. Gå til **Detaljhandel og handel > Kanaler > Butikker** og klikk **Utdrag**. Klikk **Ny**, og velg deretter typen utdrag du vil opprette. Felt på siden **Utdrag** og handlinger under **Utdragsgruppe** på siden viser relevante data og handlinger basert på den valgte utdragstypen.
+Du kan også opprette typer transaksjons- og regnskapsoppgjør manuelt. Gå til **Retail og Commerce > Kanaler > Butikker** og klikk **Utdrag**. Klikk **Ny**, og velg deretter typen utdrag du vil opprette. Felt på siden **Utdrag** og handlinger under **Utdragsgruppe** på siden viser relevante data og handlinger basert på den valgte utdragstypen.

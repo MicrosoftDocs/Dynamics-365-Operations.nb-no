@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2018-02-28
 ms.dyn365.ops.version: Platform update 14
-ms.openlocfilehash: 9585d5a399ebf45b0ad7640f3c4e48d8afc46cd8
-ms.sourcegitcommit: 54baab2a04e5c534fc2d1fd67b67e23a152d4e57
+ms.openlocfilehash: 90422a34499dab7302ad7722cf84d40e1815991c
+ms.sourcegitcommit: 3c1eb3d89c6ab9bd70b806ca42ef9df74cf850bc
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "3017734"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "3042948"
 ---
 # <a name="embed-microsoft-power-apps"></a>Innebygg Microsoft Power Apps
 
@@ -55,7 +55,7 @@ Fremgangsmåten nedenfor viser hvordan du bygger inn en app fra Power Apps i net
 
     - Feltet **Navn** angir teksten for knappen eller fanen som inneholder den innebygde appen. Ofte vil du kanskje gjenta navnet på appen i dette feltet.
     - **Program-ID** er GUID-en for appen som du vil bygge inn. Hvis du vil hente denne verdien, finner du appen på [web.powerapps.com](https://web.powerapps.com), og går deretter til feltet **Program-ID** under **Detaljer**.
-    - For **Inndatakontekst for appen** kan du også velge feltet som inneholder dataene du vil sende til appen som inndata. Se avsnittet senere i dette emnet med tittelen [Bygge apper som bruker data fra Finance and Operations-apper](#building-a-power-app-that-leverages-data-sent-from-finance-and-operations-apps) for detaljert informasjon om hvordan appen kan få tilgang til dataene sendt fra Finance and Operations-apper.
+    - For **Inndatakontekst for appen** kan du også velge feltet som inneholder dataene du vil sende til appen som inndata. Se avsnittet senere i dette emnet med tittelen [Bygge en app som bruker data sendt fra Finance and Operations-apper](#building-an-app-that-leverages-data-sent-from-finance-and-operations-apps) for detaljert informasjon om hvordan appen kan få tilgang til dataene sendt fra Finance and Operations-apper.
     - Velg **programstørrelsen** som samsvarer med apptypen du bygger inn. Velg **Tynn** for apper bygget for mobilenheter, og **Bred** for apper bygget for nettbrett. Dette sørger for at tilstrekkelig mengde plass blir tildelt til den innebygde appen.
     - Hurtigfanen **Juridiske enheter** gir muligheten til å velge hvilke juridiske enheter appen er tilgjengelig for. Standardpraksis er å gjøre appen tilgjengelig for alle juridiske enheter. Dette alternativet er bare tilgjengelig når funksjonen [Lagrede visninger](saved-views.md) er deaktivert. 
 
@@ -76,7 +76,7 @@ En viktig del av bygging av en app fra Power Apps, som skal bygges inn i en Fina
 
 I appens OnStart-funksjon kan du for eksempel sette inndataene fra Finance and Operations-apper til en variabel som ser slik ut:
 
-```
+```powerapps
 If(!IsBlank(Param("EntityId")), Set(FinOpsInput, Param("EntityId")), Set(FinOpsInput, ""));
 ```
 
@@ -101,7 +101,7 @@ Følg denne fremgangsmåten for å redigere konfigurasjonen av en innebygd app:
 
 Når en app er innebygd på en side, er det to måter å fjerne den på om nødvendig:
 
-- Gå til ruten **Rediger en app** ved hjelp av instruksjonene fra delen [Redigere en innebygd app](#editing-an-embedded-power-app) tidligere i dette emnet. Bekreft at ruten viser informasjon for den innebygde app som du vil fjerne, og klikk deretter på **Slett**-knappen.
+- Gå til ruten **Rediger en app** ved hjelp av instruksjonene fra delen [Redigere en innebygd app](#editing-an-embedded-app) tidligere i dette emnet. Bekreft at ruten viser informasjon for den innebygde app som du vil fjerne, og klikk deretter på **Slett**-knappen.
 - Fordi den innebygde appen lagres som tilpasningsdata, vil fjerning av sidetilpasningen også fjerne alle innebygde apper på denne siden. Legg merke til at fjerning av personlige data på siden er permanent og ikke kan angres. Hvis du vil fjerne tilpasningene dine på en side, velger du **Alternativer**, velger deretter **Tilpass denne siden**, og velger til slutt **Tøm**-knappen. Når du har oppdatert leseren, er alle tidligere tilpassinger for denne siden fjernet. Se [Tilpasse brukeropplevelsen](personalize-user-experience.md) for mer informasjon om hvordan du optimaliserer sider ved hjelp av tilpassing.
 
 ## <a name="appendix"></a>Tillegg
@@ -115,7 +115,7 @@ Som standard kan brukerne bygge inn apper på alle sider, enten under Power Apps
 
 Følgende eksempel viser en ny klasse for de to metodene for å konfigurere der apper kan bygges inn.
 
-```
+```powerapps
 [ExtensionOf(classStr(FormRunConfigurationPowerAppsConfiguration))]
 
 public final class ClassTest_Extension

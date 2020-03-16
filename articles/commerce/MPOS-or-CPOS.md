@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2017-10-12
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 1fffc7141c041873f39f716aaf1a775984ef499c
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 508fda28d8f815f030e7b163709393f70904a5fd
+ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3023492"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "3057700"
 ---
 # <a name="choose-between-modern-pos-mpos-and-cloud-pos"></a>Velge mellom Modern POS (MPOS) og Cloud POS
 
@@ -60,7 +60,7 @@ Selv om MPOS og CPOS stort sett er det samme, er det noen viktige forskjeller so
 MPOS på en Windows-, iOS- eller Android-enhet er et program som er pakket, installert og betjent på denne enheten.
 
 - **Windows** – MPOS for Windows-programmet inneholder all programkode og innebygd Commerce Runtime (CRT). 
-- **iOS/Android** – På disse plattformene fungerer programmet som vert for CPOS-programkoden. Med andre ord kommer programkoden fra CPOS-serveren på Microsoft Azure eller Commerce Scale Unit. Hvis du vil ha mer informasjon, kan du se [Oversikt over Retail Store Scale Unit](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/retail-store-system-begin).
+- **iOS/Android** – På disse plattformene fungerer programmet som vert for CPOS-programkoden. Med andre ord kommer programkoden fra CPOS-serveren på Microsoft Azure eller Commerce Scale Unit. Hvis du vil ha mer informasjon, se [Oversikt over Commerce Scale Unit](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/retail-store-system-begin).
 
 #### <a name="cpos"></a>CPOS
 

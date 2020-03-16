@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: feb28b9c801786f63282c4189d3eeb6d53ed07e1
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 320f21916a5f451ebf4f21e0075017a121ba6d6a
+ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3003148"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "3057620"
 ---
 # <a name="set-up-an-email-notification-profile"></a>Definere en profil for e-postvarsling
 
@@ -41,7 +41,7 @@ Hvis du vil ha ytterligere informasjon om e-postkonfigurasjon, kan du se [Konfig
 
 Hvis du vil opprette en e-postvarslingsprofil, følger du disse trinnene.
 
-1. I navigasjonsruten går du til **Moduler \> Detaljhandel og handel \> Hovedkvarteroppsett \> Detaljhandelsprofil for e-postvarsling**.
+1. I navigasjonsruten går du til **Moduler \> Detaljhandel og handel \> Hovedkvarteroppsett \> Handelsprofil for e-postvarsling**.
 1. I handlingsruten klikker du på **Ny**.
 1. I **E-postvarslingsprofil**-feltet angir du et navn for å identifisere profilen.
 1. I **Beskrivelse**-feltet angir du en relevant beskrivelse.
@@ -71,16 +71,16 @@ Bildet nedenfor viser noen eksempelinnstillinger for e-postmal.
 
 Hvis du vil opprette en e-posthendelse, følger du disse trinnene.
 
-1. I navigasjonsruten går du til **Moduler \> Detaljhandel og handel \> Hovedkvarteroppsett \> Detaljhandelsprofil for e-postvarsling**.
+1. I navigasjonsruten går du til **Moduler \> Detaljhandel og handel \> Hovedkvarteroppsett \> Handelsprofil for e-postvarsling**.
 1. Finn og velg ønsket post i listen. 
 1. Velg e-postmalen fra **E-post-ID**-rullegardinlisten.
 1. Velg aktuell **E-postvarslingstype** fra rullegardinlisten.
 1. Merk av i **Aktiv**-avmerkingsboksen.
 1. Velg **Lagre** i handlingsruten.
 
-Bildet nedenfor viser noen eksempelinnstillinger for varsling for detaljhandelshendelse.
+Bildet nedenfor viser noen eksempelinnstillinger for hendelsesvarsling.
 
-![Varslingsinnstillinger for handelshendelse](media/email-notification-profile.png)
+![Innstillinger for hendelsesvarsling](media/email-notification-profile.png)
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 

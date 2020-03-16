@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: AX 7.0.0, Operations
-ms.openlocfilehash: 026d1d743b5150f152ef70aa642dcf6841a4e398
-ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
+ms.openlocfilehash: 6cdaa89fb6d50ebaaaefe7f92d7224a1567d17d1
+ms.sourcegitcommit: 3dede95a3b17de920bb0adcb33029f990682752b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "3025810"
+ms.lasthandoff: 02/18/2020
+ms.locfileid: "3070826"
 ---
 # <a name="use-the-regression-suite-automation-tool-tutorial"></a>Bruke opplæringen for Regression Suite Automation Tool
 
@@ -217,15 +217,15 @@ Illustrasjonen nedenfor viser forretningsprosessene for dette scenariet i RSAT.
 
 ## <a name="advanced-scripting"></a>Avansert skripting
 
-### <a name="command-line"></a>Kommandolinje
+### <a name="cli"></a>CLI
 
-RSAT kan kalles fra et **ledetekstvindu**.
+RSAT kan kalles fra et **ledetekstvindu** eller et **PowerShell**-vindu.
 
 > [!NOTE]
 > Kontroller at miljøvariabelen **TestRoot** er satt til RSAT-installasjonsbanen. (I Microsoft Windows åpner du **Kontrollpanel**, velger **System og sikkerhet \> System \> Avanserte systeminnstillinger** og deretter **Miljøvariabler**.)
 
-1. Åpne et **ledetekstvindu** som administrator.
-2. Kjør verktøyet fra installasjonskatalogen.
+1. Åpne et **ledetekstvindu** eller et **PowerShell**-vindu som administrator.
+2. Gå til installasjonskatalogen for RSAT.
 
     ```Console
     cd "c:\Program Files (x86)\Regression Suite Automation Tool\"
@@ -242,22 +242,273 @@ RSAT kan kalles fra et **ledetekstvindu**.
         Microsoft.Dynamics.RegressionSuite.ConsoleApp.exe /settings "C:\Path to\file.settings" command
 
     Available commands:
-        list
-        listtestsuite suite_name
-        download test_case_id output_dir
-        generate test_case_id output_dir
-        generatederived parent_test_case_id test_plan_id test_suite_id
-        generatetestonly test_case_id output_dir
-        edit excel_file
-        playback excel_file
-        playbackmany excel_file1 [excel_file2 [.. excel_fileN]]
-        playbackbyid test_case_id1 [test_case_id2 [.. test_case_idN]]
-        playbacksuite suite_name
-        clear
-        help
+        ?
         about
+        cls
+        download
+        edit
+        generate
+        generatederived
+        generatetestonly
+        generatetestsuite
+        help
+        list
+        listtestplans
+        listtestsuite
+        listtestsuitenames
+        playback
+        playbackbyid
+        playbackmany
+        playbacksuite
         quit
+        upload
+        uploadrecording
+        usage
     ```
+
+#### <a name=""></a>? 
+Viser hjelp om alle tilgjengelige kommandoer og deres parametere.
+
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``?``**``[command]``
+
+##### <a name="optional-parameters"></a>Valgfrie parametere
+
+**``command``**
+
+
+Der ``[command]`` er en av kommandoene angitt nedenfor.
+
+
+#### <a name="about"></a>about
+Viser gjeldende versjon.
+
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``about``**
+
+#### <a name="cls"></a>cls
+Tømmer skjermen.
+
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``cls``**
+
+
+#### <a name="download"></a>last ned
+Laster ned vedlegg for den angitte testsaken til utdatamappen. Du kan bruke ``list``-kommandoen til å hente alle tilgjengelige testsaker. Bruk en verdi fra den første kolonnen som en **test_case_id**-parameter.
+
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``download``**``[test_case_id] [output_dir]``
+
+##### <a name="required-parameters"></a>Obligatoriske parametere
+**``test_case_id``** representerer ID-en til testsaken.  
+**``output_dir``** representerer utdatamappen. Katalogen må finnes.
+
+##### <a name="examples"></a>Eksempler
+
+``download 123 c:\temp\rsat``   
+``download 765 c:\rsat\last``
+
+
+#### <a name="edit"></a>rediger
+Lar deg åpne parameterfilen i Excel-programmet og redigere den.
+
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``edit``**``[excel_file]``
+
+##### <a name="required-parameters"></a>Obligatoriske parametere
+**``excel_file``** må inneholde en fullstendig bane til en eksisterende Excel-fil.
+
+##### <a name="examples"></a>Eksempler
+``edit c:\RSAT\TestCase_123_Base.xlsx``  
+``edit e:\temp\TestCase_456_Base.xlsx``
+
+
+#### <a name="generate"></a>generate
+Genererer testkjøring og parameterfiler for den angitte testsaken i utdatamappen.
+Du kan bruke ``list``-kommandoen til å hente alle tilgjengelige testsaker. Bruk en verdi fra den første kolonnen som en **test_case_id**-parameter.
+
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``generate``**``[test_case_id] [output_dir]``
+
+##### <a name="required-parameters"></a>Obligatoriske parametere
+**``test_case_id``** representerer ID-en til testsaken.  
+**``output_dir``** representerer utdatamappen. Katalogen må finnes.
+
+##### <a name="examples"></a>Eksempler
+``generate 123 c:\temp\rsat``  
+``generate 765 c:\rsat\last``
+
+
+#### <a name="generatederived"></a>generatederived
+Genererer en ny testsak, avledet fra den angitte testsaken. Du kan bruke ``list``-kommandoen til å hente alle tilgjengelige testsaker. Bruk en verdi fra den første kolonnen som en **test_case_id**-parameter.
+
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``generatederived``**``[parent_test_case_id] [test_plan_id] [test_suite_id]``
+
+##### <a name="required-parameters"></a>Obligatoriske parametere
+**``parent_test_case_id``** representerer ID-en til den overordnede testsaken.  
+**``test_plan_id``** representerer ID-en til testplanen.  
+**``test_suite_id``** representerer ID-en til testverktøyet.
+
+##### <a name="examples"></a>Eksempler
+``generatederived 123 8901 678``
+
+
+#### <a name="generatetestonly"></a>generatetestonly
+Genererer bare testkjøringsfil for den angitte testsaken i utdatamappen. Du kan bruke ``list``-kommandoen til å hente alle tilgjengelige testsaker. Bruk en verdi fra den første kolonnen som en **test_case_id**-parameter.
+
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``generatetestonly``**``[test_case_id] [output_dir]``
+
+##### <a name="required-parameters"></a>Obligatoriske parametere
+**``test_case_id``** representerer ID-en til testsaken.  
+**``output_dir``** representerer utdatamappen. Katalogen må finnes.
+
+##### <a name="examples"></a>Eksempler
+``generatetestonly 123 c:\temp\rsat``  
+``generatetestonly 765 c:\rsat\last``
+
+
+#### <a name="generatetestsuite"></a>generatetestsuite
+Genererer alle testsaker for det angitte verktøyet i utdatamappen.
+Du kan bruke ``listtestsuitenames``-kommandoen til å hente alle tilgjengelige testverktøy. Bruk en verdi fra kolonnen som en **test_suite_name**-parameter.
+
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``generatetestsuite``**``[test_suite_name] [output_dir]``
+
+##### <a name="required-parameters"></a>Obligatoriske parametere
+**``test_suite_name``** representerer navnet til testverktøyet.  
+**``output_dir``** representerer utdatamappen. Katalogen må finnes.
+
+##### <a name="examples"></a>Eksempler
+``generatetestsuite Tests c:\temp\rsat``   
+``generatetestsuite Purchase c:\rsat\last``
+
+
+#### <a name="help"></a>help
+Identisk med [?](####?)- kommandoen
+
+
+#### <a name="list"></a>listen
+Viser alle tilgjengelige testsaker.
+
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``list``**
+
+
+#### <a name="listtestplans"></a>listtestplans
+Viser alle tilgjengelige testplaner.
+
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``listtestplans``**
+
+
+#### <a name="listtestsuite"></a>listtestsuite
+Viser testsaker for det angitte testverktøyet. Du kan bruke ``listtestsuitenames``-kommandoen til å hente alle tilgjengelige testverktøy. Bruk en verdi fra den første kolonnen som en **suite_name**-parameter.
+
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``listtestsuite``**``[suite_name]``
+
+##### <a name="required-parameters"></a>Obligatoriske parametere
+**``suite_name``** navnet på det ønskede verktøyet.
+
+##### <a name="examples"></a>Eksempler
+``listtestsuite "sample suite name"``  
+``listtestsuite NameOfTheSuite``
+
+
+#### <a name="listtestsuitenames"></a>listtestsuitenames
+Viser alle tilgjengelige testverktøy.
+
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``listtestsuitenames``**
+
+
+#### <a name="playback"></a>playback
+Spiller av en testsak ved hjelp av en Excel-fil.
+
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``playback``**``[excel_file]``
+
+##### <a name="required-parameters"></a>Obligatoriske parametere
+**``excel_file``** en fullstendig bane til Excel-filen. Filen må finnes. 
+
+##### <a name="examples"></a>Eksempler
+``
+playback c:\RSAT\TestCaseParameters\sample1.xlsx
+playback e:\temp\test.xlsx
+``
+
+
+#### <a name="playbackbyid"></a>playbackbyid
+Spiller av flere testsaker samtidig.
+Du kan bruke ``list``-kommandoen til å hente alle tilgjengelige testsaker. Bruk en verdi fra den første kolonnen som en **test_case_id**-parameter.
+
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``playbackbyid``**``[test_case_id1] [test_case_id2] ... [test_case_idN]``
+
+##### <a name="required-parameters"></a>Obligatoriske parametere
+**``test_case_id1``** ID for eksisterende testsak.  
+**``test_case_id2``** ID for eksisterende testsak.  
+**``test_case_idN``** ID for eksisterende testsak.  
+
+##### <a name="examples"></a>Eksempler
+``playbackbyid 878``  
+``playbackbyid 2345 667 135``
+
+
+#### <a name="playbackmany"></a>playbackmany
+Spiller av mange testsaker samtidig ved hjelp av Excel-filer.
+
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``playbackmany``**``[excel_file1] [excel_file2] ... [excel_fileN]``
+
+##### <a name="required-parameters"></a>Obligatoriske parametere
+**``excel_file1``** fullstendig bane til Excel-filen. Filen må finnes.  
+**``excel_file2``** fullstendig bane til Excel-filen. Filen må finnes.  
+**``excel_fileN``** fullstendig bane til Excel-filen. Filen må finnes.  
+
+##### <a name="examples"></a>Eksempler
+``playbackmany c:\RSAT\TestCaseParameters\param1.xlsx``  
+``playbackmany e:\temp\test.xlsx f:\rsat\sample1.xlsx c:\RSAT\sample2.xlsx``
+
+
+#### <a name="playbacksuite"></a>playbacksuite
+Spiller av alle testsaker fra det angitte testverktøyet. Du kan bruke ``listtestsuitenames``-kommandoen til å hente alle tilgjengelige testverktøy. Bruk en verdi fra den første kolonnen som en **suite_name**-parameter.
+
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``playbacksuite``**``[suite_name]``
+
+##### <a name="required-parameters"></a>Obligatoriske parametere
+**``suite_name``** navnet på det ønskede verktøyet.
+
+##### <a name="examples"></a>Eksempler
+``playbacksuite suiteName``  
+``playbacksuite sample_suite``
+
+
+#### <a name="quit"></a>quit
+Lukker appen.
+
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``quit``**
+
+
+#### <a name="upload"></a>upload
+Laster opp alle filer som hører til angitt testverktøy eller testsaker.
+
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``upload``**``[suite_name] [testcase_id]``
+
+#### <a name="required-parameters"></a>Obligatoriske parametere
+**``suite_name``** alle filer som hører til angitt testverktøy, lastes opp.
+**``testcase_id``** alle filer som hører til angitte testsaker, lastes opp.
+
+##### <a name="examples"></a>Eksempler
+``upload sample_suite``  
+``upload 123``  
+``upload 123 456``
+
+
+#### <a name="uploadrecording"></a>uploadrecording
+Laster opp bare opptaksfilen som hører til angitte testsaker.
+
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``uploadrecording``**``[testcase_id]``
+
+##### <a name="required-parameters"></a>Obligatoriske parametere
+**``testcase_id``** opptaksfilen som hører til angitte testsaker, lastes opp.
+
+##### <a name="examples"></a>Eksempler
+``uploadrecording 123``  
+``uploadrecording 123 456``
+
+
+#### <a name="usage"></a>usage
+Viser to måter å aktivere dette programmet på: én som bruker en standard innstillingsfil, en annen som angir en innstillingsfil.
+
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``usage``**
+
 
 ### <a name="windows-powershell-examples"></a>Windows PowerShell-eksempler
 

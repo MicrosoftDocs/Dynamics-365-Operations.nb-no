@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: 5fe1caf7e1854fd59a957ec75f3e4760d5b01837
-ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
+ms.openlocfilehash: 02382872b685103810dd7e84cb91eb409df62f66
+ms.sourcegitcommit: 880f617d1d6e95eccbed762c7ea04398553c2ec0
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3010037"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "3036317"
 ---
 # <a name="manage-items-that-are-lent-to-workers"></a>Administrere varer som er lånt ut til arbeidere
 
@@ -51,7 +51,7 @@ Hvis en vare skades eller kommer bort, må du registrere en fiktiv returpost. De
 <a name="additional-resources"></a>Tilleggsressurser
 --------
 
-[Personale](index.yml)
+[Personale](index.md)
 
 
 
