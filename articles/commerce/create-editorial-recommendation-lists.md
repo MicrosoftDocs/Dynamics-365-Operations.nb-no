@@ -1,9 +1,9 @@
 ---
-title: Opprette kuraterte produktanbefalingslister
+title: Opprette kuraterte anbefalinger manuelt
 description: Dette emnet beskriver hvordan selgere kan opprette og administrere manuelle produktlister for Microsoft Dynamics 365 Commerce-kunder.
 author: bebeale
 manager: AnnBe
-ms.date: 10/1/2019
+ms.date: 03/12/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -19,18 +19,18 @@ ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 46fbd2d8c1235a6cb22c9341bcc21ee3754c8ede
-ms.sourcegitcommit: b5ecde955a69f577de46e7db10e89caaedeb2b49
+ms.openlocfilehash: b39ef61e7dabdd8a53d5666926a95cb7b9e6b9a5
+ms.sourcegitcommit: 1e7e7c4bc197b0a42e4d53d2a54600a2fb125b69
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "3024939"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "3127727"
 ---
-# <a name="create-curated-product-recommendation-lists"></a>Opprette kuraterte produktanbefalingslister
+# <a name="manually-create-curated-recommendations"></a>Opprette kuraterte anbefalinger manuelt
 
 [!include [banner](includes/banner.md)]
 
-Dette emnet beskriver hvordan selgere kan opprette og administrere manuelle produktlister for Microsoft Dynamics 365 Commerce-kunder.
+Dette emnet beskriver hvordan selgere kan opprette og administrere manuelle lister over produktanbefalinger for Microsoft Dynamics 365 Commerce-kunder.
 
 Kuraterte lister er samlinger av individuelt innhold som opprettes og kurateres av personer.  
 
@@ -56,8 +56,22 @@ Hvis du vil opprette en kuratert produktanbefalingsliste, gjør du følgende.
 
 [Oversikt over produktanbefalinger](product-recommendations.md)
 
+[Aktivere ADLS i et Dynamics 365 Commerce-miljø](enable-adls-environment.md)
+
 [Aktiver produktanbefalinger](enable-product-recommendations.md)
 
-[Legge til produktanbefalingslisten på sider](add-reco-list-to-page.md)
+[Aktivere personlige anbefalinger](personalized-recommendations.md)
 
-[Oversikt over produktsamlingsmodul](product-collection-module-overview.md)
+[Velge bort personlige anbefalinger](personalization-gdpr.md)
+
+[Legge til lister over anbefalinger på et e-handelsområde](add-reco-list-to-page.md)
+
+[Legge til produktanbefalinger i POS](product.md)
+
+[Legge til anbefalinger på transaksjonsskjermen](add-recommendations-control-pos-screen.md)
+
+[Justere anbefalingsresultater for AI-ML](modify-product-recommendation-results.md)
+
+[Opprette anbefalinger med demonstrasjonsdata](product-recommendations-demo-data.md)
+
+[Vanlige spørsmål om produktanbefalinger](faq-recommendations.md)

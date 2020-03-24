@@ -3,7 +3,7 @@ title: Aktivere personlige produktanbefalinger
 description: Dette emnet beskriver hvordan du gjør tilpassede produktanbefalinger tilgjengelig for kunder i Microsoft Dynamics 365 Commerce.
 author: bebeale
 manager: AnnBe
-ms.date: 01/28/2020
+ms.date: 03/12/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -19,12 +19,12 @@ ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 6b3c6140b8bd3ea15458223c0f61810421d0b2bc
-ms.sourcegitcommit: b5ecde955a69f577de46e7db10e89caaedeb2b49
+ms.openlocfilehash: bdb56a1f45cdea1832bd269502e534efdb207b03
+ms.sourcegitcommit: 1e7e7c4bc197b0a42e4d53d2a54600a2fb125b69
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "3025271"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "3127911"
 ---
 # <a name="enable-personalized-recommendations"></a>Aktivere tilpassede anbefalinger
 
@@ -110,12 +110,22 @@ Hvis du vil bruke tilpassing på en eksisterende anbefalingsliste i områdebygge
 
 [Oversikt over produktanbefalinger](product-recommendations.md)
 
+[Aktivere ADLS i et Dynamics 365 Commerce-miljø](enable-adls-environment.md)
+
 [Aktiver produktanbefalinger](enable-product-recommendations.md)
 
-[GDPR og produktanbefalinger](personalization-gdpr.md)
+[Velge bort personlige anbefalinger](personalization-gdpr.md)
 
-[Legge til produktanbefalingslisten på sider](add-reco-list-to-page.md)
+[Legge til lister over anbefalinger på et e-handelsområde](add-reco-list-to-page.md)
 
-[Legge til anbefalingspanel til POS-enheter](add-recommendations-control-pos-screen.md)
+[Legge til produktanbefalinger i POS](product.md)
 
-[Oversikt over produktsamlingsmodul](product-collection-module-overview.md)
+[Legge til anbefalinger på transaksjonsskjermen](add-recommendations-control-pos-screen.md)
+
+[Justere anbefalingsresultater for AI-ML](modify-product-recommendation-results.md)
+
+[Opprette kuraterte anbefalinger manuelt](create-editorial-recommendation-lists.md)
+
+[Opprette anbefalinger med demonstrasjonsdata](product-recommendations-demo-data.md)
+
+[Vanlige spørsmål om produktanbefalinger](faq-recommendations.md)

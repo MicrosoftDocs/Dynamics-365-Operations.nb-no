@@ -1,9 +1,9 @@
 ---
-title: Avansert synstaks for filtrering og spørringer
-description: Denne artikkelen beskriver alternativene for filtrering og spørringer som er tilgjengelige når du bruker operatoren treff i Filterr-ruten eller rutenettet for kolonnehodefiltre.
+title: Avansert syntaks for filtrering og spørring
+description: Dette emnet beskriver alternativene for filtrering og spørringer som er tilgjengelige når du bruker operatoren treff i Filterr-ruten eller rutenettet for kolonnehodefiltre.
 author: jasongre
 manager: AnnBe
-ms.date: 01/02/2020
+ms.date: 03/09/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c5a96921436311440ba60c3fa31135457cf9f291
-ms.sourcegitcommit: 8585de8acf579bcc033671ef270fa9d92230121b
+ms.openlocfilehash: 7a525422a091efe8ea88f42e91dc52488430cfe5
+ms.sourcegitcommit: 48c39c0c0949fe48b3536d9d2d0e451d561ff5c6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/02/2020
-ms.locfileid: "2931294"
+ms.lasthandoff: 03/09/2020
+ms.locfileid: "3112197"
 ---
 # <a name="advanced-filtering-and-query-syntax"></a>Avansert syntaks for filtrering og spørring
 
 [!include [banner](../includes/banner.md)]
 
-Denne artikkelen beskriver alternativene for filtrering og spørringer som er tilgjengelige når du bruker operatoren **treff** i Filterr-ruten eller rutenettet for kolonnehodefiltre.
+Dette emnet beskriver alternativene for filtrering og spørringer som er tilgjengelige når du bruker operatoren **treff** i Filter-ruten eller rutenettet for kolonnehodefiltre.
 
 ## <a name="advanced-query-syntax"></a>Avansert spørringssyntaks
 
@@ -122,10 +122,11 @@ Denne artikkelen beskriver alternativene for filtrering og spørringer som er ti
 <td>To påfølgende doble anførselstegn (<strong>""</strong>) finner rader uten verdi for den gjeldende kolonnen.</td>
 </tr>
 <tr>
-<td>(<span class="code">SQL-setning</span>) (SQL-setning i parenteser)</td>
+<td>(<span class="code">Finance and Operations spørring</span>) (Finance and Operations spørring mellom parenteser)</td>
 <td>Samsvarer med en definert spørring</td>
-<td>Skriv inn en spørring som et SQL-setning i parenteser.</td>
-<td><strong><span class="code">(data source.Fieldname != &quot;A&quot;)</span></strong></td>
+<td>Skriv inn en spørring som en SQL-setning mellom parenteser ved hjelp av Finance and Operations-spørringsspråket.</td>
+  <td><strong><span class="code">((AccountNum LIKE "US *") && (DirPartyTable.Name LIKE "Cont*"))</span></strong><br><br> 
+       som et eksempel på syntaksen for en filterbetingelse for et felt fra rotdatakilden i tillegg til et felt fra en annen datakilde (for eksempel Alle kunder-siden)</td>
 </tr>
 <tr>
 <td>T</td>

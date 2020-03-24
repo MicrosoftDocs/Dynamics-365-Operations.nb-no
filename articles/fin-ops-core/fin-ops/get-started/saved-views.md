@@ -3,7 +3,7 @@ title: Lagrede visninger
 description: Dette emnet beskriver hvordan du bruker lagrede visninger-funksjonene.
 author: jasongre
 manager: AnnBe
-ms.date: 10/16/2019
+ms.date: 03/02/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2019-07-31
 ms.dyn365.ops.version: Platform update 28
-ms.openlocfilehash: 62d7dc1bd877cd1267f87ed24f8fb8be8f6c74a3
-ms.sourcegitcommit: 54baab2a04e5c534fc2d1fd67b67e23a152d4e57
+ms.openlocfilehash: c6a5880c6ae9470dbf7986f39798ec888d0c22ea
+ms.sourcegitcommit: 1789a78de1cbeac19d96767812df653a191c67e9
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "3017710"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "3100314"
 ---
 # <a name="saved-views"></a>Lagrede visninger
 
@@ -83,9 +83,9 @@ Følg disse trinnene for å endre standardvisningen for en side:
 2.  Velg visningsnavnet for å åpne visningsvelgeren. 
 3.  Velg **Merk** og deretter **Bruk som standard**.  
 
-Når du oppretter en ny visning (ved hjelp av **Lagre som**-handlingen), kan du gjøre denne nye visningen til standardvisning ved å velge **Bruk som standard**-valget før du lagrer visningen.
+Når du oppretter en ny visning (ved hjelp av **Lagre som**-handling), kan du gjøre denne nye visningen til standardvisning ved å velge **Bruk som standard**-valget før du lagrer visningen.
 
-Vær oppmerksom på at i noen tilfeller vil spørringen som er knyttet til standardvisningen, ikke utføres første gang du navigerer til en side. Hvis du for eksempel navigerer via en flis til en side, blir flisens spørring utført uansett hvilken spørring som er knyttet til standardvisningen. Hvis du navigerer til en side der Klassisk visning allerede har en definert spørring, vil den opprinnelige spørringen utføres opprinnelig i stedet for standardvisningens spørring. Når dette skjer, vil du bli varslet av en informasjonsmelding når visningen lastes inn. Bytting av visninger etter at siden er lastet inn, skal gjøre at visningsspørringen kjøres som forventet.
+Vær oppmerksom på at i noen tilfeller vil spørringen som er knyttet til standardvisningen, ikke utføres første gang du navigerer til en side. Hvis du for eksempel navigerer via en flis til en side, blir flisens spørring utført uansett hvilken spørring som er knyttet til standardvisningen. Hvis du navigerer til en side med en standardvisning som allerede har en definert spørring, vil den opprinnelige spørringen utføres opprinnelig i stedet for standardvisningens spørring. Når dette skjer, vil du bli varslet av en informasjonsmelding når visningen lastes inn. Bytting av visninger etter at siden er lastet inn, skal gjøre at visningsspørringen kjøres som forventet. Når du starter i versjon 10.0.10 Platform update 34, vil informasjonsmeldingen ha en innebygd handling som gir deg muligheten til å laste inn den standard visningsspørringen direkte.
 
 ## <a name="managing-personal-views"></a>Behandle personlige visninger 
 Dialogboksen **Behandle mine visninger** gir deg grunnleggende vedlikeholdsfunksjoner for personlige visninger og rekkefølgen på visningene i visningsvelgeren. Hvis du vil åpne denne siden, klikker du visningsnavnet for å åpne rullegardinmenyen, velger **Mer** og deretter **Behandle mine visninger**.  

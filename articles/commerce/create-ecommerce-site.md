@@ -3,7 +3,7 @@ title: Opprette et e-handelsområde
 description: Dette emnet beskriver trinnene og informasjonen som kreves for å opprette et nytt e-handelsområde i Dynamics 365 Commerce-områdebyggeren.
 author: bicyclingfool
 manager: AnnBe
-ms.date: 01/23/2020
+ms.date: 03/02/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: stuharg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 3d3d8a290f06d9734be21f2d59152acac6857506
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 7177bae911dfa91a645b40581bf23b3ed76562a3
+ms.sourcegitcommit: 567132f4e4f7a1d76dccf762068209a42c788b52
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3002019"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "3096780"
 ---
 # <a name="create-an-e-commerce-site"></a>Opprette et e-handelsområde
 
@@ -65,11 +65,19 @@ Når området er opprettet, kan du kontrollere at det er tilknyttet nettbutikken
 
 [Distribuere et nytt e-handelsområde](deploy-ecommerce-site.md)
 
+[Definere en kanal for nettbutikk](online-stores.md)
+
 [Knytte et nettområde til en kanal](associate-site-online-store.md)
 
 [Administrere robots.txt-filer](manage-robots-txt-files.md)
 
+[Laste opp URL-adresser for omadressering samtidig](upload-bulk-redirects.md)
+
+[Konfigurere en B2C-leier i Commerce](set-up-B2C-tenant.md)
+
 [Definere egendefinerte sider for brukerpålogginger](custom-pages-user-logins.md)
+
+[Konfigurere flere B2C-leiere i et Commerce-miljø](configure-multi-B2C-tenants.md)
 
 [Legge til støtte for et innholdsleveringsnettverk (CDN)](add-cdn-support.md)
 

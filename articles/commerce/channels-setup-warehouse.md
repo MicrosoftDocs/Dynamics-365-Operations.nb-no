@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 9ba12876a8c8f841733d8ec49c33e900211c4ab4
-ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
+ms.openlocfilehash: 6da72ae612f0520965a2b11a21123d4642303ac3
+ms.sourcegitcommit: 141e0239b6310ab4a6a775bc0997120c31634f79
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "3057862"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "3113765"
 ---
 # <a name="warehouse-set-up"></a>Lageroppsett
 
@@ -33,7 +33,7 @@ Dette emnet beskriver hvordan du definerer et lager som skal brukes med en ny ka
 
 ## <a name="overview"></a>Oversikt
 
-Hver handelskanal krever at et konfigurert lager er tilknyttet. Fremgangsmåtene nedenfor angir minimumskonfigurasjonen som kreves for å definere et lager for en handelskanal. Hvis du vil ha mer informasjon om lageroppsett, kan du se [Oversikt over lagerstyring](https://docs.microsoft.com/en-us/dynamics365/supply-chain/warehousing/warehouse-management-overview).
+Hver handelskanal krever at et konfigurert lager er tilknyttet. Fremgangsmåtene nedenfor angir minimumskonfigurasjonen som kreves for å definere et lager for en handelskanal. Hvis du vil ha mer informasjon om lageroppsett, kan du se [Oversikt over lagerstyring](../supply-chain/warehousing/warehouse-management-overview.md?toc=/dynamics365/commerce/toc.json).
 
 ## <a name="configure-a-warehouse-site"></a>Konfigurere et lagerområde
 
@@ -131,7 +131,7 @@ Følgende bilde viser detaljer for et konfigurert lager.
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 
-[Oversikt over lagerstyring](https://docs.microsoft.com/en-us/dynamics365/supply-chain/warehousing/warehouse-management-overview)
+[Oversikt over lagerstyring](../supply-chain/warehousing/warehouse-management-overview.md?toc=/dynamics365/commerce/toc.json)
 
 [Oversikt over kanaler](channels-overview.md)
 

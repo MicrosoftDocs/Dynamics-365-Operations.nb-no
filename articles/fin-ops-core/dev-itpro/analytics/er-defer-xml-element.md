@@ -19,11 +19,11 @@ ms.author: nselin
 ms.search.validFrom: 2020-01-01
 ms.dyn365.ops.version: AX 10.0.9
 ms.openlocfilehash: e9f6161186d04b690ee560dac7ee12974d070506
-ms.sourcegitcommit: 6a70f9ac296158edd065d52a12703b3ce85ce5ee
+ms.sourcegitcommit: 9c401a4adba260704b0b1cb9fe8e148bbb5afeed
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3015335"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "3120884"
 ---
 # <a name="defer-the-execution-of-xml-elements-in-er-formats"></a>Utsette kjøringen av XML-elementer i ER-formater
 
@@ -47,7 +47,7 @@ Hvis du vil vite mer om denne funksjonen, kan du fullføre eksemplet i dette emn
 
 **Utsatt kjøring**-alternativet støttes ikke for XML-elementer som befinner seg i **Vanlig\\Fil**-formatelementet når **Del fil**-alternativet er satt til **Ja**. Hvis du vil ha mer informasjon om hvordan man deler XML-filer, kan du se [Dele genererte XML-filer basert på filstørrelse og innholdsmengde](er-split-files.md).
 
-## <a name="Example"></a>Eksempel: Utsette kjøringen av et XML-element i et ER-format
+## <a name="example-defer-the-execution-of-an-xml-element-in-an-er-format"></a><a name="Example"></a>Eksempel: Utsette kjøringen av et XML-element i et ER-format
 
 Følgende trinn forklarer hvordan en bruker med [rollen](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/sysadmin/tasks/assign-users-security-roles) systemadministrator eller funksjonell konsulent for elektronisk rapportering kan konfigurere et ER-format som inneholder et XML-element der kjøringsrekkefølgen er forskjellig fra rekkefølgen i formathierarkiet.
 

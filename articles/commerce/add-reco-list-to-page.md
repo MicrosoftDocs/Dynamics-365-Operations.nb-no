@@ -1,9 +1,9 @@
 ---
-title: Legge til produktanbefalingslisten på sider
+title: Legge til lister over anbefalinger på et e-handelsområde
 description: Dette emnet forklarer hvordan du legger til en produktanbefalingsliste på en e-handelsside.
 author: bebeale
 manager: AnnBe
-ms.date: 01/28/2020
+ms.date: 03/12/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -19,24 +19,23 @@ ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 5c71c1cf91b1913f44546f40620aff358cf256b2
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 8fa8ee7c97299dde6397f853a128c9aaa663584d
+ms.sourcegitcommit: 1e7e7c4bc197b0a42e4d53d2a54600a2fb125b69
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3001306"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "3127658"
 ---
-# <a name="add-recommendation-lists-to-a-site"></a>Legge til anbefalingslister på et område
-
+# <a name="add-recommendation-lists-an-e-commerce-site"></a>Legge til lister over anbefalinger på et e-handelsområde
 
 [!include [banner](includes/banner.md)]
 
 Dette emnet forklarer hvordan du legger til en produktanbefalingsliste på en e-handelsside.
 
 1. Velg **Legg til modul** fra en eksisterende områdebyggerside for e-handel.
-2. Søk etter modulen for **produktsamling**.
-3. Velg listen du vil legge til på siden, i modulveiviseren.
-4. Lagre endringene.
+1. Søk etter modulen for **produktsamling**.
+1. Velg listen du vil legge til på siden, i modulveiviseren.
+1. Lagre endringene.
 
 Hvis du vil ha mer informasjon om hvilke typer lister du kan legge til på en side, se [Oversikt over produktsamlingsmodul](product-collection-module-overview.md).
 
@@ -45,10 +44,22 @@ Hvis du vil ha mer informasjon om hvilke typer lister du kan legge til på en si
 
 [Oversikt over produktanbefalinger](product-recommendations.md)
 
+[Aktivere ADLS i et Dynamics 365 Commerce-miljø](enable-adls-environment.md)
+
 [Aktiver produktanbefalinger](enable-product-recommendations.md)
 
-[Opprette kuraterte produktanbefalingslister](create-editorial-recommendation-lists.md)
+[Aktivere personlige anbefalinger](personalized-recommendations.md)
 
-[Behandle resultater for AI-ML-basert produktanbefaling](modify-product-recommendation-results.md)
+[Velge bort personlige anbefalinger](personalization-gdpr.md)
 
-[Oversikt over produktsamlingsmodul](product-collection-module-overview.md)
+[Legge til produktanbefalinger i POS](product.md)
+
+[Legge til anbefalinger på transaksjonsskjermen](add-recommendations-control-pos-screen.md)
+
+[Justere anbefalingsresultater for AI-ML](modify-product-recommendation-results.md)
+
+[Opprette kuraterte anbefalinger manuelt](create-editorial-recommendation-lists.md)
+
+[Opprette anbefalinger med demonstrasjonsdata](product-recommendations-demo-data.md)
+
+[Vanlige spørsmål om produktanbefalinger](faq-recommendations.md)

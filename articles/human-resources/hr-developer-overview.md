@@ -1,6 +1,6 @@
 ---
 title: Oversikt
-description: ''
+description: Denne utviklerveiledningen har en referanse til et API og egendefinerte felt. Den inneholder også informasjon om integrering med andre apper.
 author: andreabichsel
 manager: AnnBe
 ms.date: 02/03/2020
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 995de90aa7c83b5aad35d935fe021706cf48ec4c
-ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
+ms.openlocfilehash: e67882c47ad37805c6f6ce8051fb58363c4bcdcf
+ms.sourcegitcommit: f38302b9430f2ab3efe91d0a7beff946bc610e8f
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3010066"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "3091997"
 ---
 # <a name="overview"></a>Oversikt
 
@@ -40,14 +40,14 @@ Denne utviklerveiledningen har en referanse til et API og egendefinerte felt. De
 - Konfigurere dataintegrering
   - [Velg en dataintegreringsteknologi](hr-admin-integration-choose-technology.md)
   - [Konfigurere Common Data Service-integrering](hr-admin-integration-common-data-service.md)
-  - [Konfigurere integrasjon med Finance](hr-admin-integration-finance.md)
-  - [Konfigurere integrasjon med Dayforce](hr-admin-integration-dayforce.md)
-  - [Opprette en app for gjentakende dataeksport](hr-admin-integration-recurring-data-export.md)
+  - [Konfigurere integrering med Finance](hr-admin-integration-finance.md)
+  - [Konfigurere integrering med Dayforce](hr-admin-integration-dayforce.md)
+  - [Opprette en app for regelmessig dataeksport](hr-admin-integration-recurring-data-export.md)
   - Integrere med Office
     - [Opplæring i Office-integrering](../dev-itpro/office-integration/office-integration-tutorial.md?toc=/dynamics365/unified-operations/talent/toc.json)
     - [Oppdatere enhetsdata i Excel](../dev-itpro/office-integration/use-excel-add-in.md?toc=/dynamics365/unified-operations/talent/toc.json)
     - [Opprette opplevelser for Åpne i Excel](../dev-itpro/office-integration/office-integration-edit-excel.md?toc=/dynamics365/unified-operations/talent/toc.json)
-    - [Feilsøke Office-integreringen](../dev-itpro/office-integration/office-integration-troubleshooting.md?toc=/dynamics365/unified-operations/talent/toc.json)
+    - [Feilsøke Office-integrering](../dev-itpro/office-integration/office-integration-troubleshooting.md?toc=/dynamics365/unified-operations/talent/toc.json)
 
 - API-referanse for enhet
   - [Godkjenning](hr-developer-api-authentication.md)

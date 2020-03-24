@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-08-01
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 0deb51bb23851b179e2c4166b6444af654a64e1d
-ms.sourcegitcommit: 380664bf10bb25449e3af3d62e235b76d46c0c89
+ms.openlocfilehash: 11db3ee1e9407febce7731d0888e7a10375a90da
+ms.sourcegitcommit: 66eae22cd99e53fe8e4c6c94945ad8061b69a442
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2020
-ms.locfileid: "2957373"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "3117343"
 ---
 # <a name="business-document-management-overview"></a>Oversikt over administrasjon av forretningsdokument
+
+[!include [banner](../includes/banner.md)]
 
 Forretningsbrukere bruker [rammeverket for elektronisk rapportering (ER)](general-electronic-reporting.md) til å konfigurere formater for utgående dokumenter i overensstemmelse med de lovlige kravene i ulike land. Brukere kan også definere dataflyt for å angi hvilke programdata som skal plasseres i genererte dokumenter. ER-rammeverket genererer utgående dokumenter i Microsoft Office-formater (Excel-arbeidsbøker eller Word-dokumenter) ved å bruke forhåndsdefinerte maler. Malene fylles ut med nødvendige data i samsvar med konfigurert dataflyt mens påkrevde dokumenter genereres. Hvert konfigurerte format kan publiseres som en del av en ER-løsning for å generere bestemte utgående dokumenter. Dette representeres av en ER-formatkonfigurasjon som kan inneholde maler du kan bruke til å generere forskjellige utgående dokumenter. Forretningsbrukere kan bruke dette rammeverket til å administrere nødvendige forretningsdokumenter.
 
@@ -147,7 +149,7 @@ Hvis du vil ha informasjon om hvordan du definerer de nødvendige dokumentbehand
 
 ![Definere dokumenttype for dokumentstyring](./media/BDM-Overview-DMSetting.png)
 
-### <a name="SetupBdmParameters">Definere parametere</a>
+### <a name=""></a><a name="SetupBdmParameters">Definere parametere</a>
 
 Grunnleggende parametere for administrasjon av forretningsdokument kan defineres på siden **Parametere for forretningsdokument**. Bare bestemte brukere har tilgang til siden. Inkludert følgende:
 
@@ -158,7 +160,7 @@ Bruk fremgangsmåten nedenfor til å definere de grunnleggende parameterne for a
 
 1. Logg på som en bruker med tilgang til siden **Parametere for forretningsdokument**.
 2. Gå til **Organisasjonsstyring** \> **Elektronisk rapportering** \> **Administrasjon av forretningsdokument** \> **Parametere for forretningsdokument**.
-3.  På siden **Administrasjon av forretningsdokument**, i fanen **Vedlegg** i feltet **SharePoint-dokumenttype**, definerer du dokumenttypen som skal brukes til midlertidig lagring av maler i Office-formater mens de redigeres ved hjelp av Office-skrivebordsprogrammer. 
+3.    På siden **Administrasjon av forretningsdokument**, i fanen **Vedlegg** i feltet **SharePoint-dokumenttype**, definerer du dokumenttypen som skal brukes til midlertidig lagring av maler i Office-formater mens de redigeres ved hjelp av Office-skrivebordsprogrammer. 
 
 > [!NOTE]
 > Bare dokumenttyper som er konfigurert ved hjelp av en SharePoint-plassering, er tilgjengelige for denne parameteren.
@@ -288,13 +290,13 @@ Siden **BDM-malredigering** åpnes. Den valgte malen vil være tilgjengelig for 
 
 ![Arbeidsområdesiden Administrasjon av forretningsdokument](./media/BDM-Overview-EditingLayout1.png)
 
-### <a name="EditInOffice365">Redigere en mal i Office 365</a>
+### <a name=""></a><a name="EditInOffice365">Redigere en mal i Office 365</a>
 
 Du kan endre malen ved å bruke Office 365. I Office Online kan du for eksempel endre skrifttypen til feltledetekstene i maloverskriften fra **Vanlig** til **Fet**. Disse endringene lagres automatisk i den redigerbare malen som er lagret i den primære malens lagringsplass (som standard Azure Blob-lagring). Dette er konfigurert for ER-rammeverket.
 
 ![Side for redigering av mal for administrasjon av forretningsdokument](./media/BDM-Overview-EditingLayout2.png)
 
-### <a name="EditInOfficeDesktopApp">Redigere en mal i Office-skrivebordsprogrammet</a>
+### <a name=""></a><a name="EditInOfficeDesktopApp">Redigere en mal i Office-skrivebordsprogrammet</a>
 
 > [!NOTE]
 > Denne funksjonen er bare tilgjengelig når **SharePoint-dokumenttype**-parameteren er konfigurert riktig. Hvis du vil ha mer informasjon, kan du se [Konfigurere parametere](#SetupBdmParameters).

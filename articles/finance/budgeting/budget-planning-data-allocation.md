@@ -3,7 +3,7 @@ title: Datafordeling for budsjettplanlegging
 description: Dette emnet beskriver tildelingsmetodene som er tilgjengelige i Microsoft Dynamics 365 Finance, og hvordan de kan brukes.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 03/05/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,23 +18,26 @@ ms.search.region: Global
 ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b8bcfb4d3720d03ce84024766a66ccfc546767ab
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: ceddeda5760d961568d58e7e4805955ea972c586
+ms.sourcegitcommit: 8fad5a8c7ea5d0d0037669e61e2313f684bcae23
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2772082"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "3106888"
 ---
 # <a name="budget-planning-data-allocation"></a>Datafordeling for budsjettplanlegging
 
 [!include [banner](../includes/banner.md)]
 
-Denne artikkelen beskriver tildelingsmetodene som er tilgjengelige i Microsoft Dynamics 365 Finance, og hvordan de kan brukes.  
+Dette emnet beskriver tildelingsmetodene som er tilgjengelige i Microsoft Dynamics 365 Finance, og hvordan de kan brukes.  
 
 Du kan distribuere dataene i en budsjettplan på flere måter for å vise nøyaktig de forventede beløpene.
 
 ## <a name="allocation-methods"></a>Tildelingsmetoder
 Tre tildelingsmetoder (tildele på tvers av perioder, tildele til dimensjoner og bruke finansfordelingsregler) kan opprette budsjettplanlinjer som er basert på linjene i den samme budsjettplanen. Tre andre metoder (aggregere, distribuere og kopiere fra budsjettplanen) kan opprette budsjettplanlinjer i andre budsjettplaner. Du kan angi målscenariet for alle seks tildelingsmetoder. Målscenariet kan være det samme som kildescenariet eller forskjellig fra kildescenariet. Du kan også angi om nye linjer legges til budsjettplanen eller erstatter gjeldende linjer i budsjettplanen.
+
+> [!NOTE] 
+> Et unikt scenario bør brukes til aggregasjon som er forskjellig fra scenariet som ble brukt til distribusjon eller andre endringer som tidligere ble utført i den overordnede planen.  
 
 [![Tildelingsmetoden Tildele på tvers av perioder](./media/allocateacrossperiods-300x259.png)](./media/allocateacrossperiods.png)
 **Tildele på tvers av perioder** – En periodetildelingskategori brukes for å tildele budsjettplanlinjer fra kildebudsjettplanscenariet på tvers av perioder i målscenariet. Kildebeløpet tilordnes til flere linjer i målscenariet, basert på prosentdelen og datoen som er definert i periodetildelingsperioden.         

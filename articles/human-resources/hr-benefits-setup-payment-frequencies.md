@@ -1,6 +1,6 @@
 ---
-title: Definere betalingsfrekvenser
-description: ''
+title: Definere betalingshyppigheter
+description: Microsoft Dynamics 365 Human Resources bruker betalingsfrekvenser til å beregne den årlige fordelslønnen, bestemme fordelsbonusbeløpet en ansatt betaler hver lønnsperiode, og definere frekvensen betalinger blir sendt til leverandører.
 author: andreabichsel
 manager: AnnBe
 ms.date: 02/03/2020
@@ -18,14 +18,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: e5fe0a16c4abbb9241fcdac88fd56e92bf04788c
-ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
+ms.openlocfilehash: b786485ab53dcdb3b7e5ff02562f674a7f8e6eae
+ms.sourcegitcommit: f38302b9430f2ab3efe91d0a7beff946bc610e8f
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3010129"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "3092597"
 ---
-# <a name="set-up-payment-frequencies"></a>Definere betalingsfrekvenser
+# <a name="set-up-payment-frequencies"></a>Definere betalingshyppigheter
 
 [!include [banner](includes/preview-feature.md)]
 

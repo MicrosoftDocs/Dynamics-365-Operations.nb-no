@@ -1,6 +1,6 @@
 ---
-title: Hva er nytt eller endret i Human Resources
-description: ''
+title: Nyheter eller endringer i Human Resources
+description: Hver uke utgir vi en ny versjon for Microsoft Dynamics 365 Human Resources. Artiklene som er oppført her, beskriver endringene som er gjort hver uke.
 author: andreabichsel
 manager: AnnBe
 ms.date: 02/03/2020
@@ -18,14 +18,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: f36aba8a68ea8cc261423f79db00e175df1cf349
-ms.sourcegitcommit: a688c864fc609e35072ad8fd2c01d71f6a5ee7b9
+ms.openlocfilehash: 4058618ec95fabc90fdc784552c1920a109e6418
+ms.sourcegitcommit: 437170338c49b61bba58f822f8494095ea1308c2
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "3075954"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "3123976"
 ---
-# <a name="whats-new-or-changed-in-human-resources"></a>Nyheter eller endringer i Personale?
+# <a name="whats-new-or-changed-in-human-resources"></a>Nyheter eller endringer i Human Resources
 
 Hver uke utgir vi en ny versjon for Microsoft Dynamics 365 Human Resources. Artiklene i denne delen beskriver endringene som er gjort hver uke.
 
@@ -41,6 +41,9 @@ Hvis du vil ha mer informasjon om kommende funksjoner eller oppdateringsprosesse
 
 Hvis du vil se hva som er nytt eller endret i hver ukentlige utgivelse av Human Resources, kan du se følgende artikler:
 
+[10. mars 2020](hr-whats-new-2020-03-10.md)</br>
+[3. mars 2020](hr-whats-new-2020-03-03.md)</br>
+[25. februar 2020](hr-whats-new-2020-02-25.md)</br>
 [18. februar 2020](hr-whats-new-2020-02-18.md)</br>
 [12. februar 2020](hr-whats-new-2020-02-12.md)</br>
 [7. februar 2020](hr-whats-new-2020-02-07.md)</br>

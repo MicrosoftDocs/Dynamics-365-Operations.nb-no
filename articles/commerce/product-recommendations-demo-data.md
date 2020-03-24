@@ -1,9 +1,9 @@
 ---
-title: Få produktanbefalinger ved hjelp av demonstrasjonsdata
+title: Opprette anbefalinger med demonstrasjonsdata
 description: Dette dokument gir råd om hvordan dra nytte av produktanbefalinger for omnikanal i Lag 1-ett-miljøer i en boks, med forhåndsutfylte demonstrasjonsdata som kan tilpasses.
 author: bebeale
 manager: AnnBe
-ms.date: 10/01/19
+ms.date: 03/12/20
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -19,14 +19,17 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 1456feb0665b6ec79a36a3704f17da80ffd759a0
-ms.sourcegitcommit: 3c1eb3d89c6ab9bd70b806ca42ef9df74cf850bc
+ms.openlocfilehash: 2e790d78b4d5216822ffda3a3895feb674876bd8
+ms.sourcegitcommit: 1e7e7c4bc197b0a42e4d53d2a54600a2fb125b69
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "3042786"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "3127842"
 ---
-# <a name="get-product-recommendations-using-demo-data"></a>Få produktanbefalinger ved hjelp av demonstrasjonsdata
+# <a name="create-recommendations-with-demo-data"></a>Opprette anbefalinger med demonstrasjonsdata
+
+[!include [banner](includes/banner.md)]
+
 Dette dokument gir råd om hvordan dra nytte av produktanbefalinger for omnikanal i Lag 1-ett-miljøer i en boks, med forhåndsutfylte demonstrasjonsdata som kan tilpasses.
 
 Produktanbefalinger for omnikanal gir et sett med kuraterte eller programmatisk genererte produktlister. Disse listene kan brukes i flere scenarier, avhengig av forretningsbehovet. Hvis du vil ha mer informasjon om produktanbefalingslister, kan du se [Oversikt over produktanbefalinger](product-recommendations.md).
@@ -67,4 +70,22 @@ Utvidelsen inneholder en datafil med navnet RecoMockDataset.csv, som lar deg kon
 
 [Oversikt over produktanbefalinger](product-recommendations.md)
 
-[Miljøplanlegging](../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md)
+[Aktivere ADLS i et Dynamics 365 Commerce-miljø](enable-adls-environment.md)
+
+[Aktiver produktanbefalinger](enable-product-recommendations.md)
+
+[Aktivere personlige anbefalinger](personalized-recommendations.md)
+
+[Velge bort personlige anbefalinger](personalization-gdpr.md)
+
+[Legge til lister over anbefalinger på et e-handelsområde](add-reco-list-to-page.md)
+
+[Legge til produktanbefalinger i POS](product.md)
+
+[Legge til anbefalinger på transaksjonsskjermen](add-recommendations-control-pos-screen.md)
+
+[Justere anbefalingsresultater for AI-ML](modify-product-recommendation-results.md)
+
+[Opprette kuraterte anbefalinger manuelt](create-editorial-recommendation-lists.md)
+
+[Vanlige spørsmål om produktanbefalinger](faq-recommendations.md)

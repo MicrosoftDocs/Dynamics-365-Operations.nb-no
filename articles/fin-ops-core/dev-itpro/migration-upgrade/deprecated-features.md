@@ -1,9 +1,9 @@
 ---
-title: Funksjoner som er fjernet eller utgått for Finance and Operations
-description: Dette emnet beskriver funksjoner som er fjernet eller som er planlagt for fjerning.
+title: Fjernede eller avskrevne funksjoner i tidligere versjoner
+description: Dette emnet beskriver funksjoner som er fjernet, eller som ble planlagt for fjerning fra Dynamics 365 for Finance and Operations og tidligere versjoner av dette produktet.
 author: sericks007
 manager: AnnBe
-ms.date: 10/08/2019
+ms.date: 03/05/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,28 +17,28 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 52ed93ae425a821ebce4ed63f154e155cb161e94
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: f2e079f1eb43d46acdc39819ae81e0472bba6aa1
+ms.sourcegitcommit: 1d5a4f70a931e78b06811add97c1962e8d93689b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2811999"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "3124572"
 ---
-# <a name="removed-or-deprecated-features-for-finance-and-operations"></a>Funksjoner som er fjernet eller utgått for Finance and Operations
+# <a name="removed-or-deprecated-features-in-previous-releases"></a>Fjernede eller avskrevne funksjoner i tidligere versjoner
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet beskriver funksjonene som er fjernet eller utgått for Finance and Operations.
+> [!IMPORTANT]
+> Dette emnet oppdateres ikke lenger. Hvis du vil se en oppdatert liste over funksjoner som er fjernet eller avskrevet fra Finance and Operations-apper, kan du søke etter **"Funksjoner som er fjernet eller avskrevet"**-innhold som er knyttet til appen du bruker.
+
+Dette emnet beskriver funksjoner som er fjernet eller avskrevet fra Dynamics 365 for Finance and Operations og tidligere versjoner av dette produktet.
 
 - En *fjernet* funksjon er ikke lenger tilgjengelig i produktet.
 - En *avskrevet* funksjon er ikke i aktiv utvikling og kan bli fjernet i en fremtidig oppdatering.
 
 Denne listen er ment å hjelpe deg med å vurdere disse fjerningene og avskrivningene for din egen planlegging. 
 
-> [!NOTE]
-> Fra og med juli 2017-versjonen av Finance and Operations med Platform update 8, oppgis distribusjonstypen for hver av funksjonene som er fjernet eller avskrevet. Alle de tidligere versjonene som er nevnt i dette emnet, støttet bare skydistribusjoner.
-
-Detaljert informasjon om objekter i Finance and Operations finnes i [Tekniske referanserapporter](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep). Du kan sammenligne de ulike versjonene av disse rapportene for å lære om objekter som er endret eller fjernet i hver versjon av Finance and Operations.
+Detaljert informasjon om objekter i Finance and Operations-apper finnes i [Tekniske referanserapporter](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep). Du kan sammenligne de ulike versjonene av disse rapportene for å lære om objekter som er endret eller fjernet i hver versjon av Finance and Operations-apper.
 
 ## <a name="finance-1007-with-platform-update-31"></a>Finance 10.0.7 med Platform update 31
 
@@ -230,7 +230,7 @@ Støtte for opprettelse av prosjektbaserte salgsordrer der prosjektkontrakten ha
 | **Erstattet med en annen funksjon?**   | Nr. |
 | **Berørte produktområder**         | Behandling av produktinformasjon |
 | **Distribusjonsalternativ**              | Alle  |
-| **Status**                         | Fjernet fra og med Finance and Operations 10.0.0 med Platform update 24. I uvanlige tilfeller, for eksempel for å gjenopprette fra en tidligere primærnøkkel for et frigitt produkt, er det mulig å be Microsoft om å fjerne denne begrensningen midlertidig i operasjonen der primærnøkler får nye navn for frigitte produkter. |
+| **Status**                         | Fjernet fra og med Finance and Operations 10.0.0 med Platform update 24. (Hvis og bare hvis du trenger å reparere skadede data som er forårsaket av en tidligere endring av primærnøkkelen for et frigitt produkt, kan du kontakte Microsoft kundestøtte for å be om en midlertidig fjerning av denne begrensningen.) |
 
 
 ## <a name="finance-and-operations-813-with-platform-update-23"></a>Finance and Operations 8.1.3 med Platform update 23
@@ -325,8 +325,8 @@ Funksjon for å opprette maler for nye registre for fortjenesteavgift. Denne fun
 |   |  |
 |------------|--------------------|
 | **Årsak til avskrivning/fjerning** | Funksjonen er ikke kompatibel med Finance and Operations-utvidelsesmodellen. |
-| **Erstattet med en annen funksjon?**   | Nei |
-| **Berørte produktområder**         | Mva |
+| **Erstattet med en annen funksjon?**   | Nr. |
+| **Berørte produktområder**         | Avgift |
 | **Distribusjonsalternativ**              | Alle |
 | **Status**                         | Fjernet fra og med Finance and Operations 8.1 med Platform update 20. |
 
@@ -334,7 +334,7 @@ Funksjon for å opprette maler for nye registre for fortjenesteavgift. Denne fun
 ## <a name="finance-and-operations-80-with-platform-update-15"></a>Finance and Operations 8.0 med Platform update 15
 Ingen funksjoner er fjernet eller avskrevet med denne versjonen. Plattformoppdatering 15 er kumulativ og inneholder nye eller endrede funksjoner fra plattformoppdatering 13, plattformoppdatering 14 og plattformoppdatering 15.
 
-## <a name="finance-and-operations-enterprise-edition-73-with-platform-update-12"></a>Finance and Operations, Enterprise Edition 7.3 med Platform update 12
+## <a name="finance-and-operations-enterprise-edition-73-with-platform-update-12"></a>Finance and Operations, Enterprise edition 7.3 med Platform update 12
 
 ### <a name="personalized-product-recommendations"></a>Personlige produktanbefalinger 
 Fra 15. februar 2018 vil forhandlere ikke lenger kunne vise personlige produktanbefalinger på en salgsstedsenhet. Hvis du vil ha mer informasjon, kan du se [Oversikt over produktanbefalinger](../../../commerce/product-recommendations.md).  
@@ -356,7 +356,7 @@ Muligheten til å introdusere egendefinerte funksjoner som skal brukes i ER-uttr
 | **Erstattet med en annen funksjon?**   | Ingen. Når det er behov for en ny innebygd funksjon, må en ny utvidelsesforespørsel adresseres til ER-rammeverksteamet.<br><br>Som en midlertidig løsning mens den forespurte funksjonen er under utvikling i ER-teamet, kan den nødvendige logikken programmeres som en metode for en egendefinert programklasse. Denne metoden kan være tilgjengelig i et ER-uttrykk som en egenskap i den tilføyde ER-datakilden for **Program\Klasse**-typen som refererer til denne egendefinerte programklassen.  |
 | **Berørte produktområder**         | Rammeverk for elektronisk rapportering                                                      |
 | **Distribusjonsalternativ**              | Alle                                                                                      |
-| **Status**                         | Fjernet fra og med Finance and Operations, Enterprise Edition 7.3.    |
+| **Status**                         | Fjernet fra og med Finance and Operations, Enterprise edition 7.3.    |
 
 ### <a name="inventory-by-item-group-and-inventory-by-inventory-dimension-aging-reports"></a>Lager per varegruppe- og Lager per lagerdimensjon-aldersfordelte saldolister
 
@@ -453,7 +453,7 @@ Fra 15. februar 2018 vil forhandlere ikke lenger kunne vise personlige produktan
 | **Status**                         |Fjernet fra og med 15. februar 2018. Dette påvirker kunder som kjører Dynamics 365 for Retail 7.2 og senere. |
 
 
-## <a name="finance-and-operations-enterprise-edition-july-2017-with-platform-update-8"></a>Finance and Operations, Enterprise Edition juli 2017 med Platform update 8
+## <a name="finance-and-operations-enterprise-edition-july-2017-with-platform-update-8"></a>Finance and Operations, Enterprise edition juli 2017 med plattformoppdatering 8
 
 ### <a name="currency-conversion-for-accounting-and-reporting-currencies"></a>Valutaomregning for regnskap og rapporteringsvalutaer
 
@@ -474,7 +474,7 @@ Portal for lagermobilenheter (WMDP) var en frittstående komponent som var bereg
 |   |  |
 |------------|--------------------|
 | **Årsak til avskrivning/fjerning** | Duplikat funksjonalitet.       |
-| **Erstattet med en annen funksjon?**   | Ja. Denne funksjonen er erstattet med Finance and Operations - Warehousing. Hvis du vil ha mer informasjon om oppsett og forutsetninger, kan du se [Oversikt over Installere og konfigurere lagerappen](../../../supply-chain/warehousing/install-configure-warehousing-app.md). |
+| **Erstattet med en annen funksjon?**   | Ja. Funksjonen har blitt erstattet med en annen Finance and Operations - Warehousing. Hvis du vil ha mer informasjon om oppsett og forutsetninger, kan du se [Oversikt over Installere og konfigurere lagerappen](../../../supply-chain/warehousing/install-configure-warehousing-app.md). |
 | **Berørte produktområder**         | Lagerstyring, transportstyring     |
 | **Distribusjonsalternativ**              | Portal for lagermobilenheter (WMDP) var en frittstående komponent som var beregnet for selvdrevet lokal distribusjon.               |
 | **Status**                         | Avskrevet: Måltidsrammen for funksjonaliteten som skal fjernes, er 4. kvartal 2019.   |

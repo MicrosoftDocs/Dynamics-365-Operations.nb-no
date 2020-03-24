@@ -1,9 +1,9 @@
 ---
-title: Legge til en kontroll for anbefalinger på transaksjonsskjermen på salgsstedsenheter
+title: Legge til anbefalinger på transaksjonsskjermen
 description: Dette emnet beskriver hvordan du legger til en kontroll for anbefalinger på transaksjonsskjermbildet på en salgsstedsenhet ved hjelp av utforming av skjermoppsett i Microsoft Dynamics 365 Commerce.
 author: bebeale
 manager: AnnBe
-ms.date: 10/01/19
+ms.date: 03/12/20
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -19,14 +19,14 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 6d6f48197a36f633e3cd63cbad4518f53946fc7f
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 9117f398ee1d9edbd3aee9bed366eea225964184
+ms.sourcegitcommit: 1e7e7c4bc197b0a42e4d53d2a54600a2fb125b69
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3023500"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "3127681"
 ---
-# <a name="add-a-recommendations-control-to-the-transaction-screen-on-pos-devices"></a>Legge til en kontroll for anbefalinger på transaksjonsskjermen på salgsstedsenheter
+# <a name="add-recommendations-to-the-transaction-screen"></a>Legge til anbefalinger på transaksjonsskjermen
 
 [!include [banner](includes/banner.md)]
 
@@ -98,6 +98,24 @@ Det finnes to tilgjengelige konfigurasjonsalternativer. Velg alternativet som pa
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 
-[Produktanbefalinger i POS](product.md)
+[Oversikt over produktanbefalinger](product-recommendations.md)
 
-[Oversikt over produktanbefalinger](../commerce/product-recommendations.md)
+[Aktivere ADLS i et Dynamics 365 Commerce-miljø](enable-adls-environment.md)
+
+[Aktiver produktanbefalinger](enable-product-recommendations.md)
+
+[Aktivere personlige anbefalinger](personalized-recommendations.md)
+
+[Velge bort personlige anbefalinger](personalization-gdpr.md)
+
+[Legge til lister over anbefalinger på et e-handelsområde](add-reco-list-to-page.md)
+
+[Legge til produktanbefalinger i POS](product.md)
+
+[Justere anbefalingsresultater for AI-ML](modify-product-recommendation-results.md)
+
+[Opprette kuraterte anbefalinger manuelt](create-editorial-recommendation-lists.md)
+
+[Opprette anbefalinger med demonstrasjonsdata](product-recommendations-demo-data.md)
+
+[Vanlige spørsmål om produktanbefalinger](faq-recommendations.md)

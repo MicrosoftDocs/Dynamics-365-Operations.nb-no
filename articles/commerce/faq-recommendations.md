@@ -3,7 +3,7 @@ title: Vanlige spørsmål om produktanbefalinger
 description: Dette emnet inneholder informasjon om prosesser og verktøy som du kan bruke til å feilsøke problemer som er knyttet til produktanbefalinger eller de tilhørende resultatene.
 author: bebeale
 manager: AnnBe
-ms.date: 10/1/2019
+ms.date: 03/12/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -19,12 +19,12 @@ ms.search.industry: Retail, Core, Operations
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 7951f92ef68a7a782f2874d7b73d7e45eba0afba
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 3add4e2e0d5cc16b561b808aacf5cef94fea5ae5
+ms.sourcegitcommit: 1e7e7c4bc197b0a42e4d53d2a54600a2fb125b69
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3003033"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "3127796"
 ---
 # <a name="product-recommendations-faq"></a>Vanlige spørsmål om produktanbefalinger
 
@@ -75,12 +75,28 @@ Hvis du vil ha informasjon om hvordan du legger til produktanbefalingssider på 
 
 ## <a name="how-do-i-enable-recommendations-on-pos"></a>Hvordan aktiverer jeg anbefalinger for salgssted?
 
-Når du har aktivert produktanbefalinger, må du legge til anbefalingspanelet til salgsstedets kontrollskjerm. Se [denne funksjonsdokumentasjonen](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/add-recommendations-control-pos-screen) hvis du vil ha mer informasjon om hvordan du legger til anbefalinger-panelet i oppsettet for salgsstedsenheten.
+Når du har aktivert produktanbefalinger, må du legge til anbefalingspanelet til salgsstedets kontrollskjerm. Hvis du vil ha mer informasjon, kan du se [Legge til en kontroll for anbefalinger på transaksjonsskjermen i POS-enheter](add-recommendations-control-pos-screen.md).
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 
 [Oversikt over produktanbefalinger](product-recommendations.md)
 
+[Aktivere ADLS i et Dynamics 365 Commerce-miljø](enable-adls-environment.md)
+
 [Aktiver produktanbefalinger](enable-product-recommendations.md)
 
-[Behandle resultater for AI-ML-basert produktanbefaling](modify-product-recommendation-results.md)
+[Aktivere personlige anbefalinger](personalized-recommendations.md)
+
+[Velge bort personlige anbefalinger](personalization-gdpr.md)
+
+[Legge til lister over anbefalinger på et e-handelsområde](add-reco-list-to-page.md)
+
+[Legge til produktanbefalinger i POS](product.md)
+
+[Legge til anbefalinger på transaksjonsskjermen](add-recommendations-control-pos-screen.md)
+
+[Justere anbefalingsresultater for AI-ML](modify-product-recommendation-results.md)
+
+[Opprette kuraterte anbefalinger manuelt](create-editorial-recommendation-lists.md)
+
+[Opprette anbefalinger med demonstrasjonsdata](product-recommendations-demo-data.md)

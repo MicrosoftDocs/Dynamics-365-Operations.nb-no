@@ -3,7 +3,7 @@ title: Definere en kanal for nettbutikk
 description: Denne artikkelen inneholder informasjon om nettbutikker og hvordan du definerer dem i Dynamics 365 Commerce.
 author: kfend
 manager: AnnBe
-ms.date: 10/31/2019
+ms.date: 03/02/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: meeram
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: c427b0eba2120123a47f52029d70896be88b9ec0
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: b719e40720b091eec879edf332ab63db710a1ebc
+ms.sourcegitcommit: 567132f4e4f7a1d76dccf762068209a42c788b52
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3023608"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "3096900"
 ---
 # <a name="set-up-an-online-store-channel"></a>Definere en kanal for nettbutikk
 
@@ -71,3 +71,27 @@ Organisasjonshierarkier brukes til å strukturere handelskanaler og til å repre
 Når du oppretter et organisasjonshierarki, må du tilordne et formål til det. Formålet angir hvordan hierarkiet brukes i forretningsstrukturen. Du kan opprette ett organisasjonshierarki for butikkprosessene og bruke dette hierarkiet til sortimenter, etterfylling og rapportering. 
 
 Alternativt kan du opprette et eget organisasjonshierarki for hvert formål. Du kan også opprette flere hierarkier som har samme formål, og tilordne en egen kanal til hvert av dem. Hvis du har tenkt å publisere produktkataloger i nettbutikken, bør du minst legge til nettbutikken i et organisasjonshierarki for sortimenter. Produktene i en katalog velges fra sortimentene som er tilordnet til nettbutikken. Når katalogen publiseres, sammenligner publiseringsprosessen ikrafttredelsesdatoene for sortimentet som er tilordnet til nettbutikken, med produktene som er inkludert i katalogen, for å finne ut hvilke produkter som skal gjøres tilgjengelige i nettbutikken.
+
+## <a name="additional-resources"></a>Tilleggsressurser
+
+[Konfigurere domenenavnet](configure-your-domain-name.md)
+
+[Distribuere et nytt e-handelsområde](deploy-ecommerce-site.md)
+
+[Opprette et e-handelsområde](create-ecommerce-site.md)
+
+[Knytte et nettområde til en kanal](associate-site-online-store.md)
+
+[Administrere robots.txt-filer](manage-robots-txt-files.md)
+
+[Laste opp URL-adresser for omadressering samtidig](upload-bulk-redirects.md)
+
+[Konfigurere en B2C-leier i Commerce](set-up-B2C-tenant.md)
+
+[Definere egendefinerte sider for brukerpålogginger](custom-pages-user-logins.md)
+
+[Konfigurere flere B2C-leiere i et Commerce-miljø](configure-multi-B2C-tenants.md)
+
+[Legge til støtte for et innholdsleveringsnettverk (CDN)](add-cdn-support.md)
+
+[Aktivere stedsbasert butikkregistrering](enable-store-detection.md)
