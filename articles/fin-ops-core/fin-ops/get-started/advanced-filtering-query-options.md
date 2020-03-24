@@ -1,9 +1,9 @@
 ---
-title: Avansert synstaks for filtrering og spørringer
-description: Denne artikkelen beskriver alternativene for filtrering og spørringer som er tilgjengelige når du bruker operatoren treff i Filterr-ruten eller rutenettet for kolonnehodefiltre.
+title: Avansert syntaks for filtrering og spørring
+description: Dette emnet beskriver alternativene for filtrering og spørringer som er tilgjengelige når du bruker operatoren treff i Filterr-ruten eller rutenettet for kolonnehodefiltre.
 author: jasongre
 manager: AnnBe
-ms.date: 01/02/2020
+ms.date: 03/09/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,225 +18,226 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c5a96921436311440ba60c3fa31135457cf9f291
-ms.sourcegitcommit: 8585de8acf579bcc033671ef270fa9d92230121b
+ms.openlocfilehash: 7a525422a091efe8ea88f42e91dc52488430cfe5
+ms.sourcegitcommit: 48c39c0c0949fe48b3536d9d2d0e451d561ff5c6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/02/2020
-ms.locfileid: "2931294"
+ms.lasthandoff: 03/09/2020
+ms.locfileid: "3112197"
 ---
-# <a name="advanced-filtering-and-query-syntax"></a><span data-ttu-id="4b336-103">Avansert syntaks for filtrering og spørring</span><span class="sxs-lookup"><span data-stu-id="4b336-103">Advanced filtering and query syntax</span></span>
+# <a name="advanced-filtering-and-query-syntax"></a><span data-ttu-id="5ec97-103">Avansert syntaks for filtrering og spørring</span><span class="sxs-lookup"><span data-stu-id="5ec97-103">Advanced filtering and query syntax</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="4b336-104">Denne artikkelen beskriver alternativene for filtrering og spørringer som er tilgjengelige når du bruker operatoren **treff** i Filterr-ruten eller rutenettet for kolonnehodefiltre.</span><span class="sxs-lookup"><span data-stu-id="4b336-104">This article describes the filtering and query options that are available when you use the Advanced filter/sort dialog or the **matches** operator in the Filter pane or grid column header filters.</span></span>
+<span data-ttu-id="5ec97-104">Dette emnet beskriver alternativene for filtrering og spørringer som er tilgjengelige når du bruker operatoren **treff** i Filter-ruten eller rutenettet for kolonnehodefiltre.</span><span class="sxs-lookup"><span data-stu-id="5ec97-104">This topic describes the filtering and query options that are available when you use the Advanced filter/sort dialog or the **matches** operator in the Filter pane or grid column header filters.</span></span>
 
-## <a name="advanced-query-syntax"></a><span data-ttu-id="4b336-105">Avansert spørringssyntaks</span><span class="sxs-lookup"><span data-stu-id="4b336-105">Advanced query syntax</span></span>
+## <a name="advanced-query-syntax"></a><span data-ttu-id="5ec97-105">Avansert spørringssyntaks</span><span class="sxs-lookup"><span data-stu-id="5ec97-105">Advanced query syntax</span></span>
 
 <table>
 <thead>
 <tr>
-<th><span data-ttu-id="4b336-106">Syntaks</span><span class="sxs-lookup"><span data-stu-id="4b336-106">Syntax</span></span></th>
-<th><span data-ttu-id="4b336-107">Tegnbeskrivelse</span><span class="sxs-lookup"><span data-stu-id="4b336-107">Character description</span></span></th>
-<th><span data-ttu-id="4b336-108">beskrivelse</span><span class="sxs-lookup"><span data-stu-id="4b336-108">Description</span></span></th>
-<th><span data-ttu-id="4b336-109">Eksempel</span><span class="sxs-lookup"><span data-stu-id="4b336-109">Example</span></span></th>
+<th><span data-ttu-id="5ec97-106">Syntaks</span><span class="sxs-lookup"><span data-stu-id="5ec97-106">Syntax</span></span></th>
+<th><span data-ttu-id="5ec97-107">Tegnbeskrivelse</span><span class="sxs-lookup"><span data-stu-id="5ec97-107">Character description</span></span></th>
+<th><span data-ttu-id="5ec97-108">beskrivelse</span><span class="sxs-lookup"><span data-stu-id="5ec97-108">Description</span></span></th>
+<th><span data-ttu-id="5ec97-109">Eksempel</span><span class="sxs-lookup"><span data-stu-id="5ec97-109">Example</span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><span data-ttu-id="4b336-110"><em>verdi</em></span><span class="sxs-lookup"><span data-stu-id="4b336-110"><em>value</em></span></span></td>
-<td><span data-ttu-id="4b336-111">Er lik verdien som er angitt.</span><span class="sxs-lookup"><span data-stu-id="4b336-111">Equal to the value that is entered</span></span></td>
-<td><span data-ttu-id="4b336-112">Skriv inn verdien du vil søke etter.</span><span class="sxs-lookup"><span data-stu-id="4b336-112">Type the value to find.</span></span></td>
-<td><span data-ttu-id="4b336-113"><strong>Smith</strong> finner &quot;Smith&quot;.</span><span class="sxs-lookup"><span data-stu-id="4b336-113"><strong>Smith</strong> finds &quot;Smith&quot;.</span></span></td>
+<td><span data-ttu-id="5ec97-110"><em>verdi</em></span><span class="sxs-lookup"><span data-stu-id="5ec97-110"><em>value</em></span></span></td>
+<td><span data-ttu-id="5ec97-111">Er lik verdien som er angitt.</span><span class="sxs-lookup"><span data-stu-id="5ec97-111">Equal to the value that is entered</span></span></td>
+<td><span data-ttu-id="5ec97-112">Skriv inn verdien du vil søke etter.</span><span class="sxs-lookup"><span data-stu-id="5ec97-112">Type the value to find.</span></span></td>
+<td><span data-ttu-id="5ec97-113"><strong>Smith</strong> finner &quot;Smith&quot;.</span><span class="sxs-lookup"><span data-stu-id="5ec97-113"><strong>Smith</strong> finds &quot;Smith&quot;.</span></span></td>
 </tr>
 <tr>
-<td><span data-ttu-id="4b336-114">!<em>verdi</em> (utropstegn)</span><span class="sxs-lookup"><span data-stu-id="4b336-114">!<em>value</em> (exclamation point)</span></span></td>
-<td><span data-ttu-id="4b336-115">Ikke lik verdien som er angitt</span><span class="sxs-lookup"><span data-stu-id="4b336-115">Not equal to the value that is entered</span></span></td>
-<td><span data-ttu-id="4b336-116">Skriv inn et utropstegn foran verdien som skal utelates.</span><span class="sxs-lookup"><span data-stu-id="4b336-116">Type an exclamation point and then the value to exclude.</span></span></td>
-<td><span data-ttu-id="4b336-117"><strong>!Smith</strong> finner alle verdier unntatt &quot;Smith&quot;.</span><span class="sxs-lookup"><span data-stu-id="4b336-117"><strong>!Smith</strong> finds all values except &quot;Smith&quot;.</span></span></td>
+<td><span data-ttu-id="5ec97-114">!<em>verdi</em> (utropstegn)</span><span class="sxs-lookup"><span data-stu-id="5ec97-114">!<em>value</em> (exclamation point)</span></span></td>
+<td><span data-ttu-id="5ec97-115">Ikke lik verdien som er angitt</span><span class="sxs-lookup"><span data-stu-id="5ec97-115">Not equal to the value that is entered</span></span></td>
+<td><span data-ttu-id="5ec97-116">Skriv inn et utropstegn foran verdien som skal utelates.</span><span class="sxs-lookup"><span data-stu-id="5ec97-116">Type an exclamation point and then the value to exclude.</span></span></td>
+<td><span data-ttu-id="5ec97-117"><strong>!Smith</strong> finner alle verdier unntatt &quot;Smith&quot;.</span><span class="sxs-lookup"><span data-stu-id="5ec97-117"><strong>!Smith</strong> finds all values except &quot;Smith&quot;.</span></span></td>
 </tr>
 <tr>
-<td><span data-ttu-id="4b336-118"><em>fra-verdi</em>..<em>til-verdi</em> (dobbelt punktum)</span><span class="sxs-lookup"><span data-stu-id="4b336-118"><em>from-value</em>..<em>to-value</em> (double period)</span></span></td>
-<td><span data-ttu-id="4b336-119">Mellom de to verdiene som er atskilt med doble punktum</span><span class="sxs-lookup"><span data-stu-id="4b336-119">Between the two values that are separated by double periods</span></span></td>
-<td><span data-ttu-id="4b336-120">Skriv inn fra-verdien, deretter to punktum og så til-verdien.</span><span class="sxs-lookup"><span data-stu-id="4b336-120">Type the from-value, then two periods, and then the to-value.</span></span></td>
-<td><span data-ttu-id="4b336-121"><strong>1..10</strong> finner alle verdier fra 1 til og med 10.</span><span class="sxs-lookup"><span data-stu-id="4b336-121"><strong>1..10</strong> finds all values from 1 through 10.</span></span> <span data-ttu-id="4b336-122">I en streng finner imidlertid felt <strong>A..C</strong> alle verdier som begynner med &quot;A&quot; og &quot;B&quot;, og verdier som er nøyaktig lik &quot;C&quot;.</span><span class="sxs-lookup"><span data-stu-id="4b336-122">However, in a string field, <strong>A..C</strong> finds all values that start with &quot;A&quot; and &quot;B&quot;, and values that are exactly equal to &quot;C&quot;.</span></span> <span data-ttu-id="4b336-123">Denne spørringen finner for eksempel ikke &quot;Ca&quot;.</span><span class="sxs-lookup"><span data-stu-id="4b336-123">For example, this query won't find &quot;Ca&quot;.</span></span> <span data-ttu-id="4b336-124">Hvis du vil finne alle verdier fra &quot;A<em>&quot; til og med &quot;C</em>&quot;, skriver du inn <strong>A..D</strong>.</span><span class="sxs-lookup"><span data-stu-id="4b336-124">To find all values from &quot;A<em>&quot; through &quot;C</em>&quot;, type <strong>A..D</strong>.</span></span></td>
+<td><span data-ttu-id="5ec97-118"><em>fra-verdi</em>..<em>til-verdi</em> (dobbelt punktum)</span><span class="sxs-lookup"><span data-stu-id="5ec97-118"><em>from-value</em>..<em>to-value</em> (double period)</span></span></td>
+<td><span data-ttu-id="5ec97-119">Mellom de to verdiene som er atskilt med doble punktum</span><span class="sxs-lookup"><span data-stu-id="5ec97-119">Between the two values that are separated by double periods</span></span></td>
+<td><span data-ttu-id="5ec97-120">Skriv inn fra-verdien, deretter to punktum og så til-verdien.</span><span class="sxs-lookup"><span data-stu-id="5ec97-120">Type the from-value, then two periods, and then the to-value.</span></span></td>
+<td><span data-ttu-id="5ec97-121"><strong>1..10</strong> finner alle verdier fra 1 til og med 10.</span><span class="sxs-lookup"><span data-stu-id="5ec97-121"><strong>1..10</strong> finds all values from 1 through 10.</span></span> <span data-ttu-id="5ec97-122">I en streng finner imidlertid felt <strong>A..C</strong> alle verdier som begynner med &quot;A&quot; og &quot;B&quot;, og verdier som er nøyaktig lik &quot;C&quot;.</span><span class="sxs-lookup"><span data-stu-id="5ec97-122">However, in a string field, <strong>A..C</strong> finds all values that start with &quot;A&quot; and &quot;B&quot;, and values that are exactly equal to &quot;C&quot;.</span></span> <span data-ttu-id="5ec97-123">Denne spørringen finner for eksempel ikke &quot;Ca&quot;.</span><span class="sxs-lookup"><span data-stu-id="5ec97-123">For example, this query won't find &quot;Ca&quot;.</span></span> <span data-ttu-id="5ec97-124">Hvis du vil finne alle verdier fra &quot;A<em>&quot; til og med &quot;C</em>&quot;, skriver du inn <strong>A..D</strong>.</span><span class="sxs-lookup"><span data-stu-id="5ec97-124">To find all values from &quot;A<em>&quot; through &quot;C</em>&quot;, type <strong>A..D</strong>.</span></span></td>
 </tr>
 <tr>
-<td><span data-ttu-id="4b336-125">..<em>verdi</em> (dobbelt punktum)</span><span class="sxs-lookup"><span data-stu-id="4b336-125">..<em>value</em> (double period)</span></span></td>
-<td><span data-ttu-id="4b336-126">Mindre enn eller lik verdien som er angitt</span><span class="sxs-lookup"><span data-stu-id="4b336-126">Less than or equal to the value that is entered</span></span></td>
-<td><span data-ttu-id="4b336-127">Skriv inn de to punktumene og deretter verdien.</span><span class="sxs-lookup"><span data-stu-id="4b336-127">Type two periods and then the value.</span></span></td>
-<td><span data-ttu-id="4b336-128"><strong>..1000</strong> finner et hvilket som helst tall som er mindre enn eller lik 1 000, for eksempel &quot;100&quot;, &quot;999,95&quot; og &quot;1 000&quot;.</span><span class="sxs-lookup"><span data-stu-id="4b336-128"><strong>..1000</strong> finds any number that is less than or equal to 1000, such as &quot;100&quot;, &quot;999.95&quot;, and &quot;1,000&quot;.</span></span></td>
+<td><span data-ttu-id="5ec97-125">..<em>verdi</em> (dobbelt punktum)</span><span class="sxs-lookup"><span data-stu-id="5ec97-125">..<em>value</em> (double period)</span></span></td>
+<td><span data-ttu-id="5ec97-126">Mindre enn eller lik verdien som er angitt</span><span class="sxs-lookup"><span data-stu-id="5ec97-126">Less than or equal to the value that is entered</span></span></td>
+<td><span data-ttu-id="5ec97-127">Skriv inn de to punktumene og deretter verdien.</span><span class="sxs-lookup"><span data-stu-id="5ec97-127">Type two periods and then the value.</span></span></td>
+<td><span data-ttu-id="5ec97-128"><strong>..1000</strong> finner et hvilket som helst tall som er mindre enn eller lik 1 000, for eksempel &quot;100&quot;, &quot;999,95&quot; og &quot;1 000&quot;.</span><span class="sxs-lookup"><span data-stu-id="5ec97-128"><strong>..1000</strong> finds any number that is less than or equal to 1000, such as &quot;100&quot;, &quot;999.95&quot;, and &quot;1,000&quot;.</span></span></td>
 </tr>
 <tr>
-<td><span data-ttu-id="4b336-129"><em>verdi</em>..</span><span class="sxs-lookup"><span data-stu-id="4b336-129"><em>value</em>..</span></span> <span data-ttu-id="4b336-130">(dobbelt punktum)</span><span class="sxs-lookup"><span data-stu-id="4b336-130">(double period)</span></span></td>
-<td><span data-ttu-id="4b336-131">Større enn eller lik verdien som er angitt</span><span class="sxs-lookup"><span data-stu-id="4b336-131">Greater than or equal to the value that is entered</span></span></td>
-<td><span data-ttu-id="4b336-132">Skriv inn verdien og deretter to punktumene.</span><span class="sxs-lookup"><span data-stu-id="4b336-132">Type the value and then two periods.</span></span></td>
-<td><span data-ttu-id="4b336-133"><strong>1000..</strong></span><span class="sxs-lookup"><span data-stu-id="4b336-133"><strong>1000..</strong></span></span> <span data-ttu-id="4b336-134">finner et hvilket som helst tall som er større enn eller lik 1 000, for eksempel &quot;1,000&quot;, &quot;1,000,01&quot;, og &quot;1,000,000&quot;.</span><span class="sxs-lookup"><span data-stu-id="4b336-134">finds any number that is greater than or equal to 1000, such as &quot;1,000&quot;, &quot;1,000.01&quot;, and &quot;1,000,000&quot;.</span></span></td>
+<td><span data-ttu-id="5ec97-129"><em>verdi</em>..</span><span class="sxs-lookup"><span data-stu-id="5ec97-129"><em>value</em>..</span></span> <span data-ttu-id="5ec97-130">(dobbelt punktum)</span><span class="sxs-lookup"><span data-stu-id="5ec97-130">(double period)</span></span></td>
+<td><span data-ttu-id="5ec97-131">Større enn eller lik verdien som er angitt</span><span class="sxs-lookup"><span data-stu-id="5ec97-131">Greater than or equal to the value that is entered</span></span></td>
+<td><span data-ttu-id="5ec97-132">Skriv inn verdien og deretter to punktumene.</span><span class="sxs-lookup"><span data-stu-id="5ec97-132">Type the value and then two periods.</span></span></td>
+<td><span data-ttu-id="5ec97-133"><strong>1000..</strong></span><span class="sxs-lookup"><span data-stu-id="5ec97-133"><strong>1000..</strong></span></span> <span data-ttu-id="5ec97-134">finner et hvilket som helst tall som er større enn eller lik 1 000, for eksempel &quot;1,000&quot;, &quot;1,000,01&quot;, og &quot;1,000,000&quot;.</span><span class="sxs-lookup"><span data-stu-id="5ec97-134">finds any number that is greater than or equal to 1000, such as &quot;1,000&quot;, &quot;1,000.01&quot;, and &quot;1,000,000&quot;.</span></span></td>
 </tr>
 <tr>
-<td><span data-ttu-id="4b336-135">&gt;<em>verdi</em> (større enn-tegn)</span><span class="sxs-lookup"><span data-stu-id="4b336-135">&gt;<em>value</em> (greater than sign)</span></span></td>
-<td><span data-ttu-id="4b336-136">Større enn verdien som er angitt</span><span class="sxs-lookup"><span data-stu-id="4b336-136">Greater than the value that is entered</span></span></td>
-<td><span data-ttu-id="4b336-137">Skriv inn et større enn-tegn (<strong>&gt;</strong>) og deretter verdien.</span><span class="sxs-lookup"><span data-stu-id="4b336-137">Type a greater than sign (<strong>&gt;</strong>) and then the value.</span></span></td>
-<td><span data-ttu-id="4b336-138"><strong>&gt;1000</strong> finner et hvilket som helst tall som er større enn 1 000, for eksempel &quot;1000,01&quot;, &quot;20,000&quot; og &quot;1,000,000&quot;.</span><span class="sxs-lookup"><span data-stu-id="4b336-138"><strong>&gt;1000</strong> finds any number that is greater than 1000, such as &quot;1000.01&quot;, &quot;20,000&quot;, and &quot;1,000,000&quot;.</span></span></td>
+<td><span data-ttu-id="5ec97-135">&gt;<em>verdi</em> (større enn-tegn)</span><span class="sxs-lookup"><span data-stu-id="5ec97-135">&gt;<em>value</em> (greater than sign)</span></span></td>
+<td><span data-ttu-id="5ec97-136">Større enn verdien som er angitt</span><span class="sxs-lookup"><span data-stu-id="5ec97-136">Greater than the value that is entered</span></span></td>
+<td><span data-ttu-id="5ec97-137">Skriv inn et større enn-tegn (<strong>&gt;</strong>) og deretter verdien.</span><span class="sxs-lookup"><span data-stu-id="5ec97-137">Type a greater than sign (<strong>&gt;</strong>) and then the value.</span></span></td>
+<td><span data-ttu-id="5ec97-138"><strong>&gt;1000</strong> finner et hvilket som helst tall som er større enn 1 000, for eksempel &quot;1000,01&quot;, &quot;20,000&quot; og &quot;1,000,000&quot;.</span><span class="sxs-lookup"><span data-stu-id="5ec97-138"><strong>&gt;1000</strong> finds any number that is greater than 1000, such as &quot;1000.01&quot;, &quot;20,000&quot;, and &quot;1,000,000&quot;.</span></span></td>
 </tr>
 <tr>
-<td><span data-ttu-id="4b336-139">&lt;<em>verdi</em> (mindre enn-tegn)</span><span class="sxs-lookup"><span data-stu-id="4b336-139">&lt;<em>value</em> (less than sign)</span></span></td>
-<td><span data-ttu-id="4b336-140">Mindre enn verdien som er angitt</span><span class="sxs-lookup"><span data-stu-id="4b336-140">Less than the value that is entered</span></span></td>
-<td><span data-ttu-id="4b336-141">Skriv inn et mindre enn-tegn (<strong>&lt;</strong>) og deretter verdien.</span><span class="sxs-lookup"><span data-stu-id="4b336-141">Type a less than sign (<strong>&lt;</strong>) and then the value.</span></span></td>
-<td><span data-ttu-id="4b336-142"><strong>&lt;1000</strong> finner et hvilket som helst tall som er mindre enn 1 000, for eksempel &quot;999,99&quot;, &quot;1&quot; og &quot;-200&quot;.</span><span class="sxs-lookup"><span data-stu-id="4b336-142"><strong>&lt;1000</strong> finds any number that is less than 1000, such as &quot;999.99&quot;, &quot;1&quot;, and &quot;-200&quot;.</span></span></td>
+<td><span data-ttu-id="5ec97-139">&lt;<em>verdi</em> (mindre enn-tegn)</span><span class="sxs-lookup"><span data-stu-id="5ec97-139">&lt;<em>value</em> (less than sign)</span></span></td>
+<td><span data-ttu-id="5ec97-140">Mindre enn verdien som er angitt</span><span class="sxs-lookup"><span data-stu-id="5ec97-140">Less than the value that is entered</span></span></td>
+<td><span data-ttu-id="5ec97-141">Skriv inn et mindre enn-tegn (<strong>&lt;</strong>) og deretter verdien.</span><span class="sxs-lookup"><span data-stu-id="5ec97-141">Type a less than sign (<strong>&lt;</strong>) and then the value.</span></span></td>
+<td><span data-ttu-id="5ec97-142"><strong>&lt;1000</strong> finner et hvilket som helst tall som er mindre enn 1 000, for eksempel &quot;999,99&quot;, &quot;1&quot; og &quot;-200&quot;.</span><span class="sxs-lookup"><span data-stu-id="5ec97-142"><strong>&lt;1000</strong> finds any number that is less than 1000, such as &quot;999.99&quot;, &quot;1&quot;, and &quot;-200&quot;.</span></span></td>
 </tr>
 <tr>
-<td><span data-ttu-id="4b336-143"><em>verdi</em>\* (stjerne)</span><span class="sxs-lookup"><span data-stu-id="4b336-143"><em>value</em>\* (asterisk)</span></span></td>
-<td><span data-ttu-id="4b336-144">Begynner fra verdien som er angitt</span><span class="sxs-lookup"><span data-stu-id="4b336-144">Starting from the value that is entered</span></span></td>
-<td><span data-ttu-id="4b336-145">Skriv inn startverdien og deretter en stjerne (<strong>\*</strong>).</span><span class="sxs-lookup"><span data-stu-id="4b336-145">Type the starting value and then an asterisk (<strong>\*</strong>).</span></span></td>
-<td><span data-ttu-id="4b336-146"><strong>S\*</strong> finner en hvilken som helst streng som begynner med &quot;S&quot;, for eksempel &quot;Stockholm&quot;, &quot;Sydney&quot; og &quot;San Francisco&quot;.</span><span class="sxs-lookup"><span data-stu-id="4b336-146"><strong>S\*</strong> finds any string that starts with &quot;S&quot;, such as &quot;Stockholm&quot;, &quot;Sydney&quot;, and &quot;San Francisco&quot;.</span></span></td>
+<td><span data-ttu-id="5ec97-143"><em>verdi</em>\* (stjerne)</span><span class="sxs-lookup"><span data-stu-id="5ec97-143"><em>value</em>\* (asterisk)</span></span></td>
+<td><span data-ttu-id="5ec97-144">Begynner fra verdien som er angitt</span><span class="sxs-lookup"><span data-stu-id="5ec97-144">Starting from the value that is entered</span></span></td>
+<td><span data-ttu-id="5ec97-145">Skriv inn startverdien og deretter en stjerne (<strong>\*</strong>).</span><span class="sxs-lookup"><span data-stu-id="5ec97-145">Type the starting value and then an asterisk (<strong>\*</strong>).</span></span></td>
+<td><span data-ttu-id="5ec97-146"><strong>S\*</strong> finner en hvilken som helst streng som begynner med &quot;S&quot;, for eksempel &quot;Stockholm&quot;, &quot;Sydney&quot; og &quot;San Francisco&quot;.</span><span class="sxs-lookup"><span data-stu-id="5ec97-146"><strong>S\*</strong> finds any string that starts with &quot;S&quot;, such as &quot;Stockholm&quot;, &quot;Sydney&quot;, and &quot;San Francisco&quot;.</span></span></td>
 </tr>
 <tr>
-<td><span data-ttu-id="4b336-147">\*<em>verdi</em> (stjerne)</span><span class="sxs-lookup"><span data-stu-id="4b336-147">\*<em>value</em> (asterisk)</span></span></td>
-<td><span data-ttu-id="4b336-148">Slutter med verdien som er angitt</span><span class="sxs-lookup"><span data-stu-id="4b336-148">Ending with the value that is entered</span></span></td>
-<td><span data-ttu-id="4b336-149">Skriv inn en stjerne og deretter sluttverdien.</span><span class="sxs-lookup"><span data-stu-id="4b336-149">Type an asterisk and then the ending value.</span></span></td>
-<td><span data-ttu-id="4b336-150"><strong>\*øst</strong> finner en hvilken som helst streng som slutter med &quot;øst&quot;, som i &quot;nordøst&quot; og &quot;sydøst&quot;.</span><span class="sxs-lookup"><span data-stu-id="4b336-150"><strong>\*east</strong> finds any string that ends with &quot;east&quot;, such as &quot;Northeast&quot; and &quot;Southeast&quot;.</span></span></td>
+<td><span data-ttu-id="5ec97-147">\*<em>verdi</em> (stjerne)</span><span class="sxs-lookup"><span data-stu-id="5ec97-147">\*<em>value</em> (asterisk)</span></span></td>
+<td><span data-ttu-id="5ec97-148">Slutter med verdien som er angitt</span><span class="sxs-lookup"><span data-stu-id="5ec97-148">Ending with the value that is entered</span></span></td>
+<td><span data-ttu-id="5ec97-149">Skriv inn en stjerne og deretter sluttverdien.</span><span class="sxs-lookup"><span data-stu-id="5ec97-149">Type an asterisk and then the ending value.</span></span></td>
+<td><span data-ttu-id="5ec97-150"><strong>\*øst</strong> finner en hvilken som helst streng som slutter med &quot;øst&quot;, som i &quot;nordøst&quot; og &quot;sydøst&quot;.</span><span class="sxs-lookup"><span data-stu-id="5ec97-150"><strong>\*east</strong> finds any string that ends with &quot;east&quot;, such as &quot;Northeast&quot; and &quot;Southeast&quot;.</span></span></td>
 </tr>
 <tr>
-<td><span data-ttu-id="4b336-151">*<em>verdi</em>* (stjerne)</span><span class="sxs-lookup"><span data-stu-id="4b336-151">*<em>value</em>* (asterisk)</span></span></td>
-<td><span data-ttu-id="4b336-152">Inneholder verdien som er angitt</span><span class="sxs-lookup"><span data-stu-id="4b336-152">Containing the value that is entered</span></span></td>
-<td><span data-ttu-id="4b336-153">Skriv inn en stjerne, deretter en verdi og så en ny stjerne.</span><span class="sxs-lookup"><span data-stu-id="4b336-153">Type an asterisk, then a value, and then another asterisk.</span></span></td>
-<td><span data-ttu-id="4b336-154"><strong>*øs*</strong> finner en hvilken som helst streng som inneholder &quot;øs&quot;, som i &quot;nordøst&quot; og &quot;sørøst&quot;.</span><span class="sxs-lookup"><span data-stu-id="4b336-154"><strong>*th*</strong> finds any string that contains &quot;th&quot;, such as &quot;Northeast&quot; and &quot;Southeast&quot;.</span></span></td>
+<td><span data-ttu-id="5ec97-151">*<em>verdi</em>* (stjerne)</span><span class="sxs-lookup"><span data-stu-id="5ec97-151">*<em>value</em>* (asterisk)</span></span></td>
+<td><span data-ttu-id="5ec97-152">Inneholder verdien som er angitt</span><span class="sxs-lookup"><span data-stu-id="5ec97-152">Containing the value that is entered</span></span></td>
+<td><span data-ttu-id="5ec97-153">Skriv inn en stjerne, deretter en verdi og så en ny stjerne.</span><span class="sxs-lookup"><span data-stu-id="5ec97-153">Type an asterisk, then a value, and then another asterisk.</span></span></td>
+<td><span data-ttu-id="5ec97-154"><strong>*øs*</strong> finner en hvilken som helst streng som inneholder &quot;øs&quot;, som i &quot;nordøst&quot; og &quot;sørøst&quot;.</span><span class="sxs-lookup"><span data-stu-id="5ec97-154"><strong>*th*</strong> finds any string that contains &quot;th&quot;, such as &quot;Northeast&quot; and &quot;Southeast&quot;.</span></span></td>
 </tr>
 <tr>
-<td><span data-ttu-id="4b336-155">?</span><span class="sxs-lookup"><span data-stu-id="4b336-155">?</span></span> <span data-ttu-id="4b336-156">(spørsmålstegn)</span><span class="sxs-lookup"><span data-stu-id="4b336-156">(question mark)</span></span></td>
-<td><span data-ttu-id="4b336-157">Har ett eller flere ukjente tegn</span><span class="sxs-lookup"><span data-stu-id="4b336-157">Having one or more unknown characters</span></span></td>
-<td><span data-ttu-id="4b336-158">Skriv inn et spørsmålstegn i posisjonen for det ukjente tegnet i verdien.</span><span class="sxs-lookup"><span data-stu-id="4b336-158">Type a question mark at the position of the unknown character in the value.</span></span></td>
-<td><span data-ttu-id="4b336-159"><strong>Sm?th</strong> finner &quot;Smith&quot; og &quot;Smyth&quot;.</span><span class="sxs-lookup"><span data-stu-id="4b336-159"><strong>Sm?th</strong> finds &quot;Smith&quot; and &quot;Smyth&quot;.</span></span></td>
+<td><span data-ttu-id="5ec97-155">?</span><span class="sxs-lookup"><span data-stu-id="5ec97-155">?</span></span> <span data-ttu-id="5ec97-156">(spørsmålstegn)</span><span class="sxs-lookup"><span data-stu-id="5ec97-156">(question mark)</span></span></td>
+<td><span data-ttu-id="5ec97-157">Har ett eller flere ukjente tegn</span><span class="sxs-lookup"><span data-stu-id="5ec97-157">Having one or more unknown characters</span></span></td>
+<td><span data-ttu-id="5ec97-158">Skriv inn et spørsmålstegn i posisjonen for det ukjente tegnet i verdien.</span><span class="sxs-lookup"><span data-stu-id="5ec97-158">Type a question mark at the position of the unknown character in the value.</span></span></td>
+<td><span data-ttu-id="5ec97-159"><strong>Sm?th</strong> finner &quot;Smith&quot; og &quot;Smyth&quot;.</span><span class="sxs-lookup"><span data-stu-id="5ec97-159"><strong>Sm?th</strong> finds &quot;Smith&quot; and &quot;Smyth&quot;.</span></span></td>
 </tr>
 <tr>
-<td><span data-ttu-id="4b336-160"><em>verdi</em>,<em>verdi</em> (komma)</span><span class="sxs-lookup"><span data-stu-id="4b336-160"><em>value</em>,<em>value</em> (comma)</span></span></td>
-<td><span data-ttu-id="4b336-161">Samsvarer med verdiene som er atskilt med komma</span><span class="sxs-lookup"><span data-stu-id="4b336-161">Matching the values that are separated by commas</span></span></td>
-<td><span data-ttu-id="4b336-162">Skriv inn alle kriteriene atskilt med komma.</span><span class="sxs-lookup"><span data-stu-id="4b336-162">Type all your criteria, and separate them by using commas.</span></span></td>
-<td><span data-ttu-id="4b336-163"><strong>A, D, F, G</strong> finnner &quot;A&quot;, &quot;D&quot;, &quot;F&quot; og &quot;G&quot;.</span><span class="sxs-lookup"><span data-stu-id="4b336-163"><strong>A, D, F, G</strong> finds exactly &quot;A&quot;, &quot;D&quot;, &quot;F&quot;, and &quot;G&quot;.</span></span> <span data-ttu-id="4b336-164"><strong>10, 20, 30, 100</strong> finner &quot;10, 20, 30, 100&quot;.</span><span class="sxs-lookup"><span data-stu-id="4b336-164"><strong>10, 20, 30, 100</strong> finds exactly &quot;10, 20, 30, 100&quot;.</span></span></td>
+<td><span data-ttu-id="5ec97-160"><em>verdi</em>,<em>verdi</em> (komma)</span><span class="sxs-lookup"><span data-stu-id="5ec97-160"><em>value</em>,<em>value</em> (comma)</span></span></td>
+<td><span data-ttu-id="5ec97-161">Samsvarer med verdiene som er atskilt med komma</span><span class="sxs-lookup"><span data-stu-id="5ec97-161">Matching the values that are separated by commas</span></span></td>
+<td><span data-ttu-id="5ec97-162">Skriv inn alle kriteriene atskilt med komma.</span><span class="sxs-lookup"><span data-stu-id="5ec97-162">Type all your criteria, and separate them by using commas.</span></span></td>
+<td><span data-ttu-id="5ec97-163"><strong>A, D, F, G</strong> finnner &quot;A&quot;, &quot;D&quot;, &quot;F&quot; og &quot;G&quot;.</span><span class="sxs-lookup"><span data-stu-id="5ec97-163"><strong>A, D, F, G</strong> finds exactly &quot;A&quot;, &quot;D&quot;, &quot;F&quot;, and &quot;G&quot;.</span></span> <span data-ttu-id="5ec97-164"><strong>10, 20, 30, 100</strong> finner &quot;10, 20, 30, 100&quot;.</span><span class="sxs-lookup"><span data-stu-id="5ec97-164"><strong>10, 20, 30, 100</strong> finds exactly &quot;10, 20, 30, 100&quot;.</span></span></td>
 </tr>
 <tr>
-<td><span data-ttu-id="4b336-165">"" (to doble anførselstegn)</span><span class="sxs-lookup"><span data-stu-id="4b336-165">"" (two double quotes)</span></span></td>
-<td><span data-ttu-id="4b336-166">Samsvare en tom verdi</span><span class="sxs-lookup"><span data-stu-id="4b336-166">Matching a blank value</span></span></td>
-<td><span data-ttu-id="4b336-167">Skriv inn to påfølgende doble anførselstegn for å filtrere etter tomme verdier i det feltet.</span><span class="sxs-lookup"><span data-stu-id="4b336-167">Type two consecutive double quotes to filter for blank values in that field.</span></span></td>
-<td><span data-ttu-id="4b336-168">To påfølgende doble anførselstegn (<strong>""</strong>) finner rader uten verdi for den gjeldende kolonnen.</span><span class="sxs-lookup"><span data-stu-id="4b336-168">Two consecutive double quotes (<strong>""</strong>) finds rows with no value for the current column.</span></span></td>
+<td><span data-ttu-id="5ec97-165">"" (to doble anførselstegn)</span><span class="sxs-lookup"><span data-stu-id="5ec97-165">"" (two double quotes)</span></span></td>
+<td><span data-ttu-id="5ec97-166">Samsvare en tom verdi</span><span class="sxs-lookup"><span data-stu-id="5ec97-166">Matching a blank value</span></span></td>
+<td><span data-ttu-id="5ec97-167">Skriv inn to påfølgende doble anførselstegn for å filtrere etter tomme verdier i det feltet.</span><span class="sxs-lookup"><span data-stu-id="5ec97-167">Type two consecutive double quotes to filter for blank values in that field.</span></span></td>
+<td><span data-ttu-id="5ec97-168">To påfølgende doble anførselstegn (<strong>""</strong>) finner rader uten verdi for den gjeldende kolonnen.</span><span class="sxs-lookup"><span data-stu-id="5ec97-168">Two consecutive double quotes (<strong>""</strong>) finds rows with no value for the current column.</span></span></td>
 </tr>
 <tr>
-<td><span data-ttu-id="4b336-169">(<span class="code">SQL-setning</span>) (SQL-setning i parenteser)</span><span class="sxs-lookup"><span data-stu-id="4b336-169">(<span class="code">SQL statement</span>) (SQL statement between parentheses)</span></span></td>
-<td><span data-ttu-id="4b336-170">Samsvarer med en definert spørring</span><span class="sxs-lookup"><span data-stu-id="4b336-170">Matching a defined query</span></span></td>
-<td><span data-ttu-id="4b336-171">Skriv inn en spørring som et SQL-setning i parenteser.</span><span class="sxs-lookup"><span data-stu-id="4b336-171">Type a query as an SQL statement between parentheses.</span></span></td>
-<td><span data-ttu-id="4b336-172"><strong><span class="code">(data source.Fieldname != &quot;A&quot;)</span></strong></span><span class="sxs-lookup"><span data-stu-id="4b336-172"><strong><span class="code">(data source.Fieldname != &quot;A&quot;)</span></strong></span></span></td>
+<td><span data-ttu-id="5ec97-169">(<span class="code">Finance and Operations spørring</span>) (Finance and Operations spørring mellom parenteser)</span><span class="sxs-lookup"><span data-stu-id="5ec97-169">(<span class="code">Finance and Operations query</span>) (Finance and Operations query between parentheses)</span></span></td>
+<td><span data-ttu-id="5ec97-170">Samsvarer med en definert spørring</span><span class="sxs-lookup"><span data-stu-id="5ec97-170">Matching a defined query</span></span></td>
+<td><span data-ttu-id="5ec97-171">Skriv inn en spørring som en SQL-setning mellom parenteser ved hjelp av Finance and Operations-spørringsspråket.</span><span class="sxs-lookup"><span data-stu-id="5ec97-171">Type a query as an SQL statement between parentheses using the Finance and Operations query language.</span></span></td>
+  <td><span data-ttu-id="5ec97-172"><strong><span class="code">((AccountNum LIKE "US *") && (DirPartyTable.Name LIKE "Cont*"))</span></strong></span><span class="sxs-lookup"><span data-stu-id="5ec97-172"><strong><span class="code">((AccountNum LIKE "US *") && (DirPartyTable.Name LIKE "Cont*"))</span></strong></span></span><br><br> 
+       <span data-ttu-id="5ec97-173">som et eksempel på syntaksen for en filterbetingelse for et felt fra rotdatakilden i tillegg til et felt fra en annen datakilde (for eksempel Alle kunder-siden)</span><span class="sxs-lookup"><span data-stu-id="5ec97-173">as an example of syntax for a filter condition on a field from the root datasource as well as a field from a different datasource (for the All customers page)</span></span></td>
 </tr>
 <tr>
-<td><span data-ttu-id="4b336-173">T</span><span class="sxs-lookup"><span data-stu-id="4b336-173">T</span></span></td>
-<td><span data-ttu-id="4b336-174">Dagens dato</span><span class="sxs-lookup"><span data-stu-id="4b336-174">Today's date</span></span></td>
-<td><span data-ttu-id="4b336-175">Skriv inn <strong>T</strong>.</span><span class="sxs-lookup"><span data-stu-id="4b336-175">Type <strong>T</strong>.</span></span></td>
-<td><span data-ttu-id="4b336-176"><strong>T</strong> samsvarer med dagens dato.</span><span class="sxs-lookup"><span data-stu-id="4b336-176"><strong>T</strong> matches today's date.</span></span></td>
+<td><span data-ttu-id="5ec97-174">T</span><span class="sxs-lookup"><span data-stu-id="5ec97-174">T</span></span></td>
+<td><span data-ttu-id="5ec97-175">Dagens dato</span><span class="sxs-lookup"><span data-stu-id="5ec97-175">Today's date</span></span></td>
+<td><span data-ttu-id="5ec97-176">Skriv inn <strong>T</strong>.</span><span class="sxs-lookup"><span data-stu-id="5ec97-176">Type <strong>T</strong>.</span></span></td>
+<td><span data-ttu-id="5ec97-177"><strong>T</strong> samsvarer med dagens dato.</span><span class="sxs-lookup"><span data-stu-id="5ec97-177"><strong>T</strong> matches today's date.</span></span></td>
 </tr>
 <tr>
-<td><span data-ttu-id="4b336-177">(methodName(parameters)) (<strong>SysQueryRangeUtil</strong>-metode i parenteser)</span><span class="sxs-lookup"><span data-stu-id="4b336-177">(methodName(parameters)) (<strong>SysQueryRangeUtil</strong> method between parentheses)</span></span></td>
-<td><span data-ttu-id="4b336-178">Samsvare verdien eller verdiområdet som er angitt av parameterne for <strong>SysQueryRangeUtil</strong>-metoden</span><span class="sxs-lookup"><span data-stu-id="4b336-178">Matching the value or range of values that are specified by the parameters of the <strong>SysQueryRangeUtil</strong> method</span></span></td>
-<td><span data-ttu-id="4b336-179">Skriv inn en <strong>SysQueryRangeUtil</strong>-metode med parametere som angir verdien eller verdiområdet.</span><span class="sxs-lookup"><span data-stu-id="4b336-179">Type a <strong>SysQueryRangeUtil</strong> method that has parameters that specify the value or range of values.</span></span></td>
+<td><span data-ttu-id="5ec97-178">(methodName(parameters)) (<strong>SysQueryRangeUtil</strong>-metode i parenteser)</span><span class="sxs-lookup"><span data-stu-id="5ec97-178">(methodName(parameters)) (<strong>SysQueryRangeUtil</strong> method between parentheses)</span></span></td>
+<td><span data-ttu-id="5ec97-179">Samsvare verdien eller verdiområdet som er angitt av parameterne for <strong>SysQueryRangeUtil</strong>-metoden</span><span class="sxs-lookup"><span data-stu-id="5ec97-179">Matching the value or range of values that are specified by the parameters of the <strong>SysQueryRangeUtil</strong> method</span></span></td>
+<td><span data-ttu-id="5ec97-180">Skriv inn en <strong>SysQueryRangeUtil</strong>-metode med parametere som angir verdien eller verdiområdet.</span><span class="sxs-lookup"><span data-stu-id="5ec97-180">Type a <strong>SysQueryRangeUtil</strong> method that has parameters that specify the value or range of values.</span></span></td>
 <td>
 <ol>
-<li><span data-ttu-id="4b336-180">Klikk <strong>Kunder</strong> &gt; <strong>Fakturaer</strong> &gt; <strong>Åpne kundefakturaer</strong>.</span><span class="sxs-lookup"><span data-stu-id="4b336-180">Click <strong>Accounts receivable</strong> &gt; <strong>Invoices</strong> &gt; <strong>Open customer invoices</strong>.</span></span></li>
-<li><span data-ttu-id="4b336-181">Trykk Ctrl+Skift+F3 for å åpne <strong>Forespørsel</strong>-siden.</span><span class="sxs-lookup"><span data-stu-id="4b336-181">Press Ctrl+Shift+F3 to open the <strong>Inquiry</strong> page.</span></span></li>
-<li><span data-ttu-id="4b336-182">Klikk <strong>Legg til</strong> i kategorien <strong>Område</strong>.</span><span class="sxs-lookup"><span data-stu-id="4b336-182">On the <strong>Range</strong> tab, click <strong>Add</strong>.</span></span></li>
-<li><span data-ttu-id="4b336-183">I <strong>Tabell</strong>-feltet velger du <strong>Åpne kundetransaksjoner</strong>.</span><span class="sxs-lookup"><span data-stu-id="4b336-183">In the <strong>Table</strong> field, select <strong>Open customer transactions</strong>.</span></span></li>
-<li><span data-ttu-id="4b336-184">I <strong>Felt</strong>-feltet velger du <strong>Forfallsdato</strong>.</span><span class="sxs-lookup"><span data-stu-id="4b336-184">In the <strong>Field</strong> field, select <strong>Due date</strong>.</span></span></li>
-<li><span data-ttu-id="4b336-185">I <strong>Kriterier</strong>-feltet angir du <strong>(yearRange(-2,0))</strong>.</span><span class="sxs-lookup"><span data-stu-id="4b336-185">In the <strong>Criteria</strong> field, enter <strong>(yearRange(-2,0))</strong>.</span></span></li>
-<li><span data-ttu-id="4b336-186">Klikk <strong>OK</strong>.</span><span class="sxs-lookup"><span data-stu-id="4b336-186">Click <strong>OK</strong>.</span></span> <span data-ttu-id="4b336-187">Listesiden oppdateres for å vise fakturaene som samsvarer med de angitte kriteriene.</span><span class="sxs-lookup"><span data-stu-id="4b336-187">The list page is updated and lists the invoices that match the criterion that you entered.</span></span> <span data-ttu-id="4b336-188">Når det gjelder dette bestemte eksemplet, vises fakturaer som forfalt i de to forrige årene.</span><span class="sxs-lookup"><span data-stu-id="4b336-188">For this example, invoices that were due in the previous two years are listed.</span></span></li>
+<li><span data-ttu-id="5ec97-181">Klikk <strong>Kunder</strong> &gt; <strong>Fakturaer</strong> &gt; <strong>Åpne kundefakturaer</strong>.</span><span class="sxs-lookup"><span data-stu-id="5ec97-181">Click <strong>Accounts receivable</strong> &gt; <strong>Invoices</strong> &gt; <strong>Open customer invoices</strong>.</span></span></li>
+<li><span data-ttu-id="5ec97-182">Trykk Ctrl+Skift+F3 for å åpne <strong>Forespørsel</strong>-siden.</span><span class="sxs-lookup"><span data-stu-id="5ec97-182">Press Ctrl+Shift+F3 to open the <strong>Inquiry</strong> page.</span></span></li>
+<li><span data-ttu-id="5ec97-183">Klikk <strong>Legg til</strong> i kategorien <strong>Område</strong>.</span><span class="sxs-lookup"><span data-stu-id="5ec97-183">On the <strong>Range</strong> tab, click <strong>Add</strong>.</span></span></li>
+<li><span data-ttu-id="5ec97-184">I <strong>Tabell</strong>-feltet velger du <strong>Åpne kundetransaksjoner</strong>.</span><span class="sxs-lookup"><span data-stu-id="5ec97-184">In the <strong>Table</strong> field, select <strong>Open customer transactions</strong>.</span></span></li>
+<li><span data-ttu-id="5ec97-185">I <strong>Felt</strong>-feltet velger du <strong>Forfallsdato</strong>.</span><span class="sxs-lookup"><span data-stu-id="5ec97-185">In the <strong>Field</strong> field, select <strong>Due date</strong>.</span></span></li>
+<li><span data-ttu-id="5ec97-186">I <strong>Kriterier</strong>-feltet angir du <strong>(yearRange(-2,0))</strong>.</span><span class="sxs-lookup"><span data-stu-id="5ec97-186">In the <strong>Criteria</strong> field, enter <strong>(yearRange(-2,0))</strong>.</span></span></li>
+<li><span data-ttu-id="5ec97-187">Klikk <strong>OK</strong>.</span><span class="sxs-lookup"><span data-stu-id="5ec97-187">Click <strong>OK</strong>.</span></span> <span data-ttu-id="5ec97-188">Listesiden oppdateres for å vise fakturaene som samsvarer med de angitte kriteriene.</span><span class="sxs-lookup"><span data-stu-id="5ec97-188">The list page is updated and lists the invoices that match the criterion that you entered.</span></span> <span data-ttu-id="5ec97-189">Når det gjelder dette bestemte eksemplet, vises fakturaer som forfalt i de to forrige årene.</span><span class="sxs-lookup"><span data-stu-id="5ec97-189">For this example, invoices that were due in the previous two years are listed.</span></span></li>
 </ol>
-<span data-ttu-id="4b336-189">Se tabellen i den neste delen hvis du vil ha mer informasjon om <strong>SysQueryRangeUtil</strong>-datometoder og flere eksempler.</span><span class="sxs-lookup"><span data-stu-id="4b336-189">See the table in the next section for additional details about <strong>SysQueryRangeUtil</strong> date methods, and several examples.</span></span></td>
+<span data-ttu-id="5ec97-190">Se tabellen i den neste delen hvis du vil ha mer informasjon om <strong>SysQueryRangeUtil</strong>-datometoder og flere eksempler.</span><span class="sxs-lookup"><span data-stu-id="5ec97-190">See the table in the next section for additional details about <strong>SysQueryRangeUtil</strong> date methods, and several examples.</span></span></td>
 </tr>
 </tbody>
 </table>
 
-## <a name="advanced-date-queries-that-use-sysqueryrangeutil-methods"></a><span data-ttu-id="4b336-190">Dato for avanserte spørringer som bruker SysQueryRangeUtil-metoder</span><span class="sxs-lookup"><span data-stu-id="4b336-190">Advanced date queries that use SysQueryRangeUtil methods</span></span>
+## <a name="advanced-date-queries-that-use-sysqueryrangeutil-methods"></a><span data-ttu-id="5ec97-191">Dato for avanserte spørringer som bruker SysQueryRangeUtil-metoder</span><span class="sxs-lookup"><span data-stu-id="5ec97-191">Advanced date queries that use SysQueryRangeUtil methods</span></span>
 
 <table>
 <thead>
 <tr>
-<th><span data-ttu-id="4b336-191">Metode</span><span class="sxs-lookup"><span data-stu-id="4b336-191">Method</span></span></th>
-<th><span data-ttu-id="4b336-192">Beskrivelse</span><span class="sxs-lookup"><span data-stu-id="4b336-192">Description</span></span></th>
-<th><span data-ttu-id="4b336-193">Eksempel</span><span class="sxs-lookup"><span data-stu-id="4b336-193">Example</span></span></th>
+<th><span data-ttu-id="5ec97-192">Metode</span><span class="sxs-lookup"><span data-stu-id="5ec97-192">Method</span></span></th>
+<th><span data-ttu-id="5ec97-193">Beskrivelse</span><span class="sxs-lookup"><span data-stu-id="5ec97-193">Description</span></span></th>
+<th><span data-ttu-id="5ec97-194">Eksempel</span><span class="sxs-lookup"><span data-stu-id="5ec97-194">Example</span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><span data-ttu-id="4b336-194">Dag (_relativeDays=0)</span><span class="sxs-lookup"><span data-stu-id="4b336-194">Day (_relativeDays=0)</span></span></td>
-<td><span data-ttu-id="4b336-195">Finn en dato relativ til øktdatoen.</span><span class="sxs-lookup"><span data-stu-id="4b336-195">Find a date relative to the session date.</span></span> <span data-ttu-id="4b336-196">Positive verdier angir fremtidige datoer, og negative verdier angir tidligere datoer.</span><span class="sxs-lookup"><span data-stu-id="4b336-196">Positive values indicate future dates, and negative values indicate past dates.</span></span></td>
+<td><span data-ttu-id="5ec97-195">Dag (_relativeDays=0)</span><span class="sxs-lookup"><span data-stu-id="5ec97-195">Day (_relativeDays=0)</span></span></td>
+<td><span data-ttu-id="5ec97-196">Finn en dato relativ til øktdatoen.</span><span class="sxs-lookup"><span data-stu-id="5ec97-196">Find a date relative to the session date.</span></span> <span data-ttu-id="5ec97-197">Positive verdier angir fremtidige datoer, og negative verdier angir tidligere datoer.</span><span class="sxs-lookup"><span data-stu-id="5ec97-197">Positive values indicate future dates, and negative values indicate past dates.</span></span></td>
 <td>
 <ul>
-<li><span data-ttu-id="4b336-197"><strong>I morgen</strong> – skriv inn <strong>(Day(1))</strong>.</span><span class="sxs-lookup"><span data-stu-id="4b336-197"><strong>Tomorrow</strong> – Enter <strong>(Day(1))</strong>.</span></span></li>
-<li><span data-ttu-id="4b336-198"><strong>I dag</strong> – skriv inn <strong>(Day(0))</strong>.</span><span class="sxs-lookup"><span data-stu-id="4b336-198"><strong>Today</strong> – Enter <strong>(Day(0))</strong>.</span></span></li>
-<li><span data-ttu-id="4b336-199"><strong>I går</strong> – skriv inn <strong>(Day(-1))</strong>.</span><span class="sxs-lookup"><span data-stu-id="4b336-199"><strong>Yesterday</strong> – Enter <strong>(Day(-1))</strong>.</span></span></li>
+<li><span data-ttu-id="5ec97-198"><strong>I morgen</strong> – skriv inn <strong>(Day(1))</strong>.</span><span class="sxs-lookup"><span data-stu-id="5ec97-198"><strong>Tomorrow</strong> – Enter <strong>(Day(1))</strong>.</span></span></li>
+<li><span data-ttu-id="5ec97-199"><strong>I dag</strong> – skriv inn <strong>(Day(0))</strong>.</span><span class="sxs-lookup"><span data-stu-id="5ec97-199"><strong>Today</strong> – Enter <strong>(Day(0))</strong>.</span></span></li>
+<li><span data-ttu-id="5ec97-200"><strong>I går</strong> – skriv inn <strong>(Day(-1))</strong>.</span><span class="sxs-lookup"><span data-stu-id="5ec97-200"><strong>Yesterday</strong> – Enter <strong>(Day(-1))</strong>.</span></span></li>
 </ul>
 </td>
 </tr>
 <tr>
-<td><span data-ttu-id="4b336-200">DayRange (_relativeDaysFrom=0, _relativeDaysTo=0)</span><span class="sxs-lookup"><span data-stu-id="4b336-200">DayRange (_relativeDaysFrom=0, _relativeDaysTo=0)</span></span></td>
-<td><span data-ttu-id="4b336-201">Finn et datointervall relativt til øktdatoen.</span><span class="sxs-lookup"><span data-stu-id="4b336-201">Find a range of dates relative to the session date.</span></span> <span data-ttu-id="4b336-202">Positive verdier angir fremtidige datoer, og negative verdier angir tidligere datoer.</span><span class="sxs-lookup"><span data-stu-id="4b336-202">Positive values indicate future dates, and negative values indicate past dates.</span></span></td>
+<td><span data-ttu-id="5ec97-201">DayRange (_relativeDaysFrom=0, _relativeDaysTo=0)</span><span class="sxs-lookup"><span data-stu-id="5ec97-201">DayRange (_relativeDaysFrom=0, _relativeDaysTo=0)</span></span></td>
+<td><span data-ttu-id="5ec97-202">Finn et datointervall relativt til øktdatoen.</span><span class="sxs-lookup"><span data-stu-id="5ec97-202">Find a range of dates relative to the session date.</span></span> <span data-ttu-id="5ec97-203">Positive verdier angir fremtidige datoer, og negative verdier angir tidligere datoer.</span><span class="sxs-lookup"><span data-stu-id="5ec97-203">Positive values indicate future dates, and negative values indicate past dates.</span></span></td>
 <td>
 <ul>
-<li><span data-ttu-id="4b336-203"><strong>Siste 30 dager</strong> – skriv inn <strong>(DayRange(-30,0))</strong>.</span><span class="sxs-lookup"><span data-stu-id="4b336-203"><strong>Last 30 days</strong> – Enter <strong>(DayRange(-30,0))</strong>.</span></span></li>
-<li><span data-ttu-id="4b336-204"><strong>Foregående 30 dager og neste 30 dager</strong> – skriv inn <strong>(DayRange(-30,30))</strong>.</span><span class="sxs-lookup"><span data-stu-id="4b336-204"><strong>Previous 30 days and next 30 days</strong> – Enter <strong>(DayRange(-30,30))</strong>.</span></span></li>
+<li><span data-ttu-id="5ec97-204"><strong>Siste 30 dager</strong> – skriv inn <strong>(DayRange(-30,0))</strong>.</span><span class="sxs-lookup"><span data-stu-id="5ec97-204"><strong>Last 30 days</strong> – Enter <strong>(DayRange(-30,0))</strong>.</span></span></li>
+<li><span data-ttu-id="5ec97-205"><strong>Foregående 30 dager og neste 30 dager</strong> – skriv inn <strong>(DayRange(-30,30))</strong>.</span><span class="sxs-lookup"><span data-stu-id="5ec97-205"><strong>Previous 30 days and next 30 days</strong> – Enter <strong>(DayRange(-30,30))</strong>.</span></span></li>
 </ul>
 </td>
 </tr>
 <tr>
-<td><span data-ttu-id="4b336-205">GreaterThanDate (_relativeDays=0) GreaterThanUtcDate (_relativeDays=0)</span><span class="sxs-lookup"><span data-stu-id="4b336-205">GreaterThanDate (_relativeDays=0) GreaterThanUtcDate (_relativeDays=0)</span></span></td>
-<td><span data-ttu-id="4b336-206">Finn alle datoer etter den angitte relative datoen.</span><span class="sxs-lookup"><span data-stu-id="4b336-206">Find all dates after the specified relative date.</span></span></td>
+<td><span data-ttu-id="5ec97-206">GreaterThanDate (_relativeDays=0) GreaterThanUtcDate (_relativeDays=0)</span><span class="sxs-lookup"><span data-stu-id="5ec97-206">GreaterThanDate (_relativeDays=0) GreaterThanUtcDate (_relativeDays=0)</span></span></td>
+<td><span data-ttu-id="5ec97-207">Finn alle datoer etter den angitte relative datoen.</span><span class="sxs-lookup"><span data-stu-id="5ec97-207">Find all dates after the specified relative date.</span></span></td>
 <td>
 <ul>
-<li><span data-ttu-id="4b336-207"><strong>Mer enn 30 dager fra nå</strong> – angi <strong>(GreaterThanDate(30))</strong>.</span><span class="sxs-lookup"><span data-stu-id="4b336-207"><strong>More than 30 days from now</strong> – Enter <strong>(GreaterThanDate(30))</strong>.</span></span></li>
+<li><span data-ttu-id="5ec97-208"><strong>Mer enn 30 dager fra nå</strong> – angi <strong>(GreaterThanDate(30))</strong>.</span><span class="sxs-lookup"><span data-stu-id="5ec97-208"><strong>More than 30 days from now</strong> – Enter <strong>(GreaterThanDate(30))</strong>.</span></span></li>
 </ul>
 </td>
 </tr>
 <tr>
-<td><span data-ttu-id="4b336-208">GreaterThanUtcNow ()</span><span class="sxs-lookup"><span data-stu-id="4b336-208">GreaterThanUtcNow ()</span></span></td>
-<td><span data-ttu-id="4b336-209">Finne alle dato/klokkeslett-oppføringer etter gjeldende klokkeslett.</span><span class="sxs-lookup"><span data-stu-id="4b336-209">Find all date/time entries after the current time.</span></span></td>
+<td><span data-ttu-id="5ec97-209">GreaterThanUtcNow ()</span><span class="sxs-lookup"><span data-stu-id="5ec97-209">GreaterThanUtcNow ()</span></span></td>
+<td><span data-ttu-id="5ec97-210">Finne alle dato/klokkeslett-oppføringer etter gjeldende klokkeslett.</span><span class="sxs-lookup"><span data-stu-id="5ec97-210">Find all date/time entries after the current time.</span></span></td>
 <td>
 <ul>
-<li><span data-ttu-id="4b336-210"><strong>Alle fremtidige datoer/klokkeslett</strong> – angi <strong>(GreaterThanUtcNow())</strong>.</span><span class="sxs-lookup"><span data-stu-id="4b336-210"><strong>All future date/times</strong> – Enter <strong>(GreaterThanUtcNow())</strong>.</span></span></li>
+<li><span data-ttu-id="5ec97-211"><strong>Alle fremtidige datoer/klokkeslett</strong> – angi <strong>(GreaterThanUtcNow())</strong>.</span><span class="sxs-lookup"><span data-stu-id="5ec97-211"><strong>All future date/times</strong> – Enter <strong>(GreaterThanUtcNow())</strong>.</span></span></li>
 </ul>
 </td>
 </tr>
 <tr>
-<td><span data-ttu-id="4b336-211">LessThanDate (_relativeDays=0) LessThanUtcDate (_relativeDays=0)</span><span class="sxs-lookup"><span data-stu-id="4b336-211">LessThanDate (_relativeDays=0) LessThanUtcDate (_relativeDays=0)</span></span></td>
-<td><span data-ttu-id="4b336-212">Finn alle datoer før den angitte relative datoen.</span><span class="sxs-lookup"><span data-stu-id="4b336-212">Find all dates before the specified relative date.</span></span></td>
+<td><span data-ttu-id="5ec97-212">LessThanDate (_relativeDays=0) LessThanUtcDate (_relativeDays=0)</span><span class="sxs-lookup"><span data-stu-id="5ec97-212">LessThanDate (_relativeDays=0) LessThanUtcDate (_relativeDays=0)</span></span></td>
+<td><span data-ttu-id="5ec97-213">Finn alle datoer før den angitte relative datoen.</span><span class="sxs-lookup"><span data-stu-id="5ec97-213">Find all dates before the specified relative date.</span></span></td>
 <td>
 <ul>
-<li><span data-ttu-id="4b336-213"><strong>Mindre enn sju dager fra nå</strong> – angi <strong>(LessThanDate(7))</strong>.</span><span class="sxs-lookup"><span data-stu-id="4b336-213"><strong>Less than seven days from now</strong> – Enter <strong>(LessThanDate(7))</strong>.</span></span></li>
+<li><span data-ttu-id="5ec97-214"><strong>Mindre enn sju dager fra nå</strong> – angi <strong>(LessThanDate(7))</strong>.</span><span class="sxs-lookup"><span data-stu-id="5ec97-214"><strong>Less than seven days from now</strong> – Enter <strong>(LessThanDate(7))</strong>.</span></span></li>
 </ul>
 </td>
 </tr>
 <tr>
-<td><span data-ttu-id="4b336-214">LessThanUtcNow ()</span><span class="sxs-lookup"><span data-stu-id="4b336-214">LessThanUtcNow ()</span></span></td>
-<td><span data-ttu-id="4b336-215">Finne alle dato/klokkeslett-oppføringer før gjeldende klokkeslett.</span><span class="sxs-lookup"><span data-stu-id="4b336-215">Find all date/time entries before the current time.</span></span></td>
+<td><span data-ttu-id="5ec97-215">LessThanUtcNow ()</span><span class="sxs-lookup"><span data-stu-id="5ec97-215">LessThanUtcNow ()</span></span></td>
+<td><span data-ttu-id="5ec97-216">Finne alle dato/klokkeslett-oppføringer før gjeldende klokkeslett.</span><span class="sxs-lookup"><span data-stu-id="5ec97-216">Find all date/time entries before the current time.</span></span></td>
 <td>
 <ul>
-<li><span data-ttu-id="4b336-216"><strong>Alle tidligere datoer/klokkeslett</strong> – angi <strong>(LessThanUtcNow())</strong>.</span><span class="sxs-lookup"><span data-stu-id="4b336-216"><strong>All past date/times</strong> – Enter <strong>(LessThanUtcNow())</strong>.</span></span></li>
+<li><span data-ttu-id="5ec97-217"><strong>Alle tidligere datoer/klokkeslett</strong> – angi <strong>(LessThanUtcNow())</strong>.</span><span class="sxs-lookup"><span data-stu-id="5ec97-217"><strong>All past date/times</strong> – Enter <strong>(LessThanUtcNow())</strong>.</span></span></li>
 </ul>
 </td>
 </tr>
 <tr>
-<td><span data-ttu-id="4b336-217">MonthRange (_relativeFrom=0, _relativeTo=0)</span><span class="sxs-lookup"><span data-stu-id="4b336-217">MonthRange (_relativeFrom=0, _relativeTo=0)</span></span></td>
-<td><span data-ttu-id="4b336-218">Finn et bestemt datoområde, basert på måneder i forhold til den gjeldende måneden.</span><span class="sxs-lookup"><span data-stu-id="4b336-218">Find a range of dates, based on months relative to the current month.</span></span></td>
+<td><span data-ttu-id="5ec97-218">MonthRange (_relativeFrom=0, _relativeTo=0)</span><span class="sxs-lookup"><span data-stu-id="5ec97-218">MonthRange (_relativeFrom=0, _relativeTo=0)</span></span></td>
+<td><span data-ttu-id="5ec97-219">Finn et bestemt datoområde, basert på måneder i forhold til den gjeldende måneden.</span><span class="sxs-lookup"><span data-stu-id="5ec97-219">Find a range of dates, based on months relative to the current month.</span></span></td>
 <td>
 <ul>
-<li><span data-ttu-id="4b336-219"><strong>Forrige to måneder</strong> – angi <strong>(MonthRange(-2,0))</strong>.</span><span class="sxs-lookup"><span data-stu-id="4b336-219"><strong>Previous two months</strong> – Enter <strong>(MonthRange(-2,0))</strong>.</span></span></li>
-<li><span data-ttu-id="4b336-220"><strong>Neste tre måneder</strong> – angi <strong>(MonthRange(0,3))</strong>.</span><span class="sxs-lookup"><span data-stu-id="4b336-220"><strong>Next three months</strong> – Enter <strong>(MonthRange(0,3))</strong>.</span></span></li>
+<li><span data-ttu-id="5ec97-220"><strong>Forrige to måneder</strong> – angi <strong>(MonthRange(-2,0))</strong>.</span><span class="sxs-lookup"><span data-stu-id="5ec97-220"><strong>Previous two months</strong> – Enter <strong>(MonthRange(-2,0))</strong>.</span></span></li>
+<li><span data-ttu-id="5ec97-221"><strong>Neste tre måneder</strong> – angi <strong>(MonthRange(0,3))</strong>.</span><span class="sxs-lookup"><span data-stu-id="5ec97-221"><strong>Next three months</strong> – Enter <strong>(MonthRange(0,3))</strong>.</span></span></li>
 </ul>
 </td>
 </tr>
 <tr>
-<td><span data-ttu-id="4b336-221">YearRange (_relativeFrom=0, _relativeTo=0)</span><span class="sxs-lookup"><span data-stu-id="4b336-221">YearRange (_relativeFrom=0, _relativeTo=0)</span></span></td>
-<td><span data-ttu-id="4b336-222">Finn et bestemt datoområde, basert på år i forhold til det gjeldende året.</span><span class="sxs-lookup"><span data-stu-id="4b336-222">Find a range of dates, based on years relative to the current year.</span></span></td>
+<td><span data-ttu-id="5ec97-222">YearRange (_relativeFrom=0, _relativeTo=0)</span><span class="sxs-lookup"><span data-stu-id="5ec97-222">YearRange (_relativeFrom=0, _relativeTo=0)</span></span></td>
+<td><span data-ttu-id="5ec97-223">Finn et bestemt datoområde, basert på år i forhold til det gjeldende året.</span><span class="sxs-lookup"><span data-stu-id="5ec97-223">Find a range of dates, based on years relative to the current year.</span></span></td>
 <td>
 <ul>
-<li><span data-ttu-id="4b336-223"><strong>Neste år</strong> – angi <strong>(YearRange(0,1))</strong>.</span><span class="sxs-lookup"><span data-stu-id="4b336-223"><strong>Next year</strong> – Enter <strong>(YearRange(0, 1))</strong>.</span></span></li>
-<li><span data-ttu-id="4b336-224"><strong>Forrige år</strong> – angi <strong>(YearRange(-1,0))</strong>.</span><span class="sxs-lookup"><span data-stu-id="4b336-224"><strong>Previous year</strong> – Enter <strong>(YearRange(-1,0))</strong>.</span></span></li>
+<li><span data-ttu-id="5ec97-224"><strong>Neste år</strong> – angi <strong>(YearRange(0,1))</strong>.</span><span class="sxs-lookup"><span data-stu-id="5ec97-224"><strong>Next year</strong> – Enter <strong>(YearRange(0, 1))</strong>.</span></span></li>
+<li><span data-ttu-id="5ec97-225"><strong>Forrige år</strong> – angi <strong>(YearRange(-1,0))</strong>.</span><span class="sxs-lookup"><span data-stu-id="5ec97-225"><strong>Previous year</strong> – Enter <strong>(YearRange(-1,0))</strong>.</span></span></li>
 </ul>
 </td>
 </tr>
