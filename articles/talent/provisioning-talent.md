@@ -3,7 +3,7 @@ title: Klargjøre Talent
 description: Dette emnet leder deg gjennom prosessen med å klargjøre et nytt miljø for Microsoft Dynamics 365 Talent.
 author: andreabichsel
 manager: AnnBe
-ms.date: 05/15/2019
+ms.date: 02/18/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2017-11-20
 ms.dyn365.ops.version: Talent July 2017 update
-ms.openlocfilehash: d06c0d14fb99e5544a5da05078f5b3a559f9e806
-ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
+ms.openlocfilehash: d7c4a8174007384370ae320b3874e104c04b71a5
+ms.sourcegitcommit: 1d5a4f70a931e78b06811add97c1962e8d93689b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "3025515"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "3124710"
 ---
 # <a name="provision-talent"></a>Klargjøre Talent
 
@@ -34,17 +34,23 @@ Det første som må gjøres, er at den globale administratoren må logge på [Mi
 Hvis du vil bruke LCS til å administrere Talent-miljøene dine, må du først opprette et LCS-prosjekt.
 
 1. Logg på [LCS](https://lcs.dynamics.com/Logon/Index) ved hjelp av kontoen du brukte til å abonnere på Talent.
+
 2. Velg plusstegnet (**+**) for å opprette et prosjekt.
+
 3. Velg **Microsoft Dynamics 365 Talent** som produktnavn og produktversjon.
+
 4. Velg **Dynamics 365 Talent**-metoden.
-5. Velg **Opprett**.
+
+5. Velg **Opprett**. 
 
 Hvis du vil ha informasjon om hvordan du kan komme i gang med Talent, se **Talent**-metoden som du opprettet i det nye prosjektet ditt. Når du er ferdig med å opprette prosjektet, kan du fullføre fremgangsmåten nedenfor for å klargjøre Talent-miljøet ditt.
 
 ## <a name="provision-a-talent-project"></a>Klargjøre et Talent-prosjekt
+
 Når du har opprettet et LCS-prosjekt, kan du klargjøre Talent i et miljø.
 
 1. I LCS prosjektet velger du flisen **Talent-appbehandling**.
+
 2. Angi om dette er en Sandkasse- eller Produksjon-forekomst av Talent. Tidlig forhåndsvisning-funksjonene kan være tilgjengelige i Sandbox-forekomstene for å tillate tidlig tilbakemelding og testing. 
 
     > [!NOTE]
@@ -52,13 +58,13 @@ Når du har opprettet et LCS-prosjekt, kan du klargjøre Talent i et miljø.
 
     > [!NOTE]
     > Forekomsttypen Talent er atskilt fra forekomsttypen i Microsoft Power Apps-miljøet, som du angir i Power Apps-administrasjonssenteret.
+
 3. Velg alternativet **Omfatter demodata** hvis du vil at ditt miljø skal ta med samme demodatasett brukt i testversjonen av Talent. Dette er nyttig for langsiktig demo eller opplæring miljøer, og bør aldri brukes for produksjonsmiljøer.  Vær oppmerksom på at du må velge dette alternativet ved innledende distribusjon. Du kan ikke oppdatere en eksisterende distribusjon senere.
+
 4. Talent klargjøres alltid i et Microsoft Power Apps-miljø for å aktivere Power Apps-integrering og -utvidelsesmuligheter. Les delen "Velge et Power Apps-miljø" i dette emnet før du fortsetter. Hvis du ikke allerede har et Power Apps-miljø, velger du Administrer miljøer i LCS eller navigerer til Power Apps-administrasjonssenteret. Følg deretter trinnene i [Opprette et Power Apps-miljø](https://docs.microsoft.com/powerapps/administrator/create-environment).
 
-    > [!NOTE]
-    > Hvis du vil vise eksisterende miljøer eller opprette nye miljøer, må leieradministratoren som klargjør Talent, være tilordnet til Power Apps P2-lisensen. Hvis organisasjonen ikke har en Power Apps P2-lisens, kan du få en fra CSP-en eller fra [Power Apps-prissiden](https://powerapps.microsoft.com/pricing/).
-
 5. Velg miljøet som Talent skal klargjøres i.
+
 6. Velg **Ja** for å godta vilkårene og begynne distribusjonen.
 
     Det nye miljøet ditt vises i listen over miljøer i navigasjonsruten på venstre side. Men du kan ikke begynne å bruke miljøet før distribusjonsstatusen oppdateres til **Distribuert**. Denne prosessen tar vanligvis noen få minutter. Hvis klargjøringsprosessen mislykkes, må du kontakte kundestøtte.
@@ -77,9 +83,13 @@ Integreringen mellom Talent- og Power Apps-miljøer gjør at du kan integrere og
 Bruk følgende retningslinjer når du skal avgjøre hvilket Power Apps-miljø Talent skal distribueres i: 
 
 1. Velg **Behandle miljøer** i LCS, eller gå direkte til Power Apps-administrasjonssenteret, der du kan vise eksisterende miljøer og opprette nye miljøer.
+
 2. Ett enkelt Talent-miljø er tilordnet til ett enkelt Power Apps-miljø.
+
 3. Et Power Apps-miljø inneholder Talent-programmet, sammen med de tilsvarende Power Apps-, Power Automate- og Common Data Service -programmene. Hvis Power Apps-miljøet slettes, slettes også appene i det. Når du klargjør et Talent-miljø, kan du klargjøre et miljø av typen **Prøveversjon** eller **Produksjon**. Velg miljø basert på hvordan miljøet vil bli brukt. 
+
 4. Dataintegrering og teststrategier skal vurderes, for eksempel sandkasse, UAT eller produksjon. Vi anbefaler at du vurderer forskjellige konsekvenser for distribusjonen, fordi det ikke er enkelt å endre hvilket Talent-miljø som skal tilordnes til Power Apps-miljøet, senere.
+
 5. Følgende Power Apps-miljøer kan ikke brukes for Talent og filtreres fra valglisten i LCS:
  
     - **Standard Power Apps-miljøer** – Selv om hver leier er klargjort automatisk med et standard Power Apps-miljø, anbefales det ikke å bruke dem med Talent, siden alle leierbrukere har tilgang til Power Apps-miljøet og ved en feiltakelse kan skade produksjonsdata ved testing og utforsking med Power Apps- eller Power Automate-integreringer.
@@ -91,4 +101,5 @@ Bruk følgende retningslinjer når du skal avgjøre hvilket Power Apps-miljø Ta
 6. Når du har valgt det riktige miljøet som skal brukes, kan du fortsette med klargjøringsprosessen. 
  
 ## <a name="grant-access-to-the-environment"></a>Gi tilgang til miljøet
+
 Som standard har den globale administratoren som opprettet miljøet, tilgang til den. Flere brukere må imidlertid eksplisitt gis tilgang. For å gi tilgang må du legge til brukere og tilordne de riktige rollene til dem i Human Resources-miljøet. Globale administratoren som distribuerte Talent, må også starte både Attract og Onboard for å fullføre initialiseringen og aktivere tilgang for andre leierbrukere.  Før dette skjer, andre brukere vil ikke kunne få tilgang til Attract og Onboard og få tilgangsbruddfeil. Hvis du vil ha mer informasjon, se [Opprette nye brukere](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/create-new-users) og [Tilordne brukere til sikkerhetsroller](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/assign-users-security-roles). 

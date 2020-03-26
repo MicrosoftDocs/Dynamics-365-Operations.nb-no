@@ -1,9 +1,9 @@
 ---
 title: Tilpassede felt
-description: ''
+description: Du kan legge til egendefinerte felt på sider i Dynamics 365 Human Resources.
 author: andreabichsel
 manager: AnnBe
-ms.date: 02/03/2020
+ms.date: 03/10/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,27 +18,23 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 6de1bcc6df5f8e4ab1ebbccb4b9a56f6f019c37f
-ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
+ms.openlocfilehash: 7348fb9d3457da23fc4e250a1fd3f6cac82bdb5e
+ms.sourcegitcommit: 8493593e1405cde8cde23a3d9eb90385136088e1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3010065"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "3116005"
 ---
 # <a name="custom-fields"></a>Tilpassede felt
 
-Du kan legge til egendefinerte felt på sider i Dynamics 365 Human Resources. Hvis du vil ha mer informasjon om hvordan du oppretter egendefinerte felt på en side, kan du se [Opprette og arbeide med egendefinerte felt](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/user-defined-fields).
+Du kan legge til egendefinerte felt på sider i Dynamics 365 Human Resources. Hvis du vil ha mer informasjon om hvordan du oppretter egendefinerte felt, kan du se [Opprette og arbeide med egendefinerte felt](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/user-defined-fields).
 
-Følgende enheter i Common Data Service støtter egendefinerte felt som er opprettet i Human Resources:
-
-- Arbeider
-- Etnisk opprinnelse
-- Veteranstatus
-- Språkkode
-- Stilling
-- Jobbtype
-- Jobbfunksjon
-- Posisjon
-- Stillingstype
+De fleste Common Data Service-enheter støtter egendefinerte felt. Hvis du vil ha en liste over Common Data Service-enheter, kan du se [Common Data Service-enheter](https://docs.microsoft.com/dynamics365/human-resources/hr-developer-entities). 
 
 Pass på at du aktiverer alle egendefinerte felt du oppretter, slik at du kan bruke dem i Common Data Service. Hvis du vil ha mer informasjon, kan du se [Vise egendefinerte felt på dataenheter](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/user-defined-fields#exposing-custom-fields-on-data-entities).
+
+## <a name="see-also"></a>Se også
+
+[Common Data Service-enheter](https://docs.microsoft.com/dynamics365/human-resources/hr-developer-entities)</br>
+[Opprette og arbeide med egendefinerte felt](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/user-defined-fields)</br>
+[Vise egendefinerte felt på dataenheter](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/user-defined-fields#exposing-custom-fields-on-data-entities)

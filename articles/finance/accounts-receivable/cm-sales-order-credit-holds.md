@@ -1,6 +1,6 @@
 ---
-title: Kredittsperrer for salgsordrer
-description: ''
+title: Kredittgrenser for salgsordrer
+description: Dette emnet beskriver oppsettet av regler som brukes til å angi kredittsperre for en salgsordre.
 author: mikefalkner
 manager: AnnBe
 ms.date: 01/25/2019
@@ -9,25 +9,23 @@ ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
-ms.reviewer: shylaw
+ms.reviewer: roschloma
 ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: mfalkner
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 316a626e6a18f0afda632111138482f62f6809db
-ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
+ms.openlocfilehash: 8a0e006be8a72f35d6c6009ca9d67d083b8fac89
+ms.sourcegitcommit: 1d5a4f70a931e78b06811add97c1962e8d93689b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "3057676"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "3124260"
 ---
-# <a name="credit-holds-for-sales-orders"></a>Kredittsperrer for salgsordrer
+# <a name="credit-holds-for-sales-orders"></a>Kredittgrenser for salgsordrer
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
-
-Dette emnet beskriver oppsettet av regler som brukes til å angi kredittsperre for en salgsordre. Blokkeringsreglene for kredittbehandling kan gjelde for en individuell kunde eller en gruppe kunder.  Blokkeringsregler definerer svar på følgende omstendigheter:
+Dette emnet beskriver oppsettet av regler som brukes til å angi kredittsperre for en salgsordre. Blokkeringsreglene for kredittbehandling kan gjelde for en individuell kunde eller en gruppe kunder. Blokkeringsregler definerer svar på følgende omstendigheter:
 
 1. Antall dager forfalt
 2. Kontostatus
@@ -87,9 +85,9 @@ Velg **Betalingsbetingelser** hvis blokkeringsregelen gjelder for den valgte bet
    - Velg **Alle** hvis regelen gjelder for alle kunder. 
 3. Velg en **Risikogruppe** for ytterligere å begrense listen over kunder som skal plasseres på vent for kredittbehandling. 
 4. Velg regeltypen du konfigurerer. 
-  - Velg **Blokkering** for å opprette en regel som blokkerer en ordre. 
-  - Velg **Utelatelse** for å opprette en regel som utelater en annen regel fra å blokkere en ordre. 
-6. Angi **Dager kredittgrense utløpt** for den valgte blokkeringsregelen før en ordre settes på vent for kredittbehandling. Antallet dager forfalt representerer ekstra respittdager som legges til antallet dager som kredittgrensen har vært utløpt.
+   - Velg **Blokkering** for å opprette en regel som blokkerer en ordre. 
+   - Velg **Utelatelse** for å opprette en regel som utelater en annen regel fra å blokkere en ordre. 
+5. Angi **Dager kredittgrense utløpt** for den valgte blokkeringsregelen før en ordre settes på vent for kredittbehandling. Antallet dager forfalt representerer ekstra respittdager som legges til antallet dager som kredittgrensen har vært utløpt.
 
 ### <a name="overdue-amount"></a>Forfalt beløp
 
@@ -104,11 +102,10 @@ Velg **Betalingsbetingelser** hvis blokkeringsregelen gjelder for den valgte bet
    - Velg **Alle** hvis regelen gjelder for alle kunder. 
 3. Velg en **Risikogruppe** hvis du vil begrense ytterligere listen over kunder som settes på vent for kredittbehandling. 
 4. Velg regeltypen du konfigurerer. 
-  - Velg **Blokkering** for å opprette en regel som blokkerer en ordre. 
-  - Velg **Utelatelse** for å opprette en regel som utelater en annen regel fra å blokkere en ordre. 
+   - Velg **Blokkering** for å opprette en regel som blokkerer en ordre. 
+   - Velg **Utelatelse** for å opprette en regel som utelater en annen regel fra å blokkere en ordre. 
 5. Angi **Forfalt beløp** for den valgte blokkeringsregelen før en ordre settes på kredittbehandlingssperre for gjennomgang. 
-6. Velg **Verditype** som definerer verditypen som skal brukes til også å teste hvor mye av kredittgrensen som er brukt. Blokkeringsregler krever en prosent, men en utelatelse kan ha et fast beløp eller en fast prosentsats.
-. Terskelen er knyttet til kredittgrensen.
+6. Velg **Verditype** som definerer verditypen som skal brukes til også å teste hvor mye av kredittgrensen som er brukt. Blokkeringsregler krever en prosent, men en utelatelse kan ha et fast beløp eller en fast prosentsats. Terskelen er knyttet til kredittgrensen.
 7. Angi **Terskel for kredittgrense**-verdien for den valgte regelen før en kunde settes på kredittbehandlingssperre. Dette kan være et beløp eller en prosent basert på verditypevalget i verditype.
 8. Regelen kontrollerer om **Forfalt beløp** er overskredet og om **Terskel for kredittgrense** er overskredet. 
 
@@ -125,9 +122,9 @@ Velg **Salgsordre** hvis blokkeringsregelen gjelder for verdien for salgsordren.
    - Velg **Alle** hvis regelen gjelder for alle kunder. 
 3. Velg en **Risikogruppe** hvis du vil begrense ytterligere listen over kunder som settes på vent for kredittbehandling. 
 4. Velg regeltypen du konfigurerer.  
-  - Velg **Blokkering** for å opprette en regel som blokkerer en ordre. 
-  - Velg **Utelatelse** for å opprette en regel som utelater en annen regel fra å blokkere en ordre. 
-6. Angi **Salgsordrebeløp** for den valgte blokkeringsregelen før en ordre settes på kredittbehandlingssperre. 
+   - Velg **Blokkering** for å opprette en regel som blokkerer en ordre. 
+   - Velg **Utelatelse** for å opprette en regel som utelater en annen regel fra å blokkere en ordre. 
+5. Angi **Salgsordrebeløp** for den valgte blokkeringsregelen før en ordre settes på kredittbehandlingssperre. 
 
 Salgsordreregelen inneholder en tilleggsinnstilling som overstyrer alle andre regler. Hvis du vil opprette en utelatelse som vil frigi salgsordren uten å ta hensyn til andre regler, merker du av for **Frigi salgsordre** på utelatelseslinjen.
 
@@ -216,8 +213,8 @@ Når du har undersøkt årsakene til sperringen, og du har begrenset dem, kan du
 2) Velg en **Frigivelsesårsak** for ordren som er valgt for frigivelse.  
 3) Angi **gjennomgangsdatoen** for hver ordre som er valgt for frigivelse.  
 4) Velg **Frigi**-menyen i handlingsruten for å frigi en ordre. Denne menyen vil bare være tilgjengelig når det er valgt transaksjoner. Brukeren vises med to alternativer:
- - Velg **Med postering** for å fjerne sperren og postere dokumentet ved å bruke den samme posteringsprosessen som ble brukt da den ble satt på vent. Hvis for eksempel salgsordrebekreftelsen ble satt på vent, ville salgsordrebekreftelsen blitt fullført etter frigivelsen. Salgsordreposteringsskjemaet vil vises og tillate brukeren å postere bekreftelsen.
- - Velg **Uten postering** for å fjerne sperren uten å utføre videre behandling. Salgsordren kan posteres manuelt.
+   - Velg **Med postering** for å fjerne sperren og postere dokumentet ved å bruke den samme posteringsprosessen som ble brukt da den ble satt på vent. Hvis for eksempel salgsordrebekreftelsen ble satt på vent, ville salgsordrebekreftelsen blitt fullført etter frigivelsen. Salgsordreposteringsskjemaet vil vises og tillate brukeren å postere bekreftelsen.
+   - Velg **Uten postering** for å fjerne sperren uten å utføre videre behandling. Salgsordren kan posteres manuelt.
 
 ### <a name="rejecting-orders-in-the-hold-list"></a>Avvise ordrer i på vent-listen
 Du kan bruke **Avvis**-menyen i handlingsruten for å avvise en salgsordre

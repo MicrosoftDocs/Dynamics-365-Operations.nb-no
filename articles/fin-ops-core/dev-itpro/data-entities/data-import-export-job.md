@@ -3,7 +3,7 @@ title: Oversikt over dataimport- og -eksportjobber
 description: Bruk arbeidsområdet Datahåndtering for å opprette og administrere dataimport- og -eksportjobber.
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 09/16/2019
+ms.date: 02/20/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 87b852a73268251241cd66a07d7e4f4720706c0d
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 7a4b5396d2bb3fbb98b3f0f8a1bf59d62f673a3d
+ms.sourcegitcommit: 1d5a4f70a931e78b06811add97c1962e8d93689b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2184560"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "3124618"
 ---
 # <a name="data-import-and-export-jobs-overview"></a>Oversikt over dataimport- og -eksportjobber
 
@@ -191,8 +191,11 @@ Når du planlegger oppryddingsprosessen, må du angi følgende parametere for å
 
 -   **Antall dager for å beholde loggen** – denne innstillingen brukes til å kontrollere hvor mye av kjøringsloggen som skal beholdes. Dette angis i antall dager. Når oppryddingsjobben er planlagt som en gjentakende satsvis jobb, vil denne innstillingen fungere som et kontinuerlig bevegelig vindu og dermed blir loggen for det angitte antallet dager intakt mens du sletter resten. Standardverdien er 7 dager.
 
--   **Antall timer for å utføre jobben** – avhengig av hvor mye av historikken som skal ryddes opp, kan den totale utførelsestiden for oppryddingsjobben variere fra noen få minutter til noen timer. Fordi opprydding av de nevnte tabellene må gjøres når det ikke er annen databehandlingsaktivitet i systemet, blir det viktig å sørge for at oppryddingsarbeidet utføres og avsluttes før starten av forretningsaktiviteten.
+-   **Antall timer for å utføre jobben** – avhengig av hvor mye av historikken som skal ryddes opp, kan den totale utførelsestiden for oppryddingsjobben variere fra noen få minutter til noen timer. Denne parameteren må settes til antall timer som jobben vil bli utført. Når oppryddingsjobben er utført for det angitte antallet timer, avsluttes jobben, og oppryddingen vil fortsette neste gang den kjøres basert på tidsplanen for regelmessighet.
 
     Du kan angi maksimal utførelsestid ved å angi en maksimumsgrense for antall timer jobben må kjøres med denne innstillingen. Oppryddingslogikken går gjennom én jobbutførelses-ID om gangen i en kronologisk ordnet rekkefølge, med eldste først for opprydding av relatert kjøreloggen. Den slutter å hente nye kjøre-ID-er for opprydding når den resterende kjørevarigheten er innen de siste 10 % av den spesifiserte varigheten. I noen tilfeller vil det forventes at oppryddingsjobben vil fortsette utover den angitte maksimumstiden. Dette vil i stor grad avhenge av antall poster som skal slettes for gjeldende utførelses-ID som ble startet før grensen på 10 % ble nådd. Oppryddingen som ble startet, må fullføres for å sikre dataintegritet, noe som betyr at opprydding vil fortsette til tross for overskridelse av den angitte grensen. Når dette er fullført, hentes ikke nye utførelses-ID-er, og oppryddingsjobben fullføres. Den gjenstående utførelsesloggen som ikke ble ryddet opp på grunn av mangel på nok utførelsestid, vil bli plukket opp neste gang oppryddingsjobben er planlagt. Standard- og minimumsverdien for denne innstillingen er satt til 2 timer.
 
 -   **Gjentakende parti** – oppryddingsjobben kan kjøres som en éngangs, manuell kjøring, eller den kan også planlegges for gjentakende kjøring satsvis. Den satsvise jobben kan planlegges ved hjelp innstillingene for **kjøring i bakgrunnen**, som er standardpartiet som er satt opp.
+
+> [!NOTE]
+> Hvis poster i oppsamlingstabellene ikke ryddes opp fullstendig, kontrollerer du at oppryddingsjobben er planlagt å kjøres i regelmessighet. Som forklart ovenfor, vil jobben bare rydde opp så mange utførelses-ID-er som mulig i løpet av de angitte maksimale timene, i alle oppryddingskjøringer. Hvis du vil fortsette oppryddingen av alle gjenværende oppsamlingsposter, må jobben planlegges å kjøre med jevne mellomrom.

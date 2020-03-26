@@ -3,7 +3,7 @@ title: Aktivere ADLS i et Dynamics 365 Commerce-miljø
 description: Dette emnet forklarer hvordan du aktiverer og tester Azure Data Lake Storage (ADLS) for et Dynamics 365 Commerce-miljø, som er en forutsetning for å aktivere produktanbefalinger.
 author: bebeale
 manager: AnnBe
-ms.date: 02/03/2020
+ms.date: 03/12/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -19,12 +19,12 @@ ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 068eb522bd44e02dd31d3337a051691a956637fc
-ms.sourcegitcommit: b5ecde955a69f577de46e7db10e89caaedeb2b49
+ms.openlocfilehash: 553e1512ba72559923403eef741ce08222172a09
+ms.sourcegitcommit: 1e7e7c4bc197b0a42e4d53d2a54600a2fb125b69
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "3025269"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "3127773"
 ---
 # <a name="enable-adls-in-a-dynamics-365-commerce-environment"></a>Aktivere ADLS i et Dynamics 365 Commerce-miljø
 
@@ -95,8 +95,22 @@ Hvis de ikke er fullført allerede, følger du trinnene for å [aktivere produkt
 
 [Aktiver produktanbefalinger](enable-product-recommendations.md)
 
-[Legge til produktanbefalingslisten på sider](add-reco-list-to-page.md)
+[Aktivere personlige anbefalinger](personalized-recommendations.md)
 
-[Legge til en kontroll for anbefalinger på transaksjonsskjermen på salgsstedsenheter](../retail/add-recommendations-control-pos-screen.md?toc=/dynamics365/commerce/toc.json)
+[Velge bort personlige anbefalinger](personalization-gdpr.md)
+
+[Legge til lister over anbefalinger på et e-handelsområde](add-reco-list-to-page.md)
+
+[Legge til produktanbefalinger i POS](product.md)
+
+[Legge til anbefalinger på transaksjonsskjermen](add-recommendations-control-pos-screen.md)
+
+[Justere anbefalingsresultater for AI-ML](modify-product-recommendation-results.md)
+
+[Opprette kuraterte anbefalinger manuelt](create-editorial-recommendation-lists.md)
+
+[Opprette anbefalinger med demonstrasjonsdata](product-recommendations-demo-data.md)
+
+[Vanlige spørsmål om produktanbefalinger](faq-recommendations.md)
 
 

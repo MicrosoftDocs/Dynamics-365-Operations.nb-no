@@ -3,7 +3,7 @@ title: Behandling av Faktisk vekt-produkt med lagerstyring
 description: Dette emnet beskriver hvordan du bruker arbeidsmaler og lokasjonsdirektiver for å bestemme hvordan og hvor arbeid utføres i lageret.
 author: perlynne
 manager: AnnBe
-ms.date: 01/10/2020
+ms.date: 03/03/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2019-1-31
 ms.dyn365.ops.version: 8.1.3
-ms.openlocfilehash: 8bc3e3e7bea15127062edfcd362476de97bff07d
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 3014a7b22c47f99b5c57fd6acd9be8d89c6fb8ab
+ms.sourcegitcommit: 75974ae567bb0eacf0f65cac992b34ce5c680b93
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3004117"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "3095803"
 ---
 # <a name="catch-weight-product-processing-with-warehouse-management"></a>Behandling av Faktisk vekt-produkt med lagerstyring
 
@@ -30,10 +30,10 @@ ms.locfileid: "3004117"
 
 ## <a name="feature-exposure"></a>Funksjonseksponering
 
-Hvis du vil bruke lagerstyring til å behandle faktisk vekt-produkter, må du bruke en lisenskonfigurasjonsnøkkel for å aktivere funksjonen. (Gå til **Systemadministrasjon \> Oppsett \> Lisenskonfigurasjon**. I **Konfigurasjonsnøkler**-kategorien viser du deretter **Handel \> Lager- og transportstyring** og merker av for **Faktisk vekt for lager**.)
+Hvis du vil bruke lagerstyring til å behandle faktisk vekt-produkter, må du bruke en lisenskonfigurasjonsnøkkel for å aktivere funksjonen. Gå til **Systemadministrasjon \> Oppsett \> Lisenskonfigurasjon**. I **Konfigurasjonsnøkler**-kategorien viser du deretter **Handel \> Lager- og transportstyring** og merker av for **Faktisk vekt for lager**.
 
 > [!NOTE]
-> Både lisenskonfigurasjonsnøkkelen for **Lager- og transportstyring** og lisenskonfigurasjonsnøklene for **Behandle distribusjon \> Faktisk vekt** må være aktivert i tillegg. Hvis du vil angi konfigurasjonsnøklene for faktisk vekt, må du også aktivere funksjonen ved hjelp av arbeidsområdet **Funksjonsbehandling**. Hovedfunksjonen som må aktiveres, er **Behandling av Faktisk vekt-produkt med lagerstyring**. En annen relatert, men valgfri funksjon som du kanskje vil aktivere, er **Lagerstatusendringer for faktisk vekt-produkter**. Denne funksjonen legger til støtte for endringer i lagerstatusen for produkter som er aktivert for faktisk vekt.
+> Både lisenskonfigurasjonsnøkkelen for **Lager- og transportstyring** og lisenskonfigurasjonsnøklene for **Behandle distribusjon \> Faktisk vekt** må være aktivert i tillegg. Hvis du vil angi konfigurasjonsnøklene for faktisk vekt, må du også aktivere funksjonen ved hjelp av arbeidsområdet **Funksjonsbehandling**. Hovedfunksjonen som må aktiveres, er **Behandling av Faktisk vekt-produkt med lagerstyring**. To relaterte, men valgfrie funksjoner som du kanskje vil aktivere, er **Lagerstatusendringer for faktisk vekt-produkter** og **Bruk eksisterende variabel vekt-koder ved rapportering av produksjonsordrer som ferdigstilte**.
 
 Når lisenskonfigurasjonsnøkkelen er aktivert, kan du velge **Faktisk vekt** når du oppretter et frigitt produkt. Du kan også knytte det frigitte produktet til en lagringsdimensjonsgruppe som parameteren **Bruk lagerstyringsprosesser** er valgt for.
 
@@ -107,6 +107,7 @@ Når en vare spores av kode, finnes parameteren **Registreringsmetode for utgåe
 **Når sporing av faktisk vekt-koder brukes**, må en kode alltid opprettes for hver faktisk vekt-enhet som mottas, og hver kode må alltid være knyttet til en vekt.
 
 For eksempel **Boks** er faktisk vekt-enheten, og du får én pall med åtte bokser. I dette tilfellet må det opprettes åtte unike faktisk vekt-koder, og en vekt må knyttes til hver kode. Avhengig av den innkommende faktisk vekt-koden, kan enten vekten på alle åtte boksene registreres og gjennomsnittlig vekt kan deretter distribueres til hver boks, eller en unik vekt kan registreres for hver boks.
+Når du bruker funksjonen **Bruk eksisterende variabel vekt-koder ved rapportering av produksjonsordrer som ferdigstilte** med prosessen aktivert via et menyelement for mobilenhet, blir lageret oppdatert basert på eksisterende informasjon om variabel vekt-kode. Som et resultat ber ikke lagerappen om å registrere variabel vekt-kodedataene som en del av en produksjonsrapport som en ferdig operasjon.
 
 **Når sporing av faktisk vekt-koder ikke brukes**, kan vekten registres for hvert dimensjonssett (for eksempel for hver(t) nummerskilt og sporingsdimensjon). Vekten kan også registreres basert på et aggregert nivå, for eksempel fem nummerskilt (paller).
 

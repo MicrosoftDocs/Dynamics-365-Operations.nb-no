@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2018-12-01
 ms.dyn365.ops.version: 8.1.3
-ms.openlocfilehash: 326d9375670cb4f4990a4f7070bf923a28b2c025
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 2b8ce102086535a5462d3fa0e8ac76e9ec3dd15c
+ms.sourcegitcommit: 8fad5a8c7ea5d0d0037669e61e2313f684bcae23
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2179258"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "3106865"
 ---
 # <a name="process-collection-letters"></a>Behandle purrebrev
 
@@ -70,7 +70,11 @@ Dette emnet viser hvordan du oppretter, skriver ut og posterer purringer. Denne 
     1. Velg et alternativ i feltet **Utskrevet**.
 
 ## <a name="control-collection-letters-at-the-customer-level"></a>Kontrollere purringer på kundenivå
-Du kan også definere purringer på kundenivået slik at purrekoden for hver transaksjon spores, men behandlingen av purringer baseres på ett purrenivå som lagres for kunden. Enkeltpurringen vil inneholde alle transaksjoner som er forfalt for kunden. Fordi respittdagene nå spores på kundenivået, sendes ikke den neste purringen før antallet respittdager har gått for neste purring i sekvensen, selv om transaksjoner forfaller etter den siste purringen ble sendt. Dette alternativet reduserer antall purringer som sendes per kunde. 
+Hvis purrebrev er definert på transaksjonsnivå, kan flere brev genereres for en kunde, basert på aldersfordeling av transaksjon. Hvis transaksjoner vises i forskjellige purreforløp, genereres det separate purrebrev for hver gruppe med forfalte transaksjoner for kunden. Derfor kan en enkelt kunde for eksempel motta en purring for transaksjoner som er forfalt 60 dager, og en annen purring for transaksjoner som har forfalt 90 dager. 
+
+Hvert purrebrev er også tilknyttet en purrekode. Purrekoden er knyttet til individuelle transaksjoner, og brukes til å bestemme når den neste purringen skal genereres for hver transaksjon. Hvis en transaksjon for eksempel er mer enn 30 dager etter forfall, bestemmer purrekoden at neste purring skal sendes når transaksjonen blir 60 dager forfalt, hvis den ikke betales før. 
+
+Purrebrev kan også defineres på kundenivå. I dette tilfellet spores purrekoden for hver transaksjon, men behandlingen av purringer baseres på ett purrenivå som lagres for kunden. Enkeltpurringen vil inneholde alle transaksjoner som er forfalt for kunden. Fordi respittdagene nå spores på kundenivået, sendes ikke den neste purringen før antallet respittdager har gått for neste purring i sekvensen, selv om transaksjoner forfaller etter den siste purringen ble sendt. Dette alternativet reduserer antall purringer som du må sende til hver kunde.
 
 ### <a name="set-up-the-customer-to-control-collection-letters-at-the-customer-level"></a>Definere kunden for å kontrollere purringer på kundenivå
 1.  Gå til **Navigasjonsrute > Moduler > Kreditt og innkreving > Oppsett > Kundeparametere**, og velg **Innkrevinger**-kategorien. 

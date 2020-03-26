@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 8ac01f36912fa5e8a09bb4f324ef272cec737aa1
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: a9291dddf7d4dc080b6eb1ec60702de32a761f45
+ms.sourcegitcommit: 141e0239b6310ab4a6a775bc0997120c31634f79
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3002387"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "3113834"
 ---
 # <a name="set-up-a-retail-channel"></a>Definere en detaljhandelskanal
 
@@ -66,7 +66,7 @@ Bildet nedenfor viser et eksempel på en detaljhandelskanal.
 
 Det finnes mange andre valgfrie innstillinger som kan angis i delene **Utdrag/avslutning/** og **Diverse**, basert på behovene til detaljhandelsbutikken.
 
-I tillegg kan du se [Skjermoppsett for salgssted](https://docs.microsoft.com/en-us/dynamics365/retail/pos-screen-layouts?toc=/dynamics365/commerce/toc.json) for informasjon om hvordan du konfigurerer standard skjermoppsett i delen **Skjermoppsett**, og [Konfigurere og installere Retail Hardware Station](https://docs.microsoft.com/en-us/dynamics365/retail/retail-hardware-station-configuration-installation) for konfigurasjonsinformasjon om delen **Maskinvarestasjoner**.
+I tillegg kan du se [Skjermoppsett for salgssted](pos-screen-layouts.md) for informasjon om hvordan du konfigurerer standard skjermoppsett i delen **Skjermoppsett**, og [Konfigurere og installere Retail Hardware Station](retail-hardware-station-configuration-installation.md) for konfigurasjonsinformasjon om delen **Maskinvarestasjoner**.
 
 Bildet nedenfor viser et eksempel på en konfigurasjon av et detaljhandelskanaloppsett.
 

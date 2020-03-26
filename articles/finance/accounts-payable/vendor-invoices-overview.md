@@ -18,16 +18,17 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 411daa5bc08df530750fd5c09ca8b54bf537b548
-ms.sourcegitcommit: ba1c76497acc9afba85257976f0d4e96836871d1
+ms.openlocfilehash: 0cfa7d55f5d4d219c0bc43eb6313c0c6bd014ab6
+ms.sourcegitcommit: ac7c457bda3d8545ee8c0de45e4fcc24d677ffdc
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "2890333"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "3133902"
 ---
 # <a name="vendor-invoices-overview"></a>Oversikt over leverandørfakturaer
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 Dette emnet inneholder generell informasjon om leverandørfakturaer. Leverandørfakturaer er forespørsler om betaling for produkter og tjenester som er mottatt. Leverandørfakturaer kan representere en faktura for pågående tjenester, eller den kan være basert på bestillinger for bestemte varer og tjenester.
 
@@ -66,6 +67,16 @@ Du kan legge til en linje som ikke var på bestillingen, i leverandørfakturaen.
 
 Organisasjonen kan bruke arbeidsflyter til å administrere vurderingsprosessen for leverandørfakturaer. Det kan bli nødvendig med arbeidsflytvurdering for fakturahodet, fakturalinjen eller begge. Arbeidsflytkontrollene gjelder for hodet eller linjen, avhengig av hvor fokuset er når du velger kontrollen. I stedet for **Poster**-knappen vises en **Send**-knapp som du kan bruke til å sende leverandørfakturaen gjennom vurderingsprosessen.
 
+### <a name="preventing-invoice-from-being-submitted-to-workflow"></a>Forhindre faktura fra å sendes til arbeidsflyt 
+
+Nedenfor finner du flere måter du kan forhindre at en faktura sendes til en arbeidsflyt på.
+
+- **Fakturatotal og den registrerte totalen er ikke like.** Personen som sendte fakturaen, mottar et varsel om at totalene ikke er like, slik at de kan rette opp saldoene før fakturaen sendes til arbeidsflyten på nytt. Denne funksjonen er tilgjengelig hvis parameteren **Forhindre innsending til arbeidsflyt når fakturatotal og registrert fakturatotal ikke er like** på siden **Funksjonsbehandling** er slått på. 
+
+- **Fakturaen inneholder utildelte tillegg.** Personen som sendte fakturaen, mottar et varsel om at fakturaen har utildelte tillegg, slik at de kan rette opp fakturaen før den sendes til arbeidsflyten på nytt. Denne funksjonen er tilgjengelig hvis parameteren **Forhindre innsending til arbeidsflyt når det finnes utildelte tillegg på en leverandørfaktura** på siden **Funksjonsbehandling** er slått på.
+
+- **Fakturaen inneholder samme fakturanummer som en annen postert faktura.** Personen som sendte fakturaen, mottar et varsel om at en faktura med et duplisert nummer ble funnet, slik at de kan rette den opp før den sendes til arbeidsflyten på nytt. Dette varselet vises når Leverandør-parameteren merket **Kontroller fakturanummeret som er brukt** er satt til **Avvis duplikat**. Denne funksjonen er tilgjengelig hvis parameteren **Forhindre innsending til arbeidsflyt når fakturanummeret allerede finnes på en postert faktura, og systemet ikke er konfigurert til å godta dupliserte fakturanumre** på siden **Funksjonsbehandling** er slått på.  
+
 ## <a name="matching-vendor-invoices-to-product-receipts"></a>Samsvare leverandørfakturaer med produktkvitteringer
 
 Du kan angi og lagre informasjon for leverandørfakturaer, og du kan samsvare fakturalinjer med produktkvitteringslinjer. Du kan også samsvare delvist antall for en linje.
@@ -77,6 +88,16 @@ Når du posterer fakturaen, oppdateres **Fakturarest**-antallet for hver vare ti
 Dette alternativet forutsetter at minst én produktkvittering er postert for bestillingen. Leverandørfakturaen er basert på disse produktkvitteringene og gjenspeiler antallet i dem. Finansinformasjonen for fakturaen er basert på informasjonen du angir når du posterer fakturaen.
 
 Hvis du vil ha mer informasjon, se [Registrere leverandørfaktura og avstemme mot mottatt antall](../accounts-payable/tasks/record-vendor-invoice-match-against-received-quantity.md).
+
+## <a name="configure-an-automated-task-for-vendor-invoice-workflow-to-post-the-vendor-invoice-using-a-batch-job"></a>Konfigurere en automatisert oppgave for arbeidsflyt for leverandørfaktura for å postere leverandørfakturaen ved hjelp av en satsvis jobb
+
+Du kan legge til en automatisert posteringsoppgave i arbeidsflyten for leverandørfaktura, slik at fakturaer behandles i en bunke. Ved å postere fakturaer i en bunke, kan arbeidsflytprosessen fortsette uten å måtte vente til posteringen er fullført, noe som forbedrer den generelle ytelsen til alle oppgavene som er sendt til arbeidsflyten.
+
+Hvis du vil postere en leverandørfaktura i en bunke, aktiverer du parameteren **Satsvis postering av leverandørfaktura** på siden **Funksjonsbehandling**. Arbeidsflyter for leverandørfaktura konfigureres ved å gå til **Leverandører > Oppsett > Arbeidsflyter for leverandørreskontro**.
+
+Du kan se oppgaven **Poster leverandørfakturaen ved hjelp av et parti** i redigeringsprogrammet for arbeidsflyt, uansett om funksjonsparameteren, **Satsvis postering av leverandørfaktura**, er aktivert. Når funksjonsparameteren ikke er aktivert, vil ikke en faktura som inneholder oppgaven **Poster leverandørfakturaen ved hjelp av et parti**, behandles i arbeidsflyten før parameteren er aktivert. Oppgaven **Poster leverandørfakturaen ved hjelp av et parti** må ikke brukes i samme arbeidsflyt som den automatiserte oppgaven **Poster leverandørfakturaer**. Oppgaven **Poster leverandørfakturaen ved hjelp av et parti** bør også være det siste elementet i arbeidsflytkonfigurasjonen.
+
+Du kan angi antall fakturaer som skal inkluderes i partiet, og antall timer du må vente før du planlegger en bunke på nytt, ved å gå **Leverandører > Oppsett > Leverandørparametere > Faktura > Fakturaarbeidsflyt**. 
 
 ## <a name="working-with-multiple-invoices"></a>Arbeide med flere fakturaer
 

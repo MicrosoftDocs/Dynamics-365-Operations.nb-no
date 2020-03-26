@@ -1,6 +1,6 @@
 ---
 title: Oversikt
-description: ''
+description: Brukerveiledningen for Dynamics 365 Human Resources gir deg instruksjoner om hvordan du konfigurerer Human Resources, definerer personale, definerer kompensasjon og fordeler for de ansatte og administrerer arbeidsstyrken.
 author: andreabichsel
 manager: AnnBe
 ms.date: 02/03/2020
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: c489ddaec0363a5a6d68f0464786dfbe1b0e1349
-ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
+ms.openlocfilehash: 7bef82f83de150df69a1a001fa9c07e34270742d
+ms.sourcegitcommit: f38302b9430f2ab3efe91d0a7beff946bc610e8f
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3010062"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "3091730"
 ---
 # <a name="overview"></a>Oversikt
 
@@ -32,9 +32,9 @@ Brukerveiledningen for Dynamics 365 Human Resources gir deg instruksjoner om hvo
 ## <a name="set-up-human-resources"></a>Konfigurere Human Resources
 
 [Konfigurere Human Resources-parametere](hr-setup-parameters.md)</br>
-[Konfigurere delte Human Resources-parametere](hr-setup-shared-parameters.md)</br>
-[Definere Human Resources-arbeidsflyter](hr-setup-workflows.md)</br>
-[Forstå dato- og klokkeslettfelt](hr-setup-date-time-fields.md)</br>
+[Konfigurere delte parametere for Human Resources](hr-setup-shared-parameters.md)</br>
+[Konfigurere arbeidsflyter for Human Resources](hr-setup-workflows.md)</br>
+[Forstå felt for dato og klokkeslett](hr-setup-date-time-fields.md)</br>
 
 ## <a name="configure-organization-settings"></a>Konfigurere organisasjonsinnstillinger
 
@@ -50,7 +50,7 @@ Brukerveiledningen for Dynamics 365 Human Resources gir deg instruksjoner om hvo
 [Konfigurere og sende e-post](../fin-ops-core/fin-ops/organization-administration/configure-email.md?toc=/dynamics365/human-resources/toc.json)</br>
 [Dato-/klokkeslettdata og tidssoner](../fin-ops-core/fin-ops/organization-administration/date-time-zones.md?toc=/dynamics365/human-resources/toc.json)</br>
 
-## <a name="manage-personnel"></a>Administrere personale
+## <a name="manage-personnel"></a>Administrere medarbeidere
 
 [Organisere arbeidsstyrken](hr-personnel-departments-jobs-positions.md)</br>
 [Definere komponentene for en jobb](hr-personnel-jobs.md)</br>
@@ -69,7 +69,7 @@ Brukerveiledningen for Dynamics 365 Human Resources gir deg instruksjoner om hvo
 
 [Oversikt over kompensasjonsplaner](hr-compensation-overview.md)</br>
 [Definere kompensasjonsrutenett](hr-compensation-grids.md)</br>
-[Utvikle en kompensasjonsstruktur og -plan](hr-compensation-structure.md)</br>
+[Utvikle en struktur og plan for kompensasjon](hr-compensation-structure.md)</br>
 [Opprette planer for fast kompensasjon](hr-compensation-fixed-plans.md)</br>
 [Opprette variable kompensasjonsplaner](hr-compensation-variable-plans.md)</br>
 [Registrere ansatte i en fast kompensasjonsplan](hr-compensation-enroll-employees-fixed.md)</br>
@@ -94,29 +94,29 @@ Brukerveiledningen for Dynamics 365 Human Resources gir deg instruksjoner om hvo
 
 [Oversikt](hr-leave-and-absence-overview.md)</br>
 [Konfigurere permisjons- og fraværsparametere](hr-leave-and-absence-parameters.md)</br>
-[Opprette en driftstidskalender](hr-leave-and-absence-working-time-calendar.md)</br>
-[Opprette en arbeidsflyt for permisjonsforespørsel](hr-leave-and-absence-workflow.md)</br>
+[Opprette en arbeidstidskalender](hr-leave-and-absence-working-time-calendar.md)</br>
+[Opprette arbeidsflyt for permisjonsforespørsel](hr-leave-and-absence-workflow.md)</br>
 [Konfigurere permisjons- og fraværstyper](hr-leave-and-absence-types.md)</br>
 [Opprette en permisjons- og fraværsplan](hr-leave-and-absence-plans.md)</br>
 [Tilordne arbeidere til en permisjonsplan](hr-leave-and-absence-enroll.md)</br>
 [Avsette permisjons- og fraværsplaner](hr-leave-and-absence-accrue.md)</br>
 [Vise analyse for permisjon og fravær](hr-leave-and-absence-analytics.md)</br>
-[Administrere permisjons- og fraværsforespørsler](hr-employee-self-service-manage-requests.md)</br>
-[Be om avspasering](hr-employee-self-service-request-time-off.md)</br>
+[Administrere forespørsler om permisjon og fravær](hr-employee-self-service-manage-requests.md)</br>
+[Be om fritid](hr-employee-self-service-request-time-off.md)</br>
 [Vise team- og firmakalendere](hr-employee-self-service-calendar.md)</br>
 
 ## <a name="develop-employees"></a>Utvikle ansatte
 
 [Oversikt over ytelsesstyring](hr-develop-performance-management-overview.md)</br>
-[Justere kompetanse i arbeidsstyrke](hr-develop-skills.md)</br>
-[Legge til i ytelsesjournalen](hr-develop-add-performance-journal.md)</br>
+[Justere kompetanser for arbeidsstyrke](hr-develop-skills.md)</br>
+[Legge til i ytelsesloggen](hr-develop-add-performance-journal.md)</br>
 [Opprette et mål](hr-develop-create-goal.md)</br>
 [Opprette en prestasjonsvurdering](hr-develop-create-performance-review.md)</br>
 
 ## <a name="create-courses"></a>Opprett kurs
 
 [Definere opplæringskurs](hr-learning-courses.md)</br>
-[Spørreskjemaoversikt](hr-learning-questionnaires.md)</br>
+[Oversikt over spørreskjemaer](hr-learning-questionnaires.md)</br>
 [Utforme spørreskjemaer](hr-learning-design-questionnaires.md)</br>
 [Distribuere og planlegge spørreskjemaer](hr-learning-distribute-questionnaires.md)</br>
 [Distribuere spørreskjemaer ved hjelp av planlegging](hr-learning-distribute-questionnaires-scheduling.md)</br>

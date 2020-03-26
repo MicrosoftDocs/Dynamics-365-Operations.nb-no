@@ -19,11 +19,11 @@ ms.author: nselin
 ms.search.validFrom: 2019-07-01
 ms.dyn365.ops.version: AX 10.0.5
 ms.openlocfilehash: 6efa4466dbf7f5ca1d3945acf15fac65d628d691
-ms.sourcegitcommit: 6a70f9ac296158edd065d52a12703b3ce85ce5ee
+ms.sourcegitcommit: 1d5a4f70a931e78b06811add97c1962e8d93689b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3015334"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "3124549"
 ---
 # <a name="defer-the-execution-of-sequence-elements-in-er-formats"></a>Utsette kjøringen av sekvenselementer i ER-formater
 
@@ -45,7 +45,7 @@ Hvis du vil vite mer om denne funksjonen, kan du fullføre eksemplet i dette emn
 
 **Utsatt kjøring**-alternativet er ikke aktuelt for sekvenser som er konfigurert som trimmede sekvenser der maksimal lengde er begrenset.
 
-## <a name="Example"></a>Eksempel: Utsette kjøringen av et sekvenselement i et ER-format
+## <a name="example-defer-the-execution-of-a-sequence-element-in-an-er-format"></a><a name="Example"></a>Eksempel: Utsette kjøringen av et sekvenselement i et ER-format
 
 Følgende trinn forklarer hvordan en bruker med [rollen](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/sysadmin/tasks/assign-users-security-roles) systemadministrator eller funksjonell konsulent for elektronisk rapportering kan konfigurere et ER-format som inneholder et sekvenselement der kjøringsrekkefølgen er forskjellig fra rekkefølgen i formathierarkiet.
 

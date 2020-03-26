@@ -1,9 +1,9 @@
 ---
 title: Opprette og arbeide med egendefinerte felt
-description: Dette emnet beskriver hvordan du oppretter egendefinerte felt for å tilpasse programmet slik at det passer for bedriften.
+description: Dette emnet forklarer hvordan du oppretter egendefinerte felt via brukergrensesnittet for å tilpasse programmet slik at det passer for bedriften.
 author: jasongre
 manager: AnnBe
-ms.date: 07/16/2018
+ms.date: 03/09/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -16,20 +16,20 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2018-1-31
 ms.dyn365.ops.version: Platform update 13
-ms.openlocfilehash: 9146921c47e89c5895a1a727de874b0ffbc93c37
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: f689bb3ec844459d1dd6e199804a30f3e0cb38bc
+ms.sourcegitcommit: 48c39c0c0949fe48b3536d9d2d0e451d561ff5c6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2812511"
+ms.lasthandoff: 03/09/2020
+ms.locfileid: "3112342"
 ---
 # <a name="create-and-work-with-custom-fields"></a>Opprette og arbeide med egendefinerte felt
 
 [!include [banner](../includes/banner.md)]
 
-Selv om det er et omfattende sett med felt som standard for å administrere mange forretningsprosesser, har et firma noen ganger behov for å spore ytterligere informasjon i systemet. For å legge til rette for dette behovet kan du opprette egendefinerte felt for å tilpasse programmet i tråd med bedriftens behov, forutsatt at du har tilgang til funksjonen.
+Selv om det er et omfattende sett med felt som standard for å administrere mange forretningsprosesser, har et firma noen ganger behov for å spore ytterligere informasjon i systemet. Selv om programmerere kan brukes til å legge til disse feltene som utvidelser i utviklerverktøy, gjør funksjonen egendefinerte felt det mulig å legge til felt direkte fra brukergrensesnittet, slik at du kan skreddersy programmet slik at det passer til bedriften din ved hjelp av Webleseren.
 
-Muligheten til å legge til egendefinerte felt er tilgjengelig i plattformoppdateringen 13 og senere.
+Muligheten til å legge til egendefinerte felt er tilgjengelig i plattformoppdateringen 13 og senere. Bare brukere med spesialtilgang har tilgang til denne funksjonen.
 
 Denne videoen viser hvor enkelt det er å legge til et egendefinert felt på en side: [Legge til egendefinerte felt](https://www.youtube.com/watch?v=gWSGZI9Vtnc).
 
@@ -159,3 +159,7 @@ Av ytelsesårsaker og tekniske årsaker er det bare tabeller som oppfyller følg
 - Tabellen kan ikke utvide en annen tabell.
 - Tabellen kan ikke merkes som en systemtabell.
 - Tabellen kan ikke være en midlertidig tabell.
+
+### <a name="can-i-reference-custom-fields-from-the-developer-tools"></a>Kan jeg referere til egendefinerte felt fra utviklerverktøy?  
+
+Egendefinerte felt kan bare administreres gjennom brukergrensesnittet og kan ikke refereres til av koden. 

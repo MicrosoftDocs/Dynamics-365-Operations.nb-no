@@ -1,6 +1,6 @@
 ---
 title: Kopier en forekomst
-description: ''
+description: Du kan bruke Microsoft Dynamics Lifecycle Services (LCS) til å kopiere en Microsoft Dynamics 365 Human Resources-database til et sandkassemiljø.
 author: andreabichsel
 manager: AnnBe
 ms.date: 02/03/2020
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 0bbe325edb65cad0c1912e0a6ade559e5675dc58
-ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
+ms.openlocfilehash: bb363369994d99f358be0c23cdaf1dbc80b644e5
+ms.sourcegitcommit: f38302b9430f2ab3efe91d0a7beff946bc610e8f
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3010024"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "3092298"
 ---
 # <a name="copy-an-instance"></a>Kopier en forekomst
 
@@ -68,7 +68,7 @@ Hvis du vil fullføre denne oppgaven, kopierer du først en forekomst, og derett
 
 4. I oppgaveruten **Kopier en forekomst**, velger du forekomsten som skal overskrives, og deretter velger du **Kopier**. Vent til verdien i feltet **Kopier status** er oppdatert til **Fullført**.
 
-   ![[Velge forekomst som skal overskrives](./media/copy-instance-select-target-instance.png)](./media/copy-instance-select-target-instance.png)
+   ![[Velg forekomsten som skal overskrives](./media/copy-instance-select-target-instance.png)](./media/copy-instance-select-target-instance.png)
 
 5. Velg **Power Platform**, og logg deg på administrasjonssenteret for Microsoft Power Platform.
 

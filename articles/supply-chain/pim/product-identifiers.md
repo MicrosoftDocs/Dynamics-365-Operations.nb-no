@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: conradv
 ms.dyn365.ops.version: 7.2999999999999998
 ms.search.validFrom: 2017-12-31
-ms.openlocfilehash: 230cb7c2fe8f3c1972766a25414bb33a78b37a42
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: adac308a17ac51ed6da28d04d8c69b01f579aab7
+ms.sourcegitcommit: 7789ef6b0d337bee6aa05110c40e002f02eec71b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3004025"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "3095623"
 ---
 # <a name="product-identifiers"></a>Produktidentifikatorer 
 
@@ -43,9 +43,6 @@ I mange tilfeller er ikke produktnummeret opprinnelig opprettet i Dynamics 365 S
 Når du implementerer Supply Chain Management, bør du gi særlige hensyn til din strategi for produktnumre. Et godt nummereringssystem forbedrer logistikkflyter og bidrar til å forhindre feil. En god produkt-ID har opptil 15 tegn. Ideelt sett har den færre enn 10 tegn og inneholder ikke mer enn fem klassifiseringstegn. Du kan også bruke søkenavn for å aktivere hurtigsøk. Et søkenavn er et ekstra navn som representerer klassifiseringene av et produkt.
 
 Når du bruker Common Data Service, er produktnummeret i Supply Chain Management også produktnummeret i Common Data Service. Produktvarianter synkroniseres til Common Data Service som forskjellige produkter.
-
-> [!NOTE]
-> Produktnummeret kan ikke starte med "%".
 
 ## <a name="item-number-and-product-dimensions"></a>Varenummer og produktdimensjoner
 

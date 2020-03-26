@@ -3,7 +3,7 @@ title: Tilbakestille kvitteringsnumre
 description: Dette emnet beskriver hvordan du tilbakestiller kvitteringsnumrene som brukes for ulike handlinger på en ønsket dato (for eksempel regnskapsåret eller kalenderåret).
 author: ShalabhjainMSFT
 manager: AnnBe
-ms.date: 02/03/2020
+ms.date: 03/12/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-Commerce
@@ -19,17 +19,17 @@ ms.search.industry: Retail, Commerce
 ms.author: asharchw
 ms.search.validFrom: 2020-01-14
 ms.dyn365.ops.version: Application update 10.0.9
-ms.openlocfilehash: e81ff86a8b8a4dca6b14a21d6e982b03a928d29e
-ms.sourcegitcommit: 54baab2a04e5c534fc2d1fd67b67e23a152d4e57
+ms.openlocfilehash: fc719348f94ff4a1fb7b4ac96f6f617872c9af92
+ms.sourcegitcommit: 437170338c49b61bba58f822f8494095ea1308c2
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "3020084"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "3123952"
 ---
 # <a name="reset-receipt-numbers"></a>Tilbakestille kvitteringsnumre 
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
+
 
 Forhandlere genererer kvitteringsnumre for ulike handlinger i butikken, for eksempel hentesalgstransaksjoner, returtransaksjoner, kundeordrer, tilbud og betalinger. Selv om forhandlere definerer sine egne kvitteringsformater, har noen land eller regioner reguleringer som angir begrensninger i disse kvitteringsformatene. Disse bestemmelsene kan for eksempel begrense antall tegn på kvitteringen, kreve etterfølgende kvitteringsnumre, begrense noen spesialtegn eller kreve tilbakestilling av kvitteringsnumre i begynnelsen av året. Microsoft Dynamics 365 Commerce gjør prosessen med å behandle kvitteringsnumre svært fleksibel, for å hjelpe forhandlere med å dekke forskriftsmessige krav. Dette emnet forklarer hvordan du bruker funksjonaliteten til å tilbakestille kvitteringsnumre.
 

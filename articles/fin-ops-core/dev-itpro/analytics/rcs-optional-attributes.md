@@ -16,14 +16,16 @@ ms.search.region: global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 5e2989906c5aa3ead9e46b8ed5333e880e5cf1c6
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 10795c90cb90961c17a4326b71ed43dc72039f2b
+ms.sourcegitcommit: 66eae22cd99e53fe8e4c6c94945ad8061b69a442
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2769953"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "3117431"
 ---
 # <a name="import-files-in-xml-format-with-optional-attributes"></a>Importere filer i XML-format med valgfrie attributter
+
+[!include [banner](../includes/banner.md)]
 
 Du kan utforme ER-formater (elektronisk rapportering) for å analysere innkommende elektroniske dokumenter i XML-format. Visse attributter i XML-elementer kan angis som valgfrie i et utformet ER-format. Dette gjør at du kan håndtere innkommende filer med og uten slike XML-attributter på riktig måte. Du kan deretter bruke innholdet fra disse filene til å oppdatere programdata.
 
@@ -52,17 +54,17 @@ Fremgangsmåten nedenfor forklarer hvordan en bruker i rollen Systemansvarlig el
 7. Klikk **Legg til**.
 8. Klikk på **Ny** for å åpne nedtrekksdialogen.
 9. Skriv inn «Liste» i **Navn**-feltet.
-10. Velg **Postliste** i **Varetype**-feltet.
-11. Klikk **Legg til**.
-12. Klikk på **Ny** for å åpne nedtrekksdialogen.
-13. I **Navn**-feltet skriver du inn «Kode».
-14. Velg **Streng** i **Varetype**-feltet.
-15. Klikk **Legg til**.
-16. Klikk **Lagre**.
-17. Lukk siden.
-18. Klikk på **Endre status**.
-19. Klikk på **Fullført**.
-20. Klikk **OK**.
+10.    Velg **Postliste** i **Varetype**-feltet.
+11.    Klikk **Legg til**.
+12.    Klikk på **Ny** for å åpne nedtrekksdialogen.
+13.    I **Navn**-feltet skriver du inn «Kode».
+14.    Velg **Streng** i **Varetype**-feltet.
+15.    Klikk **Legg til**.
+16.    Klikk **Lagre**.
+17.    Lukk siden.
+18.    Klikk på **Endre status**.
+19.    Klikk på **Fullført**.
+20.    Klikk **OK**.
 
 ## <a name="create-a-format-for-data-import"></a>Opprette et format for dataimport
 1. Klikk på **Opprett konfigurasjon** for å åpne nedtrekksdialogen.
@@ -81,32 +83,32 @@ Fremgangsmåten nedenfor forklarer hvordan en bruker i rollen Systemansvarlig el
 7. Velg **XML\Element** i treet.
 8. I **Navn**-feltet skriver du inn «dokument».
 9. Velg **Én mange** i feltet **Multiplisitet**.
-10. Klikk **OK**.
-11. Velg **rot\dokument** i treet.
-12. Klikk på **Legg til** for å åpne nedtrekksdialogen.
-13. Velg **XML\Attributt** i treet.
-14. I **Navn**-feltet skriver du inn «id».
-15. Klikk **OK**.
-16. Klikk **Lagre**.
+10.    Klikk **OK**.
+11.    Velg **rot\dokument** i treet.
+12.    Klikk på **Legg til** for å åpne nedtrekksdialogen.
+13.    Velg **XML\Attributt** i treet.
+14.    I **Navn**-feltet skriver du inn «id».
+15.    Klikk **OK**.
+16.    Klikk **Lagre**.
 
 ## <a name="design-a-format-mapping-to-save-parsed-information-to-data-model"></a>Utforme en formattilordning for å lagre analysert informasjon i datamodell
-1.  Klikk på **Tilordne format til modell**.
-2.  Klikk på **Ny**.
-3.  Angi eller velg en verdi i feltet **Definisjon**.
-4.  I **Navn**-feltet skriver du inn «Tilordning».
-5.  Klikk **Lagre**.
-6.  Klikk **Utforming**.
-7.  Utvid **format** i treet.
-8.  I treet utvider du **format\rot: XML-element(rot)**.
-9.  I treet velger du **format\root: XML-element(rot)\dokument: XML-element 1..* (dokument)**.
-10. Klikk på **Bind**.
-11. I treet utvider du **format\rot: XML-element(rot)\dokument: XML-element 1..* (dokument)**.
-12. I treet velger du **format\root: XML-element(rot)\dokument: XML-element 1..* (dokument)\id**.
-13. I treet utvider du **Liste = format.rot.dokument**.
-14. I treet velger du **Liste = format.rot.dokument\Kode**.
-15. Klikk på **Bind**.
-16. Klikk **Lagre**.
-17. Lukk siden.
+1.    Klikk på **Tilordne format til modell**.
+2.    Klikk på **Ny**.
+3.    Angi eller velg en verdi i feltet **Definisjon**.
+4.    I **Navn**-feltet skriver du inn «Tilordning».
+5.    Klikk **Lagre**.
+6.    Klikk **Utforming**.
+7.    Utvid **format** i treet.
+8.    I treet utvider du **format\rot: XML-element(rot)**.
+9.    I treet velger du **format\root: XML-element(rot)\dokument: XML-element 1..* (dokument)**.
+10.    Klikk på **Bind**.
+11.    I treet utvider du **format\rot: XML-element(rot)\dokument: XML-element 1..* (dokument)**.
+12.    I treet velger du **format\root: XML-element(rot)\dokument: XML-element 1..* (dokument)\id**.
+13.    I treet utvider du **Liste = format.rot.dokument**.
+14.    I treet velger du **Liste = format.rot.dokument\Kode**.
+15.    Klikk på **Bind**.
+16.    Klikk **Lagre**.
+17.    Lukk siden.
 
 ## <a name="run-format-mapping"></a>Kjøre formattilordning
 1. Klikk på **Kjør**.

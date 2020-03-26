@@ -3,7 +3,7 @@ title: Forskriftsmessige oppdateringer
 description: Dette emnet inneholder en liste over planlagte og frigitte forskriftsmessige oppdateringer for Microsoft Dynamics 365 Finance.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 01/29/2020
+ms.date: 03/09/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: d596a543ca8aacc2c6530672111001a9dd161aa7
-ms.sourcegitcommit: 9168621ca9b5061c65f3e05dbc5918b6a11d53d5
+ms.openlocfilehash: 2aea83f99c7e5b017ae0cf9d755882739e22ccb7
+ms.sourcegitcommit: 48c39c0c0949fe48b3536d9d2d0e451d561ff5c6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/31/2020
-ms.locfileid: "3000007"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "3112761"
 ---
 # <a name="regulatory-updates"></a>Forskriftsmessige oppdateringer
 
@@ -42,39 +42,34 @@ For de siste forskriftsmessige oppdateringsplanene kan du se tabellen nedenfor.
 
 |Land|Planlagt utgivelsesdato|Versjon|Forskriftsmessig oppdatering|
 |--------------------|---------------|-------|-------|
+|      Brasil         |   Mars 2020 til januar 2020      | 10.0.9, 10.0.8      |   DRCST SC – Ordinance SEF Nº 416    |
+|      Brasil         |   Mars 2020 til januar 2020     | 10.0.9, 10.0.8      |   SPED-bidrag – oppsett for jan-2020    |
 |      Brasil         |   2020. mars       | 10.0.9      |   SPED-regnskap – endringer i post D100-feltet COD_MUN_ORI    |
-|      Brasil         |   Mars 2020 til desember 2019       | 10.0.9, 10.0.8, 10.0.7HF      |   DRCST SC – Ordinance SEF Nº 254/19    |
-|      Brasil         |   Januar 2020 til desember 2019       | 10.0.8, 10.0.7HF      |   Komplementær informasjon fra ICMS-ST    |
-|      Brasil        |   Mars 2020 til desember 2019       | 10.0.9, 10.0.8HF, 10.0.7HF      |   SPED-regnskapsoppsett 014 |
-|      Brasil         |   2019. desember       | 10.0.7      |   En ny versjon av tekniske notater for NF-e: NT 2019.001 versjon 1.20    |
-|      Brasil         |   2019. desember       | 10.0.7      |   DRCST-deklarering SC    |
-|      Brasil          |   Mars 2020 til januar 2020       | 10.0.9, 10.0.8HF, 10.0.7HF      |   DRCST SC – Ordinance SEF Nº 343DR   |
+|      Brasil         |   Mars 2020 til januar 2020       | 10.0.9, 10.0.8      |   DRCST SC – Ordinance SEF Nº 254/19    |
+|      Brasil         |   2020. januar       | 10.0.8      |   Komplementær informasjon fra ICMS-ST    |
+|      Brasil        |   Mars 2020 til januar 2020       | 10.0.9, 10.0.8HF      |   SPED-regnskapsoppsett 014 |
+|      Brasil          |   Mars 2020 til januar 2020       | 10.0.9, 10.0.8HF      |   DRCST SC – Ordinance SEF Nº 343DR   |
 |      Frankrike          |   2020. mars       | 10.0.9      |   Fransk lokalisering: ISO 20022-format for internasjonal betaling og pengeoverføring   |
+|      Ungarn          |   2020. mars       | 10.0.9, 10.0.8      |   Elektronisk faktureringssystem v.2.0 på Finance and Operations    |
 |      India          |   2020. mars       | 10.0.9      |   Ny GSTR (ANX-1 & ANX-2) frakoblet verktøy for retur   |
 |      Italia          |   2020. januar       | 10.0.8      |   Endringer i mva-styring etter D.L. 119 av 23. okt. 2018: årlig mva-kommunikasjon |
-|      Italia         |   2019. desember       | 10.0.7      |   Endringer i mva-styring etter D.L. 119 av 23. okt. 2019: Kvartalsvis mva-kommunikasjon ("Lipe 2018")    |
-|      Italia         |   Mars 2020 til desember 2019     | 10.0.9, 10.0.8HF, 10.0.7HF      |   Retail – Administrere kundeinformasjon på salgssted |
-|      Italia         |   Mars 2020 til desember 2019      | 10.0.9, 10.0.8HF, 10.0.7HF      |   Retail – Skrive ut kundeinformasjon på bilagskvittering |
-|      Italia         |   2019. desember     | 10.0.7      |   Endringer i mva-styring etter D.L. 119 av 23- oktober 2018: Kommunikasjon for faktura  |
-|      Japan          |   Mars 2020 til desember 2019     | 10.0.9, 10.0.8HF, 10.0.7HF     |   Japan Bankers Association erstatter JBA-betalingsformater av fast lengde med ISO20022 |
-|      Japan          |   Januar 2020 til desember 2019     | 10.0.8, 10.0.7HF       |   Endringer i forbruksavgiftssats og redusert mva-sats introduseres (Forbruksavgiftsrapport) |
-|      Japan         |   2019. desember      | 10.0.7       |   Endring i forbrukssats og redusert mva-sats introduseres (fakturaoppsett) |
-|      Mexico          |   Januar 2020 til desember 2019    | 10.0.8, 10.0.7HF        |   Detaljhandel -  CFDI Global: Misc. Resol 2019 - c_CodigoPostal og tidssone |
-|     Mexico          |   2019. desember       | 10.0.7      |   Oppdaterer regel 2.7.2.9 – Bruke tidssonen for postnummeret til bedriften som utsteder CFDI-dokumentet |
-|      Mexico           |   Januar 2020 til desember 2019      | 10.0.8, 10.0.7HF     |   Kodevalidering i produkter og tjenester-katalog |
-|      Norge          |   Mars 2020 til desember 2019   | 10.0.9, 10.0.8HF, 10.7.7HF     |   SAF-T XSD-oppdatering til versjon 1.1 for Dynamics 365 for Finance and Operations |
+|      Italia         |   2020. mars     | 10.0.9, 10.0.8HF      |   Retail – Administrere kundeinformasjon på salgssted |
+|      Italia         |   2020. mars      | 10.0.9, 10.0.8HF      |   Retail – Skrive ut kundeinformasjon på bilagskvittering |
+|      Japan          |   2020. mars     | 10.0.9, 10.0.8HF     |   Japan Bankers Association erstatter JBA-betalingsformater av fast lengde med ISO20022 |
+|      Japan          |   2020. januar      | 10.0.8       |   Endringer i forbruksavgiftssats og redusert mva-sats introduseres (Forbruksavgiftsrapport) |
+|      Mexico          |   2020. januar     | 10.0.8        |   Detaljhandel -  CFDI Global: Misc. Resol 2019 - c_CodigoPostal og tidssone |
+|      Mexico           |   2020. januar       | 10.0.8     |   Kodevalidering i produkter og tjenester-katalog |
+|      Norge          |   2020. mars   | 10.0.9, 10.0.8HF     |   SAF-T XSD-oppdatering til versjon 1.1 for Dynamics 365 for Finance and Operations |
 |      Polen          |   2020. mars    | 10.0.9     |   Inngående mva-registrer og SAF mav-register: Egendefinert byrå fra SAD-dokumenter må erstattes av navn på tredjepart og numme for avgiftsfritak |
 |      Polen          |   Mars 2020 til januar 2020   | 10.0.9, 10.0.8HF     |   Retail – Administrere kundeinformasjon på salgssted |
 |      Polen          |   Mars 2020 til januar 2020     | 10.0.9, 10.0.8HF     |   Retail – Skrive ut kundeinformasjon på bilagskvittering |
-|      Polen          |   Mars 2020 til desember 2019     | 10.0.9, 10.0.8, 10.0.7     |   SAF-fakturaer (JPK_FA) v.3 fra 2. des. 2019 |
-|      Polen          |   Mars 2020 til januar 2019     | 10.0.9, 10.0.8     |   JPK_VDEK erstatter JPK_VAT (SAF VAT) |
-|      Polen          |   2019. desember     | 10.0.7     |   Obligatorisk oppdelt betaling |
+|      Polen          |   Mars 2020 til januar 2020     | 10.0.9, 10.0.8     |   SAF-fakturaer (JPK_FA) v.3 fra 2. des. 2019 |
+|      Polen          |   Mars 2020 til januar 2020     | 10.0.9, 10.0.8     |   JPK_VDEK erstatter JPK_VAT (SAF VAT) |
 |      Russland          |   2020. mars     | 10.0.9     |   Format for deklarering av eiendomsskatt for rapportering i 2019. |
 |      Russland          |   2020. mars     | 10.0.9     |   Oppdatering av format for avgiftsdeklarering for fortjeneste |
-|      Singapore           |   Januar 2020 til desember 2019     | 10.0.8, 10.0.7HF      |   Rapport for GST-retur |
+|      Singapore           |   2020. januar     | 10.0.8      |   Rapport for GST-retur |
 |      Sveits           |   2020. mars     | 10.0.9      |   Sveitsisk betalingsbilag ISR får nytt format (QR-kode) |
 |      Storbritannia          |   2020. januar       | 10.0.8      |   Gjøre mva digital (MTD) - samtykke av systemadministrator til å overføre informasjon utenfor D365 ved hjelp av integrasjon med HMRC |
-|      Storbritannia          |   2019. desember     | 10.0.7     |   Gjøre mva digital – Oppretting av rapport for mva-retur for selskaper som rapporterer som mva-gruppe innenfor samme systemdatabase v.10 |
 
 
 

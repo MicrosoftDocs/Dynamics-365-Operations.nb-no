@@ -1,6 +1,6 @@
 ---
 title: Bruke en relativ bane i databindinger for ER-modeller og -formater
-description: .
+description: Med verktøyet for elektronisk rapportering (ER) kan brukere definere elektroniske formatstrukturer og deretter beskrive hvordan disse strukturene skal fylles ved hjelp av data og algoritmer som finnes i programmet.
 author: NickSelin
 manager: AnnBe
 ms.date: 07/03/2019
@@ -16,12 +16,12 @@ ms.search.region: global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: a026eec379f98fd32080df50b5e114b423db34ad
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 2940d99243ac52ee0d56a1c4423c4f0250f42f57
+ms.sourcegitcommit: f38302b9430f2ab3efe91d0a7beff946bc610e8f
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2182813"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "3091778"
 ---
 # <a name="use-a-relative-path-in-data-bindings-of-er-models-and-formats"></a>Bruke en relativ bane i databindinger for ER-modeller og -formater
 

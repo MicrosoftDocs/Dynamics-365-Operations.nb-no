@@ -1,9 +1,9 @@
 ---
-title: Produktanbefalinger på salgssted
+title: Legge til produktanbefalinger i POS
 description: Dette emnet beskriver hvordan du bruker produktanbefalinger på en salgsstedsenhet (POS).
 author: bebeale
 manager: AnnBe
-ms.date: 10/01/19
+ms.date: 03/12/20
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -19,14 +19,14 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: bfb13904b774558907b29e74158b1e0a193e17cd
-ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
+ms.openlocfilehash: 48533596c5bdc73dd8c815166e7dde0ca2f3cb4d
+ms.sourcegitcommit: 1e7e7c4bc197b0a42e4d53d2a54600a2fb125b69
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "3057447"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "3127819"
 ---
-# <a name="product-recommendations-on-pos"></a>Produktanbefalinger i POS
+# <a name="add-product-recommendations-on-pos"></a>Legge til produktanbefalinger i POS
 
 [!include [banner](includes/banner.md)]
 
@@ -71,8 +71,24 @@ Gjør følgende for å konfigurere produktanbefalinger:
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 
-[Legge til en kontroll for anbefalinger på transaksjonsskjermen på salgsstedsenheter](add-recommendations-control-pos-screen.md)
+[Oversikt over produktanbefalinger](product-recommendations.md)
 
-[Oversikt over produktanbefalinger](../commerce/product-recommendations.md)
+[Aktivere ADLS i et Dynamics 365 Commerce-miljø](enable-adls-environment.md)
 
-[Aktiver produktanbefalinger](../commerce/enable-product-recommendations.md) 
+[Aktiver produktanbefalinger](enable-product-recommendations.md)
+
+[Aktivere personlige anbefalinger](personalized-recommendations.md)
+
+[Velge bort personlige anbefalinger](personalization-gdpr.md)
+
+[Legge til lister over anbefalinger på et e-handelsområde](add-reco-list-to-page.md)
+
+[Legge til anbefalinger på transaksjonsskjermen](add-recommendations-control-pos-screen.md)
+
+[Justere anbefalingsresultater for AI-ML](modify-product-recommendation-results.md)
+
+[Opprette kuraterte anbefalinger manuelt](create-editorial-recommendation-lists.md)
+
+[Opprette anbefalinger med demonstrasjonsdata](product-recommendations-demo-data.md)
+
+[Vanlige spørsmål om produktanbefalinger](faq-recommendations.md)
