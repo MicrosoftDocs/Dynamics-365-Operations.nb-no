@@ -16,16 +16,16 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: e29df3b42479a215b66354f8dfceea002a146e74
-ms.sourcegitcommit: 1bf6a8b2f872394a4f242f9ff13c67e8e1ae8f65
+ms.openlocfilehash: c8416f9a869b9144a63a6fb08c667cc32dec9854
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/03/2019
-ms.locfileid: "1856478"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3149717"
 ---
 # <a name="create-purchasing-policies"></a>Opprette innkjøpspolicyer
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Dette emnet viser hvordan du oppretter innkjøpspolicyer som er tilpasset forretningsprosessene for innkjøp. Før du kan opprette innkjøpspolicyer, må du definere parametere for innkjøpspolicy. Det er mulig å opprette, endre og avslutte en innkjøpspolicy, men du kan ikke slette en innkjøpspolicy. Denne fremgangsmåten utføres vanligvis av en innkjøpssjef. Du kan bruke denne fremgangsmåten i demonstrasjonsselskapet USMF eller ved hjelp av dine egne data.
 
@@ -44,7 +44,7 @@ Dette emnet viser hvordan du oppretter innkjøpspolicyer som er tilpasset forret
 1. Velg **Ny**.
 2. Skriv inn en verdi i **Navn**-feltet.
 3. Skriv inn en verdi i **Beskrivelse**-feltet.
-- Én enkelt innkjøpspolicy kan bare gjelde for ett organisasjonshierarki. Du kan for eksempel ha ett hierarki som kalles Geografisk og ett som kalles Avdeling, og har en forskjellig innkjøpspolicy for hver av dem.  
+- Én enkelt innkjøpspolicy kan bare gjelde for ett organisasjonshierarki. Du kan for eksempel ha ett hierarki som kalles Geografisk og ett som kalles Avdeling, og ha en forskjellig innkjøpspolicy for hver av dem.  
 - Velg en organisasjon som policyen skal gjelde for.  
 4. Velg pilen for å legge til den valgte organisasjonen.
 - Du kan gjenta denne prosessen for å legge til flere organisasjoner.  

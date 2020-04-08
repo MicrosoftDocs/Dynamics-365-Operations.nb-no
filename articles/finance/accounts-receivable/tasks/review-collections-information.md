@@ -16,16 +16,16 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: dd606461b9d7198bda12e297598fae0cbf8b39a7
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 9b5cc07c5dfb2444ff086c8b1f3bcc7634d8644d
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2188723"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3143344"
 ---
 # <a name="review-collections-information"></a>Gå gjennom innkrevingsinformasjon
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Dette emnet forklarer hvordan du går gjennom innkrevingsinformasjon og forskjellige oppsettsalternativer og innkrevingstransaksjoner. Denne fremgangsmåten bruker demonstrasjonsfirmaet USMF.
 

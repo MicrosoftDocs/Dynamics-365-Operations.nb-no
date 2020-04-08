@@ -15,16 +15,16 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 73f2c10d7462c4b52a2b36dd5f221593707d2f4f
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 5408fd883e91bbff465434ab23974f22bb0f07da
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2184675"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3143011"
 ---
 # <a name="modify-formats-by-reapplying-excel-templates"></a>Endre formater ved å bruke Excel-maler på nytt
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 For å fullføre trinnene i denne prosedyren må du først fullføre trinnene i prosedyren "ER Utforme en konfigurasjon for generering av rapporter i OPENXML-format".
 

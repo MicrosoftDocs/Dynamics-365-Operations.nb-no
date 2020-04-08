@@ -15,16 +15,16 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: debf66029d6efa42fe6d85eadb3866aadb312a97
-ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
+ms.openlocfilehash: 1ded87dcd553c0aa9c19ca273460f9adf0a4b542
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "3025834"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3148636"
 ---
 # <a name="look-up-applicable-prices-and-discounts"></a>Slå opp gjeldende priser og rabatter
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Denne fremgangsmåten viser hvordan du finner prisen og/eller rabatten for et produkt som for øyeblikket er gyldig for en bestemt kunde, uten å opprette en salgsordre. Fremgangsmåten hjelper deg med et konkret eksempel, og du må følge dette eksemplet ved hjelp av USMF-demofirmaet for å velge de nødvendige verdiene.
 

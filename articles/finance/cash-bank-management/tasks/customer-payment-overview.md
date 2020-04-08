@@ -16,16 +16,16 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 7777ba38e4bf41b17fae698200017b933fc9e876
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 9196bedcea26a0024b3eabbbcb9c58a0155a7490
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2188171"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3141678"
 ---
 # <a name="customer-payment-overview"></a>Oversikt over kundebetaling
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Denne oppgaveveiledningen hjelper deg med forskjellige metoder som brukes til å angi kundebetalinger. Denne oppgaven bruker demonstrasjonsfirmaet USMF.
 
@@ -45,7 +45,7 @@ Denne oppgaveveiledningen hjelper deg med forskjellige metoder som brukes til å
 14. I **Handlingsrute** klikker du på Linjer. Når du åpner Linjer, vises eventuelle betalinger du registrert på siden **Angi kundebetalinger** og lagret i journalen. Du kan også bruke denne siden til å angi nye kundebetalinger, eller redigere eksisterende kundebetalinger før de posteres.
 15. Klikk på **Ny** for å opprette en annen betaling. 
 16. Velg kunden som du har mottatt betalingen fra. Hvis du ikke kjenner til kunden, men kjenner en faktura betalt av betalingen, kan du bruke feltet Faktura til å manuelt angi eller velge fakturaen. Kunden angis som standard når fakturaen er valgt.  
-17. Klikk på **Utlign transaksjoner** hvis du vil merke fakturaene som ble betalt. Du trenger ikke å utligne betalingen mot noen fakturaer. Hvis dette er en forskuddsbetaling, eller hvis du ikke vet hvilken faktura som er betalt, kan du angi og postere betalingen. Betalingen kan utlignes mot en faktura på et senere tidspunkt.  
+17. Klikk **Utlign transaksjoner** hvis du vil merke fakturaene som ble betalt. Du trenger ikke å utligne betalingen mot noen fakturaer. Hvis dette er en forskuddsbetaling, eller hvis du ikke vet hvilken faktura som er betalt, kan du angi og postere betalingen. Betalingen kan utlignes mot en faktura på et senere tidspunkt.  
 18. Merk fakturaene som betalt av betalingen. 
 19. I **Beløp**-feltet angir du betalingsbeløpet som skal utlignes mot fakturaen.
 20. Klikk **OK**.

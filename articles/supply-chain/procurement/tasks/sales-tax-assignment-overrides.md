@@ -16,16 +16,16 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 40723d35c1914f6cec6aa361a6c38100d1667cb6
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: e8d7025db9dae57d04ee8b0f827cc13d659ad699
+ms.sourcegitcommit: 34e543e807ac8790597f522fe3b4f0266cf4ee56
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3003633"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "3161783"
 ---
 # <a name="sales-tax-assignment-and-overrides"></a> Mva-tilordning og overstyringer
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Denne fremgangsmåten beskriver hvordan du tilordner mva-grupper til handelskanaler. Den veileder deg også gjennom oppretting av en ny mva-overstyring og tilordning av den til en eksisterende mva-overstyringsgruppe. Denne prosedyren bruker firmaet USRT i demonstrasjonsdataene.
 

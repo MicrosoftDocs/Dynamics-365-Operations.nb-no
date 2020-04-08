@@ -19,20 +19,19 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: 269346d38eeb3812c352d16f9d50fbcd09307c12
-ms.sourcegitcommit: 1d5a4f70a931e78b06811add97c1962e8d93689b
+ms.openlocfilehash: 977b74b10b4549d09a8816264f9ff603fa86e91c
+ms.sourcegitcommit: 68f1485de7d64a6c9eba1088af63bd07992d972d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "3124595"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "3172837"
 ---
 # <a name="integrated-customer-master"></a>Integrert original for kunde
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [preview-banner](../../includes/preview-banner.md)]
 
-Det er vanlig at kundeposter mestres i mer enn ett program. Salgsaktivitet kan for eksempel hente inn kommersielle kundeposter gjennom et salgsprogram, og e-handel eller detaljsalg kan hente inn kundeposter gjennom et Finance and Operations-program. Uansett hvor kundeposten kommer fra, er den integrert bak kulissene på tvers av applikasjonsgrenser og infrastrukturforskjeller. Integrert kundemestring hjelper håndtere multi-Mastering scenarier og gir en omfattende visning av kunden til Dynamics 365-programpakken.
+Kundedata kan styres i mer enn ett Dynamics 365-program. En kundepost kan for eksempel komme fra salgsaktivitet i Dynamics 365 Sales (en modelldrevet app i Dynamics 365), eller en post kan komme gjennom detalj handelsaktivitet i Dynamics 365 Commerce (en Finance and Operations-app). Uansett hvor kundedataene kommer fra, er de integrert bak kulissene. Integrert original for kunde gir deg fleksibilitet til å styre kundedata i alle Dynamics 365-programmer, og gir en omfattende visning av kunden på tvers av Dynamics 365-programserien.
 
 ## <a name="customer-data-flow"></a>Kundedataflyt
 
@@ -59,7 +58,6 @@ Kundegrupper             | msdyn_customergroups            | Denne malen synkron
 Kundebetalingsmåte     | msdyn_customerpaymentmethods    | Denne malen synkroniserer informasjon om kundebetalingsmåte.
 Kunder V3                | kontoer                        | Denne malen synkroniserer kundens hoveddata for kommersielle og organisatoriske kunder.
 Kunder V3                | kontakter                        | Denne malen synkroniserer hoveddata for kunder for forbrukere og sluttbrukere.
-Fordelskort                | msdyn_loyaltycards              | Denne malen synkroniserer informasjon om fordelskort.
 Navnevedlegg                | msdyn_nameaffixes               | Denne malen synkroniserer referansedata for navnevedlegg, både for kunder og leverandører.
 Betalingsdagslinjer, CDS V2    | msdyn_paymentdaylines           | Denne malen synkroniserer referansedata om betalingsdagslinjer, både for kunder og leverandører.
 Betalingsdager, CDS            | msdyn_paymentdays               | Denne malen synkroniserer referansedata om betalingsdager, både for kunder og leverandører.
@@ -78,8 +76,6 @@ Betalingsbetingelser            | msdyn_paymentterms              | Denne malen 
 [!include [mapping customer accounts](includes/CustomersV3-accounts.md)]
 
 [!include [mapping customer contacts](includes/CustomersV3-contacts.md)]
-
-[!include [mapping loyalty card](includes/LoyaltyCard-msdyn-loyaltycards.md)]
 
 [!include [mapping name affixes](includes/NameAffixes-msdyn-nameaffixes.md)]
 

@@ -17,16 +17,16 @@ ms.search.industry: Manufacturing
 ms.author: conradv
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 315a82ce3502164fcf7813e866fb3dc1806d03d7
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: c01d988469ead4ab09d69b1cb6e2f9b417080c69
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1843967"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3149418"
 ---
 # <a name="add-an-existing-activity-to-a-production-flow-version"></a>Legge til en eksisterende aktivitet i en produksjonsflytversjon
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Når du oppretter nye versjoner av produksjonsflyter, kan du velge å legge til aktiviteter som er opprettet for eldre versjoner, til den nye versjonen. Denne fremgangsmåten viser hvordan en ny versjon opprettes for en eksisterende produksjonsflyt, uten å kopiere aktivitetene. I det neste trinnet legges en eksisterende aktivitet til den nye versjonen. 
 

@@ -16,16 +16,16 @@ ms.search.region: Global
 ms.author: vstehman
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 12bbeaa4e0e2f6ee4874cf72863624a871ba87ea
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: a5b539129e62b9b0b10df1f505cbfec5c1143138
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2175561"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3141632"
 ---
 # <a name="set-up-sales-tax-groups-and-item-sales-tax-groups"></a>Definere mva-grupper og mva-grupper for vare
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Denne oppgaveregistreringen leder deg gjennom oppsettet av merverdiavgift og mva-grupper for vare. Mva-grupper er grupper av mva-koder som er knyttet til kunder og leverandører. De er også knyttet til finanskontoer for transaksjoner som ikke er postert til en bestemt leverandør eller kunde.  Mva-grupper for vare er grupper av mva-koder som er knyttet til ressurser som produkter.  Merverdiavgiften som gjelder for en bestemt transaksjon, fastsettes av mva-kodene som er inkludert både i mva-gruppen og i mva-gruppen for vare for transaksjonen.  Merverdiavgift kan bare beregnes hvis en mva-gruppe og en mva-gruppe for vare er valgt for hver transaksjon det skal beregnes eller posteres merverdiavgift for.  
 
