@@ -3,7 +3,7 @@ title: Oppsett av parametere for kredittbehandling
 description: Dette emnet beskriver alternativene du kan bruke til å konfigurere kredittbehandling for å dekke bedriftens behov.
 author: mikefalkner
 manager: AnnBe
-ms.date: 09/04/2019
+ms.date: 03/19/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,22 +15,22 @@ ms.search.region: Global
 ms.author: mfalkner
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: ba0b047fe984f6bc164cbe137320d6bf6c13dafc
-ms.sourcegitcommit: 1d5a4f70a931e78b06811add97c1962e8d93689b
+ms.openlocfilehash: 6d4ced14e51dd28d51d2081d8e92891e31eea49d
+ms.sourcegitcommit: de5af1912201dd70aa85fdcad0b184c42405802e
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "3124191"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3154534"
 ---
 # <a name="credit-management-parameters-setup"></a>Oppsett av parametere for kredittbehandling
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet beskriver alternativene du kan bruke til å konfigurere kredittbehandling for å dekke bedriftens behov. Når du skal begynne å bruke funksjonene for kredittbehandling, definerer du parameterne på siden **Parametere for kredittbehandling** (**Kredittbehandling \> Oppsett \> Parametere for kredittbehandling**).
+Dette emnet beskriver alternativene du kan bruke til å konfigurere kredittbehandling for å dekke bedriftens behov. Når du skal bruke funksjonene for kredittbehandling, definerer du parameterne på siden **Parametere for kreditt og innkreving** (**Kreditt og innkreving \> Oppsett \> Parametere for kreditt og innkreving**).
 
 ## <a name="credit-parameters"></a>Kredittparametere
 
-Det finnes fire hurtigfaner der du kan endre parameterne som styrer kredittstyring: **Kredittsperrer**, **Kontrollpunkt for kredittbehandling**, **Statistikk for kredittbehandling** og **Kredittgrenser**. Følgende deler beskriver innstillingene som er tilgjengelige i hver hurtigfane.
+Det finnes fire hurtigfaner i **Kreditt**-delen der du kan endre parameterne som styrer kredittstyring: **Kredittsperrer**, **Kontrollpunkt for kredittbehandling**, **Statistikk for kredittbehandling** og **Kredittgrenser**. Følgende deler beskriver innstillingene som er tilgjengelige i hver hurtigfane.
 
 ### <a name="credit-holds"></a>Kredittsperrer
 

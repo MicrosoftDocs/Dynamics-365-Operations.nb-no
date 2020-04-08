@@ -16,16 +16,16 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 3e35dbc489608c0aa3bfb13db5ae237f854612b1
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 954bfe3972e46eac803681a5a09e85661999f1d6
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1844135"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3149671"
 ---
 # <a name="create-a-request-for-quotation"></a>Opprette en tilbudsforespørsel
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Denne fremgangsmåten viser hvordan du oppretter en tilbudsforespørsel. Dette gjøres vanligvis av en innkjøpsagent. Du kan bruke denne fremgangsmåten i demonstrasjonsselskapet USMF eller ved hjelp av dine egne data. Du må ha definert forespørselstyper før du starter. Når du har fullført denne oppgaven og du har opprettet og sendt en tilbudsforespørsel, kan du deretter angi svarene per leverandør, sammenligne dem og gi dem kontrakten.
 
@@ -46,7 +46,7 @@ Denne fremgangsmåten viser hvordan du oppretter en tilbudsforespørsel. Dette g
 
 ## <a name="add-lines"></a>Legg til linjer
 
-Når du har angitt den grunnleggende informasjonen om tilbudsforespørselen din, kan du angi varene eller tjenestene du vil at leverandører skal byr på. Varen er standard linjetype.
+Når du har angitt den grunnleggende informasjonen om tilbudsforespørselen din, kan du angi varene eller tjenestene du vil at leverandører skal by på. Varen er standard linjetype.
 
 1. Angi eller velg en verdi i **Varenummer**-feltet. Hvis du bruker USMF, kan du velge T0020.  
 2. Angi et tall i **Antall**-feltet.
@@ -68,7 +68,7 @@ Når du har angitt den grunnleggende informasjonen om tilbudsforespørselen din,
 
 ## <a name="send-the-rfq-to-vendors"></a>Sende tilbudsforespørselen til leverandører
 1. I **Handlingsrute** klikker du på **Send**. På siden Sender tilbudsforespørsel kontrollerer du at leverandørene i listen er de du vil skal motta tilbudsforespørselen.  
-2. Klikk **Skriv ut**. Denne dialogboksen lar deg skrive ut tilbudsforespørselen. Hvis du velger å skrive ut et svararket, defineres innholdet i dette i Innkjøp og leverandører-parametere. Hvis du vil velge hvordan du skriver ut svarark når du har åpnet dialogboksen Skriv, klikker du Avanserte utskriftsalternativer. Én tilbudsforespørsel skrives ut for hver leverandør, som inneholder linjene har statusen Opprettet eller Sendt. Annullerte linjer og linjer med registrerte svar, vil ikke bli skrevet ut.   
+2. Klikk **Skriv ut**. Denne dialogboksen lar deg skrive ut tilbudsforespørselen. Hvis du velger å skrive ut et svararket, defineres innholdet i dette i Innkjøp og leverandører-parametere. Hvis du vil velge hvordan du skriver ut svarark når du har åpnet dialogboksen Skriv ut, klikker du Avanserte utskriftsalternativer. Én tilbudsforespørsel skrives ut for hver leverandør, som inneholder linjene har statusen Opprettet eller Sendt. Annullerte linjer og linjer med registrerte svar, vil ikke bli skrevet ut.   
 3. Klikk på **Avbryt**.
 4. Klikk **OK**.
 5. Lukk siden.

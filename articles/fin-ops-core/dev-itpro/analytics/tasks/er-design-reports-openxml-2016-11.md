@@ -16,16 +16,16 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: fcceb0e4d5f3bec54598515da0a5cbd8d11def3d
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: ea5b17873dea4508230f39ffb41a50e2f427584f
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2769861"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3142138"
 ---
 # <a name="er-design-a-configuration-for-generating-reports-in-openxml-format-november-2016"></a>ER Utforme en konfigurasjon for generering av rapporter i OPENXML-format (november 2016)
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Det emnet forklarer hvordan en bruker i rollen Systemansvarlig eller Utvikler av elektronisk rapportering kan opprette en ny konfigurasjon for elektronisk rapportering (ER) som inneholder en mal for generering av elektroniske dokumenter i OPENXML-format. Denne konfigurasjonen vil bli brukt til å behandle leverandørbetalinger.
 
@@ -55,7 +55,7 @@ For å fullføre disse trinnene må du først fullføre trinnene i fremgangsmåt
 3. Velg **Opprett konfigurasjon** for å åpne nedtrekksdialogen.
 4. I **Ny**-feltet angir du `Format based on data model PaymentModel`. Opprett et format som er basert på PaymentModel-datamodellen.
 5. I **Navn**-feltet skriver du inn `Sample worksheet report`. Regnearkeksempelrapport  
-6. I **Beskrivelse**-feltet skriver du inn `Sample worksheet report for vendors’ payments`. Regnearkeksempelrapport for leverandørenes betalinger.  
+6. I **Beskrivelse**-feltet skriver du inn `Sample worksheet report for vendors' payments`. Regnearkeksempelrapport for leverandørenes betalinger.  
 7. Angi eller velg en verdi i feltet **Definisjon av datamodell**. Velg definisjonen **CustomerCreditTransferInitiation**.  
 8. Velg **Opprett konfigurasjon**.
 

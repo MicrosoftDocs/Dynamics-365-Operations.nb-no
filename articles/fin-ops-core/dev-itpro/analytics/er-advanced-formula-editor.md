@@ -3,7 +3,7 @@ title: Redigeringsprogram med avansert formel for elektronisk rapportering
 description: Dette emnet beskriver hvordan redigeringsprogrammet med avansert formel kan brukes til å konfigurere uttrykk i modellkartlegging av og formatkomponenter i elektronisk rapportering (ER).
 author: NickSelin
 manager: AnnBe
-ms.date: 01/22/2020
+ms.date: 03/17/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,18 +18,16 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-04-01
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: d183f77da1dda0c4f04e4e48ab3db0133f494a55
-ms.sourcegitcommit: 6a70f9ac296158edd065d52a12703b3ce85ce5ee
+ms.openlocfilehash: df402bc20753d2ba14295592f4b40e20f9fdc7bf
+ms.sourcegitcommit: b92c3e1b3403d0455fc4e0bf9132d6bc0d7aba5e
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3015333"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3138904"
 ---
 # <a name="electronic-reporting-advanced-formula-editor"></a>Redigeringsprogram med avansert formel for elektronisk rapportering
 
 [!include [banner](../includes/banner.md)]
-
-[!include [banner](../includes/preview-banner.md)]
 
 I tillegg til det [Elektronisk rapportering-basert](general-electronic-reporting.md) [formelredigeringsprogram](general-electronic-reporting-formula-designer.md) kan du bruke redigeringsprogrammet med avansert formel for elektronisk rapportering til å forbedre opplevelsen av konfigurering av uttrykk for elektronisk rapportering (ER). Det avanserte redigeringsprogrammet er nettleserbasert og drives av [Monaco-redigeringsprogrammet](https://microsoft.github.io/monaco-editor). De mest brukte avanserte redigeringsfunksjonene er beskrevet i dette emnet:
 
@@ -42,7 +40,7 @@ I tillegg til det [Elektronisk rapportering-basert](general-electronic-reporting
 - [Datainnliming](#DataPasting)
 - [Syntaksfargelegging](#SyntaxColorization)
 
-## <a name="ActivateAdvEditor">Aktivere redigeringsprogrammet med avansert formel</a>
+## <a name=""></a><a name="ActivateAdvEditor">Aktivere redigeringsprogrammet med avansert formel</a>
 
 Fullfør følgende trinn for å begynne å bruke redigeringsprogrammet med avansert formel i forekomsten av Microsoft Dynamics 365 Finance.
 
@@ -55,7 +53,7 @@ Fullfør følgende trinn for å begynne å bruke redigeringsprogrammet med avans
 > [!NOTE]
 > Vær oppmerksom på at denne parameteren er brukerspesifikk og selskapsspesifikk.
 
-## <a name="Autoformatting">Autoformatering av kode</a>
+## <a name=""></a><a name="Autoformatting">Autoformatering av kode</a>
 
 Når du skriver et sammensatt uttrykk som består av flere rader med kode, blir innrykket for en ny angitt linje automatisk basert på innrykket for den forrige raden. Du kan velge linjer og endre det tilhørende innrykket ved å skrive inn **Tab** eller **Shift+Tab**.
 
@@ -63,13 +61,13 @@ Når du skriver et sammensatt uttrykk som består av flere rader med kode, blir 
 
 Med autoformatering kan du holde hele uttrykket velformatert for å gjøre ytterligere vedlikehold enklere samt for å forenkle forståelsen av den konfigurerte logikken.
 
-## <a name="IntelliSense">IntelliSense</a>
+## <a name=""></a><a name="IntelliSense">IntelliSense</a>
 
 Redigeringsprogrammet kan fullføre ord for å hjelpe deg å skrive uttrykk raskere og unngå skrivefeil. Når du begynner å legge til ny tekst, tilbyr redigeringsprogrammet automatisk en liste med funksjoner som støttes i ER-funksjonene, som inneholder tegnene du har angitt. Du kan også utløse IntelliSense på et hvilket som helst sted i et konfigurert uttrykk ved å skrive inn **Ctrl+mellomrom**.
 
 [![ER-formelredigeringsprogram](./media/ER-AdvEditor-Intelisense.gif)](./media/ER-AdvEditor-Intelisense.gif)
 
-## <a name="CodeCompletion">Kodefullføring</a>
+## <a name=""></a><a name="CodeCompletion">Kodefullføring</a>
 
 Redigeringsprogrammet utfører automatisk kodefullføring ved å:
 
@@ -81,7 +79,7 @@ Redigeringsprogrammet utfører automatisk kodefullføring ved å:
 
 Når du peker til den innlagte parentesen, utheves det andre parentesen automatisk for å vise konstruksjonen de støtter.
 
-## <a name="CodeNavigation">Kodenavigering</a>
+## <a name=""></a><a name="CodeNavigation">Kodenavigering</a>
 
 Du kan finne påkrevde symboler eller linjer i uttrykket ved å skrive inn **Gå til**-kommandoen ved hjelp av kommandopaletten eller hurtigmenyen.
 
@@ -95,7 +93,7 @@ Hvis du for eksempel vil hoppe til linje **8**, gjør du følgende:
 
 [![ER-formelredigeringsprogram](./media/ER-AdvEditor-Goto.gif)](./media/ER-AdvEditor-Goto.gif)
 
-## <a name="CodeStructuring">Kodestrukturering</a>
+## <a name=""></a><a name="CodeStructuring">Kodestrukturering</a>
 
 Koden for enkelte funksjoner, for eksempel [IF](er-functions-logical-if.md) eller [CASE](er-functions-logical-case.md), struktureres automatisk. Du kan utvide og skjule alle ønskede foldeområder av denne koden for å redusere den redigerbare delen av et uttrykk, for å fokusere bare på delen som krever din oppmerksomhet. Fold / Opphev folding-kommandoene kan brukes til det.
 
@@ -117,7 +115,7 @@ Hvis du vil oppheve folding av alle områder, gjør du følgende:
 
 [![ER-formelredigeringsprogram](./media/ER-AdvEditor-ToggleFold.gif)](./media/ER-AdvEditor-ToggleFold.gif)
 
-## <a name="FindAndReplace">Søk og erstatt</a>
+## <a name=""></a><a name="FindAndReplace">Søk og erstatt</a>
 
 Hvis du vil søke etter forekomster av bestemt tekst, velger du teksten i uttrykket og gjør følgende:
 
@@ -145,13 +143,13 @@ Hvis du vil endre alle forekomster av en bestemt tekst, velger du teksten i uttr
 
 [![ER-formelredigeringsprogram](./media/ER-AdvEditor-Find.gif)](./media/ER-AdvEditor-Find.gif)
 
-## <a name="DataPasting">Innliming av datakilder og funksjoner</a>
+## <a name=""></a><a name="DataPasting">Innliming av datakilder og funksjoner</a>
 
 Du kan velge **Legg til datakilde**, som utfører innliming til det gjeldende uttrykket av en datakilde som er valgt på venstre **Datakilde** i-panel. Tilsvarende kan du velge **Legg til funksjonen**, som utfører innliming til det gjeldende uttrykket av en funksjon som er valgt på høyre **Funksjoner**-panel. Hvis du bruker ER-formelredigeringsprogrammet, vil en valgt funksjon eller en valgt datakilde alltid bli limt inn på slutten av det konfigurerte uttrykket. Når du bruker ER-redigeringsprogrammet med avansert formel kan en valgt funksjon eller en valgt datakilde limes inn til en hvilken som helst del av det konfigurerte uttrykket. Du må bruke markøren for å angi hvor du vil lime inn dataene.
 
 [![ER-formelredigeringsprogram](./media/ER-AdvEditor-PasteValue.gif)](./media/ER-AdvEditor-PasteValue.gif)
 
-## <a name="SyntaxColorization">Syntaksfargelegging</a>
+## <a name=""></a><a name="SyntaxColorization">Syntaksfargelegging</a>
 
 Forskjellige farger brukes for øyeblikket til å utheve følgende deler av uttrykk:
 

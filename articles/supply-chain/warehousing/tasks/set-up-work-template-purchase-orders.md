@@ -17,16 +17,16 @@ ms.search.industry: Distribution
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 227a6865df826caf8ce154f9c44ebe082acd76a5
-ms.sourcegitcommit: cbcf344b3b552acca56c3e27606eac7f2f124afe
+ms.openlocfilehash: 473bb133159bb6cdcbbd30ab2c8452eb69f8cfaf
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/22/2019
-ms.locfileid: "1916748"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3148207"
 ---
 # <a name="set-up-a-work-template-for-purchase-orders"></a>Definere en arbeidsmal for bestillinger
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Dette emnet beskriver hvordan du definerer en enkel arbeidsmal som skal brukes når du plasserer mottatte varer. Arbeidsmaler bestemmer settet med instruksjoner som presenteres for lagermedarbeideren på en mobil enhet når de flytter varer fra mottaksområdet. Du kan bruke denne fremgangsmåten med data som er nevnt i demonstrasjonsdataselskapet USMF. Før du starter denne veiledningen kan du opprette en arbeidspulje-ID. I dette eksemplet brukes en arbeidpulje-ID kalt Innkommende. Denne fremgangsmåten er ment for lagersjef.
 

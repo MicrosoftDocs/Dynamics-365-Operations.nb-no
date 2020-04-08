@@ -1,6 +1,6 @@
 ---
-title: Definere avskrivningstablå (mai 2016)
-description: Denne oppgaveveiledningen oppretter et nytt avskrivningstablå og knytter den til en anleggsmiddelgruppe.
+title: Definere avskrivningstablåer
+description: Denne fremgangsmåten går gjennom prosessen med å opprette et nytt avskrivningstablå og knytte det til en anleggsmiddelgruppe.
 author: saraschi2
 manager: AnnBe
 ms.date: 08/29/2018
@@ -16,19 +16,18 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 6840e211847494598a81cd3228dbd3796447e18c
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 03f915fa91e0eeff2f26ab9a60bbd5118317e853
+ms.sourcegitcommit: de5af1912201dd70aa85fdcad0b184c42405802e
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2186906"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3154609"
 ---
-# <a name="set-up-depreciation-books-may-2016"></a>Definere avskrivningstablå (mai 2016)
+# <a name="set-up-depreciation-books"></a>Definere avskrivningstablåer 
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
-Denne oppgaveveiledningen oppretter et nytt avskrivningstablå og knytter den til en anleggsmiddelgruppe.  Den bruker regnskapsførerrollen og demodataene for den juridiske enheten USMF.
-
+Denne fremgangsmåten går gjennom prosessen med å opprette et nytt avskrivningstablå og knytte det til en anleggsmiddelgruppe. 
 
 ## <a name="create-a-depreciation-book"></a>Opprette et avskrivningstablå
 1. Gå til Anleggsmidler > Oppsett > Avskrivningstablåer.

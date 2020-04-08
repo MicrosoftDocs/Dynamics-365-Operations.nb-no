@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: f982f3c3b2703a71e6c8a1a0d1be15fb260a6ef1
-ms.sourcegitcommit: f38302b9430f2ab3efe91d0a7beff946bc610e8f
+ms.openlocfilehash: 4f2fd2b7bf9f09a61d07e1bc35ad48fe2c5d7383
+ms.sourcegitcommit: c69926b4285cb2ec2d9ce1ad72d1cb852024dd5e
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "3092252"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3138365"
 ---
 # <a name="provision-human-resources"></a>Klargjøre Human Resources
 
@@ -56,7 +56,7 @@ Når du har opprettet et LCS-prosjekt, kan du klargjøre Human Resources i et mi
 2. Angi om dette er en Sandkasse- eller Produksjon-forekomst av Human Resources. Tidlig forhåndsvisning-funksjonene kan være tilgjengelige i Sandbox-forekomstene for å tillate tidlig tilbakemelding og testing.
    
     > [!NOTE]
-    > Forekomsttypen Talent kan ikke endres når den er angitt. Kontroller at du har valgt riktig forekomsttype før du fortsetter.</br></br>
+    > Forekomsttypen Human Resources kan ikke endres når den er angitt. Kontroller at du har valgt riktig forekomsttype før du fortsetter.</br></br>
     > Forekomsttypen Human Resources er atskilt fra forekomsttypen i Microsoft Power Apps-miljøet, som du angir i Power Apps-administrasjonssenteret.
     
 3. Velg alternativet **Omfatter demodata** hvis du vil at ditt miljø skal ta med samme demodatasett brukt i testversjonen av Human Resources. Dette er nyttig for langsiktig demo eller opplæring miljøer, og bør aldri brukes for produksjonsmiljøer.  Vær oppmerksom på at du må velge dette alternativet ved innledende distribusjon. Du kan ikke oppdatere en eksisterende distribusjon senere.
@@ -74,7 +74,7 @@ Når du har opprettet et LCS-prosjekt, kan du klargjøre Human Resources i et mi
     > [!NOTE]
     > Hvis du ennå ikke har godkjent for de endelige kravene, kan du distribuere en testforekomst av Human Resources i prosjektet. Du kan deretter bruke denne forekomsten til å teste løsningen til du godkjenner. Hvis du bruker det nye miljøet for testing, må du gjenta denne fremgangsmåten for å opprette et produksjonsmiljø.
 
-    > Siden bare to LCS-miljøer er tillatt som en del av Human Resources-abonnementet, kan du vurdere et gratis 60-dagers [Human Resources-prøvemiljø](https://dynamics.microsoft.com/talent/overview/). Selv om et prøvemiljø eies av brukeren som ba om det, kan andre brukere inviteres gjennom systemadministrasjonsopplevelsen for Human Resources. Prøvemiljøer inneholder fiktive data som kan brukes til å utforske programmet på en sikker måte. De er ikke ment å brukes som produksjonsmiljøer. Merk at når prøvemiljøet utløper etter 60 dager, slettes alle dataene i miljøet og de kan ikke gjenopprettes. Du kan registrere deg for et nytt prøvemiljø etter det eksisterende miljøet er utløpt.
+    > Du kan vurdere å utnytte et gratis 60-dagers [Human Resources-prøvemiljø](https://dynamics.microsoft.com/talent/overview/). Selv om et prøvemiljø eies av brukeren som ba om det, kan andre brukere inviteres gjennom systemadministrasjonsopplevelsen for Human Resources. Prøvemiljøer inneholder fiktive data som kan brukes til å utforske programmet på en sikker måte. De er ikke ment å brukes som produksjonsmiljøer. Merk at når prøvemiljøet utløper etter 60 dager, slettes alle dataene i miljøet og de kan ikke gjenopprettes. Du kan registrere deg for et nytt prøvemiljø etter det eksisterende miljøet er utløpt.
 
 ## <a name="select-a-power-apps-environment"></a>Velg et Power Apps-miljø
 
@@ -97,7 +97,10 @@ Bruk følgende retningslinjer når du skal avgjøre hvilket Power Apps-miljø Hu
     - **Testmiljøer** – Disse miljøene opprettes med en utløpsdato og utløper etter dette tidspunktet, noe som fører til at miljøet og eventuelle Human Resources-forekomster i miljøet fjernes automatisk.
    
     - **Områder som ikke støttes** – Human Resources støttes for øyeblikket bare i følgende områder: USA, Europa, Storbritannia, Australia, Canada og Asia.
-  
+
+    > [!NOTE]
+    > Human Resources-miljøet klargjøres i samme område som Power Apps-miljøet klargjøres i. Overføring av et Human Resources-miljø til en annen region støttes ikke.
+
 6. Når du har valgt det riktige miljøet som skal brukes, kan du fortsette med klargjøringsprosessen. 
  
 ## <a name="grant-access-to-the-environment"></a>Gi tilgang til miljøet

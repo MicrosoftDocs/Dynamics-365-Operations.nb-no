@@ -3,7 +3,7 @@ title: Legge til anbefalinger på transaksjonsskjermen
 description: Dette emnet beskriver hvordan du legger til en kontroll for anbefalinger på transaksjonsskjermbildet på en salgsstedsenhet ved hjelp av utforming av skjermoppsett i Microsoft Dynamics 365 Commerce.
 author: bebeale
 manager: AnnBe
-ms.date: 03/12/20
+ms.date: 03/19/20
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 9117f398ee1d9edbd3aee9bed366eea225964184
-ms.sourcegitcommit: 1e7e7c4bc197b0a42e4d53d2a54600a2fb125b69
+ms.openlocfilehash: a39389da0908953cbbc161f07d067ce3fc569a1b
+ms.sourcegitcommit: de5af1912201dd70aa85fdcad0b184c42405802e
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "3127681"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3154138"
 ---
 # <a name="add-recommendations-to-the-transaction-screen"></a>Legge til anbefalinger på transaksjonsskjermen
 
@@ -107,8 +107,6 @@ Det finnes to tilgjengelige konfigurasjonsalternativer. Velg alternativet som pa
 [Aktivere personlige anbefalinger](personalized-recommendations.md)
 
 [Velge bort personlige anbefalinger](personalization-gdpr.md)
-
-[Legge til lister over anbefalinger på et e-handelsområde](add-reco-list-to-page.md)
 
 [Legge til produktanbefalinger i POS](product.md)
 

@@ -16,16 +16,16 @@ ms.search.region: Global
 ms.author: fdahl
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 3c54f7a9800bb0fcfb23f0c6c4d16f48bee8c28d
-ms.sourcegitcommit: a368682f9cf3897347d155f1a2d4b33e555cc2c4
+ms.openlocfilehash: c391a29e72b004cf4f7f998de5a74cf5ec1ac520
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/08/2019
-ms.locfileid: "1867131"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3149740"
 ---
 # <a name="create-a-purchase-order"></a>Opprette en bestilling
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Dette emnet viser hvordan du oppretter en bestilling manuelt. Det er mer vanlig at bestillinger opprettes automatisk som et resultat av hovedplanleggingen, direkte levering og andre prosesser. Bestillinger opprettes vanligvis av en innkjøpsagent. Dette eksemplet kan brukes i USMF-demodatafirmaet med verdiene som blir foreslått i notatene for de forskjellige trinnene.
 
@@ -57,7 +57,7 @@ Dette emnet viser hvordan du oppretter en bestilling manuelt. Det er mer vanlig 
 
     - Velg antallet du vil kjøpe inn. **Antall**-feltet fylles ut automatisk med minimum ordreantall for produktet hvis dette er definert, eller med verdien 1.  
     - **Enhet**-feltet angir måleenheten for det bestilte antallet. Vanligvis angis enheten automatisk fra innkjøpsenheten på hoveddata for produktet, men du kan endre dette.  
-    - **Enhetspris**-feltet inneholder vanligvis en verdi fra en kjøpsavtale eller en forretningsavtale. Det er mulig å endre enhetsprisen på enkelte ordrelinjene, for eksempel hvis en unik pris forhandles med leverandøren.  
+    - **Enhetspris**-feltet inneholder vanligvis en verdi fra en kjøpsavtale eller en forretningsavtale. Det er mulig å endre enhetsprisen på enkelte ordrelinjer, for eksempel hvis en unik pris forhandles med leverandøren.  
     - **Rabatt**-feltet representerer et rabattbeløp per enhet. Denne rabatten reduserer derfor enhetsprisen med rabatten. Denne rabatten angis vanligvis automatisk fra innkjøpsavtaler eller forretningsavtaler, men det er mulig å overstyre på de enkelte linjene hvis unike rabatter er forhandlet med leverandøren.  
     - Det kan angis en rabattprosent som reduserer nettobeløpet for linjen i henhold til dette. Rabattprosenten angis ofte automatisk fra innkjøpsavtaler eller forretningsavtaler, men det er mulig å overstyre på de enkelte linjene hvis en unik rabattprosent er forhandlet med leverandøren.  
     - Verdien i feltet **Nettobeløp** beregnes fra andre felt på linjen, inkludert antall, enhetspris, rabatt og rabattprosent. Det er mulig å endre nettobeløpet, men da vil feltene **Enhetspris**, **Rabatt** og **Rabattprosent** være tomme, og når du posterer mot linjen, vil det posterte beløpet være proporsjonalt med nettobeløpet. Feltet **Nettobeløp** brukes vanligvis bare til å vise nettobeløpet for linjen.  

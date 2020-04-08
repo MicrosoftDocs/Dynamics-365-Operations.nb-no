@@ -15,16 +15,16 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5684c710b8e167a4a39f106eb3c0fd77e3011dbd
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 02c87d25db447c82fd00042a37c040c52fa366a9
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2187849"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3144452"
 ---
 # <a name="create-an-organization-report-hierarchy"></a>Opprette et hierarki for organisasjonsrapport
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Bruk denne fremgangsmåten til å opprette en rapport hierarki for rapportering av organisasjonen. Formålet med denne registreringen er å føre deg gjennom dimensjonshierarkiet slik at du kan fortsette til hele organisasjonen rapporteringsstrukturen er opprettet. Denne registreringen bruker USP2-demodatafirmaet.
 

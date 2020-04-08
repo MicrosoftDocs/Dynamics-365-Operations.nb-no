@@ -16,16 +16,16 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: a7168d13ef0b24d06aa28fbbc22bbb4e6093df24
-ms.sourcegitcommit: 58db26b7edf02e7c33aaaf1c934e3263aa74b01f
+ms.openlocfilehash: 16e11be633cdffbc8ee3e206eb42e7e1a2f72b9c
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "1994916"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3146451"
 ---
 # <a name="manage-order-holds"></a>Behandle ordresperrer
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Denne fremgangsmåten forklarer hvordan du plasserer salgsordrer for kunden på vent, hvordan du arbeider med ordresperreutsjekkinger og fjerner ordresperrer. En ordre kan settes på vent av en rekke ulike årsaker. Du kan for eksempel sperre en ordre til kundens adresse eller betalingsmetode kan bekreftes, eller til en leder kan gå gjennom kundens kredittgrense. Mens ordren er på vent, kan den ikke behandles av lageret for forsendelse. 
 

@@ -16,16 +16,16 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: adb2300e51f8b5383eee4dea0dffe4129dc8a536
-ms.sourcegitcommit: 4d77d06a07ec9e7a3fcbd508afdffaa406fd3dd8
+ms.openlocfilehash: ae45dc0ed5332242a12efbb7f8ca37f97a244cce
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "2934823"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3147992"
 ---
 # <a name="add-variant-products-to-purchase-orders-using-variant-weights"></a>Legge til variantprodukter i bestillinger ved hjelp av variantvekt
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Denne prosedyren hjelper deg gjennom trinnene med å bruke variantvekter for å fylle ut bestillingslinjer automatisk for hver variant av et produkt. Når du velger antallet for produktet du vil kjøpe, opprettes bestillingslinjer for alle variantene av produktet med foreslåtte antall basert på vekten som er konfigurert for produktvariantene. Denne prosedyren inkluderer ikke trinn for å konfigurere vektverdier for produktdimensjoner og produktvarianter. Denne prosedyren bruker firmaet USRT i demonstrasjonsdataene.
 

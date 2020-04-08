@@ -15,16 +15,16 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 3084882dd4b51f067793b3a7999ce89cda1257d9
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 0912b620fc70f8ed33e336da9ecefacd1f4e376e
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2184606"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3143183"
 ---
 # <a name="use-model-mapping-configurations-for-aggregate-calculations-at-the-database-level"></a>Bruke konfigurasjoner for modelltilordning for aggregerte beregninger på databasenivået
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Denne fremgangsmåten gir informasjon om hvordan du utformer en ny konfigurasjon for ER-modelltilordning (elektronisk rapportering) og bruker innebygde ER-funksjoner for effektive aggregerte beregninger. I denne prosedyren skal du opprette en konfigurasjon for eksempelfirmaet Litware, Inc. 
 
@@ -103,7 +103,7 @@ Denne fremgangsmåten er opprettet for brukere med rollen som Systemansvarlig el
 55. Klikk Bind.
 56. Utvid TransactionsGroups i treet.
 57. Velg TransactionsGroups i treet.
-58. Klikk Rediger.
+58. Klikk Rediger
 59. Klikk Rediger gruppe etter.
     * Legg merke til at "Utførelse på"-feltet angir at denne grupperingen vil bli utført under kjøring i minnet fordi begge aggregeringene for det samme feltet er bundet til datamodellelementene.   
 60. Merk eller fjern merking for alle rader i listen.

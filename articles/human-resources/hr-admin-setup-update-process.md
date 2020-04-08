@@ -3,7 +3,7 @@ title: Oppdatere prosess
 description: Microsoft Dynamics 365 Human Resources er ekte programvare som tjeneste (SaaS) som gir kontinuerlige, berøringsfrie serviceoppdateringer for program- og plattformendringer.
 author: andreabichsel
 manager: AnnBe
-ms.date: 02/03/2020
+ms.date: 02/27/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -16,14 +16,14 @@ ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
 ms.author: anbichse
-ms.search.validFrom: 2020-02-03
+ms.search.validFrom: 2020-02-27
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 267682f4497bacf70f93840a948d0e525dfa4aa1
-ms.sourcegitcommit: f38302b9430f2ab3efe91d0a7beff946bc610e8f
+ms.openlocfilehash: 424027e82717b8636d59289b28978d6ce3c6db4d
+ms.sourcegitcommit: de5af1912201dd70aa85fdcad0b184c42405802e
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "3092207"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3154511"
 ---
 # <a name="update-process"></a>Oppdatere prosess
 
@@ -37,52 +37,39 @@ Oppdateringer utgis regelmessig for alle miljøer. Human Resources støttes i he
 
 Human Resources-oppdateringer brukes for alle miljøer automatisk. Human Resources har to typer lanseringer:
 
-- **Serviceoppdateringer**: ukentlige oppdateringer som inneholder feilrettinger og nye funksjoner. Serviceoppdateringer omfatter også aktuelle plattformoppdateringer når de frigis. For en oversikt over når plattformoppdateringer frigis, se [Tabell 3: Plattformutgaver](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/migration-upgrade/versions-update-policy#table-3-platform-releases). Ukentlige oppdateringer frigir vanligvis på onsdager. Hvis du vil ha mer informasjon om ukentlige oppdateringer, kan du se [Hva er nytt eller endret i Dynamics 365 Human Resources](https://docs.microsoft.com/dynamics365/talent/whats-new).
+- **Serviceoppdateringer**: Oppdateringer skjer annenhver uke som inneholder feilrettinger og nye funksjoner. Serviceoppdateringer omfatter også aktuelle plattformoppdateringer når de frigis. For en oversikt over når plattformoppdateringer frigis, se [Tabell 3: Plattformutgaver](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/migration-upgrade/versions-update-policy#table-3-platform-releases). oppdateringer annenhver uke har en trinnvis, global distribusjon på tvers av områder. Hvis du vil ha mer informasjon om oppdateringer annenhver uke, kan du se [Hva er nytt eller endret i Dynamics 365 Human Resources](hr-admin-whats-new.md).
 
-    Alle støttede datasentre oppdateres ukentlig med mindre annet er angitt. Ukentlige oppdateringer begynner vanligvis på onsdager og fullføres søndager. USA, Australia, Europa, Storbritannia, Asia og Canada er inkludert i ukentlige oppdateringer. 
+    Alle støttede datasentre oppdateres annenhver uke med mindre annet er angitt. USA, Australia, Europa, Storbritannia, Asia og Canada er inkludert i oppdateringer annenhver uke. 
 
-- **Common Data Service-løsningsoppdateringer**: Disse oppdateringene inntreffer omtrent hver sjette uke etter behov. De inneholder nye enheter og endringer i eksisterende enheter i Common Data Service. Disse oppdateringene utgis i de samme regionene som de ukentlige oppdateringene, og de tar omtrent seks uker på å replisere gjennom alle datasentre. Løsningsoppdateringer kan være rettet inn mot ukentlige serviceoppdateringer.
-
-Følgende tabell viser et eksempel på en tidsplan:
-
-| Uke | Oppdateringstype |
-| --- | --- |
-| 1 | Serviceoppdatering (alle områder) |
-| 2 | Serviceoppdatering (alle områder) + løsningsoppdatering (områder i uke 1) |
-| 3 | Serviceoppdatering (alle områder) + løsningsoppdatering (områder i uke 2) |
-| 4 | Serviceoppdatering (alle områder) + løsningsoppdatering (områder i uke 3) |
-| 5 | Serviceoppdatering (alle områder) + løsningsoppdatering (områder i uke 4) |
-| 6 | Serviceoppdatering (alle områder) + løsningsoppdatering (områder i uke 5) |
-| 7 | Serviceoppdatering (alle områder) + løsningsoppdatering (områder i uke 6) |
-| 8 | Serviceoppdatering (alle områder) |
+- **Common Data Service-løsningsoppdateringer**: Disse oppdateringene inntreffer omtrent hver sjette uke etter behov. De inneholder nye enheter og endringer i eksisterende enheter i Common Data Service. Disse oppdateringene utgis i de samme regionene som oppdateringene annenhver uke, og de tar omtrent seks uker på å replisere gjennom alle datasentre. Løsningsoppdateringer kan være rettet inn mot serviceoppdateringer annenhver uke.
 
 > [!NOTE]
 > Løsningsoppdateringer er tilgjengelige på alle datasentrene når de er frigitt. Hvis du ikke vil vente på at oppdateringene skal replikeres automatisk, kan du bruke disse oppdateringene manuelt på alle miljøer i alle datasentre.
 
 Når det er nødvendig, tilbyr Human Resources også følgende typer korrigeringer:
 
-- **Revisjon (hurti reparasjon**): feilrettinger som kan forekomme sammen med eller utenfor en ukentlig serviceoppdatering
+- **Revisjon (hurtigreparasjon**): Feilrettinger som kan forekomme sammen med eller utenfor en serviceoppdatering annenhver uke
 
-- **Nødreparasjon**: proaktive og reaktive hurtigreparasjoner som er frittstående av natur, kan inkludere endringer bare i konfigurasjon eller kodeendringer for å løse problemer på områder direkte, og kan forekomme i stedet for en ukentlig serviceoppdatering
+- **Nødreparasjon**: Proaktive og reaktive hurtigreparasjoner som er frittstående av natur, kan inkludere endringer bare i konfigurasjon eller kodeendringer for å løse problemer på områder direkte, og kan forekomme i stedet for en serviceoppdatering annenhver uke
 
 Versjoner er gjennomgått, testet og godkjent i et internt miljø. Etter at buildene er godkjent, distribueres de deretter til produksjon.
 
-## <a name="exceptions-in-2019"></a>Unntak i 2019
+## <a name="release-cadence-exceptions-in-2020"></a>Unntak fra lanseringsfrekvens i 2020
 
 Følgende datoer er unntak fra den vanlige utgivelsesplanen:
 
-| Dato | Beskrivelse |
+| Dato | beskrivelse |
 | --- | --- |
-| Uken fra 25. november | Ingen oppdateringer |
-| Uken fra 16. desember | Bare mindre oppdateringer |
-| Uken fra 23. desember | Ingen oppdateringer |
-| Uken fra 30. desember | Ingen oppdateringer |
+| Uken fra 23. november | Ingen oppdateringer |
+| Uken fra 14. desember | Bare mindre oppdateringer |
+| Uken fra 21. desember | Ingen oppdateringer |
+| Uken fra 28. desember | Ingen oppdateringer |
 
 ## <a name="communications"></a>Kommunikasjoner
 
 Du kan finne ut hva vi arbeider med for Human Resources, og hva vi har utgitt på følgende steder:
 
-- [Dynamics 365 Human Resources-veikart](https://dynamics.microsoft.com/roadmap/talent/)
+- [Dynamics 365 Human Resources-veikart](https://dynamics.microsoft.com/roadmap/human-resources/)
 
 - [Lanseringsplaner for Dynamics 365](https://docs.microsoft.com/dynamics365/release-plans/)
 
@@ -114,7 +101,7 @@ Når du tester forhåndsversjoner av funksjoner eller prøver nye funksjoner, ka
 
 ## <a name="see-also"></a>Se også
 
-- [Lanseringsplaner for Dynamics 365 og Power Platform](https://docs.microsoft.com/dynamics365/release-plans)
-- [Hva er nytt eller endret i Dynamics 365 Human Resource](hr-admin-whats-new.md)
-- [Policy for programvarelivssyklus](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/migration-upgrade/versions-update-policy)
+[Lanseringsplaner for Dynamics 365 og Power Platform](https://docs.microsoft.com/dynamics365/release-plans)</br>
+[Hva er nytt eller endret i Dynamics 365 Human Resource](hr-admin-whats-new.md)</br>
+[Policy for programvarelivssyklus](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/migration-upgrade/versions-update-policy)
 

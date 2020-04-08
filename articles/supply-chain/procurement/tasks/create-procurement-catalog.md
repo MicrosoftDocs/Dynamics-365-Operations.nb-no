@@ -16,22 +16,22 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 55bc7479ca9ba3ca86e23b5bee106ef169c40077
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 94d5c3f6677ec10ea1b9ac3c488c3b8d7dc6856f
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1836400"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3147486"
 ---
 # <a name="create-a-procurement-catalog"></a>Opprette en innkjøpskatalog
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Dette emnet forklarer hvordan du oppretter en innkjøpskatalog. Denne oppgaven vil vanligvis utføres av en innkjøpsansvarlig. Du lærer også hvordan ansatte kan bruke katalogen når de oppretter en rekvisisjon. Før du kan opprette en katalog, må det være et innkjøpskategorihierarki i systemet. Hierarkiet arves av den nye katalogen, sammen med alle produktene som er i hierarkiet. Du kan bruke denne veiledningen i demonstrasjonsdatafirmaet USMF, der innkjøpskategorihierarkiet er tilgjengelig, i tillegg til eksemplene som brukes i fremgangsmåten.
 
 
 ## <a name="ensure-that-a-procurement-category-hierarchy-exists"></a>Kontrollere at det finnes et innkjøpskategorihierarki
-1. Gå til **navigasjonsruten > Moduler > Innkjøp og leverandører > Innkjøpskategorier**. Et innkjøpskategorihierarki er tilgjengelig i demonstrasjonsdatafirmaet USMF, og produktene er lagt til kategorien **Kontormaskiner/datamaskiner**. Hvis du kjører denne prosedyren som en oppgaveveiledning, må du låse opp i veiledningen hvis du vil bla gjennom kategorien. Hvis et hierarki ikke er tilgjengelig, kan du opprette det ved å klikke **Ny**. Dette kan bare gjøre én gang.  
+1. Gå til **navigasjonsruten > Moduler > Innkjøp og leverandører > Innkjøpskategorier**. Et innkjøpskategorihierarki er tilgjengelig i demonstrasjonsdatafirmaet USMF, og produktene er lagt til kategorien **Kontormaskiner/datamaskiner**. Hvis du kjører denne prosedyren som en oppgaveveiledning, må du låse opp veiledningen hvis du vil bla gjennom kategorien. Hvis et hierarki ikke er tilgjengelig, kan du opprette det ved å klikke **Ny**. Dette kan bare gjøre én gang.  
 2. Lukk siden.
 
 ## <a name="create-a-catalog"></a>Opprette en katalog

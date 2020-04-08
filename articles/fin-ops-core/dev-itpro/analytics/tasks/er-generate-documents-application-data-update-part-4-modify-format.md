@@ -15,16 +15,16 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bbed62c80c14e7cfe96d38d43a5db39b0469d939
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 6132d48f276b27797e86fbcde11746b7e4da7d3b
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2184928"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3142461"
 ---
 # <a name="modify-formats-to-generate-documents-that-have-application-data"></a>Endre formater for å generere dokumenter med programdata
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 For å fullføre trinnene i denne fremgangsmåten, må du først fullføre prosedyren "ER generere dokumenter med oppdatering av programdata (del 3: endre modell og tilordning)".
 
@@ -105,7 +105,7 @@ Trinnene i denne fremgangsmåten forklarer hvordan du utformer elektronisk rappo
     * Denne tilknytningen definerer hvordan detaljene for Intrastat-rapporten samles i datamodellen, strukturen som er angitt av valgte rotelementet "For oppdatering av programdata". Disse opplysningene, tilordningen modellen med samme rotelementet "For oppdatering av programdata" og retningen "til mål' vil bli brukt for oppdateringen av programdata. Programdataene oppdatering starter umiddelbart etter at utgående Intrastat-rapporten genereres. Legg merke til at programdataene oppdatere kan du hoppe over under kjøring, men datamodellen må være tom (som inneholder listen over tomme oppføringer).   
 6. Klikk Utforming.
     * Legg merke til at formatet for utgående Intrastat-rapporten legges til som standard som en datakilde for tilordning av denne modellen.  
-    * Bind elementene i rapporten utformet (presentert som en datakilde) elementer i datamodellen, som er filtrert basert på den valgte modellen rotelementet.  
+    * Bind elementene i den utformede rapporten (presentert som en datakilde) til elementer i datamodellen, som er filtrert basert på den valgte modellens rotelement.  
 7. Utvid "Arkivhode" i treet.
 8. Utvid 'Arkivhode\Arkivlinjer' i treet.
 9. Utvid 'format' i treet.

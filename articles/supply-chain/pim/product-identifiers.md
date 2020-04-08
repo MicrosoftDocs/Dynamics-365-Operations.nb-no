@@ -3,7 +3,7 @@ title: Produktidentifikatorer
 description: Dette emnet gir informasjon om de ulike typene av produktidentifikatorer og forklarer hvordan du kan legge til produktidentifikatorer i produktdataene.
 author: cvocph
 manager: AnnBe
-ms.date: 01/06/2020
+ms.date: 03/27/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,14 +19,14 @@ ms.search.industry: ''
 ms.author: conradv
 ms.dyn365.ops.version: 7.2999999999999998
 ms.search.validFrom: 2017-12-31
-ms.openlocfilehash: adac308a17ac51ed6da28d04d8c69b01f579aab7
-ms.sourcegitcommit: 7789ef6b0d337bee6aa05110c40e002f02eec71b
+ms.openlocfilehash: 0aa8baf5802ccdd9a502e2a7d291a76fc4afe932
+ms.sourcegitcommit: d91d96c98b31ae59bc82ec91efbb7da86ffb25fa
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/03/2020
-ms.locfileid: "3095623"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "3172031"
 ---
-# <a name="product-identifiers"></a>Produktidentifikatorer 
+# <a name="product-identifiers"></a>Produktidentifikatorer
 
 [!include [banner](../includes/banner.md)]
 
@@ -53,6 +53,9 @@ I tillegg kan ikke en produktvariant identifiseres unikt av et varenummer. Det k
 Mange sider har fremdeles varenummeret og produktdimensjonene som de primære IDer. Produktnumrene kan imidlertid brukes for søk. Under **Salg og markedsføring** &gt; **Oppsett** &gt; **Søk** &gt; **Søkeparametere** kan du endre søkeoppslaget slik at det bruker produktnumre i stedet for varenumre som den primære søkestrategien. Hvis du setter **Aktiver oppslag for produktsøk** til **Ja**, vil oppslaget ikke bare vise produktstandarder, men produktvarianter. Hvis du vil ha mer informasjon, kan du se [Søke etter produkter og produktvarianter under ordreregistrering](search-products-product-variants.md).
 
 I tillegg skal du kunne søke og filtrere på produktnummeret, varenavnet og beskrivelsen av og produktdimensjonens ID-er for produktvarianten. Når du velger en variant, velges alle produktdimensjonens ID-er samt det tilknyttede varenummeret. Det er derfor enklere å finne og velge riktig variant. Denne innstillingen anbefales på det sterkeste hvis du bruker produktvarianter og det unike produktnummeret som de primære ID-ene for produkter. Det eneste unntaket er kanskje motebransjen, der organisasjonens forretningsprosesser ofte krever at du velger malen før du velger en variant. Du bør vurdere dette alternativet nøye før du implementerer nummereringssystemet.
+
+> [!NOTE]
+> Varenummeret for et produkt kan ikke endres når det finnes én eller flere transaksjoner for produktet.
 
 ## <a name="product-name-and-description"></a>Produktnavn og beskrivelse
 
@@ -123,7 +126,7 @@ Det finnes dessverre ingen standardfunksjonalitet som lar deg søke etter produk
 | Produkter V2 | Produktnummer, produktsøkenavn, produktnavn, produktbeskrivelse | Produktnummer, produktsøkenavn, produktnavn, produktbeskrivelse | Avhengig av innstillingene for enheten og nummerserien for produktnummeret, kan produktnummeret opprettes automatisk under import. |
 | Produktvarianter | Produktnummer, produktsøkenavn, produktnavn, produktbeskrivelse | Produktnummer, produktsøkenavn, produktnavn, produktbeskrivelse | Avhengig av produktterminologimalen, kan produktnummeret opprettes automatisk under import. Du kan imidlertid importere et hvilket som helst unikt produktnummer, og det produktnummeret trenger ikke følger samme struktur som produktterminologimalene. |
 | Produktoversettelser | Produktnavn, produktbeskrivelse | Produktnavn, produktbeskrivelse | Denne enheten overskriver alle språk. Legg merke til at når navnet på eller beskrivelsen av en juridisk enhets primærspråk overskrives, endres navnet og beskrivelsen av selve produktet. |
-| Frigitte produkter V2 | Varenummer, produktnummer, varesøknavn| Varenummer, produktnummer, varesøknavn, produktsøknavn, produktnavn | Denne enheten kan være utfordrende når nummerserier brukes ved oppretting av nye frigitte produkter. Både nummerserien **Varenummer** og **Produktnummer** har en påvirkning. Nummerserien **Varenummer** er imidlertid per juridiske enhet, mens nummerserien **Produktnummer** er global. Derfor anbefales det ikke at du bruker nummerserien **Varenummer** når du distribuerer nye frigitte produkter. Når enheten brukes til å frigi et eksisterende produkt, må produktnummeret selvsagt angis i enheten. Hvis du vil ha mer informasjon, kan du se delen Produkt- og varenummerserier i dette emnet. |
+| Frigitt produktoppretting V2 | Varenummer, produktnummer, varesøknavn| Varenummer, produktnummer, varesøknavn, produktsøknavn, produktnavn | Denne enheten kan være utfordrende når nummerserier brukes ved oppretting av nye frigitte produkter. Både nummerserien **Varenummer** og **Produktnummer** har en påvirkning. Nummerserien **Varenummer** er imidlertid per juridiske enhet, mens nummerserien **Produktnummer** er global. Derfor anbefales det ikke at du bruker nummerserien **Varenummer** når du distribuerer nye frigitte produkter. Når enheten brukes til å frigi et eksisterende produkt, må produktnummeret selvsagt angis i enheten. Hvis du vil ha mer informasjon, kan du se delen Produkt- og varenummerserier i dette emnet. |
 | Frigitte produktvarianter | Varenummer, produktdimensjoner, produktnummer | Produktnummer, produktsøkenavn, produktnavn, produktbeskrivelse, produktdimensjoner | På samme måte som enheten **Produktvarianter** kan denne enheten brukes til å opprette nye produkter som følger produktterminologimalen eller bruker egne produktnumrene for varianten. |
 | Ekstern varebeskrivelse for kunder | Kundens varenummer, varenavn for kunde, kundebeskrivelse, kundekonto | Kundens varenummer, varenavn for kunde, kundebeskrivelse, kundekonto | En gruppe av kunder (for eksempel en kjøpertilknytning) kan samles i én gruppe ved hjelp av enheten **Eksterne kundegrupper for beskrivelse av vare**. |
 | Ekstern varebeskrivelse for leverandører | Leverandørens varenummer, varenavn for leverandør, leverandørbeskrivelse, leverandørkonto | Leverandørens varenummer, varenavn for leverandør, leverandørbeskrivelse, leverandørkonto | En gruppe av leverandører (for eksempel en salgstilknytning eller bransjeorganisasjon) kan samles i én gruppe ved hjelp av enheten **Eksterne leverandørgrupper for beskrivelse av vare**. |
@@ -144,7 +147,7 @@ Du kan definere to ulike nummerserier:
 > [!NOTE]
 > Du må bruke varenummeret som en egen identifikator bare når du overfører andre juridiske enheter fra forskjellige kilder med ulike tallsystemer. Du bør alltid bruke en produkt-ID som er unik på tvers av alle juridiske enheter. Derfor bør du sette alternativet **Manuell** til **Ja** for nummerserien **Varenummer**. På denne måten følger varenummeret produktnummeret ved oppretting. Hvis Supply Chain Management ikke er det ledende systemet for nye produktnumre, bør du sette alternativet **Manuell** til **Ja** for både nummerserien **Varenummer** og **Produktnummer**.
 
-Når du bruker enheten **Frigitt produkt V2** til å opprette produkter, kan flere innstillinger påvirke hvordan nummerseriene brukes til å opprette produktnummeret og varenummeretet:
+Når du bruker enheten **Frigitt produktoppretting V2** til å opprette produkter, kan flere innstillinger påvirke hvordan nummerseriene brukes til å opprette produktnummeret og varenummeretet:
 
 - Innstillinger for nummerserien **Produktnummer**
 - Innstillinger for nummerserien **Varenummer**
@@ -155,10 +158,10 @@ Tabellen nedenfor gir en oversikt over resultatene av import og manuell oppretti
 
 | Nummerserie for produktnummer | Nummerserie for varenummer | Tilordning av varenummeret | Tilordning av produktnummeret | Resultat av enhetsimport | Resultat av manuell oppretting | Konklusjon |
 |--------------------------------|-----------------------------|----------------------------|-------------------------------|-------------------------|----------------------------|-----------|
-| Manuell = Nei | Manuell = Nei | Ingen tilordning | Ingen tilordning | Produktnumre bruker nummerserien **Produktnummer**. Varenumre bruker nummerserien **Varenummer**. | Produktnumre bruker nummerserien **Produktnummer**. Varenumre bruker nummerserien **Varenummer**. | Disse innstillingene kan brukes hvis du må bruke et annet tall for varer og varer. Det anbefales imidlertid ikke at du bruker ulike tall for varer og produkter. |
-| Manuell = Nei | Manuell = Ja | Autogenerer | Ingen tilordning | Både produktnumre og varenumre bruker nummerserien **Varenummer**. | Både produktnumre og varenumre bruker nummerserien **Produktnummer**. | Disse innstillingene anbefales ikke. Import og manuell oppretting fungerer forskjellig. |
-| Manuell = Nei | Manuell = Ja | Ingen tilordning | Ingen tilordning | Både produktnumre og varenumre bruker nummerserien **Produktnummer**. | Både produktnumre og varenumre bruker nummerserien **Produktnummer**. | Disse innstillingene anbefales hvis produkter skal ha konsekvent automatisk nummerering, uavhengig av om import eller manuell oppretting brukes. |
-| Manuell = Ja | Gjelder ikke her | Gjelder ikke her | Autogenerer | Du får følgende feilmelding: "Finner ikke nummerserien." | I henhold til nummerserien **Varenummer** | Denne innstillingen støttes ikke for import. |
+| Manuell = Nei | Manuell = Nei | Ingen tilordning | Ingen tilordning | Produktnumre bruker nummerserien **Produktnummer**. Varenumre bruker nummerserien **Varenummer**. | Produktnumre bruker nummerserien **Produktnummer**. Varenumre bruker nummerserien **Varenummer**. | Med denne konfigurasjonen vil produktnumre følge produktnummerserien, og varenumre vil følge varenummerserien. Denne konfigurasjonen vil imidlertid ikke fungere hvis det er mer enn en vare (rad) som skal importeres. |
+| Manuell = Nei | Manuell = Ja | Autogenerer | Ingen tilordning | Både produktnumre og varenumre bruker nummerserien **Varenummer**. | Både produktnumre og varenumre bruker nummerserien **Produktnummer**. | Både produktnumre og varenumre følger produktnummerserien. Dette er den anbefalte fremgangsmåten for å importere bulkprodukter med dataenheten Frigitt produktoppretting V2. |
+| Manuell = Nei | Manuell = Ja | Ingen tilordning | Ingen tilordning | Både produktnumre og varenumre bruker nummerserien **Produktnummer**. | Både produktnumre og varenumre bruker nummerserien **Produktnummer**. | Både produktnumre og varenumre bruker produktnummerserien. Denne konfigurasjonen vil imidlertid ikke fungere hvis det er mer enn en vare (rad) som skal importeres. |
+| Manuell = Ja | Gjelder ikke | Gjelder ikke | Autogenerer | Du får følgende feilmelding: "Finner ikke nummerserien." | I henhold til nummerserien **Varenummer** | Denne innstillingen støttes ikke for import. |
 
 ## <a name="product-entity-identifier-export-all-product-identifiers"></a>Produktenhets-ID (Eksporter alle produkt-ID-er)
 

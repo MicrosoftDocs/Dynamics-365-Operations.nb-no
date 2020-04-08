@@ -16,16 +16,16 @@ ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 3a56bca460af229b53d41959d48562ef425c0bf7
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 5dc359309dd96d93a59fbfb6d0b0f64cfaddc5fa
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1843487"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3146589"
 ---
 # <a name="schedule-kanban-jobs"></a>Planlegge Kanban-jobber
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Denne prosedyren fokuserer på planlegging av kanban-prosessjobber for en bestemt arbeidscelle. Fremgangsmåten "Klargjøre en kanban-prosessjobb når materialer ikke er tilgjengelige" er en forutsetning for oppretting av denne fremgangsmåten. Demonstrasjonsdatafirmaet USMF brukes til å opprette denne fremgangsmåten. Denne oppgaven er ment for arbeidsledere og produksjonsplanleggere som arbeider med Kanbaner.
 

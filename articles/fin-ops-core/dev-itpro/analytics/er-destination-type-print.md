@@ -3,7 +3,7 @@ title: ER-skrivermåltype
 description: Dette emnet forklarer hvordan du kan konfigurere et skrivermål for hver MAPPE- eller FIL-komponent i et elektronisk rapporteringsformat (ER) som er konfigurert til å generere utgående dokumenter i enten PDF- eller Microsoft Office-formater (Excel\Word).
 author: NickSelin
 manager: AnnBe
-ms.date: 01/16/2020
+ms.date: 03/17/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,14 +18,14 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-04-01
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: 58e067baa130458e3a8e788d978604f208140a03
-ms.sourcegitcommit: 54baab2a04e5c534fc2d1fd67b67e23a152d4e57
+ms.openlocfilehash: 148da191ce4ea99c237895c40ec007a1aa0cd537
+ms.sourcegitcommit: 0d9ca44b48fb2e33d8160faccc1e6bd932e58934
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "3019927"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3150798"
 ---
-# <a name="PrinterDestinationType"></a>Skrivermål
+# <a name="printer-destination"></a><a name="PrinterDestinationType"></a>Skrivermål
 
 [!include [banner](../includes/banner.md)]
 
@@ -64,6 +64,8 @@ Denne funksjonen er en forhåndsvisningsfunksjon, og den er underlagt vilkårene
 
 > [!NOTE]
 > **Konverter til PDF**-alternativet trenger ikke å være aktivert når du konfigurerer **Skriver**-målet. PDF-konverteringen for utskriftsformål vil finne sted selv om alternativet er deaktivert.
+
+Hvis du vil bruke en bestemt [sideretning](electronic-reporting-destinations.md#SelectPdfPageOrientation) når du skriver ut et utgående dokument i Excel-format, må du aktivere alternativet **Konverter til PDF**. Når du setter alternativet **Konverter til PDF** til **Ja**, blir **Sideretning**-feltet tilgjengelig. Du kan velge en sideretning i **Sideretning**-feltet.
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 

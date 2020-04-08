@@ -3,7 +3,7 @@ title: Kjøpsboksmodul
 description: Dette emnet dekker kjøpsboksmoduler og beskriver hvordan du legger dem til områdesider i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
-ms.date: 01/23/2020
+ms.date: 03/19/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 13d044a150651dd18c3a09c4db6a783fe8f42287
-ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
+ms.openlocfilehash: 3417156cbf3cb20a5190e5e51b61b3423816895a
+ms.sourcegitcommit: de5af1912201dd70aa85fdcad0b184c42405802e
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "3025465"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3154069"
 ---
 # <a name="buy-box-module"></a>Kjøpsboksmodul
 
@@ -58,7 +58,7 @@ Temaer kan brukes til å fjerne eller endre rekkefølgen på produktegenskaper o
 ## <a name="modules-that-can-be-used-in-a-buy-box-module"></a>Moduler som kan brukes i kjøpsboksmodulen
 
 - **Mediegalleri** – Denne modulen brukes til å vise bilder av et produkt på en produktdetaljside. Den kan støtte ett til mange bilder. Den støtter også miniatyrbilder. Miniatyrbildene kan ordnes enten vannrett (som en rad under bildet) eller loddrett (som en kolonne ved siden av bildet). Mediegalleri-modulen kan legges til i **Medie**-sporet i kjøpsboksmodulen. Den støtter for øyeblikket bare bilder. 
-- **Butikkvelger** – Denne modulen viser en liste over nærliggende butikker der en vare er tilgjengelig for henting. Den lar brukere angi en plassering for å finne butikker i nærheten. Butikkvelgermodulen er integrert med API-en (programmeringsgrensesnittet) for Bing-kart-geoplasseringsprogrammet for å konvertere lokasjonen til en breddegrad og lengdegrad. En API-nøkkel for Bing-kart kreves, og den må legges til på siden Delte parametere for detaljhandel i Dynamics 365 Retail. Denne modulen støtter to egenskaper, **Søkeradius** og **Vilkår for bruk-kobling**. Egenskapen **Søkeradius** definerer søkeradiusen for butikker i engelske mil. Hvis ingen verdi er angitt, brukes standard søkeradius, 50 engelske mil. Hvis Bing-kart eller en ekstern tjeneste brukes, kan egenskapen **Vilkår for bruk-kobling** brukes til å angi en kobling til vilkårene for bruk. Det kreves en vilkår for bruk-kobling for Bing-kart-tjenesten. 
+- **Butikkvelger** – Denne modulen viser en liste over nærliggende butikker der en vare er tilgjengelig for henting. Den lar brukere angi en plassering for å finne butikker i nærheten. Hvis du vil ha mer informasjon om denne modulen, se [Butikkvelgermodul](store-selector.md).
 
 ## <a name="buy-box-module-settings"></a>Innstillinger for kjøpsboksmodul
 
@@ -92,6 +92,8 @@ Hvis du vil legge til en kjøpsboksmodul på en ny side og angi de nødvendige e
 ## <a name="additional-resources"></a>Tilleggsressurser
 
 [Startpakke, oversikt](starter-kit-overview.md)
+
+[Butikkvelgermodul](store-selector.md)
 
 [Containermodul](add-container-module.md)
 

@@ -16,16 +16,16 @@ ms.search.region: Global
 ms.author: fdahl
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 0abbce32e2fabe860077502875b92f93ea0ea95c
-ms.sourcegitcommit: a368682f9cf3897347d155f1a2d4b33e555cc2c4
+ms.openlocfilehash: 488fb1bea2d2ae06c92c20afdd98735928eee3b8
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/08/2019
-ms.locfileid: "1867083"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3147302"
 ---
 # <a name="create-a-repeat-purchase-order"></a>Opprette en innkjøpsgjentakelsesordre
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Dette emnet viser hvordan du oppretter en gjentatt bestilling ved å kopiere linjer fra et tidligere bestillingsdokument til en ny eller eksisterende bestilling. Det finnes to metoder for å opprette gjentatte ordrer. Du kan bruke handlingene som er tilgjengelige på dokumentnivå i handlingsruten, eller du kan bruke linjedetaljhandlingene. handlinger på dokumentetnivå er hovedsaklig beregnet på å opprette en ny bestilling ved å legge til linjer og hodeinformasjon fra en annen ordre, mens linjedetaljerhandlingen er hovedsaklig for å legge til linjer i en eksisterende ordre. Eksemplet som vises i denne veiledningen, kan brukes i demonstrasjonsdatafirmaet USMF. Denne oppgaven utføres vanligvis av en innkjøpsagent.
 

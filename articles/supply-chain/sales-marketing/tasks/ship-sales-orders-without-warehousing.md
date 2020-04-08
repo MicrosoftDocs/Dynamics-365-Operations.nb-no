@@ -16,16 +16,16 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: f9e311d3e033168ed577094e94477e7fe47d185d
-ms.sourcegitcommit: e10491a2ff04f65d9f306ef6e068ee123213b23b
+ms.openlocfilehash: 9bd90767af741760b1fbd3fd5c2b4cbbae95a477
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/21/2019
-ms.locfileid: "1914936"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3146405"
 ---
 # <a name="ship-sales-orders-without-warehousing"></a>Sende salgsordrer uten lagerstyring
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Dette emnet forklarer hvordan du oppdaterer en salgsordre når produkter sendes til kunden. Veiledningen er tilgjengelig for fullføringsflyten som ikke er definert for lagerstyring (verken grunnleggende eller avansert lagerstyring), og krever derfor ikke at produktplukking registreres før forsendelse. Du kan kjøre denne fremgangsmåten med dine egne data eller i demonstrasjonsdataselskapet USMF. I begge tilfeller før du starter oppgaven, oppretter du en salgsordre for en lagerført vare med et antall som er større enn 1. For å unngå en posteringsfeil må du kontrollere at produktets lagerbeholdning i området og lageret som du har valgt, dekker ordreantallet.
 

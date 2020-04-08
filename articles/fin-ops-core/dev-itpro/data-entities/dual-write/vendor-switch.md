@@ -1,6 +1,6 @@
 ---
 title: Bytte mellom leverandørutforminger
-description: Dette emnet beskriver hvordan du bytter mellom integreringen av leverandørdata mellom Finance and Operations-apper og Common Data Service.
+description: Dette emnet beskriver hvordan du bytter integreringen av leverandørdata mellom Finance and Operations-apper og Common Data Service.
 author: RamaKrishnamoorthy
 manager: AnnBe
 ms.date: 09/20/2019
@@ -19,48 +19,61 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-09-20
-ms.openlocfilehash: 587a9b98f28b11e303aff4b59e9726f220d956eb
-ms.sourcegitcommit: 54baab2a04e5c534fc2d1fd67b67e23a152d4e57
+ms.openlocfilehash: ffd7a4c01810578b4abb6942aeff76e5147fafa9
+ms.sourcegitcommit: 68f1485de7d64a6c9eba1088af63bd07992d972d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "3019933"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "3173045"
 ---
 # <a name="switch-between-vendor-designs"></a>Bytte mellom leverandørutforminger
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [preview-banner](../../includes/preview-banner.md)]
+
 
 ## <a name="vendor-data-flow"></a>Flyt for leverandørdata 
 
-Hvis du vil bruke andre Dynamics 365-apper for leverandørkontroll, og du vil isolere leverandørinformasjon fra kunder, kan du bruke denne grunnleggende leverandørutformingen.  
+Hvis du velger å bruke **Konto**-enheten til å lagre leverandører av **Organisasjon**-typen og **Kontakt**-enheten til å lagre leverandører av **Person**-typen, konfigurerer du følgende arbeidsflyter. Hvis ikke kreves ikke denne konfigurasjonen.
 
-![Grunnleggende leverandørflyt](media/dual-write-vendor-data-flow.png)
- 
-Hvis du bruker andre Dynamics 365-apper for leverandørkontroll, og du vil fortsatt bruke **konto**-enheten til å lagre leverandørinformasjon, kan du bruke denne utvidede leverandørutformingen. I denne utformingen blir utvidet leverandørinformasjon som leverandør på vent-status og leverandørprofil lagret i **leverandører**-enheten i Common Data Service. 
+## <a name="use-the-extended-vendor-design-for-vendors-of-the-organization-type"></a>Bruke den utvidede leverandørutformingen for leverandører av typen Organisasjon
 
-![Utvidet flyt for leverandør](media/dual-write-vendor-detail.jpg)
- 
-Følg fremgangsmåten nedenfor for å bruke den utvidede leverandørutformingen: 
- 
-1. **SupplyChainCommon**-løsningspakken inneholder malene for arbeidsflytprosessen, som vist i følgende bilde.
-    > [!div class="mx-imgBorder"]
-    > ![Maler for arbeidsflytprosess](media/dual-write-switch-3.png)
-2. Opprett nye arbeidsflytprosesser ved hjelp av malene for arbeidsflytprosess: 
-    1. Opprett en ny arbeidsflytprosess for **leverandør**-enheten ved hjelp av malen for arbeidsflytprosess **Opprett leverandører i kontoenhet**, og klikk **OK**. Denne arbeidsflyten håndterer leverandøropprettelsesscenarioet for **Konto**-enheten.
-        > [!div class="mx-imgBorder"]
-        > ![Opprette leverandører i kontoenhet](media/dual-write-switch-4.png)
-    2. Opprett en ny arbeidsflytprosess for **leverandør**-enheten ved hjelp av malen for arbeidsflytprosess **Oppdater kontoenhet**, og klikk **OK**. Denne arbeidsflyten håndterer oppdateringsscenarioet for **Konto**-enheten. 
-        > [!div class="mx-imgBorder"]
-        > ![Oppdater kontoenhet](media/dual-write-switch-5.png)
-    3. Opprett nye arbeidsflytprosesser fra malene som ble opprettet i **Kontoer**-enheten. 
-        > [!div class="mx-imgBorder"]
-        > ![Opprette leverandører i leverandørenhet](media/dual-write-switch-6.png)
-        > [!div class="mx-imgBorder"]
-        > ![Oppdater leverandørenhet](media/dual-write-switch-7.png)
-    4. Du kan konfigurere arbeidsflytene som sanntids- eller bakgrunns-arbeidsflyter basert på dine behov. 
-        > [!div class="mx-imgBorder"]
-        > ![Konverter til en bakgrunnsarbeidsflyt](media/dual-write-switch-8.png)
-    5. Aktiver arbeidsflytene du opprettet for **konto**- og **leverandør**-enhetene for å begynne å bruke **Konto**-enheten for lagring av leverandørinformasjon. 
- 
+**Dynamics365FinanceExtended**-løsningspakken inneholder følgende arbeidsflytprosess-maler: Du vil opprette en arbeidsflyt for hver mal.
+
++ Opprette leverandører i kontoenhet
++ Opprette leverandører i leverandørenhet
++ Oppdatere leverandører i kontoenhet
++ Oppdatere leverandører i leverandørenhet
+
+Slik oppretter du nye arbeidsflytprosesser ved hjelp av malene for arbeidsflytprosess:
+
+1. Opprett en ny arbeidsflytprosess for **Leverandør**-enheten, og velg arbeidsflytprosess-malen **Opprette leverandører i kontoenhet**. Velg deretter **OK**. Denne arbeidsflyten håndterer leverandøropprettelsesscenarioet for **Konto**-enheten.
+
+    ![Arbeidsflytprosessen Opprette leverandører i kontoenhet](media/create_process.png)
+
+2. Opprett en ny arbeidsflytprosess for **Leverandør**-enheten, og velg arbeidsflytprosess-malen **Oppdatere leverandører i kontoenhet**. Velg deretter **OK**. Denne arbeidsflyten håndterer oppdateringsscenarioet for **Konto**-enheten.
+3. Opprett en ny arbeidsflytprosess for **Konto**-enheten, og velg arbeidsflytprosess-malen **Opprette leverandører i leverandørenhet**.
+4. Opprett en ny arbeidsflytprosess for **Konto**-enheten, og velg arbeidsflytprosess-malen **Oppdatere leverandører i leverandørenhet**.
+5. Du kan konfigurere arbeidsflytene som sanntids- eller bakgrunns-arbeidsflyter basert på dine behov. Velg **Konverter til en bakgrunnsarbeidsflyt** for å konfigurere en arbeidsflyt som en bakgrunnsarbeidsflyt.
+
+    ![Knappen Konverter til en bakgrunnsarbeidsflyt](media/background_workflow.png)
+
+6. Aktiver arbeidsflytene du opprettet for **konto**- og **leverandør**-enhetene for å begynne å bruke **Konto** -enheten til å lagre informasjon for leverandører av **Organisasjon**-typen.
+
+## <a name="use-the-extended-vendor-design-for-vendors-of-the-person-type"></a>Bruke den utvidede leverandørutformingen for leverandører av typen Person
+
+**Dynamics365FinanceExtended**-løsningspakken inneholder følgende arbeidsflytprosess-maler: Du vil opprette en arbeidsflyt for hver mal.
+
++ Opprette leverandører av typen Person i leverandørenheten
++ Opprette leverandører av typen Person i kontaktenheten
++ Oppdatere leverandører av typen Person i kontaktenheten
++ Oppdatere leverandører av typen Person i leverandørenheten
+
+Slik oppretter du nye arbeidsflytprosesser ved hjelp av malene for arbeidsflytprosess:
+
+1. Opprett en ny arbeidsflytprosess for **Leverandør**-enheten, og velg arbeidsflytprosess-malen **Opprette leverandører av typen Person i kontaktenheten**. Velg deretter **OK**. Denne arbeidsflyten håndterer leverandøropprettelsesscenarioet for **Kontakt**-enheten.
+2. Opprett en ny arbeidsflytprosess for **Leverandør**-enheten, og velg arbeidsflytprosess-malen **Oppdatere leverandører av typen Person i kontaktenheten**. Velg deretter **OK**. Denne arbeidsflyten håndterer oppdateringsscenarioet for **Kontakt**-enheten.
+3. Opprett en ny arbeidsflytprosess for **Kontakt**-enheten, og velg arbeidsflytprosess-malen **Opprette leverandører av typen Person i leverandørenhet**.
+4. Opprett en ny arbeidsflytprosess for **Kontakt**-enheten, og velg arbeidsflytprosess-malen **Oppdatere leverandører av typen Person i leverandørenhet**.
+5. Du kan konfigurere arbeidsflytene som sanntids- eller bakgrunns-arbeidsflyter basert på dine behov. Velg **Konverter til en bakgrunnsarbeidsflyt** for å konfigurere en arbeidsflyt som en bakgrunnsarbeidsflyt.
+6. Aktiver arbeidsflytene du opprettet for **kontakt**- og **leverandør**-enhetene for å begynne å bruke **Kontakt** -enheten til å lagre informasjon for leverandører av **Person**-typen.

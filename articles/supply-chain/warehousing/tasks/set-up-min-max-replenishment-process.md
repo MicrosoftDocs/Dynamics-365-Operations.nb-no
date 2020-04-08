@@ -17,16 +17,16 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: e9002b1d9f8507af42277ccc47621d92a4a00f62
-ms.sourcegitcommit: 7b74425637ddcf02087f1d391755e5cb8ce25949
+ms.openlocfilehash: e8210369139b3c3d4123deff5279abb26b1cbb17
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/05/2019
-ms.locfileid: "2559195"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3145968"
 ---
 # <a name="set-up-a-min-max-replenishment-process"></a>Definere en prosess for minimums-/maksimumsetterfylling
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Denne fremgangsmåten viser hvordan du definerer en ny etterfyllingprosess som bruker strategien for minimums-/maksimumsetterfylling. Når lagernivået synker til under minimumsnivået, opprettes det arbeid for å etterfylle lokasjonen. Fremgangsmåten viser også hvordan du bruker faste plukklokasjoner for å tillate etterfylling selv om lagernivået synker til under minimumsnivået, og hvordan du aktiverer at etterfyllingsprosessen skal kjøres regelmessig ved hjelp av en satsvis jobb. Disse oppgavene vil vanligvis utføres av en lagersjef. Du kan kjøre denne prosedyren i USMF-demodatafirmaet ved hjelp av eksempelverdiene nedenfor, eller du kan kjøre den på dine egne data. Hvis du bruker dine egne data, må du kontrollere at du har et lager som er aktivert for lagerstyringsprosesser.
 
@@ -34,7 +34,7 @@ Denne fremgangsmåten viser hvordan du definerer en ny etterfyllingprosess som b
 ## <a name="create-a-fixed-picking-location"></a>Opprette en fast plukklokasjon
 1. Gå til **Navigasjonsrute > Moduler > Lagerstyring > Oppsett > Lager > Faste lokasjoner**. Dette er en valgfri oppgave for minimums-/maksimumsetterfylling, men hvis du bruker fast plukklokasjon, gjør dette at lageret etterfylles selv om det faller under minimumsnivået, fordi systemet kan finne ut hvilke varer som må etterfylles, selv om det ikke er noen igjen.
 2. Klikk på **Ny**.
-3. Angi eller velg en verdi i **Varenummer**-feltet. Hvis du bruker USMF, kan du velge vare 'A0001'.  
+3. Angi eller velg en verdi i **Varenummer**-feltet. Hvis du bruker USMF, kan du velge vare A0001.  
 4. Angi eller velg en verdi i **Område**-feltet. Hvis du bruker USMF, kan du velge område 2.  
 5. Angi eller velg en verdi i feltet **Lager**. Hvis du bruker USMF, kan du velge lager 24.  
 6. Angi eller velg en verdi i feltet **Lokasjon**. Hvis du bruker USMF, kan du velge CP-003.  

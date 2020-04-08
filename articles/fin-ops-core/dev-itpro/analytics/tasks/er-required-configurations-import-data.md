@@ -16,16 +16,16 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 48a327fc5033a7478d2ae5e401ffdce6e4546ad0
-ms.sourcegitcommit: 3c1eb3d89c6ab9bd70b806ca42ef9df74cf850bc
+ms.openlocfilehash: 33d3f3773fdba4b704deeca48874b10958e2ea4e
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "3042879"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3143321"
 ---
 # <a name="er-create-required-configurations-to-import-data-from-an-external-file"></a>ER Opprette nødvendige konfigurasjoner for å importere data fra en ekstern fil
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 De følgende trinnene forklarer hvordan en bruker i rollen Systemansvarlig eller Utvikler av elektronisk rapportering kan utforme konfigurasjoner for elektronisk rapportering (ER) for å importere data til programmet fra en ekstern fil. I dette eksemplet skal du opprette nødvendige ER-konfigurasjoner for eksempelfirmaet, Litware, Inc. For å fullføre disse trinnene, må du først fullføre trinnene i oppgaveveiledningen, "Opprette en konfigurasjonsleverandør og merke den som aktiv." Disse trinnene kan fullføres ved hjelp av USMF-datasettet. Du må også laste ned og lagre følgende filer lokalt ved hjelp av koblinger fra emnet Oversikt over elektronisk rapportering (https://go.microsoft.com/fwlink/?linkid=852550): 1099model.xml, 1099format.xml, 1099entries.xml, 1099entries.xlsx.
 
@@ -235,9 +235,9 @@ Kjør denne formattilordningen for testformål. Bruk filen 1099entries.xml som d
 17. Klikk Lagre.
 18. Lukk siden.
 19. Lukk siden.
-20. Klikk Rediger.
+20. Klikk Rediger
 
-    Hvis du har installert hurtigreparasjonen KB 4012871 med støtte for TYSK modelltilordning i atskilte konfigurasjoner med mulighet til å angi ulike typer forutsetninger for å distribuere dem på forskjellige versjoner av Dynamics 365 Finance (https://fix.lcs.dynamics.com/Issue/Resolved?kb=4012871), utfører du det neste trinnet "Aktivere flagget Standard for modelltilordning" for den angitte formatkonfigurasjonen. Ellers går du til neste trinn.  
+    Hvis du har installert hurtigreparasjonen "KB 4012871 med støtte for TYSK modelltilordning i atskilte konfigurasjoner med mulighet til å angi ulike typer forutsetninger for å distribuere dem på forskjellige versjoner av Dynamics 365 Finance" (https://fix.lcs.dynamics.com/Issue/Resolved?kb=4012871 ), utfører du det neste trinnet "Aktivere flagget Standard for modelltilordning" for den angitte formatkonfigurasjonen. Ellers går du til neste trinn.  
 
 21. Velg Ja i feltet Standard for modelltilordning.
 22. Velg 1099-betalingsmodell i treet.
