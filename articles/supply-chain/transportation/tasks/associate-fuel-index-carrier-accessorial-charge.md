@@ -16,64 +16,64 @@ ms.search.industry: Distribution
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ae0aa90cfd673704bcd8e19f795499283ff01d44
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 0fbd58fb6b03f3c6eb5e54f811d98ad636e65a94
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1560961"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3146382"
 ---
-# <a name="associate-a-fuel-index-with-a-carrier-as-an-accessorial-charge"></a><span data-ttu-id="51585-103">Knytte en indeks for drivstoff til en operatør som et tilbehørsgebyr</span><span class="sxs-lookup"><span data-stu-id="51585-103">Associate a fuel index with a carrier as an accessorial charge</span></span>
+# <a name="associate-a-fuel-index-with-a-carrier-as-an-accessorial-charge"></a><span data-ttu-id="919c1-103">Knytte en indeks for drivstoff til en operatør som et tilbehørsgebyr</span><span class="sxs-lookup"><span data-stu-id="919c1-103">Associate a fuel index with a carrier as an accessorial charge</span></span>
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="51585-104">Denne håndboken beskriver hvordan du oppretter en tilbehørstilordning, transportørens tilbehørsgebyr, tilbehørsmal for drivstofftillegg og knytter en drivstoffindeks for transportør til en transportør.</span><span class="sxs-lookup"><span data-stu-id="51585-104">This guide shows how to create an accessorial assignment, carrier accessorial charge, accessorial master for fuel surcharge, and associate a carrier fuel index with a carrier.</span></span> <span data-ttu-id="51585-105">Du må ha definert en drivstoffindeks for transportør før du kjører denne håndboken.</span><span class="sxs-lookup"><span data-stu-id="51585-105">You need to have set up a carrier fuel index before you run this guide.</span></span> <span data-ttu-id="51585-106">Du kan bruke veiledningen Definere transportørdrivstoffindeks til å gjøre dette.</span><span class="sxs-lookup"><span data-stu-id="51585-106">You can use the “Set up a carrier fuel index” guide to do this.</span></span> <span data-ttu-id="51585-107">Disse oppsettoppgaver utføres vanligvis av prosjektleder logistikk.</span><span class="sxs-lookup"><span data-stu-id="51585-107">These setup tasks are typically done by a Logistics manager.</span></span> <span data-ttu-id="51585-108">Demonstrasjonsdataene USMF brukes til å opprette denne fremgangsmåten.</span><span class="sxs-lookup"><span data-stu-id="51585-108">The demo data used to create this procedure is USMF.</span></span>
+<span data-ttu-id="919c1-104">Denne håndboken beskriver hvordan du oppretter en tilbehørstilordning, transportørens tilbehørsgebyr, tilbehørsmal for drivstofftillegg og knytter en drivstoffindeks for transportør til en transportør.</span><span class="sxs-lookup"><span data-stu-id="919c1-104">This guide shows how to create an accessorial assignment, carrier accessorial charge, accessorial master for fuel surcharge, and associate a carrier fuel index with a carrier.</span></span> <span data-ttu-id="919c1-105">Du må ha definert en drivstoffindeks for transportør før du kjører denne håndboken.</span><span class="sxs-lookup"><span data-stu-id="919c1-105">You need to have set up a carrier fuel index before you run this guide.</span></span> <span data-ttu-id="919c1-106">Du kan bruke veiledningen Definere transportørdrivstoffindeks til å gjøre dette.</span><span class="sxs-lookup"><span data-stu-id="919c1-106">You can use the "Set up a carrier fuel index" guide to do this.</span></span> <span data-ttu-id="919c1-107">Disse oppsettoppgaver utføres vanligvis av prosjektleder logistikk.</span><span class="sxs-lookup"><span data-stu-id="919c1-107">These setup tasks are typically done by a Logistics manager.</span></span> <span data-ttu-id="919c1-108">Demonstrasjonsdataene USMF brukes til å opprette denne fremgangsmåten.</span><span class="sxs-lookup"><span data-stu-id="919c1-108">The demo data used to create this procedure is USMF.</span></span>
 
 
-## <a name="create-an-accessorial-master"></a><span data-ttu-id="51585-109">Opprett en tilbehørsmal</span><span class="sxs-lookup"><span data-stu-id="51585-109">Create an accessorial master</span></span>
-1. <span data-ttu-id="51585-110">Gå til Transportstyring > Oppsett > Vurdering > Tilbehørsmaler.</span><span class="sxs-lookup"><span data-stu-id="51585-110">Go to Transportation management > Setup > Rating > Accessorial masters.</span></span>
-2. <span data-ttu-id="51585-111">Klikk Ny.</span><span class="sxs-lookup"><span data-stu-id="51585-111">Click New.</span></span>
-3. <span data-ttu-id="51585-112">Angi en verdi i Tilbehørsmal-feltet.</span><span class="sxs-lookup"><span data-stu-id="51585-112">In the Accessorial master field, type a value.</span></span>
-4. <span data-ttu-id="51585-113">Skriv inn en verdi i Navn-feltet.</span><span class="sxs-lookup"><span data-stu-id="51585-113">In the Name field, type a value.</span></span>
-5. <span data-ttu-id="51585-114">Klikk Lagre.</span><span class="sxs-lookup"><span data-stu-id="51585-114">Click Save.</span></span>
+## <a name="create-an-accessorial-master"></a><span data-ttu-id="919c1-109">Opprett en tilbehørsmal</span><span class="sxs-lookup"><span data-stu-id="919c1-109">Create an accessorial master</span></span>
+1. <span data-ttu-id="919c1-110">Gå til Transportstyring > Oppsett > Vurdering > Tilbehørsmaler.</span><span class="sxs-lookup"><span data-stu-id="919c1-110">Go to Transportation management > Setup > Rating > Accessorial masters.</span></span>
+2. <span data-ttu-id="919c1-111">Klikk Ny.</span><span class="sxs-lookup"><span data-stu-id="919c1-111">Click New.</span></span>
+3. <span data-ttu-id="919c1-112">Angi en verdi i Tilbehørsmal-feltet.</span><span class="sxs-lookup"><span data-stu-id="919c1-112">In the Accessorial master field, type a value.</span></span>
+4. <span data-ttu-id="919c1-113">Skriv inn en verdi i Navn-feltet.</span><span class="sxs-lookup"><span data-stu-id="919c1-113">In the Name field, type a value.</span></span>
+5. <span data-ttu-id="919c1-114">Klikk Lagre.</span><span class="sxs-lookup"><span data-stu-id="919c1-114">Click Save.</span></span>
 
-## <a name="create-a-carrier-accessorial-charge"></a><span data-ttu-id="51585-115">Opprett transportørens tilbehørsgebyr</span><span class="sxs-lookup"><span data-stu-id="51585-115">Create a carrier accessorial charge</span></span>
-1. <span data-ttu-id="51585-116">Gå til Transportstyring > Oppsett > Vurdering > Transportørens tilbehørsgebyr.</span><span class="sxs-lookup"><span data-stu-id="51585-116">Go to Transportation management > Setup > Rating > Carrier accessorial charges.</span></span>
-2. <span data-ttu-id="51585-117">Klikk Ny.</span><span class="sxs-lookup"><span data-stu-id="51585-117">Click New.</span></span>
-3. <span data-ttu-id="51585-118">Skriv inn en verdi i feltet ID for transportørtilbehør.</span><span class="sxs-lookup"><span data-stu-id="51585-118">In the Carrier accessorial ID field, type a value.</span></span>
-4. <span data-ttu-id="51585-119">Klikk rullegardinknappen i feltet Transportør for å åpne oppslaget.</span><span class="sxs-lookup"><span data-stu-id="51585-119">In the Shipping carrier field, click the drop-down button to open the lookup.</span></span>
-5. <span data-ttu-id="51585-120">Finn og velg ønsket post i listen.</span><span class="sxs-lookup"><span data-stu-id="51585-120">In the list, find and select the desired record.</span></span>
-    * <span data-ttu-id="51585-121">I dette eksemplet velger du lastebiltransportør.</span><span class="sxs-lookup"><span data-stu-id="51585-121">In this example, choose Truck Carrier.</span></span>  
-6. <span data-ttu-id="51585-122">Klikk koblingen i den valgte raden i listen.</span><span class="sxs-lookup"><span data-stu-id="51585-122">In the list, click the link in the selected row.</span></span>
-7. <span data-ttu-id="51585-123">Klikk rullegardinknappen i feltet Transportørtjeneste for å åpne oppslaget.</span><span class="sxs-lookup"><span data-stu-id="51585-123">In the Carrier service field, click the drop-down button to open the lookup.</span></span>
-8. <span data-ttu-id="51585-124">Klikk koblingen i den valgte raden i listen.</span><span class="sxs-lookup"><span data-stu-id="51585-124">In the list, click the link in the selected row.</span></span>
-9. <span data-ttu-id="51585-125">Klikk rullegardinknappen i feltet Tilbehørsmal for å åpne oppslaget.</span><span class="sxs-lookup"><span data-stu-id="51585-125">In the Accessorial master field, click the drop-down button to open the lookup.</span></span>
-10. <span data-ttu-id="51585-126">Finn og velg ønsket post i listen.</span><span class="sxs-lookup"><span data-stu-id="51585-126">In the list, find and select the desired record.</span></span>
-    * <span data-ttu-id="51585-127">Velg den nyopprettede tilbehørsmalen i dette eksemplet.</span><span class="sxs-lookup"><span data-stu-id="51585-127">In this example, choose the newly created Accessorial master.</span></span>  
-11. <span data-ttu-id="51585-128">Klikk Lagre.</span><span class="sxs-lookup"><span data-stu-id="51585-128">Click Save.</span></span>
+## <a name="create-a-carrier-accessorial-charge"></a><span data-ttu-id="919c1-115">Opprett transportørens tilbehørsgebyr</span><span class="sxs-lookup"><span data-stu-id="919c1-115">Create a carrier accessorial charge</span></span>
+1. <span data-ttu-id="919c1-116">Gå til Transportstyring > Oppsett > Vurdering > Transportørens tilbehørsgebyr.</span><span class="sxs-lookup"><span data-stu-id="919c1-116">Go to Transportation management > Setup > Rating > Carrier accessorial charges.</span></span>
+2. <span data-ttu-id="919c1-117">Klikk Ny.</span><span class="sxs-lookup"><span data-stu-id="919c1-117">Click New.</span></span>
+3. <span data-ttu-id="919c1-118">Skriv inn en verdi i feltet ID for transportørtilbehør.</span><span class="sxs-lookup"><span data-stu-id="919c1-118">In the Carrier accessorial ID field, type a value.</span></span>
+4. <span data-ttu-id="919c1-119">Klikk rullegardinknappen i feltet Transportør for å åpne oppslaget.</span><span class="sxs-lookup"><span data-stu-id="919c1-119">In the Shipping carrier field, click the drop-down button to open the lookup.</span></span>
+5. <span data-ttu-id="919c1-120">Finn og velg ønsket post i listen.</span><span class="sxs-lookup"><span data-stu-id="919c1-120">In the list, find and select the desired record.</span></span>
+    * <span data-ttu-id="919c1-121">I dette eksemplet velger du lastebiltransportør.</span><span class="sxs-lookup"><span data-stu-id="919c1-121">In this example, choose Truck Carrier.</span></span>  
+6. <span data-ttu-id="919c1-122">Klikk koblingen i den valgte raden i listen.</span><span class="sxs-lookup"><span data-stu-id="919c1-122">In the list, click the link in the selected row.</span></span>
+7. <span data-ttu-id="919c1-123">Klikk rullegardinknappen i feltet Transportørtjeneste for å åpne oppslaget.</span><span class="sxs-lookup"><span data-stu-id="919c1-123">In the Carrier service field, click the drop-down button to open the lookup.</span></span>
+8. <span data-ttu-id="919c1-124">Klikk koblingen i den valgte raden i listen.</span><span class="sxs-lookup"><span data-stu-id="919c1-124">In the list, click the link in the selected row.</span></span>
+9. <span data-ttu-id="919c1-125">Klikk rullegardinknappen i feltet Tilbehørsmal for å åpne oppslaget.</span><span class="sxs-lookup"><span data-stu-id="919c1-125">In the Accessorial master field, click the drop-down button to open the lookup.</span></span>
+10. <span data-ttu-id="919c1-126">Finn og velg ønsket post i listen.</span><span class="sxs-lookup"><span data-stu-id="919c1-126">In the list, find and select the desired record.</span></span>
+    * <span data-ttu-id="919c1-127">Velg den nyopprettede tilbehørsmalen i dette eksemplet.</span><span class="sxs-lookup"><span data-stu-id="919c1-127">In this example, choose the newly created Accessorial master.</span></span>  
+11. <span data-ttu-id="919c1-128">Klikk Lagre.</span><span class="sxs-lookup"><span data-stu-id="919c1-128">Click Save.</span></span>
 
-## <a name="create-an-accessorial-assignment"></a><span data-ttu-id="51585-129">Opprett en tilbehørstilordning</span><span class="sxs-lookup"><span data-stu-id="51585-129">Create an accessorial assignment</span></span>
-1. <span data-ttu-id="51585-130">Klikk Tilbehørstilordninger.</span><span class="sxs-lookup"><span data-stu-id="51585-130">Click Accessorial assignments.</span></span>
-2. <span data-ttu-id="51585-131">Klikk Ny.</span><span class="sxs-lookup"><span data-stu-id="51585-131">Click New.</span></span>
-3. <span data-ttu-id="51585-132">Skriv inn en verdi i Navn-feltet.</span><span class="sxs-lookup"><span data-stu-id="51585-132">In the Name field, type a value.</span></span>
-4. <span data-ttu-id="51585-133">Aktiver/deaktiver utvidelsen av Kriterier-delen.</span><span class="sxs-lookup"><span data-stu-id="51585-133">Toggle the expansion of the Criteria section.</span></span>
-    * <span data-ttu-id="51585-134">I kriteriene kan du velge å alltid bruke drivstofftillegg eller for dette eksemplet velge at det bare gjelder innenfor et bestemt område.</span><span class="sxs-lookup"><span data-stu-id="51585-134">In the criteria, you can choose to always apply the fuel surcharge or for this example choose that it only applies within a certain region.</span></span>  
-5. <span data-ttu-id="51585-135">Skriv inn en verdi i feltet Postnummer fra.</span><span class="sxs-lookup"><span data-stu-id="51585-135">In the ZIP/postal code from field, type a value.</span></span>
-6. <span data-ttu-id="51585-136">Skriv inn en verdi i feltet Postnummer til.</span><span class="sxs-lookup"><span data-stu-id="51585-136">In the ZIP/postal code to field, type a value.</span></span>
-7. <span data-ttu-id="51585-137">Aktiver/deaktiver utvidelsen av Beregning-delen.</span><span class="sxs-lookup"><span data-stu-id="51585-137">Toggle the expansion of the Calculation section.</span></span>
-    * <span data-ttu-id="51585-138">Du kan angi hvordan du beregner drivstofftillegg i beregningsdelen.</span><span class="sxs-lookup"><span data-stu-id="51585-138">In the calculation section you can specify how to calculate the fuel surcharge.</span></span> <span data-ttu-id="51585-139">Denne beregningen avhenger av den tilbehørsenheten som du har valgt som grunnlag for beregningen.</span><span class="sxs-lookup"><span data-stu-id="51585-139">This calculation depends on the Accessorial unit that you chose as the base for your calculation.</span></span>  
-8. <span data-ttu-id="51585-140">Velg Drivstofftillegg i feltet Tilbehørsgebyrtype.</span><span class="sxs-lookup"><span data-stu-id="51585-140">In the Accessorial fee type field, select 'Fuel surcharge'.</span></span>
-9. <span data-ttu-id="51585-141">Velg Kilometer i feltet Tilbehørsenhet.</span><span class="sxs-lookup"><span data-stu-id="51585-141">In the Accessorial unit field, select 'Mileage'.</span></span>
-10. <span data-ttu-id="51585-142">Klikk rullegardinknappen i Område-feltet for å åpne oppslaget.</span><span class="sxs-lookup"><span data-stu-id="51585-142">In the Region field, click the drop-down button to open the lookup.</span></span>
-11. <span data-ttu-id="51585-143">Klikk koblingen i den valgte raden i listen.</span><span class="sxs-lookup"><span data-stu-id="51585-143">In the list, click the link in the selected row.</span></span>
-12. <span data-ttu-id="51585-144">Klikk Lagre.</span><span class="sxs-lookup"><span data-stu-id="51585-144">Click Save.</span></span>
+## <a name="create-an-accessorial-assignment"></a><span data-ttu-id="919c1-129">Opprett en tilbehørstilordning</span><span class="sxs-lookup"><span data-stu-id="919c1-129">Create an accessorial assignment</span></span>
+1. <span data-ttu-id="919c1-130">Klikk Tilbehørstilordninger.</span><span class="sxs-lookup"><span data-stu-id="919c1-130">Click Accessorial assignments.</span></span>
+2. <span data-ttu-id="919c1-131">Klikk Ny.</span><span class="sxs-lookup"><span data-stu-id="919c1-131">Click New.</span></span>
+3. <span data-ttu-id="919c1-132">Skriv inn en verdi i Navn-feltet.</span><span class="sxs-lookup"><span data-stu-id="919c1-132">In the Name field, type a value.</span></span>
+4. <span data-ttu-id="919c1-133">Aktiver/deaktiver utvidelsen av Kriterier-delen.</span><span class="sxs-lookup"><span data-stu-id="919c1-133">Toggle the expansion of the Criteria section.</span></span>
+    * <span data-ttu-id="919c1-134">I kriteriene kan du velge å alltid bruke drivstofftillegg eller for dette eksemplet velge at det bare gjelder innenfor et bestemt område.</span><span class="sxs-lookup"><span data-stu-id="919c1-134">In the criteria, you can choose to always apply the fuel surcharge or for this example choose that it only applies within a certain region.</span></span>  
+5. <span data-ttu-id="919c1-135">Skriv inn en verdi i feltet Postnummer fra.</span><span class="sxs-lookup"><span data-stu-id="919c1-135">In the ZIP/postal code from field, type a value.</span></span>
+6. <span data-ttu-id="919c1-136">Skriv inn en verdi i feltet Postnummer til.</span><span class="sxs-lookup"><span data-stu-id="919c1-136">In the ZIP/postal code to field, type a value.</span></span>
+7. <span data-ttu-id="919c1-137">Aktiver/deaktiver utvidelsen av Beregning-delen.</span><span class="sxs-lookup"><span data-stu-id="919c1-137">Toggle the expansion of the Calculation section.</span></span>
+    * <span data-ttu-id="919c1-138">Du kan angi hvordan du beregner drivstofftillegg i beregningsdelen.</span><span class="sxs-lookup"><span data-stu-id="919c1-138">In the calculation section you can specify how to calculate the fuel surcharge.</span></span> <span data-ttu-id="919c1-139">Denne beregningen avhenger av den tilbehørsenheten som du har valgt som grunnlag for beregningen.</span><span class="sxs-lookup"><span data-stu-id="919c1-139">This calculation depends on the Accessorial unit that you chose as the base for your calculation.</span></span>  
+8. <span data-ttu-id="919c1-140">Velg Drivstofftillegg i feltet Tilbehørsgebyrtype.</span><span class="sxs-lookup"><span data-stu-id="919c1-140">In the Accessorial fee type field, select 'Fuel surcharge'.</span></span>
+9. <span data-ttu-id="919c1-141">Velg Kilometer i feltet Tilbehørsenhet.</span><span class="sxs-lookup"><span data-stu-id="919c1-141">In the Accessorial unit field, select 'Mileage'.</span></span>
+10. <span data-ttu-id="919c1-142">Klikk rullegardinknappen i Område-feltet for å åpne oppslaget.</span><span class="sxs-lookup"><span data-stu-id="919c1-142">In the Region field, click the drop-down button to open the lookup.</span></span>
+11. <span data-ttu-id="919c1-143">Klikk koblingen i den valgte raden i listen.</span><span class="sxs-lookup"><span data-stu-id="919c1-143">In the list, click the link in the selected row.</span></span>
+12. <span data-ttu-id="919c1-144">Klikk Lagre.</span><span class="sxs-lookup"><span data-stu-id="919c1-144">Click Save.</span></span>
 
-## <a name="update-the-carrier-rating-profile"></a><span data-ttu-id="51585-145">Oppdater vurderingsprofilen for transportør</span><span class="sxs-lookup"><span data-stu-id="51585-145">Update the carrier rating profile</span></span>
-1. <span data-ttu-id="51585-146">Gå til Transportstyring > Oppsett > Transportører > Transportører.</span><span class="sxs-lookup"><span data-stu-id="51585-146">Go to Transportation management > Setup > Carriers > Shipping carriers.</span></span>
-2. <span data-ttu-id="51585-147">Finn og velg ønsket post i listen.</span><span class="sxs-lookup"><span data-stu-id="51585-147">In the list, find and select the desired record.</span></span>
-3. <span data-ttu-id="51585-148">Aktiver/deaktiver utvidelsen av delen Vurderingsprofiler.</span><span class="sxs-lookup"><span data-stu-id="51585-148">Toggle the expansion of the Rating profiles section.</span></span>
-4. <span data-ttu-id="51585-149">Klikk Rediger</span><span class="sxs-lookup"><span data-stu-id="51585-149">Click Edit.</span></span>
-5. <span data-ttu-id="51585-150">Klikk rullegardinknappen i feltet Drivstoffindeks for transportør for å åpne oppslaget.</span><span class="sxs-lookup"><span data-stu-id="51585-150">In the Carrier fuel index field, click the drop-down button to open the lookup.</span></span>
-6. <span data-ttu-id="51585-151">Klikk koblingen i den valgte raden i listen.</span><span class="sxs-lookup"><span data-stu-id="51585-151">In the list, click the link in the selected row.</span></span>
-7. <span data-ttu-id="51585-152">Klikk Lagre.</span><span class="sxs-lookup"><span data-stu-id="51585-152">Click Save.</span></span>
+## <a name="update-the-carrier-rating-profile"></a><span data-ttu-id="919c1-145">Oppdater vurderingsprofilen for transportør</span><span class="sxs-lookup"><span data-stu-id="919c1-145">Update the carrier rating profile</span></span>
+1. <span data-ttu-id="919c1-146">Gå til Transportstyring > Oppsett > Transportører > Transportører.</span><span class="sxs-lookup"><span data-stu-id="919c1-146">Go to Transportation management > Setup > Carriers > Shipping carriers.</span></span>
+2. <span data-ttu-id="919c1-147">Finn og velg ønsket post i listen.</span><span class="sxs-lookup"><span data-stu-id="919c1-147">In the list, find and select the desired record.</span></span>
+3. <span data-ttu-id="919c1-148">Aktiver/deaktiver utvidelsen av delen Vurderingsprofiler.</span><span class="sxs-lookup"><span data-stu-id="919c1-148">Toggle the expansion of the Rating profiles section.</span></span>
+4. <span data-ttu-id="919c1-149">Klikk Rediger</span><span class="sxs-lookup"><span data-stu-id="919c1-149">Click Edit.</span></span>
+5. <span data-ttu-id="919c1-150">Klikk rullegardinknappen i feltet Drivstoffindeks for transportør for å åpne oppslaget.</span><span class="sxs-lookup"><span data-stu-id="919c1-150">In the Carrier fuel index field, click the drop-down button to open the lookup.</span></span>
+6. <span data-ttu-id="919c1-151">Klikk koblingen i den valgte raden i listen.</span><span class="sxs-lookup"><span data-stu-id="919c1-151">In the list, click the link in the selected row.</span></span>
+7. <span data-ttu-id="919c1-152">Klikk Lagre.</span><span class="sxs-lookup"><span data-stu-id="919c1-152">Click Save.</span></span>
 

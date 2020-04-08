@@ -1,6 +1,6 @@
 ---
 title: Bytte mellom leverandørutforminger
-description: Dette emnet beskriver hvordan du bytter mellom integreringen av leverandørdata mellom Finance and Operations-apper og Common Data Service.
+description: Dette emnet beskriver hvordan du bytter integreringen av leverandørdata mellom Finance and Operations-apper og Common Data Service.
 author: RamaKrishnamoorthy
 manager: AnnBe
 ms.date: 09/20/2019
@@ -19,49 +19,61 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-09-20
-ms.openlocfilehash: 587a9b98f28b11e303aff4b59e9726f220d956eb
-ms.sourcegitcommit: 54baab2a04e5c534fc2d1fd67b67e23a152d4e57
+ms.openlocfilehash: ffd7a4c01810578b4abb6942aeff76e5147fafa9
+ms.sourcegitcommit: 68f1485de7d64a6c9eba1088af63bd07992d972d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "3019933"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "3173045"
 ---
-# <a name="switch-between-vendor-designs"></a><span data-ttu-id="fede2-103">Bytte mellom leverandørutforminger</span><span class="sxs-lookup"><span data-stu-id="fede2-103">Switch between vendor designs</span></span>
+# <a name="switch-between-vendor-designs"></a><span data-ttu-id="820a1-103">Bytte mellom leverandørutforminger</span><span class="sxs-lookup"><span data-stu-id="820a1-103">Switch between vendor designs</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [preview-banner](../../includes/preview-banner.md)]
 
-## <a name="vendor-data-flow"></a><span data-ttu-id="fede2-104">Flyt for leverandørdata</span><span class="sxs-lookup"><span data-stu-id="fede2-104">Vendor data flow</span></span> 
 
-<span data-ttu-id="fede2-105">Hvis du vil bruke andre Dynamics 365-apper for leverandørkontroll, og du vil isolere leverandørinformasjon fra kunder, kan du bruke denne grunnleggende leverandørutformingen.</span><span class="sxs-lookup"><span data-stu-id="fede2-105">If you use other Dynamics 365 apps for vendor mastering and you want to isolate vendor information from customers, use this basic vendor design.</span></span>  
+## <a name="vendor-data-flow"></a><span data-ttu-id="820a1-104">Flyt for leverandørdata</span><span class="sxs-lookup"><span data-stu-id="820a1-104">Vendor data flow</span></span> 
 
-![Grunnleggende leverandørflyt](media/dual-write-vendor-data-flow.png)
- 
-<span data-ttu-id="fede2-107">Hvis du bruker andre Dynamics 365-apper for leverandørkontroll, og du vil fortsatt bruke **konto**-enheten til å lagre leverandørinformasjon, kan du bruke denne utvidede leverandørutformingen.</span><span class="sxs-lookup"><span data-stu-id="fede2-107">If you use other Dynamics 365 apps for vendor mastering and you want to continue to use the **Account** entity for storing vendor information, use this extended vendor design.</span></span> <span data-ttu-id="fede2-108">I denne utformingen blir utvidet leverandørinformasjon som leverandør på vent-status og leverandørprofil lagret i **leverandører**-enheten i Common Data Service.</span><span class="sxs-lookup"><span data-stu-id="fede2-108">In this design, extended vendor information like vendor on-hold status and vendor profile is stored in the **vendors** entity in Common Data Service.</span></span> 
+<span data-ttu-id="820a1-105">Hvis du velger å bruke **Konto**-enheten til å lagre leverandører av **Organisasjon**-typen og **Kontakt**-enheten til å lagre leverandører av **Person**-typen, konfigurerer du følgende arbeidsflyter.</span><span class="sxs-lookup"><span data-stu-id="820a1-105">If you choose to use the **Account** entity to store vendors of the **Organization** type and the **Contact** entity to store vendors of the **Person** type, configure the following workflows.</span></span> <span data-ttu-id="820a1-106">Hvis ikke kreves ikke denne konfigurasjonen.</span><span class="sxs-lookup"><span data-stu-id="820a1-106">Otherwise, this configuration isn't required.</span></span>
 
-![Utvidet flyt for leverandør](media/dual-write-vendor-detail.jpg)
- 
-<span data-ttu-id="fede2-110">Følg fremgangsmåten nedenfor for å bruke den utvidede leverandørutformingen:</span><span class="sxs-lookup"><span data-stu-id="fede2-110">Follow the below steps to use the extended vendor design:</span></span> 
- 
-1. <span data-ttu-id="fede2-111">**SupplyChainCommon**-løsningspakken inneholder malene for arbeidsflytprosessen, som vist i følgende bilde.</span><span class="sxs-lookup"><span data-stu-id="fede2-111">The **SupplyChainCommon** solution package contains the workflow process templates as shown in the following image.</span></span>
-    > [!div class="mx-imgBorder"]
-    > <span data-ttu-id="fede2-112">![Maler for arbeidsflytprosess](media/dual-write-switch-3.png)</span><span class="sxs-lookup"><span data-stu-id="fede2-112">![Workflow process templates](media/dual-write-switch-3.png)</span></span>
-2. <span data-ttu-id="fede2-113">Opprett nye arbeidsflytprosesser ved hjelp av malene for arbeidsflytprosess:</span><span class="sxs-lookup"><span data-stu-id="fede2-113">Create new workflow processes using the workflow process templates:</span></span> 
-    1. <span data-ttu-id="fede2-114">Opprett en ny arbeidsflytprosess for **leverandør**-enheten ved hjelp av malen for arbeidsflytprosess **Opprett leverandører i kontoenhet**, og klikk **OK**.</span><span class="sxs-lookup"><span data-stu-id="fede2-114">Create a new workflow process for the **Vendor** entity using the **Create Vendors in Account Entity** workflow process template and click **OK**.</span></span> <span data-ttu-id="fede2-115">Denne arbeidsflyten håndterer leverandøropprettelsesscenarioet for **Konto**-enheten.</span><span class="sxs-lookup"><span data-stu-id="fede2-115">This workflow handles the vendor creation scenario for the **Account** entity.</span></span>
-        > [!div class="mx-imgBorder"]
-        > <span data-ttu-id="fede2-116">![Opprette leverandører i kontoenhet](media/dual-write-switch-4.png)</span><span class="sxs-lookup"><span data-stu-id="fede2-116">![Create Vendors in Account Entity](media/dual-write-switch-4.png)</span></span>
-    2. <span data-ttu-id="fede2-117">Opprett en ny arbeidsflytprosess for **leverandør**-enheten ved hjelp av malen for arbeidsflytprosess **Oppdater kontoenhet**, og klikk **OK**.</span><span class="sxs-lookup"><span data-stu-id="fede2-117">Create a new workflow process for the **Vendor** entity using the **Update Accounts Entity** workflow process template and click **OK**.</span></span> <span data-ttu-id="fede2-118">Denne arbeidsflyten håndterer oppdateringsscenarioet for **Konto**-enheten.</span><span class="sxs-lookup"><span data-stu-id="fede2-118">This workflow handles the vendor update scenario for the **Account** entity.</span></span> 
-        > [!div class="mx-imgBorder"]
-        > <span data-ttu-id="fede2-119">![Oppdater kontoenhet](media/dual-write-switch-5.png)</span><span class="sxs-lookup"><span data-stu-id="fede2-119">![Update Accounts Entity](media/dual-write-switch-5.png)</span></span>
-    3. <span data-ttu-id="fede2-120">Opprett nye arbeidsflytprosesser fra malene som ble opprettet i **Kontoer**-enheten.</span><span class="sxs-lookup"><span data-stu-id="fede2-120">Create new workflow processes from the templates created on the **Accounts** entity.</span></span> 
-        > [!div class="mx-imgBorder"]
-        > <span data-ttu-id="fede2-121">![Opprette leverandører i leverandørenhet](media/dual-write-switch-6.png)
-        > </span><span class="sxs-lookup"><span data-stu-id="fede2-121">![Create vendors in vendors entity](media/dual-write-switch-6.png)
-        > </span></span>[!div class="mx-imgBorder"]
-<span data-ttu-id="fede2-122">![Oppdater leverandørenhet](media/dual-write-switch-7.png)</span><span class="sxs-lookup"><span data-stu-id="fede2-122">![Update vendors entity](media/dual-write-switch-7.png)</span></span>
-    4. <span data-ttu-id="fede2-123">Du kan konfigurere arbeidsflytene som sanntids- eller bakgrunns-arbeidsflyter basert på dine behov.</span><span class="sxs-lookup"><span data-stu-id="fede2-123">You can configure the workflows as real-time or background workflows based on your requirements.</span></span> 
-        > [!div class="mx-imgBorder"]
-        > <span data-ttu-id="fede2-124">![Konverter til en bakgrunnsarbeidsflyt](media/dual-write-switch-8.png)</span><span class="sxs-lookup"><span data-stu-id="fede2-124">![Convert to a background workflow](media/dual-write-switch-8.png)</span></span>
-    5. <span data-ttu-id="fede2-125">Aktiver arbeidsflytene du opprettet for **konto**- og **leverandør**-enhetene for å begynne å bruke **Konto**-enheten for lagring av leverandørinformasjon.</span><span class="sxs-lookup"><span data-stu-id="fede2-125">Activate the workflows that you created on the **Account** and **Vendor** entities to start using the **Account** entity for storing vendor information.</span></span> 
- 
+## <a name="use-the-extended-vendor-design-for-vendors-of-the-organization-type"></a><span data-ttu-id="820a1-107">Bruke den utvidede leverandørutformingen for leverandører av typen Organisasjon</span><span class="sxs-lookup"><span data-stu-id="820a1-107">Use the extended vendor design for vendors of the Organization type</span></span>
+
+<span data-ttu-id="820a1-108">**Dynamics365FinanceExtended**-løsningspakken inneholder følgende arbeidsflytprosess-maler:</span><span class="sxs-lookup"><span data-stu-id="820a1-108">The **Dynamics365FinanceExtended** solution package contains the following workflow process templates.</span></span> <span data-ttu-id="820a1-109">Du vil opprette en arbeidsflyt for hver mal.</span><span class="sxs-lookup"><span data-stu-id="820a1-109">You will create a workflow for each template.</span></span>
+
++ <span data-ttu-id="820a1-110">Opprette leverandører i kontoenhet</span><span class="sxs-lookup"><span data-stu-id="820a1-110">Create Vendors in Accounts Entity</span></span>
++ <span data-ttu-id="820a1-111">Opprette leverandører i leverandørenhet</span><span class="sxs-lookup"><span data-stu-id="820a1-111">Create Vendors in Vendors Entity</span></span>
++ <span data-ttu-id="820a1-112">Oppdatere leverandører i kontoenhet</span><span class="sxs-lookup"><span data-stu-id="820a1-112">Update Vendors in Accounts Entity</span></span>
++ <span data-ttu-id="820a1-113">Oppdatere leverandører i leverandørenhet</span><span class="sxs-lookup"><span data-stu-id="820a1-113">Update Vendors in Vendors Entity</span></span>
+
+<span data-ttu-id="820a1-114">Slik oppretter du nye arbeidsflytprosesser ved hjelp av malene for arbeidsflytprosess:</span><span class="sxs-lookup"><span data-stu-id="820a1-114">To create new workflow processes by using the workflow process templates, follow these steps.</span></span>
+
+1. <span data-ttu-id="820a1-115">Opprett en ny arbeidsflytprosess for **Leverandør**-enheten, og velg arbeidsflytprosess-malen **Opprette leverandører i kontoenhet**.</span><span class="sxs-lookup"><span data-stu-id="820a1-115">Create a workflow process for the **Vendor** entity, and select the **Create Vendors in Accounts Entity** workflow process template.</span></span> <span data-ttu-id="820a1-116">Velg deretter **OK**.</span><span class="sxs-lookup"><span data-stu-id="820a1-116">Then select **OK**.</span></span> <span data-ttu-id="820a1-117">Denne arbeidsflyten håndterer leverandøropprettelsesscenarioet for **Konto**-enheten.</span><span class="sxs-lookup"><span data-stu-id="820a1-117">This workflow handles the vendor creation scenario for the **Account** entity.</span></span>
+
+    ![Arbeidsflytprosessen Opprette leverandører i kontoenhet](media/create_process.png)
+
+2. <span data-ttu-id="820a1-119">Opprett en ny arbeidsflytprosess for **Leverandør**-enheten, og velg arbeidsflytprosess-malen **Oppdatere leverandører i kontoenhet**.</span><span class="sxs-lookup"><span data-stu-id="820a1-119">Create a workflow process for the **Vendor** entity, and select the **Update Vendors in Accounts Entity** workflow process template.</span></span> <span data-ttu-id="820a1-120">Velg deretter **OK**.</span><span class="sxs-lookup"><span data-stu-id="820a1-120">Then select **OK**.</span></span> <span data-ttu-id="820a1-121">Denne arbeidsflyten håndterer oppdateringsscenarioet for **Konto**-enheten.</span><span class="sxs-lookup"><span data-stu-id="820a1-121">This workflow handles the vendor update scenario for the **Account** entity.</span></span>
+3. <span data-ttu-id="820a1-122">Opprett en ny arbeidsflytprosess for **Konto**-enheten, og velg arbeidsflytprosess-malen **Opprette leverandører i leverandørenhet**.</span><span class="sxs-lookup"><span data-stu-id="820a1-122">Create a workflow process for the **Account** entity, and select the **Create Vendors in Vendors Entity** workflow process template.</span></span>
+4. <span data-ttu-id="820a1-123">Opprett en ny arbeidsflytprosess for **Konto**-enheten, og velg arbeidsflytprosess-malen **Oppdatere leverandører i leverandørenhet**.</span><span class="sxs-lookup"><span data-stu-id="820a1-123">Create a workflow process for the **Account** entity, and select the **Update Vendors in Vendors Entity** workflow process template.</span></span>
+5. <span data-ttu-id="820a1-124">Du kan konfigurere arbeidsflytene som sanntids- eller bakgrunns-arbeidsflyter basert på dine behov.</span><span class="sxs-lookup"><span data-stu-id="820a1-124">You can configure the workflows as either real-time workflows or background workflows, depending on your requirements.</span></span> <span data-ttu-id="820a1-125">Velg **Konverter til en bakgrunnsarbeidsflyt** for å konfigurere en arbeidsflyt som en bakgrunnsarbeidsflyt.</span><span class="sxs-lookup"><span data-stu-id="820a1-125">To configure a workflow as a background workflow, select **Convert to a background workflow**.</span></span>
+
+    ![Knappen Konverter til en bakgrunnsarbeidsflyt](media/background_workflow.png)
+
+6. <span data-ttu-id="820a1-127">Aktiver arbeidsflytene du opprettet for **konto**- og **leverandør**-enhetene for å begynne å bruke **Konto** -enheten til å lagre informasjon for leverandører av **Organisasjon**-typen.</span><span class="sxs-lookup"><span data-stu-id="820a1-127">Activate the workflows that you created for the **Account** and **Vendor** entities to start to use the **Account** entity to store information for vendors of the **Organization** type.</span></span>
+
+## <a name="use-the-extended-vendor-design-for-vendors-of-the-person-type"></a><span data-ttu-id="820a1-128">Bruke den utvidede leverandørutformingen for leverandører av typen Person</span><span class="sxs-lookup"><span data-stu-id="820a1-128">Use the extended vendor design for vendors of the Person type</span></span>
+
+<span data-ttu-id="820a1-129">**Dynamics365FinanceExtended**-løsningspakken inneholder følgende arbeidsflytprosess-maler:</span><span class="sxs-lookup"><span data-stu-id="820a1-129">The **Dynamics365FinanceExtended** solution package contains the following workflow process templates.</span></span> <span data-ttu-id="820a1-130">Du vil opprette en arbeidsflyt for hver mal.</span><span class="sxs-lookup"><span data-stu-id="820a1-130">You will create a workflow for each template.</span></span>
+
++ <span data-ttu-id="820a1-131">Opprette leverandører av typen Person i leverandørenheten</span><span class="sxs-lookup"><span data-stu-id="820a1-131">Create Vendors of type Person in Vendors Entity</span></span>
++ <span data-ttu-id="820a1-132">Opprette leverandører av typen Person i kontaktenheten</span><span class="sxs-lookup"><span data-stu-id="820a1-132">Create Vendors of type Person in Contacts Entity</span></span>
++ <span data-ttu-id="820a1-133">Oppdatere leverandører av typen Person i kontaktenheten</span><span class="sxs-lookup"><span data-stu-id="820a1-133">Update Vendors of type Person in Contacts Entity</span></span>
++ <span data-ttu-id="820a1-134">Oppdatere leverandører av typen Person i leverandørenheten</span><span class="sxs-lookup"><span data-stu-id="820a1-134">Update Vendors of type Person in Vendors Entity</span></span>
+
+<span data-ttu-id="820a1-135">Slik oppretter du nye arbeidsflytprosesser ved hjelp av malene for arbeidsflytprosess:</span><span class="sxs-lookup"><span data-stu-id="820a1-135">To create new workflow processes by using the workflow process templates, follow these steps.</span></span>
+
+1. <span data-ttu-id="820a1-136">Opprett en ny arbeidsflytprosess for **Leverandør**-enheten, og velg arbeidsflytprosess-malen **Opprette leverandører av typen Person i kontaktenheten**.</span><span class="sxs-lookup"><span data-stu-id="820a1-136">Create a workflow process for the **Vendor** entity, and select the **Create Vendors of type Person in Contacts Entity** workflow process template.</span></span> <span data-ttu-id="820a1-137">Velg deretter **OK**.</span><span class="sxs-lookup"><span data-stu-id="820a1-137">Then select **OK**.</span></span> <span data-ttu-id="820a1-138">Denne arbeidsflyten håndterer leverandøropprettelsesscenarioet for **Kontakt**-enheten.</span><span class="sxs-lookup"><span data-stu-id="820a1-138">This workflow handles the vendor creation scenario for the **Contact** entity.</span></span>
+2. <span data-ttu-id="820a1-139">Opprett en ny arbeidsflytprosess for **Leverandør**-enheten, og velg arbeidsflytprosess-malen **Oppdatere leverandører av typen Person i kontaktenheten**.</span><span class="sxs-lookup"><span data-stu-id="820a1-139">Create a workflow process for the **Vendor** entity, and select the **Update Vendors of type Person in Contacts Entity** workflow process template.</span></span> <span data-ttu-id="820a1-140">Velg deretter **OK**.</span><span class="sxs-lookup"><span data-stu-id="820a1-140">Then select **OK**.</span></span> <span data-ttu-id="820a1-141">Denne arbeidsflyten håndterer oppdateringsscenarioet for **Kontakt**-enheten.</span><span class="sxs-lookup"><span data-stu-id="820a1-141">This workflow handles the vendor update scenario for the **Contact** entity.</span></span>
+3. <span data-ttu-id="820a1-142">Opprett en ny arbeidsflytprosess for **Kontakt**-enheten, og velg arbeidsflytprosess-malen **Opprette leverandører av typen Person i leverandørenhet**.</span><span class="sxs-lookup"><span data-stu-id="820a1-142">Create a workflow process for the **Contact** entity, and select the **Create Vendors of type Person in Vendors Entity** template.</span></span>
+4. <span data-ttu-id="820a1-143">Opprett en ny arbeidsflytprosess for **Kontakt**-enheten, og velg arbeidsflytprosess-malen **Oppdatere leverandører av typen Person i leverandørenhet**.</span><span class="sxs-lookup"><span data-stu-id="820a1-143">Create a workflow process for the **Contact** entity, and select the **Update Vendors of type Person in Vendors Entity** template.</span></span>
+5. <span data-ttu-id="820a1-144">Du kan konfigurere arbeidsflytene som sanntids- eller bakgrunns-arbeidsflyter basert på dine behov.</span><span class="sxs-lookup"><span data-stu-id="820a1-144">You can configure the workflows as either real-time workflows or background workflows, depending on your requirements.</span></span> <span data-ttu-id="820a1-145">Velg **Konverter til en bakgrunnsarbeidsflyt** for å konfigurere en arbeidsflyt som en bakgrunnsarbeidsflyt.</span><span class="sxs-lookup"><span data-stu-id="820a1-145">To configure a workflow as a background workflow, select **Convert to a background workflow**.</span></span>
+6. <span data-ttu-id="820a1-146">Aktiver arbeidsflytene du opprettet for **kontakt**- og **leverandør**-enhetene for å begynne å bruke **Kontakt** -enheten til å lagre informasjon for leverandører av **Person**-typen.</span><span class="sxs-lookup"><span data-stu-id="820a1-146">Activate the workflows that you created on the **Contact** and **Vendor** entities to start to use the **Contact** entity to store information for vendors of the **Person** type.</span></span>

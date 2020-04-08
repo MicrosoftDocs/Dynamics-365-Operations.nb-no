@@ -16,42 +16,42 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 0f15c0328e391d81c4c977f974553ae9135b207c
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 6d5758b2903cd0a269f3e03e44b618c26e8b2310
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1844903"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3147877"
 ---
-# <a name="create-configuration-rules"></a><span data-ttu-id="4f33b-103">Opprette konfigurasjonsregler</span><span class="sxs-lookup"><span data-stu-id="4f33b-103">Create configuration rules</span></span>
+# <a name="create-configuration-rules"></a><span data-ttu-id="000f6-103">Opprette konfigurasjonsregler</span><span class="sxs-lookup"><span data-stu-id="000f6-103">Create configuration rules</span></span>
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="4f33b-104">Denne prosedyren oppretter konfigurasjonsregler som kan brukes til dimensjonsbasert konfigurasjon for å fremtvinge eller nekte bestemte kombinasjoner av stykklistelinjer.</span><span class="sxs-lookup"><span data-stu-id="4f33b-104">This procedure creates configuration rules that can be used for dimension-based configuration to enforce or prevent certain combinations of BOM lines.</span></span> <span data-ttu-id="4f33b-105">Demonstrasjonsdatafirmaet USMF brukes til å opprette denne fremgangsmåten.</span><span class="sxs-lookup"><span data-stu-id="4f33b-105">The demo data company used to create this procedure is USMF.</span></span> <span data-ttu-id="4f33b-106">Dette er den sjuende fremgangsmåten av åtte som forklarer hvordan du bygger kombinasjoner for dimensjonsbasert konfigurasjon.</span><span class="sxs-lookup"><span data-stu-id="4f33b-106">This is the seventh procedure out of eight that explains how to build combinations for dimension-based configuration.</span></span>
+<span data-ttu-id="000f6-104">Denne prosedyren oppretter konfigurasjonsregler som kan brukes til dimensjonsbasert konfigurasjon for å fremtvinge eller nekte bestemte kombinasjoner av stykklistelinjer.</span><span class="sxs-lookup"><span data-stu-id="000f6-104">This procedure creates configuration rules that can be used for dimension-based configuration to enforce or prevent certain combinations of BOM lines.</span></span> <span data-ttu-id="000f6-105">Demonstrasjonsdatafirmaet USMF brukes til å opprette denne fremgangsmåten.</span><span class="sxs-lookup"><span data-stu-id="000f6-105">The demo data company used to create this procedure is USMF.</span></span> <span data-ttu-id="000f6-106">Dette er den sjuende fremgangsmåten av åtte som forklarer hvordan du bygger kombinasjoner for dimensjonsbasert konfigurasjon.</span><span class="sxs-lookup"><span data-stu-id="000f6-106">This is the seventh procedure out of eight that explains how to build combinations for dimension-based configuration.</span></span>
 
-1. <span data-ttu-id="4f33b-107">Gå til Behandling av produktinformasjon > Stykklister og formler > Stykklister.</span><span class="sxs-lookup"><span data-stu-id="4f33b-107">Go to Product information management > Bills of materials and formulas > Bills of materials.</span></span>
-2. <span data-ttu-id="4f33b-108">Finn og velg ønsket post i listen.</span><span class="sxs-lookup"><span data-stu-id="4f33b-108">In the list, find and select the desired record.</span></span>
-    * <span data-ttu-id="4f33b-109">Søk etter og velg stykklisten for den dimensjonsbaserte konfigurasjonen.</span><span class="sxs-lookup"><span data-stu-id="4f33b-109">Find and select the BOM for the dimension-based configuration.</span></span>  
-3. <span data-ttu-id="4f33b-110">Klikk Alternativer i handlingsruten.</span><span class="sxs-lookup"><span data-stu-id="4f33b-110">On the Action Pane, click Options.</span></span>
-4. <span data-ttu-id="4f33b-111">Klikk Bytt visning.</span><span class="sxs-lookup"><span data-stu-id="4f33b-111">Click Change view.</span></span>
-5. <span data-ttu-id="4f33b-112">Klikk Hodevisning.</span><span class="sxs-lookup"><span data-stu-id="4f33b-112">Click Header view.</span></span>
-    * <span data-ttu-id="4f33b-113">Åpne hodevisningen for å få tilgang til hurtigkategorien Konfigurasjonsrute.</span><span class="sxs-lookup"><span data-stu-id="4f33b-113">Open the header view to access the Configuration route FastTab.</span></span>  
-6. <span data-ttu-id="4f33b-114">Vis eller skjul delen Konfigurasjonsrute.</span><span class="sxs-lookup"><span data-stu-id="4f33b-114">Expand or collapse the Configuration route section.</span></span>
-    * <span data-ttu-id="4f33b-115">Hurtigkategorien Konfigurasjonsrute må være i utvidet modus.</span><span class="sxs-lookup"><span data-stu-id="4f33b-115">The Configuration route FastTab must be in the expanded mode.</span></span>  
-7. <span data-ttu-id="4f33b-116">Klikk Konfigurasjonsregler.</span><span class="sxs-lookup"><span data-stu-id="4f33b-116">Click Configuration rules.</span></span>
-8. <span data-ttu-id="4f33b-117">Klikk Ny.</span><span class="sxs-lookup"><span data-stu-id="4f33b-117">Click New.</span></span>
-9. <span data-ttu-id="4f33b-118">Merk den valgte raden i listen.</span><span class="sxs-lookup"><span data-stu-id="4f33b-118">In the list, mark the selected row.</span></span>
-10. <span data-ttu-id="4f33b-119">Klikk rullegardinknappen i Varenummer-feltet for å åpne oppslaget.</span><span class="sxs-lookup"><span data-stu-id="4f33b-119">In the Item number field, click the drop-down button to open the lookup.</span></span>
-    * <span data-ttu-id="4f33b-120">Varene i den gjeldende konfigurasjonsgruppen vises.</span><span class="sxs-lookup"><span data-stu-id="4f33b-120">The items in the current configuration group are displayed.</span></span> <span data-ttu-id="4f33b-121">Velg den som representerer betingelsen i regelen.</span><span class="sxs-lookup"><span data-stu-id="4f33b-121">Select the one that represents the condition in the rule.</span></span>  
-11. <span data-ttu-id="4f33b-122">Klikk koblingen i den valgte raden i listen.</span><span class="sxs-lookup"><span data-stu-id="4f33b-122">In the list, click the link in the selected row.</span></span>
-12. <span data-ttu-id="4f33b-123">Velg et alternativ i Metode-feltet.</span><span class="sxs-lookup"><span data-stu-id="4f33b-123">In the Method field, select an option.</span></span>
-    * <span data-ttu-id="4f33b-124">Det er mulig å fremtvinge et valg eller en opphevelse av valg av en vare fra en annen konfigurasjonsgruppe.</span><span class="sxs-lookup"><span data-stu-id="4f33b-124">It is possible to enforce either a selection or a deselection of an item from another configuration group.</span></span>  
-13. <span data-ttu-id="4f33b-125">Klikk rullegardinknappen i feltet Avledet gruppe for å åpne oppslaget.</span><span class="sxs-lookup"><span data-stu-id="4f33b-125">In the Derived group field, click the drop-down button to open the lookup.</span></span>
-14. <span data-ttu-id="4f33b-126">Finn og velg ønsket post i listen.</span><span class="sxs-lookup"><span data-stu-id="4f33b-126">In the list, find and select the desired record.</span></span>
-15. <span data-ttu-id="4f33b-127">Klikk koblingen i den valgte raden i listen.</span><span class="sxs-lookup"><span data-stu-id="4f33b-127">In the list, click the link in the selected row.</span></span>
-    * <span data-ttu-id="4f33b-128">Velg ønsket konfigurasjonsgruppe.</span><span class="sxs-lookup"><span data-stu-id="4f33b-128">Select the desired configuration group.</span></span>  
-16. <span data-ttu-id="4f33b-129">Klikk rullegardinknappen i feltet Avledet varenummer for å åpne oppslaget.</span><span class="sxs-lookup"><span data-stu-id="4f33b-129">In the Derived item number field, click the drop-down button to open the lookup.</span></span>
-17. <span data-ttu-id="4f33b-130">Klikk koblingen i den valgte raden i listen.</span><span class="sxs-lookup"><span data-stu-id="4f33b-130">In the list, click the link in the selected row.</span></span>
-    * <span data-ttu-id="4f33b-131">Velg varenummeret som enten skal velges eller oppheves avhengig av den valgte metoden.</span><span class="sxs-lookup"><span data-stu-id="4f33b-131">Select the item number that will be either selected or deselected depending on the chosen method.</span></span>  
-18. <span data-ttu-id="4f33b-132">Lukk siden.</span><span class="sxs-lookup"><span data-stu-id="4f33b-132">Close the page.</span></span>
+1. <span data-ttu-id="000f6-107">Gå til Behandling av produktinformasjon > Stykklister og formler > Stykklister.</span><span class="sxs-lookup"><span data-stu-id="000f6-107">Go to Product information management > Bills of materials and formulas > Bills of materials.</span></span>
+2. <span data-ttu-id="000f6-108">Finn og velg ønsket post i listen.</span><span class="sxs-lookup"><span data-stu-id="000f6-108">In the list, find and select the desired record.</span></span>
+    * <span data-ttu-id="000f6-109">Søk etter og velg stykklisten for den dimensjonsbaserte konfigurasjonen.</span><span class="sxs-lookup"><span data-stu-id="000f6-109">Find and select the BOM for the dimension-based configuration.</span></span>  
+3. <span data-ttu-id="000f6-110">Klikk Alternativer i handlingsruten.</span><span class="sxs-lookup"><span data-stu-id="000f6-110">On the Action Pane, click Options.</span></span>
+4. <span data-ttu-id="000f6-111">Klikk Bytt visning.</span><span class="sxs-lookup"><span data-stu-id="000f6-111">Click Change view.</span></span>
+5. <span data-ttu-id="000f6-112">Klikk Hodevisning.</span><span class="sxs-lookup"><span data-stu-id="000f6-112">Click Header view.</span></span>
+    * <span data-ttu-id="000f6-113">Åpne hodevisningen for å få tilgang til hurtigkategorien Konfigurasjonsrute.</span><span class="sxs-lookup"><span data-stu-id="000f6-113">Open the header view to access the Configuration route FastTab.</span></span>  
+6. <span data-ttu-id="000f6-114">Vis eller skjul delen Konfigurasjonsrute.</span><span class="sxs-lookup"><span data-stu-id="000f6-114">Expand or collapse the Configuration route section.</span></span>
+    * <span data-ttu-id="000f6-115">Hurtigkategorien Konfigurasjonsrute må være i utvidet modus.</span><span class="sxs-lookup"><span data-stu-id="000f6-115">The Configuration route FastTab must be in the expanded mode.</span></span>  
+7. <span data-ttu-id="000f6-116">Klikk Konfigurasjonsregler.</span><span class="sxs-lookup"><span data-stu-id="000f6-116">Click Configuration rules.</span></span>
+8. <span data-ttu-id="000f6-117">Klikk Ny.</span><span class="sxs-lookup"><span data-stu-id="000f6-117">Click New.</span></span>
+9. <span data-ttu-id="000f6-118">Merk den valgte raden i listen.</span><span class="sxs-lookup"><span data-stu-id="000f6-118">In the list, mark the selected row.</span></span>
+10. <span data-ttu-id="000f6-119">Klikk rullegardinknappen i Varenummer-feltet for å åpne oppslaget.</span><span class="sxs-lookup"><span data-stu-id="000f6-119">In the Item number field, click the drop-down button to open the lookup.</span></span>
+    * <span data-ttu-id="000f6-120">Varene i den gjeldende konfigurasjonsgruppen vises.</span><span class="sxs-lookup"><span data-stu-id="000f6-120">The items in the current configuration group are displayed.</span></span> <span data-ttu-id="000f6-121">Velg den som representerer betingelsen i regelen.</span><span class="sxs-lookup"><span data-stu-id="000f6-121">Select the one that represents the condition in the rule.</span></span>  
+11. <span data-ttu-id="000f6-122">Klikk koblingen i den valgte raden i listen.</span><span class="sxs-lookup"><span data-stu-id="000f6-122">In the list, click the link in the selected row.</span></span>
+12. <span data-ttu-id="000f6-123">Velg et alternativ i Metode-feltet.</span><span class="sxs-lookup"><span data-stu-id="000f6-123">In the Method field, select an option.</span></span>
+    * <span data-ttu-id="000f6-124">Det er mulig å fremtvinge et valg eller en opphevelse av valg av en vare fra en annen konfigurasjonsgruppe.</span><span class="sxs-lookup"><span data-stu-id="000f6-124">It is possible to enforce either a selection or a deselection of an item from another configuration group.</span></span>  
+13. <span data-ttu-id="000f6-125">Klikk rullegardinknappen i feltet Avledet gruppe for å åpne oppslaget.</span><span class="sxs-lookup"><span data-stu-id="000f6-125">In the Derived group field, click the drop-down button to open the lookup.</span></span>
+14. <span data-ttu-id="000f6-126">Finn og velg ønsket post i listen.</span><span class="sxs-lookup"><span data-stu-id="000f6-126">In the list, find and select the desired record.</span></span>
+15. <span data-ttu-id="000f6-127">Klikk koblingen i den valgte raden i listen.</span><span class="sxs-lookup"><span data-stu-id="000f6-127">In the list, click the link in the selected row.</span></span>
+    * <span data-ttu-id="000f6-128">Velg ønsket konfigurasjonsgruppe.</span><span class="sxs-lookup"><span data-stu-id="000f6-128">Select the desired configuration group.</span></span>  
+16. <span data-ttu-id="000f6-129">Klikk rullegardinknappen i feltet Avledet varenummer for å åpne oppslaget.</span><span class="sxs-lookup"><span data-stu-id="000f6-129">In the Derived item number field, click the drop-down button to open the lookup.</span></span>
+17. <span data-ttu-id="000f6-130">Klikk koblingen i den valgte raden i listen.</span><span class="sxs-lookup"><span data-stu-id="000f6-130">In the list, click the link in the selected row.</span></span>
+    * <span data-ttu-id="000f6-131">Velg varenummeret som enten skal velges eller oppheves avhengig av den valgte metoden.</span><span class="sxs-lookup"><span data-stu-id="000f6-131">Select the item number that will be either selected or deselected depending on the chosen method.</span></span>  
+18. <span data-ttu-id="000f6-132">Lukk siden.</span><span class="sxs-lookup"><span data-stu-id="000f6-132">Close the page.</span></span>
 
