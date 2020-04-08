@@ -15,32 +15,32 @@ ms.search.region: Global
 ms.author: conradv
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 156972cdbf4ffb02b01b00972cc83d003d941378
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 62de37b5a84a1771b77ef2566942b7ffe8895f16
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1567751"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3149947"
 ---
-# <a name="create-a-product-lifecycle-state-to-exclude-products-from-master-planning"></a><span data-ttu-id="e9300-103">Opprette en produktlivssyklustilstand for å utelukke produkter fra hovedplanlegging</span><span class="sxs-lookup"><span data-stu-id="e9300-103">Create a product lifecycle state to exclude products from Master planning</span></span>
+# <a name="create-a-product-lifecycle-state-to-exclude-products-from-master-planning"></a><span data-ttu-id="3ff4c-103">Opprette en produktlivssyklustilstand for å utelukke produkter fra hovedplanlegging</span><span class="sxs-lookup"><span data-stu-id="3ff4c-103">Create a product lifecycle state to exclude products from Master planning</span></span>
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="e9300-104">Denne prosedyren viser hvordan du oppretter en ny produktlivssyklustilstand som utelukker produktene fra hovedplanlegging og beregning av stykklistenivå.</span><span class="sxs-lookup"><span data-stu-id="e9300-104">This procedure shows how to create a new product lifecycle state that excludes the products from Master planning and BOM-level calculation.</span></span>
+<span data-ttu-id="3ff4c-104">Denne prosedyren viser hvordan du oppretter en ny produktlivssyklustilstand som utelukker produktene fra hovedplanlegging og beregning av stykklistenivå.</span><span class="sxs-lookup"><span data-stu-id="3ff4c-104">This procedure shows how to create a new product lifecycle state that excludes the products from Master planning and BOM-level calculation.</span></span>
 
 
-## <a name="create-an-obsolete-state"></a><span data-ttu-id="e9300-105">Opprette en foreldet tilstand</span><span class="sxs-lookup"><span data-stu-id="e9300-105">Create an obsolete state</span></span>
-1. <span data-ttu-id="e9300-106">Gå til Behandling av produktinformasjon > Oppsett > Livssyklustilstand for produkt.</span><span class="sxs-lookup"><span data-stu-id="e9300-106">Go to Product information management > Setup > Product lifecycle state.</span></span>
-2. <span data-ttu-id="e9300-107">Klikk Ny.</span><span class="sxs-lookup"><span data-stu-id="e9300-107">Click New.</span></span>
-3. <span data-ttu-id="e9300-108">Skriv inn en verdi i feltet Tilstand.</span><span class="sxs-lookup"><span data-stu-id="e9300-108">In the State field, type a value.</span></span>
-4. <span data-ttu-id="e9300-109">Velg Nei i Er aktiv for planlegging-feltet.</span><span class="sxs-lookup"><span data-stu-id="e9300-109">Select No in the Is active for planning field.</span></span>
-5. <span data-ttu-id="e9300-110">Skriv inn en verdi i feltet Beskrivelse.</span><span class="sxs-lookup"><span data-stu-id="e9300-110">In the Description field, type a value.</span></span>
+## <a name="create-an-obsolete-state"></a><span data-ttu-id="3ff4c-105">Opprette en foreldet tilstand</span><span class="sxs-lookup"><span data-stu-id="3ff4c-105">Create an obsolete state</span></span>
+1. <span data-ttu-id="3ff4c-106">Gå til Behandling av produktinformasjon > Oppsett > Livssyklustilstand for produkt.</span><span class="sxs-lookup"><span data-stu-id="3ff4c-106">Go to Product information management > Setup > Product lifecycle state.</span></span>
+2. <span data-ttu-id="3ff4c-107">Klikk Ny.</span><span class="sxs-lookup"><span data-stu-id="3ff4c-107">Click New.</span></span>
+3. <span data-ttu-id="3ff4c-108">Skriv inn en verdi i feltet Tilstand.</span><span class="sxs-lookup"><span data-stu-id="3ff4c-108">In the State field, type a value.</span></span>
+4. <span data-ttu-id="3ff4c-109">Velg Nei i Er aktiv for planlegging-feltet.</span><span class="sxs-lookup"><span data-stu-id="3ff4c-109">Select No in the Is active for planning field.</span></span>
+5. <span data-ttu-id="3ff4c-110">Skriv inn en verdi i feltet Beskrivelse.</span><span class="sxs-lookup"><span data-stu-id="3ff4c-110">In the Description field, type a value.</span></span>
 
-## <a name="associate-the-obsolete-state-to-a-released-product"></a><span data-ttu-id="e9300-111">Knytte den utdaterte tilstanden til et frigitt produkt</span><span class="sxs-lookup"><span data-stu-id="e9300-111">Associate the obsolete state to a released product</span></span>
-1. <span data-ttu-id="e9300-112">Lukk siden.</span><span class="sxs-lookup"><span data-stu-id="e9300-112">Close the page.</span></span>
-2. <span data-ttu-id="e9300-113">Gå til Behandling av produktinformasjon > Produkter > Frigitte produkter.</span><span class="sxs-lookup"><span data-stu-id="e9300-113">Go to Product information management > Products > Released products.</span></span>
-3. <span data-ttu-id="e9300-114">Bruk hurtigfilteret for å søke etter poster.</span><span class="sxs-lookup"><span data-stu-id="e9300-114">Use the Quick Filter to find records.</span></span> <span data-ttu-id="e9300-115">Du kan for eksempel filtrere på Søkenavn-feltet med verdien M00.</span><span class="sxs-lookup"><span data-stu-id="e9300-115">For example, filter on the Search name field with a value of 'M00'.</span></span>
-4. <span data-ttu-id="e9300-116">Klikk Rediger.</span><span class="sxs-lookup"><span data-stu-id="e9300-116">Click Edit.</span></span>
-5. <span data-ttu-id="e9300-117">Merk den valgte raden i listen.</span><span class="sxs-lookup"><span data-stu-id="e9300-117">In the list, mark the selected row.</span></span>
-6. <span data-ttu-id="e9300-118">Angi eller velg en verdi i feltet Livssyklustilstand for produkt.</span><span class="sxs-lookup"><span data-stu-id="e9300-118">In the Product lifecycle state field, enter or select a value.</span></span>
+## <a name="associate-the-obsolete-state-to-a-released-product"></a><span data-ttu-id="3ff4c-111">Knytte den utdaterte tilstanden til et frigitt produkt</span><span class="sxs-lookup"><span data-stu-id="3ff4c-111">Associate the obsolete state to a released product</span></span>
+1. <span data-ttu-id="3ff4c-112">Lukk siden.</span><span class="sxs-lookup"><span data-stu-id="3ff4c-112">Close the page.</span></span>
+2. <span data-ttu-id="3ff4c-113">Gå til Behandling av produktinformasjon > Produkter > Frigitte produkter.</span><span class="sxs-lookup"><span data-stu-id="3ff4c-113">Go to Product information management > Products > Released products.</span></span>
+3. <span data-ttu-id="3ff4c-114">Bruk hurtigfilteret for å søke etter poster.</span><span class="sxs-lookup"><span data-stu-id="3ff4c-114">Use the Quick Filter to find records.</span></span> <span data-ttu-id="3ff4c-115">Du kan for eksempel filtrere på Søkenavn-feltet med verdien M00.</span><span class="sxs-lookup"><span data-stu-id="3ff4c-115">For example, filter on the Search name field with a value of 'M00'.</span></span>
+4. <span data-ttu-id="3ff4c-116">Klikk Rediger.</span><span class="sxs-lookup"><span data-stu-id="3ff4c-116">Click Edit.</span></span>
+5. <span data-ttu-id="3ff4c-117">Merk den valgte raden i listen.</span><span class="sxs-lookup"><span data-stu-id="3ff4c-117">In the list, mark the selected row.</span></span>
+6. <span data-ttu-id="3ff4c-118">Angi eller velg en verdi i feltet Livssyklustilstand for produkt.</span><span class="sxs-lookup"><span data-stu-id="3ff4c-118">In the Product lifecycle state field, enter or select a value.</span></span>
 

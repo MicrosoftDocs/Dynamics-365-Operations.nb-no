@@ -16,65 +16,65 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 427159048ffbb17749e813d67a900622900a7f21
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: ff5402b11cd2ccdfde2881268d9cd936947cd77e
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2179235"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3144259"
 ---
-# <a name="set-up-bank-facilities-and-posting-profiles-for-letters-of-guarantee"></a><span data-ttu-id="aab2b-103">Definere bankfasiliteter og posteringsprofiler for garantibrev</span><span class="sxs-lookup"><span data-stu-id="aab2b-103">Set up bank facilities and posting profiles for letters of guarantee</span></span>
+# <a name="set-up-bank-facilities-and-posting-profiles-for-letters-of-guarantee"></a><span data-ttu-id="3dc5e-103">Definere bankfasiliteter og posteringsprofiler for garantibrev</span><span class="sxs-lookup"><span data-stu-id="3dc5e-103">Set up bank facilities and posting profiles for letters of guarantee</span></span>
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="aab2b-104">Denne oppgaven oppretter en bankfasilitet og posteringsprofil som er nødvendig for å behandle et garantibrev.</span><span class="sxs-lookup"><span data-stu-id="aab2b-104">This task creates a Bank facility and posting profile that is needed to process a letter of guarantee.</span></span>
-
-
-
-<span data-ttu-id="aab2b-105">Denne oppgaven bruker demonstrasjonsfirmaet USMF.</span><span class="sxs-lookup"><span data-stu-id="aab2b-105">This task uses the USMF demo company.</span></span> 
+<span data-ttu-id="3dc5e-104">Denne oppgaven oppretter en bankfasilitet og posteringsprofil som er nødvendig for å behandle et garantibrev.</span><span class="sxs-lookup"><span data-stu-id="3dc5e-104">This task creates a Bank facility and posting profile that is needed to process a letter of guarantee.</span></span>
 
 
 
+<span data-ttu-id="3dc5e-105">Denne oppgaven bruker demonstrasjonsfirmaet USMF.</span><span class="sxs-lookup"><span data-stu-id="3dc5e-105">This task uses the USMF demo company.</span></span> 
 
-## <a name="general-ledger-parameter"></a><span data-ttu-id="aab2b-106">Parameter for økonomimodul</span><span class="sxs-lookup"><span data-stu-id="aab2b-106">General ledger parameter</span></span>
-1. <span data-ttu-id="aab2b-107">Gå til Kontant- og bankbehandling > Oppsett > Parametere for bankstyring.</span><span class="sxs-lookup"><span data-stu-id="aab2b-107">Go to Cash and bank management > Setup > Cash and bank management parameters.</span></span>
-2. <span data-ttu-id="aab2b-108">Vis delen Bankdokument.</span><span class="sxs-lookup"><span data-stu-id="aab2b-108">Expand the Bank document section.</span></span>
-3. <span data-ttu-id="aab2b-109">Velg alternativet Aktiver garantibrev.</span><span class="sxs-lookup"><span data-stu-id="aab2b-109">Select the Enable letter of guarantee option.</span></span>
-4. <span data-ttu-id="aab2b-110">Klikk rullegardinknappen i feltet Transaksjonsjournal for å åpne oppslaget.</span><span class="sxs-lookup"><span data-stu-id="aab2b-110">In the Transaction journal field, click the drop-down button to open the lookup.</span></span>
-5. <span data-ttu-id="aab2b-111">Finn og velg ønsket post i listen.</span><span class="sxs-lookup"><span data-stu-id="aab2b-111">In the list, find and select the desired record.</span></span>
-6. <span data-ttu-id="aab2b-112">Klikk koblingen i den valgte raden i listen.</span><span class="sxs-lookup"><span data-stu-id="aab2b-112">In the list, click the link in the selected row.</span></span>
-7. <span data-ttu-id="aab2b-113">Klikk kategorien Nummerserier.</span><span class="sxs-lookup"><span data-stu-id="aab2b-113">Click the Number sequences tab.</span></span>
-    * <span data-ttu-id="aab2b-114">Definere nummerseriekode for garantibrevnummer og transaksjonsreferanser for garantibrev</span><span class="sxs-lookup"><span data-stu-id="aab2b-114">Define number sequence code for Letter of guarantee number and Letter of guarantee transaction references</span></span>  
-8. <span data-ttu-id="aab2b-115">Klikk Lagre.</span><span class="sxs-lookup"><span data-stu-id="aab2b-115">Click Save.</span></span>
-9. <span data-ttu-id="aab2b-116">Lukk siden.</span><span class="sxs-lookup"><span data-stu-id="aab2b-116">Close the page.</span></span>
 
-## <a name="create-bank-facility"></a><span data-ttu-id="aab2b-117">Opprette bankfasilitet</span><span class="sxs-lookup"><span data-stu-id="aab2b-117">Create Bank facility</span></span>
-1. <span data-ttu-id="aab2b-118">Gå til Kontant- og bankbehandling > Oppsett > Bankfasiliteter.</span><span class="sxs-lookup"><span data-stu-id="aab2b-118">Go to Cash and bank management > Setup > Bank facilities.</span></span>
-2. <span data-ttu-id="aab2b-119">Klikk Ny.</span><span class="sxs-lookup"><span data-stu-id="aab2b-119">Click New.</span></span>
-3. <span data-ttu-id="aab2b-120">I feltet Fasilitetsgruppe angir du navnet på bankfasilitetsgruppen for garantibrevtransaksjonen.</span><span class="sxs-lookup"><span data-stu-id="aab2b-120">In the Facility group field, enter the bank facility group name for the letter of guarantee transaction.</span></span>
-4. <span data-ttu-id="aab2b-121">Skriv inn en verdi i feltet Beskrivelse.</span><span class="sxs-lookup"><span data-stu-id="aab2b-121">In the Description field, type a value.</span></span>
-5. <span data-ttu-id="aab2b-122">Klikk Lagre.</span><span class="sxs-lookup"><span data-stu-id="aab2b-122">Click Save.</span></span>
-6. <span data-ttu-id="aab2b-123">Klikk kategorien Fasilitetstyper.</span><span class="sxs-lookup"><span data-stu-id="aab2b-123">Click the Facility types tab.</span></span>
-7. <span data-ttu-id="aab2b-124">Klikk Ny.</span><span class="sxs-lookup"><span data-stu-id="aab2b-124">Click New.</span></span>
-8. <span data-ttu-id="aab2b-125">I feltet Fasilitetstype skriver du inn navnet på bankfasilitetstypen som er relatert til bankfasilitetsavtalen.</span><span class="sxs-lookup"><span data-stu-id="aab2b-125">In the Facility type field, enter the name of the bank facility type that is related to the bank facility agreement.</span></span>
-9. <span data-ttu-id="aab2b-126">Skriv inn en verdi i Beskrivelse-feltet.</span><span class="sxs-lookup"><span data-stu-id="aab2b-126">In the Description field, type a value.</span></span>
-10. <span data-ttu-id="aab2b-127">Klikk rullegardinknappen i feltet Fasilitetsgruppe for å åpne oppslaget.</span><span class="sxs-lookup"><span data-stu-id="aab2b-127">In the Facility group field, click the drop-down button to open the lookup.</span></span>
-11. <span data-ttu-id="aab2b-128">Finn og velg ønsket post i listen.</span><span class="sxs-lookup"><span data-stu-id="aab2b-128">In the list, find and select the desired record.</span></span>
-12. <span data-ttu-id="aab2b-129">Klikk koblingen i den valgte raden i listen.</span><span class="sxs-lookup"><span data-stu-id="aab2b-129">In the list, click the link in the selected row.</span></span>
-13. <span data-ttu-id="aab2b-130">Velg et alternativ i feltet Fasilitetens art.</span><span class="sxs-lookup"><span data-stu-id="aab2b-130">In the Facility nature field, select an option.</span></span>
-14. <span data-ttu-id="aab2b-131">Klikk Lagre.</span><span class="sxs-lookup"><span data-stu-id="aab2b-131">Click Save.</span></span>
-15. <span data-ttu-id="aab2b-132">Lukk siden.</span><span class="sxs-lookup"><span data-stu-id="aab2b-132">Close the page.</span></span>
 
-## <a name="bank-posting-profile"></a><span data-ttu-id="aab2b-133">Bankposteringsprofil</span><span class="sxs-lookup"><span data-stu-id="aab2b-133">Bank posting profile</span></span>
-1. <span data-ttu-id="aab2b-134">Gå til Kontant- og bankbehandling > Oppsett > Posteringsprofil for bankdokumenter.</span><span class="sxs-lookup"><span data-stu-id="aab2b-134">Go to Cash and bank management > Setup > Bank documents posting profile.</span></span>
-2. <span data-ttu-id="aab2b-135">Klikk Ny.</span><span class="sxs-lookup"><span data-stu-id="aab2b-135">Click New.</span></span>
-3. <span data-ttu-id="aab2b-136">Klikk rullegardinknappen i feltet Konto/gruppenummer for å åpne oppslaget.</span><span class="sxs-lookup"><span data-stu-id="aab2b-136">In the Account/Group number field, click the drop-down button to open the lookup.</span></span>
-4. <span data-ttu-id="aab2b-137">Finn og velg ønsket post i listen.</span><span class="sxs-lookup"><span data-stu-id="aab2b-137">In the list, find and select the desired record.</span></span>
-5. <span data-ttu-id="aab2b-138">Klikk koblingen i den valgte raden i listen.</span><span class="sxs-lookup"><span data-stu-id="aab2b-138">In the list, click the link in the selected row.</span></span>
-6. <span data-ttu-id="aab2b-139">Velg hovedkonto for utligning i Utligningskonto-feltet.</span><span class="sxs-lookup"><span data-stu-id="aab2b-139">In the Settle account field, select the main account for settlement.</span></span>
-7. <span data-ttu-id="aab2b-140">Velg konto for utgiftstransaksjoner i Gebyrkonto-feltet.</span><span class="sxs-lookup"><span data-stu-id="aab2b-140">In the Charges account field, select the account for expense transactions.</span></span>
-8. <span data-ttu-id="aab2b-141">Velg konto for margintransaksjonen i Marginkonto-feltet.</span><span class="sxs-lookup"><span data-stu-id="aab2b-141">In the Margin account field, select the account for the margin transaction.</span></span>
-9. <span data-ttu-id="aab2b-142">I Likvidasjonskonto-feltet velger du likvidasjonskontoen for garantibrevtransaksjonen.</span><span class="sxs-lookup"><span data-stu-id="aab2b-142">In the Liquidation account field, select the liquidation account for the letter of guarantee transaction.</span></span> 
-10. <span data-ttu-id="aab2b-143">Klikk Lagre.</span><span class="sxs-lookup"><span data-stu-id="aab2b-143">Click Save.</span></span>
-11. <span data-ttu-id="aab2b-144">Lukk siden.</span><span class="sxs-lookup"><span data-stu-id="aab2b-144">Close the page.</span></span>
+
+## <a name="general-ledger-parameter"></a><span data-ttu-id="3dc5e-106">Parameter for økonomimodul</span><span class="sxs-lookup"><span data-stu-id="3dc5e-106">General ledger parameter</span></span>
+1. <span data-ttu-id="3dc5e-107">Gå til Kontant- og bankbehandling > Oppsett > Parametere for bankstyring.</span><span class="sxs-lookup"><span data-stu-id="3dc5e-107">Go to Cash and bank management > Setup > Cash and bank management parameters.</span></span>
+2. <span data-ttu-id="3dc5e-108">Vis delen Bankdokument.</span><span class="sxs-lookup"><span data-stu-id="3dc5e-108">Expand the Bank document section.</span></span>
+3. <span data-ttu-id="3dc5e-109">Velg alternativet Aktiver garantibrev.</span><span class="sxs-lookup"><span data-stu-id="3dc5e-109">Select the Enable letter of guarantee option.</span></span>
+4. <span data-ttu-id="3dc5e-110">Klikk rullegardinknappen i feltet Transaksjonsjournal for å åpne oppslaget.</span><span class="sxs-lookup"><span data-stu-id="3dc5e-110">In the Transaction journal field, click the drop-down button to open the lookup.</span></span>
+5. <span data-ttu-id="3dc5e-111">Finn og velg ønsket post i listen.</span><span class="sxs-lookup"><span data-stu-id="3dc5e-111">In the list, find and select the desired record.</span></span>
+6. <span data-ttu-id="3dc5e-112">Klikk koblingen i den valgte raden i listen.</span><span class="sxs-lookup"><span data-stu-id="3dc5e-112">In the list, click the link in the selected row.</span></span>
+7. <span data-ttu-id="3dc5e-113">Klikk kategorien Nummerserier.</span><span class="sxs-lookup"><span data-stu-id="3dc5e-113">Click the Number sequences tab.</span></span>
+    * <span data-ttu-id="3dc5e-114">Definere nummerseriekode for garantibrevnummer og transaksjonsreferanser for garantibrev</span><span class="sxs-lookup"><span data-stu-id="3dc5e-114">Define number sequence code for Letter of guarantee number and Letter of guarantee transaction references</span></span>  
+8. <span data-ttu-id="3dc5e-115">Klikk Lagre.</span><span class="sxs-lookup"><span data-stu-id="3dc5e-115">Click Save.</span></span>
+9. <span data-ttu-id="3dc5e-116">Lukk siden.</span><span class="sxs-lookup"><span data-stu-id="3dc5e-116">Close the page.</span></span>
+
+## <a name="create-bank-facility"></a><span data-ttu-id="3dc5e-117">Opprette bankfasilitet</span><span class="sxs-lookup"><span data-stu-id="3dc5e-117">Create Bank facility</span></span>
+1. <span data-ttu-id="3dc5e-118">Gå til Kontant- og bankbehandling > Oppsett > Bankfasiliteter.</span><span class="sxs-lookup"><span data-stu-id="3dc5e-118">Go to Cash and bank management > Setup > Bank facilities.</span></span>
+2. <span data-ttu-id="3dc5e-119">Klikk Ny.</span><span class="sxs-lookup"><span data-stu-id="3dc5e-119">Click New.</span></span>
+3. <span data-ttu-id="3dc5e-120">I feltet Fasilitetsgruppe angir du navnet på bankfasilitetsgruppen for garantibrevtransaksjonen.</span><span class="sxs-lookup"><span data-stu-id="3dc5e-120">In the Facility group field, enter the bank facility group name for the letter of guarantee transaction.</span></span>
+4. <span data-ttu-id="3dc5e-121">Skriv inn en verdi i feltet Beskrivelse.</span><span class="sxs-lookup"><span data-stu-id="3dc5e-121">In the Description field, type a value.</span></span>
+5. <span data-ttu-id="3dc5e-122">Klikk Lagre.</span><span class="sxs-lookup"><span data-stu-id="3dc5e-122">Click Save.</span></span>
+6. <span data-ttu-id="3dc5e-123">Klikk kategorien Fasilitetstyper.</span><span class="sxs-lookup"><span data-stu-id="3dc5e-123">Click the Facility types tab.</span></span>
+7. <span data-ttu-id="3dc5e-124">Klikk Ny.</span><span class="sxs-lookup"><span data-stu-id="3dc5e-124">Click New.</span></span>
+8. <span data-ttu-id="3dc5e-125">I feltet Fasilitetstype skriver du inn navnet på bankfasilitetstypen som er relatert til bankfasilitetsavtalen.</span><span class="sxs-lookup"><span data-stu-id="3dc5e-125">In the Facility type field, enter the name of the bank facility type that is related to the bank facility agreement.</span></span>
+9. <span data-ttu-id="3dc5e-126">Skriv inn en verdi i Beskrivelse-feltet.</span><span class="sxs-lookup"><span data-stu-id="3dc5e-126">In the Description field, type a value.</span></span>
+10. <span data-ttu-id="3dc5e-127">Klikk rullegardinknappen i feltet Fasilitetsgruppe for å åpne oppslaget.</span><span class="sxs-lookup"><span data-stu-id="3dc5e-127">In the Facility group field, click the drop-down button to open the lookup.</span></span>
+11. <span data-ttu-id="3dc5e-128">Finn og velg ønsket post i listen.</span><span class="sxs-lookup"><span data-stu-id="3dc5e-128">In the list, find and select the desired record.</span></span>
+12. <span data-ttu-id="3dc5e-129">Klikk koblingen i den valgte raden i listen.</span><span class="sxs-lookup"><span data-stu-id="3dc5e-129">In the list, click the link in the selected row.</span></span>
+13. <span data-ttu-id="3dc5e-130">Velg et alternativ i feltet Fasilitetens art.</span><span class="sxs-lookup"><span data-stu-id="3dc5e-130">In the Facility nature field, select an option.</span></span>
+14. <span data-ttu-id="3dc5e-131">Klikk Lagre.</span><span class="sxs-lookup"><span data-stu-id="3dc5e-131">Click Save.</span></span>
+15. <span data-ttu-id="3dc5e-132">Lukk siden.</span><span class="sxs-lookup"><span data-stu-id="3dc5e-132">Close the page.</span></span>
+
+## <a name="bank-posting-profile"></a><span data-ttu-id="3dc5e-133">Bankposteringsprofil</span><span class="sxs-lookup"><span data-stu-id="3dc5e-133">Bank posting profile</span></span>
+1. <span data-ttu-id="3dc5e-134">Gå til Kontant- og bankbehandling > Oppsett > Posteringsprofil for bankdokumenter.</span><span class="sxs-lookup"><span data-stu-id="3dc5e-134">Go to Cash and bank management > Setup > Bank documents posting profile.</span></span>
+2. <span data-ttu-id="3dc5e-135">Klikk Ny.</span><span class="sxs-lookup"><span data-stu-id="3dc5e-135">Click New.</span></span>
+3. <span data-ttu-id="3dc5e-136">Klikk rullegardinknappen i feltet Konto/gruppenummer for å åpne oppslaget.</span><span class="sxs-lookup"><span data-stu-id="3dc5e-136">In the Account/Group number field, click the drop-down button to open the lookup.</span></span>
+4. <span data-ttu-id="3dc5e-137">Finn og velg ønsket post i listen.</span><span class="sxs-lookup"><span data-stu-id="3dc5e-137">In the list, find and select the desired record.</span></span>
+5. <span data-ttu-id="3dc5e-138">Klikk koblingen i den valgte raden i listen.</span><span class="sxs-lookup"><span data-stu-id="3dc5e-138">In the list, click the link in the selected row.</span></span>
+6. <span data-ttu-id="3dc5e-139">Velg hovedkonto for utligning i Utligningskonto-feltet.</span><span class="sxs-lookup"><span data-stu-id="3dc5e-139">In the Settle account field, select the main account for settlement.</span></span>
+7. <span data-ttu-id="3dc5e-140">Velg konto for utgiftstransaksjoner i Gebyrkonto-feltet.</span><span class="sxs-lookup"><span data-stu-id="3dc5e-140">In the Charges account field, select the account for expense transactions.</span></span>
+8. <span data-ttu-id="3dc5e-141">Velg konto for margintransaksjonen i Marginkonto-feltet.</span><span class="sxs-lookup"><span data-stu-id="3dc5e-141">In the Margin account field, select the account for the margin transaction.</span></span>
+9. <span data-ttu-id="3dc5e-142">I Likvidasjonskonto-feltet velger du likvidasjonskontoen for garantibrevtransaksjonen.</span><span class="sxs-lookup"><span data-stu-id="3dc5e-142">In the Liquidation account field, select the liquidation account for the letter of guarantee transaction.</span></span> 
+10. <span data-ttu-id="3dc5e-143">Klikk Lagre.</span><span class="sxs-lookup"><span data-stu-id="3dc5e-143">Click Save.</span></span>
+11. <span data-ttu-id="3dc5e-144">Lukk siden.</span><span class="sxs-lookup"><span data-stu-id="3dc5e-144">Close the page.</span></span>
 

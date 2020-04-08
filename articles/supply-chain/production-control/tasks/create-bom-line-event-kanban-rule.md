@@ -17,69 +17,69 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: e0247e50f03e61d8a04020d020c13afb812937b9
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: fefb33d568153670dbcb92db478e33db806809fc
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1837884"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3147105"
 ---
-# <a name="create-a-bom-line-event-kanban-rule"></a><span data-ttu-id="d749d-103">Opprette en Kanban-regel for hendelse for stykklistelinje</span><span class="sxs-lookup"><span data-stu-id="d749d-103">Create a BOM line event kanban rule</span></span>
+# <a name="create-a-bom-line-event-kanban-rule"></a><span data-ttu-id="e6c1f-103">Opprette en Kanban-regel for hendelse for stykklistelinje</span><span class="sxs-lookup"><span data-stu-id="e6c1f-103">Create a BOM line event kanban rule</span></span>
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="d749d-104">Denne oppgaven fokuserer på oppsettet som kreves for å opprette en kanban-regel for hendelse for å sikre forsyning for stykklistelinjer for produksjon i et blandet lean-produksjonsmiljø og klassisk produksjonsmiljø.</span><span class="sxs-lookup"><span data-stu-id="d749d-104">This task focuses on the setup needed to create an event kanban rule to ensure supply for production BOM lines in a mixed lean and classic production environment.</span></span> <span data-ttu-id="d749d-105">Demonstrasjonsdatafirmaet USMF brukes til å opprette denne oppgaven.</span><span class="sxs-lookup"><span data-stu-id="d749d-105">The demo data company used to create this task is USMF.</span></span> <span data-ttu-id="d749d-106">Denne oppgaven er ment for prosessingeniøren eller verdistrømsbehandling, når de klargjør produksjon av et nytt eller endret produkt.</span><span class="sxs-lookup"><span data-stu-id="d749d-106">This task is intended for the process engineer or the value stream manager, as they prepare production of a new or modified product.</span></span>
+<span data-ttu-id="e6c1f-104">Denne oppgaven fokuserer på oppsettet som kreves for å opprette en kanban-regel for hendelse for å sikre forsyning for stykklistelinjer for produksjon i et blandet lean-produksjonsmiljø og klassisk produksjonsmiljø.</span><span class="sxs-lookup"><span data-stu-id="e6c1f-104">This task focuses on the setup needed to create an event kanban rule to ensure supply for production BOM lines in a mixed lean and classic production environment.</span></span> <span data-ttu-id="e6c1f-105">Demonstrasjonsdatafirmaet USMF brukes til å opprette denne oppgaven.</span><span class="sxs-lookup"><span data-stu-id="e6c1f-105">The demo data company used to create this task is USMF.</span></span> <span data-ttu-id="e6c1f-106">Denne oppgaven er ment for prosessingeniøren eller verdistrømsbehandling, når de klargjør produksjon av et nytt eller endret produkt.</span><span class="sxs-lookup"><span data-stu-id="e6c1f-106">This task is intended for the process engineer or the value stream manager, as they prepare production of a new or modified product.</span></span>
 
 
-## <a name="create-a-new-kanban-rule"></a><span data-ttu-id="d749d-107">Opprett en ny Kanban-regel</span><span class="sxs-lookup"><span data-stu-id="d749d-107">Create a new kanban rule</span></span>
-1. <span data-ttu-id="d749d-108">Gå til Produksjonskontroll > Periodiske oppgaver > Kanban-antallsberegning > Kanban-regler.</span><span class="sxs-lookup"><span data-stu-id="d749d-108">Go to Production control > Periodic tasks > Kanban quantity calculation > Kanban rules.</span></span>
-2. <span data-ttu-id="d749d-109">Klikk Ny.</span><span class="sxs-lookup"><span data-stu-id="d749d-109">Click New.</span></span>
-3. <span data-ttu-id="d749d-110">Velg Uttak i Type-feltet.</span><span class="sxs-lookup"><span data-stu-id="d749d-110">In the Type field, select 'Withdrawal'.</span></span>
-    * <span data-ttu-id="d749d-111">Typen Uttak brukes til å opprette Kanbaner for overføring.</span><span class="sxs-lookup"><span data-stu-id="d749d-111">The Withdrawal type is used to create transfer kanbans.</span></span>  
-4. <span data-ttu-id="d749d-112">Velg Hendelse i feltet Etterfyllingsstrategi.</span><span class="sxs-lookup"><span data-stu-id="d749d-112">In the Replenishment strategy field, select 'Event'.</span></span>
-    * <span data-ttu-id="d749d-113">Hendelsesstrategien velges for å opprette overføringen av Kanbaner basert på en hendelse.</span><span class="sxs-lookup"><span data-stu-id="d749d-113">The Event strategy is selected to create the transfer of kanbans based on an event.</span></span> <span data-ttu-id="d749d-114">Senere i denne aktivitetsveiledningen vil vi utløse den ved å beregne en produksjonsordre.</span><span class="sxs-lookup"><span data-stu-id="d749d-114">Later in the task guide, we will trigger it by estimating a production order.</span></span>  
-5. <span data-ttu-id="d749d-115">Angi eller velg en verdi i feltet Første planaktivitet.</span><span class="sxs-lookup"><span data-stu-id="d749d-115">In the First plan activity field, enter or select a value.</span></span>
-    * <span data-ttu-id="d749d-116">Angi eller velg ReplenishSpeakerComponents.</span><span class="sxs-lookup"><span data-stu-id="d749d-116">Enter or select ReplenishSpeakerComponents.</span></span> <span data-ttu-id="d749d-117">Denne overføringsaktiviteten har mottakslager (utdata), og lokasjon 12, noe som innebærer at materiale vil bli flyttet til lokasjon 12 i lager 12.</span><span class="sxs-lookup"><span data-stu-id="d749d-117">This transfer activity has receipt (output) warehouse and location 12, which means that material will be moved to location 12 in warehouse 12.</span></span>  
-6. <span data-ttu-id="d749d-118">Vis delen Detaljer.</span><span class="sxs-lookup"><span data-stu-id="d749d-118">Expand the Details section.</span></span>
-7. <span data-ttu-id="d749d-119">Angi eller velg M0001 i Produkt-feltet.</span><span class="sxs-lookup"><span data-stu-id="d749d-119">In the Product field, enter or select M0001.</span></span>
-8. <span data-ttu-id="d749d-120">Utvid delen Hendelser.</span><span class="sxs-lookup"><span data-stu-id="d749d-120">Expand the Events section.</span></span>
-9. <span data-ttu-id="d749d-121">Velg Automatisk i hendelsesfeltet Stykklistelinje.</span><span class="sxs-lookup"><span data-stu-id="d749d-121">In the BOM line event field, select 'Automatic'.</span></span>
-    * <span data-ttu-id="d749d-122">Med hendelsesfeltet for stykklistelinje satt til Automatisk, vil en kanban opprettes for å oppfylle materialbehov for stykklistelinjer for produksjonsordre.</span><span class="sxs-lookup"><span data-stu-id="d749d-122">With the BOM line event field set to Automatic, kanban will be created to fulfill material needs for production order BOM lines.</span></span>  
-10. <span data-ttu-id="d749d-123">Lukk siden.</span><span class="sxs-lookup"><span data-stu-id="d749d-123">Close the page.</span></span>
+## <a name="create-a-new-kanban-rule"></a><span data-ttu-id="e6c1f-107">Opprett en ny Kanban-regel</span><span class="sxs-lookup"><span data-stu-id="e6c1f-107">Create a new kanban rule</span></span>
+1. <span data-ttu-id="e6c1f-108">Gå til Produksjonskontroll > Periodiske oppgaver > Kanban-antallsberegning > Kanban-regler.</span><span class="sxs-lookup"><span data-stu-id="e6c1f-108">Go to Production control > Periodic tasks > Kanban quantity calculation > Kanban rules.</span></span>
+2. <span data-ttu-id="e6c1f-109">Klikk Ny.</span><span class="sxs-lookup"><span data-stu-id="e6c1f-109">Click New.</span></span>
+3. <span data-ttu-id="e6c1f-110">Velg Uttak i Type-feltet.</span><span class="sxs-lookup"><span data-stu-id="e6c1f-110">In the Type field, select 'Withdrawal'.</span></span>
+    * <span data-ttu-id="e6c1f-111">Typen Uttak brukes til å opprette Kanbaner for overføring.</span><span class="sxs-lookup"><span data-stu-id="e6c1f-111">The Withdrawal type is used to create transfer kanbans.</span></span>  
+4. <span data-ttu-id="e6c1f-112">Velg Hendelse i feltet Etterfyllingsstrategi.</span><span class="sxs-lookup"><span data-stu-id="e6c1f-112">In the Replenishment strategy field, select 'Event'.</span></span>
+    * <span data-ttu-id="e6c1f-113">Hendelsesstrategien velges for å opprette overføringen av Kanbaner basert på en hendelse.</span><span class="sxs-lookup"><span data-stu-id="e6c1f-113">The Event strategy is selected to create the transfer of kanbans based on an event.</span></span> <span data-ttu-id="e6c1f-114">Senere i denne aktivitetsveiledningen vil vi utløse den ved å beregne en produksjonsordre.</span><span class="sxs-lookup"><span data-stu-id="e6c1f-114">Later in the task guide, we will trigger it by estimating a production order.</span></span>  
+5. <span data-ttu-id="e6c1f-115">Angi eller velg en verdi i feltet Første planaktivitet.</span><span class="sxs-lookup"><span data-stu-id="e6c1f-115">In the First plan activity field, enter or select a value.</span></span>
+    * <span data-ttu-id="e6c1f-116">Angi eller velg ReplenishSpeakerComponents.</span><span class="sxs-lookup"><span data-stu-id="e6c1f-116">Enter or select ReplenishSpeakerComponents.</span></span> <span data-ttu-id="e6c1f-117">Denne overføringsaktiviteten har mottakslager (utdata), og lokasjon 12, noe som innebærer at materiale vil bli flyttet til lokasjon 12 i lager 12.</span><span class="sxs-lookup"><span data-stu-id="e6c1f-117">This transfer activity has receipt (output) warehouse and location 12, which means that material will be moved to location 12 in warehouse 12.</span></span>  
+6. <span data-ttu-id="e6c1f-118">Vis delen Detaljer.</span><span class="sxs-lookup"><span data-stu-id="e6c1f-118">Expand the Details section.</span></span>
+7. <span data-ttu-id="e6c1f-119">Angi eller velg M0001 i Produkt-feltet.</span><span class="sxs-lookup"><span data-stu-id="e6c1f-119">In the Product field, enter or select M0001.</span></span>
+8. <span data-ttu-id="e6c1f-120">Utvid delen Hendelser.</span><span class="sxs-lookup"><span data-stu-id="e6c1f-120">Expand the Events section.</span></span>
+9. <span data-ttu-id="e6c1f-121">Velg Automatisk i hendelsesfeltet Stykklistelinje.</span><span class="sxs-lookup"><span data-stu-id="e6c1f-121">In the BOM line event field, select 'Automatic'.</span></span>
+    * <span data-ttu-id="e6c1f-122">Med hendelsesfeltet for stykklistelinje satt til Automatisk, vil en kanban opprettes for å oppfylle materialbehov for stykklistelinjer for produksjonsordre.</span><span class="sxs-lookup"><span data-stu-id="e6c1f-122">With the BOM line event field set to Automatic, kanban will be created to fulfill material needs for production order BOM lines.</span></span>  
+10. <span data-ttu-id="e6c1f-123">Lukk siden.</span><span class="sxs-lookup"><span data-stu-id="e6c1f-123">Close the page.</span></span>
 
-## <a name="create-and-modify-a-new-production-order"></a><span data-ttu-id="d749d-124">Opprette og endre en ny produksjonsordre</span><span class="sxs-lookup"><span data-stu-id="d749d-124">Create and modify a new production order</span></span>
-1. <span data-ttu-id="d749d-125">Gå til Produksjonskontroll > Produksjonsordrer > Alle produksjonsordrer.</span><span class="sxs-lookup"><span data-stu-id="d749d-125">Go to Production control > Production orders > All production orders.</span></span>
-2. <span data-ttu-id="d749d-126">Klikk Ny produksjonsordre.</span><span class="sxs-lookup"><span data-stu-id="d749d-126">Click New production order.</span></span>
-3. <span data-ttu-id="d749d-127">Angi eller velg en verdi i Varenummer-feltet.</span><span class="sxs-lookup"><span data-stu-id="d749d-127">In the Item number field, enter or select a value.</span></span>
-    * <span data-ttu-id="d749d-128">Angi eller velg L0001.</span><span class="sxs-lookup"><span data-stu-id="d749d-128">Enter or select 'L0001'.</span></span> <span data-ttu-id="d749d-129">Vi bruker vare L0001 fordi vare M0001 inngår i stykklisten for vare L0001.</span><span class="sxs-lookup"><span data-stu-id="d749d-129">We use item L0001 because item M0001 is included in the BOM for item L0001.</span></span>  
-4. <span data-ttu-id="d749d-130">Klikk Opprett.</span><span class="sxs-lookup"><span data-stu-id="d749d-130">Click Create.</span></span>
-5. <span data-ttu-id="d749d-131">Klikk koblingen i raden for L0001 i listen.</span><span class="sxs-lookup"><span data-stu-id="d749d-131">In the list, click the link in the row for L0001</span></span>
-6. <span data-ttu-id="d749d-132">Klikk Stykkliste.</span><span class="sxs-lookup"><span data-stu-id="d749d-132">Click BOM.</span></span>
-7. <span data-ttu-id="d749d-133">Klikk koblingen i den valgte raden i listen.</span><span class="sxs-lookup"><span data-stu-id="d749d-133">In the list, click the link in the selected row.</span></span>
-8. <span data-ttu-id="d749d-134">Klikk Rediger.</span><span class="sxs-lookup"><span data-stu-id="d749d-134">Click Edit.</span></span>
-9. <span data-ttu-id="d749d-135">Velg Tilknyttet forsyning i Linjetype-feltet.</span><span class="sxs-lookup"><span data-stu-id="d749d-135">In the Line type field, select 'Pegged supply'.</span></span>
-    * <span data-ttu-id="d749d-136">Tilknyttet forsyning velges for å utløse forsyningsopprettelsen av en kanban.</span><span class="sxs-lookup"><span data-stu-id="d749d-136">Pegged supply is selected to trigger the supply creation of a kanban.</span></span>  
-10. <span data-ttu-id="d749d-137">Velg Nei i Ressursforbruk-feltet.</span><span class="sxs-lookup"><span data-stu-id="d749d-137">Select No in the Resource consumption field.</span></span>
-    * <span data-ttu-id="d749d-138">Hvis du fjerner merket for Ressursforbruk, kan vi endre lageret.</span><span class="sxs-lookup"><span data-stu-id="d749d-138">Clearing the check box of Resource consumption lets us change the warehouse.</span></span>  
-11. <span data-ttu-id="d749d-139">Vis delen Lagerdimensjoner.</span><span class="sxs-lookup"><span data-stu-id="d749d-139">Expand the Inventory dimensions section.</span></span>
-12. <span data-ttu-id="d749d-140">Skriv inn 12 i Lager-feltet.</span><span class="sxs-lookup"><span data-stu-id="d749d-140">In the Warehouse field, type '12'.</span></span>
-    * <span data-ttu-id="d749d-141">Lageret er satt til 12, fordi dette er utleveringslager for uttaksaktiviteten.</span><span class="sxs-lookup"><span data-stu-id="d749d-141">Warehouse is set to 12 because this is the output warehouse for the withdrawal activity.</span></span>  
-13. <span data-ttu-id="d749d-142">Skriv inn 12 i Lokasjon-feltet.</span><span class="sxs-lookup"><span data-stu-id="d749d-142">In the Location field, type '12'.</span></span>
-    * <span data-ttu-id="d749d-143">Lokasjonen er satt til 12, fordi dette er utleveringslokasjonen for uttaksaktiviteten.</span><span class="sxs-lookup"><span data-stu-id="d749d-143">Location is set to 12 because this is the output location of the withdrawal activity.</span></span>  
-14. <span data-ttu-id="d749d-144">Lukk siden.</span><span class="sxs-lookup"><span data-stu-id="d749d-144">Close the page.</span></span>
-15. <span data-ttu-id="d749d-145">Lukk siden.</span><span class="sxs-lookup"><span data-stu-id="d749d-145">Close the page.</span></span>
+## <a name="create-and-modify-a-new-production-order"></a><span data-ttu-id="e6c1f-124">Opprette og endre en ny produksjonsordre</span><span class="sxs-lookup"><span data-stu-id="e6c1f-124">Create and modify a new production order</span></span>
+1. <span data-ttu-id="e6c1f-125">Gå til Produksjonskontroll > Produksjonsordrer > Alle produksjonsordrer.</span><span class="sxs-lookup"><span data-stu-id="e6c1f-125">Go to Production control > Production orders > All production orders.</span></span>
+2. <span data-ttu-id="e6c1f-126">Klikk Ny produksjonsordre.</span><span class="sxs-lookup"><span data-stu-id="e6c1f-126">Click New production order.</span></span>
+3. <span data-ttu-id="e6c1f-127">Angi eller velg en verdi i Varenummer-feltet.</span><span class="sxs-lookup"><span data-stu-id="e6c1f-127">In the Item number field, enter or select a value.</span></span>
+    * <span data-ttu-id="e6c1f-128">Angi eller velg L0001.</span><span class="sxs-lookup"><span data-stu-id="e6c1f-128">Enter or select 'L0001'.</span></span> <span data-ttu-id="e6c1f-129">Vi bruker vare L0001 fordi vare M0001 inngår i stykklisten for vare L0001.</span><span class="sxs-lookup"><span data-stu-id="e6c1f-129">We use item L0001 because item M0001 is included in the BOM for item L0001.</span></span>  
+4. <span data-ttu-id="e6c1f-130">Klikk Opprett.</span><span class="sxs-lookup"><span data-stu-id="e6c1f-130">Click Create.</span></span>
+5. <span data-ttu-id="e6c1f-131">Klikk koblingen i raden for L0001 i listen.</span><span class="sxs-lookup"><span data-stu-id="e6c1f-131">In the list, click the link in the row for L0001</span></span>
+6. <span data-ttu-id="e6c1f-132">Klikk Stykkliste.</span><span class="sxs-lookup"><span data-stu-id="e6c1f-132">Click BOM.</span></span>
+7. <span data-ttu-id="e6c1f-133">Klikk koblingen i den valgte raden i listen.</span><span class="sxs-lookup"><span data-stu-id="e6c1f-133">In the list, click the link in the selected row.</span></span>
+8. <span data-ttu-id="e6c1f-134">Klikk Rediger.</span><span class="sxs-lookup"><span data-stu-id="e6c1f-134">Click Edit.</span></span>
+9. <span data-ttu-id="e6c1f-135">Velg Tilknyttet forsyning i Linjetype-feltet.</span><span class="sxs-lookup"><span data-stu-id="e6c1f-135">In the Line type field, select 'Pegged supply'.</span></span>
+    * <span data-ttu-id="e6c1f-136">Tilknyttet forsyning velges for å utløse forsyningsopprettelsen av en kanban.</span><span class="sxs-lookup"><span data-stu-id="e6c1f-136">Pegged supply is selected to trigger the supply creation of a kanban.</span></span>  
+10. <span data-ttu-id="e6c1f-137">Velg Nei i Ressursforbruk-feltet.</span><span class="sxs-lookup"><span data-stu-id="e6c1f-137">Select No in the Resource consumption field.</span></span>
+    * <span data-ttu-id="e6c1f-138">Hvis du fjerner merket for Ressursforbruk, kan vi endre lageret.</span><span class="sxs-lookup"><span data-stu-id="e6c1f-138">Clearing the check box of Resource consumption lets us change the warehouse.</span></span>  
+11. <span data-ttu-id="e6c1f-139">Vis delen Lagerdimensjoner.</span><span class="sxs-lookup"><span data-stu-id="e6c1f-139">Expand the Inventory dimensions section.</span></span>
+12. <span data-ttu-id="e6c1f-140">Skriv inn 12 i Lager-feltet.</span><span class="sxs-lookup"><span data-stu-id="e6c1f-140">In the Warehouse field, type '12'.</span></span>
+    * <span data-ttu-id="e6c1f-141">Lageret er satt til 12, fordi dette er utleveringslager for uttaksaktiviteten.</span><span class="sxs-lookup"><span data-stu-id="e6c1f-141">Warehouse is set to 12 because this is the output warehouse for the withdrawal activity.</span></span>  
+13. <span data-ttu-id="e6c1f-142">Skriv inn 12 i Lokasjon-feltet.</span><span class="sxs-lookup"><span data-stu-id="e6c1f-142">In the Location field, type '12'.</span></span>
+    * <span data-ttu-id="e6c1f-143">Lokasjonen er satt til 12, fordi dette er utleveringslokasjonen for uttaksaktiviteten.</span><span class="sxs-lookup"><span data-stu-id="e6c1f-143">Location is set to 12 because this is the output location of the withdrawal activity.</span></span>  
+14. <span data-ttu-id="e6c1f-144">Lukk siden.</span><span class="sxs-lookup"><span data-stu-id="e6c1f-144">Close the page.</span></span>
+15. <span data-ttu-id="e6c1f-145">Lukk siden.</span><span class="sxs-lookup"><span data-stu-id="e6c1f-145">Close the page.</span></span>
 
-## <a name="estimate-the-production-order-and-view-the-kanban-created"></a><span data-ttu-id="d749d-146">Beregne produksjonsordren og vise opprettet kanban</span><span class="sxs-lookup"><span data-stu-id="d749d-146">Estimate the production order and view the kanban created</span></span>
-1. <span data-ttu-id="d749d-147">Klikk Estimer.</span><span class="sxs-lookup"><span data-stu-id="d749d-147">Click Estimate.</span></span>
-    * <span data-ttu-id="d749d-148">Estimering av produksjonsordren utløser oppretting av tilknyttet kanban for å levere M0001.</span><span class="sxs-lookup"><span data-stu-id="d749d-148">Estimating the production order will trigger the creation of the associated kanban to supply item M0001.</span></span>  
-2. <span data-ttu-id="d749d-149">Klikk OK.</span><span class="sxs-lookup"><span data-stu-id="d749d-149">Click OK.</span></span>
-3. <span data-ttu-id="d749d-150">Lukk siden.</span><span class="sxs-lookup"><span data-stu-id="d749d-150">Close the page.</span></span>
-4. <span data-ttu-id="d749d-151">Lukk siden.</span><span class="sxs-lookup"><span data-stu-id="d749d-151">Close the page.</span></span>
-5. <span data-ttu-id="d749d-152">Gå til Behandling av produktinformasjon > Lean manufacturing > Kanban-regler.</span><span class="sxs-lookup"><span data-stu-id="d749d-152">Go to Product information management > Lean manufacturing > Kanban rules.</span></span>
-6. <span data-ttu-id="d749d-153">Klikk koblingen i den valgte raden i listen.</span><span class="sxs-lookup"><span data-stu-id="d749d-153">In the list, click the link in the selected row.</span></span>
-    * <span data-ttu-id="d749d-154">Velg Kanban-regel for hendelse som ble opprettet for vare M0001.</span><span class="sxs-lookup"><span data-stu-id="d749d-154">Select the event kanban rule created for item M0001.</span></span>  
-7. <span data-ttu-id="d749d-155">Vis delen Kanbaner.</span><span class="sxs-lookup"><span data-stu-id="d749d-155">Expand the Kanbans section.</span></span>
-8. <span data-ttu-id="d749d-156">Merk den valgte raden i listen.</span><span class="sxs-lookup"><span data-stu-id="d749d-156">In the list, mark the selected row.</span></span>
-    * <span data-ttu-id="d749d-157">Legg merke til kanbanen som er opprettet for å levere M0001 for den estimerte produksjonsordren.</span><span class="sxs-lookup"><span data-stu-id="d749d-157">Notice the kanban created to supply M0001 for the estimated production order.</span></span>  
-    * <span data-ttu-id="d749d-158">Dette er det siste trinnet!</span><span class="sxs-lookup"><span data-stu-id="d749d-158">This is the last step!</span></span>  
+## <a name="estimate-the-production-order-and-view-the-kanban-created"></a><span data-ttu-id="e6c1f-146">Beregne produksjonsordren og vise opprettet kanban</span><span class="sxs-lookup"><span data-stu-id="e6c1f-146">Estimate the production order and view the kanban created</span></span>
+1. <span data-ttu-id="e6c1f-147">Klikk Estimer.</span><span class="sxs-lookup"><span data-stu-id="e6c1f-147">Click Estimate.</span></span>
+    * <span data-ttu-id="e6c1f-148">Estimering av produksjonsordren utløser oppretting av tilknyttet kanban for å levere M0001.</span><span class="sxs-lookup"><span data-stu-id="e6c1f-148">Estimating the production order will trigger the creation of the associated kanban to supply item M0001.</span></span>  
+2. <span data-ttu-id="e6c1f-149">Klikk OK.</span><span class="sxs-lookup"><span data-stu-id="e6c1f-149">Click OK.</span></span>
+3. <span data-ttu-id="e6c1f-150">Lukk siden.</span><span class="sxs-lookup"><span data-stu-id="e6c1f-150">Close the page.</span></span>
+4. <span data-ttu-id="e6c1f-151">Lukk siden.</span><span class="sxs-lookup"><span data-stu-id="e6c1f-151">Close the page.</span></span>
+5. <span data-ttu-id="e6c1f-152">Gå til Behandling av produktinformasjon > Lean manufacturing > Kanban-regler.</span><span class="sxs-lookup"><span data-stu-id="e6c1f-152">Go to Product information management > Lean manufacturing > Kanban rules.</span></span>
+6. <span data-ttu-id="e6c1f-153">Klikk koblingen i den valgte raden i listen.</span><span class="sxs-lookup"><span data-stu-id="e6c1f-153">In the list, click the link in the selected row.</span></span>
+    * <span data-ttu-id="e6c1f-154">Velg Kanban-regel for hendelse som ble opprettet for vare M0001.</span><span class="sxs-lookup"><span data-stu-id="e6c1f-154">Select the event kanban rule created for item M0001.</span></span>  
+7. <span data-ttu-id="e6c1f-155">Vis delen Kanbaner.</span><span class="sxs-lookup"><span data-stu-id="e6c1f-155">Expand the Kanbans section.</span></span>
+8. <span data-ttu-id="e6c1f-156">Merk den valgte raden i listen.</span><span class="sxs-lookup"><span data-stu-id="e6c1f-156">In the list, mark the selected row.</span></span>
+    * <span data-ttu-id="e6c1f-157">Legg merke til kanbanen som er opprettet for å levere M0001 for den estimerte produksjonsordren.</span><span class="sxs-lookup"><span data-stu-id="e6c1f-157">Notice the kanban created to supply M0001 for the estimated production order.</span></span>  
+    * <span data-ttu-id="e6c1f-158">Dette er det siste trinnet!</span><span class="sxs-lookup"><span data-stu-id="e6c1f-158">This is the last step!</span></span>  
 
