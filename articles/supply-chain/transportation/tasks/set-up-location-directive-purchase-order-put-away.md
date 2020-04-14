@@ -16,16 +16,16 @@ ms.search.industry: Distribution
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: aea3f08ea2d1bd584448c3033aea41eca2a0e3ce
-ms.sourcegitcommit: 0e2e4d8419c03a30d2223662ba8d403a28fa31eb
+ms.openlocfilehash: 54c75696f7147a7a4eb7b9d984936af9c28ef501
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/12/2019
-ms.locfileid: "1870922"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3146221"
 ---
 # <a name="set-up-a-location-directive-for-purchase-order-put-away"></a>Definere et lokasjonsdirektiv for bestillings
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Dette emnet forklarer hvordan du definerer et enkelt lokasjonsdirektiv. Eksemplet som vises, oppretter et lokasjonsdirektiv som skal brukes til å avgjøre hvor du vil plassere varer som er mottatt for en bestilling. Du kan spille av denne oppgaveveiledningen med dataene som er nevnt, ved hjelp av demonstrasjonsdataselskapet USMF. Forutsetninger: Du må opprette en disposisjonskode. I denne fremgangsmåten bruker vi en disposisjonskode kalt Endre navn. Hvis du oppretter et lokasjonsdirektiv i dine egne data, må du ha definert avansert lagerstyring for lager og varer. Denne fremgangsmåten er ment for lagersjef.
 

@@ -15,33 +15,33 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: f61228d328521d0c6fe8e0ae704001a65d03151f
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 207309e8be6c097cec187f3475a489330e1f6b6c
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2249233"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3142691"
 ---
 # <a name="design-er-expressions-to-call-application-class-methods"></a>Utforme ER-uttrykk for å kalle programklassemetoder
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Denne veiledningen gir informasjon om hvordan du bruker den eksisterende programlogikken i elektronisk rapportering (ER)-konfigurasjoner på nytt ved å kalle nødvendige metoder for programklasser i ER-uttrykk. Verdier for argumenter for kallklasser kan defineres dynamisk under kjøring: for eksempel basert på informasjon i analysedokumentet for å sikre nøyaktighet. I denne veiledningen skal du opprette de nødvendige ER-konfigurasjonene for eksempelfirmaet, Litware, Inc. Denne fremgangsmåten er opprettet for brukere som har tilordnet rollen som Systemansvarlig eller Utvikler av elektronisk rapportering. 
 
 Disse trinnene kan fullføres ved hjelp av hvilket som helst datasett. Du må også laste ned og lagre følgende fil lokalt: (https://go.microsoft.com/fwlink/?linkid=862266): SampleIncomingMessage.txt.
 
-For å fullføre disse trinnene må du først fullføre trinnene i fremgangsmåten "ER Opprette en konfigurasjonsleverandør og merke den som aktiv..
+For å fullføre disse trinnene må du først fullføre trinnene i fremgangsmåten "ER Opprette en konfigurasjonsleverandør og merke den som aktiv.
 
 1. Gå til Organisasjonsstyring > Arbeidsområder > Elektronisk rapportering.
-    * Kontroller at konfigurasjonsleverandøren for eksempelfirma Litware, Inc. er tilgjengelig og merket som aktiv. Hvis du ikke ser denne konfigurasjonsleverandøren, må du først fullføre trinnene i prosedyren Opprette en konfigurasjonsleverandør og merke den som aktiv.   
-    * Uou utformer en prosess for å analysere innkommende bankkontoutdrag for en oppdatering av programdata. Du vil motta innkommende bankkontoutdrag som TXT-filer som inneholder IBAN-koder. Som en del av importprosessen for bankkontoutdrag må du validere riktigheten av disse IBAN-kodene ved hjelp av logikken som allerede finnes.   
+    * Kontroller at konfigurasjonsleverandøren for eksempelfirma Litware, Inc. er tilgjengelig og merket som aktiv. Hvis du ikke ser denne konfigurasjonsleverandøren, må du først fullføre trinnene i prosedyren "Opprette en konfigurasjonsleverandør og merke den som aktiv".   
+    * Du utformer en prosess for å analysere innkommende bankkontoutdrag for en oppdatering av programdata. Du vil motta innkommende bankkontoutdrag som TXT-filer som inneholder IBAN-koder. Som en del av importprosessen for bankkontoutdrag må du validere riktigheten av disse IBAN-kodene ved hjelp av logikken som allerede finnes.   
 
 ## <a name="import-a-new-er-model-configuration"></a>Importere en ny ER-konfigurasjon
 1. Finn og velg ønsket post i listen.
     * Velg flisen Microsoft-leverandør.  
 2. Klikk Repositorier.
 3. Klikk Vis filtre.
-4. Legg til et filterfelt 'Typenavn'. I Navn-feltet angir du verdien “ressurser”, velger “inneholder”-filteroperatoren og klikker på Bruk.
+4. Legg til et "Typenavn"-filterfelt. I Navn-feltet angir du verdien "ressurser", velger "inneholder"-filteroperatoren og klikker på Bruk.
 5. Klikk Åpne.
 6. Velg Betalingsmodell i treet.
     * Hvis Importer-knappen på hurtigfanen Versjoner ikke er aktivert, har du allerede importert versjon 1 av ER-konfigurasjonen "Betalingsmodell". Du kan hoppe over resten trinnene i denne underoppgaven.   
@@ -142,7 +142,7 @@ For å fullføre disse trinnene må du først fullføre trinnene i fremgangsmåt
     * check_codes.verifyMOD1271_36(format.Root.Rows.Fields.IBAN)  
 39. Klikk Lagre.
 40. Lukk siden.
-    * Valideringsbetingelsen er konfigurert til å returnere FALSE for en ugyldig IBAN-kode ved å kalle den eksisterende metoden 'verifyMOD1271_36' i programklassen 'ISO7064'. Legg merke til at verdien til IBAN-koden defineres dynamisk under kjøring som argumentet for kallmetoden basert på innholdet i TXT-filen for analyse.   
+    * Valideringsbetingelsen er konfigurert til å returnere FALSE for en ugyldig IBAN-kode ved å kalle den eksisterende metoden "verifyMOD1271_36" i programklassen "ISO7064". Legg merke til at verdien til IBAN-koden defineres dynamisk under kjøring som argumentet for kallmetoden basert på innholdet i TXT-filen for analyse.   
 41. Klikk Rediger melding.
 42. Angi 'CONCATENATE("Invalid IBAN code has been found:  ", format.Root.Rows.Fields.IBAN)' i Formel-feltet.
     * CONCATENATE("Invalid IBAN code has been found:  ", format.Root.Rows.Fields.IBAN)  

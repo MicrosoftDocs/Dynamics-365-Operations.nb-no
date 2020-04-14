@@ -17,16 +17,16 @@ ms.search.industry: Distribution
 ms.author: mirzaab
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: bc28149aa56302e09eb0e7be581a582f58a76416
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 9c813a429d7837493663625bde341638eecfc5ee
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1847357"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3148520"
 ---
 # <a name="configure-wave-processing"></a>Konfigurere bølgebehandling
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Denne veiledningen beskriver hvordan du definerer vilkår som bestemmer hvilket arbeid som genereres for et lager når en bølge behandles, og om bølger behandles manuelt eller automatisk. Du angir vilkårene ved å definere bølgemaler og spørringer som samsvarer med en bølge med frigitte linjer i bestillinger, produksjonsordrer eller Kanban-ordrer. Bølgebehandling brukes i lagre som bruker funksjonaliteten i lagerstyringsmodulen, og ikke de som bruker funksjonaliteten i lagerstyringsmodulen. Du kan kjøre denne prosedyren i demonstrasjonsdataselskapet USMF.
 
@@ -44,7 +44,7 @@ Denne veiledningen beskriver hvordan du definerer vilkår som bestemmer hvilket 
 12. Sett alternativet **Automatiser frigivelse av etterfyllingsarbeid** til **Ja**. Velg dette alternativet for å opprette behovsbasert etterfyllingarbeid og frigi det automatisk. Du må legge til etterfyllingsbølgemetoden i bølgemalen og opprette en mal for etterfylling av typen Bølgebehov.  
 13. Vis delen **Metoder**.
 
-    - Bølgemalmetodene lar deg kontrollere rekkefølgen for aktiviteter som hver bølgen går gjennom når den behandles. Du kan for eksempel ha en metode for etterfylling for bølge. Når du legger til en metode, vises den automatisk på riktig sted i trinnrekkefølgen. Hvis du har angitt Ja for alternativet Automatiser frigivelse av etterfyllingsarbeid, må du legge til etterfyllingsmetoden her.  
+    - Bølgemalmetodene lar deg kontrollere rekkefølgen for aktiviteter som hver bølge går gjennom når den behandles. Du kan for eksempel ha en metode for etterfylling for bølge. Når du legger til en metode, vises den automatisk på riktig sted i trinnrekkefølgen. Hvis du har angitt Ja for alternativet Automatiser frigivelse av etterfyllingsarbeid, må du legge til etterfyllingsmetoden her.  
     - Bølgeattributter fungerer som filtre for å begrense hva slags varer som kan bruke bølgen. Du kan for eksempel angir en varegruppe.  
 14. Klikk **Lagre**.
 15. Lukk siden.

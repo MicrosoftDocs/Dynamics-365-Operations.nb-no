@@ -15,22 +15,22 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 26a3dee8b73ae710def7e526ceefa7194171d716
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: a261acee47c6d52e3a1390d0e55cb3f9d197efec
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2182675"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3142262"
 ---
 # <a name="design-er-configurations-to-parse-incoming-documents"></a>Utforme ER-konfigurasjoner til å analysere innkommende dokumenter
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
-Denne prosedyren viser hvordan du utformer elektronisk rapportering (ER)-konfigurasjoner for å analysere et innkommende elektronisk dokument. I denne prosedyren må du importere de nødvendige ER-konfigurasjonene som er opprettet for eksempelfirmaet, Litware, Inc, og bruke dem til å analysere innkommende elektroniske dokumenter. For å fullføre trinnene i denne prosedyren må du først fullføre prosedyren "ER Opprette en konfigurasjonsleverandør og merke den som aktiv."
+Denne prosedyren viser hvordan du utformer elektronisk rapportering (ER)-konfigurasjoner for å analysere et innkommende elektronisk dokument. I denne prosedyren må du importere de nødvendige ER-konfigurasjonene som er opprettet for eksempelfirmaet, Litware, Inc, og bruke dem til å analysere innkommende elektroniske dokumenter. For å fullføre trinnene i denne prosedyren må du først fullføre prosedyren "ER Opprette en konfigurasjonsleverandør og merke den som aktiv".
 
 Denne fremgangsmåten er opprettet for brukere med rollen som Systemansvarlig eller Utvikler av elektronisk rapportering. 
 
-Disse trinnene kan fullføres ved hjelp av hvilket som helst datasett. Før du begynner laster du ned og lagrer filene i emnet, "Analysere innkommende dokumenter for å oppdatere programdata" (https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/parse-incoming-electronic-documents). Filene er: EFSTA model.xml, EFSTA format.xml, Response1.xml, Response2.xml, Response3.xml, Response4.xml.
+Disse trinnene kan fullføres ved hjelp av hvilket som helst datasett. Før du begynner laster du ned og lagrer filene i emnet "Analysere innkommende dokumenter for å oppdatere programdata" (https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/parse-incoming-electronic-documents). Filene er: EFSTA model.xml, EFSTA format.xml, Response1.xml, Response2.xml, Response3.xml, Response4.xml.
 
 1. Gå til Organisasjonsstyring > Arbeidsområder > Elektronisk rapportering.
     * Kontroller at konfigurasjonsleverandøren for eksempelfirmaet "Litware, Inc." er tilgjengelig og merket som aktiv. Hvis du ikke ser denne konfigurasjonsleverandøren, må du fullføre trinnene i prosedyren "Opprette en konfigurasjonsleverandør og merke den som aktiv".  
@@ -72,7 +72,7 @@ Importer ER-konfigurasjonen som inneholder eksempeldatamodellen som er utviklet 
 21. I treet utvider du 'format\Svar: Case(Responses)'.
     * Se gjennom strukturen i format-datakilden. Legg merke til at alle tre svartypene tilbys separat.   
 22. I treet velger du 'format\Svar: Case(Responses)\aType'.
-    * Datakildeelementet "aType" er lagt til for å angi svartypen og er bundet til datamodellelementet 'Type'.  
+    * Datakildeelementet "aType" er lagt til for å angi svartypen og er bundet til datamodellelementet "Type".  
 23. Klikk kategorien Valideringer.
 24. I treet velger du 'Type = format.Responses.aType'.
     * Legg merke til at ER-valideringen er konfigurert for å informere brukeren om situasjonen når svarstrukturen ikke stemmer med bekreftelsen av transaksjonens innsending eller informasjonen om den siste transaksjonen som er sendt (svarsak som ikke støttes).   

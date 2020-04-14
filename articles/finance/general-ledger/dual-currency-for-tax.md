@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: vstehman
 ms.search.validFrom: 2020-01-14
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 1ba4d09240888f0c533fb07614e75ffecea0742c
-ms.sourcegitcommit: 1d5a4f70a931e78b06811add97c1962e8d93689b
+ms.openlocfilehash: 863403dc3b2444f00f0cac27a494fc49d3d70de7
+ms.sourcegitcommit: 34e543e807ac8790597f522fe3b4f0266cf4ee56
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "3124099"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "3161598"
 ---
 # <a name="dual-currency-support-for-sales-tax"></a>Støtte for dobbel valuta for merverdiavgift
 [!include [banner](../includes/banner.md)]
@@ -34,7 +34,7 @@ Funksjonen for dobbel valuta for Dynamics 365 Finance ble innført i versjon 8.1
 
 I tidligere versjoner ble transaksjoner konvertert til rapporteringsvalutaen i følgende rekkefølge: 
 
-Totalen for transaksjonen ble beregnet i transaksjonsvalutaen > transaksjonsbeløpet ble konvertert til regnskapsvalutaen > regnskapsvalutabeløpet ble konvertert til rapporteringsvalutaen
+- Totalen for transaksjonen ble beregnet i transaksjonsvalutaen > transaksjonsbeløpet ble konvertert til regnskapsvalutaen > regnskapsvalutabeløpet ble konvertert til rapporteringsvalutaen
 
 Etter aktivering av funksjonen for dobbel valuta ble transaksjoner konvertert til rapporteringsvalutaen i følgende rekkefølge:
 
@@ -48,8 +48,6 @@ Som en konsekvens av støtte for dobbel valuta er to nye funksjoner tilgjengelig
 - Automatisk saldo for avgiftsutligning i rapporteringsvaluta (lansert i versjon 10.0.11)
 
 Støtte for dobbel valuta for merverdiavgift sikrer at avgifter beregnes nøyaktig i mva-valutaen, og at mva-utligningsperioden beregnes nøyaktig i både regnskapsvalutaen og rapporteringsvalutaen. 
-
-De nye funksjonene er for øyeblikket aktivert for private testkunder. Når du skal aktivere funksjonene, utfører du en serviceforespørsel via tilsvarende kanaler til Microsoft.
 
 ## <a name="sales-tax-conversion"></a>Mva-omregning
 

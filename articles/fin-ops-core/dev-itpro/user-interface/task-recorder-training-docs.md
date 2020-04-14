@@ -3,7 +3,7 @@ title: Lage dokumentasjon eller opplæring med Oppgaveopptaker
 description: Dette emnet forklarer hva Oppgaveopptaker og oppgaveveiledninger er, hvordan du oppretter oppgaveopptak og hvordan du tilpasser Microsoft-oppgaveveiledninger og inkluderer dem i hjelpen.
 author: josaw1
 manager: AnnBe
-ms.date: 10/24/2017
+ms.date: 03/24/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 268b95aad57c2e4863a3f58cd54828dbb0e09465
-ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
+ms.openlocfilehash: 927f6475e60b5b93aac0e0c2840cb0b4fc7f0ac8
+ms.sourcegitcommit: 61f9e15c5791d27db392d0a90cd781aa8e5baa6f
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3006201"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "3164564"
 ---
 # <a name="create-documentation-or-training-with-task-recorder"></a>Lage dokumentasjon eller opplæring med Oppgaveopptaker
 
@@ -40,8 +40,6 @@ Dette emnet forklarer hva Oppgaveopptaker og oppgaveveiledninger er, hvordan du 
 Oppgaveopptak er et verktøy du kan bruke til å registrere handlingene du utfører i brukergrensesnittet for produktet. Når du bruker oppgaveopptakeren, blir alt du gjør i brukergrensesnittet som kjøres mot serveren, for eksempel tilføying av verdier, endring av innstillinger og fjerning av verdier, tatt opp. Samlet kalles trinnene som du registrerer en *oppgaveregistrering*. Oppgaveopptak kan brukes på mange måter:
 
 -   **Oppgaveopptak kan spilles av som oppgaveveiledninger.** Oppgaveopptak er en integrert del av hjelpeopplevelsen. En oppgaveveiledning er en styrt, veiledet, interaktiv opplevelse gjennom trinnene i en forretningsprosess. Brukeren blir veiledet gjennom hvert trinn ved hjelp av en popup-melding (eller «boble») som animeres i brukergrensesnittet og peker på elementet i brukergrensesnittet som brukeren skal bruke. "Boblen" gir også informasjon om hvordan du bruker elementet, for eksempel "Klikk her" eller "Angi en verdi i dette feltet". En oppgaveveiledning kjører mot brukerens gjeldende datasett, og dataene som angis, lagres i brukerens miljø.
--   **Oppgaveopptak kan vises som fremgangsmåtetrinn i Hjelp-ruten.** Du kan bruke Hjelp-ruten til å søke etter og vise oppgaveopptak. Du får tilgang til Hjelp-ruten ved å klikke på **?** ikonet i navigasjonsfeltet øverst, eller du kan bruke hurtigtasten **Ctrl+Skift+?**. Du kan lese trinnene i et oppgaveopptak i Hjelp-ruten, eller du kan velge å spille av opptaket som en oppgaveveiledning, slik at den veileder deg gjennom brukergrensesnittet.
--   **Du kan lagre oppgaveopptak i Forretningsprosessmodelerer.** Du kan lagre oppgaveopptaket på en linje i et hierarki i et BPM-bibliotek (forretningsprosessmodellerer) i Lifecycle Services (LCS). En liste over trinn og et flytskjema for forretningsprosess genereres fra opptaket. Oppgaveopptak som er lagret i et Forretningsprosessmodelerer-bibliotek, kan vises som hjelp.
 -   **Du kan lagre oppgaveopptak som Word-dokumenter.** Dette gjør at du enkelt kan lage opplæringsveiledninger som skrives ut.
 
 Du kan opprette dine egne oppgaveopptak, spille av oppgaveopptak fra Microsoft, eller endre oppgaveopptak fra Microsoft for å gjenspeile konfigurasjonen din. Hvis du vil ha mer informasjon om Oppgaveopptak, kan du se [Oppgaveopptak](task-recorder.md).
@@ -114,8 +112,7 @@ Du kan laste ned og redigere oppgaveopptak fra Microsoft for å bruke dem i din 
 10. Når opptaket er avspilt til slutten, klikker du **Stopp** på oppgaveopptakslinjen øverst på skjermen.
 11. Velg hvordan du vil lagre oppgaveopptaket.
 
-## <a name="include-your-task-recordings-in-the-help-pane"></a>Ta med oppgaveopptakene i Hjelp-ruten
-Hvis du vil vise dine egne oppgaveopptak i Hjelp-ruten, slik at de kan spilles av som oppgaveveiledninger eller vises som tekst, må du lagre oppgaveopptakene i ditt eget Forretningsprosessmodeler-bibliotek og deretter oppdatere hjelpesystemparameterne slik at de peker mot Forretningsprosessmodeler-biblioteket ditt. Hvis du vil ha mer informasjon, kan du se [Koble til hjelpesystemet](../../fin-ops/get-started/help-connect.md).
+
 
 <a name="additional-resources"></a>Tilleggsressurser
 --------

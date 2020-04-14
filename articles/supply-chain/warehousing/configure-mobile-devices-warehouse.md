@@ -3,7 +3,7 @@ title: Definere mobilenheter for lagerarbeid
 description: Dette emnet beskriver hvordan du konfigurerer menyelementene lagerarbeidere bruker til å utføre arbeidet på en mobilenhet.
 author: MarkusFogelberg
 manager: AnnBe
-ms.date: 04/18/2019
+ms.date: 03/23/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: df3968c01006d773300593b966a69b5283a889a2
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 4c4b131c14101722593f685cbe1133b1aa1319b0
+ms.sourcegitcommit: 34e543e807ac8790597f522fe3b4f0266cf4ee56
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2813049"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "3161834"
 ---
 # <a name="set-up-mobile-devices-for-warehouse-work"></a>Definere mobilenheter for lagerarbeid
 
@@ -95,11 +95,11 @@ Du kan definere et menyelement som oppretter arbeid for en annen arbeider etter 
 </tr>
 <tr>
 <td>Mottak av nummerskilt</td>
-<td>Motta en innkommende last ved hjelp av nummerskilt-IDen.</td>
+<td>Motta en innkommende forhåndsvarsel for forsendelse (ASN) ved hjelp av nummerskilt-IDen.</td>
 </tr>
 <tr>
 <td>Mottak og plassering av nummerskilt</td>
-<td>Motta og plasser en innkommende last ved hjelp av nummerskilt-IDen.</td>
+<td>Motta og plasser en innkommende forhåndsvarsel for forsendelse (ASN) ved hjelp av nummerskilt-IDen.</td>
 </tr>
 <tr>
 <td>Mottak av lastvare</td>
@@ -119,7 +119,7 @@ Du kan definere et menyelement som oppretter arbeid for en annen arbeider etter 
 <td>Registrer mottaket av et antall av en vare ved å registrere autorisasjonsreturnummeret, og plasser varene. Samme arbeider utfører begge handlinger.</td>
 </tr>
 <tr>
-<td rowspan="4">Overføringsordre</td>
+<td rowspan="6">Overføringsordre</td>
 <td>Motta overføringsordrevare</td>
 <td>Registrer mottaket av et antall av en vare, og opprett plasseringsarbeid for en annen arbeider.
 
@@ -138,6 +138,14 @@ Du kan definere et menyelement som oppretter arbeid for en annen arbeider etter 
 <tr>
 <td>Mottak og plassering av overføringsordrelinje</td>
 <td>Registrere mottaket av et antall av en vare, og plasser varene. Samme arbeider utfører begge handlinger.</td>
+</tr>
+<tr>
+<td>Mottak av nummerskilt</td>
+<td>Motta en innkommende forhåndsvarsel for forsendelse (ASN) ved hjelp av nummerskilt-IDen.</td>
+</tr>
+<tr>
+<td>Mottak og plassering av nummerskilt</td>
+<td>Motta og plasser en innkommende forhåndsvarsel for forsendelse (ASN) ved hjelp av nummerskilt-IDen.</td>
 </tr>
 <tr>
 <td rowspan="4">Produksjon</td>

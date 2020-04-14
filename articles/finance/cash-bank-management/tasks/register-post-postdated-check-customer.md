@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6f27675a2aa2160619bf78eea33bba2ce0b7bd81
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 11089584e150a1a302eb969a5fb61cb9d1900901
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2188102"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3141747"
 ---
 # <a name="register-and-post-a-postdated-check-for-a-customer"></a>Registrere og postere en etterdatert sjekk for en kunde
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
-Du kan registrere informasjon i en etterdatert sjekk fra en kunde. Du kan også postere den etterdaterte sjekken og generere finanstransaksjoner.   Fullfør følgende oppgaver før du registrerer og posterer en etterdatert sjekk fra en kunde: • Definer etterdaterte sjekker på siden Kontant- og bankbehandling • Definer en betalingsmåte for etterdaterte sjekker. Rollen for denne prosedyren er Kasserer. Denne fremgangsmåten bruker demonstrasjonsfirmaet USMF.
+Du kan registrere informasjon i en etterdatert sjekk fra en kunde. Du kan også postere den etterdaterte sjekken og generere finanstransaksjoner.   Fullfør følgende oppgaver før du registrerer og posterer en etterdatert sjekk fra en kunde:   * Definer etterdaterte sjekker på siden Kontant- og bankbehandling * Definer en betalingsmåte for etterdaterte sjekker   Rollen for denne prosedyren er Kasserer. Denne fremgangsmåten bruker demonstrasjonsfirmaet USMF.
 
 1. Gå til Kunder > Betalinger > Betalingsjournal.
 2. Klikk Ny.

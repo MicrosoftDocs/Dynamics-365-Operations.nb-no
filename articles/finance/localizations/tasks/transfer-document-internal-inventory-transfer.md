@@ -16,16 +16,16 @@ ms.search.region: Global
 ms.author: epopov
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: a4da59781f3357a6713eebba03d87c5127b8cd3b
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 5cb0d3d51bf30717f05a4daf1a098565d5d48621
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2174980"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3143415"
 ---
 # <a name="generate-a-transfer-document-for-an-internal-inventory-transfer"></a>Generere et overføringsdokument for en intern lageroverføring
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Denne fremgangsmåten viser hvordan du oppretter overføringsdokumenter for flytting av varer i et selskap. Denne fremgangsmåten er bare tilgjengelig for juridiske enheter med hovedadresse i Litauen. Prosedyren ble opprettet med demonstrasjonsdatafirmaet DEMF med en primæradresse i Litauen. Før du kan fullføre denne prosedyren, må du fullføre fremgangsmåten Konfigurere overføringsdokumenter for flytting av varer i et selskap. Denne prosedyren er ment for lagerregnskapsførere. Denne fremgangsmåten gjelder for en funksjon som ble lagt til i Dynamics 365 for Operations versjon 1611.
 

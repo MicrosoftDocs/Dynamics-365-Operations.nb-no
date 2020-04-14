@@ -1,9 +1,9 @@
 ---
-title: Feilsøkingsveiledning for dataintegrering
-description: Dette emnet inneholder feilsøkingsinformasjon om dataintegrasjon mellom Finance and Operations-apper og Common Data Service.
+title: Generell feilsøking
+description: Dette emnet inneholder generell feilsøkingsinformasjon om dobbel skriving-integrasjon mellom Finance and Operations-apper og Common Data Service.
 author: RamaKrishnamoorthy
 manager: AnnBe
-ms.date: 07/25/2019
+ms.date: 03/16/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,57 +18,98 @@ ms.search.region: global
 ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
-ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: 87bdb72024c1c3844ff61e832a92f7edcc77c5d6
-ms.sourcegitcommit: 54baab2a04e5c534fc2d1fd67b67e23a152d4e57
+ms.search.validFrom: 2020-03-16
+ms.openlocfilehash: f7ee0b5aa4e72614205e129acd986376b33efc70
+ms.sourcegitcommit: 68f1485de7d64a6c9eba1088af63bd07992d972d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "3019941"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "3172697"
 ---
-# <a name="troubleshooting-guide-for-data-integration"></a>Feilsøkingsveiledning for dataintegrering
+# <a name="general-troubleshooting"></a>Generell feilsøking
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [preview-banner](../../includes/preview-banner.md)]
 
-## <a name="enable-plug-in-trace-logs-in-common-data-service-and-inspect-the-dual-write-plug-in-error-details"></a>Aktivere sporingslogger for plugin-modul i Common Data Service og sjekke feildetaljene for dobbel skriving
 
-Hvis det oppstår et problem eller en feil med synkronisering av dobbel skriving, følger du denne fremgangsmåten for å kontrollere feilene i sporingsloggen.
+Dette emnet inneholder generell feilsøkingsinformasjon om dobbel skriving-integrasjon mellom Finance and Operations-apper og Common Data Service.
 
-1. Før du kan kontrollere feilene, må du aktivere sporingslogger for plugin-modul. Hvis du vil ha instruksjoner, kan du se delen "Vise sporingslogger" i [Opplæring: Skrive og registrere en plugin-modul](https://docs.microsoft.com/powerapps/developer/common-data-service/tutorial-write-plug-in#view-trace-logs).
+> [!IMPORTANT]
+> Noen av problemene som dette emnet løser, kan kreve administratorrollen for systemet eller legitimasjon for Microsoft Azure Active Directory (Azure AD)-leieradministrator. Delen for hvert problem forklarer om en bestemt rolle eller legitimasjon er nødvendig.
 
-    Nå kan du inspisere feilene.
+## <a name="when-you-try-to-install-the-dual-write-package-by-using-the-package-deployer-tool-no-available-solutions-are-shown"></a>Når du prøver å installere dobbel skriving-pakken ved hjelp av Package Deployer-verktøyet, vises ingen tilgjengelige løsninger
 
-2. Logg på Microsoft Dynamics 365 Sales.
-3. Velg **Innstillinger**-knappen (tannhjulsymbolet), og velg deretter **Avanserte innstillinger**.
-4. I **Innstillinger**-menyen velger du **Tilpassing \> Sporingslogg for plugin-modul**.
-5. Velg **Microsoft.Dynamics.Integrator.CrmPlugins.Plugin** som typenavn for å vise feildetaljene.
+Noen versjoner av Package Deployer-verktøyet er ikke kompatible med løsningspakken for dobbel skriving. Hvis du vil installere pakken, må du bruke [versjon 9.1.0.20](https://www.nuget.org/packages/Microsoft.CrmSdk.XrmTooling.PackageDeployment.Wpf/9.1.0.20) eller senere av Package Deployer-verktøyet.
 
-## <a name="inspect-dual-write-synchronization-errors"></a>Kontrollere feil ved synkronisering av dobbel skriving
+Når du har installert Package Deployer-verktøyet, installerer du løsningspakken ved å følge disse trinnene.
 
-Følg disse trinnene for å undersøke feil under testing.
+1. Last ned den nyeste løsningspakkefilen fra Yammer.com. Når zip-filen for pakken er lastet ned, høyreklikker du den og velger **Egenskaper**. Merk av for **Fjern blokkering**, og velg deretter **Bruk**. Hvis du ikke ser avmerkingsboksen **Fjern blokkering,** er blokkeringen av zip-filen allerede fjernet, og du kan hoppe over dette trinnet.
+
+    ![Dialogboksen Egenskaper](media/unblock_option.png)
+
+2. Pakk ut zip-filen for pakken, og kopier alle filene i mappen **Dynamics365FinanceAndOperationsCommon.PackageDeployer.2.0.438**.
+
+    ![Innholdet i mappen Dynamics365FinanceAndOperationsCommon.PackageDeployer.2.0.438](media/extract_package.png)
+
+3. Lim inn alle de kopierte filene i **Verktøy**-mappen i Package Deployer-verktøyet. 
+4. Kjør **PackageDeployer.exe** for å velge Common Data Service-miljøet og installere løsningene.
+
+    ![Innhold i Verktøy-mappen](media/paste_copied_files.png)
+
+## <a name="enable-and-view-the-plug-in-trace-log-in-common-data-service-to-view-error-details"></a>Aktivere og vise plugin-sporingsloggen Common Data Service for å vise feildetaljer
+
+**Nødvendig rolle for å aktivere sporingsloggen og vise feil**: Systemadministrator
+
+Følg denne fremgangsmåten for å aktivere sporingsloggen.
+
+1. Logg inn på Finance and Operations-appen, åpne **Innstillinger**-siden, og velg deretter **Administrasjon** under **System**.
+2. Velg **Systeminnstillinger** på siden **Administrasjon**.
+3. I kategorien **Tilpassing**, i feltet **Sporing av plugin-modul og egendefinert arbeidsflytaktivitet**, velger du **Alle** for å aktivere plugin-sporingsloggen. Hvis du bare vil logge sporingslogger når det oppstår unntak, kan du velge **Unntak** i stedet.
+
+
+Følg denne fremgangsmåten for å se sporingsloggen.
+
+1. Logg inn på Finance and Operations-appen, åpne **Innstillinger**-siden, og velg deretter **Sporingslogg for plugin-modul** under **Tilpassing**.
+2. Finn sporingsloggene der **Typenavn**-feltet er satt til **Microsoft.Dynamics.Integrator.CrmPlugins.Plugin**.
+3. Dobbeltklikk et element for å vise hele loggen, og se deretter gjennom **Meldingsblokk**-teksten i hurtigfanen **Utførelse**.
+
+## <a name="enable-debug-mode-to-troubleshoot-live-synchronization-issues-in-finance-and-operations-apps"></a>Aktivere feilsøkingsmodus for å feilsøke problemer med direkte synkronisering i Finance and Operations-apper
+
+**Nødvendig rolle for å vise feilene:** Systemadministrator
+
+Dobbel skriving-feil som kommer fra Common Data Service, kan vises i Finance and Operations-appen. I noen tilfeller er ikke hele teksten i feilmeldingen tilgjengelig fordi meldingen er for lang eller inneholder personlig identifiserende informasjon (PII). Du kan aktivere detaljert logging for feil ved å følge disse trinnene.
+
+1. Alle prosjektkonfigurasjoner i Finance and Operations-apper har en **IsDebugMode**-egenskap i **DualWriteProjectConfiguration**-enheten. Åpne **DualWriteProjectConfiguration**-enheten ved hjelp av Excel-tillegget.
+
+    > [!TIP]
+    > En enkel måte å åpne enheten på er å aktivere **Utforming**-modus i Excel-tillegget og deretter legge til **DualWriteProjectConfigurationEntity** i regnearket. Hvis du vil ha mer informasjon, kan du se [Åpne enhetsdata i Excel og oppdatere dataene ved hjelp av Excel-tillegget](../../office-integration/use-excel-add-in.md).
+
+2. Sett egenskapen **IsDebugMode** til **Ja** for prosjektet.
+3. Kjør scenariet som genererer feil.
+4. De detaljerte loggene er tilgjengelige i tabellen DualWriteErrorLog. Hvis du vil slå opp data i tabelleseren, bruker du følgende URL-adresse (erstatt **XXX** etter behov):
+
+    `https://XXXaos.cloudax.dynamics.com/?mi=SysTableBrowser&tableName=>DualWriteErrorLog`
+
+## <a name="check-synchronization-errors-on-the-virtual-machine-for-the-finance-and-operations-app"></a>Kontrollere synkroniseringsfeil på den virtuelle maskinen for Finance and Operations-appen
+
+**Nødvendig rolle for å vise feilene:** Systemadministrator
 
 1. Logg på Microsoft Dynamics Lifecycle Services (LCS).
-2. Åpne LCS-prosjektet for å utføre testing av dobbelt skriving.
-3. Velg **Skybaserte miljøer**.
-4. Opprett en eksternt skrivebord-tilkobling til den virtuelle maskinen for programmet ved hjelp av den lokale kontoen som vises i LCS.
-5. Åpne hendelseslisten. 
-6. Gå til **Program- og tjenestelogger \> Microsoft \> Dynamics \> AX-DualWriteSync \> Drift**. Feilene og detaljene vises.
+2. Åpne LCS-prosjektet du har valgt til å utføre testing av dobbel skriving for.
+3. Velg flisen **Skybaserte miljøer**.
+4. Bruk Eksternt skrivebord for å logge på den virtuelle maskinen for Finance and Operations-appen. Bruk den lokale kontoen som vises i LCS.
+5. Åpne hendelseslisten.
+6. Velg **Program- og tjenestelogger \> Microsoft \> Dynamics \> AX-DualWriteSync \> Drift**.
+7. Se gjennom listen over nylige feil.
 
-## <a name="unlink-one-common-data-service-environment-from-the-application-and-link-another-environment"></a>Fjerne en tilknytning til Common Data Service-miljøet fra programmet, og koble til et annet miljø
+## <a name="unlink-and-link-another-common-data-service-environment-from-a-finance-and-operations-app"></a>Koble fra og koble til et annet Common Data Service-miljø fra en Finance and Operations-app
 
-Gjør følgende for å oppdatere koblinger:
+**Nødvendig legitimasjon for å koble fra miljøet:** Azure AD-leieradministrator
 
-1. Gå til programmiljøet.
-2. Åpne Databehandling.
-3. Velg **Kobling til CDS for Apps**.
-4. Velg alle tilordningene som kjører, og velg deretter **Stopp**.
-5. Velg alle tilordningene, og velg deretter **Slett**.
+1. Logg på Finance and Operations-appen.
+2. Gå til **Arbeidsområder \> Databehandling**, og velg flisen **Dobbel skriving**.
+3. Velg alle kjørende tilordninger, og klikk på **Stopp**.
+4. Klikk **Koble fra miljø**.
+5. Velg **Ja** for å bekrefte operasjonen.
 
-    > [!NOTE]
-    > Alternativet **Slett** vises ikke hvis malen **CustomerV3-Account** er valgt. Fjern valget av denne malen etter behov. **CustomerV3-Account** er en eldre klargjort mal og fungerer med Kundeemne til kontanter-løsningen. Fordi den er globalt lansert, viser den under alle maler.
-
-6. Klikk **Koble fra miljø**.
-7. Velg **Ja** for å bekrefte operasjonen.
-8. Hvis du vil koble til det nye miljøet, følger du trinnene i [installasjonsveiledningen](https://aka.ms/dualwrite-docs).
+Du kan nå koble til et nytt miljø.

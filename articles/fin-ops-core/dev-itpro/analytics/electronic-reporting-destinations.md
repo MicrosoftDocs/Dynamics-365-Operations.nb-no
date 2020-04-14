@@ -3,7 +3,7 @@ title: Mål for elektronisk rapportering (ER)
 description: Dette emnet inneholder informasjon om administrasjon av mål for elektronisk rapportering (ER), måltypene som støttes, og sikkerhetshensyn.
 author: nselin
 manager: AnnBe
-ms.date: 02/07/2020
+ms.date: 03/17/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mrolecki
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 2e4c6951afbff367dc93072d20395c3a37fffbcb
-ms.sourcegitcommit: 4e62c22b53693c201baa646a8f047edb5a0a2747
+ms.openlocfilehash: 8a6536c82cd3407626fc0d8e102e3819c80cfd4b
+ms.sourcegitcommit: 0d9ca44b48fb2e33d8160faccc1e6bd932e58934
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "3030779"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3150821"
 ---
 # <a name="electronic-reporting-er-destinations"></a>Mål for elektronisk rapportering (ER)
 
@@ -114,7 +114,7 @@ Når du har fullført dette oppsettet, blir **Kjør utkast**-alternativet tilgje
 
 [![Kjør utkast-alternativet](./media/ER_Destinations-FormatSetting.png)](./media/ER_Destinations-FormatSetting.png)
 
-## <a name="DestinationFailure"></a>Håndtering av målfeil
+## <a name="destination-failure-handling"></a><a name="DestinationFailure"></a>Håndtering av målfeil
 
 Vanligvis kjøres et ER-format innenfor omfanget til en bestemt bedriftsprosess. Leveringen av et utgående dokument som genereres under kjøring av et ER-format, må imidlertid noen ganger anses som en del av denne bedriftsprosessen. I dette tilfellet gjelder følgende: Hvis levering av et generert utgående dokument til et konfigurert mål mislykkes, må kjøringen av bedriftsprosessen avbrytes. Hvis du vil konfigurere riktig ER-mål, velger du **Stopp behandling ved feil**-alternativet.
 
@@ -124,7 +124,7 @@ Du konfigurerer for eksempel behandling av leverandørbetaling slik at ER-format
 
 Hvis du opplever avmerkingen i **Stopp behandling ved feil**-avmerkingsboksen for **Følgeskriv**-komponenten i målet, vil en betaling bli ansett som behandlet selv når levering av følgeskrivet via e-post mislykkes. Status for betalingen vil bli endret fra **Ingen** til **Sendt** selv når følgeskrivet ikke kan sendes fordi mottakerens eller avsenderens e-postadresse eksempelvis mangler eller er feil.
 
-## <a name="OutputConversionToPDF"></a>Utdatakonvertering til PDF
+## <a name="output-conversion-to-pdf"></a><a name="OutputConversionToPDF"></a>Utdatakonvertering til PDF
 
 Du kan bruke alternativet PDF-konvertering til å konvertere utdata i Microsoft Office-format (Excel/Word) til PDF-format.
 
@@ -157,6 +157,19 @@ Alternativet PDF-konvertering kan bare aktiveres for filkomponenter som brukes t
 Hvis du vil aktivere PDF-konvertering for et filmål, merker du av i **Konverter til PDF**-avmerkingsboksen.
 
 [![Aktivere PDF-konvertering for et filmål](./media/ER_Destinations-TurnOnPDFConversion.png)](./media/ER_Destinations-TurnOnPDFConversion.png)
+
+### <a name=""></a><a name="SelectPdfPageOrientation">Velg en sideretning for PDF-konvertering</a>
+
+Hvis du genererer en ER-konfigurasjon i Excel-format og vil konvertere den til PDF-format, kan du angi sideretningen til PDF-filen. Når du merker av for **Konverter til PDF** for å slå på PDF-konvertering for en fildestinasjon som produserer en utdatafil i Excel-format, blir **Sresultatproduktideretning**-feltet tilgjengelig på hurtigfanen **PDF-konverteringsinnstillinger**. Velg den foretrukne retningen i **Sideretning**-feltet.
+
+[![Velge en sideretning for PDF-konvertering](./media/ER_Destinations-SelectPDFConversionPageOrientation.png)](./media/ER_Destinations-SelectPDFConversionPageOrientation.png)
+
+> [!NOTE]
+> Hvis du vil ha muligheten til å velge PDF-sideretningen, må du installere Microsoft Dynamics 365 Finance versjon 10.0.10 (mai 2020) eller senere.
+>
+> Den valgte sideretningen brukes på alle ER-konfigurasjoner som genereres i Excel-format, og deretter konverteres til PDF-format.
+>
+> Hvis en konvertert PDF-fil opprettes fra en ER-konfigurasjon i Word-format, hentes sideretningen for PDF-filen fra Word-dokumentet.
 
 ## <a name="security-considerations"></a>Sikkerhetshensyn
 

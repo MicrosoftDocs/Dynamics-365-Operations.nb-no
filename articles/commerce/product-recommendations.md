@@ -3,7 +3,7 @@ title: Oversikt over produktanbefalinger
 description: Dette emnet inneholder generell informasjon om produktanbefalinger. Produktanbefalinger gjør at kundene enkelt og raskt kan finne produkter de vil ha, og til og med produkter de ikke opprinnelig hadde tenkt å kjøpe.
 author: Moonma
 manager: AnnBe
-ms.date: 03/12/2020
+ms.date: 03/19/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: moonma
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: abeeb3c35c21f6d7a6ec24a84522033f9a5367f3
-ms.sourcegitcommit: 1e7e7c4bc197b0a42e4d53d2a54600a2fb125b69
+ms.openlocfilehash: e61136ed296d673e14600762c6f6199093530546
+ms.sourcegitcommit: de5af1912201dd70aa85fdcad0b184c42405802e
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "3127865"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3154232"
 ---
 # <a name="product-recommendations-overview"></a>Oversikt over produktanbefalinger
 
@@ -74,8 +74,6 @@ Følgende tabell beskriver ulike typer automatiserte produktanbefalinger som er 
 [Aktivere personlige anbefalinger](personalized-recommendations.md)
 
 [Velge bort personlige anbefalinger](personalization-gdpr.md)
-
-[Legge til lister over anbefalinger på et e-handelsområde](add-reco-list-to-page.md)
 
 [Legge til produktanbefalinger i POS](product.md)
 

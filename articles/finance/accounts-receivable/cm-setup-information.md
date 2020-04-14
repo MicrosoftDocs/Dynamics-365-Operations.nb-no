@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: mfalkner
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 65b1d1a232558efbe05e83d51706a78b12439e47
-ms.sourcegitcommit: 1d5a4f70a931e78b06811add97c1962e8d93689b
+ms.openlocfilehash: 524ae7b3062893ed07170227ea9b8908cd5858e1
+ms.sourcegitcommit: 1fb34abfe3382bc00237a2c00184fe201c12229f
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "3124145"
+ms.lasthandoff: 03/19/2020
+ms.locfileid: "3151303"
 ---
 # <a name="credit-management-setup"></a>Oppsett for kredittbehandling 
 
@@ -40,13 +40,17 @@ Gå til **Kreditt og innkreving \> Oppsett \> Arbeidsflyter for kredittbehandlin
 
 Du kan sette en salgsordre på vent hvis betalingsbetingelsene for ordren ikke samsvarer med standard betalingsbetingelsene for kunden. Noen ganger er betalingsbetingelsene imidlertid forskjellige, men ligner nok til at du ikke vil sette ordren på vent. Du kan rangere betalingsbetingelser slik at noen av dem har samme rangering, mens andre har en høyere eller lavere rangering.
 
-Hvis rangeringene for betalingsbetingelsene er aktive, vil salgsordrene bli satt på vent hvis betalingsbetingelsene i ordren har høyere rangering enn standard betalingsvilkår for kunden.
+Hvis rangeringene for betalingsbetingelsene er aktive, og hvis betalingsbetingelsene i ordren har høyere rangering enn standard betalingsvilkår for kunden, blir salgsordren satt på vent.
+
+Du kan definere rangeringer av betalingsbetingelser ved å gå til **Kreditt og innkreving \> Oppsett \> Kredittbehandlingsoppsett \>Ranger betalingsbetingelser**  
 
 ### <a name="ranking-settlement-discounts"></a>Rangere utligningsrabatter
 
 Du kan sette en salgsordre på vent hvis kontantrabatten for ordren ikke samsvarer med standard kontantrabatt for kunden. Noen ganger er kontantrabattene imidlertid forskjellige, men ligner nok til at du ikke vil sette ordren på vent. Du kan rangere kontantrabatter slik at noen av dem har samme rangering, mens andre har en høyere eller lavere rangering.
 
-Hvis rangeringene for utligningsrabattene er aktive, vil salgsordrene bli satt på vent hvis kontantrabatten i ordren har høyere rangering enn standard kontantrabatt for kunden.
+Hvis rangeringene for utligningsrabattene er aktive, vil salgsordren bli satt på vent hvis kontantrabatten i ordren har høyere rangering enn standard kontantrabatt for kunden.
+
+Du kan definere rangeringer av betalingsbetingelser ved å gå til **Kreditt og innkreving \> Oppsett \> Kredittbehandlingsoppsett \>Ranger utligningsrabatter**  
 
 ## <a name="reasons"></a>Årsaker
 
@@ -56,7 +60,7 @@ Det brukes flere typer årsaker i kredittbehandling:
 - Frigivelsesårsaker tilordnes en ordre når den frigis fra sperring.
 - Statusårsaker angir hvorfor en kontostatus ble tilordnet til en kunde.
 
-Du kan definere årsaker på siden **Kredittbehandlingsårsaker** (**Kredittbehandling \> Oppsett \> Kredittbehandling \> Kredittbehandlingsårsaker**).
+Du kan definere årsaker på siden **Kredittbehandlingsårsaker** (**Kreditt og innkreving \> Oppsett \> Kredittbehandlingsoppsett \> Kredittbehandlingsårsaker**).
 
 1. Velg årsakstypen i **Årsakstype**-feltet: **Sperre**, **Frigivelse** eller **Status**.
 2. I **Årsak**-feltet angir du et navn på årsaken.
@@ -66,7 +70,7 @@ Du kan definere årsaker på siden **Kredittbehandlingsårsaker** (**Kredittbeha
 
 Kredittbehandlingsgrupper brukes til å identifisere kunder eller grupper med kunder som har samme kredittbehandlingsegenskaper. For eksempel kan kredittbehandlingsgrupper brukes til å bestemme kredittbehandlingsregler for blokkering og ekskludering for kunder.
 
-Du kan opprette kredittbehandlingsgrupper på siden **Kredittbehandlingsgrupper** (**Kredittbehandling \> Oppsett > Gruppeoppsett \> Kredittbehandlingsgrupper**).
+Du kan opprette kredittbehandlingsgrupper på siden **Kredittbehandlingsgrupper** (**Kreditt og innkreving \> Oppsett > Kredittbehandlingsoppsett \> Kredittbehandlingsgrupper**).
 
 1. Velg **Ny** for å opprette en linje.
 2. Angi en ID for gruppen. ID-en kan inneholde opptil 10 tegn.
@@ -78,7 +82,7 @@ Kredittbehandlingsgruppen tilordnes til en kunde i hurtigfanen **Kreditt og innk
 
 Du kan opprette kontostatuser som identifiserer kredittstatusen til en kundekonto. Du kan definere en status og virkningen på prosessene for fakturering og levering på vent. Kontostatuser kan også brukes til å bestemme blokkeringsregler for en kunde.
 
-Du kan opprette kontostatuser på **Kontostatuser**-siden (**Kredittbehandling \> Oppsett > Gruppeoppsett \> Kontostatuser**).
+Du kan opprette kontostatuser på **Kontostatuser**-siden (**Credit and collections \> Oppsett > Kredittbehandlingsoppsett \> Kontostatuser**).
 
 1. Legg til en kontostatus, og angi en beskrivelse som representerer kredittstatusen for en kunde. Du kan for eksempel bruke **Normal** til å angi at en kunde er solid og åpne ordrer er underlagt standard kredittbehandling.
 2. I feltene **Fakturering** og **Levering på vent** velger du type sperring som skal forekomme for kunder som har denne kontostatusen. Du kan sperre all behandling, bare fakturabehandling eller ingen behandling når kredittgrensereglene brukes.
@@ -87,7 +91,7 @@ Du kan opprette kontostatuser på **Kontostatuser**-siden (**Kredittbehandling \
 
 Du kan definere poengberegningsgrupper for å definere risikofaktorer og kriteriene som brukes til å måle dem. Når informasjon om en kunde brukes på en poengberegningsgruppe, beregnes en poengsum for hver risikofaktor og brukes til å plassere kunden i en risikogruppe. Risikogruppen kan brukes til å identifisere kredittverdighet og beregne automatiske kredittgrenser.
 
-Du kan opprette poengberegningsgrupper på siden **Poengberegningsgrupper** (**Kredittbehandling \> Oppsett \> Risikooppsett \> Poengberegningsgrupper**).
+Du kan opprette poengberegningsgrupper på siden **Poengberegningsgrupper** (**Kreditt og innkreving \> Oppsett \> Kredittbehandlingsoppsett \> Risiko \> Poengberegningsgrupper**).
 
 1. Opprett en poengberegningsgruppe og angi et navn for den.
 2. Angi en beskrivelse for å beskrive poengberegningsgruppen ytterligere.
@@ -108,11 +112,11 @@ Du kan opprette poengberegningsgrupper på siden **Poengberegningsgrupper** (**K
     1. I **Verdi**-feltet angir du den brukerdefinerte verdien som skal oppgis fra kundeinformasjonen.
     2. I **Poengsum**-feltet angir du poengsummen som skal tilordnes når verdien som er oppgitt, er i fra/til-området.
 
-## <a name="risk-assessments"></a>Risikovurderinger
+## <a name="risk-classification"></a>Risikoklassifisering
 
 Du kan definere risikovurderinger som kan tilordnes til kunder, basert på risikopoengene deres. En risikopoengsum beregnes ved å sammenligne kundeinformasjon med hver poengberegningsgruppe. Poengene summeres, og den totale poengsummen sammenlignes med verdiene i risikogruppeoppsettet for å identifisere risikogruppen som kunden tilhører. Risikogruppepoengsummen brukes deretter til å definere blokkerings- og ekskluderingsregler for kredittbehandling for kunden.
 
-Du kan definere risikogrupper på siden **Risikovurderinger** (**Kredittbehandling \> Oppsett \> Risikooppsett \> Risikovurderinger**).
+Du kan definere risikogrupper på siden **Risikovurderinger** (**Kreditt og innkreving \> Oppsett \> Kredittbehandlingsoppsett \> Risiko \> Risikoklassifisering**).
 
 1. Angi en risikogruppe-ID.
 2. Angi en beskrivelse for å forklare risikogruppen ytterligere.
@@ -121,7 +125,7 @@ Du kan definere risikogrupper på siden **Risikovurderinger** (**Kredittbehandli
 
 ## <a name="guaranteeinsurance-types"></a>Garanti-/forsikringstyper
 
-Du kan definere garanti-/forsikringstyper på siden **Garanti-/ forsikringstyper** (**Kredittbehandling \> Oppsett \> Garanti-/forsikringsoppsett \> Garanti-/forsikringstyper**).
+Du kan definere garanti-/forsikringstyper på siden **Garanti-/forsikringstyper** (**Kreditt og innkreving \> Oppsett \> Kredittbehandlingsoppsett \> Forsikring og garantier \> Forsikrings- og garantiertyper**).
 
 1. Angi en garanti- eller forsikringstype som identifiserer navnet på garantisten eller forsikringsgiveren.
 2. Angi en beskrivelse for å beskrive garantisten/forsikringsgiveren.
@@ -130,14 +134,14 @@ Du kan definere garanti-/forsikringstyper på siden **Garanti-/ forsikringstyper
 
 Dekningstyper kan brukes til å klassifisere forsikringspoliser ytterligere. De kan ikke brukes med garantier.
 
-Du kan legge til dekningstyper på **Dekningstyper**-siden (**Kredittbehandling \> Oppsett \> Garanti-/forsikringsoppsett \> Dekningstyper**).
+Du kan legge til dekningstyper på **Dekningstyper**-siden (**Kreditt og innkreving \> Oppsett \> Kredittbehandlingsoppsett \> Forsikring og garantier \> Dekningstyper**).
 
 1. Angi en dekningstype for å identifisere typen dekning som skal legges til som forsikring eller garanti.
 2. Angi en beskrivelse for å beskrive dekningstypen.
 
 ## <a name="automatic-credit-limits"></a>Automatiske kredittgrenser
 
-Du kan opprette kriterier for automatiske kredittgrenser på siden **Automatiske kredittgrenser** (**Kredittbehandling \> Oppsett \> Risikooppsett \> Automatiske kredittgrenser**).
+Du kan opprette kriterier for automatiske kredittgrenser på siden **Automatiske kredittgrenser** (**Kreditt og innkreving \> Oppsett \> Kredittbehandlingsoppsett \> Risiko \> Automatiske kredittgrenser**).
 
 1. Velg en risikogruppe som den automatiske kredittgrensen skal tilordnes til.
 2. Velg valutaen for den automatiske kredittgrensen. Du kan opprette flere automatiske kredittgrenser i forskjellige valutaer for samme risikogruppe.

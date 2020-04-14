@@ -16,23 +16,23 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 980ce00ae702ea0a3394efa15419e0f7b7dc2530
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 5def757de8fb9d347f5fd0f828039dad5c989c19
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2182215"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3143297"
 ---
 # <a name="er-upload-a-configuration-into-lifecycle-services"></a>ER Laste opp en konfigurasjon til Lifecycle Services
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 De følgende trinnene forklarer hvordan en bruker i rollen systemansvarlig eller utvikler av elektronisk rapportering kan opprette en ny formatkonfigurasjon for elektronisk rapportering (ER) og laste den opp til Microsoft Lifecycle Services (LCS).
 
 I dette eksemplet skal du opprette en konfigurasjon og laste den opp til LCS for eksempelfirmaet Litware, Inc. Denne fremgangsmåten kan utføres i et hvilket som helst firma ettersom ER-konfigurasjoner deles mellom alle firmaer. For å fullføre disse trinnene må du først fullføre trinnene i fremgangsmåten "Opprette en konfigurasjonsleverandør og merke den som aktiv". Tilgang til LCS kreves også for fullføring av denne fremgangsmåten.
 
 1. Gå til Organisasjonsstyring > Arbeidsområder > Elektronisk rapportering.
-2. Velg Litware, Inc. og angi som aktiv.
+2. Velg "Litware, Inc." og angi som aktiv.
 3. Klikk Konfigurasjoner.
 
 ## <a name="create-a-new-data-model-configuration"></a>Opprett en ny datamodellkonfigurasjon

@@ -3,7 +3,7 @@ title: Legge til skript kode i områdes ID-er for å støtte telemetri
 description: Dette emnet beskriver hvordan du kan legge til skriptkode på klientsiden på områdesidene dine for å støtte innsamling av telemetri på klientsiden.
 author: bicyclingfool
 manager: annbe
-ms.date: 12/12/2019
+ms.date: 03/20/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,15 +17,14 @@ ms.search.region: Global
 ms.author: StuHarg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 674d00faf1b30f87a0b0062129e1b9fbff955dd4
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 81c36685c1eccceb2f1854fe7c866186120c08a3
+ms.sourcegitcommit: de5af1912201dd70aa85fdcad0b184c42405802e
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3001283"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3154092"
 ---
 # <a name="add-script-code-to-site-pages-to-support-telemetry"></a>Legge til skript kode i områdes ID-er for å støtte telemetri
-
 
 [!include [banner](includes/banner.md)]
 
@@ -38,25 +37,72 @@ Web Analytics er et viktig verktøy når du vil forstå hvordan kundene samhandl
 > [!NOTE]
 > Instruksjonene i dette emnet gjelder også for annen tilpasset funksjonalitet på klientsiden som Microsoft Dynamics 365 Commerce ikke tilbyr.
 
-## <a name="create-a-reusable-fragment-for-your-script-code"></a>Opprette et gjenbrukbart fragment for skriptkoden
+## <a name="create-a-reusable-page-fragment-for-your-script-code"></a>Opprette et gjenbrukbart sidefragment for skriptkoden
 
-Når du har opprettet et fragment for skriptkoden, kan det brukes på nytt på alle sider på området.
+Ved hjelp av et sidefragment kan du bruke innebygd eller ekstern skriptkode på nytt på alle sidene på området, uansett hvilken mal de bruker.
 
-1. Gå til **Fragmenter \> Nytt sidefragment**.
-2. Velg **Eksternt skript**, skriv inn et navn på fragmentet, og velg deretter **OK**.
-3. I fragmenthierarkiet velger du den underordnede **skriptinnsetting**-modulen for fragmentet som du nettopp opprettet.
-4. I egenskapsruten til høyre legger du til skriptet på klientsiden, og deretter angir du andre konfigurasjonsalternativer etter behov.
+### <a name="create-a-reusable-page-fragment-for-your-inline-script-code"></a>Opprette et gjenbrukbart sidefragment for den innebygde skriptkoden
 
-## <a name="add-the-fragment-to-templates"></a>Legge til fragmentet i maler
+Hvis du vil opprette et gjenbrukbart sidefragment for den innebygde skriptkoden i områdebygger, følger du disse trinnene.
+
+1. Gå til **Sidefragmenter**, og velg **Nytt**.
+1. I dialogboksen **Nytt sidefragment** velger du **Innebygd skript**.
+1. Under **Navn på sidefragment** angir du et navn på fragmentet, og deretter velger du **OK**.
+1. Under sidefragmentet du opprettet, velger du modulen **Standard innebygd skript**.
+1. I egenskapsruten til høyre, under **Innebygd skript**, angir du skriptet på klientsiden. Deretter konfigurerer du andre alternativer etter behov.
+1. Velg **Lagre**, og velg deretter **Fullfør redigering**.
+1. Velg **Publiser**.
+
+### <a name="create-a-reusable-page-fragment-for-your-external-script-code"></a>Opprette et gjenbrukbart sidefragment for den eksterne skriptkoden
+
+Hvis du vil opprette et gjenbrukbart sidefragment for den eksterne skriptkoden i områdebygger, følger du disse trinnene.
+
+1. Gå til **Sidefragmenter**, og velg **Nytt**.
+1. I dialogboksen **Nytt sidefragment** velger du **Eksternt skript**.
+1. Under **Navn på sidefragment** angir du et navn på fragmentet, og deretter velger du **OK**.
+1. Under sidefragmentet du opprettet, velger du modulen **Standard eksternt skript**.
+1. I egenskapsruten til høyre, under **Skriptkilde**, legger du til en ekstern eller relativ URL-adresse for den eksterne skriptkilden. Deretter konfigurerer du andre alternativer etter behov.
+1. Velg **Lagre**, og velg deretter **Fullfør redigering**.
+1. Velg **Publiser**.
+
+## <a name="add-a-page-fragment-that-includes-script-code-to-a-template"></a>Legge til et sidefragment som inneholder skript kode, i en mal
+
+Hvis du vil legge til et sidefragment som inneholder skriptkode, i en mal i områdebygger, følger du disse trinnene.
 
 1. Gå til **Maler**, og åpne malen for sidene du vil legge til skriptkoden i.
-2. I venstre rute utvider du malhierarkiet slik at det viser **HTML-hode**-sporet.
-3. Velg ellipseknappen (**...**) for **HTML-hode**-sporet, og velg deretter **Legg til fragment**.
-4. Velg fragmentet du opprettet for skriptkoden.
-5. Lagre malen, og sjekk den inn.
+1. I venstre rute utvider du malhierarkiet slik at det viser **HTML-hode**-sporet.
+1. Velg ellipseknappen (**...**) for **HTML-hode**-sporet, og velg deretter **Legg til sidefragment**.
+1. Velg fragmentet du opprettet for skriptkoden.
+1. Velg **Lagre**, og velg deretter **Fullfør redigering**.
+1. Velg **Publiser**.
 
-> [!NOTE]
-> Når du er ferdig, må du publisere fragmentet og malen. 
+## <a name="add-an-external-script-or-inline-script-directly-to-a-template"></a>Legge til et eksternt skript eller innebygd skript direkte i en mal
+
+Hvis du vil sette inn et innebygd eller eksternt skript direkte i et sett med sider som styres av en enkelt mal, trenger du ikke å opprette et sidefragment først.
+
+### <a name="add-an-inline-script-directly-to-a-template"></a>Legge til et innebygd skript direkte i en mal
+
+Hvis du vil legge til et innebygd skript direkte i en mal i områdebygger, følger du disse trinnene.
+
+1. Gå til **Maler**, og åpne malen for sidene du vil legge til skriptkoden i.
+1. I venstre rute utvider du malhierarkiet slik at det viser **HTML-hode**-sporet.
+1. Velg ellipseknappen (**...**) for **HTML-hode**-sporet, og velg deretter **Legg til modul**.
+1. I dialogboksen **Legg til modul** velger du **Innebygd skript**.
+1. I egenskapsruten til høyre, under **Innebygd skript**, angir du skriptet på klientsiden. Deretter konfigurerer du andre alternativer etter behov.
+1. Velg **Lagre**, og velg deretter **Fullfør redigering**.
+1. Velg **Publiser**.
+
+### <a name="add-an-external-script-directly-to-a-template"></a>Legge til et eksternt skript direkte i en mal
+
+Hvis du vil legge til et eksternt skript direkte i en mal i områdebygger, følger du disse trinnene.
+
+1. Gå til **Maler**, og åpne malen for sidene du vil legge til skriptkoden i.
+1. I venstre rute utvider du malhierarkiet slik at det viser **HTML-hode**-sporet.
+1. Velg ellipseknappen (**...**) for **HTML-hode**-sporet, og velg deretter **Legg til modul**.
+1. I dialogboksen **Legg til modul** velger du **Eksternt skript**.
+1. I egenskapsruten til høyre, under **Skriptkilde**, legger du til en ekstern eller relativ URL-adresse for den eksterne skriptkilden. Deretter konfigurerer du andre alternativer etter behov.
+1. Velg **Lagre**, og velg deretter **Fullfør redigering**.
+1. Velg **Publiser**.
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 
@@ -73,4 +119,3 @@ Når du har opprettet et fragment for skriptkoden, kan det brukes på nytt på a
 [Legge til en opphavsrettserklæring](add-copyright-notice.md)
 
 [Legge til språk på området](add-languages-to-site.md)
-

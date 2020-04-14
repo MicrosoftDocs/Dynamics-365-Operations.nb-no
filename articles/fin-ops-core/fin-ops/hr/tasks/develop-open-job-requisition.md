@@ -16,16 +16,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 556f99d34521cce70efb64c5fbababd815e8429d
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 55260a4d25f41bc649f5e1f1f8c950c6b438ecfb
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2190471"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3144047"
 ---
 # <a name="develop-and-open-job-requisition"></a>Utvikle og åpne jobbrekvisisjon
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Rekrutteringsprosjekter hjelper deg med å administrere rekrutteringsprosessen. For hvert rekrutteringsprosjekt kan du definere informasjon, for eksempel jobben rekrutteringen gjelder for, navnet på rekruttereren, statusen for prosjektet og avdelingen der jobben er lokalisert. Når du har opprettet et rekrutteringsprosjekt, kan du skrive en stillingsannonse for prosjektet, publisere annonsen på ansattselvbetjeningssider, knytte søknader om ansettelse til prosjektet og spore aktiviteter for prosjektet. Demonstrasjonsdatafirmaet USMF brukes til å opprette denne fremgangsmåten. Hvis du vil starte fremgangsmåten, kan du gå til Personale > Rekruttering > Rekrutteringsprosjekter > Rekrutteringsprosjekter
 

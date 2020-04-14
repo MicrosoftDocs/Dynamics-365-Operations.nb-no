@@ -16,16 +16,16 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 2d785b321037645837dbcbaf28c8ede9b8e97b79
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: 20188438a4ca623fc926e6c373fb002f148c3df4
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2550608"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3142484"
 ---
 # <a name="er-configure-format-to-do-counting-and-summing-part-2---configure-computations"></a>ER Konfigurere format for å utføre telling og summering (del 2 - Konfigurere beregninger)
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 De følgende trinnene forklarer hvordan en bruker som er tilordnet rollen som systemansvarlig eller utvikler av elektronisk rapportering kan konfigurere et elektronisk rapportering (ER)-format til å utføre telling og summering basert på data i allerede genererte tekstutdata. Denne fremgangsmåten kan utføres i alle firmaer.
 
@@ -105,7 +105,7 @@ Denne fremgangsmåten gjelder for en funksjon som ble lagt til i Dynamics 365 fo
 50. I Formel-feltet skriver du inn Intrastat.CommodityRecord.CommodityCode.
 51. Klikk Lagre.
 52. Lukk siden.
-    * Tell linjene i denne sekvensen. Resultatene vil bli brukt med navnet "post" separat for forskjellige varekoder. Se på dette som et virtuelt Excel-regneark. For hver transaksjon fylles det ut en rad der den første kolonnen "blokk" fylles ut med verdiene "Import" og "Export" henholdsvis, og den andre blokken "post" med varekodeverdien  
+    * Tell linjene i denne sekvensen. Resultatene vil bli brukt med navnet "post" separat for forskjellige varekoder. Se på dette som et virtuelt Excel-regneark. For hver transaksjon fylles det ut en rad der den første kolonnen "blokk" fylles ut med verdiene "Import" og "Eksport" henholdsvis, og den andre blokken "post" med varekodeverdien.  
 53. Velg Intrastat\Data: Sekvens\Fordelinger? i treet.
 54. Klikk Rediger-knappen for feltet Navn på innsamlet datanøkkel.
 55. Velg $RecName i treet.

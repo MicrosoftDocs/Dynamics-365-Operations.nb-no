@@ -16,16 +16,16 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 46dc13416aa094f33879c017c1a1815fc791409d
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: a6287fa95b7ce7341e99d1b1a6b972db68a30398
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2185112"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3142178"
 ---
 # <a name="define-er-model-mappings-and-select-data-sources-for-them"></a>Definere ER-modelltilordninger og velge datakilder for dem
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 De følgende trinnene forklarer hvordan en bruker i rollen systemansvarlig eller utvikler av elektronisk rapportering kan velge datakilder for en elektronisk rapportering (ER)-datamodell. Datakildene bindes til individuelle komponenter for den valgte datamodellen under utformingen og fyller ut forretningsdata til denne datamodellen under kjøring. I dette eksemplet velger du datakilder for en eksisterende datamodell som er opprettet for eksempelfirmaet Litware, Inc. For å fullføre disse trinnene, må du først fullføre trinnene i prosedyren Opprett en ny datamodell.
 
@@ -78,7 +78,7 @@ De følgende trinnene forklarer hvordan en bruker i rollen systemansvarlig eller
 17. I treet velger du Transaksjoner\Bilag.
 18. Klikk Legg til datakilde.
 19. I Formel-feltet skriver du inn 'CONCATENATE(Transactions.Voucher, "-", '.
-    * Skriv inn [ , “-“, ] på slutten av formelen.  
+    * Skriv inn [ , "-", ] på slutten av formelen.  
 20. I treet velger du Streng\TEXT.
 21. Klikk Legg til funksjon.
 22. Velg Transactions\Record-ID(RecId) i treet.
@@ -128,7 +128,7 @@ De følgende trinnene forklarer hvordan en bruker i rollen systemansvarlig eller
 52. Klikk Legg til rot.
     * Angi denne datakilden for å vise detaljer for firmaets forutsetninger.  
 53. I Navn-feltet skriver du inn Firma.
-    * Firma  
+    * Bedrift  
 54. Skriv inn en verdi i feltet Etikett.
     * Firmainformasjon  
 55. Angi Firmainformasjon i Hjelp-feltet.

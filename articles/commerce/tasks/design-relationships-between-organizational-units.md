@@ -17,16 +17,16 @@ ms.search.industry: Retail
 ms.author: mumani
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: a5592e41ef8f2a082646b9024af0d91917bb451a
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 2c6502a05d3cc53d8031b9f8e365454556513c3c
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3023535"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3140857"
 ---
 # <a name="design-the-relationships-between-organizational-units"></a>Utforme relasjonene mellom organisasjonsenheter
 
-[!include[task guide banner](../includes/task-guide-banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Dette hjelper med å utforme relasjonen mellom organisasjonsenheter. Du må opprette et nytt formål for organisasjonen før du definerer relasjonen, eller du kan bruke det eksisterende organisasjonsformålet. Demonstrasjonsdatafirmaet USRT brukes til å utføre denne fremgangsmåten. Denne oppgaven er ment for administratorrollen.
 

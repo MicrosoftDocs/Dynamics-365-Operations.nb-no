@@ -1,6 +1,6 @@
 ---
 title: Generere rapporter i Office-formater som inneholder innebygde bilder
-description: De følgende trinnene forklarer hvordan en bruker i rollen Systemansvarlig eller Utvikler av elektronisk rapportering kan designe konfigurasjoner for elektronisk rapportering (ER) for å generere av elektroniske dokumenter i MS Office-formater (Excel og Word), som inneholder innebygde bilder.
+description: De følgende trinnene forklarer hvordan en bruker i rollen Systemansvarlig eller Utvikler av elektronisk rapportering kan designe konfigurasjoner for elektronisk rapportering (ER) for å generere elektroniske dokumenter i MS Office-formater (Excel og Word), som inneholder innebygde bilder.
 author: NickSelin
 manager: AnnBe
 ms.date: 06/13/2017
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 64fade6578e9cd4f8a51c524e4f6ebbf63b93f20
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: fa6324b244195e9626e259e42eef9512e64cde86
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2184767"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3143105"
 ---
 # <a name="generate-reports-in-office-format-that-have-embedded-images"></a>Generere rapporter i Office-formater som inneholder innebygde bilder
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
-De følgende trinnene forklarer hvordan en bruker i rollen Systemansvarlig eller Utvikler av elektronisk rapportering kan designe konfigurasjoner for elektronisk rapportering (ER) for å generere av elektroniske dokumenter i MS Office-formater (Excel og Word), som inneholder innebygde bilder.
+De følgende trinnene forklarer hvordan en bruker i rollen Systemansvarlig eller Utvikler av elektronisk rapportering kan designe konfigurasjoner for elektronisk rapportering (ER) for å generere elektroniske dokumenter i MS Office-formater (Excel og Word), som inneholder innebygde bilder.
 
 I dette eksemplet skal du bruke opprettede ER-konfigurasjoner for eksempelfirmaet "Litware, Inc".  For å fullføre disse trinnene, må du først fullføre trinnene i oppgaveveiledningen "ER lage rapporter i MS Office-formater med innebygde bilder (del 2: se gjennom konfigurasjoner)". Denne fremgangsmåten kan utføres i USMF-firmaet.
 
@@ -40,7 +40,7 @@ I dette eksemplet skal du bruke opprettede ER-konfigurasjoner for eksempelfirmae
     * Kjør formatet for testformål.  
 6. Velg Ja i feltet Sjekkformat som kan forhandles.
 7. Klikk OK.
-    * Se gjennom de opprettede utdataene. Legg merke til at firmalogoen skal vises i rapporten, i tillegg til autoriserte personens signatur. Signaturbilde av hentes fra feltet av typen "Beholder" for Sjekk oppsett posten som er tilknyttet den valgte bankkontoen.  
+    * Se gjennom de opprettede utdataene. Legg merke til at firmalogoen vises i rapporten, i tillegg til autoriserte personens signatur. Signaturbildet hentes fra feltet av typen "Beholder" for Sjekk oppsett-posten som er tilknyttet den valgte bankkontoen.  
 8. Utvid Kopier-seksjonen.
 9. Klikk Rediger.
 10. Angi "Skriv ut vannmerke som Annuller" i feltet Vannmerker.
@@ -66,7 +66,7 @@ I dette eksemplet skal du bruke opprettede ER-konfigurasjoner for eksempelfirmae
 5. Klikk Utforming.
 6. Klikk Tilordne modell til datakilde.
 7. Klikk Utforming.
-    * Vi vil endre bindingen av-datamodellen signatur vare for å få signaturen bildet fra filen som er knyttet til posten sjekk oppsett som er tilknyttet den valgte bankkontoen.  
+    * Vi vil endre bindingen av datamodellens signaturelement for å få signaturbildet fra filen som er knyttet til posten sjekk oppsett som er tilknyttet den valgte bankkontoen.  
 8. Deaktiver Vis detaljer.
 9. Utvid "oppsett" i treet.
 10. Utvid "oppsett\signatur" i treet.
@@ -105,7 +105,7 @@ I dette eksemplet skal du bruke opprettede ER-konfigurasjoner for eksempelfirmae
 9. Klikk Ja.
 10. Klikk Ny.
 11. Klikk Fil.
-    * Klikk Bla gjennom og velg den nedlastede på forhånd "sjekk Word.docx-malfil.  
+    * Klikk Bla gjennom og velg den nedlastede på forhånd "Sjekk Word.docx-malfil.  
 12. Lukk siden.
 13. Angi eller velg en verdi i feltet Mal.
 14. Klikk Lagre.

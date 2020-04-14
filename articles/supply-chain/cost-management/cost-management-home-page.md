@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: aevengir
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: dd51fa667fd48b7bab64c3566b616631c6f9bcd1
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: df8552aab5f1566dccf0b905c2d5db372671ec09
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2249638"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3144117"
 ---
 # <a name="cost-management-home-page"></a>Startside for kostnadsstyring
 
@@ -32,12 +32,13 @@ ms.locfileid: "2249638"
 
 [Med kostnadsstyring (video)](https://www.youtube.com/watch?v=vXzlC-mOBcg&feature=youtu.be) kan du arbeide med vurderingen og regnskapet for råvarer, halvferdige varer, ferdigvarer og aktiva i arbeid. Det er prosessen med å definere, behandle og rapportere [Lagerregnskap](cost-object.md) og [Produksjonsregnskap](bom-calculations.md).
 
-Du kan definere kostnadspolicyer i følgende områder: 
--  [Forhåndsbestemt kostnad](costing-versions.md)
--  [Lagerregnskap](cost-object.md)
--  [Produksjonsregnskap](bom-calculations.md)
--  [Regnskap for indirekte kostnader](costing-sheets.md)
--  [Finansintegrering](production-order-cost-analysis.md)
+Du kan definere kostnadspolicyer i følgende områder:
+
+- [Forhåndsbestemt kostnad](costing-versions.md)
+- [Lagerregnskap](cost-object.md)
+- [Produksjonsregnskap](bom-calculations.md)
+- [Regnskap for indirekte kostnader](costing-sheets.md)
+- [Finansintegrering](production-order-cost-analysis.md)
 
 Du kan for eksempel definere hvilke beholdningsvurderingsmetoder, for eksempel [FIFO](fifo-physical-value-marking.md), [Avveid gjennomsnitt](weighted-average-physical-value-marking.md), [Standardkost](prerequisites-standard-costs.md) og [Glidende gjennomsnitt](moving-average.md), du vil bruke på produkter i [varemodellgruppen](../inventory/reserve-inventory-quantities.md) i Lagerregnskap.
 
@@ -51,23 +52,16 @@ Produksjonsregnskap lar deg håndtere [Etterkalkulering av jobbordre](production
 
 #### <a name="whats-new-and-in-development"></a>Hva er nytt og hva er under utvikling?
 
-Gå til [Veikart for Microsoft Dynamics 365](https://roadmap.dynamics.com/) for å se hvilke nye funksjoner som har blitt utgitt og hvilke nye funksjoner som er under utvikling. 
+Gå til [Veikart for Microsoft Dynamics 365](https://roadmap.dynamics.com/) for å se hvilke nye funksjoner som har blitt utgitt og hvilke nye funksjoner som er under utvikling.
 
 #### <a name="white-paper"></a>Hvitebok
-[Stykklisteberegning ved hjelp av et kostnadsskjema](https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/365operationsbomcalsheet) beskriver hvordan du konfigurerer et kostnadsskjema som inneholder materiale og produksjon, og hvordan konfigurasjonen påvirker resultatene av stykklisteberegningen. For å gi en bedre forklaring på emnene inneholder den konkrete scenarioer og data som beskriver virkningen av forskjellige innstillinger og konfigurasjoner. Vi forventer ikke at du følger alle disse scenarioene, fordi dette dokumentet ikke gir nok informasjon til å konfigurere dem. Hvis du har grunnleggende kunnskap, kan du likevel prøve å spille av oppgaveveiledningene nedenfor i rekkefølgen de vises i. Bruk kunnskapene som du har fått av å lese dette dokumentet til å analysere stykklisteberegning. 
 
--  [Opprett et ferdig produkt](tasks/create-finished-product-2016-02.md)
--  [Opprett et halvfabrikata](tasks/create-semi-finished-product-2016-02.md)
--  [Opprette råvarer](tasks/create-raw-materials-2016-02.md)
--  [Opprette stykklister](tasks/create-boms-2016-02.md)
--  [Opprett ruter](tasks/create-routes-2016-02.md)
--  [Beregne en stykkliste ved hjelp av en struktur med ett nivå](tasks/calculate-bom-single-level-structure-2016-02.md)
--  [Beregne en stykkliste ved hjelp av en struktur med flere nivåer](tasks/calculate-bom-multilevel-structure-2016-02.md)
-
+[Stykklisteberegning ved hjelp av et kostnadsskjema](https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/365operationsbomcalsheet) beskriver hvordan du konfigurerer et kostnadsskjema som inneholder materiale og produksjon, og hvordan konfigurasjonen påvirker resultatene av stykklisteberegningen. For å gi en bedre forklaring på emnene inneholder den konkrete scenarioer og data som beskriver virkningen av forskjellige innstillinger og konfigurasjoner.
 
 #### <a name="blogs"></a>Blogger
+
 Du kan finne meninger, nyheter og annen informasjon om kostnadsstyring, i [Dynamics AX Manufacturing R&D-teambloggen](https://blogs.msdn.microsoft.com/axmfg) og [Supply Chain Management i Dynamics AX R&D-teambloggen](https://blogs.msdn.microsoft.com/dynamicsaxscm). Selv om noen av disse innleggene ble skrevet for tidligere versjoner av kostnadsstyring, vil de samme begrepene fortsatt kunne brukes, og fremgangsmåtene ligner også på den gjeldende versjonen.
 
 #### <a name="task-guides"></a>Oppgaveveiledninger
-Mer hjelp er tilgjengelig som oppgaveveiledninger. For å få tilgang til oppgaveveiledninger klikker du Hjelp-knappen på en side.
 
+Mer hjelp er tilgjengelig som oppgaveveiledninger. For å få tilgang til oppgaveveiledninger klikker du Hjelp-knappen på en side.

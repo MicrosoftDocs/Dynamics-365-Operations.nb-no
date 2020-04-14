@@ -16,16 +16,16 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: f4a34a03dc5bb3cec37bbccdf913bee5088af6a0
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: c5306d41ab91213fdc7de0d3dd23d6845c5b8657
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1844615"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3147739"
 ---
 # <a name="create-a-released-product-for-a-single-company"></a>Opprette et frigitt produkt for ett firma
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Denne prosedyren viser hvordan du oppretter ett enkelt frigitt produkt i konteksten for én enkelt juridisk enhet. Når det frigitte produktet er opprettet, er det umiddelbart tilgjengelig bare i denne enheten. Du kan gå gjennom denne prosedyren i demonstrasjonsdataselskapet USMF. Denne oppgaven utføres vanligvis av en produktdesigner.
 
@@ -58,11 +58,11 @@ Denne prosedyren viser hvordan du oppretter ett enkelt frigitt produkt i konteks
 18. Finn og velg ønsket post i listen.
 19. Klikk koblingen i den valgte raden i listen.
 20. Klikk rullegardinknappen i feltet Innkjøpsenhet for å åpne oppslaget.
-    * Innkjøpsenheten bestemmer hvordan produktet er bestemmes mengdemessig når det er kjøpt fra en leverandør.  
+    * Innkjøpsenheten bestemmer hvordan produktet bestemmes mengdemessig når det er kjøpt fra en leverandør.  
 21. Finn og velg ønsket post i listen.
 22. Klikk koblingen i den valgte raden i listen.
 23. Klikk rullegardinknappen i feltet Salgsenhet for å åpne oppslaget.
-    * Salgsenheten bestemmer hvordan produktet er bestemmes mengdemessig når den selges til en kunde.  
+    * Salgsenheten bestemmer hvordan produktet bestemmes mengdemessig når det selges til en kunde.  
 24. Finn og velg ønsket post i listen.
 25. Klikk koblingen i den valgte raden i listen.
 26. Klikk rullegardinknappen i feltet Stykklisteenhet for å åpne oppslaget.

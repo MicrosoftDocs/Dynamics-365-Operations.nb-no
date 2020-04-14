@@ -16,16 +16,16 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: f3a6678b09ce4011b7f80d40979209cc2f588df8
-ms.sourcegitcommit: 58db26b7edf02e7c33aaaf1c934e3263aa74b01f
+ms.openlocfilehash: 73bc22949d0b19fa04bf27e6fd7df7b27832795b
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "1994940"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3148590"
 ---
 # <a name="generate-and-process-customer-rebates"></a>Generere og behandle kunderabatter
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Denne fremgangsmåten beskriver hvordan du behandler kunderabatter fra kravgenerering til de overføres som avsetninger til kunder. Den hjelper deg gjennom et konkret eksempel for å forklare hvordan forskjellige betingelsene på rabattlinjene påvirker de endelige beløpene som krediteres til kunden. Du må bruke USMF-demodatafirmaet og utføre følgende oppgaver før du starter veiledningen: (1) Gå til siden Kundeparametere, og utvid kategorien Priser og deretter kategorien Prisdetaljer, og kontroller at alternativet Aktiver prisdetaljer er satt til Ja. (2) Gå til siden Rabattavtaler, og velg kunderabattavtalen: USMF-000001. Hvis Arbeidsflytgodkjenningsstatus-feltet ikke er satt til Godkjent, må du klikke Validering i handlingsruten for å godkjenne.
 

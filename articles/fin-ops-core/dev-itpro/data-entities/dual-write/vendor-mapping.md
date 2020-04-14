@@ -19,52 +19,53 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: 2442a6869daac22a435c1a7504b93ea4b5c14747
-ms.sourcegitcommit: 54baab2a04e5c534fc2d1fd67b67e23a152d4e57
+ms.openlocfilehash: 8d531ed4e46d8ee5d2b0937b6efc480e051fe708
+ms.sourcegitcommit: 68f1485de7d64a6c9eba1088af63bd07992d972d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "3019934"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "3173114"
 ---
 # <a name="integrated-vendor-master"></a>Integrert original for leverandør
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [preview-banner](../../includes/preview-banner.md)]
 
-Begrepet *leverandør* refererer til en leverandørorganisasjon eller en enkelt innehaver som er en del av forsyningskjedeprosessen, og som leverer varer til virksomheten. Selv om *leverandør* er et etablert begrep i Finance and Operations-apper, finnes det ikke noe leverandørbegrep i andre Dynamics 365-apper. I stedet overbelaster noen firmaer kontoenheten for å lagre både kundeinformasjon og leverandørinformasjon. Andre bedrifter bruker et egendefinert leverandørbegrep. Common Data Service-integrering støtter begge disse utforminger. Du kan derfor aktivere en av utformingene, avhengig av forretningsscenarioet.
 
-Integrering av leverandørdata mellom Finance and Operations-apper og andre Dynamics 365-apper gjør at du kan bruke dataene i flere maler. Uansett hvor leverandørdataene kommer fra, er de integrert bak kulissene på tvers av applikasjonsgrenser og infrastrukturforskjeller. 
+Begrepet *leverandør* refererer til en leverandørorganisasjon, eller en enkelt innehaver som leverer varer eller tjenester til en virksomhet. Selv om *leverandør* er et etablert begrep i Microsoft Dynamics 365 Supply Chain Management-, finnes det ikke noe leverandørbegrep i modelldrevne apper i Dynamics 365. Du kan imidlertid overbelaste **konto/kontakt**-enheten for å lagre leverandørinformasjon. Den integrerte leverandørstandarden innfører et eksplisitt leverandørbegrep i modelldrevne apper i Dynamics 365. Du kan enten bruke de nye leverandørutformingen eller butikkleverandørdataene i **Konto/kontakt**-enheten. Dobbel skriving støtter begge metoder.
 
-### <a name="vendor-data-flow"></a>Flyt for leverandørdata
+I begge fremgangsmåtene er leverandørdataene integrert i Dynamics 365 Supply Chain Management, Dynamics 365 Sales, Dynamics 365 Field Service og Power Apps-portaler. I Supply Chain Management er dataene tilgjengelige for arbeidsflyter som innkjøpsrekvisisjoner og bestillinger.
 
-Hvis du vil bruke andre Dynamics 365-apper for leverandørkontroll, og du vil isolere leverandørinformasjon fra kundeinformasjon, kan du bruke den nye leverandørutformingen.
+## <a name="vendor-data-flow"></a>Flyt for leverandørdata
+
+Hvis du ikke vil lagre leverandørdata i **Konto/kontakt**-enheten i Common Data Service, kan du bruke den nye leverandørutformingen.
 
 ![Flyt for leverandørdata](media/dual-write-vendor-data-flow.png)
 
-Hvis du vil bruke andre Dynamics 365-apper for leverandørkontroll, og du vil fortsatt bruke kontoenheten til å lagre leverandørinformasjon, kan du bruke den nye utvidede leverandørutformingen. I denne utformingen lagres utvidet leverandørinformasjon, for eksempel leverandørgruppen og leverandørposteringsprofilen, i leverandørdetaljene.
+Hvis du ikke vil fortsette å lagre leverandørdata i **Konto/kontakt**-enheten i , kan du bruke den utvidede leverandørutformingen. Hvis du vil bruke den utvidede leverandørutformingen, må du konfigurere leverandørarbeidsflytene i løsningspakken med dobbel skriving. Hvis du vil ha mer informasjon, se [Bytte mellom leverandørutforminger](vendor-switch.md).
 
 ![Utvidet flyt for leverandørdata](media/dual-write-vendor-detail.jpg)
 
-Leverandørkontaktinformasjon ligner på kundekontaktinformasjon. I kulissene lagres kontaktpersonens informasjon og hentes fra de samme enhetene.
+> [!TIP]
+> Hvis du bruker Power Apps-portaler for selvbetjeningsleverandører, kan leverandørinformasjonen flyte direkte til Finance and Operations-apper.
 
 ## <a name="templates"></a>Maler
 
 Leverandørdata inkluderer all informasjon om leverandøren, for eksempel leverandørgruppe, adresser, kontaktinformasjon, betalingsprofil og fakturaprofil. En samling enhetstilordninger fungerer sammen under leverandørdatasamhandling, som vist i følgende tabell.
 
-Finance and Operations-apper | Andre Dynamics 365-apper         | Beskrivelse
-----------------------------|---------------------------------|------------
-Vendor V2               | Konto | Firmaer som bruker kontoenheten til å lagre leverandørinformasjon, kan fortsette å bruke den på samme måte. De kan også dra fordel av den eksplisitte leverandørfunksjonaliteten som kommer på grunn av Finance and Operations-appintegrasjonen.
-Vendor V2               | Msdyn\_vendors | Bedrifter som bruker en egendefinert løsning for leverandører, kan benytte seg av leverandørkonseptet som blir introdusert i Common Data Service, på grunn av Finance and Operations-appintegrasjonen. 
-Leverandørgrupper | msdyn_vendorgroups | Denne malen synkroniserer leverandørgruppeinformasjon.
-Betalingsmåte for leverandør | msdyn_vendorpaymentmethods | Denne malen synkroniserer informasjon om leverandørbetalingsmåte.
-CDS-kontakter V2             | kontakter                        | Malen [kontakter](customer-mapping.md#cds-contacts-v2-to-contacts) synkroniserer all primær, sekundær og tertiær informasjon, både for kunder og leverandører.
-Linjer i betalingsplan      | msdyn_paymentschedulelines      | Malen [betalingstidsplanlinjer](customer-mapping.md#payment-schedule-lines-to-msdyn_paymentschedulelines) synkroniserer referansedata om betalingsplan, både for kunder og leverandører.
-Betalingsplan            | msdyn_paymentschedules          | Malen [betalingsplaner](customer-mapping.md#payment-schedule-to-msdyn_paymentschedules) synkroniserer referansedata om betalingsplan, både for kunder og leverandører.
-Betalingsdagslinjer, CDS V2    | msdyn_paymentdaylines           | Malen [betalingsdagslinjer](customer-mapping.md#payment-day-lines-cds-v2-to-msdyn_paymentdaylines) synkroniserer referansedata om betalingsdagslinjer for kunder og leverandører.
-Betalingsdager, CDS            | msdyn_paymentdays               | Malen [betalingsdager](customer-mapping.md#payment-days-cds-to-msdyn_paymentdays) synkroniserer referansedata om betalingsdager, både for kunder og leverandører.
-Betalingsbetingelser            | msdyn_paymentterms              | Malen [betalingsbetingelser](customer-mapping.md#terms-of-payment-to-msdyn_paymentterms) synkroniserer referansedata om betalingsbetingelser, både for kunder og leverandører.
-Navnevedlegg                | msdyn_nameaffixes               | Malen [navnevedlegg](customer-mapping.md#name-affixes-to-msdyn_nameaffixes) synkroniserer referansedata for navnevedlegg, både for kunder og leverandører.
+Finance and Operations-apper | Andre Dynamics 365-apper     | Beskrivelse
+----------------------------|-----------------------------|------------
+Vendor V2                   | Konto                     | Firmaer som bruker kontoenheten til å lagre leverandørinformasjon, kan fortsette å bruke den på samme måte. De kan også dra fordel av den eksplisitte leverandørfunksjonaliteten som kommer på grunn av Finance and Operations-appintegrasjonen.
+Vendor V2                   | Msdyn\_vendors              | Bedrifter som bruker en egendefinert løsning for leverandører, kan benytte seg av leverandørkonseptet som blir introdusert i Common Data Service, på grunn av Finance and Operations-appintegrasjonen. 
+Leverandørgrupper               | msdyn\_vendorgroups         | Denne malen synkroniserer leverandørgruppeinformasjon.
+Betalingsmåte for leverandør       | msdyn\_vendorpaymentmethods | Denne malen synkroniserer informasjon om leverandørbetalingsmåte.
+CDS-kontakter V2             | kontakter                    | Malen [kontakter](customer-mapping.md#cds-contacts-v2-to-contacts) synkroniserer all primær, sekundær og tertiær informasjon, både for kunder og leverandører.
+Linjer i betalingsplan      | msdyn\_paymentschedulelines | Malen [betalingstidsplanlinjer](customer-mapping.md#payment-schedule-lines-to-msdyn_paymentschedulelines) synkroniserer referansedata om betalingsplan, både for kunder og leverandører.
+Betalingsplan            | msdyn\_paymentschedules     | Malen [betalingsplaner](customer-mapping.md#payment-schedule-to-msdyn_paymentschedules) synkroniserer referansedata om betalingsplan, både for kunder og leverandører.
+Betalingsdagslinjer, CDS V2    | msdyn\_paymentdaylines      | Malen [betalingsdagslinjer](customer-mapping.md#payment-day-lines-cds-v2-to-msdyn_paymentdaylines) synkroniserer referansedata om betalingsdagslinjer for kunder og leverandører.
+Betalingsdager, CDS            | msdyn\_paymentdays          | Malen [betalingsdager](customer-mapping.md#payment-days-cds-to-msdyn_paymentdays) synkroniserer referansedata om betalingsdager, både for kunder og leverandører.
+Betalingsbetingelser            | msdyn\_paymentterms         | Malen [betalingsbetingelser](customer-mapping.md#terms-of-payment-to-msdyn_paymentterms) synkroniserer referansedata om betalingsbetingelser, både for kunder og leverandører.
+Navnevedlegg                | msdyn\_nameaffixes          | Malen [navnevedlegg](customer-mapping.md#name-affixes-to-msdyn_nameaffixes) synkroniserer referansedata for navnevedlegg, både for kunder og leverandører.
 
 [!include [symbols](../../includes/dual-write-symbols.md)]
 

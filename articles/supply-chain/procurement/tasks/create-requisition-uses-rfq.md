@@ -16,16 +16,16 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 4429bda6efddbb4f1fa7da06e91e51d885919c05
-ms.sourcegitcommit: e10491a2ff04f65d9f306ef6e068ee123213b23b
+ms.openlocfilehash: abe6745682030766eabcd4411121866c9d890be0
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/21/2019
-ms.locfileid: "1914960"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3149637"
 ---
 # <a name="create-a-requisition-that-uses-an-rfq"></a>Opprette en rekvisisjon som bruker en tilbudsforespørsel
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Dette emnet viser hvordan du legger til pris- og leverandørinformasjon i en innkjøpsrekvisisjon fra en prosess for tilbudsforespørsel. Eksemplet som vises i denne veiledningen, kan brukes i demonstrasjonsdatafirmaet USMF, og du må være logget på som administrator for å fullføre alle trinnene. Oppgavene i denne veiledningen utføres vanligvis av innkjøpsansvarlige.
 
@@ -68,7 +68,7 @@ Den neste oppgaven er å opprette en tilbudsforespørsel for å få bud fra leve
 
 1. Oppdater siden.
 2. Velg **Tilbudsforespørsel**.
-3. Velg **USMF** i feltet **Kjøpende juridisk enhet**. Du må velge samme juridiske enheten som er på rekvisisjonslinjen.  
+3. Velg **USMF** i feltet **Kjøpende juridisk enhet**. Du må velge den samme juridiske enheten som er på rekvisisjonslinjen.  
 4. Merk den valgte raden i listen. Hvis du har flere linjer på innkjøpsrekvisisjonen din, velger du alle linjene som du vil legge til i tilbudsforespørselen.  
 5. Velg **OK**.
 6. Oppdater siden.

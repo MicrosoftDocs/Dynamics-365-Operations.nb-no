@@ -15,16 +15,16 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: cf27590d80bbaf7749a0b6e69adc63ddcf4f9380
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: c8511b83a5d327f6a1d5c9ace091eae9e546307b
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2185158"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3142264"
 ---
 # <a name="design-er-configurations-to-import-data-from-external-csv-files"></a>Utforme ER-konfigurasjoner for å importere data fra eksterne CSV-filer
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Bruk denne prosedyren til å utforme elektroniske rapportering (ER)-konfigurasjoner for å importere data til programmet fra en ekstern fil i CSV-format. I denne fremgangsmåten skal du opprette nødvendige ER-konfigurasjoner for eksempelfirmaet, Litware, Inc. For å fullføre disse trinnene, må du først fullføre trinnene i fremgangsmåten "Opprette en konfigurasjonsleverandør og merke den som aktiv." 
 
@@ -35,7 +35,7 @@ Du må også laste ned og lagre lokalt følgende filer: (https://go.microsoft.co
 1. Gå til Organisasjonsstyring > Arbeidsområder > Elektronisk rapportering.
     * Du kan konfigurere en prosess for å importere eksterne filer i XML-, TXT- eller CSV-format til tabellene i programmet. Først må du opprette en abstrakt datamodell som representerer de importerte dataene, fra et bedriftsståsted – en konfigurasjon for ER-datamodell blir opprettet for dette. Deretter må du definere en struktur for den importerte filen som tilordnes til den utformede datamodellen som måten for å portere data fra filen til den abstrakte datamodellen – en ER-formatkonfigurasjon opprettes for dette. Deretter må ER-datamodellkonfigurasjonen utvides med en ny modelltilordning som beskriver hvordan dataene fra den importerte filen og de faste dataene fra den abstrakte datamodellen brukes til å oppdatere programtabellene eller dataenhetene.  
     * Følgende trinn viser hvordan eksternt sporede leverandørtransaksjoner importeres fra den eksterne CSV-filen for senere bruk i leverandørutligningen for 1099-skjemaer.   
-    * Kontroller at konfigurasjonsleverandøren for eksempelfirma Litware, Inc. er tilgjengelig og merket som aktiv. Hvis du ikke ser denne konfigurasjonsleverandøren, må du først fullføre trinnene i prosedyren Opprette en konfigurasjonsleverandør og merke den som aktiv.  
+    * Kontroller at konfigurasjonsleverandøren for eksempelfirma Litware, Inc. er tilgjengelig og merket som aktiv. Hvis du ikke ser denne konfigurasjonsleverandøren, må du først fullføre trinnene i prosedyren "Opprette en konfigurasjonsleverandør og merke den som aktiv".  
 2. Klikk Rapporteringskonfigurasjoner.
 3. Bruk filteret 1099-betalingsmodell. Hvis du allerede har fullført prosedyren Opprette nødvendige konfigurasjoner for å importere data fra en ekstern fil for elektronisk rapportering (ER) og konfigurasjonen 1099-betalingsmodell er tilgjengelig i konfigurasjonstreet, hopper du over alle trinnene i neste underoppgave.   
 
@@ -75,7 +75,7 @@ Du må også laste ned og lagre lokalt følgende filer: (https://go.microsoft.co
     * Rot\Linje\Type\Hode-elementet av typen SEQUENCE inneholder det nestede STRING-elementet der verdien har blitt definert som den faste strengverdien. Denne sekvensen kommer til å analysere hodelinjen i analysefilen.   
 8. Velg Innkommende: 'Fil\Rot: Sekvens\Linje: Sekvens 1..* \Typer: Sak\Post: Sekvens 1..1 (,)' i treet.
     * Rot\Linje\Typer\Post-elementet av typen SEQUENCE er konfigurert til å analysere transaksjonslinjene. Legg merke til at alternativet Egendefinert skilletegn er konfigurert som et komma. Dette betyr at kommaet brukes som skilletegn for et felt for denne typen linje i analysefilen.   
-    * Legg merke til at flere nestede elementer av forskjellige datatyper er lagt til for Rot\Linje\Typer\Post-elementet for å analysere transaksjonens linjer som atskilte felt. Legg merke til at alternativet Tilbudssøknad er konfigurert som 'Ingen'. Dette betyr at i analysefilen anses alle felt av denne typen som at de ikke har omsluttede tegn.   
+    * Legg merke til at flere nestede elementer av forskjellige datatyper er lagt til for Rot\Linje\Typer\Post-elementet for å analysere transaksjonens linjer som atskilte felt. Legg merke til at alternativet Tilbudssøknad er konfigurert som "Ingen". Dette betyr at i analysefilen anses alle felt av denne typen som at de ikke har omsluttede tegn.   
 9. Velg 'Innkommende: Fil\Rot: Sekvens\Linje: Sekvens 1..* \Typer: Sak\Post: Sekvens 1..1 (,)\TransactionDate: DateTime' i treet.
     * For eksempel Rot\Linje\Typer\Post\TransactionDate-elementet av typen DATETIME er konfigurert for å hente transaksjonens verdi for dato og klokkeslett fra analysefilen i M/d/åååå-formatet.   
 10. Velg 'Innkommende: Fil\Rot: Sekvens\Linje: Sekvens 1..* \Typer: Sak\Post: Sekvens 1..1 (,)\CountryCode: Streng 0..1 ' i treet.
