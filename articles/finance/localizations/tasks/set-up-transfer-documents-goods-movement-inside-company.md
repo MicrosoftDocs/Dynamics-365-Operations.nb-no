@@ -16,61 +16,61 @@ ms.search.region: Global
 ms.author: v-oloski
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: fe4dd04595c961e1c66178e6ac6955e945869ded
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: e85bd359ce1053629ad4217cf623e57b2976463a
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2185687"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3143488"
 ---
-# <a name="set-up-the-transfer-documents-for-goods-movement-inside-a-company"></a><span data-ttu-id="38923-103">Definere overføringsdokumentene for varebevegelse i et selskap</span><span class="sxs-lookup"><span data-stu-id="38923-103">Set up the transfer documents for goods movement inside a company</span></span>
+# <a name="set-up-the-transfer-documents-for-goods-movement-inside-a-company"></a><span data-ttu-id="d8675-103">Definere overføringsdokumentene for varebevegelse i et selskap</span><span class="sxs-lookup"><span data-stu-id="d8675-103">Set up the transfer documents for goods movement inside a company</span></span>
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="38923-104">Denne fremgangsmåten viser hvordan du oppretter overføringsdokumenter for flytting av varer i et selskap.</span><span class="sxs-lookup"><span data-stu-id="38923-104">This procedure shows how to create transfer documents for goods movement inside a company.</span></span> <span data-ttu-id="38923-105">Denne fremgangsmåten er bare tilgjengelig for juridiske enheter med hovedadresse i Litauen.</span><span class="sxs-lookup"><span data-stu-id="38923-105">This procedure is only available for legal entities with a primary address in Lithuania.</span></span> <span data-ttu-id="38923-106">Prosedyren ble opprettet med demonstrasjonsdatafirmaet DEMF med en primæradresse i Litauen.</span><span class="sxs-lookup"><span data-stu-id="38923-106">The procedure was created using the demo data company DEMF with a primary address in Lithuania.</span></span> <span data-ttu-id="38923-107">Før du kan fullføre denne prosedyren, må du fullføre fremgangsmåten Konfigurere overføringsdokumenter for flytting av varer i et selskap.</span><span class="sxs-lookup"><span data-stu-id="38923-107">Before you can complete this procedure, you must complete the “Set up transfer documents for goods movement inside a company” procedure.</span></span> <span data-ttu-id="38923-108">Denne prosedyren er ment for lagerregnskapsførere.</span><span class="sxs-lookup"><span data-stu-id="38923-108">This procedure is intended for inventory accountants.</span></span> <span data-ttu-id="38923-109">Denne fremgangsmåten gjelder for en funksjon som ble lagt til i Dynamics 365 for Operations versjon 1611.</span><span class="sxs-lookup"><span data-stu-id="38923-109">This procedure is for a feature that was added in Dynamics 365 for Operations version 1611.</span></span>
+<span data-ttu-id="d8675-104">Denne fremgangsmåten viser hvordan du oppretter overføringsdokumenter for flytting av varer i et selskap.</span><span class="sxs-lookup"><span data-stu-id="d8675-104">This procedure shows how to create transfer documents for goods movement inside a company.</span></span> <span data-ttu-id="d8675-105">Denne fremgangsmåten er bare tilgjengelig for juridiske enheter med hovedadresse i Litauen.</span><span class="sxs-lookup"><span data-stu-id="d8675-105">This procedure is only available for legal entities with a primary address in Lithuania.</span></span> <span data-ttu-id="d8675-106">Prosedyren ble opprettet med demonstrasjonsdatafirmaet DEMF med en primæradresse i Litauen.</span><span class="sxs-lookup"><span data-stu-id="d8675-106">The procedure was created using the demo data company DEMF with a primary address in Lithuania.</span></span> <span data-ttu-id="d8675-107">Før du kan fullføre denne prosedyren, må du fullføre fremgangsmåten Konfigurere overføringsdokumenter for flytting av varer i et selskap.</span><span class="sxs-lookup"><span data-stu-id="d8675-107">Before you can complete this procedure, you must complete the "Set up transfer documents for goods movement inside a company" procedure.</span></span> <span data-ttu-id="d8675-108">Denne prosedyren er ment for lagerregnskapsførere.</span><span class="sxs-lookup"><span data-stu-id="d8675-108">This procedure is intended for inventory accountants.</span></span> <span data-ttu-id="d8675-109">Denne fremgangsmåten gjelder for en funksjon som ble lagt til i Dynamics 365 for Operations versjon 1611.</span><span class="sxs-lookup"><span data-stu-id="d8675-109">This procedure is for a feature that was added in Dynamics 365 for Operations version 1611.</span></span>
 
 
-## <a name="create-a-transfer-order"></a><span data-ttu-id="38923-110">Opprett overføringsordre</span><span class="sxs-lookup"><span data-stu-id="38923-110">Create a transfer order</span></span>
-1. <span data-ttu-id="38923-111">Gå til Lagerstyring > Innkommende ordrer > Overføringsordre.</span><span class="sxs-lookup"><span data-stu-id="38923-111">Go to Inventory management > Inbound orders > Transfer order.</span></span>
-2. <span data-ttu-id="38923-112">Klikk Ny.</span><span class="sxs-lookup"><span data-stu-id="38923-112">Click New.</span></span>
-3. <span data-ttu-id="38923-113">Angi eller velg en verdi i feltet Fra lager.</span><span class="sxs-lookup"><span data-stu-id="38923-113">In the From warehouse field, enter or select a value.</span></span>
-4. <span data-ttu-id="38923-114">Angi eller velg en verdi i feltet Til lager.</span><span class="sxs-lookup"><span data-stu-id="38923-114">In the To warehouse field, enter or select a value.</span></span>
-5. <span data-ttu-id="38923-115">Klikk Legg til.</span><span class="sxs-lookup"><span data-stu-id="38923-115">Click Add.</span></span>
-6. <span data-ttu-id="38923-116">Merk den valgte raden i listen.</span><span class="sxs-lookup"><span data-stu-id="38923-116">In the list, mark the selected row.</span></span>
-7. <span data-ttu-id="38923-117">Angi eller velg en verdi i Varenummer-feltet.</span><span class="sxs-lookup"><span data-stu-id="38923-117">In the Item number field, enter or select a value.</span></span>
+## <a name="create-a-transfer-order"></a><span data-ttu-id="d8675-110">Opprett overføringsordre</span><span class="sxs-lookup"><span data-stu-id="d8675-110">Create a transfer order</span></span>
+1. <span data-ttu-id="d8675-111">Gå til Lagerstyring > Innkommende ordrer > Overføringsordre.</span><span class="sxs-lookup"><span data-stu-id="d8675-111">Go to Inventory management > Inbound orders > Transfer order.</span></span>
+2. <span data-ttu-id="d8675-112">Klikk Ny.</span><span class="sxs-lookup"><span data-stu-id="d8675-112">Click New.</span></span>
+3. <span data-ttu-id="d8675-113">Angi eller velg en verdi i feltet Fra lager.</span><span class="sxs-lookup"><span data-stu-id="d8675-113">In the From warehouse field, enter or select a value.</span></span>
+4. <span data-ttu-id="d8675-114">Angi eller velg en verdi i feltet Til lager.</span><span class="sxs-lookup"><span data-stu-id="d8675-114">In the To warehouse field, enter or select a value.</span></span>
+5. <span data-ttu-id="d8675-115">Klikk Legg til.</span><span class="sxs-lookup"><span data-stu-id="d8675-115">Click Add.</span></span>
+6. <span data-ttu-id="d8675-116">Merk den valgte raden i listen.</span><span class="sxs-lookup"><span data-stu-id="d8675-116">In the list, mark the selected row.</span></span>
+7. <span data-ttu-id="d8675-117">Angi eller velg en verdi i Varenummer-feltet.</span><span class="sxs-lookup"><span data-stu-id="d8675-117">In the Item number field, enter or select a value.</span></span>
 
-## <a name="enter-transportation-details-for-the-transfer-order"></a><span data-ttu-id="38923-118">Angi transportdetaljer for overføringsordren</span><span class="sxs-lookup"><span data-stu-id="38923-118">Enter transportation details for the transfer order</span></span>
-1. <span data-ttu-id="38923-119">Klikk Lagre.</span><span class="sxs-lookup"><span data-stu-id="38923-119">Click Save.</span></span>
-2. <span data-ttu-id="38923-120">Klikk Send i handlingsruten.</span><span class="sxs-lookup"><span data-stu-id="38923-120">On the Action Pane, click Ship.</span></span>
-3. <span data-ttu-id="38923-121">Klikk Transportdetaljer.</span><span class="sxs-lookup"><span data-stu-id="38923-121">Click Transportation details.</span></span>
-4. <span data-ttu-id="38923-122">Velg Ja i feltet Skriv ut transportdetaljer.</span><span class="sxs-lookup"><span data-stu-id="38923-122">Select Yes in the Print transportation details field.</span></span>
-5. <span data-ttu-id="38923-123">Angi eller velg en verdi i feltet Utstedte varer.</span><span class="sxs-lookup"><span data-stu-id="38923-123">In the Goods issued by field, enter or select a value.</span></span>
-6. <span data-ttu-id="38923-124">Skriv inn en verdi i feltet Pakke.</span><span class="sxs-lookup"><span data-stu-id="38923-124">In the Package field, type a value.</span></span>
-7. <span data-ttu-id="38923-125">Skriv inn en verdi i feltet Risikonivå for lasten.</span><span class="sxs-lookup"><span data-stu-id="38923-125">In the Risk level of the load field, type a value.</span></span>
-8. <span data-ttu-id="38923-126">Angi eller velg en verdi i feltet Transportør.</span><span class="sxs-lookup"><span data-stu-id="38923-126">In the Carrier field, enter or select a value.</span></span>
-9. <span data-ttu-id="38923-127">Angi eller velg en verdi i feltet Modell.</span><span class="sxs-lookup"><span data-stu-id="38923-127">In the Model field, enter or select a value.</span></span>
-10. <span data-ttu-id="38923-128">Skriv inn en verdi i feltet Registreringsnummer.</span><span class="sxs-lookup"><span data-stu-id="38923-128">In the Registration number field, type a value.</span></span>
-11. <span data-ttu-id="38923-129">Skriv inn en verdi i feltet Registreringsnummer for lastebil</span><span class="sxs-lookup"><span data-stu-id="38923-129">In the Trailer registration number field, type a value.</span></span>
-12. <span data-ttu-id="38923-130">Angi eller velg en verdi i feltet Sjåfør.</span><span class="sxs-lookup"><span data-stu-id="38923-130">In the Driver field, enter or select a value.</span></span>
-13. <span data-ttu-id="38923-131">Skriv inn en verdi i feltet for sjåførnavn.</span><span class="sxs-lookup"><span data-stu-id="38923-131">In the Driver name field, type a value.</span></span>
-14. <span data-ttu-id="38923-132">Klikk Lagre.</span><span class="sxs-lookup"><span data-stu-id="38923-132">Click Save.</span></span>
-15. <span data-ttu-id="38923-133">Lukk siden.</span><span class="sxs-lookup"><span data-stu-id="38923-133">Close the page.</span></span>
+## <a name="enter-transportation-details-for-the-transfer-order"></a><span data-ttu-id="d8675-118">Angi transportdetaljer for overføringsordren</span><span class="sxs-lookup"><span data-stu-id="d8675-118">Enter transportation details for the transfer order</span></span>
+1. <span data-ttu-id="d8675-119">Klikk Lagre.</span><span class="sxs-lookup"><span data-stu-id="d8675-119">Click Save.</span></span>
+2. <span data-ttu-id="d8675-120">Klikk Send i handlingsruten.</span><span class="sxs-lookup"><span data-stu-id="d8675-120">On the Action Pane, click Ship.</span></span>
+3. <span data-ttu-id="d8675-121">Klikk Transportdetaljer.</span><span class="sxs-lookup"><span data-stu-id="d8675-121">Click Transportation details.</span></span>
+4. <span data-ttu-id="d8675-122">Velg Ja i feltet Skriv ut transportdetaljer.</span><span class="sxs-lookup"><span data-stu-id="d8675-122">Select Yes in the Print transportation details field.</span></span>
+5. <span data-ttu-id="d8675-123">Angi eller velg en verdi i feltet Utstedte varer.</span><span class="sxs-lookup"><span data-stu-id="d8675-123">In the Goods issued by field, enter or select a value.</span></span>
+6. <span data-ttu-id="d8675-124">Skriv inn en verdi i feltet Pakke.</span><span class="sxs-lookup"><span data-stu-id="d8675-124">In the Package field, type a value.</span></span>
+7. <span data-ttu-id="d8675-125">Skriv inn en verdi i feltet Risikonivå for lasten.</span><span class="sxs-lookup"><span data-stu-id="d8675-125">In the Risk level of the load field, type a value.</span></span>
+8. <span data-ttu-id="d8675-126">Angi eller velg en verdi i feltet Transportør.</span><span class="sxs-lookup"><span data-stu-id="d8675-126">In the Carrier field, enter or select a value.</span></span>
+9. <span data-ttu-id="d8675-127">Angi eller velg en verdi i feltet Modell.</span><span class="sxs-lookup"><span data-stu-id="d8675-127">In the Model field, enter or select a value.</span></span>
+10. <span data-ttu-id="d8675-128">Skriv inn en verdi i feltet Registreringsnummer.</span><span class="sxs-lookup"><span data-stu-id="d8675-128">In the Registration number field, type a value.</span></span>
+11. <span data-ttu-id="d8675-129">Skriv inn en verdi i feltet Registreringsnummer for lastebil</span><span class="sxs-lookup"><span data-stu-id="d8675-129">In the Trailer registration number field, type a value.</span></span>
+12. <span data-ttu-id="d8675-130">Angi eller velg en verdi i feltet Sjåfør.</span><span class="sxs-lookup"><span data-stu-id="d8675-130">In the Driver field, enter or select a value.</span></span>
+13. <span data-ttu-id="d8675-131">Skriv inn en verdi i feltet for sjåførnavn.</span><span class="sxs-lookup"><span data-stu-id="d8675-131">In the Driver name field, type a value.</span></span>
+14. <span data-ttu-id="d8675-132">Klikk Lagre.</span><span class="sxs-lookup"><span data-stu-id="d8675-132">Click Save.</span></span>
+15. <span data-ttu-id="d8675-133">Lukk siden.</span><span class="sxs-lookup"><span data-stu-id="d8675-133">Close the page.</span></span>
 
-## <a name="view-the-packing-slip-for-the-unposted-transfer-order"></a><span data-ttu-id="38923-134">Vise følgeseddelen for den uposterte overføringsordren</span><span class="sxs-lookup"><span data-stu-id="38923-134">View the packing slip for the unposted transfer order</span></span>
-1. <span data-ttu-id="38923-135">Klikk Følgeseddel.</span><span class="sxs-lookup"><span data-stu-id="38923-135">Click Packing slip.</span></span>
-2. <span data-ttu-id="38923-136">Klikk OK.</span><span class="sxs-lookup"><span data-stu-id="38923-136">Click OK.</span></span>
-3. <span data-ttu-id="38923-137">Lukk siden.</span><span class="sxs-lookup"><span data-stu-id="38923-137">Close the page.</span></span>
+## <a name="view-the-packing-slip-for-the-unposted-transfer-order"></a><span data-ttu-id="d8675-134">Vise følgeseddelen for den uposterte overføringsordren</span><span class="sxs-lookup"><span data-stu-id="d8675-134">View the packing slip for the unposted transfer order</span></span>
+1. <span data-ttu-id="d8675-135">Klikk Følgeseddel.</span><span class="sxs-lookup"><span data-stu-id="d8675-135">Click Packing slip.</span></span>
+2. <span data-ttu-id="d8675-136">Klikk OK.</span><span class="sxs-lookup"><span data-stu-id="d8675-136">Click OK.</span></span>
+3. <span data-ttu-id="d8675-137">Lukk siden.</span><span class="sxs-lookup"><span data-stu-id="d8675-137">Close the page.</span></span>
 
-## <a name="view-the-packing-slip-for-the-posted-transfer-order"></a><span data-ttu-id="38923-138">Vise følgeseddelen for den posterte overføringsordren</span><span class="sxs-lookup"><span data-stu-id="38923-138">View the packing slip for the posted transfer order</span></span>
-1. <span data-ttu-id="38923-139">Klikk Overføringsordre i handlingsruten.</span><span class="sxs-lookup"><span data-stu-id="38923-139">On the Action Pane, click Transfer order.</span></span>
-2. <span data-ttu-id="38923-140">Klikk Send i handlingsruten.</span><span class="sxs-lookup"><span data-stu-id="38923-140">On the Action Pane, click Ship.</span></span>
-3. <span data-ttu-id="38923-141">Klikk Send overføringsordre.</span><span class="sxs-lookup"><span data-stu-id="38923-141">Click Ship transfer order.</span></span>
-4. <span data-ttu-id="38923-142">Klikk kategorien Generelt.</span><span class="sxs-lookup"><span data-stu-id="38923-142">Click the General tab.</span></span>
-5. <span data-ttu-id="38923-143">Velg et alternativ i feltet Oppdater.</span><span class="sxs-lookup"><span data-stu-id="38923-143">In the Update field, select an option.</span></span>
-6. <span data-ttu-id="38923-144">Klikk kategorien Oversikt.</span><span class="sxs-lookup"><span data-stu-id="38923-144">Click the Overview tab.</span></span>
-7. <span data-ttu-id="38923-145">Skriv inn en verdi i Følgeseddel-feltet.</span><span class="sxs-lookup"><span data-stu-id="38923-145">In the Packing slip field, type a value.</span></span>
-8. <span data-ttu-id="38923-146">Klikk OK.</span><span class="sxs-lookup"><span data-stu-id="38923-146">Click OK.</span></span>
-9. <span data-ttu-id="38923-147">Klikk Send i handlingsruten.</span><span class="sxs-lookup"><span data-stu-id="38923-147">On the Action Pane, click Ship.</span></span>
-10. <span data-ttu-id="38923-148">Klikk Følgeseddel.</span><span class="sxs-lookup"><span data-stu-id="38923-148">Click Packing slip.</span></span>
-11. <span data-ttu-id="38923-149">Klikk OK.</span><span class="sxs-lookup"><span data-stu-id="38923-149">Click OK.</span></span>
+## <a name="view-the-packing-slip-for-the-posted-transfer-order"></a><span data-ttu-id="d8675-138">Vise følgeseddelen for den posterte overføringsordren</span><span class="sxs-lookup"><span data-stu-id="d8675-138">View the packing slip for the posted transfer order</span></span>
+1. <span data-ttu-id="d8675-139">Klikk Overføringsordre i handlingsruten.</span><span class="sxs-lookup"><span data-stu-id="d8675-139">On the Action Pane, click Transfer order.</span></span>
+2. <span data-ttu-id="d8675-140">Klikk Send i handlingsruten.</span><span class="sxs-lookup"><span data-stu-id="d8675-140">On the Action Pane, click Ship.</span></span>
+3. <span data-ttu-id="d8675-141">Klikk Send overføringsordre.</span><span class="sxs-lookup"><span data-stu-id="d8675-141">Click Ship transfer order.</span></span>
+4. <span data-ttu-id="d8675-142">Klikk kategorien Generelt.</span><span class="sxs-lookup"><span data-stu-id="d8675-142">Click the General tab.</span></span>
+5. <span data-ttu-id="d8675-143">Velg et alternativ i feltet Oppdater.</span><span class="sxs-lookup"><span data-stu-id="d8675-143">In the Update field, select an option.</span></span>
+6. <span data-ttu-id="d8675-144">Klikk kategorien Oversikt.</span><span class="sxs-lookup"><span data-stu-id="d8675-144">Click the Overview tab.</span></span>
+7. <span data-ttu-id="d8675-145">Skriv inn en verdi i Følgeseddel-feltet.</span><span class="sxs-lookup"><span data-stu-id="d8675-145">In the Packing slip field, type a value.</span></span>
+8. <span data-ttu-id="d8675-146">Klikk OK.</span><span class="sxs-lookup"><span data-stu-id="d8675-146">Click OK.</span></span>
+9. <span data-ttu-id="d8675-147">Klikk Send i handlingsruten.</span><span class="sxs-lookup"><span data-stu-id="d8675-147">On the Action Pane, click Ship.</span></span>
+10. <span data-ttu-id="d8675-148">Klikk Følgeseddel.</span><span class="sxs-lookup"><span data-stu-id="d8675-148">Click Packing slip.</span></span>
+11. <span data-ttu-id="d8675-149">Klikk OK.</span><span class="sxs-lookup"><span data-stu-id="d8675-149">Click OK.</span></span>
 
