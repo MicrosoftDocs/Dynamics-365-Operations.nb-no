@@ -5,6 +5,12 @@
       items:
         - name: Nyheter eller endringer i Human Resources
           href: hr-admin-whats-new.md
+        - name: 13. april 2020
+          href: hr-whats-new-2020-04-13.md
+        - name: 3. april 2020
+          href: hr-whats-new-2020-04-03.md
+        - name: 24. mars 2020
+          href: hr-whats-new-2020-03-24.md
         - name: 19. mars 2020
           href: hr-whats-new-2020-03-19.md
         - name: 10. mars 2020
@@ -401,7 +407,7 @@
               href: hr-compensation-process.md
         - name: Administrere fordeler
           items:
-            - name: 'Forhåndsvisningsfunksjon: fordelsbehandling'
+            - name: Fordelsbehandling
               items:
                 - name: Oversikt over fordelsbehandling
                   href: hr-benefits-management-overview.md
@@ -445,12 +451,8 @@
                   items:
                     - name: Definere fordelsplaner
                       href: hr-benefits-plans-setup.md
-                    - name: Opprette fordelsplaner for arbeidere
-                      href: hr-benefits-plans-worker.md
                     - name: Definere fleksible kredittprogrammer
                       href: hr-benefits-plans-flex-credit-programs.md
-                    - name: Konfigurere fremtidige levetidshendelser
-                      href: hr-benefits-plans-future-life-events.md
                 - name: Behandle fordelsplaner
                   items:
                     - name: Behandle registreringsberettigelse
@@ -497,8 +499,10 @@
               href: hr-leave-and-absence-plans.md
             - name: Tilordne arbeidere til en permisjonsplan
               href: hr-leave-and-absence-enroll.md
-            - name: Avsette permisjons- og fraværsplaner
+            - name: Avsett permisjons- og fraværsplaner
               href: hr-leave-and-absence-accrue.md
+            - name: Suspender permisjon
+              href: hr-leave-and-absence-suspend-leave.md
             - name: Vise analyse for permisjon og fravær
               href: hr-leave-and-absence-analytics.md
             - name: Administrere forespørsler om permisjon og fravær
