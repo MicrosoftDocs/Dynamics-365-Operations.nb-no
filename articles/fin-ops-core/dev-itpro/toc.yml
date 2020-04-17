@@ -14,7 +14,9 @@
               items:
                 - name: Nyheter eller endringer på startsiden for Plattformoppdateringer
                   href: get-started/whats-new-home-page.md
-                - name: Platform update 34 (mai 2020)
+                - name: Plattformoppdateringer for 10.0.11 (juli 2020)
+                  href: get-started/whats-new-platform-update-35.md
+                - name: Plattformoppdateringer for 10.0.10 (mai 2020)
                   href: get-started/whats-new-platform-update-34.md
                 - name: Platform update 33 (april 2020)
                   href: get-started/whats-new-platform-update-33.md
@@ -324,8 +326,6 @@
                       href: data-entities/configuration-data-packages.md
                     - name: Konfigurasjon av datapakker (bare versjon fra juli 2017)
                       href: data-entities/configuration-data-packages.md
-                    - name: Gjøre enhetslager tilgjengelig som Data Lake
-                      href: data-entities/entity-store-data-lake.md
                 - name: Konfigurasjonsdatamaler
                   href: data-entities/configuration-data-templates.md
                 - name: Spore endringer i en enhet
@@ -384,6 +384,14 @@
               href: user-interface/data-validation-workspace.md
             - name: Feilbeskrivelser for databehandling
               href: data-entities/dm-error-descriptions.md
+        - name: Azure Data Lake
+          items:
+            - name: Oversikt over Azure Data Lake
+              href: data-entities/azure-data-lake-overview.md
+            - name: Finance and Operations-apper i Azure Data Lake
+              href: data-entities/finance-data-azure-data-lake.md
+            - name: Gjøre enhetslager tilgjengelig som Data Lake
+              href: data-entities/entity-store-data-lake.md
         - name: Databaseflyttingsoperasjoner
           items:
             - name: Oversikt
@@ -482,38 +490,46 @@
               items:
                 - name: Startside for lokal distribusjon
                   href: deployment/on-premises-deployment-landing-page.md
-                - name: Oversikt over lokal distribusjon
-                  href: deployment/on-premises-overview.md
-                - name: Planlegge og klargjøre for lokale distribusjoner
-                  href: deployment/plan-onprem-deployment.md
-                - name: Krav til maskinvarestørrelse
-                  href: ../fin-ops/get-started/hardware-sizing-on-premises-environments.md?toc=/dev-itpro/toc.json
-                - name: Konfigurere lokale prosjekter
-                  href: lifecycle-services/lbd-create-lcs-on-prem-project.md
+                - name: Klargjøre for lokale distribusjoner
+                  items:
+                    - name: Oversikt over lokal distribusjon
+                      href: deployment/on-premises-overview.md
+                    - name: Planlegge og klargjøre for lokale distribusjoner
+                      href: deployment/plan-onprem-deployment.md
+                    - name: Krav til maskinvarestørrelse
+                      href: ../fin-ops/get-started/hardware-sizing-on-premises-environments.md?toc=/dev-itpro/toc.json
                 - name: Konfigurere og distribuere lokale miljøer
                   items:
-                    - name: Startside for å konfigurere og distribuere lokale miljøer
-                      href: deployment/setup-deploy-on-premises-environments.md
-                    - name: "Distribuere lokale miljøer (Platform update\_12 og nyere)"
+                    - name: Konfigurere lokale prosjekter i LCS
+                      href: lifecycle-services/lbd-create-lcs-on-prem-project.md
+                    - name: Konfigurere og distribuere lokale miljøer
                       href: deployment/setup-deploy-on-premises-pu12.md
-                    - name: Distribuere lokale miljøer (Platform update 8 og 11)
-                      href: deployment/setup-deploy-on-premises-pu8-pu11.md
                     - name: Installasjonstrinn for komponenter i Retail-kanal i et lokalt miljø
                       href: deployment/deploy-retail-onprem.md
+                    - name: Utvikle og distribuere tilpassede modeller til lokale miljøer
+                      href: deployment/develop-deploy-custom-models-on-premises.md
+                - name: Miljøvedlikehold
+                  items:
+                    - name: Bruke oppdateringer i en lokal distribusjon
+                      href: deployment/apply-updates-on-premises.md
+                    - name: Sertifikatrotasjon
+                      href: deployment/certificate-rotation-on-prem.md
+                    - name: Internett-tilkobling for klient
+                      href: user-interface/client-disconnected.md
+                    - name: Konfigurere proxyer for lokale miljøer
+                      href: deployment/onprem-reverseproxy.md
+                    - name: Lokal diagnostikk
+                      href: deployment/on-premises-diagnostics.md
+                    - name: PowerBI.com-integrering med lokale miljøer
+                      href: analytics/entity-store-on-prem.md
+                    - name: Konfigurere miljøer på nytt
+                      href: lifecycle-services/reconfigure-environment.md
+                    - name: Distribuere lokale distribusjoner på nytt
+                      href: deployment/redeploy-on-prem.md
+                    - name: Fjerne og installere en AOS-node på nytt
+                      href: deployment/onprem-remove-reinstall-AOS-node.md
                     - name: Bruke den samme AD FS-forekomsten på nytt for flere miljøer
                       href: deployment/onprem-reuseadfs.md
-                - name: Utvikle og distribuere tilpassede modeller til lokale miljøer
-                  href: deployment/develop-deploy-custom-models-on-premises.md
-                - name: PowerBI.com-integrering med lokale miljøer
-                  href: analytics/entity-store-on-prem.md
-                - name: Konfigurere proxyer for lokale miljøer
-                  href: deployment/onprem-reverseproxy.md
-                - name: Bruke oppdateringer i en lokal distribusjon
-                  href: deployment/apply-updates-on-premises.md
-                - name: Lokal diagnostikk
-                  href: deployment/on-premises-diagnostics.md
-                - name: Distribuere lokale distribusjoner på nytt
-                  href: deployment/redeploy-on-prem.md
                 - name: Lokal agent
                   items:
                     - name: Kompatibilitet med AD FS Office 365
@@ -522,16 +538,12 @@
                       href: lifecycle-services/pre-post-scripts.md
                     - name: Oppdatere den lokale agenten
                       href: lifecycle-services/update-local-agent.md
-                - name: Konfigurere miljøer på nytt
-                  href: lifecycle-services/reconfigure-environment.md
-                - name: Internett-tilkobling for klient
-                  href: user-interface/client-disconnected.md
-                - name: Feilsøke lokale distribusjoner
-                  href: deployment/troubleshoot-on-prem.md
-                - name: Skript for å løse problemer i lokale miljøer
-                  href: deployment/onprem-tsg-implementations.md
-                - name: Sertifikatrotasjon
-                  href: deployment/certificate-rotation-on-prem.md
+                - name: Feilsøking
+                  items:
+                    - name: Feilsøke lokale distribusjoner
+                      href: deployment/troubleshoot-on-prem.md
+                    - name: Skript for å løse problemer i lokale miljøer
+                      href: deployment/onprem-tsg-implementations.md
             - name: Distribuere tilpasset kode
               items:
                 - name: Opprette distribuerbare pakker med modeller
@@ -928,6 +940,8 @@
                       href: extensibility/extensibility-attributes.md
                     - name: Dele endringer
                       href: extensibility/breaking-changes.md
+                    - name: Kontrollverktøy for kompatibilitet
+                      href: extensibility/compatibility-checker-tool.md
             - name: Ytelse
               items:
                 - name: Registrere sporinger ved hjelp av Trace Parser
@@ -1442,6 +1456,8 @@
               href: sysadmin/configure-manage-database-log.md
             - name: Bygge OData-metadatabuffer når AOS starter
               href: sysadmin/odata-warmup.md
+            - name: Konfigurere Azure Key Vault-klient
+              href: ../../finance/localizations/setting-up-azure-key-vault-client.md
         - name: 'Oppgraderinger, oppdateringer og hurtigreparasjoner'
           items:
             - name: 'Ressurser for oppgraderinger, oppdateringer og hurtigreparasjoner'
@@ -1542,7 +1558,7 @@
                   href: deployment/apply-updates-on-premises.md
                 - name: Distribuere en lokal distribusjon på nytt
                   href: deployment/redeploy-on-prem.md
-                - name: Oppgradering på stedet for lokale versjoner 7.x til 8.1
+                - name: Oppgradering på stedet for lokale miljøer
                   href: migration-upgrade/on-prem-upgrade.md
             - name: Hurtigreparasjoner
               items:
