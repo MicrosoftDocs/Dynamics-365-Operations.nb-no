@@ -2,7 +2,7 @@
 title: Definere lean-planleggingsgrupper
 description: Lean-planleggingsgrupper defineres for å gruppere og skille produkter i kanban-planleggingen.
 author: cvocph
-manager: AnnBe
+manager: tfehr
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
@@ -10,49 +10,49 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LeanScheduleGroup, GanttColorTableLookup
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: conradv
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: b972327a0a4bf8f5f35340b83236d5053aaa7e40
-ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
+ms.openlocfilehash: 54151e8afd1b6e0606d17b044f545314f7012079
+ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3146819"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "3212072"
 ---
-# <a name="define-lean-schedule-groups"></a><span data-ttu-id="1b69b-103">Definere lean-planleggingsgrupper</span><span class="sxs-lookup"><span data-stu-id="1b69b-103">Define lean schedule groups</span></span>
+# <a name="define-lean-schedule-groups"></a><span data-ttu-id="e4861-103">Definere lean-planleggingsgrupper</span><span class="sxs-lookup"><span data-stu-id="e4861-103">Define lean schedule groups</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="1b69b-104">Lean-planleggingsgrupper defineres for å gruppere og skille produkter i kanban-planleggingen.</span><span class="sxs-lookup"><span data-stu-id="1b69b-104">Lean schedule groups are defined to group and distinguish products in kanban scheduling.</span></span> <span data-ttu-id="1b69b-105">Grupperingen kan utføres som generisk tilknytning per firma eller spesifikk for en arbeidscelle.</span><span class="sxs-lookup"><span data-stu-id="1b69b-105">The grouping can be done as generic association per company or specific to a work cell.</span></span> <span data-ttu-id="1b69b-106">Hver gruppe har en fargekode tilordnet for visuell indikasjon på listesiden for kanban-planlegging.</span><span class="sxs-lookup"><span data-stu-id="1b69b-106">Each group has a color code assigned for visual indication in the kanban scheduling listpage.</span></span> <span data-ttu-id="1b69b-107">Demonstrasjonsdatafirmaet USMF brukes til å opprette denne fremgangsmåten.</span><span class="sxs-lookup"><span data-stu-id="1b69b-107">The demo data company used to create this procedure is USMF.</span></span>
+<span data-ttu-id="e4861-104">Lean-planleggingsgrupper defineres for å gruppere og skille produkter i kanban-planleggingen.</span><span class="sxs-lookup"><span data-stu-id="e4861-104">Lean schedule groups are defined to group and distinguish products in kanban scheduling.</span></span> <span data-ttu-id="e4861-105">Grupperingen kan utføres som generisk tilknytning per firma eller spesifikk for en arbeidscelle.</span><span class="sxs-lookup"><span data-stu-id="e4861-105">The grouping can be done as generic association per company or specific to a work cell.</span></span> <span data-ttu-id="e4861-106">Hver gruppe har en fargekode tilordnet for visuell indikasjon på listesiden for kanban-planlegging.</span><span class="sxs-lookup"><span data-stu-id="e4861-106">Each group has a color code assigned for visual indication in the kanban scheduling listpage.</span></span> <span data-ttu-id="e4861-107">Demonstrasjonsdatafirmaet USMF brukes til å opprette denne fremgangsmåten.</span><span class="sxs-lookup"><span data-stu-id="e4861-107">The demo data company used to create this procedure is USMF.</span></span>
 
 
-## <a name="define-lean-scheduling-group"></a><span data-ttu-id="1b69b-108">Definere lean-planleggingsgruppe</span><span class="sxs-lookup"><span data-stu-id="1b69b-108">Define lean scheduling group</span></span>
-1. <span data-ttu-id="1b69b-109">Gå til Behandling av produktinformasjon > Lean manufacturing > Lean-planleggingsgrupper.</span><span class="sxs-lookup"><span data-stu-id="1b69b-109">Go to Product information management > Lean manufacturing > Lean schedule groups.</span></span>
-2. <span data-ttu-id="1b69b-110">Klikk Ny.</span><span class="sxs-lookup"><span data-stu-id="1b69b-110">Click New.</span></span>
-3. <span data-ttu-id="1b69b-111">Skriv inn en verdi i feltet Tidsplangruppe.</span><span class="sxs-lookup"><span data-stu-id="1b69b-111">In the Schedule group field, type a value.</span></span>
-    * <span data-ttu-id="1b69b-112">En planleggingsgruppegruppe kan defineres som global gruppe eller spesifikk for en arbeidscelle.</span><span class="sxs-lookup"><span data-stu-id="1b69b-112">A schedule group can be defined as global group or specific to a work cell.</span></span> <span data-ttu-id="1b69b-113">I dette enkle eksemplet definerer vi en global gruppe, og arbeidscellen beholdes tom.</span><span class="sxs-lookup"><span data-stu-id="1b69b-113">In this simple example, we define a global group, and the work cell is kept empty.</span></span> <span data-ttu-id="1b69b-114">Innstillingene for denne gruppen gjelder for alle arbeidsceller som ikke har bestemte planleggingsgrupper.</span><span class="sxs-lookup"><span data-stu-id="1b69b-114">The settings of this group apply to all work cells that do not have specific schedule groups.</span></span>  
-4. <span data-ttu-id="1b69b-115">Velg en farge fra fargevalget.</span><span class="sxs-lookup"><span data-stu-id="1b69b-115">Select a color from the color selection.</span></span>
-    * <span data-ttu-id="1b69b-116">Fargene brukes til å utheve jobbene på listesiden for Kanban-tidsplan eller Kanban-prosesstavlen.</span><span class="sxs-lookup"><span data-stu-id="1b69b-116">The colors are used to highlight the jobs on the kanban schedule list page or the kanban process board.</span></span>  
-5. <span data-ttu-id="1b69b-117">Merk den valgte raden i listen.</span><span class="sxs-lookup"><span data-stu-id="1b69b-117">In the list, mark the selected row.</span></span>
-6. <span data-ttu-id="1b69b-118">Klikk koblingen i den valgte raden i listen.</span><span class="sxs-lookup"><span data-stu-id="1b69b-118">In the list, click the link in the selected row.</span></span>
+## <a name="define-lean-scheduling-group"></a><span data-ttu-id="e4861-108">Definere lean-planleggingsgruppe</span><span class="sxs-lookup"><span data-stu-id="e4861-108">Define lean scheduling group</span></span>
+1. <span data-ttu-id="e4861-109">Gå til Behandling av produktinformasjon > Lean manufacturing > Lean-planleggingsgrupper.</span><span class="sxs-lookup"><span data-stu-id="e4861-109">Go to Product information management > Lean manufacturing > Lean schedule groups.</span></span>
+2. <span data-ttu-id="e4861-110">Klikk Ny.</span><span class="sxs-lookup"><span data-stu-id="e4861-110">Click New.</span></span>
+3. <span data-ttu-id="e4861-111">Skriv inn en verdi i feltet Tidsplangruppe.</span><span class="sxs-lookup"><span data-stu-id="e4861-111">In the Schedule group field, type a value.</span></span>
+    * <span data-ttu-id="e4861-112">En planleggingsgruppegruppe kan defineres som global gruppe eller spesifikk for en arbeidscelle.</span><span class="sxs-lookup"><span data-stu-id="e4861-112">A schedule group can be defined as global group or specific to a work cell.</span></span> <span data-ttu-id="e4861-113">I dette enkle eksemplet definerer vi en global gruppe, og arbeidscellen beholdes tom.</span><span class="sxs-lookup"><span data-stu-id="e4861-113">In this simple example, we define a global group, and the work cell is kept empty.</span></span> <span data-ttu-id="e4861-114">Innstillingene for denne gruppen gjelder for alle arbeidsceller som ikke har bestemte planleggingsgrupper.</span><span class="sxs-lookup"><span data-stu-id="e4861-114">The settings of this group apply to all work cells that do not have specific schedule groups.</span></span>  
+4. <span data-ttu-id="e4861-115">Velg en farge fra fargevalget.</span><span class="sxs-lookup"><span data-stu-id="e4861-115">Select a color from the color selection.</span></span>
+    * <span data-ttu-id="e4861-116">Fargene brukes til å utheve jobbene på listesiden for Kanban-tidsplan eller Kanban-prosesstavlen.</span><span class="sxs-lookup"><span data-stu-id="e4861-116">The colors are used to highlight the jobs on the kanban schedule list page or the kanban process board.</span></span>  
+5. <span data-ttu-id="e4861-117">Merk den valgte raden i listen.</span><span class="sxs-lookup"><span data-stu-id="e4861-117">In the list, mark the selected row.</span></span>
+6. <span data-ttu-id="e4861-118">Klikk koblingen i den valgte raden i listen.</span><span class="sxs-lookup"><span data-stu-id="e4861-118">In the list, click the link in the selected row.</span></span>
 
-## <a name="associate-product"></a><span data-ttu-id="1b69b-119">Tilknytte produkt</span><span class="sxs-lookup"><span data-stu-id="1b69b-119">Associate product</span></span>
-1. <span data-ttu-id="1b69b-120">Tilknytte et bestemt produkt</span><span class="sxs-lookup"><span data-stu-id="1b69b-120">Associate a specific product</span></span>
-    * <span data-ttu-id="1b69b-121">Produkter kan knyttes til lean-planleggingsgrupper på to måter. Enten som et bestemt produkt (varerelasjonstype = vare) eller som en del av en varefordelingsnøkkel (varerelasjonstype = gruppe).</span><span class="sxs-lookup"><span data-stu-id="1b69b-121">There are two ways to associate products to lean schedule groups, either as a specific product (Item relation type = Item) or as part of an item allocation key (item relation type = group).</span></span>    
-2. <span data-ttu-id="1b69b-122">Velg Vare i feltet Type varerelasjon</span><span class="sxs-lookup"><span data-stu-id="1b69b-122">In the Item relation type field, select Item</span></span>
-3. <span data-ttu-id="1b69b-123">Skriv inn en verdi i Varenummer-feltet.</span><span class="sxs-lookup"><span data-stu-id="1b69b-123">In the Item number field, type a value.</span></span>
-4. <span data-ttu-id="1b69b-124">Angi et tall i feltet Produksjonsforhold.</span><span class="sxs-lookup"><span data-stu-id="1b69b-124">In the Throughput ratio field, enter a number.</span></span>
-    * <span data-ttu-id="1b69b-125">Standard produksjonsforhold er 1, som betyr at de tilknyttede produktene forbruker nøyaktig den kapasiteten som er angitt i prosessaktivitetene for produksjonsflytene.</span><span class="sxs-lookup"><span data-stu-id="1b69b-125">The default Throughput ratio is 1, which means that the related products consume exactly the capacity specified in the process activites of the production flows.</span></span> <span data-ttu-id="1b69b-126">Produksjonsforhold > 1 definerer en høyere ressursforbruk, Produksjonsforhold < 1 definerer en lavere ressursforbruk.</span><span class="sxs-lookup"><span data-stu-id="1b69b-126">Throughput ratio > 1 defines a higher resource consumption, Throughput ratio < 1 defines a lower resource consumption.</span></span> <span data-ttu-id="1b69b-127">Forholdet brukes i kostnadsberegningen og i beregningen av Kanban-jobbforbruket.</span><span class="sxs-lookup"><span data-stu-id="1b69b-127">The ratio is used in the cost calculation and in the calculation of the kanban job consumption.</span></span>  
+## <a name="associate-product"></a><span data-ttu-id="e4861-119">Tilknytte produkt</span><span class="sxs-lookup"><span data-stu-id="e4861-119">Associate product</span></span>
+1. <span data-ttu-id="e4861-120">Tilknytte et bestemt produkt</span><span class="sxs-lookup"><span data-stu-id="e4861-120">Associate a specific product</span></span>
+    * <span data-ttu-id="e4861-121">Produkter kan knyttes til lean-planleggingsgrupper på to måter. Enten som et bestemt produkt (varerelasjonstype = vare) eller som en del av en varefordelingsnøkkel (varerelasjonstype = gruppe).</span><span class="sxs-lookup"><span data-stu-id="e4861-121">There are two ways to associate products to lean schedule groups, either as a specific product (Item relation type = Item) or as part of an item allocation key (item relation type = group).</span></span>    
+2. <span data-ttu-id="e4861-122">Velg Vare i feltet Type varerelasjon</span><span class="sxs-lookup"><span data-stu-id="e4861-122">In the Item relation type field, select Item</span></span>
+3. <span data-ttu-id="e4861-123">Skriv inn en verdi i Varenummer-feltet.</span><span class="sxs-lookup"><span data-stu-id="e4861-123">In the Item number field, type a value.</span></span>
+4. <span data-ttu-id="e4861-124">Angi et tall i feltet Produksjonsforhold.</span><span class="sxs-lookup"><span data-stu-id="e4861-124">In the Throughput ratio field, enter a number.</span></span>
+    * <span data-ttu-id="e4861-125">Standard produksjonsforhold er 1, som betyr at de tilknyttede produktene forbruker nøyaktig den kapasiteten som er angitt i prosessaktivitetene for produksjonsflytene.</span><span class="sxs-lookup"><span data-stu-id="e4861-125">The default Throughput ratio is 1, which means that the related products consume exactly the capacity specified in the process activites of the production flows.</span></span> <span data-ttu-id="e4861-126">Produksjonsforhold > 1 definerer en høyere ressursforbruk, Produksjonsforhold < 1 definerer en lavere ressursforbruk.</span><span class="sxs-lookup"><span data-stu-id="e4861-126">Throughput ratio > 1 defines a higher resource consumption, Throughput ratio < 1 defines a lower resource consumption.</span></span> <span data-ttu-id="e4861-127">Forholdet brukes i kostnadsberegningen og i beregningen av Kanban-jobbforbruket.</span><span class="sxs-lookup"><span data-stu-id="e4861-127">The ratio is used in the cost calculation and in the calculation of the kanban job consumption.</span></span>  
 
-## <a name="associate-item-allocation-key"></a><span data-ttu-id="1b69b-128">Tilknytte varefordelingsnøkkel</span><span class="sxs-lookup"><span data-stu-id="1b69b-128">Associate item allocation key</span></span>
-1. <span data-ttu-id="1b69b-129">Tilknytte en varefordelingsnøkkel</span><span class="sxs-lookup"><span data-stu-id="1b69b-129">Associate an item allocation key</span></span>
-    * <span data-ttu-id="1b69b-130">Legg til en tilknytning i en varetildelingsnøkkel ved hjelp av varerelasjonstypen Gruppe.</span><span class="sxs-lookup"><span data-stu-id="1b69b-130">Add an association to an item allocation key by using the Item relation type Group.</span></span>   <span data-ttu-id="1b69b-131">Legg merke til at for denne prosessen må du ha en en varefordelingsnøkkel for prognose definert i dataene.</span><span class="sxs-lookup"><span data-stu-id="1b69b-131">Note that for this process, you need a forecast item alllocation key defined in your data.</span></span>  
-2. <span data-ttu-id="1b69b-132">Velg Gruppe i feltet Type varerelasjon</span><span class="sxs-lookup"><span data-stu-id="1b69b-132">In the Item relation type field, select Group</span></span>
-3. <span data-ttu-id="1b69b-133">Klikk rullegardinknappen i feltet Varefordelingsnøkkel for å åpne oppslaget.</span><span class="sxs-lookup"><span data-stu-id="1b69b-133">In the Item allocation key field, click the drop-down button to open the lookup.</span></span>
-4. <span data-ttu-id="1b69b-134">Klikk koblingen i den valgte raden i listen.</span><span class="sxs-lookup"><span data-stu-id="1b69b-134">In the list, click the link in the selected row.</span></span>
+## <a name="associate-item-allocation-key"></a><span data-ttu-id="e4861-128">Tilknytte varefordelingsnøkkel</span><span class="sxs-lookup"><span data-stu-id="e4861-128">Associate item allocation key</span></span>
+1. <span data-ttu-id="e4861-129">Tilknytte en varefordelingsnøkkel</span><span class="sxs-lookup"><span data-stu-id="e4861-129">Associate an item allocation key</span></span>
+    * <span data-ttu-id="e4861-130">Legg til en tilknytning i en varetildelingsnøkkel ved hjelp av varerelasjonstypen Gruppe.</span><span class="sxs-lookup"><span data-stu-id="e4861-130">Add an association to an item allocation key by using the Item relation type Group.</span></span>   <span data-ttu-id="e4861-131">Legg merke til at for denne prosessen må du ha en en varefordelingsnøkkel for prognose definert i dataene.</span><span class="sxs-lookup"><span data-stu-id="e4861-131">Note that for this process, you need a forecast item alllocation key defined in your data.</span></span>  
+2. <span data-ttu-id="e4861-132">Velg Gruppe i feltet Type varerelasjon</span><span class="sxs-lookup"><span data-stu-id="e4861-132">In the Item relation type field, select Group</span></span>
+3. <span data-ttu-id="e4861-133">Klikk rullegardinknappen i feltet Varefordelingsnøkkel for å åpne oppslaget.</span><span class="sxs-lookup"><span data-stu-id="e4861-133">In the Item allocation key field, click the drop-down button to open the lookup.</span></span>
+4. <span data-ttu-id="e4861-134">Klikk koblingen i den valgte raden i listen.</span><span class="sxs-lookup"><span data-stu-id="e4861-134">In the list, click the link in the selected row.</span></span>
 
