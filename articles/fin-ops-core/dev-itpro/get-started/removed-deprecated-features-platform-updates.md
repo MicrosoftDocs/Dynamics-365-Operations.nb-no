@@ -3,7 +3,7 @@ title: Fjernede eller avskrevne Platform-funksjoner
 description: Dette emnet beskriver funksjoner som er fjernet eller som er planlagt for fjerning i plattformoppdateringer av Finance and Operations-apper.
 author: sericks007
 manager: AnnBe
-ms.date: 03/03/2020
+ms.date: 04/13/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: d394f5ca84efc5beb943d349e45a3d2c9639d83c
-ms.sourcegitcommit: 75974ae567bb0eacf0f65cac992b34ce5c680b93
+ms.openlocfilehash: 0072ca507301fdb880f0595a06377ff01366ca20
+ms.sourcegitcommit: cd8a28be0acf31c547db1b8f6703dd4b0f62940c
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/03/2020
-ms.locfileid: "3095780"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "3260535"
 ---
 # <a name="removed-or-deprecated-platform-features"></a>Fjernede eller avskrevne Platform-funksjoner
 
@@ -35,6 +35,28 @@ Denne listen er ment å hjelpe deg med å vurdere disse fjerningene og avskrivni
 
 > [!NOTE]
 > Detaljert informasjon om objekter i Finance and Operations-apper finnes i [Tekniske referanserapporter](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep). Du kan sammenligne de ulike versjonene av disse rapportene for å lære om objekter som er endret eller fjernet i hver versjon av Finance and Operations-apper.
+
+## <a name="platform-updates-for-version-10011-of-finance-and-operations-apps"></a>Plattformoppdateringer for versjon 10.0.11 av Finance and Operations-apper
+
+### <a name="field-groups-containing-invalid-field-references"></a>Feltgrupper med ugyldige feltreferanser
+
+|   |  |
+|------------|--------------------|
+| **Årsak til avskrivning/fjerning** | Feltgrupper i definisjoner av tabellmetadata kan inneholde feltreferanser som ikke er gyldige. Hvis disse feltgruppene er distribuert, kan dette føre til kjøretidsfeil for kjøring i Financial Reporting og Microsoft SQL Server Reporting Services (SSRS). Platform Update 23 innførte en kompilator-*advarsel* som muliggjorde håndtering av dette sikkerhetsproblemet. Plattformoppdateringer for versjon 10.0.11 av Finance and Operations-apper kategoriserer dette problemet som en kompilerings*feil*.<p>Følg fremgangsmåten nedenfor for å løse problemet.</p><ol><li>Fjern den ugyldige feltreferansen fra definisjonen for tabellfeltgruppen.</li><li>Kompiler på nytt.</li><li>Kontroller at eventuelle feil er tatt hånd om.</li></ol> |
+| **Erstattet med en annen funksjon?**   | Denne kompileringsfeilen erstatter kompileringsadvarselen permanent.  |
+| **Berørte produktområder**         | Visual Studio-utviklingsverktøy |
+| **Distribusjonsalternativ**              | Alle |
+| **Status**                         | **Avskrevet:** Kompilatoradvarselen er nå en kompilatorfeil i plattformoppdateringer for versjon 10.0.11 av Finance and Operations-apper. |
+
+### <a name="isv-licenses-created-by-using-the-sha1-hashing-algorithm"></a>ISV-lisenser opprettet ved hjelp av SHA1-nummeralgoritmen
+
+|   |  |
+|------------|--------------------|
+| **Årsak til avskrivning/fjerning** | Prosessen med å opprette uavhengige programvareleverandørlisenser (ISV) er endret. Hvis du vil ha mer informasjon, kan du se [Uavhengig programvareleverandørlisensiering (ISV)](../dev-tools/isv-licensing.md#appendix-create-self-signed-certificates-for-test-purposes). |
+| **Erstattet med en annen funksjon?**   | Ja. Bruk Windows PowerShell til å opprette lisenser. |
+| **Berørte produktområder**         | Visual Studio-utviklingsverktøy |
+| **Distribusjonsalternativ**              | Alle |
+| **Status**                         | <strong>Avskrevet:</strong> ISV-lisenser som ble opprettet ved hjelp av SHA1-nummeralgoritmen. Denne algoritmen er avhengig av sertifikater som ble opprettet ved hjelp av MakeCert-verktøyet, og dette verktøyet er avskrevet.<p><strong>Avskrevet:</strong> Bruken av SHA1 for sikkerhet eller nummerering. SHA1 vil slutte å fungere tidlig i 2021. Derfor bør den ikke lenger brukes.<p><strong>Fjernet:</strong> Støtte for Transport Layer Security (TLS)1.0 og TLS 1.1, innkommende eller utgående forespørsler. |
 
 ## <a name="platform-update-32"></a>Plattform update 32
 

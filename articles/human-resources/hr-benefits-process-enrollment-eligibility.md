@@ -3,7 +3,7 @@ title: Fordelsregistreringsrettighet
 description: Denne artikkelen beskriver hvordan du kjører prosessen for registreringsrettighet.
 author: andreabichsel
 manager: AnnBe
-ms.date: 02/03/2020
+ms.date: 04/06/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,16 +18,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 0344c48460a7d1540481e09ba106526e119de72b
-ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
+ms.openlocfilehash: 1d978982213e713e362798c49aa57e6dc8b7a862
+ms.sourcegitcommit: a9461650d11d6845e1942865ebf7e35f75f61ad3
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3010017"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "3230022"
 ---
 # <a name="process-enrollment-eligibility"></a>Fordelsregistreringsrettighet
-
-[!include [banner](includes/preview-feature.md)]
 
 Denne artikkelen beskriver hvordan du kjører prosessen for registreringsrettighet.
 
@@ -37,10 +35,10 @@ Denne artikkelen beskriver hvordan du kjører prosessen for registreringsrettigh
 
    | Felt | Beskrivelse |
    | --- | --- |
-   | Registreringsperiode | Registreringsperioden som det skal behandles registreringsrettigheter for. |
-   | Juridisk enhet | Den juridiske enheten som det skal behandles registreringsrettigheter for. |
-   | Arbeider | Arbeideren som det skal behandles registreringsrettigheter for. Hvis du lar dette feltet stå tomt, blir registreringsrettigheten behandlet for alle arbeidere. |
-   | Fordelsplan | Fordelsplanen som det skal behandles registreringsrettigheter for.
+   | **Registreringsperiode** | Registreringsperioden som det skal behandles registreringsrettigheter for. |
+   | **Juridisk enhet** | Den juridiske enheten som det skal behandles registreringsrettigheter for. |
+   | **Arbeider** | Arbeideren som det skal behandles registreringsrettigheter for. Hvis du lar dette feltet stå tomt, blir registreringsrettigheten behandlet for alle arbeidere. |
+   | **Fordelsplan** | Fordelsplanen som det skal behandles registreringsrettigheter for.
 
 3. Hvis du vil kjøre prosessen i bakgrunnen, velger du **Kjør i bakgrunnen** og utfører følgende oppgaver:
 
@@ -53,3 +51,24 @@ Denne artikkelen beskriver hvordan du kjører prosessen for registreringsrettigh
    4. Velg **OK**. Prosessen vil kjøre med parameterne du angir.
 
 4. Velg **OK**.
+
+## <a name="view-process-results"></a>Vis prosessresultater
+
+Denne artikkelen beskriver hvordan du viser resultater av en rettighetsprosess.
+
+1.  I arbeidsområdet **Fordelsbehandling**, under **Behandling**, velger du **Prosessresultater**.
+
+2.  Følgende felt er angitt i skjemaet **Prosessresultater**:
+
+   | Felt | beskrivelse |
+   | --- | --- |
+   | **Prosess-ID** | Den unike ID-en for kombinasjonen av arbeider, juridisk enhet og prosesskjøring. |
+   | **Prosesstype** | Dette identifiserer prosessen som ble kjørt. Eksempel: Registrering. |
+   | **Tidsangivelse** | Tidspunktet da rettighetsprosessen ble kjørt. |
+   | **Juridisk enhet** | Den juridiske enheten som ble angitt under registreringsprosessen. |
+   | **Worker** | Arbeideren som ble behandlet. |
+   | **Plan | Fordelsplanen som registreringen ble forsøkt utført for. |
+   | **Rettighetsregel** | Rettighetsregelen som ble behandlet. Hvis det oppstod en feil før rettigheten ble kjørt, vil dette være tomt. Eksempel: Hvis kompensasjon ikke er definert for en arbeider, kan ikke rettighetsprosessen kjøres, og dette feltet blir stående tomt. |
+   | **Resultatstatus** | Dette vil være Kvalifisert eller Ikke kvalifisert. Resultatstatusen vil være Ikke kvalifisert hvis arbeideren ikke oppfyller rettighetsregelkriteriene, hvis arbeideren mangler nødvendig informasjon, for eksempel en betalingsfrekvens eller fast kompensasjon, eller hvis det mangler informasjon i fordelsplanen, og som forhindrer at arbeidere registreres. |
+   | **Resultatmelding** | Indikerer hvorfor en arbeider ikke er kvalifisert for en fordelsplan, eller om rettighetsregelen ble bestått. |
+

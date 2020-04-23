@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-04-16
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: a37436eb15ee4c561d5d0c15c90e37815cb80860
-ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
+ms.openlocfilehash: aa61a70e14b7997258376beaf389129a4ad2fa73
+ms.sourcegitcommit: 79f8aa2c0b166a423db9b8503da53e96e3fc43dc
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "2897931"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "3197273"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-talent-april-16-2019"></a>Hva er nytt eller endret i Dynamics 365 Talent (16. april 2019)?
 
@@ -46,10 +46,6 @@ Endringer som er beskrevet i denne delen, gjelder build nummer 8.1.2239. Tall i 
 ### <a name="compensation-region-compensation-level-benefit-option-and-skill-type-entities-in-common-data-service-updated-to-include-customer-field-support"></a>Enhetene Kompensasjonsområde, Kompensasjonsnivå, Fordelsalternativ og Kompetansetype i Common Data Service er oppdatert for å inkludere støtte for kundefelt
 
 I denne versjonen har disse Common Data Service-enhetene blitt oppdatert slik at de inkluderer muligheten for å inkludere egendefinert felt som legges til via Talent: (Core HR).
-
-### <a name="new-common-data-service-entity-support-for-compensation-vesting-rules-compensation-variable-plan-variable-compensation"></a>Støtte for ny Common Data Service-enhet: Kompensasjon, overdragelsesregler, Variabel plan for kompensasjon, Variabel kompensasjon
-
-I denne versjonen er enhetene Kompensasjon, overdragelsesregler, Variabel plan for kompensasjon og Variabel kompensasjon lagt til Common Data Service. Disse enhetene støtter også egendefinerte felt som legges til via Talent: (Core HR).
 
 ### <a name="powerbi-refresh-issues-314342"></a>PowerBI-oppdateringsproblemer (314342)
 
@@ -93,6 +89,6 @@ Med denne endringen oppdages duplikater når du angir navnefelt, og statusen vis
 
 ### <a name="email-support-for-alerts"></a>E-poststøtte for varsler
 
-Med platform update 25 for Finance and Operations kan brukere opprette varslingsregler som automatisk leverer e-postmeldinger til kontakter når de utløses av en hendelse.
+Med Platform update 25 for Finance and Operations kan brukere opprette varslingsregler som automatisk leverer e-postmeldinger til kontakter når de utløses av en hendelse.
 
 

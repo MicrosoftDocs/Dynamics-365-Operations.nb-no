@@ -3,7 +3,7 @@ title: Konfigurere venteperioder
 description: I Microsoft Dynamics 365 Human Resources etablerer ventedager en milepæl som skal brukes for fordelsplaner.
 author: andreabichsel
 manager: AnnBe
-ms.date: 02/03/2020
+ms.date: 04/06/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,16 +18,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 58d96469fc953c1bbabe8e29bf9df7a8fb4a0589
-ms.sourcegitcommit: f38302b9430f2ab3efe91d0a7beff946bc610e8f
+ms.openlocfilehash: adb7842231e8092398b240a2f017c28821b13ee1
+ms.sourcegitcommit: a9461650d11d6845e1942865ebf7e35f75f61ad3
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "3092521"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "3229585"
 ---
 # <a name="configure-waiting-periods"></a>Konfigurere venteperioder
-
-[!include [banner](includes/preview-feature.md)]
 
 I Microsoft Dynamics 365 Human Resources etablerer ventedager en milepæl som skal brukes for fordelsplaner. For eksempel tre måneder fra ansettelsesdato, den første i hver måned eller hver sjette måned.   
 
@@ -39,11 +37,11 @@ I Microsoft Dynamics 365 Human Resources etablerer ventedager en milepæl som sk
 
    | Felt | Beskrivelse |
    | --- | --- |
-   | Ventekode | En unik identifikator for venteperioden. |
-   | Beskrivelse | En beskrivelse av venteperioden. |
-   | Ventemetode | Velg den aktuelle ventemetoden fra rulle gardinlisten. Alternativene er netto, gjeldende måned, gjeldende kvartal, gjeldende år og gjeldende uke. |
-   | Måneder | Angi antall måneder som skal legges til i ventemåten for å beregne ventedatoen. |
-   | Days | Angi antall dager som skal legges til i ventemåten for å beregne ventedatoen. |
-   | Ventedag | Velg ventedagen som skal brukes til å beregne ventedatoen. |
+   | **Ventekode** | En unik identifikator for venteperioden. |
+   | **Beskrivelse** | En beskrivelse av venteperioden. |
+   | **Ventemetode** | Velg den aktuelle ventemetoden fra rulle gardinlisten. Alternativene er netto, gjeldende måned, gjeldende kvartal, gjeldende år og gjeldende uke. |
+   | **Måneder** | Angi antall måneder som skal legges til i ventemåten for å beregne ventedatoen. |
+   | **Dager** | Angi antall dager som skal legges til i ventemåten for å beregne ventedatoen. |
+   | **Ventedag** | Velg ventedagen som skal brukes til å beregne ventedatoen. |
 
 4. Velg **Lagre**.
