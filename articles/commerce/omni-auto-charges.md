@@ -3,7 +3,7 @@ title: Avanserte automatiske gebyrer for omnikanal
 description: Dette emnet beskriver funksjoner for å håndtere flere ordregebyrer for handelskanalordrer ved hjelp av funksjoner for avanserte automatiske gebyrer.
 author: hhaines
 manager: annbe
-ms.date: 03/08/2019
+ms.date: 03/30/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -19,18 +19,18 @@ ms.search.industry: Retail
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: fd02a81f35b40e5075ccfe5c9a617d7de4e8250d
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 826c955b7c99073ff41c8a5ed75254c824359925
+ms.sourcegitcommit: 4e9b3746790355f9f72bbfddc099c4065a49ad63
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3023610"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "3175160"
 ---
 # <a name="omni-channel-advanced-auto-charges"></a>Avanserte automatiske tillegg for omnikanal
 
 [!include [banner](includes/banner.md)]
 
-Dette emnet gir informasjon om konfigurasjon og distribusjon av funksjonen for avanserte automatiske gebyrer som er tilgjengelig i Dynamics 365 for Retail versjon 10.0.
+Dette emnet gir informasjon om konfigurasjon og distribusjon av funksjonene for avanserte automatiske gebyrer som er tilgjengelige i Dynamics 365 for Retail versjon 10.0.
 
 Når funksjonene for avanserte automatiske gebyrer er aktivert, kan ordrer som opprettes i en støttet handelskanal (salgssted, telefonsenter og online), dra nytte av konfigurasjonene for [automatisk gebyrer](https://docs.microsoft.com/dynamics365/unified-operations/retail/configure-call-center-delivery#define-charges-for-delivery-services) som er definert i ERP-programmet for både hode- og linjenivårelaterte gebyrer.
 
@@ -77,7 +77,7 @@ I denne delen vises brukseksempler for å hjelpe deg med å forstå konfigurasjo
 
 #### <a name="use-case-scenario"></a>Bruksscenario
 
-En forhandler ønsker å legge til tillegg for frakt automatisk når transaksjoner opprettes i en handelskanal som krever forsendelse av varer til kunden. Forhandleren tilbyr 2 leveringsmåter: landtransport og fly. Hvis en kunde velger landtransportlevering og ordreverdien er mindre enn NOK 1000, vil forhandleren belaste kunden med et fraktgebyr på NOK 100. Hvis ordren er over NOK 1000 og kunden velger forsendelse på land, vil kunden ikke bli belastet med ekstra fraktgebyrer. Hvis kunden velger leveringsmåten for fly for alle ordrer, uavhengig av deres totale verdi, tilfaller det et fraktgebyr på NOK 200.
+En forhandler ønsker å legge til tillegg for frakt automatisk når transaksjoner opprettes i en handelskanal som krever forsendelse av varer til kunden. Forhandleren tilbyr to leveringsmåter: landtransport og fly. Hvis en kunde velger landtransportlevering og ordreverdien er mindre enn NOK 1000, vil forhandleren belaste kunden med et fraktgebyr på NOK 100. Hvis ordren er over NOK 1000 og kunden velger forsendelse på land, vil kunden ikke bli belastet med ekstra fraktgebyrer. Hvis kunden velger leveringsmåten for fly for alle ordrer, uavhengig av deres totale verdi, tilfaller det et fraktgebyr på NOK 200.
 
 #### <a name="setup-and-configuration"></a>Oppsett og konfigurasjon
 
@@ -157,7 +157,7 @@ Denne prosessen kan brukes i telefonsenteret ved hjelp av den eksisterende **Til
 
 #### <a name="use-case-scenario"></a>Bruksscenario
 
-En kunde har bedt om at 2 av 5 varer i salgsordren skal pakkes som gave. Forhandleren tilbyr denne tilleggstjenesten mot et gebyr på NOK 20 per vare. Ordremottakeren må legge til disse gebyrene for de bestemte varene som skal pakkes som gave.
+En kunde har bedt om at to av fem varer i salgsordren skal pakkes som gave. Forhandleren tilbyr denne tilleggstjenesten mot et gebyr på NOK 20 per vare. Ordremottakeren må legge til disse gebyrene for de bestemte varene som skal pakkes som gave.
 
 #### <a name="setup-and-configuration"></a>Oppsett og konfigurasjon
 
@@ -215,3 +215,10 @@ Noen organisasjoner kan foretrekke å vente til brukeren er ferdig med å legge 
 ### <a name="charges-override-reports"></a>Tillegg overstyrer rapporter
 
 Hvis brukere overstyrer de beregnede kostnadene manuelt eller legger til et manuelt tillegg i transaksjonen, vil disse dataene være tilgjengelige for revisjon i rapporten **Historikk for gebyroverstyring**. Rapporten kan vises i **Retail og Commerce \> Forespørsler og rapporter \> Historikk for gebyroverstyring**. Det er viktig å være oppmerksom på at dataene som kreves for denne rapporten, importeres fra kanaldatabasen til HK via "P"-distribusjonsplanleggingsjobber. Informasjon om overstyringer som nettopp er utført på salgsstedet, er derfor kanskje ikke tilgjengelig umiddelbart i denne rapporten før denne jobben har lastet opp butikktransaksjonsdataene til HK.
+
+## <a name="additional-resources"></a>Tilleggsressurser
+
+[Aktivere og konfigurere automatiske avregninger etter kanal](auto-charges-by-channel.md)
+
+[Fordele hodegebyrer til samsvarende salgslinjer](pro-rate-charges-matching-lines.md)
+

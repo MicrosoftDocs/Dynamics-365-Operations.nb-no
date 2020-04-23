@@ -2,7 +2,7 @@
 title: Registrere forbruk
 description: Dette emnet forklarer hvordan du registrerer forbruk i Aktivastyring.
 author: josaw1
-manager: AnnBe
+manager: tfehr
 ms.date: 08/21/2019
 ms.topic: article
 ms.prod: ''
@@ -10,7 +10,7 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 3d23375ec7ebe9b43c2d2e3e376e26c348131bd3
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: c59664346c07f5e74825de41870f6635ced24ebd
+ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2812266"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "3216331"
 ---
 # <a name="register-consumption"></a>Registrere forbruk
 
@@ -93,5 +93,5 @@ Når du utfører forbruksregistreringer, legges finansdimensjoner som er knyttet
 - *Vareregistreringer:* Først blir finansdimensjoner fra journalhodet lagt til. Så legges finansdimensjoner fra det tilknyttede arbeidsordreprosjektet til. Deretter legges finansdimensjoner fra området til. Til slutt legges finansdimensjoner fra varen til.
 
 >[!NOTE]
->For alle tre registreringstypene valideres finansdimensjonskombinasjonen, og ugyldige kombinasjoner er tomme. Dette er standardoppsett i andre Finance and Operations-apper.
+>For alle tre registreringstypene valideres finansdimensjonskombinasjonen, og ugyldige kombinasjoner er tomme. Dette er standard oppsett med andre Finance and Operations-apper.
 

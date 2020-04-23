@@ -3,7 +3,7 @@ title: Konfigurere selvbetjening for ansatte
 description: I Microsoft Dynamics 365 Human Resources kan du konfigurere fliser for navigasjon på øverste nivå i Ansattselvbetjening.
 author: andreabichsel
 manager: AnnBe
-ms.date: 02/03/2020
+ms.date: 04/06/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,40 +18,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 17918fc7b894929c92c54b59b7440ab8aef980bd
-ms.sourcegitcommit: f38302b9430f2ab3efe91d0a7beff946bc610e8f
+ms.openlocfilehash: dbbcb10f1d14088435248c3354ac153b23e5f8d7
+ms.sourcegitcommit: a9461650d11d6845e1942865ebf7e35f75f61ad3
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "3092666"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "3229815"
 ---
 # <a name="configure-employee-self-service"></a>Konfigurere selvbetjening for ansatte
 
-[!include [banner](includes/preview-feature.md)]
-
-I Microsoft Dynamics 365 Human Resources kan du konfigurere fliser for navigasjon på øverste nivå i Ansattselvbetjening. Fordelsplanfliser dirigerer brukere til fordelsplaner de er berettiget til å registrere seg i.
-
-## <a name="set-up-a-role-center-tile"></a>Definere en rollesenterflis
-
-1. I arbeidsområdet **Fordelsbehandling**, under **Oppsett**, velger du **Parametere for Ansattselvbetjening**.
-
-2. Velg kategorien **Oppsett av rollesenterflis**, og velg deretter **Ny**.
-
-3. Angi verdier for de følgende feltene:
-
-   | Felt | Beskrivelse |
-   | --- | --- |
-   | Flis-ID | Den unike ID-en for flisen. |
-   | Etikettekst for flis | Teksten som vises for flisen i selvbetjeningen. |
-   | Beskrivelse | En beskrivelse av flisen. |
-   | Internett-adresse | Skriv inn URL-adressen til siden Ansattselvbetjening. |
-   | Flisstørrelse | Størrelsen på flisen: liten, middels eller stor. |
-   | Mål | Angir om siden skal åpnes i et nytt vindu eller det gjeldende vinduet. |
-   | Bilde for flisbakgrunn | URL-adressen for bildet som skal brukes for flisen (valgfritt). |
-   | Start | Startdatoen og klokkeslettet flisen skal være tilgjengelig. |
-   | End | Sluttdatoen og klokkeslettet flisen skal være tilgjengelig. |
-
-4. Velg **Lagre**.
+I Microsoft Dynamics 365 Human Resources kan du konfigurere fliser for navigasjon på øverste nivå i Ansattselvbetjening. Fordelsplanfliser dirigerer brukere til fordelsplaner de er berettiget for.
 
 ## <a name="set-up-a-benefit-plans-tile"></a>Definere en fordelsplanflis
 
@@ -63,15 +39,15 @@ I Microsoft Dynamics 365 Human Resources kan du konfigurere fliser for navigasjo
 
    | Felt | Beskrivelse |
    | --- | --- |
-   | Flis-ID | Den unike ID-en for flisen. |
-   | Etikettekst for flis | Teksten som vises for flisen i selvbetjeningen. |
-   | Beskrivelse | En beskrivelse av flisen. |
-   | Internett-adresse | Skriv inn URL-adressen til siden Ansattselvbetjening. |
-   | Flisstørrelse | Størrelsen på flisen: liten, middels eller stor. |
-   | Mål | Angir om siden skal åpnes i et nytt vindu eller det gjeldende vinduet. |
-   | Bilde for flisbakgrunn | URL-adressen for bildet som skal brukes for flisen (valgfritt). |
-   | Start | Startdatoen og klokkeslettet flisen skal være tilgjengelig. |
-   | End | Sluttdatoen og klokkeslettet flisen skal være tilgjengelig. |
+   | **Flis-ID** | Den unike ID-en for flisen. |
+   | **Etikettekst for flis** | Teksten som vises for flisen i selvbetjeningen. |
+   | **Beskrivelse** | En beskrivelse av flisen. |
+   | **Internett-adresse** | Skriv inn URL-adressen til siden Ansattselvbetjening. |
+   | **Flisstørrelse** | Størrelsen på flisen: liten, middels eller stor. |
+   | **Mål** | Angir om siden skal åpnes i et nytt vindu eller det gjeldende vinduet. |
+   | **Bilde for flisbakgrunn** | URL-adressen for bildet som skal brukes for flisen (valgfritt). |
+   | **Start** | Startdatoen og klokkeslettet flisen skal være tilgjengelig. |
+   | **End** | Sluttdatoen og klokkeslettet flisen skal være tilgjengelig. |
 
 4. Velg **Lagre**.
 
@@ -85,14 +61,14 @@ I Microsoft Dynamics 365 Human Resources kan du konfigurere fliser for navigasjo
 
    | Felt | Beskrivelse |
    | --- | --- |
-   | Flis-ID | Den unike ID-en for flisen. |
-   | Etikettekst for flis | Teksten som vises for flisen i selvbetjeningen. |
-   | Beskrivelse | En beskrivelse av flisen. |
-   | Internett-adresse | Skriv inn URL-adressen til siden Ansattselvbetjening. |
-   | Flisstørrelse | Størrelsen på flisen: liten, middels eller stor. |
-   | Mål | Angir om siden skal åpnes i et nytt vindu eller det gjeldende vinduet. |
-   | Bilde for flisbakgrunn | URL-adressen for bildet som skal brukes for flisen (valgfritt). |
-   | Start | Startdatoen og klokkeslettet flisen skal være tilgjengelig. |
-   | End | Sluttdatoen og klokkeslettet flisen skal være tilgjengelig. |
+   | **Flis-ID** | Den unike ID-en for flisen. |
+   | **Etikettekst for flis** | Teksten som vises for flisen i selvbetjeningen. |
+   | **Beskrivelse** | En beskrivelse av flisen. |
+   | **Internett-adresse** | Skriv inn URL-adressen til siden Ansattselvbetjening. |
+   | **Flisstørrelse** | Størrelsen på flisen: liten, middels eller stor. |
+   | **Mål** | Angir om siden skal åpnes i et nytt vindu eller det gjeldende vinduet. |
+   | **Bilde for flisbakgrunn** | URL-adressen for bildet som skal brukes for flisen (valgfritt). |
+   | **Start** | Startdatoen og klokkeslettet flisen skal være tilgjengelig. |
+   | **End** | Sluttdatoen og klokkeslettet flisen skal være tilgjengelig. |
 
 4. Velg **Lagre**.
