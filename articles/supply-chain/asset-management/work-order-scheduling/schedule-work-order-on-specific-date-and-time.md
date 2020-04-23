@@ -2,7 +2,7 @@
 title: Planlegge arbeidsordre på bestemt dato og klokkeslett
 description: Dette emnet forklarer hvordan du planlegger en arbeidsordre på en bestemt dato og klokkeslett i Aktivastyring.
 author: josaw1
-manager: AnnBe
+manager: tfehr
 ms.date: 08/19/2019
 ms.topic: article
 ms.prod: ''
@@ -10,7 +10,7 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
@@ -18,41 +18,41 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 634bbb4326d560848d36f579a1179187d8369087
-ms.sourcegitcommit: fb66731f05207094149a6bc7b8549a4dabbb071a
+ms.openlocfilehash: e81ea13a3463965c6e4785dac32f536d2e94a7ba
+ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "2652040"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "3215269"
 ---
-# <a name="schedule-work-order-on-specific-date-and-time"></a><span data-ttu-id="c4329-103">Planlegge arbeidsordre på bestemt dato og klokkeslett</span><span class="sxs-lookup"><span data-stu-id="c4329-103">Schedule work order on specific date and time</span></span>
+# <a name="schedule-work-order-on-specific-date-and-time"></a><span data-ttu-id="4d76e-103">Planlegge arbeidsordre på bestemt dato og klokkeslett</span><span class="sxs-lookup"><span data-stu-id="4d76e-103">Schedule work order on specific date and time</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
  
 
-<span data-ttu-id="c4329-104">Hvis en arbeidsordre må planlegges på en bestemt dato *og* klokkeslett, kan du overstyre standard planleggingsprosess i Aktivastyring og opprette en bestemt tidsplan for en arbeidsordre.</span><span class="sxs-lookup"><span data-stu-id="c4329-104">If a work order must be scheduled on a specific date *and* time, you can override the standard scheduling process in Asset Management and create a specific schedule for a work order.</span></span>
+<span data-ttu-id="4d76e-104">Hvis en arbeidsordre må planlegges på en bestemt dato *og* klokkeslett, kan du overstyre standard planleggingsprosess i Aktivastyring og opprette en bestemt tidsplan for en arbeidsordre.</span><span class="sxs-lookup"><span data-stu-id="4d76e-104">If a work order must be scheduled on a specific date *and* time, you can override the standard scheduling process in Asset Management and create a specific schedule for a work order.</span></span>
 
-1. <span data-ttu-id="c4329-105">Klikk på **Aktivastyring** > **Felles** > **Arbeidsordrer** > **Alle arbeidsordrer** eller **Aktive arbeidsordrer**.</span><span class="sxs-lookup"><span data-stu-id="c4329-105">Click **Asset management** > **Common** > **Work orders** > **All Work orders** or **Active work orders**.</span></span>
+1. <span data-ttu-id="4d76e-105">Klikk på **Aktivastyring** > **Felles** > **Arbeidsordrer** > **Alle arbeidsordrer** eller **Aktive arbeidsordrer**.</span><span class="sxs-lookup"><span data-stu-id="4d76e-105">Click **Asset management** > **Common** > **Work orders** > **All Work orders** or **Active work orders**.</span></span>
 
-2. <span data-ttu-id="c4329-106">I arbeidsordrelisten klikker du på ID-en for arbeidsordren i kolonnen **Arbeidsordre**.</span><span class="sxs-lookup"><span data-stu-id="c4329-106">In the work order list, click on the Work order ID in the **Work order** column.</span></span>
+2. <span data-ttu-id="4d76e-106">I arbeidsordrelisten klikker du på ID-en for arbeidsordren i kolonnen **Arbeidsordre**.</span><span class="sxs-lookup"><span data-stu-id="4d76e-106">In the work order list, click on the Work order ID in the **Work order** column.</span></span>
 
-3. <span data-ttu-id="c4329-107">Klikk **Rediger**.</span><span class="sxs-lookup"><span data-stu-id="c4329-107">Click **Edit**.</span></span>
+3. <span data-ttu-id="4d76e-107">Klikk **Rediger**.</span><span class="sxs-lookup"><span data-stu-id="4d76e-107">Click **Edit**.</span></span>
 
-4. <span data-ttu-id="c4329-108">Sett inn start- og sluttdato og klokkeslett i feltene **Forventet start** og **Forventet slutt** i hurtigfanen **Arbeidsordrehode**.</span><span class="sxs-lookup"><span data-stu-id="c4329-108">On the **Work order header** FastTab, insert start and end dates and times in the **Expected start** and **Expected end** fields.</span></span>
+4. <span data-ttu-id="4d76e-108">Sett inn start- og sluttdato og klokkeslett i feltene **Forventet start** og **Forventet slutt** i hurtigfanen **Arbeidsordrehode**.</span><span class="sxs-lookup"><span data-stu-id="4d76e-108">On the **Work order header** FastTab, insert start and end dates and times in the **Expected start** and **Expected end** fields.</span></span>
 
     ![Figur 1](media/05-work-order-scheduling.png)
 
-5. <span data-ttu-id="c4329-110">I kategorien **Generelt** klikker du på **Planlegg** for å bruke standard planleggingsprosess, eller klikker på **Fordeling** hvis du vil tilordne arbeidsordren til en bestemt arbeider.</span><span class="sxs-lookup"><span data-stu-id="c4329-110">On the **General** tab, click **Schedule** to use the standard scheduling process, or click **Dispatch** if you want to assign the work order to a specific worker.</span></span>
+5. <span data-ttu-id="4d76e-110">I kategorien **Generelt** klikker du på **Planlegg** for å bruke standard planleggingsprosess, eller klikker på **Fordeling** hvis du vil tilordne arbeidsordren til en bestemt arbeider.</span><span class="sxs-lookup"><span data-stu-id="4d76e-110">On the **General** tab, click **Schedule** to use the standard scheduling process, or click **Dispatch** if you want to assign the work order to a specific worker.</span></span>
 
-6. <span data-ttu-id="c4329-111">Hvis du vil overstyre eventuelle eksisterende kapasitetsreservasjoner for å sikre at arbeidsordren planlegges i den forventede perioden, gjør du valgene som vist i figuren nedenfor i dialogboksen **Planlegg arbeidsordre** > **Begrenset kapasitet**-delen.</span><span class="sxs-lookup"><span data-stu-id="c4329-111">In order to override any existing capacity reservations to ensure that the work order is scheduled in the expected period, make the selections as shown in the figure below in the **Schedule work order** dialog > **Finite capacity** section.</span></span> <span data-ttu-id="c4329-112">Dette betyr at planleggingsprosessen vil ignorere eksisterende kapasitetsreservasjoner fordi arbeidsordren må starte på forventet starttidspunkt.</span><span class="sxs-lookup"><span data-stu-id="c4329-112">This means that the scheduling process will ignore existing capacity reservations because the work order must start on the expected start time.</span></span>
+6. <span data-ttu-id="4d76e-111">Hvis du vil overstyre eventuelle eksisterende kapasitetsreservasjoner for å sikre at arbeidsordren planlegges i den forventede perioden, gjør du valgene som vist i figuren nedenfor i dialogboksen **Planlegg arbeidsordre** > **Begrenset kapasitet**-delen.</span><span class="sxs-lookup"><span data-stu-id="4d76e-111">In order to override any existing capacity reservations to ensure that the work order is scheduled in the expected period, make the selections as shown in the figure below in the **Schedule work order** dialog > **Finite capacity** section.</span></span> <span data-ttu-id="4d76e-112">Dette betyr at planleggingsprosessen vil ignorere eksisterende kapasitetsreservasjoner fordi arbeidsordren må starte på forventet starttidspunkt.</span><span class="sxs-lookup"><span data-stu-id="4d76e-112">This means that the scheduling process will ignore existing capacity reservations because the work order must start on the expected start time.</span></span>
 
     ![Figur 2](media/06-work-order-scheduling.png)
 
-7. <span data-ttu-id="c4329-114">Klikk på **OK** for å starte planleggingen.</span><span class="sxs-lookup"><span data-stu-id="c4329-114">Click **OK** to start scheduling.</span></span>
+7. <span data-ttu-id="4d76e-114">Klikk på **OK** for å starte planleggingen.</span><span class="sxs-lookup"><span data-stu-id="4d76e-114">Click **OK** to start scheduling.</span></span>
 
-8. <span data-ttu-id="c4329-115">Hvis planleggingsprosessen resulterer i dobbeltreservering, vil du se en melding på skjermen, og du kan justere de tilknyttede arbeidsordrene.</span><span class="sxs-lookup"><span data-stu-id="c4329-115">If the scheduling process results in double bookings, you will see a message on the screen, and you can adjust the related work orders.</span></span>
+8. <span data-ttu-id="4d76e-115">Hvis planleggingsprosessen resulterer i dobbeltreservering, vil du se en melding på skjermen, og du kan justere de tilknyttede arbeidsordrene.</span><span class="sxs-lookup"><span data-stu-id="4d76e-115">If the scheduling process results in double bookings, you will see a message on the screen, and you can adjust the related work orders.</span></span>
 
 >[!NOTE]
-><span data-ttu-id="c4329-116">Hvis du vil planlegge en vedlikeholdsperson for arbeidsordren, må vedlikeholdspersonen være tilgjengelig på forventet startdato og -klokkeslett.</span><span class="sxs-lookup"><span data-stu-id="c4329-116">In order to schedule a maintenance worker for the work order, that maintenance worker must be available at the expected start date and time.</span></span> <span data-ttu-id="c4329-117">Arbeidertilgjengelighet defineres i [arbeiderkalenderen](../work-order-scheduling/maintenance-worker-calendar-and-scheduling.md).</span><span class="sxs-lookup"><span data-stu-id="c4329-117">Worker availability is set up in the [worker calendar](../work-order-scheduling/maintenance-worker-calendar-and-scheduling.md).</span></span> 
+><span data-ttu-id="4d76e-116">Hvis du vil planlegge en vedlikeholdsperson for arbeidsordren, må vedlikeholdspersonen være tilgjengelig på forventet startdato og -klokkeslett.</span><span class="sxs-lookup"><span data-stu-id="4d76e-116">In order to schedule a maintenance worker for the work order, that maintenance worker must be available at the expected start date and time.</span></span> <span data-ttu-id="4d76e-117">Arbeidertilgjengelighet defineres i [arbeiderkalenderen](../work-order-scheduling/maintenance-worker-calendar-and-scheduling.md).</span><span class="sxs-lookup"><span data-stu-id="4d76e-117">Worker availability is set up in the [worker calendar](../work-order-scheduling/maintenance-worker-calendar-and-scheduling.md).</span></span> 
 

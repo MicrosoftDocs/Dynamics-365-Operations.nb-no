@@ -2,7 +2,7 @@
 title: Kostnadskontroll for aktivumfeil
 description: Dette emnet beskriver kostnadskontroll for aktivumfeil i Aktivastyring.
 author: josaw1
-manager: AnnBe
+manager: tfehr
 ms.date: 08/23/2019
 ms.topic: article
 ms.prod: ''
@@ -10,7 +10,7 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
@@ -18,47 +18,47 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 3c34180ad99db29147587bb002aaa6badc918717
-ms.sourcegitcommit: fb66731f05207094149a6bc7b8549a4dabbb071a
+ms.openlocfilehash: bade6ffa5d5a9af6d23d0d681c32e72eb62d4ecc
+ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "2652247"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "3205535"
 ---
-# <a name="asset-fault-cost-control"></a><span data-ttu-id="166fa-103">Kostnadskontroll for aktivumfeil</span><span class="sxs-lookup"><span data-stu-id="166fa-103">Asset fault cost control</span></span>
+# <a name="asset-fault-cost-control"></a><span data-ttu-id="9f413-103">Kostnadskontroll for aktivumfeil</span><span class="sxs-lookup"><span data-stu-id="9f413-103">Asset fault cost control</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
  
 
-<span data-ttu-id="166fa-104">I Aktivastyring kan du beregne kostnader ved registreringer av aktivafeil for å få en oversikt over faktiske kostnader sammenlignet med budsjettkostnader.</span><span class="sxs-lookup"><span data-stu-id="166fa-104">In Asset Management, you can calculate costs on asset fault registrations to get an overview of actual costs compared to budget costs.</span></span> <span data-ttu-id="166fa-105">Faktiske kostnader er basert på posterte transaksjoner.</span><span class="sxs-lookup"><span data-stu-id="166fa-105">Actual costs are based on posted transactions.</span></span> <span data-ttu-id="166fa-106">Datoen er feildatoen da symptomet ble registrert.</span><span class="sxs-lookup"><span data-stu-id="166fa-106">The date is the fault date on which the symptom was recorded.</span></span>
+<span data-ttu-id="9f413-104">I Aktivastyring kan du beregne kostnader ved registreringer av aktivafeil for å få en oversikt over faktiske kostnader sammenlignet med budsjettkostnader.</span><span class="sxs-lookup"><span data-stu-id="9f413-104">In Asset Management, you can calculate costs on asset fault registrations to get an overview of actual costs compared to budget costs.</span></span> <span data-ttu-id="9f413-105">Faktiske kostnader er basert på posterte transaksjoner.</span><span class="sxs-lookup"><span data-stu-id="9f413-105">Actual costs are based on posted transactions.</span></span> <span data-ttu-id="9f413-106">Datoen er feildatoen da symptomet ble registrert.</span><span class="sxs-lookup"><span data-stu-id="9f413-106">The date is the fault date on which the symptom was recorded.</span></span>
 
-1. <span data-ttu-id="166fa-107">Klikk **Aktivastyring** > **Forespørsler** > **Aktivumfeil** > **Kostnadskontroll for aktivumfeil**.</span><span class="sxs-lookup"><span data-stu-id="166fa-107">Click **Asset management** > **Inquiries** > **Asset fault** > **Asset fault cost control**.</span></span>
+1. <span data-ttu-id="9f413-107">Klikk **Aktivastyring** > **Forespørsler** > **Aktivumfeil** > **Kostnadskontroll for aktivumfeil**.</span><span class="sxs-lookup"><span data-stu-id="9f413-107">Click **Asset management** > **Inquiries** > **Asset fault** > **Asset fault cost control**.</span></span>
 
-2. <span data-ttu-id="166fa-108">I dialogboksen **Kostnadskontroll for aktivumfeil** velger du et finansdimensjonssett som skal tas med i beregningen, om nødvendig.</span><span class="sxs-lookup"><span data-stu-id="166fa-108">In the **Asset fault cost control** dialog, select a financial dimension set to be included in the calculation, if required.</span></span>
+2. <span data-ttu-id="9f413-108">I dialogboksen **Kostnadskontroll for aktivumfeil** velger du et finansdimensjonssett som skal tas med i beregningen, om nødvendig.</span><span class="sxs-lookup"><span data-stu-id="9f413-108">In the **Asset fault cost control** dialog, select a financial dimension set to be included in the calculation, if required.</span></span>
 
-4. <span data-ttu-id="166fa-109">Velg "Ja" på veksleknappen **Hopp over null** hvis du ikke vil vise resultater med en nullverdi.</span><span class="sxs-lookup"><span data-stu-id="166fa-109">Select "Yes" on the **Skip zero** toggle button if you don't want to show results with a cost of zero.</span></span>
+4. <span data-ttu-id="9f413-109">Velg "Ja" på veksleknappen **Hopp over null** hvis du ikke vil vise resultater med en nullverdi.</span><span class="sxs-lookup"><span data-stu-id="9f413-109">Select "Yes" on the **Skip zero** toggle button if you don't want to show results with a cost of zero.</span></span>
 
-5. <span data-ttu-id="166fa-110">Du kan bruke **Nivå**-feltet til å angi hvor detaljert kostnadskontrollinjene skal være når det gjelder arbeidssted.</span><span class="sxs-lookup"><span data-stu-id="166fa-110">You can use the **Level** field to indicate how detailed you want the cost control lines to be regarding functional locations.</span></span> 
+5. <span data-ttu-id="9f413-110">Du kan bruke **Nivå**-feltet til å angi hvor detaljert kostnadskontrollinjene skal være når det gjelder arbeidssted.</span><span class="sxs-lookup"><span data-stu-id="9f413-110">You can use the **Level** field to indicate how detailed you want the cost control lines to be regarding functional locations.</span></span> 
 
-    <span data-ttu-id="166fa-111">Hvis du for eksempel setter inn tallet 1 i feltet, og du har en arbeidsstedsstruktur med flere nivåer, vises alle kostnadskontrollinjer for et arbeidssted på øverste nivå, og derfor kan det hende at timene på en linje blir lagt til fra arbeidssteder plassert på et lavere nivå.</span><span class="sxs-lookup"><span data-stu-id="166fa-111">For example, if you insert the number "1" in the field, and you have a multi-level functional location structure, all asset fault cost control lines for a functional location will be shown on the top level, and therefore the hours on a line may be added up from functional locations located at a lower level.</span></span> 
+    <span data-ttu-id="9f413-111">Hvis du for eksempel setter inn tallet 1 i feltet, og du har en arbeidsstedsstruktur med flere nivåer, vises alle kostnadskontrollinjer for et arbeidssted på øverste nivå, og derfor kan det hende at timene på en linje blir lagt til fra arbeidssteder plassert på et lavere nivå.</span><span class="sxs-lookup"><span data-stu-id="9f413-111">For example, if you insert the number "1" in the field, and you have a multi-level functional location structure, all asset fault cost control lines for a functional location will be shown on the top level, and therefore the hours on a line may be added up from functional locations located at a lower level.</span></span> 
     
-    <span data-ttu-id="166fa-112">Hvis du setter inn tallet 0 i **Nivå**-feltet, vil du se et detaljert resultat som viser alle kostnadskontrollinjer for aktivafeil på alle arbeidsstedsnivåer de er relatert til.</span><span class="sxs-lookup"><span data-stu-id="166fa-112">If you insert the number "0" in the **Level** field, you will see a detailed result showing all asset fault cost control lines on all the functional location levels to which they are related.</span></span>
+    <span data-ttu-id="9f413-112">Hvis du setter inn tallet 0 i **Nivå**-feltet, vil du se et detaljert resultat som viser alle kostnadskontrollinjer for aktivafeil på alle arbeidsstedsnivåer de er relatert til.</span><span class="sxs-lookup"><span data-stu-id="9f413-112">If you insert the number "0" in the **Level** field, you will see a detailed result showing all asset fault cost control lines on all the functional location levels to which they are related.</span></span>
 
-6. <span data-ttu-id="166fa-113">Hvis du vil begrense søket, kan du velge bestemte anleggsmidler, feildatoer og feilårsaker i hurtigfanen **Poster som skal inkluderes**.</span><span class="sxs-lookup"><span data-stu-id="166fa-113">If you want to limit the search, you can select specific assets, fault dates, and fault causes on the **Records to include** FastTab.</span></span>
+6. <span data-ttu-id="9f413-113">Hvis du vil begrense søket, kan du velge bestemte anleggsmidler, feildatoer og feilårsaker i hurtigfanen **Poster som skal inkluderes**.</span><span class="sxs-lookup"><span data-stu-id="9f413-113">If you want to limit the search, you can select specific assets, fault dates, and fault causes on the **Records to include** FastTab.</span></span>
 
-7. <span data-ttu-id="166fa-114">Klikk på **OK** for å starte beregningen.</span><span class="sxs-lookup"><span data-stu-id="166fa-114">Click **OK** to start the calculation.</span></span>
+7. <span data-ttu-id="9f413-114">Klikk på **OK** for å starte beregningen.</span><span class="sxs-lookup"><span data-stu-id="9f413-114">Click **OK** to start the calculation.</span></span>
 
-8. <span data-ttu-id="166fa-115">Klikk på knappene **Grupper etter** for å vise det nødvendige detaljnivået for beregningen.</span><span class="sxs-lookup"><span data-stu-id="166fa-115">Click the **Group by** buttons to show the required detail level of the calculation.</span></span> <span data-ttu-id="166fa-116">De valgte **Grupper etter**-knappen er uthevet.</span><span class="sxs-lookup"><span data-stu-id="166fa-116">The selected **Group by** buttons are highlighted.</span></span> <span data-ttu-id="166fa-117">Klikk på en knapp for å aktivere eller deaktivere den.</span><span class="sxs-lookup"><span data-stu-id="166fa-117">Click on a button to activate or deactivate it.</span></span>
+8. <span data-ttu-id="9f413-115">Klikk på knappene **Grupper etter** for å vise det nødvendige detaljnivået for beregningen.</span><span class="sxs-lookup"><span data-stu-id="9f413-115">Click the **Group by** buttons to show the required detail level of the calculation.</span></span> <span data-ttu-id="9f413-116">De valgte **Grupper etter**-knappen er uthevet.</span><span class="sxs-lookup"><span data-stu-id="9f413-116">The selected **Group by** buttons are highlighted.</span></span> <span data-ttu-id="9f413-117">Klikk på en knapp for å aktivere eller deaktivere den.</span><span class="sxs-lookup"><span data-stu-id="9f413-117">Click on a button to activate or deactivate it.</span></span>
 
-## <a name="example"></a><span data-ttu-id="166fa-118">Eksempel</span><span class="sxs-lookup"><span data-stu-id="166fa-118">Example</span></span>
+## <a name="example"></a><span data-ttu-id="9f413-118">Eksempel</span><span class="sxs-lookup"><span data-stu-id="9f413-118">Example</span></span>
 
-<span data-ttu-id="166fa-119">Dette eksemplet viser beregning av kostnadskontroll for aktivumfeil.</span><span class="sxs-lookup"><span data-stu-id="166fa-119">This example shows an asset fault cost control calculation.</span></span>
+<span data-ttu-id="9f413-119">Dette eksemplet viser beregning av kostnadskontroll for aktivumfeil.</span><span class="sxs-lookup"><span data-stu-id="9f413-119">This example shows an asset fault cost control calculation.</span></span>
 
-- <span data-ttu-id="166fa-120">Feltet **Opprinnelig budsjett** viser budsjettkostnader fra arbeidsordreprognosen.</span><span class="sxs-lookup"><span data-stu-id="166fa-120">The **Original budget** field shows budget costs from the work order forecast.</span></span> 
-- <span data-ttu-id="166fa-121">Feltet **Faktiske kostnader** viser posterte kostnader på arbeidsordrer.</span><span class="sxs-lookup"><span data-stu-id="166fa-121">The **Actual cost** field shows posted costs on work orders.</span></span> 
-- <span data-ttu-id="166fa-122">Feltet **Igangsatt kost** viser totale kostnader som firmaet har forpliktet seg til i forhold til arbeidsordrer.</span><span class="sxs-lookup"><span data-stu-id="166fa-122">The **Committed cost** field shows total costs that your company is committed to in relation to work orders.</span></span>
+- <span data-ttu-id="9f413-120">Feltet **Opprinnelig budsjett** viser budsjettkostnader fra arbeidsordreprognosen.</span><span class="sxs-lookup"><span data-stu-id="9f413-120">The **Original budget** field shows budget costs from the work order forecast.</span></span> 
+- <span data-ttu-id="9f413-121">Feltet **Faktiske kostnader** viser posterte kostnader på arbeidsordrer.</span><span class="sxs-lookup"><span data-stu-id="9f413-121">The **Actual cost** field shows posted costs on work orders.</span></span> 
+- <span data-ttu-id="9f413-122">Feltet **Igangsatt kost** viser totale kostnader som firmaet har forpliktet seg til i forhold til arbeidsordrer.</span><span class="sxs-lookup"><span data-stu-id="9f413-122">The **Committed cost** field shows total costs that your company is committed to in relation to work orders.</span></span>
 
     ![Figur 1](media/05-controlling-and-reporting.png)
 
-<span data-ttu-id="166fa-124">Se emnet [Feilstyring](../setup-for-work-orders/fault-management.md) hvis du vil ha informasjon om hvordan du definerer feil.</span><span class="sxs-lookup"><span data-stu-id="166fa-124">For information about how to set up faults, see the [Fault management](../setup-for-work-orders/fault-management.md) topic.</span></span>
+<span data-ttu-id="9f413-124">Se emnet [Feilstyring](../setup-for-work-orders/fault-management.md) hvis du vil ha informasjon om hvordan du definerer feil.</span><span class="sxs-lookup"><span data-stu-id="9f413-124">For information about how to set up faults, see the [Fault management](../setup-for-work-orders/fault-management.md) topic.</span></span>
