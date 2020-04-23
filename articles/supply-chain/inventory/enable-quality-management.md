@@ -2,7 +2,7 @@
 title: Oversikt over kvalitetsstyring
 description: Dette emnet beskriver hvordan du kan bruke kvalitetsstyring i Dynamics 365 Supply Chain Management for å forbedre produktkvalitet i forsyningskjeden.
 author: perlynne
-manager: AnnBe
+manager: tfehr
 ms.date: 10/15/2019
 ms.topic: article
 ms.prod: ''
@@ -10,7 +10,7 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: InventTestAssociationTable, InventTestGroup, InventTestItemQualityGroup, InventTestTable, InventTestVariable, InventTestVariableOutcome
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 ms.custom: 94003
 ms.assetid: a1d9417b-268f-4334-8ab6-8499d6c3acf0
@@ -19,12 +19,12 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c2d51c659d9d06f075458359d81de978e7a6d14b
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 9b090450c6b39607f9661667f8063998bbe5ff52
+ms.sourcegitcommit: c79062ba89498aa3fe3d86e478d9f32484f5f6dc
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2814404"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "3224915"
 ---
 # <a name="quality-management-overview"></a>Oversikt over kvalitetsstyring
 
@@ -302,122 +302,6 @@ I innkjøp, hvis du du angir feltet **Hendelsestype** til **Produktkvittering** 
 
 - Hvis alternativet **Per oppdatert mengde** er satt til **Ja**, genereres det en kvalitetsordre for hvert mottak mot bestillingen basert på det mottatte antallet og innstillingene i vareprøven. Hver gang et antall mottas mot bestillingen, genereres nye kvalitetsordrer basert på det nylig mottatte antallet.
 - Hvis alternativet **Per oppdatert mengde** er satt til **Nei**, genereres det en kvalitetsordre for det første mottaket mot bestillingen basert på det mottatte antallet. I tillegg blir én eller flere kvalitetsordrer opprettet på grunnlag av restantallet, avhengig av sporingsdimensjonene. Kvalitetsordrer genereres ikke for etterfølgende mottak mot bestillingen.
-
-<table>
-<tbody>
-<tr>
-<th>Kvalitetsspesifikasjon</th>
-<th>Per oppdatert mengde</th>
-<th>Per sporingsdimensjon</th>
-<th>Resultat</th>
-</tr>
-<tr>
-<td>Prosent: 10 %</td>
-<td>Ja</td>
-<td>
-<p>Partinummer: Nei</p>
-<p>Serienummer: Nei</p>
-</td>
-<td>
-<p>Ordreantall: 100</p>
-<ol>
-<li>Rapporter som ferdig for 30
-<ul>
-<li>Kvalitetsordre #1 for 3 (10 % av 30)</li>
-</ul>
-</li>
-<li>Rapporter som ferdig for 70
-<ul>
-<li>Kvalitetsordre #2 for 7 (10 % av restordreantallet, som er lik 70 i dette tilfellet)</li>
-</ul>
-</li>
-</ol>
-</td>
-</tr>
-<tr>
-<td>Fast antall: 1</td>
-<td>Nei</td>
-<td>
-<p>Partinummer: Nei</p>
-<p>Serienummer: Nei</p>
-</td>
-<td>Ordreantall: 100
-<ol>
-<li>Rapporter som ferdig for 30
-<ul>
-<li>Kvalitetsordre #1 opprettes for 1 (for det første ferdigmeldte antallet, som har en fast verdi på 1).</li>
-<li>Det opprettes ingen flere kvalitetsordrer mot restantallet.</li>
-</ul>
-</li>
-<li>Rapporter som ferdig for 10
-<ul>
-<li>Ingen kvalitetsordrer er opprettet.</li>
-</ul>
-</li>
-<li>Rapporter som ferdig for 60
-<ul>
-<li>Ingen kvalitetsordrer er opprettet.</li>
-</ul>
-</li>
-</ol>
-</td>
-</tr>
-<tr>
-<td>Fast antall: 1</td>
-<td>Ja</td>
-<td>
-<p>Partinummer: Ja</p>
-<p>Serienummer: Ja</p>
-</td>
-<td>
-<p>Ordreantall: 10</p>
-<ol>
-<li>Rapporter som ferdig for 3
-<ul>
-<li>Kvalitetsordre #1 for 1 av parti #b1, serie #s1</li>
-<li>Kvalitetsordre #2 for 1 av parti #b2, serie #s2</li>
-<li>Kvalitetsordre #3 for 1 av parti #b3, serie #s3</li>
-</ul>
-</li>
-<li>Rapporter som ferdig for 2
-<ul>
-<li>Kvalitetsordre #4 for 1 av parti #b4, serie #s4</li>
-<li>Kvalitetsordre #5 for 1 av parti #b5, serie #s5</li>
-</ul>
-</li>
-</ol>
-<p><strong>Merk:</strong> Partiet kan brukes på nytt.</p>
-</td>
-</tr>
-<tr>
-<td>Fast antall: 2</td>
-<td>Nei</td>
-<td>
-<p>Partinummer: Ja</p>
-<p>Serienummer: Ja</p>
-</td>
-<td>
-<p>Ordreantall: 10</p>
-<ol>
-<li>Rapporter som ferdig for 4
-<ul>
-<li>Kvalitetsordre #1 for 1 av parti #b1, serie #s1.</li>
-<li>Kvalitetsordre #2 for 1 av parti #b2, serie #s2.</li>
-<li>Kvalitetsordre #3 for 1 av parti #b3, serie #s3.</li>
-<li>Kvalitetsordre #4 for 1 av parti #b4, serie #s4.</li>
-<li>Det opprettes ingen flere kvalitetsordrer mot restantallet.</li>
-</ul>
-</li>
-<li>Rapporter som ferdig for 6
-<ul>
-<li>Ingen kvalitetsordrer er opprettet.</li>
-</ul>
-</li>
-</ol>
-</td>
-</tr>
-</tbody>
-</table>
 
 ### <a name="production"></a>Produksjon
 

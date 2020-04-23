@@ -3,7 +3,7 @@ title: TRANSLATE ER-funksjon
 description: Dette emnet gir generell informasjon om hvordan du bruker ER-funksjonen TRANSLATE.
 author: NickSelin
 manager: kfend
-ms.date: 12/10/2019
+ms.date: 04/02/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 07fe19c5f66c33e336f76f3a72d3bbda0c7e8d86
-ms.sourcegitcommit: 3c1eb3d89c6ab9bd70b806ca42ef9df74cf850bc
+ms.openlocfilehash: 415444bda097c00522155d1b37988a79da836902
+ms.sourcegitcommit: fb8ad8e2b142441a6530b364f3258bbcc0c724d2
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "3040923"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "3201118"
 ---
-# <a name="TRANSLATE">TRANSLATE ER-funksjon</a>
+# <a name=""></a><a name="TRANSLATE">TRANSLATE ER-funksjon</a>
 
 [!include [banner](../includes/banner.md)]
 
-`TRANSLATE`-funksjonen returnerer den angitte tekststrengen som en *streng*-verdi etter at hele eller deler av den er erstattet med en annen streng.
+`TRANSLATE`-funksjonen returnerer en *Streng*-verdi som inneholder resultatet av tegnerstatningen av den angitte teksten i tegn i et annet angitt sett.
 
 ## <a name="syntax"></a>Syntaks
 
@@ -57,9 +57,23 @@ Teksten som skal brukes som erstatning.
 
 Den resulterende tekstverdien.
 
-## <a name="example"></a>Eksempel
+## <a name="usage-notes"></a>Bruksnotater
 
-`TRANSLATE ("abcdef", "cd", "GH")` erstatter mønsteret **"cd"** med strengen **"GH"** og returnerer **"abGHef"**.
+`TRANSLATE`-funksjonen erstatter ett tegn om gangen. Funksjonen erstatter det første tegnet i `text`-argumentet med det første tegnet i `pattern`-argumentet, og deretter det andre tegnet og følger den samme flyten til det er ferdig. Når et tegn fra argumentene `text` og `pattern` er likt, erstattes det med et tegn fra `replacement`-argumentet som er plassert i samme posisjon som tegnet fra `pattern`-argumentet. Hvis et tegn vises flere ganger i `pattern`-argumentet, brukes tilordningen av `replacement`-argumentet som tilsvarer den første forekomsten av dette tegnet.
+
+## <a name="example-1"></a>Eksempel 1
+
+`TRANSLATE ("abcdef", "cd", "GH")` erstatter tegnet **"c"** i den angitte teksten **"abcdef"** med tegnet **"G"** i `replacement`-teksten på grunn av følgende:
+-   Tegnet **"c"** vises i `pattern`-teksten i første posisjon.
+-   Den første posisjonen i `replacement`-teksten inneholder tegnet **"G"**.
+
+## <a name="example-2"></a>Eksempel 2
+
+`TRANSLATE ("abcdef", "ccd", "GH")` returnerer **"abGdef"**.
+
+## <a name="example-3"></a>Eksempel 3
+
+`TRANSLATE ("abccba", "abc", "123")` returnerer **"123321"**.
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 

@@ -3,7 +3,7 @@ title: Opprette en permisjons- og fraværsplan
 description: Opprett permisjonsplaner i Dynamics 365 Human Resources for ulike typer permisjon.
 author: andreabichsel
 manager: AnnBe
-ms.date: 02/03/2020
+ms.date: 04/01/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: ed7a47068c451cd3ffaa26ee709599373858721b
-ms.sourcegitcommit: 3cad15f8ecc257d3a45c1bc1fada7c094ff4bcec
+ms.openlocfilehash: 532d9b276692858c77e4de41018775e9520f1882
+ms.sourcegitcommit: 79f8aa2c0b166a423db9b8503da53e96e3fc43dc
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "3087306"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "3197365"
 ---
 # <a name="create-a-leave-and-absence-plan"></a>Opprette en permisjons- og fraværsplan
 
@@ -42,6 +42,11 @@ Du kan også opprette stillingsbaserte permisjonsfordeler, for eksempel fordelst
 1. På siden **Permisjon og fravær** velger du **Opprett ny plan**.
 
 2. Under **Detaljer** angir du **Navn**, **Startdato**, **Beskrivelse** og **Permisjonstype** for planen.
+
+Hvis funksjonen **Konfigurer flere permisjonstyper for en enkel permisjons- og fraværsplan** er aktivert, konfigureres permisjonstyper i **Avsetningsplan** i stedet for under **Detaljer**. Du kan definere en permisjonstype for hver post i avsetningsplantabellen.
+
+ > [!IMPORTANT]
+   > Du kan ikke deaktivere denne funksjonen etter at du har aktivert den.
 
 3. Definer avsetninger i kategorien **Avsetninger**. Avsetninger avgjør når og hvor ofte en ansatt blir tildelt avspasering. I dette trinnet definerer du policyer om når det skal gis avsetning, og retningslinjer for vurdering av fordeler.
 
@@ -95,8 +100,8 @@ Du kan også opprette stillingsbaserte permisjonsfordeler, for eksempel fordelst
    Du kan opprette lag for å tildele avspasering basert på forskjellige nivåer.
 
    Hvis du har timebaserte ansatte, kan du belønne dem med fridager basert på antall arbeidstimer i stedet for ansiennitet i organisasjonen. Data for arbeidstimer lagres vanligvis i et system for tid og fremmøte. Du kan importere vanlige timer og overtidstimer som er arbeidet fra systemet for tid og fremmøte, og bruke dem som grunnlag for bonusen til en ansatt.
-
-   1. Velg et alternativ fra rullegardinboksen **Avsetningstype**:
+   
+    1. Velg et alternativ fra rullegardinboksen **Avsetningstype**:
 
       - **Måneder med jobberfaring** – Baser avsetningsplanen på antall måneder med jobberfaring.
 
@@ -117,6 +122,13 @@ Du kan også opprette stillingsbaserte permisjonsfordeler, for eksempel fordelst
       - **Maksimal overføring** – Avsetningsprosessen justerer permisjonssaldoer som overskrider maksimal overføringssaldo på merkedagen til startdatoen.
 
       - **Tildelingsbeløp** – Det opprinnelige antallet timer eller dager som ansatte gis når de registrerer seg for permisjonsplanen første gang. Beløpet avsettes ikke for hver avsetningsperiode.
+      
+Hvis funksjonen **Konfigurer flere permisjonstyper for en enkel permisjons- og fraværsplan** er aktivert, velger du et alternativ fra **Permisjonstype**. 
+
+   > [!IMPORTANT]
+   > Du kan ikke deaktivere denne funksjonen etter at du har aktivert den.
+
+Hvis funksjonen **Bruk fulltidsekvivalens** er aktivert, bruker Human Resources fulltidsekvivalensen (FTE) som er definert for stillingen, til å fordele en ansatts avsetning. Hvis for eksempel FTE er 0,5 og avsetningsbeløpet er 10, vil den ansatte avsette 5. Du kan bare bruke denne funksjonen hvis du aktiverer flere permisjonstyper.  
 
 5. Velg **Lagre**.
 
@@ -357,19 +369,6 @@ Prognosesaldo (30) = avsetningsbeløp (10 x 1) + gjeldende saldo (40) – overf�
 |---------------------|-------------------|-----------------|------------|----------------|-----------------|---------|
 | Jeannette Nicholson | 0,00              | 1/6/2018        | 1/6/2018   | 1,00           | 1/9/2018        | 3.00    |
 | Jay Norman          | 0.00              | 15/6/2018       | 15/6/2018  | 1.00           | 1/9/2018        | 2.00    |
-
-## <a name="configure-preview-features"></a>Konfigurere forhåndsversjonsfunksjoner
-
-Hvis du har aktivert forhåndsversjonsfunksjoner for permisjon og fravær, må du konfigurere innstillinger for dem også.
-
-[!include [banner](includes/preview-feature-leave-absence.md)]
-
-1. **Forhåndsversjonsfunksjon: Konfigurer flere permisjonstyper for en enkel permisjons- og fraværsplan**. Du kan definere en permisjonstype for hver post i avsetningsplantabellen.
-
-   > [!IMPORTANT]
-   > Du kan ikke deaktivere denne funksjonen etter at du har aktivert den.
-
-2. **Forhåndsversjonsfunksjon: Bruk fulltidsekvivalens**. Hvis du aktiverer denne forhåndsversjonsfunksjonen, bruker Human Resources fulltidsekvivalensen (FTE) som er definert for stillingen, til å fordele en ansatts avsetning. Hvis for eksempel FTE er 0,5 og avsetningsbeløpet er 10, vil den ansatte avsette 5. Du kan bare bruke denne funksjonen hvis du aktiverer flere permisjonstyper.
 
 ## <a name="see-also"></a>Se også
 

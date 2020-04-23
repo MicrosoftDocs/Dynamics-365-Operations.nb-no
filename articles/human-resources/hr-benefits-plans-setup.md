@@ -3,7 +3,7 @@ title: Opprette en fordelsplan
 description: Definer fordelsplaner i Dynamics 365 Human Resources.
 author: andreabichsel
 manager: AnnBe
-ms.date: 02/03/2020
+ms.date: 04/06/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,16 +18,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 97c3acf1294b7a8c2496f23a32918152f50a9e5e
-ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
+ms.openlocfilehash: 6e3822a1071023898e459a82c14ff648d8cdebed
+ms.sourcegitcommit: a9461650d11d6845e1942865ebf7e35f75f61ad3
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3010086"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "3230114"
 ---
 # <a name="create-a-benefits-plan"></a>Opprette en fordelsplan
-
-[!include [banner](includes/preview-feature.md)]
 
 Denne artikkelen viser deg hvordan du definerer fordelsplaner i Dynamics 365 Human Resources.
 
@@ -39,16 +37,16 @@ Denne artikkelen viser deg hvordan du definerer fordelsplaner i Dynamics 365 Hum
 
    | Felt | Beskrivelse |
    | --- | --- |
-   | Plan | En unik ID for planen. |
-   | Beskrivelse | En beskrivelse av planen. |
-   | Plantype | Når du oppretter en ny plan, må du angi plantypen. En plantype er en gruppering på høyt nivå av bestemte typer fordeler. Hver plantype angir om en ansatt kan registrere seg i flere planer av denne typen, angir om kontakter er mottakere eller avhengige, og definerer dekningsalternativer. Du kan opprette nye, egendefinerte plantyper for å dekke behovene til fordelstilbudene. De viktigste fordelsplantypene er: <ul><li>401K</li><li>ADD</li><li>Tannpleie</li><li>Helse</li><li>FSA</li><li>Liv</li><li>LTD</li><li>Medisinsk</li><li>PTO</li><li>STD</li><li>Syn</li></ul> |
-   | Kode for plantype | Plantypekoden for plantypen. |
-   | Programmet | Angir et program du kan tilordne planen i. |
-   | Bunt | Angir en bunt du kan tilordne planen i. |
-   | Mester | Angir om planen er hovedplanen i bunten den er tilordnet til. |
-   | Status | Viser den gjeldende statusen for fordelsplanen. Standardverdien er Aktiv. Hvis du endrer statusen til Inaktiv, vil ikke planen være tilgjengelig som et valg under registreringen. |
-   | Gyldig fra-dato og -klokkeslett | Datoen og klokkeslettet når planen starter. Standardverdien er gjeldende systemdato. |
-   | Gyldig til-dato og -klokkeslett | Datoen og klokkeslettet når planen slutter (statusen settes til Inaktiv). Standardverdien er 12/31/2154, som i praksis betyr aldri. |
+   | **Plan** | En unik ID for planen. |
+   | **Beskrivelse** | En beskrivelse av planen. |
+   | **Plantype** | Når du oppretter en ny plan, må du angi plantypen. En plantype er en gruppering på høyt nivå av bestemte typer fordeler. Hver plantype angir om en ansatt kan registrere seg i flere planer av denne typen, angir om kontakter er mottakere eller avhengige, og definerer dekningsalternativer. Du kan opprette nye, egendefinerte plantyper for å dekke behovene til fordelstilbudene. De viktigste fordelsplantypene er: <ul><li>401K</li><li>ADD</li><li>Tannpleie</li><li>Helse</li><li>FSA</li><li>Liv</li><li>LTD</li><li>Medisinsk</li><li>PTO</li><li>STD</li><li>Syn</li></ul> |
+   | **Kode for plantype** | Plantypekoden for plantypen. |
+   | **Programmet** | Angir et program du kan tilordne planen i. |
+   | **Bunt** | Angir en bunt du kan tilordne planen i. |
+   | **Mester** | Angir om planen er hovedplanen i bunten den er tilordnet til. |
+   | **Status** | Viser den gjeldende statusen for fordelsplanen. Standardverdien er Aktiv. Hvis du endrer statusen til Inaktiv, vil ikke planen være tilgjengelig som et valg under registreringen. |
+   | **Gyldig fra-dato og -klokkeslett** | Datoen og klokkeslettet når planen starter. Standardverdien er gjeldende systemdato. |
+   | **Gyldig til-dato og -klokkeslett** | Datoen og klokkeslettet når planen slutter (statusen settes til Inaktiv). Standardverdien er 12/31/2154, som i praksis betyr aldri. |
 
 4. I kategorien **Konfigurasjon** angir du verdier for følgende felt, avhengig av hvilken type plan du oppretter:
 
@@ -77,42 +75,42 @@ Denne artikkelen viser deg hvordan du definerer fordelsplaner i Dynamics 365 Hum
 
    | Felt | Beskrivelse |
    | --- | --- |
-   | Tillat/fortsett registrering | Angir om ansatte kan registrere seg i planen hvis de oppfyller kravene til rettigheter.</br></br>Hvis denne er satt til Nei, vil ikke planen være tilgjengelig for ansatte når du behandler rettigheter. |
-   | Registrer automatisk fra foregående år | Angir om en kvalifisert ansatt skal registreres automatisk i planen hvis vedkommende ble registrert i løpet av foregående år. |
-   | Registrer automatisk som standard | Angir om planen skal velges for registrering som standard. Planen er ikke obligatorisk, slik at den ansatte kan endre standardvalget. |
-   | Lukket for nye registreringer | Angir om planen skal begrenses til bare kvalifiserte ansatte som ble registrert i planen i fjor. |
-   | Obligatorisk plan | Angir om ansatte skal registreres i planen automatisk. Ansatte kan ikke endre registreringsvalget. |
-   | Startdato | Datoen da planen ble opprettet i firmaet. |
-   | Leverandørkonto (fordelsleverandør) | Leverandøren som firmaet betaler bonuser til for planen. |
-   | Navn (fordelsleverandør) | Navnet på leverandøren. |
-   | Leverandørreferanse (fordelsleverandør) | Leverandørens referanse for planen. For eksempel firmaets gruppeplannummer. |
-   | Alternativ referanse (fordelsleverandør) | Leverandørens alternative referanse for planen. For eksempel firmaets kontonummer. |
-   | Valuta (fordelsleverandør) | Valutaen som brukes til å betale bonuser til leverandøren. |
-   | Utgiftskonto (fordelsleverandør) | Finanskontoen som brukes som utgiftskonto for planbonuser. |
-   | Leverandørkonto (fordelsadministrator) | Leverandøren som firmaet betaler for å administrere planen. Hvis planen er selvadministrert, lar du dette feltet stå tomt. |
-   | Navn (fordelsadministrator) | Navnet på fordelsadministratorleverandøren. |
-   | Leverandørreferanse (fordelsadministrator) | Administratorleverandørens referanse for planen. |
-   | Alternativ referanse (fordelsadministrator) | Administratorleverandørens alternative referanse for planen. |
-   | Valuta (fordelsadministrator) | Valutaen som brukes til å betale fordelsadministratorne. |
-   | Utgiftskonto (fordelsadministrator) | Finanskontoen som brukes som utgiftskonto for kostnadene som er forbundet med administrasjon av planen. |
+   | **Tillat/fortsett registrering** | Angir om ansatte kan registrere seg i planen hvis de oppfyller kravene til rettigheter.</br></br>Hvis denne er satt til Nei, vil ikke planen være tilgjengelig for ansatte når du behandler rettigheter. |
+   | **Registrer automatisk fra foregående år** | Angir om en kvalifisert ansatt skal registreres automatisk i planen hvis vedkommende ble registrert i løpet av foregående år. |
+   | **Registrer automatisk som standard** | Angir om planen skal velges for registrering som standard. Planen er ikke obligatorisk, slik at den ansatte kan endre standardvalget. |
+   | **Lukket for nye registreringer** | Angir om planen skal begrenses til bare kvalifiserte ansatte som ble registrert i planen i fjor. |
+   | **Obligatorisk plan** | Angir om ansatte skal registreres i planen automatisk. Ansatte kan ikke endre registreringsvalget. |
+   | **Startdato** | Datoen da planen ble opprettet i firmaet. |
+   | **Leverandørkonto** (fordelsleverandør) | Leverandøren som firmaet betaler bonuser til for planen. |
+   | **Navn** (fordelsleverandør) | Navnet på leverandøren. |
+   | **Leverandørreferanse** (fordelsleverandør) | Leverandørens referanse for planen. For eksempel firmaets gruppeplannummer. |
+   | **Alternativ referanse** (fordelsleverandør) | Leverandørens alternative referanse for planen. For eksempel firmaets kontonummer. |
+   | **Valuta** (fordelsleverandør) | Valutaen som brukes til å betale bonuser til leverandøren. |
+   | **Utgiftskonto** (fordelsleverandør) | Finanskontoen som brukes som utgiftskonto for planbonuser. |
+   | **Leverandørkonto** (fordelsadministrator) | Leverandøren som firmaet betaler for å administrere planen. Hvis planen er selvadministrert, lar du dette feltet stå tomt. |
+   | **Navn** (fordelsadministrator) | Navnet på fordelsadministratorleverandøren. |
+   | **Leverandørreferanse** (fordelsadministrator) | Administratorleverandørens referanse for planen. |
+   | **Alternativ referanse** (fordelsadministrator) | Administratorleverandørens alternative referanse for planen. |
+   | **Valuta** (fordelsadministrator) | Valutaen som brukes til å betale fordelsadministratorne. |
+   | **Utgiftskonto** (fordelsadministrator) | Finanskontoen som brukes som utgiftskonto for kostnadene som er forbundet med administrasjon av planen. |
 
 6. Filtrer etter behov i kategorien **Filtre**. Du kan filtrere etter følgende felt:
 
-   - Forretningsenhet
-   - Avdeling
-   - Juridisk enhet
-   - Lokasjon
-   - Posisjon
+   - **Forretningsenhet**
+   - **Avdeling**
+   - **Juridisk enhet**
+   - **Lokasjon**
+   - **Posisjon**
 
 7. I kategorien **Rettighetsregler** angir du verdier for følgende felt:
 
    | Felt | Beskrivelse |
    | --- | --- |
-   | Linjenummer | Linjenummeret til rettighetsregelen. |
-   | Rettighetsregel | En rettighetsregel som skal brukes for fordelsplanen. Denne rettighetsregelen vil bli brukt på den tilsvarende handlingstypen og knyttet til den angitte dekningsventeperioden og fradrag. |
-   | Handlingstype | Handlingen rettighetsregelen skal brukes på: fordelsregistrering eller fordelsutløp. |
-   | Venteperiode for dekning | En verdi fra skjemaet Venteperioder. Dekningsventeperioden styrer antall dager eller måneder en ansatt venter på fordelsdekning eller fordelsutløp, basert på kriteriene i rettighetsregelen og handlingstypen. |
-   | Venteperiode for fradrag | En verdi fra skjemaet Venteperioder. Fradragsventeperioden styrer antall dager eller måneder en ansatt venter på fordelsfradrag fra lønnsslippen, basert på kriteriene i rettighetsregelen og handlingstypen. |
+   | **Linjenummer** | Linjenummeret til rettighetsregelen. |
+   | **Rettighetsregel** | En rettighetsregel som skal brukes for fordelsplanen. Denne rettighetsregelen vil bli brukt på den tilsvarende handlingstypen og knyttet til den angitte dekningsventeperioden og fradrag. |
+   | **Handlingstype** | Handlingen rettighetsregelen skal brukes på: fordelsregistrering eller fordelsutløp. |
+   | **Venteperiode for dekning** | En verdi fra skjemaet Venteperioder. Dekningsventeperioden styrer antall dager eller måneder en ansatt venter på fordelsdekning eller fordelsutløp, basert på kriteriene i rettighetsregelen og handlingstypen. |
+   | **Venteperiode for fradrag** | En verdi fra skjemaet Venteperioder. Fradragsventeperioden styrer antall dager eller måneder en ansatt venter på fordelsfradrag fra lønnsslippen, basert på kriteriene i rettighetsregelen og handlingstypen. |
 
 8. Velg **Lagre**.
 

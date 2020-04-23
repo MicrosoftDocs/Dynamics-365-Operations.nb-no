@@ -2,7 +2,7 @@
 title: Hva er nytt eller endret i Dynamics 365 Supply Chain Management 10.0.9. (april 2020)
 description: Dette emnet beskriver funksjoner som enten er nye eller endret i Dynamics 365 Supply Chain Management 10.0.9.
 author: kamaybac
-manager: AnnBe
+manager: tfehr
 ms.date: 02/19/2020
 ms.topic: article
 ms.prod: ''
@@ -17,17 +17,16 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-02-19
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 502b2e08c6c1f4190031d171f037a05d591e5cd8
-ms.sourcegitcommit: 61f9e15c5791d27db392d0a90cd781aa8e5baa6f
+ms.openlocfilehash: 24132e5c43948232bb8ae3c08577d7505b5df3e4
+ms.sourcegitcommit: cd8a28be0acf31c547db1b8f6703dd4b0f62940c
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "3164774"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "3261217"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-1009-april-2020"></a>Hva er nytt eller endret i Dynamics 365 Supply Chain Management 10.0.9. (april 2020)
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Dette emnet beskriver funksjoner som enten er nye eller endret i Microsoft Dynamics 365 Supply Chain Management, forhåndsvisningsversjon 10.0.9. Denne versjonen har et build-nummer 10.0.383, og er tilgjengelig som følger:
 
@@ -47,6 +46,7 @@ Denne versjonen inneholder følgende funksjoner: Funksjonstitlene kobler til mer
 - [Konsolider forsendelsesforbedringer](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/consolidate-shipment-enhancements)
 - [Direkteoverføring](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/planned-cross-docking) – Hvis du vil ha mer informasjon, se videoen [Planlagt direkteoverføring](https://www.microsoft.com/videoplayer/embed/RE4f7LF).
 - Ytterligere faktisk vekt-integrering [10.0.1](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/further-catch-weight-integration-10.0.1), [10.0.2](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/further-catch-weight-integration-10.0.2), [10.0.3](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/further-catch-weight-integration-10.0.3), [10.0.4](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/further-catch-weight-integration-10.0.4), [10.0.5](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/further-catch-weight-integration-10.0.5), [10.0.6](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/further-catch-weight-integration-10.0.6), [10.0.7](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/further-catch-weight-integration-10.0.7) - Hvis du vil ha mer informasjon, kan du se [Behandling av Faktisk vekt-produkt med lagerstyring](../warehousing/catch-weight-processing.md) og videoen [Forbedringer av faktisk vekt-produkter](https://www.microsoft.com/videoplayer/embed/RE4jzx8).
+- [Integrasjon av anleggsmidler med livsløp for aktivabehandling](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/fixed-assets-integration-asset-management-lifecycle)
 - [Fleksibel dimensjonsreservasjon for lagernivå](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/flexible-warehouse-level-dimension-reservation) - Hvis du vil ha mer informasjon, kan du se [Fleksibel dimensjonsreservasjonspolicy for lagernivå](../warehousing/flexible-warehouse-level-dimension-reservation.md).
 - [Forbedret jobbkortenhet](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/improved-job-card-device) - Hvis du vil ha mer informasjon, se [Rapportere fremdrift på en mobil jobbenhet](../production-control/tasks/report-progress-mobile-job-device.md) og [Rapportere som fullført til en lokasjon som ikke er kontrollert av nummerskilt fra jobbkortenheten](../production-control/report-finished-job-device.md)
 - [Innkommende kvalitetskontroll](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/inbound-quality-check)
@@ -64,6 +64,7 @@ Denne versjonen inneholder følgende funksjoner: Funksjonstitlene kobler til mer
 - [Motta sortering](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/receive-sortation)
 - [Forsendelse av småpakker](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/small-package-shipping-sps)
 - [Leverandørbud – spørsmål fra leverandører og oppsummerte svar](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/vendor-bidding-questions-vendors-summarized-responses)
+- [Visuell planlegging for arbeidsoppdrag i Aktivabehandling](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/visual-scheduling-work-orders-asset-management)
 - [Lagersporing](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/warehouse-slotting)
 - [Forbedringer av bølgeetikettutskrift](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/wave-label-printing-enhancements)
 - [Bølgetrinnkode](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/wave-step-code)

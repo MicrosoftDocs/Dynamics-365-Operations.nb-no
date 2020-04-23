@@ -1,9 +1,9 @@
 ---
 title: Opprette anbefalinger med demonstrasjonsdata
-description: Dette dokument gir råd om hvordan dra nytte av produktanbefalinger for omnikanal i Lag 1-ett-miljøer i en boks, med forhåndsutfylte demonstrasjonsdata som kan tilpasses.
+description: Dette emnet gir råd om hvordan dra nytte av produktanbefalinger for omnikanal i Lag 1-ett-miljøer i en boks, med forhåndsutfylte demonstrasjonsdata som kan tilpasses.
 author: bebeale
 manager: AnnBe
-ms.date: 03/19/20
+ms.date: 03/30/20
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -19,18 +19,18 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 59cb5e5c9b59ff2127149e3e47b6c30c9c938a27
-ms.sourcegitcommit: de5af1912201dd70aa85fdcad0b184c42405802e
+ms.openlocfilehash: ec23461352abc53b90b6af539a3dd1764e4b5460
+ms.sourcegitcommit: 67cf9e2cf0f75e90526cae6bf176a40156c62a53
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "3154255"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "3175555"
 ---
 # <a name="create-recommendations-with-demo-data"></a>Opprette anbefalinger med demonstrasjonsdata
 
 [!include [banner](includes/banner.md)]
 
-Dette dokument gir råd om hvordan dra nytte av produktanbefalinger for omnikanal i Lag 1-ett-miljøer i en boks, med forhåndsutfylte demonstrasjonsdata som kan tilpasses.
+Dette emnet gir råd om hvordan dra nytte av produktanbefalinger for omnikanal i Lag 1-ett-miljøer i en boks, med forhåndsutfylte demonstrasjonsdata som kan tilpasses.
 
 Produktanbefalinger for omnikanal gir et sett med kuraterte eller programmatisk genererte produktlister. Disse listene kan brukes i flere scenarier, avhengig av forretningsbehovet. Hvis du vil ha mer informasjon om produktanbefalingslister, kan du se [Oversikt over produktanbefalinger](product-recommendations.md).
 
@@ -42,16 +42,17 @@ Produktanbefalinger for Lag 1-miljøer er bare basert på statiske demonstrasjon
 For å aktivere demonstrasjonsdata for produktanbefalinger må du distribuere Dynamics 365 Commerce-forhåndsvisningens demonstrasjonsutvidelse til det aktuelle miljøet. Når du gjør dette, aktiveres demonstrasjonsdata for produktanbefalinger automatisk.
 
 ## <a name="default-demo-data"></a>Standard demonstrasjonsdata
-Alle miljøer i én boks leveres med forhåndslastede demonstrasjonsdata for produktanbefalinger som er lagret i den kommadelte filen reco_demo_data.csv, som er plassert på Commerce Scale Unit.
+Alle OneBox-miljøer leveres med forhåndslastede demonstrasjonsdata for produktanbefalinger som er lagret i den kommadelte filen reco_demo_data.csv, som er plassert på Commerce Scale Unit.
 
 Dataene er strukturert langs følgende kolonner.
 
-| Kolonnenavn         | Obligatorisk          | Beskrivelse                                                                                                                                 | Mulige verdier                                                              |
+| Kolonnenavn         | Obligatorisk          | beskrivelse                                                                                                                                 | Mulige verdier                                                              |
 |---------------------|--------------------|---------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------|
 | RecoList            | :heavy_check_mark: | Den spesifikke listetypen for produktanbefaling som demonstrasjonsdatapunktet skal generere.                                                    | <ul><li>RecoBestSelling</li><li>RecoNew</li><li>RecoTrending</li><li>RecoCart</li><li>RecoPeopleAlsoBuy</li></ul> |
 | OperatingUnitNumber | :heavy_check_mark: | Det spesifikke driftsenhetsnummeret der produktanbefalinger forventes å vises.                                        |                                                                              |
 | Kategori            |                    |    Kategorien som den bestemte listen skal returneres for. Hvis det ikke er angitt en kategori, er listen bare for øverste navigasjonshierarki.    |                                                                              |
 | SeedItemId          |                    |    For lister som krever utgangsverdi (RecoPeopleAlsoBuy og RecoCart) må produktlistene vise flere produkter.            |                                                                              |
+| CustomerId          |                    |    For lister som krever en kunde-ID (RecoPicks).  Standardverdien 0 gjelder for alle kunder.          |                                                                              |
 | ItemIds             | :heavy_check_mark: | Ett eller flere produkter som skal returneres som resultat, atskilt med ';'.                                                                  |                                                                              |
 
 ## <a name="customize-demo-data"></a>Tilpass demonstrasjonsdata

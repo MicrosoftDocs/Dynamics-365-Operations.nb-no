@@ -3,7 +3,7 @@ title: REPLACE ER-funksjon
 description: Dette emnet gir generell informasjon om hvordan du bruker ER-funksjonen REPLACE.
 author: NickSelin
 manager: kfend
-ms.date: 12/10/2019
+ms.date: 04/02/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,14 +18,14 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ba2590635ba465dae9ea50d3e4da989365548f3b
-ms.sourcegitcommit: 3c1eb3d89c6ab9bd70b806ca42ef9df74cf850bc
+ms.openlocfilehash: 83d5095620a938f1ac4b8428fff9209fda7a7831
+ms.sourcegitcommit: fb8ad8e2b142441a6530b364f3258bbcc0c724d2
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "3040992"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "3201072"
 ---
-# <a name="REPLACE">REPLACE ER-funksjon</a>
+# <a name=""></a><a name="REPLACE">REPLACE ER-funksjon</a>
 
 [!include [banner](../includes/banner.md)]
 
@@ -69,7 +69,7 @@ Den resulterende tekstverdien.
 
 Hvis `regular expression flag`-argumentet er **SANN**, returnerer denne funksjonen den angitte strengen etter at den er endret ved å bruke det vanlige uttrykket som er angitt av `pattern`-argumentet. Det vanlige uttrykket brukes til å søke etter tegn som skal erstattes.
 
-Hvis argumentet `regular expression flag` er **USANN**, oppfører denne funksjonen seg som [TRANSLATE](er-functions-text-translate.md). Tegnene som er angitt av `replacement`-argumentet, brukes til å erstatte tegnene som blir funnet. 
+Hvis argumentet `regular expression flag` er **USANN**, returnerer denne funksjonen den angitte strengen etter settet med tegn som er definert i `pattern` er erstattet av tegnene i argumentet `replacement`. 
 
 ## <a name="example-1"></a>Eksempel 1
 

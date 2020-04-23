@@ -3,7 +3,7 @@ title: Klargjøre et miljø for forhåndsvisning av Dynamics 365 Commerce
 description: Dette emnet forklarer hvordan du klargjør et Microsoft Dynamics 365 Commerce-forhåndsvisningsmiljø.
 author: psimolin
 manager: annbe
-ms.date: 01/31/2020
+ms.date: 04/10/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: cbd4c118de2e91c8849461b20a01403049a07e66
-ms.sourcegitcommit: 4ed1d8ad8a0206a4172dbb41cc43f7d95073059c
+ms.openlocfilehash: d54db89372a0f9ef5b267d25e14067e3243a803c
+ms.sourcegitcommit: 4254acb3cf8c6299fc2f3818ea6c499f058320d9
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "3024642"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "3254754"
 ---
 # <a name="provision-a-dynamics-365-commerce-preview-environment"></a>Klargjøre et miljø for forhåndsvisning av Dynamics 365 Commerce
 
@@ -234,8 +234,6 @@ Hvis du vil initialisere e-handel, følger du disse trinnene.
 ## <a name="commerce-preview-environment-support"></a>Støtte for Commerce-forhåndsvisningsmiljø
 
 Hvis det oppstår problemer under utføring av klargjøringstrinnene, kan du gå til [Yammer-gruppen for Microsoft Dynamics 365 Commerce forhåndsvisning](https://aka.ms/Dynamics365CommercePreviewYammer) for å få hjelp.
-
-Hvis du får problemer når du prøver å få tilgang til Yammer-gruppen, kan du kontakte Microsoft via e-post på <Dynamics365Commerce@microsoft.com>. Denne e-postadressen overvåkes ikke aktivt. Forvent derfor en forsinkelse i svaret.
 
 ## <a name="next-steps"></a>Neste trinn
 

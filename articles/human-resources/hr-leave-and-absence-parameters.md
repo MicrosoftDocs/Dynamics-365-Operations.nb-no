@@ -3,7 +3,7 @@ title: Konfigurere permisjons- og fraværsparametere
 description: Du kan definere personalparametere for permisjon og fravær i Dynamics 365 Human Resources.
 author: andreabichsel
 manager: AnnBe
-ms.date: 02/03/2020
+ms.date: 04/01/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 2acb8502ebcab122a0a1ff21e9f5e23931026327
-ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
+ms.openlocfilehash: eb992cbfbed33f88e125d3a8b721f8815414599a
+ms.sourcegitcommit: 79f8aa2c0b166a423db9b8503da53e96e3fc43dc
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3010053"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "3197987"
 ---
 # <a name="configure-leave-and-absence-parameters"></a>Konfigurere permisjons- og fraværsparametere
 
@@ -50,18 +50,25 @@ Før du definerer permisjons- og fraværsplaner i Dynamics 365 Human Resources, 
 
 7. Velg **Lagre**.
 
-## <a name="configure-calendar-parameters"></a>Konfigurere kalenderparametere
-
-Hvis du har aktivert forhåndsversjonsfunksjonen Permisjons- og fraværskalender, må du konfigurere flere parametere. 
-
-[!include [banner](includes/preview-feature-leave-absence.md)]
-
-> [!NOTE]
-> For forhåndsversjonen av 3. februar 2020 er bare **Ventende permisjonsforespørsler** aktivert.
+## <a name="view-and-change-leave-and-absence-parameters"></a>Vise og endre permisjons- og fraværsparametere
 
 1. På siden **Permisjon og fravær** velger du **Koblinger**-fanen.
 
-2. Under **Oppsett** velger du **Personalparametere**.
+2. Under **Oppsett**velger du **Permisjons- og fraværsparametere**.
+
+3. Angi følgende parametere i kategorien **Generelt**:
+ 
+    - Angi **Enhet for permisjon og fravær** til enten timer eller dager. Hvis dager, kan du velge **Aktiver halvdagsdefinisjon** for å la de ansatte velge enten den første eller andre halvparten av dagen i fritidsforespørsler. 
+
+    - Velg **Gyldighetsdato for måneder med jobberfaring** for å angi når avsetningsratene trer i kraft for permisjonsplaner som bruker måneder med jobberfaring.
+
+    - Velg **Saldoberegning** for å vise saldoer per dag eller per avsetningsperiode. Hvis du velger **Saldo per i dag**, viser saldoen summen av alle avsetningene, justeringene og forespørslene per i dag. Hvis du velger **Saldo per avsetningsperiode**, viser saldoen summen av alle avsetningene, justeringene og forespørslene fra avsetningsperioden som er definert av frekvensen i permisjonsplanen. 
+
+## <a name="configure-calendar-parameters"></a>Konfigurere kalenderparametere
+
+1. På siden **Permisjon og fravær** velger du **Koblinger**-fanen.
+
+2. Under **Oppsett**velger du **Permisjons- og fraværsparametere**.
 
 3. I kategorien **Kalender** endrer du kalenderinnstillinger etter behov.
 

@@ -3,7 +3,7 @@ title: Konfigurere satser
 description: Satser i Microsoft Dynamics 365 Human Resources definerer hvor mye arbeidsgivere og ansatte bidrar til en fordel.
 author: andreabichsel
 manager: AnnBe
-ms.date: 02/03/2020
+ms.date: 04/06/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,16 +18,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: f846dcd0a15424ac681dd7e6a229d9da445a54e1
-ms.sourcegitcommit: f38302b9430f2ab3efe91d0a7beff946bc610e8f
+ms.openlocfilehash: 26b1e0e5f259e012cfb9079eb75898a9337a300d
+ms.sourcegitcommit: a9461650d11d6845e1942865ebf7e35f75f61ad3
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "3092413"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "3229838"
 ---
 # <a name="configure-rates"></a>Konfigurere satser
-
-[!include [banner](includes/preview-feature.md)]
 
 Satser i Microsoft Dynamics 365 Human Resources definerer hvor mye arbeidsgivere og ansatte bidrar til en fordel. Verdien kan være et beløp eller fleksible kreditter, avhengig av konfigurasjonen.
 
@@ -43,22 +41,21 @@ Bruk satser til å bestemme hvor mye ansatte og arbeidsgivere skal betale for hv
 
    | Felt | Beskrivelse |
    | --- | --- |
-   | Sats | Et unikt navn som identifiserer fordelssatsen. |
-   | Beskrivelse | En beskrivelse av fordelssatsen. |
-   | Effektiv | Datoen når satsen er effektiv. Standardverdien er gjeldende systemdato. 
-   | Utløp | Sluttdatoen for satsen. 12/31/2154 (som betyr aldri) er standardverdien. |
-   | Bruk lag | Laget som skal brukes for beregning av fordelssatsen. Enkelt lag for en fordelssats på ett lag, eller et dobbelt nivå for en fordelssats på to lag. Et eksempel på et dobbelt lag er et lag basert på kjønn og alder. |
-   | Betalingsfrekvens | Betalingsfrekvensen som bestemmer hvor ofte fordelsbonussatsen betales til fordelsleverandøren. Hvis for eksempel betalingsfrekvensen er månedlig, representerer fordelssatsen det månedlige betalingsbeløpet. |
-   | Beregning av sats for lønnsfrekvens | Metoden for beregning av lønnssats: standard eller årlig. |
-   | Avrunding av sats for lønnsfrekvens | Metoden for avrunding av satsen: standard eller avkortet. |
-   | Beløp for ikke-røykende ansatt | Beløpet som fordelsleverandøren tar betalt for en ikke-røykende ansatt. Dette er beløpet arbeidsgiveren betaler til fordelsleverandøren, og bør være basert på betalingsfrekvensen for satsoppsettet. |
-   | Beløp for ikke-røykende arbeidsgiver | Beløpet som fordelsleverandøren tar betalt for en ikke-røykende ansatt. Dette er beløpet arbeidsgiveren betaler til fordelsleverandøren, og det bør være basert på betalingsfrekvensen for satsoppsettet. |
-   | Beløp for røykende ansatt | Beløpet som fordelsleverandøren tar betalt for en ansatt som røyker. Dette er beløpet arbeidsgiveren betaler til fordelsleverandøren, og bør være basert på betalingsfrekvensen for satsoppsettet. |
-   | Beløp for røykende arbeidsgiver | Beløpet som fordelsleverandøren tar betalt for en ansatt som røyker. Dette er beløpet arbeidsgiveren betaler til fordelsleverandøren, og bør være basert på betalingsfrekvensen for satsoppsettet. |
-   | Administrativt beløp | Det administrative beløpet som belastes av en tredjeparts administrator. Dette er beløpet som arbeidsgiveren betaler til den tredjeparts administratoren, og det bør være basert på betalingsfrekvensen for satsoppsettet. |
-   | Fleksikredittsats | Antall fleksible kreditter som fordelen koster. Dette gjelder bare satser som er for fordelsplaner som er tilknyttet fleksible kredittprogrammer. Hvis du bruker lagsatser, blir satsen for den fleksible kreditten definert i Handlinger > Lagsatser. |
-   | Ikrafttredelsesdato for endring | Datoen når endringen av fordelssatsen trer i kraft. Systemet endrer automatisk fordelssatsen og oppdaterer alle fordelsplanene som er knyttet til denne satsen, så lenge du kjører behandling av oppdatering av satsendring. Du bør ikke angi denne datoen med mindre du vil at systemet automatisk skal oppdatere de ansattes fordelsplaner basert på denne satsen. Dette er vanligvis reservert til automatisk behandling av fremtidige satsendringer. Ikrafttredelsesdatoen for endringen må være innenfor datoen for fordelssatsen og utløpsdatoen. |
-   | Satsendring fullført | Avmerkingsboksen for Satsendring fullført blir valgt automatisk etter at fordelssatsendringene er fullført av oppdateringsbehandlingen av satsendring. |
+   | **Sats** | Et unikt navn som identifiserer fordelssatsen. |
+   | **Beskrivelse** | En beskrivelse av fordelssatsen. |
+   | **Effektiv** | Datoen når satsen er effektiv. Standardverdien er gjeldende systemdato. 
+   | **Utløp** | Sluttdatoen for satsen. 12/31/2154 (som betyr aldri) er standardverdien. |
+   | **Bruk lag** | Laget som skal brukes for beregning av fordelssatsen. Enkelt lag for en fordelssats på ett lag, eller et dobbelt nivå for en fordelssats på to lag. Et eksempel på et dobbelt lag er et lag basert på kjønn og alder. |
+   | **Betalingsfrekvens** | Betalingsfrekvensen som bestemmer hvor ofte fordelsbonussatsen betales til fordelsleverandøren. Hvis for eksempel betalingsfrekvensen er månedlig, representerer fordelssatsen det månedlige betalingsbeløpet. |
+   | **Avrunding av sats for lønnsfrekvens** | Metoden for avrunding av satsen: standard eller avkortet. |
+   | **Beløp for ikke-røykende ansatt** | Beløpet som fordelsleverandøren tar betalt for en ikke-røykende ansatt. Dette er beløpet arbeidsgiveren betaler til fordelsleverandøren, og bør være basert på betalingsfrekvensen for satsoppsettet. |
+   | **Beløp for ikke-røykende arbeidsgiver** | Beløpet som fordelsleverandøren tar betalt for en ikke-røykende ansatt. Dette er beløpet arbeidsgiveren betaler til fordelsleverandøren, og det bør være basert på betalingsfrekvensen for satsoppsettet. |
+   | **Beløp for røykende ansatt** | Beløpet som fordelsleverandøren tar betalt for en ansatt som røyker. Dette er beløpet arbeidsgiveren betaler til fordelsleverandøren, og bør være basert på betalingsfrekvensen for satsoppsettet. |
+   | **Beløp for røykende arbeidsgiver** | Beløpet som fordelsleverandøren tar betalt for en ansatt som røyker. Dette er beløpet arbeidsgiveren betaler til fordelsleverandøren, og bør være basert på betalingsfrekvensen for satsoppsettet. |
+   | **Administrativt beløp** | Det administrative beløpet som belastes av en tredjeparts administrator. Dette er beløpet som arbeidsgiveren betaler til den tredjeparts administratoren, og det bør være basert på betalingsfrekvensen for satsoppsettet. |
+   | **Fleksikredittsats** | Antall fleksible kreditter som fordelen koster. Dette gjelder bare satser som er for fordelsplaner som er tilknyttet fleksible kredittprogrammer. Hvis du bruker lagsatser, blir satsen for den fleksible kreditten definert i Handlinger > Lagsatser. |
+   | **Ikrafttredelsesdato for endring** | Datoen når endringen av fordelssatsen trer i kraft. Systemet endrer automatisk fordelssatsen og oppdaterer alle fordelsplanene som er knyttet til denne satsen, så lenge du kjører behandling av oppdatering av satsendring. Du bør ikke angi denne datoen med mindre du vil at systemet automatisk skal oppdatere de ansattes fordelsplaner basert på denne satsen. Dette er vanligvis reservert til automatisk behandling av fremtidige satsendringer. Ikrafttredelsesdatoen for endringen må være innenfor datoen for fordelssatsen og utløpsdatoen. |
+   | **Satsendring fullført** | Avmerkingsboksen for **Satsendring fullført** blir valgt automatisk etter at fordelssatsendringene er fullført av oppdateringsbehandlingen av satsendring. |
 
 4. Hvis du vil spore og vedlikeholde endringer i fordelssatsoppsettet, velger du **Handlinger** og deretter **Vedlikehold versjoner**.
 
@@ -80,19 +77,19 @@ Du kan også bruke doble lag. Hvis du velger **Dobbelt lag** for verdien **Bruk 
 
    | Felt | Beskrivelse |
    | --- | --- | 
-   | Beskrivelse | Verdien i Beskrivelse-feltet vil bli brukt fra beskrivelsen av prisoppsettposten. Dermed kan du identifisere hvilket satsoppsett lagsatsene er knyttet til. |
-   | Lagkode | Velg en lagkode. Lagkoder defineres i Lagkoder-skjemaet. Systemet vil automatisk vise beskrivelsen av lagkoden i rutenettet til venstre. |
-   | Lagtype | Angir hvilket felt som skal brukes som et utvalgskriterium for beregningsprosessen for lagsatsen. For eksempel:</br></br><ul><li>Hvis alder brukes, vil systemet bruke den ansattes fødselsdato i beregningsprosessen for fordelssatsen.</li><li>Hvis lønn brukes, vil systemet bruke den ansattes årlige fordelslønn i beregningsprosessen for fordelssatsen.</li><li>Hvis Jobbtype brukes, vil systemet bruke den ansattes gjeldende aktive stillingspost til å bestemme jobbtypen etter jobbposten som er knyttet til stillingen.</li></ul></br></br>Lagtypene er alder, lønn, fysisk, kjønn, fulltidsekvivalent, jobbtype, kompensasjonsområde og nivå. | 
-   | Nivå | Verdien som skal brukes med lagtypen under beregningsprosessen for fordelssatsen. For eksempel:</br></br><ul><li>Hvis lagtypen er alder, vil dette være aldersverdien.</li><li>Hvis lagtypen er lønn, vil dette være lønnsbeløpet.</li><li> Hvis lagtypen er jobbtype, vil dette være jobbtypen.</li></ul></br></br>Når en lagtype er alder eller lønn, bruker systemet en stigende tilnærming under valg av lagsats, noe som betyr at verdien i Nivå-feltet representerer den nedre grensen til laget. Når en lagtype er jobbtype, bruker systemet en nøyaktig samsvarsmetode under valg av lagsats. |
-   | Beregningstype | Angir hvordan beløpet i Beregningsbeløp-feltet skal brukes, og hvilken matematisk beregning som skal utføres hvis det er nødvendig. Hvis beregningstypen er et flatt beløp, bruker systemet beløpsfeltene som de er. Hvis beregningstypen er per beløp for lønn eller dekning, bruker systemet beregningsbeløpet og beregningsretningen i den matematiske beregningen.</br></br>Hvis beregningstypen er per lønnsbeløp, bruker systemet følgende matematiske formel:</br></br>Årlig fordelslønn dividert med beregningsbeløp (avrundet opp eller ned) ganger beløpene for røykende eller ikke-røykende ansatt eller arbeidsgiver.</br></br>Hvis beregningstypen er per dekningsbeløp, bruker systemet følgende matematiske formel:</br></br>Dekningsbeløp dividert med beregningsbeløp (avrundet opp eller ned) ganger beløpene for røykende eller ikke-røykende ansatt eller arbeidsgiver.</br></br>I begge beregningene brukes beregningsretningen til å avgjøre om årlig fordelslønn eller dekningsbeløp dividert på beregningsbeløp skal rundes opp eller ned. |
-   | Beregningsbeløp | Beløpet som skal brukes under beregning av fordelssatsen. Dette beløpet vil være divisoren under den matematiske beregningen av lagsatsen. |
-   | Beregningsretning | Retningen (økning eller reduksjon) som skal brukes for avrunding av det beregnede resultatbeløpet. Systemet støtter tre beregningsretninger: tom (eksakt metode), økning og reduksjon.</br></br><ul><li>Hvis tom vil systemet bruke den nøyaktige beregningen av lønns-/dekningsbeløpet dividert på beregningsbeløpet. Hvis denne verdien har en brøk, vil systemet bruke denne i beregningen.</li><li>Hvis økning vil systemet øke den matematiske beregningen av lønns-/dekningsbeløpet dividert på beregningsbeløpet til det neste heltallet, som betyr at 12,25 vil øke til 13.</li><li>Hvis reduksjon vil systemet redusere den matematiske beregningen av lønns-/dekningsbeløpet dividert på beregningsbeløpet til det gjeldende heltallet, som betyr at 12,25 vil reduseres til 12.</li></ul> |
-   | Beløp for ikke-røykende ansatt | Beløpet som en fordelsleverandør tar betalt for en ikke-røykende ansatt. Dette er beløpet arbeidsgiveren betaler til fordelsleverandøren, og det bør være basert på betalingsfrekvensen for satsoppsettet. |
-   | Beløp for ikke-røykende arbeidsgiver | Beløpet som en fordelsleverandør tar betalt for en ikke-røykende ansatt. Dette er beløpet arbeidsgiveren betaler til fordelsleverandøren, og det bør være basert på betalingsfrekvensen for satsoppsettet. |
-   | Beløp for røykende ansatt | Beløpet som en fordelsleverandør tar betalt for en ikke-røykende ansatt. Dette er beløpet arbeidsgiveren betaler til fordelsleverandøren, og det bør være basert på betalingsfrekvensen for satsoppsettet. |
-   | Beløp for røykende arbeidsgiver | Beløpet som en fordelsleverandør tar betalt for en ikke-røykende ansatt. Dette er beløpet arbeidsgiveren betaler til fordelsleverandøren, og det bør være basert på betalingsfrekvensen for satsoppsettet. |
-   | Administrativt beløp | Det administrative beløpet som belastes av en tredjeparts administrator. Dette er beløpet som arbeidsgiveren betaler til den tredjeparts administratoren, og det bør være basert på betalingsfrekvensen for satsoppsettet. |
-   | Ikke-røykersats for fleksikreditt | Antall fleksikreditter fordelen koster, basert på beregningen som er definert for lagnivået for ikke-røykere. Hvis for eksempel beregningstypen er per dekningsbeløp, er beregnings beløpet 10 000, og fleksikreditten for ikke-røykende sats er 6, noe som betyr at hvis en ikke-røykende ansatt velger 10 000 i dekning, vil det koste 6 fleksikreditter. Hvis de velger 20 000 i dekning, vil det koste 12 fleksikreditter og så videre. |
-   | Røykersats for fleksikreditt | Antall fleksikreditter fordelen koster, basert på beregningen som er definert for lagnivået for røykere. |
+   | **Beskrivelse** | Verdien i Beskrivelse-feltet vil bli brukt fra beskrivelsen av prisoppsettposten. Dermed kan du identifisere hvilket satsoppsett lagsatsene er knyttet til. |
+   | **Lagkode** | Velg en lagkode. Lagkoder defineres i Lagkoder-skjemaet. Systemet vil automatisk vise beskrivelsen av lagkoden i rutenettet til venstre. |
+   | **Lagtype** | Angir hvilket felt som skal brukes som et utvalgskriterium for beregningsprosessen for lagsatsen. For eksempel:</br></br><ul><li>Hvis alder brukes, vil systemet bruke den ansattes fødselsdato i beregningsprosessen for fordelssatsen.</li><li>Hvis lønn brukes, vil systemet bruke den ansattes årlige fordelslønn i beregningsprosessen for fordelssatsen.</li><li>Hvis Jobbtype brukes, vil systemet bruke den ansattes gjeldende aktive stillingspost til å bestemme jobbtypen etter jobbposten som er knyttet til stillingen.</li></ul></br></br>Lagtypene er alder, lønn, fysisk, kjønn, fulltidsekvivalent, jobbtype, kompensasjonsområde og nivå. | 
+   | **Nivå** | Verdien som skal brukes med lagtypen under beregningsprosessen for fordelssatsen. For eksempel:</br></br><ul><li>Hvis lagtypen er alder, vil dette være aldersverdien.</li><li>Hvis lagtypen er lønn, vil dette være lønnsbeløpet.</li><li> Hvis lagtypen er jobbtype, vil dette være jobbtypen.</li></ul></br></br>Når en lagtype er alder eller lønn, bruker systemet en stigende tilnærming under valg av lagsats, noe som betyr at verdien i Nivå-feltet representerer den nedre grensen til laget. Når en lagtype er jobbtype, bruker systemet en nøyaktig samsvarsmetode under valg av lagsats. |
+   | **Beregningstype** | Angir hvordan beløpet i Beregningsbeløp-feltet skal brukes, og hvilken matematisk beregning som skal utføres hvis det er nødvendig. Hvis beregningstypen er et flatt beløp, bruker systemet beløpsfeltene som de er. Hvis beregningstypen er per beløp for lønn eller dekning, bruker systemet beregningsbeløpet og beregningsretningen i den matematiske beregningen.</br></br>Hvis beregningstypen er per lønnsbeløp, bruker systemet følgende matematiske formel:</br></br>Årlig fordelslønn dividert med beregningsbeløp (avrundet opp eller ned) ganger beløpene for røykende eller ikke-røykende ansatt eller arbeidsgiver.</br></br>Hvis beregningstypen er per dekningsbeløp, bruker systemet følgende matematiske formel:</br></br>Dekningsbeløp dividert med beregningsbeløp (avrundet opp eller ned) ganger beløpene for røykende eller ikke-røykende ansatt eller arbeidsgiver.</br></br>I begge beregningene brukes beregningsretningen til å avgjøre om årlig fordelslønn eller dekningsbeløp dividert på beregningsbeløp skal rundes opp eller ned. |
+   | **Beregningsbeløp** | Beløpet som skal brukes under beregning av fordelssatsen. Dette beløpet vil være divisoren under den matematiske beregningen av lagsatsen. |
+   | **Beregningsretning** | Retningen (økning eller reduksjon) som skal brukes for avrunding av det beregnede resultatbeløpet. Systemet støtter tre beregningsretninger: tom (eksakt metode), økning og reduksjon.</br></br><ul><li>Hvis tom vil systemet bruke den nøyaktige beregningen av lønns-/dekningsbeløpet dividert på beregningsbeløpet. Hvis denne verdien har en brøk, vil systemet bruke denne i beregningen.</li><li>Hvis økning vil systemet øke den matematiske beregningen av lønns-/dekningsbeløpet dividert på beregningsbeløpet til det neste heltallet, som betyr at 12,25 vil øke til 13.</li><li>Hvis reduksjon vil systemet redusere den matematiske beregningen av lønns-/dekningsbeløpet dividert på beregningsbeløpet til det gjeldende heltallet, som betyr at 12,25 vil reduseres til 12.</li></ul> |
+   | **Beløp for ikke-røykende ansatt** | Beløpet som en fordelsleverandør tar betalt for en ikke-røykende ansatt. Dette er beløpet arbeidsgiveren betaler til fordelsleverandøren, og det bør være basert på betalingsfrekvensen for satsoppsettet. |
+   | **Beløp for ikke-røykende arbeidsgiver** | Beløpet som en fordelsleverandør tar betalt for en ikke-røykende ansatt. Dette er beløpet arbeidsgiveren betaler til fordelsleverandøren, og det bør være basert på betalingsfrekvensen for satsoppsettet. |
+   | **Beløp for røykende ansatt** | Beløpet som en fordelsleverandør tar betalt for en ikke-røykende ansatt. Dette er beløpet arbeidsgiveren betaler til fordelsleverandøren, og det bør være basert på betalingsfrekvensen for satsoppsettet. |
+   | **Beløp for røykende arbeidsgiver** | Beløpet som en fordelsleverandør tar betalt for en ikke-røykende ansatt. Dette er beløpet arbeidsgiveren betaler til fordelsleverandøren, og det bør være basert på betalingsfrekvensen for satsoppsettet. |
+   | **Administrativt beløp** | Det administrative beløpet som belastes av en tredjeparts administrator. Dette er beløpet som arbeidsgiveren betaler til den tredjeparts administratoren, og det bør være basert på betalingsfrekvensen for satsoppsettet. |
+   | **Ikke-røykersats for fleksikreditt** | Antall fleksikreditter fordelen koster, basert på beregningen som er definert for lagnivået for ikke-røykere. Hvis for eksempel beregningstypen er **per dekningsbeløp**, er beregnings beløpet 10 000, og fleksikreditten for ikke-røykende sats er 6, noe som betyr at hvis en ikke-røykende ansatt velger 10 000 i dekning, vil det koste 6 fleksikreditter. Hvis de velger 20 000 i dekning, vil det koste 12 fleksikreditter og så videre. |
+   | **Røykersats for fleksikreditt** | Antall fleksikreditter fordelen koster, basert på beregningen som er definert for lagnivået for røykere. |
 
 5. Velg **Lagre**. 

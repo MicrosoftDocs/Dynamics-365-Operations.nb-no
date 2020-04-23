@@ -3,7 +3,7 @@ title: Konfigurere egenskaper for arbeidsflyt
 description: Dette emnet forklarer hvordan du konfigurerer de ulike egenskapene i en arbeidsflyt.
 author: sericks007
 manager: AnnBe
-ms.date: 07/17/2018
+ms.date: 04/01/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: donaldc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 76d44c472989a73d71c2edd19f1187ecd09827ae
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: d745389b37b899760ea32ae75c5cb80d9139be2d
+ms.sourcegitcommit: 1852f08f015acd106f4cefd03fa07985dc009123
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2190126"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "3199442"
 ---
 # <a name="configure-workflow-properties"></a>Konfigurere egenskaper for arbeidsflyt
 
@@ -75,9 +75,11 @@ Du kan gi instruksjoner til brukere som sender dokumenter til behandling og godk
     5. Hvis du vil tilpasse teksten, kan du sette inn plassholdere. Hvis du vil ha instruksjoner om hvordan du skriver inn en plassholder, kan du se trinn 3.
     6. Klikk **Lukk**.
 
-## <a name="specify-when-this-workflow-is-used"></a>Angi når denne arbeidsflyten skal brukes
+## <a name="specify-when-this-workflow-is-used-through-activation-conditions"></a>Angi når denne arbeidsflyten brukes gjennom aktiveringsbetingelser
 
-Du kan opprette flere arbeidsflyter som er basert på den samme typen. Du kan for eksempel opprette en arbeidsflyt for innkjøpsrekvisisjon for hvert land eller område du opererer i, for eksempel Innkjøpsrekvisisjoner Danmark og Innkjøpsrekvisisjoner Spania. Når du har flere arbeidsflyter som er basert på den samme typen, må du angi når hver arbeidsflyt skal brukes. For det forrige eksemplet kan du angi følgende betingelser:
+Du kan opprette flere arbeidsflyter som er basert på den samme arbeidsflyttypen. Når du har flere arbeidsflyter som er basert på den samme typen, må du angi når hver arbeidsflyt skal brukes, ved hjelp av aktiveringsbetingelser. Hvis aktiveringsbetingelser ikke er oppfylt, brukes standard arbeidsflyt. Hvis det bare er definert én arbeidsflytkonfigurasjon for en arbeidsflyttype, blir denne arbeidsflytkonfigurasjonen brukt uavhengig av aktiveringsbetingelsene.
+
+Du kan for eksempel opprette en arbeidsflyt for innkjøpsrekvisisjon for hvert land eller område du opererer i, for eksempel Innkjøpsrekvisisjoner Danmark og Innkjøpsrekvisisjoner Spania, med følgende betingelser:
 
 - Innkjøpsrekvisisjoner Danmark brukes når land/område = DK
 - Innkjøpsrekvisisjoner Spania brukes når land/område = ES

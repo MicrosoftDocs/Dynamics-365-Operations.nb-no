@@ -1,7 +1,7 @@
 ---
 title: Bruke opplæringen for Regression Suite Automation Tool
 description: Dette emnet viser hvordan du bruker Regression Suite Automation Tool (RSAT). Det beskriver ulike funksjoner og gir eksempler som omfatter avansert skripting.
-author: kfend
+author: robinarh
 manager: AnnBe
 ms.date: 06/09/2019
 ms.topic: article
@@ -9,19 +9,19 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User, Developer, IT Pro
-ms.reviewer: sericks
+ms.reviewer: rhaertle
 ms.search.scope: Core, Operations
 ms.custom: 21761
 ms.search.region: Global
-ms.author: kfend
+ms.author: rhaertle
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: AX 7.0.0, Operations
-ms.openlocfilehash: 6cdaa89fb6d50ebaaaefe7f92d7224a1567d17d1
-ms.sourcegitcommit: 3dede95a3b17de920bb0adcb33029f990682752b
+ms.openlocfilehash: 2d3dde69b102ce161e5c1f1dd393ffceca608bcb
+ms.sourcegitcommit: 4fdee254649a751d46632fb4d0d48698e112fa72
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/18/2020
-ms.locfileid: "3070826"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "3248742"
 ---
 # <a name="use-the-regression-suite-automation-tool-tutorial"></a>Bruke opplæringen for Regression Suite Automation Tool
 
@@ -30,79 +30,13 @@ ms.locfileid: "3070826"
 > [!NOTE]
 > Bruk nettleserverktøyene til å laste ned og lagre denne siden i PDF-format. 
 
-Denne opplæringen går gjennom noen av de avanserte funksjonene i Regression Suite Automation Tool (RSAT), inneholder en demonstrasjonsoppgave og beskriver strategier og ting som er viktig å lære.
+Denne opplæringen går gjennom noen av de avanserte funksjonene i Regression Suite Automation Tool (RSAT), inneholder en demonstrasjonsoppgave og beskriver strategier og ting som er viktig å lære. 
 
-## <a name="features-of-rsattask-recorder"></a>Funksjoner i RSAT/Oppgaveopptaker
+## <a name="notable-features-of-rsat-and-task-recorder"></a>Funksjoner å merke seg i RSAT og Oppgaveopptaker
 
 ### <a name="validate-a-field-value"></a>Valider en feltverdi
 
-Hvis du vil ha informasjon om denne funksjonen, kan du se [Opprette et nytt oppgaveopptak som har en valideringsfunksjon](./hol-set-up-regression-suite-automation-tool.md#create-a-new-task-recording-that-has-a-validate-function).
-
-### <a name="saved-variable"></a>Lagret variabel
-
-Hvis du vil ha informasjon om denne funksjonen, kan du se [Endre et eksisterende oppgaveopptak for å opprette en lagret variabel](./hol-set-up-regression-suite-automation-tool.md#modify-an-existing-task-recording-to-create-a-saved-variable).
-
-### <a name="derived-test-case"></a>Avledet testtilfelle
-
-1. Åpne Regression Suite Automation Tool (RSAT), og velg begge testtilfellene du opprettet i [Opplæring i installasjon og konfigurasjon av Regression Suite Automation Tool](./hol-set-up-regression-suite-automation-tool.md).
-2. Velg **Ny \> Opprett avledet testtilfelle**.
-
-    ![Kommandoen Opprett avledet testtilfelle på Ny-menyen](./media/use_rsa_tool_01.png)
-
-3. Du får en melding om at en avledet test opprettes for hvert valgte testtilfelle i gjeldende testserie, og at hvert avledede testtilfelle har ha en egen kopi av Excel-parameterfilen. Velg **OK**.
-
-    > [!NOTE]
-    > Når du kjører et avledet testtilfelle, bruker det oppgaveopptaket for det overordnede testtilfellet og sin egen kopi av Excel-parameterfilen. På denne måten kan du kjøre den samme testen med ulike parametere, uten å måtte ta vare på flere enn ett oppgaveopptak. Et avledet testtilfelle kan ikke være en del av den samme testserien som det overordnede testtilfellet.
-
-    ![Meldingsboks](./media/use_rsa_tool_02.png)
-
-    Det opprettes to ytterligere testtilfeller, og det er merket av for **Avledet?** ved siden av dem.
-
-    ![Avledede testtilfeller opprettet](./media/use_rsa_tool_03.png)
-
-    Et avledet testtilfelle opprettes automatisk i Azure DevOps. Det er et underordnet element for testtilfellet **Opprett et nytt produkt** og er merket med et spesielt nøkkelord: **RSAT:DerivedTestSteps**. Disse testtilfellene blir også automatisk lagt til i testplanen i Azure DevOps.
-
-    ![Nøkkelordet RSAT:DerivedTestSteps](./media/use_rsa_tool_04.png)
-
-    > [!NOTE]
-    > Hvis de avledede testtilfellene som opprettes, av en eller annen årsak ikke er i riktig rekkefølge, går du til Azure DevOps og endrer rekkefølgen på testtilfellene i testserien, slik at RSAT kan kjøre dem i riktig rekkefølge.
-
-4. Velg de avledede testtilfellene, og velg deretter **Rediger** for å åpne de tilsvarende Excel-parameterfilene.
-5. Rediger disse Excel-parameterfilene på samme måte som du redigerte de overordnede filene. Du må med andre ord passe på at produkt-ID-en er satt slik at den genereres automatisk. Kontroller også at den lagrede variabelen kopieres til de relevante feltene.
-6. Oppdater verdien i **Firma**-feltet til **USSI** i **Generelt**-fanen for begge Excel-parameterfilene, slik at de avledede testtilfellene kjøres mot en annen juridisk enhet enn det overordnede testtilfellet. Hvis du vil kjøre testtilfellen mot en bestemt bruker (eller rollen som er knyttet til en bestemt bruker), kan du oppdatere verdien i **Testbruker**-feltet.
-7. Velg **Kjør**, og valider at produktet er opprettet i begge de juridiske enhetene USMF og USSI.
-
-### <a name="validate-notifications"></a>Validere varslinger
-
-Denne funksjonen kan brukes til å validere om en handling er utført. Når en produksjonsordre for eksempel opprettes, estimeres og deretter startes, viser appen meldingen "Produksjon – start" for å varsle deg om at produksjonsordren er startet.
-
-![Varslingen Produksjon – start](./media/use_rsa_tool_05.png)
-
-Du kan validere denne meldingen via RSAT ved å angi meldingsteksten i fanen **Meldingsvalidering** i Excel-parameterfilen for det aktuelle opptaket.
-
-![Fanen Meldingsvalidering](./media/use_rsa_tool_06.png)
-
-Etter at testtilfellet er kjørt, sammenlignes meldingen i Excel-parameterfilen med meldingen som vises. Hvis meldingene ikke samsvarer, mislykkes testtilfellet.
-
-> [!NOTE]
-> Du kan angi flere meldinger i fanen **Meldingsvalidering** i Excel-parameterfilen. Meldingene kan også være feilmeldinger eller advarsler i stedet for informasjonsmeldinger.
-
-### <a name="validate-values-by-using-operators"></a>Validere verdier ved hjelp av operatorer
-
-I tidligere versjoner av RSAT kunne du bare validere verdier hvis en kontrollverdi var lik en forventet verdi. Med den nye funksjonen kan du validere at en variabel ikke er lik, er mindre enn eller er større enn en bestemt verdi.
-
-- Hvis du vil bruke denne funksjonen, åpner du filen **Microsoft.Dynamics.RegressionSuite.WindowsApp.exe.config** under RSAT-installasjonsmappen (for eksempel **C:\\Programfiler (x86)\\Regression Suite Automation Tool**) og endrer verdien i følgende element fra **false** til **true**.
-
-    ```xml
-    <add key="AddOperatorFieldsToExcelValidation" value="false" />
-    ```
-
-    I Excel-parameterfilen vises et nytt **Operator**-felt.
-
-    > [!NOTE]
-    > Hvis du har brukt en eldre versjon av RSAT, må du generere nye Excel-parameterfiler.
-
-    ![Operator-feltet](./media/use_rsa_tool_07.png)
+RSAT gjør det mulig å ta med valideringstrinn i testsaken for å validere forventede verdier. Hvis du vil ha informasjon om denne funksjonen, kan du se artikkelen [Validere forventede verdier](../../dev-itpro/perf-test/rsat/rsat-validate-expected.md).
 
 Følgende eksempel viser hvordan du kan bruke denne funksjonen til å validere om lagerbeholdningen er større enn 0 (null).
 
@@ -115,7 +49,7 @@ Følgende eksempel viser hvordan du kan bruke denne funksjonen til å validere o
     5. Merk den valgte raden i listen.
     6. Valider at verdien i feltet **Totalt tilgjengelig** er **411,0000000000000000**.
 
-2. Lagre oppgaveopptaket i BPM-biblioteket i LCS, og synkroniser det med Azure DevOps.
+2. Lagre oppgaveopptaket, og knytt det til testsaken i Azure Devops.
 3. Legg til testtilfellet i testplanen, og last inn testtilfellet i RSAT.
 4. Åpne Excel-parameterfilen. I fanen **InventOnhandItem** vises delen **Valider InventOnhandItem** som omfatter et **Operator**-felt.
 
@@ -130,28 +64,32 @@ Følgende eksempel viser hvordan du kan bruke denne funksjonen til å validere o
 
 Hvis verdien i feltet **Totalt tilgjengelig** for den angitte varen i beholdningen er større enn 0 (null), blir testene bestått, uavhengig av den faktiske verdien for lagerbeholdningen.
 
-### <a name="generator-logs"></a>Generatorlogger
+### <a name="saved-variables-and-chaining-of-test-cases"></a>Lagrede variabler og kjeding av testsaker
 
-Denne funksjonen oppretter en mappe som inneholder loggene for testtilfellene som er kjørt.
+En av nøkkelfunksjonene i RSAT er kjeding av testtilfeller, det vil si muligheten for en test til å sende variabler til andre tester. Hvis du vil ha mer informasjon, se artikkelen [Kopiere variabler for å kjede testtilfeller](../../dev-itpro/perf-test/rsat/rsat-chain-test-cases.md).
 
-- Hvis du vil bruke denne funksjonen, åpner du filen **Microsoft.Dynamics.RegressionSuite.WindowsApp.exe.config** under RSAT-installasjonsmappen (for eksempel **C:\\Programfiler (x86)\\Regression Suite Automation Tool**) og endrer verdien i følgende element fra **false** til **true**.
+### <a name="derived-test-case"></a>Avledet testtilfelle
 
-    ```xml
-    <add key="LogGeneration" value="false" />
-    ```
+RSAT lar deg bruke samme oppgaveopptak med flere testtilfeller, slik at en oppgave kan kjøres med forskjellige datakonfigurasjoner. Se artikkelen [Avledede testtilfeller](../../dev-itpro/perf-test/rsat/rsat-derived-test-cases.md) for mer informasjon.
 
-Etter at testtilfellene er kjørt, kan du finne loggfilene under **C:\\Brukere\\\<Brukernavn\>\\AppData\\Roaming\\regressionTool\\generatorLogs**.
+### <a name="validate-notifications-and-messages"></a>Validere varslinger og meldinger
 
-![Mappen GeneratorLogs](./media/use_rsa_tool_10.png)
+Denne funksjonen kan brukes til å validere om en handling er utført. Når en produksjonsordre for eksempel opprettes, estimeres og deretter startes, viser appen meldingen "Produksjon – start" for å varsle deg om at produksjonsordren er startet.
+
+![Varslingen Produksjon – start](./media/use_rsa_tool_05.png)
+
+Du kan validere denne meldingen via RSAT ved å angi meldingsteksten i fanen **Meldingsvalidering** i Excel-parameterfilen for det aktuelle opptaket.
+
+![Fanen Meldingsvalidering](./media/use_rsa_tool_06.png)
+
+Etter at testtilfellet er kjørt, sammenlignes meldingen i Excel-parameterfilen med meldingen som vises. Hvis meldingene ikke samsvarer, mislykkes testtilfellet.
 
 > [!NOTE]
-> Hvis det fantes eksisterende testtilfeller før du endret verdien i .config-filen, blir det ikke generert logger for disse testtilfellene før du har generert nye testutførelsesfiler.
-> 
-> ![Kommandoen Generer bare testutførelsesfiler på Ny-menyen](./media/use_rsa_tool_11.png)
+> Du kan angi flere meldinger i fanen **Meldingsvalidering** i Excel-parameterfilen. Meldingene kan også være feilmeldinger eller advarsler i stedet for informasjonsmeldinger.
 
 ### <a name="snapshot"></a>Øyeblikksbilde
 
-Denne funksjonen tar skjermbilder av trinnene som ble utført under oppgaveopptaket.
+Denne funksjonen tar skjermbilder av trinnene som ble utført under oppgaveopptaket. Dette er nyttig for revisjon og feilsøking.
 
 - Hvis du vil bruke denne funksjonen, åpner du filen **Microsoft.Dynamics.RegressionSuite.WindowsApp.exe.config** under RSAT-installasjonsmappen (for eksempel **C:\\Programfiler (x86)\\Regression Suite Automation Tool**) og endrer verdien for følgende element fra **false** til **true**.
 
@@ -159,15 +97,9 @@ Denne funksjonen tar skjermbilder av trinnene som ble utført under oppgaveoppta
     <add key="VerboseSnapshotsEnabled" value="false" />
     ```
 
-Det opprettes en separat mappe under **C:\\Brukere\\\<Brukernavn\>\\AppData\\Roaming\\regressionTool\\playback** for hvert testtilfelle som kjøres.
+Når du kjører test tilfellet, vil RSAT generere øyeblikksbilder av trinnene i avspillingsmappen for testtilfellene i det gjeldende katalogen. Hvis du bruker en eldre versjon av RSAT, lagres bildene på **C:\\Brukere\\\<Brukernavn\>\\AppData\\Roaming\\regressionTool\\playback**, og en separat mappe opprettes for hvert testtilfelle som kjøres.
 
-![Øyeblikksbildemappe for et testtilfelle](./media/use_rsa_tool_12.png)
-
-I hver av disse mappene kan du finne øyeblikksbilder av trinnene som ble utført mens testtilfellene ble kjørt.
-
-![Øyeblikksbildefiler](./media/use_rsa_tool_13.png)
-
-## <a name="assignment"></a>Oppgave
+## <a name="assignment"></a>Tildeling
 
 ### <a name="scenario"></a>Scenario
 
@@ -183,7 +115,7 @@ Illustrasjonen nedenfor viser flyten for dette scenariet.
 
 ![Flyt for demonstrasjonsscenariet](./media/use_rsa_tool_14.png)
 
-Illustrasjonen nedenfor viser forretningsprosessene for dette scenariet i RSAT.
+Følgende illustrasjon viser hierarkiet for forretningsprosesser for dette scenarioet i LCS Forretningsprosessmodelerer.
 
 ![Forretningsprosesser for demonstrasjonsscenariet](./media/use_rsa_tool_15.png)
 
@@ -377,7 +309,7 @@ Du kan bruke ``listtestsuitenames``-kommandoen til å hente alle tilgjengelige t
 
 
 #### <a name="help"></a>help
-Identisk med [?](####?)- kommandoen
+Identisk med [?](#section)- kommandoen
 
 
 #### <a name="list"></a>listen
@@ -512,6 +444,8 @@ Viser to måter å aktivere dette programmet på: én som bruker en standard inn
 
 ### <a name="windows-powershell-examples"></a>Windows PowerShell-eksempler
 
+[!IMPORTANT] Eksempelskriptene nedenfor leveres som de er for illustrasjonsformål og støttes ikke av Microsoft.
+
 #### <a name="run-a-test-case-in-a-loop"></a>Kjøre et testtilfelle i en løkke
 
 Du har et testskript som oppretter en ny kunde. Du kan kjøre dette testtilfellet i en løkke via skripting ved randomisere følgende data før hver gjentakelse kjøres:
@@ -551,7 +485,7 @@ function RunTestCase
     $cmd = $cmd + $filename
     cmd /c $cmd
 }
-$excelFilename = "full path to excel file parameter file"
+$excelFilename = "full path to Excel parameter file"
 l$sheetName = "DirPartyQuickCreateForm"
 for ($i = $start; $i -lt $start + $nr; $i++ )
 {

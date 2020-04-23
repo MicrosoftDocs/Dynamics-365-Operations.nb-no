@@ -2,7 +2,7 @@
 title: Import leverandørkataloger
 description: Dette emnet beskriver prosessen for å importere leverandørkatalogdata.
 author: mkirknel
-manager: AnnBe
+manager: tfehr
 ms.date: 03/20/2018
 ms.topic: article
 ms.prod: ''
@@ -10,7 +10,7 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: VendProspectiveVendorRegistrationRequests
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 ms.custom: ''
 ms.search.region: Global
@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: mkirknel
 ms.search.validFrom: 2018-04-20
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 9f85b1d1f0b1c2378dd3f278640d984c31923c35
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: 35b8e2a87708c88b12c5c7605a7977712a35a0f4
+ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2017880"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "3207384"
 ---
 # <a name="import-vendor-catalogs"></a>Import leverandørkataloger
 [!include[banner](../includes/banner.md)]
@@ -35,17 +35,16 @@ I Dynamics 365 Supply Chain Management kan innkjøpere opprette og vedlikeholde 
 Du kan laste opp katalogdataene som sendes av en leverandør, fra Microsoft Dynamics 365-klienten.
 
 Produktdataene som en leverandøre sender til deg, i form av en PriKat-fil, må være i XML-filformat. PriKat-filen bør inneholde detaljene for produktene som leverandøren leverer til firmaet.
-
+''''
 ## <a name="import-vendor-catalog-data"></a>Import leverandørkatalogdata
-
-Du må utføre følgende oppgaver for å importere leverandørkatalogdata:
+'' Du må utføre følgende oppgaver for å importere leverandørkatalogdata:
 
 1.  Definer et prosjekt i arbeidsområdet Databehandling der du har definert regler for tilordning av data. Velg **Databehandling**, og velg deretter **Definer roller for dataprosjekter**. 
-
+    ''
 2.  Definer et innkjøpskategorihierarki, og tilordne leverandører til innkjøpskategoriene. Hvis du bruker varekoder, kan du legge til varekodene i innkjøpskategoriene. Hvis du vil ha informasjon om hvordan du definerer et innkjøpskategorihierarki, se [Definer et innkjøpskategorihierarki](../procurement/tasks/set-up-procurement-category-hierarchy.md).
-
+    ''
 3.  Konfigurer leverandøren for katalogimport. Velg en leverandør, og velg deretter **Innkjøp** > **Oppsett** > **Konfigurer leverandør for katalogimport**.
-
+''''
 4.  Konfigurer arbeidsflyt for katalogimport. Opprett en mal for PriKat-filen, og del den med leverandøren.
 
 5.  Velg **Innkjøp og leverandører** \> **Felles** \> **Kataloger** \> **Leverandørkataloger** for å opprette en leverandørkatalog. PriKat-filene du mottar fra leverandøren, er gruppert i denne katalogen. 

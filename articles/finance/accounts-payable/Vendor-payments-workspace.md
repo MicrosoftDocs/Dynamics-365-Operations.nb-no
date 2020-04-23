@@ -3,7 +3,7 @@ title: Arbeidsområde for leverandørbetalinger
 description: Dette emnet gir informasjon om det mobile arbeidsområdet for leverandørbetalinger. Arbeidsområdet for leverandørbetalinger viser informasjon som er knyttet til behandling av leverandørbetalinger.
 author: abruer
 manager: AnnBe
-ms.date: 06/25/2019
+ms.date: 04/03/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 89ba0d68bd52413328dd583e87b09b01fd523d6f
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 895725eeac46b5c20a2fb8dd932595a25fe372ce
+ms.sourcegitcommit: 724f5b400a4e7c385da9d8b22db416ebc3623b93
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2179296"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "3225019"
 ---
 # <a name="vendor-payments-workspace"></a>Arbeidsområde for leverandørbetalinger
 
@@ -36,7 +36,7 @@ Følgende oppsett må fullføres for at data skal kunne vises i Power BI-visualo
 1. Gå til **Systemadministrasjon > Oppsett > Systemparametere** for å angi **Systemvaluta** og **Valutakurs for system**.
 2. Gå til **Økonomimodul > Oppsett > Finans** for å angi **Regnskapsvaluta** og **Type valutakurs**. 
 2. Definer valutakurser mellom transaksjonsvalutaer og regnskapsvaluta og mellom regnskapsvaluta og systemvaluta. Du kan gjøre dette ved å gå til **Økonomimodul > Valutaer > Valutakurser**.
-3. Gå til **Systemadministrasjon > Oppsett > Enhetslager** for å oppdatere den aggregerte målingen **VendPaymentBIMeasure**. 
+3. Gå til **Systemadministrasjon > Oppsett > Enhetslager** for å oppdatere den aggregerte målingen **VendPaymentBIMeasureV2**. 
 
 ## <a name="my-work-view"></a>Mitt arbeid-visning
 
