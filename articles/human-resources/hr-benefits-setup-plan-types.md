@@ -3,7 +3,7 @@ title: Opprette plantyper
 description: En plantype i Microsoft Dynamics 365 Human Resources er en gruppering på høyt nivå av bestemte typer fordeler. Hver plantype har en plantypekode som bestemmer regler for plantypen.
 author: andreabichsel
 manager: AnnBe
-ms.date: 02/03/2020
+ms.date: 04/06/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,16 +18,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 8d9bb490326c6dbfafa0f186cd05185ac01bad30
-ms.sourcegitcommit: f38302b9430f2ab3efe91d0a7beff946bc610e8f
+ms.openlocfilehash: 06a36f9f3fef54e7e06d616c9179374db4ce7115
+ms.sourcegitcommit: a9461650d11d6845e1942865ebf7e35f75f61ad3
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "3092377"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "3229700"
 ---
 # <a name="create-plan-types"></a>Opprette plantyper
-
-[!include [banner](includes/preview-feature.md)]
 
 En plantype i Microsoft Dynamics 365 Human Resources er en gruppering på høyt nivå av bestemte typer fordeler. Hver plantype har en plantypekode som bestemmer regler for plantypen. Plantypen Enkelt liv ville for eksempel ha plantypekoden Liv fordi den er en type livsforsikringsplan og må følge reglene som er angitt for livsplantypekoden. En annen plantype kan være Ekstra liv, også med plantypekoden Liv.
 
@@ -45,23 +43,23 @@ En plantype kan definere dekningsalternativer. Dekningsalternativene er definert
 
    | Felt | Beskrivelse |
    | --- | --- |
-   | Plantype | Et unikt navn som identifiserer plantypen. |
-   | Beskrivelse | En beskrivelse av plantypen. |
-   | Plantypekode | Velg en plantypekode fra rullegardinlisten. Listen over plantypekoder viser alle plantypene som støttes i gjeldende versjon. |
-   | Samtidig registrering | Angir om en ansatt kan registrere seg i flere fordelsplaner av samme plantype eller bare én fordelsplan per plantype. |
-   | Kontakttype | Spesifiserer rollen til den personlige kontakten. Verdiene er tom, Avhengig og Mottaker. Du kan la Kontakttype stå tomt hvis plantypen ikke krever en avhengig eller mottaker basert på dekningsalternativet. |
+   | **Plantype** | Et unikt navn som identifiserer plantypen. |
+   | **Beskrivelse** | En beskrivelse av plantypen. |
+   | **Kode for plantype** | Velg en plantypekode fra rullegardinlisten. Listen over plantypekoder viser alle plantypene som støttes i gjeldende versjon. |
+   | **Samtidig registrering** | Angir om en ansatt kan registrere seg i flere fordelsplaner av samme plantype eller bare én fordelsplan per plantype. |
+   | **Kontakttype** | Spesifiserer rollen til den personlige kontakten. Verdiene er tom, Avhengig og Mottaker. Du kan la **Kontakttype** stå tomt hvis plantypen ikke krever en avhengig eller mottaker basert på dekningsalternativet. |
 
 4. Hvis du vil konfigurere alternativer for livshendelser, velger du **Handlinger** og deretter **Alternativer for livshendelser**. Angi verdier for de følgende feltene:
 
    | Felt | Beskrivelse |
    | --- | --- |
-   | Plantype | Plantypen som det skal konfigureres alternativer for livshendelser for. |
-   | ID for livshendelsestype | ID-en til livshendelsestypen. |
-   | Tillat avbrudd | Angir om en ansatt kan annullere en fordelsplan i løpet av livshendelsen. |
-   |Endre dekningsalternativ | Angir om en ansatt kan endre dekningsalternativer i løpet av livshendelsen. |
-   | Bytt til en ny plan | Angir om en ansatt kan endre planer i løpet av livshendelsen. |
-   | Avbryt plan automatisk |Angir om planen skal avbrytes automatisk i løpet av livshendelsen. |
-   | Åpne rettighetskontroll på nytt automatisk | Angir om rettighetskontrollen for fordelsregistrering skal åpnes på nytt automatisk under levetidshendelsen. |
-   | Rapporteringsvindu | Angir rapporteringsvinduet (i dager) for levetidshendelsen. **Obs**! Hvis du ikke angir et beløp, antar systemet at rapporteringsvinduet er null, og livshendelsen behandles ikke. |
+   | **Plantype** | Plantypen som det skal konfigureres alternativer for livshendelser for. |
+   | **ID for levetidshendelsestype** | ID-en til livshendelsestypen. |
+   | **Tillat avbrudd** | Angir om en ansatt kan annullere en fordelsplan i løpet av livshendelsen. |
+   | **Endre dekningsalternativ** | Angir om en ansatt kan endre dekningsalternativer i løpet av livshendelsen. |
+   | **Bytt til en ny plan** | Angir om en ansatt kan endre planer i løpet av livshendelsen. |
+   | **Avbryt plan automatisk** | Angir om planen skal avbrytes automatisk i løpet av livshendelsen. |
+   | **Åpne rettighetskontroll på nytt automatisk** | Angir om rettighetskontrollen for fordelsregistrering skal åpnes på nytt automatisk under levetidshendelsen. |
+   | **Rapporteringsvindu** | Angir rapporteringsvinduet (i dager) for levetidshendelsen. **Obs**! Hvis du ikke angir et beløp, antar systemet at rapporteringsvinduet er null, og livshendelsen behandles ikke. |
 
 5. Velg **Lagre**. 

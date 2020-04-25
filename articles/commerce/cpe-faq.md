@@ -3,7 +3,7 @@ title: Vanlige spørsmål om miljø for forhåndsvisning av Dynamics 365 Commerc
 description: Dette emnet gir svar på vanlige spørsmål om Microsoft Dynamics 365 Commerce-forhåndsvisningsmiljøet.
 author: v-chgri
 manager: annbe
-ms.date: 12/10/2019
+ms.date: 04/10/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: v-chgri
 ms.search.validFrom: 2019-12-10
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 061a160380e500ea52afbc35f0a95fe84d971bcf
-ms.sourcegitcommit: 4ed1d8ad8a0206a4172dbb41cc43f7d95073059c
+ms.openlocfilehash: 5321d7937a9de3ba39f7a88bf0e9c26f4e62d7bc
+ms.sourcegitcommit: 4254acb3cf8c6299fc2f3818ea6c499f058320d9
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "3024758"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "3254730"
 ---
 # <a name="dynamics-365-commerce-preview-environment-faq"></a>Vanlige spørsmål om miljø for forhåndsvisning av Dynamics 365 Commerce
 
@@ -77,8 +77,6 @@ Vi gir en kvote på ett miljø for Commerce-forhåndsvisning for hver forespørs
 ## <a name="dynamics-365-commerce-preview-environment-contact-information"></a>Kontaktinformasjon for Dynamics 365 Commerce-forhåndsvisningsmiljø
 
 Hvis du vil kontakte Microsoft med spørsmål eller forespørsler som er relatert til forhåndsvisningsmiljøet i Commerce, kan du gå til [Microsoft Dynamics 365 Commerce Yammer-gruppen for forhåndsvisning](https://aka.ms/Dynamics365CommercePreviewYammer) for å få hjelp.
-
-Hvis du får problemer når du prøver å få tilgang til Yammer-gruppen, kan du kontakte Microsoft via e-post på <Dynamics365Commerce@microsoft.com>. Denne e-postadressen overvåkes ikke aktivt. Forvent derfor en forsinkelse i svaret.
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 

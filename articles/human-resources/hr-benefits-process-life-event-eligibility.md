@@ -3,7 +3,7 @@ title: Behandle rettighet for levetidshendelser
 description: Denne artikkelen viser deg hvordan du kjører prosessen for rettigheter som gjelder levetidshendelser.
 author: andreabichsel
 manager: AnnBe
-ms.date: 02/03/2020
+ms.date: 04/06/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,16 +18,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 899c49fd2946fbadf4264e9178a57fb28598c0de
-ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
+ms.openlocfilehash: de4c5b951f9d4b07f457ce392c310fb96ba34947
+ms.sourcegitcommit: a9461650d11d6845e1942865ebf7e35f75f61ad3
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3010030"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "3229976"
 ---
 # <a name="process-life-event-eligibility"></a>Behandle rettighet for levetidshendelser
-
-[!include [banner](includes/preview-feature.md)]
 
 Denne artikkelen viser deg hvordan du kjører prosessen for rettigheter som gjelder levetidshendelser.
 
@@ -37,7 +35,7 @@ Denne artikkelen viser deg hvordan du kjører prosessen for rettigheter som gjel
 
    | Felt | Beskrivelse |
    | --- | --- |
-   | Registreringsperiode | Registreringsperioden som det skal behandles levetidshendelsesrettigheter for. |
+   | **Registreringsperiode** | Registreringsperioden som det skal behandles levetidshendelsesrettigheter for. |
 
 3. Hvis du vil kjøre prosessen i bakgrunnen, velger du **Kjør i bakgrunnen** og utfører følgende oppgaver:
 

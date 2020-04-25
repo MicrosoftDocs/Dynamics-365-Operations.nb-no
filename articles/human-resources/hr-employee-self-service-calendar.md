@@ -3,7 +3,7 @@ title: Opprette en teamkalender
 description: Du kan vise og opprette teamkalendere i Dynamics 365 Human Resources.
 author: andreabichsel
 manager: AnnBe
-ms.date: 02/03/2020
+ms.date: 04/03/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,26 +18,32 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 22350e0a9da593d52278090dde298923d490cb8c
-ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
+ms.openlocfilehash: 71637a659b26ea6912da993f1e899e33f7082512
+ms.sourcegitcommit: 9940ca772807d3c4e1ff3bf47f45b7251c4469ac
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3010063"
+ms.lasthandoff: 04/04/2020
+ms.locfileid: "3226213"
 ---
 # <a name="view-team-and-company-calendars"></a>Vise team- og firmakalendere
 
 [!include [banner](includes/preview-feature.md)]
 
-Du kan vise team- og firmakalendere i Dynamics 365 Human Resources.
+Du kan vise team- og firmakalendere i Dynamics 365 Human Resources. Teamkalendere viser bare direkte underordnede, som definert i linjehierarkiet.
 
-## <a name="view-your-team-calendar"></a>Vise teamkalenderen
-
-Ledere kan vise teamkalendere. Teamkalendere viser bare direkte underordnede, som definert i linjehierarkiet.
+## <a name="view-your-team-calendar-as-an-employee"></a>Vise teamkalenderen som en ansatt
 
 1. I arbeidsområdet **Ansattselvbetjening** velger du **Mitt team**.
 
 2. Velg **Permisjon og fravær**, og velg deretter **Vis teamkalender**.
+
+## <a name="view-your-team-calendar-as-a-manager"></a>Vise teamkalenderen som en leder
+
+1. I arbeidsområdet **Ansattselvbetjening** velger du **Mitt team**.
+
+2. Velg **Permisjon og fravær**, og velg deretter **Vis teamkalender**.
+
+Ledere kan også få tilgang til teamkalenderen fra **Ventende fritidsforespørsler for teamet mitt**, **Godkjent avspasering** og **Avspaseringsforespørsler**. 
 
 ## <a name="view-a-company-calendar"></a>Vise en firmakalender
 
@@ -47,5 +53,7 @@ Personer som er i personalroller, kan vise firmakalendere. Firmakalendere viser 
 
 2. Velg **Permisjons- og fraværskalender**.
 
-Hvis du vil ha informasjon om kalenderinnstillinger, kan du se [Konfigurere kalenderparametere](hr-leave-and-absence-parameters.md?configure-calendar-parameters)
+Human Resources-roller kan også få tilgang til firmakalenderen fra**Permisjons- og fraværsforespørsler**, **Godkjent avspasering** og **Avspaseringsforespørsler**. 
+
+Hvis du vil ha informasjon om kalenderinnstillinger, kan du se [Konfigurere kalenderparametere](hr-leave-and-absence-parameters.md?configure-calendar-parameters).
 

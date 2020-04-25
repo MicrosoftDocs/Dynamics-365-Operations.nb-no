@@ -3,7 +3,7 @@ title: Konfigurere rettighetsregler og -alternativer
 description: Angi rettighetsregler og alternativer i Fordelsbehandling i Microsoft Dynamics 365 Human Resources.
 author: andreabichsel
 manager: AnnBe
-ms.date: 02/03/2020
+ms.date: 04/06/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,16 +18,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 448156a2428e99d8b95de547cb6f1621d49b1c7b
-ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
+ms.openlocfilehash: 07dd8a6ca7edb460769f761950dc0c143112f708
+ms.sourcegitcommit: a9461650d11d6845e1942865ebf7e35f75f61ad3
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3010133"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "3229907"
 ---
 # <a name="configure-eligibility-rules-and-options"></a>Konfigurere rettighetsregler og -alternativer
-
-[!include [banner](includes/preview-feature.md)]
 
 Når du har konfigurert de nødvendige parameterne for Fordelsbehandling i Microsoft Dynamics 365 Human Resources, kan du opprette rettighetsregler, pakker, perioder og programmer som du vil knytte til dine fordelsplaner.
 
@@ -57,6 +55,7 @@ Under åpen registrering kan ansatte velge fordelsplaner. Hvis de ikke er berett
    | **Ansettelseskategori** | Den ansattes ansettelseskategori hvis **Bruk ansettelseskategori** er satt til **Ja**. |
    | **Bruk ny ansettelsesregel** | Angir om ansettelsesperioden for en ny ansatt skal brukes som en del av regelen for fordelsrettighet. |
    | **Registreringsperiode** | Tidsperioden når ny ansettelsesregistrering tillates. Hvis du også angir dette i parametere, overstyrer parameterinnstillingen dette. |
+   | **Bruk tidligere ansettelsesstatus** | Angir om en ansatts tidligere ansettelsesstatus skal brukes som en del av regelen for fordelsrettigheten. Du kan for eksempel angi en rettighetsregel som frafaller en dekningsventeperiode for alle ansatte som har gått fra statusen **Lagt bort** til statusen **Ansatt** innen 90 dager etter forrige ansettelse. |
 
 4. Under **Tilleggskriterier** velger du følgende alternativer og legger til informasjon etter behov:
 

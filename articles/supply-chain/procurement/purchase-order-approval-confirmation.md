@@ -1,30 +1,30 @@
 ---
 title: Godkjenne og bekrefte bestillinger
 description: Dette emnet beskriver statusene som en bestilling går gjennom når den er opprettet, og effekten av å aktivere endringsadministrasjon på bestillinger.
-author: FrankDahl
-manager: AnnBe
-ms.date: 06/20/2017
+author: mkirknel
+manager: tfehr
+ms.date: 04/02/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: PurchTable
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations, Retail
 ms.custom: 93143
 ms.assetid: cd12a944-c52c-4579-a301-7abe1d237c72
 ms.search.region: Global
 ms.search.industry: ''
-ms.author: fdahl
+ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0d0fc75f233ee2eab42317f835834ff24b6ada2f
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 6b331b7e7725b3dd284deb02e59fcf2d699822c4
+ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2813437"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "3208000"
 ---
 # <a name="approve-and-confirm-purchase-orders"></a>Godkjenne og bekrefte bestillinger
 
@@ -69,9 +69,10 @@ I noen tilfeller må du kanskje endre en bestilling når den har får godkjennin
 
 Hvis bestillingen ble opprettet ved hjelp av en prosess for endringsadministrasjon, kan du gjøre endringer ved å tilbakekalle ordren, eller hvis ordren allerede er godkjent, ved hjelp av handlingen **Be om endring**. I så fall endres godkjenningsstatusen tilbake til **Utkast**, og deretter kan du endre ordren. Når du er ferdig med å gjøre endringer, må du kanskje sende bestillingen til ny godkjenning. Du kan konfigurere hvilke typer endringer som krever ny godkjenning ved hjelp en policyregel for **Regel for ny godkjenning for bestillinger** på siden **innkjøpspolicyer**.
 
-Hvis en del av det bestilte antallet for en bestillingslinje er levert, kan du ikke endre det bestilte antallet. Du kan imidlertid endre antallet **Gjenstående levering** på linjen. Du kan deretter bruke handlingen **Fullfør** til å avbryte linjer og forhindre videre behandling. 
+Hvis en del av det bestilte antallet for en bestillingslinje er levert, kan du ikke endre det bestilte antallet når bestillingen har statusen **Utkast**. Du kan imidlertid endre antallet for **Gjenstående levering** på linjen for bestillingen som er i **Utkast**-status.
 
-Når en ordre er bekreftet, kan du ikke lenger slette den. Du kan imidlertid avbryte det totale antallet eller eventuelle restantall i en ordre, forutsatt at antallet ikke er mottatt eller fakturert.
+Når en ordre er bekreftet, kan du ikke lenger slette den. Du kan imidlertid avbryte det totale antallet eller eventuelle restantall i en ordre, forutsatt at antallet ikke er mottatt eller fakturert. Du kan deretter bruke handlingen **Fullfør** til å forhindre videre behandling. 
+
 
 ## <a name="canceling-purchase-orders"></a>Annullere bestillinger
 

@@ -1,9 +1,9 @@
 ---
-title: Skjermoppsett for salgssted
+title: Visuelle konfigurasjoner av POS-brukergrensesnittet
 description: Dette emnet inneholder informasjon om skjermoppsett for Dynamics 365 Commerce POS-opplevelser.
-author: jblucher
-manager: AnnBe
-ms.date: 05/20/2019
+author: boycezhu
+manager: annbe
+ms.date: 04/14/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -16,23 +16,22 @@ ms.custom: 90573
 ms.assetid: a6868f93-02ed-4928-9f6a-3b7383e7e399
 ms.search.region: global
 ms.search.industry: Retail
-ms.author: jeffbl
+ms.author: boycezhu
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 5bf7b3d20ff0b42eb9eaedf584b2a508c1307707
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 3a84318f7156ef42f7e00f1e89228f541b1634ce
+ms.sourcegitcommit: ac966ea3a6c557fb5f9634b187b0e788d3e82d4d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3023597"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "3261473"
 ---
-# <a name="screen-layouts-for-the-point-of-sale-pos"></a>Skjermoppsett for salgssted
+# <a name="pos-user-interface-visual-configurations"></a>Visuelle konfigurasjoner av POS-brukergrensesnittet
 
 [!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
-Dette emnet inneholder informasjon om skjermoppsett for Dynamics 365 Commerce POS-opplevelser.
-
-Brukergrensesnittet for POS kan konfigureres ved hjelp av en kombinasjon av visuelle profiler og skjermoppsett, tilordnet til butikker, kasser og/eller brukere.
+Brukergrensesnittet for Microsoft Dynamics 365 Commerce salgssted (POS) kan konfigureres ved hjelp av en kombinasjon av visuelle profiler og skjermoppsett, tilordnet til butikker, kasser og/eller brukere. Dette emnet inneholder informasjon om disse konfigurasjonsalternativene.
 
 Illustrasjonen nedenfor viser forholdet mellom de forskjellige enhetene som utgjør de konfigurerbare delene av brukergrensesnittet for salgsstedet.
 
@@ -40,7 +39,7 @@ Illustrasjonen nedenfor viser forholdet mellom de forskjellige enhetene som utgj
 
 ## <a name="visual-profile"></a>Visuell profil
 
-Visuelle profiler tilordnes til kasser, og de brukes til å angi de visuelle elementene som er kassespesifikke og delt på tvers av brukere. Alle brukere som logger på kassen ser samme tema, farger og bilder.
+Visuelle profiler tilordnes til kasser, og de brukes til å angi de visuelle elementene som er kassespesifikke og delt på tvers av brukere. Alle brukere som logger på kassen ser samme tema, oppsett, farger og bilder.
 
 ![Velkomstskjerm for salgsstedet med lyst tema](../commerce/media/POS-Welcome-Screen-with-Light-theme.png)
 
@@ -48,16 +47,24 @@ Visuelle profiler tilordnes til kasser, og de brukes til å angi de visuelle ele
 
 - **Profilnummer** – Profilnummeret er den unike ID-en for den visuelle profilen.
 - **Beskrivelse** – Du kan angi et beskrivende navn som vil hjelpe deg med å finne den riktige profilen for din situasjon.
-- **Tema** – Du kan velge mellom lyse eller mørke programtemaer. Temaet påvirker skrift- og bakgrunnsfargene i hele programmet.
+- **Tema** – Du kan velge mellom **lyse** eller **mørke** programtemaer. Temaet påvirker skrift- og bakgrunnsfargene i hele programmet.
 - **Uthevingsfarge** – Uthevingsfargen brukes på hele salgsstedet for å skille eller utheve spesifikke visuelle elementer, for eksempel fliser, kommandoknapper og hyperkoblinger. Disse elementene er vanligvis handlingskrevende.
-- **Topptekstfarge** – Du kan konfigurere fargen på sideoverskriften for å oppfylle varemerkebehovet til forhandleren. Denne funksjonen er ikke bare tilgjengelig i Retail versjon 1611.
-- **Vis dato/klokkeslett** – Når dette er aktivert, vil gjeldende dato og klokkeslett vises i POS-hodet.
-- **Påloggingsbakgrunner** – Du kan angi et bakgrunnsbilde for påloggingsskjermbildet. Størrelsen på bakgrunnsbilder bør holdes så liten som mulig, siden lagring og innlasting av store filer kan ha innvirkning på programmets virkemåte og ytelse.
-- **Programbakgrunn** – Du kan angi et bakgrunnsbilde som brukes i stedet for heldekkende temafarge i programmet. For påloggingsbakgrunner bør filstørrelsen holdes så liten som mulig.
+- **Topptekstfarge** – Du kan konfigurere fargen på sideoverskriften for å oppfylle varemerkebehovet til forhandleren.
+- **Skriftutvalg** – Du kan velge mellom **Standard** og **Stor** skrift. Skriftutvalget har innvirkning på skriftstørrelsen i hele programmet. Standardvalget er **Standard**.
+- **Vis alltid strekkodeetiketter i programmet** – Når dette alternativet er aktivert, er etiketteksten alltid synlig under strekkodeknappene i programmet.
+- **Oppsett** – Du kan velge mellom det **Midtstilt** og **Høyre**. Oppsettet har innvirkning på justeringen av påloggingsboksen på påloggingsskjermen. Standardvalget er **Midtstilt**.
+- **Vis dato/klokkeslett** – Når dette alternativet er aktivert, vises gjeldende dato og klokkeslett i POS-hodet og på påloggingsskjermen.
+- **Tastatur** – Du kan velge mellom **Standardtastatur for OS** og **Vis talltastatur** for å angi standardtastaturet som skal brukes for inndata på påloggingsskjermen. Talltastaturet er et virtuelt tastatur som hovedsakelig brukes til berøringsbaserte enheter. Standardvalget er **Standardtastatur for OS**.
+- **Logobilde** – Du kan angi et logobilde som vises på påloggingsskjermen. Vi anbefaler at du bruker et bilde som har en gjennomsiktig bakgrunn. Filstørrelsen bør holdes så liten som mulig, siden programmets virkemåte og ytelse kan påvirkes når store filer lagres og lastes inn.
+- **Påloggingsbakgrunn** – Du kan angi et bakgrunnsbilde for påloggingsskjermbildet. Filstørrelsen på bakgrunnsbilder bør holdes så liten som mulig.
+- **Bakgrunn** – Du kan angi et bakgrunnsbilde som brukes i stedet for heldekkende temafarge i programmet. I likhet med bakgrunnsbilder for påloggingsskjermmen bør filstørrelsen holdes så liten som mulig.
+
+> [!NOTE]
+> **Høyre** oppsett og visning av dato/klokkeslett gjelder ikke for påloggingsskjermen i kompakt visning.
 
 ## <a name="screen-layouts"></a>Skjermoppsett
 
-Oppsett for skjermkonfigurasjoner bestemmer handlinger, innhold og plassering av brukergrensesnittkontroller i velkomstskjermen og **Transaksjon**-skjermbildet for salgsstedet.
+Oppsett for skjermkonfigurasjoner bestemmer handlinger, innhold og plassering av brukergrensesnittkontroller i **velkomstskjermen** og **Transaksjon**-skjermbildet for salgsstedet.
 
 ![Visning for skjermoppsett for salgssted](../commerce/media/POS-Screen-Layout-View.png)
 

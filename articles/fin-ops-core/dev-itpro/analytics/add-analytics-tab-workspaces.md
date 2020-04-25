@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: tjvass
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: de85bf52d8e3415549db64501b2435ebd7377fef
-ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
+ms.openlocfilehash: 442557a01b25e13b76074c865dfe5468bbc9fde0
+ms.sourcegitcommit: dbff1c6bb371a443a0cd2a310f5a48d5c21b08ca
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "3025860"
+ms.lasthandoff: 04/13/2020
+ms.locfileid: "3259638"
 ---
 # <a name="add-analytics-to-workspaces-by-using-power-bi-embedded"></a>Legge til analyse i arbeidsområder ved hjelp av Power BI Embedded
 
@@ -84,7 +84,7 @@ Følg denne fremgangsmåten for å utvide skjemadefinisjonen for den **Reservasj
 8. Høyreklikk, og velg deretter **Ny kategoriside**.
 9. Endre navnet på kategorisiden til noe som gir mening, som **Analyse**.
 10. I skjemautformingen velger du **Analyse (kategoriside)**.
-11. Angi **Tekst**-egenskapen til **Analyse**.
+11. Sett egenskapen **Overskrift** til **Analyse**, og sett egenskapen **Automatisk erklæring** til **Ja**.
 12. Høyreklikk kontrollen, og velg deretter **Ny** \> **Gruppe** for å legge til en ny skjemagruppekontroll.
 13. Endre navnet på skjemagruppen til noe som gir mening, som **powerBIReportGroup**.
 14. I skjemautformingen velger du **PanoramaBody (kategori)**, og dra deretter kontrollen til **Arbeidsområde**-kategorien.

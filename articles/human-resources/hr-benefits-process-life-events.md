@@ -3,7 +3,7 @@ title: Behandle levetidshendelser
 description: I løpet av den ansattes livssyklus i Microsoft Dynamics 365 Human Resources kan hver ansatt støte på forskjellige endringer av levetidshendelser.
 author: andreabichsel
 manager: AnnBe
-ms.date: 02/03/2020
+ms.date: 04/06/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,16 +18,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 91812432ead4b0afccfba30f8023f014e216236a
-ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
+ms.openlocfilehash: ba8d21482a18c6baa93437fc65c165907bdb515d
+ms.sourcegitcommit: a9461650d11d6845e1942865ebf7e35f75f61ad3
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3010082"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "3229941"
 ---
 # <a name="process-life-events"></a>Behandle levetidshendelser
-
-[!include [banner](includes/preview-feature.md)]
 
 I løpet av den ansattes livssyklus i Microsoft Dynamics 365 Human Resources kan hver ansatt støte på forskjellige endringer av levetidshendelser. For eksempel giftermål, endring i ansettelse eller endring av avhengig/mottaker. Hvis du vil bruke levetidhendelser, må du aktivere levetidshendelser i skjemaet for fordelsparametere, definere livshendelsestyper og konfigurere livshendelsesalternativer for plantyper.
 
@@ -43,10 +41,10 @@ Hvis for eksempel i dag er 1. februar, og den 14. februar er arbeideren Jon Nils
 
    | Felt | Beskrivelse |
    | --- | --- |
-   | Registreringsperiode | Registreringsperioden som det skal behandles levetidshendelser for. |
-   | Juridisk enhet | Den juridiske enheten som det skal behandles levetidshendelser for. |
-   | Levetidshendelsesdato | Systemet behandler alle hendelser i løpet av registreringsperioden som inntreffer frem til denne datoen. |
-   | Arbeider | Arbeideren som det skal behandles levetidshendelser for. Hvis du lar dette feltet stå tomt, blir livshendelser behandlet for alle arbeidere. |
+   | **Registreringsperiode** | Registreringsperioden som det skal behandles levetidshendelser for. |
+   | **Juridisk enhet** | Den juridiske enheten som det skal behandles levetidshendelser for. |
+   | **Levetidshendelsesdato** | Systemet behandler alle hendelser i løpet av registreringsperioden som inntreffer frem til denne datoen. |
+   | **Arbeider** | Arbeideren som det skal behandles levetidshendelser for. Hvis du lar dette feltet stå tomt, blir livshendelser behandlet for alle arbeidere. |
 
 3. Hvis du vil kjøre prosessen i bakgrunnen, velger du **Kjør i bakgrunnen** og utfører følgende oppgaver:
 

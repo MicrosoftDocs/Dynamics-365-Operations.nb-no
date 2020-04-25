@@ -2,15 +2,15 @@
 title: Forsinkelser
 description: Dette emnet inneholder informasjon om forsinkede datoer i hovedplanlegging. En forsinket dato er en realistisk forfallsdato som en transaksjon mottar hvis den tidligste datoen for fullføring som hovedplanleggingen beregner er senere enn ønsket dato.
 author: roxanadiaconu
-manager: AnnBe
-ms.date: 03/15/2019
+manager: tfehr
+ms.date: 03/31/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ReqTransFuturesListPage
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 ms.custom: 19311
 ms.assetid: 5ffb1486-2e08-4cdc-bd34-b47ae795ef0f
@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c1a8c738fffda76f2a8492c20e2c67a154c68559
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 34252e5cd9ee5151b1cba47975fc0cc612521a17
+ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1522295"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "3203854"
 ---
 # <a name="delays"></a>Forsinkelser
 
@@ -44,6 +44,12 @@ På siden **Hovedplanleggingsparametere** kan du angi starttidspunktet for bereg
 
 > [!NOTE]
 > I tidligere versjoner ble beregnede forsinkelser kalt *terminmeldinger*, forsinkelsesdatoen ble kalt *termindatoen* og en forsinket transaksjon ble kalt *en transaksjon som var satt til fremtiden*.
+
+## <a name="limited-delays-in-production-setup-with-multiple-bom-levels"></a>Begrensede forsinkelser i produksjonsoppsettet med flere stykklistenivåer
+Når du arbeider med forsinkelser i et produksjonsoppsett som har flere stykklistenivåer, er det viktig å være oppmerksom på at bare varene som er direkte over varen (i stykklistestrukturen) som forårsaker forsinkelsen, blir oppdatert med en forsinkelse som del av hovedplanleggingen som kjøres. Andre varer i stykklistestrukturen vil ikke få forsinkelsen gjeldende før den første hovedplanleggingen kjøres, når den planlagte bestillingen for det øverste nivået er godkjent eller autorisert. 
+
+For å omgå denne kjente begrensningen kan produksjonsordrene øverst i stykklistestrukturen med forsinkelser godkjennes (eller autoriseres) før den neste hovedplanleggingen kjøres. Dermed beholdes forsinkelsen fra den forsinkede, godkjente planlagte produksjonsordren, og alle underliggende komponenter blir oppdatert i henhold til dette.
+Handlingsmeldinger kan også brukes til å identifisere planlagte bestillinger som kan flyttes til en senere dato på grunn av andre forsinkelser i stykklistestrukturen.
 
 ## <a name="desired-date"></a>Ønsket dato
 

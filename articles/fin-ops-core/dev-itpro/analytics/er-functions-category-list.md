@@ -3,7 +3,7 @@ title: Liste over ER-funksjoner i listekategorien
 description: Dette emnet inneholder informasjon om listefunksjonene som støttes i elektronisk rapportering (ER).
 author: NickSelin
 manager: kfend
-ms.date: 12/17/2019
+ms.date: 04/01/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9461d0afd75f421cf03ddefed5dac379f1369ec7
-ms.sourcegitcommit: 36857283d70664742c8c04f426b231c42daf4ceb
+ms.openlocfilehash: dcf1b755959c7ae25928e3f44e988f800027786a
+ms.sourcegitcommit: fb8ad8e2b142441a6530b364f3258bbcc0c724d2
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "2917770"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "3201049"
 ---
 # <a name="list-of-er-functions-in-the-list-category"></a>Liste over ER-funksjoner i listekategorien
 
@@ -46,6 +46,7 @@ Listefunksjoner for elektronisk rapportering (ER) kan brukes til å trekke ut in
 | [Index](er-functions-list-index.md)                       | Denne funksjonen returnerer en *Container (post)*-verdi som er valgt ved hjelp av den angitte numeriske indeksen i den angitte listen. Det oppstår et unntak hvis indeksen er utenfor området til postene i den angitte listen. |
 | [IsEmpty](er-functions-list-isempty.md)                   | Denne funksjonen returnerer en *boolsk* verdi av **SANN** hvis den angitte listen ikke inneholder noen poster. Hvis ikke returneres den *boolske* verdien **USANN**. |
 | [Liste](er-functions-list-list.md)                         | Denne funksjonen returnerer en *Postliste*-verdi som består av en ny liste som er opprettet fra de angitte argumentene.|
+| [ListJoin](er-functions-list-listjoin.md)                 | Denne funksjonen returnerer en *Postliste*-verdi som representerer en ny sammenkoblet liste som er opprettet fra de angitte argumentene.|
 | [ListOfFields](er-functions-list-listoffields.md)         | Denne funksjonen returnerer en *postliste*-verdi som opprettes basert på strukturen til det angitte argumentet for typen *Opplisting* eller *Container (post)*. |
 | [ListOfFirstItem](er-functions-list-listoffirstitem.md)   | Denne funksjonen returnerer en *Postliste*-verdi som består av bare den første posten i den angitte listen.|
 | [OrderBy](er-functions-list-orderby.md)                   | Denne funksjonen returnerer den angitte listen som en *postliste*-verdi etter at den er sortert i henhold til de angitte argumentene. Disse argumentene kan defineres som uttrykk. |

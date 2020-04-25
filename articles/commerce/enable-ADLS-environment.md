@@ -3,7 +3,7 @@ title: Aktivere ADLS i et Dynamics 365 Commerce-miljø
 description: Dette emnet forklarer hvordan du aktiverer og tester Azure Data Lake Storage (ADLS) for et Dynamics 365 Commerce-miljø, som er en forutsetning for å aktivere produktanbefalinger.
 author: bebeale
 manager: AnnBe
-ms.date: 03/19/2020
+ms.date: 04/13/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -19,12 +19,12 @@ ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 3c037f5603af5af84917084eefa1edd508891c0d
-ms.sourcegitcommit: de5af1912201dd70aa85fdcad0b184c42405802e
+ms.openlocfilehash: ba428765babb9ca7566da7a457368959b1c29083
+ms.sourcegitcommit: dbff1c6bb371a443a0cd2a310f5a48d5c21b08ca
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "3154442"
+ms.lasthandoff: 04/13/2020
+ms.locfileid: "3259754"
 ---
 # <a name="enable-adls-in-a-dynamics-365-commerce-environment"></a>Aktivere ADLS i et Dynamics 365 Commerce-miljø
 
@@ -48,7 +48,8 @@ Hvis du vil ha mer informasjon om ADLS, kan du se [Offentlig ADLS-dokumentasjon]
   
 ## <a name="configuration-steps"></a>Konfigurasjonstrinn
 
-Dette avsnittet dekker de nødvendige konfigurasjonstrinnene for aktivering av ADLS i et miljø.
+Denne delen dekker konfigurasjonstrinnene som er nødvendige for å aktivere ADLS i et miljø som er knyttet til produktanbefalinger.
+Hvis du vil ha en mer detaljert oversikt over trinnene som kreves for å aktivere ADLS, kan du se [Gjøre enhetslager tilgjengelig som Data Lake](../fin-ops-core/dev-itpro/data-entities/entity-store-data-lake.md).
 
 ### <a name="enable-adls-in-the-environment"></a>Aktivere ADLS i miljøet
 
@@ -91,6 +92,8 @@ Hvis de ikke er fullført allerede, følger du trinnene for å [aktivere produkt
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 
+[Gjøre enhetslager tilgjengelig som Data Lake](../fin-ops-core/dev-itpro/data-entities/entity-store-data-lake.md)
+
 [Oversikt over produktanbefalinger](product-recommendations.md)
 
 [Aktiver produktanbefalinger](enable-product-recommendations.md)
@@ -110,5 +113,3 @@ Hvis de ikke er fullført allerede, følger du trinnene for å [aktivere produkt
 [Opprette anbefalinger med demonstrasjonsdata](product-recommendations-demo-data.md)
 
 [Vanlige spørsmål om produktanbefalinger](faq-recommendations.md)
-
-

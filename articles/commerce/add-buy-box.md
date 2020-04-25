@@ -3,7 +3,7 @@ title: Kjøpsboksmodul
 description: Dette emnet dekker kjøpsboksmoduler og beskriver hvordan du legger dem til områdesider i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
-ms.date: 03/19/2020
+ms.date: 04/13/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 3417156cbf3cb20a5190e5e51b61b3423816895a
-ms.sourcegitcommit: de5af1912201dd70aa85fdcad0b184c42405802e
+ms.openlocfilehash: 35b7027e0f0b680dd82ebfcea754fef1617c0163
+ms.sourcegitcommit: ac966ea3a6c557fb5f9634b187b0e788d3e82d4d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "3154069"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "3261404"
 ---
 # <a name="buy-box-module"></a>Kjøpsboksmodul
 
@@ -46,7 +46,7 @@ På en produktdetaljside er en kjøpsboks delt inn i to områder: et medieområd
 En kjøpsboksmodul gjengir tittel, beskrivelse, pris og vurdering av et produkt. Den lar også kunder velge produktvarianter som har forskjellige produktattributter, for eksempel størrelse, stil og farge. Når en produktvariant velges, oppdateres andre egenskaper i kjøpsboksen (for eksempel produktbeskrivelsen og bildene) for å gjenspeile variantinformasjonen. 
 
 Det er angitt en antallsvelger, slik at kunder kan angi antallet varer som skal kjøpes. Det maksimale antallet som kan kjøpes, kan defineres i områdeinnstillingene.
- 
+
 Fra kjøpsboksen kan kunder også utføre handlinger som å legge til produkter i handlekurven, legge til produkter i ønskelisten og velge plukklokasjon. Disse handlingene kan utføres på et produkt eller en produktvariant. For å kunne legge til et produkt i en ønskeliste må kunden være pålogget.
 
 Temaer kan brukes til å fjerne eller endre rekkefølgen på produktegenskaper og handlingskontroller i en kjøpsboks. 
@@ -65,7 +65,8 @@ Temaer kan brukes til å fjerne eller endre rekkefølgen på produktegenskaper o
 Kjøpsboksmoduler har tre innstillinger som kan konfigureres under **Områdeinnstillinger \> Utvidelser**:
 
 - **Maksimalt antall** – Denne egenskapen brukes til å angi maksimalt antall for hver vare som kan legges til i handlekurven. En forhandler kan for eksempel bestemme at bare 10 av hvert produkt kan selges i en enkelt transaksjon.
-- **Lagerbeholdning** – Når verdien er satt til **Sann**, legges det til en vare i handlekurven bare etter kjøpsboksmodulen kontrollerer at den er på lager. Denne lagerkontrollen utføres både for scenarier der varen skal leveres, og for scenarier der den skal plukkes opp i butikken. Hvis verdien settes til **Usann**, utføres det ingen lagerkontroll før en vare legges til i handlekurven, og ordren plasseres.
+- **Lagerbeholdning** – Når verdien er satt til **Sann**, legges det til en vare i handlekurven bare etter kjøpsboksmodulen kontrollerer at den er på lager. Denne lagerkontrollen utføres for scenarier der varen skal leveres, og for scenarier der den skal plukkes opp i butikken. Hvis verdien settes til **Usann**, utføres det ingen lagerkontroll før en vare legges til i handlekurven, og ordren plasseres. Hvis du vil ha informasjon om hvordan du konfigurerer lagerinnstillinger i back office, kan du se [Beregne lagertilgjengelighet for detaljhandelskanaler](calculated-inventory-retail-channels.md).
+
 - **Lagerbuffer** – Denne egenskapen brukes til å angi et bufferantall for lageret. Lageret vedlikeholdes i sanntid, og når mange kunder bestiller, kan det være vanskelig å opprettholde et nøyaktig lagerantall. Når det utføres en lagerkontroll, og hvis lageret er mindre enn buffermengden, blir produktet behandlet som at det ikke finnes på lager. Derfor, når salget skjer raskt i flere kanaler og lageropptellingen ikke er fullstendig synkronisert, er det mindre fare for at en vare som ikke er på lager, blir solgt.
 
 ## <a name="commerce-scale-unit-interaction"></a>Samhandling med Commerce Scale Unit
@@ -99,6 +100,8 @@ Hvis du vil legge til en kjøpsboksmodul på en ny side og angi de nødvendige e
 
 [Handlekurvmodul](add-cart-module.md)
 
+[Handlekurvikonmodul](cart-icon-module.md)
+
 [Kassemodul](add-checkout-module.md)
 
 [Ordrebekreftelsesmodul](order-confirmation-module.md)
@@ -106,3 +109,5 @@ Hvis du vil legge til en kjøpsboksmodul på en ny side og angi de nødvendige e
 [Topptekstmodul](author-header-module.md)
 
 [Bunntekstmodul](author-footer-module.md)
+
+[Beregne lagertilgjengelighet for detaljhandelskanaler](calculated-inventory-retail-channels.md)

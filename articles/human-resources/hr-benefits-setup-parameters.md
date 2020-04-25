@@ -3,7 +3,7 @@ title: Angi parametere i Fordelsbehandling
 description: Konfigurer parametere for Fordelsadministrasjon i Microsoft Dynamics 365 Human Resources.
 author: andreabichsel
 manager: AnnBe
-ms.date: 02/03/2020
+ms.date: 04/06/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,16 +18,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: ab9b1fc78ce42479d9265b80337adf899cec3866
-ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
+ms.openlocfilehash: 9d6d463df08b9ae68047f09316f19e98740a8441
+ms.sourcegitcommit: a9461650d11d6845e1942865ebf7e35f75f61ad3
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3010079"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "3229769"
 ---
-# <a name="set-benefits-management-parameters"></a>Angi parametere i Fordelsbehandling
-
-[!include [banner](includes/preview-feature.md)]
+# <a name="set-benefits-management-parameters"></a>Angi parametere for fordelsbehandling
 
 Før du kan definere permisjonsplaner i Microsoft Dynamics 365 Human Resources, må du konfigurere parametere for Fordelsadministrasjon. Disse parameterne angir standardverdier, årsakskoder og andre alternativer.
 
@@ -47,7 +45,6 @@ Før du kan definere permisjonsplaner i Microsoft Dynamics 365 Human Resources, 
    | **Årsakskode for satsendring** | Årsakskoden som skal brukes ved avbryting og nyåpning av en fordelsplan for ansatte i løpet av oppdateringsprosessen for frekvensendring. Det viser hvilke poster som ble endret av oppdateringsprosessen for frekvensendring. |
    | **Ny ansettelse kvalifisert** | Angir om nyansatte skal være berettiget. |
    | **Periode for registrering av ny ansettelse** | Tidsperioden når ny ansettelsesregistrering tillates.</br></br>**Obs!** Denne innstillingen overstyrer registreringsperioden for ny ansettelse som du angir i regelen for planrettigheter. | 
-   | **Årlig lønnsøkning** | Angir om beløpet for **Årlig fordel lønn** skal beregnes automatisk i **Fordelsdetaljer for ansatt**. Dette er basert på **Fast kompensasjonssats**, **Gjennomsnittlig timer** og **Betalingsfrekvens**.</br></br>**Gjennomsnittlig timer** x **Fast betalingssats** x **Betalingsfrekvens** (antall betalingsperioder) = **Årlig fordel lønn** </br></br>Hvis noen av verdiene i feltene **Gjennomsnittlig timer**, **Fast kompensasjonssats** eller **Betalingsfrekvens** endres, beregner systemet automatisk beløpet for **Årlig fordel lønn** på nytt for den ansatte basert på de endrede verdiene. Systemet oppretter en **Gyldig dato**-post for å identifisere nøyaktig dato og klokkeslett for når endringen ble utført. Du kan manuelt redigere beløpet for **Årlig fordel lønn** hvis det er nødvendig. |
    | **Levetidshendelser aktivert** | Aktiverer livshendelser. |
    | **Skjul eldre fordelsskjemaer** | Lar deg skjule eldre fordelsskjemaer. |
 

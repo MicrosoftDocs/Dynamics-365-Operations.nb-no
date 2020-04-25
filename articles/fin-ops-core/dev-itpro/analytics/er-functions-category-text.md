@@ -3,7 +3,7 @@ title: Liste over ER-funksjoner for tekstkategorien
 description: Dette emnet inneholder informasjon om tekstfunksjonene som støttes i elektronisk rapportering (ER).
 author: NickSelin
 manager: kfend
-ms.date: 12/05/2019
+ms.date: 04/02/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f519d242fe74196b0d12bdc9df4f1b4b0e585752
-ms.sourcegitcommit: 36857283d70664742c8c04f426b231c42daf4ceb
+ms.openlocfilehash: bd4dd7e9a3e1aa448adea5abd0c21b8133f34e3b
+ms.sourcegitcommit: fb8ad8e2b142441a6530b364f3258bbcc0c724d2
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "2916620"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "3201095"
 ---
 # <a name="list-of-er-functions-of-the-text-category"></a>Liste over ER-funksjoner for tekstkategorien
 
@@ -52,7 +52,7 @@ Tekstfunksjoner for elektronisk rapportering (ER) kan brukes til å utføre oper
 | [Erstatt](er-functions-text-replace.md) | Denne funksjonen returnerer den angitte tekststrengen som en *streng*-verdi etter at hele eller deler av den er erstattet med en annen streng. |
 | [Høyre](er-functions-text-right.md) | Denne funksjonen returnerer en *streng*-verdi som viser det angitte antallet tegn fra slutten av den angitte strengen. |
 | [Tekst](er-functions-text-text.md) | Denne funksjonen returnerer det angitte tallet som en *streng*-verdi etter at de er konvertert til en tekststreng som formateres i henhold til de nasjonale innstillingene for serveren for gjeldende forekomst av programmet. |
-| [Oversett](er-functions-text-translate.md) | Denne funksjonen returnerer den angitte tekststrengen som en *streng*-verdi etter at hele eller deler av den er erstattet med en annen streng. |
+| [Oversett](er-functions-text-translate.md) | Denne funksjonen returnerer en *Streng*-verdi som inneholder resultatet av erstatningen av den angitte teksten i tegn for et annet angitt tegnsett. |
 | [Trim](er-functions-text-trim.md) | Denne funksjonen returnerer den angitte tekststrengen som en *streng*-verdi etter at innledende og etterfølgende mellomrom er avkortet, og når flere mellomrom mellom ord er fjernet. |
 | [Upper](er-functions-text-upper.md) | Denne funksjonen returnerer den angitte tekststrengen som en *streng*-verdi etter at den er konvertert til store bokstaver. |
 

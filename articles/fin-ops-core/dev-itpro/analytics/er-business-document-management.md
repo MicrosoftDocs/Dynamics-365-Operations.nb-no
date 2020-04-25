@@ -3,7 +3,7 @@ title: Oversikt over administrasjon av forretningsdokument
 description: Dette emnet gir informasjon om hvordan du bruker funksjonen for administrasjon av forretningsdokument i ER-rammeverket.
 author: NickSelin
 manager: AnnBe
-ms.date: 01/15/2020
+ms.date: 04/10/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-08-01
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 11db3ee1e9407febce7731d0888e7a10375a90da
-ms.sourcegitcommit: 66eae22cd99e53fe8e4c6c94945ad8061b69a442
+ms.openlocfilehash: 5a57b96387ca5746a30b2e438d6b5f0ce3040f54
+ms.sourcegitcommit: 728cd7f723ee821337eee315a27977e99a44d9d3
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "3117343"
+ms.lasthandoff: 04/11/2020
+ms.locfileid: "3258563"
 ---
 # <a name="business-document-management-overview"></a>Oversikt over administrasjon av forretningsdokument
 
@@ -46,7 +46,7 @@ Hvis du vil bruke administrasjon av forretningsdokument for redigering av maler 
 
 ## <a name="business-document-availability"></a>Tilgjengelighet av forretningsdokument
 
-Følgende rapporter, med Excel-baserte maler, vil være tilgjengelige med utgivelsen av den offentlige forhåndsvisningen:
+Følgende rapporter, med Excel-baserte maler, blir tilgjengelige sammen med utgivelsen av den offentlige forhåndsvisningen:
 
 **Kunder** (august 2019)
 
@@ -248,9 +248,18 @@ Bruk fremgangsmåten nedenfor til å redigere maler for fritekstfaktura i arbeid
 1. Logg på som en bruker med tilgang til siden Arbeidsområdet for administrasjon av forretningsdokument.
 2. Åpne arbeidsområdet for administrasjon av forretningsdokument.
 
+Når funksjonen **Office-lignende brukergrensesnitterfaring for administrasjon av forretningsdokument** er slått av i arbeidsområdet **Funksjonsbehandling**, viser hovedrutenettet i arbeidsområdet **Behandling av forretningsdokument** følgende maler:
+
+- Maler som eies av ER-konfigurasjonsleverandøren din (det vil si leverandøren som for øyeblikket er merket som aktiv i arbeidsområdet **Elektronisk rapportering**). Når du har valgt en av disse malene, kan du velge **Rediger mal** for å starte eller fortsette å redigere den.
+- Maler som eies av andre ER-konfigurasjonsleverandører. Når du har valgt en av disse malene, kan du velge **Nytt dokument** for å opprette en kopi av det som eies av ER-konfigurasjonsleverandøren din, og deretter begynne å redigere kopien.
+
 ![Arbeidsområdesiden Administrasjon av forretningsdokument](./media/BDM-Overview-EditingTemplate1.png)
 
 Fanen **Mal** viser innholdet i den valgte malen. Velg fanen **Detaljer** for å se gjennom detaljene for den valgte malen og detaljer om en ER-formatkonfigurasjon denne malen ligger i. Legg merke til at alle malene har statusen **Publisert** og ikke inneholder noen detaljer i **Endring**-kolonnen. Dette betyr at disse malene ikke redigeres for øyeblikket.
+
+Når funksjonen **Office-lignende brukergrensesnitterfaring for administrasjon av forretningsdokument** er slått på i arbeidsområdet **Funksjonsbehandling**, viser hovedrutenettet i arbeidsområdet **Behandling av forretningsdokument** maler som eies av ER-konfigurasjonsleverandøren din (det vil si leverandøren som for øyeblikket er merket som aktiv i arbeidsområdet **Elektronisk rapportering**). Når du har valgt en av disse malene, kan du velge **Rediger mal** for å starte eller fortsette å redigere den.
+
+Hvis du vil arbeide med maler som eies av andre ER-konfigurasjonsleverandører, velger du **Nytt dokument** for å opprette en kopi av malen som eies av ER-leverandøren din. Du kan deretter redigere kopien. For mer informasjon, se [Nytt dokumentbrukergrensesnitt i Forretningsdokumentbehandling](er-business-document-management-new-template-ui.md).
 
 ### <a name="initiate-editing-templates-owned-by-your-configuration-provider"></a>Start redigering av maler som eies av konfigurasjonsleverandøren
 

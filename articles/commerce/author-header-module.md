@@ -3,7 +3,7 @@ title: Topptekstmodul
 description: Dette emnet dekker topptekstmoduler og beskriver hvordan du oppretter sideoverskrifter i Microsoft Dynamics 365 Commerce.
 author: anupamar
 manager: annbe
-ms.date: 01/23/2020
+ms.date: 04/13/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anupamar-ms
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: efadd19681bbb21ea5b2b469e55bc6f4b0535046
-ms.sourcegitcommit: 34e543e807ac8790597f522fe3b4f0266cf4ee56
+ms.openlocfilehash: cec138ebefbd2beb2f1cf6302ce58d8bbc5c4bbd
+ms.sourcegitcommit: ac966ea3a6c557fb5f9634b187b0e788d3e82d4d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "3025687"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "3261450"
 ---
 # <a name="header-module"></a>Topptekstmodul
 
@@ -51,6 +51,7 @@ Følgende moduler kan brukes i en topptekstmodul:
 
 - **Navigasjonsmeny** – Navigasjonsmenyen representerer kanalnavigasjonshierarkiet og andre statiske navigasjonskoblinger. Kanalnavigeringshierarkiet kan konfigureres i Dynamics 365 Commerce. Navigasjonsmenyen har egenskapen **Navigasjonskilde** som brukes til å angi navigasjonsmenyelementer og statiske menyelementer for Retail Server som en kilde. Hvis statiske menyelementer angis som en kilde, kan relative koblinger til andre sider på området angis. Konfigurerte varer vises deretter som topptekstnavigasjon. 
 - **Søk** – Med søkemodulen kan brukere angi søkeord for å søke etter produkter. URL-adressen til standard søkeside og parameterne for søkespørringen må angis under **Områdeinnstillinger \> Utvidelser**. Søkemodulen har egenskaper som lar deg skjule søkeknappen eller etiketten etter behov. Søkemodulen støtter også alternativer for automatiske forslag, for eksempel søkeresultater for produkt, nøkkelord og kategori.
+- **Handlekurvikon** – Handlekurvikonmodulen representerer handlekurvikonet, som viser antall varer i handlekurven på et gitt tidspunkt. Hvis du vil ha mer informasjon, se [Handlekurvikonmodulen](cart-icon-module.md).
 
 ## <a name="create-a-header-module-for-a-page"></a>Opprette en topptekstmodul for en side
 
@@ -65,12 +66,15 @@ Hvis du vil opprette en topptekstmodul, følger du trinnene nedenfor.
 1. Konfigurer egenskapene for navigasjonsmenymodulen i egenskapsruten for navigasjonsmenymodulen.
 1. Legg til en søkemodul i **Søk**-sporet i topptekstmodulen. 
 1. Konfigurer egenskapene for søkemodulen i egenskapsruten for søkemodulen. 
-1. Lagre sidefragmentet, fullfør redigeringen av det, og publiser det. 
+1. I sporet **Kortikon** i topptekstmodulen legger du til en handlekurvikonmodul. 
+1. Konfigurer egenskapene for handlekurvikonmodulen i egenskapsruten for handlekurvikonmodulen. Hvis du vil at handlekurvikonet skal vise en minikurv ved peking over, velger du **Sann** for **Vis minikurv**.
+1. Lagre sidefragmentet, fullfør redigeringen, og publiser det. 
+
 
 For å sikre at det vises en topptekst på hver side, kan du følge denne fremgangsmåten på hver sidemal som opprettes for området.
 
 1. I **Hoved**-sporet på standardsiden legger du til topptekstsidefragmentet som inneholder topptekstmodulen, i toppteksten.
-1. Lagre malen, fullfør redigeringen av den, og publiser den.
+1. Lagre malen, fullfør redigeringen, og publiser den.
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 
@@ -81,6 +85,8 @@ For å sikre at det vises en topptekst på hver side, kan du følge denne fremga
 [Kjøpsboksmodul](add-buy-box.md)
 
 [Handlekurvmodul](add-cart-module.md)
+
+[Handlekurvikonmodul](cart-icon-module.md)
 
 [Kassemodul](add-checkout-module.md)
 

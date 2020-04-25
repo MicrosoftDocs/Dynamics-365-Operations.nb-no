@@ -3,7 +3,7 @@ title: Fjernede eller avskrevne funksjoner i tidligere versjoner
 description: Dette emnet beskriver funksjoner som er fjernet, eller som ble planlagt for fjerning fra Dynamics 365 for Finance and Operations og tidligere versjoner av dette produktet.
 author: sericks007
 manager: AnnBe
-ms.date: 03/05/2020
+ms.date: 04/03/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f2e079f1eb43d46acdc39819ae81e0472bba6aa1
-ms.sourcegitcommit: 1d5a4f70a931e78b06811add97c1962e8d93689b
+ms.openlocfilehash: c1aade5d1272e069c1c2e3470363ffd7d5fc3cdc
+ms.sourcegitcommit: 724f5b400a4e7c385da9d8b22db416ebc3623b93
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "3124572"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "3225134"
 ---
 # <a name="removed-or-deprecated-features-in-previous-releases"></a>Fjernede eller avskrevne funksjoner i tidligere versjoner
 
@@ -263,11 +263,11 @@ Innebygde nøkkelytelsesindikatorer (KPIer) kan modelleres i Visual Studio av en
 
 |   |  |
 |------------|--------------------|
-| **Årsak til avskrivning/fjerning** | Det er mulig for tabellmetadatadefinisjoner å ha feltgrupper som inneholder ugyldige feltreferanser. Dette problemet kategoriseres for øyeblikket som en *kompilatoradvarsel* i stedet for en *feil*, noe som betyr at den distribuerbare pakkeopprettingen og -distribusjonen kan fortsette uten å rette problemet. Hvis distribuert kan dette føre til kjøretidsfeil for kjøring i Finansrapportering og SQL Server Reporting Services (SSRS). Slik løser du dette problemet:<br><br>1. Fjern den ugyldige feltreferansen fra definisjonen for tabellfeltgruppen.<br><br>2. Kompiler på nytt.<br><br>3. Sørg for at advarsler eller feil håndteres. |
-| **Erstattet med en annen funksjon?**   | Advarselen vil bli erstattet av en kompileringsfeil i fremtiden.  |
-| **Berørte produktområder**         | Visual Studio-utviklingsverktøy. |
-| **Distribusjonsalternativ**              | Alle. |
-| **Status**                         | Avskrevet: Advarselen blir en kompileringstidsfeil i fremtiden. For øyeblikket målretter vi Plattformoppdatering 30. |
+| **Årsak til avskrivning/fjerning** | Det er mulig for tabellmetadatadefinisjoner å ha feltgrupper som inneholder ugyldige feltreferanser. Hvis distribuert kan dette føre til kjøretidsfeil for kjøring i Finansrapportering og SQL Server Reporting Services (SSRS). Dette problemet kategoriseres for øyeblikket som en *kompilatoradvarsel* i stedet for en *feil*, noe som betyr at den distribuerbare pakkeopprettingen og -distribusjonen kan fortsette uten å rette problemet. Slik løser du dette problemet:<br><br>1. Fjern den ugyldige feltreferansen fra definisjonen for tabellfeltgruppen.<br><br>2. Kompiler på nytt.<br><br>3. Sørg for at advarsler eller feil håndteres. |
+| **Erstattet med en annen funksjon?**   | Advarselen vil bli erstattet av en kompileringsfeil i fremtiden. |
+| **Berørte produktområder**         | Visual Studio-utviklingsverktøy |
+| **Distribusjonsalternativ**              | Alle |
+| **Status**                         | Avskrevet: Advarselen blir en kompileringstidsfeil i fremtiden. Denne endringen er målrettet mot plattformoppdateringer for versjon 10.0.11 av Finance and Operations-apper. |
 
 #### <a name="complete-list"></a>Fullstendig liste
 Hvis du vil ha tilgang til den fullstendige listen over APIer som kan avskrives, kan du se [Avskriving av metoder og metadataelementer](deprecation-deletion-apis.md).

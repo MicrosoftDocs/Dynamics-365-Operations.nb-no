@@ -3,7 +3,7 @@ title: Årsavslutning
 description: Dette emnet beskriver den nødvendige konfigurasjonen og fremgangsmåten for å kjøre årsavslutningsprosessen i økonomimodulen.
 author: kweekley
 manager: AnnBe
-ms.date: 08/01/2017
+ms.date: 04/13/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3071365640eb6c012cb9af5461e885bb3f135143
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 3f5b81ed788536a8b81ca53d6b6f12200836b6f5
+ms.sourcegitcommit: dbff1c6bb371a443a0cd2a310f5a48d5c21b08ca
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2175556"
+ms.lasthandoff: 04/13/2020
+ms.locfileid: "3259777"
 ---
 # <a name="year-end-close"></a>Årsavslutning
 
@@ -74,7 +74,7 @@ Kategorien **Finansdimensjon** brukes til å definere hvilke finansdimensjoner s
 Årsavslutningsprosessen overholder ikke kontostrukturer. Dette er fordi kontostrukturer kan endres i løpet av et regnskapsår, og det er ikke alltid mulig å identifisere den relevante kontostrukturen på grunn av disse endringene.  Når åpningstransaksjoner opprettes, vil saldoene overføres fremover med finansdimensjoner som er definert i årsavslutningsmalen. Startsaldopostene kan ikke lenger inneholde finansdimensjoner i gjeldende kontostruktur og segmentkombinasjoner som er ikke lenger er gyldig i gjeldende kontostruktur. Hvis organisasjonen vil utelate en finansdimensjon for startsaldoen for tilbakeholdt overskudd, må finansdimensjonen settes til **Lukk én** dimensjonsverdien må være tom.
 
 ## <a name="run-the-year-end-close-process"></a>Kjøre årsavslutningsprosessen
-Når malene for årsavslutning er opprettet, startes årsavslutningsprosessen ved å velge **Kjør regnskapsår** i handlingsruten. Velg alle eller et delsett med juridiske enheter fra malen som årsavslutningen skal kjøres for. Når du kjører i årsavslutningen for første gang i et regnskapsår, velger du sannsynligvis alle juridiske enheter for å opprette startsaldoer for dem. Hvis du kjører årsavslutningen på nytt, kan du velge å kjøre prosessen for bare juridiske enheter som det ble postert justeringsposter for. 
+Når malene for årsavslutning er opprettet, startes årsavslutningsprosessen ved å velge **Kjør årsavslutning** i handlingsruten. Velg alle eller et delsett med juridiske enheter fra malen som årsavslutningen skal kjøres for. Når du kjører i årsavslutningen for første gang i et regnskapsår, velger du sannsynligvis alle juridiske enheter for å opprette startsaldoer for dem. Hvis du kjører årsavslutningen på nytt, kan du velge å kjøre prosessen for bare juridiske enheter som det ble postert justeringsposter for. 
 
 Velg regnskapsåret som du vil kjøre årsavslutningen mot. Hvis det finnes mer enn én avslutningsperiode for den siste perioden i regnskapsåret, er feltet **Periodenavn** tilgjengelig, slik at du kan velge avslutningsperiode for postering av avslutningstransaksjonen, hvis det er definert i oppsettet å opprette avslutningstransaksjonen. 
 

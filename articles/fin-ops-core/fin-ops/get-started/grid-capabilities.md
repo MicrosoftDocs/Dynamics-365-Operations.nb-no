@@ -3,7 +3,7 @@ title: Rutenettfunksjoner
 description: Dette emnet beskriver flere kraftfulle funksjoner i rutenettkontrollen. Den nye rutenettfunksjonen må være aktivert for at du skal kunne få tilgang til disse funksjonene.
 author: jasongre
 manager: AnnBe
-ms.date: 02/10/2020
+ms.date: 04/10/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 7136edba828bf97b6e0c8d2a698b884640d680e5
-ms.sourcegitcommit: 880f617d1d6e95eccbed762c7ea04398553c2ec0
+ms.openlocfilehash: 0fd0e15ea88e9f5f34d8dff82606a8d26616a16d
+ms.sourcegitcommit: cd8a28be0acf31c547db1b8f6703dd4b0f62940c
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "3036271"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "3260466"
 ---
 # <a name="grid-capabilities"></a>Rutenettfunksjoner
 
@@ -90,4 +90,23 @@ Hvis du vil angre gruppering i et rutenett, høyreklikker du på grupperingskolo
 ## <a name="evaluating-math-expressions"></a>Evaluering av matematiske uttrykk
 Som en produktivitetsforsterkning kan brukeren legge inn matematiske formler i numeriske celler i et rutenett. De trenger ikke å utføre beregningen i en app utenfor systemet. Hvis du for eksempel angir **=15\*4** og deretter trykker på **Tab**-tasten for å gå ut av feltet, evaluerer systemet uttrykket og lagrer verdien **60** for feltet.
 
-Hvis du vil at systemet skal gjenkjenne en verdi som et uttrykk, starter du verdien med et likhetstegn (**=**). Hvis du vil ha mer informasjon om de støttede operatorene og syntaksen, kan du se [Støttede matematiske symboler](http://bugwheels94.github.io/math-expression-evaluator/#supported-maths-symbols).  
+Hvis du vil at systemet skal gjenkjenne en verdi som et uttrykk, starter du verdien med et likhetstegn (**=**). Hvis du vil ha mer informasjon om de støttede operatorene og syntaksen, kan du se [Støttede matematiske symboler](http://bugwheels94.github.io/math-expression-evaluator/#supported-maths-symbols).
+
+## <a name="frequently-asked-questions"></a>Vanlige spørsmål
+### <a name="how-do-i-enable-the-new-grid-control-in-my-environment"></a>Hvordan aktiverer jeg den nye rutenettkontrollen i miljøet? 
+
+**10.0.9/Platform Update 33 og senere** Funksjonen **Ny rutenettkontroll** er tilgjengelig direkte i funksjonsbehandling i et hvilket som helst miljø. I likhet med andre forhåndsvisningsfunksjoner er aktivering av denne funksjonen i produksjonen underlagt [Ekstra vilkår for bruksavtalen](https://go.microsoft.com/fwlink/?linkid=2105274).  
+
+**10.0.8 / Platform Update 32 og 10.0.7 / Platform Update 31** Funksjonen **Ny rutenettkontroll** kan aktiveres i lag 1 (dev/test) og lag 2 (sandkasse) for å ytterligere testing og utformingsendringer ved å følge fremgangsmåten nedenfor.
+
+1.  **Aktiver testversjonen**: Kjør følgende SQL-setning: 
+
+    `INSERT INTO SYSFLIGHTING (FLIGHTNAME, enabled, FLIGHTSERVICEID, PARTITION) VALUES('CLIReactGridEnableFeature', 1, 0, 5637144576);`
+
+2. **Tilbakestill IIS** for å tømme statisk buffer for testversjonering. 
+
+3.  **Finn funksjonen**: Gå til arbeidsområdet **Funksjonsbehandling**. Hvis **Ny rutenettkontroll** ikke vises i listen over alle funksjoner, velger du **Se etter oppdateringer**.   
+
+4.  **Aktiver funksjonen**: Finn funksjonen **Ny rutenettkontroll** i listen over funksjoner, og velg **Aktiver nå** i detaljruten. Vær oppmerksom på at det kreves en oppdatering av nettleseren. 
+
+Alle etterfølgende brukerøkter starter med at den nye rutenettkontrollen er aktivert.

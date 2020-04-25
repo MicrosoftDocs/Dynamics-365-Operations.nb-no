@@ -3,7 +3,7 @@ title: Tilpasse brukeropplevelsen
 description: Dette emnet forklarer hvordan du kan tilpasse appen.
 author: jasongre
 manager: AnnBe
-ms.date: 02/05/2020
+ms.date: 04/13/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c745248a0c7e54b58b1d3e491f3bbb067ec0e2c2
-ms.sourcegitcommit: d8a2301eda0e5d0a6244ebbbe4459ab6caa88a95
+ms.openlocfilehash: d0a995d25cfc5e78cc76dd73ddea2fb8bd904328
+ms.sourcegitcommit: cd8a28be0acf31c547db1b8f6703dd4b0f62940c
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "3029368"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "3260512"
 ---
 # <a name="personalize-the-user-experience"></a>Tilpasse brukeropplevelsen
 
@@ -80,7 +80,7 @@ Noen av mest vanlige og viktigste endringene som gjøres på en side, er tilgjen
 
 De vanligste typene eksplisitte tilpasninger er i tillegg tilgjengelige ved å høyreklikke et element og deretter velge **Tilpass**. (Vær oppmerksom på at ikke alle elementene på siden kan tilpasses.) Når du bruker denne tilpasningsmetoden, vises vinduet for elementets egenskaper.
 
-![Tilpasse egenskapene for et element](./media/personalization-element-properties.png)
+![Tilpasse egenskapene for et element](./media/cli-element-property-window.png)
 
 Du kan bruke egenskapsvinduet til å tilpasse et element på følgende måter:
 
@@ -89,6 +89,7 @@ Du kan bruke egenskapsvinduet til å tilpasse et element på følgende måter:
 - Ta med informasjonen i sammendragsdelen for hurtigfanen (hvis elementet er på en hurtigfane).
 - Hopp over feltet, slik at det aldri får fokus når du bruker tabulatoren gjennom siden.
 - Hindre at dataene i feltet blir redigert (for en post).
+- Angi et felt som skal være obligatorisk for dataregistrering. Hvis det ikke er angitt noen verdi i dette feltet, vises det med en rød kantlinje og en stjerne som angir denne statusen. Dette alternativet er tilgjengelig fra og med versjon 10.0.11, når funksjonene [Lagrede visninger](saved-views.md) og **Angi felt som obligatoriske ved hjelp av tilpasning** er aktivert.
 
 Egenskapsvinduet kan inneholde andre tilpasningsfunksjoner avhengig av elementet. Egenskapsvinduet for en flis kan for eksempel la deg å fremme flisen på et instrumentbord, og egenskapsvinduet for et instrumentbord kan la deg opprette et nytt arbeidsområde på dette instrumentbordet.
 
@@ -116,6 +117,7 @@ Følgende verktøy er tilgjengelige på **Tilpassing**-verktøylinjen:
 - Bruk **Flytt**-verktøyet når du vil flytte et element til et annet sted i den gjeldende gruppen med elementer. Legg merke til at du ikke kan flytte et element utenfor den overordnede gruppen. Hvis du vil bruke dette verktøyet, velger du knappen **Flytt** på verktøylinjen, og deretter velger du elementet som skal flyttes. Når du velger et element, bestemmer appen stedene der elementet kan flyttes. Disse stedene kalles *slippsoner*. Når du drar elementet rundt i gjeldende gruppe, vises hver "slippsone" som en farget, fet linje ved siden av området der elementet kan slippes.
 - Bruk **Hopp over**-verktøyet for å fjerne et element fra sidens tastaturtabulatorsekvens. Når du velger **Hopp over**-knappen på verktøylinjen, vil alle elementer som hoppes over, vises i en skyggelagt container. Du kan interaktivt fjerne eller legge til felt i kategorisekvensen.
 - Bruk **Vis i hode**-verktøyet når du vil at et felt skal vises i sammendragsdelen i hurtigfanen. Når du velger knappen **Vis i hode** på verktøylinjen, vil alle felt som er merket som sammendragsfelt, vises med en skyggelagt beholder. Interaktivt kan du legge til felt i hurtigfanen sammendrag og fjerne felt fra den ved å velge feltene.
+- Bruk **Krev**-verktøyet til å angi et element som obligatorisk for dataregistrering. Når du velger **Krev**-knappen på verktøylinjen, vil alle elementer som er tilpasset til å være obligatoriske, vises i en skyggelagt container. Du kan deretter gjøre dem ikke-obligatoriske på nytt. Dette alternativet er tilgjengelig i en fremtidig versjon, når funksjonene [Lagrede visninger](saved-views.md) og **Angi felt som obligatoriske ved hjelp av tilpasning** er aktivert.
 - Bruk **Lås**-verktøyet når du vil merke et element som enten er redigerbart eller ikke redigerbart. Når du velger **Lås**-knappen på verktøylinjen, vil alle elementer som ikke kan redigeres, vises i en skyggelagt container. Du kan deretter gjøre dem redigerbare på nytt. Legg merke til at noen felt er nødvendige og ikke kan gjøres ikke-redigerbare. Et hengelåssymbol ved siden av disse feltene.
 - Bruk knappen **Legg til en app fra Power Apps** for å bygge inn en app som ble opprettet ved hjelp av Microsoft Power Apps, på siden. Hvis du vil ha mer informasjon om hvordan du bygger inn en app fra Power Apps på en side, kan du se [Bytte inn apper fra Power Apps](embed-power-apps.md). Dette alternativet er bare tilgjengelig når funksjonen [Lagrede visninger](saved-views.md) er deaktivert.  
 - Bruk knappen **Legg til en app** til å bygge inn en app, enten en opprettet fra Microsoft Power Apps eller en tredjeparts, på siden. Dette alternativet er bare tilgjengelig når funksjonen [Lagrede visninger](saved-views.md) er aktivert. 

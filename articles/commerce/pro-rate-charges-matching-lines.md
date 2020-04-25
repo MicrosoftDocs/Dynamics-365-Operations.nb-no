@@ -3,7 +3,7 @@ title: Fordele hodegebyrer til samsvarende salgslinjer
 description: Dette emnet beskriver flere funksjoner for beregning og bruk av automatiske tillegg for handelskanalordrer ved å bruke funksjonen for avanserte automatiske gebyrer.
 author: hhaines
 manager: annbe
-ms.date: 04/23/2019
+ms.date: 03/30/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: 5c03b1a1db11098058022a6916dc5bddf5518f9b
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 048885cac7a316e144b2df072da405d74096203f
+ms.sourcegitcommit: 4e9b3746790355f9f72bbfddc099c4065a49ad63
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3023592"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "3175137"
 ---
 # <a name="prorate-header-charges-to-matching-sales-lines"></a>Fordele hodegebyrer til samsvarende salgslinjer
 
@@ -45,7 +45,7 @@ I Commerce har gebyrer på hodenivå en tilleggsfunksjon som lar deg definere en
 
 Noen organisasjoner ønsker fordelene med beregningen av fordelte tillegg som følger med gebyrer på hodenivå. I scenarioer med blandede leveringsmåter vil de også være sikre på at tilleggene som er beregnet, er basert på treff med leveringsmåten som er definert på hver salgslinje.
 
-Du kan nå konfigurere automatiske gebyrer på hodenivå, slik at alle leveringsmåter på bestillingen medregnes når tillegg beregnes. Denne funksjonen krever en mer sammensatt beregningslogikk for å beregne gebyrer på hodenivå. Logikken grupper alle varer som leveres ved hjelp av samme beregningsmodus for levering, og den behandler den gruppen som beregningsgruppen for varene ved beregning av automatiske gebyrer på hodenivå. For varer som har samme leveringsmåte, er automatiske gebyrer beregnet basert på den totale salgsverdien for varene. På denne måten bestemmes riktig automatisk tillegg.
+Du kan nå konfigurere automatiske gebyrer på hodenivå, slik at alle leveringsmåter på bestillingen medregnes når tillegg beregnes. Denne funksjonen krever en mer sammensatt beregningslogikk for å beregne gebyrer på hodenivå. Logikken grupperer alle varer som leveres ved hjelp av samme beregningsmodus for levering, og den behandler den gruppen som beregningsgruppen for varene ved beregning av automatiske gebyrer på hodenivå. For varer som har samme leveringsmåte, er automatiske gebyrer beregnet basert på den totale salgsverdien for varene. På denne måten bestemmes riktig automatisk tillegg.
 
 Etter at riktige gebyrer på hodenivå hentes fra salgslinjene som sendes ved hjelp av samme leveringsmåte, blir de beregnede kostnadene fordelt ned til salgslinjenivå. Fordi disse gebyrene er på linjenivå og ikke holdes på overskriftsnivå, lages en mer spesifikk kobling mellom varen og tilleggsverdien som ble beregnet for den. Dette kan være nyttig i delvise returscenarier der en organisasjon vil refundere bare en del av tillegget i stedet for hele tillegget når bare noen varer returneres.
 
@@ -169,3 +169,9 @@ Derfor, i dette eksempelet, tilordnes varen 81334 et fraktgebyr på USD 5,62. Du
 ![Fordelte tillegg på salgslinje for varen 81334](media/proratedlinecharge.png)
 
 Når denne beregningsmåten brukes i en delvis retur-scenario, hvis tilleggskoden er refunderbar, vil bare delen av tillegget som er tilordnet til denne linjen, refunderes når varen returneres.
+
+## <a name="additional-resources"></a>Tilleggsressurser
+
+[Avanserte automatiske tillegg for omnikanal](omni-auto-charges.md)
+
+[Aktivere og konfigurere automatiske avregninger etter kanal](auto-charges-by-channel.md)
