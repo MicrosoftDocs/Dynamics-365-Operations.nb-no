@@ -18,22 +18,20 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2019-01-15
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 3da8bdf6feb932e074680b6cb80e1b7b71f9a82b
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: eb5c7389ba29d50232f9321e40bccceecd5f5fc6
+ms.sourcegitcommit: 02640a0f63daa9e509146641824ed623c4d69c7f
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3004257"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "3265624"
 ---
 # <a name="retail-transaction-consistency-checker"></a>Konsekvenskontroll for detaljhandelstransaksjon
 
-
 [!include [banner](includes/banner.md)]
-[!include [preview banner](includes/preview-banner.md)]
 
 Dette emnet beskriver funksjonaliteten for konsekvenskontroll for transaksjon i Microsoft Dynamics 365 Commerce. Konsekvenskontrollen identifiserer og isolerer inkonsekvente transaksjoner før de blir plukket opp av utdragsposteringsprosessen.
 
-Når et utdrag posteres, kan postering mislykkes på grunn av inkonsekvente data i transaksjonstabellene i Commerce. Dataproblemet kan forårsakes av uforutsette problemer i POS-programmet, eller hvis transaksjoner ikke ble riktig importert fra POS-tredjepartssystemer. Eksempler på hvordan disse inkonsekvensene kan vises: 
+Når et utdrag posteres, kan postering mislykkes på grunn av inkonsekvente data i transaksjonstabellene i Commerce. Dataproblemet kan forårsakes av uforutsette problemer i salgsstedsappen, eller hvis transaksjoner ikke ble riktig importert fra salgsstedssystemer fra tredjeparter. Eksempler på hvordan disse inkonsekvensene kan vises: 
 
 - Transaksjonsbeløpet i toppteksttabellen samsvarer ikke med transaksjonsbeløpet på linjene.
 - Linjeantallet i toppteksttabellen samsvarer ikke med antallet linjer i transaksjonstabellen.

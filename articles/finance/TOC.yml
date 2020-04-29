@@ -70,12 +70,12 @@
                   items:
                     - name: Nyheter eller endringer på startsiden for Finance
                       href: get-started/whats-new-home-page.md
+                    - name: Finance 10.0.11 (juli 2020)
+                      href: get-started/whats-new-changed-10-0-11.md
                     - name: Finance 10.0.10 (mai 2020)
                       href: get-started/whats-new-changed-10-0-10.md
                     - name: Finance 10.0.9 (april 2020)
                       href: get-started/whats-new-changed-10-0-9.md
-                    - name: Finance 10.0.8 (februar 2020)
-                      href: get-started/whats-new-changed-10-0-8.md
             - name: Funksjoner som er fjernet eller avskrevet
               items:
                 - name: Funksjoner som er fjernet eller avskrevet i Dynamics 365 Finance
@@ -168,7 +168,7 @@
                   href: ../fin-ops-core/fin-ops/organization-administration/tasks/set-users-preferred-time-zone.md?toc=/dynamics365/finance/toc.json
                 - name: Forstå Lifecycle Services
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/lcs-works-lcs.md?toc=/dynamics365/finance/toc.json
-            - name: Implementering av livssyklus for ressurs
+            - name: Implementering av livssyklusadministrasjon
               items:
                 - name: Startside for implementering av livssyklus for ressurs
                   href: ../fin-ops-core/fin-ops/imp-lifecycle/implementation-lifecycle.md?toc=/dynamics365/finance/toc.json
@@ -978,12 +978,16 @@
               href: project-management/tasks/configure-intercompany-project-invoicing.md
             - name: Konfigurere standardkostnader for arbeid og utgifter
               href: project-management/tasks/configure-standard-costs-labor-expenses.md
+            - name: Definere og bruke leverandørbetalinger med metoden betal-når-betalt
+              href: project-management/setup-manage-vendor-payments.md
             - name: Kjøpsmottak for avsetning av prosjektkostnad
               href: accounts-payable/project-cost-accrual-purchase-receipts.md
             - name: Prosjektfakturering
               href: accounts-payable/project-invoicing.md
             - name: Prosjektkontrakter
               href: project-management/project-contracts.md
+            - name: Opprette avanserte kontrakter for fakturering basert på fremdriften
+              href: project-management/project-create-advanced-contracts-for-billing-based-progress.md
             - name: Prosjektprognoser og budsjetter
               href: project-management/project-forecasts-budgets.md
             - name: Overføre prosjektbudsjetter ved regnskapsårets avslutning
@@ -1014,6 +1018,8 @@
                   href: project-management/mobile-timesheets.md
                 - name: Implementere egendefinerte felt for mobilappen Project Timesheet
                   href: project-management/custom-fields-mobile.md
+            - name: Prosjekttilskudd
+              href: project-management/project-grants.md
         - name: Offentlig sektor
           items:
             - name: Startside for offentlig sektor
@@ -2016,6 +2022,8 @@
                   href: localizations/emea-ita-exil-unique-certification.md
                 - name: Import av vekselprotest
                   href: localizations/emea-ita-exil-protest-boe.md
+                - name: Avgiftsplafond
+                  href: localizations/emea-ita-exil-tax-plafond.md
             - name: Japan
               items:
                 - name: Oversikt over Japan
