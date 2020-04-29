@@ -40,11 +40,13 @@
               items:
                 - name: Oversikt over miljø for forhåndsvisning av Dynamics 365 Commerce
                   href: cpe-overview.md
-                - name: Klargjøre et miljø for forhåndsvisning av Dynamics 365 Commerce
+                - name: Klargjøre et miljø for forhåndsversjon av Dynamics 365 Commerce
                   href: provisioning-guide.md
-                - name: Konfigurere et miljø for forhåndsvisning av Dynamics 365 Commerce
+                - name: Konfigurere et miljø for forhåndsversjon av Dynamics 365 Commerce
                   href: cpe-post-provisioning.md
-                - name: Konfigurere valgfrie funksjoner for et miljø for forhåndsvisning av Dynamics 365 Commerce
+                - name: Konfigurere BOPIS i et Dynamics 365 Commerce-miljø
+                  href: cpe-bopis.md
+                - name: Konfigurere valgfrie funksjoner for et miljø for forhåndsversjon av Dynamics 365 Commerce
                   href: cpe-optional-features.md
                 - name: Vanlige spørsmål om miljø for forhåndsvisning av Dynamics 365 Commerce
                   href: cpe-faq.md
@@ -86,6 +88,8 @@
                   items:
                     - name: Nyheter eller endringer på startsiden for Commerce
                       href: get-started/whats-new-home-page.md
+                    - name: Commerce 10.0.11 (juli 2020)
+                      href: get-started/whats-new-commerce-10-0-11.md
                     - name: Commerce 10.0.10 (mai 2020)
                       href: get-started/whats-new-commerce-10-0-10.md
                     - name: Commerce 10.0.9 (april 2020)
@@ -206,6 +210,8 @@
                   href: retail-onprem.md
             - name: Distribusjon og hurtigreparasjoner
               items:
+                - name: Synkroniser selvbetjente installasjonsprogrammer i Dynamics 365 Commerce
+                  href: dev-itpro/Synchronize-installers.md
                 - name: Commerce Scale Unit
                   href: dev-itpro/retail-store-system-begin.md
                 - name: Konfigurere og installere Commerce Scale Unit
@@ -214,7 +220,7 @@
                   href: retail-modern-pos-device-activation.md
                 - name: Administrere kontoer og enheter fra Headquarters
                   href: set-up-activation-accounts-validate-devices-hq.md
-                - name: Aktivering av POS-enhet
+                - name: Aktivering av salgsstedsenhet
                   href: dev-itpro/retail-device-activation.md
                 - name: Hjelpe med å sikre Cloud POS i delte miljøer
                   href: dev-itpro/secure-retail-cloud-pos.md
@@ -226,7 +232,9 @@
                   href: dev-itpro/retail-component-events-diagnostics-troubleshooting.md
                 - name: Bruke en distribuerbar pakke
                   href: ../fin-ops-core/dev-itpro/deployment/apply-deployable-package-system.md?toc=/dynamics365/commerce/toc.json
-            - name: Implementering av livssyklus for ressurs
+                - name: Initialisere data for utgangsverdi i nye Commerce-miljøer
+                  href: enable-configure-retail-functionality.md
+            - name: Implementering av livssyklusadministrasjon
               items:
                 - name: Startside for implementering av livssyklus for ressurs
                   href: ../fin-ops-core/fin-ops/imp-lifecycle/implementation-lifecycle.md?toc=/dynamics365/commerce/toc.json
@@ -334,25 +342,25 @@
                   items:
                     - name: Velge mellom MPOS og Cloud POS
                       href: MPOS-or-CPOS.md
-                    - name: Tilkoblede og frakoblede POS-operasjoner
+                    - name: Tilkoblede og frakoblede salgsstedsoperasjoner
                       href: pos-operations.md
                     - name: Enhetsaktivering av en tilpasset Modern POS
                       href: dev-itpro/retail-POS-activation-changes.md
-                    - name: Aktiver godkjenning av Azure Active Directory for POS-pålogging
+                    - name: Aktiver godkjenning av Azure Active Directory for salgsstedspålogging
                       href: aad-pos-logon.md
                     - name: Skjermoppsett for demonstrasjonsdata i MPOS og Cloud POS
                       href: demo-data.md
-                    - name: Produkt- og kundesøk i POS
+                    - name: Produkt- og kundesøk i salgssted
                       href: POS-search-improvements.md
                     - name: Søke etter produkter og produktvarianter under ordreregistrering
                       href: ../supply-chain/pim/search-products-product-variants.md?toc=/dynamics365/commerce/toc.json
                     - name: Forbedringer for kontanttransaksjoner
                       href: cash-mgmt.md
-                    - name: Beholdningsoppslag på salgsstedet
+                    - name: Beholdningsoppslag i salgsstedet
                       href: product-variants-POS.md
-                    - name: Suspendere og gjenoppta transaksjoner på salgsstedet
+                    - name: Suspendere og gjenoppta transaksjoner i salgsstedet
                       href: pos-suspend-recall-transactions.md
-                    - name: Frakoblet funksjonalitet for POS
+                    - name: Frakoblet funksjonalitet for salgssted
                       href: pos-offline-functionality.md
                     - name: Behandling av skift og kassaskuff
                       href: shift-drawer-management.md
@@ -362,7 +370,7 @@
                       href: charge-send.md
                     - name: 'Skjule leveringsmåter som ikke er transportør, fra dialogboksen for forsendelse av salgssted'
                       href: hide-non-carrier-modes.md
-                    - name: Oppgaveregistrering og hjelp for POS og Cloud POS
+                    - name: Oppgaveregistrering og hjelp for MPOS og Cloud POS
                       href: task-recorder-retail-pos.md
                     - name: Eksterne enheter for maskinvare
                       items:
@@ -370,25 +378,25 @@
                           href: retail-peripherals-overview.md
                         - name: Ekstern simulator
                           href: dev-itpro/retail-peripheral-simulator.md
-                        - name: Koble eksterne enheter til POS
+                        - name: Koble eksterne enheter til salgssted
                           href: define-maintain-channel-clients-registers-hw-stations.md
-                        - name: Tilstandskontroll for eksterne enheter og tjenester for POS
+                        - name: Tilstandskontroll for eksterne enheter og tjenester for salgssted
                           href: pos-healthcheck.md
                     - name: Skjermoppsett
                       items:
                         - name: Skjermoppsett for demonstrasjonsdata i MPOS/CPOS
                           href: demo-data.md
-                        - name: Skjermoppsett for POS
+                        - name: Visuelle konfigurasjoner av brukergrensesnittet for salgssted
                           href: pos-screen-layouts.md
-                        - name: Installere utforming av oppsett for POS
+                        - name: Installere utforming av oppsett for salgssted
                           href: install-pos-layout-designer.md
                         - name: Velge varslingsinnstillinger
                           href: Notifications-POS.md
-                        - name: POS-program og innstillinger for brukerspråk
+                        - name: Salgsstedsapp og innstillinger for brukerspråk
                           href: pos-application-user-language-settings.md
                         - name: Definere og administrere bilder for MPOS
                           href: set-up-manage-images-retail-mpos.md
-                        - name: Klientavbildninger i POS
+                        - name: Klientavbildninger i salgssted
                           href: pos-image.md
                     - name: Kundeordrer
                       items:
@@ -398,7 +406,7 @@
                           href: hybrid-customer-orders.md
                     - name: Salgsmedarbeidere
                       items:
-                        - name: Spore provisjoner på salgsstedet ved hjelp av salgsgrupper
+                        - name: Spore provisjoner i salgsstedet ved hjelp av salgsgrupper
                           href: pos-sales-groups-track-commissions.md
                     - name: Enhetsaktivering
                       items:
@@ -408,11 +416,11 @@
                           href: extended-logon.md
                         - name: Administrere aktiveringskontoer og validere enheter
                           href: set-up-activation-accounts-validate-devices-hq.md
-                    - name: Opprette finansdimensjoner for POS-kasser og konfigurere dimensjonsverdier i kasser
+                    - name: Opprette finansdimensjoner for kasser på salgssted og konfigurere dimensjonsverdier i kasser
                       href: tasks/create-financial-dimensions-pos.md
-                    - name: Opprette tillatelsesgruppe for POS
+                    - name: Opprette tillatelsesgruppe for salgssted
                       href: tasks/create-pos-permission-groups.md
-                    - name: Opprette visuelle POS-profiler
+                    - name: Opprette visuelle salgsstedsprofiler
                       href: tasks/create-pos-visual-profile-2016-02.md
                 - name: Konfigurere og installere Retail Hardware Station
                   href: retail-hardware-station-configuration-installation.md
@@ -484,7 +492,7 @@
                       href: work-with-payments.md
                     - name: 'Kredittkortoppsett, autorisasjon og registrering'
                       href: ../finance/accounts-receivable/credit-card-authorizations.md?toc=/dynamics365/commerce/toc.json
-                    - name: Konfigurere kontantstørrelser for POS
+                    - name: Konfigurere kontantstørrelser for salgssted
                       href: cash-denominations.md
                     - name: Konfigurere kredittkortbehandling
                       href: tasks/configure-credit-card-processing.md
@@ -580,7 +588,7 @@
                   href: retail-shipping-discount.md
                 - name: Konfigurere kuponger
                   href: retail-coupons.md
-                - name: Vise rabatter i POS
+                - name: Vise rabatter i salgssted
                   href: discounts-pos.md
                 - name: Prisrapporter
                   href: price-report.md
@@ -602,9 +610,9 @@
                       href: personalized-recommendations.md
                     - name: Velge bort personlige anbefalinger
                       href: personalization-gdpr.md
-                - name: POS-opplevelser
+                - name: Salgsstedsopplevelser
                   items:
-                    - name: Legge til produktanbefalinger i POS
+                    - name: Legge til produktanbefalinger på salgssted
                       href: product.md
                     - name: Legge til anbefalinger i transaksjonsskjermbildet
                       href: add-recommendations-control-pos-screen.md
@@ -640,9 +648,9 @@
                       href: tasks/push-products-distribution-center-store-buyers-push.md
                     - name: Definere regler og parametere for direkteoverføring og sentralt innkjøp
                       href: tasks/set-up-rules-parameters-cross-docking-buyers-push.md
-                    - name: Inngående lageroperasjon på salgsstedet
+                    - name: Inngående lageroperasjon i salgsstedet
                       href: pos-inbound-inventory-operation.md
-                    - name: Utgående lageroperasjon på salgsstedet
+                    - name: Utgående lageroperasjon i salgsstedet
                       href: pos-outbound-inventory-operation.md
                     - name: Beregne lagertilgjengelighet for detaljhandelskanaler
                       href: calculated-inventory-retail-channels.md
@@ -666,7 +674,7 @@
               items:
                 - name: Opprette en telefonsenterordre
                   href: tasks/create-call-center-orders.md
-                - name: Endre leveringsmodus i POS
+                - name: Endre leveringsmodus i salgssted
                   href: POS-change-delivery-mode.md
             - name: Behandling av distribuert ordre
               items:
@@ -680,7 +688,7 @@
                   href: order-fulfillment-overview.md
                 - name: Definere ordreoppfyllelse for butikker
                   href: order-fulfillment-pos-setup.md
-                - name: Vise ordrevarslinger i POS
+                - name: Vise ordrevarslinger i salgssted
                   href: notifications-pos.md
                 - name: Selge kontinuitetsprogrammer og prosessalgsordrer
                   href: tasks/use-continuity-program.md
@@ -906,6 +914,8 @@
                   href: cookie-compliance.md
                 - name: Legge til en side for personvernpolicy
                   href: add-privacy-page.md
+                - name: Erstatte bruker-ID-er som er knyttet til sporede innholdsendringer
+                  href: replace-IDs-tracked-changes.md
             - name: Startpakke
               items:
                 - name: 'Startpakke, oversikt'
@@ -942,12 +952,16 @@
                   items:
                     - name: Handlekurvmodul
                       href: add-cart-module.md
+                    - name: Handlekurvikonmodul
+                      href: cart-icon-module.md
                     - name: Kassemodul
                       href: add-checkout-module.md
                     - name: Ordrebekreftelsesmodul
                       href: order-confirmation-module.md
                     - name: Butikkvelgermodul
                       href: store-selector.md
+                    - name: Gavekortmodul
+                      href: add-giftcard.md
                 - name: Kontobehandlingsmoduler
                   items:
                     - name: Kontobehandlingssider og -moduler
@@ -1044,7 +1058,7 @@
               items:
                 - name: Kassefunksjonalitet
                   href: localizations/emea-swe-cash-registers.md
-                - name: Eksempel for POS-integrering med kontrollenheter
+                - name: Eksempel for salgsstedsintegrering med kontrollenheter
                   href: localizations/retail-sdk-control-unit-sample.md
         - name: Rapportering og Power BI-integreringer
           items:
@@ -1940,6 +1954,8 @@
                       href: e-commerce-extensibility/create-theme.md
                     - name: Konfigurere temainnstillinger
                       href: e-commerce-extensibility/configure-theme-settings.md
+                    - name: Utvide et tema
+                      href: e-commerce-extensibility/extend-theme.md
                 - name: Sette inn skript
                   items:
                     - name: Skriptinnsettinger
@@ -1962,31 +1978,33 @@
                   href: dev-itpro/UpcomingSDKChanges.md
                 - name: Slå sammen byggesystemene for Commerce og Finance and Operations
                   href: dev-itpro/retail-sdk/integrate-retail-sdk-continuous-build.md
+                - name: Overføre SDK for Retail fra Visual Studio 2015 til Visual Studio 2017
+                  href: dev-itpro/retail-sdk/migrate-sdk.md
                 - name: Eksempler på utvidelsesmulighet for SDK for Retail
                   href: dev-itpro/retail-sdk/retail-sdk-extensibility-samples.md
                 - name: Opprette distribuerbare pakker
                   href: dev-itpro/retail-sdk/retail-sdk-packaging.md
                 - name: Utvikling i skydriftede utviklingsmiljøer uten administratortilgang
                   href: dev-itpro/cloud-dev-box.md
-            - name: Utvidelsesmuligheter for POS
+            - name: Utvidelsesmuligheter for salgssted
               items:
-                - name: Skjermoppsett for POS
+                - name: Skjermoppsett for salgssted
                   href: pos-screen-layouts.md
-                - name: Åpne URL-adresse i POS
+                - name: Åpne URL-adresse i salgssted
                   href: Open-URL-in-POS.md
-                - name: Installere utforming av oppsett for POS
+                - name: Installere utforming av oppsett for salgssted
                   href: install-pos-layout-designer.md
                 - name: Utvide skjermvisningen for POS Dual
                   href: dev-itpro/pos-dual-display-extension.md
                 - name: Utvidelsesmulighet for Modern POS og Cloud POS-utløser
                   href: dev-itpro/modern-pos-trigger-extensibility.md
-                - name: Legge til egendefinerte kontroller i POS-visninger
+                - name: Legge til egendefinerte kontroller i salgsstedsvisninger
                   href: dev-itpro/pos-custom-control.md
-                - name: Legge til salgsstedsoperasjoner i POS-oppsett ved hjelp av utforming for knappegruppe
+                - name: Legge til salgsstedsoperasjoner i salgsstedsoppsett ved hjelp av utforming for knappegruppe
                   href: dev-itpro/add-POS-operations.md
-                - name: API-er for POS
+                - name: API-er for salgssted
                   href: dev-itpro/POS-APIs.md
-                - name: Utvidelse for POS-betaling
+                - name: Utvidelse for salgsstedsbetaling
                   href: dev-itpro/pos-payment-extension.md
                 - name: Støtte for eksterne gavekort
                   href: dev-itpro/gift-card.md
@@ -1996,27 +2014,27 @@
                   href: dev-itpro/hybridApp.md
                 - name: Overstyre forespørselsbehandling for salgssted
                   href: dev-itpro/pos-handler.md
-                - name: Vise informasjon om utvidelsespakke for POS
+                - name: Vise informasjon om utvidelsespakke for salgssted
                   href: dev-itpro/view-pos-extension-package-details.md
                 - name: Teste registrering og Regression Suite Automation Tool for Cloud POS
                   href: dev-itpro/pos-rsat.md
-                - name: Legge til egendefinerte felt i panelet POS-totaler
+                - name: Legge til egendefinerte felt i panelet Salgsstedstotaler
                   href: dev-itpro/custom-field-pos-totals.md
-                - name: Vise egendefinerte varslinger i POS
+                - name: Vise egendefinerte varslinger i salgssted
                   href: dev-itpro/extend-pos-notification.md
                 - name: Signere MPOS med kodesigneringssertifikat
                   href: dev-itpro/pos-app-signing-certificate.md
-                - name: Utvide POS-visninger for å legge til egendefinerte kolonner og applinjeknapper
+                - name: Utvide salgsstedsvisninger for å legge til egendefinerte kolonner og applinjeknapper
                   href: dev-itpro/pos-view-extension.md
                 - name: Legge til egendefinerte kontroller på transaksjonssider for Modern POS
                   href: dev-itpro/pos-custom-transaction.md
-                - name: Legge til egendefinerte kolonner i et rutenett for POS-transaksjon
+                - name: Legge til egendefinerte kolonner i et rutenett for salgsstedstransaksjon
                   href: dev-itpro/pos-custom-transaction-column.md
-                - name: Kalle API-er for POS eller operasjoner fra POS-utvidelser
+                - name: Kalle API-er for salgssted eller operasjoner fra salgsstedsutvidelser
                   href: dev-itpro/pos-api-extension.md
                 - name: Utløsere og utskrift for Modern POS
                   href: dev-itpro/pos-trigger-printing.md
-                - name: Legge til egendefinerte kontroller i POS-visninger som ikke er skjermutformingsbaserte
+                - name: Legge til egendefinerte kontroller i salgsstedsvisninger som ikke er skjermutformingsbaserte
                   href: dev-itpro/pos-control-non-screen.md
                 - name: Kjøre eksemplene for salgssted
                   href: dev-itpro/pos-run-samples.md
@@ -2028,7 +2046,7 @@
               items:
                 - name: Hardware Station og utvidelsesmulighet
                   href: dev-itpro/hardware-station-extensibility.md
-                - name: Integrer POS med en ny maskinvareenhet
+                - name: Integrer salgssted med en ny maskinvareenhet
                   href: dev-itpro/hardware-device-extension.md
             - name: Utvidelsesmuligheter for Retail Server
               items:
