@@ -19,18 +19,16 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: 34c10e38400a72a670a93f2a72d0aa7a4aed561a
-ms.sourcegitcommit: 68f1485de7d64a6c9eba1088af63bd07992d972d
+ms.openlocfilehash: 853791d5ffc1d92b9fbafa2acc13cd5543c38196
+ms.sourcegitcommit: e06da171b9cba8163893e30244c52a9ce0901146
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "3172766"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "3275539"
 ---
 # <a name="troubleshoot-issues-with-the-dual-write-module-in-finance-and-operations-apps"></a>Feilsøke problemer med dobbel skriving-modulen i Finance and Operations-apper
 
 [!include [banner](../../includes/banner.md)]
-
-
 
 Dette emnet inneholder feilsøkingsinformasjon om dobbel skriving-integrasjon mellom Finance and Operations-apper og Common Data Service. Mer spesifikt gir det informasjon som kan hjelpe deg med å løse problemer med **Dobbel skriving**-modulen i Finance and Operations-apper.
 
@@ -41,17 +39,14 @@ Dette emnet inneholder feilsøkingsinformasjon om dobbel skriving-integrasjon me
 
 Hvis du ikke kan åpne **Dobbel skriving**-siden ved å velge **Dobbel skriving**-flisen i **Databehandling**-arbeidsområdet, er dataintegrasjonstjenesten sannsynligvis nede. Opprett en støtteforespørsel for å be om omstart av dataintegrasjonstjenesten.
 
-## <a name="error-when-you-try-to-create-a-new-entity-mapping"></a>Feil når du prøver å opprette en ny enhetstilordning
+## <a name="error-when-you-try-to-create-a-new-entity-map"></a>Feil når du prøver å opprette en ny enhetstilordning
 
-**Nødvendig legitimasjon for å løse problemet:** Azure AD-leieradministrator
+**Påkrevd legitimasjon for å løse problemet:** Den samme brukeren som konfigurere dobbelt skriving.
 
-Du kan få følgende feilmelding når du prøver å konfigurere en ny enhet for dobbel skriving:
+Du kan få følgende feilmelding når du prøver å konfigurere en ny enhet for dobbel skriving. Den eneste brukeren som kan opprette en tilordning, er brukeren som konfigurere dobbelt skriving-forbindelsen.
 
 *Svarstatuskoden indikerer ikke fullført: 401 (uautorisert)*
 
-Denne feilen oppstår fordi bare en Azure AD-leieradministrator kan legge til en ny enhetstilordning.
-
-Du kan løse problemet ved å logge på Finance and Operations-appen som en Azure AD-administratorleier. Du må også gå til web.PowerApps.com og validere tilkoblingen på nytt.
 
 ## <a name="error-when-you-open-the-dual-write-user-interface"></a>Feil når du åpner bruker grensesnittet for dobbel skriving
 
@@ -63,13 +58,13 @@ Du kan løse problemet ved å logge på ved å bruke et InPrivate-vindu i Micros
 
 ## <a name="error-when-you-link-the-environment-for-dual-write-or-add-a-new-entity-mapping"></a>Feil når du kobler miljøet for dobbel skriving eller legger til en ny enhetstilordning
 
-**Nødvendig legitimasjon for å løse problemet:** Azure AD-leieradministrator
+**Nødvendig rolle for å løse problemet:** Systemadministrator i både Finance and Operations-apper og Common Data Service.
 
 Du kan støte på følgende feilmelding når du kobler eller oppretter tilordninger:
 
 *Svarstatuskoden indikerer ikke fullført: 403 (tokenexchange).<br> Økt-ID: \<din økt-id\><br> Rotaktivitet-ID: \<din rotaktivitet-id\>*
 
-Denne feilen kan oppstå hvis du ikke har tilstrekkelige tillatelser til å koble dobbel skriving eller opprette tilordninger. Du må bruke en Azure AD-leieradministratorkonto for å koble miljøer og legge til nye enhetstilordninger. Etter installasjonen kan du imidlertid bruke en ikke-administratorkonto til å overvåke status og redigere tilordningene.
+Denne feilen kan oppstå hvis du ikke har tilstrekkelige tillatelser til å koble dobbel skriving eller opprette tilordninger. Denne feilen kan også oppstå hvis Common Data Service-miljøet ble tilbakestilt uten å koble fra dobbel skriving. Alle brukere med rollen systemansvarlig i både Finance and Operations-apper og Common Data Service kan koble sammen miljøer. Bare brukeren som har konfigurerte av dobbel skriving-tilkobling, kan legge til nye enhetstilordninger. Etter installasjonen kan alle brukere med rollen systemansvarlig overvåke statusen og redigere tilordningene.
 
 ## <a name="error-when-you-stop-the-entity-mapping"></a>Feil når du stopper enhetstilordningen
 
@@ -80,3 +75,14 @@ Du kan få følgende feilmelding når du prøver å stoppe enhetstilordningene:
 Denne feilen oppstår når det koblede Common Data Service-miljøet ikke er tilgjengelig.
 
 Du kan løse problemet ved å opprette en støtteforespørsel for data integrasjonsgruppen. Knytt til nettverkssporingen slik at dataintegrasjonsgruppen kan merke tilordningene som **Kjører ikke** i serverdelen.
+
+## <a name="error-while-trying-to-start-an-entity-mapping"></a>Feil under forsøk på å starte en enhetstilordning
+
+Det kan hende du får en feilmelding som nedenfor når du forsøker å angi denne tilstanden for en tilordning til **Kjører**:
+
+*Kan ikke fullføre den opprinnelige datasynkroniseringen. Feil: dobbelt skriving feil - registrering av plugin-modul mislyktes: kan ikke opprette metadata for oppslag med dobbel skriving. Feilobjektreferanse er ikke satt til en forekomst av et objekt.*
+
+Hurtigreparasjonen for denne feilen er avhengig av årsaken til feilen:
+
++ Hvis tilordningen har avhengige tilordninger, må du sørge for å aktivere de avhengige tilordningene for denne enhetstilordningen.
++ Tilordningen kan mangle kilde- eller målfelt. Hvis et felt i Finance and Operations-appen mangler, følger du trinnene i delen [Problem med manglende enhetsfelt på tilordninger](dual-write-troubleshooting-finops-upgrades.md#missing-entity-fields-issue-on-maps). Hvis det mangler et felt i Common Data Service, klikker du **Oppdater enheter**-knappen på tilordning slik at feltene automatisk fylles tilbake til tilordningen.

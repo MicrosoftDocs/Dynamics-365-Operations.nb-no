@@ -3,7 +3,7 @@ title: Definere en B2C-leier i Commerce
 description: Dette emnet beskriver hvordan du konfigurerer Azure Active Directory (Azure AD) bedrift-til-kunde (B2C)-leietakere for godkjenning av brukerområde i Dynamics 365 Commerce.
 author: BrianShook
 manager: annbe
-ms.date: 03/02/2020
+ms.date: 04/17 /2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.industry: retail
 ms.author: BriShoo
 ms.search.validFrom: 2020-02-13
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: a5fca37fb89c723273ef753b102092e2cfb26563
-ms.sourcegitcommit: 236672932ffd0a758012ebb7b2df9bc51249c126
+ms.openlocfilehash: f4768eede43003aac892b861b4a86ababe98a189
+ms.sourcegitcommit: 063c4d7155be6c2cadcafa1630d16ee235285479
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/03/2020
-ms.locfileid: "3096519"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "3270216"
 ---
 # <a name="set-up-a-b2c-tenant-in-commerce"></a>Definere en B2C-leier i Commerce
 
@@ -169,8 +169,7 @@ Følg denne fremgangsmåten for å opprette en brukerflytpolicy for tilbakestill
 1. Under **Identitetsleverandører** velger du **Tilbakestill passord ved hjelp av e-postadresse**.
 1. Velg **Opprett**.
 1. Under **Programkrav** merker du av følgende avmerkingsbokser:
-    - **E-post**
-    - **Adresser**
+    - **E-postadresser**
     - **Gitt navn**
     - **Etternavn**
     - **Brukers objekt-ID**

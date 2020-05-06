@@ -3,7 +3,7 @@ title: Beskjære bilder
 description: Dette emnet beskriver hvordan du beskjærer bilder i områdebygger for Microsoft Dynamics 365 Commerce.
 author: psimolin
 manager: annbe
-ms.date: 03/03/2020
+ms.date: 04/14/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 771f98ef11355ad30ededcb310e9794ce792b7f0
-ms.sourcegitcommit: 567132f4e4f7a1d76dccf762068209a42c788b52
+ms.openlocfilehash: 9496a1f96e2d0e18eb477a9743927b2076c5548a
+ms.sourcegitcommit: 7a1d01122790b904e2d96a7ea9f1d003392358a6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/03/2020
-ms.locfileid: "3097058"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "3269573"
 ---
 # <a name="crop-images"></a>Beskjære bilder
 
@@ -41,7 +41,7 @@ Hvis du vil beskjære et bilde i områdebygger, følger du disse trinnene.
 
 1. Velg **Mediebibliotek** i den venstre navigasjonsruten i Commerce-områdebygger.
 1. I hovedvinduet velger du bildet du vil endre.
-1. Velg **Rediger** på kommandolinjen for å sjekke ut filen.
+1. På kommandolinjen velger du **Rediger**.
 1. Velg bildet for å gå til **Redigeringsmodus**.
 1. Under **Redigeringsmodus** velger du **Rediger visning etter modul**.
 1. Velg modultypen fra rullegardinmenyen **Modul**.

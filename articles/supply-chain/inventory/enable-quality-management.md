@@ -19,12 +19,12 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9b090450c6b39607f9661667f8063998bbe5ff52
-ms.sourcegitcommit: c79062ba89498aa3fe3d86e478d9f32484f5f6dc
+ms.openlocfilehash: e1d7828e6bb9a3684c1d76e2cfac96174a8dfbf4
+ms.sourcegitcommit: 6d6aa016c4971b0673d461b82fd80b060ae5f7a1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "3224915"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "3268822"
 ---
 # <a name="quality-management-overview"></a>Oversikt over kvalitetsstyring
 
@@ -43,7 +43,11 @@ Kvalitetsstyring er fleksibelt og kan implementeres på forskjellige måter for 
 
 -   Start en prosess for kvalitetskontroll automatisk basert på forhåndsdefinerte kriterier (ved lagerregistrering av en bestilling fra en bestemt leverandør).
 -   Blokker lageret under inspeksjon for å hindre bruk av ikke-godkjent lager (full blokkering av bestillingsantall).
--   Bruk vareprøver som en del av en kvalitetstilknytning for å definere hvor mye av det fysiske lageret som må kontrolleres. Prøver kan være basert på faste antall eller en prosentdel.
+-   Bruk vareprøver som en del av en kvalitetstilknytning for å definere hvor mye av det fysiske lageret som må kontrolleres. Prøver kan være basert på faste antall, en prosentdel, eller et fullstendig nummerskilt.
+
+> [!NOTE]
+> Funksjonen _Kvalitetsstyring for lagerprosesser_ utvider funksjonaliteten til kvalitetsstyring. Hvis du bruker denne funksjonen, kan du se [Kvalitetsstyring for lagerprosesser](quality-management-for-warehouses-processes.md) for eksempler på hvordan kvalitetsstyring fungerer når den aktiveres.
+
 -   Opprette kvalitetsordrer for delvise mottak. Hvis du vil opprette en kvalitetsordre som er basert på antallet som er fysisk mottatt med en ordre, må du velge den **Per oppdatert mengde** for den **Vareprøve** skjema.
 -   Opprett testtyper med minimums-, maksimums-, og måltestverdier, og utfør kvalitative kontra kvantitative tester som har forhåndsdefinerte valideringsresultater.
 -   Angi et akseptabelt kvalitetsnivå for å kontrollere kvalitetsmåltoleranser.
@@ -428,6 +432,9 @@ I produksjon, hvis du du angir feltet **Hendelsestype** til **Ferdigmeld** og fe
 </tbody>
 </table>
 
+> [!NOTE]
+> Funksjonen *Kvalitetsstyring for lagerprosesser* legger til funksjoner for kvalitetsordrebehandling for produksjon med **hendelsestype** satt til *Ferdigmeld* og **utførelse** satt til *Etter*, og for innkjøp med **hendelsestype** satt til *Registrering*. For mer informasjon, se [Kvalitetsstyring for lagerprosesser](quality-management-for-warehouses-processes.md).
+
 ## <a name="quality-management-pages"></a>Kvalitetsstyringssider
 <table>
 <colgroup>
@@ -438,7 +445,7 @@ I produksjon, hvis du du angir feltet **Hendelsestype** til **Ferdigmeld** og fe
 <thead>
 <tr class="header">
 <th>Side</th>
-<th>Beskrivelse</th>
+<th>beskrivelse</th>
 <th>Eksempel</th>
 </tr>
 </thead>
@@ -495,3 +502,5 @@ Du må definere en kvalitetstilknytning for hver variasjon i en forretningsprose
 [Kvalitetsstyringsprosesser](quality-management-processes.md)
 
 [Avviksstyring](enable-nonconformance-management.md)
+
+[Kvalitetsstyring for lagerprosesser](quality-management-for-warehouses-processes.md)

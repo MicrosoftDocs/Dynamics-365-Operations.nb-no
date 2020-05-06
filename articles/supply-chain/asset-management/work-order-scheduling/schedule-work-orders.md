@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: a09b90c19d8d4fe5d08abc892ed0c42d9d4592d8
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: a594bacb1fcf53ae4a278dbb26f1de174e22288c
+ms.sourcegitcommit: e06da171b9cba8163893e30244c52a9ce0901146
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3211727"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "3275608"
 ---
 # <a name="schedule-work-orders"></a>Planlegg arbeidsordrer
 
@@ -102,14 +102,14 @@ Hvis servicenivåpoengene økes til 100 i stedet for 5, vil planleggingsrekkefø
 
 Vurderingsresultatene relatert til beregning av hvilke vedlikeholdsarbeidere som skal arbeide med arbeidsordrene, defineres som tall, som legges til hver vedlikeholdsarbeiderberegning under arbeidsordreplanleggingen. Vedlikeholdsarbeideren med høyest poengsum velges i arbeidsordren. Her er en kort beskrivelse av poengene for vedlikeholdsarbeideren:
 
-| Poengsum for vedlikeholdsperson       | Beskrivelse                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
-|--------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Ansvarlig arbeider | Hvis vedlikeholdspersonen er valgt som ansvarlig arbeider i arbeidsordren, legges poengene til.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
-| Ansvarlig vedlikeholdspersongruppe | Hvis vedlikeholdspersonen er del av den ansvarlige vedlikeholdsarbeidegruppen i arbeidsordren, legges poengene til.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
-| Foretrukket vedlikeholdsperson         | Hvis arbeideren er valgt som foretrukket vedlikeholdsperson for aktivaet, legges poengene til.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
-| Foretrukket vedlikeholdspersongruppe   | Hvis arbeideren er del av den foretrukne vedlikeholdspersongruppen for aktivaet, legges poengene til.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
-| Lokasjon                 | Hvis firmaet bruker arbeidssteder, får vedlikeholdsarbeiderne full poengsum hvis de befinner seg på arbeidsstedet som er knyttet til anleggsmidlet. Hvis arbeidsstedet til anleggsmidlet har et overordnet sted, får vedlikeholdsarbeidere på dette arbeidsstedet 1/2 poeng. Hvis dette stedet også har et overordnet sted, får vedlikeholdsarbeidere på dette stedet 1/3 poeng. Hvis dette stedet også har et overordnet sted, får vedlikeholdsarbeidere på dette stedet 1/4 poeng osv. Hvis firmaet ditt bruker aktivasted, som vi ikke anbefaler, brukes sted, område og sone til å beregne stedspoengsummer. Arbeiderne får full poengsum hvis de befinner seg på stedet og i området og sonen som er knyttet til eiendelen. Hvis arbeiderstedet bare samsvarer med sted og område, er rangeringspoengsummen for vedlikeholdsarbeideren 2/3 for hele poengsummen. Hvis vedlikeholdsarbeiderstedet bare samsvarer med sted, er rangeringspoengsummen for vedlikeholdsarbeideren 1/3 for hele poengsummen. |
-| Arbeiderens startdato               | For hver dato som den planlagte startdatoen er senere enn forventet startdato, trekkes poengsummen fra.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| Poengsum for vedlikeholdsperson| Beskrivelse |
+|---|---|
+| Ansvarlig arbeider | Hvis vedlikeholdspersonen er valgt som ansvarlig arbeider i arbeidsordren, legges poengene til. |
+| Ansvarlig vedlikeholdspersongruppe | Hvis vedlikeholdspersonen er del av den ansvarlige vedlikeholdsarbeidegruppen i arbeidsordren, legges poengene til. |
+| Foretrukket vedlikeholdsperson         | Hvis arbeideren er valgt som foretrukket vedlikeholdsperson for aktivaet, legges poengene til. |
+| Foretrukket vedlikeholdspersongruppe   | Hvis arbeideren er del av den foretrukne vedlikeholdspersongruppen for aktivaet, legges poengene til.  |
+| Lokasjon  | Hvis firmaet bruker arbeidssteder, får vedlikeholdsarbeiderne full poengsum hvis de befinner seg på arbeidsstedet som er knyttet til anleggsmidlet. Hvis arbeidsstedet til anleggsmidlet har et overordnet sted, får vedlikeholdsarbeidere på dette arbeidsstedet 1/2 poeng. Hvis dette stedet også har et overordnet sted, får vedlikeholdsarbeidere på dette stedet 1/3 poeng. Hvis dette stedet også har et overordnet sted, får vedlikeholdsarbeidere på dette stedet 1/4 poeng osv. Hvis firmaet ditt bruker aktivasted, som vi ikke anbefaler, brukes sted, område og sone til å beregne stedspoengsummer. Arbeiderne får full poengsum hvis de befinner seg på stedet og i området og sonen som er knyttet til eiendelen. Hvis arbeiderstedet bare samsvarer med sted og område, er rangeringspoengsummen for vedlikeholdsarbeideren 2/3 for hele poengsummen. Hvis vedlikeholdsarbeiderstedet bare samsvarer med sted, er rangeringspoengsummen for vedlikeholdsarbeideren 1/3 for hele poengsummen. |
+| Arbeiderens startdato  | For hver dato som den planlagte startdatoen er senere enn forventet startdato, trekkes poengsummen fra.  |
 
 >[!NOTE]
 >Hvis en poengsum settes til 0, beregnes ikke denne poengsummen. Dette er nyttig hvis du for eksempel ikke vil ta med en ansvarlig arbeider i planleggingen.
@@ -120,3 +120,21 @@ Krav til kompetanse og sertifikater kan defineres i vedlikeholdsjobbtyper (**Akt
 
 Vedlikeholdsjobbtyper og vedlikeholdsjobbfag velges i arbeidsordrejobber. Hvis kompetanse eller sertifikater er valgt for en vedlikeholdsjobbtype eller et vedlikeholdsjobbfag, og vedlikeholdsjobbtypen eller vedlikeholdsjobbfaget brukes på en arbeidsordrejobb, er det bare vedlikeholdsarbeidere med samsvarende ferdigheter og sertifikater som tilordnes til å jobbe på arbeidsordren.
 
+<a name="gantt"></a>
+
+## <a name="work-with-scheduled-work-orders-using-a-gantt-chart"></a>Arbeide med planlagte arbeidsordrer ved hjelp av et Gantt-diagram
+
+I **Gantt-diagrammet for planlagte arbeidsordrer** finner du et grafisk grensesnitt der du kan vise og planlegge arbeids rdrene på nytt.
+
+Slik viser og arbeider du med Gantt-diagrammet:
+
+1. Gå til **Aktivastyring > Arbeidsordrer > Gantt-diagram for planlagte arbeidsordrer**.
+
+1. Bruk rullegardinlistene og feltene i delen **Innstillinger** til å angi hvilken funksjonsplassering, hvilket tidsintervall og hvilken tidsskala som skal vises i Gantt-diagrammet.
+
+1. Velg **Bruk**.
+
+    - Gantt-diagrammet oppdateres for å vise de planlagte arbeidsordrene som samsvarer med innstillingene. Hver arbeidsordre representeres av et blått rektangel.
+    - Hvis du vil endre planene for en vist arbeidsordre, velger du og drar den til riktig ny dato og nytt klokkeslett.
+
+1. Hvis du har gjort endringer, velger du **Lagre** i handlingsruten for å lagre dem.

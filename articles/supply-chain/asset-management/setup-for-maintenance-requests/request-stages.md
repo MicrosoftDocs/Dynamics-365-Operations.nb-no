@@ -3,7 +3,7 @@ title: Livsløpstilstander for vedlikeholdsanmodning
 description: Dette emnet beskriver hvordan du definerer livsløpstilstander for vedlikeholdsanmodninger i Aktivastyring.
 author: josaw1
 manager: tfehr
-ms.date: 07/26/2019
+ms.date: 04/20/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9d1e4412af0619b57467b5bcba75ea7259604d1d
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 08c45742b064f3a13a0ea2704f8873b9c53aad4e
+ms.sourcegitcommit: e06da171b9cba8163893e30244c52a9ce0901146
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3209013"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "3275632"
 ---
 # <a name="maintenance-request-lifecycle-states"></a>Livsløpstilstander for vedlikeholdsanmodning
 
@@ -47,7 +47,7 @@ Livsløpstilstander for vedlikeholdsanmodninger definerer stadiene som en foresp
 6. Angi alternativet **Angi faktisk slutt** til **Ja** hvis en faktisk sluttdato og et klokkeslett automatisk skal angis på en vedlikeholdsanmodning som er i denne livsløpstilstanden.
 7. Angi alternativet **Opprett arbeidsordre** til **Ja** hvis en arbeidsordre kan opprettes fra en vedlikeholdsanmodning som er i denne livsløpstilstanden.
 8. Sett alternativet **Slett** til **Ja** hvis en vedlikeholdsanmodning kan slettes mens den er i denne livsløpstilstanden.
-9. På hurtigfanen **Oppdater** er alternativene **Innkommende** og **Utgående** i **Aktiva**-delen relevante hvis du bruker depotreparasjon. Angi det aktuelle alternativet til **Ja** hvis livsløpstilstnaden for aktivaene som er valgt i en vedlikeholdsanmodning, skal oppdateres automatisk til **Innkommende** eller **Utgående** når livsløpstilstanden for denne vedlikeholdsanmodningen er angitt til **Innkommende** eller **Utgående**.
+9. I hurtigfanen **Oppdater** er de **inngående** og **utgående** alternativene i **Aktiva**-delen relevante hvis du bruker depotreparasjon. Sett det riktige alternativet til **Ja** hvis livsløpstilstanden for aktivaene som er valgt i en vedlikeholdsforespørsel, automatisk skal oppdateres til **Inngående** eller **Utgående** når livsløpstilstanden for vedlikeholdsanmodning for vedlikeholdsforespørselen er satt til **Inngående** eller **Utgående**.
 
 Illustrasjonen nedenfor viser et eksempel på siden **Livsløpstilstander for vedlikeholdsanmodning**.
 

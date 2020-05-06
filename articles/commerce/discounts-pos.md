@@ -19,17 +19,16 @@ ms.search.industry: Retail, Commerce
 ms.author: asharchw
 ms.search.validFrom: 2020-02-28
 ms.dyn365.ops.version: Application update 10.0.10
-ms.openlocfilehash: 54201de6b242f8100c19a78468476a6308b1b18a
-ms.sourcegitcommit: 5554b3abb4365666992efad692ae28e943faebd4
+ms.openlocfilehash: 89f7b79733f01c089a16c507b127b23ada5df1a6
+ms.sourcegitcommit: 02640a0f63daa9e509146641824ed623c4d69c7f
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "3116562"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "3265593"
 ---
 # <a name="show-discounts-in-pos"></a>Vise rabatter i POS
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
 
 Kampanjer spiller en viktig rolle i motivering av kunder som foretar innkjøpsavgjørelser. Ferier kan for eksempel produsere det høyeste antallet salg for forhandlere, fordi hele detaljmarkedet blir oversvømt med kampanjer og rabatter. Hvis butikkforbindelser vet om og forstår tilgjengelige kampanjer, kan de enkelt dra nytte av disse kampanjene for å oppnå kryss- og mersalg. I dette emnet finner du informasjon om hvordan Microsoft Dynamics 365 Commerce hjelper selgere med å lære om kampanjer og hvordan de kan brukes for krysssalg- og videresalgsbevegelser.
 

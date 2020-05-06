@@ -3,7 +3,7 @@ title: Kjøpsboksmodul
 description: Dette emnet dekker kjøpsboksmoduler og beskriver hvordan du legger dem til områdesider i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
-ms.date: 04/13/2020
+ms.date: 04/14/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 35b7027e0f0b680dd82ebfcea754fef1617c0163
-ms.sourcegitcommit: ac966ea3a6c557fb5f9634b187b0e788d3e82d4d
+ms.openlocfilehash: 095374c14cddf1ae3608ae1427a7144b3e7ca7b2
+ms.sourcegitcommit: 7a1d01122790b904e2d96a7ea9f1d003392358a6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "3261404"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "3269757"
 ---
 # <a name="buy-box-module"></a>Kjøpsboksmodul
 
@@ -80,15 +80,15 @@ Hvis du vil legge til en kjøpsboksmodul på en ny side og angi de nødvendige e
 1. Opprett et fragment kalt **kjøpsboksfragment**, og legg til en kjøpsboksmodul i den.
 1. I **Media**-sporet i kjøpsboksmodulen legger du til en mediegallerimodul.
 1. I **Butikkvelger**-sporet i kjøpsboksmodulen legger du til en butikkvelgermodul.
-1. Sjekk inn siden, og publiser den.
+1. Velg **Lagre**, velg **Fullfør redigering** for å sjekke inn fragmentet, og velg deretter **Publiser** for å publisere det.
 1. Opprett en mal for en produktdetaljside, og gi den navnet **PDP-mal**.
 1. Legg til en standardside.
 1. I **Hoved**-sporet på standardsiden legger du til et kjøpsboksfragment.
-1. Lagre malen, fullfør redigeringen av den, og publiser den.
+1. Velg **Lagre**, velg **Fullfør redigering** for å sjekke inn malen, og velg deretter **Publiser** for å publisere den.
 1. Bruk malen du nettopp opprettet, for å opprette en side som heter **PDP-side**.
 1. I **Hoved**-sporet på den nye siden legger du til et kjøpsboksfragment.
 1. Lagre og forhåndsvis siden. Legg til spørringsstrengparameteren **?productid=&lt;product id&gt;** i URL-adressen for forhåndsvisningssiden. På den måten brukes produktkonteksten til å laste inn og gjengi forhåndsvisningssiden.
-1. Lagre siden, fullfør redigeringen av den, og publiser den. En kjøpsboks skal vises på siden for produktdetaljer.
+1. Velg **Lagre**, velg **Fullfør redigering** for å sjekke inn siden, og velg deretter **Publiser** for å publisere den. En kjøpsboks skal vises på siden for produktdetaljer.
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 

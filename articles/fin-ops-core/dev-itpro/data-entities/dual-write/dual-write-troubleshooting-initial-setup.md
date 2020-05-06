@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: e20c9c5e1250c8e65b5642a7c45d7ae859315697
-ms.sourcegitcommit: 68f1485de7d64a6c9eba1088af63bd07992d972d
+ms.openlocfilehash: 76e104c9ebd7db7ebcbaf214e84be6c4353e8a73
+ms.sourcegitcommit: e06da171b9cba8163893e30244c52a9ce0901146
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "3172674"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "3275447"
 ---
 # <a name="troubleshoot-issues-during-initial-setup"></a>Feilsøke problemer under første oppsett
 
@@ -39,7 +39,7 @@ Dette emnet inneholder feilsøkingsinformasjon om dobbel skriving-integrasjon me
 
 ## <a name="you-cant-link-a-finance-and-operations-app-to-common-data-service"></a>Du kan ikke koble en Finance and Operations-app til Common Data Service
 
-**Nødvendig legitimasjon for å konfigurere dobbel skriving:** Azure AD-leieradministrator
+**Nødvendig rolle for å konfigurere dobbel skriving:** Systemadministrator i Finance and Operations-apper og Common Data Service.
 
 Feil på **oppsett-koblingen til Common Data Service**-siden skyldes vanligvis ufullstendige oppsetts- eller tillatelsesproblemer. Kontroller at hele tilstandskontrollen bestås på **Oppsett-koblingen til Common Data Service**-siden, som vist i illustrasjonen nedenfor. Du kan ikke koble til dobbel skriving med mindre hele tilstandssjekken bestås.
 

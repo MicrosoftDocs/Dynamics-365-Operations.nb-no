@@ -3,7 +3,7 @@ title: Dobbel valuta
 description: Dette emnet gir informasjon om dobbel valuta, der rapporteringsvalutaen brukes som en ekstra regnskapsvaluta for Microsoft Dynamics 365 Finance.
 author: kweekley
 manager: AnnBe
-ms.date: 08/07/2019
+ms.date: 04/17/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-10
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 4a01b8387afd45648f1205d4246378edc8a9e79b
-ms.sourcegitcommit: ff6dde637d2f5d2bd18a582eb41573d4c69acdd6
+ms.openlocfilehash: 8b71b571b03e8fa2648c90258bbcaa020baeabc0
+ms.sourcegitcommit: 984604fd651d74aa49a2d7513f096faaf49f9f27
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "3249017"
+ms.lasthandoff: 04/18/2020
+ms.locfileid: "3270318"
 ---
 # <a name="dual-currency"></a>Dobbel valuta
 
@@ -174,10 +174,10 @@ I tillegg er store endringer gjort i avskrivningsprosessen. Disse endringene kre
 
         | Anleggsmiddel | Bestill      | transaksjonstype | Transaksjonsdato | Valuta. | Beløp i transaksjonsvaluta | Beløp  | Valutakurs | Rapporteringsvalutabeløp |
         |-------------|-----------|------------------|------------------|----------|--------------------------------|---------|-----------|---------------------------|
-        | BUIL-00001  | 200\_SLLT | Anskaffelse      | 3/6/2016         | DKK      | 1 000 000                      | 500 000 | 2,5       | 250 000                   |
-        | BUIL-00001  | 200\_SLLT | Avskrivning     | 3/6/2016         | DKK      | 50 000                         | 50 000  | 2,5       | 250 000                   |
-        | BUIL-00001  | 200\_SLLT | Avskrivning     | 3/6/2016         | DKK      | 50 000                         | 50 000  | 2,5       | 250 000                   |
-        | BUIL-00001  | 200\_SLLT | Avskrivning     | 3/6/2016         | DKK      | 50 000                         | 50 000  | 2,5       | 250 000                   |
+        | BUIL-00001  | 200\_SLLT | Anskaffelse      | 3/6/2016         | DKK      | 1 000 000                      | 500,000 | 2.5       | 250,000                   |
+        | BUIL-00001  | 200\_SLLT | Avskrivning     | 3/6/2016         | USD      | 50,000                         | 50,000  | 2.5       |  25,000                   |
+        | BUIL-00001  | 200\_SLLT | Avskrivning     | 3/6/2016         | USD      | 50,000                         | 50,000  | 2.5       |  25,000                   |
+        | BUIL-00001  | 200\_SLLT | Avskrivning     | 3/6/2016         | USD      | 50,000                         | 50,000  | 2.5       |  25,000                   |
 
     - Mange kunder sporet detaljene for anleggsmiddeltransaksjon i arbeidsbøker. Disse opplysningene omfatter valutakurser og beløp. Hvis du har disse dataene i en arbeidsbok, kan du opprette en egendefinert valutakurs og oppdatere den med valutakursene fra arbeidsboken. Denne valutakurstypen brukes deretter til å angi en standard valutakurs på anskaffelsesdatoen og beregne rapporteringsvalutabeløpet. Hvis en valutakurstype ikke er valgt, bruker veiviseren valutakurstypen som er definert i Finans.
     - Valutakursen og rapporteringsvalutabeløpene kan endres. Hvis valutakursen endres, beregnes rapporteringsvalutabeløpet på nytt ved hjelp av den nye kursen.

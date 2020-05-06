@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f734def69ff50549acae1506015ce9b23a1b8a93
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: f5c77f32caad5e2e79cbc0e21f72a3daa79acecb
+ms.sourcegitcommit: e06da171b9cba8163893e30244c52a9ce0901146
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3209910"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "3274171"
 ---
 # <a name="create-an-asset"></a>Opprette et aktivum
 
@@ -38,13 +38,13 @@ Dette emnet beskriver hvordan du oppretter et aktivum i Aktivumbehandling.
 3. I dialogboksen **Opprett aktiva** setter du inn data angående **Aktiva** (aktiva-ID) og aktivanavn. Velg dato og klokkeslett for aktivumet i feltet **Gjelder fra**. Fra denne datoen kan du installere aktivumet på et arbeidssted, i tillegg til å flytte og erstatte aktivumet i en aktivagruppe.
 4. I **Aktivatype**-feltet velger du aktivatypen (obligatorisk felt). Velg om nødvendig også **Aktivaprodusent** og **Aktivamodell**. Hvis bare ett produkt er definert, velges dette produktet automatisk i feltet **Aktivaprodusent**. Valgene som er tilgjengelige i feltene **Aktivaprodusent** og **Aktivamodell**, avhenger av oppsettet i [Aktivaprodusenter og -modeller](../setup-for-objects/product-and-model.md).
 5. I **Overordnet objekt**-gruppen er **Aktivum**-feltet tomt som standard. Hvis det er nødvendig, kan du velge et overordnet objekt, og deretter fylles alle feltene i gruppen **Overordnet objekt** ut.
->[!NOTE]  
->Når du velger et overordnet objekt, er to eller tre kategorier tilgjengelige: kategorien **Mine aktiva** inneholder aktiva som er knyttet til arbeidsstedene der du (vedlikeholdspersonen som er logget på systemet), kan være tilordnet. Hvis ingen arbeidssteder er definert for en vedlikeholdsperson i skjemaet [Vedlikeholdsarbeidere og arbeidsgrupper](../setup-for-objects/workers-and-worker-groups.md), er ikke kategorien **Mine aktiva** synlig. Kategorien **Aktive aktiva** inneholder en liste over alle aktiva med statusen "Aktiv" for livsløpstilstanden. Kategorien **Aktivavisning** viser en trevisning av arbeidssteder og aktiva som er installert på disse stedene.
+    >[!NOTE]  
+    >Når du velger et overordnet objekt, er to eller tre kategorier tilgjengelige: kategorien **Mine aktiva** inneholder aktiva som er knyttet til arbeidsstedene der du (vedlikeholdspersonen som er logget på systemet), kan være tilordnet. Hvis ingen arbeidssteder er definert for en vedlikeholdsperson i skjemaet [Vedlikeholdsarbeidere og arbeidsgrupper](../setup-for-objects/workers-and-worker-groups.md), er ikke kategorien **Mine aktiva** synlig. Kategorien **Aktive aktiva** inneholder en liste over alle aktiva med statusen "Aktiv" for livsløpstilstanden. Kategorien **Aktivavisning** viser en trevisning av arbeidssteder og aktiva som er installert på disse stedene.
 
 6. Standard arbeidssted du har definert, foreslås for aktivumet i **Aktiva**-gruppen > **Arbeidssted**-feltet. Velg et annet arbeidssted, om nødvendig.
 
->[!NOTE]
->Når du har opprettet et aktivum, kan du installere det på et annet arbeidssted, om nødvendig. Bare aktiva på øverste nivå (aktiva uten et overordnet objekt) kan installeres på et arbeidssted. Dette betyr at du installerer både det øverste nivået i tillegg til eventuelle underordnede objekter på det valgte arbeidsstedet. Les mer om hvordan du installerer aktiva på arbeidssteder i [Innføring i arbeidssteder](../functional-locations/introduction-to-functional-locations.md).
+    >[!NOTE]
+    >Når du har opprettet et aktivum, kan du installere det på et annet arbeidssted, om nødvendig. Bare aktiva på øverste nivå (aktiva uten et overordnet objekt) kan installeres på et arbeidssted. Dette betyr at du installerer både det øverste nivået i tillegg til eventuelle underordnede objekter på det valgte arbeidsstedet. Les mer om hvordan du installerer aktiva på arbeidssteder i [Innføring i arbeidssteder](../functional-locations/introduction-to-functional-locations.md).
 
 7. Klikk **OK**.
 8. Velg aktivumet i **Alle aktiva**-listen, og klikk på **Rediger**-knappen for å legge til mer informasjon om aktivumet.

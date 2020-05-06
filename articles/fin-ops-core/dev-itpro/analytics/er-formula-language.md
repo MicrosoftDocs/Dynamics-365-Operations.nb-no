@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bdd8b9c120fc4a860717a66b9dfa66e6b0daed93
-ms.sourcegitcommit: 3c1eb3d89c6ab9bd70b806ca42ef9df74cf850bc
+ms.openlocfilehash: 79b4640a23d4fc78ade4de57e4071abe6c9ecb56
+ms.sourcegitcommit: 0d7b700950b1f95dc030ceab5bbdfd4fe1f79ace
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "3042717"
+ms.lasthandoff: 04/23/2020
+ms.locfileid: "3284362"
 ---
 # <a name="electronic-reporting-formula-language"></a>Formelspråk i elektronisk rapportering
 
 [!include [banner](../includes/banner.md)]
 
-Elektronisk rapportering (ER) gir en kraftig datatransformasjonsopplevelse. Språket som brukes til å uttrykke de nødvendige datamanipulasjonene i ER-formeldesigneren, ligner på formelspråket i Microsoft Excel.
+Elektronisk rapportering (ER) gir en kraftig datatransformasjonsopplevelse. Språket som brukes til å uttrykke de nødvendige datamanipulasjonene i [ER-formeldesigneren](general-electronic-reporting-formula-designer.md), ligner på formelspråket i Microsoft Excel.
 
 ## <a name="basic-syntax"></a>Grunnleggende syntaks
 
@@ -41,13 +41,13 @@ ER-uttrykk kan inneholde én eller flere av følgende elementer:
 - [Baner](#Paths)
 - [Funksjoner](#Functions)
 
-## <a name="Constants">Konstanter</a>
+## <a name=""></a><a name="Constants">Konstanter</a>
 
 Når du utformer uttrykk, kan du bruke tekst og numeriske konstanter (dvs. verdier som ikke er beregnet). Uttrykket `VALUE ("100") + 20` bruker for eksempel den numeriske konstanten **20** og strengkonstanten **"100"**, og returnerer den numeriske verdien **120**.
 
 ER-formeldesigneren støtter avbruddssekvenser. Derfor kan du angi en uttrykksstreng som skal håndteres på en annen måte. Uttrykket `"Leo Tolstoy ""War and Peace"" Volume 1"` returnerer for eksempel tekststrengen **Leo Tolstoy "Krig og fred" Del 1.**
 
-## <a name="Operators">Operatører</a>
+## <a name=""></a><a name="Operators">Operatører</a>
 
 Tabellen nedenfor viser de aritmetiske operatorene som du kan bruke til å utføre grunnleggende matematiske operasjoner, for eksempel addisjon, subtraksjon, multiplikasjon og divisjon.
 
@@ -91,7 +91,7 @@ Rekkefølgen som delene av et sammensatt uttrykk evalueres i er viktig. Resultat
 
 Hvis et uttrykk inneholder flere etterfølgende operatorer med samme prioritet, evalueres disse operasjonene fra venstre mot høyre. Uttrykket `1 + 6 / 2 \* 3 > 5` returnerer for eksempel **sann**. Vi anbefaler at du bruker parenteser for å eksplisitt angi ønsket rekkefølge på operasjoner i uttrykk, slik at uttrykkene er enklere å lese og vedlikeholde.
 
-## <a name="References">Referanser</a>
+## <a name=""></a><a name="References">Referanser</a>
 
 Alle datakilder for gjeldende ER-komponent som er tilgjengelige under utformingen av et uttrykk, kan brukes som navngitte referanser. Gjeldende ER-komponent kan enten være en modelltilordning eller et format. Gjeldende ER-modelltilordning inneholder for eksempel datakilden **ReportingDate** som returnerer en verdi for *DateTime*-datatypen. Hvis du vil ha verdien riktig formatert i det genererende dokumentet, kan du referere til datakilden i uttrykket som `DATETIMEFORMAT (ReportingDate, "dd-MM-yyyy")`.
 
@@ -112,7 +112,7 @@ Du kan begrense hvordan verdier blir sendt til parametere av denne metodetypen:
 - Bare konstanter kan sendes til metoder av denne typen. Verdiene for konstantene defineres under utformingen.
 - Bare primitive (grunnleggende) datatyper støttes for parametere av denne typen. De primitive datatypene inkluderer *heltall*, *reelle tall*, *boolsk* og *streng*.
 
-## <a name="Paths">Baner</a>
+## <a name=""></a><a name="Paths">Baner</a>
 
 Når et uttrykk refererer til en strukturert datakilde, kan du bruke banedefinisjonen for å velge et bestemt primitivt element i denne datakilden. Tegnet punktum (.) brukes til å skille enkeltelementene i en strukturert datakilde. Gjeldende ER-modelltilordning inneholder for eksempel datakilden **InvoiceTransactions**, og denne datakilden returnerer listen med poster. Oppføringsstrukturen **InvoiceTransactions** inneholder feltene **AmountDebit** og **AmountCredit**, og begge disse feltene returnerer numeriske verdier. Derfor kan du utforme følgende uttrykk for å beregne det fakturerte beløpet: `InvoiceTransactions.AmountDebit - InvoiceTransactions.AmountCredit`. Konstruksjonen `InvoiceTransactions.AmountDebit` i dette uttrykket er banen som brukes til å få tilgang til **AmountDebit**-feltet i **InvoiceTransactions**-datakilden i *Postliste*-typen.
 
@@ -130,7 +130,7 @@ Den gjenstående delen av den absolutte banen vises også i [ER-formelredigering
 
 ![Gjenstående del av den absolutte banen på siden ER-formeldesigner](./media/ER-FormulaLanguage-RelativePath2.png)
 
-## <a name="Functions">Funksjoner</a>
+## <a name=""></a><a name="Functions">Funksjoner</a>
 
 Innebygde ER-funksjoner kan brukes i ER-uttrykk. Alle datakilder i uttrykkskonteksten (dvs. gjeldende ER-modelltilordning eller ER-format), kan brukes som parametere for anropsfunksjoner i henhold til listen over argumenter for anropsfunksjoner. Konstanter kan også brukes som parametere for anropsfunksjoner. Gjeldende ER-modelltilordning inneholder for eksempel datakilden **InvoiceTransactions**, og denne datakilden returnerer listen med poster. Oppføringsstrukturen **InvoiceTransactions** inneholder feltene **AmountDebit** og **AmountCredit**, og begge disse feltene returnerer numeriske verdier. For å beregne det fakturerte beløpet kan du derfor utforme følgende uttrykk som bruker den innebygde ER-avrundingsfunksjonen: `ROUND (InvoiceTransactions.AmountDebit - InvoiceTransactions.AmountCredit, 2)`.
 

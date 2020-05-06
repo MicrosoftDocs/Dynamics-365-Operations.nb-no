@@ -3,7 +3,7 @@ title: Bygge egendefinerte svarsider for 4xx/5xx-statuskodefeil
 description: Dette emnet beskriver hvordan du bygger egendefinerte svarsider for 4xx- og 5xx-statuskodefeil ved hjelp av redigeringsverktøyene i Microsoft Dynamics 365 Commerce.
 author: v-chgri
 manager: annbe
-ms.date: 10/01/2019
+ms.date: 04/14/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 4477a0a43971b5322c6acd6971cba2e79e2dc8c6
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 060f5e5616624279711f61f582e6a898c7eb7785
+ms.sourcegitcommit: 7a1d01122790b904e2d96a7ea9f1d003392358a6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3001147"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "3269550"
 ---
 # <a name="build-custom-response-pages-for-4xx5xx-status-code-errors"></a>Bygge egendefinerte svarsider for 4xx/5xx-statuskodefeil
 
@@ -46,19 +46,21 @@ Følg denne fremgangsmåten for å begynne å bygge en svarside for statuskodefe
 
 Følg denne fremgangsmåten for å bygge malen for svarsiden for statuskodefeil.
 
-1. Gå til **Maler \> Ny mal**.
-1. Gi den nye malen et navn.
+1. Gå til **Maler**.
+1. Velg **Ny** for å opprette en sidemal.
+1. I dialogboksen **Ny mal**, under **Malnavn**, angir du et navn for den nye malen, og velger deretter **OK**.
 1. Bygg malen på grunnlag av strukturen du vil at svarsiden for statuskodefeil skal ha.
-1. Sjekk inn malen, og publiser den.
+1. Velg **Lagre**, velg **Fullfør redigering** for å sjekke inn malen, og velg deretter **Publiser** for å publisere den. 
 
 ### <a name="build-the-status-code-error-response-page"></a>Bygge svarsiden for statuskodefeil
 
 Følg denne fremgangsmåten for å bygge svarsiden for statuskodefeil.
 
-1. Gå til **Sider \> Ny side**.
-1. Gi navn til svarsiden for statuskodefeil, men **ikke** angi **URL**-feltet.
+1. Gå til **Sider**.
+1. Velg **Ny** for å opprette en side.
+1. Velg en mal i dialogboksen **Velg en mal**, og skriv deretter inn et navn for svarsiden for statuskodefeil under **Sidenavn**. La feltet **URL-adresse for side** være tomt.
 1. Bygg siden.
-1. Sjekk inn siden, og publiser den.
+1. Velg **Lagre**, velg **Fullfør redigering** for å sjekke inn siden, og velg deretter **Publiser** for å publisere den.
 
 > [!NOTE]
 > Du kan opprette separate svarsider for statuskodefeil for 4xx- og 5xx-statuskodefeil. Du kan også bruke den samme generelle svarsiden statuskodefeil for begge feilkategorier.

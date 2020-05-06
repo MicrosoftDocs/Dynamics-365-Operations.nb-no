@@ -3,7 +3,7 @@ title: Supplere en kategorimålside
 description: Dette emnet dekker supplering av kategorisider i Dynamics 365 Commerce.
 author: v-chgri
 manager: annbe
-ms.date: 10/01/2019
+ms.date: 04/14/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 71348efba9fc1374b9e6599eb23f198d3851036e
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: ca31ec7d2eee7d2b0c863506338341a870ff07ee
+ms.sourcegitcommit: 7a1d01122790b904e2d96a7ea9f1d003392358a6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3003056"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "3269849"
 ---
 # <a name="enrich-a-category-landing-page"></a>Supplere en kategorimålside
 
@@ -39,7 +39,7 @@ I stedet for å bruke standard kategoriside kan det imidlertid være lurt å bru
 
 ![Supplere kategorimålside](./media/CategoryLandingPages.png)
 
-I redigeringsverktøyet inneholder siden **Produkt** en liste over kategorier fra kanalen som er tilordnet området. Hvis statusen **Supplert** er valgt for en kategoriside, er denne kategorisiden supplert. Hvis ikke brukes standard kategoriside og -innhold for kategorien. Du kan forhåndsvise både de supplerte og de ikke-supplerte produktsidene for en kategori ved å velge kategorinavnet.
+I Commerce-områdebyggeren inneholder siden **Produkter** en liste over kategorier fra kanalen som er tilordnet området. Hvis statusen **Supplert** er valgt for en kategoriside, er denne kategorisiden supplert. Hvis ikke brukes standard kategoriside og -innhold for kategorien. Du kan forhåndsvise både de supplerte og de ikke-supplerte produktsidene for en kategori ved å velge kategorinavnet.
 
 Gjør følgende for å gjøre en kategoriside rikere:
 
@@ -48,9 +48,7 @@ Gjør følgende for å gjøre en kategoriside rikere:
 3. Velg en mal for den berikede kategorisiden. Hvis du bare gjør små endringer, kan du velge standard kategoriside. Du kan også velge en bestemt kategorisidemal. Når du velger en mal, åpnes redigeringsprogrammet for side, og den valgte malen brukes til å opprette en ny kategoriside for den valgte kategorien. Siden sjekkes ut til deg, og du kan nå utføre endringene.
 
 > [!NOTE]
-> Moduler som bruker kategorispesifikasjonsdata, bruker dataene fra den valgte kategorien.
->
-> Innstillingene for malen du velger, avgjør hvilke endringer du kan utføre.
+> Moduler som bruker kategorispesifikasjonsdata, bruker dataene fra den valgte kategorien. Innstillingene for malen du velger, avgjør hvilke endringer du kan utføre.
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 

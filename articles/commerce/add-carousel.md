@@ -3,7 +3,7 @@ title: Karusellmodul
 description: Dette emnet dekker karusellmoduler og beskriver hvordan du legger dem til områdesider i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
-ms.date: 01/23/2020
+ms.date: 04/14/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: f279d7db0a92df9e64b1d3f6ca01c65ca1478d79
-ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
+ms.openlocfilehash: f399e4c5618b65b781fdd3ec835e841614579313
+ms.sourcegitcommit: 7a1d01122790b904e2d96a7ea9f1d003392358a6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "3025787"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "3269734"
 ---
 # <a name="carousel-module"></a>Karusellmodul
 
@@ -58,24 +58,25 @@ Du kan legge til innholdsblokkmoduler i en karusellmodul. Egenskapene for karuse
 
 Hvis du vil legge til en karusellmodul på en ny side og angi de nødvendige egenskapene, følger du disse trinnene.
 
-1. Opprett en sidemal som heter **karusellmal**.
+1. Velg **Ny** for å opprette en sidemal.
+1. I dialogboksen **Ny mal**, under **Malnavn**, angir du **Karusellmal**, og velger deretter **OK**.
 1. Legg til en **Standardside**-modul i **Meldingstekst**-sporet.
-1. Sjekk inn malen, og publiser den. 
-1. Bruk karusellmalen du nettopp opprettet, for å opprette en side som heter **karusellside**.
+1. Velg **Fullfør redigering** for å sjekke inn malen, og velg deretter **Publiser** for å publisere den.  
+1. Bruk karusellmalen du nettopp opprettet, for å opprette en side som heter **Karusellside**.
 1. I **Hoved**-sporet på den nye siden legger du til en containermodul. 
 1. I ruten til høyre setter du **Bredde**-verdien til **Fyll skjerm**.
 1. Under **Sideoppsett** legger du til en karusellmodul i containermodulen.
 1. Legg til en innholdsblokkmodul i karusellmodulen. Angi egenskapene for innholdsblokkmodulen ved å angi **Overskrift**, **Kobling**, **Oppsett** og andre egenskaper.
 1. Legg til og konfigurer en ny innholdsblokkmodul.
 1. Angi flere egenskaper for karusellmodulen etter behov.
-1. Lagre og forhåndsvis siden. Siden skal vise en karusell med to moduler i (en hovedbannermodul og en funksjonsmodul). Du kan endre flere egenskaper for modulene karusell, hovedbanner og funksjon for å oppnå ønsket effekt.
-1. Fullfør redigeringen av siden, og publiser den.
+1. Velg **Lagre**, og velg deretter **Forhåndsvisning** for å forhåndsvise siden. Siden skal vise en karusell med to moduler i (en hovedbannermodul og en funksjonsmodul). Du kan endre flere egenskaper for modulene karusell, hovedbanner og funksjon for å oppnå ønsket effekt.
+1. Velg **Fullfør redigering** for å sjekke inn siden, og velg deretter **Publiser** for å publisere den.
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 
 [Startpakke, oversikt](starter-kit-overview.md)
 
-[Kampanjebannermodul](add-alert.md)
+[Promobannermodul](add-alert.md)
 
 [Tekstblokkmodul](add-content-rich-block.md)
 

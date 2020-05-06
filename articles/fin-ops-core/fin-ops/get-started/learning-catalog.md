@@ -3,20 +3,20 @@ title: Læringskatalog for Finance and Operations
 description: Finn alle opplæringsalternativene for Finance and Operations.
 author: loreleishannonmsft
 ms.topic: article
-ms.date: 02/19/2020
+ms.date: 04/17/2020
 ms.author: v-lshann
-audience: Application User
+audience: Application user
 ms.reviewer: margoc
-ms.search.scope: Core, Operations
+ms.search.scope: Operations
 ms.search.region: Global
-ms.search.validFrom: 2017-12-31
-ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 751e0ec649d962af084f992957f0e4821ea9509d
-ms.sourcegitcommit: 41950e3b5e4d1d0014bef308ac017cb4c2b8e134
+ms.search.validFrom: 2019-1-29
+ms.dyn365.ops.version: 8.0999999999999996
+ms.openlocfilehash: 32b67cfd4c007ddc590cd0ee95255d6f3fbc1d17
+ms.sourcegitcommit: e9fadf6f6dafdcefaff8e23eaa3c85f53437db3f
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "3077999"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "3279055"
 ---
 # <a name="learning-catalog-for-finance-and-operations"></a>Læringskatalog for Finance and Operations
 
@@ -33,6 +33,10 @@ Finn riktig elektronisk opplæring, personlige workshops og arrangementer for di
     Bestemmer du deg for om du skal investere i ny teknologi? 
 
     [Opplæringskatalog for forretningsmessige beslutningstakere og tekniske beslutningstakere](learning-catalog-bdm.md#)
+
+    [Kom i gang](learning-catalog-bdm.md#get-started)
+
+    [Eksamen](learning-catalog-bdm.md#exam)
 
         :::column-end:::
     :::column:::
@@ -53,12 +57,14 @@ Finn riktig elektronisk opplæring, personlige workshops og arrangementer for di
 
     [Økonomistyring](learning-catalog-business-user.md#financial-management)
 
+    [Eksamen](learning-catalog-business-user.md#exam)
+
     :::column-end:::
 :::row-end:::
 :::row:::
     :::column:::
 
-        ### <a name="implementation-project-managers"></a>Ledere for implementeringsprosjekt
+    ### <a name="implementation-project-managers"></a>Ledere for implementeringsprosjekt
 
     Er du ansvarlig for å sørge for at bedriftens implementering går greit?
 
@@ -73,6 +79,9 @@ Finn riktig elektronisk opplæring, personlige workshops og arrangementer for di
     [Produksjon](learning-catalog-project-manager.md#manufacturing)
 
     [Forsyningskjedeadministrasjon](learning-catalog-project-manager.md#supply-chain-management)
+
+    [Eksamener](learning-catalog-project-manager.md#exams)
+
         :::column-end:::
     :::column:::
 
@@ -82,15 +91,19 @@ Finn riktig elektronisk opplæring, personlige workshops og arrangementer for di
 
     [Opplæringskatalog for administratorer](learning-catalog-administrator.md)
 
-    [Komme i gang](learning-catalog-administrator.md#get-started)
+    [Kom i gang](learning-catalog-administrator.md#get-started)
 
     [Kunnskap om kjerneplattform](learning-catalog-administrator.md#core-platform-knowledge)
+
+    [Kjerneutvikling](learning-catalog-administrator.md#core-development)
 
     [Overføring og oppgradering](learning-catalog-administrator.md#migration-and-upgrade)
 
     [Service](learning-catalog-administrator.md#servicing)
 
     [Tester](learning-catalog-administrator.md#testing)
+
+    [Eksamen](learning-catalog-administrator.md#exam)
 
   :::column-end:::
 :::row-end:::
@@ -131,6 +144,8 @@ Finn riktig elektronisk opplæring, personlige workshops og arrangementer for di
 
     [Forsyningskjedeadministrasjon](learning-catalog-functional-consultant.md#supply-chain-management)
 
+    [Eksamener](learning-catalog-functional-consultant.md#exams)
+
     :::column-end:::
 :::row-end:::
 :::row:::
@@ -141,6 +156,10 @@ Finn riktig elektronisk opplæring, personlige workshops og arrangementer for di
     Er du ansvarlig for å hjelpe kundene med å kjøpe den riktige løsningen? 
 
     [Opplæringskatalog for salg og markedsføring for Microsoft-partner](learning-catalog-partner-sales.md)
+
+    [Kom i gang](learning-catalog-partner-sales.md#get-started)
+
+    [Eksamen](learning-catalog-partner-sales.md#exam)
 
         :::column-end:::
     :::column:::

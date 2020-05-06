@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: 59384d8e8d043eb14231a471c7218ced2dddf739
-ms.sourcegitcommit: 68f1485de7d64a6c9eba1088af63bd07992d972d
+ms.openlocfilehash: 53df00de82b101aa02160d865a9c3bbebcfcae15
+ms.sourcegitcommit: e06da171b9cba8163893e30244c52a9ce0901146
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "3172883"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "3275470"
 ---
 # <a name="troubleshoot-issues-related-to-upgrades-of-finance-and-operations-apps"></a>Feilsøke problemer i forbindelse med oppgraderinger av Finance and Operations-apper
 
@@ -85,9 +85,8 @@ Hvis problemet fremdeles ikke er løst, følger du denne fremgangsmåten.
 > Denne fremgangsmåten fører deg gjennom prosessen med å slette en enhet og deretter legge den til på nytt. Hvis du vil unngå problemer, må du følge fremgangsmåten nøye.
 
 1. I Finance and Operations-appen går du til **Arbeidsområder \> Databehandling** og velger flisen **Dataenheter**.
-2. Finn enheten som mangler feltet. Noter målenheten, oppsamlingstabellen, enhetsnavnet og andre kolonneverdier.
-3. Hvis noen av behandlingsgruppene er avhengige av denne enheten, må du utføre nødvendige handlinger for behandlingsgruppene før du sletter enheten.
-4. Slett enheten som mangler feltet.
-5. Velg **Ny**, og legg til enheten igjen. Angi verdiene som du noterte i trinn 2.
-6. Åpne **Enhetstilordning**-siden fra **Dobbel skriving**-siden i Finance and Operations-appen.
-7. Velg **Oppdater enhetsliste** for å fylle ut feltene i enhetstilordningene automatisk.
+2. Finn enheten som mangler attributtet. Klikk **Endre måltilordning** på verktøylinjen.
+3. Klikk **Generer tilordning** under **Tilordne oppsamling til mål**.
+4. Åpne **Enhetstilordning**-siden fra **Dobbel skriving**-siden i Finance and Operations-appen.
+5. Hvis attributtet ikke fylles ut automatisk på kartet, legger du det til manuelt ved å klikke **Legg til attributt** og deretter **Lagre**. 
+6. Velg kartet, og klikk **Kjør**.

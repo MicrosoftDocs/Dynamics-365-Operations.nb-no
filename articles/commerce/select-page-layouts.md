@@ -3,7 +3,7 @@ title: Velge sideoppsett
 description: Dette emnet forklarer hvordan du kan opprette og velge sideoppsett i Microsoft Dynamics 365 Commerce.
 author: psimolin
 manager: annbe
-ms.date: 10/01/2019
+ms.date: 04/14/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: a3e8efcdc236911ac79007c606d5d1da56f6c424
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 0cbcba7ce4f40298e0f2665fa811b125f11e9490
+ms.sourcegitcommit: 7a1d01122790b904e2d96a7ea9f1d003392358a6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3002780"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "3269918"
 ---
 # <a name="select-page-layouts"></a>Velge sideoppsett
 
@@ -39,7 +39,7 @@ Dette emnet forklarer hvordan du kan opprette og velge sideoppsett i Microsoft D
 Hvis du vil opprette oppsett for en eksisterende side, følger du disse trinnene.
 
 1. Gå til **Sider**, og finn den eksisterende siden i listen. Bruk søkefunksjonen etter behov.
-1. Velg siden, sjekk den ut, og velg den deretter for å åpne den. Noter deg modulrekkefølgen.
+1. Velg siden, velg **Rediger** for å sjekke den ut, og velg deretter sidenavnet for å åpne den. Noter deg modulrekkefølgen.
 1. Velg **Lagre som nytt oppsett**.
 1. Angi et navn på oppsettet, og velg deretter **OK**.
 1. Velg **Konverter til innebygd oppsett**.
@@ -47,6 +47,7 @@ Hvis du vil opprette oppsett for en eksisterende side, følger du disse trinnene
 1. Velg **Lagre som nytt oppsett**.
 1. Angi et navn på oppsettet, og velg deretter **OK**.
 1. Velg **Endre oppsett**, velg det første oppsettet du opprettet, og velg deretter **OK**. Noter deg modulrekkefølgen. Endre den slik at den samsvarer med modulrekkefølgen som ble lagret med oppsettet.
+1. Velg **Fullfør redigering** for å sjekke inn siden, og velg deretter **Publiser** for å publisere den. 
 
 ## <a name="select-a-different-layout-for-an-existing-page"></a>Velge et annet oppsett for en eksisterende side
 
@@ -56,9 +57,10 @@ Hvis du vil opprette oppsett for en eksisterende side, følger du disse trinnene
 Hvis du vil velge et annet oppsett for en eksisterende side, følger du disse trinnene.
 
 1. Gå til **Sider**, og finn den eksisterende siden i listen. Bruk søkefunksjonen etter behov.
-1. Velg siden, sjekk den ut, og velg den deretter for å åpne den.
+1. Velg siden, velg **Rediger** for å sjekke den ut, og velg deretter sidenavnet for å åpne den.
 1. Velg **Endre oppsett**.
 1. Velg det nye oppsettet for siden, og velg deretter **OK**. Redigeringsprogrammet for siden oppdateres slik at det nye oppsettet vises.
+1. Velg **Fullfør redigering** for å sjekke inn siden, og velg deretter **Publiser** for å publisere den.
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 
