@@ -17,30 +17,32 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: f8c2cdbf055a2854c4140d3ccc264da260c7cdf5
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 45d96317f5b6ef956647bfc511e80533e2c34bca
+ms.sourcegitcommit: e06da171b9cba8163893e30244c52a9ce0901146
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3002272"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "3275354"
 ---
-# <a name="compliance-overview"></a><span data-ttu-id="5b484-103">Oversikt over samsvar</span><span class="sxs-lookup"><span data-stu-id="5b484-103">Compliance overview</span></span>
+# <a name="compliance-overview"></a><span data-ttu-id="8d402-103">Oversikt over samsvar</span><span class="sxs-lookup"><span data-stu-id="8d402-103">Compliance overview</span></span>
 
 
 [!include [banner](includes/banner.md)]
 
-<span data-ttu-id="5b484-104">Dette emnet er en oversikt over samsvarsveiledningen som leveres med Microsoft Dynamics 365 Commerce, for å hjelpe deg med å gjøre firmaets nettsteder kompatible.</span><span class="sxs-lookup"><span data-stu-id="5b484-104">This topic is an overview of the compliance guidance that is provided with Microsoft Dynamics 365 Commerce to help you make your company's sites compliant.</span></span> <span data-ttu-id="5b484-105">Etterlevelse er en viktig faktor for alle virksomheter, fordi det hjelper brukerbasen med å koble til deres områdeinnhold.</span><span class="sxs-lookup"><span data-stu-id="5b484-105">Compliance is an important factor for all businesses, because it helps their user base connect with their site content.</span></span> <span data-ttu-id="5b484-106">Gjennom etterlevelse kan du også bidra til å beskytte din bedrift fra dyre rettslige skritt eller høye bøter.</span><span class="sxs-lookup"><span data-stu-id="5b484-106">By staying compliant, you can also help protect your company from expensive legal action or hefty fines.</span></span>
+<span data-ttu-id="8d402-104">Dette emnet er en oversikt over samsvarsveiledningen som leveres med Microsoft Dynamics 365 Commerce, for å hjelpe deg med å gjøre firmaets nettsteder kompatible.</span><span class="sxs-lookup"><span data-stu-id="8d402-104">This topic is an overview of the compliance guidance that is provided with Microsoft Dynamics 365 Commerce to help you make your company's sites compliant.</span></span> <span data-ttu-id="8d402-105">Etterlevelse er en viktig faktor for alle virksomheter, fordi det hjelper brukerbasen med å koble til deres områdeinnhold.</span><span class="sxs-lookup"><span data-stu-id="8d402-105">Compliance is an important factor for all businesses, because it helps their user base connect with their site content.</span></span> <span data-ttu-id="8d402-106">Gjennom etterlevelse kan du også bidra til å beskytte din bedrift fra dyre rettslige skritt eller høye bøter.</span><span class="sxs-lookup"><span data-stu-id="8d402-106">By staying compliant, you can also help protect your company from expensive legal action or hefty fines.</span></span>
 
-<span data-ttu-id="5b484-107">Samsvarsdokumentasjonen inneholder en gjennomgang av områder du bør vurdere når du bruker Dynamics 365 Commerce, for å hjelpe deg med å oppfylle firmaets samsvarskrav.</span><span class="sxs-lookup"><span data-stu-id="5b484-107">The compliance documentation includes a review of areas that you should consider when you use Dynamics 365 Commerce, to help you meet your company's compliance requirements.</span></span>
+<span data-ttu-id="8d402-107">Samsvarsdokumentasjonen inneholder en gjennomgang av områder du bør vurdere når du bruker Dynamics 365 Commerce, for å hjelpe deg med å oppfylle firmaets samsvarskrav.</span><span class="sxs-lookup"><span data-stu-id="8d402-107">The compliance documentation includes a review of areas that you should consider when you use Dynamics 365 Commerce, to help you meet your company's compliance requirements.</span></span>
 
-<span data-ttu-id="5b484-108">Du er ansvarlig for å se gjennom firmaets samsvarskrav og for redigering og bygging av områder som oppfyller standardene for disse kravene.</span><span class="sxs-lookup"><span data-stu-id="5b484-108">You're responsible for reviewing your company's compliance requirements, and for authoring and building sites that meet the standards of those requirements.</span></span> <span data-ttu-id="5b484-109">Emnene nedenfor gir eksempler som viser hvordan du kan ta hensyn til overholdelse når du bruker redigeringsverktøyene for handel.</span><span class="sxs-lookup"><span data-stu-id="5b484-109">The following topics provide examples that show how you can take compliance into account as you use the Commerce authoring tools.</span></span>
+<span data-ttu-id="8d402-108">Du er ansvarlig for å se gjennom firmaets samsvarskrav og for redigering og bygging av områder som oppfyller standardene for disse kravene.</span><span class="sxs-lookup"><span data-stu-id="8d402-108">You're responsible for reviewing your company's compliance requirements, and for authoring and building sites that meet the standards of those requirements.</span></span> <span data-ttu-id="8d402-109">Emnene nedenfor gir eksempler som viser hvordan du kan ta hensyn til overholdelse når du bruker redigeringsverktøyene for handel.</span><span class="sxs-lookup"><span data-stu-id="8d402-109">The following topics provide examples that show how you can take compliance into account as you use the Commerce authoring tools.</span></span>
 
-<span data-ttu-id="5b484-110">Hvis du vil vite mer om de grunnleggende prinsippene som Microsoft bruker, kan du gå til [Microsoft Trust Center](https://www.microsoft.com/trust-center).</span><span class="sxs-lookup"><span data-stu-id="5b484-110">To learn more about the basic principles that Microsoft uses, visit the [Microsoft Trust Center](https://www.microsoft.com/trust-center).</span></span> <span data-ttu-id="5b484-111">På dette området kan du også få mer informasjon om samsvarsområder.</span><span class="sxs-lookup"><span data-stu-id="5b484-111">On that site, you can also get more information about areas of compliance.</span></span>
+<span data-ttu-id="8d402-110">Hvis du vil vite mer om de grunnleggende prinsippene som Microsoft bruker, kan du gå til [Microsoft Trust Center](https://www.microsoft.com/trust-center).</span><span class="sxs-lookup"><span data-stu-id="8d402-110">To learn more about the basic principles that Microsoft uses, visit the [Microsoft Trust Center](https://www.microsoft.com/trust-center).</span></span> <span data-ttu-id="8d402-111">På dette området kan du også få mer informasjon om samsvarsområder.</span><span class="sxs-lookup"><span data-stu-id="8d402-111">On that site, you can also get more information about areas of compliance.</span></span>
 
-## <a name="additional-resources"></a><span data-ttu-id="5b484-112">Tilleggsressurser</span><span class="sxs-lookup"><span data-stu-id="5b484-112">Additional resources</span></span>
+## <a name="additional-resources"></a><span data-ttu-id="8d402-112">Tilleggsressurser</span><span class="sxs-lookup"><span data-stu-id="8d402-112">Additional resources</span></span>
 
-[<span data-ttu-id="5b484-113">Tilgjengelighetsfunksjoner og egenskaper</span><span class="sxs-lookup"><span data-stu-id="5b484-113">Accessibility features and capabilities</span></span>](accessibility.md)
+[<span data-ttu-id="8d402-113">Funksjoner og egenskaper for tilgjengelighet</span><span class="sxs-lookup"><span data-stu-id="8d402-113">Accessibility features and capabilities</span></span>](accessibility.md)
 
-[<span data-ttu-id="5b484-114">Samsvar for informasjonskapsel</span><span class="sxs-lookup"><span data-stu-id="5b484-114">Cookie compliance</span></span>](cookie-compliance.md)
+[<span data-ttu-id="8d402-114">Informasjonskapselsamsvar</span><span class="sxs-lookup"><span data-stu-id="8d402-114">Cookie compliance</span></span>](cookie-compliance.md)
 
-[<span data-ttu-id="5b484-115">Legge til en side med personvernpolicy</span><span class="sxs-lookup"><span data-stu-id="5b484-115">Add a privacy policy page</span></span>](add-privacy-page.md)
+[<span data-ttu-id="8d402-115">Legge til en side for personvernpolicy</span><span class="sxs-lookup"><span data-stu-id="8d402-115">Add a privacy policy page</span></span>](add-privacy-page.md)
+
+[<span data-ttu-id="8d402-116">Erstatte bruker-IDer knyttet til sporede innholdsendringer</span><span class="sxs-lookup"><span data-stu-id="8d402-116">Replace user IDs associated with tracked content changes</span></span>](replace-IDs-tracked-changes.md)
