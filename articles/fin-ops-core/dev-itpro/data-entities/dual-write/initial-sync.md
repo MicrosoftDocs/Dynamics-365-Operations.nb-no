@@ -19,22 +19,18 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: 4adb2c8d57ad8f67346b8d34212b7a4b0bd052ab
-ms.sourcegitcommit: 68f1485de7d64a6c9eba1088af63bd07992d972d
+ms.openlocfilehash: 9ae14703941b97308bca5845eeac3eb9b181ae75
+ms.sourcegitcommit: e06da171b9cba8163893e30244c52a9ce0901146
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "3173137"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "3275493"
 ---
 # <a name="entity-dependency-chain-synchronization-order"></a>Enhetsavhengighetskjede (synkroniseringsrekkefølge)
 
 [!include [banner](../../includes/banner.md)]
 
-
-
-I de følgende tabellene er enhetene oppført i den rekkefølgen du skal aktivere dem. Når du aktiverer en tilordning for innledende synkronisering, oppdager dobbel skriving automatisk andre tilordninger som må aktiveres. Du kan bruke siden **Dobbel skriving** i Finance and Operations-apper til å velge eller oppheve valget av enheter under den innledende synkroniseringen.
-
-I den nyeste versjonen av dobbel skriving kan du bare aktivere noen enheter, og avhengighetene håndteres for deg.
+Dette emnet angir synkroniseringsrekkefølgen du må følge for å opprette de opprinnelige dataene hvis du ikke bruker enhetsavhengighetene som leveres av funksjonen **innledende synkronisering**. Hvis du ikke bruker **innledende synkronisering**, må du kjøre hver enhetstilordning hver for seg.
 
 ## <a name="dynamics-365-supply-chain-management-entities"></a>Dynamics 365 Supply Chain Management-enheter
 

@@ -3,7 +3,7 @@ title: Legge til en side med personvernpolicy
 description: Dette emnet beskriver hvordan du legger til en side med personvernpolicy på området ditt i Microsoft Dynamics 365 Commerce.
 author: v-chgri
 manager: annbe
-ms.date: 01/08/2020
+ms.date: 04/14/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: ee9a68f46c91299065732e5f65479906f9e06079
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 59a2d9712a73c607cf5521f8e79e8e2558854fc4
+ms.sourcegitcommit: e06da171b9cba8163893e30244c52a9ce0901146
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3001329"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "3274217"
 ---
 # <a name="add-a-privacy-policy-page"></a>Legge til en side med personvernpolicy
 
@@ -54,36 +54,33 @@ Hvis du vil starte, går du til webområdet du vil bygge en personvernspolicy-si
 
 Hvis du vil opprette en mal, følger du trinnene nedenfor.
 
-1. Gå til **Maler \> Ny mal**.
-1. Angi malnavnet, og velg deretter **OK**.
-1. I malen legger du til eventuelle nødvendige moduler i de nødvendige sidesporene. Hvis du vil ha veiledning, holder du pekeren over de røde utropstegnene.
-
-    **HTML-hode**-sporet kan for eksempel kreve en **Standard eksternt skript**-modul.
-
+1. Gå til **Maler**, og velg deretter **Ny** for å opprette en sidemal.
+1. I dialogboksen **Ny mal**, under **Malnavn**, angir du **Kampanjebannermal**, og velger deretter **OK**.
+1. I malen legger du til eventuelle nødvendige moduler i de nødvendige sidesporene. Hvis du vil ha veiledning, holder du pekeren over de røde utropstegnene. (**HTML-hode**-sporet kan for eksempel kreve en **Standard eksternt skript**-modul.)
 1. Legg til en **Standardside**-modul i **Meldingstekst**-sporet.
 1. I **Standardside**-modulen i **Hoved**-sporet legger du til en **innholdsrik blokk**-modul.
 1. I **Innholdsrik blokk**-modulen kan du legge til en **innholdsrik blokkelement**-modul.
-1. Sjekk inn malen, og publiser den.
+1. Velg **Lagre**, velg **Fullfør redigering** for å sjekke inn malen, og velg deretter **Publiser** for å publisere den.
 
 ### <a name="build-a-privacy-policy-page"></a>Bygge en side med personvernpolicy
 
 Følg denne fremgangsmåten for å bygge en personvernspolicy-side.
 
-1. Gå til **Sider \> Ny side**.
-1. Velg malen for siden for personvernpolicy.
-1. Angi et malnavn og en URL, og velg deretter **OK**. 
+1. Gå til **Sider**, og velg deretter **Ny** for å opprette en side.
+1. I dialogboksen **Velg en mal** velger du malen for siden for personvernpolicy.
+1. Angi et sidenavn og en side-URL, og velg deretter **OK**. 
 1. I **Hoved**-sporet på den nye siden legger du til en **innholdsrik blokk**-modul.
 1. I **Innholdsrik blokk**-modulen kan du legge til en **innholdsrik blokkelement**-modul.
 1. Velg **Legg til datakilde** i egenskapsruten for **Innholdsrik blokk**-modulen, og velg deretter **Rikt tekstinnhold**.
 1. I redigeringsprogrammet for rik tekst skriver du inn innholdet for siden for personvernpolicy. Utvid redigeringsprogrammet for rik tekst til fullskjermmodus etter behov.
 1. Når du er ferdig med å skrive inn innhold, velger du **Forhåndsvisning** for å forhåndsvise siden i nettleseren.
 1. Fyll ut eventuelle gjenværende tillegg til side- og modulegenskapene.
-1. Sjekk inn personvernpolicy-siden, og publiser den.
+1. Velg **Lagre**, velg **Fullfør redigering** for å sjekke inn siden, og velg deretter **Publiser** for å publisere den.
 
 Følg disse trinnene for å publisere URL-en for personvernpolicy-siden.
 
 1. Gå til **URL-adresser**, og velg URL-adressen for personvernpolicy-siden.
-1. Publiser den valgte URL-en.
+1. Velg **Publiser** for å publisere den valgte URL-adressen.
 
 ### <a name="create-a-link-to-the-privacy-policy-page-in-a-footer"></a>Opprette en kobling til siden for personvernpolicy i en bunntekst
 
@@ -91,15 +88,14 @@ Du kan legge til en kobling til siden for personvernpolicy i et fragment. På de
 
 Hvis du vil legge til en kobling til et bunntekstfragment, følger du disse trinnene.
 
-1. Gå til **Sidefragmenter \> Nytt sidefragment**.
-1. Velg **Bunntekst**-modulen, og skriv deretter inn et navn i feltet **Navn på sidefragment**.
+1. Gå til **Sidefragmenter**, og velg **Ny** for å opprette et sidefragment.
+1. I dialogboksen **Nytt sidefragment** velger du **Bunntekst**-modulen.
+1. Under **Navn på sidefragment** angir du et navn på fragmentet, og deretter velger du **OK**.
 1. Legg til en **Bunntekstelement**-modul i **Bunntekstkategori**-sporet.
 1. Velg **Koble til tekst** i egenskapsruten til høyre.
 1. I dialogboksen **Koble til tekst** skriver du inn koblingsteksten og koblingsmålet på siden for personvernpolicy, og deretter klikker du **OK**.
-
-    For å få nettadressen til personvernpolicy-siden går du til **Sider**, personvernpolicy-siden, og kopierer URL-adressen fra egenskaper-ruten.
-
-1. Lagre fragmentet, sjekk det inn, og publiser det.
+1. For å få nettadressen til personvernpolicy-siden går du til **Sider**, personvernpolicy-siden, og kopierer URL-adressen fra egenskaper-ruten.
+1. Velg **Lagre**, velg **Fullfør redigering** for å sjekke inn fragmentet, og velg deretter **Publiser** for å publisere det.
 1. Forhåndsvis fragmentet, og test koblingen til siden for personvernpolicy.
 
 Fragmentet kan nå refereres i malen for andre områdesider. Når det refereres til dette fragmentet i **Bunntekst**-modulen for en mal, vises koblingsreferansen på alle sider som er bygget ved hjelp av denne malen.
@@ -108,6 +104,8 @@ Fragmentet kan nå refereres i malen for andre områdesider. Når det refereres 
 
 [Oversikt over samsvar](compliance-overview.md)
 
-[Tilgjengelighetsfunksjoner og egenskaper](accessibility.md)
+[Funksjoner og egenskaper for tilgjengelighet](accessibility.md)
 
-[Samsvar for informasjonskapsel](cookie-compliance.md)
+[Informasjonskapselsamsvar](cookie-compliance.md)
+
+[Erstatte bruker-IDer knyttet til sporede innholdsendringer](replace-IDs-tracked-changes.md)

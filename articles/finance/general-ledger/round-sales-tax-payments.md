@@ -3,7 +3,7 @@ title: Mva-betalinger og avrundingsregler
 description: Denne artikkelen forklarer hvordan oppsettet av avrundingsregler for mva-myndighetene fungerer, og avrunding av merverdiavgiftsbalansen under utligning og bokføring av merverdiavgift.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 05/30/2018
+ms.date: 04/20/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: yijialuan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4e66a62007025964b3d58ff0620ebecd6d9769f9
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: adc48d1841903670577684b1c3d773d323c19ea1
+ms.sourcegitcommit: e06da171b9cba8163893e30244c52a9ce0901146
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2771758"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "3275680"
 ---
 # <a name="sales-tax-payments-and-rounding-rules"></a>Mva-betalinger og avrundingsregler
 
@@ -43,26 +43,26 @@ Den totale merverdiavgiften for en periode viser en kreditsaldo på -98 765,43. 
 
 Den juridiske enheten ønsker å bruke en avrundingsmetode som runder av saldoen til nærmeste 1,00. Brukeren som er ansvarlig for merverdiavgiftsregnskapet, gjør følgende:
 
-1.  Klikk Avgift &gt; Indirekte avgifter &gt; Merverdiavgift &gt; Skattemyndigheter.
-2.  Velg Normal i Avrundingsform-feltet på hurtigfanen Generelt.
-3.  Angi 1,00i Avrund-feltet.
-4.  Når tiden er inne for å betale merverdiavgift til skattemyndighetene, åpner du siden Utlign og poster merverdiavgift. (Klikk Avgift &gt; Deklareringer &gt; Merverdiavgift &gt; Utlign og poster merverdiavgift.)
-5.  I mva-oppgjørskontoen rundes avgiftsgjeldbeløpet på 98 765,43 av til 98 765.
+1. Klikk **Avgift** > **Indirekte avgifter** > **Merverdiavgift** > **Skattemyndigheter**.
+2. Velg **Normal** i **Avrundingsform**-feltet på hurtigfanen **Generelt**.
+3. Angi 1,00 i **Avrund**-feltet.
+4. Når tiden er inne for å betale merverdiavgift til skattemyndighetene, går du til **Avgift** > **Deklareringer** > **Merverdiavgift** > **Utlign og poster merverdiavgift**. I mva-oppgjørskontoen kan du se at avgiftsgjeldbeløpet på **98 765,43** avrundes til **98 765**.
 
-Tabellen nedenfor viser hvordan et beløp på 98 765,43 avrundes ved hjelp av hver avrundingsmetode som er tilgjengelig i Avrundingsform-feltet på siden Skattemyndigheter.
+Tabellen nedenfor viser hvordan et beløp på 98 765,43 avrundes ved hjelp av hver avrundingsmetode som er tilgjengelig i **Avrundingsform**-feltet på siden **Skattemyndigheter**.
 
-| Avrundingsform                | Avrundingsverdi = 0,01 | Avrundingsverdi = 0,10 | Avrundingsverdi = 1,00 | Avrundingsverdi = 100,00 |
-|-------------------------------------|------------------------|------------------------|------------------------|--------------------------|
-| Normal                              | 98 765,43              | 98 765,40              | 98 765,00              | 98 800,00                |
-| Nedover                            | 98 765,43              | 98 765,40              | 98 765,00              | 98 700,00                |
-| Avrundes opp                         | 98 765,43              | 98 765,50              | 98 766,00              | 98 800,00                |
-| Egen fordel, for en kreditsaldo | 98 765,43              | 98 765,40              | 98 765,00              | 98 700,00                |
-| Egen fordel, for en debetsaldo  | 98,765.43              | 98,765.50              | 98,766.00              | 98,800.00                |
+> [!NOTE]                                                                                  
+> Hvis avrundingsverdien er angitt som 0,00:
+>
+> - For vanlig avrunding er avrundingsfunksjonen den samme som for **Avrunding = 0,01**.
+> - For **Avrundingsform**, **Nedover**, **Avrundes opp** og **Egen fordel** er virkemåten den samme som for **Avrunding = 1,00**.
 
-
-### <a name="no-rounding-at-all-since-the-round-off-is-000"></a>Ingen avrunding i det hele tatt, siden avrundingen er 0,00
-
-avrunding (1,0151, 0,00) = 1,0151 avrunding (1,0149, 0,00) = 1,0149
+| Avrundingsform                | Avrundingsverdi = 0,01 | Avrundingsverdi = 0,10 | Avrundingsverdi = 1,00 | Avrundingsverdi = 100,00 | Avrundingsverdi = 0,00   |
+|-------------------------------------|------------------------|------------------------|------------------------|--------------------------|--------------------------|
+| Normal                              | 98,765.43              | 98,765.40              | 98,765.00              | 98,800.00                | 98,765.43                |
+| Nedover                            | 98,765.43              | 98,765.40              | 98,765.00              | 98,700.00                | 98,765.00                |
+| Avrundes opp                         | 98,765.43              | 98,765.50              | 98,766.00              | 98,800.00                | 98,766.00                |
+| Egen fordel, for en kreditsaldo | 98,765.43              | 98,765.40              | 98,765.00              | 98,700.00                | 98,765.00                |
+| Egen fordel, for en debetsaldo  | 98,765.43              | 98,765.50              | 98,766.00              | 98,800.00                | 98,766.00                |
 
 ### <a name="normal-round-and-round-precision-is-001"></a>Vanlig avrunding, og avrundingspresisjon er 0,01
 
