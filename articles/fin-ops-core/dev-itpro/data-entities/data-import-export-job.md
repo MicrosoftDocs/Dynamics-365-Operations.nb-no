@@ -3,7 +3,7 @@ title: Oversikt over dataimport- og -eksportjobber
 description: Bruk arbeidsområdet Datahåndtering for å opprette og administrere dataimport- og -eksportjobber.
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 02/20/2020
+ms.date: 04/21/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7a4b5396d2bb3fbb98b3f0f8a1bf59d62f673a3d
-ms.sourcegitcommit: 1d5a4f70a931e78b06811add97c1962e8d93689b
+ms.openlocfilehash: b25edf9fe09c130ea3d55b11f2698b29c7a39a8b
+ms.sourcegitcommit: e9fadf6f6dafdcefaff8e23eaa3c85f53437db3f
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "3124618"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "3278904"
 ---
 # <a name="data-import-and-export-jobs-overview"></a>Oversikt over dataimport- og -eksportjobber
 
@@ -151,6 +151,18 @@ Utførelsesdetaljer viser status for hver dataenheter som jobben behandlet. Derf
 Du kan laste ned staging-dataene i en fil for eksportjobber, eller du kan laste den ned som en pakke for import- og eksportjobber.
 
 Fra utførelsesdetaljene kan du også åpne utførelsesloggen.
+
+## <a name="parallel-imports"></a>Parallelle importer
+Hvis du vil importere data raskere, kan parallell behandling av importering av filer aktiveres hvis enheten støtter parallelle importer. Hvis du vil konfigurere den parallelle importen for en enhet, må du følge trinnene nedenfor.
+
+1. Gå til **Systemadministrasjon \> Arbeidsområder \> Databehandling**.
+2. I delen **Import/eksport** velger du kategorien **Rammeverkparametere** for å åpne siden **Rammeverkparametere for dataimport/-eksport**.
+3. I kategorien **Enhetsinnstillinger** velger du **Konfigurer parametere for utføring av enhet** for å åpne siden **Parametere for utføring av enhetsimport**.
+4. Angi følgende felt for å konfigurere parallell import for en enhet:
+
+    - Velg enheten i **Enhet**-feltet.
+    - Angi antall poster for importterskel i feltet **Antall poster for importterskel**. Dette bestemmer antallet poster som skal behandles av en tråd. Hvis en fil har 10 K poster, vil et postantall på 2500 med et oppgaveantall på 4 bety at hver tråd vil behandle 2500 poster.
+    - I feltet **Antall importoppgaver** angir du antallet importoppgaver. Dette må ikke overskride maksimalt antall bunketråder som er tilordnet for satsvis behandling i **Systemadministrasjon \>Serverkonfigurasjon**.
 
 ## <a name="clean-up-the-staging-tables"></a>Rydd opp i staging-tabellene
 Starter i Platform-oppdatering 29, denne funksjonaliteten er avverget. Dette er erstattet av en ny versjon av jobbhistorie oppryddingsfunksjonalitet forklart nedenfor.

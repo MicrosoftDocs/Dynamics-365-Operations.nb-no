@@ -3,7 +3,7 @@ title: Innholdsblokkmodul
 description: Dette emnet dekker innholdsblokkmoduler og beskriver hvordan du legger dem til områdesider i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
-ms.date: 01/23/2020
+ms.date: 04/14/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: f91de93ce5ed4813f9f2adbe7678229189b5af2f
-ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
+ms.openlocfilehash: daf9193a7fdc3b57defbb3250ae902f6eb6ee6c4
+ms.sourcegitcommit: 7a1d01122790b904e2d96a7ea9f1d003392358a6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "3025764"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "3269688"
 ---
 # <a name="content-block-module"></a>Innholdsblokkmodul
 
@@ -81,7 +81,7 @@ Hvis du vil legge til en hovedbannermodul på en ny side og angi de nødvendige 
 
 1. Gå til **Maler**, og opprett en sidemal kalt **innholdsblokkmal**.
 1. I **Hoved**-sporet på standardsiden legger du til en hovedbannermodul.
-1. Sjekk inn malen, og publiser den.
+1. Velg **Lagre**, velg **Fullfør redigering** for å sjekke inn malen, og velg deretter **Publiser** for å publisere den.
 1. Bruk hovedbannermalen du nettopp opprettet, for å opprette en side som heter **innholdsblokkside**.
 1. På **Hoved**-sporet på standardsiden velger du ellipseknappen (**...**), og deretter velger du **Legg til modul**.
 1. I dialogboksen **Legg til modul** under **Velg moduler** velger du hovedbannermodulen, og deretter velger du **OK**.
@@ -93,14 +93,14 @@ Hvis du vil legge til en hovedbannermodul på en ny side og angi de nødvendige 
 1. Velg **Legg til kobling**.
 1. I dialogboksen **Kobling** legger du til koblingstekst, en URL-adresse for kobling og en ARIA-etikett for koblingen, og deretter velger du **OK**.
 1. Velg **Hovedbanner**-oppsettet.
-1. Lagre siden, og forhåndsvis endringene.
-1. Sjekk inn siden, og publiser den.
+1. Velg **Lagre**, og velg deretter **Forhåndsvisning** for å forhåndsvise siden.
+1. Velg **Fullfør redigering** for å sjekke inn malen, og velg deretter **Publiser** for å publisere den. 
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 
 [Startpakke, oversikt](starter-kit-overview.md)
 
-[Kampanjebannermodul](add-alert.md)
+[Promobannermodul](add-alert.md)
 
 [Karusellmodul](add-carousel.md)
 

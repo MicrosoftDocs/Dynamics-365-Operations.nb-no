@@ -1,9 +1,9 @@
 ---
 title: Ordrebekreftelse
-description: Denne artikkelen inneholder informasjon om ordrebekreftelser. Ordrebekreftelse bidrar til at du trygt kan love leveringsdatoer til kundene dine og gir deg fleksibilitet slik at du oppfyller disse datoene.
+description: Dette emnet inneholder informasjon om ordrebekreftelser. Ordrebekreftelse bidrar til at du trygt kan love leveringsdatoer til kundene dine og gir deg fleksibilitet slik at du oppfyller disse datoene.
 author: ShylaThompson
 manager: tfehr
-ms.date: 06/20/2017
+ms.date: 04/17/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 78b81431d44ea5f85676b6999eece1330d3101a4
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: ccb7ef432553c0516eb49013eaad68dd21bf752c
+ms.sourcegitcommit: 7a1d01122790b904e2d96a7ea9f1d003392358a6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3210066"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "3270033"
 ---
 # <a name="order-promising"></a>Ordrebekreftelse
 
 [!include [banner](../includes/banner.md)]
 
-Denne artikkelen inneholder informasjon om ordrebekreftelser. Ordrebekreftelse bidrar til at du trygt kan love leveringsdatoer til kundene dine og gir deg fleksibilitet slik at du oppfyller disse datoene.
+Dette emnet inneholder informasjon om ordrebekreftelser. Ordrebekreftelse bidrar til at du trygt kan love leveringsdatoer til kundene dine og gir deg fleksibilitet slik at du oppfyller disse datoene.
 
 Ordrebekreftelse beregner de tidligste leverings- og mottaksdatoene og er basert på kontrollmetoden for leveringsdato og transportdager. Du kan velge blant fire kontrollmetoder for leveringsdato:
 
@@ -47,11 +47,13 @@ ATP beregnes ved hjelp av følgende formel:
 
 ATP = ATP for forrige periode + mottak for gjeldende periode - avganger for gjeldende periode - netto avgangsantall for hver fremtidige periode, til perioden da summen av mottak for alle fremtidige perioder, opptil og inkludert den fremtidige perioden, er større enn summen av avganger, opptil og inkludert den fremtidige perioden.  
 
+Legg merke til at ATP-beregningen ikke inneholder informasjon om utløpsdato og utover ATP-horisonten som systemet forventer når et hvilket som helst antall kan loves.
+
 Når det ikke er flere avganger eller mottak å vurdere, er ATP-antallet for de etterfølgende datoene det samme som det sist beregnede ATP-antallet.  
 
 Hvis ikke alle dimensjonene som brukes for en vare, er angitt når ATP-kontrollen er fullført, kan de likevel angis på avgangen eller mottakene. I dette tilfellet må mottakene og avgangene samles i de eksisterende dimensjonene i ATP-beregningen, for å redusere antall mottaks- og avgangslinjer som brukes i ATP-beregningen.  
 
-ATP-antallet som vises, er alltid større enn eller lik 0 (null). Hvis beregningen returnerer et negativt ATP-antall (for eksempel hvis antallet som er lovet tidligere, overstiger det tilgjengelige antallet), settes antallet automatisk til **0**.
+ATP-antallet som vises, er alltid større enn eller lik 0 (null). Hvis beregningen returnerer et negativt ATP-antall (for eksempel hvis antallet som er lovet tidligere, overstiger det tilgjengelige antallet), settes antallet automatisk til 0.
 
 ### <a name="example"></a>Eksempel
 

@@ -3,7 +3,7 @@ title: Endre en eksisterende områdeside
 description: Dette emnet beskriver hvordan du endrer en eksisterende områdeside i Microsoft Dynamics 365 Commerce.
 author: psimolin
 manager: annbe
-ms.date: 10/01/2019
+ms.date: 04/14/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: c393fc143214c2c7c7ddad9a77e273e1e53e34ac
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 87c90ed6ee62a094fe44f549c827cf9de2bf5b2f
+ms.sourcegitcommit: 7a1d01122790b904e2d96a7ea9f1d003392358a6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3003447"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "3270010"
 ---
 # <a name="modify-an-existing-site-page"></a>Endre en eksisterende områdeside
 
@@ -36,11 +36,11 @@ Dette emnet beskriver hvordan du endrer en eksisterende områdeside i Microsoft 
 Når du må endre en side, er det første trinnet å åpne den i sideredigeringsprogrammet. Gå til området som inneholder siden, og finn siden du vil bruke, i listen over sider. Hvis du ikke finner siden, kan du bruke redigeringsverktøyets omfattende søkefunksjonalitet. Skriv inn det nøyaktige sidenavnet, eller skriv inn de første bokstavene i objektet og deretter en stjerne (\*). Det vises en filtrert liste over sider. Du kan bruke denne listen til å finne siden du vil bruke. Når du har funnet riktig side, velger du sidenavnet for å åpne siden i sideredigeringsprogrammet.
 
 > [!TIP]
-> Hvis siden er synlig i sideinspeksjon, kan du merke den og sjekke den ut før du åpner den i sideredigeringsprogrammet. På denne måten kan du sjekke ut flere sider samtidig.
+> Hvis siden er synlig i sideinspeksjon, kan du velge **Rediger** og sjekke den ut siden før du åpner den i sideredigeringsprogrammet. På denne måten kan du sjekke ut flere sider samtidig.
 
-Når siden er åpnet i redigeringsprogrammet for side, må du kontrollere at den er sjekket ut til deg. Kommandolinjen i redigeringsverktøyet er dynamisk, kontekstavhengig og tilstandsfølsom. Derfor vises bare handlingene du kan utføre på siden for øyeblikket. Hvis siden for eksempel ikke er sjekket ut til deg, vises ikke knappene **Lagre** og **Sjekk inn** på kommandolinjen. Tilstanden for siden vises også på høyre side av vinduet.
+Når siden er åpnet i redigeringsprogrammet for side, må du kontrollere at den er sjekket ut til deg. Kommandolinjen i redigeringsverktøyet er dynamisk, kontekstavhengig og tilstandsfølsom. Derfor vises bare handlingene du kan utføre på siden for øyeblikket. Hvis siden for eksempel ikke er sjekket ut til deg, vises ikke knappene **Lagre** og **Fullfør redigering** på kommandolinjen. Tilstanden for siden vises også på høyre side av vinduet.
 
-Hvis siden ikke allerede er sjekket ut til deg, velger du **Sjekk ut** kommandolinjen. Kommandolinjen endres til å gjenspeile den nye statusen for siden. Du får også et varsel som sier at siden ble sjekket ut til deg.
+Hvis siden ikke allerede er sjekket ut til deg, velger du **Rediger** kommandolinjen. Kommandolinjen endres til å gjenspeile den nye statusen for siden. Du får også et varsel som sier at siden ble sjekket ut til deg.
 
 Det neste du gjør, er å utføre de faktiske endringene. Du vil ofte bruke sidedisposisjonstreet til venstre for å finne og velge modulen du vil endre, og deretter gjøre endringer i egenskapsruten til høyre. 
 
@@ -49,7 +49,7 @@ Endringen kan imidlertid noen ganger involvere å legge til eller fjerne modelle
 > [!TIP]
 > Du kan også vise og redigere egenskapene for en hvilken som helst modul som er synlig i forhåndsvisningen "det du ser, er det du får" (WYSIWYG), ved å velge den direkte.
 
-Når du er ferdig med å gjøre endringer og forhåndsvise effekten, bør du sjekke inn siden ved å velge **Sjekk inn** på kommandolinjen. 
+Når du er ferdig med å gjøre endringer og forhåndsvise effekten, bør du sjekke inn siden ved å velge **Fullfør redigering** på kommandolinjen. 
 
 Hvis du vil publisere endringene umiddelbart, velger du **Publiser** på kommandolinjen. Den siste innsjekkede versjonen av siden du endret, publiseres og blir tilgjengelig for eksterne brukere som viser området ditt. 
 
@@ -60,14 +60,14 @@ Følgende eksempel viser hvordan du endrer startsiden ved å endre videoen som v
 1. Under **Områder** velger du **Fabrikam** (eller navnet på området).
 1. Velg **Sider**i navigasjonsruten til venstre.
 1. Finn og velg startsside for å åpne den i sideredigeringsprogrammet.
-1. På kommandolinjen velger du **Sjekk ut**.
+1. På kommandolinjen velger du **Rediger**.
 1. Velg **Hoved**-spor i sideoppsettet.
 1. Utvid alle moduler for flytende containere under **Hoved**-sporet.
 1. Finn og velg videospillermodulen.
 1. I egenskapsruten til høyre velger du **video**-egenskapen. Aktivavelgeren vises.
 1. I aktivavelgeren velger du et tilgjengelig videoaktiva, eller velg **Last opp nytt aktiva** for å laste opp et nytt videoaktiva.
 1. Velg **OK**.
-1. Velg **Lagre**, og velg deretter **Sjekk inn**.
+1. Velg **Lagre**, og velg deretter **Fullfør redigering**.
 1. I feltet **Kommentarer** angir du **Endre videown**, og deretter velger du **OK**.
 1. Velg **Forhåndsvisning** for å forhåndsvise den oppdaterte siden. Når du er ferdig, lukker du forhåndsvisningskategorien for å gå tilbake til redigeringsverktøyet.
 1. Velg **Publiser**.

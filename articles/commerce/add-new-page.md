@@ -3,7 +3,7 @@ title: Legg til en ny områdeside
 description: Dette emnet beskriver hvordan du legger til en ny områdeside i Microsoft Dynamics 365 Commerce.
 author: psimolin
 manager: annbe
-ms.date: 10/01/2019
+ms.date: 04/14/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 68461f1f0be46f979a67e1806e03c02200cf61db
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: b0f1e290526c25aa6e6300c65e24044a325bee53
+ms.sourcegitcommit: 7a1d01122790b904e2d96a7ea9f1d003392358a6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3001352"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "3269964"
 ---
 # <a name="add-a-new-site-page"></a>Legg til en ny områdeside
 
@@ -67,7 +67,7 @@ Følg denne fremgangsmåten for å legge til en ny områdeside på området.
 1. Velg **Innholdsrik blokk**, velg ellipseknappen, og velg deretter **Legg til modul**.
 1. Velg **Innholdsrikt blokkelement**, og velg dereter **OK**.
 1. I avsnittsruten til høyre velger du **Avsnitt**, og deretter, i feltet, angir du **Min testtekst**.
-1. Velg **Lagre**, og velg deretter **Sjekk inn**.
+1. Velg **Lagre**, og velg deretter **Fullfør redigering**.
 1. I feltet **Kommentarer** angr du **La til nye side**, og deretter velger du **OK**.
 1. Velg **Forhåndsvisning** for å forhåndsvise siden. Når du er ferdig, lukker du forhåndsvisningskategorien for å gå tilbake til redigeringsverktøyet.
 1. Velg **Publiser**.

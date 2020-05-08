@@ -3,7 +3,7 @@ title: Oversikt over finansrapportering
 description: Dette emnet beskriver hvor du kan få tilgang til økonomisk rapportering i Microsoft Dynamics 365 Finance og hvordan du bruker de økonomiske rapporteringsfunksjoner. Det inneholder en beskrivelse av de økonomiske standardrapportene som tilbys.
 author: aprilolson
 manager: AnnBe
-ms.date: 07/25/2019
+ms.date: 04/14/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 01fcc7c4f3e1eb7aadfc93b120cd57e62077d0c0
-ms.sourcegitcommit: ff6dde637d2f5d2bd18a582eb41573d4c69acdd6
+ms.openlocfilehash: 6cd77e22f9c6f90f6aa9934d70a121008e1274dd
+ms.sourcegitcommit: 5419f2b8f51cd5de55be66d1389b5b9d7771fd52
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "3249066"
+ms.lasthandoff: 04/15/2020
+ms.locfileid: "3262655"
 ---
 # <a name="financial-reporting-overview"></a>Oversikt over finansrapportering
 
@@ -83,13 +83,15 @@ Når en bruker er lagt til eller en rolle er endret, skal brukeren kunne få til
 ## <a name="report-deletions-and-expirations"></a>Rapportslettinger og -utløp
 Brukere som genererer en rapport, kan slette sine egne rapporter. Brukere med plikten **Vedlikehold finansrapporteringssikkerhet**, kan slette andres rapporter. 
 
-Fra og med 10.0.7-utgivelsen er begrepet utløpsdatoer innført. En ny obligatorisk funksjon vil bli aktivert i arbeidsområdet for funksjonsbehandling. Denne funksjonen inneholder følgende endringer:
+I versjon 10.0.8 er konseptet med utløpsdatoer innført. En ny nødvendig funksjon vil bli aktivert på **Alle**-siden i arbeidsområdet for funksjonsbehandling. Funksjonen **Oppbevaringspolicyer for finansrapport** inneholder følgende endringer:
 * Nylig genererte rapporter blir automatisk merket som å ha en utløpsdato på 90 dager fra når de genereres
 * Eventuelle eksisterende rapporter fra før funksjonen ble installert vil bli gitt en 90 dagers utløpsperiode. Datoen kan vises som tom for en kort tidsperiode før finansrapporteringstjenesten kjører, en rapport genereres, og tjenesten utfører oppdateringen til eksisterende rapporter med en tom utløpsdato. 
-* Brukere med **Vedlikehold finansrapporteringssikkerhet**, har tilgang til denne funksjonaliteten. Alle brukere i plikten **Vedlikehold finansrapporter** gitt rettigheten **Vedlikehold utløp for finansrapport** vil også ha muligheten til å endre utløpsperioden. For øyeblikket er det to tilgjengelige bevaringsalternativer - 
-  * Utløp av 90 dager
-  * Et alternativ for å angi at rapporten aldri skal utløpe
-
+* Brukere med **Vedlikehold finansrapporteringssikkerhet**, har tilgang til denne funksjonaliteten. Alle brukere i plikten **Vedlikehold finansrapporter** gitt rettigheten **Vedlikehold utløp for finansrapport** vil også ha muligheten til å endre utløpsperioden. For øyeblikket er det to tilgjengelige bevaringsalternativer. 
+  * Utløp av 90 dager.
+  * Et alternativ for å angi at rapporten aldri skal utløpe.
+  
+Flere alternativer vil bli tatt med i fremtidig funksjonalitet. Utløpet på 90 dager vil være standard, og brukere med riktige tillatelser kan overstyre standardinnstillingene på listesiden **Finansrapporter**.    
+  
 Når det er merket av for en utløpsdato, for eksempel 90 dager, gir den 90 dager fra i dag, som er forskjellig virkemåte enn de 90 dagene fra den opprinnelige genereringsdatoen som er angitt under rapportgenerering. 
 
 ## <a name="default-reports"></a>Standardrapporter

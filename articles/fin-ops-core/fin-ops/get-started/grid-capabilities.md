@@ -3,7 +3,7 @@ title: Rutenettfunksjoner
 description: Dette emnet beskriver flere kraftfulle funksjoner i rutenettkontrollen. Den nye rutenettfunksjonen må være aktivert for at du skal kunne få tilgang til disse funksjonene.
 author: jasongre
 manager: AnnBe
-ms.date: 04/10/2020
+ms.date: 04/23/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 0fd0e15ea88e9f5f34d8dff82606a8d26616a16d
-ms.sourcegitcommit: cd8a28be0acf31c547db1b8f6703dd4b0f62940c
+ms.openlocfilehash: fd45f71fc15e467c461433682310ab7b7cc0158a
+ms.sourcegitcommit: 0d7b700950b1f95dc030ceab5bbdfd4fe1f79ace
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "3260466"
+ms.lasthandoff: 04/23/2020
+ms.locfileid: "3284410"
 ---
 # <a name="grid-capabilities"></a>Rutenettfunksjoner
 
@@ -86,6 +86,23 @@ Hvis du velger **Grupper etter denne kolonnen** for en annen kolonne, vil den op
 
 Hvis du vil angre gruppering i et rutenett, høyreklikker du på grupperingskolonnen og velger **Opphev gruppering**.  
 
+## <a name="typing-ahead-of-the-system"></a>Skriving i forkant av systemet
+I mange forretningsscenarier er muligheten til raskt å legge inn data i systemet svært viktig. Før den nye rutenetrkontrollen ble innført, kunne brukere bare endre data i den gjeldende raden. Før de kunne opprette en ny rad eller bytte til en annen rad, ble de tvunget til å vente på at systemet skal validere eventuelle endringer. I et forsøk på å redusere tiden som brukere venter på at disse valideringene skal fullføres, og for å forbedre brukerproduktiviteten, justerer det nye rutenettet disse valideringene slik at de er asynkrone. Derfor kan brukeren flytte til andre rader for å gjøre endringer mens tidligere radvalideringer venter. 
+
+For å støtte denne nye virkemåten, er det lagt til en ny kolonne for radstatusen øverst i rutenettet når rutenettet er i redigeringsmodus. Denne kolonnen angir én av følgende statuser:
+
+- **Tom** – ingen statusbilde angir at raden er lagret i systemet.
+- **Behandling venter** – denne statusen angir at endringene i raden ikke er lagret på serveren ennå, men er i en kø av endringer som må behandles. Før du utfører handlinger utenfor rutenettet, må du vente på at alle ventende endringer skal behandles. I tillegg er teksten i disse radene i kursiv for å angi den ulagrede statusen for radene. 
+- **Valideringsadvarsel** – denne statusen angir at systemet ikke kan lagre endringene i raden på grunn av noen valideringsproblemer. I det gamle rutenettet måtte du gå tilbake til raden for å løse problemet umiddelbart. I det nye rutenettet blir du imidlertid varslet om at det ble funnet et valideringsproblem, men du kan bestemme når du vil rette opp eventuelle problemer i raden. Når du er klar til å løse problemet, kan du flytte fokus tilbake til raden manuelt. Du kan også velge handlingen **Løs dette problemet**. Denne handlingen flytter umiddelbart fokus tilbake til raden som har problemet, og gjør det mulig å redigere i eller utenfor rutenettet. Legg merke til at behandlingen av påfølgende ventende rader blir stoppet til denne valideringsadvarselen blir løst. 
+- **Midlertidig stanset** – denne statusen angir at behandlingen av serveren er stoppet midlertidig fordi valideringen av raden utløste en popup-dialogboks som krever inndata fra brukeren. Fordi brukeren kan registrere data i en annen rad, blir hurtigdialogboksen ikke umiddelbart presentert for denne brukeren. Den vil i stedet presenteres når brukeren velger å gjenoppta behandlingen. Denne statusen følges av et varsel som informerer brukeren om situasjonen. Varslingen inneholder en **Gjenoppta behandling**-handling som vil utløse hurtigdialogboksen.  
+    
+Når brukere angir data før serveren behandles, kan de forvente seg noen reduksjoner i dataregistreringsopplevelsen, for eksempel mangel på oppslag, validering på kontrollnivå og oppføring av standardverdier. Brukere som trenger en rullegardinliste for å finne en verdi, oppfordres til å vente til serveren blir oppdatert til gjeldende rad. Kontrollnivå-validering og registrering av standardverdier vil også forekomme når serveren behandler denne raden.   
+
+### <a name="pasting-from-excel"></a>Lime inn fra Excel
+Brukere har alltid hatt muligheten til å eksportere data fra rutenett i Finance and Operations-apper til Excel ved hjelp av funksjonen **Eksporter til Excel**. Muligheten til å angi data før systemet gjør imidlertid at det nye rutenettet kan støtte kopiering av tabeller fra Excel og lime dem direkte inn i rutenett i Finance and Operations-apper. Rutenettcellen som innlimingen startes fra, bestemmer hvor den kopierte tabellen begynner å limes inn. Innholdet i rutenettet overskrives av innholdet i den kopierte tabellen, med unntak av to tilfeller:
+
+- Hvis antallet kolonner i den kopierte tabellen overskrider antall kolonner som beholdes i rutenettet, med start fra innlimingen, varsles brukeren om at de ekstra kolonnene er ignorert. 
+- Hvis antall rader i den kopierte tabellen overskrider antall rader i rutenettet, med start fra innlimingen, blir de eksisterende cellene overskrevet av det innlimte innholdet, og eventuelle ekstra rader fra den kopierte tabellen blir satt inn som nye rader nederst i rutenettet. 
 
 ## <a name="evaluating-math-expressions"></a>Evaluering av matematiske uttrykk
 Som en produktivitetsforsterkning kan brukeren legge inn matematiske formler i numeriske celler i et rutenett. De trenger ikke å utføre beregningen i en app utenfor systemet. Hvis du for eksempel angir **=15\*4** og deretter trykker på **Tab**-tasten for å gå ut av feltet, evaluerer systemet uttrykket og lagrer verdien **60** for feltet.
@@ -110,3 +127,64 @@ Hvis du vil at systemet skal gjenkjenne en verdi som et uttrykk, starter du verd
 4.  **Aktiver funksjonen**: Finn funksjonen **Ny rutenettkontroll** i listen over funksjoner, og velg **Aktiver nå** i detaljruten. Vær oppmerksom på at det kreves en oppdatering av nettleseren. 
 
 Alle etterfølgende brukerøkter starter med at den nye rutenettkontrollen er aktivert.
+
+## <a name="known-issues"></a>Kjente problemer
+Denne delen inneholder en liste over kjente problemer for den nye rutenettkontrollen mens funksjonen er i en forhåndsvisningstilstand.  
+
+### <a name="open-issues"></a>Åpne problemer
+
+- Kortlister som ble gjengitt som flere kolonner, er nå gjengitt som én enkelt kolonne.
+- Grupperte lister gjengis ikke som grupper eller i separate kolonner.
+- Verktøytips vises ikke for bilder.
+- Rutenettvisningene fungerer ikke for alle felttyper.
+- Periodisk kan du ikke klikke utenfor rutenettet etter at du har valgt flere rader.
+- Alternativene **Valider** og **Kopier** for oppgaveopptaker er ikke tilgjengelige for dato/nummer-kontroller.
+
+### <a name="fixed-as-part-of-10012"></a>Løst som del av 10.0.12
+
+> [!Note]
+> Følgende informasjon blir oppgitt, slik at du kan planlegge tilsvarende. Hvis du vil ha mer informasjon om målrettet utgivelsesplan for versjon 10.0.12 , kan du se [Tilgjengelighet av serviceoppdatering](../../fin-ops/get-started/public-preview-releases.md).
+
+- [Problem 429126] Kontroller utenfor rutenettet oppdateres ikke etter at den siste posten er slettet.
+- [Problem 430575] Tabellkontroller oppdaterer ikke innholdet i viste elementer.
+- [KB 4558570] Varer vises fortsatt på siden etter at posten er slettet.
+- [KB 4558584] Negative tall gjengis ikke riktig.
+- [KB 4558575] Felt oppdateres ikke etter en radendring / rutenettbehandling blir låst etter sletting av rader.
+- [Problem 436980] Stiler som er knyttet til listepanelet **ExtendedStyle**, brukes ikke.
+- [KB 4558573] Valideringsfeil kan ikke løses når den nødvendige endringen er utenfor rutenettet.
+    
+### <a name="quality-update-for-10011"></a>Kvalitetsoppdatering for 10.0.11
+
+- [KB 4558381] Negative tall gjengis ikke riktig / brukere blir noen ganger låst etter at valideringsproblemer oppstår.
+
+### <a name="fixed-as-part-of-10011"></a>Løst som del av 10.0.11
+
+- [KB 4558374] Poster som krever en dialogboks for polymorfisk velger, kan ikke opprettes.
+- [KB 4558382] Det oppstår uventede klientfeil.
+- [KB 4558375] Hjelpetekst vises ikke på kolonner i det nye rutenettet.
+- [KB 4558376] Listepanel-rutenett er ikke gjengitt med riktig høyde i Internet Explorer.
+- [KB 4558377] Kombinasjonsboks-kolonner med bredden **SizeToAvailable** gjengis ikke på enkelte sider.
+- [KB 4549711] Linjer i et betalingsforslag kan ikke fjernes riktig etter at den nye rutenett kontrollen er aktivert.
+- [KB 4558378] Gjennomgang åpner av og til feil post.
+- [KB 4558379] Det oppstår en feil når oppslag åpnes der **ReplaceOnLookup**=**Nei**.
+- [KB 4558380] Den tilgjengelige plassen i rutenettet fylles ikke umiddelbart etter at en del av siden er skjult.
+- [Problem 432458] Tomme eller dupliserte linjer vises på begynnelsen av enkelte underordnede samlinger.
+- [KB 4558587] Referansegrupper som har kombinasjonsbokser for erstatningsfelt, viser ikke verdier.
+
+### <a name="fixed-as-part-of-10010"></a>Løst som del av 10.0.10
+
+- [Problem 414301] Noen data fra tidligere linjer forsvinner når nye linjer opprettes.
+- [KB 4550367] Tidsverdier er ikke riktig formatert.
+- [KB 4549734] Aktive rader behandles ikke som merket hvis merkingskolonnen er skjult.
+- [Feil 417044] Det finnes ingen tomt rutenett-melding for rutenett i listestil.
+- [KB 4558367] Tekstmerking er inkonsekvent når rader endres.
+- [KB 4558372] Det nye rutenettet blir låst i behandlingsmodus hvis antallet kolonner i innholdet som limes inn, overstiger antallet gjenstående kolonner i rutenettet.
+- [KB 4558368] Flervalg via tastaturet er tillatt i enkeltvalg-scenarier.
+- [KB 4539058] Noen rutenett (vanligvis på hurtigfaner) er noen ganger ikke gjengitt (men de vil vises hvis du zoomer ut).
+- [KB 4558369] Statusbilder forsvinner i det hierarkiske rutenettet.
+- [KB 4558370] En ny rad blir ikke rullet i visningen.
+- [KB 4549796] Verdier kan ikke redigeres i et rutenett når det er i visningsmodus.
+
+### <a name="quality-update-for-1009platform-update-33"></a>Kvalitetsoppdatering for 10.0.9/Platform update 33
+
+- [KB 4550367] Tidsverdier er ikke riktig formatert.

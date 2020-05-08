@@ -3,7 +3,7 @@ title: Arbeide med forhåndsinnstilte oppsett
 description: Dette emnet beskriver hvordan du arbeider med forhåndsinnstilte oppsett i Microsoft Dynamics 365 Commerce.
 author: phinneyridge
 manager: annbe
-ms.date: 10/01/2019
+ms.date: 04/14/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.industry: ''
 ms.author: niholman
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: c8149c6e443c77dabfa641a698c931176bedbc98
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: f31dfa1fdbb3732610748abe4a9de851033f2b89
+ms.sourcegitcommit: 7a1d01122790b904e2d96a7ea9f1d003392358a6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3002642"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "3269895"
 ---
 # <a name="work-with-preset-layouts"></a>Arbeide med forhåndsinnstilte oppsett
 
@@ -44,7 +44,7 @@ Det finnes to metoder for å opprette en forhåndsinnstilt oppsett. Du kan lagre
 Følg disse trinnene for å opprette et forhåndsinnstilt oppsett fra et eksisterende egendefinert oppsett.
 
 1. Åpne en eksisterende side som ikke bruker et forhåndsinnstilt oppsett, og som har en modulstruktur som du vil bruke på nytt for andre sider på området.
-1. Velg **Sjekk ut**.
+1. Velg **Rediger** for å sjekke ut siden.
 1. Velg **Lagre som nytt oppsett**. Dialogboksen **Lagre som nytt oppsett** vises.
 1. Angi et navn og en beskrivelse for det forhåndsinnstilte oppsettet. Verdiene du angir, vises for andre forfattere når de oppretter nye sider fra oppsettet eller bytter til dem. Derfor må du angi verdier som kan være nyttige for sideforfattere.
 1. Velg **OK**.
@@ -91,14 +91,14 @@ Hvis du vil angi eller endre temaet for alle underordnede sider som bruker det f
 Hvis du vil lagre og sjekke inn det forhåndsinnstilte oppsettet, følger du disse trinnene:
 
 1. Velg **Lagre** øverst i oppsettredigeringsprogrammet. Lagrede endringer påvirker ikke nedstrømssider før de er sjekket inn.
-1. Velg **Sjekk inn**. Dine endringer er nå synlige for nedstrøms arbeidsflyter.
+1. Velg **Fullfør redigering**. Dine endringer er nå synlige for nedstrøms arbeidsflyter.
 
 Hvis du vil forhåndsvise endringene, kan du enten åpne en eksisterende side som bruker det forhåndsinnstilte oppsettet, eller opprette en ny side fra oppsettet.
 
 Når du har forhåndsvist endringene i det forhåndsinnstilte oppsettet, følger du en av disse fremgangsmåtene for å publisere oppsettet på ditt aktive område:
 
 * Gå til **Oppsett**, velg oppsettet, og velg deretter **Publiser**.
-* Velg **Publiser** i redigeringsprogrammet for oppsett.
+* Velg oppsettnavnet for å åpne redigeringsprogrammet for oppsett, og velg deretter **Publiser**.
 * Publiser en side som refererer til det upubliserte oppsettet. Oppsettet vil automatisk bli publisert.
 
 > [!WARNING]

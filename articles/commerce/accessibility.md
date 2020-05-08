@@ -3,7 +3,7 @@ title: Tilgjengelighetsfunksjoner og egenskaper
 description: Dette emnet gir informasjon om tilgjengelighetsfunksjonene og egenskapene i Microsoft Dynamics 365 Commerce.
 author: BrianShook
 manager: annbe
-ms.date: 01/08/2020
+ms.date: 04/14/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 3edc6250dd5438be31d80a9d6b0f3b730438ca53
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 6f6bca3589da4055eef000fc3b2c88b93eabb4d5
+ms.sourcegitcommit: e06da171b9cba8163893e30244c52a9ce0901146
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3001766"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "3274194"
 ---
 # <a name="accessibility-features-and-capabilities"></a>Tilgjengelighetsfunksjoner og egenskaper
 
@@ -49,7 +49,7 @@ Det Dynamics 365 Commerce digitale systemet for anleggsmiddelbehandling støtter
 
 | Videofunksjon               | Beskrivelse |
 |-----------------------------|-------------|
-| Teksting for hørselshemmede      | Tekst som kan vises for lyd og lydbeskrivende elementer i en video, for å hjelpe brukere som er hørselshemmede |
+| Teksting for hørselshemmede      | Tekst som kan vises for lyd og lydbeskrivende elementer i en video, for å hjelpe brukere som er døve eller hørselshemmede |
 | Undertekster                   | Undertekstfiler som viser teksten i kontekstledetråder eller dialog på skjermen |
 | Lydtranskripsjoner           | En tekstutskrift av talte ord som er generert fra lyden av en videoressurs |
 | Beskrivende lyd           | En ikke-primær lydkanal som beskriver innholdet eller konteksten som skjer på skjermen |
@@ -57,7 +57,7 @@ Det Dynamics 365 Commerce digitale systemet for anleggsmiddelbehandling støtter
 
 ### <a name="configure-video-accessibility-elements"></a>Konfigurere tilgjengelighetselementer for video
 
-I Dynamics 365 Commerce, i **Aktiva**-delen for nettstedet ditt, kan du laste opp videoressurser som har separate filer for teksting for hørselshemmede, vanlig lyd og beskrivende lyd. Teksting for hørselshemmede kan også genereres automatisk når en videoressurs lastes opp.
+I **Mediebibliotek**-delen for for Commerce for nettstedet ditt, kan du laste opp videoressurser som har separate filer for teksting for hørselshemmede, vanlig lyd og beskrivende lyd. Teksting for hørselshemmede kan også genereres automatisk når en videoressurs lastes opp.
 
 #### <a name="generate-or-upload-closed-caption-files-during-video-asset-upload"></a>Generer eller last opp undertekstfiler under opplasting av videoressurser
 
@@ -72,7 +72,7 @@ Hvis du vil laste opp en undertekstfil manuelt når du laster opp en video, føl
 Hvis du vil laste opp vanlig lyd eller beskrivende lydfiler for videoen, bruker du filvelgeren i dialogboksen **Opplasting av aktivum**.
 
 > [!NOTE]
-> Teksting for hørselshemmede, vanlig lyd og beskrivende lydinnhold kan også legges til etter at en videoressurs er lastet opp. Gå til **Aktiva**, velg videoressursen, og sjekk den ut. Last deretter opp tilleggsressursene i egenskapsruten for videoressursen.
+> Teksting for hørselshemmede, vanlig lyd og beskrivende lydinnhold kan også legges til etter at en videoressurs er lastet opp. Gå til **Mediebibliotek**, velg videoressursen, og velg **Rediger** for å sjekke den ut. Last deretter opp tilleggsressursene i egenskapsruten for videoressursen.
 
 #### <a name="edit-cc-and-audio-transcript-files"></a>Redigere undertekst- og lydtranskripsjonsfiler
 
@@ -80,10 +80,10 @@ Undertekst- og lydtranskripsjonfiler kan redigeres direkte i redigeringsverktøy
 
 Følg denne fremgangsmåten for å redigere undertekst- og lydtranskripsjonsfiler.
 
-1. Gå til **Aktiva**, velg videoressursen, og velg deretter **Rediger underteksten/utskrift**. Redigeringsprogrammet for undetekst og transkripsjon vises.
-1. Velg **Sjekk ut**.
+1. Gå til **Mediebibliotek**, og velg filnavnet for videoressursen. Redigeringsprogrammet for undetekst og transkripsjon vises.
+1. Velg **Rediger**.
 1. Rediger underteksten eller transkripsjonsteksten.
-1. Når du er ferdig, velger du **Lagre** og deretter **Sjekk inn**.
+1. Når du er ferdig, velger du **Lagre** og deretter **Fullfør redigering**.
 1. Når du er klar til å publisere, velger du **Publiser**.
 
 #### <a name="set-the-minimum-age-attribute"></a>Angi Minimumsalder-attributtet
@@ -92,8 +92,8 @@ Et **Minimumsalder**-metadataattributt kan knyttes til videoressurser.
 
 Hvis du vil angi **Minimumsalder**-attributtet for en videoressurs, følger du denne fremgangsmåten.
 
-1. Gå til **Aktiva**, og velg videoressursen.
-1. Velg **Sjekk ut**.
+1. Gå til **Mediebibliotek**, og velg videoressursen.
+1. Velg **Rediger**.
 1. Angi **Minimumsalder**-attributtet i egenskapsruten for videoressursen.
 
 > [!NOTE]
@@ -107,8 +107,10 @@ Hvis du vil angi **Minimumsalder**-attributtet for en videoressurs, følger du d
 
 [Dynamics 365 Accessibility Center](https://docs.microsoft.com/dynamics365/get-started/accessibility/index)
 
-[Oversikt over samsvar](compliance-overview.md)
+[Samsvarsoversikt](compliance-overview.md)
 
-[Samsvar for informasjonskapsel](cookie-compliance.md)
+[Informasjonskapselsamsvar](cookie-compliance.md)
 
-[Legge til en side med personvernpolicy](add-privacy-page.md)
+[Legge til en side for personvernpolicy](add-privacy-page.md)
+
+[Erstatte bruker-IDer knyttet til sporede innholdsendringer](replace-IDs-tracked-changes.md)

@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: f7ee0b5aa4e72614205e129acd986376b33efc70
-ms.sourcegitcommit: 68f1485de7d64a6c9eba1088af63bd07992d972d
+ms.openlocfilehash: d5d9dbce0c74d32107db6bbae033b921e4201693
+ms.sourcegitcommit: e06da171b9cba8163893e30244c52a9ce0901146
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "3172697"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "3275656"
 ---
 # <a name="general-troubleshooting"></a>Generell feilsøking
 
@@ -70,14 +70,12 @@ Følg denne fremgangsmåten for å aktivere sporingsloggen.
 Følg denne fremgangsmåten for å se sporingsloggen.
 
 1. Logg inn på Finance and Operations-appen, åpne **Innstillinger**-siden, og velg deretter **Sporingslogg for plugin-modul** under **Tilpassing**.
-2. Finn sporingsloggene der **Typenavn**-feltet er satt til **Microsoft.Dynamics.Integrator.CrmPlugins.Plugin**.
+2. Finn sporingsloggene der **Typenavn**-feltet er satt til **Microsoft.Dynamics.Integrator.DualWriteRuntime.Plugins.PreCommmitPlugin**.
 3. Dobbeltklikk et element for å vise hele loggen, og se deretter gjennom **Meldingsblokk**-teksten i hurtigfanen **Utførelse**.
 
 ## <a name="enable-debug-mode-to-troubleshoot-live-synchronization-issues-in-finance-and-operations-apps"></a>Aktivere feilsøkingsmodus for å feilsøke problemer med direkte synkronisering i Finance and Operations-apper
 
-**Nødvendig rolle for å vise feilene:** Systemadministrator
-
-Dobbel skriving-feil som kommer fra Common Data Service, kan vises i Finance and Operations-appen. I noen tilfeller er ikke hele teksten i feilmeldingen tilgjengelig fordi meldingen er for lang eller inneholder personlig identifiserende informasjon (PII). Du kan aktivere detaljert logging for feil ved å følge disse trinnene.
+**Nødvendig rolle for å vise feilene:** Systemadministrator – dobbel skriving-feil som kommer fra Common Data Service, kan vises i Finance and Operations-appen. I noen tilfeller er ikke hele teksten i feilmeldingen tilgjengelig fordi meldingen er for lang eller inneholder personlig identifiserende informasjon (PII). Du kan aktivere detaljert logging for feil ved å følge disse trinnene.
 
 1. Alle prosjektkonfigurasjoner i Finance and Operations-apper har en **IsDebugMode**-egenskap i **DualWriteProjectConfiguration**-enheten. Åpne **DualWriteProjectConfiguration**-enheten ved hjelp av Excel-tillegget.
 
@@ -104,7 +102,7 @@ Dobbel skriving-feil som kommer fra Common Data Service, kan vises i Finance and
 
 ## <a name="unlink-and-link-another-common-data-service-environment-from-a-finance-and-operations-app"></a>Koble fra og koble til et annet Common Data Service-miljø fra en Finance and Operations-app
 
-**Nødvendig legitimasjon for å koble fra miljøet:** Azure AD-leieradministrator
+**Nødvendig rolle for å koble fra miljøet:** Systemansvarlig for enten Finance and Operations-app eller Common Data Service.
 
 1. Logg på Finance and Operations-appen.
 2. Gå til **Arbeidsområder \> Databehandling**, og velg flisen **Dobbel skriving**.
@@ -113,3 +111,13 @@ Dobbel skriving-feil som kommer fra Common Data Service, kan vises i Finance and
 5. Velg **Ja** for å bekrefte operasjonen.
 
 Du kan nå koble til et nytt miljø.
+
+## <a name="unable-to-view-the-sales-order-line-information-form"></a>Kan ikke vise informasjonsskjemaet for salgsordrelinjen 
+
+Når du oppretter en salgsordre i Dynamics 365 Sales, kan du bli omdirigert til ordrelinjeskjemaet for Dynamics 365 Project Operations hvis du klikker på **+ Legg til produkter**. Det finnes ingen måter fra dette skjemaet å vise **Informasjon**-skjemaet for salgsordrelinje. Alternativet for **Informasjon** vises ikke i rullegardinlisten under **Ny ordrelinje**. Dette skjer fordi Project Operations er installert i ditt miljø.
+
+Følg denne fremgangsmåten for å reaktivere alternativet for **Informasjon**-skjema:
+1. Gå til **Ordrelinje**-enheten.
+2. Finn **Informasjon**-skjemaet under skjemaer-noden. 
+3. Velg **Informasjon**-skjemaet, og klikk deretter **Aktiver sikkerhetsroller**. 
+4. Endre sikkerhetsinnstillingen til **Vis til alle**.

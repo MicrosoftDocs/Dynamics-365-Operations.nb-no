@@ -3,7 +3,7 @@ title: Legge til en velkomstmelding
 description: Dette emnet beskriver hvordan du legger til en velkomstmelding i Microsoft Dynamics 365 Commerce-webområdet.
 author: psimolin
 manager: annbe
-ms.date: 12/12/2019
+ms.date: 04/13/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: ca10b01268b5dcd4c6fe448d90cd0ebd65a2673b
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: d2a125b4e71016ad620f128af2e3c9f29aa04f4c
+ms.sourcegitcommit: 7a1d01122790b904e2d96a7ea9f1d003392358a6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3001260"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "3269621"
 ---
 # <a name="add-a-welcome-message"></a>Legge til en velkomstmelding
 
@@ -41,17 +41,14 @@ Når en velkomstmelding blir lagt til i et delt topptekstfragment, vises den på
 
 Følg denne fremgangsmåten for å legge til en velkomstmelding på området.
 
-1. I Dynamics 365 Commerce går du til området ditt.
+1. Gå til området i Commerce-områdebygger.
 1. Velg **Fragmenter**.
 1. Velg topptekstfragmentet du vil legge til meldingen i.
 1. Utvid **Feilmeldinger/Informasjonsmeldinger** i disposisjonstreet.
-1. Velg varselmodulen.
-
-    Hvis det ennå ikke finnes en varselmodul, velger du ellipseknappen (**...**) ved siden **Feilmeldinger/Informasjonsmeldinger**, og deretter velger du **Legg til modul**. Velg varselmodulen, og velg deretter **OK**.
-
+1. Velg varselmodulen, og velg deretter **OK**. Hvis det ennå ikke finnes en varselmodul, velger du først ellipseknappen (**...**) ved siden **Feilmeldinger/Informasjonsmeldinger**, og deretter velger du **Legg til modul**.
 1. I egenskapsruten til høyre, i kategorien **Data**, velger du **Legg til datakilde**, og deretter velger du **Innhold**.
 1. I feltet **Inndatatekst** skriver du inn teksten i velkomstmeldingen.
-1. Lagre topptekstfragmentet, sjekk det inn, og publiser det.
+1. Velg **Lagre**, velg **Fullfør redigering** for å sjekke inn topptekstfragmentet, og velg deretter **Publiser** for å publisere det. 
 
 Velkomstmeldingen vil nå vises øverst på alle områdesider som bruker det valgte topptekstfragmentet.
 

@@ -3,7 +3,7 @@ title: Beholdningslukking
 description: Som en del av prosessen for å utligne avgangstransaksjoner med mottakstransaksjoner, kan du også velge å få økonomimodulen oppdatert for å gjenspeile justeringene som er gjort.
 author: AndersGirke
 manager: tfehr
-ms.date: 10/24/2017
+ms.date: 04/22/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 83c88a5fe52e41df5a0371d6666f544996bd3c76
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 9e9f0608c9afc25e7ca6657f6a2e87d088d4cbad
+ms.sourcegitcommit: 399f128d90b71bd836a1c8c0c8c257b7f9eeb39a
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3201646"
+ms.lasthandoff: 04/23/2020
+ms.locfileid: "3283996"
 ---
 # <a name="inventory-close"></a>Beholdningslukking
 
@@ -59,11 +59,10 @@ Flere av oppgavene du kan utføre på siden **Lukking og justering**, fører til
 
 Finanskontoene som oppdateres på grunn av disse oppgavene, er koblet til den opprinnelige lagertransaksjonen. Hvis en salgsordre utlignes til en bestilling, vil for eksempel finanskontoene som ble brukt til den opprinnelige salgsordren, bli justert. Dette gjelder selv om finanskontoene for varegruppen som er tilordnet til dette elementet, er endret siden salgsordren ble postert. Når lagerlukking oppretter et utligningsbeløp, er utligningsbeløpet fremdeles postert på de opprinnelige finanskontoene, og ikke på de nye finanskontoene som er tilordnet til varen. Økonomimodulen kan også bli oppdatert hvis du reverserer en lagerlukking. 
 
-**Merknader:**
-
--   Lagerlukking er ikke obligatorisk hvis du bruker vurderingmetoden standardkost.
--   Før du kjører lukkingsprosedyren kan du vise en liste over varer som ikke kan utlignes under oppdateringen.
--   Vi anbefaler at du kjører lagerlukkingen utenfor vanlig arbeidstid for å sørge for en mer jevn fordeling av datamaskinressurser
+> [!NOTE] 
+> - Lagerlukking er et nødvendig trinn i månedsavslutningsprosedyren for alle lagermodeller. Dette omfatter standard og glidende gjennomsnitt av etterkalkulering. Du vil ikke kunne lukke finansperioden før det har blitt utført en lagerlukking fra periodens sluttdato.
+> - Før du kjører lukkingsprosedyren kan du vise en liste over varer som ikke kan utlignes under oppdateringen.
+> - Vi anbefaler at du kjører lagerlukkingen utenfor vanlig arbeidstid for å sørge for en mer jevn fordeling av datamaskinressurser
 
 ## <a name="the-inventory-close-log"></a> Loggen for lagerlukking
 Når lagerlukkingsprosessen er fullført, kan det hende at en melding i meldingssentret rapporterer at kostprisen for en vare er feil fordi en transaksjon ikke kan utlignes helt. 
@@ -85,7 +84,6 @@ I enkelte tilfeller kan du kanskje ikke kan gjøre noe med advarslene. Når merk
 ## <a name="reversing-a-completed-inventory-close"></a>Tilbakeføre en fullført lagerlukking
 Noen ganger kan du bli nødt til å tilbakeføre en fullført lagerlukking for å sette utligninger tilbake til statusen de hadde før justeringer ble utført. Når du tilbakefører en fullført lagerlukking, blir lageret åpnet på nytt for å muliggjøre postering i perioden som lagerlukkingen dekker. Relaterte endringer kan også foretas i økonomimodulen. Når du er ferdig med å gjøre justeringer, kan du kjøre lagerlukking på nytt for perioden du arbeider med. 
 
-**Obs!** Bare den siste lagerperioden som ble lukket, kan åpnes på nytt. For å tilbakeføre en tidligere lagerlukking må du tilbakeføre hver etterfølgende lagerlukking én om gangen og begynne med den siste lukkingen.
-
-
+> [!NOTE] 
+> Bare den siste lagerperioden som ble lukket, kan åpnes på nytt. For å tilbakeføre en tidligere lagerlukking må du tilbakeføre hver etterfølgende lagerlukking én om gangen og begynne med den siste lukkingen.
 

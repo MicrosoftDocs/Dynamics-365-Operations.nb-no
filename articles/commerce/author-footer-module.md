@@ -3,7 +3,7 @@ title: Bunntekstmodul
 description: Dette emnet dekker bunntekstmoduler og hvordan du redigerer dem i Dynamics 365 Commerce.
 author: anupamar
 manager: annbe
-ms.date: 10/31/2019
+ms.date: 04/14/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anupamar-ms
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: f8e0290b5af9d0c1fc9ad0279b0d7f81c9feb2fc
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 51f8d26d6223dcd1f6961058cd9d772a67c69670
+ms.sourcegitcommit: 7a1d01122790b904e2d96a7ea9f1d003392358a6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3001168"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "3269642"
 ---
 # <a name="footer-module"></a>Bunntekstmodul  
 
@@ -58,12 +58,12 @@ I likhet med de fleste containere støtter en bunntekstmodul egenskaper for over
 1. For å legge til "Til toppen"-kobling i bunnteksten velger du ellipseknappen for bunntekstkategorimodulen, og deretter velger du **Legg til modul**.
 1. I dialogboksen **Legg til modul** velger du Til toppen-modulen, og deretter velger du **OK**.
 1. I disposisjonstreet velger du Til toppen-modulen. I egenskapsruten til høyre konfigurerer du deretter Til toppen-modulen slik du ønsker.
-1. Lagre sidefragmentet, sjekk det inn, og publiser det.
+1. Velg **Lagre**, velg **Fullfør redigering** for å sjekke inn sidefragmentet, og velg deretter **Publiser** for å publisere det.
 
 Følg denne fremgangsmåten for hver sidemal som er opprettet for området.
 
 1. I **Hoved**-sporet på standardsiden, i bunntekstmodulen, legger du til bunntekstfragmentet du opprettet.
-1. Lagre malen, sjekk den inn og publiser den.
+1. Velg **Lagre**, velg **Fullfør redigering** for å sjekke inn malen, og velg deretter **Publiser** for å publisere den.
 
 Ved å legge til sidefragmentet i sidemaler garanteres det at bunnteksten gjengis på hver side.
 

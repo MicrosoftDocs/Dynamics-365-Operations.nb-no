@@ -3,7 +3,7 @@ title: Lagre, forhåndsvise og publisere en side
 description: Dette emnet beskriver hvordan du lagrer, forhåndsviser og publiserer en side i Microsoft Dynamics 365 Commerce.
 author: psimolin
 manager: annbe
-ms.date: 10/01/2019
+ms.date: 04/14/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,15 +17,14 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 04200264fabca265484b5e66426810efe8028a50
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: e1e19594327c0042915bfae87f480434a7fcb159
+ms.sourcegitcommit: 7a1d01122790b904e2d96a7ea9f1d003392358a6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3002825"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "3269987"
 ---
 # <a name="save-preview-and-publish-a-page"></a>Lagre, forhåndsvise og publisere en side
-
 
 [!include [banner](includes/banner.md)]
 
@@ -33,7 +32,7 @@ Dette emnet beskriver hvordan du lagrer, forhåndsviser og publiserer en side i 
 
 ## <a name="save-a-page"></a>Lagre en side
 
-Hvis du vil lagre en side, må du sjekke den ut til deg selv og åpne den i redigeringsprogrammet. Du bør lagre en side umiddelbart etter at du har endret den, for å bidra til å sikre at endringene lagres.
+Hvis du vil lagre en side, må du sjekke den ut til deg selv og åpne den i redigeringsprogrammet. Velg **Rediger** på kommandolinjen for å sjekke ut en side. Du bør lagre en side umiddelbart etter at du har redigert den, for å bidra til å sikre at endringene lagres.
 
 Når du lagrer en side, er endringene bare synlige for deg. Lagringsoperasjonen er primært ment å lagre endringer mens siden ennå ikke er klar til å sjekkes inn. Når du er ferdig med å endre siden, anbefaler vi at du sjekker den inn, slik at endringene blir synlige for andre. På dette tidspunktet kan siden også sjekkes ut av andre brukere som må endre den.
 
@@ -50,7 +49,7 @@ Når du er ferdig med å endre siden, kan det være lurt å forhåndsvise den fo
 
 ## <a name="publish-a-page"></a>Publisere en side
 
-Når siden er klar, er det neste trinnet å publisere den, slik at eksterne brukere kan vise innholdet. Før du kan publisere en side må du sjekke den inn.
+Når siden er klar, er det neste trinnet å publisere den, slik at eksterne brukere kan vise innholdet. Før du kan publisere en side, må du sjekke den inn ved å velge **Fullfør redigering** på kommandolinjen.
 
 Du kan publisere og oppheve publiseringen av sidene enten fra sideinspeksjonen eller sideredigeringen. Sideinspeksjonen viser en liste over sider og tillater masseoperasjoner. Sideredigeringsprogrammet kan brukes til å publisere eller oppheve publiseringen av bare den ene siden som er åpen i den.
 
@@ -70,9 +69,9 @@ Følg denne fremgangsmåten for å lagre, forhåndsvise og publisere en startsid
 1. Under **Områder** velger du **Fabrikam** (eller navnet på området).
 1. Velg **Sider**i navigasjonsruten til venstre.
 1. Finn og velg startsside for å åpne den i sideredigeringsprogrammet.
-1. Velg **Sjekk ut**.
+1. Velg **Rediger**.
 1. Endre siden slik du vil ha den.
-1. Velg **Lagre**, og velg deretter **Sjekk inn**.
+1. Velg **Lagre**, og velg deretter **Fullfør redigering**.
 1. Skriv inn en merknad om endringene du har gjort, i feltet **Kommentar**, og velg deretter **OK**.
 1. Velg **Forhåndsvisning** for å forhåndsvise siden. Når du er ferdig, lukker du forhåndsvisningskategorien for å gå tilbake til redigeringsverktøyet.
 1. Velg **Publiser**.

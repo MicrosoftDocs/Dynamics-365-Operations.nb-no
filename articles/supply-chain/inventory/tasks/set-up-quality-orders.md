@@ -17,12 +17,12 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 679448255bd85aafb07270f4858d4b83d2fe643b
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 4577b8b189403b3d71eb634e159d51d2fa53ce12
+ms.sourcegitcommit: 6d6aa016c4971b0673d461b82fd80b060ae5f7a1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3204039"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "3268799"
 ---
 # <a name="set-up-quality-orders"></a>Definere kvalitetsordrer
 
@@ -78,6 +78,9 @@ Denne fremgangsmåten viser hvordan du aktiverer en kvalitetsstyringsprosess der
 8. Klikk **Lagre**.
 9. Lukk siden.
 
+> [!NOTE]
+> Funksjonen *Kvalitetsstyring for lagerprosesser* gir flere vareprøvefunksjoner. Den legger til begrepet *vareprøveområde* og muligheten til å definere et fullstendig nummerskilt som spesifikasjon av antall. Hvis du har aktivert denne funksjonen, kan du se [Kvalitetsstyring for lagerprosesser](../quality-management-for-warehouses-processes.md) for mer informasjon.
+
 ## <a name="create-a-quality-group"></a>Opprette en kvalitetsgruppe
 1. Gå til **Lagerstyring > Oppsett > Kvalitetskontroll > Kvalitetsgrupper**.
 2. Klikk på **Ny**.
@@ -131,3 +134,5 @@ Denne fremgangsmåten viser hvordan du aktiverer en kvalitetsstyringsprosess der
 16. Klikk **Lagre**.
 17. Lukk siden.
 
+> [!NOTE]
+> Funksjonen *Kvalitetsstyring for lagerprosesser* inneholder flere alternativer for å definere kvalitetstilknytninger. Den legger til en ny betingelse**Gjeldende lagertype**) og en ny innstilling **(Policy for kvalitetsbehandling**). Hvis du har aktivert denne funksjonen, kan du se [Kvalitetsstyring for lagerprosesser](../quality-management-for-warehouses-processes.md) for mer informasjon.

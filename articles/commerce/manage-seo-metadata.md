@@ -3,7 +3,7 @@ title: Behandle metadata for søkemotor
 description: Dette emnet beskriver hvordan du behandler metadata for søkemotoroptimalisering i Microsoft Dynamics 365 Commerce.
 author: psimolin
 manager: annbe
-ms.date: 10/01/2019
+ms.date: 04/14/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 1e7da7bf5c473746413e92babfa943f546b7724d
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 74229628e48ffb8ac974acd868e325eeca77d91e
+ms.sourcegitcommit: 7a1d01122790b904e2d96a7ea9f1d003392358a6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3003470"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "3270056"
 ---
 # <a name="manage-seo-metadata"></a>Behandle metadata for søkemotor
 
@@ -72,13 +72,10 @@ Hvis du vil endre sidemetadata, følger du disse trinnene.
 1. Under **Områder** velger du **Fabrikam** (eller navnet på området).
 1. Velg **Sider**i navigasjonsruten til venstre.
 1. Velg startsiden for å åpne den i sideredigeringsprogrammet.
-1. Velg **Sjekk ut** i handlingsruten.
+1. På kommandolinjen velger du **Rediger**.
 1. Velg **Standard metakoder** i egenskapsruten til høyre.
-1. Hvis du vil legge til en ny metakode, velger du **Legg til**, og deretter angir du koden i feltet.
-
-    Hvis du vil fjerne en eksisterende metakode, velger du papirkurvsymbolet til høyre for den.
-
-1. Velg **Lagre**, og velg deretter **Sjekk inn**.
+1. Hvis du vil legge til en ny metakode, velger du **Legg til**, og deretter angir du koden i feltet. Hvis du vil fjerne en eksisterende metakode, velger du papirkurvsymbolet til høyre for den.
+1. Velg **Lagre**, og velg deretter **Fullfør redigering**.
 1. I feltet **Kommentarer** angr du **Oppdaterte metakoder**, og deretter velger du **OK**.
 1. Velg **Forhåndsvisning** for å forhåndsvise siden. Når du er ferdig, lukker du forhåndsvisningskategorien for å gå tilbake til redigeringsverktøyet.
 1. Velg **Publiser**.

@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-01-27
-ms.openlocfilehash: 12a0e07d1c60a359b3ba6c0d20176927ffe89431
-ms.sourcegitcommit: 68f1485de7d64a6c9eba1088af63bd07992d972d
+ms.openlocfilehash: 57aabeef0ee94b4b13bbe6e3925bcafe1e809ab2
+ms.sourcegitcommit: 984604fd651d74aa49a2d7513f096faaf49f9f27
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "3172814"
+ms.lasthandoff: 04/18/2020
+ms.locfileid: "3270294"
 ---
 # <a name="prospect-to-cash-in-dual-write"></a>Kundeemne til kontanter i dobbel skriving
 
@@ -66,6 +66,14 @@ Salgstilbud kan opprettes i både Sales og Supply Chain Management. Hvis du oppr
 + Du kan legge til en rabatt i produktet på tilbudet. I dette tilfellet blir rabatten synkronisert til Supply Chain Management. Feltene **Rabatt**, **Gebyrer** og **Avgift** feltene på hodet kontrolleres av et oppsett i Supply Chain Management. Dette oppsettet støtter ikke integreringstilordning. I stedet vedlikeholdes og behandles feltene **Pris**, **Rabatt**, **Gebyrer** og **Avgift** i Supply Chain Management.
 + Feltene **Rabattprosent**, **Rabatt** og **Fraktbeløp** i salgstilbudshodet er skrivebeskyttet.
 + Feltene **Fraktvilkår**, **Betalingsbetingelser**, **Leveringsmetode** og **Leveringsmåte** er ikke en del av standardtilordningene. Hvis du vil tilordne disse feltene, må du definere en verditilordning som er spesifikk for dataene i organisasjoner som enheten synkroniseres mellom.
+
+Hvis du også bruker Field Service-løsningen, må du kontrollere at parameteren **Hurtigoppretting av tilbudslinje** aktiveres på nytt. Hvis du aktiverer parameteren på nytt, kan du fortsette å opprette tilbudslinjer ved hjelp av funksjonen for hurtigoppretting.
+1. Gå til Dynamics 365 Sales-programmet.
+2. Velg innstillinger-ikonet i det øverste navigasjonsfeltet.
+3. Velg **Avanserte innstillinger**.
+4. Velg **Tilpass systemet**-alternativet.
+5. Velg menyelementet **Tilbudslinje**.
+6. Gå til **Datatjenester**-delen, og merk av for **Tillat hurtigoppretting**.
 
 ## <a name="sales-orders"></a>Salgsordre
 

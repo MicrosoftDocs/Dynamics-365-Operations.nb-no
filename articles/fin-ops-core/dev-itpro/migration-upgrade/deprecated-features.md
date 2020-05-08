@@ -3,7 +3,7 @@ title: Fjernede eller avskrevne funksjoner i tidligere versjoner
 description: Dette emnet beskriver funksjoner som er fjernet, eller som ble planlagt for fjerning fra Dynamics 365 for Finance and Operations og tidligere versjoner av dette produktet.
 author: sericks007
 manager: AnnBe
-ms.date: 04/03/2020
+ms.date: 04/17/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c1aade5d1272e069c1c2e3470363ffd7d5fc3cdc
-ms.sourcegitcommit: 724f5b400a4e7c385da9d8b22db416ebc3623b93
+ms.openlocfilehash: be266f838c5e6cd10655546179e9075e36570bfc
+ms.sourcegitcommit: 399f128d90b71bd836a1c8c0c8c257b7f9eeb39a
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "3225134"
+ms.lasthandoff: 04/23/2020
+ms.locfileid: "3284020"
 ---
 # <a name="removed-or-deprecated-features-in-previous-releases"></a>Fjernede eller avskrevne funksjoner i tidligere versjoner
 
@@ -230,7 +230,7 @@ Støtte for opprettelse av prosjektbaserte salgsordrer der prosjektkontrakten ha
 | **Erstattet med en annen funksjon?**   | Nr. |
 | **Berørte produktområder**         | Behandling av produktinformasjon |
 | **Distribusjonsalternativ**              | Alle  |
-| **Status**                         | Fjernet fra og med Finance and Operations 10.0.0 med Platform update 24. (Hvis og bare hvis du trenger å reparere skadede data som er forårsaket av en tidligere endring av primærnøkkelen for et frigitt produkt, kan du kontakte Microsoft kundestøtte for å be om en midlertidig fjerning av denne begrensningen.) |
+| **Status**                         | Fjernet fra og med Finance and Operations 10.0.0 med Platform update 24.|
 
 
 ## <a name="finance-and-operations-813-with-platform-update-23"></a>Finance and Operations 8.1.3 med Platform update 23
@@ -267,7 +267,7 @@ Innebygde nøkkelytelsesindikatorer (KPIer) kan modelleres i Visual Studio av en
 | **Erstattet med en annen funksjon?**   | Advarselen vil bli erstattet av en kompileringsfeil i fremtiden. |
 | **Berørte produktområder**         | Visual Studio-utviklingsverktøy |
 | **Distribusjonsalternativ**              | Alle |
-| **Status**                         | Avskrevet: Advarselen blir en kompileringstidsfeil i fremtiden. Denne endringen er målrettet mot plattformoppdateringer for versjon 10.0.11 av Finance and Operations-apper. |
+| **Status**                         | Avskrevet: Advarselen er en kompilatorfeil i plattformoppdateringer for versjon 10.0.11 av Finance and Operations-apper. |
 
 #### <a name="complete-list"></a>Fullstendig liste
 Hvis du vil ha tilgang til den fullstendige listen over APIer som kan avskrives, kan du se [Avskriving av metoder og metadataelementer](deprecation-deletion-apis.md).

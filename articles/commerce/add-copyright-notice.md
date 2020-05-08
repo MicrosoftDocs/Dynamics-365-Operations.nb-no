@@ -3,7 +3,7 @@ title: Legge til en opphavsrettserklæring
 description: Dette emnet beskriver hvordan du legger til opphavsrettserklæring på e-handelsområdet.
 author: psimolin
 manager: AnnBe
-ms.date: 01/23/2020
+ms.date: 04/13/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,15 +17,14 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 54b48ee74bc9d9f2b77f0584a0bf1739a8dfdbdb
-ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
+ms.openlocfilehash: a2ed52dbd19508e07fcced92a7fad831180b1d1d
+ms.sourcegitcommit: 7a1d01122790b904e2d96a7ea9f1d003392358a6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "3025488"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "3269596"
 ---
 # <a name="add-a-copyright-notice"></a>Legge til en opphavsrettserklæring
-
 
 [!include [banner](includes/banner.md)]
 
@@ -51,12 +50,12 @@ Hvis du vil legge til en opphavsrettserklæring nederst på hver side som bruker
 1. I dialogboksen velger du **Tekstblokk**, og deretter velger du **OK**.
 1. I navigasjonsruten velger du **Tekstblokk**.
 1. Legg til melding om opphavsrett i feltet **Avsnitt** i egenskapsruten til høyre. Skriv for eksempel inn **(C) Fabrikam 2019**.
-1. Velg **Lagre**, velg **Sjekk inn**, og velg deretter **Publiser**.
-1. Gå til **Maler**, velg malen, og velg deretter **Sjekk ut**.
+1. Velg **Lagre**, velg **Fullfør redigering**, og velg deretter **Publiser**.
+1. Gå til **Maler**, velg malen, og velg deretter **Rediger**.
 1. Under **Sideoppsett** utvider du **Brødtekst**, og deretter utvider du **Standardside**.
 1. Velg ellipseknappen ved siden av **Bunntekstspor**, og velg deretter **Legg til fragment**.
 1. Velg fragmentet du opprettet tidligere, og velg deretter **Velg**.
-1. Sjekk inn malen, og publiser den.
+1. Velg **Fullfør redigering** for å sjekke inn malen, og velg deretter **Publiser** for å publisere den.
 
 Bunnteksten som inneholder opphavsrettserklæringen, vises automatisk nederst på alle sider som bruker den valgte malen.
 
