@@ -20,8 +20,6 @@
                   href: get-started/whats-new-platform-update-34.md
                 - name: Platform update 33 (april 2020)
                   href: get-started/whats-new-platform-update-33.md
-                - name: Platform update 32 (februar 2020)
-                  href: get-started/whats-new-platform-update-32.md
             - name: Funksjoner som er fjernet eller avskrevet
               items:
                 - name: Fjernede eller avskrevne Platform-funksjoner
@@ -140,8 +138,6 @@
                               href: data-entities/dual-write/connection-setup.md
                             - name: Oppsett av dobbel skriving fra Lifecycle Services
                               href: data-entities/dual-write/lcs-setup.md
-                            - name: Innledende synkronisering
-                              href: data-entities/dual-write/initial-sync.md
                             - name: Aktivere dobbel skriving for eksisterende apper i Finance and Operations
                               items:
                                 - name: Aktivere dobbel skriving for eksisterende apper i Finance and Operations
@@ -556,6 +552,16 @@
                   href: dev-tools/development-system-requirements.md
             - name: 'Versjonskontroll, metadatasøk og navigasjon'
               href: dev-tools/version-control-metadata-navigation.md
+            - name: Bygge automatisering ved hjelp av Azure
+              items:
+                - name: Bygge automatisering ved hjelp av Microsoft-driftede agenter og Azure Pipelines
+                  href: dev-tools/hosted-build-automation.md
+                - name: Legge til lisensfiler i en distribuerbar pakke i Azure Pipelines
+                  href: dev-tools/pipeline-add-license-package.md
+                - name: Opprette distribuerbare pakker i Azure Pipelines
+                  href: dev-tools/pipeline-create-deployable-package.md
+                - name: Versjonskontroll for X++-modell i Azure Pipelines
+                  href: dev-tools/pipeline-model-version.md
             - name: Eksempel på flåtestyringsprogram
               items:
                 - name: Ende-til-ende-scenario for eksempelprogrammet Flåtestyring
@@ -616,7 +622,7 @@
                   href: dev-tools/event-handler-result-class.md
                 - name: 'Skrive forretningslogikk ved hjelp av C#- og X++-kildekode'
                   href: dev-tools/write-business-logic.md
-                - name: Endringer i X ++- og X ++-kompilatoren
+                - name: Endringer i X++- og X++-kompilatoren
                   href: dev-tools/programming-language-support.md
                 - name: 'LINQ-leverandør for C#'
                   href: dev-tools/linq-provider-c.md
@@ -1396,6 +1402,8 @@
                   href: sysadmin/tasks/identify-resolve-conflicts-segregation-duties.md
                 - name: Tilordne brukere til sikkerhetsroller
                   href: sysadmin/tasks/assign-users-security-roles.md
+                - name: Sikkerhetsdiagnostikk for oppgaveregistreringer
+                  href: sysadmin/tasks/security-diagstics-task-recordings.md
             - name: Satsvis behandling
               items:
                 - name: Oversikt over satsvis behandling
