@@ -425,6 +425,8 @@
                   href: asset-management/controlling-and-reporting/item-where-used.md
                 - name: Vedlikeholdsstatus
                   href: asset-management/controlling-and-reporting/maintenance-status.md
+            - name: Integrere aktivabehandling med Dynamics 365 Guides
+              href: asset-management/asset-management-guides-integration.md
             - name: Mobilt arbeidsområde for aktivabehandling
               href: asset-management/asset-management-mobile-workspace.md
         - name: Databehandling
@@ -641,7 +643,7 @@
                   href: ../fin-ops-core/dev-itpro/analytics/power-bi-home-page.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Kostnadsstyring
                   href: ../fin-ops-core/dev-itpro/analytics/cost-management-content-pack.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Opplæring
+                - name: Læring
                   href: ../fin-ops-core/dev-itpro/analytics/learning-power-bi.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Organisasjonsopplæring
                   href: ../fin-ops-core/dev-itpro/analytics/organizational-training-analysis-power-bi-content-pack.md?toc=/dynamics365/supply-chain/toc.json
@@ -703,7 +705,7 @@
                   href: ../fin-ops-core/dev-itpro/analytics/model-aggregate-data.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Legge til finansdimensjoner i aggregerte målinger
                   href: ../fin-ops-core/dev-itpro/analytics/add-financial-dimensions-aggregate-measurements.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Opprette analyserapporter ved hjelp av PowerBI Desktop
+                - name: Opprette analyserapporter ved hjelp av Power BI Desktop
                   href: ../fin-ops-core/dev-itpro/analytics/author-distribute-power-bi-reports.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Legge til analyse i arbeidsområder ved hjelp av Power BI Embedded
                   href: ../fin-ops-core/dev-itpro/analytics/add-analytics-tab-workspaces.md?toc=/dynamics365/supply-chain/toc.json
@@ -1135,7 +1137,7 @@
                       href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md?toc=/dynamics365/supply-chain/toc.json
             - name: Opplæringer
               items:
-                - name: Bruke JOIN-datakilder til å hente data fra flere programtabeller
+                - name: Bruke datakilder for sammenslåing til å hente data fra flere programtabeller
                   href: ../fin-ops-core/dev-itpro/analytics/er-join-data-sources.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Konfigurere modelltilordninger for landkontekstavhengig ER
                   href: ../fin-ops-core/dev-itpro/analytics/er-country-dependent-model-mapping.md?toc=/dynamics365/supply-chain/toc.json
@@ -1319,7 +1321,7 @@
               items:
                 - name: Oversikt over planleggingsoptimalisering
                   href: master-planning/planning-optimization/planning-optimization-overview.md
-                - name: Negativ beholdning behandles som null beholdning
+                - name: Planlegging med negative lagerbeholdningsantall
                   href: master-planning/planning-optimization/negative-on-hand.md
                 - name: Komme i gang med planleggingsoptimalisering
                   href: master-planning/planning-optimization/get-started.md
@@ -2653,8 +2655,6 @@
                   href: warehousing/material-replenishment-withdrawal-kanban.md
                 - name: Definere en prosess for minimums-/maksimumsetterfylling
                   href: warehousing/tasks/set-up-min-max-replenishment-process.md
-                - name: Definere en arbeidsmal for bestillinger
-                  href: ../supply-chain/warehousing/tasks/set-up-work-template-purchase-orders.md
             - name: Installere og konfigurere lagerappen
               items:
                 - name: Oversikt over å installere og konfigurere
@@ -2663,7 +2663,7 @@
                   href: warehousing/configure-app-field-names-priorities-warehouse.md
                 - name: Definere mobilenheter for lagerarbeid
                   href: warehousing/configure-mobile-devices-warehouse.md
-                - name: Nummerskilt som mottar med mobilappen Lager
+                - name: Nummerskilt som mottar med lagerappen
                   href: warehousing/warehousing-mobile-device-app-license-plate-receiving.md
                 - name: Definere et menyelement for mobilenhet for å fullføre arbeid i en bestilling
                   href: warehousing/tasks/set-up-mobile-device-menu.md
