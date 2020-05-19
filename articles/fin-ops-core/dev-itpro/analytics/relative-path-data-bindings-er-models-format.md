@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
-ms.search.form: ERSolutionTable , ERModelMappingDesigner, EROperationDesigner, ERExpressionDesignerFormula
+ms.search.form: ERSolutionTable, ERModelMappingDesigner, EROperationDesigner, ERExpressionDesignerFormula
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
 ms.search.scope: Core, Operations
@@ -16,12 +16,12 @@ ms.search.region: global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 2940d99243ac52ee0d56a1c4423c4f0250f42f57
-ms.sourcegitcommit: f38302b9430f2ab3efe91d0a7beff946bc610e8f
+ms.openlocfilehash: c08e81b6e2983a8f16104698944820e93ba3852d
+ms.sourcegitcommit: 139c8007e68d279d7ca9aa302598217522abb8cb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "3091778"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "3331330"
 ---
 # <a name="use-a-relative-path-in-data-bindings-of-er-models-and-formats"></a>Bruke en relativ bane i databindinger for ER-modeller og -formater
 
@@ -29,10 +29,10 @@ ms.locfileid: "3091778"
 
 Med verktøyet for elektronisk rapportering (ER) kan brukere definere elektroniske formatstrukturer og deretter beskrive hvordan disse strukturene skal fylles ved hjelp av data og algoritmer som finnes i programmet. Hvis du vil ha mer informasjon, kan du se [Opprette ER-konfigurasjoner (elektronisk rapportering)](electronic-reporting-configuration.md). Hvis du vil angi dataflyten for å hente Finance and Operations-data og bruke dem til å generere et elektronisk dokument, må du gjøre følgende:
 
-- Bind konfigurerte datakilder til elementer i den utformede domenespesifikke datamodellen. Modellstrukturen og de valgte datakildene kan være del av en kompleks hierarkisk struktur. Endelige bindinger kan på grunn av dette være ganske store og inneholde mange elementer av forskjellige typer (for eksempel relasjoner, tabeller og metoder). Bindingene kan bli mindre lesbare og svært vanskelige å se gjennom og forstå, særlig for ikke-eiere. 
-- Bind datamodellelementer til formatkomponenter for å definere hvilke data som skal fylles inn fra datamodellen i det genererte formatets utdata.
+- Bind konfigurerte datakilder til elementer i den utformede domenespesifikke [datamodellen](general-electronic-reporting.md#data-model-and-model-mapping-components). Modellstrukturen og de valgte datakildene kan være del av en kompleks hierarkisk struktur. Endelige bindinger kan på grunn av dette være ganske store og inneholde mange elementer av forskjellige typer (for eksempel relasjoner, tabeller og metoder). Bindingene kan bli mindre lesbare og svært vanskelige å se gjennom og forstå, særlig for ikke-eiere. 
+- Bind datamodellelementer til [formatkomponenter](general-electronic-reporting.md#FormatComponentOutbound) for å definere hvilke data som skal fylles inn fra datamodellen i det genererte formatets utdata.
 
-Funksjonen for relativ bane har blitt utgitt for å forbedre anvendeligheten av ER-tilordningsutforminger. Alternativet for relativ bane er som standard aktivert for nye forekomster av programmet der ER-utformingsopplevelsen er gjeldende (Microsoft Dynamics 365 Finance, Microsoft Regulatory Configuration Service). Vi implementerte parameteren for relativ bane, slik at brukerne kan fortsette å bruke hele banen når de arbeider med denne presentasjonen av ER-bindinger.
+Funksjonen for [relativ bane](er-formula-language.md#relative-path) har blitt utgitt for å forbedre anvendeligheten av ER-tilordningsutforminger. Alternativet for relativ bane er som standard aktivert for nye forekomster av programmet der ER-utformingsopplevelsen er gjeldende (Microsoft Dynamics 365 Finance, Microsoft Regulatory Configuration Service). Vi implementerte parameteren for relativ bane, slik at brukerne kan fortsette å bruke hele banen når de arbeider med denne presentasjonen av ER-bindinger.
 
 [![Brukerparametere](./media/relative-path-01.png)](./media/relative-path-01.png)
 
@@ -54,3 +54,7 @@ Denne funksjonen ødelegger ikke bakoverkompatibiliteten til ER-rammeverket. All
 
 > [!NOTE]
 > Alle endringer som forårsakes av masseendring av bindinger for nestede elementer i modelltilordninger, lagres riktig i konfigurasjonsdelta (sporing av endringer). Dermed kan kundene rebasere den avledede versjonen av modelltilordninger til en hvilken som helst ny basisversjon av den som er endret ved hjelp av denne nye funksjonen.
+
+## <a name="additional-resources"></a>Tilleggsressurser
+
+[ER-formelspråk](er-formula-language.md)

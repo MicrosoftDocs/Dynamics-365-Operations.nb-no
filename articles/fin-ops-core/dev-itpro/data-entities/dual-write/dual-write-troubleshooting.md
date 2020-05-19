@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: d5d9dbce0c74d32107db6bbae033b921e4201693
-ms.sourcegitcommit: e06da171b9cba8163893e30244c52a9ce0901146
+ms.openlocfilehash: 8cc7c11233c745719af72222eba02fb71d7a8944
+ms.sourcegitcommit: 4edc658448612afbf1c1663c166d12e08e4c4165
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "3275656"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "3340936"
 ---
 # <a name="general-troubleshooting"></a>Generell feilsøking
 
@@ -62,14 +62,14 @@ Når du har installert Package Deployer-verktøyet, installerer du løsningspakk
 
 Følg denne fremgangsmåten for å aktivere sporingsloggen.
 
-1. Logg inn på Finance and Operations-appen, åpne **Innstillinger**-siden, og velg deretter **Administrasjon** under **System**.
+1. Logg inn på den modelldrevne appe i Dynamics 365, åpne **Innstillinger**-siden, og velg deretter **Administrasjon** under **System**.
 2. Velg **Systeminnstillinger** på siden **Administrasjon**.
 3. I kategorien **Tilpassing**, i feltet **Sporing av plugin-modul og egendefinert arbeidsflytaktivitet**, velger du **Alle** for å aktivere plugin-sporingsloggen. Hvis du bare vil logge sporingslogger når det oppstår unntak, kan du velge **Unntak** i stedet.
 
 
 Følg denne fremgangsmåten for å se sporingsloggen.
 
-1. Logg inn på Finance and Operations-appen, åpne **Innstillinger**-siden, og velg deretter **Sporingslogg for plugin-modul** under **Tilpassing**.
+1. Logg inn på den modelldrevne appe i Dynamics 365, åpne **Innstillinger**-siden, og velg deretter **Sporingslogg for plugin-modul** under **Tilpassing**.
 2. Finn sporingsloggene der **Typenavn**-feltet er satt til **Microsoft.Dynamics.Integrator.DualWriteRuntime.Plugins.PreCommmitPlugin**.
 3. Dobbeltklikk et element for å vise hele loggen, og se deretter gjennom **Meldingsblokk**-teksten i hurtigfanen **Utførelse**.
 

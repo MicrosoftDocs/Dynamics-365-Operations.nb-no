@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a68ed1cf21039ec1077bae428dea242f19514b51
-ms.sourcegitcommit: 574309903f15eeab7911091114885b5c7279d22a
+ms.openlocfilehash: 81a3d64d04ceb20fec2f5ca4bb005e7ecb3c1929
+ms.sourcegitcommit: d2b111bf7a5fbf62ff2874d6c57c5ef8412df82e
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "2658626"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "3331378"
 ---
 # <a name="project-invoicing"></a>Prosjektfakturering
 
@@ -112,6 +112,9 @@ Når du bestiller en vare fra en leverandør og tilordner varen til et prosjekt,
 
 -   Fakturer prosjektets kunde for varen: Sett linjeegenskapen for varen til en belastbar verdi på bestillingen, og fakturer deretter kunden ved hjelp av riktig prosjektfaktureringsmåte.
 -   Ikke fakturer prosjektets kunde for varen: Ikke velg linjeegenskapen **Belastbar** på bestillingslinjen for varen. Du kan deretter fakturere bestillingen, og mer er det ikke nødvendig å gjøre.
+
+> [!NOTE] 
+> Linjer for frigivelse av tilbakeholdelse er ikke-belastbare som standard. Dette betyr at muligheten til å opprette et fakturaforslag for den frigitte tilbakeholdelsen ikke er aktivert.
 
 ## <a name="credit-notes"></a>Kreditnotaer
 Når et beløp på en kundefaktura har en negativ verdi, klassifiseres fakturaen som en kreditnota. Når dokumentet skrives ut, har det navnet "Kreditnota". 

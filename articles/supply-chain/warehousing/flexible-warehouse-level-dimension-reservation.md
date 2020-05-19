@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2020-01-15
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 0fe9ed9f2bebe8683f3b8bb37b33e8a63b9521f6
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 6c462a87494c434a6047542d448a85b3bce9f769
+ms.sourcegitcommit: ffd845d4230646499b6f074cb43e69ab95787671
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3205673"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "3346474"
 ---
 # <a name="flexible-warehouse-level-dimension-reservation-policy"></a>Fleksibel retningslinje for dimensjonsreservasjon på lagernivå
 
@@ -233,7 +233,7 @@ Følgende tabeller inneholder en oversikt som viser hvordan systemet håndterer 
 <td>Ja</td>
 <td>
 <ol>
-<li>Velg <strong>Overstyr plassering</strong>-menyelementet på Warehouse Mobile App (WMA) når du begynner plukkarbeid.</li>
+<li>Velg <strong>Overstyr plassering</strong>-menyelementet på lagerappen når du begynner plukkarbeid.</li>
 <li>Velg <strong>Foreslå</strong>.</li>
 <li>Bekreft den nye plasseringen som foreslås, basert på tilgjengeligheten av partikvantitet.</li>
 </ol>
@@ -247,10 +247,10 @@ Følgende tabeller inneholder en oversikt som viser hvordan systemet håndterer 
 <td>Gjelder ikke</td>
 </tr>
 <tr>
-<td>Nei</td>
+<td>Nr.</td>
 <td>
 <ol>
-<li>Velg <strong>Overstyr plassering</strong>-menyelementet på WMA når du starter plukkarbeid.</li>
+<li>Velg <strong>Overstyr plassering</strong>-menyelementet på lagerappen når du begynner plukkarbeid.</li>
 <li>Angi en plassering manuelt.</li>
 </ol>
 </td>
@@ -278,7 +278,7 @@ Følgende tabeller inneholder en oversikt som viser hvordan systemet håndterer 
 <td>Gjelder ikke</td>
 <td>
 <ol>
-<li>Velg <strong>Full</strong>-menyelementet på WMA når du behandler plukkarbeid.</li>
+<li>Velg menyelementet <strong>Full</strong> på lagerappen når du behandler plukkarbeid.</li>
 <li>I <strong>Plukkvantitet</strong>-feltet angir du en delvis kvantitet for den påkrevde plukkingen for å indikere hele kapasiteten.</li>
 </ol>
 </td>
@@ -353,7 +353,7 @@ Følgende tabeller inneholder en oversikt som viser hvordan systemet håndterer 
 <td>Ja</td>
 <td>
 <ol>
-<li>Start en flytting på WMA.</li>
+<li>Start en flytting på lagerappen.</li>
 <li>Angi "fra"- og "til"-plasseringene.</li>
 </ol></td>
 <td>
@@ -469,7 +469,7 @@ Følgende tabeller inneholder en oversikt som viser hvordan systemet håndterer 
 <td>Ja</td>
 <td>
 <ol>
-<li>Velg <strong>Plukk med mangler</strong>-menyelementet på WMA når du kjører plukkarbeid.</li>
+<li>Velg <strong>Plukk med mangler</strong>-menyelementet på lagerappen når du kjører plukkarbeid.</li>
 <li>I feltet <strong>Plukkekvantitet</strong> angir du <strong>0</strong> (null).</li>
 <li>I <strong>Årsak</strong>-feltet angir du <strong>Ingen ny fordeling</strong>.</li>
 </ol>
@@ -498,7 +498,7 @@ Følgende tabeller inneholder en oversikt som viser hvordan systemet håndterer 
 <td>Ja</td>
 <td>
 <ol>
-<li>Velg <strong>Plukk med mangler</strong>-menyelementet på WMA når du kjører plukkarbeid.</li>
+<li>Velg <strong>Plukk med mangler</strong>-menyelementet på lagerappen når du kjører plukkarbeid.</li>
 <li>I feltet <strong>Plukkekvantitet</strong> angir du <strong>0</strong> (null).</li>
 <li>I <strong>Årsak</strong>-feltet angir du <strong>Ingen ny fordeling</strong>.</li>
 </ol>
@@ -522,7 +522,7 @@ Følgende tabeller inneholder en oversikt som viser hvordan systemet håndterer 
 <td>Ja</td>
 <td>
 <ol>
-<li>Velg <strong>Plukk med mangler</strong>-menyelementet på WMA når du kjører plukkarbeid.</li>
+<li>Velg <strong>Plukk med mangler</strong>-menyelementet på lagerappen når du kjører plukkarbeid.</li>
 <li>I <strong>Kvantitet for plukking med mangler</strong>-feltet angir du <strong>0</strong> (null).</li>
 <li>I <strong>Årsak</strong>-feltet velger du <strong>Plukking med mangler med manuell omfordeling</strong>.</li>
 <li>Velg plasseringen/nummerskiltet i listen.</li>
@@ -545,10 +545,10 @@ Følgende tabeller inneholder en oversikt som viser hvordan systemet håndterer 
 </tr>
 <tr>
 <td>Et arbeidsunntak av <strong>Plukk med mangler</strong>-typen settes opp, der <strong>Ny fordeling av vare</strong> = <strong>Manuell</strong>, <strong>Juster beholdning</strong> = <strong>Ja</strong> og <strong>Fjern reservasjoner</strong> = <strong>Nei</strong>. I tillegg er <strong>Tillat manuell omfordeling av varer</strong>-alternativet aktivert for arbeideren.</td>
-<td>Nei</td>
+<td>Nr.</td>
 <td>
 <ol>
-<li>Velg <strong>Plukk med mangler</strong>-menyelementet på WMA når du kjører plukkarbeid.</li>
+<li>Velg <strong>Plukk med mangler</strong>-menyelementet på lagerappen når du kjører plukkarbeid.</li>
 <li>I <strong>Kvantitet for plukking med mangler</strong>-feltet angir du <strong>0</strong> (null).</li>
 <li>I <strong>Årsak</strong>-feltet velger du <strong>Plukking med mangler med manuell omfordeling</strong>.</li>
 </ol>
@@ -558,10 +558,10 @@ Følgende tabeller inneholder en oversikt som viser hvordan systemet håndterer 
 </tr>
 <tr>
 <td>Et arbeidsunntak av <strong>Plukk med mangler</strong>-typen settes opp, der <strong>Ny fordeling av vare</strong> = <strong>Manuell</strong>, <strong>Juster beholdning</strong> = <strong>Ja</strong> og <strong>Fjern reservasjoner</strong> = <strong>Ja</strong>. I tillegg er <strong>Tillat manuell omfordeling av varer</strong>-alternativet aktivert for arbeideren.</td>
-<td>Nei</td>
+<td>Nr.</td>
 <td>
 <ol>
-<li>Velg <strong>Plukk med mangler</strong>-menyelementet på WMA når du kjører plukkarbeid.</li>
+<li>Velg <strong>Plukk med mangler</strong>-menyelementet på lagerappen når du kjører plukkarbeid.</li>
 <li>I <strong>Kvantitet for plukking med mangler</strong>-feltet angir du <strong>0</strong> (null).</li>
 <li>I <strong>Årsak</strong>-feltet velger du <strong>Plukking med mangler med manuell omfordeling</strong>.</li>
 <li>Velg plasseringen/nummerskiltet i listen.</li>
@@ -585,7 +585,7 @@ Følgende tabeller inneholder en oversikt som viser hvordan systemet håndterer 
 <td>Gjelder ikke</td>
 <td>
 <ol>
-<li>Velg <strong>Plukk med mangler</strong>-menyelementet på WMA når du kjører plukkarbeid.</li>
+<li>Velg <strong>Plukk med mangler</strong>-menyelementet på lagerappen når du kjører plukkarbeid.</li>
 <li>I <strong>Kvantitet for plukking med mangler</strong>-feltet angir du <strong>0</strong> (null).</li>
 <li>I <strong>Årsak</strong>-feltet velger du <strong>Plukking med mangler med automatisk omfordeling</strong>.</li>
 </ol>

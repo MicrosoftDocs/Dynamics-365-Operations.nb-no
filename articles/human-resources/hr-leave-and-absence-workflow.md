@@ -3,7 +3,7 @@ title: Opprette en arbeidsflyt for permisjonsforespørsel
 description: Opprett en arbeidsflyt for permisjon og fravær for å behandle permisjonsforespørsler konsekvent i Dynamics 365 Human Resources.
 author: andreabichsel
 manager: AnnBe
-ms.date: 02/03/2020
+ms.date: 05/08/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: c2689a0cdf2969455a301593e8f60b10c07e6f91
-ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
+ms.openlocfilehash: c2e994d11bbd45907a48c1f3955fa751a676a327
+ms.sourcegitcommit: e69cfc74e9dbce64ae0e1ab7cd441e5ae6efd4c9
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3010052"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "3353694"
 ---
 # <a name="create-a-leave-request-workflow"></a>Opprette en arbeidsflyt for permisjonsforespørsel
 
@@ -44,6 +44,38 @@ Du kan opprette en arbeidsflyt i Dynamics 365 Human Resources for å behandle pe
 4. Når meldingsboksen **Åpne denne filen?** vises, velger du **Åpne** og logger på med firmalegitimasjonen.
 
 5. Bruk arbeidsflytredigering til å opprette en arbeidsflyt for permisjonsforespørslene. Hvis du vil ha mer informasjon om arbeidsflyter, kan du se [Oversikt over å opprette arbeidsflyter](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/organization-administration/create-workflow?toc=/dynamics365/commerce/toc.json.)
+
+## <a name="leave-and-absence-request-workflow-data-elements"></a>Dataelementer for arbeidsflyt for permisjons- og fraværsforespørsler
+
+Du kan bruke følgende dataelementer til å opprette betingede eller automatiske godkjenninger i arbeidsflyter for permisjons- og fraværsforespørsler:
+
+- **Kommentar**
+- **Bedrift**
+- **Opprettet av**
+- **Opprettingsdato og -klokkeslett**
+- **Sluttdato**
+- **Permisjonstype**
+- **Endret av**
+- **Endringsdato og -klokkeslett**
+- **Årsakskode**
+- **Forespørsels-ID**
+- **Startdato**
+- **Status** 
+- **Innsendingsdato**
+- **Sendt av**
+- **Sendt av personalavdeling**
+- **Sendt av leder**
+- **Sendt på vegne**
+- **Worker**
+- **Arbeidertype**
+
+Disse eksemplene viser hvordan du kan opprette forskjellige typer arbeidsflytbetingelser ved å bruke disse dataelementene:
+
+- Bruk **Årsakskode** i et betingelsesuttrykk for å rute permisjonsforespørsler for sykefravær med årsakskoden for **Operasjon** til personalavdelingen for godkjenning, mens alle andre årsakskoder rutes til prosjektlederen. Hvis du vil ha mer informasjon om betingelsessetninger, se [Konfigurere betingede beslutninger i en arbeidsflyt](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/organization-administration/configure-conditional-decision-workflow). 
+
+- Bruk **Sendt av personalavdeling** og **Sendt av leder** i en automatisk handling for å godkjenne permisjonsforespørsler automatisk som disse rollene sender inn på vegne av ansatte. Hvis du vil ha mer informasjon om automatiske handlinger, kan du se [Konfigurere godkjenningsprosesser i en arbeidsflyt](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/organization-administration/configure-approval-process-workflow).
+
+- Bruk **Permisjonstype** i en betinget setning eller automatisk handling for å kontrollere hvordan arbeidsflyten ruter forespørsler med bestemte permisjonstyper.
 
 ## <a name="see-also"></a>Se også
 

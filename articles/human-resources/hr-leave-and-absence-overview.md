@@ -3,7 +3,7 @@ title: Oversikt
 description: I Dynamics 365 Human Resources gir arbeidsområdet Permisjon og fravær et fleksibelt rammeverk for å opprette nye permisjonsplaner, arbeidsflyter for behandling av forespørsler og en intuitiv, selvbetjent side der ansatte kan be om avspasering.
 author: andreabichsel
 manager: AnnBe
-ms.date: 04/03/2020
+ms.date: 04/30/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 5f7ba32b31a67d81ee5be568b0e64842f343f96b
-ms.sourcegitcommit: 9940ca772807d3c4e1ff3bf47f45b7251c4469ac
+ms.openlocfilehash: 2bb123b808615ff7d770c7c6b83338a32d922be3
+ms.sourcegitcommit: de217452a85429675994e9cc0e06eb4821cab3e5
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/04/2020
-ms.locfileid: "3226236"
+ms.lasthandoff: 04/30/2020
+ms.locfileid: "3325771"
 ---
 # <a name="overview"></a>Oversikt
 
@@ -78,8 +78,16 @@ Du kan ikke angi **Avrundingspresisjon** når du angir **Avrundingstype**. Du ka
 
 ## <a name="leave-and-absence-preview-features"></a>Forhåndsversjonsfunksjoner for permisjon og fravær
 
-Du kan prøve ut nye forhåndsversjonsfunksjoner for permisjon og fravær i et **sandkassemiljø**. Hvis du vil ha informasjon om å aktivere forhåndsversjonsfunksjoner, kan du se [Behandle funksjoner](hr-admin-manage-features.md). Forhåndsversjonsfunksjonene omfatter:
+Du kan prøve ut nye forhåndsversjonsfunksjoner for permisjon og fravær i et **sandkassemiljø**. Hvis du vil ha informasjon om å aktivere forhåndsversjonsfunksjoner, kan du se [Behandle funksjoner](hr-admin-manage-features.md). 
 
-- **Avbryt permisjon** – Du kan avbryte permisjon og fravær i Human Resources for en ansatt. Hvis du avbryter permisjon, stoppes permisjonsavsetningene for utvalgte permisjonstyper. Hvis suspensjonen skjer etter en avsetningsprosess, vil avbrudd av permisjon opprette fordelt justering til den ansattes permisjonssaldo. 
+[!include [banner](includes/preview-feature.md)]
+
+Forhåndsversjonsfunksjonene omfatter:
+
+- **Avbryt permisjon** – Du kan avbryte permisjon og fravær i Human Resources for en ansatt. Hvis du avbryter permisjon, stoppes permisjonsavsetningene for utvalgte permisjonstyper. Hvis suspensjonen skjer etter en avsetningsprosess, vil avbrudd av permisjon opprette fordelt justering til den ansattes permisjonssaldo. Du kan også ta med årsakskoder når en ansatts permisjon stanses. Brukeropplevelsen er oppdatert for å angi suspensjon. 
 
 - **Overføringsregler** – Du kan angi en type overføringspermisjon for overføringssaldoer der overføringsjusteringer overføres. Hvis en ansatt for eksempel overfører 10 dager, kan du velge en annen permisjonstype for disse 10 dagene. 
+
+- **Inkluder årsakskode og kommentarer for justeringer** – Du kan inkludere en årsakskode og en merknad når du gjør en justering til en ansatts permisjonssaldo. 
+
+- **Overgang til Permisjons- og fraværsparametere** – Du kan nå bare bruke Permisjons- og fraværsparametere i stedet for å bruke Parametere for Personale. 

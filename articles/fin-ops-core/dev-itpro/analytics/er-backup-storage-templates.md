@@ -3,7 +3,7 @@ title: Sikkerhetskopiere ER-maler
 description: Dette emnet beskriver hvordan du bruker sikkerhetskopier for elektronisk rapportering (ER) for gjenoppretting av maler.
 author: NickSelin
 manager: AnnBe
-ms.date: 08/19/2019
+ms.date: 04/29/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-08-13
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 5dad101ffe56c9266c0d81ede8be1f72b684a8fb
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 2e399290153c2c63ac1c02f0f9cdb956ff5031e5
+ms.sourcegitcommit: 5de75c61c33e57c813944f1ab6100aceb020d432
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2771427"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "3321672"
 ---
 # <a name="backup-storage-of-er-templates"></a>Sikkerhetskopiere ER-maler
 
@@ -33,7 +33,7 @@ ms.locfileid: "2771427"
 
 Hvert konfigurerte format kan publiseres som en del av en ER-løsning. Hver enkelt ER-løsning kan eksporteres fra en forekomst av Finance and Operations og importeres til en annen forekomst.
 
-ER-rammeverket bruker [Konfigurere dokumentstyring](../../fin-ops/organization-administration/configure-document-management.md) til å beholde de nødvendige malene for gjeldende Finance and Operations-forekomsten. Avhengig av innstillingene for ER-rammeverket kan Microsoft Azure Blob Storage eller en Microsoft SharePoint-mappe velges som fysisk primær lagringsplassering for maler. (Hvis du vil ha mer informasjon, kan du se [Konfigurere rammeverket for elektronisk rapportering (ER)](electronic-reporting-er-configure-parameters.md).) DocuValue-tabellen inneholder en enkeltpost for hver mal. I hver post lagrer feltet **AccessInformation** banen til en malfil som er plassert på den konfigurerte lagringsplasseringen.
+ER-rammeverket bruker [Konfigurere dokumentstyring](../../fin-ops/organization-administration/configure-document-management.md) til å beholde de nødvendige malene for gjeldende Finance and Operations-forekomst. Avhengig av innstillingene for ER-rammeverket kan Microsoft Azure Blob Storage eller en Microsoft SharePoint-mappe velges som fysisk primær lagringsplassering for maler. (Hvis du vil ha mer informasjon, kan du se [Konfigurere rammeverket for elektronisk rapportering (ER)](electronic-reporting-er-configure-parameters.md).) DocuValue-tabellen inneholder en enkeltpost for hver mal. I hver post lagrer feltet **AccessInformation** banen til en malfil som er plassert på den konfigurerte lagringsplasseringen.
 
 Når du administrerer dine Finance and Operations-forekomster, kan det hende du vil overføre gjeldende forekomst til en annen plassering. Du kan for eksempel overføre produksjonsforekomsten til et nytt sandkassemiljø. Hvis du har konfigurert ER-rammeverket til å lagre maler i Blob Storage, refererer DocuValue-tabellen i det nye sandkassemiljøet til forekomsten av Blob Storage i produksjonsmiljøet. Denne forekomsten er imidlertid ikke tilgjengelig fra sandkassemiljøet, fordi overføringsprosessen ikke støtter overføring av artefakter i Blob Storage. Hvis du prøver å kjøre et ER-format som bruker en mal til å generere forretningsdokumenter, oppstår det derfor et unntak, og du blir varslet om den manglende malen. Du blir også veiledet til å bruke ER-oppryddingsverktøyet til å slette og deretter importere på nytt ER-formatkonfigurasjonen som inneholder malen. Fordi du kan ha flere ER-formatkonfigurasjoner kan denne prosessen være tidkrevende.
 
@@ -41,6 +41,8 @@ Funksjonen for sikkerhetskopiering av ER-maler kan hjelpe deg med å sørge for 
 
 > [!NOTE]
 > Denne funksjonen kan bare brukes når Blob Storage er valgt som fysisk lagringsplassering for ER-maler.
+
+## <a name="automated-recovery-and-notification"></a>Automatisk gjenoppretting og varsling
 
 For denne funksjonen blir alle maler i en ny ER-formatkonfigurasjon i gjeldende miljø, automatisk lagret til lagringsplasseringen for sikkerhetskopier av maler (databasetabellen ERDocuDatabaseStorage) når følgende hendelser oppstår:
 
@@ -59,7 +61,7 @@ Hvis en mal med et ER-format er nødvendig for generering av utgående dokumente
 
 Hvis du vil konfigurere parameteren **Kjør automatisk prosedyren for å gjenopprette de ødelagte malene satsvis**, gjør du følgende:
 
-1. I Finance and Operations åpner du **Organisasjonsstyring \> Elektronisk rapportering \> siden Konfigurasjoner**.
+1. I Finance and Operations åpner du **Organisasjonsstyring \> Elektronisk rapportering \> Siden Konfigurasjoner**.
 2. På **Konfigurasjoner**-siden, i handlingsruten i kategorien **Konfigurasjoner** i gruppen **Avanserte innstillinger**, velger du **Brukerparametere**.
 3. I dialogboksen **Brukerparametere** angir du den nødvendige verdien for parameteren **Kjør automatisk prosedyren for å gjenopprette de ødelagte malene satsvis**.
 
@@ -87,6 +89,10 @@ Hvis du setter alternativet **Stopp sikkerhetskopiering av maler** til **Ja** og
 Hvis du oppgraderte miljøet til Finance and Operations versjon 10.0.5 (oktober 2019) og vil overføre til et nytt miljø som omfatter ER-formatkonfigurasjoner som kan kjøres, velger du **Fyll ut plassering for sikkerhetskopi** på siden **Parametere for elektronisk rapportering** før overføringen utføres. Denne knappen starter prosessen for å ta sikkerhetskopier av alle tilgjengelige maler, slik at de kan lagres på lagringsplasseringen for sikkerhetskopier for ER-maler.
 
 ![Siden Parametere for elektronisk rapportering](./media/GER-BackupTemplates-5.png)
+
+## <a name="manual-recovery"></a>Manuell gjenoppretting
+
+Gå til **Organisasjonsstyring** \> **Elektronisk rapportering** \> **Gjenopprett skadede maler** for å starte prosessen med å gjenopprette ER-maler manuelt fra sikkerhetskopilagringsplasseringen til den primære lagringsplasseringen. Før du starter denne prosessen kan du på siden **Gjenopprett skadede maler** angi om den skal utføres interaktivt, eller om den satsvise prosessen vil bli planlagt for dette.
 
 ## <a name="supported-deployments"></a>Støttede distribusjoner
 
