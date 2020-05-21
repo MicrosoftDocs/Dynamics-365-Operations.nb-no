@@ -3,7 +3,7 @@ title: Definere en B2C-leier i Commerce
 description: Dette emnet beskriver hvordan du konfigurerer Azure Active Directory (Azure AD) bedrift-til-kunde (B2C)-leietakere for godkjenning av brukerområde i Dynamics 365 Commerce.
 author: BrianShook
 manager: annbe
-ms.date: 04/17 /2020
+ms.date: 04/28/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.industry: retail
 ms.author: BriShoo
 ms.search.validFrom: 2020-02-13
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: f4768eede43003aac892b861b4a86ababe98a189
-ms.sourcegitcommit: 063c4d7155be6c2cadcafa1630d16ee235285479
+ms.openlocfilehash: 22d62419c703c64470723cf82864a4782306ea8a
+ms.sourcegitcommit: 1b00e21faf89de8b3450936253a4c02cb4d12a3d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "3270216"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "3295275"
 ---
 # <a name="set-up-a-b2c-tenant-in-commerce"></a>Definere en B2C-leier i Commerce
 
@@ -87,7 +87,7 @@ Hvis du vil opprette B2C-programmet, gjør du følgende:
 
 ### <a name="reply-urls"></a>URL-adresser for svar
 
-URL-adresser for svar er viktig fordi de tillater en hviteliste av returdomener når området kaller Azure AD B2C for å godkjenne en bruker. Dermed kan den godkjente brukeren returneres til domenet de logger seg på fra (områdedomenet). 
+Svar-URL-adresser er viktige, fordi de gir en tillatelsesliste for returdomener når området kaller Azure AD B2C for å godkjenne en bruker. Dette tillater retur av den godkjente brukeren til domenet de logger seg på fra (områdedomenet). 
 
 I boksen **Svar-URL** på skjermen **Azure AD B2C-programmer \> Nytt program** må du legge til separate linjer for både områdedomet og (når miljøet er klargjort) den Commerce-genererte URL-en. Disse URL-adressene må alltid bruke et gyldig URL-format og må være basis-URLer (ingen etterfølgende skråstreker eller baner). Strengen ``/_msdyn365/authresp`` må deretter legges til de primære URL-adressene, som i følgende eksempler.
 
@@ -121,7 +121,7 @@ Følg denne fremgangsmåten for å opprette en brukerflytpolicy for registrering
 
     | **Innhent attributt** | **Returkrav** |
     | ---------------------- | ----------------- |
-    |                        | E-postadresser   |
+    | E-postadresse          | E-postadresser   |
     | Gitt navn             | Gitt navn        |
     |                        | Identitetsleverandør |
     | Etternavn                | Etternavn           |
@@ -246,10 +246,6 @@ Følg denne fremgangsmåten for å oppdatere Headquarters med den nye Azure AD B
     1. I **Type**-boksen angir du **Offentlig**.
     1. I **Brukertype**-boksen angir du **Kunde**.
 1. Velg **Lagre** i handlingsruten.
-1. I Commerce-søkeboksen søker du etter **Nummerserier** (Organisasjonsstyring > Nummerserier).
-1. Velg **Rediger** under **Vedlikehold** i handlingsruten.
-1. Velg **Nei** for **Manuell** i hurtigfanen **Generelt**.
-1. Velg **Lagre** i handlingsruten. 
 1. I Commerce-søkeboksen søker du etter **Distribusjonsplan**
 1. I den venstre navigasjonsmenyen på siden **Distribusjonsplaner** velger du jobben **1110 Global konfigurasjon**.
 1. Velg **Kjør nå** i handlingsruten.
@@ -304,13 +300,14 @@ Følg denne fremgangsmåten for å legge til programinformasjon om AAD-B2C-leier
 1. Skriv inn følgende obligatoriske elementer i skjemaet som vises, ved hjelp av verdier fra B2C-leieren og -programmet. Felt som ikke er påkrevd (de uten en stjerne) kan være tomme.
 
     - **Programnavn**: Navnet på B2C-programmet, for eksempel "Fabrikam B2C".
-    - **Navn på leietaker**: Navnet på B2C-leieren, for eksempel "Fabrikam".
+    - **Navn på leietaker**: Navnet på B2C-leieren din (bruk for eksempel "fabrikam" hvis domenet vises som "fabrikam.onmicrosoft.com" for B2C-leieren). 
     - **Policy-ID for glemt passord**: Brukerflytpolicy-ID for glemt passord, for eksempel "B2C_1_PasswordReset".
     - **Policy-ID for registrering/pålogging**: Brukerflytpolicy-ID for registrering/pålogging, for eksempel "B2C_1_signup_signin".
     - **Klient-GUID**: ID for B2C-program, for eksempel "22290eb2-c52e-42e9-8b35-a2b0a3bcb9e6".
     - **Rediger profilpolicy-ID**: Brukerflytpolicy-ID for profilredigering, for eksempel "B2C_1A_ProfileEdit".
 
 1. Velg **OK**. Du skal nå se navnet på B2C-programmet ditt i listen.
+1. Velg **Lagre** for å lagre endringene.
 
 ### <a name="associate-the-b2c-application-to-your-site-and-channel"></a>Knytte B2C-programmet til området og kanalen
 

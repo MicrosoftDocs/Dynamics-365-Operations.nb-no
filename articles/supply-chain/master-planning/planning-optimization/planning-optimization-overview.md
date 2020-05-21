@@ -19,17 +19,16 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: f88ee8067fdd816ba6890ee28bafe8fa4d3b3ac5
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 110045d4c7e4f32c29b73096dd4df3a09b5434ac
+ms.sourcegitcommit: 68092ed283bfbb7b6f611cce1b62c791f9b6a208
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3208737"
+ms.lasthandoff: 04/30/2020
+ms.locfileid: "3323399"
 ---
 # <a name="planning-optimization-overview"></a>Oversikt over planleggingsoptimalisering
 
 [!include [banner](../../includes/banner.md)]
-[!include [banner](../../includes/preview-banner.md)]
 
 Tilleggsfunksjonen for planleggingsoptimalisering for Microsoft Dynamics 365 Supply Chain Management gjør at beregningen av hovedplanlegging skjer utenfor Dynamics 365 Supply Chain Management og den tilknyttede SQL-databasen. Fordelene som er knyttet til planleggingsoptimaliserings-funksjonaliteten, omfatter forbedret ytelse og minimal virkning på SQL-database under kjøringer av hovedplanlegging. Du kan utføre raske planleggingskjøringer selv under kontortimer, slik at planleggere umiddelbart kan reagere på behovs- eller parameterendringer.
 

@@ -1,6 +1,6 @@
 ---
-title: Nummerskiltmottak via mobilappen for lagerstyring
-description: Dette emnet forklarer hvordan du konfigurerer mobilappen for lagerstyring for å støtte bruk av en prosess for nummerskiltmottak for å motta fysisk beholdning.
+title: Nummerskilt som mottar via lagerappen
+description: Dette emnet forklarer hvordan du konfigurerer appen for lagerstyring for å støtte bruk av en prosess for nummerskiltmottak for å motta fysisk beholdning.
 author: perlynne
 manager: tfehr
 ms.date: 03/31/2020
@@ -15,16 +15,16 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-03-31
 ms.dyn365.ops.version: Release 10.0.11
-ms.openlocfilehash: 98cd608edea1d5365d0d3532244f1fcdb6293d3c
-ms.sourcegitcommit: 3a823444005d316bd95fc663e2dbc8252ac7d93a
+ms.openlocfilehash: 7d5ac6598ab80ece0164d7c92f5d84e91d21b385
+ms.sourcegitcommit: ffd845d4230646499b6f074cb43e69ab95787671
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "3261362"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "3346382"
 ---
-# <a name="license-plate-receiving-via-the-warehousing-mobile-app"></a>Nummerskiltmottak via mobilappen for lagerstyring
+# <a name="license-plate-receiving-via-the-warehousing-app"></a>Nummerskilt som mottar via lagerappen
 
-Dette emnet forklarer hvordan du konfigurerer mobilappen for lagerstyring slik at den støtter bruk av en prosess for nummerskiltmottak for å motta fysisk beholdning.
+Dette emnet forklarer hvordan du konfigurerer appen for lagerstyring, slik at den støtter bruk av en prosess for nummerskiltmottak for å motta fysisk beholdning.
 
 Du kan bruke denne funksjonaliteten til raskt å registrere mottak av innkommende beholdning som er relatert til et forhåndsvarsel for forsendelse. Systemet oppretter automatisk et forhåndsvarsel for forsendelse når lagerstyringsprosesser brukes til å sende en overføringsordre. For bestillingsprosessen kan et forhåndsvarsel for forsendelse registreres manuelt, eller det kan importeres automatisk ved hjelp av en innkommende dataenhetsprosess for forhåndsvarsel for forsendelse.
 

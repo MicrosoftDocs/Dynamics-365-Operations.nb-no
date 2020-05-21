@@ -3,7 +3,7 @@ title: Bruke JOIN-datakilder i ER-modelltilordninger til å hente data fra flere
 description: Dette emnet forklarer hvordan du kan bruke datakilder av JOIN-typen i elektronisk rapportering (ER).
 author: NickSelin
 manager: AnnBe
-ms.date: 10/25/2019
+ms.date: 05/04/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-03-01
 ms.dyn365.ops.version: Release 10.0.1
-ms.openlocfilehash: 224acc19ee5dda430cd9471aa50e9d870a4f8c60
-ms.sourcegitcommit: 564aa8eec89defdbe2abaf38d0ebc4cca3e28109
+ms.openlocfilehash: 668ab28297ee7baf8f28cbbaf179d13cb5151dc4
+ms.sourcegitcommit: 248369a0da5f2b2a1399f6adab81f9e82df831a1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "2667960"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "3332328"
 ---
 # <a name="use-join-data-sources-to-get-data-from-multiple-application-tables-in-electronic-reporting-er-model-mappings"></a>Bruke JOIN-datakilder til å hente data fra flere programtabeller i modelltilordninger for elektronisk rapportering (ER)
 
@@ -140,7 +140,7 @@ Se gjennom innstillingene for komponenten for ER-modelltilordning. Komponenten k
 
 7.  Lukk siden.
 
-### <a name="review"></a> Gjennomgå ER-modelltilordning (del 2)
+### <a name="review-er-model-mapping-part-2"></a><a name="review"></a> Gjennomgå ER-modelltilordning (del 2)
 
 Se gjennom innstillingene for komponenten for ER-modelltilordning. Komponenten konfigureres for å få tilgang til informasjon om versjoner av ER-konfigurasjoner, detaljer om konfigurasjoner og konfigurasjonsleverandører ved å bruke en datakilde av typen **Join**.
 
@@ -185,7 +185,7 @@ Se gjennom innstillingene for komponenten for ER-modelltilordning. Komponenten k
 9.  Lukk siden.
 10. Velg **Avbryt**.
 
-### <a name="executeERformat"></a> Utføre ER-format
+### <a name="execute-er-format"></a><a name="executeERformat"></a> Utføre ER-format
 
 1.  Få tilgang til Finance eller RCS i den andre økten av webleseren med samme legitimasjon og firma som i den første økten.
 2.  Gå til **Organisasjonsstyring \> Elektronisk rapportering \> Konfigurasjoner**.
@@ -240,7 +240,7 @@ Se gjennom innstillingene for komponenten for ER-modelltilordning. Komponenten k
 
     ![Siden med ER-brukerdialogboks](./media/GER-JoinDS-Set2Run.PNG)
 
-#### <a name="analyze"></a> Analysere utførelsessporing i ER-format
+#### <a name="analyze-er-format-execution-trace"></a><a name="analyze"></a> Analysere utførelsessporing i ER-format
 
 1.  I den første Finance- eller RCS-økten velger du **Utforming**.
 2.  Velg **Ytelsessporing**.
@@ -256,6 +256,33 @@ Se gjennom innstillingene for komponenten for ER-modelltilordning. Komponenten k
     - Programdatabasen har blitt kalt én gang for å beregne antallet konfigurasjonsversjoner ved hjelp av sammenføyninger som ble konfigurert i datakilden **Detaljer**.
 
     ![Siden ER-utforming av modelltilordning](./media/GER-JoinDS-Set2Run3.PNG)
+
+## <a name="limitations"></a>Begrensninger
+
+Som du kan se fra eksemplet i dette emnet, kan **JOIN**-datakilden bygges fra flere datakilder som beskriver de individuelle datasettene for postene som til slutt må sammenføyes. Du kan konfigurere disse datakildene ved å bruke den innebygde ER-funksjonen [FILTER](er-functions-list-filter.md). Når du konfigurerer datakilden slik at den kalles utenfor **JOIN**-datakilden, kan du bruke firmaområder som en del av betingelsen for datavalg. Den første implementeringen av **JOIN**-datakilden støtter ikke datakilder av denne typen. Når du for eksempel kaller en [FILTER](er-functions-list-filter.md)-basert datakilde innenfor omfanget av utføringen av en **JOIN**-datakilde, oppstår det et unntak hvis den kalte datakilden inneholder firmaområder som en del av betingelsen for datavalg.
+
+I Microsoft Dynamics 365 Finance versjon 10.0.12 (august 2020) kan du bruke firmaområder som en del av vilkåret for datavalget i [FILTER](er-functions-list-filter.md)-baserte datakilder som kalles i omfanget av utføringen for en **JOIN**-datakilde. På grunn av begrensningene i programmets [spørrings](../dev-ref/xpp-library-objects.md#query-object-model)-verktøy støttes bare firmaområdene bare for den første datakilden for en **JOIN**-datakilde.
+
+### <a name="example"></a>Eksempel
+
+Du må for eksempel opprette ett enkelt kall til programdatabasen for å hente listen over utenlandske handelstransaksjoner for flere firmaer, og detaljene for lagervaren som det refereres til i disse transaksjonene.
+
+I dette tilfellet konfigurerer du følgende artefakter i ER-modelltilordningen din:
+
+- **Intrastat**-rotdatakilden som representerer **Intrastat**-tabellen.
+- **Elementer**-rotdatakilden som representerer **InventTable**-tabellen.
+- **Firmaer**-rotdatakilden som returnerer listen over firmaer (**DEMF** og **GBSI** i dette eksemplet) der transaksjoner må gis tilgang. Firmakoden er tilgjengelig fra feltet **Companies.Code**.
+- **X1**-rotdatakilde som har uttrykket `FILTER (Intrastat, VALUEIN(Intrastat.dataAreaId, Companies, Companies.Code))`. Som en del av betingelsen for datautvalg inneholder dette uttrykket definisjonen for firmaområder `VALUEIN(Intrastat.dataAreaId, Companies, Companies.Code)`.
+- **X2**-datakilde som et nestet element i **X1**-datakilden. Den inneholder uttrykket `FILTER (Items, Items.ItemId = X1.ItemId)`.
+
+Til slutt kan du konfigurere en **JOIN**-datakilde, der **X1** er den første datakilden og **X2** er den andre datakilden. Du kan angi **Spørring** som **Utfør**-alternativet for å tvinge ER til å kjøre denne datakilden på databasenivået som et direkte SQL-kall.
+
+Når den konfigurerte datakilden kjøres mens ER-kjøringen [spores](trace-execution-er-troubleshoot-perf.md), vises følgende setning i ER-modelltilordningsutformingen som en del av ER-sporingsytelsen.
+
+`SELECT ... FROM INTRASTAT T1 CROSS JOIN INVENTTABLE T2 WHERE ((T1.PARTITION=?) AND (T1.DATAAREAID IN (N'DEMF',N'GBSI') )) AND ((T2.PARTITION=?) AND (T2.ITEMID=T1.ITEMID AND (T2.DATAAREAID = T1.DATAAREAID) AND (T2.PARTITION = T1.PARTITION))) ORDER BY T1.DISPATCHID,T1.SEQNUM`
+
+> [!NOTE]
+> Det oppstår en feil hvis en **JOIN**-datakilde som er konfigurert slik at den inneholder datautvalgsbetingelser som har firmaområder for flere datakilder i den utførte **JOIN**-datakilden.
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 

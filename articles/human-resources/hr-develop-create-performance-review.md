@@ -1,9 +1,9 @@
 ---
 title: Opprette prestasjonsvurderinger
-description: Denne artikkelen viser hvordan du oppretter en prestasjonsvurdering og beskriver formålet med hver del i vurderingen.
+description: Dette emnet viser hvordan du oppretter en prestasjonsvurdering og beskriver formålet med hver del i vurderingen.
 author: andreabichsel
 manager: AnnBe
-ms.date: 08/06/2019
+ms.date: 05/05/2020
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,18 +16,17 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 50ef3f305756f1ab0db895854cd7e1c71237cb48
-ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
+ms.openlocfilehash: 22f3e82e7a1ebba689c1aa1ebbe75603a5c09188
+ms.sourcegitcommit: f06e48c7d487299aa4e2cff3e8f60cb8be0790df
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3010070"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "3334689"
 ---
 # <a name="create-performance-reviews"></a>Opprette prestasjonsvurderinger
 
 
-
-Denne artikkelen viser hvordan du oppretter en prestasjonsvurdering og beskriver formålet med hver del i vurderingen. Denne fremgangsmåten ble opprettet med demonstrasjonsdatafirmaet USMF.
+Dette emnet viser hvordan du oppretter en prestasjonsvurdering og beskriver formålet med hver del i vurderingen. Denne fremgangsmåten ble opprettet med demonstrasjonsdatafirmaet USMF.
 
 1. Velg arbeidsområdet for **Ansattselvbetjening** på startsiden.
 2. Klikk **Ny vurdering** for å opprette en ny vurdering.
@@ -37,7 +36,7 @@ Denne artikkelen viser hvordan du oppretter en prestasjonsvurdering og beskriver
 6. Velg **OK**. Du kan også opprette en vurdering fra en mal. Dette er den beste måten å opprette en vurdering på fordi hver inndeling vil inneholde informasjonen du trenger for å starte en vurdering.  
 7. Du kan vise eller skjule kategorier som vedleggskategorien:
 
-    1. I handlingsruten velger du **Vis seksjoner** for å åpne nedtrekksdialogen.
+    1. I handlingsruten velger du **Vis seksjoner** for å åpne dialogmenyen.
     1. Velg **Ja** eller **Nei** i **Vis vedlegg**-feltet for å vise eller skjule vedleggskategorien.
     1. Velg **Lagre**.
 
@@ -51,7 +50,7 @@ Denne artikkelen viser hvordan du oppretter en prestasjonsvurdering og beskriver
 15. Velg **Legg til kommentar**.
 16. Velg **Poster**.
 17. Velg kategorien **Målinger**.
-18. Velg **Legg til måling** for å åpne nedtrekksdialogen.
+18. Velg **Legg til måling** for å åpne nedtrekksmenyen.
 19. Angi eller velg en verdi i feltet **Måling**.
 26. Angi et tall i **Målbeløp**-feltet.
 20. Velg **OK**.
@@ -73,7 +72,7 @@ Denne artikkelen viser hvordan du oppretter en prestasjonsvurdering og beskriver
 32. Velg kategorien **Generelt**.
 
     - Ytelsesperioden oppretter standard start- og sluttdatoer. Disse datoene kan redigeres.  
-    - Statusene kontrollerer tilgangen til vurderingen. **Ikke startet**-statusen tillater alle å redigere vurderingen. **Pågår**-statusen lar bare den ansatte vise og redigere vurderingen. Klar til vurdering lar bare lederen vise og redigere vurderingen. Endelig vurdering-statusen lar både den ansatte og lederen vise vurderingen og også redigere den hvis dette er angitt for vurderingstypen. Statusen **Fullført**, **Avvist** og **Annullert** gjør at vurderingen blir skrivebeskyttet.  
+    - Statusene kontrollerer tilgangen til vurderingen. **Ikke startet**-statusen tillater alle å redigere vurderingen. **Pågår**-statusen lar bare den ansatte vise og redigere vurderingen. **Klar til vurdering** lar bare lederen vise og redigere vurderingen. **Endelig vurdering**-statusen lar både den ansatte og lederen vise vurderingen og også redigere den hvis dette er angitt for vurderingstypen. Statusen **Fullført** og **Annullert** gjør at vurderingen blir skrivebeskyttet. Hvis en gjennomgang blir **Avvist** og sendes tilbake til den ansatte, kan både den ansatte og den overordnede utføre nødvendige endringer, slik at den ansatte kan sende på nytt.
 
 33. Skriv inn en verdi i feltet **Oversikt**.
 34. Velg fanen **Gjennomgang**. Etter hvert som vurderingen endrer status, kan den ansatte og lederen legge til kommentarer for hvert mål eller hver kompetanse.  

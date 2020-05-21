@@ -3,7 +3,7 @@ title: Legge til et favorittikon
 description: Dette emnet forklarer hvordan du legger til et favorittikon på området.
 author: bicyclingfool
 manager: annbe
-ms.date: 12/12/2019
+ms.date: 04/27/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,15 +17,14 @@ ms.search.region: Global
 ms.author: StuHarg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 287663817232e7ce86e8fdb1fb5c2fcfeed33d20
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 2d95e8b799c3b89418657342868e0ec7e94a86f9
+ms.sourcegitcommit: ce79fb570e299a26a644e29da7ceb5a57a1374e6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3001549"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "3295086"
 ---
 # <a name="add-a-favicon"></a>Legge til et favorittikon
-
 
 [!include [banner](includes/banner.md)]
 
@@ -41,23 +40,48 @@ Selv om du kan legge til flere favorittikoner av forskjellige størrelser og fil
 
 Følg denne fremgangsmåten for å laste opp et favorittikon til områdets aktivasamling.
 
-1. Gå til **Aktiva \> Last opp \> Last opp aktiva**.
-1. Finn og velg favorittikon på det lokale filsystemet.
-1. Skriv inn en tittel, og velg deretter **OK**. 
-1. I egenskapsruten til høyre kopierer du den offentlige URL-adressen til favorittikonet.
+1. Velg **Mediebibliotek** i navigasjonsruten til venstre.
+1. Velg **Last opp \> Last opp medieelementer** på kommandolinjen.
+1. I filutforskervinduet blar du til favorittikonfilen du vil laste opp, velger den og velger deretter **Åpne**.
+1. I dialogboksen **Last opp medieelement** angir du nødvendig tittel og alt-tekst.
+1. Hvis du vil publisere bilder like etter opplastingen, merker du av for **Publiser medieelementer etter opplasting**.
 
-> [!NOTE]
-> Hvis du ikke velger alternativet **Publiser aktiva etter opplasting**, må du gå tilbake til siden **Aktiva** og manuelt publisere favorittikonet senere.
+    > [!NOTE]
+    > Hvis du ikke merker av for **Publiser medieelementer etter opplasting**, må du gå tilbake til siden **Medieelementer** og manuelt publisere favorittikonet senere.
 
-## <a name="create-the-html-for-the-favicon"></a>Opprette HTML for favorittikonet
+1. Velg **OK**.
+1. I egenskapsruten til høyre kopierer du den offentlige URL-adressen til favorittikonet. Du skal bruke denne URL-adressen senere.
 
-Hvis du vil opprette HTML-koden for favorittikonet, bruker du følgende HTML-kodesnutt. For **href**-attributtet erstatter du **"Public\_URL\_for\_your\_favicon"** " med den offentlige URL-adressen du kopierte tidligere.
+## <a name="create-the-html-for-your-favicon"></a>Opprette HTML for favorittikonet ditt
+
+Hvis du vil opprette HTML-koden for favorittikonet, bruker du følgende HTML-streng. For **href**-attributtet erstatter du **Public\_URL\_for\_your\_favicon** med den offentlige URL-adressen du kopierte tidligere.
 
 `<link rel="shortcut icon" href="Public_URL_for_your_favicon">`
 
-## <a name="add-the-html-for-the-favicon-to-the-head-element-of-your-pages"></a>Legge HTML-koden til favorittikonet i \<hode\>-elementet på sidene
+## <a name="create-a-page-fragment-that-contains-a-metatag-for-your-favicon"></a>Opprette et sidefragment som inneholder en metakode for favorittikon
 
-Hvis du vil legge til et favorittikon på området, bruker du den samme fremgangsmåte som brukes til å legge til en hvilken som helst type HTML eller skript i elementet **\<hode\>** på områdesidene.
+For å opprette et sidefragment som inneholder en metakode for favorittikon, følger du disse trinnene.
+
+1. Gå til **Sidefragmenter**, og velg **Nytt**.
+1. I dialogboksen **Nytt sidefragment** velger du **Metakoder** som modulen som sidefragmentet er basert på.
+1. Angi et navn på sideoppsettet, og velg deretter **OK**.
+1. Velg det underordnede **Standard metakoder** i fragmenthierarkitreet.
+1. I ruten til høyre under **Metakoder** velger du **Legg til**, og deretter skriver du inn HTML-strengen du opprettet tidligere for favorittikonet. 
+1. Velg **Fullfør redigering**, og velg deretter **Publiser** for å publisere sidefragmentet.
+
+## <a name="add-the-metatag-page-fragment-to-the-html-head-section-of-your-pages"></a>Legge til metakodesidefragmentet i HTML-hodedelen på sidene
+
+For å legge til metakodesidefragmentet i HTML-**hode**-delen på sidene følger du trinnene nedenfor.
+
+1. Gå til **Maler**, og åpne malen for sidene du vil legge til favorittikonet ditt, og velg deretter **Rediger**.
+1. I malhierarkitreet velger du ellipser (**...**)-knappen til høyre for **HTML-hode**-beholderen, og deretter velger du **Legg til sidefragment**.
+1. I dialogboksen **Velg sidefragment** velger du metakodesidefragmentet du opprettet tidligere, og deretter velger du **OK**.
+1. Velg **Fullfør redigering**, og velg deretter **Publiser** for å publisere malen.
+
+> [!NOTE]
+> Hvis området bruker mer enn én mal, må du legge til metakodesidefragmentet i alle.
+
+Når du forhåndsviser sider som er basert på malen som du la til metakodesidefragmentet i, kan du nå se favorittikonet i leserkategorien.
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 

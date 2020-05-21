@@ -94,12 +94,12 @@
                       href: get-started/whats-new-commerce-10-0-10.md
                     - name: Commerce 10.0.9 (april 2020)
                       href: get-started/whats-new-10-0-9.md
-                    - name: Commerce 10.0.8 (februar 2020)
-                      href: get-started/whats-new-10-0-8.md
                 - name: Funksjoner som er fjernet eller avskrevet
                   items:
                     - name: Funksjoner som er fjernet eller avskrevet i Finance and Operations
                       href: ../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md?toc=/dynamics365/commerce/toc.json
+                    - name: Funksjoner som er fjernet eller avskrevet i Dynamics 365 Commerce
+                      href: get-started/removed-deprecated-features-commerce.md
                 - name: AX 2012-funksjoner som er utsatt
                   href: ../fin-ops-core/fin-ops/get-started/ax-2012-features-not-implemented-but-not-deprecated.md?toc=/dynamics365/commerce/toc.json
                 - name: Funksjoner som ikke er implementert i lokale distribusjoner
@@ -644,6 +644,8 @@
                       href: work-with-store-inventory.md
                     - name: Arbeide med serialiserte varer
                       href: ../supply-chain/sales-marketing/register-serial-numbers-sales-process.md?toc=/dynamics365/commerce/toc.json
+                    - name: Arbeide med serialiserte varer i salgssted
+                      href: pos-serialized-items.md
                     - name: Overføre produkter fra distribusjonssenter til butikk ved hjelp av sentralt innkjøp
                       href: tasks/push-products-distribution-center-store-buyers-push.md
                     - name: Definere regler og parametere for direkteoverføring og sentralt innkjøp
@@ -1000,9 +1002,9 @@
               href: assess-customer-product-profitability.md
             - name: Analysere butikkytelse
               href: store-performance-information.md
-            - name: 'Definere RFM-analyse (Recency, Frequency, and Monetary)'
+            - name: 'Definere RFM-analyse (Nyheter, Hyppighet og Økonomisk)'
               href: set-up-rfm-analysis.md
-        - name: Lokalisering og forskriftsmessige funksjoner
+        - name: Globalisering
           items:
             - name: Oversikt over økonomisk integrering for Commerce-kanal
               href: localizations/fiscal-integration-for-retail-channel.md
@@ -1014,18 +1016,26 @@
                   href: localizations/emea-aut-fi-sample.md
             - name: Øst-Europa
               items:
-                - name: Forskuddsfakturaer for Commerce for Øst-Europa
-                  href: localizations/emea-eeu-advance-invoices-for-retail.md
-                - name: Administrere håndkasse for Commerce for Øst-Europa
-                  href: localizations/emea-eeu-petty-cash-for-retail.md
-                - name: Kundefakturaer for Commerce og retursalgsordrer i østeuropeiske land
-                  href: localizations/emea-eeu-retail-invoices.md
-                - name: "Retningslinjer for distribusjon for\_kassaapparater for Tsjekkia, Ungarn og Polen"
-                  href: localizations/emea-eeu-deployment.md
-                - name: Eksempel på integrering av bilagsskriver for Polen
-                  href: localizations/emea-pol-fpi-sample.md
-                - name: Eksempel på integrering av tjenesten for avgiftsmessig transaksjon for Tsjekkia
-                  href: localizations/emea-cze-fi-sample.md
+                - name: Felles
+                  items:
+                    - name: Forskuddsfakturaer for Commerce for Øst-Europa
+                      href: localizations/emea-eeu-advance-invoices-for-retail.md
+                    - name: Administrere håndkasse for Commerce for Øst-Europa
+                      href: localizations/emea-eeu-petty-cash-for-retail.md
+                    - name: Kundefakturaer for Commerce og retursalgsordrer i østeuropeiske land
+                      href: localizations/emea-eeu-retail-invoices.md
+                    - name: "Retningslinjer for distribusjon for\_kassaapparater for Tsjekkia, Ungarn og Polen"
+                      href: localizations/emea-eeu-deployment.md
+                - name: Tsjekkia
+                  items:
+                    - name: Eksempel på integrering av tjenesten for avgiftsmessig transaksjon for Tsjekkia
+                      href: localizations/emea-cze-fi-sample.md
+                - name: Polen
+                  items:
+                    - name: Eksempel på integrering av bilagsskriver for Polen
+                      href: localizations/emea-pol-fpi-sample.md
+                    - name: Kundeinformasjonsbehandling for Polen
+                      href: localizations/emea-pol-customer-information.md
             - name: Frankrike
               items:
                 - name: Kassefunksjonalitet
@@ -1044,6 +1054,8 @@
               items:
                 - name: Eksempel på integrering av bilagsskriver for Italia
                   href: localizations/emea-ita-fpi-sample.md
+                - name: Kundeinformasjonsbehandling for Italia
+                  href: localizations/emea-ita-customer-information.md
             - name: Mexico
               items:
                 - name: Globale CFDI-e-fakturaer for Mexico
@@ -1058,7 +1070,9 @@
               items:
                 - name: Kassefunksjonalitet
                   href: localizations/emea-swe-cash-registers.md
-                - name: Eksempel for salgsstedsintegrering med kontrollenheter
+                - name: Eksempel på integrering med kontrollenheter for Sverige
+                  href: localizations/emea-swe-fi-sample.md
+                - name: Eksempel for Retail POS-integrering med kontrollenheter (eldre)
                   href: localizations/retail-sdk-control-unit-sample.md
         - name: Rapportering og Power BI-integreringer
           items:
@@ -1078,7 +1092,7 @@
               items:
                 - name: Startside for Power BI-innhold
                   href: ../fin-ops-core/dev-itpro/analytics/power-bi-home-page.md?toc=/dynamics365/commerce/toc.json
-                - name: Opplæring
+                - name: Læring
                   href: ../fin-ops-core/dev-itpro/analytics/learning-power-bi.md?toc=/dynamics365/commerce/toc.json
                 - name: Organisasjonsopplæring
                   href: ../fin-ops-core/dev-itpro/analytics/organizational-training-analysis-power-bi-content-pack.md?toc=/dynamics365/commerce/toc.json
@@ -1138,7 +1152,7 @@
                   href: ../fin-ops-core/dev-itpro/analytics/model-aggregate-data.md?toc=/dynamics365/commerce/toc.json
                 - name: Legge til finansdimensjoner i aggregerte målinger
                   href: ../fin-ops-core/dev-itpro/analytics/add-financial-dimensions-aggregate-measurements.md?toc=/dynamics365/commerce/toc.json
-                - name: Opprette analyserapporter ved hjelp av PowerBI Desktop
+                - name: Opprette analyserapporter ved hjelp av Power BI Desktop
                   href: ../fin-ops-core/dev-itpro/analytics/author-distribute-power-bi-reports.md?toc=/dynamics365/commerce/toc.json
                 - name: Legge til analyse i arbeidsområder ved hjelp av Power BI Embedded
                   href: ../fin-ops-core/dev-itpro/analytics/add-analytics-tab-workspaces.md?toc=/dynamics365/commerce/toc.json
@@ -1570,7 +1584,7 @@
                       href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md?toc=/dynamics365/commerce/toc.json
             - name: Opplæringer
               items:
-                - name: Bruke JOIN-datakilder til å hente data fra flere programtabeller
+                - name: Bruke datakilder for sammenslåing til å hente data fra flere programtabeller
                   href: ../fin-ops-core/dev-itpro/analytics/er-join-data-sources.md?toc=/dynamics365/commerce/toc.json
                 - name: Konfigurere modelltilordninger for landkontekstavhengig ER
                   href: ../fin-ops-core/dev-itpro/analytics/er-country-dependent-model-mapping.md?toc=/dynamics365/commerce/toc.json
