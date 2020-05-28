@@ -2,7 +2,7 @@
   items:
     - name: Dynamics 365 Supply Chain Management
       items:
-        - name: Dynamics 365 Supply Chain Management
+        - name: Startside for Dynamics 365 Supply Chain Management
           href: index.md
         - name: Komme i gang
           items:
@@ -94,8 +94,8 @@
                   href: ../fin-ops-core/fin-ops/get-started/help-overview.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Koble til hjelpesystemet
                   href: ../fin-ops-core/fin-ops/get-started/help-connect.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Koble til et tilpasset hjelpeområde
-                  href: ../fin-ops-core/fin-ops/get-started/help-custom.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Oversikt over tilpasset hjelp
+                  href: ../fin-ops-core/dev-itpro/help/custom-help-overview.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Vise og eksportere feltbeskrivelser
                   href: ../fin-ops-core/fin-ops/get-started/view-export-field-descriptions.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Oppgaveregistrering
@@ -813,19 +813,19 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-count.md?toc=/dynamics365/supply-chain/toc.json
                         - name: EmptyList
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-emptylist.md?toc=/dynamics365/supply-chain/toc.json
-                        - name: Opplisting
+                        - name: Enumerate
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-enumerate.md?toc=/dynamics365/supply-chain/toc.json
                         - name: Filter
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-filter.md?toc=/dynamics365/supply-chain/toc.json
-                        - name: Første
+                        - name: First
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-first.md?toc=/dynamics365/supply-chain/toc.json
                         - name: FirstOrNull
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-firstornull.md?toc=/dynamics365/supply-chain/toc.json
-                        - name: Indeks
+                        - name: Index
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-index.md?toc=/dynamics365/supply-chain/toc.json
                         - name: IsEmpty
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-isempty.md?toc=/dynamics365/supply-chain/toc.json
-                        - name: Liste
+                        - name: List
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-list.md?toc=/dynamics365/supply-chain/toc.json
                         - name: ListJoin
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-listjoin.md?toc=/dynamics365/supply-chain/toc.json
@@ -835,9 +835,9 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-listoffirstitem.md?toc=/dynamics365/supply-chain/toc.json
                         - name: OrderBy
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-orderby.md?toc=/dynamics365/supply-chain/toc.json
-                        - name: Tilbakefør
+                        - name: Reverse
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-reverse.md?toc=/dynamics365/supply-chain/toc.json
-                        - name: Del
+                        - name: Split
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-split.md?toc=/dynamics365/supply-chain/toc.json
                         - name: SplitList
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-splitlist.md?toc=/dynamics365/supply-chain/toc.json
@@ -1215,7 +1215,7 @@
                   href: ../fin-ops-core/dev-itpro/analytics/er-apis-app73.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Angi en egendefinert lagerplassering for genererte dokumenter
                   href: ../fin-ops-core/dev-itpro/analytics/er-custom-storage-generated-documents.md?toc=/dynamics365/supply-chain/toc.json
-        - name: Beholdningsstyring
+        - name: Lagerstyring
           items:
             - name: Oversikt over lagerstyring
               href: inventory/inventory-home-page.md
@@ -1313,6 +1313,22 @@
                   href: cost-management/adjust-hand-inventory-cost-values.md
                 - name: Spore glidende gjennomsnittskostnad per beholdningsdimensjon
                   href: cost-management/track-running-average-cost-per-inventory-dimension.md
+        - name: IoT-intelligens
+          items:
+            - name: Startside for IoT-intelligens
+              href: iot/iot-intelligence-home-page.md
+            - name: Konfigurere Azure-ressurser
+              href: iot/iot-azure-setup.md
+            - name: Meldingsskjemaformater for IoT-hub
+              href: iot/iot-schema-format.md
+            - name: Installere tillegget i LCS
+              href: iot/iot-lcs-setup.md
+            - name: Definere metrikk
+              href: iot/iot-metrics-setup.md
+            - name: Scenariooppsett
+              href: iot/iot-scenario-setup.md
+            - name: Overvåke og behandle
+              href: iot/iot-management.md
         - name: Hovedplanlegging
           items:
             - name: Startside for hovedplanlegging
@@ -1335,6 +1351,8 @@
                   href: master-planning/planning-optimization/planning-optimization-auto-firming.md
                 - name: Avbryte en planleggingsjobb
                   href: master-planning/planning-optimization/cancel-planning-job.md
+                - name: Feilsøke planleggingsoptimalisering
+                  href: master-planning/planning-optimization/planning-optimization-trouble-shooting.md
             - name: Hovedplaner
               items:
                 - name: Oversikt over hovedplaner
@@ -2657,7 +2675,7 @@
                   href: warehousing/tasks/set-up-min-max-replenishment-process.md
             - name: Installere og konfigurere lagerappen
               items:
-                - name: Oversikt over å installere og konfigurere
+                - name: Installere og koble til lagerappen
                   href: warehousing/install-configure-warehousing-app.md
                 - name: Konfigurere feltnavn i lagerapp
                   href: warehousing/configure-app-field-names-priorities-warehouse.md
@@ -2697,6 +2715,22 @@
                   href: transportation/tasks/set-up-location-directive-purchase-order-put-away.md
                 - name: Definere en arbeidsmal for bestillinger
                   href: warehousing/tasks/set-up-work-template-purchase-orders.md
+            - name: Policyer for forsendelseskonsolidering
+              items:
+                - name: Policyer for forsendelseskonsolidering
+                  href: warehousing/about-shipment-consolidation-policies.md
+                - name: Konfigurere policyer for forsendelseskonsolidering
+                  href: warehousing/configure-shipment-consolidation-policies.md
+                - name: Scenario 1 – Konsolidere forsendelser når de frigis til lageret ved hjelp av automatisk frigivelse av salgsordrer
+                  href: warehousing/consolidate-shipments-automatic.md
+                - name: Scenario 2 – Konsolidere forsendelser når policyen for forsendelseskonsolidering overstyres fra siden Frigi til lager
+                  href: warehousing/consolidate-shipments-release-to-warehouse-override.md
+                - name: Scenario 3 – Konsolidere forsendelser ved hjelp av siden Frigi til lager fra arbeidsområdet for lastplanlegging
+                  href: warehousing/consolidate-shipments-load-planning-workbench.md
+                - name: Scenario 4 – Konsolidere forsendelser ved hjelp av arbeidsområdet for forsendelseskonsolidering
+                  href: warehousing/consolidate-shipments-manual-workbench.md
+                - name: Scenario 5 – Konsolidere forsendelser manuelt ved hjelp av siden Konsolider forsendelser
+                  href: warehousing/consolidate-shipments-manual-form.md
         - name: Utvikling av Supply Chain Management
           items:
             - name: Veiledning til utvikling av Gantt-kontroll

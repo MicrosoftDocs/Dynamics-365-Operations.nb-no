@@ -526,6 +526,32 @@
                   href: deployment/uninstall-deployable-package.md
                 - name: Feilsøke problemer med pakkeprogram
                   href: deployment/deployable-package-troubleshooting.md
+            - name: Distribuere tilpasset hjelp
+              items:
+                - name: Oversikt over tilpasset hjelp
+                  href: help/custom-help-overview.md
+                - name: Klargjøre innhold som kan brukes med hjelperuten
+                  href: help/preparing-content.md
+                - name: Distribuere tilpasset hjelp til Azure
+                  href: help/walkthrough-help-azure.md
+                - name: Koble den tilpassede hjelpen til hjelperuten
+                  href: help/connect-help-pane.md
+                - name: Hjelpeverktøy for tilpasset hjelp
+                  items:
+                    - name: Oversikt
+                      href: help/custom-help-toolkit.md
+                    - name: Verktøyet HTML From Repo Generator
+                      href: help/custom-help-toolkit-HtmlFromRepoGenerator.md
+                    - name: Verktøyet Convert HTML To JSON
+                      href: help/custom-help-toolkit-ConvertHtmlToJson.md
+                    - name: Verktøyet HTML Locale Changer
+                      href: help/custom-help-toolkit-HtmlLocaleChanger.md
+                    - name: Konvertere tilpasset hjelp for Dynamics AX for bruk i Dynamics 365
+                      href: help/migrate-dynamicsax2012.md
+                - name: Språk og nasjonale beskrivelser på tvers av produkter og hjelp
+                  href: help/language-locale.md
+                - name: 'Utvide, tilpasse og samarbeide om hjelpen'
+                  href: help/contributor-guide.md
         - name: Utvikle og tilpasse
           items:
             - name: Startside for å utvikle og tilpasse
@@ -808,7 +834,7 @@
                       href: extensibility/customization-overlayering-extensions.md
                 - name: Nyheter
                   items:
-                    - name: Hva er nytt eller endret for utvidelsesmulighet
+                    - name: Nyheter eller endringer for utvidelsesmulighet
                       href: extensibility/extensibility-new.md
                     - name: Endringer i utvidelsesmulighet versjon 10.0.3
                       href: extensibility/extensibility-changes-10-3.md
@@ -835,7 +861,7 @@
                     - name: Endringer i utvidelsesmulighet versjon 8.0.1
                       href: extensibility/extensibility-changes-801.md
                     - name: Endringer i utvidelsesmulighet i versjon 8.0
-                      href: extensibility/changes-80.md
+                      href: extensibility/Changes-80.md
                     - name: Endringer i utvidelsesmulighet i versjon 7.3
                       href: extensibility/extensibility-changes-73.md
                     - name: Endringer i utvidelsesmulighet juli 2017
