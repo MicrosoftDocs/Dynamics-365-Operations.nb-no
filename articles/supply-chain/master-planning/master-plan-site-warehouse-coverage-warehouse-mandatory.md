@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: df35389176368c44c2ff4a3210fabc25bf24c807
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: a07a4588d042af53d6281afc174ff58ecf24ca06
+ms.sourcegitcommit: 8a2127c5af6cdbda30ccc1f9bef9bd4ab61e9e50
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3213682"
+ms.lasthandoff: 05/18/2020
+ms.locfileid: "3383349"
 ---
 # <a name="master-planning-for-site-and-warehouse-coverage-warehouse-mandatory"></a>Hovedplanlegging for område- og lagerdekning, lager obligatorisk
 
@@ -32,7 +32,7 @@ ms.locfileid: "3213682"
 
 Dette emnet beskriver hvordan en vare som har et område og lagre som dekningsdimensjoner planlegges. Lagerdimensjonen er obligatorisk.
 
-Dette hovedplanleggingsscenariet omfatter følgende betingelser:
+Dette hovedplanleggingsscenarioet omfatter følgende betingelser:
 
 -   Områdedimensjonen er satt til obligatorisk, og må angis på behovstransaksjonen.
 -   Lagerdimensjonen er satt til obligatorisk, og må angis på behovstransaksjonen.

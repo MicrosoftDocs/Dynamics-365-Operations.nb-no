@@ -3,7 +3,7 @@ title: Kassefunksjoner for Norge
 description: Dette emnet gir en oversikt over hvilke kasse-funksjoner som er tilgjengelige for Norge. Det inneholder også retningslinjer for hvordan du konfigurerer funksjonen.
 author: EvgenyPopovMBS
 manager: vastrup
-ms.date: 10/23/2017
+ms.date: 05/07/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: epopov
 ms.search.validFrom: 2017-10-31
 ms.dyn365.ops.version: Application update 4
-ms.openlocfilehash: 2a598380f94223c6292e7e3b31758df5ff6de55a
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: d2065965512656fdc50dab76d238d9c26df69f75
+ms.sourcegitcommit: 73ae66c9464bcc9ddc1efbf4e76abb2758862fe6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3004713"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "3346637"
 ---
 # <a name="cash-register-functionality-for-norway"></a>Kassefunksjoner for Norge
 
@@ -103,7 +103,7 @@ Informasjonen som er inkludert i X- og Z-rapporter er basert på norsk krav. **T
 
 Du kan eksportere POS-transaksjonsjournalen i forhåndsdefinerte SAF-T-formatet (Standard Audit File - Tax). Revisjonsfilen inneholder informasjon om organisasjonen, relevante hoveddata (for eksempel varegrupper, varer og mva-koder), transaksjonsdata for kontantsalg sammen med signaturer for disse transaksjonene, hendelsesdata for ikke-salg og rapportdata for sluttdato.
 
-Revisjonsfilen kan eksporteres for følgende scenarier:
+Revisjonsfilen kan eksporteres for følgende scenarioer:
 
 - Per butikk
 - Alle butikker
@@ -206,7 +206,7 @@ Hvis du vil ha mer informasjon om hvordan du arbeider med kvitteringsformater, k
 Konfigurasjon av SAF-T-kasse er tilgjengelig for nedlasting fra Microsoft Dynamics Lifecycle Services (LCS). Hvis du vil ha mer informasjon, kan du se [Importere elektroniske rapporteringskonfigurasjoner](../../dev-itpro/analytics/electronic-reporting-import-ger-configurations.md). Du må laste ned følgende konfigurasjoner:
 
 - **Data for detaljhandelskanal.versjon.1** – Datamodellkonfigurasjonen.
-- **DMM Data for detaljhandelskanal.versjon.1.6** – Datamodelltilordningskonfigurasjonen.
+- **Data for DMM Retail-kanal versjon 1.12** – Konfigurasjonen av datamodelltilordningen.
 - **NO SAF T-kasse.version.1.15** – Formatkonfigurasjonen.
 
 Når du har importert konfigurasjonene på siden **Handelsparametere**, går du til kategorien **Elektroniske dokumenter** og velger navnet på formatkonfigurasjonen som ble importert, i feltet **Format for eksport av SAF-T-kasse**.

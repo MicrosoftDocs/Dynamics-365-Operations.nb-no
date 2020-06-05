@@ -1,9 +1,9 @@
 ---
 title: Videoer
-description: Denne siden viser Microsoft-opprettede videoer om fremgangsmåte og teknisk foredrag i forbindelse med Finance and Operations-apper som er tilgjengelige på YouTube og andre områder.
+description: Denne siden viser Microsoft-opprettede instruksjonsvideoer og videoer med tekniske samtaler for Finance and Operations-apper som er tilgjengelige på YouTube og andre områder.
 author: josaw1
 manager: AnnBe
-ms.date: 11/11/2019
+ms.date: 05/11/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,28 +17,28 @@ ms.search.region: global
 ms.author: josaw
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.0.0, AX 8.0
-ms.openlocfilehash: 00ea8de8ba0567e8cc086a754062b3fec9672937
-ms.sourcegitcommit: 0138b6c108a10f2bcb90c91205da8092917160d8
+ms.openlocfilehash: f5e7751b71c75f80f1c3031ef00b32e80e7db42a
+ms.sourcegitcommit: 89022f39502b19c24c0997ae3a01a64b93280f42
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/11/2019
-ms.locfileid: "2781856"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "3367135"
 ---
 # <a name="videos"></a>Videoer 
 
 [!include [banner](../includes/banner.md)]
 
-På [Microsoft Dynamics 365 YouTube-kanalen](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ) kan du finne videoer som er opprettet av Microsoft, som viser en rekke forretningsløsninger for Dynamics 365-produkter. Denne delen viser videoer om fremgangsmåte for Finance and Operations-apper som er tilgjengelige på kanalen.
+På [Microsoft Dynamics 365 YouTube-kanalen](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ) kan du finne videoer som er opprettet av Microsoft, som viser en rekke forretningsløsninger for Dynamics 365-produkter. Denne delen viser instruksjonsvideoer for Finance and Operations-apper som ligger på kanalen.
 
 > [!Note]
 > Noen av de oppførte videoene er publisert under et tidligere produktnavn, men de gjelder fremdeles.
 
-## <a name="videos-for-finance-and-operations-development-and-administration"></a>Videoer for utvikling og administrasjon for Finance and Operations
+## <a name="videos-for-finance-and-operations-development-and-administration"></a>Videoer for utvikling og administrasjon av Finance and Operations
 
 ### <a name="data-integration"></a>Dataintegrering
 
 - [Prospekt til kontanter-integrasjon](https://youtu.be/AVV9x5x-XCg)
-- [Synkronisere en arbeidsordre mellom Dynamics 365 for Field Service og Finance and Operations-apper](https://www.youtube.com/watch?v=46ylO7raZAo&feature=youtu.be)
+- [Synkronisere en arbeidsordre mellom Dynamics 365 for Field Service- og Finance and Operations-apper](https://www.youtube.com/watch?v=46ylO7raZAo&feature=youtu.be)
 
 ### <a name="data-management"></a>Databehandling
 
@@ -56,7 +56,7 @@ På [Microsoft Dynamics 365 YouTube-kanalen](https://www.youtube.com/channel/UCJ
 
 - [Redigere en innebygd rapport i et analytisk arbeidsområde](https://youtu.be/_8WlwmSggcQ)
 - [Bygge inn PowerBI.com-rapporter i Finance and Operations-apper](https://youtu.be/gGWuNJDoi-M)
-- [Legg inn din egen database (BYOD) i Finance and Operations-apper](https://www.youtube.com/watch?v=-MaxtBJu2_o&feature=youtu.be)
+- [Ta med din egen database (BYOD) til Finance and Operations-apper](https://www.youtube.com/watch?v=-MaxtBJu2_o&feature=youtu.be)
 - [Slik bruker du Power BI-innhold for kostnadsstyring i Dynamics 365](https://www.youtube.com/watch?v=5jWHnM_C7WM&feature=youtu.be)
 
 ### <a name="lifecycle-services-lcs"></a>Lifecycle Services (LCS)
@@ -76,6 +76,12 @@ På [Microsoft Dynamics 365 YouTube-kanalen](https://www.youtube.com/channel/UCJ
 - [Oppdatere data i et produksjonsmiljø](https://www.youtube.com/watch?v=VCd5SgkYPTw)
 - [Ta i bruk en ny plattformversjon etter Platform update 3](https://www.youtube.com/watch?v=nkiKP2Au6OQ&feature=youtu.be)
 - [Bruke telemetri til å overvåke KPIer i Dynamics Lifecycle Services](https://www.youtube.com/watch?v=18u6SC8GeFY&feature=youtu.be)
+
+### <a name="regression-suite-automation-tool-rsat"></a>Regression Suite Automation Tool (RSAT)
+
+- [Bruke oppgaveregistrering til å opprette en testsak for Regression Suite Automation Tool (RSAT)](https://youtu.be/bBr4BXAxTNI)
+- [Opprette en testplan i Azure DevOps til bruk med Regression Suite Automation Tool (RSAT)](https://youtu.be/3jIuBleAnQk) 
+- [Bruke Regression Suite Automation Tool (RSAT)](https://youtu.be/uhN9JItzGAk)
 
 
 ## <a name="videos-for-dynamics-365-finance"></a>Videoer for Dynamics 365 Finance

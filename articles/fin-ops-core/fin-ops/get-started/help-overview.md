@@ -1,57 +1,57 @@
 ---
 title: Hjelpesystem
-description: Dette emnet inneholder en oversikt over hjelpesystemet.
-author: margoc
+description: Dette emnet inneholder en oversikt over hjelpesystemet for Finance and Operations-apper.
+author: edupont04
 manager: AnnBe
-ms.date: 10/02/2019
+ms.date: 05/11/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: SystemParameters
 audience: Application User, Developer, IT Pro
-ms.reviewer: sericks
+ms.reviewer: tfehr
 ms.search.scope: Core, Operations
 ms.custom: 16381
 ms.assetid: 018c148c-9cbd-41e0-8186-d75dbf66288f
 ms.search.region: Global
-ms.author: margoc
+ms.author: edupont
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4594da0feeb3b74eb066fb5761e36398804b4fc2
-ms.sourcegitcommit: 1d5a4f70a931e78b06811add97c1962e8d93689b
+ms.openlocfilehash: 28118eddd2f85df5f9daa2c5a6c3cb00957909db
+ms.sourcegitcommit: 89022f39502b19c24c0997ae3a01a64b93280f42
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "3124664"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "3367344"
 ---
 # <a name="help-system"></a>Hjelpesystem
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet gir en oversikt over komponentene til hjelpesystemet. Hjelpesystemet er felles for følgende produkter:
+Brukere av følgende apper kan få tilgang til kontekstavhengig hjelp og annet innhold som er basert på det samme hjelpesystemet:
 
-- Dynamics 365 Finance 
-- Dynamics 365 Commerce
-- Dynamics 365 Supply Chain Management
+- Microsoft Dynamics 365 Commerce
+- Dynamics 365 Finance
 - Dynamics 365 Human Resources
+- Dynamics 365 Supply Chain Management
 
-Du får tilgang til hjelp fra Hjelp-ruten i alle produkter du bruker. 
+I alle disse appene kan du få tilgang til produktspesifikk hjelp fra **Hjelp**-ruten.
 
-![Hjelp-rute](./media/help-pane-ops-task-guides.png)
+![Hjelp-rute](./media/help-pane-ops-help.png)
 
 ## <a name="help-on-docsmicrosoftcom"></a>Hjelp på docs.microsoft.com
 
-docs.microsoft.com-området ([docs.microsoft.com/dynamics365/](https://docs.microsoft.com/dynamics365/)) er den primære kilden til produktdokumentasjon for programmene som er oppført ovenfor. Området tilbyr følgende funksjoner:
+Nettstedet docs.microsoft.com ([docs.microsoft.com/dynamics365](https://docs.microsoft.com/dynamics365/)) er standardkilden for produktdokumentasjon for de tidligere oppførte appene. Dette nettstedet tilbyr følgende funksjoner:
 
-- **Tilgang til det mest oppdaterte innholdet** – Området gir oss en raskere og mer fleksibel måte å opprette, levere og oppdatere produktdokumentasjon på. Derfor bidrar det til å sørge for at du har tilgang til den nyeste tekniske informasjonen.
-- **Innhold som er skrevet av eksperter** – Området gir et omfattende sett med produktdokumentasjon som kan forbedres av fellesskapsmedlemmer både innenfor og utenfor Microsoft.
+- **Tilgang til det mest oppdaterte innholdet** – Området gir Microsoft en raskere og mer fleksibel måte å opprette, levere og oppdatere produktdokumentasjon på. Derfor har du enkel tilgang til den nyeste tekniske informasjonen.
+- **Innhold som er skrevet av eksperter** – Innhold på nettstedet er åpent for bidrag av fellesskapsmedlemmer både i og utenfor Microsoft.
 
-Du kan også finne innholdet med en hvilken som helst søkemotor. For å få best resultater anbefaler vi at du bruker et områdesøk, for eksempel området: docs.microsoft.com dynamics 365 "søkeord"
+Du kan finne innhold på docs.microsoft.com ved å bruke en hvilken som helst søkemotor. For best mulig resultater anbefaler det å bruke områdesøk, for eksempel **site:docs.microsoft.com dynamics 365 "søketerm"**.
 
-### <a name="use-an-rss-feed"></a>Bruke et RSS-feed
+### <a name="get-notified-about-changes-through-an-rss-feed"></a>Få beskjed om endringer ved hjelp av en RSS-feed
 
-Hvis du vil abonnere på en RSS-feed for alle oppdateringer i innholdet, kan du bruke følgende kobling fra en leser som støtter RSS-feeder, for eksempel Internet Explorer eller en RSS-feedbehandler:
+Hvis du vil abonnere på en RSS-feed (Really Simple Syndication) for alle oppdateringer som gjelder innholdet på docs.microsoft.com, bruker du følgende kobling:
 
 [RSS-feed](https://docs.microsoft.com/api/search/rss?locale=en-us&$filter=scopes%2Fany(t%3A%20t%20eq%20%27Unified%20Operations%27))
 
@@ -59,34 +59,37 @@ Hvis du vil abonnere på en RSS-feed for alle oppdateringer i innholdet, kan du 
 
 Hvis du har tilbakemelding eller spørsmål om et emne, legger du igjen en kommentar nederst på siden.
 
-1. Klikk på **Tilbakemelding** til å få tilgang til kommentarene nederst på siden, og klikk deretter på enten **Tilbakemelding for produkt** eller **Logg på for å sende tilbakemelding om dokumentasjon**.
+1. Velg **Tilbakemelding** for å vise kommentarene nederst på siden. Deretter velger du **Tilbakemelding for produkt** eller **Logg på for å sende tilbakemelding om dokumentasjon**.
 
-2. Skriv inn kommentarene, og klikk deretter på **Send tilbakemelding**.
+2. Skriv inn kommentarene, og velg deretter **Send tilbakemelding**.
 
     ![Legg inn kommentar](./media/feedback.png)
 
+> [!NOTE]
+> Hvis du vil sende tilbakemelding fra dokumentasjon, må du logge på ved hjelp av en GitHub-konto. Hvis du vil ha mer informasjon, kan du se [Definere og behandle GitHub-profilen](https://help.github.com/github/setting-up-and-managing-your-github-profile).
+
 ### <a name="contribute-to-the-documentation"></a>Bidra til dokumentasjonen
 
-Du kan bidra til og redigere i dokumentasjonen. Begynn med å klikke på **Rediger**-knappen (blyant) for et emne. Følgende video viser hvordan du kan bidra til dokumentasjonen vår.
+Du kan bidra til og redigere i dokumentasjonen. Begynn med å velge knappen **Rediger** (blyantsymbol) for et emne. Følgende video viser hvordan du kan bidra til dokumentasjonen vår.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE36liB]
 
 Videoen [Bidra til dokumentasjonen for Microsoft Dynamics 365](https://youtu.be/m5djioozRbg) (vist ovenfor) er inkluder i Microsoft Dynamics 365-kanalen på YouTube.
 
-Hvis du vil ha mer informasjon, kan du se [veiledningen for bidragsytere](https://docs.microsoft.com/contribute).
+Hvis du vil ha mer informasjon, kan du se [veiledningen for dokumentbidragsyter](https://docs.microsoft.com/contribute), som er publisert av teamet som laget nettstedet docs.microsoft.com.
 
 > [!NOTE]
 > Vi godtar for øyeblikket bare bidrag til vårt engelske innhold.
 
 ## <a name="task-guides"></a>Oppgaveveiledninger
 
-En oppgaveveiledning er en kontrollert, veiledet, interaktiv opplevelse som leder deg gjennom trinnene for en aktivitet eller forretningsprosess. Du kan åpne (spille av) en oppgaveveiledning fra Hjelp-ruten. Når du først klikker en oppgaveveiledning, vil Hjelp-ruten vise de trinnvise instruksjonene for oppgaven. Lokaliserte oppgaveveiledninger er tilgjengelige.
+En oppgaveveiledning er en kontrollert, veiledet, interaktiv opplevelse som leder deg gjennom trinnene for en aktivitet eller forretningsprosess. Du kan åpne (spille av) en oppgaveveiledning fra **Hjelp**-ruten. Når du først velger en oppgaveveiledning, vil **Hjelp**-ruten vise de trinnvise instruksjonene for oppgaven. Lokaliserte oppgaveveiledninger er tilgjengelige.
 
-Microsoft sendte oppgaveveiledningbiblioteker for versjoner til desember 2017 for Dynamics 365 for Finance and Operations. Delen [Hjelpesystem](help-overview.md#accessing-task-guides-from-the-help-pane) beskriver hvordan du finner de riktige oppgaveveiledningene for produktet.
+Microsoft lanserte biblioteker for oppgaveveiledning for produktversjoner i 2017-versjonen av Dynamics 365 for Finance and Operations. Delen [Tilgang til oppgaveveiledninger fra Hjelp-ruten](#accessing-task-guides-from-the-help-pane) i dette emnet forklarer hvordan du finner de riktige oppgaveveiledningene for produktet.
 
 ![Oppgaveveiledning – lesevisning](./media/task-guide-ops.png)
 
-Hvis du vil starte den veiledede interaktive opplevelsen, klikker du **Start oppgaveveiledning** nederst i Hjelp-ruten. En svart peker åpnes og angir handlingen som du må utføre. Følg instruksjonene som vises i brukergrensesnittet, og legg inn data i henhold til instruksjonene.
+Hvis du vil starte den veiledede interaktive opplevelsen, velger du **Start oppgaveveiledning** nederst i **Hjelp**-ruten. En svart peker viser deg hvor du skal gå først. Følg instruksjonene som vises i brukergrensesnittet (UI), og legg inn data i henhold til instruksjonene.
 
 ![Oppgaveveiledning – trinnvis instruksjon](./media/task-guide-step-1-ops.png)
 
@@ -97,69 +100,68 @@ Du kan bruke oppgaveopptakeren til å opprette dine egne egendefinerte oppgaveve
 
 ## <a name="in-product-help"></a>Hjelp i produktet
 
-Hvis du vil ha tilgang til hjelpeinnhold, velger du **Hjelp**-ikonet (**?**) og velger deretter Hjelp eller trykker på Ctrl+Skift+?. I begge tilfeller åpnes Hjelp-ruten. Fra Hjelp-ruten får du tilgang til artikler eller oppgaveveiledninger.
+Noen felt har feltbeskrivelser som hjelper brukerne å komme til å bli opphevet når de for eksempel er usikker på dataene som feltet inneholder. I tillegg formidler **Hjelp**-ruten i produktet kontekstsensitiv tilgang til innhold som kan hjelpe brukerne med å komme i gang, få opphevet og finne ut mer.
 
-![Hjelp-rute](./media/help-pane-wiki.png)
+Hvis du vil ha tilgang til hjelpeinnhold, velger du knappen **Hjelp** (**?**), og deretter velger du **Hjelp**. Du kan også trykke på **Ctrl+Skift+?**. I begge tilfeller vises **Hjelp**-ruten. Fra **Hjelp**-ruten får du tilgang til begrepsmessige emner eller oppgavelinjer som er relevante for området i produktet du befinner deg i for øyeblikket.
+
+![Hjelp-rute](./media/help-pane-ops-help.png)
 
 ### <a name="accessing-help-topics-from-the-help-pane"></a>Tilgang til helpeemner fra Hjelp-ruten
 
-Fra Hjelp-ruten har du tilgang til artikler som gjelder for klienten. Når du først åpner Hjelp-ruten og klikker på kategorien **Hjelp**, ser du artikler som gjelder for siden du er på. Hvis det ikke finnes noen artikler, kan du angi nøkkelord for å presisere søket. Når du klikker en artikkel i Hjelp-ruten, åpnes en ny kategori i leseren og viser artikkelen.
+Fra **Hjelp**-ruten har du tilgang til emner som gjelder for klienten. Når du første gang åpner **Hjelp**-ruten, viser kategorien **Hjelp** emnene som gjelder for siden du befinner deg på. Hvis ingen emner vises, kan du angi nøkkelord for å presisere søket. Når du velger et emne i **Hjelp**-ruten, åpnes emnet i en ny kategori i leseren.
 
 > [!IMPORTANT]
 > Denne delen gjelder ikke for Dynamics 365 Human Resources. Hjelpesystemet for Human Resources kobles automatisk til oppgaveveiledningene for produktet. Du kan heller ikke opprette tilpassede oppgaveveiledninger for Human Resources.
 
-
 ### <a name="accessing-task-guides-from-the-help-pane"></a>Tilgang til oppgaveveiledninger fra Hjelp-ruten
 
-Før du kan få tilgang til oppgaveveiledninger fra Hjelp-ruten må en systemadministrator gå til **Systemparametere**-siden i Finance, Supply Chain Managment og Commerce, og konfigurere noen innstillinger.
+Før du får tilgang til oppgaveveiledninger fra **Hjelp**-ruten, må en systemadministrator konfigurere noen innstillinger på siden **Systemparametere** i Finance, Supply Chain Management elle Commerce. Hvis du vil ha mer informasjon, kan du se [Legge til oppgaveveiledninger](help-connect.md#adding-task-guides).
 
-> [!NOTE]
-> - Hvis du vil konfigurere hjelp, må du være logget på med en konto i samme leier som leier som appen er distribuert i.
-> - Det er ikke mulig å koble til et LCS-biblioteket fra en forekomst av appen som kjører på en virtuell harddisk (VHD).
+<!-- > [!NOTE]
+> - In order to configure Help, you must be signed in with an account in the same tenant as the tenant in which the app is deployed.
+> - It is not possible to connect to an LCS library from an instance of the app running in a local virtual hard drive (VHD).
 
-![Skjemaet Systemparametere med innstillinger for hjelp](./media/system-parameters_ops-1024x437.png)
+![System Parameters form with Help settings](./media/system-parameters_ops-1024x437.png)
 
-Følge denne fremgangsmåten på siden **Systemparametere**:
+On the **System parameters** page, follow these steps:
 
-1. **Viktig:** Første gang du åpner kategorien Hjelp, må du koble til Lifecycle Services. Husk å klikke koblingen i midten av skjemaet, vent på tilkoblingen, lukk dialogboksen og klikk **OK** for å få tilgang til parameterskjemaet.
+1. **Important:** The first time that you open the Help tab, you must connect to Lifecycle Services. Be sure to select the link in the middle of the form, wait for the connection, close the dialog box, and then select **OK** to get to the parameters form.
 
-    ![Koble til LCS](./media/connect-to-lcs-crop-1024x365.png)
+    ![Connect to LCS](./media/connect-to-lcs-crop-1024x365.png)
 
-2. Velg Lifecycle Services-prosjektet du vil koble til.
-3. Velg BPM-bibliotekene (i det valgte prosjektet) du vil hente oppgaveregistreringer fra.
-4. Angi visningsrekkefølge for BPM-bibliotekene. Dette bestemmer hvilken rekkefølge oppgaveregistreringer fra bibliotekene skal vises i, i Hjelp-ruten.
+2. Select the Lifecycle Services project to connect to.
+3. Select BPM libraries (within the selected project) to retrieve task recordings from.
+4. Set the display order of the BPM libraries. This setting determines the order in which task recordings from the libraries will appear in the Help pane.-->
 
-Etter at en systemadministrator har fullført disse trinnene, kan du åpne Hjelp-ruten og klikke på kategorien **Oppgaveveiledninger**. Du vil nå se oppgaveveiledningene som gjelder for siden du er på for øyeblikket. Hvis det ikke finnes noen oppgaveveiledninger, kan du angi nøkkelord for å presisere søket. Når du klikker en oppgaveveiledning i Hjelp-ruten, viser Hjelp-ruten de trinnvise instruksjonene, og du kan spille av oppgaveveiledningen.
+Etter at en systemadministrator har fullført disse trinnene, kan du åpne **Hjelp**-ruten og velge kategorien **Oppgaveveiledninger**. Du vil nå se oppgaveveiledningene som gjelder for siden du er på for øyeblikket. Hvis det ikke finneds noen oppgaveveiledninger, kan du angi nøkkelord for å presisere søket. Når du velger en oppgaveveiledning i **Hjelp**-ruten, viser **Hjelp**-ruten de trinnvise instruksjonene, og du kan spille av oppgaveveiledningen.
 
 ![Oppgaveveiledning – lesevisning](./media/task-guide-ops.png)
 
-### <a name="where-are-the-translated-task-guides-for-microsoft-libraries"></a>Hvor er de oversatt oppgaveveiledningene for Microsoft-biblioteker?
+### <a name="where-are-the-translated-task-guides-for-microsoft-libraries"></a>Hvor er de oversatte oppgaveveiledningene for Microsoft-biblioteker?
 
-Oversatte oppgaveveiledninger er utgitt i biblioteker med "Alle språk" i tittelen. Hvis du vil vise lokaliserte oppgaveveiledninger, kontroller at du er koblet til et egnet biblioteket. Språket som en oppgaveveiledning vises i, kontrolleres for hver bruker av språkinnstillingene under **Alternativer** &gt; **Innstillinger**.
+Oversatte oppgaveveiledninger er utgitt i biblioteker som har "Alle språk" i tittelen. Hvis du vil vise lokalisert hjelp for oppgaveveiledninger, må du sjekke at du er koblet til et egnet biblioteket. Hver bruker kan endre språket som en oppgaveveiledning vises i, ved å endre språkinnstillingene under **Alternativer** &gt; **Innstillinger**.
 
 - Hvis en oppgaveveiledning er oversatt, vil all teksten i oppgaveveiledningen vises på det valgte språket når du åpner oppgaveveiledningen.
-- Hvis en oppgaveveiledning ikke er oversatt, vil bare noe av teksten (teksten til kontrollene) vises på det valgte språket når du åpner oppgaveveiledningen.
+- Hvis en oppgaveveiledning ikke er oversatt, vil bare teksten til kontrollene vises på det valgte språket når du åpner oppgaveveiledningen.
 
 ## <a name="creating-custom-help"></a>Opprette egendefinert hjelp
 
-Du kan opprette hjelp for brukerne ved å opprette egendefinerte oppgaveveiledninger eller koble ditt eget nettsted til Hjelp-ruten. Hvis du vil ha mer informasjon, kan du se:
+Du kan opprette hjelp for brukerne ved å opprette egendefinerte oppgaveveiledninger eller koble ditt eget nettsted til **Hjelp**-ruten. Hvis du vil ha mer informasjon, kan du se følgende emner:
 
-- [Ressurser for Oppgaveregistrering](../../dev-itpro/user-interface/task-recorder.md).
-- [Lage egendefinert hjelp (hvitbok)](https://go.microsoft.com/fwlink/?linkid=2041185)
+- [Ressurser for Oppgaveregistrering](../../dev-itpro/user-interface/task-recorder.md)
+- [Oversikt over tilpasset hjelp](../../dev-itpro/help/custom-help-overview.md)
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 
-- [Ressurser for Oppgaveregistrering](../../dev-itpro/user-interface/task-recorder.md)
-
 Følgende tabell viser nettstedene våre. Områder med en stjerne (\*) ved siden av navnet, krever at du logger på med en konto som er knyttet til en serviceplan.
 
-| Område                                                                                           | beskrivelse |
-|------------------------------------------------------------------------------------------------|-------------|
-| [Docs.microsoft.com](/dynamics365/)                                                            | Er vert for eller kobler til all produktdokumentasjon for Dynamics 365. |
-| [Microsoft Learn](https://docs.microsoft.com/learn/)                                           | Microsofts område for gratis e-læring. |
-| [Lifecycle Services](https://lcs.dynamics.com/)\*                                              | Gir et skybasert samarbeidsområde som kunder og partnere kan bruke til å administrere prosjekter fra før salg til implementering og operasjoner. Dette området er nyttig i alle fasene ved implementering. |
-| [Kundestøtteblogg](https://aka.ms/AXSupportBlog)                                                    | Gir tips som publiseres av kundestøtteteamet. |
-| [Docs.microsoft.com/tidligere versjoner](https://docs.microsoft.com/previous-versions/dynamics/) | Vert for innhold fra tidligere versjoner. |
-| [Dynamics-fellesskap](https://community.dynamics.com/)                                          | Vert for blogger, forum og videoer. |
-| [Microsoft.com/dynamics365/](https://www.microsoft.com/dynamics365/home)                       | Gir informasjon om evaluering og salg. |
-| [CustomerSource](https://mbs.microsoft.com/customersource/)\*                                  | Vert for opplæringsressurser, nedlastbare rapporter og hvitbøker og er primærområdet for støtte for serviceplaninnehavere. Kan kreve en serviceplan for å få tilgang til noen ressurser på området. |
+| Site | beskrivelse |
+|------|-------------|
+| [Docs.microsoft.com](/dynamics365/) | Dette nettstedet drifter eller kobler til all produktdokumentasjon for Dynamics 365. |
+| [Microsoft Learn](https://docs.microsoft.com/learn/) | Dette området er et gratis Microsoft eLearning-område. |
+| [Microsoft DynamicsLifecycle Services (LCS)](https://lcs.dynamics.com/)\* | Dette området er et skybasert samarbeidsområde som kunder og partnere kan bruke til å administrere prosjekter fra før salg til implementering og operasjoner. Det er nyttig i alle fasene ved implementering. |
+| [Kundestøtteblogg](https://aka.ms/AXSupportBlog) | Dette området gir tips som posteres av kundestøtteteamet. |
+| [Docs.microsoft.com/tidligere versjoner](/previous-versions/dynamics/) | Dette området har innhold fra tidligere versjoner. |
+| [Dynamics-fellesskap](https://community.dynamics.com/) | Dette området har blogger, forum og videoer. |
+| [Microsoft.com/dynamics365](https://www.microsoft.com/dynamics365/home) | Dette området formidler informasjon om evaluering og salg. |
+| [CustomerSource](https://mbs.microsoft.com/customersource/)\* | Dette området drifter opplæringsressurser, nedlastbare rapporter og hvitbøker og er primærområdet for støtte for serviceplaninnehavere. Tilgang til noen ressurser på dette området krever kanskje en serviceplan. |

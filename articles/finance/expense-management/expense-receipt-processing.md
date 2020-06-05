@@ -3,7 +3,7 @@ title: Behandling av utgiftskvitteringer
 description: Dette emnet inneholder informasjon om OCR-behandling (optisk tegngjenkjenning) for kvitteringer. Denne funksjonen er utformet for å forbedre brukeropplevelsen når utgiftsrapporter opprettes i Microsoft Dynamics 365 Finance.
 author: stsporen
 manager: AnnBe
-ms.date: 11/20/2019
+ms.date: 05/14/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: stsporen
 ms.search.validFrom: 2019-11-20
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: efba2faf9428d9b556d74273bc7daadba7211c48
-ms.sourcegitcommit: ff6dde637d2f5d2bd18a582eb41573d4c69acdd6
+ms.openlocfilehash: 31c08ea264e6caec3217f4b424275495f39123e3
+ms.sourcegitcommit: 15c5ec742d648c5f3506d031a2ab6150dcbae348
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "3248969"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "3378237"
 ---
 # <a name="expense-receipt-processing"></a>Behandling av utgiftsmottak
 
@@ -36,24 +36,24 @@ Utgiftsoppføring er forbedret gjennom innføringen av OCR-behandling (optisk te
 
 ## <a name="usage-examples"></a>Eksempler på bruk
 
-- **Legg automatisk til kvitteringer som inkluderer kredittkorttransaksjoner, når en utgiftsrapport opprettes.**
+Hvis du automatisk vil legge til kvitteringer som inkluderer kredittkorttransaksjoner, når en utgiftsrapport opprettes, gjør du følgende:
 
-    1. Åpne **Utgiftsadministrering**-arbeidsområdet.
-    2. I **Kvitteringer**-fanen verifiserer du at det ikke finnes tilknyttede kvitteringer. Du kan også laste opp kvitteringer i **Kvitteringer**-fanen.
-    3. I **Utgifter**-fanen verifiserer du at det ikke finnes tilknyttede utgifter. Vanligvis importerer utgiftsadministratoren disse utgiftene fra kredittkortleverandøren.
-    4. Velg **Ny utgiftsrapport**. Vær oppmerksom på at du kan inkludere utgifter og kvitteringer, nå også, når du oppretter en utgiftsrapport. Hvis du legger til både utgifter og kvitteringer, utløses automatisk matching av kvitteringene med utgiftene.
+  1. Åpne **Utgiftsadministrering**-arbeidsområdet.
+  2. I **Kvitteringer**-fanen verifiserer du at det ikke finnes tilknyttede kvitteringer. Du kan også laste opp kvitteringer i **Kvitteringer**-fanen.
+  3. I **Utgifter**-fanen verifiserer du at det ikke finnes tilknyttede utgifter. Vanligvis importerer utgiftsadministratoren disse utgiftene fra kredittkortleverandøren.
+  4. Velg **Ny utgiftsrapport**. Vær oppmerksom på at du kan inkludere utgifter og kvitteringer, nå også, når du oppretter en utgiftsrapport. Hvis du legger til både utgifter og kvitteringer, utløses automatisk matching av kvitteringene med utgiftene.
 
-- **Opprett en utgift, eller match en utgift fra en kvittering.**
+Hvis du vil opprette en utgift, eller match en utgift fra en kvittering, gjør du følgende:
 
-    1. På en utgiftsrapport går du til **Kvitteringer**-fane og legger ved en kvittering ved å velge **Legg til kvitteringer**.
-    2. Under det opplastede bildet av kvitteringen, legger du merke til alternativene **Opprett** og **Match**.
+  1. På en utgiftsrapport går du til **Kvitteringer**-fane og legger ved en kvittering ved å velge **Legg til kvitteringer**.
+  2. Under det opplastede bildet av kvitteringen, legger du merke til alternativene **Opprett** og **Match**.
 
-        - Velg **Opprett** hvis du vil opprette en manuelt angitt utgiftstransaksjon, og fyll ut verdiene som hentes fra kvitteringen.
-        - Hvis du velger **Match**, prøver systemet å matche en eksisterende utgift med kvitteringen.
+      - Velg **Opprett** hvis du vil opprette en manuelt angitt utgiftstransaksjon, og fyll ut verdiene som hentes fra kvitteringen.
+      - Hvis du velger **Match**, prøver systemet å matche en eksisterende utgift med kvitteringen.
 
 ## <a name="installation"></a>Installasjon
 
-Denne funksjonen fungerer i kombinasjon med **Utgiftsrapporter avbildet på nytt**-funksjonen for å forenkle utgiftsopplevelsen.
+Denne funksjonen fungerer i kombinasjon med **Utgiftsrapporter avbildet på nytt**-funksjonen for å forenkle utgiftsopplevelsen. Denne funksjonen er bare tilgjengelig for Lag 2-miljøer, som er Sandkasse og Produksjon.
 
 For å kunne bruke disse avanserte utgiftsfunksjonene må du installere Expense Management Service-tillegget for Microsoft Dynamics 365 Finance, og aktivere funksjonene i forekomsten. Du kan få tilgang til tillegget fra prosjektet i Microsoft Dynamics Lifecycle Services (LCS).
 

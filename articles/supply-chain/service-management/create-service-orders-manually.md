@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: ShylaThompson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d80461694a28a0842155cbd8ca224c37bd85dde7
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 45261931d8083e179f0d3a8285b12fdaa2494adc
+ms.sourcegitcommit: 8a2127c5af6cdbda30ccc1f9bef9bd4ab61e9e50
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3202704"
+ms.lasthandoff: 05/18/2020
+ms.locfileid: "3383372"
 ---
 # <a name="create-service-orders-manually"></a>Opprette serviceordrer manuelt    
 
@@ -58,7 +58,7 @@ Du kan opprette serviceordrer manuelt ved å bruke en serviceavtale eller ved å
 
 1.  Klikk på **Prosjektstyring og regnskap** \> **Felles** \> **Prosjekter** \> **Alle prosjekter**.
 
-2.  I **Prosjekter**-skjemaet i **handlingsruten** klikker du på **Administrer**-fanen \> klikk på **Service**\> **Serviceordrer**.
+2.  I skjemaet **Prosjekter** i **handlingsruten** klikker du kategorien **Administrer** \> og klikker **Tjeneste** \> **Tjenesteordrer**.
 
 3.  Følg forrige fremgangsmåte for å opprette en serviceordre manuelt i **Serviceordrer**-skjemaet. Feltet **Prosjekt-ID** viser prosjektreferansen.
 

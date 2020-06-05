@@ -3,7 +3,7 @@ title: Automatisering av leverandørfaktura
 description: Dette emnet forklarer hvilke funksjoner som er tilgjengelige for ende-til-ende-automatisering av leverandørfakturaer, også fakturaer som inneholder vedlegg.
 author: abruer
 manager: AnnBe
-ms.date: 08/22/2017
+ms.date: 05/22/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ba986afb5c17c7a317b47d1e9cf4ae57ac29da97
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 4560d7b61fa8f014f9a1185da087df8b1c8e61ba
+ms.sourcegitcommit: b7af921189048d9f2eb4d3fd57c704c742bc96e8
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2179278"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "3396015"
 ---
 # <a name="vendor-invoice-automation"></a>Automatisering av leverandørfaktura
 
@@ -39,7 +39,7 @@ Illustrasjonen nedenfor viser et eksempelscenario for integrasjon der Contoso sa
 
 ![Eksempelscenario for integrasjon](media/vendor_invoice_automation_01.png)
 
-Flere varianter av det forrige scenariet er mulig hvis fakturaintegrasjon er nødvendig. Migrering av data er et annet brukstilfelle der dette grensesnittet kan brukes til å opprette fakturaer og vedlegg.
+Flere varianter av det forrige scenarioet er mulig hvis fakturaintegrasjon er nødvendig. Migrering av data er et annet brukstilfelle der dette grensesnittet kan brukes til å opprette fakturaer og vedlegg.
 
 ### <a name="solution-components"></a>Løsningskomponenter
 
@@ -61,7 +61,7 @@ En datapakke er arbeidsenheten som må sendes, slik at fakturahoder, fakturalinj
 
 Dokumentvedlegg for leverandørfaktura er en ny dataenhet som lanseres som en del av denne funksjonen. Enheten for leverandørfakturahode er blitt endret slik at den støtter vedlegg. Enheten for leverandørfakturalinje er ikke endret for denne funksjonen.
 
-Dette emnet gir ikke en detaljert definisjon av en datapakke. Det forklarer heller ikke hvordan du oppretter datapakker. Hvis du vil ha denne informasjonen, kan du se [Rammeverk for dataenheter og pakker](../../dev-itpro/data-entities/data-entities-data-packages.md).
+Hvis du vil ha mer informasjon om datapakker, kan du se [Oversikt over databehandling](../../fin-ops-core/dev-itpro/data-entities/data-entities-data-packages.md). Hvis du vil ha informasjon om hvordan du oppretter datapakker ved hjelp av arbeidsområdet for databehandling, kan du se [Behandle og bruke datapakker i løsningen for Dynamics 365 Finance and Operations-apper](../../fin-ops-core/dev-itpro/lcs-solutions/process-data-packages-lcs-solutions.md).
 
 Bruk følgende fremgangsmåte for å raskt generere testdata som inkluderer fakturaer og vedlegg.
 
