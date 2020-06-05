@@ -17,16 +17,16 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: daf8bc65dc937962e2e08b6f25805ddd3b8ee3c5
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 86aed1b2071875117b74309030ac5e9008babdaf
+ms.sourcegitcommit: 89022f39502b19c24c0997ae3a01a64b93280f42
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3204292"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "3367413"
 ---
-[!include[banner](../includes/banner.md)]
-
 # <a name="set-up-cluster-picking"></a>Definere gruppeplukking
+
+[!include[banner](../includes/banner.md)]
 
 Dette emnet beskriver hvordan du gir arbeiderne mulighet til å bruke mobile enheter til å gruppere plukkarbeid til klynger, slik at de kan plukke varer fra ett sted for flere arbeidsordrer samtidig. Dette kalles *gruppeplukking*.
 
@@ -36,35 +36,35 @@ Etter at arbeidsordrer er frigitt til lageret, kan arbeideren bruke en mobilenhe
 
 Om nødvendig kan en arbeider sende en gruppe til en annen arbeider. Dette endrer gruppestatusen Sendt. Når arbeideren bruker en mobilenhet til å angi at plukk- og plasseringsarbeidet er fullført, må forsendelsen eller lasten bekreftes i klienten.
 
-## <a name="set-up-cluster-picking"></a>Definere gruppeplukking
+## <a name="enable-cluster-picking"></a>Aktivere gruppeplukking
 
 Hvis du vil aktivere gruppeplukking, må du konfigurere følgende:
 
--   **Gruppeprofiler** – Angi om du vil generere gruppe-IDer, antall stillinger som skal brukes, når du skal bryte grupper, og hvordan du deler opp og kontrollerer plukkarbeidet, automatisk.
+- **Gruppeprofiler** – Angi om du vil generere gruppe-IDer, antall stillinger som skal brukes, når du skal bryte grupper, og hvordan du deler opp og kontrollerer plukkarbeidet, automatisk.
 
--   **Arbeidsmaler** – Definer hvordan du oppretter plukkarbeidet for gruppeplukking.
+- **Arbeidsmaler** – Definer hvordan du oppretter plukkarbeidet for gruppeplukking.
 
--   **Lokasjonsdirektiver** – Angi hvor du vil plukke varer fra, og hvor du vil plassere dem.
+- **Lokasjonsdirektiver** – Angi hvor du vil plukke varer fra, og hvor du vil plassere dem.
 
--   **Menyelementer på mobilenheten** – Konfigurer et menyelement for mobilenhet til å bruke eksisterende arbeid styrt av gruppeplukking. Deretter må du legge til menyelementet på en mobilenhetsmeny slik at det blir vist på mobile enheter.
+- **Menyelementer på mobilenheten** – Konfigurer et menyelement for mobilenhet til å bruke eksisterende arbeid styrt av gruppeplukking. Deretter må du legge til menyelementet på en mobilenhetsmeny slik at det blir vist på mobile enheter.
 
--   **Lagerstyringsparametere** – Angi nummerserien du vil bruke hvis du vil generere identifikatorer for grupper.
+- **Lagerstyringsparametere** – Angi nummerserien du vil bruke hvis du vil generere identifikatorer for grupper.
 
 ## <a name="set-up-a-cluster-profile"></a>Definere en gruppeprofil
 
 Hvis du vil konfigurere en gruppeprofil, gjør du følgende:
 
-1.  Klikk **Lagerstyring** \> **Oppsett** \> **Mobilenhet** \> **Gruppeprofiler**.
+1. Klikk **Lagerstyring** \> **Oppsett** \> **Mobilenhet** \> **Gruppeprofiler**.
 
-2.  Klikk **Ny** for å opprette en ny profil.
+1. Klikk **Ny** for å opprette en ny profil.
 
-3.  Klikk **Opprett gruppe** og deretter, under **Gruppesortering**, klikker du **Ny** for å definere sorteringskriteriene for gruppen. Sorteringskriteriene bestemmer i hvilken rekkefølge arbeideren vil utføre plukkarbeidet. Du kan legge til så mange kriterier som nødvendig.
+1. Klikk **Opprett gruppe** og deretter, under **Gruppesortering**, klikker du **Ny** for å definere sorteringskriteriene for gruppen. Sorteringskriteriene bestemmer i hvilken rekkefølge arbeideren vil utføre plukkarbeidet. Du kan legge til så mange kriterier som nødvendig.
 
-4.  I **Serienummer**-feltet angir du et tall for å definere rekkefølgen som sorteringskriteriene behandles i.
+1. I feltet **Serienummer** angir du et tall for å definere rekkefølgen som sorteringskriteriene behandles i.
 
-5.  I **feltnavn**-feltet velger du feltet som bestemmer sorteringen. Hvis du for eksempel velger **WMSLocationId**-feltet, blir arbeidet sorteret etter lokasjon.
+1. I **feltnavn**-feltet velger du feltet som bestemmer sorteringen. Hvis du for eksempel velger **WMSLocationId**-feltet, blir arbeidet sorteret etter lokasjon.
 
-6.  I **Sortering**-feltet velger du ett av følgende alternativer.
+1. I **Sortering**-feltet velger du ett av følgende alternativer.
 
 | **Alternativ**     | **Beskrivelse**                                                                                                                                                                                                                    |
 |----------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -77,6 +77,6 @@ Når gruppeplukking brukes, er varebekreftelse avgjørende for å bekrefte varen
 
 ### <a name="set-up-item-verification-with-cluster-picking"></a>Definere varebekreftelse med gruppeplukking
 
-1.  Åpne oppsettskjemaet for arbeidsbekreftelse på et menyelement for mobilenhet: **Lagerstyring** \> **Lagerstyring** \> **Oppsett** \> **Mobilenhet** \> **Menyelementer på mobilenheten**.
+1. Åpne oppsettskjemaet for arbeidsbekreftelse på et menyelement for mobilenhet: **Lagerstyring** \> **Lagerstyring** \> **Oppsett** \>  **Mobilenhet** \> **Menyelementer på mobilenheten**.
 
-2.  Åpne **Arbeidsbekreftelsesoppsett** fra menyelementet på mobilenheten. Med alternativet **Produktbekreftelse** kan du bekrefte hver del av beholdningen fra den mobile enheten når den skannes.
+1. Åpne **Arbeidsbekreftelsesoppsett** fra menyelementet på mobilenheten. Med alternativet **Produktbekreftelse** kan du bekrefte hver del av beholdningen fra den mobile enheten når den skannes.

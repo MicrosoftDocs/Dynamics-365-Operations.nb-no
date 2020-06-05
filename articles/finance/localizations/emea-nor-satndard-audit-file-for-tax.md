@@ -1,9 +1,9 @@
 ---
 title: Standard revisjonsfil for avgift (SAF-T) for Norge
 description: Dette emnet forklarer hvordan du setter opp og generere standard revisjonsfil for avgift (SAF-T) for juridiske enheter som har en primær postadresse i Norge.
-author: LizaGolub
-ms.author: v-elgolu
-ms.date: 12/18/2019
+author: liza-golub
+ms.author: elgolu
+ms.date: 04/27/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.scope: Core, Operations
 ms.search.region: Norway
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: d4147632ccaf490bbfa75faab777f900782c26f4
-ms.sourcegitcommit: de715b7fda2f1548f2f443b9e0f6d09f5b881d61
+ms.openlocfilehash: f26d3d49af8ddf2d5f10c516e81a4d21727a9f72
+ms.sourcegitcommit: ce79fb570e299a26a644e29da7ceb5a57a1374e6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/09/2020
-ms.locfileid: "3033930"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "3295069"
 ---
 # <a name="standard-audit-file-for-tax-saf-t-for-norway"></a>Standard revisjonsfil for avgift (SAF-T) for Norge
 
@@ -88,7 +88,7 @@ Som dokumentasjonen forklarer, i Norsk SAF-T økonomiske data, må mva-koder som
 Hvis du vil knytte mva-koder som brukes i Finance, med norske standard mva-koder, følger du denne fremgangsmåten.
 
 1. I Finance går du til **Avgift** \> **Indirekte avgifter** \> **Merverdiavgift** \> **Mva-koder**.
-2. På siden **Mva-kode** velger du **Mva-kode**-posten, og deretter, på handlingsruten i kategorien **Mva-kode** i gruppen **Mva-kode**, velger du **Eksterne koder**.
+2. På siden **Mva-kode** velger du **Mva-kode**-posten, og deretter, i handlingsruten i kategorien **Mva-kode** i gruppen **Mva-kode**, velger du **Eksterne koder**.
 
     ![Eksterne koder-knappen i handlingsruten på siden for mva-kode](media/nor-saf-standard-tax-codes.jpg)
 
@@ -127,7 +127,23 @@ Hvis du vil generere rapporten **Norsk SAF-T økonomiske data**, følger du denn
     
     Hvis det ikke er merket av for **Finansdimensjoner**, vil bare finansdimensjonene som ble brukt i transaksjoner i løpet av rapporteringsperioden, rapporteres i **\<MasterFiles\>**-noden i rapporten.
 
-4. I feltet **Personalnummer** velger du en ansatt for å legge til den ansatte i **\<Bruker-ID\>**-noden i rapporten. Denne noden rapporterer IDen til brukeren som genererte revisjonsfilen.
+4. I feltet **Personalnummer** velger du en ansatt for å legge til den ansatte i noden **\<AuditFileSender\>** i rapporten. Denne noden rapporterer informasjon om kontaktpersonen for revisjonsfilen (fornavn og etternavn).
+
+5. Merk av for **Rapporter skatteinformasjon i merverdiavgiftsvaluta** hvis du vil rapportere skatteinformasjon i merverdiavgiftsvaluta.
+
+    Hvis det er merket av for **Rapporter skatteinformasjon i merverdiavgiftsvaluta**, rapporterer elementet **\<TaxInformation\>** følgende beløp i avgiftskodevalutaen:
+
+    - *GeneralLedgerEntries/Journal/Transaction/Line/TaxInformation/TaxBase*
+    - *GeneralLedgerEntries/Journal/Transaction/Line/TaxInformation/TaxAmount/Amount*
+
+
+    Hvis det ikke er merket av for **Rapporter skatteinformasjon i merverdiavgiftsvaluta**, rapporteres beløpene i elementet **\<TaxInformation\>** og alle beløpene i rapportene i regnskapsvalutaen.
+
+    Følgende beløp rapporteres alltid i dokumentvaluta:
+
+    - *GeneralLedgerEntries/Journal/Transaction/Line/TaxInformation/TaxAmount/CurrencyAmount*
+
+    Der *GeneralLedgerEntries/Journal/Transaction/Line/TaxInformation/TaxAmount/Currency* representerer dokumentvalutaen.
 
 Du kan også bruke filtre for feltene **Hovedkontoer** og **Oppføring i økonomijournal** ved hjelp av hurtigfanen **Poster som skal inkluderes** i dialogboksen for rapporten.
 

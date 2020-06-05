@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: c2e994d11bbd45907a48c1f3955fa751a676a327
-ms.sourcegitcommit: e69cfc74e9dbce64ae0e1ab7cd441e5ae6efd4c9
+ms.openlocfilehash: c985a0cb242fb6696b55a2514bd788ff4269f8ca
+ms.sourcegitcommit: def66a9dc7feadd33411248af2545ee4a9e27c4f
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "3353694"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "3385554"
 ---
 # <a name="create-a-leave-request-workflow"></a>Opprette en arbeidsflyt for permisjonsforespørsel
 
@@ -49,6 +49,7 @@ Du kan opprette en arbeidsflyt i Dynamics 365 Human Resources for å behandle pe
 
 Du kan bruke følgende dataelementer til å opprette betingede eller automatiske godkjenninger i arbeidsflyter for permisjons- og fraværsforespørsler:
 
+- **Beløp**
 - **Kommentar**
 - **Bedrift**
 - **Opprettet av**

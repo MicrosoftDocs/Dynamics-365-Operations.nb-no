@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: ab0a108b5c8b7f2f90a4d33d8a9ff088335c18d4
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: f8092ab7f960fd36515afb8448dfe1e262197595
+ms.sourcegitcommit: 8a2127c5af6cdbda30ccc1f9bef9bd4ab61e9e50
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3207671"
+ms.lasthandoff: 05/18/2020
+ms.locfileid: "3383142"
 ---
 # <a name="create-a-vendor-bank-account"></a>Opprette en leverandørbankkonto
 
@@ -31,7 +31,7 @@ Denne fremgangsmåten viser hvordan du oppretter en bankkonto for en leverandør
 
 1. Gå til **navigasjonsruten > Moduler > Innkjøp og leverandører > Leverandører > Alle leverandører**.
 2. Velg leverandøren du vil opprette en bankkonto for, og klikk deretter koblingen i feltet **Leverandørens konto-ID**.
-3. Klikk **Leverandør** i **handlingsruten**.
+3. I **handlingsruten** klikker du **Leverandør**.
 4. Klikk **Bankkontoer**.
 5. Klikk **Ny** i **handlingsruten**.
 6. Skriv inn en verdi i **Bankkonto**-feltet. Denne ID-en brukes for å identifisere bankkontoen på leverandørposten.  

@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2019-11-30
 ms.dyn365.ops.version: AX 10.0.7
-ms.openlocfilehash: 81c26b8a99f86d663d91ac4f549987262c0541ad
-ms.sourcegitcommit: 68092ed283bfbb7b6f611cce1b62c791f9b6a208
+ms.openlocfilehash: e412ccbc7c44d41e0a70ef8b5436901e01c671e6
+ms.sourcegitcommit: 8a2127c5af6cdbda30ccc1f9bef9bd4ab61e9e50
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/30/2020
-ms.locfileid: "3323537"
+ms.lasthandoff: 05/18/2020
+ms.locfileid: "3383694"
 ---
 # <a name="auto-firming-with-planning-optimization"></a>Automatisk autorisasjon med planleggingsoptimalisering
 
@@ -47,7 +47,7 @@ Følg denne fremgangs måten for å slå på automatisk autorisering.
 Autorisasjonshorisonten beregnes fremover fra og med kjøringsdatoen for hovedplanlegging. Den er definert av antall dager du angir. Du kan styre autorisasjonshorisonten på følgende måter:
 
 - Hvis du vil definere standard autorisasjonshorisonten for en dekningsgruppe, går du til **Hovedplanlegging** \> **Oppsett** \> **Dekning** \> **Dekningsgrupper**, og velger en dekningsgruppe. Deretter angir du antall dager i feltet **Horisont for automatisk autorisasjon (dager)** i hurtigfanen **Annet**.
-- Hvis du vil overskrive autorisasjonshorisonten som er definert for dekningsgruppen for en bestemt vare, går du til **Behandling av produktinformasjon** \> **Frigitt produkter**, og deretter velger du **Plan** og **Varedekning** fra handling ruten. I kategorien **Generelt** velger du deretter **Overstyr horisont** og angir antall dager i feltet **Horisont for automatisk autorisasjon (dager)**.
+- Hvis du vil overskrive autorisasjonshorisonten som er definert for dekningsgruppen for en bestemt vare, går du til **Behandling av produktinformasjon** \> **Frigitte produkter**, og deretter velger du **Plan** og **Varedekning** i handlingsruten. I kategorien **Generelt** velger du deretter **Overstyr horisont** og angir antall dager i feltet **Horisont for automatisk autorisasjon (dager)**.
 - Hvis du vil overskrive autorisasjonshorisonten som er definert for dekningsgruppen og varedekningen for en bestemt hovedplan, går du til **Hovedplanlegging** \> **Oppsett** \> **Hovedplanlegging**, og velger en hovedplan. Deretter setter du **Lås** til **Ja** i hurtigfanen **Horisont i antall dager**, og angir antall dager.
 
 Hvis automatisk autorisering er aktivert for en kjøring av hovedplanlegging som bruker planleggingsoptimalisering, utføres automatisk autorisering i henhold til oppsettet for automatisk autorisasjon. Hvis automatisk autorisering ikke er aktivert, eller hvis planlegging startes fra **Nettobehov** -siden, hoppes den automatiske autorisasjonsprosessen over.

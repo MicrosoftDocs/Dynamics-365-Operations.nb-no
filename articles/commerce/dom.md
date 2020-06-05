@@ -3,7 +3,7 @@ title: Behandling av distribuert ordre (DOM)
 description: Dette emnet beskriver DOM-funksjonaliteten i Dynamics 365 Commerce.
 author: josaw1
 manager: AnnBe
-ms.date: 10/14/2019
+ms.date: 05/22/2020
 ms.topic: index-page
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2018-11-15
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 7a584953b0f4961e25b59bca51aa3928b87b2c7c
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 1121cc89b278c3694d0bbd667f1a540d17f4d180
+ms.sourcegitcommit: b7af921189048d9f2eb4d3fd57c704c742bc96e8
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3004326"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "3396038"
 ---
 # <a name="distributed-order-management-dom"></a>Behandling av distribuert ordre (DOM)
 
@@ -37,7 +37,7 @@ DOM optimaliserer oppfyllelse av ordrer på tvers av et avansert nettverk av sys
 
 Illustrasjonen nedenfor viser livssyklusen til en salgsordre i et DOM-system.
 
-![Livssyklus for salgsordre i konteksten til DOM](./media/flow.png "Livssyklus for salgsordre i konteksten til DOM")
+![![Livssyklus for salgsordre i konteksten til DOM](./media/flow.png "Livssyklus for salgsordre i konteksten til DOM")](./media/flow.png "Sales order lifecycle in the context of DOM")
 
 ## <a name="set-up-dom"></a>Definer DOM
 
@@ -83,6 +83,15 @@ Illustrasjonen nedenfor viser livssyklusen til en salgsordre i et DOM-system.
     2. Velg **Ny**, og angi et navn og en beskrivelse for den nye gruppen.
     3. Velg **Lagre**.
     4. Velg **Legg til linje** for å legge til ett lokasjon i gruppen. Velg eventuelt **Legg til linjer** for å legge til flere lokasjoner.
+    
+    > [!NOTE]
+    > I Commerce versjon 10.0.12 og høyere må **muligheten til å angi lokasjoner, som Forsendelse eller Plukking, som er aktivert i en oppfyllelsesgruppe**, være aktivert i arbeidsområdet **Funksjonsbehandling**.
+    >
+    > Denne funksjonen legger til nye konfigurasjoner på siden **Oppfyllelsesgruppe** slik at du kan definere om lageret kan brukes til forsendelse, eller om kombinasjonen lager/butikk kan brukes til forsendelse, plukking eller begge deler. 
+    >
+    > Hvis du aktiverer funksjonen, oppdateres alternativene som er tilgjengelige for lokasjonsvalg når du oppretter plukk- eller forsendelsesordrer på salgsstedet.
+    >
+    > Når du aktiverer funksjonen, blir også sider i salgsstedsoperasjoner oppdatert når operasjonen Send alle eller Send valgte blir valgt.
 
 9. Hvis du vil definere regler, går du til **Detaljhandel og handel \> Behandling av distribuert ordre \> Oppsett \> Administrer regler**. Følgende DOM-regler støttes for øyeblikket:
 
@@ -134,7 +143,17 @@ Illustrasjonen nedenfor viser livssyklusen til en salgsordre i et DOM-system.
     2. Velg **Ny**.
     3. Angi verdier i feltene **Profil** og **Beskrivelse**.
     4. Velg alternativet **Bruk resultat automatisk**. Hvis du setter dette alternativet til **Ja**, blir resultatene av DOM-kjøringen for profilen brukt automatisk på salgsordrelinjer. Hvis du setter det til **Nei**, kan resultatene bare vises i oppfyllelsesplanen. De brukes ikke på salgsordrelinjene.
-    5. Hvis du vil at DOM-profilen skal kjøres for ordrer som har alle salgsordreopprinnelser, selv ordrer der salgsordreopprinnelsen ikke er definert, setter du alternativet **Behandle ordrer med tom salgsopprinnelse** til **Ja**. Hvis du vil kjøre profilen for bare noen få salgsordreopprinnelser, kan du definere dem på siden **Salgsopprinnelser**, som forklart senere.
+    5. Hvis du vil at DOM-profilen skal kjøres for ordrer som har alle salgsordreopprinnelser, inkludert ordrer der salgsordreopprinnelsen ikke er definert, setter du alternativet **Behandle ordrer med tom salgsopprinnelse** til **Ja**. Hvis du vil kjøre profilen for bare noen få salgsordreopprinnelser, kan du definere dem på siden **Salgsopprinnelser**, som forklart senere.
+
+    > [!NOTE]
+    > I Commerce versjon 10.0.12 og høyere må **muligheten til å tilordne en oppfyllelsesgruppe til en oppfyllelsesprofil** være aktivert i arbeidsområdet **Funksjonsbehandling**. 
+    >
+    > Denne funksjonen legger til en ny konfigurasjon på siden **Oppfyllelsesprofil** som kan knyttes til én oppfyllelsesgruppe. 
+    >
+    > Hvis du velger oppfyllelsesgruppen, vil DOM-reglene for den oppfyllelsesprofilen fungere effektivt i forhold til forsendelseslagrene som er inkludert i oppfyllelsesgruppen. 
+    > 
+    > Hvis du vil bruke denne funksjonen effektivt, må du kontrollere at det finnes én oppfyllelsesgruppe som inneholder alle forsendelsene, og deretter knytter du denne oppfyllelsesgruppen til oppfyllelsesprofilen.
+    
     6. Velg **Legg til** i hurtigkategorien **Juridiske enheter**, og velg deretter en juridisk enhet.
     7. Velg **Legg til** i hurtigkategorien **Regler**, og velg deretter regelen som skal kobles til profilen.
     8. Gjenta de forrige to trinnene til alle de nødvendige reglene er knyttet til profilen.
@@ -179,7 +198,7 @@ Under behandling vil DOM vurdere ordren og ordrelinjene som beskrevet her:
 
 Etter at DOM har tatt i bruk reglene, lagerbegrensningene og optimaliseringen, velges lokasjonen som er nærmest kundens leveringsadresse.
 
-![Salgsordrekriterier](./media/ordercriteria.png "Salgsordrekriterier")
+![![Salgsordrekriterier](./media/ordercriteria.png "Salgsordrekriterier")](./media/ordercriteria.png "Sales order criteria")
 
 ## <a name="results-of-dom-runs"></a>Resultater av DOM-kjøringer
 

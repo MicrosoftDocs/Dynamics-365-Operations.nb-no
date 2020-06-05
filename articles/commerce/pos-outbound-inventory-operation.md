@@ -3,7 +3,7 @@ title: Utgående lageroperasjon på salgsstedet
 description: Dette emnet beskriver funksjonene til utgående lageroperasjoner på salgsstedet (POS).
 author: hhaines
 manager: annbe
-ms.date: 03/02/2020
+ms.date: 05/14/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 26d8d67ac6d2fde0753104483fd2127f9acbaa05
-ms.sourcegitcommit: 437170338c49b61bba58f822f8494095ea1308c2
+ms.openlocfilehash: 22f057c20898bb4b4c34e38d62313d2634a33511
+ms.sourcegitcommit: 3b6fc5845ea2a0de3db19305c03d61fc74f4e0d4
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "3123928"
+ms.lasthandoff: 05/18/2020
+ms.locfileid: "3384135"
 ---
 # <a name="outbound-inventory-operation-in-pos"></a>Utgående lageroperasjon på salgsstedet
 
@@ -118,6 +118,18 @@ I visningen **Fullstendig ordreliste** kan du manuelt velge en linje i listen og
 
 Valideringer skjer under mottaksprosessen for dokumentlinjene. De omfatter valideringer for overlevering. Hvis en bruker prøver å motta mer beholdning enn det som ble bestilt på en bestilling, men enten overlevering ikke er konfigurert, eller hvis antallet som er mottatt, overskrider den overleveringstoleransen som er konfigurert for bestillingslinjen, får brukeren en feil og ikke tillatt å motta det overflødige antallet.
 
+### <a name="underdelivery-close-lines"></a>Lukke linjer for underlevering
+
+I Commerce versjon 10.0.12 ble funksjoner lagt til slik at POS-brukere kan lukke eller avbryte gjenværende antall under forsendelse av utgående ordrer hvis det utgående lageret avgjør at det ikke kan levere det fullstendige antallet som ble forespurt. Antall kan også lukkes eller annulleres senere. Hvis du vil bruke denne funksjonen, må firmaet konfigureres til å tillate underlevering av overføringsordrer. I tillegg må en underleveringsprosent være definert for overføringsordrelinjen.
+
+Hvis du vil konfigurere firmaet til å tillate underlevering av overføringsordrer, går du til **Lagerstyring \> Oppsett \> Parametere for beholdnings- og lagerstyring** i Commerce Headquarters. På siden **Parametere for beholdnings- og lagerstyring** aktiverer du parameteren **Godta underlevering** i kategorien **Overføringsordrer**. Deretter kjører du distribusjonsplanjobb **1070** for å synkronisere parameterendringene i lagringskanalen.
+
+Underleveringsprosenter for en overføringsordrelinje kan forhåndsdefineres for produkter som en del av produktkonfigurasjonen i Commerce Headquarters. De kan også angis eller overskrives på en bestemt overføringsordrelinje via Commerce Headquarters.
+
+Når en organisasjon har fullført konfigurasjon av underlevering for overføringsordre, vil brukerne se et nytt alternativ kalt **Lukk gjenværende antall** i ruten **Detalj** når de velger en utgående overføringsordrelinje via operasjonen **Utgående operasjon** i POS. Når brukere fullfører forsendelsen ved hjelp av operasjonen **Fullfør oppfyllelse**, kan de sende en forespørsel til Commerce Headquarters for å annullere det gjenstående antallet som ikke er levert. Hvis en bruker velger å lukke restantallet, utfører Commerce en validering for å kontrollere at antallet som avbrytes, er innenfor toleransen for underleveringsprosent som er definert på overføringsordrelinjen. Hvis toleransen for underlevering er overskredet, mottar brukeren en feilmelding og kan ikke lukke det gjenstående antallet før det tidligere sendte antallet og "send nå"-antallet oppfyller eller overskrider toleransen for underlevering.
+
+Når forsendelsen er synkronisert med Commerce Headquarters, oppdateres antallene som er definert i feltet **Send nå** for overføringsordrelinjen i POS, til statusen Sendt i Commerce Headquarters. Ethvert antall som ikke er levert, og som tidligere hadde vært vurdert som "Send gjenværende" (det vil si antall som vil bli levert senere), regnes i stedet som annullert antall. Antallet "Send gjenværende" for overføringsordrelinjen er satt til **0** (null), og linjen regnes som fullstendig levert.
+
 ### <a name="shipping-location-controlled-items"></a>Sende lokasjonsstyrte varer
 
 Hvis varene som sendes, er lokasjonsstyrt, kan brukere velge lokasjonen der de vil levere beholdningen under forsendelsesprosessen. Vi anbefaler at du konfigurerer en standard utsendelsesplassering for butikklageret, slik at denne prosessen blir mer effektiv. Selv om en standard lokasjon er konfigurert, kan brukere overstyre utsendelseslokasjonen på valgte linjer etter behov.
@@ -146,7 +158,7 @@ Når det brukes asynkron dokumentbehandling, sendes mottaket via et asynkront do
 
 ## <a name="create-an-outbound-transfer-order"></a>Opprette en utgående overføringsordre
 
-Fra POS kan brukere opprette nye overføringsordredokumenter. Hvis du vil starte prosessen, velger du **Ny** på applinjen mens du er i hoveddokumentlisten **Utgående operasjon**. Du blir deretter bedt om å velge et lager eller en butikk under **Overfør til** som det gjeldende lageret skal sende beholdningen til. Verdiene er begrenset til valget som er definert i konfigurasjonen av butikkens oppfyllingsgruppe. I en utgående overføringsforespørsel vil gjeldende butikk alltid være **Overfør fra**-lageret for overføringsordren. Denne verdien kan ikke endres.
+Fra POS kan brukere opprette nye overføringsordredokumenter. Hvis du vil starte prosessen, velger du **Ny** på applinjen mens du er i hoveddokumentlisten **Utgående operasjon**. Du blir deretter bedt om å velge et lager eller en butikk under **Overfør til** som det gjeldende lageret skal sende beholdningen til. Verdiene er begrenset til valget som er definert i konfigurasjonen av butikkens oppfyllelsesgruppe. I en utgående overføringsforespørsel vil gjeldende butikk alltid være **Overfør fra**-lageret for overføringsordren. Denne verdien kan ikke endres.
 
 Du kan angi verdier i feltene **Forsendelsesdato**, **Mottaksdato** og **Leveringsmåte** etter behov. Du kan også legge til et notat som skal lagres sammen med overføringsordrehodet, som et vedlegg til dokumentet i Commerce Headquarters.
 

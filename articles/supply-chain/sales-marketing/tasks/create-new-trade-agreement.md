@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9aa46f959c35c209791457aa697ab829264b3275
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 1642da7b06363d1f704e51276b5cb36823707231
+ms.sourcegitcommit: 8a2127c5af6cdbda30ccc1f9bef9bd4ab61e9e50
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3211957"
+ms.lasthandoff: 05/18/2020
+ms.locfileid: "3383433"
 ---
 # <a name="create-a-new-trade-agreement"></a>Opprette en ny forretningsavtale
 
@@ -34,7 +34,7 @@ Denne fremgangsmåten viser hvordan du oppretter en forretningsavtale der du reg
 2. Klikk på **Ny**.
 3. Klikk på rullegardinknappen i **Navn**-feltet for å åpne oppslaget.
 4. Finn og velg ønsket post i listen.
-5. I **Handlingsrute** klikker du på **Linjer**.
+5. I **Handlingsrute** klikker du **Linjer**.
 6. Velg Tabell i **Kontokode**-feltet.
     
     I dette eksemplet oppdaterer du prisen for en bestemt kunde, som betyr at du må velge Tabell. Hvis du oppdaterer produktets listepris, velger du Alle, slik at den nye prisen gjelder for alle kunder. Hvis du skal skille priser mellom ulike kundesegmenter, velger du deretter Gruppe. For å merke Gruppe må du ha definert kundeprisgrupper.  

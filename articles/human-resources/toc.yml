@@ -5,6 +5,8 @@
       items:
         - name: Nyheter eller endringer i Human Resources
           href: hr-admin-whats-new.md
+        - name: 14. mai 2020
+          href: hr-whats-new-2020-05-14.md
         - name: 1. mai 2020
           href: hr-whats-new-2020-05-01.md
         - name: 13. april 2020
@@ -111,14 +113,16 @@
               href: ../fin-ops-core/fin-ops/organization-administration/tasks/set-users-preferred-time-zone.md?toc=/dynamics365/human-resources/toc.json
             - name: Forstå Lifecycle Services
               href: ../fin-ops-core/dev-itpro/lifecycle-services/lcs-works-lcs.md?toc=/dynamics365/human-resources/toc.json
+        - name: Human Resources-app i Teams
+          href: hr-admin-teams-leave-app.md
         - name: Dokumentasjonsressurser
           items:
             - name: Hjelpesystem
               href: ../fin-ops-core/fin-ops/get-started/help-overview.md?toc=/dynamics365/human-resources/toc.json
             - name: Koble til hjelpesystemet
               href: ../fin-ops-core/fin-ops/get-started/help-connect.md?toc=/dynamics365/human-resources/toc.json
-            - name: Koble til et tilpasset hjelpeområde
-              href: ../fin-ops-core/fin-ops/get-started/help-custom.md?toc=/dynamics365/human-resources/toc.json
+            - name: Oversikt over tilpasset hjelp
+              href: ../fin-ops-core/dev-itpro/help/custom-help-overview.md?toc=/dynamics365/human-resources/toc.json
             - name: Vise og eksportere feltbeskrivelser
               href: ../fin-ops-core/fin-ops/get-started/view-export-field-descriptions.md?toc=/dynamics365/human-resources/toc.json
             - name: Oppgaveregistrering
@@ -515,6 +519,8 @@
               href: hr-employee-self-service-request-time-off.md
             - name: Vise team- og firmakalendere
               href: hr-employee-self-service-calendar.md
+        - name: Behandle permisjonsforespørsler i Teams
+          href: hr-teams-leave-app.md
         - name: Utvikle ansatte
           items:
             - name: Oversikt over ytelsesstyring

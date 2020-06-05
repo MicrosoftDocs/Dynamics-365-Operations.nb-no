@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d10904414b8c35960e421caeb7cae838edd312dd
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 1503ef3646657a4b7bb7e240144af2ac559a62d0
+ms.sourcegitcommit: 8a2127c5af6cdbda30ccc1f9bef9bd4ab61e9e50
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3217063"
+ms.lasthandoff: 05/18/2020
+ms.locfileid: "3383027"
 ---
 # <a name="define-cycle-counting"></a>Definere syklustelling  
 
@@ -49,7 +49,7 @@ Syklustelling er en lagerprosess som du kan bruke til å overvåke varer i lager
 10. Velg en verdi i feltet **Arbeidsklasse-ID**.
 11. Klikk på **Ny**.
 12. Velg en verdi i feltet **Arbeidsklasse-ID**.
-13. Klikk på **Lagre** i **handlingsruten**.
+13. Klikk **Lagre** i **handlingsruten**.
 14. Lukk siden.
 15. I **navigasjonsruten** går du til **Moduler > Lagerstyring > Oppsett > Mobilenhet > Meny på mobilenheten**.
 16. Finn og velg ønsket post i listen.

@@ -1,5 +1,5 @@
 ---
-title: Komme i gang med kostnadsregnskaptjenesten
+title: Komme i gang med kostnadsregnskaptjenesten (privat forhåndsversjon)
 description: Dette emnet inneholder lisensdetaljer og installasjonsinstruksjoner for tjenesten for kostnadsregnskap.
 author: AndersGirke
 manager: tfehr
@@ -15,14 +15,14 @@ ms.search.region: Global
 ms.author: aevengir
 ms.search.validFrom: 2020-04-17
 ms.dyn365.ops.version: Release 10.0.12
-ms.openlocfilehash: cbbce7eaac264973bf0b95ad5175bf70ed2b4ae9
-ms.sourcegitcommit: e06da171b9cba8163893e30244c52a9ce0901146
+ms.openlocfilehash: a82af9e8ec1806f470103897389d0316d33a4a06
+ms.sourcegitcommit: 7fec9dc5297ed6e687d4a0dff099922d59d6a830
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "3276948"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "3372742"
 ---
-# <a name="get-started-with-the-cost-accounting-service"></a>Komme i gang med kostnadsregnskaptjenesten
+# <a name="get-started-with-the-cost-accounting-service-private-preview"></a>Komme i gang med kostnadsregnskaptjenesten (privat forhåndsversjon)
 
 [!INCLUDE [banner](../includes/banner.md)]
 
@@ -43,16 +43,22 @@ Kostregnskapstjenesten er et tillegg. Hvis du vil gjøre funksjonene tilgjengeli
 
 Tjenesten for kostnadsregnskap støtter for øyeblikket ikke alle funksjonene for kostnadsstyring som er innebygd i Dynamics 365 Supply Chain Management. Det er derfor viktig at du vurderer om funksjonssettet som for øyeblikket er tilgjengelig, oppfyller kravene dine.
 
-## <a name="licensing"></a>Lisensiering
-
-Kostregnskap-tjenesten lisensieres sammen med standardfunksjonene for lagerregnskap som er tilgjengelig for Supply Chain Management. Du trenger ikke kjøpe en tilleggslisens for å bruke tjenesten for kostnadsregnskap.
-
-## <a name="install-the-add-in"></a>Installer tillegget
+## <a name="how-to-get-the-cost-accounting-service-private-preview"></a><a name="sign-up"></a>Få tilgang til kostnadsregnskaptjenesten (privat forhåndsversjon)
 
 > [!IMPORTANT]
 > Hvis du vil bruke tjenesten for kostnadsregnskap, må du ha et LCS-aktivert miljø med høy tilgjengelighet (ikke et OneBox-miljø), og du må kjøre Dynamics 365 Supply Chain Management versjon 10.0.11 eller senere.
 
+Hvis du vil registrere deg for den private forhåndsversjonen av kostregnskapstjenesten, kan du sende ID-en din for LCS-miljø via e-post til [Kostnadsregnskaptjeneste (privat forhåndsversjon)](mailto:aevengir@microsoft.com?subject=Cost%20accounting%20service%20%28private%20preview%29). Når du er godkjent for programmet, sender vi deg en oppfølging via e-post som inneholder en betanøkkel for kostnadsregnskapstjenesten. Når du mottar betanøkkelen, kan du fortsette ved å [installere tillegget](#install).
+
+## <a name="licensing"></a>Lisensiering
+
+Kostregnskap-tjenesten lisensieres sammen med standardfunksjonene for lagerregnskap som er tilgjengelig for Supply Chain Management. Du trenger ikke kjøpe en tilleggslisens for å bruke tjenesten for kostnadsregnskap.
+
+## <a name="install-the-add-in"></a><a name="install"></a>Installer tillegget
+
 Hvis du vil bruke kostregnskap-tjenesten, kan du installere tillegget Supply Chain Management, som beskrevet i fremgangsmåten nedenfor.
+
+1. [Registrer deg](#sign-up) for kostnadsregnskaptjenesten (privat forhåndsversjon).
 
 1. Logg på LCS.
 
@@ -96,9 +102,9 @@ Slik definerer du integreringen mellom kostregnskap-tjenesten og Dynamics 365 Su
 
 1. I feltet **Program-ID** angir du følgende kode:<br> 08231eb2-a501-4edb-b3c5-aede5e5e0c3f
 
-1. I feltet **Datatjenestesluttpunkt** angir du følgende URL-adresse:<br>https://operationsdataservice.operations365.dynamics.com/
+1. I feltet **Datatjenesteendepunkt** angir du følgende URL-adresse:<br>https://operationsdataservice.operations365.dynamics.com/
 
-1. I feltet **Sluttpunkt for tjeneste for kostnadsregnskap** angir du følgende URL-adresse:<br>https://costaccountingservice.operations365.dynamics.com/
+1. I feltet **Endepunkt for tjeneste for kostnadsregnskap** angir du følgende URL-adresse:<br>https://costaccountingservice.operations365.dynamics.com/
 
 1. Kostregnskap-tjenesten er nå klar for bruk.
 

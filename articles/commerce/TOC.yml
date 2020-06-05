@@ -2,7 +2,7 @@
   items:
     - name: Dynamics 365 Commerce
       items:
-        - name: Dynamics 365 Commerce
+        - name: Startside for Dynamics 365 Commerce
           href: index.md
         - name: Komme i gang
           items:
@@ -79,7 +79,7 @@
                 - name: 'Installasjon, konfigurasjon og overgang for distribusjon i faser (N-1)'
                   href: dev-itpro/n-1-installation-configuration.md
                 - name: Oppgradere utvidelsen for Retail-kanalen til siste SDK for Retail
-                  href: dev-itpro/retailSDK-update.md
+                  href: dev-itpro/RetailSDK-update.md
             - name: Nyheter eller endringer
               items:
                 - name: Nyheter eller endringer i Finance and Operations-apper
@@ -112,8 +112,8 @@
                   href: ../fin-ops-core/fin-ops/get-started/help-overview.md?toc=/dynamics365/commerce/toc.json
                 - name: Koble til hjelpesystemet
                   href: ../fin-ops-core/fin-ops/get-started/help-connect.md?toc=/dynamics365/commerce/toc.json
-                - name: Koble til et tilpasset hjelpeområde
-                  href: ../fin-ops-core/fin-ops/get-started/help-custom.md?toc=/dynamics365/commerce/toc.json
+                - name: Oversikt over tilpasset hjelp
+                  href: ../fin-ops-core/dev-itpro/help/custom-help-overview.md?toc=/dynamics365/commerce/toc.json
                 - name: Vise og eksportere feltbeskrivelser
                   href: ../fin-ops-core/fin-ops/get-started/view-export-field-descriptions.md?toc=/dynamics365/commerce/toc.json
                 - name: Oppgaveregistrering
@@ -499,7 +499,9 @@
                     - name: Betalingskobling for Ayden
                       href: dev-itpro/adyen-connector.md
                     - name: Lagre betalingsmåter på nett med Adyen-koblingen
-                      href: dev-itpro/adyen-connector-listpi.md
+                      href: dev-itpro/adyen-connector-listPI.md
+                    - name: Sterk kundegodkjenning (SCA) ved hjelp av Adyen-koblingen
+                      href: adyen_redirect.md
                     - name: Sømløs bryter for frakoblet modus for gavekort- og kreditnotaoperasjoner
                       href: dev-itpro/seamless-offline-improvements.md
                     - name: Definere scenarier for betaling av faktura
@@ -510,6 +512,8 @@
                       href: omni-channel-payments.md
                     - name: Vanlige spørsmål om betalinger
                       href: dev-itpro/payments-retail.md
+                - name: Behandle Bing-kart for organisasjonen
+                  href: dev-itpro/manage-bing-maps.md
         - name: Bruke produktene og tjenestene dine i varehandel
           items:
             - name: 'Kategorier, produkter og sortimenter'
@@ -824,6 +828,8 @@
                   href: search-engine-optimization-considerations.md
                 - name: Behandle policy for innholdssikkerhet (CSP)
                   href: manage-csp.md
+                - name: Velge bort samling for webaktivitetshendelse
+                  href: web-activity-opt-out.md
             - name: Administrere områdeinnholdet ditt
               items:
                 - name: Måter å legge til innhold på
@@ -1260,19 +1266,19 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-count.md?toc=/dynamics365/commerce/toc.json
                         - name: EmptyList
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-emptylist.md?toc=/dynamics365/commerce/toc.json
-                        - name: Opplisting
+                        - name: Enumerate
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-enumerate.md?toc=/dynamics365/commerce/toc.json
                         - name: Filter
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-filter.md?toc=/dynamics365/commerce/toc.json
-                        - name: Første
+                        - name: First
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-first.md?toc=/dynamics365/commerce/toc.json
                         - name: FirstOrNull
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-firstornull.md?toc=/dynamics365/commerce/toc.json
-                        - name: Indeks
+                        - name: Index
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-index.md?toc=/dynamics365/commerce/toc.json
                         - name: IsEmpty
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-isempty.md?toc=/dynamics365/commerce/toc.json
-                        - name: Liste
+                        - name: List
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-list.md?toc=/dynamics365/commerce/toc.json
                         - name: ListJoin
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-listjoin.md?toc=/dynamics365/commerce/toc.json
@@ -1282,9 +1288,9 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-listoffirstitem.md?toc=/dynamics365/commerce/toc.json
                         - name: OrderBy
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-orderby.md?toc=/dynamics365/commerce/toc.json
-                        - name: Tilbakefør
+                        - name: Reverse
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-reverse.md?toc=/dynamics365/commerce/toc.json
-                        - name: Del
+                        - name: Split
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-split.md?toc=/dynamics365/commerce/toc.json
                         - name: SplitList
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-splitlist.md?toc=/dynamics365/commerce/toc.json
@@ -1714,6 +1720,8 @@
               href: ../fin-ops-core/dev-itpro/office-integration/customize-open-office-menu.md?toc=/dynamics365/commerce/toc.json
             - name: Konfigurere og sende e-post
               href: ../fin-ops-core/fin-ops/organization-administration/configure-email.md?toc=/dynamics365/commerce/toc.json
+            - name: Opprette e-postmaler for transaksjonshendelser
+              href: email-templates-transactions.md
             - name: Utvikle e-posterfaringer
               href: ../fin-ops-core/dev-itpro/dev-tools/sysmailer-develop.md?toc=/dynamics365/commerce/toc.json
             - name: Feilsøke Office-integreringen
@@ -2116,6 +2124,8 @@
                   href: dev-itpro/async-commerce-extension.md
                 - name: Forhåndsutvidede kolonner i kanaldatabasen
                   href: dev-itpro/extended-columns.md
+                - name: Utvide Commerce Data Exchange – sanntidstjeneste
+                  href: dev-itpro/extend-commerce-data-exchange.md
             - name: Utvidelsesmuligheter for betalingskobling
               items:
                 - name: Opprette en betalingsintegrering for en betalingsterminal

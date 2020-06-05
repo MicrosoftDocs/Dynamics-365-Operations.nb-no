@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: d2c13ed20ec86108bcb9edc0d20d53ff98732b9d
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 68624a0288f9eaaf8f74b361bb308b8ca3c03b29
+ms.sourcegitcommit: 8a2127c5af6cdbda30ccc1f9bef9bd4ab61e9e50
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3204752"
+ms.lasthandoff: 05/18/2020
+ms.locfileid: "3383182"
 ---
 # <a name="create-a-request-for-quotation"></a>Opprette en tilbudsforespørsel
 
@@ -67,7 +67,7 @@ Når du har angitt den grunnleggende informasjonen om tilbudsforespørselen din,
 7. Angi eller velg en verdi i **Leverandørkonto**-feltet. Når du har valgt en leverandør, blir statusen opprettet. Dette betyr at leverandørinformasjonen er lagret i tilbudsforespørselen, men at du ikke har sendt tilbudsforespørselen til leverandøren. Du kan legge til en leverandør i en tilbudsforespørsel uansett leverandørstatus.  
 
 ## <a name="send-the-rfq-to-vendors"></a>Sende tilbudsforespørselen til leverandører
-1. I **Handlingsrute** klikker du på **Send**. På siden Sender tilbudsforespørsel kontrollerer du at leverandørene i listen er de du vil skal motta tilbudsforespørselen.  
+1. I **handlingsruten** klikker du **Send**. På siden Sender tilbudsforespørsel kontrollerer du at leverandørene i listen er de du vil skal motta tilbudsforespørselen.  
 2. Klikk **Skriv ut**. Denne dialogboksen lar deg skrive ut tilbudsforespørselen. Hvis du velger å skrive ut et svararket, defineres innholdet i dette i Innkjøp og leverandører-parametere. Hvis du vil velge hvordan du skriver ut svarark når du har åpnet dialogboksen Skriv ut, klikker du Avanserte utskriftsalternativer. Én tilbudsforespørsel skrives ut for hver leverandør, som inneholder linjene har statusen Opprettet eller Sendt. Annullerte linjer og linjer med registrerte svar, vil ikke bli skrevet ut.   
 3. Klikk på **Avbryt**.
 4. Klikk **OK**.

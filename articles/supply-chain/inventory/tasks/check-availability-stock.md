@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: ShylaThompson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: e76c123ffbeb33cbc3ba01b4b2758208ed0c445f
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 66b6b365958820a76f733df5eb2aabf6c3c4ebac
+ms.sourcegitcommit: 8a2127c5af6cdbda30ccc1f9bef9bd4ab61e9e50
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3204223"
+ms.lasthandoff: 05/18/2020
+ms.locfileid: "3383510"
 ---
 # <a name="check-the-availability-of-stock"></a>Kontrollere lagertilgjengeligheten
 
@@ -35,7 +35,7 @@ Denne fremgangsmåten viser hvordan du kontrollerer beholdning og fysisk lagerbe
 2. Velg **Varenummer**-raden. Hvis du vil spørre om lagerbeholdning etter varenummer, merker du raden der tabellen er satt til **Lagerbeholdning** og Felt er satt til **Varenummer**.
 3. Velg varen du vil utføre spørringer for, i **Kriterier**-feltet. Hvis du bruker demonstrasjonsdatafirmaet USMF, kan du velge M9201.  
 4. Klikk **OK**.
-5. Klikk på **Dimensjoner** i **handlingsruten**. I kategorien **Dimensjoner** kan du velge hvor mange detaljer du vil se om lagerbeholdningen. Hvis du trenger data som er relatert til reservering, må du vise alle lagerdimensjoner for varer som bruker avanserte lagerprosesser (WHS).
+5. Klikk på **Dimensjoner** i **handlingsruten**. I kategorien **Dimensjoner** kan du velge hvor mange detaljer du vil se om lagerbeholdningen. Hvis du trenger data som er relatert til reservering, må du vise alle lagerdimensjoner for varer som bruker avanserte lagerprosesser (WMS).
 6. Klikk **OK**.
 7. Klikk på **Relatert informasjon** i **handlingsruten**. Hvis du ikke ser dette alternativet, må du kanskje klikke ellipseknappen (...) for å se alternativer for flere handlinger.
 8. Klikk på **Forsyningsoversikt**. Kategorien **Forsyningsoversikt** gir forsyningsinformasjonen for en bestemt vare, for eksempel antallet på lager, leveringstid og leverandørinformasjon.  

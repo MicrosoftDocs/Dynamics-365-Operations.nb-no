@@ -1,9 +1,9 @@
 ---
-title: Konvertering for måleenhet per produktvariant
-description: Dette emnet forklarer hvordan konverteringer av måleenheter kan defineres for produktvarianter.
+title: Konvertering av måleenhet per produktvariant
+description: Dette emnet forklarer hvordan du definerer måleenhetskonverteringer for produktvarianter. Det inneholder et eksempel på oppsettet.
 author: johanhoffmann
 manager: tfehr
-ms.date: 01/06/2020
+ms.date: 05/11/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,71 +17,93 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-04-01
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: e50be7fa6fa686a90b2dd5c5200c881e4629f019
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 71d35d47a703f0931ba3b4ab5df21c7199c7ea5b
+ms.sourcegitcommit: 92611ec276da6f7211d722cfcd66739b612296dc
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3204499"
+ms.lasthandoff: 05/18/2020
+ms.locfileid: "3382803"
 ---
-# <a name="unit-of-measure-conversion-per-product-variant"></a>Konvertering for måleenhet per produktvariant
+# <a name="unit-of-measure-conversion-per-product-variant"></a>Konvertering av måleenhet per produktvariant
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet forklarer hvordan konverteringer av måleenheter kan defineres for produktvarianter. Det inneholder et eksempel på oppsettet.
+Dette emnet forklarer hvordan du konfigurerer måleenhetskonverteringer for ulike produktvarianter.
 
-Denne funksjonen gjør det mulig for firmaer å definere ulik enhetsomregning mellom variantene av samme produkt. Eksemplet nedenfor brukes i dette emnet. Et firma selger t-skjorter i størrelsene Liten, Middels, Stor og Ekstra stor. T-skjorten er definert som et produkt, og de ulike størrelsene er definert som varianter av produktet. T-skjortene pakkes i bokser, og det kan være fem t-skjorter i en boks, bortsett fra ekstra stor-størrelsen der det bare er plass til fire t-skjorter. Firmaet ønsker å spore de ulike variantene av t-skjorter i enheten **Stykker**, men selger t-skjortene i enheten **Boks**. Konverteringen mellom lagerenheten og salgsenheten er 1 boks = 5 stykker, med unntak av varianten ekstra stor, der konverteringen er 1 boks = 4 stykker.
+I stedet for å opprette flere individuelle produkter som må vedlikeholdes, kan du bruke produktvarianter til å opprette variasjoner av ett produkt. En produktvariant kan for eksempel være en T-skjorte av en gitt størrelse og farge.
 
-### <a name="set-up-a-product-for-unit-conversion-per-variant"></a>Definere et produkt for enhetsomregning per variant
+Tidligere kunne enhetskonverteringer bare defineres for produktstandarden. Derfor har alle produktvarianter samme enhetskonverteringsregler. Når funksjonen *Måleenhetskonverteringer for produktvarianter* er aktivert, kan du nå definere enhetskonverteringer mellom de forskjellige skjortenes størrelser og boksene som brukes for pakking, hvis T-skjorter blir solgt i bokser, og antall t-skjorter som kan pakkes i en boks, avhenger av størrelsen på t-skjorter.
 
-Produktvarianter kan bare opprettes for produkter av undertypen **Produkt**: **Produktstandard**. Hvis du vil ha mer informasjon, kan du se [Opprette en produktstandard](tasks/create-product-master.md).
+## <a name="turn-on-the-feature-in-your-system"></a>Aktivere funksjonen i systemet
 
-Funksjonen er ikke aktivert for produkter som er angitt for Faktisk vekt-prosesser. 
+Hvis du ikke allerede ser denne funksjonen i systemet, kan du gå til [Funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) og aktivere funksjonen *Måleenhetskonverteringer for produktvarianter*.
 
-Når produktstandarden med frigitte produktvarianter er opprettet, kan enhetsomregninger per varianter defineres. Du finner menyelementet for å åpne enhetskonverteringssiden i forbindelse med et produkt eller en produktvariant på følgende sider.
+## <a name="set-up-a-product-for-unit-conversion-per-variant"></a>Definere et produkt for enhetsomregning per variant
 
--   **Produktdetaljer**-siden
--   **Detaljer om frigitte produkter**-siden
--   **Frigitte produktvarianter**-siden
+Produktvarianter kan opprettes bare for produkter som er produktstandarder. Hvis du vil ha mer informasjon, kan du se [Opprette en produktstandard](tasks/create-product-master.md). Funksjonen *Måleenhetskonverteringer for produktvarianter* er ikke tilgjengelig for produkter som er definert for faktisk vekt-prosesser.
 
-Når du åpner **Enhetsomregning**-siden i konteksten av en produktstandard eller frigitt produktvariant, kan du velge om du vil definere enhetsomregning for produktet eller for en produktvariant. Det gjør du ved å velge enten **Produktvariant** eller **Produkt** i **Opprett konvertering for**-feltet.
+Hvis du vil konfigurere en produktstandard til å støtte enhetskonvertering per variant, gjør du følgende.
 
-### <a name="product-variant"></a>Produktvariant
+1. Gå til **Behandling av produktinformasjon \> Produkter \> Produktstandarder**.
+1. Opprett eller åpne en produktstandard for å gå til siden **Produktdetaljer**.
+1. Sett alternativet **Aktiver måleenhetskonverteringer** til *Ja*.
+1. I gruppen **Oppsett** i kategorien **Produkt** i handlingsruten velger du **Enhetskonverteringer**.
+1. Siden **Enhetskonverteringer** åpnes. Velg én av følgende kategorier:
 
-Hvis du velger **Produktvariant**, kan du velge hvilken variant du vil definere enhetsomregning for i **Produktvariant**-feltet.
+    - **Klasseinterne konverteringer** – Velg denne kategorien for å konvertere mellom enheter som tilhører den samme enhetsklassen.
+    - **Mellomklassekonverteringer** – Velg denne kategorien for å konvertere mellom enheter som tilhører ulike klasser.
 
-### <a name="product"></a>Produkt
+1. Velg **Ny** for å legge til en ny enhetskonvertering.
+1. Sett feltet **Opprett konvertering for** til én av følgende verdier:
 
-Hvis du velger **Produkt**, kan du definere en enhetsomregning for produktstandarden. Denne enhetsomregningen vil gjelde for alle produktvarianter uten definert enhetsomregning.
+    - **Produkt** – Hvis du velger denne verdien, kan du definere en enhetskonvertering for produktstandarden. Denne enhetskonverteringen vil bli brukt som et tilbakefallsområde for alle produktvarianter som ingen enhetskonvertering er definert for.
+    - **Produktvariant** – Hvis du velger denne verdien, kan du definere en enhetskonvertering for en bestemt produktvariant. Bruk feltet **Produktvariant** til å velge varianten.
 
-### <a name="example"></a>Eksempel
+    ![Legge til en ny enhetskonvertering](media/uom-new-conversion.png "Legge til en ny enhetskonvertering")
 
-Produktstandarden **t-skjorte** har fire frigitte produktvarianter: liten, middels, stor og ekstra stor. T-skjortene er pakket i bokser, og det kan være fem t-skjorter i en boks, bortsett fra ekstra stor-størrelsen der det bare er plass til fire t-skjorter.
+1. Bruk de andre feltene som finnes, til å definere enhetskonverteringen.
+1. Velg **OK** for å lagre den nye enhetskonverteringen.
 
-Først må du åpne **Enhetsomregning**-siden fra siden Frigi produktdetaljer for **t-skjorte.**
+> [!TIP]
+> Du kan åpne siden **Enhetskonverteringer** for et produkt eller en produktvariant fra følgende sider:
+> 
+> - Produktdetaljer
+> - Detaljer om frigitt produkt
+> - Frigitte produktvarianter
 
-På **Enhetsomregning**-siden definerer du enhetsomregning for den frigitte produktvarianten ekstra stor.
+## <a name="example-scenario"></a>Eksempelscenario
 
-| **Felt**             | **Innstilling**             |
-|-----------------------|-------------------------|
-| Opprett konvertering for | Produktvariant         |
-| Produktvariant       | T-skjorte : : Ekstra stor : : |
-| Fra enhet             | Bokser                   |
-| Omregningsfaktor                | 4                       |
-| Til enhet               | Stykker                  |
+I dette  selger et firma T-skjerer i størrelsene Liten, Middels, Stor og Ekstra stor. T-skjorten er definert som et produkt, og de ulike størrelsene er definert som varianter av det produktet. T-skjortene er pakket i bokser. Når det gjelder størrelsene Liten, Middels og Stor, kan det være fem T-skjorter i hver boks. Hvis størrelsen er Ekstra stor, er det imidlertid bare plass til fire t-skjorter i hver boks.
 
-De frigitte produktvariantene liten, middels og stor har samme enhetsomregning mellom enheten Boks og Stykker, som betyr at du kan definere enhetsomregning for disse produktvariantene i produktstandarden.
+Firmaet ønsker å spore de ulike variantene av t-skjorter i enheten *Stykker*, men selger dem i *Boks*-enheter. For størrelsene Liten, Middels og Stor, er konverteringen mellom lagerenheten og salgsenheten 1 boks = 5 stykker. Når størrelsen er Ekstra stor, er konverteringen 1 boks = 4 stykker.
 
-| **Felt**             | **Innstilling** |
-|-----------------------|-------------|
-| Opprett konvertering for | Produkt     |
-| Produkt               | T-skjorte     |
-| Fra enhet             | Bokser       |
-| Omregningsfaktor                | 5           |
-| Til enhet               | Stykker      |
+1. Fra siden **Detaljer om frigitt produkt** for produktet **T-skjorte** åpner du siden **Enhetskonverteringer**.
+1. På siden **Enhetskonverteringer** definerer du følgende enhetskonvertering for den frigitte produktvarianten **Ekstra stor**.
 
-### <a name="using-excel-to-update-the-unit-conversions"></a>Bruke Excel til å oppdatere enhetsomregningene
+    | Felt                 | Innstilling                 |
+    |-----------------------|-------------------------|
+    | Opprett konvertering for | Produktvariant         |
+    | Produktvariant       | T-skjorte : : Ekstra stor : : |
+    | Fra enhet             | Bokser                   |
+    | Faktor                | 4                       |
+    | Til enhet               | Stykker                  |
 
-Hvis et produkt har mange produktvarianter med forskjellige enhetsomregninger, er det lurt å eksportere enhetskonverteringene fra **Enhetsomregning**-siden til et Excel-regneark, oppdatere konverteringene og deretter publisere dem tilbake til Supply Chain Mangement.
+1. Ettersom produktvariantene **Liten**, **Middels** og **Stor** har samme enhetskonvertering mellom *Boks*- og *Stykker*-enhetene, kan du definere følgende enhetskonvertering for dem i produktstandarden.
 
-Alternativet for å eksportere til Excel og publisere endringene tilbake til Supply Chain Mangement, aktiveres fra **Åpne i Microsoft office**-menyelementet i handlingsruten på **Enhetsomregning**-siden.
+    | Felt                 | Innstilling |
+    |-----------------------|---------|
+    | Opprett konvertering for | Produkt |
+    | Produkt               | T-skjorte |
+    | Fra enhet             | Bokser   |
+    | Omregningsfaktor                | 5       |
+    | Til enhet               | Stykker  |
+
+## <a name="using-excel-to-update-the-unit-conversions"></a>Bruke Excel til å oppdatere enhetsomregningene
+
+Hvis et produkt har mange produktvarianter som har ulike enhetskonverteringer, kan det være lurt å eksportere enhetskonverteringene til en arbeidsbok i Microsoft Excel, oppdatere dem og deretter publisere dem tilbake til Dynamics 365 Supply Chain Management.
+
+Hvis du vil eksportere enhetskonverteringer til Excel, velger du **Åpne i Microsoft Office** på siden **Enhetskonverteringer**.
+
+## <a name="additional-resources"></a>Tilleggsressurser
+
+[Administrere måleenhet](tasks/manage-unit-measure.md)

@@ -1,9 +1,9 @@
 ---
 title: Definer utgiftspolicyer
 description: Du kan definere utgiftspolicyer som dine arbeidstakere må følge når de går inn i og sender utgiftsrapporter og reiseregninger i Microsoft Dynamics 365 Finance.
-author: ryansandness
+author: suvaidya
 manager: AnnBe
-ms.date: 04/26/2019
+ms.date: 05/20/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: ryansand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7d3b4a8f6cf74bb1fe7e53a4dfdd607f604e16e3
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 22504e0e26c025d117f29dee3b59b41d508e7724
+ms.sourcegitcommit: 4f90b9ddedf312e75a714e0ec7f7ee5fd43cac6a
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2187458"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "3389721"
 ---
 # <a name="define-expense-policies"></a>Definer utgiftspolicyer
 
@@ -48,6 +48,7 @@ Du kan definere tre typer policyer.
 Her er noen forslag som kan hjelpe deg når du oppretter nye policyer for reiseregninger. 
 * Policyer har ikrafttredelsesdato og vil ikke tre i kraft hvis policyen opprettes med en dato etter datoen da utgiften fant sted. Hvis du for eksempel oppretter en ny policy i dag for å bruke en maksimal måltidsutgift på NOK 500, blir eksisterende utgifter registrert fra i går ikke kontrollert mot denne policyen.
 * Når du oppretter en policy for en utgiftskategori som kan være spesifisert, må du vurdere å legge til en betingelse for utgiftslinjetype. Noen policyer, for eksempel å kreve en kvittering, vil kanskje ikke gi mening for spesifiserte linjer, og bør bare brukes på hodelinjen eller en ikke-spesifisert linje. 
+* Policyer for reiseregning evalueres mot kildeenheten som standard. I konserninterne scenarioer kan du angi at policyen i stedet skal evalueres mot målenheten (enheten som låner). Hvis du vil kjøre policyene mot målenheten, kan du aktivere funksjonen Evaluer utgiftspolicy mot juridisk enhet som låner i arbeidsområdet **Funksjonsbehandling**.
 
 ## <a name="when-to-evaluate-policies"></a>Når skal policyer evalueres
 

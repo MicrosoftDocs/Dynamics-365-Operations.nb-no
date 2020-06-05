@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: ccaeea8d0494644b4d55c29a778d9a8239de10b9
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: fafa2f7da5575206d452f31bb297790874369dfd
+ms.sourcegitcommit: 8a2127c5af6cdbda30ccc1f9bef9bd4ab61e9e50
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3207790"
+ms.lasthandoff: 05/18/2020
+ms.locfileid: "3383280"
 ---
 # <a name="approve-vendors-for-specific-products"></a>Godkjenne leverandører for bestemte produkter
 
@@ -33,7 +33,7 @@ Denne fremgangsmåten viser hvordan du godkjenner leverandører for bestemte pro
 2. Finn og velg ønsket post i listen.
 3. Klikk koblingen i den valgte raden i listen.
 4. Vis hurtigfanen **Innkjøp**. Hvis det finnes en hovedleverandør i **Leverandør**-feltet, må du legge til denne leverandøren som en godkjent leverandør i fremgangsmåten nedenfor. Noter nummeret til leverandøren, hvis det vises et.  
-5. Klikk på **Innkjøp** i handlingsruten.
+5. Klikk **Innkjøp** i handlingsruten.
 6. Klikk på **Oppsett**.
 7. Klikk **Legg til**.
 8. Angi eller velg en verdi i feltet Leverandør. Velg den godkjente leverandøren. Minst én av linjene må være hovedleverandøren, hvis det var en i produktposten. Hvis du har notert nummeret til leverandøren tidligere, kan du angi det her.  

@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: c83cafd3a8934c488bb7a9f315bd5cb154f88c09
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: b4587c9d64c2456e5f9f27cdb19625d9537f1e29
+ms.sourcegitcommit: 8a2127c5af6cdbda30ccc1f9bef9bd4ab61e9e50
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3204841"
+ms.lasthandoff: 05/18/2020
+ms.locfileid: "3383211"
 ---
 # <a name="create-a-purchase-return-order"></a>Opprette en innkjøpsreturordre
 
@@ -34,7 +34,7 @@ Denne fremgangsmåten viser hvordan du oppretter en innkjøpsreturordre ved hjel
 2. Klikk på **Ny**.
 3. Angi US-102 i **Leverandørkonto**-feltet.
 4. Klikk **OK**.
-5. Klikk på **Innkjøp** i **handlingsruten**.
+5. I **Handlingsruten** klikker du **Innkjøp**.
 6. Klikk på **Kreditnota**. Dette er siden der du kan kopiere fra eksisterende leverandørfaktura til returordren. Dette er den samme siden som brukes for andre kopieringshandlinger. Siden vi har åpnet den fra Kreditnota-handlingen, er imidlertid siden konfigurert til å støtte oppretting av en returordre som utligner leverandørfakturaer.  
 7. Utvid seksjonen **Parametere**.
     - Alternativet **Snu fortegn** velges automatisk og kan ikke endres. Dette sikrer at fortegnet endres for antallene, og at ordrelinjer som er lagt til, utlignes mot leverandørfakturaen.  
