@@ -88,6 +88,8 @@
                   items:
                     - name: Nyheter eller endringer på startsiden for Commerce
                       href: get-started/whats-new-home-page.md
+                    - name: Commerce 10.0.12 (august 2020)
+                      href: get-started/whats-new-commerce-10-0-12.md
                     - name: Commerce 10.0.11 (juli 2020)
                       href: get-started/whats-new-commerce-10-0-11.md
                     - name: Commerce 10.0.10 (mai 2020)
@@ -212,11 +214,11 @@
               items:
                 - name: Synkroniser selvbetjente installasjonsprogrammer i Dynamics 365 Commerce
                   href: dev-itpro/Synchronize-installers.md
-                - name: Commerce Scale Unit
+                - name: Commerce Scale Unit (selvdriftet)
                   href: dev-itpro/retail-store-system-begin.md
-                - name: Konfigurere og installere Commerce Scale Unit
+                - name: Konfigurere og installere Commerce Scale Unit (selvdriftet)
                   href: dev-itpro/retail-store-scale-unit-configuration-installation.md
-                - name: Konfigurasjon og installasjon av Modern POS
+                - name: Konfigurasjon og installasjon av moderne salgssted
                   href: retail-modern-pos-device-activation.md
                 - name: Administrere kontoer og enheter fra Headquarters
                   href: set-up-activation-accounts-validate-devices-hq.md
@@ -356,7 +358,7 @@
                       href: ../supply-chain/pim/search-products-product-variants.md?toc=/dynamics365/commerce/toc.json
                     - name: Forbedringer for kontanttransaksjoner
                       href: cash-mgmt.md
-                    - name: Beholdningsoppslag i salgsstedet
+                    - name: Lageroppslag i salgsstedet
                       href: product-variants-POS.md
                     - name: Suspendere og gjenoppta transaksjoner i salgsstedet
                       href: pos-suspend-recall-transactions.md
@@ -604,7 +606,7 @@
               items:
                 - name: Oversikt over produktanbefalinger
                   href: product-recommendations.md
-                - name: Aktivere ADLS i et Dynamics 365 Commerce-miljø
+                - name: Aktivere Azure Data Lake Storage i et Dynamics 365 Commerce-miljø
                   href: enable-ADLS-environment.md
                 - name: Aktiver produktanbefalinger
                   href: enable-product-recommendations.md
@@ -642,12 +644,12 @@
                   href: sync-product-ratings.md
             - name: Administrer lageret ditt
               items:
-                - name: Beholdning
+                - name: Lager
                   items:
                     - name: Butikklagerstyring
                       href: work-with-store-inventory.md
-                    - name: Arbeide med serialiserte varer
-                      href: ../supply-chain/sales-marketing/register-serial-numbers-sales-process.md?toc=/dynamics365/commerce/toc.json
+                    - name: Konfigurere lagerbuffere og lagernivåer
+                      href: inventory-buffers-levels.md
                     - name: Arbeide med serialiserte varer i salgssted
                       href: pos-serialized-items.md
                     - name: Overføre produkter fra distribusjonssenter til butikk ved hjelp av sentralt innkjøp
@@ -824,6 +826,8 @@
                   href: authoring-home-overview.md
                 - name: Behandle brukere og roller
                   href: manage-ecommerce-users-roles.md
+                - name: Bruke lagerinnstillinger
+                  href: inventory-settings.md
                 - name: Vurderinger for søkemotoroptimalisering (SEO) for området
                   href: search-engine-optimization-considerations.md
                 - name: Behandle policy for innholdssikkerhet (CSP)
@@ -848,6 +852,8 @@
                       href: select-site-theme.md
                     - name: Arbeide med CSS-overstyringsfiler
                       href: css-override-files.md
+                    - name: Arbeide med forhåndsinnstillinger for stil
+                      href: style-presets.md
                     - name: Legge til et favorittikon
                       href: add-favicon.md
                     - name: Legge til en velkomstmelding
@@ -932,6 +938,10 @@
                   items:
                     - name: Containermodul
                       href: add-container-module.md
+                    - name: Samsvarsmodul
+                      href: add-accordion.md
+                    - name: Kategorimodul
+                      href: add-tab.md
                 - name: Markedsføringsmoduler
                   items:
                     - name: Promobannermodul
@@ -978,6 +988,10 @@
                   items:
                     - name: Produktsamlingsmoduler
                       href: product-collection-module-overview.md
+                - name: Navigasjonsmoduler
+                  items:
+                    - name: Søkebanemodul
+                      href: add-breadcrumb.md
             - name: Søke
               items:
                 - name: Standard kategorimålside og søkeresultatside
@@ -1048,6 +1062,10 @@
                   href: localizations/emea-fra-cash-registers.md
                 - name: Retningslinjer for distribusjon for kassaapparater
                   href: localizations/emea-fra-deployment.md
+            - name: Tyskland
+              items:
+                - name: Eksempel på integrering av tjenesten for avgiftsmessig transaksjon for Tyskland
+                  href: localizations/emea-deu-fi-sample.md
             - name: India
               items:
                 - name: GST-integrering (Goods and Services Tax) for kasser
@@ -1976,7 +1994,9 @@
                       href: e-commerce-extensibility/create-theme.md
                     - name: Konfigurere temainnstillinger
                       href: e-commerce-extensibility/configure-theme-settings.md
-                    - name: Utvide et tema
+                    - name: Utvide et tema for å legge til modulutvidelser
+                      href: e-commerce-extensibility/theme-module-extensions.md
+                    - name: Utvide et tema fra et basistema
                       href: e-commerce-extensibility/extend-theme.md
                 - name: Sette inn skript
                   items:
@@ -2068,15 +2088,15 @@
               items:
                 - name: Hardware Station og utvidelsesmulighet
                   href: dev-itpro/hardware-station-extensibility.md
-                - name: Integrer salgssted med en ny maskinvareenhet
+                - name: Integrere salgssted med en ny maskinvareenhet
                   href: dev-itpro/hardware-device-extension.md
             - name: Utvidelsesmuligheter for Retail Server
               items:
-                - name: Utvide en OData-kontroller for Retail Server
+                - name: Utvide en OData-kontroller for Commerce Scale Unit
                   href: dev-itpro/extend-retail-server-odata-controller.md
-                - name: Kunde- og forbruker-API-er for Retail Server
+                - name: Kunde-og forbruker-API-er for Commerce Scale Unit
                   href: dev-itpro/retail-server-customer-consumer-api.md
-                - name: Utvide standard metadatakontroller for Retail Server
+                - name: Utvide standard metadatakontroller for Commerce Scale Unit
                   href: dev-itpro/extend-metadata.md
                 - name: Kalle CRT-tjenesten i frakoblet modus
                   href: dev-itpro/call-crt-service-offline.md
@@ -2096,8 +2116,6 @@
                   href: dev-itpro/add-customer-preference-channel.md
                 - name: Behandle hemmeligheter for Retail-kanaler
                   href: dev-itpro/manage-secrets.md
-                - name: Legge til egenskaper i salgsordrer
-                  href: dev-itpro/add-properties-sales-order.md
                 - name: Utvidelsesmulighet og utløsere for CRT
                   href: dev-itpro/commerce-runtime-extensibility-trigger.md
                 - name: Blokkere transaksjoner ved hjelp av utløsere

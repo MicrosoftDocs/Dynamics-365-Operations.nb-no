@@ -5,6 +5,8 @@
       items:
         - name: Nyheter eller endringer i Human Resources
           href: hr-admin-whats-new.md
+        - name: 28. mai 2020
+          href: hr-whats-new-2020-05-28.md
         - name: 14. mai 2020
           href: hr-whats-new-2020-05-14.md
         - name: 1. mai 2020
@@ -509,16 +511,22 @@
               href: hr-leave-and-absence-accrue.md
             - name: Suspender permisjon
               href: hr-leave-and-absence-suspend-leave.md
+            - name: Permisjonsforespørsel
+              href: hr-employee-self-service-request-leave-of-absence.md
             - name: Administrere ansattpermisjon
               href: hr-leave-and-absence-manage-employee-leave.md
             - name: Vise analyse for permisjon og fravær
               href: hr-leave-and-absence-analytics.md
             - name: Administrere forespørsler om permisjon og fravær
               href: hr-employee-self-service-manage-requests.md
-            - name: Be om fritid
+            - name: Be om fridager
               href: hr-employee-self-service-request-time-off.md
             - name: Vise team- og firmakalendere
               href: hr-employee-self-service-calendar.md
+            - name: Administrere policyer for kjøp og salg av permisjon
+              href: hr-leave-and-absence-manage-buy-and-sell-leave-policies.md
+            - name: Kjøp og selg permisjon
+              href: hr-employee-self-service-buy-sell-leave.md
         - name: Behandle permisjonsforespørsler i Teams
           href: hr-teams-leave-app.md
         - name: Utvikle ansatte
