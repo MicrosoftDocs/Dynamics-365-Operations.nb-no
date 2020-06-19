@@ -3,7 +3,7 @@ title: Oversikt over produktanbefalinger
 description: Dette emnet inneholder generell informasjon om produktanbefalinger. Produktanbefalinger gjør at kundene enkelt og raskt kan finne produkter de vil ha, og til og med produkter de ikke opprinnelig hadde tenkt å kjøpe.
 author: Moonma
 manager: AnnBe
-ms.date: 03/19/2020
+ms.date: 05/26/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: moonma
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: e61136ed296d673e14600762c6f6199093530546
-ms.sourcegitcommit: de5af1912201dd70aa85fdcad0b184c42405802e
+ms.openlocfilehash: 1b01589322c26b6a7b69d1b992b03603f5f3d29a
+ms.sourcegitcommit: fdc5dd9eb784c7d8e75692c8cdba083fe0dd87ce
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "3154232"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "3404354"
 ---
 # <a name="product-recommendations-overview"></a>Oversikt over produktanbefalinger
 
@@ -40,7 +40,7 @@ I e-handel er produktanbefalinger basert på Microsofts anbefalinger fra teknolo
 
 Produktanbefalingstjenesten benytter kunstig intelligens og maskinopplæring (AI-ML)-teknologier på følgende måte:
 
-- Data i formatet som anbefalingstjenesten krever, trekkes ut fra den operative Commerce-databasen og sendes til Azure Data Lake Storage (ADLS)-enhetslageret.
+- Data i formatet som anbefalingstjenesten krever, trekkes ut fra den operative Commerce-databasen og sendes til Azure Data Lake Storage eller enhetslageret.
 - Anbefalingstjenesten bruker de lagrede dataene til å lære opp anbefalingsmodeller for listene **Folk liker også**, **Ofte kjøpt sammen**, **Nye**, **Bestselgere** og **Tendenser**.
 
 ## <a name="scenarios"></a>Scenarier
@@ -67,7 +67,7 @@ Følgende tabell beskriver ulike typer automatiserte produktanbefalinger som er 
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 
-[Aktivere ADLS i et Dynamics 365 Commerce-miljø](enable-adls-environment.md)
+[Aktivere Azure Data Lake Storage i et Dynamics 365 Commerce-miljø](enable-adls-environment.md)
 
 [Aktiver produktanbefalinger](enable-product-recommendations.md)
 

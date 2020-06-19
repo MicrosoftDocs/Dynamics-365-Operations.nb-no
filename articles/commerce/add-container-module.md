@@ -3,7 +3,7 @@ title: Containermodul
 description: Dette emnet dekker containermoduler og beskriver hvordan du legger dem til områdesider i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
-ms.date: 01/23/2020
+ms.date: 06/01/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,15 +17,14 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 93c16da0988cc955835231bdd1f7342f19063f85
-ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
+ms.openlocfilehash: c7d607047aab92144932b4b59db050a588d6483d
+ms.sourcegitcommit: 2683aacb426bfb3b541637edf1f8ec2d6cb5a745
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "3025534"
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "3417352"
 ---
 # <a name="container-module"></a>Containermodul
-
 
 [!include [banner](includes/banner.md)]
 
@@ -46,9 +45,13 @@ Tre containermoduler støttes: container, container med 2 spor og container med 
 - En områdeforfatter vil ha et oppsett med seks kolonner, der seks moduler vises side om side. Derfor bruker områdeforfatteren en container med containertypen med seks kolonner.
 - En områdeforfatter vil legge en modul på en side, men vil ikke at den skal fylle skjermen. Derfor legger områdeforfatteren til modulen i en containermodul og setter containerens **Bredde**-egenskap til **Tilpass container**.
 
+Bildet nedenfor viser et eksempel på en beholdermodul som inneholder en karusellmodul i Commerce-områdebygger. I dette eksemplet er **Bredde**-egenskapen for beholdermodulen satt til **Fyll skjerm**.
+
+![Eksempel på en beholdermodul](./media/ecommerce-container.PNG)
+
 ## <a name="container-module-properties"></a>Egenskaper for containermodul
 
-| Egenskapsnavn     | Verdier | Beskrivelse |
+| Egenskapsnavn     | Verdier | beskrivelse |
 |-------------------|--------|-------------|
 | Overskrift           | Overskriftstekst og overskriftskode (**H1**, **H2**, **H3**, **H4**, **H5** eller **H6**) | En valgfri overskrift kan angis for containeren. Som standard brukes **H2**-overskriftskoden for overskriften. Koden kan imidlertid endres for å oppfylle tilgjengelighetskravene. |
 | Bredde             | **Tilpass container** eller **Fyll skjerm** | Hvis verdien er satt til **Tilpass container** (standardverdien), er modulene i containeren begrenset til bredden på containeren. Hvis verdien er satt til **Fyll skjerm**, er ikke modulene begrenset til containerbredden, men de kan fylle skjermen. |
@@ -99,23 +102,32 @@ Du kan bruke flere egenskaper til å optimalisere oppsettet for forskjellige vis
 
 Hvis du vil legge til en containerspillermodul på en ny side og angi de nødvendige egenskapene, følger du disse trinnene.
 
-1. Opprett en sidemal som heter **containermal**. 
-1. Legg til en **Standardside**-modul i **Meldingstekst**-sporet.
-1. Fullfør redigeringen av malen, og publiser den.
-1. Bruk containermalen du nettopp opprettet, for å opprette en side som heter **containerside**.
-1. I **Hoved**-sporet på den nye siden legger du til en containermodul.
+1. Gå til **Maler**, og velg **Ny** for å opprette en ny mal.
+1. I dialogboksen **Ny mal**, under **Malnavn**, angir du **Beholdermal**, og velger deretter **OK**.
+1. I **Tekst**-sporet velger du ellipsen (**…**), og deretter velger du **Legg til modul**.
+1. I dialogboksen **Legg til modul** velger du **Standardside**-modulen, og deretter velger du **OK**.
+1. Velg **Lagre**, velg **Fullfør redigering** for å sjekke inn malen, og velg deretter **Publiser** for å publisere den. 
+1. Gå til **Sider**, og velg **Ny** for å opprette en ny side.
+1. I **Velg en mal**-dialogboksen velger du videospillermalen du opprettet. Under **Sidenavn** angir du **Beholderside**, og velger deretter **OK**.
+1. På **Hoved**-sporet på den nye siden velger du ellipseknappen (**...**), og deretter velger du **Legg til modul**.
+1. I dialogboksen **Legg til modul** velger du **Beholder**-modulen, og deretter velger du **OK**.
 1. I egenskapsruten for containermodulen settes **Antall kolonner**-egenskapen til **1** og **Bredde**-egenskapen til **Fyll container**.
-1. Legg til en innholdsblokkmodul i containermodulen.
+1. I **Beholder**-sporet velger du ellipsen (**…**), og deretter velger du **Legg til modul**.
+1. I dialogboksen **Legg til modul** velger du **Innholdsblokk**-modulen, og deretter velger du **OK**.
 1. I egenskapsruten for innholdsblokkmodulen konfigurerer du overskriften, bildet og oppsettet.
-1. Lagre og forhåndsvis siden. Du skal se én funksjonsmodul som passer innenfor bredden til containermodulen.
+1. Velg **Lagre**, og velg deretter **Forhåndsvisning** for å forhåndsvise siden. Du skal se én funksjonsmodul som passer innenfor bredden til containermodulen.
 1. I egenskapsruten for containermodulen endrer du verdien til egenskapen **Antall kolonner** til **3**.
-1. Legg til to innholdsblokkmoduler til i containermodulen.
-1. Lagre og forhåndsvis siden. Nå skal du se tre innholdsblokkmoduler som vises side ved side.
-1. Når du har fått oppsettet du vil bruke, fullfører du redigeringen av siden og publiserer den.
+1. Legg til to ekstra innholdsblokkmoduler i beholder-modulen, og konfigurer dem.
+1. Velg **Lagre**, og velg deretter **Forhåndsvisning** for å forhåndsvise siden. Nå skal du se tre innholdsblokkmoduler som vises side ved side.
+1. Når du har fått oppsettet du vil bruke, velger du **Fullfør redigering** for å kontrollere siden, og deretter **Publiser** for å publisere den.
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 
 [Startpakke, oversikt](starter-kit-overview.md)
+
+[Trekkspillmodul](add-accordion.md)
+
+[Kategorimodul](add-tab.md)
 
 [Karusellmodul](add-carousel.md)
 

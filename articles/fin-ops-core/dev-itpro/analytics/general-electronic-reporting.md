@@ -18,12 +18,12 @@ ms.search.region: global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7cd3e2ac729bdb3ecc8e7bfacb060e433b185f09
-ms.sourcegitcommit: 3a06d3b38d9de2afc22839e5a794829405068024
+ms.openlocfilehash: d050bfa5b28219ef421dba4ed3a72f11bfd4daee
+ms.sourcegitcommit: 7816902b59aa61d9183d54b50a86e282661e3971
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "2933938"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "3421661"
 ---
 # <a name="electronic-reporting-er-overview"></a>Oversikt over elektronisk rapportering (ER)
 
@@ -81,7 +81,7 @@ En modelltilordning som støtter innkommende elektroniske dokumenter har følgen
 
 En komponent for datamodellen er utformet for hvert firmadomene som skal brukes som en felles datakilde for rapportering som isolerer rapportene fra fysisk implementering av datakilder. Den representerer domenespesifikke forretningsbegreper og funksjoner i et skjema som gjør et rapporteringsformats opprinnelige utforming og ytterligere vedlikehold mer effektivt.
 
-#### <a name="FormatComponentOutbound"></a>Formatkomponenter for utgående elektroniske dokumenter
+#### <a name="format-components-for-outgoing-electronic-documents"></a><a name="FormatComponentOutbound"></a>Formatkomponenter for utgående elektroniske dokumenter
 
 En formatkomponent er oppsettet for rapporteringsutdataene som genereres under kjøring. Et utvalg består av følgende elementer:
 
@@ -107,7 +107,7 @@ Illustrasjonen nedenfor viser hvordan dataene flyter for disse formatene.
 
 Hvis du vil kjøre en enkelt ER-formatkonfigurasjonen og generere et utgående elektroniske dokument, må du identifisere tilordningen til formatkonfigurasjonen.
 
-#### <a name="FormatComponentInbound"></a>Formatkomponenter for innkommende elektroniske dokumenter
+#### <a name="format-components-for-incoming-electronic-documents"></a><a name="FormatComponentInbound"></a>Formatkomponenter for innkommende elektroniske dokumenter
 En formatkomponent er oppsettet for det innkommende dokumentet som importeres under kjøring. Et utvalg består av følgende elementer:
 
 - Et format som definerer strukturen og innholdet i det innkommende elektroniske rapporteringsdokumentet som inneholder data som importeres under kjøring. En formatkomponent brukes til å analysere et innkommende dokument i forskjellige formater, for eksempel tekst og XML.
@@ -144,7 +144,7 @@ Tilgang til ER-formatkomponenter avhenger av innstillingen for ISO-kode for land
 
 Forskjellige versjoner av en dataformatkomponent kan ha ulike innstillinger for ISO-koder for land/område.
 
-#### <a name="Configuration"></a>Konfigurasjon
+#### <a name="configuration"></a><a name="Configuration"></a>Konfigurasjon
 
 En ER-konfigurasjon ER er hylsteret til for en bestemt ER-komponent. Den komponenten kan være enten en datamodellkomponent eller en formatkomponent. En konfigurasjon kan inneholde forskjellige versjoner av en ER-komponent. Hver konfigurasjon er merket som eid av en bestemt konfigurasjonsleverandør. **Utkast**-versjonen av en komponent i en konfigurasjon kan redigeres når eieren av konfigurasjonen er valgt som en aktive leverandør i ER-innstillingene i programmet.
 
@@ -154,26 +154,26 @@ Formatkonfigurasjonen som opprettes, inneholder en formatkomponent. Datamodellko
 
 En ER-konfigurasjon er delt for firmaer i programmet.
 
-#### <a name="Provider"></a>Leverandør
+#### <a name="provider"></a><a name="Provider"></a>Leverandør
 
 ER-leverandør er parts-ID-en som brukes til å angi forfatteren (eier) av hver ER-konfigurasjon. ER lar deg administrere listen over konfigurasjonsleverandører. Formatkonfigurasjoner som leveres for elektroniske dokumenter som en del av Finance and Operations-løsningen, er merket som eid av konfigurasjonsleverandøren **Microsoft**.
 
 Hvis du vil finne ut hvordan du registrerer en ny ER-leverandør, kan du spille inn oppgaveveiledningen **ER Opprette en konfigurasjonsleverandør og merke den som aktiv** (en del av forretningsprosessen **7.5.4.3 Anskaffe/utvikle komponenter for IT-tjeneste/-løsning (10677)**).
 
-#### <a name="Repository"></a>Repositorium
+#### <a name="repository"></a><a name="Repository"></a>Repositorium
 
 Et ER-repositorium lagrer ER-konfigurasjoner. Følgende typer ER-repositorier støttes: 
 
 - LCS-delt bibliotek
 - LCS-prosjekt
 - Filsystem
-- Regulatory Configuration Service (RCS)
-- Operasjonsressurser
-
+- RCS
+- Operations-ressurser
+- Globalt repositorium
 
 Et **LCS-delt bibliotek**-repositorium gir tilgang til listen over konfigurasjoner i det delte aktivabiblioteket i Lifecycle Services (LCS). Denne typen ER-repositorium kan bare registreres for Microsoft-leverandøren. Fra det delte LCS-aktivabiblioteket kan du importere den nyeste versjonen av ER-konfigurasjoner til den gjeldende forekomsten.
 
-**LCS-prosjekt**-repositoriet gir tilgang til listen over konfigurasjoner for et bestemt LCS-prosjekt (aktivabibliotek for LCS-prosjekt), som ble valgt under registrering av repositoriet. ER lar deg laste opp delte konfigurasjoner fra gjeldende forekomst til et spesifikt **LCS-prosjekt**-repositorium. Du kan også importere konfigurasjoner fra et **LCS-prosjekt**-repositorium til gjeldende Finance and Operations-forekomst.
+**LCS-prosjekt**-repositoriet gir tilgang til listen over konfigurasjoner for et bestemt LCS-prosjekt (aktivabibliotek for LCS-prosjekt), som ble valgt under registrering av repositoriet. ER lar deg laste opp delte konfigurasjoner fra gjeldende forekomst til et spesifikt **LCS-prosjekt**-repositorium. Du kan også importere konfigurasjoner fra et **LCS-prosjekt**-repositorium til gjeldende forekomst av Finance and Operations-appene dine.
 
 Et **Filsystem**-repositorium gir tilgang til listen over konfigurasjonene som er lagret som XML-filer i den bestemte mappen på det lokale filsystemet på maskinen som er vert for AOS-tjenesten. Nødvendig mappe blir valgt i fasen for registrering av repositoriet. Du kan importere konfigurasjoner fra et **Filsystem**-repositorium til gjeldende forekomst. 
 
@@ -184,9 +184,13 @@ Legg merke til at denne typen repositorium er tilgjengelig i følgende miljøer:
 
 Hvis du vil ha mer informasjon, kan du se [Importere elektroniske rapporteringskonfigurasjoner](./electronic-reporting-import-ger-configurations.md).
 
-Et **RCS-forekomst**-repositorium gir tilgang til listen over konfigurasjoner for et bestemt RCS-prosjekt som ble valgt under registrering av repositoriet. Med ER kan du importere fullførte eller delte konfigurasjoner fra den valgte forekomsten av RCS til den gjeldende forekomsten, slik at du kan bruke dem til elektronisk rapportering.
+Et **RCS**-repositorium gir tilgang til listen over konfigurasjoner for en bestemt forekomst av [RCS-konfigurasjonstjenesten](https://docs.microsoft.com/business-applications-release-notes/october18/dynamics365-finance-operations/regulatory-service-configuration) som ble valgt under registrering av repositoriet. Med ER kan du importere fullførte eller delte konfigurasjoner fra den valgte forekomsten av RCS til den gjeldende forekomsten, slik at du kan bruke dem til elektronisk rapportering.
 
-Hvis du vil ha mer informasjon, kan du se [Importere ER-konfigurasjoner (Electronic Reporting) fra Regulatory Configuration Service (RCS)](./rcs-download-configurations.md).
+Hvis du vil ha mer informasjon, kan du se [Importere elektroniske rapporteringskonfigurasjoner fra RCS](./rcs-download-configurations.md).
+
+Et **globalt repositorium** gir tilgang til listen over konfigurasjoner i det globale repositoriet i [konfigurasjonstjenesten](https://docs.microsoft.com/business-applications-release-notes/october18/dynamics365-finance-operations/regulatory-service-configuration). Denne typen ER-repositorium kan bare registreres for Microsoft-leverandøren. Fra det globale repositoriet kan du importere den nyeste versjonen av ER-konfigurasjoner til den gjeldende forekomsten.
+
+Hvis du vil ha mer informasjon, kan du se [Importere ER-konfigurasjoner fra det globale repositoriet for konfigurasjonstjenesten](./er-download-configurations-global-repo.md).
 
 Et **Operasjonsressurser**-repositorium gir tilgang til listen over konfigurasjoner som Microsoft, som ER-konfigurasjonsleverandør, opprinnelig gir ut som en del av programløsningen. Disse konfigurasjonene kan importeres til den gjeldende forekomsten og brukes til elektronisk rapportering eller avspilling av eksempeloppgaveveiledninger. De kan også brukes til tilleggslokaliseringer og tilpassinger. Legg merke til at de nyeste versjonene fra Microsoft ER-konfigurasjoner må importeres fra det delte LCS-aktivabiblioteket ved hjelp av det tilsvarende ER-repositoriet.
 

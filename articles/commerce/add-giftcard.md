@@ -3,7 +3,7 @@ title: Gavekortmodul
 description: Dette emnet dekker gavekortmoduler og beskriver hvordan du legger dem til på områdesider i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
-ms.date: 04/13/2020
+ms.date: 05/28/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 70047376cec44523cc9cfe4df792bde23c776d8c
-ms.sourcegitcommit: ac966ea3a6c557fb5f9634b187b0e788d3e82d4d
+ms.openlocfilehash: a8428963e105e422dcd048863c17df0926a409ac
+ms.sourcegitcommit: b52477b7d0d52102a7ca2fb95f4ebfa30ecd9f54
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "3261583"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "3411118"
 ---
 # <a name="gift-card-module"></a>Gavekortmodul
 
@@ -35,6 +35,10 @@ Dette emnet dekker gavekortmoduler og beskriver hvordan du legger dem til på om
 Gavekort er en vanlig betalingsmåte, og gavekortmodulen kan brukes i en kassemodul for å godta gavekort. Gavekortmodulen støtter Dynamics 365-, SVS- og Givex-gavekort. SVS- og Givex-gavekort løses inn via betalingsleverandøren Adyen.
 
 Hvis du vil ha mer informasjon om støtte for eksterne gavekort som SVS og Givex, kan du se [Støtte for eksterne gavekort](./dev-itpro/gift-card.md)
+
+Bildet nedenfor viser et eksempel på en gavekortmodul på en kasseside.
+
+![Eksempel på en gavekortmodul](./media/ecommerce-giftcard.PNG)
 
 ## <a name="module-properties"></a>Modulegenskaper
 

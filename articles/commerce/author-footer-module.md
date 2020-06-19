@@ -3,7 +3,7 @@ title: Bunntekstmodul
 description: Dette emnet dekker bunntekstmoduler og hvordan du redigerer dem i Dynamics 365 Commerce.
 author: anupamar
 manager: annbe
-ms.date: 04/14/2020
+ms.date: 05/28/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,15 +17,14 @@ ms.search.region: Global
 ms.author: anupamar-ms
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 51f8d26d6223dcd1f6961058cd9d772a67c69670
-ms.sourcegitcommit: 7a1d01122790b904e2d96a7ea9f1d003392358a6
+ms.openlocfilehash: 87ffc0204019f2f7122c40dc21bdb5de012929d6
+ms.sourcegitcommit: b52477b7d0d52102a7ca2fb95f4ebfa30ecd9f54
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "3269642"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "3411219"
 ---
 # <a name="footer-module"></a>Bunntekstmodul  
-
 
 [!include [banner](includes/banner.md)]
 
@@ -35,6 +34,10 @@ Dette emnet dekker bunntekstmoduler og beskriver hvordan du oppretter dem i Micr
 
 Bunntekstmodulen er en spesialcontainer som brukes til å være vert for modulene som vises i bunnteksten på siden. Den kan for eksempel inneholde koblinger til ulike sider på området, for eksempel sider for **Kontakt oss** og **Butikkpolicyer**.
 
+Bildet nedenfor viser et eksempel på en bunntekstmodul på en områdeside.
+
+![Eksempel på en bunntekstmodul](./media/ecommerce-footer.PNG)
+
 ## <a name="footer-module-properties"></a>Egenskaper for bunntekstmodul 
 
 I likhet med de fleste containere støtter en bunntekstmodul egenskaper for overskriften og bredden. Den støtter også tillegging av flere bunntekstkategorimoduler. Hver bunntekstkategorimodul som legges til, gjengis som en kolonne i bunntekstmodulen.
@@ -43,27 +46,27 @@ I likhet med de fleste containere støtter en bunntekstmodul egenskaper for over
 
 **Bunntekstelementer** – En modul for bunntekstelementer kan inneholde en overskrift, et bilde og en kobling. Overskriften kan enten brukes alene eller sammen med et bilde og en kobling. Hver kobling i bunnteksten kan konfigureres slik at den har bare tekst (for eksempel "Kontakt oss"- og "Personvern"-koblinger), eller slik at den har både tekst og et bilde (for eksempel koblinger til sosiale medier).
 
-**Til toppen** – En Til toppen-modul gir en kobling for rask navigering til toppen av siden. Et mål kreves. Standard målverdi er #, som tar brukeren til toppen av siden.
+**Til toppen** – En Til toppen-modul gir en kobling for rask navigering til toppen av siden. Et mål kreves. Standard målverdi er \#, som fører brukeren til toppen av siden.
 
-## <a name="author-a-footer-module"></a>Forfatte en bunntekstmodul
+## <a name="create-a-footer-module"></a>Opprette en bunntekstmodul
 
-1. I navigasjonsruten velger du **Fragmenter**, og deretter velger du **Nytt sidefragment**.
-1. I dialogboksen **Nytt sidefragment** velger du bunntekstmodulen, skriver inn et navn på sidefragmentet og velger **OK**.
-1. I disposisjonstreet til venstre velger du ellipseknappen (**...**) for bunntekstmodulen, og deretter velger du **Legg til modul**.
-1. I dialogboksen **Legg til modul** velger du bunntekstkategorimodulen, og deretter velger du **OK**.
-1. I disposisjonstreet velger du ellipseknappen for bunntekstkategorien, og deretter velger du **Legg til modul**.
-1. I dialogboksen **Legg til modul** velger du bunntekstelementmodulen, og deretter velger du **OK**.
-1. I disposisjonstreet velger du bunntekstelementmodulen. Deretter, i egenskapsruten til høyre, konfigurerer du overskriften, koblingen, koblingsteksten og bildet etter behov.
-1. Gjenta trinn 5 til og med 7 for å legge til flere bunntekstelementer.
-1. For å legge til "Til toppen"-kobling i bunnteksten velger du ellipseknappen for bunntekstkategorimodulen, og deretter velger du **Legg til modul**.
-1. I dialogboksen **Legg til modul** velger du Til toppen-modulen, og deretter velger du **OK**.
-1. I disposisjonstreet velger du Til toppen-modulen. I egenskapsruten til høyre konfigurerer du deretter Til toppen-modulen slik du ønsker.
-1. Velg **Lagre**, velg **Fullfør redigering** for å sjekke inn sidefragmentet, og velg deretter **Publiser** for å publisere det.
+1. Gå til **Sidefragmenter**, og velg **Ny** for å opprette et nytt sidefragment.
+1. I dialogboksen **Nytt sidefragment** velger du **Beholder**-modulen, skriver inn et navn på sidefragmentet og velger **OK**.
+1. I **Standard beholder**-sporet velger du ellipsen (**…**), og deretter velger du **Legg til modul**.
+1. I dialogboksen **Legg til modul** velger du **Bunntekstkategori**-modulen, og deretter velger du **OK**.
+1. I **Bunntekstkategori**-sporet velger du ellipsen (**…**), og deretter velger du **Legg til modul**.
+1. I dialogboksen **Legg til modul** velger du **Bunntekstelement**-modulen, og deretter velger du **OK**.
+1. Velg **Bunntekstelement**-sporet. Deretter, i egenskapsruten til høyre, konfigurerer du overskriften, koblingen, koblingsteksten og bildet etter behov.
+1. Gjenta trinn 5 til og med 7 for hvert element for å legge til flere bunntekstelementer.
+1. For å legge til "Til toppen"-kobling i bunnteksten velger du ellipsen (**…**) i **Bunntekstkategori**-sporet, og deretter velger du **Legg til modul**.
+1. I dialogboksen **Legg til modul** velger du **Til toppen**-modulen, og deretter velger du **OK**.
+1. Velg **Til toppen**-sporet. Deretter, i egenskapsruten til høyre, konfigurerer du teksten og andre modulegenskaper etter behov.
+1. Velg **Fullfør redigering** for å sjekke inn fragmentet, og velg deretter **Publiser** for å publisere den.
 
-Følg denne fremgangsmåten for hver sidemal som er opprettet for området.
+For å sikre at det vises en topptekst på hver side, kan du følge denne fremgangsmåten på hver sidemal som opprettes for området.
 
-1. I **Hoved**-sporet på standardsiden, i bunntekstmodulen, legger du til bunntekstfragmentet du opprettet.
-1. Velg **Lagre**, velg **Fullfør redigering** for å sjekke inn malen, og velg deretter **Publiser** for å publisere den.
+1. I **Bunntekst**-sporet på **Standardside**-modulen legger du til bunntekstfragmentet du opprettet.
+1. Velg **Fullfør redigering** for å sjekke inn malen, og velg deretter **Publiser** for å publisere den.
 
 Ved å legge til sidefragmentet i sidemaler garanteres det at bunnteksten gjengis på hver side.
 

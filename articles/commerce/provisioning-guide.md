@@ -3,7 +3,7 @@ title: Klargjøre et miljø for forhåndsvisning av Dynamics 365 Commerce
 description: Dette emnet forklarer hvordan du klargjør et Microsoft Dynamics 365 Commerce-forhåndsvisningsmiljø.
 author: psimolin
 manager: annbe
-ms.date: 04/10/2020
+ms.date: 06/02/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: d54db89372a0f9ef5b267d25e14067e3243a803c
-ms.sourcegitcommit: 4254acb3cf8c6299fc2f3818ea6c499f058320d9
+ms.openlocfilehash: c109c2326cf01739255b49587c15aa34ad884f6a
+ms.sourcegitcommit: be7e4378c8122c6e7cfc4e7991efbdffee45e006
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "3254754"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "3426471"
 ---
 # <a name="provision-a-dynamics-365-commerce-preview-environment"></a>Klargjøre et miljø for forhåndsvisning av Dynamics 365 Commerce
 
@@ -193,7 +193,7 @@ Gjør følgende for å distribuere miljøet.
 
 1. Før du fortsetter må du kontrollere at miljøstatusen er **Distribuert**.
 
-### <a name="initialize-the-commerce-scale-unit-csu"></a>Initialisere Commerce Scale Unit (CSU)
+### <a name="initialize-the-commerce-scale-unit-cloud"></a>Initialisere Commerce Scale Unit (sky)
 
 Hvis du vil initialisere en CSU-adresse, følger du disse trinnene.
 
@@ -251,7 +251,7 @@ Hvis du vil fortsette prosessen for å klargjøre og konfigurere Commerce-forhå
 
 [Microsoft Lifecycle Services (LCS)](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-user-guide)
 
-[Retail Cloud Scale Unit (RCSU)](https://docs.microsoft.com/business-applications-release-notes/october18/dynamics365-retail/retail-cloud-scale-unit)
+[Commerce Scale Unit (sky)](https://docs.microsoft.com/business-applications-release-notes/october18/dynamics365-retail/retail-cloud-scale-unit)
 
 [Microsoft Azure-portal](https://azure.microsoft.com/features/azure-portal)
 

@@ -1,5 +1,5 @@
 ---
-title: Kredit og innkreving i Kunder
+title: Innkrevinger i Kunder
 description: Informasjon om kundeinnkrevinger administreres i én sentral visning på siden Innkrevinger i Microsoft Dynamics 365 Finance. Ledere for kreditt og innkreving kan bruke denne sentrale visningen til å administrere innkreving. Innkrevingsagenter kan begynne innkrevingsprosessen fra kundelister som genereres ved hjelp av forhåndsdefinerte innkrevingskriterier eller fra kundesiden.
 author: ShivamPandey-msft
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 471de43bc0d171e60100613a6d779a249cd9e92f
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: c150eb7283b34c82e728da36ed0e1e6643eff46a
+ms.sourcegitcommit: be7e4378c8122c6e7cfc4e7991efbdffee45e006
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2189183"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "3426402"
 ---
-# <a name="credit-and-collections-in-accounts-receivable"></a>Kredit og innkreving i Kunder
+# <a name="collections-in-accounts-receivable"></a>Innkrevinger i Kunder
 
 [!include [banner](../includes/banner.md)]
 

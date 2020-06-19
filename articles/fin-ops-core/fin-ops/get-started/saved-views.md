@@ -3,7 +3,7 @@ title: Lagrede visninger
 description: Dette emnet beskriver hvordan du bruker lagrede visninger-funksjonene.
 author: jasongre
 manager: AnnBe
-ms.date: 04/10/2020
+ms.date: 05/18/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2019-07-31
 ms.dyn365.ops.version: Platform update 28
-ms.openlocfilehash: fe79558b9d2ac4ef1c83918b949d11983b2cc0d8
-ms.sourcegitcommit: cd8a28be0acf31c547db1b8f6703dd4b0f62940c
+ms.openlocfilehash: f6b7f1c64c273f52dc1d414185ba54efdfb8e5c0
+ms.sourcegitcommit: dc67232c9aa3223d42f22cc1f7aafbd121e7e616
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "3260489"
+ms.lasthandoff: 05/30/2020
+ms.locfileid: "3412337"
 ---
 # <a name="saved-views"></a>Lagrede visninger
 
@@ -137,7 +137,7 @@ Hvis endringene du vil gjøre i en publisert visning, bare vil involvere publise
 7. [10.0.9/Platform Update 33 eller senere] Hvis du opprinnelig har valgt at denne publiserte visningen skal være standardvisning, vil den være standardvisning for disse brukerne på nytt etter den nye publiseringen.  
 
 Hvis endringene i den publiserte visningen omfatter endring av personlige tilpasninger eller filtre tilknyttet visningen, følger du denne fremgangsmåten: 
-1.  Bytt til den publiserte visningen du vil endre. 
+1.  Last inn den publiserte visningen du vil endre. 
 2.  Lagre en kopi av den publiserte visningen for å opprette en lokal kladd av den publiserte visningen. 
 3.  Endre den lokale kladden med de nødvendige endringene.
 4.  Publiser visningen med det opprinnelige navnet. 
@@ -149,12 +149,25 @@ Alle brukere ser kategorien **Mine visninger**, som viser personlige visninger, 
 
 Hvis du vil ha en liste over alle publiserte visninger for siden, er følgende sett med handlinger tilgjengelige. 
 
--    **Publiser**: Bruk handlingen **Publiser** til å publisere en visning på nytt etter at publiseringsparametere (navn, beskrivelse, sikkerhetsroller eller juridiske enheter) er endret.
--    **Fjern**: Bruk handlingen **Fjern** til å slette en publisert visning permanent. Denne handlingen fjerner visningen for alle brukere i systemet. Fjerning av publiserte visninger vil tre i kraft når **Lagre**-knappen er valgt.
+-    **Publiser** – Bruk handlingen **Publiser** til å publisere en visning på nytt etter at publiseringsparametere (navn, beskrivelse, sikkerhetsroller eller juridiske enheter) er endret.
+-    **Lagre som personlig** – Bruk **Lagre som personlig**-handlingen til å opprette en personlig utkastkopi av den publiserte visningen. Denne funksjonen kan hjelpe deg å forstå innholdet i en visning som ikke ble publisert for deg, eller som ennå ikke er publisert. Du kan også bruke den til å redigere og publisere en visning på nytt. Denne funksjonen introduseres i versjon 10.0.12.  
+-    **Fjern** – Bruk handlingen **Fjern** til å slette en publisert visning permanent. Denne handlingen fjerner visningen for alle brukere i systemet. Fjerning av publiserte visninger vil tre i kraft når **Lagre**-knappen er valgt.
+
+## <a name="managing-views-globally"></a>Behandle visninger globalt
+Selv om enkelte administrasjonsfunksjoner vises på alle sidene, som angitt i dette emnet, kan **systemadministratorer** og **administratorer av lagrede visninger** behandle visninger mer holistisk for systemet via **Tilpasning**-siden. Denne siden har spesielt følgende inndelinger og funksjoner: 
+
+- **Publiserte visninger** – i denne delen vises en liste over alle visninger som er publisert for organisasjonen. Herfra kan du publisere en visning på nytt etter at du har justert sikkerhetsrollene eller de juridiske enhetene som visningen målrettes mot. Du kan også eksportere eller slette én eller flere publiserte visninger. I versjon 10.0.12 og nyere versjoner kan du bruke **Lagre som personlig**-handlingen til å opprette en personlig kopi av visningen, slik at du kan oppdatere visningen eller få en bedre forståelse av innholdet. 
+- **Upubliserte visninger** – Denne delen inneholder en liste over alle visningene som er importert til systemet, men som ennå ikke er publisert. Du kan publisere, eksportere eller slette disse visningene. **Hurtigpublisering**-handlingen som ble lagt til i versjon 10.0.12, gjør det mulig at flere visninger fra denne inndelingen kan publiseres i én handling, ved hjelp av de eksisterende konfigurasjonene for sikkerhetsrolle og juridisk enhet. I versjon 10.0.12 og nyere versjoner kan du bruke **Lagre som personlig**-handlingen til å opprette personlige kopier av disse visningene, slik at du kan få en bedre forståelse av innholdet i visningene.   
+- **Personlige visninger** – I denne delen ser du alle visningene som er opprettet av brukere i systemet. Her kan du publisere en personlig visning til organisasjonen eller kopiere én eller flere av disse visningene til andre brukere. Du kan også eksportere eller slette disse visningene etter behov.
+- **Brukere** – Velg en bruker for å se en liste over sider som brukeren har besøkt. Du kan deretter justere den valgte brukerens mulighet til å bruke tilpassinger for bestemte sider eller for hele systemet. Du kan også importere, eksportere eller fjerne en tilpassing for brukeren. I tillegg kan du tilbakestille bildeforklaringer for funksjonen for brukeren. Hvis brukeren tidligere har ignorert alle popup-vinduer som introduserte nye funksjoner, vil disse popup-vinduene vises igjen neste gang brukeren støter på disse funksjonene.
+- **System** – Du kan midlertidig deaktivere tilpasninger for alle brukere i systemet. I dette tilfellet slettes alle personlige tilpasninger for alle brukere, og alle sidene tilbakestilles til standardtilstanden. Hvis du reaktiverer tilpasning senere, vil alle tilpasninger bli brukt på nytt. Du kan også permanent slette alle tilpasninger for alle brukere i systemet. Tilpasninger som er slettet, kan ikke gjenopprettes. Før du utfører denne oppgaven må du eksportere tilpasninger du kanskje vil bruke senere.
+
+Brukere som har tilgang til siden **Tilpasning**, kan også importere personlige visninger eller malvisninger ved hjelp av **Importer visninger**-knappen i handlingsruten. I versjon 10.0.12 og nyere versjoner er det lagt til en mekanisme for øyeblikkelig publisering av visninger når de importeres.  
 
 ## <a name="frequently-asked-questions"></a>Vanlige spørsmål
 ### <a name="how-do-i-enable-saved-views-in-my-environment"></a>Hvordan aktiverer jeg lagrede visninger i miljøet? 
-Obs! Funksjonen **Lagrede visninger** krever at tilpassingssystemet i Finance and Operations er aktivert. Hvis tilpassing er deaktivert for hele miljøet, vil visninger bli deaktivert selv om du følger fremgangsmåten nedenfor. 
+> [!NOTE]
+> Funksjonen **Lagrede visninger** krever at tilpassingssystemet i Finance and Operations er aktivert. Hvis tilpassing er deaktivert for hele miljøet, vil visninger bli deaktivert selv om du følger fremgangsmåten nedenfor. 
 
 **10.0.9/Platform Update 33 og senere** Funksjonen **Lagrede visninger** er tilgjengelig direkte i funksjonsbehandling i et hvilket som helst miljø. I likhet med andre forhåndsvisningsfunksjoner er aktivering av denne funksjonen i produksjonen underlagt [Ekstra vilkår for bruksavtalen](https://go.microsoft.com/fwlink/?linkid=2105274).  
 

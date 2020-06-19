@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: b2d65be5163e5dcb7971f04ebcad2fce55a06dad
-ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
+ms.openlocfilehash: 9da6fc7338942e97a1a7417dbd4dfca55fa95272
+ms.sourcegitcommit: cecd97fd74ff7b31f1a677e8fdf3e233aa28ef5a
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3010025"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "3410064"
 ---
 # <a name="overview"></a>Oversikt
 
@@ -35,19 +35,19 @@ Denne administratorveiledningen hjelper deg med å sette opp, administrere og fe
   - [Klargjøre Human Resources](hr-admin-setup-provision.md)
   - [Kopier en forekomst](hr-admin-setup-copy-instance.md)
   - [Fjerne en forekomst](hr-admin-setup-remove-instance.md)
-  - [Oppdateringsprosess](hr-admin-setup-update-process.md)
+  - [Oppdatere prosess](hr-admin-setup-update-process.md)
 
 - Konfigurere dataintegrering
   - [Velg en dataintegreringsteknologi](hr-admin-integration-choose-technology.md)
   - [Konfigurere Common Data Service-integrering](hr-admin-integration-common-data-service.md)
-  - [Konfigurere integrasjon med Finance](hr-admin-integration-finance.md)
-  - [Konfigurere integrasjon med Dayforce](hr-admin-integration-dayforce.md)
-  - [Opprette en app for gjentakende dataeksport](hr-admin-integration-recurring-data-export.md)
+  - [Konfigurere integrering med Finance](hr-admin-integration-finance.md)
+  - [Konfigurere integrering med Dayforce](hr-admin-integration-dayforce.md)
+  - [Opprette en app for regelmessig dataeksport](hr-admin-integration-recurring-data-export.md)
   - Integrere med Office
     - [Opplæring i Office-integrering](../dev-itpro/office-integration/office-integration-tutorial.md?toc=/dynamics365/unified-operations/talent/toc.json)
     - [Oppdatere enhetsdata i Excel](../dev-itpro/office-integration/use-excel-add-in.md?toc=/dynamics365/unified-operations/talent/toc.json)
     - [Opprette opplevelser for Åpne i Excel](../dev-itpro/office-integration/office-integration-edit-excel.md?toc=/dynamics365/unified-operations/talent/toc.json)
-    - [Feilsøke Office-integreringen](../dev-itpro/office-integration/office-integration-troubleshooting.md?toc=/dynamics365/unified-operations/talent/toc.json)
+    - [Feilsøke Office-integrering](../dev-itpro/office-integration/office-integration-troubleshooting.md?toc=/dynamics365/unified-operations/talent/toc.json)
 
 - [Behandle funksjoner](hr-admin-manage-features.md)
 
@@ -75,10 +75,9 @@ Denne administratorveiledningen hjelper deg med å sette opp, administrere og fe
 - Dokumentasjonsressurser
   - [Hjelpesystem](../fin-ops-core/fin-ops/get-started/help-overview.md?toc=/dynamics365/human-resources/toc.json)
   - [Koble til hjelpesystemet](../fin-ops-core/fin-ops/get-started/help-connect.md?toc=/dynamics365/human-resources/toc.json)
-  - [Koble til et tilpasset hjelpeområde](../fin-ops-core/fin-ops/get-started/help-custom.md?toc=/dynamics365/human-resources/toc.json        )
   - [Vise og eksportere feltbeskrivelser](../fin-ops-core/fin-ops/get-started/view-export-field-descriptions.md?toc=/dynamics365/human-resources/toc.json)
   - [Oppgaveregistrering](../fin-ops-core/dev-itpro/user-interface/task-recorder.md?toc=/dynamics365/human-resources/toc.json)
-  - [Lage dokumentasjon eller opplæring med Oppgaveopptaker](../fin-ops-core/dev-itpro/user-interface/task-recorder-training-docs.md?toc=/dynamics365/human-resources/toc.json)
+  - [Lage dokumentasjon eller opplæring med Oppgaveregistrering](../fin-ops-core/dev-itpro/user-interface/task-recorder-training-docs.md?toc=/dynamics365/human-resources/toc.json)
 
 - Feilsøke Human Resources
   - [Få kundestøtte](hr-admin-troubleshooting-support.md)
@@ -88,7 +87,7 @@ Denne administratorveiledningen hjelper deg med å sette opp, administrere og fe
   - [Klientfrakoblinger](hr-admin-troubleshooting-disconnect.md)
   - [Unngå avkortet tekst i stillingshierarki](hr-admin-troubleshooting-truncate.md)
   - [Kjøre kompensasjonsprosessen](hr-admin-troubleshooting-compensation.md)
-  - [Lagre en oppgaveveiledning i LCS](hr-admin-troubleshooting-task-guide.md)
+  - [Lagre en oppgaveveiledning for LCS](hr-admin-troubleshooting-task-guide.md)
   - [Tilgang til private adresser etter sikkerhetsrolle](hr-admin-troubleshooting-private-addresses.md)
   - [Human Resources vises ikke i Dynamics 365-apper](hr-admin-troubleshooting-not-in-apps.md)
   - [Rapporteringsalternativer](hr-admin-troubleshooting-reporting.md)

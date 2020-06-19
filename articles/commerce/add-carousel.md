@@ -3,7 +3,7 @@ title: Karusellmodul
 description: Dette emnet dekker karusellmoduler og beskriver hvordan du legger dem til områdesider i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
-ms.date: 04/14/2020
+ms.date: 05/28/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -18,16 +18,16 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: f399e4c5618b65b781fdd3ec835e841614579313
-ms.sourcegitcommit: 7a1d01122790b904e2d96a7ea9f1d003392358a6
+ms.openlocfilehash: 35aaf35419a8c5b83b2a3e1136a02200bf347c6b
+ms.sourcegitcommit: b52477b7d0d52102a7ca2fb95f4ebfa30ecd9f54
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "3269734"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "3411302"
 ---
 # <a name="carousel-module"></a>Karusellmodul
 
-
+[!include [banner](includes/preview-banner.md)]
 [!include [banner](includes/banner.md)]
 
 Dette emnet dekker karusellmoduler og beskriver hvordan du legger dem til områdesider i Microsoft Dynamics 365 Commerce.
@@ -44,9 +44,13 @@ Du kan legge til innholdsblokkmoduler i en karusellmodul. Egenskapene for karuse
 - En karusell som har flere kampanjemoduler inni, kan brukes på en produktdetaljside.
 - En karusell kan brukes på en hvilken som helst markedsføringsside for å fremme flere kampanjer eller produkter.
 
+Bildet nedenfor viser et eksempel på en karusellmodul som brukes på en hjemmeside. Denne karusellmodulen inneholder flere innholdsblokkelementer.
+
+![Eksempel på en karusellmodul](./media/Hero.PNG)
+
 ## <a name="carousel-module-properties"></a>Egenskaper for karusellmodul
 
-| Egenskapsnavn             | Verdi                 | Beskrivelse |
+| Egenskapsnavn             | Verdi                 | beskrivelse |
 |---------------------------|-----------------------|-------------|
 | Autokjør                  | **Sann** eller **Usann** | Hvis verdien settes til **Sann**, skjer overgangen mellom elementer i karusellen automatisk. Hvis verdien settes til **Usann**, skjer ingen overgang med mindre kunden bruker tastaturet eller musen til å flytte fra ett element til neste element. |
 | Intervall for lysbildeovergang | En verdi i sekunder    | Intervallet for overganger mellom elementer. |
@@ -58,7 +62,7 @@ Du kan legge til innholdsblokkmoduler i en karusellmodul. Egenskapene for karuse
 
 Hvis du vil legge til en karusellmodul på en ny side og angi de nødvendige egenskapene, følger du disse trinnene.
 
-1. Velg **Ny** for å opprette en sidemal.
+1. Gå til **Maler**, og velg **Ny** for å opprette en ny mal.
 1. I dialogboksen **Ny mal**, under **Malnavn**, angir du **Karusellmal**, og velger deretter **OK**.
 1. Legg til en **Standardside**-modul i **Meldingstekst**-sporet.
 1. Velg **Fullfør redigering** for å sjekke inn malen, og velg deretter **Publiser** for å publisere den.  
