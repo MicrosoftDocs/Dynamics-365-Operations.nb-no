@@ -11,12 +11,12 @@ ms.search.scope: Operations
 ms.search.region: Global
 ms.search.validFrom: 2019-1-29
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: c66b25e941d9492c9749043b65c929c9b81db641
-ms.sourcegitcommit: e9fadf6f6dafdcefaff8e23eaa3c85f53437db3f
+ms.openlocfilehash: ad0f33aae7651dff4f424a047eccabd691a99d83
+ms.sourcegitcommit: 840230f3dc500852791953d05c2737dd539ed0b3
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "3279063"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "3418572"
 ---
 # <a name="administrators-learning-catalog"></a>Opplæringskatalog for administratorer
 
@@ -30,7 +30,7 @@ Katalogen nedenfor er ordnet fra kjernekunnskap til bestemte områder, og fra de
 |-----------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------|-----------|
 | [Grunnleggende om Dynamics 365 og Power Platform](https://docs.microsoft.com/learn/paths/dyn-power-plat-bus-app-fundamentals/) | Er du interessert i å finne ut mer om forretningsprogrammer? Start med dette læringsforløpet for å se hvordan Dynamics 365-apper brukes. Finn ut mer om skybegreper, Power Platform og hvordan du kommer i gang med Dynamics 365-apper.  | Gratis, selvbetjent elektronisk læringsforløp  | 5.5 timer |
 | [Komme i gang med Finance and Operations-apper](https://docs.microsoft.com/learn/paths/get-started-finance-operations/)      | Finn ut hvordan Finance and Operations-apper lar virksomheter administrere sine globale, økonomiske systemer, driftsforretningsprosesser og strømlinjeformede forsyningskjeder for å gi brukerne mulighet til å ta raske, informerte avgjørelser. Ditt første trinn i Finance and Operations-apper-karrieren er å gjøre deg kjent med funksjonene og funksjonaliteten, uansett hvilken rolle du har. | Gratis, selvbetjent elektronisk læringsforløp   | 2 timer   |
-| [Kurs MB-900T01-A: Grunnleggende om Dynamics 365](https://www.microsoft.com/learning/course.aspx?cid=MB-900T01)   | Dette kurset vil gi opplæring om Dynamics 365-funksjonalitet og forretningsverdi. Kurset dekker Dynamics 365-programmer, Power Platform, skybegreper, sikkerhetsmodellen og lisensieringshensyn.  | Instruktørledet, personlig eller elektronisk opplæring. Kostnaden varierer etter område og partner. | 1 dag     |
+
 
 
 ## <a name="core-platform-knowledge"></a>Kunnskap om kjerneplattform<a name="core-platform-knowledge"></a>

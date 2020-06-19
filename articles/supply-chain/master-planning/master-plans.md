@@ -3,7 +3,7 @@ title: Oversikt over hovedplaner
 description: Du kan bruke forskjellige hovedplaner for å ha støtte for firmaets daglige arbeidsoperasjoner, simulere forskjellige strategier du vil overvåke og implementere en firmapolicy, for eksempel angående intern ytelse eller kundetilfredsstillelse.
 author: roxanadiaconu
 manager: tfehr
-ms.date: 07/25/2019
+ms.date: 05/28/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 56c9c3f910c5c5386cdab25566b43198288eb419
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: f5b37347cf2d5b720ed7ac364800fb8cfe2d67ca
+ms.sourcegitcommit: ace6451fde3e4b20cbcaa6279fa1da4d7151ad1e
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3213544"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "3409528"
 ---
 # <a name="master-plans-overview"></a>Oversikt over hovedplaner
 
@@ -35,7 +35,7 @@ Du kan bruke forskjellige hovedplaner for å ha støtte for firmaets daglige arb
 Du kan konfigurere hovedplaner på siden **Hovedplaner**.
 
 Det finnes to typer planer:
--   **Statisk plan** – Beregningen for hovedplanlegging bruker gjeldende data til å generere en nettobehovsplan. Denne planen forblir uendret til neste gang du utfører hovedplanlegging. Det er en driftsplan som forskjellige firmaansatte, for eksempel innkjøper eller produksjonsplanleggere, kan bruke til å basere avgjørelsene sine på og utføre de daglige oppgavene og aktivitetene.
+-   **Statisk plan** – Beregningen for hovedplanlegging bruker gjeldende data til å generere en nettobehovsplan. Denne planen forblir uendret til neste gang du utfører hovedplanlegging eller endrer planen manuelt. Dette er en driftsplan som forskjellige firmaansatte, for eksempel innkjøper eller produksjonsplanleggere, kan bruke til å basere avgjørelsene sine på og utføre de daglige aktivitetene.
 -   **Dynamisk plan** – Denne planen starter med de samme nettobehovene som ble generert ved hjelp av hovedplanlegging. Du kan imidlertid oppdatere den dynamiske planen hver gang hoveddataene endres. Dette kan for eksempel være når du oppretter en ny salgsordre. Dette gjør at du kan overvåke det endrede ordrenettverket og varetilgjengeligheten uten å forstyrre den statiske planen som andre bruker til arbeidsrutinene.
 
 Et firma kan velge å arbeide med bare en dynamisk plan, eller den kan bruke både statiske og dynamiske planer. I tillegg kan du konfigurere en hvilken som helst hovedplan for å gjenspeile en bestemt strategi eller håndtere et problem. Eksempler er som følger:

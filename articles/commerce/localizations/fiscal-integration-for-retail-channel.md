@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: v-kikozl
 ms.search.validFrom: 2019-1-16
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 45677681ebae40210d6e2d896323f7e691b765e2
-ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
+ms.openlocfilehash: d2455f775fcf41bbcb1388b2e8053ede8512335d
+ms.sourcegitcommit: 52ba8d3e6af72df5dab6c04b9684a61454d353ad
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "3057562"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "3403221"
 ---
 # <a name="overview-of-fiscal-integration-for-commerce-channels"></a>Oversikt over regnskapsintegrering for handelskanaler
 
@@ -139,6 +139,7 @@ Følgende eksempler på regnskapsintegrering er for øyeblikket tilgjengelige i 
 - [Eksempel på integrering av tjenesten for avgiftsmessig transaksjon for Østerrike](emea-aut-fi-sample.md)
 - [Eksempel på integrering av tjenesten for avgiftsmessig transaksjon for Tsjekkia](emea-cze-fi-sample.md)
 - [Eksempel på integrering med kontrollenheter for Sverige](./emea-swe-fi-sample.md)
+- [Eksempel på integrering av tjenesten for avgiftsmessig transaksjon for Tyskland](./emea-deu-fi-sample.md)
 
 Følgende funksjon for regnskapsintegrering er også tilgjengelig i detaljhandel-SDK-et, men drar for øyeblikket ikke nytte av regnskapsintegreringsrammeverket. Overføring av denne funksjonaliteten til rammeverket for regnskapsintegrering er planlagt i senere oppdateringer.
 

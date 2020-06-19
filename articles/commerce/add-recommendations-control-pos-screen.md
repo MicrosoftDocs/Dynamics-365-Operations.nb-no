@@ -3,7 +3,7 @@ title: Legge til anbefalinger på transaksjonsskjermen
 description: Dette emnet beskriver hvordan du legger til en kontroll for anbefalinger på transaksjonsskjermbildet på en salgsstedsenhet ved hjelp av utforming av skjermoppsett i Microsoft Dynamics 365 Commerce.
 author: bebeale
 manager: AnnBe
-ms.date: 03/19/20
+ms.date: 05/26/20
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: a39389da0908953cbbc161f07d067ce3fc569a1b
-ms.sourcegitcommit: de5af1912201dd70aa85fdcad0b184c42405802e
+ms.openlocfilehash: 77870cd19ebf15a72f323f116579f7769a766995
+ms.sourcegitcommit: fdc5dd9eb784c7d8e75692c8cdba083fe0dd87ce
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "3154138"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "3404239"
 ---
 # <a name="add-recommendations-to-the-transaction-screen"></a>Legge til anbefalinger på transaksjonsskjermen
 
@@ -100,7 +100,7 @@ Det finnes to tilgjengelige konfigurasjonsalternativer. Velg alternativet som pa
 
 [Oversikt over produktanbefalinger](product-recommendations.md)
 
-[Aktivere ADLS i et Dynamics 365 Commerce-miljø](enable-adls-environment.md)
+[Aktivere Azure Data Lake Storage i et Dynamics 365 Commerce-miljø](enable-adls-environment.md)
 
 [Aktiver produktanbefalinger](enable-product-recommendations.md)
 

@@ -3,7 +3,7 @@ title: Nummerskilt som mottar via lagerappen
 description: Dette emnet forklarer hvordan du konfigurerer appen for lagerstyring for å støtte bruk av en prosess for nummerskiltmottak for å motta fysisk beholdning.
 author: perlynne
 manager: tfehr
-ms.date: 03/31/2020
+ms.date: 04/29/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-03-31
 ms.dyn365.ops.version: Release 10.0.11
-ms.openlocfilehash: 7d5ac6598ab80ece0164d7c92f5d84e91d21b385
-ms.sourcegitcommit: ffd845d4230646499b6f074cb43e69ab95787671
+ms.openlocfilehash: 82b4f40510d5bbf829508f17f1064886620a4aed
+ms.sourcegitcommit: a3cd2783ae120ac6681431c010b9b126a9ca7d94
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "3346382"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "3410891"
 ---
 # <a name="license-plate-receiving-via-the-warehousing-app"></a>Nummerskilt som mottar via lagerappen
 
@@ -33,47 +33,51 @@ Dataene fra forhåndsvarselet for forsendelse knyttet til laster og forsendelser
 > [!NOTE]
 > Hvis du vil redusere antallet lagertransaksjoner når det brukes emballasjestrukturer som har nestede nummerskilt, registrerer systemet den fysiske lagerbeholdningen på det overordnede nummerskiltet. For å utløse flytting av den fysiske lagerbeholdningen fra det overordnede nummerskiltet til de nestede nummerskiltene, basert på pakkestrukturdataene, må mobilenheten inneholde et menyelement som er basert på arbeidsopprettingsproessen *Pakk til nestede nummerskilt*.
 
-<!-- To be used later (will require further editing):
-## Warehousing mobile device app processing
+## <a name="warehousing-mobile-device-app-processing"></a>Behandle lager i en app for mobilenheter
 
-When a worker scans an incoming license plate ID, the system initializes a license plate receiving process. Based on this information, the content of the license plate (data coming from the ASN) gets physically registered at the inbound dock location. The flows that follow will depend your business process needs.
+Når en arbeider skanner en innkommende nummerskilt-ID, initialiserer systemet en mottaksprosess for nummerskiltet. Basert på denne informasjonen blir innholdet på nummerskiltet (data som kommer fra ASN) fysisk registrert på mottaksstedet. Arbeidsflytene som følger, avhenger av prosesseringsbehovene til bedriften din.
 
-## Work policies
+## <a name="work-policies"></a>Arbeidspolicyer
 
-As with (for example) the *Report as finished* mobile device menu item process, the license plate receiving process supports several workflows based on the defined setup.
+Som med (for eksempel) menyelementprosessen *Ferdigmeld* for mobilenheter, støtter mottaksprosessen for nummerskilt flere arbeidsflyter basert på det definerte oppsettet.
 
-### Work policies with work creation
+### <a name="work-policies-with-work-creation"></a>Arbeidspolicyer med arbeidsopprettelse
 
-Registration of physical on-hand where either the same warehouse worker immediately process a put-away work process following the inbound receiving (License plate receiving and put away) or where the registration and put away process gets handled as two different warehouse operations (License plate receiving) following the processing of the put-away work by using the existing work process via another mobile device menu item.
+Når du registrerer innkommende varer ved hjelp av en arbeidspolicy som oppretter arbeid, genererer og plasserer systemet arbeidsposter for hver registrering. Hvis du bruker *Mottak og plassering av nummerskilt*-arbeidsprosess, blir registrering og plassering behandlet som én enkelt operasjon ved hjelp av ett enkelt menyelement på en mobilenhet. Hvis du bruker *Mottak av nummerskilt*-prosessen, blir mottaks- og plasseringsprosessene behandlet som to forskjellige lageroperasjoner med hvert sitt menyelement på en mobilenhet.
 
-## Work policies without work creation
+### <a name="work-policies-without-work-creation"></a>Arbeidspolicyer uten arbeidsopprettelse
 
-You can use the license plate receiving process without creating work by using the *License plate receiving without creating work* feature.
+Du kan bruke mottaksprosessen for nummerskilt uten å opprette arbeid. Hvis du definerer arbeidspolicyer som har arbeidsordretype *Overføringsmottak* og/eller *Bestillinger*, og du bruker prosessen for *Mottak (og plassering) av nummerskilt*, vil ikke følgende to prosesser i Warehousing-mobilappen opprette arbeid. I stedet registrerer de bare den innkommende fysiske beholdningen på nummerskiltet på mottaksstedet.
 
-By defining **Work policies** with a **Work order type** of *Transfer receipt* and/or *Purchase orders*, and using the **Process** for **License plate receiving (and put away)**, the two Warehousing app process:
+- *Mottak av nummerskilt*
+- *Mottak og plassering av nummerskilt*
 
-- License plate receiving
-- License plate receiving and put away
+> [!NOTE]
+> - Du må definere minst én lokasjon for en arbeidspolicy i **Beholdningslokasjoner**-delen. Du kan ikke angi samme plassering for flere arbeidspolicyer.
+> - Alternativet **Skriv ut etikett** for menyelementer for lagerstyring på mobilenheter skriver ikke ut en nummerskiltetikett uten arbeidsopprettelse.
 
-will not create work, but only register the inbound physical inventory on the license plate at the inbound receiving dock.
+Hvis du vil gjøre denne funksjonaliteten tilgjengelig i systemet, må du aktivere *Forbedringer for nummerskiltmottak*-funksjonen i [funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
-For more information about the *Report as finished* production scenario, see the [Warehouse work policies overview](warehouse-work-policies.md).
+### <a name="receive-inventory-on-a-location-that-doesnt-track-license-plates"></a>Motta beholdning på en lokasjon som ikke sporer nummerskilt
 
--->
+Det er mulig å bruke en lagerlokasjon som er tilordnet en lokasjonsprofil, selv om **Bruk sporing av nummerskilt** ikke er aktivert. Når du mottar beholdningen, kan du derfor registrere den tilgjengelige beholdningen direkte på en lokasjon uten arbeidsopprettelse.
+
+## <a name="add-mobile-device-menu-items-for-each-receiving-location-in-a-warehouse"></a>Legge til menyelementer for mobilenheter for hver mottakslokasjon på et lager
+
+Ved hjelp av *Forbedringer for nummerskiltmottak* kan du motta en hvilken som helst lokasjon i et lager ved å legge til lokasjonsspesifikke menyelementer for mottak (og plassering) av nummerskilt i Warehousing-mobilappen. Tidligere støttet systemet bare mottak på standardlokasjonen som er definert for hvert lager. Når denne funksjonen er aktivert, inneholder imidlertid menyelementer for mottak (og plassering) av skiltnummer på mobilenheter nå alternativet **Bruk standarddata**, som lar deg velge en egen definert "til"-plassering for hvert menyelement. (Dette alternativet var allerede tilgjengelig for enkelte andre typer menyelementer.)
+
+Hvis du vil gjøre denne funksjonaliteten tilgjengelig i systemet, må du aktivere *Forbedringer for nummerskiltmottak*-funksjonen i [funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## <a name="show-or-skip-the-receiving-summary-page"></a>Vise eller hoppe over mottakssammendragssiden
 
 Du kan bruke funksjonen *Kontroller om det skal vises en mottakssammendragsside på mobilenheter* for å dra nytte av en mer detaljert flyt i appen for lagerstyring som en del av prosessen for mottak av nummerskilt.
 
-Før du kan bruke denne funksjonen, må den være aktivert i systemet. Administratorer kan bruke innstillingene for [funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til å kontrollere funksjonsstatusen og aktivere den. I **Funksjonsadministrering**-arbeidsområdet er denne funksjonen oppført på følgende måte:
-
-- **Modul:** *Lagerstyring*
-- **Funksjonsnavn:** *Kontroller om det skal vises en mottakssammendragsside på mobilenheter*
-
 Når denne funksjonen er aktivert, vil menyelementer på mobilenheter for mottak av nummerskilt eller mottak og plassering av nummerskilt gi en innstilling for **visning av mottakssammendragsside**. Denne innstillingen har følgende alternativer:
 
 - **Vis et detaljert sammendrag** – Ved nummerskiltmottak får arbeiderne se en ekstra side som viser hele forhåndsvarselet om forsendelse.
 - **Hopp over sammendrag** – Arbeiderne ser ikke hele forhåndsvarselet om forsendelse. Lagerarbeiderne kan heller ikke angi en disposisjonskode eller legge til unntak under mottaksprosessen.
+
+Hvis du vil gjøre denne funksjonaliteten tilgjengelig på systemet, må du aktivere funksjonen *Kontroller om det skal vises en mottakssammendragsside på mobilenheter* i [funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## <a name="prevent-transfer-ordershipped-license-plates-from-being-used-at-warehouses-other-than-the-destination-warehouse"></a>Forhindre nummerskilt sendt via overføringsordre fra å brukes på andre lagre enn destinasjonslageret
 
@@ -81,10 +85,7 @@ En mottaksprosess for nummerskilt kan ikke brukes hvis et forhåndsvarsel for fo
 
 For scenarier for overføringsordrer der transittlageret ikke sporer nummerskilt (og derfor ikke ikke sporer fysisk lagerbeholdning per nummerskilt), kan du bruke de funksjonen *Forhindre nummerskilt sendt via overføringsordre fra å brukes på andre lagre enn destinasjonslageret* å hindre fysiske lagerbeholdningsoppdateringer av nummerskilt som er under transitt.
 
-Før du kan bruke denne funksjonen, må den være aktivert i systemet. Administratorer kan bruke innstillingene for [funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til å kontrollere funksjonsstatusen og aktivere den. I **Funksjonsadministrering**-arbeidsområdet er denne funksjonen oppført på følgende måte:
-
-- **Modul:** *Lagerstyring*
-- **Funksjonsnavn:** *Forhindre nummerskilt sendt via overføringsordre fra å brukes på andre lagre enn destinasjonslageret*
+Hvis du vil gjøre denne funksjonaliteten tilgjengelig på systemet, må du aktivere funksjonen *Forhindre nummerskilt sendt via overføringsordre fra å brukes på andre lagre enn destinasjonslageret* i [funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 Følg denne fremgangsmåten for å administrere funksjonaliteten når denne funksjonen er tilgjengelig.
 
@@ -96,6 +97,8 @@ Følg denne fremgangsmåten for å administrere funksjonaliteten når denne funk
 
 ## <a name="more-information"></a>Mer informasjon
 
-<!-- To read more about inbound loads, see [Link for Inbound load (Olga's doc.)] -->
-
 Hvis du vil ha mer informasjon om menyelementer for mobilenheter, kan du se [Definere mobilenheter for lagerarbeid](configure-mobile-devices-warehouse.md).
+
+Hvis du vil ha mer informasjon om *Ferdigmeld*-produksjonsscenariet, kan du se [Oversikt over policyer for lagerarbeid](warehouse-work-policies.md).
+
+For mer informasjon om innkommende lastadministrasjon for lagerstyring, se [Lagerhåndtering av innkommende laster for bestillinger](inbound-load-handling.md).

@@ -1,6 +1,6 @@
 ---
-title: Aktivere ADLS i et Dynamics 365 Commerce-miljø
-description: Dette emnet forklarer hvordan du aktiverer og tester Azure Data Lake Storage (ADLS) for et Dynamics 365 Commerce-miljø, som er en forutsetning for å aktivere produktanbefalinger.
+title: Aktivere Azure Data Lake Storage i et Dynamics 365 Commerce-miljø
+description: Dette emnet forklarer hvordan du aktiverer og tester Azure Data Lake Storage for et Dynamics 365 Commerce-miljø, som er en forutsetning for å aktivere produktanbefalinger.
 author: bebeale
 manager: AnnBe
 ms.date: 04/13/2020
@@ -19,57 +19,57 @@ ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: ba428765babb9ca7566da7a457368959b1c29083
-ms.sourcegitcommit: dbff1c6bb371a443a0cd2a310f5a48d5c21b08ca
+ms.openlocfilehash: 83b829306c2da2d10924e547fd3cac6ae6781db3
+ms.sourcegitcommit: fdc5dd9eb784c7d8e75692c8cdba083fe0dd87ce
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "3259754"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "3404192"
 ---
-# <a name="enable-adls-in-a-dynamics-365-commerce-environment"></a>Aktivere ADLS i et Dynamics 365 Commerce-miljø
+# <a name="enable-azure-data-lake-storage-in-a-dynamics-365-commerce-environment"></a>Aktivere Azure Data Lake Storage i et Dynamics 365 Commerce-miljø
 
 [!include [banner](includes/banner.md)]
 
-Dette emnet forklarer hvordan du aktiverer og tester Azure Data Lake Storage (ADLS) for et Dynamics 365 Commerce-miljø, som er en forutsetning for å aktivere produktanbefalinger.
+Dette emnet forklarer hvordan du aktiverer og tester Azure Data Lake Storage for et Dynamics 365 Commerce-miljø, som er en forutsetning for å aktivere produktanbefalinger.
 
 ## <a name="overview"></a>Oversikt
 
-I Dynamics 365 Commerce-løsningen spores all produkt- og transaksjonsinformasjon i miljøets enhetslager. Hvis du vil at disse dataene skal være tilgjengelige for andre Dynamics 365-tjenester, for eksempel dataanalyse, forretningsintelligens og tilpassede anbefalinger, må du koble miljøet til en kundeeid Azure Data Lake Storage Gen 2-løsning (ADLS).
+I Dynamics 365 Commerce-løsningen spores all produkt- og transaksjonsinformasjon i miljøets enhetslager. Hvis du vil at disse dataene skal være tilgjengelige for andre Dynamics 365-tjenester, for eksempel dataanalyse, forretningsintelligens og tilpassede anbefalinger, må du koble miljøet til en kundeeid Azure Data Lake Storage Gen 2-løsning.
 
-Når ADLS er konfigurert i et miljø, blir alle nødvendige data gjenspeilet fra enhetslageret samtidig som de fremdeles beskyttes og er under kundens kontroll.
+Når Azure Data Lake Storage er konfigurert i et miljø, blir alle nødvendige data gjenspeilet fra enhetslageret samtidig som de fremdeles beskyttes og er under kundens kontroll.
 
-Hvis produktanbefalinger eller tilpassede anbefalinger også er aktivert i miljøet, får produktanbefalingsstakken tilgang til den dedikerte mappen i ADLS for å hente kundens data og beregne anbefalinger basert på dem.
+Hvis produktanbefalinger eller tilpassede anbefalinger også er aktivert i miljøet, får produktanbefalingsstakken tilgang til den dedikerte mappen i Azure Data Lake Storage for å hente kundens data og beregne anbefalinger basert på dem.
 
 ## <a name="prerequisites"></a>Forutsetninger
 
-Kunder må ha ADLS konfigurert i et Azure-abonnement som de eier. Dette emnet dekker ikke kjøpet av et Azure-abonnement eller oppsettet av en ADLS-aktivert lagringskonto.
+Kunder må ha Azure Data Lake Storage konfigurert i et Azure-abonnement som de eier. Dette emnet dekker ikke kjøpet av et Azure-abonnement eller oppsettet av en Azure Data Lake Storage-aktivert lagringskonto.
 
-Hvis du vil ha mer informasjon om ADLS, kan du se [Offentlig ADLS-dokumentasjon](https://azure.microsoft.com/pricing/details/storage/data-lake).
+Hvis du vil ha mer informasjon om Azure Data Lake Storage, kan du se [Offentlig Azure Data Lake Storage Gen2-dokumentasjon](https://azure.microsoft.com/pricing/details/storage/data-lake).
   
 ## <a name="configuration-steps"></a>Konfigurasjonstrinn
 
-Denne delen dekker konfigurasjonstrinnene som er nødvendige for å aktivere ADLS i et miljø som er knyttet til produktanbefalinger.
-Hvis du vil ha en mer detaljert oversikt over trinnene som kreves for å aktivere ADLS, kan du se [Gjøre enhetslager tilgjengelig som Data Lake](../fin-ops-core/dev-itpro/data-entities/entity-store-data-lake.md).
+Denne delen dekker konfigurasjonstrinnene som er nødvendige for å aktivere Azure Data Lake Storage i et miljø som er knyttet til produktanbefalinger.
+Hvis du vil ha en mer detaljert oversikt over trinnene som kreves for å aktivere Azure Data Lake Storage, kan du se [Gjøre enhetslager tilgjengelig som Data Lake](../fin-ops-core/dev-itpro/data-entities/entity-store-data-lake.md).
 
-### <a name="enable-adls-in-the-environment"></a>Aktivere ADLS i miljøet
+### <a name="enable-azure-data-lake-storage-in-the-environment"></a>Aktivere Azure Data Lake Storage i miljøet
 
 1. Logg deg på miljøets administrasjonskontorportal.
 1. Søk etter **Systemparametere** og naviger til **Datatilkoblinger**-fanen. 
 1. Sett **Aktiver Data Lake-integrasjon** til **Ja**.
 1. Sett **Oppdater Data Lake fordelt** til **Ja**.
 1. Deretter angir du følgende påkrevd informasjon:
-    1. **Applikasjons-ID** // **Applikasjonshemmelighet** // **DNS-navn** – Nødvendig for å koble til KeyVault der ADLS-hemmeligheten er lagret.
-    1. **Hemmelig navn** – Det hemmelige navnet som er lagret i KeyVault, og som brukes til å autentisere med ADLS.
+    1. **Applikasjons-ID** // **Applikasjonshemmelighet** // **DNS-navn** – Nødvendig for å koble til KeyVault der Azure Data Lake Storage-hemmeligheten er lagret.
+    1. **Hemmelig navn** – Det hemmelige navnet som er lagret i KeyVault, og som brukes til å autentisere med Azure Data Lake Storage.
 1. Lagre endringene i sidens øvre venstre hjørne.
 
-Bildet nedenfor viser et eksempel på en ADLS-konfigurasjon.
+Bildet nedenfor viser et eksempel på en Azure Data Lake Storage-konfigurasjon.
 
-![Eksempel på ADLS-konfigurasjon](./media/exampleADLSConfig1.png)
+![Eksempel på Azure Data Lake Storage-konfigurasjon](./media/exampleADLSConfig1.png)
 
-### <a name="test-the-adls-connection"></a>Test ADLS-tilkoblingen
+### <a name="test-the-azure-data-lake-storage-connection"></a>Test Azure Data Lake Storage-tilkoblingen
 
 1. Test tilkoblingen til KeyVault ved hjelp av **Test Azure Key Vault**-koblingen.
-1. Test tilkoblingen til ADLS ved hjelp av **Test Azure Storage**-koblingen.
+1. Test tilkoblingen til Azure Data Lake Storage ved hjelp av **Test Azure Storage**-koblingen.
 
 > [!NOTE]
 > Hvis testene mislykkes, dobbeltsjekker du at alle de tilføyde KeyVault-opplysningene ovenfor er korrekte og prøver deretter på nytt.
@@ -86,7 +86,7 @@ Det følgende bildet viser et eksempel på et enhetslager der automatisk oppdate
 
 ![Eksempel på enhetslager med automatisk oppdatering aktivert](./media/exampleADLSConfig2.png)
 
-ADLS er nå konfigurert for miljøet. 
+Azure Data Lake Storage er nå konfigurert for miljøet. 
 
 Hvis de ikke er fullført allerede, følger du trinnene for å [aktivere produktanbefalinger og tilpasning](enable-product-recommendations.md) for miljøet.
 

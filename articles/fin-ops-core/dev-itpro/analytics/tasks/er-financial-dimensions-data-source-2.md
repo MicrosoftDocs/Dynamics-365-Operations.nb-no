@@ -3,7 +3,7 @@ title: ER Bruke finansdimensjoner som en datakilde (del 2 - Modelltilordning)
 description: De følgende trinnene forklarer hvordan en bruker som er tilordnet rollen som systemansvarlig eller utvikler av elektronisk rapportering kan konfigurere en elektronisk rapportering (ER)-modell til å bruke finansdimensjoner som datakilde for ER-rapporter.
 author: NickSelin
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 05/27/2020
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 48ce4942f8407242013df45f533390784694d4e6
-ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
+ms.openlocfilehash: 3aabd622d15917d7e4549d0b0679aa20231c5815
+ms.sourcegitcommit: d9125c20b21459076e4fd92fd9ebfe2e53a0431b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3142553"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "3406526"
 ---
 # <a name="er-use-financial-dimensions-as-a-data-source-part-2---model-mapping"></a>ER Bruke finansdimensjoner som en datakilde (del 2 - Modelltilordning)
 
@@ -59,12 +59,14 @@ For å fullføre disse trinnene, må du først fullføre trinnene i prosedyren "
 21. Velg Ja i feltet Be om hovedkonto.
     * Sett Be om hovedkonto til Ja for å tillate brukere å velge hovedkontoen som en del av listen med dimensjoner.   Hvis satt til Nei, blir ikke hovedkontoen tatt med i listen over dimensjoner, og alternativet Er obligatorisk for hovedkonto aktiveres. Hvis Er obligatorisk for hovedkonto settes til Ja, inkluderes hovedkontoen i listen over dimensjonere uavhengig av brukerens valg.  
 22. Klikk OK.
+![Siden ER-utforming av modelltilordning](../media/er-financial-dimensions-guides-model-mapping1.png)
 23. Velg Dynamics 365 for Operations\Tabellposter i treet.
 24. Klikk Legg til rot.
 25. Skriv inn LedgerJournal i Navn-feltet.
 26. Velg Ja i feltet Be om spørring.
 27. Skriv inn LedgerJournalTable i Tabell-feltet.
 28. Klikk OK.
+![Siden ER-utforming av modelltilordning](../media/er-financial-dimensions-guides-model-mapping2.png)
 
 ## <a name="map-data-model-elements-to-added-data-sources"></a>Tilordne datamodellelementer til datakilder som er lagt til
 1. Utvid Journal i treet.
@@ -95,6 +97,7 @@ For å fullføre disse trinnene, må du først fullføre trinnene i prosedyren "
 25. Velg LedgerJournal\<Relasjoner\LedgerJournalTrans\Account.Dimension(LedgerDimension.Dimension)\Hovedkonto og dimensjoner i treet.
 26. Velg Journal\Transaksjon\Dimensjonsdata i treet.
 27. Klikk Bind.
+![Siden ER-utforming av modelltilordning](../media/er-financial-dimensions-guides-model-mapping3.png)
 28. Velg LedgerJournal\<Relasjoner\LedgerJournalTrans\Debet(AmountCurDebit) i treet.
 29. Velg Journal\Transaksjon\Debet i treet.
 30. Klikk Bind.
@@ -133,6 +136,7 @@ For å fullføre disse trinnene, må du først fullføre trinnene i prosedyren "
 63. Angi Company.'find()'.'name()' i feltet expressionAsStringText.
     * Company.'find()'.'name()'  
 64. Klikk Lagre.
+![Siden ER-utforming av modelltilordning](../media/er-financial-dimensions-guides-model-mapping4.png)
 65. Lukk siden.
 66. Klikk Lagre.
 67. Lukk siden.
@@ -143,4 +147,4 @@ For å fullføre disse trinnene, må du først fullføre trinnene i prosedyren "
 3. Klikk Endre status.
 4. Klikk Fullført.
 5. Klikk OK.
-
+![Siden ER-utforming av modelltilordning](../media/er-financial-dimensions-guides-model-mapping5.png)
