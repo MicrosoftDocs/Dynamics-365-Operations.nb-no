@@ -70,12 +70,12 @@
                   items:
                     - name: Nyheter eller endringer på startsiden for Supply Chain Management
                       href: get-started/whats-new-home-page.md
+                    - name: Supply Chain Management 10.0.12 (august 2020)
+                      href: get-started/whats-new-scm-10-0-12.md
                     - name: Supply Chain Management 10.0.11 (juli 2020)
                       href: get-started/whats-new-scm-10-0-11.md
                     - name: Supply Chain Management 10.0.10 (mai 2020)
                       href: get-started/whats-new-scm-10-0-10.md
-                    - name: Supply Chain Management 10.0.9 (april 2020)
-                      href: get-started/whats-new-scm-10-0-9.md
                 - name: Funksjoner som er fjernet eller avskrevet
                   items:
                     - name: Funksjoner som er fjernet eller avskrevet i Dynamics 365 Supply Chain Management
@@ -206,7 +206,7 @@
               items:
                 - name: Oversikt over Russland
                   href: ../finance/localizations/russia.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Beholdning
+                - name: Lager
                   items:
                     - name: Varer i transitt fra leverandør
                       href: ../finance/localizations/rus-goods-transit-vendor.md?toc=/dynamics365/supply-chain/toc.json
@@ -595,6 +595,8 @@
                   href: cost-management/bom-calculations.md
                 - name: Beregningsgrupper for stykkliste
                   href: cost-management/bom-calculation-groups.md
+                - name: Kostnadsberegningsnivå
+                  href: cost-management/cost-calculation-level.md
                 - name: Backflush-etterkalkulering
                   href: cost-management/backflush-costing.md
                 - name: Vanlige kilder til produksjonsavvik
@@ -1255,7 +1257,7 @@
                   href: inventory/inventory-journals.md
                 - name: Lagerlokasjoner
                   href: inventory/inventory-locations.md
-                - name: Beholdningsstatuser
+                - name: Lagerstatuser
                   href: inventory/inventory-statuses.md
                 - name: Opprette et nytt lageroppsett
                   href: inventory/tasks/create-new-warehouse-layout.md
@@ -1345,6 +1347,8 @@
                   href: master-planning/planning-optimization/planning-optimization-fit-analysis.md
                 - name: Bruke filtre på en plan
                   href: master-planning/planning-optimization/plan-filters.md
+                - name: Hovedplanlegging med forretningsavtaler
+                  href: master-planning/planning-optimization/purchase-trade-agreement.md
                 - name: Vise planhistorikk og planleggingslogger
                   href: master-planning/planning-optimization/plan-history-logs.md
                 - name: Automatisk autorisasjon med planleggingsoptimalisering
@@ -1989,7 +1993,9 @@
                       href: production-control/release-production-orders.md
                     - name: Rapportere produksjonsordrer som ferdigstilte
                       href: production-control/report-production-orders-as-finished.md
-                    - name: Ferdigmelde til en skiltkontrollert lokasjon
+                    - name: Konfigurer jobbkort for enheter
+                      href: production-control/config-job-card-device.md
+                    - name: Ferdigmelde fra jobbkortenheten
                       href: production-control/report-finished-job-device.md
                     - name: Reversere produksjonsordrestatusen
                       href: production-control/reverse-production-order-status.md
@@ -2259,6 +2265,16 @@
                   href: sales-marketing/tasks/register-sales-commissions.md
                 - name: Definere regler for salgsprovisjon
                   href: sales-marketing/tasks/set-up-sales-commission-rules.md
+            - name: Kundeportal for Dynamics 365 Supply Chain Management
+              items:
+                - name: Oversikt over kundeportal
+                  href: sales-marketing/customer-portal-overview.md
+                - name: 'Installere, konfigurere og oppdatere kundeportalen'
+                  href: sales-marketing/customer-portal-setup.md
+                - name: Opprette og administrere kundeportalbrukere
+                  href: sales-marketing/customer-portal-user-admin.md
+                - name: Tilpasse og bruke kundeportalen
+                  href: sales-marketing/customer-portal-customize.md
             - name: Handelsrabatt
               href: sales-marketing/trade-allowance.md
             - name: Opprette en ny forretningsavtale
@@ -2653,13 +2669,15 @@
                   href: warehousing/tasks/define-cycle-counting-microsoft-dynamics-365-finance-operations-enterprise-edition-july-2017.md
                 - name: Delvis lokasjonssyklustelling
                   href: warehousing/partial-location-cycle-counting.md
-                - name: 'Definere delvis prosess for syklustelling for lokasjon '
+                - name: Definere delvis prosess for syklustelling for lokasjon
                   href: warehousing/tasks/define-partial-location-cycle-counting-process.md
+                - name: Oppryddingsjobb for lagerstyringsposter
+                  href: warehousing/onhand-cleanup.md
                 - name: Lagerjournal
                   href: inventory/inventory-journals.md
                 - name: Lagerlokasjon
                   href: inventory/inventory-locations.md
-                - name: Beholdningsstatus
+                - name: Lagerstatus
                   href: inventory/inventory-statuses.md
                 - name: Lagerbrikkeopptelling
                   href: inventory/inventory-tag-counting.md
