@@ -3,7 +3,7 @@ title: Fjernede eller avskrevne Platform-funksjoner
 description: Dette emnet beskriver funksjoner som er fjernet eller som er planlagt for fjerning i plattformoppdateringer av Finance and Operations-apper.
 author: sericks007
 manager: AnnBe
-ms.date: 04/17/2020
+ms.date: 06/02/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: f6365d42de5d19d960641f188cb6052ef07d721f
-ms.sourcegitcommit: 6d6aa016c4971b0673d461b82fd80b060ae5f7a1
+ms.openlocfilehash: 6fc699907d30fff2d05e752ea055cae8d1134d9b
+ms.sourcegitcommit: 3eaa71c889545318737b3bc88b05eae1a47ad2c0
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "3268753"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "3433928"
 ---
 # <a name="removed-or-deprecated-platform-features"></a>Fjernede eller avskrevne Platform-funksjoner
 
@@ -36,7 +36,39 @@ Denne listen er ment å hjelpe deg med å vurdere disse fjerningene og avskrivni
 > [!NOTE]
 > Detaljert informasjon om objekter i Finance and Operations-apper finnes i [Tekniske referanserapporter](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep). Du kan sammenligne de ulike versjonene av disse rapportene for å lære om objekter som er endret eller fjernet i hver versjon av Finance and Operations-apper.
 
+## <a name="platform-updates-for-version-10012-of-finance-and-operations-apps"></a>Plattformoppdateringer for versjon 10.0.12 av Finance and Operations-apper
+
+### <a name="grid-or-group-control-form-extensions-containing-invalid-field-references"></a>Skjemautvidelser for rutenett- eller gruppekontroll som inneholder ugyldige feltreferanser
+
+|   |  |
+|------------|--------------------|
+| **Årsak til avskrivning/fjerning** | Egenskapen datagruppe i rutenett- eller gruppekontroller brukes til automatisk å vise alle felt i en feltgruppe. Et rutenett eller en gruppekontroll som er lagt til via en utvidelse, kan inneholde felt som ikke lenger er definert i feltgruppen, eller de kan mangle felt som er definert i feltgruppen. Dette kan føre til inkonsekvent virkemåte ved kjøring. Plattformoppdateringer for versjon 10.0.12 av Finance and Operations-apper kategoriserer nå dette problemet som en kompilerings-*advarsel*. Du kan løse dette problemet ved å åpne skjemautvidelsen og lagre den.
+| **Erstattet med en annen funksjon?**   | Denne kompilatoradvarselen vil bli erstattet med en kompilatorfeil i en fremtidig oppdatering. |
+| **Berørte produktområder**         | Visual Studio-utviklingsverktøy |
+| **Distribusjonsalternativ**              | Alle |
+| **Status**                         | En kompilatoradvarsel er introdusert i plattformoppdateringer for versjon 10.0.12 av Finance and Operations-apper. |
+
 ## <a name="platform-updates-for-version-10011-of-finance-and-operations-apps"></a>Plattformoppdateringer for versjon 10.0.11 av Finance and Operations-apper
+
+### <a name="explicit-whitelisting-for-self-service-environments"></a>Eksplisitt hvitlisting for selvbetjeningsmiljøer
+
+|   |  |
+|------------|--------------------|
+| **Årsak til avskrivning/fjerning** | Prosessen for IP-hvitlisting er endret. Selvbetjening støtter ikke lenger IP-hvitlisting. |
+| **Erstattet med en annen funksjon?**   | Hvis du vil ha mer informasjon, kan du se [Konfigurere betinget tilgang for Azure Active Directory](https://docs.microsoft.com/appcenter/general/configuring-aad-conditional-access).|
+| **Berørte produktområder**         | Sikkerhet |
+| **Distribusjonsalternativ**              | Sky |
+| **Status**                         | **Avviklet:** Denne funksjonen er fullstendig avviklet for selvbetjent distribusjon. |
+
+### <a name="visual-studio-2015"></a>Visual Studio2015
+
+|   |  |
+|------------|--------------------|
+| **Årsak til avskrivning/fjerning** | For å støtte de siste versjonene av Visual Studio må det gjøres enkelte endringer i X++-utvidelser for Visual Studio. Disse endringene er ikke kompatible med Visual Studio 2015. |
+| **Erstattet med en annen funksjon?**   | Visual Studio 2017 vil erstatte Visual Studio 2015 som den distribuerte og påkrevde versjonen. |
+| **Berørte produktområder**         | Visual Studio-utviklingsverktøy |
+| **Distribusjonsalternativ**              | Alle |
+| **Status**                         | Når de nye virtuelle maskinene (VM-er) med Visual Studio 2017 kunngjøres, må eksisterende VM-er med bare Visual Studio 2015 distribueres på nytt via Lanseringsbølge 1 for 2021. |
 
 ### <a name="field-groups-containing-invalid-field-references"></a>Feltgrupper med ugyldige feltreferanser
 
