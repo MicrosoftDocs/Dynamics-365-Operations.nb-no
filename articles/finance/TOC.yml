@@ -1820,6 +1820,32 @@
                   items:
                     - name: Oversikt over India GST
                       href: localizations/apac-ind-gst.md
+                    - name: Hva som er nytt eller endret for APAC India GST-lokalisering
+                      items:
+                        - name: Hva er nytt eller endret i 10.0.0
+                          href: localizations/apac-ind-news-letter-10-0-00.md
+                        - name: Hva er nytt eller endret i 10.0.01
+                          href: localizations/apac-ind-news-letter-10-0-01.md
+                        - name: Hva er nytt eller endret i 10.0.02
+                          href: localizations/apac-ind-news-letter-10-0-02.md
+                        - name: Hva er nytt eller endret i 10.0.03
+                          href: localizations/apac-ind-news-letter-10-0-03.md
+                        - name: Hva er nytt eller endret i 10.0.04
+                          href: localizations/apac-ind-news-letter-10-0-04.md
+                        - name: Hva er nytt eller endret i 10.0.05
+                          href: localizations/apac-ind-news-letter-10-0-05.md
+                        - name: Hva er nytt eller endret i 10.0.06
+                          href: localizations/apac-ind-news-letter-10-0-06.md
+                        - name: Hva er nytt eller endret i 10.0.07
+                          href: localizations/apac-ind-news-letter-10-0-07.md
+                        - name: Hva er nytt eller endret i 10.0.08
+                          href: localizations/apac-ind-news-letter-10-0-08.md
+                        - name: Hva er nytt eller endret i 10.0.09
+                          href: localizations/apac-ind-news-letter-10-0-09.md
+                        - name: Hva er nytt eller endret i 10.0.10
+                          href: localizations/apac-ind-news-letter-10-0-10.md
+                        - name: Hva er nytt eller endret i 10.0.11
+                          href: localizations/apac-ind-news-letter-10-0-11.md
                     - name: Referansegrupper for India GST
                       href: localizations/apac-ind-gst-reference-groups.md
                     - name: GST-integrering for kassaapparater
@@ -2346,6 +2372,8 @@
                   href: localizations/emea-pol-interest-calculation.md
                 - name: Omsetnings- og saldoutdrag
                   href: localizations/emea-pol-turnover-balances-statement.md
+                - name: Dele kursforskjell for leverandør/kunde
+                  href: localizations/emea-pol-split-ap-ar-exchange-difference.md
             - name: Russland
               items:
                 - name: Oversikt over Russland
@@ -3408,8 +3436,10 @@
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-4.md?toc=/dynamics365/finance/toc.json
                         - name: Endre og kjøre formater for å bruke dokumentbehandlingsfiler
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-5.md?toc=/dynamics365/finance/toc.json
-                        - name: Feilsøke datakilder
-                          href: ../fin-ops-core/dev-itpro/analytics/er-debug-data-sources.md?toc=dynamics365/finance/toc.json
+                    - name: Feilsøke datakilder
+                      href: ../fin-ops-core/dev-itpro/analytics/er-debug-data-sources.md?toc=dynamics365/finance/toc.json
+                    - name: Bruke STREKKODE til å generere strekkodebilder
+                      href: ../fin-ops-core/dev-itpro/analytics/er-barcode-data-sources.md?toc=/dynamics365/finance/toc.json
                 - name: Konfigurere modelltilordninger
                   items:
                     - name: Konfigurere modelltilordninger for landkontekstavhengig ER
@@ -3418,18 +3448,20 @@
                       href: ../fin-ops-core/dev-itpro/analytics/tasks/er-manage-model-mapping-configurations-july-2017.md?toc=/dynamics365/finance/toc.json
                 - name: Konfigurere formater
                   items:
+                    - name: Velge modelldefinisjoner når du oppretter formater
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-select-data-model-definition-creating-er-format-july-2017.md?toc=/dynamics365/finance/toc.json
                     - name: Konfigurere ER-formater til å bruke parametere som angis per juridisk enhet
                       href: ../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-configure-format.md?toc=dynamics365/finance/toc.json
                     - name: Definere parameterne for et ER-format per juridisk enhet
                       href: ../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-set-up.md?toc=dynamics365/finance/toc.json
-                    - name: Velge modelldefinisjoner når du oppretter formater
-                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-select-data-model-definition-creating-er-format-july-2017.md?toc=/dynamics365/finance/toc.json
                     - name: Utsette utføring av ER-formatelementer
                       items:
                         - name: Utsette utføring av et sekvenselement
                           href: ../fin-ops-core/dev-itpro/analytics/er-defer-sequence-element.md?toc=dynamics365/finance/toc.json
                         - name: Utsette kjøring av et XML-element
                           href: ../fin-ops-core/dev-itpro/analytics/er-defer-xml-element.md?toc=dynamics365/finance/toc.json
+                    - name: Utforme flerspråklige rapporter
+                      href: ../fin-ops-core/dev-itpro/analytics/er-design-multilingual-reports.md?toc=/dynamics365/finance/toc.json
                 - name: Relativ bane i databindinger
                   href: ../fin-ops-core/dev-itpro/analytics/relative-path-data-bindings-er-models-format.md?toc=dynamics365/finance/toc.json
             - name: Bruke elektroniske rapporteringsløsninger i Finance and Operations
