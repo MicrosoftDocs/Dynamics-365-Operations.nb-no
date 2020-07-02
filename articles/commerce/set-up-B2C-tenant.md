@@ -17,12 +17,12 @@ ms.search.industry: retail
 ms.author: BriShoo
 ms.search.validFrom: 2020-02-13
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 22d62419c703c64470723cf82864a4782306ea8a
-ms.sourcegitcommit: 1b00e21faf89de8b3450936253a4c02cb4d12a3d
+ms.openlocfilehash: 9339b584c2d78e59f1a6b79d1610eef1581722c7
+ms.sourcegitcommit: 717346fb00c68a64ed58c846e89f41b80c7de9dd
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "3295275"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "3488768"
 ---
 # <a name="set-up-a-b2c-tenant-in-commerce"></a>Definere en B2C-leier i Commerce
 
@@ -91,7 +91,7 @@ Svar-URL-adresser er viktige, fordi de gir en tillatelsesliste for returdomener 
 
 I boksen **Svar-URL** på skjermen **Azure AD B2C-programmer \> Nytt program** må du legge til separate linjer for både områdedomet og (når miljøet er klargjort) den Commerce-genererte URL-en. Disse URL-adressene må alltid bruke et gyldig URL-format og må være basis-URLer (ingen etterfølgende skråstreker eller baner). Strengen ``/_msdyn365/authresp`` må deretter legges til de primære URL-adressene, som i følgende eksempler.
 
-- ``https://fabrikam.com/_msdyn365/authresp``
+- ``https://www.fabrikam.com/_msdyn365/authresp``
 - ``https://fabrikam-prod.commerce.dynamics.com/_msdyn365/authresp``
 
 ## <a name="create-user-flow-policies"></a>Opprette brukerflytpolicyer

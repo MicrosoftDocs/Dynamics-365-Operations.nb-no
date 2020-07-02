@@ -3,7 +3,7 @@ title: Produktsamlingsmoduler
 description: Dette emnet gir en oversikt over produktsamlingsmoduler i Microsoft Dynamics 365 Commerce.
 author: v-chgri
 manager: annbe
-ms.date: 01/07/2020
+ms.date: 06/18/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 069fa1cb6acad4b8d6618cebb754cbc0892ca9cf
-ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
+ms.openlocfilehash: 698bdd22cffad26bc9126fca5649f091fbeef4dd
+ms.sourcegitcommit: 49656661c89c864e8e067259a601c3bbceb8bef4
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "3025954"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "3464959"
 ---
 # <a name="product-collection-modules"></a>Produktsamlingsmoduler
 
@@ -72,16 +72,17 @@ Følgende tabell beskriver ulike typer produktsamlingsmoduler i Dynamics 365 Com
 
 Følg disse trinnene for å legge til en produktsamlingsmodul på en kategoriside.
 
-1. I Dynamics 365 Commerce går du til området og oppretter en side som bruker den samme malen som standard kategoriside.
-1. På sideoppsettet velger du sporet for **Underbunntekst**, velger ellipseknappen (**...**), og deretter velger du **Legg til modul**.
-1. I dialogboksen **Legg til modul** velger du **Container**, og deretter velger du **OK**.
-1. I containermodulen velger du ellipseknappen, og deretter velger du **Legg til modul**.
-1. I dialogboksen **Legg til modul** velger du **Produktsamling**, og deretter velger du **OK**.  
-1. Konfigurer innstillinger for å velge aktuell datakilde og inndata for produktsamlingen.
+1. Gå til **Sider**, og velg **Ny** for å opprette en ny side.
+1. I dialogboksen **Velg en mal** velger du den samme malen som brukes av standardkategorisiden. Under **Sidenavn** angir du et egnet navn og deretter **OK**.
+1. I **Underbunntekst**-sporet velger du ellipsen (**…**), og deretter velger du **Legg til modul**.
+1. I dialogboksen **Legg til modul** velger du **Beholder**-modulen, og deretter velger du **OK**.
+1. I **Beholder**-sporet velger du ellipsen (**…**), og deretter velger du **Legg til modul**.
+1. I dialogboksen **Legg til modul** velger du **Produktsamling**-modulen, og deretter velger du **OK**.  
 1. I egenskapsruten for produktsamlingsmodulen velger du **Legg til en produktliste**.
-1. I dialogboksen **Velg produktlistekonfigurasjon** velger du listetype, angir antall varer og velger eventuelle andre alternativer som er tilgjengelige for listetypen. Hvis du vil ha mer informasjon om listetyper, kan du se tabellen nedenfor. 
+1. I dialogboksen **Velg produktlistekonfigurasjon** velger du listetype, listekilden, og deretter angir du antall varer. Konfigurer eventuelle andre alternativer som er tilgjengelige for listetypen. Hvis du vil ha mer informasjon om listetyper, kan du se tabellen nedenfor. 
 1. Velg **OK**.
-1. Lagre siden, og publiser den.
+1. Velg **Lagre**, og velg deretter **Forhåndsvisning** for å forhåndsvise siden.
+1. Velg **Fullfør redigering** for å sjekke inn siden, og velg deretter **Publiser** for å publisere den.
 
 Følgende tabell viser listetypene som er tilgjengelige for valg i dialogboksen **Velg produktlistekonfigurasjon**.
 

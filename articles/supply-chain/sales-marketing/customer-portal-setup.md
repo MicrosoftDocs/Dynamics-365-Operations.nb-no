@@ -3,7 +3,7 @@ title: Installere, konfigurere og oppdatere kundeportalen
 description: Dette emnet inneholder lisensdetaljer og konfigurasjonsinstruksjoner for kundeportalen.
 author: dasani-madipalli
 manager: tfehr
-ms.date: 04/22/2020
+ms.date: 06/08/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: damadipa
 ms.search.validFrom: 2020-04-22
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: b9d1e742f78254d949dc49fda008d63b8bff4d65
-ms.sourcegitcommit: 713b5dfc76a6875d0ba6d86c5cbd585ea502cf9d
+ms.openlocfilehash: 0343100362c4d7bc3e09334fb7890919bdb84941
+ms.sourcegitcommit: 7d943499f302298c6ff127f56cecc34af6cee289
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/01/2020
-ms.locfileid: "3413994"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "3435614"
 ---
 # <a name="install-set-up-and-update-the-customer-portal"></a>Installere, konfigurere og oppdatere kundeportalen
 
@@ -35,7 +35,7 @@ For å implementere kundeportalen må du ha følgende lisenser:
 
 Kundeportalen er avhengig av Power Apps-portaler og dobbeltskriving, som vist i følgende illustrasjon.
 
-![![Avhengigheter for kundeportal](media/customer-portal-elements.png "Avhengigheter for kundeportal")](media/customer-portal-elements.png "Customer portal dependencies")
+![Avhengigheter for kundeportal](media/customer-portal-elements.png "Avhengigheter for kundeportal")
 
 Til forskjell fra andre funksjoner fra Supply Chain Management, ligger kundeportalmalen i Power Apps-portaler. Kundeportalen er derfor begrenset av funksjonaliteten og mulighetene som leveres av Power Apps-portaler og enhetene i dobbeltskriving.
 
@@ -59,7 +59,7 @@ Før du begynner, må du kontrollere at du allerede har fullført [den nødvendi
 
 1. Gå til [make.powerapps.com](https://make.powerapps.com/).
 2. Kontroller at du bruker miljøet der du har aktivert dobbeltskriving.
-3. I **Opprett**-kategorien ruller du ned til **Start fra mal**-delen, og velger malen som heter **Supply Chain Management-kunde**.
+3. I **Opprett**-kategorien ruller du ned til **Start fra mal**-delen og velger malen som heter **Kundeportal**.
 4. Følg instruksjonene på skjermen.
 
 Når klargjøringen er fullført, får du tilgang til kundeportalen i **Dine apper**-delen av **Hjem**-siden.
@@ -71,7 +71,7 @@ Når klargjøringen er fullført, får du tilgang til kundeportalen i **Dine app
 
 Du kan legge til flere funksjoner i kundeportalen senere. Alle endringer som Microsoft gjør i de underliggende løsningskomponentene, vises automatisk i miljøet ditt. Nettstedet som er klargjort i miljøet ditt, vil imidlertid ikke automatisk gjenspeile endringer som gjøres i konfigurasjonsdataene. Du må ta i bruk disse endringene manuelt ved å hente koden fra den nye malen og flette den sammen med det klargjorte nettstedet.
 
-## <a name="resources"></a>Ressurser
+## <a name="additional-resources"></a>Tilleggsressurser
 
 Hvis du vil lære hvordan du kan definere og tilpasse kundeportalen, bør du starte med å se gjennom følgende dokumentasjon for den underliggende teknologien:
 

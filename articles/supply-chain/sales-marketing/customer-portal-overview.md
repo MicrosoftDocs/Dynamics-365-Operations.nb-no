@@ -3,7 +3,7 @@ title: Kundeportal for Dynamics 365 Supply Chain Management – oversikt
 description: Dette emnet introduserer kundeportalen og forklarer hvem som bør bruke den, samt hvordan den fungerer.
 author: dasani-madipalli
 manager: tfehr
-ms.date: 04/22/2020
+ms.date: 06/16/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: damadipa
 ms.search.validFrom: 2020-04-22
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: 6b57365d8042c1d791ee2c50c5458a6595a58270
-ms.sourcegitcommit: 713b5dfc76a6875d0ba6d86c5cbd585ea502cf9d
+ms.openlocfilehash: 709ba18be9e2edd5d0a7f143aaed5ef94f365b91
+ms.sourcegitcommit: 9a2e9f7dfec47c42178bb67a3e099e610515baf3
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/01/2020
-ms.locfileid: "3413993"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "3456932"
 ---
 # <a name="customer-portal-for-dynamics-365-supply-chain-management-overview"></a>Kundeportal for Dynamics 365 Supply Chain Management – oversikt
 
@@ -37,6 +37,12 @@ Kundeportalmalen har alle tilpasningsmulighetene som portalfunksjonen i Power Ap
 
 > [!NOTE]
 > Dokumentasjonen for kundeportalen er rettet mot administratorer, tilpassere og systemintegratorer som vil konfigurere kundeportalen for en Supply Chain Management-installasjon. Den bruker begrepene _kunde_ og _bruker_ for å beskrive personer som er kunder av organisasjonen som kjører Supply Chain Management, og som kommer til å bruke den endelige portalen.
+
+## <a name="video"></a>Video
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4ylwW]
+
+Videoen [Oversikt over kundeportalmalen i Dynamics 365 Supply Chain Management](https://youtu.be/nPrqoLuHfV8) (vist over) er inkludert i [Finance and Operations-spillelisten](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) som er tilgjengelig på YouTube.
 
 ## <a name="who-should-use-it"></a>Hvem bør bruke den?
 
@@ -58,6 +64,6 @@ Kundeportalen leveres som en mal for Power Apps-portaler. Den er avhengig av Pow
 
 [Dobbeltskriving](https://docs.microsoft.com/powerapps/maker/portals/overview) er et integrert infrastrukturprodukt som gir nær sanntidsinteraksjon mellom modelldrevne apper i Dynamics 365 og Finance and Operations-apper. Dobbeltskriving gir toveisintegrering mellom Finance and Operations-apper og Common Data Service. Derfor gir den en integrert brukeropplevelse på tvers av appene. Kundeportalen er avhengig av enheter som er synkronisert med dobbeltskriving. Før data fra Supply Chain Management kan vises i kundeportalen, må dobbeltskriving aktiveres for alle de aktuelle enhetene.
 
-![![Avhengigheter for kundeportal](media/customer-portal-elements.png "Avhengigheter for kundeportal")](media/customer-portal-elements.png "Customer portal dependencies")
+![Avhengigheter for kundeportal](media/customer-portal-elements.png "Avhengigheter for kundeportal")
 
 Kundeportalen fungerer som et utgangspunkt for organisasjoner som vil bruke Power Apps-portaler til å bygge et eksternt-rettet nettsted som bruker data fra organisasjonens Supply Chain Management-installasjon. Den hjelper organisasjoner med å koble sammen dobbeltskriving, Supply Chain Management og Power Apps-portaler.

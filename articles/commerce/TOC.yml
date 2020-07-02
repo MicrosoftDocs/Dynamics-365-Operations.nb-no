@@ -74,7 +74,7 @@
                   href: ../fin-ops-core/dev-itpro/deployment/france-local-deployment.md?toc=/dynamics365/commerce/toc.json
             - name: Oppgradering og N-1-støtte
               items:
-                - name: Støtte for oppgradering og N-1 for Retail
+                - name: Støtte for oppgradering og N-1 for Commerce
                   href: dev-itpro/overview-upgrade-n-minus1.md
                 - name: 'Installasjon, konfigurasjon og overgang for distribusjon i faser (N-1)'
                   href: dev-itpro/n-1-installation-configuration.md
@@ -94,8 +94,6 @@
                       href: get-started/whats-new-commerce-10-0-11.md
                     - name: Commerce 10.0.10 (mai 2020)
                       href: get-started/whats-new-commerce-10-0-10.md
-                    - name: Commerce 10.0.9 (april 2020)
-                      href: get-started/whats-new-10-0-9.md
                 - name: Funksjoner som er fjernet eller avskrevet
                   items:
                     - name: Funksjoner som er fjernet eller avskrevet i Finance and Operations
@@ -504,6 +502,8 @@
                       href: dev-itpro/adyen-connector-listPI.md
                     - name: Sterk kundegodkjenning (SCA) ved hjelp av Adyen-koblingen
                       href: adyen_redirect.md
+                    - name: Dedikerte betalingsterminaler og ledetekster for en skriver og kassaskuff
+                      href: pos-multi-hws.md
                     - name: Sømløs bryter for frakoblet modus for gavekort- og kreditnotaoperasjoner
                       href: dev-itpro/seamless-offline-improvements.md
                     - name: Definere scenarier for betaling av faktura
@@ -572,6 +572,10 @@
                       href: set-up-bar-codes.md
                     - name: Definere strekkodemasker
                       href: set-up-bar-code-masks.md
+                - name: Garantier
+                  items:
+                    - name: Opprette og konfigurere utvidede garantier
+                      href: extended-warranty.md
             - name: Priser og rabatter
               items:
                 - name: Rabatter
@@ -974,7 +978,7 @@
                       href: cart-icon-module.md
                     - name: Kassemodul
                       href: add-checkout-module.md
-                    - name: Ordrebekreftelsesmodul
+                    - name: Ordredetaljermodul
                       href: order-confirmation-module.md
                     - name: Butikkvelgermodul
                       href: store-selector.md
@@ -1896,6 +1900,8 @@
                       href: e-commerce-extensibility/setup-dev-environment.md
                     - name: Konfigurere en utviklingsmiljøfil (.env)
                       href: e-commerce-extensibility/configure-env-file.md
+                    - name: Feilsøke mot et Commerce-utviklingsmiljø på lag 1
+                      href: e-commerce-extensibility/debug-tier-1.md
                     - name: Definere kodedeling for Azure DevOps og definere et versjonsforløp
                       href: e-commerce-extensibility/set-up-code-sharing-build-pipeline.md
                 - name: Plattformoversikt
@@ -2028,6 +2034,8 @@
                   href: dev-itpro/retail-sdk/retail-sdk-packaging.md
                 - name: Utvikling i skydriftede utviklingsmiljøer uten administratortilgang
                   href: dev-itpro/cloud-dev-box.md
+                - name: Konfigurere SDK-kompileringskontroll i Commerce
+                  href: dev-itpro/retail-sdk/SDK-build-pipeline.md
             - name: Utvidelsesmuligheter for salgssted
               items:
                 - name: Skjermoppsett for salgssted
@@ -2102,7 +2110,7 @@
                   href: dev-itpro/call-crt-service-offline.md
                 - name: Opprette ny Retail-serverutvidelse
                   href: dev-itpro/retail-server-extension.md
-                - name: 'Retail Typescript og C#-proxyer'
+                - name: Retail Typescript og C#-proxyer
                   href: dev-itpro/typescript-proxy-retail-pos.md
             - name: Commerce Runtime (CRT) utvidelsesmulighet
               items:

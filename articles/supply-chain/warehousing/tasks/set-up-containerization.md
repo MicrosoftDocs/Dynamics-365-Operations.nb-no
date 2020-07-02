@@ -3,7 +3,7 @@ title: Definere containerbruk
 description: Dette emnet beskriver hvordan du automatiserer containerbruken av laster i Lagerstyring.
 author: ShylaThompson
 manager: tfehr
-ms.date: 07/22/19
+ms.date: 07/22/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.industry: Distribution
 ms.author: mirzaab
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: f0f042e6ffe5ecf01b9e5044fc83d081528fbc56
-ms.sourcegitcommit: 8a2127c5af6cdbda30ccc1f9bef9bd4ab61e9e50
+ms.openlocfilehash: d08b89ac32b8ec40ae9dff15dbbd3264800cfb1a
+ms.sourcegitcommit: ac47e8679fb104515f7dcca509294264bd05d2b1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/18/2020
-ms.locfileid: "3383303"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "3454724"
 ---
 # <a name="set-up-containerization"></a>Definere containerbruk
 
@@ -75,7 +75,7 @@ Dette emnet beskriver hvordan du automatiserer containerbruken av laster i Lager
 5. Skriv inn en verdi i feltet **Bølgetrinn**.
 6. Merk av for **Tillat oppdeling av plukking**.
 7. Velg **Lagre**.
-8. Velg **Begrensninger for containerkombinasjoner.** Blanding av brudd i kombinasjonslogikk lar deg definere regler for pakketildelingslinjer i containere. Hvis du for eksempel legger til feltet **Varenummer** når varer tildeles containere, opprettes en ny container når det er et nytt varenummer. Dette er vil hindre at ansatte pakker tildelingslinjer for to ulike kunder i den samme containeren.  
+8. Velg **Begrensninger for containerkombinasjoner**. Blanding av brudd i kombinasjonslogikk lar deg definere regler for pakketildelingslinjer i containere. Hvis du for eksempel legger til feltet **Varenummer** når varer tildeles containere, opprettes en ny container når det er et nytt varenummer. Dette er vil hindre at ansatte pakker tildelingslinjer for to ulike kunder i den samme containeren.  
 9. Velg **Ny**.
 10. Velg et alternativ i feltet **Tabell**.
 11. Angi eller velg en verdi i feltet **Feltvalg**.
