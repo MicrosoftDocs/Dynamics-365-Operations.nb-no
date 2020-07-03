@@ -1,9 +1,9 @@
 ---
 title: Oversikt over funksjonsbehandling
 description: Dette emnet beskriver funksjonen Funksjonsbehandling og hvordan du kan bruke den.
-author: mikefalkner
+author: ChrisGarty
 manager: AnnBe
-ms.date: 09/12/2019
+ms.date: 06/12/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -13,17 +13,17 @@ audience: IT Pro, Application user
 ms.reviewer: sericks
 ms.search.scope: Operations, Core
 ms.search.region: Global
-ms.author: mfalkner
+ms.author: cgarty
 ms.search.validFrom:
 - month/year of release that feature was introduced in
 - in format yyyy-mm-dd
 ms.dyn365.ops.version: 10.0.2
-ms.openlocfilehash: a9be51c4a5cdadd968de160dc0b1406c95382eeb
-ms.sourcegitcommit: 260a820038c29f712e8f1483cca9315b6dd3df55
+ms.openlocfilehash: 416c19dcf5b2c983afff7d2e8a9797fb0c0e2780
+ms.sourcegitcommit: 218e22014a964b8b52fc0152e355b07b0b84ae2c
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "2778711"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "3456603"
 ---
 # <a name="feature-management-overview"></a>Oversikt over funksjonsbehandling
 
@@ -144,3 +144,34 @@ Funksjonsbehandling lar deg styre funksjonene som leveres i hver versjon. Testve
 ## <a name="using-feature-management-to-turn-on-isv-features-or-custom-features"></a>Bruke Funksjonsbehandling til å aktivere ISV-funksjoner eller egendefinerte funksjoner
 
 Funksjonsbehandling er for øyeblikket ikke tilgjengelig for funksjoner fra uavhengige programvareleverandører og egendefinerte funksjoner. Microsoft legger imidlertid til flere funksjoner for å forbedre Funksjonsbehandling. Etter at disse forbedringene er fullført, vil Microsoft gjøre Funksjonsbehandling tilgjengelig for alle funksjoner og gi instruksjoner for hvordan du kan oppdatere funksjonene for å bruke den.
+
+## <a name="frequently-asked-questions-faq"></a>Vanlige spørsmål
+
+### <a name="when-are-features-added-removed-or-changed"></a>Når blir funksjoner lagt til, fjernet eller endret? 
+Funksjoner legges til, fjernes og endres gjennom kodeendringer. Miljø må oppdateres for å kunne motta disse endringene.
+
+### <a name="does-a-feature-become-mandatory-automatically"></a>Blir en funksjon obligatorisk automatisk? 
+Nei, det at en funksjon blir obligatorisk, er ikke en automatisk handling. Produktgruppene må gjøre en kodeendring.
+
+### <a name="when-do-features-become-mandatory"></a>Når blir funksjoner obligatoriske? 
+Policyen er at alle nye funksjoner vil kunne velges i en 12-måneders periode og krever ingen endringsbehandling før du aktiverer funksjonen. Produktgruppene kan velge om de vil gjøre en funksjon obligatorisk etter at perioden er avsluttet. 
+
+### <a name="why-isnt-there-a-specific-mandatory-enabled-date"></a>Hvorfor er det ikke en bestemt "obligatorisk aktivert-dato"? 
+Tidspunkt for frigivelse av oppdatering varierer, miljøoppdateringstidspunkt varierer, og kunder kan velge å hoppe over enkelte oppdateringer. Derfor er bestemte datoer er vanskelige å bestemme. 
+
+### <a name="wheres-the-documentation-for-features-that-are-being-made-mandatory"></a>Hvor er dokumentasjonen for funksjoner som gjøres obligatoriske? 
+Denne dokumentasjonen kommer fra programgruppene. Disse er ofte nevnt i [Funksjoner som er fjernet eller avskrevet](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/migration-upgrade/deprecated-features). 
+
+### <a name="is-there-an-in-product-notification-or-signal-that-a-feature-is-going-to-be-mandatory-enabled"></a>Finnes det et varsel eller signal i produktet om at en funksjon skal bli obligatorisk aktivert? 
+En varslingsmekanisme som er knyttet til å gjøre en funksjon obligatorisk, finnes ikke i dag.
+
+### <a name="do-features-ever-get-enabled-without-the-customer-knowing-about-it"></a>Blir funksjoner noen gang aktivert uten at kunden vet om det? 
+Ja, hvis funksjonene ikke har en funksjonell innvirkning, kan de aktiveres som standard.
+
+### <a name="what-is-feature-flighting-and-how-does-it-relate-to-feature-management"></a>Hva er testversjonering, og hvordan er det knyttet til funksjonshåndtering? 
+Testversjonering av funksjoner er på/av-brytere i sanntid som Microsoft styrer. De er atskilt fra kundekontrollen som er levert av Funksjonsbehandling. 
+- Funksjoner for privat forhåndsvisning blir ikke oppført i Funksjonsbehandling før de gjøres tilgjengelige. I produksjon må kunden godta å være en del av et spesialprogram for at dette skal skje.
+- Offentlig forhåndsversjon og utgitte (generelt tilgjengelige) funksjoner vises i Funksjonsbehandling med mindre de er gjort utilgjengelige. Det å gjøre en funksjon utilgjengelig blir ansett som en siste utvei for produktteamene hvis et kritisk problem blir funnet, og er vanligvis en per-kunde-operasjon.
+
+### <a name="do-features-ever-get-flighted-off-without-the-customer-knowing-about-it"></a>Blir funksjoner noen gang gjort utilgjengelige uten at kunden vet om det? 
+Ja, hvis en funksjon påvirker virkemåten til et miljø som ikke har en funksjonell innvirkning, kan de aktiveres som standard.

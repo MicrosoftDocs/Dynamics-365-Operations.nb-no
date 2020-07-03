@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
 ms.technology: ''
-ms.search.form: ''
+ms.search.form: FeatureManagementWorkspace
 audience: Application User
 ms.reviewer: anbichse
 ms.search.scope: Human Resources
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-05-18
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 423ec36a73e8af9d915c5cfe16bd4d552448e2b6
-ms.sourcegitcommit: d1541831d556b722a71aed442043ffb4a4576d87
+ms.openlocfilehash: 36684710e39c27840cc4aaa259a85579104fd8d6
+ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/20/2020
-ms.locfileid: "3388122"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "3431136"
 ---
 # <a name="human-resources-app-in-teams"></a>Human Resources-app i Teams
 
@@ -45,6 +45,7 @@ Hvis du vil ha informasjon om hvordan du administrerer apptillatelser i Teams, k
 
 | Avgang | Status |
 | --- | --- |
+| Feil: Det oppstod et problem under søk etter et miljø å koble til. | Du kan få denne feilmeldingen selv om du har bekreftet at brukeren har tilgang til ett eller flere HR-miljøer. I tillegg vil du kanskje ikke se alle de forventede miljøene. Til vi har løst problemet, sletter du brukeren og importerer vedkommende på nytt for å løse problemet. |
 | Balansen er feil når du sender inn fridager for en fremtidig dato. | Prognoser er ennå ikke tilgjengelige. Saldoen vises for den gjeldende datoen. |
 | Når antall timer i en eksisterende forespørsel reduseres, vil den **gjenværende saldoen** gå ned i stedet for opp. | Vi vil håndtere dette kjente problemet i fremtiden. Visningen er feil, men de riktige beløpene justeres ved innsending. |
 | To kort for **Kommende fridager** vises for samme dato. | Kortene representerer atskilte innsendinger. Vi vil fortsette å registrere tilbakemeldinger og gjøre justeringer. |

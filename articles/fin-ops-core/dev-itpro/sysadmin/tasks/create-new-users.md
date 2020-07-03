@@ -3,7 +3,7 @@ title: Opprette nye brukere
 description: Brukere er interne ansatte i din organisasjon, eller eksterne kunder og leverandører, som trenger tilgang til systemet for å utføre jobbene sine.
 author: maertenm
 manager: AnnBe
-ms.date: 02/06/2020
+ms.date: 06/08/2020
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: maertenm
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 9db4b6d355d6499bce6c550b2fbe76b82cf69fd4
-ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
+ms.openlocfilehash: d126b449074663772549b96b86acb53db971a5d4
+ms.sourcegitcommit: 7d943499f302298c6ff127f56cecc34af6cee289
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3143587"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "3435590"
 ---
 # <a name="create-new-users"></a>Opprette nye brukere
 
@@ -50,8 +50,9 @@ Brukere utenfor leieren som miljøet ble distribuert i, må representeres i kata
 10. Velg **Lagre**.
 
 ## <a name="import-users"></a>Importer brukere
-1. Velg **Importer brukere** i handlingsruten.
-2. Merk den valgte raden i listen.
-3. Velg **Importer brukere**.
-4. Velg **Lukk**.
+1. Gå til **Systemadministrasjon \> Brukere \> Brukere**.
+2. Velg **Importer brukere** i handlingsruten.
+3. Merk den valgte raden i listen.
+4. Velg **Importer brukere**.
+5. Velg **Lukk**.
 

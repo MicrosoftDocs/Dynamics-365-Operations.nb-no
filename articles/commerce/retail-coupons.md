@@ -3,7 +3,7 @@ title: Definere kuponger for detaljhandelssalg
 description: Dette emnet gir en oversikt over kuponger, og forklarer hvordan du foretar oppsettet.
 author: scott-tucker
 manager: AnnBe
-ms.date: 05/22/2017
+ms.date: 06/04/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -18,12 +18,12 @@ ms.search.industry: retail
 ms.author: scotttuc
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 4c580e40ae1f0398ab9f8437d42ddcb2979558c3
-ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
+ms.openlocfilehash: a07bed244152327047efd68cfacb329a722c0049
+ms.sourcegitcommit: 97206552616b248f88e516fea08b3f059257e8d1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "3057377"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "3431984"
 ---
 # <a name="set-up-coupons-for-retail-sales"></a>Definere kuponger for detaljhandelssalg
 
@@ -48,8 +48,10 @@ Du kan konfigurere kuponger som kuponger med begrenset bruk. Bruksgrensen kan de
 
 Grensen brukes per kode på en kupong. En engangskupong som har to kupongkoder, kan for eksempel brukes to ganger: én gang for hver kupongkode. Hver kode i en kupong kan uavhengig settes til aktiv.
 
+Kupongene kan brukes i alle salgskanaler, men kuponger med begrensninger kan bare brukes for telefonsenterordrer der **Ordrefullføring**-innstillingen er aktivert for telefonsenteret. Hvis denne innstillingen ikke er aktivert, kan bare ubegrensede kuponger brukes i telefonsenterordre.
+
 > [!NOTE]
-> Når grensen for bruk av en kupongkode er nådd, endrer *ikke* systemet automatisk statusen for kupongkoden til "Brukes". Systemet tillater imidlertid ikke ytterligere bruk av en kuponfkode som har nådd grensen for bruk. Hvis statusen for en kupongkode er manuelt satt til annet enn "Aktiv", kan ikke denne kupongkoden som ikke kan brukes i noen kanaler.
+> Når grensen for bruk av en kupongkode er nådd, endrer *ikke* systemet automatisk statusen for kupongkoden til "Brukes". Denne kupongkoden har imidlertid nådd bruksgrensen, og kan ikke brukes. Hvis statusen for en kupongkode er manuelt satt til annet enn **Aktiv**, kan ikke denne kupongkoden som ikke kan brukes i noen kanaler.  
 
 ## <a name="managing-coupons"></a>Behandle kuponger
 

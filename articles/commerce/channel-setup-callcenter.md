@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 14cee020cc8aead627180343c82bf23534ae83c4
-ms.sourcegitcommit: 0681a00d60c9f8cc8f7b9888b8c5ddf07279fc04
+ms.openlocfilehash: bdaabad39484cb12537bc5f94c34dcb2575a5b2f
+ms.sourcegitcommit: ef27189efc15ce79c3c31ce2e41ef8a606fc5429
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "3131737"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "3410419"
 ---
 # <a name="set-up-a-call-center-channel"></a>Definere en telefonsenterkanal
 
@@ -34,7 +34,7 @@ Dette emnet beskriver hvordan du oppretter en ny telefonsenterkanal i Microsoft 
 ## <a name="overview"></a>Oversikt
 
 
-I Dynamics 365 Commerce er et telefonsenter en type detaljhandelskanal som kan defineres i programmet. Ved å definere en kanal for telefonsenterenheter kan systemet knytte bestemte data og ordrebehandlingsstandarder til salgsordrer. Selv om et firma kan definere flere telefonsenterkanaler i Commerce, er det viktig å være oppmerksom på at en enkelt bruker bare kan kobles til én telefonsenterkanal. 
+I Dynamics 365 Commerce er et telefonsenter en type Commerce-kanal som kan defineres i programmet. Ved å definere en kanal for telefonsenterenheter kan systemet knytte bestemte data og ordrebehandlingsstandarder til salgsordrer. Selv om et firma kan definere flere telefonsenterkanaler i Commerce, er det viktig å være oppmerksom på at en enkelt bruker bare kan kobles til én telefonsenterkanal. 
 
 Før du oppretter en ny telefonsenterkanal, må du kontrollere at du har oppfylt [Forutsetninger for kanaloppsett](channels-prerequisites.md).
 
@@ -84,7 +84,7 @@ Hvis du vil definere betalingsmåter, følger du disse trinnene for hver betalin
 
 Bildet nedenfor viser et eksempel på en kontantbetalingsmåte.
 
-![Eksempel på betalingsmåter](media/channel-setup-retail-5.png)
+![Eksempel på betalingsmåter](media/channel-setup-callcenter-payments.png)
 
 ### <a name="set-up-modes-of-delivery"></a>Definer leveringsmåter
 

@@ -3,12 +3,12 @@ title: Avsett permisjons- og fraværsplaner
 description: Du kan avsette permisjon og fravær i Dynamics 365 Human Resources for flere ansatte eller for en enkeltperson.
 author: andreabichsel
 manager: AnnBe
-ms.date: 04/01/2020
+ms.date: 06/01/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
 ms.technology: ''
-ms.search.form: ''
+ms.search.form: LeavePlanFormPart, LeaveAbsenceWorkspace
 audience: Application User
 ms.reviewer: anbichse
 ms.search.scope: Human Resources
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 3048f9b6b52a150219067430abb54e5b5bf5c3e4
-ms.sourcegitcommit: 79f8aa2c0b166a423db9b8503da53e96e3fc43dc
+ms.openlocfilehash: f045cb7ab9f5e7aa4259f29e1b026f110425c236
+ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "3197319"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "3429065"
 ---
 # <a name="accrue-leave-and-absence-plans"></a>Avsett permisjons- og fraværsplaner
 
@@ -103,7 +103,19 @@ Slett avsetningsposter for en spesifikk plan og et bestemt datoområde. Avsetnin
 
 2. Under **Administrer permisjon** velger du **Slett permisjonsavsetningsrevisjon**.
 
+## <a name="configure-preview-features"></a>Konfigurere forhåndsversjonsfunksjoner
+
+[!include [banner](includes/preview-feature-leave-absence.md)]
+
+Hvis du har aktivert forhåndsversjonsfunksjoner for permisjon og fravær, må du konfigurere innstillinger for dem også.
+
+### <a name="accrue-leave-per-company-or-per-leave-plan"></a>Avsett permisjon per firma eller per permisjonsplan
+
+Når du avsetter permisjons- og fraværsplaner, kan du velge å avsette for alle firmaer. Hvis du velger alle firmaer, kan du ikke velge individuelle permisjonsplaner. Hvis du velger ikke å avsette for alle firmaer, kan du avsette for en bestemt permisjonsplan. 
+
+Disse alternativene er tilgjengelige når du avsetter for alle ansatte eller enkeltansatte. 
+
 ## <a name="see-also"></a>Se også
 
-- [Oversikt over permisjon og fravær](hr-leave-and-absence-overview.md)
-- [Opprette en permisjons- og fraværsplan](hr-leave-and-absence-plans.md)
+[Oversikt over permisjon og fravær](hr-leave-and-absence-overview.md)</br>
+[Opprette en permisjons- og fraværsplan](hr-leave-and-absence-plans.md)

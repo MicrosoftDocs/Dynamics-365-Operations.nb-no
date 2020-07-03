@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: v-olbara
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: 10.0.3
-ms.openlocfilehash: e879ec53a88e5e30257608cba7604b404ac2368a
-ms.sourcegitcommit: 8a2127c5af6cdbda30ccc1f9bef9bd4ab61e9e50
+ms.openlocfilehash: e11ccdf138adbf05ae1fc8ef739687b9212ae1fe
+ms.sourcegitcommit: 52ba8d3e6af72df5dab6c04b9684a61454d353ad
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/18/2020
-ms.locfileid: "3383832"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "3403341"
 ---
 # <a name="configure-shipment-consolidation-policies"></a>Konfigurere policyer for forsendelseskonsolidering
 
@@ -270,7 +270,7 @@ I dette eksemplet skal du opprette en policy av typen *Kunder som tillater konso
 
 - Policyen vil spørre etter en bestemt ordrepulje for å identifisere kunder som godtar konsoliderte forsendelser.
 - Konsolidering med åpne forsendelser er deaktivert.
-- Konsolidering skjer på tvers av ordrer ved hjelp av feltene som velges som standard av CrossOrder-policyen (for å replikere den tidligere avmerkingsboksen **Lager**).
+- Konsolidering skjer på tvers av ordrer ved hjelp av feltene som velges som standard av CrossOrder-policyen (for å replikere den tidligere avmerkingsboksen **Konsolider forsendelse ved frigivelse til lager**).
 
 - Du kan overstyre regelen for en salgsordre ved å velge en annen ordrepulje.
 
@@ -306,7 +306,7 @@ I dette eksemplet skal du opprette en policy av typen *Lagere som tillater konso
 
 - Policyen vil spørre etter en bestemt ordrepulje for å identifisere lagere som kan konsoliderte forsendelser.
 - Konsolidering med åpne forsendelser er deaktivert.
-- Konsolidering skjer på tvers av ordrer ved hjelp av feltene som velges som standard av CrossOrder-policyen (for å replikere den tidligere avmerkingsboksen **Lager**).
+- Konsolidering skjer på tvers av ordrer ved hjelp av feltene som velges som standard av CrossOrder-policyen (for å replikere den tidligere avmerkingsboksen **Konsolider forsendelse ved frigivelse til lager**).
 
 Denne forretningssaken kan vanligvis løses ved hjelp av standardpolicyene du opprettet i [Scenario 1](#scenario-1). Du kan imidlertid også opprette lignende policyer manuelt ved å følge disse trinnene.
 

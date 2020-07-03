@@ -3,7 +3,7 @@ title: Kampanjebannermodul
 description: Dette emnet dekker kampanjebannermoduler og beskriver hvordan du legger dem til områdesider i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
-ms.date: 04/14/2020
+ms.date: 05/28/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -18,15 +18,14 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 12cabbf0b8d9f337f15a8cd6cb1f2a85100b75f7
-ms.sourcegitcommit: 7a1d01122790b904e2d96a7ea9f1d003392358a6
+ms.openlocfilehash: dae824cdbaaf56f85f125c5f36aaa56171bbd6bc
+ms.sourcegitcommit: b52477b7d0d52102a7ca2fb95f4ebfa30ecd9f54
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "3269780"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "3411371"
 ---
 # <a name="promo-banner-module"></a>Kampanjebannermodul
-
 
 [!include [banner](includes/banner.md)]
 
@@ -48,9 +47,15 @@ Kampanjebannere kan brukes i områdehodet til å vise kampanjer eller meldinger 
 
 "Gjør store besparelse på skolestartsalget. Handle nå. "
 
+"Nyttårssalget er her!" 
+
+Bildet nedenfor viser et eksempel på en kampanjebanner.
+
+![Eksempel på en kampanjebannermodul](./media/ecommerce-Promobanner.PNG)
+
 ## <a name="promo-banner-module-properties"></a>Egenskaper for kampanjebannermodul
 
-| Egenskapsnavn             | Value                              | Beskrivelse |
+| Egenskapsnavn             | Verdi                              | beskrivelse |
 |---------------------------|------------------------------------|-------------|
 | Bannermeldinger           | Tekst og koblinger                     | En matrise med tekst og koblinger. |
 | Automatisk avspilling                  | **Sann** eller **Usann**              | En verdi som angir om meldinger gås gjennom automatisk hvis flere meldinger er konfigurert. |
@@ -64,7 +69,7 @@ Kampanjebannere kan brukes i områdehodet til å vise kampanjer eller meldinger 
 
 Hvis du vil legge til en kampanjebannermodul på en side og angi de nødvendige egenskapene, følger du disse trinnene.
 
-1. Velg **Ny** for å opprette en sidemal.
+1. Gå til **Maler**, og velg **Ny** for å opprette en ny mal.
 1. I dialogboksen **Ny mal**, under **Malnavn**, angir du **Kampanjebannermal**, og velger deretter **OK**.
 1. Under **Sideoppsett** legger du til en **Standardside**-modul i **Meldingstekst**-sporet. 
 1. Velg **Fullfør redigering** for å sjekke inn malen, og velg deretter **Publiser** for å publisere den. 
@@ -74,7 +79,7 @@ Hvis du vil legge til en kampanjebannermodul på en side og angi de nødvendige 
 1. Under **Sideoppsett** legger du til en kampanjebannermodul i containermodulen.
 1. Legg til en eller flere bannermeldinger i innstillingene for bannermodulen. Hver melding kan inneholde tekst sammen med en kobling. Du kan redigere de andre egenskapene hvis du vil tilpasse modulen ytterligere.
 1. Velg **Lagre**, og velg deretter **Forhåndsvisning** for å forhåndsvise siden. Øverst på siden vil du se et varsel som angir teksten du la til.
-1. Velg **Fullfør redigering** for å sjekke inn siden, og velg deretter **Publiser** for å publisere den. 
+1. Velg **Fullfør redigering** for å sjekke inn siden, og velg deretter **Publiser** for å publisere den.
 
 > [!NOTE]
 > Et kampanjebanner brukes vanligvis i sporet for sideoverskrift eller et spor for underoverskrift.

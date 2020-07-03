@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 55820d7376750c210d2b7f214f705ffcb222c6cd
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 0513392fe066e02f0789bcfadb0ee676559cb223
+ms.sourcegitcommit: f3456df4d91cf0c51cd395ae64e3c192bd46835e
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3212509"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "3428406"
 ---
 # <a name="production-setup-requirements"></a>Krav til produksjonsoppsett
 
@@ -71,7 +71,7 @@ Hvis du arbeider med ruter, må du definere operasjoner for hver produksjonsrute
 2.  **Kostgrupper** – Konfigurer kostgrupper for å opprette og vedlikeholde forskjellige typer etterkalkulering.
 3.  **Rutegrupper** – Konfigurer rutegrupper for å definere parametere som er relatert til grupper av ruter. Du må konfigurere rutegruppene før du oppretter produksjonsruter.
 4.  **Ruter** – Konfigurer produksjonsruter, og definer standardinnstillinger for å styre planlegging, etterkalkulering og prissetting av ruteoperasjoner samt rapport om fremdrift.
-5.  **Ruter** – Konfigurer ruteversjoner for å aktivere varevariasjoner i produksjonen.
+5.  **Ruteversjon** – Konfigurer ruteversjoner for å aktivere varevariasjoner i produksjonen.
 
 ## <a name="optional-advanced-settings"></a>Valgfrie, avanserte innstillinger
 1.  **Produksjonsgrupper** – Konfigurer produksjonsgrupper for å fastsette forhold mellom produksjonsordren og finanskontoene. Finanskontoene brukes til å postere eller gruppere ordrene for rapportering.

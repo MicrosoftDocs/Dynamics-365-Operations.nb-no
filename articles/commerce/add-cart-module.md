@@ -3,7 +3,7 @@ title: Handlekurvmodul
 description: Dette emnet dekker handlekurvmoduler og beskriver hvordan du legger dem til områdesider i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
-ms.date: 04/13/2020
+ms.date: 05/28/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,15 +17,16 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: d91f6ff24f8f2c051ed23565983c2bc6a2c12b55
-ms.sourcegitcommit: ac966ea3a6c557fb5f9634b187b0e788d3e82d4d
+ms.openlocfilehash: 3ba46fd90507a9cf8da92598c8449a2e553da352
+ms.sourcegitcommit: b52477b7d0d52102a7ca2fb95f4ebfa30ecd9f54
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "3261427"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "3411279"
 ---
 # <a name="cart-module"></a>Handlekurvmodul
 
+[!include [banner](includes/preview-banner.md)]
 [!include [banner](includes/banner.md)]
 
 Dette emnet dekker handlekurvmoduler og beskriver hvordan du legger dem til områdesider i Microsoft Dynamics 365 Commerce.
@@ -36,7 +37,11 @@ En handlekurvmodul viser varene som er lagt til i handlekurven før kunden går 
 
 Handlekurvmodulen støtter pålogget utsjekking og Sjekk ut som gjest. Den støtter også koblingen **Tilbake til shopping**. Du kan konfigurere ruten for denne koblingen under **Områdeinnstillinger \> Utvidelser \> Ruter**.
 
-Handlekurvmodulen gjengir data basert på handlekurv-IDen, som er en informasjonskapsel i leseren som er tilgjengelig i hele området.
+Handlekurvmodulen gjengir data basert på handlekurv-IDen, som er en informasjonskapsel i leseren som er tilgjengelig i hele området. 
+
+Bildet nedenfor viser et eksempel på en handlekurvside på Fabrikam-området.
+
+![Eksempel på en handlevognmodul](./media/cart2.PNG)
 
 ## <a name="cart-module-properties-and-slots"></a>Egenskaper og spor for handlekurvmodul
 
@@ -47,14 +52,12 @@ Handlekurvmodulen har egenskapen **Overskrift** som kan settes til verdier som *
 - **Tekstblokk** – Denne modulen støtter tilpassede meldinger i handlekurvmodulen. Meldingene drives av innholdsbehandlingssystemet (CMS). Alle meldinger kan legges til, for eksempel "For problemer med ordren, kontakt 1-800-Fabrikam."
 - **Butikkvelger** – Denne modulen viser en liste over nærliggende butikker der en vare er tilgjengelig for henting. Den lar brukere angi en plassering for å finne butikker i nærheten. Hvis du vil ha mer informasjon om denne modulen, se [Butikkvelgermodul](store-selector.md).
 
-
 ## <a name="module-properties"></a>Modulegenskaper
 
-Handlekurvmoduler har følgende innstillinger som kan konfigureres under **Områdeinnstillinger \> Utvidelser**:
+Følgende innstillinger for handlevognmodulen kan konfigureres under **Områdeinnstillinger \> Utvidelser**:
 
 - **Maksimalt antall** – Denne egenskapen brukes til å angi maksimalt antall for hver vare som kan legges til i handlekurven. En forhandler kan for eksempel bestemme at bare 10 av hvert produkt kan selges i en enkelt transaksjon.
-- **Lagerbeholdning** – Når verdien er satt til **Sann**, legges det til en vare i handlekurven bare etter kjøpsboksmodulen kontrollerer at den er på lager. Denne lagerkontrollen utføres for scenarier der varen skal leveres, og for scenarier der den skal plukkes opp i butikken. Hvis verdien settes til **Usann**, utføres det ingen lagerkontroll før en vare legges til i handlekurven, og ordren plasseres. Hvis du vil ha informasjon om hvordan du konfigurerer lagerinnstillinger i back office, kan du se [Beregne lagertilgjengelighet for detaljhandelskanaler](calculated-inventory-retail-channels.md).
-- **Lagerbuffer** – Denne egenskapen brukes til å angi et bufferantall for lageret. Lageret vedlikeholdes i sanntid, og når mange kunder bestiller, kan det være vanskelig å opprettholde et nøyaktig lagerantall. Når det utføres en lagerkontroll, og hvis lageret er mindre enn buffermengden, blir produktet behandlet som at det ikke finnes på lager. Derfor, når salget skjer raskt i flere kanaler og lageropptellingen ikke er fullstendig synkronisert, er det mindre fare for at en vare som ikke er på lager, blir solgt.
+- **Beholdning** – Hvis du vil ha informasjon om hvordan du bruker beholdningsinnstillinger, kan du se [Bruk beholdningsinnstillinger](inventory-settings.md).
 - **Tilbake til shopping** – Denne egenskapen brukes til å angi ruten for **Tilbake til shopping**-koblingen. Ruten kan konfigureres på områdenivå, slik at forhandlere kan bringe kunden tilbake til hjemmesiden eller en hvilken som helst annen side på området.
 
 ## <a name="commerce-scale-unit-interaction"></a>Samhandling med Commerce Scale Unit
@@ -65,15 +68,23 @@ Handlekurvmodulen henter produktinformasjon ved hjelp av API-er for Commerce Sca
 
 Hvis du vil legge til en handlekurvmodul på en ny side og angi de nødvendige egenskapene, følger du disse trinnene.
 
-1. Opprett et fragment kalt **Handlekurvfragment**, og legg til en handlekurvmodul i det nye fragmentet.
-1. Legg til en overskrift i handlekurvmodulen.
-1. Legg til en butikkvelgermodul i handlekurvmodulen.
-1. Lagre fragmentet, fullfør redigeringen, og publiser deretter fragmentet.
-1. Opprett en mal som heter **Handlekurvmal**, og legg til handlekurvfragmentet som du nettopp opprettet.
-1. Lagre malen, fullfør redigeringen, og publiser deretter malen.
-1. Opprett en side som bruker den nye malen.
-1. Lagre og forhåndsvis siden.
-1. Fullfør redigeringen av siden, og publiser den.
+1. Gå til **Sidefragmenter**, og velg **Ny** for å opprette et nytt sidefragment.
+1. I dialogboksen **Nytt sidefragment** velger du **Handlevogn**-modulen.
+1. Under **Navn på sidefragment** angir navnet **Handlevognfragment**, og deretter velger du **OK**.
+1. Velg **Handlevogn**-sporet.
+1. I egenskapsruten til høyre velger du blyantsymbolet, angir overskriftsteksten i feltet, og merker av for avmerkingssymbolet.
+1. I **Handlevogn**-sporet velger du ellipsen (**…**), og deretter velger du **Legg til modul**.
+1. I dialogboksen **Legg til modul** velger du **Butikkvelger**-modulen, og deretter velger du **OK**.
+1. Velg **Lagre**, velg **Fullfør redigering** for å sjekke inn fragmentet, og velg deretter **Publiser** for å publisere det.
+1. Gå til **Maler**, og velg **Ny** for å opprette en ny mal.
+1. I dialogboksen **Ny mal**, under **Malnavn**, angir du et navn på malen.
+1. Velg **Brødtekst**-sporet i disposisjonstreet, velg ellipseknappen (**…**), og velg deretter **Legg til fragment**.
+1. I dialogboksen **Velg sidefragment** velger du **Handlevognfragmentet**, og deretter velger du **OK**.
+1. Velg **Lagre**, velg **Fullfør redigering** for å sjekke inn malen, og velg deretter **Publiser** for å publisere den.
+1. Gå til **Sider**, og velg **Ny** for å opprette en ny side.
+1. I dialogboksen **Velg en mal** velger du malen du opprettet, angir et sidenavn, og deretter velger du **OK**.
+1. Velg **Lagre**, og velg deretter **Forhåndsvisning** for å forhåndsvise siden.
+1. Velg **Fullfør redigering** for å sjekke inn siden, og velg deretter **Publiser** for å publisere den.
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 

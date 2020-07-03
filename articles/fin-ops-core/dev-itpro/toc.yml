@@ -20,8 +20,6 @@
                   href: get-started/whats-new-platform-update-35.md
                 - name: Plattformoppdateringer for 10.0.10 (mai 2020)
                   href: get-started/whats-new-platform-update-34.md
-                - name: Platform update 33 (april 2020)
-                  href: get-started/whats-new-platform-update-33.md
             - name: Funksjoner som er fjernet eller avskrevet
               items:
                 - name: Fjernede eller avskrevne Platform-funksjoner
@@ -150,6 +148,8 @@
                                   href: data-entities/dual-write/link-your-environment.md
                                 - name: Aktivere enhetstilordning for dobbel skriving
                                   href: data-entities/dual-write/enable-entity-map.md
+                            - name: Overføring av valutadatatype for dobbel skriving
+                              href: data-entities/dual-write/currrency-decimal-places.md
                         - name: Håndtere dobbel skriving
                           items:
                             - name: Tilpasse enhets- og felttilordninger
@@ -364,6 +364,8 @@
           items:
             - name: Oversikt over Azure Data Lake
               href: data-entities/azure-data-lake-overview.md
+            - name: Konfigurere eksport til Azure Data Lake
+              href: data-entities/configure-export-data-lake.md
             - name: Finance and Operations-apper i Azure Data Lake
               href: data-entities/finance-data-azure-data-lake.md
             - name: Gjøre enhetslager tilgjengelig som Data Lake
@@ -498,6 +500,8 @@
                       href: deployment/onprem-reverseproxy.md
                     - name: Lokal diagnostikk
                       href: deployment/on-premises-diagnostics.md
+                    - name: Konfigurasjon for lokal nødgjenoppretting
+                      href: deployment/onprem-dr.md
                     - name: PowerBI.com-integrering med lokale miljøer
                       href: analytics/entity-store-on-prem.md
                     - name: Konfigurere miljøer på nytt
@@ -652,11 +656,11 @@
                   href: dev-tools/debug-xpp.md
                 - name: EventHandlerResult-klasser i forespørsels- eller svarscenarier
                   href: dev-tools/event-handler-result-class.md
-                - name: 'Skrive forretningslogikk ved hjelp av C#- og X++-kildekode'
+                - name: Skrive forretningslogikk ved hjelp av C#- og X++-kildekode
                   href: dev-tools/write-business-logic.md
                 - name: Endringer i X++- og X++-kompilatoren
                   href: dev-tools/programming-language-support.md
-                - name: 'LINQ-leverandør for C#'
+                - name: LINQ-leverandør for C#
                   href: dev-tools/linq-provider-c.md
                 - name: Skrive regler for anbefalt fremgangsmåte
                   href: dev-tools/author-best-practice-rules.md
@@ -716,7 +720,7 @@
                       href: dev-ref/xpp-macros.md
                     - name: Attributtklasser for X++
                       href: dev-ref/xpp-attribute-classes.md
-                    - name: 'Sammenligning mellom X++ og C#'
+                    - name: Sammenligning mellom X++ og C#
                       href: dev-ref/xpp-cs-comparison.md
                     - name: Syntaks for X++
                       href: dev-ref/xpp-syntax.md
@@ -1436,6 +1440,8 @@
                   href: sysadmin/role-based-security.md
                 - name: Sikkerhetsarkitektur
                   href: sysadmin/security-architecture.md
+                - name: Kryptering i Finance and Operations-apper
+                  href: sysadmin/encryption.md
                 - name: Angi tidsavbrudd for inaktiv økt
                   href: sysadmin/session-idle-timeout.md
                 - name: Medfølgende sikkerhetsrapporter

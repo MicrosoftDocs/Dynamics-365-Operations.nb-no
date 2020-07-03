@@ -3,7 +3,7 @@ title: ER Bruke finansdimensjoner som en datakilde (del 3 - Utforme rapporten)
 description: De følgende trinnene forklarer hvordan en bruker som er tilordnet rollen som systemansvarlig eller utvikler av elektronisk rapportering kan konfigurere en elektronisk rapportering (ER)-modell til å bruke finansdimensjoner som datakilde for ER-rapporter.
 author: NickSelin
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 05/27/2020
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 7bbbc81eaf8c13e8d13e30a0276e38453e07ead9
-ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
+ms.openlocfilehash: cef61787e50561eaac4fd52741ab5f90d9c4171d
+ms.sourcegitcommit: d9125c20b21459076e4fd92fd9ebfe2e53a0431b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3142530"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "3406503"
 ---
 # <a name="er-use-financial-dimensions-as-a-data-source-part-3---design-the-report"></a>ER Bruke finansdimensjoner som en datakilde (del 3 - Utforme rapporten)
 
@@ -95,6 +95,7 @@ For å fullføre disse trinnene, må du først fullføre trinnene i prosedyren "
 59. Klikk Legg til attributt.
 60. Skriv inn Beskr i Navn-feltet.
 61. Klikk OK.
+![Side med ER-operasjonsutforming](../media/er-financial-dimensions-guides-format1.png)
 
 ## <a name="map-report-elements-to-data-sources"></a>Tilordne rapportelementer til datakilder
 1. Klikk kategorien Tilordning.
@@ -143,4 +144,5 @@ For å fullføre disse trinnene, må du først fullføre trinnene i prosedyren "
 44. Klikk Bind.
 45. Klikk Lagre.
 46. Lukk siden.
+![Side med ER-operasjonsutforming](../media/er-financial-dimensions-guides-format2.png)
 

@@ -3,7 +3,7 @@ title: ER Bruke finansdimensjoner som en datakilde (del 1 - Utforme datamodell)
 description: De følgende trinnene forklarer hvordan en systemansvarlig eller utvikler av elektronisk rapportering kan konfigurere en elektronisk rapportering (ER)-modell til å bruke finansdimensjoner som datakilde for ER-rapporter.
 author: NickSelin
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 05/27/2020
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: b02496ebb06e0c2eb644fc7ef3280ca4eca05923
-ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
+ms.openlocfilehash: b951c9074c68a9f7592c17e0688498880397b223
+ms.sourcegitcommit: d9125c20b21459076e4fd92fd9ebfe2e53a0431b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3142040"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "3406549"
 ---
 # <a name="er-use-financial-dimensions-as-a-data-source-part-1---design-data-model"></a>ER Bruke finansdimensjoner som en datakilde (del 1 - Utforme datamodell)
 
@@ -106,4 +106,6 @@ For å fullføre disse trinnene må du først fullføre trinnene i fremgangsmåt
 68. Klikk Legg til.
 69. Klikk Lagre.
 70. Lukk siden.
+
+![Siden ER-datamodellutforming](../media/er-financial-dimensions-guides-data-model.png)
 

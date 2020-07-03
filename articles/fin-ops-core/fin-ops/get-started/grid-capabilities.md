@@ -3,7 +3,7 @@ title: Rutenettfunksjoner
 description: Dette emnet beskriver flere kraftfulle funksjoner i rutenettkontrollen. Den nye rutenettfunksjonen må være aktivert for at du skal kunne få tilgang til disse funksjonene.
 author: jasongre
 manager: AnnBe
-ms.date: 04/23/2020
+ms.date: 06/04/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: fd45f71fc15e467c461433682310ab7b7cc0158a
-ms.sourcegitcommit: 0d7b700950b1f95dc030ceab5bbdfd4fe1f79ace
+ms.openlocfilehash: 88a4e2fe69000f8034729d468ad5fd108d435c3e
+ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/23/2020
-ms.locfileid: "3284410"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "3431366"
 ---
 # <a name="grid-capabilities"></a>Rutenettfunksjoner
 
@@ -89,11 +89,11 @@ Hvis du vil angre gruppering i et rutenett, høyreklikker du på grupperingskolo
 ## <a name="typing-ahead-of-the-system"></a>Skriving i forkant av systemet
 I mange forretningsscenarier er muligheten til raskt å legge inn data i systemet svært viktig. Før den nye rutenetrkontrollen ble innført, kunne brukere bare endre data i den gjeldende raden. Før de kunne opprette en ny rad eller bytte til en annen rad, ble de tvunget til å vente på at systemet skal validere eventuelle endringer. I et forsøk på å redusere tiden som brukere venter på at disse valideringene skal fullføres, og for å forbedre brukerproduktiviteten, justerer det nye rutenettet disse valideringene slik at de er asynkrone. Derfor kan brukeren flytte til andre rader for å gjøre endringer mens tidligere radvalideringer venter. 
 
-For å støtte denne nye virkemåten, er det lagt til en ny kolonne for radstatusen øverst i rutenettet når rutenettet er i redigeringsmodus. Denne kolonnen angir én av følgende statuser:
+For å støtte denne nye virkemåten, er det lagt til en ny kolonne for radstatusen til høyre for radvelgerkolonnen når rutenettet er i redigeringsmodus. Denne kolonnen angir én av følgende statuser:
 
 - **Tom** – ingen statusbilde angir at raden er lagret i systemet.
 - **Behandling venter** – denne statusen angir at endringene i raden ikke er lagret på serveren ennå, men er i en kø av endringer som må behandles. Før du utfører handlinger utenfor rutenettet, må du vente på at alle ventende endringer skal behandles. I tillegg er teksten i disse radene i kursiv for å angi den ulagrede statusen for radene. 
-- **Valideringsadvarsel** – denne statusen angir at systemet ikke kan lagre endringene i raden på grunn av noen valideringsproblemer. I det gamle rutenettet måtte du gå tilbake til raden for å løse problemet umiddelbart. I det nye rutenettet blir du imidlertid varslet om at det ble funnet et valideringsproblem, men du kan bestemme når du vil rette opp eventuelle problemer i raden. Når du er klar til å løse problemet, kan du flytte fokus tilbake til raden manuelt. Du kan også velge handlingen **Løs dette problemet**. Denne handlingen flytter umiddelbart fokus tilbake til raden som har problemet, og gjør det mulig å redigere i eller utenfor rutenettet. Legg merke til at behandlingen av påfølgende ventende rader blir stoppet til denne valideringsadvarselen blir løst. 
+- **Ugyldig tilstand** – denne statusen angir at en advarsel eller melding ble utløst under behandlingen av raden, og den kan ha forhindret systemet fra å lagre endringene i den raden. I det gamle rutenettet måtte du gå tilbake til raden for å løse problemet umiddelbart dersom lagringsoperasjonen mislyktes. I det nye rutenettet blir du imidlertid varslet om at det ble funnet et valideringsproblem, men du kan bestemme når du vil rette opp eventuelle problemer i raden. Når du er klar til å løse et problem, kan du flytte fokus tilbake til raden manuelt. Du kan også velge handlingen **Løs dette problemet**. Denne handlingen flytter umiddelbart fokus tilbake til raden som har problemet, og gjør det mulig å redigere i eller utenfor rutenettet. Legg merke til at behandlingen av påfølgende ventende rader blir stoppet til denne valideringsadvarselen blir løst. 
 - **Midlertidig stanset** – denne statusen angir at behandlingen av serveren er stoppet midlertidig fordi valideringen av raden utløste en popup-dialogboks som krever inndata fra brukeren. Fordi brukeren kan registrere data i en annen rad, blir hurtigdialogboksen ikke umiddelbart presentert for denne brukeren. Den vil i stedet presenteres når brukeren velger å gjenoppta behandlingen. Denne statusen følges av et varsel som informerer brukeren om situasjonen. Varslingen inneholder en **Gjenoppta behandling**-handling som vil utløse hurtigdialogboksen.  
     
 Når brukere angir data før serveren behandles, kan de forvente seg noen reduksjoner i dataregistreringsopplevelsen, for eksempel mangel på oppslag, validering på kontrollnivå og oppføring av standardverdier. Brukere som trenger en rullegardinliste for å finne en verdi, oppfordres til å vente til serveren blir oppdatert til gjeldende rad. Kontrollnivå-validering og registrering av standardverdier vil også forekomme når serveren behandler denne raden.   
@@ -135,55 +135,62 @@ Denne delen inneholder en liste over kjente problemer for den nye rutenettkontro
 
 - Kortlister som ble gjengitt som flere kolonner, er nå gjengitt som én enkelt kolonne.
 - Grupperte lister gjengis ikke som grupper eller i separate kolonner.
-- Verktøytips vises ikke for bilder.
-- Rutenettvisningene fungerer ikke for alle felttyper.
-- Periodisk kan du ikke klikke utenfor rutenettet etter at du har valgt flere rader.
-- Alternativene **Valider** og **Kopier** for oppgaveopptaker er ikke tilgjengelige for dato/nummer-kontroller.
+
+### <a name="fixed-as-part-of-10013"></a>Løst som del av 10.0.13
+
+> [!NOTE]
+> Følgende informasjon blir oppgitt, slik at du kan planlegge tilsvarende. Hvis du vil ha mer informasjon om målrettet utgivelsesplan for versjon 10.0.13 , kan du se [Tilgjengelighet av serviceoppdatering](../../fin-ops/get-started/public-preview-releases.md).
+
+- [KB 4563317] Verktøytips vises ikke for bilder.
 
 ### <a name="fixed-as-part-of-10012"></a>Løst som del av 10.0.12
 
-> [!Note]
-> Følgende informasjon blir oppgitt, slik at du kan planlegge tilsvarende. Hvis du vil ha mer informasjon om målrettet utgivelsesplan for versjon 10.0.12 , kan du se [Tilgjengelighet av serviceoppdatering](../../fin-ops/get-started/public-preview-releases.md).
-
-- [Problem 429126] Kontroller utenfor rutenettet oppdateres ikke etter at den siste posten er slettet.
-- [Problem 430575] Tabellkontroller oppdaterer ikke innholdet i viste elementer.
+- [KB 4558545] Tabellkontroller oppdaterer ikke innholdet i viste elementer.
 - [KB 4558570] Varer vises fortsatt på siden etter at posten er slettet.
-- [KB 4558584] Negative tall gjengis ikke riktig.
-- [KB 4558575] Felt oppdateres ikke etter en radendring / rutenettbehandling blir låst etter sletting av rader.
-- [Problem 436980] Stiler som er knyttet til listepanelet **ExtendedStyle**, brukes ikke.
+- [KB 4558572] Stiler som er knyttet til listepanelet **ExtendedStyle**, brukes ikke.
 - [KB 4558573] Valideringsfeil kan ikke løses når den nødvendige endringen er utenfor rutenettet.
-    
-### <a name="quality-update-for-10011"></a>Kvalitetsoppdatering for 10.0.11
-
-- [KB 4558381] Negative tall gjengis ikke riktig / brukere blir noen ganger låst etter at valideringsproblemer oppstår.
+- [KB 4558584] Negative tall gjengis ikke riktig.
+- [KB 4560726] Det oppstår en "uventet klientfeil" etter at bytting mellom lister utføres ved hjelp av en Listevisning-kontroll.
+- [KB 4562141] Rutenettindekser deaktiveres etter at en ny post er lagt til.
+- [KB 4562151] Alternativene **Valider** og **Kopier** for oppgaveopptaker er ikke tilgjengelige for dato/nummer-kontroller. 
+- [KB 4562153] Avmerkingsbokser med flervalgsalternativer er ikke synlige i liste- og kortrutenett.
+- [KB 4562646] Du kan av og til ikke klikke utenfor rutenettet etter at du har valgt flere rader i rutenettet.
+- [KB 4562647] Fokus tilbakestilles til den første kontrollen i **Publiser**-dialogboksen etter at en ny rad er lagt til i rutenettet for sikkerhetsroller.
+- [KB 4563310] Den utvidede forhåndsvisningen lukkes ikke etter at en rad er endret.
+- [KB 4563313] Det oppstår en "uventet klientfeil" i Internet Explorer når en verdi velges i et oppslag.
+- [KB 4563324] Navigasjon fungerer ikke etter at **Personaladministrasjon**-arbeidsområdet er åpnet.
 
 ### <a name="fixed-as-part-of-10011"></a>Løst som del av 10.0.11
 
+- [Problem 432458] Tomme eller dupliserte linjer vises på begynnelsen av enkelte underordnede samlinger.
+- [KB 4549711] Linjer i et betalingsforslag kan ikke fjernes riktig etter at den nye rutenett kontrollen er aktivert.
 - [KB 4558374] Poster som krever en dialogboks for polymorfisk velger, kan ikke opprettes.
-- [KB 4558382] Det oppstår uventede klientfeil.
 - [KB 4558375] Hjelpetekst vises ikke på kolonner i det nye rutenettet.
 - [KB 4558376] Listepanel-rutenett er ikke gjengitt med riktig høyde i Internet Explorer.
 - [KB 4558377] Kombinasjonsboks-kolonner med bredden **SizeToAvailable** gjengis ikke på enkelte sider.
-- [KB 4549711] Linjer i et betalingsforslag kan ikke fjernes riktig etter at den nye rutenett kontrollen er aktivert.
 - [KB 4558378] Gjennomgang åpner av og til feil post.
 - [KB 4558379] Det oppstår en feil når oppslag åpnes der **ReplaceOnLookup**=**Nei**.
 - [KB 4558380] Den tilgjengelige plassen i rutenettet fylles ikke umiddelbart etter at en del av siden er skjult.
-- [Problem 432458] Tomme eller dupliserte linjer vises på begynnelsen av enkelte underordnede samlinger.
+- [KB 4558381] Negative tall gjengis ikke riktig / brukere blir noen ganger låst etter at valideringsproblemer oppstår.
+- [KB 4558382] Det oppstår uventede klientfeil.
+- [KB 4558383] Kontroller utenfor rutenettet oppdateres ikke etter at den siste posten er slettet.
 - [KB 4558587] Referansegrupper som har kombinasjonsbokser for erstatningsfelt, viser ikke verdier.
+- [KB 4562143] Felt oppdateres ikke etter en radendring / rutenettbehandling blir låst etter sletting av rader.
+- [KB 4562645] Et unntak oppstår når et oppslag åpnes mens RSAT-tester (Remote Server Administration Tools) kjører.
 
 ### <a name="fixed-as-part-of-10010"></a>Løst som del av 10.0.10
 
 - [Problem 414301] Noen data fra tidligere linjer forsvinner når nye linjer opprettes.
-- [KB 4550367] Tidsverdier er ikke riktig formatert.
-- [KB 4549734] Aktive rader behandles ikke som merket hvis merkingskolonnen er skjult.
 - [Feil 417044] Det finnes ingen tomt rutenett-melding for rutenett i listestil.
-- [KB 4558367] Tekstmerking er inkonsekvent når rader endres.
-- [KB 4558372] Det nye rutenettet blir låst i behandlingsmodus hvis antallet kolonner i innholdet som limes inn, overstiger antallet gjenstående kolonner i rutenettet.
-- [KB 4558368] Flervalg via tastaturet er tillatt i enkeltvalg-scenarier.
 - [KB 4539058] Noen rutenett (vanligvis på hurtigfaner) er noen ganger ikke gjengitt (men de vil vises hvis du zoomer ut).
+- [KB 4549734] Aktive rader behandles ikke som merket hvis merkingskolonnen er skjult.
+- [KB 4549796] Verdier kan ikke redigeres i et rutenett når det er i visningsmodus.
+- [KB 4558367] Tekstmerking er inkonsekvent når rader endres.
+- [KB 4558368] Flervalg via tastaturet er tillatt i enkeltvalg-scenarier.
 - [KB 4558369] Statusbilder forsvinner i det hierarkiske rutenettet.
 - [KB 4558370] En ny rad blir ikke rullet i visningen.
-- [KB 4549796] Verdier kan ikke redigeres i et rutenett når det er i visningsmodus.
+- [KB 4558372] Det nye rutenettet blir låst i behandlingsmodus hvis antallet kolonner i innholdet som limes inn, overstiger antallet gjenstående kolonner i rutenettet.
+- [KB 4562631] Tidsverdier er ikke riktig formatert.
 
 ### <a name="quality-update-for-1009platform-update-33"></a>Kvalitetsoppdatering for 10.0.9/Platform update 33
 

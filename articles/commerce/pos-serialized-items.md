@@ -3,7 +3,7 @@ title: Arbeide med serialiserte varer på salgsstedet
 description: Dette emnet forklarer hvordan du administrerer serialiserte varer i salgsstedsprogrammet.
 author: boycezhu
 manager: annbe
-ms.date: 04/21/2020
+ms.date: 05/27/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -15,17 +15,16 @@ ms.search.region: global
 ms.author: boycezhu
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.11
-ms.openlocfilehash: 1e0d6aa7cd5576578378e70c6ee808833314aff3
-ms.sourcegitcommit: 919620b4aca425e6a1248ee12f50a622d2531e58
+ms.openlocfilehash: eedb64ae04345cb94bdd8cc68de833cfcfd40119
+ms.sourcegitcommit: 39981582778b0a62567324452485a6721ca18284
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "3290776"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "3407504"
 ---
 # <a name="work-with-serialized-items-in-the-pos"></a>Arbeide med serialiserte varer på salgsstedet
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
 
 Mange forhandlere selger produkter som krever en seriell kontroll. Disse varene blir referert til som *serialiserte varer*. Noen forhandlere vil kanskje vedlikeholde serienumre til sporingsformål. Andre forhandlere kan ønske å registrere serienumre under salgsprosessen for service- og garantiformål. Dette emnet forklarer hvordan du administrerer serialiserte varer i Microsoft Dynamics 365 Commerce-salgsstedsprogrammet.
 

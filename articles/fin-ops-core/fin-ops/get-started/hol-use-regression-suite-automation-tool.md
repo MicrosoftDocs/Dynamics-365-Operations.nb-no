@@ -16,14 +16,14 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: AX 7.0.0, Operations
-ms.openlocfilehash: 2d3dde69b102ce161e5c1f1dd393ffceca608bcb
-ms.sourcegitcommit: 4fdee254649a751d46632fb4d0d48698e112fa72
+ms.openlocfilehash: 0c2babc3144cae5c68075bd853a2587505263776
+ms.sourcegitcommit: cecd97fd74ff7b31f1a677e8fdf3e233aa28ef5a
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "3248742"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "3410156"
 ---
-# <a name="use-the-regression-suite-automation-tool-tutorial"></a>Bruke opplæringen for Regression Suite Automation Tool
+# <a name="regression-suite-automation-tool-tutorial"></a>Opplæring for Regression Suite Automation Tool
 
 [!include [banner](../includes/banner.md)]
 
@@ -97,7 +97,7 @@ Denne funksjonen tar skjermbilder av trinnene som ble utført under oppgaveoppta
     <add key="VerboseSnapshotsEnabled" value="false" />
     ```
 
-Når du kjører test tilfellet, vil RSAT generere øyeblikksbilder av trinnene i avspillingsmappen for testtilfellene i det gjeldende katalogen. Hvis du bruker en eldre versjon av RSAT, lagres bildene på **C:\\Brukere\\\<Brukernavn\>\\AppData\\Roaming\\regressionTool\\playback**, og en separat mappe opprettes for hvert testtilfelle som kjøres.
+Når du kjører test tilfellet, vil RSAT generere øyeblikksbilder av trinnene i avspillingsmappen for testtilfellene i det gjeldende katalogen. Hvis du bruker en eldre versjon av RSAT, lagres bildene på **C:\\Brukere\\\<Username\>\\AppData\\Roaming\\regressionTool\\playback**, og en separat mappe opprettes for hvert testtilfelle som kjøres.
 
 ## <a name="assignment"></a>Tildeling
 
@@ -454,7 +454,7 @@ Du har et testskript som oppretter en ny kunde. Du kan kjøre dette testtilfelle
 - Kundenavn
 - Kundeadresse
 
-Kunde-ID-en er i formatet *ATCUS\<nummer\>*, der \<nummer\> er en verdi mellom **000000001** og **999999999**.
+Kunde-ID-en er i formatet *ATCUS\<number\>*, der \<number\> er en verdi mellom **000000001** og **999999999**.
 
 I det følgende eksemplet brukes én parameter, **start**, til å definere det første nummeret som brukes. Det bruker en andre parameter, **nr**, til å definere antallet kunder som må opprettes. For hver gjentakelse endres parameterne i Excel-parameterfilen ved hjelp av en UpdateCustomer-funksjon. Deretter kalles RSAT-kommandolinjen i en RunTestCase-funksjon.
 
