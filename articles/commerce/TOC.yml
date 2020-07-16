@@ -92,8 +92,6 @@
                       href: get-started/whats-new-commerce-10-0-12.md
                     - name: Commerce 10.0.11 (juli 2020)
                       href: get-started/whats-new-commerce-10-0-11.md
-                    - name: Commerce 10.0.10 (mai 2020)
-                      href: get-started/whats-new-commerce-10-0-10.md
                 - name: Funksjoner som er fjernet eller avskrevet
                   items:
                     - name: Funksjoner som er fjernet eller avskrevet i Finance and Operations
@@ -192,6 +190,8 @@
               items:
                 - name: Oversikt over Dynamics 365 Commerce-arkitektur
                   href: commerce-architecture.md
+                - name: Godkjenningsflyter for Dynamics 365 Commerce
+                  href: arch-auth-flow.md
                 - name: Arkitektur for Commerce Scale Unit
                   href: dev-itpro/retail-server-architecture.md
                 - name: Velg topologi i butikk
@@ -748,12 +748,12 @@
               href: edit-audit-retail-transactions.md
             - name: 'Opprette, beregne og postere utdrag for en detaljhandel'
               href: tasks/create-calculate-post-statement-retail-store.md
-            - name: Forbedringer for utdragsposteringsfunksjonalitet
-              href: statement-posting-eod.md
             - name: Fordele feedbasert ordreoppretting for detaljhandelstransaksjoner
               href: trickle-feed.md
             - name: 'Opprette, beregne og postere utdrag for en detaljhandel'
               href: tasks/create-calculate-post-statement-retail-store.md
+            - name: Økonomisk avstemming i detaljhandelsbutikker
+              href: fin-recon.md
             - name: Forbedringer for utdragsposteringsfunksjonalitet
               href: statement-posting-eod.md
             - name: Forbedret håndtering av varer med partisporing
@@ -792,8 +792,6 @@
                   href: configure-your-domain-name.md
                 - name: Distribuere en ny e-handelsleier
                   href: deploy-ecommerce-site.md
-                - name: Definere en kanal for nettbutikk
-                  href: online-stores.md
                 - name: Opprette et e-handelsområde
                   href: create-ecommerce-site.md
                 - name: Knytte et e-handelsområde til en Internett-kanal
@@ -814,10 +812,8 @@
                   href: enable-store-detection.md
             - name: Oversikt over eksempelområde
               items:
-                - name: Oversikt over startsiden
+                - name: Oversikt over startside
                   href: quick-tour-home-page.md
-                - name: Oversikt over standard kategorimålside og søkeresultatside
-                  href: category-search-page-overview.md
                 - name: Oversikt over produktdetaljsider
                   href: quick-tour-pdp.md
                 - name: Oversikt over sider for handlekurv og kasse
@@ -996,9 +992,9 @@
                   items:
                     - name: Søkebanemodul
                       href: add-breadcrumb.md
-            - name: Søke
+            - name: Søk
               items:
-                - name: Standard kategorimålside og søkeresultatside
+                - name: Oversikt over standard kategorimålside og søkeresultatside
                   href: category-search-page-overview.md
                 - name: Oversikt over skybaserte søk
                   href: cloud-powered-search-overview.md
@@ -1612,7 +1608,7 @@
                       href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md?toc=/dynamics365/commerce/toc.json
             - name: Opplæringer
               items:
-                - name: Bruke datakilder for sammenslåing til å hente data fra flere programtabeller
+                - name: Bruke datakilder for sammenføyning til å hente data fra flere programtabeller
                   href: ../fin-ops-core/dev-itpro/analytics/er-join-data-sources.md?toc=/dynamics365/commerce/toc.json
                 - name: Konfigurere modelltilordninger for landkontekstavhengig ER
                   href: ../fin-ops-core/dev-itpro/analytics/er-country-dependent-model-mapping.md?toc=/dynamics365/commerce/toc.json
@@ -2000,6 +1996,8 @@
                       href: e-commerce-extensibility/create-theme.md
                     - name: Konfigurere temainnstillinger
                       href: e-commerce-extensibility/configure-theme-settings.md
+                    - name: Konfigurere forvalg for temastil
+                      href: e-commerce-extensibility/theme-style-presets.md
                     - name: Utvide et tema for å legge til modulutvidelser
                       href: e-commerce-extensibility/theme-module-extensions.md
                     - name: Utvide et tema fra et basistema
@@ -2034,20 +2032,20 @@
                   href: dev-itpro/retail-sdk/retail-sdk-packaging.md
                 - name: Utvikling i skydriftede utviklingsmiljøer uten administratortilgang
                   href: dev-itpro/cloud-dev-box.md
-                - name: Konfigurere SDK-kompileringskontroll i Commerce
+                - name: Konfigurere versjonsforløp for SDK for Commerce
                   href: dev-itpro/retail-sdk/SDK-build-pipeline.md
+                - name: Vanlige spørsmål om SDK for Retail
+                  href: dev-itpro/retail-sdk/sdk-faq.md
             - name: Utvidelsesmuligheter for salgssted
               items:
                 - name: Skjermoppsett for salgssted
                   href: pos-screen-layouts.md
-                - name: Åpne URL-adresse i salgssted
+                - name: Åpne URL-adresse på salgssted
                   href: Open-URL-in-POS.md
                 - name: Installere utforming av oppsett for salgssted
                   href: install-pos-layout-designer.md
                 - name: Utvide skjermvisningen for POS Dual
                   href: dev-itpro/pos-dual-display-extension.md
-                - name: Utvidelsesmulighet for Modern POS og Cloud POS-utløser
-                  href: dev-itpro/modern-pos-trigger-extensibility.md
                 - name: Legge til egendefinerte kontroller i salgsstedsvisninger
                   href: dev-itpro/pos-custom-control.md
                 - name: Legge til salgsstedsoperasjoner i salgsstedsoppsett ved hjelp av utforming for knappegruppe
@@ -2082,7 +2080,7 @@
                   href: dev-itpro/pos-custom-transaction-column.md
                 - name: Kalle API-er for salgssted eller operasjoner fra salgsstedsutvidelser
                   href: dev-itpro/pos-api-extension.md
-                - name: Utløsere og utskrift for Modern POS
+                - name: Utløsere og utskrift for Modern POS (MPOS)
                   href: dev-itpro/pos-trigger-printing.md
                 - name: Legge til egendefinerte kontroller i salgsstedsvisninger som ikke er skjermutformingsbaserte
                   href: dev-itpro/pos-control-non-screen.md

@@ -74,8 +74,6 @@
                       href: get-started/whats-new-changed-10-0-12.md
                     - name: Finance 10.0.11 (juli 2020)
                       href: get-started/whats-new-changed-10-0-11.md
-                    - name: Finance 10.0.10 (mai 2020)
-                      href: get-started/whats-new-changed-10-0-10.md
             - name: Funksjoner som er fjernet eller avskrevet
               items:
                 - name: Funksjoner som er fjernet eller avskrevet i Dynamics 365 Finance
@@ -1184,6 +1182,8 @@
               href: ../fin-ops-core/dev-itpro/analytics/row-definitions-financial-reporting.md?toc=/dynamics365/finance/toc.json
             - name: Kolonnedefinisjoner
               href: ../fin-ops-core/dev-itpro/analytics/column-definitions-financial-reports.md?toc=/dynamics365/finance/toc.json
+            - name: Definisjoner av rapporteringstre i finansrapporter
+              href: ../fin-ops-core/dev-itpro/analytics/financial-reporting-tree-definitions.md?toc=/dynamics365/finance/toc.json
             - name: Endre celler for raddefinisjon
               href: ../fin-ops-core/dev-itpro/analytics/modify-row-definition-cells-financial-reporting.md?toc=/dynamics365/finance/toc.json
             - name: Tilbakestille datatorget for finansrapportering
@@ -3386,12 +3386,18 @@
                       items:
                         - name: Importere konfigurasjoner fra GR
                           href: ../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md?toc=/dynamics365/finance/toc.json
+                        - name: Importere oppdaterte versjoner av ER-konfigurasjoner
+                          href: ../fin-ops-core/dev-itpro/analytics/er-download-updated-versions-global-repo.md?toc=dynamics365/finance/toc.json
                         - name: Forbedret filtrering for å finne konfigurasjoner i GR
                           href: ../finance/localizations/enhanced-filtering-global-repo.md?toc=/dynamics365/finance/toc.json
                         - name: Laste opp konfigurasjoner til GR
                           href: ../finance/localizations/rcs-global-repo-upload.md?toc=/dynamics365/finance/toc.json
                         - name: Dele konfigurasjoner i GR
                           href: ../finance/localizations/rcs-global-repo-share-configuration.md?toc=/dynamics365/finance/toc.json
+            - name: Hurtigstartveiledninger
+              items:
+                - name: 'Endre formatet for ER til å generere et egendefinert, elektronisk dokument'
+                  href: ../fin-ops-core/dev-itpro/analytics/er-quick-start2-customize-report.md
             - name: Opplæringer
               items:
                 - name: Finne ut hvordan du bruker datakilder

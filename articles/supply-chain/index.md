@@ -1,9 +1,9 @@
 ---
 title: Startside for Supply Chain Management
 description: Denne siden gir en oversikt over emnene i hjelpen og andre ressurser for funksjonene for Supply Chain Management.
-author: josaw1
+author: kamaybac
 manager: tfehr
-ms.date: 11/26/2019
+ms.date: 06/30/2020
 ms.topic: index-page
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,24 +15,25 @@ ms.custom: ''
 ms.assetid: ad2a889a-acfd-4b59-a3b3-4017dd374c7b
 ms.search.region: global
 ms.search.industry: ''
-ms.author: shylaw
+ms.author: kamaybac
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: cf505f3e84cb8a8b4a1ac0af9f776587c06acf77
-ms.sourcegitcommit: 261b70ea358b2c231e20f320ed8bd6adc1e7d715
+ms.openlocfilehash: ab0c66ad0536b20b1ab23e9498ca3cb56b98ccf5
+ms.sourcegitcommit: a7a7303004620d2e9cef0642b16d89163911dbb4
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "3386393"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "3530265"
 ---
 # <a name="supply-chain-management-home-page"></a>Startside for Supply Chain Management
 
 [!include [banner](includes/banner.md)]
 
-Dette emnet gir en oversikt over emnene i hjelpen og andre ressurser i Dynamics 365 Supply Chain Management. 
+Dette emnet gir en oversikt over emnene i hjelpen og andre ressurser i Dynamics 365 Supply Chain Management.
 
 ## <a name="whats-new-and-in-development"></a>Hva er nytt og hva er under utvikling?
-Gå til <a href="https://roadmap.dynamics.com/">Veikart for Dynamics 365</a> for å se hvilke nye funksjoner som er utgitt og hvilke nye funksjoner som er under utvikling. 
+
+Gå til [Veikart for Dynamics 365](https://roadmap.dynamics.com/) for å se hvilke nye funksjoner som er utgitt og hvilke nye funksjoner som er under utvikling.
 
 ## <a name="core-concepts-and-tasks"></a>Kjernekonsepter og -oppgaver
 
@@ -54,70 +55,58 @@ Velg et funksjonsområde du vil finne ut mer om.
 
 ## <a name="dynamics-365-finance"></a>Dynamics 365 Finance
 
-Hvis du vil ha informasjon om Dynamics 365 Finance, går du til siden [Startside for økonomistyring](../finance/index.md).
+Hvis du vil ha informasjon om Dynamics 365 Finance, går du til [startsiden for Finance](../finance/index.md).
 
 ## <a name="videos"></a>Videoer
 
-Disse korte videoene gir deg informasjon om de nye funksjonene som finnes i Microsoft Dynamics 365 for Finance and Operations versjon 8.0 (april 2018).
+Denne korte videoen oppsummerer de nye funksjonene i forsyningskjedeadministrasjon som er lagt til i Microsoft Dynamics 365 for Finance and Operations versjon 8.0 (april 2018).
 
 - [Synkronisere en arbeidsordre mellom Field Service og Finance and Operations](https://youtu.be/hAB4TDVMjxU)
 
-Disse korte videoene gir deg informasjon om de nye funksjonene som finnes i Microsoft Dynamics 365 for Finance and Operations Enterprise edition 7.3 (desember 2017).
+Disse korte videoene oppsummerer de nye funksjonene i forsyningskjedeadministrasjon som er lagt til i Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 7.3 (desember 2017).
 
--  [Prospekt til kontanter-integrasjon](https://youtu.be/AVV9x5x-XCg) 
--  [Optimaliseringsrådgiver](https://www.youtube.com/watch?v=MRsAzgFCUSQ&t=4s)
--  [Bruk lagermalen til å kopiere konfigurasjonen](https://www.youtube.com/watch?v=K2WIfFlqJYs&feature=youtu.be)
+- [Prospekt til kontanter-integrasjon](https://youtu.be/AVV9x5x-XCg) 
+- [Optimaliseringsrådgiver](https://www.youtube.com/watch?v=MRsAzgFCUSQ&t=4s)
+- [Bruk lagermalen til å kopiere konfigurasjonen](https://www.youtube.com/watch?v=K2WIfFlqJYs&feature=youtu.be)
 
-Disse korte videoene gir deg informasjon om de nye funksjonene som finnes i Microsoft Dynamics 365 for Finance and Operations Enterprise edition (juli 2017).
+Disse korte videoene oppsummerer de nye funksjonene i forsyningskjedeadministrasjon som er lagt til i Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (juli 2017).
 
--  [Komme i gang med Kostnadsregnskap](https://youtu.be/1pUDtJQZ8FU)
--  [Mobilt arbeidsområde for kostnadskontroll](https://youtu.be/imsuTg8rUVk)
--  [Bruke Excel til kostnadsanalyse](https://youtu.be/-HKHYdClvx8)
--  [Godkjenne bestillinger på en mobil enhet](https://youtu.be/gZ-gOlJe7H8)
--  [Visuell planlegging med Gantt-diagram for produksjons- og partiordrer](https://youtu.be/BtbuShkGj4I)
+- [Komme i gang med Kostnadsregnskap](https://youtu.be/1pUDtJQZ8FU)
+- [Mobilt arbeidsområde for kostnadskontroll](https://youtu.be/imsuTg8rUVk)
+- [Bruke Excel til kostnadsanalyse](https://youtu.be/-HKHYdClvx8)
+- [Godkjenne bestillinger på en mobil enhet](https://youtu.be/gZ-gOlJe7H8)
+- [Visuell planlegging med Gantt-diagram for produksjons- og partiordrer](https://youtu.be/BtbuShkGj4I)
 
-Disse registreringene for tekniske konferanser omhandler produktfunksjonalitet i den forrige versjonen av Finance and Operations, men fortsatt kan de samme begrepene brukes, og fremgangsmåtene ligner på den gjeldende versjonen. 
+Følgende registreringer for tekniske konferanser beskriver funksjonalitet i forsyningskjedeadministrasjon fra tidligere versjoner av Finance and Operations. Denne funksjonaliteten er nå en del av Dynamics 365 Supply Chain Management. De samme begrepene gjelder fremdeles, og fremgangsmåtene er de samme i gjeldende versjon.
 
-**Kostnadsstyring**
-
--  [Oversikt over behandling av kostnader](https://www.youtube.com/watch?v=vXzlC-mOBcg&feature=youtu.be)
-
-**Hovedplanlegging**
-
--  [Utvid funksjonaliteten for behovsprognose](https://www.youtube.com/watch?v=4OIKIXLiNjI&feature=youtu.be)
--  [Hovedplanlegging – tips og triks for feilsøkingsytelse](https://youtu.be/7v8BPmEs9Dg)
--  [Hjelp! MRP er treg!](https://youtu.be/RLXybx20B5o)
-
-**Behandling av produktinformasjon**
-
--  [Produktkonfigurator i Microsoft Dynamics AX](https://youtu.be/zotrj3SbCl4)
-
-**Lagerstyring** 
-
-<!---  [Process inbound ASNs in Warehouse management](https://mix.office.com/watch/wpf78tr7rjuh)-->  
--  [Få det beste ut av ditt lagerstyringssystem](https://www.youtube.com/watch?v=--_didmZKHo&t=10s)
--  [Avansert R3-lagerstyring – innkommende behandling og min./maks. etterfylling](https://www.youtube.com/watch?v=z5_V5Eqlf5M&t=48s)
--  [Avansert R3-lagerstyring – en dag i løpet av utgående behandling og etterfylling av behov](https://youtu.be/Og0gLlVp7jA)
--  [Etiketter i den nye lagerstyringen for Microsoft Dynamics AX 2012 R3](https://youtu.be/5w1MngVchBA)
--  [Dynamics AX 2012 R3: Avansert lagerstyring – en dag i løpet av prosessproduksjonen](https://www.youtube.com/embed/QUxXUrN-7n4)
-
-**Produksjonskontroll**
-
--  [Operasjoner og aktiviteter for underleverandører i produksjonen](https://youtu.be/y1jrd3A_k70)
-
-**Transportstyring**
-
--  [Transportstyring (TMS) i den nye Microsoft Dynamics AX](https://youtu.be/jgmTgJIgEFQ)
+- **Kostnadsstyring:**
+  - [Oversikt over behandling av kostnader](https://www.youtube.com/watch?v=vXzlC-mOBcg&feature=youtu.be)
+- **Hovedplanlegging:**
+  - [Utvid funksjonaliteten for behovsprognose](https://www.youtube.com/watch?v=4OIKIXLiNjI&feature=youtu.be)
+  - [Hovedplanlegging – tips og triks for feilsøkingsytelse](https://youtu.be/7v8BPmEs9Dg)
+  - [Hjelp! MRP er treg!](https://youtu.be/RLXybx20B5o)
+- **Behandling av produktinformasjon:**
+  - [Produktkonfigurator i Microsoft Dynamics AX](https://youtu.be/zotrj3SbCl4)
+- **Lagerstyring:**
+  - [Få det beste ut av ditt lagerstyringssystem](https://www.youtube.com/watch?v=--_didmZKHo&t=10s)
+  - [Avansert R3-lagerstyring – innkommende behandling og min./maks. etterfylling](https://www.youtube.com/watch?v=z5_V5Eqlf5M&t=48s)
+  - [Avansert R3-lagerstyring – en dag i løpet av utgående behandling og etterfylling av behov](https://youtu.be/Og0gLlVp7jA)
+  - [Etiketter i den nye lagerstyringen for Microsoft Dynamics AX 2012 R3](https://youtu.be/5w1MngVchBA)
+  - [Dynamics AX 2012 R3: Avansert lagerstyring – en dag i løpet av prosessproduksjonen](https://www.youtube.com/embed/QUxXUrN-7n4)
+- **Videoer for produksjonskontroll:**
+  - [Operasjoner og aktiviteter for underleverandører i produksjonen](https://youtu.be/y1jrd3A_k70)
+- **Videoer for transportstyring:**
+  - [Transportstyring (TMS) i den nye Microsoft Dynamics AX](https://youtu.be/jgmTgJIgEFQ)
 
 ## <a name="blogs"></a>Blogger
-Det finnes mange emner om produksjon og forsyningskjedeadministrasjon i <a href="https://blogs.msdn.microsoft.com/axmfg/">teambloggen for Dynamics AX Manufacturing R&D</a> og <a href="https://blogs.msdn.microsoft.com/dynamicsaxscm/">Forsyningskjedeadministrasjon i teambloggen for Dynamics AX R&D</a>. De fleste av disse ble skrevet for den tidligere versjonen, men fortsatt kan de samme begrepene brukes, og fremgangsmåtene ligner på den gjeldende versjonen. 
+
+Det finnes mange emner om produksjon og forsyningskjedeadministrasjon i [teambloggen for Dynamics AX Manufacturing R&D](https://blogs.msdn.microsoft.com/axmfg/) og [Supply Chain Management i teambloggen for Dynamics AX R&D](https://blogs.msdn.microsoft.com/dynamicsaxscm/). De fleste av disse ble skrevet for den tidligere versjonen, men fortsatt kan de samme begrepene brukes, og fremgangsmåtene ligner på den gjeldende versjonen.
 
 ## <a name="white-papers"></a>Hvitbøker
--  <a href="https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/msd365optgtstcostacc/">Praktiske øvelser for kostnadsregnskap</a> 
--  <a href="https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/leanmanufkanban365opt/">Lean Manufacturing: Leveringskapasitet og Planlegging av Kanban-jobb</a> 
--  <a href="https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/365operationsbomcalsheet/">Stykklisteberegning ved hjelp av et kostnadsskjema</a>
+
+- [Lean Manufacturing: Leveringskapasitet og Planlegging av Kanban-jobb](https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/leanmanufkanban365opt/)
+- [Stykklisteberegning ved hjelp av et kostnadsskjema](https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/365operationsbomcalsheet/)
 
 ## <a name="elearning-courses"></a>e-læringskurs
-Hvis du vil ha informasjon om opplæring i Dynamics 365, kan du se <a href="https://mbspartner.microsoft.com/AX/LearningPlans/">Læringsportal for Microsoft Dynamics</a>. (krever CustomerSource-konto) 
 
-
+Gå til [Dynamics 365 i Microsoft Learn for elektroniske kurs og opplæring](https://docs.microsoft.com/learn/dynamics365/).
