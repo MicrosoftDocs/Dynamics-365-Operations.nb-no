@@ -11,12 +11,12 @@ ms.search.scope: Operations
 ms.search.region: Global
 ms.search.validFrom: 2019-1-29
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 7521784931cc4aac5a7e7729d045e501cba9460e
-ms.sourcegitcommit: e9fadf6f6dafdcefaff8e23eaa3c85f53437db3f
+ms.openlocfilehash: b310b787906850a60c9e2a453ce2d13330dad212
+ms.sourcegitcommit: 26399aafe2b02732c79073455f5bc9ac07bab4b4
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "3279058"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "3502119"
 ---
 # <a name="implementation-project-manager-learning-catalog"></a>Opplæringskatalog for implementeringsprosjektleder
 
@@ -29,7 +29,7 @@ Katalogen nedenfor er ordnet fra kjernekunnskap til bestemte områder, og fra de
 | Innhold | beskrivelse  | Formater  | Lengde    |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------|-----------|
 | [Finn ut mer om forretningsverdien til Microsoft Dynamics 365 og Power Platform](https://docs.microsoft.com/learn/paths/learn-business-value-of-dynamics-365-and-power-platform/) | Er du interessert i å finne ut mer om forretningsprogrammer? Kanskje du ikke vet hvor du skal begynne med Microsoft Dynamics 365 Power Platform-programmer? Lær hvordan mulighetene til forretningsprogrammer kan bidra til å forvandle virksomheten din. | Gratis, selvbetjent elektronisk læringsforløp   | 7 timer   |
-| [Grunnleggende om Dynamics 365 og Power Platform](https://docs.microsoft.com/learn/paths/dyn-power-plat-bus-app-fundamentals/ | Er du interessert i å finne ut mer om forretningsprogrammer? Start med dette læringsforløpet for å se hvordan Dynamics 365-apper brukes. Finn ut mer om skybegreper, Power Platform og hvordan du kommer i gang med Dynamics 365-apper. | Gratis, selvbetjent elektronisk læringsforløp   | 5.5 timer |
+| [Grunnleggende om Dynamics 365 og Power Platform](https://docs.microsoft.com/learn/paths/dyn-power-plat-bus-app-fundamentals/) | Er du interessert i å finne ut mer om forretningsprogrammer? Start med dette læringsforløpet for å se hvordan Dynamics 365-apper brukes. Finn ut mer om skybegreper, Power Platform og hvordan du kommer i gang med Dynamics 365-apper. | Gratis, selvbetjent elektronisk læringsforløp   | 5.5 timer |
 | [Komme i gang med Finance and Operations-apper](https://docs.microsoft.com/learn/paths/get-started-finance-operations/)  | Finn ut hvordan Finance and Operations-apper lar virksomheter administrere sine globale, økonomiske systemer, driftsforretningsprosesser og strømlinjeformede forsyningskjeder for å gi brukerne mulighet til å ta raske, informerte avgjørelser. Ditt første trinn i Finance and Operations-apper-karrieren er å gjøre deg kjent med funksjonene og funksjonaliteten, uansett hvilken rolle du har. | Gratis, selvbetjent elektronisk læringsforløp   | 2 timer   |
 | [Før du kjøper](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/before-you-buy)  | Sjekk den trinnvise veiledningen om du fremdeles evaulerer Finance and Operations eller er klar til å gjøre et kjøp.| Dokumentasjon  |           |
 | [Lanseringsplan](https://docs.microsoft.com/dynamics365/release-plans/)  | Finn ut mer om de nyeste funksjonene og forbedringene i Dynamics 365  | Dokumentasjon  |           |

@@ -1,6 +1,6 @@
 ---
 title: Administrere lagerarbeidere
-description: Denne artikkelen beskriver hvordan du kan bruke Dynamics 365 Supply Chain Management – Warehousing-appen for å kontrollere og overvåke arbeidet som utføres av ansatte i lagrene.
+description: Denne artikkelen beskriver hvordan du kan bruke lagerappen for å kontrollere og overvåke arbeidet som utføres av ansatte i lagrene.
 author: perlynne
 manager: tfehr
 ms.date: 06/20/2017
@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0b143051ba39c74869d2ec56203ee4f1cda7268a
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: d8e7790fa8ab8d60d0e5fd8eb470d86d6728091b
+ms.sourcegitcommit: a7a7303004620d2e9cef0642b16d89163911dbb4
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3205581"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "3530035"
 ---
 # <a name="manage-warehouse-workers"></a>Administrere lagerarbeidere
 
 [!include [banner](../includes/banner.md)]
 
-Denne artikkelen beskriver hvordan du kan bruke Dynamics 365 Supply Chain Management – Warehousing-appen for å kontrollere og overvåke arbeidet som utføres av ansatte i lagrene.
+Denne artikkelen beskriver hvordan du kan bruke lagerappen for å kontrollere og overvåke arbeidet som utføres av ansatte i lagrene.
 
 Hvis du bruker funksjonaliteten i Lagerstyring, refereres alle lagerarbeideroperasjoner til som *arbeid*. Arbeid, for eksempel plukking, flytting og telling av lagerbeholdningen, registreres ved hjelp av mobilenheter. Før en lagermedarbeider kan utføre arbeidet må han eller hun være knyttet til en arbeider i Personale. Hver **arbeider**-konto kan ha flere lagerarbeidsbrukere tilknyttet. Disse arbeidsbrukerene kan arbeide i forskjellige lagre og kan ha ulike tilgangsnivåer til de ulike mobilenhetsmenyene. Du kan tenke på lagerarbeidsbrukerne som flere pålogginger for den valgte arbeideren. Hver arbeidsbruker har et standardlager, og bestemte arbeidsflyter vises av menyeelementene som er tilgjengelig for denne arbeidsbrukeren. 
 

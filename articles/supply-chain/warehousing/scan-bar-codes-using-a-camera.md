@@ -1,6 +1,6 @@
 ---
-title: Skanne strekkoder ved hjelp av et kamera i Dynamics 365 for Finance and Operations – Warehousing-appen
-description: Dette emnet forklarer hvordan du konfigurerer Dynamics 365 for Finance and Operations – Warehousing-appen for å skanne strekkoder med et kamera på en mobil enhet.
+title: Skanne strekkoder ved hjelp av et kamera i lagerappen
+description: Dette emnet forklarer hvordan du konfigurerer lagerappen for å skanne strekkoder med et kamera på en mobil enhet.
 author: MarkusFogelberg
 manager: tfehr
 ms.date: 01/03/2018
@@ -17,26 +17,26 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2017-01-03
 ms.dyn365.ops.version: AX 8.0.0
-ms.openlocfilehash: 9d3b807b18a0a9c7d24763a2a2a7ea9eccf9c2bb
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: fd4818ab936e1c93000793da756c97df6d05b2a9
+ms.sourcegitcommit: a7a7303004620d2e9cef0642b16d89163911dbb4
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3205872"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "3530012"
 ---
-# <a name="scan-bar-codes-using-a-camera-in-dynamics-365-supply-chain-management---warehousing-app"></a>Skanne strekkoder ved hjelp av et kamera i Dynamics 365 Supply Chain Management – Warehousing-appen
+# <a name="scan-bar-codes-using-a-camera-in-the-warehouse-app"></a>Skanne strekkoder ved hjelp av et kamera i lagerappen
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet forklarer hvordan du konfigurerer Dynamics 365 for Finance and Operations – Warehousing-appen for å skanne strekkoder med et kamera på en mobil enhet. 
+Dette emnet forklarer hvordan du konfigurerer lagerappen for å skanne strekkoder med et kamera på en mobil enhet. 
 
 ## <a name="prerequisites"></a>Forutsetninger
-Hvis du vil bruke denne funksjonen, må du ha versjon 1.2.0.0 av Warehousing-appen installert, og enheten må ha et kamera. Når du åpner appen når du har oppdatert, blir du bedt om å tillate at appen kan bruke kameraet. Hvis enheten ikke har kamera, vises ingen ledetekst, og du kan ikke bruke kamera som skanner. 
+Hvis du vil bruke denne funksjonen, må du ha versjon 1.2.0.0 av lagerappen installert, og enheten må ha et kamera. Når du åpner appen når du har oppdatert, blir du bedt om å tillate at appen kan bruke kameraet. Hvis enheten ikke har kamera, vises ingen ledetekst, og du kan ikke bruke kamera som skanner. 
 
-## <a name="setup"></a>Definere
-Du kan velge om kameraet skal brukes til å skanne strekkoder, i innstillingene for visning i Warehousing-programmet. Hvis du aktiverer **Bruk kameraet som skanner**, kan du bruke kameraet på alle inndatafelt som har den foretrukne inndatamodusen satt til **Skanning**. 
+## <a name="setup"></a>Installasjon
+Du kan velge om kameraet skal brukes til å skanne strekkoder, i innstillingene for visning i lagerappen. Hvis du aktiverer **Bruk kameraet som skanner**, kan du bruke kameraet på alle inndatafelt som har den foretrukne inndatamodusen satt til **Skanning**. 
 
-For å kontrollere om inndatafeltet kan skannes går du til siden **Navn på lagerappfelt** og setter **Foretrukket inndatamodus** til **Skanning**. Når dette alternativet er valgt, kan kameraet brukes til å skanne i programmet Warehousing. Hvis du vil ha informasjon om hvordan du konfigurerer appfeltnavn i Warehousing, kan du se [Konfigurere appfeltnavn i Warehousing-appen](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/warehousing/configure-app-field-names-priorities-warehouse).
+For å kontrollere om inndatafeltet kan skannes går du til siden **Navn på lagerappfelt** og setter **Foretrukket inndatamodus** til **Skanning**. Når dette alternativet er valgt, kan kameraet brukes til å skanne i lagerappen. Hvis du vil ha informasjon om hvordan du konfigurerer appfeltnavn i Warehousing, kan du se [Konfigurere appfeltnavn i lagerappen](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/warehousing/configure-app-field-names-priorities-warehouse).
 
 ## <a name="supported-bar-code-formats"></a>Støttede strekkodeformater
 De vanligste strekkodeformatene støttes, inkludert Code 128, Code 39, Code 93, EAN-8, EAN-13, UPC-E, UPC-A og QR-koder. 

@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 826c955b7c99073ff41c8a5ed75254c824359925
-ms.sourcegitcommit: 4e9b3746790355f9f72bbfddc099c4065a49ad63
+ms.openlocfilehash: c397354ade1ac1d4f5f9bc0e6bb5d4be5a7ae9f3
+ms.sourcegitcommit: f7294160d18f15cb762c24f2459b4f0887c37541
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/30/2020
-ms.locfileid: "3175160"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "3505617"
 ---
 # <a name="omni-channel-advanced-auto-charges"></a>Avanserte automatiske tillegg for omnikanal
 
@@ -52,7 +52,7 @@ Når avanserte automatiske gebyrer er aktivert, blir brukere ikke lenger bedt om
 
 Når avanserte automatiske gebyrer er aktivert, brukes ikke lenger eksisterende **Handelsparametere** for **Kode for forsendelseskostnader** og **Refundering av forsendelseskostnader**. Disse parameterne gjelder bare hvis parameteren **Bruk avanserte automatiske gebyrer** er satt til **Nei**.
 
-Før du aktiverer denne funksjonen, må du passe på at du har testet og lært opp dine ansatte siden dette vil endre forretningsprosessflyten for hvordan forsendelseskostnader eller andre gebyrer beregnes og legges til salgsordrer for salgsstedet. Pass på at du forstår virkningen prosessflyten har på opprettingen av transaksjoner fra salgssted. For telefonsenter- og e-handelsorder er virkningen av å aktivere avanserte automatiske gebyrer minimal. Telefonsenter- og e-handelsprogrammer vil fortsatt ha samme virkemåte som de har hatt tidligere knyttet til tabellene for automatiske gebyrer for å beregne ekstra ordregebyrer. Brukere av telefonsenterkanaler vil fortsatt ha muligheten til å redigere manuelt systemberegnede automatiske gebyrer på hode- eller linjenivå, eller legge til flere tillegg på hode- eller linjenivå manuelt.
+Før du aktiverer denne funksjonen, må du passe på at du har testet og lært opp dine ansatte siden den aktiverte funksjonen tte vil endre forretningsprosessflyten for hvordan forsendelseskostnader eller andre gebyrer beregnes og legges til salgsordrer for salgsstedet. Pass på at du forstår virkningen prosessflyten har på opprettingen av transaksjoner fra salgssted. For telefonsenter- og e-handelsorder er virkningen av å aktivere avanserte automatiske gebyrer minimal. Telefonsenter- og e-handelsprogrammer vil fortsatt ha samme virkemåte som de har hatt tidligere knyttet til tabellene for automatiske gebyrer for å beregne ekstra ordregebyrer. Brukere av telefonsenterkanaler vil fortsatt ha muligheten til å redigere manuelt systemberegnede automatiske gebyrer på hode- eller linjenivå, eller legge til flere tillegg på hode- eller linjenivå manuelt.
 
 ## <a name="additional-pos-operations"></a>Flere salgsstedsoperasjoner
 
@@ -89,7 +89,7 @@ Konfigurer to ulike automatiske gebyrer på hodenivå. Konfigurer ett for «over
 
 I linjedelen på siden **Automatiske gebyrer** for gebyrene for levering på land definerer du et gebyr som skal brukes for ordrer mellom NOK 0,10 og 1000, som NOK 100,00. Opprett en ny gebyrlinje for å angi at ordrer over NOK 1000,10 ikke har gebyrer.
 
-![Eksempel på automatiske gebyrer](media/headerchargesexample.png)
+![Eksempel på to tabeller for automatiske gebyrer](media/headerchargesexample.png)
 
 I linjedelen i skjemaet for automatiske gebyrer for gebyrene for levering med fly definerer du et gebyr på NOK 200,00 som skal brukes for alle ordrer (mellom en verdi på NOK 0,10 og NOK 99 999 990).
 
@@ -119,7 +119,7 @@ Gå til **Kunder \> Oppsett for tillegg \> Automatiske gebyrer**.
 
 Sett **Nivå**-rullegardinmenyen til **Linje**, og opprett en ny post for automatiske gebyrer for alle kunder og for det bestemte produktet eller produktgruppen der konfigurasjonsgebyret belastes.
 
-![Eksempel på automatiske gebyrer](media/linechargesexample.png)
+![Eksempel på én tabell for automatiske gebyrer på linjenivå](media/linechargesexample.png)
 
 Send prisene til Commerce Scale Unit / kanaldatabasen slik at salgsstedet kan bruke dem ved å kjøre jobben **1040 distribusjonsplan**.
 
@@ -173,7 +173,7 @@ Send prisene til Commerce Scale Unit / kanaldatabasen slik at salgsstedet kan br
 
 Hvis scenariet skal utføres i salgsstedsprogrammet, oppretter salgsstedsbrukeren salgstransaksjonen på vanlig måte, og legger til produktene og andre konfigurasjoner i salget. Før brukeren tar betaling, bør brukeren velge den bestemte linjen der gebyret skal gjelde, fra visningen for salgsstedsvareliste og utføre **Legg til linjegebyrer**-operasjonen. Brukeren blir bedt om å velge en tilleggskode og angi verdien for tillegget. Når brukeren fullfører prosessen, vil tillegget kobles til linjen og legges til ordretotalen som et linjenivåtillegg. Brukeren kan gjenta prosessen for å legge til flere linjegebyrer i andre varelinjer for transaksjonen hvis nødvendig.
 
-Den samme fremgangsmåten kan brukes i telefonsenteret ved hjelp av funksjonen Vedlikehold tillegg under **Finans**-rullegardinmenyen i **Salgsordrelinjer**-delen på **Salgsordre**-siden. Dette åpner **Vedlikehold tillegg**-siden der brukeren kan legge til en nytt linjebestemt tillegg for transaksjonen.
+Den samme fremgangsmåten kan brukes i telefonsenteret ved hjelp av funksjonen Vedlikehold tillegg under **Finans**-rullegardinmenyen i **Salgsordrelinjer**-delen på **Salgsordre**-siden. Når du velger dette alternativet, åpner **Vedlikehold tillegg**-siden der brukeren kan legge til en nytt linjebestemt tillegg for transaksjonen.
 
 ## <a name="additional-features"></a>Tilleggsfunksjoner
 

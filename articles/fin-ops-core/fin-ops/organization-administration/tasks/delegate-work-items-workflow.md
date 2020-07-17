@@ -1,9 +1,9 @@
 ---
 title: Delegere arbeidselementer i en arbeidsflyt
 description: Hvis du planlegger å være borte fra kontoret eller av andre grunner ikke er tilgjengelig til å behandle arbeidselementer, kan du delegere eller tilordne arbeidselementer til andre brukere.
-author: jasongre
+author: ChrisGarty
 manager: AnnBe
-ms.date: 07/01/2019
+ms.date: 06/23/2020
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -13,15 +13,15 @@ audience: Application User
 ms.reviewer: sericks
 ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: jasongre
+ms.author: cgarty
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: aceafbe8dfcdac2ac7b97a4f77a9a30599c60c51
-ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
+ms.openlocfilehash: 7d98d84b89f1f3322a9c896b74b63a3b6425b13b
+ms.sourcegitcommit: 267864eb0dccd6e26d49d280bd4ad1b770a73a77
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3140588"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "3515770"
 ---
 # <a name="delegate-work-items-in-a-workflow"></a>Delegere arbeidselementer i en arbeidsflyt
 
@@ -30,6 +30,16 @@ ms.locfileid: "3140588"
 ## <a name="manually-delegate-a-work-item"></a>Delegere et arbeidselement manuelt
 
 For å delegere et individuelt arbeidselement, velg **Deleger**-alternativet på **Arbeidsflyt**-menyen, og angi deretter brukeren det skal delegeres til, sammen med en kommentar. Dette vil tilordne arbeidselementet til denne brukeren, slik at vedkommende kan fullføre det.
+
+## <a name="manually-delegate-multiple-work-items"></a>Delegere flere arbeidselementer manuelt
+
+Flere arbeidselementer kan delegeres sammen fra **Arbeidselementer som tilordnet til meg**-siden. Følgende arbeidsflyttyper er berettiget til massedelegering: arbeidsflyt for godkjenning av kjøpsavtale, bestillingsarbeidsflyt, innkjøpsrekvisisjonsgjennomgang og leverandørfakturaarbeidsflyt. **Deleger flere arbeidselementer**-funksjonen er deaktivert som standard, og kan aktiveres i **Arbeidsområder > Funksjonsstyring**. Ta kontakt med systemansvarlig for å få hjelp til å aktivere denne funksjonen.
+1.  Gå til **Felles > Felles > Arbeidselementer > Arbeidselementer som er tilordnet til meg**.
+2.  Velg arbeidselementene som skal delegeres.
+3.  Klikk på **Deleger arbeidselementer**-menyen.
+4.  Velg brukeren som arbeidselementene skal delegeres til, i **Bruker**-feltet.
+5.  Angi en kommentar som forklarer hvorfor du delegerer arbeidselementene, i feltet **Kommentar**.
+6.  Klikk på **Deleger arbeidselementer**-knappen for å fullføre arbeidselementdelegeringen.
 
 ## <a name="automatically-delegate-work-items"></a>Automatisk delegere arbeidselementer
 
@@ -47,5 +57,5 @@ Hvis du planlegger å være borte fra kontoret eller å ikke være tilgjengelig 
 6. Angi dato og klokkeslett i feltet **Startdato/-klokkeslett**.
 7. Angi dato og klokkeslett i feltet **Sluttdato/-klokkeslett**.
 8. Merk av for **Aktivert** for å aktivere denne delegeringsregelen. Hvis du valgte **Modul** som omfanget, må du velge modulen i Navn-feltet. Hvis du valgte **Arbeidsflyt** som omfanget, må du velge den bestemte arbeidsflyten som skal delegeres, i Navn-feltet.  
-9. Angi en **kommentar** som forklarer hvorfor du delegerer arbeidselementene, i feltet Kommentar.
+9. Angi en kommentar som forklarer hvorfor du delegerer arbeidselementene, i feltet **Kommentar**.
 

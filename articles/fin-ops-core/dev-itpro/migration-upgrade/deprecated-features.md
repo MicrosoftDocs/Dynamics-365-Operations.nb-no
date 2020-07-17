@@ -3,7 +3,7 @@ title: Fjernede eller avskrevne funksjoner i tidligere versjoner
 description: Dette emnet beskriver funksjoner som er fjernet, eller som ble planlagt for fjerning fra Dynamics 365 for Finance and Operations og tidligere versjoner av dette produktet.
 author: sericks007
 manager: AnnBe
-ms.date: 04/17/2020
+ms.date: 06/23/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: be266f838c5e6cd10655546179e9075e36570bfc
-ms.sourcegitcommit: 399f128d90b71bd836a1c8c0c8c257b7f9eeb39a
+ms.openlocfilehash: 8a73231a8286a412e9ec8a4eef6c58d7afd73ec0
+ms.sourcegitcommit: bdfc84aa7f607511981c0b2f20f03fabcb773510
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/23/2020
-ms.locfileid: "3284020"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "3500418"
 ---
 # <a name="removed-or-deprecated-features-in-previous-releases"></a>Fjernede eller avskrevne funksjoner i tidligere versjoner
 
@@ -588,8 +588,8 @@ eGiro er basert på den internasjonale UN EDIFACT CREMUL-standarden (Multiple Cr
 |   |  |
 |------------|--------------------|
 | **Årsak til avskrivning/fjerning** | Betalingsformatet brukes ikke lenger.                                                     |
-| **Erstattet med en annen funksjon?**   | Nr. Formatet vil bli erstattet av ISO 20022-importformater for utdrag i fremtidige versjoner. |
-| **Berørte produktområder**         | Kunder                                                                       |
+| **Erstattet med en annen funksjon?**   | Ja, ISO20022 Camt.054-varselimporten. |
+| **Berørte produktområder**         | Kundereskontro                                                                       |
 | **Status**                         | Avskrevet: En dato for fjerning er ikke angitt for denne funksjonen.                            |
 
 ### <a name="external-inventory-for-poland"></a>Eksternt lager for Polen
@@ -621,8 +621,8 @@ Du kan velge et importformat for finske betalinger for å importere kundebetalin
 |   |  |
 |------------|--------------------|
 | **Årsak til avskrivning/fjerning** | Betalingsformatet brukes ikke lenger.                                                     |
-| **Erstattet med en annen funksjon?**   | Nr. Formatet vil bli erstattet av ISO 20022-importformater for utdrag i fremtidige versjoner. |
-| **Berørte produktområder**         | Kunder                                                                       |
+| **Erstattet med en annen funksjon?**   | Ja, ISO20022 Camt.054-varselimporten. |
+| **Berørte produktområder**         | Kundereskontro                                                                       |
 | **Status**                         | Avskrevet: En dato for fjerning er ikke angitt for denne funksjonen.                            |
 
 ### <a name="import-of-payment-transactions-into-a-general-ledger-journal-for-finland"></a>Import av betalingstransaksjoner i en finansjournal for Finland
@@ -632,8 +632,8 @@ Et format som er spesifikk for Finland, som brukes for å importere regnskapstra
 |   |  |
 |------------|--------------------|
 | **Årsak til avskrivning/fjerning** | Betalingsformatet brukes ikke lenger.                                                     |
-| **Erstattet med en annen funksjon?**   | Nr. Formatet vil bli erstattet av ISO 20022-importformater for utdrag i fremtidige versjoner. |
-| **Berørte produktområder**         | Kunder                                                                       |
+| **Erstattet med en annen funksjon?**   | Ja, ISO20022 Camt.053-bankkontoutdragsimporten ved hjelp av Avansert bankavstemming. |
+| **Berørte produktområder**         | Kundereskontro                                                                       |
 | **Status**                         | Avskrevet: En dato for fjerning er ikke angitt for denne funksjonen.                            |
 
 ### <a name="integration-with-isabel-synchronized-cis-for-belgium"></a>Integrasjon med Isabel-synkronisert (CIS) for Belgia
@@ -698,8 +698,8 @@ Formatene Telehansa og TeleTeenus brukes for import for bankbetaling.
 |   |  |
 |------------|--------------------|
 | **Årsak til avskrivning/fjerning** | Betalingsformatene brukes ikke lenger.                                                    |
-| **Erstattet med en annen funksjon?**   | Nr. Formatene vil bli erstattet av ISO 20022-importformater for utdrag i fremtidige versjoner. |
-| **Berørte produktområder**         | Kunder                                                                        |
+| **Erstattet med en annen funksjon?**   | Ja, ISO20022 Camt.054-bankvarselimporten. |
+| **Berørte produktområder**         | Kundereskontro                                                                        |
 | **Status**                         | Avskrevet: En dato for fjerning er ikke angitt for denne funksjonen.                             |
 
 ### <a name="payroll-information-in-human-resources"></a>Lønnsinformasjon i Personale
@@ -784,7 +784,7 @@ TelePay-betalingsformatene omfatter eksportformater for leverandør (kredittover
 |   |  |
 |------------|--------------------|
 | **Årsak til avskrivning/fjerning** | Betalingsformatene brukes ikke lenger.                                                        |
-| **Erstattet med en annen funksjon?**   | Ja, ISO20022 Betalingsformat for kredittoverføring og Format for AvtaleGiro-kundebetaling for Norge |
+| **Erstattet med en annen funksjon?**   | Ja, ISO20022 betalingsformat for kredittoverføring og AvtaleGiro-kundebetalingsformatet for Norge, i tillegg til pain.002 og camt.054 for import av bankvarselreturfiler. |
 | **Berørte produktområder**         | Leverandør, kunde                                                          |
 | **Status**                         | Avskrevet: En dato for fjerning er ikke angitt for denne funksjonen.                                 |
 
@@ -844,7 +844,7 @@ En arbeidsflyt for behandling av opprettelsen av ansattes mål er en av flere ar
 
 ### <a name="aif-axd-and-axbc-integrations"></a>AIF-, AxD- og AxBC-integreringer
 
-I Application Integration Framework (AIF) kan data utveksles med eksterne systemer gjennom forretningslogikk som vises som tjenester. Dynamics AX inneholder tjenestene som er basert på dokumenter og .NET Business Connector (AxBC). Et dokument opprettes ved hjelp av XML. XML-en inneholder hodeinformasjon som legges til for å opprette en *melding* som kan overføres til eller fra Dynamics AX. Eksempler på dokumenter er salgsordrer og bestillinger. Nesten enhver enhet, for eksempel en kunde, kan imidlertid representeres av et dokument. Tjenester som er basert på dokumenter, bruker **Axd \<Dokument\>**-klassene.
+I Application Integration Framework (AIF) kan data utveksles med eksterne systemer gjennom forretningslogikk som vises som tjenester. Dynamics AX inneholder tjenestene som er basert på dokumenter og .NET Business Connector (AxBC). Et dokument opprettes ved hjelp av XML. XML-en inneholder hodeinformasjon som legges til for å opprette en *melding* som kan overføres til eller fra Dynamics AX. Eksempler på dokumenter er salgsordrer og bestillinger. Nesten enhver enhet, for eksempel en kunde, kan imidlertid representeres av et dokument. Tjenester som er basert på dokumenter, bruker **Axd \<Document\>**-klassene.
 
 |   |  |
 |------------|--------------------|
@@ -1125,13 +1125,13 @@ Generering av forhåndsmerknad kan ikke kan utføres ved hjelp av et parti, men 
 | **Berørte produktområder**         | Alle moduler  |
 | **Status**                         | Avskrevet: En dato for fjerning er ikke angitt for denne funksjonen. |
 
-### <a name="german-dtazv-payment-format"></a>Tysk DTAZV-betalingsformat
+### <a name="german-dtazv-payment-format-in-domestic-currency"></a>Tysk DTAZV-betalingsformat i innenlands valuta
 
 |   |  |
 |------------|--------------------|
 | **Årsak til avskrivning/fjerning** | Formatet er ikke lenger i bruk i Tyskland fordi det er erstattet av SEPA-funksjonaliteten. |
 | **Erstattet med en annen funksjon?**   | SEPA-betalingseksport    |
-| **Berørte produktområder**         | Alle moduler   |
+| **Berørte produktområder**         | Leverandørreskontro   |
 | **Status**                         | Avskrevet: En dato for fjerning er ikke angitt for denne funksjonen.    |
 
 ### <a name="german-mt940-import"></a>Tysk MT940-import

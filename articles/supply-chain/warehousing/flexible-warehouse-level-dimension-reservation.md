@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2020-01-15
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 6c462a87494c434a6047542d448a85b3bce9f769
-ms.sourcegitcommit: ffd845d4230646499b6f074cb43e69ab95787671
+ms.openlocfilehash: ec80346126713cc604b00e6ca7f6e8f4c242dc6f
+ms.sourcegitcommit: a7a7303004620d2e9cef0642b16d89163911dbb4
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "3346474"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "3530311"
 ---
 # <a name="flexible-warehouse-level-dimension-reservation-policy"></a>Fleksibel retningslinje for dimensjonsreservasjon på lagernivå
 
@@ -186,7 +186,7 @@ For dette eksempelet må demonstrasjonsdata være installert, og du må bruke **
 
     Antallet **10** for partinummer **B11** er nå valgt for salgsordrelinjen og plassert i **Båsdør**-plasseringen. På dette tidspunktet er det klart til å lastes på lastebilen og sendes til kundens adresse.
 
-## <a name="exception-handling-of-warehouse-work-thas-has-order-committed-batch-numbers"></a>Unntakshåndtering av lagerarbeid som har ordreigangsatte partinumre
+## <a name="exception-handling-of-warehouse-work-that-has-order-committed-batch-numbers"></a>Unntakshåndtering av lagerarbeid som har ordreigangsatte partinumre
 
 Lagerarbeid for plukking av ordreigangsatte partinumre er underlagt samme standard lagerunntakshåndtering og -handlinger som vanlig arbeid. Generelt kan det åpne arbeidet eller arbeidslinjen avbrytes. De kan avbrytes fordi en brukerplassering er full, det kan mangle tilstrekkelig antall, og de kan oppdateres på grunn av en bevegelse. Tilsvarende kan den valgte kvantiteten arbeid som allerede er fullført, reduseres, eller arbeidet kan reverseres.
 
