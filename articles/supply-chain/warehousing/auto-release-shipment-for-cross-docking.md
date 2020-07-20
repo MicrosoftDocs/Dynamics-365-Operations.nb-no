@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2019-10-1
 ms.dyn365.ops.version: 10.0.6
-ms.openlocfilehash: d11db378be6b2ba845de0ac0a2252092a50bc96a
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 2d8d6e67040f19cac99f8e0164296ef49768496e
+ms.sourcegitcommit: a7a7303004620d2e9cef0642b16d89163911dbb4
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3201485"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "3530242"
 ---
 # <a name="auto-release-shipment-for-cross-docking"></a>Automatisk frigivelse av forsendelse for direkteoverføring
 
@@ -164,7 +164,7 @@ Hvis du vil direkteoverføre antallet ferdigvarer til den utgående lokasjonen f
 8. På siden **Produksjonsordre**, i handlingsruten i kategorien **Produksjonsordre** i gruppen **Prosess**, velger du **Estimat**, og deretter velger du **OK**. Ordren er estimert, og råvareantallet er reservert for produksjonen.
 9. I handlingsruten i kategorien **Produksjonsordre** i gruppen **Prosess** velger du **Frigi**, og deretter velger du **OK**. Lagerplukkarbeid opprettes for råvarene.
 10. Åpne og se gjennom arbeidet. Velg **Arbeidsdetaljer** i gruppen **Generelt** i kategorien **Lager** i handlingsruten. Noter arbeids-ID-en.
-11. Åpne og logg på appen Dynamics 365 for Finance and Operations – Warehousing for å kjøre arbeid i lager 51.
+11. Logg på lagerappen for å kjøre arbeid i lager 51.
 12. Gå til **Produksjon** \> **Produksjonsplukking**.
 13. Angi arbeids-IDen for å starte og fullføre råvareplukkingen. 
 

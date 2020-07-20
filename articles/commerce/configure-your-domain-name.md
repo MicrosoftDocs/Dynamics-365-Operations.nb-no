@@ -3,7 +3,7 @@ title: Konfigurere domenenavnet
 description: Dette emnet beskriver hvordan du konfigurerer et domenenavn for et e-handelsområde for Microsoft Dynamics 365.
 author: psimolin
 manager: AnnBe
-ms.date: 03/02/2020
+ms.date: 07/02/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 2ad9ca3aee21301ef6d830d7b29982a45cd53f60
-ms.sourcegitcommit: 567132f4e4f7a1d76dccf762068209a42c788b52
+ms.openlocfilehash: afc8c7fffbded82be32357bdeb30546afc8b0957
+ms.sourcegitcommit: adf196c51e2b6f532d99c177b4c6778cea8a2efc
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/03/2020
-ms.locfileid: "3096826"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "3533304"
 ---
 # <a name="configure-your-domain-name"></a>Konfigurere domenenavnet
 
@@ -44,8 +44,6 @@ Hvis du vil knytte nye domener til e-handelsmiljøet etter at e-handel initialis
 ## <a name="additional-resources"></a>Tilleggsressurser
 
 [Distribuere et nytt e-handelsområde](deploy-ecommerce-site.md)
-
-[Definere en kanal for nettbutikk](online-stores.md)
 
 [Opprette et e-handelsområde](create-ecommerce-site.md)
 

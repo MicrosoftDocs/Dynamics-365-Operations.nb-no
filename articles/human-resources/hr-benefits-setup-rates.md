@@ -3,7 +3,7 @@ title: Konfigurere satser
 description: Satser i Microsoft Dynamics 365 Human Resources definerer hvor mye arbeidsgivere og ansatte bidrar til en fordel.
 author: andreabichsel
 manager: AnnBe
-ms.date: 04/06/2020
+ms.date: 06/22/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: c90a45b79f2a383f0ace0cb07e791f6613d7a3c3
-ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
+ms.openlocfilehash: e397e20b6b6307349020c8dfd238b4b59eeca527
+ms.sourcegitcommit: 1e6a7b50596eaf9d965e0155f3f2c50f7f50747e
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "3429917"
+ms.lasthandoff: 06/22/2020
+ms.locfileid: "3497362"
 ---
 # <a name="configure-rates"></a>Konfigurere satser
 
@@ -75,15 +75,15 @@ Du kan også bruke doble lag. Hvis du velger **Dobbelt lag** for verdien **Bruk 
 
 3. Angi verdier for de følgende feltene:
 
-   | Felt | Beskrivelse |
+   | Felt | beskrivelse |
    | --- | --- | 
-   | **Beskrivelse** | Verdien i Beskrivelse-feltet vil bli brukt fra beskrivelsen av prisoppsettposten. Dermed kan du identifisere hvilket satsoppsett lagsatsene er knyttet til. |
+   | **Beskrivelse** | Verdien i **Beskrivelse**-feltet vil bli brukt fra beskrivelsen av prisoppsettposten. Dermed kan du identifisere hvilket satsoppsett lagsatsene er knyttet til. |
    | **Lagkode** | Velg en lagkode. Lagkoder defineres i Lagkoder-skjemaet. Systemet vil automatisk vise beskrivelsen av lagkoden i rutenettet til venstre. |
-   | **Lagtype** | Angir hvilket felt som skal brukes som et utvalgskriterium for beregningsprosessen for lagsatsen. For eksempel:</br></br><ul><li>Hvis alder brukes, vil systemet bruke den ansattes fødselsdato i beregningsprosessen for fordelssatsen.</li><li>Hvis lønn brukes, vil systemet bruke den ansattes årlige fordelslønn i beregningsprosessen for fordelssatsen.</li><li>Hvis Jobbtype brukes, vil systemet bruke den ansattes gjeldende aktive stillingspost til å bestemme jobbtypen etter jobbposten som er knyttet til stillingen.</li></ul></br></br>Lagtypene er alder, lønn, fysisk, kjønn, fulltidsekvivalent, jobbtype, kompensasjonsområde og nivå. | 
-   | **Nivå** | Verdien som skal brukes med lagtypen under beregningsprosessen for fordelssatsen. For eksempel:</br></br><ul><li>Hvis lagtypen er alder, vil dette være aldersverdien.</li><li>Hvis lagtypen er lønn, vil dette være lønnsbeløpet.</li><li> Hvis lagtypen er jobbtype, vil dette være jobbtypen.</li></ul></br></br>Når en lagtype er alder eller lønn, bruker systemet en stigende tilnærming under valg av lagsats, noe som betyr at verdien i Nivå-feltet representerer den nedre grensen til laget. Når en lagtype er jobbtype, bruker systemet en nøyaktig samsvarsmetode under valg av lagsats. |
+   | **Lagtype** | Angir hvilket felt som skal brukes som et utvalgskriterium for beregningsprosessen for lagsatsen. For eksempel:</br></br><ul><li>Hvis **alder** brukes, vil systemet bruke den ansattes fødselsdato i beregningsprosessen for fordelssatsen.</li><li>Hvis **lønn** brukes, vil systemet bruke den ansattes årlige fordelslønn i beregningsprosessen for fordelssatsen.</li><li>Hvis **Jobbtype** brukes, vil systemet bruke den ansattes gjeldende aktive stillingspost til å bestemme jobbtypen etter jobbposten som er knyttet til stillingen.</li></ul></br></br>Lagtypene er **alder**, **lønn**, **fysisk**, **kjønn**, **fulltidsekvivalent**, **jobbtype**, **kompensasjonsområde** og **nivå**. | 
+   | **Nivå** | Verdien som skal brukes med lagtypen under beregningsprosessen for fordelssatsen. For eksempel:</br></br><ul><li>Hvis lagtypen er **alder**, vil dette være aldersverdien.</li><li>Hvis lagtypen er **lønn**, vil dette være lønnsbeløpet.</li><li> Hvis lagtypen er **jobbtype**, vil dette være jobbtypen.</li></ul></br></br>Når en lagtype er av typen **alder** eller **lønn**, representerer verdien i **Nivå**-feltet øvre grense for laget. Når en lagtype er **jobbtype**, bruker systemet en nøyaktig samsvarsmetode under valg av lagsats. |
    | **Beregningstype** | Angir hvordan beløpet i Beregningsbeløp-feltet skal brukes, og hvilken matematisk beregning som skal utføres hvis det er nødvendig. Hvis beregningstypen er et flatt beløp, bruker systemet beløpsfeltene som de er. Hvis beregningstypen er per beløp for lønn eller dekning, bruker systemet beregningsbeløpet og beregningsretningen i den matematiske beregningen.</br></br>Hvis beregningstypen er per lønnsbeløp, bruker systemet følgende matematiske formel:</br></br>Årlig fordelslønn dividert med beregningsbeløp (avrundet opp eller ned) ganger beløpene for røykende eller ikke-røykende ansatt eller arbeidsgiver.</br></br>Hvis beregningstypen er per dekningsbeløp, bruker systemet følgende matematiske formel:</br></br>Dekningsbeløp dividert med beregningsbeløp (avrundet opp eller ned) ganger beløpene for røykende eller ikke-røykende ansatt eller arbeidsgiver.</br></br>I begge beregningene brukes beregningsretningen til å avgjøre om årlig fordelslønn eller dekningsbeløp dividert på beregningsbeløp skal rundes opp eller ned. |
    | **Beregningsbeløp** | Beløpet som skal brukes under beregning av fordelssatsen. Dette beløpet vil være divisoren under den matematiske beregningen av lagsatsen. |
-   | **Beregningsretning** | Retningen (økning eller reduksjon) som skal brukes for avrunding av det beregnede resultatbeløpet. Systemet støtter tre beregningsretninger: tom (eksakt metode), økning og reduksjon.</br></br><ul><li>Hvis tom vil systemet bruke den nøyaktige beregningen av lønns-/dekningsbeløpet dividert på beregningsbeløpet. Hvis denne verdien har en brøk, vil systemet bruke denne i beregningen.</li><li>Hvis økning vil systemet øke den matematiske beregningen av lønns-/dekningsbeløpet dividert på beregningsbeløpet til det neste heltallet, som betyr at 12,25 vil øke til 13.</li><li>Hvis reduksjon vil systemet redusere den matematiske beregningen av lønns-/dekningsbeløpet dividert på beregningsbeløpet til det gjeldende heltallet, som betyr at 12,25 vil reduseres til 12.</li></ul> |
+   | **Beregningsretning** | Retningen som skal brukes for avrunding av det beregnede resultatbeløpet. Systemet støtter tre beregningsretninger: tom (eksakt metode), **økning** og **reduksjon**.</br></br><ul><li>Hvis tom vil systemet bruke den nøyaktige beregningen av lønns-/dekningsbeløpet dividert på beregningsbeløpet. Hvis denne verdien har en brøk, vil systemet bruke denne i beregningen.</li><li>Hvis **økning** vil systemet øke den matematiske beregningen av lønns-/dekningsbeløpet dividert på beregningsbeløpet til det neste heltallet, som betyr at 12,25 vil øke til 13.</li><li>Hvis **reduksjon** vil systemet redusere den matematiske beregningen av lønns-/dekningsbeløpet dividert på beregningsbeløpet til det gjeldende heltallet, som betyr at 12,25 vil reduseres til 12.</li></ul> |
    | **Beløp for ikke-røykende ansatt** | Beløpet som en fordelsleverandør tar betalt for en ikke-røykende ansatt. Dette er beløpet arbeidsgiveren betaler til fordelsleverandøren, og det bør være basert på betalingsfrekvensen for satsoppsettet. |
    | **Beløp for ikke-røykende arbeidsgiver** | Beløpet som en fordelsleverandør tar betalt for en ikke-røykende ansatt. Dette er beløpet arbeidsgiveren betaler til fordelsleverandøren, og det bør være basert på betalingsfrekvensen for satsoppsettet. |
    | **Beløp for røykende ansatt** | Beløpet som en fordelsleverandør tar betalt for en ikke-røykende ansatt. Dette er beløpet arbeidsgiveren betaler til fordelsleverandøren, og det bør være basert på betalingsfrekvensen for satsoppsettet. |

@@ -3,7 +3,7 @@ title: Avstemme bankkontoutdrag med avansert bankavstemming
 description: Avansert bankavstemming-funksjonen lar deg importere elektroniske bankkontoutdrag og automatisk avstemme dem med banktransaksjoner i Microsoft Dynamics 365 Finance. Dette emnet beskriver avstemmingsprosessen.
 author: saraschi2
 manager: AnnBe
-ms.date: 01/11/2018
+ms.date: 06/22/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b37cf8d83c7134ae65da6a885bffeb01d16f9f06
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: c13203217af1788fe3b8a6f9bbf805e03b650a0d
+ms.sourcegitcommit: 8a1621327568edf49758b70964e0a3e637527e1b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2179241"
+ms.lasthandoff: 06/22/2020
+ms.locfileid: "3497151"
 ---
 # <a name="reconcile-bank-statements-by-using-advanced-bank-reconciliation"></a>Avstemme bankkontoutdrag ved hjelp av avansert bankavstemming
 
@@ -41,9 +41,9 @@ Du kan laste opp et bankkontoutdrag som inneholder informasjon for én enkelt ko
 -   Hvis du vil importere én enkelt bankkontoutdragsfil for én enkelt konto, kan du sette alternativet **Importer utdrag for flere bankkontoer i alle juridiske enheter** til **Nei** og velge bankkontoen som er knyttet til utdraget. Klikk **Bla gjennom** for å velge den tilknyttede bankkontoutdragsfilen, og klikk deretter **Last opp**.
 -   Hvis du vil importere én enkelt bankkontoutdragsfil for flere kontoer, setter du **Importer utdrag for flere bankkontoer i alle juridiske enheter** til **Ja**. Klikk **Bla gjennom** for å velge den tilknyttede bankkontoutdragsfilen, og klikk deretter **Last opp**.
 
-Hvis alle setninger i den elektroniske filen ikke kan knyttes til en bankkonto ved hjelp av de identifiserende feltene, kan de ikke importeres. Andre setninger i filen kan imidlertid likevel importeres. Brukeren får deretter en melding om at import av bankkontoutdrag mislyktes for bestemte bankkontoer. Legg merke til at brukeren som importerer bankkontoutdragsfilen, må ha tilgang til en juridisk enhet for å importere utdrag for bankkontoer for den juridiske enheten. 
+Hvis alle setninger i den elektroniske filen ikke kan knyttes til en bankkonto, eller hvis den er tilknyttet flere bankkontoer ved hjelp av de identifiserende feltene, kan de ikke importeres. Andre setninger i filen kan imidlertid likevel importeres. Brukeren får deretter en melding om at import av bankkontoutdrag mislyktes for bestemte bankkontoer. Legg merke til at brukeren som importerer bankkontoutdragsfilen, må ha tilgang til en juridisk enhet for å importere utdrag for bankkontoer for den juridiske enheten. 
 
-Du kan bruke en ZIP-fil til å laste opp flere utdragsfiler til Finance i én enkelt prosess. Hvis du vil importere flere bankkontoutdragsfiler for flere kontoer, kan du kombinere alle bankkontoutdragsfilene i en ZIP-fil. I dialogboksen **Importer bankkontoutdrag** setter du alternativet **Importer utdrag for flere bankkontoer i alle juridiske enheter** til **Ja**. Klikk **Bla gjennom** for å velge ZIP-filen som inneholder bankkontoutdragsfilene, og klikk deretter **Last opp**. Importprosessen gjenkjenner zip-filen og laster opp hver oppgave som er inkludert i den, uavhengig av den juridiske enheten for bankkontoen. 
+Du kan bruke en ZIP-fil til å laste opp flere utdragsfiler til Finance i én enkelt prosess. Hvis du vil importere flere bankkontoutdragsfiler for flere kontoer, kan du kombinere alle bankkontoutdragsfilene i en ZIP-fil. I dialogboksen **Importer bankkontoutdrag** setter du alternativet **Importer utdrag for flere bankkontoer i alle juridiske enheter** til **Ja**. Klikk **Bla gjennom** for å velge ZIP-filen som inneholder bankkontoutdragsfilene, og klikk deretter **Last opp**. Importprosessen gjenkjenner zip-filen og laster opp hver oppgave som er inkludert i den, uavhengig av den juridiske enheten for bankkontoen.
 
 Alternativet **Avstem etter import** er tilgjengelig. Når du setter dette alternativet til **Ja**, validerer systemet automatisk bankkontoutdraget, oppretter ny bankavstemming og nytt regneark og kjører standard samsvarsregelsett når bankkontoutdraget lastes opp. Denne funksjonen automatiserer prosessen frem til der transaksjoner må kontrolleres manuelt.
 

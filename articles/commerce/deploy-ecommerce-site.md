@@ -3,7 +3,7 @@ title: Distribuere en ny e-handelsleier
 description: Dette emnet beskriver hvordan du distribuerer en ny e-handelsleier ved å bruke Microsoft Dynamics Lifecycle Services (LCS).
 author: psimolin
 manager: annbe
-ms.date: 03/02/2020
+ms.date: 07/02/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 3febd3ca36f4d517033e910c4087ad3a6ffff35a
-ms.sourcegitcommit: 7a1d01122790b904e2d96a7ea9f1d003392358a6
+ms.openlocfilehash: 00f35b516dbf6ab4d4d9171c84a16b89f6afe832
+ms.sourcegitcommit: adf196c51e2b6f532d99c177b4c6778cea8a2efc
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "3269941"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "3533281"
 ---
 # <a name="deploy-a-new-e-commerce-tenant"></a>Distribuere en ny e-handelsleier
 
@@ -96,8 +96,6 @@ Hvis du vil ha tilgang til områdebygger, går du til **e-handel**-fanen på **A
 [Konfigurere domenenavnet](configure-your-domain-name.md)
 
 [Opprette et e-handelsområde](create-ecommerce-site.md)
-
-[Definere en kanal for nettbutikk](online-stores.md)
 
 [Knytte et nettområde til en kanal](associate-site-online-store.md)
 

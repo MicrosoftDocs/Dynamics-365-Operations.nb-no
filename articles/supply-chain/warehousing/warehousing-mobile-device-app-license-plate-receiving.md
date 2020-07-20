@@ -1,6 +1,6 @@
 ---
 title: Nummerskilt som mottar via lagerappen
-description: Dette emnet forklarer hvordan du konfigurerer appen for lagerstyring for å støtte bruk av en prosess for nummerskiltmottak for å motta fysisk beholdning.
+description: Dette emnet forklarer hvordan du konfigurerer lagerappen for å støtte bruk av en prosess for nummerskiltmottak for å motta fysisk beholdning.
 author: perlynne
 manager: tfehr
 ms.date: 04/29/2020
@@ -15,16 +15,16 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-03-31
 ms.dyn365.ops.version: Release 10.0.11
-ms.openlocfilehash: 82b4f40510d5bbf829508f17f1064886620a4aed
-ms.sourcegitcommit: a3cd2783ae120ac6681431c010b9b126a9ca7d94
+ms.openlocfilehash: 5330981bde98b80e81076a9b1416473135ebdac6
+ms.sourcegitcommit: a7a7303004620d2e9cef0642b16d89163911dbb4
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "3410891"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "3530196"
 ---
-# <a name="license-plate-receiving-via-the-warehousing-app"></a>Nummerskilt som mottar via lagerappen
+# <a name="license-plate-receiving-via-the-warehouse-app"></a>Nummerskilt som mottar via lagerappen
 
-Dette emnet forklarer hvordan du konfigurerer appen for lagerstyring, slik at den støtter bruk av en prosess for nummerskiltmottak for å motta fysisk beholdning.
+Dette emnet forklarer hvordan du konfigurerer lagerappen, slik at den støtter bruk av en prosess for nummerskiltmottak for å motta fysisk beholdning.
 
 Du kan bruke denne funksjonaliteten til raskt å registrere mottak av innkommende beholdning som er relatert til et forhåndsvarsel for forsendelse. Systemet oppretter automatisk et forhåndsvarsel for forsendelse når lagerstyringsprosesser brukes til å sende en overføringsordre. For bestillingsprosessen kan et forhåndsvarsel for forsendelse registreres manuelt, eller det kan importeres automatisk ved hjelp av en innkommende dataenhetsprosess for forhåndsvarsel for forsendelse.
 

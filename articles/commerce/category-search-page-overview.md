@@ -1,9 +1,9 @@
 ---
 title: Oversikt over standard kategorimålside og søkeresultatside
 description: Dette emnet gir en oversik over standard kategorimålside og søkeresultatside i Dynamics 365 Commerce.
-author: v-chgri
+author: ashishmsft
 manager: annbe
-ms.date: 10/31/2019
+ms.date: 06/30/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,15 +17,14 @@ ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 17746d2923ab84311253c47647c0020807bdb75c
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: e85449c10fa4a768a144ce423a77bd1fc2c94352
+ms.sourcegitcommit: ce397c2759f642c595e30fef58a770b50360b2bd
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3002502"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "3527474"
 ---
-# <a name="overview-of-default-category-landing-page-and-search-results-page"></a>Oversikt over standard kategorimålside og søkeresultatside
-
+# <a name="default-category-landing-page-and-search-results-page-overview"></a>Oversikt over standard kategorimålside og søkeresultatside
 
 [!include [banner](includes/banner.md)]
 
@@ -96,9 +95,15 @@ Følgende komponenter er grunnleggende for en søkeresultatside:
 - **Sidenummerering** lar besøkende på webområdet flytte fra én side med kategoriserte produktresultater til en annen side.
 - **Totalt antall** inneholder totalt antall produkter som er definert i en kategori, og som samsvarer med søkevilkårene.
 
+>[!NOTE]
+>Disse skydrevne søkefunksjonene er tilgjengelige fra versjon 10.0.8. Kontroller at det under **Handelsparametere > Konfigurasjonsparametere** finnes en oppføring for ProductSearch. UseAzureSearch satt til true. 
+![Konfigurasjonsparametere for skydrevet søk](./media/CloudPoweredSearchConfigurationParameters.png)
+
 ## <a name="additional-resources"></a>Tilleggsressurser
 
-[Oversikt over startsiden](quick-tour-home-page.md)
+[Oversikt over skybaserte søk](cloud-powered-search-overview.md)
+
+[Oversikt over startside](quick-tour-home-page.md)
 
 [Oversikt over produktdetaljsider](quick-tour-pdp.md)
 

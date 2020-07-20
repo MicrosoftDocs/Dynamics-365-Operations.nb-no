@@ -19,14 +19,14 @@ ms.search.industry: Manufacturing
 ms.author: mafoge
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 290888dbf7d194b8cf259d7218d01d4a4f911db0
-ms.sourcegitcommit: 89022f39502b19c24c0997ae3a01a64b93280f42
+ms.openlocfilehash: 88bce09a6d3bf154592955a6fb2dada6247f1993
+ms.sourcegitcommit: a7a7303004620d2e9cef0642b16d89163911dbb4
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "3367088"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "3530081"
 ---
-# <a name="install-and-connect-the-warehousing-app"></a>Installere og koble til lagerappen
+# <a name="install-and-connect-the-warehouse-app"></a>Installere og koble til lagerappen
 
 [!include [banner](../includes/banner.md)]
 
@@ -47,7 +47,7 @@ Lagerappen er tilgjengelig for både Windows- og Android-operativsystemer. Hvis 
 > [!NOTE]
 > Hvis du må støtte eldre Windows-enheter som ikke kan kjøre den nyeste versjonen av Windows, kan du likevel laste ned versjon 1.6.3.0 av lagerappen fra Microsoft Store. Den versjonen vil kjøres på Windows 10 (UWP) November Update 1511 (versjon 10.0.10586) eller nyere. Vær imidlertid oppmerksom på at denne versjonen av lagerappen ikke støtter massedistribusjon av tilkoblingsinnstillinger. Du må derfor [konfigurere tilkoblingen manuelt](#config-manually) på hver enhet som kjører denne versjonen av appen.
 
-## <a name="get-the-warehousing-app"></a>Hente lagerappen
+## <a name="get-the-warehouse-app"></a>Skaffe deg lagerappen
 
 Bruk en av følgende koblinger til å laste ned appen:
 

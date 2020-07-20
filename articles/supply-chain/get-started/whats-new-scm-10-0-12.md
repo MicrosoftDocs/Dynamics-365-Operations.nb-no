@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-05-29
 ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: c773b5e1013bbd58f48cd345f50a342175ed0c98
-ms.sourcegitcommit: 713b5dfc76a6875d0ba6d86c5cbd585ea502cf9d
+ms.openlocfilehash: fd64a4ea53976293a6ff484a370d7804bf6c724f
+ms.sourcegitcommit: a7a7303004620d2e9cef0642b16d89163911dbb4
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/01/2020
-ms.locfileid: "3413899"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "3530150"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10012-august-2020"></a>Hva er nytt eller endret i Dynamics 365 Supply Chain Management (10.0.12. august 2020)
 
@@ -40,13 +40,12 @@ Dette emnet beskriver funksjoner som enten er nye eller endret i Microsoft Dynam
 Denne versjonen inneholder følgende funksjoner: Funksjonstitlene kobler til mer informasjon på [Utgivelsesplaner](https://docs.microsoft.com/dynamics365/release-plans/)-området. Flere koblinger peker mot ekstra dokumentasjon eller videoer som for øyeblikket er tilgjengelige for denne funksjonen. De fleste av disse funksjonene må aktiveres ved hjelp av [Funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) før du kan bruke dem.
 
 - [Tillat låsing av berøringsskjermen på jobbkortet for rengjøring](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/allow-locking-job-card-touchscreen-sanitization) – Hvis du vil ha mer informasjon, kan du se [Konfigurere jobbkort for enheter](../production-control/config-job-card-device.md).
-- [Registrer produktvarianter og sporingsdimensjoner i Warehousing-appen under mottak av lastevare](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/capture-product-variants-tracking-dimensions-warehousing-app-during-load-item-receiving) -Hvis du vil ha mer informasjon, kan du se [konfigurere mobilenheter for arbeid i Warehouse](../warehousing/configure-mobile-devices-warehouse.md).
+- [Registrer produktvarianter og sporingsdimensjoner i lagerappen under mottak av lastevare](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/capture-product-variants-tracking-dimensions-warehousing-app-during-load-item-receiving) -Hvis du vil ha mer informasjon, kan du se [konfigurere mobilenheter for arbeid i Warehouse](../warehousing/configure-mobile-devices-warehouse.md).
 - Kostnadsberegningsnivå (nytt stykklistenivå) – Hvis du vil ha mer informasjon, se [kostnadsberegningsnivå](../cost-management/cost-calculation-level.md).
 - [Kundeportal for Dynamics 365 Supply Chain Management](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/customer-self-service-experiences) – For mer informasjon, se [Oversikt over kundeportal for Dynamics 365 Supply Chain Management](../sales-marketing/customer-portal-overview.md).
-- [Lagerbeholdningstjeneste](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/inventory-on-hand-service)
 - [Viktig kunnskap om IoT-intelligens](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/iot-intelligence-core-insights) – Hvis du vil ha mer informasjon, kan du se [hjemmesiden for IoT-intelligens](../iot/iot-intelligence-home-page.md).
-- [Forbedringer for nummerskiltmottak i mobilappen for lagerstyring (fortsettelse)](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/license-plate-receiving-enhancements-warehousing-mobile-app-continued) – For mer informasjon, se [Nummerskiltmottak via mobilappen for lagerstyring](../warehousing/warehousing-mobile-device-app-license-plate-receiving.md).
-- [Massedistribusjon for Warehouse Mobile App](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/mass-deployment-warehouse-mobile-app) – Hvis du vil ha mer informasjon, kan du se [Oversikt over installasjon og konfigurasjon av Warehousing-appen](../warehousing/install-configure-warehousing-app.md).
+- [Forbedringer for nummerskiltmottak i lagerappen (fortsettelse)](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/license-plate-receiving-enhancements-warehousing-mobile-app-continued) – For mer informasjon se [Nummerskiltmottak via lagerappen](../warehousing/warehousing-mobile-device-app-license-plate-receiving.md).
+- [Massedistribusjon for Warehouse Mobile App](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/mass-deployment-warehouse-mobile-app) – Hvis du vil ha mer informasjon, kan du se [Oversikt over installasjon og konfigurasjon av lagerappen](../warehousing/install-configure-warehousing-app.md).
 - [Maksimal utførelsestid for oppryddingsjobb for lagerbeholdning](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/maximum-execution-time-warehouse-management-on-hand-entries-cleanup-job) – du finner mer informasjon i [Oppryddingsjobb for lagerstyringsposter](../warehousing/onhand-cleanup.md).
 - [Støtte for planleggingsoptimalisering for kjøpsavtaler](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/planning-optimization-support-purchase-trade-agreements) – Hvis du vil ha mer informasjon, kan du se [Hovedplanlegging med kjøpsavtaler](../master-planning/planning-optimization/purchase-trade-agreement.md).
 

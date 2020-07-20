@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: Mirzaab
 ms.search.validFrom: 2017-09-20
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: cbaed4da3ccd17d83c002994f01829f76db0d36a
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 0612833391cf7690343b7180f11d49ba1ad92d24
+ms.sourcegitcommit: a7a7303004620d2e9cef0642b16d89163911dbb4
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3215752"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "3530449"
 ---
 # <a name="mobile-barcode-support"></a>Støtte for mobil strekkode
 
@@ -31,7 +31,7 @@ ms.locfileid: "3215752"
 Fordi Android er et open source-prosjekt, kan alle produsenter av maskinvare for lagerstrekkodeskannere bygge en enhet for å kjøre Android-operativsystemet. En enhet er bare Android-kompatibel hvis den kan kjøre apper som er skrevet for Android-kjøringsmiljøet.
 En maskinvareleverandøren kan imidlertid endre og opprette overlappinger for Android-versjonen som kjører på maskinvaren. Microsoft har ikke ansvar for å sikre at en mobilapp for strekkodeskanning for Android er kompatibel med produsentens maskinvare for strekkodeskanning og Android-versjonen som kjører på den. 
 
-Dynamics 365 Supply Chain Management – Warehousing-appen har blitt testet med en rekke enheter som kjører Android, for strekkodeskanning. Disse testene dekker bare et utvalg av enhetene som er tilgjengelige på markedet.
+Dynamics 365 Supply Chain Management – lagerappen har blitt testet med en rekke enheter som kjører Android, for strekkodeskanning. Disse testene dekker bare et utvalg av enhetene som er tilgjengelige på markedet.
 
 Som kunde anbefaler vi at du tester lagermobilappen for skanning på valgt maskinvare før du bestemmer deg for maskinvaren som du vil kjøpe.
 

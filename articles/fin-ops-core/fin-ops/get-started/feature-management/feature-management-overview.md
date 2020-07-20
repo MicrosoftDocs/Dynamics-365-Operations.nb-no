@@ -3,7 +3,7 @@ title: Oversikt over funksjonsbehandling
 description: Dette emnet beskriver funksjonen Funksjonsbehandling og hvordan du kan bruke den.
 author: ChrisGarty
 manager: AnnBe
-ms.date: 06/12/2020
+ms.date: 06/15/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.validFrom:
 - month/year of release that feature was introduced in
 - in format yyyy-mm-dd
 ms.dyn365.ops.version: 10.0.2
-ms.openlocfilehash: 416c19dcf5b2c983afff7d2e8a9797fb0c0e2780
-ms.sourcegitcommit: 218e22014a964b8b52fc0152e355b07b0b84ae2c
+ms.openlocfilehash: ae2c7a0d089c81a62932c415eed5f752e7fb4ffa
+ms.sourcegitcommit: 17a8e3d48da4354ba74e35031c320a16369bfcd5
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "3456603"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "3499625"
 ---
 # <a name="feature-management-overview"></a>Oversikt over funksjonsbehandling
 
@@ -140,6 +140,10 @@ Følgende eksempler beskriver hva som skjer når du bruker **Funksjonsbehandling
 ## <a name="feature-management-and-flighting"></a>Funksjonsbehandling og testversjonering
 
 Funksjonsbehandling lar deg styre funksjonene som leveres i hver versjon. Testversjonering gir Microsoft Teams mulighet til å gi ut funksjoner til et begrenset antall kunder, slik at funksjonene kan testes og valideres uten at det påvirker alle kundene. Funksjonsbehandling styrer ikke testversjoneringen av funksjoner.
+
+## <a name="new-features-are-optional-for-12-months"></a>Nye funksjoner er valgfrie i 12 måneder
+
+Når en ny ikke-kritisk funksjon er installert, vil den være valgfri i en 12-måneders periode. Dette gjør det mulig for deg og organisasjons å planlegge fremover for når du skal få en funksjon, og få den testet mot dine daglige operasjoner. Hvis du vil ha mer informasjon om forhåndsvisning versjoner, kan du se [Vanlige spørsmål om oppdatering av én versjonstjeneste](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/one-version#what-about-new-features).
 
 ## <a name="using-feature-management-to-turn-on-isv-features-or-custom-features"></a>Bruke Funksjonsbehandling til å aktivere ISV-funksjoner eller egendefinerte funksjoner
 

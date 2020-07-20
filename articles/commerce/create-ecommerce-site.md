@@ -3,7 +3,7 @@ title: Opprette et e-handelsområde
 description: Dette emnet beskriver trinnene og informasjonen som kreves for å opprette et nytt e-handelsområde i Dynamics 365 Commerce-områdebyggeren.
 author: bicyclingfool
 manager: AnnBe
-ms.date: 03/02/2020
+ms.date: 07/02/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -19,25 +19,20 @@ ms.search.industry: ''
 ms.author: stuharg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 7177bae911dfa91a645b40581bf23b3ed76562a3
-ms.sourcegitcommit: 567132f4e4f7a1d76dccf762068209a42c788b52
+ms.openlocfilehash: ea3517a4f2b84db8a87a97d2f644bb4436f8693f
+ms.sourcegitcommit: adf196c51e2b6f532d99c177b4c6778cea8a2efc
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/03/2020
-ms.locfileid: "3096780"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "3533442"
 ---
 # <a name="create-an-e-commerce-site"></a>Opprette et e-handelsområde
-
 
 [!include [banner](includes/banner.md)]
 
 Dette emnet beskriver trinnene og informasjonen som kreves for å opprette et nytt e-handelsområde i Dynamics 365 Commerce-områdebyggeren.
 
-Før du kan begynne å utvikle e-handelsområdet, må du først etablere et nytt område i områdebyggeren. 
-
-
-Hvis du vil begynne å utvikle ditt e-handelsområde, må du først opprette et nytt område i områdetsredigeringsmiljøet. Før du kan opprette et nytt område må du opprette minst én nettbutikk i Commerce. 
-
+Når du lisensierer mulighetene for e-handel, blir områdebygger klargjort med et startområde som du kan bruke som grunnlag for ditt eget område. Hvis du imidlertid vil starte fra grunnen av, eller hvis du vil opprette et annet område, må du opprette et nytt område i områdets redigeringsmiljø. 
 
 ## <a name="set-up-your-site"></a>Konfigurere området
 
@@ -64,8 +59,6 @@ Når området er opprettet, kan du kontrollere at det er tilknyttet nettbutikken
 [Konfigurere domenenavnet](configure-your-domain-name.md)
 
 [Distribuere et nytt e-handelsområde](deploy-ecommerce-site.md)
-
-[Definere en kanal for nettbutikk](online-stores.md)
 
 [Knytte et nettområde til en kanal](associate-site-online-store.md)
 
