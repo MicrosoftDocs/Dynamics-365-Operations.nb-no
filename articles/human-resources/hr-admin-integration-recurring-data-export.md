@@ -83,7 +83,7 @@ Mesteparten av øvelsen omfatter oppretting av den logiske appen.
 
     ![Side for å opprette logisk app](media/integration-logic-app-creation-1.png)
 
-2. Start med en tom logisk app i verktøyet for å bygge logiske apper.
+2. Start med en tom logisk app i Logic Apps Designer.
 3. Legg til en [utløser for gjentakelsesplan](https://docs.microsoft.com/azure/connectors/connectors-native-recurrence) for å kjøre appen hvert døgn (eller etter en plan du velger selv).
 
     ![Dialogboks for gjentakelse](media/integration-logic-app-recurrence-step.png)
@@ -196,7 +196,7 @@ Hvis du vil teste den logiske appen, velger du **Kjør**-knappen i utformingsver
 
 Hvis det rapporteres en feil i et hvilket som helst trinn, velger du det mislykkede trinnet i utformingen og undersøker feltene **Inndata** og **Utdata** for den. Feilsøk og rett opp trinnet etter behov for å korrigere feilene.
 
-Illustrasjonen nedenfor viser hvordan utformingsverktøyet for logiske apper ser ut når alle trinnene i den logiske appen er kjørt vellykket.
+Illustrasjonen nedenfor viser hvordan Logic Apps Designer ser ut når alle trinnene i den logiske appen er kjørt vellykket.
 
 ![Vellykket kjøring av logisk app](media/integration-logic-app-successful-run.png)
 
