@@ -17,25 +17,25 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 795e9f5b843ba8e50dc091949c9732b8b033355e
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 89c38b354bbca022e80ace4aa8d0b947cfe67f3e
+ms.sourcegitcommit: 14b554b43b9d86152ef27fdde6141589bcaf1161
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2812094"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "3598187"
 ---
 # <a name="globalization-resources"></a>Globaliseringsressurser
 
 ## <a name="local-and-regional-deployments"></a>Lokale og områdespesifikke distribusjoner
 Hvis bestemmelsene fra myndighetene krever at data lagres eller behandles på en annen måte enn det som kreves for andre land/områder, kan det være lands-/områdespesifikke krav som du må ta hensyn til når du distribuerer. Følgende ressurser kan være relevante for deg:
 
-[Microsoft Dynamics 365 Finance and Operations-apper styrt av 21Vianet i Kina](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/deployment/china-local-deployment)
+[Finance and Operations-apper styrt av 21Vianet i Kina](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/deployment/china-local-deployment)
 
 ## <a name="localization-and-regulatory-features"></a>Lokalisering og forskriftsmessige funksjoner
 
 [!include [banner](../includes/banner.md)]
 
-Dynamics 365 Finance and Operations-apper inkluderer funksjonalitet for landene/områdene som er dokumentert i [Veiledning for lokaliserings- og oversettingstilgjengelighet](https://aka.ms/dynamics_365_international_availability_deck). Denne funksjonaliteten aktiveres basert på den primære adressen for den aktive juridiske enheten. 
+Finance and Operations-apper inkluderer funksjonalitet for landene/områdene som er dokumentert i [Veiledning for lokaliserings- og oversettingstilgjengelighet](https://aka.ms/dynamics_365_international_availability_deck). Denne funksjonaliteten aktiveres basert på den primære adressen for den aktive juridiske enheten. 
 
 Dette emnet inneholder lister over ressurser som kan hjelpe deg med å gjøre følgende: 
 - Finne ut mer om utvikling av lands-/områdespesifikke løsninger.
@@ -66,8 +66,8 @@ Ressursene nedenfor gir informasjon om planlagte og nye lokaliseringsfunksjoner.
 #### <a name="dynamics-365-release-plans"></a>Lanseringsplaner for Dynamics 365
 I [Lanseringsplaner for Dynamics 365](https://docs.microsoft.com/business-applications-release-notes/) finner du beskrivelser av nye og forbedrede funksjoner som er planlagt for forretningsprogrammer og programplattformer for Dynamics 365. 
 
-#### <a name="finance-and-operations-apps-whats-new"></a>Nyheter for Finance and Operations-apper
-[Startsiden Hva er nytt eller endret i Finance and Operations](../../fin-ops/get-started/whats-new-changed.md) angir funksjonene som er inkludert i bestemte versjoner av Finance and Operations-appene.
+#### <a name="finance-and-operations-apps-whats-new"></a>Nyheter i Finance and Operations-apper
+Innholdet i [Nyheter eller endringer på Finance and Operations-startsiden](../../fin-ops/get-started/whats-new-changed.md) angir funksjoner som er inkludert i bestemte versjoner av Finance and Operations-appene.
 
 ### <a name="electronic-reporting"></a>Elektronisk rapportering
 Ved hjelp av det elektroniske rapporteringsverktøyet (ER) kan du konfigurere formater for elektroniske dokumenter i overensstemmelse med de lovlige kravene i ulike land. ER lar deg administrere disse formatene i deres livssyklus. Hvis du vil ha mer informasjon, kan du se ett av følgende emner:
