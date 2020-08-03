@@ -19,57 +19,57 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: 1efa4e403f5cf2cdc5fb797f05781f6d42245ed5
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: d96d1cd91bad4f950868074d9558cb403821d73f
+ms.sourcegitcommit: 137e2bd30f0a85bd2e1baf1cf16b993edd2094f9
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3210025"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "3546368"
 ---
-# <a name="synchronize-products-in-supply-chain-management-to-products-in-field-service"></a><span data-ttu-id="4d5fc-103">Synkronisere produkter i Supply Chain Management til produkter i Field Service</span><span class="sxs-lookup"><span data-stu-id="4d5fc-103">Synchronize products in Supply Chain Management to products in Field Service</span></span>
+# <a name="synchronize-products-in-supply-chain-management-to-products-in-field-service"></a><span data-ttu-id="99035-103">Synkronisere produkter i Supply Chain Management til produkter i Field Service</span><span class="sxs-lookup"><span data-stu-id="99035-103">Synchronize products in Supply Chain Management to products in Field Service</span></span>
 
 [!include[banner](../includes/banner.md)]
 
-<span data-ttu-id="4d5fc-104">Dette emnet omhandler malene og den underliggende oppgaven som brukes til å synkronisere produkter fra Dynamics 365 Supply Chain Management til Dynamics 365 Field Service.</span><span class="sxs-lookup"><span data-stu-id="4d5fc-104">This topic discusses the templates and underlying task that are used to synchronize products from Dynamics 365 Supply Chain Management to Dynamics 365  Field Service.</span></span>
+<span data-ttu-id="99035-104">Dette emnet omhandler malene og den underliggende oppgaven som brukes til å synkronisere produkter fra Dynamics 365 Supply Chain Management til Dynamics 365 Field Service.</span><span class="sxs-lookup"><span data-stu-id="99035-104">This topic discusses the templates and underlying task that are used to synchronize products from Dynamics 365 Supply Chain Management to Dynamics 365  Field Service.</span></span>
 
-<span data-ttu-id="4d5fc-105">Den brukte **Field Service-produkter (Supply Chain Management til Field Service)**-malen er basert på **Produkter (Supply Chain Management til Sales) – direkte**-malen fra Kundeemne til kontanter.</span><span class="sxs-lookup"><span data-stu-id="4d5fc-105">The used **Field Service Products (Supply Chain Management to Field Service)** template is based on the **Products (Supply Chain Management to Sales) – Direct** template from Prospect to Cash.</span></span> <span data-ttu-id="4d5fc-106">Hvis du vil ha mer informasjon, kan du se [Produkter (Supply Chain Management til Sales) – direkte](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/sales-marketing/products-template-mapping-direct).</span><span class="sxs-lookup"><span data-stu-id="4d5fc-106">For more information, see [Products (Supply Chain Management to Sales) – Direct](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/sales-marketing/products-template-mapping-direct).</span></span>
+<span data-ttu-id="99035-105">Den brukte **Field Service-produkter (Supply Chain Management til Field Service)**-malen er basert på **Produkter (Supply Chain Management til Sales) – direkte**-malen fra Kundeemne til kontanter.</span><span class="sxs-lookup"><span data-stu-id="99035-105">The used **Field Service Products (Supply Chain Management to Field Service)** template is based on the **Products (Supply Chain Management to Sales) – Direct** template from Prospect to Cash.</span></span> <span data-ttu-id="99035-106">Hvis du vil ha mer informasjon, kan du se [Produkter (Supply Chain Management til Sales) – direkte](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/sales-marketing/products-template-mapping-direct).</span><span class="sxs-lookup"><span data-stu-id="99035-106">For more information, see [Products (Supply Chain Management to Sales) – Direct](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/sales-marketing/products-template-mapping-direct).</span></span>
 
-<span data-ttu-id="4d5fc-107">Dette emnet beskriver bare forskjellene mellom **Field Service-produkter (Supply Chain Management til Field Service)**- og **Produkter (Supply Chain Management til Sales) – direkte**-malene.</span><span class="sxs-lookup"><span data-stu-id="4d5fc-107">This topic only describes the differences between the **Field Service Products (Supply Chain Management to Field Service)** and **Products (Supply Chain Management to Sales) – Direct** templates.</span></span>
+<span data-ttu-id="99035-107">Dette emnet beskriver bare forskjellene mellom **Field Service-produkter (Supply Chain Management til Field Service)**- og **Produkter (Supply Chain Management til Sales) – direkte**-malene.</span><span class="sxs-lookup"><span data-stu-id="99035-107">This topic only describes the differences between the **Field Service Products (Supply Chain Management to Field Service)** and **Products (Supply Chain Management to Sales) – Direct** templates.</span></span>
 
-## <a name="templates-and-tasks"></a><span data-ttu-id="4d5fc-108">Maler og oppgaver</span><span class="sxs-lookup"><span data-stu-id="4d5fc-108">Templates and tasks</span></span>
+## <a name="templates-and-tasks"></a><span data-ttu-id="99035-108">Maler og oppgaver</span><span class="sxs-lookup"><span data-stu-id="99035-108">Templates and tasks</span></span>
 
-<span data-ttu-id="4d5fc-109">**Navnet på malen i Dataintegrasjon**</span><span class="sxs-lookup"><span data-stu-id="4d5fc-109">**Name of the template in Data integration**</span></span>
+<span data-ttu-id="99035-109">**Navnet på malen i Dataintegrasjon**</span><span class="sxs-lookup"><span data-stu-id="99035-109">**Name of the template in Data integration**</span></span>
 
-- <span data-ttu-id="4d5fc-110">Field Service-produkter (Supply Chain Management til Field Service)</span><span class="sxs-lookup"><span data-stu-id="4d5fc-110">Field Service Products (Supply Chain Management to Field Service)</span></span>
+- <span data-ttu-id="99035-110">Field Service-produkter (Supply Chain Management til Field Service)</span><span class="sxs-lookup"><span data-stu-id="99035-110">Field Service Products (Supply Chain Management to Field Service)</span></span>
 
-<span data-ttu-id="4d5fc-111">**Navnet på oppgaven i Dataintegrasjonprosjektet**</span><span class="sxs-lookup"><span data-stu-id="4d5fc-111">**Name of the task in the Data integration project**</span></span>
+<span data-ttu-id="99035-111">**Navnet på oppgaven i Dataintegrasjonprosjektet**</span><span class="sxs-lookup"><span data-stu-id="99035-111">**Name of the task in the Data integration project**</span></span>
 
-- <span data-ttu-id="4d5fc-112">Produkter - produkter</span><span class="sxs-lookup"><span data-stu-id="4d5fc-112">Products - Products</span></span>
+- <span data-ttu-id="99035-112">Produkter - produkter</span><span class="sxs-lookup"><span data-stu-id="99035-112">Products - Products</span></span>
 
-<span data-ttu-id="4d5fc-113">**Field Service-produkter (Supply Chain Management til Field Service)**-malen inneholder én tilordning som ikke er inkludert i **Produkter (Supply Chain Management til Sales) – direkte**-malen.</span><span class="sxs-lookup"><span data-stu-id="4d5fc-113">The **Field Service Products (Supply Chain Management to Field Service)** template includes one mapping that isn't included in the **Products (Supply Chain Management to Sales) – Direct** template.</span></span> <span data-ttu-id="4d5fc-114">Denne tilordningen sikrer at det obligatoriske Field Service-spesifikke feltet **Serviceprodukttype** er riktig angitt.</span><span class="sxs-lookup"><span data-stu-id="4d5fc-114">This mapping ensures that the required Field Service-specific field **Service Product Type** is set correctly.</span></span>
+<span data-ttu-id="99035-113">**Field Service-produkter (Supply Chain Management til Field Service)**-malen inneholder én tilordning som ikke er inkludert i **Produkter (Supply Chain Management til Sales) – direkte**-malen.</span><span class="sxs-lookup"><span data-stu-id="99035-113">The **Field Service Products (Supply Chain Management to Field Service)** template includes one mapping that isn't included in the **Products (Supply Chain Management to Sales) – Direct** template.</span></span> <span data-ttu-id="99035-114">Denne tilordningen sikrer at det obligatoriske Field Service-spesifikke feltet **Serviceprodukttype** er riktig angitt.</span><span class="sxs-lookup"><span data-stu-id="99035-114">This mapping ensures that the required Field Service-specific field **Service Product Type** is set correctly.</span></span>
 
-```Text
+```plaintext
 FIELDSERVICEPRODUCTTYPE        Fn        msdyn_fieldserciveproducttype
 ```
 
-<span data-ttu-id="4d5fc-115">Følgende verditilordning brukes.</span><span class="sxs-lookup"><span data-stu-id="4d5fc-115">The following value mapping is used.</span></span>
+<span data-ttu-id="99035-115">Følgende verditilordning brukes.</span><span class="sxs-lookup"><span data-stu-id="99035-115">The following value mapping is used.</span></span>
 
-```Text
+```plaintext
 inventory     :  690970000
 nonInventory  :  690970001 
 service       :  690970002 
 ```
 
-<span data-ttu-id="4d5fc-116">I Supply Chain Management beregnes **Field Service-produkttype**-verdien i **Salgbare frigitte produkter**-dataenheten på følgende måte:</span><span class="sxs-lookup"><span data-stu-id="4d5fc-116">In Supply Chain Management, the **Field Service product type** value on the **Sellable released products** data entity is calculated as follows:</span></span>
+<span data-ttu-id="99035-116">I Supply Chain Management beregnes **Field Service-produkttype**-verdien i **Salgbare frigitte produkter**-dataenheten på følgende måte:</span><span class="sxs-lookup"><span data-stu-id="99035-116">In Supply Chain Management, the **Field Service product type** value on the **Sellable released products** data entity is calculated as follows:</span></span>
 
-- <span data-ttu-id="4d5fc-117">**Beholdning:** produkttype = produkter og varemodellgruppe, lagerført produkt = Sann</span><span class="sxs-lookup"><span data-stu-id="4d5fc-117">**Inventory:** Product type = Product and Item model group, Stocked product = True</span></span>
-- <span data-ttu-id="4d5fc-118">**Ikke-beholdning:** produkttype = produkter og varemodellgruppe, lagerført produkt = Usann</span><span class="sxs-lookup"><span data-stu-id="4d5fc-118">**NonInventory:** Product type = Product and Item model group, Stocked product = False</span></span>
-- <span data-ttu-id="4d5fc-119">**Service:** Produkttype = Service</span><span class="sxs-lookup"><span data-stu-id="4d5fc-119">**Service:** Product type = Service</span></span>
+- <span data-ttu-id="99035-117">**Beholdning:** produkttype = produkter og varemodellgruppe, lagerført produkt = Sann</span><span class="sxs-lookup"><span data-stu-id="99035-117">**Inventory:** Product type = Product and Item model group, Stocked product = True</span></span>
+- <span data-ttu-id="99035-118">**Ikke-beholdning:** produkttype = produkter og varemodellgruppe, lagerført produkt = Usann</span><span class="sxs-lookup"><span data-stu-id="99035-118">**NonInventory:** Product type = Product and Item model group, Stocked product = False</span></span>
+- <span data-ttu-id="99035-119">**Service:** Produkttype = Service</span><span class="sxs-lookup"><span data-stu-id="99035-119">**Service:** Product type = Service</span></span>
 
-## <a name="template-mapping-in-data-integration"></a><span data-ttu-id="4d5fc-120">Maltilordning i Dataintegrering</span><span class="sxs-lookup"><span data-stu-id="4d5fc-120">Template mapping in Data integration</span></span>
+## <a name="template-mapping-in-data-integration"></a><span data-ttu-id="99035-120">Maltilordning i Dataintegrering</span><span class="sxs-lookup"><span data-stu-id="99035-120">Template mapping in Data integration</span></span>
 
-<span data-ttu-id="4d5fc-121">Følgende illustrasjoner viser en tilordning av malen i Dataintegrering.</span><span class="sxs-lookup"><span data-stu-id="4d5fc-121">The following illustrations show the template mapping in Data integration.</span></span>
+<span data-ttu-id="99035-121">Følgende illustrasjoner viser en tilordning av malen i Dataintegrering.</span><span class="sxs-lookup"><span data-stu-id="99035-121">The following illustrations show the template mapping in Data integration.</span></span>
 
-### <a name="field-service-products-supply-chain-management-to-field-service-products---products"></a><span data-ttu-id="4d5fc-122">Field Service-produkter (Supply Chain Management til Field Service): Produkter – produkter</span><span class="sxs-lookup"><span data-stu-id="4d5fc-122">Field Service Products (Supply Chain Management to Field Service): Products - Products</span></span>
+### <a name="field-service-products-supply-chain-management-to-field-service-products---products"></a><span data-ttu-id="99035-122">Field Service-produkter (Supply Chain Management til Field Service): Produkter – produkter</span><span class="sxs-lookup"><span data-stu-id="99035-122">Field Service Products (Supply Chain Management to Field Service): Products - Products</span></span>
 
-<span data-ttu-id="4d5fc-123">[![Maltilordning i Dataintegrering](./media/FSProduct.png)](./media/FSProduct.png)</span><span class="sxs-lookup"><span data-stu-id="4d5fc-123">[![Template mapping in Data integration](./media/FSProduct.png)](./media/FSProduct.png)</span></span>
+<span data-ttu-id="99035-123">[![Maltilordning i Dataintegrering](./media/FSProduct.png)](./media/FSProduct.png)</span><span class="sxs-lookup"><span data-stu-id="99035-123">[![Template mapping in Data integration](./media/FSProduct.png)](./media/FSProduct.png)</span></span>
