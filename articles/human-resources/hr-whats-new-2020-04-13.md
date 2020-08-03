@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2020-04-13
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 711cc4491024e647429b108438ce1d88483ea63c
-ms.sourcegitcommit: dbff1c6bb371a443a0cd2a310f5a48d5c21b08ca
+ms.openlocfilehash: 4f61283f3bab26f54d55ffe7cbea21b1201ed234
+ms.sourcegitcommit: bd9ff0d28718d535356ffbe1cffaaf60310dd430
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "3259823"
+ms.lasthandoff: 07/13/2020
+ms.locfileid: "3555153"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-april-13-2020"></a>Hva er nytt eller endret i Dynamics 365 Human Resources (13. april 2020)?
 
@@ -88,3 +88,10 @@ Hvis dokumentforhåndsvisning for dokumenter lagret i SharePoint, ikke fungerer,
 3. Få tilgang til et vedlegg i SharePoint for å starte forhåndsvisning av dokument.
 
 4. Logg på med en annen brukerkonto som har tilgang til vedlegg, og bekreft at forhåndsvisningen fungerer som forventet.
+
+## <a name="see-also"></a>Se også
+
+[Nyheter eller endringer i Human Resources](hr-admin-whats-new.md)</br>
+[Oversikt over lanseringsbølge 2 i 2019 for Dynamics 365 Human Resources](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
+[Oppdatere prosess](hr-admin-setup-update-process.md)</br>
+[Behandle funksjoner](hr-admin-manage-features.md)

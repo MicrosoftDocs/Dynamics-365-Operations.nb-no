@@ -3,7 +3,7 @@ title: Fjernede eller avskrevne Platform-funksjoner
 description: Dette emnet beskriver funksjoner som er fjernet eller som er planlagt for fjerning i plattformoppdateringer av Finance and Operations-apper.
 author: sericks007
 manager: AnnBe
-ms.date: 06/16/2020
+ms.date: 07/20/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 1faee75c9112b3aa584ad021ffdc1144fcf4ba32
-ms.sourcegitcommit: 3485d7f36058151cb4fff5c425ef27f56e3ee7d6
+ms.openlocfilehash: 50362ccd9df7a44961bd6e46fa16779829b1c408
+ms.sourcegitcommit: 96ec8b7252296de0049bff406c743f8da9e0f0be
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "3457572"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "3606828"
 ---
 # <a name="removed-or-deprecated-platform-features"></a>Fjernede eller avskrevne Platform-funksjoner
 
@@ -33,8 +33,7 @@ Dette emnet beskriver funksjoner som er fjernet eller som er planlagt for fjerni
 
 Denne listen er ment å hjelpe deg med å vurdere disse fjerningene og avskrivningene for din egen planlegging. 
 
-> [!NOTE]
-> Detaljert informasjon om objekter i Finance and Operations-apper finnes i [Tekniske referanserapporter](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep). Du kan sammenligne de ulike versjonene av disse rapportene for å lære om objekter som er endret eller fjernet i hver versjon av Finance and Operations-apper.
+Detaljert informasjon om objekter i Finance and Operations-apper finnes i [Tekniske referanserapporter](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep). Du kan sammenligne de ulike versjonene av disse rapportene for å lære om objekter som er endret eller fjernet i hver versjon av Finance and Operations-apper.
 
 ## <a name="platform-updates-for-version-10013-of-finance-and-operations-apps"></a>Plattformoppdateringer for versjon 10.0.13 av Finance and Operations-apper
 

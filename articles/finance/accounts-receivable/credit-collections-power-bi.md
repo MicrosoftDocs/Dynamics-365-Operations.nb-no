@@ -3,7 +3,7 @@ title: Power BI-innholdet Behandling av kreditt og innkrevinger
 description: Dette emnet beskriver hva som er inkludert i Power BI-innholdet Behandling av kreditt og innkrevinger. Det forklarer hvordan du kan få tilgang til Power BI-rapporter, og gir informasjon om datamodellen og enhetene som brukes til å bygge innholdet.
 author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 04/21/2020
+ms.date: 07/16/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 5c4a2289d7fa0f062735c93cf26cba9ac29ab94e
-ms.sourcegitcommit: e9fadf6f6dafdcefaff8e23eaa3c85f53437db3f
+ms.openlocfilehash: 03face220fd63962f645b4fe91f20aec2f19b1ef
+ms.sourcegitcommit: 14b554b43b9d86152ef27fdde6141589bcaf1161
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "3278880"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "3598064"
 ---
 # <a name="credit-and-collections-management-power-bi-content"></a>Power BI-innholdet Behandling av kreditt og innkrevinger
 
@@ -47,9 +47,10 @@ Som standard vises kredit- og innkrevingsdataene for gjeldende firma. Hvis du vi
 Følgende oppsett må fullføres for at data skal kunne vises i Power BI-visualobjekter for **Kundekreditt og innkrevinger**.
 
 1. Gå til **Systemadministrasjon > Oppsett > Systemparametere** for å angi **Systemvaluta** og **Valutakurs for system**.
-2. Gå til **Økonomimodul > Oppsett > Finans** og angi **Regnskapsvaluta** og **Type valutakurs**.
-3. Definer valutakurser mellom transaksjonsvalutaer og regnskapsvaluta og mellom regnskapsvaluta og systemvaluta. Du kan gjøre dette ved å gå til **Økonomimodul > Valutaer > Valutakurser**.
-4. Gå til **Systemadministrasjon > Oppsett > Enhetslager** for å oppdatere den aggregerte målingen **CustCollectionsBIMeasurementsV2**.
+2. Gå til **Økonomi > Kalendere > Regnskapskalendere** for å validere regnskapskalenderdatoer som er tilordnet den aktive tidsperioden.
+3. Gå til **Økonomimodul > Oppsett > Finans** og angi **Regnskapsvaluta** og **Type valutakurs**.
+4. Definer valutakurser mellom transaksjonsvalutaer og regnskapsvalutam regnskapsvaluta og systemvaluta. Du kan gjøre dette ved å gå til **Økonomimodul > Valutaer > Valutakurser**.
+5. Gå til **Systemadministrasjon > Oppsett > Enhetslager** for å oppdatere den aggregerte målingen **CustCollectionsBIMeasurementsV2**.
 
 ## <a name="accessing-the-power-bi-content"></a>Tilgang til Power BI-innholdet
 

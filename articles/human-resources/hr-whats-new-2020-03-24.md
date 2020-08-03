@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2020-03-24
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 83f24dd6f094715f96666c3ae94faa4bdb97a652
-ms.sourcegitcommit: fac1d519a85eab0c936b54e0a9247f6a11842871
+ms.openlocfilehash: 4f46d631379711dd2002a95dfa6001a362727f4f
+ms.sourcegitcommit: bd9ff0d28718d535356ffbe1cffaaf60310dd430
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "3177943"
+ms.lasthandoff: 07/13/2020
+ms.locfileid: "3555105"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-march-24-2020"></a>Hva er nytt eller endret i Dynamics 365 Human Resources (24. mars 2020)?
 
@@ -113,3 +113,10 @@ Fra og med april vil lanseringsfrekvensen for Human Resources skifte fra en uken
 ## <a name="employment-detail-entity"></a>Enheten Ansettelsesdetalj
 
 Enheten **Ansettelsesdetalj** er oppdatert med følgende felt: **Lønnsfrekvens**, **ID for ansettelseskategori**, **Ansettelsestyper**, **ID for ansettelsestype** og **Ansettelsesstatus for fordel**. Oppsettsdataene for disse feltene er avhengig av fordelsadministrasjonen som aktiveres i Funksjonsbehandling. Disse feltene bør ikke fylles ut eller oppdateres enheten **Ansettlesesdetalj** fordi det vil føre til feil under importen.
+
+## <a name="see-also"></a>Se også
+
+[Nyheter eller endringer i Human Resources](hr-admin-whats-new.md)</br>
+[Oversikt over lanseringsbølge 2 i 2019 for Dynamics 365 Human Resources](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
+[Oppdatere prosess](hr-admin-setup-update-process.md)</br>
+[Behandle funksjoner](hr-admin-manage-features.md)

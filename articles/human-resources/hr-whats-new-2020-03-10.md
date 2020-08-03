@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2020-03-10
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 7c1a9f10a434343e4c9c8a42ec5c0b7a1a18ad36
-ms.sourcegitcommit: 437170338c49b61bba58f822f8494095ea1308c2
+ms.openlocfilehash: 1843095c41428d377341154c9f2140085831e770
+ms.sourcegitcommit: bd9ff0d28718d535356ffbe1cffaaf60310dd430
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "3124022"
+ms.lasthandoff: 07/13/2020
+ms.locfileid: "3555265"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-march-10-2020"></a>Hva er nytt eller endret i Dynamics 365 Human Resources (10. mars 2020)?
 
@@ -97,3 +97,10 @@ Følgende forhåndsversjonsfunksjoner er tilgjengelige fra 3. februar 2020:
 - Anbefalte felt – Brukere må ofte legge til felt i et rutenett eller en side. Dette kan være vanskelig med så mange tilgjengelige felt. I stedet for å måtte søke gjennom en stor liste, gjør denne funksjonen det mulig for systemet å bruke et sett av anbefalte felt basert på hvilke andre brukere oftest legger til i lignende scenarioer.
 
 - Trege standardhandlinger i rutenett – Denne funksjonen sikrer at standardhandlingen i et rutenett er koblet til en bestemt kolonne i et rutenett, uansett om kolonnen er flyttet eller skjult.
+
+## <a name="see-also"></a>Se også
+
+[Nyheter eller endringer i Human Resources](hr-admin-whats-new.md)</br>
+[Oversikt over lanseringsbølge 2 i 2019 for Dynamics 365 Human Resources](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
+[Oppdatere prosess](hr-admin-setup-update-process.md)</br>
+[Behandle funksjoner](hr-admin-manage-features.md)

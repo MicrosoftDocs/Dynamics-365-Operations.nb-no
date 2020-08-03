@@ -2,7 +2,7 @@
 title: Avansert lastplanlegging under en bølge
 description: Dette emnet inneholder informasjon om avansert bølgelastplanlegging, som automatisk tilordner forsendelser til eksisterende bølger under bølgekjøring. Du kan derfor opprette meningsfylte laster som representerer lastebiler, uten å måtte bruke arbeidsområdet for lastplanlegging.
 author: mirzaab
-manager: AnnBe
+manager: tfehr
 ms.date: 07/01/2020
 ms.topic: article
 ms.prod: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: Release 10.0.9
-ms.openlocfilehash: a4d331e08af75347ed2dbc3dd777c79961de48a4
-ms.sourcegitcommit: a7a7303004620d2e9cef0642b16d89163911dbb4
+ms.openlocfilehash: 3ad24c2f59b8d698f0ef34b83f333c75b79a8516
+ms.sourcegitcommit: f64fce03ec52f844b05a9e8cac286cb201385002
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "3530518"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "3597318"
 ---
 # <a name="advanced-load-building-during-wave"></a>Avansert lastplanlegging under en bølge
 

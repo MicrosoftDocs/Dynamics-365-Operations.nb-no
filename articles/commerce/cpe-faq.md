@@ -1,9 +1,9 @@
 ---
-title: Vanlige spørsmål om miljø for forhåndsvisning av Dynamics 365 Commerce
-description: Dette emnet gir svar på vanlige spørsmål om Microsoft Dynamics 365 Commerce-forhåndsvisningsmiljøet.
+title: Vanlige spørsmål om evalueringsmiljø for Dynamics 365 Commerce
+description: Dette emnet gir svar på vanlige spørsmål om Microsoft Dynamics 365 Commerce-evalueringsmiljøet.
 author: v-chgri
 manager: annbe
-ms.date: 04/10/2020
+ms.date: 07/16/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,73 +17,57 @@ ms.search.region: Global
 ms.author: v-chgri
 ms.search.validFrom: 2019-12-10
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 5321d7937a9de3ba39f7a88bf0e9c26f4e62d7bc
-ms.sourcegitcommit: 4254acb3cf8c6299fc2f3818ea6c499f058320d9
+ms.openlocfilehash: 637714e28b9f8f4aa66e251e709d8f78bff2739d
+ms.sourcegitcommit: 5175e3fae432016246244cf70fe05465f43de88c
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "3254730"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "3599772"
 ---
-# <a name="dynamics-365-commerce-preview-environment-faq"></a>Vanlige spørsmål om miljø for forhåndsvisning av Dynamics 365 Commerce
+# <a name="dynamics-365-commerce-evaluation-environment-faq"></a>Vanlige spørsmål om evalueringsmiljø for Dynamics 365 Commerce
 
 [!include [banner](includes/banner.md)]
 
-Dette emnet gir svar på vanlige spørsmål om Microsoft Dynamics 365 Commerce-forhåndsvisningsmiljøet.
+Dette emnet gir svar på vanlige spørsmål om Microsoft Dynamics 365 Commerce-evalueringsmiljøet.
 
-**Kan jeg overføre invitasjonen for forhåndsvisningsmiljøet i Commerce til en annen leier?**
+**Kan vi bruke Commerce-evalueringsmiljøet som en e-handel-butikkfasade for kunder som for tiden implementerer Retail?**
 
-Ja. For invitasjonsoverføringer kan du bruke [skjemaet for overføring av Commerce-forhåndsvisning](https://aka.ms/Dynamics365CommercePreviewTransferForm).
+Nr. Evalueringsmiljøet for Commerce er bare for evaluering. Hvis du trenger et miljø for en kunde som implementerer Retail, kan du kontakte Microsoft.
 
-**Hvor lang tid tar invitasjonsoverføringen?**
+**Kan evalueringsmiljøet for Commerce brukes til å klargjøre e-handelsfunksjonene oppå et eksisterende program/miljø som implementerer Retail?**
 
-Overføringen tar i gjennomsnitt omtrent tre til fem virkedager. Unntak kan imidlertid gjelde.
+Nei (for det meste). Komponentene for Commerce-evaluering er bare tilgjengelige for miljøer som samsvarer med konfigurasjonene som er angitt i veiledningen for forhåndskrav og klargjøring. I tillegg vil de nødvendige grunndemodataene ikke være tilgjengelige i miljøer som ble distribuert med en første versjon som er eldre enn 10.0.8. 
 
-**Fungerer forhåndsvisningsmiljøet for Commerce med Dynamics 365 Finance eller Dynamics 365 Supply Chain-prosjekter**
+**Hvilke kostnader er involvert i distribusjon av evalueringsmiljøet for Commerce på Microsoft Azure via Microsoft Dynamics Lifecycle Services (LCS)?**
 
-Nr. Forhåndsvisningsmiljøet for Commerce fungerer bare med Dynamics 365 Retail-prosjekter.
+Et tradisjonelt Dynamics 365 Finance/Dynamics 365 Supply Chain Management-/Dynamics 365 Commerce-hovedkvarterdemomiljø (virtuell maskin\[VM\]) vil være vert for Azure-abonnementet. Du kan bruke [Azure prising-kalkulatoren](https://azure.microsoft.com/pricing/calculator/) til å estimere denne kostnaden.
 
-**Kan vi bruke Commerce-forhåndsvisningsmiljøet som en e-handel-butikkfasade for kunder som for tiden implementerer Retail?**
+Andre komponenter som for eksempel Commerce Scale Unit, Commerce-områdebygger og ditt e-handelsområde vil være tilgjengelig som en tjeneste (SaaS) og være vertsbasert hos Microsoft.
 
-Nr. Forhåndsvisningsmiljøet for Commerce er bare evalueringsmiljøet. Hvis du trenger et miljø for en kunde som implementerer Retail, kan du kontakte Microsoft.
+**Hvilke Azure-områder støttes for øyeblikket for evalueringsmiljøet i Commerce?**
 
-**Kan forhåndsvisningsmiljøet for Commerce brukes til å klargjøre e-handelsfunksjonene oppå et eksisterende program/miljø som implementerer Retail?**
-
-Nr. Forhåndsvisningsmiljøet for Commerce er for øyeblikket bare tilgjengelig i nye miljøer som ble distribuert på Retail-lagerenheter for SKU-prosjekter som har demonstrasjonsdata fra versjon 10.0.6.
-
-**Hvilke kostnader er involvert i distribusjon av forhåndsvisningsmiljøet for Commerce på Microsoft Azure via Microsoft Dynamics Lifecycle Services (LCS)?**
-
-Retail er den eneste komponenten som driftes i abonnementet. Andre komponenter, for eksempel Retail Cloud Scale Unit (RCSU) og e-handel, blir driftet i Microsoft-abonnementer. Du kan bruke [Azure prising-kalkulatoren](https://azure.microsoft.com/pricing/calculator/) til å estimere denne kostnaden.
-
-**Hvilke Azure-områder støttes for øyeblikket for forhåndsvisningsmiljøet i Commerce?**
-
-Forhåndsvisningsmiljøet for Commerce kan bare distribueres i Nord-Amerika-området.
+Evalueringsmiljøet for Commerce kan bare distribueres i Nord-Amerika-området.
 
 **Finnes det en nedlastbar virtuell harddisk (VHD) som har det komplette alternativet for OneBox virtuell maskin (VM)?**
 
-Dynamics 365 Retail Cloud Scale Unit (RCSU) og e-handel er fullstendig programvare som en tjeneste (SaaS) og må være skybasert.
+Dynamics 365 Commerce og Commerce Scale Unit er fullstendig programvare som en tjeneste (SaaS) og må være skybasert.
 
-**Hvor lenge kan forhåndsvisningsmiljøet for Commerce brukes?**
+**Hvor lenge kan evalueringsmiljøet for Commerce brukes?**
 
-Forhåndsvisningsmiljøet for Commerce har en 30-dagers tidsbegrensning fra datoen for klargjøring av e-handel.
+Commerce-evalueringsmiljøet har en 30-dagers tidsgrense fra datoen SaaS-komponenter som for eksempel Commerce Scale Unit, Commerce-områdebygger og ditt e-handelsområde klargjøres.
 
-**Kan jeg forlenge tidsbegrensningen for forhåndsvisningsmiljøet i Commerce?**
+**Kan jeg forlenge tidsbegrensningen for evalueringsmiljøet i Commerce?**
 
-Ja. Du kan kontakte kundestøtteteamet ved hjelp av [skjemaet for utvidelse av Commerce-forhåndsvisning](https://aka.ms/Dynamics365CommercePreviewExtensionForm).
-
-**Kan vi foreta flere forespørsler om et forhåndsvisningsmiljø for Commerce?**
-
-Vi gir en kvote på ett miljø for Commerce-forhåndsvisning for hver forespørsel som godtas. Hvis du trenger mer enn ett forhåndsvisningsmiljø, kontakter du Microsoft. Se neste del for kontaktinformasjon.
-
-## <a name="dynamics-365-commerce-preview-environment-contact-information"></a>Kontaktinformasjon for Dynamics 365 Commerce-forhåndsvisningsmiljø
-
-Hvis du vil kontakte Microsoft med spørsmål eller forespørsler som er relatert til forhåndsvisningsmiljøet i Commerce, kan du gå til [Microsoft Dynamics 365 Commerce Yammer-gruppen for forhåndsvisning](https://aka.ms/Dynamics365CommercePreviewYammer) for å få hjelp.
+Utvidelsen av tidsgrensen er et unntak fra normen og vurderes for hvert tilfelle. Du må kontakte din Microsoft-partnerkontakten for hjelp.
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 
-[Oversikt over miljø for forhåndsvisning av Dynamics 365 Commerce](cpe-overview.md)
+[Oversikt over Dynamics 365 Commerce-evalueringsmiljø](cpe-overview.md)
 
-[Klargjøre et miljø for forhåndsvisning av Dynamics 365 Commerce](provisioning-guide.md)
+[Klargjøre et evalueringsmiljø for Dynamics 365 Commerce](provisioning-guide.md)
 
-[Konfigurere et miljø for forhåndsvisning av Dynamics 365 Commerce](cpe-post-provisioning.md)
+[Konfigurere et Dynamics 365 Commerce-evalueringsmiljø](cpe-post-provisioning.md)
 
-[Konfigurere valgfrie funksjoner for et miljø for forhåndsvisning av Dynamics 365 Commerce](cpe-optional-features.md)
+[Konfigurere BOPIS i et evalueringsmiljø for Dynamics 365 Commerce](cpe-bopis.md)
+
+[Konfigurere valgfrie funksjoner for et evalueringsmiljø for Dynamics 365 Commerce](cpe-optional-features.md)

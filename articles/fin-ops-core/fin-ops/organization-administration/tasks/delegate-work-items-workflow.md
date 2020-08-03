@@ -3,7 +3,7 @@ title: Delegere arbeidselementer i en arbeidsflyt
 description: Hvis du planlegger å være borte fra kontoret eller av andre grunner ikke er tilgjengelig til å behandle arbeidselementer, kan du delegere eller tilordne arbeidselementer til andre brukere.
 author: ChrisGarty
 manager: AnnBe
-ms.date: 06/23/2020
+ms.date: 07/07/2020
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 7d98d84b89f1f3322a9c896b74b63a3b6425b13b
-ms.sourcegitcommit: 267864eb0dccd6e26d49d280bd4ad1b770a73a77
+ms.openlocfilehash: 96777b66645453bc909bd4053e2724a37771d5d6
+ms.sourcegitcommit: 561d06c2a74602dfaa40334d8afac5053aebc055
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "3515770"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "3541091"
 ---
 # <a name="delegate-work-items-in-a-workflow"></a>Delegere arbeidselementer i en arbeidsflyt
 
@@ -49,13 +49,15 @@ Hvis du planlegger å være borte fra kontoret eller å ikke være tilgjengelig 
 1. Gå til **Felles > Oppsett > Brukeralternativer**.
 2. Klikk på kategorien **Arbeidsflyt**. Kontroller at Delegering-delen er utvidet. Hvis du vil konfigurere systemet slik at det automatisk delegerer arbeidselementene dine til andre brukere, må du opprette delegeringsregler, som angir når bestemte typer arbeidselementer delegeres. Hvis du vil opprette en delegeringsregel, gjør du følgende:  
 3. Klikk **Legg til**.
-4. Velg et alternativ i **Omfang**-feltet.
+4. Velg et alternativ i **Omfang**-feltet:
     - Alle – deleger alle arbeidsenheter som er tilordnet til deg.
-    - Modul – deleger bare arbeidselementene som er knyttet til en bestemt type arbeidsflyt. Hvis du velger dette alternativet, må du velge typen arbeidsflyt i Navn-feltet.
-    - Arbeidsflyt – deleger bare arbeidselementene som er knyttet til en bestemt arbeidsflyt. Hvis du velger dette alternativet, må du velge arbeidsflyten i Navn-feltet.  
-5. Velg brukeren som arbeidselementene skal delegeres til, i **Deleger**-feltet. Bruk feltene Startdato/-klokkeslett og Sluttdato/-klokkeslett til å angi når du vil at arbeidselementer skal delegeres automatisk.  
-6. Angi dato og klokkeslett i feltet **Startdato/-klokkeslett**.
-7. Angi dato og klokkeslett i feltet **Sluttdato/-klokkeslett**.
-8. Merk av for **Aktivert** for å aktivere denne delegeringsregelen. Hvis du valgte **Modul** som omfanget, må du velge modulen i Navn-feltet. Hvis du valgte **Arbeidsflyt** som omfanget, må du velge den bestemte arbeidsflyten som skal delegeres, i Navn-feltet.  
-9. Angi en kommentar som forklarer hvorfor du delegerer arbeidselementene, i feltet **Kommentar**.
-
+    - Modul – deleger bare arbeidselementene som er knyttet til en bestemt type arbeidsflyt. Hvis du velger dette alternativet, må du velge typen arbeidsflyt i **Navn**-feltet.
+    - Arbeidsflyt – deleger bare arbeidselementene som er knyttet til en bestemt arbeidsflyt. Hvis du velger dette alternativet, må du velge arbeidsflyten i **Navn**-feltet.  
+5. I **Navn**-feltet:
+    - For **Modul**-området velger du målmodulen.
+    - For **Arbeidsflyt**-området velger du målarbeidsflyten.
+6. Velg brukeren som arbeidselementene skal delegeres til, i **Deleger**-feltet. Bruk feltene **Startdato/-klokkeslett** og **Sluttdato/-klokkeslett** til å angi når du vil at arbeidselementer skal delegeres automatisk.  
+7. Angi dato og klokkeslett i feltet **Startdato/-klokkeslett**.
+8. Angi dato og klokkeslett i feltet **Sluttdato/-klokkeslett**.
+9. Merk av for **Aktivert** for å aktivere denne delegeringsregelen. 
+10. Angi en kommentar som forklarer hvorfor du delegerer arbeidselementene, i feltet **Kommentar**.

@@ -1,9 +1,9 @@
 ---
-title: Konfigurere valgfrie funksjoner for et miljø for forhåndsvisning av Dynamics 365 Commerce
-description: Dette emnet forklarer hvordan du konfigurerer valgfrie funksjoner for et Microsoft Dynamics 365 Commerce-forhåndsvisningsmiljø.
+title: Konfigurere valgfrie funksjoner for et evalueringsmiljø for Dynamics 365 Commerce
+description: Dette emnet forklarer hvordan du konfigurerer valgfrie funksjoner for et Microsoft Dynamics 365 Commerce-evalueringsmiljø.
 author: psimolin
 manager: annbe
-ms.date: 12/10/2019
+ms.date: 07/16/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,28 +17,25 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-12-10
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 4b17f8e9b0d8a9a62714d0073561e66642b2eaf9
-ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
+ms.openlocfilehash: 6f7ba7e6de3791720458b509059f008423c73a82
+ms.sourcegitcommit: 5175e3fae432016246244cf70fe05465f43de88c
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "3057746"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "3599826"
 ---
-# <a name="configure-optional-features-for-a-dynamics-365-commerce-preview-environment"></a>Konfigurere valgfrie funksjoner for et miljø for forhåndsvisning av Dynamics 365 Commerce
-
+# <a name="configure-optional-features-for-a-dynamics-365-commerce-evaluation-environment"></a>Konfigurere valgfrie funksjoner for et evalueringsmiljø for Dynamics 365 Commerce
 
 [!include [banner](includes/banner.md)]
 
-Dette emnet forklarer hvordan du konfigurerer valgfrie funksjoner for et Microsoft Dynamics 365 Commerce-forhåndsvisningsmiljø.
+Dette emnet forklarer hvordan du konfigurerer valgfrie funksjoner for et Microsoft Dynamics 365 Commerce-evalueringsmiljø.
 
 ## <a name="prerequisites"></a>Forutsetninger
 
 Hvis du vil evaluere de transaksjonelle e-postfunksjonene, må følgende forutsetninger oppfylles:
 
-- Du har en e-postserver tilgjengelig (\[SMTP\]-server), som kan brukes fra Microsoft Azure-abonnementet der du klargjorde forhåndsvisningsmiljøet.
+- Du har en e-postserver tilgjengelig (\[SMTP\]-server), som kan brukes fra Microsoft Azure-abonnementet der du klargjorde evalueringsmiljøet.
 - Du har serverens fullstendig kvaliserte domenenavn (FQDN)/IP-adresse, SMTP-portnummer og godkjenningsinformasjon tilgjengelig.
-
-Hvis du vil evaluere funksjoner for digital aktivastyring ved inntak av nye omnikanalbilder, må du ha navnet på leierenaktiva for innholdsstyringssystemet (CMS) tilgjengelig. Du finner instruksjoner for å finne dette navnet senere i dette emnet. > > > (Sp: hvor er instruksjonene?)
 
 ## <a name="configure-the-image-back-end"></a>Konfigurere bildeserveren
 
@@ -47,9 +44,9 @@ Hvis du vil evaluere funksjoner for digital aktivastyring ved inntak av nye omni
 > [!NOTE]
 > Før du kan fullføre denne prosedyren, må du fullføre trinnene i [Konfigurere området i handel](cpe-post-provisioning.md#set-up-your-site-in-commerce).
 
-1. Logg på verktøyet for administrasjon av e-handel-området ved hjelp av URL-adressen du noterte da du startet e-handel under klargjøring (se [Initialisere e-handel](provisioning-guide.md#initialize-e-commerce)).
+1. Logg på Commerce-områdebyggeren ved hjelp av URL-adressen du noterte da du startet e-handel under klargjøring (se [Initialisere e-handel](provisioning-guide.md#initialize-e-commerce)).
 1. Åpne **Fabrikam**-området.
-1. Velg **Aktiva** på menyen til venstre.
+1. Velg **Mediebibliotek** på menyen til venstre.
 1. Velg et hvilket som helst enkeltbilde.
 1. I egenskapsinspektøren til høyre finner du egenskapen **Offentlig URL**. Verdien er en URL. Her er et eksempel:
 
@@ -63,22 +60,22 @@ Hvis du vil evaluere funksjoner for digital aktivastyring ved inntak av nye omni
 
 ### <a name="update-the-media-base-url"></a>Oppdatere primær URL-adresse for media
 
-1. Logg på Dynamics 365 Commerce.
+1. Logg på Commerce Headquarters.
 1. Bruk menyen til venstre og gå til **Moduler \> Retail og Commerce \> Kanaloppsett \> Kanalprofiler**.
 1. Velg **Rediger**.
 1. Fra **Profilegenskaper** erstatter du egenskapsverdien for **Primær URL-adresse for medieserver** med den primære URL-adressen for media du opprettet tidligere.
-1. Velg den andre kanalen fra listen til venstre, under **Standard**-kanal.
+1. Velg kanalen med navnet **scXXXXXXXXX**.
 1. Klikk **Legg til** under **Profilegenskaper**.
 1. For egenskapen som ble lagt til, velger du **Primær URL-adresse for medieserver** som egenskapsnøkkel. Som egenskapsverdi angir du primær URL-adresse for media som du opprettet tidligere.
 1. Velg **Lagre**.
 
-## <a name="configure-the-email-server"></a>Konfigurere e-postserveren
+## <a name="configure-and-test-the-email-server"></a>Konfigurere og teste e-postserveren
 
 > [!NOTE]
 > SMTP-serveren eller e-posttjenesten du angir her, må være tilgjengelig fra Azure-abonnementet du bruker for miljøet.
 
-1. Logg på Commerce.
-1. Bruk menyen til venstre, og gå til **Moduler \> Systemadministrasjon \> Oppsett \> E-post \> E-postparametere**.
+1. Logg på Commerce Headquarters.
+1. Bruk menyen til venstre for å gå til **Moduler \> Detaljhandel \> Hovedkvarteroppsett \> Parametere \> E-postparametere**.
 1. I kategorien **SMTP-innstillinger** i feltet **Server for utgående e-post** angir du FQDN eller IP-adressen til SMTP-serveren eller e-posttjenesten.
 1. I feltet **SMTP-portnummer** angir du portnummeret. (Hvis du ikke bruker Secure Sockets Layer \[SSL\], er standard portnummer **25**.)
 1. Hvis godkjenning kreves, angir du verdier i feltene **Brukernavn** og **Passord**.
@@ -92,8 +89,8 @@ Hvis du vil evaluere funksjoner for digital aktivastyring ved inntak av nye omni
 
 E-postmalen for hver transaksjonshendelse du vil sende e-postmeldinger for, må oppdateres med en gyldig e-postadresse for avsender.
 
-1. Logg på Commerce.
-1. Bruk menyen til venstre, og gå til **Moduler \> Organisasjonsstyring \> Oppsett \> Maler for e-post til organisasjon**.
+1. Logg på Commerce Headquarters.
+1. Bruk menyen til venstre for å gå til **Moduler \> Detaljhandel \> Hovedkvarteroppsett \> Parametere \> Maler for e-post til organisasjon**.
 1. Velg **Vis liste**.
 1. Følg disse trinnene for hver mal i listen:
 
@@ -104,9 +101,9 @@ E-postmalen for hver transaksjonshendelse du vil sende e-postmeldinger for, må 
 
 ## <a name="customize-email-templates"></a>Tilpasse e-postmaler
 
-Det kan være lurt å tilpasse e-postmalene slik at de bruker forskjellige bilder. Eller kanskje du vil oppdatere koblingene i malene slik at de går til forhåndsvisningsmiljøet. Trinnene nedenfor forklarer hvordan du laster ned standardmaler, tilpasser dem og oppdaterer malene i systemet.
+Det kan være lurt å tilpasse e-postmalene slik at de bruker forskjellige bilder. Eller kanskje du vil oppdatere koblingene i malene slik at de går til evalueringsmiljøet. Trinnene nedenfor forklarer hvordan du laster ned standardmaler, tilpasser dem og oppdaterer malene i systemet.
 
-1. Bruk en webleser og last ned [Microsoft Dynamics 365 Commerce forhåndsvisning av standard e-postmaler .zip-fil](https://download.microsoft.com/download/d/7/b/d7b6c4d4-fe09-4922-9551-46bbb29d202d/Commerce.Preview.Default.Email.Templates.zip) til den lokale datamaskinen. Denne filen inneholder følgende HTML-dokumenter:
+1. Bruk en webleser og last ned [zip-fil med standard e-postmaler for Microsoft Dynamics 365 Commerce-evaluering](https://download.microsoft.com/download/d/7/b/d7b6c4d4-fe09-4922-9551-46bbb29d202d/Commerce.Preview.Default.Email.Templates.zip) til den lokale datamaskinen. Denne filen inneholder følgende HTML-dokumenter:
 
     - Ordrebekreftelsesmal
     - Utsted gavekort-mal
@@ -156,12 +153,12 @@ Følgende tokener erstattes med verdier for hvert produkt i ordren.
 > [!NOTE]
 > Sett inn tokenet **Produktliste - start** i begynnelsen av HTML-blokken som gjentas for hvert produkt, og sett inn tokenet **Produktliste - slutt** på slutten av blokken.
 
-| Navnet på tokenet      | Token  |
+| Navnet på tokenet      | Token |
 |------------------------|-------|
 | Produktliste – start   | \<!--%tablebegin.salesline% --\> |
 | Produktliste – slutt     | \<!--%tableend.salesline%--\> |
 | Produktnavn           | %lineproductname% |
-| Beskrivelse            | %lineproductdescription% |
+| beskrivelse            | %lineproductdescription% |
 | Antall               | %linequantity% |
 | Linjeenhetspris        | %lineprice% (kontroller) |
 | linjevaresum        | %linenetamount% |
@@ -173,13 +170,15 @@ Følgende tokener erstattes med verdier for hvert produkt i ordren.
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 
-[Oversikt over miljø for forhåndsvisning av Dynamics 365 Commerce](cpe-overview.md)
+[Oversikt over Dynamics 365 Commerce-evalueringsmiljø](cpe-overview.md)
 
-[Klargjøre et miljø for forhåndsvisning av Dynamics 365 Commerce](provisioning-guide.md)
+[Klargjøre et evalueringsmiljø for Dynamics 365 Commerce](provisioning-guide.md)
 
-[Konfigurere et miljø for forhåndsvisning av Dynamics 365 Commerce](cpe-post-provisioning.md)
+[Konfigurere et Dynamics 365 Commerce-evalueringsmiljø](cpe-post-provisioning.md)
 
-[Vanlige spørsmål om miljø for forhåndsvisning av Dynamics 365 Commerce](cpe-faq.md)
+[Konfigurere BOPIS i et evalueringsmiljø for Dynamics 365 Commerce](cpe-bopis.md)
+
+[Vanlige spørsmål om Dynamics 365 Commerce-evalueringsmiljø](cpe-faq.md)
 
 [Microsoft Lifecycle Services (LCS)](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-user-guide)
 

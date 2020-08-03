@@ -3,7 +3,7 @@ title: Konfigurere egenskaper for arbeidsflyt
 description: Dette emnet forklarer hvordan du konfigurerer de ulike egenskapene i en arbeidsflyt.
 author: sericks007
 manager: AnnBe
-ms.date: 04/01/2020
+ms.date: 07/07/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: donaldc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d745389b37b899760ea32ae75c5cb80d9139be2d
-ms.sourcegitcommit: 1852f08f015acd106f4cefd03fa07985dc009123
+ms.openlocfilehash: 268448049955170b8eb9e64cbd50416565a041b1
+ms.sourcegitcommit: 561d06c2a74602dfaa40334d8afac5053aebc055
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "3199442"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "3541115"
 ---
 # <a name="configure-workflow-properties"></a>Konfigurere egenskaper for arbeidsflyt
 
@@ -91,12 +91,7 @@ Følg fremgangsmåten nedenfor for å angi at arbeidsflyten du konfigurerer, ska
 3. Klikk **Legg til betingelse**.
 4. Angi en betingelse.
 5. Angi eventuelle ekstra betingelser som kreves.
-6. Hvis du vil kontrollere om betingelsene du har skrevet inn, er riktig angitt, følger du denne fremgangsmåten:
-
-    1. Klikk **Test**.
-    2. På **Test arbeidsflytbetingelse**-siden i **Valider betingelse**-området velger du en post.
-    3. Klikk **Test**. Systemet evaluerer posten for å finne ut om den oppfyller betingelsene du angav. Hvis du for eksempel oppretter en arbeidsflyt for innkjøpsrekvisisjon for Spania, viser **Valider betingelse**-området en liste over innkjøpsrekvisisjoner. Når du klikker **Test**, evaluerer systemet den valgte innkjøpsrekvisisjonen for å finne ut om landet/området er ES.
-    4. Klikk **OK** eller **Avbryt** for å gå tilbake til **Egenskaper**-siden.
+6. Kjør gjennom arbeidsflyten med noen målposter for å bekrefte at betingelsen inneholder og utelater poster på riktig måte.
 
 ## <a name="specify-when-notifications-are-sent"></a>Angi når varslinger skal sendes
 
