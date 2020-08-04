@@ -1434,8 +1434,6 @@
               href: sysadmin/pre-configured-system-accounts.md
             - name: Eksportere B2B-brukere til Azure AD
               href: sysadmin/implement-b2b.md
-            - name: Prosessautomatisering
-              href: sysadmin/process-automation.md
             - name: Sikkerhet
               items:
                 - name: Rollebasert sikkerhet
@@ -1458,10 +1456,16 @@
                   href: sysadmin/tasks/identify-resolve-conflicts-segregation-duties.md
                 - name: Tilordne brukere til sikkerhetsroller
                   href: sysadmin/tasks/assign-users-security-roles.md
-                - name: Sikkerhetsdiagnostikk for oppgaveregistreringer
+                - name: Importere eller eksportere egendefinert sikkerhetskonfigurasjon ved hjelp av dataadministrasjon
+                  href: sysadmin/import-export-customized-security.md
+                - name: Sikkerhetsdiagnostikk for oppgaveopptak
                   href: sysadmin/tasks/security-diagstics-task-recordings.md
+                - name: Utvidbare datasikkerhetspolicyer
+                  href: sysadmin/extensible-data-security-policies.md
+                - name: Opprette en sikkerhetspolicy
+                  href: sysadmin/create-simple-security-policy.md
             - name: Prosessautomatisering
-              href: /sysadmin/process-automation.md
+              href: sysadmin/process-automation.md
             - name: Satsvis behandling
               items:
                 - name: Oversikt over satsvis behandling
@@ -1670,7 +1674,7 @@
                   href: user-interface/check-box-tree-controls.md
                 - name: Filtreringsalternativer
                   href: user-interface/filtering.md
-                - name: Kontroll for PowerApps-vert
+                - name: Kontroll for Power Apps-vert
                   href: user-interface/powerapps-host-control.md
             - name: Vindusbehandling
               items:

@@ -3,7 +3,7 @@ title: Utgående lageroperasjon på salgsstedet
 description: Dette emnet beskriver funksjonene til utgående lageroperasjoner på salgsstedet (POS).
 author: hhaines
 manager: annbe
-ms.date: 05/14/2020
+ms.date: 07/10/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 22f057c20898bb4b4c34e38d62313d2634a33511
-ms.sourcegitcommit: 3b6fc5845ea2a0de3db19305c03d61fc74f4e0d4
+ms.openlocfilehash: c2c8acfaf7b84870ce00bf1ae84440dd369df9da
+ms.sourcegitcommit: 037712e348fcbf3569587089bd668ee7bf5567ff
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/18/2020
-ms.locfileid: "3384135"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "3551631"
 ---
 # <a name="outbound-inventory-operation-in-pos"></a>Utgående lageroperasjon på salgsstedet
 
@@ -58,6 +58,9 @@ Fullfør fremgangsmåten nedenfor for å konfigurere et asynkront dokumentrammev
 7. På hurtigfanen **Generelt** i delen **Oppsett** setter du **Fortløpende** til **Nei** for å sørge for at det ikke blir noen ytelsesproblemer.
 
 ### <a name="create-and-schedule-two-batch-jobs-for-the-document-processing-and-monitoring-tasks"></a>Opprette og planlegge to satsvise jobber for dokumentbehandling og overvåkingsoppgaver
+
+> [!NOTE]
+> I Commerce-versjon 10.0.13 og senere trenger du ikke å konfigurere de satsvise jobbene via rammeverket for den satsvise jobben. Satsvise prosesser kan konfigureres fra **Detaljhandel og handel > IT for Detaljhandel og handel**-menyen. Bruk menyalternativene for **Overvåking av Retail-dokumentoperasjon** og **Behandling av Retail-dokumentoperasjon** til å konfigurere de satsvise jobbene
 
 De satsvise jobbene du oppretter, vil bli brukt til å behandle dokumenter som mislykkes eller blir tidsavbrutt. De vil også bli brukt når antallet aktive lagerdokumenter som behandles fra POS, overskrider en systemkonfigurert verdi.
 

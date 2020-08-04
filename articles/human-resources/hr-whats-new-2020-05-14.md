@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2020-05-14
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: d46671f73a75a9ed3a652d76153c923a3542b5f6
-ms.sourcegitcommit: 7c750711e9fe1d3726c6ee650669529684933001
+ms.openlocfilehash: 3ce1aca9cebc5b330f054a11e38b5dfc4fc9109d
+ms.sourcegitcommit: bd9ff0d28718d535356ffbe1cffaaf60310dd430
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "3386113"
+ms.lasthandoff: 07/13/2020
+ms.locfileid: "3555177"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-may-14-2020"></a>Hva er nytt eller endret i Dynamics 365 Human Resources (14. mai 2020)
 
@@ -110,3 +110,10 @@ Denne versjonen begynner med å kombinere Personale-parametere med permisjons- o
 ## <a name="carry-forward-rules"></a>Overføringsregler
 
 Du kan angi en type overføringspermisjon for overføringssaldoer der overføringsjusteringer overføres. Hvis en ansatt for eksempel overfører 10 dager, kan du velge en annen permisjonstype for disse 10 dagene. Hvis du vil ha mer informasjon, kan du se [Konfigurere permisjons- og fraværstyper](hr-leave-and-absence-types.md).
+
+## <a name="see-also"></a>Se også
+
+[Nyheter eller endringer i Human Resources](hr-admin-whats-new.md)</br>
+[Oversikt over lanseringsbølge 2 i 2019 for Dynamics 365 Human Resources](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
+[Oppdatere prosess](hr-admin-setup-update-process.md)</br>
+[Behandle funksjoner](hr-admin-manage-features.md)

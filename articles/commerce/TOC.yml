@@ -32,23 +32,23 @@
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/notifications-service-updates.md?toc=/dynamics365/commerce/toc.json
                 - name: Automatisering av dataoppgave
                   href: ../fin-ops-core/dev-itpro/data-entities/data-task-automation.md?toc=/dynamics365/commerce/toc.json
-                - name: Levere ISV-løsninger med én versjon
+                - name: Levere ISV-løsninger med One Version
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/oneversion-isv.md?toc=/dynamics365/commerce/toc.json
                 - name: Opprette og automatisere brukergodkjenningstester
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/using-task-guides-and-bpm-to-create-user-acceptance-tests.md?toc=/dynamics365/commerce/toc.json
-            - name: Definere et miljø for forhåndsvisning av Dynamics 365 Commerce
+            - name: Definere et evalueringsmiljø for Dynamics 365 Commerce
               items:
-                - name: Oversikt over miljø for forhåndsvisning av Dynamics 365 Commerce
+                - name: Oversikt over evalueringsmiljø for Dynamics 365 Commerce
                   href: cpe-overview.md
-                - name: Klargjøre et miljø for forhåndsversjon av Dynamics 365 Commerce
+                - name: Klargjøre et evalueringsmiljø for Dynamics 365 Commerce
                   href: provisioning-guide.md
-                - name: Konfigurere et miljø for forhåndsversjon av Dynamics 365 Commerce
+                - name: Konfigurere et evalueringsmiljø for Dynamics 365 Commerce
                   href: cpe-post-provisioning.md
-                - name: Konfigurere BOPIS i et Dynamics 365 Commerce-miljø
+                - name: Konfigurere BOPIS i et evalueringsmiljø for Dynamics 365 Commerce
                   href: cpe-bopis.md
-                - name: Konfigurere valgfrie funksjoner for et miljø for forhåndsversjon av Dynamics 365 Commerce
+                - name: Konfigurere valgfrie funksjoner for et evalueringsmiljø for Dynamics 365 Commerce
                   href: cpe-optional-features.md
-                - name: Vanlige spørsmål om miljø for forhåndsvisning av Dynamics 365 Commerce
+                - name: Vanlige spørsmål om evalueringsmiljø for Dynamics 365 Commerce
                   href: cpe-faq.md
             - name: Distribusjonshensyn
               items:
@@ -72,6 +72,8 @@
                   href: ../fin-ops-core/dev-itpro/deployment/china-local-deployment.md?toc=/dynamics365/commerce/toc.json
                 - name: Finance and Operations-apper i Frankrike
                   href: ../fin-ops-core/dev-itpro/deployment/france-local-deployment.md?toc=/dynamics365/commerce/toc.json
+            - name: Få kundestøtte for Dynamics 365 Commerce
+              href: retail-support.md
             - name: Oppgradering og N-1-støtte
               items:
                 - name: Støtte for oppgradering og N-1 for Commerce
@@ -192,6 +194,8 @@
                   href: commerce-architecture.md
                 - name: Godkjenningsflyter for Dynamics 365 Commerce
                   href: arch-auth-flow.md
+                - name: Versjonskontrollkrav for Dynamics 365 Commerce-komponent
+                  href: arch-component-versioning.md
                 - name: Arkitektur for Commerce Scale Unit
                   href: dev-itpro/retail-server-architecture.md
                 - name: Velg topologi i butikk
@@ -1984,6 +1988,8 @@
                       href: e-commerce-extensibility/create-observable-data-action.md
                     - name: Dele tilstand på tvers av moduler
                       href: e-commerce-extensibility/share-state-across-modules.md
+                    - name: Innstillinger for datahandlingsbuffer
+                      href: e-commerce-extensibility/data-action-cache-settings.md
                     - name: Overstyringer for datahandling
                       href: e-commerce-extensibility/data-action-overrides.md
                     - name: Datahandlingsbindinger

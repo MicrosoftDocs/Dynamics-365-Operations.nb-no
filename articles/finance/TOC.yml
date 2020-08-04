@@ -34,7 +34,7 @@
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/notifications-service-updates.md?toc=/dynamics365/finance/toc.json
                 - name: Automatisering av dataoppgave
                   href: ../fin-ops-core/dev-itpro/data-entities/data-task-automation.md?toc=/dynamics365/finance/toc.json
-                - name: Levere ISV-løsninger med én versjon
+                - name: Levere ISV-løsninger med One Version
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/oneversion-isv.md?toc=/dynamics365/finance/toc.json
                 - name: Opprette og automatisere brukergodkjenningstester
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/using-task-guides-and-bpm-to-create-user-acceptance-tests.md?toc=/dynamics365/finance/toc.json
@@ -2540,12 +2540,14 @@
                       href: localizations/rus-inventory-adjustment-wizard.md
                     - name: Lagerrapporter
                       href: localizations/rus-inventory-reports.md
-                    - name: Oversikt over lagerprofil
-                      href: localizations/rus-inventory-profile-overview.md
-                    - name: Definere en lagerprofil
-                      hreF: localizations/rus-set-up-inventory-profile.md
-                    - name: Bruke en lagerprofil i dokumenter og spørringer
-                      href: localizations/rus-use-inventory-profile-documents-queries.md
+                    - name: Beholdningsprofil
+                      items:
+                        - name: Oversikt over lagerprofil
+                          href: localizations/rus-inventory-profile-overview.md
+                        - name: Definere en lagerprofil
+                          hreF: localizations/rus-set-up-inventory-profile.md
+                        - name: Bruke en lagerprofil i dokumenter og spørringer
+                          href: localizations/rus-use-inventory-profile-documents-queries.md
                 - name: Rapportering
                   items:
                     - name: Finansrapportering
