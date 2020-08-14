@@ -14,6 +14,8 @@
               items:
                 - name: Nyheter eller endringer på startsiden for Plattformoppdateringer
                   href: get-started/whats-new-home-page.md
+                - name: Plattformoppdateringer for 10.0.13 (oktober 2020)
+                  href: get-started/whats-new-platform-updates-10-0-13.md
                 - name: Plattformoppdateringer for 10.0.12 (august 2020)
                   href: get-started/whats-new-platform-update-10-0-12.md
                 - name: Plattformoppdateringer for 10.0.11 (juli 2020)
@@ -82,6 +84,8 @@
           items:
             - name: Velge en strategi for dataintegrering (import og eksport)
               href: data-entities/integration-overview.md
+            - name: Prioritetsbasert begrensning
+              hreF: data-entities/priority-based-throttling.md
             - name: API-er for dataintegrering
               items:
                 - name: REST-API for databehandlingspakke
@@ -152,6 +156,8 @@
                           items:
                             - name: Tilpasse enhets- og felttilordninger
                               href: data-entities/dual-write/customizing-mappings.md
+                            - name: Rediger en juridisk enhet etter oppsett av dobbel skriving
+                              href: data-entities/dual-write/edit-legal-entity.md
                             - name: Feilbehandling og varselvarslinger
                               href: data-entities/dual-write/errors-and-alerts.md
                             - name: Håndtering av applivssyklus
@@ -1198,7 +1204,7 @@
                       href: mobile-apps/platform/client-apis/modules/event-ievent.md
                     - name: Kontrollmodul
                       href: mobile-apps/platform/client-apis/modules/view-model-control-basecontrol-icontrol.md
-                    - name: Containermodul
+                    - name: Beholdermodul
                       href: mobile-apps/platform/client-apis/modules/view-model-control-container-icontainercontrol.md
                     - name: Feltmodul
                       href: mobile-apps/platform/client-apis/modules/view-model-control-field-ifield.md

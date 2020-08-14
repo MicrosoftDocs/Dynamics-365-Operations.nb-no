@@ -90,6 +90,8 @@
                   items:
                     - name: Nyheter eller endringer på startsiden for Commerce
                       href: get-started/whats-new-home-page.md
+                    - name: Commerce 10.0.13 (oktober 2020)
+                      href: get-started/whats-new-commerce-10-0-13.md
                     - name: Commerce 10.0.12 (august 2020)
                       href: get-started/whats-new-commerce-10-0-12.md
                     - name: Commerce 10.0.11 (juli 2020)
@@ -127,23 +129,23 @@
             - name: Læringskatalog
               items:
                 - name: Startside for læringskatalog
-                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog.md?toc=/dynamics365/commerce/toc.json
+                  href: ./get-started/learning-catalog.md
                 - name: Beslutningstakere
-                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-bdm.md?toc=/dynamics365/commerce/toc.json
+                  href: ./get-started/learning-catalog-bdm.md?
                 - name: Forretningsbrukere
-                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-business-user.md?toc=/dynamics365/commerce/toc.json
+                  href: ./get-started/learning-catalog-business-user.md
                 - name: Ledere for implementeringsprosjekt
-                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-project-manager.md?toc=/dynamics365/commerce/toc.json
+                  href: ./get-started/learning-catalog-project-manager.md
                 - name: Administratorer
-                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-administrator.md?toc=/dynamics365/commerce/toc.json
+                  href: ./get-started/learning-catalog-administrator.md
                 - name: Utviklere
-                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-developer.md?toc=/dynamics365/commerce/toc.json
+                  href: ./get-started/learning-catalog-developer.md
                 - name: Salg og markedsføring for partner
-                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-partner-sales.md?toc=/dynamics365/commerce/toc.json
+                  href: ./get-started/learning-catalog-partner-sales.md
                 - name: Funksjonelle konsulenter
-                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-functional-consultant.md?toc=/dynamics365/commerce/toc.json
+                  href: ./get-started/learning-catalog-functional-consultant.md
                 - name: Løsningsarkitekter
-                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-solution-architect.md?toc=/dynamics365/commerce/toc.json
+                  href: ./get-started/learning-catalog-solution-architect.md
             - name: Utforske brukergrensesnittet
               items:
                 - name: Elementer i brukergrensesnitt
@@ -310,6 +312,8 @@
                           href: ../supply-chain/procurement/tasks/sales-tax-assignment-overrides.md?toc=/dynamics365/commerce/toc.json
                         - name: Hele beløp og alternativer for intervallberegning for mva-koder
                           href: ../finance/general-ledger/whole-amount-interval-options-sales-tax-codes.md?toc=/dynamics365/commerce/toc.json
+                        - name: Beregning av mva-fritak
+                          href: tax-exempt-price-inclusive.md
                     - name: Definere en profil for e-postvarsling
                       href: email-notification-profiles.md
                     - name: Nummerserier
@@ -386,6 +390,8 @@
                           href: define-maintain-channel-clients-registers-hw-stations.md
                         - name: Tilstandskontroll for eksterne enheter og tjenester for salgssted
                           href: pos-healthcheck.md
+                        - name: Støtte for nettverksenheter
+                          href: dev-itpro/network-peripherals.md
                     - name: Skjermoppsett
                       items:
                         - name: Skjermoppsett for demonstrasjonsdata i MPOS/CPOS
@@ -940,12 +946,14 @@
                   href: starter-kit-overview.md
                 - name: Beholdermoduler
                   items:
-                    - name: Containermodul
+                    - name: Beholdermodul
                       href: add-container-module.md
                     - name: Samsvarsmodul
                       href: add-accordion.md
                     - name: Kategorimodul
                       href: add-tab.md
+                    - name: Iframe-modul
+                      href: iframe-module.md
                 - name: Markedsføringsmoduler
                   items:
                     - name: Promobannermodul
@@ -968,6 +976,8 @@
                   items:
                     - name: Kjøpsboksmodul
                       href: add-buy-box.md
+                    - name: Mediegallerimodul
+                      href: media-gallery-module.md
                     - name: Vurderings- og omtalemoduler
                       href: ratings-reviews-modules.md
                 - name: Innkjøpsmoduler
@@ -980,10 +990,14 @@
                       href: add-checkout-module.md
                     - name: Ordredetaljermodul
                       href: order-confirmation-module.md
-                    - name: Butikkvelgermodul
-                      href: store-selector.md
                     - name: Gavekortmodul
                       href: add-giftcard.md
+                - name: Butikksøkmoduler
+                  items:
+                    - name: Kartmodul
+                      href: map-module.md
+                    - name: Butikkvelgermodul
+                      href: store-selector.md
                 - name: Kontobehandlingsmoduler
                   items:
                     - name: Kontobehandlingssider og -moduler
@@ -1938,7 +1952,7 @@
                       href: e-commerce-extensibility/add-module-config-fields.md
                     - name: Forhåndsvise og feilsøke moduler
                       href: e-commerce-extensibility/test-module.md
-                    - name: Teste moduler ved hjelp av simuleringer
+                    - name: Testmoduler med modulmodeller
                       href: e-commerce-extensibility/test-module-mock.md
                     - name: Teste moduler ved hjelp av sidesimuleringer
                       href: e-commerce-extensibility/test-page-mock.md
