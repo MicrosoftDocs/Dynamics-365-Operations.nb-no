@@ -3,7 +3,7 @@ title: Legge til støtte for et innholdsleveringsnettverk (CDN)
 description: Dette emnet beskriver hvordan du legger til et innholdsleveringsnettverk (CDN) i Microsoft Dynamics 365 Commerce-miljøet.
 author: brianshook
 manager: annbe
-ms.date: 07/02/2020
+ms.date: 07/31/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: febef3bcc06dc1b5868a0decebee33d76110c505
-ms.sourcegitcommit: adf196c51e2b6f532d99c177b4c6778cea8a2efc
+ms.openlocfilehash: 662d26c0157377977bd1031cd7bb13a8e692f37e
+ms.sourcegitcommit: 078befcd7f3531073ab2c08b365bcf132d6477b0
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "3533350"
+ms.lasthandoff: 07/31/2020
+ms.locfileid: "3646045"
 ---
 # <a name="add-support-for-a-content-delivery-network-cdn"></a>Legge til støtte for et innholdsleveringsnettverk (CDN)
 
@@ -35,7 +35,7 @@ Dette emnet beskriver hvordan du legger til et innholdsleveringsnettverk (CDN) i
 
 Når du definerer et e-handelsmiljø i Dynamics 365 Commerce, kan du konfigurere det slik at det fungerer med CDN-tjenesten. 
 
-Ditt egendefinerte domene kan aktiveres under klargjøringsprosessen for ditt e-handelsmiljø. Du kan også bruke en serviceforespørsel for å konfigurere den etter at klargjøringsprosessen er fullført. Klargjøringsprosessen for e-handelsmiljøet genererer et vertsnavn som er knyttet til miljøet. Dette vertsnavnet har følgende format, der *e-handel-leier-navn* er navnet på miljøet ditt:
+Ditt egendefinerte domene kan aktiveres under klargjøringsprosessen for ditt e-handelsmiljø. Du kan også bruke en serviceforespørsel for å konfigurere den etter at klargjøringsprosessen er fullført. Klargjøringsprosessen for e-handelsmiljøet genererer et vertsnavn som er knyttet til miljøet. Dette vertsnavnet har følgende format, der \<*e-commerce-tenant-name*\> er navnet på miljøet ditt:
 
 &lt;e-handel-leier-navn&gt;.commerce.dynamics.com
 
@@ -74,18 +74,20 @@ Alle CDN-tjenester kan brukes, men for eksempel i dette emnet brukes Azure Front
 
 Hvis du vil ha informasjon om hvordan du konfigurerer Azure Front Door Service, se [Hurtigstart: Opprette en hovedinngang for et høyt tilgjengelig globalt webprogram](https://docs.microsoft.com/azure/frontdoor/quickstart-create-front-door).
 
-### <a name="configure-a-back-end-pool-in-azure-front-door-service"></a>Konfigurere et serverdelsutvalg i Azure Front Door Service
+### <a name="configure-a-backend-pool-in-azure-front-door-service"></a>Konfigurere et serverdelsutvalg i Azure Front Door Service
 
-Følg disse trinnene for å konfigurere et serverdelsutvalg i Azure Front Door Service
+Følg disse trinnene for å konfigurere et serverdelsutvalg i Azure Front Door Service.
 
 1. Legg til **&lt;ecom-leier-navn&gt;.commerce.dynamics.com** til et serverdelsutvalg som en egendefinert vert som har et tomt serverdelvertshode.
-1. Under **Helsetilstand** i feltet **Bane** angir du **/keepalive**.
-1. I feltet **Intervaller (sekunder)** angir du **255**.
 1. Under **Belastningsfordeling** lar du standardverdiene være.
 
-Følgende illustrasjon viser dialogboksen **Legg til et serverdelsutvalg** i Azure Front Door Service.
+Følgende illustrasjon viser dialogboksen **Legg til en serverdel** i Azure Front Door Service, der vertsnavnet for serverdelen er angitt.
 
 ![Legge til en dialogboks for serverdelsutvalg](./media/CDN_BackendPool.png)
+
+Følgende illustrasjon viser dialogboksen **Legg til et serverdelutvalg** i Azure Front Door Service med standardverdier for belastningsfordeling.
+
+![Legge til en dialogboks for serverdelsutvalg (fortsettelse)](./media/CDN_BackendPool_2.png)
 
 ### <a name="set-up-rules-in-azure-front-door-service"></a>Definere regler i Azure Front Door Service
 
@@ -121,20 +123,22 @@ Følgende illustrasjon viser dialogboksen **Legg til en regel** i Azure Front Do
 
 ![Dialogboksen Legg til en regel](./media/CDN_CachingRule.png)
 
-Når denne innledende konfigurasjonen er distribuert, må du legge til det egendefinerte domenet i konfigurasjonen for Azure Front Door Service. Hvis du vil legge til det egendefinerte domenet (for eksempel `www.fabrikam.com`), må du konfigurere et kanonisk navn (CNAME) for domenet.
+> [!WARNING]
+> Hvis domenet du skal bruke, allerede er aktivt og direkte, oppretter du en støtteforespørsel fra **Støtte**-flisen i [Microsoft Dynamics Lifecycle Services](https://lcs.dynamics.com/) for å få hjelp til de neste trinnene. Hvis du vil ha mer informasjon, kan du se [Få støtte for Finance and Operations-apper eller Lifecycle Services (LCS)](../fin-ops-core/dev-itpro/lifecycle-services/lcs-support.md).
+
+Hvis domenet er nytt og det ikke er et direkte domene som allerede finnes, kan du legge til det egendefinerte domenet i konfigurasjonen for Azure Front Door Service. Dette vil gjøre det mulig for nettrafikk å dirigere til nettstedet ditt via Azure Front Door-forekomsten. Hvis du vil legge til det egendefinerte domenet (for eksempel `www.fabrikam.com`), må du konfigurere et kanonisk navn (CNAME) for domenet.
 
 Følgende illustrasjon viser dialogboksen **CNAME-konfigurasjon** i Azure Front Door Service.
 
 ![Dialogboksen CNAME-konfigurasjon](./media/CNAME_Configuration.png)
-
-> [!NOTE]
-> Hvis domenet du skal bruke, allerede er aktivt og live, kontakter du kundestøtten for å aktivere dette domenet med Azure Front Door Service for å konfigurere en test.
 
 Du kan bruke Azure Front Door Service til å administrere sertifikatet, eller du kan bruke ditt eget sertifikat for det egendefinerte domenet.
 
 Den følgende illustrasjonen viser dialogboksen for **HTTPS for egendefinert domene** i Azure Front Door Service.
 
 ![Dialogboksen for HTTPS for egendefinert domene](./media/Custom_Domain_HTTPS.png)
+
+Hvis du vil ha detaljerte instruksjoner om hvordan du legger til et tilpasset domene i Azure Front Door, kan du se [Legge til et egendefinert domene i Front Door](https://docs.microsoft.com/azure/frontdoor/front-door-custom-domain).
 
 CDN skal nå være riktig konfigurert slik at det kan brukes sammen med ditt handelsområde.
 

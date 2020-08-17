@@ -3,7 +3,7 @@ title: Arbeide med fragmenter
 description: Dette emnet beskriver hvorfor, når og hvordan du bruker fragmenter i Microsoft Dynamics 365 Commerce.
 author: v-chgri
 manager: annbe
-ms.date: 01/31/2020
+ms.date: 07/31/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,17 +17,17 @@ ms.search.industry: retail
 ms.author: phinneyridge
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: f29046ded47ed9c49a2cc841aa7c1f6492b49aec
-ms.sourcegitcommit: 1d5a4f70a931e78b06811add97c1962e8d93689b
+ms.openlocfilehash: 7ae834f38fe380ce0a66f5b1968f1261af670979
+ms.sourcegitcommit: 078befcd7f3531073ab2c08b365bcf132d6477b0
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "3124365"
+ms.lasthandoff: 07/31/2020
+ms.locfileid: "3645997"
 ---
 # <a name="work-with-fragments"></a>Arbeide med fragmenter 
 
-
 [!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
 Dette emnet beskriver hvorfor, når og hvordan du bruker fragmenter i Microsoft Dynamics 365 Commerce.
 
@@ -62,9 +62,10 @@ Du kan enten opprette et nytt fragment eller lagre en eksisterende modulkonfigur
 Følg denne fremgangsmåten for å konvertere en tidligere konfigurert modul til et fragment som kan brukes på nytt.
 
 1. Åpne en side eller mal som inneholder modulen du vil konvertere til et fragment.
-1. I disposisjonsruten til venstre velger du ellipseknappen (**...**) ved siden av navnet på modulen. 
-1. Velg **Del som fragment**. 
-1. En dialogboks vises. Angi et navn og metadata for fragmentet.
+1. I disposisjonsruten til venstre eller direkte i hovedlerretet velger du den tidligere konfigurerte modulen.
+1. Velg ellipsen (**...**) ved siden av navnet på modulen enten i disposisjonsruten eller den valgte modulens verktøylinje i lerretet. 
+1. Velg **Del som sidefragment**. 
+1. I dialogboksen **Lagre som sidefragment** angir du et navn på fragmentet.
 1. Velg **OK** for å lagre modulkonfigurasjonen som et fragment som kan legges til andre sider.
 
 Bildet nedenfor viser hvordan du lagrer en modulkonfigurasjon som et fragment.
@@ -94,15 +95,16 @@ Følgende prosedyrer beskriver hvordan du legger til, fjerner eller redigerer fr
 
 Hvis du vil legge til et fragment på en side, følger du disse trinnene.
 
-1. I disposisjonsruten til venstre velger du en container eller et spor som underordnede moduler kan legges til i.
-1. Velg ellipseknappen ved siden av navnet på containeren eller sporet, og velg deretter **Legg til fragment**. En dialogboks vises.
+1. I disposisjonsruten til venstre eller direkte på hovedlerretet velger du en container eller et spor der underordnede moduler kan legges til.
+1. I disposisjonsruten velger du ellipsen (**...**) ved siden av navnet på containeren eller sporet.  Hvis du bruker hovedlerretet, kan du eventuelt velge plusstegnet (**+**).  
+1. Velg **Legg til fragment**.
 
     ![Et skjermbilde av hvordan du legger til et eksisterende fragment i et spor eller en container](./media/add-fragment.png)
  
     > [!NOTE]
     > Hvis containeren eller sporet ikke støtter nye underordnede moduler, er alternativet **Legg til fragment** ikke tilgjengelig.
     
-1. Søk etter og velg et fragment du vil legge til, i dialogboksen. Hvis det ikke finnes noen tilgjengelige fragmenter, kan det være at du først må opprette et fragment fra en modultype som valgt container eller spor støtter.
+1. Søk etter og velg et fragment du vil legge til, i dialogboksen **Legg til fragment**. Hvis det ikke finnes noen tilgjengelige fragmenter, kan det være at du først må opprette et fragment fra en modultype som valgt container eller spor støtter.
 1. Velg det ønskede fragmentet for å legge det til i containeren eller sporet på siden.
 
     ![Et skjermbilde av et modalt vindu for fragmentvelgeren](./media/fragment-picker.png)
@@ -114,7 +116,7 @@ Hvis du vil legge til et fragment på en side, følger du disse trinnene.
 
 Følg disse trinnene for å fjerne et fragment fra sporet eller containeren på en side.
 
-1. I disposisjonsruten til venstre velger du ellipseknappen ved siden av navnet på fragmentet som skal fjernes, og deretter velger du papirkurvknappen.
+1. I disposisjonsruten til venstre velger du ellipsen (**...**) ved siden av navnet på fragmentet som skal fjernes, og deretter velger du papirkurvsymbolet.  Du kan også velge fragmentet på lerretet og velge papirkurvensymbol på verktøylinjen til fragmentet.
 1. Når du blir bedt om å bekrefte at du vil fjerne fragmentet, velger du **OK**.
 
 > [!NOTE]

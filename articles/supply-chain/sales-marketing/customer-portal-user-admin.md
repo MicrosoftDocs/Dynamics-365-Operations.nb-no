@@ -3,7 +3,7 @@ title: Opprette og administrere brukere av kundeportalen
 description: Dette emnet beskriver hvordan du oppretter brukerkontoer i kundeportalen og angir tillatelser for dem.
 author: dasani-madipalli
 manager: tfehr
-ms.date: 04/22/2020
+ms.date: 07/31/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: damadipa
 ms.search.validFrom: 2020-04-22
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: c56e41b8ea5039531205083b5b42aff05e05cf66
-ms.sourcegitcommit: 713b5dfc76a6875d0ba6d86c5cbd585ea502cf9d
+ms.openlocfilehash: a751cbffd98b8d47ca7dad222f0ce374381a393d
+ms.sourcegitcommit: 074fe7e77feb795148c3daf2e6ccbb8a88679343
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/01/2020
-ms.locfileid: "3413995"
+ms.lasthandoff: 07/31/2020
+ms.locfileid: "3645319"
 ---
 # <a name="create-and-manage-customer-portal-users"></a>Opprette og administrere brukere av kundeportalen
 
@@ -30,11 +30,16 @@ Før en bruker kan bruke en nettside, må det opprettes en kontaktoppføring for
 
 Når brukere registrerer seg selv, opprettes det automatisk kontaktoppføringer for dem. Derfor kan du ikke sikre at en bruker velger riktig kundekonto og juridisk enhet. På den annen side gjør invitasjonsprosessen at en administrator kan tilordne den riktige kundekontoen og juridiske enheten til kontaktposten før det sendes en invitasjon. Hvis du tenker på å tilpasse løsningen slik at brukerne kan registrere seg selv, må du vurdere mulige konsekvenser.
 
+## <a name="video"></a>Video
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4ADkI]
+
+Videoen [Inviter kunder til å registrere seg og bruke kundeportalen din](https://youtu.be/drGUYHX9QIQ) (vist ovenfor) er inkludert i [Finance and Operations-spillelisten](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW), tilgjengelig på YouTube.
+
 ## <a name="prerequisite-setup"></a>Forutsetninger for konfigurasjon
 
 Kontakter i Power Apps-portaler lagres som poster i **Kontakter**-enheten i Common Data Service. Med dobbeltskrivetilgang synkroniseres disse postene til Microsoft Dynamics 365 Supply Chain Management etter behov.
 
-![![Systemdiagram for kontakter i kundeportalen](media/customer-portal-contacts.png "Systemdiagram for kontakter i kundeportalen")](media/customer-portal-contacts.png "System diagram for Customer portal contacts")
+![Systemdiagram for kontakter i kundeportalen](media/customer-portal-contacts.png "Systemdiagram for kontakter i kundeportalen")
 
 Før du begynner å invitere nye kunder, må du kontrollere at du har aktivert **Kontakt**-enhetstilordningen i dobbeltskriving.
 

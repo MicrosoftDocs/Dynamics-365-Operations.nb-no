@@ -3,7 +3,7 @@ title: Oppsett av parametere for kredittbehandling
 description: Dette emnet beskriver alternativene du kan bruke til å konfigurere kredittbehandling for å dekke bedriftens behov.
 author: mikefalkner
 manager: AnnBe
-ms.date: 03/19/2020
+ms.date: 08/03/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: mfalkner
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 6d4ced14e51dd28d51d2081d8e92891e31eea49d
-ms.sourcegitcommit: de5af1912201dd70aa85fdcad0b184c42405802e
+ms.openlocfilehash: c4930d346ddc4679e6a3196c5f35adb598ed38c1
+ms.sourcegitcommit: 27233e0fda61dac541c5210ca8d94ab4ba74966f
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "3154534"
+ms.lasthandoff: 08/03/2020
+ms.locfileid: "3651911"
 ---
 # <a name="credit-management-parameters-setup"></a>Oppsett av parametere for kredittbehandling
 
@@ -34,7 +34,7 @@ Det finnes fire hurtigfaner i **Kreditt**-delen der du kan endre parameterne som
 
 ### <a name="credit-holds"></a>Kredittsperrer
 
-- Sett alternativet **Tillat redigering av salgsordreverdi etter at ordresperre er frigitt** til **Ja** for å kreve at posteringsreglene sjekkes på nytt hvis salgsordreverdien (utvidet pris) er endret etter at salgsordren ble frigitt fra på vent-listen. .
+- Sett alternativet **Tillat redigering av salgsordreverdi etter at ordresperre er frigitt** til **Nei** for å kreve at posteringsreglene sjekkes på nytt hvis salgsordreverdien (utvidet pris) er økt etter at salgsordren ble frigitt fra på vent-listen. .
 - I feltet **Årsaker til kansellerte ordrer** velger du frigivelsesårsaken som skal brukes som standard når en salgsordre som var på vent i kredittbehandling, avbrytes.
 - Sett alternativet **Kontroller kredittgrense for kundekredittgrupper** til **Ja** for å kontrollere kredittgrensen til en kundekredittgruppe når kunden på en salgsordre tilhører en kundekredittgruppe. Kredittgrensen for gruppen vil bli kontrollert, og deretter, hvis den er tilstrekkelig, blir kredittgrensen for kunden kontrollert.
 - Sett alternativet **Kontroller kredittgrense når betalingsbetingelser økes** til **Ja** for å kontrollere rangeringene for betalingsbetingelser for å avgjøre om betalingsbetingelsene i salgsordren er forskjellige fra standard betalingsbetingelser for kunden. Hvis de nye betalingsbetingelsene har en høyere rangering enn de opprinnelige betalingsbetingelsene, settes ordren på vent for kredittbehandling.

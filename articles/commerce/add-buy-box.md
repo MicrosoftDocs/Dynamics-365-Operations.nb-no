@@ -3,7 +3,7 @@ title: Kjøpsboksmodul
 description: Dette emnet dekker kjøpsboksmoduler og beskriver hvordan du legger dem til områdesider i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
-ms.date: 05/28/2020
+ms.date: 07/31/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,17 +17,17 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 583937be92b62991cd13f0806df4a0a6c9ac049c
-ms.sourcegitcommit: b52477b7d0d52102a7ca2fb95f4ebfa30ecd9f54
+ms.openlocfilehash: 9780aabbac6d01d41dae526c7c06139eba07de4e
+ms.sourcegitcommit: 074fe7e77feb795148c3daf2e6ccbb8a88679343
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "3411348"
+ms.lasthandoff: 07/31/2020
+ms.locfileid: "3645345"
 ---
 # <a name="buy-box-module"></a>Kjøpsboksmodul
 
-[!include [banner](includes/preview-banner.md)]
 [!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
 Dette emnet dekker kjøpsboksmoduler og beskriver hvordan du legger dem til områdesider i Microsoft Dynamics 365 Commerce.
 
@@ -61,7 +61,7 @@ Temaer kan brukes til å fjerne eller endre rekkefølgen på produktegenskaper o
 
 ## <a name="modules-that-can-be-used-in-a-buy-box-module"></a>Moduler som kan brukes i kjøpsboksmodulen
 
-- **Mediegalleri** – Denne modulen brukes til å vise bilder av et produkt på en produktdetaljside. Den kan støtte ett til mange bilder. Den støtter også miniatyrbilder. Miniatyrbildene kan ordnes enten vannrett (som en rad under bildet) eller loddrett (som en kolonne ved siden av bildet). Mediegalleri-modulen kan legges til i **Medie**-sporet i kjøpsboksmodulen. Den støtter for øyeblikket bare bilder. 
+- **Mediegalleri** – Denne modulen brukes til å vise bilder av et produkt på en produktdetaljside. Hvis du vil ha mer informasjon om denne modulen, kan du se [Mediegallerimodul](mediagallery-module.md).
 - **Butikkvelger** – Denne modulen viser en liste over nærliggende butikker der en vare er tilgjengelig for henting. Den lar brukere angi en plassering for å finne butikker i nærheten. Hvis du vil ha mer informasjon om denne modulen, kan du se [Butikkvelgermodul](store-selector.md).
 
 ## <a name="buy-box-module-settings"></a>Innstillinger for kjøpsboksmodul
@@ -111,6 +111,8 @@ Hvis du vil legge til en kjøpsboksmodul på en ny side og angi de nødvendige e
 [Startpakke, oversikt](starter-kit-overview.md)
 
 [Butikkvelgermodul](store-selector.md)
+
+[Mediegallerimodul](media-gallery-module.md)
 
 [Containermodul](add-container-module.md)
 

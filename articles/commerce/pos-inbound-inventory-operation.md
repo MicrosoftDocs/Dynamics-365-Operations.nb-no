@@ -3,7 +3,7 @@ title: Inngående lageroperasjon på salgsstedet
 description: Dette emnet beskriver funksjonene til inn kommende lageroperasjoner på salgsstedet (POS).
 author: hhaines
 manager: annbe
-ms.date: 07/10/2020
+ms.date: 07/27/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: cf3bec8ab0bfafccfe4b2b5b245d00fd6aeff635
-ms.sourcegitcommit: 037712e348fcbf3569587089bd668ee7bf5567ff
+ms.openlocfilehash: aba4f2d7932ebc3a0129f04c60c8b6358da68c64
+ms.sourcegitcommit: 0aabe4157f82d8c59dd2d285ab0b33f3c8ec5bbc
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "3551607"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "3627544"
 ---
 # <a name="inbound-inventory-operation-in-pos"></a>Inngående lageroperasjon på salgsstedet
 
@@ -33,7 +33,7 @@ ms.locfileid: "3551607"
 I Microsoft Dynamics 365 Commerce versjon 10.0.10 og senere erstatter innkommende og utgående operasjoner på salgsstedet (POS) den plukkede og mottatte operasjonen.
 
 > [!NOTE]
-> I versjon 10.0.10 og senere legges eventuelle nye funksjoner i POS-programmet som er relatert til mottak av butikklager mot bestillinger og overførings ordrer, til POS-operasjonen **Innkommende operasjon**. Hvis du for øyeblikket bruker en plukk- og mottaksoperasjon i POS, anbefaler vi at du utvikler en strategi for flytting fra den operasjonen til de nye innkommende og utgående operasjonene. Selv om plukk- og mottaksoperasjonen ikke blir fjernet fra produktet, vil det ikke være flere investeringer i den, fra et funksjonelt eller ytelsesperspektiv etter versjon 10.0.9.
+> I Commerce versjon 10.0.10 og senere legges eventuelle nye funksjoner i POS-programmet som er relatert til mottak av butikklager mot bestillinger og overførings ordrer, til POS-operasjonen **Innkommende operasjon**. Hvis du for øyeblikket bruker en plukk- og mottaksoperasjon i POS, anbefaler vi at du utvikler en strategi for flytting fra den operasjonen til de nye innkommende og utgående operasjonene. Selv om plukk- og mottaksoperasjonen ikke blir fjernet fra produktet, vil det ikke være flere investeringer i den, fra et funksjonelt eller ytelsesperspektiv etter versjon 10.0.9.
 
 ## <a name="prerequisite-configure-an-asynchronous-document-framework"></a>Forutsetning: konfigurere et asynkront dokumentrammeverk
 
@@ -153,6 +153,20 @@ Du bør bare bruke funksjonen **Avbryt mottak** på applinjen hvis du vil gå ti
 Hvis du mottar lagerbeholdningen, kan du bruke funksjonen **Stans mottak midlertidig** hvis du vil ta en pause fra mottaksprosessen. Det kan for eksempel hende at du vil utføre en annen operasjon fra salgsstedet, for eksempel å ringe opp et kundesalg eller forsinke postering av mottaket.
 
 Når du velger **Stans mottak midlertidig**, endres dokumentstatusen til **Midlertidig stanset**. Derfor vil brukerne vite at det er lagt inn data i dokumentet, men dokumentet er ennå ikke utført. Når du er klar til å gjenoppta mottaksprosessen, velger du det stansede dokumentet, og deretter velger du **Ordredetaljer**. Alle antall i **Mottar nå** som tidligere ble lagret, beholdes og kan vises fra visningen **Fullstendig ordreliste**.
+
+### <a name="review"></a>Se over
+
+Før den endelige forpliktelsen av mottaket til Commerce Headquarters (HQ) kan du bruke funksjonen Gjennomgang til å validere det innkommende dokumentet. Denne gjennomgangen varsler deg om manglende eller uriktige data som kan føre til en behandlingsfeil, og gir deg muligheten til å rette opp problemer før du sender inn mottaksforespørselen. Hvis du vil aktivere funksjonen **Gjennomgang** på applinjen, aktiverer du funksjonen **Aktiver validering i innkommende og utgående lageroperasjoner på salgsstedet** via arbeidsområdet **Funksjonsbehandling** i Commerce Headquarters (HQ).
+
+Funksjonen **Gjennomgang** validerer følgende problemer i et innkommende dokument:
+
+- **Overmottak** – antallet som mottas nå, er større enn det bestilte antallet. Alvorsgraden til dette problemet bestemmes av overleveringskonfigurasjonen i Commerce Headquarters (HQ).
+- **Undermottak** – antallet som mottas nå, er mindre enn det bestilte antallet. Alvorsgraden til dette problemet bestemmes av underleveringskonfigurasjonen i Commerce Headquarters (HQ).
+- **Serienummer** – serienummer er ikke oppgitt eller validert for en serialisert vare som krever at et serienummer registreres på lageret.
+- **Sted ikke angitt** – stedet er ikke angitt for en stedsstyrt vare der et tomt sted ikke er tillatt.
+- **Slettede linjer** – ordren har linjer slettet av en Commerce Headquarters-bruker (HQ) som ikke er kjent for POS-appen.
+
+Sett parameteren **Aktiver automatisk validering** til **Ja** i **Commerce-parametere** > **Lager** > **Butikklager**, for å få valideringen til å utføres automatisk når funksjonen **Fullfør mottak** velges.
 
 ### <a name="finish-receiving"></a>Slutt å motta
 

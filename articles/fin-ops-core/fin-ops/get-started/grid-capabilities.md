@@ -3,7 +3,7 @@ title: Rutenettfunksjoner
 description: Dette emnet beskriver flere kraftfulle funksjoner i rutenettkontrollen. Den nye rutenettfunksjonen må være aktivert for at du skal kunne få tilgang til disse funksjonene.
 author: jasongre
 manager: AnnBe
-ms.date: 06/04/2020
+ms.date: 08/03/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 88a4e2fe69000f8034729d468ad5fd108d435c3e
-ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
+ms.openlocfilehash: b1dd5e852bdc116d0848687782c930b19eae7900
+ms.sourcegitcommit: 27233e0fda61dac541c5210ca8d94ab4ba74966f
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "3431366"
+ms.lasthandoff: 08/03/2020
+ms.locfileid: "3651696"
 ---
 # <a name="grid-capabilities"></a>Rutenettfunksjoner
 
@@ -128,20 +128,47 @@ Hvis du vil at systemet skal gjenkjenne en verdi som et uttrykk, starter du verd
 
 Alle etterfølgende brukerøkter starter med at den nye rutenettkontrollen er aktivert.
 
+## <a name="developer-opting-out-individual-pages-from-using-the-new-grid"></a>[Utvikler] Velge bort enkeltsider fra å bruke det nye rutenettet 
+Hvis organisasjonen oppdager en side der det er noen problemer med å bruke det nye rut nettet, er det tilgjengelig et API for å tillate at et enkelt skjema bruker den gamle rutenettkontrollen samtidig som resten av systemet brukes til å utnytte den nye rutenettkontrollen. Hvis du vil velge bort en enkelt side fra det nye rutenettet, legger du til følgende oppkallspost `super()` i skjemaets `run()`-metode.
+
+        this.forceLegacyGrid();
+
+Dette API-et støttes til oktober 2021-versjonen når den nye rutenettkontrollen blir obligatorisk. Rapporter eventuelle problemer til Microsoft som krever at dette API-et skal brukes. 
+
 ## <a name="known-issues"></a>Kjente problemer
 Denne delen inneholder en liste over kjente problemer for den nye rutenettkontrollen mens funksjonen er i en forhåndsvisningstilstand.  
 
 ### <a name="open-issues"></a>Åpne problemer
+-  Når du har aktivert funksjonen **Ny rutenettkontroll**, vil noen sider fortsette å bruke den eksisterende rutenettkontrollen. Dette vil skje i følgende situasjoner:  
+    -  Det finnes en kortliste på siden som gjengis i flere kolonner.
+    -  Det finnes en gruppert kortliste på siden.
+    -  En rutenettkolonne med en ikke-reagerende utvidbar kontroll.
 
-- Kortlister som ble gjengitt som flere kolonner, er nå gjengitt som én enkelt kolonne.
-- Grupperte lister gjengis ikke som grupper eller i separate kolonner.
+    Når en bruker først støter på én av disse situasjonene, vil det vises en melding om oppdatering av siden. Når denne meldingen vises, vil siden fortsette å bruke det eksisterende rutenettet for alle brukere til neste oppdatering av produktversjonen. Bedre behandling av disse scenariene, slik at det nye rutenettet kan brukes, vurderes for en fremtidig oppdatering.     
 
 ### <a name="fixed-as-part-of-10013"></a>Løst som del av 10.0.13
 
-> [!NOTE]
-> Følgende informasjon blir oppgitt, slik at du kan planlegge tilsvarende. Hvis du vil ha mer informasjon om målrettet utgivelsesplan for versjon 10.0.13 , kan du se [Tilgjengelighet av serviceoppdatering](../../fin-ops/get-started/public-preview-releases.md).
-
-- [KB 4563317] Verktøytips vises ikke for bilder.
+-  [Feil 470173] Avmerkingsbokser i inaktive rader veksler når mellomrom i cellen klikkes.
+-  [Feil 474848] Utvidede forhåndsvisninger med rutenett vises ikke
+-  [Feil 474851] Hyperkoblinger i referansegruppekontroller fungerer ikke 
+-  [Feil 471777] Kan ikke velge felt i et rutenett for å redigere eller opprette en mobilapp
+-  [KB 4569441] Problemer med å gjengi kortlister med flere kolonner, verktøytips på bilder og visningsalternativer for enkelte felt
+-  [KB 4575279] Ikke alle merkede rader blir slettet i økonomijournalen
+-  [KB 4575233] Visningsalternativer gjenopprettes ikke etter flytting til en annen rad
+-  [KB 4571095] Produktkvitteringspostering skjer når du trykker Enter ved en feiltakelse (riktig håndtering av en sides standardhandling)
+-  [KB 4575437] Oppslag med redigerbare kontroller lukkes uventet
+-  [KB 4569418] Duplikat linje opprettet i leveringsplanskjema
+-  [KB 4575435] Forbedret forhåndsvisning vedvarer noen ganger, selv når musepekeren ikke er nær feltet
+-  [KB 4575434] Oppslag filtrerer ikke når feltet er endret
+-  [KB 4575430] Verdier i passordfelt blir ikke maskert i rutenettet.
+-  [KB 4569438] "Behandlingen har stoppet på grunn av et valideringsproblem", vises etter markering av linjer under utregning av leverandørtransaksjoner
+-  [KB 4569434] Oppdatering av skjemaet for juridiske enheter resulterer i færre poster
+-  [KB 4575297] Fokus holder seg til oppgaveregistreringsruten når du redigerer og går gjennom kategorier i et rutenett
+-  [KB 4566773] Korrigeringstransaksjoner vises ikke som negative på bilagstransaksjonsforespørsel 
+-  [KB 4575288] Fokus tilbakestilles til den aktive raden når du velger kantlinjen mellom rader i en enkel liste
+-  [KB 4575287] Fokuset går ikke tilbake til den første kolonnen når du bruker pil ned til å opprette en ny rad i journaler
+-  [KB 4564819] Kan ikke slette linjer i en fritekstfaktura (fordi datasource ChangeGroupMode=ImplicitInnerOuter)
+-  [KB 4563317] Verktøytips / forbedrede forhåndsvisninger vises ikke for bilder
 
 ### <a name="fixed-as-part-of-10012"></a>Løst som del av 10.0.12
 
@@ -158,6 +185,7 @@ Denne delen inneholder en liste over kjente problemer for den nye rutenettkontro
 - [KB 4562647] Fokus tilbakestilles til den første kontrollen i **Publiser**-dialogboksen etter at en ny rad er lagt til i rutenettet for sikkerhetsroller.
 - [KB 4563310] Den utvidede forhåndsvisningen lukkes ikke etter at en rad er endret.
 - [KB 4563313] Det oppstår en "uventet klientfeil" i Internet Explorer når en verdi velges i et oppslag.
+- [KB 4564557] Oppslag og rullegardinmenyer åpnes ikke i Internet Explorer
 - [KB 4563324] Navigasjon fungerer ikke etter at **Personaladministrasjon**-arbeidsområdet er åpnet.
 
 ### <a name="fixed-as-part-of-10011"></a>Løst som del av 10.0.11

@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-01-31
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: 83a27620a7bdd8624770442aa271a6dac6b5b04e
-ms.sourcegitcommit: a7a7303004620d2e9cef0642b16d89163911dbb4
+ms.openlocfilehash: 7dfa6353653c41330dba179331ccbd2373aef774
+ms.sourcegitcommit: 27233e0fda61dac541c5210ca8d94ab4ba74966f
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "3530380"
+ms.lasthandoff: 08/03/2020
+ms.locfileid: "3651963"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-1008-february-2020"></a>Hva er nytt eller endret i Dynamics 365 Supply Chain Management 10.0.8 (februar 2020)
 
@@ -39,23 +39,23 @@ Dette emnet beskriver funksjoner som enten er nye eller endret i Microsoft Dynam
 Denne versjonen inneholder følgende funksjoner: Funksjonstitlene kobler til mer informasjon på [Utgivelsesplaner](https://docs.microsoft.com/dynamics365/release-plans/)-området. Flere koblinger peker mot ekstra dokumentasjon eller videoer som for øyeblikket er tilgjengelige for denne funksjonen. Noen av disse funksjonene kan også ha blitt tatt med i en tidligere inkrementell versjon, men ble ikke annonsert i tidligere *Hva er nytt*-emne, så vi legger dem til her. De fleste av disse funksjonene må aktiveres ved hjelp av [Funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) før du kan bruke dem.
 
 - [Ekstra lokasjonssone](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/additional-location-zone)
-- [Aktivastyring](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/dynamics-365-asset-management) - Hvis du vil ha mer informasjon, kan du se [Oversikt over Aktivastyring](../asset-management/index.md).
-- [Avbryte arbeid](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/cancel-work) - Hvis du vil ha mer informasjon, se [Avbryte lagerarbeid for unntaksbehandling](../warehousing/cancel-warehouse-work.md).
+- [Aktivastyring](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/dynamics-365-asset-management)<br> - Hvis du vil ha mer informasjon, kan du se [Oversikt over Aktivastyring](../asset-management/index.md).
+- [Avbryt arbeid](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/cancel-work)<br> - For mer informasjon, se [Avbryte lagerarbeid for unntaksbehandling](../warehousing/cancel-warehouse-work.md).
 - [Endre arbeidspulje i arbeid](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/change-work-pool-work)
 - [Gruppestilling full](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/cluster-position-full)
 - [Bekreft og overfør](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/confirm-transfer)
 - [Aldersfordeling for lagerplukking for lokasjonsdirektiv](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/location-directive-inventory-picking-aging)
 - [Lokasjonsstatus](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/location-status)
-- [Plukklinjegruppering](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/pick-line-grouping) - Hvis du vil ha mer informasjon, se [Plukklinjegruppering](../warehousing/pick-line-grouping.md).
-- [Automatiske oppdateringer av forsendelser](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/shipment-auto-update) - Hvis du vil ha informasjon, se [Automatiske oppdateringer av forsendelser](../warehousing/auto-update-shipment.md).
+- [Plukklinjegruppering](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/pick-line-grouping)<br> - Hvis du vil ha mer informasjon, se [Plukklinjegruppering](../warehousing/pick-line-grouping.md).
+- [Automatiske oppdateringer av forsendelser](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/shipment-auto-update)<br> - Hvis du vil ha mer informasjon, se [Automatiske oppdateringer av forsendelser](../warehousing/auto-update-shipment.md).
 - [Oppdelt etterfyllingsarbeid basert på behov fra trinnet opprett plukkarbeid](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/split-demand-replenishment-work-create-pick-work-step)
 - [Oppdelt arbeid](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/split-work)
-- [Systemstyrt gruppeplukking](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/system-directed-cluster-picking) - Hvis du vil ha mer informasjon, se [Systemstyrt gruppeplukking](../warehousing/system-directed-cluster-pick.md).
+- [Systemstyrt gruppeplukking](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/system-directed-cluster-picking)<br> - Hvis du vil ha mer informasjon, se [Systemstyrt gruppeplukking](../warehousing/system-directed-cluster-pick.md).
 - [Oppgavevalidering av lagerapp med RSAT](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/warehouse-app-task-validation-rsat)
 - [Regel for frigivelse til lager](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/warehouse-release-rule)
 - [Visualisering av bølgestatus](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/wave-status-visualization)
 - [Gruppering av bølgemal](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/wave-template-grouping)
-- [Detaljer for arbeidslinje](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/work-line-details) – Hvis du vil ha mer informasjon, kan du se videoen [Detaljer for arbeidslinje](https://www.microsoft.com/videoplayer/embed/RE4fcYN).
+- [Detaljer for arbeidslinje](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/work-line-details)<br> - Hvis du vil ha mer informasjon, kan du se videoen [Detaljer for arbeidslinje](https://www.microsoft.com/videoplayer/embed/RE4fcYN).
 - [Etterfylling av soneterskel](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/zone-threshold-replenishment)
 
 ## <a name="additional-resources"></a>Tilleggsressurser

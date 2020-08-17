@@ -3,7 +3,7 @@ title: Fjerne en forekomst
 description: Denne artikkelen leder deg gjennom prosessen med å fjerne en testkjøring eller et produksjonsmiljø for Microsoft Dynamics 365 Human Resources.
 author: andreabichsel
 manager: AnnBe
-ms.date: 02/03/2020
+ms.date: 07/27/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 17f299f81d1326dfb06c11a6125acc54b8ef2a6e
-ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
+ms.openlocfilehash: a384801060b2b684f7908daaac2311edd27c773a
+ms.sourcegitcommit: 4a981ee4be6d7e6c0e55541535d386bce2565cba
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "3431205"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "3621386"
 ---
 # <a name="remove-an-instance"></a>Fjerne en forekomst
 
@@ -67,8 +67,21 @@ Hvis du vil fjerne et Human Resources-miljø fra et eksisterende Power Apps-milj
 1. Kontakt kundestøtte for å starte en forespørsel om fjerning.
 2. Kundestøtteteamet vil opprette en forespørsel om fjerning med Human Resources DevOps-teamet. 
 3. Fortsett etter at du får beskjed om at miljøet er fjernet.
-4.  Logg på LCS ved hjelp av kontoen du brukte til å abonnere på Human Resources. 
+4. Logg på LCS ved hjelp av kontoen du brukte til å abonnere på Human Resources. 
 5. Velg Human Resources-prosjektet som inneholder miljøet. 
 6. I LCS prosjektet velger du flisen **Human Resources-appbehandling**. 
 7. Velg forekomsten du vil fjerne, som skal være merket med distribusjonsstatusen **Mislykket**.
 8. Velg **Fjern forekomst**, og bekrefte beslutningen. 
+
+## <a name="recover-a-soft-deleted-environment"></a>Gjenopprette et mykt slettet miljø
+
+Hvis du sletter Power Apps-miljøet som personalmiljøet ditt er koblet til, vil statusen for personalmiljøet i Lifecycle Services være **Mykt slettet**. I dette tilfellet kan ikke brukere koble til personalmiljøet.
+
+Slik gjenoppretter du miljøet:
+
+1. Følg instruksjonene i [Gjenopprette Power Apps-miljøet](/power-platform/admin/recover-environment.md).
+
+2. Kontakt kundestøtte for å gjenopprette personalmiljøet. For mer informasjon, se [Få kundestøtte](hr-admin-troubleshooting-support.md).
+
+> [!Warning]
+> Power Apps-miljøer lagres bare i sju dager etter sletting. Du må gjenopprette miljøet i løpet av denne perioden på sju dager.

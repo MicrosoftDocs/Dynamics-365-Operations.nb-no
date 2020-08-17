@@ -3,7 +3,7 @@ title: Oversikt over betalinger for omnikanal
 description: Dette emnet gir en oversikt over omnikanalinnbetalinger i Dynamics 365 Commerce.
 author: rubendel
 manager: AnnBe
-ms.date: 11/26/2019
+ms.date: 07/21/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: AX 8.1.3
-ms.openlocfilehash: 2251e523f7dfa3a06f0c45a4e156dbe097587f9a
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 2127eb60a82bef8c6b5f5e9a917160331c483649
+ms.sourcegitcommit: 59fb179c770c799918f624cf345848fd4202bbdd
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3023609"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "3613183"
 ---
 # <a name="omni-channel-payments-overview"></a>Oversikt over betalinger for omnikanal
 
@@ -68,11 +68,13 @@ Følgende komponenter og oppsettrinn kreves:
 
 - **eCommerce-integrering:** En integrering med Commerce er nødvendig for å støtte scenarier der en ordre kommer fra en nettbutikkfasade. Hvis du vil ha mer informasjon om Retail e-Commerce-SDK-en, kan du se [SDK for e-Commerce-plattformen](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/ecommerce-platform-sdk). I et demonstrasjonsmiljø støtter referansebutikkfasaden omnikanalbetalingsscenarioer. 
 - **Konfigurasjon av onlinebetalinger:** Oppsettet for Internett-kanalen må inkludere en betalingskobling som er oppdatert for å støtte omnikanalbetalinger. Alternativt kan en medfølgende betalingskobling brukes. Hvis du vil ha informasjon om hvordan du konfigurerer Adyen-betalingskoblingen for nettbutikker, se [Adyen-betalingskobling](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/adyen-connector?tabs=8-1-3#e-commerce). I tillegg til eCommerce-oppsettrinnene som beskrives i dette emnet, må parameteren **Tillat lagring av betalingsinformasjon i e-handel** settes til **sann** i innstillingene for Adyen-koblingen. 
-- **Omnikanalbetalingskonfigurasjon:** I back office gå til **Retail og Commerce \> Hovedkvarteroppsett \> Parametere \> Delte handelsparametere**. I kategorien **Omnikanal-betalinger** setter du alternativet **Bruk betalinger for omnikanal** til **Ja**.
+- **Omnikanalbetalingskonfigurasjon:** I back office gå til **Retail og Commerce \> Hovedkvarteroppsett \> Parametere \> Delte handelsparametere**. I kategorien **Omnikanal-betalinger** setter du alternativet **Bruk betalinger for omnikanal** til **Ja**. I Commerce versjon 10.0.12 og senere er denne innstillingen i arbeidsområdet **Funksjonsbehandling**. Velg funksjonen **Omnikanal-betalinger**, og klikk på **Aktiver nå**. 
 - **Betalingstjenester:** Telefonsenteret bruker standard betalingskobling på **Betalingstjenester**-siden for å behandle betalinger. Hvis du vil ha støtte for scenarioer som "Bestille på telefonsenter og hente i butikk", må denne standard betalingskoblingen være Adyen-betalingskoblingen eller en betalingskobling som oppfyller implementeringskravene for omnikanalbetalinger.
 - **EFT-tjeneste:** Betalinger via en betalingsterminal må defineres i hurtigfanen **EFT-tjeneste** i maskinvareprofilen. Adyen-koblingen støtter standard omnikanalbetalingsscenarier. Andre betalingskoblinger som støtter **iNamedRequestHandler**-grensesnittet, kan også brukes hvis de støtter omnikanalbetalinger.
 - **Betalingskoblingstilgjengelighet:** Når en ordre kalles tilbake, vil betalingsbeløplinjene som tilbakekalles sammen med ordren, inkludere navnet på betalingskoblingen som ble brukt til å opprette godkjenningene som er knyttet til ordren. Når ordren er oppfylt, prøver betalings-SDKen å bruke den samme koblingen som ble brukt til å opprette den opprinnelige autorisasjonen. Derfor må en betalingskobling som har samme forhandleregenskaper, være tilgjengelige for henting. 
 - **Korttyper:** For at omnikanalscenarioer skal fungere skikkelig, må hver kanal ha samme oppsett for betalingsmiddeltyper som kan brukes for omnikanalen. Dette oppsettet omfatter betalingsmåte-IDer og korttype-IDer. Hvis for eksempel betalingsmiddeltypen **Kort** har IDen **2** i nettbutikkoppsettet, må den ha samme ID i oppsettet for detaljhandelsbutikken. Det samme kravet gjelder for korttype-IDer. Hvis kortnummer **12** er satt til **Visa** i nettbutikken, skal den samme IDen defineres for detaljhandelsbutikken. 
+- Retail Modern POS for Windows eller Android med innebygd maskinvarestasjon -eller-
+- Modern POS for iOS eller Cloud POS med tilkoblet, delt maskinvarestasjon. 
 
 ### <a name="basic-principle-supporting-omni-channel-payments"></a>Grunnleggende prinsipp som støtter omnikanalbetalinger
 
@@ -100,8 +102,10 @@ Følgende deler beskriver fremgangsmåten for hvert scenario og viser hvordan du
 Før du starter må du kontrollere at følgende forutsetninger er oppfylt:
 
 - Du har en referansebutikkfasade der Adyen-koblingen er konfigurert.
-- Alternativet **Omnikanal-betalinger** på siden **Delte handelsparametere** er satt til **Sann**.
+- Alternativet **Omnikanal-betalinger** på siden **Delte handelsparametere** er satt til **Sann**. I senere versjoner er denne innstillingen flyttet til arbeidsområdet **Funksjonsbehandling**, der du kan velge funksjonen **Omnikanal-betalinger** og klikke på **Aktiver nå**. 
 - Adyen-betalingskoblingen er konfigurert for Houston-salgsstedskassene.
+- Retail Modern POS for Windows eller Android med innebygd maskinvarestasjon -eller-
+- Modern POS for iOS eller Cloud POS med tilkoblet, delt maskinvarestasjon. 
 
 Følg disse trinnene for å kjøre scenarioet.
 
@@ -229,3 +233,5 @@ Når en ordre som har flere betalingsmidler og flere linjer, blir plukket, motta
 
 - [Vanlige spørsmål om betalinger](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/payments-retail)
 - [Dynamics 365 Payment Connector for Adyen](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/adyen-connector?tabs=8-1-3)
+- [Konfigurere BOPIS i et evalueringsmiljø for Dynamics 365 Commerce](https://docs.microsoft.com/en-us/dynamics365/commerce/cpe-bopis)
+
