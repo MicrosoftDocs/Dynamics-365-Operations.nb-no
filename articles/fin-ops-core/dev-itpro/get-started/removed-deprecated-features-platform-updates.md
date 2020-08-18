@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 50362ccd9df7a44961bd6e46fa16779829b1c408
-ms.sourcegitcommit: 96ec8b7252296de0049bff406c743f8da9e0f0be
+ms.openlocfilehash: 393349240d16636d3eec747126cc1ee6f6f9998d
+ms.sourcegitcommit: 27233e0fda61dac541c5210ca8d94ab4ba74966f
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "3606828"
+ms.lasthandoff: 08/03/2020
+ms.locfileid: "3651672"
 ---
 # <a name="removed-or-deprecated-platform-features"></a>Fjernede eller avskrevne Platform-funksjoner
 
@@ -38,8 +38,7 @@ Detaljert informasjon om objekter i Finance and Operations-apper finnes i [Tekni
 ## <a name="platform-updates-for-version-10013-of-finance-and-operations-apps"></a>Plattformoppdateringer for versjon 10.0.13 av Finance and Operations-apper
 
 > [!NOTE]
-> Versjon 10.0.13 er ennå ikke utgitt. Denne informasjonen er ment for planleggingsformål. Innholdet og funksjonaliteten for versjon 10.0.13 kan bli endret. Hvis du vil ha mer informasjon om versjoner, kan du se [Tilgjengelighet av serviceoppdatering](../../fin-ops/get-started/public-preview-releases.md).
-
+> Versjon 10.0.13 er en forhåndsversjon. Innholdet og funksjonaliteten kan bli endret. Hvis du vil ha mer informasjon om forhåndsversjoner, kan du se [Tilgjengelighet av serviceoppdatering](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/public-preview-releases).
 
 ### <a name="upgrade-of-three-jquery-component-libraries"></a>Oppgradering av tre jQuery-komponentbiblioteker 
 
@@ -50,6 +49,27 @@ Detaljert informasjon om objekter i Finance and Operations-apper finnes i [Tekni
 | **Berørte produktområder**         | Utvidbare kontroller, spesielt egendefinert JavaScript-kode med avskrevne eller fjernede APIer |
 | **Distribusjonsalternativ**              | Alle |
 | **Status**                         | Med versjon 10.0.13/Platform Update 37 kan kunder valgfritt flytte til de nyeste bibliotekene ved å aktivere funksjonen "Oppgradering av tre jQuery-komponentbiblioteker". Flytting til de nye bibliotekene blir obligatoriske med april 2021-versjonen som gir tid for migrering av berørte APIer.   |
+
+### <a name="existing-grid-controlforcelegacygrid-api"></a>API for eksisterende rutenettkontroll / forceLegacyGrid()
+
+|   |  |
+|------------|--------------------|
+| **Årsak til avskrivning/fjerning** | Den eksisterende rutenettkontrollen blir erstattet av den nye rutenettkontrollen. |
+| **Erstattet med en annen funksjon?**   | Den [nye rutenettkontrollen](../..//fin-ops/get-started/grid-capabilities.md) |
+| **Berørte produktområder**         | Webklient |
+| **Distribusjonsalternativ**              | Alle |
+| **Status**                         | I versjon 10.0.13 er den nye rutenettkontrollen generelt tilgjengelig, og kunder kan eventuelt slå på denne funksjonen. Den nye rutenettkontrollen blir obligatorisk i oktober 2021-versjonen. Når den nye rutenettkontrollen blir obligatorisk, støttes ikke API-et **forceLegacyGrid()** lenger. |
+
+### <a name="personalization-without-saved-views"></a>Tilpasning uten lagrede visninger 
+
+|   |  |
+|------------|--------------------|
+| **Årsak til avskrivning/fjerning** | Undersystemet for tilpasning har blitt oppgradert med funksjonen for lagrede visninger, så det har bedre ytelse og tilbyr flere funksjoner. |
+| **Erstattet med en annen funksjon?**   | Lagrede visninger |
+| **Berørte produktområder**         | Webklient |
+| **Distribusjonsalternativ**              | Alle |
+| **Status**                         | I versjon 10.0.13 / Platform Update 37 er funksjonen for lagrede visninger generelt tilgjengelig, og kunder kan eventuelt aktivere denne funksjonen. Funksjonen for lagrede visninger blir obligatorisk i oktober 2021-versjonen. |
+
 
 ## <a name="platform-updates-for-version-10012-of-finance-and-operations-apps"></a>Plattformoppdateringer for versjon 10.0.12 av Finance and Operations-apper
 

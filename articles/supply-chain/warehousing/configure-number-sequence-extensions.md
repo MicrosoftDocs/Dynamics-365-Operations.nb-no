@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: v-olbara
 ms.search.validFrom: 2020-06-10
 ms.dyn365.ops.version: 10.0.2
-ms.openlocfilehash: 3ee74ba108008ccef53fe3b904c71ddf5f51afb7
-ms.sourcegitcommit: 137e2bd30f0a85bd2e1baf1cf16b993edd2094f9
+ms.openlocfilehash: 2f4506d2c1808198d4b10e50f4635bcc21d934e1
+ms.sourcegitcommit: 0f877ee4b53cfb002b179a53a67c4f9adae354bf
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "3546452"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "3640405"
 ---
 # <a name="configure-number-sequences-for-warehouse-flows"></a>Konfigurer nummerserier for lagerflyter
 
@@ -36,7 +36,7 @@ Denne funksjonen legger til følgende funksjonalitet:
 - Fraktbrev-ID-er kan genereres på forhånd.
 - En unik nummerserie kan genereres for SSCC-numre (Serial Shipping Container Code).
 - GS1-kompatible nummerserier kan opprettes for BOL- og SSCC-numre. Denne funksjonen legger til standardstøtte for nummerskilt-IDer, container-IDer, bølgeetikett-IDer og fraktbrev-IDer.
-- Konfigurasjon av ID-numre for lisensplate er fleksibelt. Du kan for eksempel inkludere eller utelate kunstig intelligens (KI), for eksempel ledende nuller (00).
+- Konfigurasjon av ID-numre for lisensplate er fleksibelt. Du kan for eksempel inkludere eller utelate app-ID-er (AI), for eksempel ledende nuller (00).
 
 Denne funksjonaliteten gjør det mer effektivt å støtte etiketter med kartonger og justere nye numre som genereres av systemet.
 

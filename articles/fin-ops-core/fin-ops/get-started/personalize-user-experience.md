@@ -3,7 +3,7 @@ title: Tilpasse brukeropplevelsen
 description: Dette emnet forklarer hvordan du kan tilpasse appen.
 author: jasongre
 manager: AnnBe
-ms.date: 05/18/2020
+ms.date: 07/28/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,67 +18,76 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bb66db1e41dce6987bdfc52dd58e2b704ce36720
-ms.sourcegitcommit: dc67232c9aa3223d42f22cc1f7aafbd121e7e616
+ms.openlocfilehash: f8afbea3b3a6a06d005efae7305b2e394907c67c
+ms.sourcegitcommit: 27233e0fda61dac541c5210ca8d94ab4ba74966f
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/30/2020
-ms.locfileid: "3412360"
+ms.lasthandoff: 08/03/2020
+ms.locfileid: "3652137"
 ---
 # <a name="personalize-the-user-experience"></a>Tilpasse brukeropplevelsen
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
-Dette emnet forklarer hvordan du kan tilpasse appen.
+Dette emnet beskriver hvordan du kan tilpasse appen og dekker følgende emner: 
 
-Det finnes tre grunnleggende klasser med tilpasninger.
-
-- Tilpasninger gjort på en konfigurasjonsside. Eksempler er fargetema og tidssone.
-- Tilpasninger som er knyttet til sidebruk. Disse tilpasningene kalles *implisitte* tilpasninger. For eksempel holder systemet oversikt over bredden på rutenettkolonnene hvis du endrer dem, og tilstanden for vist eller skjult for hurtigfanene.
-- Tilpasninger en bruker gjør for utseendet på en side ved å endre hvordan et element fungerer eller vises på den siden, ofte gjennom en interaktiv tilpasningsmodus. Disse tilpasningene kalles *eksplisitte* tilpasninger. Brukeren kan for eksempel legge til, skjule eller omorganisere elementene på siden.
-
-Alle tilpasninger som en bruker gjør, er bare for denne brukeren, uavhengig av tilpasningstypen eller firmaet som brukeren samhandler med. Endringene som én bruker gjør på en side, påvirker ikke andre brukere i systemet.
+- **Systemomfattende alternativer** – Disse tilpasningsalternativene utføres på en konfigurasjonsside og er tilgjengelige for alle brukere. Eksempler er fargetema og tidssone. 
+- **Begrenset tilpassingsstilgang** – På dette tilgangsnivået lagres brukerhandlinger som er knyttet til vanlig sidebruk, automatisk av appen, og de gjenopprettes neste gang du besøker siden. For eksempel lagrer appen bredden på rutenettkolonnene hvis du endrer dem, og tilstanden for vist eller skjult for hurtigfanene. 
+- **Full tilpassingstilgang** – På dette tilgangsnivået har brukere tilgang til alle tilpassingsfunksjoner i appen. Spesielt har de tilgang til verktøylinjen **Tilpassing**. 
+- **Dele tilpasninger** – Brukere som har full tilpasningstilgang, kan eksportere sine personlige tilpasninger og dele dem med andre brukere.
+- **Administrasjon av tilpasninger** – Privilegerte brukere kan få tilgang til administrasjonssiden **Tilpasning** for å administrere alle personlige tilpasninger på et organisasjonsnivå. 
 
 ## <a name="system-wide-options-for-the-current-user"></a>Systemomfattende alternativer for gjeldende bruker
 
-Siden **Brukeralternativer** inneholder flere systeminnstillinger for gjeldende bruker. For å åpne siden **Brukeralternativer** velger du **Innstillinger**-knappen (tannhjulsymbolet) på navigeringslinjen, og deretter velger du **Brukeralternativer**. Siden **Brukeralternativer** har fire faneblader med ulike brukerinnstillinger:
+Siden **Brukeralternativer** inneholder flere systeminnstillinger for gjeldende bruker. Disse alternativene er tilgjengelige for alle brukere, selv brukere som ikke har fått tilgang til tilpasning. For å åpne siden **Brukeralternativer** velger du **Innstillinger**-knappen på navigeringslinjen, og deretter velger du **Brukeralternativer**. Siden **Brukeralternativer** har fire faneblader med ulike brukerinnstillinger:
 
 - **Visuelt** – Velg et fargetema og standardstørrelsen på elementer på sidene.
-- **Innstillinger** – Velg standardverdier som brukes hver gang du åpner systemet. Disse verdiene inkluderer firmaet, startsiden og standard visnings-/ redigeringsmodus. (Vis-/redigeringsmodus avgjør om en side er låst for visning eller åpnet for redigering hver gang du åpner den.) Denne kategorien omfatter også alternativer for språk, tidssone, og dato, klokkeslett og tallformater. Denne kategorien inneholder dessuten flere diverse innstillinger som varierer fra versjon til versjon.
-- **Konto:** – Juster brukernavnet ditt og andre kunderelaterte alternativer.
+- **Innstillinger** – Velg standardverdier som brukes hver gang du åpner systemet. Disse verdiene inkluderer standardfirmaet, startsiden og standard visnings-/redigeringsmodus. (Vis-/redigeringsmodus avgjør om en side er låst for visning eller åpnet for redigering hver gang du åpner den.) Denne kategorien omfatter også alternativer for språk, tidssone, og dato, klokkeslett og tallformater. Denne kategorien inneholder dessuten flere diverse innstillinger som varierer fra versjon til versjon.
+- **Konto:** – Vis eller juster brukernavnet ditt og andre kunderelaterte alternativer.
 - **Arbeidsflyt** – Velg arbeidsflytrelaterte alternativer.
 
-I tillegg til å endre brukerinnstillinger kan du bruke siden **Brukeralternativer** til å vise og slette bruksdata og tilpasninger. Bare velg **Bruksdata** i handlingsruten.
-
-Når du bruker appen, lagres mange av valgene, slik at det blir lettere for deg å bruke systemet neste gang. I kategorien **Tilpassing** kan du vise og administrere de personlige endringene du har gjort på sider i systemet. I denne kategorien kan du også tilbakestille bildeforklaringer for funksjonen (det vil si popup-vinduene som introduserer nye systemfunksjoner). Du vil deretter bli varslet igjen om tidligere oppdagede funksjoner.
+I tillegg til å endre brukerinnstillinger kan du også vise og slette bruksdata og tilpasninger fra siden **Brukeralternativer**. Hvis du vil se dine bruksdata, velger du **Bruksdata** i handlingsruten. I kategorien **Tilpassing** kan du vise og administrere de personlige endringene du har gjort på sider i systemet. I denne kategorien kan du også tilbakestille bildeforklaringer for funksjonen (det vil si popup-vinduene som introduserer nye systemfunksjoner). Du vil deretter bli varslet igjen om tidligere oppdagede funksjoner.
 
 > [!NOTE]
 > Hvis funksjonen [Lagrede visninger](saved-views.md) er aktivert, kan du vise og behandle tilpasningene ved å velge **Tilpassing** i handlingsruten på siden **Brukeralternativer** .
 
-## <a name="implicit-personalizations"></a>Implisitte tilpasninger
+## <a name="restricted-personalization-access-formerly-implicit-personalizations"></a>Begrenset tilpasningstilgang (tidligere implisitte tilpasninger)
 
-Implisitte tilpasninger er tilpasninger som utføres ved å samhandle med kontroller som lagrer gjeldende synlige tilstand.
+På nivået **begrenset tilpassingsstilgang** lagres brukerhandlinger som er knyttet til vanlig sidebruk, automatisk av appen, og de gjenopprettes neste gang du besøker siden. Det kreves ingen eksplisitt lagringshandling. 
 
-- **Rutenettkolonnebredder:** – Du kan justere bredden på en kolonne i et rutenett ved å velge størrelseslinjen til venstre eller høyre for kolonneoverskriften og deretter dra den til venstre eller høyre helt til kolonnen har ønsket bredde. Appen lagrer bredden som du angir for en kolonne. Neste gang du åpner siden som inneholder rutenettet, endres størrelsen til denne bredden.
-- **Rutenettkolonner total** – (Bare tilgjengelig med den nye rutenett kontrollen aktivert) Du kan bestemme om en total skal vises nederst i en numerisk kolonne i et rutenett, og om bunnteksten i rutenettet er synlig. Appen lagrer disse dataene slik at innstillingene huskes neste gang du åpner siden. Se emnet [Rutenettfunksjoner](grid-capabilities.md) hvis du vil ha mer informasjon. 
-- **Hurtigfaner** – Noen sider har utvidbare deler kalt *Hurtigfaner*. Appen lagrer informasjon om hurtigfanene som du har vist og skjult. Neste gang du åpner siden, vil de samme hurtigfanene enten vises eller skjules, basert på siste samhandling med siden. I noen tilfeller kan du bidra til å forbedre systemytelsen ved å skjule en hurtigfane, fordi appen ikke trenger å hente informasjonen om hurtigfaner før hurtigfanen utvides. Som forklart senere i dette emnet kan du også endre rekkefølgen for hurtigfanene på en side.
-- **Faktabokser** – Noen sider har en **Relatert informasjon**-rute som viser skrivebeskyttet informasjon som er knyttet til gjeldende emne på siden. Hver del i ruten **Relatert informasjon** kalles en *Faktaboks*. Du kan vise eller skjule ruten **Relatert informasjon**, og du kan også vise eller skjule individuelle faktabokser. Appene lagrer disse innstillingene. Deretter, neste gang du åpner siden, vil ruten **Relatert informasjon** og de individuelle faktaboksene enten utvides eller skjules basert på den siste samhandlingen med siden. I noen tilfeller kan du bidra til å forbedre systemytelsen ved å skjule en faktaboks fordi appen ikke trenger å hente informasjonen for faktabokser før de utvides.
-- **Handlingsruter** – En *Handlingsrute* vises øverst på de fleste sidene. Handlingsruten inneholder knapper for mange av handlingene som du kan utføre på gjeldende side. Disse knappene er ofte organisert i kategorier. Du kan "feste" hele handlingsruten som åpen, eller du kan skjule den som standard. Neste gang du åpner siden, vil handlingsruten enten være åpen eller skjult basert på siste samhandling med siden. Hvis du låste handlingsruten åpen, vises den siste kategorien du brukte.
-- **Hurtigfilter** – Et *hurtigfilter* vises over mange rutenett. Med hurtigfilter kan du filtrere rutenettet basert på en kolonne som du velger. Appen lagrer kolonnen du filtrerte på. Deretter, neste gang du åpner siden som inneholder dette rutenettet, vil rutenettet filtreres i samme kolonne. Du kan imidlertid deretter velge en annen kolonne å filtrere rutenettet på.
+Her er en liste over handlingene som faller under vanlig bruk av siden, og som dekkes av begrenset tilpassingstilgang: 
+
+- **Rutenettkolonnebredder:** – Du kan justere bredden på en kolonne i et rutenett ved å velge størrelseslinjen til venstre eller høyre for kolonneoverskriften og deretter dra den til venstre eller høyre helt til kolonnen har ønsket bredde. Appen lagrer bredden som du angir for en kolonne. Neste gang du åpner denne siden, endres størrelsen på kolonnen til denne bredden.
+- **Rutenettbunntekst og kolonnesummer** – *(Bare tilgjengelig når den nye rutenettkontrollen er aktivert)* Du kan bestemme om en total skal vises nederst i en numerisk kolonne i et rutenett, og om bunnteksten i rutenettet er synlig. Appen lagrer disse innstillingene og bruker dem neste gang du åpner siden. Hvis du vil ha mer informasjon, se [Rutenettfunksjoner](grid-capabilities.md). 
+- **Hurtigfaner** – Noen sider har utvidbare deler kalt *Hurtigfaner*. Appen lagrer informasjon om hurtigfanene som du har vist eller skjult. Neste gang du åpner siden, vil de samme hurtigfanene enten vises eller skjules, basert på siste samhandling med siden. I noen tilfeller kan du bidra til å forbedre systemytelsen ved å skjule en hurtigfane, fordi appen ikke trenger å hente informasjonen om hurtigfaner før hurtigfanen utvides. Som forklart senere i dette emnet kan du også endre rekkefølgen for hurtigfanene på en side.
+- **Faktabokser** – Noen sider har en **Relatert informasjon**-rute som viser skrivebeskyttet informasjon som er knyttet til gjeldende emne på siden. Hver del i ruten **Relatert informasjon** kalles en *Faktaboks*. Du kan vise eller skjule ruten **Relatert informasjon**, og du kan også vise eller skjule individuelle faktabokser. Appene lagrer disse innstillingene. Neste gang du åpner siden, vil ruten **Relatert informasjon** og de individuelle faktaboksene enten utvides eller skjules basert på den siste samhandlingen med siden. I noen tilfeller kan du bidra til å forbedre systemytelsen ved å skjule ruten **Relatert informasjon** eller en faktaboks fordi appen ikke trenger å hente informasjonen for faktabokser før de utvides.
+- **Handlingsruter** – En *Handlingsrute* vises øverst på de fleste sidene. Handlingsruten inneholder knapper for mange av handlingene som du kan utføre på gjeldende side. Disse knappene er ofte organisert i kategorier. Du kan *feste* hele handlingsruten som åpen, eller du kan skjule den som standard. Neste gang du åpner siden, vil handlingsruten enten være åpen eller skjult basert på siste samhandling med siden. Hvis du festet handlingsruten som åpen, vises den siste kategorien du brukte.
+- **Hurtigfilter** – Et *hurtigfilter* vises over mange rutenett. Med hurtigfilter kan du filtrere rutenettet basert på én enkeltkolonne som du velger. Appen lagrer kolonnen du filtrerte på. Deretter, neste gang du åpner denne siden, vil rutenettet bruke den samme kolonnen til filtrering som standard. Du kan imidlertid fortsatt velge en annen kolonne å filtrere rutenettet på.
 - **Kolonnehodefiltre** – Når du filtrerer et rutenett ved hjelp av *kolonnehodefiltre*, kan du endre filteroperatoren etter behov for å finne dataene du vil bruke. Du kan for eksempel endre operatoren fra **begynner med** til **er nøyaktig**. Hver gang du bruker et kolonnehodefilter og endrer filteroperatoren, lagrer appen endringen. Den vil deretter gjenopprette filteroperatoren neste gang du filtrerer på denne kolonnen.
 - **Navigasjonsrute** – Du kan åpne *navigasjonsruten* ved å velge **Vis navigasjonsrute**-knappen øverst til venstre rute på en hvilken som helst side. (Denne knappen kalles noen ganger _**Meny**-knappen_, *hamburger*, *hamburgermeny* eller *hamburgerknapp*.) Du kan feste navigeringsruten åpen eller beholde den skjult som standard. Når du fester navigasjonsruten åpen, vil appen beholde den åpen helt til du skjuler den.
 
-## <a name="explicit-personalizations"></a>Eksplisitte tilpasninger
+## <a name="full-personalization-access-formerly-explicit-personalizations"></a>Full tilpasningstilgang (tidligere eksplisitte tilpasninger)
 
-Forskjellige personer og firmaer har et annet perspektiv på dataene som er viktigst for dem, og dataene de ikke trenger for måten de driver forretninger på. Du kan tilpasse måten informasjonen bestilles på og samhandles med. Du kan også angi at noe informasjon skal skjules. Disse funksjonene er nøkkelen til en personlig og produktiv erfaring og eksempler på eksplisitte tilpasninger. Eksplisitte tilpasninger er tilpasningene som du utfører eksplisitt fordi du vil endre utseendet eller virkemåten for et element eller en side.
+På nivået **full tilpassingstilgang** har brukere tilgang til alle tilpassingsfunksjoner i appen. Siden forskjellige personer og firmaer har forskjellige behov når de samhandler med appen, særlig i henhold til bruksfelt, inneholder den medarbeidereverktøy som gjør at brukere og organisasjoner kan skreddersy måten informasjon bestilles og samhandles på i appen. Disse funksjonene er nøkkel for å gi enkle, optimaliserte opplevelser i appen som er skreddersydd for deg og organisasjonen. 
+
+Hvis funksjonen [Lagrede visninger](saved-views.md) er aktivert, er det nødvendig med en eksplisitt lagring for å beholde disse endringene i brukeropplevelsen for en bestemt visning. Når funksjonen **Lagrede visninger** er deaktivert, lagres disse endringene automatisk.
+
+Følgende deler dekker omfanget av tilpasningsmuligheter som er tilgjengelige for brukere på nivået **full tilpassingstilgang**. Her er noen av disse funksjonene:
+
+- Hurtigmenyvalg
+- Verktøylinjen **Tilpassing**
+- Legge til fliser, lister og koblinger til arbeidsområder
+- Legge til et sammendrag fra et arbeidsområde til et instrumentbord
+- Tilpasse instrumentbordet
 
 ### <a name="shortcut-menu-options"></a>Hurtigmenyvalg
 
-Hurtigmenyer gir flere måter å endre en side eksplisitt på, slik at de passer bedre til behovene eller kravene i firmaet ditt. (En hurtigmeny er også kjent som en *høyreklikkmeny* eller *hurtigmeny*.)
+Hurtigmenyer er én måte for å endre grensesnittet på en side, slik at de passer bedre til behovene eller kravene i organisasjonen din. (En hurtigmeny er også kjent som en *høyreklikkmeny* eller en *hurtigmeny*.)
 
-Noen av mest vanlige og viktigste endringene som gjøres på en side, er tilgjengelige direkte som valg på en hurtigmeny. For eksempel, fra og med plattformoppdatering 17, hvis du vil legge til eller skjule kolonner i et rutenett, bare høyreklikker du en kolonneoverskrift og velger deretter **Legg til kolonner** eller **Skjul denne kolonnen**.
+Noen av mest vanlige og viktigste endringene som gjøres på en side, er tilgjengelige direkte som valg på en hurtigmeny. For eksempel, hvis du vil legge til eller skjule kolonner i et rutenett, bare høyreklikker du en kolonneoverskrift og velger deretter **Sett inn kolonner** eller **Skjul denne kolonnen**.
 
-De vanligste typene eksplisitte tilpasninger er i tillegg tilgjengelige ved å høyreklikke et element og deretter velge **Tilpass**. (Vær oppmerksom på at ikke alle elementene på siden kan tilpasses.) Når du bruker denne tilpasningsmetoden, vises vinduet for elementets egenskaper.
+De vanligste typene tilpasninger er i tillegg tilgjengelige ved å høyreklikke et element og deretter velge **Tilpass**. (Vær oppmerksom på at ikke alle elementene på siden kan tilpasses.) Når du bruker denne tilpasningsmetoden, vises elementets *egenskapsvindu*.
 
 ![Tilpasse egenskapene for et element](./media/cli-element-property-window.png)
 
@@ -91,12 +100,13 @@ Du kan bruke egenskapsvinduet til å tilpasse et element på følgende måter:
 - Hindre at dataene i feltet blir redigert (for en post).
 - Angi et felt som skal være obligatorisk for dataregistrering. Hvis det ikke er angitt noen verdi i dette feltet, vises det med en rød kantlinje og en stjerne som angir denne statusen. Dette alternativet er tilgjengelig fra og med versjon 10.0.11, når funksjonene [Lagrede visninger](saved-views.md) og **Angi felt som obligatoriske ved hjelp av tilpasning** er aktivert.
 
-Egenskapsvinduet kan inneholde andre tilpasningsfunksjoner avhengig av elementet. Egenskapsvinduet for en flis kan for eksempel la deg å fremme flisen på et instrumentbord, og egenskapsvinduet for et instrumentbord kan la deg opprette et nytt arbeidsområde på dette instrumentbordet.
+Egenskapsvinduet kan inneholde andre tilpasningsfunksjoner avhengig av elementet. Egenskapsvinduet for en flis kan for eksempel la deg å fremme flisen på et instrumentbord, og egenskapsvinduer for elementer på standard instrumentbord kan la deg opprette et nytt tilpasset arbeidsområde.
 
 ### <a name="the-personalization-toolbar"></a>Verktøylinjen for tilpassing
 
 Hvis du vil gjøre flere endringer på en side eller gjøre endringer som ikke er tilgjengelige gjennom andre mekanismer (for eksempel hvis du vil endre rekkefølgen på elementene), kan du bruke **Tilpassing**-verktøylinjen. Hvis du vil åpne **Tilpassing**-verktøylinjen, følger du et av disse trinnene:
 
+- Velg **Ctrl+Skift+P** fra ethvert element på siden.
 - Velg **Tilpass denne siden** i egenskapsvinduet for et element.
 - Velg **Tilpass denne siden** i gruppen **Tilpass** i kategorien **Alternativer** på handlingssiden til en hvilken som helst side.
 - Velg knappen **Innstillinger** (tannhjulsymbolet) i navigasjonsfeltet, og velg deretter **Tilpass**.
@@ -105,72 +115,75 @@ Hvis du vil gjøre flere endringer på en side eller gjøre endringer som ikke e
 
 #### <a name="navigating-the-page"></a>Navigere på siden
 
-Når verktøylinjen **Tilpassing** er åpen, er den underliggende siden skrivebeskyttet (med andre ord kan du ikke redigere data), men den er fortsatt interaktiv. Spesifikt kan du vise eller skjule ruten **Beslektet informasjon**, bytte kategorier og vise eller skjule inndelinger, på samme måte som du vanligvis utfører disse handlingene på siden. Hvis du vil bruke en tilpasning på en inndeling eller kategori som kan skjules (for eksempel skjule en hurtigfane), kan du ganske enkelt velge knappen som vises ved siden av inndelingen eller kategorien som kan skjules, når den får tastaturfokus eller når du holder musepekeren over den.
+Når verktøylinjen **Tilpassing** er åpen, er den underliggende siden skrivebeskyttet (med andre ord kan du ikke redigere data), men den er fortsatt interaktiv. Spesifikt kan du vise eller skjule ruten **Beslektet informasjon**, bytte kategorier og vise eller skjule inndelinger, på samme måte som du vanligvis ville utført disse handlingene på siden. Hvis du vil bruke en tilpasning på en inndeling eller kategori som kan skjules (for eksempel skjule en hurtigfane), kan du ganske enkelt velge knappen som vises ved siden av inndelingen eller kategorien som kan skjules, når den får tastaturfokus eller når du holder musepekeren over den.
 
 #### <a name="personalization-tools"></a>Verktøy for tilpassing
 
 Følgende verktøy er tilgjengelige på **Tilpassing**-verktøylinjen:
 
-- Bruk **Velg**-verktøyet til å velge og endre egenskapene for et element. Hvis du vil bruke dette verktøyet, velger du knappen **Velg** på verktøylinjen og velger deretter ønsket element. Egenskapsvinduet for elementet vises, og du kan endre egenskapene for elementet. Du kan gjenta prosessen for andre elementer som kan tilpasses på siden. Vær oppmerksom på at noen personlige egenskaper kanskje ikke er tilgjengelige i noen scenarioer. Du kan for eksempel ikke låse et felt som er nødvendig.
-- Bruk **Skjul**-verktøyet for å skjule et element på siden. Hvis du vil bruke dette verktøyet, velger du knappen **Skjul** på verktøylinjen, og deretter velger du elementet som skal skjules. Når du bruker **Skjul**-verktøyet, vil alle elementer som ligger skjult, gjøres synlige, men de vises i en skyggelagt container. Deretter kan du få et element synlig ved å merke det. Hvis du vil se hvordan siden vil se ut når elementer er skjult, bytter du til et annet tilpasningsverktøy.
-- Bruk verktøyet **Legg til et felt** for å legge til et felt på siden. Når du bruker dette verktøyet, kan du bare legge til felt som er del av sidedefinisjonen. Hvis du vil ha informasjon om hvordan du oppretter nye felt som ikke er en del av den gjeldende sidedefinisjonen, kan du se [Opprette og arbeide med egendefinerte felt](user-defined-fields.md). Når du har valgt knappen **Legg til et felt** på verktøylinjen, må du først velge gruppen eller området der du vil legge til et felt. En dialogboks viser listen over felt som er knyttet til den valgte gruppen eller området. I dialogboksen velger du ett eller flere felt og deretter **Sett inn**. Hvis du vil fjerne et felt som du la til tidligere, gjentar du prosessen, men fjerner merkingen av feltet i dialogboksen.
+- Bruk **Velg**-verktøyet til å velge og endre egenskapene for et element. Hvis du vil bruke dette verktøyet, velger du knappen **Velg** på verktøylinjen og velger deretter ønsket element. Egenskapsvinduet for elementet vises, der du kan endre egenskapene for elementet. Du kan gjenta prosessen for andre elementer som kan tilpasses på siden. Vær oppmerksom på at noen personlige egenskaper kanskje ikke er tilgjengelige i noen scenarioer. Du kan for eksempel ikke låse et felt som er nødvendig.
+- Bruk **Skjul**-verktøyet for å skjule et element på siden. Hvis du vil bruke dette verktøyet, velger du knappen **Skjul** på verktøylinjen, og deretter velger du elementet som skal skjules. Når du bruker **Skjul**-verktøyet, vil alle elementer som ligger skjult, gjøres synlige, men de vises i en skyggelagt container. Deretter kan du få et element synlig ved å merke det. Hvis du vil se hvordan siden vil se ut når elementer er skjult, bytter du til et annet tilpasningsverktøy eller lukker verktøylinjen for tilpasning.
+- Bruk verktøyet **Legg til et felt** for å legge til felt på siden. Når du bruker dette verktøyet, kan du bare legge til felt som er del av sidedefinisjonen. Hvis du vil ha informasjon om hvordan du oppretter nye felt som ikke er en del av den gjeldende sidedefinisjonen, kan du se [Opprette og arbeide med egendefinerte felt](user-defined-fields.md). Når du har valgt knappen **Legg til et felt** på verktøylinjen, må du først velge rutenettet eller delen der du vil legge til et felt. En dialogboks viser listen over felt som er knyttet til det valgte rutenettet eller den valgte delen. I dialogboksen velger du ett eller flere felt og deretter **Oppdater**. Hvis du vil fjerne et felt som du la til tidligere, gjentar du prosessen, men fjerner merkingen av feltet i dialogboksen.
 - Bruk **Flytt**-verktøyet når du vil flytte et element til et annet sted i den gjeldende gruppen med elementer. Legg merke til at du ikke kan flytte et element utenfor den overordnede gruppen. Hvis du vil bruke dette verktøyet, velger du knappen **Flytt** på verktøylinjen, og deretter velger du elementet som skal flyttes. Når du velger et element, bestemmer appen stedene der elementet kan flyttes. Disse stedene kalles *slippsoner*. Når du drar elementet rundt i gjeldende gruppe, vises hver "slippsone" som en farget, fet linje ved siden av området der elementet kan slippes.
 - Bruk **Hopp over**-verktøyet for å fjerne et element fra sidens tastaturtabulatorsekvens. Når du velger **Hopp over**-knappen på verktøylinjen, vil alle elementer som hoppes over, vises i en skyggelagt container. Du kan interaktivt fjerne eller legge til felt i kategorisekvensen.
-- Bruk **Vis i hode**-verktøyet når du vil at et felt skal vises i sammendragsdelen i hurtigfanen. Når du velger knappen **Vis i hode** på verktøylinjen, vil alle felt som er merket som sammendragsfelt, vises med en skyggelagt beholder. Interaktivt kan du legge til felt i hurtigfanen sammendrag og fjerne felt fra den ved å velge feltene.
+- Bruk **Vis i hode**-verktøyet når du vil at et felt skal vises i sammendragsdelen i hurtigfanen. Når du velger knappen **Vis i hode** på verktøylinjen, vil alle felt som er merket som sammendragsfelt, vises med en skyggelagt beholder. Du kan interaktivt legge til felt i hurtigfanen Sammendrag og fjerne felt fra sammendraget ved å velge feltene.
 - Bruk **Krev**-verktøyet til å angi et element som obligatorisk for dataregistrering. Når du velger **Krev**-knappen på verktøylinjen, vil alle elementer som er tilpasset for å gjøres obligatoriske, vises i en skyggelagt beholder. Du kan deretter gjøre dem ikke-obligatoriske på nytt. Dette alternativet er tilgjengelig fra og med versjon 10.0.12, når funksjonen **Angi felt som obligatoriske ved hjelp av tilpasning** er aktivert.
-
-    > [!IMPORTANT]
-    > Versjon 10.0.12 er en forhåndsversjon. Innholdet og funksjonaliteten kan bli endret. Hvis du vil ha mer informasjon om forhåndsversjoner, kan du se [Tilgjengelighet av serviceoppdatering](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/public-preview-releases).
-
 - Bruk **Lås**-verktøyet når du vil merke et element som enten er redigerbart eller ikke redigerbart. Når du velger **Lås**-knappen på verktøylinjen, vil alle elementer som ikke kan redigeres, vises i en skyggelagt container. Du kan deretter gjøre dem redigerbare på nytt. Legg merke til at noen felt er nødvendige og ikke kan gjøres ikke-redigerbare. Et hengelåssymbol ved siden av disse feltene.
-- Bruk knappen **Legg til en app fra Power Apps** for å bygge inn en app som ble opprettet ved hjelp av Microsoft Power Apps, på siden. Hvis du vil ha mer informasjon om hvordan du bygger inn en app fra Power Apps på en side, kan du se [Bytte inn apper fra Power Apps](embed-power-apps.md). Dette alternativet er bare tilgjengelig når funksjonen [Lagrede visninger](saved-views.md) er deaktivert.  
+- Bruk verktøyet **Legg til en app fra Power Apps** for å bygge inn en app som ble opprettet ved hjelp av Microsoft Power Apps, på siden. Hvis du vil ha mer informasjon om hvordan du bygger inn en app fra Power Apps på en side, kan du se [Bytte inn apper fra Power Apps](embed-power-apps.md). Dette alternativet er bare tilgjengelig når funksjonen [Lagrede visninger](saved-views.md) er deaktivert.
 - Bruk knappen **Legg til en app** til å bygge inn en app, enten en opprettet fra Microsoft Power Apps eller en tredjeparts, på siden. Dette alternativet er bare tilgjengelig når funksjonen [Lagrede visninger](saved-views.md) er aktivert. 
-- Bruk verktøyet **Fjern** for å tilbakestille siden til standard installert tilstand. Alle tilpasninger på gjeldende side vil bli fjernet. Det finnes ingen angrehandling. Bruk derfor dette verktøyet bare hvis du er sikker på at du vil tilbakestille siden.
-- Bruk verktøyet **Importer** for å laste en tilpasning fra en fil som du eller noen andre har opprettet. Når du importerer personlige tilpasninger for en side, kan du velge om de skal legges til eller erstatte alle eksisterende personlige tilpasninger for siden. Det finnes ingen angrehandling. Etter at du har importert personlige tilpasninger, må du derfor fjerne eller angre endringene du ikke vil ha, manuelt.
-- Bruk verktøyet **Eksporter** til å lagre dine tilpasninger for siden i en fil. Du kan deretter dele dine tilpasninger med andre brukere. Disse brukerne trenger bare å importere filen som inneholder dine tilpasninger for siden.
+- Bruk verktøyet **Fjern** for å tilbakestille siden til standard installert tilstand. Alle tilpasninger på gjeldende side vil bli fjernet. Du kan ikke angre denne handlingen. Bruk derfor dette verktøyet bare hvis du er sikker på at du vil tilbakestille siden. Når funksjonen **Lagrede visninger** er aktivert, fjerner dette verktøyet personlige tilpasninger for gjeldende visning.
+- Bruk verktøyet **Importer** for å laste en tilpasning fra en fil som du eller noen andre har opprettet. 
+
+    - Når funksjonen **Lagrede visninger** er deaktivert, kan du velge om du vil legge til eller erstatte den eksisterende personlige tilpasningen med personlige tilpasninger som importeres for siden. Du kan ikke angre denne handlingen. Etter at du har importert personlige tilpasninger, må du derfor fjerne eller angre endringene du ikke vil ha, manuelt.
+    - Når funksjonen **Lagrede visninger** er aktivert, blir de importerte tilpasningene en visning på siden. Hvis visningen allerede finnes, kan du hoppe over importen, erstatte den gjeldende visningen som har samme navn, eller gi den importerte visningen nytt navn.
+
+- Bruk verktøyet **Eksporter** til å lagre dine tilpasninger for siden i en fil. Du kan deretter dele dine tilpasninger med andre brukere. Disse brukerne trenger bare å importere filen som inneholder dine tilpasninger for siden. Når funksjonen **Lagrede visninger** er aktivert, lagrer dette verktøyet den gjeldende visningen i en fil for deling.
 - Velg **Lukk**-knappen for å lukke **Tilpasning**-verktøylinjen og returnere siden til den forrige interaktive tilstanden.
 
 Når verktøylinjen for **Tilpasning** er brukt, vil tilpasningene vanligvis gjelde så snart du lager dem. Hvis imidlertid funksjonen [Lagrede visninger](saved-views.md) er aktivert, må du eksplisitt lagre personlige tilpasninger til en visning du velger.
 
 I noen tilfeller når du velger et verktøy, vises et hengelåssymbol ved siden av et element. Dette symbolet indikerer at du ikke kan endre egenskapene for elementet som er knyttet til det valgte verktøyet, fordi endringer i disse egenskapene vil hindre at siden fungerer som den skal.
 
-### <a name="adding-a-tile-list-or-link-to-a-workspace"></a>Legge til en flis, liste eller kobling til et arbeidsområde
+### <a name="adding-tiles-lists-and-links-to-a-workspace"></a>Legge til fliser, lister og koblinger til et arbeidsområde
 
 For enkelte sider som inneholder lister, er tilpasningsfunksjonen **Legg til i arbeidsområde** tilgjengelig i gruppen **Tilpass** i kategorien **Alternativer** i handlingsruten. Med denne funksjonen kan du skyve relevant informasjon fra gjeldende liste til et bestemt arbeidsområde. Informasjonen som vises i arbeidsområdet, kan baseres på hele listen eller en filtrert og sortert versjon av listen. Du kan også angi om informasjonen skal vises i arbeidsområdet som en liste, som en sammendragsflis som kan vise antall elementer i listen, eller som en kobling.
 
 > [!NOTE]
-> Hvis funksjonen [Lagrede visninger](saved-views.md) er aktivert, er innholdet du dytter til et arbeidsområde, direkte koblet til en visning. Visningsspørringen brukes til å hente data i arbeidsområdet, og tilsvarende flis eller kobling i arbeidsområdet åpner siden til denne visningen, slik at visningensspørring og personlige tilpasninger brukes på den.
+> Hvis funksjonen [Lagrede visninger](saved-views.md) er aktivert, er innholdet du dytter til et arbeidsområde, direkte koblet til en visning. Visningsspørringen brukes til å hente data i arbeidsområdet, og tilsvarende flis eller kobling i arbeidsområdet åpner siden til denne visningen, slik at visningensspørring og personlige tilpasninger brukes på den. Hvis visningen oppdateres, vil de tilhørende arbeidsområdeelementene bli justert til den nye visningsdefinisjonen.
 
 [![Legg til i arbeidsområde](./media/personalization-addtoworkspace.png)](./media/personalization-addtoworkspace.png)
 
-- Hvis du vil legge til et arbeidsområde, sorterer eller filtrerer du først på siden, slik at den viser informasjonen slik du vil at den skal vises i arbeidsområdet. (Hvis funksjonen for lagrede visninger er aktivert, kan du ikke fortsette før du har lagret en visning som har disse betingelsene.) Velg deretter **Legg til i arbeidsområde**. Velg et arbeidsområde, og deretter, i **Presentasjon**-feltet, velger du **Liste**. Når du har valgt **Konfigurer**, vises en dialogboks der du kan velge hvilke kolonner som skal vises i listen i arbeidsområdet. Du kan også angi etiketten som brukes for listen i arbeidsområdet.
-- Hvis du vil legge til en flis i et arbeidsområde, må du først filtrere listen på siden slik at den viser dataene som skal oppsummeres, eller som du vil ha rask tilgang til. (Hvis funksjonen for lagrede visninger er aktivert, kan du ikke fortsette før du har lagret en visning som har disse betingelsene.) Velg deretter **Legg til i arbeidsområde**. Velg et arbeidsområde, og deretter, i **Presentasjon**-feltet, velger du **Flis**. Når du har valgt **Konfigurer**, vises en dialogboks der du kan angi etiketten som skal brukes for flisen i arbeidsområdet. Du kan også angi om ruten skal vise et tall. Når flisen er lagt til i arbeidsområdet, kan du velge den for å åpne den gjeldende siden fra arbeidsområdet. Deretter kan du vise den filtrerte listen som er knyttet til brikken.
-- Hvis du vil legge til en kobling i et arbeidsområde, filtrerer du først filteret på siden slik at den viser dataene du er interessert i. (Hvis funksjonen for lagrede visninger er aktivert, kan du ikke fortsette før du har lagret en visning som har disse betingelsene.) Velg deretter **Legg til i arbeidsområde**. Velg et arbeidsområde, og deretter, i **Presentasjon**-feltet, velger du **Kobling**. Når du har valgt **Konfigurer**, vises en dialogboks der du kan angi etiketten som skal brukes for koblingen. Du kan også angi en etikett for en ny inndeling som inneholder denne koblingen.
+- Hvis du vil legge til et arbeidsområde, sorterer eller filtrerer du først på siden, slik at den viser informasjonen slik du vil at den skal vises i arbeidsområdet. (Hvis funksjonen **Lagrede visninger** er aktivert, kan du ikke fortsette før du har lagret en visning som har disse betingelsene.) Velg deretter **Legg til i arbeidsområde**. Velg et arbeidsområde, og deretter, i **Presentasjon**-feltet, velger du **Liste**. Når du har valgt **Konfigurer**, vises en dialogboks der du kan velge hvilke kolonner som skal vises i listen i arbeidsområdet. Du kan også angi etiketten som brukes for listen i arbeidsområdet.
+- Hvis du vil legge til en flis i et arbeidsområde, må du først filtrere listen på siden slik at den viser dataene som skal oppsummeres, eller som du vil ha rask tilgang til. (Hvis funksjonen **Lagrede visninger** er aktivert, kan du ikke fortsette før du har lagret en visning som har disse betingelsene.) Velg deretter **Legg til i arbeidsområde**. Velg et arbeidsområde, og deretter, i **Presentasjon**-feltet, velger du **Flis**. Når du har valgt **Konfigurer**, vises en dialogboks der du kan angi etiketten som skal brukes for flisen i arbeidsområdet. Du kan også angi om ruten skal vise et tall. Når flisen er lagt til i arbeidsområdet, kan du velge den for å åpne den gjeldende siden fra arbeidsområdet. Deretter kan du vise den filtrerte listen som er knyttet til brikken.
+- Hvis du vil legge til en kobling i et arbeidsområde, filtrerer du først filteret på siden slik at den viser dataene du er interessert i. (Hvis funksjonen **Lagrede visninger** er aktivert, kan du ikke fortsette før du har lagret en visning som har disse betingelsene.) Velg deretter **Legg til i arbeidsområde**. Velg et arbeidsområde, og deretter, i **Presentasjon**-feltet, velger du **Kobling**. Når du har valgt **Konfigurer**, vises en dialogboks der du kan angi etiketten som skal brukes for koblingen. Du kan også angi en etikett for en ny inndeling som inneholder denne koblingen.
 
 Når du har lagt til listen, flisen eller koblingen i et arbeidsområde, kan du åpne arbeidsområdet og endre rekkefølgen på elementene i den etter ønske.
 
 ### <a name="adding-a-summary-from-a-workspace-to-a-dashboard"></a>Legge til et sammendrag fra et arbeidsområde til et instrumentbord
 
-Noen arbeidsområder inneholder fliser med antall (det vil si fliser som inneholder tall), og du vil kanskje at disse flisene skal vises på instrumentbordet også. I et arbeidsområde høyreklikker du en flis for antall, velger **Tilpass**, og deretter velger du **Fest til instrumentbord** i egenskapsvinduet til flisen. Deretter, neste gang du åpner og oppdaterer det valgte instrumentbordet, vil antallet vises under arbeidsområdets navigasjonsflis. Du kan velge det antallet for å gå direkte til dataene det representerer.
+Noen arbeidsområder inneholder fliser med antall (det vil si fliser som inneholder tall), og du vil kanskje at disse flisene skal vises på instrumentbordet også. I et arbeidsområde høyreklikker du en flis for antall, velger **Tilpass**, og deretter velger du **Fest til instrumentbord** i egenskapsvinduet til flisen. Neste gang du åpner og oppdaterer instrumentbordet, vil antallet vises under arbeidsområdets navigasjonsflis. Du kan velge det antallet for å gå direkte til dataene det representerer.
 
 ### <a name="personalizing-your-dashboard"></a>Tilpasse instrumentbordet
 
-Instrumentbordet er ofte den første siden som vises når du åpner appen. Du kan tilpasse instrumentbordet slik at det viser bare arbeidsområdeflisene som du vil se. Du kan også omorganisere flisene slik at de vises i rekkefølgen du vil se dem i, gi nytt navn til arbeidsområdenavigasjonsflisene eller legge til en ny arbeidsområdeflis.
+Instrumentbordet er ofte den første siden som vises når du åpner appen. Den kan tilpasses som en hvilken som helst annen side i systemet, ved å bruke de samme mekanismene som er beskrevet tidligere i dette emnet. 
 
-For å tilpasse instrumentbordet høyreklikker du på en flis og velger **Tilpass** til å åpne flisens egenskapsvindu.
+> [!WARNING]
+> Når du skjuler innhold på instrumentbordet, er det for øyeblikket viktig at du direkte målretter en flis, og ikke rommet rundt den. Hvis du skjuler gruppen rundt en flis, kan det være uventede resultater hvis flere fliser legges til senere, eller hvis systemet byttes til et annet språk.
 
-- Hvis du vil skjule eller gi nytt navn til den valgte flisen, kan du gjøre denne endringen direkte i egenskapsvinduet.
-- For å omorganisere arbeidsområdeflisene velger du **Tilpass denne siden** i egenskapsvinduet for å åpne **Tilpasning**-verktøylinjen. Du kan deretter bruke verktøyet **Flytt** for å omorganisere flisene slik du vil.
-- For å legge til en arbeidsområdeflis velger du **Legg til et arbeidsområde** i egenskapsvinduet. En ny arbeidsområdeflis opprettes nederst på instrumentbordet. Du kan endre navn på denne nye arbeidsområdeflisen slik du vil. Du kan også legge til lister, fliser og koblinger til arbeidsområdet, som beskrevet i [Legge til lister, fliser eller koblinger til arbeidsområder](#adding-a-tile-list-or-link-to-a-workspace)-delen i dette emnet.
+Én unik tilpasningskapasitet som er tilgjengelig på instrumentbordet, er muligheten til å legge til fliser. 
 
+- Hvis funksjonen **Helside-apper** er slått av, legger du til en ny flis ved å høyreklikke et element på instrumentbordet og deretter velge **Legg til et arbeidsområde**. En ny arbeidsområdeflis opprettes nederst på instrumentbordet. Du kan endre navn på denne nye arbeidsområdeflisen slik du vil. Du kan også legge til lister, fliser og koblinger til arbeidsområdet, som beskrevet i [Legge til fliser, lister eller koblinger i et arbeidsområde](personalize-user-experience.md#adding-tiles-lists-and-links-to-a-workspace)-delen i dette emnet.
+- Hvis funksjonen **Helside-apper** er slått på, legger du til en ny flis ved å høyreklikke et element på instrumentbordet og deretter velge **Legg til en app**. I dialogboksen velger du om du vil legge til en flis for et nytt arbeidsområde eller en flis med innhold fra Power Apps eller et nettsted. Deretter følger du trinnene for å konfigurere alternativet du valgte. En ny flis opprettes nederst på instrumentbordet. 
 
 ## <a name="sharing-personalizations"></a>Dele tilpasninger
-Når du tilpasser en side, kan du dele dine personlige tilpasninger med andre brukere ved å eksportere den tilpassede siden. Deretter kan du be andre brukere om å åpne den tilpassede siden og importere den tilpassede filen du opprettet. Du kan også gi dine tilpasninger til en bruker som har administratorrettigheter. Denne brukeren kan deretter ta i bruk tilpasningsfilen din på mange brukere samtidig via **Tilpassing**-administrasjonssiden.
+
+Når du tilpasser en side, kan du dele dine personlige tilpasninger med andre brukere ved å eksportere den tilpassede siden. Deretter kan du be andre brukere om å importere den personlige tilpasningsfilen. Du kan også gi dine tilpasninger til en bruker som har administratorrettigheter. Denne brukeren kan deretter ta i bruk tilpasningsfilen din på mange brukere samtidig via **Tilpassing**-administrasjonssiden.
 
 ## <a name="administration-of-personalizations"></a>Administrasjon av tilpasninger
-**Tilpassing**-siden er den sentrale huben for administrasjon av personlige tilpasninger på organisasjonsnivå. Innholdet og funksjonene på denne siden avhenger av om **Lagrede visninger**-funksjonen er aktivert.  
 
-For kunder som har aktivert **Lagrede visninger**-funksjonen, kan du se "Behandle visninger globalt"-delen i [Lagrede visninger](saved-views.md)-emnet.  
+**Tilpassing**-siden er den sentrale huben for administrasjon av personlige tilpasninger på organisasjonsnivå. Innholdet og funksjonene på denne siden avhenger av om **Lagrede visninger**-funksjonen er aktivert.
+
+For kunder som har aktivert **Lagrede visninger**-funksjonen, kan du se "Behandle visninger globalt"-delen i [Lagrede visninger](saved-views.md)-emnet.
 
 For kunder som ennå ikke har aktivert funksjonen [Lagrede visninger](saved-views.md), har denne siden fire kategorier:
 

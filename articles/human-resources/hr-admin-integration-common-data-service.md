@@ -3,7 +3,7 @@ title: Konfigurer Common Data Service-integrering
 description: Du kan aktivere eller deaktivere integrering mellom Common Data Service og Dynamics 365 Human Resources. Du kan også vise synkroniseringsdetaljer, slette sporingsdata og synkronisere en enhet på nytt for å hjelpe til med å feilsøke dataproblemer mellom de to miljøene.
 author: andreabichsel
 manager: AnnBe
-ms.date: 04/01/2020
+ms.date: 07/27/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 7aad8217d48917d6855046a6810fe994f5564d94
-ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
+ms.openlocfilehash: 8cbead2961c4576a5394080aae2fec109bce3f10
+ms.sourcegitcommit: 4a981ee4be6d7e6c0e55541535d386bce2565cba
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "3431320"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "3621310"
 ---
 # <a name="configure-common-data-service-integration"></a>Konfigurer Common Data Service-integrering
 
@@ -66,6 +66,9 @@ Du vil kanskje deaktivere integrering i disse situasjonene:
 - Hvis du vil deaktivere integrering, setter du alternativet til **Nei**.
 
 [![Aktivere eller deaktivere Common Data Service-integrering](./media/hr-enable-or-disable-common-data-service-integration.png)](./media/hr-enable-or-disable-common-data-service-integration.png)
+
+> [!WARNING]
+> Vi anbefaler sterkt at du deaktiverer Common Data Service-integrering mens du utfører datamigreringsoppgaver. Store dataopplastinger kan påvirke ytelsen betydelig. Eksempel: Opplasting av 2000 arbeidere kan ta flere timer når integrering er aktivert, og mindre enn én time når den er deaktivert. Tallene i dette eksemplet er bare for demonstrasjon. Den nøyaktige tiden det tar å importere poster, kan variere betraktelig, avhengig av mange faktorer.
 
 ## <a name="view-data-integration-details"></a>Vise detaljer om dataintegrering
 

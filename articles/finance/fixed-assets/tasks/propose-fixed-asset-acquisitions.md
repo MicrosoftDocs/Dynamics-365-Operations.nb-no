@@ -3,7 +3,7 @@ title: Foreslå anleggsmiddelanskaffelser
 description: Dette emnet beskriver hvordan du anskaffer et anleggsmiddel ved hjelp av anskaffelsesforslaget i anleggsmiddeljournalen.
 author: saraschi2
 manager: AnnBe
-ms.date: 07/22/2019
+ms.date: 07/27/2020
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,18 +16,18 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: e08177aad2db2438c2d5d4ddd294c1056b88167c
-ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
+ms.openlocfilehash: 0997af638c141661afb677e2407a90a883168aed
+ms.sourcegitcommit: a8201e0b9033c2afc2b1702b0337facaf7ad4b92
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3142737"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "3628891"
 ---
 # <a name="propose-fixed-asset-acquisitions"></a>Foreslå anleggsmiddelanskaffelser
 
 [!include [banner](../../includes/banner.md)]
 
-Dette emnet beskriver hvordan du anskaffer et anleggsmiddel ved hjelp av anskaffelsesforslaget i anleggsmiddeljournalen. Den bruker regnskapsførerrollen og demodataene for den juridiske enheten USMF.
+Dette emnet beskriver hvordan du anskaffer et anleggsmiddel ved hjelp av anskaffelsesforslaget i anleggsmiddeljournalen. Den bruker regnskapsførerrollen og demodataene for den juridiske enheten USMF. Hvis du vil anskaffe et anleggsmiddel via en journal for forslag til anleggsmidler, må du først opprette anleggsmiddelposten og deretter definere anskaffelsesprisen i anleggsmiddelboken.
 
 1. I navigasjonsruten går du til **Moduler > Anleggsmidler > Journaloppføringer > Anleggsmiddeljournal**.
 2. Velg **Ny**.
@@ -43,4 +43,3 @@ Dette emnet beskriver hvordan du anskaffer et anleggsmiddel ved hjelp av anskaff
 - Bare anleggsmidler med anskaffelsesdato og anskaffelsespris som er angitt i tablået, inkluderes i anskaffelsesforslaget.  
 11. Velg kategorien **Tablåer** på siden.
 12. Velg **Poster**.
-

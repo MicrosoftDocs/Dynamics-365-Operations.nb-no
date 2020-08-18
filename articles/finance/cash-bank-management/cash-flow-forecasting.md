@@ -3,7 +3,7 @@ title: Kontantstrømprognose
 description: Dette emnet gir en oversikt over prosessen for kontantstrømprognose. Det forklarer også hvordan kontantstrømprognose er integrert med andre moduler i systemet.
 author: saraschi2
 manager: AnnBe
-ms.date: 01/11/2018
+ms.date: 08/03/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 9795758a60d7913d306488ae6fbbfb7f9865cfc4
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 2ffb8522729049ca98acfb70992738b45c05b552
+ms.sourcegitcommit: cf39369545a94201f367a4efada595a04a319d42
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2188424"
+ms.lasthandoff: 08/03/2020
+ms.locfileid: "3653782"
 ---
 # <a name="cash-flow-forecasting"></a>Kontantstrømprognose
 
@@ -102,7 +102,14 @@ Beregne kontantstrømprognosen ved hjelp av siden **Beregn kontantstrømprognose
 - Hvis du vil fjerne alle kontantstrømprognosetransaksjoner og beregne på nytt, setter du feltet **Beregningsmetode for kontantstrømprognose** til **Total**. Vi anbefaler at du bruker denne fremgangsmåten hvis du ikke har oppdatert kontantstrømprognosene på lenge. 
 - Hvis du vil oppdatere eksisterende kontantstrøminformasjon for bare nye transaksjoner, setter du feltet **Beregningsmetode for kontantstrømprognose** til **Ny**. Siden viser datoen kontantstrømberegningen sist ble kjørt.
 
-Du kan også bruke satsvis behandling for kontantstrømprognosen. For å bidra til å garantere at prognoseanalysen oppdateres jevnlig, konfigurerer du en gjentakende partiprosess for beregning av kontantstrømprognose.
+Du kan også bruke satsvis behandling for kontantstrømprognosen. For å bidra til å sørge for at prognoseanalysen oppdateres jevnlig, konfigurerer du en gjentakende partiprosess for beregning av kontantstrømprognose.
+
+I versjon 10.0.13 ble det utgitt en forbedring av beregningsprosessen som bruker rammeverket for prosessautomatisering til å planlegge beregningsjobben for kontantstrøm. Dette muliggjøres ved hjelp av funksjonen **Automatisering av kontantstrømprognose** i arbeidsområdet **Funksjonsbehandling**. Når den er aktivert, velger du koblingen **Automatisering av kontantstrømprognose** for å vise den nye automatiseringssiden, der du kan planlegge beregningsprosessen for kontantstrøm. Hvis du vil opprette en ny tidsplan for kontantstrømprognose, velger du **Opprett ny prosessautomatisering** og velger **Automatisering av kontantstrømprognose** på rullegardinmenyen **Planltype**. Du må definere en tidsplan for hvert firma du oppdaterer kontantstrømprognosedata for.  Denne siden viser også hvilke automatiseringsjobber for kontantstrømprognose som venter, og når den siste jobben ble fullført.  
+
+> [!NOTE] 
+> Hvis eksisterende satsvise jobber allerede er planlagt for kontantstrømprognoser, vil du få en feilmelding, og du vil ikke kunne aktivere denne funksjonen. Eksisterende satsvise jobber må fjernes før du kan aktivere denne funksjonen. 
+
+Hvis du vil ha mer informasjon, se [Prosessautomatisering](../../fin-ops-core/dev-itpro/sysadmin/process-automation.md).
 
 ### <a name="reporting"></a>Rapportering
 
@@ -128,7 +135,7 @@ Arbeidsområdet **Kontantstrømoversikt – alle firmaer** viser analyse for kon
 
 Arbeidsområdet **Kontantstrømoversikt – gjeldende firma** viser analyse for kontantstrømprognose i firmaets definerte regnskapsvaluta. Regnskapsvalutaen som brukes for analysen, er definert på **Finans**-siden. Arbeidsområdet viser en oversikt over kontantstrømprognose og bankkontosaldoer for gjeldende firma. Et diagram over kontant innflyt og utflyt gir en oversikt over fremtidige kontantbevegelser og -saldoer i regnskapsvalutaen, sammen med detaljert informasjon om de anslåtte transaksjonene. De anslåtte valutasaldoene vises også.
 
-Hvis du vil ha mer informasjon om analyse for kontantstrømprognose, kan du se Power BI-innholdsemnet om kontantstrømoversikt.
+Hvis du vil ha mer informasjon om analyse for kontantstrømprognose, kan du se emnet [Power BI-innholdet Kontantstrømoversikt](https://docs.microsoft.com/dynamics365/finance/cash-bank-management/cash-overview-power-bi-content).
 
 Du kan også vise kontantstrømprognosedata for bestemte kontoer, ordrer og varer på følgende sider:
 

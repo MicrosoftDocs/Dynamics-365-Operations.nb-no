@@ -3,7 +3,7 @@ title: Produkt- og kundesøk på salgssted
 description: Dette emnet gir en oversikt over forbedringer som har blitt gjort for produkt- og kundesøkfunksjonalitet i Dynamics 365 Commerce.
 author: ShalabhjainMSFT
 manager: AnnBe
-ms.date: 06/10/2019
+ms.date: 07/28/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: shajain
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Retail April 2017 update
-ms.openlocfilehash: 2b4c17b41056a35c2d2caaedb4f52998179b3c3e
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 415e8268c504487f2b66afc2ac9a50de1b538911
+ms.sourcegitcommit: a8201e0b9033c2afc2b1702b0337facaf7ad4b92
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3023493"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "3628915"
 ---
 # <a name="product-search-and-customer-search-in-the-point-of-sale-pos"></a>Produkt- og kundesøk på salgssted
 
@@ -95,6 +95,9 @@ I et eksternt kundesøk vises ikke kunde-ID for kunder fra de andre juridiske en
 
 Søk som er basert på telefonnummeret, er forenklet. Disse søkene ignorerer nå spesialtegn, for eksempel mellomrom, bindestreker og parenteser, som kan ha blitt lagt til da kunden ble opprettet. Kasserere trenger derfor ikke tenke på telefonnummerformatet når de søker. De kan også søke etter kunder ved å skrive inn et delvis telefonnummer. Hvis et telefonnummer inneholder spesialtegn, kan det også bli funnet ved å søke etter numrene som vises etter spesialtegnene. For eksempel, hvis en kundes telefonnummer ble oppgitt som **123-456-7890,** kan en kasserere søke etter kunden ved å skrive **123**, **456**, **7890** eller **1234567890**, eller ved å skrive inn de første tallene i telefonnummeret.
 
+> [!NOTE]
+> En kunde kan ha flere telefonnumre og flere e-postadresser. Algoritmen for kundesøk søker også gjennom disse sekundære e-postadressene og telefonnumrene, men siden med kundesøkresultatene viser bare primær e-postadresse og telefonnummer. Dette kan føre til litt forvirring når de returnerte kunderesultatene ikke viser e-postadressen eller telefonnummeret du har søkt etter. I en fremtidig utgivelse har vi tenkt å forbedre skjermen for kundesøkresultater for å vise denne informasjonen.
+
 Det vanlige kundesøket kan være tidkrevende fordi det søker i flere felt. I stedet kan kasserere nå søke i en enkelt kundeegenskap, for eksempel navn, e-postadresse eller telefonnummer. Egenskapene som kundesøkealgoritmen bruker, kalles *kundesøkekriterier*. Systemadministratoren kan lett konfigurere ett eller flere kriterier som snarveier som vises i POS. Ettersom søket er begrenset til ett kriterium, vises bare de relevante søkeresultatene, og ytelsen er mye bedre ut enn ytelsen til et standard kundesøk. Illustrasjonen nedenfor viser kundesøksnarveiene i POS.
 
 ![Snarveier for kundesøk](./media/SearchShortcutsPOS.png "Snarveier for kundesøk")
@@ -114,3 +117,4 @@ Når du skal angi søkekriterier som snarveier, må administratoren åpne **Hand
 I en kommende utgave av Commerce kan forhandlere sette standard kundesøkemodus i Salgssted til **Søk i alle butikker**. Denne konfigurasjonen kan være nyttig i scenarier der kunder som ble opprettet utenfor Salgssted, umiddelbart må søkes etter (for eksempel til og med før datadistribusjonsjobben kjøres). Det nye alternativet **Standard kundesøkemodus** blir tilgjengelig i funksjonalitetsprofilen for salgssted. Sett den til **På** for å angi standard søkemodus til **Søk i alle butikker**. Hvert forsøk på kundesøk foretar deretter et sanntidskall til hovedkvarteret.
 
 For å unngå uventede ytelsesproblemer er denne konfigurasjonen skjult bak et testversjoneringsflagg kalt **CUSTOMERSEARCH_ENABLE_DEFAULTSEARCH_FLIGHTING**. For å vise innstillingen **Standard kundesøkemodus** i brukergrensesnittet må forhandleren opprette en støtteforespørsel for dets testemiljø for brukeraksept (UAT) og produksjonsmiljø. Etter at forespørselen er mottatt, samarbeider teknikerteamet med forhandleren for å sikre at forhandleren foretar testing i ikke-produksjonsmiljøene for å vurdere ytelsen og implementere eventuelle optimaliseringer som trengs.
+

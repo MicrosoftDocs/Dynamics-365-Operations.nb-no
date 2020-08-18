@@ -3,7 +3,7 @@ title: Aktivere Azure Active Directory-godkjenning for POS-pålogging
 description: Dette emnet forklarer hvordan du konfigurerer påloggingsopplevelsen for Microsoft Dynamics 365 Commerce salgssted (POS) slik at den bruker Azure Active Directory-godkjenning.
 author: boycezhu
 manager: annbe
-ms.date: 05/20/2020
+ms.date: 07/27/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -15,12 +15,12 @@ ms.search.region: global
 ms.author: boycezhu
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.10
-ms.openlocfilehash: 4f5a02348e8cef44424ae5d6a49de02d762ba245
-ms.sourcegitcommit: cecd97fd74ff7b31f1a677e8fdf3e233aa28ef5a
+ms.openlocfilehash: ccb2d62b09153d03b064d9661227f3499d67bca2
+ms.sourcegitcommit: dc1dcd0ccc40be5d45701114fa8c952c13488344
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "3410041"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "3641039"
 ---
 # <a name="enable-azure-active-directory-authentication-for-pos-sign-in"></a>Aktivere Azure Active Directory-godkjenning for POS-pålogging
 [!include [banner](includes/banner.md)]
@@ -63,6 +63,9 @@ Følg denne fremgangsmåten for å knytte en Azure AD-konto til en arbeider.
 1. Velg den returnerte Azure AD-kontoen, og velg deretter **OK**.
 
 Feltene **Alias**, **UPN** og **Ekstern underidentifikator** i kategorien **Commerce** på arbeiderens detaljside fylles ut.
+
+> [!NOTE]
+> Når en arbeiderpost er oppdatert, for eksempel hvis en ny Azure AD-konto er tilknyttet, endres et passord eller hvis en adressebok for ansatte blir oppdatert, anbefales det at du kjører **1060** (**Personale**) distribusjonsplan for å synkronisere den nyeste ansattinformasjonen til kanalen. På denne måten kan POS-appen hente de riktige dataene for brukergodkjenning og godkjenningskontroll.
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 

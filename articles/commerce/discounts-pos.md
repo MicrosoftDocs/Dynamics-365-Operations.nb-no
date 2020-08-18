@@ -3,7 +3,7 @@ title: Vise rabatter i POS
 description: I dette emnet finner du informasjon om hvordan Microsoft Dynamics 365 Commerce hjelper selgere med å lære om kampanjer og hvordan de kan brukes for krysssalg- og videresalgsbevegelser.
 author: ShalabhjainMSFT
 manager: AnnBe
-ms.date: 05/05/2020
+ms.date: 07/29/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-Commerce
@@ -19,12 +19,12 @@ ms.search.industry: Retail, Commerce
 ms.author: asharchw
 ms.search.validFrom: 2020-02-28
 ms.dyn365.ops.version: Application update 10.0.10
-ms.openlocfilehash: 0ffa7ca6294c7b523ec743f1cb9bc4aef8ef46a8
-ms.sourcegitcommit: 4d5bcda288341572076364559125c86e2ec05273
+ms.openlocfilehash: 7531e250580019a1e9892d22fc7761770227c61f
+ms.sourcegitcommit: db1a8ffcaebc2896e8f528d7807c54f8597f450e
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "3334714"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "3638188"
 ---
 # <a name="show-discounts-in-pos"></a>Vise rabatter i POS
 
@@ -54,7 +54,7 @@ På siden **Alle rabatter** kan salgsforbindelser også søke i rabatter etter n
 
 Samkjøpsrabatter, for eksempel kvantumsrabatter, samlerabatter og terskelrabatter, er en fin måte å motivere kunder til å kjøpe flere produkter på for å få større rabatter. De bidrar derfor også til å øke størrelsen på kundens handlevogn og detaljomsetning. Disse rabattene kan publiseres på webområder for e-handel, sosiale medier og bannere i butikken.
 
-Selv når alle disse reklamemetodene brukes, kan det hende at kundene går glipp av muligheten til å dra nytte av kampanjer. For å gjøre det lettere for salgsmedarbeidere å finne ut hvilke kampanjer som gjelder for en valgt linje, eller til og med hele handlekurven, kan forhandlerne legge til knappen for "Vis tilgjengelige rabatter"-operasjonen i knappegruppen på siden **Transaksjon**. På denne måten kan en salgsmedarbeider velge en transaksjonslinje, og deretter velge knappen for å vise alle rabattene som er tilgjengelige for den valgte linjen. Salgsmedarbeideren kan også velge en annen kategori for å vise rabatter som gjelder for hele transaksjonen.
+Selv når alle disse reklamemetodene brukes, kan det hende at kundene går glipp av muligheten til å dra nytte av kampanjer. For å gjøre det lettere for salgsmedarbeidere å finne ut hvilke kampanjer som gjelder for en valgt linje, eller til og med hele handlekurven, kan forhandlerne legge til knappen for **"Vis tilgjengelige rabatter"**-operasjonen i knappegruppen på siden **Transaksjon**. Dette gjør at en salgsmedarbeider kan velge en transaksjonslinje, og deretter velge knappen for å vise alle rabattene som er tilgjengelige for den valgte linjen. Salgsmedarbeideren kan også velge en annen kategori for å vise rabatter som gjelder for hele transaksjonen. Det er viktig å legge merke til at **Vis tilgjengelige rabatter** ikke viser rabatter som allerede er brukt på salgslinjen, fordi rabattinformasjonen allerede vises på salgslinjen. Formålet med dette scenariet er å bare vise rabattene som ennå ikke er brukt. Unntaket til dette er rabattene som brukes basert på en kupong som er merket som "Bruk uten en kupongkode". Dette gjør det enkelt for salgsmedarbeideren å fjerne fjerne kupongen de har brukt.
 
 Siden **Alle rabatter** viser bare rabatter som ikke konkurrerer med noen av de brukte rabattene. Denne virkemåten bidrar til å sikre at hvis en salgsmedarbeider gir en kunde informasjon om rabatt, og kunden utfører den nødvendige handlingen (for eksempel kjøper kunden en vare til for å få 10 prosent rabatt), brukes rabatten på transaksjonen. De kupongbaserte rabattene vises bare hvis alternativet **Bruk uten en kupongkode** er aktivert.
 

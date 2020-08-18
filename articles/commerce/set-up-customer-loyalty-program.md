@@ -3,7 +3,7 @@ title: Fordelsoversikt
 description: Dette emnet beskriver fordelsfunksjonene i Dynamics 365 Commerce og de tilhørende oppsettrinnene som hjelper forhandleren med å komme i gang med sine fordelsprogrammer.
 author: scott-tucker
 manager: AnnBe
-ms.date: 03/08/2019
+ms.date: 07/21/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: scotttuc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 337ede63cb9175f2674bae8f2caaac5f1ba5f5cb
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: fd0ceefe1890214ab5fe2f619f6bf8ce718dec11
+ms.sourcegitcommit: 59fb179c770c799918f624cf345848fd4202bbdd
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3023585"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "3613209"
 ---
 # <a name="loyalty-overview"></a>Fordelsoversikt
 
@@ -55,7 +55,7 @@ Tabellen nedenfor beskriver hver komponent og hvor den brukes i fordelsoppsettet
 | Definere rabatter (forutsetning)                  | Definer rabattene du tilbyr fordelskundene. Du kan for eksempel gi 5 prosent avslag på alle klesprodukter. | Rabatter må legges til prisgrupper for å bli inkludert i et fordelsprogram. Prisgrupper tilordnes fordelsprogrammer og lojalitetslag. |
 | Definee prisgrupper (forutsetning)               | Prisgruppene brukes til å opprette og administrere priser og rabatter for produkter. Definere prisgrupper som inneholder rabattene som gjelder for fordelsprogrammene. | Prisgrupper tilordnes fordelsprogrammene og lojalitetslagene. |
 | Definere kanaler (forutsetning)                   | Handelskanaler er butikker som deltar i fordelsprogrammene, for eksempel fysiske butikker, nettbutikker eller telefonsentre. Du må definere kanaler før du kan tilordne fordelsprogrammer til dem. | Du tilordner kanaler til et fordelsprogram hvis kanalen deltar i fordelsprogrammet. |
-| Definere betalingsmåte for fordel (forutsetning) | Du må definere en betalingsmåte før et fordelskort kan brukes i en kasse, og før det kan innløses fordelspoeng som del av et fordelsprogram. Du må også legge til fordelsbetalingsmåten i kanalen før kunder kan løse inn fordelspoengene som betaling for produkter. | Definer en betalingsmåte for fordelstypen, og tilordne deretter fordelsbetalingsmåten til kanalene som deltar i fordelsprogrammet. |
+| Definere betalingsmåte for fordel (forutsetning) | Hvis du vil sikre at fordelspoengene kan løses inn i en hvilken som helst kanal, for eksempel fysiske butikker, nettbutikker eller kallsentre, må du definere området for fordelskortene på siden **Kortnumre**. | Definer en betalingsmåte for fordelstypen, og tilordne deretter fordelsbetalingsmåten til kanalene som deltar i fordelsprogrammet. |
 | Definer datointervaller                            | Datointervaller er en fleksibel måte å angi tidsrommet som gjelder for fordelslag. Bruk datointervaller for å angi hvor lenge en kunde kan bli på et lag eller hvor lang tid en kunde har på å fullføre en aktivitet for å være kvalifisert for et lag. | Datointervaller gjelder bare hvis du bruker lag i fordelsprogrammene. Du velger datointervallet som gjelder for programlag, samt datointervallene som gjelder regler for programlag. |
 | Definere fordelspoent                             | Fordelspoeng er fordelstypene du tilbyr kundene dine. Fordelspoeng kan være innløsbare eller ikke-innløsbare. Fordelspoeng som kan løses inn, kan byttes mot produkter. Fordelspoeng som ikke kan løses inn brukes til sporingsformål eller for å flytte en kunde til det neste laget i et fordelsprogram. | Fordelspoeng er nevnt i lagregler og brukes til å kvalifisere en kunde for et bestemt lag. Det refereres også til fordelspoeng i fordelsplaner i reglene for opptjening og innløsning. I opptjeningsregler angir du fordelene som en kunde kan oppnå for en bestemt aktivitet. I innløsingsregler angir du fordelen som kunden kan løse inn. |
 | Konfigurere fordelsprogrammer                          | Fordelsprogrammer er hovedlojalitetsenheten du tilbyr. Hver fordelsprogram kan også ha tilordnede fordelslag. Rabatter og prisgrupper er tilordnet fordelsprogrammer enten på programnivå eller lagsnivå. | Du oppretter fordelsplaner for fordelsprogrammene. Du tilordner fordelskort til fordelsprogrammene, og fordelskort kan tilordnes til en kunde. Kanaler deltar i fordelsprogrammene som er tilordnet til fordelsplanene. Kunder som har et fordelskort, kan delta i fordelsprogrammer som er tilordnet til kortet. |

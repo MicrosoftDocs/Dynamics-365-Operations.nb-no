@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: 7de7af1084b62a7248eeda54df215e56f2541286
-ms.sourcegitcommit: 68f1485de7d64a6c9eba1088af63bd07992d972d
+ms.openlocfilehash: 3b9a1485d37da614eea2427735e0e1323897682d
+ms.sourcegitcommit: 4a981ee4be6d7e6c0e55541535d386bce2565cba
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "3173206"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "3621334"
 ---
 # <a name="unified-product-experience"></a>Samlet produktopplevelse
 
@@ -86,7 +86,7 @@ I denne modellen representeres produktet av kombinasjonen av to enheter i Common
 Fordi produktet er representert som en SKU, kan begrepene for spesifikke produkter, produktstandarder og produktvarianter registreres i Common Data Service på følgende måte:
 
 - **Produkter med undertypeprodukt** er produkter som defineres av seg selv. Ingen dimensjoner må defineres. Et eksempel er en bestemt bok. For disse produktene opprettes det én post i enheten **Produkt** og én post i enheten **msdyn\_sharedproductdetails**. Ingen produktfamiliepost opprettes.
-- **Produktstandarder** brukes som generelle produkter som inneholder definisjonen og reglene som bestemmer virkemåten i forretningsprosesser. Basert på disse definisjonene kan det genereres spesifikke produkter som er kalles produktvarianter. T-skjorte er for eksempel produktstandarden, og den kan ha Farge og Størrelse som dimensjoner. Varianter kan frigis med ulike kombinasjoner av disse dimensjonene, for eksempel en liten, blå T-skjorte eller en medium grønn T-skjorte. I integrasjonen blir det opprettet én post per variant i produkttabellen. Denne posten inneholder variantspesifikk informasjon, for eksempel de ulike dimensjonene. Den generelle informasjonen for produktet er lagret i enheten **msdyn\_sharedproductdetails**. (Denne generelle informasjonen finnes i produktstandarden.) I tillegg opprettes det en produktfamiliepost per produktstandard. Informasjonen om produktstandarden synkroniseres med Common Data Service så snart den frigitte produktstandarden blir opprettet (men før variantene blir frigitt).
+- **Produktstandarder** brukes som generelle produkter som inneholder definisjonen og reglene som bestemmer virkemåten i forretningsprosesser. Basert på disse definisjonene kan det genereres spesifikke produkter som er kalles produktvarianter. T-skjorte er for eksempel produktstandarden, og den kan ha Farge og Størrelse som dimensjoner. Varianter kan frigis med ulike kombinasjoner av disse dimensjonene, for eksempel en liten, blå T-skjorte eller en medium grønn T-skjorte. I integrasjonen blir det opprettet én post per variant i produkttabellen. Denne posten inneholder variantspesifikk informasjon, for eksempel de ulike dimensjonene. Den generelle informasjonen for produktet er lagret i enheten **msdyn\_sharedproductdetails**. (Denne generelle informasjonen finnes i produktstandarden.) Informasjonen om produktstandarden synkroniseres med Common Data Service så snart den frigitte produktstandarden blir opprettet (men før variantene blir frigitt).
 - **Spesifikke produkter** refererer til alle produkter med undertypeprodukter og alle produktvariantene. 
 
 ![Datamodell for produkter](media/dual-write-product.png)

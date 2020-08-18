@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 0efc2b50b080b769cb103d1519217517b8330668
-ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
+ms.openlocfilehash: 3478c4c2acb134df1c293c1c33f615595aeaadd0
+ms.sourcegitcommit: 3ae002804858f201297a729d03ec7eab8209be34
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "3429664"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "3628435"
 ---
 # <a name="view-team-and-company-calendars"></a>Vise team- og firmakalendere
 
@@ -33,15 +33,13 @@ Du kan vise team- og firmakalendere i Dynamics 365 Human Resources. Teamkalender
 
 ## <a name="view-your-team-calendar-as-an-employee"></a>Vise teamkalenderen som en ansatt
 
-1. I arbeidsområdet **Ansattselvbetjening** velger du **Mitt team**.
-
-2. Velg **Permisjon og fravær**, og velg deretter **Vis teamkalender**.
+1. I arbeidsområdet **Ansattselvbetjening** velger du **Fraværskalender for team** under **Sammendrag**.
 
 ## <a name="view-your-team-calendar-as-a-manager"></a>Vise teamkalenderen som en leder
 
 1. I arbeidsområdet **Ansattselvbetjening** velger du **Mitt team**.
 
-2. Velg **Permisjon og fravær**, og velg deretter **Vis teamkalender**.
+2. Velg **Permisjon og fravær**, og velg deretter **Vis fraværskalender for ledere**.
 
 Ledere kan også få tilgang til teamkalenderen fra **Ventende fritidsforespørsler for teamet mitt**, **Godkjent avspasering** og **Avspaseringsforespørsler**. 
 
