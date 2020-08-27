@@ -1156,7 +1156,7 @@
               href: public-sector/Calculating-Canadian-Harmonized-sales-tax.md
         - name: Finansrapportering
           items:
-            - name: Oversikt over finansrapportering
+            - name: Komme i gang med finansrapportering
               href: general-ledger/financial-reporting-getting-started.md
             - name: Oversikt over finansrapportering
               href: ../fin-ops-core/dev-itpro/analytics/financial-reporting-intro.md?toc=/dynamics365/finance/toc.json
@@ -2600,6 +2600,12 @@
                       href: localizations/rus-counting-deferrals.md
                     - name: Rapportering av periodiseringer
                       href: localizations/rus-reporting-deferrals.md
+                - name: Avgiftsregnskap
+                  items:
+                    - name: Utgifts- og inntektskoder
+                      href: localizations/rus-expense-and-income-codes.md
+                    - name: Avgiftsregistre for aktiva
+                      href: localizations/rus-assets-tax-registers.md
             - name: Saudi-Arabia
               items:
                 - name: Oversikt over Saudi-Arabia
@@ -3100,7 +3106,7 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-sessiontoday.md?toc=/dynamics365/finance/toc.json
                         - name: Today
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-today.md?toc=/dynamics365/finance/toc.json
-                    - name: Liste
+                    - name: List
                       items:
                         - name: Listefunksjoner
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-category-list.md?toc=/dynamics365/finance/toc.json
@@ -3126,6 +3132,8 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-isempty.md?toc=/dynamics365/finance/toc.json
                         - name: List
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-list.md?toc=/dynamics365/finance/toc.json
+                        - name: ListDistinct
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-listdistinct.md?toc=/dynamics365/finance/toc.json
                         - name: ListJoin
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-listjoin.md?toc=/dynamics365/finance/toc.json
                         - name: ListOfFields
@@ -3413,7 +3421,9 @@
             - name: Hurtigstartveiledninger
               items:
                 - name: 'Endre formatet for ER til å generere et egendefinert, elektronisk dokument'
-                  href: ../fin-ops-core/dev-itpro/analytics/er-quick-start2-customize-report.md
+                  href: ../fin-ops-core/dev-itpro/analytics/er-quick-start2-customize-report.md?toc=/dynamics365/finance/toc.json
+                - name: Utforme en ny ER-løsning for å skrive ut en egendefinert rapport
+                  href: ../fin-ops-core/dev-itpro/analytics/er-quick-start1-new-solution.md?toc=/dynamics365/finance/toc.json
             - name: Opplæringer
               items:
                 - name: Finne ut hvordan du bruker datakilder

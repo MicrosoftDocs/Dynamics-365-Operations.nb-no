@@ -805,7 +805,7 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-sessionnow.md?toc=/dynamics365/supply-chain/toc.json
                         - name: SessionToday
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-sessiontoday.md?toc=/dynamics365/supply-chain/toc.json
-                    - name: Liste
+                    - name: List
                       items:
                         - name: Listefunksjoner
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-category-list.md?toc=/dynamics365/supply-chain/toc.json
@@ -2751,6 +2751,8 @@
                       href: inventory/warehouse-template.md
                     - name: Kontrollere arbeid ved hjelp av arbeidsmaler og plasseringsdirektiver
                       href: warehousing/control-warehouse-location-directives.md
+                    - name: Opprette lokasjonsdirektiver
+                      href: warehousing/create-location-directive.md
                     - name: Bølgetrinnkoder
                       href: warehousing/wave-step-codes.md
                     - name: Konfigurere bølgebehandling
@@ -2821,6 +2823,8 @@
               href: ../fin-ops-core/dev-itpro/user-interface/gantt-development-guide.md?toc=/dynamics365/supply-chain/toc.json
             - name: Opprette en ny transportstyringsmotor
               href: transportation/create-new-transportation-management-engine.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Utvide dataenheter for lagerbeholdning
+              href: inventory/extend-on-hand-entities.md
     - name: Utvikling og administrasjon av Finance and Operations-apper
       href: ../fin-ops-core/dev-itpro/index.md
     - name: Dynamics 365 Finance
