@@ -1,7 +1,7 @@
 ---
 title: Konfigurere en betingede beslutninger i en arbeidsflyt
 description: Bruk deretter fremgangsmåten nedenfor for å konfigurere egenskapene for en betinget beslutning.
-author: sericks007
+author: ChrisGarty
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -14,42 +14,42 @@ ms.search.scope: Core, Operations
 ms.custom: 195703
 ms.assetid: cd5554a4-210c-4c20-a7d3-4b1563c2b5df
 ms.search.region: Global
-ms.author: donaldc
+ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 278773a5ad8be35f9b6dcd1ec0d0a35e32222bb1
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 7a953d4e781db42834f0bc8daf80040c39ea5b5c
+ms.sourcegitcommit: e55efd2f62bf60f678108c09ad4701a76b20cc68
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2179312"
+ms.lasthandoff: 08/17/2020
+ms.locfileid: "3698126"
 ---
-# <a name="configure-conditional-decisions-in-a-workflow"></a><span data-ttu-id="319d5-103">Konfigurere en betingede beslutninger i en arbeidsflyt</span><span class="sxs-lookup"><span data-stu-id="319d5-103">Configure conditional decisions in a workflow</span></span>
+# <a name="configure-conditional-decisions-in-a-workflow"></a><span data-ttu-id="b7b7b-103">Konfigurere en betingede beslutninger i en arbeidsflyt</span><span class="sxs-lookup"><span data-stu-id="b7b7b-103">Configure conditional decisions in a workflow</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="319d5-104">Bruk deretter fremgangsmåten nedenfor for å konfigurere egenskapene for en betinget beslutning.</span><span class="sxs-lookup"><span data-stu-id="319d5-104">Use the following procedure to configure the properties of a conditional decision.</span></span>
+<span data-ttu-id="b7b7b-104">Bruk deretter fremgangsmåten nedenfor for å konfigurere egenskapene for en betinget beslutning.</span><span class="sxs-lookup"><span data-stu-id="b7b7b-104">Use the following procedure to configure the properties of a conditional decision.</span></span>
 
-<span data-ttu-id="319d5-105">En betinget beslutning er et punkt der en arbeidsflyt deles opp i to grener.</span><span class="sxs-lookup"><span data-stu-id="319d5-105">A conditional decision is a point at which a workflow divides into two branches.</span></span> <span data-ttu-id="319d5-106">Når du skal konfigurere en betinget beslutning i redigeringsprogrammet for arbeidsflyt, høyreklikker du den betingede beslutningen og klikker deretter **Egenskaper** for å åpne **Egenskaper**-skjemaet.</span><span class="sxs-lookup"><span data-stu-id="319d5-106">To configure a conditional decision, in the workflow editor, right-click the conditional decision, and then click **Properties** to open the **Properties** form.</span></span>
+<span data-ttu-id="b7b7b-105">En betinget beslutning er et punkt der en arbeidsflyt deles opp i to grener.</span><span class="sxs-lookup"><span data-stu-id="b7b7b-105">A conditional decision is a point at which a workflow divides into two branches.</span></span> <span data-ttu-id="b7b7b-106">Når du skal konfigurere en betinget beslutning i redigeringsprogrammet for arbeidsflyt, høyreklikker du den betingede beslutningen og klikker deretter **Egenskaper** for å åpne **Egenskaper**-skjemaet.</span><span class="sxs-lookup"><span data-stu-id="b7b7b-106">To configure a conditional decision, in the workflow editor, right-click the conditional decision, and then click **Properties** to open the **Properties** form.</span></span>
 
-## <a name="name-a-decision"></a><span data-ttu-id="319d5-107">Navngi en beslutning</span><span class="sxs-lookup"><span data-stu-id="319d5-107">Name a decision</span></span>
+## <a name="name-a-decision"></a><span data-ttu-id="b7b7b-107">Navngi en beslutning</span><span class="sxs-lookup"><span data-stu-id="b7b7b-107">Name a decision</span></span>
 
-<span data-ttu-id="319d5-108">Følg denne fremgangsmåten for å angi et navn for en betinget beslutning.</span><span class="sxs-lookup"><span data-stu-id="319d5-108">Follow these steps to enter a name for a conditional decision.</span></span>
+<span data-ttu-id="b7b7b-108">Følg denne fremgangsmåten for å angi et navn for en betinget beslutning.</span><span class="sxs-lookup"><span data-stu-id="b7b7b-108">Follow these steps to enter a name for a conditional decision.</span></span>
 
-1. <span data-ttu-id="319d5-109">Klikk **Grunnleggende innstillinger** i ruten til venstre.</span><span class="sxs-lookup"><span data-stu-id="319d5-109">In the left pane, click **Basic Settings**.</span></span>
-2. <span data-ttu-id="319d5-110">I feltet **Navn** angir du et unikt navn på den betingede beslutningen.</span><span class="sxs-lookup"><span data-stu-id="319d5-110">In the **Name** field, enter a unique name for the conditional decision.</span></span>
+1. <span data-ttu-id="b7b7b-109">Klikk **Grunnleggende innstillinger** i ruten til venstre.</span><span class="sxs-lookup"><span data-stu-id="b7b7b-109">In the left pane, click **Basic Settings**.</span></span>
+2. <span data-ttu-id="b7b7b-110">I feltet **Navn** angir du et unikt navn på den betingede beslutningen.</span><span class="sxs-lookup"><span data-stu-id="b7b7b-110">In the **Name** field, enter a unique name for the conditional decision.</span></span>
 
-## <a name="set-conditions"></a><span data-ttu-id="319d5-111"> Angi betingelser</span><span class="sxs-lookup"><span data-stu-id="319d5-111">Set conditions</span></span>
+## <a name="set-conditions"></a><span data-ttu-id="b7b7b-111"> Angi betingelser</span><span class="sxs-lookup"><span data-stu-id="b7b7b-111">Set conditions</span></span>
 
-<span data-ttu-id="319d5-112">Systemet avgjør hvilken gren som skal brukes ved evaluering av det sendte dokumentet for å fastslå om det oppfyller angitte betingelser.</span><span class="sxs-lookup"><span data-stu-id="319d5-112">The system determines which branch is used by evaluating the submitted document to determine whether it meets specific conditions.</span></span>
+<span data-ttu-id="b7b7b-112">Systemet avgjør hvilken gren som skal brukes ved evaluering av det sendte dokumentet for å fastslå om det oppfyller angitte betingelser.</span><span class="sxs-lookup"><span data-stu-id="b7b7b-112">The system determines which branch is used by evaluating the submitted document to determine whether it meets specific conditions.</span></span>
 
-1. <span data-ttu-id="319d5-113">Klikk **Grunnleggende innstillinger** i ruten til venstre.</span><span class="sxs-lookup"><span data-stu-id="319d5-113">In the left pane, click **Basic Settings**.</span></span>
-2. <span data-ttu-id="319d5-114">Klikk **Legg til betingelse**.</span><span class="sxs-lookup"><span data-stu-id="319d5-114">Click **Add condition**.</span></span>
-3. <span data-ttu-id="319d5-115">Angi en betingelse.</span><span class="sxs-lookup"><span data-stu-id="319d5-115">Enter a condition.</span></span>
-4. <span data-ttu-id="319d5-116">Angi eventuelle ekstra betingelser som kreves.</span><span class="sxs-lookup"><span data-stu-id="319d5-116">Enter additional conditions, if they are required.</span></span>
-5. <span data-ttu-id="319d5-117">Hvis du vil kontrollere om betingelsene du har skrevet inn, er riktig konfigurert, følger du denne fremgangsmåten:</span><span class="sxs-lookup"><span data-stu-id="319d5-117">To verify that the conditions that you entered are configured correctly, complete the following steps:</span></span>
+1. <span data-ttu-id="b7b7b-113">Klikk **Grunnleggende innstillinger** i ruten til venstre.</span><span class="sxs-lookup"><span data-stu-id="b7b7b-113">In the left pane, click **Basic Settings**.</span></span>
+2. <span data-ttu-id="b7b7b-114">Klikk **Legg til betingelse**.</span><span class="sxs-lookup"><span data-stu-id="b7b7b-114">Click **Add condition**.</span></span>
+3. <span data-ttu-id="b7b7b-115">Angi en betingelse.</span><span class="sxs-lookup"><span data-stu-id="b7b7b-115">Enter a condition.</span></span>
+4. <span data-ttu-id="b7b7b-116">Angi eventuelle ekstra betingelser som kreves.</span><span class="sxs-lookup"><span data-stu-id="b7b7b-116">Enter additional conditions, if they are required.</span></span>
+5. <span data-ttu-id="b7b7b-117">Hvis du vil kontrollere om betingelsene du har skrevet inn, er riktig konfigurert, følger du denne fremgangsmåten:</span><span class="sxs-lookup"><span data-stu-id="b7b7b-117">To verify that the conditions that you entered are configured correctly, complete the following steps:</span></span>
 
-    1. <span data-ttu-id="319d5-118">Klikk **Test** for å åpne skjemaet **Test arbeidsflytbetingelse**.</span><span class="sxs-lookup"><span data-stu-id="319d5-118">Click **Test** to open the **Test workflow condition** form.</span></span>
-    2. <span data-ttu-id="319d5-119">Velg en post i **Valider betingelse**-området i skjemaet.</span><span class="sxs-lookup"><span data-stu-id="319d5-119">Select a record in the **Validate condition** area of the form.</span></span>
-    3. <span data-ttu-id="319d5-120">Klikk **Test**.</span><span class="sxs-lookup"><span data-stu-id="319d5-120">Click **Test**.</span></span> <span data-ttu-id="319d5-121">Systemet evaluerer posten for å finne ut om den oppfyller betingelsene du definerte.</span><span class="sxs-lookup"><span data-stu-id="319d5-121">The system evaluates the record to determine whether it meets the conditions that you defined.</span></span>
-    4. <span data-ttu-id="319d5-122">Klikk **OK** eller **Avbryt** for å gå tilbake til **Egenskaper**-skjemaet.</span><span class="sxs-lookup"><span data-stu-id="319d5-122">Click **OK** or **Cancel** to return to the **Properties** form.</span></span>
+    1. <span data-ttu-id="b7b7b-118">Klikk **Test** for å åpne skjemaet **Test arbeidsflytbetingelse**.</span><span class="sxs-lookup"><span data-stu-id="b7b7b-118">Click **Test** to open the **Test workflow condition** form.</span></span>
+    2. <span data-ttu-id="b7b7b-119">Velg en post i **Valider betingelse**-området i skjemaet.</span><span class="sxs-lookup"><span data-stu-id="b7b7b-119">Select a record in the **Validate condition** area of the form.</span></span>
+    3. <span data-ttu-id="b7b7b-120">Klikk **Test**.</span><span class="sxs-lookup"><span data-stu-id="b7b7b-120">Click **Test**.</span></span> <span data-ttu-id="b7b7b-121">Systemet evaluerer posten for å finne ut om den oppfyller betingelsene du definerte.</span><span class="sxs-lookup"><span data-stu-id="b7b7b-121">The system evaluates the record to determine whether it meets the conditions that you defined.</span></span>
+    4. <span data-ttu-id="b7b7b-122">Klikk **OK** eller **Avbryt** for å gå tilbake til **Egenskaper**-skjemaet.</span><span class="sxs-lookup"><span data-stu-id="b7b7b-122">Click **OK** or **Cancel** to return to the **Properties** form.</span></span>
