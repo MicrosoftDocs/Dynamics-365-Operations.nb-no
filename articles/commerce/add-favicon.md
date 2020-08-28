@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: StuHarg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 2d95e8b799c3b89418657342868e0ec7e94a86f9
-ms.sourcegitcommit: ce79fb570e299a26a644e29da7ceb5a57a1374e6
+ms.openlocfilehash: 198927e3391bdb577ebc845ff41d49ca798251ff
+ms.sourcegitcommit: 81f162f2d50557d7afe292c8d326618ba0bc3259
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "3295086"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "3686796"
 ---
 # <a name="add-a-favicon"></a>Legge til et favorittikon
 
@@ -62,7 +62,7 @@ Hvis du vil opprette HTML-koden for favorittikonet, bruker du følgende HTML-str
 
 For å opprette et sidefragment som inneholder en metakode for favorittikon, følger du disse trinnene.
 
-1. Gå til **Sidefragmenter**, og velg **Nytt**.
+1. Gå til **Fragmenter**, og velg **Nytt**.
 1. I dialogboksen **Nytt sidefragment** velger du **Metakoder** som modulen som sidefragmentet er basert på.
 1. Angi et navn på sideoppsettet, og velg deretter **OK**.
 1. Velg det underordnede **Standard metakoder** i fragmenthierarkitreet.

@@ -3,7 +3,7 @@ title: Human Resources-app i Teams
 description: Dette emnet gir en innføring i Microsoft Dynamics 365 Human Resources-appen i Microsoft Teams.
 author: andreabichsel
 manager: AnnBe
-ms.date: 05/18/2020
+ms.date: 08/06/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-05-18
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 36684710e39c27840cc4aaa259a85579104fd8d6
-ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
+ms.openlocfilehash: 4822cc6560926df878a8b4e9f821b331ede27a8c
+ms.sourcegitcommit: 15c68822f4d412bfc609be31b3702f18c81ea0bc
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "3431136"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "3666366"
 ---
 # <a name="human-resources-app-in-teams"></a>Human Resources-app i Teams
 
@@ -43,12 +43,12 @@ Hvis du vil ha informasjon om hvordan du administrerer apptillatelser i Teams, k
 
 ## <a name="known-issues"></a>Kjente problemer
 
-| Avgang | Status |
+| Problem | Status |
 | --- | --- |
+| Horisontal rulling fungerer ikke på Android-telefoner | Horisontal rulling er ikke et problem på iOS-enheter eller skrivebordsenheter. Vi arbeider med en løsning for Android. |
 | Feil: Det oppstod et problem under søk etter et miljø å koble til. | Du kan få denne feilmeldingen selv om du har bekreftet at brukeren har tilgang til ett eller flere HR-miljøer. I tillegg vil du kanskje ikke se alle de forventede miljøene. Til vi har løst problemet, sletter du brukeren og importerer vedkommende på nytt for å løse problemet. |
 | Balansen er feil når du sender inn fridager for en fremtidig dato. | Prognoser er ennå ikke tilgjengelige. Saldoen vises for den gjeldende datoen. |
 | Når antall timer i en eksisterende forespørsel reduseres, vil den **gjenværende saldoen** gå ned i stedet for opp. | Vi vil håndtere dette kjente problemet i fremtiden. Visningen er feil, men de riktige beløpene justeres ved innsending. |
-| To kort for **Kommende fridager** vises for samme dato. | Kortene representerer atskilte innsendinger. Vi vil fortsette å registrere tilbakemeldinger og gjøre justeringer. |
 | Kan ikke avbryte en forespørsel med statusen **Til vurdering**. | Denne funksjonaliteten støttes ikke for øyeblikket og blir lagt til i en fremtidig versjon. |
 | Saldoinformasjon beregnes per i dag. | Systemet viser ikke saldoer i løpet av avsetningsperioden, selv om det er konfigurert i permisjons- og fraværsparametere. |
 

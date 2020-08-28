@@ -1,9 +1,9 @@
 ---
 title: Oversikt over finansrapportering
-description: Dette emnet beskriver hvor du kan få tilgang til økonomisk rapportering i Microsoft Dynamics 365 Finance og hvordan du bruker de økonomiske rapporteringsfunksjoner. Det inneholder en beskrivelse av de økonomiske standardrapportene som tilbys.
+description: Dette emnet beskriver hvor du kan få tilgang til økonomisk rapportering i Microsoft Dynamics 365 Finance og hvordan du bruker de økonomiske rapporteringsfunksjoner.
 author: aprilolson
 manager: AnnBe
-ms.date: 07/23/2020
+ms.date: 08/14/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,14 +18,14 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 86022b662c265b4b98f6df86647f61ea35d31432
-ms.sourcegitcommit: f5200f37c6c436183b4ee5711026ef92a7cb9538
+ms.openlocfilehash: 1944eda5fe933ff9fdf2b9a837eb2336e8b3a0d5
+ms.sourcegitcommit: 1322b94f10470e1728cf330d2d64f1471838c055
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "3618044"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "3696694"
 ---
-# <a name="financial-reporting-overview"></a>Oversikt over finansrapportering
+# <a name="get-started-with-financial-reporting"></a>Komme i gang med Financial Reporting 
 
 [!include [banner](../includes/banner.md)]
 
@@ -88,7 +88,7 @@ Når en bruker er lagt til eller en rolle er endret, skal brukeren kunne få til
 Brukere som genererer en rapport, kan slette sine egne rapporter. Brukere med plikten **Vedlikehold finansrapporteringssikkerhet**, kan slette andres rapporter. 
 
 I versjon 10.0.8 ble konseptet med utløpsdatoer innført. En ny nødvendig funksjon er aktivert på **Alle**-siden i arbeidsområdet for funksjonsbehandling. Funksjonen **Oppbevaringspolicyer for finansrapport** inneholder følgende endringer:
-* Nylig genererte rapporter blir automatisk merket som å ha en utløpsdato på 90 dager fra når de genereres
+* Nylig genererte rapporter blir automatisk merket som å ha en utløpsdato på 90 dager fra når de genereres.
 * Eventuelle eksisterende rapporter fra før funksjonen ble installert vil bli gitt en 90 dagers utløpsperiode. Datoen kan vises som tom for en kort tidsperiode før finansrapporteringstjenesten kjører, en rapport genereres, og tjenesten utfører oppdateringen til eksisterende rapporter med en tom utløpsdato. 
 * Brukere med **Vedlikehold finansrapporteringssikkerhet**, har tilgang til denne funksjonaliteten. Alle brukere i plikten **Vedlikehold finansrapporter** gitt rettigheten **Vedlikehold utløp for finansrapport** vil også ha muligheten til å endre utløpsperioden. For øyeblikket er det to tilgjengelige bevaringsalternativer: 
   * Utløp av 90 dager.
@@ -134,6 +134,12 @@ Når du velger **Financial Reporting**-menyen, vises listen over standard finans
 ## <a name="creating-and-modifying-financial-reports"></a>Opprette og endre finansrapporter
 Du kan opprette en ny rapport fra listen for finansrapporter eller endre en eksisterende rapport. Hvis du har de nødvendige tillatelsene, kan du opprette en ny finansrapport ved å velge **Ny** i handlingsruten. Et rapportutforming-program lastes ned til enheten. Du kan deretter opprette den nye rapporten etter at rapportutformingen starter. Når du har lagret den nye rapporten, vises den i finansrapportlisten. Listen viser bare rapporter som er opprettet for firmaet som du bruker i Dynamics 365 Finance. 
 
+## <a name="reporting-tree-definitions"></a>Rapporteringstredefinisjoner 
+En av komponentene som brukes til å bygge finansrapporter, er en rapporteringstredefinisjon. En rapporteringstredefinisjon bidrar til å definere strukturen og hierarkiet i organisasjonen. Den er en hierarkisk struktur på tvers av dimensjoner som basert på dimensjonsrelasjonene i de økonomiske dataen. Den inneholder informasjon på rapporteringsenhetsnivå og et sammendragsnivå for alle enheter i treet.
+
+Du kan opprette et ubegrenset antall rapporteringstrær for å vise organisasjonens data på forskjellige måter. Hvert rapporteringstre kan inneholde en hvilken som helst kombinasjon av avdelinger og sammendragsenheter, men en rapportdefinisjon kan bare kobles til ett rapporteringstre om gangen. 
+
+
 ## <a name="troubleshooting-issues-opening-report-designer"></a>Feilsøke problemer med å åpne Rapportutforming
 Det finnes noen vanlige problemer som kan føre til problemer når du åpner Rapportutforming. Disse problemene og fremgangsmåten for å løse dem er som følger.
 
@@ -162,3 +168,4 @@ Problem 3: Du kan fortsette etter påloggingssiden for ClickOnce Rapportutformin
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 - [Vis finansrapporter](view-financial-reports.md)
+- [Definisjoner av rapporteringstre i finansrapporter](../../fin-ops-core/dev-itpro/analytics/financial-reporting-tree-definitions.md)

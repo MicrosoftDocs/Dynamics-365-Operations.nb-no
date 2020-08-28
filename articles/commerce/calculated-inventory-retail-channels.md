@@ -3,7 +3,7 @@ title: Beregne beholdningstilgjengelighet for detaljhandelskanaler
 description: Dette emnet beskriver alternativene som er tilgjengelige for å vise lagerbeholdningen for butikken og Internett-kanalene.
 author: hhainesms
 manager: annbe
-ms.date: 05/15/2020
+ms.date: 08/13/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: hhainesms
 ms.search.validFrom: 2020-02-11
 ms.dyn365.ops.version: Release 10.0.10
-ms.openlocfilehash: 51e6633caa49daeedca685f3323eaf4e14e788a5
-ms.sourcegitcommit: e789b881440f5e789f214eeb0ab088995b182c5d
+ms.openlocfilehash: 6d25a426268ebfb6990eb3dadb1ad451f86f59a1
+ms.sourcegitcommit: 65a8681c46a1d99e7ff712094f472d5612455ff0
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "3379242"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "3694928"
 ---
 # <a name="calculate-inventory-availability-for-retail-channels"></a>Beregne beholdningstilgjengelighet for detaljhandelskanaler
 
@@ -66,7 +66,7 @@ Når jobben **Produkttilgjengelighet** er ferdig kjørt, må dataene som ble tat
 1. Gå til **Detaljhandel og handel \> IT for detaljhandel og handel \> Distribusjonsplan**.
 1. Kjør jobben **1130** (**Produkttilgjengelighet**) for å synkronisere dataene fra det statiske utvalget som jobben **Produkttilgjengelighet** opprettet fra Commerce Headquarters til kanaldatabasene dine.
 
-Når beholdningstilgjengelighet forespørres fra fra API-en **GetEstimatedAvailabilty** eller **ProductWarehouseInventoryAvailabilities**, kjøres en beregning for å få best mulig beregning av beholdningen for produktet. Beregningen refererer til en hvilken som helst e-handelskundeordre i kanaldatabasen, men som ikke ble tatt med i dataene for det statiske utvalget som 1130-jobben leverte. Denne logikken utføres ved å spore den siste behandlede lagertransaksjonen fra Commerce Headquarters og sammenligne den med transaksjonene i kanaldatabasen. Det gir et utgangspunkt for logikken for beregning på kanalsiden, slik at de ekstra lagerflyttingene som oppstod for salgstransaksjoner for kundeordre i kanal for e-handel, kan settes sammen til den estimerte lagerverdien som API-en viser.
+Når beholdningstilgjengelighet forespørres fra fra API-en **GetEstimatedAvailability** eller **GetEstimatedProductWarehouseAvailability**, kjøres en beregning for å få best mulig beregning av beholdningen for produktet. Beregningen refererer til en hvilken som helst e-handelskundeordre i kanaldatabasen, men som ikke ble tatt med i dataene for det statiske utvalget som 1130-jobben leverte. Denne logikken utføres ved å spore den siste behandlede lagertransaksjonen fra Commerce Headquarters og sammenligne den med transaksjonene i kanaldatabasen. Det gir et utgangspunkt for logikken for beregning på kanalsiden, slik at de ekstra lagerflyttingene som oppstod for salgstransaksjoner for kundeordre i kanal for e-handel, kan settes sammen til den estimerte lagerverdien som API-en viser.
 
 Logikken for beregning av kanalsiden returnerer en estimert fysisk tilgjengelig verdi og en total tilgjengelig verdi for det forespurte produktet og lageret. Verdiene kan vises på ditt e-handelsområde hvis du vil, eller de kan brukes til å utløse andre forretningslogikker på ditt e-handelsområde. Du kan for eksempel vise en "ikke på lager"-melding i stedet for det faktiske lagerantallet som API-en sendte.
 
@@ -107,6 +107,8 @@ Hvis du vil sikre det best mulige estimatet for lageret, er det viktig at du bru
 - **Poster transaksjonsutdrag satsvis** – Denne jobben er også nødvendig for fordelingsfeedpostering. Den følger etter jobben **Beregn transaksjonsutdrag satsvis**. Denne jobben posterer de beregnede utdragene systematisk, slik at salgsordrer for kontantsalg opprettes i Commerce Headquarters og Commerce Headquarters mer nøyaktig gjenspeiler butikkens lager.
 - **Produkttilgjengelighet** – Denne jobben oppretter et øyeblikksbilde av lageret fra Commerce Headquarters.
 - **1130 (Produkttilgjengelighet)** – Denne jobben finnes på siden **Distribusjonsplaner**, og bør kjøres umiddelbart etter jobben **Produkttilgjengelighet**. Denne jobben transporterer lagerutvalgsdata fra Commerce Headquarters til kanaldatabasene.
+
+Det anbefales at du ikke kjører disse satsvise jobbene for ofte (med bare noen minutters mellomrom). Hyppige kjøringer vil overbelaste Commerce Headquarters (HQ) og kan påvirke ytelsen. Generelt er det god praksis å kjøre produkttilgjengelighet og 1130-jobber på en timesbasis, og planlegge P-jobb, synkronisere ordrer og trickle feed posteringsrelaterte jobber med samme eller høyere frekvens.
 
 > [!NOTE]
 > Av hensyn til ytelsen vil beregningen bruke en hurtigbuffer for å finne ut om det er gått lang nok tid til å rettferdiggjøre kjøring av logikken på nytt, når beregninger av beholdningstilgjengelighet på kanalsiden brukes til å lage en forespørsel om beholdningstilgjengelighet ved hjelp av API-er for e-handel eller den nye beholdningslogikken på POS-kanalsiden. Standard hurtigbuffer er satt til 60 sekunder. Du har for eksempel slått på beregning på kanalsiden for butikken og vist lagerbeholdningen for et produkt på siden oppslags **Beholdningsoppslag**. Hvis én enhet av produktet deretter blir solgt, vil ikke siden **Beholdningsoppslag** vise den reduserte beholdningen før hurtigbufferen er tømt. Når brukere har postert transaksjoner i POS, skal de vente 60 sekunder før de kontrollerer at lagerbeholdningen er redusert.

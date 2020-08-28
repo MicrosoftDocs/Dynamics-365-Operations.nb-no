@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: aae57af04be8bcc6da2e5635b5ffa96d9fac147c
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: e000f2779c50d3216a38d55df659bd683cadf6eb
+ms.sourcegitcommit: ecad92c9cb7e9e57688e678f79f747673c921df5
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3205742"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "3692168"
 ---
 # <a name="control-warehouse-work-by-using-work-templates-and-location-directives"></a>Kontrollere lagerarbeid ved hjelp av arbeidsmaler og lokasjonsdirektiver
 
@@ -34,6 +34,7 @@ Dette emnet beskriver hvordan du bruker arbeidsmaler og lokasjonsdirektiver for 
 Instruksjonene som lagermedarbeidere mottar på en mobil enhet, bestemmes av arbeidsmalene som du definerer i Dynamics 365 Supply Chain Management for å definere de ulike lagerprosesser og -oppgaver. Arbeidsmaler avgjør hvordan arbeidet skal utføres for hver lagerprosess. Ved å koble et lokasjonsdirektiv til arbeidsmaler kan du bidra til å garantere at arbeid skjer i bestemte fysiske områder på lagrene.
 
 ## <a name="work-templates"></a>Arbeidsmaler
+
 Siden **Arbeidsmaler** lar deg definere arbeidsoperasjoner som må utføres på lageret. Vanligvis består lageroperasjoner av to handlinger: en lagerarbeider plukker opp beholdning på en lokasjon og plasserer den plukkede beholdningen på en annen lokasjon. 
 
 Arbeidsmaler består av et hode og tilhørende linjer. Hver arbeidsmal gjelder en bestemt *arbeidsordretype*. Mange arbeidsordretyper assosieres med kildedokumenter, for eksempel bestillinger eller salgsordrer. Imidlertid representerer andre arbeidsordretyper egne lagerprosesser, for eksempel syklustelling. *Arbeidspulje-ID* gir deg muligheten til å organisere arbeidet i grupper. 
@@ -47,118 +48,15 @@ Du kan definere en spørring til å kontrollere når en bestemt arbeidsmal bruke
 Hvis du vil stoppe eller pause en arbeidsprosess, kan du bruke innstillingen **Stopp arbeid** for arbeidslinjen. I så fall vil arbeideren som utfører arbeidet, ikke bli bedt om å utføre neste arbeidslinjetrinn. For å flytte til neste trinn må denne arbeideren eller en annen arbeider velge arbeidet på nytt. Du kan også skille oppgavene i et stykke arbeid ved å bruke en annen *arbeidsklasse-ID* på arbeidsmallinjene.
 
 ## <a name="location-directives"></a>Lokasjonsdirektiver
+
 Lokasjonsdirektiver er regler som bidrar til å identifisere plukke- og plasseringslokasjoner for lagerbevegelse. I en salgsordretransaksjon bestemmer for eksempel et lokasjonsdirektiv hvor varene blir plukket og hvor de plukkede varene skal plasseres. Lokasjonsdirektiver består av et hode og tilknyttede linjer, og du oppretter dem på siden **Lokasjonsdirektiver**. 
 
 I hodet må hvert lokasjonsdirektiv må være knyttet til en *arbeidsordretype* som angir typen lagertransaksjon som direktivet som skal brukes for, for eksempel salgsordrer, etterfylling eller råvareplukking. *Arbeidstypen* angir om lokasjonsdirektivet skal brukes for å plukke eller plassere arbeid eller en annen lagerprosess, for eksempel telle eller lagerstatusendringer. Du må også angi et *område* og et *lager*. En *direktivkode* som du angir i hodet, kan brukes til å koble lokasjonsdirektivet til én eller flere maler for arbeid. 
 
-Som for arbeidsmaler kan du definere en spørring for å bestemme når et bestemt lokasjonsdirektiv skal brukes. Du kan for eksempel angi at når e-handel er opprinnelsen til en salgsordre, må beholdning plukkes fra et dedikert område i lageret. Systemet bruker **Serienummer**-feltet for å bestemme rekkefølgen som de tilgjengelig lokasjonsdirektivene vurderes i. 
+Som for arbeidsmaler kan du definere en spørring for å bestemme når et bestemt lokasjonsdirektiv skal brukes. Du kan for eksempel angi at når e-handel er opprinnelsen til en salgsordre, må beholdning plukkes fra et dedikert område i lageret. Systemet bruker **Serienummer**-feltet for å bestemme rekkefølgen som de tilgjengelig lokasjonsdirektivene vurderes i.
 
-Lokasjonsdirektivlinjene setter tilleggsbegrensninger på bruken av reglene for lokasjonssøk. Du kan angi et minimums- og maksimumsantall som direktivet skal gjelde for, og du kan angi at direktivet skal være for en bestemt lagerenhet. Hvis måleenheten for eksempel er paller, kan varer på paller plasseres på en bestemt lokasjon. Du kan også angi om antallet kan deles på tvers av flere lokasjoner. Som lokasjonsdirektivhodet har hver lokasjonsdirektivlinje et sekvensnummer som bestemmer rekkefølgen som linjene vurderes i. 
+Lokasjonsdirektivlinjene setter tilleggsbegrensninger på bruken av reglene for lokasjonssøk. Du kan angi et minimums- og maksimumsantall som direktivet skal gjelde for, og du kan angi at direktivet skal være for en bestemt lagerenhet. Hvis måleenheten for eksempel er paller, kan varer på paller plasseres på en bestemt lokasjon. Du kan også angi om antallet kan deles på tvers av flere lokasjoner. Som lokasjonsdirektivhodet har hver lokasjonsdirektivlinje et sekvensnummer som bestemmer rekkefølgen som linjene vurderes i.
 
 Lokasjonsdirektiver har et ekstra detaljnivå: *lokasjonsdirektivhandlinger*. Du kan definere flere lokasjonsdirektivhandlinger for hver linje. Et serienummer brukes igjen til å bestemme rekkefølgen som handlingene er vurdert i. På dette nivået kan du definere en spørring for å definere hvordan du finner den beste plasseringen i lageret. Du kan også bruke forhåndsdefinerte innstillinger for **Strategi** for å finne en optimal lokasjon.
 
-## <a name="location-directives-configuration-details"></a>Konfigurasjonsdetaljer for lokasjonsdirektiver 
-
- ### <a name="sequence-number"></a>Serienummer
- 
-Dette tallet indikerer rekkefølgen for behandling av et lokasjonsdirektiv for en valgt ordretype. Det kan endres ved hjelp av **Flytt opp** og **Flytt ned** på menyen.
- 
- ### <a name="work-type"></a>Arbeidstype
- 
-Dette er typen arbeid som skal utføres. Typen arbeid som er tilgjengelig, er basert på typen lagertransaksjon som du har valgt i **Arbeidsordretype**-feltet.
--   **Plasser** - En arbeidstype lik **Plasser** betyr at lokasjonsdirektivet skal finne den mest ideelle lokasjonen å plasere beholdning som kommer inn i systemet, enten fra mottak, produksjon, eller lagerjusteringer. Det kan også brukes til å definere en plassering på en stadielokasjon eller en endelig plassering på en forsendelseslokasjon.
--   **Plukk** - En arbeidstype lik **Plukk** betyr at lageret skal finne den mest ideelle lokasjonen å fysisk reservere beholdning fra (opprette arbeid). Plukkingen kan fullføres (plukklinjen kan lukkes), selv om arbeidet ikke er fullført. Brukeren kan gjøre ferdig fysisk plukking, som er et plukketrinn. Brukeren kan deretter avbryte fra en mobilenhet og fullføre arbeidet senere. Arbeidshodet lukkes imidlertid når den endelige plasseringen er fullført. 
--   **Telling, Justeringer, Tilpasset, Endring av beholdningsstatus, Nummerskiltbygging, utskrift, Statusendring, Pakk til nestede nummerskilt** - Disse kan ikke brukes i oppsettet av lokasjonsdirektivet. Dette er en opplisting, så det er ingen filtrering knyttet til arbeidsordretypen. 
-
-### <a name="directive-code"></a>Direktivkode
-
-Velg direktivkoden som skal knyttes til en arbeidsmal eller etterfyllingsmal. I skjemaet **Direktivkode** kan du opprette nye koder som kan brukes for tilkoblinger mellom en arbeidsmal, en etterfyllingsmal og et lokasjonsdirektiv. Dette kan også brukes til å opprette koblingen mellom en hvilken som helst linje i en arbeidsmal og lokasjonsdirektivet (for eksempel en rampedør eller en stadieplassering).
-
-Legg merke til at hvis koden er angitt, når arbeidet genereres, systemet søker ikke lokasjonsdirektivet etter sekvens, søket blir etter direktivkode. Dette betyr at du kan være mer spesifikk om hvilken lokasjonsmal som skal brukes for et bestemt trinn i en arbeidsmal, for eksempel oppsamling av materialer. 
-
-### <a name="site"></a>Nettsted
-
-Område er et obligatorisk felt fordi lokasjonsdirektivet krever området og lageret som det er gyldig for. 
-
-### <a name="warehouse"></a>Lager
-
-Lager er et obligatorisk felt fordi lokasjonsdirektivet krever området og lageret som det er gyldig for.
-
-### <a name="multiple-sku"></a>Flere SKUer
-
-Dette tillater flere lagerenheter (SKU) på en lokasjon, for eksempel rampedøren. Hvis du velger **Flere SKU-er**, blir plasseringslokasjonen angitt i arbeidet (som er forventet), men den vil bare kunne håndtere flere vareplasseringer (hvis arbeidet inneholder ulike SKU-er som skal plukkes og plasseres, ikke én enkelt SKU-plassering). Hvis du ikke velger **Flere SKU-er**, blir plasseringslokasjonen bare angitt hvis plasseringen har bare én type SKU. Hvis du vil bruke begge handlingene, må du angi to linjer, én med Flere SKU-er aktivert, og én med Flere SKU-er deaktivert. Disse må ha samme struktur og oppsett. For plasseringsoperasjoner må du ha lokasjonsdirektiver som er identiske, selv om du ikke skiller mellom én eller flere SKU-er i arbeids-ID-en. Du må også definere for plukking, hvis du har en ordre med mer enn én vare.
-
-### <a name="sequence-number"></a>Serienummer
-
-Angi rekkefølgen for behandling av lokasjonsdirektivlinjene for den valgte arbeidstypen. Du kan også endre rekkefølgen, om nødvendig, ved hjelp av **Flytt opp** og **Flytt ned**.
-
-### <a name="fromto-quantity"></a>Fra/Til antall
-
-Dette gir mulighet til å angi et antallsområde for når sekvensen i midten av rutenettet skal velges. Du kan angi Fra/Til område under Antall i den aktuelle enheten.
-
-### <a name="unit"></a>Enhet
-
-Du kan angi et minimums- og maksimumsantall som direktivet skal gjelde for, og du kan angi at direktivet skal være for en bestemt lagerenhet. Enhetsfeltet på linjen brukes bare for evaluering av antall.
-
-Ved kontroll av om linjen i lokasjonsdirektivet gjelder, blir dette basert på antallet i den respektive enheten som er angitt på linjen i lokasjonsdirektivet. Hver gang en lokasjonsdirektivlinje nås, prøver systemet å konvertere behovsenheten til en enhet som er angitt på linjen. Hvis måleenhetkonverteringen ikke finnes, vil programmet fortsette til neste linje. 
-
-### <a name="locate-quantity"></a>Plasser antall
-
-Dette alternativet brukes bare til å plassere/finne antall på lageret. Det er bare for arbeidstypen plassering. Dette er de gyldige verdiene:
-
--   **Nummerskiltantall** - Når du vurderer om antallet er innenfor antallsområdene i "Fra" og "Til", kan du bruke antallet på nummerskiltet som mottas.
--   **Antall delt opp i enheter** - Når du vurderer om antallet er innenfor antallsområdene i "Fra" og "Til", kan du bruke antallet delt opp i enheter under den spesifikke transaksjonen.
--   **Restantall** - Når du vurderer om antallet er innenfor antallsområdene i "Fra" og "Til, kan du bruke restantallet som skal mottas på bestillingslinjen som sjekkes inn.
--   **Forventet antall** - Når du vurderer om antallet er innenfor antallsområdene i "Fra" og "Til, kan du bruke det totale tallet på bestillingslinjen, uavhengig av hva som allerede er mottatt.
-
-### <a name="restrict-by-unit"></a>Begrens etter enhet
-
-Dette gjør at en lokasjonsdirektivlinje kan bli gjort spesifikk for en måleenhet eller flere måleenheter. Når du reserverer antallet, hvis du vil reservere paller fra et bestemt sett med lokasjoner, vil sekvensen i midten av rutenett begrense denne bestemte sekvensen til "PL", slik at eventuelt antall som er mindre enn én pall, ikke vil velge rekkefølgen. Velg **Begrens etter enhet** for å definere enhetene. Du kan også begrense linjen til flere enn én enhet. Dette fungerer bare med lokasjonsdirektiver av plukktypen. 
-
-### <a name="round-up-to-unit"></a>Avrund oppover til enhet
-
-Dette feltet fungerer sammen med feltet **Begrens etter enhet**. Hvis lopkasjonsdirektivlinjen **Begrens etter enhet** er satt til "boks", vil valg av **Avrund oppover til enhet** angi at arbeidet som er generert av direktivet for plukking for råvarer, skal avrundes opp til et multiplum av én håndteringsenhet (angitt i **Begrens etter enhet**). Merk at dette fungerer bare for råvareplukking og bare med lokasjonsdirektiver av typen plukk.
-
-### <a name="locate-packing-qty"></a>Plasser pakkeantall
-
-Hvis et pakkeantall er angitt i en salgsordre, overføringsordre eller produksjonsordre, begrenser dette systemet til bare å velge lokasjoner med et pakkeantall på lokasjonen. Dette fungerer bare med lokasjonsdirektiver av plukktypen.
-
-### <a name="allow-split"></a>Tillat deling
-
-Dette angir om et lokasjonsdirektiv har tillatelse til å dele antallet som mottas eller antallet som reserveres, på tvers av flere lagerlokasjoner, eller om hele antallet må være plassert på én enkelt lokasjon eller reservert fra én lokasjon for å kunne opprette arbeid. 
-
-### <a name="sequence-number"></a>Serienummer
-
-Dette tallet er rekkefølgen for behandling av lokasjonsdirektivet for den valgte arbeidstypen. Du kan endre rekkefølgen om nødvendig. Vær forsiktig med å bruke unike rekkefølgenumre, siden behandlingen alltid kjører i rekkefølge. 
-
-### <a name="name"></a>Navn
-
-Angi et navn på lokasjonsdirektivhandlingen. Vær nøyaktig når du angir et navn.
-
-### <a name="fixed-location-usage"></a>Bruk av fast lokasjon 
-
--   **Faste og ikke-faste lokasjoner** - Lokasjonsdirektivet tar alle lokasjoner i betraktning.
--   **Bare faste lokasjoner for produktet** - Lokasjonsdirektivet tar bare faste lokasjoner for produkter i betraktning.
--   **Bare faste lokasjoner for produktvarianten** - Lokasjonsdirektivet tar bare faste lokasjoner for produktvarianter i betraktning.
-
-### <a name="allow-negative-inventory"></a>Tillat negativ beholdning
-
-Velg dette for å tillate negativ beholdning på den angitte lagerlokasjonen i lokasjonsdirektiver. 
-
-### <a name="batch-enabled"></a>Parti aktivert 
-
-Velg dette for å bruke partistrategier for varene som er partiaktivert. Hvis en linje nås der **Parti aktivert** er angitt med en ikke-partivare, fortesetter prosessen til neste handlingslinje. 
-
-### <a name="strategy"></a>Strategi
-
--   **Konsolider** - Denne strategien brukes til å konsolidere varer på en bestemt lokasjon når det allerede finnes like varer. Dette fungerer bare med lokasjonsdirektiver av plasseringstypen. Vanlige oppsett for plassering skal konsolideres på den første handlingslinjen, og på den andre skal det forsøkes å plassere uten konsolidering. Konsolidering av varer gjør senere plukking mer effektivt.
--   **Samsvar pakkeantall** - Denne strategien vil finne en lokasjon som inneholder et nummerskilt som har det nøyaktige antallet som kreves. Den kan ikke brukes med lokasjoner som ikke er styrt med nummerskilt. Denne strategien fungerer bare for lokasjonsdirektiver av plukktypen.
--   **FEFO-partireservering** - Denne strategien brukes når beholdningen plasseres ved hjelp av en utløpsdato for parti og tilordnes partireserveringen. Du kan bare bruke denne strategien for partiaktiverte varer. Dette fungerer bare for lokasjonsdirektiver av plukktypen. 
--   **Avrund oppover til fullstendig nummerskilt** - Denne strategien brukes til å avrunde lagerantallet oppover for å tilsvare nummerskiltantallet som er tilordnet varene som skal plukkes. Du kan bare bruke denne strategien for etterfyllingstypen av lokasjonsdirektiver av typen plukk. 
--   **Tom plassering med innkommende arbeid** - Denne strategien brukes til å finne tomme lokasjoner. Lokasjonen anses som tom hvis den ikke har fysisk beholdning og ikke forventet innkommende arbeid. Denne strategien brukes bare for et lokasjonsdirektiv av plasseringstypen. 
-
-### <a name="example-of-the-use-of-location-directives"></a>Eksempel på bruk av lokasjonsdirektiver
-
-I dette eksemplet vurderes det en bestillingsprosess der lokasjonsdirektivet må finne ledig kapasitet i et lager for lagervarer som nettopp er registrert i mottakssonen. Først må du prøve å finne ledig kapasitet i lageret ved å konsolidere med eksisterende lagerbeholdning. Hvis konsolidering ikke er mulig, må du finne en ledig lokasjon. 
-
-I dette scenariet må du definere to lokasjonsdirektivhandlinger. Den første handlingen i sekvensen må bruke strategien **Konsolider** og andre må bruke strategien **Tom lokasjon uten innkommende arbeid**. Med mindre du definerer en tredje handling for å håndtere et overflytscenario er to resultater mulig når det er ikke mer kapasitet i lageret: arbeid kan opprettes selv om ingen lokasjoner defineres, eller arbeidsopprettingsprosessen kan mislykkes. Resultatet bestemmes av oppsettet på siden **Feil med lokasjonsdirektiv** der du kan bestemme om du vil velge alternativet **Stopp arbeid ved feil med lokasjonsdirektiv** for hver arbeidsordretype.
+Hvis du vil ha mer informasjon om hvordan du oppretter og konfigurerer lokasjonsdirektiver, kan du se [Opprette et lokasjonsdirektiv](create-location-directive.md).

@@ -17,12 +17,12 @@ ms.search.industry: retail
 ms.author: BriShoo
 ms.search.validFrom: 2020-02-13
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: b017b0f91960be1504134f6d46878fce956de203
-ms.sourcegitcommit: 8a1621327568edf49758b70964e0a3e637527e1b
+ms.openlocfilehash: f31f8898358626f2b008826aa69694dc16742aa0
+ms.sourcegitcommit: 59a9e840989bc9f2c7004efa3499b69c09a91b06
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/22/2020
-ms.locfileid: "3497174"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "3677910"
 ---
 # <a name="set-up-a-b2c-tenant-in-commerce"></a>Definere en B2C-leier i Commerce
 
@@ -77,7 +77,7 @@ Når B2C-leieren er opprettet, oppretter du et B2C-program i leieren for å samh
 
 Hvis du vil opprette B2C-programmet, gjør du følgende:
 
-1. Velg **Programmer** i Azure-portalen, og velg deretter **Legg tilAzure AD**.
+1. Velg **Programmer (eldre)** i Azure-portalen, og velg deretter **Legg til**.
 1. Under **Navn** angir du navnet på det ønskede AAD B2C-programmet.
 1. Under **Webapp/Web-API** for **Inkluder webapp / web-API** velger du **Ja**.
 1. For **Tillat implisitt flyt** velger du **Ja** (standardverdien).

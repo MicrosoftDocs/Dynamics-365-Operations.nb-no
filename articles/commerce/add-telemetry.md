@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: StuHarg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 81c36685c1eccceb2f1854fe7c866186120c08a3
-ms.sourcegitcommit: de5af1912201dd70aa85fdcad0b184c42405802e
+ms.openlocfilehash: 4f26ed5b6674566f579e801f4b7be63c2d0dc38d
+ms.sourcegitcommit: 81f162f2d50557d7afe292c8d326618ba0bc3259
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "3154092"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "3686820"
 ---
 # <a name="add-script-code-to-site-pages-to-support-telemetry"></a>Legge til skript kode i områdes ID-er for å støtte telemetri
 
@@ -32,7 +32,7 @@ Dette emnet beskriver hvordan du kan legge til skriptkode på klientsiden på om
 
 ## <a name="overview"></a>Oversikt
 
-Web Analytics er et viktig verktøy når du vil forstå hvordan kundene samhandler med området og tar avgjørelser som vil bidra til å optimalisere opplevelsen for maksimal konvertering. Mange Web Analytics-pakker er tilgjengelige for å hjelpe deg med å oppnå disse målene, for eksempel Google Analytics, Clicky, Moz Analytics og KISSMetrics. De fleste Web Analytics-pakker krever at du legger til skriptkode på klientsiden i **\<hode\>**-elementet på HTMLen for alle sidene på området.
+Web Analytics er et viktig verktøy når du vil forstå hvordan kundene samhandler med området og tar avgjørelser som vil bidra til å optimalisere opplevelsen for maksimal konvertering. Mange Web Analytics-pakker er tilgjengelige for å hjelpe deg med å oppnå disse målene, for eksempel Google Analytics, Clicky, Moz Analytics og KISSMetrics. De fleste Web Analytics-pakker krever at du legger til skriptkode på klientsiden i **\<head\>**-elementet i HTML-koden for alle sidene på området.
 
 > [!NOTE]
 > Instruksjonene i dette emnet gjelder også for annen tilpasset funksjonalitet på klientsiden som Microsoft Dynamics 365 Commerce ikke tilbyr.
@@ -45,7 +45,7 @@ Ved hjelp av et sidefragment kan du bruke innebygd eller ekstern skriptkode på 
 
 Hvis du vil opprette et gjenbrukbart sidefragment for den innebygde skriptkoden i områdebygger, følger du disse trinnene.
 
-1. Gå til **Sidefragmenter**, og velg **Nytt**.
+1. Gå til **Fragmenter**, og velg deretter **Nytt**.
 1. I dialogboksen **Nytt sidefragment** velger du **Innebygd skript**.
 1. Under **Navn på sidefragment** angir du et navn på fragmentet, og deretter velger du **OK**.
 1. Under sidefragmentet du opprettet, velger du modulen **Standard innebygd skript**.
@@ -57,7 +57,7 @@ Hvis du vil opprette et gjenbrukbart sidefragment for den innebygde skriptkoden 
 
 Hvis du vil opprette et gjenbrukbart sidefragment for den eksterne skriptkoden i områdebygger, følger du disse trinnene.
 
-1. Gå til **Sidefragmenter**, og velg **Nytt**.
+1. Gå til **Fragmenter**, og velg deretter **Nytt**.
 1. I dialogboksen **Nytt sidefragment** velger du **Eksternt skript**.
 1. Under **Navn på sidefragment** angir du et navn på fragmentet, og deretter velger du **OK**.
 1. Under sidefragmentet du opprettet, velger du modulen **Standard eksternt skript**.

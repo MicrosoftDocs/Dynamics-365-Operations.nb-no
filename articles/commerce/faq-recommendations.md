@@ -19,12 +19,12 @@ ms.search.industry: Retail, Core, Operations
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: e27e4c4d8bdf614d6f55f44daeac3bc152219004
-ms.sourcegitcommit: fdc5dd9eb784c7d8e75692c8cdba083fe0dd87ce
+ms.openlocfilehash: cf3df2267671b50c20b28dbdb1c6a21696bf2515
+ms.sourcegitcommit: 8905d7a7a010e451c5435086480f66650ec54926
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/26/2020
-ms.locfileid: "3404308"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "3664984"
 ---
 # <a name="product-recommendations-faq"></a>Vanlige spørsmål om produktanbefalinger
 
@@ -89,9 +89,11 @@ Når du har aktivert produktanbefalinger, må du legge til anbefalingspanelet ti
 
 [Velge bort personlige anbefalinger](personalization-gdpr.md)
 
-[Legge til produktanbefalinger i POS](product.md)
+[Aktivere Kjøp lignende utseender-anbefalinger](shop-similar-looks.md)
 
-[Legge til anbefalinger på transaksjonsskjermen](add-recommendations-control-pos-screen.md)
+[Legge til produktanbefalinger på salgssted](product.md)
+
+[Legge til anbefalinger i transaksjonsskjermbildet](add-recommendations-control-pos-screen.md)
 
 [Justere anbefalingsresultater for AI-ML](modify-product-recommendation-results.md)
 

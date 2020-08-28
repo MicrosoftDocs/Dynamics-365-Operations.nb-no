@@ -3,7 +3,7 @@ title: Fjerne en forekomst
 description: Denne artikkelen leder deg gjennom prosessen med å fjerne en testkjøring eller et produksjonsmiljø for Microsoft Dynamics 365 Human Resources.
 author: andreabichsel
 manager: AnnBe
-ms.date: 07/27/2020
+ms.date: 08/07/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: a384801060b2b684f7908daaac2311edd27c773a
-ms.sourcegitcommit: 4a981ee4be6d7e6c0e55541535d386bce2565cba
+ms.openlocfilehash: 0a8eac74f0d840251ab56445dd5af4d19d3c0490
+ms.sourcegitcommit: f759d361fa505323b8b171a98024dca9cc9fa0f0
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "3621386"
+ms.lasthandoff: 08/07/2020
+ms.locfileid: "3668331"
 ---
 # <a name="remove-an-instance"></a>Fjerne en forekomst
 
@@ -70,7 +70,7 @@ Hvis du vil fjerne et Human Resources-miljø fra et eksisterende Power Apps-milj
 4. Logg på LCS ved hjelp av kontoen du brukte til å abonnere på Human Resources. 
 5. Velg Human Resources-prosjektet som inneholder miljøet. 
 6. I LCS prosjektet velger du flisen **Human Resources-appbehandling**. 
-7. Velg forekomsten du vil fjerne, som skal være merket med distribusjonsstatusen **Mislykket**.
+7. Velg forekomsten du vil fjerne, som skal være merket med distribusjonsstatusen **Slettet**.
 8. Velg **Fjern forekomst**, og bekrefte beslutningen. 
 
 ## <a name="recover-a-soft-deleted-environment"></a>Gjenopprette et mykt slettet miljø

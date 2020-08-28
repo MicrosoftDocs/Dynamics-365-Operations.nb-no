@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 59b4dd7a29af739d92a20f6fe55eff9f201fcb6d
-ms.sourcegitcommit: ac47e8679fb104515f7dcca509294264bd05d2b1
+ms.openlocfilehash: cca6913375eec2565852676f3c1da5a67f71e14f
+ms.sourcegitcommit: 8905d7a7a010e451c5435086480f66650ec54926
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "3454562"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "3664912"
 ---
 # <a name="create-recommendations-with-demo-data"></a>Opprette anbefalinger med demonstrasjonsdata
 
@@ -79,9 +79,11 @@ Utvidelsen inneholder en datafil med navnet RecoMockDataset.csv, som lar deg kon
 
 [Velge bort personlige anbefalinger](personalization-gdpr.md)
 
-[Legge til produktanbefalinger i POS](product.md)
+[Aktivere Kjøp lignende utseender-anbefalinger](shop-similar-looks.md)
 
-[Legge til anbefalinger på transaksjonsskjermen](add-recommendations-control-pos-screen.md)
+[Legge til produktanbefalinger på salgssted](product.md)
+
+[Legge til anbefalinger i transaksjonsskjermbildet](add-recommendations-control-pos-screen.md)
 
 [Justere anbefalingsresultater for AI-ML](modify-product-recommendation-results.md)
 

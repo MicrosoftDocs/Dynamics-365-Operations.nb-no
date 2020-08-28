@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 59a2d9712a73c607cf5521f8e79e8e2558854fc4
-ms.sourcegitcommit: e06da171b9cba8163893e30244c52a9ce0901146
+ms.openlocfilehash: 2ee361c2e99b79e503e8d94c12602f9427f1ed5c
+ms.sourcegitcommit: 81f162f2d50557d7afe292c8d326618ba0bc3259
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "3274217"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "3686701"
 ---
 # <a name="add-a-privacy-policy-page"></a>Legge til en side med personvernpolicy
 
@@ -88,7 +88,7 @@ Du kan legge til en kobling til siden for personvernpolicy i et fragment. På de
 
 Hvis du vil legge til en kobling til et bunntekstfragment, følger du disse trinnene.
 
-1. Gå til **Sidefragmenter**, og velg **Ny** for å opprette et sidefragment.
+1. Gå til **Fragmenter**, og velg **Ny** for å opprette et sidefragment.
 1. I dialogboksen **Nytt sidefragment** velger du **Bunntekst**-modulen.
 1. Under **Navn på sidefragment** angir du et navn på fragmentet, og deretter velger du **OK**.
 1. Legg til en **Bunntekstelement**-modul i **Bunntekstkategori**-sporet.
