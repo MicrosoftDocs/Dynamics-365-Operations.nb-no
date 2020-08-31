@@ -3,7 +3,7 @@ title: Fjernede eller avskrevne Platform-funksjoner
 description: Dette emnet beskriver funksjoner som er fjernet eller som er planlagt for fjerning i plattformoppdateringer av Finance and Operations-apper.
 author: sericks007
 manager: AnnBe
-ms.date: 07/20/2020
+ms.date: 08/10/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 393349240d16636d3eec747126cc1ee6f6f9998d
-ms.sourcegitcommit: 27233e0fda61dac541c5210ca8d94ab4ba74966f
+ms.openlocfilehash: 8b26ad668b6cc15d759e10952c042acd5e85bdea
+ms.sourcegitcommit: 4909e55529f03310d24b7e40d52751e24d35259b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/03/2020
-ms.locfileid: "3651672"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "3678228"
 ---
 # <a name="removed-or-deprecated-platform-features"></a>Fjernede eller avskrevne Platform-funksjoner
 
@@ -39,6 +39,16 @@ Detaljert informasjon om objekter i Finance and Operations-apper finnes i [Tekni
 
 > [!NOTE]
 > Versjon 10.0.13 er en forhåndsversjon. Innholdet og funksjonaliteten kan bli endret. Hvis du vil ha mer informasjon om forhåndsversjoner, kan du se [Tilgjengelighet av serviceoppdatering](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/public-preview-releases).
+
+### <a name="custom-code-defined-in-ssrs-report-properties"></a>Egendefinert kode definert i SSRS-rapportegenskaper 
+
+|   |  |
+|------------|--------------------|
+| **Årsak til avskrivning/fjerning** | Vanligvis tilbyr egendefinert kode begrensede fordeler og krever samtidig betydelige ressurser og databehandling for å støtte. Egendefinert kode brukes hovedsakelig av rapportforfattere for å kalle felles metoder fra en egendefinert kodesamling. Skybaserte tjenester støtter imidlertid ikke referanser til egendefinerte samlinger for SSRS-rapporter. |
+| **Erstattet med en annen funksjon?**   | Rapportforfattere kan velge å fortsette å referere til offentlige .NET-API-er for matematiske operasjoner, konverteringsoperasjoner og formateringsoperasjoner fra et hvilket som helst tekstboksuttrykk. Hvis du vil ha mer informasjon, kan du se [Legge til kode i en rapport (SSRS)](https://docs.microsoft.comsql/reporting-services/report-design/add-code-to-a-report-ssrs?view=sql-server-ver15).  |
+| **Berørte produktområder**         | Delsett av apprapportutforminger som er definert i RDL, som inneholder egendefinert kode. |
+| **Distribusjonsalternativ**              | Alle |
+| **Status**                         | Med versjon 10.0.13 vil kompilatoren begynne å sende en advarsel for forekomster der egendefinert kode oppdages i en SSRS-rapportdefinisjon. Du kan løse problemet ved å åpne rapportutformingsdefinisjonen og fjerne alle egendefinerte kodeartefakter. Denne advarselen vil bli erstattet med en kompilatorfeil i en fremtidig oppdatering.   |
 
 ### <a name="upgrade-of-three-jquery-component-libraries"></a>Oppgradering av tre jQuery-komponentbiblioteker 
 

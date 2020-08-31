@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 9780aabbac6d01d41dae526c7c06139eba07de4e
-ms.sourcegitcommit: 074fe7e77feb795148c3daf2e6ccbb8a88679343
+ms.openlocfilehash: 3fe5c1eb5808ef778aeda29442fa884556671296
+ms.sourcegitcommit: 81f162f2d50557d7afe292c8d326618ba0bc3259
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 07/31/2020
-ms.locfileid: "3645345"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "3686676"
 ---
 # <a name="buy-box-module"></a>Kjøpsboksmodul
 
@@ -61,7 +61,7 @@ Temaer kan brukes til å fjerne eller endre rekkefølgen på produktegenskaper o
 
 ## <a name="modules-that-can-be-used-in-a-buy-box-module"></a>Moduler som kan brukes i kjøpsboksmodulen
 
-- **Mediegalleri** – Denne modulen brukes til å vise bilder av et produkt på en produktdetaljside. Hvis du vil ha mer informasjon om denne modulen, kan du se [Mediegallerimodul](mediagallery-module.md).
+- **Mediegalleri** – Denne modulen brukes til å vise bilder av et produkt på en produktdetaljside. Hvis du vil ha mer informasjon om denne modulen, kan du se [Mediegallerimodul](media-gallery-module.md).
 - **Butikkvelger** – Denne modulen viser en liste over nærliggende butikker der en vare er tilgjengelig for henting. Den lar brukere angi en plassering for å finne butikker i nærheten. Hvis du vil ha mer informasjon om denne modulen, kan du se [Butikkvelgermodul](store-selector.md).
 
 ## <a name="buy-box-module-settings"></a>Innstillinger for kjøpsboksmodul
@@ -84,9 +84,9 @@ Modulen kjøpsboks henter produktinformasjon ved hjelp av API-er for Commerce Sc
 
 Hvis du vil legge til en kjøpsboksmodul på en ny side og angi de nødvendige egenskapene, følger du disse trinnene.
 
-1. Gå til **Sidefragmenter**, og velg **Ny** for å opprette et nytt sidefragment.
+1. Gå til **Fragmenter**, og velg **Nytt** for å opprette et nytt sidefragment.
 1. I dialogboksen **Nytt sidefragment** velger du **Kjøpsboks**-modulen.
-1. Under **Navn på sidefragment** angir navnet **Kjøpsboksfragmentet**, og deretter velger du **OK**.
+1. Under **Navn på sidefragment** angir du navnet **Kjøpsboksfragmentet**, og deretter velger du **OK**.
 1. I **Mediegalleri**-sporet i kjøpsboksmodulen velger du ellipseknappen (**…**), og deretter velger du **Legg til modul**.
 1. I dialogboksen **Legg til modul** velger du **Mediegalleri**-modulen, og deretter velger du **OK**.
 1. I **Butikkvelger**-sporet i kjøpsboksmodulen velger du ellipseknappen (**…**), og deretter velger du **Legg til modul**.

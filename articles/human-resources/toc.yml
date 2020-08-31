@@ -5,6 +5,8 @@
       items:
         - name: Nyheter eller endringer i Human Resources
           href: hr-admin-whats-new.md
+        - name: 6. august 2020
+          href: hr-whats-new-2020-08-06.md
         - name: 23. juli 2020
           href: hr-whats-new-2020-07-23.md
         - name: 8. juli 2020
@@ -23,16 +25,16 @@
           href: hr-whats-new-2020-04-13.md
         - name: 3. april 2020
           href: hr-whats-new-2020-04-03.md
-        - name: 24. mars 2020
-          href: hr-whats-new-2020-03-24.md
-        - name: 19. mars 2020
-          href: hr-whats-new-2020-03-19.md
-        - name: 10. mars 2020
-          href: hr-whats-new-2020-03-10.md
-        - name: 3. mars 2020
-          href: hr-whats-new-2020-03-03.md
         - name: Nyhetsarkiver 2020
           items:
+            - name: 24. mars 2020
+              href: hr-whats-new-2020-03-24.md
+            - name: 19. mars 2020
+              href: hr-whats-new-2020-03-19.md
+            - name: 10. mars 2020
+              href: hr-whats-new-2020-03-10.md
+            - name: 3. mars 2020
+              href: hr-whats-new-2020-03-03.md
             - name: 25. februar 2020
               href: hr-whats-new-2020-02-25.md
             - name: 18. februar 2020
@@ -225,8 +227,6 @@
               href: hr-setup-parameters.md
             - name: Konfigurere delte parametere for Human Resources
               href: hr-setup-shared-parameters.md
-            - name: Konfigurere arbeidsflyter for Human Resources
-              href: hr-setup-workflows.md
             - name: Forstå felt for dato og klokkeslett
               href: hr-setup-date-time-fields.md
         - name: Konfigurere organisasjonsinnstillinger
@@ -383,6 +383,8 @@
               href: hr-personnel-actions-faq.md
             - name: Bruke arbeidsflyter til å administrere informasjon om ansatte
               href: hr-workflow-manage-employee-information.md
+            - name: Vise og administrere adresseendringer
+              href: hr-personnel-view-address-changes.md
             - name: Endre rapporteringsrelasjoner for en stilling
               href: hr-personnel-modify-reporting-relationships-position.md
             - name: Angi arbeiderinformasjon
@@ -395,8 +397,6 @@
               href: hr-personnel-loan-items.md
             - name: Utvikle en rekkefølgeplan
               href: hr-personnel-develop-succession-plan.md
-            - name: Angi prosjekttimeregistreringer
-              href: hr-personnel-enter-project-timesheets.md
             - name: Masseansettelsesprosjekter
               href: hr-personnel-mass-hire-projects.md
             - name: Opprette et masseansettelsesprosjekt

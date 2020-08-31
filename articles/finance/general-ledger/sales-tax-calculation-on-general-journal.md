@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: vstehman
 ms.search.validFrom: 2019-08-14
 ms.dyn365.ops.version: 10.0.6
-ms.openlocfilehash: dd1df355d39065d6959915cc916987d3c58b15a6
-ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
+ms.openlocfilehash: 93c9f2bebd038723d50e64bdaa0e0992c003f88d
+ms.sourcegitcommit: cec5de2dcfc7210a86a220e308f80ab204f12383
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "2570200"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "3665848"
 ---
 # <a name="sales-tax-calculation-on-general-journal-lines"></a>Mva-beregning på generelle journallinjer
 [!include [banner](../includes/banner.md)]
@@ -64,23 +64,6 @@ Diagrammet nedenfor illustrerer regelen grafisk.
 
 Hvis et bilag har journallinje der kontotypen er **Leverandør**, vil alle journallinjene i bilaget bruke samme mva-retning. Punktene nedenfor viser de mulige avgiftsretningene for leverandørkontoer. 
 
-•   Hvis mva-koden er avgiftsfritak, er mva-retningen avgiftsfritt kjøp.
-
-•   Hvis mva-koden er Mva-transaksjoner innenfor EU, er mva-retningen innkommende merverdiavgift.
-
-•   Hvis mva-koden er snudd avregning, er mva-retningen innkommende merverdiavgift.
-
-
-I andre tilfeller er mva-retningen Utgående merverdiavgift.
-
-Diagrammet nedenfor illustrerer regelen grafisk.
-
-![Muligheter for avgiftsretning for leverandørkontoer](media/Sales-Tax-Direction-Vendor.jpg)
-
-### <a name="account-type-is-customer"></a>Kontotype er Kunde
-
-Hvis et bilag har journallinje der kontotypen er **Kunde**, vil alle journallinjene i bilaget bruke samme mva-retning. Punktene nedenfor viser de mulige avgiftsretningene for kundekontoer.
-
 •   Hvis mva-koden er use tax, er mva-retningen use tax.
 
 •   Hvis mva-koden er avgiftsfritak, er mva-retningen avgiftsfritt kjøp.
@@ -90,6 +73,22 @@ Hvis et bilag har journallinje der kontotypen er **Kunde**, vil alle journallinj
 •   Hvis mva-koden er snudd avregning, er mva-retningen Utgående merverdiavgift.
 
 I andre tilfeller er mva-retningen innkommende merverdiavgift.
+
+Diagrammet nedenfor illustrerer regelen grafisk.
+
+![Muligheter for avgiftsretning for leverandørkontoer](media/Sales-Tax-Direction-Vendor.jpg)
+
+### <a name="account-type-is-customer"></a>Kontotype er Kunde
+
+Hvis et bilag har journallinje der kontotypen er **Kunde**, vil alle journallinjene i bilaget bruke samme mva-retning. Punktene nedenfor viser de mulige avgiftsretningene for kundekontoer.
+
+•   Hvis mva-koden er avgiftsfritak, er mva-retningen avgiftsfritt kjøp.
+
+•   Hvis mva-koden er Mva-transaksjoner innenfor EU, er mva-retningen innkommende merverdiavgift.
+
+•   Hvis mva-koden er snudd avregning, er mva-retningen innkommende merverdiavgift.
+
+I andre tilfeller er mva-retningen Utgående merverdiavgift.
 
 Diagrammet nedenfor illustrerer regelen grafisk.
 

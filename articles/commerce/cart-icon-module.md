@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 6771a84118504cd5c8e44302380eb970e4658902
-ms.sourcegitcommit: b52477b7d0d52102a7ca2fb95f4ebfa30ecd9f54
+ms.openlocfilehash: 137debe3f4cad3948d20b2902ea80e66fa74ffd4
+ms.sourcegitcommit: ae0843763a8b6b232bb71db326fab28605ac6c53
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "3411095"
+ms.lasthandoff: 08/05/2020
+ms.locfileid: "3661153"
 ---
 # <a name="cart-icon-module"></a>Handlekurvikonmodul
 
@@ -42,22 +42,22 @@ Bildet nedenfor viser et eksempel på en handlekurv-ikonmodul som viser en minih
 
 - **Vis minikurv** – Hvis Sann aktiverer denne egenskapen at det vises et handlekurvsammendrag (minikurv) når pekeren holdes over handlekurvikonet. Denne funksjonaliteten støttes bare for skrivebordsvisningsporter.
 
-
 ## <a name="add-a-cart-icon-module-to-a-page"></a>Legge til en handlekurvikonmodul på en side
 
 Hvis du vil legge til en handlekurvikonmodul, kan du se [Hodemodul](author-header-module.md).
 
-
 ## <a name="additional-resources"></a>Tilleggsressurser
-
-[Kjøpsboksmodul](add-buy-box.md)
 
 [Handlekurvmodul](add-cart-module.md)
 
 [Kassemodul](add-checkout-module.md)
 
-[Ordrebekreftelsesmodul](order-confirmation-module.md)
+[Betalingsmodul](payment-module.md)
 
-[Topptekstmodul](author-header-module.md)
+[Leveringsadressemodul](ship-address-module.md)
 
-[Bunntekstmodul](author-footer-module.md)
+[Modul for leveringsalternativer](delivery-options-module.md)
+
+[Ordredetaljermodul](order-confirmation-module.md)
+
+[Gavekortmodul](add-giftcard.md)

@@ -17,12 +17,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: a8428963e105e422dcd048863c17df0926a409ac
-ms.sourcegitcommit: b52477b7d0d52102a7ca2fb95f4ebfa30ecd9f54
+ms.openlocfilehash: 41f808d671bf5e7425390484ea30470e044899d8
+ms.sourcegitcommit: ae0843763a8b6b232bb71db326fab28605ac6c53
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "3411118"
+ms.lasthandoff: 08/05/2020
+ms.locfileid: "3661248"
 ---
 # <a name="gift-card-module"></a>Gavekortmodul
 
@@ -63,8 +63,18 @@ Hvis du vil ha informasjon om hvordan du legger til en gavekortmodul på en kass
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 
-[Startpakke, oversikt](starter-kit-overview.md)
+[Handlekurvmodul](add-cart-module.md)
+
+[Handlekurvikonmodul](cart-icon-module.md)
 
 [Kassemodul](add-checkout-module.md)
+
+[Betalingsmodul](payment-module.md)
+
+[Leveringsadressemodul](ship-address-module.md)
+
+[Modul for leveringsalternativer](delivery-options-module.md)
+
+[Ordredetaljermodul](order-confirmation-module.md)
 
 [Støtte for eksterne gavekort](./dev-itpro/gift-card.md)

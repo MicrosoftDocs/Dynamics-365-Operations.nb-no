@@ -19,12 +19,12 @@ ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 87c031c045249dbcde274d7c741beb72c3216aa8
-ms.sourcegitcommit: fdc5dd9eb784c7d8e75692c8cdba083fe0dd87ce
+ms.openlocfilehash: a51c8c0e2743b67df9d66a8c45ab7a69597f4002
+ms.sourcegitcommit: 8905d7a7a010e451c5435086480f66650ec54926
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/26/2020
-ms.locfileid: "3404285"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "3664936"
 ---
 # <a name="opt-out-of-personalized-recommendations"></a>Velge bort personlige produktanbefalinger
 
@@ -91,9 +91,11 @@ Følgende eksempel viser hvordan en forhandler kan utføre denne oppgaven.
 
 [Aktivere personlige anbefalinger](personalized-recommendations.md)
 
-[Legge til produktanbefalinger i POS](product.md)
+[Aktivere Kjøp lignende utseender-anbefalinger](shop-similar-looks.md)
 
-[Legge til anbefalinger på transaksjonsskjermen](add-recommendations-control-pos-screen.md)
+[Legge til produktanbefalinger på salgssted](product.md)
+
+[Legge til anbefalinger i transaksjonsskjermbildet](add-recommendations-control-pos-screen.md)
 
 [Justere anbefalingsresultater for AI-ML](modify-product-recommendation-results.md)
 

@@ -3,7 +3,7 @@ title: Standard ordreinnstillinger for dimensjoner og produktvarianter
 description: Standard ordreinnstillinger definerer området og lageret der varene hentes fra eller lagres, minimumsantall, maksimumsantall, flere og standardantall som skal brukes for handel, eller lagerstyring, leveringstider, stoppflagget og metoden for ordrebekreftelsen.
 author: t-benebo
 manager: tfehr
-ms.date: 07/27/2020
+ms.date: 07/31/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,13 +18,13 @@ ms.search.region: global
 ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2016-11-30
-ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 13df8eb7873495847d994922be1acd77e57f8f23
-ms.sourcegitcommit: dfe5916d982eaa879e2afef7440c30b1d0f4380a
+ms.dyn365.ops.version: 10.0.13
+ms.openlocfilehash: 0654ba019b71dc952ea52f206bc60d8fa05dd4ff
+ms.sourcegitcommit: f9917706d45693e8d3f9f6224dca9e601db44bae
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "3637762"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "3657346"
 ---
 # <a name="default-order-settings-for-dimensions-and-product-variants"></a>Standard ordreinnstillinger for dimensjoner og produktvarianter
 
@@ -32,7 +32,16 @@ ms.locfileid: "3637762"
 
 Standard ordreinnstillinger i Dynamics 365 Supply Chain Management definerer området og lageret der varene hentes fra eller lagres, minimumsantall, maksimumsantall, flere og standardantall som skal brukes for handel, eller lagerstyring, leveringstider, stoppflagget og metoden for ordrebekreftelsen. Standard ordreinnstillinger som brukes ved oppretting av bestillinger, salgsordrer, overføringsordrer, lagerjournaler og av hovedplanlegging for generering av planlagte ordrer. Standard ordreinnstillinger kan være varespesifikke, områdespesifikke, spesifikke for produktvariant eller spesifikke for produktdimensjon.
 
-Du kan definere standard ordreinnstillinger på siden **Standard ordreinnstillinger**. Du åpner denne siden ved å gå til **Behandling av produktinformasjon** &gt; **Produkter** &gt; **Frigitte produkter** &gt; **Velg et frigitt produkt** &gt; under **Plan**. Du kan også gå til **Administrer beholdning** &gt; **Ordreinnstillinger** &gt; **Standard ordreinnstillinger**.
+Følg denne fremgangsmåten for å definere standard ordreinnstillinger for et produkt.
+
+1. Gå til **Administrering av produktinformasjon** &gt; **Produkter** &gt; **Frigitte produkter**.
+1. Velg det relevante produktet i rutenettet.
+1. I handlingsruten følger du ett av disse trinnene for å åpne siden **Standard ordreinnstillinger** for det valgte produktet:
+
+    - På **Plan**-fanen, i gruppen **Ordreinnstillinger**, velger du **Standard ordreinnstillinger**.
+    - På fanen **Administrer lager**, i gruppen **Ordreinnstillinger**, velger du **Standard ordreinnstillinger**.
+
+1. Konfigurer innstillingene slik det er beskrevet i resten av dette emnet.
 
 ## <a name="default-order-settings"></a>Standard ordreinnstillinger
 
@@ -74,7 +83,7 @@ Standard lagerordreinnstillinger gjelder også ved opprettelse av:
 
 ## <a name="full-definition-of-a-released-product"></a>Fullstendig definisjon av et frigitt produkt
 
-Når du oppretter en transaksjon, må du angi hele definisjonen av et frigitt produkt på linjen i bestilling for Supply Chain Management for å forsøke å identifisere standard ordreinnstillinger. Den fullstendige definisjonen for frigitt produkt betyr at varenummeret og alle de aktive produktdimensjonene, for eksempel konfigurasjon, størrelse, stil og farge, er angitt for transaksjonen. Hvis du for eksempel manuelt oppretter en bestillingslinje for en frigitt produktvariant, må du angi alle de obligatoriske dimensjonene før område, lager, antall og leveringstid vil vises som standard på ordrelinjen. 
+Når du oppretter en transaksjon, må du angi hele definisjonen av et frigitt produkt på linjen, slik at Supply Chain Management kan forsøke å identifisere standard ordreinnstillinger. I den fullstendige definisjonen for et frigitt produkt er varenummeret og alle de aktive produktdimensjonene, for eksempel konfigurasjon, størrelse, stil, versjon og farge, angitt for transaksjonen. Hvis du for eksempel manuelt oppretter en bestillingslinje for en frigitt produktvariant, må du angi alle de obligatoriske dimensjonene før område, lager, antall og leveringstid vil vises som standard på ordrelinjen. 
 
 Ikke alle standardparametere for ordreinnstillinger brukes når du oppretter ordre- eller journallinjer. Antall og leveringstider vil bare vises som standard når det passer. Når du for eksempel teller en journallinje, vises bare området og lageret som standard når linjen opprettes. Av denne grunn utfrøes ingen tilbakestilling til standard antall eller kontroller på flere og minimum ved oppretting av linjen eller postering av journalen. 
 
@@ -96,7 +105,7 @@ Du kan definere generelle ordreinnstillinger eller områdespesifikke ordreinnsti
 
 ### <a name="site-specific-order-settings"></a>Områdespesifikke ordreinnstillinger
 
-Hvis du vil opprette områdespesifikke ordreinnstillinger, velger du **Ny**. I **Detaljvisning** fyller du ut området i **Innstillinger som kan brukes for** &gt; **Område**-feltet. I **Rutenettvisning** fyller du ut området i **Område**-kolonnen. Den nye regelen får automatisk en ny rangeringsverdi som er høyere enn null. Du kan opprette så mange områdespesifikke regler som du har behov for, og du kan tilordne alle de områdespesifikke reglene til samme rangering, for å angi at de er like viktig. 
+Hvis du vil opprette områdespesifikke ordreinnstillinger, velger du **Ny**. I **Detaljvisning** angir du området i **Område**-feltet i delen **Innstillinger som kan brukes for**. I **Rutenettvisning** angir du området i **Område**-kolonnen. Den nye regelen tilordnes automatisk en ny rangeringsverdi som er over 0 (null). Du kan opprette så mange områdespesifikke regler du vil. Hvis du vil angi at de er like viktige, kan du tilordne den samme rangeringsverdien til alle områdespesifikke regler.
 
 Hvis du er i **Detaljvisning**, får du ikke en oversikt over reglene som er opprettet for varen. Bruk knappen **Vis/skjul liste** for å se informasjon om oversikt. Når det opprettes en ordrelinje av hvilken som helst type og det ikke er angitt område for den, søker Supply Chain Management etter en regel uten angitt område. Dette bidrar til å bestemme et standardområde på ordrelinjen. Dette området brukes deretter til å søke etter en områdespesifikk regel der et standardlager kan ha blitt angitt. Dette lageret brukes for ordrelinjen.
 
@@ -111,41 +120,41 @@ Tenk deg følgende eksempelprodukt:
 | **Produktnavn**                                    | Fotoelektrisk sensor                    |
 | **Varenummer**                                     | XW56                                    |
 | **Konfigurasjon** (brukes til å angi type lys) | C1-Synlig rødt lys, C2-infrarødt lys |
-| **Stil** (brukes til å angi den tekniske revisjonen)  | R1, R2, R3                              |
+| **Versjon** | V1, V2, V3                              |
 
 I dette eksemplet antas det at produktet er kjøpt og ikke produsert. Anta også at den vanligste konfigurasjonen er C1, slik at den er kortere leveringstider. 
 
 Opprett følgende standard ordreinnstillinger for å angi dette scenariet.
 
-| Rangering | Område | Konfigurasjon | Stil | Kjøp – Overstyr standardinnstillinger | Leveringstid for innkjøp | Kjøp – Stoppet | Salg – Overstyr standardinnstillinger | Salg – Stoppet |
+| Rangering | Site | Konfigurasjon | Versjon | Kjøp – Overstyr standardinnstillinger | Leveringstid for innkjøp | Kjøp – Stoppet | Salg – Overstyr standardinnstillinger | Salg – Stoppet |
 |------|------|---------------|-------|--------------------------------------|--------------------|--------------------|-----------------------------------|-----------------|
 | 10   |      | C1            |       | Ja                                  | 2                  |                    |                                   |                 |
 | 0    |      |               |       |                                      | 5                  |                    |                                   |                 |
 
-Når en bestillingslinje eller en planlagt bestilling opprettes for XW56, konfigurasjon C1, uavhengig av revisjon eller området som linjen er plassert i, vil leveringstiden være 2. Anta at alle revisjoner i tillegg til R3 stoppes.
+Når en bestillingslinje eller en planlagt bestilling opprettes for vare XW56, konfigurasjon C1, uavhengig av versjonen eller området der linjen er plassert, vil leveringstiden være 2. Anta at alle versjoner i tillegg til V3 stoppes.
 
 Du kan opprette reglene nedenfor for standard ordreinnstillinger.
 
-| Rangering | Område | Konfigurasjon | Stil | Kjøp – Overstyr standardinnstillinger | Leveringstid for innkjøp | Kjøp – Stoppet | Salg – Overstyr standardinnstillinger | Salg – Stoppet |
+| Rangering | Site | Konfigurasjon | Versjon | Kjøp – Overstyr standardinnstillinger | Leveringstid for innkjøp | Kjøp – Stoppet | Salg – Overstyr standardinnstillinger | Salg – Stoppet |
 |------|------|---------------|-------|--------------------------------------|--------------------|--------------------|-----------------------------------|-----------------|
-| 20   |      |               | R2    | Ja                                  |                    | Ja                | Ja                               | Ja             |
-| 20   |      |               | R1    | Ja                                  |                    | Ja                | Ja                               | Ja             |
+| 20   |      |               | V2    | Ja                                  |                    | Ja                | Ja                               | Ja             |
+| 20   |      |               | V1    | Ja                                  |                    | Ja                | Ja                               | Ja             |
 | 10   |      | C1            |       | Ja                                  | 2                  |                    |                                   |                 |
 | 0    |      |               |       |                                      | 5                  |                    |                                   |                 |
 
-De to reglene for å stoppe de gamle revisjonene har samme rangering, noe som betyr at de er like viktig. Begge har en høyere rangering enn regelen for konfigurasjonen C1, noe som betyr at de har prioritet over regelen for konfigurasjonen C1. 
+De to reglene for å stoppe de gamle versjonene har samme rangering. De er derfor like viktige. Siden begge disse reglene har en høyere rangering enn regelen for konfigurasjonen C1, har de prioritet over regelen for konfigurasjonen C1. 
 
-Dette eksemplet beskriver behovet for rangeringen. Hvis det opprettes en bestilling for konfigurasjonen C1 og revisjonen R2, ville de to reglene som er definert for R2 og C1, være tvetydige hvis det manglet rangering. Supply Chain Management løser denne tvetydigheten ved å søke gjennom reglene i synkende rekkefølge og bruke den første gjeldende regelen. Når det opprettes bestillingslinjer i gjeldende eksempel for konfigurasjon C1 og revisjon R2, får brukeren en advarsel om at varen er sperret og at dette er forårsaket av revisjonsverdien. Hvis regelen for konfigurasjonen hadde en høyere rang enn tilsvarende for revisjon, ville oppretting av en bestillingslinje for konfigurasjon C1 og revisjon R2 ha blitt fullført, og ingen melding om sperret vare ville blitt gitt til brukeren. 
+Dette eksemplet beskriver behovet for rangeringen. Hvis ragneringen ikke brukes, når det opprettes en bestilling for konfigurasjonen C1 og versjonen V2, er de to reglene som er definert for V2 og C1, tvetydige. Supply Chain Management løser denne tvetydigheten ved å søke gjennom reglene i synkende rekkefølge og bruke den første gjeldende regelen. Når det opprettes bestillingslinjer i gjeldende eksempel for konfigurasjon C1 og versjon V2, får brukeren en advarsel om at varen er sperret og at dette er forårsaket av versjonsverdien. Hvis regelen for konfigurasjonen hadde en høyere rang enn regelen for versjonen, ville en bestillingslinje blitt opprettet for konfigurasjon C1 og versjon V2, og ingen melding om sperret vare ville blitt gitt til brukeren. 
 
 Tenk deg reglene nedenfor for standard ordreinnstillinger.
 
-| Rangering | Område | Konfigurasjon | Stil | Standardområde | Standardlager | Kjøp – Overstyr standard lagringsdimensjoner | Innkjøpslager |
+| Rangering | Site | Konfigurasjon | Versjon | Standardområde | Standardlager | Kjøp – Overstyr standard lagringsdimensjoner | Innkjøpslager |
 |------|------|---------------|-------|--------------|-------------------|------------------------------------------------|--------------------|
 | 20   | 2    |               |       |              |                   | Ja                                            | 22                 |
-| 10   |      | C1            |  R2   |  2           |  21               |                                                |                    |
+| 10   |      | C1            |  V2   |  2           |  21               |                                                |                    |
 | 0    |      |               |       | 1            | 11                |                                                |                    |
 
-Systemet går gjennom settet med regler to ganger for å finne området og lageret. Når det opprettes bestillingslinjer for konfigurasjon C1, stil R2, bestemmes området basert på regelen med rangering 10. Deretter søker systemet etter en regel for område 2 for å finne et lager. Regel 20 blir funnet, og fordi den har en høyere rangering, vil lageret på bestillingslinjen være 22 og ikke 21.
+Systemet går gjennom settet med regler to ganger for å finne området og lageret. Når det opprettes bestillingslinjer for konfigurasjon C1, versjon V2, bestemmes området basert på regelen med rangering 10. Deretter søker systemet etter en regel for område 2 for å finne et lager. Regel 20 blir funnet, og fordi den har en høyere rangering, vil lageret på bestillingslinjen være 22, ikke 21.
 
 Som en generell veiledning vil spesifikke regler og regler for dimensjonene som er viktigere enn andre dimensjoner, få høyere rangering, mens mer generelle regler får lavere rangeringer. 
 
@@ -159,14 +168,14 @@ Det kan opprettes mange regler for et frigitt produkt. Hvis du vil ha mer inform
 
 Hvis regelsystemet for standard ordreinnstillinger er for tungvint, er det mulig å definere standard ordreinnstillinger for hver produktvariant. Eksemplet nedenfor viser hvordan det vil søke etter produktet og sakene som er beskrevet ovenfor.
 
-| Rangering | Område | Konfigurasjon | Stil | Kjøp – Overstyr standardinnstillinger | Leveringstid for innkjøp | Kjøp – Stoppet | Salg – Overstyr standardinnstillinger | Salg – Stoppet |
+| Rangering | Site | Konfigurasjon | Versjon | Kjøp – Overstyr standardinnstillinger | Leveringstid for innkjøp | Kjøp – Stoppet | Salg – Overstyr standardinnstillinger | Salg – Stoppet |
 |------|------|---------------|-------|--------------------------------------|--------------------|--------------------|-----------------------------------|-----------------|
-| 10   |      | C2            | R3    | Ja                                  | 5                  |                    |                                   |                 |
-| 10   |      | C2            | R2    | Ja                                  | 5                  | Ja                | Ja                               | Ja             |
-| 10   |      | C2            | R1    | Ja                                  | 5                  | Ja                | Ja                               | Ja             |
-| 10   |      | C1            | R3    | Ja                                  | 2                  |                    |                                   |                 |
-| 10   |      | C1            | R2    | Ja                                  | 2                  | Ja                | Ja                               | Ja             |
-| 10   |      | C1            | R1    | Ja                                  | 2                  | Ja                | Ja                               | Ja             |
+| 10   |      | C2            | V3    | Ja                                  | 5                  |                    |                                   |                 |
+| 10   |      | C2            | V2    | Ja                                  | 5                  | Ja                | Ja                               | Ja             |
+| 10   |      | C2            | V1    | Ja                                  | 5                  | Ja                | Ja                               | Ja             |
+| 10   |      | C1            | V3    | Ja                                  | 2                  |                    |                                   |                 |
+| 10   |      | C1            | V2    | Ja                                  | 2                  | Ja                | Ja                               | Ja             |
+| 10   |      | C1            | V1    | Ja                                  | 2                  | Ja                | Ja                               | Ja             |
 | 0    |      |               |       |                                      | 5                  |                    |                                   |                 |
 
 Rangeringen i dette tilfellet har ingen betydning, slik at du kan velge å skjule den. Denne løsningen introduserer potensielt et vedlikeholdsproblem. Du bør imidlertid vurdere å bruke dette oppsettet Hvis du vil integrere med PLM-systemer (Product Lifecycle Management).

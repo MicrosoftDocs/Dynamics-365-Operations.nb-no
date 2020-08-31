@@ -3,7 +3,7 @@ title: Kundeordrer i Modern POS (MPOS)
 description: Dette emnet gir informasjon om kundeordrer i Moderne salgssted (MPOS). Kundeordrer er også kjent som spesialbestillinger. Emnet inneholder en beskrivelse av relaterte parametere og flyter for transaksjonen.
 author: josaw1
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 08/17/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: anpurush
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: b8ea8339c2ad25ceed2415eb5ccf5e2048c612fa
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 87d1217204e0c5cb22f567793b043bf399ca5685
+ms.sourcegitcommit: b07434f2bd6db67d8dd712f096329acc902751ae
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3023506"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "3699375"
 ---
 # <a name="customer-orders-in-modern-pos-mpos"></a>Kundeordrer i Modern POS (MPOS)
 
@@ -53,6 +53,8 @@ Her er noen av parameterne som kan angis på siden **Handelsparametere** for å 
 
     - Gebyrer brukes på nivået til salgsordrehodet, og når et antall av en produktserie returneres, kan ikke maksimal refundering av forsendelseskostnader som er tillatt for produktene og antallet, bestemmes på en måte som passer for alle kunder.
     - Forsendelseskostnader påløpes for hver forekomst av levering. Hvis en kunde returnerer varer flere ganger, og forhandlerens policy angir at forhandleren skal betale returgebyrene, blir returgebyrene større enn de faktiske forsendelseskostnadene.
+    
+- **Virkemåte for avgiftsberegning** - **Beregn på nytt** er standard og tradisjonell innstilling for hvordan avgifter beregnes på nytt når ordren importeres til back office. **Ikke beregn på nytt** deaktiverer mva-omberegning til eller med mindre ordren redigeres i Back Office, når omberegning utløses. 
 
 ## <a name="transaction-flow-for-customer-orders"></a>Transaksjonsflyt for kundeordrer
 

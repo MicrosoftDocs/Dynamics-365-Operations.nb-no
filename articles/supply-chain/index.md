@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: kamaybac
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: ab0c66ad0536b20b1ab23e9498ca3cb56b98ccf5
-ms.sourcegitcommit: a7a7303004620d2e9cef0642b16d89163911dbb4
+ms.openlocfilehash: d601ca9b28bb720fd05e25ef66df7be12a08f7e0
+ms.sourcegitcommit: e2a953bea055611023c00a55c00391d14daaca25
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "3530265"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "3696136"
 ---
 # <a name="supply-chain-management-home-page"></a>Startside for Supply Chain Management
 
@@ -89,8 +89,6 @@ Følgende registreringer for tekniske konferanser beskriver funksjonalitet i for
   - [Produktkonfigurator i Microsoft Dynamics AX](https://youtu.be/zotrj3SbCl4)
 - **Lagerstyring:**
   - [Få det beste ut av ditt lagerstyringssystem](https://www.youtube.com/watch?v=--_didmZKHo&t=10s)
-  - [Avansert R3-lagerstyring – innkommende behandling og min./maks. etterfylling](https://www.youtube.com/watch?v=z5_V5Eqlf5M&t=48s)
-  - [Avansert R3-lagerstyring – en dag i løpet av utgående behandling og etterfylling av behov](https://youtu.be/Og0gLlVp7jA)
   - [Etiketter i den nye lagerstyringen for Microsoft Dynamics AX 2012 R3](https://youtu.be/5w1MngVchBA)
   - [Dynamics AX 2012 R3: Avansert lagerstyring – en dag i løpet av prosessproduksjonen](https://www.youtube.com/embed/QUxXUrN-7n4)
 - **Videoer for produksjonskontroll:**

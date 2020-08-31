@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anupamar-ms
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: a5f7ad7d9c5ff63c3c3a8fe38275eec0d138891d
-ms.sourcegitcommit: b52477b7d0d52102a7ca2fb95f4ebfa30ecd9f54
+ms.openlocfilehash: e7dde3ba1ad375b309ae66cc6d31ccad85615e45
+ms.sourcegitcommit: 81f162f2d50557d7afe292c8d326618ba0bc3259
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "3411226"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "3686628"
 ---
 # <a name="header-module"></a>Topptekstmodul
 
@@ -62,7 +62,7 @@ Følgende moduler kan brukes i en topptekstmodul:
 
 Hvis du vil opprette en topptekstmodul, følger du trinnene nedenfor.
 
-1. Gå til **Sidefragmenter**, og velg **Ny** for å opprette et nytt sidefragment.
+1. Gå til **Fragmenter**, og velg **Nytt** for å opprette et nytt sidefragment.
 1. I dialogboksen **Nytt sidefragment** velger du **Beholder**-modulen, skriver inn et navn på sidefragmentet og velger **OK**.
 1. Velg **Standardbeholder**-sporet. Deretter går du til egenskapsfanen på høyre side og angir egenskapen for **Bredde** til **Fyll beholder**.
 1. I **Standard beholder**-sporet velger du ellipsen (**…**), og deretter velger du **Legg til modul**.
