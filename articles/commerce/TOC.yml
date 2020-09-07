@@ -68,6 +68,8 @@
                   href: ../fin-ops-core/dev-itpro/deployment/deploy-retail-onprem.md?toc=/dynamics365/commerce/toc.json
                 - name: Kjøpe Finance + Operations (on-premises)
                   href: ../fin-ops-core/fin-ops/get-started/purchase-on-premises.md?toc=/dynamics365/commerce/toc.json
+                - name: Implementeringsveiledning for Commerce Data Exchange
+                  href: dev-itpro/implementation-considerations-cdx.md
                 - name: Finance and Operations-apper styrt av 21Vianet i Kina
                   href: ../fin-ops-core/dev-itpro/deployment/china-local-deployment.md?toc=/dynamics365/commerce/toc.json
                 - name: Finance and Operations-apper i Frankrike
@@ -178,7 +180,7 @@
                   href: ../fin-ops-core/fin-ops/get-started/grid-capabilities.md?toc=/dynamics365/commerce/toc.json
                 - name: Opprette og arbeide med egendefinerte felt
                   href: ../fin-ops-core/fin-ops/get-started/user-defined-fields.md?toc=/dynamics365/commerce/toc.json
-                - name: Bygge inn PowerApps-apper
+                - name: Bygg inn Microsoft Power Apps
                   href: ../fin-ops-core/fin-ops/get-started/embed-power-apps.md?toc=/dynamics365/commerce/toc.json
                 - name: Finne informasjon ved hjelp av oppslag
                   href: ../fin-ops-core/fin-ops/get-started/use-lookups-to-find-information.md?toc=/dynamics365/commerce/toc.json
@@ -202,8 +204,14 @@
                   href: dev-itpro/retail-server-architecture.md
                 - name: Velg topologi i butikk
                   href: dev-itpro/retail-in-store-topology.md
-                - name: Kanalkommunikasjon for Commerce Data Exchange og Commerce
-                  href: dev-itpro/define-retail-channel-communications-cdx.md
+                - name: Commerce Data Exchange
+                  items:
+                    - name: Anbefalte fremgangsmåter for Commerce Data Exchange
+                      href: dev-itpro/CDX-Best-Practices.md
+                    - name: Kanalkommunikasjon for Commerce Data Exchange og handel
+                      href: dev-itpro/define-retail-channel-communications-cdx.md
+                    - name: Feilsøke Commerce Data Exchange
+                      href: dev-itpro/CDX-Troubleshooting.md
                 - name: Arkitektur for Modern POS
                   href: dev-itpro/retail-modern-pos-architecture.md
                 - name: Publiseringsarkitektur for nettbutikk
@@ -516,6 +524,8 @@
                       href: duplicate-payment-protection.md
                     - name: Oversikt over betalinger for omnikanal
                       href: omni-channel-payments.md
+                    - name: Commerce-ordrebetalinger for omnikanal
+                      href: dev-itpro/commerce-payments.md
                     - name: Vanlige spørsmål om betalinger
                       href: dev-itpro/payments-retail.md
                 - name: Behandle Bing-kart for organisasjonen
@@ -758,8 +768,6 @@
               href: disable-consistency-check-rule.md
             - name: Redigere og overvåke detaljhandelstransaksjoner
               href: edit-audit-retail-transactions.md
-            - name: 'Opprette, beregne og postere utdrag for en detaljhandel'
-              href: tasks/create-calculate-post-statement-retail-store.md
             - name: Fordele feedbasert ordreoppretting for detaljhandelstransaksjoner
               href: trickle-feed.md
             - name: 'Opprette, beregne og postere utdrag for en detaljhandel'
@@ -1130,13 +1138,13 @@
               href: ../fin-ops-core/dev-itpro/analytics/bi-reporting-home-page.md?toc=/dynamics365/commerce/toc.json
             - name: Informasjonstilgang og rapportering
               href: ../fin-ops-core/dev-itpro/analytics/information-access-reporting.md?toc=/dynamics365/commerce/toc.json
-            - name: Tilpasningsalternativer med PowerBI.com
+            - name: Tilpassingsalternativer med Power BI
               items:
-                - name: Tilgjengelige funksjoner via PowerBI.com-integrering
+                - name: Tilgjengelige funksjoner via integrering med Power BI
                   href: ../fin-ops-core/dev-itpro/analytics/power-bi-integration.md?toc=/dynamics365/commerce/toc.json
-                - name: Fest PowerBI.com-innhold
+                - name: Feste Power BI-innhold
                   href: ../fin-ops-core/dev-itpro/analytics/pin-power-bi-reports.md?toc=/dynamics365/commerce/toc.json
-                - name: Velge analytiske arbeidsområder fra PowerBI.com
+                - name: Velge analytiske arbeidsområder fra Power BI
                   href: ../fin-ops-core/dev-itpro/analytics/select-analytical-workspace.md?toc=/dynamics365/commerce/toc.json
             - name: Power BI-innhold
               items:
@@ -1188,7 +1196,7 @@
                   href: ../fin-ops-core/dev-itpro/analytics/power-bi-integration-entity-store.md?toc=/dynamics365/commerce/toc.json
                 - name: Løse problemer etter vedlikehold av enhetslager
                   href: ../fin-ops-core/dev-itpro/analytics/entity-store-maintenance.md
-                - name: Konfigurere PowerBI.com-integrering
+                - name: Konfigurere integreringen med Power BI
                   href: ../fin-ops-core/dev-itpro/analytics/configure-power-bi-integration.md?toc=/dynamics365/commerce/toc.json
                 - name: Vise din egen database
                   href: ../fin-ops-core/dev-itpro/analytics/export-entities-to-your-own-database.md?toc=/dynamics365/commerce/toc.json
@@ -1344,7 +1352,7 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-stringjoin.md?toc=/dynamics365/commerce/toc.json
                         - name: Where
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-where.md?toc=/dynamics365/commerce/toc.json
-                    - name: Logical
+                    - name: Logiske
                       items:
                         - name: Logiske funksjoner
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-category-logical.md?toc=/dynamics365/commerce/toc.json
@@ -2048,7 +2056,7 @@
                   items:
                     - name: Pakke konfigurasjoner og distribuere dem til et elektronisk miljø
                       href: e-commerce-extensibility/package-deploy.md
-                    - name: Oppdateringer for SDK og kjernebibliotek
+                    - name: Oppdateringer for SDK og startpakken for butikk
                       href: e-commerce-extensibility/sdk-updates.md
             - name: SDK for Retail
               items:
@@ -2186,6 +2194,8 @@
                   href: 'https://download.microsoft.com/download/e/2/7/e2735c65-1e66-4b8d-8a3c-e6ef3a319137/The Guide to Implementing Payment Connector and Payment Device_update.pdf'
                 - name: Distribuere betalingskoblinger
                   href: dev-itpro/deploy-payment-connector.md
+                - name: Trinnvis lagring av Back-Office-fakturering
+                  href: dev-itpro/incremental-capture.md
                 - name: 'Opprette egendefinerte, lokaliserte feilmeldinger for utvidelser av betalingsterminal'
                   href: dev-itpro/payment-custom-error-messages.md
                 - name: Opprette Windows-installasjonsprogrammer for betalingskoblinger
