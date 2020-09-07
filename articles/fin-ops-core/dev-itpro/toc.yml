@@ -130,6 +130,8 @@
                       items:
                         - name: Startside for dobbel skriving
                           href: data-entities/dual-write/dual-write-home-page.md
+                        - name: Nyheter eller endringer i dobbel skriving
+                          href: data-entities/dual-write/whats-new-dual-write.md
                         - name: Oversikt over dobbel skriving
                           href: data-entities/dual-write/dual-write-overview.md
                         - name: Oppsett for dobbel skriving
@@ -1472,6 +1474,8 @@
                   href: sysadmin/extensible-data-security-policies.md
                 - name: Opprette en sikkerhetspolicy
                   href: sysadmin/create-simple-security-policy.md
+            - name: Overholde lisenskravene for brukere
+              href: sysadmin/stay-compliant-user-license-requirement.md
             - name: Prosessautomatisering
               href: sysadmin/process-automation.md
             - name: Satsvis behandling
