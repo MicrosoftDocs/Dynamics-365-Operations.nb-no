@@ -3,7 +3,7 @@ title: Konfigurere permisjons- og fraværsparametere
 description: Du kan definere personalparametere for permisjon og fravær i Dynamics 365 Human Resources.
 author: andreabichsel
 manager: AnnBe
-ms.date: 04/01/2020
+ms.date: 08/20/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 5e4d3b3e4b373631bed5e2d7e3c3a4e14f0c5c98
-ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
+ms.openlocfilehash: 196c3901b5bc19f73b882bac7d3361e5bcc37e07
+ms.sourcegitcommit: 2bcacef1e010c312f019dbf9740ce87d627848a7
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "3428950"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "3712382"
 ---
 # <a name="configure-leave-and-absence-parameters"></a>Konfigurere permisjons- og fraværsparametere
 
@@ -46,8 +46,6 @@ Før du definerer permisjons- og fraværsplaner i Dynamics 365 Human Resources, 
 
 5. I kategorien **Ansattselvbetjening** angir du om ledere kan angi permisjons- og fraværsforespørsler på vegne av de ansatte.
 
-6. I kategorien **Permisjon og fravær** kontrollerer du innstillingene og endrer etter behov.
-
 7. Velg **Lagre**.
 
 ## <a name="view-and-change-leave-and-absence-parameters"></a>Vise og endre permisjons- og fraværsparametere
@@ -63,6 +61,10 @@ Før du definerer permisjons- og fraværsplaner i Dynamics 365 Human Resources, 
     - Velg **Gyldighetsdato for måneder med jobberfaring** for å angi når avsetningsratene trer i kraft for permisjonsplaner som bruker måneder med jobberfaring.
 
     - Velg **Saldoberegning** for å vise saldoer per dag eller per avsetningsperiode. Hvis du velger **Saldo per i dag**, viser saldoen summen av alle avsetningene, justeringene og forespørslene per i dag. Hvis du velger **Saldo per avsetningsperiode**, viser saldoen summen av alle avsetningene, justeringene og forespørslene fra avsetningsperioden som er definert av frekvensen i permisjonsplanen. 
+
+    - Angi starttidspunktet for den satsvise jobben for utløpet av overføring.  
+    
+    - Velg **Ja** for **Tillat ansatte å kjøpe permisjon** og **Tillat ansatte å selge permisjon**. Hvis du velger **Ja** for disse alternativene, kan du opprette policyer for kjøp og salg av permisjoner og gjøre det mulig for ansatte å sende inn og selge permisjonsforespørsler.
 
 ## <a name="configure-calendar-parameters"></a>Konfigurere kalenderparametere
 

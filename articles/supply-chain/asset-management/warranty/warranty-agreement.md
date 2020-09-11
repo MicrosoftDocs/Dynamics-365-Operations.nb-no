@@ -3,7 +3,7 @@ title: Garantiavtaler
 description: Dette emnet beskriver garantiavtaler i Aktivastyring.
 author: josaw1
 manager: tfehr
-ms.date: 08/30/2019
+ms.date: 08/24/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-08-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: e9cbb9068101f3004179f338da18af0369190807
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: f049165fd12dfae672293e0c30ddb186ad3ed12c
+ms.sourcegitcommit: 18c5ef10e311f3dd2dbf45c6439ae6beff921af8
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3215384"
+ms.lasthandoff: 08/24/2020
+ms.locfileid: "3719244"
 ---
 # <a name="warranty-agreements"></a>Garantiavtaler
 
@@ -42,16 +42,16 @@ En garantiavtale kan inkludere flere avtalelinjer for å dekke garantien for arb
 
 1. Velg **Aktivastyring** \> **Oppsett** \> **Aktiva** \> **Garanti**.
 2. Velg **Ny** for å opprette et produkt.
-3. Angi en garanti-ID i **Garanti**-feltet.
+3. Angi en garanti-ID i **Garanti**-feltet. 
 4. Angi en beskrivelse i **Navn**-feltet.
 
     I hurtigfanen **Detaljer** viser **Aktiva**-feltet antall aktive anleggsmidler som bruker garantiavtalen.
 
-5. I hurtigfanene **Timegaranti** og **Varegaranti** følger du denne fremgangsmåten for å legge til linjer som skal inkluderes i en garantiavtale som gjelder for timer eller varer:
+5. På hurtigfanen **Garantilinjer** følger du denne fremgangsmåten for å legge til linjer som skal tas med i en garantiavtale:
 
     1. Velg **Legg til linje** for å legge til en ny betingelse i garantien. Et sekvensielt linjenummer angis automatisk i feltet **Linje**.
     2. Velg type garantiperiode i **Periode**-feltet.
     3. Angi et tall i **Intervall**-feltet. Dette feltet definerer antall perioder som garantien skal være gyldig for.
     4. I **Prosent**-feltet angir du dekningsprosenten for garantilinjen. Prosentsatsen viser hvor mye som dekkes av firmaet.
 
-![Garantisiden](media/01-warranty.png)
+![Garantiside](media/01-warranty.png)

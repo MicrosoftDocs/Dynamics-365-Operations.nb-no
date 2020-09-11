@@ -3,7 +3,7 @@ title: Kopier en forekomst
 description: Du kan bruke Microsoft Dynamics Lifecycle Services (LCS) til å kopiere en Microsoft Dynamics 365 Human Resources-database til et sandkassemiljø.
 author: andreabichsel
 manager: AnnBe
-ms.date: 02/03/2020
+ms.date: 07/22/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: b14baf49517f5d606038af20366944788b22eba2
-ms.sourcegitcommit: 1ec931f8fe86bde27f6def36ea214a2a05fb22f6
+ms.openlocfilehash: 6b52b696d323df6bafead2418ae322d1a9cdf64a
+ms.sourcegitcommit: ec4df354602c20f48f8581bfe5be0c04c66d2927
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 07/13/2020
-ms.locfileid: "3554331"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "3706234"
 ---
 # <a name="copy-an-instance"></a>Kopier en forekomst
 
 Du kan bruke Microsoft Dynamics Lifecycle Services (LCS) til å kopiere en Microsoft Dynamics 365 Human Resources-database til et sandkassemiljø. Hvis du har et annet sandkassemiljø, kan du også kopiere databasen fra dette miljøet til et målrettet sandkassemiljø.
 
-Hvis du vil kopiere en forekomst, må du sikre følgende:
+Hvis du vil kopiere en forekomst, må du tenke på følgende tips:
 
 - Forekomsten av Human Resources som du vil overskrive, må være et sandkassemiljø.
 
@@ -37,7 +37,9 @@ Hvis du vil kopiere en forekomst, må du sikre følgende:
 
 - Du må være administrator i målmiljøet, slik at du kan logge på det etter at du har kopiert forekomsten.
 
-- Når du kopierer Human Resources-databasen, kopierer du ikke elementene (apper eller data) som finnes i et Microsoft PowerApps-miljø. Hvis du vil ha informasjon om hvordan du kopierer elementer i et PowerApps-miljø, kan du se [Kopiere et miljø](https://docs.microsoft.com/power-platform/admin/copy-environment). PowerApps-miljøet som du vil overskrive, må være et sandkassemiljø. Du må være en global leieradministrator for å endre et PowerApps-produksjonsmiljø til et sandkassemiljø. Hvis du vil ha mer informasjon om hvordan du endrer et PowerApps-miljø, kan du se [Bytte en forekomst](https://docs.microsoft.com/dynamics365/admin/switch-instance).
+- Når du kopierer Human Resources-databasen, kopierer du ikke elementene (apper eller data) som finnes i et Microsoft Power Apps-miljø. Hvis du vil ha informasjon om hvordan du kopierer elementer i et Power Apps-miljø, kan du se [Kopiere et miljø](https://docs.microsoft.com/power-platform/admin/copy-environment). Power Apps-miljøet som du vil overskrive, må være et sandkassemiljø. Du må være en global leieradministrator for å endre et Power Apps-produksjonsmiljø til et sandkassemiljø. Hvis du vil ha mer informasjon om hvordan du endrer et Power Apps-miljø, kan du se [Bytte en forekomst](https://docs.microsoft.com/dynamics365/admin/switch-instance).
+
+- Hvis du kopierer en forekomst inn i sandkassemiljøet og vil integrere sandkassemiljøet i Common Data Service, må du bruke egendefinerte felt på nytt i Common Data Service-enheter. Se [Bruke egendefinerte felt i Common Data Service](hr-admin-setup-copy-instance.md?apply-custom-fields-to-common-data-service).
 
 ## <a name="effects-of-copying-a-human-resources-database"></a>Virkninger av å kopiere en Human Resources-database
 
@@ -49,13 +51,13 @@ Følgende hendelser inntreffer når du kopierer en Human Resources-database:
 
 - Dokumenter i Microsoft Azure Blob-lagring kopieres ikke fra ett miljø til et annet. Derfor vil ingen dokumenter og maler som er vedlagt, bli kopiert, og de forblir i kildemiljøet.
 
-- Alle brukere, bortsett fra administratoren og andre brukerkontoer for interne tjenester, vil bli utilgjengelige. Derfor kan administratorbrukeren slette eller nedtone data før andre brukere får tilgang til systemet igjen.
+- Alle brukere, bortsett fra administratoren og andre brukerkontoer for interne tjenester, vil bli utilgjengelige. Administratorbrukeren kan slette eller nedtone data før andre brukere får tilgang til systemet igjen.
 
 - Administratorbrukeren må utføre nødvendige konfigurasjonsendringer, for eksempel koble til integreringsendepunkter på nytt til bestemte tjenester eller URL-adresser.
 
 ## <a name="copy-the-human-resources-database"></a>Kopiere Human Resources-databasen
 
-Hvis du vil fullføre denne oppgaven, kopierer du først en forekomst, og deretter logger du deg på administrasjonssenteret for Microsoft Power Platform for å kopiere PowerApps-miljøet.
+Hvis du vil fullføre denne oppgaven, kopierer du først en forekomst, og deretter logger du deg på administrasjonssenteret for Microsoft Power Platform for å kopiere Power Apps-miljøet.
 
 > [!WARNING]
 > Når du kopierer en forekomst, slettes databasen i målforekomsten. Målforekomsten er ikke tilgjengelig under denne prosessen.
@@ -74,7 +76,7 @@ Hvis du vil fullføre denne oppgaven, kopierer du først en forekomst, og derett
 
    ![[Velg Power Platform](./media/copy-instance-select-power-platform.png)](./media/copy-instance-select-power-platform.png)
 
-6. Velg PowerApps-miljøet som skal kopieres, og velg deretter **Kopier**.
+6. Velg Power Apps-miljøet som skal kopieres, og velg deretter **Kopier**.
 
 7. Når kopieringsprosessen er fullført, logger du på målforekomsten og aktiverer Common Data Service-integrering. Hvis du vil ha mer informasjon og instruksjoner, kan du se [Konfigurere Common Data Service-integrering for arbeidsområder](https://docs.microsoft.com/dynamics365/talent/hr-common-data-service-integration).
 
@@ -98,7 +100,13 @@ Følgende dataelementer kopieres ikke når du kopierer en Human Resources-foreko
 
 - Tilkoblingsstrengen i **PersonnelIntegrationConfiguration**-tabellen
 
-Noen av disse elementene kopieres ikke fordi de er miljøspesifikke. Eksempler inkluderer postene **BatchServerConfig** og **SysCorpNetPrinters**. Andre elementer blir ikke kopiert på grunn av antallet kundestøttebilletter. Det kan for eksempel hende at dupliserte e-poster sendes fordi SMTP fortsatt er aktivert i sandkassemiljøet for godkjenning av bruker, ugyldige integrasjonsmeldinger kan bli sendt fordi de fortsatt er aktive, og brukere kan bli aktivert før administratorer kan utføre handlinger opprydding etter oppdatering.
+Noen av disse elementene kopieres ikke fordi de er miljøspesifikke. Eksempler inkluderer postene **BatchServerConfig** og **SysCorpNetPrinters**. Andre elementer blir ikke kopiert på grunn av antallet kundestøttebilletter. For eksempel:
+
+- Det kan hende at det sendes dupliserte e-postmeldinger fordi SMTP fortsatt er aktivert i miljøet for testing av brukeraksept (sandkasse).
+
+- Det kan hende at ugyldige integrasjonsmeldinger sendes fordi de satsvise jobbene fortsatt er aktive.
+
+- Brukere kan være aktivert før administratorer kan utføre oppryddingshandlinger etter oppdatering.
 
 I tillegg endres følgende statuser når du kopierer en forekomst:
 
@@ -111,3 +119,32 @@ I tillegg endres følgende statuser når du kopierer en forekomst:
 Alle brukerne i sandkassemålmiljøet, inkludert administratorer, erstattes av brukerne i kildemiljøet. Før du kopierer en forekomst, må du være sikker på at du er administrator i kildemiljøet. Hvis du ikke er det, vil du ikke kunne logge på målsandkassemiljøet etter at kopieringen er fullført.
 
 Alle brukere som ikke er administrator i målsandkassemiljøet, er deaktivert for å hindre uønskede pålogginger i sandkassemiljøet. Administratorer kan reaktivere brukere om nødvendig.
+
+## <a name="apply-custom-fields-to-common-data-service"></a>Bruke egendefinerte felt i Common Data Service
+
+Hvis du kopierer en forekomst inn i sandkassemiljøet og vil integrere sandkassemiljøet i Common Data Service, må du bruke egendefinerte felt på nytt i Common Data Service-enheter.
+
+For hvert egendefinerte felt som vises på Common Data Service-enheter, gjør du følgende:
+
+1. Gå til det egendefinerte feltet og velg **Rediger**.
+
+2. Fjern merket i **Aktivert**-feltet for hver cdm_*-enhet som det egendefinerte feltet er aktivert på.
+
+3. Velg **Bruk endringer**.
+
+4. Velg **Rediger** på nytt.
+
+5. Velg feltet **Aktivert** for hver cdm_*-enhet som det egendefinerte feltet er aktivert på.
+
+6. Velg **Bruk endringer** på nytt.
+
+Prosessen med å fjerne valg, aktivere endringer, velge på nytt og bruke endringer på nytt ber skjemaet om å oppdatere i Common Data Service for å inkludere de egendefinerte feltene.
+
+Hvis du vil ha mer informasjon om egendefinerte felt, kan du se [Opprette og arbeide med egendefinerte felt](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/user-defined-fields).
+
+## <a name="see-also"></a>Se også
+
+[Klargjøre Human Resources](hr-admin-setup-provision.md)</br>
+[Fjerne en forekomst](hr-admin-setup-remove-instance.md)</br>
+[Oppdatere prosess](hr-admin-setup-update-process.md)
+

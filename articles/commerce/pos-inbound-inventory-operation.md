@@ -3,7 +3,7 @@ title: Inngående lageroperasjon på salgsstedet
 description: Dette emnet beskriver funksjonene til inn kommende lageroperasjoner på salgsstedet (POS).
 author: hhaines
 manager: annbe
-ms.date: 07/27/2020
+ms.date: 08/18/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: aba4f2d7932ebc3a0129f04c60c8b6358da68c64
-ms.sourcegitcommit: 0aabe4157f82d8c59dd2d285ab0b33f3c8ec5bbc
+ms.openlocfilehash: 16a786a4b3ca1bcbd202f6753bdf3bf7233a4333
+ms.sourcegitcommit: 7061a93f9f2b54aec4bc4bf0cc92691e86d383a6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "3627544"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "3710315"
 ---
 # <a name="inbound-inventory-operation-in-pos"></a>Inngående lageroperasjon på salgsstedet
 
@@ -143,6 +143,20 @@ Operasjonen respekterer konfigurasjonen for **Tom tilgang tillatt** i lagringsdi
 ### <a name="receive-all"></a>Motta alle
 
 Etter behov kan du velge **Motta alle** på applinjen for raskt å oppdatere antallet **Mottar nå** for alle dokumentlinjene til maksimumsverdien som er tilgjengelig for mottak for disse linjene.
+
+### <a name="receipt-of-unplanned-items-on-purchase-orders"></a>Mottak av ikke-planlagte varer på bestillinger
+
+I Commerce versjon 10.0.14 og senere kan brukere motta et produkt som ikke opprinnelig var i bestillingen. Hvis du vil aktivere denne funksjonaliteten, aktiverer du valget for å **legge til linjer i bestillingen ved mottak til salgsstedet**.  
+
+Denne funksjonen fungerer bare for bestillingsmottak. Det er ikke mulig å motta varer mot overføringsordrer når varene ikke tidligere ble bestilt og sendt fra det utgående lageret.
+
+Brukere kan ikke legge til nye produkter i bestillingen under mottak til salgsstedet hvis [arbeidsflyt for endringsadministrasjon](https://docs.microsoft.com/dynamics365/supply-chain/procurement/purchase-order-approval-confirmation) for bestillingen er aktivert i Commerce Headquarters. Hvis du vil aktivere endringsadministrasjon, må alle endringer i en bestilling først godkjennes før mottaket tillates. Fordi denne prosessen gjør det mulig for en mottaker å legge til nye linjer i bestillingen, vil mottak mislykkes hvis arbeidsflyt for endringsadministrasjon aktiveres. Hvis endringsadministrasjon aktiveres for alle bestillinger eller for leverandøren som er koblet til bestillingen som er aktiv på salgsstedet, kan ikke brukeren legge til nye produkter i bestillingen under mottak til salgsstedet.
+
+Funksjonaliteten som gjør det mulig å legge til linjer, kan ikke brukes som en midlertidig løsning for å motta flere produktvolumer som allerede finnes i bestillingen. Overmottak styres gjennom standardinnstillinger for [overmottak](https://docs.microsoft.com/dynamics365/commerce/pos-inbound-inventory-operation#over-receiving-validations) for produktlinjen på bestillingen.
+
+Hvis valget for å **legge til linjer i bestillingen ved mottak til salgsstedet** er aktivert og en bruker mottar med **Innkommende operasjon** på salgsstedet, og hvis brukeren skanner eller taster en produktstrekkode eller et produktnummer som ikke gjenkjennes som en vare på gjeldende bestilling, men blir gjenkjent som en gyldig vare, mottar brukeren en melding om å legge til varen i bestillingen. Hvis brukeren legger til varen i bestillingen, regnes antallet som er angitt i **Mottar nå**, som det bestilte antallet for bestillingslinjen.
+
+Når bestillingsmottaket er fullført og sendt til hovedkontoret for behandling, blir de tillagte linjene opprettet i hoveddokumentet for bestillingen. På bestillingslinjen i hovedkontoret vil det være et **Lagt til av salgssted**-flagg i kategorien **Generelt** på bestillingslinjen. Flagget **Lagt til av salgssted** angir at bestillingslinjen ble lagt til av mottaksprosessen for salgssted, at det ikke var en linje som var på bestillingen før mottak.
 
 ### <a name="cancel-receiving"></a>Avbryt mottak
 

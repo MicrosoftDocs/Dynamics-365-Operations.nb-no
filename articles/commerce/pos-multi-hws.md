@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2019-03-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 41b0faa7ef24bdae229f7e6760d22357cb87eb0d
-ms.sourcegitcommit: 7b7cc93c0f78c6bfc7a3ea66a74a29ba0f218553
+ms.openlocfilehash: 03cb68ede82668523e6970d33df676738e65fd83
+ms.sourcegitcommit: 18c5ef10e311f3dd2dbf45c6439ae6beff921af8
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "3658364"
+ms.lasthandoff: 08/24/2020
+ms.locfileid: "3719220"
 ---
 # <a name="dedicated-payment-terminals-and-prompts-for-a-printer-and-cash-drawer"></a>Dedikerte betalingsterminaler og spørringer for en skriver og kassaskuff
 
@@ -78,8 +78,8 @@ Følg denne fremgangsmåten for å konfigurere maskinvareprofilen som er tilordn
 
     | Enhet | Type | Enhetsnavn | Flere detaljer |
     |---|---|---|---|
-    | Skriver | Tilbakefall | **Epson** eller **Star** | Enhetsnavnet skiller mellom store og små bokstaver. **Kvitteringsprofil-ID-en** må være den samme som **Kvitteringsprofil-ID-en** som er tilordnet nettverksskriveren som er konfigurert i maskinvareprofilen som er tilordnet maskinvarestasjonen på kanalnivået. |
-    | Kassaskuff | Tilbakefall | **Epson** eller **Star** | Enhetsnavnet skiller mellom store og små bokstaver. Angi alternativet **Bruk delte skift** til **Ja**. |
+    | Skriver | Tilbakefall | *Vilkårlig* | Enhetsnavnet skiller mellom store og små bokstaver. **Kvitteringsprofil-ID-en** må være den samme som **Kvitteringsprofil-ID-en** som er tilordnet nettverksskriveren som er konfigurert i maskinvareprofilen som er tilordnet maskinvarestasjonen på kanalnivået. |
+    | Kassaskuff | Tilbakefall | *Vilkårlig* | Enhetsnavnet skiller mellom store og små bokstaver. Angi alternativet **Bruk delte skift** til **Ja**. |
     | EFT-tjeneste | Adyen | Gjelder ikke | Hvis du vil ha informasjon om hvordan du konfigurerer den bruksklare Adyen-betalingskoblingen, kan du se [Adyen-betalingskobling i Dynamics 365](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/adyen-connector?tabs=8-1-3). Andre betalingskoblinger kan være støttet via [Commerce-SDK for betalinger](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/end-to-end-payment-extension). |
     | PIN-kodetastatur | Nettverk | **MicrosoftAdyenDeviceV001** | Ingen. |
 
@@ -103,7 +103,7 @@ Følg denne fremgangsmåten for å konfigurere maskinvareprofilen som brukes til
     | Enhet | Type | beskrivelse | Flere detaljer |
     |---|---|---|---|
     | Skriver | Nettverk | **Epson** eller **Star** | Enhetsnavnet skiller mellom store og små bokstaver. **Kvitteringsprofil-ID-en** må være den samme som **Kvitteringsprofil-ID-en** som er tilordnet skriveren som er konfigurert i maskinvareprofilen som er tilordnet kassen. |
-    | Kassaskuff | Tilbakefall | **Epson** eller **Star** | Enhetsnavnet skiller mellom store og små bokstaver. Angi alternativet **Bruk delte skift** til **Ja**. |
+    | Kassaskuff | Nettverk | **Epson** eller **Star** | Enhetsnavnet skiller mellom store og små bokstaver. Angi alternativet **Bruk delte skift** til **Ja**. |
 
 5. Velg **Lagre**.
 

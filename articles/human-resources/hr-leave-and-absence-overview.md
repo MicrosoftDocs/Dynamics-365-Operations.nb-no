@@ -1,6 +1,6 @@
 ---
-title: Oversikt
-description: I Dynamics 365 Human Resources gir arbeidsområdet Permisjon og fravær et fleksibelt rammeverk for å opprette nye permisjonsplaner, arbeidsflyter for behandling av forespørsler og en intuitiv, selvbetjent side der ansatte kan be om avspasering.
+title: Oversikt over permisjon og fravær
+description: I Dynamics 365 Human Resources gir arbeidsområdet Permisjon og fravær en fleksibel struktur for å opprette nye permisjonsplaner. Det inneholder også arbeidsflyter for behandling av forespørsler og en intuitiv selvbetjent side der ansatte kan be om fri.
 author: andreabichsel
 manager: AnnBe
 ms.date: 06/01/2020
@@ -18,16 +18,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: ec72d2d741f7f8428a7daa97bb982e9fc00b8c3f
-ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
+ms.openlocfilehash: ea58c3a08e74eea1ab51aa19a5a28445a9bcbb04
+ms.sourcegitcommit: 2bcacef1e010c312f019dbf9740ce87d627848a7
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "3428973"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "3712406"
 ---
-# <a name="overview"></a>Oversikt
+# <a name="leave-and-absence-overview"></a>Oversikt over permisjon og fravær
 
-Dynamics 365 Human Resources hjelper deg med å gi arbeiderne flotte fordeler. Arbeidsområdet **Permisjon og fravær** gir et fleksibelt rammeverk for å opprette nye permisjonsplaner, arbeidsflyter for behandling av forespørsler og en intuitiv, selvbetjent side der ansatte kan be om avspasering. Analyse hjelper organisasjonen din med å måle og overvåke permisjonssaldoer og forbruk for permisjonsplaner.
+Dynamics 365 Human Resources hjelper deg med å gi arbeiderne flotte fordeler. Arbeidsområdet for **Permisjon og fravær** en fleksibel struktur for å opprette nye permisjonsplaner. Det inneholder også arbeidsflyter for behandling av forespørsler og en intuitiv selvbetjent side der ansatte kan be om fri. Analyse hjelper organisasjonen din med å måle og overvåke permisjonssaldoer og forbruk for permisjonsplaner.
 
 ## <a name="set-up-leave-and-absence"></a>Konfigurere permisjon og fravær
 
@@ -51,42 +51,6 @@ Før du oppretter permisjonsplaner for arbeiderne, må du opprette permisjons- o
 
 De ansatte kan sende inn avspaseringsforespørsler, og du kan behandle dem i arbeidsområdet **Ansattselvbetjening**.
 
-- [Be om fritid](hr-employee-self-service-request-time-off.md)
-- [Administrere forespørsler om permisjon og fravær](hr-employee-self-service-manage-requests.md)
-
-## <a name="leave-and-absence-known-issues"></a>Kjente problemer med permisjon og fravær
-
-### <a name="rounding-precision"></a>Avrundingspresisjon
-
-Du kan ikke angi **Avrundingspresisjon** når du angir **Avrundingstype**. Du kan bare angi **Avrundingspresisjon** ved hjelp av enheten **Permisjons- og fraværstype**. 
-
-1. Fra **Permisjons- og fraværstyper** velger du **Åpne i Excel** for å åpne neheten **Permisjons- og fraværstype**.
-
-2. Når filen er åpnet og er aktivert, velger du **Utforming**.
-
-3. I tabellen **Permisjons- og fraværstype** velger du blyantalternativet for å redigere.
-
-4. Velg **Avrundingspresisjon** og **Avrundingstype**, og velg deretter **Legg til** for å legge dette til i listen over felt.
-
-5. Velg **Oppdater**, og velg deretter **Ferdig**.
-
-6. Angi eller velg **Avrundingstype** for hver permisjonstype hvis de ikke allerede er angitt. 
-
-7. Angi **Avrundingspresisjon** for de aktuelle typene.
-
-8. Velg **Publiser** for å sende endringene til Human Resources.
-
-## <a name="leave-and-absence-preview-features"></a>Forhåndsversjonsfunksjoner for permisjon og fravær
-
-Du kan prøve ut nye forhåndsversjonsfunksjoner for permisjon og fravær i et **sandkassemiljø**. Hvis du vil ha informasjon om å aktivere forhåndsversjonsfunksjoner, kan du se [Behandle funksjoner](hr-admin-manage-features.md). 
-
-[!include [banner](includes/preview-feature.md)]
-
-Forhåndsversjonsfunksjonene omfatter:
-
-- **Permisjonsavsetning per firma eller plan** – du kan kjøre avsetningsprosessen enten for alle firmaer eller for ett enkelt firma. Du kan også kjøre avsetningsprosessen for en bestemt permisjons- og fraværsplan for et bestemt firma. 
-
-- **Kjøp permisjon** – du kan aktivere og opprette policyer for kjøp av permisjon slik at ansatte kan sende kjøpsforespørsler. Ansatte kan sende inn kjøpsforespørsler og få saldoene sine automatisk oppdatert slik at de gjenspeiler forespørselen.  
-
-- **Legge til vedlegg i godkjente permisjonsforespørsler** – du kan legge til et vedlegg i en permisjonsforespørsel som allerede er godkjent. 
+[Be om fridager](hr-employee-self-service-request-time-off.md)
+[Administrere forespørsler om permisjon og fravær](hr-employee-self-service-manage-requests.md)
 

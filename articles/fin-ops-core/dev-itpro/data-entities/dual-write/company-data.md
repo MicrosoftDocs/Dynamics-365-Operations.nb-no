@@ -3,7 +3,7 @@ title: Bedriftskonsept i Common Data Service
 description: Dette emnet beskriver integreringen av firmadata mellom Finance and Operations og Common Data Service .
 author: RamaKrishnamoorthy
 manager: AnnBe
-ms.date: 07/15/2019
+ms.date: 08/04/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: 9a39cf5fa980d9a815ba675e410589dbd1279c83
-ms.sourcegitcommit: 68f1485de7d64a6c9eba1088af63bd07992d972d
+ms.openlocfilehash: 444bfc1698a206ca34e67f742df63431a3b02649
+ms.sourcegitcommit: 7da8811f1a7db858efb76edb0bdf857a47d07600
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "3172906"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "3728419"
 ---
 # <a name="company-concept-in-common-data-service"></a>Bedriftskonsept i Common Data Service
 
@@ -72,3 +72,32 @@ Common Data Service-integrasjon bringer selskapet paritet ved hjelp av en bedrif
 + Når et selskap er lagt til og lagret for poster, blir verdien skrivebeskyttet. Derfor bør brukerne sørge for at de velger riktig firma.
 + Bare poster som har firmadata, er kvalifisert for dobbelt skriving mellom programmet og Common Data Service.
 + For eksisterende Common Data Service-data, en admin-ledet bootstrapping-erfaring vil snart være anvendelig.
+
+
+## <a name="autopopulate-company-name-in-customer-engagement-apps"></a>Autofylling av firmanavn i Customer Engagement-apper
+
+Det finnes flere måter å fylle ut firmanavnet på automatisk i Customer Engagement-apper.
+
++ Hvis du er systemansvarlig, kan du velge standardfirmaet ved å navigere til **Avanserte innstillinger > System > Sikkerhet > Brukere**. Åpne **Bruker**-skjemaet, og i delen **Organisasjonsinformasjon** angir du verdien for **firma som standard på skjemaer**.
+
+    :::image type="content" source="media/autopopulate-company-name-1.png" alt-text="Angi standardfirma i delen Organisasjonsinformasjon.":::
+
++ Hvis du har **Skrive**-tilgang til **SystemUser**-enheten for nivået **Forretningsenhet**, kan du endre standardfirmaet i et hvilket som helst skjema ved å velge et firma fra rullegardinmenyen **Firma**.
+
+    :::image type="content" source="media/autopopulate-company-name-2.png" alt-text="Endre firmanavnet på en ny forretningsforbindelse.":::
+
++ Hvis du har **Skrive**-tilgang til data i mer enn ett firma, kan du endre standardfirmaet ved å velge en post som tilhører et annet firma.
+
+    :::image type="content" source="media/autopopulate-company-name-3.png" alt-text="Hvis du velger en post, endres standardfirmaet.":::
+
++ Hvis du er en systemkonfigurator eller -administrator, og du vil fylle ut firmadata automatisk i et egendefinert skjema, kan du bruke [skjemahendelser](https://docs.microsoft.com/powerapps/developer/model-driven-apps/clientapi/events-forms-grids). Legg til en JavaScript-referanse i **msdyn_/DefaultCompany.js**, og bruk følgende hendelser. Du kan bruke et hvilket som helst standardskjema, for eksempel i skjemaet for **Forretningsforbindelse**.
+
+    + **OnLoad**-hendelsen for skjemaet: Angi **defaultCompany**-feltet.
+    + **OnChange**-hendelse for **Firma**-feltet: Angi **updateDefaultCompany**-feltet.
+
+## <a name="apply-filtering-based-on-the-company-context"></a>Bruk filtrering basert på firmakonteksten
+
+Hvis du vil bruke filtrering basert på firmakonteksten i de egendefinerte skjemaene eller på egendefinerte oppslagsfelt som er lagt til i standardskjemaene, åpner du skjemaet og bruker delen **Relatert oppføringsfiltrering** for å bruke firmafilteret. Du må angi dette for hvert oppslagsfelt som krever filtrering, basert på det underliggende firmaet for en gitt post. Innstillingen vises for **Forretningsforbindelse** i følgende illustrasjon.
+
+:::image type="content" source="media/apply-company-context.png" alt-text="Bruk firmakontekst":::
+
