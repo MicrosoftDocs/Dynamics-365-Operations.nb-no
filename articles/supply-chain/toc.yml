@@ -158,7 +158,7 @@
                   href: ../fin-ops-core/fin-ops/get-started/grid-capabilities.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Opprette og arbeide med egendefinerte felt
                   href: ../fin-ops-core/fin-ops/get-started/user-defined-fields.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Bygge inn PowerApps-apper
+                - name: Bygg inn Microsoft Power Apps
                   href: ../fin-ops-core/fin-ops/get-started/embed-power-apps.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Finne informasjon ved hjelp av oppslag
                   href: ../fin-ops-core/fin-ops/get-started/use-lookups-to-find-information.md?toc=/dynamics365/supply-chain/toc.json
@@ -633,13 +633,13 @@
               href: ../fin-ops-core/dev-itpro/analytics/bi-reporting-home-page.md?toc=/dynamics365/supply-chain/toc.json
             - name: Informasjonstilgang og rapportering
               href: ../fin-ops-core/dev-itpro/analytics/information-access-reporting.md?toc=/dynamics365/supply-chain/toc.json
-            - name: Tilpasningsalternativer med PowerBI.com
+            - name: Tilpassingsalternativer med Power BI
               items:
-                - name: Tilgjengelige funksjoner via PowerBI.com-integrering
+                - name: Tilgjengelige funksjoner via integrering med Power BI
                   href: ../fin-ops-core/dev-itpro/analytics/power-bi-integration.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Fest PowerBI.com-innhold
+                - name: Feste Power BI-innhold
                   href: ../fin-ops-core/dev-itpro/analytics/pin-power-bi-reports.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Velge analytiske arbeidsområder fra PowerBI.com
+                - name: Velge analytiske arbeidsområder fra Power BI
                   href: ../fin-ops-core/dev-itpro/analytics/select-analytical-workspace.md?toc=/dynamics365/supply-chain/toc.json
             - name: Power BI-innhold
               items:
@@ -709,7 +709,7 @@
                   href: ../fin-ops-core/dev-itpro/analytics/model-aggregate-data.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Legge til finansdimensjoner i aggregerte målinger
                   href: ../fin-ops-core/dev-itpro/analytics/add-financial-dimensions-aggregate-measurements.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Opprette analyserapporter ved hjelp av Power BI Desktop
+                - name: Opprette analyserapporter ved hjelp av PowerBI Desktop
                   href: ../fin-ops-core/dev-itpro/analytics/author-distribute-power-bi-reports.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Legge til analyse i arbeidsområder ved hjelp av Power BI Embedded
                   href: ../fin-ops-core/dev-itpro/analytics/add-analytics-tab-workspaces.md?toc=/dynamics365/supply-chain/toc.json
@@ -851,7 +851,7 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-stringjoin.md?toc=/dynamics365/supply-chain/toc.json
                         - name: Where
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-where.md?toc=/dynamics365/supply-chain/toc.json
-                    - name: Logical
+                    - name: Logiske
                       items:
                         - name: Logiske funksjoner
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-category-logical.md?toc=/dynamics365/supply-chain/toc.json
@@ -1827,10 +1827,6 @@
                       href: pim/tasks/obsolete-product-variants.md
                     - name: Utelukke produkter fra hovedplanlegging
                       href: pim/tasks/exclude-products-master-planning.md
-                - name: Varer med dobbel bruk
-                  href: pim/dual-use.md
-                - name: Opprinnelsesland
-                  href: pim/country-of-origin.md
                 - name: Opprette en strekkode for et produkt
                   href: pim/tasks/create-bar-code-product.md
                 - name: Angi GTIN-koden for et produkt
@@ -1839,6 +1835,20 @@
                   href: pim/tasks/create-batch-attributes-product.md
                 - name: Legge til et bilde i et produkt
                   href: pim/tasks/add-image-product.md
+                - name: Opprinnelsesland
+                  href: pim/country-of-origin.md
+                - name: Varer med dobbel bruk
+                  href: pim/dual-use.md
+                - name: Farlige materialer
+                  items:
+                    - name: Oversikt over farlige materialer
+                      href: pim/hazmat-overview.md
+                    - name: Definere farlige materialer
+                      href: pim/hazmat-setup.md
+                    - name: 'Farlige materialer i produkter, ordrer, forsendelser og laster'
+                      href: pim/hazmat-items.md
+                    - name: Forespørsler og rapporter om farlige materialer
+                      href: pim/hazmat-reports.md
                 - name: Vanlige spørsmål om oversettelse av produktinformasjon
                   href: pim/translations-product-related-information.md
                 - name: Søke etter produkt under ordreregistrering

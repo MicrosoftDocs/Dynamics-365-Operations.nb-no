@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-01-27
-ms.openlocfilehash: b10e5f0fe97e65ad380e85815c56e88a3ce4e303
-ms.sourcegitcommit: cf709f1421a0bf66ecea493088ecb4eb08004187
+ms.openlocfilehash: a2ca0ce277a062c8d525b6a3619eaf1b0114667b
+ms.sourcegitcommit: 18c5ef10e311f3dd2dbf45c6439ae6beff921af8
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/12/2020
-ms.locfileid: "3443901"
+ms.lasthandoff: 08/24/2020
+ms.locfileid: "3719270"
 ---
 # <a name="prospect-to-cash-in-dual-write"></a>Kundeemne til kontanter i dobbel skriving
 
@@ -79,7 +79,7 @@ Hvis du også bruker Field Service-løsningen, må du kontrollere at parameteren
 
 Salgsordrer kan opprettes i både Sales og Supply Chain Management. Hvis du oppretter en salgsordre i Sales, blir den synkronisert til Supply Chain Management i sanntid. Tilsvarende, hvis du oppretter en salgsordre i Supply Chain Management, blir den synkronisert til Sales i sanntid. Merk følgende punkt:
 
-+ Du kan bare aktivere og synkronisere ordrer fra Sales hvis alle produkter i ordren kommer fra Finance and Operations-apper. Det kan derfor ikke finnes innskrivingsprodukter.
++ Innskrivningsprodukter på Dynamics 365 Sales vil vises som produktkategorier i Dynamics 365 Supply Chain Management.
 + Rabattberegning og -avrunding:
 
     - Modellen for rabattberegningen i Sales er forskjellig fra modellen for rabattberegningen i Supply Chain Management. I Supply Chain Management kan det endelige rabattbeløpet på en salgslinje være resultatet av en kombinasjon av rabattbeløp og rabattprosenter. Hvis dette endelige rabattbeløpet deles på antallet på linjen, kan det forekomme avrunding. Denne avrunding blir imidlertid ikke tatt hensyn til hvis et avrundet per enhet-rabattbeløp synkroniseres til Sales. For å sikre at hele rabattbeløpet fra en salgslinje i Supply Chain Management synkroniseres riktig med Sales, må hele beløpet synkroniseres uten at det blir delt på linjeantallet. Derfor må du definere rabattkalkuleringsmetoden som **Linjeelement** i Sales.

@@ -3,7 +3,7 @@ title: Aktiver produktanbefalinger
 description: Dette emnet forklarer hvordan du kan bruke produktanbefalinger som er basert på kunstig intelligens-maskinopplæring (AI-ML), tilgjengelig for Microsoft Dynamics 365 Commerce-kunder.
 author: bebeale
 manager: AnnBe
-ms.date: 05/26/2020
+ms.date: 08/18/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -19,12 +19,12 @@ ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: d2dacd4a94f706be5aa65947c0b6a92e281733ca
-ms.sourcegitcommit: 8905d7a7a010e451c5435086480f66650ec54926
+ms.openlocfilehash: b201e5481cfaf5bb6cd64a89cdb6b5a91f31447f
+ms.sourcegitcommit: d3b970c3b93d8be12886b1c5a6bf91f0b33726dd
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "3665032"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "3700848"
 ---
 # <a name="enable-product-recommendations"></a>Aktiver produktanbefalinger
 
@@ -65,11 +65,13 @@ Lagre og lukk siden.
 
 Gjør følgende for å aktivere produktanbefalinger.
 
-1. Gå til **Detaljhandel og handel &gt; Produktanbefalinger &gt; Anbefalingsparametere**.
-1. Velg **Anbefalingslister** i listen over delte parametere.
-1. Sett alternativet **Aktiver anbefalinger** til **Ja**.
+1. I Commerce Headquarters søker du etter **Funksjonsbehandling**.
+1. Velg **Alle** for å vise en liste over tilgjengelige funksjoner. 
+1. Skriv inn **Anbefalinger** i søkeboksen.
+1. Velg funksjonen **Produktanbefalinger**.
+1. I egenskapsruten **Produktanbefalinger** velger du **Aktiver nå**.
 
-![Aktivere anbefalinger](./media/enablepersonalization.png)
+![Aktivere anbefalinger](./media/FeatureManagement_Recommendations.PNG)
 
 > [!NOTE]
 > Denne fremgangsmåten starter prosessen med å generere produktanbefalingslister. Det kan ta flere timer kan være nødvendig før listene er tilgjengelige og kan vises ved salgsstedet (POS) eller i Dynamics 365 Commerce.

@@ -1,6 +1,6 @@
 ---
 title: Hva er nytt eller endret i Dynamics 365 Human Resources (11. juni 2020)
-description: Dette emnet beskriver funksjoner som enten er nye eller endret i Microsoft Dynamics 365 Human Resources.
+description: Dette emnet beskriver funksjoner som enten er nye eller endret i Microsoft Dynamics 365 Human Resources for 11. juni 2020.
 author: Darinkramer
 manager: AnnBe
 ms.date: 06/16/2020
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2020-06-11
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 8ec15c33cdb1abc32c28fd78822b06188dd0feac
-ms.sourcegitcommit: 81296c49be9953aa01e15527c34d0ef13b4622a9
+ms.openlocfilehash: 0720b2024a865fcd42cd80fd905586d626388f8f
+ms.sourcegitcommit: 2bcacef1e010c312f019dbf9740ce87d627848a7
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "3614292"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "3711800"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-june-11-2020"></a>Hva er nytt eller endret i Dynamics 365 Human Resources (11. juni 2020)
 
@@ -64,7 +64,7 @@ Noen organisasjoner tilbyr en fordel som gjør det mulig for ansatte å kjøpe e
 
 ## <a name="leave-accrual-for-a-single-company-or-single-plan"></a>Permisjonsavsetning for ett enkelt firma eller én enkelt plan
 
-Kunder kan behandle avsetninger for ett enkelt firma eller en enkel permisjons- og fraværsplan. Denne muligheten gir klarhet til avsetningsprosessen for kunder med forskjellige policyer for fraværsår eller permisjonsavsetning. Hvis du vil ha mer informasjon, se [Avsett permisjon per firma eller per permisjonsplan](hr-leave-and-absence-accrue.md#accrue-leave-per-company-or-per-leave-plan).
+Kunder kan behandle avsetninger for ett enkelt firma eller en enkel permisjons- og fraværsplan. Denne muligheten gir klarhet til avsetningsprosessen for kunder med forskjellige policyer for fraværsår eller permisjonsavsetning. Hvis du vil ha mer informasjon, se [Avsett permisjon per firma eller per permisjonsplan](hr-leave-and-absence-accrue.md).
 
 ## <a name="add-attachments-to-time-off-requests"></a>Legge til vedlegg i fraværsforespørsler
 

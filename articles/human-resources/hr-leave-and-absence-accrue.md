@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: f045cb7ab9f5e7aa4259f29e1b026f110425c236
-ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
+ms.openlocfilehash: 43c16c5d0de91bf1f433f4fde36e7d13775f44a0
+ms.sourcegitcommit: 2bcacef1e010c312f019dbf9740ce87d627848a7
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "3429065"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "3712176"
 ---
 # <a name="accrue-leave-and-absence-plans"></a>Avsett permisjons- og fraværsplaner
 
@@ -37,7 +37,9 @@ Du kan avsette permisjon og fravær i Dynamics 365 Human Resources for flere ans
 
 3. Dialogboksen **Avsett permisjons- og fraværsplaner** vises. I **Avsett per** velger du **Dagens dato**, eller du velger **Egendefinert dato** og angir en egendefinert dato.
 
-4. Hvis du vil kjøre avsetningsprosessen i bakgrunnen, velger du **Kjør i bakgrunnen** og utfører følgende oppgaver:
+4. Hvis du vil kjøre avsetninger for alle firmaer, velger du **Alle selskaper**. Hvis du vil behandle avsetninger for en enkelt permisjonsplan, velger du **Nei** for **Alle planer**, og deretter velger du en **Permisjonsplan**. Hvis du velger alle firmaer, kan du ikke velge en individuell permisjonsplan. 
+
+5. Hvis du vil kjøre avsetningsprosessen i bakgrunnen, velger du **Kjør i bakgrunnen** og utfører følgende oppgaver:
 
    1. Angi informasjon for avsetningsprosessen.
 
@@ -55,7 +57,9 @@ Du kan avsette permisjon og fravær i Dynamics 365 Human Resources for flere ans
 
 3. Dialogboksen **Avsett permisjons- og fraværsplaner** vises. I **Avsett per** velger du **Dagens dato**, eller du velger **Egendefinert dato** og angir en egendefinert dato.
 
-4. Hvis du vil kjøre avsetningsprosessen i bakgrunnen, velger du **Kjør i bakgrunnen** og utfører følgende oppgaver:
+4. Hvis du vil kjøre avsetninger for alle firmaer, velger du **Alle selskaper**. Hvis du vil behandle avsetninger for en enkelt permisjonsplan, velger du **Nei** for **Alle planer**, og deretter velger du en **Permisjonsplan**. Hvis du velger alle firmaer, kan du ikke velge en individuell permisjonsplan. 
+
+5. Hvis du vil kjøre avsetningsprosessen i bakgrunnen, velger du **Kjør i bakgrunnen** og utfører følgende oppgaver:
 
    1. Angi informasjon for avsetningsprosessen.
 
@@ -102,18 +106,6 @@ Slett avsetningsposter for en spesifikk plan og et bestemt datoområde. Avsetnin
 1. På siden **Permisjon og fravær** velger du **Koblinger**-fanen.
 
 2. Under **Administrer permisjon** velger du **Slett permisjonsavsetningsrevisjon**.
-
-## <a name="configure-preview-features"></a>Konfigurere forhåndsversjonsfunksjoner
-
-[!include [banner](includes/preview-feature-leave-absence.md)]
-
-Hvis du har aktivert forhåndsversjonsfunksjoner for permisjon og fravær, må du konfigurere innstillinger for dem også.
-
-### <a name="accrue-leave-per-company-or-per-leave-plan"></a>Avsett permisjon per firma eller per permisjonsplan
-
-Når du avsetter permisjons- og fraværsplaner, kan du velge å avsette for alle firmaer. Hvis du velger alle firmaer, kan du ikke velge individuelle permisjonsplaner. Hvis du velger ikke å avsette for alle firmaer, kan du avsette for en bestemt permisjonsplan. 
-
-Disse alternativene er tilgjengelige når du avsetter for alle ansatte eller enkeltansatte. 
 
 ## <a name="see-also"></a>Se også
 

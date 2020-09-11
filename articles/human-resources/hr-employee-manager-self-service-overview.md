@@ -3,7 +3,7 @@ title: Oversikt over selvbetjening for ansatte og ledere
 description: Denne artikkelen inneholder en oversikt over arbeidsområdet for selvbetjening for ansatte og ledere.
 author: andreabichsel
 manager: AnnBe
-ms.date: 03/19/2020
+ms.date: 08/17/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-human-resources
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-03-19
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 5934b6a1a1a8aa30aa18d9be26845c84acfa2fd0
-ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
+ms.openlocfilehash: fd642d0976c607b47a7874d0771e441153272ec9
+ms.sourcegitcommit: 2bcacef1e010c312f019dbf9740ce87d627848a7
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "3429802"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "3712238"
 ---
 # <a name="employee-and-manager-self-service-overview"></a>Oversikt over selvbetjening for ansatte og ledere
 
@@ -32,6 +32,25 @@ Denne artikkelen inneholder en oversikt over arbeidsområdet for selvbetjening f
 ## <a name="edit-personal-details"></a>Rediger personopplysninger
 
 Hvis du må legge til eller endre personlige opplysninger, kan du [Redigere personlige opplysninger](hr-employee-manager-self-service-edit-personal-information.md).
+
+## <a name="user-not-assigned-to-a-worker-record"></a>Brukeren er ikke tilordnet til en arbeiderpost
+
+Hvis du ikke har koblet brukeren til en **Arbeider**-post på siden **Brukere**, vil følgende melding vises:
+
+**Bruker-ID-en din er ikke tilknyttet ansattposten i systemet. Du vil ikke kunne vise eller oppdatere informasjon før den er tilknyttet. Kontakt leder eller støtteteam for hjelp.**
+
+Hvis du vil knytte en bruker til en **Arbeider**-post, går du til **Brukere** og velger brukeren. Velg **Rediger** og legg til den tilsvarende arbeideren i feltet **Person** på skjemaet, og velg **Lagre**. Du skal nå ha tilgang til Ansattselvbetjening.
+
+## <a name="security-requirements-for-employee-and-manager-self-service"></a>Sikkerhetskrav for selvbetjening for ansatte og ledere
+
+Selvbetjening for ansatte og ledere krever to sikkerhetsroller:
+
+- Ansatte krever rollen Ansatt.
+- Ledere krever både rollene Ansatt og Leder.
+
+>[!NOTE]
+>Du kan også bruke egendefinerte roller til å få tilgang til selvbetjening for ansatte og ledere så lenge de har fått tilgang til arbeidsområder for ansatte og ledere.<br>
+>Ledertilgang til ansattinformasjon er basert på linjehierarkiet for gjeldende stilling i Human Resources.
 
 ## <a name="employee-self-service"></a>Ansattselvbetjening
 

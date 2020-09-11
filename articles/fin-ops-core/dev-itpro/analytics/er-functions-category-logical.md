@@ -3,7 +3,7 @@ title: Liste over ER-funksjoner i den logiske kategorien
 description: Dette emnet inneholder informasjon om de logiske funksjonene som støttes i elektronisk rapportering (ER).
 author: NickSelin
 manager: kfend
-ms.date: 12/17/2019
+ms.date: 08/19/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 408b3c5ec37b24e0ccf6e368012a936701eedf0f
-ms.sourcegitcommit: 36857283d70664742c8c04f426b231c42daf4ceb
+ms.openlocfilehash: e622778c60646e5cc84cd6e23a5d4954a0fe0bb3
+ms.sourcegitcommit: 38ad6f791c3d5688a5dc201a234ba89f155f7f03
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "2916643"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "3705101"
 ---
 # <a name="list-of-er-functions-in-the-logical-category"></a>Liste over ER-funksjoner i den logiske kategorien
 
@@ -41,6 +41,8 @@ Logiske funksjoner for elektronisk rapportering (ER) kan brukes til å arbeide m
 | [Ikke](er-functions-logical-not.md)                       | Denne funksjonen returnerer den omvendte logiske verdien til den angitte betingelsen som en *boolsk* verdi. |
 | [Or](er-functions-logical-or.md)                         | Denne funksjonen returnerer en *boolsk* verdi av **USANN** hvis alle de angitte betingelsene er usanne. Denne funksjonen returnerer en *boolsk* verdi av **SANN** hvis en angitt betingelse er sann. |
 | [ValueIn](er-functions-logical-valuein.md)               | Denne funksjonen bestemmer om de angitte inndataene samsvarer med en verdi for et angitt element i den angitte listen. Den returnerer en *boolsk* verdi av **SANN** hvis de angitte inndataene samsvarer med resultatet av å kjøre det angitte uttrykket for minst én post i den angitte listen. Hvis ikke returneres den *boolske* verdien **USANN**. |
+| [ValueInLarge](er-functions-logical-valueinlarge.md)     | Denne funksjonen bestemmer om de angitte inndataene av typen *Int64* eller *Integer* samsvarer med en verdi for et angitt element i den angitte listen. Den returnerer en *boolsk* verdi av **SANN** hvis de angitte inndataene samsvarer med resultatet av å kjøre det angitte uttrykket for minst én post i den angitte listen. Hvis ikke returneres den *boolske* verdien **USANN**. |
+
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 

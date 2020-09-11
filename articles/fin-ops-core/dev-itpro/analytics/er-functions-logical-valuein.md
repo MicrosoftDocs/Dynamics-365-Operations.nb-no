@@ -3,7 +3,7 @@ title: VALUEIN ER-funksjonen
 description: Dette emnet gir generell informasjon om hvordan du bruker ER-funksjonen VALUEIN.
 author: NickSelin
 manager: kfend
-ms.date: 12/17/2019
+ms.date: 08/18/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,14 +18,14 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d0df97234df41d11897473dea4e85354e82d36ec
-ms.sourcegitcommit: 3c1eb3d89c6ab9bd70b806ca42ef9df74cf850bc
+ms.openlocfilehash: 44459ae56891a08eb11a6c254f4b4d5652a0e693
+ms.sourcegitcommit: 38ad6f791c3d5688a5dc201a234ba89f155f7f03
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "3041705"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "3705125"
 ---
-# <a name="VALUEIN">VALUEIN ER-funksjonen</a>
+# <a name=""></a><a name="VALUEIN">VALUEIN ER-funksjonen</a>
 
 [!include [banner](../includes/banner.md)]
 
@@ -59,7 +59,7 @@ Den resulterende *boolske* verdien.
 
 ## <a name="usage-notes"></a>Bruksnotater
 
-Generelt oversettes `VALUEIN`-funksjonen til et sett med **OR**-betingelser.
+Generelt oversettes `VALUEIN`-funksjonen til et sett med **OR**-betingelser. Hvis listen over **OR**-betingelser er stor, og den maksimal totale lengde på en SQL-setning kan overstiges, bør du vurdere å bruke [`VALUEINLARGE`](er-functions-logical-valueinlarge.md)-funksjonen.
 
 ```vb
 (input = list.item1.value) OR (input = list.item2.value) OR …
@@ -77,13 +77,13 @@ Når en datakilde kalles og den er konfigurert som `VALUEIN ("B", List, LEFT(Lis
 
 Den øvre grensen for antall tegn i teksten i en slik betingelse er 32 768 tegn. Du bør derfor ikke opprette datakilder som kan overstige denne grensen ved kjøretid. Hvis grensen overskrides, slutter programmet å kjøre, og et unntak blir registrert. Denne situasjonen kan for eksempel oppstå hvis datakilden er konfigurert som `WHERE (List1, VALUEIN (List1.ID, List2, List2.ID)`, og **List1** og **List2**-listene inneholder et stort antall poster.
 
-I noen tilfeller kan `VALUEIN`-funksjonen oversettes til en databasesetning ved hjelp av `EXISTS JOIN`-operatoren. Denne virkemåter skjer når [FILTER](er-functions-list-filter.md)-funksjonen brukes og følgende betingelser er oppfylt:
+I noen tilfeller kan `VALUEIN`-funksjonen oversettes til en databasesetning ved hjelp av `EXISTS JOIN`-operatoren. Denne virkemåter skjer når [`FILTER`](er-functions-list-filter.md)-funksjonen brukes og følgende betingelser er oppfylt:
 
 - **BE OM SPØRRING**-valget er deaktivert for datakilden for `VALUEIN`-funksjonen som refererer til listen over poster. Ingen flere betingelser brukes på denne datakilden ved kjøretid.
 - Ingen nestede uttrykk konfigureres for datakilden for `VALUEIN`-funksjonen som refererer til listen over poster.
 - Et listeelement for `VALUEIN`-funksjonen refererer til et felt for den angitte datatypen, ikke til et uttrykk eller en metode for datakilden.
 
-Vurder å bruke dette alternativet i stedet for [WHERE](er-functions-list-where.md)-funksjonen som er beskrevet tidligere i dette eksemplet.
+Vurder å bruke dette alternativet i stedet for [`WHERE`](er-functions-list-where.md)-funksjonen som er beskrevet tidligere i dette eksemplet.
 
 ## <a name="example-2"></a>Eksempel 2
 
@@ -118,3 +118,5 @@ Intrastat.dataAreaId IN ('DEMF', 'GBSI', 'USMF')
 ## <a name="additional-resources"></a>Tilleggsressurser
 
 [Logiske funksjoner](er-functions-category-logical.md)
+
+[VALUEINLARGE-funksjoner](er-functions-logical-valueinlarge.md)

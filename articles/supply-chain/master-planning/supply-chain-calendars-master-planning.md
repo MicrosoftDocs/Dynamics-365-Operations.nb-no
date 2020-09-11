@@ -3,7 +3,7 @@ title: Kalendere og hovedplanlegging
 description: Dette emnet gir en oversikt over forsyningenkjedekalendere og hvordan de påvirker hovedplanlegging.
 author: t-benebo
 manager: tfehr
-ms.date: 05/08/2019
+ms.date: 08/19/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.industry: Manufacturing
 ms.author: t-benebo
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: d542c52623c1b3c0aa4b23159d56791cdc981f48
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 373af2e7bdcbf6860f21e049403fdf174d5e8ca7
+ms.sourcegitcommit: 7061a93f9f2b54aec4bc4bf0cc92691e86d383a6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3213498"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "3710339"
 ---
 # <a name="calendars-and-master-planning"></a>Kalendere og hovedplanlegging
 
@@ -105,28 +105,28 @@ Ordredatoen i et bestillingsforslag angir datoen da ordren ble plassert. Det vil
 
 ### <a name="delivery-date-of-a-planned-purchase-order"></a>Leveringsdato for et bestillingsforslag
 Mottaksdatoen for et kjøp angir datoen du vil motta varene. Det vil være en åpen dato i kalenderen. Kalenderen som vil bli tatt hensyn til for å angi hvilke dager bestillingene kan mottas, er følgende, i rekkefølgen fra høyeste til laveste prioritet: 
-    1. Leverandørens kalender
-    2. Dekningsgruppekalender
-    3. Lagerkalender for det mottakende lageret
+1. Leverandørens kalender
+1. Dekningsgruppekalender
+1. Lagerkalender for det mottakende lageret
 
 Merk at dekningsgruppekalenderen kan angis på ulike sider og har følgende prioriteringsrekkefølge:
-    1. Varedekningsgruppe på **Detaljer om frigitte produkter**-siden
-    2. Varedekningsgruppe på **Varedekning**-siden
-    3. Standard varedekningsgruppe i **Parametere for hovedplanlegging**
+1. Varedekningsgruppe på **Varedekning**-siden
+1. Varedekningsgruppe på **Detaljer om frigitte produkter**-siden
+1. Standard varedekningsgruppe i **Parametere for hovedplanlegging**
 
 ### <a name="shipping-date-of-a-planned-transfer-order"></a>Forsendelsesdato for et overføringsforslag
 Når du oppretter en overføringsordre mellom to lagre, er forsendelsesdatoen og mottaksdatoen inkludert i hodet for overføringsordren, sammen med "Fra"- og "Til"-lageret. Forskjellen mellom disse to datoene er forventet transporttid (i dager) mellom lagrene.
 
 Forsendelsesdatoen for en planlagt overføringsordre angir datoen varene sendes fra lageret "Fra". Kalendere som brukes til å angi den tilgjengelige forsendelsesdatoen, vises etter prioritet: 
-    1. Lagerkalenderen for "Fra"-lager
-    2. Dekningsgruppekalender (se tilbakefallsordre for kalenderen ovenfor) Hvis det er angitt et lagerkalenderensett, vil forsendelsesdatoen være en åpen dato i kalenderen. Hvis det ikke er definert et lagerkalendersett, vil det ta dekningsgruppekalenderen. 
+1. Lagerkalenderen for "Fra"-lager
+1. Dekningsgruppekalender (se tilbakefallsordre for kalenderen ovenfor) Hvis det er angitt et lagerkalenderensett, vil forsendelsesdatoen være en åpen dato i kalenderen. Hvis det ikke er definert et lagerkalendersett, vil det ta dekningsgruppekalenderen. 
 
 ### <a name="receipt-date-of-a-planned-transfer-order"></a>Mottaksdato for et overføringsforslag
 Mottaksdatoen for en overføringsordre angir datoen varene mottas i lageret "Til".
 
 Kalendere som brukes til å angi den mottaksdato for de som vises etter prioritet: 
-    1. Dekningsgruppekalender 
-    2. Lagerkalenderen til "Til"-lageret Hvis det er et dekningskalendersett, vil mottaksdatoen være en åpen dato i kalenderen. Hvis det ikke er definert et dekningsgruppekalendersett, vil det ta lagerkalenderen. 
+1. Dekningsgruppekalender 
+1. Lagerkalenderen til "Til"-lageret Hvis det er et dekningskalendersett, vil mottaksdatoen være en åpen dato i kalenderen. Hvis det ikke er definert et dekningsgruppekalendersett, vil det ta lagerkalenderen. 
 
 Når det letes etter forsendelses- og mottaksdatoer for den planlagte overføringen, vil marginene som er fastsatt av brukeren for forsendelse og mottak, også vurderes. 
 

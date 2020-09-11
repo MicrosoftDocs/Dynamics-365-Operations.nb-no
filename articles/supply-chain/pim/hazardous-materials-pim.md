@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: conradv
 ms.search.validFrom: 2019-10-14
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 5006f06d90ddcc314a51878e9e21337de7d493e7
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 079c8d23250368c92e5d79f0e2624f8340db2077
+ms.sourcegitcommit: c009ec75f53872272f11c92a1ce81a391e3845a2
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3208473"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "3699542"
 ---
 # <a name="hazardous-materials"></a>Farlige materialer
 
@@ -35,7 +35,7 @@ Informasjon om farlige materialer settes opp i administrering av produktinformas
 Når du sender materialer som er klassifisert som farlig gods, må ekstra papirarbeid inkluderes i forsendelsene. Med funksjonaliteten for farlige materialer kan kundene lagre klassifiseringsinformasjon og relatere den til utgitte varer. Denne informasjonen kan deretter brukes til å forenkle klargjøring av forsendelsesdokumentasjonen.
 
 > [!IMPORTANT]
-> For å forenkle administrering av forsendelser av farlig gods lar Microsoft Dynamics 365 Supply Chain Management deg sette opp ytterligere referanseinformasjon relatert til produkter. Du kan også sette opp ytterligere forsendelsesdokumenter. Systemet er imidlertid ikke automatisk i samsvar med forskriftene i ditt land / din region. Det er i stedet et verktøy som kan hjelpe deg med det samlede programmet.
+> Funksjoner for farlig materiale i Microsoft Dynamics 365 Supply Chain Management tilbyr en samling av nyttige produktinformasjonsfelt og relaterte funksjoner som kan hjelpe deg med å registrere og referere til informasjon som er relatert til farlige produkter. Disse funksjonene kan også hjelpe deg med å utforme og skrive ut forsendelsesdokumenter som inneholder noe av den samme informasjonen om eventuelle farlige materialer du leverer. Systemet gjør deg imidlertid ikke automatisk i samsvar med alle gjeldende forskrifter i ditt land / din region. Selv om disse verktøyene er ment å hjelpe deg å samsvare med på vanlige forskrifter, er de verken tilstrekkelig i seg selv eller garanterer at de er det. Organisasjonen din er ansvarlig for å være oppmerksom på alle gjeldende forskrifter og for å gjøre alle nødvendige tiltak for å samsvare med dem.
 
 Før du kan bruke denne funksjonaliteten, kreves følgende konfigurasjon:
 

@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: anpurush
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 87d1217204e0c5cb22f567793b043bf399ca5685
-ms.sourcegitcommit: b07434f2bd6db67d8dd712f096329acc902751ae
+ms.openlocfilehash: a6fdc7b8d7ad65c9e4bf1d3b932b62918dea6e77
+ms.sourcegitcommit: 7061a93f9f2b54aec4bc4bf0cc92691e86d383a6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "3699375"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "3710265"
 ---
 # <a name="customer-orders-in-modern-pos-mpos"></a>Kundeordrer i Modern POS (MPOS)
 
@@ -54,7 +54,10 @@ Her er noen av parameterne som kan angis på siden **Handelsparametere** for å 
     - Gebyrer brukes på nivået til salgsordrehodet, og når et antall av en produktserie returneres, kan ikke maksimal refundering av forsendelseskostnader som er tillatt for produktene og antallet, bestemmes på en måte som passer for alle kunder.
     - Forsendelseskostnader påløpes for hver forekomst av levering. Hvis en kunde returnerer varer flere ganger, og forhandlerens policy angir at forhandleren skal betale returgebyrene, blir returgebyrene større enn de faktiske forsendelseskostnadene.
     
-- **Virkemåte for avgiftsberegning** - **Beregn på nytt** er standard og tradisjonell innstilling for hvordan avgifter beregnes på nytt når ordren importeres til back office. **Ikke beregn på nytt** deaktiverer mva-omberegning til eller med mindre ordren redigeres i Back Office, når omberegning utløses. 
+
+## <a name="disable-option-to-pay-later"></a>Deaktivere alternativ for betaling senere
+
+I Commerce versjon 10.0.12 og senere kan forhandlere fjerne alternativet for å betale senere når en kundeordre opprettes på salgsstedet. Hvis du vil deaktivere alternativet, åpner du **Funksjonalitetsprofil** for kanalen som betaling senere ikke tillatt i, og deretter velger du **Rediger**. I kategorien **Generelt** velger du rullegardinlisten for å **kreve betaling for oppfyllelse**. Hvis senere betaling ikke bør tillates ved salgsstedet, velger du **Kort kreves** og deretter **Lagre**. Kjør distribusjonsplanen **1070** for å synkronisere denne endringen til kanalen. 
 
 ## <a name="transaction-flow-for-customer-orders"></a>Transaksjonsflyt for kundeordrer
 

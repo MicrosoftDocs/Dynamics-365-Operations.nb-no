@@ -3,7 +3,7 @@ title: Aktivere personlige produktanbefalinger
 description: Dette emnet beskriver hvordan du gjør tilpassede produktanbefalinger tilgjengelig for kunder i Microsoft Dynamics 365 Commerce.
 author: bebeale
 manager: AnnBe
-ms.date: 05/26/2020
+ms.date: 08/18/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -19,12 +19,12 @@ ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 4103096f23e5568cc2bf64f21720c7c16d3e0cd1
-ms.sourcegitcommit: 8905d7a7a010e451c5435086480f66650ec54926
+ms.openlocfilehash: 8a61ef0720839d371701f2f0a1fdec7e85a5feb7
+ms.sourcegitcommit: d3b970c3b93d8be12886b1c5a6bf91f0b33726dd
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "3664864"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "3700872"
 ---
 # <a name="enable-personalized-recommendations"></a>Aktivere tilpassede anbefalinger
 
@@ -49,11 +49,13 @@ Hvis du vil ha mer informasjon om produktanbefalinger, kan du se [Oversikt over 
 
 Følg denne fremgangsmåten for å aktivere tilpassing.
 
-1. Gå til **Retail og Commerce \> Produktanbefalinger \> Anbefalingsparametere**.
-1. Velg **Anbefalingslister** i listen over delte parametere for detaljhandel.
-1. Sett alternativet **Aktiver tilpassing** til **Ja**.
+1. I Commerce Headquarters søker du etter **Funksjonsbehandling**.
+1. Velg **Alle** for å vise en liste over tilgjengelige funksjoner. 
+1. Skriv inn **Anbefalinger** i søkeboksen.
+1. Velg funksjonen **Personlige produktanbefalinger**.
+1. I egenskapsruten **Personlige produktanbefalinger** velger du **Aktiver nå**.
 
-![Aktivere tilpassing](./media/enablepersonalization.png)
+![Aktivere tilpassing](./media/FeatureManagement_Personalized.PNG)
 
 > [!NOTE]
 > Når du aktiverer tilpassing, startes prosessen for generering av tilpassede produktanbefalingslister. Det kan være nødvendig med opptil én dag før listene er tilgjengelige og synlige på Internett og salgsstedet.
