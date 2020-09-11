@@ -3,7 +3,7 @@ title: Administrere policyer for kjøp og salg av permisjon
 description: Du kan gjøre det mulig for ansatte å kjøpe og selge permisjon i Dynamics 365 Human Resources.
 author: andreabichsel
 manager: AnnBe
-ms.date: 06/01/2020
+ms.date: 08/20/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,63 +18,65 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-06-01
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 859445f2b6e980b5960e512e69129f6a8fc6df2b
-ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
+ms.openlocfilehash: 55d29c42cc1b2d69517e2fcd458ee6a1bdf5277f
+ms.sourcegitcommit: 2bcacef1e010c312f019dbf9740ce87d627848a7
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "3429019"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "3712123"
 ---
-# <a name="manage-buy-and-sell-leave-policies"></a><span data-ttu-id="47d99-103">Administrere policyer for kjøp og salg av permisjon</span><span class="sxs-lookup"><span data-stu-id="47d99-103">Manage buy and sell leave policies</span></span>
+# <a name="manage-buy-and-sell-leave-policies"></a><span data-ttu-id="85d55-103">Administrere policyer for kjøp og salg av permisjon</span><span class="sxs-lookup"><span data-stu-id="85d55-103">Manage buy and sell leave policies</span></span>
 
-[!include [banner](includes/preview-feature.md)]
+<span data-ttu-id="85d55-104">Du kan la de ansatte kjøpe og selge permisjon ved å opprette en policy for å kjøpe og selge permisjon.</span><span class="sxs-lookup"><span data-stu-id="85d55-104">You can enable employees to buy and sell leave by creating a buy and sell leave policy.</span></span> <span data-ttu-id="85d55-105">Du kan konfigurere disse policyene til å bruke arbeidsflyt for godkjenninger, angi maksimumsbeløp og -satser og angi satser for kjøp og salg.</span><span class="sxs-lookup"><span data-stu-id="85d55-105">You can configure these policies to use workflow for approvals, set maximum amounts and rates, and set rates for buying and selling.</span></span> 
 
-<span data-ttu-id="47d99-104">Du kan la de ansatte kjøpe permisjon ved å opprette en policy for å kjøpe permisjon.</span><span class="sxs-lookup"><span data-stu-id="47d99-104">You can enable employees to buy leave by creating a buy leave policy.</span></span>  
+## <a name="enable-employees-to-buy-and-sell-leave"></a><span data-ttu-id="85d55-106">Gjør det mulig for ansatte å kjøpe og selge permisjon</span><span class="sxs-lookup"><span data-stu-id="85d55-106">Enable employees to buy and sell leave</span></span>
 
-## <a name="enable-employees-to-buy-and-sell-leave"></a><span data-ttu-id="47d99-105">Gjør det mulig for ansatte å kjøpe og selge permisjon</span><span class="sxs-lookup"><span data-stu-id="47d99-105">Enable employees to buy and sell leave</span></span>
+1. <span data-ttu-id="85d55-107">På **Parametere for permisjon og fravær**-siden velger du **Ja** for **Tillat ansatte å kjøpe permisjon** og **Tillat ansatte å selge permisjon**.</span><span class="sxs-lookup"><span data-stu-id="85d55-107">On the **Leave and absence parameters** page, select **Yes** for **Allow employees to buy leave** and **Allow employees to sell leave**.</span></span>
 
-1. <span data-ttu-id="47d99-106">På **Parametere for permisjon og fravær**-siden velger du **Ja** for **Tillat ansatte å kjøpe permisjon**.</span><span class="sxs-lookup"><span data-stu-id="47d99-106">On the **Leave and absence parameters** page, select **Yes** for **Allow employees to buy leave**.</span></span> 
+## <a name="create-a-buy-and-sell-leave-policy"></a><span data-ttu-id="85d55-108">Opprette en policy for kjøp og salg av permisjon</span><span class="sxs-lookup"><span data-stu-id="85d55-108">Create a buy and sell leave policy</span></span>
 
-## <a name="create-a-buy-leave-policy"></a><span data-ttu-id="47d99-107">Opprette en policy for kjøp av permisjon</span><span class="sxs-lookup"><span data-stu-id="47d99-107">Create a buy leave policy</span></span>
+1. <span data-ttu-id="85d55-109">På siden **Permisjon og fravær** velger du **Koblinger**-fanen.</span><span class="sxs-lookup"><span data-stu-id="85d55-109">On the **Leave and absence** page, select the **Links** tab.</span></span> 
 
-1. <span data-ttu-id="47d99-108">På siden **Permisjon og fravær** velger du **Koblinger**-fanen.</span><span class="sxs-lookup"><span data-stu-id="47d99-108">On the **Leave and absence** page, select the **Links** tab.</span></span> 
+2. <span data-ttu-id="85d55-110">Velg **Policy for kjøp og salg av permisjon**.</span><span class="sxs-lookup"><span data-stu-id="85d55-110">Select **Buy and sell leave policy**.</span></span>
 
-2. <span data-ttu-id="47d99-109">Velg **Policy for kjøp og salg av permisjon**.</span><span class="sxs-lookup"><span data-stu-id="47d99-109">Select **Buy and sell leave policy**.</span></span>
+3. <span data-ttu-id="85d55-111">Velg **Ny**.</span><span class="sxs-lookup"><span data-stu-id="85d55-111">Select **New**.</span></span>
 
-3. <span data-ttu-id="47d99-110">Velg **Ny**.</span><span class="sxs-lookup"><span data-stu-id="47d99-110">Select **New**.</span></span>
+4. <span data-ttu-id="85d55-112">Angi et **Navn** og en **Beskrivelse** for policyen under **Policy for kjøp og salg av permisjon**.</span><span class="sxs-lookup"><span data-stu-id="85d55-112">Enter a **Name** and **Description** for the policy under **Buy and sell leave policy**.</span></span> 
 
-4. <span data-ttu-id="47d99-111">Angi et **Navn** og en **Beskrivelse** for policyen under **Policy for kjøp og salg av permisjon**.</span><span class="sxs-lookup"><span data-stu-id="47d99-111">Enter a **Name** and **Description** for the policy under **Buy and sell leave policy**.</span></span> 
+5. <span data-ttu-id="85d55-113">Velg en **Policytype**.</span><span class="sxs-lookup"><span data-stu-id="85d55-113">Select a **Policy type**.</span></span> 
 
-5. <span data-ttu-id="47d99-112">Velg en **Policytype**.</span><span class="sxs-lookup"><span data-stu-id="47d99-112">Select a **Policy type**.</span></span> 
+   <span data-ttu-id="85d55-114">De tilgjengelige policytypene er **Antall** og **Timer per uke**.</span><span class="sxs-lookup"><span data-stu-id="85d55-114">The available policy types are **Amount** and **Hours per week**.</span></span> <span data-ttu-id="85d55-115">Velg **Antall** for å angi et **Fast antall** for det maksimale antallet de ansatte kan kjøpe og selge.</span><span class="sxs-lookup"><span data-stu-id="85d55-115">Select **Amount** to enter a **Fixed amount** for the maximum amounts employees can buy and sell.</span></span> <span data-ttu-id="85d55-116">Hvis du velger **Timer per uke**, brukes arbeidstiden som er definert i den ansattes tilordnede arbeidstidskalender, til å bestemme maksimumsantallet for policyen.</span><span class="sxs-lookup"><span data-stu-id="85d55-116">If you select **Hours per week**, the working time defined in the employee's assigned working time calendar is used to determine the maximum amount of the policy.</span></span> 
 
-   <span data-ttu-id="47d99-113">De tilgjengelige policytypene er **Antall** og **Timer per uke**.</span><span class="sxs-lookup"><span data-stu-id="47d99-113">The available policy types are **Amount** and **Hours per week**.</span></span> <span data-ttu-id="47d99-114">Velg **Antall** for å angi et **Fast antall** for det maksimale antallet de ansatte kan kjøpe og selge.</span><span class="sxs-lookup"><span data-stu-id="47d99-114">Select **Amount** to enter a **Fixed amount** for the maximum amounts employees can buy and sell.</span></span> <span data-ttu-id="47d99-115">Hvis du velger **Timer per uke**, brukes arbeidstiden som er definert i den ansattes tilordnede arbeidstidskalender, til å bestemme maksimumsantallet for policyen.</span><span class="sxs-lookup"><span data-stu-id="47d99-115">If you select **Hours per week**, the working time defined in the employee's assigned working time calendar is used to determine the maximum amount of the policy.</span></span> 
+6. <span data-ttu-id="85d55-117">Velg en **Startdato** og **Sluttdato** for policyen.</span><span class="sxs-lookup"><span data-stu-id="85d55-117">Select a **Start date** and **End date** for the policy.</span></span> <span data-ttu-id="85d55-118">Forespørsler om å kjøpe eller selge permisjon kan bare sendes innenfor denne tidsrammen.</span><span class="sxs-lookup"><span data-stu-id="85d55-118">Requests to buy or sell leave will only be available for submission during this time frame.</span></span> 
 
-6. <span data-ttu-id="47d99-116">Velg en **Startdato** og **Sluttdato** for policyen.</span><span class="sxs-lookup"><span data-stu-id="47d99-116">Select a **Start date** and **End date** for the policy.</span></span> <span data-ttu-id="47d99-117">Forespørsler om å kjøpe eller selge permisjon kan bare sendes innenfor denne tidsrammen.</span><span class="sxs-lookup"><span data-stu-id="47d99-117">Requests to buy or sell leave will only be available for submission during this time frame.</span></span> 
+7. <span data-ttu-id="85d55-119">Velg en **Arbeidsflyt-ID** for policyen.</span><span class="sxs-lookup"><span data-stu-id="85d55-119">Select a **Workflow ID** for the policy.</span></span> <span data-ttu-id="85d55-120">Alle kjøps- og salgsforespørsler vil bruke denne arbeidsflyten til gjennomgang og godkjenning.</span><span class="sxs-lookup"><span data-stu-id="85d55-120">Any buy and sell requests will use this workflow for review and approval.</span></span> 
 
-7. <span data-ttu-id="47d99-118">Under **Kjøpspolicy** velger du **Fulltidsekvivalent** (fte) for å fordele maksimumsantallet proporsjonalt på grunnlag av fulltidsekvivalenten som er definert i den ansattes stilling.</span><span class="sxs-lookup"><span data-stu-id="47d99-118">Under **Buy policy**, select **Full time equivalency** (FTE) to prorate the maximum amount based on the FTE defined on the employee's position.</span></span> <span data-ttu-id="47d99-119">Hvis policytypen er **Antall**, angir du et **Maksimalt fastsatt antall**.</span><span class="sxs-lookup"><span data-stu-id="47d99-119">If the policy type is **Amount**, enter a **Maximum fixed amount**.</span></span> 
+8. <span data-ttu-id="85d55-121">Under **Kjøpspolicy** velger du **Fulltidsekvivalent** (fte) for å fordele maksimumsantallet proporsjonalt på grunnlag av fulltidsekvivalenten som er definert i den ansattes stilling.</span><span class="sxs-lookup"><span data-stu-id="85d55-121">Under **Buy policy**, select **Full time equivalency** (FTE) to prorate the maximum amount based on the FTE defined on the employee's position.</span></span> <span data-ttu-id="85d55-122">Hvis policytypen er **Antall**, angir du et **Maksimalt fastsatt antall**.</span><span class="sxs-lookup"><span data-stu-id="85d55-122">If the policy type is **Amount**, enter a **Maximum fixed amount**.</span></span> 
 
-8. <span data-ttu-id="47d99-120">Velg **Legg til** for å legge til permisjonstyper for ansatte som vil kjøpe permisjon.</span><span class="sxs-lookup"><span data-stu-id="47d99-120">Select **Add** to add the leave types for employees to buy leave.</span></span> <span data-ttu-id="47d99-121">Du kan legge til flere permisjonstyper i policyen.</span><span class="sxs-lookup"><span data-stu-id="47d99-121">You can add multiple leave types to the policy.</span></span> 
+9. <span data-ttu-id="85d55-123">Velg **Legg til** for å legge til permisjonstyper for ansatte som vil kjøpe permisjon.</span><span class="sxs-lookup"><span data-stu-id="85d55-123">Select **Add** to add the leave types for employees to buy leave.</span></span> <span data-ttu-id="85d55-124">Du kan legge til flere permisjonstyper i policyen.</span><span class="sxs-lookup"><span data-stu-id="85d55-124">You can add multiple leave types to the policy.</span></span> 
 
-9. <span data-ttu-id="47d99-122">Angi **Måneder med jobberfaring** som permisjonstype for å aktivere forskjellige måneder med jobberfaring og fastslå det maksimale antallet en ansatt kan kjøpe.</span><span class="sxs-lookup"><span data-stu-id="47d99-122">Enter the **Months of service** for the leave type to enable different months of service to determine the maximum amount an employee can buy.</span></span> 
+10. <span data-ttu-id="85d55-125">Angi **Måneder med jobberfaring** som permisjonstype for å aktivere forskjellige måneder med jobberfaring og fastslå det maksimale antallet en ansatt kan kjøpe.</span><span class="sxs-lookup"><span data-stu-id="85d55-125">Enter the **Months of service** for the leave type to enable different months of service to determine the maximum amount an employee can buy.</span></span> 
 
-10. <span data-ttu-id="47d99-123">Angi **Maksimalt antall** for permisjonstypen.</span><span class="sxs-lookup"><span data-stu-id="47d99-123">Enter the **Maximum amount** for the leave type.</span></span> 
+11. <span data-ttu-id="85d55-126">Angi **Maksimalt antall** for permisjonstypen.</span><span class="sxs-lookup"><span data-stu-id="85d55-126">Enter the **Maximum amount** for the leave type.</span></span> 
 
-11. <span data-ttu-id="47d99-124">Angi en **Sats** som den ansatte kan kjøpe permisjon til.</span><span class="sxs-lookup"><span data-stu-id="47d99-124">Enter the **Rate** at which the employee will buy the leave.</span></span> 
+12. <span data-ttu-id="85d55-127">Angi en **Sats** som den ansatte kan kjøpe permisjon til.</span><span class="sxs-lookup"><span data-stu-id="85d55-127">Enter the **Rate** at which the employee will buy the leave.</span></span> 
 
-12. <span data-ttu-id="47d99-125">Du kan eventuelt angi en **Inntektskode** som kan brukes til å kjøpe permisjon.</span><span class="sxs-lookup"><span data-stu-id="47d99-125">Optionally enter the **Earning code** to be used for buying leave.</span></span> 
+13. <span data-ttu-id="85d55-128">Du kan eventuelt angi en **Inntektskode** som kan brukes til å kjøpe permisjon.</span><span class="sxs-lookup"><span data-stu-id="85d55-128">Optionally enter the **Earning code** to be used for buying leave.</span></span> 
 
-13. <span data-ttu-id="47d99-126">Angi eventuelt om du vil bruke FTE til å bestemme det maksimale antallet for permisjonstypen.</span><span class="sxs-lookup"><span data-stu-id="47d99-126">Optionally set whether to use FTE to determine the maximum amount for the leave type.</span></span> 
+14. <span data-ttu-id="85d55-129">Angi eventuelt om du vil bruke FTE til å bestemme det maksimale antallet for permisjonstypen.</span><span class="sxs-lookup"><span data-stu-id="85d55-129">Optionally set whether to use FTE to determine the maximum amount for the leave type.</span></span> 
 
-## <a name="add-the-buy-and-sell-leave-policy-to-a-leave-and-absence-plan"></a><span data-ttu-id="47d99-127">Legge til policyen for kjøp og salg av permisjon i en permisjons- og fraværsplan</span><span class="sxs-lookup"><span data-stu-id="47d99-127">Add the buy and sell leave policy to a leave and absence plan</span></span>
+15. <span data-ttu-id="85d55-130">Hvis du vil opprette en salgspolicy, følger du trinn 8 til 14 under **Salgspolicy**.</span><span class="sxs-lookup"><span data-stu-id="85d55-130">To create a sell policy, follow steps 8 through 14 under **Sell policy**.</span></span> 
 
-1. <span data-ttu-id="47d99-128">På **Permisjon og fravær**-siden velger du en permisjons- og fraværsplan.</span><span class="sxs-lookup"><span data-stu-id="47d99-128">On the **Leave and absence** page, select a leave and absence plan.</span></span>
+## <a name="add-the-buy-and-sell-leave-policy-to-a-leave-and-absence-plan"></a><span data-ttu-id="85d55-131">Legge til policyen for kjøp og salg av permisjon i en permisjons- og fraværsplan</span><span class="sxs-lookup"><span data-stu-id="85d55-131">Add the buy and sell leave policy to a leave and absence plan</span></span>
 
-2. <span data-ttu-id="47d99-129">Under **Regler** velger du **Policy for kjøp og salg av permisjon**.</span><span class="sxs-lookup"><span data-stu-id="47d99-129">Under **Rules**, select **Buy and sell leave policy**.</span></span>
+1. <span data-ttu-id="85d55-132">På **Permisjon og fravær**-siden velger du en permisjons- og fraværsplan.</span><span class="sxs-lookup"><span data-stu-id="85d55-132">On the **Leave and absence** page, select a leave and absence plan.</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="47d99-130">Se også</span><span class="sxs-lookup"><span data-stu-id="47d99-130">See also</span></span>
+2. <span data-ttu-id="85d55-133">Under **Regler** velger du **Policy for kjøp og salg av permisjon**.</span><span class="sxs-lookup"><span data-stu-id="85d55-133">Under **Rules**, select **Buy and sell leave policy**.</span></span>
 
-[<span data-ttu-id="47d99-131">Oversikt over permisjon og fravær</span><span class="sxs-lookup"><span data-stu-id="47d99-131">Leave and absence overview</span></span>](hr-leave-and-absence-overview.md)</br>
-[<span data-ttu-id="47d99-132">Konfigurere permisjons- og fraværstyper</span><span class="sxs-lookup"><span data-stu-id="47d99-132">Configure leave and absence types</span></span>](hr-leave-and-absence-types.md)</br>
-[<span data-ttu-id="47d99-133">Avsett permisjons- og fraværsplaner</span><span class="sxs-lookup"><span data-stu-id="47d99-133">Accrue leave and absence plans</span></span>](hr-leave-and-absence-accrue.md)</br>
-[<span data-ttu-id="47d99-134">Kjøp og selg permisjon</span><span class="sxs-lookup"><span data-stu-id="47d99-134">Buy and sell leave</span></span>](hr-employee-self-service-buy-sell-leave.md)
+## <a name="see-also"></a><span data-ttu-id="85d55-134">Se også</span><span class="sxs-lookup"><span data-stu-id="85d55-134">See also</span></span>
+
+[<span data-ttu-id="85d55-135">Oversikt over permisjon og fravær</span><span class="sxs-lookup"><span data-stu-id="85d55-135">Leave and absence overview</span></span>](hr-leave-and-absence-overview.md)</br>
+[<span data-ttu-id="85d55-136">Konfigurere permisjons- og fraværstyper</span><span class="sxs-lookup"><span data-stu-id="85d55-136">Configure leave and absence types</span></span>](hr-leave-and-absence-types.md)</br>
+[<span data-ttu-id="85d55-137">Avsett permisjons- og fraværsplaner</span><span class="sxs-lookup"><span data-stu-id="85d55-137">Accrue leave and absence plans</span></span>](hr-leave-and-absence-accrue.md)</br>
+[<span data-ttu-id="85d55-138">Kjøp og selg permisjon</span><span class="sxs-lookup"><span data-stu-id="85d55-138">Buy and sell leave</span></span>](hr-employee-self-service-buy-sell-leave.md)
 
