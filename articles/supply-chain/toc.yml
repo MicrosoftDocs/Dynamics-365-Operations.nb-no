@@ -70,12 +70,12 @@
                   items:
                     - name: Nyheter eller endringer på startsiden for Supply Chain Management
                       href: get-started/whats-new-home-page.md
+                    - name: Supply Chain Management 10.0.14 (november 2020)
+                      href: get-started/whats-new-scm-10-0-14.md
                     - name: Supply Chain Management 10.0.13 (oktober 2020)
                       href: get-started/whats-new-scm-10-0-13.md
                     - name: Supply Chain Management 10.0.12 (august 2020)
                       href: get-started/whats-new-scm-10-0-12.md
-                    - name: Supply Chain Management 10.0.11 (juli 2020)
-                      href: get-started/whats-new-scm-10-0-11.md
                 - name: Funksjoner som er fjernet eller avskrevet
                   items:
                     - name: Funksjoner som er fjernet eller avskrevet i Dynamics 365 Supply Chain Management
@@ -333,7 +333,7 @@
                   href: asset-management/work-orders/automatic-update-of-asset-counters.md
                 - name: Sjekklister for vedlikehold
                   href: asset-management/work-orders/maintenance-checklists.md
-                - name: Nedetid ved vedlikehold
+                - name: Vedlikeholdsnedetid for arbeidsordrer
                   href: asset-management/work-orders/maintenance-downtime.md
                 - name: Legge til feil i arbeidsordre
                   href: asset-management/work-orders/add-fault-to-work-order.md
@@ -363,11 +363,11 @@
                   href: asset-management/preventive-and-reactive-maintenance/maintenance-rounds.md
                 - name: Vedlikeholdsplan
                   href: asset-management/preventive-and-reactive-maintenance/maintenance-schedule.md
-                - name: Kostnader for vedlikeholdsplan
+                - name: Kostnader for vedlikeholdstidslinje
                   href: asset-management/preventive-and-reactive-maintenance/maintenance-schedule-cost.md
                 - name: Opprett arbeidsordrer
                   href: asset-management/preventive-and-reactive-maintenance/creating-work-orders.md
-                - name: Nedetid ved vedlikehold
+                - name: Vedlikeholdsnedetid
                   href: asset-management/preventive-and-reactive-maintenance/maintenance-stop.md
             - name: Kapasitetsplanlegging
               items:
@@ -671,7 +671,7 @@
                   href: ../fin-ops-core/dev-itpro/analytics/supported-fonts.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Konfigurere SSRS for lokale distribusjoner
                   href: ../fin-ops-core/dev-itpro/analytics/configure-ssrs-on-premises.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Utskrift
+                - name: Skriver ut
                   items:
                     - name: Oversikt over utskrift av dokument
                       href: ../fin-ops-core/dev-itpro/analytics/print-documents.md?toc=/dynamics365/supply-chain/toc.json
@@ -1345,8 +1345,6 @@
               items:
                 - name: Oversikt over planleggingsoptimalisering
                   href: master-planning/planning-optimization/planning-optimization-overview.md
-                - name: Planlegging med negative lagerbeholdningsantall
-                  href: master-planning/planning-optimization/negative-on-hand.md
                 - name: Komme i gang med planleggingsoptimalisering
                   href: master-planning/planning-optimization/get-started.md
                 - name: Analyse for tilpassing av planleggingsoptimalisering
@@ -1355,16 +1353,22 @@
                   href: master-planning/planning-optimization/plan-filters.md
                 - name: Hovedplanlegging med forretningsavtaler
                   href: master-planning/planning-optimization/purchase-trade-agreement.md
-                - name: Vise planhistorikk og planleggingslogger
-                  href: master-planning/planning-optimization/plan-history-logs.md
+                - name: Sikkerhetsmarginer
+                  href: master-planning/planning-optimization/safety-margins.md
+                - name: Godkjenn planlagte ordrer
+                  href: master-planning/planning-optimization/approved-planned-order.md
                 - name: Automatisk autorisasjon med planleggingsoptimalisering
                   href: master-planning/planning-optimization/planning-optimization-auto-firming.md
+                - name: Planlegging med negative lagerbeholdningsantall
+                  href: master-planning/planning-optimization/negative-on-hand.md
+                - name: Vise planhistorikk og planleggingslogger
+                  href: master-planning/planning-optimization/plan-history-logs.md
                 - name: Avbryte en planleggingsjobb
                   href: master-planning/planning-optimization/cancel-planning-job.md
-                - name: Utvidelse av planleggingsoptimalisering
-                  href: master-planning/planning-optimization/extensibility.md
                 - name: Feilsøke planleggingsoptimalisering
                   href: master-planning/planning-optimization/planning-optimization-trouble-shooting.md
+                - name: Utvidelse av planleggingsoptimalisering
+                  href: master-planning/planning-optimization/extensibility.md
             - name: Hovedplaner
               items:
                 - name: Oversikt over hovedplaner
@@ -2621,6 +2625,8 @@
                   items:
                     - name: Definere gruppeplukking
                       href: warehousing/set-up-cluster-picking.md
+                    - name: Gruppestilling full
+                      href: warehousing/cluster-position-full.md
                     - name: Systemstyrt gruppeplukking
                       href: warehousing/system-directed-cluster-pick.md
                     - name: Definere containerbruk

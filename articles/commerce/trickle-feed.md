@@ -3,7 +3,7 @@ title: Fordele feedbasert ordreoppretting for detaljhandelstransaksjoner
 description: Dette emnet beskriver den fordelte, feedbaserte ordreopprettingen for butikktransaksjoner i Microsoft Dynamics 365 Commerce.
 author: josaw1
 manager: AnnBe
-ms.date: 06/08/2020
+ms.date: 09/04/2020
 ms.topic: index-page
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 6e097ead7cacb3f71452323656546a4be661457f
-ms.sourcegitcommit: 7061a93f9f2b54aec4bc4bf0cc92691e86d383a6
+ms.openlocfilehash: 79f99b9b401de3e3bcca6ec5a13a3b4f7bad6f8c
+ms.sourcegitcommit: 5b620f670ac0f403a0fdcdeb9c3f970b163191ee
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "3710289"
+ms.lasthandoff: 09/04/2020
+ms.locfileid: "3766742"
 ---
 # <a name="trickle-feed-based-order-creation-for-retail-store-transactions"></a>Fordele feedbasert ordreoppretting for detaljhandelstransaksjoner
 
@@ -36,22 +36,20 @@ Med fordeling av feedbasert ordreoppretting, som ble innført i Retail versjon 1
 
 ## <a name="how-to-use-trickle-feed-based-posting"></a>Bruke fordeling av feedbasert postering
   
-1. Hvis du vil aktivere fordeling av feedbasert postering for transaksjoner, går du til **Systemadministrasjon > Oppsett > Lisenskonfigurasjon** og deaktiverer nøkkelen **Utdrag**.
+1. Hvis du vil aktivere fordelingsfeedbasert postering av detaljhandelstransaksjoner, aktiverer du funksjonen **Detaljhandelsoppgaver – fordelingsfeed** ved hjelp av Funksjonsbehandling.
 
-2. På samme side aktiverer du lisensnøkkelen **Utdrag (fordelingsfeed) – forhåndsvisning**. Når du aktiverer denne nøkkelen, må du kontrollere at det ikke finnes ventende utdrag som venter på å bli postert. 
+    > [!IMPORTANT]
+    > Før du aktiverer funksjonen må du sørge for at ingen utdrag venter på å bli postert.
 
-    > [!Important]
-    > Før du aktiverer lisensnøkkelen **Utdrag (fordelingsfeed) – forhåndsvisning**, må du kontrollere at ingen ventende utdrag venter på å bli postert.
-
-3. Gjeldende utdragsdokument blir delt inn i to forskjellige typer: transaksjonsutdrag og regnskapsoppgjør.
+2. Gjeldende utdragsdokument blir delt inn i to typer: transaksjonsutdrag og regnskapsoppgjør.
 
       - Transaksjonsoppgaven vil plukke opp alle uposterte og godkjente transaksjoner, og opprette salgsordrer, salgsfakturaer, betalings- og rabattjournaler og transaksjoner for inntekter/utgifter med det intervallet du konfigurerer. Du bør konfigurere denne prosessen til å kjøre med høy frekvens, slik at dokumenter opprettes når transaksjonene lastes opp til Headquarters via P-jobben. Med transaksjonsutdraget som allerede oppretter salgsordrer og salgsfakturaer, er det ikke noe reelt behov for å konfigurere den satsvise jobben **Poster lager**. Du kan imidlertid fortsatt bruke den til å oppfylle bestemte forretningskrav som du kanskje har.  
       
      - Regnskapsoppgjøret er utformet til å opprettes på slutten av dagen, og støtter bare avsluttingsmetoden **Skift**. Dette utdraget vil være begrenset til økonomisk avstemming, og vil bare opprette journaler for de ulike beholdningsbeløpene mellom telt beløp og transaksjonsbeløp for de forskjellige anleggsmidlene, sammen med journaler for andre kontantstyringstransaksjoner.   
 
-4. Hvis du vil beregne transaksjonsutdraget, klikker du **Retail og Commerce > IT for Retail og Commerce > Salgsstedspostering > Beregn transaksjonsutdrag satsvis**. Hvis du vil postere transaksjonsutdrag satsvis, klikker du **Retail og Commerce > IT for Retail og Commerce > Salgsstedspostering > Poster transaksjonsutdrag satsvis**.
+3. Hvis du vil beregne transaksjonsutdraget, går du til **Retail og Commerce > IT for Retail og Commerce > Salgsstedspostering > Beregn transaksjonsutdrag satsvis**. Hvis du vil postere transaksjonsutdragene satsvis, går du til **Retail og Commerce > IT for Retail og Commerce > Salgsstedspostering > Poster transaksjonsutdrag satsvis**.
 
-5. Hvis du vil beregne regnskapsoppgjøret, klikker du **Retail og Commerce > IT for Retail og Commerce > Salgsstedspostering > Beregn regnskapsoppgjør satsvis**. Hvis du vil postere regnskapsoppgjøret satsvis, klikker du **Retail og Commerce > IT for Retail og Commerce > Salgsstedspostering > Poster regnskapsoppgjør satsvis**.
+4. Hvis du vil beregne regnskapsoppgjøret, går du til **Retail og Commerce > IT for Retail og Commerce > Salgsstedspostering > Beregn regnskapsoppgjør satsvis**. Hvis du vil postere regnskapsoppgjøret satsvis, går du til **Retail og Commerce > IT for Retail og Commerce > Salgsstedspostering > Poster regnskapsoppgjør satsvis**.
 
 > [!NOTE]
 > Menyelementene **Retail og Commerce > IT for Retail og Commerce > Salgsstedspostering > Beregn utdrag satsvis** og **Retail og Commerce > IT for Retail og Commerce > Salgsstedspostering > Poster utdrag satsvis** blir fjernet med denne nye funksjonen.

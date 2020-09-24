@@ -14,12 +14,12 @@
               items:
                 - name: Nyheter eller endringer på startsiden for Plattformoppdateringer
                   href: get-started/whats-new-home-page.md
+                - name: Plattformoppdateringer for 10.0.14 (november 2020)
+                  href: get-started/whats-new-platform-updates-10-0-14.md
                 - name: Plattformoppdateringer for 10.0.13 (oktober 2020)
                   href: get-started/whats-new-platform-updates-10-0-13.md
                 - name: Plattformoppdateringer for 10.0.12 (august 2020)
                   href: get-started/whats-new-platform-update-10-0-12.md
-                - name: Plattformoppdateringer for 10.0.11 (juli 2020)
-                  href: get-started/whats-new-platform-update-35.md
             - name: Funksjoner som er fjernet eller avskrevet
               items:
                 - name: Fjernede eller avskrevne Platform-funksjoner
@@ -606,6 +606,14 @@
                   href: dev-tools/pipeline-create-deployable-package.md
                 - name: Versjonskontroll for X++-modell i Azure Pipelines
                   href: dev-tools/pipeline-model-version.md
+                - name: Laste ned aktiva ved hjelp av Azure Pipelines
+                  href: dev-tools/pipeline-asset-download.md
+                - name: Laste opp aktiva ved hjelp av Azure Pipelines
+                  href: dev-tools/pipeline-asset-upload.md
+                - name: Distribuere aktiva ved hjelp av Azure Pipelines
+                  href: dev-tools/pipeline-deploy-asset.md
+                - name: Opprette en LCS-tilkobling (Lifecycle Services) i Azure Pipelines
+                  href: dev-tools/pipeline-lcs-connection.md
             - name: Eksempel på flåtestyringsprogram
               items:
                 - name: Ende-til-ende-scenario for eksempelprogrammet Flåtestyring

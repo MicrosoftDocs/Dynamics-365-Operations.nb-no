@@ -92,6 +92,8 @@
                   items:
                     - name: Nyheter eller endringer på startsiden for Commerce
                       href: get-started/whats-new-home-page.md
+                    - name: Commerce 10.0.14 (november 2020)
+                      href: get-started/whats-new-commerce-10-0-14.md
                     - name: Commerce 10.0.13 (oktober 2020)
                       href: get-started/whats-new-commerce-10-0-13.md
                     - name: Commerce 10.0.12 (august 2020)
@@ -242,7 +244,7 @@
                   href: retail-hardware-station-configuration-installation.md
                 - name: Massedistribusjon av selvbetjeningskomponenter
                   href: dev-itpro/retail-mass-deployment.md
-                - name: Hendelser for Retail-komponenter for diagnose og feilsøking
+                - name: Hendelser for Commerce-komponent for diagnose og feilsøking
                   href: dev-itpro/retail-component-events-diagnostics-troubleshooting.md
                 - name: Bruke en distribuerbar pakke
                   href: ../fin-ops-core/dev-itpro/deployment/apply-deployable-package-system.md?toc=/dynamics365/commerce/toc.json
@@ -526,6 +528,8 @@
                       href: omni-channel-payments.md
                     - name: Commerce-ordrebetalinger for omnikanal
                       href: dev-itpro/commerce-payments.md
+                    - name: Behandle kredittkort uten maskinvarestasjon
+                      href: dev-itpro/cnp-pos.md
                     - name: Vanlige spørsmål om betalinger
                       href: dev-itpro/payments-retail.md
                 - name: Behandle Bing-kart for organisasjonen
@@ -700,7 +704,7 @@
           items:
             - name: Kundeordrer
               items:
-                - name: Kundeordrer i MPOS
+                - name: Kundeordrer på salgssted (POS)
                   href: customer-orders-overview.md
                 - name: Hybride kundeordrer
                   href: hybrid-customer-orders.md
@@ -826,6 +830,8 @@
                   href: custom-pages-user-logins.md
                 - name: Konfigurere flere B2C-leiere i et Commerce-miljø
                   href: configure-multi-B2C-tenants.md
+                - name: Domener i Dynamics 365 Commerce
+                  href: domains-commerce.md
                 - name: Legge til støtte for et innholdsleveringsnettverk (CDN)
                   href: add-cdn-support.md
                 - name: Aktivere stedsbasert butikkregistrering
@@ -990,6 +996,8 @@
                       href: media-gallery-module.md
                     - name: Vurderings- og omtalemoduler
                       href: ratings-reviews-modules.md
+                    - name: Modul for sosial deling
+                      href: social-share-module.md
                 - name: Innkjøpsmoduler
                   items:
                     - name: Handlekurvmodul
@@ -1026,7 +1034,13 @@
                   items:
                     - name: Søkebanemodul
                       href: add-breadcrumb.md
-            - name: Søk
+                    - name: Navigasjonsmenymodul
+                      href: nav-menu-module.md
+                - name: Samsvarsmoduler
+                  items:
+                    - name: Samtykkemodul for informasjonskapsler
+                      href: cookie-consent-module.md
+            - name: Søke
               items:
                 - name: Oversikt over standard kategorimålside og søkeresultatside
                   href: category-search-page-overview.md
@@ -1172,7 +1186,7 @@
                   href: ../fin-ops-core/dev-itpro/analytics/supported-fonts.md?toc=/dynamics365/commerce/toc.json
                 - name: Konfigurere SSRS for lokale distribusjoner
                   href: ../fin-ops-core/dev-itpro/analytics/configure-ssrs-on-premises.md?toc=/dynamics365/commerce/toc.json
-                - name: Utskrift
+                - name: Skriver ut
                   items:
                     - name: Oversikt over utskrift av dokument
                       href: ../fin-ops-core/dev-itpro/analytics/print-documents.md?toc=/dynamics365/commerce/toc.json
@@ -1652,9 +1666,9 @@
                   href: ../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-set-up.md?toc=/dynamics365/commerce/toc.json
                 - name: Utsette utføring av ER-formatelementer
                   items:
-                    - name: Utsette utføring av et sekvenselement
+                    - name: Utsette kjøringen av sekvenselementer i ER-formater
                       href: ../fin-ops-core/dev-itpro/analytics/er-defer-sequence-element.md
-                    - name: Utsette utføring av et XML-element
+                    - name: Utsette kjøringen av XML-elementer i ER-formater
                       href: ../fin-ops-core/dev-itpro/analytics/er-defer-xml-element.md
             - name: Bruke elektroniske rapporteringsløsninger i Finance and Operations
               items:
