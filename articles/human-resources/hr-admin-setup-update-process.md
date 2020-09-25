@@ -3,7 +3,7 @@ title: Oppdatere prosess
 description: Microsoft Dynamics 365 Human Resources er ekte programvare som tjeneste (SaaS) som gir kontinuerlige, berøringsfrie serviceoppdateringer for program- og plattformendringer.
 author: andreabichsel
 manager: AnnBe
-ms.date: 02/27/2020
+ms.date: 09/01/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-27
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 006f3c7218436c1c70e29e51f8b1b784ae36b2dd
-ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
+ms.openlocfilehash: be9be5509f933ecbda5bf6d040027a7bac8b666d
+ms.sourcegitcommit: 5472005274f2f94fba82dda90de128f39d8b8390
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "3431182"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "3759965"
 ---
 # <a name="update-process"></a>Oppdatere prosess
 
@@ -33,7 +33,7 @@ Microsoft Dynamics 365 Human Resources er ekte programvare som tjeneste (SaaS) s
 
 Oppdateringer utgis regelmessig for alle miljøer. Human Resources støttes i henhold til [Microsoft Lifecycle-policyen](https://support.microsoft.com/hub/4095338/microsoft-lifecycle-policy), som gir konsekvente og forutsigbare retningslinjer for tilgjengelighet av produktstøtte.
 
-## <a name="release-cadence"></a>Lanseringsfrekvens
+## <a name="release-cadence"></a>Lanseringsfrekvens 
 
 Human Resources-oppdateringer brukes for alle miljøer automatisk. Human Resources har to typer lanseringer:
 
@@ -56,14 +56,12 @@ Versjoner er gjennomgått, testet og godkjent i et internt miljø. Etter at buil
 
 ## <a name="release-cadence-exceptions-in-2020"></a>Unntak fra lanseringsfrekvens i 2020
 
-Følgende datoer er unntak fra den vanlige utgivelsesplanen:
+Hvis du vil ha en konto for helligdager, er utgivelsesplanen for november og desember 2020 som følger:
 
-| Dato | beskrivelse |
-| --- | --- |
-| Uken fra 23. november | Ingen oppdateringer |
-| Uken fra 14. desember | Bare mindre oppdateringer |
-| Uken fra 21. desember | Ingen oppdateringer |
-| Uken fra 28. desember | Ingen oppdateringer |
+- Novemberutgivelse: 2–13. november
+- Desemberutgivelse: 30. november til 11. desember
+ 
+Lanseringsfrekvensen på to uker vil fortsette som vanlig den 11. januar 2021.
 
 ## <a name="communications"></a>Kommunikasjoner
 

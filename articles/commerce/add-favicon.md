@@ -3,7 +3,7 @@ title: Legge til et favorittikon
 description: Dette emnet forklarer hvordan du legger til et favorittikon på området.
 author: bicyclingfool
 manager: annbe
-ms.date: 04/27/2020
+ms.date: 08/31/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: StuHarg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 198927e3391bdb577ebc845ff41d49ca798251ff
-ms.sourcegitcommit: 81f162f2d50557d7afe292c8d326618ba0bc3259
+ms.openlocfilehash: 262e478d426fd913130b21a3434331c7d27b54b2
+ms.sourcegitcommit: 420b9e538f706178f8e1f2786e02f4f400bf2336
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "3686796"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "3761159"
 ---
 # <a name="add-a-favicon"></a>Legge til et favorittikon
 
@@ -58,30 +58,30 @@ Hvis du vil opprette HTML-koden for favorittikonet, bruker du følgende HTML-str
 
 `<link rel="shortcut icon" href="Public_URL_for_your_favicon">`
 
-## <a name="create-a-page-fragment-that-contains-a-metatag-for-your-favicon"></a>Opprette et sidefragment som inneholder en metakode for favorittikon
+## <a name="create-a-fragment-that-contains-a-metatag-for-your-favicon"></a>Opprette et fragment som inneholder en metakode for favorittikon
 
-For å opprette et sidefragment som inneholder en metakode for favorittikon, følger du disse trinnene.
+For å opprette et fragment som inneholder en metakode for favorittikon, følger du disse trinnene.
 
 1. Gå til **Fragmenter**, og velg **Nytt**.
-1. I dialogboksen **Nytt sidefragment** velger du **Metakoder** som modulen som sidefragmentet er basert på.
-1. Angi et navn på sideoppsettet, og velg deretter **OK**.
+1. I dialogboksen **Nytt fragment** velger du **Metakoder** som modulen som fragmentet er basert på.
+1. Angi et navn på fragmentet, og velg deretter **OK**.
 1. Velg det underordnede **Standard metakoder** i fragmenthierarkitreet.
 1. I ruten til høyre under **Metakoder** velger du **Legg til**, og deretter skriver du inn HTML-strengen du opprettet tidligere for favorittikonet. 
-1. Velg **Fullfør redigering**, og velg deretter **Publiser** for å publisere sidefragmentet.
+1. Velg **Fullfør redigering**, og velg deretter **Publiser** for å publisere fragmentet.
 
-## <a name="add-the-metatag-page-fragment-to-the-html-head-section-of-your-pages"></a>Legge til metakodesidefragmentet i HTML-hodedelen på sidene
+## <a name="add-the-metatag-fragment-to-the-html-head-section-of-your-pages"></a>Legge til metakodefragmentet i HTML-hodedelen på sidene
 
-For å legge til metakodesidefragmentet i HTML-**hode**-delen på sidene følger du trinnene nedenfor.
+For å legge til metakodefragmentet i delen HTML-**hode** på sidene følger du trinnene nedenfor.
 
 1. Gå til **Maler**, og åpne malen for sidene du vil legge til favorittikonet ditt, og velg deretter **Rediger**.
-1. I malhierarkitreet velger du ellipser (**...**)-knappen til høyre for **HTML-hode**-beholderen, og deretter velger du **Legg til sidefragment**.
-1. I dialogboksen **Velg sidefragment** velger du metakodesidefragmentet du opprettet tidligere, og deretter velger du **OK**.
+1. I malhierarkitreet velger du ellipser (**...**)-knappen til høyre for **HTML-hode**-beholderen, og deretter velger du **Legg til fragment**.
+1. I dialogboksen **Velg fragment** velger du metakodefragmentet du opprettet tidligere, og deretter velger du **OK**.
 1. Velg **Fullfør redigering**, og velg deretter **Publiser** for å publisere malen.
 
 > [!NOTE]
-> Hvis området bruker mer enn én mal, må du legge til metakodesidefragmentet i alle.
+> Hvis området bruker mer enn én mal, må du legge til metakodefragmentet i alle.
 
-Når du forhåndsviser sider som er basert på malen som du la til metakodesidefragmentet i, kan du nå se favorittikonet i leserkategorien.
+Når du forhåndsviser sider som er basert på malen som du la til metakodefragmentet i, kan du nå se favorittikonet i leserkategorien.
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 

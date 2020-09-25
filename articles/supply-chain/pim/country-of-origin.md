@@ -15,18 +15,26 @@ ms.search.region: Global
 ms.author: damadipa
 ms.search.validFrom: 2020-07-15
 ms.dyn365.ops.version: Release 10.0.9
-ms.openlocfilehash: fd234c57bf9893e9b8bcfa5ada7439a642f7a288
-ms.sourcegitcommit: 70d0b4e6bdacc15ec75935550ae55fc02cb79624
+ms.openlocfilehash: d0d93a02817bab8e188818862c1bb7f84b498fc1
+ms.sourcegitcommit: 5bb36b74935ffe140367fd6ecf956b4857ad12e5
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "3596262"
+ms.lasthandoff: 09/14/2020
+ms.locfileid: "3802803"
 ---
 # <a name="country-of-origin"></a>Opprinnelsesland
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 Mange organisasjoner utsteder sertifikater til sine leverandører for å sikre at produkter oppfyller bestemte sertifiseringsstandarder. Disse sertifikatene avhenger ofte av opprinnelseslandet. I opprinnelseslandet kan du koble et produkt til opprinnelsesland og holde oversikt over produktsertifiseringer.
+
+## <a name="turn-on-the-country-of-origin-feature"></a>Aktivere funksjonen for opprinnelsesland
+
+Før du kan bruke denne funksjonen, må den være aktivert i systemet. Administratorer kan bruke innstillingene for [funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til å kontrollere funksjonsstatusen og aktivere den. I **Funksjonsadministrering**-arbeidsområdet er denne funksjonen oppført på følgende måte:
+
+- **Modul:** *Behandling av produktinformasjon*
+- **Funksjonsnavn:** *Funksjon for administrasjon av opprinnelsesland*
 
 ## <a name="configure-source-and-destination-countries"></a>Konfigurere kilde- og målland
 

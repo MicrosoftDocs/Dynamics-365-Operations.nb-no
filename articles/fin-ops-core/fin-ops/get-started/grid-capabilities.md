@@ -3,7 +3,7 @@ title: Rutenettfunksjoner
 description: Dette emnet beskriver flere kraftfulle funksjoner i rutenettkontrollen. Den nye rutenettfunksjonen må være aktivert for at du skal kunne få tilgang til disse funksjonene.
 author: jasongre
 manager: AnnBe
-ms.date: 08/03/2020
+ms.date: 08/31/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -16,24 +16,23 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: b1dd5e852bdc116d0848687782c930b19eae7900
-ms.sourcegitcommit: 27233e0fda61dac541c5210ca8d94ab4ba74966f
+ms.openlocfilehash: b4efad8423ab42bf6f7f6e2d1054307c11d31d2c
+ms.sourcegitcommit: 241ada0945c72d769eaa70ae35aedbb6a3233fdf
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/03/2020
-ms.locfileid: "3651696"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "3760405"
 ---
 # <a name="grid-capabilities"></a>Rutenettfunksjoner
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Den nye rutenettkontrollen tilgjengeliggjør en rekke nyttige og kraftfulle funksjoner som kan brukes til å forbedre brukerproduktivitet, konstruere mer interessante visninger av dataene og få meningsfulle innsikter i dataene. Denne artikkelen dekker følgende funksjoner: 
 
 -  Beregner totaler
--  Gruppering av data
 -  Skriving i forkant av systemet
 -  Evaluering av matematiske uttrykk 
+-  Grupperetabelldata (aktivert separat ved hjelp av **funksjonen (Forhåndsvisning) Gruppering i rutenett**)
 
 ## <a name="calculating-totals"></a>Beregner totaler
 I Finance and Operations-apper har brukere muligheten til å se totalverdier nederst i numeriske kolonner i rutenett. Disse totalverdiene vises i en bunntekstinndeling nederst i rutenettet. 
@@ -71,21 +70,6 @@ Hvis beregningen tar for lang tid, kan du avbryte operasjonen ved å velge **Avb
 
 Totalverdier oppdateres automatisk når du oppdaterer, sletter eller oppretter rader i datasettet.  
 
-## <a name="grouping-data"></a>Gruppering av data
-Bedriftsbrukere må ofte utføre ad hoc-analyse av data. Selv om dette kan utføres ved å eksportere data til Microsoft Excel og bruke pivottabeller, gjør **Gruppering**-funksjonaliteten i tabellnett det mulig for brukere å organisere dataene på interessante måter i Finance and Operations-apper. Ettersom denne funksjonen utvider **Totalverdier**-funksjonen, gjør **Gruppering** det også mulig å få meningsfulle innsikter i dataene takket være oppgivelse av subtotalverdier på gruppenivå.
-
-Hvis du vil bruke denne funksjonen, høyreklikker du kolonnen du vil gruppere etter, og velger **Grupper etter denne kolonnen**. Denne handlingen sorterer dataene etter den valgte kolonnen, legger til en ny gruppe etter kolonne i begynnelsen av rutenettet og setter inn "topptekstrader" i begynnelsen av hver gruppe. Disse topptekstradene inneholder følgende informasjon om hver gruppe: 
--  Dataverdi for gruppen 
--  Kolonneetikett (denne informasjonen vil være spesielt nyttig etter at grupperinger på flere nivåer støttes).
--  Antallet datarader i denne gruppen
--  Subtotalverdier for enhver kolonne som er konfigurert for å vise totalverdier
-
-Med [Lagrede visninger](saved-views.md) aktivert kan denne grupperingen lagres ved å tilpasning som en del av en visning for rask tilgang neste gang du besøker siden.  
-
-Hvis du velger **Grupper etter denne kolonnen** for en annen kolonne, vil den opprinnelige grupperingen bli erstattet, da bare ett grupperingsnivå støttes i versjon 10.0.9 med plattformoppdatering 33.
-
-Hvis du vil angre gruppering i et rutenett, høyreklikker du på grupperingskolonnen og velger **Opphev gruppering**.  
-
 ## <a name="typing-ahead-of-the-system"></a>Skriving i forkant av systemet
 I mange forretningsscenarier er muligheten til raskt å legge inn data i systemet svært viktig. Før den nye rutenetrkontrollen ble innført, kunne brukere bare endre data i den gjeldende raden. Før de kunne opprette en ny rad eller bytte til en annen rad, ble de tvunget til å vente på at systemet skal validere eventuelle endringer. I et forsøk på å redusere tiden som brukere venter på at disse valideringene skal fullføres, og for å forbedre brukerproduktiviteten, justerer det nye rutenettet disse valideringene slik at de er asynkrone. Derfor kan brukeren flytte til andre rader for å gjøre endringer mens tidligere radvalideringer venter. 
 
@@ -109,6 +93,32 @@ Som en produktivitetsforsterkning kan brukeren legge inn matematiske formler i n
 
 Hvis du vil at systemet skal gjenkjenne en verdi som et uttrykk, starter du verdien med et likhetstegn (**=**). Hvis du vil ha mer informasjon om de støttede operatorene og syntaksen, kan du se [Støttede matematiske symboler](http://bugwheels94.github.io/math-expression-evaluator/#supported-maths-symbols).
 
+## <a name="grouping-tabular-data"></a>Gruppere tabelldata
+[!include [preview banner](../includes/preview-banner.md)]
+
+Bedriftsbrukere må ofte utføre ad hoc-analyse av data. Selv om dette kan utføres ved å eksportere data til Microsoft Excel og bruke pivottabeller, gjør funksjonen **(Forhåndsvisning) Gruppering i rutenett**, som er avhengig av den nye rutenettkontrollfunksjonen, det mulig for brukere å organisere sine tabelldata på interessante måter i Finance and Operations-apper. Ettersom denne funksjonen utvider **Totalverdier**-funksjonen, gjør **Gruppering** det mulig å få meningsfulle innsikter i dataene takket være oppgivelse av subtotalverdier på gruppenivå.
+
+Hvis du vil bruke denne funksjonen, høyreklikker du kolonnen du vil gruppere etter, og velger **Grupper etter denne kolonnen**. Denne handlingen sorterer dataene etter den valgte kolonnen, legger til en ny forekomst av **Grupper etter kolonne** i begynnelsen av rutenettet og setter inn "topptekstrader" i begynnelsen av hver gruppe. Disse topptekstradene inneholder følgende informasjon om hver gruppe: 
+-  Dataverdi for gruppen 
+-  Kolonnenavn (Denne informasjonen vil være spesielt nyttig etter at grupperinger på flere nivåer støttes.)  
+-  Antallet datarader i denne gruppen
+-  Subtotalverdier for enhver kolonne som er konfigurert for å vise totalverdier
+
+Med [Lagrede visninger](saved-views.md) aktivert kan denne grupperingen lagres ved å tilpasning som en del av en visning for rask tilgang neste gang du besøker siden.  
+
+Hvis du velger **Grupper etter denne kolonnen** for en annen kolonne, vil den opprinnelige grupperingen bli erstattet, da bare ett grupperingsnivå støttes fra og med versjon 10.0.9/plattformoppdatering 33.
+
+Hvis du vil angre gruppering i et rutenett, høyreklikker du grupperingskolonnen og velger **Opphev gruppering**.  
+
+### <a name="expanding-and-collapsing-groups"></a>Vise og skjule grupper
+Den innledende grupperingen av data vil få alle grupper vist. Du kan opprette sammendragsvisninger av dataene ved å skjule enkeltstående grupper, eller du kan bruke gruppevisning og -skjuling for å hjelpe til med å navigere gjennom dataene. Hvis du vil vise eller skjule en gruppe, velger du knappen med vinkeltegnet (>) i den tilsvarende topptekstraden for gruppe. Legg merke til at vis/skjul-statusen til enkelt grupper **ikke** lagres i tilpassing.
+
+### <a name="selecting-and-unselecting-rows-at-the-group-level"></a>Merke og oppheve merking av rader på gruppenivå
+På samme måte som du kan merke (eller oppheve) alle radene i rutenettet ved å merke av øverst i den første kolonnen i rutenettet, kan du også raskt merke av for (eller oppheve merking) for alle radene i en gruppe ved å merke av i den tilsvarende topptekstraden for gruppe. Avmerkingsboksen i topptekstraden for gruppe vil alltid gjenspeile den gjeldende valgstatusen for rader i denne gruppen, uansett om alle rader er merket, ingen rader er merket, eller bare enkelte rader er merket.
+
+### <a name="hiding-column-names"></a>Skjule kolonnenavn
+Når du grupperer data, er standard virkemåte å vise kolonnenavnet i topptekstraden for gruppe. Fra og med versjon 10.0.14/plattformoppdatering 38, kan du velge å skjule kolonnenavnet i topptekstrader for gruppe ved å velge **Alternativer for rutenett** > **Skjul gruppekolonnenavn**.
+
 ## <a name="frequently-asked-questions"></a>Vanlige spørsmål
 ### <a name="how-do-i-enable-the-new-grid-control-in-my-environment"></a>Hvordan aktiverer jeg den nye rutenettkontrollen i miljøet? 
 
@@ -131,7 +141,7 @@ Alle etterfølgende brukerøkter starter med at den nye rutenettkontrollen er ak
 ## <a name="developer-opting-out-individual-pages-from-using-the-new-grid"></a>[Utvikler] Velge bort enkeltsider fra å bruke det nye rutenettet 
 Hvis organisasjonen oppdager en side der det er noen problemer med å bruke det nye rut nettet, er det tilgjengelig et API for å tillate at et enkelt skjema bruker den gamle rutenettkontrollen samtidig som resten av systemet brukes til å utnytte den nye rutenettkontrollen. Hvis du vil velge bort en enkelt side fra det nye rutenettet, legger du til følgende oppkallspost `super()` i skjemaets `run()`-metode.
 
-        this.forceLegacyGrid();
+ ```this.forceLegacyGrid();```
 
 Dette API-et støttes til oktober 2021-versjonen når den nye rutenettkontrollen blir obligatorisk. Rapporter eventuelle problemer til Microsoft som krever at dette API-et skal brukes. 
 

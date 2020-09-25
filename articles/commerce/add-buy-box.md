@@ -3,7 +3,7 @@ title: Kjøpsboksmodul
 description: Dette emnet dekker kjøpsboksmoduler og beskriver hvordan du legger dem til områdesider i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
-ms.date: 07/31/2020
+ms.date: 08/31/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 3fe5c1eb5808ef778aeda29442fa884556671296
-ms.sourcegitcommit: 81f162f2d50557d7afe292c8d326618ba0bc3259
+ms.openlocfilehash: 6556ee8acf1e24a9f6ceddb622960cb3ac891852
+ms.sourcegitcommit: 420b9e538f706178f8e1f2786e02f4f400bf2336
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "3686676"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "3761303"
 ---
 # <a name="buy-box-module"></a>Kjøpsboksmodul
 
@@ -59,10 +59,13 @@ Temaer kan brukes til å fjerne eller endre rekkefølgen på produktegenskaper o
 
 - **Overskriftsetikett** – Denne egenskapen definerer overskriftsetiketten for produkttittelen. Hvis kjøpsboksen er øverst på siden, bør denne egenskapen settes til **h1** for å oppfylle tilgjengelighetsstandardene. 
 
+- **Aktiver Kjøp lignende utseender-anbefalinger** – denne egenskapen lar innkjøpsboksen vise koblinger til produkter som ligner på det viste elementet. Denne funksjonen er tilgjengelig i Commerce versjon 10.0.13 og nyere.
+
 ## <a name="modules-that-can-be-used-in-a-buy-box-module"></a>Moduler som kan brukes i kjøpsboksmodulen
 
 - **Mediegalleri** – Denne modulen brukes til å vise bilder av et produkt på en produktdetaljside. Hvis du vil ha mer informasjon om denne modulen, kan du se [Mediegallerimodul](media-gallery-module.md).
 - **Butikkvelger** – Denne modulen viser en liste over nærliggende butikker der en vare er tilgjengelig for henting. Den lar brukere angi en plassering for å finne butikker i nærheten. Hvis du vil ha mer informasjon om denne modulen, kan du se [Butikkvelgermodul](store-selector.md).
+- **Sosial deling** – denne modulen kan legges til i Kjøp-boksen for å gi brukere muligheten til å dele produktinformasjon på sosiale medier. Hvis du vil ha mer informasjon, se [Sosial deling-modulen](social-share-module.md).
 
 ## <a name="buy-box-module-settings"></a>Innstillinger for kjøpsboksmodul
 
@@ -85,8 +88,8 @@ Modulen kjøpsboks henter produktinformasjon ved hjelp av API-er for Commerce Sc
 Hvis du vil legge til en kjøpsboksmodul på en ny side og angi de nødvendige egenskapene, følger du disse trinnene.
 
 1. Gå til **Fragmenter**, og velg **Nytt** for å opprette et nytt sidefragment.
-1. I dialogboksen **Nytt sidefragment** velger du **Kjøpsboks**-modulen.
-1. Under **Navn på sidefragment** angir du navnet **Kjøpsboksfragmentet**, og deretter velger du **OK**.
+1. I dialogboksen **Nytt fragment** velger du **Kjøpsboks**-modulen.
+1. Under **Navn på fragment** angir du navnet **Kjøpsboksfragmentet**, og deretter velger du **OK**.
 1. I **Mediegalleri**-sporet i kjøpsboksmodulen velger du ellipseknappen (**…**), og deretter velger du **Legg til modul**.
 1. I dialogboksen **Legg til modul** velger du **Mediegalleri**-modulen, og deretter velger du **OK**.
 1. I **Butikkvelger**-sporet i kjøpsboksmodulen velger du ellipseknappen (**…**), og deretter velger du **Legg til modul**.
@@ -96,13 +99,13 @@ Hvis du vil legge til en kjøpsboksmodul på en ny side og angi de nødvendige e
 1. I dialogboksen **Ny mal**, under **Malnavn**, angir du **PDP-mal**, og velger deretter **OK**.
 1. I **Tekst**-sporet velger du ellipsen (**…**), og deretter velger du **Legg til modul**.
 1. I dialogboksen **Legg til modul** velger du **Standardside**-modulen, og deretter velger du **OK**.
-1. På **Hoved**-sporet på standardsiden velger du ellipseknappen (**...**), og deretter velger du **Legg til sidefragment**.
-1. I dialogboksen **Velg sidefragment** velger du **Kjøpsboksfragmentet** du opprettet tidligere, og deretter velger du **OK**.
+1. På **Hoved**-sporet på standardsiden velger du ellipseknappen (**...**), og deretter velger du **Legg til fragment**.
+1. I dialogboksen **Velg fragment** velger du **Kjøpsboksfragmentet** du opprettet tidligere, og deretter velger du **OK**.
 1. Velg **Lagre**, velg **Fullfør redigering** for å sjekke inn malen, og velg deretter **Publiser** for å publisere den.
 1. Gå til **Sider**, og velg **Ny** for å opprette en ny side.
 1. I **Velg en mal**-dialogboksen velger du **PDP-mal**. Under **Sidenavn** angir du **PDP-side**, og velger deretter **OK**.
-1. På **Hoved**-sporet på den nye siden velger du ellipseknappen (**...**), og deretter velger du **Legg til sidefragment**.
-1. I dialogboksen **Velg sidefragment** velger du **Kjøpsboksfragmentet** du opprettet tidligere, og deretter velger du **OK**.
+1. På **Hoved**-sporet på den nye siden velger du ellipseknappen (**...**), og deretter velger du **Legg til fragment**.
+1. I dialogboksen **Velg fragment** velger du **Kjøpsboksfragmentet** du opprettet tidligere, og deretter velger du **OK**.
 1. Lagre og forhåndsvis siden. Legg til spørringsstrengparameteren **?productid=&lt;product id&gt;** i URL-adressen for forhåndsvisningssiden. På den måten brukes produktkonteksten til å laste inn og gjengi forhåndsvisningssiden.
 1. Velg **Lagre**, velg **Fullfør redigering** for å sjekke inn siden, og velg deretter **Publiser** for å publisere den. En kjøpsboks skal vises på siden for produktdetaljer.
 
@@ -114,11 +117,9 @@ Hvis du vil legge til en kjøpsboksmodul på en ny side og angi de nødvendige e
 
 [Mediegallerimodul](media-gallery-module.md)
 
-[Containermodul](add-container-module.md)
+[Beholdermodul](add-container-module.md)
 
 [Handlekurvmodul](add-cart-module.md)
-
-[Handlekurvikonmodul](cart-icon-module.md)
 
 [Kassemodul](add-checkout-module.md)
 
@@ -127,5 +128,7 @@ Hvis du vil legge til en kjøpsboksmodul på en ny side og angi de nødvendige e
 [Topptekstmodul](author-header-module.md)
 
 [Bunntekstmodul](author-footer-module.md)
+
+[Sosial deling-modul](social-share-module.md)
 
 [Beregne lagertilgjengelighet for detaljhandelskanaler](calculated-inventory-retail-channels.md)

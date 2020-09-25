@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: shajain
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Retail April 2017 update
-ms.openlocfilehash: 415e8268c504487f2b66afc2ac9a50de1b538911
-ms.sourcegitcommit: a8201e0b9033c2afc2b1702b0337facaf7ad4b92
+ms.openlocfilehash: 10c843670a280c86790185c8a39cb2943e2838f9
+ms.sourcegitcommit: 5472005274f2f94fba82dda90de128f39d8b8390
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "3628915"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "3759941"
 ---
 # <a name="product-search-and-customer-search-in-the-point-of-sale-pos"></a>Produkt- og kundesøk på salgssted
 
@@ -93,7 +93,7 @@ I et eksternt kundesøk vises ikke kunde-ID for kunder fra de andre juridiske en
 
 ### <a name="enhancements-to-local-customer-search"></a>Forbedringer for lokalt kundesøk
 
-Søk som er basert på telefonnummeret, er forenklet. Disse søkene ignorerer nå spesialtegn, for eksempel mellomrom, bindestreker og parenteser, som kan ha blitt lagt til da kunden ble opprettet. Kasserere trenger derfor ikke tenke på telefonnummerformatet når de søker. De kan også søke etter kunder ved å skrive inn et delvis telefonnummer. Hvis et telefonnummer inneholder spesialtegn, kan det også bli funnet ved å søke etter numrene som vises etter spesialtegnene. For eksempel, hvis en kundes telefonnummer ble oppgitt som **123-456-7890,** kan en kasserere søke etter kunden ved å skrive **123**, **456**, **7890** eller **1234567890**, eller ved å skrive inn de første tallene i telefonnummeret.
+Søk som er basert på telefonnummeret, er forenklet. Disse søkene ignorerer nå spesialtegn, for eksempel mellomrom, bindestreker og parenteser, som kan ha blitt lagt til da kunden ble opprettet. Kasserere trenger derfor ikke tenke på telefonnummerformatet når de søker. For eksempel, hvis en kundes telefonnummer ble oppgitt som **123-456-7890**, kan en kasserere søke etter kunden ved å skrive **1234567890** eller ved å skrive inn de første tallene i telefonnummeret.
 
 > [!NOTE]
 > En kunde kan ha flere telefonnumre og flere e-postadresser. Algoritmen for kundesøk søker også gjennom disse sekundære e-postadressene og telefonnumrene, men siden med kundesøkresultatene viser bare primær e-postadresse og telefonnummer. Dette kan føre til litt forvirring når de returnerte kunderesultatene ikke viser e-postadressen eller telefonnummeret du har søkt etter. I en fremtidig utgivelse har vi tenkt å forbedre skjermen for kundesøkresultater for å vise denne informasjonen.

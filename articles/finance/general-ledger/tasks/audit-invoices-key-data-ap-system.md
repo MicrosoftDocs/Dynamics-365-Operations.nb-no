@@ -1,6 +1,6 @@
 ---
-title: Revidere fakturaer og nøkkeldata i AP-system
-description: Når du mottar en faktura fra en leverandør for varer eller tjenester på en bestilling, kan det hende at forretningsprosessene krever at varene eller tjenestene er mottatt før fakturaen kan godkjennes for betaling.
+title: Revidere fakturaer og nøkkeldata i Leverandører
+description: Dette emnet viser hvordan du reviderer fakturaer og nøkkeldata i Leverandører.
 author: saraschi2
 manager: AnnBe
 ms.date: 08/29/2018
@@ -16,20 +16,20 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 6e1af0dac107be6009eb3ca576c49ac5abbd9848
-ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
+ms.openlocfilehash: 5bb89f0adce41b045b1f573c4c0e841f78b2248c
+ms.sourcegitcommit: 95d06006142e6bf83351fb075b413fdc2074d5ee
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3139950"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "3761555"
 ---
-# <a name="audit-invoices-and-key-data-in-ap-system"></a>Revidere fakturaer og nøkkeldata i AP-system
+# <a name="audit-invoices-and-key-data-in-accounts-payable"></a>Revidere fakturaer og nøkkeldata i Leverandører
 
 [!include [banner](../../includes/banner.md)]
 
 Når du mottar en faktura fra en leverandør for varer eller tjenester på en bestilling, kan det hende at forretningsprosessene krever at varene eller tjenestene er mottatt før fakturaen kan godkjennes for betaling. Før du begynner, må du kontrollere at konfigurasjonsnøkkelen for fakturasamsvar er valgt. 
 
-På siden Leverandørparametere kontrollerer du at alternativet Aktiver validering av fakturakontroll er valgt, at feltet Poster faktura med avvik er satt til Krev godkjenning, og at Linjekontrollpolicy-feltet er satt til Treveis samsvar.
+På siden **Leverandørparametere** kontrollerer du at alternativet Aktiver validering av fakturakontroll er valgt, at feltet **Poster faktura med avvik** er satt til **Krev godkjenning**, og at feltet **Linjekontrollpolicy** er satt til **Treveis samsvar**.
 
 Denne fremgangsmåten bruker demonstrasjonsfirmaet USMF. Rollen regnskapssjef leverandørreskontro eller regnskapssjef kan utføre disse trinnene.
 
