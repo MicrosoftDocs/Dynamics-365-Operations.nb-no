@@ -3,7 +3,7 @@ title: Utforme flerspråklige rapporter i elektronisk rapportering
 description: Dette emnet beskriver hvordan du kan bruke etiketter for elektronisk rapportering (ER) til å utforme og generere flerspråklige rapporter.
 author: NickSelin
 manager: AnnBe
-ms.date: 04/24/2020
+ms.date: 09/14/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 65efb8dbec925b5238acaa5d6769f3085e9715b9
-ms.sourcegitcommit: cf709f1421a0bf66ecea493088ecb4eb08004187
+ms.openlocfilehash: 26a912aa2002f1d60dd650248bd3c68e45e68596
+ms.sourcegitcommit: 9857d5cbdc0ab2fc9db049ac5ad118fc2b29bedc
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/12/2020
-ms.locfileid: "3444627"
+ms.lasthandoff: 09/14/2020
+ms.locfileid: "3810673"
 ---
 # <a name="design-multilingual-reports-in-electronic-reporting"></a>Utforme flerspråklige rapporter i elektronisk rapportering
 
@@ -33,7 +33,7 @@ ms.locfileid: "3444627"
 
 Som forretningsbruker kan du bruke rammeverket for [elektronisk rapportering (ER)](general-electronic-reporting.md) til å konfigurere formater for utgående dokumenter som må genereres i overensstemmelse med de juridiske kravene i ulike land eller regioner. Når disse kravene krever at utgående dokumenter genereres på forskjellige språk for forskjellige land eller regioner, kan du konfigurere ett enkelt ER-[format](general-electronic-reporting.md#FormatComponentOutbound) som inneholder språkavhengige ressurser. På denne måten kan du bruke formatet til å generere utgående dokumenter for ulike land eller regioner på nytt. Du vil kanskje også bruke ett enkelt ER-format til å generere et utgående dokument på ulike språk for tilsvarende kunder, leverandører, datterselskaper eller andre parter.
 
-Du kan konfigurere ER-datamodeller og modelltilordninger som datakilder for konfigurerte ER-formater for å definere dataflyten som angir hvilke programdata som skal plasseres i genererte dokumenter. Som [leverandør](general-electronic-reporting.md#Provider) av ER-konfigurasjon kan du [publisere](tasks/er-upload-configuration-into-lifecycle-services.md#upload-configuration-into-lcs) konfigurerte [datamodeller](general-electronic-reporting.md#data-model-and-model-mapping-components), [modelltilordninger](general-electronic-reporting.md#data-model-and-model-mapping-components) og [formater](general-electronic-reporting.md#FormatComponentOutbound) som komponenter av en ER-løsning for å generere bestemte utgående dokumenter. Du kan også tillate at kunder [laster opp](general-electronic-reporting-manage-configuration-lifecycle.md) den publiserte ER-løsningen, slik at den kan brukes og tilpasses. Hvis du forventer at kunder snakker andre språk, kan du konfigurere ER-komponentene, slik at de inneholder språkavhengige ressurser. På den måten kan innholdet i en redigerbar ER-komponent presenteres på kundens brukerforetrukne språk under utformingen.
+Du kan konfigurere ER-datamodeller og modelltilordninger som datakilder for konfigurerte ER-formater for å definere dataflyten som angir hvilke programdata som skal plasseres i genererte dokumenter. Som [leverandør](general-electronic-reporting.md#Provider) av ER-konfigurasjon kan du [publisere](tasks/er-upload-configuration-into-lifecycle-services.md#upload-a-configuration-into-lcs) konfigurerte [datamodeller](general-electronic-reporting.md#data-model-and-model-mapping-components), [modelltilordninger](general-electronic-reporting.md#data-model-and-model-mapping-components) og [formater](general-electronic-reporting.md#FormatComponentOutbound) som komponenter av en ER-løsning for å generere bestemte utgående dokumenter. Du kan også tillate at kunder [laster opp](general-electronic-reporting-manage-configuration-lifecycle.md) den publiserte ER-løsningen, slik at den kan brukes og tilpasses. Hvis du forventer at kunder snakker andre språk, kan du konfigurere ER-komponentene, slik at de inneholder språkavhengige ressurser. På den måten kan innholdet i en redigerbar ER-komponent presenteres på kundens brukerforetrukne språk under utformingen.
 
 Du kan konfigurere språkavhengige ressurser som ER-etiketter. Du kan deretter bruke disse etikettene til å konfigurere ER-komponenter for følgende formål:
 

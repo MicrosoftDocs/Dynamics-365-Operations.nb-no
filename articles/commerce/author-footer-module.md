@@ -3,7 +3,7 @@ title: Bunntekstmodul
 description: Dette emnet dekker bunntekstmoduler og hvordan du redigerer dem i Dynamics 365 Commerce.
 author: anupamar
 manager: annbe
-ms.date: 05/28/2020
+ms.date: 08/31/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anupamar-ms
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: e81617979a945274500c9f4ceaa8078d8dfd79e8
-ms.sourcegitcommit: 81f162f2d50557d7afe292c8d326618ba0bc3259
+ms.openlocfilehash: 6dd9f214fbeeeaabadac4853916363c20a3288ca
+ms.sourcegitcommit: 420b9e538f706178f8e1f2786e02f4f400bf2336
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "3686724"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "3761207"
 ---
 # <a name="footer-module"></a>Bunntekstmodul  
 
@@ -51,7 +51,7 @@ I likhet med de fleste containere støtter en bunntekstmodul egenskaper for over
 ## <a name="create-a-footer-module"></a>Opprette en bunntekstmodul
 
 1. Gå til **Fragmenter**, og velg **Nytt** for å opprette et nytt sidefragment.
-1. I dialogboksen **Nytt sidefragment** velger du **Beholder**-modulen, skriver inn et navn på sidefragmentet og velger **OK**.
+1. I dialogboksen **Nytt fragment** velger du **Beholder**-modulen, skriver inn et navn på fragmentet og velger **OK**.
 1. I **Standard beholder**-sporet velger du ellipsen (**…**), og deretter velger du **Legg til modul**.
 1. I dialogboksen **Legg til modul** velger du **Bunntekstkategori**-modulen, og deretter velger du **OK**.
 1. I **Bunntekstkategori**-sporet velger du ellipsen (**…**), og deretter velger du **Legg til modul**.
@@ -68,7 +68,7 @@ For å sikre at det vises en topptekst på hver side, kan du følge denne fremga
 1. I **Bunntekst**-sporet på **Standardside**-modulen legger du til bunntekstfragmentet du opprettet.
 1. Velg **Fullfør redigering** for å sjekke inn malen, og velg deretter **Publiser** for å publisere den.
 
-Ved å legge til sidefragmentet i sidemaler garanteres det at bunnteksten gjengis på hver side.
+Ved å legge til fragmentet i sidemaler garanteres det at bunnteksten gjengis på hver side.
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 

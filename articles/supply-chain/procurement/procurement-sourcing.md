@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2a23e445fa6a3133c5248aef1e5dc9fdf5aeb162
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: d38490e9155106d09c432fd965c95ad45f707b41
+ms.sourcegitcommit: 9c694772e1484df10afd72ea1a717fda0861627e
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3209220"
+ms.lasthandoff: 09/14/2020
+ms.locfileid: "3813840"
 ---
 # <a name="procurement-and-sourcing-home-page"></a>Startside for innkjøp og leverandører
 
@@ -55,7 +55,7 @@ Innkjøp og leverandører dekker alle trinnene fra å identifisere et behov for 
 -   [Leverandørsamarbeid med kunder](vendor-collaboration-work-customers-dynamics-365-operations.md)
 -   [Administrere brukere av leverandørsamarbeid](manage-vendor-collaboration-users.md)
 -   [Definere og vedlikeholde leverandørsamarbeid](set-up-maintain-vendor-collaboration.md)
--   [Demonstrasjonsskript for forsendelseslager for Microsoft Dynamics 365 for Finance and Operations](https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/InboundConsignmentInventoryDemoScriptDynamics365Operations)(hvitbok)
+-   [Demonstrasjonsskript for forsendelseslager for Microsoft Dynamics 365 for Finance and Operations](https://www.microsoft.com/download/details.aspx?id=101945)(hvitbok)
 -   [Overvåke forsendelseslager ved hjelp av leverandørsamarbeid](../inventory/tasks/monitor-consignment-inventory-vendor-collaboration.md)
 -   [Samarbeide med leverandører ved å bruke leveandørportalen](collaborate-vendors-vendor-portal.md) (bare februar 2016- og mai 2016-versjonene av Dynamics AX)
 -   [Brukersikkerhet for leverandørportal](configure-security-vendor-portal-users.md) (bare februar 2016- og mai 2016-versjonene av Finance and Operations)
@@ -98,7 +98,7 @@ Innkjøp og leverandører dekker alle trinnene fra å identifisere et behov for 
 -   [Arbeidsflyter for innkjøp og leverandører](procurement-sourcing-workflows.md)
 -   [Registrere mottaket av varene i bestillingen](tasks/record-receipt-goods-purchase-order.md)
 -   [Arbeidsflyt for innkjøpsrekvisisjon](purchase-requisitions-workflow.md)
--   [Definere arbeidsflyter for forretningsprosesser for innkjøpsrekvisisjoner](https://mbs.microsoft.com/customersource/Global/AX/learning/documentation/white-papers/Defining_business_process_workflows_for_purchase_requisitions) (hvitebok)
+-   [Definere arbeidsflyter for forretningsprosesser for innkjøpsrekvisisjoner](https://www.microsoft.com/download/details.aspx?id=101821) (hvitebok)
 -   [Oversikt over innkjøpspolicyer](purchase-policies.md)
 -   [Opprette innkjøpspolicyer](tasks/create-purchasing-policies.md)
 

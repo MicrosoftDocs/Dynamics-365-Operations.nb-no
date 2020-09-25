@@ -1,14 +1,14 @@
 ---
-title: ER Importere en konfigurasjon fra Lifecycle Services
-description: De følgende trinnene forklarer hvordan en bruker i rollen systemansvarlig eller utvikler av elektronisk rapportering kan importere en ny versjon av etnformatkonfigurasjon for elektronisk rapportering (ER) fra Microsoft Lifecycle Services (LCS).
+title: Importere en konfigurasjon fra Lifecycle Services
+description: Dette emnet forklarer hvordan en bruker i rollen Systemansvarlig eller Utvikler av elektronisk rapportering kan importere en ny versjon av en konfigurasjon for elektronisk rapportering (ER) fra Microsoft Dynamics Lifecycle Services (LCS).
 author: NickSelin
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 09/14/2020
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: ERWorkspace, ERSolutionTable,  ERSolutionRepositoryTable, ERSolutionImport
+ms.search.form: ERWorkspace, ERSolutionTable, ERSolutionRepositoryTable, ERSolutionImport
 audience: Application User
 ms.reviewer: kfend
 ms.search.scope: Core, Operations
@@ -16,57 +16,91 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 67e09e3187ac49e12727116f55066b64a386e2de
-ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
+ms.openlocfilehash: 59dbbf820f7a3de1e5fb31f781943320b8b1a60a
+ms.sourcegitcommit: 9857d5cbdc0ab2fc9db049ac5ad118fc2b29bedc
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3142392"
+ms.lasthandoff: 09/14/2020
+ms.locfileid: "3810649"
 ---
-# <a name="er-import-a-configuration-from-lifecycle-services"></a>ER Importere en konfigurasjon fra Lifecycle Services
+# <a name="import-a-configuration-from-lifecycle-services"></a>Importere en konfigurasjon fra Lifecycle Services
 
 [!include [banner](../../includes/banner.md)]
 
-De følgende trinnene forklarer hvordan en bruker i rollen systemansvarlig eller utvikler av elektronisk rapportering kan importere en ny versjon av etnformatkonfigurasjon for elektronisk rapportering (ER) fra Microsoft Lifecycle Services (LCS).
+Dette emnet forklarer hvordan en bruker i rollen Systemansvarlig eller Utvikler av elektronisk rapportering kan importere en ny versjon av en [konfigurasjon for elektronisk rapportering (ER)](../general-electronic-reporting.md#Configuration) fra [aktivabiblioteket på prosjektnivå](../../lifecycle-services/asset-library.md) i Microsoft Dynamics Lifecycle Services (LCS).
 
-I dette eksemplet skal du velge ønsket versjon av ER-konfigurasjonen og importere den for eksempelfirmaet Litware, Inc. Denne fremgangsmåten kan utføres i et hvilket som helst firma ettersom ER-konfigurasjoner deles mellom firmaer. For å fullføre disse trinnene må du først fullføre trinnene i fremgangsmåten "Laste opp en ER-konfigurasjon til Lifecycle Services". Tilgang til LCS kreves også for fullføring av denne fremgangsmåten.
+I dette eksemplet skal du velge ønsket versjon av ER-konfigurasjonen og importere den for et eksempelfirma med navnet Litware, Inc. Denne fremgangsmåten kan fullføres i alle firmaer, ettersom ER-konfigurasjoner deles mellom firmaer. For å fullføre disse trinnene må du først fullføre trinnene i [Laste opp en ER-konfigurasjon til Lifecycle Services](er-upload-configuration-into-lifecycle-services.md). Tilgang til LCS er også nødvendig.
 
-1. Gå til Organisasjonsstyring > Arbeidsområder > Elektronisk rapportering.
-2. Klikk Konfigurasjoner.
+1. Logg på programmet med én av følgende roller:
 
-## <a name="delete-a-shared-version-of-data-model-configuration"></a>Slette en delt versjon av datamodellkonfigurasjon
-1. Velg Eksempelmodellkonfigurasjon i treet.
-    * Den første versjonen av en konfigurasjon for eksempeldatamodell er opprettet og publisert på LCS under prosedyren "Laste opp en ER-konfigurasjon til Lifecycle Services". I denne fremgangsmåten sletter du denne versjonen av ER-konfigurasjonen. Denne versjonen av en konfigurasjon for eksempel data vil senere bli importert fra LCS.  
+    - Utvikler av elektronisk rapportering
+    - Systemansvarlig
+
+2. Gå til **Organisasjonsstyring** \> **Arbeidsområder** \> **Elektronisk rapportering**.
+3. Velg **Konfigurasjoner**.
+
+<a name="accessconditions"></a>
+> [!NOTE]
+> Kontroller at den gjeldende Dynamics 365 Finance-brukeren er medlem av LCS-prosjektet som inneholder aktivabiblioteket som brukeren vil [bruke](../../lifecycle-services/asset-library.md#asset-library-support) for å importere ER-konfigurasjoner.
+>
+> Du kan ikke få tilgang til et LCS-prosjekt fra et ER-repositorium som representerer et annet domene enn domenet som brukes i Finance. Hvis du prøver, vises det en tom liste over LCS-prosjekter, og du kan ikke importere ER-konfigurasjonene fra aktivabiblioteket på prosjektnivå i LCS. Hvis du vil ha tilgang til aktivabiblioteker på prosjektnivå fra et ER-repositorium som brukes til å importere ER-konfigurasjoner, logger du på Finance-modulen ved hjelp av legitimasjonen til en bruker som tilhører leieren (domenet) som gjeldende Finance-forekomst er klargjort for.
+
+## <a name="delete-a-shared-version-of-a-data-model-configuration"></a>Slette en delt versjon av en datamodellkonfigurasjon
+
+1. På siden **Konfigurasjoner** i konfigurasjonstreet velger du **Eksempelmodellkonfigurasjon**.
+
+    Du opprettet den første versjonen av en konfigurasjon for eksempeldatamodell og publiserte den i LCS da du fullførte fremgangsmåten i [Laste opp en konfigurasjon til Lifecycle Services](er-upload-configuration-into-lifecycle-services.md). I denne fremgangsmåten sletter du den versjonen av ER-konfigurasjonen. Du skal deretter importere denne versjonen fra LCS senere i dette emnet.
+
 2. Finn og velg ønsket post i listen.
-    * Velg versjonen av denne konfigurasjonen som har statusen Delt. Denne statusen angir at konfigurasjonen er publisert til LCS.  
-3. Klikk Endre status.
-4. Klikk Avslutt.
-    * Endre statusen for den valgte versjonen fra Delt til Utgått for å gjøre den tilgjengelig for sletting.  
-5. Klikk OK.
+
+    For dette eksemplet velger du versjonen av konfigurasjonen som har statusen **Delt**. Denne statusen angir at konfigurasjonen er publisert til LCS.
+
+3. Velg **Endre status**.
+4. Velg **Avslutt**.
+
+    Ved å endre statusen for den valgte versjonen fra **Delt** til **Avsluttet**, gjør du versjonen tilgjengelig for sletting.
+
+5. Velg **OK**.
 6. Finn og velg ønsket post i listen.
-    * Velg versjonen av denne konfigurasjonen som har statusen Utgått.  
-7. Klikk Slett.
-8. Klikk Ja.
-    * Legg merke til at bare utkastversjon 2 av den valgte datamodellkonfigurasjonen er tilgjengelig.  
+
+    For dette eksemplet velger du versjonen av konfigurasjonen som har statusen **Avsluttet**.
+
+7. Velg **Slett**.
+8. Velg **Ja**.
+
+    Legg merke til at bare utkastversjon 2 av den valgte datamodellkonfigurasjonen nå er tilgjengelig.
+
 9. Lukk siden.
 
-## <a name="import-a-shared-version-of-data-model-configuration-from-lcs"></a>Importere en delt versjon av datamodellkonfigurasjon fra LCS
-1. Merk den valgte raden i listen.
-    * Åpne listen over repositorier for Litware, Inc.- -konfigurasjonsleverandøren.  
-2. Klikk Repositorier.
-3. Klikk Åpne.
-    * Velg LCS-repositorium, og åpne det.  
-4. Merk den valgte raden i listen.
-    * Velg den første versjonen av eksempelmodellkonfigurasjonen i versjonslisten.  
-5. Klikk Importer.
-6. Klikk Ja.
-    * Bekreft importen av den valgte versjonen fra LCS.  
-    * Legg merke til at Informasjonsmeldingen (over skjemaet) bekrefter fullføring av importen av den valgte versjonen.  
-7. Lukk siden.
-8. Lukk siden.
-9. Klikk Konfigurasjoner.
-10. Velg Eksempelmodellkonfigurasjon i treet.
-11. Finn og velg ønsket post i listen.
-    * Velg versjonen av denne konfigurasjonen som har statusen Delt.  
-    * Legg merke til at den delte versjon 1 av den valgte datamodellkonfigurasjonen nå også er tilgjengelig.  
+## <a name="import-a-shared-version-of-a-data-model-configuration-from-lcs"></a>Importere en delt versjon av en datamodellkonfigurasjon fra LCS
 
+1. Gå til **Organisasjonsstyring \> Arbeidsområder \> Elektronisk rapportering**.
+
+2. I delen **Konfigurasjonsleverandører** velger du **Litware, Inc.**-flisen.
+
+3. På **Litware, Inc.**-flisen velger du **Repositorier**.
+
+    Nå kan du åpne listen over repositorier for konfigurasjonsleverandøren Litware, Inc.
+
+4. Velg **Åpne**.
+
+    I dette eksemplet velger du repositoriet **LCS** og åpner det. Du må ha [tilgang](#accessconditions) til LCS-prosjektet og aktivabiblioteket som brukes av det valgte ER-repositoriet.
+
+5. Merk den valgte raden i listen.
+
+    For dette eksemplet velger du den første versjonen av **Eksempelmodellkonfigurasjon** i versjonslisten.
+
+6. Velg **Import**.
+7. Velg **Ja** for å bekrefte importen av den valgte versjonen fra LCS.
+
+    En informasjonsmelding bekrefter at den valgte versjonen er importert.
+
+8. Lukk siden.
+9. Lukk siden.
+10. Velg **Konfigurasjoner**.
+11. Velg **Eksempelmodellkonfigurasjon** i treet.
+12. Finn og velg ønsket post i listen.
+
+    For dette eksemplet velger du versjonen av konfigurasjonen som har statusen **Delt**.
+
+    Legg merke til at delt versjon 1 av den valgte datamodellkonfigurasjonen nå også er tilgjengelig.

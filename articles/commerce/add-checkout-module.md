@@ -3,7 +3,7 @@ title: Kassemodul
 description: Dette emnet beskriver hvordan du legger til en kassemodul på en side og angir de nødvendige egenskapene.
 author: anupamar-ms
 manager: annbe
-ms.date: 08/05/2020
+ms.date: 08/31/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 1d913fdc9ab9a3dbf7d5534fba38add7f942652a
-ms.sourcegitcommit: 81f162f2d50557d7afe292c8d326618ba0bc3259
+ms.openlocfilehash: 389e3e9d631574eac499f7c6146e2776b8126a52
+ms.sourcegitcommit: 420b9e538f706178f8e1f2786e02f4f400bf2336
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "3686748"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "3761111"
 ---
 # <a name="checkout-module"></a>Kassemodul
 
@@ -97,8 +97,8 @@ Det meste av informasjonen i kassen, for eksempel forsendelsesadressen og forsen
 Hvis du vil legge til en kassemodul på en ny side og angi de nødvendige egenskapene, følger du disse trinnene.
 
 1. Gå til **Fragmenter**, og velg **Nytt** for å opprette et nytt sidefragment.
-1. I dialogboksen **Nytt sidefragment** velger du **Kasse**-modulen.
-1. Under **Navn på sidefragment** angir navnet **Kassefragment**, og deretter velger du **OK**.
+1. I dialogboksen **Nytt fragment** velger du **Kasse**-modulen.
+1. Under **Navn på fragment** angir navnet **Kassefragment**, og deretter velger du **OK**.
 1. Velg **Kassemodul**-sporet.
 1. I egenskapsruten til høyre velger du blyantsymbolet, angir overskriftsteksten i feltet, og merker av for avmerkingssymbolet.
 1. I **Kasseinformasjon**-sporet velger du ellipsen (**…**), og deretter velger du **Legg til modul**.
