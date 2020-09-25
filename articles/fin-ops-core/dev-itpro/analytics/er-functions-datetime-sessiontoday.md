@@ -18,35 +18,35 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 483ff46a27068bc2d70c80a848f0329861c914b3
-ms.sourcegitcommit: 3c1eb3d89c6ab9bd70b806ca42ef9df74cf850bc
+ms.openlocfilehash: 2aa3d5e34e6dcd9b5d4a3fe3f21d7e3285adbcad
+ms.sourcegitcommit: 445f6d8d0df9f2cbac97e85e3ec3ed8b7d18d3a2
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "3042278"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "3745423"
 ---
-# <span data-ttu-id="50d23-103"><a name="SESSIONTODAY">SESSIONTODAY ER-funksjon</a></span><span class="sxs-lookup"><span data-stu-id="50d23-103"><a name="SESSIONTODAY">SESSIONTODAY ER function</a></span></span>
+# <a name="sessiontoday-er-function"></a><span data-ttu-id="991f2-103">SESSIONTODAY ER-funksjon</span><span class="sxs-lookup"><span data-stu-id="991f2-103">SESSIONTODAY ER function</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="50d23-104">`SESSIONTODAY`-funksjonen returnerer en *dato*-verdi som representerer gjeldende dato for programøkt.</span><span class="sxs-lookup"><span data-stu-id="50d23-104">The `SESSIONTODAY` function returns a *Date* value that represents the current application session date.</span></span>
+<span data-ttu-id="991f2-104">`SESSIONTODAY`-funksjonen returnerer en *dato*-verdi som representerer gjeldende dato for programøkt.</span><span class="sxs-lookup"><span data-stu-id="991f2-104">The `SESSIONTODAY` function returns a *Date* value that represents the current application session date.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="50d23-105">Syntaks</span><span class="sxs-lookup"><span data-stu-id="50d23-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="991f2-105">Syntaks</span><span class="sxs-lookup"><span data-stu-id="991f2-105">Syntax</span></span>
 
 ```vb
 SESSIONTODAY ()
 ```
 
-## <a name="return-values"></a><span data-ttu-id="50d23-106">Returverdier</span><span class="sxs-lookup"><span data-stu-id="50d23-106">Return values</span></span>
+## <a name="return-values"></a><span data-ttu-id="991f2-106">Returverdier</span><span class="sxs-lookup"><span data-stu-id="991f2-106">Return values</span></span>
 
-<span data-ttu-id="50d23-107">*Dato*</span><span class="sxs-lookup"><span data-stu-id="50d23-107">*Date*</span></span>
+<span data-ttu-id="991f2-107">*Dato*</span><span class="sxs-lookup"><span data-stu-id="991f2-107">*Date*</span></span>
 
-<span data-ttu-id="50d23-108">Den resulterende datoverdien.</span><span class="sxs-lookup"><span data-stu-id="50d23-108">The resulting date value.</span></span>
+<span data-ttu-id="991f2-108">Den resulterende datoverdien.</span><span class="sxs-lookup"><span data-stu-id="991f2-108">The resulting date value.</span></span>
 
-## <a name="example"></a><span data-ttu-id="50d23-109">Eksempel</span><span class="sxs-lookup"><span data-stu-id="50d23-109">Example</span></span>
+## <a name="example"></a><span data-ttu-id="991f2-109">Eksempel</span><span class="sxs-lookup"><span data-stu-id="991f2-109">Example</span></span>
 
-<span data-ttu-id="50d23-110">`DATEFORMAT (SESSIONTODAY (), "d", "DE")` returnerer gjeldende programøktdato, 24. desember 2015, som strengen **"24-12-2015"**, basert på den valgte tyske kulturen og det angitte formatet.</span><span class="sxs-lookup"><span data-stu-id="50d23-110">`DATEFORMAT (SESSIONTODAY (), "d", "DE")` returns the current application session date, December 24, 2015, as the string **"24-12-2015"**, based on the selected German culture and the specified format.</span></span>
+<span data-ttu-id="991f2-110">`DATEFORMAT (SESSIONTODAY (), "d", "DE")` returnerer gjeldende programøktdato, 24. desember 2015, som strengen **"24-12-2015"**, basert på den valgte tyske kulturen og det angitte formatet.</span><span class="sxs-lookup"><span data-stu-id="991f2-110">`DATEFORMAT (SESSIONTODAY (), "d", "DE")` returns the current application session date, December 24, 2015, as the string **"24-12-2015"**, based on the selected German culture and the specified format.</span></span>
 
-## <a name="additional-resources"></a><span data-ttu-id="50d23-111">Tilleggsressurser</span><span class="sxs-lookup"><span data-stu-id="50d23-111">Additional resources</span></span>
+## <a name="additional-resources"></a><span data-ttu-id="991f2-111">Tilleggsressurser</span><span class="sxs-lookup"><span data-stu-id="991f2-111">Additional resources</span></span>
 
-[<span data-ttu-id="50d23-112">Dato- og klokkeslettfunksjoner</span><span class="sxs-lookup"><span data-stu-id="50d23-112">Date and time functions</span></span>](er-functions-category-datetime.md)
+[<span data-ttu-id="991f2-112">Dato- og klokkeslettfunksjoner</span><span class="sxs-lookup"><span data-stu-id="991f2-112">Date and time functions</span></span>](er-functions-category-datetime.md)
