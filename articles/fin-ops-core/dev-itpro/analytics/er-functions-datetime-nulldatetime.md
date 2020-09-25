@@ -18,35 +18,35 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3cd4c152d4e220a2f6315265ed5e44d148134279
-ms.sourcegitcommit: 3c1eb3d89c6ab9bd70b806ca42ef9df74cf850bc
+ms.openlocfilehash: 9e1aaed3e85fc99d6451577d19e834afd37ad008
+ms.sourcegitcommit: 445f6d8d0df9f2cbac97e85e3ec3ed8b7d18d3a2
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "3042269"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "3743549"
 ---
-# <span data-ttu-id="c3c36-103"><a name="NULLDATETIME">NULLDATETIME ER-funksjon</a></span><span class="sxs-lookup"><span data-stu-id="c3c36-103"><a name="NULLDATETIME">NULLDATETIME ER function</a></span></span>
+# <a name="nulldatetime-er-function"></a><span data-ttu-id="74abe-103">NULLDATETIME ER-funksjon</span><span class="sxs-lookup"><span data-stu-id="74abe-103">NULLDATETIME ER function</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="c3c36-104">`NULLDATETIME`-funksjonen returnerer en *DateTime*-verdi som representerer **null** dato/klokkeslett-verdien (1. januar 1900) i Coordinated Universal Time (Greenwich middeltid \[GMT\]).</span><span class="sxs-lookup"><span data-stu-id="c3c36-104">The `NULLDATETIME` function returns a *DateTime* value that represents the **null** date/time value (January 1, 1900) in Coordinated Universal Time (Greenwich Mean Time \[GMT\]).</span></span>
+<span data-ttu-id="74abe-104">`NULLDATETIME`-funksjonen returnerer en *DateTime*-verdi som representerer **null** dato/klokkeslett-verdien (1. januar 1900) i Coordinated Universal Time (Greenwich middeltid \[GMT\]).</span><span class="sxs-lookup"><span data-stu-id="74abe-104">The `NULLDATETIME` function returns a *DateTime* value that represents the **null** date/time value (January 1, 1900) in Coordinated Universal Time (Greenwich Mean Time \[GMT\]).</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="c3c36-105">Syntaks</span><span class="sxs-lookup"><span data-stu-id="c3c36-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="74abe-105">Syntaks</span><span class="sxs-lookup"><span data-stu-id="74abe-105">Syntax</span></span>
 
 ```vb
 NULLDATETIME ()
 ```
 
-## <a name="return-values"></a><span data-ttu-id="c3c36-106">Returverdier</span><span class="sxs-lookup"><span data-stu-id="c3c36-106">Return values</span></span>
+## <a name="return-values"></a><span data-ttu-id="74abe-106">Returverdier</span><span class="sxs-lookup"><span data-stu-id="74abe-106">Return values</span></span>
 
-<span data-ttu-id="c3c36-107">*DateTime*</span><span class="sxs-lookup"><span data-stu-id="c3c36-107">*DateTime*</span></span>
+<span data-ttu-id="74abe-107">*DateTime*</span><span class="sxs-lookup"><span data-stu-id="74abe-107">*DateTime*</span></span>
 
-<span data-ttu-id="c3c36-108">Den resulterende dato/klokkeslett-verdien.</span><span class="sxs-lookup"><span data-stu-id="c3c36-108">The resulting date/time value.</span></span>
+<span data-ttu-id="74abe-108">Den resulterende dato/klokkeslett-verdien.</span><span class="sxs-lookup"><span data-stu-id="74abe-108">The resulting date/time value.</span></span>
 
-## <a name="example"></a><span data-ttu-id="c3c36-109">Eksempel</span><span class="sxs-lookup"><span data-stu-id="c3c36-109">Example</span></span>
+## <a name="example"></a><span data-ttu-id="74abe-109">Eksempel</span><span class="sxs-lookup"><span data-stu-id="74abe-109">Example</span></span>
 
-<span data-ttu-id="c3c36-110">`DATETIMEFORMAT( NULLDATETIME(), "O")` returnerer strengverdien **1900-01-01T00:00:00.0000000+00:00** når den kalles under en prosess som ble startet av en programbruker som har tidssoneverdien **(GMT) Coordinated Universal Time** i delen **Innstillinger for språk og land/område**.</span><span class="sxs-lookup"><span data-stu-id="c3c36-110">`DATETIMEFORMAT( NULLDATETIME(), "O")` returns the string value **1900-01-01T00:00:00.0000000+00:00** when it's called during a process that was initiated by an application user who has the time zone value **(GMT) Coordinated Universal Time** in the **Language and country/region preferences** section.</span></span>
+<span data-ttu-id="74abe-110">`DATETIMEFORMAT( NULLDATETIME(), "O")` returnerer strengverdien **1900-01-01T00:00:00.0000000+00:00** når den kalles under en prosess som ble startet av en programbruker som har tidssoneverdien **(GMT) Coordinated Universal Time** i delen **Innstillinger for språk og land/område**.</span><span class="sxs-lookup"><span data-stu-id="74abe-110">`DATETIMEFORMAT( NULLDATETIME(), "O")` returns the string value **1900-01-01T00:00:00.0000000+00:00** when it's called during a process that was initiated by an application user who has the time zone value **(GMT) Coordinated Universal Time** in the **Language and country/region preferences** section.</span></span>
 
-## <a name="additional-resources"></a><span data-ttu-id="c3c36-111">Tilleggsressurser</span><span class="sxs-lookup"><span data-stu-id="c3c36-111">Additional resources</span></span>
+## <a name="additional-resources"></a><span data-ttu-id="74abe-111">Tilleggsressurser</span><span class="sxs-lookup"><span data-stu-id="74abe-111">Additional resources</span></span>
 
-[<span data-ttu-id="c3c36-112">Dato- og klokkeslettfunksjoner</span><span class="sxs-lookup"><span data-stu-id="c3c36-112">Date and time functions</span></span>](er-functions-category-datetime.md)
+[<span data-ttu-id="74abe-112">Dato- og klokkeslettfunksjoner</span><span class="sxs-lookup"><span data-stu-id="74abe-112">Date and time functions</span></span>](er-functions-category-datetime.md)

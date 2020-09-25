@@ -18,46 +18,46 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: dd692720872314d533274f392f84e5ac7d36c7c1
-ms.sourcegitcommit: 3c1eb3d89c6ab9bd70b806ca42ef9df74cf850bc
+ms.openlocfilehash: d6e5d025e7de15c27b19711ea5b597d75bdf3d41
+ms.sourcegitcommit: 445f6d8d0df9f2cbac97e85e3ec3ed8b7d18d3a2
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "3041383"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "3744101"
 ---
-# <span data-ttu-id="a6f95-103"><a name="ISOCREDREF">ISOCREDREF ER-funksjonen</a></span><span class="sxs-lookup"><span data-stu-id="a6f95-103"><a name="ISOCREDREF">ISOCREDREF ER function</a></span></span>
+# <a name="isocredref-er-function"></a><span data-ttu-id="ea316-103">ISOCREDREF ER-funksjonen</span><span class="sxs-lookup"><span data-stu-id="ea316-103">ISOCREDREF ER function</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="a6f95-104">`ISOCREDREF`-funksjonen returnerer en *streng*-verdi som representerer en ISO-kreditorreferanse (International Organization for Standardization) basert på sifrene og de alfabetiske symbolene i det angitte fakturanummeret.</span><span class="sxs-lookup"><span data-stu-id="a6f95-104">The `ISOCREDREF` function returns a *String* value that represents an International Organization for Standardization (ISO) creditor reference, based on the digits and alphabetic symbols of the specified invoice number.</span></span>
+<span data-ttu-id="ea316-104">`ISOCREDREF`-funksjonen returnerer en *streng*-verdi som representerer en ISO-kreditorreferanse (International Organization for Standardization) basert på sifrene og de alfabetiske symbolene i det angitte fakturanummeret.</span><span class="sxs-lookup"><span data-stu-id="ea316-104">The `ISOCREDREF` function returns a *String* value that represents an International Organization for Standardization (ISO) creditor reference, based on the digits and alphabetic symbols of the specified invoice number.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="a6f95-105">Syntaks</span><span class="sxs-lookup"><span data-stu-id="a6f95-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="ea316-105">Syntaks</span><span class="sxs-lookup"><span data-stu-id="ea316-105">Syntax</span></span>
 
 ```vb
 ISOCREDREF (invoice number digits)
 ```
 
-## <a name="arguments"></a><span data-ttu-id="a6f95-106">Argumenter</span><span class="sxs-lookup"><span data-stu-id="a6f95-106">Arguments</span></span>
+## <a name="arguments"></a><span data-ttu-id="ea316-106">Argumenter</span><span class="sxs-lookup"><span data-stu-id="ea316-106">Arguments</span></span>
 
-<span data-ttu-id="a6f95-107">`invoice number digits`: *Streng*</span><span class="sxs-lookup"><span data-stu-id="a6f95-107">`invoice number digits`: *String*</span></span>
+<span data-ttu-id="ea316-107">`invoice number digits`: *Streng*</span><span class="sxs-lookup"><span data-stu-id="ea316-107">`invoice number digits`: *String*</span></span>
 
-<span data-ttu-id="a6f95-108">En tekstverdi som representerer sifrene i et fakturanummer.</span><span class="sxs-lookup"><span data-stu-id="a6f95-108">A text value that represents the digits of an invoice number.</span></span>
+<span data-ttu-id="ea316-108">En tekstverdi som representerer sifrene i et fakturanummer.</span><span class="sxs-lookup"><span data-stu-id="ea316-108">A text value that represents the digits of an invoice number.</span></span>
 
-## <a name="return-values"></a><span data-ttu-id="a6f95-109">Returverdier</span><span class="sxs-lookup"><span data-stu-id="a6f95-109">Return values</span></span>
+## <a name="return-values"></a><span data-ttu-id="ea316-109">Returverdier</span><span class="sxs-lookup"><span data-stu-id="ea316-109">Return values</span></span>
 
-<span data-ttu-id="a6f95-110">*Streng*</span><span class="sxs-lookup"><span data-stu-id="a6f95-110">*String*</span></span>
+<span data-ttu-id="ea316-110">*Streng*</span><span class="sxs-lookup"><span data-stu-id="ea316-110">*String*</span></span>
 
-<span data-ttu-id="a6f95-111">Den resulterende tekstverdien.</span><span class="sxs-lookup"><span data-stu-id="a6f95-111">The resulting text value.</span></span>
+<span data-ttu-id="ea316-111">Den resulterende tekstverdien.</span><span class="sxs-lookup"><span data-stu-id="ea316-111">The resulting text value.</span></span>
 
-## <a name="usage-notes"></a><span data-ttu-id="a6f95-112">Bruksnotater</span><span class="sxs-lookup"><span data-stu-id="a6f95-112">Usage notes</span></span>
+## <a name="usage-notes"></a><span data-ttu-id="ea316-112">Bruksnotater</span><span class="sxs-lookup"><span data-stu-id="ea316-112">Usage notes</span></span>
 
 > [!NOTE] 
-> <span data-ttu-id="a6f95-113">`invoice number digits`-argumentet må oversettes før det sendes til denne funksjonen for å eliminere symboler fra bokstaver som ikke er ISO-kompatible.</span><span class="sxs-lookup"><span data-stu-id="a6f95-113">To eliminate symbols from alphabets that are't ISO-compliant, the `invoice number digits` argument must be translated before it's passed to this function.</span></span>
+> <span data-ttu-id="ea316-113">`invoice number digits`-argumentet må oversettes før det sendes til denne funksjonen for å eliminere symboler fra bokstaver som ikke er ISO-kompatible.</span><span class="sxs-lookup"><span data-stu-id="ea316-113">To eliminate symbols from alphabets that are't ISO-compliant, the `invoice number digits` argument must be translated before it's passed to this function.</span></span>
 
-## <a name="example"></a><span data-ttu-id="a6f95-114">Eksempel</span><span class="sxs-lookup"><span data-stu-id="a6f95-114">Example</span></span>
+## <a name="example"></a><span data-ttu-id="ea316-114">Eksempel</span><span class="sxs-lookup"><span data-stu-id="ea316-114">Example</span></span>
 
-<span data-ttu-id="a6f95-115">`ISOCredRef ("VEND-200002")` returnerer **"RF23VEND-200002"**.</span><span class="sxs-lookup"><span data-stu-id="a6f95-115">`ISOCredRef ("VEND-200002")` returns **"RF23VEND-200002"**.</span></span>
+<span data-ttu-id="ea316-115">`ISOCredRef ("VEND-200002")` returnerer **"RF23VEND-200002"**.</span><span class="sxs-lookup"><span data-stu-id="ea316-115">`ISOCredRef ("VEND-200002")` returns **"RF23VEND-200002"**.</span></span>
 
-## <a name="additional-resources"></a><span data-ttu-id="a6f95-116">Tilleggsressurser</span><span class="sxs-lookup"><span data-stu-id="a6f95-116">Additional resources</span></span>
+## <a name="additional-resources"></a><span data-ttu-id="ea316-116">Tilleggsressurser</span><span class="sxs-lookup"><span data-stu-id="ea316-116">Additional resources</span></span>
 
-[<span data-ttu-id="a6f95-117">Andre funksjoner (spesifikke for forretningsområder)</span><span class="sxs-lookup"><span data-stu-id="a6f95-117">Other (business domain–specific) functions</span></span>](er-functions-category-other.md)
+[<span data-ttu-id="ea316-117">Andre funksjoner (spesifikke for forretningsområder)</span><span class="sxs-lookup"><span data-stu-id="ea316-117">Other (business domain–specific) functions</span></span>](er-functions-category-other.md)
