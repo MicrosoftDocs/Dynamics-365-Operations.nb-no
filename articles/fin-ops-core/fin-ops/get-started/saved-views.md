@@ -3,7 +3,7 @@ title: Lagrede visninger
 description: Dette emnet beskriver hvordan du bruker lagrede visninger-funksjonene.
 author: jasongre
 manager: AnnBe
-ms.date: 07/29/2020
+ms.date: 09/11/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,17 +16,16 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2019-07-31
 ms.dyn365.ops.version: Platform update 28
-ms.openlocfilehash: a190e2a117c3209993926af0a7bf031909b8ee0f
-ms.sourcegitcommit: 27233e0fda61dac541c5210ca8d94ab4ba74966f
+ms.openlocfilehash: b948da0bff8de3b8ad783b3e3f52100a29fab109
+ms.sourcegitcommit: 5bb36b74935ffe140367fd6ecf956b4857ad12e5
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/03/2020
-ms.locfileid: "3651648"
+ms.lasthandoff: 09/14/2020
+ms.locfileid: "3802901"
 ---
 # <a name="saved-views"></a>Lagrede visninger
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 ## <a name="introduction"></a>Innledning
 

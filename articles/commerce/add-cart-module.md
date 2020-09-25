@@ -3,7 +3,7 @@ title: Handlekurvmodul
 description: Dette emnet dekker handlekurvmoduler og beskriver hvordan du legger dem til områdesider i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
-ms.date: 08/05/2020
+ms.date: 08/31/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 07d485012bfc93c957b3dc42e3b0ed62e761dee1
-ms.sourcegitcommit: 81f162f2d50557d7afe292c8d326618ba0bc3259
+ms.openlocfilehash: 07d121d5a68970dd29f0e77babda735de12871ca
+ms.sourcegitcommit: 420b9e538f706178f8e1f2786e02f4f400bf2336
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "3686772"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "3761135"
 ---
 # <a name="cart-module"></a>Handlekurvmodul
 
@@ -77,8 +77,8 @@ Handlekurvmodulen henter produktinformasjon ved hjelp av API-er for Commerce Sca
 Hvis du vil legge til en handlekurvmodul på en ny side og angi de nødvendige egenskapene, følger du disse trinnene.
 
 1. Gå til **Fragmenter**, og velg **Nytt** for å opprette et nytt sidefragment.
-1. I dialogboksen **Nytt sidefragment** velger du **Handlevogn**-modulen.
-1. Under **Navn på sidefragment** angir du navnet **Handlevognfragment**, og deretter velger du **OK**.
+1. I dialogboksen **Nytt fragment** velger du **Handlekurv**-modulen.
+1. Under **Navn på fragment** angir du navnet **Handlevognfragment**, og deretter velger du **OK**.
 1. Velg **Handlevogn**-sporet.
 1. I egenskapsruten til høyre velger du blyantsymbolet, angir overskriftsteksten i feltet, og merker av for avmerkingssymbolet.
 1. I **Handlevogn**-sporet velger du ellipsen (**…**), og deretter velger du **Legg til modul**.
@@ -86,8 +86,8 @@ Hvis du vil legge til en handlekurvmodul på en ny side og angi de nødvendige e
 1. Velg **Lagre**, velg **Fullfør redigering** for å sjekke inn fragmentet, og velg deretter **Publiser** for å publisere det.
 1. Gå til **Maler**, og velg **Ny** for å opprette en ny mal.
 1. I dialogboksen **Ny mal**, under **Malnavn**, angir du et navn på malen.
-1. Velg **Brødtekst**-sporet i disposisjonstreet, velg ellipseknappen (**…**), og velg deretter **Legg til sidefragment**.
-1. I dialogboksen **Velg sidefragment** velger du **Handlevognfragmentet**, og deretter velger du **OK**.
+1. Velg **Brødtekst**-sporet i disposisjonstreet, velg ellipseknappen (**…**), og velg deretter **Legg til fragment**.
+1. I dialogboksen **Velg fragment** velger du **Handlevognfragmentet**, og deretter velger du **OK**.
 1. Velg **Lagre**, velg **Fullfør redigering** for å sjekke inn malen, og velg deretter **Publiser** for å publisere den.
 1. Gå til **Sider**, og velg **Ny** for å opprette en ny side.
 1. I dialogboksen **Velg en mal** velger du malen du opprettet, angir et sidenavn, og deretter velger du **OK**.
