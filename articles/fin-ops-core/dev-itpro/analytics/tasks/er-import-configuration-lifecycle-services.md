@@ -1,14 +1,14 @@
 ---
-title: ER Importere en konfigurasjon fra Lifecycle Services
-description: De følgende trinnene forklarer hvordan en bruker i rollen systemansvarlig eller utvikler av elektronisk rapportering kan importere en ny versjon av etnformatkonfigurasjon for elektronisk rapportering (ER) fra Microsoft Lifecycle Services (LCS).
+title: Importere en konfigurasjon fra Lifecycle Services
+description: Dette emnet forklarer hvordan en bruker i rollen Systemansvarlig eller Utvikler av elektronisk rapportering kan importere en ny versjon av en konfigurasjon for elektronisk rapportering (ER) fra Microsoft Dynamics Lifecycle Services (LCS).
 author: NickSelin
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 09/14/2020
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: ERWorkspace, ERSolutionTable,  ERSolutionRepositoryTable, ERSolutionImport
+ms.search.form: ERWorkspace, ERSolutionTable, ERSolutionRepositoryTable, ERSolutionImport
 audience: Application User
 ms.reviewer: kfend
 ms.search.scope: Core, Operations
@@ -16,57 +16,91 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 67e09e3187ac49e12727116f55066b64a386e2de
-ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
+ms.openlocfilehash: 59dbbf820f7a3de1e5fb31f781943320b8b1a60a
+ms.sourcegitcommit: 9857d5cbdc0ab2fc9db049ac5ad118fc2b29bedc
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3142392"
+ms.lasthandoff: 09/14/2020
+ms.locfileid: "3810649"
 ---
-# <a name="er-import-a-configuration-from-lifecycle-services"></a><span data-ttu-id="39095-103">ER Importere en konfigurasjon fra Lifecycle Services</span><span class="sxs-lookup"><span data-stu-id="39095-103">ER Import a configuration from Lifecycle Services</span></span>
+# <a name="import-a-configuration-from-lifecycle-services"></a><span data-ttu-id="df7a6-103">Importere en konfigurasjon fra Lifecycle Services</span><span class="sxs-lookup"><span data-stu-id="df7a6-103">Import a configuration from Lifecycle Services</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="39095-104">De følgende trinnene forklarer hvordan en bruker i rollen systemansvarlig eller utvikler av elektronisk rapportering kan importere en ny versjon av etnformatkonfigurasjon for elektronisk rapportering (ER) fra Microsoft Lifecycle Services (LCS).</span><span class="sxs-lookup"><span data-stu-id="39095-104">The following steps explain how a user in the System Administrator or Electronic Reporting Developer role can import a new version of an Electronic reporting (ER) configuration from Microsoft Lifecycle Services (LCS).</span></span>
+<span data-ttu-id="df7a6-104">Dette emnet forklarer hvordan en bruker i rollen Systemansvarlig eller Utvikler av elektronisk rapportering kan importere en ny versjon av en [konfigurasjon for elektronisk rapportering (ER)](../general-electronic-reporting.md#Configuration) fra [aktivabiblioteket på prosjektnivå](../../lifecycle-services/asset-library.md) i Microsoft Dynamics Lifecycle Services (LCS).</span><span class="sxs-lookup"><span data-stu-id="df7a6-104">This topic explains how a user in the System administrator or Electronic reporting developer role can import a new version of an [Electronic reporting (ER) configuration](../general-electronic-reporting.md#Configuration) from the [project-level Asset library](../../lifecycle-services/asset-library.md) in Microsoft Dynamics Lifecycle Services (LCS).</span></span>
 
-<span data-ttu-id="39095-105">I dette eksemplet skal du velge ønsket versjon av ER-konfigurasjonen og importere den for eksempelfirmaet Litware, Inc. Denne fremgangsmåten kan utføres i et hvilket som helst firma ettersom ER-konfigurasjoner deles mellom firmaer.</span><span class="sxs-lookup"><span data-stu-id="39095-105">In this example, you will select the desired version of the ER configuration and import it for sample company, Litware, Inc. These steps can be performed in any company as ER configurations are shared among companies.</span></span> <span data-ttu-id="39095-106">For å fullføre disse trinnene må du først fullføre trinnene i fremgangsmåten "Laste opp en ER-konfigurasjon til Lifecycle Services".</span><span class="sxs-lookup"><span data-stu-id="39095-106">To complete these steps, you must first complete the steps in the "Upload an ER configuration into Lifecycle Services" procedure.</span></span> <span data-ttu-id="39095-107">Tilgang til LCS kreves også for fullføring av denne fremgangsmåten.</span><span class="sxs-lookup"><span data-stu-id="39095-107">Access to LCS is also required for completion of these steps.</span></span>
+<span data-ttu-id="df7a6-105">I dette eksemplet skal du velge ønsket versjon av ER-konfigurasjonen og importere den for et eksempelfirma med navnet Litware, Inc. Denne fremgangsmåten kan fullføres i alle firmaer, ettersom ER-konfigurasjoner deles mellom firmaer.</span><span class="sxs-lookup"><span data-stu-id="df7a6-105">In this example, you will select the desired version of the ER configuration and import it for a sample company that is named Litware, Inc. These steps can be completed in any company, because ER configurations are shared among companies.</span></span> <span data-ttu-id="df7a6-106">For å fullføre disse trinnene må du først fullføre trinnene i [Laste opp en ER-konfigurasjon til Lifecycle Services](er-upload-configuration-into-lifecycle-services.md).</span><span class="sxs-lookup"><span data-stu-id="df7a6-106">To complete these steps, you must first complete the steps in [Upload a configuration into Lifecycle Services](er-upload-configuration-into-lifecycle-services.md).</span></span> <span data-ttu-id="df7a6-107">Tilgang til LCS er også nødvendig.</span><span class="sxs-lookup"><span data-stu-id="df7a6-107">Access to LCS is also required.</span></span>
 
-1. <span data-ttu-id="39095-108">Gå til Organisasjonsstyring > Arbeidsområder > Elektronisk rapportering.</span><span class="sxs-lookup"><span data-stu-id="39095-108">Go to Organization administration > Workspaces > Electronic reporting.</span></span>
-2. <span data-ttu-id="39095-109">Klikk Konfigurasjoner.</span><span class="sxs-lookup"><span data-stu-id="39095-109">Click Configurations.</span></span>
+1. <span data-ttu-id="df7a6-108">Logg på programmet med én av følgende roller:</span><span class="sxs-lookup"><span data-stu-id="df7a6-108">Sign in to the application by using one of the following roles:</span></span>
 
-## <a name="delete-a-shared-version-of-data-model-configuration"></a><span data-ttu-id="39095-110">Slette en delt versjon av datamodellkonfigurasjon</span><span class="sxs-lookup"><span data-stu-id="39095-110">Delete a shared version of data model configuration</span></span>
-1. <span data-ttu-id="39095-111">Velg Eksempelmodellkonfigurasjon i treet.</span><span class="sxs-lookup"><span data-stu-id="39095-111">In the tree, select 'Sample model configuration'.</span></span>
-    * <span data-ttu-id="39095-112">Den første versjonen av en konfigurasjon for eksempeldatamodell er opprettet og publisert på LCS under prosedyren "Laste opp en ER-konfigurasjon til Lifecycle Services".</span><span class="sxs-lookup"><span data-stu-id="39095-112">The first version of a sample data model configuration has been created and published to LCS during the "Upload an ER configuration into Lifecycle Services" procedure.</span></span> <span data-ttu-id="39095-113">I denne fremgangsmåten sletter du denne versjonen av ER-konfigurasjonen.</span><span class="sxs-lookup"><span data-stu-id="39095-113">In this procedure, you will delete this version of the ER configuration.</span></span> <span data-ttu-id="39095-114">Denne versjonen av en konfigurasjon for eksempel data vil senere bli importert fra LCS.</span><span class="sxs-lookup"><span data-stu-id="39095-114">This version of a sample data model configuration will be imported later from LCS.</span></span>  
-2. <span data-ttu-id="39095-115">Finn og velg ønsket post i listen.</span><span class="sxs-lookup"><span data-stu-id="39095-115">In the list, find and select the desired record.</span></span>
-    * <span data-ttu-id="39095-116">Velg versjonen av denne konfigurasjonen som har statusen Delt.</span><span class="sxs-lookup"><span data-stu-id="39095-116">Select the version of this configuration that is in the 'Shared' status.</span></span> <span data-ttu-id="39095-117">Denne statusen angir at konfigurasjonen er publisert til LCS.</span><span class="sxs-lookup"><span data-stu-id="39095-117">This status indicates that the configuration has been published to LCS.</span></span>  
-3. <span data-ttu-id="39095-118">Klikk Endre status.</span><span class="sxs-lookup"><span data-stu-id="39095-118">Click Change status.</span></span>
-4. <span data-ttu-id="39095-119">Klikk Avslutt.</span><span class="sxs-lookup"><span data-stu-id="39095-119">Click Discontinue.</span></span>
-    * <span data-ttu-id="39095-120">Endre statusen for den valgte versjonen fra Delt til Utgått for å gjøre den tilgjengelig for sletting.</span><span class="sxs-lookup"><span data-stu-id="39095-120">Change the status of the selected version from 'Shared' to 'Discontinued' to make it available for deletion.</span></span>  
-5. <span data-ttu-id="39095-121">Klikk OK.</span><span class="sxs-lookup"><span data-stu-id="39095-121">Click OK.</span></span>
-6. <span data-ttu-id="39095-122">Finn og velg ønsket post i listen.</span><span class="sxs-lookup"><span data-stu-id="39095-122">In the list, find and select the desired record.</span></span>
-    * <span data-ttu-id="39095-123">Velg versjonen av denne konfigurasjonen som har statusen Utgått.</span><span class="sxs-lookup"><span data-stu-id="39095-123">Select the version of this configuration that has a status of 'Discontinued'.</span></span>  
-7. <span data-ttu-id="39095-124">Klikk Slett.</span><span class="sxs-lookup"><span data-stu-id="39095-124">Click Delete.</span></span>
-8. <span data-ttu-id="39095-125">Klikk Ja.</span><span class="sxs-lookup"><span data-stu-id="39095-125">Click Yes.</span></span>
-    * <span data-ttu-id="39095-126">Legg merke til at bare utkastversjon 2 av den valgte datamodellkonfigurasjonen er tilgjengelig.</span><span class="sxs-lookup"><span data-stu-id="39095-126">Note that the only draft version 2 of the selected data model configuration is available.</span></span>  
-9. <span data-ttu-id="39095-127">Lukk siden.</span><span class="sxs-lookup"><span data-stu-id="39095-127">Close the page.</span></span>
+    - <span data-ttu-id="df7a6-109">Utvikler av elektronisk rapportering</span><span class="sxs-lookup"><span data-stu-id="df7a6-109">Electronic reporting developer</span></span>
+    - <span data-ttu-id="df7a6-110">Systemansvarlig</span><span class="sxs-lookup"><span data-stu-id="df7a6-110">System administrator</span></span>
 
-## <a name="import-a-shared-version-of-data-model-configuration-from-lcs"></a><span data-ttu-id="39095-128">Importere en delt versjon av datamodellkonfigurasjon fra LCS</span><span class="sxs-lookup"><span data-stu-id="39095-128">Import a shared version of data model configuration from LCS</span></span>
-1. <span data-ttu-id="39095-129">Merk den valgte raden i listen.</span><span class="sxs-lookup"><span data-stu-id="39095-129">In the list, mark the selected row.</span></span>
-    * <span data-ttu-id="39095-130">Åpne listen over repositorier for Litware, Inc.-</span><span class="sxs-lookup"><span data-stu-id="39095-130">Open the list of repositories for the 'Litware, Inc.'</span></span> <span data-ttu-id="39095-131">-konfigurasjonsleverandøren.</span><span class="sxs-lookup"><span data-stu-id="39095-131">configuration provider.</span></span>  
-2. <span data-ttu-id="39095-132">Klikk Repositorier.</span><span class="sxs-lookup"><span data-stu-id="39095-132">Click Repositories.</span></span>
-3. <span data-ttu-id="39095-133">Klikk Åpne.</span><span class="sxs-lookup"><span data-stu-id="39095-133">Click Open.</span></span>
-    * <span data-ttu-id="39095-134">Velg LCS-repositorium, og åpne det.</span><span class="sxs-lookup"><span data-stu-id="39095-134">Select the LCS repository and open it.</span></span>  
-4. <span data-ttu-id="39095-135">Merk den valgte raden i listen.</span><span class="sxs-lookup"><span data-stu-id="39095-135">In the list, mark the selected row.</span></span>
-    * <span data-ttu-id="39095-136">Velg den første versjonen av eksempelmodellkonfigurasjonen i versjonslisten.</span><span class="sxs-lookup"><span data-stu-id="39095-136">Select the first version of the 'Sample model configuration' in the versions list.</span></span>  
-5. <span data-ttu-id="39095-137">Klikk Importer.</span><span class="sxs-lookup"><span data-stu-id="39095-137">Click Import.</span></span>
-6. <span data-ttu-id="39095-138">Klikk Ja.</span><span class="sxs-lookup"><span data-stu-id="39095-138">Click Yes.</span></span>
-    * <span data-ttu-id="39095-139">Bekreft importen av den valgte versjonen fra LCS.</span><span class="sxs-lookup"><span data-stu-id="39095-139">Confirm the import of the selected version from LCS .</span></span>  
-    * <span data-ttu-id="39095-140">Legg merke til at Informasjonsmeldingen (over skjemaet) bekrefter fullføring av importen av den valgte versjonen.</span><span class="sxs-lookup"><span data-stu-id="39095-140">Note that the information message (above the form) confirms the successful completion of the import of the selected version.</span></span>  
-7. <span data-ttu-id="39095-141">Lukk siden.</span><span class="sxs-lookup"><span data-stu-id="39095-141">Close the page.</span></span>
-8. <span data-ttu-id="39095-142">Lukk siden.</span><span class="sxs-lookup"><span data-stu-id="39095-142">Close the page.</span></span>
-9. <span data-ttu-id="39095-143">Klikk Konfigurasjoner.</span><span class="sxs-lookup"><span data-stu-id="39095-143">Click Configurations.</span></span>
-10. <span data-ttu-id="39095-144">Velg Eksempelmodellkonfigurasjon i treet.</span><span class="sxs-lookup"><span data-stu-id="39095-144">In the tree, select 'Sample model configuration'.</span></span>
-11. <span data-ttu-id="39095-145">Finn og velg ønsket post i listen.</span><span class="sxs-lookup"><span data-stu-id="39095-145">In the list, find and select the desired record.</span></span>
-    * <span data-ttu-id="39095-146">Velg versjonen av denne konfigurasjonen som har statusen Delt.</span><span class="sxs-lookup"><span data-stu-id="39095-146">Select the version of this configuration that has a status of 'Shared'.</span></span>  
-    * <span data-ttu-id="39095-147">Legg merke til at den delte versjon 1 av den valgte datamodellkonfigurasjonen nå også er tilgjengelig.</span><span class="sxs-lookup"><span data-stu-id="39095-147">Note that the shared version 1 of the selected data model configuration is available now as well.</span></span>  
+2. <span data-ttu-id="df7a6-111">Gå til **Organisasjonsstyring** \> **Arbeidsområder** \> **Elektronisk rapportering**.</span><span class="sxs-lookup"><span data-stu-id="df7a6-111">Go to **Organization administration** \> **Workspaces** \> **Electronic reporting**.</span></span>
+3. <span data-ttu-id="df7a6-112">Velg **Konfigurasjoner**.</span><span class="sxs-lookup"><span data-stu-id="df7a6-112">Select **Configurations**.</span></span>
 
+<a name="accessconditions"></a>
+> [!NOTE]
+> <span data-ttu-id="df7a6-113">Kontroller at den gjeldende Dynamics 365 Finance-brukeren er medlem av LCS-prosjektet som inneholder aktivabiblioteket som brukeren vil [bruke](../../lifecycle-services/asset-library.md#asset-library-support) for å importere ER-konfigurasjoner.</span><span class="sxs-lookup"><span data-stu-id="df7a6-113">Make sure that the current Dynamics 365 Finance user is a member of the LCS project that contains the Asset library that the user wants to [access](../../lifecycle-services/asset-library.md#asset-library-support) to import ER configurations.</span></span>
+>
+> <span data-ttu-id="df7a6-114">Du kan ikke få tilgang til et LCS-prosjekt fra et ER-repositorium som representerer et annet domene enn domenet som brukes i Finance.</span><span class="sxs-lookup"><span data-stu-id="df7a6-114">You can't access an LCS project from an ER repository that represents a different domain than the domain that is used in Finance.</span></span> <span data-ttu-id="df7a6-115">Hvis du prøver, vises det en tom liste over LCS-prosjekter, og du kan ikke importere ER-konfigurasjonene fra aktivabiblioteket på prosjektnivå i LCS.</span><span class="sxs-lookup"><span data-stu-id="df7a6-115">If you try, an empty list of LCS projects will be shown, and you won't be able to import ER configurations from the project-level Asset library in LCS.</span></span> <span data-ttu-id="df7a6-116">Hvis du vil ha tilgang til aktivabiblioteker på prosjektnivå fra et ER-repositorium som brukes til å importere ER-konfigurasjoner, logger du på Finance-modulen ved hjelp av legitimasjonen til en bruker som tilhører leieren (domenet) som gjeldende Finance-forekomst er klargjort for.</span><span class="sxs-lookup"><span data-stu-id="df7a6-116">To access project-level Asset libraries from an ER repository that is used to import ER configurations, sign in to Finance by using the credentials of a user who belongs to the tenant (domain) that the current Finance instance has been provisioned for.</span></span>
+
+## <a name="delete-a-shared-version-of-a-data-model-configuration"></a><span data-ttu-id="df7a6-117">Slette en delt versjon av en datamodellkonfigurasjon</span><span class="sxs-lookup"><span data-stu-id="df7a6-117">Delete a shared version of a data model configuration</span></span>
+
+1. <span data-ttu-id="df7a6-118">På siden **Konfigurasjoner** i konfigurasjonstreet velger du **Eksempelmodellkonfigurasjon**.</span><span class="sxs-lookup"><span data-stu-id="df7a6-118">On the **Configurations** page, in the configurations tree, select **Sample model configuration**.</span></span>
+
+    <span data-ttu-id="df7a6-119">Du opprettet den første versjonen av en konfigurasjon for eksempeldatamodell og publiserte den i LCS da du fullførte fremgangsmåten i [Laste opp en konfigurasjon til Lifecycle Services](er-upload-configuration-into-lifecycle-services.md).</span><span class="sxs-lookup"><span data-stu-id="df7a6-119">You created the first version of a sample data model configuration and published it to LCS when you completed the steps in [Upload a configuration into Lifecycle Services](er-upload-configuration-into-lifecycle-services.md).</span></span> <span data-ttu-id="df7a6-120">I denne fremgangsmåten sletter du den versjonen av ER-konfigurasjonen.</span><span class="sxs-lookup"><span data-stu-id="df7a6-120">In this procedure, you will delete that version of the ER configuration.</span></span> <span data-ttu-id="df7a6-121">Du skal deretter importere denne versjonen fra LCS senere i dette emnet.</span><span class="sxs-lookup"><span data-stu-id="df7a6-121">You will then import that version from LCS later in this topic.</span></span>
+
+2. <span data-ttu-id="df7a6-122">Finn og velg ønsket post i listen.</span><span class="sxs-lookup"><span data-stu-id="df7a6-122">In the list, find and select the desired record.</span></span>
+
+    <span data-ttu-id="df7a6-123">For dette eksemplet velger du versjonen av konfigurasjonen som har statusen **Delt**.</span><span class="sxs-lookup"><span data-stu-id="df7a6-123">For this example, select the version of the configuration that has a status of **Shared**.</span></span> <span data-ttu-id="df7a6-124">Denne statusen angir at konfigurasjonen er publisert til LCS.</span><span class="sxs-lookup"><span data-stu-id="df7a6-124">This status indicates that the configuration has been published to LCS.</span></span>
+
+3. <span data-ttu-id="df7a6-125">Velg **Endre status**.</span><span class="sxs-lookup"><span data-stu-id="df7a6-125">Select **Change status**.</span></span>
+4. <span data-ttu-id="df7a6-126">Velg **Avslutt**.</span><span class="sxs-lookup"><span data-stu-id="df7a6-126">Select **Discontinue**.</span></span>
+
+    <span data-ttu-id="df7a6-127">Ved å endre statusen for den valgte versjonen fra **Delt** til **Avsluttet**, gjør du versjonen tilgjengelig for sletting.</span><span class="sxs-lookup"><span data-stu-id="df7a6-127">By changing the status of the selected version from **Shared** to **Discontinued**, you make the version available for deletion.</span></span>
+
+5. <span data-ttu-id="df7a6-128">Velg **OK**.</span><span class="sxs-lookup"><span data-stu-id="df7a6-128">Select **OK**.</span></span>
+6. <span data-ttu-id="df7a6-129">Finn og velg ønsket post i listen.</span><span class="sxs-lookup"><span data-stu-id="df7a6-129">In the list, find and select the desired record.</span></span>
+
+    <span data-ttu-id="df7a6-130">For dette eksemplet velger du versjonen av konfigurasjonen som har statusen **Avsluttet**.</span><span class="sxs-lookup"><span data-stu-id="df7a6-130">For this example, select the version of the configuration that has a status of **Discontinued**.</span></span>
+
+7. <span data-ttu-id="df7a6-131">Velg **Slett**.</span><span class="sxs-lookup"><span data-stu-id="df7a6-131">Select **Delete**.</span></span>
+8. <span data-ttu-id="df7a6-132">Velg **Ja**.</span><span class="sxs-lookup"><span data-stu-id="df7a6-132">Select **Yes**.</span></span>
+
+    <span data-ttu-id="df7a6-133">Legg merke til at bare utkastversjon 2 av den valgte datamodellkonfigurasjonen nå er tilgjengelig.</span><span class="sxs-lookup"><span data-stu-id="df7a6-133">Notice that the only draft version 2 of the selected data model configuration is now available.</span></span>
+
+9. <span data-ttu-id="df7a6-134">Lukk siden.</span><span class="sxs-lookup"><span data-stu-id="df7a6-134">Close the page.</span></span>
+
+## <a name="import-a-shared-version-of-a-data-model-configuration-from-lcs"></a><span data-ttu-id="df7a6-135">Importere en delt versjon av en datamodellkonfigurasjon fra LCS</span><span class="sxs-lookup"><span data-stu-id="df7a6-135">Import a shared version of a data model configuration from LCS</span></span>
+
+1. <span data-ttu-id="df7a6-136">Gå til **Organisasjonsstyring \> Arbeidsområder \> Elektronisk rapportering**.</span><span class="sxs-lookup"><span data-stu-id="df7a6-136">Go to **Organization administration \> Workspaces \> Electronic reporting**.</span></span>
+
+2. <span data-ttu-id="df7a6-137">I delen **Konfigurasjonsleverandører** velger du **Litware, Inc.**-flisen.</span><span class="sxs-lookup"><span data-stu-id="df7a6-137">In the **Configuration providers** section, select the **Litware, Inc.** tile.</span></span>
+
+3. <span data-ttu-id="df7a6-138">På **Litware, Inc.**-flisen velger du **Repositorier**.</span><span class="sxs-lookup"><span data-stu-id="df7a6-138">On the **Litware, Inc.** tile, select **Repositories**.</span></span>
+
+    <span data-ttu-id="df7a6-139">Nå kan du åpne listen over repositorier for konfigurasjonsleverandøren Litware, Inc.</span><span class="sxs-lookup"><span data-stu-id="df7a6-139">You can now open the list of repositories for the Litware, Inc. configuration provider.</span></span>
+
+4. <span data-ttu-id="df7a6-140">Velg **Åpne**.</span><span class="sxs-lookup"><span data-stu-id="df7a6-140">Select **Open**.</span></span>
+
+    <span data-ttu-id="df7a6-141">I dette eksemplet velger du repositoriet **LCS** og åpner det.</span><span class="sxs-lookup"><span data-stu-id="df7a6-141">For this example, select the **LCS** repository, and open it.</span></span> <span data-ttu-id="df7a6-142">Du må ha [tilgang](#accessconditions) til LCS-prosjektet og aktivabiblioteket som brukes av det valgte ER-repositoriet.</span><span class="sxs-lookup"><span data-stu-id="df7a6-142">You must have [access](#accessconditions) to the LCS project and to the Asset library that is accessed by the selected ER repository.</span></span>
+
+5. <span data-ttu-id="df7a6-143">Merk den valgte raden i listen.</span><span class="sxs-lookup"><span data-stu-id="df7a6-143">In the list, mark the selected row.</span></span>
+
+    <span data-ttu-id="df7a6-144">For dette eksemplet velger du den første versjonen av **Eksempelmodellkonfigurasjon** i versjonslisten.</span><span class="sxs-lookup"><span data-stu-id="df7a6-144">For this example, select the first version of **Sample model configuration** in the version list.</span></span>
+
+6. <span data-ttu-id="df7a6-145">Velg **Import**.</span><span class="sxs-lookup"><span data-stu-id="df7a6-145">Select **Import**.</span></span>
+7. <span data-ttu-id="df7a6-146">Velg **Ja** for å bekrefte importen av den valgte versjonen fra LCS.</span><span class="sxs-lookup"><span data-stu-id="df7a6-146">Select **Yes** to confirm the import of the selected version from LCS.</span></span>
+
+    <span data-ttu-id="df7a6-147">En informasjonsmelding bekrefter at den valgte versjonen er importert.</span><span class="sxs-lookup"><span data-stu-id="df7a6-147">An informational message confirms that the selected version was successfully imported.</span></span>
+
+8. <span data-ttu-id="df7a6-148">Lukk siden.</span><span class="sxs-lookup"><span data-stu-id="df7a6-148">Close the page.</span></span>
+9. <span data-ttu-id="df7a6-149">Lukk siden.</span><span class="sxs-lookup"><span data-stu-id="df7a6-149">Close the page.</span></span>
+10. <span data-ttu-id="df7a6-150">Velg **Konfigurasjoner**.</span><span class="sxs-lookup"><span data-stu-id="df7a6-150">Select **Configurations**.</span></span>
+11. <span data-ttu-id="df7a6-151">Velg **Eksempelmodellkonfigurasjon** i treet.</span><span class="sxs-lookup"><span data-stu-id="df7a6-151">In the tree, select **Sample model configuration**.</span></span>
+12. <span data-ttu-id="df7a6-152">Finn og velg ønsket post i listen.</span><span class="sxs-lookup"><span data-stu-id="df7a6-152">In the list, find and select the desired record.</span></span>
+
+    <span data-ttu-id="df7a6-153">For dette eksemplet velger du versjonen av konfigurasjonen som har statusen **Delt**.</span><span class="sxs-lookup"><span data-stu-id="df7a6-153">For this example, select the version of the configuration that has a status of **Shared**.</span></span>
+
+    <span data-ttu-id="df7a6-154">Legg merke til at delt versjon 1 av den valgte datamodellkonfigurasjonen nå også er tilgjengelig.</span><span class="sxs-lookup"><span data-stu-id="df7a6-154">Notice that shared version 1 of the selected data model configuration is also available now.</span></span>

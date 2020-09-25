@@ -18,41 +18,41 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3e0ba19e762574dde4f9038b87ce352d13f714f4
-ms.sourcegitcommit: 3c1eb3d89c6ab9bd70b806ca42ef9df74cf850bc
+ms.openlocfilehash: e51e181de53cd185679110e99b9f89695bacdf92
+ms.sourcegitcommit: 445f6d8d0df9f2cbac97e85e3ec3ed8b7d18d3a2
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "3041061"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "3744269"
 ---
-# <span data-ttu-id="3ab04-103"><a name="LEN">LEN ER-funksjon</a></span><span class="sxs-lookup"><span data-stu-id="3ab04-103"><a name="LEN">LEN ER function</a></span></span>
+# <a name="len-er-function"></a><span data-ttu-id="8dd6a-103">LEN ER-funksjon</span><span class="sxs-lookup"><span data-stu-id="8dd6a-103">LEN ER function</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="3ab04-104">`LEN`-funksjonen returnerer antall tegn i den angitte strengen som en *Heltall*-verdi.</span><span class="sxs-lookup"><span data-stu-id="3ab04-104">The `LEN` function returns the number of characters in the specified string as an *Integer* value.</span></span>
+<span data-ttu-id="8dd6a-104">`LEN`-funksjonen returnerer antall tegn i den angitte strengen som en *Heltall*-verdi.</span><span class="sxs-lookup"><span data-stu-id="8dd6a-104">The `LEN` function returns the number of characters in the specified string as an *Integer* value.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="3ab04-105">Syntaks</span><span class="sxs-lookup"><span data-stu-id="3ab04-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="8dd6a-105">Syntaks</span><span class="sxs-lookup"><span data-stu-id="8dd6a-105">Syntax</span></span>
 
 ```vb
 LEN (text)
 ```
 
-## <a name="arguments"></a><span data-ttu-id="3ab04-106">Argumenter</span><span class="sxs-lookup"><span data-stu-id="3ab04-106">Arguments</span></span>
+## <a name="arguments"></a><span data-ttu-id="8dd6a-106">Argumenter</span><span class="sxs-lookup"><span data-stu-id="8dd6a-106">Arguments</span></span>
 
-<span data-ttu-id="3ab04-107">`text`: *Streng*</span><span class="sxs-lookup"><span data-stu-id="3ab04-107">`text`: *String*</span></span>
+<span data-ttu-id="8dd6a-107">`text`: *Streng*</span><span class="sxs-lookup"><span data-stu-id="8dd6a-107">`text`: *String*</span></span>
 
-<span data-ttu-id="3ab04-108">En *streng*-verdi som angir teksten.</span><span class="sxs-lookup"><span data-stu-id="3ab04-108">A *String* value that specifies the text.</span></span>
+<span data-ttu-id="8dd6a-108">En *streng*-verdi som angir teksten.</span><span class="sxs-lookup"><span data-stu-id="8dd6a-108">A *String* value that specifies the text.</span></span>
 
-## <a name="return-values"></a><span data-ttu-id="3ab04-109">Returverdier</span><span class="sxs-lookup"><span data-stu-id="3ab04-109">Return values</span></span>
+## <a name="return-values"></a><span data-ttu-id="8dd6a-109">Returverdier</span><span class="sxs-lookup"><span data-stu-id="8dd6a-109">Return values</span></span>
 
-<span data-ttu-id="3ab04-110">*Heltall*</span><span class="sxs-lookup"><span data-stu-id="3ab04-110">*Integer*</span></span>
+<span data-ttu-id="8dd6a-110">*Heltall*</span><span class="sxs-lookup"><span data-stu-id="8dd6a-110">*Integer*</span></span>
 
-<span data-ttu-id="3ab04-111">Den resulterende numeriske verdien.</span><span class="sxs-lookup"><span data-stu-id="3ab04-111">The resulting numeric value.</span></span>
+<span data-ttu-id="8dd6a-111">Den resulterende numeriske verdien.</span><span class="sxs-lookup"><span data-stu-id="8dd6a-111">The resulting numeric value.</span></span>
 
-## <a name="example"></a><span data-ttu-id="3ab04-112">Eksempel</span><span class="sxs-lookup"><span data-stu-id="3ab04-112">Example</span></span>
+## <a name="example"></a><span data-ttu-id="8dd6a-112">Eksempel</span><span class="sxs-lookup"><span data-stu-id="8dd6a-112">Example</span></span>
 
-<span data-ttu-id="3ab04-113">`LEN ("Sample")` returnerer **6**.</span><span class="sxs-lookup"><span data-stu-id="3ab04-113">`LEN ("Sample")` returns **6**.</span></span>
+<span data-ttu-id="8dd6a-113">`LEN ("Sample")` returnerer **6**.</span><span class="sxs-lookup"><span data-stu-id="8dd6a-113">`LEN ("Sample")` returns **6**.</span></span>
 
-## <a name="additional-resources"></a><span data-ttu-id="3ab04-114">Tilleggsressurser</span><span class="sxs-lookup"><span data-stu-id="3ab04-114">Additional resources</span></span>
+## <a name="additional-resources"></a><span data-ttu-id="8dd6a-114">Tilleggsressurser</span><span class="sxs-lookup"><span data-stu-id="8dd6a-114">Additional resources</span></span>
 
-[<span data-ttu-id="3ab04-115">Tekstfunksjoner</span><span class="sxs-lookup"><span data-stu-id="3ab04-115">Text functions</span></span>](er-functions-category-text.md)
+[<span data-ttu-id="8dd6a-115">Tekstfunksjoner</span><span class="sxs-lookup"><span data-stu-id="8dd6a-115">Text functions</span></span>](er-functions-category-text.md)

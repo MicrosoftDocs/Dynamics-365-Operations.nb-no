@@ -1,9 +1,9 @@
 ---
-title: ER Laste opp en konfigurasjon til Lifecycle Services
-description: De følgende trinnene forklarer hvordan en bruker i rollen systemansvarlig eller utvikler av elektronisk rapportering kan opprette en ny formatkonfigurasjon for elektronisk rapportering (ER) og laste den opp til Microsoft Lifecycle Services (LCS).
+title: Laste opp en konfigurasjon til Lifecycle Services
+description: Dette emnet forklarer hvordan en bruker i rollen Systemansvarlig eller Utvikler av elektronisk rapportering kan opprette en ny konfigurasjon for elektronisk rapportering (ER) og laste den opp til Microsoft Dynamics Lifecycle Services (LCS).
 author: NickSelin
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 09/14/2020
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,82 +16,133 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 5def757de8fb9d347f5fd0f828039dad5c989c19
-ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
+ms.openlocfilehash: c43bad3ee2530a454de718a0a7da4d1e468a4af4
+ms.sourcegitcommit: 9857d5cbdc0ab2fc9db049ac5ad118fc2b29bedc
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3143297"
+ms.lasthandoff: 09/14/2020
+ms.locfileid: "3810697"
 ---
-# <a name="er-upload-a-configuration-into-lifecycle-services"></a><span data-ttu-id="3aa2a-103">ER Laste opp en konfigurasjon til Lifecycle Services</span><span class="sxs-lookup"><span data-stu-id="3aa2a-103">ER Upload a configuration into Lifecycle Services</span></span>
+# <a name="upload-a-configuration-into-lifecycle-services"></a><span data-ttu-id="74a50-103">Laste opp en konfigurasjon til Lifecycle Services</span><span class="sxs-lookup"><span data-stu-id="74a50-103">Upload a configuration into Lifecycle Services</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="3aa2a-104">De følgende trinnene forklarer hvordan en bruker i rollen systemansvarlig eller utvikler av elektronisk rapportering kan opprette en ny formatkonfigurasjon for elektronisk rapportering (ER) og laste den opp til Microsoft Lifecycle Services (LCS).</span><span class="sxs-lookup"><span data-stu-id="3aa2a-104">The following steps explain how a user in the System Administrator or Electronic Reporting Developer role can create a new Electronic reporting (ER) configuration and upload it into Microsoft Lifecycle Services (LCS).</span></span>
+<span data-ttu-id="74a50-104">Dette emnet forklarer hvordan en bruker i rollen Systemansvarlig eller Utvikler av elektronisk rapportering kan opprette en ny [konfigurasjon for elektronisk rapportering (ER)](../general-electronic-reporting.md#Configuration) og laste den opp til [aktivabiblioteket på prosjektnivå](../../lifecycle-services/asset-library.md) i Microsoft Dynamics Lifecycle Services (LCS).</span><span class="sxs-lookup"><span data-stu-id="74a50-104">This topic explains how a user in the System administrator or Electronic reporting developer role can create a new [Electronic reporting (ER) configuration](../general-electronic-reporting.md#Configuration) and upload it into the [project-level Asset library](../../lifecycle-services/asset-library.md) in Microsoft Dynamics Lifecycle Services (LCS).</span></span>
 
-<span data-ttu-id="3aa2a-105">I dette eksemplet skal du opprette en konfigurasjon og laste den opp til LCS for eksempelfirmaet Litware, Inc. Denne fremgangsmåten kan utføres i et hvilket som helst firma ettersom ER-konfigurasjoner deles mellom alle firmaer.</span><span class="sxs-lookup"><span data-stu-id="3aa2a-105">In this example, you will create a configuration and upload it to LCS for sample company, Litware, Inc. These steps can be performed in any company as ER configurations are shared among companies.</span></span> <span data-ttu-id="3aa2a-106">For å fullføre disse trinnene må du først fullføre trinnene i fremgangsmåten "Opprette en konfigurasjonsleverandør og merke den som aktiv".</span><span class="sxs-lookup"><span data-stu-id="3aa2a-106">To complete these steps, you must first complete the steps in the "Create a configuration provider and mark it as active" procedure.</span></span> <span data-ttu-id="3aa2a-107">Tilgang til LCS kreves også for fullføring av denne fremgangsmåten.</span><span class="sxs-lookup"><span data-stu-id="3aa2a-107">Access to LCS is also required for completion of these steps.</span></span>
+<span data-ttu-id="74a50-105">I dette eksemplet skal du opprette en konfigurasjon og laste den opp til LCS for et eksempelfirma med navnet Litware, Inc. Denne fremgangsmåten kan fullføres i alle firmaer ettersom ER-konfigurasjoner deles mellom alle firmaer.</span><span class="sxs-lookup"><span data-stu-id="74a50-105">In this example, you will create a configuration and upload it into LCS for a sample company that is named Litware, Inc. These steps can be completed in any company, because ER configurations are shared among companies.</span></span> <span data-ttu-id="74a50-106">For å fullføre disse trinnene må du først fullføre trinnene i [Opprette konfigurasjonsleverandører og merke dem som aktive](er-configuration-provider-mark-it-active-2016-11.md).</span><span class="sxs-lookup"><span data-stu-id="74a50-106">To complete these steps, you must first complete the steps in [Create configuration providers and mark them as active](er-configuration-provider-mark-it-active-2016-11.md).</span></span> <span data-ttu-id="74a50-107">Tilgang til LCS er også nødvendig.</span><span class="sxs-lookup"><span data-stu-id="74a50-107">Access to LCS is also required.</span></span>
 
-1. <span data-ttu-id="3aa2a-108">Gå til Organisasjonsstyring > Arbeidsområder > Elektronisk rapportering.</span><span class="sxs-lookup"><span data-stu-id="3aa2a-108">Go to Organization administration > Workspaces > Electronic reporting.</span></span>
-2. <span data-ttu-id="3aa2a-109">Velg "Litware, Inc."</span><span class="sxs-lookup"><span data-stu-id="3aa2a-109">Select 'Litware, Inc.'</span></span> <span data-ttu-id="3aa2a-110">og angi som aktiv.</span><span class="sxs-lookup"><span data-stu-id="3aa2a-110">and set it as active.</span></span>
-3. <span data-ttu-id="3aa2a-111">Klikk Konfigurasjoner.</span><span class="sxs-lookup"><span data-stu-id="3aa2a-111">Click Configurations.</span></span>
+1. <span data-ttu-id="74a50-108">Logg på programmet med én av følgende roller:</span><span class="sxs-lookup"><span data-stu-id="74a50-108">Sign in to the application by using one of the following roles:</span></span>
 
-## <a name="create-a-new-data-model-configuration"></a><span data-ttu-id="3aa2a-112">Opprett en ny datamodellkonfigurasjon</span><span class="sxs-lookup"><span data-stu-id="3aa2a-112">Create a new data model configuration</span></span>
-1. <span data-ttu-id="3aa2a-113">Klikk Opprett konfigurasjon for å åpne nedtrekksdialogen.</span><span class="sxs-lookup"><span data-stu-id="3aa2a-113">Click Create configuration to open the drop dialog.</span></span>
-    * <span data-ttu-id="3aa2a-114">Du vil opprette en konfigurasjon som inneholder en eksempeldatamodell for elektroniske dokumenter.</span><span class="sxs-lookup"><span data-stu-id="3aa2a-114">You will create a configuration that contains a sample data model for electronic documents.</span></span> <span data-ttu-id="3aa2a-115">Denne datamodellkonfigurasjonen lastes inn i LCS senere.</span><span class="sxs-lookup"><span data-stu-id="3aa2a-115">This data model configuration will be uploaded into LCS later.</span></span>  
-2. <span data-ttu-id="3aa2a-116">Skriv inn Eksempelmodellkonfigurasjon i Navn-feltet.</span><span class="sxs-lookup"><span data-stu-id="3aa2a-116">In the Name field, type 'Sample model configuration'.</span></span>
-    * <span data-ttu-id="3aa2a-117">Eksempelmodellkonfigurasjon</span><span class="sxs-lookup"><span data-stu-id="3aa2a-117">Sample model configuration</span></span>  
-3. <span data-ttu-id="3aa2a-118">Skriv inn Eksempelmodellkonfigurasjon i Beskrivelse-feltet.</span><span class="sxs-lookup"><span data-stu-id="3aa2a-118">In the Description field, type 'Sample model configuration'.</span></span>
-    * <span data-ttu-id="3aa2a-119">Eksempelmodellkonfigurasjon</span><span class="sxs-lookup"><span data-stu-id="3aa2a-119">Sample model configuration</span></span>  
-4. <span data-ttu-id="3aa2a-120">Klikk Opprett konfigurasjon.</span><span class="sxs-lookup"><span data-stu-id="3aa2a-120">Click Create configuration.</span></span>
-5. <span data-ttu-id="3aa2a-121">Velg Modellutforming.</span><span class="sxs-lookup"><span data-stu-id="3aa2a-121">Click Model designer.</span></span>
-6. <span data-ttu-id="3aa2a-122">Klikk Ny.</span><span class="sxs-lookup"><span data-stu-id="3aa2a-122">Click New.</span></span>
-7. <span data-ttu-id="3aa2a-123">Skriv inn Inngangspunkt i Navn-feltet.</span><span class="sxs-lookup"><span data-stu-id="3aa2a-123">In the Name field, type 'Entry point'.</span></span>
-    * <span data-ttu-id="3aa2a-124">Inngangspunkt</span><span class="sxs-lookup"><span data-stu-id="3aa2a-124">Entry point</span></span>  
-8. <span data-ttu-id="3aa2a-125">Klikk Legg til.</span><span class="sxs-lookup"><span data-stu-id="3aa2a-125">Click Add.</span></span>
-9. <span data-ttu-id="3aa2a-126">Klikk Lagre.</span><span class="sxs-lookup"><span data-stu-id="3aa2a-126">Click Save.</span></span>
-10. <span data-ttu-id="3aa2a-127">Lukk siden.</span><span class="sxs-lookup"><span data-stu-id="3aa2a-127">Close the page.</span></span>
-11. <span data-ttu-id="3aa2a-128">Klikk Endre status.</span><span class="sxs-lookup"><span data-stu-id="3aa2a-128">Click Change status.</span></span>
-12. <span data-ttu-id="3aa2a-129">Klikk Fullført.</span><span class="sxs-lookup"><span data-stu-id="3aa2a-129">Click Complete.</span></span>
-13. <span data-ttu-id="3aa2a-130">Klikk OK.</span><span class="sxs-lookup"><span data-stu-id="3aa2a-130">Click OK.</span></span>
+    - <span data-ttu-id="74a50-109">Utvikler av elektronisk rapportering</span><span class="sxs-lookup"><span data-stu-id="74a50-109">Electronic reporting developer</span></span>
+    - <span data-ttu-id="74a50-110">Systemansvarlig</span><span class="sxs-lookup"><span data-stu-id="74a50-110">System administrator</span></span>
 
-## <a name="register-a-new--repository"></a><span data-ttu-id="3aa2a-131">Registrere et nytt repositorium</span><span class="sxs-lookup"><span data-stu-id="3aa2a-131">Register a new  repository</span></span>
-1. <span data-ttu-id="3aa2a-132">Lukk siden.</span><span class="sxs-lookup"><span data-stu-id="3aa2a-132">Close the page.</span></span>
-2. <span data-ttu-id="3aa2a-133">Klikk Repositorier.</span><span class="sxs-lookup"><span data-stu-id="3aa2a-133">Click Repositories.</span></span>
-    * <span data-ttu-id="3aa2a-134">Denne lar deg åpne listen over repositorier for konfigurasjonsleverandøren Litware, Inc.</span><span class="sxs-lookup"><span data-stu-id="3aa2a-134">This enables you to open the list of repositories for the Litware, Inc. configuration provider.</span></span>  
-3. <span data-ttu-id="3aa2a-135">Klikk Legg til for å åpne nedtrekksdialogen.</span><span class="sxs-lookup"><span data-stu-id="3aa2a-135">Click Add to open the drop dialog.</span></span>
-    * <span data-ttu-id="3aa2a-136">Dette lar deg legge til et nytt repositorium.</span><span class="sxs-lookup"><span data-stu-id="3aa2a-136">This allows you to add a new repository.</span></span>  
-4. <span data-ttu-id="3aa2a-137">Velg LCS i feltet Type konfigurasjonsrepositorium.</span><span class="sxs-lookup"><span data-stu-id="3aa2a-137">In the Configuration repository type field, select LCS.</span></span>
-5. <span data-ttu-id="3aa2a-138">Klikk Opprett repositorium.</span><span class="sxs-lookup"><span data-stu-id="3aa2a-138">Click Create repository.</span></span>
-6. <span data-ttu-id="3aa2a-139">Angi eller velg en verdi i feltet Prosjekt.</span><span class="sxs-lookup"><span data-stu-id="3aa2a-139">In the Project field, enter or select a value.</span></span>
-    * <span data-ttu-id="3aa2a-140">Velg ønsket LCS-prosjekt.</span><span class="sxs-lookup"><span data-stu-id="3aa2a-140">Select the desired LCS project.</span></span> <span data-ttu-id="3aa2a-141">Du må ha tilgang til prosjektet.</span><span class="sxs-lookup"><span data-stu-id="3aa2a-141">You must have access to the project.</span></span>  
-7. <span data-ttu-id="3aa2a-142">Klikk OK.</span><span class="sxs-lookup"><span data-stu-id="3aa2a-142">Click OK.</span></span>
-    * <span data-ttu-id="3aa2a-143">Fullfør en ny oppføring i repositoriet.</span><span class="sxs-lookup"><span data-stu-id="3aa2a-143">Complete a new repository entry.</span></span>  
-8. <span data-ttu-id="3aa2a-144">Merk den valgte raden i listen.</span><span class="sxs-lookup"><span data-stu-id="3aa2a-144">In the list, mark the selected row.</span></span>
-    * <span data-ttu-id="3aa2a-145">Velg LCS-repositoriumposten.</span><span class="sxs-lookup"><span data-stu-id="3aa2a-145">Select the LCS repository record.</span></span>  
-    * <span data-ttu-id="3aa2a-146">Legg merke til at et registrert repositorium er merket med gjeldende leverandør, som betyr at bare konfigurasjoner som eies av denne leverandøren kan settes til dette repositoriet og derfor lastes opp til det valgte LCS-prosjektet.</span><span class="sxs-lookup"><span data-stu-id="3aa2a-146">Note that a registered repository is marked by the current provider meaning that the only configurations owned by that provider can be placed to this repository and, consequently, uploaded into the selected LCS project.</span></span>  
-9. <span data-ttu-id="3aa2a-147">Klikk Åpne.</span><span class="sxs-lookup"><span data-stu-id="3aa2a-147">Click Open.</span></span>
-    * <span data-ttu-id="3aa2a-148">Åpne repositoriet for å vise listen over ER-konfigurasjoner.</span><span class="sxs-lookup"><span data-stu-id="3aa2a-148">Open the repository to view the list of ER configurations.</span></span> <span data-ttu-id="3aa2a-149">Den er tom hvis prosjektet ennå ikke er brukt for deling av ER-konfigurasjoner.</span><span class="sxs-lookup"><span data-stu-id="3aa2a-149">It will be empty if this project has not yet been used for ER configurations sharing.</span></span>  
-10. <span data-ttu-id="3aa2a-150">Lukk siden.</span><span class="sxs-lookup"><span data-stu-id="3aa2a-150">Close the page.</span></span>
-11. <span data-ttu-id="3aa2a-151">Lukk siden.</span><span class="sxs-lookup"><span data-stu-id="3aa2a-151">Close the page.</span></span>
+2. <span data-ttu-id="74a50-111">Gå til **Organisasjonsstyring** \> **Arbeidsområder** \> **Elektronisk rapportering**.</span><span class="sxs-lookup"><span data-stu-id="74a50-111">Go to **Organization administration** \> **Workspaces** \> **Electronic reporting**.</span></span>
+3. <span data-ttu-id="74a50-112">Velg **Litware, Inc.** og merk som **Aktiv**.</span><span class="sxs-lookup"><span data-stu-id="74a50-112">Select **Litware, Inc.**, and mark it as **Active**.</span></span>
+4. <span data-ttu-id="74a50-113">Velg **Konfigurasjoner**.</span><span class="sxs-lookup"><span data-stu-id="74a50-113">Select **Configurations**.</span></span>
 
-## <a name="upload-configuration-into-lcs"></a><span data-ttu-id="3aa2a-152">Laste opp konfigurasjon til LCS</span><span class="sxs-lookup"><span data-stu-id="3aa2a-152">Upload configuration into LCS</span></span>
-1. <span data-ttu-id="3aa2a-153">Klikk Konfigurasjoner.</span><span class="sxs-lookup"><span data-stu-id="3aa2a-153">Click Configurations.</span></span>
-2. <span data-ttu-id="3aa2a-154">Velg Eksempelmodellkonfigurasjon i treet.</span><span class="sxs-lookup"><span data-stu-id="3aa2a-154">In the tree, select 'Sample model configuration'.</span></span>
-    * <span data-ttu-id="3aa2a-155">Velg en opprettet konfigurasjon som allerede er fullført.</span><span class="sxs-lookup"><span data-stu-id="3aa2a-155">Select a created configuration that has been already completed.</span></span>  
-3. <span data-ttu-id="3aa2a-156">Finn og velg ønsket post i listen.</span><span class="sxs-lookup"><span data-stu-id="3aa2a-156">In the list, find and select the desired record.</span></span>
-    * <span data-ttu-id="3aa2a-157">Velg versjonen av den valgte konfigurasjonen med statusen Fullført.</span><span class="sxs-lookup"><span data-stu-id="3aa2a-157">Select the version of the selected configuration with the status of 'Completed'.</span></span>  
-4. <span data-ttu-id="3aa2a-158">Klikk Endre status.</span><span class="sxs-lookup"><span data-stu-id="3aa2a-158">Click Change status.</span></span>
-5. <span data-ttu-id="3aa2a-159">Klikk Del.</span><span class="sxs-lookup"><span data-stu-id="3aa2a-159">Click Share.</span></span>
-    * <span data-ttu-id="3aa2a-160">Konfigurasjonsstatusen endres fra Fullført til Delt når den er publisert i LCS.</span><span class="sxs-lookup"><span data-stu-id="3aa2a-160">The configuration status will change from 'Completed' to 'Shared' when it is published in LCS.</span></span>  
-6. <span data-ttu-id="3aa2a-161">Klikk OK.</span><span class="sxs-lookup"><span data-stu-id="3aa2a-161">Click OK.</span></span>
-7. <span data-ttu-id="3aa2a-162">Finn og velg ønsket post i listen.</span><span class="sxs-lookup"><span data-stu-id="3aa2a-162">In the list, find and select the desired record.</span></span>
-    * <span data-ttu-id="3aa2a-163">Velg konfigurasjonsversjonen med statusen Delt.</span><span class="sxs-lookup"><span data-stu-id="3aa2a-163">Select the configuration version with the status of 'Shared'.</span></span>  
-    * <span data-ttu-id="3aa2a-164">Legg merke til at statusen for den valgte versjonen er endret fra Fullført til Delt.</span><span class="sxs-lookup"><span data-stu-id="3aa2a-164">Note that the status of the selected version has changed from 'Completed' to 'Shared'.</span></span>  
-8. <span data-ttu-id="3aa2a-165">Lukk siden.</span><span class="sxs-lookup"><span data-stu-id="3aa2a-165">Close the page.</span></span>
-9. <span data-ttu-id="3aa2a-166">Klikk Repositorier.</span><span class="sxs-lookup"><span data-stu-id="3aa2a-166">Click Repositories.</span></span>
-    * <span data-ttu-id="3aa2a-167">Denne lar deg åpne listen over repositorier for konfigurasjonsleverandøren Litware, Inc.</span><span class="sxs-lookup"><span data-stu-id="3aa2a-167">This enables you to open the list of repositories for the Litware, Inc. configuration provider.</span></span>  
-10. <span data-ttu-id="3aa2a-168">Klikk Åpne.</span><span class="sxs-lookup"><span data-stu-id="3aa2a-168">Click Open.</span></span>
-    * <span data-ttu-id="3aa2a-169">Velg LCS-repositorium, og åpne det.</span><span class="sxs-lookup"><span data-stu-id="3aa2a-169">Select the LCS repository and open it.</span></span>  
-    * <span data-ttu-id="3aa2a-170">Legg merke til at den valgte konfigurasjonen vises som et anleggsmiddel for det valgte LCS-prosjektet.</span><span class="sxs-lookup"><span data-stu-id="3aa2a-170">Note that the selected configuration is shown as an asset of the selected LCS project.</span></span>  
-    * <span data-ttu-id="3aa2a-171">Åpne LCS ved hjelp av https://lcs.dynamics.com.</span><span class="sxs-lookup"><span data-stu-id="3aa2a-171">Open LCS using https://lcs.dynamics.com.</span></span> <span data-ttu-id="3aa2a-172">Åpne et prosjekt som ble brukt tidligere for registrering av repositoriet, åpne Aktivabibliotek for dette prosjektet og vis innholdet i aktivatypen Ger-konfigurasjonstypen – den opplastede ER-konfigurasjonen vil være tilgjengelig.</span><span class="sxs-lookup"><span data-stu-id="3aa2a-172">Open a project that was used earlier for repository registration, open the 'Asset library' of this project, and expand the content of the 'GER configuration' asset type – the uploaded ER configuration will be available.</span></span> <span data-ttu-id="3aa2a-173">Legg merke til at den opplastede LCS-konfigurasjonen kan importeres til en annen forekomst hvis leverandører har tilgang til dette LCS-prosjektet.</span><span class="sxs-lookup"><span data-stu-id="3aa2a-173">Note that the uploaded LCS configuration can be imported to another instance if providers have access to this LCS project.</span></span>  
+<a name="accessconditions"></a>
+> [!NOTE]
+> <span data-ttu-id="74a50-114">Kontroller at den gjeldende Dynamics 365 Finance-brukeren er medlem av LCS-prosjektet som inneholder [aktivabiblioteket](../../lifecycle-services/asset-library.md#asset-library-support) som brukes til å importere ER-konfigurasjoner.</span><span class="sxs-lookup"><span data-stu-id="74a50-114">Make sure that the current Dynamics 365 Finance user is a member of the LCS project that contains the [Asset library](../../lifecycle-services/asset-library.md#asset-library-support) that is used to import ER configurations.</span></span>
+>
+> <span data-ttu-id="74a50-115">Du kan ikke få tilgang til et LCS-prosjekt fra et ER-repositorium som representerer et annet domene enn domenet som brukes i Finance.</span><span class="sxs-lookup"><span data-stu-id="74a50-115">You can't access an LCS project from an ER repository that represents a different domain than the domain that is used in Finance.</span></span> <span data-ttu-id="74a50-116">Hvis du prøver, vises det en tom liste over LCS-prosjekter, og du kan ikke importere ER-konfigurasjonene fra aktivabiblioteket på prosjektnivå i LCS.</span><span class="sxs-lookup"><span data-stu-id="74a50-116">If you try, an empty list of LCS projects will be shown, and you won't be able to import ER configurations from the project-level Asset library in LCS.</span></span> <span data-ttu-id="74a50-117">Hvis du vil ha tilgang til aktivabiblioteker på prosjektnivå fra et ER-repositorium som brukes til å importere ER-konfigurasjoner, logger du på Finance-modulen ved hjelp av legitimasjonen til en bruker som tilhører leieren (domenet) som gjeldende Finance-forekomst er klargjort for.</span><span class="sxs-lookup"><span data-stu-id="74a50-117">To access project-level Asset libraries from an ER repository that is used to import ER configurations, sign in to Finance by using the credentials of a user who belongs to the tenant (domain) that the current Finance instance has been provisioned for.</span></span>
 
+## <a name="create-a-new-data-model-configuration"></a><span data-ttu-id="74a50-118">Opprett en ny datamodellkonfigurasjon</span><span class="sxs-lookup"><span data-stu-id="74a50-118">Create a new data model configuration</span></span>
+
+1. <span data-ttu-id="74a50-119">Gå til **Organisasjonsstyring \> Elektronisk rapportering \> Konfigurasjoner**.</span><span class="sxs-lookup"><span data-stu-id="74a50-119">Go to **Organization administration \> Electronic reporting \> Configurations**.</span></span>
+2. <span data-ttu-id="74a50-120">På siden **Konfigurasjoner** velger du **Opprett konfigurasjon** for å åpne dialogboksen med rullegardinliste.</span><span class="sxs-lookup"><span data-stu-id="74a50-120">On the **Configurations** page, select **Create configuration** to open the drop-down dialog box.</span></span>
+
+    <span data-ttu-id="74a50-121">I dette eksemplet skal du opprette en konfigurasjon som inneholder en eksempeldatamodell for elektroniske dokumenter.</span><span class="sxs-lookup"><span data-stu-id="74a50-121">In this example, you will create a configuration that contains a sample data model for electronic documents.</span></span> <span data-ttu-id="74a50-122">Denne datamodellkonfigurasjonen lastes inn i LCS senere.</span><span class="sxs-lookup"><span data-stu-id="74a50-122">This data model configuration will be uploaded into LCS later.</span></span>
+
+3. <span data-ttu-id="74a50-123">I feltet **Navn** angir du **Eksempelmodellkonfigurasjon**.</span><span class="sxs-lookup"><span data-stu-id="74a50-123">In the **Name** field, enter **Sample model configuration**.</span></span>
+4. <span data-ttu-id="74a50-124">I feltet **Beskrivelse** angir du **Eksempelmodellkonfigurasjon**.</span><span class="sxs-lookup"><span data-stu-id="74a50-124">In the **Description** field, enter **Sample model configuration**.</span></span>
+5. <span data-ttu-id="74a50-125">Velg **Opprett konfigurasjon**.</span><span class="sxs-lookup"><span data-stu-id="74a50-125">Select **Create configuration**.</span></span>
+6. <span data-ttu-id="74a50-126">Velg **Modellutforming**.</span><span class="sxs-lookup"><span data-stu-id="74a50-126">Select **Model designer**.</span></span>
+7. <span data-ttu-id="74a50-127">Velg **Ny**.</span><span class="sxs-lookup"><span data-stu-id="74a50-127">Select **New**.</span></span>
+8. <span data-ttu-id="74a50-128">I **Navn**-feltet angir du **Inngangspunkt**.</span><span class="sxs-lookup"><span data-stu-id="74a50-128">In the **Name** field, enter **Entry point**.</span></span>
+9. <span data-ttu-id="74a50-129">Velg **Legg til**.</span><span class="sxs-lookup"><span data-stu-id="74a50-129">Select **Add**.</span></span>
+10. <span data-ttu-id="74a50-130">Velg **Lagre**.</span><span class="sxs-lookup"><span data-stu-id="74a50-130">Select **Save**.</span></span>
+11. <span data-ttu-id="74a50-131">Lukk siden.</span><span class="sxs-lookup"><span data-stu-id="74a50-131">Close the page.</span></span>
+12. <span data-ttu-id="74a50-132">Velg **Endre status**.</span><span class="sxs-lookup"><span data-stu-id="74a50-132">Select **Change status**.</span></span>
+13. <span data-ttu-id="74a50-133">Velg **Fullfør**.</span><span class="sxs-lookup"><span data-stu-id="74a50-133">Select **Complete**.</span></span>
+14. <span data-ttu-id="74a50-134">Velg **OK**.</span><span class="sxs-lookup"><span data-stu-id="74a50-134">Select **OK**.</span></span>
+15. <span data-ttu-id="74a50-135">Lukk siden.</span><span class="sxs-lookup"><span data-stu-id="74a50-135">Close the page.</span></span>
+
+## <a name="register-a-new-repository"></a><span data-ttu-id="74a50-136">Registrere et nytt repositorium</span><span class="sxs-lookup"><span data-stu-id="74a50-136">Register a new repository</span></span>
+
+1. <span data-ttu-id="74a50-137">Gå til **Organisasjonsstyring \> Arbeidsområder \> Elektronisk rapportering**.</span><span class="sxs-lookup"><span data-stu-id="74a50-137">Go to **Organization administration \> Workspaces \> Electronic reporting**.</span></span>
+
+2. <span data-ttu-id="74a50-138">I delen **Konfigurasjonsleverandører** velger du **Litware, Inc.**-flisen.</span><span class="sxs-lookup"><span data-stu-id="74a50-138">In the **Configuration providers** section, select the **Litware, Inc.** tile.</span></span>
+
+3. <span data-ttu-id="74a50-139">På **Litware, Inc.**-flisen velger du **Repositorier**.</span><span class="sxs-lookup"><span data-stu-id="74a50-139">On the **Litware, Inc.** tile, select **Repositories**.</span></span>
+
+    <span data-ttu-id="74a50-140">Nå kan du åpne listen over repositorier for konfigurasjonsleverandøren Litware, Inc.</span><span class="sxs-lookup"><span data-stu-id="74a50-140">You can now open the list of repositories for the Litware, Inc. configuration provider.</span></span>
+
+4. <span data-ttu-id="74a50-141">Velg **Legg til** for å åpne dialogboksen med rullegardinliste.</span><span class="sxs-lookup"><span data-stu-id="74a50-141">Select **Add** to open the drop-down dialog box.</span></span>
+
+    <span data-ttu-id="74a50-142">Du kan nå legge til et nytt repositorium.</span><span class="sxs-lookup"><span data-stu-id="74a50-142">You can now add a new repository.</span></span>
+
+5. <span data-ttu-id="74a50-143">I feltet **Konfigurasjonsrepositorium** velger du **LCS**.</span><span class="sxs-lookup"><span data-stu-id="74a50-143">In the **Configuration repository enter** field, select **LCS**.</span></span>
+6. <span data-ttu-id="74a50-144">Velg **Opprett repositorium**.</span><span class="sxs-lookup"><span data-stu-id="74a50-144">Select **Create repository**.</span></span>
+7. <span data-ttu-id="74a50-145">Angi eller velg en verdi i feltet **Prosjekt**.</span><span class="sxs-lookup"><span data-stu-id="74a50-145">In the **Project** field, enter or select a value.</span></span>
+
+    <span data-ttu-id="74a50-146">I dette eksemplet velger du det ønskede LCS-prosjektet.</span><span class="sxs-lookup"><span data-stu-id="74a50-146">For this example, select the desired LCS project.</span></span> <span data-ttu-id="74a50-147">Du må ha [tilgang](#accessconditions) til prosjektet.</span><span class="sxs-lookup"><span data-stu-id="74a50-147">You must have [access](#accessconditions) to the project.</span></span>
+
+8. <span data-ttu-id="74a50-148">Velg **OK**.</span><span class="sxs-lookup"><span data-stu-id="74a50-148">Select **OK**.</span></span>
+
+    <span data-ttu-id="74a50-149">Fullfør en ny oppføring i repositoriet.</span><span class="sxs-lookup"><span data-stu-id="74a50-149">Complete a new repository entry.</span></span>
+
+9. <span data-ttu-id="74a50-150">Merk den valgte raden i listen.</span><span class="sxs-lookup"><span data-stu-id="74a50-150">In the list, mark the selected row.</span></span>
+
+    <span data-ttu-id="74a50-151">I dette eksemplet velger du repositoriumposten i **LCS**.</span><span class="sxs-lookup"><span data-stu-id="74a50-151">For this example, select the **LCS** repository record.</span></span>
+
+    <span data-ttu-id="74a50-152">Vær oppmerksom på at et registrert repositorium er merket med gjeldende leverandør.</span><span class="sxs-lookup"><span data-stu-id="74a50-152">Note that a registered repository is marked by the current provider.</span></span> <span data-ttu-id="74a50-153">Det er med andre ord bare konfigurasjoner som eies av denne leverandøren, som kan plasseres i repositoriet og som derfor lastes opp til det valgte LCS-prosjektet.</span><span class="sxs-lookup"><span data-stu-id="74a50-153">In other words, only configurations that are owned by that provider can be put in this repository and therefore uploaded into the selected LCS project.</span></span>
+
+10. <span data-ttu-id="74a50-154">Velg **Åpne**.</span><span class="sxs-lookup"><span data-stu-id="74a50-154">Select **Open**.</span></span>
+
+    <span data-ttu-id="74a50-155">Du åpner repositoriet for å vise listen over ER-konfigurasjoner.</span><span class="sxs-lookup"><span data-stu-id="74a50-155">You open the repository to view the list of ER configurations.</span></span> <span data-ttu-id="74a50-156">Hvis det valgte prosjektet ennå ikke er brukt for deling av ER-konfigurasjoner, vil listen være tom.</span><span class="sxs-lookup"><span data-stu-id="74a50-156">If the selected project hasn't yet been used for ER configurations sharing, the list will be empty.</span></span>
+
+11. <span data-ttu-id="74a50-157">Lukk siden.</span><span class="sxs-lookup"><span data-stu-id="74a50-157">Close the page.</span></span>
+12. <span data-ttu-id="74a50-158">Lukk siden.</span><span class="sxs-lookup"><span data-stu-id="74a50-158">Close the page.</span></span>
+
+## <a name="upload-a-configuration-into-lcs"></a><span data-ttu-id="74a50-159">Laste opp en konfigurasjon til LCS</span><span class="sxs-lookup"><span data-stu-id="74a50-159">Upload a configuration into LCS</span></span>
+
+1. <span data-ttu-id="74a50-160">Gå til **Organisasjonsstyring \> Elektronisk rapportering \> Konfigurasjoner**.</span><span class="sxs-lookup"><span data-stu-id="74a50-160">Go to **Organization administration \> Electronic reporting \> Configurations**.</span></span>
+2. <span data-ttu-id="74a50-161">På siden **Konfigurasjoner** i konfigurasjonstreet velger du **Eksempelmodellkonfigurasjon**.</span><span class="sxs-lookup"><span data-stu-id="74a50-161">On the **Configurations** page, in the configurations tree, select **Sample model configuration**.</span></span>
+
+    <span data-ttu-id="74a50-162">Du må velge en opprettet konfigurasjon som allerede er fullført.</span><span class="sxs-lookup"><span data-stu-id="74a50-162">You must select a created configuration that has been already completed.</span></span>
+
+3. <span data-ttu-id="74a50-163">Finn og velg ønsket post i listen.</span><span class="sxs-lookup"><span data-stu-id="74a50-163">In the list, find and select the desired record.</span></span>
+
+    <span data-ttu-id="74a50-164">For dette eksemplet velger du versjonen av den valgte konfigurasjonen som har statusen **Fullført**.</span><span class="sxs-lookup"><span data-stu-id="74a50-164">For this example, select the version of the selected configuration that has a status of **Completed**.</span></span>
+
+4. <span data-ttu-id="74a50-165">Velg **Endre status**.</span><span class="sxs-lookup"><span data-stu-id="74a50-165">Select **Change status**.</span></span>
+5. <span data-ttu-id="74a50-166">Velg **Del**.</span><span class="sxs-lookup"><span data-stu-id="74a50-166">Select **Share**.</span></span>
+
+    <span data-ttu-id="74a50-167">Statusen for konfigurasjonen endres fra **Fullført** til **Delt** når konfigurasjonen er publisert i LCS.</span><span class="sxs-lookup"><span data-stu-id="74a50-167">The status of the configuration is changed from **Completed** to **Shared** when the configuration is published in LCS.</span></span>
+
+6. <span data-ttu-id="74a50-168">Velg **OK**.</span><span class="sxs-lookup"><span data-stu-id="74a50-168">Select **OK**.</span></span>
+7. <span data-ttu-id="74a50-169">Finn og velg ønsket post i listen.</span><span class="sxs-lookup"><span data-stu-id="74a50-169">In the list, find and select the desired record.</span></span>
+
+    <span data-ttu-id="74a50-170">For dette eksemplet velger du konfigurasjonsversjonen som har statusen **Delt**.</span><span class="sxs-lookup"><span data-stu-id="74a50-170">For this example, select the configuration version that has a status of **Shared**.</span></span>
+
+    <span data-ttu-id="74a50-171">Vær oppmerksom på at statusen for den valgte versjonen ble endret fra **Fullført** til **Delt**.</span><span class="sxs-lookup"><span data-stu-id="74a50-171">Note that the status of the selected version was changed from **Completed** to **Shared**.</span></span>
+
+8. <span data-ttu-id="74a50-172">Lukk siden.</span><span class="sxs-lookup"><span data-stu-id="74a50-172">Close the page.</span></span>
+9. <span data-ttu-id="74a50-173">Velg **Repositorier**.</span><span class="sxs-lookup"><span data-stu-id="74a50-173">Select **Repositories**.</span></span>
+
+    <span data-ttu-id="74a50-174">Nå kan du åpne listen over repositorier for konfigurasjonsleverandøren Litware, Inc.</span><span class="sxs-lookup"><span data-stu-id="74a50-174">You can now open the list of repositories for the Litware, Inc. configuration provider.</span></span>
+
+10. <span data-ttu-id="74a50-175">Velg **Åpne**.</span><span class="sxs-lookup"><span data-stu-id="74a50-175">Select **Open**.</span></span>
+
+    <span data-ttu-id="74a50-176">I dette eksemplet velger du repositoriet **LCS** og åpner det.</span><span class="sxs-lookup"><span data-stu-id="74a50-176">For this example, select the **LCS** repository, and open it.</span></span>
+
+    <span data-ttu-id="74a50-177">Vær oppmerksom på at den valgte konfigurasjonen vises som et anleggsmiddel for det valgte LCS-prosjektet.</span><span class="sxs-lookup"><span data-stu-id="74a50-177">Notice that the selected configuration is shown as an asset of the selected LCS project.</span></span>
+
+11. <span data-ttu-id="74a50-178">Åpne LCS ved å gå til <https://lcs.dynamics.com>.</span><span class="sxs-lookup"><span data-stu-id="74a50-178">Open LCS by going to <https://lcs.dynamics.com>.</span></span>
+12. <span data-ttu-id="74a50-179">Åpne et prosjekt som ble brukt tidligere til registrering av repositorium.</span><span class="sxs-lookup"><span data-stu-id="74a50-179">Open a project that was used earlier for repository registration.</span></span>
+13. <span data-ttu-id="74a50-180">Åpne aktivabiblioteket for prosjektet.</span><span class="sxs-lookup"><span data-stu-id="74a50-180">Open the Asset library of the project.</span></span>
+14. <span data-ttu-id="74a50-181">Velg aktivatypen **GER-konfigurasjon**.</span><span class="sxs-lookup"><span data-stu-id="74a50-181">Select the **GER configuration** asset type.</span></span>
+
+    <span data-ttu-id="74a50-182">ER-konfigurasjonen du lastet opp, bør nå vises.</span><span class="sxs-lookup"><span data-stu-id="74a50-182">The ER configuration that you uploaded should be listed.</span></span>
+
+    <span data-ttu-id="74a50-183">Vær oppmerksom på at den opplastede LCS-konfigurasjonen kan importeres til en annen forekomst hvis leverandører har tilgang til dette LCS-prosjektet.</span><span class="sxs-lookup"><span data-stu-id="74a50-183">Note that the uploaded LCS configuration can be imported into another instance if providers have access to this LCS project.</span></span>
