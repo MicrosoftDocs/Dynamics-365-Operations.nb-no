@@ -5,9 +5,11 @@
       items:
         - name: Komme i gang med Talent
           href: talent-get-started.md
-        - name: Nyheter eller endringer i Talent?
+        - name: Nyheter eller endringer i Talent
           href: whats-new.md
           items:
+            - name: 1. september 2020
+              href: whats-new-talent-september-01-2020.md
             - name: 21. januar 2020
               href: whats-new-talent-january-21-2020.md
             - name: 14. januar 2020

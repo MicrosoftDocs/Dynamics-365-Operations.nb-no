@@ -3,7 +3,7 @@ title: Opprette en permisjons- og fraværsplan
 description: Opprett permisjonsplaner i Dynamics 365 Human Resources for ulike typer permisjon.
 author: andreabichsel
 manager: AnnBe
-ms.date: 04/01/2020
+ms.date: 09/11/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 75a70c5784e7032cfebbe58c1d173923a3023507
-ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
+ms.openlocfilehash: cb42860292c5e3e654917cf2f62b525993aa795a
+ms.sourcegitcommit: 1edd3d4642f8fdc801b43b981b7c1a1c36ae0645
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "3428715"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "3796503"
 ---
 # <a name="create-a-leave-and-absence-plan"></a>Opprette en permisjons- og fraværsplan
 
@@ -43,7 +43,15 @@ Du kan også opprette stillingsbaserte permisjonsfordeler, for eksempel fordelst
 
 2. Under **Detaljer** angir du **Navn**, **Startdato**, **Beskrivelse** og **Permisjonstype** for planen.
 
-Hvis funksjonen **Konfigurer flere permisjonstyper for en enkel permisjons- og fraværsplan** er aktivert, konfigureres permisjonstyper i **Avsetningsplan** i stedet for under **Detaljer**. Du kan definere en permisjonstype for hver post i avsetningsplantabellen.
+Hvis funksjonen **Konfigurer flere permisjonstyper for en enkel permisjons- og fraværsplan** er aktivert, konfigureres permisjonstyper i **Avsetningsplan** i stedet for under **Detaljer**. Du kan definere en permisjonstype for hver post i avsetningsplantabellen. Når denne funksjonen er aktivert, må du også bruke nye dataenheter for integreringer eller andre scenarioer der du må bruke enheter. 
+
+De nye enhetene er:
+
+- Banktransaksjon for permisjon og fravær V2
+- Permisjons- og fraværsregistrering V2
+- Lag i permisjons- og fraværsplan V2
+- Permisjons- og fraværsplan V2
+- Be om permisjonsfridager V2
 
  > [!IMPORTANT]
    > Du kan ikke deaktivere denne funksjonen etter at du har aktivert den.

@@ -3,7 +3,7 @@ title: Samsvar for informasjonskapsel
 description: Dette emnet beskriver vurderinger for overholdelse av informasjonskapsler og standardpolicyene som er inkludert i Microsoft Dynamics 365 Commerce.
 author: BrianShook
 manager: annbe
-ms.date: 06/12/2020
+ms.date: 08/31/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: e1fa016dc9f46b048220f0f83e4b0783087de91e
-ms.sourcegitcommit: c66c4c67a21e7d7d3a94a3fd766c3184b6e65c4e
+ms.openlocfilehash: 4f54b9b8130a167dbecdb13fccd7039f827f6ed0
+ms.sourcegitcommit: 420b9e538f706178f8e1f2786e02f4f400bf2336
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/12/2020
-ms.locfileid: "3446919"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "3761327"
 ---
 # <a name="cookie-compliance"></a>Samsvar for informasjonskapsel
 
@@ -56,6 +56,10 @@ Tabellen nedenfor viser gjeldende referanseliste over informasjonskapsler for Dy
 | x-ms-cpim-sso:rushmoreb2c.onmicrosoft.com_0 | Brukes til vedlikehold av SSO-økten.                        |
 | x-ms-cpim-trans                             | Brukes til å spore transaksjoner (antallet åpne faner som godkjennes mot et forretning-til-forbruker-område) (B2C), inkludert den gjeldende transaksjonen. |
 
+## <a name="site-user-cookie-consent-on-an-e-commerce-site"></a>Godkjenning av områdebrukerens informasjonskapsel på et e-handelsområde 
+
+Hvis en funksjon i et e-handelsområde eller en modul bruker en ikke-vesentlig informasjonskapsel, må du oppnå en brukers tillatelse før informasjonskapselen spores. Hvis du vil tillate at brukere skal kunne tilby informasjonskapseltillatelse på e-handelsområdet, må en områdeforfatter legge til og konfigurere en samtykkemodul for informasjonskapsler i topptekstmodulen for siden for å sikre at samtykke blir bedt om og mottatt. Brukersamtykke for område må gis før en funksjon eller modul som bruker en ikke-vesentlig informasjonskapsel, kan gjengis på en områdeside.
+
 ## <a name="additional-resources"></a>Tilleggsressurser
 
 [Funksjoner og egenskaper for tilgjengelighet](accessibility.md)
@@ -64,4 +68,8 @@ Tabellen nedenfor viser gjeldende referanseliste over informasjonskapsler for Dy
 
 [Legge til en side for personvernpolicy](add-privacy-page.md)
 
-[Erstatte bruker-IDer knyttet til sporede innholdsendringer](replace-IDs-tracked-changes.md)
+[Erstatte bruker-ID-er som er knyttet til sporede innholdsendringer](replace-IDs-tracked-changes.md)
+
+[Samtykkemodul for informasjonskapsel](cookie-consent-module.md) 
+ 
+[Topptekstmodul](author-header-module.md)

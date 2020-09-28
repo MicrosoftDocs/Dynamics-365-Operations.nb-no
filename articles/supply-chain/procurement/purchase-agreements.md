@@ -18,17 +18,16 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: cdc3fe95ec0917c09128997e254f29ce863dcc38
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 253177103435c765bfe45daffeae0c436617af21
+ms.sourcegitcommit: 5bb36b74935ffe140367fd6ecf956b4857ad12e5
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3208023"
+ms.lasthandoff: 09/14/2020
+ms.locfileid: "3803169"
 ---
 # <a name="purchase-agreements"></a>Kjøpsavtaler
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Denne artikkelen inneholder informasjon om kjøpsavtaler. En kjøpsavtale er en kontrakt som forplikter en organisasjon til å kjøpe et bestemt antall eller beløp ved hjelp av flere bestillinger over tid. I bytte mot denne forpliktelsen mottar kjøperen spesialpriser og -rabatter. 
 
@@ -42,8 +41,13 @@ Hvis du vil hindre at kjøpsavtalen blir brukt og bekreftet, merker du avtalesta
 
 ## <a name="responsible-workers-on-purchase-agreements"></a>Ansvarlige arbeidstakere i kjøpsavtaler
 
-Du kan identifisere en primær ansvarlig arbeider og sekundær ansvarlig arbeider i kjøpsavtaleklassifiseringen. Disse verdiene vil bli arvet av den resulterende kjøpsavtalen. Du er ikke pålagt å legge til ansvarlige arbeidere i kjøpsavtalen, og de kan endres direkte på en per sak-basis i selve kjøpsavtalen. Du kan ikke angi en sekundær ansvarlig arbeider uten en primær ansvarlig arbeider, selv om du ikke trenger å ha en sekundær ansvarlig arbeider. Du kan ikke angi den samme arbeideren som både den primære og den sekundære ansvarlige arbeideren. 
+Du kan identifisere en primær ansvarlig arbeider og sekundær ansvarlig arbeider i kjøpsavtaleklassifiseringen. Disse verdiene vil bli arvet av den resulterende kjøpsavtalen. Du er ikke pålagt å legge til ansvarlige arbeidere i kjøpsavtalen, og de kan endres direkte på en per sak-basis i selve kjøpsavtalen. Du kan ikke angi en sekundær ansvarlig arbeider uten en primær ansvarlig arbeider, selv om du ikke trenger å ha en sekundær ansvarlig arbeider. Du kan ikke angi den samme arbeideren som både den primære og den sekundære ansvarlige arbeideren.
 
+> [!IMPORTANT]
+> Før du kan bruke funksjonen for den ansvarlige parten, må den være aktivert i systemet. Administratorer kan bruke innstillingene for [funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til å kontrollere funksjonsstatusen og aktivere den. I **Funksjonsadministrering**-arbeidsområdet er denne funksjonen oppført på følgende måte:
+> 
+> - **Modul:** *Innkjøp og leverandører*
+> - **Funksjonsnavn:** *Ansvarlig part for kjøpsavtale*
 
 ## <a name="commitment-types"></a>Forpliktelsestyper
 Hver linje i en kjøpsavtale er en forpliktelse til å kjøpe noe. Du kan bruke linjer fra flere bestillinger (PO-er) til å oppfylle forpliktelsen. Det finnes fire typer forpliktelser:

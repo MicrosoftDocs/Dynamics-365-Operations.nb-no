@@ -3,7 +3,7 @@ title: Legge til en side med personvernpolicy
 description: Dette emnet beskriver hvordan du legger til en side med personvernpolicy på området ditt i Microsoft Dynamics 365 Commerce.
 author: v-chgri
 manager: annbe
-ms.date: 04/14/2020
+ms.date: 08/31/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 2ee361c2e99b79e503e8d94c12602f9427f1ed5c
-ms.sourcegitcommit: 81f162f2d50557d7afe292c8d326618ba0bc3259
+ms.openlocfilehash: ce6491d176f90717877f084b11546010084c5f3b
+ms.sourcegitcommit: 420b9e538f706178f8e1f2786e02f4f400bf2336
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "3686701"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "3761279"
 ---
 # <a name="add-a-privacy-policy-page"></a>Legge til en side med personvernpolicy
 
@@ -89,8 +89,8 @@ Du kan legge til en kobling til siden for personvernpolicy i et fragment. På de
 Hvis du vil legge til en kobling til et bunntekstfragment, følger du disse trinnene.
 
 1. Gå til **Fragmenter**, og velg **Ny** for å opprette et sidefragment.
-1. I dialogboksen **Nytt sidefragment** velger du **Bunntekst**-modulen.
-1. Under **Navn på sidefragment** angir du et navn på fragmentet, og deretter velger du **OK**.
+1. I dialogboksen **Nytt fragment** velger du **Bunntekst**-modulen.
+1. Under **Navn på fragment** angir du et navn på fragmentet, og deretter velger du **OK**.
 1. Legg til en **Bunntekstelement**-modul i **Bunntekstkategori**-sporet.
 1. Velg **Koble til tekst** i egenskapsruten til høyre.
 1. I dialogboksen **Koble til tekst** skriver du inn koblingsteksten og koblingsmålet på siden for personvernpolicy, og deretter klikker du **OK**.

@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
-ms.search.form: CostAdminWorkspace, CostAnalysisWorkspace
+ms.search.form: CostAdminWorkspace, CostAnalysisWorkspace, CostObjectWithLowestAccuracy, CostVarianceChart, CostObjectWithLowestTurn
 audience: Application User, IT Pro
 ms.reviewer: kfend
 ms.search.scope: Operations
@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d0bf2f843401811d601b5fe90709bf995f550870
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 54da05bb6b84390f9928d8400e3dafc3228ee2fc
+ms.sourcegitcommit: cd339f48066b1d0fc740b513cb72ea19015acd16
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2771523"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "3759262"
 ---
 # <a name="cost-management-power-bi-content"></a>Power BI-innholdet Kostnadsstyring
 
@@ -37,7 +37,7 @@ Microsoft Power BI-innholdet for **Kostnadsstyring** er ment for lagerregnskapsf
 > [!NOTE]
 > Power BI-innholdet **Kostnadsbehandling** som er beskrevet i dette emnet, gjelder for Dynamics 365 Finance and Operations 8.0.
 > 
-> Power BI-innholdspakken for **Kostnadsstyring**, tilgjengelig på AppSource-nettstedet, er foreldet. Hvis du vil ha mer informasjon om denne avskrivingen, kan du se [Funksjoner som er fjernet eller utgått for Finance and Operations](../migration-upgrade/deprecated-features.md#power-bi-content-packs-available-on-appsource).
+> Power BI-innholdspakken for **Kostnadsstyring**, tilgjengelig på AppSource-nettstedet, er foreldet. Hvis du vil ha mer informasjon om denne avskrivingen, kan du se [Funksjoner som er fjernet eller avskrevet for Finance and Operations](../migration-upgrade/deprecated-features.md#power-bi-content-packs-available-on-appsource).
 
 Power BI-innholdet gir et kategoriserte format som hjelper deg å overvåke ytelsen til beholdninger og visualisere hvordan kostnadene flyter gjennom dem. Du kan få innsikt, for eksempel omsetningshastighet, antall dager beholdningen er på lager, presisjon og ABC-klassifisering på det foretrukne aggregerte nivået (firma, vare, varegruppe eller område). Informasjonen som gjøres tilgjengelig, kan også brukes som et detaljert supplement til regnskapsoppgjøret.
 
@@ -193,10 +193,10 @@ Tabellen nedenfor viser de beregnede nøkkelmålingene i Power BI-innholdet.
 | Sluttsaldoantall                | Sluttsaldoantall = CALCULATE(SUM(\[QTY\]), FILTER(ALL(FiscalCalendar),FiscalCalendar\[MONTHSTARTDATE\] \<= MAX(FiscalCalendar\[MONTHSTARTDATE\]))) |
 | Netto endring                         | Nettoendring = SUM(\[AMOUNT\]) |
 | Nettoendringsantall                    | Nettoendringsantall = SUM(\[QTY\]) |
-| Omløpshastighet på lager etter beløp | Omløpshastighet på lager etter beløp = if(OR(\[Beholdning – gjennomsnittlig saldo\] \<= 0, \[Solgt lagerbeholdning eller forbrukte avganger\] \>= 0), 0, ABS(\[Solgt lagerbeholdning eller forbrukte avganger\])/\[Beholdning – gjennomsnittlig saldo\]) |
+| Omløpshastighet på lager etter beløp | Omløpshastighet på lager etter beløp = if(OR(\[Beholdning – gjennomsnittlig saldo\] \<= 0, \[Inventory sold or consumed issues\] \>= 0), 0, ABS(\[Beholdning – solgte eller forbrukte avganger\])/\[Beholdning – gjennomsnittlig saldo\]) |
 | Beholdning – gjennomsnittlig saldo          | Beholdning – gjennomsnittlig saldo = ((\[sluttsaldo\] + \[startsaldo\]) / 2) |
 | Dags lagerbeholdning             | Dags lagerbeholdning = 365 / CostObjectStatementEntries\[Omløpshastighet på lager etter beløp\] |
-| Lagerpresisjon                 | Lagerpresisjon etter beløp = IF(\[sluttsaldo\] \<= 0, IF(OR(\[beholdning – opptelt beløp\] \<\> 0, \[sluttsaldo\] \< 0), 0, 1), MAX(0, (\[sluttsaldo\] - ABS(\[beholdning – opptelt beløp\]))/\[sluttsaldo\])) |
+| Lagerpresisjon                 | Lagerpresisjon etter beløp = IF(\[Sluttsaldo\] \<= 0, IF(OR(\[Inventory counted amount\] \<\> 0, \[Sluttsaldo\] \< 0), 0, 1), MAX(0, (\[Sluttsaldo\] - ABS(\[Beholdning – opptelt beløp\]))/\[Sluttsaldo\])) |
 
 Nøkkeldimensjonene nedenfor brukes som filtre for å dele opp de aggregerte målingene, slik at du kan få flere detaljer og dypere analytisk innsikt.
 

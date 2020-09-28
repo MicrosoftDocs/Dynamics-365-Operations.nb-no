@@ -3,7 +3,7 @@ title: Delvis lokasjonssyklustelling
 description: Syklustellingsplaner styrer de faktiske telleoperasjonene. Du kan be om at bare bestemte produkter og produktvarianter telles, i stedet for all lagerbeholdning på et sted.
 author: perlynne
 manager: tfehr
-ms.date: 11/02/2017
+ms.date: 09/02/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5f07c7754dbe36334e8972d49edf9fb84a78f5d0
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 46365f618b13c2bcaef9a45d2a835fda27019857
+ms.sourcegitcommit: 5472005274f2f94fba82dda90de128f39d8b8390
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3215683"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "3760013"
 ---
 # <a name="partial-location-cycle-counting"></a>Delvis lokasjonssyklustelling
 
@@ -45,7 +45,7 @@ Hvis du knytter syklustellingsplaner til arbeidsmaler ved hjelp av alternativet 
 
 Før delvis syklustellingsarbeid kan behandles, må du, som et minimum velge **Vis varenummer** for menyelementet mobilenhet som en del av oppsettet for syklustelling. Lageroperatøren vil bli bedt om bare å registrere opptellingsinformasjon som er knyttet til opptellingslinjer (varenumre og produktdimensjoner). Alle andre lagerbeholdninger vil bli ignorert for denne opptellingsprosessen. 
 
-For den delvise syklustellingsprosessn blir ikke dato/klokkeslett for **Siste syklustelling** oppdatert for lokasjonen.
+For den delvise syklusopptellingsprosessen blir ikke dato-/klokkeslettverdien for **Siste syklustelling** oppdatert for den siste syklusen for lokasjonen, selv om alle varene på en gitt lokasjon telles. Det delvise syklusantallet bruker ikke parameteren **Dager mellom syklustellinger** på siden **Planer for syklustelling**. Delvis syklusantall støtter ikke opptelling av flere elementer samtidig på samme sted. Funksjonaliteten for delvis syklustelling kan resultere i at samme sted telles flere ganger for en vare når **Behandle syklustellingsplan** kjøres. Hvis du vil unngå dette scenarioet, angir du filtre i feltet **Velg lokasjoner**.
 
 ## <a name="example"></a>Eksempel
 I dette eksemplet må bare varenummeret A0001 telles i lager 61.

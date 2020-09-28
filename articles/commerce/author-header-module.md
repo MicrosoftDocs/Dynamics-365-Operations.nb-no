@@ -3,7 +3,7 @@ title: Topptekstmodul
 description: Dette emnet dekker topptekstmoduler og beskriver hvordan du oppretter sideoverskrifter i Microsoft Dynamics 365 Commerce.
 author: anupamar
 manager: annbe
-ms.date: 05/28/2020
+ms.date: 08/31/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,24 +17,25 @@ ms.search.region: Global
 ms.author: anupamar-ms
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: e7dde3ba1ad375b309ae66cc6d31ccad85615e45
-ms.sourcegitcommit: 81f162f2d50557d7afe292c8d326618ba0bc3259
+ms.openlocfilehash: eb440a8fb67888c9411ad5998fead4d00982b436
+ms.sourcegitcommit: 420b9e538f706178f8e1f2786e02f4f400bf2336
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "3686628"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "3761230"
 ---
 # <a name="header-module"></a>Topptekstmodul
 
 [!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
 Dette emnet dekker topptekstmoduler og beskriver hvordan du oppretter sideoverskrifter i Microsoft Dynamics 365 Commerce.
 
 ## <a name="overview"></a>Oversikt
 
-I Dynamics 365 Commerce omfatter en sideoverskrift flere moduler, for eksempel modul for topptekst, navigasjonsmeny, søk, kampanjebanner og samtykke til informasjonskapsler. 
+I Dynamics 365 Commerce vises et topptekstområde som et sidefragment som inkluderer topptekst, promobanner og samtykkingsmoduler for informasjonskapsler. 
 
-Topptekstmodulen inneholder en områdelogo, koblinger til navigasjonshierarkiet, koblinger til andre sider på området, et kurvsymbol, et ønskelistesymbol, påloggingsalternativer og søkefelt. En topptekstmodul optimaliseres automatisk for enheten som området vises på (altså for en skrivebordsenhet eller mobilenhet). På en mobilenhet er for eksempel navigasjonsfeltet skjult i en **Meny**-knapp (som også kalles en *hamburgermeny*).
+Topptekstmodulen inneholder en områdelogo, koblinger til navigasjonshierarkiet, koblinger til andre sider på området, en handlekurvikonmodul, et ønskelistesymbol, påloggingsalternativer og søkefelt. En topptekstmodul optimaliseres automatisk for enheten som området vises på (altså for en skrivebordsenhet eller mobilenhet). På en mobilenhet er for eksempel navigasjonsfeltet skjult i en **Meny**-knapp (som også kalles en *hamburgermeny*).
 
 Bildet nedenfor viser et eksempel på en topptekstmodul på en hjemmeside.
 
@@ -48,33 +49,36 @@ En topptekstmodul støtter **Logobilde**, **Logokobling** og egenskaper for **Mi
 
 Egenskapen **Min konto-koblinger** kan brukes til å definere kontosider som områdeeieren ønsker å vise hurtigkoblinger for i toppteksten.
 
-## <a name="modules-that-are-available-in-a-header-module"></a>Moduler som er tilgjengelige i en overskriftsmodul
+## <a name="modules-that-are-available-within-a-header-module"></a>Moduler som er tilgjengelige i en overskriftsmodul
 
 Følgende moduler kan brukes i en topptekstmodul:
 
-- **Navigasjonsmeny** – Navigasjonsmenyen representerer kanalnavigasjonshierarkiet og andre statiske navigasjonskoblinger. Kanalnavigeringshierarkiet kan konfigureres i Dynamics 365 Commerce. Navigasjonsmenyen har egenskapen **Navigasjonskilde** som brukes til å angi navigasjonsmenyelementer og statiske menyelementer for Retail Server som en kilde. Hvis statiske menyelementer angis som en kilde, kan relative koblinger til andre sider på området angis. Konfigurerte varer vises deretter som topptekstnavigasjon. 
+- **Navigasjonsmeny** – Navigasjonsmenyen representerer kanalnavigasjonshierarkiet og andre statiske navigasjonskoblinger. Hvis du vil ha mer informasjon, kan du se [Navigasjonsmenymodul](nav-menu-module.md).
 
 - **Søk** – Med søkemodulen kan brukere angi søkeord for å søke etter produkter. URL-adressen til standard søkeside og parameterne for søkespørringen må angis under **Områdeinnstillinger \> Utvidelser**. Søkemodulen har egenskaper som lar deg skjule søkeknappen eller etiketten etter behov. Søkemodulen støtter også alternativer for automatiske forslag, for eksempel søkeresultater for produkt, nøkkelord og kategori.
 
 - **Handlekurvikon** – Handlekurvikonmodulen representerer handlekurvikonet, som viser antall varer i handlekurven på et gitt tidspunkt. Hvis du vil ha mer informasjon, se [Handlekurvikonmodulen](cart-icon-module.md).
 
-## <a name="create-a-header-module-for-a-page"></a>Opprette en topptekstmodul for en side
+## <a name="create-a-header-fragment-for-a-page"></a>Opprette et topptekstfragment for en side
 
-Hvis du vil opprette en topptekstmodul, følger du trinnene nedenfor.
+Hvis du vil opprette et topptekstfragment, følger du trinnene nedenfor.
 
 1. Gå til **Fragmenter**, og velg **Nytt** for å opprette et nytt sidefragment.
-1. I dialogboksen **Nytt sidefragment** velger du **Beholder**-modulen, skriver inn et navn på sidefragmentet og velger **OK**.
-1. Velg **Standardbeholder**-sporet. Deretter går du til egenskapsfanen på høyre side og angir egenskapen for **Bredde** til **Fyll beholder**.
+1. I dialogboksen **Nytt fragment** velger du **Beholder**-modulen, skriver inn et navn på fragmentet og velger **OK**.
+1. Velg **Standardbeholder**-sporet. Deretter går du til egenskapsfanen på høyre side og angir egenskapen for **Bredde** til **Fyll skjerm**.
 1. I **Standard beholder**-sporet velger du ellipsen (**…**), og deretter velger du **Legg til modul**.
-1. I dialogboksen **Legg til modul** velger du modulene **Kampanjebanner** og **Samtykke til informasjonskapsler**, og deretter velger du **OK**.
-1. I **Standard beholder**-sporet velger du ellipsen (**…**), og deretter velger du **Legg til modul**.
-1. I dialogboksen **Legg til modul** velger du **Beholder**-modulen, og deretter velger du **OK**.
-1. Velg **Beholder**-sporet. Deretter går du til egenskapsfanen på høyre side og angir egenskapen for **Bredde** til **Fyll beholder**.
-1. I **Beholder**-sporet velger du ellipsen (**…**), og deretter velger du **Legg til modul**.
-1. I dialogboksen **Legg til modul** velger du **Topptekst**-modulen, og deretter velger du **OK**.
+1. I dialogboksen **Legg til modul** velger du modulene **Samtykke til informasjonskapsler**, **Topptekst** og **Promobanner**, og deretter velger du **OK**.
+1. I ruten Egenskaper i modulen **Promobanner** velge rdu **Legg til melding**, og deretter velger du **Melding**.
+1. I dialogboksen **Melding** legger du til tekst og koblinger for kampanjeinnholdet, og deretter velger du **OK**.
+1. I ruten Egenskaper i modulen **Samtykke til informasjonskapsler** legger du til og konfigurerer tekst og en kobling til siden med nettstedspersonvern.
 1. I **Navigasjonsmeny**-sporet i topptekstmodulen velger du ellipseknappen (**…**), og deretter velger du **Legg til modul**.
 1. I dialogboksen **Legg til modul** velger du **Navigasjonsmeny**-modulen, og deretter velger du **OK**.
-1. Konfigurer egenskapene for navigasjonsmeny-modulen i egenskapsruten etter behov.
+1. I ruten Egenskape rfor navigasjonsmenymodulen velger du **Retail Server** under **Kilde til navigasjonsmeny**.
+1. I ruten Egenskaper for navigasjonsmenymodulen velger du **Legg til menyelement** under **Statiske menyelementer**, og deretter velger du **Menyelement**. 
+1. I dialogboksen **Menyelement** skriver du inn "Kontakt" under **Menyelementtekst**.
+1. I dialogboksen **Menyelement** velger du **Legg til en kobling** under **Koblingsmål for menyelement**.
+1. I dialogboksen **Legg til en kobling** velger du URL-adressen for nettstedets Kontakt-side, og deretter velger du **OK**.  
+1. Velg **OK** i dialogboksen **Menyelement**.
 1. I **Søk**-sporet i topptekstmodulen velger du ellipseknappen (**…**), og deretter velger du **Legg til modul**.
 1. I dialogboksen **Legg til modul** velger du **Søk**-modulen, og deretter velger du **OK**.
 1. Konfigurer egenskapene for søkemodulen i egenskapsruten etter behov.
@@ -92,18 +96,14 @@ For å sikre at det vises en topptekst på hver side, kan du følge denne fremga
 
 [Startpakke, oversikt](starter-kit-overview.md)
 
-[Containermodul](add-container-module.md)
-
-[Kjøpsboksmodul](add-buy-box.md)
-
-[Handlekurvmodul](add-cart-module.md)
+[Beholdermodul](add-container-module.md)
 
 [Handlekurvikonmodul](cart-icon-module.md)
 
-[Kassemodul](add-checkout-module.md)
+[Promobannermodul](add-alert.md)
 
-[Ordrebekreftelsesmodul](order-confirmation-module.md)
+[Navigasjonsmenymodul](nav-menu-module.md) 
 
-[Topptekstmodul](author-header-module.md)
+[Informasjonskapselsamtykke](cookie-consent-module.md)
 
 [Bunntekstmodul](author-footer-module.md)

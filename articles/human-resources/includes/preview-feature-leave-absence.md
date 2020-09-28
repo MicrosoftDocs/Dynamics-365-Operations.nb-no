@@ -1,2 +1,2 @@
 > [!IMPORTANT]
-> Denne funksjonaliteten er tilgjengelig som en offentlig forhåndsvisning i et hvilket som helst sandkasse- eller prøvemiljø. Den er ikke tilgjengelig i produksjonsmiljøer. Innholdet og funksjonaliteten kan bli endret. Hvis du vil ha mer informasjon om forhåndsvisningsfunksjoner, kan du se [Behandle funksjoner](../hr-admin-manage-features.md).
+> Deler av eller hele denne funksjonaliteten er tilgjengelig som en offentlig forhåndsvisning i et hvilket som helst sandkasse- eller prøvemiljø. Den er ikke tilgjengelig i produksjonsmiljøer. Innholdet og funksjonaliteten kan bli endret. Hvis du vil ha mer informasjon om forhåndsvisningsfunksjoner, kan du se [Behandle funksjoner](../hr-admin-manage-features.md).

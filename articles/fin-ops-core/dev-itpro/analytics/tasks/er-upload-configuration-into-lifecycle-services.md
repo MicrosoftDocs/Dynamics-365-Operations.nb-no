@@ -1,9 +1,9 @@
 ---
-title: ER Laste opp en konfigurasjon til Lifecycle Services
-description: De følgende trinnene forklarer hvordan en bruker i rollen systemansvarlig eller utvikler av elektronisk rapportering kan opprette en ny formatkonfigurasjon for elektronisk rapportering (ER) og laste den opp til Microsoft Lifecycle Services (LCS).
+title: Laste opp en konfigurasjon til Lifecycle Services
+description: Dette emnet forklarer hvordan en bruker i rollen Systemansvarlig eller Utvikler av elektronisk rapportering kan opprette en ny konfigurasjon for elektronisk rapportering (ER) og laste den opp til Microsoft Dynamics Lifecycle Services (LCS).
 author: NickSelin
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 09/14/2020
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,82 +16,133 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 5def757de8fb9d347f5fd0f828039dad5c989c19
-ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
+ms.openlocfilehash: c43bad3ee2530a454de718a0a7da4d1e468a4af4
+ms.sourcegitcommit: 9857d5cbdc0ab2fc9db049ac5ad118fc2b29bedc
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3143297"
+ms.lasthandoff: 09/14/2020
+ms.locfileid: "3810697"
 ---
-# <a name="er-upload-a-configuration-into-lifecycle-services"></a>ER Laste opp en konfigurasjon til Lifecycle Services
+# <a name="upload-a-configuration-into-lifecycle-services"></a>Laste opp en konfigurasjon til Lifecycle Services
 
 [!include [banner](../../includes/banner.md)]
 
-De følgende trinnene forklarer hvordan en bruker i rollen systemansvarlig eller utvikler av elektronisk rapportering kan opprette en ny formatkonfigurasjon for elektronisk rapportering (ER) og laste den opp til Microsoft Lifecycle Services (LCS).
+Dette emnet forklarer hvordan en bruker i rollen Systemansvarlig eller Utvikler av elektronisk rapportering kan opprette en ny [konfigurasjon for elektronisk rapportering (ER)](../general-electronic-reporting.md#Configuration) og laste den opp til [aktivabiblioteket på prosjektnivå](../../lifecycle-services/asset-library.md) i Microsoft Dynamics Lifecycle Services (LCS).
 
-I dette eksemplet skal du opprette en konfigurasjon og laste den opp til LCS for eksempelfirmaet Litware, Inc. Denne fremgangsmåten kan utføres i et hvilket som helst firma ettersom ER-konfigurasjoner deles mellom alle firmaer. For å fullføre disse trinnene må du først fullføre trinnene i fremgangsmåten "Opprette en konfigurasjonsleverandør og merke den som aktiv". Tilgang til LCS kreves også for fullføring av denne fremgangsmåten.
+I dette eksemplet skal du opprette en konfigurasjon og laste den opp til LCS for et eksempelfirma med navnet Litware, Inc. Denne fremgangsmåten kan fullføres i alle firmaer ettersom ER-konfigurasjoner deles mellom alle firmaer. For å fullføre disse trinnene må du først fullføre trinnene i [Opprette konfigurasjonsleverandører og merke dem som aktive](er-configuration-provider-mark-it-active-2016-11.md). Tilgang til LCS er også nødvendig.
 
-1. Gå til Organisasjonsstyring > Arbeidsområder > Elektronisk rapportering.
-2. Velg "Litware, Inc." og angi som aktiv.
-3. Klikk Konfigurasjoner.
+1. Logg på programmet med én av følgende roller:
+
+    - Utvikler av elektronisk rapportering
+    - Systemansvarlig
+
+2. Gå til **Organisasjonsstyring** \> **Arbeidsområder** \> **Elektronisk rapportering**.
+3. Velg **Litware, Inc.** og merk som **Aktiv**.
+4. Velg **Konfigurasjoner**.
+
+<a name="accessconditions"></a>
+> [!NOTE]
+> Kontroller at den gjeldende Dynamics 365 Finance-brukeren er medlem av LCS-prosjektet som inneholder [aktivabiblioteket](../../lifecycle-services/asset-library.md#asset-library-support) som brukes til å importere ER-konfigurasjoner.
+>
+> Du kan ikke få tilgang til et LCS-prosjekt fra et ER-repositorium som representerer et annet domene enn domenet som brukes i Finance. Hvis du prøver, vises det en tom liste over LCS-prosjekter, og du kan ikke importere ER-konfigurasjonene fra aktivabiblioteket på prosjektnivå i LCS. Hvis du vil ha tilgang til aktivabiblioteker på prosjektnivå fra et ER-repositorium som brukes til å importere ER-konfigurasjoner, logger du på Finance-modulen ved hjelp av legitimasjonen til en bruker som tilhører leieren (domenet) som gjeldende Finance-forekomst er klargjort for.
 
 ## <a name="create-a-new-data-model-configuration"></a>Opprett en ny datamodellkonfigurasjon
-1. Klikk Opprett konfigurasjon for å åpne nedtrekksdialogen.
-    * Du vil opprette en konfigurasjon som inneholder en eksempeldatamodell for elektroniske dokumenter. Denne datamodellkonfigurasjonen lastes inn i LCS senere.  
-2. Skriv inn Eksempelmodellkonfigurasjon i Navn-feltet.
-    * Eksempelmodellkonfigurasjon  
-3. Skriv inn Eksempelmodellkonfigurasjon i Beskrivelse-feltet.
-    * Eksempelmodellkonfigurasjon  
-4. Klikk Opprett konfigurasjon.
-5. Velg Modellutforming.
-6. Klikk Ny.
-7. Skriv inn Inngangspunkt i Navn-feltet.
-    * Inngangspunkt  
-8. Klikk Legg til.
-9. Klikk Lagre.
-10. Lukk siden.
-11. Klikk Endre status.
-12. Klikk Fullført.
-13. Klikk OK.
 
-## <a name="register-a-new--repository"></a>Registrere et nytt repositorium
-1. Lukk siden.
-2. Klikk Repositorier.
-    * Denne lar deg åpne listen over repositorier for konfigurasjonsleverandøren Litware, Inc.  
-3. Klikk Legg til for å åpne nedtrekksdialogen.
-    * Dette lar deg legge til et nytt repositorium.  
-4. Velg LCS i feltet Type konfigurasjonsrepositorium.
-5. Klikk Opprett repositorium.
-6. Angi eller velg en verdi i feltet Prosjekt.
-    * Velg ønsket LCS-prosjekt. Du må ha tilgang til prosjektet.  
-7. Klikk OK.
-    * Fullfør en ny oppføring i repositoriet.  
-8. Merk den valgte raden i listen.
-    * Velg LCS-repositoriumposten.  
-    * Legg merke til at et registrert repositorium er merket med gjeldende leverandør, som betyr at bare konfigurasjoner som eies av denne leverandøren kan settes til dette repositoriet og derfor lastes opp til det valgte LCS-prosjektet.  
-9. Klikk Åpne.
-    * Åpne repositoriet for å vise listen over ER-konfigurasjoner. Den er tom hvis prosjektet ennå ikke er brukt for deling av ER-konfigurasjoner.  
-10. Lukk siden.
+1. Gå til **Organisasjonsstyring \> Elektronisk rapportering \> Konfigurasjoner**.
+2. På siden **Konfigurasjoner** velger du **Opprett konfigurasjon** for å åpne dialogboksen med rullegardinliste.
+
+    I dette eksemplet skal du opprette en konfigurasjon som inneholder en eksempeldatamodell for elektroniske dokumenter. Denne datamodellkonfigurasjonen lastes inn i LCS senere.
+
+3. I feltet **Navn** angir du **Eksempelmodellkonfigurasjon**.
+4. I feltet **Beskrivelse** angir du **Eksempelmodellkonfigurasjon**.
+5. Velg **Opprett konfigurasjon**.
+6. Velg **Modellutforming**.
+7. Velg **Ny**.
+8. I **Navn**-feltet angir du **Inngangspunkt**.
+9. Velg **Legg til**.
+10. Velg **Lagre**.
 11. Lukk siden.
+12. Velg **Endre status**.
+13. Velg **Fullfør**.
+14. Velg **OK**.
+15. Lukk siden.
 
-## <a name="upload-configuration-into-lcs"></a>Laste opp konfigurasjon til LCS
-1. Klikk Konfigurasjoner.
-2. Velg Eksempelmodellkonfigurasjon i treet.
-    * Velg en opprettet konfigurasjon som allerede er fullført.  
+## <a name="register-a-new-repository"></a>Registrere et nytt repositorium
+
+1. Gå til **Organisasjonsstyring \> Arbeidsområder \> Elektronisk rapportering**.
+
+2. I delen **Konfigurasjonsleverandører** velger du **Litware, Inc.**-flisen.
+
+3. På **Litware, Inc.**-flisen velger du **Repositorier**.
+
+    Nå kan du åpne listen over repositorier for konfigurasjonsleverandøren Litware, Inc.
+
+4. Velg **Legg til** for å åpne dialogboksen med rullegardinliste.
+
+    Du kan nå legge til et nytt repositorium.
+
+5. I feltet **Konfigurasjonsrepositorium** velger du **LCS**.
+6. Velg **Opprett repositorium**.
+7. Angi eller velg en verdi i feltet **Prosjekt**.
+
+    I dette eksemplet velger du det ønskede LCS-prosjektet. Du må ha [tilgang](#accessconditions) til prosjektet.
+
+8. Velg **OK**.
+
+    Fullfør en ny oppføring i repositoriet.
+
+9. Merk den valgte raden i listen.
+
+    I dette eksemplet velger du repositoriumposten i **LCS**.
+
+    Vær oppmerksom på at et registrert repositorium er merket med gjeldende leverandør. Det er med andre ord bare konfigurasjoner som eies av denne leverandøren, som kan plasseres i repositoriet og som derfor lastes opp til det valgte LCS-prosjektet.
+
+10. Velg **Åpne**.
+
+    Du åpner repositoriet for å vise listen over ER-konfigurasjoner. Hvis det valgte prosjektet ennå ikke er brukt for deling av ER-konfigurasjoner, vil listen være tom.
+
+11. Lukk siden.
+12. Lukk siden.
+
+## <a name="upload-a-configuration-into-lcs"></a>Laste opp en konfigurasjon til LCS
+
+1. Gå til **Organisasjonsstyring \> Elektronisk rapportering \> Konfigurasjoner**.
+2. På siden **Konfigurasjoner** i konfigurasjonstreet velger du **Eksempelmodellkonfigurasjon**.
+
+    Du må velge en opprettet konfigurasjon som allerede er fullført.
+
 3. Finn og velg ønsket post i listen.
-    * Velg versjonen av den valgte konfigurasjonen med statusen Fullført.  
-4. Klikk Endre status.
-5. Klikk Del.
-    * Konfigurasjonsstatusen endres fra Fullført til Delt når den er publisert i LCS.  
-6. Klikk OK.
-7. Finn og velg ønsket post i listen.
-    * Velg konfigurasjonsversjonen med statusen Delt.  
-    * Legg merke til at statusen for den valgte versjonen er endret fra Fullført til Delt.  
-8. Lukk siden.
-9. Klikk Repositorier.
-    * Denne lar deg åpne listen over repositorier for konfigurasjonsleverandøren Litware, Inc.  
-10. Klikk Åpne.
-    * Velg LCS-repositorium, og åpne det.  
-    * Legg merke til at den valgte konfigurasjonen vises som et anleggsmiddel for det valgte LCS-prosjektet.  
-    * Åpne LCS ved hjelp av https://lcs.dynamics.com. Åpne et prosjekt som ble brukt tidligere for registrering av repositoriet, åpne Aktivabibliotek for dette prosjektet og vis innholdet i aktivatypen Ger-konfigurasjonstypen – den opplastede ER-konfigurasjonen vil være tilgjengelig. Legg merke til at den opplastede LCS-konfigurasjonen kan importeres til en annen forekomst hvis leverandører har tilgang til dette LCS-prosjektet.  
 
+    For dette eksemplet velger du versjonen av den valgte konfigurasjonen som har statusen **Fullført**.
+
+4. Velg **Endre status**.
+5. Velg **Del**.
+
+    Statusen for konfigurasjonen endres fra **Fullført** til **Delt** når konfigurasjonen er publisert i LCS.
+
+6. Velg **OK**.
+7. Finn og velg ønsket post i listen.
+
+    For dette eksemplet velger du konfigurasjonsversjonen som har statusen **Delt**.
+
+    Vær oppmerksom på at statusen for den valgte versjonen ble endret fra **Fullført** til **Delt**.
+
+8. Lukk siden.
+9. Velg **Repositorier**.
+
+    Nå kan du åpne listen over repositorier for konfigurasjonsleverandøren Litware, Inc.
+
+10. Velg **Åpne**.
+
+    I dette eksemplet velger du repositoriet **LCS** og åpner det.
+
+    Vær oppmerksom på at den valgte konfigurasjonen vises som et anleggsmiddel for det valgte LCS-prosjektet.
+
+11. Åpne LCS ved å gå til <https://lcs.dynamics.com>.
+12. Åpne et prosjekt som ble brukt tidligere til registrering av repositorium.
+13. Åpne aktivabiblioteket for prosjektet.
+14. Velg aktivatypen **GER-konfigurasjon**.
+
+    ER-konfigurasjonen du lastet opp, bør nå vises.
+
+    Vær oppmerksom på at den opplastede LCS-konfigurasjonen kan importeres til en annen forekomst hvis leverandører har tilgang til dette LCS-prosjektet.
