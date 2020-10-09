@@ -98,8 +98,6 @@
                       href: get-started/whats-new-commerce-10-0-13.md
                     - name: Commerce 10.0.12 (august 2020)
                       href: get-started/whats-new-commerce-10-0-12.md
-                    - name: Commerce 10.0.11 (juli 2020)
-                      href: get-started/whats-new-commerce-10-0-11.md
                 - name: Funksjoner som er fjernet eller avskrevet
                   items:
                     - name: Funksjoner som er fjernet eller avskrevet i Finance and Operations
@@ -182,7 +180,7 @@
                   href: ../fin-ops-core/fin-ops/get-started/grid-capabilities.md?toc=/dynamics365/commerce/toc.json
                 - name: Opprette og arbeide med egendefinerte felt
                   href: ../fin-ops-core/fin-ops/get-started/user-defined-fields.md?toc=/dynamics365/commerce/toc.json
-                - name: Bygg inn Microsoft Power Apps
+                - name: Bygge inn lerretsapper fra Power Apps
                   href: ../fin-ops-core/fin-ops/get-started/embed-power-apps.md?toc=/dynamics365/commerce/toc.json
                 - name: Finne informasjon ved hjelp av oppslag
                   href: ../fin-ops-core/fin-ops/get-started/use-lookups-to-find-information.md?toc=/dynamics365/commerce/toc.json
@@ -956,9 +954,9 @@
                   href: add-privacy-page.md
                 - name: Erstatte bruker-ID-er som er knyttet til sporede innholdsendringer
                   href: replace-IDs-tracked-changes.md
-            - name: Startpakke
+            - name: Modulbibliotek
               items:
-                - name: 'Startpakke, oversikt'
+                - name: Oversikt over modulbibliotek
                   href: starter-kit-overview.md
                 - name: Beholdermoduler
                   items:
@@ -1976,7 +1974,7 @@
                   items:
                     - name: Opprette en ny modul
                       href: e-commerce-extensibility/create-new-module.md
-                    - name: Klone en startsettmodul
+                    - name: Klone en modulbibliotekmodul
                       href: e-commerce-extensibility/clone-starter-module.md
                     - name: Legge til modulkonfigurasjonsfelt
                       href: e-commerce-extensibility/add-module-config-fields.md
@@ -2070,7 +2068,7 @@
                   items:
                     - name: Pakke konfigurasjoner og distribuere dem til et elektronisk miljø
                       href: e-commerce-extensibility/package-deploy.md
-                    - name: Oppdateringer for SDK og startpakken for butikk
+                    - name: Oppdateringer for SDK og modulbibliotek
                       href: e-commerce-extensibility/sdk-updates.md
             - name: SDK for Retail
               items:
@@ -2148,6 +2146,8 @@
                   href: implementation-considerations-devices.md
                 - name: Visningshendelser og -behandlinger for salgsstedshandlekurv
                   href: dev-itpro/cart-view-handlers.md
+                - name: Legge til egendefinerte knapper i topptekstlinjen for salgssted
+                  href: dev-itpro/pos-header-bar.md
             - name: Utvidelsesmulighet for Hardware Station
               items:
                 - name: Hardware Station og utvidelsesmulighet
