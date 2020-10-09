@@ -158,7 +158,7 @@
                   href: ../fin-ops-core/fin-ops/get-started/grid-capabilities.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Opprette og arbeide med egendefinerte felt
                   href: ../fin-ops-core/fin-ops/get-started/user-defined-fields.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Bygg inn Microsoft Power Apps
+                - name: Bygge inn lerretsapper fra Power Apps
                   href: ../fin-ops-core/fin-ops/get-started/embed-power-apps.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Finne informasjon ved hjelp av oppslag
                   href: ../fin-ops-core/fin-ops/get-started/use-lookups-to-find-information.md?toc=/dynamics365/supply-chain/toc.json
@@ -1655,6 +1655,8 @@
               href: procurement/procurement-sourcing-overview.md
             - name: Arbeidsflyt for innkjøp og leverandører
               href: procurement/procurement-sourcing-workflows.md
+            - name: Feilsøke arbeidsflyter for innkjøp og leverandører
+              href: procurement/troubleshoot-procurementworkflows.md
             - name: Innkjøpskataloger
               items:
                 - name: Oversikt over innkjøpskataloger
@@ -1695,7 +1697,9 @@
                   href: procurement/purchase-order-mobile-workspace.md
                 - name: Registrere mottaket av varene i bestillingen
                   href: ../supply-chain/procurement/tasks/record-receipt-goods-purchase-order.md
-            - name: Opprett bestilling
+                - name: Feilsøke bestillinger
+                  href: procurement/troubleshoot-purchaseorders.md
+            - name: Opprette bestilling
               items:
                 - name: Opprette bestillinger manuelt
                   href: procurement/purchase-order-creation.md
@@ -1725,6 +1729,8 @@
                   href: procurement/tasks/create-purchase-agreement.md
                 - name: Leverandørrabatter
                   href: procurement/vendor-rebates.md
+                - name: 'Feilsøke priser, rabatter og avtaler'
+                  href: procurement/troubleshooting-pricediscountagreements.md
             - name: Innkjøpspolicyer
               items:
                 - name: Oversikt over innkjøpspolicyer
@@ -1739,6 +1745,8 @@
                   href: procurement/product-receipt-against-purchase-orders.md
                 - name: Oversikt over leverandørfakturaer
                   href: ../finance/accounts-payable/vendor-invoices-overview.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Feilsøke mottakssedler og fakturering
+                  href: procurement/troubleshooting-productreceiptinvoicing.md
             - name: Leverandørbehandling og samarbeid
               items:
                 - name: Definere og vedlikeholde leverandørsamarbeid
@@ -1761,11 +1769,13 @@
                   href: procurement/vendor-collaboration-work-external-vendors.md
                 - name: Leverandørsamarbeid med kunder
                   href: procurement/vendor-collaboration-work-customers-dynamics-365-operations.md
-                - name: Import leverandørkataloger
+                - name: Importere leverandørkataloger
                   href: procurement/vendor-catalogs-import.md
-                - name: Definere en ekstern katalog for PunchOut eProcurement
+                - name: Definere en ekstern katalog for PunchOut e-procurement
                   href: procurement/set-up-external-catalog-for-punchout.md
-                - name: Bruke eksterne kataloger for PunchOut eProcurement
+                - name: Kjøp av cXML-forbedringer
+                  href: procurement/purchasing-cxml-enhancements.md
+                - name: Bruke eksterne kataloger for PunchOut e-procurement
                   href: procurement/use-external-catalogs-for-punchout.md
                 - name: Mobilt arbeidsområde for leverandørsamarbeid
                   href: procurement/vendor-collaboration-mobile-workspace.md
@@ -2261,6 +2271,8 @@
                   href: sales-marketing/tasks/manage-order-holds.md
                 - name: Bekrefte salgsordrer
                   href: sales-marketing/tasks/confirm-sales-orders.md
+                - name: Feilsøke salgsordrer
+                  href: sales-marketing/troubleshooting-sales.md
             - name: Salgsavtaler
               items:
                 - name: Oversikt over salgsavtaler
@@ -2283,6 +2295,8 @@
                   href: sales-marketing/tasks/mass-sales-quotations.md
                 - name: Opprette og redigere salgstilbud
                   href: sales-marketing/tasks/create-edit-sales-quotations.md
+                - name: Feilsøke salgstilbud
+                  href: sales-marketing/troubleshooting-salesquotation.md
             - name: Returer
               items:
                 - name: Salgsreturer
@@ -2807,19 +2821,21 @@
                   items:
                     - name: Installere og koble til lagerappen
                       href: warehousing/install-configure-warehousing-app.md
+                    - name: Skanne strekkoder ved hjelp av et kamera i lagerappen
+                      href: warehousing/scan-bar-codes-using-a-camera.md
                     - name: Konfigurere feltnavn i lagerapp
                       href: warehousing/configure-app-field-names-priorities-warehouse.md
                     - name: Definere mobilenheter for lagerarbeid
                       href: warehousing/configure-mobile-devices-warehouse.md
-                    - name: Skanne strekkoder ved hjelp av et kamera i lagerappen
-                      href: warehousing/scan-bar-codes-using-a-camera.md
                     - name: Nummerskilt som mottar med lagerappen
                       href: warehousing/warehousing-mobile-device-app-license-plate-receiving.md
                     - name: Definere et menyelement for mobilenhet for å fullføre arbeid i en bestilling
                       href: warehousing/tasks/set-up-mobile-device-menu.md
                     - name: Definere et menyelement for mobilenhet for å registrere mottatte varer
                       href: warehousing/tasks/set-up-mobile-device-menu-item-register-received-items.md
-                    - name: Opprette et nytt menyelement for en mobilenhet for nummerskiltkonsolidering
+                    - name: Definere et menyelement for en mobilenhet for å angi en plukklinjeoversikt
+                      href: warehousing/pick-line-overview.md
+                    - name: Opprette et menyelement for en mobilenhet for nummerskiltkonsolidering
                       href: warehousing/tasks/create-mobile-device-license-plate-consolidation.md
                     - name: Mottak av kombinerte nummerskilt på en mobilenhet
                       href: warehousing/mixed-license-plate-receiving.md
