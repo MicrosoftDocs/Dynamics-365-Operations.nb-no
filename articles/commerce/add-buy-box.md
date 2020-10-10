@@ -3,7 +3,7 @@ title: Kjøpsboksmodul
 description: Dette emnet dekker kjøpsboksmoduler og beskriver hvordan du legger dem til områdesider i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
-ms.date: 08/31/2020
+ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 6556ee8acf1e24a9f6ceddb622960cb3ac891852
-ms.sourcegitcommit: 420b9e538f706178f8e1f2786e02f4f400bf2336
+ms.openlocfilehash: e07bf02f10c943947fdf9ed3333373b859ff5b6c
+ms.sourcegitcommit: 8028fbc5b9585e87d3331ea02577ff82ede090af
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "3761303"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "3817091"
 ---
 # <a name="buy-box-module"></a>Kjøpsboksmodul
 
@@ -75,9 +75,12 @@ Følgende innstillinger for kjøpsboks-modulen kan konfigureres under **Områdei
 - **Beholdning** – Hvis du vil ha informasjon om hvordan du bruker beholdningsinnstillinger, kan du se [Bruk beholdningsinnstillinger](inventory-settings.md).
 - **Legg til i handlekurv** – denne egenskapen brukes til å angi atferden etter at en vare er lagt til i handlekurven. De mulige verdiene er **Naviger til handlekurv**, **Ikke naviger til handlekurv** og **Vis varsler**. Når verdien er satt til **Naviger til handlevogn**, sendes brukerne til handlekurvsiden når de har lagt til en vare. Når verdien er satt til **Ikke naviger til handlevogn**, sendes ikke brukerne til handlekurvsiden når de har lagt til en vare. Når verdien er satt til **Vis varsler**, vises det en bekreftelsesmelding, og brukerne kan fortsette å søke på siden med produktinformasjon. 
 
-    Følgende bilde viser et eksempel på bekreftelsesmeldingen "lagt til i handlekurv" på Fabrikam-området.
+> [!IMPORTANT]
+> Innstillingene for **Legg til på kurv**-området er tilgjengelige i Dynamics 365 Commerce 10.0.11-versjonen. Hvis du oppdaterer fra en eldre versjon av Dynamics 365 Commerce, må du manuelt oppdatere appsettings.json-filen. Hvis du vil ha instruksjoner om oppdatering av appsettings.json-filen, se [Oppdateringer for SDK og modulbibliotek](e-commerce-extensibility/sdk-updates.md#update-the-appsettingsjson-file). 
 
-    ![Eksempel på en varslingsmodul](./media/ecommerce-addtocart-notifications.PNG)
+Følgende bilde viser et eksempel på bekreftelsesmeldingen "lagt til i handlekurv" på Fabrikam-området.
+
+![Eksempel på en varslingsmodul](./media/ecommerce-addtocart-notifications.PNG)
 
 ## <a name="commerce-scale-unit-interaction"></a>Samhandling med Commerce Scale Unit
 
@@ -111,7 +114,7 @@ Hvis du vil legge til en kjøpsboksmodul på en ny side og angi de nødvendige e
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 
-[Startpakke, oversikt](starter-kit-overview.md)
+[Oversikt over modulbibliotek](starter-kit-overview.md)
 
 [Butikkvelgermodul](store-selector.md)
 
@@ -129,6 +132,8 @@ Hvis du vil legge til en kjøpsboksmodul på en ny side og angi de nødvendige e
 
 [Bunntekstmodul](author-footer-module.md)
 
-[Sosial deling-modul](social-share-module.md)
+[Modul for sosial deling](social-share-module.md)
 
 [Beregne lagertilgjengelighet for detaljhandelskanaler](calculated-inventory-retail-channels.md)
+
+[Oppdateringer for SDK og modulbibliotek](e-commerce-extensibility/sdk-updates.md)

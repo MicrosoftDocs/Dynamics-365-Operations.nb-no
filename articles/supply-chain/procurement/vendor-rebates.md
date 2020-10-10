@@ -16,14 +16,15 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 2012
-ms.openlocfilehash: 44c8f3ed76698bb4b70d767d9c8881024699552f
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: acf7df09b467e0b0b0463946be018ff199d7153e
+ms.sourcegitcommit: 91e101d7a51a8b63bd196ec80e9224e5e6e6fc95
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3203463"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "3834266"
 ---
 # <a name="vendor-rebates"></a>Leverandørrabatter
+
 [!include [banner](../includes/banner.md)]
 
 Leverandørrabatter hjelper bedrifter bedre å håndtere sine leverandørrabattprogrammer ved å automatisere oppgaver som kreves for å administrere, spore og kreve rabatter som er opptjent.
@@ -50,6 +51,7 @@ Folk i disse stillingene ser etter måter å oppnå ulike mål. Her er noen ekse
 - Ha et kvantifisert grunnlag for løpende og fremtidige forhandlinger med leverandører om rabatter.
 
 ## <a name="review-details-of-a-vendor-rebate-agreement"></a>Se gjennom detaljer om en leverandørrabattavtale
+
 En leverandørrabattavtale er en oversikt over en kontrakt med en leverandør som spesifiserer de forhandlede vilkårene hvor selskapet kvalifiserer for en pengepremie, i motsetning til å oppnå forhåndsdefinerte kjøpsmål. Leverandørrabattavtaler er registrert på siden **Rabattavtaler**.
 
 Hvis du vil åpne siden **Leverandørrabattavtaler**, velg **Anskaffelse og innkjøp** &gt; **Leverandørrabatter** &gt; **Rabattavtaler**.
@@ -60,7 +62,9 @@ På siden **Leverandørrabattavtaler** kan du se informasjon om de forhandlede b
 
 Avtalens topptekst spesifiserer de generelle vilkårene som kvalifiserer et selskap for rabatter. I utgangspunktet spesifiserer topptekstinformasjonen at en leverandør gir en rabatt når et bestemt produkt er kjøpt i en bestemt mengde. I toppteksten kan du også spesifisere enheten for målerabattalternativ og beregningsdatatypen.
 
-- I kategorien **Generelt**, i feltet **Rabattalternativ for måleenhet**, kan du definere om en måleenhet bør være en betingelse for innkjøpsordre, for å kvalifisere for rabattkrav. 
+- I kategorien **Oversikt**, hvis du har linjer med **Varekode** satt til *tabell* for å angi varen, er avtalen for den bestemte varen. Hvis du har linjer med **Varekode** satt til *Gruppe* eller *Alle* for å angi varene, vil leverandørrabattavtalen behandles individuelt per vare som er kvalifisert for varekoden, ikke på tvers av alle varer som kvalifiserer for varekoden.
+
+- I kategorien **Generelt**, i feltet **Rabattalternativ for måleenhet**, kan du definere om en måleenhet bør være en betingelse for innkjøpsordre, for å kvalifisere for rabattkrav.
 
     - **Konvertere** – et innkjøpsordrelinje kvalifiserer for leverandørrabatt per rabattargument. Du vil motta en rabatt uavhengig av måleenheten som brukes på linjen.
     - **Eksakt treff** – for å kvalifisere for en rabatt må en innkjøpslinje ha samme målenhet som er spesifisert i avtalen.
@@ -97,6 +101,7 @@ På avtalelinjene kan du spesifisere leverandørrabattavtalen nærmere.
 Når kjøpsordrer er plassert hos en leverandør som selskapet har en rabattavtale med, identifiserer programmet eventuelle fremtidige leverandørkredittbetalinger. Hvis kjøpsordrene kvalifiserer for rabatt, genereres et rabattkrav for hver ordrelinje så snart en innkjøpsfaktura er lagt ut. Denne prosessen skjer automatisk. Senere kan du gjennomgå forventede rabatter og se effekten av disse rabattene på produktets kostnads- og fortjenestemargin.
 
 ### <a name="view-details-of-rebates-that-are-applied-to-a-purchase-order-line-per-the-vendor-rebate-agreement"></a>Se detaljer om rabatter som brukes på en bestillingslinje per leverandørrabattavtale
+
 1. På **Innkjøpsordre**-siden, velg en ordrelinje og deretter vel **Innkjøpsordrelinje** &gt; **Visning** &gt; **Prisinformasjon**.
 2. På siden **Prisinformasjon**, velg hurtigkategorien **Rabatter**.
 
@@ -106,15 +111,18 @@ Rabattinformasjonen vises også i feltet **Leverandørrabat** i delen **Margines
 > På siden **Innkjøp og innkjøpsparametere**, i kategorien **Priser**, bekreft at alternativet **Aktiver prisinformasjon** er satt til **Ja**. Hvis dette alternativet er satt til **Nei**, vil du ikke kunne se rabatten.
 
 ## <a name="review-and-approve-claims"></a>Gjennomgå og godkjenne krav
+
 Rabatkrav som genereres representerer fremtidige betalinger som kan forventes fra leverandøren. Før en kreditnota utstedes til leverandøren, vil avtalens eier typisk vurdere kravene og godkjenne dem. Vær imidlertid oppmerksom på at statusen for et krav bestemmer om kravet er klart for å gå gjennom godkjenningsprosessen.
 
 ### <a name="the-status-of-claims-and-the-effect-on-the-approval-process"></a>Status på krav og effekten på godkjenningsprosessen
+
 Når et krav er generert statusen satt til **Til beregning** hvis rabatten er gitt på kumulativt basis, eller **Kalkulert** hvis rabatten er gitt per faktura. Hvis statusen for et krav er **Til beregning**, vil kravet måtte gå gjennom en beregningsprosess som håndteres av funksjonen Kumulativ. Kun krav som har statusen **Beregnet** kan inkluderes i godkjennelsesprosessen.
 
 > [!NOTE]
 > Hvis alternativet **Godkjennelse kreves** på en leverandørrabattavtale er satt til **Nei**, vil alle krav som genereres få statusen **Godkjent**. Godkjennelsen er obligatorisk for krav som er gitt på kumulativt basis.
 
 ### <a name="approve-claims-and-view-postings-and-invoice-details"></a>Godkjenn krav og se posteringer og fakturadetaljer
+
 Når krav er godkjent kan de behandles som leverandørgjeld. En kreditnota (leverandørfaktura) for rabattkravbeløpet genereres automatisk. Kreditten kan legges til leverandørsaldoen, og teamet som skal behandle leverandørgjelden kan inkluderes i den ordinære oppgjørsprosessen.
 
 1. Velg **Anskaffelse og innkjøp** &gt; **Leverandørrabatter** &gt; **Rabattkrav** for å åpne et rabattkrav.
@@ -153,6 +161,7 @@ Når krav er godkjent kan de behandles som leverandørgjeld. En kreditnota (leve
 9. På siden **Alle leverandører**, velg en leverandør som du mottar en rabatt fra, og deretter i Handlingsvinduet, velg **Transaksjoner**. Finn linjen for fakturaen. Rabattbeløpet er nå lagt til leverandørsaldoen.
 
 ## <a name="summary"></a>Sammendrag
+
 Prosessen for å håndtere leverandørrabatter innebærer flere manuelle sporingsoppgaver som ofte er kjedelige. Ved å automatisere disse oppgaver kan funksjonen for leverandørrabattadministrasjon hjelpe deg med å bevege deg gjennom følgende prosesser:
 
 - Genererer nøyaktige rabattkrav

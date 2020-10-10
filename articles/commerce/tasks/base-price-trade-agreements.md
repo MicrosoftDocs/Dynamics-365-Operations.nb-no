@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 022db9365f25c1d3e387870dd9d173077d864b3d
-ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
+ms.openlocfilehash: 44dc059f7bfc3ba83a375c197ce67f1378a9bc9b
+ms.sourcegitcommit: 74b10104338222a945684d841d60ab4b8e570168
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3141528"
+ms.lasthandoff: 09/28/2020
+ms.locfileid: "3899355"
 ---
 # <a name="base-price-and-trade-agreements"></a> Basispris og forretningsavtaler
 
@@ -58,7 +58,7 @@ Denne prosedyren hjelper med å opprette kanalspesifikke salgsprisforretningsavt
 26. Klikk på rullegardinknappen i **Navn**-feltet for å åpne oppslaget.
 27. Velg **Commerce** i listen. I demonstrasjonsdataene har journalnavnet **Commerce** standardrelasjonen **Pris (salg)**. Det betyr at alle nye linjer som opprettes, bruker salgsprisforretningsavtaler som standard.  
 28. Klikk på **Linjer** i **handlingsruten**.
-29. Velg Gruppe i **Kontokode**-feltet.
+29. Velg Gruppe i **Partskodetype**-feltet.
 30. Klikk på rullegardinknappen i **Kontovalg**-feltet for å åpne oppslaget.
 31. Finn og velg ønsket post i listen. Dette fullfører koblingen fra kanal til prisgruppe til forretningsavtale.  
 32. Skriv inn en verdi i **Varerelasjon**-feltet.

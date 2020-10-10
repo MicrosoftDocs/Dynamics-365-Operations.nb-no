@@ -1,14 +1,14 @@
 ---
 title: Produktdimensjoner
 description: Det finnes fem produktdimensjoner – farge, konfigurasjon, størrelse, stil og versjon. Du kan kombinere produktdimensjoner i dimensjonsgrupper og tilordne dimensjonsgrupper til produktstandarder. Kombinasjonene av produktdimensjoner bestemmer hvordan produktvarianter defineres.
-author: cvocph
+author: t-benebo
 manager: tfehr
-ms.date: 08/03/2020
+ms.date: 09/22/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: EcoResProductDimension, EcoResProductDimensionGroup, EcoResProductMasterDimension, RetailEcoResColor, RetailEcoResSize, RetailEcoResStyle
+ms.search.form: EcoResProductDimension, EcoResProductDimensionGroup, EcoResProductMasterDimension, RetailEcoResColor, RetailEcoResSize, RetailEcoResStyle, EcoResVersionNameLookup, RetailStyleGroupTable
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations, Retail
@@ -16,15 +16,15 @@ ms.custom: 19171
 ms.assetid: 81fa3709-4ab8-4fbf-9806-359892a05985
 ms.search.region: Global
 ms.search.industry: Retail
-ms.author: conradv
+ms.author: benebotg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 72b8cd8149ab7b2074eb815231be348db62e282e
-ms.sourcegitcommit: f9917706d45693e8d3f9f6224dca9e601db44bae
+ms.openlocfilehash: bdfd9482d30bd65cf84fae032df78e1243e05239
+ms.sourcegitcommit: 97d4a9bd442fe20f90605d8154c3a947c7645b37
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "3657322"
+ms.lasthandoff: 09/28/2020
+ms.locfileid: "3895455"
 ---
 # <a name="product-dimensions"></a>Produktdimensjoner
 
@@ -107,7 +107,7 @@ Når du tester løsningene for å sikre kompatibilitet med versjonsdimensjonen, 
     - PCVariantConfiguration::findByProductMasterAndDimensions
 
 1. **Tilordninger:** Hvis noen tilordninger bruker beholdningsdimensjonene, må den tilsvarende relasjonstilordningen til disse tilordningene oppdateres, slik at de inkluderer versjonsdimensjonen. I den utvidede modellen eller tabellutvidelser må du se etter tabeller der feltene omfatter beholdningsdimensjoner.
-1. **Microsoft Dynamics 365 Commerce-funksjonalitet:** Når dette er aktivert, vil versjonsdimensjonen vises i hele den Commerce-spesifikke koden i Dynamics 365 Supply Chain Management. Versjonsdimensjonen støttes imidlertid ikke av Commerce-kanaldatabasen eller i salgsstedsapper (POS). Denne virkemåten ligner på den gjeldende virkemåten til konfigurasjonsdimensjonen i hele Commerce.
+1. **Microsoft Dynamics 365 Commerce-funksjonalitet:** Når dette er aktivert, vil versjonsdimensjonen vises i hele den Commerce-spesifikke koden i Dynamics 365 Supply Chain Management. Versjonsdimensjonen støttes imidlertid ikke av Commerce-kanaldatabasen eller i salgssteds- (POS) eller e-handelsapper. Disse Commerce-spesifikke programmene støtter ikke brukere som selger/sender eller returnerer/mottar lager etter versjonsdimensjon. Oppslagsfunksjoner for lagertilgjengelighet vil ikke skjelne lageret etter versjonsdimensjon i Commerce-apper. Denne virkemåten ligner på den gjeldende virkemåten til konfigurasjonsdimensjonen i hele Commerce.
 
 #### <a name="turn-on-the-version-dimension"></a>Aktivere versjonsdimensjonen
 

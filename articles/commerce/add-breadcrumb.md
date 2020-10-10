@@ -3,7 +3,7 @@ title: Brødsmulemodul
 description: Dette emnet dekker brødsmulemoduler og beskriver hvordan du legger dem til områdesider i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
-ms.date: 06/01/2020
+ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 38efc3a60ae0ba49db2036dc84c49e4896727d94
-ms.sourcegitcommit: 4a981ee4be6d7e6c0e55541535d386bce2565cba
+ms.openlocfilehash: 7c6f215c3a7539cc16b0d72594702e6bdde7c58e
+ms.sourcegitcommit: 8028fbc5b9585e87d3331ea02577ff82ede090af
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "3621066"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "3817116"
 ---
 # <a name="breadcrumb-module"></a>Brødsmulemodul
 
@@ -37,6 +37,9 @@ Brødsmulemoduler brukes til å levere sekundær navigasjon på områdesider. De
 
 På sider som inneholder produktkategorikontekst, for eksempel PDP-er og kategorisider, viser brødsmulekategorier kategorihierarkiet. På sider som ikke inneholder kategorikontekst, viser brødsmulemoduler **&lt;Områderot&gt; / &lt;Gjeldende side&gt;** som standard. Brødsmulemoduler kan også konfigureres manuelt på andre typer områdesider for å vise koblinger til bestemte sider på området.
 
+> [!NOTE]
+> Brødsmulemodulen er tilgjengelig i Dynamics 365 Commerce 10.0.12-versjonen.
+
 Bildet nedenfor viser et eksempel på en brødsmulemodul som viser kategorihierarkiet på en PDP.
 
 ![Eksempel på en brødsmulemodul](./media/ecommerce-breadcrumb.PNG)
@@ -48,6 +51,9 @@ Brødsmulemodulen er avhengig av **Brødsmulevisningstype på PDP**-innstillinge
 - **Vis kategorihierarki** – Når denne verdien er valgt, viser brødsmulemodulen det fullstendige kategorihierarkiet for produktet som vises på PDP.
 - **Vise tilbake til resultater** – Når denne verdien er valgt, vil brødsmulemodulen vise en "Tilbake til resultater"-kobling på en PDP hvis brukeren åpnet PDP-en fra en modul som tillater en "Tilbake til resultater"-kobling. Denne funksjonaliteten er tilgjengelig når brukere navigerer fra listesider for kategorier, søk, lister og anbefalinger. For å støtte denne funksjonaliteten har modulene for produktinnsamling og søkeresultater en egenskap som heter **Tillat tilbake til resultater på PDP**. Denne egenskapen gir deg fleksibilitet til å definere hvilke moduler som støtter koblingsfunksjonen "Tilbake til resultatene" på PDP-en. Når for eksempel **Vis tilbake til resultater** er valgt for **Brødsmulevisningstype på PDP**-innstillingen i brødsmulemodulen, og **Tillat tilbake til resultater på PDP** er valgt for søkeresultatmodulen for søkesiden, vises en kobling for "Tilbake til resultater" når brukere navigerer fra søkesiden til en PDP.
 - **Vis kategorihierarki og tilbake til resultater** – denne verdien er en kombinasjon av de foregående to. Når denne verdien er valgt, vil brødsmulemodulen vise både hele kategorihierarkiet og en "Tilbake til resultater"-kobling (hvis den er konfigurert) på en PDP.
+
+> [!IMPORTANT]
+> Disse innstillingene er tilgjengelige i Dynamics 365 Commerce 10.0.12-versjonen. Hvis du oppdaterer fra en eldre versjon av Dynamics 365 Commerce, må du manuelt oppdatere appsettings.json-filen. Hvis du vil ha instruksjoner om oppdatering av appsettings.json-filen, se [Oppdateringer for SDK og modulbibliotek](e-commerce-extensibility/sdk-updates.md#update-the-appsettingsjson-file).
 
 ## <a name="breadcrumb-module-properties"></a>Egenskaper for brødsmulemoduler
 
@@ -76,10 +82,12 @@ Hvis du vil legge til en brødsmulemodul på en PDP og angi de nødvendige egens
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 
-[Startpakke, oversikt](starter-kit-overview.md)
+[Oversikt over modulbibliotek](starter-kit-overview.md)
 
 [Oversikt over standard kategorimålside og søkeresultatside](category-search-page-overview.md)
 
 [Produktsamlingsmoduler](product-collection-module-overview.md)
 
 [Kjøpsboksmodul](add-buy-box.md)
+
+[Oppdateringer for SDK og modulbibliotek](e-commerce-extensibility/sdk-updates.md)
