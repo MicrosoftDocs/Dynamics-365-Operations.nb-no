@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: CatProcureCatalogEdit, CatProcureCatalogListPage
+ms.search.form: CatProcureCatalogEdit, CatProcureCatalogListPage, EntAssetObjectAttributeOverview
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -18,25 +18,25 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bc7b6c5a415e233993b3cf14e499a2296b31e7fe
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: b91e88292acf8e67de924a746b02858664ae9ec6
+ms.sourcegitcommit: c986d5234b81d31cc6d054298be6f6ec92c1754c
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3209197"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "3890015"
 ---
-# <a name="asset-attribute-overview"></a><span data-ttu-id="30feb-103">Oversikt over aktivaattributt</span><span class="sxs-lookup"><span data-stu-id="30feb-103">Asset attribute overview</span></span>
+# <a name="asset-attribute-overview"></a><span data-ttu-id="a2ccc-103">Oversikt over aktivaattributt</span><span class="sxs-lookup"><span data-stu-id="a2ccc-103">Asset attribute overview</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
  
 
-<span data-ttu-id="30feb-104">Dette emnet gir en oversikt over aktivaattributter i Aktivastyring.</span><span class="sxs-lookup"><span data-stu-id="30feb-104">This topic provides an overview of asset attributes in Asset Management.</span></span> <span data-ttu-id="30feb-105">Aktivaattributter er egenskaper som er knyttet til en aktivatype eller et aktivum.</span><span class="sxs-lookup"><span data-stu-id="30feb-105">Asset attributes are properties that are related to an asset type or an asset.</span></span> <span data-ttu-id="30feb-106">Hvis du har definert [attributtyper](../setup-for-functional-locations/specification-types.md) og brukt dem på aktiva, kan du få en oversikt over attributtverdiene som er definert for aktivaene.</span><span class="sxs-lookup"><span data-stu-id="30feb-106">If you've set up [attribute types](../setup-for-functional-locations/specification-types.md) and used them on assets, you can get an overview of the attribute values that are set up on the assets.</span></span> <span data-ttu-id="30feb-107">Denne oversikten vises på to sider i Aktivastyring: **Oversikt over aktivaattributt** og **Aktivaattributt**.</span><span class="sxs-lookup"><span data-stu-id="30feb-107">This overview is shown on two pages in Asset Management: **Asset attribute overview** and **Asset attribute**.</span></span>
+<span data-ttu-id="a2ccc-104">Dette emnet gir en oversikt over aktivaattributter i Aktivastyring.</span><span class="sxs-lookup"><span data-stu-id="a2ccc-104">This topic provides an overview of asset attributes in Asset Management.</span></span> <span data-ttu-id="a2ccc-105">Aktivaattributter er egenskaper som er knyttet til en aktivatype eller et aktivum.</span><span class="sxs-lookup"><span data-stu-id="a2ccc-105">Asset attributes are properties that are related to an asset type or an asset.</span></span> <span data-ttu-id="a2ccc-106">Hvis du har definert [attributtyper](../setup-for-functional-locations/specification-types.md) og brukt dem på aktiva, kan du få en oversikt over attributtverdiene som er definert for aktivaene.</span><span class="sxs-lookup"><span data-stu-id="a2ccc-106">If you've set up [attribute types](../setup-for-functional-locations/specification-types.md) and used them on assets, you can get an overview of the attribute values that are set up on the assets.</span></span> <span data-ttu-id="a2ccc-107">Denne oversikten vises på to sider i Aktivastyring: **Oversikt over aktivaattributt** og **Aktivaattributt**.</span><span class="sxs-lookup"><span data-stu-id="a2ccc-107">This overview is shown on two pages in Asset Management: **Asset attribute overview** and **Asset attribute**.</span></span>
 
-<span data-ttu-id="30feb-108">Siden **Oversikt over aktivaattributt** viser en egen linje for hvert aktivum.</span><span class="sxs-lookup"><span data-stu-id="30feb-108">The **Asset attribute overview** page shows a separate line for each asset.</span></span> <span data-ttu-id="30feb-109">Linjen viser alle attributtyper som er knyttet til dette aktivaet.</span><span class="sxs-lookup"><span data-stu-id="30feb-109">The line shows all attribute types that are related to that asset.</span></span> <span data-ttu-id="30feb-110">Følg disse trinnene for å åpne og bruke siden **Oversikt over aktivaattributt**.</span><span class="sxs-lookup"><span data-stu-id="30feb-110">Follow these steps to open and use the **Asset attribute overview** page.</span></span>
+<span data-ttu-id="a2ccc-108">Siden **Oversikt over aktivaattributt** viser en egen linje for hvert aktivum.</span><span class="sxs-lookup"><span data-stu-id="a2ccc-108">The **Asset attribute overview** page shows a separate line for each asset.</span></span> <span data-ttu-id="a2ccc-109">Linjen viser alle attributtyper som er knyttet til dette aktivaet.</span><span class="sxs-lookup"><span data-stu-id="a2ccc-109">The line shows all attribute types that are related to that asset.</span></span> <span data-ttu-id="a2ccc-110">Følg disse trinnene for å åpne og bruke siden **Oversikt over aktivaattributt**.</span><span class="sxs-lookup"><span data-stu-id="a2ccc-110">Follow these steps to open and use the **Asset attribute overview** page.</span></span>
 
-1. <span data-ttu-id="30feb-111">Velg **Aktivastyring** \> **Forespørsler** \> **Aktiva** \> **Oversikt over aktivaattributt**.</span><span class="sxs-lookup"><span data-stu-id="30feb-111">Select **Asset management** \> **Inquiries** \> **Assets** \> **Asset attribute overview**.</span></span>
-2. <span data-ttu-id="30feb-112">I **Aktivatype**-feltet velger du en aktivatype.</span><span class="sxs-lookup"><span data-stu-id="30feb-112">In the **Asset type** field, select an asset type.</span></span>
-3. <span data-ttu-id="30feb-113">Velg **OK**.</span><span class="sxs-lookup"><span data-stu-id="30feb-113">Select **OK**.</span></span> <span data-ttu-id="30feb-114">En liste viser alle aktiva som bruker den valgte aktivatypen.</span><span class="sxs-lookup"><span data-stu-id="30feb-114">A list shows all the assets that use the selected asset type.</span></span> <span data-ttu-id="30feb-115">For hvert aktivum vises alle tilknyttede attributtyper på samme linje.</span><span class="sxs-lookup"><span data-stu-id="30feb-115">For each asset, all related asset attribute types are shown on the same line.</span></span>
+1. <span data-ttu-id="a2ccc-111">Velg **Aktivastyring** \> **Forespørsler** \> **Aktiva** \> **Oversikt over aktivaattributt**.</span><span class="sxs-lookup"><span data-stu-id="a2ccc-111">Select **Asset management** \> **Inquiries** \> **Assets** \> **Asset attribute overview**.</span></span>
+2. <span data-ttu-id="a2ccc-112">I **Aktivatype**-feltet velger du en aktivatype.</span><span class="sxs-lookup"><span data-stu-id="a2ccc-112">In the **Asset type** field, select an asset type.</span></span>
+3. <span data-ttu-id="a2ccc-113">Velg **OK**.</span><span class="sxs-lookup"><span data-stu-id="a2ccc-113">Select **OK**.</span></span> <span data-ttu-id="a2ccc-114">En liste viser alle aktiva som bruker den valgte aktivatypen.</span><span class="sxs-lookup"><span data-stu-id="a2ccc-114">A list shows all the assets that use the selected asset type.</span></span> <span data-ttu-id="a2ccc-115">For hvert aktivum vises alle tilknyttede attributtyper på samme linje.</span><span class="sxs-lookup"><span data-stu-id="a2ccc-115">For each asset, all related asset attribute types are shown on the same line.</span></span>
 
-<span data-ttu-id="30feb-116">Siden **Aktivaattributt** viser en egen linje for hver attributtype som brukes for et aktivum.</span><span class="sxs-lookup"><span data-stu-id="30feb-116">The **Asset attribute** page shows a separate line for each attribute type that is used on an asset.</span></span> <span data-ttu-id="30feb-117">Du kan åpne denne siden ved å velge **Aktivastyring** \> **Forespørsler** \> **Aktiva** \> **Aktivaattributt**.</span><span class="sxs-lookup"><span data-stu-id="30feb-117">To open this page, select **Asset management** \> **Inquiries** \> **Assets** \> **Asset attribute**.</span></span>
+<span data-ttu-id="a2ccc-116">Siden **Aktivaattributt** viser en egen linje for hver attributtype som brukes for et aktivum.</span><span class="sxs-lookup"><span data-stu-id="a2ccc-116">The **Asset attribute** page shows a separate line for each attribute type that is used on an asset.</span></span> <span data-ttu-id="a2ccc-117">Du kan åpne denne siden ved å velge **Aktivastyring** \> **Forespørsler** \> **Aktiva** \> **Aktivaattributt**.</span><span class="sxs-lookup"><span data-stu-id="a2ccc-117">To open this page, select **Asset management** \> **Inquiries** \> **Assets** \> **Asset attribute**.</span></span>
