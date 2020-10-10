@@ -3,7 +3,7 @@ title: Definere egendefinerte sider for brukerpålogginger
 description: Dette emnet beskriver hvordan du bygger egendefinerte sider i Microsoft Dynamics 365 Commerce som håndterer tilpassede pålogginger for brukere av Azure Active Directory (Azure AD)-firma-til-kunde-leiere (B2C).
 author: brianshook
 manager: annbe
-ms.date: 07/02/2020
+ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: e9e78a4d6dc4189c927d9ef321f1eb5a6c120ee2
-ms.sourcegitcommit: adf196c51e2b6f532d99c177b4c6778cea8a2efc
+ms.openlocfilehash: 0b54bf6234dcb87c84b21259c30ca5c321869adf
+ms.sourcegitcommit: 8028fbc5b9585e87d3331ea02577ff82ede090af
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "3533465"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "3817312"
 ---
 # <a name="set-up-custom-pages-for-user-sign-ins"></a>Definere egendefinerte sider for brukerpålogginger
 
@@ -181,13 +181,13 @@ Følg disse trinnene for å oppdatere policyen for tilbakestilling av passord me
 
 ## <a name="customize-default-text-strings-for-labels-and-descriptions"></a>Tilpasse standard tekststrenger for etiketter og beskrivelser
 
-I startpakken er påloggingsmoduler forhåndsutfylt med standard tekststrenger for etikettene og beskrivelsene. Du kan tilpasse disse strengene i programvareutviklingssettet (SDK) ved å oppdatere verdiene i global.json-filen for påloggingsmodulen.
+I modulbiblioteket er påloggingsmoduler forhåndsutfylt med standard tekststrenger for etikettene og beskrivelsene. Du kan tilpasse disse strengene i programvareutviklingssettet (SDK) ved å oppdatere verdiene i global.json-filen for påloggingsmodulen.
 
 Standardteksten for den glemte passordkoblingen er **Glemt passordet?**. Nedenfor vises denne standardteksten på påloggingssiden.
 
 ![Standardtekst for koblingen for glemt passord på påloggingssiden](./media/B2C_SignUp_ModuleFace.png)
 
-I global.json-filen for startpakkemodulen for pålogging kan du redigere teksten til **Glemt passord?**, som vist i følgende illustrasjon.
+I global.json-filen for påloggingsmodulen for modulbiblioteket kan du redigere teksten til **Glemt passord?**, som vist i følgende illustrasjon.
 
 ![Oppdatere koblingstekst i påloggingsmodulens global.json-fil](./media/B2C_CustomizingStringsForModule.png)
 

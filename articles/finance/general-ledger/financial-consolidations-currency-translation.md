@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2018-5-31
 ms.dyn365.ops.version: 8.0.1
-ms.openlocfilehash: a67e5e3aea33e874f225a6af606fc8cde2bdc6bf
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 2a6685a2dcf9d7bf7ac82c3dede9c3ece0c08698
+ms.sourcegitcommit: 7537aa8ef619eea6c48467a3ca86e3372415f8a7
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2771851"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "3823461"
 ---
 # <a name="financial-consolidations-and-currency-translation-overview"></a>Oversikt over finanskonsolideringer og valutaomveksling
 
@@ -103,6 +103,7 @@ Hvis du vil vise resultatene av konsolideringen, har du flere alternativer:
     ![Konsolideringstransaksjoner på siden Konsolideringer](./media/managing-consolidation-transactions.png "Konsolideringstransaksjoner på siden Konsolideringer")
 
 Hvis du vil kjøre konsolideringen på nytt, kan du bare behandle konsolideringen. Alternativt kan du først velge **Fjern transaksjoner** på siden **Konsolideringer**.
+I tilfelle saldoene i den konsoliderte kontoen ikke er riktige, kan disse saldoene korrigeres ved hjelp av siden **Justeringer for avslutningsperiode**.
 
 ## <a name="consolidate-with-import"></a>Konsolider med import
 Konsolider med import-funksjonen fungerer som Konsolider på nettet-funksjonen. Når du velger de juridiske enhetene, går du ut til kildefilen som inneholder dataene.
@@ -156,6 +157,7 @@ Hvis du vil ha mer informasjon om hvordan valutarevaluering fungerer i **Økonom
 - Elimineringsjournaler kan posteres bare for det gjeldende laget.
 - Bare operative saldoer konsolideres. Derfor, for å se startsaldoer, må du fremdeles kjøre en årsavslutning i det konsoliderte selskapet.
 - Du kan postere en daglig journal i et elimineringsfirma, men ikke i et konsolidert selskap.
+- Justeringer av saldoer i et konsolideringsfirma kan bare gjøres ved hjelp av siden **Justeringer for avslutningsperiode**. 
 
 ## <a name="benefits-of-using-financial-reporting-for-financial-consolidations-and-currency-translation-or-to-complement-consolidate-online-for-consolidated-reporting"></a>Fordelene ved å bruke Finansrapportering for økonomiske konsolideringer og omregning av valuta eller fylle ut Konsolider på nettet for konsolidert rapportering
 Kunder som bruker Finansrapportering for økonomiske konsolideringer og omregning av valuta, eller som fyller ut Konsolider på nettet for konsolidert rapportering, oppnår forskjellige fordeler:

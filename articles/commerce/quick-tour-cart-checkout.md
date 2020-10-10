@@ -3,7 +3,7 @@ title: Oversikt over sider for handlekurv og kasse
 description: Dette emnet inneholder en oversikt over sider for handlekurv og kasse i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
-ms.date: 06/30/2020
+ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: c879b90cf49dcab9cf069e4f3613602bd6673aa9
-ms.sourcegitcommit: ce397c2759f642c595e30fef58a770b50360b2bd
+ms.openlocfilehash: e932be31a301ef5aacb68fa4e710d8a9137b7263
+ms.sourcegitcommit: 8028fbc5b9585e87d3331ea02577ff82ede090af
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "3527573"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "3817784"
 ---
 # <a name="cart-and-checkout-pages-overview"></a>Oversikt over sider for handlekurv og kasse
 
@@ -40,7 +40,7 @@ Kassesiden for et webområde for e-handel viser en trinnvis flyt som kundene fø
 
 Handlekurvsidene fungerer som handlepose og inneholder alle varene som er lagt til i handlekurven.
 
-Illustrasjonen nedenfor viser et eksempel på en handlekurvside som ble bygd ved hjelp av online-startpakken og "Fabrikam"-temaet.
+Illustrasjonen nedenfor viser et eksempel på en handlekurvside som ble bygd ved hjelp av modulbiblioteket og "Fabrikam"-temaet.
 
 ![Eksempel på en handlekurvside](./media/cart2.PNG)
 
@@ -56,7 +56,7 @@ Hvis du vil ha informasjon om hvordan du redigerer en handlekurv, se [Legge til 
 
 Utsjekkingssiden er der kunder angir informasjonen som kreves for å legge inn en ordre.
 
-Illustrasjonen nedenfor viser et eksempel på en utsjekkingsside som ble bygd ved hjelp av online-startpakken.
+Illustrasjonen nedenfor viser et eksempel på en utsjekkingsside som ble bygd ved hjelp av modulbiblioteket.
 
 ![Eksempel på en utsjekkingsside](./media/Checkout.PNG)
 
@@ -66,7 +66,7 @@ Hoveddelen av utsjekkingssiden er der all ordreinformasjon samles inn. Denne inf
 
 Det kreves en forsendelsesadresse hvis varer må sendes. Formatet for forsendelsesadresser for hver nasjonal innstilling kan konfigureres i Dynamics 365 Commerce. Hvis varene for eksempel skal leveres til USA, må leveringsadressen inneholde en gateadresse, stat og postnummer (ZIP). Noe grunnleggende inndatavalidering utføres for felt for leveringsadresse, for eksempel validering for alfanumeriske tegn, maksimumslengde og tall. Selv om selve adressen ikke er bekreftet, kan denne verifiseringen utføres ved hjelp av tilpassede tredjepartstjenester.
 
-Leveringsadressen brukes for alle varene i handlekurven som "forsendelse"-alternativet er valgt for. Hvis du bruker utsjekkingsflyten som er oppgitt i startpakken på nettet, kan ikke individuelle handlekurvvarer sendes til forskjellige adresser. Hvis du trenger denne funksjonen, kan den implementeres ved hjelp av tilpasning av kassemodulene.
+Leveringsadressen brukes for alle varene i handlekurven som "forsendelse"-alternativet er valgt for. Hvis du bruker utsjekkingsflyten som er oppgitt i modulbiblioteket, kan ikke individuelle handlekurvvarer sendes til forskjellige adresser. Hvis du trenger denne funksjonen, kan den implementeres ved hjelp av tilpasning av kassemodulene.
 
 Når leveringsadressen er angitt, vises forsendelsesmetodene som er tilgjengelige fra Dynamics 365 Commerce-nettbutikken. Forsendelsesmetodene og adressene de støtter, kan konfigureres i Commerce.
 
@@ -80,7 +80,7 @@ Under betalingsflyten kan en kunde som er medlem av et fordelsprogram, og som ha
 
 #### <a name="gift-cards"></a>Gavekort
 
-I den elektroniske startpakken kan du løse inn interne gavekort for en ordre. Hvis du vil bruke et internt gavekort, må kunden være pålogget. For ytterligere sikkerhet anbefaler vi at du tilpasser flyten ved hjelp av et personlig ID-nummer (PIN) for interne gavekort.
+I modulbiblioteket kan du løse inn interne gavekort for en ordre. Hvis du vil bruke et internt gavekort, må kunden være pålogget. For ytterligere sikkerhet anbefaler vi at du tilpasser flyten ved hjelp av et personlig ID-nummer (PIN) for interne gavekort.
 
 ### <a name="signed-in-and-guest-users"></a>Påloggede brukere og gjestebrukere
 
