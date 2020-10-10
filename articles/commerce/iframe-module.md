@@ -3,7 +3,7 @@ title: Iframe-modul
 description: Dette emnet dekker iFrame-modulen og beskriver hvordan du legger den til på områdesider i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
-ms.date: 07/31/2020
+ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -18,17 +18,16 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2020-02-10
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: 0616a772a416a7c9d9756a840c93b8601c08c3d0
-ms.sourcegitcommit: 078befcd7f3531073ab2c08b365bcf132d6477b0
+ms.openlocfilehash: 58446289c9a53af30d4d6d331a1a609ae0d2a0ad
+ms.sourcegitcommit: 97ceb24f191161ca601e0889a539df665834ac3b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 07/31/2020
-ms.locfileid: "3647011"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "3818204"
 ---
 # <a name="iframe-module"></a>Iframe-modul
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
 
 Dette emnet dekker iFrame-modulen og beskriver hvordan du legger den til på områdesider i Microsoft Dynamics 365 Commerce.
 
@@ -37,6 +36,9 @@ Dette emnet dekker iFrame-modulen og beskriver hvordan du legger den til på omr
 En iFrame-modul gir en iFrame (innebygd ramme) som er vert for eksternt innhold på et område. Den kan for eksempel brukes til å være vert for en YouTube-video eller PDF-filvisning på en områdeside. 
 
 En iFrame-modul krever en mål-URL-adresse. Deretter er den vert for innholdet på målsiden i et HTML **iFrame**-element. Eksterne URL-adresser må være på tillatelseslisten (også kalt "hvitelisten") i henhold til områdets sikkerhetspolicy for innhold (CSP). For iFrame-innhold bør URL-adresser tillates ved å bruke direktivet **frame-ancestor**. Hvis du vil ha mer informasjon, se [Behandle policy for innholdssikkerhet (CSP)](manage-csp.md).
+
+> [!NOTE]
+> iFrame-modulen er tilgjengelig i Dynamics 365 Commerce 10.0.13-versjonen.
 
 Det følgende bildet viser eksempler på iFrame-moduler som viser eksterne videoer på områdesider.
 
@@ -72,6 +74,6 @@ Følg denne fremgangsmåten for å legge til en iFrame-modul på en side for å 
  
 ## <a name="additional-resources"></a>Tilleggsressurser
 
-[Startpakke, oversikt](starter-kit-overview.md)
+[Oversikt over modulbibliotek](starter-kit-overview.md)
 
 [Behandle policy for innholdssikkerhet (CSP)](manage-csp.md)

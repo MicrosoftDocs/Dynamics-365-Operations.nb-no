@@ -3,7 +3,7 @@ title: Oversikt over betalinger for omnikanal
 description: Dette emnet gir en oversikt over omnikanalinnbetalinger i Dynamics 365 Commerce.
 author: rubendel
 manager: AnnBe
-ms.date: 07/21/2020
+ms.date: 09/17/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: AX 8.1.3
-ms.openlocfilehash: 2127eb60a82bef8c6b5f5e9a917160331c483649
-ms.sourcegitcommit: 59fb179c770c799918f624cf345848fd4202bbdd
+ms.openlocfilehash: 80eaf36fb382e0ebe0a66383ea17ab76faa07dfa
+ms.sourcegitcommit: 084eda1d5503be83e97e2e428e67ef5393535fab
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "3613183"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "3819819"
 ---
 # <a name="omni-channel-payments-overview"></a>Oversikt over betalinger for omnikanal
 
@@ -92,6 +92,9 @@ Følgende omnikanalbetalingsscenarioer støttes:
 - Bestille på telefonsenter og hente i butikk
 - Kjøpe i butikk A og hente i butikk B
 - Kjøpe i butikk A, sende til kunde
+
+    > [!NOTE]
+    > Betalinger som er gjort i telefonsenteret som er tilordnet "Normal"-betalingsfunksjonen, må merkes med **Forskuddbetaling** = **Ja** for å bli reflektert i beløpet som forfaller ved tilbakekalling av ordren på salgsstedet. Ikke-forskuddsbetalinger av typen Normal gjenkjennes ikke når ordren kalles på nytt i POS. 
 
 Det er også støtte for variasjoner av disse scenariene. En elektronisk ordre kan for eksempel inneholde både linjer som skal sendes til kunden, og linjer som skal plukkes opp i en butikk. Alle ordreoppfyllingsalternativer støttes via omnikanalbetalinger. 
 
@@ -190,8 +193,8 @@ Følg disse trinnene for å kjøre scenarioet.
 2. På **Transaksjon**-siden legger du til Karin Berg i transaksjonen ved å bruke det numeriske tastaturet for å angi **2001**.
 3. Legg til én eller flere linjer i transaksjonen.
 4. Velg **Ordrer** for å se ordrealternativene.
-5. Velg **Plukk alle**, og deretter, når du blir bedt om det, velger du **Kundeordre**.
-6. I søkefeltet angir du **Seattle**, og deretter velger du **Seattle**-butikken for plukking. 
+5. Velg **Send alle**, og deretter, når du blir bedt om det, velger du **Kundeordre**.
+6. På leveringsmåtesiden velger du **Standard over natten**, og deretter **OK** for å godta dagens dato som forsendelsesdato. 
 7. Velg **OK** for å godta gjeldende dato som hentedato.
 8. Velg **Betal med kort** for å starte betalingen.
 9. Tilby kortbetalingen for beløpet som forfaller for innbetalingen. 
@@ -233,5 +236,5 @@ Når en ordre som har flere betalingsmidler og flere linjer, blir plukket, motta
 
 - [Vanlige spørsmål om betalinger](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/payments-retail)
 - [Dynamics 365 Payment Connector for Adyen](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/adyen-connector?tabs=8-1-3)
-- [Konfigurere BOPIS i et evalueringsmiljø for Dynamics 365 Commerce](https://docs.microsoft.com/en-us/dynamics365/commerce/cpe-bopis)
+- [Konfigurere BOPIS i et evalueringsmiljø for Dynamics 365 Commerce](https://docs.microsoft.com/dynamics365/commerce/cpe-bopis)
 

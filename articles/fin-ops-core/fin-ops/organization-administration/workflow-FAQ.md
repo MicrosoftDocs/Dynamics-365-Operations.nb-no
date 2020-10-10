@@ -3,7 +3,7 @@ title: Vanlige spørsmål om arbeidsflyt
 description: Dette emnet gir svar på vanlige spørsmål om arbeidsflytsystemet.
 author: ChrisGarty
 manager: AnnBe
-ms.date: 02/18/2020
+ms.date: 09/21/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f7408424ff9344b3dcd054106f3f10b0dc1d687b
-ms.sourcegitcommit: a688c864fc609e35072ad8fd2c01d71f6a5ee7b9
+ms.openlocfilehash: 4ba60c832b1f1ac5f514baef4cc0a9c36dd85af9
+ms.sourcegitcommit: 175f9394021322c685c5b37317c2f649c81a731a
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "3076092"
+ms.lasthandoff: 09/21/2020
+ms.locfileid: "3826196"
 ---
 # <a name="workflow-faq"></a>Vanlige spørsmål om arbeidsflyt
 
@@ -58,3 +58,5 @@ Når du kjører under Active Directory Federation Services (AD FS) i et oppgrade
 ## <a name="why-am-i-getting-sql-deadlocks-on-workflow-processing"></a>Hvorfor får jeg SQL-vranglås i arbeidsflytbehandling? 
 Standard feltverdi for **Antall arbeidsflytvarer per satsvis oppgave** på siden **Arbeidsflytparametere** er 0. Verdien 0 gjør at standard virkemåte er å endre til 20 elementer per bunke. Vær forsiktig når du justerer denne verdien, fordi et høyt antall varer per parti (> 40) kan forårsake SQL-vranglåser.
 
+## <a name="what-is-the-workflow-enhanced-error-feature"></a>Hva er funksjonen for forbedret feil i arbeidsflyten?
+Funksjonen for forbedret feil i arbeidsflyten i versjon 10.0.13 legger til feilkoder for å skille ulike klasser av arbeidsflytfeil. Feilmeldingene som rapporteres, vil for det meste være like, med mindre forskjeller for å få dem til å bli klarere.
