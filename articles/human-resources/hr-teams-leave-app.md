@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-05-18
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 0fbf44fe35af3147fd5fb478b6cbfc5a5d0b109d
-ms.sourcegitcommit: 5b620f670ac0f403a0fdcdeb9c3f970b163191ee
+ms.openlocfilehash: c7b74983cbddf661456b0a65939e272078d59f6d
+ms.sourcegitcommit: e27510ba52623c801353eed4853f8c0aeea3bb2d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/04/2020
-ms.locfileid: "3766766"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "3828950"
 ---
 # <a name="manage-leave-requests-in-teams"></a>Behandle permisjonsforespørsler i Teams
 
 [!include [banner](includes/preview-feature.md)]
 
-Med Microsoft Dynamics 365 Human Resources-appen i Microsoft Teams kan du raskt be om fridager og vise saldoinformasjon for fridager i Microsoft Teams. Du kan samhandle med en robot for å be om informasjon. Kateogrien **Fridager** gir mer detaljert informasjon.
+Med Microsoft Dynamics 365 Human Resources-appen i Microsoft Teams kan du raskt be om fridager og vise saldoinformasjon for fridager i Microsoft Teams. Du kan samhandle med en robot for å be om informasjon og starte en permisjonsforespørsel. Kateogrien **Fridager** gir mer detaljert informasjon. I tillegg kan du sende personinformasjon om kommende fritid i grupper og samtaler utenfor Human Resources-appen.
 
 ## <a name="install-the-app"></a>Installere appen
 
@@ -56,8 +56,8 @@ Hvis appen ikke logger deg på automatisk, velger du kategorien **Innstillinger*
 
 Hvis du har tilgang til mer enn én forekomst av Human Resources, kan du velge hvilket miljø du vil koble til, i kategorien **Innstillinger**.
 
-> [!WARNING]
-> Appen støtter for øyeblikket ikke sikkerhetsrollen Systeadministrator, og vil vise en feilmelding hvis du logger på med en systemadministratorkonto. Hvis du vil logge på med en annen konto, velger du **Bytt kontoer** i kategorien **Innstillinger**, og deretter logger du på med en brukerkonto som ikke har rettigheter som systemadministrator.
+> [!NOTE]
+> Appen støtter nå sikkerhetsrollen systemadministrator.
  
 ## <a name="use-the-bot"></a>Bruke roboten
 
@@ -130,13 +130,33 @@ I kategorien **Fridager** kan du vise:
 
    ![Redigering av utkast i permisjonsapp for Human Resources Teams](./media/hr-teams-leave-app-drafts-edit.png)
    
-### <a name="teams-notifications"></a>Teams-varslinger
+### <a name="respond-to-teams-notifications"></a>Svare på Teams-varslinger
 
 Når du eller en arbeider du er godkjenner for, sender en permisjonsforespørsel, vil du motta en melding i Human Resources-appen i Teams. Du kan merke varslingen for å vise den. Varslinger vises også i **Chat**-området.
 
 Hvis du er godkjenner, kan du velge **Godkjenn** eller **Avvis** i varslingen. Du kan også angi en valgfri melding.
 
 ![Varsling om permisjonsforespørsel i Human Resources-appen i Teams](./media/hr-teams-leave-app-notification.png)
+
+## <a name="send-upcoming-time-off-information-to-your-coworkers"></a>Sende kommende informasjon om fritid til kollegene
+
+Når du har installert Human Resources-appen for Teams, kan du enkelt sende informasjon om kommende fritid til kollegene i grupper eller samtaler.
+
+1. Velg Human Resources-knappen under chattevinduet i et team eller en chat i Teams.
+
+   ![Human Resources-knapp under chattevinduet](./media/hr-teams-leave-app-chat-button.png)
+
+2. Velg permisjonsforespørselen du vil dele. Hvis du vil dele et utkast av en permisjonsforespørsel, velger du **Utkast** først.
+
+   ![Velge en forestående permisjonsforespørsel som skal deles](./media/hr-teams-leave-app-chat-search.png)
+
+Permisjonsforespørselen vises i chatten.
+
+![Human Resources-permisjonsforespørselskort](./media/hr-teams-leave-app-chat-card.png)
+
+Hvis du delte en utkastforespørsel, vil den vises som et utkast:
+
+![Human Resources-utkast til permisjonsforespørselskort](./media/hr-teams-leave-app-chat-draft-card.png)
 
 ## <a name="view-your-teams-leave-calendar"></a>Vise teamets persmisjonskalender
 
@@ -164,9 +184,15 @@ Innholdet i brukerens spørringer og meldinger beholdes i LUIS-systemet i maksim
 
 Hvis du vil behandle administrasjonsinnstillinger for apper i Microsoft Teams, går du til [administrasjonssenteret for Microsoft Teams](https://admin.teams.microsoft.com/).
 
-### <a name="microsoft-azure-event-grid-and-microsoft-teams"></a>Microsoft Azure Event Grid og Microsoft Teams
+### <a name="microsoft-teams-azure-event-grid-and-azure-cosmos-db"></a>Microsoft Teams, Azure Event Grid og Azure Cosmos DB
 
-Når du bruker varslingsfunksjonen for Dynamics 365 Human Resources-appen i Teams, vil bestemte kundedata flyte utenfor det geografiske området der firmaets Human Resources-service blir distribuert. Dynamics 365 Human Resources sender informasjon om den ansattes permisjonsforespørsel og arbeidsflytoppgave til Microsoft Azure Event Grid og Microsoft Teams. Disse dataene kan være lagret i opptil 24 timer og behandles i USA, krypteres i transitt og ved inaktivitet, og brukes ikke av Microsoft eller dets underprosesser til opplærings- eller serviceforbedringer.
+Når du bruker varslingsfunksjonen for Dynamics 365 Human Resources-appen i Microsoft Teams, kan bestemte kundedata flyte utenfor det geografiske området der firmaets Human Resources-service blir distribuert.
+
+Dynamics 365 Human Resources sender informasjon om den ansattes permisjonsforespørsel og arbeidsflytoppgave til Microsoft Azure Event Grid og Microsoft Teams. Disse dataene kan være lagret i Microsoft Azure Event Grid i opptil 24 timer og behandles i USA, krypteres i transitt og ved inaktivitet, og brukes ikke av Microsoft eller dets underprosesser til opplærings- eller serviceforbedringer. Hvis du vil forstå hvor dataene er lagret i Teams, kan du se: [Plassering av data i Microsoft Teams](https://docs.microsoft.com/microsoftteams/location-of-data-in-teams?view=o365-worldwide&preserve-view=true).
+
+Mens du samtaler med chatroboten i Human Resources-appen, kan samtaleinnholdet lagres i Azure Cosmos DB og overføres til Microsoft Teams. Disse dataene kan være lagret i Azure Cosmos DB i opptil 24 timer, og kan behandles utenfor det geografiske området der leierens Human Resources-tjeneste distribueres, krypteres i transitt og når inaktiv og brukes ikke brukes av Microsoft eller dets underprosesser for opplærings- eller tjenesteforbedringer. Hvis du vil forstå hvor dataene er lagret i Teams, kan du se: [Plassering av data i Microsoft Teams](https://docs.microsoft.com/microsoftteams/location-of-data-in-teams?view=o365-worldwide&preserve-view=true).
+ 
+Hvis du vil begrense tilgangen til Human Resources-appen i Microsoft Teams for organisasjonen eller brukere i organisasjonen, kan du se [Behandle policyer for apptillatelse i Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/teams-app-permission-policies).
 
 ## <a name="see-also"></a>Se også
 
