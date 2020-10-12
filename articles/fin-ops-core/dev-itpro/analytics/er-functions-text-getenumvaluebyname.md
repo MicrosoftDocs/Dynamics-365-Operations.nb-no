@@ -3,7 +3,7 @@ title: GETENUMVALUEBYNAME ER-funksjonen
 description: Dette emnet gir generell informasjon om hvordan du bruker ER-funksjonen GETENUMVALUEBYNAME.
 author: NickSelin
 manager: kfend
-ms.date: 12/12/2019
+ms.date: 09/23/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 33ccf358dc5355cd00d5ff41ebd8148a334cba38
-ms.sourcegitcommit: 445f6d8d0df9f2cbac97e85e3ec3ed8b7d18d3a2
+ms.openlocfilehash: 722ea8ea233d617b0584e21e98073428f16c0801
+ms.sourcegitcommit: ad5b7676fc1213316e478afcffbfaee7d813f3bb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "3743861"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "3885233"
 ---
 # <a name="getenumvaluebyname-er-function"></a>GETENUMVALUEBYNAME ER-funksjonen
 
@@ -61,11 +61,11 @@ Den resulterende opplistingsverdien.
 
 Det blir ikke registrert noe unntak hvis en *opplisting*-verdi ikke blir funnet ved å bruke navnet på opplistingsverdien som er angitt som en *streng*-verdi.
 
-## <a name="example"></a>Eksempel
+## <a name="example-1"></a>Eksempel 1
 
 I følgende illustrasjon introduseres opplistingen **ReportDirection** i en datamodell. Legg merke til at etiketter er definert for opplistingsverdiene.
 
-<p><a href="./media/ER-data-model-enumeration-values.PNG"><img src="./media/ER-data-model-enumeration-values.PNG" alt="Available values for a data model enumeration" class="alignnone wp-image-290681 size-full" width="397" height="136" /></a>
+![Tilgjengelige verdier for en datamodellopplisting](./media/ER-data-model-enumeration-values.PNG)
 
 Illustrasjonen nedenfor viser disse detaljene:
 
@@ -73,8 +73,48 @@ Illustrasjonen nedenfor viser disse detaljene:
 - Uttrykket `$IsArrivals` er utformet for å bruke den modellopplistingsbaserte **$Direction**-datakilden som en parameter for denne funksjonen.
 - Verdien av denne sammenligningen er **SANN**.
 
-<a href="./media/ER-data-model-enumeration-usage.PNG"><img src="./media/ER-data-model-enumeration-usage.PNG" alt="Example of data model enumeration" class="alignnone wp-image-290681 size-full" width="397" height="136" /></a>
+![Eksempel på en datamodellopplisting](./media/ER-data-model-enumeration-usage.PNG)
+
+## <a name="example-2"></a>Eksempel 2
+
+Funksjonene `GETENUMVALUEBYNAME` og [`LISTOFFIELDS`](er-functions-list-listoffields.md) lar deg hente verdier og etiketter for støttede opplistinger som tekstverdier. (De støttede opplistingene er programopplistinger, datamodellopplistinger og formatopplistinger.)
+
+I følgende illustrasjon introduseres datakilden **TransType** i en modelltilordning. Denne datakilden refererer til programopplistingen **LedgerTransType**.
+
+![Datakilde for en modelltilordning som refererer til en programopplisting](./media/er-functions-text-getenumvaluebyname-example2-1.png)
+
+Følgende illustrasjon viser datakilden **TransTypeList** som konfigureres i en modelltilordning. Denne datakilden er konfigurert basert på **TransType**-programopplistingen. Funksjonen `LISTOFFIELDS` brukes til å returnere alle opplistingsverdier som en liste med poster som inneholder felt. På denne måten vises detaljene for hver opplistingsverdi.
+
+> [!NOTE]
+> Feltet **EnumValue** er konfigurert for datakilden **TransTypeList** ved hjelp av uttrykket `GETENUMVALUEBYNAME(TransType, TransTypeList.Name)`. Dette feltet returnerer en nummereringsverdi for hver post i denne listen.
+
+![Datakilde for en modelltilordning som returnerer alle opplistingsverdier for en valgt opplisting som en liste med oppføringer](./media/er-functions-text-getenumvaluebyname-example2-2.png)
+
+Følgende illustrasjon viser datakilden **VendTrans** som konfigureres i en modelltilordning. Denne datakilden returnerer leverandørtransaksjonsposter fra **VendTrans**-programtabellen. Finanstypen for hver transaksjon defineres av verdien til **TransType**-feltet.
+
+> [!NOTE]
+> Feltet **TransTypeTitle** er konfigurert for datakilden **VendTrans** ved hjelp av uttrykket `FIRSTORNULL(WHERE(TransTypeList, TransTypeList.EnumValue = @.TransType)).Label`. Dette feltet returnerer etiketten for en opplistingsverdi for den gjeldende transaksjonen som tekst, hvis denne opplistingsverdien er tilgjengelig. Ellers returneres en tom strengverdi.
+>
+> Feltet **TransTypeTitle** er bundet til **LedgerType**-feltet i en datamodell som gjør at denne informasjonen kan brukes i alle ER-format som bruker datamodellen som en datakilde.
+
+![Datakilde for en modelltilordning som returnerer leverandørtransaksjoner](./media/er-functions-text-getenumvaluebyname-example2-3.png)
+
+Illustrasjonen nedenfor viser hvordan du kan bruke [feilsøkingsprogrammet for datakilde](er-debug-data-sources.md) til å teste den konfigurerte modelltilordningen.
+
+![Bruke feilsøkingsprogrammet for datakilde til å teste den konfigurerte modelltilordningen](./media/er-functions-text-getenumvaluebyname-example2-4.gif)
+
+Feltet **LedgerType** i en datamodell viser etiketter med transaksjonstyper som forventet.
+
+Hvis du planlegger å bruke denne fremgangsmåten for en stor mengde transaksjonsdata, må du vurdere utførelsesytelsen. Hvis du vil ha mer informasjon, kan du se [Spore kjøringen av ER-formater for å feilsøke ytelsesproblemer](trace-execution-er-troubleshoot-perf.md).
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 
 [Tekstfunksjoner](er-functions-category-text.md)
+
+[Spore kjøringen av ER-formater for å feilsøke ytelsesproblemer](trace-execution-er-troubleshoot-perf.md)
+
+[LISTOFFIELDS ER-funksjonen](er-functions-list-listoffields.md)
+
+[FIRSTORNULL ER-funksjon](er-functions-list-firstornull.md)
+
+[WHERE ER-funksjonen](er-functions-list-where.md)

@@ -3,7 +3,7 @@ title: Ta i bruk innstillinger for beholdning
 description: Dette emnet dekker beholdningsinnstillinger og beskriver hvordan du bruker dem i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
-ms.date: 06/01/2020
+ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 737e71dc73750bf151629fd904081924ac15b91e
-ms.sourcegitcommit: 4a981ee4be6d7e6c0e55541535d386bce2565cba
+ms.openlocfilehash: d7d25fd62efca52dd2d60ed3435104c3507a1d19
+ms.sourcegitcommit: 8028fbc5b9585e87d3331ea02577ff82ede090af
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "3621227"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "3817615"
 ---
 # <a name="apply-inventory-settings"></a>Ta i bruk innstillinger for beholdning
 
@@ -38,6 +38,9 @@ Beholdningsinnstillinger angir om beholdningen skal kontrolleres før produkter 
 Dynamics 365 Commerce gir estimater for tilgjengelig beholdning for produkter. Hvis du vil ha informasjon om hvordan estimert beholdningstilgjengelighet blir beregnet, kan du se [Beregne beholdningstilgjengelighet for detaljhandelskanaler](calculated-inventory-retail-channels.md).
 
 I Commerce Site Builder kan du definere beholdningsterskler og -områder for et produkt eller en kategori. De bestemmer om beholdningen kan klassifiseres som på lager, få på lager eller tomt på lager. Hvis du vil ha mer informasjon, kan du se [Konfigurere beholdningsbuffere og beholdningsnivåer](inventory-buffers-levels.md).
+
+> [!NOTE]
+> Støtte for beholdningsterskler og -områder er tilgjengelig i Dynamics 365 Commerce 10.0.12-versjonen.
 
 ## <a name="inventory-settings"></a>Beholdningsinnstillinger
 
@@ -55,6 +58,9 @@ I Commerce defineres beholdningsinnstillinger fra **Områdeinnstillinger \> Utvi
     - Når **Tomt på lager** er valgt, vises bare "Tomt på lager"-meldingen.
 
 - **Terskel for tomt på lager** – denne gamle numeriske innstillingen vil bare tre i kraft hvis **Terskel for tomt på lager**-verdien er valgt for **Beholdningsnivå basert på**-innstillingen.
+
+> [!IMPORTANT] 
+> Disse innstillingene er tilgjengelige i Dynamics 365 Commerce 10.0.12-versjonen. Hvis du oppdaterer fra en eldre versjon av Dynamics 365 Commerce, må du manuelt oppdatere appsettings.json-filen. Hvis du vil ha instruksjoner om oppdatering av appsettings.json-filen, se [Oppdateringer for SDK og modulbibliotek](e-commerce-extensibility/sdk-updates.md#update-the-appsettingsjson-file).
 
 ## <a name="modules-that-use-inventory-settings"></a>Moduler som bruker beholdningsinnstillinger
 
@@ -74,9 +80,9 @@ Bildet nedenfor viser et eksempel på en handlekurv med en melding om at varen f
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 
-[Startpakke, oversikt](starter-kit-overview.md)
+[Oversikt over modulbibliotek](starter-kit-overview.md)
 
-[Konfigurere beholdningsbuffere og beholdningsnivåer](inventory-buffers-levels.md)
+[Konfigurere lagerbuffere og lagernivåer](inventory-buffers-levels.md)
 
 [Handlekurvmodul](add-cart-module.md)
 
@@ -85,3 +91,5 @@ Bildet nedenfor viser et eksempel på en handlekurv med en melding om at varen f
 [Kontobehandlingssider og -moduler](account-management.md)
 
 [Butikkvelgermodul](store-selector.md)
+
+[Oppdateringer for SDK og modulbibliotek](e-commerce-extensibility/sdk-updates.md)

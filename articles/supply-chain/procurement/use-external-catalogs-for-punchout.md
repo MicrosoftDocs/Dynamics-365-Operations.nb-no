@@ -1,5 +1,5 @@
 ---
-title: Bruke eksterne kataloger for PunchOut eProcurement
+title: Bruke eksterne kataloger for PunchOut-e-Procurement
 description: Dette emnet forklarer hvordan du kan bruke eksterne kataloger til å opprette og sende rekvisisjoner.
 author: mkirknel
 manager: tfehr
@@ -18,14 +18,14 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2f7a784e6a66c0c2df9043468e9878de161c3be0
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: adeffa101aa5a17543ca531aacde2130a07086e9
+ms.sourcegitcommit: b281ac04157f6ccbd159fc89f58910b430a3b6a9
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3207422"
+ms.lasthandoff: 09/21/2020
+ms.locfileid: "3826810"
 ---
-# <a name="use-external-catalogs-for-punchout-eprocurement"></a>Bruke eksterne kataloger for PunchOut eProcurement
+# <a name="use-external-catalogs-for-punchout-e-procurement"></a>Bruke eksterne kataloger for PunchOut-e-Procurement
 
 [!include [banner](../includes/banner.md)]
 
@@ -50,3 +50,8 @@ Hvis det finnes flere alternativer for innkjøpskategoriene, velger du den rikti
 Når linjer er lagt til en rekvisisjon, kan du legge til flere linjer uten å bruke eksterne kataloger. Du kan også fortsette å bruke eksterne kataloger til å legge til linjer.
 
 Når rekvisisjonen er klar, kan du bruke handlingen **Arbeidsflyt** > **Send** for å sende den til godkjenning.
+
+### <a name="additional-resources"></a>Tilleggsressurser
+
+- [Definere en ekstern katalog for PunchOut-e-Procurement](set-up-external-catalog-for-punchout.md)
+- [Kjøp av cXML-forbedringer](purchasing-cxml-enhancements.md)

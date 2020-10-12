@@ -76,8 +76,6 @@
                       href: get-started/whats-new-changed-10-0-13.md
                     - name: Finance 10.0.12 (august 2020)
                       href: get-started/whats-new-changed-10-0-12.md
-                    - name: Finance 10.0.11 (juli 2020)
-                      href: get-started/whats-new-changed-10-0-11.md
             - name: Funksjoner som er fjernet eller avskrevet
               items:
                 - name: Funksjoner som er fjernet eller avskrevet i Dynamics 365 Finance
@@ -160,7 +158,7 @@
                   href: ../fin-ops-core/fin-ops/get-started/grid-capabilities.md?toc=/dynamics365/finance/toc.json
                 - name: Opprette og arbeide med egendefinerte felt
                   href: ../fin-ops-core/fin-ops/get-started/user-defined-fields.md?toc=/dynamics365/finance/toc.json
-                - name: Bygg inn Microsoft Power Apps
+                - name: Bygge inn lerretsapper fra Power Apps
                   href: ../fin-ops-core/fin-ops/get-started/embed-power-apps.md?toc=/dynamics365/finance/toc.json
                 - name: Finne informasjon ved hjelp av oppslag
                   href: ../fin-ops-core/fin-ops/get-started/use-lookups-to-find-information.md?toc=/dynamics365/finance/toc.json
@@ -1228,6 +1226,22 @@
               href: ../fin-ops-core/dev-itpro/lcs-solutions/country-region.md?toc=/dynamics365/finance/toc.json
             - name: Forskriftsmessige oppdateringer
               href: localizations/regulatory-updates.md
+            - name: Tillegg for elektronisk fakturering
+              items:
+                - name: Oversikt over tillegg for elektronisk fakturering
+                  href: localizations/e-invoicing-service-overview.md
+                - name: Opprette en Azure-lagringskonto og et Key Vault
+                  href: localizations/e-invoicing-create-azure-storage-account-key-vault.md
+                - name: Komme i gang med Elektronisk fakturering-tillegget
+                  href: localizations/e-invoicing-get-started.md
+                - name: Komme i gang med Elektronisk fakturering-tillegget for Brasil
+                  href: localizations/e-invoicing-bra-get-started.md
+                - name: Komme i gang med Elektronisk fakturering-tillegget for Italia
+                  href: localizations/e-invoicing-ita-get-started.md
+                - name: Komme i gang med Elektronisk fakturering-tillegget for Mexico
+                  href: localizations/e-invoicing-mex-get-started.md
+                - name: Definere Elektronisk fakturering-tillegget
+                  href: localizations/e-invoicing-setup.md
             - name: Australia
               items:
                 - name: Oversikt over Australia
@@ -1268,6 +1282,8 @@
                   href: localizations/emea-bel-coda-bank-statement-import.md
                 - name: Opprette og overføre transaksjoner til BLWI
                   href: localizations/tasks/be-00011-create-transfer-blwi.md
+                - name: Eksportere finanstransaksjoner
+                  href: localizations/emea-bel-export-ledger-transactions.md
                 - name: INTERVAT-avgiftsdeklarering
                   href: localizations/emea-bel-intervat-tax-declaration.md
                 - name: Avstemmingsrapporter
@@ -2036,13 +2052,15 @@
                       href: localizations/apac-ind-GST-tax-journal.md
                     - name: Generere rapportdata for GSTR for avgiftsreturer
                       href: localizations/apac-ind-GST-tax-returns.md
+                    - name: Aktivere flerbunkebehandling for GSTR-rapporter
+                      href: localizations/apac-ind-gst-multi-batch-processing-gstr-return.md
                     - name: Avgiftsforespørsel
                       href: localizations/apac-ind-GST-tax-inquiry.md
                 - name: Avgiftsmotor
                   items:
                     - name: Oversikt over avgiftsmotor
                       href: general-ledger/tax-engine.md
-                    - name: Importer konfigurasjon
+                    - name: Importere konfigurasjon
                       href: general-ledger/tax-engine-import-configuration.md
                     - name: Avansert formeldesigner
                       href: ../fin-ops-core/dev-itpro/analytics/er-advanced-formula-editor.md?toc=/dynamics365/finance/toc.json
@@ -3560,6 +3578,8 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-defer-xml-element.md?toc=dynamics365/finance/toc.json
                     - name: Utforme flerspråklige rapporter
                       href: ../fin-ops-core/dev-itpro/analytics/er-design-multilingual-reports.md?toc=/dynamics365/finance/toc.json
+                    - name: Komprimere store utgående dokumenter
+                      href: ../fin-ops-core/dev-itpro/analytics/er-compress-outbound-files.md?toc=/dynamics365/finance/toc.json
                 - name: Relativ bane i databindinger
                   href: ../fin-ops-core/dev-itpro/analytics/relative-path-data-bindings-er-models-format.md?toc=dynamics365/finance/toc.json
             - name: Bruke elektroniske rapporteringsløsninger i Finance and Operations

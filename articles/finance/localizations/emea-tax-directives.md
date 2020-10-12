@@ -3,7 +3,7 @@ title: Mva-direktiver for Europa
 description: Du kan angi å inkludere en forklaring for avgiftskoder på salgsfakturaer og prosjektfakturaer. Du kan skrive ut referansenumre på salgsfakturaer, fritekstfakturaer og prosjektfakturaer.
 author: epodkolz
 manager: AnnBe
-ms.date: 06/03/2020
+ms.date: 09/17/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, F
 ms.author: epodkolz
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 70c86d85b66f1b5c0bf72f80f93299c3848ca158
-ms.sourcegitcommit: c5d0bd90334e259e96df17a217b2eff03c265f07
+ms.openlocfilehash: 2f0da36e2be20d5ae8c838ed73c6e8aa1c19b621
+ms.sourcegitcommit: 814476906187480262b390ca49e487eb91738deb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "3422997"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "3819109"
 ---
 # <a name="tax-directives-for-europe"></a>Mva-direktiver for Europa
 
@@ -32,4 +32,4 @@ EU-direktiv inneholder bestemmelser som alle medlemslandene skal følge, om regl
 - For kreditnotaer skrives nummeret og datoen for den opprinnelige fakturaen ut sammen med årsaken til rettelsen.
 
 > [!NOTE]
-> På **Skjemaoppsett**-siden (**Kunder** > **Oppsett** > **Skjemaer** > **Skjemaoppsett** går du til **Generelt-kategorien**) og bekrefter at **Mva-spesifikasjon**-feltet er satt til **Registreringsvaluta** eller **Registrerings- og firmavaluta**.
+> Kontroller at feltet **Mva-spesifikasjon** er satt til **Registreringsvaluta** eller **Registrerings- og firmavaluta** på siden **Skjemaoppsett** i kategorien **Generelt** (**Kunder > Oppsett > Skjemaer > Skjemaoppsett** eller **Prosjektstyring og regnskap > Oppsett > Skjemaer > Skjemaoppsett**).

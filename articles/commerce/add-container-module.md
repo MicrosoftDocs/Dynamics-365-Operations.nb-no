@@ -3,7 +3,7 @@ title: Containermodul
 description: Dette emnet dekker containermoduler og beskriver hvordan du legger dem til områdesider i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
-ms.date: 06/01/2020
+ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: c7d607047aab92144932b4b59db050a588d6483d
-ms.sourcegitcommit: 2683aacb426bfb3b541637edf1f8ec2d6cb5a745
+ms.openlocfilehash: 9bb2c7d56184d009492b4aa839a3546160ad342f
+ms.sourcegitcommit: 8028fbc5b9585e87d3331ea02577ff82ede090af
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/01/2020
-ms.locfileid: "3417352"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "3817408"
 ---
 # <a name="container-module"></a>Containermodul
 
@@ -123,9 +123,9 @@ Hvis du vil legge til en containerspillermodul på en ny side og angi de nødven
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 
-[Startpakke, oversikt](starter-kit-overview.md)
+[Oversikt over modulbibliotek](starter-kit-overview.md)
 
-[Trekkspillmodul](add-accordion.md)
+[Samsvarsmodul](add-accordion.md)
 
 [Kategorimodul](add-tab.md)
 

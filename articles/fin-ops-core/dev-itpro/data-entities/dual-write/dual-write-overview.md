@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: 8957065bcadc3f33adb60c2a8f2be78710289631
-ms.sourcegitcommit: d03f301633175b15d46690fc97067820bf21579f
+ms.openlocfilehash: 1eb5e4ea8d086baeee686ccb3d044b3ef9d2a4fa
+ms.sourcegitcommit: b3df62842e62234e8eaa16992375582518976131
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "3775153"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "3818578"
 ---
 # <a name="dual-write-overview"></a>Oversikt over dobbel skriving
 
@@ -86,7 +86,7 @@ Ved dobbel skriving opprettes det en tilordning mellom konsepter i Finance and O
 Dobbel skriving gir dataintegrering på tvers av Microsoft Dynamics 365-apper. Dette robuste rammeverket kobler sammen miljøer og gjør det mulig for forskjellige forretningsapper å fungere sammen. Her er de viktigste grunnene til at du bør bruke dobbel skriving:
 
 + Dobbel skriving gir tett sammenkoblet toveis integrering nær sagt i sanntid mellom Finance and Operations-apper og modelldrevne apper i Dynamics 365. Denne integreringen gjør at Microsoft Dynamics 365 kan brukes til alle forretningsløsningene dine. Kunder som bruker Dynamics 365 Finance og Dynamics 365 Supply Chain Management, men som bruker løsninger fra andre enn Microsoft for Customer Relationship Management (CRM), går over til å bruke Dynamics 365 for støtte for dobbel skriving.
-+ Data fra kunder, produkter, operasjoner, prosjekter og tingenes Internett flyter automatisk til Common Data Service via dobbel skriving. Denne tilkoblingen er nyttig for bedrifter som er interessert i Microsoft Power Platform-utvidelser.
++ Data fra kunder, produkter, operasjoner, prosjekter og tingenes Internett flyter automatisk til Common Data Service via dobbel skriving. Denne tilkoblingen er nyttig for bedrifter som er interessert i Power Platform-utvidelser.
 + Infrastrukturen for dobbel skriving følger koden for ingen kode / lav kode. Det kreves minimalt teknisk arbeid for å utvide standardtilordninger fra tabell til tabell og inkludere tilpassede tilordninger.
 + Dobbel skriving støtter både tilkoblet og frakoblet modus. Microsoft er det eneste firmaet som tilbyr støtte for tilkoblet og frakoblet modus.
 

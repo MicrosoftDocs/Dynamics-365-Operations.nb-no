@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: kamaybac
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 95cf53cbbd7863590f08afa72143effaa80ba8de
-ms.sourcegitcommit: 9c694772e1484df10afd72ea1a717fda0861627e
+ms.openlocfilehash: 9255640240ae07c3857c0b6f55a7ee27ba3bf85b
+ms.sourcegitcommit: cde71bc7d14ea6cdff2c4e991057d39a6a0473d9
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/14/2020
-ms.locfileid: "3813815"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "3887094"
 ---
 # <a name="supply-chain-management-home-page"></a>Startside for Supply Chain Management
 
@@ -107,4 +107,4 @@ Det finnes mange emner om produksjon og forsyningskjedeadministrasjon i [teamblo
 
 ## <a name="elearning-courses"></a>e-læringskurs
 
-Gå til [Dynamics 365 i Microsoft Learn for elektroniske kurs og opplæring](https://docs.microsoft.com/learn/dynamics365/).
+Gå til [Dynamics 365 Supply Chain Management på Microsoft Learn](https://docs.microsoft.com/learn/browse/?products=dynamics-scm&resource_type=learning%20path) for elektroniske kurs og opplæring.

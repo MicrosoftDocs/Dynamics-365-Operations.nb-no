@@ -1,5 +1,5 @@
 ---
-title: Definere en ekstern katalog for PunchOut eProcurement
+title: Definere en ekstern katalog for PunchOut e-Procurement
 description: Dette emnet beskriver bruken av en ekstern katalog for å samle inn tilbudsinformasjon fra en leverandør og legge den til i en rekvisisjon.
 author: mkirknel
 manager: tfehr
@@ -18,14 +18,14 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 28c9152996b7efc84b4259bd7323411df0b62258
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 7aecc2c4786a1912bf5ae44f3949428c778f1df9
+ms.sourcegitcommit: b281ac04157f6ccbd159fc89f58910b430a3b6a9
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3207813"
+ms.lasthandoff: 09/21/2020
+ms.locfileid: "3826834"
 ---
-# <a name="set-up-an-external-catalog-for-punchout-eprocurement"></a>Definere en ekstern katalog for PunchOut eProcurement
+# <a name="set-up-an-external-catalog-for-punchout-e-procurement"></a>Definere en ekstern katalog for PunchOut e-Procurement
 
 [!include [banner](../includes/banner.md)]
 
@@ -86,7 +86,8 @@ Nedenfor finner du en beskrivelse av kodene som er inkludert i malen:
 ### <a name="extrinsic-elements"></a>Eksterne elementer
 
 Et eksternt element er tilleggsinformasjon, for eksempel et brukernavn som er basert på en bruker som stempler seg ut. Det eksterne elementet er satt når utstempling oppstår, og det kan sendes i oppsettmeldingen for forespørsel.
-Leverandøren kan ha behov for å motta et eksternt element i oppsettforespørselen. I så fall bør du legge til det eksterne elementet i listen over eksterne elementer i **Meldingsformat**-delen av **Ekstern katalog**-siden. Angi et navn for det eksterne elementet som leverandøren kan kjenne igjen, og tilordne det til en verdi. Alternativene for verdier er: brukernavn, en brukers e-postadresse eller tilfeldig verdi.
+Leverandøren kan ha behov for å motta et eksternt element i oppsettforespørselen. I så fall bør du legge til det eksterne elementet i listen over eksterne elementer i **Meldingsformat**-delen av **Ekstern katalog**-siden.
+Angi et navn for det eksterne elementet som leverandøren kan kjenne igjen, og tilordne det til en verdi. Alternativene for verdier er: brukernavn, en brukers e-postadresse eller tilfeldig verdi.
 Hvis du vil ha mer informasjon om cXML-protokollen, se [cXML.org-nettsiden](http://cxml.org/).
 
 ## <a name="post-back-message"></a>Tilbakemelding
@@ -109,3 +110,7 @@ Slett en ekstern katalog med slettehandlingen på siden.
 
 Hvis et produkt fra den eksterne leverandørkatalogen er forespurt, kan den eksterne leverandørkatalogen ikke slettes. I stedet settes den eksterne leverandørkatalogens status til inaktiv. Hvis du vil fjerne tilgang til den eksterne leverandørens katalogområde, men ikke slettee det, kan du endre den eksterne katalogstatusen til inaktiv.
 
+## <a name="additional-resources"></a>Tilleggsressurser
+
+- [Kjøp av cXML-forbedringer](purchasing-cxml-enhancements.md)
+- [Bruke eksterne kataloger for PunchOut e-Procurement](use-external-catalogs-for-punchout.md)

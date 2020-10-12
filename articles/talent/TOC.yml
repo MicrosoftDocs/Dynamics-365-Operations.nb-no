@@ -150,7 +150,7 @@
           href: modular-app-tech-faq.md
         - name: Eksportere data fra Attract og Onboard
           href: attract-onboard-export-data.md
-        - name: Bygg inn Microsoft Power Apps
+        - name: Bygge inn lerretsapper fra Power Apps
           href: ../fin-and-ops/get-started/embed-power-apps.md?toc=/dynamics365/unified-operations/talent/toc.json
         - name: Få kundestøtte for Talent
           href: talent-support.md
@@ -248,7 +248,9 @@
       items:
         - name: Feilsøke postering av jobber til LinkedIn
           href: attract-troubleshoot-linkedin.md
-        - name: 'Brukeren har tilgang til Personale, men ikke appen Onboard eller Attract'
+        - name: 'Brukeren har tilgang til Human Resources, men ikke appen Onboard eller Attract'
           href: user-access-core-hr.md
         - name: Fant ikke Azure Active Directory-brukere i Personvelger
           href: people-picker-user-not-found.md
+        - name: Attract-brukere kan ikke søke på jobber fra karriereportalen
+          href: attract-troubleshoot-career-portal.md

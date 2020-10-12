@@ -1,7 +1,7 @@
 ---
 title: Startside for kontant- og bankbehandling
 description: Du kan bruke Kontant- og bankbehandling til å vedlikeholde den juridiske enhetens bankkontoer og finansobjektene som er knyttet til disse bankkontoene.
-author: ShylaThompson
+author: panolte
 manager: AnnBe
 ms.date: 10/26/2017
 ms.topic: index-page
@@ -15,15 +15,15 @@ ms.search.scope: Core, Operations
 ms.custom: 21941
 ms.assetid: d7e22bd8-fd0d-47e1-843f-45ab0193ff8d
 ms.search.region: Global
-ms.author: shylaw
+ms.author: panolte
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c27811fc900cb497f62780a5185b20d4efbbbdba
-ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
+ms.openlocfilehash: 88d7f70084d035354d199be95b5c55ce7afff7b7
+ms.sourcegitcommit: 74b10104338222a945684d841d60ab4b8e570168
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "3026297"
+ms.lasthandoff: 09/28/2020
+ms.locfileid: "3899624"
 ---
 # <a name="cash-and-bank-management-home-page"></a>Startside for kontant- og bankbehandling
 
@@ -92,10 +92,10 @@ Gå til [Lanseringsplaner for Microsoft Dynamics 365](https://go.microsoft.com/f
 
 Du kan finne meninger, nyheter og annen informasjon i bloggen for [Microsoft Dynamics 365](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise) og bloggen for [Microsoft Dynamics 365 Finance and Operations - Financials](https://community.dynamics.com/365/financeandoperations/b/financials).
 
-[Microsoft Dynamics Operations Partner Community-bloggen](https://community.dynamics.com/partner/b/operationspartnercommunityblog) gir Microsoft Dynamics-partnere én ressurs der de kan finne ut mer om hva som er nytt og populært i MBS Operations.
+[Microsoft Dynamics Operations Partner Community-bloggen](https://community.dynamics.com/partner/b/operationspartnercommunityblog) gir Microsoft Dynamics-partnere én ressurs der de kan finne ut mer om hva som er nytt og populært i Dynamics 365.
 
 #### <a name="task-guides"></a>Oppgaveveiledninger
-Mer hjelp er tilgjengelig som oppgaveveiledninger i Finance. For å få tilgang til oppgaveveiledninger klikker du Hjelp-knappen på en side.
+Mer hjelp er tilgjengelig som oppgaveveiledninger i Finance. For å få tilgang til oppgaveveiledninger klikker du på Hjelp-knappen på en side.
 
 #### <a name="videos"></a>Videoer
 

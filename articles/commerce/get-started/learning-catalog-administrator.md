@@ -1,6 +1,6 @@
 ---
 title: Opplæringskatalog for Dynamics 365 Commerce-administratorer
-description: Finn alle opplæringsalternativene for Dynamics 365 Commerce.
+description: Finn alle opplæringsalternativene for administratorrollen i Dynamics 365 Commerce.
 author: margoc
 ms.topic: article
 ms.date: 07/23/2020
@@ -14,12 +14,12 @@ ms.search.scope: Operations
 ms.search.region: Global
 ms.search.validFrom: 2020-07-23
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 7a6e0b6103bf453b74ae485f06bf139b13bae7b2
-ms.sourcegitcommit: 58d7133ae9909fa205730e3cf4c7fd5a1d5d0b75
+ms.openlocfilehash: fc4df1c7fc47608300d705616768b6c8ef135652
+ms.sourcegitcommit: ea335b4536342e496e8b61847b1ae6da3924f94c
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "3793399"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "3821210"
 ---
 # <a name="learning-catalog-for-dynamics-365-commerce-administrators"></a>Opplæringskatalog for Dynamics 365 Commerce-administratorer
 
@@ -37,9 +37,9 @@ Katalogen nedenfor er ordnet fra kjernekunnskap til bestemte områder, og fra de
 
 ## <a name="commerce"></a>Commerce<a name="commerce"></a>
 
-| Innhold  | beskrivelse  | Formater  | Lengde    |
+| Innhold  | beskrivelse  | Format  | Lengde    |
 |---------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------|-----------|---------------------------------------------------------------------------|
-| [Distribuere Dynamics 365 Commerce](https://docs.microsoft.com/learn/paths/deploy-dynamics-365-commerce/)                                    | Dette læreprogrammet beskriver hvordan du distribuerer Dynamics 365 Commerce-miljøer og utfører trinn etter klargjøring for vellykkede Commerce-implementeringer ved hjelp av riktig topologi for forhandlers forretningsbehov.                               | Gratis, selvbetjent elektronisk læringsforløp | 5 timer   |
+| [Distribuere og utvide Dynamics 365 Commerce](https://docs.microsoft.com/learn/paths/deploy-dynamics-365-commerce/) | Dette læreprogrammet beskriver hvordan du distribuerer Dynamics 365 Commerce-miljøer og utfører trinn etter klargjøring for vellykkede Commerce-implementeringer ved hjelp av riktig topologi for forhandlers forretningsbehov. | Gratis, selvbetjent elektronisk læringsforløp | 5 timer   |
 | [Konfigurere og bruke salgssted (POS) i Dynamics 365 Commerce](https://docs.microsoft.com/learn/paths/configure-use-pos-commerce/)         | Transaksjonsdata opprettes ved salgsstedet (POS) og lastes deretter opp til Dynamics 365 Commerce Headquarters for behandling. Dette læreprogrammet beskriver hvordan du installerer og aktiverer POS, i tillegg til hvordan du oppretter daglige transaksjoner i POS. | Gratis, selvbetjent elektronisk læringsforløp | 4.5 timer |
 | [Konfigurere og arbeide med telefonsentre i Dynamics 365 Commerce](https://docs.microsoft.com/learn/paths/configure-work-call-centers-commerce/) | Dynamics 365 Commerce er en omnikanalløsning som leverer en telefonsenterkanal med muligheter til spesifikke standardinnstillinger for ordrebehandling og data som brukes som standard i salgsordrene som opprettes av telefonsenterbrukere.                                  | Gratis, selvbetjent elektronisk læringsforløp | 2 timer   |
 

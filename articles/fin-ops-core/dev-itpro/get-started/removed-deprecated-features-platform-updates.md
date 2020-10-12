@@ -3,7 +3,7 @@ title: Fjernede eller avskrevne Platform-funksjoner
 description: Dette emnet beskriver funksjoner som er fjernet eller som er planlagt for fjerning i plattformoppdateringer av Finance and Operations-apper.
 author: sericks007
 manager: AnnBe
-ms.date: 09/11/2020
+ms.date: 09/17/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: b2d54cfaddc1697eda543952831e745182df2753
-ms.sourcegitcommit: 5bb36b74935ffe140367fd6ecf956b4857ad12e5
+ms.openlocfilehash: 0b78401f4c1cf289247cd2d600f097ecdf6a712c
+ms.sourcegitcommit: 084eda1d5503be83e97e2e428e67ef5393535fab
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/14/2020
-ms.locfileid: "3803145"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "3819895"
 ---
 # <a name="removed-or-deprecated-platform-features"></a>Fjernede eller avskrevne Platform-funksjoner
 
@@ -34,6 +34,22 @@ Dette emnet beskriver funksjoner som er fjernet eller som er planlagt for fjerni
 Denne listen er ment å hjelpe deg med å vurdere disse fjerningene og avskrivningene for din egen planlegging. 
 
 Detaljert informasjon om objekter i Finance and Operations-apper finnes i [Tekniske referanserapporter](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep). Du kan sammenligne de ulike versjonene av disse rapportene for å lære om objekter som er endret eller fjernet i hver versjon av Finance and Operations-apper.
+
+## <a name="platform-updates-for-version-10014-of-finance-and-operations-apps"></a>Plattformoppdateringer for versjon 10.0.14 av Finance and Operations-apper
+
+> [!NOTE]
+> Versjon 10.0.14 er en forhåndsversjon. Innholdet og funksjonaliteten kan bli endret. Hvis du vil ha mer informasjon om forhåndsversjoner, kan du se [Tilgjengelighet av serviceoppdatering](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/public-preview-releases).
+
+
+### <a name="online-users-page"></a>Siden Påloggede brukere 
+
+|   |  |
+|------------|--------------------|
+| **Årsak til avskrivning/fjerning** | Dette er en eldre side som ble bygd for tidligere klient/server-arkitektur. Informasjonen på denne siden er ikke alltid nøyaktig, noe som kan være forvirrende og villedende. |
+| **Erstattet med en annen funksjon?**   | Vi viser en ny side i en fremtidig oppdatering.|
+| **Berørte produktområder**         | Systemadministrasjon |
+| **Distribusjonsalternativ**              | Alle |
+| **Status**                         | Innen oktober 2021 blir dette skjemaet fjernet.   |
 
 ## <a name="platform-updates-for-version-10013-of-finance-and-operations-apps"></a>Plattformoppdateringer for versjon 10.0.13 av Finance and Operations-apper
 

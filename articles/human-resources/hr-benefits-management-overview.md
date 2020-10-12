@@ -3,7 +3,7 @@ title: Oversikt over fordelsbehandling
 description: Oversikt over funksjonen Fordelsbehandling i Dynamics 365 Human Resources. Gi de ansatte utvidede fordelsalternativer med en brukervennlig Internett-opplevelse.
 author: andreabichsel
 manager: AnnBe
-ms.date: 07/16/2020
+ms.date: 09/17/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 1043fb18c33e5ec0cde13008b168fd317c7c7be6
-ms.sourcegitcommit: 9dc5c7dd5877cc6e7cd0059d173bcd8052ba13bc
+ms.openlocfilehash: e2e8fcdd0b6124b459c4dc073e2929418d18bcc5
+ms.sourcegitcommit: 084eda1d5503be83e97e2e428e67ef5393535fab
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 07/16/2020
-ms.locfileid: "3599386"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "3819771"
 ---
 # <a name="benefits-management-overview"></a>Oversikt over Fordelsbehandling
 
@@ -41,15 +41,9 @@ For å være konkurransedyktig må du tilby et stort utvalg av fordeler for å t
 
 Hvis du vil ha tilgang til demonstrasjonsdataene, må du distribuere sandkassemiljøet på nytt.
 
-## <a name="benefits-management-known-issues"></a>Kjente problemer med Fordelsbehandling
-
-### <a name="flex-credit-programs"></a>Fleksikredittprogrammer
-
-Den totale kredittverdien som er definert for et fleksibelt kredittprogram, vises ikke i skjemaet **Fordelsplaner for arbeider**. Hvis du angir at et fleksibelt kredittprogram skal ha fordelingsregelen **Ingen**, får du også en feil i skjemaet **Fordelsplan for arbeider** når du velger og bekrefter planer.
-
 ## <a name="enable-benefits-management"></a>Aktivere Fordelsbehandling
 
-Denne artikkelen beskriver hvordan du aktiverer funksjoner i Human Resources. Den forteller også hvilke eksisterende funksjoner i Human Resources som Fordelsbehandling erstatter, eller som deaktiveres når du aktiverer Fordelsbehandling.
+Dette emnet beskriver hvordan du aktiverer funksjoner i Human Resources. Den forteller også hvilke eksisterende funksjoner i Human Resources som Fordelsbehandling erstatter, eller som deaktiveres når du aktiverer Fordelsbehandling.
 
 > [!IMPORTANT]
 > Du kan ikke deaktivere Fordelsbehandling i et **produksjonsmiljø** etter at du har aktivert det. Vi anbefaler at du aktiverer og tester Fordelsbehandling i et **Sandkasse**-miljø før du aktiverer det i et **Produksjon**-miljø. Det er store forskjeller mellom den eldre Fordel-funksjonaliteten og den nye Fordelsbehandling-funksjonaliteten, som krever ekstra oppsett, og som bør testes før den blir satt i produksjon.

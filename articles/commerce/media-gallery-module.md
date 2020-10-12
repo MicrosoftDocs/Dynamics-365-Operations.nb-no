@@ -3,7 +3,7 @@ title: Mediegallerimodul
 description: Dette emnet dekker mediegallerimoduler og beskriver hvordan du legger dem til på områdesider i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
-ms.date: 07/31/2020
+ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: 9df2b91b0a57c73e395242f840c423fa8c7f2c9f
-ms.sourcegitcommit: 629988f1a704d62648d98649056931b8c33b9e08
+ms.openlocfilehash: 647387bafe8866cb1bee8c57675629af796f33e6
+ms.sourcegitcommit: 8028fbc5b9585e87d3331ea02577ff82ede090af
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/14/2020
-ms.locfileid: "3811164"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "3817188"
 ---
 # <a name="media-gallery-module"></a>Mediegallerimodul
 
@@ -97,10 +97,10 @@ Følg disse trinnene for å legge til en mediegallerimodul på en markedsføring
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 
-[Startpakke, oversikt](starter-kit-overview.md)
+[Oversikt over modulbibliotek](starter-kit-overview.md)
 
 [Kjøpsboksmodul](add-buy-box.md)
 
-[Containermodul](add-container-module.md)
+[Beholdermodul](add-container-module.md)
 
 [Laste opp bilder](dam-upload-images.md)

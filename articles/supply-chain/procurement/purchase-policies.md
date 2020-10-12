@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6c46c4c060d61503779726c68d32449c87b441f1
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 7f170fc501e995bf9497d86501f4e086e486d0fb
+ms.sourcegitcommit: 8fe59d216154dbed1208274f44707465b668a8e0
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3207908"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "3830755"
 ---
 # <a name="purchasing-policies-overview"></a>Oversikt over innkjøpspolicyer
 
@@ -102,9 +102,9 @@ Regelen for tilbudsforespørsel for innkjøpsrekvisisjon definerer kriterier for
 
 ### <a name="purchase-requisition-control-rule"></a>Kontrollregel for innkjøpsrekvisisjon
 
-Kontrollregel for innkjøpsrekvisisjon er en valgfri regel. Når du oppretter reglene av denne typen, kan du angi alternativer i forskjellige kategorier:
+Kontrollregelen for innkjøpsrekvisisjon for rekvisisjoner av typen **forbruk** er en valgfri regel. Når du oppretter reglene av denne typen, kan du angi alternativer i forskjellige kategorier:
 
--   I **Oppstart av arbeidsflyt** kategorien kan du konfigurere feltene som må registreres i rekvisisjonslinjen for rekvisisjonen som skal sendes til godkjenning når rekvisisjonsformålet er **Forbruk**.
+-   I **Oppstart av arbeidsflyt**-kategorien kan du konfigurere feltene som må registreres i rekvisisjonslinjen for rekvisisjonen som skal sendes til godkjenning.
 -   I kategorien **Ordreantall** kan du konfigurere feltene som er nødvendige på innkjøpsrekvisisjonen i visse tilfeller. Du kan også bruke ordreantall.
 -   I kategorien **Datoer** kan du konfigurere om Regnskapsdatoen er lik ønsket dato
 -   I kategorien **Adresse** kan du definere om brukeren har tillatelse til å opprette nye adresser i systemet som skal gjelde for innkjøpsrekvisisjonen.

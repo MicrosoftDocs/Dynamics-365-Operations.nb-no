@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-01-27
-ms.openlocfilehash: a2ca0ce277a062c8d525b6a3619eaf1b0114667b
-ms.sourcegitcommit: 18c5ef10e311f3dd2dbf45c6439ae6beff921af8
+ms.openlocfilehash: 6fe42f43277448dc5918597ed8bb1b68f2266b6a
+ms.sourcegitcommit: 4ba10abe5be8a21b95370cd970a622e954970984
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/24/2020
-ms.locfileid: "3719270"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "3829218"
 ---
 # <a name="prospect-to-cash-in-dual-write"></a>Kundeemne til kontanter i dobbel skriving
 
@@ -99,29 +99,7 @@ Hvis du synkroniserer fra Supply Chain Management til Sales, får du følgende r
 
 ## <a name="dual-write-solution-for-sales"></a>Løsning for dobbel skriving for Sales
 
-Nye felt er lagt til enheten **Ordre** og vises på siden. De fleste av disse feltene vises i kategorien **Integrering** i Sales. Det finnes noen få spesielle felt:
-
-+ Feltet **Behandlingsstatus** viser behandlingsstatus for en ordre i Supply Chain Management. Dette feltet er låst, og viser bare statusen for ordren fra Supply Chain Management. Følgende verdier er tilgjengelige:
-
-    + **Aktiv** – Status etter at ordren er aktivert i Sales ved hjelp av **Aktiver**-knappen.
-    + **Bekreftet**
-    + **Levert**
-    + **Fakturert**
-    + **Delvis levert**
-    + **Delvis fakturert**
-    + **Plukket**
-    + **Annullert**
-
-    Følgende tabell viser hvordan behandlingsstatusen er tilordnet til verdien **CRM-statuskode**.
-
-    | Behandlingsstatus           | CRM-statuskode    |
-    |-----------------------------|--------------------|
-    | Aktivt                      | Ny/ventende/på vent |
-    | Bekreftet/plukket            | Pågår        |
-    | Delvis levert         | Delvis            |
-    | Levert                   | Komplett           |
-    | Fakturert/delvis fakturert | Fakturert           |
-    | Annullert                    | Ingen penger           |
+Nye felt er lagt til enheten **Ordre** og vises på siden. De fleste av disse feltene vises i kategorien **Integrering** i Sales. Hvis du vil ha mer informasjon om hvordan statusfeltene tilordnes, kan du gå til dokumentasjonsemnet for å [definere tilordningen for salgsordrestatusfeltene](https://review.docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/sales-status-map?branch=robin-dw-status-map)
 
 + Knappene **Opprett faktura** og **Avbryt ordre** på **Salgsordre**-siden er skjult i Sales.
 + **Salgsordrestatus**-verdien vil fortsatt være **Aktiv** for å sikre at endringer fra Supply Chain Management kan flyte fra salgsordren i Sales. Dette kontrolleres ved å sette standardverdien **Statuskode \[Status\]** til **Aktiv**.

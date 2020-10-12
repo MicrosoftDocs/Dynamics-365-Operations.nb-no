@@ -3,7 +3,7 @@ title: Rutenettfunksjoner
 description: Dette emnet beskriver flere kraftfulle funksjoner i rutenettkontrollen. Den nye rutenettfunksjonen må være aktivert for at du skal kunne få tilgang til disse funksjonene.
 author: jasongre
 manager: AnnBe
-ms.date: 08/31/2020
+ms.date: 09/22/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: b4efad8423ab42bf6f7f6e2d1054307c11d31d2c
-ms.sourcegitcommit: 241ada0945c72d769eaa70ae35aedbb6a3233fdf
+ms.openlocfilehash: 1f1c27444b38360072beb5277c445161983a2480
+ms.sourcegitcommit: 28a771d81322e72d88db63a20ff360de084a6087
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "3760405"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "3835092"
 ---
 # <a name="grid-capabilities"></a>Rutenettfunksjoner
 
@@ -33,6 +33,7 @@ Den nye rutenettkontrollen tilgjengeliggjør en rekke nyttige og kraftfulle funk
 -  Skriving i forkant av systemet
 -  Evaluering av matematiske uttrykk 
 -  Grupperetabelldata (aktivert separat ved hjelp av **funksjonen (Forhåndsvisning) Gruppering i rutenett**)
+-  Låste systemkolonner
 
 ## <a name="calculating-totals"></a>Beregner totaler
 I Finance and Operations-apper har brukere muligheten til å se totalverdier nederst i numeriske kolonner i rutenett. Disse totalverdiene vises i en bunntekstinndeling nederst i rutenettet. 
@@ -119,12 +120,19 @@ På samme måte som du kan merke (eller oppheve) alle radene i rutenettet ved å
 ### <a name="hiding-column-names"></a>Skjule kolonnenavn
 Når du grupperer data, er standard virkemåte å vise kolonnenavnet i topptekstraden for gruppe. Fra og med versjon 10.0.14/plattformoppdatering 38, kan du velge å skjule kolonnenavnet i topptekstrader for gruppe ved å velge **Alternativer for rutenett** > **Skjul gruppekolonnenavn**.
 
+## <a name="pinned-system-columns"></a>Låste systemkolonner
+Radvelgingskolonnen og radstatuskolonnen i i det nye rutenettet er låst, eller frosset, på venstre side av rutenettet. Når disse kolonnene er inkludert i et rutenett, vil de alltid være synlige for brukeren, uavhengig av den vannrette rulleplasseringen i rutenettet.   
+
 ## <a name="frequently-asked-questions"></a>Vanlige spørsmål
 ### <a name="how-do-i-enable-the-new-grid-control-in-my-environment"></a>Hvordan aktiverer jeg den nye rutenettkontrollen i miljøet? 
 
-**10.0.9/Platform Update 33 og senere** Funksjonen **Ny rutenettkontroll** er tilgjengelig direkte i funksjonsbehandling i et hvilket som helst miljø. I likhet med andre forhåndsvisningsfunksjoner er aktivering av denne funksjonen i produksjonen underlagt [Ekstra vilkår for bruksavtalen](https://go.microsoft.com/fwlink/?linkid=2105274).  
+**10.0.9 / Platform update 33 og senere**
 
-**10.0.8 / Platform Update 32 og 10.0.7 / Platform Update 31** Funksjonen **Ny rutenettkontroll** kan aktiveres i lag 1 (dev/test) og lag 2 (sandkasse) for å ytterligere testing og utformingsendringer ved å følge fremgangsmåten nedenfor.
+Funksjonen **Ny rutenettkontroll** er tilgjengelig direkte i funksjonsbehandling i et hvilket som helst miljø. I likhet med andre forhåndsvisningsfunksjoner er aktivering av denne funksjonen i produksjonen underlagt [Ekstra vilkår for bruksavtalen](https://go.microsoft.com/fwlink/?linkid=2105274).  
+
+**10.0.8 / Platform update 32 og 10.0.7 / Platform update 31**
+
+Funksjonen **Ny rutenettkontroll** kan aktiveres i lag 1 (dev/test) og lag 2 (sandkasse) for å ytterligere testing og utformingsendringer ved å følge fremgangsmåten nedenfor.
 
 1.  **Aktiver testversjonen**: Kjør følgende SQL-setning: 
 
@@ -139,11 +147,14 @@ Når du grupperer data, er standard virkemåte å vise kolonnenavnet i topptekst
 Alle etterfølgende brukerøkter starter med at den nye rutenettkontrollen er aktivert.
 
 ## <a name="developer-opting-out-individual-pages-from-using-the-new-grid"></a>[Utvikler] Velge bort enkeltsider fra å bruke det nye rutenettet 
-Hvis organisasjonen oppdager en side der det er noen problemer med å bruke det nye rut nettet, er det tilgjengelig et API for å tillate at et enkelt skjema bruker den gamle rutenettkontrollen samtidig som resten av systemet brukes til å utnytte den nye rutenettkontrollen. Hvis du vil velge bort en enkelt side fra det nye rutenettet, legger du til følgende oppkallspost `super()` i skjemaets `run()`-metode.
+Hvis organisasjonen oppdager en side der det er noen problemer med å bruke det nye rutenettet, er det tilgjengelig et API fra og med versjon 10.0.13 / Platform update 37 for å tillate at et enkelt skjema bruker den gamle rutenettkontrollen samtidig som resten av systemet brukes til å utnytte den nye rutenettkontrollen. Hvis du vil velge bort en enkelt side fra det nye rutenettet, legger du til følgende oppkallspost `super()` i skjemaets `run()`-metode.
 
  ```this.forceLegacyGrid();```
 
-Dette API-et støttes til oktober 2021-versjonen når den nye rutenettkontrollen blir obligatorisk. Rapporter eventuelle problemer til Microsoft som krever at dette API-et skal brukes. 
+Dette API-et støttes til oktober 2021-versjonen når den nye rutenettkontrollen blir obligatorisk. Hvis problemer gjør at denne APIen brukes, rapporterer du dem til Microsoft.
+
+## <a name="developer-size-to-available-width-columns"></a>[Utvikler] Skaler-til-tilgjengelig-bredde-kolonner
+Hvis en utvikler setter egenskapen **WidthMode** til **SizeToAvailable** for kolonner i det nye rutenettet, har disse kolonnene i utgangspunktet samme bredde som de ville ha hvis egenskapen ble satt til **SizeToContent**. De kan imidlertid strekke seg for å bruke en eventuell ekstra tilgjengelig bredde i rutenettet. Hvis egenskapen er satt til **SizeToAvailable** for flere kolonner, deler alle disse kolonnene tilgjengelig ekstra bredde i rutenettet. Hvis en bruker imidlertid endrer størrelsen på en av disse kolonnene manuelt, blir kolonnen statisk. Den blir stående i denne bredden, og strekker seg ikke lenger til å bruke ekstra tilgjengelig rutenettbredde.  
 
 ## <a name="known-issues"></a>Kjente problemer
 Denne delen inneholder en liste over kjente problemer for den nye rutenettkontrollen mens funksjonen er i en forhåndsvisningstilstand.  

@@ -3,7 +3,7 @@ title: Visuelle konfigurasjoner av POS-brukergrensesnittet
 description: Dette emnet inneholder informasjon om skjermoppsett for Dynamics 365 Commerce POS-opplevelser.
 author: boycezhu
 manager: annbe
-ms.date: 04/14/2020
+ms.date: 09/22/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -16,15 +16,15 @@ ms.custom: 90573
 ms.assetid: a6868f93-02ed-4928-9f6a-3b7383e7e399
 ms.search.region: global
 ms.search.industry: Retail
-ms.author: boycezhu
+ms.author: boycez
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: a037c8514d7838b3a4797f21b3ef3f6d5736e840
-ms.sourcegitcommit: f7294160d18f15cb762c24f2459b4f0887c37541
+ms.openlocfilehash: 75bce16c5e1b0898a0284659f9ce5e4716a93049
+ms.sourcegitcommit: 91e101d7a51a8b63bd196ec80e9224e5e6e6fc95
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "3505640"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "3834215"
 ---
 # <a name="pos-user-interface-visual-configurations"></a>Visuelle konfigurasjoner av POS-brukergrensesnittet
 
@@ -62,6 +62,8 @@ Visuelle profiler tilordnes til kasser, og de brukes til å angi de visuelle ele
 > [!NOTE]
 > **Høyre** oppsett og visning av dato/klokkeslett gjelder ikke for påloggingsskjermen i kompakt visning.
 
+Du må kjøre distribusjonsplanjobben **1090** (**Registre**) for å synkronisere de siste visuelle profilkonfigurasjonene til kanaldatabasen.
+
 ## <a name="screen-layouts"></a>Skjermoppsett
 
 Oppsett for skjermkonfigurasjoner bestemmer handlinger, innhold og plassering av brukergrensesnittkontroller i **velkomstskjermen** og **Transaksjon**-skjermbildet for salgsstedet.
@@ -81,6 +83,8 @@ Oppsett for skjermkonfigurasjoner bestemmer handlinger, innhold og plassering av
 ### <a name="assignment"></a>Tildeling
 
 Skjermoppsett kan tilordnes på butikk-, kasse- eller brukernivå. Brukertildelingen overstyrer kasse- og butikktildelinger, og kassetildelingen overstyrer butikktildelingen. I et enkelt scenario der alle brukere bruker det samme oppsettet uavhengig av kasse eller rolle, kan skjermoppsett bare angis for butikknivået. I scenarier der bestemte kasser eller brukere krever spesialisert oppsett, kan oppsettene tilordnes.
+
+Avhengig av hvilket nivå skjermoppsettene er tilordnet, må du kjøre distribusjonsplanjobbene **1070** (**Kanalkonfigurasjon**), **1090** (**Registre**) og/eller **1060** (**Stab**) for å synkronisere de siste konfigurasjonene av skjermoppsett til kanaldatabasen.
 
 ### <a name="layout-sizes"></a>Oppsettstørrelser
 

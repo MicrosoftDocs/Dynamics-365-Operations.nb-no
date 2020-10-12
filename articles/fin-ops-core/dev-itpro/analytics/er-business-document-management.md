@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-08-01
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 5a57b96387ca5746a30b2e438d6b5f0ce3040f54
-ms.sourcegitcommit: 728cd7f723ee821337eee315a27977e99a44d9d3
+ms.openlocfilehash: 65874e5ca73c18c3df7b94b8abb6eb15491482bf
+ms.sourcegitcommit: 71ec2f48185b8104ca52ff70df52263ce5f87f26
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/11/2020
-ms.locfileid: "3258563"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "3893141"
 ---
 # <a name="business-document-management-overview"></a>Oversikt over administrasjon av forretningsdokument
 
@@ -31,7 +31,7 @@ ms.locfileid: "3258563"
 
 Forretningsbrukere bruker [rammeverket for elektronisk rapportering (ER)](general-electronic-reporting.md) til å konfigurere formater for utgående dokumenter i overensstemmelse med de lovlige kravene i ulike land. Brukere kan også definere dataflyt for å angi hvilke programdata som skal plasseres i genererte dokumenter. ER-rammeverket genererer utgående dokumenter i Microsoft Office-formater (Excel-arbeidsbøker eller Word-dokumenter) ved å bruke forhåndsdefinerte maler. Malene fylles ut med nødvendige data i samsvar med konfigurert dataflyt mens påkrevde dokumenter genereres. Hvert konfigurerte format kan publiseres som en del av en ER-løsning for å generere bestemte utgående dokumenter. Dette representeres av en ER-formatkonfigurasjon som kan inneholde maler du kan bruke til å generere forskjellige utgående dokumenter. Forretningsbrukere kan bruke dette rammeverket til å administrere nødvendige forretningsdokumenter.
 
-**Administrasjon av forretningsdokument** er bygd på toppen av ER-rammeverket og gjør det mulig for bedriftsbrukere å redigere dokumentmaler ved hjelp av Microsoft Office 365-tjenesteprogram eller passende Microsoft Office-skrivebordsprogram. Endringer i dokumentene kan inkludere endring av forretningsdokumentutforminger og tillegg av plassholdere for tilleggsdata uten kildekodeendringer og nye distribusjoner. Det er ikke nødvendig å ha kjennskap til ER-rammeverket for å oppdatere maler for forretningsdokumenter.
+**Administrasjon av forretningsdokument** er bygd på toppen av ER-rammeverket og gjør det mulig for bedriftsbrukere å redigere dokumentmaler ved hjelp av Microsoft 365-tjenesteprogram eller passende Microsoft Office-skrivebordsprogram. Endringer i dokumentene kan inkludere endring av forretningsdokumentutforminger og tillegg av plassholdere for tilleggsdata uten kildekodeendringer og nye distribusjoner. Det er ikke nødvendig å ha kjennskap til ER-rammeverket for å oppdatere maler for forretningsdokumenter.
 
 > [!NOTE]
 > Vær oppmerksom på at administrasjon av forretningsdokument lar deg endre maler som brukes til å produsere forretningsdokumenter, for eksempel bestillinger, fakturaer osv. Når en mal er endret og en ny versjon av den har blitt publisert, brukes denne versjonen til å generere nødvendige forretningsdokumenter. Administrasjon av forretningsdokument kan ikke brukes til å endre forretningsdokumenter som allerede er generert.
@@ -170,7 +170,7 @@ Bruk fremgangsmåten nedenfor til å definere de grunnleggende parameterne for a
 Den valgte dokumenttypen er firmaspesifikk og vil bli brukt når brukeren arbeider med administrasjon av forretningsdokument i firmaet som den valgte dokumenttypen er konfigurert for. Når brukeren arbeider med administrasjon av forretningsdokument i et annet firma, vil den samme valgte dokumenttypen bli brukt hvis det ikke er definert en dokumenttype for dette firmaet. Når en dokumenttype er konfigurert, blir den brukt i stedet for den som er valgt i feltet **SharePoint-dokumenttype**.
 
 > [!NOTE]
-> **SharePoint-dokumenttype**-parameteren definerer en SharePoint-mappe som midlertidig lagringsplass for maler som kan redigeres ved å bruke Microsoft Excel eller Word. Du må definere denne parameteren hvis du har tenkt å bruke disse Office-skrivebordsapplikasjonene til å redigere maler. Hvis du vil ha mer informasjon, kan du se [Redigere en mal i Office-skrivebordsapplikasjonen](#EditInOfficeDesktopApp). Du kan la denne parameteren være tom hvis du planlegger å endre malen ved bare å bruke funksjonaliteten i Office 365. Hvis du vil ha mer informasjon, kan du se [Redigere en mal i Office 365](#EditInOffice365).
+> **SharePoint-dokumenttype**-parameteren definerer en SharePoint-mappe som midlertidig lagringsplass for maler som kan redigeres ved å bruke Microsoft Excel eller Word. Du må definere denne parameteren hvis du har tenkt å bruke disse Office-skrivebordsapplikasjonene til å redigere maler. Hvis du vil ha mer informasjon, kan du se [Redigere en mal i Office-skrivebordsapplikasjonen](#EditInOfficeDesktopApp). Du kan la denne parameteren være tom hvis du planlegger å endre malen ved bare å bruke funksjonaliteten i Microsoft 365. Hvis du vil ha mer informasjon, kan du se [Redigere en mal i Microsoft 365](#EditInOffice365).
 
 ## <a name="configure-access-permissions"></a>Konfigurere tilgangstillatelser
 
@@ -295,13 +295,13 @@ Alternativet **Rediger mal** er tilgjengelig for den valgte malen. Dette alterna
 
 5. Velg **OK** for å bekrefte starten på redigeringsprosessen.
 
-Siden **BDM-malredigering** åpnes. Den valgte malen vil være tilgjengelig for elektronisk redigering ved hjelp av Office 365.
+Siden **BDM-malredigering** åpnes. Den valgte malen vil være tilgjengelig for elektronisk redigering ved hjelp av Microsoft 365.
 
 ![Arbeidsområdesiden Administrasjon av forretningsdokument](./media/BDM-Overview-EditingLayout1.png)
 
-### <a name=""></a><a name="EditInOffice365">Redigere en mal i Office 365</a>
+### <a name=""></a><a name="EditInOffice365">Redigere en mal i Microsoft 365</a>
 
-Du kan endre malen ved å bruke Office 365. I Office Online kan du for eksempel endre skrifttypen til feltledetekstene i maloverskriften fra **Vanlig** til **Fet**. Disse endringene lagres automatisk i den redigerbare malen som er lagret i den primære malens lagringsplass (som standard Azure Blob-lagring). Dette er konfigurert for ER-rammeverket.
+Du kan endre malen ved å bruke Microsoft 365. I Office Online kan du for eksempel endre skrifttypen til feltledetekstene i maloverskriften fra **Vanlig** til **Fet**. Disse endringene lagres automatisk i den redigerbare malen som er lagret i den primære malens lagringsplass (som standard Azure Blob-lagring). Dette er konfigurert for ER-rammeverket.
 
 ![Side for redigering av mal for administrasjon av forretningsdokument](./media/BDM-Overview-EditingLayout2.png)
 
@@ -398,10 +398,10 @@ Når du redigerer malen fra et ER-format som eies av gjeldende aktive leverandø
 
 ## <a name="frequently-asked-questions"></a>Vanlige spørsmål
 
-#### <a name="i-selected-edit-document-but-instead-of-opening-the-bdm-template-editor-page-in-finance-and-operations-i-have-been-sent-to-the-office-365-web-page"></a>Jeg valgte **Rediger dokument**, men i stedet for å åpne **BDM-malredigeringsprogram**-siden i Finance and Operations, ble jeg sendt til Office 365-nettstedet.
-Dette er et kjent problem med Office 365-omdirigeringen. Dette skjer når du logger på Office 365 for første gang. Du omgår dette problemet ved å velge **Tilbake**-knappen i nettleseren for å navigere tilbake.
+#### <a name="i-selected-edit-document-but-instead-of-opening-the-bdm-template-editor-page-in-finance-and-operations-i-have-been-sent-to-the-microsoft-365-web-page"></a>Jeg valgte **Rediger dokument**, men i stedet for å åpne **BDM-malredigeringsprogram**-siden i Finance and Operations, ble jeg sendt til Microsoft 365-nettstedet.
+Dette er et kjent problem med Microsoft 365-omdirigeringen. Dette skjer når du logger på Microsoft 365 for første gang. Du omgår dette problemet ved å velge **Tilbake**-knappen i nettleseren for å navigere tilbake.
 
-#### <a name="i-understand-how-to-edit-a-template-by-using-office-365-in-the-first-application-session-and-how-to-use-the-template-in-the-second-application-session-adjusting-the-template-to-see-how-my-changes-affect-the-generated-business-document-can-i-do-this-using-the-office-desktop-application"></a>Jeg forstår hvordan jeg redigerer en mal ved hjelp av Office 365 i den første programøkten, og hvordan jeg bruker malen i den andre programøkten til å justere malen for å se hvordan endringene påvirker det genererte forretningsdokumentet. Kan jeg gjøre dette ved hjelp av Office-skrivebordsprogrammet?
+#### <a name="i-understand-how-to-edit-a-template-by-using-microsoft-365-in-the-first-application-session-and-how-to-use-the-template-in-the-second-application-session-adjusting-the-template-to-see-how-my-changes-affect-the-generated-business-document-can-i-do-this-using-the-office-desktop-application"></a>Jeg forstår hvordan jeg redigerer en mal ved hjelp av Microsoft 365 i den første programøkten, og hvordan jeg bruker malen i den andre programøkten til å justere malen for å se hvordan endringene påvirker det genererte forretningsdokumentet. Kan jeg gjøre dette ved hjelp av Office-skrivebordsprogrammet?
 Ja, det kan du. Velg **Åpne i skrivebordsprogram** i den første programøkten. Malen vil bli lagret i den midlertidige fillagringen og åpnes i Office-skrivebordsprogrammet. Deretter fullfører du følgende trinn for å forhåndsvise malendringene i det genererte forretningsdokumentet:
 
 1. Utfør endringer i malen ved hjelp av Office-skrivebordsprogrammet.

@@ -3,7 +3,7 @@ title: Opprette ER-konfigurasjoner i RCS og laste dem opp til det globale reposi
 description: Dette emnet forklarer hvordan du oppretter en konfigurasjon for elektronisk rapportering (ER) i Microsoft RCS (Regulatory Configuration Services) og laster den opp til det globale repositoriet.
 author: JaneA07
 manager: AnnBe
-ms.date: 05/05/2020
+ms.date: 09/21/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-02-01
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: 0e194a8b777f984412d81e315f92ab4bb8a3b0c9
-ms.sourcegitcommit: 204cec8ca2a6c4474d21dbcd408e369131a47856
+ms.openlocfilehash: 5b2b8f35b9931f8fd1824c20e9045da68af33ad5
+ms.sourcegitcommit: 91e101d7a51a8b63bd196ec80e9224e5e6e6fc95
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "3371261"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "3834239"
 ---
 # <a name="create-er-configurations-in-regulatory-configuration-services-rcs-and-upload-them-to-the-global-repository"></a>Opprette ER-konfigurasjoner i Regulatory Configuration Services (RCS) og laste dem opp til det globale repositoriet
 
@@ -54,7 +54,7 @@ Hvis et RCS-miljø allerede er klargjort for ditt firma, bruker du URL-adressen 
 5. Angi et navn og en beskrivelse, og velg deretter **Opprett konfigurasjon** for å opprette en ny avledet versjon.
 6. Velg den nylig avledede konfigurasjonen, legg til en beskrivelse av versjonen, og velg deretter **OK**. Statusen for konfigurasjonen til er endret til **Fullført**.
 
-![Ny konfigurasjonsversjon i RCS](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/Janeaug_RCSdocs/articles/finance/localizations/media/RCS_CompleteConfig.JPG)
+![Ny konfigurasjonsversjon i RCS](media/RCS_CompleteConfig.JPG)
 
 > [!NOTE]
 > Når konfigurasjonsstatusen endres, kan du få en valideringsfeilmelding som er knyttet til de tilkoblede appene. Hvis du vil deaktivere valideringen, velger du **Brukerparametere** i kategorien **Konfigurasjoner**, og deretter setter du alternativet **Hopp over validering ved konfigurasjonens statusendring og rebasering** til **Ja** 
@@ -66,7 +66,7 @@ Hvis du vil dele en ny eller avledet konfigurasjon med organisasjonen, kan du la
 1. Velg den fullførte versjonen av konfigurasjonen, og velg deretter **Last opp til repositorium**.
 2. Velg alternativet **Globalt (Microsoft)**, og velg deretter **Last opp**.
 
-    ![Laste opp til alternativer for repositorium](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/Janeaug_RCSdocs/articles/finance/localizations/media/RCS_Upload_to_GlobalRepo_options.JPG)
+    ![Laste opp til alternativer for repositorium](media/RCS_Upload_to_GlobalRepo_options.JPG)
 
 3. Velg **Ja** i bekreftelsesboksen. 
 4. Oppdater beskrivelsen av versjonen etter behov, og velg deretter **OK**. 
@@ -74,6 +74,27 @@ Hvis du vil dele en ny eller avledet konfigurasjon med organisasjonen, kan du la
 Statusen for konfigurasjonen oppdateres til **Dele**, og konfigurasjonen lastes opp til det globale repositoriet. Derfra kan du arbeide med den på følgende måter:
 
 - Importere den til Dynamics 365-forekomsten. Hvis du vil ha mer informasjon, kan du se [(ER) Importere konfigurasjoner fra RCS](../../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md).
-- Hvis du vil dele den med en tredjepart eller en ekstern organisasjon, kan du se [RCS Dele konfigurasjoner for elektronisk rapportering (ER) med eksterne organisasjoner](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/Janeaug_RCSdocs/articles/finance/localizations/media/rcs-global-share-configuration.md)
+- Hvis du vil dele den med en tredjepart eller en ekstern organisasjon, kan du se [RCS Dele konfigurasjoner for elektronisk rapportering (ER) med eksterne organisasjoner](rcs-global-repo-share-configuration.md)
 
-![Avledet versjon av Intrastat Contoso-konfigurasjon i det globale repositoriet](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/Janeaug_RCSdocs/articles/finance/localizations/media/RCS_Config_upload_GlobalRepo.JPG)
+    ![Avledet versjon av Intrastat Contoso-konfigurasjon i det globale repositoriet](media/RCS_Config_upload_GlobalRepo.JPG)
+
+## <a name="delete-a-configuration-from-the-global-repository"></a>Slette en konfigurasjon fra det globale repositoriet
+Fullfør fremgangsmåten nedenfor for å slette en konfigurasjon som organisasjonen har opprettet.
+
+1. I arbeidsområdet **Elektronisk rapportering** kontrollerer du at konfigurasjonsleverandøren er **Aktiv**. Hvis du ha mer informasjon, kan du se [Opprette konfigurasjonsleverandører og merke dem som aktive](../../fin-ops-core/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11.md).
+2. Velg **repositorium** på den aktive konfigurasjonsleverandøren.
+3. Velg lagertypen **Global**, og velg **Åpne**.
+4. I hurtigfanen **Filter** finner du konfigurasjonen du vil slette, ved hjelp av **Filter**-funksjonaliteten.
+5. I hurtigfanen **Versjon** velger du versjonen av konfigurasjonen du vil slette, og deretter velger du **Slett**:
+
+    ![Slette en konfigurasjon fra det globale repositoriet](media/RCS_Delete_from_GlobalRepo.JPG)
+
+6. Velg **Ja** i bekreftelsesboksen.
+
+    ![Slette bekreftelsesmelding for konfigurasjonsversjon](media/RCS_Delete_from_GlobalRepo_Msg.JPG)
+ 
+Konfigurasjonsversjonen blir slettet, og bekreftelsesmeldingen vises. 
+
+> [!NOTE]
+> Konfigurasjoner kan bare slettes av konfigurasjonsleverandøren som opprettet dem. Hvis konfigurasjonen er delt med en annen organisasjon, må du oppheve delingen av konfigurasjonen før du sletter den.
+ 

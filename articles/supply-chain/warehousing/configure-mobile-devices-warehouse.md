@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6ae7587fc46d2907241a5da3b6329465d77b3555
-ms.sourcegitcommit: 8a2127c5af6cdbda30ccc1f9bef9bd4ab61e9e50
+ms.openlocfilehash: e6a3330b0123605d4c7b86cedcb8bc95b3cf6de8
+ms.sourcegitcommit: a52a789044ca66c6771224a6cf0be8749bc99e5a
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/18/2020
-ms.locfileid: "3383096"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "3837269"
 ---
 # <a name="set-up-mobile-devices-for-warehouse-work"></a>Definere mobilenheter for lagerarbeid
 
@@ -399,6 +399,9 @@ Tabellen nedenfor beskriver disse alternativene.
 <tr class="odd">
 <td>Arbeidsmalkode</td>
 <td>Velg arbeidsmalen som oppretter arbeidet for en prosess. Hvis du for eksempel mottar en vare for en bestilling, blir plasseringsarbeidet generert basert på arbeidsmalen. Hvis du ikke velger en arbeidsmal, tilordner Supply Chain Management en mal basert på spørringskriterier. Hvis du vil ha mer informasjon om arbeidsmaler, kan du se <a href="control-warehouse-location-directives.md">Kontrollere lagerarbeid ved hjelp av arbeidsmaler og lokasjonsdirektiver</a>.</td>
+<tr class="even">
+<td>Vis arbeidslinjeliste</td>
+<td>Velg et alternativ for hvordan arbeidere skal kunne vise og arbeide med linjene for det valgte plukkarbeidet. Hvis du vil ha mer informasjon om dette alternativet, kan du se <a href="pick-line-overview.md">Konfigurere et menyelement for mobil enhet for å angi en plukklinjeoversikt</a>.</td>
 </tr>
 </tbody>
 </table>

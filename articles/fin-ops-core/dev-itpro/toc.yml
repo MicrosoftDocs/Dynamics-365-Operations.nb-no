@@ -86,6 +86,8 @@
               href: data-entities/integration-overview.md
             - name: Prioritetsbasert begrensning
               hreF: data-entities/priority-based-throttling.md
+            - name: Vanlige spørsmål om prioritetsbasert begrensning
+              href: data-entities/throttling-faq.md
             - name: API-er for dataintegrering
               items:
                 - name: REST-API for databehandlingspakke
@@ -154,6 +156,8 @@
                                   href: data-entities/dual-write/enable-entity-map.md
                             - name: Overføring av valutadatatype for dobbel skriving
                               href: data-entities/dual-write/currrency-decimal-places.md
+                            - name: Definere tilordningen for salgsordrens statusfelt
+                              href: data-entities/dual-write/sales-status-map.md
                         - name: Håndtere dobbel skriving
                           items:
                             - name: Tilpasse enhets- og felttilordninger
@@ -522,7 +526,7 @@
                       href: deployment/onprem-reuseadfs.md
                 - name: Lokal agent
                   items:
-                    - name: Kompatibilitet med AD FS Office 365
+                    - name: Kompatibilitet med AD FS Microsoft 365
                       href: deployment/onprem-adfscompatibility.md
                     - name: Lokal agent og skript for distribusjon før og etter
                       href: lifecycle-services/pre-post-scripts.md
@@ -627,14 +631,12 @@
                 - name: Opplæring i utviklingsverktøy
                   href: dev-tools/introduction-visual-studio.md
                 - name: Programkontroll
-                  items:
-                    - name: Installere BaseX for programkontroll
-                      href: dev-tools/install-basex.md
+                  href: dev-tools/application-checker.md
                 - name: Programutforsker
                   href: dev-tools/application-explorer.md
                 - name: Bygge og feilsøke prosjekter
                   href: dev-tools/build-debug-project.md
-                - name: Byggeoperasjoner
+                - name: Byggoperasjoner
                   href: dev-tools/build-operations.md
                 - name: Koderedigeringsfunksjoner
                   href: dev-tools/code-editor.md
@@ -1368,6 +1370,24 @@
                       href: mobile-apps/platform/client-apis/interfaces/view-model-control-value-ivalue-ivaluedesign.md
                     - name: ValueMetadata-type
                       href: mobile-apps/platform/client-apis/interfaces/view-model-control-value-ivalue-ivaluemetadata.md
+        - name: Rammeverk for prosessautomatisering
+          items:
+            - name: Behandle rammeverkutvikling for prosessautomatisering
+              href: process-automation/process-automation-framework.md
+            - name: Typeregistrering
+              href: process-automation/type-registration.md
+            - name: Serieregistrering
+              href: process-automation/series-registration.md
+            - name: Prosessparametere
+              href: process-automation/process-parameters.md
+            - name: Spørringer som kan konfigureres av brukere
+              href: process-automation/user-queries.md
+            - name: Kjøre prosessen
+              href: process-automation/run-process.md
+            - name: Loggresultater og meldinger
+              href: process-automation/log-results.md
+            - name: Tilpasse brukergrensesnittet
+              href: process-automation/ui-customization.md
         - name: Regression Suite Automation Tool
           items:
             - name: Oversikt over Regression Suite Automation Tool
@@ -1395,7 +1415,7 @@
             - name: Utvikle og frigi
               href: lcs-solutions/lcs-solutions-app-source.md
             - name: Oppstille og publisere
-              href: lcs-solutions/marketing-content-lcs-solutions.md
+              href: /azure/marketplace/partner-center-portal/create-new-operations-offer
             - name: Legge til metodologier
               href: lcs-solutions/methodologies-lcs-solutions.md
             - name: Konfigurere biblioteker for forretningsprosessmodelerer

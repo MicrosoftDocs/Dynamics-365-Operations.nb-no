@@ -3,7 +3,7 @@ title: Oversikt over kontobehandlingssider
 description: Dette emnet gir en oversikt over kontohandlingssider i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
-ms.date: 06/30/2020
+ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 03a2ebd07c2a95198f506df3fd94c967ad0315e8
-ms.sourcegitcommit: ce397c2759f642c595e30fef58a770b50360b2bd
+ms.openlocfilehash: d0e066428e8c4717b5a50144f63e59b87089d286
+ms.sourcegitcommit: 8028fbc5b9585e87d3331ea02577ff82ede090af
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "3527614"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "3817808"
 ---
 # <a name="account-management-pages-overview"></a>Oversikt over kontobehandlingssider
 
@@ -46,7 +46,7 @@ Illustrasjonen nedenfor viser et eksempel på målsiden for kontobehandling.
 
 Siden **Min profil** viser kundens kontoinformasjon, for eksempel navn og telefonnummer. Kunden kan oppdatere profilinformasjonen sin på denne siden. Denne siden kan tilpasses slik at den omfatter flere kundekontoinnstillinger, for eksempel et alternativ for å velge å motta markedsføringse-post.
 
-Illustrasjonen nedenfor viser et eksempel på en **Min profil**-side som ble bygd ved hjelp av startpakken.
+Illustrasjonen nedenfor viser et eksempel på en **Min profil**-side som ble bygd ved hjelp av modulbiblioteket.
 
 ![Eksempel på en Min profil-side](./media/Account-Management-MyProfile.PNG)
 

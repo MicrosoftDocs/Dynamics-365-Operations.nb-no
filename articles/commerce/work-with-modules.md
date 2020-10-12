@@ -1,9 +1,9 @@
 ---
 title: Arbeide med moduler
 description: Dette emnet beskriver hvordan og når du bruker moduler i Microsoft Dynamics 365 Commerce.
-author: v-chgri
+author: phinneyridge
 manager: annbe
-ms.date: 07/31/2020
+ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -14,20 +14,19 @@ ms.reviewer: v-chgri
 ms.search.scope: Retail, Core, Operations
 ms.search.region: Global
 ms.search.industry: ''
-ms.author: phinneyridge
+ms.author: stuharg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: da430857801d8007244c04aadd325e99c0b882c5
-ms.sourcegitcommit: 078befcd7f3531073ab2c08b365bcf132d6477b0
+ms.openlocfilehash: 301eb6206fb9e02c3aa7d3c07cf368ba800a1ab9
+ms.sourcegitcommit: 97ceb24f191161ca601e0889a539df665834ac3b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 07/31/2020
-ms.locfileid: "3646021"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "3818428"
 ---
 # <a name="work-with-modules"></a>Arbeide med moduler
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
 
 Dette emnet beskriver hvordan og når du bruker moduler i Microsoft Dynamics 365 Commerce.
 
@@ -35,7 +34,7 @@ Dette emnet beskriver hvordan og når du bruker moduler i Microsoft Dynamics 365
 
 Moduler er logiske byggeblokker som utgjør sidestrukturen, og de har forskjellige formål og omfang. Noen moduler er containere på høyt nivå, og det eneste formålet er å oppbevare og organisere andre moduler (underordnede moduler). Andre moduler, for eksempel en enkel bildeplasseringsmodul, har et svært bestemt formål. Andre moduler, for eksempel en karusellmodul, faller et sted mellom disse to kategoriene.
 
-Som standard inneholder Dynamics 365 Commerce-området et startpakkemodulbibliotek som lar deg utføre de mest grunnleggende e-handelsscenarioene. Du skal kunne konstruere et ende-til-ende-område for e-handel bare ved å bruke disse modulene. Det kan imidlertid hende at du også vil tilpasse disse modulene eller bygge nye, tilpassede moduler for bestemte behov. Hvis du vil bygge egendefinerte moduler, er en modul-SDK (Software Development Kit) tilgjengelig slik at du kan opprette et egendefinert modulbibliotek.
+Som standard inneholder Dynamics 365 Commerce-området et modulbibliotek som lar deg utføre de mest grunnleggende e-handelsscenarioene. Du skal kunne konstruere et ende-til-ende-område for e-handel bare ved å bruke disse modulene. Det kan imidlertid hende at du også vil tilpasse disse modulene eller bygge nye, tilpassede moduler for bestemte behov. Hvis du vil bygge egendefinerte moduler, er en modul-SDK (Software Development Kit) tilgjengelig slik at du kan opprette et egendefinert modulbibliotek.
 
 ## <a name="container-modules-and-slots"></a>Containermoduler og -spor
 

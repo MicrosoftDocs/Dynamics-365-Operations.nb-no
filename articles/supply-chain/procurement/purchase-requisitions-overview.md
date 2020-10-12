@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e3b365bf99fcb5c97a1afe1675ddcf34a0db8f07
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: e09c4ebd3ee978076ac4f1d0b71041e7c1e954be
+ms.sourcegitcommit: b281ac04157f6ccbd159fc89f58910b430a3b6a9
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3207862"
+ms.lasthandoff: 09/21/2020
+ms.locfileid: "3826906"
 ---
 # <a name="purchase-requisition-overview"></a>Oversikt over innkjøpsrekvisisjoner
 
@@ -157,7 +157,7 @@ I noen tilfeller må du starte en prosess for tilbudsforespørsel for å identif
 Du kan sette en innkjøpsrekvisisjon på vent ved å merke av for **På vent** på siden **Detaljer om innkjøpsrekvisisjon**. Behandling av innkjøpsrekvisisjonen kan fortsette bare etter at du fjerner sperren ved å fjerne merket.  
 
 > [!NOTE]
-> I eProcurement kan tilbudsforespørselen for din innkjøpsrekvisisjon kanskje tillate at leverandører kan legge til alternative linjer. I så fall gjenspeiler innkjøpsrekvisisjonen godkjente alternativer.
+> I e-procurement kan tilbudsforespørselen for din innkjøpsrekvisisjon kanskje tillate at leverandører kan legge til alternative linjer. I så fall gjenspeiler innkjøpsrekvisisjonen godkjente alternativer.
 
 ## <a name="demand-consolidation"></a>Behovskonsolidering
 Hvis du konsoliderer innkjøpsrekvisisjonslinjer fra flere innkjøpsrekvisisjoner, kan du forbedre forhandlingsposisjonen overfor leverandører for å oppnå bedre priser, lavere kostnader ved forsendelse og behandling og lavere administrasjonskostnader.  

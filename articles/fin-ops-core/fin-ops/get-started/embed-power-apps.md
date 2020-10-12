@@ -1,9 +1,9 @@
 ---
-title: Innebygg Power Apps
-description: Dette emnet beskriver hvordan du bygger inn Power Apps i klienten for å øke produktets funksjonalitet.
+title: Bygge inn lerretsapper fra Power Apps
+description: Dette emnet forklarer hvordan du bygger inn lerretsapper fra Microsoft Power Apps i klienten for å øke produktets funksjonalitet.
 author: jasongre
 manager: AnnBe
-ms.date: 12/02/2019
+ms.date: 09/11/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -16,36 +16,39 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2018-02-28
 ms.dyn365.ops.version: Platform update 14
-ms.openlocfilehash: 90422a34499dab7302ad7722cf84d40e1815991c
-ms.sourcegitcommit: 3c1eb3d89c6ab9bd70b806ca42ef9df74cf850bc
+ms.openlocfilehash: e57e4567a80aa9f9ba5ac434b0d71204460e164f
+ms.sourcegitcommit: 71ec2f48185b8104ca52ff70df52263ce5f87f26
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "3042948"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "3893113"
 ---
-# <a name="embed-microsoft-power-apps"></a>Innebygg Microsoft Power Apps
+# <a name="embed-canvas-apps-from-power-apps"></a>Bygge inn lerretsapper fra Power Apps
 
 [!include [banner](../includes/banner.md)]
 
-Finance and Operations støtter integrering med Microsoft Power Apps, som er en tjeneste for utviklere og ikke-tekniske brukere for å lage egendefinerte forretningsprogrammer for mobilenheter, nettbrett og Internett uten å skrive kode. Power Apps utviklet av deg, din organisasjon eller det videre økosystemet kan deretter bygges i Finance and Operations-apper for å øke produktets funksjonalitet. Du kan for eksempel bygge en app fra Power Apps for å supplere en Finance and Operations-app med informasjon som hentes fra et annet system.
+Microsoft Power Apps er en tjeneste som lar utviklere og ikke-tekniske brukere lage egendefinerte forretningsprogrammer for mobilenheter, nettbrett og nettet uten å måtte skrive kode. Finance and Operations-apper støtter integrasjon med Power Apps. Lerretsapper som du, organisasjon din eller det videre økosystemet utvikler, kan bygges inn i Finance and Operations-apper for å øke produktets funksjonalitet. Du kan for eksempel bygge en lerretsapp fra Power Apps for å supplere en Finance and Operations-app med informasjon som hentes fra et annet system.
 
 Hvis du vil vite mer om innebygging av Power Apps, kan du se den korte videoen [Slik bygger du inn Power Apps](https://www.youtube.com/watch?v=x3qyA1bH-NY).
 
-## <a name="adding-an-embedded-app-from-power-apps-to-a-page"></a>Legge til en innebygd app fra Power Apps på en side
+## <a name="adding-an-embedded-canvas-app-from-power-apps-to-a-page"></a>Legge til en innebygd lerretsapp fra Power Apps på en side
 
 ### <a name="overview"></a>Oversikt
 
-Før du bygger inn en app fra Power Apps i klienten, må du først finne eller lage en app med ønskede visuelle effekter og/eller funksjonalitet. Vi beskriver ikke den detaljerte prosessen for å bygge apper her. Emnet [Innføring i Power Apps](https://docs.microsoft.com/powerapps/getting-started) er et godt utgangspunkt hvis du har erfaring med Power Apps.
+Før du bygger inn en lerretsapp fra Power Apps i klienten, må du først finne eller lage en app med ønskede visuelle effekter og/eller funksjonalitet. Dette emnet inneholder ikke en detaljert beskrivelse av prosessen for bygging av apper. Hvis du ikke har brukt Power Apps, se [Power Apps-dokumentasjonen](https://docs.microsoft.com/powerapps/).
 
-Når du er klar til å bygge inn en bestemt app, kan du velge blant to måter å få tilgang til appen på, på en side, uansett hvilken måte som passer deg best. Den første måten er via Power Apps-knappen som er lagt til i standardhandlingsruten. Apper som er lagt til med denne mekanismen, vises som menyelementer på Power Apps-menyknappen. Når disse menyelementene er valgt, åpnes hvert av dem sideruter som inneholder den innebygde appen. Du kan også velge å bygge inn en app direkte på en side som en ny fane, hurtigfane, blad eller som en ny inndeling i et arbeidsområde.
+Det finnes to måter å få tilgang til en bestemt lerretsapp på en side når du er klar til å bygge inn appen. Du kan velge den metoden som passer best til ditt scenario. Den første måten er via **Power Apps**-knappen som er lagt til i standardhandlingsruten. Apper du legger til ved hjelp av denne fremgangsmåten, vises som elementer på **Power Apps**-menyknappen. Når du velger et av disse elementene, vises en siderute som inneholder den innebygde appen. Du kan også bygge inn en app direkte på en side som en ny fane, hurtigfane eller blad eller som en ny inndeling i et arbeidsområde.
 
-Når du konfigurerer den innebygde appen, kan du velge ett felt du vil sende som kontekst til appen. Dette gjør at appen kan svare på grunnlag av dataene som vises nå.
+Når du konfigurerer den innebygde lerretsappen, kan du velge ett felt du vil sende som kontekst til appen. Dette trinnet gjør at appen kan svare på grunnlag av dataene som vises nå.
+
+> [!NOTE]
+> Du kan for øyeblikket ikke bruke denne mekanismen til å bygge inn modellerte apper.  
 
 ### <a name="details"></a>Detaljer
 
-Fremgangsmåten nedenfor viser hvordan du bygger inn en app fra Power Apps i nettklienten.
+Fremgangsmåten nedenfor viser hvordan du bygger inn en lerretsapp fra Power Apps i nettklienten.
 
-1. Gå til siden der du vil bygge inn appen. Dette er den samme siden som inneholder data som skal sendes til appen som inndata.
+1. Gå til siden der du vil bygge inn lerretsappen. Denne siden er siden som inneholder data som må sendes til appen som inndata.
 2. Åpne **Legg til en app fra Power Apps**-ruten:
 
     - Klikk på **Alternativer**, og velg deretter **Tilpass denne siden**. Under **Sett inn**-menyen velger du **Power Apps**. Velg til slutt området der du vil legge til appen. Hvis du vil bygge inn appen under Power Apps-menyknappen, velger du handlingsruten. Hvis du vil bygge inn appen direkte på siden, velger du den aktuelle fanen, hurtigfanen, bladet eller delen (hvis du er koblet til et arbeidsområde).
@@ -54,8 +57,8 @@ Fremgangsmåten nedenfor viser hvordan du bygger inn en app fra Power Apps i net
 3. Konfigurer den innebygde appen:
 
     - Feltet **Navn** angir teksten for knappen eller fanen som inneholder den innebygde appen. Ofte vil du kanskje gjenta navnet på appen i dette feltet.
-    - **Program-ID** er GUID-en for appen som du vil bygge inn. Hvis du vil hente denne verdien, finner du appen på [web.powerapps.com](https://web.powerapps.com), og går deretter til feltet **Program-ID** under **Detaljer**.
-    - For **Inndatakontekst for appen** kan du også velge feltet som inneholder dataene du vil sende til appen som inndata. Se avsnittet senere i dette emnet med tittelen [Bygge en app som bruker data sendt fra Finance and Operations-apper](#building-an-app-that-leverages-data-sent-from-finance-and-operations-apps) for detaljert informasjon om hvordan appen kan få tilgang til dataene sendt fra Finance and Operations-apper.
+    - **App-ID**-feltet angir GUIDen (globalt unik identifikator) for lerretsappen du vil bygge inn. Hvis du vil hente denne verdien, finner du appen på [web.powerapps.com](https://web.powerapps.com), og deretter går du til feltet **Program-ID** under **Detaljer**.
+    - For **Inndatakontekst for appen** kan du også velge feltet som inneholder dataene du vil sende til appen som inndata. Se avsnittet senere i dette emnet med tittelen [Bygge en app som bruker data sendt fra Finance and Operations-apper](#building-a-canvas-app-that-uses-data-that-is-sent-from-finance-and-operations-apps) for detaljert informasjon om hvordan appen kan få tilgang til dataene sendt fra Finance and Operations-apper.
     - Velg **programstørrelsen** som samsvarer med apptypen du bygger inn. Velg **Tynn** for apper bygget for mobilenheter, og **Bred** for apper bygget for nettbrett. Dette sørger for at tilstrekkelig mengde plass blir tildelt til den innebygde appen.
     - Hurtigfanen **Juridiske enheter** gir muligheten til å velge hvilke juridiske enheter appen er tilgjengelig for. Standardpraksis er å gjøre appen tilgjengelig for alle juridiske enheter. Dette alternativet er bare tilgjengelig når funksjonen [Lagrede visninger](saved-views.md) er deaktivert. 
 
@@ -63,16 +66,23 @@ Fremgangsmåten nedenfor viser hvordan du bygger inn en app fra Power Apps i net
 
 ## <a name="sharing-an-embedded-app"></a>Dele en innebygd app
 
-Når du har bygd inn en app på en side og bekreftet at det fungerer med enhver datakontekst sendt fra siden, kan det hende at du vil dele denne med andre brukere i systemet. Dette kan gjøres på to forskjellige måter ved hjelp av tilpassingsfunksjonene i produktet:
+Når du har bygd inn en lerretsapp på en side og bekreftet at det fungerer med enhver datakontekst sendt fra siden, kan det hende at du vil dele appen med andre brukere i systemet. Følg disse trinnene for å dele en innebygd lerretsapp.
 
-- Det anbefalte scenariet er via systemadministratoren, som kan overføre en tilpassing til alle brukere eller en undergruppe av brukere.
-- Du kan også eksportere sidens tilpassinger, sende dem til én eller flere brukere, og få hver av disse brukerne til å importere de endringene. Tilpasning-verktøylinjen inneholder handlinger som lar deg eksportere og importere tilpasninger.
+1. [Del lerretsappen](https://docs.microsoft.com/powerapps/maker/canvas-apps/share-app) med de riktige brukerne, slik at de får tilgang til appen i Power Apps. 
+
+2. Kontroller at de angitte brukerne har de riktige tilpasningene, slik at den innebygde appen vises når disse brukerne viser siden. Du kan bruke en av følgende tilnærminger:
+
+    - Anbefalt: Bruk [Lagrede visninger](saved-views.md)-funksjonen for å opprette og publisere en visning som inneholder den innebygde appen. Denne fremgangsmåten sikrer at alle brukere som har sikkerhetsroller som er målrettet av den publiserte visningen, vil se appen i Finance and Operations-apper. 
+    - Hvis du ikke har aktivert funksjonen for lagrede visninger, kan du få systemadministrator til å pushe en personalisering som inkluderer den innebygde appen for alle brukere eller et delsett av brukere. Du kan også eksportere personlige tilpasninger for siden og sende dem til én eller flere brukere. Hver av disse brukerne kan deretter importere tilpasningene. Tilpasning-verktøylinjen inneholder handlinger som lar deg eksportere og importere tilpasninger. 
+    
+> [!NOTE]
+> Hvis lerretsappen er delt med eksterne brukere, kan ikke disse brukerne bruke den innebygde appen i Finance and Operations-apper. De kan imidlertid få tilgang til appen direkte i Power Apps. Eksterne brukere inkluderer gjester og brukere som ikke hører til i Microsoft 365 Azure Directory der Finance and Operations-appen distribueres.
 
 Se [Tilpasse brukeropplevelsen](personalize-user-experience.md) for mer informasjon om tilpassing av funksjonene i produktet og hvordan de brukes.
 
-## <a name="building-an-app-that-leverages-data-sent-from-finance-and-operations-apps"></a>Bygge en app som benytter data som sendes fra Finance and Operations-apper
+## <a name="building-a-canvas-app-that-uses-data-that-is-sent-from-finance-and-operations-apps"></a>Bygge en lerretsapp som bruker data som sendes fra Finance and Operations-apper
 
-En viktig del av bygging av en app fra Power Apps, som skal bygges inn i en Finance and Operations-app, er å bruke inndataene fra denne applikasjonen. Fra Power Apps-utviklingsopplevelsen kan inndataene sendt fra en Finance and Operations-app åpnes ved hjelp av variabelen Param ("EntityId").
+Når du bygger en lerretsapp som skal bygges inn i en Finance and Operations-app, er en viktig del av prosessen å bruke inndataene fra denne Finance and Operations-appen. Fra Power Apps-utviklingsopplevelsen kan inndataene sendt fra en Finance and Operations-app åpnes ved hjelp av variabelen **Param ("EntityId")**.
 
 I appens OnStart-funksjon kan du for eksempel sette inndataene fra Finance and Operations-apper til en variabel som ser slik ut:
 
@@ -80,9 +90,9 @@ I appens OnStart-funksjon kan du for eksempel sette inndataene fra Finance and O
 If(!IsBlank(Param("EntityId")), Set(FinOpsInput, Param("EntityId")), Set(FinOpsInput, ""));
 ```
 
-## <a name="viewing-an-app"></a>Vise en app
+## <a name="viewing-a-canvas-app"></a>Vise en lerretsapp
 
-Hvis du vil vise en innebygd app på en side i Finance and Operations-apper, går du til en side med en innebygd app. Husk at apper kan nås via Power Apps-knappen i standardhandlingsruten, eller kan vises direkte på siden som en ny fane, hurtigfane, blad eller som en ny inndeling i et arbeidsområde. Når en bruker først gang prøver å laste inn en app på en side, vil han eller hun bli bedt om å logge på for å sikre at brukeren har de nødvendige tillatelsene til å bruke appen.
+Hvis du vil vise en innebygd lerretsapp på en side i Finance and Operations-apper, går du til en side med en innebygd app. Husk at apper kan åpnes ved hjelp av **Power Apps**-knappen i standardhandlingsruten. De kan også vises direkte på siden som en ny fane eller hurtigfane eller et blad eller som en ny inndeling i et arbeidsområde. Når brukere først prøver å laste inn en app på en side, blir de bedt om å logge på. Dette trinnet sikrer at brukerne har de nødvendige tillatelsene til å bruke appen.
 
 ## <a name="editing-an-embedded-app"></a>Redigere en innebygd app
 
@@ -106,7 +116,7 @@ Når en app er innebygd på en side, er det to måter å fjerne den på om nødv
 
 ## <a name="appendix"></a>Tillegg
 
-### <a name="developer-control-over-where-an-app-can-be-embedded"></a>Utviklerkontroll over hvor en app kan bygges inn
+### <a name="developer-specifying-where-an-app-can-be-embedded"></a>[Utvikler] Angi hvor en app kan bygges inn
 
 Som standard kan brukerne bygge inn apper på alle sider, enten under Power Apps-menyknappen, eller direkte på siden som en fane, hurtigfane, blad eller ny inndeling i et arbeidsområde. Om nødvendig kan utviklere imidlertid også konfigurere denne funksjonen for å tillate bare innebygging av apper på bestemte sider ved å implementere følgende metoder:
 

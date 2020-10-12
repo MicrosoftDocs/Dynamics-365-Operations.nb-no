@@ -3,7 +3,7 @@ title: Legge til en logo
 description: Dette emnet beskriver hvordan du legger til en logo på området ditt i Microsoft Dynamics 365 Commerce.
 author: bicyclingfool
 manager: AnnBe
-ms.date: 01/23/2020
+ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: stuharg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 62b8237fa0c30fa9d901d670de38416cf8615c8d
-ms.sourcegitcommit: 81f162f2d50557d7afe292c8d326618ba0bc3259
+ms.openlocfilehash: f15680deb0eab763ba68f2897139c915d1f8a6a3
+ms.sourcegitcommit: 8028fbc5b9585e87d3331ea02577ff82ede090af
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "3686652"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "3817336"
 ---
 # <a name="add-a-logo"></a>Legge til en logo
 
@@ -34,7 +34,7 @@ Dette emnet beskriver hvordan du legger til en logo på området ditt i Microsof
 
 ## <a name="overview"></a>Oversikt
 
-Noe av det første du gjør når du bygger området, er å legge til selskapet eller merkelogoen i overskriften til området. Den elektroniske startpakken for Dynamics 365 Commerce gir en modul som gjør denne oppgaven lett.
+Noe av det første du gjør når du bygger området, er å legge til selskapet eller merkelogoen i overskriften til området. Det elektroniske modulbiblioteket for Dynamics 365 Commerce gir en modul som gjør denne oppgaven lett.
 
 Du kan legge til en logo direkte i en mal, et oppsett eller en side. På denne måten kan du enkelt endre logoen som vises på bestemte sider eller i grupper med sider. Dette emnet dekker imidlertid det hyppigste scenarioet, der du legger til logoen din i et topptekstfragment som kan brukes på nytt på tvers av alle sidene på området.
 

@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d210e234e9004422913ac76bf4c9b720806cbece
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 00af26a9f41a6908fd0010ec9eac37e41ad9c2b6
+ms.sourcegitcommit: 71a7fb9e7133d872790ec25def5453bbbb17c627
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2176044"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "3888114"
 ---
 # <a name="accounts-receivable-home-page"></a>Startside for kunder
 
@@ -102,10 +102,10 @@ Gå til [Veikart for Microsoft Dynamics 365](https://go.microsoft.com/fwlink/?li
 
 Du kan finne meninger, nyheter og annen informasjon om Kunder og andre løsninger i bloggen for [Microsoft Dynamics 365](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise) bloggen [Microsoft Dynamics 365 Finance and Operations - Financials](https://community.dynamics.com/365/financeandoperations/b/financials).
 
-[Microsoft Dynamics Operations Partner Community-bloggen](https://community.dynamics.com/partner/b/operationspartnercommunityblog) gir Microsoft Dynamics-partnere én ressurs der de kan finne ut mer om hva som er nytt og populært i MBS Operations.
+[Microsoft Dynamics Operations Partner Community-bloggen](https://community.dynamics.com/partner/b/operationspartnercommunityblog) gir Microsoft Dynamics-partnere én ressurs der de kan finne ut mer om hva som er nytt og populært i Dynamics 365.
 
 #### <a name="task-guides"></a>Oppgaveveiledninger
-Mer hjelp er tilgjengelig som oppgaveveiledninger i programmet. For å få tilgang til oppgaveveiledninger klikker du Hjelp-knappen på en side.
+Mer hjelp er tilgjengelig som oppgaveveiledninger i programmet. For å få tilgang til oppgaveveiledninger klikker du på Hjelp-knappen på en side.
 
 #### <a name="videos"></a>Videoer
 

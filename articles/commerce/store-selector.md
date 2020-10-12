@@ -3,7 +3,7 @@ title: Butikkvelgermodul
 description: Dette emnet dekker butikkvelgermodulen og beskriver hvordan du legger den til områdesider i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
-ms.date: 07/31/2020
+ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -18,17 +18,16 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2020-02-10
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 1531b27dad4188dca96cf5728a9858f94001977c
-ms.sourcegitcommit: 078befcd7f3531073ab2c08b365bcf132d6477b0
+ms.openlocfilehash: 4438e46d4653a0cd2060092695f08613cd696f4e
+ms.sourcegitcommit: 97ceb24f191161ca601e0889a539df665834ac3b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 07/31/2020
-ms.locfileid: "3646141"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "3818256"
 ---
 # <a name="store-selector-module"></a>Butikkvelgermodul
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
 
 Dette emnet dekker butikkvelgermodulen og beskriver hvordan du legger den til områdesider i Microsoft Dynamics 365 Commerce.
 
@@ -65,7 +64,7 @@ For at dette scenarioet skal fungere, bør produktene konfigureres slik at lever
 
 Bildet nedenfor viser et eksempel på en butikkvelgermodul som brukes på en PDP.
 
-![Eksempel på en butikkvelgermodul](./media/BOPIS.PNG)
+![Eksempel på en butikkvelgermodul som brukes på PDP](./media/BOPIS.PNG)
 
 ## <a name="find-stores-mode"></a>Søk etter butikker-modus
 
@@ -73,7 +72,7 @@ Butikkvelgeren støtter også en **Søk etter butikker**-modus. Denne modusen ka
 
 Følgende illustrasjon viser et eksempel på en butikkvelgermodul som brukes sammen med en kartmodul på en side med butikkadresser.
 
-![Eksempel på en butikkvelgermodul](./media/ecommerce-Storelocator.PNG)
+![Eksempel på en butikkvelgermodul og en kartmodul på en side for butikklokasjoner](./media/ecommerce-Storelocator.PNG)
 
 ## <a name="render-a-map"></a>Gjengi et kart
 
@@ -127,7 +126,7 @@ Hvis du vil konfigurere butikkvelgermodulen til å vise tilgjengelige butikker f
  
 ## <a name="additional-resources"></a>Tilleggsressurser
 
-[Startpakke, oversikt](starter-kit-overview.md)
+[Oversikt over modulbibliotek](starter-kit-overview.md)
 
 [Kjøpsboksmodul](add-buy-box.md)
 

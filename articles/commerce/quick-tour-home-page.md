@@ -3,7 +3,7 @@ title: Oversikt over startside
 description: Dette emnet inneholder en oversikt over startsiden i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
-ms.date: 06/30/2020
+ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: c51c5af38f4ba50bbad124de4ac7f66be4001fa6
-ms.sourcegitcommit: ce397c2759f642c595e30fef58a770b50360b2bd
+ms.openlocfilehash: 3ebc8b4ebd3720815cdaaab708fbfdd8302cbea1
+ms.sourcegitcommit: 8028fbc5b9585e87d3331ea02577ff82ede090af
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "3527590"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "3817760"
 ---
 # <a name="home-page-overview"></a>Oversikt over startside
 
@@ -34,7 +34,7 @@ Dette emnet inneholder en oversikt over startsiden i Microsoft Dynamics 365 Comm
 
 Startsiden er standardsiden kunder går til når de besøker et område for e-handel. Denne siden viser vanligvis produkter og kampanjer ved hjelp av en kombinasjon av markedsføringsmoduler. Startsiden bør inneholde mange bilder og tekst for å holde kundene engasjert.
 
-Illustrasjonen nedenfor viser et eksempel på en startside som ble bygd ved hjelp av online-startsettet og "Fabrikam"-temaet.
+Illustrasjonen nedenfor viser et eksempel på en startside som ble bygd ved hjelp av modulbiblioteket og "Fabrikam"-temaet.
 
 ![Eksempel på en startside](./media/Homepage2.PNG)
 

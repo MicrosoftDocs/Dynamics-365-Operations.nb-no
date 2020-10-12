@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-10-01
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: d6e0f2c914b8d348ef6eac42557fb46c53df04a9
-ms.sourcegitcommit: d16d370dab734e09312cb06711beca9cca52d4c9
+ms.openlocfilehash: 8c3a905c90f5dd4ad3487f004a958c0dcd52115d
+ms.sourcegitcommit: 71ec2f48185b8104ca52ff70df52263ce5f87f26
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "2809526"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "3893253"
 ---
 # <a name="add-new-fields-to-a-business-document-template-in-microsoft-excel"></a>Legge til nye felt i en forretningsdokumentmal i Microsoft Excel
 
@@ -67,7 +67,7 @@ Hvis du vil ha mer informasjon om å importere ER-konfigurasjoner, kan du se [Ad
 5.  I **Tittel**-feltet angir du **Fritekstfaktura (Excel) Contoso** som tittel for den nye malen.
 6.  Velg **OK** for å bekrefte starten på redigeringsprosessen.
 
-Siden for BDM-malredigering vises. Du kan bruke Microsoft Office 365 til å redigere den valgte malen på nettet i den innebygde kontrollen.
+Siden for BDM-malredigering vises. Du kan bruke Microsoft 365 til å redigere den valgte malen på nettet i den innebygde kontrollen.
 
 ![Siden for BDM-malredigering](./media/BDM-AddFldExcel-EditableTemplate.png)
 
