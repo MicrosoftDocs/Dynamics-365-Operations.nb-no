@@ -14,6 +14,8 @@
               items:
                 - name: Nyheter eller endringer på startsiden for Plattformoppdateringer
                   href: get-started/whats-new-home-page.md
+                - name: Plattformoppdateringer for 10.0.15 (januar 2021)
+                  href: get-started/whats-new-platform-updates-10-0-15.md
                 - name: Plattformoppdateringer for 10.0.14 (november 2020)
                   href: get-started/whats-new-platform-updates-10-0-14.md
                 - name: Plattformoppdateringer for 10.0.13 (oktober 2020)
@@ -236,6 +238,8 @@
                                   href: data-entities/dual-write/dual-write-troubleshooting-finops-upgrades.md
                                 - name: Generell feilsøking
                                   href: data-entities/dual-write/dual-write-troubleshooting.md
+                        - name: Vanlige spørsmål for dobbel skriving
+                          href: data-entities/dual-write/dual-write-faq.md
                     - name: Integrering med Power Platform
                       items:
                         - name: Konfigurere et kundeemne til kontanter-scenario
@@ -386,6 +390,8 @@
           items:
             - name: Oversikt
               href: database/dbmovement-operations.md
+            - name: Verktøysett for databasebevegelse
+              href: database/database-movement-toolkit.md
             - name: Hurtigstartveiledninger
               items:
                 - name: Oppdatere database
@@ -1564,6 +1570,8 @@
                   href: migration-upgrade/data-upgrade-2012.md
                 - name: AX 2012-oppgradering – Oppgradere sjekkliste for dataoppgradering på forhånd
                   href: migration-upgrade/prepare-data-upgrade.md
+                - name: AX 2012-oppgradering – Dataoppgradering i sandkassemiljøer ved hjelp av dacpac-process
+                  href: migration-upgrade/upgrade-data-sandbox-dacpac.md
                 - name: AX 2012-oppgradering – Dataoppgradering i sandkassemiljøer
                   href: migration-upgrade/upgrade-data-sandbox.md
                 - name: AX 2012-oppgradering – Lokale miljøer

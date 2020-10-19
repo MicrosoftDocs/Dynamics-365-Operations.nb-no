@@ -74,8 +74,8 @@
                   href: ../fin-ops-core/dev-itpro/deployment/china-local-deployment.md?toc=/dynamics365/commerce/toc.json
                 - name: Finance and Operations-apper i Frankrike
                   href: ../fin-ops-core/dev-itpro/deployment/france-local-deployment.md?toc=/dynamics365/commerce/toc.json
-            - name: Få kundestøtte for Dynamics 365 Commerce
-              href: retail-support.md
+            - name: Få kundestøtte
+              href: ../fin-ops-core/dev-itpro/lifecycle-services/lcs-support.md?toc=/dynamics365/commerce/toc.json
             - name: Oppgradering og N-1-støtte
               items:
                 - name: Støtte for oppgradering og N-1 for Commerce
@@ -92,6 +92,8 @@
                   items:
                     - name: Nyheter eller endringer på startsiden for Commerce
                       href: get-started/whats-new-home-page.md
+                    - name: Commerce 10.0.15 (januar 2021)
+                      href: get-started/whats-new-commerce-10-0-15.md
                     - name: Commerce 10.0.14 (november 2020)
                       href: get-started/whats-new-commerce-10-0-14.md
                     - name: Commerce 10.0.13 (oktober 2020)
@@ -274,6 +276,8 @@
                   href: ../fin-ops-core/fin-ops/get-started/move-licenses-between-agreement-types.md?toc=/dynamics365/commerce/toc.json
                 - name: Flytte LCS-implementeringsprosjekter til forskjellige Azure AD-leiere
                   href: ../fin-ops-core/fin-ops/get-started/move-lcs-implementation-project-tenant.md?toc=/dynamics365/commerce/toc.json
+                - name: Flytte LCS-implementeringsprosjekter fra lokalt til skyen
+                  href: ../fin-ops-core/dev-itpro/lifecycle-services/move-on-prem-to-cloud.md?toc=/dynamics365/commerce/toc.json
                 - name: Flere LCS-prosjekter og -produksjonsmiljøer på én Azure AD-leier
                   href: ../fin-ops-core/fin-ops/get-started/implement-multiple-projects-aad-tenant.md?toc=/dynamics365/commerce/toc.json
                 - name: Implementere prosjekter for Finance and Operations Commerce
@@ -706,6 +710,8 @@
                   href: customer-orders-overview.md
                 - name: Hybride kundeordrer
                   href: hybrid-customer-orders.md
+                - name: Tilbakekalle ordreoperasjon på salgssted
+                  href: enhancedorderrecall.md
             - name: Salgsordrer
               items:
                 - name: Opprette en telefonsenterordre
@@ -780,8 +786,6 @@
               href: statement-posting-eod.md
             - name: Forbedret håndtering av varer med partisporing
               href: batch.md
-            - name: Konfigurere Commerce-parametere som påvirker utdrag
-              href: tasks/parameter-configurations-retail-statements.md
             - name: Konfigurere innstillinger for betalingsmåte som påvirker detaljhandelsutdrag
               href: tasks/payment-configurations-retail-statements.md
             - name: Konfigurere og kjøre en jobb for å beregne utdrag
@@ -868,6 +872,8 @@
                   href: document-states-overview.md
                 - name: Arbeide med publiseringsgrupper
                   href: publish-groups.md
+                - name: Aktivere og bruke krysskanaldeling
+                  href: cross-channel-sharing.md
                 - name: Merke området og legge til butikkdetaljer
                   items:
                     - name: Legge til en logo
@@ -1048,6 +1054,24 @@
               items:
                 - name: Generere rapporter om Internett-kanal
                   href: generate-reports.md
+            - name: Eksperimentering
+              items:
+                - name: Eksperimentering i Dynamics 365 Commerce
+                  href: experimentation-overview.md
+                - name: Finne en hypotese og bestemme mål for et eksperiment
+                  href: experimentation-identify.md
+                - name: Definere et eksperiment
+                  href: experimentation-setup.md
+                - name: Koble til og redigere et eksperiment
+                  href: experimentation-connect-edit.md
+                - name: Forhåndsvise og publisere et eksperiment
+                  href: experimentation-preview-publish.md
+                - name: Kjøre og overvåke et eksperiment
+                  href: experimentation-run-monitor.md
+                - name: Fremme en variasjon og fullføre et eksperiment
+                  href: experimentation-review-complete.md
+                - name: Se gjennom statusen til et eksperiment
+                  href: experimentation-status.md
             - name: Feilbehandling
               items:
                 - name: Bygge egendefinerte svarsider for 4xx/5xx-statuskodefeil
@@ -1076,10 +1100,16 @@
               href: localizations/fiscal-integration-for-retail-channel.md
             - name: Definere økonomisk integrering for Commerce-kanal
               href: localizations/setting-up-fiscal-integration-for-retail-channel.md
+            - name: Brukerdefinerte sertifikatprofiler for detaljhandelsbutikker
+              href: localizations/certificate-profiles-for-retail-stores.md
             - name: Østerrike
               items:
                 - name: Eksempel på integrering av tjenesten for avgiftsmessig transaksjon for Østerrike
                   href: localizations/emea-aut-fi-sample.md
+            - name: Brasil
+              items:
+                - name: Commerce-lokalisering for Brasil
+                  href: localizations/latam-bra-commerce-localization.md
             - name: Øst-Europa
               items:
                 - name: Felles
@@ -2052,6 +2082,8 @@
                       href: e-commerce-extensibility/theme-module-extensions.md
                     - name: Utvide et tema fra et basistema
                       href: e-commerce-extensibility/extend-theme.md
+                    - name: Legge til egendefinerte ressurser i tilpassingskoden
+                      href: e-commerce-extensibility/add-custom-resources.md
                 - name: Sette inn skript
                   items:
                     - name: Skriptinnsettinger
@@ -2164,6 +2196,8 @@
                   href: dev-itpro/retail-server-extension.md
                 - name: Retail Typescript og C#-proxyer
                   href: dev-itpro/typescript-proxy-retail-pos.md
+                - name: Bruke API-er for Retail Server i eksterne apper
+                  href: dev-itpro/consume-retail-server-api
             - name: Commerce Runtime (CRT) utvidelsesmulighet
               items:
                 - name: Arkitektur for og konfigurasjon av CRT

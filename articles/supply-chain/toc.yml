@@ -70,12 +70,12 @@
                   items:
                     - name: Nyheter eller endringer på startsiden for Supply Chain Management
                       href: get-started/whats-new-home-page.md
+                    - name: Supply Chain Management 10.0.15 (desember 2020)
+                      href: get-started/whats-new-scm-10-0-15.md
                     - name: Supply Chain Management 10.0.14 (november 2020)
                       href: get-started/whats-new-scm-10-0-14.md
                     - name: Supply Chain Management 10.0.13 (oktober 2020)
                       href: get-started/whats-new-scm-10-0-13.md
-                    - name: Supply Chain Management 10.0.12 (august 2020)
-                      href: get-started/whats-new-scm-10-0-12.md
                 - name: Funksjoner som er fjernet eller avskrevet
                   items:
                     - name: Funksjoner som er fjernet eller avskrevet i Dynamics 365 Supply Chain Management
@@ -194,6 +194,8 @@
                   href: ../fin-ops-core/fin-ops/get-started/move-licenses-between-agreement-types.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Flytte LCS-implementeringsprosjekter til forskjellige Azure AD-leiere
                   href: ../fin-ops-core/fin-ops/get-started/move-lcs-implementation-project-tenant.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Flytte LCS-implementeringsprosjekter fra lokalt til skyen
+                  href: ../fin-ops-core/dev-itpro/lifecycle-services/move-on-prem-to-cloud.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Flere LCS-prosjekter og -produksjonsmiljøer på én Azure AD-leier
                   href: ../fin-ops-core/fin-ops/get-started/implement-multiple-projects-aad-tenant.md?toc=/dynamics365/supply-chain/toc.json
         - name: Globalisering
@@ -202,6 +204,10 @@
               href: ../fin-ops-core/dev-itpro/lcs-solutions/country-region.md?toc=/dynamics365/supply-chain/toc.json
             - name: Forskriftsmessige oppdateringer
               href: ../finance/localizations/regulatory-updates.md?toc=/dynamics365/supply-chain/toc.json
+            - name: India
+              items:
+                - name: Lageroverføringsordrer
+                  href: ../finance/localizations/apac-ind-stock-transfer.md
             - name: Russland
               items:
                 - name: Oversikt over Russland
@@ -1407,6 +1413,8 @@
                   href: master-planning/supply-chain-calendars-master-planning.md
                 - name: Forbedre ytelsen for hovedplanlegging
                   href: master-planning/master-planning-performance.md
+                - name: Forbedre ytelsen til planleggingsmotoren
+                  href: master-planning/scheduling-engine-performance.md
                 - name: Hovedplaner og multisite-funksjonalitet
                   items:
                     - name: Oversikt over hovedplanlegging og multisite-funksjonalitet
@@ -1939,6 +1947,8 @@
                       href: pim/tasks/maintain-bom-product-configuration-model.md
                     - name: Vedlikeholde en rute for en produktmodell
                       href: pim/tasks/maintain-route-product-model.md
+                    - name: Attributtbaserte salgspriser for begrensningsbasert produktkonfigurasjon
+                      href: pim/attribute-based-product-configurator.md
                     - name: Godkjenne en produktkonfigurasjonsmodell
                       href: pim/tasks/approve-product-configuration-model.md
                     - name: Overføre data for produktmodeller
@@ -2035,6 +2045,8 @@
                       href: production-control/config-job-card-device.md
                     - name: Ferdigmelde fra jobbkortenheten
                       href: production-control/report-finished-job-device.md
+                    - name: Formidle støttelinjer med blandet virkelighet for arbeidere i produksjonen
+                      href: production-control/instruction-guides-in-production-overview.md
                     - name: Reversere produksjonsordrestatusen
                       href: production-control/reverse-production-order-status.md
                     - name: Innsikt i materialunntak
@@ -2649,6 +2661,10 @@
                       href: warehousing/batch-and-license-plate-confirmation.md
                     - name: Aktivere utskrift av nummerskiltetikett
                       href: warehousing/tasks/license-plate-label-printing.md
+                    - name: Opprette overføringsordrer fra lagerappen
+                      href: warehousing/create-transfer-order-from-warehouse-app.md
+                    - name: Behandling av lagerapphendelse
+                      href: warehousing/warehouse-app-events.md
                     - name: Stykkplukkingsbekreftelse
                       href: warehousing/piece-picking-confirmation.md
                     - name: Pakkematerialer og -gebyrer
@@ -2845,6 +2861,8 @@
                       href: warehousing/pick-oldest-batch.md
                     - name: Rammeverk for prosessveiledning
                       href: warehousing/process-guide-framework.md
+                    - name: Feilsøke tilkoblingsproblemer for lagerapp
+                      href: warehousing/troubleshoot-warehouse-app-connection.md
                 - name: Oppgradering og overføring
                   items:
                     - name: Oppgradere lagerstyringsprosesser fra Microsoft Dynamics AX 2012 til Finance and Operations
