@@ -13,28 +13,28 @@ audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: shylaw
+ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: a4926c8a157ae0f1838e1c4d545b3e31e60d6abf
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: f8b640d63776debbe12367439186a72b231d8ada
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3213314"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3986077"
 ---
-# <a name="create-product-model-components"></a><span data-ttu-id="1f544-103">Opprette produktmodellkomponenter</span><span class="sxs-lookup"><span data-stu-id="1f544-103">Create product model components</span></span>
+# <a name="create-product-model-components"></a><span data-ttu-id="5e550-103">Opprette produktmodellkomponenter</span><span class="sxs-lookup"><span data-stu-id="5e550-103">Create product model components</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="1f544-104">Restriksjonsbaserte produktkonfigurasjonsmodeller bruker komponenter som byggesteiner til å opprette produktmodellstrukturen.</span><span class="sxs-lookup"><span data-stu-id="1f544-104">Constraint-based product configuration models use components as building blocks to establish the product model structure.</span></span> <span data-ttu-id="1f544-105">Komponentene må opprettes før en produktmodell kan bygges.</span><span class="sxs-lookup"><span data-stu-id="1f544-105">The components must be created before a product model can be built.</span></span> <span data-ttu-id="1f544-106">Demonstrasjonsdatafirmaet USMF brukes til å opprette denne fremgangsmåten.</span><span class="sxs-lookup"><span data-stu-id="1f544-106">The demo data company used to create this procedure is USMF.</span></span>
+<span data-ttu-id="5e550-104">Restriksjonsbaserte produktkonfigurasjonsmodeller bruker komponenter som byggesteiner til å opprette produktmodellstrukturen.</span><span class="sxs-lookup"><span data-stu-id="5e550-104">Constraint-based product configuration models use components as building blocks to establish the product model structure.</span></span> <span data-ttu-id="5e550-105">Komponentene må opprettes før en produktmodell kan bygges.</span><span class="sxs-lookup"><span data-stu-id="5e550-105">The components must be created before a product model can be built.</span></span> <span data-ttu-id="5e550-106">Demonstrasjonsdatafirmaet USMF brukes til å opprette denne fremgangsmåten.</span><span class="sxs-lookup"><span data-stu-id="5e550-106">The demo data company used to create this procedure is USMF.</span></span>
 
-1. <span data-ttu-id="1f544-107">Klikk Definisjon av produktvariantmodell.</span><span class="sxs-lookup"><span data-stu-id="1f544-107">Click Product variant model definition.</span></span>
-2. <span data-ttu-id="1f544-108">Klikk Produktkonfigurasjonsmodeller.</span><span class="sxs-lookup"><span data-stu-id="1f544-108">Click Product configuration models.</span></span>
-3. <span data-ttu-id="1f544-109">Klikk Modell i handlingsruten.</span><span class="sxs-lookup"><span data-stu-id="1f544-109">On the Action Pane, click Model.</span></span>
-4. <span data-ttu-id="1f544-110">Klikk Komponenter.</span><span class="sxs-lookup"><span data-stu-id="1f544-110">Click Components.</span></span>
-5. <span data-ttu-id="1f544-111">Klikk Ny.</span><span class="sxs-lookup"><span data-stu-id="1f544-111">Click New.</span></span>
-6. <span data-ttu-id="1f544-112">Skriv inn en verdi i Navn-feltet.</span><span class="sxs-lookup"><span data-stu-id="1f544-112">In the Name field, type a value.</span></span>
-7. <span data-ttu-id="1f544-113">Skriv inn en verdi i feltet Beskrivelse.</span><span class="sxs-lookup"><span data-stu-id="1f544-113">In the Description field, type a value.</span></span>
-8. <span data-ttu-id="1f544-114">Lukk siden.</span><span class="sxs-lookup"><span data-stu-id="1f544-114">Close the page.</span></span>
+1. <span data-ttu-id="5e550-107">Klikk Definisjon av produktvariantmodell.</span><span class="sxs-lookup"><span data-stu-id="5e550-107">Click Product variant model definition.</span></span>
+2. <span data-ttu-id="5e550-108">Klikk Produktkonfigurasjonsmodeller.</span><span class="sxs-lookup"><span data-stu-id="5e550-108">Click Product configuration models.</span></span>
+3. <span data-ttu-id="5e550-109">Klikk Modell i handlingsruten.</span><span class="sxs-lookup"><span data-stu-id="5e550-109">On the Action Pane, click Model.</span></span>
+4. <span data-ttu-id="5e550-110">Klikk Komponenter.</span><span class="sxs-lookup"><span data-stu-id="5e550-110">Click Components.</span></span>
+5. <span data-ttu-id="5e550-111">Klikk Ny.</span><span class="sxs-lookup"><span data-stu-id="5e550-111">Click New.</span></span>
+6. <span data-ttu-id="5e550-112">Skriv inn en verdi i Navn-feltet.</span><span class="sxs-lookup"><span data-stu-id="5e550-112">In the Name field, type a value.</span></span>
+7. <span data-ttu-id="5e550-113">Skriv inn en verdi i feltet Beskrivelse.</span><span class="sxs-lookup"><span data-stu-id="5e550-113">In the Description field, type a value.</span></span>
+8. <span data-ttu-id="5e550-114">Lukk siden.</span><span class="sxs-lookup"><span data-stu-id="5e550-114">Close the page.</span></span>
 

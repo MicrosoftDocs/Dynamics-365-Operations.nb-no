@@ -15,38 +15,38 @@ ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: ShylaThompson
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3ae39ffac183194b5a4b969a4031e8a816f1b839
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 55f0f625f48df57ab5b86c524841815c717d2bdd
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3211865"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3978393"
 ---
-# <a name="prioritize-service-orders"></a><span data-ttu-id="5e849-103">Prioritere serviceordrer</span><span class="sxs-lookup"><span data-stu-id="5e849-103">Prioritize service orders</span></span> 
+# <a name="prioritize-service-orders"></a><span data-ttu-id="eb1a1-103">Prioritere serviceordrer</span><span class="sxs-lookup"><span data-stu-id="eb1a1-103">Prioritize service orders</span></span> 
 
 [!include [banner](../includes/banner.md)]
 
 
-1.  <span data-ttu-id="5e849-104">Klikk **Servicestyring** \> **Periodisk** \> **Tjenestefordeling**.</span><span class="sxs-lookup"><span data-stu-id="5e849-104">Click **Service management** \> **Periodic** \> **Dispatch board**.</span></span>
+1.  <span data-ttu-id="eb1a1-104">Klikk **Servicestyring** \> **Periodisk** \> **Tjenestefordeling** .</span><span class="sxs-lookup"><span data-stu-id="eb1a1-104">Click **Service management** \> **Periodic** \> **Dispatch board** .</span></span>
 
-2.  <span data-ttu-id="5e849-105">Klikk **Avansert** for å vise Gantt-diagrammet øverst i skjemaet og kategoriene i den nedre ruten.</span><span class="sxs-lookup"><span data-stu-id="5e849-105">Click **Advanced** to display the Gantt chart at the top of the form and the tabs in the lower pane.</span></span>
+2.  <span data-ttu-id="eb1a1-105">Klikk **Avansert** for å vise Gantt-diagrammet øverst i skjemaet og kategoriene i den nedre ruten.</span><span class="sxs-lookup"><span data-stu-id="eb1a1-105">Click **Advanced** to display the Gantt chart at the top of the form and the tabs in the lower pane.</span></span>
 
-3.  <span data-ttu-id="5e849-106">Utvid hver fordelingsgruppeliste.</span><span class="sxs-lookup"><span data-stu-id="5e849-106">Expand each dispatch team list.</span></span>
+3.  <span data-ttu-id="eb1a1-106">Utvid hver fordelingsgruppeliste.</span><span class="sxs-lookup"><span data-stu-id="eb1a1-106">Expand each dispatch team list.</span></span>
 
-4.  <span data-ttu-id="5e849-107">Merk den fargekodede grafikken som representerer en serviceaktivitet.</span><span class="sxs-lookup"><span data-stu-id="5e849-107">Select the color-coded graphic that represents a service activity.</span></span>
+4.  <span data-ttu-id="eb1a1-107">Merk den fargekodede grafikken som representerer en serviceaktivitet.</span><span class="sxs-lookup"><span data-stu-id="eb1a1-107">Select the color-coded graphic that represents a service activity.</span></span>
 
-5.  <span data-ttu-id="5e849-108">På fanen **Alle**, **Team**, **Ikke fordelt** eller **Relatert** endrer du valget i **Prioritet**-feltet.</span><span class="sxs-lookup"><span data-stu-id="5e849-108">On the **All** tab, **Team** tab, **Undispatched** tab, or **Related** tab, change the selection in the **Priority** field.</span></span>
+5.  <span data-ttu-id="eb1a1-108">På fanen **Alle** , **Team** , **Ikke fordelt** eller **Relatert** endrer du valget i **Prioritet** -feltet.</span><span class="sxs-lookup"><span data-stu-id="eb1a1-108">On the **All** tab, **Team** tab, **Undispatched** tab, or **Related** tab, change the selection in the **Priority** field.</span></span>
 
-6.  <span data-ttu-id="5e849-109">Klikk **Lagre**.</span><span class="sxs-lookup"><span data-stu-id="5e849-109">Click **Save**.</span></span>
+6.  <span data-ttu-id="eb1a1-109">Klikk **Lagre** .</span><span class="sxs-lookup"><span data-stu-id="eb1a1-109">Click **Save** .</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="5e849-110">Se også</span><span class="sxs-lookup"><span data-stu-id="5e849-110">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="eb1a1-110">Se også</span><span class="sxs-lookup"><span data-stu-id="eb1a1-110">See also</span></span>
 
-[<span data-ttu-id="5e849-111">Tjenestefordeling</span><span class="sxs-lookup"><span data-stu-id="5e849-111">Dispatch board</span></span>](dispatch-board.md)
+[<span data-ttu-id="eb1a1-111">Tjenestefordeling</span><span class="sxs-lookup"><span data-stu-id="eb1a1-111">Dispatch board</span></span>](dispatch-board.md)
 
-[<span data-ttu-id="5e849-112">Vise statusen for serviceordrer</span><span class="sxs-lookup"><span data-stu-id="5e849-112">View the status of service orders</span></span>](view-the-status-of-service-orders.md)
+[<span data-ttu-id="eb1a1-112">Vise statusen for serviceordrer</span><span class="sxs-lookup"><span data-stu-id="eb1a1-112">View the status of service orders</span></span>](view-the-status-of-service-orders.md)
 
   
 

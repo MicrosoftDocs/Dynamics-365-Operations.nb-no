@@ -13,31 +13,31 @@ audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: shylaw
+ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: fb2aa6b2a1d32dce662f13855c7bcf81191e51a0
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: cd207d202c24ced9e29bdfc7386fb6464a838a0e
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3213107"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3981092"
 ---
-# <a name="release-a-dimension-based-product-master"></a><span data-ttu-id="81336-103">Frigi en dimensjonsbasert produktstandard</span><span class="sxs-lookup"><span data-stu-id="81336-103">Release a dimension-based product master</span></span>
+# <a name="release-a-dimension-based-product-master"></a><span data-ttu-id="922d1-103">Frigi en dimensjonsbasert produktstandard</span><span class="sxs-lookup"><span data-stu-id="922d1-103">Release a dimension-based product master</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="81336-104">Denne fremgangsmåten viser hvordan du frigir en produktstandard som skal brukes for dimensjonsbaserte konfigurasjoner.</span><span class="sxs-lookup"><span data-stu-id="81336-104">This procedure shows how to release a product master, which will be used for the dimension-based configurations.</span></span> <span data-ttu-id="81336-105">Demonstrasjonsdatafirmaet USMF brukes til å opprette denne fremgangsmåten.</span><span class="sxs-lookup"><span data-stu-id="81336-105">The demo data company used to create this procedure is USMF.</span></span> <span data-ttu-id="81336-106">Det er en forutsetning at du har opprettet en produktstandard ved hjelp av dimensjonsbasert konfigurasjon-teknologi.</span><span class="sxs-lookup"><span data-stu-id="81336-106">It is a prerequisite that you have created a product master with the dimension-based configuration technology.</span></span> <span data-ttu-id="81336-107">Dette er den andre fremgangsmåten av åtte som forklarer hvordan du bygger kombinasjoner for dimensjonsbasert konfigurasjon.</span><span class="sxs-lookup"><span data-stu-id="81336-107">This is the second procedure out of eight which explains how to build combinations for dimension-based configuration.</span></span>
+<span data-ttu-id="922d1-104">Denne fremgangsmåten viser hvordan du frigir en produktstandard som skal brukes for dimensjonsbaserte konfigurasjoner.</span><span class="sxs-lookup"><span data-stu-id="922d1-104">This procedure shows how to release a product master, which will be used for the dimension-based configurations.</span></span> <span data-ttu-id="922d1-105">Demonstrasjonsdatafirmaet USMF brukes til å opprette denne fremgangsmåten.</span><span class="sxs-lookup"><span data-stu-id="922d1-105">The demo data company used to create this procedure is USMF.</span></span> <span data-ttu-id="922d1-106">Det er en forutsetning at du har opprettet en produktstandard ved hjelp av dimensjonsbasert konfigurasjon-teknologi.</span><span class="sxs-lookup"><span data-stu-id="922d1-106">It is a prerequisite that you have created a product master with the dimension-based configuration technology.</span></span> <span data-ttu-id="922d1-107">Dette er den andre fremgangsmåten av åtte som forklarer hvordan du bygger kombinasjoner for dimensjonsbasert konfigurasjon.</span><span class="sxs-lookup"><span data-stu-id="922d1-107">This is the second procedure out of eight which explains how to build combinations for dimension-based configuration.</span></span>
 
-1. <span data-ttu-id="81336-108">Gå til Behandling av produktinformasjon > Produkter > Produktstandarder.</span><span class="sxs-lookup"><span data-stu-id="81336-108">Go to Product information management > Products > Product masters.</span></span>
-    * <span data-ttu-id="81336-109">Filtrer kolonnen Konfigurasjonsteknologi slik at bare den dimensjonsbasert konfigurasjonen vises.</span><span class="sxs-lookup"><span data-stu-id="81336-109">Filter the Configuration technology column so that only the dimension-based configuration is displayed.</span></span> <span data-ttu-id="81336-110">Du kan for eksempel filtrere kolonnen ved å skrive inn Dimensjon.</span><span class="sxs-lookup"><span data-stu-id="81336-110">For example, you can filter the column by typing Dimension.</span></span>    
-2. <span data-ttu-id="81336-111">Merk den valgte raden i listen.</span><span class="sxs-lookup"><span data-stu-id="81336-111">In the list, mark the selected row.</span></span>
-3. <span data-ttu-id="81336-112">Klikk Frigi produkter.</span><span class="sxs-lookup"><span data-stu-id="81336-112">Click Release products.</span></span>
-4. <span data-ttu-id="81336-113">Klikk Neste.</span><span class="sxs-lookup"><span data-stu-id="81336-113">Click Next.</span></span>
-    * <span data-ttu-id="81336-114">Produktvariantene må være opprettet i firmaet der stykklisten skal opprettes for produkter opprettes ved hjelp av dimensjonsbasert konfigurasjon-teknologi.</span><span class="sxs-lookup"><span data-stu-id="81336-114">For products that are crated with the dimension-based configuration technology, the product variants must be created in the company where the bill of materials will be created.</span></span>  
-5. <span data-ttu-id="81336-115">Klikk Neste.</span><span class="sxs-lookup"><span data-stu-id="81336-115">Click Next.</span></span>
-6. <span data-ttu-id="81336-116">Finn og velg ønsket post i listen.</span><span class="sxs-lookup"><span data-stu-id="81336-116">In the list, find and select the desired record.</span></span>
-    * <span data-ttu-id="81336-117">Velg firmaet USMF for denne fremgangsmåten.</span><span class="sxs-lookup"><span data-stu-id="81336-117">Select the company USMF for this procedure.</span></span>  
-7. <span data-ttu-id="81336-118">Klikk Neste.</span><span class="sxs-lookup"><span data-stu-id="81336-118">Click Next.</span></span>
-8. <span data-ttu-id="81336-119">Klikk Finish.</span><span class="sxs-lookup"><span data-stu-id="81336-119">Click Finish.</span></span>
+1. <span data-ttu-id="922d1-108">Gå til Behandling av produktinformasjon > Produkter > Produktstandarder.</span><span class="sxs-lookup"><span data-stu-id="922d1-108">Go to Product information management > Products > Product masters.</span></span>
+    * <span data-ttu-id="922d1-109">Filtrer kolonnen Konfigurasjonsteknologi slik at bare den dimensjonsbasert konfigurasjonen vises.</span><span class="sxs-lookup"><span data-stu-id="922d1-109">Filter the Configuration technology column so that only the dimension-based configuration is displayed.</span></span> <span data-ttu-id="922d1-110">Du kan for eksempel filtrere kolonnen ved å skrive inn Dimensjon.</span><span class="sxs-lookup"><span data-stu-id="922d1-110">For example, you can filter the column by typing Dimension.</span></span>    
+2. <span data-ttu-id="922d1-111">Merk den valgte raden i listen.</span><span class="sxs-lookup"><span data-stu-id="922d1-111">In the list, mark the selected row.</span></span>
+3. <span data-ttu-id="922d1-112">Klikk Frigi produkter.</span><span class="sxs-lookup"><span data-stu-id="922d1-112">Click Release products.</span></span>
+4. <span data-ttu-id="922d1-113">Klikk Neste.</span><span class="sxs-lookup"><span data-stu-id="922d1-113">Click Next.</span></span>
+    * <span data-ttu-id="922d1-114">Produktvariantene må være opprettet i firmaet der stykklisten skal opprettes for produkter opprettes ved hjelp av dimensjonsbasert konfigurasjon-teknologi.</span><span class="sxs-lookup"><span data-stu-id="922d1-114">For products that are crated with the dimension-based configuration technology, the product variants must be created in the company where the bill of materials will be created.</span></span>  
+5. <span data-ttu-id="922d1-115">Klikk Neste.</span><span class="sxs-lookup"><span data-stu-id="922d1-115">Click Next.</span></span>
+6. <span data-ttu-id="922d1-116">Finn og velg ønsket post i listen.</span><span class="sxs-lookup"><span data-stu-id="922d1-116">In the list, find and select the desired record.</span></span>
+    * <span data-ttu-id="922d1-117">Velg firmaet USMF for denne fremgangsmåten.</span><span class="sxs-lookup"><span data-stu-id="922d1-117">Select the company USMF for this procedure.</span></span>  
+7. <span data-ttu-id="922d1-118">Klikk Neste.</span><span class="sxs-lookup"><span data-stu-id="922d1-118">Click Next.</span></span>
+8. <span data-ttu-id="922d1-119">Klikk Finish.</span><span class="sxs-lookup"><span data-stu-id="922d1-119">Click Finish.</span></span>
 

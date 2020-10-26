@@ -8,67 +8,68 @@ ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
+ms.search.form: TMSShippingCarrierCustomerAccount,TMSCarrier
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Distribution
-ms.author: shylaw
+ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0d157470527a986ea1c9fe0a9a02e2ba6ee8819e
-ms.sourcegitcommit: 8a2127c5af6cdbda30ccc1f9bef9bd4ab61e9e50
+ms.openlocfilehash: 69e711ad2011703efa450d97575784aaee3137dd
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/18/2020
-ms.locfileid: "3383004"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3982337"
 ---
-# <a name="set-up-shipping-carriers"></a><span data-ttu-id="af149-103">Definere transportører</span><span class="sxs-lookup"><span data-stu-id="af149-103">Set up shipping carriers</span></span>
+# <a name="set-up-shipping-carriers"></a><span data-ttu-id="5a684-103">Definere transportører</span><span class="sxs-lookup"><span data-stu-id="5a684-103">Set up shipping carriers</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="af149-104">Dette emnet viser hvordan du konfigurerer en transportør og definere operasjoner, for eksempel service, forsendelsesmåte, transportbetalingsmiddel, transportbegrensninger og forsendelsessats.</span><span class="sxs-lookup"><span data-stu-id="af149-104">This topic shows how to set up a shipping carrier and define details such as service, shipment mode, transportation tender, transportation constraints, and shipping rate.</span></span> <span data-ttu-id="af149-105">En transportkoordinator kan deretter tilordne en transportør til en innkommende eller utgående last.</span><span class="sxs-lookup"><span data-stu-id="af149-105">A transportation coordinator can then assign a shipping carrier to an inbound or outbound load.</span></span>
+<span data-ttu-id="5a684-104">Dette emnet viser hvordan du konfigurerer en transportør og definere operasjoner, for eksempel service, forsendelsesmåte, transportbetalingsmiddel, transportbegrensninger og forsendelsessats.</span><span class="sxs-lookup"><span data-stu-id="5a684-104">This topic shows how to set up a shipping carrier and define details such as service, shipment mode, transportation tender, transportation constraints, and shipping rate.</span></span> <span data-ttu-id="5a684-105">En transportkoordinator kan deretter tilordne en transportør til en innkommende eller utgående last.</span><span class="sxs-lookup"><span data-stu-id="5a684-105">A transportation coordinator can then assign a shipping carrier to an inbound or outbound load.</span></span>
 
 
-## <a name="create-a-new-shipping-carrier"></a><span data-ttu-id="af149-106">Opprett en ny transportør</span><span class="sxs-lookup"><span data-stu-id="af149-106">Create a new shipping carrier</span></span>
-1. <span data-ttu-id="af149-107">Gå til **Navigasjonsrute > Moduler > Transportstyring > Oppsett > Transportører > Transportører**.</span><span class="sxs-lookup"><span data-stu-id="af149-107">Go to **Navigation pane > Modules > Transportation management > Setup > Carriers > Shipping carriers**.</span></span>
-2. <span data-ttu-id="af149-108">Velg **Ny** i handlingsruten.</span><span class="sxs-lookup"><span data-stu-id="af149-108">Select **New** on the Action Pane.</span></span>
-3. <span data-ttu-id="af149-109">Skriv inn en verdi i **Transportør**-feltet.</span><span class="sxs-lookup"><span data-stu-id="af149-109">In the **Shipping carrier** field, type a value.</span></span>
-4. <span data-ttu-id="af149-110">Skriv inn en verdi i **Navn**-feltet.</span><span class="sxs-lookup"><span data-stu-id="af149-110">In the **Name** field, type a value.</span></span>
-5. <span data-ttu-id="af149-111">I **Modus**-feltet velger du et alternativ fra rullegardinmenyen.</span><span class="sxs-lookup"><span data-stu-id="af149-111">In the **Mode** field, select an option from the drop-down menu.</span></span>
+## <a name="create-a-new-shipping-carrier"></a><span data-ttu-id="5a684-106">Opprett en ny transportør</span><span class="sxs-lookup"><span data-stu-id="5a684-106">Create a new shipping carrier</span></span>
+1. <span data-ttu-id="5a684-107">Gå til **Navigasjonsrute > Moduler > Transportstyring > Oppsett > Transportører > Transportører** .</span><span class="sxs-lookup"><span data-stu-id="5a684-107">Go to **Navigation pane > Modules > Transportation management > Setup > Carriers > Shipping carriers** .</span></span>
+2. <span data-ttu-id="5a684-108">Velg **Ny** i handlingsruten.</span><span class="sxs-lookup"><span data-stu-id="5a684-108">Select **New** on the Action Pane.</span></span>
+3. <span data-ttu-id="5a684-109">Skriv inn en verdi i **Transportør** -feltet.</span><span class="sxs-lookup"><span data-stu-id="5a684-109">In the **Shipping carrier** field, type a value.</span></span>
+4. <span data-ttu-id="5a684-110">Skriv inn en verdi i **Navn** -feltet.</span><span class="sxs-lookup"><span data-stu-id="5a684-110">In the **Name** field, type a value.</span></span>
+5. <span data-ttu-id="5a684-111">I **Modus** -feltet velger du et alternativ fra rullegardinmenyen.</span><span class="sxs-lookup"><span data-stu-id="5a684-111">In the **Mode** field, select an option from the drop-down menu.</span></span>
 
-## <a name="fill-in-the-general-information-for-the-shipping-carrier"></a><span data-ttu-id="af149-112">Fyll ut generell informasjon om transportøren</span><span class="sxs-lookup"><span data-stu-id="af149-112">Fill in the general information for the shipping carrier</span></span>
-1. <span data-ttu-id="af149-113">Aktiver/deaktiver utvidelsen av delen **Oversikt**.</span><span class="sxs-lookup"><span data-stu-id="af149-113">Toggle the expansion of the **Overview** section.</span></span>
-2. <span data-ttu-id="af149-114">Merk eller fjern merket for **Aktiver transportør**.</span><span class="sxs-lookup"><span data-stu-id="af149-114">Check or uncheck the **Activate shipping carrier** checkbox.</span></span>
-3. <span data-ttu-id="af149-115">I **Leverandørnummer**-feltet velger du et alternativ fra rullegardinmenyen.</span><span class="sxs-lookup"><span data-stu-id="af149-115">In the **Vendor account** field, select an option from the drop-down menu.</span></span> <span data-ttu-id="af149-116">Velg leverandørkontoen som transportøren skal tilordnes til.</span><span class="sxs-lookup"><span data-stu-id="af149-116">Select the vendor account to assign the shipping carrier to.</span></span>  
-4. <span data-ttu-id="af149-117">Velg et alternativ i feltet **Transportbetalingsmiddel**.</span><span class="sxs-lookup"><span data-stu-id="af149-117">In the **Transportation tender type** field, select an option.</span></span> <span data-ttu-id="af149-118">Velg **Manuell** for å bruke siden Transportbetalingsmiddel, eller velg **EDI** for å oppdatere betalingsmiddelet ved hjelp av utveksling av elektroniske data (EDI – Electronic Data Interchange).</span><span class="sxs-lookup"><span data-stu-id="af149-118">Select **Manual** to use the Transportation Tender page, or select **EDI** to update the tender by using Electronic Data Interchange (EDI).</span></span>  
-5. <span data-ttu-id="af149-119">Merk eller fjern merket for **Aktiver transportørrangering**.</span><span class="sxs-lookup"><span data-stu-id="af149-119">Check or uncheck the **Activate carrier rating** checkbox.</span></span>
+## <a name="fill-in-the-general-information-for-the-shipping-carrier"></a><span data-ttu-id="5a684-112">Fyll ut generell informasjon om transportøren</span><span class="sxs-lookup"><span data-stu-id="5a684-112">Fill in the general information for the shipping carrier</span></span>
+1. <span data-ttu-id="5a684-113">Aktiver/deaktiver utvidelsen av delen **Oversikt** .</span><span class="sxs-lookup"><span data-stu-id="5a684-113">Toggle the expansion of the **Overview** section.</span></span>
+2. <span data-ttu-id="5a684-114">Merk eller fjern merket for **Aktiver transportør** .</span><span class="sxs-lookup"><span data-stu-id="5a684-114">Check or uncheck the **Activate shipping carrier** checkbox.</span></span>
+3. <span data-ttu-id="5a684-115">I **Leverandørnummer** -feltet velger du et alternativ fra rullegardinmenyen.</span><span class="sxs-lookup"><span data-stu-id="5a684-115">In the **Vendor account** field, select an option from the drop-down menu.</span></span> <span data-ttu-id="5a684-116">Velg leverandørkontoen som transportøren skal tilordnes til.</span><span class="sxs-lookup"><span data-stu-id="5a684-116">Select the vendor account to assign the shipping carrier to.</span></span>  
+4. <span data-ttu-id="5a684-117">Velg et alternativ i feltet **Transportbetalingsmiddel** .</span><span class="sxs-lookup"><span data-stu-id="5a684-117">In the **Transportation tender type** field, select an option.</span></span> <span data-ttu-id="5a684-118">Velg **Manuell** for å bruke siden Transportbetalingsmiddel, eller velg **EDI** for å oppdatere betalingsmiddelet ved hjelp av utveksling av elektroniske data (EDI – Electronic Data Interchange).</span><span class="sxs-lookup"><span data-stu-id="5a684-118">Select **Manual** to use the Transportation Tender page, or select **EDI** to update the tender by using Electronic Data Interchange (EDI).</span></span>  
+5. <span data-ttu-id="5a684-119">Merk eller fjern merket for **Aktiver transportørrangering** .</span><span class="sxs-lookup"><span data-stu-id="5a684-119">Check or uncheck the **Activate carrier rating** checkbox.</span></span>
 
-## <a name="create-the-necessary-services-for-the-shipping-carrier"></a><span data-ttu-id="af149-120">Opprett de nødvendige tjenestene for transportøren</span><span class="sxs-lookup"><span data-stu-id="af149-120">Create the necessary services for the shipping carrier</span></span>
-1. <span data-ttu-id="af149-121">Aktiver/deaktiver utvidelsen av delen **Tjenester**.</span><span class="sxs-lookup"><span data-stu-id="af149-121">Toggle the expansion of the **Services** section.</span></span>
-2. <span data-ttu-id="af149-122">Velg **Ny**.</span><span class="sxs-lookup"><span data-stu-id="af149-122">Select **New**.</span></span>
-3. <span data-ttu-id="af149-123">Skriv inn en verdi i **Transportørtjeneste**-feltet.</span><span class="sxs-lookup"><span data-stu-id="af149-123">In the **Carrier service** field, type a value.</span></span>
-4. <span data-ttu-id="af149-124">Skriv inn en verdi i **Navn**-feltet.</span><span class="sxs-lookup"><span data-stu-id="af149-124">In the **Name** field, type a value.</span></span>
-5. <span data-ttu-id="af149-125">I **Transportmetode**-feltet velger du et alternativ fra rullegardinmenyen.</span><span class="sxs-lookup"><span data-stu-id="af149-125">In the **Transportation method** field, select an option from the drop-down menu.</span></span>
+## <a name="create-the-necessary-services-for-the-shipping-carrier"></a><span data-ttu-id="5a684-120">Opprett de nødvendige tjenestene for transportøren</span><span class="sxs-lookup"><span data-stu-id="5a684-120">Create the necessary services for the shipping carrier</span></span>
+1. <span data-ttu-id="5a684-121">Aktiver/deaktiver utvidelsen av delen **Tjenester** .</span><span class="sxs-lookup"><span data-stu-id="5a684-121">Toggle the expansion of the **Services** section.</span></span>
+2. <span data-ttu-id="5a684-122">Velg **Ny** .</span><span class="sxs-lookup"><span data-stu-id="5a684-122">Select **New** .</span></span>
+3. <span data-ttu-id="5a684-123">Skriv inn en verdi i **Transportørtjeneste** -feltet.</span><span class="sxs-lookup"><span data-stu-id="5a684-123">In the **Carrier service** field, type a value.</span></span>
+4. <span data-ttu-id="5a684-124">Skriv inn en verdi i **Navn** -feltet.</span><span class="sxs-lookup"><span data-stu-id="5a684-124">In the **Name** field, type a value.</span></span>
+5. <span data-ttu-id="5a684-125">I **Transportmetode** -feltet velger du et alternativ fra rullegardinmenyen.</span><span class="sxs-lookup"><span data-stu-id="5a684-125">In the **Transportation method** field, select an option from the drop-down menu.</span></span>
 
-## <a name="set-up-the-address-for-the-carrier-optional"></a><span data-ttu-id="af149-126">Definer adressen for transportør (valgfritt)</span><span class="sxs-lookup"><span data-stu-id="af149-126">Set up the address for the carrier (optional)</span></span>
-1. <span data-ttu-id="af149-127">Aktiver/deaktiver utvidelsen av delen **Adresser**.</span><span class="sxs-lookup"><span data-stu-id="af149-127">Toggle the expansion of the **Addresses** section.</span></span>
-2. <span data-ttu-id="af149-128">Velg **Ny**.</span><span class="sxs-lookup"><span data-stu-id="af149-128">Select **New**.</span></span>
-3. <span data-ttu-id="af149-129">Skriv inn en verdi i feltet **Navn eller beskrivelse**.</span><span class="sxs-lookup"><span data-stu-id="af149-129">In the **Name or description** field, type a value.</span></span>
-4. <span data-ttu-id="af149-130">I **Land/område**-feltet velger du et alternativ fra rullegardinmenyen.</span><span class="sxs-lookup"><span data-stu-id="af149-130">In the **Country/region** field, select an option from the drop-down menu.</span></span>
-5. <span data-ttu-id="af149-131">I **Postnummer**-feltet velger du et alternativ fra rullegardinmenyen.</span><span class="sxs-lookup"><span data-stu-id="af149-131">In the **ZIP/postal code** field, select an option from the drop-down menu.</span></span>
-6. <span data-ttu-id="af149-132">Skriv inn en verdi i **Gate**-feltet.</span><span class="sxs-lookup"><span data-stu-id="af149-132">In the **Street** field, type a value.</span></span>
-7. <span data-ttu-id="af149-133">Velg **OK**.</span><span class="sxs-lookup"><span data-stu-id="af149-133">Select **OK**.</span></span>
+## <a name="set-up-the-address-for-the-carrier-optional"></a><span data-ttu-id="5a684-126">Definer adressen for transportør (valgfritt)</span><span class="sxs-lookup"><span data-stu-id="5a684-126">Set up the address for the carrier (optional)</span></span>
+1. <span data-ttu-id="5a684-127">Aktiver/deaktiver utvidelsen av delen **Adresser** .</span><span class="sxs-lookup"><span data-stu-id="5a684-127">Toggle the expansion of the **Addresses** section.</span></span>
+2. <span data-ttu-id="5a684-128">Velg **Ny** .</span><span class="sxs-lookup"><span data-stu-id="5a684-128">Select **New** .</span></span>
+3. <span data-ttu-id="5a684-129">Skriv inn en verdi i feltet **Navn eller beskrivelse** .</span><span class="sxs-lookup"><span data-stu-id="5a684-129">In the **Name or description** field, type a value.</span></span>
+4. <span data-ttu-id="5a684-130">I **Land/område** -feltet velger du et alternativ fra rullegardinmenyen.</span><span class="sxs-lookup"><span data-stu-id="5a684-130">In the **Country/region** field, select an option from the drop-down menu.</span></span>
+5. <span data-ttu-id="5a684-131">I **Postnummer** -feltet velger du et alternativ fra rullegardinmenyen.</span><span class="sxs-lookup"><span data-stu-id="5a684-131">In the **ZIP/postal code** field, select an option from the drop-down menu.</span></span>
+6. <span data-ttu-id="5a684-132">Skriv inn en verdi i **Gate** -feltet.</span><span class="sxs-lookup"><span data-stu-id="5a684-132">In the **Street** field, type a value.</span></span>
+7. <span data-ttu-id="5a684-133">Velg **OK** .</span><span class="sxs-lookup"><span data-stu-id="5a684-133">Select **OK** .</span></span>
 
-## <a name="set-up-the-rating-profile-for-the-shipping-carrier"></a><span data-ttu-id="af149-134">Definer vurderingsprofilen for transportøren</span><span class="sxs-lookup"><span data-stu-id="af149-134">Set up the rating profile for the shipping carrier</span></span>
-1. <span data-ttu-id="af149-135">Aktiver/deaktiver utvidelsen av delen **Vurderingsprofiler**.</span><span class="sxs-lookup"><span data-stu-id="af149-135">Toggle the expansion of the **Rating profiles** section.</span></span>
-2. <span data-ttu-id="af149-136">Velg **Ny**.</span><span class="sxs-lookup"><span data-stu-id="af149-136">Select **New**.</span></span>
-3. <span data-ttu-id="af149-137">Skriv inn en verdi i feltet **Vurderingsprofil**.</span><span class="sxs-lookup"><span data-stu-id="af149-137">In the **Rating profile** field, type a value.</span></span>
-4. <span data-ttu-id="af149-138">Skriv inn en verdi i **Navn**-feltet.</span><span class="sxs-lookup"><span data-stu-id="af149-138">In the **Name** field, type a value.</span></span>
-5. <span data-ttu-id="af149-139">I **Område**-feltet velger du et alternativ fra rullegardinmenyen.</span><span class="sxs-lookup"><span data-stu-id="af149-139">In the **Site** field, select an option from the drop-down menu.</span></span>
-6. <span data-ttu-id="af149-140">I **Lager**-feltet velger du et alternativ fra rullegardinmenyen.</span><span class="sxs-lookup"><span data-stu-id="af149-140">In the **Warehouse** field, select an option from the drop-down menu.</span></span>
-7. <span data-ttu-id="af149-141">I **Ratemotor**-feltet velger du et alternativ fra rullegardinmenyen.</span><span class="sxs-lookup"><span data-stu-id="af149-141">In the **Rate engine** field, select an option from the drop-down menu.</span></span> <span data-ttu-id="af149-142">Velg ratemotoren som er i samsvar med kontrakten du har med transportøren.</span><span class="sxs-lookup"><span data-stu-id="af149-142">Select the Rate engine that is in accordance with the contract that you have with the carrier.</span></span>  
-8. <span data-ttu-id="af149-143">I **Vurderingsstandard**-feltet velger du et alternativ fra rullegardinmenyen.</span><span class="sxs-lookup"><span data-stu-id="af149-143">In the **Rate master** field, select an option from the drop-down menu.</span></span>
-9. <span data-ttu-id="af149-144">I **Transittidmotor**-feltet velger du et alternativ fra rullegardinmenyen.</span><span class="sxs-lookup"><span data-stu-id="af149-144">In the **Transit time engine** field, select an option from the drop-down menu.</span></span>
-10. <span data-ttu-id="af149-145">Velg **Lagre**.</span><span class="sxs-lookup"><span data-stu-id="af149-145">Select **Save**.</span></span>
+## <a name="set-up-the-rating-profile-for-the-shipping-carrier"></a><span data-ttu-id="5a684-134">Definer vurderingsprofilen for transportøren</span><span class="sxs-lookup"><span data-stu-id="5a684-134">Set up the rating profile for the shipping carrier</span></span>
+1. <span data-ttu-id="5a684-135">Aktiver/deaktiver utvidelsen av delen **Vurderingsprofiler** .</span><span class="sxs-lookup"><span data-stu-id="5a684-135">Toggle the expansion of the **Rating profiles** section.</span></span>
+2. <span data-ttu-id="5a684-136">Velg **Ny** .</span><span class="sxs-lookup"><span data-stu-id="5a684-136">Select **New** .</span></span>
+3. <span data-ttu-id="5a684-137">Skriv inn en verdi i feltet **Vurderingsprofil** .</span><span class="sxs-lookup"><span data-stu-id="5a684-137">In the **Rating profile** field, type a value.</span></span>
+4. <span data-ttu-id="5a684-138">Skriv inn en verdi i **Navn** -feltet.</span><span class="sxs-lookup"><span data-stu-id="5a684-138">In the **Name** field, type a value.</span></span>
+5. <span data-ttu-id="5a684-139">I **Område** -feltet velger du et alternativ fra rullegardinmenyen.</span><span class="sxs-lookup"><span data-stu-id="5a684-139">In the **Site** field, select an option from the drop-down menu.</span></span>
+6. <span data-ttu-id="5a684-140">I **Lager** -feltet velger du et alternativ fra rullegardinmenyen.</span><span class="sxs-lookup"><span data-stu-id="5a684-140">In the **Warehouse** field, select an option from the drop-down menu.</span></span>
+7. <span data-ttu-id="5a684-141">I **Ratemotor** -feltet velger du et alternativ fra rullegardinmenyen.</span><span class="sxs-lookup"><span data-stu-id="5a684-141">In the **Rate engine** field, select an option from the drop-down menu.</span></span> <span data-ttu-id="5a684-142">Velg ratemotoren som er i samsvar med kontrakten du har med transportøren.</span><span class="sxs-lookup"><span data-stu-id="5a684-142">Select the Rate engine that is in accordance with the contract that you have with the carrier.</span></span>  
+8. <span data-ttu-id="5a684-143">I **Vurderingsstandard** -feltet velger du et alternativ fra rullegardinmenyen.</span><span class="sxs-lookup"><span data-stu-id="5a684-143">In the **Rate master** field, select an option from the drop-down menu.</span></span>
+9. <span data-ttu-id="5a684-144">I **Transittidmotor** -feltet velger du et alternativ fra rullegardinmenyen.</span><span class="sxs-lookup"><span data-stu-id="5a684-144">In the **Transit time engine** field, select an option from the drop-down menu.</span></span>
+10. <span data-ttu-id="5a684-145">Velg **Lagre** .</span><span class="sxs-lookup"><span data-stu-id="5a684-145">Select **Save** .</span></span>
 

@@ -8,48 +8,49 @@ ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
+ms.search.form: TMSHubAccessorial,TMSAccessorialMaster
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Distribution
-ms.author: shylaw
+ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f385c8079216de0b5e5d16cbdfc9636dd5bc7725
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 82cd18c7109b5a0287ee2eb8b7adf901c97ec7c7
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3214892"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3982630"
 ---
-# <a name="set-up-hub-accessorial-charges-and-accessorial-masters"></a><span data-ttu-id="68e67-103">Definere gebyrer for hubtilbehør og tilbehørsmaler</span><span class="sxs-lookup"><span data-stu-id="68e67-103">Set up hub accessorial charges and accessorial masters</span></span>
+# <a name="set-up-hub-accessorial-charges-and-accessorial-masters"></a><span data-ttu-id="4e4fe-103">Definere gebyrer for hubtilbehør og tilbehørsmaler</span><span class="sxs-lookup"><span data-stu-id="4e4fe-103">Set up hub accessorial charges and accessorial masters</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="68e67-104">Denne fremgangsmåten viser hvordan du oppretter en tilbehørsmal for en hub og bruker denne malen til å opprette et gebyr for hubtilbehør.</span><span class="sxs-lookup"><span data-stu-id="68e67-104">This procedure shows how to create an accessorial master for a hub and use that master to create a hub accessorial charge.</span></span> <span data-ttu-id="68e67-105">Fremgangsmåten bruker USMF-datasettet.</span><span class="sxs-lookup"><span data-stu-id="68e67-105">The procedure uses the USMF dataset.</span></span> <span data-ttu-id="68e67-106">Dette oppsettet utføres vanligvis av en transportkoordinator.</span><span class="sxs-lookup"><span data-stu-id="68e67-106">This set up will typically be done by a transportation coordinator.</span></span>
+<span data-ttu-id="4e4fe-104">Denne fremgangsmåten viser hvordan du oppretter en tilbehørsmal for en hub og bruker denne malen til å opprette et gebyr for hubtilbehør.</span><span class="sxs-lookup"><span data-stu-id="4e4fe-104">This procedure shows how to create an accessorial master for a hub and use that master to create a hub accessorial charge.</span></span> <span data-ttu-id="4e4fe-105">Fremgangsmåten bruker USMF-datasettet.</span><span class="sxs-lookup"><span data-stu-id="4e4fe-105">The procedure uses the USMF dataset.</span></span> <span data-ttu-id="4e4fe-106">Dette oppsettet utføres vanligvis av en transportkoordinator.</span><span class="sxs-lookup"><span data-stu-id="4e4fe-106">This set up will typically be done by a transportation coordinator.</span></span>
 
 
-## <a name="set-up-a-hub-master"></a><span data-ttu-id="68e67-107">Definere en hubmal</span><span class="sxs-lookup"><span data-stu-id="68e67-107">Set up a hub master</span></span>
-1. <span data-ttu-id="68e67-108">Gå til Transportstyring > Oppsett > Vurdering > Tilbehørsmaler.</span><span class="sxs-lookup"><span data-stu-id="68e67-108">Go to Transportation management > Setup > Rating > Accessorial masters.</span></span>
-2. <span data-ttu-id="68e67-109">Klikk Ny.</span><span class="sxs-lookup"><span data-stu-id="68e67-109">Click New.</span></span>
-3. <span data-ttu-id="68e67-110">Angi en verdi i Tilbehørsmal-feltet.</span><span class="sxs-lookup"><span data-stu-id="68e67-110">In the Accessorial master field, type a value.</span></span>
-4. <span data-ttu-id="68e67-111">Skriv inn en verdi i Navn-feltet.</span><span class="sxs-lookup"><span data-stu-id="68e67-111">In the Name field, type a value.</span></span>
-5. <span data-ttu-id="68e67-112">Velg Hub i Tilbehørstype-feltet.</span><span class="sxs-lookup"><span data-stu-id="68e67-112">In the Accessorial type field, select 'Hub'.</span></span>
-6. <span data-ttu-id="68e67-113">Klikk Lagre.</span><span class="sxs-lookup"><span data-stu-id="68e67-113">Click Save.</span></span>
-7. <span data-ttu-id="68e67-114">Lukk siden.</span><span class="sxs-lookup"><span data-stu-id="68e67-114">Close the page.</span></span>
+## <a name="set-up-a-hub-master"></a><span data-ttu-id="4e4fe-107">Definere en hubmal</span><span class="sxs-lookup"><span data-stu-id="4e4fe-107">Set up a hub master</span></span>
+1. <span data-ttu-id="4e4fe-108">Gå til Transportstyring > Oppsett > Vurdering > Tilbehørsmaler.</span><span class="sxs-lookup"><span data-stu-id="4e4fe-108">Go to Transportation management > Setup > Rating > Accessorial masters.</span></span>
+2. <span data-ttu-id="4e4fe-109">Klikk Ny.</span><span class="sxs-lookup"><span data-stu-id="4e4fe-109">Click New.</span></span>
+3. <span data-ttu-id="4e4fe-110">Angi en verdi i Tilbehørsmal-feltet.</span><span class="sxs-lookup"><span data-stu-id="4e4fe-110">In the Accessorial master field, type a value.</span></span>
+4. <span data-ttu-id="4e4fe-111">Skriv inn en verdi i Navn-feltet.</span><span class="sxs-lookup"><span data-stu-id="4e4fe-111">In the Name field, type a value.</span></span>
+5. <span data-ttu-id="4e4fe-112">Velg Hub i Tilbehørstype-feltet.</span><span class="sxs-lookup"><span data-stu-id="4e4fe-112">In the Accessorial type field, select 'Hub'.</span></span>
+6. <span data-ttu-id="4e4fe-113">Klikk Lagre.</span><span class="sxs-lookup"><span data-stu-id="4e4fe-113">Click Save.</span></span>
+7. <span data-ttu-id="4e4fe-114">Lukk siden.</span><span class="sxs-lookup"><span data-stu-id="4e4fe-114">Close the page.</span></span>
 
-## <a name="set-up-a-hub-accessorial-charge"></a><span data-ttu-id="68e67-115">Definer et gebyr for hubtilbehør</span><span class="sxs-lookup"><span data-stu-id="68e67-115">Set up a hub accessorial charge</span></span>
-1. <span data-ttu-id="68e67-116">Gå til Transportstyring > Oppsett > Vurdering > Gebyrer for hubtilbehøret.</span><span class="sxs-lookup"><span data-stu-id="68e67-116">Go to Transportation management > Setup > Rating > Hub accessorial charges.</span></span>
-2. <span data-ttu-id="68e67-117">Klikk Ny.</span><span class="sxs-lookup"><span data-stu-id="68e67-117">Click New.</span></span>
-3. <span data-ttu-id="68e67-118">Skriv inn en verdi i feltet ID for hubtilbehør.</span><span class="sxs-lookup"><span data-stu-id="68e67-118">In the Hub accessorial ID field, type a value.</span></span>
-4. <span data-ttu-id="68e67-119">Klikk rullegardinknappen i Hub-feltet for å åpne oppslaget.</span><span class="sxs-lookup"><span data-stu-id="68e67-119">In the Hub field, click the drop-down button to open the lookup.</span></span>
-5. <span data-ttu-id="68e67-120">Finn og velg ønsket post i listen.</span><span class="sxs-lookup"><span data-stu-id="68e67-120">In the list, find and select the desired record.</span></span>
-6. <span data-ttu-id="68e67-121">Velg et alternativ i feltet Hubposisjon.</span><span class="sxs-lookup"><span data-stu-id="68e67-121">In the Hub position field, select an option.</span></span>
-    * <span data-ttu-id="68e67-122">Du kan opprette tillegget som en henting eller levering.</span><span class="sxs-lookup"><span data-stu-id="68e67-122">You can either create the charge as a pickup or drop-off.</span></span> <span data-ttu-id="68e67-123">Avhengig av valget gjelder tillegget for det tilsvarende transportsegmentet i din rute.</span><span class="sxs-lookup"><span data-stu-id="68e67-123">Depending on your selection the charge will be applied to the corresponding transportation segment on your route.</span></span>  
-7. <span data-ttu-id="68e67-124">Klikk rullegardinknappen i feltet Tilbehørsmal for å åpne oppslaget.</span><span class="sxs-lookup"><span data-stu-id="68e67-124">In the Accessorial master field, click the drop-down button to open the lookup.</span></span>
-8. <span data-ttu-id="68e67-125">Klikk koblingen i den valgte raden i listen.</span><span class="sxs-lookup"><span data-stu-id="68e67-125">In the list, click the link in the selected row.</span></span>
-    * <span data-ttu-id="68e67-126">Velg malen du nettopp opprettet.</span><span class="sxs-lookup"><span data-stu-id="68e67-126">Select the master you just created.</span></span>  
-9. <span data-ttu-id="68e67-127">Klikk Lagre.</span><span class="sxs-lookup"><span data-stu-id="68e67-127">Click Save.</span></span>
-10. <span data-ttu-id="68e67-128">Lukk siden.</span><span class="sxs-lookup"><span data-stu-id="68e67-128">Close the page.</span></span>
+## <a name="set-up-a-hub-accessorial-charge"></a><span data-ttu-id="4e4fe-115">Definer et gebyr for hubtilbehør</span><span class="sxs-lookup"><span data-stu-id="4e4fe-115">Set up a hub accessorial charge</span></span>
+1. <span data-ttu-id="4e4fe-116">Gå til Transportstyring > Oppsett > Vurdering > Gebyrer for hubtilbehøret.</span><span class="sxs-lookup"><span data-stu-id="4e4fe-116">Go to Transportation management > Setup > Rating > Hub accessorial charges.</span></span>
+2. <span data-ttu-id="4e4fe-117">Klikk Ny.</span><span class="sxs-lookup"><span data-stu-id="4e4fe-117">Click New.</span></span>
+3. <span data-ttu-id="4e4fe-118">Skriv inn en verdi i feltet ID for hubtilbehør.</span><span class="sxs-lookup"><span data-stu-id="4e4fe-118">In the Hub accessorial ID field, type a value.</span></span>
+4. <span data-ttu-id="4e4fe-119">Klikk rullegardinknappen i Hub-feltet for å åpne oppslaget.</span><span class="sxs-lookup"><span data-stu-id="4e4fe-119">In the Hub field, click the drop-down button to open the lookup.</span></span>
+5. <span data-ttu-id="4e4fe-120">Finn og velg ønsket post i listen.</span><span class="sxs-lookup"><span data-stu-id="4e4fe-120">In the list, find and select the desired record.</span></span>
+6. <span data-ttu-id="4e4fe-121">Velg et alternativ i feltet Hubposisjon.</span><span class="sxs-lookup"><span data-stu-id="4e4fe-121">In the Hub position field, select an option.</span></span>
+    * <span data-ttu-id="4e4fe-122">Du kan opprette tillegget som en henting eller levering.</span><span class="sxs-lookup"><span data-stu-id="4e4fe-122">You can either create the charge as a pickup or drop-off.</span></span> <span data-ttu-id="4e4fe-123">Avhengig av valget gjelder tillegget for det tilsvarende transportsegmentet i din rute.</span><span class="sxs-lookup"><span data-stu-id="4e4fe-123">Depending on your selection the charge will be applied to the corresponding transportation segment on your route.</span></span>  
+7. <span data-ttu-id="4e4fe-124">Klikk rullegardinknappen i feltet Tilbehørsmal for å åpne oppslaget.</span><span class="sxs-lookup"><span data-stu-id="4e4fe-124">In the Accessorial master field, click the drop-down button to open the lookup.</span></span>
+8. <span data-ttu-id="4e4fe-125">Klikk koblingen i den valgte raden i listen.</span><span class="sxs-lookup"><span data-stu-id="4e4fe-125">In the list, click the link in the selected row.</span></span>
+    * <span data-ttu-id="4e4fe-126">Velg malen du nettopp opprettet.</span><span class="sxs-lookup"><span data-stu-id="4e4fe-126">Select the master you just created.</span></span>  
+9. <span data-ttu-id="4e4fe-127">Klikk Lagre.</span><span class="sxs-lookup"><span data-stu-id="4e4fe-127">Click Save.</span></span>
+10. <span data-ttu-id="4e4fe-128">Lukk siden.</span><span class="sxs-lookup"><span data-stu-id="4e4fe-128">Close the page.</span></span>
 

@@ -15,26 +15,26 @@ ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: ShylaThompson
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d6c59c90d49a4dcf3df4672c5f40d52ed639760c
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: f03efbbca4fc9da76c6ead7566457beb79c8c249
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3206617"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3985871"
 ---
-# <a name="subscription-sales-prices"></a><span data-ttu-id="725d6-103">Salgspriser for abonnement</span><span class="sxs-lookup"><span data-stu-id="725d6-103">Subscription sales prices</span></span>   
+# <a name="subscription-sales-prices"></a><span data-ttu-id="61f16-103">Salgspriser for abonnement</span><span class="sxs-lookup"><span data-stu-id="61f16-103">Subscription sales prices</span></span>   
 
 [!include [banner](../includes/banner.md)]
 
 
-<span data-ttu-id="725d6-104">Når du oppretter et abonnement, avledes salgsprisen fra salgsprisoppsettet som ble opprettet i skjemaet **Salgspris (abonnement)**.</span><span class="sxs-lookup"><span data-stu-id="725d6-104">When you create a subscription, the sales price is derived from the sales price setup that was created in the **Sales price (subscription)** form.</span></span>
+<span data-ttu-id="61f16-104">Når du oppretter et abonnement, avledes salgsprisen fra salgsprisoppsettet som ble opprettet i skjemaet **Salgspris (abonnement)** .</span><span class="sxs-lookup"><span data-stu-id="61f16-104">When you create a subscription, the sales price is derived from the sales price setup that was created in the **Sales price (subscription)** form.</span></span>
 
-<span data-ttu-id="725d6-105">I skjemaet **Salgspris (abonnement)** kan du opprette salgspriser for et bestemt abonnement, eller du kan opprette salgspriser som er mer generelle.</span><span class="sxs-lookup"><span data-stu-id="725d6-105">In the **Sales price (subscription)** form, you can create sales prices for a specific subscription or you can create sales prices that apply more broadly.</span></span> <span data-ttu-id="725d6-106">Før en salgspris kan brukes på et abonnement, må periodekoden og valutaen for abonnementet være identisk med periodekoden og valutaen for salgsprisen.</span><span class="sxs-lookup"><span data-stu-id="725d6-106">For a sales price to be applied to a subscription, the period code and the currency of the subscription must be identical to the period code and the currency of the sales price.</span></span>
+<span data-ttu-id="61f16-105">I skjemaet **Salgspris (abonnement)** kan du opprette salgspriser for et bestemt abonnement, eller du kan opprette salgspriser som er mer generelle.</span><span class="sxs-lookup"><span data-stu-id="61f16-105">In the **Sales price (subscription)** form, you can create sales prices for a specific subscription or you can create sales prices that apply more broadly.</span></span> <span data-ttu-id="61f16-106">Før en salgspris kan brukes på et abonnement, må periodekoden og valutaen for abonnementet være identisk med periodekoden og valutaen for salgsprisen.</span><span class="sxs-lookup"><span data-stu-id="61f16-106">For a sales price to be applied to a subscription, the period code and the currency of the subscription must be identical to the period code and the currency of the sales price.</span></span>
 
-<span data-ttu-id="725d6-107">Hvis periodekoden og valutaen er identiske for abonnementet og salgsprisen, velges salgspriser for abonnement på grunnlag av prioritetene som er angitt i følgende tabell.</span><span class="sxs-lookup"><span data-stu-id="725d6-107">If the period code and currency are identical for the subscription and the sales price, subscription sales prices are selected on the basis of the priorities listed in the following table.</span></span> <span data-ttu-id="725d6-108">En to celle i tabellen angir et tomt felt, og en X angir en verdi som er lik verdien i abonnementet der transaksjonen genereres fra.</span><span class="sxs-lookup"><span data-stu-id="725d6-108">A blank cell in the table indicates an empty field and an X indicates a value that is equal to the value in the subscription from which the transaction is generated.</span></span>
+<span data-ttu-id="61f16-107">Hvis periodekoden og valutaen er identiske for abonnementet og salgsprisen, velges salgspriser for abonnement på grunnlag av prioritetene som er angitt i følgende tabell.</span><span class="sxs-lookup"><span data-stu-id="61f16-107">If the period code and currency are identical for the subscription and the sales price, subscription sales prices are selected on the basis of the priorities listed in the following table.</span></span> <span data-ttu-id="61f16-108">En to celle i tabellen angir et tomt felt, og en X angir en verdi som er lik verdien i abonnementet der transaksjonen genereres fra.</span><span class="sxs-lookup"><span data-stu-id="61f16-108">A blank cell in the table indicates an empty field and an X indicates a value that is equal to the value in the subscription from which the transaction is generated.</span></span>
 
 <table style="width:100%;">
 <colgroup>
@@ -47,96 +47,96 @@ ms.locfileid: "3206617"
 </colgroup>
 <thead>
 <tr class="header">
-<th><p><span data-ttu-id="725d6-109">Prioritet </span><span class="sxs-lookup"><span data-stu-id="725d6-109">Priority</span></span></p></th>
-<th><p><span data-ttu-id="725d6-110"><strong>Kategori</strong></span><span class="sxs-lookup"><span data-stu-id="725d6-110"><strong>Category</strong></span></span></p></th>
-<th><p><span data-ttu-id="725d6-111"><strong>Prosjekt-ID</strong></span><span class="sxs-lookup"><span data-stu-id="725d6-111"><strong>Project ID</strong></span></span></p></th>
-<th><p><span data-ttu-id="725d6-112"><strong>Abonnement</strong></span><span class="sxs-lookup"><span data-stu-id="725d6-112"><strong>Subscription</strong></span></span></p></th>
-<th><p><span data-ttu-id="725d6-113"><strong>Salgsvaluta</strong></span><span class="sxs-lookup"><span data-stu-id="725d6-113"><strong>Sales currency</strong></span></span></p></th>
-<th><p><span data-ttu-id="725d6-114"><strong>Periodekode</strong></span><span class="sxs-lookup"><span data-stu-id="725d6-114"><strong>Period code</strong></span></span></p></th>
+<th><p><span data-ttu-id="61f16-109">Prioritet </span><span class="sxs-lookup"><span data-stu-id="61f16-109">Priority</span></span></p></th>
+<th><p><span data-ttu-id="61f16-110"><strong>Kategori</strong></span><span class="sxs-lookup"><span data-stu-id="61f16-110"><strong>Category</strong></span></span></p></th>
+<th><p><span data-ttu-id="61f16-111"><strong>Prosjekt-ID</strong></span><span class="sxs-lookup"><span data-stu-id="61f16-111"><strong>Project ID</strong></span></span></p></th>
+<th><p><span data-ttu-id="61f16-112"><strong>Abonnement</strong></span><span class="sxs-lookup"><span data-stu-id="61f16-112"><strong>Subscription</strong></span></span></p></th>
+<th><p><span data-ttu-id="61f16-113"><strong>Salgsvaluta</strong></span><span class="sxs-lookup"><span data-stu-id="61f16-113"><strong>Sales currency</strong></span></span></p></th>
+<th><p><span data-ttu-id="61f16-114"><strong>Periodekode</strong></span><span class="sxs-lookup"><span data-stu-id="61f16-114"><strong>Period code</strong></span></span></p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><span data-ttu-id="725d6-115">1</span><span class="sxs-lookup"><span data-stu-id="725d6-115">1</span></span></p></td>
-<td><p><span data-ttu-id="725d6-116">X</span><span class="sxs-lookup"><span data-stu-id="725d6-116">X</span></span></p></td>
-<td><p><span data-ttu-id="725d6-117">X</span><span class="sxs-lookup"><span data-stu-id="725d6-117">X</span></span></p></td>
-<td><p><span data-ttu-id="725d6-118">X</span><span class="sxs-lookup"><span data-stu-id="725d6-118">X</span></span></p></td>
-<td><p><span data-ttu-id="725d6-119">X</span><span class="sxs-lookup"><span data-stu-id="725d6-119">X</span></span></p></td>
-<td><p><span data-ttu-id="725d6-120">X</span><span class="sxs-lookup"><span data-stu-id="725d6-120">X</span></span></p></td>
+<td><p><span data-ttu-id="61f16-115">1</span><span class="sxs-lookup"><span data-stu-id="61f16-115">1</span></span></p></td>
+<td><p><span data-ttu-id="61f16-116">X</span><span class="sxs-lookup"><span data-stu-id="61f16-116">X</span></span></p></td>
+<td><p><span data-ttu-id="61f16-117">X</span><span class="sxs-lookup"><span data-stu-id="61f16-117">X</span></span></p></td>
+<td><p><span data-ttu-id="61f16-118">X</span><span class="sxs-lookup"><span data-stu-id="61f16-118">X</span></span></p></td>
+<td><p><span data-ttu-id="61f16-119">X</span><span class="sxs-lookup"><span data-stu-id="61f16-119">X</span></span></p></td>
+<td><p><span data-ttu-id="61f16-120">X</span><span class="sxs-lookup"><span data-stu-id="61f16-120">X</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="725d6-121">2</span><span class="sxs-lookup"><span data-stu-id="725d6-121">2</span></span></p></td>
+<td><p><span data-ttu-id="61f16-121">2</span><span class="sxs-lookup"><span data-stu-id="61f16-121">2</span></span></p></td>
 <td><p></p></td>
-<td><p><span data-ttu-id="725d6-122">X</span><span class="sxs-lookup"><span data-stu-id="725d6-122">X</span></span></p></td>
-<td><p><span data-ttu-id="725d6-123">X</span><span class="sxs-lookup"><span data-stu-id="725d6-123">X</span></span></p></td>
-<td><p><span data-ttu-id="725d6-124">X</span><span class="sxs-lookup"><span data-stu-id="725d6-124">X</span></span></p></td>
-<td><p><span data-ttu-id="725d6-125">X</span><span class="sxs-lookup"><span data-stu-id="725d6-125">X</span></span></p></td>
+<td><p><span data-ttu-id="61f16-122">X</span><span class="sxs-lookup"><span data-stu-id="61f16-122">X</span></span></p></td>
+<td><p><span data-ttu-id="61f16-123">X</span><span class="sxs-lookup"><span data-stu-id="61f16-123">X</span></span></p></td>
+<td><p><span data-ttu-id="61f16-124">X</span><span class="sxs-lookup"><span data-stu-id="61f16-124">X</span></span></p></td>
+<td><p><span data-ttu-id="61f16-125">X</span><span class="sxs-lookup"><span data-stu-id="61f16-125">X</span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="725d6-126">3</span><span class="sxs-lookup"><span data-stu-id="725d6-126">3</span></span></p></td>
-<td><p><span data-ttu-id="725d6-127">X</span><span class="sxs-lookup"><span data-stu-id="725d6-127">X</span></span></p></td>
+<td><p><span data-ttu-id="61f16-126">3</span><span class="sxs-lookup"><span data-stu-id="61f16-126">3</span></span></p></td>
+<td><p><span data-ttu-id="61f16-127">X</span><span class="sxs-lookup"><span data-stu-id="61f16-127">X</span></span></p></td>
 <td><p></p></td>
-<td><p><span data-ttu-id="725d6-128">X</span><span class="sxs-lookup"><span data-stu-id="725d6-128">X</span></span></p></td>
-<td><p><span data-ttu-id="725d6-129">X</span><span class="sxs-lookup"><span data-stu-id="725d6-129">X</span></span></p></td>
-<td><p><span data-ttu-id="725d6-130">X</span><span class="sxs-lookup"><span data-stu-id="725d6-130">X</span></span></p></td>
+<td><p><span data-ttu-id="61f16-128">X</span><span class="sxs-lookup"><span data-stu-id="61f16-128">X</span></span></p></td>
+<td><p><span data-ttu-id="61f16-129">X</span><span class="sxs-lookup"><span data-stu-id="61f16-129">X</span></span></p></td>
+<td><p><span data-ttu-id="61f16-130">X</span><span class="sxs-lookup"><span data-stu-id="61f16-130">X</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="725d6-131">4</span><span class="sxs-lookup"><span data-stu-id="725d6-131">4</span></span></p></td>
+<td><p><span data-ttu-id="61f16-131">4</span><span class="sxs-lookup"><span data-stu-id="61f16-131">4</span></span></p></td>
 <td><p></p></td>
 <td><p></p></td>
-<td><p><span data-ttu-id="725d6-132">X</span><span class="sxs-lookup"><span data-stu-id="725d6-132">X</span></span></p></td>
-<td><p><span data-ttu-id="725d6-133">X</span><span class="sxs-lookup"><span data-stu-id="725d6-133">X</span></span></p></td>
-<td><p><span data-ttu-id="725d6-134">X</span><span class="sxs-lookup"><span data-stu-id="725d6-134">X</span></span></p></td>
+<td><p><span data-ttu-id="61f16-132">X</span><span class="sxs-lookup"><span data-stu-id="61f16-132">X</span></span></p></td>
+<td><p><span data-ttu-id="61f16-133">X</span><span class="sxs-lookup"><span data-stu-id="61f16-133">X</span></span></p></td>
+<td><p><span data-ttu-id="61f16-134">X</span><span class="sxs-lookup"><span data-stu-id="61f16-134">X</span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="725d6-135">5</span><span class="sxs-lookup"><span data-stu-id="725d6-135">5</span></span></p></td>
-<td><p><span data-ttu-id="725d6-136">X</span><span class="sxs-lookup"><span data-stu-id="725d6-136">X</span></span></p></td>
-<td><p><span data-ttu-id="725d6-137">X</span><span class="sxs-lookup"><span data-stu-id="725d6-137">X</span></span></p></td>
+<td><p><span data-ttu-id="61f16-135">5</span><span class="sxs-lookup"><span data-stu-id="61f16-135">5</span></span></p></td>
+<td><p><span data-ttu-id="61f16-136">X</span><span class="sxs-lookup"><span data-stu-id="61f16-136">X</span></span></p></td>
+<td><p><span data-ttu-id="61f16-137">X</span><span class="sxs-lookup"><span data-stu-id="61f16-137">X</span></span></p></td>
 <td><p></p></td>
-<td><p><span data-ttu-id="725d6-138">X</span><span class="sxs-lookup"><span data-stu-id="725d6-138">X</span></span></p></td>
-<td><p><span data-ttu-id="725d6-139">X</span><span class="sxs-lookup"><span data-stu-id="725d6-139">X</span></span></p></td>
+<td><p><span data-ttu-id="61f16-138">X</span><span class="sxs-lookup"><span data-stu-id="61f16-138">X</span></span></p></td>
+<td><p><span data-ttu-id="61f16-139">X</span><span class="sxs-lookup"><span data-stu-id="61f16-139">X</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="725d6-140">6</span><span class="sxs-lookup"><span data-stu-id="725d6-140">6</span></span></p></td>
+<td><p><span data-ttu-id="61f16-140">6</span><span class="sxs-lookup"><span data-stu-id="61f16-140">6</span></span></p></td>
 <td><p></p></td>
-<td><p><span data-ttu-id="725d6-141">X</span><span class="sxs-lookup"><span data-stu-id="725d6-141">X</span></span></p></td>
+<td><p><span data-ttu-id="61f16-141">X</span><span class="sxs-lookup"><span data-stu-id="61f16-141">X</span></span></p></td>
 <td><p></p></td>
-<td><p><span data-ttu-id="725d6-142">X</span><span class="sxs-lookup"><span data-stu-id="725d6-142">X</span></span></p></td>
-<td><p><span data-ttu-id="725d6-143">X</span><span class="sxs-lookup"><span data-stu-id="725d6-143">X</span></span></p></td>
+<td><p><span data-ttu-id="61f16-142">X</span><span class="sxs-lookup"><span data-stu-id="61f16-142">X</span></span></p></td>
+<td><p><span data-ttu-id="61f16-143">X</span><span class="sxs-lookup"><span data-stu-id="61f16-143">X</span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="725d6-144">7</span><span class="sxs-lookup"><span data-stu-id="725d6-144">7</span></span></p></td>
-<td><p><span data-ttu-id="725d6-145">X</span><span class="sxs-lookup"><span data-stu-id="725d6-145">X</span></span></p></td>
+<td><p><span data-ttu-id="61f16-144">7</span><span class="sxs-lookup"><span data-stu-id="61f16-144">7</span></span></p></td>
+<td><p><span data-ttu-id="61f16-145">X</span><span class="sxs-lookup"><span data-stu-id="61f16-145">X</span></span></p></td>
 <td><p></p></td>
 <td><p></p></td>
-<td><p><span data-ttu-id="725d6-146">X</span><span class="sxs-lookup"><span data-stu-id="725d6-146">X</span></span></p></td>
-<td><p><span data-ttu-id="725d6-147">X</span><span class="sxs-lookup"><span data-stu-id="725d6-147">X</span></span></p></td>
+<td><p><span data-ttu-id="61f16-146">X</span><span class="sxs-lookup"><span data-stu-id="61f16-146">X</span></span></p></td>
+<td><p><span data-ttu-id="61f16-147">X</span><span class="sxs-lookup"><span data-stu-id="61f16-147">X</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="725d6-148">8</span><span class="sxs-lookup"><span data-stu-id="725d6-148">8</span></span></p></td>
+<td><p><span data-ttu-id="61f16-148">8</span><span class="sxs-lookup"><span data-stu-id="61f16-148">8</span></span></p></td>
 <td><p></p></td>
 <td><p></p></td>
 <td><p></p></td>
-<td><p><span data-ttu-id="725d6-149">X</span><span class="sxs-lookup"><span data-stu-id="725d6-149">X</span></span></p></td>
-<td><p><span data-ttu-id="725d6-150">X</span><span class="sxs-lookup"><span data-stu-id="725d6-150">X</span></span></p></td>
+<td><p><span data-ttu-id="61f16-149">X</span><span class="sxs-lookup"><span data-stu-id="61f16-149">X</span></span></p></td>
+<td><p><span data-ttu-id="61f16-150">X</span><span class="sxs-lookup"><span data-stu-id="61f16-150">X</span></span></p></td>
 </tr>
 </tbody>
 </table>
 
 
-<span data-ttu-id="725d6-151">Når det opprettes en abonnementsavgift, velges salgsprisen med det største detaljnivået, som angitt i tabellen ovenfor, som salgsprisen for abonnement.</span><span class="sxs-lookup"><span data-stu-id="725d6-151">When a subscription fee is created, the sales price with the greatest level of detail, as noted in the table above, is selected as the subscription sales price.</span></span>
+<span data-ttu-id="61f16-151">Når det opprettes en abonnementsavgift, velges salgsprisen med det største detaljnivået, som angitt i tabellen ovenfor, som salgsprisen for abonnement.</span><span class="sxs-lookup"><span data-stu-id="61f16-151">When a subscription fee is created, the sales price with the greatest level of detail, as noted in the table above, is selected as the subscription sales price.</span></span>
 
-## <a name="update-and-index-subscription-sales-prices"></a><span data-ttu-id="725d6-152">Oppdatere og indeksere salgspriser for abonnement</span><span class="sxs-lookup"><span data-stu-id="725d6-152">Update and index subscription sales prices</span></span>
+## <a name="update-and-index-subscription-sales-prices"></a><span data-ttu-id="61f16-152">Oppdatere og indeksere salgspriser for abonnement</span><span class="sxs-lookup"><span data-stu-id="61f16-152">Update and index subscription sales prices</span></span>
 
-<span data-ttu-id="725d6-153">Du kan oppdatere salgsprisen for abonnement ved å oppdatere basisprisen eller indeksen.</span><span class="sxs-lookup"><span data-stu-id="725d6-153">You can update the subscription sales price by updating the base price or the index.</span></span> <span data-ttu-id="725d6-154">Du kan oppdatere med en prosentverdi eller til en ny verdi.</span><span class="sxs-lookup"><span data-stu-id="725d6-154">You can update by a percentage or to a new value.</span></span>
+<span data-ttu-id="61f16-153">Du kan oppdatere salgsprisen for abonnement ved å oppdatere basisprisen eller indeksen.</span><span class="sxs-lookup"><span data-stu-id="61f16-153">You can update the subscription sales price by updating the base price or the index.</span></span> <span data-ttu-id="61f16-154">Du kan oppdatere med en prosentverdi eller til en ny verdi.</span><span class="sxs-lookup"><span data-stu-id="61f16-154">You can update by a percentage or to a new value.</span></span>
 
-## <a name="subscription-fee-sales-prices"></a><span data-ttu-id="725d6-155">Salgspriser for abonnementsavgift</span><span class="sxs-lookup"><span data-stu-id="725d6-155">Subscription fee sales prices</span></span>
+## <a name="subscription-fee-sales-prices"></a><span data-ttu-id="61f16-155">Salgspriser for abonnementsavgift</span><span class="sxs-lookup"><span data-stu-id="61f16-155">Subscription fee sales prices</span></span>
 
-<span data-ttu-id="725d6-156">Når du oppretter en abonnementsavgift, er salgsprisen basert på salgsprisoppsettet for abonnementet.</span><span class="sxs-lookup"><span data-stu-id="725d6-156">When you create a subscription fee, the sales price is based on the sales price setup of the subscription.</span></span> <span data-ttu-id="725d6-157">Du kan enten bruke basisprisen fra abonnementets prisoppsett eller opprette indekserte salgspriser.</span><span class="sxs-lookup"><span data-stu-id="725d6-157">You can either use the base price from the subscription price setup or create indexed sales prices.</span></span>
+<span data-ttu-id="61f16-156">Når du oppretter en abonnementsavgift, er salgsprisen basert på salgsprisoppsettet for abonnementet.</span><span class="sxs-lookup"><span data-stu-id="61f16-156">When you create a subscription fee, the sales price is based on the sales price setup of the subscription.</span></span> <span data-ttu-id="61f16-157">Du kan enten bruke basisprisen fra abonnementets prisoppsett eller opprette indekserte salgspriser.</span><span class="sxs-lookup"><span data-stu-id="61f16-157">You can either use the base price from the subscription price setup or create indexed sales prices.</span></span>
 
-## <a name="example"></a><span data-ttu-id="725d6-158">Eksempel</span><span class="sxs-lookup"><span data-stu-id="725d6-158">Example</span></span>
+## <a name="example"></a><span data-ttu-id="61f16-158">Eksempel</span><span class="sxs-lookup"><span data-stu-id="61f16-158">Example</span></span>
 
-<span data-ttu-id="725d6-159">Du vil definere salgspriser for abonnement på EUR 500 for det nye prosjektet 9030.</span><span class="sxs-lookup"><span data-stu-id="725d6-159">You want to set up subscription sales prices of EUR 500 for a new project 9030.</span></span> <span data-ttu-id="725d6-160">I skjemaet **Salgspris (abonnement)** oppretter du en salgsprislinje for abonnement som vist i følgende tabell.</span><span class="sxs-lookup"><span data-stu-id="725d6-160">In the **Sales price (subscription)** form, you create a subscription sales price line as indicated in the following table.</span></span>
+<span data-ttu-id="61f16-159">Du vil definere salgspriser for abonnement på EUR 500 for det nye prosjektet 9030.</span><span class="sxs-lookup"><span data-stu-id="61f16-159">You want to set up subscription sales prices of EUR 500 for a new project 9030.</span></span> <span data-ttu-id="61f16-160">I skjemaet **Salgspris (abonnement)** oppretter du en salgsprislinje for abonnement som vist i følgende tabell.</span><span class="sxs-lookup"><span data-stu-id="61f16-160">In the **Sales price (subscription)** form, you create a subscription sales price line as indicated in the following table.</span></span>
 
 <table style="width:100%;">
 <colgroup>
@@ -150,32 +150,32 @@ ms.locfileid: "3206617"
 </colgroup>
 <thead>
 <tr class="header">
-<th><p><span data-ttu-id="725d6-161">Gyldig fra</span><span class="sxs-lookup"><span data-stu-id="725d6-161">Valid from</span></span></p></th>
-<th><p><span data-ttu-id="725d6-162">Kategori</span><span class="sxs-lookup"><span data-stu-id="725d6-162">Category</span></span></p></th>
-<th><p><span data-ttu-id="725d6-163">Project</span><span class="sxs-lookup"><span data-stu-id="725d6-163">Project</span></span></p></th>
-<th><p><span data-ttu-id="725d6-164">Abonnement</span><span class="sxs-lookup"><span data-stu-id="725d6-164">Subscription</span></span></p></th>
-<th><p><span data-ttu-id="725d6-165">Periodekode</span><span class="sxs-lookup"><span data-stu-id="725d6-165">Period code</span></span></p></th>
-<th><p><span data-ttu-id="725d6-166">Salgsvaluta</span><span class="sxs-lookup"><span data-stu-id="725d6-166">Sales currency</span></span></p></th>
-<th><p><span data-ttu-id="725d6-167">Salgspris</span><span class="sxs-lookup"><span data-stu-id="725d6-167">Sales price</span></span></p></th>
+<th><p><span data-ttu-id="61f16-161">Gyldig fra</span><span class="sxs-lookup"><span data-stu-id="61f16-161">Valid from</span></span></p></th>
+<th><p><span data-ttu-id="61f16-162">Kategori</span><span class="sxs-lookup"><span data-stu-id="61f16-162">Category</span></span></p></th>
+<th><p><span data-ttu-id="61f16-163">Project</span><span class="sxs-lookup"><span data-stu-id="61f16-163">Project</span></span></p></th>
+<th><p><span data-ttu-id="61f16-164">Abonnement</span><span class="sxs-lookup"><span data-stu-id="61f16-164">Subscription</span></span></p></th>
+<th><p><span data-ttu-id="61f16-165">Periodekode</span><span class="sxs-lookup"><span data-stu-id="61f16-165">Period code</span></span></p></th>
+<th><p><span data-ttu-id="61f16-166">Salgsvaluta</span><span class="sxs-lookup"><span data-stu-id="61f16-166">Sales currency</span></span></p></th>
+<th><p><span data-ttu-id="61f16-167">Salgspris</span><span class="sxs-lookup"><span data-stu-id="61f16-167">Sales price</span></span></p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><span data-ttu-id="725d6-168">28.08.2006</span><span class="sxs-lookup"><span data-stu-id="725d6-168">28-08-2006</span></span></p></td>
+<td><p><span data-ttu-id="61f16-168">28.08.2006</span><span class="sxs-lookup"><span data-stu-id="61f16-168">28-08-2006</span></span></p></td>
 <td></td>
-<td><p><span data-ttu-id="725d6-169">9030</span><span class="sxs-lookup"><span data-stu-id="725d6-169">9030</span></span></p></td>
+<td><p><span data-ttu-id="61f16-169">9030</span><span class="sxs-lookup"><span data-stu-id="61f16-169">9030</span></span></p></td>
 <td></td>
-<td><p><span data-ttu-id="725d6-170">Måned</span><span class="sxs-lookup"><span data-stu-id="725d6-170">Month</span></span></p></td>
-<td><p><span data-ttu-id="725d6-171">EUR</span><span class="sxs-lookup"><span data-stu-id="725d6-171">EUR</span></span></p></td>
-<td><p><span data-ttu-id="725d6-172">500</span><span class="sxs-lookup"><span data-stu-id="725d6-172">500</span></span></p></td>
+<td><p><span data-ttu-id="61f16-170">Måned</span><span class="sxs-lookup"><span data-stu-id="61f16-170">Month</span></span></p></td>
+<td><p><span data-ttu-id="61f16-171">EUR</span><span class="sxs-lookup"><span data-stu-id="61f16-171">EUR</span></span></p></td>
+<td><p><span data-ttu-id="61f16-172">500</span><span class="sxs-lookup"><span data-stu-id="61f16-172">500</span></span></p></td>
 </tr>
 </tbody>
 </table>
 
 
-<span data-ttu-id="725d6-173">Legg merke til at feltene **Kategori** og **Abonnement** er tomme.</span><span class="sxs-lookup"><span data-stu-id="725d6-173">Note that the **Category** and **Subscription** fields are empty.</span></span>
+<span data-ttu-id="61f16-173">Legg merke til at feltene **Kategori** og **Abonnement** er tomme.</span><span class="sxs-lookup"><span data-stu-id="61f16-173">Note that the **Category** and **Subscription** fields are empty.</span></span>
 
-<span data-ttu-id="725d6-174">Deretter oppretter du følgende abonnementer:</span><span class="sxs-lookup"><span data-stu-id="725d6-174">You then create the following subscriptions.</span></span>
+<span data-ttu-id="61f16-174">Deretter oppretter du følgende abonnementer:</span><span class="sxs-lookup"><span data-stu-id="61f16-174">You then create the following subscriptions.</span></span>
 
 <table style="width:100%;">
 <colgroup>
@@ -188,44 +188,44 @@ ms.locfileid: "3206617"
 </colgroup>
 <thead>
 <tr class="header">
-<th><p><span data-ttu-id="725d6-175">Serviceabonnement</span><span class="sxs-lookup"><span data-stu-id="725d6-175">Service subscription</span></span></p></th>
-<th><p><span data-ttu-id="725d6-176">Project</span><span class="sxs-lookup"><span data-stu-id="725d6-176">Project</span></span></p></th>
-<th><p><span data-ttu-id="725d6-177">Abonnementsgruppe</span><span class="sxs-lookup"><span data-stu-id="725d6-177">Subscription group</span></span></p></th>
-<th><p><span data-ttu-id="725d6-178">Kategori</span><span class="sxs-lookup"><span data-stu-id="725d6-178">Category</span></span></p></th>
-<th><p><span data-ttu-id="725d6-179">Valuta</span><span class="sxs-lookup"><span data-stu-id="725d6-179">Currency</span></span></p></th>
-<th><p><span data-ttu-id="725d6-180">Periodekode</span><span class="sxs-lookup"><span data-stu-id="725d6-180">Period code</span></span></p></th>
+<th><p><span data-ttu-id="61f16-175">Serviceabonnement</span><span class="sxs-lookup"><span data-stu-id="61f16-175">Service subscription</span></span></p></th>
+<th><p><span data-ttu-id="61f16-176">Project</span><span class="sxs-lookup"><span data-stu-id="61f16-176">Project</span></span></p></th>
+<th><p><span data-ttu-id="61f16-177">Abonnementsgruppe</span><span class="sxs-lookup"><span data-stu-id="61f16-177">Subscription group</span></span></p></th>
+<th><p><span data-ttu-id="61f16-178">Kategori</span><span class="sxs-lookup"><span data-stu-id="61f16-178">Category</span></span></p></th>
+<th><p><span data-ttu-id="61f16-179">Valuta</span><span class="sxs-lookup"><span data-stu-id="61f16-179">Currency</span></span></p></th>
+<th><p><span data-ttu-id="61f16-180">Periodekode</span><span class="sxs-lookup"><span data-stu-id="61f16-180">Period code</span></span></p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><span data-ttu-id="725d6-181">00020_135</span><span class="sxs-lookup"><span data-stu-id="725d6-181">00020_135</span></span></p></td>
-<td><p><span data-ttu-id="725d6-182">9030</span><span class="sxs-lookup"><span data-stu-id="725d6-182">9030</span></span></p></td>
-<td><p><span data-ttu-id="725d6-183">Sub1</span><span class="sxs-lookup"><span data-stu-id="725d6-183">Sub1</span></span></p></td>
-<td><p><span data-ttu-id="725d6-184">SubCat1</span><span class="sxs-lookup"><span data-stu-id="725d6-184">SubCat1</span></span></p></td>
-<td><p><span data-ttu-id="725d6-185">EUR</span><span class="sxs-lookup"><span data-stu-id="725d6-185">EUR</span></span></p></td>
-<td><p><span data-ttu-id="725d6-186">Månedlig</span><span class="sxs-lookup"><span data-stu-id="725d6-186">Monthly</span></span></p></td>
+<td><p><span data-ttu-id="61f16-181">00020_135</span><span class="sxs-lookup"><span data-stu-id="61f16-181">00020_135</span></span></p></td>
+<td><p><span data-ttu-id="61f16-182">9030</span><span class="sxs-lookup"><span data-stu-id="61f16-182">9030</span></span></p></td>
+<td><p><span data-ttu-id="61f16-183">Sub1</span><span class="sxs-lookup"><span data-stu-id="61f16-183">Sub1</span></span></p></td>
+<td><p><span data-ttu-id="61f16-184">SubCat1</span><span class="sxs-lookup"><span data-stu-id="61f16-184">SubCat1</span></span></p></td>
+<td><p><span data-ttu-id="61f16-185">EUR</span><span class="sxs-lookup"><span data-stu-id="61f16-185">EUR</span></span></p></td>
+<td><p><span data-ttu-id="61f16-186">Månedlig</span><span class="sxs-lookup"><span data-stu-id="61f16-186">Monthly</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="725d6-187">00021_135</span><span class="sxs-lookup"><span data-stu-id="725d6-187">00021_135</span></span></p></td>
-<td><p><span data-ttu-id="725d6-188">9030</span><span class="sxs-lookup"><span data-stu-id="725d6-188">9030</span></span></p></td>
-<td><p><span data-ttu-id="725d6-189">Sub1</span><span class="sxs-lookup"><span data-stu-id="725d6-189">Sub1</span></span></p></td>
-<td><p><span data-ttu-id="725d6-190">SubCat2</span><span class="sxs-lookup"><span data-stu-id="725d6-190">SubCat2</span></span></p></td>
-<td><p><span data-ttu-id="725d6-191">EUR</span><span class="sxs-lookup"><span data-stu-id="725d6-191">EUR</span></span></p></td>
-<td><p><span data-ttu-id="725d6-192">Månedlig</span><span class="sxs-lookup"><span data-stu-id="725d6-192">Monthly</span></span></p></td>
+<td><p><span data-ttu-id="61f16-187">00021_135</span><span class="sxs-lookup"><span data-stu-id="61f16-187">00021_135</span></span></p></td>
+<td><p><span data-ttu-id="61f16-188">9030</span><span class="sxs-lookup"><span data-stu-id="61f16-188">9030</span></span></p></td>
+<td><p><span data-ttu-id="61f16-189">Sub1</span><span class="sxs-lookup"><span data-stu-id="61f16-189">Sub1</span></span></p></td>
+<td><p><span data-ttu-id="61f16-190">SubCat2</span><span class="sxs-lookup"><span data-stu-id="61f16-190">SubCat2</span></span></p></td>
+<td><p><span data-ttu-id="61f16-191">EUR</span><span class="sxs-lookup"><span data-stu-id="61f16-191">EUR</span></span></p></td>
+<td><p><span data-ttu-id="61f16-192">Månedlig</span><span class="sxs-lookup"><span data-stu-id="61f16-192">Monthly</span></span></p></td>
 </tr>
 </tbody>
 </table>
 
 
-<span data-ttu-id="725d6-193">Nå oppretter du abonnementsavgifter for begge abonnementer i abonnementsgruppen Sub1:</span><span class="sxs-lookup"><span data-stu-id="725d6-193">Now you create subscription fees for both subscriptions in the subscription group Sub1:</span></span>
+<span data-ttu-id="61f16-193">Nå oppretter du abonnementsavgifter for begge abonnementer i abonnementsgruppen Sub1:</span><span class="sxs-lookup"><span data-stu-id="61f16-193">Now you create subscription fees for both subscriptions in the subscription group Sub1:</span></span>
 
-1.  <span data-ttu-id="725d6-194">Klikk på **Servicestyring** \> **Oppsett** \> **Serviceabonnementer** \> **Abonnementsgrupper**.</span><span class="sxs-lookup"><span data-stu-id="725d6-194">Click **Service management** \> **Setup** \> **Service subscriptions** \> **Subscription groups**.</span></span>
+1.  <span data-ttu-id="61f16-194">Klikk på **Servicestyring** \> **Oppsett** \> **Serviceabonnementer** \> **Abonnementsgrupper** .</span><span class="sxs-lookup"><span data-stu-id="61f16-194">Click **Service management** \> **Setup** \> **Service subscriptions** \> **Subscription groups** .</span></span>
 
-2.  <span data-ttu-id="725d6-195">I skjemaet **Abonnementsgrupper** klikker du **Funksjon** \> **Opprett abonnementsavgift**.</span><span class="sxs-lookup"><span data-stu-id="725d6-195">In the **Subscription groups** form, click **Function** \> **Create subscription fee**.</span></span>
+2.  <span data-ttu-id="61f16-195">I skjemaet **Abonnementsgrupper** klikker du **Funksjon** \> **Opprett abonnementsavgift** .</span><span class="sxs-lookup"><span data-stu-id="61f16-195">In the **Subscription groups** form, click **Function** \> **Create subscription fee** .</span></span>
 
-3.  <span data-ttu-id="725d6-196">Angi aktuell informasjon i skjemaet **Opprett abonnementsavgift**.</span><span class="sxs-lookup"><span data-stu-id="725d6-196">In the **Create subscription fee** form, enter the appropriate information.</span></span> <span data-ttu-id="725d6-197">Hvis du vil ha mer informasjon, kan du se [Opprette abonnementsgebyrtransaksjoner](create-subscription-fee-transactions.md).</span><span class="sxs-lookup"><span data-stu-id="725d6-197">For more information, see [Create subscription fee transactions](create-subscription-fee-transactions.md).</span></span>
+3.  <span data-ttu-id="61f16-196">Angi aktuell informasjon i skjemaet **Opprett abonnementsavgift** .</span><span class="sxs-lookup"><span data-stu-id="61f16-196">In the **Create subscription fee** form, enter the appropriate information.</span></span> <span data-ttu-id="61f16-197">Hvis du vil ha mer informasjon, kan du se [Opprette abonnementsgebyrtransaksjoner](create-subscription-fee-transactions.md).</span><span class="sxs-lookup"><span data-stu-id="61f16-197">For more information, see [Create subscription fee transactions](create-subscription-fee-transactions.md).</span></span>
 
-<span data-ttu-id="725d6-198">Abonnementsavgifter med en salgspris på EUR 500 opprettes for begge abonnementer, som vist i følgende tabell.</span><span class="sxs-lookup"><span data-stu-id="725d6-198">Subscription fees that have a sales price of EUR 500 are created for both subscriptions, as shown in the following table.</span></span>
+<span data-ttu-id="61f16-198">Abonnementsavgifter med en salgspris på EUR 500 opprettes for begge abonnementer, som vist i følgende tabell.</span><span class="sxs-lookup"><span data-stu-id="61f16-198">Subscription fees that have a sales price of EUR 500 are created for both subscriptions, as shown in the following table.</span></span>
 
 <table>
 <colgroup>
@@ -240,42 +240,42 @@ ms.locfileid: "3206617"
 </colgroup>
 <thead>
 <tr class="header">
-<th><p><span data-ttu-id="725d6-199">Prosjektdato</span><span class="sxs-lookup"><span data-stu-id="725d6-199">Project date</span></span></p></th>
-<th><p><span data-ttu-id="725d6-200">Serviceabonnement</span><span class="sxs-lookup"><span data-stu-id="725d6-200">Service subscription</span></span></p></th>
-<th><p><span data-ttu-id="725d6-201">Project</span><span class="sxs-lookup"><span data-stu-id="725d6-201">Project</span></span></p></th>
-<th><p><span data-ttu-id="725d6-202">Kategori</span><span class="sxs-lookup"><span data-stu-id="725d6-202">Category</span></span></p></th>
-<th><p><span data-ttu-id="725d6-203">Startdato</span><span class="sxs-lookup"><span data-stu-id="725d6-203">Start date</span></span></p></th>
-<th><p><span data-ttu-id="725d6-204">Sluttdato</span><span class="sxs-lookup"><span data-stu-id="725d6-204">End date</span></span></p></th>
-<th><p><span data-ttu-id="725d6-205">Salgsvaluta</span><span class="sxs-lookup"><span data-stu-id="725d6-205">Sales currency</span></span></p></th>
-<th><p><span data-ttu-id="725d6-206">Salgspris</span><span class="sxs-lookup"><span data-stu-id="725d6-206">Sales price</span></span></p></th>
+<th><p><span data-ttu-id="61f16-199">Prosjektdato</span><span class="sxs-lookup"><span data-stu-id="61f16-199">Project date</span></span></p></th>
+<th><p><span data-ttu-id="61f16-200">Serviceabonnement</span><span class="sxs-lookup"><span data-stu-id="61f16-200">Service subscription</span></span></p></th>
+<th><p><span data-ttu-id="61f16-201">Project</span><span class="sxs-lookup"><span data-stu-id="61f16-201">Project</span></span></p></th>
+<th><p><span data-ttu-id="61f16-202">Kategori</span><span class="sxs-lookup"><span data-stu-id="61f16-202">Category</span></span></p></th>
+<th><p><span data-ttu-id="61f16-203">Startdato</span><span class="sxs-lookup"><span data-stu-id="61f16-203">Start date</span></span></p></th>
+<th><p><span data-ttu-id="61f16-204">Sluttdato</span><span class="sxs-lookup"><span data-stu-id="61f16-204">End date</span></span></p></th>
+<th><p><span data-ttu-id="61f16-205">Salgsvaluta</span><span class="sxs-lookup"><span data-stu-id="61f16-205">Sales currency</span></span></p></th>
+<th><p><span data-ttu-id="61f16-206">Salgspris</span><span class="sxs-lookup"><span data-stu-id="61f16-206">Sales price</span></span></p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><span data-ttu-id="725d6-207">28.08.2006</span><span class="sxs-lookup"><span data-stu-id="725d6-207">28-08-2006</span></span></p></td>
-<td><p><span data-ttu-id="725d6-208">00020_135</span><span class="sxs-lookup"><span data-stu-id="725d6-208">00020_135</span></span></p></td>
-<td><p><span data-ttu-id="725d6-209">9030</span><span class="sxs-lookup"><span data-stu-id="725d6-209">9030</span></span></p></td>
-<td><p><span data-ttu-id="725d6-210">SubCat1</span><span class="sxs-lookup"><span data-stu-id="725d6-210">SubCat1</span></span></p></td>
-<td><p><span data-ttu-id="725d6-211">01.01.2007</span><span class="sxs-lookup"><span data-stu-id="725d6-211">01-01-2007</span></span></p></td>
-<td><p><span data-ttu-id="725d6-212">31.03.2007</span><span class="sxs-lookup"><span data-stu-id="725d6-212">31-03-2007</span></span></p></td>
-<td><p><span data-ttu-id="725d6-213">EUR</span><span class="sxs-lookup"><span data-stu-id="725d6-213">EUR</span></span></p></td>
-<td><p><span data-ttu-id="725d6-214">500</span><span class="sxs-lookup"><span data-stu-id="725d6-214">500</span></span></p></td>
+<td><p><span data-ttu-id="61f16-207">28.08.2006</span><span class="sxs-lookup"><span data-stu-id="61f16-207">28-08-2006</span></span></p></td>
+<td><p><span data-ttu-id="61f16-208">00020_135</span><span class="sxs-lookup"><span data-stu-id="61f16-208">00020_135</span></span></p></td>
+<td><p><span data-ttu-id="61f16-209">9030</span><span class="sxs-lookup"><span data-stu-id="61f16-209">9030</span></span></p></td>
+<td><p><span data-ttu-id="61f16-210">SubCat1</span><span class="sxs-lookup"><span data-stu-id="61f16-210">SubCat1</span></span></p></td>
+<td><p><span data-ttu-id="61f16-211">01.01.2007</span><span class="sxs-lookup"><span data-stu-id="61f16-211">01-01-2007</span></span></p></td>
+<td><p><span data-ttu-id="61f16-212">31.03.2007</span><span class="sxs-lookup"><span data-stu-id="61f16-212">31-03-2007</span></span></p></td>
+<td><p><span data-ttu-id="61f16-213">EUR</span><span class="sxs-lookup"><span data-stu-id="61f16-213">EUR</span></span></p></td>
+<td><p><span data-ttu-id="61f16-214">500</span><span class="sxs-lookup"><span data-stu-id="61f16-214">500</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="725d6-215">28.08.2006</span><span class="sxs-lookup"><span data-stu-id="725d6-215">28-08-2006</span></span></p></td>
-<td><p><span data-ttu-id="725d6-216">00021_135</span><span class="sxs-lookup"><span data-stu-id="725d6-216">00021_135</span></span></p></td>
-<td><p><span data-ttu-id="725d6-217">9030</span><span class="sxs-lookup"><span data-stu-id="725d6-217">9030</span></span></p></td>
-<td><p><span data-ttu-id="725d6-218">SubCat2</span><span class="sxs-lookup"><span data-stu-id="725d6-218">SubCat2</span></span></p></td>
-<td><p><span data-ttu-id="725d6-219">01.01.2007</span><span class="sxs-lookup"><span data-stu-id="725d6-219">01-01-2007</span></span></p></td>
-<td><p><span data-ttu-id="725d6-220">31.03.2007</span><span class="sxs-lookup"><span data-stu-id="725d6-220">31-03-2007</span></span></p></td>
-<td><p><span data-ttu-id="725d6-221">EUR</span><span class="sxs-lookup"><span data-stu-id="725d6-221">EUR</span></span></p></td>
-<td><p><span data-ttu-id="725d6-222">500</span><span class="sxs-lookup"><span data-stu-id="725d6-222">500</span></span></p></td>
+<td><p><span data-ttu-id="61f16-215">28.08.2006</span><span class="sxs-lookup"><span data-stu-id="61f16-215">28-08-2006</span></span></p></td>
+<td><p><span data-ttu-id="61f16-216">00021_135</span><span class="sxs-lookup"><span data-stu-id="61f16-216">00021_135</span></span></p></td>
+<td><p><span data-ttu-id="61f16-217">9030</span><span class="sxs-lookup"><span data-stu-id="61f16-217">9030</span></span></p></td>
+<td><p><span data-ttu-id="61f16-218">SubCat2</span><span class="sxs-lookup"><span data-stu-id="61f16-218">SubCat2</span></span></p></td>
+<td><p><span data-ttu-id="61f16-219">01.01.2007</span><span class="sxs-lookup"><span data-stu-id="61f16-219">01-01-2007</span></span></p></td>
+<td><p><span data-ttu-id="61f16-220">31.03.2007</span><span class="sxs-lookup"><span data-stu-id="61f16-220">31-03-2007</span></span></p></td>
+<td><p><span data-ttu-id="61f16-221">EUR</span><span class="sxs-lookup"><span data-stu-id="61f16-221">EUR</span></span></p></td>
+<td><p><span data-ttu-id="61f16-222">500</span><span class="sxs-lookup"><span data-stu-id="61f16-222">500</span></span></p></td>
 </tr>
 </tbody>
 </table>
 
 
-<span data-ttu-id="725d6-223">Senere bestemmer du deg for at du vil angi salgspriser for kategorien SubCat1 for prosjekt 9030.</span><span class="sxs-lookup"><span data-stu-id="725d6-223">Later, you decide that you want to specify sales prices for the category SubCat1 for project 9030.</span></span> <span data-ttu-id="725d6-224">Derfor oppretter du en ny salgsprislinje som har en salgspris på EUR 550 for kombinasjonen av prosjekt 9030 og gebyrkategorien SubCat1.</span><span class="sxs-lookup"><span data-stu-id="725d6-224">Therefore, you create a new sales price line that has a sales price of EUR 550 for the combination of project 9030 and fee category SubCat1.</span></span> <span data-ttu-id="725d6-225">Det finnes nå to salgsprislinjer for abonnement for prosjekt 9030, som vist i følgende tabell:</span><span class="sxs-lookup"><span data-stu-id="725d6-225">There are now two subscription sales price lines for project 9030, as shown in the following table.</span></span>
+<span data-ttu-id="61f16-223">Senere bestemmer du deg for at du vil angi salgspriser for kategorien SubCat1 for prosjekt 9030.</span><span class="sxs-lookup"><span data-stu-id="61f16-223">Later, you decide that you want to specify sales prices for the category SubCat1 for project 9030.</span></span> <span data-ttu-id="61f16-224">Derfor oppretter du en ny salgsprislinje som har en salgspris på EUR 550 for kombinasjonen av prosjekt 9030 og gebyrkategorien SubCat1.</span><span class="sxs-lookup"><span data-stu-id="61f16-224">Therefore, you create a new sales price line that has a sales price of EUR 550 for the combination of project 9030 and fee category SubCat1.</span></span> <span data-ttu-id="61f16-225">Det finnes nå to salgsprislinjer for abonnement for prosjekt 9030, som vist i følgende tabell:</span><span class="sxs-lookup"><span data-stu-id="61f16-225">There are now two subscription sales price lines for project 9030, as shown in the following table.</span></span>
 
 <table style="width:100%;">
 <colgroup>
@@ -289,39 +289,39 @@ ms.locfileid: "3206617"
 </colgroup>
 <thead>
 <tr class="header">
-<th><p><span data-ttu-id="725d6-226">Gyldig fra</span><span class="sxs-lookup"><span data-stu-id="725d6-226">Valid from</span></span></p></th>
-<th><p><span data-ttu-id="725d6-227">Kategori</span><span class="sxs-lookup"><span data-stu-id="725d6-227">Category</span></span></p></th>
-<th><p><span data-ttu-id="725d6-228">Project</span><span class="sxs-lookup"><span data-stu-id="725d6-228">Project</span></span></p></th>
-<th><p><span data-ttu-id="725d6-229">Abonnement</span><span class="sxs-lookup"><span data-stu-id="725d6-229">Subscription</span></span></p></th>
-<th><p><span data-ttu-id="725d6-230">Periodekode</span><span class="sxs-lookup"><span data-stu-id="725d6-230">Period code</span></span></p></th>
-<th><p><span data-ttu-id="725d6-231">Valuta</span><span class="sxs-lookup"><span data-stu-id="725d6-231">Currency</span></span></p></th>
-<th><p><span data-ttu-id="725d6-232">Salgspris</span><span class="sxs-lookup"><span data-stu-id="725d6-232">Sales price</span></span></p></th>
+<th><p><span data-ttu-id="61f16-226">Gyldig fra</span><span class="sxs-lookup"><span data-stu-id="61f16-226">Valid from</span></span></p></th>
+<th><p><span data-ttu-id="61f16-227">Kategori</span><span class="sxs-lookup"><span data-stu-id="61f16-227">Category</span></span></p></th>
+<th><p><span data-ttu-id="61f16-228">Project</span><span class="sxs-lookup"><span data-stu-id="61f16-228">Project</span></span></p></th>
+<th><p><span data-ttu-id="61f16-229">Abonnement</span><span class="sxs-lookup"><span data-stu-id="61f16-229">Subscription</span></span></p></th>
+<th><p><span data-ttu-id="61f16-230">Periodekode</span><span class="sxs-lookup"><span data-stu-id="61f16-230">Period code</span></span></p></th>
+<th><p><span data-ttu-id="61f16-231">Valuta</span><span class="sxs-lookup"><span data-stu-id="61f16-231">Currency</span></span></p></th>
+<th><p><span data-ttu-id="61f16-232">Salgspris</span><span class="sxs-lookup"><span data-stu-id="61f16-232">Sales price</span></span></p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><span data-ttu-id="725d6-233">28.08.2007</span><span class="sxs-lookup"><span data-stu-id="725d6-233">28-08-2007</span></span></p></td>
+<td><p><span data-ttu-id="61f16-233">28.08.2007</span><span class="sxs-lookup"><span data-stu-id="61f16-233">28-08-2007</span></span></p></td>
 <td></td>
-<td><p><span data-ttu-id="725d6-234">9030</span><span class="sxs-lookup"><span data-stu-id="725d6-234">9030</span></span></p></td>
+<td><p><span data-ttu-id="61f16-234">9030</span><span class="sxs-lookup"><span data-stu-id="61f16-234">9030</span></span></p></td>
 <td></td>
-<td><p><span data-ttu-id="725d6-235">Måned</span><span class="sxs-lookup"><span data-stu-id="725d6-235">Month</span></span></p></td>
-<td><p><span data-ttu-id="725d6-236">EUR</span><span class="sxs-lookup"><span data-stu-id="725d6-236">EUR</span></span></p></td>
-<td><p><span data-ttu-id="725d6-237">500</span><span class="sxs-lookup"><span data-stu-id="725d6-237">500</span></span></p></td>
+<td><p><span data-ttu-id="61f16-235">Måned</span><span class="sxs-lookup"><span data-stu-id="61f16-235">Month</span></span></p></td>
+<td><p><span data-ttu-id="61f16-236">EUR</span><span class="sxs-lookup"><span data-stu-id="61f16-236">EUR</span></span></p></td>
+<td><p><span data-ttu-id="61f16-237">500</span><span class="sxs-lookup"><span data-stu-id="61f16-237">500</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="725d6-238">28.08.2007</span><span class="sxs-lookup"><span data-stu-id="725d6-238">28-08-2007</span></span></p></td>
-<td><p><span data-ttu-id="725d6-239">SubCat1</span><span class="sxs-lookup"><span data-stu-id="725d6-239">SubCat1</span></span></p></td>
-<td><p><span data-ttu-id="725d6-240">9030</span><span class="sxs-lookup"><span data-stu-id="725d6-240">9030</span></span></p></td>
+<td><p><span data-ttu-id="61f16-238">28.08.2007</span><span class="sxs-lookup"><span data-stu-id="61f16-238">28-08-2007</span></span></p></td>
+<td><p><span data-ttu-id="61f16-239">SubCat1</span><span class="sxs-lookup"><span data-stu-id="61f16-239">SubCat1</span></span></p></td>
+<td><p><span data-ttu-id="61f16-240">9030</span><span class="sxs-lookup"><span data-stu-id="61f16-240">9030</span></span></p></td>
 <td></td>
-<td><p><span data-ttu-id="725d6-241">Måned</span><span class="sxs-lookup"><span data-stu-id="725d6-241">Month</span></span></p></td>
-<td><p><span data-ttu-id="725d6-242">EUR</span><span class="sxs-lookup"><span data-stu-id="725d6-242">EUR</span></span></p></td>
-<td><p><span data-ttu-id="725d6-243">550</span><span class="sxs-lookup"><span data-stu-id="725d6-243">550</span></span></p></td>
+<td><p><span data-ttu-id="61f16-241">Måned</span><span class="sxs-lookup"><span data-stu-id="61f16-241">Month</span></span></p></td>
+<td><p><span data-ttu-id="61f16-242">EUR</span><span class="sxs-lookup"><span data-stu-id="61f16-242">EUR</span></span></p></td>
+<td><p><span data-ttu-id="61f16-243">550</span><span class="sxs-lookup"><span data-stu-id="61f16-243">550</span></span></p></td>
 </tr>
 </tbody>
 </table>
 
 
-<span data-ttu-id="725d6-244">Du gjentar fremgangsmåten som er beskrevet ovenfor for å opprette abonnementsavgifter for begge abonnementer i abonnementsgruppen Sub1.</span><span class="sxs-lookup"><span data-stu-id="725d6-244">You repeat the procedure described above to create subscription fees for both subscriptions in the subscription group Sub1.</span></span> <span data-ttu-id="725d6-245">Tabellen nedenfor viser transaksjonene som opprettes for hvert abonnement som er knyttet til abonnementsgruppen.</span><span class="sxs-lookup"><span data-stu-id="725d6-245">The following table shows the transactions that are created for each subscription that is attached to the subscription group.</span></span>
+<span data-ttu-id="61f16-244">Du gjentar fremgangsmåten som er beskrevet ovenfor for å opprette abonnementsavgifter for begge abonnementer i abonnementsgruppen Sub1.</span><span class="sxs-lookup"><span data-stu-id="61f16-244">You repeat the procedure described above to create subscription fees for both subscriptions in the subscription group Sub1.</span></span> <span data-ttu-id="61f16-245">Tabellen nedenfor viser transaksjonene som opprettes for hvert abonnement som er knyttet til abonnementsgruppen.</span><span class="sxs-lookup"><span data-stu-id="61f16-245">The following table shows the transactions that are created for each subscription that is attached to the subscription group.</span></span>
 
 <table>
 <colgroup>
@@ -336,46 +336,46 @@ ms.locfileid: "3206617"
 </colgroup>
 <thead>
 <tr class="header">
-<th><p><span data-ttu-id="725d6-246">Prosjektdato</span><span class="sxs-lookup"><span data-stu-id="725d6-246">Project date</span></span></p></th>
-<th><p><span data-ttu-id="725d6-247">Abonnement</span><span class="sxs-lookup"><span data-stu-id="725d6-247">Subscription</span></span></p></th>
-<th><p><span data-ttu-id="725d6-248">Project</span><span class="sxs-lookup"><span data-stu-id="725d6-248">Project</span></span></p></th>
-<th><p><span data-ttu-id="725d6-249">Kategori</span><span class="sxs-lookup"><span data-stu-id="725d6-249">Category</span></span></p></th>
-<th><p><span data-ttu-id="725d6-250">Startdato</span><span class="sxs-lookup"><span data-stu-id="725d6-250">Start date</span></span></p></th>
-<th><p><span data-ttu-id="725d6-251">Sluttdato</span><span class="sxs-lookup"><span data-stu-id="725d6-251">End date</span></span></p></th>
-<th><p><span data-ttu-id="725d6-252">Salgsvaluta</span><span class="sxs-lookup"><span data-stu-id="725d6-252">Sales currency</span></span></p></th>
-<th><p><span data-ttu-id="725d6-253">Salgspris</span><span class="sxs-lookup"><span data-stu-id="725d6-253">Sales price</span></span></p></th>
+<th><p><span data-ttu-id="61f16-246">Prosjektdato</span><span class="sxs-lookup"><span data-stu-id="61f16-246">Project date</span></span></p></th>
+<th><p><span data-ttu-id="61f16-247">Abonnement</span><span class="sxs-lookup"><span data-stu-id="61f16-247">Subscription</span></span></p></th>
+<th><p><span data-ttu-id="61f16-248">Project</span><span class="sxs-lookup"><span data-stu-id="61f16-248">Project</span></span></p></th>
+<th><p><span data-ttu-id="61f16-249">Kategori</span><span class="sxs-lookup"><span data-stu-id="61f16-249">Category</span></span></p></th>
+<th><p><span data-ttu-id="61f16-250">Startdato</span><span class="sxs-lookup"><span data-stu-id="61f16-250">Start date</span></span></p></th>
+<th><p><span data-ttu-id="61f16-251">Sluttdato</span><span class="sxs-lookup"><span data-stu-id="61f16-251">End date</span></span></p></th>
+<th><p><span data-ttu-id="61f16-252">Salgsvaluta</span><span class="sxs-lookup"><span data-stu-id="61f16-252">Sales currency</span></span></p></th>
+<th><p><span data-ttu-id="61f16-253">Salgspris</span><span class="sxs-lookup"><span data-stu-id="61f16-253">Sales price</span></span></p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><span data-ttu-id="725d6-254">28.07.2007</span><span class="sxs-lookup"><span data-stu-id="725d6-254">28-07-2007</span></span></p></td>
-<td><p><span data-ttu-id="725d6-255">00020_135</span><span class="sxs-lookup"><span data-stu-id="725d6-255">00020_135</span></span></p></td>
-<td><p><span data-ttu-id="725d6-256">9030</span><span class="sxs-lookup"><span data-stu-id="725d6-256">9030</span></span></p></td>
-<td><p><span data-ttu-id="725d6-257">SubCat1</span><span class="sxs-lookup"><span data-stu-id="725d6-257">SubCat1</span></span></p></td>
-<td><p><span data-ttu-id="725d6-258">01.01.2008</span><span class="sxs-lookup"><span data-stu-id="725d6-258">01-01-2008</span></span></p></td>
-<td><p><span data-ttu-id="725d6-259">31.03.2008</span><span class="sxs-lookup"><span data-stu-id="725d6-259">31-03-2008</span></span></p></td>
-<td><p><span data-ttu-id="725d6-260">EUR</span><span class="sxs-lookup"><span data-stu-id="725d6-260">EUR</span></span></p></td>
-<td><p><span data-ttu-id="725d6-261">550</span><span class="sxs-lookup"><span data-stu-id="725d6-261">550</span></span></p></td>
+<td><p><span data-ttu-id="61f16-254">28.07.2007</span><span class="sxs-lookup"><span data-stu-id="61f16-254">28-07-2007</span></span></p></td>
+<td><p><span data-ttu-id="61f16-255">00020_135</span><span class="sxs-lookup"><span data-stu-id="61f16-255">00020_135</span></span></p></td>
+<td><p><span data-ttu-id="61f16-256">9030</span><span class="sxs-lookup"><span data-stu-id="61f16-256">9030</span></span></p></td>
+<td><p><span data-ttu-id="61f16-257">SubCat1</span><span class="sxs-lookup"><span data-stu-id="61f16-257">SubCat1</span></span></p></td>
+<td><p><span data-ttu-id="61f16-258">01.01.2008</span><span class="sxs-lookup"><span data-stu-id="61f16-258">01-01-2008</span></span></p></td>
+<td><p><span data-ttu-id="61f16-259">31.03.2008</span><span class="sxs-lookup"><span data-stu-id="61f16-259">31-03-2008</span></span></p></td>
+<td><p><span data-ttu-id="61f16-260">EUR</span><span class="sxs-lookup"><span data-stu-id="61f16-260">EUR</span></span></p></td>
+<td><p><span data-ttu-id="61f16-261">550</span><span class="sxs-lookup"><span data-stu-id="61f16-261">550</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="725d6-262">28.07.2008</span><span class="sxs-lookup"><span data-stu-id="725d6-262">28-07-2008</span></span></p></td>
-<td><p><span data-ttu-id="725d6-263">00021_135</span><span class="sxs-lookup"><span data-stu-id="725d6-263">00021_135</span></span></p></td>
-<td><p><span data-ttu-id="725d6-264">9030</span><span class="sxs-lookup"><span data-stu-id="725d6-264">9030</span></span></p></td>
-<td><p><span data-ttu-id="725d6-265">SubCat2</span><span class="sxs-lookup"><span data-stu-id="725d6-265">SubCat2</span></span></p></td>
-<td><p><span data-ttu-id="725d6-266">01.01.2008</span><span class="sxs-lookup"><span data-stu-id="725d6-266">01-01-2008</span></span></p></td>
-<td><p><span data-ttu-id="725d6-267">31.03.2008</span><span class="sxs-lookup"><span data-stu-id="725d6-267">31-03-2008</span></span></p></td>
-<td><p><span data-ttu-id="725d6-268">EUR</span><span class="sxs-lookup"><span data-stu-id="725d6-268">EUR</span></span></p></td>
-<td><p><span data-ttu-id="725d6-269">500</span><span class="sxs-lookup"><span data-stu-id="725d6-269">500</span></span></p></td>
+<td><p><span data-ttu-id="61f16-262">28.07.2008</span><span class="sxs-lookup"><span data-stu-id="61f16-262">28-07-2008</span></span></p></td>
+<td><p><span data-ttu-id="61f16-263">00021_135</span><span class="sxs-lookup"><span data-stu-id="61f16-263">00021_135</span></span></p></td>
+<td><p><span data-ttu-id="61f16-264">9030</span><span class="sxs-lookup"><span data-stu-id="61f16-264">9030</span></span></p></td>
+<td><p><span data-ttu-id="61f16-265">SubCat2</span><span class="sxs-lookup"><span data-stu-id="61f16-265">SubCat2</span></span></p></td>
+<td><p><span data-ttu-id="61f16-266">01.01.2008</span><span class="sxs-lookup"><span data-stu-id="61f16-266">01-01-2008</span></span></p></td>
+<td><p><span data-ttu-id="61f16-267">31.03.2008</span><span class="sxs-lookup"><span data-stu-id="61f16-267">31-03-2008</span></span></p></td>
+<td><p><span data-ttu-id="61f16-268">EUR</span><span class="sxs-lookup"><span data-stu-id="61f16-268">EUR</span></span></p></td>
+<td><p><span data-ttu-id="61f16-269">500</span><span class="sxs-lookup"><span data-stu-id="61f16-269">500</span></span></p></td>
 </tr>
 </tbody>
 </table>
 
 
-<span data-ttu-id="725d6-270">I den første transaksjonen for abonnement 00020\_135 er salgsprisen på EUR 550 avledet fra salgsprisen for abonnement som er definert for kombinasjonen av det bestemte prosjektet og kategorien.</span><span class="sxs-lookup"><span data-stu-id="725d6-270">In the first transaction for subscription 00020\_135, the sales price of EUR 550 derives from the subscription sales price that is set up for the combination of the specific project and category.</span></span> <span data-ttu-id="725d6-271">I den andre transaksjonen for abonnement 00021\_135 brukes salgsprisen på EUR 500 som salgsprisen for prosjektabonnement, fordi det ikke er definert en pris for kombinasjonen av prosjekt 9030 og kategori SubCat2.</span><span class="sxs-lookup"><span data-stu-id="725d6-271">In the second transaction for subscription 00021\_135, the sales price of EUR 500 is used as the project subscription sales price because there is no price set up for the combination of project 9030 and category SubCat2.</span></span>
+<span data-ttu-id="61f16-270">I den første transaksjonen for abonnement 00020\_135 er salgsprisen på EUR 550 avledet fra salgsprisen for abonnement som er definert for kombinasjonen av det bestemte prosjektet og kategorien.</span><span class="sxs-lookup"><span data-stu-id="61f16-270">In the first transaction for subscription 00020\_135, the sales price of EUR 550 derives from the subscription sales price that is set up for the combination of the specific project and category.</span></span> <span data-ttu-id="61f16-271">I den andre transaksjonen for abonnement 00021\_135 brukes salgsprisen på EUR 500 som salgsprisen for prosjektabonnement, fordi det ikke er definert en pris for kombinasjonen av prosjekt 9030 og kategori SubCat2.</span><span class="sxs-lookup"><span data-stu-id="61f16-271">In the second transaction for subscription 00021\_135, the sales price of EUR 500 is used as the project subscription sales price because there is no price set up for the combination of project 9030 and category SubCat2.</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="725d6-272">Se også</span><span class="sxs-lookup"><span data-stu-id="725d6-272">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="61f16-272">Se også</span><span class="sxs-lookup"><span data-stu-id="61f16-272">See also</span></span>
 
-[<span data-ttu-id="725d6-273">Oppdatere og indeksere salgspriser for abonnement</span><span class="sxs-lookup"><span data-stu-id="725d6-273">Update and index subscription sales prices</span></span>](update-and-index-subscription-sales-prices.md)
+[<span data-ttu-id="61f16-273">Oppdatere og indeksere salgspriser for abonnement</span><span class="sxs-lookup"><span data-stu-id="61f16-273">Update and index subscription sales prices</span></span>](update-and-index-subscription-sales-prices.md)
 
   
 

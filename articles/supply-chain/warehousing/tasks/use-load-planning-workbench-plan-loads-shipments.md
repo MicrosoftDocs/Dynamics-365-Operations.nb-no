@@ -13,50 +13,50 @@ ms.reviewer: kamaybac
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Distribution
-ms.author: shylaw
+ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6a6af2f0623744f2cddf46c0310231afb0870fd7
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 7966c6e445e0e44cd4ff8518926aa6b410502e13
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3216741"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3980441"
 ---
-# <a name="plan-loads-and-shipments-using-the-load-planning-workbench"></a><span data-ttu-id="270ff-103">Planlegge laster og leveringer ved hjelp av arbeidsområdet for lastplanlegging</span><span class="sxs-lookup"><span data-stu-id="270ff-103">Plan loads and shipments using the Load planning workbench</span></span>
+# <a name="plan-loads-and-shipments-using-the-load-planning-workbench"></a><span data-ttu-id="5aabd-103">Planlegge laster og leveringer ved hjelp av arbeidsområdet for lastplanlegging</span><span class="sxs-lookup"><span data-stu-id="5aabd-103">Plan loads and shipments using the Load planning workbench</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="270ff-104">Dette emnet viser hvordan du bruker arbeidsområdet for lastplanlegging til å opprette en last for en salgsordre.</span><span class="sxs-lookup"><span data-stu-id="270ff-104">This topic shows how to use the load planning workbench to create a load for a sales order.</span></span> <span data-ttu-id="270ff-105">Som en forutsetning skal vi først opprette salgsordren.</span><span class="sxs-lookup"><span data-stu-id="270ff-105">As a prerequisite we'll create the sales order first.</span></span> <span data-ttu-id="270ff-106">Denne prosedyren er en del av det daglige arbeidet for transportkoordinator.</span><span class="sxs-lookup"><span data-stu-id="270ff-106">This procedure is part of the daily work for the transportation coordinator.</span></span> <span data-ttu-id="270ff-107">Demonstrasjonsdatafirmaet USMF brukes til å opprette denne fremgangsmåten.</span><span class="sxs-lookup"><span data-stu-id="270ff-107">The demo data company used to create this procedure is USMF.</span></span>
+<span data-ttu-id="5aabd-104">Dette emnet viser hvordan du bruker arbeidsområdet for lastplanlegging til å opprette en last for en salgsordre.</span><span class="sxs-lookup"><span data-stu-id="5aabd-104">This topic shows how to use the load planning workbench to create a load for a sales order.</span></span> <span data-ttu-id="5aabd-105">Som en forutsetning skal vi først opprette salgsordren.</span><span class="sxs-lookup"><span data-stu-id="5aabd-105">As a prerequisite we'll create the sales order first.</span></span> <span data-ttu-id="5aabd-106">Denne prosedyren er en del av det daglige arbeidet for transportkoordinator.</span><span class="sxs-lookup"><span data-stu-id="5aabd-106">This procedure is part of the daily work for the transportation coordinator.</span></span> <span data-ttu-id="5aabd-107">Demonstrasjonsdatafirmaet USMF brukes til å opprette denne fremgangsmåten.</span><span class="sxs-lookup"><span data-stu-id="5aabd-107">The demo data company used to create this procedure is USMF.</span></span>
 
 
-## <a name="create-a-sales-order"></a><span data-ttu-id="270ff-108">Opprette en salgsordre</span><span class="sxs-lookup"><span data-stu-id="270ff-108">Create a sales order</span></span>
-1. <span data-ttu-id="270ff-109">Gå til **Navigasjonsrute > Moduler > Kunder > Ordrer > Alle salgsordrer**.</span><span class="sxs-lookup"><span data-stu-id="270ff-109">Go to the **Navigation pane > Modules > Accounts receivable > Orders > All sales orders**.</span></span>
-2. <span data-ttu-id="270ff-110">Velg **Ny**.</span><span class="sxs-lookup"><span data-stu-id="270ff-110">Select **New**.</span></span>
-3. <span data-ttu-id="270ff-111">Klikk på rullegardinknappen i **Kundekonto**-feltet for å åpne oppslaget.</span><span class="sxs-lookup"><span data-stu-id="270ff-111">In the **Customer account** field, select the drop-down button to open the lookup.</span></span>
-4. <span data-ttu-id="270ff-112">Velg konto **US-004**.</span><span class="sxs-lookup"><span data-stu-id="270ff-112">Select account **US-004**.</span></span>
-5. <span data-ttu-id="270ff-113">Velg **OK**.</span><span class="sxs-lookup"><span data-stu-id="270ff-113">Select **OK**.</span></span>
-6. <span data-ttu-id="270ff-114">Klikk på rullegardinknappen i **Varenummer**-feltet for å åpne oppslaget.</span><span class="sxs-lookup"><span data-stu-id="270ff-114">In the **Item number** field, select the drop-down button to open the lookup.</span></span>
-7. <span data-ttu-id="270ff-115">Velg vare **A0001**.</span><span class="sxs-lookup"><span data-stu-id="270ff-115">Select item **A0001**.</span></span> <span data-ttu-id="270ff-116">**A0001** er aktivert for transportstyring.</span><span class="sxs-lookup"><span data-stu-id="270ff-116">**A0001** is enabled for transportation management.</span></span>  
-8. <span data-ttu-id="270ff-117">Klikk på rullegardinknappen i feltet **Område** for å velge et element.</span><span class="sxs-lookup"><span data-stu-id="270ff-117">In the **Site** field, select the drop-down button to open the lookup, then select an item.</span></span>
-9. <span data-ttu-id="270ff-118">Angi et tall i **Antall**-feltet.</span><span class="sxs-lookup"><span data-stu-id="270ff-118">In the **Quantity** field, enter a number.</span></span>
-10. <span data-ttu-id="270ff-119">I **Lager**-feltet skriver du inn 24 for dette eksemplet.</span><span class="sxs-lookup"><span data-stu-id="270ff-119">In the **Warehouse** field, type '24' for this example.</span></span> <span data-ttu-id="270ff-120">Dette lageret er aktivert for transportstyring og avansert lagerstyring.</span><span class="sxs-lookup"><span data-stu-id="270ff-120">This warehouse is enabled for transportation management and advanced warehouse management.</span></span>  
-11. <span data-ttu-id="270ff-121">Velg **Lagre**.</span><span class="sxs-lookup"><span data-stu-id="270ff-121">Select **Save**.</span></span>
-12. <span data-ttu-id="270ff-122">Lukk siden.</span><span class="sxs-lookup"><span data-stu-id="270ff-122">Close the page.</span></span>
+## <a name="create-a-sales-order"></a><span data-ttu-id="5aabd-108">Opprette en salgsordre</span><span class="sxs-lookup"><span data-stu-id="5aabd-108">Create a sales order</span></span>
+1. <span data-ttu-id="5aabd-109">Gå til **Navigasjonsrute > Moduler > Kunder > Ordrer > Alle salgsordrer** .</span><span class="sxs-lookup"><span data-stu-id="5aabd-109">Go to the **Navigation pane > Modules > Accounts receivable > Orders > All sales orders** .</span></span>
+2. <span data-ttu-id="5aabd-110">Velg **Ny** .</span><span class="sxs-lookup"><span data-stu-id="5aabd-110">Select **New** .</span></span>
+3. <span data-ttu-id="5aabd-111">Klikk på rullegardinknappen i **Kundekonto** -feltet for å åpne oppslaget.</span><span class="sxs-lookup"><span data-stu-id="5aabd-111">In the **Customer account** field, select the drop-down button to open the lookup.</span></span>
+4. <span data-ttu-id="5aabd-112">Velg konto **US-004** .</span><span class="sxs-lookup"><span data-stu-id="5aabd-112">Select account **US-004** .</span></span>
+5. <span data-ttu-id="5aabd-113">Velg **OK** .</span><span class="sxs-lookup"><span data-stu-id="5aabd-113">Select **OK** .</span></span>
+6. <span data-ttu-id="5aabd-114">Klikk på rullegardinknappen i **Varenummer** -feltet for å åpne oppslaget.</span><span class="sxs-lookup"><span data-stu-id="5aabd-114">In the **Item number** field, select the drop-down button to open the lookup.</span></span>
+7. <span data-ttu-id="5aabd-115">Velg vare **A0001** .</span><span class="sxs-lookup"><span data-stu-id="5aabd-115">Select item **A0001** .</span></span> <span data-ttu-id="5aabd-116">**A0001** er aktivert for transportstyring.</span><span class="sxs-lookup"><span data-stu-id="5aabd-116">**A0001** is enabled for transportation management.</span></span>  
+8. <span data-ttu-id="5aabd-117">Klikk på rullegardinknappen i feltet **Område** for å velge et element.</span><span class="sxs-lookup"><span data-stu-id="5aabd-117">In the **Site** field, select the drop-down button to open the lookup, then select an item.</span></span>
+9. <span data-ttu-id="5aabd-118">Angi et tall i **Antall** -feltet.</span><span class="sxs-lookup"><span data-stu-id="5aabd-118">In the **Quantity** field, enter a number.</span></span>
+10. <span data-ttu-id="5aabd-119">I **Lager** -feltet skriver du inn 24 for dette eksemplet.</span><span class="sxs-lookup"><span data-stu-id="5aabd-119">In the **Warehouse** field, type '24' for this example.</span></span> <span data-ttu-id="5aabd-120">Dette lageret er aktivert for transportstyring og avansert lagerstyring.</span><span class="sxs-lookup"><span data-stu-id="5aabd-120">This warehouse is enabled for transportation management and advanced warehouse management.</span></span>  
+11. <span data-ttu-id="5aabd-121">Velg **Lagre** .</span><span class="sxs-lookup"><span data-stu-id="5aabd-121">Select **Save** .</span></span>
+12. <span data-ttu-id="5aabd-122">Lukk siden.</span><span class="sxs-lookup"><span data-stu-id="5aabd-122">Close the page.</span></span>
 
-## <a name="create-a-new-load"></a><span data-ttu-id="270ff-123">Opprette en ny last</span><span class="sxs-lookup"><span data-stu-id="270ff-123">Create a new load</span></span>
-1. <span data-ttu-id="270ff-124">Gå til **Navigasjonsrute > Moduler > Transportatstyring > Planlegging > Arbeidsområde for lastplanlegging**.</span><span class="sxs-lookup"><span data-stu-id="270ff-124">Go to the **Navigation pane > Modules > Transportation management > Planning > Load planning workbench**.</span></span>
-2. <span data-ttu-id="270ff-125">Velg kategorien **Salgslinjer**. Nå vil du bygge belastningen for salgsordren som du nettopp opprettet.</span><span class="sxs-lookup"><span data-stu-id="270ff-125">Select the **Sales lines** tab. Now you'll build the load for the sales order that you just created.</span></span> <span data-ttu-id="270ff-126">Belastninger kan bygges basert på tilbud og etterspørsel fra bestillinger, salgsordrer og overføringsordrer.</span><span class="sxs-lookup"><span data-stu-id="270ff-126">Loads can be built based on supply and demand from purchase orders, transfer orders, and sales orders.</span></span>  
-3. <span data-ttu-id="270ff-127">Velg **Forsyning og behov** i handlingsruten.</span><span class="sxs-lookup"><span data-stu-id="270ff-127">On the Action Pane, select **Supply and demand**.</span></span>
-4. <span data-ttu-id="270ff-128">Velg **Til ny belastning**.</span><span class="sxs-lookup"><span data-stu-id="270ff-128">Select **To new load**.</span></span>
-5. <span data-ttu-id="270ff-129">Klikk rullegardinknappen i feltet **Lastmal-ID** for å åpne oppslaget.</span><span class="sxs-lookup"><span data-stu-id="270ff-129">In the **Load template ID** field, select the drop-down button to open the lookup.</span></span> <span data-ttu-id="270ff-130">Lastmalen angir maksimale mål for vekt og volum for hele belastningen.</span><span class="sxs-lookup"><span data-stu-id="270ff-130">The Load template defines maximum measurements for weight and volume of the entire load.</span></span> <span data-ttu-id="270ff-131">Lastmalen kan for eksempel representere størrelsen på en container eller lastebil.</span><span class="sxs-lookup"><span data-stu-id="270ff-131">For example, the load template might represent the size of a container or truck.</span></span> <span data-ttu-id="270ff-132">Velg en vare.</span><span class="sxs-lookup"><span data-stu-id="270ff-132">Select an item.</span></span>
-6. <span data-ttu-id="270ff-133">Velg **OK**.</span><span class="sxs-lookup"><span data-stu-id="270ff-133">Select **OK**.</span></span>
+## <a name="create-a-new-load"></a><span data-ttu-id="5aabd-123">Opprette en ny last</span><span class="sxs-lookup"><span data-stu-id="5aabd-123">Create a new load</span></span>
+1. <span data-ttu-id="5aabd-124">Gå til **Navigasjonsrute > Moduler > Transportatstyring > Planlegging > Arbeidsområde for lastplanlegging** .</span><span class="sxs-lookup"><span data-stu-id="5aabd-124">Go to the **Navigation pane > Modules > Transportation management > Planning > Load planning workbench** .</span></span>
+2. <span data-ttu-id="5aabd-125">Velg kategorien **Salgslinjer** . Nå vil du bygge belastningen for salgsordren som du nettopp opprettet.</span><span class="sxs-lookup"><span data-stu-id="5aabd-125">Select the **Sales lines** tab. Now you'll build the load for the sales order that you just created.</span></span> <span data-ttu-id="5aabd-126">Belastninger kan bygges basert på tilbud og etterspørsel fra bestillinger, salgsordrer og overføringsordrer.</span><span class="sxs-lookup"><span data-stu-id="5aabd-126">Loads can be built based on supply and demand from purchase orders, transfer orders, and sales orders.</span></span>  
+3. <span data-ttu-id="5aabd-127">Velg **Forsyning og behov** i handlingsruten.</span><span class="sxs-lookup"><span data-stu-id="5aabd-127">On the Action Pane, select **Supply and demand** .</span></span>
+4. <span data-ttu-id="5aabd-128">Velg **Til ny belastning** .</span><span class="sxs-lookup"><span data-stu-id="5aabd-128">Select **To new load** .</span></span>
+5. <span data-ttu-id="5aabd-129">Klikk rullegardinknappen i feltet **Lastmal-ID** for å åpne oppslaget.</span><span class="sxs-lookup"><span data-stu-id="5aabd-129">In the **Load template ID** field, select the drop-down button to open the lookup.</span></span> <span data-ttu-id="5aabd-130">Lastmalen angir maksimale mål for vekt og volum for hele belastningen.</span><span class="sxs-lookup"><span data-stu-id="5aabd-130">The Load template defines maximum measurements for weight and volume of the entire load.</span></span> <span data-ttu-id="5aabd-131">Lastmalen kan for eksempel representere størrelsen på en container eller lastebil.</span><span class="sxs-lookup"><span data-stu-id="5aabd-131">For example, the load template might represent the size of a container or truck.</span></span> <span data-ttu-id="5aabd-132">Velg en vare.</span><span class="sxs-lookup"><span data-stu-id="5aabd-132">Select an item.</span></span>
+6. <span data-ttu-id="5aabd-133">Velg **OK** .</span><span class="sxs-lookup"><span data-stu-id="5aabd-133">Select **OK** .</span></span>
 
-## <a name="rate-and-route-the-load"></a><span data-ttu-id="270ff-134">Vurdere og rute lasten</span><span class="sxs-lookup"><span data-stu-id="270ff-134">Rate and route the load</span></span>
-1. <span data-ttu-id="270ff-135">Velg **Vurdering og ruting**.</span><span class="sxs-lookup"><span data-stu-id="270ff-135">Select **Rating and routing**.</span></span>
-2. <span data-ttu-id="270ff-136">Velg **Arbeidsområde for vurderingsrute**.</span><span class="sxs-lookup"><span data-stu-id="270ff-136">Select **Rate route workbench**.</span></span>
-3. <span data-ttu-id="270ff-137">Velg **Vurder butikk**.</span><span class="sxs-lookup"><span data-stu-id="270ff-137">Select **Rate shop**.</span></span>
-4. <span data-ttu-id="270ff-138">Finn og velg ønsket post i listen.</span><span class="sxs-lookup"><span data-stu-id="270ff-138">In the list, find and select the desired record.</span></span>
-5. <span data-ttu-id="270ff-139">Velg **Tilordne**.</span><span class="sxs-lookup"><span data-stu-id="270ff-139">Select **Assign**.</span></span>
-6. <span data-ttu-id="270ff-140">Lukk siden.</span><span class="sxs-lookup"><span data-stu-id="270ff-140">Close the page.</span></span>
+## <a name="rate-and-route-the-load"></a><span data-ttu-id="5aabd-134">Vurdere og rute lasten</span><span class="sxs-lookup"><span data-stu-id="5aabd-134">Rate and route the load</span></span>
+1. <span data-ttu-id="5aabd-135">Velg **Vurdering og ruting** .</span><span class="sxs-lookup"><span data-stu-id="5aabd-135">Select **Rating and routing** .</span></span>
+2. <span data-ttu-id="5aabd-136">Velg **Arbeidsområde for vurderingsrute** .</span><span class="sxs-lookup"><span data-stu-id="5aabd-136">Select **Rate route workbench** .</span></span>
+3. <span data-ttu-id="5aabd-137">Velg **Vurder butikk** .</span><span class="sxs-lookup"><span data-stu-id="5aabd-137">Select **Rate shop** .</span></span>
+4. <span data-ttu-id="5aabd-138">Finn og velg ønsket post i listen.</span><span class="sxs-lookup"><span data-stu-id="5aabd-138">In the list, find and select the desired record.</span></span>
+5. <span data-ttu-id="5aabd-139">Velg **Tilordne** .</span><span class="sxs-lookup"><span data-stu-id="5aabd-139">Select **Assign** .</span></span>
+6. <span data-ttu-id="5aabd-140">Lukk siden.</span><span class="sxs-lookup"><span data-stu-id="5aabd-140">Close the page.</span></span>
 

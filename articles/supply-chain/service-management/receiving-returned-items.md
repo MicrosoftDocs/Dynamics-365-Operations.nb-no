@@ -15,32 +15,32 @@ ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: ShylaThompson
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 234d430d75611dc777bb03fff1070f2a8c78ea6f
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 4957d9a80ecb98b647ca73dfddc35cd450c6160e
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3211750"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3975710"
 ---
-# <a name="receive-returned-items"></a><span data-ttu-id="54160-103">Motta returnerte varer</span><span class="sxs-lookup"><span data-stu-id="54160-103">Receive returned items</span></span> 
+# <a name="receive-returned-items"></a><span data-ttu-id="d74f6-103">Motta returnerte varer</span><span class="sxs-lookup"><span data-stu-id="d74f6-103">Receive returned items</span></span> 
 
 [!include [banner](../includes/banner.md)]
 
 
-<span data-ttu-id="54160-104">Når en returforsendelse ankommer, samsvarer du den med en returordre som allerede er opprettet.</span><span class="sxs-lookup"><span data-stu-id="54160-104">When a return shipment arrives, you match it to a return order that has already been created.</span></span>
+<span data-ttu-id="d74f6-104">Når en returforsendelse ankommer, samsvarer du den med en returordre som allerede er opprettet.</span><span class="sxs-lookup"><span data-stu-id="d74f6-104">When a return shipment arrives, you match it to a return order that has already been created.</span></span>
 
-<span data-ttu-id="54160-105">Avhengig av firmaets retningslinjer, kan du sende varene i returforsendelsen til karantene for ekstra inspeksjon, eller de kan returneres til lager.</span><span class="sxs-lookup"><span data-stu-id="54160-105">Depending on company policies, the items in the return shipment can be sent to quarantine for additional inspection or they can be returned to inventory.</span></span>
+<span data-ttu-id="d74f6-105">Avhengig av firmaets retningslinjer, kan du sende varene i returforsendelsen til karantene for ekstra inspeksjon, eller de kan returneres til lager.</span><span class="sxs-lookup"><span data-stu-id="d74f6-105">Depending on company policies, the items in the return shipment can be sent to quarantine for additional inspection or they can be returned to inventory.</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="54160-106">Se også</span><span class="sxs-lookup"><span data-stu-id="54160-106">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="d74f6-106">Se også</span><span class="sxs-lookup"><span data-stu-id="d74f6-106">See also</span></span>
 
-[<span data-ttu-id="54160-107">Registrere mottaket av returnerte varer</span><span class="sxs-lookup"><span data-stu-id="54160-107">Register the receipt of returned items</span></span>](register-the-receipt-of-returned-items.md)
+[<span data-ttu-id="d74f6-107">Registrere mottaket av returnerte varer</span><span class="sxs-lookup"><span data-stu-id="d74f6-107">Register the receipt of returned items</span></span>](register-the-receipt-of-returned-items.md)
 
-[<span data-ttu-id="54160-108">Postere ankomstjournal for returnerte produkter</span><span class="sxs-lookup"><span data-stu-id="54160-108">Post arrival journal for returned products</span></span>](post-arrival-journal-for-returned-products.md)
+[<span data-ttu-id="d74f6-108">Postere ankomstjournal for returnerte produkter</span><span class="sxs-lookup"><span data-stu-id="d74f6-108">Post arrival journal for returned products</span></span>](post-arrival-journal-for-returned-products.md)
 
-[<span data-ttu-id="54160-109">Ta returnerte varer gjennom inspeksjon</span><span class="sxs-lookup"><span data-stu-id="54160-109">Take returned items through inspection</span></span>](take-returned-items-through-inspection.md)
+[<span data-ttu-id="d74f6-109">Ta returnerte varer gjennom inspeksjon</span><span class="sxs-lookup"><span data-stu-id="d74f6-109">Take returned items through inspection</span></span>](take-returned-items-through-inspection.md)
 
   
 

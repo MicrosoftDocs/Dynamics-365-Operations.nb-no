@@ -13,40 +13,40 @@ audience: Application User
 ms.reviewer: roschlom
 ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: vstehman
+ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 126e1de2d59d33fd7a5df1e011aa8c1aff63dfc6
-ms.sourcegitcommit: ac47e8679fb104515f7dcca509294264bd05d2b1
+ms.openlocfilehash: 24210129f7595c6544234c20915f4003bf0e1eb8
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "3454677"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3984703"
 ---
-# <a name="set-up-sales-tax-groups-and-item-sales-tax-groups"></a><span data-ttu-id="29c21-103">Definere mva-grupper og mva-grupper for vare</span><span class="sxs-lookup"><span data-stu-id="29c21-103">Set up sales tax groups and item sales tax groups</span></span>
+# <a name="set-up-sales-tax-groups-and-item-sales-tax-groups"></a><span data-ttu-id="08a9b-103">Definere mva-grupper og mva-grupper for vare</span><span class="sxs-lookup"><span data-stu-id="08a9b-103">Set up sales tax groups and item sales tax groups</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="29c21-104">Denne oppgaveregistreringen leder deg gjennom oppsettet av merverdiavgift og mva-grupper for vare.</span><span class="sxs-lookup"><span data-stu-id="29c21-104">This task recording walks you through the setup of Sales tax and Item sales tax groups.</span></span> <span data-ttu-id="29c21-105">Mva-grupper er grupper av mva-koder som er knyttet til kunder og leverandører.</span><span class="sxs-lookup"><span data-stu-id="29c21-105">Sales tax groups are groups of sales tax codes that are attached to customers and vendors.</span></span> <span data-ttu-id="29c21-106">De er også knyttet til finanskontoer for transaksjoner som ikke er postert til en bestemt leverandør eller kunde.</span><span class="sxs-lookup"><span data-stu-id="29c21-106">They are also attached to ledger accounts for transactions that are not posted to a particular vendor or customer.</span></span>  <span data-ttu-id="29c21-107">Mva-grupper for vare er grupper av mva-koder som er knyttet til ressurser som produkter.</span><span class="sxs-lookup"><span data-stu-id="29c21-107">Item sales tax groups are groups of sales tax codes that are attached to resources like products.</span></span>  <span data-ttu-id="29c21-108">Merverdiavgiften som gjelder for en bestemt transaksjon, fastsettes av mva-kodene som er inkludert både i mva-gruppen og i mva-gruppen for vare for transaksjonen.</span><span class="sxs-lookup"><span data-stu-id="29c21-108">The sales taxes that apply to a particular transaction are determined by the sales tax codes that are included both in the sales tax group and in the item sales tax group of the transaction.</span></span>  <span data-ttu-id="29c21-109">Merverdiavgift kan bare beregnes hvis en mva-gruppe og en mva-gruppe for vare er valgt for hver transaksjon det skal beregnes eller posteres merverdiavgift for.</span><span class="sxs-lookup"><span data-stu-id="29c21-109">Sales tax can be calculated only if a sales tax group and an item sales tax group are selected for each transaction for which sales tax must be calculated or recorded.</span></span>  
+<span data-ttu-id="08a9b-104">Denne oppgaveregistreringen leder deg gjennom oppsettet av merverdiavgift og mva-grupper for vare.</span><span class="sxs-lookup"><span data-stu-id="08a9b-104">This task recording walks you through the setup of Sales tax and Item sales tax groups.</span></span> <span data-ttu-id="08a9b-105">Mva-grupper er grupper av mva-koder som er knyttet til kunder og leverandører.</span><span class="sxs-lookup"><span data-stu-id="08a9b-105">Sales tax groups are groups of sales tax codes that are attached to customers and vendors.</span></span> <span data-ttu-id="08a9b-106">De er også knyttet til finanskontoer for transaksjoner som ikke er postert til en bestemt leverandør eller kunde.</span><span class="sxs-lookup"><span data-stu-id="08a9b-106">They are also attached to ledger accounts for transactions that are not posted to a particular vendor or customer.</span></span>  <span data-ttu-id="08a9b-107">Mva-grupper for vare er grupper av mva-koder som er knyttet til ressurser som produkter.</span><span class="sxs-lookup"><span data-stu-id="08a9b-107">Item sales tax groups are groups of sales tax codes that are attached to resources like products.</span></span>  <span data-ttu-id="08a9b-108">Merverdiavgiften som gjelder for en bestemt transaksjon, fastsettes av mva-kodene som er inkludert både i mva-gruppen og i mva-gruppen for vare for transaksjonen.</span><span class="sxs-lookup"><span data-stu-id="08a9b-108">The sales taxes that apply to a particular transaction are determined by the sales tax codes that are included both in the sales tax group and in the item sales tax group of the transaction.</span></span>  <span data-ttu-id="08a9b-109">Merverdiavgift kan bare beregnes hvis en mva-gruppe og en mva-gruppe for vare er valgt for hver transaksjon det skal beregnes eller posteres merverdiavgift for.</span><span class="sxs-lookup"><span data-stu-id="08a9b-109">Sales tax can be calculated only if a sales tax group and an item sales tax group are selected for each transaction for which sales tax must be calculated or recorded.</span></span>  
 
-1. <span data-ttu-id="29c21-110">Gå til **Navigasjonsrute > Moduler > Avgift > Indirekte avgifter > Merverdiavgift > Mva-grupper**.</span><span class="sxs-lookup"><span data-stu-id="29c21-110">Go to **Navigation pane > Modules > Tax > Indirect taxes > Sales tax > Sales tax groups**.</span></span>
-2. <span data-ttu-id="29c21-111">Klikk på **Ny**.</span><span class="sxs-lookup"><span data-stu-id="29c21-111">Click **New**.</span></span>
-3. <span data-ttu-id="29c21-112">Skriv inn en verdi i **Mva-gruppe**-feltet.</span><span class="sxs-lookup"><span data-stu-id="29c21-112">In the **Sales tax group** field, type a value.</span></span>
-4. <span data-ttu-id="29c21-113">Skriv inn en verdi i **Beskrivelse**-feltet.</span><span class="sxs-lookup"><span data-stu-id="29c21-113">In the **Description** field, type a value.</span></span>
-5. <span data-ttu-id="29c21-114">Aktiver/deaktiver utvidelsen av delen **Oppsett**.</span><span class="sxs-lookup"><span data-stu-id="29c21-114">Toggle the expansion of the **Setup** section.</span></span>
-6. <span data-ttu-id="29c21-115">Klikk **Legg til**.</span><span class="sxs-lookup"><span data-stu-id="29c21-115">Click **Add**.</span></span>
-7. <span data-ttu-id="29c21-116">Merk den valgte raden i listen.</span><span class="sxs-lookup"><span data-stu-id="29c21-116">In the list, mark the selected row.</span></span>
-8. <span data-ttu-id="29c21-117">Klikk rullegardinknappen i **Mva-kode**-feltet for å åpne oppslaget.</span><span class="sxs-lookup"><span data-stu-id="29c21-117">In the **Sales tax code** field, click the drop-down button to open the lookup.</span></span>
-9. <span data-ttu-id="29c21-118">Klikk koblingen i den valgte raden i listen.</span><span class="sxs-lookup"><span data-stu-id="29c21-118">In the list, click the link in the selected row.</span></span>
-10. <span data-ttu-id="29c21-119">Klikk **Lagre**.</span><span class="sxs-lookup"><span data-stu-id="29c21-119">Click **Save**.</span></span>
-11. <span data-ttu-id="29c21-120">Lukk siden.</span><span class="sxs-lookup"><span data-stu-id="29c21-120">Close the page.</span></span>
-12. <span data-ttu-id="29c21-121">Gå til **Avgift > Indirekte avgifter > Merverdiavgift > Vare, mva-grupper**.</span><span class="sxs-lookup"><span data-stu-id="29c21-121">Go to **Tax > Indirect taxes > Sales tax > Item sales tax groups**.</span></span>
-13. <span data-ttu-id="29c21-122">Klikk på **Ny**.</span><span class="sxs-lookup"><span data-stu-id="29c21-122">Click **New**.</span></span>
-14. <span data-ttu-id="29c21-123">Skriv inn en verdi i feltet **Vare, mva-gruppe**.</span><span class="sxs-lookup"><span data-stu-id="29c21-123">In the **Item sales tax group** field, type a value.</span></span>
-15. <span data-ttu-id="29c21-124">Skriv inn en verdi i **Beskrivelse**-feltet.</span><span class="sxs-lookup"><span data-stu-id="29c21-124">In the **Description** field, type a value.</span></span>
-16. <span data-ttu-id="29c21-125">Klikk **Legg til**.</span><span class="sxs-lookup"><span data-stu-id="29c21-125">Click **Add**.</span></span>
-17. <span data-ttu-id="29c21-126">Merk den valgte raden i listen.</span><span class="sxs-lookup"><span data-stu-id="29c21-126">In the list, mark the selected row.</span></span>
-18. <span data-ttu-id="29c21-127">Klikk rullegardinknappen i **Mva-kode**-feltet for å åpne oppslaget.</span><span class="sxs-lookup"><span data-stu-id="29c21-127">In the **Sales tax code** field, click the drop-down button to open the lookup.</span></span>
-19. <span data-ttu-id="29c21-128">Klikk koblingen i den valgte raden i listen.</span><span class="sxs-lookup"><span data-stu-id="29c21-128">In the list, click the link in the selected row.</span></span>
-20. <span data-ttu-id="29c21-129">Klikk **Lagre**.</span><span class="sxs-lookup"><span data-stu-id="29c21-129">Click **Save**.</span></span>
+1. <span data-ttu-id="08a9b-110">Gå til **Navigasjonsrute > Moduler > Avgift > Indirekte avgifter > Merverdiavgift > Mva-grupper** .</span><span class="sxs-lookup"><span data-stu-id="08a9b-110">Go to **Navigation pane > Modules > Tax > Indirect taxes > Sales tax > Sales tax groups** .</span></span>
+2. <span data-ttu-id="08a9b-111">Klikk på **Ny** .</span><span class="sxs-lookup"><span data-stu-id="08a9b-111">Click **New** .</span></span>
+3. <span data-ttu-id="08a9b-112">Skriv inn en verdi i **Mva-gruppe** -feltet.</span><span class="sxs-lookup"><span data-stu-id="08a9b-112">In the **Sales tax group** field, type a value.</span></span>
+4. <span data-ttu-id="08a9b-113">Skriv inn en verdi i **Beskrivelse** -feltet.</span><span class="sxs-lookup"><span data-stu-id="08a9b-113">In the **Description** field, type a value.</span></span>
+5. <span data-ttu-id="08a9b-114">Aktiver/deaktiver utvidelsen av delen **Oppsett** .</span><span class="sxs-lookup"><span data-stu-id="08a9b-114">Toggle the expansion of the **Setup** section.</span></span>
+6. <span data-ttu-id="08a9b-115">Klikk **Legg til** .</span><span class="sxs-lookup"><span data-stu-id="08a9b-115">Click **Add** .</span></span>
+7. <span data-ttu-id="08a9b-116">Merk den valgte raden i listen.</span><span class="sxs-lookup"><span data-stu-id="08a9b-116">In the list, mark the selected row.</span></span>
+8. <span data-ttu-id="08a9b-117">Klikk rullegardinknappen i **Mva-kode** -feltet for å åpne oppslaget.</span><span class="sxs-lookup"><span data-stu-id="08a9b-117">In the **Sales tax code** field, click the drop-down button to open the lookup.</span></span>
+9. <span data-ttu-id="08a9b-118">Klikk koblingen i den valgte raden i listen.</span><span class="sxs-lookup"><span data-stu-id="08a9b-118">In the list, click the link in the selected row.</span></span>
+10. <span data-ttu-id="08a9b-119">Klikk **Lagre** .</span><span class="sxs-lookup"><span data-stu-id="08a9b-119">Click **Save** .</span></span>
+11. <span data-ttu-id="08a9b-120">Lukk siden.</span><span class="sxs-lookup"><span data-stu-id="08a9b-120">Close the page.</span></span>
+12. <span data-ttu-id="08a9b-121">Gå til **Avgift > Indirekte avgifter > Merverdiavgift > Vare, mva-grupper** .</span><span class="sxs-lookup"><span data-stu-id="08a9b-121">Go to **Tax > Indirect taxes > Sales tax > Item sales tax groups** .</span></span>
+13. <span data-ttu-id="08a9b-122">Klikk på **Ny** .</span><span class="sxs-lookup"><span data-stu-id="08a9b-122">Click **New** .</span></span>
+14. <span data-ttu-id="08a9b-123">Skriv inn en verdi i feltet **Vare, mva-gruppe** .</span><span class="sxs-lookup"><span data-stu-id="08a9b-123">In the **Item sales tax group** field, type a value.</span></span>
+15. <span data-ttu-id="08a9b-124">Skriv inn en verdi i **Beskrivelse** -feltet.</span><span class="sxs-lookup"><span data-stu-id="08a9b-124">In the **Description** field, type a value.</span></span>
+16. <span data-ttu-id="08a9b-125">Klikk **Legg til** .</span><span class="sxs-lookup"><span data-stu-id="08a9b-125">Click **Add** .</span></span>
+17. <span data-ttu-id="08a9b-126">Merk den valgte raden i listen.</span><span class="sxs-lookup"><span data-stu-id="08a9b-126">In the list, mark the selected row.</span></span>
+18. <span data-ttu-id="08a9b-127">Klikk rullegardinknappen i **Mva-kode** -feltet for å åpne oppslaget.</span><span class="sxs-lookup"><span data-stu-id="08a9b-127">In the **Sales tax code** field, click the drop-down button to open the lookup.</span></span>
+19. <span data-ttu-id="08a9b-128">Klikk koblingen i den valgte raden i listen.</span><span class="sxs-lookup"><span data-stu-id="08a9b-128">In the list, click the link in the selected row.</span></span>
+20. <span data-ttu-id="08a9b-129">Klikk **Lagre** .</span><span class="sxs-lookup"><span data-stu-id="08a9b-129">Click **Save** .</span></span>
 

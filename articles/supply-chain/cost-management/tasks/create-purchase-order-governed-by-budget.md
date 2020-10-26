@@ -12,53 +12,53 @@ audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Operations
 ms.search.region: Global
-ms.author: shylaw
+ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fa16955e0ea407555c7b52b0af37c5891be9bdbb
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 319eb0070a3677035e2a5d89744e80cd38c08d8e
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3214302"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3980513"
 ---
-# <a name="create-a-purchase-order-governed-by-budget"></a><span data-ttu-id="be7cf-103">Opprette en bestilling som styres av budsjett</span><span class="sxs-lookup"><span data-stu-id="be7cf-103">Create a purchase order governed by budget</span></span>
+# <a name="create-a-purchase-order-governed-by-budget"></a><span data-ttu-id="7d6fc-103">Opprette en bestilling som styres av budsjett</span><span class="sxs-lookup"><span data-stu-id="7d6fc-103">Create a purchase order governed by budget</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="be7cf-104">Bruk denne fremgangsmåten til å opprette en bestilling som sjekkes for tilgjengelig budsjett.</span><span class="sxs-lookup"><span data-stu-id="be7cf-104">Use this procedure to create a purchase order that is checked for available budget.</span></span> <span data-ttu-id="be7cf-105">Denne registreringen bruker USMF-demodatafirmaet.</span><span class="sxs-lookup"><span data-stu-id="be7cf-105">This recording uses the USMF demo data company.</span></span>
+<span data-ttu-id="7d6fc-104">Bruk denne fremgangsmåten til å opprette en bestilling som sjekkes for tilgjengelig budsjett.</span><span class="sxs-lookup"><span data-stu-id="7d6fc-104">Use this procedure to create a purchase order that is checked for available budget.</span></span> <span data-ttu-id="7d6fc-105">Denne registreringen bruker USMF-demodatafirmaet.</span><span class="sxs-lookup"><span data-stu-id="7d6fc-105">This recording uses the USMF demo data company.</span></span>
 
 
-## <a name="review-the-budget-control-configuration"></a><span data-ttu-id="be7cf-106">Gå gjennom budsjettkontrollkonfigurasjonen</span><span class="sxs-lookup"><span data-stu-id="be7cf-106">Review the budget control configuration</span></span>
-1. <span data-ttu-id="be7cf-107">Gå til Budsjettering > Oppsett > Budsjettkontroll > Busjettkontrollkonfigurasjon.</span><span class="sxs-lookup"><span data-stu-id="be7cf-107">Go to Budgeting > Setup > Budget control > Budget control configuration.</span></span>
-2. <span data-ttu-id="be7cf-108">Klikk fanen Tilgjengelige budsjettmidler.</span><span class="sxs-lookup"><span data-stu-id="be7cf-108">Click the Budget funds available tab.</span></span>
-3. <span data-ttu-id="be7cf-109">Klikk fanen Dokumenter og kladder.</span><span class="sxs-lookup"><span data-stu-id="be7cf-109">Click the Documents and journals tab.</span></span>
-4. <span data-ttu-id="be7cf-110">Klikk fanen Definer budsjettkontrollregler.</span><span class="sxs-lookup"><span data-stu-id="be7cf-110">Click the Define budget control rules tab.</span></span>
-5. <span data-ttu-id="be7cf-111">Klikk fanen Definer budsjettgrupper.</span><span class="sxs-lookup"><span data-stu-id="be7cf-111">Click the Define budget groups tab.</span></span>
-6. <span data-ttu-id="be7cf-112">Lukk siden.</span><span class="sxs-lookup"><span data-stu-id="be7cf-112">Close the page.</span></span>
+## <a name="review-the-budget-control-configuration"></a><span data-ttu-id="7d6fc-106">Gå gjennom budsjettkontrollkonfigurasjonen</span><span class="sxs-lookup"><span data-stu-id="7d6fc-106">Review the budget control configuration</span></span>
+1. <span data-ttu-id="7d6fc-107">Gå til Budsjettering > Oppsett > Budsjettkontroll > Busjettkontrollkonfigurasjon.</span><span class="sxs-lookup"><span data-stu-id="7d6fc-107">Go to Budgeting > Setup > Budget control > Budget control configuration.</span></span>
+2. <span data-ttu-id="7d6fc-108">Klikk fanen Tilgjengelige budsjettmidler.</span><span class="sxs-lookup"><span data-stu-id="7d6fc-108">Click the Budget funds available tab.</span></span>
+3. <span data-ttu-id="7d6fc-109">Klikk fanen Dokumenter og kladder.</span><span class="sxs-lookup"><span data-stu-id="7d6fc-109">Click the Documents and journals tab.</span></span>
+4. <span data-ttu-id="7d6fc-110">Klikk fanen Definer budsjettkontrollregler.</span><span class="sxs-lookup"><span data-stu-id="7d6fc-110">Click the Define budget control rules tab.</span></span>
+5. <span data-ttu-id="7d6fc-111">Klikk fanen Definer budsjettgrupper.</span><span class="sxs-lookup"><span data-stu-id="7d6fc-111">Click the Define budget groups tab.</span></span>
+6. <span data-ttu-id="7d6fc-112">Lukk siden.</span><span class="sxs-lookup"><span data-stu-id="7d6fc-112">Close the page.</span></span>
 
-## <a name="create-the-purchase-order-header"></a><span data-ttu-id="be7cf-113">Opprette bestillingshode</span><span class="sxs-lookup"><span data-stu-id="be7cf-113">Create the purchase order header</span></span>
-1. <span data-ttu-id="be7cf-114">Gå til Innkjøp og leverandører > Bestillinger > Alle bestillinger.</span><span class="sxs-lookup"><span data-stu-id="be7cf-114">Go to Procurement and sourcing > Purchase orders > All purchase orders.</span></span>
-2. <span data-ttu-id="be7cf-115">Klikk Ny.</span><span class="sxs-lookup"><span data-stu-id="be7cf-115">Click New.</span></span>
-3. <span data-ttu-id="be7cf-116">Angi eller velg en verdi i Leverandørkonto-feltet.</span><span class="sxs-lookup"><span data-stu-id="be7cf-116">In the Vendor account field, enter or select a value.</span></span>
-4. <span data-ttu-id="be7cf-117">Utvid delen Generelt.</span><span class="sxs-lookup"><span data-stu-id="be7cf-117">Expand the General section.</span></span>
-5. <span data-ttu-id="be7cf-118">Angi datoen til 2016-01-01 i feltet Regnskapsdato.</span><span class="sxs-lookup"><span data-stu-id="be7cf-118">In the Accounting date field, set the date to '2016-01-01'.</span></span>
-6. <span data-ttu-id="be7cf-119">Klikk OK.</span><span class="sxs-lookup"><span data-stu-id="be7cf-119">Click OK.</span></span>
+## <a name="create-the-purchase-order-header"></a><span data-ttu-id="7d6fc-113">Opprette bestillingshode</span><span class="sxs-lookup"><span data-stu-id="7d6fc-113">Create the purchase order header</span></span>
+1. <span data-ttu-id="7d6fc-114">Gå til Innkjøp og leverandører > Bestillinger > Alle bestillinger.</span><span class="sxs-lookup"><span data-stu-id="7d6fc-114">Go to Procurement and sourcing > Purchase orders > All purchase orders.</span></span>
+2. <span data-ttu-id="7d6fc-115">Klikk Ny.</span><span class="sxs-lookup"><span data-stu-id="7d6fc-115">Click New.</span></span>
+3. <span data-ttu-id="7d6fc-116">Angi eller velg en verdi i Leverandørkonto-feltet.</span><span class="sxs-lookup"><span data-stu-id="7d6fc-116">In the Vendor account field, enter or select a value.</span></span>
+4. <span data-ttu-id="7d6fc-117">Utvid delen Generelt.</span><span class="sxs-lookup"><span data-stu-id="7d6fc-117">Expand the General section.</span></span>
+5. <span data-ttu-id="7d6fc-118">Angi datoen til 2016-01-01 i feltet Regnskapsdato.</span><span class="sxs-lookup"><span data-stu-id="7d6fc-118">In the Accounting date field, set the date to '2016-01-01'.</span></span>
+6. <span data-ttu-id="7d6fc-119">Klikk OK.</span><span class="sxs-lookup"><span data-stu-id="7d6fc-119">Click OK.</span></span>
 
-## <a name="add-a-purchase-order-line"></a><span data-ttu-id="be7cf-120">Legge til en bestillingslinje</span><span class="sxs-lookup"><span data-stu-id="be7cf-120">Add a purchase order line</span></span>
-1. <span data-ttu-id="be7cf-121">Angi eller velg en verdi i feltet Innkjøpskategori.</span><span class="sxs-lookup"><span data-stu-id="be7cf-121">In the Procurement category field, enter or select a value.</span></span>
-2. <span data-ttu-id="be7cf-122">Sett Antall til 2.</span><span class="sxs-lookup"><span data-stu-id="be7cf-122">Set Quantity to '2'.</span></span>
-3. <span data-ttu-id="be7cf-123">Angi eller velg en verdi i Enhet-feltet.</span><span class="sxs-lookup"><span data-stu-id="be7cf-123">In the Unit field, enter or select a value.</span></span>
-4. <span data-ttu-id="be7cf-124">Sett enhetspris til 10000.</span><span class="sxs-lookup"><span data-stu-id="be7cf-124">Set Unit price to '10000'.</span></span>
-5. <span data-ttu-id="be7cf-125">Klikk Finans.</span><span class="sxs-lookup"><span data-stu-id="be7cf-125">Click Financials.</span></span>
-6. <span data-ttu-id="be7cf-126">Klikk Fordel beløp.</span><span class="sxs-lookup"><span data-stu-id="be7cf-126">Click Distribute amounts.</span></span>
-7. <span data-ttu-id="be7cf-127">Angi verdien 601300-001-023-- i feltet Finanskonto.</span><span class="sxs-lookup"><span data-stu-id="be7cf-127">In the Ledger account field, specify the value '601300-001-023--'.</span></span>
-8. <span data-ttu-id="be7cf-128">Lukk siden.</span><span class="sxs-lookup"><span data-stu-id="be7cf-128">Close the page.</span></span>
+## <a name="add-a-purchase-order-line"></a><span data-ttu-id="7d6fc-120">Legge til en bestillingslinje</span><span class="sxs-lookup"><span data-stu-id="7d6fc-120">Add a purchase order line</span></span>
+1. <span data-ttu-id="7d6fc-121">Angi eller velg en verdi i feltet Innkjøpskategori.</span><span class="sxs-lookup"><span data-stu-id="7d6fc-121">In the Procurement category field, enter or select a value.</span></span>
+2. <span data-ttu-id="7d6fc-122">Sett Antall til 2.</span><span class="sxs-lookup"><span data-stu-id="7d6fc-122">Set Quantity to '2'.</span></span>
+3. <span data-ttu-id="7d6fc-123">Angi eller velg en verdi i Enhet-feltet.</span><span class="sxs-lookup"><span data-stu-id="7d6fc-123">In the Unit field, enter or select a value.</span></span>
+4. <span data-ttu-id="7d6fc-124">Sett enhetspris til 10000.</span><span class="sxs-lookup"><span data-stu-id="7d6fc-124">Set Unit price to '10000'.</span></span>
+5. <span data-ttu-id="7d6fc-125">Klikk Finans.</span><span class="sxs-lookup"><span data-stu-id="7d6fc-125">Click Financials.</span></span>
+6. <span data-ttu-id="7d6fc-126">Klikk Fordel beløp.</span><span class="sxs-lookup"><span data-stu-id="7d6fc-126">Click Distribute amounts.</span></span>
+7. <span data-ttu-id="7d6fc-127">Angi verdien 601300-001-023-- i feltet Finanskonto.</span><span class="sxs-lookup"><span data-stu-id="7d6fc-127">In the Ledger account field, specify the value '601300-001-023--'.</span></span>
+8. <span data-ttu-id="7d6fc-128">Lukk siden.</span><span class="sxs-lookup"><span data-stu-id="7d6fc-128">Close the page.</span></span>
 
-## <a name="perform-budget-checking"></a><span data-ttu-id="be7cf-129">Utfør budsjettkontroll</span><span class="sxs-lookup"><span data-stu-id="be7cf-129">Perform budget checking</span></span>
-1. <span data-ttu-id="be7cf-130">Klikk Finans.</span><span class="sxs-lookup"><span data-stu-id="be7cf-130">Click Financials.</span></span>
-2. <span data-ttu-id="be7cf-131">Klikk Utfør budsjettkontroll.</span><span class="sxs-lookup"><span data-stu-id="be7cf-131">Click Perform budget checking.</span></span>
-3. <span data-ttu-id="be7cf-132">Klikk Finans.</span><span class="sxs-lookup"><span data-stu-id="be7cf-132">Click Financials.</span></span>
-4. <span data-ttu-id="be7cf-133">Klikk Feil eller advarsler for budsjettkontroll.</span><span class="sxs-lookup"><span data-stu-id="be7cf-133">Click Budget check errors or warnings.</span></span>
-5. <span data-ttu-id="be7cf-134">Klikk Lukk.</span><span class="sxs-lookup"><span data-stu-id="be7cf-134">Click Close.</span></span>
+## <a name="perform-budget-checking"></a><span data-ttu-id="7d6fc-129">Utfør budsjettkontroll</span><span class="sxs-lookup"><span data-stu-id="7d6fc-129">Perform budget checking</span></span>
+1. <span data-ttu-id="7d6fc-130">Klikk Finans.</span><span class="sxs-lookup"><span data-stu-id="7d6fc-130">Click Financials.</span></span>
+2. <span data-ttu-id="7d6fc-131">Klikk Utfør budsjettkontroll.</span><span class="sxs-lookup"><span data-stu-id="7d6fc-131">Click Perform budget checking.</span></span>
+3. <span data-ttu-id="7d6fc-132">Klikk Finans.</span><span class="sxs-lookup"><span data-stu-id="7d6fc-132">Click Financials.</span></span>
+4. <span data-ttu-id="7d6fc-133">Klikk Feil eller advarsler for budsjettkontroll.</span><span class="sxs-lookup"><span data-stu-id="7d6fc-133">Click Budget check errors or warnings.</span></span>
+5. <span data-ttu-id="7d6fc-134">Klikk Lukk.</span><span class="sxs-lookup"><span data-stu-id="7d6fc-134">Click Close.</span></span>
 
