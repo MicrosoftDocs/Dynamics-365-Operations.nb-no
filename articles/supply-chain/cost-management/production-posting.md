@@ -16,15 +16,15 @@ ms.custom: 54591
 ms.assetid: 0917fe64-f643-46ae-98ff-5013b266a067
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: shylaw
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 20a94ed3c64e81013edfa10e060dd32e04d12577
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: b7214575e1eb3289224446ae5dd9d40221f054f8
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3214487"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3978513"
 ---
 # <a name="production-posting"></a>Produksjonspostering
 
@@ -44,7 +44,7 @@ Tiden som arbeidere bruker på produksjonsjobber registreres i rutekortjournalen
 Når en produksjonsordre rapporteres som ferdig, oppdateres antallet av de fullførte, ferdige varene i Lagerstyring via ferdigmeldingsjournalen. Hvis du bruker VIA-regnskap, som kan defineres i produksjonsparameterne, lages det en finansjournal for å redusere VIA-kontoene og øke beholdningen av de ferdige varene. Journalen bruker standardkostnaden som er definert for produktet.
 
 ## <a name="ending-the-production-order"></a>Avslutte produksjonsordren
-Før avslutning av en produksjonsordre beregnes faktiske kostnader for antallet som ble produsert. Alle estimerte kostnader i forbindelse med materialer, arbeid og administrasjonskostnader tilbakeføres og erstattes med faktiske kostnader. Hele kostnaden på ferdigvaren debiteres fra lagertilgangskontoen og krediteres til lageravgangskontoen. Hvis du merker av for **Avslutt jobb** når du kjører kostnadsberegningen, endres status for produksjonsordren til **Avsluttet**. Denne statusen hindrer at det posteres tilleggskostnader til en fullført produksjonsordre ved en feiltakelse. Du kan angi at verdien for antall feil som ferdigmeldes under rapportering skal tilordnes til de gode antallene som er rapportert som ferdige. Du kan også angi at verdien for antall feil skal posteres til en dedikert svinnkonto.
+Før avslutning av en produksjonsordre beregnes faktiske kostnader for antallet som ble produsert. Alle estimerte kostnader i forbindelse med materialer, arbeid og administrasjonskostnader tilbakeføres og erstattes med faktiske kostnader. Hele kostnaden på ferdigvaren debiteres fra lagertilgangskontoen og krediteres til lageravgangskontoen. Hvis du merker av for **Avslutt jobb** når du kjører kostnadsberegningen, endres status for produksjonsordren til **Avsluttet** . Denne statusen hindrer at det posteres tilleggskostnader til en fullført produksjonsordre ved en feiltakelse. Du kan angi at verdien for antall feil som ferdigmeldes under rapportering skal tilordnes til de gode antallene som er rapportert som ferdige. Du kan også angi at verdien for antall feil skal posteres til en dedikert svinnkonto.
 
 ## <a name="controlling-the-level-of-ledger-posting"></a>Kontrollere nivået for finanspostering
 I **Parametere for produksjonskontroll** kan du bruke feltet **Finanspostering** for å angi nivået for finanspostering for produksjonsprosesser. Følgende verdier er tilgjengelige:

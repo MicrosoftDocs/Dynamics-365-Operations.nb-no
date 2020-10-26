@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 7c7afed8e4620d5fe49ead47eb6c17d97d7492ad
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 6ffc772addb330abe7205007662a3f3e08a3e47f
+ms.sourcegitcommit: f16db76c1c235dfa445b50614bcee9219782d6dc
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3002814"
+ms.lasthandoff: 10/05/2020
+ms.locfileid: "3961592"
 ---
 # <a name="search-engine-optimization-seo-considerations-for-your-site"></a>Vurderinger for søkemotoroptimalisering (SEO) for området
 
@@ -33,7 +33,7 @@ Dette emnet dekker søkemotoroptimaliseringshensyn (SEO) for området fra utvikl
 
 ## <a name="a-site-that-is-under-development"></a>Et område som er under utvikling
 
-Mens et område er under utvikling, skal alle områdesidene ha metakodene **NOINDEX** og **NOFOLLOW**, slik at søkemotorene ikke indekserer sidene og lagrer utviklingsversjoner av området i hurtigbufferen. Hvis du vil gjøre denne konfigurasjonen, må du legge til standard metakodemoduler i områdesidemalen. Standardegenskapene for metakoder vil da være tilgjengelige i delen om søkemotoregenskaper i sideredigeringsprogrammet. Du kan bruke disse egenskapene til å administrere metakodene.
+Mens et område er under utvikling, skal alle områdesidene ha metakodene **NOINDEX** og **NOFOLLOW** , slik at søkemotorene ikke indekserer sidene og lagrer utviklingsversjoner av området i hurtigbufferen. Hvis du vil gjøre denne konfigurasjonen, må du legge til standard metakodemoduler i områdesidemalen. Standardegenskapene for metakoder vil da være tilgjengelige i delen om søkemotoregenskaper i sideredigeringsprogrammet. Du kan bruke disse egenskapene til å administrere metakodene.
 
 ## <a name="soft-launch-of-a-site"></a>Myk lansering av et område
 
@@ -43,11 +43,11 @@ Under en "myk lansering" er et webområde gjort tilgjengelig for en begrenset m�
 
 Når et område er i produksjon, bør du kontrollere at alle områdesidene er riktig kodet. Microsoft Dynamics 365 Commerce bruker informasjonen som er angitt for en side, til å gjengi all søkemotorinformasjon på den aktuelle siden. Følgende moduler inneholder denne funksjonaliteten: kategorisidesammendrag, listesidesammendrag og produktsidesammendrag.
 
-For å optimalisere søkemotorindeksering bruker gjengivelsesrammeverket både opplysningene fra søkemotoregenskapene som er konfigurert i Dynamics 365 Commerce, og modulspesifikk informasjon. For et område som er i produksjon, bør du kontrollere at robots.txt-filen tillater indeksering av hele området, og at det inneholder koblinger til det publiserte områdekartdokumentet. Du bør slå på funksjonen for generering av områdekart på **Områdeinnstillinger \> Områdekart aktivert**.
+For å optimalisere søkemotorindeksering bruker gjengivelsesrammeverket både opplysningene fra søkemotoregenskapene som er konfigurert i Dynamics 365 Commerce, og modulspesifikk informasjon. For et område som er i produksjon, bør du kontrollere at robots.txt-filen tillater indeksering av hele området, og at det inneholder koblinger til det publiserte områdekartdokumentet. Du bør slå på funksjonen for generering av områdekart på **Områdeinnstillinger \> Områdekart aktivert** .
 
 ### <a name="page-seo-settings-for-internal-preview-limited-audiences-and-all-audiences"></a>Innstillinger for sidesøkemotor for intern forhåndsvisning, begrenset målgruppe og alle målgrupper
 
-Fordi Dynamics 365 Commerce støtter WYSIWYG-forhåndsvisning (det du ser, er det du får), kan forfattere klargjøre sideinnholdet uten å bekymre seg om at informasjonen blir synlig for besøkende på webområdet. Hvis en side må publiseres, men eksponeringen må begrenses, skal den ha metakoden **NOINDEX**, slik at den ikke vil bli indeksert av søkemotorer. Når siden er klar for alle målgrupper, bør alle de grunnleggende søkemotormetadataene være til stede for å maksimere effektiviteten av søkmotorindeksering. I tillegg bør metakoden **NOLIMIT** fjernes.
+Fordi Dynamics 365 Commerce støtter WYSIWYG-forhåndsvisning i visuell sidebygger(det du ser, er det du får), kan forfattere klargjøre sideinnholdet uten å bekymre seg om at informasjonen blir synlig for besøkende på webområdet. Hvis en side må publiseres, men eksponeringen må begrenses, skal den ha metakoden **NOINDEX** , slik at den ikke vil bli indeksert av søkemotorer. Når siden er klar for alle målgrupper, bør alle de grunnleggende søkemotormetadataene være til stede for å maksimere effektiviteten av søkmotorindeksering. I tillegg bør metakoden **NOLIMIT** fjernes.
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 

@@ -15,15 +15,15 @@ ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: ShylaThompson
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0e31f58cf8782c715b97bdae0e89f684b15a76d2
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 8866d8a4d6ad879f2c43b470af98457cb7c75721
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3215085"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3985746"
 ---
 # <a name="service-order-item-requirements"></a>Varebehov for serviceordre   
 
@@ -36,35 +36,35 @@ Når du bruker et varebehov i stedet for en varetransaksjon, kan du planlegge le
 
 Varebehov for serviceordrer behandles via et prosjekt. Hvis du vil opprette et varebehov opprettes på en serviceordre, må serviceordren tilknyttes et prosjekt.
 
-Så snart et varebehov er opprettet for en serviceordre, kan det vises fra **Prosjekt** i den enkelte serviceordren eller i **Salgsordre**-skjemaet.
+Så snart et varebehov er opprettet for en serviceordre, kan det vises fra **Prosjekt** i den enkelte serviceordren eller i **Salgsordre** -skjemaet.
 
 ## <a name="view-an-item-requirement-from-a-service-order"></a>Vise et varebehov fra en serviceordre
 
-1.  Klikk på **Servicestyring** \> **Felles** \> **Serviceordrer** \> **Serviceordrer**.
+1.  Klikk på **Servicestyring** \> **Felles** \> **Serviceordrer** \> **Serviceordrer** .
 
-2.  Klikk **Fordeling**, og klikk deretter **Varebehov** for å åpne **Varebehov**-skjemaet.
+2.  Klikk **Fordeling** , og klikk deretter **Varebehov** for å åpne **Varebehov** -skjemaet.
 
-3.  Klikk kategorien **Prosjekt**, og merk deretter av for **Serviceordre** for å vise serviceordrene for varebehovet.
+3.  Klikk kategorien **Prosjekt** , og merk deretter av for **Serviceordre** for å vise serviceordrene for varebehovet.
 
 ## <a name="delete-service-orders-with-item-requirements"></a>Slette serviceordrer med varebehov
 
 Hvis et varebehov opprettes på en serviceordre, kan du ikke slette serviceordren. Du må slette varebehovet før du kan slette serviceordren.
 
-1.  Klikk på **Servicestyring** \> **Felles** \> **Serviceordrer** \> **Serviceordrer**.
+1.  Klikk på **Servicestyring** \> **Felles** \> **Serviceordrer** \> **Serviceordrer** .
 
-2.  Klikk **Fordeling**, og klikk deretter **Varebehov** for å åpne **Varebehov**-skjemaet. Dette skjemaet viser varebehovene som er opprettet på serviceordren.
+2.  Klikk **Fordeling** , og klikk deretter **Varebehov** for å åpne **Varebehov** -skjemaet. Dette skjemaet viser varebehovene som er opprettet på serviceordren.
 
-3.  Velg varebehovslinjen som skal slettes, og klikk deretter **Slett**.
+3.  Velg varebehovslinjen som skal slettes, og klikk deretter **Slett** .
 
 – eller –
 
-1.  Klikk på **Prosjektstyring og regnskap** \> **Felles** \> **Prosjekter** \> **Alle prosjekter**.
+1.  Klikk på **Prosjektstyring og regnskap** \> **Felles** \> **Prosjekter** \> **Alle prosjekter** .
 
 2.  Åpne prosjektet som har serviceordren der det er opprettet et varebehov.
 
-3.  I **Prosjekter**-skjemaet, i den høyre ruten, klikk **Varebehov**. **Varebehov**-skjemaet åpnes og viser varebehovene som er tilknyttet det valgte prosjektet.
+3.  I **Prosjekter** -skjemaet, i den høyre ruten, klikk **Varebehov** . **Varebehov** -skjemaet åpnes og viser varebehovene som er tilknyttet det valgte prosjektet.
 
-4.  Velg varebehovslinjen som skal slettes, og klikk deretter **Slett**.
+4.  Velg varebehovslinjen som skal slettes, og klikk deretter **Slett** .
 
 ## <a name="see-also"></a>Se også
 

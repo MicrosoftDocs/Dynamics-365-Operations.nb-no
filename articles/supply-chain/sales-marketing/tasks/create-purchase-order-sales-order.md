@@ -13,15 +13,15 @@ audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: omulvad
+ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 3379f5899fedbe8944585388bdb98c4d810c2e26
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 914400d2e8acff0bfa762708ba421812c31be32b
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3204365"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3982095"
 ---
 # <a name="create-a-purchase-order-from-a-sales-order"></a>Opprette en bestilling fra en salgsordre
 
@@ -31,41 +31,41 @@ Denne fremgangsmåten viser hvordan du oppretter en bestilling som er basert på
 
 
 ## <a name="create-a-purchase-order-from-a-sales-order"></a>Opprette en bestilling fra en salgsordre
-1. Gå til **Navigasjonsrute > Moduler > Salg og markedsføring > Salgsordrer > Alle salgsordrer**.
-2. Klikk på **Ny**.
-3. Klikk på rullegardinknappen i **Kundekonto**-feltet for å åpne oppslaget.
+1. Gå til **Navigasjonsrute > Moduler > Salg og markedsføring > Salgsordrer > Alle salgsordrer** .
+2. Klikk på **Ny** .
+3. Klikk på rullegardinknappen i **Kundekonto** -feltet for å åpne oppslaget.
 4. Finn og velg ønsket post i listen.
-5. Klikk **OK**.
-6. Klikk rullegardinknappen i **Varenummer**-feltet for å åpne oppslaget.
+5. Klikk **OK** .
+6. Klikk rullegardinknappen i **Varenummer** -feltet for å åpne oppslaget.
 7. Finn og velg ønsket post i listen. Hvis du bruker USMF, kan du velge D0001.  
-8. Angi et tall i **Antall**-feltet.
-9. Klikk **Legg til linje**.
-10. Klikk rullegardinknappen i **Varenummer**-feltet for å åpne oppslaget.
+8. Angi et tall i **Antall** -feltet.
+9. Klikk **Legg til linje** .
+10. Klikk rullegardinknappen i **Varenummer** -feltet for å åpne oppslaget.
 11. Finn og velg ønsket post i listen. Hvis du bruker USMF, kan du velge T0020.  
 12. Klikk koblingen i den valgte raden i listen.
-13. Angi et tall i **Antall**-feltet.
-14. Klikk **Lagre**.
-15. Klikk på **Salgsordre** i **handlingsruten**.
-16. Klikk på **Bestilling**. **Opprett bestilling**-siden viser alle de åpne salgsordrelinjene som er kopiert fra salgsordren. Du kan se gjennom ordredetaljene, og om nødvendig kan du endre valgte detaljer som for eksempel innkjøpsantall og prisvilkår før du oppretter kjøpene. 
-17. Velg alternativet **Inkluder alt**.
+13. Angi et tall i **Antall** -feltet.
+14. Klikk **Lagre** .
+15. Klikk på **Salgsordre** i **handlingsruten** .
+16. Klikk på **Bestilling** . **Opprett bestilling** -siden viser alle de åpne salgsordrelinjene som er kopiert fra salgsordren. Du kan se gjennom ordredetaljene, og om nødvendig kan du endre valgte detaljer som for eksempel innkjøpsantall og prisvilkår før du oppretter kjøpene. 
+17. Velg alternativet **Inkluder alt** .
     - Hvis du vil generere bestillinger for bare et delsett av salgsordrelinjene, velger du disse individuelt.  
-    - **Leverandørkonto**-feltet kan eller kan ikke allerede være utfylt med et leverandørnummer. Hvis standardleverandøren er definert for produktet (på den tilknyttede varedekningen), vil denne leverandøren kopieres til linjen. Hvis ikke, må du angi en leverandør manuelt.  I denne veiledningen, uavhengig av om **Leverandørkonto**-feltet allerede inneholder en verdi eller ikke, instruerer følgende trinn deg om å velge en ny leverandør som er forskjellig for hver linje.  
-18. Klikk rullegardinknappen i **Leverandørkonto**-feltet for å åpne oppslaget.
+    - **Leverandørkonto** -feltet kan eller kan ikke allerede være utfylt med et leverandørnummer. Hvis standardleverandøren er definert for produktet (på den tilknyttede varedekningen), vil denne leverandøren kopieres til linjen. Hvis ikke, må du angi en leverandør manuelt.  I denne veiledningen, uavhengig av om **Leverandørkonto** -feltet allerede inneholder en verdi eller ikke, instruerer følgende trinn deg om å velge en ny leverandør som er forskjellig for hver linje.  
+18. Klikk rullegardinknappen i **Leverandørkonto** -feltet for å åpne oppslaget.
 19. Finn og velg ønsket post i listen.
 20. Klikk koblingen i den valgte raden i listen.
 21. Mer den andre ordrelinjen.
-22. Klikk rullegardinknappen i **Leverandørkonto**-feltet for å åpne oppslaget.
+22. Klikk rullegardinknappen i **Leverandørkonto** -feltet for å åpne oppslaget.
 23. Finn og velg ønsket post i listen.
 24. Klikk koblingen i den valgte raden i listen.
-25. Klikk på **Valider**.
-26. Klikk **OK**. Meldingen forteller deg at én eller flere bestillinger er opprettet. Systemet genererer en separat bestilling for hver leverandør som du angav for salgsordrelinjene. Dette betyr at hvis flere salgsordrelinjer skal leveres av samme leverandør, genereres en enkelt bestilling med flere linjer.  
+25. Klikk på **Valider** .
+26. Klikk **OK** . Meldingen forteller deg at én eller flere bestillinger er opprettet. Systemet genererer en separat bestilling for hver leverandør som du angav for salgsordrelinjene. Dette betyr at hvis flere salgsordrelinjer skal leveres av samme leverandør, genereres en enkelt bestilling med flere linjer.  
 
 ## <a name="review-purchase-orders-created-from-sales-orders"></a>Vurdere bestillinger opprettet fra salgsordrer
-1. Klikk på **Generelt** i **handlingsruten**.
-2. Klikk på **Relaterte ordrer**. **Relaterte ordrer**-siden viser alle ordrene som ble opprettet fra salgsordren. I dette eksemplet finnes det to bestillinger generert for to ulike leverandører henholdsvis. 
-3. Klikk for å følge koblingen i **Bestilling**-feltet. Hver bestillingslinje er tilknyttet salgsordrelinjen som førte til innkjøpet. Tilknytningen til salgsordren er angitt i kategorien **Produkt** i hurtigfanen **Linjedetaljer** i feltene **Referansetype**, **Referansenummer** og **Referanseparti**.  
-4. Vis eller skjul **Linjedetaljer**-delen.
-5. Klikk på kategorien **Produkt**.
+1. Klikk på **Generelt** i **handlingsruten** .
+2. Klikk på **Relaterte ordrer** . **Relaterte ordrer** -siden viser alle ordrene som ble opprettet fra salgsordren. I dette eksemplet finnes det to bestillinger generert for to ulike leverandører henholdsvis. 
+3. Klikk for å følge koblingen i **Bestilling** -feltet. Hver bestillingslinje er tilknyttet salgsordrelinjen som førte til innkjøpet. Tilknytningen til salgsordren er angitt i kategorien **Produkt** i hurtigfanen **Linjedetaljer** i feltene **Referansetype** , **Referansenummer** og **Referanseparti** .  
+4. Vis eller skjul **Linjedetaljer** -delen.
+5. Klikk på kategorien **Produkt** .
     - **Referansepartiet** garanterer at kostnadene fra det gjeldende kjøpet belastes den tilknyttede salgsordren.  
-    - Du kan navigere til den opprinnelige salgsordren ved å åpne koblingen i feltet **Referansenummer**.  
+    - Du kan navigere til den opprinnelige salgsordren ved å åpne koblingen i feltet **Referansenummer** .  
 

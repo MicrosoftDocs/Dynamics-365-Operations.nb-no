@@ -15,15 +15,15 @@ ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: ShylaThompson
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d5924d6f006266ccbf5c6229ec8f4116f4427eff
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: c55e7dc087870ac414c5cf6ce3a3d10215ac4e8e
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3206824"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3984949"
 ---
 # <a name="set-up-return-reason-codes"></a>Definere returårsakskoder   
 
@@ -32,25 +32,25 @@ ms.locfileid: "3206824"
 
 ## <a name="set-up-return-reason-code-groups"></a>Definere kodegrupper for returårsak 
 
-1.  Klikk **Salg og markedsføring** \> **Oppsett** \> **Salgsordrer** \> **Returer** \> **Kodegrupper for returårsak**.
+1.  Klikk **Salg og markedsføring** \> **Oppsett** \> **Salgsordrer** \> **Returer** \> **Kodegrupper for returårsak** .
 
 2.  Trykk CTRL+N for å opprette en linje for en ny kodegruppe for returårsak.
 
 3.  I feltet **Kodegruppe for returårsak** skriver du en ID for gruppen.
 
-4.  I **Beskrivelse**-feltet skriver du en kort beskrivelse for å forklare hvordan gruppen skal brukes.
+4.  I **Beskrivelse** -feltet skriver du en kort beskrivelse for å forklare hvordan gruppen skal brukes.
 
 ## <a name="set-up-return-reason-codes"></a>Definere returårsakskoder 
 
 Denne prosedyren hjelper deg å sette opp returårsakskoder som du kan bruke til å indikere hvorfor et produkt ble returnert av kunden.
 
-1.  Klikk **Salg og markedsføring** \> **Oppsett** \> **Salgsordrer** \> **Returer** \> **Koder for returårsaker**.
+1.  Klikk **Salg og markedsføring** \> **Oppsett** \> **Salgsordrer** \> **Returer** \> **Koder for returårsaker** .
 
 2.  Trykk CTRL+ N for å opprette en ny linje for returårsakskode.
 
 3.  I feltet **Kode for returårsak** skriver du inn tekst for å identifisere denne koden.
 
-4.  I **Beskrivelse**-feltet skriver du inn tekst for å beskrive returårsakskoden.
+4.  I **Beskrivelse** -feltet skriver du inn tekst for å beskrive returårsakskoden.
 
 5.  Bruk rullegardinlisten **Kodegruppe for returårsak** for å legge til koden i en kodegruppe for returårsaker.
 

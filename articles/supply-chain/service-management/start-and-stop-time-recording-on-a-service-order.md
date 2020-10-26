@@ -15,15 +15,15 @@ ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: ShylaThompson
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8f4c101f6d52366898492b6c9c70fb6cd12edfb9
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 9590a4924442ceccf6f30c35e1dce907f54d368e
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3206640"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3983187"
 ---
 # <a name="start-and-stop-time-recording-on-a-service-order"></a>Starte og stoppe tidsregistrering på en serviceordre 
 
@@ -34,21 +34,21 @@ Bruk denne prosedyren til å starte og stoppe tidsregistrering for en serviceord
 
 ## <a name="start-time-recording"></a>Starte tidsregistrering
 
-1.  Klikk på **Servicestyring** \> **Felles** \> **Serviceordrer** \> **Serviceordrer**.
+1.  Klikk på **Servicestyring** \> **Felles** \> **Serviceordrer** \> **Serviceordrer** .
 
-2.  Klikk fanen **Serviceordre**. I **handlingsruten** i gruppen **Servicenivåavtale** klikker du **Start**.
+2.  Klikk fanen **Serviceordre** . I **handlingsruten** i gruppen **Servicenivåavtale** klikker du **Start** .
 
 3.  Angi datoen og klokkeslettet da tidsregistreringen skal startes.
 
 ## <a name="stop-time-recording"></a>Stopp tidsregistrering
 
-1.  Klikk på **Servicestyring** \> **Felles** \> **Serviceordrer** \> **Serviceordrer**.
+1.  Klikk på **Servicestyring** \> **Felles** \> **Serviceordrer** \> **Serviceordrer** .
 
-2.  Klikk fanen **Serviceordre**. I **handlingsruten** i gruppen **Servicenivåavtale** klikker du **Stopp**.
+2.  Klikk fanen **Serviceordre** . I **handlingsruten** i gruppen **Servicenivåavtale** klikker du **Stopp** .
 
 3.  Angi datoen og klokkeslettet da tidsregistreringen skal stoppes.
 
-4.  Velg **Legg til en årsak til opphevelse**, og velg en årsakskode fra listen **Årsakskode for stadium** hvis du vil angi en årsak for å stoppe tidsregistreringen.
+4.  Velg **Legg til en årsak til opphevelse** , og velg en årsakskode fra listen **Årsakskode for stadium** hvis du vil angi en årsak for å stoppe tidsregistreringen.
 
 
 > [!NOTE]

@@ -13,15 +13,15 @@ audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: shylaw
+ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: ddb14968bee06dd26b6584fab3d88445cd926cbe
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 105cf50698889e81804155cdac3a8b484cbf87d7
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3209588"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3987172"
 ---
 # <a name="modify-a-demand-forecast-manually"></a>Endre en behovsprognose manuelt
 
@@ -31,12 +31,12 @@ Denne fremgangsmåten viser hvordan du endrer prognosen for en vare. Demonstrasj
 
 
 ## <a name="modify-the-forecast-for-an-item"></a>Endre prognosen for en vare
-1. I **navigasjonsruten** går du til **Moduler > Behandling av produktinformasjon > Produkter > Frigitte produkter**.
+1. I **navigasjonsruten** går du til **Moduler > Behandling av produktinformasjon > Produkter > Frigitte produkter** .
 2. Finn og velg ønsket post i listen. Velg varen du vil endre prognosen for. Du kan for eksempel velge varen D0001.  
-3. Klikk **Plan** i **handlingsruten**.
-4. Klikk på **Behovsprognose**.
+3. Klikk **Plan** i **handlingsruten** .
+4. Klikk på **Behovsprognose** .
 5. Merk den valgte raden i listen. Hvis det ikke finnes noen prognoselinjer, kan du opprette en ny linje ved å klikke på Ny i applinjen.  
-6. Angi et tall i **Salgsantall**-feltet. Dette tallet representerer det prognoseberegnede antallet for varen.  
+6. Angi et tall i **Salgsantall** -feltet. Dette tallet representerer det prognoseberegnede antallet for varen.  
 7. Klikk Lagre.
 
 ## <a name="modify-the-forecast-in-excel"></a>Endre prognosen i Excel

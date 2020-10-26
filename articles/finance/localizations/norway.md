@@ -13,15 +13,15 @@ ms.reviewer: kfend
 ms.search.scope: Core, Operations
 ms.custom: ''
 ms.search.region: Norway
-ms.author: shylaw
+ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 38d8fc438cc61c4484d67048434fbffae26d7eee
-ms.sourcegitcommit: 3a06d3b38d9de2afc22839e5a794829405068024
+ms.openlocfilehash: 08dca34be75800ddd4320d33ea5fa4b1568d25f4
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "2933921"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3985956"
 ---
 # <a name="norway-overview"></a>Oversikt over Norge
 

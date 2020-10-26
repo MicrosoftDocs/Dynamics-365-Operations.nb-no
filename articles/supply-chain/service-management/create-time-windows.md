@@ -15,15 +15,15 @@ ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: ShylaThompson
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 466d9f3559f723b5502c6befbf2f8a195aea85a6
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 37a16eed6c5a73eb8166ac5ea2469860424aaafd
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3202543"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3981752"
 ---
 # <a name="create-time-windows"></a>Opprette tidsvinduer   
 
@@ -31,11 +31,11 @@ ms.locfileid: "3202543"
 
 Du kan bruke tidsvinduer for å optimalisere planleggingen av serviceordrelinjene.
 
-1. Klikk **Servicestyring** \> **Oppsett** \> **Serviceavtaler** \> **Tidsvindu**.
+1. Klikk **Servicestyring** \> **Oppsett** \> **Serviceavtaler** \> **Tidsvindu** .
 2. Trykk **Alt+N** for å opprette et nytt tidsvindu.
-3. I **Tidsvindu**-feltet angir du et navn på tidsvinduet.
-4. I **Beskrivelse**-feltet skriver du inn en beskrivelse for tidsvinduet.
-5. I **Metode**-feltet velger du metoden som skal opprettes automatisk. Hvis metoden er av typen **Manuell**, må du også angi hvor mange dager serviceordrelinjen kan flyttes før og etter den beregnede datoen.
+3. I **Tidsvindu** -feltet angir du et navn på tidsvinduet.
+4. I **Beskrivelse** -feltet skriver du inn en beskrivelse for tidsvinduet.
+5. I **Metode** -feltet velger du metoden som skal opprettes automatisk. Hvis metoden er av typen **Manuell** , må du også angi hvor mange dager serviceordrelinjen kan flyttes før og etter den beregnede datoen.
 
 ## <a name="related-topics"></a>Relaterte emner
 

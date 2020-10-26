@@ -3,7 +3,7 @@ title: Videoer
 description: Denne siden viser Microsoft-opprettede instruksjonsvideoer og videoer med tekniske samtaler for Finance and Operations-apper som er tilgjengelige på YouTube og andre områder.
 author: sericks007
 manager: AnnBe
-ms.date: 07/31/2020
+ms.date: 10/12/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.region: global
 ms.author: sericks
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.0.0, AX 8.0
-ms.openlocfilehash: c620e5e75ba1c547f0a1ee6830a5cf1b7fa58377
-ms.sourcegitcommit: 074fe7e77feb795148c3daf2e6ccbb8a88679343
+ms.openlocfilehash: f61872e25cd2e91724d4918b8f974ee913913d37
+ms.sourcegitcommit: 47166b3e10097cc2754e0c8459f62dcdeef27053
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 07/31/2020
-ms.locfileid: "3645371"
+ms.lasthandoff: 10/12/2020
+ms.locfileid: "3991458"
 ---
 # <a name="videos"></a>Videoer 
 
@@ -82,6 +82,7 @@ På [Microsoft Dynamics 365 YouTube-kanalen](https://www.youtube.com/channel/UCJ
 - [Bruke oppgaveregistrering til å opprette en testsak for Regression Suite Automation Tool (RSAT)](https://youtu.be/bBr4BXAxTNI)
 - [Opprette en testplan i Azure DevOps til bruk med Regression Suite Automation Tool (RSAT)](https://youtu.be/3jIuBleAnQk) 
 - [Bruke Regression Suite Automation Tool (RSAT)](https://youtu.be/uhN9JItzGAk)
+- [Den forbedrede Excel-opplevelsen i Regression Suite Automation Tool (RSAT) 2.0](https://youtu.be/fcEkSIVQ1Bg)
 
 
 ## <a name="videos-for-dynamics-365-finance"></a>Videoer for Dynamics 365 Finance

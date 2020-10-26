@@ -15,32 +15,32 @@ ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: ShylaThompson
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5911a3c48d7ddd7dc705cb90fd72b821a2ae1921
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 5aef889641a677838dcebe97451e057f2bfbeada
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3202221"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3978216"
 ---
 # <a name="move-service-order-lines"></a>Flytt serviceordrelinjer 
 
 [!include [banner](../includes/banner.md)]
 
 
-1.  Klikk på **Servicestyring** \> **Felles** \> **Serviceordrer** \> **Serviceordrer**.
+1.  Klikk på **Servicestyring** \> **Felles** \> **Serviceordrer** \> **Serviceordrer** .
 
 2.  Dobbeltklikk serviceordren som inneholder linjene du vil flytte til en annen serviceordre.
 
-3.  I skjemaet **Serviceordrer** i handlingsruten klikker du **Flytt linjer**-knappen.
+3.  I skjemaet **Serviceordrer** i handlingsruten klikker du **Flytt linjer** -knappen.
 
-4.  I skjemaet **Flytt serviceordrelinjer** i **Serviceordre**-feltet velger du serviceordren vil flytte linjene til.
+4.  I skjemaet **Flytt serviceordrelinjer** i **Serviceordre** -feltet velger du serviceordren vil flytte linjene til.
 
 5.  Merk av for **Slett tom serviceordre** hvis du vil slette serviceordren du flyttet serviceordrelinjene fra.
 
-6.  Klikk **OK**.
+6.  Klikk **OK** .
 
 
 > [!NOTE]

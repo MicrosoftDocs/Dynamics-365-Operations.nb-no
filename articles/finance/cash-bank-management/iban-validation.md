@@ -12,15 +12,15 @@ audience: Application User
 ms.reviewer: roschlom
 ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: mikefalkner
+ms.author: roschlom
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
-ms.openlocfilehash: 2aaccd7c09d6daf8a237a433cc22ac1bfc3c1541
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: 28abef376e8462c9a69dbd8e5033ea799b6a4b3a
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2551269"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3977821"
 ---
 # <a name="manage-international-bank-account-number-iban-account-validation"></a>Administrere validering av internasjonale bankkontnumre (IBAN)
 
@@ -32,16 +32,16 @@ Informasjon om strukturen til IBAN er lagret i Microsoft Dynamics 365 Finance. D
 
 ## <a name="set-up-iban-structures"></a>Definere IBAN-strukturer
 
-1. Gå til **Kontant- og bankbehandling \> Oppsett \> IBAN-strukturer**.
+1. Gå til **Kontant- og bankbehandling \> Oppsett \> IBAN-strukturer** .
 2. Legg merke til at IBAN-strukturene for hvert land eller område er opprettet automatisk.
 3. Hvis du vil tilpasse strukturene for et bestemt land eller område, kan du redigere dem.
 4. Strukturdefinsjonene blir en del av hver nye versjon. Du kan bruke menyen **Tilbakestill strukturer** til å laste inn de nyeste definisjonene etter hver oppdatering.
 
 ## <a name="validate-the-iban-structure-in-a-bank-account"></a>Validere IBAN-strukturen i en bankkonto
 
-1. Gå til **Kontant- og bankbehandling \> Bankkontoer \> Bankkontoer**.
+1. Gå til **Kontant- og bankbehandling \> Bankkontoer \> Bankkontoer** .
 2. Opprett en bankkonto.
-3. Angi et IBAN-nummer på hurtigfanen **Tilleggsinformasjon**.
+3. Angi et IBAN-nummer på hurtigfanen **Tilleggsinformasjon** .
 
     Hvis lengden på IBAN-nummeret ikke samsvarer med lengden som er definert for hvert land eller område, får du en advarsel. Du kan ikke fortsette hvis lengden på IBAN-nummeret ikke samsvarer med lengden som er definert i IBAN-strukturen.
 

@@ -15,15 +15,15 @@ ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: ShylaThompson
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a5b1c0e300edc45ae3f4be9eae8afa56e06cccd6
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 41497eacae8bcc0e57df8062f7f318a39c2b4909
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3203095"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3978779"
 ---
 # <a name="add-an-address-to-a-service-order"></a>Legge til en adresse i en serviceordre    
 
@@ -38,15 +38,15 @@ Du kan også opprette en ny adresse. Den nye adressen overføres som standard ti
 
 Hvis du vil legge til en adresse i en serviceordre, gjør du følgende:
 
-1.  Klikk på **Servicestyring** \> **Felles** \> **Serviceordrer** \> **Serviceordrer**.
+1.  Klikk på **Servicestyring** \> **Felles** \> **Serviceordrer** \> **Serviceordrer** .
 
 2.  Åpne serviceordren som du vil opprette en adresse for.
 
-3.  I **handlingsruten** klikker du på **Rediger** og deretter på **Topptekstvisning**.
+3.  I **handlingsruten** klikker du på **Rediger** og deretter på **Topptekstvisning** .
 
-4.  På hurtigfanen **Adresse** klikker du på **Legg til adresse**.
+4.  På hurtigfanen **Adresse** klikker du på **Legg til adresse** .
 
-5.  I **Ny adresse**-skjemaet angir du et unikt navn for adressen og fyller ut de gjenstående feltene. 
+5.  I **Ny adresse** -skjemaet angir du et unikt navn for adressen og fyller ut de gjenstående feltene. 
     
 
     > [!WARNING]
@@ -59,15 +59,15 @@ Hvis du vil legge til en adresse i en serviceordre, gjør du følgende:
 
 Hvis du vil legge til en alternativ adresse i en serviceordre, gjør du følgende:
 
-1.  Klikk på **Servicestyring** \> **Felles** \> **Serviceordrer** \> **Serviceordrer**.
+1.  Klikk på **Servicestyring** \> **Felles** \> **Serviceordrer** \> **Serviceordrer** .
 
 2.  Åpne serviceordren som du vil angi en alternativ adresse for.
 
-3.  I **handlingsruten** klikker du på **Rediger** og deretter på **Topptekstvisning**.
+3.  I **handlingsruten** klikker du på **Rediger** og deretter på **Topptekstvisning** .
 
-4.  På hurtigfanen **Adresse** klikker du på **Annen adresse**.
+4.  På hurtigfanen **Adresse** klikker du på **Annen adresse** .
 
-5.  I skjemaet **Adressevalg**, i feltet **Oppføringstype** velger du **Serviceordrer**.
+5.  I skjemaet **Adressevalg** , i feltet **Oppføringstype** velger du **Serviceordrer** .
 
 6.  Velg en adresse, og klikk deretter **OK** for å kopiere den til serviceordren.
 

@@ -13,15 +13,15 @@ audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: v-olbara
+ms.author: kamaybac
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: 10.0.3
-ms.openlocfilehash: 373b6bf6219ef76bacef3c67a816aec4c084c405
-ms.sourcegitcommit: 8a2127c5af6cdbda30ccc1f9bef9bd4ab61e9e50
+ms.openlocfilehash: f4d095456435a3401daa173d79b80b81176a3c17
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/18/2020
-ms.locfileid: "3383831"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3987124"
 ---
 # <a name="consolidate-shipments-when-they-are-released-to-the-warehouse-by-using-automatic-release-of-sales-orders"></a>Konsolidere forsendelser når de frigis til lageret ved hjelp av automatisk frigivelse av salgsordrer
 
@@ -43,7 +43,7 @@ I løpet av  kan du opprette sett med salgsordrer og frigi hvert sett til lagere
 
 Begynn med å opprette en samling salgsordrer du kan arbeide med. Du må arbeide med et lager som er aktivert for prosessen for avansert lager (WMS). Med mindre et annet lager er nevnt eksplisitt, må det samme lageret brukes for hvert av de følgende ordresettene.
 
-Gå til **Kunde \> Ordrer \> Alle salgsordrer**, og opprett en samling av salgsordrer som har innstillingene som er beskrevet i følgende underinndelinger.
+Gå til **Kunde \> Ordrer \> Alle salgsordrer** , og opprett en samling av salgsordrer som har innstillingene som er beskrevet i følgende underinndelinger.
 
 ### <a name="create-order-set-1"></a>Opprett ordresett 1
 
@@ -56,7 +56,7 @@ Gå til **Kunde \> Ordrer \> Alle salgsordrer**, og opprett en samling av salgso
 
 1. Legg til en ordrelinje som har følgende innstillinger:
 
-    - **Varenummer:** *A0001* (en vare uten **Kode 4**-filter tilordnet)
+    - **Varenummer:** *A0001* (en vare uten **Kode 4** -filter tilordnet)
     - **Antall:** *1.00*
 
 #### <a name="sales-order-1-2"></a>Salgsordre 1-2
@@ -68,7 +68,7 @@ Gå til **Kunde \> Ordrer \> Alle salgsordrer**, og opprett en samling av salgso
 
 1. Legg til en ordrelinje som har følgende innstillinger:
 
-    - **Varenummer:** *A0001* (en vare uten **Kode 4**-filter tilordnet)
+    - **Varenummer:** *A0001* (en vare uten **Kode 4** -filter tilordnet)
     - **Antall:** *1.00*
 
 #### <a name="sales-order-1-3"></a>Salgsordre 1-3
@@ -80,12 +80,12 @@ Gå til **Kunde \> Ordrer \> Alle salgsordrer**, og opprett en samling av salgso
 
 1. Legg til en ordrelinje som har følgende innstillinger:
 
-    - **Varenummer:** *A0001* (en vare uten **Kode 4**-filter tilordnet)
+    - **Varenummer:** *A0001* (en vare uten **Kode 4** -filter tilordnet)
     - **Antall:** *1.00*
 
 1. Legg til en ny ordrelinje som har følgende innstillinger:
 
-    - **Varenummer:** *A0002* (en vare uten **Kode 4**-filter tilordnet)
+    - **Varenummer:** *A0002* (en vare uten **Kode 4** -filter tilordnet)
     - **Antall:** *1.00*
     - **Leveringsmåte:** *Airwa-Air*
 
@@ -99,12 +99,12 @@ Gå til **Kunde \> Ordrer \> Alle salgsordrer**, og opprett en samling av salgso
 
 1. Legg til en ordrelinje som har følgende innstillinger:
 
-    - **Varenummer:** *M9200* (en vare der filteret **Kode 4** er satt til *Brannfarlig*)
+    - **Varenummer:** *M9200* (en vare der filteret **Kode 4** er satt til *Brannfarlig* )
     - **Antall:** *1.00*
 
 1. Legg til en ny ordrelinje som har følgende innstillinger:
 
-    - **Varenummer:** *M9201* (en vare der filteret **Kode 4** er satt til *Eksplosivt*)
+    - **Varenummer:** *M9201* (en vare der filteret **Kode 4** er satt til *Eksplosivt* )
     - **Antall:** *1.00*
     - **Leveringsmåte:** *Airwa-Air*
 
@@ -118,12 +118,12 @@ Gå til **Kunde \> Ordrer \> Alle salgsordrer**, og opprett en samling av salgso
 
 1. Legg til en ordrelinje som har følgende innstillinger:
 
-    - **Varenummer:** *M9200* (en vare der filteret **Kode 4** er satt til *Brannfarlig*)
+    - **Varenummer:** *M9200* (en vare der filteret **Kode 4** er satt til *Brannfarlig* )
     - **Antall:** *1.00*
 
 1. Legg til en ny ordrelinje som har følgende innstillinger:
 
-    - **Varenummer:** *M9201* (en vare der filteret **Kode 4** er satt til *Eksplosivt*)
+    - **Varenummer:** *M9201* (en vare der filteret **Kode 4** er satt til *Eksplosivt* )
     - **Antall:** *1.00*
     - **Leveringsmåte:** *Airwa-Air*
 
@@ -141,7 +141,7 @@ Gå til **Kunde \> Ordrer \> Alle salgsordrer**, og opprett en samling av salgso
 
 1. Legg til en ordrelinje som har følgende innstillinger:
 
-    - **Varenummer:** *A0001* (en vare uten **Kode 4**-filter tilordnet)
+    - **Varenummer:** *A0001* (en vare uten **Kode 4** -filter tilordnet)
     - **Antall:** *1.00*
 
 ### <a name="create-order-set-5"></a>Opprett ordresett 5
@@ -155,7 +155,7 @@ Gå til **Kunde \> Ordrer \> Alle salgsordrer**, og opprett en samling av salgso
 
 1. Legg til en ordrelinje som har følgende innstillinger:
 
-    - **Varenummer:** *A0001* (en vare uten **Kode 4**-filter tilordnet)
+    - **Varenummer:** *A0001* (en vare uten **Kode 4** -filter tilordnet)
     - **Antall:** *1.00*
 
 #### <a name="sales-order-5-3"></a>Salgsordre 5-3
@@ -167,7 +167,7 @@ Gå til **Kunde \> Ordrer \> Alle salgsordrer**, og opprett en samling av salgso
 
 1. Legg til en ordrelinje som har følgende innstillinger:
 
-    - **Varenummer:** *A0001* (en vare uten **Kode 4**-filter tilordnet)
+    - **Varenummer:** *A0001* (en vare uten **Kode 4** -filter tilordnet)
     - **Antall:** *1.00*
 
 ### <a name="create-order-set-6"></a>Opprett ordresett 6
@@ -181,7 +181,7 @@ Gå til **Kunde \> Ordrer \> Alle salgsordrer**, og opprett en samling av salgso
 
 1. Legg til en ordrelinje som har følgende innstillinger:
 
-    - **Varenummer:** *A0001* (en vare uten **Kode 4**-filter tilordnet)
+    - **Varenummer:** *A0001* (en vare uten **Kode 4** -filter tilordnet)
     - **Antall:** *1.00*
 
 #### <a name="sales-orders-6-3-and-6-4"></a>Salgsordrer 6-3 og 6-4
@@ -193,7 +193,7 @@ Gå til **Kunde \> Ordrer \> Alle salgsordrer**, og opprett en samling av salgso
 
 1. Legg til en ordrelinje som har følgende innstillinger:
 
-    - **Varenummer:** *A0001* (en vare uten **Kode 4**-filter tilordnet)
+    - **Varenummer:** *A0001* (en vare uten **Kode 4** -filter tilordnet)
     - **Antall:** *1.00*
 
 #### <a name="sales-orders-6-5-and-6-6"></a>Salgsordrer 6-5 og 6-6
@@ -207,7 +207,7 @@ Gå til **Kunde \> Ordrer \> Alle salgsordrer**, og opprett en samling av salgso
 
 1. Legg til en ordrelinje som har følgende innstillinger:
 
-    - **Varenummer:** *A0001* (en vare uten **Kode 4**-filter tilordnet)
+    - **Varenummer:** *A0001* (en vare uten **Kode 4** -filter tilordnet)
     - **Antall:** *1.00*
 
 #### <a name="sales-orders-6-7-and-6-8"></a>Salgsordrer 6-7 og 6-8
@@ -221,7 +221,7 @@ Gå til **Kunde \> Ordrer \> Alle salgsordrer**, og opprett en samling av salgso
 
 1. Legg til en ordrelinje som har følgende innstillinger:
 
-    - **Varenummer:** *A0001* (en vare uten **Kode 4**-filter tilordnet)
+    - **Varenummer:** *A0001* (en vare uten **Kode 4** -filter tilordnet)
     - **Antall:** *1.00*
 
 ## <a name="automatic-release-of-sales-orders-to-the-warehouse"></a>Automatisk frigivelse av salgsordrer til lageret
@@ -234,16 +234,16 @@ For hvert sett med salgsordrer du har opprettet tidligere, fullfører du de tre 
 
 #### <a name="update-the-wave-template-that-will-be-used-during-release"></a>Oppdatere bølgemalen som vil bli brukt under frigivelse
 
-1. Gå til **Lagerstyring \> Oppsett \> Bølger \> Bølgemaler**.
-1. Angi verdien *Forsendelse* for feltet **Bølgemaltype**.
-1. Finn og velg bølgemalen som er knyttet til lageret du brukte i ordresettene du opprettet for dette . Hvis du for eksempel brukte lager *24*, velger du bølgemalen **24 Standardforsendelse**. Hvis du brukte lager *61*, velger du bølgemalen **61 Forsendelse**.
-1. I handlingsruten velger du **Rediger**.
-1. Sett alternativet **Behandle bølge ved frigivelse til lager** til *Nei*.
+1. Gå til **Lagerstyring \> Oppsett \> Bølger \> Bølgemaler** .
+1. Angi verdien *Forsendelse* for feltet **Bølgemaltype** .
+1. Finn og velg bølgemalen som er knyttet til lageret du brukte i ordresettene du opprettet for dette . Hvis du for eksempel brukte lager *24* , velger du bølgemalen **24 Standardforsendelse** . Hvis du brukte lager *61* , velger du bølgemalen **61 Forsendelse** .
+1. I handlingsruten velger du **Rediger** .
+1. Sett alternativet **Behandle bølge ved frigivelse til lager** til *Nei* .
 
 #### <a name="release-to-the-warehouse"></a>Frigi til lageret
 
-1. Gå til **Lagerstyring \> Frigi til lager \> Automatisk frigivelse av salgsordrer**.
-1. Angi verdien *Alle* for feltet **Antall som skal frigis**.
+1. Gå til **Lagerstyring \> Frigi til lager \> Automatisk frigivelse av salgsordrer** .
+1. Angi verdien *Alle* for feltet **Antall som skal frigis** .
 1. I hurtigkategorien **Poster som skal inkluderes** velger du **Filter** for å åpne dialogboksen for spørring.
 1. Velg **Legg til** i kategorien **Område** for å legge til en rad som har følgende innstillinger i rutenettet:
 
@@ -253,13 +253,13 @@ For hvert sett med salgsordrer du har opprettet tidligere, fullfører du de tre 
     - **Vilkår:** Angi en kommadelt liste over salgsordrenumrene fra ønsket ordresett.
 
 1. Velg **OK** for å lagre spørringen.
-1. Velg **OK** for å starte prosedyren *Automatisk frigivelse til lager*.
+1. Velg **OK** for å starte prosedyren *Automatisk frigivelse til lager* .
 
 #### <a name="review-the-shipment-that-is-created-or-updated"></a>Gå gjennom forsendelsen som er opprettet eller oppdatert
 
-1. Gå til **Lagerstyring \> Forsendelser \> Alle forsendelser**.
+1. Gå til **Lagerstyring \> Forsendelser \> Alle forsendelser** .
 1. Finn og velg den påkrevde forsendelsen.
-1. Hvis en konsolideringspolicy ble brukt da forsendelsen ble opprettet eller oppdatert, skal den vises i feltet **Policy for forsendelseskonsolidering**.
+1. Hvis en konsolideringspolicy ble brukt da forsendelsen ble opprettet eller oppdatert, skal den vises i feltet **Policy for forsendelseskonsolidering** .
 
 ### <a name="release-sales-orders-from-order-set-1"></a>Frigi salgsordrer fra ordresett 1
 
@@ -267,8 +267,8 @@ Følg den [grunnleggende fremgangsmåten for frigivelse til lager](#release-proc
 
 Når du er ferdig, skal du kunne se at to forsendelser ble opprettet:
 
-- Den første forsendelsen inneholder tre linjer og ble opprettet ved hjelp av policyen for forsendelseskonsolidering for *CustomerMode*.
-- Den andre forsendelen, som ikke bruker transportmåten *Airways*, ble opprettet ved hjelp av policyen for forsendelseskonsolidering for *CustomerOrderNo*.
+- Den første forsendelsen inneholder tre linjer og ble opprettet ved hjelp av policyen for forsendelseskonsolidering for *CustomerMode* .
+- Den andre forsendelen, som ikke bruker transportmåten *Airways* , ble opprettet ved hjelp av policyen for forsendelseskonsolidering for *CustomerOrderNo* .
 
 ### <a name="release-sales-orders-from-order-set-2"></a>Frigi salgsordrer fra ordresett 2
 
@@ -276,8 +276,8 @@ Følg den [grunnleggende fremgangsmåten for frigivelse til lager](#release-proc
 
 Når du er ferdig, skal du kunne se at tre forsendelser ble opprettet:
 
-- Den første forsendelsen inneholder varer med statusen *Brannfarlig*.
-- Hver av de to andre forsendelsene inneholder én linje med varen med statusen *Eksplosivt*.
+- Den første forsendelsen inneholder varer med statusen *Brannfarlig* .
+- Hver av de to andre forsendelsene inneholder én linje med varen med statusen *Eksplosivt* .
 
 ### <a name="release-sales-orders-from-order-set-3"></a>Frigi salgsordrer fra ordresett 3
 
@@ -285,14 +285,14 @@ Følg den [grunnleggende fremgangsmåten for frigivelse til lager](#release-proc
 
 Når du er ferdig, skal du kunne se at følgende handlinger oppstod:
 
-- En eksisterende forsendelse (forsendelsen som ble opprettet da ordresett 2 ble frigitt til lageret) ble oppdatert. En linje som har elementet *Brannfarlig*, ble lagt til.
-- Én ny forsendelse ble opprettet, og den inneholder elementet *Eksplosivt*.
+- En eksisterende forsendelse (forsendelsen som ble opprettet da ordresett 2 ble frigitt til lageret) ble oppdatert. En linje som har elementet *Brannfarlig* , ble lagt til.
+- Én ny forsendelse ble opprettet, og den inneholder elementet *Eksplosivt* .
 
 ### <a name="release-sales-orders-from-order-set-4"></a>Frigi salgsordrer fra ordresett 4
 
 Følg den [grunnleggende fremgangsmåten for frigivelse til lager](#release-procedure) for å frigi salgsordrene fra ordresett 4.
 
-Når du er ferdig, skal du kunne se at den eksisterende forsendelsen (der feltet **Kunderekvisisjon** er satt til *1*) ble oppdatert. En ny linje ble lagt til for forsendelsen.
+Når du er ferdig, skal du kunne se at den eksisterende forsendelsen (der feltet **Kunderekvisisjon** er satt til *1* ) ble oppdatert. En ny linje ble lagt til for forsendelsen.
 
 ### <a name="release-sales-orders-from-order-set-5"></a>Frigi salgsordrer fra ordresett 5
 
@@ -300,7 +300,7 @@ Følg den [grunnleggende fremgangsmåten for frigivelse til lager](#release-proc
 
 Når du er ferdig, skal du kunne se at følgende handlinger oppstod:
 
-- En eksisterende forsendelse (der feltet **Kunderekvisisjon** er satt til *1*) ble oppdatert. En linje fra salgsordre 5-3 (der feltet **Kunderekvisisjon** er satt til *1*) ble lagt til for salgsordren.
+- En eksisterende forsendelse (der feltet **Kunderekvisisjon** er satt til *1* ) ble oppdatert. En linje fra salgsordre 5-3 (der feltet **Kunderekvisisjon** er satt til *1* ) ble lagt til for salgsordren.
 - Én ny forsendelse ble opprettet, der linjer fra salgsordre 5-1 og 5-2 grupperes i én forsendelse.
 
 ### <a name="release-sales-orders-from-order-set-6"></a>Frigi salgsordrer fra ordresett 6
@@ -309,10 +309,10 @@ Følg den [grunnleggende fremgangsmåten for frigivelse til lager](#release-proc
 
 Når du er ferdig, skal du kunne se at fire forsendelser ble opprettet:
 
-- Linjer fra to ordrer for kunde *US-003* ble gruppert i én forsendelse ved hjelp av policyen for forsendelseskonsolidering for *Ordrepulje*.
-- Linjer fra to ordrer for kunde *US-004* ble gruppert i én forsendelse ved hjelp av policyen for forsendelseskonsolidering for *Ordrepulje*.
-- Linjer fra salgsordre 6-5 og 6-6 for kunde *US-007* ble gruppert i én forsendelse ved hjelp av policyen for forsendelseskonsolidering for *Ordrepulje*.
-- Linjer fra salgsordre 6-7 og 6-8 for kunde *US-007* ble gruppert i én forsendelse ved hjelp av policyen for forsendelseskonsolidering for *Kryssordre*.
+- Linjer fra to ordrer for kunde *US-003* ble gruppert i én forsendelse ved hjelp av policyen for forsendelseskonsolidering for *Ordrepulje* .
+- Linjer fra to ordrer for kunde *US-004* ble gruppert i én forsendelse ved hjelp av policyen for forsendelseskonsolidering for *Ordrepulje* .
+- Linjer fra salgsordre 6-5 og 6-6 for kunde *US-007* ble gruppert i én forsendelse ved hjelp av policyen for forsendelseskonsolidering for *Ordrepulje* .
+- Linjer fra salgsordre 6-7 og 6-8 for kunde *US-007* ble gruppert i én forsendelse ved hjelp av policyen for forsendelseskonsolidering for *Kryssordre* .
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 

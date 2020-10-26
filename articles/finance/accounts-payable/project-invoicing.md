@@ -15,15 +15,15 @@ ms.search.scope: Core, Operations
 ms.custom: 23111
 ms.assetid: 1812d6f2-8b34-4258-8f5f-dcf12281547f
 ms.search.region: Global
-ms.author: shylaw
+ms.author: roschlom
 ms.search.validFrom: 2020-07-06
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: eab7523296996709dfe7407c582e61e28b7d4f23
-ms.sourcegitcommit: 27233e0fda61dac541c5210ca8d94ab4ba74966f
+ms.openlocfilehash: ba2f9d69295f9f5cfb4a2a791be781de32b50f46
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/03/2020
-ms.locfileid: "3651598"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3976675"
 ---
 # <a name="project-invoicing"></a>Prosjektfakturering
 
@@ -57,13 +57,13 @@ Du kan opprette fakturaforslag for følgende transaksjoner:
 -   Beløp som en kunde har betalt til deg, før et prosjekt starter
 
 > [!NOTE]
-> Funksjonen **Aktiver sortering etter ressurs under oppretting av prosjektfakturaforslag** gjør at prosjektregnskapsføreren kan sortere prosjekttransaksjonene som er tilgjengelige for fakturering etter ressursen ved oppretting av et nytt prosjektfakturaforslag. Rutenettet som viser de tilgjengelige prosjekttransaksjonene, har separate felt for **Ressurs-ID** og **Ressurs**. Med disse feltene kan du filtrere og sortere etter ressursnavnet. Denne funksjonen deaktivert som standard. Den kan aktiveres ved å bruke siden **Funksjonsbehandling** (**Arbeidsområder > Funksjonsbehandling**). Ta kontakt med systemansvarlig for å få hjelp til å aktivere denne funksjonen.
+> Funksjonen **Aktiver sortering etter ressurs under oppretting av prosjektfakturaforslag** gjør at prosjektregnskapsføreren kan sortere prosjekttransaksjonene som er tilgjengelige for fakturering etter ressursen ved oppretting av et nytt prosjektfakturaforslag. Rutenettet som viser de tilgjengelige prosjekttransaksjonene, har separate felt for **Ressurs-ID** og **Ressurs** . Med disse feltene kan du filtrere og sortere etter ressursnavnet. Denne funksjonen deaktivert som standard. Den kan aktiveres ved å bruke siden **Funksjonsbehandling** ( **Arbeidsområder > Funksjonsbehandling** ). Ta kontakt med systemansvarlig for å få hjelp til å aktivere denne funksjonen.
 
 Du kan opprette gebyrtransaksjoner i et fakturaforslag. Du kan også endre salgsprisen i time-, utgifts-, vare- og gebyrtransaksjoner. Når du posterer et fakturaforslag, legges de oppdaterte prisene og transaksjonene til i prosjektrapporter og transaksjonshistorikken. 
 
 Hvis du vil opprette flere kundefakturaer for et prosjekt, må du opprette et fakturaforslag for hver faktura. Du kan for eksempel opprette fakturaer basert på transaksjonstypen. Hvis du vil angi timer på én kundefaktura og varer på en annen faktura, må du opprette separate fakturaforslag for timetransaksjoner og gebyrtransaksjoner. 
 
-Hvis et prosjekt har mer enn én finansieringskilde, kan du opprette et separat fakturaforslag for hver finansieringskilde. På **Finansieringsregeltildelinger**-siden kan du definere prosenten av transaksjonsbeløpet som skal fordeles til hver finansieringskilde, og kilden avrundingsforskjeller skal posteres til.
+Hvis et prosjekt har mer enn én finansieringskilde, kan du opprette et separat fakturaforslag for hver finansieringskilde. På **Finansieringsregeltildelinger** -siden kan du definere prosenten av transaksjonsbeløpet som skal fordeles til hver finansieringskilde, og kilden avrundingsforskjeller skal posteres til.
 
 ### <a name="creating-customer-invoices-from-invoice-proposals"></a>Opprette kundefakturaer fra fakturaforslag
 
@@ -75,7 +75,7 @@ Hvis organisasjonen krever at fakturaforslag gås gjennom før de posteres, må 
 
 ### <a name="view-grant-information-on-project-invoice-list-pages"></a>Vise tilskuddsinformasjon på listesider for prosjektfakturaer
 
-Brukere av offentlig sektor kan legge til **Tilskudds-ID** og **Tilskuddsnavn** på listesidene **Fakturaforslag for prosjekt** og **Prosjektfakturaer**. Disse kolonnene aktiveres ved hjelp av funksjonen **Legg til tilskuddsinformasjon på listesider for prosjektfakturaer**. Denne funksjonen er som standard deaktivert og kan aktiveres i **Arbeidsområder > Funksjonsbehandling**. Ta kontakt med systemansvarlig for å få hjelp til å aktivere denne funksjonen.
+Brukere av offentlig sektor kan legge til **Tilskudds-ID** og **Tilskuddsnavn** på listesidene **Fakturaforslag for prosjekt** og **Prosjektfakturaer** . Disse kolonnene aktiveres ved hjelp av funksjonen **Legg til tilskuddsinformasjon på listesider for prosjektfakturaer** . Denne funksjonen er som standard deaktivert og kan aktiveres i **Arbeidsområder > Funksjonsbehandling** . Ta kontakt med systemansvarlig for å få hjelp til å aktivere denne funksjonen.
 
 ## <a name="on-account-invoicing"></a>A konto-fakturering
 Beløpet du angir på en a konto-faktura for et prosjekt, er basert på tidsmåling, fullførelsesprosent og andre faktureringsbetingelser som er angitt i den tilknyttede prosjektkontrakten. Beløpet beregnes ikke basert på timer, varer, utgifter eller gebyrer som posteres til prosjektet. 
@@ -111,7 +111,7 @@ Du kan for eksempel sette opp følgende faktureringstidsplan:
 Når delbetalingene er klare for fakturering, bruker du fremgangsmåten for fakturering av a konto-beløp.
 
 ## <a name="vendor-invoicing"></a>Leverandørfakturering
-Når du bestiller en vare fra en leverandør og tilordner varen til et prosjekt, bestemmer linjeegenskapen som du velger for bestillingslinjen for varen, om den innkjøpte varen faktureres til en kunde. Hvis du setter opp standard linjeegenskaper, vises de for varen på bestillingslinjen (**Linjedetaljer > Prosjekt > Linjeegenskapsbeløp**). Det finnes to metoder å endre linjeegenskapen på:
+Når du bestiller en vare fra en leverandør og tilordner varen til et prosjekt, bestemmer linjeegenskapen som du velger for bestillingslinjen for varen, om den innkjøpte varen faktureres til en kunde. Hvis du setter opp standard linjeegenskaper, vises de for varen på bestillingslinjen ( **Linjedetaljer > Prosjekt > Linjeegenskapsbeløp** ). Det finnes to metoder å endre linjeegenskapen på:
 
 -   Fakturere prosjektets kunde for varen. Du gjør dette ved å sette linjeegenskapen for varen til en belastbar verdi på bestillingen og deretter fakturere kunden ved hjelp av riktig prosjektfaktureringsmåte.
 -   Ikke fakturere prosjektets kunde for varen. Hvis du vil gjøre dette, må du ikke velge linjeegenskapen **Belastbar** på bestillingslinjen for varen. Du kan deretter fakturere bestillingen, og mer er det ikke nødvendig å gjøre.

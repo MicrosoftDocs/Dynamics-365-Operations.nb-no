@@ -15,15 +15,15 @@ ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: ShylaThompson
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c3b97b1921044ae35aa04dfa2133842c2d23246d
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: f06d3b7efa57d88d33ab256e0d8c6ebcdea1a41c
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3216235"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3975542"
 ---
 # <a name="service-activities"></a>Serviceaktiviteter        
 
@@ -32,9 +32,9 @@ ms.locfileid: "3216235"
 
 Opprette serviceaktiviteter for å definere og vedlikeholde oppgaver i en serviceordre. En serviceordre kan inneholde én eller flere aktiviteter som skal utføres av en arbeider.
 
-Serviceaktiviteter er definert i skjemaet **Aktivitetstyper**. (Klikk **Salg og markedsføring** \> **Oppsett** \> **Aktiviteter** \> **Aktivitetstyper**.) Når du har definert aktiviteter, kan du legge dem til serviceordrer automatisk basert på den tilknyttede serviceavtalen, eller du kan legge til aktiviteter manuelt når du legger til linjer i en serviceordre.
+Serviceaktiviteter er definert i skjemaet **Aktivitetstyper** . (Klikk **Salg og markedsføring** \> **Oppsett** \> **Aktiviteter** \> **Aktivitetstyper** .) Når du har definert aktiviteter, kan du legge dem til serviceordrer automatisk basert på den tilknyttede serviceavtalen, eller du kan legge til aktiviteter manuelt når du legger til linjer i en serviceordre.
 
-Du kan vise statusen for serviceaktiviteter i **Tjenestefordeling**-skjemaet. Du kan også tilordne aktiviteter fra én arbeider til en annen arbeider på nytt i dette skjemaet.
+Du kan vise statusen for serviceaktiviteter i **Tjenestefordeling** -skjemaet. Du kan også tilordne aktiviteter fra én arbeider til en annen arbeider på nytt i dette skjemaet.
 
 ## <a name="see-also"></a>Se også
 

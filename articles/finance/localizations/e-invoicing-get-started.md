@@ -3,7 +3,7 @@ title: Komme i gang med tillegget Elektronisk fakturering
 description: Dette emnet inneholder informasjon som vil hjelpe deg med å komme i gang med tillegget Elektronisk fakturering i Microsoft Dynamics 365 Finance og Dynamics 365 Supply Chain Management.
 author: gionoder
 manager: AnnBe
-ms.date: 09/22/2020
+ms.date: 10/08/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 61933bb846383932d7dd73e9c4d3c2db7a515a98
-ms.sourcegitcommit: 025561f6a21fe8705493daa290f3f6bfb9f1b962
+ms.openlocfilehash: e7f58b8a449e056c4718ac6db30dcd0f0623d2a4
+ms.sourcegitcommit: 6e0d6d291d4881b16a677373f712a235e129b632
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "3836011"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "3971478"
 ---
 # <a name="get-started-with-the-electronic-invoicing-add-on"></a>Komme i gang med tillegget Elektronisk fakturering
 
@@ -62,9 +62,9 @@ Du kan bruke tillegget Elektroniske fakturering med den gjeldende lisensen. Inge
 Før du kan fullføre trinnene i dette emnet må du ha følgende forutsetninger på plass:
 
 - Tilgang til LCS-kontoen din.
-- Et LCS-distribusjonsprosjekt som omfatter Finance eller Supply Chain Management versjon 10.0.12 eller senere.
+- Et LCS-distribusjonsprosjekt som omfatter Finance eller Supply Chain Management versjon 10.0.13 eller senere.
 - Tilgang til RCS-kontoen din.
-- Slå på globaliseringsfunksjonen for kontoen for RCS via modulen **Funksjonsbehandling**. Hvis du vil ha mer informasjon, kan du se [Regulatory Configuration Services (RCS) – globaliseringsfunksjoner](rcs-globalization-feature.md)
+- Slå på globaliseringsfunksjonen for kontoen for RCS via modulen **Funksjonsbehandling** . Hvis du vil ha mer informasjon, kan du se [Regulatory Configuration Services (RCS) – globaliseringsfunksjoner](rcs-globalization-feature.md)
 - Opprett en Key Vault-ressurs og en lagringskonto i Azure. Hvis du vil ha mer informasjon, kan du se [Opprette en Azure Storage-konto og Key Vault](e-invoicing-create-azure-storage-account-key-vault.md).
 
 ## <a name="overview"></a>Oversikt
@@ -85,16 +85,18 @@ Illustrasjonen nedenfor viser de fem hovedtrinnene du vil fullføre i dette emne
 ## <a name="lcs-setup"></a>LCS-oppsett
 
 1. Logg på LCS-kontoen.
-2. Velg LCS-distribusjonsprosjektet. Du må kjøre et prosjekt før du kan velge det.
-3. I hurtigfanen **Miljøtillegg** velger du **Installer et nytt tillegg**.
-4. Velg alternativet for **Innsending av forretningsdokument**.
-5. I dialogboksen **Konfigurer tillegg** i feltet **AAD-program-ID** angir du **091c98b0-a1c9-4b02-b62c-7753395ccabe**. Denne verdien er en fast verdi.
-6. I feltet **AAD-leier-ID** angir du IDen til kontoen for Azure-abonnementet.
+2. Velg ruten **Administrasjon av forhåndsvisningsfunksjoner** , og i feltgruppen **Offentlig forhåndsversjon** velger du **BusinessDocumentSubmission** .
+3. Merk av for **Forhåndsversjon aktivert** .
+4. Velg LCS-distribusjonsprosjektet. Du må kjøre et prosjekt før du kan velge det.
+5. I hurtigfanen **Miljøtillegg** velger du **Installer et nytt tillegg** .
+6. Velg alternativet for **Innsending av forretningsdokument** .
+7. I dialogboksen **Konfigurer tillegg** i feltet **AAD-program-ID** angir du **091c98b0-a1c9-4b02-b62c-7753395ccabe** . Denne verdien er en fast verdi.
+8. I feltet **AAD-leier-ID** angir du IDen til kontoen for Azure-abonnementet.
 
     ![Dialogboksen Konfigurer tillegg i LCS](media/e-invoicing-services-get-started-lcs-addin-setup.png)
 
-7. Merk av i avmerkingsboksen for å godta vilkårene og betingelsene.
-8. Velg **Installer**.
+9. Merk av i avmerkingsboksen for å godta vilkårene og betingelsene.
+10. Velg **Installer** .
 
 ## <a name="rcs-setup"></a>RCS-oppsett
 
@@ -107,8 +109,8 @@ Under RCS-oppsettet vil du fullføre disse oppgavene:
 ### <a name="set-up-the-key-vault-in-rcs"></a>Konfigurere Key Vault i RCS
 
 1. Logg på RCS-kontoen.
-2. I **Globaliseringsfunksjoner**-arbeidsområder i delen **Miljøer**, velger du flisen **E-fakturering**.
-3. Velg **Servicemiljøer**.
+2. I **Globaliseringsfunksjoner** -arbeidsområder i delen **Miljøer** , velger du flisen **E-fakturering** .
+3. Velg **Servicemiljøer** .
 
     ![Velge Servicemiljøer](media/e-invoicing-services-get-started-select-service-environments.png)
 
@@ -120,11 +122,11 @@ Under RCS-oppsettet vil du fullføre disse oppgavene:
     ![Velge Key Vault-parameter](media/e-invoicing-services-get-started-select-key-vault-parameters.png)
 
 5. I handlingsruten velger du **Ny** for legge til et Key Vault.
-6. I **URI for Key Vault**-feltet angir du **DNS-navn**-attributtverdien for Key Vault-ressursen du konfigurerte i Azure. Hvis du vil ha informasjon om hvor du finner **DNS-navn**-verdien, kan du se [Opprette en Azure Storage-konto og Key Vault](e-invoicing-create-azure-storage-account-key-vault.md).
+6. I **URI for Key Vault** -feltet angir du **DNS-navn** -attributtverdien for Key Vault-ressursen du konfigurerte i Azure. Hvis du vil ha informasjon om hvor du finner **DNS-navn** -verdien, kan du se [Opprette en Azure Storage-konto og Key Vault](e-invoicing-create-azure-storage-account-key-vault.md).
 
     ![Feltet URI for Key Vault](media/e-invoicing-services-get-started-enter-key-vault-uri.png)
 
-7. I hurtigfanen **Sertifikater** velger du **Legg til** og angir navnene på de digitale sertifikatene og Key Vault-hemmelighetene. Begge settene med verdier konfigureres på Key Vault-ressursen i Azure.
+7. I hurtigfanen **Sertifikater** velger du **Legg til** for å angi navn på alle digitale sertifikater og Key Vault-hemmeligheter som er nødvendige for å opprette klarerte tilkoblinger. I **Type** -kolonnen kan du angi om det er et sertifikat eller en hemmelighet. Begge settene med verdier konfigureres på Key Vault-ressursen i Azure.
 
     ![Legge til sertifikater](media/e-invoicing-services-get-started-add-digital-certificates.png)
 
@@ -132,9 +134,9 @@ Under RCS-oppsettet vil du fullføre disse oppgavene:
 
 ### <a name="set-up-the-rcs-integration-with-the-electronic-invoicing-add-on-server"></a>Konfigurere RCS-integreringen med serveren for tillegget Elektronisk fakturering
 
-1. I arbeidsområdet **Globaliseringsfunksjoner** i delen **Relaterte koblinger** velger du koblingen **Parametere for elektronisk rapportering**.
-2. Velg **Klikk her for å koble til Lifecycle Service**. Hvis du ikke vil koble til LCS, velger du **Avbryt**.
-3. I kategorien **Elektronisk fakturering-tillegg** i feltet for **URI for endepunkt for tjeneste** angir du `https://businessdocumentsubmission.us.operations365.dynamics.com/`.
+1. I arbeidsområdet **Globaliseringsfunksjoner** i delen **Relaterte innstillinger** velger du koblingen **Parametere for elektronisk rapportering** .
+2. Velg **Klikk her for å koble til Lifecycle Service** . Hvis du ikke vil koble til LCS, velger du **Avbryt** .
+3. I kategorien **E-faktureringstjenester** i feltet **URI for endepunkt for tjeneste** , angir du verdien i samsvar med de tilgjengelige områdene: `https://businessdocumentsubmission.us.operations365.dynamics.com/` eller `https://businessdocumentsubmission.eu.operations365.dynamics.com/`.
 4. I feltet **Program-ID** kontrollerer du at IDen **0cdb527f-a8d1-4bf8-9436-b352c68682b2** vises. Denne verdien er en fast verdi.
 5. I feltet **ID for LCS-miljø** angir du IDen for LCS-abonnementskontoen.
 
@@ -144,7 +146,7 @@ Under RCS-oppsettet vil du fullføre disse oppgavene:
 
 Du kan opprette ulike miljøer for tillegget Elektronisk fakturering, for eksempel utvikling-, test eller produksjonsmiljøer.
 
-1. I **Globaliseringsfunksjoner**-arbeidsområder i delen **Miljøer**, velger du flisen **E-fakturering**.
+1. I **Globaliseringsfunksjoner** -arbeidsområder i delen **Miljøer** , velger du flisen **E-fakturering** .
 2. Velg **Ny** for å opprette et miljø.
 3. I feltet for **Feltet lagringskonto for SAS-token** angir du navnet på KEY VAULT-hemmeligheten du konfigurerte i KEY VAULT i RCS.
 
@@ -189,14 +191,14 @@ Funksjonen for integrasjon av elektronisk faktura aktiveres via testversjonering
 ### <a name="turn-on-the-electronic-invoicing-add-on-integration-feature"></a>Aktivere funksjonen for integrering av tillegget Elektronisk fakturering
 
 1. Logg på Finance eller Supply Chain Management.
-2. I arbeidsområdet **Funksjonsbehandling** søker du etter den nye funksjonen, **Konfigurerbar integrasjon for tillegget Elektronisk fakturering**. Hvis funksjonen fremdeles ikke vises på siden for Funksjonsbehandling, kjører du funksjonen **Se etter oppdateringer**
-3. Velg funksjonen, og velg deretter **Aktiver nå**.
+2. I arbeidsområdet **Funksjonsbehandling** søker du etter den nye funksjonen, **Konfigurerbar integrasjon for tillegget Elektronisk fakturering** . Hvis funksjonen fremdeles ikke vises på siden for Funksjonsbehandling, kjører du funksjonen **Se etter oppdateringer**
+3. Velg funksjonen, og velg deretter **Aktiver nå** .
 
 ### <a name="set-up-the-service-endpoint-url"></a>Konfigurer URL-adressen for endepunkt for tjeneste
 
-1. Gå til **Organisasjonsstyring \> Oppsett \> parametere for elektronisk dokument**.
+1. Gå til **Organisasjonsstyring \> Oppsett \> parametere for elektronisk dokument** .
 2. I kategorien for **Innsendingstjeneste** i feltet for **URL for endepunkt for tjeneste** angir du `https://businessdocumentsubmission.us.operations365.dynamics.com/`.
-3. I **Miljø**-feltet angir du navnet på miljøet for tillegget Elektronisk fakturering som du opprettet under RCS-oppsettet.
+3. I **Miljø** -feltet angir du navnet på miljøet for tillegget Elektronisk fakturering som du opprettet under RCS-oppsettet.
 
 ![Angi serviceparametere](media/e-invoicing-services-get-started-enter-service-endpoint.png)
 
@@ -204,19 +206,19 @@ Funksjonen for integrasjon av elektronisk faktura aktiveres via testversjonering
 
 Hvis du vil aktivere forretningsdata som skal samles inn og sendes til tillegget Elektroniske fakturering, må du importere ER-datamodellen og ER-datamodellkonfigurasjonen som relatert til den land/område-spesifikke e-postfaktureringsfunksjonen du vil bruke.
 
-1. I delen **Konfigurasjonsleverandører** i arbeidsområdet **Elektronisk rapportering** velger du flisen **Microsoft**. Kontroller at konfigurasjonsleverandøren er satt til **Aktiv**. Hvis du ha mer informasjon om hvordan du setter en leverandør til **Aktiv**, kan du se [Opprette konfigurasjonsleverandører og merke dem som aktive](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11).
-3. Velg **Repositorier**.
-4. Velg **Global ressurs**, og velg deretter **Åpne**.
-5. I dialogboksen **Koble til Lifecycle Services** velger du **Klikk her for å koble til Lifecycle Service**.
+1. I delen **Konfigurasjonsleverandører** i arbeidsområdet **Elektronisk rapportering** velger du flisen **Microsoft** . Kontroller at konfigurasjonsleverandøren er satt til **Aktiv** . Hvis du ha mer informasjon om hvordan du setter en leverandør til **Aktiv** , kan du se [Opprette konfigurasjonsleverandører og merke dem som aktive](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11).
+3. Velg **Repositorier** .
+4. Velg **Global ressurs** , og velg deretter **Åpne** .
+5. I dialogboksen **Koble til Lifecycle Services** velger du **Klikk her for å koble til Lifecycle Service** .
 6. Avhengig av landet eller regionen der du vil bruke e-faktureringsfunksjonen, må du importere den gjeldende datamodellen, datamodelltilordningen og formatene. Hvis du vil ha mer informasjon om ER-konfigurasjonene du bør importere, se emnet det land/område-spesifikke emnet Komme i gang med tillegget Elektronisk fakturering.
-7. Importer **kontekstmodell for kundefaktura**. Denne modellen inneholder tilleggsparametere som beskriver, blant annet, miljøet i Finance som brukes for tillegget Elektronisk fakturering under sending av forretningsdata.
+7. Importer **kontekstmodell for kundefaktura** . Denne modellen inneholder tilleggsparametere som beskriver, blant annet, miljøet i Finance som brukes for tillegget Elektronisk fakturering under sending av forretningsdata.
 
 ### <a name="turn-on-countryregion-specific-e-invoicing-features"></a><a name="region-specific"></a>Aktivere land/område-spesifikke funksjoner for e-fakturering
 
 Hvis du vil aktivere land/område-spesifikke funksjoner for e-fakturering, slik at de fungerer med tillegget Elektronisk fakturering, må du aktivere funksjonen i hver juridiske enhet der du vil bruke den. Etterpå kan ikke den gamle integrasjonen for elektronisk fakturering lenger brukes, og integreringen med det nye tillegget Elektronisk fakturering slås på.
 
-1. Gå til **Organisasjonsstyring \> Oppsett \> parametere for elektronisk dokument**.
-2. I kategorien **Funksjoner**, i raden for funksjonen som er knyttet til din land/område-spesifikke e-postfaktureringsfunksjon, merker du av i **Aktivert**-kolonnen. Hvis du vil ha mer informasjon om hvilken funksjon du må slå på, se det land/område-spesifikke emnet Komme i gang med tillegget Elektronisk fakturering.
+1. Gå til **Organisasjonsstyring \> Oppsett \> parametere for elektronisk dokument** .
+2. I kategorien **Funksjoner** , i raden for funksjonen som er knyttet til din land/område-spesifikke e-postfaktureringsfunksjon, merker du av i **Aktivert** -kolonnen. Hvis du vil ha mer informasjon om hvilken funksjon du må slå på, se det land/område-spesifikke emnet Komme i gang med tillegget Elektronisk fakturering.
 
 ![Aktivere funksjonen for e-fakturering](media/e-invoicing-services-get-started-enable-invoicing-feature.png)
 
@@ -227,11 +229,11 @@ Hvis du vil aktivere land/område-spesifikke funksjoner for e-fakturering, slik 
 
 Hvis det sendte fakturadokumentet krever en oppdatering etter svaret på innsendingen til de myndighetsgodkjente tjenestene, må du importere en spesiell ER-datamodell og konfigurasjoner for å aktivere statusen for fakturadokumentet eller andre felt som skal oppdateres.
 
-1. I delen **Konfigurasjonsleverandører** i arbeidsområdet **Elektronisk rapportering** velger du flisen **Microsoft**.
-2. Velg **Repositorier**.
-3. Velg **Global ressurs**, og velg deretter **Åpne**.
-4. Importer **Svarmeldingsmodell**, **Format for import av svarmelding**, **Tilknytning av svarmeldingsmodell til mål** og **Format for import av filinnhold**.
-5. Gå til **Organisasjonsstyring \> Oppsett \> parametere for elektronisk dokument**.
+1. I delen **Konfigurasjonsleverandører** i arbeidsområdet **Elektronisk rapportering** velger du flisen **Microsoft** .
+2. Velg **Repositorier** .
+3. Velg **Global ressurs** , og velg deretter **Åpne** .
+4. Importer **Svarmeldingsmodell** , **Format for import av svarmelding** , **Tilknytning av svarmeldingsmodell til mål** og **Format for import av filinnhold** .
+5. Gå til **Organisasjonsstyring \> Oppsett \> parametere for elektronisk dokument** .
 6. I kategorien **Elektronisk dokument** velger du **Legg til** for å angi navnet på tabellen som er relatert til ditt land/område-spesifikke fakturadokument. Hvis du vil ha mer informasjon om hvilke tabellnavn du bør velge, kan du se det land/område-spesifikke emnet Komme i gang med tillegget Elektronisk fakturering.
 7. Velg **Svartyper** for å konfigurere svartypen. Hvis du vil ha mer informasjon om hvilke tabellnavn du bør velge, kan du se det land/område-spesifikke emnet Komme i gang med tillegget Elektronisk fakturering.
 
@@ -274,24 +276,24 @@ Under den vanlige innsendingsprosessen er kommunikasjon mellom klienten og tille
 
 Du kan sende forretningsdokumenter enten manuelt eller basert på dine tidsplanbehov.
 
-1. Gå til **Organisasjonsstyring \> Periodiske \> Elektroniske dokumenter \> Send elektroniske dokumenter**.
-2. For første innsending av et dokument må du alltid sette alternativet **Send dokumenter på nytt** til **Nei**. Hvis du må sende et dokument på nytt via tjenesten, setter du dette alternativet til **Ja**.
-3. I hurtigfanen **Poster som skal inkluderes** velger du **Filter** for å åpne **Forespørsel**-dialogboksen, der du kan bygge en spørring for å velge dokumenter for innsending.
+1. Gå til **Organisasjonsstyring \> Periodiske \> Elektroniske dokumenter \> Send elektroniske dokumenter** .
+2. For første innsending av et dokument må du alltid sette alternativet **Send dokumenter på nytt** til **Nei** . Hvis du må sende et dokument på nytt via tjenesten, setter du dette alternativet til **Ja** .
+3. I hurtigfanen **Poster som skal inkluderes** velger du **Filter** for å åpne **Forespørsel** -dialogboksen, der du kan bygge en spørring for å velge dokumenter for innsending.
 
 ![Dialogboksen Send elektroniske dokumenter](media/e-invoicing-services-get-started-submission-form.png)
 
 ### <a name="filter-query"></a>Filterspørring
 
-1. I dialogboksen **Forespørsel** i kategorien **Område** angir du filterkriterier ved hjelp av feltene **Tabell**, **Avledet tabell**, **Felt** og **Vilkår**.
+1. I dialogboksen **Forespørsel** i kategorien **Område** angir du filterkriterier ved hjelp av feltene **Tabell** , **Avledet tabell** , **Felt** og **Vilkår** .
 2. Velg **Legg til** for å legge til så mange tilleggskriterier du trenger for å velge forretningsdokumentene.
 
     ![Definere filterkriterier for sending](media/e-invoicing-services-get-started-set-up-submission-filter-criteria.png)
 
-3. Velg **OK** for å lukke dialogboksen **Forespørsel**.
+3. Velg **OK** for å lukke dialogboksen **Forespørsel** .
 4. Velg **OK** for å sende de valgte forretningsdokumentene til tillegget Elektronisk fakturering.
 
     > [!NOTE]
-    > Under det første forsøket på å sende et dokument via tjenesten, blir du bedt om å bekrefte tilkoblingen til tillegget Elektronisk fakturering. Velg **Klikk her for å koble til innsendingstjeneste for elektronisk dokument**.
+    > Under det første forsøket på å sende et dokument via tjenesten, blir du bedt om å bekrefte tilkoblingen til tillegget Elektronisk fakturering. Velg **Klikk her for å koble til innsendingstjeneste for elektronisk dokument** .
     >
     > ![Koble til meldingsboksen for innsendingstjeneste for elektronisk dokument](media/e-invoicing-services-get-started-dialog-form-connect-e-Invoicing-services.png)
     >
@@ -310,20 +312,20 @@ Du kan sende forretningsdokumenter enten manuelt eller basert på dine tidsplanb
 
 I stedet for å sende dokumenter manuelt, kan du automatisere sendingsprosessen og kjøre den i bakgrunnen, basert på en konfigurert frekvens for satsvis utførelse.
 
-1. I dialogboksen **Send elektroniske dokumenter** i hurtigfanen **Kjør i bakgrunnen** setter du alternativet for **Satsvis behandling** til **Ja**.
+1. I dialogboksen **Send elektroniske dokumenter** i hurtigfanen **Kjør i bakgrunnen** setter du alternativet for **Satsvis behandling** til **Ja** .
 2. I kategorien **Regelmessighet** konfigurerer du frekvensen for satsvis behandling.
 
 ![Definere innsending etter parti](media/e-invoicing-services-get-started-set-up-submission-batch.png)
 
 ### <a name="view-all-submission-logs"></a>Vise alle sendelogger
 
-1. Gå til **Organisasjonsstyring \> Periodisk \> Elektroniske dokumenter \> sendingslogg for elektronisk dokument**.
+1. Gå til **Organisasjonsstyring \> Periodisk \> Elektroniske dokumenter \> sendingslogg for elektronisk dokument** .
 2. I feltet **Dokumenttype** velger du dokumenttypen det skal filtreres etter.
 
     ![Velge dokumenttypen som det skal vises sendelogger for](media/e-invoicing-services-get-started-select-document-type-for-viewing-submission-log.png)
 
     > [!IMPORTANT]
-    > Verdien som vises i kolonnen **Status for sending**, representerer statusen som er relatert til fullføringen av innsendingsprosessen. Den viser om flyten av handlinger som er konfigurert i RCS, ble kjørt til slutten, uansett om det elektroniske dokumentet ble godkjent eller avvist. Verdien i kolonnen for **innsendingsstatus** representerer ikke statusen til det sendte dokumentet. Du kan vise statusen til det sendte dokumentet (det vil si om dokumentet ble godkjent eller avvist) på hurtigfanen for **handlingslogg for behandling** i detaljene for sendingsloggen, som beskrevet nedenfor.
+    > Verdien som vises i kolonnen **Status for sending** , representerer statusen som er relatert til fullføringen av innsendingsprosessen. Den viser om flyten av handlinger som er konfigurert i RCS, ble kjørt til slutten, uansett om det elektroniske dokumentet ble godkjent eller avvist. Verdien i kolonnen for **innsendingsstatus** representerer ikke statusen til det sendte dokumentet. Du kan vise statusen til det sendte dokumentet (det vil si om dokumentet ble godkjent eller avvist) på hurtigfanen for **handlingslogg for behandling** i detaljene for sendingsloggen, som beskrevet nedenfor.
 
 3. Velg **Forespørsler \> Innsendingsdetaljer** i handlingsruten.
 4. Vis detaljene for innsendingsloggen.
@@ -332,7 +334,7 @@ I stedet for å sende dokumenter manuelt, kan du automatisere sendingsprosessen 
 
 Resultatene som vises i innsendingsloggen, avhenger av hvordan funksjonen for e-fakturering ble konfigurert i RCS. Men uavhengig av oppsettet, har sendingsloggen alltid tre hurtigfaner:
 
-- **Behandlingshandlinger** – Denne hurtigfanen viser utførelsesloggen for handlingene som er konfigurert i funksjonsversjonen som er definert i RCS. **Status**-kolonnen viser om handlingen ble kjørt uten feil.
+- **Behandlingshandlinger** – Denne hurtigfanen viser utførelsesloggen for handlingene som er konfigurert i funksjonsversjonen som er definert i RCS. **Status** -kolonnen viser om handlingen ble kjørt uten feil.
 - **Handlingsfiler** – Denne hurtigfanen viser de mellomliggende filene som ble generert under utføring av handlingene. Du kan velge **Vis** for å laste ned filen og vise innholdet.
 - **Handlingslogg for behandling** – Denne hurtigfanen viser resultatet av kommunikasjonen mellom tillegget Elektronisk fakturering og målwebtjenesten. Den viser også hva som ble returnert av webtjenestebehandlingen.
 

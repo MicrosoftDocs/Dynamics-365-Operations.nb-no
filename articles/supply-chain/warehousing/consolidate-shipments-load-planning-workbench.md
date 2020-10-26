@@ -13,15 +13,15 @@ audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: v-olbara
+ms.author: kamaybac
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: 10.0.3
-ms.openlocfilehash: 396a038dbf2f4b6835ecbb5fd8cb39a3a3608af7
-ms.sourcegitcommit: 8a2127c5af6cdbda30ccc1f9bef9bd4ab61e9e50
+ms.openlocfilehash: 2f1dd5c743664e638c043b600ae7b0f6bce5ddcd
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/18/2020
-ms.locfileid: "3383834"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3986846"
 ---
 # <a name="consolidate-shipments-by-using-release-to-warehouse-from-the-load-planning-workbench"></a>Konsolidere forsendelser ved hjelp av siden Frigi til lager fra arbeidsområdet for lastplanlegging
 
@@ -41,7 +41,7 @@ Dette emnet viser et scenario der flere ordrer frigis til lageret i samme last, 
 
 Begynn med å opprette en samling salgsordrer du kan arbeide med. Du må arbeide med et lager som er aktivert for prosessen for avansert lager (WMS). Med mindre et annet lager er nevnt eksplisitt, må det samme lageret brukes for hvert av de følgende ordresettene.
 
-Gå til **Kunde \> Ordrer \> Alle salgsordrer**, og opprett en samling av salgsordrer som har innstillingene som er beskrevet i følgende underinndelinger.
+Gå til **Kunde \> Ordrer \> Alle salgsordrer** , og opprett en samling av salgsordrer som har innstillingene som er beskrevet i følgende underinndelinger.
 
 ### <a name="create-order-set-1"></a>Opprett ordresett 1
 
@@ -54,10 +54,10 @@ Gå til **Kunde \> Ordrer \> Alle salgsordrer**, og opprett en samling av salgso
 
 1. Legg til en ordrelinje som har følgende innstillinger:
 
-    - **Varenummer:** *A0001* (en vare uten **Kode 4**-filter tilordnet)
+    - **Varenummer:** *A0001* (en vare uten **Kode 4** -filter tilordnet)
     - **Antall:** *1.00*
 
-1. Velg **Lager \> Reservasjon**, og velg deretter **Reserver parti** i handlingsruten for å reservere ordrelinjen.
+1. Velg **Lager \> Reservasjon** , og velg deretter **Reserver parti** i handlingsruten for å reservere ordrelinjen.
 
 #### <a name="sales-order-1-2"></a>Salgsordre 1-2
 
@@ -68,10 +68,10 @@ Gå til **Kunde \> Ordrer \> Alle salgsordrer**, og opprett en samling av salgso
 
 1. Legg til en ordrelinje som har følgende innstillinger:
 
-    - **Varenummer:** *A0001* (en vare uten **Kode 4**-filter tilordnet)
+    - **Varenummer:** *A0001* (en vare uten **Kode 4** -filter tilordnet)
     - **Antall:** *1.00*
 
-1. Velg **Lager \> Reservasjon**, og velg deretter **Reserver parti** i handlingsruten for å reservere ordrelinjen.
+1. Velg **Lager \> Reservasjon** , og velg deretter **Reserver parti** i handlingsruten for å reservere ordrelinjen.
 
 #### <a name="sales-order-1-3"></a>Salgsordre 1-3
 
@@ -82,17 +82,17 @@ Gå til **Kunde \> Ordrer \> Alle salgsordrer**, og opprett en samling av salgso
 
 1. Legg til en ordrelinje som har følgende innstillinger:
 
-    - **Varenummer:** *A0001* (en vare uten **Kode 4**-filter tilordnet)
+    - **Varenummer:** *A0001* (en vare uten **Kode 4** -filter tilordnet)
     - **Antall:** *1.00*
 
-1. Velg **Lager \> Reservasjon**, og velg deretter **Reserver parti** i handlingsruten for å reservere ordrelinjen.
+1. Velg **Lager \> Reservasjon** , og velg deretter **Reserver parti** i handlingsruten for å reservere ordrelinjen.
 1. Legg til en ny ordrelinje som har følgende innstillinger:
 
-    - **Varenummer:** *A0002* (en vare uten **Kode 4**-filter tilordnet)
+    - **Varenummer:** *A0002* (en vare uten **Kode 4** -filter tilordnet)
     - **Antall:** *1.00*
     - **Leveringsmåte:** *Airwa-Air*
 
-1. Velg **Lager \> Reservasjon**, og velg deretter **Reserver parti** i handlingsruten for å reservere den nye ordrelinjen.
+1. Velg **Lager \> Reservasjon** , og velg deretter **Reserver parti** i handlingsruten for å reservere den nye ordrelinjen.
 
 ### <a name="create-order-set-2"></a>Opprett ordresett 2
 
@@ -104,17 +104,17 @@ Gå til **Kunde \> Ordrer \> Alle salgsordrer**, og opprett en samling av salgso
 
 1. Legg til en ordrelinje som har følgende innstillinger:
 
-    - **Varenummer:** *M9200* (en vare der filteret **Kode 4** er satt til *Brannfarlig*)
+    - **Varenummer:** *M9200* (en vare der filteret **Kode 4** er satt til *Brannfarlig* )
     - **Antall:** *1.00*
 
-1. Velg **Lager \> Reservasjon**, og velg deretter **Reserver parti** i handlingsruten for å reservere ordrelinjen.
+1. Velg **Lager \> Reservasjon** , og velg deretter **Reserver parti** i handlingsruten for å reservere ordrelinjen.
 1. Legg til en ny ordrelinje som har følgende innstillinger:
 
-    - **Varenummer:** *M9201* (en vare der filteret **Kode 4** er satt til *Eksplosivt*)
+    - **Varenummer:** *M9201* (en vare der filteret **Kode 4** er satt til *Eksplosivt* )
     - **Antall:** *1.00*
     - **Leveringsmåte:** *Airwa-Air*
 
-1. Velg **Lager \> Reservasjon**, og velg deretter **Reserver parti** i handlingsruten for å reservere den nye ordrelinjen.
+1. Velg **Lager \> Reservasjon** , og velg deretter **Reserver parti** i handlingsruten for å reservere den nye ordrelinjen.
 
 ### <a name="create-order-set-3"></a>Opprett ordresett 3
 
@@ -127,10 +127,10 @@ Gå til **Kunde \> Ordrer \> Alle salgsordrer**, og opprett en samling av salgso
 
 1. Legg til en ordrelinje som har følgende innstillinger:
 
-    - **Varenummer:** *A0001* (en vare uten **Kode 4**-filter tilordnet)
+    - **Varenummer:** *A0001* (en vare uten **Kode 4** -filter tilordnet)
     - **Antall:** *1.00*
 
-1. Velg **Lager \> Reservasjon**, og velg deretter **Reserver parti** i handlingsruten for å reservere ordrelinjen.
+1. Velg **Lager \> Reservasjon** , og velg deretter **Reserver parti** i handlingsruten for å reservere ordrelinjen.
 
 #### <a name="sales-orders-3-3-and-3-4"></a>Salgsordrer 3-3 og 3-4
 
@@ -141,10 +141,10 @@ Gå til **Kunde \> Ordrer \> Alle salgsordrer**, og opprett en samling av salgso
 
 1. Legg til en ordrelinje som har følgende innstillinger:
 
-    - **Varenummer:** *A0001* (en vare uten **Kode 4**-filter tilordnet)
+    - **Varenummer:** *A0001* (en vare uten **Kode 4** -filter tilordnet)
     - **Antall:** *1.00*
 
-1. Velg **Lager \> Reservasjon**, og velg deretter **Reserver parti** i handlingsruten for å reservere ordrelinjen.
+1. Velg **Lager \> Reservasjon** , og velg deretter **Reserver parti** i handlingsruten for å reservere ordrelinjen.
 
 ### <a name="create-order-set-4"></a>Opprett ordresett 4
 
@@ -156,10 +156,10 @@ Gå til **Kunde \> Ordrer \> Alle salgsordrer**, og opprett en samling av salgso
 
 1. Legg til en ordrelinje som har følgende innstillinger:
 
-    - **Varenummer:** *A0001* (en vare uten **Kode 4**-filter tilordnet)
+    - **Varenummer:** *A0001* (en vare uten **Kode 4** -filter tilordnet)
     - **Antall:** *1.00*
 
-1. Velg **Lager \> Reservasjon**, og velg deretter **Reserver parti** i handlingsruten for å reservere ordrelinjen.
+1. Velg **Lager \> Reservasjon** , og velg deretter **Reserver parti** i handlingsruten for å reservere ordrelinjen.
 
 #### <a name="sales-orders-4-3-and-4-4"></a>Salgsordrer 4-3 og 4-4
 
@@ -169,10 +169,10 @@ Gå til **Kunde \> Ordrer \> Alle salgsordrer**, og opprett en samling av salgso
 
 1. Legg til en ordrelinje som har følgende innstillinger:
 
-    - **Varenummer:** *A0001* (en vare uten **Kode 4**-filter tilordnet)
+    - **Varenummer:** *A0001* (en vare uten **Kode 4** -filter tilordnet)
     - **Antall:** *1.00*
 
-1. Velg **Lager \> Reservasjon**, og velg deretter **Reserver parti** i handlingsruten for å reservere ordrelinjen.
+1. Velg **Lager \> Reservasjon** , og velg deretter **Reserver parti** i handlingsruten for å reservere ordrelinjen.
 
 #### <a name="sales-orders-4-5-and-4-6"></a>Salgsordrer 4-5 og 4-6
 
@@ -185,10 +185,10 @@ Gå til **Kunde \> Ordrer \> Alle salgsordrer**, og opprett en samling av salgso
 
 1. Legg til en ordrelinje som har følgende innstillinger:
 
-    - **Varenummer:** *A0001* (en vare uten **Kode 4**-filter tilordnet)
+    - **Varenummer:** *A0001* (en vare uten **Kode 4** -filter tilordnet)
     - **Antall:** *1.00*
 
-1. Velg **Lager \> Reservasjon**, og velg deretter **Reserver parti** i handlingsruten for å reservere ordrelinjen.
+1. Velg **Lager \> Reservasjon** , og velg deretter **Reserver parti** i handlingsruten for å reservere ordrelinjen.
 
 #### <a name="sales-orders-4-7-and-4-8"></a>Salgsordrer 4-7 og 4-8
 
@@ -201,19 +201,19 @@ Gå til **Kunde \> Ordrer \> Alle salgsordrer**, og opprett en samling av salgso
 
 1. Legg til en ordrelinje som har følgende innstillinger:
 
-    - **Varenummer:** *A0001* (en vare uten **Kode 4**-filter tilordnet)
+    - **Varenummer:** *A0001* (en vare uten **Kode 4** -filter tilordnet)
     - **Antall:** *1.00*
 
-1. Velg **Lager \> Reservasjon**, og velg deretter **Reserver parti** i handlingsruten for å reservere ordrelinjen.
+1. Velg **Lager \> Reservasjon** , og velg deretter **Reserver parti** i handlingsruten for å reservere ordrelinjen.
 
 ## <a name="use-the-load-planning-workbench-to-create-loads-and-release-them-to-the-warehouse"></a>Bruk arbeidsområde for lastplanlegging til å opprette laster og frigi dem til lageret
 
 Følg disse trinnene for å opprette en belastning for hvert ordresett du har opprettet for dette , og deretter frigi det til lageret.
 
-1. Gå til **Lagerstyring \> Laster \> Arbeidsområde for lastplanlegging**.
+1. Gå til **Lagerstyring \> Laster \> Arbeidsområde for lastplanlegging** .
 1. I kategorien **Salgslinjer** finner du og velger alle salgsordrelinjene fra ett av ordresettene du opprettet for dette .
 1. I handlingsruten velger du **Legg til \> I ny last** i kategorien **Tilbud og etterspørsel** for å legge til de valgte ordrelinjene i en ny last.
-1. I dialogboksen **Tilordning av lastmal** velger du en lastmal i feltet **Lastmal-ID**, for eksempel *Standard lastmal*.
+1. I dialogboksen **Tilordning av lastmal** velger du en lastmal i feltet **Lastmal-ID** , for eksempel *Standard lastmal* .
 1. Velg **OK** for å lukke dialogboksen. 
 1. I delen **Laster** finner og velger du lasten du nettopp opprettet.
 1. Velg **Frigi \> Frigi til lager** for å frigi den valgte lasten til lageret.
@@ -223,39 +223,39 @@ Følg disse trinnene for å opprette en belastning for hvert ordresett du har op
 
 I den følgende prosedyren kan du kontrollere forsendelsene som er opprettet eller oppdatert som et resultat av forsendelseskonsolidering. Bruk det til å gå gjennom hvert ordresett du har opprettet for dette , og se gjennom underinndelinge nedenfor for å kontrollere at du har fått de forventede resultatene.
 
-1. Gå til **Lagerstyring \> Forsendelser \> Alle forsendelser**.
+1. Gå til **Lagerstyring \> Forsendelser \> Alle forsendelser** .
 1. Finn og velg den påkrevde forsendelsen.
-1. Hvis en konsolideringspolicy ble brukt da forsendelsen ble opprettet eller oppdatert, skal den vises i feltet **Policy for forsendelseskonsolidering**.
+1. Hvis en konsolideringspolicy ble brukt da forsendelsen ble opprettet eller oppdatert, skal den vises i feltet **Policy for forsendelseskonsolidering** .
 
 ### <a name="release-order-set-1-in-one-load"></a>Frigi ordresett 1 i én last
 
 To forsendelser skal ha blitt opprettet:
 
-- Den første forsendelsen inneholder tre linjer og ble opprettet ved hjelp av policyen for forsendelseskonsolidering for *CustomerMode*.
-- Den andre forsendelen, som ikke bruker transportmåten *Airways*, ble opprettet ved hjelp av policyen for forsendelseskonsolidering for *CustomerOrderNo*.
+- Den første forsendelsen inneholder tre linjer og ble opprettet ved hjelp av policyen for forsendelseskonsolidering for *CustomerMode* .
+- Den andre forsendelen, som ikke bruker transportmåten *Airways* , ble opprettet ved hjelp av policyen for forsendelseskonsolidering for *CustomerOrderNo* .
 
 ### <a name="release-order-set-2-in-one-load"></a>Frigi ordresett 2 i én last
 
 Tre forsendelser skal ha blitt opprettet:
 
-- Den første forsendelsen inneholder varer med statusen *Brannfarlig*.
-- Hver av de to andre forsendelsene inneholder én linje med varen med statusen *Eksplosivt*.
+- Den første forsendelsen inneholder varer med statusen *Brannfarlig* .
+- Hver av de to andre forsendelsene inneholder én linje med varen med statusen *Eksplosivt* .
 
 ### <a name="release-order-set-3-in-one-load"></a>Frigi ordresett 3 i én last
 
 To forsendelser skal ha blitt opprettet:
 
-- Den første forsendelsen inneholder ordrelinjer fra salgsordren der feltet **Kunderekvisisjon** er satt til *1*.
-- Den andre forsendelsen inneholder ordrelinjer fra salgsordren der feltet **Kunderekvisisjon** er satt til *2*.
+- Den første forsendelsen inneholder ordrelinjer fra salgsordren der feltet **Kunderekvisisjon** er satt til *1* .
+- Den andre forsendelsen inneholder ordrelinjer fra salgsordren der feltet **Kunderekvisisjon** er satt til *2* .
 
 ### <a name="release-order-set-4-in-one-load"></a>Frigi ordresett 4 i én last
 
 Fire forsendelser skal ha blitt opprettet:
 
-- Linjer fra to ordrer for kundekonto *US-003* ble gruppert i én forsendelse ved hjelp av policyen for forsendelseskonsolidering for *Ordrepulje*.
-- Linjer fra to ordrer for kundekonto *US-004* ble gruppert i én forsendelse ved hjelp av policyen for forsendelseskonsolidering for *Ordrepulje*.
-- Linjer fra salgsordre 4-5 og 4-6 for kundekonto *US-007* ble gruppert i én forsendelse ved hjelp av policyen for forsendelseskonsolidering for *Ordrepulje*.
-- Linjer fra salgsordre 4-7 og 4-8 for kundekonto *US-007* ble gruppert i én forsendelse ved hjelp av policyen for forsendelseskonsolidering for *Kryssordre*.
+- Linjer fra to ordrer for kundekonto *US-003* ble gruppert i én forsendelse ved hjelp av policyen for forsendelseskonsolidering for *Ordrepulje* .
+- Linjer fra to ordrer for kundekonto *US-004* ble gruppert i én forsendelse ved hjelp av policyen for forsendelseskonsolidering for *Ordrepulje* .
+- Linjer fra salgsordre 4-5 og 4-6 for kundekonto *US-007* ble gruppert i én forsendelse ved hjelp av policyen for forsendelseskonsolidering for *Ordrepulje* .
+- Linjer fra salgsordre 4-7 og 4-8 for kundekonto *US-007* ble gruppert i én forsendelse ved hjelp av policyen for forsendelseskonsolidering for *Kryssordre* .
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 

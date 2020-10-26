@@ -15,15 +15,15 @@ ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: ShylaThompson
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1c937f43896d239a5cc8b48ed06854add8c9a618
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 7a1a47761869a4190eac6dc9e069a6b520bf7a1d
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3202796"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3985148"
 ---
 # <a name="create-service-agreements"></a>Opprette serviceavtaler
 
@@ -33,10 +33,10 @@ Dette emnet beskriver hvordan du bruker funksjoner i modulene Servicestyring og 
 
 ## <a name="create-a-service-agreement-from-service-management"></a>Opprette en serviceavtale fra Servicestyring
 
-1. Gå til **Servicestyring**.
+1. Gå til **Servicestyring** .
 2. Klikk **Serviceavtaler** for å opprette en ny serviceavtalelinje i sidehodet. 
-3. Klikk **Ny**. Angi en beskrivelse, velg en referanse til et prosjekt i **Prosjekt-ID**-feltet og fyll ut resten av feltene og linjene for serviceavtalen. Klikk **Lagre**.
-4. Klikk **Relasjoner**-kategorien og velg **Serviceobjekter** eller **Serviceoppgaver** for å opprette serviceobjektrelasjoner eller serviceoppgaverelasjoner for serviceavtalen. Serviceobjektene og oppgavene du har opprettet relasjoner til kan knyttes til linjene på serviceavtalen.
+3. Klikk **Ny** . Angi en beskrivelse, velg en referanse til et prosjekt i **Prosjekt-ID** -feltet og fyll ut resten av feltene og linjene for serviceavtalen. Klikk **Lagre** .
+4. Klikk **Relasjoner** -kategorien og velg **Serviceobjekter** eller **Serviceoppgaver** for å opprette serviceobjektrelasjoner eller serviceoppgaverelasjoner for serviceavtalen. Serviceobjektene og oppgavene du har opprettet relasjoner til kan knyttes til linjene på serviceavtalen.
 5. I den nedre halvdelen av siden oppretter du serviceavtalelinjer ved å kopiere linjer fra en servicemal eller en annen serviceavtale eller ved å opprette serviceavtalelinjer manuelt.
 
 > [!NOTE]
@@ -44,16 +44,16 @@ Dette emnet beskriver hvordan du bruker funksjoner i modulene Servicestyring og 
 
 ## <a name="create-service-agreement-lines-manually"></a>Opprette serviceavtalelinjer manuelt
 
-1. Fra **Serviceavtaler**-siden, legg til en serviceavtalelinje i linjerutenettet. 
+1. Fra **Serviceavtaler** -siden, legg til en serviceavtalelinje i linjerutenettet. 
 2. Angi den relevante informasjonen for serviceavtalelinjen. 
 3. Trykk **CTRL+S** for å lagre linjen, og lukk deretter siden.
 
 ## <a name="create-a-service-agreement-from-project"></a>Opprette en serviceavtale fra Prosjekt
 
-1. Klikk **Prosjektstyring og regnskap**.
-2. Klikk **Alle prosjekter**.
+1. Klikk **Prosjektstyring og regnskap** .
+2. Klikk **Alle prosjekter** .
 3. Velg prosjektet fra listen.
-4. Klikk **Administrer** i **handlingsruten**. I **Ny**-handlingsgruppen klikker du **Service** og velger **Serviceavtale**.
+4. Klikk **Administrer** i **handlingsruten** . I **Ny** -handlingsgruppen klikker du **Service** og velger **Serviceavtale** .
 5. Følg trinnene i delen **Opprett en serviceavtale** som beskrevet tidligere i dette emnet for å angi prosjektreferansen.
 
 

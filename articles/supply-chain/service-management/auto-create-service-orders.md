@@ -15,15 +15,15 @@ ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: ShylaThompson
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 33de4746b8011f4e7fc0ce2929c967870eeebae9
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 08fb7363ab87fd6a7f3d38406e72b1f542dc2c2a
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3203026"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3978755"
 ---
 # <a name="automatically-create-service-orders"></a>Automatisk opprette serviceordrer 
 
@@ -38,7 +38,7 @@ Serviceordrer genereres automatisk fra følgende innstillinger:
 
   - Serviceavtaleintervallet som er definert på serviceavtalelinjene. Serviceavtaleintervallet angir hvor ofte det opprettes serviceordrelinjer. Hvis du vil ha mer informasjon om serviceintervaller, se [Serviceintervaller](service-intervals.md).
 
-  - Perioden du angir for å definere serviceperioden i feltene **Fra dato** og **Til dato** i skjemaet **Opprett serviceordrer**. Hvis du vil ha mer informasjon om å kombinere serviceordrer, se [Opprette serviceordrer automatisk](create-service-orders-automatically.md).
+  - Perioden du angir for å definere serviceperioden i feltene **Fra dato** og **Til dato** i skjemaet **Opprett serviceordrer** . Hvis du vil ha mer informasjon om å kombinere serviceordrer, se [Opprette serviceordrer automatisk](create-service-orders-automatically.md).
 
   - Alternativet **Kombiner serviceordrer** i serviceavtalehodet. Dette alternativet definerer om serviceordrelinjer som er generert fra en serviceavtale, kombinerer serviceordrer i henhold til ansatt, serviceoppgave, serviceobjekt eller serviceavtale. Hvis du vil ha mer informasjon, se [Kombinere serviceordrer](combine-service-orders.md).
 
@@ -50,7 +50,7 @@ Serviceordrer genereres automatisk fra følgende innstillinger:
 
 ## <a name="example-1"></a>Eksempel 1
 
-Serviceavtalen varer fra 1. januar 2012 til 31. desember 2012. Hvis serviceperioden du angir i skjemaet **Opprett serviceordrer**, går fra 1. november 2012 til 1. februar 2013, opprettes det serviceordrer fra 1. november 2012 til 31. desember 2012.
+Serviceavtalen varer fra 1. januar 2012 til 31. desember 2012. Hvis serviceperioden du angir i skjemaet **Opprett serviceordrer** , går fra 1. november 2012 til 1. februar 2013, opprettes det serviceordrer fra 1. november 2012 til 31. desember 2012.
 
 ## <a name="example-2"></a>Eksempel 2
 

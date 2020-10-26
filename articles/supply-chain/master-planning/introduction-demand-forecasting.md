@@ -16,15 +16,15 @@ ms.custom: 72004
 ms.assetid: 916707c9-1333-460f-a0fa-4e95f6fda2ad
 ms.search.region: global
 ms.search.industry: Manufacturing
-ms.author: roxanad
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1033432d0d820516d8c9b2f58f27241351e7c64b
-ms.sourcegitcommit: 2e7454c07adfc05164121307050f6f24303d36d2
+ms.openlocfilehash: 62ee31b7931c6e7d8f54c1efb556a2ba01eb7746
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "3550046"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3981456"
 ---
 # <a name="demand-forecasting-overview"></a>Oversikt over behovsprognose
 
@@ -47,7 +47,7 @@ Her er noen av de viktigste funksjonene i behovsprognose:
 ## <a name="major-themes-in-demand-forecasting"></a>Viktige temaer i behovsprognose
 Tre viktige temaer er implementert i behovsprognose:
 
--   **Modularitet** – behovsprognose er modulær og enkel å konfigurere. Du kan aktivere eller deaktivere funksjonen ved å endre konfigurasjonsnøkkelen på **Handel** &gt; **Lagerprognose** &gt; **Behovsprognose**.
+-   **Modularitet** – behovsprognose er modulær og enkel å konfigurere. Du kan aktivere eller deaktivere funksjonen ved å endre konfigurasjonsnøkkelen på **Handel** &gt; **Lagerprognose** &gt; **Behovsprognose** .
 -   **Gjenbruk av Microsoft-stakken** – Machine Learning, som nå er en del av Microsoft Cortana Analytics Suite, lar deg raskt og enkelt opprette prediksjonsanalyseeksperimenter, for eksempel behovsanslagseksperimenter, ved hjelp av algoritmene R eller Python programmeringsspråk og et enkelt dra-og-slipp-grensesnitt.
     -   Du kan laste ned behovsprognoseeksperimenter, endre dem slik at de overholder dine forretningskrav, publisere dem som en webtjeneste på Azure og bruke dem til å generere behovsprognoser. Eksperimentene er tilgjengelige for nedlasting hvis du har kjøpt et abonnement for Supply Chain Management for produksjonsplanlegger som bruker på virksomhetsnivå.
     -   Du kan laste ned de tilgjengelige behovsprediksjonseksperimentene fra [Cortana Analytics Gallery](https://gallery.cortanaanalytics.com/). Mens behovsprognoseeksperimenter automatisk er integrert med Supply Chain Management, må kunder og partnere håndtere integreringen av eksperimenter de laster ned fra [Cortana Analytics Gallery](https://gallery.cortanaanalytics.com/). Derfor er ikke eksperimenter fra [Cortana Analytics Gallery](https://gallery.cortanaanalytics.com/) like enkle å bruke som behovsprognoseeksperimenter for Finance and Operations. Du må endre koden for eksperimentene slik at de bruker Finance and Operations Application Programming Interface (API).
@@ -75,9 +75,9 @@ Behovsprognose er et verktøy som hjelper kunder i fabrikasjonsbransjen med å o
 
 Måleenhet (Unit) per variantkonvertering støttes ikke fullt ut ved generering av behovsprognoser hvis lagermåleenhet for lager er forskjellig fra måleenhet for behovsprognose.
 
-Generering av prognose (**Måleenhet for lager > Måleenhet for behovsprognose**) bruker måleenhetkonvertering for produkt. Når historiske data lastes inn for generering av behovsprognose, brukes alltid måleenhetkonvertering for produktnivå ved konvertering fra måleenhet for lager til måleenhet for behovsprognose, selv om det finnes konverteringer som er definert på variantnivået.
+Generering av prognose ( **Måleenhet for lager > Måleenhet for behovsprognose** ) bruker måleenhetkonvertering for produkt. Når historiske data lastes inn for generering av behovsprognose, brukes alltid måleenhetkonvertering for produktnivå ved konvertering fra måleenhet for lager til måleenhet for behovsprognose, selv om det finnes konverteringer som er definert på variantnivået.
 
-Den første delen av autorisasjonsprognosen (**Måleenhet for behovsprognose > Måleenhet for lager**) bruker måleenhetkonvertering for produkt. Den andre delen av autorisasjonsprognosen (**Måleenhet for lager > Måleenhet for salg**) bruker måleenhetkonverteringen for variant. Når den genererte behovsprognosen er autorisert, utføres konverteringen til måleenhet for lager fra måleenhet for behovsprognose ved hjelp av måleenhetskonvertering på produktnivå. Samtidig vil konvertering mellom lagerenhet og måleenhet for salg respektere konverteringer definert på variantnivå.
+Den første delen av autorisasjonsprognosen ( **Måleenhet for behovsprognose > Måleenhet for lager** ) bruker måleenhetkonvertering for produkt. Den andre delen av autorisasjonsprognosen ( **Måleenhet for lager > Måleenhet for salg** ) bruker måleenhetkonverteringen for variant. Når den genererte behovsprognosen er autorisert, utføres konverteringen til måleenhet for lager fra måleenhet for behovsprognose ved hjelp av måleenhetskonvertering på produktnivå. Samtidig vil konvertering mellom lagerenhet og måleenhet for salg respektere konverteringer definert på variantnivå.
 
 Merk at måleenhet for behovsprognose ikke trenger å ha noen bestemt betydning. Den kan defineres som "Behovsprognoseenhet". For hver av produktene kan du definere at konverteringen skal være 1:1 med måleenhet for lager.
 

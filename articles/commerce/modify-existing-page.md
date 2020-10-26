@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 87c90ed6ee62a094fe44f549c827cf9de2bf5b2f
-ms.sourcegitcommit: 7a1d01122790b904e2d96a7ea9f1d003392358a6
+ms.openlocfilehash: 8ca23dcf568cb0df6934f0d6201e4aafba5f9ba1
+ms.sourcegitcommit: f16db76c1c235dfa445b50614bcee9219782d6dc
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "3270010"
+ms.lasthandoff: 10/05/2020
+ms.locfileid: "3961640"
 ---
 # <a name="modify-an-existing-site-page"></a>Endre en eksisterende områdeside
 
@@ -44,10 +44,10 @@ Hvis siden ikke allerede er sjekket ut til deg, velger du **Rediger** kommandoli
 
 Det neste du gjør, er å utføre de faktiske endringene. Du vil ofte bruke sidedisposisjonstreet til venstre for å finne og velge modulen du vil endre, og deretter gjøre endringer i egenskapsruten til høyre. 
 
-Endringen kan imidlertid noen ganger involvere å legge til eller fjerne modeller eller fragmenter. Hvis du vil legge til et fragment eller en modul, bruker du sidedisposisjonstreet til å finne sporet der du vil legge til modulen eller fragmentet, og deretter velger du ellipseknappen (**...**) for sporet. Det vises en meny som inneholder kommandoer for å legge til en modul eller et fragment. Hvis du vil fjerne en modul eller et fragment, kan du finne og merke den/det i sidedisposisjonstreet, velge ellipseknappen og deretter velge kommandoen for å slette modulen eller fragmentet.
+Endringen kan imidlertid noen ganger involvere å legge til eller fjerne modeller eller fragmenter. Hvis du vil legge til et fragment eller en modul, bruker du sidedisposisjonstreet til å finne sporet der du vil legge til modulen eller fragmentet, og deretter velger du ellipseknappen ( **...** ) for sporet. Det vises en meny som inneholder kommandoer for å legge til en modul eller et fragment. Hvis du vil fjerne en modul eller et fragment, kan du finne og merke den/det i sidedisposisjonstreet, velge ellipseknappen og deretter velge kommandoen for å slette modulen eller fragmentet.
 
 > [!TIP]
-> Du kan også vise og redigere egenskapene for en hvilken som helst modul som er synlig i forhåndsvisningen "det du ser, er det du får" (WYSIWYG), ved å velge den direkte.
+> Du kan også vise og redigere egenskapene for en hvilken som helst modul i den visuelle sidebyggerforhåndsvisningen, ved å velge den direkte.
 
 Når du er ferdig med å gjøre endringer og forhåndsvise effekten, bør du sjekke inn siden ved å velge **Fullfør redigering** på kommandolinjen. 
 
@@ -58,19 +58,19 @@ Hvis du vil publisere endringene umiddelbart, velger du **Publiser** på kommand
 Følgende eksempel viser hvordan du endrer startsiden ved å endre videoen som vises i videospillermodulen.
 
 1. Under **Områder** velger du **Fabrikam** (eller navnet på området).
-1. Velg **Sider**i navigasjonsruten til venstre.
+1. Velg **Sider** i navigasjonsruten til venstre.
 1. Finn og velg startsside for å åpne den i sideredigeringsprogrammet.
-1. På kommandolinjen velger du **Rediger**.
-1. Velg **Hoved**-spor i sideoppsettet.
-1. Utvid alle moduler for flytende containere under **Hoved**-sporet.
+1. På kommandolinjen velger du **Rediger** .
+1. Velg **Hoved** -spor i sideoppsettet.
+1. Utvid alle moduler for flytende containere under **Hoved** -sporet.
 1. Finn og velg videospillermodulen.
-1. I egenskapsruten til høyre velger du **video**-egenskapen. Aktivavelgeren vises.
+1. I egenskapsruten til høyre velger du **video** -egenskapen. Aktivavelgeren vises.
 1. I aktivavelgeren velger du et tilgjengelig videoaktiva, eller velg **Last opp nytt aktiva** for å laste opp et nytt videoaktiva.
-1. Velg **OK**.
-1. Velg **Lagre**, og velg deretter **Fullfør redigering**.
-1. I feltet **Kommentarer** angir du **Endre videown**, og deretter velger du **OK**.
+1. Velg **OK** .
+1. Velg **Lagre** , og velg deretter **Fullfør redigering** .
+1. I feltet **Kommentarer** angir du **Endre videown** , og deretter velger du **OK** .
 1. Velg **Forhåndsvisning** for å forhåndsvise den oppdaterte siden. Når du er ferdig, lukker du forhåndsvisningskategorien for å gå tilbake til redigeringsverktøyet.
-1. Velg **Publiser**.
+1. Velg **Publiser** .
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 

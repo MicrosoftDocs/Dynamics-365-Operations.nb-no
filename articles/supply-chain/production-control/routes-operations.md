@@ -19,12 +19,12 @@ ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4bb2f340afffc5f62c200b4daac311db435d796e
-ms.sourcegitcommit: 97d4a9bd442fe20f90605d8154c3a947c7645b37
+ms.openlocfilehash: adf890f5305f4e6a62c2d7527ff3b593ed61eff3
+ms.sourcegitcommit: c55fecae96b4bb27bc313ba10a97eddb9c91350a
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "3895383"
+ms.lasthandoff: 10/12/2020
+ms.locfileid: "3989247"
 ---
 # <a name="routes-and-operations"></a>Ruter og operasjoner
 
@@ -37,10 +37,10 @@ Dette emnet gir informasjon om ruter og operasjoner. En rute definerer prosessen
 
 En rute beskriver rekkefølgen for operasjonene som kreves for å produsere et produkt eller en produktvariant. For hver operasjon definerer ruten også operasjonsressurser som kreves, tiden som kreves for å definere og utføre operasjonen, og hvordan kostnader skal beregnes. Du kan bruke samme rute for å produsere flere produkter, eller du kan definere en unik rute for hvert produkt eller produktvariant. Du kan også ha flere ruter for samme produkt. I dette tilfellet varierer ruten som brukes, avhengig av faktorer som antallet som skal produseres. Definisjonen av en rute i Supply Chain Management består av fire separate elementer som sammen beskriver produksjonsprosessen:
 
--   **Rute** – En rute som definerer strukturen til produksjonsprosessen. Den definerer med andre ord rekkefølgen av operasjonene.
--   **Operasjon** – En operasjon angir et navngitt trinn i en rute som **Montering**. Den samme operasjonen kan forekomme i flere ruter og kan ha forskjellige operasjonsnumre.
--   **Operasjonsrelasjon** – En operasjonsrelasjon definerer operasjonsegenskaper for en operasjon, for eksempel oppstillingstid og operasjonstid, kostnadskategorier, parametere for forbruk og ressurskrav. Operasjonsrelasjonen aktiverer operasjonsegenskapene som skal variere for en operasjon, avhengig av ruten som operasjonen brukes i eller produktene som produseres.
--   **Ruteversjon** – En ruteversjon definerer ruten som brukes til å produsere et produkt eller en produktvariant. Ruteversjoner aktivere ruter som skal brukes på nytt på tvers av produkter eller endres over tid. De kan også aktivere forskjellige ruter som skal brukes til å produsere det samme produktet. I dette tilfellet varierer ruten som brukes, avhengig av faktorer som lokasjon eller antallet som skal produseres.
+- **Rute** – En rute som definerer strukturen til produksjonsprosessen. Den definerer med andre ord rekkefølgen av operasjonene.
+- **Operasjon** – En operasjon angir et navngitt trinn i en rute som **Montering** . Den samme operasjonen kan forekomme i flere ruter og kan ha forskjellige operasjonsnumre.
+- **Operasjonsrelasjon** – En operasjonsrelasjon definerer operasjonsegenskaper for en operasjon, for eksempel oppstillingstid og operasjonstid, kostnadskategorier, parametere for forbruk og ressurskrav. Operasjonsrelasjonen aktiverer operasjonsegenskapene som skal variere for en operasjon, avhengig av ruten som operasjonen brukes i eller produktene som produseres.
+- **Ruteversjon** – En ruteversjon definerer ruten som brukes til å produsere et produkt eller en produktvariant. Ruteversjoner aktivere ruter som skal brukes på nytt på tvers av produkter eller endres over tid. De kan også aktivere forskjellige ruter som skal brukes til å produsere det samme produktet. I dette tilfellet varierer ruten som brukes, avhengig av faktorer som lokasjon eller antallet som skal produseres.
 
 ## <a name="routes"></a>Ruter
 En rute beskriver rekkefølgen for operasjonene som brukes for å produsere et produkt eller en produktvariant. Hver operasjon er tilordnet et operasjonsnummer og en etterfølgende operasjon. Rekkefølgen på operasjonene danner et rutenettverk som representeres av et styrt diagram som har ett eller flere startpunkter og ett enkelt sluttpunkt. I Supply Chain Management skilles det mellom ruter basert på strukturtypen. De to rutetypene er enkle ruter og rutenettverk. I Parametere for produksjonskontroll kan du angi om bare enkle ruter kan brukes eller om de mer kompliserte rutenettverkene kan brukes.
@@ -60,9 +60,9 @@ Hvis du bruker mer komplekse rutenettverk i Parametere for produksjonskontroll, 
 [![Rutenettverk](./media/routes-and-operations-2-route-network.png)](./media/routes-and-operations-2-route-network.png)  
 
 > [!NOTE]
-> -   Hver operasjon kan ha bare én etterfølgende operasjon, og hele ruten må slutte i én enkelt operasjon.
-> -   Det er ingen garanti for at flere operasjoner med samme etterfølgende operasjon (for eksempel operasjon 30 og 40 i den foregående illustrasjonen) faktisk kjøres parallelt. Ressurstilgjengelighet og -kapasitet kan sette begrensninger for hvordan operasjoner planlegges.
-> -   Du kan ikke bruke 0 (null) som operasjonsnummer. Dette nummeret er reservert og brukes til å angi at den siste operasjonen i ruten ikke har en etterfølgende operasjon.
+> - Hver operasjon kan ha bare én etterfølgende operasjon, og hele ruten må slutte i én enkelt operasjon.
+> - Det er ingen garanti for at flere operasjoner med samme etterfølgende operasjon (for eksempel operasjon 30 og 40 i den foregående illustrasjonen) faktisk kjøres parallelt. Ressurstilgjengelighet og -kapasitet kan sette begrensninger for hvordan operasjoner planlegges.
+> - Du kan ikke bruke 0 (null) som operasjonsnummer. Dette nummeret er reservert og brukes til å angi at den siste operasjonen i ruten ikke har en etterfølgende operasjon.
 
 ### <a name="parallel-operations"></a>Parallelle operasjoner
 
@@ -99,14 +99,14 @@ Operasjonsegenskapene for operasjonen, for eksempel oppstillingstid og operasjon
 ## <a name="operation-relations"></a>Operasjonsrelasjoner
 Følgende operasjonsegenskaper for en operasjon vedlikeholdes for operasjonsrelasjonen:
 
--   Kostnadskategorier
--   Forbruksparametre
--   Behandlingstider
--   Behandlingsantall
--   Ressursbehov
--   Notater og instruksjoner
+- Kostnadskategorier
+- Forbruksparametre
+- Behandlingstider
+- Behandlingsantall
+- Ressursbehov
+- Notater og instruksjoner
 
-Du kan definere flere operasjonsrelasjoner for samme operasjon. Hver operasjonsrelasjon er imidlertid spesifikk for én operasjon, og lagrer egenskaper som er spesifikke for en rute, et frigitt produkt eller et sett med frigitte produkter som er knyttet til en gruppe. Derfor kan den samme operasjonen brukes i flere ruter som har ulike operasjonsegenskaper. I tillegg kan du enklere å vedlikeholde hoveddataene hvis du bruker standardoperasjoner som har samme operasjonsegenskaper, uavhengig av ruten som brukes og produkter som blir produsert. Omfanget for operasjonsrelasjonen er definert gjennom egenskapene **Varekode**, **Varerelasjon**, **Rutekode** og **Ruterelasjon**, som vist i tabellen nedenfor.
+Du kan definere flere operasjonsrelasjoner for samme operasjon. Hver operasjonsrelasjon er imidlertid spesifikk for én operasjon, og lagrer egenskaper som er spesifikke for en rute, et frigitt produkt eller et sett med frigitte produkter som er knyttet til en gruppe. Derfor kan den samme operasjonen brukes i flere ruter som har ulike operasjonsegenskaper. I tillegg kan du enklere å vedlikeholde hoveddataene hvis du bruker standardoperasjoner som har samme operasjonsegenskaper, uavhengig av ruten som brukes og produkter som blir produsert. Omfanget for operasjonsrelasjonen er definert gjennom egenskapene **Varekode** , **Varerelasjon** , **Rutekode** og **Ruterelasjon** , som vist i tabellen nedenfor.
 
 | Varekode | Varerelasjon         | Rutekode | Ruterelasjon   | Omfang for operasjonsrelasjonen                                                                                                                                                                                                                                                                              |
 |-----------|-----------------------|------------|------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -126,26 +126,26 @@ Operasjonsrelasjoner gir deg stor fleksibilitet når du definerer rutene. Muligh
 
 ### <a name="modifying-product-specific-routes"></a>Endre produktspesifikke ruter
 
-Når du åpner **Rute**-siden fra siden **Detaljer om frigitt produkt**, vises ruteversjonene som er knyttet til det valgte frigitte produktet. I denne konteksten viser Supply Chain Management operasjonsegenskapene for hver operasjon fra operasjonsrelasjonen som samsvarer best med ruteversjonen. Du vil legge merke til at listen over operasjoner inneholder egenskapene **Varekode** og **Rutekode** fra operasjonsrelasjonen. Derfor kan du bestemme hvilken operasjonsrelasjon som vises.  
+Når du åpner **Rute** -siden fra siden **Detaljer om frigitt produkt** , vises ruteversjonene som er knyttet til det valgte frigitte produktet. I denne konteksten viser Supply Chain Management operasjonsegenskapene for hver operasjon fra operasjonsrelasjonen som samsvarer best med ruteversjonen. Du vil legge merke til at listen over operasjoner inneholder egenskapene **Varekode** og **Rutekode** fra operasjonsrelasjonen. Derfor kan du bestemme hvilken operasjonsrelasjon som vises.  
 
-På **Rute**-siden kan du endre operasjonsegenskapene for operasjonen, for eksempel operasjonstiden eller kostnadskategoriene. Endringene lagres på operasjonsrelasjonen som er spesifikk for ruten og frigitt produkt som er referert til i gjeldende ruteversjon. Hvis operasjonsrelasjonen som vises ikke er spesifikk for ruten og det frigitte produktet, oppretter systemet en kopi av operasjonsrelasjonen før endringene lagres. Denne kopien *er* spesifikk for ruten og det frigitte produktet. Endringen påvirker derfor ikke andre ruter eller frigitte produkter. Hvis du vil kontrollere hvilken operasjonsrelasjon som endres på **Rute**-siden, kan du se på feltene **Varekode** og **Rutekode**.  
+På **Rute** -siden kan du endre operasjonsegenskapene for operasjonen, for eksempel operasjonstiden eller kostnadskategoriene. Endringene lagres på operasjonsrelasjonen som er spesifikk for ruten og frigitt produkt som er referert til i gjeldende ruteversjon. Hvis operasjonsrelasjonen som vises ikke er spesifikk for ruten og det frigitte produktet, oppretter systemet en kopi av operasjonsrelasjonen før endringene lagres. Denne kopien *er* spesifikk for ruten og det frigitte produktet. Endringen påvirker derfor ikke andre ruter eller frigitte produkter. Hvis du vil kontrollere hvilken operasjonsrelasjon som endres på **Rute** -siden, kan du se på feltene **Varekode** og **Rutekode** .  
 
-Du kan også manuelt opprette en operasjon som er spesifikk for en rute og et frigitt produkt ved hjelp av funksjonen **Kopier og rediger relasjon**.  
+Du kan også manuelt opprette en operasjon som er spesifikk for en rute og et frigitt produkt ved hjelp av funksjonen **Kopier og rediger relasjon** .  
 
 > [!NOTE]
-> Hvis du legger til en ny operasjon i en rute på **Rute**-siden, opprettes en operasjonsrelasjon bare for gjeldende frigitte produkt. Hvis ruten også brukes til å produsere andre frigitte produkter, vil det derfor ikke finnes en gjeldende operasjonsrelasjon for disse frigitte produktene, og ruten kan ikke lenger brukes for disse frigitte produktene.
+> Hvis du legger til en ny operasjon i en rute på **Rute** -siden, opprettes en operasjonsrelasjon bare for gjeldende frigitte produkt. Hvis ruten også brukes til å produsere andre frigitte produkter, vil det derfor ikke finnes en gjeldende operasjonsrelasjon for disse frigitte produktene, og ruten kan ikke lenger brukes for disse frigitte produktene.
 
 ### <a name="maintaining-operation-relations-per-route"></a>Vedlikeholde operasjonsrelasjoner per rute
 
-Når du åpner **Rutedetaljer**-siden fra listesiden **Ruter**, vises en liste over alle operasjonsrelasjonene som gjelder for den valgte ruten. Derfor kan du enkelt kontrollere hvilke operasjonsegenskaper som brukes for de ulike produktene. Du kan endre standard egenskapsverdier og produktspesifikke egenskapsverdier.  
+Når du åpner **Rutedetaljer** -siden fra listesiden **Ruter** , vises en liste over alle operasjonsrelasjonene som gjelder for den valgte ruten. Derfor kan du enkelt kontrollere hvilke operasjonsegenskaper som brukes for de ulike produktene. Du kan endre standard egenskapsverdier og produktspesifikke egenskapsverdier.  
 
-Hvis du legger til en ny operasjonsrelasjon på siden **Rutedetaljer**, settes **Rutekode**-feltet automatisk til **Rute**, og **Ruterelasjon**-feltet setes til rutenummeret for gjeldende rute.
+Hvis du legger til en ny operasjonsrelasjon på siden **Rutedetaljer** , settes **Rutekode** -feltet automatisk til **Rute** , og **Ruterelasjon** -feltet setes til rutenummeret for gjeldende rute.
 
 ### <a name="maintaining-operation-relations-per-operation"></a>Vedlikeholde operasjonsrelasjoner per operasjon
 
-Fra **Operasjoner**-siden kan du åpne siden **Operasjonsrelasjoner**. På denne siden kan du endre alle operasjonsrelasjoner for en bestemt operasjon. Du kan også endre operasjonsrelasjoner som inneholder standardverdier.  
+Fra **Operasjoner** -siden kan du åpne siden **Operasjonsrelasjoner** . På denne siden kan du endre alle operasjonsrelasjoner for en bestemt operasjon. Du kan også endre operasjonsrelasjoner som inneholder standardverdier.  
 
-Hvis virksomheten din bruker standardoperasjoner og operasjonsparameterne er de samme på tvers av alle produkter og prosesser, kan du enkelt vedlikeholde standard operasjonsegenskaper for disse operasjonene på siden **Operasjonsrelasjoner**.
+Hvis virksomheten din bruker standardoperasjoner og operasjonsparameterne er de samme på tvers av alle produkter og prosesser, kan du enkelt vedlikeholde standard operasjonsegenskaper for disse operasjonene på siden **Operasjonsrelasjoner** .
 
 ### <a name="applying-operation-relations"></a>Bruke operasjonsrelasjoner
 
@@ -166,12 +166,13 @@ Når Supply Chain Management søker etter den mest relevante operasjonsrelasjone
 En operasjon bør derfor brukes bare én gang for hver rute. Hvis operasjonen forekommer flere ganger i samme rute, vil alle forekomster av denne operasjonen ha samme operasjonsrelasjon, og du kan ikke ha andre egenskaper (for eksempel operasjonstid) for hver forekomst.
 
 ## <a name="route-versions"></a>Ruteversjoner
+
 Ruteversjoner brukes for å tilrettelegge for variasjoner i produksjonen av produkter, eller gi større kontroll over produksjonsprosessen. De definerer hvilken rute som skal brukes når et bestemt frigitt produkt eller produktvariant produseres. Du kan bruke følgende begrensninger til å definere hvilken rute som brukes for et frigitt produkt:
 
--   Produktdimensjoner (størrelse, farge,konfigurasjon)
--   Produksjonsantall
--   Produksjonssted
--   Produksjonsdato
+- Produktdimensjoner (størrelse, farge,konfigurasjon)
+- Produksjonsantall
+- Produksjonssted
+- Produksjonsdato
 
 Når du skal produsere produktet på et bestemt sted, i et bestemt antall, eller i en bestemt periode, kan du angi en bestemt ruteversjon som standard ruteversjonen. Vær imidlertid oppmerksom på at bare én aktiv rute er tillatt for et bestemt frigitt produkt og et bestemt sett med begrensninger.  
 
@@ -194,6 +195,7 @@ Hvis du må ha en logg som registrerer hvem som godkjenner og aktiverer hver rut
 Produktendringssaken for godkjenning og aktivering av nye eller endrede ruter og ruteversjoner gjør det enkelt å få en oversikt over begrensningene for ruteversjonen. Du kan også godkjenne og aktivere alle ruter som er knyttet til en bestemt endring i én operasjon, og dokumentere resultatene i produktendringssaken.
 
 ## <a name="maintaining-routes"></a>Vedlikeholde ruter
+
 Avhengig av dine forretningsbehov kan du kanskje redusere arbeidet som kreves for å opprettholde prosessdefinisjonene.
 
 ### <a name="making-routes-independent-of-resources"></a>Gjøre ruter uavhengige av ressurser
@@ -222,16 +224,16 @@ Når du bruker denne fremgangsmåten, blir siden **Operasjonsrelasjoner** det pr
 
 ### <a name="resource-specific-process-times"></a>Ressursspesifikke behandlingstider
 
-Hvis du ikke angir en operasjonsressurs eller ressursgruppe som en del av ressurskravene for en operasjon, kan gjeldende ressurser operere med ulike hastigheter. Tiden som kreves for å behandle en operasjon kan derfor variere. Hvis du vil løse dette problemet, kan du bruke **Formel**-feltet på operasjonsrelasjonen for å angi hvordan behandlingstiden beregnes. Følgende alternativer er tilgjengelige:
+Hvis du ikke angir en operasjonsressurs eller ressursgruppe som en del av ressurskravene for en operasjon, kan gjeldende ressurser operere med ulike hastigheter. Tiden som kreves for å behandle en operasjon kan derfor variere. Hvis du vil løse dette problemet, kan du bruke **Formel** -feltet på operasjonsrelasjonen for å angi hvordan behandlingstiden beregnes. Følgende alternativer er tilgjengelige:
 
--   **Standard** – (Standardalternativ) Beregningen bruker bare feltene fra operasjonsrelasjonen og multipliserer den angitte operasjonstiden med ordreantallet.
--   **Kapasitet** – Beregningen inkluderer **Kapasitet**-feltet fra operasjonsressursen. Derfor er tiden ressursavhengige. Verdien som angis for operasjonsressursen er kapasitet per time. **Prosesstid** beregnes som **Ordreantall** delt på **Kapasitet**.
--   **Bunke** – En partikapasitet beregnes ved hjelp av informasjon fra operasjonsrelasjonen. Antall satsvise jobber, og derfor behandlingstiden, kan deretter beregnes basert på ordreantallet.
--   **Ressursbunke** – Dette alternativet er stort sett den samme som **Bunke**-alternativet. Beregningen inkluderer imidlertid **Bunkekapasitet**-feltet fra operasjonsressursen. Derfor er tiden ressursavhengige.
+- **Standard** – (Standardalternativ) Beregningen bruker bare feltene fra operasjonsrelasjonen og multipliserer den angitte operasjonstiden med ordreantallet.
+- **Kapasitet** – Beregningen inkluderer **Kapasitet** -feltet fra operasjonsressursen. Derfor er tiden ressursavhengige. Verdien som angis for operasjonsressursen er kapasitet per time. **Prosesstid** beregnes som **Ordreantall** delt på **Kapasitet** .
+- **Bunke** – En partikapasitet beregnes ved hjelp av informasjon fra operasjonsrelasjonen. Antall satsvise jobber, og derfor behandlingstiden, kan deretter beregnes basert på ordreantallet.
+- **Ressursbunke** – Dette alternativet er stort sett den samme som **Bunke** -alternativet. Beregningen inkluderer imidlertid **Bunkekapasitet** -feltet fra operasjonsressursen. Derfor er tiden ressursavhengige.
 
 ### <a name="set-up-route-groups"></a>Definer rutegrupper
 
-Du kan definere rutegruppene og oppsettet for rute- eller jobbtypene under **Produksjonskontroll > Oppsett > Ruter > Rutegrupper**. For hver rute-/jobbtype rutegruppen kan du velge eller fjerne følgende alternativer:
+Du kan definere rutegruppene og oppsettet for rute- eller jobbtypene under **Produksjonskontroll > Oppsett > Ruter > Rutegrupper** . For hver rute-/jobbtype rutegruppen kan du velge eller fjerne følgende alternativer:
 
 - **Aktivering** – Velg dette alternativet for å aktivere beregninger og planlegging for den valgte jobbtypen, og få jobbtilbakemelding når du kjører jobbplanlegging. Du må velge dette alternativet for å aktivere jobbtypen, og deretter velge resten av alternativene for denne jobbtypen. Hvis aktiveringen ikke er valgt, vil denne jobbtypen ikke bli aktivert, uavhengig av utvalget av de andre alternativene. 
 - **Jobbstyring** – Velg dette alternativet for å inkludere jobbtypen i jobbstyringen når du kjører jobbplanlegging. 
@@ -244,7 +246,7 @@ Du kan finne overlapping blant jobbtypene. Overlapping gjør det mulig å utfør
 Når aktivering er valgt for overlapping, vil resten av innstillingene (jobbstyring, driftstid og kapasitet) derfor ikke ha noen innvirkning i rutegruppen. 
 
 > [!NOTE]
-> Når du oppgraderer versjoner, kan du oppleve følgende feil: **"Det oppstod en CLR-feil under start av planleggingsmotoren"**. Hvis du får denne feilmeldingen, går du til siden **Rutegrupper**, og for alle ruter der du har aktivert **Overlapp**, fjerner du merket for alternativene **Jobbstyring**, **Driftstid** og **Kapasitet**. 
+> Når du oppgraderer versjoner, kan du oppleve følgende feil: **"Det oppstod en CLR-feil under start av planleggingsmotoren"** . Hvis du får denne feilmeldingen, går du til siden **Rutegrupper** , og for alle ruter der du har aktivert **Overlapp** , fjerner du merket for alternativene **Jobbstyring** , **Driftstid** og **Kapasitet** . 
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 

@@ -16,15 +16,15 @@ ms.custom: 19111
 ms.assetid: 56a7c8ba-bf4a-4b1d-918d-56bb96926c4f
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: shylaw
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ff3a21e87b9cb0bb371b0772c948cb62a4cb36b1
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: daa36dad4009cc25b89363dcff6b4496205522e3
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3214625"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3981493"
 ---
 # <a name="inventory-object-values"></a>Beholdningsobjektverdier
 
@@ -36,7 +36,7 @@ En ny funksjon kalt **fysisk antall** gjør at du kan se verdiene til et bestemt
 
 Et kostnadsobjekt representerer enhetsnivået der lagerregnskapet gjøres. Hvis du vil ha mer informasjon om kostnadsobjekter, kan du se [Kostnadsobjekter](cost-object.md). 
 
-Hvis du vil se verdiene for et bestemt beholdningsobjekt, klikker du **Fysisk antall** på **Kostobjekt**-siden. Slik beregnes verdien til et beholdningsobjekt: 
+Hvis du vil se verdiene for et bestemt beholdningsobjekt, klikker du **Fysisk antall** på **Kostobjekt** -siden. Slik beregnes verdien til et beholdningsobjekt: 
 
 Beholdningsobjekt.Verdi = Kostnadsobjekt.Gjennomsnittlig enhetskostnad × Beholdningsobjektet.Antall 
 
@@ -45,7 +45,7 @@ Eksemplet nedenfor viser hvordan en verdiene til et beholdningsobjekt og et kost
 -   Produktkvittering 1: Antall = 100 stk., Beløp = USD 1 000,00, Område = 1, Lager = 11, Partinr. = B1
 -   Produktkvittering 2: Antall = 50 stk., Beløp = USD 800,00, Område = 1, Lager = 11, Partinr. = B2
 
-Følgende tabell viser resultatet av beregningen for et kostnadsobjekt. Du kan vise resultatet på **Kostnadsobjekt**-siden.
+Følgende tabell viser resultatet av beregningen for et kostnadsobjekt. Du kan vise resultatet på **Kostnadsobjekt** -siden.
 
 <table style="width:100%;">
 <colgroup>
@@ -81,7 +81,7 @@ Følgende tabell viser resultatet av beregningen for et kostnadsobjekt. Du kan v
 </tbody>
 </table>
 
-Følgende tabell viser resultatet av beregningen for et beholdningsobjekt. Du kan vise resultatet ved å klikke **Fysisk antall** på **Kostnadsobjekt**-siden.
+Følgende tabell viser resultatet av beregningen for et beholdningsobjekt. Du kan vise resultatet ved å klikke **Fysisk antall** på **Kostnadsobjekt** -siden.
 
 <table style="width:100%;">
 <colgroup>

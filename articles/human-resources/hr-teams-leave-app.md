@@ -3,7 +3,7 @@ title: Behandle permisjonsforespørsler i Teams
 description: Dette emnet viser hvordan du ber om fridager Dynamics 365 Human Resources-appen i Microsoft Teams.
 author: andreabichsel
 manager: AnnBe
-ms.date: 09/03/2020
+ms.date: 09/30/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-05-18
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: c7b74983cbddf661456b0a65939e272078d59f6d
-ms.sourcegitcommit: e27510ba52623c801353eed4853f8c0aeea3bb2d
+ms.openlocfilehash: c6856e417ee47f8f582f797c5bcedcff23a1432f
+ms.sourcegitcommit: b6ab46f6e5ce60e2c3d70a348827eaf60c84cae2
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "3828950"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "3929999"
 ---
 # <a name="manage-leave-requests-in-teams"></a>Behandle permisjonsforespørsler i Teams
 
@@ -39,7 +39,7 @@ Du kan finne Human Resources-appen i Teams-butikken.
 
    ![Ellipser for permisjonsapp i Human Resources Teams](./media/hr-teams-leave-app-ellipses.png)
  
-2. Søk etter Dynamics 365 Human Resources, og velg deretter flisen **Human Resources**.
+2. Søk etter Dynamics 365 Human Resources, og velg deretter flisen **Human Resources** .
 
    ![HR-flis for permisjonsapp i Human Resources Teams](./media/hr-teams-leave-app-human-resources-tile.png)
 
@@ -54,7 +54,7 @@ Hvis appen ikke logger deg på automatisk, velger du kategorien **Innstillinger*
 > [!NOTE]
 > Hvis du ikke ser en påloggingsdialogboks, må du kontrollere innstillingene for nettleseren for å tillate popup-vinduer. 
 
-Hvis du har tilgang til mer enn én forekomst av Human Resources, kan du velge hvilket miljø du vil koble til, i kategorien **Innstillinger**.
+Hvis du har tilgang til mer enn én forekomst av Human Resources, kan du velge hvilket miljø du vil koble til, i kategorien **Innstillinger** .
 
 > [!NOTE]
 > Appen støtter nå sikkerhetsrollen systemadministrator.
@@ -106,11 +106,11 @@ I kategorien **Fridager** kan du vise:
  
 ### <a name="create-a-new-request"></a>Opprette en ny forespørsel
 
-1. Hvis du vil opprette en ny permisjonsforespørsel, velger du **Ny forespørsel**.
+1. Hvis du vil opprette en ny permisjonsforespørsel, velger du **Ny forespørsel** .
 
    ![Ny forespørsel i permisjonsapp for Human Resources Teams](./media/hr-teams-leave-app-timeoff-tab-new.png)
 
-2. Angi dagen eller dagene du vil ha fri, og velg deretter **Legg til**.
+2. Angi dagen eller dagene du vil ha fri, og velg deretter **Legg til** .
 
    ![Tillegg av fridager i permisjonsapp for Human Resources Teams](./media/hr-teams-leave-app-timeoff-tab-add.png)
 
@@ -120,7 +120,7 @@ I kategorien **Fridager** kan du vise:
 
 ### <a name="manage-draft-requests"></a>Behandle utkast til forespørsler
 
-1. Velg kategorien **Utkast**.
+1. Velg kategorien **Utkast** .
 
    ![Kategorien Utkast i permisjonsapp for Human Resources Teams](./media/hr-teams-leave-app-drafts-tab.png)
 
@@ -132,7 +132,7 @@ I kategorien **Fridager** kan du vise:
    
 ### <a name="respond-to-teams-notifications"></a>Svare på Teams-varslinger
 
-Når du eller en arbeider du er godkjenner for, sender en permisjonsforespørsel, vil du motta en melding i Human Resources-appen i Teams. Du kan merke varslingen for å vise den. Varslinger vises også i **Chat**-området.
+Når du eller en arbeider du er godkjenner for, sender en permisjonsforespørsel, vil du motta en melding i Human Resources-appen i Teams. Du kan merke varslingen for å vise den. Varslinger vises også i **Chat** -området.
 
 Hvis du er godkjenner, kan du velge **Godkjenn** eller **Avvis** i varslingen. Du kan også angi en valgfri melding.
 
@@ -162,15 +162,31 @@ Hvis du delte en utkastforespørsel, vil den vises som et utkast:
 
 Hvis du er leder med direkterapporter, kan du vise gruppens godkjente og uavsluttede fritid.
 
-1. I Human Resources-appen i Teams velger du **Fritid**.
+1. I Human Resources-appen i Teams velger du **Fritid** .
 
-2. Velg **Teamkalender**.
+2. Velg **Teamkalender** .
 
    ![Vise kalender i Human Resources-app i Teams](./media/hr-teams-leave-app-view-calendar.png)
 
 Kalenderen viser de godkjente og uavsluttede fritidene for direkterapporter.
 
 ![Fritidskalender i Human Resources-app i Teams](./media/hr-teams-leave-app-calendar.png)
+
+## <a name="troubleshooting"></a>Feilsøking
+
+Hvis du har problemer med å logge på eller bruke Human Resources Teams-appen, kan du prøve å følge disse instruksjonene for feilsøking. Hvis du fortsatt har problemer etter feilsøking, kontakter du kundestøtte. For mer informasjon, se [Få kundestøtte](hr-admin-troubleshooting-support.md).
+
+### <a name="cant-sign-into-the-human-resources-app-in-teams"></a>Kan ikke logge på Human Resources-appen i Teams
+
+Hvis du ikke kan logge på appen, kan det hende at kontoen du bruker til å logge på Microsoft Teams, ikke er tilknyttet en ansattpost i Dynamics 365 Human Resources. Kontakt systemadministrator for å kontrollere at ansattposten er riktig tilknyttet.
+
+### <a name="error-when-approving-leave-requests-in-the-human-resources-app-in-teams"></a>Feil under godkjenning av permisjonsforespørsler i Human Resources-appen i Teams
+
+Hvis du får en feilmelding under forsøk på å godkjenne permisjonsforespørsler i Teams-appen, kan du utføre følgende feilsøkingstrinn:
+
+1. Kontroller at kontoen du bruker til å logge på Microsoft Teams, er den samme som du bruker til å få tilgang til Dynamics 365 Human Resources.
+
+2. Kontroller at du er en gyldig godkjenner for forespørselen ved å kontrollere arbeidsflytinnstillingene for permisjonsgodkjenning. Hvis du vil ha mer informasjon om arbeidsflyter for permisjonsforespørsel, kan du se [Opprette en permisjonsforespørsel](hr-leave-and-absence-workflow.md).
 
 ## <a name="privacy-notice"></a>Personvernerklæring
 

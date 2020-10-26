@@ -15,15 +15,15 @@ ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: ShylaThompson
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 64863b8c19c756cffab94adeaa9c38a0a3388d70
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 3b049b166edf2b5a318a4b1af85e7f74cfe433f2
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3215039"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3975470"
 ---
 # <a name="service-orders"></a>Serviceordrer   
 
@@ -48,7 +48,7 @@ Du kan også opprette serviceordrer enkeltvis, uten å knytte dem til en avtale.
 
 Dette scenariet beskriver en annen situasjon der det er nyttig å opprette en serviceordre som ikke er knyttet til en serviceavtale.
 
-Firmaets fordelingsansvarlig mottar en telefon med forespørsel om øyeblikkelig hjelp med en heis. Det er ikke tid til å opprette en serviceavtale og et prosjekt for servicen. Derfor fordelingsansvarlig oppretter en serviceordre direkte i **Serviceordrer**-skjemaet, knytter serviceordren til et eksisterende prosjekt, og oppretter serviceordrelinjene. Fordelingsansvarlig oppretter også en oppgave eller en objektrelasjon for en eksisterende serviceordre for å registrere arbeid som ikke er tilknyttet serviceavtalen. Hvis du vil ha mer informasjon, se [Opprette serviceordrer manuelt](create-service-orders-manually.md) og [Opprette serviceoppgaverelasjoner](create-service-task-relations.md).
+Firmaets fordelingsansvarlig mottar en telefon med forespørsel om øyeblikkelig hjelp med en heis. Det er ikke tid til å opprette en serviceavtale og et prosjekt for servicen. Derfor fordelingsansvarlig oppretter en serviceordre direkte i **Serviceordrer** -skjemaet, knytter serviceordren til et eksisterende prosjekt, og oppretter serviceordrelinjene. Fordelingsansvarlig oppretter også en oppgave eller en objektrelasjon for en eksisterende serviceordre for å registrere arbeid som ikke er tilknyttet serviceavtalen. Hvis du vil ha mer informasjon, se [Opprette serviceordrer manuelt](create-service-orders-manually.md) og [Opprette serviceoppgaverelasjoner](create-service-task-relations.md).
 
 ## <a name="monitor-the-progress-of-service-orders"></a>Overvåk fremdriften til serviceordren
 
@@ -76,7 +76,7 @@ En av de andre serviceordrene som ble generert for januar, foreldes fordi jobben
 
 ## <a name="post-from-projects"></a>Postere fra prosjekter
 
-På slutten av hver uke vil fordelingsansvarlig postere alle serviceordrer som er tilknyttet et bestemt prosjekt. Derfor fordelingsansvarlig finner det relevante prosjektet i **Prosjekter**-skjemaet og posterer serviceordrene som er fullført. Hvis du vil ha mer informasjon, se [Postere serviceordrer (klasseskjema)](https://technet.microsoft.com/library/aa574685\(v=ax.60\)).
+På slutten av hver uke vil fordelingsansvarlig postere alle serviceordrer som er tilknyttet et bestemt prosjekt. Derfor fordelingsansvarlig finner det relevante prosjektet i **Prosjekter** -skjemaet og posterer serviceordrene som er fullført. Hvis du vil ha mer informasjon, se [Postere serviceordrer (klasseskjema)](https://technet.microsoft.com/library/aa574685\(v=ax.60\)).
 
 ## <a name="delete-service-orders"></a>Slett serviceordrer
 

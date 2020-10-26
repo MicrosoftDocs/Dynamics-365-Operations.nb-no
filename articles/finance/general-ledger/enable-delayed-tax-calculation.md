@@ -15,15 +15,15 @@ ms.search.scope: Core, Operations
 ms.custom: 4464
 ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ms.search.region: Global
-ms.author: vstehman
+ms.author: roschlom
 ms.search.validFrom: 2019-09-18
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: ed8e5f930bbb6b0fb570ba1eb23c0816210c1814
-ms.sourcegitcommit: bfd6142569196a060e3f37893c78f00c40a2a18c
+ms.openlocfilehash: d4ce0343ac766b30d532be0866a381dc520fd462
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "2946172"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3977149"
 ---
 # <a name="enable-delayed-tax-calculation-on-journals"></a>Aktivere forsinket avgiftsberegning i journaler
 [!include [banner](../includes/banner.md)]
@@ -45,23 +45,23 @@ Systemet gir prioritet til innstillingen for journalhodet. Som standard hentes d
 
 ## <a name="turn-on-delayed-tax-calculation-at-the-legal-entity-level"></a>Aktivere forsinket mva-beregning på nivået for juridisk enhet
 
-1. Gå til **Økonomimodul \> Finansoppsett \> Parametere for økonomimodul**.
-2. I kategorien **Merverdiavgift** i hurtigfanen **Generelt** angir du alternativet **Forsinket avgiftsberegning** til **Ja**.
+1. Gå til **Økonomimodul \> Finansoppsett \> Parametere for økonomimodul** .
+2. I kategorien **Merverdiavgift** i hurtigfanen **Generelt** angir du alternativet **Forsinket avgiftsberegning** til **Ja** .
 
 ![Parametere for økonomimodul-bildet](media/delayed-tax-calculation-gl.png)
 
 ## <a name="turn-on-delayed-tax-calculation-at-the-journal-name-level"></a>Aktivere forsinket mva-beregning på journalnavnnivå
 
-1. Gå til **Økonomimodul \> Journaloppsett \> Journalnavn**.
-2. I hurtigfanen **Generelt** i delen **Merverdiavgift** angir du alternativet **Forsinket avgiftsberegning** til **Ja**.
+1. Gå til **Økonomimodul \> Journaloppsett \> Journalnavn** .
+2. I hurtigfanen **Generelt** i delen **Merverdiavgift** angir du alternativet **Forsinket avgiftsberegning** til **Ja** .
 
 ![Journalnavnbilde](media/delayed-tax-calculation-journal-name.png)
 
 ## <a name="turn-on-delayed-tax-calculation-at-the-journal-header-level"></a>Aktivere forsinket mva-beregning på journalhodenivå
 
-1. Gå til **Økonomimodul \> Journaloppføringer \> Økonomijournaler**.
-2. Velg **Ny**.
+1. Gå til **Økonomimodul \> Journaloppføringer \> Økonomijournaler** .
+2. Velg **Ny** .
 3. Velg et journalnavn.
-4. I kategorien **Oppsett** setter du alternativet for **Forsinket avgiftsberegning** til **Ja**.
+4. I kategorien **Oppsett** setter du alternativet for **Forsinket avgiftsberegning** til **Ja** .
 
 ![Bilde av økonomijournalsiden](media/delayed-tax-calculation-journal-header.png)

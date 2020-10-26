@@ -15,15 +15,15 @@ ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: ShylaThompson
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a136489b663a066b853344844ad28a14670c8d66
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: c4cbc3cd5deff709ac0818358dcc87fa69a7d872
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3202520"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3983483"
 ---
 # <a name="credit-subscription-transactions"></a>Kreditere abonnementstransaksjoner 
 
@@ -32,23 +32,23 @@ ms.locfileid: "3202520"
 
 ## <a name="credit-subscription-transactions"></a>Kreditere abonnementstransaksjoner
 
-1.  Klikk på **Servicestyring** \> **Felles** \> **Serviceabonnementer** \> **Alle serviceabonnementer**.
+1.  Klikk på **Servicestyring** \> **Felles** \> **Serviceabonnementer** \> **Alle serviceabonnementer** .
 
 2.  Velg abonnementet som er knyttet til abonnementstransaksjonen du vil opprette en kreditnota for.
 
-3.  Velg kategorien **Analyser** i handlingsruten, og klikk deretter **Gebyrtransaksjoner**-knappen.
+3.  Velg kategorien **Analyser** i handlingsruten, og klikk deretter **Gebyrtransaksjoner** -knappen.
 
 4.  I skjemaet **Gebyrtransaksjoner** velger du transaksjonen som du vil opprette en kreditnota for.
 
-5.  Klikk på **Funksjoner** \> **Velg for kreditnota**.
+5.  Klikk på **Funksjoner** \> **Velg for kreditnota** .
 
-6.  Fra skjemaet **Velg for kreditnota** velger du transaksjonen du vil kreditere, og deretter velger du **OK**.
+6.  Fra skjemaet **Velg for kreditnota** velger du transaksjonen du vil kreditere, og deretter velger du **OK** .
 
 
 > [!NOTE]
 > <P>Når du oppretter kreditnotaen, må du passe på at du velger <STRONG>Kreditnotaer</STRONG>. Dette finnes i listen <STRONG>Faktureringsmetode</STRONG> i dialogboksen <STRONG>Opprett faktura</STRONG>.</P>
 
-Hvis feltet **Tilbakefør avsetninger ved kreditering** i skjemaet **Servicestyringsparametere** er satt til **Manuell**, må du reversere transaksjonene for avsatt omsetning enkeltvis før du kan opprette et kreditnotaforslag for transaksjonen.
+Hvis feltet **Tilbakefør avsetninger ved kreditering** i skjemaet **Servicestyringsparametere** er satt til **Manuell** , må du reversere transaksjonene for avsatt omsetning enkeltvis før du kan opprette et kreditnotaforslag for transaksjonen.
 
 ## <a name="see-also"></a>Se også
 

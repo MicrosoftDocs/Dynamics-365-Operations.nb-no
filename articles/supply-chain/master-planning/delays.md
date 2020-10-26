@@ -16,15 +16,15 @@ ms.custom: 19311
 ms.assetid: 5ffb1486-2e08-4cdc-bd34-b47ae795ef0f
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: roxanad
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 34252e5cd9ee5151b1cba47975fc0cc612521a17
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: da09d670fd952d885f013693b6362cf9002343ff
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3203854"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3982702"
 ---
 # <a name="delays"></a>Forsinkelser
 
@@ -43,7 +43,7 @@ Du kan konfigurere hvordan forsinkelser beregnes for en dekningsgruppe. Du kan d
 På siden **Hovedplanleggingsparametere** kan du angi starttidspunktet for beregning av forsinkelser. Hvis en ordre er utført etter dette tidspunktet, legges det til én dag i forsinkelsen av ordren. 
 
 > [!NOTE]
-> I tidligere versjoner ble beregnede forsinkelser kalt *terminmeldinger*, forsinkelsesdatoen ble kalt *termindatoen* og en forsinket transaksjon ble kalt *en transaksjon som var satt til fremtiden*.
+> I tidligere versjoner ble beregnede forsinkelser kalt *terminmeldinger* , forsinkelsesdatoen ble kalt *termindatoen* og en forsinket transaksjon ble kalt *en transaksjon som var satt til fremtiden* .
 
 ## <a name="limited-delays-in-production-setup-with-multiple-bom-levels"></a>Begrensede forsinkelser i produksjonsoppsettet med flere stykklistenivåer
 Når du arbeider med forsinkelser i et produksjonsoppsett som har flere stykklistenivåer, er det viktig å være oppmerksom på at bare varene som er direkte over varen (i stykklistestrukturen) som forårsaker forsinkelsen, blir oppdatert med en forsinkelse som del av hovedplanleggingen som kjøres. Andre varer i stykklistestrukturen vil ikke få forsinkelsen gjeldende før den første hovedplanleggingen kjøres, når den planlagte bestillingen for det øverste nivået er godkjent eller autorisert. 
@@ -53,7 +53,7 @@ Handlingsmeldinger kan også brukes til å identifisere planlagte bestillinger s
 
 ## <a name="desired-date"></a>Ønsket dato
 
-På siden **Planlagt ordre**, i kategorien **Forsinkelser** finnes **Ønsket dato** for den planlagte bestillingen. Den ønskede datoen for en planlagt bestilling er den grunnleggende datoen for forsinkelser, som er en beregnet dato som tilsvarer **Ønsket dato** som beregnes fra **Nettobehov**. Hvis den planlagte ordren er en stykklistelinje, produksjonslinje eller kanban-linje, er den ønskede datoen basert på **Behovsdato**, og den ønskede datoen vil ikke bli vist på siden **Planlagt ordre**.
+På siden **Planlagt ordre** , i kategorien **Forsinkelser** finnes **Ønsket dato** for den planlagte bestillingen. Den ønskede datoen for en planlagt bestilling er den grunnleggende datoen for forsinkelser, som er en beregnet dato som tilsvarer **Ønsket dato** som beregnes fra **Nettobehov** . Hvis den planlagte ordren er en stykklistelinje, produksjonslinje eller kanban-linje, er den ønskede datoen basert på **Behovsdato** , og den ønskede datoen vil ikke bli vist på siden **Planlagt ordre** .
 
 <a name="additional-resources"></a>Tilleggsressurser
 --------

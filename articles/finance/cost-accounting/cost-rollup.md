@@ -16,15 +16,15 @@ ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
 ms.search.industry: Manufacturing
-ms.author: shylaw
+ms.author: roschlom
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: f07483d0ccb8593f0e7ce8dbd3c83f63ce60d457
-ms.sourcegitcommit: cd339f48066b1d0fc740b513cb72ea19015acd16
+ms.openlocfilehash: c240e11394582ad1af563ee4a8e58632babfff3a
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "3759382"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3976385"
 ---
 # <a name="cost-rollup-policy-and-overhead-calculation"></a>Policy for opprullet kost og beregning av administrasjonskostnader 
 
@@ -186,7 +186,7 @@ Dimensjonshierarkiet **Resultatregnskap** må oppdateres med de nye dimensjonsme
 | &nbsp;&nbsp;&nbsp;&nbsp;Primær kostnad                        | 10001                   | 10003               |
 | &nbsp;&nbsp;&nbsp;&nbsp;Sekundær kostnad                         | **SC-CC001**            | **SC-CC004**        |
 
-Opprett en **Policy for opprullet kost** der hvert kostsenter er tilordnet til et tilsvarende kostnadselement av typen **Sekundær**.
+Opprett en **Policy for opprullet kost** der hvert kostsenter er tilordnet til et tilsvarende kostnadselement av typen **Sekundær** .
 
 **Policyer for opprullet kost**
 
@@ -211,7 +211,7 @@ Opprett en **Policy for opprullet kost** der hvert kostsenter er tilordnet til e
 |---------|-------------------------|------------------------|------|--------|---------------|
 | 00002   | Kostfordelingsjournal | Skattemessig                 | 2017    | Periode 1 | Beregning av indirekte kostnader / 02.01.2017 23.51.00 / Finans /2017 / Periode 1 |
 
-Systemet bruker nå **Policy for opprullet kost** når det oppretter **Journaloppføringer for kostnadsobjektsaldo**.
+Systemet bruker nå **Policy for opprullet kost** når det oppretter **Journaloppføringer for kostnadsobjektsaldo** .
 
 **Journaloppføringer for kostnadsobjektsaldo**
 
@@ -223,7 +223,7 @@ Systemet bruker nå **Policy for opprullet kost** når det oppretter **Journalop
 | 31.01.2017      | CC004       | Innpakning    | SC-CC004 | Innpakning | 15.717,25 |
 
 > [!NOTE]
-> Journaloppføringene opprettes basert på reglene i **Policy for opprullet kost**, hvis det finnes en policy. Saldoen som vises, er saldoen for beregningen av indirekte kostnader.
+> Journaloppføringene opprettes basert på reglene i **Policy for opprullet kost** , hvis det finnes en policy. Saldoen som vises, er saldoen for beregningen av indirekte kostnader.
 
 Siden **Detaljer om journaloppføring for kostnadssaldo for kostnadsobjekt** som åpnes fra journaloppføringene, viser hvordan saldoen innhentes.
 
@@ -272,9 +272,9 @@ Her er et eksempel på Power Pivot-rapportering i Excel.
 |&nbsp;&nbsp;&nbsp;&nbsp;SC-CC004                             | 0,00            | 0,00           | 0,00          | 0,00          | 0,00          |
 | **Total**                   | **0,00**        | **0,00**       | **31.082,75** | **15.717,25** | **46.800,00** |
 
-Du kan bruke **Policy for opprullet kost** og **Kostnadselementer av typen sekundær** til å la den primære kostnaden per kostnadsobjekt for intern rapportering være den primære kostnaden som gjenstår etter **Beregning av indirekte kostnader**.
+Du kan bruke **Policy for opprullet kost** og **Kostnadselementer av typen sekundær** til å la den primære kostnaden per kostnadsobjekt for intern rapportering være den primære kostnaden som gjenstår etter **Beregning av indirekte kostnader** .
 
-Hvis det samme eksemplet hadde blitt utført uten å opprette **Policy for opprullet kost**, hadde rapportresultatet blitt vist som nedenfor. Kostnaden flyter riktig, men sporbarheten og innsikten i hvordan kostnaden flyter mellom kostsentrene, går tapt.
+Hvis det samme eksemplet hadde blitt utført uten å opprette **Policy for opprullet kost** , hadde rapportresultatet blitt vist som nedenfor. Kostnaden flyter riktig, men sporbarheten og innsikten i hvordan kostnaden flyter mellom kostsentrene, går tapt.
 
 | **Resultatregnskap** | **Kostnadsobjekt** |           |               |               |          **Total**  |
 |-----------------------------|-----------------|-----------|---------------|---------------|---------------|

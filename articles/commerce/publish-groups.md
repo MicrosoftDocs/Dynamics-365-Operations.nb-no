@@ -3,7 +3,7 @@ title: Arbeide med publiseringsgrupper
 description: Dette emnet beskriver funksjonen for publiseringsgrupper i Microsoft Dynamics 365 Commerce.
 author: phinneyridge
 manager: annbe
-ms.date: 12/12/2019
+ms.date: 10/09/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.industry: ''
 ms.author: niholman
 ms.search.validFrom: 2019-12-12
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 374a6c7dd33440903babbc8232f580ac2b68df82
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: a83affb5b383b50317ddf53de4d3bf565f0d9439
+ms.sourcegitcommit: 83ec80382bfeb693d5c5949b6f65296bd50eed12
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3003171"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "3973962"
 ---
 # <a name="work-with-publish-groups"></a>Arbeide med publiseringsgrupper
 
@@ -54,29 +54,29 @@ Funksjonen publiseringsgrupper er valgfri og må være aktivert for området.
 Hvis du vil aktivere funksjonen publiseringsgrupper for området i redigeringsverktøy for handel, følger du denne fremgangsmåten.
 
 1. Velg **Områdeinnstillinger** i navigasjonsruten til venstre for å utvide den.
-1. Velg **Funksjoner** under **Områdeinnstillinger**.
-1. Sett alternativet **Publiseringsgrupper** til **På**.
+1. Velg **Funksjoner** under **Områdeinnstillinger** .
+1. Sett alternativet **Publiseringsgrupper** til **På** .
 
 ## <a name="create-a-publish-group"></a>Opprette en publiseringsgruppe
 
 Hvis du vil opprette en publiseringsgruppe for området i redigeringsverktøy for handel, følger du denne fremgangsmåten.
 
 1. Velg **Publiseringsgrupper** i navigasjonsruten til venstre.
-1. På den øverste kommandolinjen velger du **Nytt**.
-1. Skriv inn et beskrivende navn i dialogboksen **Opprett publiseringsgruppe** under **Navn på publisringsgruppe**. Velg deretter **OK**.
+1. På den øverste kommandolinjen velger du **Nytt** .
+1. Skriv inn et beskrivende navn i dialogboksen **Opprett publiseringsgruppe** under **Navn på publisringsgruppe** . Velg deretter **OK** .
 
 ## <a name="set-the-publish-group-authoring-context"></a>Angi redigeringskontekst for publiseringsgruppe
 
-I Commerce er standard redigeringskontekst den aktive områdekonteksten. Redigeringskonteksten for publiserte områder er standardvisningen der du kan vise og gjøre endringer direkte på webområdet uten å bruke en publiseringsgruppe. Den representerer de nyeste direkte oppdateringene til den publiserte versjonen av webområdet ditt. Hvis kontekstkontrollen under **Publiseringsgrupper** i venstre navigasjonsrute viser navnet **Aktivt område**, arbeider du i redigeringskonteksten for aktivt område. **Aktiv område** er standardnavnet på kontekstkontrollen. Hvis ikke viser kontekstkontrollen navnet på en publiseringsgruppe.
+I Commerce er standard redigeringskontekst den aktive områdekonteksten. Redigeringskonteksten for publiserte områder er standardvisningen der du kan vise og gjøre endringer direkte på webområdet uten å bruke en publiseringsgruppe. Den representerer de nyeste direkte oppdateringene til den publiserte versjonen av webområdet ditt. Hvis kontekstkontrollen under **Publiseringsgrupper** i venstre navigasjonsrute viser navnet **Aktivt område** , arbeider du i redigeringskonteksten for aktivt område. **Aktiv område** er standardnavnet på kontekstkontrollen. Hvis ikke viser kontekstkontrollen navnet på en publiseringsgruppe.
 
 Hvis du vil arbeide i en publiseringsgruppe, må du bytte til publiseringsgruppens redigeringskontekst for den. Hvis du vil angi konteksten for publiseringsgruppen, følger du ett av disse trinnene.
 
-- I den venstre navigasjonsruten velger du kontekstkontrollen direkte under **Publiseringsgrupper**, og deretter velger du navnet på publiseringsgruppen i listen over alternativer som vises. Kontekstkontrollen gis nytt navn og viser navnet på publiseringsgruppen.
-- Velg **Publiseringsgrupper** i venstre navigasjonsrute, og velg deretter navnet på publiseringsgruppen under **Publiseringsgrupper**. Kontekstkontrollen gis nytt navn og viser navnet på publiseringsgruppen.
+- I den venstre navigasjonsruten velger du kontekstkontrollen direkte under **Publiseringsgrupper** , og deretter velger du navnet på publiseringsgruppen i listen over alternativer som vises. Kontekstkontrollen gis nytt navn og viser navnet på publiseringsgruppen.
+- Velg **Publiseringsgrupper** i venstre navigasjonsrute, og velg deretter navnet på publiseringsgruppen under **Publiseringsgrupper** . Kontekstkontrollen gis nytt navn og viser navnet på publiseringsgruppen.
 
 Når du har angitt redigeringskonteksten for publiseringsgruppen, arbeider du i denne publiseringsgruppe-konteksten når du forhåndsviser og redigerer områdeinnhold.
 
-Hvis du vil gå tilbake til standard redigeringskontekst for aktive områder, velger du kontekstkontrollen og deretter **Aktivt område**.
+Hvis du vil gå tilbake til standard redigeringskontekst for aktive områder, velger du kontekstkontrollen og deretter **Aktivt område** .
 
 ## <a name="add-pages-or-other-items-to-a-publish-group"></a>Legge til sider eller andre elementer i en publiseringsgruppe
 
@@ -87,7 +87,7 @@ Hvis du vil kopiere eksisterende sider til en publiseringsgruppe, følger du fre
 1. Velg redigeringskonteksten du vil kopiere fra, og velg deretter **Sider** i navigasjonsruten til venstre.
 1. Velg siden som skal legges til i en publiseringsgruppe.
 1. Velg **Kopier til publiseringsgruppe** på kommandolinjen.
-1. I dialogboksen **Velg en publiseringsgruppe** velger du publiseringsgruppen du vil legge til siden i, og deretter velger du **OK**.
+1. I dialogboksen **Velg en publiseringsgruppe** velger du publiseringsgruppen du vil legge til siden i, og deretter velger du **OK** .
 
 Du kan bruke de samme grunnleggende trinnene til å opprette tilpassede produktsider, URL-adresser, maler, oppsett, fragmenter og mediebibliotek-ressurser, eller til å legge til eksisterende elementer av disse typene i en publiseringsgruppe.
 
@@ -99,23 +99,23 @@ Hvis du vil validere publiseringsgruppen før du planlegger den, følger du frem
 
 1. Velg **Publiseringsgrupper** i navigasjonsruten til venstre.
 1. Velg publiseringsgruppen som skal valideres.
-1. På kommandolinjen velger du **Valider**.
+1. På kommandolinjen velger du **Valider** .
 
 Validering kjøres på alt innhold i publiseringsgruppen. Eventuelle problemer som vil hindre en vellykket publiseringshandling, vises i en varslingsboks øverst til høyre.
 
 > [!NOTE]
-> Validering kjøres alltid automatisk når en publiseringsgruppe planlegges. **Valider**-knappen på kommandolinjen er imidlertid nyttig fordi den hjelper deg med å identifisere problemer som må rettes opp før du prøver å planlegge at en publiseringsgruppe skal publiseres.
+> Validering kjøres alltid automatisk når en publiseringsgruppe planlegges. **Valider** -knappen på kommandolinjen er imidlertid nyttig fordi den hjelper deg med å identifisere problemer som må rettes opp før du prøver å planlegge at en publiseringsgruppe skal publiseres.
 
 ## <a name="schedule-a-publish-group-to-go-live"></a>Planlegge at en publiseringsgruppe skal publiseres
 
 Hvis du vil planlegge at en publiseringsgruppe skal publiseres på området, følger du fremgangsmåten nedenfor.
 
 1. Velg **Publiseringsgrupper** i navigasjonsruten til venstre.
-1. Velg publiseringsgruppen som skal planlegges, under **Publiseringsgrupper**.
-1. På kommandolinjen velger du **Rediger tidsplan**. Dialogboksen **Rediger tidsplan** vises.
-1. Velg datoen og klokkeslettet da publiseringsgruppen skal publiseres, og velg deretter **OK**.
+1. Velg publiseringsgruppen som skal planlegges, under **Publiseringsgrupper** .
+1. På kommandolinjen velger du **Rediger tidsplan** . Dialogboksen **Rediger tidsplan** vises.
+1. Velg datoen og klokkeslettet da publiseringsgruppen skal publiseres, og velg deretter **OK** .
 
-Hvis du vil oppheve planleggingen av en publiseringsgruppe, følger du de samme trinnene, men velger **Opphev planlegging av publiseringsgruppe** i dialogboksen **Rediger tidsplan**.
+Hvis du vil oppheve planleggingen av en publiseringsgruppe, følger du de samme trinnene, men velger **Opphev planlegging av publiseringsgruppe** i dialogboksen **Rediger tidsplan** .
 
 > [!NOTE]
 > Svært store publiseringsgrupper kan ta opptil et minutt eller to for å publiseres når den planlagte tiden kommer. Vær oppmerksom på at en publiseringshandling ikke er umiddelbar, og at mindre publiseringsgrupper vil publiseres raskere.
@@ -145,6 +145,8 @@ Publiseringsgrupper-funksjonen støtter for øyeblikket bare webområdeinnhold. 
 [Ordliste for sidemodell](page-elements-overview.md)
 
 [Dokumentere statuser og livssyklus](document-states-overview.md)
+
+[Aktivere og bruke deling på tvers av kanal](cross-channel-sharing.md)
 
 [Arbeide med moduler](work-with-modules.md)
 

@@ -14,15 +14,15 @@ ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 ms.search.region: global
 ms.search.industry: Manufacturing
-ms.author: t-benebo
+ms.author: benebotg
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 373af2e7bdcbf6860f21e049403fdf174d5e8ca7
-ms.sourcegitcommit: 7061a93f9f2b54aec4bc4bf0cc92691e86d383a6
+ms.openlocfilehash: 2c32957b0bd234ed14e6333a36a46c6a83ec2e91
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "3710339"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3983922"
 ---
 # <a name="calendars-and-master-planning"></a>Kalendere og hovedplanlegging
 
@@ -32,37 +32,37 @@ Dette emnet gir en oversikt over forsyningenkjedekalendere og hvordan de påvirk
 
 ## <a name="definition-of-a-calendar"></a>Definisjon av en kalender
 
-Du kan definere en kalender til å bruke organisasjonen på siden i **Organisasjonsadministrasjon > Oppsett > Kalendere > Kalendere**. 
+Du kan definere en kalender til å bruke organisasjonen på siden i **Organisasjonsadministrasjon > Oppsett > Kalendere > Kalendere** . 
 
-Hver datoregistrering i kalenderen kan være **åpne** eller **lukket** eller **basiskalender**. Dette er angitt i **Kontroll**-kolonnen på siden **Driftstider**. For hver dato: 
+Hver datoregistrering i kalenderen kan være **åpne** eller **lukket** eller **basiskalender** . Dette er angitt i **Kontroll** -kolonnen på siden **Driftstider** . For hver dato: 
 - **Åpne** - angir at arbeidet skal utføres på den valgte dagen. Kalenderen blir oppdatert i henhold til arbeidstidsmalen.
 - **Lukket** - angir arbeidet som ikke utføres i løpet av dagen. 
 - **Basiskalenderen** - angir at en bestemt dato vil arve arbeidstidene og åpnes/lukkes fra basiskalenderen. Derfor, når basiskalenderen oppdateres, vil den valgte kalenderen arve driftstider fra den. 
 
-For lukkede datoer vil boksen **Lukket for plukk** automatisk være tilordnet. For åpne datoer kan du manuelt velge **Lukket for plukk**-alternativet. Dette angir at arbeidet skal utføres på datoen, men at levering ikke er utført. 
+For lukkede datoer vil boksen **Lukket for plukk** automatisk være tilordnet. For åpne datoer kan du manuelt velge **Lukket for plukk** -alternativet. Dette angir at arbeidet skal utføres på datoen, men at levering ikke er utført. 
 
 ## <a name="calendars-that-affect-master-planning"></a>Kalendere som påvirker hovedplanlegging
 
 ### <a name="calendar-for-a-coverage-group"></a>Kalender for en dekningsgruppe
 En dekningsgruppe angir et felles sett med parametere som brukes for etterfylling av varene som tilhører den angitte dekningsgruppen. 
 
-For å legge til en kalender i en dekningsgruppe gå til **Hovedplanlegging > Oppsett > Dekning > Dekningsgrupper**. Finn dekningsgruppen som du vil tilordne kalenderen til, og merk av i **Kalender**-feltet.
+For å legge til en kalender i en dekningsgruppe gå til **Hovedplanlegging > Oppsett > Dekning > Dekningsgrupper** . Finn dekningsgruppen som du vil tilordne kalenderen til, og merk av i **Kalender** -feltet.
 
 Du kan tilordne dekningsgruppen på ulike sider: 
-    - På siden **Detaljer om frigitt produkt** for et element. For å se dekningsgruppen for et element kan du gå til **Behandling av produktinformasjon > Produkter > Frigitte produkter** og velge varen for å gå til siden **Frigitt produktinformasjon**. Du kan se elementdekningsgruppen under hurtigkategorien **Planlegg**.
-    - På siden **Varedekning**. I den frigitte produktinformasjonen klikk **Varedekning** for å gå til varedekningssiden. Du kan se forskjellige parametere for etterfylling, avhengig av området, lageret og produktdimensjonene i oversiktskategorien. Dekningsgruppen for hver vare arves fra dekningsgruppen på siden **Detaljer om frigitt produkt**. Dette kan overstyres ved å bruke **Bruk spesifikke innstillinger** eller **Overstyr gruppeinnstillinger** på **Generelt**-kategorien.
-    - På siden **Parametere for hovedplanlegging**. Hvis en vare ikke har en dekningsgruppe angitt på den forrige siden, vil hovedplanlegging ta den generelle dekningsgruppen som er angitt i hovedplanleggingsparametere. Dette er definert i **Hovedplanlegging > Oppsett > Parametere for hovedplanlegging** i feltet **Generell dekningsgruppe**. 
+    - På siden **Detaljer om frigitt produkt** for et element. For å se dekningsgruppen for et element kan du gå til **Behandling av produktinformasjon > Produkter > Frigitte produkter** og velge varen for å gå til siden **Frigitt produktinformasjon** . Du kan se elementdekningsgruppen under hurtigkategorien **Planlegg** .
+    - På siden **Varedekning** . I den frigitte produktinformasjonen klikk **Varedekning** for å gå til varedekningssiden. Du kan se forskjellige parametere for etterfylling, avhengig av området, lageret og produktdimensjonene i oversiktskategorien. Dekningsgruppen for hver vare arves fra dekningsgruppen på siden **Detaljer om frigitt produkt** . Dette kan overstyres ved å bruke **Bruk spesifikke innstillinger** eller **Overstyr gruppeinnstillinger** på **Generelt** -kategorien.
+    - På siden **Parametere for hovedplanlegging** . Hvis en vare ikke har en dekningsgruppe angitt på den forrige siden, vil hovedplanlegging ta den generelle dekningsgruppen som er angitt i hovedplanleggingsparametere. Dette er definert i **Hovedplanlegging > Oppsett > Parametere for hovedplanlegging** i feltet **Generell dekningsgruppe** . 
 
 ### <a name="calendar-for-a-vendor"></a>Kalender for en leverandør
 Hvis du vil angi virkedager for en leverandør, kan du tilordne en innkjøpskalender for leverandøren på siden **Bestillingsstandarder** for en leverandør. 
 
-Hvis du vil angi en kalender for en leverandør, må du opprette kalenderen i **Organisasjonsadministrasjon > Kalendere > Kalendere**. Når kalenderen er opprettet, må du tilordne den til leverandøren. Gå til **Leverandører > Leverandører > Alle leverandører**, og velg leverandøren du vil tilordne kalenderen til. Deretter, på siden for leverandøren i hurtigkategorien **Bestillingsstandarder** tilordner du den nye innkjøpskalenderen ved hjelp av rullegardinmenyen. 
+Hvis du vil angi en kalender for en leverandør, må du opprette kalenderen i **Organisasjonsadministrasjon > Kalendere > Kalendere** . Når kalenderen er opprettet, må du tilordne den til leverandøren. Gå til **Leverandører > Leverandører > Alle leverandører** , og velg leverandøren du vil tilordne kalenderen til. Deretter, på siden for leverandøren i hurtigkategorien **Bestillingsstandarder** tilordner du den nye innkjøpskalenderen ved hjelp av rullegardinmenyen. 
 
 Kalenderen for en leverandør viser dagene de godtar plasseringen av bestillingen, og datoene når de kan levere ordrene til firmaet ditt. Derfor vil ordredatoer for innkjøpsordrer for leverandøren med en innkjøpskalender, bli datoer som er definert som åpne i kalenderen. Leveringsdatoene for disse ordrene vil også være i åpne dager, og derfor vil dette påvirke leveringstiden for den innkjøpte varen. 
 
 #### <a name="define-the-lead-time-for-a-purchased-item"></a>Definere leveringstiden for en innkjøpt vare
 
-For å angi leveringstiden for innkjøp (og hvis bare virkedager skal tas med i betraktningen) for en vare, må du gå til siden for standard ordreinnstillinger for produktet, under **Behandling av produktinformasjon > Produkter > Frigitte produkter**, og velg **Standard ordreinnstillinger**. 
+For å angi leveringstiden for innkjøp (og hvis bare virkedager skal tas med i betraktningen) for en vare, må du gå til siden for standard ordreinnstillinger for produktet, under **Behandling av produktinformasjon > Produkter > Frigitte produkter** , og velg **Standard ordreinnstillinger** . 
 
 > [!Note]
 > **Virkedager** under leveringstid for kjøp angir virkedager for leverandøren. En kalender for levering bare på tirsdager med leveringstid på 10 dager og boksen for virkedager merket, angir eksempelvis at det vil ta 10 uker (10 tirsdager) å levere varen.
@@ -70,7 +70,7 @@ Derfor vil det i de fleste tilfeller anbefales at det ikke velges virkedager for
 
 #### <a name="define-lead-times-from-the-trade-agreements-page"></a>Definere leveringstider fra siden for forretningsavtale
 
-Hovedplanlegging kan settes opp til å inkludere alle forretningsavtaler for leverandører. Forretningsavtaler er faste priser eller rabattavtaler som er definert for én eller flere kunder eller leverandører for salg eller kjøp av enkelte eller flere produkter. Gå til **Hovedplanlegging > Oppsett > Parametere for hovedplanlegging**, og i kategorien **Planlagte bestillinger** velg **Finn forretningsavtaler** for å inkludere forretningsavtalene ved planlegging. Hovedplanlegging kan velge leverandøren med **Minimum leveringstid** eller med **Laveste enhetspris**.
+Hovedplanlegging kan settes opp til å inkludere alle forretningsavtaler for leverandører. Forretningsavtaler er faste priser eller rabattavtaler som er definert for én eller flere kunder eller leverandører for salg eller kjøp av enkelte eller flere produkter. Gå til **Hovedplanlegging > Oppsett > Parametere for hovedplanlegging** , og i kategorien **Planlagte bestillinger** velg **Finn forretningsavtaler** for å inkludere forretningsavtalene ved planlegging. Hovedplanlegging kan velge leverandøren med **Minimum leveringstid** eller med **Laveste enhetspris** .
 
 ### <a name="calendar-for-a-warehouse"></a>Kalender for et lager
 Du kan tilordne en kalender til et lager for å vise de åpne datoene for mottak og levering. Hvis ingen kalender er knyttet til et lager, antas det at den er åpen alle dager. 
@@ -82,9 +82,9 @@ Du kan tilordne en kalender til et lager for å vise de åpne datoene for mottak
 Hvis du vil angi at et lager er åpent for mottak, men at plukking ikke er mulig, kan du bruke **Lukket for plukk-policyen** i lagerkalenderen. Dette gjelder også for kundehenting. 
 
 ### <a name="transport-calendar"></a>Transportkalender 
-For å angi datoene som er tilgjengelige for forsendelsesoverføringsordrer fra et **Fra lager**, kan du tilordne en **Transportkalender**. Du kan definere en transportkalender per leveringsmåte eller per modus for levering og fra lager. Transportkalenderen er definert i **Salg og markedsføring > Oppsett > Distribusjon > Leveringsmåter**. Velg en leveringsmodus, og klikk på **Transportkalender**-knappen.
+For å angi datoene som er tilgjengelige for forsendelsesoverføringsordrer fra et **Fra lager** , kan du tilordne en **Transportkalender** . Du kan definere en transportkalender per leveringsmåte eller per modus for levering og fra lager. Transportkalenderen er definert i **Salg og markedsføring > Oppsett > Distribusjon > Leveringsmåter** . Velg en leveringsmodus, og klikk på **Transportkalender** -knappen.
 
-Du kan opprette en linje for hvert lager og hver leveringsmåte der kalenderen legges til kolonnen **Transportkalender**. Den angir transportkalenderen som vil bli brukt når varene sendes fra lageret med den angitte leveringsmåten. Hvis du vil bruke en transportkalender på alle forsendelser ved hjelp av en bestemt leveringsmåte, kan det bli opprettet en linje uten å angi lageret.  Den påvirker alle forsendelser som bruker den gitte leveringsmåten, uavhengig av lageret. 
+Du kan opprette en linje for hvert lager og hver leveringsmåte der kalenderen legges til kolonnen **Transportkalender** . Den angir transportkalenderen som vil bli brukt når varene sendes fra lageret med den angitte leveringsmåten. Hvis du vil bruke en transportkalender på alle forsendelser ved hjelp av en bestemt leveringsmåte, kan det bli opprettet en linje uten å angi lageret.  Den påvirker alle forsendelser som bruker den gitte leveringsmåten, uavhengig av lageret. 
 
 Hvis ingen transportkalender er tilknyttet, antas det at alle dager er åpne for transport.
 
@@ -96,7 +96,7 @@ Legg merke til at det er bare er mulig å inkludere én kalender per kunde. Hvis
 Den ønskede leveringsdatoen på salgsordrelinjene påvirkes av kundekalenderen og metoden for leveringsdatokontroll. Du kan lese mer om hvordan den tidligste leveringsdatoen beregnes, i [Ordrebekreftelse.](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/sales-marketing/delivery-dates-available-promise-calculations).
 
 ### <a name="shipping-calendar-for-a-legal-entity"></a>Leveringskalender for en juridisk enhet
-For å angi datoene som en juridisk enhet kan sende varer, kan du definere en leveringskalender under **Organisasjonsstyring > Organisasjoner > Juridiske enheter**. Velg juridisk enhet, og legg til kalenderen i **Utenrikshandel og logistikk**-kategorien i **Leveringskalender**-feltet. Leveringskalenderen vil fungere som en kilde for standarder for alle lagerkalendere i den juridiske enheten. 
+For å angi datoene som en juridisk enhet kan sende varer, kan du definere en leveringskalender under **Organisasjonsstyring > Organisasjoner > Juridiske enheter** . Velg juridisk enhet, og legg til kalenderen i **Utenrikshandel og logistikk** -kategorien i **Leveringskalender** -feltet. Leveringskalenderen vil fungere som en kilde for standarder for alle lagerkalendere i den juridiske enheten. 
 
 ## <a name="how-calendars-affect-dates-in-planning"></a>Hvordan kalendere påvirker datoer i planleggingen
 
@@ -110,8 +110,8 @@ Mottaksdatoen for et kjøp angir datoen du vil motta varene. Det vil være en å
 1. Lagerkalender for det mottakende lageret
 
 Merk at dekningsgruppekalenderen kan angis på ulike sider og har følgende prioriteringsrekkefølge:
-1. Varedekningsgruppe på **Varedekning**-siden
-1. Varedekningsgruppe på **Detaljer om frigitte produkter**-siden
+1. Varedekningsgruppe på **Varedekning** -siden
+1. Varedekningsgruppe på **Detaljer om frigitte produkter** -siden
 1. Standard varedekningsgruppe i **Parametere for hovedplanlegging**
 
 ### <a name="shipping-date-of-a-planned-transfer-order"></a>Forsendelsesdato for et overføringsforslag

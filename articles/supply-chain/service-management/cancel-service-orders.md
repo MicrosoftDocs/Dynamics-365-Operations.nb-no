@@ -15,15 +15,15 @@ ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: ShylaThompson
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b60d5cf5ebae2386e7d9dc3d25833524044672d0
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: ce3cb9ebc3536ba1b333a7bef6b5c679e09d7516
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3202980"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3980417"
 ---
 # <a name="cancel-service-orders"></a>Annuller serviceordrer   
 
@@ -39,13 +39,13 @@ Du kan annullere en serviceordre eller serviceordrelinje fra selve serviceordren
 
 ## <a name="cancel-a-service-order-in-the-service-orders-form"></a>Annullere en serviceordre fra Serviceordrer-skjemaet
 
-1.  Klikk på **Servicestyring** \> **Felles** \> **Serviceordrer** \> **Serviceordrer**. Velg serviceordren, og klikk deretter på **Annuller ordre** i handlingsruten.
+1.  Klikk på **Servicestyring** \> **Felles** \> **Serviceordrer** \> **Serviceordrer** . Velg serviceordren, og klikk deretter på **Annuller ordre** i handlingsruten.
 
 ## <a name="cancel-a-service-order-line"></a>Annullere en serviceordrelinje
 
-1.  Klikk på **Servicestyring** \> **Felles** \> **Serviceordrer** \> **Serviceordrer**. Dobbeltklikk på serviceordren som inneholder linjen du vil annullere.
+1.  Klikk på **Servicestyring** \> **Felles** \> **Serviceordrer** \> **Serviceordrer** . Dobbeltklikk på serviceordren som inneholder linjen du vil annullere.
 
-2.  Velg serviceordrelinjen du vil annullere, og klikk deretter **Avbryt ordrelinje** for å endre statusen for linjen til **Avbrutt**.
+2.  Velg serviceordrelinjen du vil annullere, og klikk deretter **Avbryt ordrelinje** for å endre statusen for linjen til **Avbrutt** .
 
 
 > [!TIP]
@@ -54,21 +54,21 @@ Du kan annullere en serviceordre eller serviceordrelinje fra selve serviceordren
 
 ## <a name="cancel-multiple-service-orders"></a>Annullere flere serviceordrer
 
-1.  Klikk på **Servicestyring** \> **Periodisk** \> **Serviceordrer** \> **Annuller serviceordrer**.
+1.  Klikk på **Servicestyring** \> **Periodisk** \> **Serviceordrer** \> **Annuller serviceordrer** .
 
-2.  Klikk **Velg**-knappen.
+2.  Klikk **Velg** -knappen.
 
-3.  I **Forespørsel**-skjemaet i **Vilkår**-kolonnen velger du serviceordrene du vil annullere.
+3.  I **Forespørsel** -skjemaet i **Vilkår** -kolonnen velger du serviceordrene du vil annullere.
 
-4.  Klikk **OK** for å lukke **Forespørsel**-skjemaet.
+4.  Klikk **OK** for å lukke **Forespørsel** -skjemaet.
 
 5.  Merk av for **Vis infologg** for å generere en informasjonslogg som viser de annullerte serviceordrene.
 
-6.  Merk av for **Opphev annullering** hvis du vil tilbakeføre en serviceordres **Avbrutt**-status.
+6.  Merk av for **Opphev annullering** hvis du vil tilbakeføre en serviceordres **Avbrutt** -status.
 
-7.  Klikk **OK**.
+7.  Klikk **OK** .
 
-De valgte serviceordrene blir enten annullert, eller de får sin fremdriftsstatus **Avbrutt** tilbakeført til **Pågår**.
+De valgte serviceordrene blir enten annullert, eller de får sin fremdriftsstatus **Avbrutt** tilbakeført til **Pågår** .
 
 
 > [!NOTE]

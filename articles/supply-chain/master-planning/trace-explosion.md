@@ -16,15 +16,15 @@ ms.custom: 19231
 ms.assetid: 9bc9bfbe-a7a9-437b-a947-826229b0585a
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: roxanad
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 046d4f5270869542d33023b9b9c927e89f5ad40b
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 88e777d69c9da8a19c186bca3ca591e59af232f0
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3209519"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3978086"
 ---
 # <a name="use-tracing-for-explosion"></a>Bruke sporing for nedbryting
 
@@ -39,7 +39,7 @@ Ved å aktivere sporing kan du vise informasjon om faktorene som bidro til resul
 -   Simuler planleggingsresultater for å finne ut om planleggingsparameterne er optimale.
 -   Angi hvordan informasjon, for eksempel produksjonsdatoer, antall og prioritet for en ordre ble bestemt.
 
-Du kan vise detaljer om termin og handlinger for en valgt ordre. På siden **Nedbryting** er sporing av informasjon tilgjengelig i fanen **Forklaring** i den øvre ruten. Sporing skjer når du bryter ned en ordre. For å starte sporing for ordren klikk **Oppdater**, og merk deretter av for **Aktiver sporing**. Du kan bruke feltet **Finn tekst** til å søke etter spesifikk informasjon i loggen. Søkeresultatene er uthevet i treet.
+Du kan vise detaljer om termin og handlinger for en valgt ordre. På siden **Nedbryting** er sporing av informasjon tilgjengelig i fanen **Forklaring** i den øvre ruten. Sporing skjer når du bryter ned en ordre. For å starte sporing for ordren klikk **Oppdater** , og merk deretter av for **Aktiver sporing** . Du kan bruke feltet **Finn tekst** til å søke etter spesifikk informasjon i loggen. Søkeresultatene er uthevet i treet.
 
 <a name="additional-resources"></a>Tilleggsressurser
 --------

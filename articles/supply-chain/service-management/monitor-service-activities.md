@@ -15,22 +15,22 @@ ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: ShylaThompson
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 687768ac8891b778f7d8d0eb6e3dcd9a4aa3298a
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: b364c1f19888b711626312b77335b06ef3959886
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3202244"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3980617"
 ---
 # <a name="monitor-service-activities"></a>Overvåke serviceaktiviteter 
 
 [!include [banner](../includes/banner.md)]
 
 
-**Tjenestefordeling**-skjemaet gir deg en rask statusoppdatering for de ulike planlagte tjenesteaktivitetene og inneholder verktøy for sporing av den generelle serviceordreflyten i firmaet ditt.
+**Tjenestefordeling** -skjemaet gir deg en rask statusoppdatering for de ulike planlagte tjenesteaktivitetene og inneholder verktøy for sporing av den generelle serviceordreflyten i firmaet ditt.
 
 
 > [!TIP]
@@ -47,7 +47,7 @@ Mens du overvåker dagens serviceaktivitet, legger du merke til at Jens, en serv
 
 ## <a name="open-the-dispatch-board-form"></a>Åpne Tjenestefordeling-skjemaet
 
-Klikk **Servicestyring** \> **Periodisk** \> **Tjenestefordeling**.
+Klikk **Servicestyring** \> **Periodisk** \> **Tjenestefordeling** .
 
 ## <a name="see-also"></a>Se også
 

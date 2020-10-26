@@ -16,15 +16,15 @@ ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
 ms.search.industry: ''
-ms.author: conradv
+ms.author: kamaybac
 ms.dyn365.ops.version: 7.2999999999999998
 ms.search.validFrom: 2019-12-1
-ms.openlocfilehash: 340cb33537c7ba07555e1f0b6437fa4a3458a11a
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 536e17088348f2a8b41818eccbe8da699c4189d5
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3208622"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3981847"
 ---
 # <a name="product-data-entities"></a>Produktdataenheter
 
@@ -40,12 +40,12 @@ Du må bruke dataenheter til å importere og eksportere produktdata. Tabellen ne
 | Produktvarianter | EcoResProductVariantEntity | Denne enheten brukes til å importere og eksportere delte produktvarianter. Den muliggjør oppdateringer. Den krever at dimensjonsverdiene allerede er opprettet. Integreringsnøkkelen er produktstandarden pluss produktdimensjonene. Denne enheten støtter ikke settbaserte SQL-operasjoner. Den er aktivert for OData. Den støtter sletteoperasjoner. Den kan ikke utvides ved å legge til nye produktdimensjoner. |
 | Produktvarianter etter produktnummeridentifikasjon | EcoResProductNumberIdentifiedProductVariantEntity | Denne enheten brukes til å importere og eksportere delte produktvarianter. Den muliggjør oppdateringer. Den krever at dimensjonsverdiene allerede er opprettet. Integreringsnøkkelen er produktnummeret (mens integreringsnøkkelen for enheten **Produktvarianter** er produktstandarden pluss produktdimensjonene). |
 | Frigitte produktvarianter | EcoResReleasedProductVariantEntity | Denne enheten brukes til å importere og eksportere frigitte produktvarianter. Den muliggjør oppdateringer. Den krever at delte produktvarianter allerede er opprettet. Når en ny, frigitt produktvariant importeres, oppstår en utgivelse av den delte produktvarianten. Denne enheten støtter ikke settbaserte SQL-operasjoner. Den er aktivert for OData. Selv om den støtter sletteoperasjoner, fører denne bruken for øyeblikket til at data blir ødelagt på grunn av en feil i den gjeldende plattformen. Enheten kan ikke utvides ved å legge til nye produktdimensjoner. |
-| Utgitte produktvarianter etter produktnummeridentifikasjon | EcoResProductNumberIdentifiedReleasedProductVariantEntity | Enheten ligner på enheten **Frigitte produktvarianter**, men integreringsnøkkelen er produktnøkkelen i stedet for er produktstandarden pluss produktdimensjoner. Den kan utvides ved å legge til nye produktdimensjoner. |
-| Salgbare frigitte produkter | EcoResSellableReleasedProductEntity | Denne enheten brukes til å eksportere bare salgbare produkter. salgbare produkter er produkter som inneholder informasjon som kreves for å kunne brukes på en salgsordre. De samme reglene gjelder når et produkt er bekreftet ved å bruke **Valider**-funksjonen på siden **Frigitte produkter**. |
+| Utgitte produktvarianter etter produktnummeridentifikasjon | EcoResProductNumberIdentifiedReleasedProductVariantEntity | Enheten ligner på enheten **Frigitte produktvarianter** , men integreringsnøkkelen er produktnøkkelen i stedet for er produktstandarden pluss produktdimensjoner. Den kan utvides ved å legge til nye produktdimensjoner. |
+| Salgbare frigitte produkter | EcoResSellableReleasedProductEntity | Denne enheten brukes til å eksportere bare salgbare produkter. salgbare produkter er produkter som inneholder informasjon som kreves for å kunne brukes på en salgsordre. De samme reglene gjelder når et produkt er bekreftet ved å bruke **Valider** -funksjonen på siden **Frigitte produkter** . |
 | Frigitte spesifikke produkter V2 | EcoResDistinctProductV2Entity | Denne enheten brukes til å eksportere spesifikke produkter. Disse spesifikke produktene kan være produkter, undertypeprodukter og produktvarianter. |
 | Frigitte produktstandarder V2 | EcoResProductMasterV2Entity | Denne enheten brukes til å importere og eksportere produktstandarder. Den er ikke aktivert for databehandling. |
 | Vare - strekkode | EcoResProductBarcodeEntity | Denne enheten brukes til å eksportere produkter og strekkoder. |
 | Tilstander for produktlivssyklus | EcoResProductLifecycleSateEntity | Denne enheten brukes til å importere og eksportere de ulike produktlivssyklustilstandene som kan tilordnes til et produkt. |
 
 > [!NOTE]
-> Du kan bruke dataenheten **Frigitte produkter v2** til å importere produkter til systemet bare hvis det delte produktet allerede er opprettet. Hvis du vil importere produkter til systemet, må du ellers bruke dataenheten **Produktoppretting**.
+> Du kan bruke dataenheten **Frigitte produkter v2** til å importere produkter til systemet bare hvis det delte produktet allerede er opprettet. Hvis du vil importere produkter til systemet, må du ellers bruke dataenheten **Produktoppretting** .

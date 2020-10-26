@@ -15,15 +15,15 @@ ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: ShylaThompson
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 42e835545d7c3efc8293d163cf4db4ebfd6896b7
-ms.sourcegitcommit: 54da65a7da0efd4f0d9760c5b14ff785b28751c4
+ms.openlocfilehash: 3c4ac28d35bcd6ed0c1fc8d0700c52008d2f4f6a
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "3830191"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3984088"
 ---
 # <a name="customer-returns-overview"></a>Oversikt over kundereturer
 
@@ -32,7 +32,7 @@ ms.locfileid: "3830191"
 
 Opprett og bruk returårsakskoder og disposisjonskoder for å støtte prosessen for returnering av produkter.
 
-Bruk en returårsakskode for å beskrive årsaken til at kunden vil returnere en vare. Du kan tilordne en årsakskode i skjemaet **Opprett returordrer**.
+Bruk en returårsakskode for å beskrive årsaken til at kunden vil returnere en vare. Du kan tilordne en årsakskode i skjemaet **Opprett returordrer** .
 
 Tilordne en disposisjonskode når en vare mottas, eller i løpet av den fysiske inspeksjonen av en returvare. Du kan bruke disposisjonskoder til å beskrive tilstanden til varen. Du kan også bruke disposisjonskoder til å angi om det kreves flere handlinger for transaksjonen. Opprett for eksempel disposisjonskoder for følgende handlinger:
 

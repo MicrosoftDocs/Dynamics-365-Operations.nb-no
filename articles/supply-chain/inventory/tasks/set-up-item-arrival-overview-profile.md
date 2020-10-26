@@ -14,15 +14,15 @@ ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Distribution
-ms.author: shylaw
+ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 885dc6c4fff53b9c1ddbac64e97b2b415bac1c7a
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 69389dd3a53ffec11116e16512bd038b45eda4d4
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3204062"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3979698"
 ---
 # <a name="set-up-an-item-arrival-overview-profile"></a>Definere en profil for vareankomstoversikt
 
@@ -30,27 +30,27 @@ ms.locfileid: "3204062"
 
 Dette emnet fokuserer på oppsettet for en profil for ankomstoversikt. Profil for ankomstoversikt er en samling av regler som skal brukes når en bruker åpner en side for ankomstoversikt. Du kan bruke prosedyren i demonstrasjonsdataselskapet USMF. Denne fremgangsmåten utføres vanligvis av en mottaksassistent.
 
-1. I navigasjonsruten går du til **Moduler > Beholdningsstyring > Oppsett > Distribusjon > Profiler for ankomstoversikt**.
-2. Velg **Ny**. Fordi du nesten alltid vil arbeide i det samme lageret med å laste ut fulle vognlass, bør du opprette en profil for ankomstoversikt for å forenkle prosessen med å registrere mottatte varer.  
+1. I navigasjonsruten går du til **Moduler > Beholdningsstyring > Oppsett > Distribusjon > Profiler for ankomstoversikt** .
+2. Velg **Ny** . Fordi du nesten alltid vil arbeide i det samme lageret med å laste ut fulle vognlass, bør du opprette en profil for ankomstoversikt for å forenkle prosessen med å registrere mottatte varer.  
 3. I feltet **Profilnavn for ankomstoversikt** skriver du inn en verdi.
-4. Velg et alternativ i feltet **Vis linjer**. Velg hvilke linjer som skal vises for mottaket:  
+4. Velg et alternativ i feltet **Vis linjer** . Velg hvilke linjer som skal vises for mottaket:  
 
     - **Alle** – Vis alle linjer uansett status.   
     - **Pågår** – Vis linjer for mottak der fremdriften er fullstendig eller delvis. Dette betyr at for hver linje er enten hele antallet eller et delantall registrert i en ankomstjournal.   
     - **Ikke fullstendig** – Vis linjer for mottak der fremdriften er ingen eller delvis. Dette betyr at for hver linje er enten ingen eller bare en del av antallet registrert i en ankomstjournal.  
 
-5. Vis eller skjul delen **Ankomstalternativer**.
-6. Skriv inn en verdi i feltet **Dager fremover**. Dette angir et filter som viser mottakslinjene som forventes å mottas i løpet av de neste dagene (avhengig av tallet du angir).  
-7. Skriv inn en verdi i feltet **Dager bakover**. Dette angir et filter som viser linjene som forventes å mottas et antall dager før dagens dato.  
-8. Skriv inn en verdi i feltet **Lagre**. Filtrere på ett eller flere lagre.  
-9. Velg en verdi i **Leveringsmåte**-feltet. Dette angir et filter for å vise bare mottakslinjene med denne leveringsmåten.  
-10. Velg WHS i **Navn**-feltet.
-11. Velg lager 24 i **Lager**-feltet. Dette er standardlageret som skal brukes for registrerte mottakslinjer som bruker denne profilen.  
-12. Velg **Rampedør** i **Lokasjon**-feltet. Dette er standardlokasjonen som skal brukes for registrerte mottakslinjer som bruker denne profilen.  
-13. Vis eller skjul delen **Detaljer om spørring etter ankomst**.
-14. Velg område 2 i feltet **Begrens til område**. Dette angir et filter for å vise bare mottakslinjene med dette området.  
-15. Sett alternativet **Bestillinger** til **Ja**. Velg mottakslinjer fra bestillinger.  
-16. Sett alternativet **Overføringsordrer** til **Ja**. Velg mottakslinjer fra overføringsordrer.  
-17. Velg **Lagre**.
+5. Vis eller skjul delen **Ankomstalternativer** .
+6. Skriv inn en verdi i feltet **Dager fremover** . Dette angir et filter som viser mottakslinjene som forventes å mottas i løpet av de neste dagene (avhengig av tallet du angir).  
+7. Skriv inn en verdi i feltet **Dager bakover** . Dette angir et filter som viser linjene som forventes å mottas et antall dager før dagens dato.  
+8. Skriv inn en verdi i feltet **Lagre** . Filtrere på ett eller flere lagre.  
+9. Velg en verdi i **Leveringsmåte** -feltet. Dette angir et filter for å vise bare mottakslinjene med denne leveringsmåten.  
+10. Velg WHS i **Navn** -feltet.
+11. Velg lager 24 i **Lager** -feltet. Dette er standardlageret som skal brukes for registrerte mottakslinjer som bruker denne profilen.  
+12. Velg **Rampedør** i **Lokasjon** -feltet. Dette er standardlokasjonen som skal brukes for registrerte mottakslinjer som bruker denne profilen.  
+13. Vis eller skjul delen **Detaljer om spørring etter ankomst** .
+14. Velg område 2 i feltet **Begrens til område** . Dette angir et filter for å vise bare mottakslinjene med dette området.  
+15. Sett alternativet **Bestillinger** til **Ja** . Velg mottakslinjer fra bestillinger.  
+16. Sett alternativet **Overføringsordrer** til **Ja** . Velg mottakslinjer fra overføringsordrer.  
+17. Velg **Lagre** .
 18. Lukk siden.
 

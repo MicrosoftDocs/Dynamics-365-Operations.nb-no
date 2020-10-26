@@ -15,22 +15,22 @@ ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: ShylaThompson
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f2a27e0476ba0b4868d713d87248941dfc3579ff
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 17fbed59b1fe7bec80f25f74451872efd61bed62
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3202911"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3977006"
 ---
 # <a name="combine-service-orders"></a>Kombiner serviceordrer   
 
 [!include [banner](../includes/banner.md)]
 
 
-Når du oppretter serviceordrelinjer automatisk i **Serviceavtaler**-skjemaet, kan du velge ett av følgende alternativer for å angi hvordan du vil gruppere dem:
+Når du oppretter serviceordrelinjer automatisk i **Serviceavtaler** -skjemaet, kan du velge ett av følgende alternativer for å angi hvordan du vil gruppere dem:
 
   - **Etter serviceavtale**
 
@@ -42,7 +42,7 @@ Når du oppretter serviceordrelinjer automatisk i **Serviceavtaler**-skjemaet, k
 
 ## <a name="example"></a>Eksempel
 
-Du kan opprette en serviceavtale med startdatoen 31. mars 2007. I **Kombiner serviceordrer**-feltet angir du **Etter serviceobjekt**. Deretter oppretter du følgende serviceavtalelinjer:
+Du kan opprette en serviceavtale med startdatoen 31. mars 2007. I **Kombiner serviceordrer** -feltet angir du **Etter serviceobjekt** . Deretter oppretter du følgende serviceavtalelinjer:
 
 <table style="width:100%;">
 <colgroup>
@@ -96,7 +96,7 @@ Du angir ikke tidsvinduer for noen av serviceavtalelinjene. Dermed flyttes ikke 
 
 Deretter genererer du serviceordrelinjer fra skjemaet **Opprett serviceordrer** fra 01.04.07 til 30.04.07.
 
-Totalt sett opprettes det ti serviceordrer. Fordi du valgte kombinasjonsinnstillingen **Etter serviceobjekt**, får alle serviceordrer som opprettes, bare serviceordrelinjer med ett bestemt serviceobjekt. Serviceordrelinjer som genereres fra serviceavtalen og har samme servicedato og samme objekt, kombineres på samme serviceordre.
+Totalt sett opprettes det ti serviceordrer. Fordi du valgte kombinasjonsinnstillingen **Etter serviceobjekt** , får alle serviceordrer som opprettes, bare serviceordrelinjer med ett bestemt serviceobjekt. Serviceordrelinjer som genereres fra serviceavtalen og har samme servicedato og samme objekt, kombineres på samme serviceordre.
 
 
 > [!NOTE]
