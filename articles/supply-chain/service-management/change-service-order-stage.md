@@ -15,15 +15,15 @@ ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: ShylaThompson
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 45d4533211e7f64635c9523c177aa569b6a2f8a4
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 52a4082f6e201bcd2820f3d11a61929d8f906840
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3202957"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3977030"
 ---
 # <a name="change-the-service-order-stage"></a>Endre serviceordrestadiet 
 
@@ -32,11 +32,11 @@ ms.locfileid: "3202957"
 
 Følg denne fremgangsmåten for å flytte en serviceordre til neste trinn i arbeidsflyten eller tilbakestille den til et tidligere trinn.
 
-1.  Klikk på **Servicestyring** \> **Felles** \> **Serviceordrer** \> **Serviceordrer**.
+1.  Klikk på **Servicestyring** \> **Felles** \> **Serviceordrer** \> **Serviceordrer** .
 
-2.  Velg serviceordren, og klikk deretter på fanen **Fordeling**.
+2.  Velg serviceordren, og klikk deretter på fanen **Fordeling** .
 
-3.  I **handlingsruten** klikker du enten på **Neste stadium** eller **Forrige stadium**.
+3.  I **handlingsruten** klikker du enten på **Neste stadium** eller **Forrige stadium** .
 
 4.  I skjemaet **Endre tjenestestadium** velger du det aktuelle stadiet.
 

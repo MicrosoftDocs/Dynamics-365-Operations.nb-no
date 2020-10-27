@@ -3,7 +3,7 @@ title: Human Resources-app i Teams
 description: Dette emnet gir en innføring i Microsoft Dynamics 365 Human Resources-appen i Microsoft Teams.
 author: andreabichsel
 manager: AnnBe
-ms.date: 09/01/2020
+ms.date: 09/30/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-05-18
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 33322b9b553076125695f257b201463e9d8275c6
-ms.sourcegitcommit: e27510ba52623c801353eed4853f8c0aeea3bb2d
+ms.openlocfilehash: 51f04e553da822c4e09d31bcd72c71b674ad1f1b
+ms.sourcegitcommit: b6ab46f6e5ce60e2c3d70a348827eaf60c84cae2
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "3828920"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "3930023"
 ---
 # <a name="human-resources-app-in-teams"></a>Human Resources-app i Teams
 
 [!include [banner](includes/preview-feature.md)]
 
-Med Microsoft Dynamics 365 Human Resources-appen i Microsoft Teams kan ansatte raskt be om fridager og vise saldoinformasjon for fridager i Microsoft Teams. Ansatte kan samhandle med en robot for å be om informasjon. Kategorien **Fritid** gir mer detaljert information. In tillegg kan de sende personer informasjon om kommende fritid i grupper og chatter utenfor Human Resources-appen.
+Med Microsoft Dynamics 365 Human Resources-appen i Microsoft Teams kan ansatte raskt be om fridager og vise saldoinformasjon for fridager i Microsoft Teams. Ansatte kan samhandle med en robot for å be om informasjon. Kateogrien **Fridager** gir mer detaljert informasjon. I tillegg kan de sende personinformasjon om kommende fritid i grupper og samtaler utenfor Human Resources-appen.
 
 ![Robot for permisjonsapp i Human Resources Teams](./media/hr-admin-teams-leave-app-bot.png)
 
@@ -50,13 +50,13 @@ Hvis du vil at brukere skal motta permisjonsforespørselsvarsler i Teams-appen, 
 >[!NOTE]
 >Det er bare brukere som er logget på Teams og som bruker Teams-appen i Human Resources, som mottar varslinger.
 
-1. Velg **Systemadministrasjon**i Human Resources.
+1. Velg **Systemadministrasjon** i Human Resources.
 
-2. Velg **Koblinger**.
+2. Velg **Koblinger** .
 
-3. Under **Oppsett** velger du **Systemparametere**.
+3. Under **Oppsett** velger du **Systemparametere** .
 
-4. I kategorien **Generelt** setter du **Aktiver varslinger for Teams-app** til **Ja**.
+4. I kategorien **Generelt** setter du **Aktiver varslinger for Teams-app** til **Ja** .
 
    ![Aktivere varslinger for Teams-appen i Systemparametere](./media/hr-admin-teams-leave-app-enable-notifications.png)
 
@@ -68,19 +68,19 @@ Hvis du vil at brukere skal motta permisjonsforespørselsvarsler i Teams-appen, 
 
 Når du har aktivert varsler for Teams-appen i Human Resources, kan du aktivere eller deaktivere varslinger for individuelle brukere.
 
-1. Velg **Systemadministrasjon**i Human Resources.
+1. Velg **Systemadministrasjon** i Human Resources.
 
-2. Velg **Koblinger**.
+2. Velg **Koblinger** .
 
-3. Under **Brukere** velger du **Brukeralternativer**.
+3. Under **Brukere** velger du **Brukeralternativer** .
 
-4. Velg kategorien **Arbeidsflyt**.
+4. Velg kategorien **Arbeidsflyt** .
 
 5. Sett **Aktiver varslinger for Teams-app** til **Ja** for å aktivere varslinger for brukeren, eller **Nei** for å deaktivere varslinger for brukeren.
 
    ![Aktivere varslinger for Teams-appen i kategorien Arbeidsflyt i Brukeralternativer](./media/hr-admin-teams-leave-app-notifications.png)
 
-6. Velg **Lagre**.
+6. Velg **Lagre** .
 
 ## <a name="known-issues"></a>Kjente problemer
 
@@ -88,8 +88,24 @@ Når du har aktivert varsler for Teams-appen i Human Resources, kan du aktivere 
 | --- | --- |
 | Horisontal rulling fungerer ikke på Android-telefoner | Horisontal rulling er ikke et problem på iOS-enheter eller skrivebordsenheter. Vi arbeider med en løsning for Android. |
 | Balansen er feil når du sender inn fridager for en fremtidig dato. | Prognoser er ennå ikke tilgjengelige. Saldoen vises for den gjeldende datoen. |
-| Kan ikke avbryte en forespørsel med statusen **Til vurdering**. | Denne funksjonaliteten støttes ikke for øyeblikket og blir lagt til i en fremtidig versjon. |
+| Kan ikke avbryte en forespørsel med statusen **Til vurdering** . | Denne funksjonaliteten støttes ikke for øyeblikket og blir lagt til i en fremtidig versjon. |
 | Saldoinformasjon beregnes per i dag. | Systemet viser ikke saldoer i løpet av avsetningsperioden, selv om det er konfigurert i permisjons- og fraværsparametere. |
+
+## <a name="troubleshooting"></a>Feilsøking
+
+Hvis en bruker har problemer med å logge på eller bruke Human Resources Teams-appen, kan du prøve å følge disse instruksjonene for feilsøking. Hvis du fortsatt har problemer etter feilsøking, kontakter du kundestøtte. For mer informasjon, se [Få kundestøtte](hr-admin-troubleshooting-support.md).
+
+### <a name="cant-sign-into-the-human-resources-app-in-teams"></a>Kan ikke logge på Human Resources-appen i Teams
+
+Hvis en bruker kontakter deg fordi vedkommende ikke kan logge på appen, må du kontrollere at brukeren har en tilknyttet ansattpost i Human Resources.
+
+### <a name="error-when-approving-leave-requests-in-the-human-resources-app-in-teams"></a>Feil under godkjenning av permisjonsforespørsler i Human Resources-appen i Teams
+
+Hvis en bruker får en feilmelding under forsøk på å godkjenne permisjonsforespørsler i Teams-appen, kan du utføre følgende feilsøkingstrinn:
+
+1. Kontroller at Teams-kontoen er den samme som de bruker for å få tilgang til Human Resources.
+
+2. Kontroller at de er en gyldig godkjenner for forespørselen ved å kontrollere arbeidsflytinnstillingene for permisjonsgodkjenning. Hvis du vil ha mer informasjon om arbeidsflyter for permisjonsforespørsel, kan du se [Opprette en permisjonsforespørsel](hr-leave-and-absence-workflow.md).
 
 ## <a name="privacy-notice"></a>Personvernerklæring
 

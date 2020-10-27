@@ -13,15 +13,15 @@ audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: omulvad
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7b94d187458a903669d4ec988c7f83737b797b1f
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: e98203f03f10b3a7c530cb91211df2af025710dc
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3210186"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3978996"
 ---
 # <a name="credit-limits-for-customers"></a>Kredittgrenser for kunder
 
@@ -59,9 +59,9 @@ Bruk skjemaet for **Mottakerparametere** for å spesifisere hvilke dokumenter so
 
 Kredittgrenser blir automatisk sjekket hvis en av følgende alternativer er angitt:
 
--   I skjemaet **Parametere for kundefordringer**, vil **Kredittgrensetype**-feltet settes til alt annet enn **Ingen**. Kredittgrenser kontrolleres for alle kunder.
+-   I skjemaet **Parametere for kundefordringer** , vil **Kredittgrensetype** -feltet settes til alt annet enn **Ingen** . Kredittgrenser kontrolleres for alle kunder.
 
--   I skjemaet **Parametere for kundefordringer**, er **Kredittgrensetype**-feltetsatt til **Ingen** men **Obligatorisk kredittgrense** er valgt for en kunde i skjemaet **Kunder**. Kredittgrenser sjekkes kun for bestemte kunder.
+-   I skjemaet **Parametere for kundefordringer** , er **Kredittgrensetype** -feltetsatt til **Ingen** men **Obligatorisk kredittgrense** er valgt for en kunde i skjemaet **Kunder** . Kredittgrenser sjekkes kun for bestemte kunder.
 
 For å sjekke kredittgrenser for følgende dokumenter, må du angi flere innstillinger.
 
@@ -83,7 +83,7 @@ Du kan konfigurere Dynamics 365 til å beregne kundens gjenstående kreditt på 
 
 Bruk skjemaet **Parametere for kundefordringer** for å spesifisere informasjonen å sammenligne med. Du må være medlem av Systemadministrator (-SYSADMIN-)-sikkerhetsrollen for å gjøre endringer i dette skjemaet. I feltet **Kredittgrensetype** velg om du skal utføre kredittgrensesjekk og hvilken transaksjonsinformasjon som skal inkluderes når kredittgrensen er sjekket. Velge fra følgende valg:
 
--   **Ingen** – Ikke sjekk kredittgrenser. Du kan overstyre dette alternativet for en spesifikk kunde ved å huke av avmerkingsboksen **Obligatorisk kredittsjekk** i skjemaet **Kunder**. Hvis du gjør dette sjekkes kredittgrensen mot kundesaldoen.
+-   **Ingen** – Ikke sjekk kredittgrenser. Du kan overstyre dette alternativet for en spesifikk kunde ved å huke av avmerkingsboksen **Obligatorisk kredittsjekk** i skjemaet **Kunder** . Hvis du gjør dette sjekkes kredittgrensen mot kundesaldoen.
 
 -   **Saldo** - Kredittgrensen kontrolleres mot kundesaldoen.
 
@@ -93,7 +93,7 @@ Bruk skjemaet **Parametere for kundefordringer** for å spesifisere informasjone
 
 **Hvor brukes informasjon om kundens gjenværende kreditt?**
 
-Informasjon om en kundes saldo og gjenværende kredittbeløp kalkuleres og lagres når du oppretter et aldrende øyeblikksbilde, og vises i **Samlinger**-skjemaet. Belpene som vises i **Samlinger**-skjemaet kan ikke inkludere all transaksjonsaktivitet før et nytt eldre øyeblikksbilde er opprettet. Hvis du vil ha mer informasjon, kan du se [Samlinger og kreditt i kundefordringer](https://technet.microsoft.com/library/hh209221.aspx).
+Informasjon om en kundes saldo og gjenværende kredittbeløp kalkuleres og lagres når du oppretter et aldrende øyeblikksbilde, og vises i **Samlinger** -skjemaet. Belpene som vises i **Samlinger** -skjemaet kan ikke inkludere all transaksjonsaktivitet før et nytt eldre øyeblikksbilde er opprettet. Hvis du vil ha mer informasjon, kan du se [Samlinger og kreditt i kundefordringer](https://technet.microsoft.com/library/hh209221.aspx).
 
 Avhengig av dokumentene som er valgt, beregnes informasjon om kundens saldo og gjenværende kredittbeløp når salgsordrer, pakksedler og kundefakturaer oppdateres. Hvis mengden av dokumentet du arbeider med ville føre til at kredittgrensen overskrides, vises en melding.
 
@@ -109,7 +109,7 @@ Du må være medlem av Systemadministrator (-SYSADMIN-)-sikkerhetsrollen for å 
 
 **Hvor spesifiserer jeg om det skal vises en advarsel eller feil hvis kredittgrensen overskrides?**
 
-Bruk **Parametere for kundefordringer**-skjemaet for å spesifisere om det skal vises en advarsel eller feil hvis kredittgrensen overskrides. Denne advarselen eller feilen vises når en bruker skriver inn eller legger inn informasjon, eller det er inkludert i en logg hvis dokumentene behandles av en elektronisk tjeneste. Du må være medlem av Systemadministrator (-SYSADMIN-)-sikkerhetsrollen for å gjøre endringer i dette skjemaet.
+Bruk **Parametere for kundefordringer** -skjemaet for å spesifisere om det skal vises en advarsel eller feil hvis kredittgrensen overskrides. Denne advarselen eller feilen vises når en bruker skriver inn eller legger inn informasjon, eller det er inkludert i en logg hvis dokumentene behandles av en elektronisk tjeneste. Du må være medlem av Systemadministrator (-SYSADMIN-)-sikkerhetsrollen for å gjøre endringer i dette skjemaet.
 
 |    Felt                                                               |    beskrivelse                                                                                                                                                                                                                                                                                                                                                                                        |
 |------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -120,21 +120,21 @@ Bruk **Parametere for kundefordringer**-skjemaet for å spesifisere om det skal 
 
 Bruk skjemaet **Kunder** for å spesifisere kredittgrensebeløpet for en bestemt kunde. Du må være medlem av en sikkerhetsrolle som har vedlikehold av kundemaster (CustCustomersMaintain)-ansvar tildelt for å gjøre endringer i dette skjemaet.
 
-1.  Klikk **Kunder** \> **Felles** \> **Kunder** \> **Alle kunder**. Dobbeltklikk en kundekonto.
+1.  Klikk **Kunder** \> **Felles** \> **Kunder** \> **Alle kunder** . Dobbeltklikk en kundekonto.
 
-2.  I skjemaet **Kunder** på Handlings-ruten, klikk **Rediger**.
+2.  I skjemaet **Kunder** på Handlings-ruten, klikk **Rediger** .
 
-3.  Skriv inn et valutabeløp i feltet **Kredittgrense**. Denne verdien må være høyere enn null (0), og vil bli brukt som kredittgrensebeløp.
+3.  Skriv inn et valutabeløp i feltet **Kredittgrense** . Denne verdien må være høyere enn null (0), og vil bli brukt som kredittgrensebeløp.
 
-4.  Hvis det er påkrevd, skriv inn et lisensnummer eller annen offentlig utstedt identifikasjon i **Offentlig identfikasjon**-feltet.
+4.  Hvis det er påkrevd, skriv inn et lisensnummer eller annen offentlig utstedt identifikasjon i **Offentlig identfikasjon** -feltet.
 
 > [!NOTE]
-> I skjemaet **Parametere for kundefordringer**, er en kredittgrensetype typisk valgt. Men hvis kredittgrensetype er satt til **Ingen**, må du velge avmerkingsboksen **Obligatorisk kredittgrense** i skjemaet **Kunder** for å kunne sjekke kundens kredittgrense mot kundens saldo. For mer informasjon om kredittgrense typer, se "Hvilke dokumenter og prosesser kan jeg sjekke kredittgrenser for?" i dette emnet. 
+> I skjemaet **Parametere for kundefordringer** , er en kredittgrensetype typisk valgt. Men hvis kredittgrensetype er satt til **Ingen** , må du velge avmerkingsboksen **Obligatorisk kredittgrense** i skjemaet **Kunder** for å kunne sjekke kundens kredittgrense mot kundens saldo. For mer informasjon om kredittgrense typer, se "Hvilke dokumenter og prosesser kan jeg sjekke kredittgrenser for?" i dette emnet. 
 
 **Hvordan sjekker jeg kredittgrenser manuelt for salgsordrer?**
 
 Noen ganger må du kanskje manuelt sjekke kundens kredittgrense. For eksempel kan du manuelt sjekke kundens kredittgrense før du begynner å legge inn en salgsordre. Du kan bruke skjemaet **Salgsordre** for å manuelt sjekke kredittgrenser. Du må være medlem av en sikkerhetsrolle som har vedlikehold av salgsordre (SalesOrderMaintain)-ansvar tildelt for å gjøre endringer i dette skjemaet.
 
-1.  Klikk **Salg og markedsføring** \> **Vanlig** \> **Salgsordrer** \> **Alle salgsordrer**. Dobbeltklikk en salgsordre.
+1.  Klikk **Salg og markedsføring** \> **Vanlig** \> **Salgsordrer** \> **Alle salgsordrer** . Dobbeltklikk en salgsordre.
 
-2.  I skjemaet **Salgsordre** i Handlingsvinduet, på **Administrer**-kategorien, klikk **Sjekk kredittgrense**.
+2.  I skjemaet **Salgsordre** i Handlingsvinduet, på **Administrer** -kategorien, klikk **Sjekk kredittgrense** .

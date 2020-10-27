@@ -16,15 +16,15 @@ ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
 ms.search.industry: ''
-ms.author: conradv
+ms.author: kamaybac
 ms.dyn365.ops.version: 7.2999999999999998
 ms.search.validFrom: 2017-12-31
-ms.openlocfilehash: 44e5496904c10c644b33f5cf5d9e51c39bcd4a9e
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 259c9f07fb69b07f73baeb5ce94e0a7bc29bb2d6
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3209542"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3984808"
 ---
 # <a name="product-identifiers"></a>Produktidentifikatorer
 
@@ -50,7 +50,7 @@ Varenummeret er den produkt-IDen som brukes av en bestemt juridisk enhet. Ideelt
 
 I tillegg kan ikke en produktvariant identifiseres unikt av et varenummer. Det kreves alltid kombinasjonen av et varenummer og alle produktdimensjonene som er definert for produktstandarden. Dette kravet kan bli problematisk, og kan redusere hastigheten på identifikasjonsprosessen. Også derfor anbefaler vi at du bruker det unike produktnummeret i stedet varenummeret når det er mulig.
 
-Mange sider har fremdeles varenummeret og produktdimensjonene som de primære IDer. Produktnumrene kan imidlertid brukes for søk. Under **Salg og markedsføring** &gt; **Oppsett** &gt; **Søk** &gt; **Søkeparametere** kan du endre søkeoppslaget slik at det bruker produktnumre i stedet for varenumre som den primære søkestrategien. Hvis du setter **Aktiver oppslag for produktsøk** til **Ja**, vil oppslaget ikke bare vise produktstandarder, men produktvarianter. Hvis du vil ha mer informasjon, kan du se [Søke etter produkter og produktvarianter under ordreregistrering](search-products-product-variants.md).
+Mange sider har fremdeles varenummeret og produktdimensjonene som de primære IDer. Produktnumrene kan imidlertid brukes for søk. Under **Salg og markedsføring** &gt; **Oppsett** &gt; **Søk** &gt; **Søkeparametere** kan du endre søkeoppslaget slik at det bruker produktnumre i stedet for varenumre som den primære søkestrategien. Hvis du setter **Aktiver oppslag for produktsøk** til **Ja** , vil oppslaget ikke bare vise produktstandarder, men produktvarianter. Hvis du vil ha mer informasjon, kan du se [Søke etter produkter og produktvarianter under ordreregistrering](search-products-product-variants.md).
 
 I tillegg skal du kunne søke og filtrere på produktnummeret, varenavnet og beskrivelsen av og produktdimensjonens ID-er for produktvarianten. Når du velger en variant, velges alle produktdimensjonens ID-er samt det tilknyttede varenummeret. Det er derfor enklere å finne og velge riktig variant. Denne innstillingen anbefales på det sterkeste hvis du bruker produktvarianter og det unike produktnummeret som de primære ID-ene for produkter. Det eneste unntaket er kanskje motebransjen, der organisasjonens forretningsprosesser ofte krever at du velger malen før du velger en variant. Du bør vurdere dette alternativet nøye før du implementerer nummereringssystemet.
 
@@ -77,8 +77,8 @@ Du kan vedlikeholde ID-ene for eksternt produkt basert på frigitt produkt, frig
 
 På siden **Frigitte produkter** gjør du ett av følgende.
 
-- For kunder velger du **Ekstern varebeskrivelse** i gruppen **Beslektet informasjon** i fanen **Salg**.
-- For leverandører velger du **Ekstern varebeskrivelse** i gruppen **Beslektet informasjon** i fanen **Kjøp**.
+- For kunder velger du **Ekstern varebeskrivelse** i gruppen **Beslektet informasjon** i fanen **Salg** .
+- For leverandører velger du **Ekstern varebeskrivelse** i gruppen **Beslektet informasjon** i fanen **Kjøp** .
 
 På siden **Eksterne varebeskrivelser** kan du knytte kundens eller leverandørens varenummer til et frigitt produkt. Denne tilknytningen må gjøres for hver juridiske enhet. Informasjonen nedenfor kan lagres. Etikettene er dessverre litt villedende i den gjeldende versjonen av Supply Chain Management. Disse etikettene kan imidlertid endres i en fremtidig versjon.
 
@@ -90,8 +90,8 @@ På siden **Eksterne varebeskrivelser** kan du knytte kundens eller leverandøre
 
 Hvis mange kunder eller leverandører bruker de samme varenumrene (som for eksempel i forbindelse med en kjøpstilknytning eller en handelsgruppe), kan du opprette grupper med kunder eller leverandører som forenkler vedlikehold av ekstern produktinformasjon.
 
-- For kundegrupper kan du gå til **Salg** &gt; **Oppsett** &gt; **Varer** &gt; **Ekstern varebeskrivelse** for å opprette og vedlikeholde gruppene og de tilknyttede varenumrene. Hvis du vil knytte kunder til en gruppe, kan du gå til **Kunder** &gt; **Kunder** &gt; **Alle kunder**, og deretter angir du en verdi i feltet **Vare – kundegruppe** i hurtigfanen **Standarder for salgsordre**.
-- For leverandørgrupper går du til **Innkjøp og leverandører** &gt; **Oppsett** &gt; **Ekstern varebeskrivelsesgruppe** for å opprette og vedlikeholde gruppene og de tilknyttede varenumrene. Hvis du vil knytte leverandører til en gruppe, kan du gå til **Leverandører** &gt; **Leverandører** &gt; **Alle leverandører**, og deretter angir du en verdi i feltet **Vare – leverandørgruppe** i hurtigfanen **Bestillingsstandarder**.
+- For kundegrupper kan du gå til **Salg** &gt; **Oppsett** &gt; **Varer** &gt; **Ekstern varebeskrivelse** for å opprette og vedlikeholde gruppene og de tilknyttede varenumrene. Hvis du vil knytte kunder til en gruppe, kan du gå til **Kunder** &gt; **Kunder** &gt; **Alle kunder** , og deretter angir du en verdi i feltet **Vare – kundegruppe** i hurtigfanen **Standarder for salgsordre** .
+- For leverandørgrupper går du til **Innkjøp og leverandører** &gt; **Oppsett** &gt; **Ekstern varebeskrivelsesgruppe** for å opprette og vedlikeholde gruppene og de tilknyttede varenumrene. Hvis du vil knytte leverandører til en gruppe, kan du gå til **Leverandører** &gt; **Leverandører** &gt; **Alle leverandører** , og deretter angir du en verdi i feltet **Vare – leverandørgruppe** i hurtigfanen **Bestillingsstandarder** .
  
 ## <a name="bar-codes"></a>Strekkoder
 
@@ -101,17 +101,17 @@ Før du definerer strekkoder, kan du definere ett eller flere strekkodeoppsett. 
 
 Det anbefales at du bruker strekkodeoppsettet til vedlikehold av GTIN-koder (Global Trade Item Number) og IAN-koder (International Article Number).
 
-Hvis du vil vedlikeholde strekkoder, velger du **Strekkoder** i gruppen **Lager** i fanen **Administrer lager** på siden **Frigitte produkter**.
+Hvis du vil vedlikeholde strekkoder, velger du **Strekkoder** i gruppen **Lager** i fanen **Administrer lager** på siden **Frigitte produkter** .
 
 ## <a name="gtin-codes"></a>GTIN-koder
 
 I e-handel er det viktig at alle parter snakker felles språk og refererer til produkter ved hjelp av et felles sett med identifikatorer. Derfor er noen bransjer avhengige av [GTIN](https://www.gs1.org/id-keys/gtin), som er et globalt varenummersystem som styres av GS1.
 
-Vi anbefaler at du vedlikeholder GTIN som en strekkode. Du kan imidlertid også vedlikeholde den på siden **Vare – GTIN**. Hvis du vil åpne denne siden, velger du **GTIN-koder** i gruppen **Lager** i fanen **Administrer lager** på siden **Frigitte produkter**. Legg merke til at GTIN ikke vedlikeholdes som et globalt nummer. I stedet vedlikeholdes det basert på juridisk enhet.
+Vi anbefaler at du vedlikeholder GTIN som en strekkode. Du kan imidlertid også vedlikeholde den på siden **Vare – GTIN** . Hvis du vil åpne denne siden, velger du **GTIN-koder** i gruppen **Lager** i fanen **Administrer lager** på siden **Frigitte produkter** . Legg merke til at GTIN ikke vedlikeholdes som et globalt nummer. I stedet vedlikeholdes det basert på juridisk enhet.
 
-I Supply Chain Management kan du definere varianter av emballasjen i lageroperasjonene ved å definere bestemte måleenheter. En vare kan for eksempel lagres i deler, i pakker på seks, i brett på 18 eller i hele paller. En bestemt måleenhet defineres for hver av disse emballasjevariantene. GTIN er vanligvis relatert til emballasjeenheten for et produkt, og derfor kan du vedlikeholde flere GTIN-koder per produkt og enhet på siden **Vare – GTIN**. Du kan imidlertid bruke den samme GTIN-koden mer enn én gang for ulike varer eller produktvarianter for en juridisk enhet.
+I Supply Chain Management kan du definere varianter av emballasjen i lageroperasjonene ved å definere bestemte måleenheter. En vare kan for eksempel lagres i deler, i pakker på seks, i brett på 18 eller i hele paller. En bestemt måleenhet defineres for hver av disse emballasjevariantene. GTIN er vanligvis relatert til emballasjeenheten for et produkt, og derfor kan du vedlikeholde flere GTIN-koder per produkt og enhet på siden **Vare – GTIN** . Du kan imidlertid bruke den samme GTIN-koden mer enn én gang for ulike varer eller produktvarianter for en juridisk enhet.
 
-Hvis du vil vedlikeholde **GTIN-koder**, velger du **GTIN** i gruppen **Lager** i fanen **Administrer lager** på siden **Frigitte produkter**.
+Hvis du vil vedlikeholde **GTIN-koder** , velger du **GTIN** i gruppen **Lager** i fanen **Administrer lager** på siden **Frigitte produkter** .
 
 ## <a name="external-codes"></a>Eksterne koder
 
@@ -128,13 +128,13 @@ Det finnes dessverre ingen standardfunksjonalitet som lar deg søke etter produk
 | Produktoversettelser | Produktnavn, produktbeskrivelse | Produktnavn, produktbeskrivelse | Denne enheten overskriver alle språk. Legg merke til at når navnet på eller beskrivelsen av en juridisk enhets primærspråk overskrives, endres navnet og beskrivelsen av selve produktet. |
 | Frigitt produktoppretting V2 | Varenummer, produktnummer, varesøknavn| Varenummer, produktnummer, varesøknavn, produktsøknavn, produktnavn | Denne enheten kan være utfordrende når nummerserier brukes ved oppretting av nye frigitte produkter. Både nummerserien **Varenummer** og **Produktnummer** har en påvirkning. Nummerserien **Varenummer** er imidlertid per juridiske enhet, mens nummerserien **Produktnummer** er global. Derfor anbefales det ikke at du bruker nummerserien **Varenummer** når du distribuerer nye frigitte produkter. Når enheten brukes til å frigi et eksisterende produkt, må produktnummeret selvsagt angis i enheten. Hvis du vil ha mer informasjon, kan du se delen Produkt- og varenummerserier i dette emnet. |
 | Frigitte produktvarianter | Varenummer, produktdimensjoner, produktnummer | Produktnummer, produktsøkenavn, produktnavn, produktbeskrivelse, produktdimensjoner | På samme måte som enheten **Produktvarianter** kan denne enheten brukes til å opprette nye produkter som følger produktterminologimalen eller bruker egne produktnumrene for varianten. |
-| Ekstern varebeskrivelse for kunder | Kundens varenummer, varenavn for kunde, kundebeskrivelse, kundekonto | Kundens varenummer, varenavn for kunde, kundebeskrivelse, kundekonto | En gruppe av kunder (for eksempel en kjøpertilknytning) kan samles i én gruppe ved hjelp av enheten **Eksterne kundegrupper for beskrivelse av vare**. |
-| Ekstern varebeskrivelse for leverandører | Leverandørens varenummer, varenavn for leverandør, leverandørbeskrivelse, leverandørkonto | Leverandørens varenummer, varenavn for leverandør, leverandørbeskrivelse, leverandørkonto | En gruppe av leverandører (for eksempel en salgstilknytning eller bransjeorganisasjon) kan samles i én gruppe ved hjelp av enheten **Eksterne leverandørgrupper for beskrivelse av vare**. |
+| Ekstern varebeskrivelse for kunder | Kundens varenummer, varenavn for kunde, kundebeskrivelse, kundekonto | Kundens varenummer, varenavn for kunde, kundebeskrivelse, kundekonto | En gruppe av kunder (for eksempel en kjøpertilknytning) kan samles i én gruppe ved hjelp av enheten **Eksterne kundegrupper for beskrivelse av vare** . |
+| Ekstern varebeskrivelse for leverandører | Leverandørens varenummer, varenavn for leverandør, leverandørbeskrivelse, leverandørkonto | Leverandørens varenummer, varenavn for leverandør, leverandørbeskrivelse, leverandørkonto | En gruppe av leverandører (for eksempel en salgstilknytning eller bransjeorganisasjon) kan samles i én gruppe ved hjelp av enheten **Eksterne leverandørgrupper for beskrivelse av vare** . |
 | Varestrekkode | Strekkode | Strekkode | Legg merke til at under import må du henvise til et strekkodeoppsett som er definert i systemet. De importerte strekkodereferansene valideres mot dette strekkodeoppsettet, og de avvises hvis strekkodene ikke oppfyller kravene som er definert i dette strekkodeoppsettet. |
-| Eksterne koder for frigitte produkter | Ekstern kode | Ekstern kode, eksterne kodeklasser, varenummer | Eksterne koder vises etter juridisk enhet. For import må du referere til en definerte kodeklasse. Importer kodeklassene ved hjelp av enheten **Eksterne kodeklasser for frigitte produkter**. |
-| Eksterne koder for frigitte produktvarianter | Ekstern kode | Ekstern kode, eksterne kodeklasser, varenummer, produktdimensjoner | Eksterne koder vises etter juridisk enhet. For import må du referere til en definerte kodeklasse. Importer kodeklassene ved hjelp av enheten **Eksterne kodeklasser for frigitte produkter**. Denne enheten refererer til produktvarianter basert på varenummeret og produktdimensjonene. |
-| Eksterne koder for utgitte produktvarianter etter produktnummer-ID | Ekstern kode | Ekstern kode, eksterne kodeklasser, produktnummer | Eksterne koder vises etter juridisk enhet. For import må du referere til en definerte kodeklasse. Importer kodeklassene ved hjelp av enheten **Eksterne kodeklasser for frigitte produkter**. Denne enheten refererer til produktvarianter basert på produktnummeret for varianten. (Fra den neste hovedversjonen) |
-| GTIN | Gjelder ikke her | Gjelder ikke her | Det er for øyeblikket ingen bestemt enhet som brukes til å importere og eksportere GTIN-koder. Det anbefales at du i stedet bruker enheten **Varestrekkode**. |
+| Eksterne koder for frigitte produkter | Ekstern kode | Ekstern kode, eksterne kodeklasser, varenummer | Eksterne koder vises etter juridisk enhet. For import må du referere til en definerte kodeklasse. Importer kodeklassene ved hjelp av enheten **Eksterne kodeklasser for frigitte produkter** . |
+| Eksterne koder for frigitte produktvarianter | Ekstern kode | Ekstern kode, eksterne kodeklasser, varenummer, produktdimensjoner | Eksterne koder vises etter juridisk enhet. For import må du referere til en definerte kodeklasse. Importer kodeklassene ved hjelp av enheten **Eksterne kodeklasser for frigitte produkter** . Denne enheten refererer til produktvarianter basert på varenummeret og produktdimensjonene. |
+| Eksterne koder for utgitte produktvarianter etter produktnummer-ID | Ekstern kode | Ekstern kode, eksterne kodeklasser, produktnummer | Eksterne koder vises etter juridisk enhet. For import må du referere til en definerte kodeklasse. Importer kodeklassene ved hjelp av enheten **Eksterne kodeklasser for frigitte produkter** . Denne enheten refererer til produktvarianter basert på produktnummeret for varianten. (Fra den neste hovedversjonen) |
+| GTIN | Gjelder ikke her | Gjelder ikke her | Det er for øyeblikket ingen bestemt enhet som brukes til å importere og eksportere GTIN-koder. Det anbefales at du i stedet bruker enheten **Varestrekkode** . |
 | Enhet for ID for Common Data Service for produktenhet | Gjelder ikke her | Varenummer, varesøknavn, produktsøknavn, leverandørens varenummer, kundens varenummer, eksterne koder, GTIN-koder, strekkoder | Denne enheten konsoliderer alle identifikatorer til én datamodell, slik at et grensesnitt kan brukes til å eksportere alle identifikatorer og deres tilknyttede typer. Bruk enheten **Kode for produktenhets-ID** til å eksportere ID-kodene og beskrivelsene. Bruk enheten **Omfang for produktenhets-ID** til å eksportere mer områdeinformasjon til en identifikator, for eksempel parten, den juridiske enheten, antallet eller enheten. |
 
 ### <a name="product-and-item-number-sequences"></a>Nummerserier for produkt og vare
@@ -145,7 +145,7 @@ Du kan definere to ulike nummerserier:
 - Nummerserien **Varenummer** for varenummeret per juridiske enhet
 
 > [!NOTE]
-> Du må bruke varenummeret som en egen identifikator bare når du overfører andre juridiske enheter fra forskjellige kilder med ulike tallsystemer. Du bør alltid bruke en produkt-ID som er unik på tvers av alle juridiske enheter. Derfor bør du sette alternativet **Manuell** til **Ja** for nummerserien **Varenummer**. På denne måten følger varenummeret produktnummeret ved oppretting. Hvis Supply Chain Management ikke er det ledende systemet for nye produktnumre, bør du sette alternativet **Manuell** til **Ja** for både nummerserien **Varenummer** og **Produktnummer**.
+> Du må bruke varenummeret som en egen identifikator bare når du overfører andre juridiske enheter fra forskjellige kilder med ulike tallsystemer. Du bør alltid bruke en produkt-ID som er unik på tvers av alle juridiske enheter. Derfor bør du sette alternativet **Manuell** til **Ja** for nummerserien **Varenummer** . På denne måten følger varenummeret produktnummeret ved oppretting. Hvis Supply Chain Management ikke er det ledende systemet for nye produktnumre, bør du sette alternativet **Manuell** til **Ja** for både nummerserien **Varenummer** og **Produktnummer** .
 
 Når du bruker enheten **Frigitt produktoppretting V2** til å opprette produkter, kan flere innstillinger påvirke hvordan nummerseriene brukes til å opprette produktnummeret og varenummeretet:
 
@@ -158,9 +158,9 @@ Tabellen nedenfor gir en oversikt over resultatene av import og manuell oppretti
 
 | Nummerserie for produktnummer | Nummerserie for varenummer | Tilordning av varenummeret | Tilordning av produktnummeret | Resultat av enhetsimport | Resultat av manuell oppretting | Konklusjon |
 |--------------------------------|-----------------------------|----------------------------|-------------------------------|-------------------------|----------------------------|-----------|
-| Manuell = Nei | Manuell = Nei | Ingen tilordning | Ingen tilordning | Produktnumre bruker nummerserien **Produktnummer**. Varenumre bruker nummerserien **Varenummer**. | Produktnumre bruker nummerserien **Produktnummer**. Varenumre bruker nummerserien **Varenummer**. | Med denne konfigurasjonen vil produktnumre følge produktnummerserien, og varenumre vil følge varenummerserien. Denne konfigurasjonen vil imidlertid ikke fungere hvis det er mer enn en vare (rad) som skal importeres. |
-| Manuell = Nei | Manuell = Ja | Autogenerer | Ingen tilordning | Både produktnumre og varenumre bruker nummerserien **Varenummer**. | Både produktnumre og varenumre bruker nummerserien **Produktnummer**. | Både produktnumre og varenumre følger produktnummerserien. Dette er den anbefalte fremgangsmåten for å importere bulkprodukter med dataenheten Frigitt produktoppretting V2. |
-| Manuell = Nei | Manuell = Ja | Ingen tilordning | Ingen tilordning | Både produktnumre og varenumre bruker nummerserien **Produktnummer**. | Både produktnumre og varenumre bruker nummerserien **Produktnummer**. | Både produktnumre og varenumre bruker produktnummerserien. Denne konfigurasjonen vil imidlertid ikke fungere hvis det er mer enn en vare (rad) som skal importeres. |
+| Manuell = Nei | Manuell = Nei | Ingen tilordning | Ingen tilordning | Produktnumre bruker nummerserien **Produktnummer** . Varenumre bruker nummerserien **Varenummer** . | Produktnumre bruker nummerserien **Produktnummer** . Varenumre bruker nummerserien **Varenummer** . | Med denne konfigurasjonen vil produktnumre følge produktnummerserien, og varenumre vil følge varenummerserien. Denne konfigurasjonen vil imidlertid ikke fungere hvis det er mer enn en vare (rad) som skal importeres. |
+| Manuell = Nei | Manuell = Ja | Autogenerer | Ingen tilordning | Både produktnumre og varenumre bruker nummerserien **Varenummer** . | Både produktnumre og varenumre bruker nummerserien **Produktnummer** . | Både produktnumre og varenumre følger produktnummerserien. Dette er den anbefalte fremgangsmåten for å importere bulkprodukter med dataenheten Frigitt produktoppretting V2. |
+| Manuell = Nei | Manuell = Ja | Ingen tilordning | Ingen tilordning | Både produktnumre og varenumre bruker nummerserien **Produktnummer** . | Både produktnumre og varenumre bruker nummerserien **Produktnummer** . | Både produktnumre og varenumre bruker produktnummerserien. Denne konfigurasjonen vil imidlertid ikke fungere hvis det er mer enn en vare (rad) som skal importeres. |
 | Manuell = Ja | Gjelder ikke | Gjelder ikke | Autogenerer | Du får følgende feilmelding: "Finner ikke nummerserien." | I henhold til nummerserien **Varenummer** | Denne innstillingen støttes ikke for import. |
 
 ## <a name="product-entity-identifier-export-all-product-identifiers"></a>Produktenhets-ID (Eksporter alle produkt-ID-er)
@@ -173,17 +173,17 @@ Denne prosessen forutsetter at produktets hoveddata først og fremst oppretthold
 
 Gjør følgende for å konfigurere miljøet.
 
-1. Velg kategorihierarkiet for CDS. Opprett en ny tilknytning på siden **Rolletilknytninger for kategorihierarki** hvis ingen hierarkier er knyttet til rollen **Common Data Service**. Velg rollen **Common Data Service**, og knytt deretter til kategorihierarkiet som representerer produktporteføljen som skal synkroniseres til CDS.
-2. Velg den juridiske enheten for globale produkthoveddata. Velg hovedfirmaet der produkt- og vare-ID-ene hovedsakelig vedlikeholdes, på siden **Parametere for produktinformasjonsbehandling** i fanen **Produktattributter**.
-3. Definer ID-kodetypene og koder som skal eksporteres. Gå til **Produktinformasjonsbehandling** &gt; **Oppsett** &gt; **Produkt-ID-koder**. Hvis du vil generere ID-kodetypene, velger du **Generer koder**. En kodetypeoppføring genereres for hver type for ID-en som finnes i den valgte juridiske enheten.
+1. Velg kategorihierarkiet for CDS. Opprett en ny tilknytning på siden **Rolletilknytninger for kategorihierarki** hvis ingen hierarkier er knyttet til rollen **Common Data Service** . Velg rollen **Common Data Service** , og knytt deretter til kategorihierarkiet som representerer produktporteføljen som skal synkroniseres til CDS.
+2. Velg den juridiske enheten for globale produkthoveddata. Velg hovedfirmaet der produkt- og vare-ID-ene hovedsakelig vedlikeholdes, på siden **Parametere for produktinformasjonsbehandling** i fanen **Produktattributter** .
+3. Definer ID-kodetypene og koder som skal eksporteres. Gå til **Produktinformasjonsbehandling** &gt; **Oppsett** &gt; **Produkt-ID-koder** . Hvis du vil generere ID-kodetypene, velger du **Generer koder** . En kodetypeoppføring genereres for hver type for ID-en som finnes i den valgte juridiske enheten.
 
     Vær oppmerksom på at det genereres en kodetype for hvert strekkodeoppsett for strekkoder. For eksterne koder genereres det en kodetype for hver eksterne kodeklasse.
 
     Nå kan du vedlikeholde listen over kodetypene. Du kan endre koden, navnet og beskrivelsen. Du kan også slette kodetyper. Kodetypene du sletter, blir ikke brukt til å fylle ut tabellen for global produktenhets-ID.
 
-4. Når du er ferdig med å definere kodetypene for produkt-ID, kan du opprette identifikatorene i den globale tabellen ved å starte jobben **Opprett produktenhets-ID-er** på siden **Koder for produktenhets-ID**. Du bør kjøre denne jobben som en satsvis jobb. Denne jobben må defineres som en periodisk satsvis jobb slik at tabellen fylles ut i henhold til nye oppføringer.
+4. Når du er ferdig med å definere kodetypene for produkt-ID, kan du opprette identifikatorene i den globale tabellen ved å starte jobben **Opprett produktenhets-ID-er** på siden **Koder for produktenhets-ID** . Du bør kjøre denne jobben som en satsvis jobb. Denne jobben må defineres som en periodisk satsvis jobb slik at tabellen fylles ut i henhold til nye oppføringer.
 
-Nå kan du bruke dataenhetene **Enhet for ID for Common Data Service for produktenhet**, **Kode for produktenhets-ID** og **Omfang for produktenhets-ID** til å eksportere identifikatorene for alle målsystemer.
+Nå kan du bruke dataenhetene **Enhet for ID for Common Data Service for produktenhet** , **Kode for produktenhets-ID** og **Omfang for produktenhets-ID** til å eksportere identifikatorene for alle målsystemer.
 
 ## <a name="related-topic"></a>Relaterte emne
 

@@ -3,7 +3,7 @@ title: Kom i gang med planleggingsoptimalisering
 description: Dette emnet forklarer hvordan du begynner å bruke funksjonen for planleggingsoptimalisering.
 author: ChristianRytt
 manager: tfehr
-ms.date: 05/06/2020
+ms.date: 10/09/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,20 +19,25 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: 04b39469ccf4f088bb33bdfc73ce40eece6f5f2e
-ms.sourcegitcommit: cde71bc7d14ea6cdff2c4e991057d39a6a0473d9
+ms.openlocfilehash: 49025d0aa0f6a627b816a43dd4260449942b400c
+ms.sourcegitcommit: ae04c7cb48f7ecafe71bbe77a0f97715e6290991
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "3887270"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "3973482"
 ---
-# <a name="get-started-with-planning-optimization"></a>Kom i gang med planleggingsoptimalisering
+# <a name="get-started-with-planning-optimization"></a>Komme i gang med planleggingsoptimalisering
 
 [!include [banner](../../includes/banner.md)]
 
-Planleggingsoptimaliseringsfunksjonaliteten støtter for øyeblikket ikke alle funksjonene som er tilgjengelige i planleggingsmotoren som er innebygd i Microsoft Dynamics 365 Supply Chain Management. Det er derfor viktig at du vurderer om funksjonssettet som for øyeblikket er tilgjengelig i planleggingsoptimalisering, oppfyller kravene dine. Som standard er ikke planleggingsoptimaliseringsfunksjonaliteten aktivert i Dynamics Lifecycle Services (LCS). Du har derfor mulighet til å gjennomføre evalueringen før den er slått på.
+Som [tidligere annonsert](https://docs.microsoft.com/dynamics365/supply-chain/get-started/removed-deprecated-features-scm-updates#use-of-built-in-supply-chain-management-master-planning-engine-for-distribution-scenarios) skal Planleggingsoptimalisering erstatte den eksisterende innebygde planleggingsmotoren.
 
-Til slutt erstatter planleggingsoptimalisering den eksisterende innebygde planleggingsmotoren Supply Chain Management.
+Hvis du bruker den innebygde hovedplanleggingsmotoren, bør du begynne å planlegge migreringen til Planleggingsoptimalisering nå. Det er viktig at du starter migreringsprosessen med én gang, fordi operasjonene kan bli påvirket når avskrivingen fremtvinges. Vi oppfordrer deg på det sterkeste til å fullføre migreringen før 1. desember 2020 for å unngå problemer i siste øyeblikk når avskrivingen fremtvinges. 
+
+Funksjonen Planleggingsoptimalisering støtter for øyeblikket ikke alle funksjonene som er tilgjengelige i planleggingsmotoren som er innebygd i Supply Chain Management. Det er derfor viktig at du vurderer om funksjonssettet som for øyeblikket er tilgjengelig i planleggingsoptimalisering, oppfyller kravene dine. Funksjonen Planleggingsoptimalisering er for øyeblikket ikke aktivert som standard i Dynamics Lifecycle Services (LCS), slik at du kan gjennomføre evalueringen før funksjonen aktiveres.
+
+> [!NOTE]
+> Du må be om et unntak fra migreringen til Planleggingsoptimalisering hvis hovedplanleggingsprosessen ikke inkluderer produksjon (hovedplanlegging genererer planlagte produksjonsordrer), og du trenger den innebygde hovedplanleggingsmotoren etter versjon 10.0.15. Fra og med versjon 10.0.16 blir det vist en feil i miljøer ved kjøring av innebygd hovedplanlegging uten generering av planlagte produksjonsordrer. Planleggingsoptimalisering bør brukes for alle nye distribusjoner som ikke genererer planlagte produksjonsordrer under hovedplanlegging. Eiere av eksisterende miljøer som kjører den innebygde hovedplanleggingsmotoren uten generering av planlagte produksjonsordrer, vil motta en e-post med detaljer om unntaksprosessen. Vi anbefaler at du samarbeider med en partner for å evaluere og planlegge migreringen til Planleggingsoptimalisering.
 
 Før du slår på planleggingsoptimalisering, anbefaler vi på det sterkeste at du evaluerer resultatene i tilpassingsanalysen av planleggingsoptimalisering. Hvis du vil ha mer informasjon, se [Tilpassingsanalyse av planleggingsoptimalisering](planning-optimization-fit-analysis.md).
 
@@ -53,18 +58,18 @@ Hvis du vil bruke planleggingsoptimalisering, må du installere tillegget for pl
 > Kravet for planleggingsoptimalisering er et LCS-aktivert miljø med høy tilgjengelighet, lag 2 eller høyere (ikke et OneBox-miljø), med Dynamics 365 Supply Chain Management versjon 10.0.7 eller senere. Hvis du prøver å installere tillegget i et OneBox-miljø, vil ikke installasjonen bli fullført, og du må avbryte installasjonen.
 
 1. Logg på LCS, og åpne ønsket miljø.
-1. Gå til **Detaljerte opplysninger**.
-1. Bla ned til **Miljøtillegg**-hurtigfanen.
-1. Velg **Installer et nytt tillegg**.
-1. Velg **Planleggingsoptimalisering**.
+1. Gå til **Detaljerte opplysninger** .
+1. Bla ned til **Miljøtillegg** -hurtigfanen.
+1. Velg **Installer et nytt tillegg** .
+1. Velg **Planleggingsoptimalisering** .
 1. Følg installasjonsveiledningen, og godta vilkårene.
-1. Velg **Installer**.
-1. I **Miljøtillegg**-hurtigfanen skal du se at planleggingsoptimalisering installeres.
+1. Velg **Installer** .
+1. I **Miljøtillegg** -hurtigfanen skal du se at planleggingsoptimalisering installeres.
 1. Etter noen minutter skal **Installerer** endres til **Installert** (det er mulig at du må oppdatere siden). Når installasjonen er fullført, er du klar til å aktivere planleggingsoptimalisering i Dynamics 365 Supply Chain Management.
 
 ### <a name="planning-optimization-integration"></a>Integrering av planleggingsoptimalisering
 
-Hvis du vil konfigurere om planleggingsoptimaliserings-tillegget skal brukes til hovedplanlegging, går du til **Hovedplanlegging** \> **Oppsett** \> **Parametere for planleggingsoptimalisering**.
+Hvis du vil konfigurere om planleggingsoptimaliserings-tillegget skal brukes til hovedplanlegging, går du til **Hovedplanlegging** \> **Oppsett** \> **Parametere for planleggingsoptimalisering** .
 
 #### <a name="connection-status"></a>Tilkoblingsstatus
 
@@ -86,7 +91,7 @@ Innstillingen for alternativet **Bruk planleggingsoptimalisering** bestemmer hvi
 - **Nei** – den innebygde planleggingsmotoren Supply Chain Management brukes til hovedplanlegging.
 
 > [!NOTE]
-> Hvis eksisterende satsvise planleggingsjobber for den innebygde planleggingsmotoren Supply Chain Management utløses når alternativet **Bruk planleggingsoptimalisering** er satt til **Ja**, vil disse jobbene mislykkes.
+> Hvis eksisterende satsvise planleggingsjobber for den innebygde planleggingsmotoren Supply Chain Management utløses når alternativet **Bruk planleggingsoptimalisering** er satt til **Ja** , vil disse jobbene mislykkes.
 
 ### <a name="integration-with-the-setup"></a>Integrering med oppsettet
 

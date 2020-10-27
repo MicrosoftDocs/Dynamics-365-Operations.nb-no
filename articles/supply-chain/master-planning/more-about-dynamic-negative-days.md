@@ -16,15 +16,15 @@ ms.custom: 72704
 ms.assetid: e7c5d44e-07bc-40b1-a4b3-8ba46483ef9e
 ms.search.region: global
 ms.search.industry: Manufacturing
-ms.author: ''
+ms.author: kamaybac
 ms.search.validFrom: 2019-06-07
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9e9df6fcdbc894741e56f117ee1a5e370db333d9
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 5e64a4bd9e65b62bb782785a363aa2eee5264e3a
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3208783"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3987028"
 ---
 # <a name="negative-days-and-dynamic-negative-days"></a>Negative dager og dynamiske negative dager
 
@@ -74,11 +74,11 @@ Du kan bidra til å forbedre MRP-ytelsen ved å sette antall negative dager til 
 
 ### <a name="case-c-automatically-correlate-the-items-lead-time-to-the-negative-days-time-fence"></a>Tilfelle C: Sette varens leveringstid automatisk i relasjon til horisonten for negative dager
 
-Hvis du vil sette varens leveringstid automatisk i relasjon til horisonten for negative dager, bruker du dynamiske negative dager. Hvis du vil bruke dynamiske negative dager, går du til **Hovedplanlegging \> Oppsett \> Hovedplanleggingsparametere**, og deretter setter du alternativet **Bruk dynamiske negative dager** til **Ja** i **Dekning**-delen i **Generelt**-fanen. MRP ser deretter etter mottak innenfor horisonten for dynamiske negative dager. Denne horisonten beregnes med følgende formel:
+Hvis du vil sette varens leveringstid automatisk i relasjon til horisonten for negative dager, bruker du dynamiske negative dager. Hvis du vil bruke dynamiske negative dager, går du til **Hovedplanlegging \> Oppsett \> Hovedplanleggingsparametere** , og deretter setter du alternativet **Bruk dynamiske negative dager** til **Ja** i **Dekning** -delen i **Generelt** -fanen. MRP ser deretter etter mottak innenfor horisonten for dynamiske negative dager. Denne horisonten beregnes med følgende formel:
 
 Horisont for dynamiske negative dager = Leveringstid for innkjøp + Horisont for negative dager + (Gjeldende dato - Behovsdato)
 
-(Hvis standard ordretype for DemoProduct-varen er **Produksjon** eller **Overføring**, er leveringstiden leveringstiden for **beholdning**.)
+(Hvis standard ordretype for DemoProduct-varen er **Produksjon** eller **Overføring** , er leveringstiden leveringstiden for **beholdning** .)
 
 Når dynamiske negative dager brukes, er horisonten som MRP ser på etter mottak, nå 6 + 2 + 0 = 8 dager. MRP finner den eksisterende bestillingen og låser salgsordren til den. Ingen nye planlagte ordrer opprettes. Kjøretiden for MRP er derfor kortere. Illustrasjonen nedenfor viser nettobehov for DemoProduct-varen.
 
@@ -224,7 +224,7 @@ Det kan være aktuelt å sette de negative dagene til en lang horisont og derett
 - På dag null (1. januar) får du en salgsordre for et antall på 10 av DemoProduct-varen.
 - På dag 10 (10. januar) får du en salgsordre for et antall på 10 av DemoProduct-varen.
 - Det finnes en bestilling for et antall på 10 av DemoProduct-varen på dag 12 (12. januar).
-- Antall negative dager settes til **20**, som er mye større enn varens leveringstid.
+- Antall negative dager settes til **20** , som er mye større enn varens leveringstid.
 
 Illustrasjonen nedenfor viser en grafisk visning av hva som skjer.
 

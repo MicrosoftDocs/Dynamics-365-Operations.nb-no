@@ -15,15 +15,15 @@ ms.search.scope: Core, Operations
 ms.custom: 13611
 ms.assetid: 98dc6b79-1895-45d8-9dd1-2c8a351b58af
 ms.search.region: Global
-ms.author: maertenm
+ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3d1d8952324bb16bcfa6a8b42fc4f157edb75cf1
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 118c4464bf4fc86ecb7eee59bf3611f6f8f2cbaf
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2811329"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3981722"
 ---
 # <a name="electronic-signatures-overview"></a>Oversikt over elektroniske signaturer
 
@@ -65,7 +65,7 @@ En signatar angir elektroniske signaturer for dokumenter og prosesser som krever
 
 Revisoren for elektronisk signatur ser gjennom databaseloggen og gjenomgangsloggen for signatur som er tilgjengelige i databaseloggen. En bruker som tilhører sikkerhetsrollen **IT-sjef** som standard, har tillatelse til å revidere elektroniske signaturer.
 
-Hvis du bruker en annen rolle enn **IT-sjef**, må du passe på at rollen er tilordnet følgende rettigheter:
+Hvis du bruker en annen rolle enn **IT-sjef** , må du passe på at rollen er tilordnet følgende rettigheter:
 
 - Vis feil for elektronisk signatur
 - Vis databaselogg
@@ -81,22 +81,22 @@ Før du signerer dokumenter elektronisk, må hver signatar be om et sertifikat.
 
 Når du ber om et sertifikat, opprettes det en offentlig og en privat nøkkel for deg. Den private nøkkelen krypteres ved hjelp av et passord som bare du kjenner. Når du signerer et dokument elektronisk, verifiseres identiteten din når du angir passordet.
 
-Hvis du vil be om et sertifikat, går du til siden **Alternativer** og kategorien **Kontoer**, og klikker  **Hent sertifikat**.
+Hvis du vil be om et sertifikat, går du til siden **Alternativer** og kategorien **Kontoer** , og klikker  **Hent sertifikat** .
 
 Du må deretter angi og bekreft passordet som du vil bruke for signering. Passordet brukes til å beskytte din private nøkkel og autorisere bruk av sertifikatet ditt. Dette passordet lagres ikke i databasen, og er ikke tilgjengelig for noen andre, selv ikke administrator.
 
-Hvis du glemmer passordet som er knyttet til sertifikatet, må dette sertifikatet tilbakestilles. Hvis du tilbakestiller sertifikatet, berøres ikke dokumentet du signerte med det forrige sertifikatet. Hvis du vil tilbakestille et sertifikat, går du til siden **Alternativer** og klikker **Tilbakestill sertifikat**.
+Hvis du glemmer passordet som er knyttet til sertifikatet, må dette sertifikatet tilbakestilles. Hvis du tilbakestiller sertifikatet, berøres ikke dokumentet du signerte med det forrige sertifikatet. Hvis du vil tilbakestille et sertifikat, går du til siden **Alternativer** og klikker **Tilbakestill sertifikat** .
 
 ### <a name="sign-a-document-electronically"></a>Signere et dokument elektronisk
 
 Siden **Signer dokument** vises når du gjør en endring som krever en elektronisk signatur.
 
 1. Klikk kategorien **Dokument** på siden **Signer dokument** for å gå gjennom endringene i dokumentet.
-2. Velg en årsakskode i kategorien **Signatur**.
+2. Velg en årsakskode i kategorien **Signatur** .
 3. Angi en kommentar hvis det kreves en kommentar.
-4. Hvis bruker-ID-en ikke vises i **Signatar**-feltet, velger du den i listen.
+4. Hvis bruker-ID-en ikke vises i **Signatar** -feltet, velger du den i listen.
 5. Angi plasseringen din, hvis denne informasjonen er nødvendig.
-6. Klikk **OK**.
+6. Klikk **OK** .
 
 ### <a name="sign-for-another-users-changes"></a>Signere for en annen brukers endringer
 
@@ -107,6 +107,6 @@ Noen ganger kan det hende at du vil at en bruker skal signere for en annen bruke
 
 Hvis du vil angi godkjennere, følger du denne fremgangsmåten.
 
-1. På siden **Alternativer** i kategorien **Kontoer**, klikker du **Angi godkjenner**.
+1. På siden **Alternativer** i kategorien **Kontoer** , klikker du **Angi godkjenner** .
 2. I feltet **Bruker-ID for godkjenner** velger du ID-en for brukeren som må signere for en annen brukers endringer.
 3. I feltet **Signer for bruker-ID** velger du ID-en til brukeren som har endringer det må signeres for.

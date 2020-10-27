@@ -14,15 +14,15 @@ ms.reviewer: kfend
 ms.search.scope: Core, Operations
 ms.assetid: ''
 ms.search.region: Global
-ms.author: knelson
+ms.author: kfend
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: a6e6b8d6243c1f7c5831baaee91baf38d51e0c26
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 065981276f124da7b2d6196b5a0e8143e81cc10a
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2770003"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3979094"
 ---
 # <a name="practice-manager-power-bi-content"></a>Power BI-innholdet Praksisleder
 
@@ -36,11 +36,11 @@ Dette emnet beskriver hva som er inkludert i **Praksisleder** for Microsoft Powe
 
 **Praksisleder** for Power BI-innholdet inneholder fem rapportsider: en oversiktsside og fire sider som inneholder detaljer om prosjektkostnader, omsetning, behandling av opptjent verdi og timemål som er delt opp på tvers av forskjellige dimensjoner.
 
-Alle beløp i innholdet vises i systemvalutaen. Du kan definere systemvalutaen på **Systemparametere**-siden.
+Alle beløp i innholdet vises i systemvalutaen. Du kan definere systemvalutaen på **Systemparametere** -siden.
 
 ## <a name="accessing-the-power-bi-content"></a>Tilgang til Power BI-innholdet
 
-Power BI-innholdet **Praksisleder** vises i **Prosjektstyring**-arbeidsområdet.
+Power BI-innholdet **Praksisleder** vises i **Prosjektstyring** -arbeidsområdet.
 
 ## <a name="reports-that-are-included-in-the-power-bi-content"></a>Rapporter som er inkludert i Power BI-innholdet
 
@@ -58,7 +58,7 @@ Diagrammer og fliser for alle disse rapportene kan filtreres og festes på instr
 
 ## <a name="understanding-the-data-model-and-entities"></a>Forstå datamodellen og enheter
 
-Følgende data brukes til å fylle ut rapportsidene i **Praksisleder**-innholdet for Power BI. Disse dataene vises som aggregerte mål som er oppsamlet i enhetslageret. Enhetslageret er en Microsoft SQL Server-database som er optimalisert for analyse. Hvis du vil ha mer informasjon, se [Power BI-integrering med enhetslager](power-bi-integration-entity-store.md).
+Følgende data brukes til å fylle ut rapportsidene i **Praksisleder** -innholdet for Power BI. Disse dataene vises som aggregerte mål som er oppsamlet i enhetslageret. Enhetslageret er en Microsoft SQL Server-database som er optimalisert for analyse. Hvis du vil ha mer informasjon, se [Power BI-integrering med enhetslager](power-bi-integration-entity-store.md).
 
 Delene nedenfor forklarer de samlede målene som brukes i hver enhet.
 

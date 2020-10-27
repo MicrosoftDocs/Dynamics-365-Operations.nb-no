@@ -14,15 +14,15 @@ ms.reviewer: ''
 ms.search.scope: Core, Operations
 ms.custom: ''
 ms.search.region: Global
-ms.author: ''
+ms.author: rhaertle
 ms.search.validFrom: 2020-04-04
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: ea1083a65efb25699b9237c72c081f50e1fb476c
-ms.sourcegitcommit: 5bb36b74935ffe140367fd6ecf956b4857ad12e5
+ms.openlocfilehash: bbac1676d28c7285c19ed48f77426a37ce123a29
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/14/2020
-ms.locfileid: "3802779"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3982900"
 ---
 # <a name="set-up-azure-resources-for-iot-intelligence"></a>Konfigurere Azure-ressurser for IoT-intelligens
 
@@ -39,19 +39,19 @@ Følg denne fremgangsmåten for å opprette en IoT-hub, en Redis-buffer og et n�
 Hvis du vil kontrollere at ID-en for førstepartsappen for Microsoft Dynamics ERP Microservices er i leieren din, gjør du følgende.
 
 1. Logg på Azure-portalen på <https://portal.azure.com>.
-2. Gå til **Azure Active Directory**.
-3. Gå til **Enterprise-apper**.
-4. I feltet **Apptype** velger du **Microsoft-apper**.
-5. I søkefeltet angir du **Microsoft Dynamics ERP Microservices**.
-6. Kontroller at **Microsoft Dynamics ERP Microservices** er i listen. Andre apper har lignende navn. Kontroller derfor at du finner riktig app. App-ID-en er **0cdb527f-a8d1-4bf8-9436-b352c68682b2**.
+2. Gå til **Azure Active Directory** .
+3. Gå til **Enterprise-apper** .
+4. I feltet **Apptype** velger du **Microsoft-apper** .
+5. I søkefeltet angir du **Microsoft Dynamics ERP Microservices** .
+6. Kontroller at **Microsoft Dynamics ERP Microservices** er i listen. Andre apper har lignende navn. Kontroller derfor at du finner riktig app. App-ID-en er **0cdb527f-a8d1-4bf8-9436-b352c68682b2** .
 
     Hvis appen ikke finnes i listen, må du legge den til i leieren din:
 
     1. På verktøylinjen i Azure-portalen velger du knappen for å åpne Azure Cloud Shell.
-    2. Kjør kommandoen **Install-Module AzureAD**. Angi **Y** for å installere modulen.
+    2. Kjør kommandoen **Install-Module AzureAD** . Angi **Y** for å installere modulen.
     3. Kjør kommandoen **Get-InstalledModule -Name "AzureAD"** for å kontrollere at modulen er installert.
     4. Kjør kommandoen **Connect-AzureAD -Confirm** for å kjøre godkjenningen.
-    5. Kjør kommandoen **New-AzureADServicePrincipal -AppId 0cdb527f-a8d1-4bf8-9436-b352c68682b2**.
+    5. Kjør kommandoen **New-AzureADServicePrincipal -AppId 0cdb527f-a8d1-4bf8-9436-b352c68682b2** .
 
     Du kan nå gjenta trinn 1 til og med 6 for å kontrollere at app-ID-en er i leieren.
 
@@ -60,11 +60,11 @@ Hvis du vil kontrollere at ID-en for førstepartsappen for Microsoft Dynamics ER
 Hvis du vil opprette en nøkkelhvelvressurs, gjør du følgende.
 
 1. Opprett eller gå til en ressursgruppe i Azure-portalen.
-2. Velg **Legg til**.
-3. På siden **Ny** i søkefeltet angir du **Nøkkelhvelv**. Velg deretter **Opprett**.
+2. Velg **Legg til** .
+3. På siden **Ny** i søkefeltet angir du **Nøkkelhvelv** . Velg deretter **Opprett** .
 4. På siden **Opprett nøkkelhvelv** i feltet **Navn på nøkkelhvelv** angir du et navn.
-5. Gå gjennom standardverdiene, og velg deretter **Se gjennom + Opprett**.
-6. Velg **Opprett**.
+5. Gå gjennom standardverdiene, og velg deretter **Se gjennom + Opprett** .
+6. Velg **Opprett** .
 
 Nøkkelhvelvet blir opprettet i bakgrunnen.
 
@@ -73,11 +73,11 @@ Nøkkelhvelvet blir opprettet i bakgrunnen.
 Hvis du vil opprette en IoT-ressurs, gjør du følgende.
 
 1. Opprett eller gå til en ressursgruppe.
-2. Velg **Legg til**.
-3. På siden **Ny** i søkefeltet angir du **IoT-hub**. Velg deretter **Opprett**.
+2. Velg **Legg til** .
+3. På siden **Ny** i søkefeltet angir du **IoT-hub** . Velg deretter **Opprett** .
 4. I feltet **Navn på IoT-hub** angir du et navn.
-5. Gå gjennom standardverdiene, og velg deretter **Se gjennom + Opprett**.
-6. Velg **Opprett**.
+5. Gå gjennom standardverdiene, og velg deretter **Se gjennom + Opprett** .
+6. Velg **Opprett** .
 
 IoT-huben blir opprettet i bakgrunnen.
 
@@ -89,10 +89,10 @@ IoT-huben blir opprettet i bakgrunnen.
 Hvis du vil opprette en ressurs for Redis-buffer, gjør du følgende.
 
 1. Opprett eller gå til en ressursgruppe.
-2. Velg **Legg til**.
-3. På siden **Ny** i søkefeltet angir du **Azure-buffer for Redis**. Velg deretter **Opprett**.
+2. Velg **Legg til** .
+3. På siden **Ny** i søkefeltet angir du **Azure-buffer for Redis** . Velg deretter **Opprett** .
 4. I feltet **DNS-navn** angir du et navn.
-5. Gå gjennom standardverdiene, og velg deretter **Opprett**.
+5. Gå gjennom standardverdiene, og velg deretter **Opprett** .
 
 Redis-bufferen blir opprettet i bakgrunnen.
 
@@ -108,7 +108,7 @@ Alle ressursene er nå opprettet.
 Hvis du vil konfigurere IOT-huben, gjør du følgende.
 
 1. Velg IoT-hubressursen i ressursene.
-2. I navigasjonsruten til venstre velger du **Innebygde endepunkter**.
+2. I navigasjonsruten til venstre velger du **Innebygde endepunkter** .
 3. Under **Forbrukergrupper** limer du inn følgende forbrukergrupper. Disse forbrukergruppene samsvarer med de bruksklare scenarioene.
 
     + microsoft.dynamics.iotintelligence-1
@@ -121,12 +121,12 @@ Hvis du vil konfigurere nøkkelhvelvet, gjør du følgende.
 
 1. Velg ressursen for nøkkelhvelv i ressursene.
 2. Velg **Tilgangspolicyer** i navigasjonsruten til venstre.
-3. Velg **Legg til en tilgangspolicy**.
-4. På siden **Legg til tilgangspolicy** velger du **Hent** og **Liste** i feltet **Velg tillatelser**.
-5. Klikk i **Velg oppdragsgiver**.
-6. I dialogboksen **Oppdragsgiver** søke rdu etter og velger **Microsoft Dynamics ERP Microservices**. Velg deretter **Velg**.
-7. Velg **Legg til**.
-8. Velg **Lagre**.
+3. Velg **Legg til en tilgangspolicy** .
+4. På siden **Legg til tilgangspolicy** velger du **Hent** og **Liste** i feltet **Velg tillatelser** .
+5. Klikk i **Velg oppdragsgiver** .
+6. I dialogboksen **Oppdragsgiver** søke rdu etter og velger **Microsoft Dynamics ERP Microservices** . Velg deretter **Velg** .
+7. Velg **Legg til** .
+8. Velg **Lagre** .
 
 Appen har nå tilgang til hemmelighetene i nøkkelhvelvet.
 
@@ -135,28 +135,28 @@ Appen har nå tilgang til hemmelighetene i nøkkelhvelvet.
 Hvis du vil lagre hemmeligheten for tilkoblingsstrengen for IoT-huben, gjør du følgende.
 
 1. Velg IoT-hubressursen i ressursene.
-2. I navigasjonsruten til venstre velger du **Innebygde endepunkter**.
-3. Kopier verdien i feltet **Hub-kompatibelt endepunkt for hendelse**.
+2. I navigasjonsruten til venstre velger du **Innebygde endepunkter** .
+3. Kopier verdien i feltet **Hub-kompatibelt endepunkt for hendelse** .
 4. Gå til ressursen for nøkkelhvelv.
-5. Velg **Hemmeligheter**i navigasjonsruten til venstre.
-6. Velg **Generer/Importer**.
-7. Angi et navn i **Navn**-feltet.
+5. Velg **Hemmeligheter** i navigasjonsruten til venstre.
+6. Velg **Generer/Importer** .
+7. Angi et navn i **Navn** -feltet.
 8. I feltet **Verdi** limer du inn endepunktverdien du kopierte tidligere.
-9. Velg **Opprett**.
+9. Velg **Opprett** .
 
 ### <a name="save-the-redis-cache-connection-string-secret"></a>Lagre hemmeligheten for tilkoblingsstrengen for Redis-bufferen
 
 Hvis du vil lagre hemmeligheten for tilkoblingsstrengen for Redis-bufferen, gjør du følgende.
 
 1. Velg ressursen for Redis-buffer i ressursene.
-2. Velg **Tilgangstaster**.
-3. Kopier verdien i feltet **Primær tilkoblingsstreng**.
+2. Velg **Tilgangstaster** .
+3. Kopier verdien i feltet **Primær tilkoblingsstreng** .
 4. Gå til ressursen for nøkkelhvelv.
-5. Velg **Hemmeligheter**i navigasjonsruten til venstre.
-6. Velg **Generer/Importer**.
-7. Angi et navn i **Navn**-feltet.
+5. Velg **Hemmeligheter** i navigasjonsruten til venstre.
+6. Velg **Generer/Importer** .
+7. Angi et navn i **Navn** -feltet.
 8. I feltet **Verdi** limer du inn tilkoblingsstrengen du kopierte tidligere.
-9. Velg **Opprett**.
+9. Velg **Opprett** .
 
 > [!NOTE]
 > Når du oppdaterer en av tilkoblingsstrengene, må du også oppdatere de hemmelige verdiene.

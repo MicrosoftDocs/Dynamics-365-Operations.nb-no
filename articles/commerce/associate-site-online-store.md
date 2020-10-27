@@ -1,7 +1,7 @@
 ---
 title: Knytte et e-handelsområde til en Internett-kanal
 description: Dette emnet forklarer hvordan du knytter Microsoft Dynamics 365 Commerce-området til én eller flere nettbutikker.
-author: stuharg
+author: bicyclingfool
 manager: AnnBe
 ms.date: 07/02/2020
 ms.topic: article
@@ -15,15 +15,15 @@ ms.search.scope: Core, Operations, Retail
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
-ms.author: bicyclingfool
+ms.author: stuharg
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: af63fc8e32d82cff9e46510da9b30110ac8f0f2c
-ms.sourcegitcommit: adf196c51e2b6f532d99c177b4c6778cea8a2efc
+ms.openlocfilehash: b7c393ec2f716c7057a77d0f3c3c1a9f79ee8c68
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "3533373"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3975374"
 ---
 # <a name="associate-an-e-commerce-site-with-an-online-channel"></a>Knytte et e-handelsområde til en Internett-kanal
 
@@ -34,9 +34,9 @@ Dette emnet forklarer hvordan du knytter Microsoft Dynamics 365 Commerce-område
 
 Når du har klargjort e-handel ved hjelp av portalen for Microsoft Dynamics Lifecycle Services (LCS), er du klar til å opprette ditt første webområde for e-handel. Som en del av opprettelsen av første område, kan du knytte området til en nettbutikk som er opprettet tidligere. Dette trinnet binder området til en Internett-kanal og lar området vise navigasjonshierarkiet, produkter, kategorier, priser, leveringsalternativer og alt annet som du definerte i nettbutikken.
 
-Hvis du vil opprette et nytt område og knytte til en nettbutikk, kan du i LCS velge koblingen for områdets redigeringsmiljø. Velg deretter **Nytt område**på startsiden for områderedigeringsmiljøet. I dialogboksen **Nytt område** må du gi grunnleggende informasjon om området. Hvis du vil ha en fullstendig forklaring på informasjonen du må oppgi, kan du se [Opprette et nytt e-handelsområde](create-ecommerce-site.md).
+Hvis du vil opprette et nytt område og knytte til en nettbutikk, kan du i LCS velge koblingen for områdets redigeringsmiljø. Velg deretter **Nytt område** på startsiden for områderedigeringsmiljøet. I dialogboksen **Nytt område** må du gi grunnleggende informasjon om området. Hvis du vil ha en fullstendig forklaring på informasjonen du må oppgi, kan du se [Opprette et nytt e-handelsområde](create-ecommerce-site.md).
 
-Når området er opprettet, kan du kontrollere at det er tilknyttet nettbutikken din, ved å velge kategorien **Produker**. Du skal se sortimentet av produkter som er tilordnet nettbutikken. Du kan også bruke rullegardinfeltet øverst til venstre på siden for å få tilgang til produktene etter kategori.
+Når området er opprettet, kan du kontrollere at det er tilknyttet nettbutikken din, ved å velge kategorien **Produker** . Du skal se sortimentet av produkter som er tilordnet nettbutikken. Du kan også bruke rullegardinfeltet øverst til venstre på siden for å få tilgang til produktene etter kategori.
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 

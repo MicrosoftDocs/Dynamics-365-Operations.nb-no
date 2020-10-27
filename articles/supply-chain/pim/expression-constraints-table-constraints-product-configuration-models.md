@@ -16,15 +16,15 @@ ms.custom: 53111
 ms.assetid: 5c12b1f2-eb89-4648-a755-de412f2eadd6
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: conradv
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3d85d10113e7cc4e95a25efe7fee6d1f23990694
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: be9d9ae48d21db077928ba7bd5615fea47ea5181
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3208483"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3979834"
 ---
 # <a name="expression-constraints-and-table-constraints-in-product-configuration-models"></a>Uttrykksbegrensninger og tabellbegrensninger i produktkonfigurasjonsmodeller
 
@@ -42,14 +42,14 @@ Tabellbegrensninger viser kombinasjonene av verdier som er tillatt for attributt
 
 ### <a name="example-of-a-table-constraint"></a>Eksempel på tabellbegrensning
 
-Dette eksemplet viser hvordan du kan begrense konfigurasjonen av en høyttaler til bestemte kabinettyper og fronter. Den første tabellen viser kabinettyper og fronter som vanligvis er tilgjengelige for konfigurasjon. Verdiene er definert for attribyttypene **Kabinettyper** og **Frontgrill**.
+Dette eksemplet viser hvordan du kan begrense konfigurasjonen av en høyttaler til bestemte kabinettyper og fronter. Den første tabellen viser kabinettyper og fronter som vanligvis er tilgjengelige for konfigurasjon. Verdiene er definert for attribyttypene **Kabinettyper** og **Frontgrill** .
 
 | Attributtype | Verdier                      |
 |----------------|-----------------------------|
 | Kabinettyper | Svart, eik, Rosewood, hvit |
 | Frontgrill    | Svart, metall, hvit         |
 
-Den neste tabellen viser kombinasjonene som er definert av tabellbegrensningen **Farge og finish**. Ved å bruke denne tabellbegrensningen, kan du konfigurere en høyttaler som har eik-finish og en svart grill, en Rosewood-finish og en hvit grill og så videre.
+Den neste tabellen viser kombinasjonene som er definert av tabellbegrensningen **Farge og finish** . Ved å bruke denne tabellbegrensningen, kan du konfigurere en høyttaler som har eik-finish og en svart grill, en Rosewood-finish og en hvit grill og så videre.
 
 | Ferdig         | Grill                       |
 |----------------|-----------------------------|
@@ -86,7 +86,7 @@ Når du konfigurerer et produkt ved hjelp av følgende begrensningsoppsett, er d
 (Farge == "Svart" & (størrelse == "30" | størrelse == "50")) | (farge == "Rød" & størrelse = "20")
 
 ## <a name="should-i-use-operators-or-infix-notation-when-i-write-expression-constraints"></a>Bør jeg bruke operatorer eller infiksnotasjoner når jeg skriver uttrykksbegrensninger?
-Du kan skrive en uttrykksbegrensning ved å bruke de tilgjengelige prefiksoperatorene eller ved hjelp av en infix-notasjon. For operatorene **Min**, **Maks** og **Abs** kan du ikke bruke en infix-notasjon. Disse operatorene er inkludert som standard i de fleste programmeringsspråk.
+Du kan skrive en uttrykksbegrensning ved å bruke de tilgjengelige prefiksoperatorene eller ved hjelp av en infix-notasjon. For operatorene **Min** , **Maks** og **Abs** kan du ikke bruke en infix-notasjon. Disse operatorene er inkludert som standard i de fleste programmeringsspråk.
 
 ## <a name="what-operators-and-infix-notation-can-i-use-when-i-write-expression-constraints"></a>Hvilke operatorer og infiksnotasjoner kan jeg bruke når jeg skriver uttrykksbegrensninger?
 Tabellen nedenfor viser operatorene og infix-notasjonene som du kan bruke når du skriver en uttrykksrestriksjon for en komponent i en produktkonfigurasjonsmodell. I eksemplene i den første tabellen kan du se hvordan du skriver inn et uttrykk med infiksnotasjon eller operatorer.

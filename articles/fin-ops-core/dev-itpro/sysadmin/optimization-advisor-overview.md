@@ -16,15 +16,15 @@ ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
 ms.search.industry: ''
-ms.author: roxanad
+ms.author: sericks
 ms.search.validFrom: 2017-12-01
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 4bcc6937da0e9f66014d9c00668e0c6790433ba8
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 25ca62466c00b038e0d7e1758fd4f13f776cb2f0
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2811976"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3982558"
 ---
 # <a name="optimization-advisor-overview"></a>Oversikt over optimaliseringsrådgiver
 
@@ -40,11 +40,11 @@ Arbeidsområdet **Optimaliseringsrådgiver** er et verktøy som lar privilegerte
 
 Optimaliseringsrådgiver kjører et sett med regler for anbefalt fremgangsmåte med jevne mellomrom. Et standardsett med regler er tilgjengelig, men brukere kan imidlertid også opprette regler som gjelder for deres tilpasninger, løsninger fra uavhengige programvareleverandører (ISVer) og forretningsdata. Hvis du vil ha mer informasjon om hvordan du oppretter regler, kan du se [Opprette regler for optimaliseringsrådgiver](./create-rules-optimization-advisor.md).
 
-Når det er oppdaget et brudd på en regel, genereres en optimaliseringssalgsmulighet som vises i arbeidsområdet **Optimaliseringsrådgiver**. En bruker kan iverksette passende korrigerende tiltak direkte fra **Optimaliseringsrådgiver**-arbeidsområdet.
+Når det er oppdaget et brudd på en regel, genereres en optimaliseringssalgsmulighet som vises i arbeidsområdet **Optimaliseringsrådgiver** . En bruker kan iverksette passende korrigerende tiltak direkte fra **Optimaliseringsrådgiver** -arbeidsområdet.
 
 Salgsmuligheter kan være firmaspesifikke eller på tvers av firmaer, avhengig av typen oppsett og data som valideres. Salgsmuligheter på tvers av firmaer kan vises fra alle firmaer. Du må først velge firmaet før du kan vise salgsmulighetene for et bestemt firma.
 
-Standard sikkerhetspolicyer gjelder for optimaliseringsmuligheter. Optimaliseringsmuligheter som er knyttet til konfigurasjon av **Lagerstyring**-modulen, er for eksempel bare synlig for brukere som har tilgang til lagerstyring, og kan endre oppsettet.
+Standard sikkerhetspolicyer gjelder for optimaliseringsmuligheter. Optimaliseringsmuligheter som er knyttet til konfigurasjon av **Lagerstyring** -modulen, er for eksempel bare synlig for brukere som har tilgang til lagerstyring, og kan endre oppsettet.
 
 Når du gjør noe med noen optimaliseringsmuligheter, beregner systemet virkningen av salgsmuligheten når det gjelder reduksjonen i kjøretiden for forretningsprosesser. Denne funksjonen er dessverre ikke tilgjengelig for alle optimaliseringsmuligheter.
 
@@ -52,9 +52,9 @@ Hvis du vil vite mer om optimaliseringrådgiveren, kan du se den korte videoen [
 
 ## <a name="optimization-rules"></a>Optimaliseringsregler
 
-Du kan vise den fullstendige listen over regler for Optimaliseringsrådgiver og se hvor ofte reglene blir evaluert, ved å gå til **Systemadministrasjon** &gt; **Periodiske oppgaver** &gt;**Vedlikehold valideringsregel for diagnostikk**. Bare regler som har statusen **Aktiv**, evalueres. Evalueringsfrekvensen kan settes til **Daglig**, **Ukentlig**, **Månedlig** eller **Ikke planlagt**.
+Du kan vise den fullstendige listen over regler for Optimaliseringsrådgiver og se hvor ofte reglene blir evaluert, ved å gå til **Systemadministrasjon** &gt; **Periodiske oppgaver** &gt;**Vedlikehold valideringsregel for diagnostikk** . Bare regler som har statusen **Aktiv** , evalueres. Evalueringsfrekvensen kan settes til **Daglig** , **Ukentlig** , **Månedlig** eller **Ikke planlagt** .
 
-For å starte evalueringen av ikke-planlagte regler eller evaluere periodiske regler på nytt utenfor den forhåndsdefinerte planen, kan du gå til **Systemadministrasjon**&gt; **Periodiske oppgaver** &gt; **Planlegg valideringsregel for diagnostikk**. Velg deretter en valueringsfrekvens i dialogboksen **Validering av diagnoseregel**. Alle regler som har den angitte frekvensen, evalueres på nytt.
+For å starte evalueringen av ikke-planlagte regler eller evaluere periodiske regler på nytt utenfor den forhåndsdefinerte planen, kan du gå til **Systemadministrasjon**&gt; **Periodiske oppgaver** &gt; **Planlegg valideringsregel for diagnostikk** . Velg deretter en valueringsfrekvens i dialogboksen **Validering av diagnoseregel** . Alle regler som har den angitte frekvensen, evalueres på nytt.
 
 Gjeldende sett med regler for optimalisering kan deles inn i følgende kategorier.
 
@@ -62,11 +62,11 @@ Gjeldende sett med regler for optimalisering kan deles inn i følgende kategorie
 
 Oppsettet av Lagerstyring er en komplisert prosess. For å forenkle prosessen er noen regler introdusert for å hjelpe til med validere at oppsettet er riktig. En regel validerer for eksempel oppsettet av lagerplasseringsretningslinjer for faste produktvariantlokasjoner for salgsordrer og overføringsordrer.
 
-I tillegg kontrollerer noen regler om aktiverte funksjoner faktisk brukes. En regel bestemmer for eksempel om du bruker **Hovedplanlegging**-modulen. Hvis regelen bestemmer at du ikke bruker modulen, genereres en optimaliseringsmulighet for å foreslå at du slår av planleggingsprosessene.
+I tillegg kontrollerer noen regler om aktiverte funksjoner faktisk brukes. En regel bestemmer for eksempel om du bruker **Hovedplanlegging** -modulen. Hvis regelen bestemmer at du ikke bruker modulen, genereres en optimaliseringsmulighet for å foreslå at du slår av planleggingsprosessene.
 
 ### <a name="system-configuration"></a>Systemkonfigurasjon
 
-Hvis det ikke er brukt bestemte funksjoner som styres av en konfigurasjonsnøkkel, genereres en optimaliseringsmulighet for å foreslå at du deaktiverer konfigurasjonsnøkkelen. Eksempler på konfigurasjonsnøkler er **faktisk vekt**, **budsjettplanlegging**, **prosjekt** og **liste over godkjente leverandører**.
+Hvis det ikke er brukt bestemte funksjoner som styres av en konfigurasjonsnøkkel, genereres en optimaliseringsmulighet for å foreslå at du deaktiverer konfigurasjonsnøkkelen. Eksempler på konfigurasjonsnøkler er **faktisk vekt** , **budsjettplanlegging** , **prosjekt** og **liste over godkjente leverandører** .
 
 ### <a name="business-data-consistency-and-cleanup"></a>Forretningsdatakonsistens og opprydding
 
@@ -80,15 +80,15 @@ Hvis du ikke kjører enkelte forretningsprosesser i samsvar med anbefalte fremga
 
 ## <a name="optimization-opportunities"></a>Optimaliseringsmuligheter
 
-Hvis du vil vise optimaliseringsmulighetene som genereres under evaluering av optimaliseringdregler, kan du åpne **Optimaliseringsrådgiver**-arbeidsområdet.
+Hvis du vil vise optimaliseringsmulighetene som genereres under evaluering av optimaliseringdregler, kan du åpne **Optimaliseringsrådgiver** -arbeidsområdet.
 
-I dette arbeidsområdet kan du vise mer informasjon om en salgsmulighet ved å velge **Mer informasjon**. Hvis du vil at systemet skal handle og korrigere oppsettet, rydde dataene og så videre, slik at du ikke trenger å åpne de tilsvarende sidene selv, velger du **Utfør handling**.
+I dette arbeidsområdet kan du vise mer informasjon om en salgsmulighet ved å velge **Mer informasjon** . Hvis du vil at systemet skal handle og korrigere oppsettet, rydde dataene og så videre, slik at du ikke trenger å åpne de tilsvarende sidene selv, velger du **Utfør handling** .
 
-Det finnes ingen arbeidsflyt for optimaliseringsmuligheter. Når du har valgt **Utfør handling** eller en navigasjonsbane i dialogboksen **Mer informasjon**, fjernes optimaliseringsmuligheten fra listen. Hvis den korrigerende handlingen ikke løser et problem fullstendig, genereres salgsmuligheten på nytt neste gang regelen evalueres.
+Det finnes ingen arbeidsflyt for optimaliseringsmuligheter. Når du har valgt **Utfør handling** eller en navigasjonsbane i dialogboksen **Mer informasjon** , fjernes optimaliseringsmuligheten fra listen. Hvis den korrigerende handlingen ikke løser et problem fullstendig, genereres salgsmuligheten på nytt neste gang regelen evalueres.
 
-Hvis en salgsmulighet ikke gjelder for din rolle, kan du velge **Skjul i listen**. Selv om regelen bak denne salgsmuligheten utløses på nytt senere, kan du ikke se salgsmuligheten i listen.
+Hvis en salgsmulighet ikke gjelder for din rolle, kan du velge **Skjul i listen** . Selv om regelen bak denne salgsmuligheten utløses på nytt senere, kan du ikke se salgsmuligheten i listen.
 
-Hvis du vil deaktivere evalueringen av bestemte regler, velger du salgsmuligheten som ble generert av regelen, og velg deretter **Deaktiver analyse**.
+Hvis du vil deaktivere evalueringen av bestemte regler, velger du salgsmuligheten som ble generert av regelen, og velg deretter **Deaktiver analyse** .
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 

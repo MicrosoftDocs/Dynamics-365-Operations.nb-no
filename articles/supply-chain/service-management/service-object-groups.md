@@ -15,15 +15,15 @@ ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: ShylaThompson
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ca1ca177fe7048e5ff37a8058d00face4a8166f0
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 4438487fa234cf093b557bca9455717b2cd3ca0b
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3215108"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3979238"
 ---
 # <a name="service-object-groups"></a>Serviceobjektgrupper 
 
@@ -53,13 +53,13 @@ Opprett grupper som du kan tilordne serviceobjekter til. Serviceobjekter er lage
 
 Hvis du vil opprette serviceobjektgrupper, gjør du følgende:
 
-1. Klikk **Servicestyring > Oppsett > Serviceobjekter > Serviceobjektgrupper**.
+1. Klikk **Servicestyring > Oppsett > Serviceobjekter > Serviceobjektgrupper** .
 
 2. Klikk **Ny** for å opprette en ny serviceobjektgruppe.
 
 3. Angi et unikt navn for serviceobjektgruppen, og eventuelt en beskrivelse.
 
-Du kan tilordne serviceobjekter til gruppen ved hjelp av **Serviceobjekter**-skjemaet. 
+Du kan tilordne serviceobjekter til gruppen ved hjelp av **Serviceobjekter** -skjemaet. 
 
 ## <a name="see-also"></a>Se også
 

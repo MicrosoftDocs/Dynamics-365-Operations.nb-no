@@ -15,15 +15,15 @@ ms.search.scope: Core, Operations
 ms.custom: 269384
 ms.assetid: 98a4b517-e606-4036-b55f-1ab248898bdf
 ms.search.region: Global
-ms.author: omulvad
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c56382165b898284f0c9eb21f25430d022f31729
-ms.sourcegitcommit: 54da65a7da0efd4f0d9760c5b14ff785b28751c4
+ms.openlocfilehash: fd194042303797fe41507065d0d7e4df28309cfb
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "3830263"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3987420"
 ---
 # <a name="sales-returns"></a>Salgsreturer
 
@@ -59,7 +59,7 @@ Det finnes to typer ordrereturprosesser: fysisk retur og bare kreditering.
 ## <a name="return-material-authorization"></a>Autorisasjon for returmaterialer
 Behandling av autorisasjonsreturnummeret bygger på funksjonalitet for salgsordren. En ARM registreres som en returordre, som opprettes som en salgsordre, og den kan ha en annen salgsordre tilknyttet kalt en erstatningsordre. Begge salgsordrene er koble til det opprinnelige ARM-nummeret.
 
--   **Returordre** – Hvis du vil registrere en ARM, oppretter du en returordre, som er en ordre som er tilordnet typen, **Returordre**. Eventuelle endringer du gjør i ARM-informasjonen oppdateres automatisk i salgsordren. Returordren vises ikke i listen over salgsordrer før den har statusen **Åpen**. Du bruker ARM til å håndtere ankomst og mottak av returnerte varer, i tillegg til å autorisere en Bare kreditering-disposisjonshandling (se avsnitt **Disposisjonskoder og -handlinger**). Alle andre oppfølgingsprosesser må håndteres i salgsordren.
+-   **Returordre** – Hvis du vil registrere en ARM, oppretter du en returordre, som er en ordre som er tilordnet typen, **Returordre** . Eventuelle endringer du gjør i ARM-informasjonen oppdateres automatisk i salgsordren. Returordren vises ikke i listen over salgsordrer før den har statusen **Åpen** . Du bruker ARM til å håndtere ankomst og mottak av returnerte varer, i tillegg til å autorisere en Bare kreditering-disposisjonshandling (se avsnitt **Disposisjonskoder og -handlinger** ). Alle andre oppfølgingsprosesser må håndteres i salgsordren.
 -   **Erstatningsordre** – Når en erstatningsordre må leveres til kunden, kan ARM-en inneholde en andre tilknyttet salgsordre. Du kan manuelt opprette erstatningsordren, slik at ARM-en støtter umiddelbar levering. Erstatningsordren kan eventuelt opprettes automatisk etter at ankomst, inspeksjon og mottak er fullført for ARM-linjevaren som har en disposisjonskode som angir erstatning. Erstatningsordren har samme funksjonalitet som er knyttet til en salgsordre. Du kan for eksempel bruke den til å konfigurere et tilpasset produkt som erstatningsvaren, opprette en produksjonsordre for å reparere en returnert vare, opprette en bestilling for direktelevering for å sende erstatning fra en leverandør, eller støtte for andre formål.
 
 ## <a name="create-a-return-order"></a>Opprette en returordre
@@ -74,10 +74,10 @@ Når du oppretter en returordre, må informasjonen i tabellen nedenfor inkludere
 | Felt              | beskrivelse                                              | Kommentarer                                                                                                                                                                                                                                                                                                                                        |
 |--------------------|----------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Kundekonto   | En referanse til Kunder-tabellen                       | Du må angi en eksisterende kundekonto.                                                                                                                                                                                                                                                                                                  |
-| Leveringsadresse   | Adressen som varen returneres til                 | Organisasjonens adressen brukes som standard. Hvis et bestemt lager er valgt i hodet, endres leveringsadressen til leveringsadressen til lageret. Du kan endre denne adressen på siden **Returordredetaljer**.                                                                                                  |
+| Leveringsadresse   | Adressen som varen returneres til                 | Organisasjonens adressen brukes som standard. Hvis et bestemt lager er valgt i hodet, endres leveringsadressen til leveringsadressen til lageret. Du kan endre denne adressen på siden **Returordredetaljer** .                                                                                                  |
 | Område/lager     | Stedet eller lageret som mottar det returnerte produktet | Leveringsadressen for returordren bestemmes basert på leveringsadressen til stedet eller lageret.                                                                                                                                                                                                                                 |
-| Autorisasjonsreturnr.         | ID-en som er knyttet til returordren              | ARM-nummeret brukes som en alternativ nøkkel gjennom hele returordreprosessen. ARM-nummeret som tilordnes, er basert på ARM-nummerserien som er definert på siden **Kundeparametere**.                                                                                                                              |
-| Frist           | Den siste datoen som en vare kan returneres               | Standardverdien beregnes som gjeldende dato pluss gyldighetsperioden. Hvis en retur for eksempel er gyldig i bare 90 dager fra datoen da returordren opprettes, og returordren ble opprettet i 1. mai, er verdien i feltet **30. juli**. Gyldighetsperioden er satt på siden **Kundeparametere**. |
+| Autorisasjonsreturnr.         | ID-en som er knyttet til returordren              | ARM-nummeret brukes som en alternativ nøkkel gjennom hele returordreprosessen. ARM-nummeret som tilordnes, er basert på ARM-nummerserien som er definert på siden **Kundeparametere** .                                                                                                                              |
+| Frist           | Den siste datoen som en vare kan returneres               | Standardverdien beregnes som gjeldende dato pluss gyldighetsperioden. Hvis en retur for eksempel er gyldig i bare 90 dager fra datoen da returordren opprettes, og returordren ble opprettet i 1. mai, er verdien i feltet **30. juli** . Gyldighetsperioden er satt på siden **Kundeparametere** . |
 | Kode for returårsak | Årsaken til at kunden returnerer produktet.          | Årsakskoden velges i listen over brukerdefinerte årsakskoder. Du kan oppdatere dette feltet når som helst.                                                                                                                                                                                                                                    |
 
 ### <a name="create-return-order-lines"></a>Opprette returordrelinjer
@@ -85,7 +85,7 @@ Når du oppretter en returordre, må informasjonen i tabellen nedenfor inkludere
 Når du har fullført returhodet, kan du opprette returlinjer ved hjelp av én av følgende metoder:
 
 -   Angi manuelt varedetaljer, antall og annen informasjon for hver returlinje.
--   Opprett en returlinje ved hjelp av funksjonen **Søk etter salgsordre**. Vi anbefaler at du bruker denne funksjonen når du oppretter en returordre. Funksjonen **Søk etter salgsordre** oppretter en referanse fra returlinjen tilbake til den fakturerte salgsordrelinjen, og henter linjedetaljer som varenummer, antall, pris, rabatt og kostnadsverdier fra salgslinjen. Referansen bidrar til å garantere at når produktet returneres til selskapet, blir det verdisatt til samme enhetskostnad som den ble solgt for. Referansen validerer også at returordrer ikke opprettes for et antall som er større enn antallet som ble solgt på fakturaen.
+-   Opprett en returlinje ved hjelp av funksjonen **Søk etter salgsordre** . Vi anbefaler at du bruker denne funksjonen når du oppretter en returordre. Funksjonen **Søk etter salgsordre** oppretter en referanse fra returlinjen tilbake til den fakturerte salgsordrelinjen, og henter linjedetaljer som varenummer, antall, pris, rabatt og kostnadsverdier fra salgslinjen. Referansen bidrar til å garantere at når produktet returneres til selskapet, blir det verdisatt til samme enhetskostnad som den ble solgt for. Referansen validerer også at returordrer ikke opprettes for et antall som er større enn antallet som ble solgt på fakturaen.
 
 >Obs! Returlinjer som har en referanse til en salgsordre behandles som korrigeringer eller tilbakeføringer av salget. Hvis du vil ha mer informasjon, kan du se "Postere til finans" senere i dette emnet.
 
@@ -186,7 +186,7 @@ Prosessen har flere andre variasjoner som ikke omtales i dette emnet. Her er noe
 
 -   Ikke bruk listen **Ankomstoversikt** til å opprette en ankomstjournal. Opprett i stedet ankomstjournalen manuelt. Returordrer vil ha **Salgsordre** som referanse.
 -   Hvis du bruker lagerstyring, genererer du palltransporter. Returlinjen vil ha statusen **Ankommet** under palltransporten.
--   Registrer mottaket av den returnerte varen direkte fra returordrelinje, ved hjelp av **Registrering**-funksjonen.
+-   Registrer mottaket av den returnerte varen direkte fra returordrelinje, ved hjelp av **Registrering** -funksjonen.
 
 Under ankomstprosessen integreres returer med den generelle prosessen for lagerankomst. Ankomstprosessen støtter også oppretting av karanteneordrer for returnerte varer som må gjennomgå en egen undersøkelse.
 
@@ -197,19 +197,19 @@ Siden **Ankomstoversikt** viser en liste over alle planlagte innkommende ankomst
 
 ### <a name="edit-the-arrival-journal"></a>Redigere ankomstjournalen
 
-Ved å sette alternativet **Karantenestyring** til **Ja**, kan du opprette en karanteneordre for returlinjen. Hvis en linje er sendt til karantene for inspeksjon, kan du ikke angi en disposisjonskode. 
+Ved å sette alternativet **Karantenestyring** til **Ja** , kan du opprette en karanteneordre for returlinjen. Hvis en linje er sendt til karantene for inspeksjon, kan du ikke angi en disposisjonskode. 
  
 Hvis du setter alternativet **Karantenestyring** til **Ja** i varens lagermodellgruppe, vil alternativet **Karantenestyring** på siden **Journallinjer** bli merket for ankomstjournallinjer og kan ikke endres. Hvis linjen sendes til karantene, må du angi riktig karantenelager. 
 
-Hvis ankomstlinjen ikke sendes til inspeksjon, må lagerankomstassistenten angi disposisjonskoden direkte på ankomstjournallinjen og deretter postere ankomstjournalen. Hvis den samme disposisjonskoden ikke skal tilordnes hele antallet i returlinjen, eller hvis hele antallet i linjen ikke er mottatt, må du dele linjen. Når du deler en ankomstjournallinje, deler du også returlinjen (**SalesLine**) og oppretter en ny parti-ID. Du kan dele linjen ved å redusere antallet i ankomstjournallinjen. Når journalen posteres, opprettes en ny returlinje som har statusen **Forventet** for restantallet. Du kan også dele linjen ved å klikke på **Funksjoner** &gt; **Del**.
+Hvis ankomstlinjen ikke sendes til inspeksjon, må lagerankomstassistenten angi disposisjonskoden direkte på ankomstjournallinjen og deretter postere ankomstjournalen. Hvis den samme disposisjonskoden ikke skal tilordnes hele antallet i returlinjen, eller hvis hele antallet i linjen ikke er mottatt, må du dele linjen. Når du deler en ankomstjournallinje, deler du også returlinjen ( **SalesLine** ) og oppretter en ny parti-ID. Du kan dele linjen ved å redusere antallet i ankomstjournallinjen. Når journalen posteres, opprettes en ny returlinje som har statusen **Forventet** for restantallet. Du kan også dele linjen ved å klikke på **Funksjoner** &gt; **Del** .
 
 ### <a name="process-the-quarantine-order"></a>Behandle karanteneordren
 
 Hvis de returnerte produktene sendes til inspeksjon i karantenelageret, fullføres eventuell tilleggsbehandling i en karanteneordre. Det opprettes én karanteneordre for hver ankomstlinje som sendes til karantene. Disposisjonskoden angir resultatet av inspeksjonsprosessen. 
 
-Du kan dele en karanteneordre på samme måte som du kan dele ankomstjournalen. Hvis du deler karanteneordren, fører det til en tilsvarende deling av returlinjen. Når disposisjonskoden er angitt, må du fullføre karanteneordren ved hjelp av funksjonen **Slutt** eller **Ferdigmeld**. Hvis du velger **Ferdigmeld**, opprettes en ny ankomst i den angitte lageret. Du kan deretter behandle denne ankomsten ved hjelp av siden **Ankomstoversikt**. 
+Du kan dele en karanteneordre på samme måte som du kan dele ankomstjournalen. Hvis du deler karanteneordren, fører det til en tilsvarende deling av returlinjen. Når disposisjonskoden er angitt, må du fullføre karanteneordren ved hjelp av funksjonen **Slutt** eller **Ferdigmeld** . Hvis du velger **Ferdigmeld** , opprettes en ny ankomst i den angitte lageret. Du kan deretter behandle denne ankomsten ved hjelp av siden **Ankomstoversikt** . 
 
-Hvis ankomsten stammer fra en karanteneordre, kan du ikke endre disposisjonskoden som tilordnes under inspeksjon. Hvis du fullfører karanteneordren ved hjelp av **Slutt**-funksjonen, registreres partiet automatisk. Noen ganger kan en vare sendes tilbake fra karantene til forsendelses- og mottaksavdelingen. Karantenekontrolløren vet for eksempel ikke hvor du vil lagre varen på lageret. I slike tilfeller må den tilsvarende følgeseddelen oppdateres for riktig å registrere og gjøre noe med disposisjonskoden som er angitt på grunn av karantenen. 
+Hvis ankomsten stammer fra en karanteneordre, kan du ikke endre disposisjonskoden som tilordnes under inspeksjon. Hvis du fullfører karanteneordren ved hjelp av **Slutt** -funksjonen, registreres partiet automatisk. Noen ganger kan en vare sendes tilbake fra karantene til forsendelses- og mottaksavdelingen. Karantenekontrolløren vet for eksempel ikke hvor du vil lagre varen på lageret. I slike tilfeller må den tilsvarende følgeseddelen oppdateres for riktig å registrere og gjøre noe med disposisjonskoden som er angitt på grunn av karantenen. 
 
 Bekreftelse av mottak kan sendes til kunden når returlinjen er registrert. Rapporten **Returbekreftelse** ligner på returordredokumentet. Rapporten **Returbekreftelse** blir ikke journalført eller registrert i systemet, og det er ikke et obligatorisk trinn i returordreprosessen.
 
@@ -233,30 +233,30 @@ Hvis du leverer en erstatningsvare til kunden og du bruker disposisjonshandlinge
 
 ![Erstatningsprosess når en disposisjonskode brukes](./media/SalesReturn05.png)
 
-Erstatningsvaren sendes ved hjelp av en uavhengig salgsordre, erstatningsordren. Denne salgsordren blir opprettet når følgeseddelen for returordren genereres. Ordrehodet bruker informasjon fra kunden som det refereres til i returordrehodet. Linjeinformasjonen som samles inn fra informasjonen som er angitt på siden **Erstatningsvare**. Siden **Erstatningsvare** må fylles ut for linjer som har disposisjonhandlinger som begynner med ordet "erstatt". Verken antallet eller identiteten til erstatningsvaren er imidlertid validert eller begrenset. Denne virkemåten tillater tilfeller der kunden ønsker den samme varen, men i en annen konfigurasjon eller størrelse, og også tilfeller der kundene vil ha et helt annen vare. Som standard angis en identisk vare på siden **Erstatningsvare**. Du kan imidlertid velge en annen vare, forutsatt at funksjonen er definert. 
+Erstatningsvaren sendes ved hjelp av en uavhengig salgsordre, erstatningsordren. Denne salgsordren blir opprettet når følgeseddelen for returordren genereres. Ordrehodet bruker informasjon fra kunden som det refereres til i returordrehodet. Linjeinformasjonen som samles inn fra informasjonen som er angitt på siden **Erstatningsvare** . Siden **Erstatningsvare** må fylles ut for linjer som har disposisjonhandlinger som begynner med ordet "erstatt". Verken antallet eller identiteten til erstatningsvaren er imidlertid validert eller begrenset. Denne virkemåten tillater tilfeller der kunden ønsker den samme varen, men i en annen konfigurasjon eller størrelse, og også tilfeller der kundene vil ha et helt annen vare. Som standard angis en identisk vare på siden **Erstatningsvare** . Du kan imidlertid velge en annen vare, forutsatt at funksjonen er definert. 
 
 >Obs! Du kan redigere og slette erstatningssalgsordren etter at den er opprettet.
 
 ## <a name="generate-a-packing-slip"></a>Generere en følgeseddel
 Før returnerte varer kan mottas til lager, må du oppdatere følgeseddelen for ordren som varene tilhører. På samme måte som fakturaoppdateringsprosessen er en oppdatering av finanstransaksjonen, er oppdateringsprosessen for følgeseddelen den fysiske oppdateringen av lagerposten. Denne prosessen utfører med andre ord endringene i beholdningen. Når det gjelder returer, implementeres trinnene som er tilordnet til disposisjonshandlingen, når følgeseddelen oppdateres Når du genererer følgeseddelen, oppstår følgende hendelser:
 
--   I lageret brukes standardprosessen til å utføre et fysisk mottak. Finansposteringer genereres hvis lagermodellgruppen (**Poster aktuell beholdning**) og kundeparameterne (**Poster følgeseddel i finans**) er angitt riktig.
+-   I lageret brukes standardprosessen til å utføre et fysisk mottak. Finansposteringer genereres hvis lagermodellgruppen ( **Poster aktuell beholdning** ) og kundeparameterne ( **Poster følgeseddel i finans** ) er angitt riktig.
 -   Varer som er merket med en disposisjonshandling som inneholder ordet "svinn", kasseres, og lagertap posteres til finans.
 -   Varer som er merket med disposisjonshandlingen **Returner til kunde** er mottatt og levert til kunden. Disse varene har ingen nettoinnvirkning på beholdningen.
--   Det opprettes en erstatningssalgsordre. Denne salgsordren er basert på informasjon på siden **Erstatningsvare**.
+-   Det opprettes en erstatningssalgsordre. Denne salgsordren er basert på informasjon på siden **Erstatningsvare** .
 
-Du kan generere følgeseddelen bare for linjer som har returstatusen **Registrert**, og bare for hele antallet i returlinjen. Hvis flere linjer på returordren har statusen **Registrert**, kan du generere følgeseddelen for et delsett av linjene ved å slette de andre linjene fra siden **Poster følgeseddel**. 
+Du kan generere følgeseddelen bare for linjer som har returstatusen **Registrert** , og bare for hele antallet i returlinjen. Hvis flere linjer på returordren har statusen **Registrert** , kan du generere følgeseddelen for et delsett av linjene ved å slette de andre linjene fra siden **Poster følgeseddel** . 
 
 Delvise returer defineres som returordrelinjer, ikke som returordreforsendelser. Det vil si at hvis du mottar hele antallet som er angitt på én returordrelinje, men ikke mottar noe fra de andre linjene i returordren, er leveringen ikke en delvis levering. Hvis en returordrelinje krever at ti enheter av en vare returneres, men du bare mottar fire enheter, er dette imidlertid en delvis levering. Hvis ikke alle forventede returnerte varer har ankommet, kan du sette forsendelsen til side og vente til resten av det returnerte antallet ankommer. Du kan også registrere og postere det delvise antallet. Som en del av prosessen for postering av følgeseddelen kan du tilordne følgeseddelens referansenummer fra kundens forsendelsesdokumenter, til ordrelinjene. Denne tilknytningen er valgfri og er bare til referanseformål. Det opprettes ikke transaksjonsoppdateringer. 
 
 Du kan som regel hoppe over følgeseddelprosessen og gå direkte til fakturering. I slike tilfeller vil trinnene som du ville ha utført under generering av følgeseddelen, bli fullført under fakturering.
 
 ## <a name="generate-an-invoice"></a>Generer en faktura
-Selv om siden **Returordre** inneholder informasjonen og handlingene som kreves for å håndtere de spesielle logistikkdelene av returordren, må du bruke siden **Salgsordre** for å fullføre faktureringsprosessen. Organisasjonen kan deretter fakturere returordrer og salgsordrer samtidig, og den samme personen kan fullføre faktureringsprosessen etter behov. Hvis du vil vise returordren fra siden **Salgsordre**, klikker du på koblingen for salgsordrenummeret for å åpne den tilknyttede salgsordren. Du kan også finne returordren på siden **Alle salgsordrer**. Returordrer er salgsordrer som har ordretypen **Returordre**.
+Selv om siden **Returordre** inneholder informasjonen og handlingene som kreves for å håndtere de spesielle logistikkdelene av returordren, må du bruke siden **Salgsordre** for å fullføre faktureringsprosessen. Organisasjonen kan deretter fakturere returordrer og salgsordrer samtidig, og den samme personen kan fullføre faktureringsprosessen etter behov. Hvis du vil vise returordren fra siden **Salgsordre** , klikker du på koblingen for salgsordrenummeret for å åpne den tilknyttede salgsordren. Du kan også finne returordren på siden **Alle salgsordrer** . Returordrer er salgsordrer som har ordretypen **Returordre** .
 
 ### <a name="credit-correction"></a>Kreditrettelse
 
-Som en del av faktureringsprosessen, kan du kontrollere at eventuelle tilleggsgebyrer er riktige. Hvis du vil at finansposteringer skal bli korrigeringer (Storno), bør du vurdere å bruke alternativet **Kreditrettelse** i kategorien **Annet** på siden **Postering av faktura**, når du bokfører fakturaen eller kreditnotaen. 
+Som en del av faktureringsprosessen, kan du kontrollere at eventuelle tilleggsgebyrer er riktige. Hvis du vil at finansposteringer skal bli korrigeringer (Storno), bør du vurdere å bruke alternativet **Kreditrettelse** i kategorien **Annet** på siden **Postering av faktura** , når du bokfører fakturaen eller kreditnotaen. 
 >Obs! Som standard er alternativet **Kreditrettelse** aktivert hvis alternativet **Kreditnota som rettelse** på siden **Kundeparametere** har blitt aktivert. Vi anbefaler imidlertid at du ikke posterer returer med Storno.
 
 ## <a name="create-intercompany-return-orders"></a>Opprette konserninterne returordrer
@@ -281,7 +281,7 @@ Dette scenariet omfatter to selskaper i samme organisasjon, som vist i illustras
 
 ![Enkel konsernintern retur](./media/SalesReturn07.png)
 
-Ordrekjeden kan opprettes når det opprettes en bestillingsretur for leverandøren i det kjøpende selskapet eller en ordreretur fra kunden som er opprettet i det selgende selskapet. Den tilsvarende ordren opprettes i det andre selskapet, og sørger for at hode- og linjeinformasjon på leverandørreturordren gjenspeiler innstillingene på kundereturordren. Returordren som er opprettet, kan inkludere eller utelukke referansen (**Søk etter salgsordre**) til en eksisterende kundefaktura. Følgesedler og fakturaer for de to bestillingene kan behandles enkeltvis. Du behøver for eksempel ikke generere en følgeseddel for leverandørreturordren før du genererer følgeseddelen for kundereturordren.
+Ordrekjeden kan opprettes når det opprettes en bestillingsretur for leverandøren i det kjøpende selskapet eller en ordreretur fra kunden som er opprettet i det selgende selskapet. Den tilsvarende ordren opprettes i det andre selskapet, og sørger for at hode- og linjeinformasjon på leverandørreturordren gjenspeiler innstillingene på kundereturordren. Returordren som er opprettet, kan inkludere eller utelukke referansen ( **Søk etter salgsordre** ) til en eksisterende kundefaktura. Følgesedler og fakturaer for de to bestillingene kan behandles enkeltvis. Du behøver for eksempel ikke generere en følgeseddel for leverandørreturordren før du genererer følgeseddelen for kundereturordren.
 
 ### <a name="direct-delivery-shipment-returns-among-three-parties"></a>Leveringsreturer for direktelevering mellom tre parter
 
@@ -291,19 +291,19 @@ Dette scenariet kan opprettes hvis et tidligere salg av typen **Direktelevering*
 
 Hvis kunden Ekstern vil returnere produktene, opprettes en returordre (RMA02) for kunden i selskapet CompBuy. Hvis du vil opprette den konserninterne kjeden, må returordren merkes for direktelevering. Når du bruker funksjonen **Søk etter salgsordre** til å velge kundefakturaen skal returneres, opprettes en konsernintern ordrekjede som består av følgende dokumenter:
 
--   **Opprinnelig returordre**: RMA02 (selskapet CompBuy)
--   **Bestilling**: PO02 (selskapet CompBuy)
--   **Konsernintern returordre**: ARM\_00032 (selskapet CompSell)
+-   **Opprinnelig returordre** : RMA02 (selskapet CompBuy)
+-   **Bestilling** : PO02 (selskapet CompBuy)
+-   **Konsernintern returordre** : ARM\_00032 (selskapet CompSell)
 
 Når den konserninterne kjeden for direktelevering er opprettet, må all fysiske håndtering og behandling av returnerer være i konteksten for den konserninterne returordren, ARM\_00032 i selskapet CompSell. Produktene kan ikke mottas i selskapet CompBuy. Når en disposisjonskode knyttes til den konserninterne returordren, synkroniseres den med den opprinnelige returordren for å tillate riktig fakturering av den opprinnelige ordren.
 
 ## <a name="post-to-the-ledger"></a>Postere til finans
 Finansposteringer som genereres når returordren faktureres, påvirkes av noen viktige innstillinger og parametere:
 
--   **Returkostpris** – For andre lagermodeller enn **Standardkost** bestemmer **Returkostpris**-parameteren kostnadene for varen når den godtas tilbake til beholdningen eller kasseres. Hvis du vil beregne en riktig verdisetting av beholdningen, er det viktig at du angir **Returkostpris**-parameter på riktig måte. Hvis du bruker funksjonen **Søk etter salgsordre** til å opprette en returordrelinje som har en referanse til en kundefaktura, er **Returkostpris**-verdien lik kostprisen for varen som selges. Hvis ikke, kommer kostprisverdien fra vareoppsettet eller kan angis manuelt.
--   **Kreditrettelse/Storno** – Parameteren **Kreditrettelse** på siden **Postering av faktura**, bestemmer om posteringer skal registreres som positive (debet/kredit) posteringer, eller som korrigerende, negative poster.
+-   **Returkostpris** – For andre lagermodeller enn **Standardkost** bestemmer **Returkostpris** -parameteren kostnadene for varen når den godtas tilbake til beholdningen eller kasseres. Hvis du vil beregne en riktig verdisetting av beholdningen, er det viktig at du angir **Returkostpris** -parameter på riktig måte. Hvis du bruker funksjonen **Søk etter salgsordre** til å opprette en returordrelinje som har en referanse til en kundefaktura, er **Returkostpris** -verdien lik kostprisen for varen som selges. Hvis ikke, kommer kostprisverdien fra vareoppsettet eller kan angis manuelt.
+-   **Kreditrettelse/Storno** – Parameteren **Kreditrettelse** på siden **Postering av faktura** , bestemmer om posteringer skal registreres som positive (debet/kredit) posteringer, eller som korrigerende, negative poster.
 
-I eksemplene nedenfor representeres returkostprisen som **Lagerkostpris**.
+I eksemplene nedenfor representeres returkostprisen som **Lagerkostpris** .
 
 ### <a name="example-1-the-return-order-doesnt-reference-a-customer-invoice"></a>Eksempel 1: Returordren refererer ikke til en kundefaktura
 
@@ -311,11 +311,11 @@ Returordren refererer ikke til en kundefaktura. Den returnerte varen krediteres.
 
 ![Returordre refererer ikke til en kundefaktura](./media/SalesReturn09.png)  
 
->Obs! Hovedprisen for varen brukes som standardverdi for **Returkostpris**-parameteren. Standardprisen er forskjellig fra kostprisen ved lageravgang. Derfor er implikasjonen at et tap på 3 er påløpt. I tillegg inneholder ikke returordren rabatten som ble gitt til kunden i salgsordren. Derfor oppstår det en overskytende kreditering.
+>Obs! Hovedprisen for varen brukes som standardverdi for **Returkostpris** -parameteren. Standardprisen er forskjellig fra kostprisen ved lageravgang. Derfor er implikasjonen at et tap på 3 er påløpt. I tillegg inneholder ikke returordren rabatten som ble gitt til kunden i salgsordren. Derfor oppstår det en overskytende kreditering.
 
 ### <a name="example-2-credit-correction-is-selected-for-the-return-order"></a>Eksempel 2: Kreditrettelse velges for returordren
 
-Eksempel 2 er den samme som eksempel 1, men **Kreditrettelse**-parameteren velges når returordrefakturaen genereres.  
+Eksempel 2 er den samme som eksempel 1, men **Kreditrettelse** -parameteren velges når returordrefakturaen genereres.  
 
 ![Returordre der krediteringskorrigering er valg  ](./media/SalesReturn10.png)  
 
@@ -323,7 +323,7 @@ Eksempel 2 er den samme som eksempel 1, men **Kreditrettelse**-parameteren velge
 
 ### <a name="example-3-the-return-order-line-is-created-by-using-the-find-sales-order-function"></a>Eksempel 3: Returordrelinjen opprettes ved hjelp av funksjonen Søk etter salgsordre.
 
-I dette eksemplet opprettes returordrelinjen ved hjelp av funksjonen **Søk etter salgsordre**. **Kreditrettelse**-parameteren velges ikke når fakturaen opprettes.  
+I dette eksemplet opprettes returordrelinjen ved hjelp av funksjonen **Søk etter salgsordre** . **Kreditrettelse** -parameteren velges ikke når fakturaen opprettes.  
 
 ![Returordrelinje som opprettes ved hjelp av funksjonen Søk etter salgsordre  ](./media/SalesReturn11.png)  
 

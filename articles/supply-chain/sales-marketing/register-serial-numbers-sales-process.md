@@ -16,15 +16,15 @@ ms.custom: 28931
 ms.assetid: 5d39630f-607e-492b-8c1e-790ca53effa0
 ms.search.region: Global
 ms.search.industry: Distribution
-ms.author: omulvad
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2f0c5260524bf0d452e07ffaecc241b0b2185237
-ms.sourcegitcommit: 8cbaeb6443ce47a4c4bc02b5e1a1212eb0056b38
+ms.openlocfilehash: 989dcca499f6d27ae9680f184978d5500397fa57
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "3829759"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3982191"
 ---
 # <a name="working-with-serialized-items"></a>Arbeide med serialiserte varer
 
@@ -34,9 +34,9 @@ Dette emnet forklarer hvordan du kan registrere serienumre på følgesedler elle
 
 Mange firmaer vil bare ha serienumre for service- og garantiformål, og trenger ikke vedlikeholde serienumrene på lageret fra mottak til avgang. I slike tilfeller kan du registrere serienumre på følgesedler eller fakturaer når varer selges. Hvis en vare returneres til deg senere, kan du spore den til en faktura for å finne ut om du solgte produktet, og om tjenesten eller garantiforpliktelsene er gyldige.
 
-Du må aktivere serienumre for salgsprosessen ved å merke av for **Aktiv i salgsprosess** på siden **Sporingsdimensjonsgrupper**. Følgende hendelser forekommer deretter i Supply Chain Management:
+Du må aktivere serienumre for salgsprosessen ved å merke av for **Aktiv i salgsprosess** på siden **Sporingsdimensjonsgrupper** . Følgende hendelser forekommer deretter i Supply Chain Management:
 -   På hurtigfanen **Serienumre** er **Serienummerkontroll** avmerket. Når det er merket av for dette alternativet, må du registrere ett serienummer for hver vare på følgeseddelen eller fakturaen.
--   Alle valg i sporingsdimensjonsgruppen for serienumre fjernes, bortsett fra alternativet **Tom avgang tillatt**. Du kan merke av for **Tom avgang tillatt** for å overstyre serienummerkontrollen og tillate at produkter pakkes og faktureres uten at serienumre registreres.
+-   Alle valg i sporingsdimensjonsgruppen for serienumre fjernes, bortsett fra alternativet **Tom avgang tillatt** . Du kan merke av for **Tom avgang tillatt** for å overstyre serienummerkontrollen og tillate at produkter pakkes og faktureres uten at serienumre registreres.
 
 ## <a name="when-do-i-register-serial-numbers-during-the-sales-process"></a>Når registrerer jeg serienumre i salgsprosessen?
 Du kan registrere serienumre på følgeseddelen for en salgsordre eller på fakturaen. Når du forbereder en faktura for en serialisert vare som ble sendt med en følgeseddel, kan du velge hvilke av serienumrene som skal faktureres, på følgeseddelen. Antallet registrerte serienumre, må ikke overskride antallet varer som ble sendt. Hvis du oppretter en delvis faktura, kan du velge færre serialiserte varer enn det som er registrert på følgeseddelen. Når du skriver ut en følgeseddel eller faktura, inkluderes serienumrene som ble registrert.
@@ -45,13 +45,13 @@ Du kan registrere serienumre på følgeseddelen for en salgsordre eller på fakt
 Du kan skanne eller skrive inn serienumre. Når du bruker en skanner, avgjør søkemodusen om serienumrene legges til eller fjernes fra listen over serienumre på fakturaen eller følgeseddelen. Hvis du vil skanne serienumre ved for eksempel å bruke en håndholdt strekkodeskanner, konfigurerer du skanneren slik at den sender en Angi- eller TAB-kommando etter serienummeret. Denne kommandoen indikerer slutten av dataflyten. Hvis ikke, må du trykke Enter eller TAB på tastaturet etter du har skannet hvert serienummer.
 
 ## <a name="if-i-enable-serial-numbers-for-the-sales-process-do-i-have-to-register-all-serial-numbers-for-all-items"></a>Hvis jeg aktiverer serienumre for salgsprosessen, må jeg registrere alle serienumre for alle varer?
-Oppsettet for sporingsdimensjonsgruppen som er tilordnet til produktet, avgjør om serienumre for alle varer på en følgeseddel eller faktura må registreres. Når du aktiverer serienumre for salgsprosessen, blir det automatisk merket av for **Serienummerkontroll**. Du må deretter registrere ett serienummer eller registrere en tom registrering for et uleselig nummer, for hvert element på følgeseddelen eller fakturaen. Hvis du ikke vil kreve et serienummer for hver vare, merker du av for **Tom avgang tillatt** i sporingsdimensjonsgruppen som er tilordnet varen. Deretter kan du registrere færre serienumre enn antallet varer som leveres. Hvis du registrerer flere serienumre enn vareantallet som skal sendes, kan du ikke postere følgeseddelen eller fakturaen.
+Oppsettet for sporingsdimensjonsgruppen som er tilordnet til produktet, avgjør om serienumre for alle varer på en følgeseddel eller faktura må registreres. Når du aktiverer serienumre for salgsprosessen, blir det automatisk merket av for **Serienummerkontroll** . Du må deretter registrere ett serienummer eller registrere en tom registrering for et uleselig nummer, for hvert element på følgeseddelen eller fakturaen. Hvis du ikke vil kreve et serienummer for hver vare, merker du av for **Tom avgang tillatt** i sporingsdimensjonsgruppen som er tilordnet varen. Deretter kan du registrere færre serienumre enn antallet varer som leveres. Hvis du registrerer flere serienumre enn vareantallet som skal sendes, kan du ikke postere følgeseddelen eller fakturaen.
 
 ## <a name="can-i-register-serial-numbers-for-partial-invoices-and-partial-shipments"></a>Kan jeg registrere serienumre for delvise fakturaer og delvise forsendelser?
 Du kan opprette delvise fakturaer og følgesedler for salgsordrer og registrere bare serienumrene for varene disse fakturaene og følgesedlene inneholder. Hvis du vil opprette en delvis faktura og har flere følgesedler for salgsordren, kan du ta med serienumre fra flere følgesedler. Det kan imidlertid bare være én følgeseddel som ikke inkluderer alle serienumrene. Hvis du har tre pakksedler og alle inneholder to serialiserte varer, kan du for eksempel ikke opprette en delfaktura for én vare fra hver følgeseddel.
 
 ## <a name="what-do-i-do-when-a-serial-number-isnt-readable"></a>Hva gjør jeg når et serienummer ikke er lesbart?
-Hvis et serienummer ikke kan leses eller skannes, kan du opprette en tom linje for varen ved å klikke **Ikke lesbart** på **Serienumre**-siden. Hvis serienummeret blir tilgjengelig senere, kan du oppdatere fakturaen eller følgeseddelen. Hvis du vil ha mer informasjon, kan du se neste del Kan jeg rette eller endre serienumrene jeg har registrert for en salgsordre?
+Hvis et serienummer ikke kan leses eller skannes, kan du opprette en tom linje for varen ved å klikke **Ikke lesbart** på **Serienumre** -siden. Hvis serienummeret blir tilgjengelig senere, kan du oppdatere fakturaen eller følgeseddelen. Hvis du vil ha mer informasjon, kan du se neste del Kan jeg rette eller endre serienumrene jeg har registrert for en salgsordre?
 
 ## <a name="can-i-correct-or-change-the-serial-numbers-that-i-have-registered-for-a-sales-order"></a>Kan jeg rette eller endre serienumrene jeg har registrert for en salgsordre?
 Ja, du kan korrigere serienumre hvis følgende betingelser er oppfylt:

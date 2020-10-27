@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6710dcb1cb53e7221b03b35ceee5ac8e055b6dd2
-ms.sourcegitcommit: 175f9394021322c685c5b37317c2f649c81a731a
+ms.openlocfilehash: 45a63ab0f5baadf6bef646224b3f0bf5327ee923
+ms.sourcegitcommit: 4a32634690a741535f3f4babfd753f7c227ad6fe
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "3826412"
+ms.lasthandoff: 10/05/2020
+ms.locfileid: "3958747"
 ---
 # <a name="visual-scheduling-for-lean-manufacturing"></a>Visuell planlegging for lean manufacturing
 
@@ -42,7 +42,7 @@ En kanban-jobb kan bestå av én eller flere kanban-jobber. Det finnes to typer 
 -   Prosess
 -   Overføring
 
-Du kan planlegge bare jobber av **Prosess**-typen. Kanban-jobben og egenskapene, for eksempel aktivitetstiden, defineres i kanban-flyten for produksjon. I kanban-flyten for produksjon blir kanban-jobben også tilordnet til en arbeidscelle. Den daglige kapasiteten for arbeidscellen beregnes basert på arbeidscellekapasiteten som er angitt i ressursgruppen. Den justeres etter daglig arbeidstid i den tilknyttede kalenderen. Når en kanban-jobben er planlagt, laster jobben kapasiteten for arbeidscellen. Kanban-plankortet inneholder følgende hovedfunksjoner:
+Du kan planlegge bare jobber av **Prosess** -typen. Kanban-jobben og egenskapene, for eksempel aktivitetstiden, defineres i kanban-flyten for produksjon. I kanban-flyten for produksjon blir kanban-jobben også tilordnet til en arbeidscelle. Den daglige kapasiteten for arbeidscellen beregnes basert på arbeidscellekapasiteten som er angitt i ressursgruppen. Den justeres etter daglig arbeidstid i den tilknyttede kalenderen. Når en kanban-jobben er planlagt, laster jobben kapasiteten for arbeidscellen. Kanban-plankortet inneholder følgende hovedfunksjoner:
 
 -   En grafisk oversikt over produksjonsplanen i en lean-arbeidscelle. Denne oversikten viser de planlagte kanban-prosessjobbene i definerte perioder.
 -   Et verktøy som lar deg planlegge ikke-planlagte kanban-jobber og planlegge tidligere planlagte jobber på nytt.
@@ -69,24 +69,24 @@ Mer informasjon om en kanban-jobb er tilgjengelig i verktøytipset som vises nå
 
 ### <a name="use-colors-to-view-the-kanban-schedule-board"></a>Bruke farger for å vise Kanban-plankortet
 
-Hvis du vil forbedre oversikten som Kanban-plankortet gir, kan du bruke farger til å skille mellom kanban-jobber. Fargen på en kanban-jobb konfigureres i lean-planleggingsgruppen, der du kan samle produktene som skal produseres i samme sekvens. **Bruk temafarger**-knappen i kategorien **Kort** i handlingsruten lar deg bytte mellom programtemafargene og fargene som er konfigurert i lean-planleggingsgruppen. For hver periode angir en kapasitetslinje (6) hvor mange tilgjengelige timer for perioden som har blitt lastet med kanban-jobber. Hvis perioden er overbelastet, vises kapasitetslinjen tykkere og i rødt. Alle disse funksjonene er tilgjengelige i **Kort**-kategorien i handlingsruten (1) på toppen av siden **Kanban-plankort**.
+Hvis du vil forbedre oversikten som Kanban-plankortet gir, kan du bruke farger til å skille mellom kanban-jobber. Fargen på en kanban-jobb konfigureres i lean-planleggingsgruppen, der du kan samle produktene som skal produseres i samme sekvens. **Bruk temafarger** -knappen i kategorien **Kort** i handlingsruten lar deg bytte mellom programtemafargene og fargene som er konfigurert i lean-planleggingsgruppen. For hver periode angir en kapasitetslinje (6) hvor mange tilgjengelige timer for perioden som har blitt lastet med kanban-jobber. Hvis perioden er overbelastet, vises kapasitetslinjen tykkere og i rødt. Alle disse funksjonene er tilgjengelige i **Kort** -kategorien i handlingsruten (1) på toppen av siden **Kanban-plankort** .
 
 ## <a name="plan-unplanned-jobs"></a>Planlegg ikke-planlagte jobber
-Du kan planlegge ikke-planlagte kanban-jobber fra dialogboksen **Planlegg ikke-planlagte jobber**. Hvis du vil åpne denne dialogboksen, klikker du knappen **Ikke-planlagte jobber** som viser gjeldende antall ikke-planlagte jobber. Alternativt kan du klikke **Planlegg ikke-planlagte jobber** i **Kort**-kategorien i handlingsruten. Dialogboksen viser en liste over de ikke-planlagte kanban-jobbene for arbeidscellen. Du kan bruke **Filter**-feltet til å filtrere etter alle felt i rutenettet. Du kan for eksempel filtrere etter kanban-jobber for et bestemt produkt. Når du har en filtrert liste over jobbene som du vil planlegge, merker du dem i listen, og klikk deretter **OK**. Hvis du vil bruke automatisk planlegging for jobbene, kan du angi alternativet **Automatisk planlegging** som **Ja**. I dette tilfellet planlegges jobbene i en periode i henhold til forfallsdatoen. Du kan også planlegge jobbene etter periode. Velg ganske enkelt en periode i feltet **Periode**. Illustrasjonen nedenfor viser et eksempel på dialogboksen **Planlegg ikke-planlagte jobber**. 
+Du kan planlegge ikke-planlagte kanban-jobber fra dialogboksen **Planlegg ikke-planlagte jobber** . Hvis du vil åpne denne dialogboksen, klikker du knappen **Ikke-planlagte jobber** som viser gjeldende antall ikke-planlagte jobber. Alternativt kan du klikke **Planlegg ikke-planlagte jobber** i **Kort** -kategorien i handlingsruten. Dialogboksen viser en liste over de ikke-planlagte kanban-jobbene for arbeidscellen. Du kan bruke **Filter** -feltet til å filtrere etter alle felt i rutenettet. Du kan for eksempel filtrere etter kanban-jobber for et bestemt produkt. Når du har en filtrert liste over jobbene som du vil planlegge, merker du dem i listen, og klikk deretter **OK** . Hvis du vil bruke automatisk planlegging for jobbene, kan du angi alternativet **Automatisk planlegging** som **Ja** . I dette tilfellet planlegges jobbene i en periode i henhold til forfallsdatoen. Du kan også planlegge jobbene etter periode. Velg ganske enkelt en periode i feltet **Periode** . Illustrasjonen nedenfor viser et eksempel på dialogboksen **Planlegg ikke-planlagte jobber** . 
 
 ![Dialogboksen Planlegg ikke-planlagte jobber](./media/plan-unplanned-jobs-1024x564.png)
 
 ## <a name="sequence-kanban-jobs-within-the-same-period"></a>Sekvensiere kanban-jobber i den samme perioden
-Du kan endre rekkefølgen for én eller flere valgte jobber innenfor en periode. Denne funksjonen kan være nyttig hvis du vil prioritere enkelte jobber i perioden. Det kan også hende at du vil sekvensiere jobber som har samme produktattributter, for å optimalisere jobbutføring. Du kan endre rekkefølgen ved hjelp av en dra og slipp-operasjon, eller ved hjelp av menyelementene **Bakover** og **Fremover** i **Kort**-kategorien i handlingsruten.
+Du kan endre rekkefølgen for én eller flere valgte jobber innenfor en periode. Denne funksjonen kan være nyttig hvis du vil prioritere enkelte jobber i perioden. Det kan også hende at du vil sekvensiere jobber som har samme produktattributter, for å optimalisere jobbutføring. Du kan endre rekkefølgen ved hjelp av en dra og slipp-operasjon, eller ved hjelp av menyelementene **Bakover** og **Fremover** i **Kort** -kategorien i handlingsruten.
 
 ## <a name="reassign-kanban-jobs-across-periods"></a>Tilordne kanban-jobber på nytt på tvers av perioder
-Jobber kan tilordnes på nytt fra én periode til en annen. Denne funksjonen kan være nyttig hvis en periode er overbelastet og du vil fordele belastningen til perioder som har ledig kapasitet. Du kan tilordne jobber på nytt ved hjelp av en dra og slipp-operasjon, eller ved hjelp av menyelementene **Neste periode** og **Forrige periode** i **Kort**-kategorien i handlingsruten.
+Jobber kan tilordnes på nytt fra én periode til en annen. Denne funksjonen kan være nyttig hvis en periode er overbelastet og du vil fordele belastningen til perioder som har ledig kapasitet. Du kan tilordne jobber på nytt ved hjelp av en dra og slipp-operasjon, eller ved hjelp av menyelementene **Neste periode** og **Forrige periode** i **Kort** -kategorien i handlingsruten.
 
 ## <a name="open-the-kanban-schedule-board"></a>Åpne Kanban-plankortet
 Du kan åpne Kanban-plankortet ved hjelp av menyelementet på følgende sider:
 
--   **Produksjonsområde**-siden
--   **Kanban-jobbplanlegging**-siden
+-   **Produksjonsområde** -siden
+-   **Kanban-jobbplanlegging** -siden
 -   Siden **Visualisering av produksjonsflyt**
 
 

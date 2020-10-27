@@ -16,15 +16,15 @@ ms.custom: 223174
 ms.assetid: ''
 ms.search.region: global
 ms.search.industry: Manufacturing
-ms.author: shylaw
+ms.author: roschlom
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 7a871eef822140f028832aa1be39372f07668d79
-ms.sourcegitcommit: cd339f48066b1d0fc740b513cb72ea19015acd16
+ms.openlocfilehash: fc6f655d17a83db54aa99c834980bf7666e8100d
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "3759598"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3977773"
 ---
 # <a name="allocation-bases"></a>Tildelingsgrunnlag 
 
@@ -298,7 +298,7 @@ Du kan bruke følgende operatorer til å definere formelen.
 | –       | Subtraksjon    |
 | \*      | Multiplikasjon |
 
-Tradisjonelle **IF**-setninger støttes ikke. Du kan imidlertid lage setninger og validere om de er sanne.
+Tradisjonelle **IF** -setninger støttes ikke. Du kan imidlertid lage setninger og validere om de er sanne.
 
 | Kontoutdrag | Validering | Resultat |
 |-----------|------------|--------|
@@ -333,7 +333,7 @@ Hvis det faste gebyret nå må fordeles likt på kostnadsobjekter som bruker str
 |-------------------|------------------------|-----------------------|---------|
 | Fast strøm |                        | Statistiske elementer  |         |
 
-Før du kan fylle ut **Formel**-feltet, må du angi aliaset som skal brukes i formelen.
+Før du kan fylle ut **Formel** -feltet, må du angi aliaset som skal brukes i formelen.
 
 **Faktorer for formeltildelingsgrunnlag**
 
@@ -386,7 +386,7 @@ Et nytt formeltildelingsgrunnlag, Strømforbruk, opprettes.
 |-------------------|------------------------|-----------------------|---------|
 | Strømforbruk |                        | Statistiske elementer  |         |
 
-Før du kan fylle ut **Formel**-feltet, må du angi aliaset som skal brukes i formelen.
+Før du kan fylle ut **Formel** -feltet, må du angi aliaset som skal brukes i formelen.
 
 **Faktorer for formeltildelingsgrunnlag**
 

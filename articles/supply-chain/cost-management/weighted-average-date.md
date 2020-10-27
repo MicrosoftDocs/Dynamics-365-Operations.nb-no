@@ -16,15 +16,15 @@ ms.custom: 28991
 ms.assetid: 945d5088-a99d-4e54-bc42-d2bd61c61e22
 ms.search.region: Global
 ms.search.industry: Retail
-ms.author: shylaw
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: cb3f781c82c0c1e13966f1490bcb4a76b5e7ed69
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: d36f60a13fbee91100e406150e7f5ca890320436
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3204959"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3982263"
 ---
 # <a name="weighted-average-date"></a>Dato avveid gjennomsnitt
 
@@ -32,13 +32,13 @@ ms.locfileid: "3204959"
 
 Dato for avveid gjennomsnitt er en lagermodell som er basert på prinsippet for avveid gjennomsnitt. I avveid gjennomsnitt-prinsippet verdsettes frigivelser fra lageret til gjennomsnittsverdien av varene som er mottatt på lageret for hver separate dag i lageravslutningsperioden. 
 
-Når du kjører en lageravslutning ved hjelp av dato for avveid gjennomsnitt, utlignes alle daglige mottak mot en virtuell avgang. Denne virtuelle avgangen inneholder totalt mottatt antall og verdi for den aktuelle dagen. Den virtuelle frigivelsen har et tilsvarende virtuelt mottak, som frigivelsene utlignes mot. Derfor får alle avgangene samme gjennomsnittskostnad. Du kan se på denne virtuelle avgangen som en virtuell overføring, som kalles *overføring av avveid gjennomsnitt fra lagerlukking*. 
+Når du kjører en lageravslutning ved hjelp av dato for avveid gjennomsnitt, utlignes alle daglige mottak mot en virtuell avgang. Denne virtuelle avgangen inneholder totalt mottatt antall og verdi for den aktuelle dagen. Den virtuelle frigivelsen har et tilsvarende virtuelt mottak, som frigivelsene utlignes mot. Derfor får alle avgangene samme gjennomsnittskostnad. Du kan se på denne virtuelle avgangen som en virtuell overføring, som kalles *overføring av avveid gjennomsnitt fra lagerlukking* . 
 
 Hvis det bare har skjedd ett mottak på eller før datoen, trenger du ikke verdsette gjennomsnittsverdien. Fordi alle avganger utlignes fra dette mottaket, vil ikke den virtuelle overføringen bli opprettet. På samme måte, hvis det bare skjer frigivelser på den aktuelle datoen, vil det ikke finnes noen mottak å verdsette en gjennomsnittsverdi fra, og den virtuelle overføringen vil ikke bli opprettet. Når du bruker dato for avveid gjennomsnitt, kan du merke lagertransaksjoner slik at et bestemt varemottak utlignes mot en bestemt avgang. I dette tilfellet bruker du ikke dato for avveid gjennomsnitt-regelen. Månedlig lagerlukking anbefales når du bruker dato avveid gjennomsnitt-lagermodellen. 
 
 Følgende formel brukes til å beregne metoden for dato for avveid gjennomsnitt: 
 
-Avveid gjennomsnitt = (\[Q1 × P1\] + \[Q2 × P2\] + \[Q*n* × P*n*\]) ÷ (Q1 + Q2 + Q*n*) 
+Avveid gjennomsnitt = (\[Q1 × P1\] + \[Q2 × P2\] + \[Q *n* × P *n*\]) ÷ (Q1 + Q2 + Q *n* ) 
 
 Når lagerlukking pågår, utføres beregningen hver dag i hele lukkingsperioden, som vist i illustrasjonen nedenfor. 
 
@@ -82,16 +82,16 @@ Illustrasjonen nedenfor viser disse transaksjonene:
 -   Lagertransaksjoner vises med loddrette piler.
 -   Mottak til lager vises med loddrette piler over tidslinjen.
 -   Avganger fra lager vises med loddrette piler under tidslinjen.
--   Over (eller under) hver loddrett pil vises lagertransaksjonens verdi i formatet *Antall*@*Enhetspris*.
+-   Over (eller under) hver loddrett pil vises lagertransaksjonens verdi i formatet *Antall*@*Enhetspris* .
 -   Hvis en lagertransaksjon står i parenteser, betyr det at lagertransaksjonen er postert fysisk til lager.
 -   Hvis en lagertransaksjon ikke står i parenteser, betyr det at lagertransaksjonen er økonomisk postert til lager.
 -   Hver ny mottaks- eller avgangstransaksjon merkes med en ny etikett.
--   Hver loddrett pil har en etikett med en sekvensiell ID, for eksempel *1a*. IDene vises langs tidslinjen, og viser i hvilken rekkefølge lagertransaksjonene posteres.
--   Lagerlukkinger vises med en rød linje med vannrette streker, og med etiketten *Lagerlukking*.
+-   Hver loddrett pil har en etikett med en sekvensiell ID, for eksempel *1a* . IDene vises langs tidslinjen, og viser i hvilken rekkefølge lagertransaksjonene posteres.
+-   Lagerlukkinger vises med en rød linje med vannrette streker, og med etiketten *Lagerlukking* .
 -   Utligninger som skjer før lagerlukking, vises med prikkede røde piler som går diagonalt fra tilgang til avgang.
 
 ## <a name="weighted-average-date-summarized-settlement-when-the-include-physical-value-option-isnt-used"></a>Summert utligning med dato for avveid gjennomsnitt når alternativet Ta med fysisk verdi ikke brukes
-Avveid gjennomsnitt er basert på prinsippet om at alle mottak i en avslutningsperiode summeres i en ny lageroverføringstransaksjon. Denne transaksjonen er kjent som *avveid gjennomsnittlig lagerlukking*. Alle mottakene for dagen utlignes mot avgangen til den nylig opprettede lageroverføringstransaksjonen. Alle avganger for dagen utlignes mot mottaket av den nye lageroverføringstransaksjonen. Hvis lagerbeholdningen er positiv etter lagerlukkingen, summeres lagerbeholdningen og verdien av lageret i den nye tilgangstransaksjonen for lageroverføring. Hvis lagerbeholdningen er negativ etter lagerlukkingen, er lagerbeholdningen og verdien av lageret lik summen av de enkelte avgangene som ikke er fullt utlignet. 
+Avveid gjennomsnitt er basert på prinsippet om at alle mottak i en avslutningsperiode summeres i en ny lageroverføringstransaksjon. Denne transaksjonen er kjent som *avveid gjennomsnittlig lagerlukking* . Alle mottakene for dagen utlignes mot avgangen til den nylig opprettede lageroverføringstransaksjonen. Alle avganger for dagen utlignes mot mottaket av den nye lageroverføringstransaksjonen. Hvis lagerbeholdningen er positiv etter lagerlukkingen, summeres lagerbeholdningen og verdien av lageret i den nye tilgangstransaksjonen for lageroverføring. Hvis lagerbeholdningen er negativ etter lagerlukkingen, er lagerbeholdningen og verdien av lageret lik summen av de enkelte avgangene som ikke er fullt utlignet. 
 
 I det følgende scenariet posteres flere økonomisk oppdaterte tilganger og avganger i løpet av perioden. Under lagerlukkingen vil systemet undersøke hver dag for seg, for å avgjøre hvordan den enkelte dagen skal behandles. 
 
@@ -127,7 +127,7 @@ Lagerlukking utføres. Her må direkte utligning brukes, fordi det finnes flere 
 
 Systemet genererer og posterer den summerte lageroverføringstransaksjonen. I tillegg utligner systemet alle tilganger for dagen og lagerbeholdning på tidligere dager mot den summerte avgangstransaksjonen for lageroverføring. Alle avganger for dagen utlignes mot den summerte tilgangstransaksjonen for lageroverføring. Det avveide gjennomsnittet av kostprisen beregnes til USD 16,00. Avgangen justeres med USD 1,00 for å justere den til det avveide gjennomsnittet av kostprisen. Det nye glidende gjennomsnittet av kostprisen er USD 16,00. 
 
-Illustrasjonen nedenfor viser denne serien av transaksjoner og virkningen av å bruke lagermodellen for avveid gjennomsnitt og prinsippet for summert utligning, men uten å bruke alternativet **Ta med fysisk verdi**. 
+Illustrasjonen nedenfor viser denne serien av transaksjoner og virkningen av å bruke lagermodellen for avveid gjennomsnitt og prinsippet for summert utligning, men uten å bruke alternativet **Ta med fysisk verdi** . 
 
 ![Summert utligning med dato for avveid gjennomsnitt når alternativet Ta med fysisk verdi ikke brukes](./media/weightedaveragedatesummarizedsettlementwithoutincludephysicalvalue.gif) 
 
@@ -136,12 +136,12 @@ Illustrasjonen nedenfor viser denne serien av transaksjoner og virkningen av å 
 -   Lagertransaksjoner vises med loddrette piler.
 -   Mottak til lager vises med loddrette piler over tidslinjen.
 -   Avganger fra lager vises med loddrette piler under tidslinjen.
--   Over (eller under) hver loddrett pil vises lagertransaksjonens verdi i formatet *Antall*@*Enhetspris*.
+-   Over (eller under) hver loddrett pil vises lagertransaksjonens verdi i formatet *Antall*@*Enhetspris* .
 -   Hvis en lagertransaksjon står i parenteser, betyr det at lagertransaksjonen er postert fysisk til lager.
 -   Hvis en lagertransaksjon ikke står i parenteser, betyr det at lagertransaksjonen er økonomisk postert til lager.
 -   Hver ny mottaks- eller avgangstransaksjon merkes med en ny etikett.
--   Hver loddrett pil har en etikett med en sekvensiell ID, for eksempel *1a*. IDene vises langs tidslinjen, og viser i hvilken rekkefølge lagertransaksjonene posteres.
--   Lagerlukkinger vises med en rød linje med vannrette streker, og med etiketten *Lagerlukking*.
+-   Hver loddrett pil har en etikett med en sekvensiell ID, for eksempel *1a* . IDene vises langs tidslinjen, og viser i hvilken rekkefølge lagertransaksjonene posteres.
+-   Lagerlukkinger vises med en rød linje med vannrette streker, og med etiketten *Lagerlukking* .
 -   Utligninger som skjer før lagerlukking, vises med prikkede røde piler som går diagonalt fra tilgang til avgang.
 -   Heltrukne røde diagonale piler viser tilgangstransaksjonene som utlignes mot avgangstransaksjoner som opprettes av systemet.
 -   Den heltrukne grønne diagonale pilen viser tilgangstransaksjonen som opprettes av systemet, og som brukes til å utligne den opprinnelige, posterte avgangstransaksjonen.
@@ -152,17 +152,17 @@ Gjeldende versjon bruker det samme prinsippet for direkte utligning som brukes f
 -   Når én tilgang og én eller flere avganger er postert i perioden.
 -   Når bare avganger er postert i perioden, og beholdningen inneholder en lagerbeholdning fra en tidligere lagerlukking.
 
-Hvis du merker av for **Ta med fysisk verdi** for en vare på siden **Varemodellgruppe**, bruker systemet fysisk oppdaterte tilganger når den estimerte kostprisen eller glidende gjennomsnitt beregnes. Avganger posteres på grunnlag av denne estimerte kostprisen for perioden. Under lagerlukkingen tas det bare hensyn til økonomisk oppdaterte tilganger når avveid gjennomsnitt beregnes.
+Hvis du merker av for **Ta med fysisk verdi** for en vare på siden **Varemodellgruppe** , bruker systemet fysisk oppdaterte tilganger når den estimerte kostprisen eller glidende gjennomsnitt beregnes. Avganger posteres på grunnlag av denne estimerte kostprisen for perioden. Under lagerlukkingen tas det bare hensyn til økonomisk oppdaterte tilganger når avveid gjennomsnitt beregnes.
 
 ## <a name="weighted-average-date-summarized-settlement-when-the-include-physical-value-option-is-used"></a>Summert utligning med dato for avveid gjennomsnitt når alternativet Ta med fysisk verdi brukes
-Hvis du merker av for **Ta med fysisk verdi** for en vare på siden **Varemodellgruppe**, bruker systemet fysisk oppdaterte tilganger når den estimerte kostprisen eller glidende gjennomsnitt beregnes. Avganger posteres på grunnlag av denne estimerte kostprisen for perioden. Under lagerlukkingen tas det bare hensyn til økonomisk oppdaterte tilganger når avveid gjennomsnitt beregnes. Utligning for avveid gjennomsnitt er basert på prinsippet om at mottak i en avslutningsperiode summeres i en ny lageroverføringstransaksjon, som kalles *avveid gjennomsnittlig lagerlukking*. Alle mottakene for dagen utlignes mot avgangen til den nylig opprettede lageroverføringstransaksjonen. Alle avganger for dagen utlignes mot mottaket av den nye lageroverføringstransaksjonen. Hvis lagerbeholdningen er positiv etter lagerlukkingen, summeres denne lagerbeholdningen og verdien av lageret i den nye lageroverføringstransaksjonen (tilganger). Hvis lagerbeholdningen er negativ etter lagerlukkingen, er lagerbeholdningen og verdien av lageret lik summen av de enkelte avgangene som ikke er fullt utlignet.
+Hvis du merker av for **Ta med fysisk verdi** for en vare på siden **Varemodellgruppe** , bruker systemet fysisk oppdaterte tilganger når den estimerte kostprisen eller glidende gjennomsnitt beregnes. Avganger posteres på grunnlag av denne estimerte kostprisen for perioden. Under lagerlukkingen tas det bare hensyn til økonomisk oppdaterte tilganger når avveid gjennomsnitt beregnes. Utligning for avveid gjennomsnitt er basert på prinsippet om at mottak i en avslutningsperiode summeres i en ny lageroverføringstransaksjon, som kalles *avveid gjennomsnittlig lagerlukking* . Alle mottakene for dagen utlignes mot avgangen til den nylig opprettede lageroverføringstransaksjonen. Alle avganger for dagen utlignes mot mottaket av den nye lageroverføringstransaksjonen. Hvis lagerbeholdningen er positiv etter lagerlukkingen, summeres denne lagerbeholdningen og verdien av lageret i den nye lageroverføringstransaksjonen (tilganger). Hvis lagerbeholdningen er negativ etter lagerlukkingen, er lagerbeholdningen og verdien av lageret lik summen av de enkelte avgangene som ikke er fullt utlignet.
 
 ## <a name="weighted-average-date-when-marking-is-used"></a>Dato for avveid gjennomsnitt når merking brukes
 Merking er en prosess som lar deg koble, eller merke, en avgangstransaksjon til en tilgangstransaksjon. Merking kan skje enten før eller etter at en transaksjon posteres. Du kan bruke merking når du vil være sikker på at du kjenner den nøyaktige lagerkostnaden når transaksjonen posteres eller når lagerlukking utføres. 
 
 La oss si at kundeserviceavdelingen godtar en hasteordre fra en viktig kunde. Fordi dette er en hasteordre, blir du nødt til å betale en høyere pris for denne varen for å imøtekomme kundens forespørsel. Du må være sikker på at denne lagerkostnaden gjenspeiles i bidraget, eller kostnader for solgte varer (Vareforbruk), for denne salgsordrefakturaen. Når bestillingen posteres, skjer tilgangen til lager med en kost på USD 120,00. Salgsordredokumentet merkes mot bestillingen før følgeseddelen eller fakturaen posteres. Vareforbruket vil være USD 120,00 i stedet for det gjeldende glidende gjennomsnittet av varens kost. Hvis bestillingens følgeseddel eller faktura posteres før merkingen skjer, vil solgte varers kost posteres med det glidende gjennomsnittet av kostprisen. Disse to transaksjonene kan merkes mot hverandre helt til lagerlukkingen utføres. Når en tilgangstransaksjon merkes mot en avgangstransaksjon, ses det bort fra vurderingsmetoden som er definert i varens varemodellgruppe. I stedet utligner systemet disse transaksjonene mot hverandre. 
 
-Du kan merke en avgangstransaksjon mot en tilgang før transaksjonen er postert. Du kan gjøre dette fra en salgsordrelinje på siden **Salgsordredetaljer**. Du kan vise de åpne tilgangstransaksjonene på **Merking**-siden. Du kan merke en avgangstransaksjon mot en tilgang etter transaksjonen er postert. Du kan samsvare eller merke en avgangstransaksjon for en åpen mottakstransaksjon for en lagervare fra en postert lagerjusteringsjournal. Illustrasjonen nedenfor viser disse transaksjonene:
+Du kan merke en avgangstransaksjon mot en tilgang før transaksjonen er postert. Du kan gjøre dette fra en salgsordrelinje på siden **Salgsordredetaljer** . Du kan vise de åpne tilgangstransaksjonene på **Merking** -siden. Du kan merke en avgangstransaksjon mot en tilgang etter transaksjonen er postert. Du kan samsvare eller merke en avgangstransaksjon for en åpen mottakstransaksjon for en lagervare fra en postert lagerjusteringsjournal. Illustrasjonen nedenfor viser disse transaksjonene:
 
 -   1a. Fysisk lagermottak av et antall på 1 til kostpris USD 10,00 per stykk.
 -   1b. Økonomisk lagertilgang av et antall på 1 til kostpris USD 10,00 per stykk.
@@ -185,12 +185,12 @@ Det nye glidende gjennomsnittet av kostprisen gjenspeiler gjennomsnittet av de �
 -   Lagertransaksjoner vises med loddrette piler.
 -   Mottak til lager vises med loddrette piler over tidslinjen.
 -   Avganger fra lager vises med loddrette piler under tidslinjen.
--   Over (eller under) hver loddrett pil vises lagertransaksjonens verdi i formatet *Antall*@*Enhetspris*.
+-   Over (eller under) hver loddrett pil vises lagertransaksjonens verdi i formatet *Antall*@*Enhetspris* .
 -   Hvis en lagertransaksjon står i parenteser, betyr det at lagertransaksjonen er postert fysisk til lager.
 -   Hvis en lagertransaksjon ikke står i parenteser, betyr det at lagertransaksjonen er økonomisk postert til lager.
 -   Hver ny mottaks- eller avgangstransaksjon merkes med en ny etikett.
--   Hver loddrett pil har en etikett med en sekvensiell ID, for eksempel *1a*. IDene vises langs tidslinjen, og viser i hvilken rekkefølge lagertransaksjonene posteres.
--   Lagerlukkinger vises med en rød linje med vannrette streker, og med etiketten *Lagerlukking*.
+-   Hver loddrett pil har en etikett med en sekvensiell ID, for eksempel *1a* . IDene vises langs tidslinjen, og viser i hvilken rekkefølge lagertransaksjonene posteres.
+-   Lagerlukkinger vises med en rød linje med vannrette streker, og med etiketten *Lagerlukking* .
 -   Utligninger som skjer før lagerlukking, vises med prikkede røde piler som går diagonalt fra tilgang til avgang.
 
 

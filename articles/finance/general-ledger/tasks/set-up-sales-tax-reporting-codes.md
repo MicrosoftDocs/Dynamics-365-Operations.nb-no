@@ -13,15 +13,15 @@ audience: Application User
 ms.reviewer: roschlom
 ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: vstehman
+ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 460e41d69a78cda664e0d3af828fdc482169ac52
-ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
+ms.openlocfilehash: 6c18f4fb0db31a959647bb10d2b99d940646676e
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3145081"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3976799"
 ---
 # <a name="set-up-sales-tax-reporting-codes"></a>Definer mva-rapporteringskoder
 
@@ -31,11 +31,11 @@ Mva-rapporteringskodene refererer til et feltnummer på en mva-rapport. De bruke
 
 Denne registreringen bruker demonstrasjonsfirmaet DEMF.
 
-1. I **navigasjonsruten** går du til **Avgift > Oppsett > Merverdiavgift > Mva-rapporteringskoder**.
-2. Klikk på **Ny**.
+1. I **navigasjonsruten** går du til **Avgift > Oppsett > Merverdiavgift > Mva-rapporteringskoder** .
+2. Klikk på **Ny** .
 3. Velg rapportoppsettet som rapporteringskoden tilhører. Dette oppsettet brukes til å filtrere de tilgjengelige rapporteringskodene for en mva-kode. Hver mva-kode tilhører en utligningsperiode som tilhører en skattemyndighet som bruker et rapportoppsett.  
-4. Angi et tall i feltet **Rapporteringskode**.
-5. I **Rapporttekst**-feltet angir du en beskrivelse som skal vises på rapporter.
+4. Angi et tall i feltet **Rapporteringskode** .
+5. I **Rapporttekst** -feltet angir du en beskrivelse som skal vises på rapporter.
 6. I feltet **Kort beskrivelse** skriver du inn en kort beskrivelse for intern bruk.
-7. Klikk **Lagre**.
+7. Klikk **Lagre** .
 

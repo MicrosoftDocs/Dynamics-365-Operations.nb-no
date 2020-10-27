@@ -16,15 +16,15 @@ ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
 ms.search.industry: Manufacturing
-ms.author: shylaw
+ms.author: roschlom
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: af6ddc86bb6313387aa9c6ccc347d2a1c5fac50a
-ms.sourcegitcommit: de5af1912201dd70aa85fdcad0b184c42405802e
+ms.openlocfilehash: fd1ed875e5c6e3f8ada3b13ea8cc05f98526691d
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "3154488"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3977749"
 ---
 # <a name="access-rights-for-cost-object-controllers"></a>Tilgangsrettigheter til kontrollere for kostnadsobjekt
 
@@ -80,7 +80,7 @@ Du kan bruke hurtigfanen **Brukere** i hierarkidesigner til å sette inn én ell
 > [!NOTE]
 > Regnskapsførere må tilordnes det øverste nivået i hierarkiet, slik at de kan se alle oppføringene i kostnadsregnskap.
 
-Før hierarkiet for tilgangsliste og sikkerhetsinnstillingene for det kan brukes, må alternativet **Aktiver visningstilgang for dimensjonsmedlemmer for kostnadsobjekt** settes til **Ja** i **Generelt**-fanen på siden **Kostnadsregnskapsparametere** (**Kostnadsregnskap** > **Oppsett** > **Parametere**).
+Før hierarkiet for tilgangsliste og sikkerhetsinnstillingene for det kan brukes, må alternativet **Aktiver visningstilgang for dimensjonsmedlemmer for kostnadsobjekt** settes til **Ja** i **Generelt** -fanen på siden **Kostnadsregnskapsparametere** ( **Kostnadsregnskap** > **Oppsett** > **Parametere** ).
 
 Innstillingene for hierarkiet for tilgangsliste brukes til å styre dataene som vises på følgende områder:
 
@@ -99,7 +99,7 @@ Innstillingene for hierarkiet for tilgangsliste brukes til å styre dataene som 
 
 > [!IMPORTANT]
 > - Før hierarkiet for tilgangsliste kan påvirke data i Power BI, må hierarkiet for tilgangsliste og radnivåsikkerhet i Power BI sammenkobles. Hvis du vil ha mer informasjon, kan du se [Definere sikkerhet for innholdspakken Kostnadsregnskap](../../dev-itpro/analytics/setup-security-cost-accounting-content-pack.md).
-> - Dette emnet viser forutsetningene som må være på plass før du kan bruke arbeidsområdet **Kostnadskontroll**.
+> - Dette emnet viser forutsetningene som må være på plass før du kan bruke arbeidsområdet **Kostnadskontroll** .
 
 Tilleggsressurser
 

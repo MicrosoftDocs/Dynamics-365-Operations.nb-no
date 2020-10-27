@@ -3,7 +3,7 @@ title: Dokumentere statuser og livssyklus
 description: Dette emnet dekker de ulike dokumenttilstandene for sideelementer i Microsoft Dynamics 365 Commerce.
 author: phinneyridge
 manager: annbe
-ms.date: 04/13/2020
+ms.date: 10/09/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,15 +17,14 @@ ms.search.industry: ''
 ms.author: niholman
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 4a00f1c363e5ecb0e3e64637a8f487c48df2df72
-ms.sourcegitcommit: ac966ea3a6c557fb5f9634b187b0e788d3e82d4d
+ms.openlocfilehash: 8aad7ef8425e46182c669686710dfc178abc418f
+ms.sourcegitcommit: 83ec80382bfeb693d5c5949b6f65296bd50eed12
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "3261519"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "3974036"
 ---
 # <a name="document-states-and-lifecycle"></a>Dokumentere statuser og livssyklus
-
 
 [!include [banner](includes/banner.md)]
 
@@ -39,11 +38,11 @@ Følgende tabell viser mulige dokumenttilstander for sideelementer i Commerce.
 
 | Dokumenttilstand      | Handling i områdebygger        | beskrivelse                                                  |
 | ------------------- | -------------------------- | ------------------------------------------------------------ |
-| Sjekket ut         | Velg **Rediger**.           | Det aktuelle dokumentet er sjekket ut til deg. Mens et dokument er i denne tilstanden, kan det ikke endres av andre godkjente systembrukere, og endringer du utfører i dokumentet, er bare synlige for deg. |
-| Lagret               | Velg **Lagre**.           | Endringer som er gjort i et utsjekket dokument, blir lagret i databasen, men dokumentet er ennå ikke sjekket inn eller publisert. De lagrede endringene er ikke synlige for andre godkjente systembrukere før forfatteren velger **Fullfør redigering**. De er ikke synlige for eksterne brukere før elementet er publisert. |
-| Forkastet utsjekking | Velg **Forkast redigeringer**.  | Alle endringer i det utsjekkede dokumentet forkastes, og varen tilbakestilles til den siste versjonen som ble sjekket inn. |
-| Sjekket inn          | Velg **Fullfør redigering**. | Det redigerte dokumentet sjekkes inn. Alle endringer er synlige for andre godkjente systembrukere, og disse brukerne kan deretter redigere dokumentet. Hver innsjekking oppretter en dokumentversjonsregistrering i elementloggen. |
-| Publisert           | Velg **Publiser**.        | Dokumentet publiseres, og endringene sendes ut på det aktive området og blir synlige for eksterne brukere. Varer kan bare publiseres hvis de først har blitt sjekket inn ved å velge **Fullfør redigering**. |
+| Sjekket ut         | Velg **Rediger** .           | Det aktuelle dokumentet er sjekket ut til deg. Mens et dokument er i denne tilstanden, kan det ikke endres av andre godkjente systembrukere, og endringer du utfører i dokumentet, er bare synlige for deg. |
+| Lagret               | Velg **Lagre** .           | Endringer som er gjort i et utsjekket dokument, blir lagret i databasen, men dokumentet er ennå ikke sjekket inn eller publisert. De lagrede endringene er ikke synlige for andre godkjente systembrukere før forfatteren velger **Fullfør redigering** . De er ikke synlige for eksterne brukere før elementet er publisert. |
+| Forkastet utsjekking | Velg **Forkast redigeringer** .  | Alle endringer i det utsjekkede dokumentet forkastes, og varen tilbakestilles til den siste versjonen som ble sjekket inn. |
+| Sjekket inn          | Velg **Fullfør redigering** . | Det redigerte dokumentet sjekkes inn. Alle endringer er synlige for andre godkjente systembrukere, og disse brukerne kan deretter redigere dokumentet. Hver innsjekking oppretter en dokumentversjonsregistrering i elementloggen. |
+| Publisert           | Velg **Publiser** .        | Dokumentet publiseres, og endringene sendes ut på det aktive området og blir synlige for eksterne brukere. Varer kan bare publiseres hvis de først har blitt sjekket inn ved å velge **Fullfør redigering** . |
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 
@@ -52,6 +51,8 @@ Følgende tabell viser mulige dokumenttilstander for sideelementer i Commerce.
 [Ordliste for sidemodell](page-elements-overview.md)
 
 [Arbeide med publiseringsgrupper](publish-groups.md)
+
+[Aktivere og bruke deling på tvers av kanal](cross-channel-sharing.md)
 
 [Arbeide med moduler](work-with-modules.md)
 

@@ -13,15 +13,15 @@ audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: ShylaThompson
+ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 8b3f6f601d2d48ede2c4db198ac5438aa32e056d
-ms.sourcegitcommit: 8cbaeb6443ce47a4c4bc02b5e1a1212eb0056b38
+ms.openlocfilehash: 28446e32c8f126e76b13f41f379ecf994a7b7a0d
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "3829783"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3980772"
 ---
 # <a name="check-the-availability-of-stock"></a>Kontrollere lagertilgjengeligheten
 
@@ -31,32 +31,32 @@ Denne fremgangsmåten viser hvordan du kontrollerer beholdning og fysisk lagerbe
 
 
 ## <a name="check-on-hand-inventory-for-an-item"></a>Kontrollere lagerbeholdning for en vare
-1. Gå til **Navigasjonsrute > Moduler > Lagerstyring > Forespørsler og rapporter > Lagerbeholdning**.
-2. Velg **Varenummer**-raden. Hvis du vil spørre om lagerbeholdning etter varenummer, merker du raden der tabellen er satt til **Lagerbeholdning** og Felt er satt til **Varenummer**.
-3. Velg varen du vil utføre spørringer for, i **Kriterier**-feltet. Hvis du bruker demonstrasjonsdatafirmaet USMF, kan du velge M9201.  
-4. Klikk **OK**.
-5. Klikk på **Dimensjoner** i **handlingsruten**. I kategorien **Dimensjoner** kan du velge hvor mange detaljer du vil se om lagerbeholdningen. Hvis du trenger data som er relatert til reservering, må du vise alle lagerdimensjoner for varer som bruker avanserte lagerprosesser (WMS).
-6. Klikk **OK**.
-7. Klikk på **Relatert informasjon** i **handlingsruten**. Hvis du ikke ser dette alternativet, må du kanskje klikke ellipseknappen (...) for å se alternativer for flere handlinger.
-8. Klikk på **Forsyningsoversikt**. Kategorien **Forsyningsoversikt** gir forsyningsinformasjonen for en bestemt vare, for eksempel antallet på lager, leveringstid og leverandørinformasjon.  
-9. Vis **Beholdning**-delen.
-10. Vis **Leverandør**-delen.
+1. Gå til **Navigasjonsrute > Moduler > Lagerstyring > Forespørsler og rapporter > Lagerbeholdning** .
+2. Velg **Varenummer** -raden. Hvis du vil spørre om lagerbeholdning etter varenummer, merker du raden der tabellen er satt til **Lagerbeholdning** og Felt er satt til **Varenummer** .
+3. Velg varen du vil utføre spørringer for, i **Kriterier** -feltet. Hvis du bruker demonstrasjonsdatafirmaet USMF, kan du velge M9201.  
+4. Klikk **OK** .
+5. Klikk på **Dimensjoner** i **handlingsruten** . I kategorien **Dimensjoner** kan du velge hvor mange detaljer du vil se om lagerbeholdningen. Hvis du trenger data som er relatert til reservering, må du vise alle lagerdimensjoner for varer som bruker avanserte lagerprosesser (WMS).
+6. Klikk **OK** .
+7. Klikk på **Relatert informasjon** i **handlingsruten** . Hvis du ikke ser dette alternativet, må du kanskje klikke ellipseknappen (...) for å se alternativer for flere handlinger.
+8. Klikk på **Forsyningsoversikt** . Kategorien **Forsyningsoversikt** gir forsyningsinformasjonen for en bestemt vare, for eksempel antallet på lager, leveringstid og leverandørinformasjon.  
+9. Vis **Beholdning** -delen.
+10. Vis **Leverandør** -delen.
 11. Lukk siden.
 12. Lukk siden.
 
 ## <a name="check-physical-on-hand-inventory"></a>Kontrollere fysisk lagerbeholdning
-1. Gå til **Navigasjonsrute > Moduler > Lagerstyring > Forespørsler og rapporter > Fysisk lagerbeholdning**.
-2. Skriv inn en verdi i **Varenummer**-feltet. Du kan bruke feltene Område og Lager til å filtrere listen over elementer. 
+1. Gå til **Navigasjonsrute > Moduler > Lagerstyring > Forespørsler og rapporter > Fysisk lagerbeholdning** .
+2. Skriv inn en verdi i **Varenummer** -feltet. Du kan bruke feltene Område og Lager til å filtrere listen over elementer. 
 3. Oppdater siden.
-4. I **handlingsruten** klikker du på **Visningsdimensjoner**. I kategorien Dimensjonsvisning kan du velge hvor mange detaljer du vil se om lagerbeholdningen.
-5. Klikk **OK**.
+4. I **handlingsruten** klikker du på **Visningsdimensjoner** . I kategorien Dimensjonsvisning kan du velge hvor mange detaljer du vil se om lagerbeholdningen.
+5. Klikk **OK** .
 6. Lukk siden.
 
 ## <a name="check-on-hand-inventory-by-location"></a>Kontrollere lagerbeholdning etter lokasjon
-1. Gå til **Navigasjonsrute > Moduler > Lagerstyring > Forespørsler og rapporter > Beholdning etter lokasjon**.
-2. Skriv inn en verdi i **Lager**-feltet. Hvis du bruker demonstrasjonsdatafirmaet USMF, kan du bruke "51".  
+1. Gå til **Navigasjonsrute > Moduler > Lagerstyring > Forespørsler og rapporter > Beholdning etter lokasjon** .
+2. Skriv inn en verdi i **Lager** -feltet. Hvis du bruker demonstrasjonsdatafirmaet USMF, kan du bruke "51".  
 3. Oppdater siden.
-4. Klikk på **Visningsdimensjoner**.
-5. Klikk **OK**.
+4. Klikk på **Visningsdimensjoner** .
+5. Klikk **OK** .
 6. Lukk siden.
 

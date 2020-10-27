@@ -16,15 +16,15 @@ ms.custom: 223114
 ms.assetid: 1c798592-77d0-4a8f-beaa-9159c75957da
 ms.search.region: global
 ms.search.industry: Manufacturing
-ms.author: shylaw
+ms.author: roschlom
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: b2e4f16ef6f96261c819289e6ade76e15005ce0e
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 948beb7baa19c69530dca52b5d4c119b69f8f011
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2179218"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3977533"
 ---
 # <a name="cost-accounting-terminology"></a>Terminologi for kostnadsregnskap
 
@@ -202,6 +202,6 @@ Oppgaver er visninger for ledere som har ansvar for å kontrollere kostnader. Ut
 
 **Versjon**
 
-Versjoner brukes til å simulere, vise og sammenligne ulike resultater. Som standard vises alle faktiske kostnader i en grunnleggende versjon som kalles *Faktiske*. Du kan arbeide med så mange versjoner du har behov, for budsjetter og beregninger. Du kan for eksempel importere budsjettdata til en opprinnelig versjon og deretter endre budsjettet i en revidert versjon. For beregninger kan du opprette flere versjoner. I disse ulike versjonene kan du deretter opprette beregninger ved hjelp av andre beregningsregler som skal brukes for kostnadsfordeling.
+Versjoner brukes til å simulere, vise og sammenligne ulike resultater. Som standard vises alle faktiske kostnader i en grunnleggende versjon som kalles *Faktiske* . Du kan arbeide med så mange versjoner du har behov, for budsjetter og beregninger. Du kan for eksempel importere budsjettdata til en opprinnelig versjon og deretter endre budsjettet i en revidert versjon. For beregninger kan du opprette flere versjoner. I disse ulike versjonene kan du deretter opprette beregninger ved hjelp av andre beregningsregler som skal brukes for kostnadsfordeling.
 
 

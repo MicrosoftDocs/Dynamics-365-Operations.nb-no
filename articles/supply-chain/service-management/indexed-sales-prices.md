@@ -15,15 +15,15 @@ ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: ShylaThompson
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5b6b2607d8400ea80d25473ad4183362d4a3bcad
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: f7f8c466df0b877c3f664acff2b431b3098fe2e6
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3202382"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3981648"
 ---
 # <a name="indexed-sales-prices"></a>Indekserte salgspriser  
 
@@ -32,7 +32,7 @@ ms.locfileid: "3202382"
 
 Du definerer indeksen for en salgspris for abonnementer når du oppretter et abonnementsgebyr.
 
-I skjemaet **Opprett abonnementsavgift** setter du feltet **Hent prissetting fra** til **Indeksert basispris**, og deretter multiplisere basisprisen med prosenten i feltet **Prisendring i prosent** for å vise salgsprisen for abonnementstransaksjonen.
+I skjemaet **Opprett abonnementsavgift** setter du feltet **Hent prissetting fra** til **Indeksert basispris** , og deretter multiplisere basisprisen med prosenten i feltet **Prisendring i prosent** for å vise salgsprisen for abonnementstransaksjonen.
 
 Hvis basisprisen for eksempel er EUR 1 000, og indeksen er 110, er salgsprisen EUR 1 100.
 

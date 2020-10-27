@@ -15,15 +15,15 @@ ms.search.scope: Core, Operations
 ms.custom: 9554
 ms.assetid: c5d55c8d-99f2-44f9-a897-5b0dee85fc81
 ms.search.region: Global
-ms.author: omulvad
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: cf54254b38a8bc6e1f0aa70cc090f59734203896
-ms.sourcegitcommit: 54da65a7da0efd4f0d9760c5b14ff785b28751c4
+ms.openlocfilehash: b848a0450c1cce1b3c6f7954397c75a44526d2b1
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "3829937"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3982143"
 ---
 # <a name="sales-agreements-overview"></a>Oversikt over salgsavtaler
 
@@ -35,20 +35,20 @@ En salgsavtale er en kontrakt som forplikter kunden til å kjøpe produkter i et
 
 Gyldighetsperioden for en salgsavtale er definert av feltene **Gyldig fra** og **Utløpsdato** på avtalen. Kundens salgsordre kvalifiserer for avtalevilkårene hvis den ønskede forsendelsesdatoen for ordren er innenfor gyldighetsperioden. Alle salgsordrelinjer som er koblet til en salgsavtale, bidrar til å oppfylle denne salgsavtalen.  
 
-Du kan opprette en salgsordre direkte fra en salgsavtale ved hjelp av **Frigivelsesordre**-handlingen. Du kan også velge en gyldig salgsavtale når du tar i mot ordrer (se "Bruke salgsavtaler i ordreprosessen" i denne artikkelen).  
+Du kan opprette en salgsordre direkte fra en salgsavtale ved hjelp av **Frigivelsesordre** -handlingen. Du kan også velge en gyldig salgsavtale når du tar i mot ordrer (se "Bruke salgsavtaler i ordreprosessen" i denne artikkelen).  
 
 > Obs! I tidligere versjoner ble salgsavtaler kalt for rammebestillinger.
 
 ## <a name="commitment-types"></a>Forpliktelsestyper
 Hver linje i en salgsavtale uttrykker en forpliktelse til å selge noe. Det er vanligvis to kategorier av forpliktelse:
 
--   **Verdiforpliktelse**– kunden godtar å kjøpe produkter for et bestemt beløp.
--   **Antallsforpliktelse**– kunden godtar å kjøpe et bestemt antall produkter.
+-   **Verdiforpliktelse** – kunden godtar å kjøpe produkter for et bestemt beløp.
+-   **Antallsforpliktelse** – kunden godtar å kjøpe et bestemt antall produkter.
 
 En kontrakt kan dessuten forplikte kunden til å kjøpe et bestemt produkt eller produkter i en produktkategori. Ved å kombinere disse to faktorene (verdi kontra antall, og bestemte produkter kontra produktkategorier) får vi fire typer forpliktelse:
 
--   **Produktantallsforpliktelse** – kunden godtar å kjøpe et bestemt antall produkter. Linjer som bruker denne forpliktelsestypen, er definert av et varenummer og av antallet og enheten som ble avtalt. **Beløp**-feltet er ikke tilgjengelig.
--   **Produktverdiforpliktelse**– kunden godtar å kjøpe bestemte produkter for et bestemt beløp. Linjer som bruker denne forpliktelsestypen, er definert av et varenummer og beløpet som ble avtalt. Feltene **Antall** og **Enhet** er ikke tilgjengelige.
+-   **Produktantallsforpliktelse** – kunden godtar å kjøpe et bestemt antall produkter. Linjer som bruker denne forpliktelsestypen, er definert av et varenummer og av antallet og enheten som ble avtalt. **Beløp** -feltet er ikke tilgjengelig.
+-   **Produktverdiforpliktelse** – kunden godtar å kjøpe bestemte produkter for et bestemt beløp. Linjer som bruker denne forpliktelsestypen, er definert av et varenummer og beløpet som ble avtalt. Feltene **Antall** og **Enhet** er ikke tilgjengelige.
 -   **Verdiforpliktelse for produktkategori** – kunden godtar å kjøpe produkter for en bestemt salgskategori for et bestemt beløp. Linjer som bruker denne forpliktelsestypen, er definert av en kategori i hierarkiet av salgskategorier og et beløp. Feltene **Antall** og **Enhet** er ikke tilgjengelige.
 -   **Verdiforpliktelse** – kunden godtar å kjøpe hvilke som helst produkter i alle innkjøpskategorier for et bestemt beløp. Feltene **Antall** og **Enhet** er ikke tilgjengelige.
 
@@ -72,11 +72,11 @@ De følgende policyene påvirker hvordan koblingen mellom en salgsavtaleforplikt
 -   **Laveste frigivelsesbeløp** og **Høyeste frigivelsesbeløp** – Hvis et beløp er angitt, vises en melding hvis du gjør endringer i en ordrelinje som fører til at den er forskjellig fra den tilknyttede forpliktelsen.
 
 ## <a name="fulfillment-calculations-for-sales-agreements"></a>Oppfyllelsesberegninger for salgsavtaler
-Oppfyllelsesantall og -beløp vises i fanen **Oppfyllelse** i hurtigfanen **Linjedetaljer** på siden **Salgsavtaler**.  
+Oppfyllelsesantall og -beløp vises i fanen **Oppfyllelse** i hurtigfanen **Linjedetaljer** på siden **Salgsavtaler** .  
 
-I **Oppfyllelse**-området kan du vise totalt antall og totalbeløp for alle ordrelinjer som er koblet til den angitte salgsavtalen. Du kan også vise gjenstående beløp eller antall som kreves for å oppfylle forpliktelsen.  
+I **Oppfyllelse** -området kan du vise totalt antall og totalbeløp for alle ordrelinjer som er koblet til den angitte salgsavtalen. Du kan også vise gjenstående beløp eller antall som kreves for å oppfylle forpliktelsen.  
 
-I **Avtale**-området kan du vise antallene og beløpene fra den angitte salgsavtalen. Disse antallene og beløpene er de totale antallene og totalbeløpene som er forpliktet.
+I **Avtale** -området kan du vise antallene og beløpene fra den angitte salgsavtalen. Disse antallene og beløpene er de totale antallene og totalbeløpene som er forpliktet.
 
 ## <a name="confirmations-and-version-history-for-sales-agreements"></a>Bekreftelser og versjonshistorikk for salgsavtaler
 Når du bekrefter en salgsavtale, lagres den gjeldende versjonen av salgsavtalen i en historikktabell. Hvis du endrer salgsavtalen, kan du bekrefte den på nytt hvis du vil lagre en annen versjon av salgsavtalen i historikken.  
@@ -93,7 +93,7 @@ Hvis du har opprettet (frigitt) en salgsordre mot en salgsavtale, kan noen felt 
 
 | Felt                                                             | Beskrivelse                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
 |-------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Ønsket forsendelsesdato                                               | Hvis du endrer den ønskede forsendelsesdatoen til en dato som er tidligere enn **Gyldighetsdato**-verdien på salgsavtalelinjen, må du fjerne koblingen til salgsavtalelinjen før du kan lagre den endrede forsendelsesdatoen. Hvis du endrer den ønskede forsendelsesdatoen til en dato som er senere enn **Utløpsdato**-verdien på salgsavtalelinjen, må du fjerne koblingen til salgsavtalelinjen før du kan lagre den endrede forsendelsesdatoen. |
+| Ønsket forsendelsesdato                                               | Hvis du endrer den ønskede forsendelsesdatoen til en dato som er tidligere enn **Gyldighetsdato** -verdien på salgsavtalelinjen, må du fjerne koblingen til salgsavtalelinjen før du kan lagre den endrede forsendelsesdatoen. Hvis du endrer den ønskede forsendelsesdatoen til en dato som er senere enn **Utløpsdato** -verdien på salgsavtalelinjen, må du fjerne koblingen til salgsavtalelinjen før du kan lagre den endrede forsendelsesdatoen. |
 | CurrencyDiscount, percentDiscountUnit, pricePrice, unitNet amount | Hvis du endrer verdien i noen av disse feltene, og hvis det er merket av for **Pris og rabatt er fast** på en tilknyttet salgsavtalelinje, vises en meldingsboks der du blir bedt om å lagre endringen. Klikk på **Ja** for å fjerne koblingen til salgsavtalelinjen og beregne prisen på nytt. Klikk på **Nei** for å fjerne koblingen til salgsavtalelinjen uten å beregne prisen på nytt.                                                                   |
 | Nettobeløp                                                        | Hvis du angir et beløp som overstiger beløpet som er angitt på en salgsavtalelinje der det er merket av for **Maks. håndheves** vises en meldingsboks der du blir bedt om å lagre det endrede beløpet. Klikk på **Ja** for å fjerne koblingen til salgsavtalelinjen og beregne prisen på nytt. Klikk på **Nei** for å fjerne koblingen til salgsavtalelinjen uten å beregne prisen på nytt.                                                                 |
 | Antall                                                          | Hvis du angir et antall som overstiger antallet som er angitt på en salgsavtalelinje der det er merket av for **Maks. håndheves** vises en meldingsboks der du blir bedt om å lagre det endrede antallet. Klikk på **Ja** for å fjerne koblingen til salgsavtalelinjen og beregne prisen på nytt. Klikk på **Nei** for å fjerne koblingen til salgsavtalelinjen uten å beregne prisen på nytt.                                                            |
@@ -101,7 +101,7 @@ Hvis du har opprettet (frigitt) en salgsordre mot en salgsavtale, kan noen felt 
 ## <a name="returning-an-item-that-was-ordered-from-a-sales-agreement"></a>Returnere en vare som er bestilt fra en salgsavtale
 Når en kunde returnerer et produkt som er bestilt gjennom en salgsavtale, kan Supply Chain Management finne og automatisk oppdatere den aktuelle salgsavtaleforpliktelsen for å gjenspeile endringen i antall eller beløp. Ved å opprette en returordre på grunnlag av den opprinnelige salgsordren som er koblet til en salgsavtale, oppretter du en relasjon mellom salgsavtaleforpliktelsen, salgsordrelinjen og returordrefakturaen.  
 
-Hvis du ikke ønsker å trekke returvareantallet fra salgsavtaleforpliktelsen, kan du bruke **Fjern kobling**-kontrollen på **Returordre**-siden for å fjerne koblingen mellom returordren og salgsavtaleforpliktelsen. Hvis du må gjenopprette koblingen senere, klikker du **Opprett kobling**.  
+Hvis du ikke ønsker å trekke returvareantallet fra salgsavtaleforpliktelsen, kan du bruke **Fjern kobling** -kontrollen på **Returordre** -siden for å fjerne koblingen mellom returordren og salgsavtaleforpliktelsen. Hvis du må gjenopprette koblingen senere, klikker du **Opprett kobling** .  
 
 **Obs!** En returordre kan bare kobles til én salgsavtale. Hvis en kunde returnerer flere produkter som ble bestilt gjennom flere salgsavtaler, må du opprette en ny returordre for hvert produkt og opprette en kobling til den tilhørende salgsavtalen.
 

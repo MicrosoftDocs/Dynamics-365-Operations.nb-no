@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: e1e19594327c0042915bfae87f480434a7fcb159
-ms.sourcegitcommit: 7a1d01122790b904e2d96a7ea9f1d003392358a6
+ms.openlocfilehash: db4866b22060b764fdde3e4a44e99e969133c0a0
+ms.sourcegitcommit: f16db76c1c235dfa445b50614bcee9219782d6dc
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "3269987"
+ms.lasthandoff: 10/05/2020
+ms.locfileid: "3961616"
 ---
 # <a name="save-preview-and-publish-a-page"></a>Lagre, forhåndsvise og publisere en side
 
@@ -38,9 +38,9 @@ Når du lagrer en side, er endringene bare synlige for deg. Lagringsoperasjonen 
 
 ## <a name="preview-a-page"></a>Forhåndsvise en side
 
-Redigeringsverktøyet har to typer forhåndsvisningsfunksjoner: en WYSIWYG-forhåndsvisningsrute ("hva du ser, er hva du får") i sideredigeringsprogrammet og et eget forhåndsvisningsvindu.
+Redigeringsverktøyet har to typer forhåndsvisningsfunksjoner: visuell sidebygger, som er en WYSIWYG-forhåndsvisningsrute ("hva du ser, er hva du får") i sideredigeringsprogrammet og et eget forhåndsvisningsvindu.
 
-Når du bruker sideredigeringsprogrammet, vises det en WYSIWYG-forhåndsvisning i den midtre ruten. Denne forhåndsvisningen oppdateres automatisk hver gang du lagrer siden. Du kan også oppdatere den manuelt ved å velge **Oppdater** på kommandolinjen. WYSIWYG-forhåndsvisning gjengir siden på samme måte som områdets brukere vil se den, men redigeringshjelpere gjengis oppå den.
+Når du bruker sideredigeringsprogrammet, vises det en WYSIWYG-forhåndsvisning i den midtre ruten. Denne forhåndsvisningen oppdateres automatisk hver gang du lagrer siden. Du kan også oppdatere den manuelt ved å velge **Oppdater** på kommandolinjen. Forhåndsvisning gjengir siden på samme måte som områdets brukere vil se den, men redigeringshjelpere gjengis oppå den.
 
 Når du er ferdig med å endre siden, kan det være lurt å forhåndsvise den for å se hva kundene vil se. Velg **Forhåndsvisning** på kommandolinjen for å forhåndsvise en side. Forhåndsvisningen vil vises i et eget leservindu. Siden i forhåndsvisningsvinduet vises på samme måte som områdets bruker vil se den. Du kan endre størrelsen på vinduet for å kontrollere at svarmoduler gjengis riktig i alle visningsporter.
 
@@ -67,23 +67,23 @@ Når du publiserer en side, publiseres bare sideinnholdet. Du og andre brukere k
 Følg denne fremgangsmåten for å lagre, forhåndsvise og publisere en startside.
 
 1. Under **Områder** velger du **Fabrikam** (eller navnet på området).
-1. Velg **Sider**i navigasjonsruten til venstre.
+1. Velg **Sider** i navigasjonsruten til venstre.
 1. Finn og velg startsside for å åpne den i sideredigeringsprogrammet.
-1. Velg **Rediger**.
+1. Velg **Rediger** .
 1. Endre siden slik du vil ha den.
-1. Velg **Lagre**, og velg deretter **Fullfør redigering**.
-1. Skriv inn en merknad om endringene du har gjort, i feltet **Kommentar**, og velg deretter **OK**.
+1. Velg **Lagre** , og velg deretter **Fullfør redigering** .
+1. Skriv inn en merknad om endringene du har gjort, i feltet **Kommentar** , og velg deretter **OK** .
 1. Velg **Forhåndsvisning** for å forhåndsvise siden. Når du er ferdig, lukker du forhåndsvisningskategorien for å gå tilbake til redigeringsverktøyet.
-1. Velg **Publiser**.
+1. Velg **Publiser** .
 
 ## <a name="publish-a-url"></a>Publisere en URL-adresse
 
 Hvis du vil publisere en URL-adresse, følger du disse trinnene.
 
 1. Under **Områder** velger du **Fabrikam** (eller navnet på området).
-1. Velg **URL-adresser**i navigasjonsruten til venstre.
+1. Velg **URL-adresser** i navigasjonsruten til venstre.
 1. Finn og velg URL-adressen du vil publisere.
-1. På kommandolinjen velger du **Publiser**.
+1. På kommandolinjen velger du **Publiser** .
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 

@@ -16,15 +16,15 @@ ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
 ms.search.industry: ''
-ms.author: conradv
+ms.author: kamaybac
 ms.dyn365.ops.version: 7.2999999999999998
 ms.search.validFrom: 2017-12-31
-ms.openlocfilehash: 7889f1d21bf38a9063fff6a64da50febd15df5d6
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 20d472c399c75dbbef5e197e8f7f495e81b14ca2
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3209450"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3980870"
 ---
 # <a name="product-lifecycle-state-overview"></a>Oversikt over tilstand for produktlivssyklus
 
@@ -36,9 +36,9 @@ Et frigitt produkt eller produktvariant kan knyttes til en produktlivssyklustils
 
 ## <a name="create-a-new-product-lifecycle-state"></a>Opprette en ny livssyklustilstand for produkt 
 
-- Hvis du vil opprette en ny produktlivssyklustilstand, spiller eller leser du oppgaveveiledningen **Opprette en ny livssyklustilstand for produkt**. 
+- Hvis du vil opprette en ny produktlivssyklustilstand, spiller eller leser du oppgaveveiledningen **Opprette en ny livssyklustilstand for produkt** . 
 
--  Hvis du vil opprette en standard produktlivssyklustilstand, spiller eller leser du oppgaveveiledningen **Opprette en standard livssyklustilstand for produkt**.   
+-  Hvis du vil opprette en standard produktlivssyklustilstand, spiller eller leser du oppgaveveiledningen **Opprette en standard livssyklustilstand for produkt** .   
 
 ## <a name="associate-product-lifecycle-states-to-released-products"></a>Knytte produktlivssyklustilstander til frigitte produkter  
 
@@ -50,24 +50,24 @@ Det finnes flere måter å knytte en produktlivssyklustilstand til frigitte prod
 
 Du kan oppdatere produktlivssyklustilstanden manuelt ved hjelp av: 
 
--    **Frigitte produkter**-listesiden eller **Detaljvisning**. 
--  **Frigitte produktvarianter**-listesiden eller **Detaljvisning**. 
+-    **Frigitte produkter** -listesiden eller **Detaljvisning** . 
+-  **Frigitte produktvarianter** -listesiden eller **Detaljvisning** . 
 -  Finn utdaterte produkter eller produktvarianter basert på behov og tilknytt en livssyklustilstand.  
 
 Hvis du vil ha mer informasjon om hvordan du tilknytter produktlivssyklustilstander, spiller du av eller leser følgende to oppgaveveiledninger.
 
--  Hvis du vil knytte en produktlivssyklustilstand til en frigitt produktstandard, spiller du av eller leser oppgaveveiledningen **Tilordne en produktlivssyklustilstand til en frigitt produktstandard**. 
+-  Hvis du vil knytte en produktlivssyklustilstand til en frigitt produktstandard, spiller du av eller leser oppgaveveiledningen **Tilordne en produktlivssyklustilstand til en frigitt produktstandard** . 
 
--  Hvis du vil knytte en produktlivssyklustilstand til et frigitt produkt, spiller du av eller leser oppgaveveiledningen **Tilordne en produktlivssyklustilstand til et frigitt produkt**. 
+-  Hvis du vil knytte en produktlivssyklustilstand til et frigitt produkt, spiller du av eller leser oppgaveveiledningen **Tilordne en produktlivssyklustilstand til et frigitt produkt** . 
 
 ## <a name="impact-on-master-planning"></a>Påvirkning på hovedplanlegging 
 
-Produktlivssyklustilstanden har bare ett kontrollflagg: **Er aktiv for planlegging**. Som standard er dette satt til **Ja** for alle opprettede produktlivssyklustilstander, men det kan endres til **Nei**. Hvis du angir **Nei**, er de tilknyttede frigitte produktene eller frigitte produktvariantene: 
+Produktlivssyklustilstanden har bare ett kontrollflagg: **Er aktiv for planlegging** . Som standard er dette satt til **Ja** for alle opprettede produktlivssyklustilstander, men det kan endres til **Nei** . Hvis du angir **Nei** , er de tilknyttede frigitte produktene eller frigitte produktvariantene: 
 
 -  Utelatt fra hovedplanlegging. 
 -  Ekskludert fra beregning av stykklistenivå. 
 
-Hvis du vil ha mer informasjon om hvordan du bruker produktlivssyklustilstand for å utelate produkter fra hovedplanlegging og stykklistenivåberegning, spiller du av eller leser oppgaveveiledningen **Opprette en produktlivssyklustilstand for å utelukke produkter fra hovedplanlegging**.
+Hvis du vil ha mer informasjon om hvordan du bruker produktlivssyklustilstand for å utelate produkter fra hovedplanlegging og stykklistenivåberegning, spiller du av eller leser oppgaveveiledningen **Opprette en produktlivssyklustilstand for å utelukke produkter fra hovedplanlegging** .
 
 > [!NOTE]
 > Av hensyn til ytelsen anbefales det å knytte alle foreldede frigitte produkter eller produktvarianter, spesielt når du arbeider med ikke-gjenbrukbare produktkonfigurasjonsvarianter, til en produktlivssyklustilstand som er deaktivert for hovedplanlegging.  
@@ -78,7 +78,7 @@ Produktlivssyklustilstandene støttes ikke av dataenheter, og livssyklustilstand
 
 ## <a name="find-obsolete-products-and-products-variants"></a>Finn foreldede produkter og produktvarianter 
 
-Du kan kjøre en simuleringsanalyse for å finne de foreldede frigitte produktene eller produktvariantene og deretter oppdatere produktlivssyklusstatusen deres. Hvis du vil finne utdaterte produkter, kan du spille av eller lese oppgaveveiledningen **Finne utdaterte produktvarianter og tilordne en produktlivssyklustilstand**. Denne oppgaveveiledningen viser hvordan du finner foreldede frigitte produkter og produktvarianter og hvordan du knytter en produktlivssyklustilstand til de foreldede produktene. Den viser også hvordan du viser simuleringsresultatene og vurderer hvor mange produkter og produktvarianter som skal være tilknyttet en ny produktlivssyklustilstand når du kjører oppdateringen uten simulering.  
+Du kan kjøre en simuleringsanalyse for å finne de foreldede frigitte produktene eller produktvariantene og deretter oppdatere produktlivssyklusstatusen deres. Hvis du vil finne utdaterte produkter, kan du spille av eller lese oppgaveveiledningen **Finne utdaterte produktvarianter og tilordne en produktlivssyklustilstand** . Denne oppgaveveiledningen viser hvordan du finner foreldede frigitte produkter og produktvarianter og hvordan du knytter en produktlivssyklustilstand til de foreldede produktene. Den viser også hvordan du viser simuleringsresultatene og vurderer hvor mange produkter og produktvarianter som skal være tilknyttet en ny produktlivssyklustilstand når du kjører oppdateringen uten simulering.  
 
 Ved å kjøre analysen i simuleringsmodus vises produktene og produktvariantene som er identifisert som foreldede, i et bestemt skjema, der de kan lett kan gjennomgås. Analysen søker etter transaksjoner og bestemte hoveddata for å identifisere produkter som ikke har etterspørsel i en variabel periode, og ingen hoveddata som kan føre til etterspørsel. Ny frigitte produkter i en variabel periode kan utelates fra analysen. Når analysesimuleringen returnerer det forventede resultatet, kan brukeren kjøre analysen og angi en ny produktlivssyklustilstand for alle produkter som er identifisert som foreldede i analysen.  
 

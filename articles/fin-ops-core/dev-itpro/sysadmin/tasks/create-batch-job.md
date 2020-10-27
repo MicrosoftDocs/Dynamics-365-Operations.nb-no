@@ -13,15 +13,15 @@ audience: Application User
 ms.reviewer: sericks
 ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: maertenm
+ms.author: sericks
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: f6eee5c6dd7daf2b0c79dd34d15a7dde919bdd60
-ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
+ms.openlocfilehash: 4903724adc9deaa40b6cd04c215273dd4b0522d4
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3143679"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3982532"
 ---
 # <a name="create-a-batch-job"></a>Opprette en satsvis jobb
 
@@ -31,27 +31,27 @@ En satsvis jobb er en gruppe oppgaver som sendes til en AOS-forekomst (Applicati
 
 
 ## <a name="create-the-batch-job"></a>Opprette den satsvise jobben
-1. Gå til **Navigasjonsrute > Moduler > Systemadministrasjon > Forespørsler > Satsvise jobber**.
-2. Klikk på **Ny**.
-3. Skriv inn en verdi i **Jobbeskrivelse**-feltet.
-4. Angi en dato og et klokkeslett i feltet **Planlagt startdato/-klokkeslett**.
-5. Klikk **Lagre**.
+1. Gå til **Navigasjonsrute > Moduler > Systemadministrasjon > Forespørsler > Satsvise jobber** .
+2. Klikk på **Ny** .
+3. Skriv inn en verdi i **Jobbeskrivelse** -feltet.
+4. Angi en dato og et klokkeslett i feltet **Planlagt startdato/-klokkeslett** .
+5. Klikk **Lagre** .
 
 ## <a name="create-a-recurrence"></a>Opprette en gjentakelse
 1. Klikk på **Satsvis jobb** i handlingsruten.
-2. Klikk på **Regelmessighet**. Bruk disse alternativene for å angi et område og mønster for regelmessighet.  
-3. Klikk **OK**.
+2. Klikk på **Regelmessighet** . Bruk disse alternativene for å angi et område og mønster for regelmessighet.  
+3. Klikk **OK** .
 
 ## <a name="add-alerts"></a>Legge til varsler
 1. Klikk på **Satsvis jobb** i handlingsruten.
-2. Klikk på **Varsler**. Angi om du vil at det skal sendes varslingsmeldinger når den satsvise jobben avsluttes, har en feil eller avbrytes. Angi deretter om du vil at varslene skal vises som popup-meldinger.   
-3. Klikk **OK**.
+2. Klikk på **Varsler** . Angi om du vil at det skal sendes varslingsmeldinger når den satsvise jobben avsluttes, har en feil eller avbrytes. Angi deretter om du vil at varslene skal vises som popup-meldinger.   
+3. Klikk **OK** .
 
 ## <a name="adjust-batch-job-status"></a>Justere status for satsvis jobb
-1. Gå til **Systemadministrasjon > Forespørsler > Satsvise jobber**.
+1. Gå til **Systemadministrasjon > Forespørsler > Satsvise jobber** .
 2. Velg den riktige satsvise jobben.
 3. Klikk på **Satsvis jobb > Funksjoner > Endre status** i handlingsruten.
 4. Velg den aktuelle statusen:
-    - **Trekk tilbake**: Angi **tilbakeholdt** for den satsvise jobben, slik at den holdes tilbake fra planleggeren for satsvis jobb. Tilsvarer *stopp*.
-    - **Venter**: Angi **venter** for den satsvise jobben, slik at den venter på å bli hentet av planleggeren for satsvis jobb. Tilsvarer *start*.
-5. Klikk **OK**.
+    - **Trekk tilbake** : Angi **tilbakeholdt** for den satsvise jobben, slik at den holdes tilbake fra planleggeren for satsvis jobb. Tilsvarer *stopp* .
+    - **Venter** : Angi **venter** for den satsvise jobben, slik at den venter på å bli hentet av planleggeren for satsvis jobb. Tilsvarer *start* .
+5. Klikk **OK** .

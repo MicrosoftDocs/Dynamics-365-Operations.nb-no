@@ -3,7 +3,7 @@ title: Fjernede eller avskrevne Platform-funksjoner
 description: Dette emnet beskriver funksjoner som er fjernet eller som er planlagt for fjerning i plattformoppdateringer av Finance and Operations-apper.
 author: sericks007
 manager: AnnBe
-ms.date: 09/17/2020
+ms.date: 09/24/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 0b78401f4c1cf289247cd2d600f097ecdf6a712c
-ms.sourcegitcommit: 084eda1d5503be83e97e2e428e67ef5393535fab
+ms.openlocfilehash: 51d1d0ed2ce95573ec123121999d73446a7e4ea4
+ms.sourcegitcommit: 6e0d6d291d4881b16a677373f712a235e129b632
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "3819895"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "3971451"
 ---
 # <a name="removed-or-deprecated-platform-features"></a>Fjernede eller avskrevne Platform-funksjoner
 
@@ -34,6 +34,22 @@ Dette emnet beskriver funksjoner som er fjernet eller som er planlagt for fjerni
 Denne listen er ment å hjelpe deg med å vurdere disse fjerningene og avskrivningene for din egen planlegging. 
 
 Detaljert informasjon om objekter i Finance and Operations-apper finnes i [Tekniske referanserapporter](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep). Du kan sammenligne de ulike versjonene av disse rapportene for å lære om objekter som er endret eller fjernet i hver versjon av Finance and Operations-apper.
+
+## <a name="platform-updates-for-version-10015-of-finance-and-operations-apps"></a>Plattformoppdateringer for versjon 10.0.15 av Finance and Operations-apper
+
+> [!NOTE]
+> Versjon 10.0.15 er en forhåndsversjon. Innholdet og funksjonaliteten kan bli endret. Hvis du vil ha mer informasjon om forhåndsvisning versjoner, kan du se [Vanlige spørsmål om oppdatering av én versjonstjeneste](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/one-version).
+
+### <a name="visual-studio-add-in-to-apply-metadata-hotfixes"></a>Visual Studio-tillegg for å bruke hurtigreparasjoner for metadata
+
+|   |  |
+|------------|--------------------|
+| **Årsak til avskrivning/fjerning** | Hurtigreparasjoner for metadata støttes ikke lenger med [Én versjon](../../fin-ops/get-started/one-version.md)-tjenesteoppdateringene som ble introdusert i juli 2018 med versjon 8.1. |
+| **Erstattet med en annen funksjon?**   | Individuelle hurtigreparasjoner for metadata er ikke tilgjengelige for versjoner som støttes. Kumulative kvalitetsoppdateringer brukes i stedet. |
+| **Berørte produktområder**         | Visual Studio-tillegg |
+| **Distribusjonsalternativ**              | Virtuelle maskiner for utvikling |
+| **Status**                         | Med versjon 10.0.15 er ikke tillegget lenger inkludert i Visual Studio-verktøyene. |
+
 
 ## <a name="platform-updates-for-version-10014-of-finance-and-operations-apps"></a>Plattformoppdateringer for versjon 10.0.14 av Finance and Operations-apper
 
@@ -50,6 +66,7 @@ Detaljert informasjon om objekter i Finance and Operations-apper finnes i [Tekni
 | **Berørte produktområder**         | Systemadministrasjon |
 | **Distribusjonsalternativ**              | Alle |
 | **Status**                         | Innen oktober 2021 blir dette skjemaet fjernet.   |
+
 
 ## <a name="platform-updates-for-version-10013-of-finance-and-operations-apps"></a>Plattformoppdateringer for versjon 10.0.13 av Finance and Operations-apper
 
@@ -101,7 +118,7 @@ Detaljert informasjon om objekter i Finance and Operations-apper finnes i [Tekni
 
 |   |  |
 |------------|--------------------|
-| **Årsak til avskrivning/fjerning** | Egenskapen datagruppe i rutenett- eller gruppekontroller brukes til automatisk å vise alle felt i en feltgruppe. Et rutenett eller en gruppekontroll som er lagt til via en utvidelse, kan inneholde felt som ikke lenger er definert i feltgruppen, eller de kan mangle felt som er definert i feltgruppen. Dette kan føre til inkonsekvent virkemåte ved kjøring. Plattformoppdateringer for versjon 10.0.12 av Finance and Operations-apper kategoriserer nå dette problemet som en kompilerings-*advarsel*. Du kan løse dette problemet ved å åpne skjemautvidelsen og lagre den.
+| **Årsak til avskrivning/fjerning** | Egenskapen datagruppe i rutenett- eller gruppekontroller brukes til automatisk å vise alle felt i en feltgruppe. Et rutenett eller en gruppekontroll som er lagt til via en utvidelse, kan inneholde felt som ikke lenger er definert i feltgruppen, eller de kan mangle felt som er definert i feltgruppen. Dette kan føre til inkonsekvent virkemåte ved kjøring. Plattformoppdateringer for versjon 10.0.12 av Finance and Operations-apper kategoriserer nå dette problemet som en kompilerings- *advarsel* . Du kan løse dette problemet ved å åpne skjemautvidelsen og lagre den.
 | **Erstattet med en annen funksjon?**   | Denne kompilatoradvarselen vil bli erstattet med en kompilatorfeil i en fremtidig oppdatering. |
 | **Berørte produktområder**         | Visual Studio-utviklingsverktøy |
 | **Distribusjonsalternativ**              | Alle |
@@ -133,7 +150,7 @@ Detaljert informasjon om objekter i Finance and Operations-apper finnes i [Tekni
 
 |   |  |
 |------------|--------------------|
-| **Årsak til avskrivning/fjerning** | Feltgrupper i definisjoner av tabellmetadata kan inneholde feltreferanser som ikke er gyldige. Hvis disse feltgruppene er distribuert, kan dette føre til kjøretidsfeil for kjøring i Financial Reporting og Microsoft SQL Server Reporting Services (SSRS). Platform Update 23 innførte en kompilator-*advarsel* som muliggjorde håndtering av dette sikkerhetsproblemet. Plattformoppdateringer for versjon 10.0.11 av Finance and Operations-apper kategoriserer dette problemet som en kompilerings*feil*.<p>Følg fremgangsmåten nedenfor for å løse problemet.</p><ol><li>Fjern den ugyldige feltreferansen fra definisjonen for tabellfeltgruppen.</li><li>Kompiler på nytt.</li><li>Kontroller at eventuelle feil er tatt hånd om.</li></ol> |
+| **Årsak til avskrivning/fjerning** | Feltgrupper i definisjoner av tabellmetadata kan inneholde feltreferanser som ikke er gyldige. Hvis disse feltgruppene er distribuert, kan dette føre til kjøretidsfeil for kjøring i Financial Reporting og Microsoft SQL Server Reporting Services (SSRS). Platform Update 23 innførte en kompilator- *advarsel* som muliggjorde håndtering av dette sikkerhetsproblemet. Plattformoppdateringer for versjon 10.0.11 av Finance and Operations-apper kategoriserer dette problemet som en kompilerings *feil* .<p>Følg fremgangsmåten nedenfor for å løse problemet.</p><ol><li>Fjern den ugyldige feltreferansen fra definisjonen for tabellfeltgruppen.</li><li>Kompiler på nytt.</li><li>Kontroller at eventuelle feil er tatt hånd om.</li></ol> |
 | **Erstattet med en annen funksjon?**   | Denne kompileringsfeilen erstatter kompileringsadvarselen permanent.  |
 | **Berørte produktområder**         | Visual Studio-utviklingsverktøy |
 | **Distribusjonsalternativ**              | Alle |

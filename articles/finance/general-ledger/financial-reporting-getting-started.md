@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a7cc238c573a319073b451063782762c19a80017
-ms.sourcegitcommit: 28a771d81322e72d88db63a20ff360de084a6087
+ms.openlocfilehash: 363ce16b31a199e519c969746c4f10430d9d7497
+ms.sourcegitcommit: 165e082e59ab783995c16fd70943584bc3ba3455
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "3835116"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "3967264"
 ---
 # <a name="get-started-with-financial-reporting"></a>Komme i gang med Financial Reporting 
 
@@ -34,7 +34,7 @@ Dette emnet beskriver hvor du kan få tilgang til økonomisk rapportering og hvo
 <a name="accessing-financial-reporting"></a>Tilgang til finansrapportering
 -----------------------------
 
-Du finner **Financial reporting**-menyen på følgende lokasjoner:
+Du finner **Financial reporting** -menyen på følgende lokasjoner:
 
 -   **Økonomimodul** &gt; **Forespørsler og rapporter**
 -   **Budsjettering** &gt; **Forespørsler og rapporter** &gt; **Grunnleggende budsjettering**
@@ -85,18 +85,18 @@ Når en bruker er lagt til eller en rolle er endret, skal brukeren kunne få til
 > Sysadmin-rollen er lagt til alle roller i Financal Reporting.
 
 ## <a name="report-deletions-and-expirations"></a>Rapportslettinger og -utløp
-Brukere som genererer en rapport, kan slette sine egne rapporter. Brukere med plikten **Vedlikehold finansrapporteringssikkerhet**, kan slette andres rapporter. 
+Brukere som genererer en rapport, kan slette sine egne rapporter. Brukere med plikten **Vedlikehold finansrapporteringssikkerhet** , kan slette andres rapporter. 
 
-I versjon 10.0.8 ble konseptet med utløpsdatoer innført. En ny nødvendig funksjon er aktivert på **Alle**-siden i arbeidsområdet for funksjonsbehandling. Funksjonen **Oppbevaringspolicyer for finansrapport** inneholder følgende endringer:
+I versjon 10.0.8 ble konseptet med utløpsdatoer innført. En ny nødvendig funksjon er aktivert på **Alle** -siden i arbeidsområdet for funksjonsbehandling. Funksjonen **Oppbevaringspolicyer for finansrapport** inneholder følgende endringer:
 * Nylig genererte rapporter blir automatisk merket som å ha en utløpsdato på 90 dager fra når de genereres.
 * Eventuelle eksisterende rapporter fra før funksjonen ble installert vil bli gitt en 90 dagers utløpsperiode. Datoen kan vises som tom for en kort tidsperiode før finansrapporteringstjenesten kjører, en rapport genereres, og tjenesten utfører oppdateringen til eksisterende rapporter med en tom utløpsdato. 
-* Brukere med **Vedlikehold finansrapporteringssikkerhet**, har tilgang til denne funksjonaliteten. Alle brukere i plikten **Vedlikehold finansrapporter** gitt rettigheten **Vedlikehold utløp for finansrapport** vil også ha muligheten til å endre utløpsperioden. For øyeblikket er det to tilgjengelige bevaringsalternativer: 
+* Brukere med **Vedlikehold finansrapporteringssikkerhet** , har tilgang til denne funksjonaliteten. Alle brukere i plikten **Vedlikehold finansrapporter** gitt rettigheten **Vedlikehold utløp for finansrapport** vil også ha muligheten til å endre utløpsperioden. For øyeblikket er det to tilgjengelige bevaringsalternativer: 
   * Utløp av 90 dager.
   * Et alternativ for å angi at rapporten aldri skal utløpe.
   
 Når et utløp, for eksempel 90 dager, er valgt, blir den brukt 90 dager fra i dag. Dette er en annen virke måte enn 90 dager fra den opprinnelige genereringsdatoen som ble angitt da rapporten ble generert. 
   
-Flere alternativer vil bli tatt med i fremtidig funksjonalitet. Utløpet på 90 dager vil være standard, og brukere med riktige tillatelser kan overstyre standardinnstillingene på listesiden **Finansrapporter**.    
+Flere alternativer vil bli tatt med i fremtidig funksjonalitet. Utløpet på 90 dager vil være standard, og brukere med riktige tillatelser kan overstyre standardinnstillingene på listesiden **Finansrapporter** .    
 
 ## <a name="default-reports"></a>Standardrapporter
 Finansrapportering gir 22 standard finansrapporter. Alle rapportene bruker standard hovedkontokategorier. Du kan bruke disse rapportene som de er eller som et utgangspunkt for ditt finansrapporteringsbehov. I tillegg til de tradisjonelle regnskapsoppgjørene, for eksempel resultatregnskap og balanse, inkluderer disse standardrapportene rapporter som viser de forskjellige typene finansrapporter du kan opprette. 
@@ -129,7 +129,7 @@ Finansrapportering gir 22 standard finansrapporter. Alle rapportene bruker stand
 | Budsjettmidler tilgjengelig - standard                         | Vis en detaljert sammenligning av revidert budsjett, faktiske utgifter, budsjettreservasjoner og budsjettmidler tilgjengelig for alle kontoer                                                                                                                                                                                  |
 
 ## <a name="opening-financial-reports"></a>Åpne finansrapporter
-Når du velger **Financial Reporting**-menyen, vises listen over standard finansrapporter for firmaet. Deretter kan du åpne eller endre en rapport. Velg rapportnavnet for å åpne en av standardrapportene. Første gang en rapport åpnes, genereres den automatisk for forrige måned. Hvis du for eksempel åpner en rapport for første gang i august 2019, genereres rapporten for 31. juli 2019. Når en rapport åpnes, kan du begynne å utforske den ved å gå nedover i bestemte deler av data og endre rapportalternativer.
+Når du velger **Financial Reporting** -menyen, vises listen over standard finansrapporter for firmaet. Deretter kan du åpne eller endre en rapport. Velg rapportnavnet for å åpne en av standardrapportene. Første gang en rapport åpnes, genereres den automatisk for forrige måned. Hvis du for eksempel åpner en rapport for første gang i august 2019, genereres rapporten for 31. juli 2019. Når en rapport åpnes, kan du begynne å utforske den ved å gå nedover i bestemte deler av data og endre rapportalternativer.
 
 ## <a name="creating-and-modifying-financial-reports"></a>Opprette og endre finansrapporter
 Du kan opprette en ny rapport fra listen for finansrapporter eller endre en eksisterende rapport. Hvis du har de nødvendige tillatelsene, kan du opprette en ny finansrapport ved å velge **Ny** i handlingsruten. Et rapportutforming-program lastes ned til enheten. Du kan deretter opprette den nye rapporten etter at rapportutformingen starter. Når du har lagret den nye rapporten, vises den i finansrapportlisten. Listen viser bare rapporter som er opprettet for firmaet som du bruker i Dynamics 365 Finance. 
@@ -143,20 +143,25 @@ Du kan opprette et ubegrenset antall rapporteringstrær for å vise organisasjon
 ## <a name="troubleshooting-issues-opening-report-designer"></a>Feilsøke problemer med å åpne Rapportutforming
 Det finnes noen vanlige problemer som kan føre til problemer når du åpner Rapportutforming. Disse problemene og fremgangsmåten for å løse dem er som følger.
 
-Problem 1: Rapportutforming starter ikke når du velger **Ny** eller **Rediger**.
+Problem 1: Rapportutforming starter ikke når du velger **Ny** eller **Rediger** .
 
-* Under Internet Explorer velger du **Innstillinger**, og deretter velger du **Alternativer for Internett**. Velg kategorien **Sikkerhet**. Velg Klarerte områder, og velg deretter **Områder**. I **Legg til dette nettstedet i sonen** angir du "\*\.dynamics.com" (uten anførselstegn) og velger deretter **Legg til**. 
-* Under Internet Explorer velger du **Innstillinger**, og deretter velger du **Alternativer for Internett**. Velg **Sikkerhet**-kategorien. Velg Klarerte områder. I området merket Sikkerhetsnivå for denne sonen endrer du alternativet til **Middels–lavt**.
+* Under Internet Explorer velger du **Innstillinger** , og deretter velger du **Alternativer for Internett** . Velg kategorien **Sikkerhet** . Velg Klarerte områder, og velg deretter **Områder** . I **Legg til dette nettstedet i sonen** angir du "\*\.dynamics.com" (uten anførselstegn) og velger deretter **Legg til** . 
+* Under Internet Explorer velger du **Innstillinger** , og deretter velger du **Alternativer for Internett** . Velg **Sikkerhet** -kategorien. Velg Klarerte områder. I området merket Sikkerhetsnivå for denne sonen endrer du alternativet til **Middels–lavt** .
 * Deaktiver popup-blokkering i leseren.
 * Arbeidsstasjoner kreves for å installere Microsoft .NET Framework 4.6.2 eller senere. Denne versjonen av Microsoft .NET Framework kan lastes ned og installeres fra [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=53345).
-* Hvis du bruker Chrome-leseren, må du installere et ClickOnce-tillegg for å kunne laste ned Rapportutforming-klienten. Hvis du kjører i inkognitomodus, må du kontrollere at ClickOnce-tillegget er aktivert for inkognitomodus. Hvis du ikke får logget deg på med Chrome, kan du prøve å følge installasjonstrinnene som er beskrevet i problem 1 ved hjelp av Internet Explorer eller Edge. 
+* Hvis du bruker Microsoft Edge med Chrome-leseren, må du installere et ClickOnce-tillegg for å kunne laste ned Rapportutforming-klienten. Hvis du kjører i inkognitomodus, må du kontrollere at ClickOnce-tillegget er aktivert for inkognitomodus. 
+     1. Åpne en ny nettleser i Microsoft Edge.
+     2. Angi **edge://flags** , og velg **Enter** .
+     3. Søk etter alternativet **ClickOnce kundestøtte** , eller bruk denne direkte koblingen: **edge://flags/#edge-click-once** .
+     4. Sett rullegardinmenyen til **Aktivert** .
+     5. Velg **Start leseren på nytt** .
 
 Problem 2: Brukeren er ikke tilordnet de nødvendige tillatelsene til å bruke Financial Reporting. 
 
-* Hvis du vil kontrollere om brukeren ikke har tillatelse, velger du **Ja** ved feilen "Kan ikke koble til Financial Reporting-serveren. Velg Ja hvis du vil fortsette og angi en annen serveradresse." Velg deretter **Tilkoblingstest**. Hvis du ikke har tillatelse til det, vil du se en melding om at "Tilkoblingsforsøket mislyktes. Brukeren har ikke nødvendige tillatelser til å koble til serveren. Kontakt systemansvarlig."
+* Hvis du vil kontrollere om brukeren ikke har tillatelse, velger du **Ja** ved feilen "Kan ikke koble til Financial Reporting-serveren. Velg Ja hvis du vil fortsette og angi en annen serveradresse." Velg deretter **Tilkoblingstest** . Hvis du ikke har tillatelse til det, vil du se en melding om at "Tilkoblingsforsøket mislyktes. Brukeren har ikke nødvendige tillatelser til å koble til serveren. Kontakt systemansvarlig."
 * Nødvendige tillatelser er oppført ovenfor i [Tildele sikkerhetstilgang til Financial Reporting](#granting-security-access-to-financial-reporting). Sikkerhet i Financial Reporting er basert på disse rettighetene. Du får ikke tilgang med mindre disse rettighetene (eller en annen sikkerhetsrolle som inneholder disse rettighetene) er tilordnet til deg. 
 * Integrasjonsoppgaven **Firmabrukeres leverandør til selskap** (som også er ansvarlig for og kjent som brukerintegrasjon), kjører med et intervall på 5 minutter. Det kan ta opptil 10 minutter før alle endringer i tillatelser trer i kraft i Financial Reporting. 
-  Hvis en annen bruker kan åpne Rapportutforming, velger du **Verktøy**, og deretter velger du **Integreringsstatus**. Kontroller at integreringskartet, "Firmabrukeres leverandør til selskap", har blitt kjørt riktig fordi du var tilordnet tillatelse til å bruke Financial Reporting. 
+  Hvis en annen bruker kan åpne Rapportutforming, velger du **Verktøy** , og deretter velger du **Integreringsstatus** . Kontroller at integreringskartet, "Firmabrukeres leverandør til selskap", har blitt kjørt riktig fordi du var tilordnet tillatelse til å bruke Financial Reporting. 
 * Det er mulig at en annen feil har forhindret **integrasjon fra Dynamics-bruker til Financial Reporting-bruker** i å fullføres. Det er mulig at en datatorgtilbakestilling er startet og ikke er fullført ennå, eller at det har oppstått en annen systemfeil. Prøv å kjøre prosessen på nytt senere. Hvis problemet vedvarer, kontakter du systemansvarlig.
 
 Problem 3: Du kan fortsette etter påloggingssiden for ClickOnce Rapportutforming, men du kan ikke fullføre påloggingen i Rapportutforming. 

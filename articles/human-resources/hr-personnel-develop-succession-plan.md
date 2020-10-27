@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 6cf056f9c8f1f24bb6eb0f619c476b1095a854bb
-ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
+ms.openlocfilehash: e9334bb8a594d19aa82167cfa11a9522bbba4bea
+ms.sourcegitcommit: 4a32634690a741535f3f4babfd753f7c227ad6fe
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "3428645"
+ms.lasthandoff: 10/05/2020
+ms.locfileid: "3958849"
 ---
 # <a name="develop-succession-plan"></a>Utvikle rekkefølgeplan
 
@@ -38,7 +38,7 @@ Siden organisasjonen din vokser og du vurderer vellykket planlegging, ønsker du
 7. Klikk Person.
 8. Skriv inn et navn i Person-feltet, eller velg rullegardinlisten.  Eksempel: Cassie Hicks.
 9. Klikk OK.
-10. Utvid hurtigkategorien sertifikater for å vise eller redigere sertifikatene som er inkludert i kompetansesøket.
+10. Vis hurtigkategorien sertifikater for å vise eller redigere sertifikatene som er inkludert i kompetansesøket.
 11. Vis hurtigkategorien Kompetanse for å vise eller redigere kompetansen som skal inkluderes.
 12. Merk den første raden i listen.  Eksempel: Regnskapsfører
 13. Klikk i avmerkingsboksen Valgfritt.

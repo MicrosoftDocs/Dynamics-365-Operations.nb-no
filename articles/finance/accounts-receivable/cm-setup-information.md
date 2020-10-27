@@ -12,15 +12,15 @@ audience: Application User
 ms.reviewer: roschlom
 ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: mfalkner
+ms.author: roschlom
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 524ae7b3062893ed07170227ea9b8908cd5858e1
-ms.sourcegitcommit: 1fb34abfe3382bc00237a2c00184fe201c12229f
+ms.openlocfilehash: d1d33dbbd37daaa75f4b64359194a2328728b27f
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/19/2020
-ms.locfileid: "3151303"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3977893"
 ---
 # <a name="credit-management-setup"></a>Oppsett for kredittbehandling 
 
@@ -60,29 +60,29 @@ Det brukes flere typer årsaker i kredittbehandling:
 - Frigivelsesårsaker tilordnes en ordre når den frigis fra sperring.
 - Statusårsaker angir hvorfor en kontostatus ble tilordnet til en kunde.
 
-Du kan definere årsaker på siden **Kredittbehandlingsårsaker** (**Kreditt og innkreving \> Oppsett \> Kredittbehandlingsoppsett \> Kredittbehandlingsårsaker**).
+Du kan definere årsaker på siden **Kredittbehandlingsårsaker** ( **Kreditt og innkreving \> Oppsett \> Kredittbehandlingsoppsett \> Kredittbehandlingsårsaker** ).
 
-1. Velg årsakstypen i **Årsakstype**-feltet: **Sperre**, **Frigivelse** eller **Status**.
-2. I **Årsak**-feltet angir du et navn på årsaken.
-3. I **Beskrivelse**-feltet angir du en beskrivelse av årsakskoden.
+1. Velg årsakstypen i **Årsakstype** -feltet: **Sperre** , **Frigivelse** eller **Status** .
+2. I **Årsak** -feltet angir du et navn på årsaken.
+3. I **Beskrivelse** -feltet angir du en beskrivelse av årsakskoden.
 
 ## <a name="credit-management-groups"></a>Kredittbehandlingsgrupper
 
 Kredittbehandlingsgrupper brukes til å identifisere kunder eller grupper med kunder som har samme kredittbehandlingsegenskaper. For eksempel kan kredittbehandlingsgrupper brukes til å bestemme kredittbehandlingsregler for blokkering og ekskludering for kunder.
 
-Du kan opprette kredittbehandlingsgrupper på siden **Kredittbehandlingsgrupper** (**Kreditt og innkreving \> Oppsett > Kredittbehandlingsoppsett \> Kredittbehandlingsgrupper**).
+Du kan opprette kredittbehandlingsgrupper på siden **Kredittbehandlingsgrupper** ( **Kreditt og innkreving \> Oppsett > Kredittbehandlingsoppsett \> Kredittbehandlingsgrupper** ).
 
 1. Velg **Ny** for å opprette en linje.
 2. Angi en ID for gruppen. ID-en kan inneholde opptil 10 tegn.
-3. Skriv inn et navn for gruppen i feltet **Beskrivelse**. Navnet kan inneholde opptil 60 tegn.
+3. Skriv inn et navn for gruppen i feltet **Beskrivelse** . Navnet kan inneholde opptil 60 tegn.
 
-Kredittbehandlingsgruppen tilordnes til en kunde i hurtigfanen **Kreditt og innkreving** på **Alle kunder**-siden (**Kunder \> Kunder \> Alle kunder**).
+Kredittbehandlingsgruppen tilordnes til en kunde i hurtigfanen **Kreditt og innkreving** på **Alle kunder** -siden ( **Kunder \> Kunder \> Alle kunder** ).
 
 ## <a name="account-statuses"></a>Kontostatuser
 
 Du kan opprette kontostatuser som identifiserer kredittstatusen til en kundekonto. Du kan definere en status og virkningen på prosessene for fakturering og levering på vent. Kontostatuser kan også brukes til å bestemme blokkeringsregler for en kunde.
 
-Du kan opprette kontostatuser på **Kontostatuser**-siden (**Credit and collections \> Oppsett > Kredittbehandlingsoppsett \> Kontostatuser**).
+Du kan opprette kontostatuser på **Kontostatuser** -siden ( **Credit and collections \> Oppsett > Kredittbehandlingsoppsett \> Kontostatuser** ).
 
 1. Legg til en kontostatus, og angi en beskrivelse som representerer kredittstatusen for en kunde. Du kan for eksempel bruke **Normal** til å angi at en kunde er solid og åpne ordrer er underlagt standard kredittbehandling.
 2. I feltene **Fakturering** og **Levering på vent** velger du type sperring som skal forekomme for kunder som har denne kontostatusen. Du kan sperre all behandling, bare fakturabehandling eller ingen behandling når kredittgrensereglene brukes.
@@ -91,7 +91,7 @@ Du kan opprette kontostatuser på **Kontostatuser**-siden (**Credit and collecti
 
 Du kan definere poengberegningsgrupper for å definere risikofaktorer og kriteriene som brukes til å måle dem. Når informasjon om en kunde brukes på en poengberegningsgruppe, beregnes en poengsum for hver risikofaktor og brukes til å plassere kunden i en risikogruppe. Risikogruppen kan brukes til å identifisere kredittverdighet og beregne automatiske kredittgrenser.
 
-Du kan opprette poengberegningsgrupper på siden **Poengberegningsgrupper** (**Kreditt og innkreving \> Oppsett \> Kredittbehandlingsoppsett \> Risiko \> Poengberegningsgrupper**).
+Du kan opprette poengberegningsgrupper på siden **Poengberegningsgrupper** ( **Kreditt og innkreving \> Oppsett \> Kredittbehandlingsoppsett \> Risiko \> Poengberegningsgrupper** ).
 
 1. Opprett en poengberegningsgruppe og angi et navn for den.
 2. Angi en beskrivelse for å beskrive poengberegningsgruppen ytterligere.
@@ -103,20 +103,20 @@ Du kan opprette poengberegningsgrupper på siden **Poengberegningsgrupper** (**K
 
 5. Hvis du valgte **Område** som poengsumtype, legger du til linjer for å definere verdiområdet og de tilsvarende poengsummene.
 
-    1. I **Fra verdi**-feltet angir du den laveste verdien i området.
-    2. I **Til verdi**-feltet angir du den høyeste verdien i området.
-    3. I **Poengsum**-feltet angir du poengsummen som skal tilordnes når verdien som er oppgitt, er i fra/til-området.
+    1. I **Fra verdi** -feltet angir du den laveste verdien i området.
+    2. I **Til verdi** -feltet angir du den høyeste verdien i området.
+    3. I **Poengsum** -feltet angir du poengsummen som skal tilordnes når verdien som er oppgitt, er i fra/til-området.
 
     Hvis du valgte **Brukerdefinert** som poengsumtype, legger du til linjer for å definere de brukerdefinerte verdiene og de tilsvarende poengsummene.
 
-    1. I **Verdi**-feltet angir du den brukerdefinerte verdien som skal oppgis fra kundeinformasjonen.
-    2. I **Poengsum**-feltet angir du poengsummen som skal tilordnes når verdien som er oppgitt, er i fra/til-området.
+    1. I **Verdi** -feltet angir du den brukerdefinerte verdien som skal oppgis fra kundeinformasjonen.
+    2. I **Poengsum** -feltet angir du poengsummen som skal tilordnes når verdien som er oppgitt, er i fra/til-området.
 
 ## <a name="risk-classification"></a>Risikoklassifisering
 
 Du kan definere risikovurderinger som kan tilordnes til kunder, basert på risikopoengene deres. En risikopoengsum beregnes ved å sammenligne kundeinformasjon med hver poengberegningsgruppe. Poengene summeres, og den totale poengsummen sammenlignes med verdiene i risikogruppeoppsettet for å identifisere risikogruppen som kunden tilhører. Risikogruppepoengsummen brukes deretter til å definere blokkerings- og ekskluderingsregler for kredittbehandling for kunden.
 
-Du kan definere risikogrupper på siden **Risikovurderinger** (**Kreditt og innkreving \> Oppsett \> Kredittbehandlingsoppsett \> Risiko \> Risikoklassifisering**).
+Du kan definere risikogrupper på siden **Risikovurderinger** ( **Kreditt og innkreving \> Oppsett \> Kredittbehandlingsoppsett \> Risiko \> Risikoklassifisering** ).
 
 1. Angi en risikogruppe-ID.
 2. Angi en beskrivelse for å forklare risikogruppen ytterligere.
@@ -125,7 +125,7 @@ Du kan definere risikogrupper på siden **Risikovurderinger** (**Kreditt og innk
 
 ## <a name="guaranteeinsurance-types"></a>Garanti-/forsikringstyper
 
-Du kan definere garanti-/forsikringstyper på siden **Garanti-/forsikringstyper** (**Kreditt og innkreving \> Oppsett \> Kredittbehandlingsoppsett \> Forsikring og garantier \> Forsikrings- og garantiertyper**).
+Du kan definere garanti-/forsikringstyper på siden **Garanti-/forsikringstyper** ( **Kreditt og innkreving \> Oppsett \> Kredittbehandlingsoppsett \> Forsikring og garantier \> Forsikrings- og garantiertyper** ).
 
 1. Angi en garanti- eller forsikringstype som identifiserer navnet på garantisten eller forsikringsgiveren.
 2. Angi en beskrivelse for å beskrive garantisten/forsikringsgiveren.
@@ -134,18 +134,18 @@ Du kan definere garanti-/forsikringstyper på siden **Garanti-/forsikringstyper*
 
 Dekningstyper kan brukes til å klassifisere forsikringspoliser ytterligere. De kan ikke brukes med garantier.
 
-Du kan legge til dekningstyper på **Dekningstyper**-siden (**Kreditt og innkreving \> Oppsett \> Kredittbehandlingsoppsett \> Forsikring og garantier \> Dekningstyper**).
+Du kan legge til dekningstyper på **Dekningstyper** -siden ( **Kreditt og innkreving \> Oppsett \> Kredittbehandlingsoppsett \> Forsikring og garantier \> Dekningstyper** ).
 
 1. Angi en dekningstype for å identifisere typen dekning som skal legges til som forsikring eller garanti.
 2. Angi en beskrivelse for å beskrive dekningstypen.
 
 ## <a name="automatic-credit-limits"></a>Automatiske kredittgrenser
 
-Du kan opprette kriterier for automatiske kredittgrenser på siden **Automatiske kredittgrenser** (**Kreditt og innkreving \> Oppsett \> Kredittbehandlingsoppsett \> Risiko \> Automatiske kredittgrenser**).
+Du kan opprette kriterier for automatiske kredittgrenser på siden **Automatiske kredittgrenser** ( **Kreditt og innkreving \> Oppsett \> Kredittbehandlingsoppsett \> Risiko \> Automatiske kredittgrenser** ).
 
 1. Velg en risikogruppe som den automatiske kredittgrensen skal tilordnes til.
 2. Velg valutaen for den automatiske kredittgrensen. Du kan opprette flere automatiske kredittgrenser i forskjellige valutaer for samme risikogruppe.
-3. Angi inntektsbeløpet som representerer maksimal firmainntekt som kan brukes for denne automatiske kredittgrensen. Når kredittgrenser opprettes, sammenlignes inntektsbeløpet med en inntektsverdi som finnes på **Finans**-siden (**Kunder \> Alle kunder \> Velg en kunde \> Generelt \> Statistikk \> Finans**). Systemet bruker den siste verdien i **Oversikt**-delen.
+3. Angi inntektsbeløpet som representerer maksimal firmainntekt som kan brukes for denne automatiske kredittgrensen. Når kredittgrenser opprettes, sammenlignes inntektsbeløpet med en inntektsverdi som finnes på **Finans** -siden ( **Kunder \> Alle kunder \> Velg en kunde \> Generelt \> Statistikk \> Finans** ). Systemet bruker den siste verdien i **Oversikt** -delen.
 
 Følg disse trinnene for å legge til linjer som representerer kredittgrensen som genereres basert på de valgte kriteriene.
 

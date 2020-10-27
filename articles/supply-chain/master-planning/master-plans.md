@@ -16,15 +16,15 @@ ms.custom: 7911
 ms.assetid: a116b7de-3d6d-4321-87ba-5a5d99c2f64e
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: roxanad
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f5b37347cf2d5b720ed7ac364800fb8cfe2d67ca
-ms.sourcegitcommit: ace6451fde3e4b20cbcaa6279fa1da4d7151ad1e
+ms.openlocfilehash: 70a5b8f0c7e4857aa2904003b458bf6d02b72064
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "3409528"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3982239"
 ---
 # <a name="master-plans-overview"></a>Oversikt over hovedplaner
 
@@ -32,7 +32,7 @@ ms.locfileid: "3409528"
 
 Du kan bruke forskjellige hovedplaner for å ha støtte for firmaets daglige arbeidsoperasjoner, simulere forskjellige strategier du vil overvåke og implementere en firmapolicy, for eksempel angående intern ytelse eller kundetilfredsstillelse. 
 
-Du kan konfigurere hovedplaner på siden **Hovedplaner**.
+Du kan konfigurere hovedplaner på siden **Hovedplaner** .
 
 Det finnes to typer planer:
 -   **Statisk plan** – Beregningen for hovedplanlegging bruker gjeldende data til å generere en nettobehovsplan. Denne planen forblir uendret til neste gang du utfører hovedplanlegging eller endrer planen manuelt. Dette er en driftsplan som forskjellige firmaansatte, for eksempel innkjøper eller produksjonsplanleggere, kan bruke til å basere avgjørelsene sine på og utføre de daglige aktivitetene.
@@ -42,7 +42,7 @@ Et firma kan velge å arbeide med bare en dynamisk plan, eller den kan bruke bå
 -   Angi høyere lagernivåer for å sikre mot manko.
 -   Angi lengre sikkerhetsmarginer for å beskytte mot upålitelige leverandører.
 
-Du kan også konfigurere den første dynamiske planen til å oppdateres med den nye behovsplanen hver gang du utfører hovedplanlegging. Du kan angi disse innstillingene på siden **Hovedplanleggingsparametere**.
+Du kan også konfigurere den første dynamiske planen til å oppdateres med den nye behovsplanen hver gang du utfører hovedplanlegging. Du kan angi disse innstillingene på siden **Hovedplanleggingsparametere** .
 
 
 

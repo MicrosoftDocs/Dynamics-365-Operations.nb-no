@@ -3,7 +3,7 @@ title: Tilpassingsanalyse av planleggingsoptimalisering
 description: Dette emnet forklarer hvordan du kontrollerer gjeldende oppsett og data mot funksjonene i planleggingsoptimaliseringsfunksjonaliteten.
 author: ChristianRytt
 manager: tfehr
-ms.date: 09/23/2020
+ms.date: 10/09/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,18 +19,22 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 73549097eed6d9418d5ff73e108d1dbae7ed66b3
-ms.sourcegitcommit: cde71bc7d14ea6cdff2c4e991057d39a6a0473d9
+ms.openlocfilehash: 769bd84b4ba23c9de4638df9186381936221414a
+ms.sourcegitcommit: ae04c7cb48f7ecafe71bbe77a0f97715e6290991
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "3887144"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "3973458"
 ---
-# <a name="planning-optimization-fit-analysis"></a>Tilpassingsanalyse av planleggingsoptimalisering
+# <a name="planning-optimization-fit-analysis"></a>Analyse for tilpassing av planleggingsoptimalisering
 
 [!include [banner](../../includes/banner.md)]
 
-Hvis du vil se hvor kompatible gjeldende oppsett og data er med funksjonaliteten for planleggingsoptimalisering, går du til **Hovedplanlegging** \> **Oppsett** \> **Tilpassingsanalyse av planleggingsoptimalisering**, og deretter velger du **Kjør analyse**. Hvis analysen finner noen uregelmessigheter, vises de på samme side. (Det kan ta noen minutter å kjøre analysen.)
+Du bør analysere resultatet fra analyse for tilpassing av planleggingsoptimalisering som en del av migreringsprosessen. Vær oppmerksom på at planleggingsoptimalisering ikke er lik gjeldende innebygde funksjon for hovedplanlegging. Vi anbefaler at du arbeider med partneren og leser dokumentasjonen for å klargjøre migreringen. 
+
+Analyse for tilpassing av planleggingsoptimalisering lar deg identifisere hvor resultatet kan variere mellom den innebygde hovedplanleggingsmotoren og planleggingsoptimaliseringen. Denne analysen utføres basert på gjeldende oppsett og data. 
+
+Hvis du vil se resultatet for analyse for tilpassing av planleggingsoptimalisering, kan du gå til **Hovedplanlegging** \> **Oppsett** \> **Analyse for tilpassing av planleggingsoptimalisering** og deretter velge **Kjør analyse** . Hvis analysen finner noen uregelmessigheter, vises de på samme side. (Det kan ta noen minutter å kjøre analysen.)
 
 > [!NOTE]
 > Hvis det blir funnet uoverensstemmelser, kan du likevel bruke planleggingsoptimalisering. Resultatene av tilpassingsanalysen viser bare steder der planleggingstjenesten ikke respekterer det gjeldende oppsettet. De viser med andre ord steder der noen prosesser kan bli ignorert, eller det er ikke sikkert at de støttes.
@@ -49,7 +53,7 @@ Hvis du vil se hvor kompatible gjeldende oppsett og data er med funksjonaliteten
 
 ## <a name="overview-of-possible-results-from-the-fit-analysis"></a>Oversikt over mulige resultater fra tilpassingsanalysen
 
-Følgende tabell viser de ulike resultatene som kan vises etter en tilpassingsanalyse. Nummertegn (_\#_) erstattes med et tall som angir antallet poster som har det angitte problemet.
+Følgende tabell viser de ulike resultatene som kan vises etter en tilpassingsanalyse. Nummertegn ( _\#_ ) erstattes med et tall som angir antallet poster som har det angitte problemet.
 
 | Funksjon | Oppført problem | Forklaring | Forventet tilgjengelighet |
 | --- | --- | --- | --- |
@@ -63,7 +67,7 @@ Følgende tabell viser de ulike resultatene som kan vises etter en tilpassingsan
 | Autorisasjon | Hovedplaner med automatisk autorisasjon angitt: _\#_ | I versjon 10.0.7 og senere støttes automatisk autorisasjon som en separat satsvis jobb etter at hovedplanleggingen er fullført (forutsatt at funksjonen _Automatisk autorisasjon med planleggingsoptimalisering_ er aktivert i [funksjonsbehandling](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)). Legg merke til at automatisk autorisasjon med planleggingsoptimalisering er basert på ordredatoen (startdato), ikke behovsdatoen (sluttdatoen). Denne virkemåten sikrer at planlagte bestillinger vises i forfallstiden, uten at leveringstiden i autorisasjonshorisonten må tas med. | Støttes |
 | FitAnalysisPlanningItems | Planleggingselementer: _\#_ | Dette funksjonen venter. For øyeblikket behandles planleggingselementer som vanlige varer når planleggingsoptimalisering er aktivert. | 2021. oktober |
 | Prognose | Dekningsgrupper med "Ta med konserninterne ordrer" aktivert: _\#_ | Dette funksjonen venter. For øyeblikket inkluderer ikke hovedplanlegging nedstrøms planlagt behov når planleggingsoptimalisering er aktivert, uavhengig av denne innstillingen. Merk at frigitte/autoriserte ordrer fremdeles fungerer med den vanlige konserninterne funksjonaliteten, og vil dekke de fleste scenarier. | 2020. oktober |
-| Prognose | Dekningsgrupper med innstillingen "Reduser prognose etter" angir en annen verdi enn "Ordrer": _\#_ | Planleggingsoptimalisering bruker som standard "Reduser prognose etter" for ordrer, uavhengig av denne innstillingen. | 2020. oktober |
+| Prognose | Dekningsgrupper med innstillingen "Reduser prognose etter" angir en annen verdi enn "Ordrer": _\#_ | Planleggingsoptimalisering bruker som standard "Reduser prognose etter" for ordrer, uavhengig av denne innstillingen. | November 2020 |
 | Prognose | Prognosemodeller med undermodeller: _\#_ | Dette funksjonen venter. For øyeblikket støttes ikke prognoser som bruker undermodeller, når planleggingsoptimalisering er aktivert. De vil ignoreres, uavhengig av denne innstillingen. | 2021. april |
 | Prognose | Hovedplaner med "Inkluder forsyningsprognose" aktivert: _\#_ | Dette funksjonen venter. For øyeblikket støttes ikke forsyningsprognoser når planleggingsoptimalisering er aktivert. De vil ignoreres, uavhengig av denne innstillingen. | 2021. oktober |
 | Låsningshorisont | Dekningsgrupper med låsningshorisont angitt: _\#_ | Låsingshorisonten brukes ikke ofte, og det er ingen planer om å ta den med for planleggingsoptimalisering. For øyeblikket ignoreres låsningshorisontoppsettet når planleggingsoptimalisering aktiveres, uavhengig av denne innstillingen. | I/T |
@@ -72,7 +76,7 @@ Følgende tabell viser de ulike resultatene som kan vises etter en tilpassingsan
 | Konserninternt | Hovedplaner inkludert planlagt nedstrømsetterspørsel: _\#_ | Dette funksjonen venter. For øyeblikket inkluderer ikke hovedplanlegging nedstrøms planlagt behov når planleggingsoptimalisering er aktivert, uavhengig av denne innstillingen. Merk at frigitte/autoriserte ordrer fremdeles fungerer med den vanlige konserninterne funksjonaliteten, og vil dekke de fleste scenarier. | 2020. oktober |
 | Kanban | Dekningsoppføringer for vare med Kanban for planlagte ordretype _\#_ | Dette funksjonen venter. For øyeblikket ignoreres varedekningen som er satt til Kanban, når planleggingsoptimalisering er aktivert. Den Kanban-planlagte ordretypen vil opprette en advarsel under hovedplanleggingen, og planlagte bestillinger vil bli opprettet for å dekke det tilknyttede behovet. | 2021. oktober |
 | Kanban | Varer med Kanban for standard ordretype: _\#_ | For øyeblikket ignoreres en standard ordretype som er satt til Kanban, når planleggingsoptimalisering er aktivert. Den standard Kanban-ordretypen vil opprette en advarsel under hovedplanleggingen, og planlagte bestillinger vil bli opprettet for å dekke det tilknyttede behovet. | 2021. oktober |
-| Livssyklustilstand for produkt   | Statuser for produktlivssyklus ikke aktive for planlegging: _\#_ | Dette er en ventende funksjon. For øyeblikket ignoreres Livssyklustilstand for produkt med Planleggingsoptimalisering aktivert. Du kan justere produktfilteret for plannivå for å unngå å ta med produkter der statusen for produktlivssyklus er deaktivert for planlegging. | 2020. oktober |
+| Livssyklustilstand for produkt   | Statuser for produktlivssyklus ikke aktive for planlegging: _\#_ | Dette er en ventende funksjon. For øyeblikket ignoreres Livssyklustilstand for produkt med Planleggingsoptimalisering aktivert. Du kan justere produktfilteret for plannivå for å unngå å ta med produkter der statusen for produktlivssyklus er deaktivert for planlegging. | November 2020 |
 | Produksjon | Stykklistelinjer med avrunding eller flere oppsett: _\#_ | Dette funksjonen venter. Avrunding og flere oppsett ignoreres for øyeblikket på stykklistelinjer når planleggingsoptimalisering er aktivert, uavhengig av denne innstillingen. | 2021. april |
 | Produksjon | Stykkliste/formellinjer med formelmåling: _\#_ | Dette funksjonen venter. Formelmåling ignoreres for øyeblikket på stykklistelinjer og formellinjer når planleggingsoptimalisering er aktivert, uavhengig av denne innstillingen. | 2021. oktober |
 | Produksjon | Stykklister/formellinjer med vareerstatning (plangrupper): _\#_ | Dette funksjonen venter. Vareerstatning (plangrupper) ignoreres for øyeblikket på stykklistelinjer og formellinjer når planleggingsoptimalisering er aktivert, uavhengig av denne innstillingen. | 2021. oktober |
@@ -95,7 +99,7 @@ Følgende tabell viser de ulike resultatene som kan vises etter en tilpassingsan
 | Rekvisisjoner | Hovedplaner med rekvisisjoner aktivert: _\#_ | Dette funksjonen venter. Rekvisisjoner ignoreres for øyeblikket når planleggingsoptimalisering er aktivert. De vil ignoreres, uavhengig av denne innstillingen. | 2021. oktober |
 | Sikkerhetsmarginer | Dekningsgrupper med sikkerhetsmargin: _\#_ | Dette funksjonen venter. For øyeblikket ignoreres sikkerhetsmargin når planleggingsoptimalisering er aktivert. Hvis du vil kompensere for denne virkemåten, kan du øke leveringstiden slik at den inkluderer sikkerhetsmarginen. | 2020. oktober |
 | Sikkerhetsmarginer | Hovedplaner med sikkerhetsmargin: _\#_ | Dette funksjonen venter. For øyeblikket ignoreres sikkerhetsmargin når planleggingsoptimalisering aktiveres, uavhengig av denne innstillingen. Hvis du vil kompensere for denne virkemåten, kan du øke leveringstiden slik at den inkluderer sikkerhetsmarginen. | 2020. oktober |
-| Fullføring av sikkerhetslager | Varedekningsposter med "Fyll opp minimum" forskjellig fra "Dagens dato + leveringstid": _\#_ | Planleggingsoptimalisering bruker alltid *Dagens dato + leveringstid*. Denne endringen gjøres for å forberede et forenklet planleggingsoppsett i fremtiden, og for å tilby et gjennomførbart resultat. Hvis leveringstiden ikke er inkludert for sikkerhetslager, vil planlagte bestillinger som opprettes for den gjeldende lagerbeholdningen, alltid bli forsinket på grunn av leveringstiden. Denne virkemåten kan føre til betydelig støy og uønskede planlagte bestillinger. Den beste fremgangsmåten er å endre innstillingen slik at *Dagens dato + leveringstid* brukes. Oppdater hoveddata for å unngå advarsler. | I/T |
+| Fullføring av sikkerhetslager | Varedekningsposter med "Fyll opp minimum" forskjellig fra "Dagens dato + leveringstid": _\#_ | Planleggingsoptimalisering bruker alltid *Dagens dato + leveringstid* . Denne endringen gjøres for å forberede et forenklet planleggingsoppsett i fremtiden, og for å tilby et gjennomførbart resultat. Hvis leveringstiden ikke er inkludert for sikkerhetslager, vil planlagte bestillinger som opprettes for den gjeldende lagerbeholdningen, alltid bli forsinket på grunn av leveringstiden. Denne virkemåten kan føre til betydelig støy og uønskede planlagte bestillinger. Den beste fremgangsmåten er å endre innstillingen slik at *Dagens dato + leveringstid* brukes. Oppdater hoveddata for å unngå advarsler. | I/T |
 | Salgstilbud | Hovedplaner med salgstilbud aktivert: _\#_ | Dette funksjonen venter. Tilbud ignoreres for øyeblikket når planleggingsoptimalisering er aktivert. De vil ignoreres, uavhengig av denne innstillingen. | 2021. oktober |
 | Holdbarhet | Hovedplaner med holdbarhet aktivert: _\#_ | Dette funksjonen venter. For øyeblikket ignoreres holdbarhet når planleggingsoptimalisering aktiveres, uavhengig av denne innstillingen. | 2021. oktober |
 

@@ -16,15 +16,15 @@ ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.search.industry: ''
-ms.author: conradv
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5e5983fa7272a89d28699eb10bb9c5e0d79490ae
-ms.sourcegitcommit: 97d4a9bd442fe20f90605d8154c3a947c7645b37
+ms.openlocfilehash: c118bc37a26d6d3a65905f2fd955ceb3554e9557
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "3895578"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3980894"
 ---
 # <a name="product-information-overview"></a>Oversikt over produktinformasjon
 
@@ -63,7 +63,7 @@ Legg merke til at produktopplysninger endres hver dag i dynamiske og fleksible o
 
 ## <a name="product-masters-and-product-variants"></a>Produktstandarder og produktvarianter
 
-I en fleksibel verden der varer raskt må tilpasset kundekrav, angir produktdefinisjoner et sett med produkter i stedet for spesifikke produkter. I Supply Chain Management er de generell produktene kjent som *produktstandarder*. Produktstandarder inneholder definisjonen og regler som angir hvordan spesifikke produkter beskrives og fungerer i forretningsprosesser. Basert på disse definisjonene kan spesifikke produkter genereres. Disse spesifikke produktene er kjent som *produktvarianter*.
+I en fleksibel verden der varer raskt må tilpasset kundekrav, angir produktdefinisjoner et sett med produkter i stedet for spesifikke produkter. I Supply Chain Management er de generell produktene kjent som *produktstandarder* . Produktstandarder inneholder definisjonen og regler som angir hvordan spesifikke produkter beskrives og fungerer i forretningsprosesser. Basert på disse definisjonene kan spesifikke produkter genereres. Disse spesifikke produktene er kjent som *produktvarianter* .
 
 En produktstandard er tilknyttet en produktdimensjonsgruppe og en konfigurasjonsteknologi for å angi forretningsreglene. Produktdimensjoner (farge, størrelse, stil og konfigurasjon) er et bestemt sett med attributter som kan brukes i hele programmet til å definere og spore bestemt virkemåten til de tilknyttede produktene. Disse dimensjonene hjelper også brukere å søke etter og identifisere produktene.
 
@@ -72,7 +72,7 @@ En produktstandard er tilknyttet en produktdimensjonsgruppe og en konfigurasjons
 Du kan velge mellom tre konfigurasjonsteknologier:
 
 - Forhåndsdefinerte varianter defineres av forhåndsdefinerte produktdimensjoner. Variantdefinisjonen inneholder definisjonen av en bestemt gyldig kombinasjon av dimensjoner, for eksempel farge, stil og størrelse. Hver kombinasjon produserer en spesifikk produktvariant.
-- Dimensjonsbasert konfigurasjon brukes vanligvis i scenarier for produksjon, og kan du bruke konfigurasjonsdimensjonen i definisjonen av stykklisten. Når en bestemt konfigurasjon er valgt, bruker systemet delsettet med stykklistelinjer som er gyldige for denne konfigurasjonen, for planlegging og produksjon. Dette konseptet kalles også *global stykkliste*, fordi én delt stykkliste brukes for alle konfigurasjoner til et produkt.
+- Dimensjonsbasert konfigurasjon brukes vanligvis i scenarier for produksjon, og kan du bruke konfigurasjonsdimensjonen i definisjonen av stykklisten. Når en bestemt konfigurasjon er valgt, bruker systemet delsettet med stykklistelinjer som er gyldige for denne konfigurasjonen, for planlegging og produksjon. Dette konseptet kalles også *global stykkliste* , fordi én delt stykkliste brukes for alle konfigurasjoner til et produkt.
 - Restriksjonsbasert konfigurasjon bruker en produktkonfigurasjonsmodell til å beskrive alle mulige attributter og komponenter som kreves for å beskrive alle mulige varianter av et produkt i en enkelt modell. Begrensingene for kombinasjoner av attributter kan beskrives gjennom vanlige uttrykk eller tabellbaserte begrensninger. Konfigurasjonsmodeller og konfiguratorer blir viktigere i behandling av produktinformasjon og brukes på tvers av alle bransjer.
 
 Når du planlegger implementeringen av Supply Chain Management, er det svært viktig at du velger den riktige konfigurasjonsteknologien for en forretningsprosess. Et produkt kan ikke konverteres fra én modell til en annen etter implementering.
@@ -83,14 +83,14 @@ Arbeidsområdet **Definisjon av produktvariantmodell** gir en oversikt over prod
 
 ## <a name="released-products"></a>Frigitte produkter
 
-Produktene som er frigitt til et bestemt juridisk enhet, er kjent som *frigitte produkter*. Produkter kan frigis samlet til én eller flere juridiske enheter samtidig. Fordi ulike egenskaper og attributter for produktene kanskje må legges til per juridisk enhet, kan du bruke arbeidsområdet **Vedlikehold av frigitt produkt** til å overvåke og fullføre de nylig frigitte produktene i hver juridiske enhet, eller i de underordnede organisasjonene for en juridisk enhet.
+Produktene som er frigitt til et bestemt juridisk enhet, er kjent som *frigitte produkter* . Produkter kan frigis samlet til én eller flere juridiske enheter samtidig. Fordi ulike egenskaper og attributter for produktene kanskje må legges til per juridisk enhet, kan du bruke arbeidsområdet **Vedlikehold av frigitt produkt** til å overvåke og fullføre de nylig frigitte produktene i hver juridiske enhet, eller i de underordnede organisasjonene for en juridisk enhet.
 
 ### <a name="released-product-maintenance-workspace"></a>Arbeidsområdet Vedlikehold av frigitt produkt
 
-Du kan konfigurere arbeidsområdet **Vedlikehold av frigitt produkt** i menyelementet **Konfigurer mitt arbeidsområde**. Velg et kategorihierarki og en kategori du vil filtrere arbeidsområdet etter. For å justere de relevante produktdataene i arbeidsområdet kan du også definere, i dager, horisontene for **Nylig frigitte produkter** og **Frigitte produkter som er stoppet**.
+Du kan konfigurere arbeidsområdet **Vedlikehold av frigitt produkt** i menyelementet **Konfigurer mitt arbeidsområde** . Velg et kategorihierarki og en kategori du vil filtrere arbeidsområdet etter. For å justere de relevante produktdataene i arbeidsområdet kan du også definere, i dager, horisontene for **Nylig frigitte produkter** og **Frigitte produkter som er stoppet** .
 
-Arbeidsområdet består av et sammendrag av fliser og to lister. Listen **Åpne tilfeller** viser produktendringssaker som har produkter i det valgte produktkategorihierarkiet som ikke er fullført og lukket. Listen **Nylig utgitt** viser produkter som er frigitt i horisonten som er angitt i konfigurasjonen for arbeidsområdet. Validering kjøres for hvert element i listen, og valideringsstatusen vises. Denne statusen kan indikere at de nødvendige konfigurasjonene for den juridiske enheten ikke er fullført. Fra listen har du direkte tilgang til sidene **Detaljer om frigitt produkt**, **Vedlikehold av produktattributt**, **Vedlikehold av produktkategori**, **Standard ordreinnstillinger** og **Tekstoversettelser** for å fullføre den konfigurasjonen av produktet.
+Arbeidsområdet består av et sammendrag av fliser og to lister. Listen **Åpne tilfeller** viser produktendringssaker som har produkter i det valgte produktkategorihierarkiet som ikke er fullført og lukket. Listen **Nylig utgitt** viser produkter som er frigitt i horisonten som er angitt i konfigurasjonen for arbeidsområdet. Validering kjøres for hvert element i listen, og valideringsstatusen vises. Denne statusen kan indikere at de nødvendige konfigurasjonene for den juridiske enheten ikke er fullført. Fra listen har du direkte tilgang til sidene **Detaljer om frigitt produkt** , **Vedlikehold av produktattributt** , **Vedlikehold av produktkategori** , **Standard ordreinnstillinger** og **Tekstoversettelser** for å fullføre den konfigurasjonen av produktet.
 
 ### <a name="manually-creating-a-new-released-product"></a>Manuell oppretting av et nytt frigitt produkt
 
-Du kan manuelt opprette et frigitt produkt i en enkelt kjøring, avhengig av organisasjonens forretningsprosesser og eventuelle regler for hvorvidt denne funksjonen skal brukes. Denne funksjonen oppretter et nytt produkt, og frigjør det automatisk til den gjeldende juridiske enheten. For å opprette et nytt produkt klikker du **Frigitte produkter** i arbeidsområdet **Vedlikehold av frigitt produkt** eller på listesiden **Frigitt produkt**.
+Du kan manuelt opprette et frigitt produkt i en enkelt kjøring, avhengig av organisasjonens forretningsprosesser og eventuelle regler for hvorvidt denne funksjonen skal brukes. Denne funksjonen oppretter et nytt produkt, og frigjør det automatisk til den gjeldende juridiske enheten. For å opprette et nytt produkt klikker du **Frigitte produkter** i arbeidsområdet **Vedlikehold av frigitt produkt** eller på listesiden **Frigitt produkt** .

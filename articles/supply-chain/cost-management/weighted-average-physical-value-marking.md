@@ -16,15 +16,15 @@ ms.custom: 65501
 ms.assetid: 25041ff0-bafe-484d-a94a-e1772ad43204
 ms.search.region: Global
 ms.search.industry: Retail
-ms.author: shylaw
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f10f75b9ce6038e5e7e1216fa04b0ff8662cc119
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 225379df8bb86522d5817add570d614d09a1a92d
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3205098"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3983056"
 ---
 # <a name="weighted-average-with-physical-value-and-marking"></a>Direkte utligning med fysisk verdi og merking
 
@@ -78,7 +78,7 @@ Diagrammet nedenfor illustrerer denne serien av transaksjoner, og viser virkning
 - Hvis verdien til en lagertransaksjon står i parenteser, betyr det at lagertransaksjonen er postert fysisk til lager.
 - Hvis verdien av en lagertransaksjon vises uten parenteser, betyr det at lagertransaksjonen er postert økonomisk til lager.
 - Hver ny mottaks- eller avgangstransaksjon merkes med en ny etikett.
-- Hver loddrett pil har en etikett med en sekvensiell ID, for eksempel *1a*. IDene vises langs tidslinjen, og viser i hvilken rekkefølge lagertransaksjonene posteres.
+- Hver loddrett pil har en etikett med en sekvensiell ID, for eksempel *1a* . IDene vises langs tidslinjen, og viser i hvilken rekkefølge lagertransaksjonene posteres.
 - Lagerlukkinger vises med en rød linje med vannrette streker, og med etiketten Lagerlukking.
 - Utligninger som skjer før lagerlukking, vises med prikkede røde piler som går diagonalt fra mottak til avgang.
 
@@ -112,7 +112,7 @@ Diagrammet nedenfor illustrerer denne serien av transaksjoner, og viser virkning
 - Hvis verdien til en lagertransaksjon står i parenteser, betyr det at lagertransaksjonen er postert fysisk til lager.
 - Hvis verdien av en lagertransaksjon vises uten parenteser, betyr det at lagertransaksjonen er postert økonomisk til lager.
 - Hver ny mottaks- eller avgangstransaksjon merkes med en ny etikett.
-- Hver loddrett pil har en etikett med en sekvensiell ID, for eksempel *1a*. IDene vises langs tidslinjen, og viser i hvilken rekkefølge lagertransaksjonene posteres.
+- Hver loddrett pil har en etikett med en sekvensiell ID, for eksempel *1a* . IDene vises langs tidslinjen, og viser i hvilken rekkefølge lagertransaksjonene posteres.
 - Lagerlukkinger vises med en rød linje med vannrette streker, og med etiketten Lagerlukking.
 - Utligninger som skjer før lagerlukking, vises med prikkede røde piler som går diagonalt fra mottak til avgang.
 - Røde piler illustrerer mottakstransaksjonen som blir utlignet mot avgangstransaksjonen som ble opprettet av systemet.
@@ -141,7 +141,7 @@ Diagrammet nedenfor illustrerer denne serien av transaksjoner, og viser virkning
 - Hvis verdien til en lagertransaksjon står i parenteser, betyr det at lagertransaksjonen er postert fysisk til lager.
 - Hvis verdien av en lagertransaksjon vises uten parenteser, betyr det at lagertransaksjonen er postert økonomisk til lager.
 - Hver ny mottaks- eller avgangstransaksjon merkes med en ny etikett.
-- Hver loddrett pil har en etikett med en sekvensiell ID, for eksempel *1a*. IDene vises langs tidslinjen, og viser i hvilken rekkefølge lagertransaksjonene posteres.
+- Hver loddrett pil har en etikett med en sekvensiell ID, for eksempel *1a* . IDene vises langs tidslinjen, og viser i hvilken rekkefølge lagertransaksjonene posteres.
 - Lagerlukkinger vises med en rød linje med vannrette streker, og med etiketten Lagerlukking.
 - Utligninger som skjer før lagerlukking, vises med prikkede røde piler som går diagonalt fra mottak til avgang.
 
@@ -222,7 +222,7 @@ Diagrammet nedenfor illustrerer denne serien av transaksjoner, og viser virkning
 - Hvis verdien til en lagertransaksjon står i parenteser, betyr det at lagertransaksjonen er postert fysisk til lager.
 - Hvis verdien av en lagertransaksjon vises uten parenteser, betyr det at lagertransaksjonen er postert økonomisk til lager.
 - Hver ny mottaks- eller avgangstransaksjon merkes med en ny etikett.
-- Hver loddrett pil har en etikett med en sekvensiell ID, for eksempel *1a*. IDene vises langs tidslinjen, og viser i hvilken rekkefølge lagertransaksjonene posteres.
+- Hver loddrett pil har en etikett med en sekvensiell ID, for eksempel *1a* . IDene vises langs tidslinjen, og viser i hvilken rekkefølge lagertransaksjonene posteres.
 - Lagerlukkinger vises med en rød linje med vannrette streker, og med etiketten Lagerlukking.
 - Utligninger som skjer før lagerlukking, vises med prikkede røde piler som går diagonalt fra tilgang til avgang.
 

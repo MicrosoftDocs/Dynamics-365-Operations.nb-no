@@ -15,15 +15,15 @@ ms.search.scope: Core, Operations
 ms.custom: 223204
 ms.assetid: 1eda0e62-760b-4737-9dfd-3c3c38d80c1a
 ms.search.region: global
-ms.author: shylaw
+ms.author: roschlom
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 44d404aaafd124a5d5a9d92cac8add51f1ee846a
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: e67ce047d08af6d34090ee4e1dc379dd16ecce07
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2771990"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3976409"
 ---
 # <a name="cost-element-dimensions"></a>Kostnadselementdimensjoner
 
@@ -64,7 +64,7 @@ Det finnes to typer kostnadselementer: primære kostnadselementer og sekundære 
 </table>
 
 ## <a name="cost-element-dimensions-and-cost-element-dimension-members"></a>Kostnadselementdimensjoner og medlemmer av kostnadselementdimensjonen
-Kostnadselementer kalles *kostnadselementdimensjoner* . De enkelte dimensjonsverdiene kalles *medlemmer av kostnadselementdimensjon*. Du har for eksempel en amerikansk kontoplanstruktur (COA) som er grunnlaget for den lovbestemte rapporteringen. Denne kontoplanen brukes som kostnadselementdimensjon. Kontoene, som er primært kostnadselementer, representeres som medlemmer av kostnadselementdimensjon i kostnadsregnskap. Følgende skjermbilde viser et eksempel på hovedkontoer som kostnadselementdimensjonen med de faktiske hovedkontoene som medlemmene av kostnadselementdimensjonen. 
+Kostnadselementer kalles *kostnadselementdimensjoner* . De enkelte dimensjonsverdiene kalles *medlemmer av kostnadselementdimensjon* . Du har for eksempel en amerikansk kontoplanstruktur (COA) som er grunnlaget for den lovbestemte rapporteringen. Denne kontoplanen brukes som kostnadselementdimensjon. Kontoene, som er primært kostnadselementer, representeres som medlemmer av kostnadselementdimensjon i kostnadsregnskap. Følgende skjermbilde viser et eksempel på hovedkontoer som kostnadselementdimensjonen med de faktiske hovedkontoene som medlemmene av kostnadselementdimensjonen. 
 
 [![Skjermbilde av Hovedkontoer som kostnadselementdimensjon](./media/cost-element-dimensions.png)](./media/cost-element-dimensions.png)
 

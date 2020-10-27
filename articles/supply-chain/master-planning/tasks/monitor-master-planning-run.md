@@ -13,15 +13,15 @@ audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: shylaw
+ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 91ed725e684eda02d94a87ee2a61e5a82034a84e
-ms.sourcegitcommit: 68092ed283bfbb7b6f611cce1b62c791f9b6a208
+ms.openlocfilehash: 045b82af6f65b22e1c683f8de47a6df282711e6a
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/30/2020
-ms.locfileid: "3323491"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3978137"
 ---
 # <a name="monitor-a-master-planning-run"></a>Overvåke en kjøring av hovedplanlegging
 
@@ -35,19 +35,19 @@ På siden **Vis fremdrift for hovedplanlegging** kan du vise detaljer om histori
 
 Hvis du vil bruke denne funksjonen, gjør du følgende.
 
-1. I arbeidsområdet **Funksjonsbehandling** i **Ny**-kategorien velger du **Fremdrifsvisualisering for hovedplan** i listen. Hvis funksjonen ikke vises i **Ny**-kategorien, ser du i kategoriene **Ikke aktivert** og **Alle**.
-1. Velg **Aktiver nå**. Du kan også velge **Tidsplan**, og deretter velge tidspunktet når du vil at funksjonen skal aktiveres.
+1. I arbeidsområdet **Funksjonsbehandling** i **Ny** -kategorien velger du **Fremdrifsvisualisering for hovedplan** i listen. Hvis funksjonen ikke vises i **Ny** -kategorien, ser du i kategoriene **Ikke aktivert** og **Alle** .
+1. Velg **Aktiver nå** . Du kan også velge **Tidsplan** , og deretter velge tidspunktet når du vil at funksjonen skal aktiveres.
 
 Siden **Vis fremdrift for hovedplanlegging** kan vise både historiske planleggingsjobber og aktive planleggingsjobber. 
 
 Hvis du vil vise historiske planleggingsjobber, kan du velge mellom to alternativer. 
 
-1. Gå til **Hovedplanlegging \> Oppsett \> Planer \> Hovedplaner**, og velg deretter **Historikk** i handlingsruten. Med den ønskede jobben valgt, velger du **Forespørsler**, og deretter velger du **Vis fremdrift**
-1. Gå til **Hovedplanlegging \> Arbeidsområder \> Hovedplanlegging**, og klikk **Historikk** på hovedplanlegging-flisen. Med den ønskede jobben valgt, velger du **Forespørsler**, og deretter velger du **Vis fremdrift**
+1. Gå til **Hovedplanlegging \> Oppsett \> Planer \> Hovedplaner** , og velg deretter **Historikk** i handlingsruten. Med den ønskede jobben valgt, velger du **Forespørsler** , og deretter velger du **Vis fremdrift**
+1. Gå til **Hovedplanlegging \> Arbeidsområder \> Hovedplanlegging** , og klikk **Historikk** på hovedplanlegging-flisen. Med den ønskede jobben valgt, velger du **Forespørsler** , og deretter velger du **Vis fremdrift**
 
 Hvis du vil vise aktive planleggingsjobber, kan du velge mellom to alternativer. 
-1. Gå til **Hovedplanlegging \> Arbeidsområder \> Hovedplanlegging**, og velg **Uferdig planleggingsprosess** i handlingsruten. Med den ønskede jobben valgt, velger du **Forespørsler**, og deretter velger du **Vis fremdrift**.
-1. Gå til **Hovedplanlegging \> Arbeidsområder \> Hovedplanlegging**, og klikk **Vis fremdrift** på hovedplanlegging-flisen. Med den ønskede jobben valgt, velger du **Forespørsler**, og deretter velger du **Vis fremdrift**
+1. Gå til **Hovedplanlegging \> Arbeidsområder \> Hovedplanlegging** , og velg **Uferdig planleggingsprosess** i handlingsruten. Med den ønskede jobben valgt, velger du **Forespørsler** , og deretter velger du **Vis fremdrift** .
+1. Gå til **Hovedplanlegging \> Arbeidsområder \> Hovedplanlegging** , og klikk **Vis fremdrift** på hovedplanlegging-flisen. Med den ønskede jobben valgt, velger du **Forespørsler** , og deretter velger du **Vis fremdrift**
 
 Merk at du bare kan vise aktive jobber når en planleggingsjobb behandles.
 
@@ -67,15 +67,15 @@ Gantt-diagrammet er et nyttig verktøy hvis du vil vise virkningen av å bruke h
 
 #### <a name="navigation-in-the-gantt-chart"></a>Navigasjon i Gantt-diagrammet
 
-- Hvis du vil utvide den valgte gruppen og vise detaljene, velger du plusstegnet (**+**) i trevisningen.
-- Hvis du vil skjule den valgte gruppen, velger du minustegnet (**–**) i trevisningen.
+- Hvis du vil utvide den valgte gruppen og vise detaljene, velger du plusstegnet ( **+** ) i trevisningen.
+- Hvis du vil skjule den valgte gruppen, velger du minustegnet ( **–** ) i trevisningen.
 - Du kan bruke tastaturet til navigasjon. Bruk **pil opp** og **pil ned** for å flytte mellom rader. Bruk **pil høyre** og **pil venstre** til å vise og skjule grupper.
-- Hvis du vil åpne eller lukke alle nivåer i Gantt-diagrammet, velger du **Vis alle** eller **Skjul alle**.
+- Hvis du vil åpne eller lukke alle nivåer i Gantt-diagrammet, velger du **Vis alle** eller **Skjul alle** .
 - Hvis du vil vise den tilknyttede behandlingstiden, holder du pekeren over en oppgave. (Oppgaver er det laveste nivået i Gantt-diagrammet.)
 
 #### <a name="view-an-additional-master-planning-run-to-compare-jobs"></a>Vis en ekstra hovedplanleggingskjøring til å sammenligne jobber
 
-Hvis du velger en jobb for hovedplanlegging i feltet **Vis en ekstra hovedplanleggingskjøring**, kan du vise en ekstra hovedplanlegging-kjøring i Gantt-diagrammet og sammenligne de to jobbene.
+Hvis du velger en jobb for hovedplanlegging i feltet **Vis en ekstra hovedplanleggingskjøring** , kan du vise en ekstra hovedplanlegging-kjøring i Gantt-diagrammet og sammenligne de to jobbene.
 
 #### <a name="bom-level-display"></a>Visning på stykklistenivå
 
@@ -119,11 +119,11 @@ Fargen vises bare på det laveste nivået i Gantt-diagrammet. Velg **Vis alle** 
 ## <a name="run-master-planning-and-track-processing-time"></a>Kjøre hovedplanlegging og spore behandlingstid
 
 1. Velg **Hovedplanlegging** på standard instrumentbord.
-1. Angi eller velg en verdi i **Plan**-feltet.
-1. Velg **Kjør**.
-1. Sett alternativet **Spor behandlingstid** til **Ja**.
-1. Angi et tall i feltet **Antall tråder**.
+1. Angi eller velg en verdi i **Plan** -feltet.
+1. Velg **Kjør** .
+1. Sett alternativet **Spor behandlingstid** til **Ja** .
+1. Angi et tall i feltet **Antall tråder** .
 1. Velg **Filtrer** i hurtigfanen **Poster som skal inkluderes** .
-1. I rutenettet velger du raden der **Felt**-feltet er satt til **Varenummer**.
-1. Angi en verdi i **Kriterier**-feltet.
-1. Velg **OK**.
+1. I rutenettet velger du raden der **Felt** -feltet er satt til **Varenummer** .
+1. Angi en verdi i **Kriterier** -feltet.
+1. Velg **OK** .

@@ -17,12 +17,12 @@ ms.search.industry: retail
 ms.author: stuharg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 671caf1feeb7ac9e7d5a166c5de12540ab9b9792
-ms.sourcegitcommit: 97ceb24f191161ca601e0889a539df665834ac3b
+ms.openlocfilehash: b3e3299388190f03e761591a0c23164b705db9e8
+ms.sourcegitcommit: f16db76c1c235dfa445b50614bcee9219782d6dc
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "3818356"
+ms.lasthandoff: 10/05/2020
+ms.locfileid: "3961664"
 ---
 # <a name="work-with-fragments"></a>Arbeide med fragmenter 
 
@@ -61,9 +61,9 @@ Du kan enten opprette et nytt fragment eller lagre en eksisterende modulkonfigur
 Følg denne fremgangsmåten for å konvertere en tidligere konfigurert modul til et fragment som kan brukes på nytt.
 
 1. Åpne en side eller mal som inneholder modulen du vil konvertere til et fragment.
-1. I disposisjonsruten til venstre eller direkte i hovedlerretet velger du den tidligere konfigurerte modulen.
-1. Velg ellipsen (**...**) ved siden av navnet på modulen enten i disposisjonsruten eller den valgte modulens verktøylinje i lerretet. 
-1. Velg **Del som sidefragment**. 
+1. I disposisjonsruten til venstre eller direkte i den visuelle sidebyggeren, velger du den tidligere konfigurerte modulen.
+1. Velg ellipsen ( **...** ) ved siden av navnet på modulen enten i disposisjonsruten eller den valgte modulens verktøylinje i den visuelle sidebyggeren. 
+1. Velg **Del som sidefragment** . 
 1. I dialogboksen **Lagre som sidefragment** angir du et navn på fragmentet.
 1. Velg **OK** for å lagre modulkonfigurasjonen som et fragment som kan legges til andre sider.
 
@@ -75,8 +75,8 @@ Bildet nedenfor viser hvordan du lagrer en modulkonfigurasjon som et fragment.
 
 Hvis du vil opprette en nytt fragment, følger du trinnene nedenfor.
 
-1. Velg **Fragmenter**i navigasjonsruten til venstre.
-1. Velg **Nytt sidefragment**. Det vises en dialogboks som viser alle de tilgjengelige modultypene. Som ble nevnt tidligere kan fragmenter opprettes fra en hvilken som helst modultype.
+1. Velg **Fragmenter** i navigasjonsruten til venstre.
+1. Velg **Nytt sidefragment** . Det vises en dialogboks som viser alle de tilgjengelige modultypene. Som ble nevnt tidligere kan fragmenter opprettes fra en hvilken som helst modultype.
 1. Velg en modultype for fragmentet.
 
 Bildet nedenfor viser hvor du kan opprette et nytt fragment.
@@ -94,16 +94,16 @@ Følgende prosedyrer beskriver hvordan du legger til, fjerner eller redigerer fr
 
 Hvis du vil legge til et fragment på en side, følger du disse trinnene.
 
-1. I disposisjonsruten til venstre eller direkte på hovedlerretet velger du en container eller et spor der underordnede moduler kan legges til.
-1. I disposisjonsruten velger du ellipsen (**...**) ved siden av navnet på containeren eller sporet.  Hvis du bruker hovedlerretet, kan du eventuelt velge plusstegnet (**+**).  
-1. Velg **Legg til fragment**.
+1. I disposisjonsruten til venstre eller direkte i den visuelle sidebyggeren, velger du en container eller et spor der underordnede moduler kan legges til.
+1. I disposisjonsruten velger du ellipsen ( **...** ) ved siden av navnet på containeren eller sporet.  Hvis du bruker den visuelle sidebyggeren, kan du eventuelt velge plusstegnet ( **+** ).  
+1. Velg **Legg til fragment** .
 
     ![Et skjermbilde av hvordan du legger til et eksisterende fragment i et spor eller en container](./media/add-fragment.png)
  
     > [!NOTE]
     > Hvis containeren eller sporet ikke støtter nye underordnede moduler, er alternativet **Legg til fragment** ikke tilgjengelig.
     
-1. Søk etter og velg et fragment du vil legge til, i dialogboksen **Legg til fragment**. Hvis det ikke finnes noen tilgjengelige fragmenter, kan det være at du først må opprette et fragment fra en modultype som valgt container eller spor støtter.
+1. Søk etter og velg et fragment du vil legge til, i dialogboksen **Legg til fragment** . Hvis det ikke finnes noen tilgjengelige fragmenter, kan det være at du først må opprette et fragment fra en modultype som valgt container eller spor støtter.
 1. Velg det ønskede fragmentet for å legge det til i containeren eller sporet på siden.
 
     ![Et skjermbilde av et modalt vindu for fragmentvelgeren](./media/fragment-picker.png)
@@ -115,8 +115,8 @@ Hvis du vil legge til et fragment på en side, følger du disse trinnene.
 
 Følg disse trinnene for å fjerne et fragment fra sporet eller containeren på en side.
 
-1. I disposisjonsruten til venstre velger du ellipsen (**...**) ved siden av navnet på fragmentet som skal fjernes, og deretter velger du papirkurvsymbolet.  Du kan også velge fragmentet på lerretet og velge papirkurvensymbol på verktøylinjen til fragmentet.
-1. Når du blir bedt om å bekrefte at du vil fjerne fragmentet, velger du **OK**.
+1. I disposisjonsruten til venstre velger du ellipsen ( **...** ) ved siden av navnet på fragmentet som skal fjernes, og deretter velger du papirkurvsymbolet.  Du kan også velge fragmentet i den visuelle sidebyggeren og velge papirkurvsymbolet på verktøylinjen til fragmentet.
+1. Når du blir bedt om å bekrefte at du vil fjerne fragmentet, velger du **OK** .
 
 > [!NOTE]
 > Når du fjerner et fragment fra en side, fjerner du bare referansen til det fra den siden. Du sletter **ikke** fragmentet fra området ditt. Hvis du vil slette fragmenter fra området, må du bruke brukergrensesnittet for fragmentinspeksjonen. Du kan bare slette fragmenter fra et område hvis de ikke er referert til av sider, maler eller andre fragmenter.
@@ -127,7 +127,7 @@ Hvis du vil redigere fragmenter, må du bruke brukergrensesnittet for fragmentre
 
 Hvis du vil redigere et fragment, følger du trinnene nedenfor.
 
-1. Velg **Fragmenter**i navigasjonsruten til venstre.
+1. Velg **Fragmenter** i navigasjonsruten til venstre.
 1. Under **Fragmenter** velger du fragmentet du vil redigere.
 1. Rediger fragmentets modulegenskaper og struktur etter behov. Prosessen ligner på redigeringsprosessen for moduler som redigeres i sideredigeringsvisning.
 

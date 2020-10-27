@@ -16,15 +16,15 @@ ms.custom: 19251
 ms.assetid: aa9e0dfb-6052-4a2e-9378-89507c02fdf2
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: roxanad
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 76105cad18047d58a835b6c325575c58451a7c1a
-ms.sourcegitcommit: cde71bc7d14ea6cdff2c4e991057d39a6a0473d9
+ms.openlocfilehash: 1fc2b63bfdec1c663027cb4e551589a705c2164e
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "3887070"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3981432"
 ---
 # <a name="forecast-reduction-keys"></a>Prognosereduksjonsnøkler
 
@@ -36,7 +36,7 @@ Dette emnet gir informasjon om de ulike metodene som brukes til å redusere beho
 
 Når du inkluderer en prognose i en hovedplan, kan du velge hvordan prognosekravene reduseres når faktisk etterspørsel er inkludert. Legg merke til at hovedplanleggingen ekskluderer tidligere prognosekrav, noe som betyr alle prognosekrav før dagens dato.
 
-For å inkludere en prognose i en hovedplan og velge metoden som brukes til å redusere prognosebehove, går du til **Hovedplanlegging \> Oppsett \> Planer \> Hovedplaner**. I feltet **Prognosemodell** velger du en prognisemodell. I feltet **Metode som brukes til å redusere prognosebehov** velger du en metode. Følgende alternativer er tilgjengelige:
+For å inkludere en prognose i en hovedplan og velge metoden som brukes til å redusere prognosebehove, går du til **Hovedplanlegging \> Oppsett \> Planer \> Hovedplaner** . I feltet **Prognosemodell** velger du en prognisemodell. I feltet **Metode som brukes til å redusere prognosebehov** velger du en metode. Følgende alternativer er tilgjengelige:
 
 - Ingen
 - Prosent – reduksjonsnøkkel
@@ -47,11 +47,11 @@ De følgende delene gir mer informasjon om hvert alternativ.
 
 ### <a name="none"></a>Ingen
 
-Hvis du velger **Ingen**, reduseres ikke prognosebehovet under hovedplanlegging. I så fall oppretter hovedplanleggingen planlagte ordrer for å angi prognosebehovet (prognosekrav). Disse planlagte ordrene vedlikeholder det foreslåtte antallet, uavhengig av andre typer behov. Hvis det for eksempel plasseres salgsordrer, vil hovedplanlegging opprette flere planlagte ordrer for å forsyne salgsordrene. Antallet for prognosebehovene reduseres ikke.
+Hvis du velger **Ingen** , reduseres ikke prognosebehovet under hovedplanlegging. I så fall oppretter hovedplanleggingen planlagte ordrer for å angi prognosebehovet (prognosekrav). Disse planlagte ordrene vedlikeholder det foreslåtte antallet, uavhengig av andre typer behov. Hvis det for eksempel plasseres salgsordrer, vil hovedplanlegging opprette flere planlagte ordrer for å forsyne salgsordrene. Antallet for prognosebehovene reduseres ikke.
 
 ### <a name="percent--reduction-key"></a>Prosent – reduksjonsnøkkel
 
-Hvis du velger **Prosent - reduksjonsnøkkel**, reduseres prognosebehov i henhold til prosentene og periodene som er definert av reduksjonsnøkkelen. I dette tilfellet oppretter hovedplanleggingen planlagte ordrer der antallet beregnes som prognoseberegnet antall × reduksjonsnøkkel i hver periode. Hvis det finnes andre typer behov, oppretter hovedplanleggingen også planlagte ordrer for å levere dette behovet.
+Hvis du velger **Prosent - reduksjonsnøkkel** , reduseres prognosebehov i henhold til prosentene og periodene som er definert av reduksjonsnøkkelen. I dette tilfellet oppretter hovedplanleggingen planlagte ordrer der antallet beregnes som prognoseberegnet antall × reduksjonsnøkkel i hver periode. Hvis det finnes andre typer behov, oppretter hovedplanleggingen også planlagte ordrer for å levere dette behovet.
 
 #### <a name="example-percent--reduction-key"></a>Eksempel: Prosent – reduksjonsnøkkel
 
@@ -75,9 +75,9 @@ På siden **Reduksjonsnøkler** definerer du følgende linjer.
 | 3      | Måned | 50      |
 | 4      | Måned | 25      |
 
-Du tilordner reduksjonsnøkkelen til varens dekningsgruppe. På **Hovedplaner**-siden, i **Metode som brukes til å redusere prognosebehov** -feltet, velger du **Prosent - reduksjonsnøkkel**.
+Du tilordner reduksjonsnøkkelen til varens dekningsgruppe. På **Hovedplaner** -siden, i **Metode som brukes til å redusere prognosebehov** -feltet, velger du **Prosent - reduksjonsnøkkel** .
 
-I dette tilfellet, hvis du kjører prognoseplanlegging 1. januar, forbrukes behovsprognosekravene i henhold til prosentene du definerer på **Reduksjonsnøkler**-siden. Følgende behovsantall overføres til hovedplanen.
+I dette tilfellet, hvis du kjører prognoseplanlegging 1. januar, forbrukes behovsprognosekravene i henhold til prosentene du definerer på **Reduksjonsnøkler** -siden. Følgende behovsantall overføres til hovedplanen.
 
 | Måned                | Planlagt ordreantall | Beregning    |
 |----------------------|------------------------|----------------|
@@ -89,13 +89,13 @@ I dette tilfellet, hvis du kjører prognoseplanlegging 1. januar, forbrukes beho
 
 ### <a name="transactions--reduction-key"></a>Transaksjoner – reduksjonsnøkkel
 
-Hvis du velger **Transaksjoner - reduksjonsnøkkel**, reduseres prognosebehovene av transaksjonene som skjer i periodene som er definert av reduksjonsnøkkelen.
+Hvis du velger **Transaksjoner - reduksjonsnøkkel** , reduseres prognosebehovene av transaksjonene som skjer i periodene som er definert av reduksjonsnøkkelen.
 
 #### <a name="example-transactions--reduction-key"></a>Eksempel: Transaksjoner – reduksjonsnøkkel
 
 Dette eksemplet viser hvordan faktiske ordrer som skjer i periodene som er definert av reduksjonsnøkkelen, reduserer behovene i behovsprognosen.
 
-Du velger for eksempel **Transaksjoner – reduksjonsnøkkel** i feltet **Metode som brukes til å redusere prognosebehov** -feltet på siden **Hovedplaner**.
+Du velger for eksempel **Transaksjoner – reduksjonsnøkkel** i feltet **Metode som brukes til å redusere prognosebehov** -feltet på siden **Hovedplaner** .
 
 Følgende salgsordrer finnes den 1. januar.
 
@@ -118,7 +118,7 @@ Hvis du bruker den samme behovsprognosen på 1 000 stykker per måned som ble br
 
 ### <a name="transactions--dynamic-period"></a>Transaksjoner – dynamisk periode
 
-Hvis du velger **Transaksjoner – dynamisk periode**, reduseres prognosekravene med de faktiske ordretransaksjonene som forekommer i løpet av perioden som er dynamisk. Den dynamiske perioden dekker gjeldende prognosedatoer og slutter ved starten av neste prognose. I så fall oppretter hovedplanleggingen planlagte ordrer for å angi prognosebehovet (prognosekrav). Men når faktiske ordretransaksjoner plasseres, reduseres prognosebehovene. De faktiske transaksjonene forbruker deler av de prognoseberegnede behovene.
+Hvis du velger **Transaksjoner – dynamisk periode** , reduseres prognosekravene med de faktiske ordretransaksjonene som forekommer i løpet av perioden som er dynamisk. Den dynamiske perioden dekker gjeldende prognosedatoer og slutter ved starten av neste prognose. I så fall oppretter hovedplanleggingen planlagte ordrer for å angi prognosebehovet (prognosekrav). Men når faktiske ordretransaksjoner plasseres, reduseres prognosebehovene. De faktiske transaksjonene forbruker deler av de prognoseberegnede behovene.
 
 Når dette alternativet brukes, skjer følgende:
 
@@ -131,7 +131,7 @@ Når dette alternativet brukes, skjer følgende:
 
 #### <a name="example-1-transactions--dynamic-period"></a>Eksempel 1: Transaksjoner – dynamisk periode
 
-Her er et enkelt eksempel som viser hvordan **Transaksjoner – dynamisk periode**-metoden fungerer.
+Her er et enkelt eksempel som viser hvordan **Transaksjoner – dynamisk periode** -metoden fungerer.
 
 I dette eksemplet kan du inkludere følgende behovsprognose i en hovedplan.
 
@@ -198,12 +198,12 @@ Derfor opprettes følgende planlagte ordrer:
 
 En prognosereduksjonsnøkkel brukes i metodene **Transaksjoner – reduksjonsnøkkel** og **Prosent – reduksjonsnøkkel** for å redusere prognosebehovene. Følg denne fremgangsmåten for å opprette og definere en reduksjonsnøkkel.
 
-1. Gå til **Hovedplanlegging \> Oppsett \> Dekning \> Reduksjonsnøkler**.
-2. Velg **By**, eller trykk **Ctrl + N** for å opprette en reduksjonsnøkkel.
-3. I **Reduksjonsnøkkel**-feltet skriver du inn en unik identifikator for prognosereduksjonsnøkkelen. Angi deretter et navn i **Navn**-feltet. 
+1. Gå til **Hovedplanlegging \> Oppsett \> Dekning \> Reduksjonsnøkler** .
+2. Velg **By** , eller trykk **Ctrl + N** for å opprette en reduksjonsnøkkel.
+3. I **Reduksjonsnøkkel** -feltet skriver du inn en unik identifikator for prognosereduksjonsnøkkelen. Angi deretter et navn i **Navn** -feltet. 
 4. Definer periodene og reduksjonsnøkkelprosenten i hver periode:
 
-    - **Gyldighetsdato**-feltet angir datoen når opprettelse av periodene starter. Når **Bruk gyldig dato**-alternativet er satt til **Ja**, starter periodene på gyldighetsdatoen. Når det er satt til **Nei**, starter periodene på datoen hovedplanlegging kjøres.
+    - **Gyldighetsdato** -feltet angir datoen når opprettelse av periodene starter. Når **Bruk gyldig dato** -alternativet er satt til **Ja** , starter periodene på gyldighetsdatoen. Når det er satt til **Nei** , starter periodene på datoen hovedplanlegging kjøres.
     - Definer periodene prognosereduksjonen skal utføres.
     - For en bestemt periode angir du prosentene som prognosebehovene skal reduseres med. Du kan angi positive verdier for å redusere krav eller negative verdier for å øke krav.
 
@@ -211,18 +211,18 @@ En prognosereduksjonsnøkkel brukes i metodene **Transaksjoner – reduksjonsnø
 
 En prognosereduksjonsnøkkel må tilordnes til en dekningsgruppe for varen. Følg denne fremgangsmåten hvis du vil tilordne en reduksjonsnøkkel til varens dekningsgruppe.
 
-1. Gå til **Hovedplanlegging \> Oppsett \> Dekning \> Dekningsgrupper**.
-2. På **Andre**-hurtigkategorien i feltet **Reduksjonsnøkkel** velger reduksjonsnøkkelen som skal tilordnes dekningsgruppen. Reduksjonsnøkkelen gjelder deretter for alle varer som tilhører en dekningsgruppe.
+1. Gå til **Hovedplanlegging \> Oppsett \> Dekning \> Dekningsgrupper** .
+2. På **Andre** -hurtigkategorien i feltet **Reduksjonsnøkkel** velger reduksjonsnøkkelen som skal tilordnes dekningsgruppen. Reduksjonsnøkkelen gjelder deretter for alle varer som tilhører en dekningsgruppe.
 3. Hvis du vil bruke en reduksjonsnøkkel for å beregne prognosereduksjon under hovedplanlegging, må du definere denne innstillingen i oppsettet av prognoseplanen eller hovedplanen. Gå til ett av følgende steder:
 
     - Hovedplanlegging \> Oppsett \> Planer \> Prognoseplaner
     - Hovedplanlegging \> Oppsett \> Planer \> Hovedplaner
 
-4. På siden **Prognoseplaner** eller **Hovedplaner**, i **Generelt**-hurtigkategorien i feltet **Metode som brukes til å redusere prognosebehov**, velger du enten **Prosent – reduksjonsnøkkel** eller **Transaksjoner – reduksjonsnøkkel**.
+4. På siden **Prognoseplaner** eller **Hovedplaner** , i **Generelt** -hurtigkategorien i feltet **Metode som brukes til å redusere prognosebehov** , velger du enten **Prosent – reduksjonsnøkkel** eller **Transaksjoner – reduksjonsnøkkel** .
 
 ## <a name="reduce-a-forecast-by-transactions"></a>Redusere en prognose etter transaksjoner
 
-Når du velger **Transaksjoner – reduksjonsnøkkel** eller **Transaksjoner – dynamisk periode** som metode for å redusere prognosebehov, kan du angi hvilke transaksjoner som reduserer prognosen. På siden **Dekningsgrupper**, i **Andre**-hurtigkategorien i feltet **Reduser prognose etter**, velger du **Alle transaksjoner** hvis alle transaksjoner skal redusere prognosen, eller **Ordrer** hvis bare salgsordrer skal redusere prognosen.
+Når du velger **Transaksjoner – reduksjonsnøkkel** eller **Transaksjoner – dynamisk periode** som metode for å redusere prognosebehov, kan du angi hvilke transaksjoner som reduserer prognosen. På siden **Dekningsgrupper** , i **Andre** -hurtigkategorien i feltet **Reduser prognose etter** , velger du **Alle transaksjoner** hvis alle transaksjoner skal redusere prognosen, eller **Ordrer** hvis bare salgsordrer skal redusere prognosen.
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 

@@ -15,15 +15,15 @@ ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: ShylaThompson
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 31beaf76b9e710807974bde7ec7dd53561e2ab28
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 165c1c89af52aac0b540cb6aee577d717d12b0f6
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3206686"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3979738"
 ---
 # <a name="subscription-groups"></a>Abonnementsgrupper    
 
@@ -34,7 +34,7 @@ Abonnementer deler følgende informasjon, som defineres for abonnementsgruppen:
 
   - Nummerseriekode for abonnementet, hvis aktuelt.
 
-  - Faktureringsperioden som abonnementstransaksjonene er opprettet for. Hvis for eksempel periodekoden **Fakturering** i **Abonnementsgrupper**-skjemaet er definert til **Kvartalsvis**, vil alle abonnementer tilknyttet denne abonnementsgruppen, opprettes kvartalsvis.
+  - Faktureringsperioden som abonnementstransaksjonene er opprettet for. Hvis for eksempel periodekoden **Fakturering** i **Abonnementsgrupper** -skjemaet er definert til **Kvartalsvis** , vil alle abonnementer tilknyttet denne abonnementsgruppen, opprettes kvartalsvis.
 
   - Hvor ofte abonnementet skal avsettes, hvis det skal avsettes i det hele tatt.
 

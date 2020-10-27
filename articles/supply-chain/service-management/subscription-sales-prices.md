@@ -15,22 +15,22 @@ ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: ShylaThompson
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d6c59c90d49a4dcf3df4672c5f40d52ed639760c
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: f03efbbca4fc9da76c6ead7566457beb79c8c249
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3206617"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3985871"
 ---
 # <a name="subscription-sales-prices"></a>Salgspriser for abonnement   
 
 [!include [banner](../includes/banner.md)]
 
 
-Når du oppretter et abonnement, avledes salgsprisen fra salgsprisoppsettet som ble opprettet i skjemaet **Salgspris (abonnement)**.
+Når du oppretter et abonnement, avledes salgsprisen fra salgsprisoppsettet som ble opprettet i skjemaet **Salgspris (abonnement)** .
 
 I skjemaet **Salgspris (abonnement)** kan du opprette salgspriser for et bestemt abonnement, eller du kan opprette salgspriser som er mer generelle. Før en salgspris kan brukes på et abonnement, må periodekoden og valutaen for abonnementet være identisk med periodekoden og valutaen for salgsprisen.
 
@@ -219,11 +219,11 @@ Deretter oppretter du følgende abonnementer:
 
 Nå oppretter du abonnementsavgifter for begge abonnementer i abonnementsgruppen Sub1:
 
-1.  Klikk på **Servicestyring** \> **Oppsett** \> **Serviceabonnementer** \> **Abonnementsgrupper**.
+1.  Klikk på **Servicestyring** \> **Oppsett** \> **Serviceabonnementer** \> **Abonnementsgrupper** .
 
-2.  I skjemaet **Abonnementsgrupper** klikker du **Funksjon** \> **Opprett abonnementsavgift**.
+2.  I skjemaet **Abonnementsgrupper** klikker du **Funksjon** \> **Opprett abonnementsavgift** .
 
-3.  Angi aktuell informasjon i skjemaet **Opprett abonnementsavgift**. Hvis du vil ha mer informasjon, kan du se [Opprette abonnementsgebyrtransaksjoner](create-subscription-fee-transactions.md).
+3.  Angi aktuell informasjon i skjemaet **Opprett abonnementsavgift** . Hvis du vil ha mer informasjon, kan du se [Opprette abonnementsgebyrtransaksjoner](create-subscription-fee-transactions.md).
 
 Abonnementsavgifter med en salgspris på EUR 500 opprettes for begge abonnementer, som vist i følgende tabell.
 

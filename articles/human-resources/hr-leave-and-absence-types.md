@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 1802938f54a1d78e6ea60572a76177a037192ae0
-ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
+ms.openlocfilehash: 6e6ca7d04b86232ba48474fcbe288a18995661ae
+ms.sourcegitcommit: 6a89816f94c8cdcae6e56fa89843eb99c28b21fa
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "3428599"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "3969028"
 ---
 # <a name="configure-leave-and-absence-types"></a>Konfigurere permisjons- og fraværstyper
 
@@ -40,29 +40,31 @@ Permisjonstyper i Dynamics 365 Human Resources definerer de ulike typene fravær
 
 ## <a name="add-a-leave-type"></a>Legge til en permisjonstype
 
-1. På siden **Permisjon og fravær** velger du **Koblinger**-fanen.
+1. På siden **Permisjon og fravær** velger du **Koblinger** -fanen.
 
-2. Under **Oppsett**velger du **Permisjons- og fraværstyper**.
+2. Under **Oppsett** velger du **Permisjons- og fraværstyper** .
 
-3. Velg **Ny**.
+3. Velg **Ny** .
 
-4. Angi et navn for permisjonstypen under **Type**, velg en arbeidsflyt fra **Arbeidsflyt-ID**, og angi en beskrivelse under **Beskrivelse**.
+4. Angi et navn for permisjonstypen under **Type** , velg en arbeidsflyt fra **Arbeidsflyt-ID** , og angi en beskrivelse under **Beskrivelse** .
 
-5. I **Generelt** velger du **Ingen**, **Planlagt** eller **Ikke planlagt** fra rullegardinlisten **Kategori**.
+5. I **Generelt** velger du **Ingen** , **Planlagt** eller **Ikke planlagt** fra rullegardinlisten **Kategori** .
 
-6. Velg en inntektskode fra rullegardinlisten **Inntektskode**.
+6. Velg en inntektskode fra rullegardinlisten **Inntektskode** .
 
-7. Under **Årsakskode kreves** må du velge om du vil kreve en årsakskode. Hvis du vil kreve årsakskoder, kan det hende at du må legge dem til. Under **Årsakskoder** velger du **Legg til**, velger en årsakskode og merker av for **Aktivert** ved siden av den.
+7. Under **Årsakskode kreves** må du velge om du vil kreve en årsakskode. Hvis du vil kreve årsakskoder, kan det hende at du må legge dem til. Under **Årsakskoder** velger du **Legg til** , velger en årsakskode og merker av for **Aktivert** ved siden av den.
 
-8. Under **Begrens tilgang til valgte roller** velger du om du vil begrense tilgangen. Deretter velger du sikkerhetsrollene under **Sikkerhetsroller for denne permisjonstypen**. Sikkerhetsrollene er definert i arbeidsflyten du valgte under **Arbeidsflyt-ID** tidligere i denne prosedyren.
+8. Under **Begrens tilgang til valgte roller** velger du om du vil begrense tilgangen. Deretter velger du sikkerhetsrollene under **Sikkerhetsroller for denne permisjonstypen** . Sikkerhetsrollene er definert i arbeidsflyten du valgte under **Arbeidsflyt-ID** tidligere i denne prosedyren.
 
-9. Under **Suspensjonsforbindelser** velger du om du vil at denne permisjonstypen skal suspendere en annen permisjonstype eller bli deaktivert av en annen permisjonstype. Når en fraværsforespørsel sendes for permisjonstypen "avbrudd", opprettes det automatisk et permisjonstidspunkt for den avbrutte permisjonstypen. 
+9. Under **Kalenderfarge** velger du hvilken farge som skal vises på permisjons- og fraværskalendere for denne permisjonstypen. 
 
-10. Velg **Lagre**.
+10. Under **Suspensjonsforbindelser** velger du om du vil at denne permisjonstypen skal suspendere en annen permisjonstype eller bli deaktivert av en annen permisjonstype. Når en fraværsforespørsel sendes for permisjonstypen "avbrudd", opprettes det automatisk et permisjonstidspunkt for den avbrutte permisjonstypen. 
+
+10. Velg **Lagre** .
 
 ## <a name="configure-leave-type-rules"></a>Konfigurer regler for permisjonstyper
 
-1. Angi avrundingsalternativer for permisjonstypen. Alternativene omfatter **Ingen**, **Opp**, **Ned** og **Nærmest**. Du kan også angi avrundingspresisjonen for permisjonstypen.
+1. Angi avrundingsalternativer for permisjonstypen. Alternativene omfatter **Ingen** , **Opp** , **Ned** og **Nærmest** . Du kan også angi avrundingspresisjonen for permisjonstypen.
 
 2. Angi **Helligdagskorrigering** for permisjonstypen. Når du velger dette alternativet, bruker Human Resources antallet helligdager som faller på en arbeidsdag, for å bestemme hvordan det skal avsettes avspasering for permisjonstypen. Hvis for eksempel første juledag faller på en mandag, vil Human Resources trekke én dag fra permisjonstypen ved behandling av avsetninger.
 

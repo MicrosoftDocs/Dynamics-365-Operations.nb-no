@@ -3,7 +3,7 @@ title: Hurtigtaster
 description: Dette emnet gir en oversikt over hurtigtastkombinasjonene du kan bruke når du arbeider med Finance and Operations-apper.
 author: jasongre
 manager: AnnBe
-ms.date: 10/02/2019
+ms.date: 10/05/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 41d5fb270e7b01effc650b24626b81ced647a399
-ms.sourcegitcommit: 95d06006142e6bf83351fb075b413fdc2074d5ee
+ms.openlocfilehash: 982fbef1af504ad70aa0e7c4ecf19f09fb599d16
+ms.sourcegitcommit: ebb110b0b73c99929636d26811a6f9c186080ddb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "3761627"
+ms.lasthandoff: 10/05/2020
+ms.locfileid: "3962526"
 ---
 # <a name="keyboard-shortcuts"></a>Hurtigtaster
 
@@ -33,9 +33,11 @@ Følgende hurtigtaster kan bidra til at du kan registrerer data raskt og effekti
 > [!NOTE]
 > Hurtigtastene som er beskrevet her, gjelder amerikansk tastaturoppsett. Hvis du bruker et tastatur med en annen utforming, kan tastene være plassert annerledes.
 
+Noen av snarveiene på denne siden er *nøkkelkombinasjoner* , noe som betyr at de krever to etterfølgende sett med tastekombinasjoner (atskilt med et komma) som må trykkes uavhengig for å utløse den nødvendige handlingen. For eksempel krever snarveien Alt+M,A at brukeren først trykker Alt+M, slipper tastene og deretter trykker A. 
+
 ## <a name="finding-a-shortcut"></a>Finne en hurtigtast
 
-Fra og med plattformoppdatering 11 kan brukere finne hurtigtaster som er tilgjengelige for øyeblikket, direkte i brukergrensesnittet. Høyreklikk på en kontroll, og velg **Vis snarveier**. Da åpnes en dialogboks som viser hurtigtastene du kan bruke, avhengig av hvor du er på siden.
+Fra og med plattformoppdatering 11 kan brukere finne hurtigtaster som er tilgjengelige for øyeblikket, direkte i brukergrensesnittet. Høyreklikk på en kontroll, og velg **Vis snarveier** . Da åpnes en dialogboks som viser hurtigtastene du kan bruke, avhengig av hvor du er på siden.
 
 ## <a name="action-shortcuts"></a>Handlingssnarveier
 
@@ -193,7 +195,7 @@ Fra og med plattformoppdatering 11 kan brukere finne hurtigtaster som er tilgjen
 | Flytt til innholdet på hovedsiden (med fokus i en annen rute)                    | Alt+M,M                    |
 | Flytt til Faktaboks-rute (som kan omfatte å åpne den)                       | Alt+M,B eller Ctrl+F2         |
 
-## <a name="personalization-shortcuts"></a>Personlige snarveier
+## <a name="personalization-shortcuts"></a>Snarveier for [Tilpassing](personalize-user-experience.md) 
 
 | Hvis du vil gjøre dette                                                                                                             | Trykk                               |
 |------------------------------------------------------------------------------------------------------------------------|-------------------------------------|
@@ -237,7 +239,20 @@ Fra og med plattformoppdatering 11 kan brukere finne hurtigtaster som er tilgjen
 | Gå opp/ned en side i oppslaget                                                                                       | Side opp / Side ned              |
 | Gå til toppen/bunnen av oppslaget                                                                                    | Home / End                       |
 
+## <a name="task-recordershortcuts"></a>Snarveier for [Oppgaveregistrering](../../dev-itpro/user-interface/task-recorder.md) 
+
+| Hvis du vil gjøre dette                                                                    | Trykk                       |
+|-------------------------------------------------------------------------------|----------------------------|
+| Stopp registrering (under registrering)                                          | Alt+R,S                    |
+| Vis/skjul oppgaveregistreringsruten (under registrering)             | Alt+R,T                    |
+| Aktiver/deaktiver rammemodus (under avspilling av en oppgaveveiledning)                                | Alt+R,L                    |
+| Gå til forrige trinn (under avspilling av en oppgaveveiledning)                          | Alt+R,P                    |
+| Gå til neste trinn (under avspilling av en oppgaveveiledning)                              | Alt+R,N                    |
+| Flytte fokus mellom siden og den animerte popup-meldingen (under avspilling av en oppgaveveiledning) | Alt+R,F               |
+| Vis/skjul den animerte popup-meldingen (under avspilling av en oppgaveveiledning)              | Alt+R,C                    |
+| Vis mer/mindre informasjon i den animert popup-meldingen (under avspilling av en oppgaveveiledning) | Alt+R,M                    |
+
 ## <a name="additional-resources"></a>Tilleggsressurser
 
-- [Hurtigtaster for analyse for manglende konto](../../../finance/general-ledger/financial-reporting-keyboard-shortcuts.md)
+[Hurtigtaster for analyse for manglende konto](../../../finance/general-ledger/financial-reporting-keyboard-shortcuts.md)
 

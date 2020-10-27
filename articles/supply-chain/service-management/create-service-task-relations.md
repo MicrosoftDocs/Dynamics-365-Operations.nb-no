@@ -15,15 +15,15 @@ ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: ShylaThompson
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b167714dc81cf0e4ee70d7092f2ec030043abe71
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 1e50b4322c65097ab4f8aba9c36e4d5e6cc4c01b
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3202612"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3978636"
 ---
 # <a name="create-service-task-relations"></a>Opprette serviceoppgaverelasjoner    
 
@@ -33,15 +33,15 @@ Du kan knytte serviceoppgaver til serviceavtaler eller serviceordrer for å besk
 
 ## <a name="create-a-relation-with-a-service-agreement"></a>Opprette en relasjon med en serviceavtale
 
-1.  Klikk **Servicestyring** \> **Felles** \> **Serviceavtaler** \> **Serviceavtaler**.
+1.  Klikk **Servicestyring** \> **Felles** \> **Serviceavtaler** \> **Serviceavtaler** .
 
 2.  Velg en eksisterende serviceavtale, eller opprett en ny serviceavtale.
 
-3.  Klikk på **Serviceoppgaver**-knappen i handlingsruten.
+3.  Klikk på **Serviceoppgaver** -knappen i handlingsruten.
 
-4.  I **Serviceoppgaver**-skjemaet trykker du på CTRL+N for å opprette en ny linje, og velg deretter en serviceoppgave fra **Serviceoppgave**-listen for å knytte serviceoppgaven til serviceavtalen.
+4.  I **Serviceoppgaver** -skjemaet trykker du på CTRL+N for å opprette en ny linje, og velg deretter en serviceoppgave fra **Serviceoppgave** -listen for å knytte serviceoppgaven til serviceavtalen.
 
-5.  Angi eventuelle interne eller eksterne beskrivelsesmerknader i fritekstfeltene i kategorien **Beskrivelse**.
+5.  Angi eventuelle interne eller eksterne beskrivelsesmerknader i fritekstfeltene i kategorien **Beskrivelse** .
 
 6.  Lukk skjemaet for å lagre posten.
 
@@ -51,15 +51,15 @@ En serviceoppgaverelasjon som er opprettet i en serviceavtale, er tilgjengelig f
 
 ## <a name="create-a-relation-with-a-service-order"></a>Opprette en relasjon med en serviceordre
 
-1.  Klikk på **Servicestyring** \> **Felles** \> **Serviceordrer** \> **Serviceordrer**.
+1.  Klikk på **Servicestyring** \> **Felles** \> **Serviceordrer** \> **Serviceordrer** .
 
 2.  Velg en eksisterende serviceordre, eller opprett en ny serviceordre.
 
-3.  Klikk på **Serviceoppgaver**-knappen i handlingsruten.
+3.  Klikk på **Serviceoppgaver** -knappen i handlingsruten.
 
-4.  I **Serviceoppgaver**-skjemaet trykker du på CTRL+N for å opprette en ny linje, og velg deretter en serviceoppgave fra **Serviceoppgave**-listen for å knytte serviceoppgavene til serviceordren.
+4.  I **Serviceoppgaver** -skjemaet trykker du på CTRL+N for å opprette en ny linje, og velg deretter en serviceoppgave fra **Serviceoppgave** -listen for å knytte serviceoppgavene til serviceordren.
 
-5.  Angi eventuelle interne eller eksterne beskrivelsesmerknader i fritekstfeltene i kategorien **Beskrivelse**.
+5.  Angi eventuelle interne eller eksterne beskrivelsesmerknader i fritekstfeltene i kategorien **Beskrivelse** .
 
 6.  Lukk skjemaet for å lagre posten.
 

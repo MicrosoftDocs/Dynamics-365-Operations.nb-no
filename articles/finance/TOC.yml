@@ -70,6 +70,8 @@
                   items:
                     - name: Nyheter eller endringer på startsiden for Finance
                       href: get-started/whats-new-home-page.md
+                    - name: Finance 10.0.15 (januar 2021)
+                      href: get-started/whats-new-changed-10-0-15.md
                     - name: Finance 10.0.14 (november 2020)
                       href: get-started/whats-new-changed-10-0-14.md
                     - name: Finance 10.0.13 (oktober 2020)
@@ -194,6 +196,8 @@
                   href: ../fin-ops-core/fin-ops/get-started/move-licenses-between-agreement-types.md?toc=/dynamics365/finance/toc.json
                 - name: Flytte LCS-implementeringsprosjekter til forskjellige Azure AD-leiere
                   href: ../fin-ops-core/fin-ops/get-started/move-lcs-implementation-project-tenant.md?toc=/dynamics365/finance/toc.json
+                - name: Flytte LCS-implementeringsprosjekter fra lokalt til skyen
+                  href: ../fin-ops-core/dev-itpro/lifecycle-services/move-on-prem-to-cloud.md?toc=/dynamics365/finance/toc.json
                 - name: Flere LCS-prosjekter og -produksjonsmiljøer på én Azure AD-leier
                   href: ../fin-ops-core/fin-ops/get-started/implement-multiple-projects-aad-tenant.md?toc=/dynamics365/finance/toc.json
         - name: Leverandører
@@ -226,6 +230,16 @@
                   href: accounts-payable/accounts-payable-invoice-matching.md
                 - name: Definere validering av leverandørfakturakontroll
                   href: accounts-payable/tasks/set-up-accounts-payable-invoice-matching-validation.md
+            - name: Automatisering av leverandørfaktura
+              items:
+                - name: Oversikt over automatiserte leverandørfakturaprosesser
+                  href: accounts-payable/auto-vendr-invc-process.md
+                - name: Oppsettsalternativer for automatisering av leverandørfakturaer
+                  href: accounts-payable/vnd-invoice-set-up-options.md
+                - name: Sende fakturaer til arbeidsflytsystemet og avstemme produktkvitteringslinjer
+                  href: accounts-payable/submit-invoice-workflow-automatically.md
+                - name: Vise resultater for automatisering av leverandørfaktura
+                  href: accounts-payable/view-automated-vendor-invoice.md
             - name: Regnskapsdistribusjoner og underfinansjournaloppføringer for leverandørfakturaer
               href: accounts-payable/accounting-distributions-subledger-journal-entries-vendor-invoices.md
             - name: Fakturasamsvar og konserninterne bestillinger
@@ -258,7 +272,7 @@
               href: accounts-payable/mobile-invoice-approvals.md
             - name: Arbeidsområde for leverandørsamarbeidsfakturering
               href: accounts-payable/vendor-portal-invoicing-workspace.md
-            - name: Automatisering av leverandørfaktura
+            - name: Fakturaautomatisering for skannede dokumenter
               href: accounts-payable/vendor-invoice-automation.md
             - name: Behandling av meglerkontrakt
               href: accounts-payable/broker-contract.md
@@ -450,6 +464,8 @@
               href: accounts-receivable/tasks/process-collection-letters.md
             - name: Definere og generere informasjon om aldersfordeling for kunde
               href: accounts-receivable/tasks/set-up-accounts-receivable-aging-information.md
+            - name: Aldersfordelt saldoliste for kunder
+              href: accounts-receivable/customer-aging.md
             - name: Opprette en avskrivningsjournal for en kunde
               href: accounts-receivable/tasks/create-write-off-journal-customer.md
             - name: Behandling av avanserte merknader
@@ -792,6 +808,10 @@
                   href: fixed-assets/straight-line-life-remaining-depreciation.md
                 - name: Lineær levetidsavskrivning
                   href: fixed-assets/straight-line-service-life-depreciation.md
+        - name: Aktivaleie
+          items:
+            - name: Komme i gang med leasing av aktiva
+              href: asset-leasing/asset-leasing-quick-start.md
         - name: Økonomimodul
           items:
             - name: Oversikt over økonomimodul
@@ -1884,7 +1904,7 @@
                   items:
                     - name: Oversikt over India GST
                       href: localizations/apac-ind-gst.md
-                    - name: Hva som er nytt eller endret for APAC India GST-lokalisering
+                    - name: Hva som er nytt eller endret for India GST-lokalisering
                       items:
                         - name: Hva er nytt eller endret i 10.0.0
                           href: localizations/apac-ind-news-letter-10-0-00.md
@@ -1912,6 +1932,8 @@
                           href: localizations/apac-ind-news-letter-10-0-11.md
                         - name: Hva er nytt eller endret i 10.0.12
                           href: localizations/apac-ind-news-letter-10-0-12.md
+                        - name: Hva er nytt eller endret i 10.0.13
+                          href: localizations/ind-news-letter-10-0-13.md
                     - name: Referansegrupper for India GST
                       href: localizations/apac-ind-gst-reference-groups.md
                     - name: GST-integrering for kassaapparater
@@ -2022,6 +2044,8 @@
                           href: localizations/apac-ind-GST-export-services-zero-rated-tax.md
                     - name: Lagertransaksjon
                       items:
+                        - name: Lageroverføringsordrer
+                          href: localizations/apac-ind-stock-transfer.md
                         - name: Lageroverføringsordrer som har avgift på overføringsprisen
                           href: localizations/apac-ind-GST-stock-transfer-transactions.md
                     - name: Transaksjon for kundebetaling
@@ -2076,8 +2100,6 @@
                       href: localizations/tax-engine-trouble-shooting.md
                 - name: Vanlige spørsmål om mva-terskler
                   href: localizations/apac-ind-tax-thresholds.md
-                - name: Lageroverføringer
-                  href: localizations/apac-ind-stock-transfer.md
             - name: Italia
               items:
                 - name: Oversikt over Italia

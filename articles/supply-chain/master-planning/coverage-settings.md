@@ -16,15 +16,15 @@ ms.custom: 2494
 ms.assetid: 5a95ae4f-ca75-47d9-a1c3-68c97b42f166
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: roxanad
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f9a170ee07da27977fd65ef8f01f3bb87b7ef8b4
-ms.sourcegitcommit: cde71bc7d14ea6cdff2c4e991057d39a6a0473d9
+ms.openlocfilehash: b1134f734f1025151a56b2a72266a6baa5763ba4
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "3887120"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3982726"
 ---
 # <a name="coverage-settings"></a>Dekningsinnstillinger
 
@@ -36,19 +36,19 @@ Du kan angi dekningsinnstillinger på flere måter:
 
 - Angi dekningsinnstillinger for en dekningsgruppe.
 
-    Du kan opprette en dekningsgruppe som inneholder innstillinger for alle produkter som er koblet til dekningsgruppen. Hvis du vil opprette en dekningsgruppe, går du til **Hovedplanlegging &gt; Oppsett &gt; Dekning &gt; Dekningsgrupper**. Du kan koble en dekningsgruppe til et produkt. Hvis koblingen er spesifikk for et område, lager eller produktdimensjon, kan du bruke **Dekningsgruppe**-feltet på **Varedekning**-siden. Hvis koblingen er generisk, uavhengig av produktdimensjonene, bruker du **Dekningsgruppe**-feltet i **Plan**-hurtigkategorien på **Produktdetaljer**-siden. Hvis du ikke kobler en dekningsgruppe til et produkt, bruker hovedplanlegging som standard den generelle dekningsgruppen som er angitt på siden **Hovedplanleggingsparametere**.
+    Du kan opprette en dekningsgruppe som inneholder innstillinger for alle produkter som er koblet til dekningsgruppen. Hvis du vil opprette en dekningsgruppe, går du til **Hovedplanlegging &gt; Oppsett &gt; Dekning &gt; Dekningsgrupper** . Du kan koble en dekningsgruppe til et produkt. Hvis koblingen er spesifikk for et område, lager eller produktdimensjon, kan du bruke **Dekningsgruppe** -feltet på **Varedekning** -siden. Hvis koblingen er generisk, uavhengig av produktdimensjonene, bruker du **Dekningsgruppe** -feltet i **Plan** -hurtigkategorien på **Produktdetaljer** -siden. Hvis du ikke kobler en dekningsgruppe til et produkt, bruker hovedplanlegging som standard den generelle dekningsgruppen som er angitt på siden **Hovedplanleggingsparametere** .
 
 - Angi dekningsinnstillinger for et produkt.
 
-    Du kan opprette dekningsinnstillinger for et bestemt produkt. Gå til **Behandling av produktinformasjon &gt; Produkter &gt; Frigitte produkter**. Velg produktet. I handlingsruten, i kategorien **Plan** i **Dekning**-gruppen, velger du **Varedekning** for å åpne **Varedekning**-siden. Hvis produktet allerede er koblet til en dekningsgruppe, kan du overstyre innstillingene for dekningsgruppen ved å bruke **Overstyr**-feltet. Dekningsinnstillingene på **Varedekning**-siden har prioritet over innstillingene på **Dekningsgruppe**-siden.
+    Du kan opprette dekningsinnstillinger for et bestemt produkt. Gå til **Behandling av produktinformasjon &gt; Produkter &gt; Frigitte produkter** . Velg produktet. I handlingsruten, i kategorien **Plan** i **Dekning** -gruppen, velger du **Varedekning** for å åpne **Varedekning** -siden. Hvis produktet allerede er koblet til en dekningsgruppe, kan du overstyre innstillingene for dekningsgruppen ved å bruke **Overstyr** -feltet. Dekningsinnstillingene på **Varedekning** -siden har prioritet over innstillingene på **Dekningsgruppe** -siden.
 
 - Angi dekningsinnstillinger for et produkt ved hjelp av en veiviser.
 
-    Veiviseren fører deg gjennom prosessen med å definere de primære varedekningsparameterne. På **Varedekning**-siden i handlingsruten velger du **Veiviser** for å åpne **Varedekningsveiviseren**.
+    Veiviseren fører deg gjennom prosessen med å definere de primære varedekningsparameterne. På **Varedekning** -siden i handlingsruten velger du **Veiviser** for å åpne **Varedekningsveiviseren** .
 
 - Angi dekningsinnstillinger for en dimensjonsgruppe.
 
-    Gå til **Behandling av produktinformasjon &gt; Produkter &gt; Frigitte produkter**. På **Detaljer om frigitt produkt**-siden, i hurtigfanen **Generelt** i **Administrasjon**-delen, velger du koblingen i feltet **Lagringsdimensjonsgruppe**. På **Lagringsdimensjonsgrupper**-siden merker du av for **Dekningsplanlegg etter dimensjon** for å opprette dekningsinnstillinger for en dimensjon i lagringsdimensjonsgruppen. Feltet **Dekningsplanlegg etter dimensjon** må være valgt for alle produktdimensjoner, for eksempel konfigurasjon, farge, størrelse og stil.
+    Gå til **Behandling av produktinformasjon &gt; Produkter &gt; Frigitte produkter** . På **Detaljer om frigitt produkt** -siden, i hurtigfanen **Generelt** i **Administrasjon** -delen, velger du koblingen i feltet **Lagringsdimensjonsgruppe** . På **Lagringsdimensjonsgrupper** -siden merker du av for **Dekningsplanlegg etter dimensjon** for å opprette dekningsinnstillinger for en dimensjon i lagringsdimensjonsgruppen. Feltet **Dekningsplanlegg etter dimensjon** må være valgt for alle produktdimensjoner, for eksempel konfigurasjon, farge, størrelse og stil.
 
 
 ## <a name="coverage-codes"></a>Dekningskoder
