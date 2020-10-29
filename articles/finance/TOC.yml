@@ -240,6 +240,8 @@
                   href: accounts-payable/submit-invoice-workflow-automatically.md
                 - name: Vise resultater for automatisering av leverandørfaktura
                   href: accounts-payable/view-automated-vendor-invoice.md
+                - name: Arbeidsområde for leverandørfakturaoppføring
+                  href: accounts-payable/vendor-invoices-workspace.md
             - name: Regnskapsdistribusjoner og underfinansjournaloppføringer for leverandørfakturaer
               href: accounts-payable/accounting-distributions-subledger-journal-entries-vendor-invoices.md
             - name: Fakturasamsvar og konserninterne bestillinger
@@ -922,6 +924,8 @@
                   href: general-ledger/open-lines-excel-journals-documents.md
                 - name: Vise journaloppføringer og transaksjoner
                   href: general-ledger/view-journal-entries-transactions.md
+                - name: Råbalanse med transaksjonsdetaljrapport
+                  href: public-sector/general-ledger-public-sector-trial-balance.md
                 - name: Journalføre posterte journaloppføringer
                   href: general-ledger/tasks/journalize-posted-journal-entries.md
                 - name: Revaluering av valuta i et konsolideringsfirma
@@ -1170,8 +1174,6 @@
                   href: public-sector/advanced-ledger-entries-public-sector.md
                 - name: Opprette en avansert finansoppføring i offentlig sektor
                   href: public-sector/tasks/create-advanced-ledger-entry-public-sector.md
-                - name: Råbalanse med transaksjonsdetaljrapport
-                  href: public-sector/general-ledger-public-sector-trial-balance.md
                 - name: Bruke kontantkontrollgrenser
                   href: public-sector/cash-control.md
                 - name: Årsavslutningsbehandling i offentlig sektor
@@ -1398,6 +1400,8 @@
                       href: localizations/tasks/br-00053-3-generate-emails-approved-nf-e-attach-danfe-pdf-files-nf-e-xml-files-emails.md
                     - name: NF-e-sertifikater
                       href: localizations/latam-bra-nfe-certs.md
+                    - name: Validering av egendefinert NF-e-sertifikat
+                      href: localizations/nf-e-custom-certificate-validation.md
                     - name: 'Definere, importere og kontrollere XML-dokumenter og DANFE for NF-e'
                       href: localizations/latam-bra-set-up-import-nfe.md
                     - name: Definere føderale NF-e-parametere
@@ -1488,7 +1492,7 @@
                       href: localizations/latam-bra-tax-payments.md
                     - name: Avgift i salgstilbud
                       href: localizations/tasks/br-00057-brazilian-taxes-sales-quotation.md
-                    - name: 'Kildeskatt '
+                    - name: Kildeskatt
                       href: localizations/tasks/br-00009-brazilian-withholding-taxes.md
                     - name: Kildeskatt i kundebetalinger
                       href: localizations/tasks/br-00042-withholding-taxes-customers-payments.md
@@ -2080,6 +2084,8 @@
                       href: localizations/apac-ind-gst-multi-batch-processing-gstr-return.md
                     - name: Avgiftsforespørsel
                       href: localizations/apac-ind-GST-tax-inquiry.md
+                    - name: Rydde opp i TaxDocumentJSON-tabellen
+                      href: localizations/gte-clean-up-tax-document-json-table.md
                 - name: Avgiftsmotor
                   items:
                     - name: Oversikt over avgiftsmotor
@@ -2651,7 +2657,7 @@
                         - name: Oversikt over lagerprofil
                           href: localizations/rus-inventory-profile-overview.md
                         - name: Definere en lagerprofil
-                          hreF: localizations/rus-set-up-inventory-profile.md
+                          href: localizations/rus-set-up-inventory-profile.md
                         - name: Bruke en lagerprofil i dokumenter og spørringer
                           href: localizations/rus-use-inventory-profile-documents-queries.md
                 - name: Rapportering
