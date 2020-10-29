@@ -98,8 +98,6 @@
                       href: get-started/whats-new-commerce-10-0-14.md
                     - name: Commerce 10.0.13 (oktober 2020)
                       href: get-started/whats-new-commerce-10-0-13.md
-                    - name: Commerce 10.0.12 (august 2020)
-                      href: get-started/whats-new-commerce-10-0-12.md
                 - name: Funksjoner som er fjernet eller avskrevet
                   items:
                     - name: Funksjoner som er fjernet eller avskrevet i Finance and Operations
@@ -1040,6 +1038,8 @@
                       href: add-breadcrumb.md
                     - name: Navigasjonsmenymodul
                       href: nav-menu-module.md
+                    - name: Områdevelgermodul
+                      href: site-selector.md
                 - name: Samsvarsmoduler
                   items:
                     - name: Samtykkemodul for informasjonskapsler
@@ -1986,6 +1986,8 @@
                       href: e-commerce-extensibility/cli-command-reference.md
                 - name: Oppbygning av en modul
                   items:
+                    - name: Oversikt over moduler
+                      href: e-commerce-extensibility/modules-overview.md
                     - name: Moduldefinisjonsfil
                       href: e-commerce-extensibility/module-definition-file.md
                     - name: Komponentfil for reaktiveringsmodul
@@ -2034,12 +2036,18 @@
                       href: e-commerce-extensibility/cookie-api-overview.md
                     - name: Oversikt over interaktive komponenter
                       href: e-commerce-extensibility/interactive-components.md
+                    - name: Simulere den påloggede statusen under lokal utvikling
+                      href: e-commerce-extensibility/mock-sign-in.md
                     - name: Globalisere moduler ved hjelp av CultureInfoFormatter-klassen
                       href: e-commerce-extensibility/globalize-modules.md
+                    - name: Konfigurere Azure Key Vault for sikker nøkkelbehandling
+                      href: e-commerce-extensibility/set-up-key-vault.md
                 - name: Utarbeide datahandlinger
                   items:
                     - name: Oversikt over datahandlinger
                       href: e-commerce-extensibility/data-actions.md
+                    - name: Alternativer for datahandlingsbuffer
+                      href: e-commerce-extensibility/data-action-cache.md
                     - name: Teste datahandlinger med simuleringer
                       href: e-commerce-extensibility/test-data-action-mocks.md
                     - name: Datahandlinger for sideinnlasting
@@ -2080,6 +2088,8 @@
                       href: e-commerce-extensibility/theme-style-presets.md
                     - name: Utvide et tema for å legge til modulutvidelser
                       href: e-commerce-extensibility/theme-module-extensions.md
+                    - name: Overstyre en modulbibliotekkomponent i et tema
+                      href: e-commerce-extensibility/override-theme-component.md
                     - name: Utvide et tema fra et basistema
                       href: e-commerce-extensibility/extend-theme.md
                     - name: Legge til egendefinerte ressurser i tilpassingskoden
@@ -2102,6 +2112,10 @@
                       href: e-commerce-extensibility/package-deploy.md
                     - name: Oppdateringer for SDK og modulbibliotek
                       href: e-commerce-extensibility/sdk-updates.md
+                - name: Anbefalte fremgangsmåter
+                  items:
+                    - name: Anbefalte fremgangsmåter for Dynamics 365 Commerce-utvikling
+                      href: e-commerce-extensibility/best-practices-dev.md
             - name: SDK for Retail
               items:
                 - name: Arkitektur for SDK for Retail
@@ -2197,7 +2211,7 @@
                 - name: Retail Typescript og C#-proxyer
                   href: dev-itpro/typescript-proxy-retail-pos.md
                 - name: Bruke API-er for Retail Server i eksterne apper
-                  href: dev-itpro/consume-retail-server-api
+                  href: dev-itpro/consume-retail-server-api.md
             - name: Commerce Runtime (CRT) utvidelsesmulighet
               items:
                 - name: Arkitektur for og konfigurasjon av CRT
