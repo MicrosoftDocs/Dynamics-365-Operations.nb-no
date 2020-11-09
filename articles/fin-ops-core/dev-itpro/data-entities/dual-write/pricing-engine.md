@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: rhaertle
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,54 +18,54 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-10
-ms.openlocfilehash: 5ffc0358ff58b2a05aa84b4467a27d88b5e1ec42
-ms.sourcegitcommit: 984604fd651d74aa49a2d7513f096faaf49f9f27
+ms.openlocfilehash: 740ae20704abd9c59f64c2c7622fa96d65dccb1d
+ms.sourcegitcommit: 0a741b131ed71f6345d4219a47cf5f71fec6744b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/18/2020
-ms.locfileid: "3270342"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "3997152"
 ---
-# <a name="sync-with-the-dynamics-365-supply-chain-management-pricing-engine-on-demand"></a><span data-ttu-id="ec239-103">Synkronisere med prissettingsmotoren i Dynamics 365 Supply Chain Management ved forespørsel</span><span class="sxs-lookup"><span data-stu-id="ec239-103">Sync with the Dynamics 365 Supply Chain Management pricing engine on demand</span></span>
+# <a name="sync-with-the-dynamics-365-supply-chain-management-pricing-engine-on-demand"></a><span data-ttu-id="84790-103">Synkronisere med prissettingsmotoren i Dynamics 365 Supply Chain Management ved forespørsel</span><span class="sxs-lookup"><span data-stu-id="84790-103">Sync with the Dynamics 365 Supply Chain Management pricing engine on demand</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
 
 
-<span data-ttu-id="ec239-104">Microsoft Dynamics 365 Supply Chain Management inkluderer en prissettingsmotor som håndterer forretningsavtaler, prislister, fordelsprogrammer, kampanjer og rabatter.</span><span class="sxs-lookup"><span data-stu-id="ec239-104">Microsoft Dynamics 365 Supply Chain Management includes a pricing engine that handles trade agreements, price lists, customer loyalty programs, promotions, and discounts.</span></span> <span data-ttu-id="ec239-105">Prissettingsmotoren bruker komplekse regler til å bestemme den beste prisen for et gitt tilbud eller ordre.</span><span class="sxs-lookup"><span data-stu-id="ec239-105">The pricing engine uses complex rules to determine the best price for a given quotation or order.</span></span> <span data-ttu-id="ec239-106">Når du bruker dobbel skriving, bruker du enten statisk prissetting eller prissettingsmotoren fra Dynamics 365 Supply Chain Management på tilbuds- og ordresider i Dynamics 365 Sales.</span><span class="sxs-lookup"><span data-stu-id="ec239-106">When you use dual-write, you use either static pricing or the pricing engine from Dynamics 365 Supply Chain Management on the Quote and Order pages in Dynamics 365 Sales.</span></span>
+<span data-ttu-id="84790-104">Microsoft Dynamics 365 Supply Chain Management inkluderer en prissettingsmotor som håndterer forretningsavtaler, prislister, fordelsprogrammer, kampanjer og rabatter.</span><span class="sxs-lookup"><span data-stu-id="84790-104">Microsoft Dynamics 365 Supply Chain Management includes a pricing engine that handles trade agreements, price lists, customer loyalty programs, promotions, and discounts.</span></span> <span data-ttu-id="84790-105">Prissettingsmotoren bruker komplekse regler til å bestemme den beste prisen for et gitt tilbud eller ordre.</span><span class="sxs-lookup"><span data-stu-id="84790-105">The pricing engine uses complex rules to determine the best price for a given quotation or order.</span></span> <span data-ttu-id="84790-106">Når du bruker dobbel skriving, bruker du enten statisk prissetting eller prissettingsmotoren fra Dynamics 365 Supply Chain Management på tilbuds- og ordresider i Dynamics 365 Sales.</span><span class="sxs-lookup"><span data-stu-id="84790-106">When you use dual-write, you use either static pricing or the pricing engine from Dynamics 365 Supply Chain Management on the Quote and Order pages in Dynamics 365 Sales.</span></span>
 
-## <a name="use-the-pricing-engine-from-supply-chain-management-in-sales"></a><span data-ttu-id="ec239-107">Bruk prissettingsmotoren fra Supply Chain Management i Sales</span><span class="sxs-lookup"><span data-stu-id="ec239-107">Use the pricing engine from Supply Chain Management in Sales</span></span>
+## <a name="use-the-pricing-engine-from-supply-chain-management-in-sales"></a><span data-ttu-id="84790-107">Bruk prissettingsmotoren fra Supply Chain Management i Sales</span><span class="sxs-lookup"><span data-stu-id="84790-107">Use the pricing engine from Supply Chain Management in Sales</span></span>
 
-1. <span data-ttu-id="ec239-108">I Sales går du til **Salg \> Ordrer**.</span><span class="sxs-lookup"><span data-stu-id="ec239-108">In Sales, go to **Sales \> Orders**.</span></span>
-2. <span data-ttu-id="ec239-109">Velg **Ny** for å opprette en ny ordre, eller velg en eksisterende ordre i **Mine ordrer**-listen.</span><span class="sxs-lookup"><span data-stu-id="ec239-109">Select **New** to create a new order, or select an existing order in the **My Orders** list.</span></span>
-3. <span data-ttu-id="ec239-110">Legg til en ny ordrelinje.</span><span class="sxs-lookup"><span data-stu-id="ec239-110">Add a new order line.</span></span>
-4. <span data-ttu-id="ec239-111">Hvis du oppretter en ny ordre, velger du **Prisordre** i handlingsruten.</span><span class="sxs-lookup"><span data-stu-id="ec239-111">If you're creating a new order, select **Price Order** on the Action Pane.</span></span> <span data-ttu-id="ec239-112">Hvis du oppdaterer en eksisterende ordre, velger du **Beregn på nytt** i handlingsruten.</span><span class="sxs-lookup"><span data-stu-id="ec239-112">If you're updating an existing order, select **Recalculate** on the Action Pane.</span></span>
+1. <span data-ttu-id="84790-108">I Sales går du til **Salg \> Ordrer**.</span><span class="sxs-lookup"><span data-stu-id="84790-108">In Sales, go to **Sales \> Orders**.</span></span>
+2. <span data-ttu-id="84790-109">Velg **Ny** for å opprette en ny ordre, eller velg en eksisterende ordre i **Mine ordrer** -listen.</span><span class="sxs-lookup"><span data-stu-id="84790-109">Select **New** to create a new order, or select an existing order in the **My Orders** list.</span></span>
+3. <span data-ttu-id="84790-110">Legg til en ny ordrelinje.</span><span class="sxs-lookup"><span data-stu-id="84790-110">Add a new order line.</span></span>
+4. <span data-ttu-id="84790-111">Hvis du oppretter en ny ordre, velger du **Prisordre** i handlingsruten.</span><span class="sxs-lookup"><span data-stu-id="84790-111">If you're creating a new order, select **Price Order** on the Action Pane.</span></span> <span data-ttu-id="84790-112">Hvis du oppdaterer en eksisterende ordre, velger du **Beregn på nytt** i handlingsruten.</span><span class="sxs-lookup"><span data-stu-id="84790-112">If you're updating an existing order, select **Recalculate** on the Action Pane.</span></span>
 
-    <span data-ttu-id="ec239-113">Følgende felt fylles ut automatisk:</span><span class="sxs-lookup"><span data-stu-id="ec239-113">The following fields are automatically filled in:</span></span>
+    <span data-ttu-id="84790-113">Følgende felt fylles ut automatisk:</span><span class="sxs-lookup"><span data-stu-id="84790-113">The following fields are automatically filled in:</span></span>
 
-    + <span data-ttu-id="ec239-114">Detaljbeløp</span><span class="sxs-lookup"><span data-stu-id="ec239-114">Detail Amount</span></span>
-    + <span data-ttu-id="ec239-115">Rabatt-%</span><span class="sxs-lookup"><span data-stu-id="ec239-115">Discount %</span></span>
-    + <span data-ttu-id="ec239-116">Rabatt</span><span class="sxs-lookup"><span data-stu-id="ec239-116">Discount</span></span>
-    + <span data-ttu-id="ec239-117">Beløp før frakt</span><span class="sxs-lookup"><span data-stu-id="ec239-117">Pre-Freight Amount</span></span>
-    + <span data-ttu-id="ec239-118">Fraktbeløp</span><span class="sxs-lookup"><span data-stu-id="ec239-118">Freight Amount</span></span>
-    + <span data-ttu-id="ec239-119">Total avgift</span><span class="sxs-lookup"><span data-stu-id="ec239-119">Total Tax</span></span>
-    + <span data-ttu-id="ec239-120">Totalbeløp</span><span class="sxs-lookup"><span data-stu-id="ec239-120">Total Amount</span></span>
+    + <span data-ttu-id="84790-114">Detaljbeløp</span><span class="sxs-lookup"><span data-stu-id="84790-114">Detail Amount</span></span>
+    + <span data-ttu-id="84790-115">Rabatt-%</span><span class="sxs-lookup"><span data-stu-id="84790-115">Discount %</span></span>
+    + <span data-ttu-id="84790-116">Rabatt</span><span class="sxs-lookup"><span data-stu-id="84790-116">Discount</span></span>
+    + <span data-ttu-id="84790-117">Beløp før frakt</span><span class="sxs-lookup"><span data-stu-id="84790-117">Pre-Freight Amount</span></span>
+    + <span data-ttu-id="84790-118">Fraktbeløp</span><span class="sxs-lookup"><span data-stu-id="84790-118">Freight Amount</span></span>
+    + <span data-ttu-id="84790-119">Total avgift</span><span class="sxs-lookup"><span data-stu-id="84790-119">Total Tax</span></span>
+    + <span data-ttu-id="84790-120">Totalbeløp</span><span class="sxs-lookup"><span data-stu-id="84790-120">Total Amount</span></span>
     
-5. <span data-ttu-id="ec239-121">For å sikre at systemet vurderer handels- og salgsavtaler for å beregne prisen:</span><span class="sxs-lookup"><span data-stu-id="ec239-121">To ensure that the system considers trade and sales agreements to calculate the price:</span></span>
-    1. <span data-ttu-id="ec239-122">Gå til Supply Chain Management-miljøet.</span><span class="sxs-lookup"><span data-stu-id="ec239-122">Navigate to your Supply Chain Management environment.</span></span>
-    2. <span data-ttu-id="ec239-123">Gå til **Kunder \> Oppsett \> Kundeparametere**.</span><span class="sxs-lookup"><span data-stu-id="ec239-123">Navigate to **Accounts receivable \> Setup \> Accounts receivable parameters**.</span></span>
-    3. <span data-ttu-id="ec239-124">Velg kategorien **Priser** i sidenavigasjonsfeltet.</span><span class="sxs-lookup"><span data-stu-id="ec239-124">Select the **Prices** tab in the side navigation bar.</span></span>
-    4. <span data-ttu-id="ec239-125">Fjern merket for **Manuell registrering** under hurtigfanen **Evaluering av handelssavtale**.</span><span class="sxs-lookup"><span data-stu-id="ec239-125">Under the **Trade agreement evaluation** fastab, uncheck the **Manual entry** option.</span></span>
+5. <span data-ttu-id="84790-121">For å sikre at systemet vurderer handels- og salgsavtaler for å beregne prisen:</span><span class="sxs-lookup"><span data-stu-id="84790-121">To ensure that the system considers trade and sales agreements to calculate the price:</span></span>
+    1. <span data-ttu-id="84790-122">Gå til Supply Chain Management-miljøet.</span><span class="sxs-lookup"><span data-stu-id="84790-122">Navigate to your Supply Chain Management environment.</span></span>
+    2. <span data-ttu-id="84790-123">Gå til **Kunder \> Oppsett \> Kundeparametere**.</span><span class="sxs-lookup"><span data-stu-id="84790-123">Navigate to **Accounts receivable \> Setup \> Accounts receivable parameters**.</span></span>
+    3. <span data-ttu-id="84790-124">Velg kategorien **Priser** i sidenavigasjonsfeltet.</span><span class="sxs-lookup"><span data-stu-id="84790-124">Select the **Prices** tab in the side navigation bar.</span></span>
+    4. <span data-ttu-id="84790-125">Fjern merket for **Manuell registrering** under hurtigfanen **Evaluering av handelssavtale**.</span><span class="sxs-lookup"><span data-stu-id="84790-125">Under the **Trade agreement evaluation** fastab, uncheck the **Manual entry** option.</span></span>
 
-## <a name="how-it-works"></a><span data-ttu-id="ec239-126">Hvordan det fungerer</span><span class="sxs-lookup"><span data-stu-id="ec239-126">How it works</span></span>
+## <a name="how-it-works"></a><span data-ttu-id="84790-126">Hvordan det fungerer</span><span class="sxs-lookup"><span data-stu-id="84790-126">How it works</span></span>
 
-<span data-ttu-id="ec239-127">Når du velger **Prisordre** i Sales, kalles **Summer**-funksjonen i kategorien **Salgsordre \> Vis** i Supply Chain Management for den tilknyttede salgsordren.</span><span class="sxs-lookup"><span data-stu-id="ec239-127">When you select **Price Order** in Sales, the **Totals** function on the **Sales Order \> View** tab in Supply Chain Management is called for the associated sales order.</span></span> <span data-ttu-id="ec239-128">Verdiene i ordretotalen i Sales brukes til å fylle ut de tilsvarende feltene i Supply Chain Management.</span><span class="sxs-lookup"><span data-stu-id="ec239-128">The values in the order total in Sales are used to fill in the corresponding fields in Supply Chain Management.</span></span>
+<span data-ttu-id="84790-127">Når du velger **Prisordre** i Sales, kalles **Summer** -funksjonen i kategorien **Salgsordre \> Vis** i Supply Chain Management for den tilknyttede salgsordren.</span><span class="sxs-lookup"><span data-stu-id="84790-127">When you select **Price Order** in Sales, the **Totals** function on the **Sales Order \> View** tab in Supply Chain Management is called for the associated sales order.</span></span> <span data-ttu-id="84790-128">Verdiene i ordretotalen i Sales brukes til å fylle ut de tilsvarende feltene i Supply Chain Management.</span><span class="sxs-lookup"><span data-stu-id="84790-128">The values in the order total in Sales are used to fill in the corresponding fields in Supply Chain Management.</span></span>
 
-<span data-ttu-id="ec239-129">Når salgsordretotalen beregnes i Supply Chain Management, evaluerer beregningen de eksisterende forretningsavtalene og salgsavtalene for kunden og produktene som er oppført i salgsordren.</span><span class="sxs-lookup"><span data-stu-id="ec239-129">When the sales order total is calculated in Supply Chain Management, the calculation evaluates the existing trade agreements and sales agreements for the customer and the products that are listed in the sales order.</span></span> <span data-ttu-id="ec239-130">Denne informasjonen brukes til å beregne totalene.</span><span class="sxs-lookup"><span data-stu-id="ec239-130">This information is used to calculate the totals.</span></span> <span data-ttu-id="ec239-131">Når **Prisordre** er valgt, gjenspeiler Sale automatisk alle oppsett som er utført i Supply Chain Management.</span><span class="sxs-lookup"><span data-stu-id="ec239-131">When **Price Order** is selected, Sales automatically reflects all the setup that has been done in Supply Chain Management.</span></span>
+<span data-ttu-id="84790-129">Når salgsordretotalen beregnes i Supply Chain Management, evaluerer beregningen de eksisterende forretningsavtalene og salgsavtalene for kunden og produktene som er oppført i salgsordren.</span><span class="sxs-lookup"><span data-stu-id="84790-129">When the sales order total is calculated in Supply Chain Management, the calculation evaluates the existing trade agreements and sales agreements for the customer and the products that are listed in the sales order.</span></span> <span data-ttu-id="84790-130">Denne informasjonen brukes til å beregne totalene.</span><span class="sxs-lookup"><span data-stu-id="84790-130">This information is used to calculate the totals.</span></span> <span data-ttu-id="84790-131">Når **Prisordre** er valgt, gjenspeiler Sale automatisk alle oppsett som er utført i Supply Chain Management.</span><span class="sxs-lookup"><span data-stu-id="84790-131">When **Price Order** is selected, Sales automatically reflects all the setup that has been done in Supply Chain Management.</span></span>
 
-## <a name="limitations"></a><span data-ttu-id="ec239-132">Begrensninger</span><span class="sxs-lookup"><span data-stu-id="ec239-132">Limitations</span></span>
+## <a name="limitations"></a><span data-ttu-id="84790-132">Begrensninger</span><span class="sxs-lookup"><span data-stu-id="84790-132">Limitations</span></span>
 
-<span data-ttu-id="ec239-133">Når feltene i Sale er fylt ut, gjelder følgende begrensninger:</span><span class="sxs-lookup"><span data-stu-id="ec239-133">When the fields in Sales are filled in, the following limitations apply:</span></span>
+<span data-ttu-id="84790-133">Når feltene i Sale er fylt ut, gjelder følgende begrensninger:</span><span class="sxs-lookup"><span data-stu-id="84790-133">When the fields in Sales are filled in, the following limitations apply:</span></span>
 
-+ <span data-ttu-id="ec239-134">Oppsettet av gebyrer og gebyrfordelinger i Supply Chain Management replikeres ikke i Sales.</span><span class="sxs-lookup"><span data-stu-id="ec239-134">The setup of charges and charge allocations in Supply Chain Management isn't replicated in Sales.</span></span>
-+ <span data-ttu-id="ec239-135">Prissetting tar ikke hensyn til spesielle detaljhandelpriser som er angitt i **Detaljhandelskanal**-feltet på salgsordrelinje-siden i Supply Chain Management.</span><span class="sxs-lookup"><span data-stu-id="ec239-135">Pricing doesn't consider special retail pricing that is specified in the **Retail Channel** field on the sales order line page in Supply Chain Management.</span></span>
-+ <span data-ttu-id="ec239-136">Rabatter som er definert i delen **Handelsrabattbehandling** i Supply Chain Management, vurderes ikke.</span><span class="sxs-lookup"><span data-stu-id="ec239-136">Discounts that are defined in the **Trade Allowance Management** section of Supply Chain Management aren't considered.</span></span>
++ <span data-ttu-id="84790-134">Oppsettet av gebyrer og gebyrfordelinger i Supply Chain Management replikeres ikke i Sales.</span><span class="sxs-lookup"><span data-stu-id="84790-134">The setup of charges and charge allocations in Supply Chain Management isn't replicated in Sales.</span></span>
++ <span data-ttu-id="84790-135">Prissetting tar ikke hensyn til spesielle detaljhandelpriser som er angitt i **Detaljhandelskanal** -feltet på salgsordrelinje-siden i Supply Chain Management.</span><span class="sxs-lookup"><span data-stu-id="84790-135">Pricing doesn't consider special retail pricing that is specified in the **Retail Channel** field on the sales order line page in Supply Chain Management.</span></span>
++ <span data-ttu-id="84790-136">Rabatter som er definert i delen **Handelsrabattbehandling** i Supply Chain Management, vurderes ikke.</span><span class="sxs-lookup"><span data-stu-id="84790-136">Discounts that are defined in the **Trade Allowance Management** section of Supply Chain Management aren't considered.</span></span>
