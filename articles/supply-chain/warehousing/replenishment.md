@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: WHSReplenishmentTemplates
+ms.search.form: WHSReplenishmentTemplates, WHSReplenishmentTemplates, WHSInventFixedLocation
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -19,12 +19,12 @@ ms.search.industry: Distribution
 ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: be7b1142b011b805c78a3b9380d12085e4b7d28f
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 6c53596f9b11b1a7be4b8f1e18d58a202c74acd4
+ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3204983"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4016522"
 ---
 # <a name="replenishment-overview"></a>Oversikt over etterfylling
 
@@ -34,7 +34,7 @@ Dette emnet beskriver etterfyllingsstrategiene som er tilgjengelige for lagre so
 
 Følgende etterfyllingsstrategier er tilgjengelige:
 
-- **Etterfylling basert på bølgebehov**– Denne strategien oppretter etterfyllingsarbeid for utgående ordrer eller laster, hvis beholdning ikke er tilgjengelig når bølgen oppretter arbeidet. Etterfyllingsarbeid kan for eksempel opprettes hvis antallet som kreves for en salgsordre ikke er tilgjengelig når en bølge behandles.
+- **Etterfylling basert på bølgebehov** – Denne strategien oppretter etterfyllingsarbeid for utgående ordrer eller laster, hvis beholdning ikke er tilgjengelig når bølgen oppretter arbeidet. Etterfyllingsarbeid kan for eksempel opprettes hvis antallet som kreves for en salgsordre ikke er tilgjengelig når en bølge behandles.
 - **Etterfylling basert på minimums- og maksimumsantall** – Denne strategien bruker minimums og maksimumsgrenser for lagring til å bestemme når lokasjoner skal etterfylles. Vare- og lokasjonskriteriene definere beholdningen som evalueres for etterfylling. Maler for etterfylling basert på minimums- og maksimumsantall er den primære mekanismen for å opprettholde optimal nivåer på plukklokasjoner. Du kan bruke behovsetterfylling for å garantere at nok pålydende plukking av lager er tilgjengelig for å dekke bølgeetterspørselen, som et supplement mellom sykluser for etterfylling basert på minimums- og maksimumsantall.
 - **Etterfylling basert på lastbehov** – Denne strategien summerer behovet for flere laster og oppretter etterfyllingsarbeidet som kreves for å fylle de relevante plukklokasjonene. Denne strategien bidrar til å garantere at lastene som opprettes, kan plukkes på lageret når de er frigitt.
 - **Umiddelbar etterfylling** – Denne strategien etterfyller beholdningen før en bølge kjøres hvis allokering mislykkes for en stedsdirektivlinje som har en etterfyllingsmal. 
@@ -62,7 +62,7 @@ Minimums- og maksimumsantallet angis i en etterfyllingsmal. Mange av de andre in
 Vær oppmerksom på at strategien for etterfylling basert på minimums- og maksimumsantall ikke kan etterfylle en tom lokasjon med mindre lokasjonen er definert som fast lokasjon for varen. Hvis lokasjonen som skal etterfylles ikke er en fast lokasjon, kan ikke systemet fastsette hvilket element som skal etterfylles. Derfor kreves det minst noe beholdning før etterfylling oppstår.
 
 ## <a name="load-demand-replenishment"></a>Etterfylling av lastbehov
-Etterfylling basert på lastbehov summerer behovet for flere laster og oppretter etterfyllingsarbeidet som kreves for å fylle de relevante plukklokasjonene. Etterfylling basert på lastbehov ligner på mange måter på etterfylling basert på bølgebehov. Den største forskjellen er hvordan og når etterfylling basert på lastbehov og etterfylling basert på bølgebehov kjøres. Etterfylling basert på lastbehov kjøres ved hjelp av en satsvis jobb, på samme måte som etterfylling basert på minimums- og maksimumsantall. Hvis du vil definere den satsvise jobben, går du til siden **Etterfylling basert på lastbehov**, velger etterfyllingsmalen som skal brukes, og angir en filterspørring for å angi hvilke laster som skal brukes til å bestemme behovet. Lokasjonsspørringen definerer lokasjonene som tilgjengelige antall trekkes fra for å dekke det samlede behovet for lastene.
+Etterfylling basert på lastbehov summerer behovet for flere laster og oppretter etterfyllingsarbeidet som kreves for å fylle de relevante plukklokasjonene. Etterfylling basert på lastbehov ligner på mange måter på etterfylling basert på bølgebehov. Den største forskjellen er hvordan og når etterfylling basert på lastbehov og etterfylling basert på bølgebehov kjøres. Etterfylling basert på lastbehov kjøres ved hjelp av en satsvis jobb, på samme måte som etterfylling basert på minimums- og maksimumsantall. Hvis du vil definere den satsvise jobben, går du til siden **Etterfylling basert på lastbehov** , velger etterfyllingsmalen som skal brukes, og angir en filterspørring for å angi hvilke laster som skal brukes til å bestemme behovet. Lokasjonsspørringen definerer lokasjonene som tilgjengelige antall trekkes fra for å dekke det samlede behovet for lastene.
 
 ## <a name="immediate-replenishment"></a>Umiddelbar etterfylling
 I stedet for å måtte oppsummere kravet på slutten av en allokasjonsprosess og gjøre etterfylling på grunnlag av den oppsummerte mengden, kan du søke om umiddelbar etterfyllingsstrategi. Når du bruker denne strategien, kan beholdningen etterfylles umiddelbart etter at lokaliseringsdirektivet mislykkes. Derfor kan du sette opp etterfyllingen slik at den er begrenset av bestemte enheter, og slik at den bruker mengder som er angitt for bestemte lokasjoner.

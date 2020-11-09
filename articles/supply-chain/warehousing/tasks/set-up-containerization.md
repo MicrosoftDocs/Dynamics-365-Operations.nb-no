@@ -8,7 +8,7 @@ ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: WHSWaveTemplateTable, InventLocationIdLookup, WHSContainerType, WHSContainerGroup, WHSContainerizationTable, WHSContainerizationBreak, WHSCreateContainerBreak
+ms.search.form: WHSWaveTemplateTable, InventLocationIdLookup, WHSContainerType, WHSContainerGroup, WHSContainerizationTable, WHSContainerizationBreak, WHSCreateContainerBreak, WHSContainerStructure, WHSContainerTable, WHSContainerizatonHistory, WHSContainerPackingPolicyChange, WHSManifestShipmentContainers, WHSAllowedContainerTypeGroup, WHSPostMethod, WHSContainerCreateDialog, WHSContainerCloseDiag, WHSContainer
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -17,12 +17,12 @@ ms.search.industry: Distribution
 ms.author: mirzaab
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: d08b89ac32b8ec40ae9dff15dbbd3264800cfb1a
-ms.sourcegitcommit: ac47e8679fb104515f7dcca509294264bd05d2b1
+ms.openlocfilehash: 1f961dc379ceeeae9bbceec1baaa9b9be21316f3
+ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "3454724"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4017788"
 ---
 # <a name="set-up-containerization"></a>Definere containerbruk
 
@@ -36,9 +36,9 @@ Dette emnet beskriver hvordan du automatiserer containerbruken av laster i Lager
 2. Velg **Ny**.
 3. Angi en verdi i feltet **Navn på bølgemal**.
 4. Skriv inn en verdi i feltet **Beskrivelse av bølgemal**.
-5. Angi eller velg en verdi i **Område**-feltet.
+5. Angi eller velg en verdi i **Område** -feltet.
 6. Angi eller velg en verdi i feltet **Lager**.
-7. Vis delen **Metoder**. **Valgte metoder**-ruten viser metodene for den valgte bølgemaltypen. Bølgemalen må inneholde containerbruk-metoden.  
+7. Vis delen **Metoder**. **Valgte metoder** -ruten viser metodene for den valgte bølgemaltypen. Bølgemalen må inneholde containerbruk-metoden.  
 8. Skriv inn en verdi i feltet **Bølgetrinn**. Angi en bølgetrinnkode for metoden som legges til, som kan være en hvilken som helst kode. Det er mulig å legge til metoden mer enn én gang og tilordne forskjellige bølgetrinnkoder. Hvis du vil gjøre dette, velg **Kan gjentas for denne metoden** på siden **Bølgebehandlingsmetoder**.  
 9. Velg **Lagre**.
 10. Lukk siden.
@@ -53,7 +53,7 @@ Dette emnet beskriver hvordan du automatiserer containerbruken av laster i Lager
 7. Angi et tall i feltet **Lengde**.
 8. Angi et tall i feltet **Bredde**.
 9. Angi et tall i feltet **Høyde**.
-10. Skriv inn en verdi i **Beskrivelse**-feltet.
+10. Skriv inn en verdi i **Beskrivelse** -feltet.
 11. Velg **Lagre**.
 13. Gjenta trinn 2-11 to ganger til for å lage totalt tre containertyper.
 14. Lukk siden.
@@ -62,7 +62,7 @@ Dette emnet beskriver hvordan du automatiserer containerbruken av laster i Lager
 1. I navigasjonsruten går du til **Moduler > Lagerstyring > Oppsett > Containere > Containergrupper**.
 2. Velg **Ny** i handlingsruten. Du kan definere logiske grupper med containertyper. Du kan angi rekkefølgen som containerne skal pakkes i og containernes fyllprosent for hver gruppe. Varens størrelsesdimensjoner brukes til å bestemme om den passer i en container. Containeren som er nærmest størrelsesdimensjonen for varen, brukes. Hvis du har flere containertyper i en gruppe, anbefaler vi at du ordner rekkefølgen etter størrelse, slik at den største containeren kommer først, som nummer 1 i rekkefølgen, og den minste containeren kommer sist.    
 3. Skriv inn en verdi som du opprettet tidligere, i feltet **Containergruppe-ID** .
-4. Skriv inn en verdi i **Beskrivelse**-feltet.
+4. Skriv inn en verdi i **Beskrivelse** -feltet.
 5. Gjenta trinn 2-4 for alle de tre containertypene du opprettet tidligere.
 6. Velg **Lagre**.
 7. Lukk siden.

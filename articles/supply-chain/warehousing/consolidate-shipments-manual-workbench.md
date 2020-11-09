@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: WHSShipConsolidationPolicy, WHSShipConsolidationWorkbench
+ms.search.form: WHSShipConsolidationPolicy, WHSShipConsolidationWorkbench, WHSShipConsolidationSetShipment
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: 10.0.6
-ms.openlocfilehash: 8320c8aab82a39a8a5565e6b3e805e1065c67453
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.openlocfilehash: 1eec1a8e3a9a2a0f95302e1d6ea68eb90b9a3b93
+ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3986822"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4016822"
 ---
 # <a name="consolidate-shipments-by-using-the-shipment-consolidation-workbench"></a>Konsolidere forsendelser ved hjelp av arbeidsområdet for forsendelseskonsolidering
 
@@ -206,15 +206,15 @@ Gå til **Kunde \> Ordrer \> Alle salgsordrer** , og opprett en samling av salgs
 
 Følg disse trinnene for å frigi hver salgsordre du har opprettet for dette , til lageret.
 
-1. Gå til **Kunde \> Ordrer \> Alle salgsordrer** .
+1. Gå til **Kunde \> Ordrer \> Alle salgsordrer**.
 1. Finn og velg salgosordren som skal frigis.
 1. I handlingsruten velger du **Handlinger \> Frigi til lager** i kategorien **Lager** for å frigi den valgte salgsordren.
 1. Gjenta denne prosedyren for hver salgsordre du opprettet for dette .
 
 ## <a name="consolidate-the-shipments-by-using-the-shipment-consolidation-workbench"></a>Konsolidere forsendelsene ved hjelp av arbeidsområdet for forsendelseskonsolidering
 
-1. Gå til **Lagerstyring \> Frigi til lager \> Arbeidsområde for forsendelseskonsolidering** .
-1. I handlingsruten velger du **Rediger spørring** .
+1. Gå til **Lagerstyring \> Frigi til lager \> Arbeidsområde for forsendelseskonsolidering**.
+1. I handlingsruten velger du **Rediger spørring**.
 1. Velg **Legg til** i kategorien **Område** i dialogboksen for redigeringsprogrammet for spørring for å legge til en rad som har følgende innstillinger i rutenettet:
 
     - **Tabell:** *Salgsordrer*
@@ -229,39 +229,39 @@ Følg disse trinnene for å frigi hver salgsordre du har opprettet for dette , t
 
 I den følgende prosedyren kan du kontrollere forsendelsene som er opprettet eller oppdatert som et resultat av forsendelseskonsolidering. Bruk det til å gå gjennom hvert ordresett du har opprettet for dette , og se gjennom underinndelinge nedenfor for å kontrollere at du har fått de forventede resultatene.
 
-1. Gå til **Lagerstyring \> Forsendelser \> Alle forsendelser** .
+1. Gå til **Lagerstyring \> Forsendelser \> Alle forsendelser**.
 1. Finn og velg den påkrevde forsendelsen.
-1. Hvis en konsolideringspolicy ble brukt da forsendelsen ble opprettet eller oppdatert, skal den vises i feltet **Policy for forsendelseskonsolidering** .
+1. Hvis en konsolideringspolicy ble brukt da forsendelsen ble opprettet eller oppdatert, skal den vises i feltet **Policy for forsendelseskonsolidering**.
 
 ### <a name="related-shipments-for-order-set-1"></a>Relaterte forsendelser for ordresett 1
 
 To forsendelser skal ha blitt opprettet:
 
-- Den første forsendelsen inneholder tre linjer og ble opprettet ved hjelp av policyen for forsendelseskonsolidering for *CustomerMode* .
-- Den andre forsendelen, som ikke bruker transportmåten *Airways* , ble opprettet ved hjelp av policyen for forsendelseskonsolidering for *CustomerOrderNo* .
+- Den første forsendelsen inneholder tre linjer og ble opprettet ved hjelp av policyen for forsendelseskonsolidering for *CustomerMode*.
+- Den andre forsendelen, som ikke bruker transportmåten *Airways* , ble opprettet ved hjelp av policyen for forsendelseskonsolidering for *CustomerOrderNo*.
 
 ### <a name="related-shipments-for-order-set-2"></a>Relaterte forsendelser for ordresett 2
 
 Tre forsendelser skal ha blitt opprettet:
 
-- Den første forsendelsen inneholder varer med statusen *Brannfarlig* .
-- Hver av de to andre forsendelsene inneholder én linje med varen med statusen *Eksplosivt* .
+- Den første forsendelsen inneholder varer med statusen *Brannfarlig*.
+- Hver av de to andre forsendelsene inneholder én linje med varen med statusen *Eksplosivt*.
 
 ### <a name="related-shipments-for-order-set-3"></a>Relaterte forsendelser for ordresett 3
 
 To forsendelser skal ha blitt opprettet:
 
-- Den første forsendelsen inneholder ordrelinjer fra salgsordren der feltet **Kunderekvisisjon** er satt til *1* .
-- Den andre forsendelsen inneholder ordrelinjer fra salgsordren der feltet **Kunderekvisisjon** er satt til *2* .
+- Den første forsendelsen inneholder ordrelinjer fra salgsordren der feltet **Kunderekvisisjon** er satt til *1*.
+- Den andre forsendelsen inneholder ordrelinjer fra salgsordren der feltet **Kunderekvisisjon** er satt til *2*.
 
 ### <a name="related-shipments-for-order-set-4"></a>Relaterte forsendelser for ordresett 4
 
 Fire forsendelser skal ha blitt opprettet:
 
-- Linjer fra to ordrer for kunde *US-003* ble gruppert i én forsendelse ved hjelp av policyen for forsendelseskonsolidering for *Ordrepulje* .
-- Linjer fra to ordrer for kunde *US-004* ble gruppert i én forsendelse ved hjelp av policyen for forsendelseskonsolidering for *Ordrepulje* .
-- Linjer fra salgsordre 4-5 og 4-6 for kunde *US-007* ble gruppert i én forsendelse ved hjelp av policyen for forsendelseskonsolidering for *Ordrepulje* .
-- Linjer fra salgsordre 4-7 og 4-8 for kunde *US-007* ble gruppert i én forsendelse ved hjelp av policyen for forsendelseskonsolidering for *Kryssordre* .
+- Linjer fra to ordrer for kunde *US-003* ble gruppert i én forsendelse ved hjelp av policyen for forsendelseskonsolidering for *Ordrepulje*.
+- Linjer fra to ordrer for kunde *US-004* ble gruppert i én forsendelse ved hjelp av policyen for forsendelseskonsolidering for *Ordrepulje*.
+- Linjer fra salgsordre 4-5 og 4-6 for kunde *US-007* ble gruppert i én forsendelse ved hjelp av policyen for forsendelseskonsolidering for *Ordrepulje*.
+- Linjer fra salgsordre 4-7 og 4-8 for kunde *US-007* ble gruppert i én forsendelse ved hjelp av policyen for forsendelseskonsolidering for *Kryssordre*.
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 

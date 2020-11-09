@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: VendProspectiveVendorRegistrationRequests
+ms.search.form: VendProspectiveVendorRegistrationRequests, CatVendorCatalogDetails, CatVendorCatalogReleaseApprovedProducts, CatVendorCMRDetails, CatVendorCatalogProductPerCompanyStatus, CatVendorMaintenanceEventLog, CatVendorCatalogReviewTool, CatVendorCatalogFileUpload, CatVendorCatalogMaintenanceRequest, CatVendorCatalogFileInLegalEntity, CatVendorCatalogSchema, CatVendorCatalogFilePreviewPane, CatVendorCatalogImportParameter
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: mkirknel
 ms.search.validFrom: 2018-04-20
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 608d2b57bb4d5ab80d75b22ed5c8a4df5263e5f3
-ms.sourcegitcommit: 86052c58e3c365c443bd6f37ad1054bea395e21b
+ms.openlocfilehash: 7ed2c50b28fdbd1baf4caa0a8a7f2f05d6a53fd6
+ms.sourcegitcommit: e3f4dd2257a3255c2982f4fc7b72a1121275b88a
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "3338314"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4018589"
 ---
 # <a name="import-vendor-catalogs"></a>Import leverandørkataloger
 
@@ -41,7 +41,7 @@ Produktdataene som en leverandøre sender til deg, i form av en PriKat-fil, må 
 
 Du må utføre følgende oppgaver for å importere leverandørkatalogdata:
 
-1. Definer et prosjekt i arbeidsområdet Databehandling der du har definert regler for tilordning av data. Velg **Databehandling**, og velg deretter **Definer roller for dataprosjekter**.
+1. Definer et prosjekt i arbeidsområdet Databehandling der du har definert regler for tilordning av data. Velg **Databehandling** , og velg deretter **Definer roller for dataprosjekter**.
 
 2. Definer et innkjøpskategorihierarki, og tilordne leverandører til innkjøpskategoriene. Hvis du bruker varekoder, kan du legge til varekodene i innkjøpskategoriene. Hvis du vil ha informasjon om hvordan du definerer et innkjøpskategorihierarki, se [Definer et innkjøpskategorihierarki](../procurement/tasks/set-up-procurement-category-hierarchy.md).
 
@@ -61,9 +61,9 @@ Godkjente produkter legges til i produktstandarden og frigis til de valgte jurid
 
 Filmalen for katalogimport er en XSD-fil som bruker til å opprette en PriKat-fil for produktene til en leverandør. Du kan bruke PriKat-filen til å opprette en ny katalog, erstatte en eksisterende katalog eller endre en eksisterende katalog.
 
-1. Velg **Innkjøp og leverandører** \> **Kataloger** \> **Leverandørkataloger**, og dobbeltklikk katalogen du vil arbeide med.
+1. Velg **Innkjøp og leverandører** \> **Kataloger** \> **Leverandørkataloger** , og dobbeltklikk katalogen du vil arbeide med.
 
-2. Last ned en gjeldende katalogmportmal (XSD-fil). På siden **Oppdater katalog**, i **handlingsruten** i kategorien **Kataloger** i gruppen **Beslektet informasjon**, klikker du **Generer katalogmal**, og velger **Innkjøpskategori**.
+2. Last ned en gjeldende katalogmportmal (XSD-fil). På siden **Oppdater katalog** , i **handlingsruten** i kategorien **Kataloger** i gruppen **Beslektet informasjon** , klikker du **Generer katalogmal** , og velger **Innkjøpskategori**.
 
     - I **innkjøpskategorien** kan du generere en katalogmal som omfatter innkjøpskategoriene der leverandøren er autorisert til å levere produkter.
 

@@ -18,17 +18,17 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 92ffd2076497325fb986478328c4b2584929881d
-ms.sourcegitcommit: 025561f6a21fe8705493daa290f3f6bfb9f1b962
+ms.openlocfilehash: 7e631f1bf64b47b5f3e85d4f98c6edafe67d627a
+ms.sourcegitcommit: d6250ee5ced43be39e789324a895fd1c07178935
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "3836010"
+ms.lasthandoff: 10/19/2020
+ms.locfileid: "4039898"
 ---
 # <a name="set-up-the-electronic-invoicing-add-on"></a>Konfigurere tillegget Elektronisk fakturering
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
+
 
 Funksjonsoppsettet for tillegget Elektronisk fakturering er prosessen med å opprette den nødvendige konfigurasjonen via det RCS-miljøet (Regulatory Configuration Services) og publisere den konfigurasjonen til serveren for tillegget Elektroniske fakturering. Ved hjelp av oppsettet kan du opprette de konfigurerbare reglene som gjør at tillegget Elektronisk fakturering kan bruke en sikker protokoll over Internett til å kommunisere og utveksle data med en tredjepartsenhet via webtjenester.
 
@@ -49,7 +49,7 @@ På grunn av variasjoner i fakturaformater og handlingsflyter kan funksjonsoppse
 Installasjonsprosessen må fullføres i RCS-miljøet. Følg disse trinnene for å opprette en ny funksjon for tillegget Elektronisk fakturering.
 
 1. Logg på RCS-miljøet.
-2. I **Globaliseringsfunksjoner**-arbeidsområder, i delen **Funksjoner**, velger du flisen **Elektronisk fakturering-tillegg**.
+2. I **Globaliseringsfunksjoner** -arbeidsområder, i delen **Funksjoner** , velger du flisen **Elektronisk fakturering-tillegg**.
 3. På siden **Funksjoner for tillegget Elektronisk fakturering** velger du **Importer** for å importere ER-datamodellkonfigurasjonen fra det globale repositoriet.
 4. Velg **Legg til** for å opprette en funksjon for tillegget Elektronisk fakturering. Du kan enten opprette funksjonen fra grunnen av eller avlede den fra en eksisterende funksjon for tillegget Elektronisk fakturering.
 
@@ -71,7 +71,7 @@ Følg disse trinnene for å legge til ER-formater i funksjonen for tillegg for E
     > [!NOTE]
     > Når du oppretter en funksjon for tillegget Elektronisk fakturering fra grunnen av, må du legge til alle ER-filformatkonfigurasjoner manuelt. Når du avleder en funksjon for tillegget Elektronisk fakturering fra en eksisterende funksjon, opprettes ER-filformatkonfigurasjonene automatisk, fordi de arves fra den opprinnelige funksjonen for tillegget Elektronisk fakturering.
 
-2. Velg **Rediger** for å åpne siden **Formatutforming**, der du kan redigere ER-filformatkonfigurasjonen.
+2. Velg **Rediger** for å åpne siden **Formatutforming** , der du kan redigere ER-filformatkonfigurasjonen.
 
     ![Redigere funksjonskonfigurasjoner for tillegget Elektronisk fakturering](media/e-Invoicing-services-feature-setup-Select-Edit-e-Invoicing-feature-Configurations.png)
 
@@ -194,13 +194,13 @@ De tilgjengelige parameterne varierer avhengig av hvilken handling som er valgt 
 |-----------------------------|-------------|
 | URL for webtjeneste             | URL-adressen det skal sendes forespørsler til. |
 | Tidsavbrudd for webforespørsel         | Maksimumstiden (i millisekunder) det skal ventes på et webtjenestesvar. |
-| Type forespørselsoperasjon      | Typen HTTP-forespørselsoperasjon (for eksempel **HENT**, **SEND** eller **SLETT**). |
+| Type forespørselsoperasjon      | Typen HTTP-forespørselsoperasjon (for eksempel **HENT** , **SEND** eller **SLETT** ). |
 | Sertifikatnavn           | Sertifikatnavnene. |
 | Koding av svartekst      | Den forventede kodingen av HTTP-svarteksten, slik at den kan dekodes på riktig måte. |
 | Innholdstype for HTTP-forespørsel   | Hodeinndataene for innholdstype for HTTP-forespørsel. |
 | Innholdstekst for HTTP-forespørsel   | HTTP-forespørselsteksten. (Brødteksten kan være tom.) |
 | Parameterspørringsverdier for HTTP | Parameterspørringsverdier som brukes til å fylle URL-adressen med variable parametere. |
-| Forespørselsrute               | Rutebanen for HTTP-forespørselen. De variable parameterne kan skrives i **\{paramName\}**-notasjon. Her er et eksempel: **"api/{id}/submit"**. |
+| Forespørselsrute               | Rutebanen for HTTP-forespørselen. De variable parameterne kan skrives i **\{paramName\}** -notasjon. Her er et eksempel: **"api/{id}/submit"**. |
 | Ruteparameterliste        | Ruteparameterne, i nøkkelverdinotasjon, som brukes til å sette inn variabler i ruten. |
 | Egendefinerte HTTP-hoder         | De egendefinerte HTTP-hodene som plasseres i forespørselen. |
 | Informasjonskapsler for HTTP-forespørsel        | En liste over informasjonskapsler, i nøkkelverdinotasjon, som skal plasseres i hodeforespørselen for HTTP-informasjonskapsler. |
@@ -295,7 +295,7 @@ Du kan opprette variabler og deretter bruke dem som inndataverdi for en paramete
 
 #### <a name="set-up-variables"></a>Konfigurer variabler
 
-- På siden for **funksjonsversjonsoppsett**, i kategorien **Variabler**, velger du **Ny** eller **Slett** for å administrere variabler.
+- På siden for **funksjonsversjonsoppsett** , i kategorien **Variabler** , velger du **Ny** eller **Slett** for å administrere variabler.
 
     ![Administrere variabler](media/e-Invoicing-services-feature-setup-Manage-Variables.png)
 
@@ -311,7 +311,7 @@ Følgende tabell beskriver feltene som er tilgjengelige i kategorien **Variabler
 
 ### <a name="validate-the-feature-setup"></a>Validere funksjonsoppsettet
 
-- På siden for **funksjonsversjonsoppsett**, i handlingsruten, velger du **Valider** for å validere funksjonsversjonsoppsettet.
+- På siden for **funksjonsversjonsoppsett** , i handlingsruten, velger du **Valider** for å validere funksjonsversjonsoppsettet.
 
    ![Velge Valider-knappen](media/e-Invoicing-services-feature-setup-Select-Validate-Button.png)
 
@@ -323,8 +323,8 @@ Et miljø for tillegget Elektronisk fakturering må være knyttet til funksjonen
 
 Følg disse trinnene for å aktivere et miljø for tillegget Elektronisk fakturering for funksjonen for tillegget Elektronisk fakturering.
 
-1. På siden for **Funksjoner for tillegget Elektronisk fakturering**, i kategorien **Miljøer**, velger du **Aktiver** for å legge til et miljø for tillegget Elektronisk fakturering.
-2. I **Gyldig fra**-feltet angir du datoen for når det nye miljøet trer i kraft.
+1. På siden for **Funksjoner for tillegget Elektronisk fakturering** , i kategorien **Miljøer** , velger du **Aktiver** for å legge til et miljø for tillegget Elektronisk fakturering.
+2. I **Gyldig fra** -feltet angir du datoen for når det nye miljøet trer i kraft.
 
 ![Aktivere et miljø for tillegget Elektronisk fakturering](media/e-Invoicing-services-feature-setup-Select-Enable-e-Invoicing-feature-Environment.png)
 
@@ -332,7 +332,7 @@ Følg disse trinnene for å aktivere et miljø for tillegget Elektronisk fakture
 
 Funksjonen for tillegget Elektronisk fakturering kan deles på tvers av flere organisasjoner.
 
-- På siden **Funksjoner for tillegget Elektronisk fakturering**, i kategorien **Organisasjoner**, velger du **Del med** for å legge til organisasjonen du vil dele funksjonen for tillegget Elektronisk fakturering med.
+- På siden **Funksjoner for tillegget Elektronisk fakturering** , i kategorien **Organisasjoner** , velger du **Del med** for å legge til organisasjonen du vil dele funksjonen for tillegget Elektronisk fakturering med.
 
 Hvis du vil slutte å dele funksjonen for tillegget Elektronisk fakturering med organisasjonen, velger du **Opphev deling**.
 
@@ -342,22 +342,22 @@ Versjoner bidrar til å kontrollere livssyklusen til funksjonen for tillegget El
 
 ### <a name="create-a-new-version-of-an-existing-electronic-invoicing-add-on-feature"></a>Opprette en ny versjon av en eksisterende funksjon for tillegget Elektronisk fakturering
 
-1. På siden for **Funksjoner for tillegget Elektronisk fakturering**, i rutenettet til venstre, velger du funksjonen for tillegget Elektronisk fakturering.
+1. På siden for **Funksjoner for tillegget Elektronisk fakturering** , i rutenettet til venstre, velger du funksjonen for tillegget Elektronisk fakturering.
 2. I kategorien **Versjoner** velger du **Ny** for å legge til en ny versjon av funksjonen for tillegget Elektronisk fakturering.
 
 ### <a name="change-the-status-of-the-electronic-invoicing-add-on-feature"></a>Endre statusen for funksjonen for tillegget Elektronisk fakturering
 
 Følg disse trinnene for å behandle livssyklusen for funksjonen for tillegget Elektronisk fakturering.
 
-1. På siden for **Funksjoner for tillegget Elektronisk fakturering**, i rutenettet til venstre, velger du funksjonen for tillegget Elektronisk fakturering.
-2. I kategorien **Versjoner** velger du **Endre status**, og deretter endrer du statusen fra **Utkast** til **Fullført**.
+1. På siden for **Funksjoner for tillegget Elektronisk fakturering** , i rutenettet til venstre, velger du funksjonen for tillegget Elektronisk fakturering.
+2. I kategorien **Versjoner** velger du **Endre status** , og deretter endrer du statusen fra **Utkast** til **Fullført**.
 3. Du blir bedt om å bekrefte at du vil fullføre funksjonen for tillegget Elektronisk fakturering og alle komponentene. Velg **Ja** for å bekrefte handlingen eller **Nei** for å avbryte den.
 
     > [!NOTE]
-    > Når du velger **Ja**, blir statusen for konfigurasjonsversjoner, som er komponenter av funksjonen for tillegget Elektronisk fakturering, automatisk endret fra **Utkast** til **Fullført**.
+    > Når du velger **Ja** , blir statusen for konfigurasjonsversjoner, som er komponenter av funksjonen for tillegget Elektronisk fakturering, automatisk endret fra **Utkast** til **Fullført**.
 
-4. Velg **Endre status**, og deretter endrer du statusen fra **Utkast** til **Publiser**.
+4. Velg **Endre status** , og deretter endrer du statusen fra **Utkast** til **Publiser**.
 5. Du blir bedt om å bekrefte at du vil publisere funksjonen for tillegget Elektronisk fakturering og alle komponentene til Globalt repositorium. Velg **Ja** for å bekrefte handlingen eller **Nei** for å avbryte den.
 
     > [!NOTE]
-    > Når du velger **Ja**, endres statusen for konfigurasjonsversjoner automatisk fra **Fullført** til **Delt**.
+    > Når du velger **Ja** , endres statusen for konfigurasjonsversjoner automatisk fra **Fullført** til **Delt**.

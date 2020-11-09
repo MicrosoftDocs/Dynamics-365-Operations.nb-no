@@ -14,15 +14,15 @@ ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anupamar-ms
+ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 5876b953a3b3d960c106acf37731fde13b93f8e7
-ms.sourcegitcommit: ae0843763a8b6b232bb71db326fab28605ac6c53
+ms.openlocfilehash: 6610d2abe0a1b03ddd763f9a65fc1dab42f1da1b
+ms.sourcegitcommit: 49f3011b8a6d8cdd038e153d8cb3cf773be25ae4
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "3661178"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4015186"
 ---
 # <a name="order-details-module"></a>Ordredetaljermodulen
 
@@ -38,7 +38,7 @@ Ordredetaljmodulen brukes til å vise ordrebekreftelsesdetaljer etter at en ordr
 
 | Egenskapsnavn  | Verdier | beskrivelse |
 |----------------|--------|-------------|
-| Overskrift        | Overskriftstekst og overskriftskode (**H1**, **H2**, **H3**, **H4**, **H5** eller **H6**) | Ordredetaljermodulen kan ha en overskrift. Som standard brukes **H2**-overskriftskoden for overskriften. Koden kan imidlertid endres for å oppfylle tilgjengelighetskravene. |
+| Overskrift        | Overskriftstekst og overskriftskode ( **H1** , **H2** , **H3** , **H4** , **H5** eller **H6** ) | Ordredetaljermodulen kan ha en overskrift. Som standard brukes **H2** -overskriftskoden for overskriften. Koden kan imidlertid endres for å oppfylle tilgjengelighetskravene. |
 | Kontaktnummer | Text | Et kontaktnummer kan angis for spørsmål som er knyttet til ordren. |
 
 ## <a name="modules-that-can-be-used-on-an-order-details-page"></a>Moduler som kan brukes på en ordredetaljside
@@ -52,21 +52,21 @@ Når du oppretter en ordredetaljside, kan du legge til andre relevante moduler i
 
 Hvis du vil legge til en ordredetaljermodul på en ny side og angi de nødvendige egenskapene, følger du disse trinnene.
 
-1. Gå til **Maler**, og velg **Ny** for å opprette en ny mal.
-1. I dialogboksen **Ny mal**, under **Malnavn**, angir du navnet **Ordredetaljmal**, og velg deretter **OK**.
-1. I **Tekst**-sporet velger du ellipsen (**…**), og deretter velger du **Legg til modul**.
-1. I dialogboksen **Legg til modul** velger du **Standardside**-modulen, og deretter velger du **OK**.
-1. På **Hoved**-sporet på **Standardside**-modulen velger du ellipseknappen (**...**), og deretter velger du **Legg til modul**.
-1. I dialogboksen **Legg til modul** velger du **Ordredetaljer**-modulen, og deretter velger du **OK**.
-1. Velg **Lagre**, og velg deretter **Forhåndsvisning** for å forhåndsvise malen. Ordredetaljmodulen blir ikke gjengitt, fordi den krever konteksten til ordrebekreftelsesnummeret.
+1. Gå til **Maler** , og velg **Ny** for å opprette en ny mal.
+1. I dialogboksen **Ny mal** , under **Malnavn** , angir du navnet **Ordredetaljmal** , og velg deretter **OK**.
+1. I **Tekst** -sporet velger du ellipsen ( **…** ), og deretter velger du **Legg til modul**.
+1. I dialogboksen **Legg til modul** velger du **Standardside** -modulen, og deretter velger du **OK**.
+1. På **Hoved** -sporet på **Standardside** -modulen velger du ellipseknappen ( **...** ), og deretter velger du **Legg til modul**.
+1. I dialogboksen **Legg til modul** velger du **Ordredetaljer** -modulen, og deretter velger du **OK**.
+1. Velg **Lagre** , og velg deretter **Forhåndsvisning** for å forhåndsvise malen. Ordredetaljmodulen blir ikke gjengitt, fordi den krever konteksten til ordrebekreftelsesnummeret.
 1. Velg **Fullfør redigering** for å sjekke inn malen, og velg deretter **Publiser** for å publisere den.
-1. Gå til **Sider**, og velg **Ny** for å opprette en ny side.
-1. I **Velg en mal**-dialogboksen velger du **Ordredetaljmal**. Under **Sidenavn** angir du **Side for ordredetaljer**, og velger deretter **OK**.
-1. På **Hoved**-sporet på **Standardside**-modulen velger du ellipseknappen (**...**), og deretter velger du **Legg til modul**.
-1. I dialogboksen **Legg til modul** velger du **Ordredetaljer**-modulen, og deretter velger du **OK**.
+1. Gå til **Sider** , og velg **Ny** for å opprette en ny side.
+1. I **Velg en mal** -dialogboksen velger du **Ordredetaljmal**. Under **Sidenavn** angir du **Side for ordredetaljer** , og velger deretter **OK**.
+1. På **Hoved** -sporet på **Standardside** -modulen velger du ellipseknappen ( **...** ), og deretter velger du **Legg til modul**.
+1. I dialogboksen **Legg til modul** velger du **Ordredetaljer** -modulen, og deretter velger du **OK**.
 1. I egenskapsruten for ordredetaljmodulen velger du **Overskrift** ved siden av blyantsymbolet.
-1. I **Overskriftstekst**-feltet i dialogboksen **Overskrift** angir du overskriftsteksten **Ordredetaljer**, og deretter velger du **OK**.
-1. Velg **Lagre**, og velg deretter **Forhåndsvisning** for å forhåndsvise siden.
+1. I **Overskriftstekst** -feltet i dialogboksen **Overskrift** angir du overskriftsteksten **Ordredetaljer** , og deretter velger du **OK**.
+1. Velg **Lagre** , og velg deretter **Forhåndsvisning** for å forhåndsvise siden.
 1. Velg **Fullfør redigering** for å sjekke inn siden, og velg deretter **Publiser** for å publisere den.
 
 ## <a name="additional-resources"></a>Tilleggsressurser

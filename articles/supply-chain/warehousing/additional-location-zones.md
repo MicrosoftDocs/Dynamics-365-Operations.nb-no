@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: WHSLocationBuild
+ms.search.form: WHSLocationBuild, WHSZone
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations, Supply Chain Management
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: c0bed8c95760b3dee350048c5f824f974b784f26
-ms.sourcegitcommit: 7b7cc93c0f78c6bfc7a3ea66a74a29ba0f218553
+ms.openlocfilehash: 6cf81939989b8faffcda51bbbd5bc6b27aec7eea
+ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "3658340"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4016314"
 ---
 # <a name="additional-location-zones"></a>Ekstra lokasjonssoner
 
@@ -35,7 +35,7 @@ Ingen ekstra oppsett er nødvendig for å bruke sonefeltene.
 
 ## <a name="turn-on-the-additional-location-zone-feature"></a>Aktiver funksjonen for Ekstra lokasjonssone
 
-Før du kan bruke *Ekstra lokasjonssone*-funksjonen, må den aktiveres i systemet. Administratorer kan bruke innstillingene for [funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til å kontrollere funksjonsstatusen og aktivere den hvis den kreves. I **Funksjonsadministrering**-arbeidsområdet er denne funksjonen oppført på følgende måte:
+Før du kan bruke *Ekstra lokasjonssone* -funksjonen, må den aktiveres i systemet. Administratorer kan bruke innstillingene for [funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til å kontrollere funksjonsstatusen og aktivere den hvis den kreves. I **Funksjonsadministrering** -arbeidsområdet er denne funksjonen oppført på følgende måte:
 
 - **Modul:** *Lagerstyring*
 - **Funksjonsnavn:** *Ekstra lokasjonssone*
@@ -45,16 +45,16 @@ Før du kan bruke *Ekstra lokasjonssone*-funksjonen, må den aktiveres i systeme
 1. Gå til **Lagerstyring \> Oppsett \> Lager \> Veiviser for lokasjonsoppsett**.
 2. Angi følgende verdier:
 
-    - I **Lager**-feltet velger du _62_.
+    - I **Lager** -feltet velger du _62_.
     - Velg _GULV_ i feltet **Sone-ID**.
     - Velg _PICKZONE1_ i feltet **Ekstra sone 1**.
     - Velg _WEBSHOP1_ i feltet **Ekstra sone 2**.
-    - Velg _GULV_ i **Lokasjonsprofil-ID**-feltet.
+    - Velg _GULV_ i **Lokasjonsprofil-ID** -feltet.
 
-3. Velg **Gulv**-linjen.
+3. Velg **Gulv** -linjen.
 4. Angi **1** i feltet _Fra-nummer_. Angi **3** i feltet _Til-nummer_.
-5. Velg **Gang**-linjen.
+5. Velg **Gang** -linjen.
 6. Angi **1** i feltet _Fra-nummer_. Angi **5** i feltet _Til-nummer_.
 7. Velg **Opprett**.
-8. Du mottar meldinger som angir at nye lokasjoner er lagt til. Velg **Vis meldinger**-knappen for å vise meldingene.
+8. Du mottar meldinger som angir at nye lokasjoner er lagt til. Velg **Vis meldinger** -knappen for å vise meldingene.
 9. Gå til **Lagerstyring \> Oppsett \> Lager \> Lokasjoner**. De nye lokasjonene vises i listen, og alle sonefeltene er tilgjengelige (det vil si det eksisterende sonefeltet og de nye ekstra sonefeltene).

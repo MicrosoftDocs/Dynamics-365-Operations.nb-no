@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: KanbanBoardTransferJob, KanbanFlow, KanbanRules
+ms.search.form: KanbanBoardTransferJob, KanbanFlow, KanbanRules, WHSKanbanWaveTable, WHSKanbanWaveTableListPage
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d712cc3ebdc959d1fee4a2a79e3283b84f0b901a
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: d0caa0020083138f702e4a1fda457b7075a9c87e
+ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3205558"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4017085"
 ---
 # <a name="replenishment-with-withdrawal-kanbans"></a>Etterfylling med uttak – Kanbaner
 
@@ -54,11 +54,11 @@ I dette scenarietbruker en produksjonsprosess (4) materialer fra et produksjonsi
 
 ## <a name="configure-warehouse-work-for-kanban-picking-for-the-withdrawal-kanban"></a>Konfigurere lagerarbeid for kanban-plukking for uttaks-kanban
 
-Hvis du vil aktivere råvareplukking for uttaks-kanban, konfigurerer du bølgemaler, arbeidsmaler og lokasjonsdirektiver for arbeidsordretypen **Kanban-plukking**. Denne ordretypen støtter ikke bare plukkprosessen for uttaks-kanban. Den støtter også plukkprosessen for produksjons-kanban. Du kan imidlertid konfigurere en egen plukkprosess for hver type kanban ved å skille bølgemaler, arbeidsmaler og lokasjonsdirektiver. Hvis du vil skille bølgemaler, maler for arbeid og lokasjonsdirektiver, må du angi vilkår på aktivitetstypen (**prosess** eller **overføring**) i spørringene for disse enhetene.
+Hvis du vil aktivere råvareplukking for uttaks-kanban, konfigurerer du bølgemaler, arbeidsmaler og lokasjonsdirektiver for arbeidsordretypen **Kanban-plukking**. Denne ordretypen støtter ikke bare plukkprosessen for uttaks-kanban. Den støtter også plukkprosessen for produksjons-kanban. Du kan imidlertid konfigurere en egen plukkprosess for hver type kanban ved å skille bølgemaler, arbeidsmaler og lokasjonsdirektiver. Hvis du vil skille bølgemaler, maler for arbeid og lokasjonsdirektiver, må du angi vilkår på aktivitetstypen ( **prosess** eller **overføring** ) i spørringene for disse enhetene.
 
 ## <a name="configure-the-withdrawal-kanban"></a>Konfigurere uttaks-kanban
 
-Overføringsaktiviteten som brukes for uttaks-kanban er konfigurert som en del av en aktivert aktivitetsplan i en Lean-produksjonsflyt. Som en del av konfigurasjonen av overføringsaktiviteten kan du angi "fra"- og "til"-lokasjoner for overføringen. Når du har konfigurert overføringsaktiviteten, kan du tilordne den til en kanban-regel for **uttak**-type. Kanban-regelen angir policyer og konfigurasjoner for uttaks-kanban. Kanbanens antall definerer hvor mange enheter av håndteringsenheten kanbanen bærer under overføringsprosessen. Fast kanban-antall brukes når fast etterfyllingsstrategi er valgt. Dette antallet angir hvor mange Kanbaner som kreves for å forhindre at lager eller beholdning går tomt ved behovskilden. Fast antall kan beregnes basert på faktisk etterspørsel, historisk etterspørsel og servicenivåer. Følgende to scenarier beskriver hvordan du kan administrere etterfylling av materialer som bruker uttaks-kanban.
+Overføringsaktiviteten som brukes for uttaks-kanban er konfigurert som en del av en aktivert aktivitetsplan i en Lean-produksjonsflyt. Som en del av konfigurasjonen av overføringsaktiviteten kan du angi "fra"- og "til"-lokasjoner for overføringen. Når du har konfigurert overføringsaktiviteten, kan du tilordne den til en kanban-regel for **uttak** -type. Kanban-regelen angir policyer og konfigurasjoner for uttaks-kanban. Kanbanens antall definerer hvor mange enheter av håndteringsenheten kanbanen bærer under overføringsprosessen. Fast kanban-antall brukes når fast etterfyllingsstrategi er valgt. Dette antallet angir hvor mange Kanbaner som kreves for å forhindre at lager eller beholdning går tomt ved behovskilden. Fast antall kan beregnes basert på faktisk etterspørsel, historisk etterspørsel og servicenivåer. Følgende to scenarier beskriver hvordan du kan administrere etterfylling av materialer som bruker uttaks-kanban.
 
 ## <a name="scenario-1-replenish-a-production-input-location-by-using-a-fixed-withdrawal-kanban"></a>Scenario 1: Etterfylle et produksjonsinnleveringssted ved å bruke en fast uttaks-kanban
 

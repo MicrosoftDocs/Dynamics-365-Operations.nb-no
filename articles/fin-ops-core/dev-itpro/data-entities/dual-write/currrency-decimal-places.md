@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: rhaertle
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-04-06
-ms.openlocfilehash: 889337560f073708fb16b2dc173f9872593dd570
-ms.sourcegitcommit: be4fcf8f19c55e852a729b215a16e24e971ff5b7
+ms.openlocfilehash: 7e1f70d95f29dc154044f09c6020300a8e4f8987
+ms.sourcegitcommit: 0a741b131ed71f6345d4219a47cf5f71fec6744b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "3456820"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "3997484"
 ---
 # <a name="currency-data-type-migration-for-dual-write"></a>Migrering av valutadatatype for dobbelt skriving
 
@@ -51,7 +50,7 @@ Migreringen endrer ikke data. Når feltene for valuta og valutakurs er konverter
 
 ### <a name="request-a-migration"></a>Be om en migrering
 
-Hvis du vil gjøre denne funksjonen tilgjengelig, send en e-post til **CDSExpandDecimal@microsoft.com**, og inkluder følgende informasjon:
+Hvis du vil gjøre denne funksjonen tilgjengelig, send en e-post til **CDSExpandDecimal@microsoft.com** , og inkluder følgende informasjon:
 
 + **Emne:** Forespørsel om å aktivere utvidet desimalstøtte for \<organizationID\>
 + **Tekst:** Jeg vil aktivere utvidet støtte for desimaler i organisasjonen min \<organizationID\>.
@@ -81,13 +80,13 @@ Det er noen av begrensninger:
 
 ### <a name="system-settings-currency-precision-for-pricing"></a>Systeminnstillinger: Valutapresisjon for prissetting
 
-Når migreringen er fullført, kan administratorer angi valutapresisjonen. Gå til **Innstillinger \> Administrasjon**, og velg **Systeminnstillinger**. I kategorien **Generelt** endrer du verdien for **Sett valutapresisjonen som brukes for prissetting i hele systemet**, som vist i illustrasjonen nedenfor.
+Når migreringen er fullført, kan administratorer angi valutapresisjonen. Gå til **Innstillinger \> Administrasjon** , og velg **Systeminnstillinger**. I kategorien **Generelt** endrer du verdien for **Sett valutapresisjonen som brukes for prissetting i hele systemet** , som vist i illustrasjonen nedenfor.
 
 ![Systeminnstillinger for valuta](media/currency-system-settings.png)
 
 ### <a name="business-management-currencies"></a>Forretningsstyring: Valutaer
 
-Hvis du krever at valutapresisjonen for en bestemt valuta er forskjellig fra valutapresisjonen som brukes til prissetting, kan du endre den. Gå til **Innstillinger \> Forretningsstyring**, velg **Valutaer**, og velg valutaen som skal endres. Deretter setter du **Valutapresisjon**-feltet til ønsket antall desimalplasser, som vist i følgende illustrasjon.
+Hvis du krever at valutapresisjonen for en bestemt valuta er forskjellig fra valutapresisjonen som brukes til prissetting, kan du endre den. Gå til **Innstillinger \> Forretningsstyring** , velg **Valutaer** , og velg valutaen som skal endres. Deretter setter du **Valutapresisjon** -feltet til ønsket antall desimalplasser, som vist i følgende illustrasjon.
 
 ![Valutainnstillinger for en bestemt nasjonal innstilling](media/specific-currency.png)
 

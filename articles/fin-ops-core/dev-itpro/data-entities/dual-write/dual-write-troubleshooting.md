@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: rhaertle
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: 8cc7c11233c745719af72222eba02fb71d7a8944
-ms.sourcegitcommit: 4edc658448612afbf1c1663c166d12e08e4c4165
+ms.openlocfilehash: c3352afd93dfc7c37a8af9dabaf85b7a1debad30
+ms.sourcegitcommit: 0a741b131ed71f6345d4219a47cf5f71fec6744b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "3340936"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "3997260"
 ---
 # <a name="general-troubleshooting"></a>Generell feilsøking
 
@@ -43,7 +42,7 @@ Noen versjoner av Package Deployer-verktøyet er ikke kompatible med løsningspa
 
 Når du har installert Package Deployer-verktøyet, installerer du løsningspakken ved å følge disse trinnene.
 
-1. Last ned den nyeste løsningspakkefilen fra Yammer.com. Når zip-filen for pakken er lastet ned, høyreklikker du den og velger **Egenskaper**. Merk av for **Fjern blokkering**, og velg deretter **Bruk**. Hvis du ikke ser avmerkingsboksen **Fjern blokkering,** er blokkeringen av zip-filen allerede fjernet, og du kan hoppe over dette trinnet.
+1. Last ned den nyeste løsningspakkefilen fra Yammer.com. Når zip-filen for pakken er lastet ned, høyreklikker du den og velger **Egenskaper**. Merk av for **Fjern blokkering** , og velg deretter **Bruk**. Hvis du ikke ser avmerkingsboksen **Fjern blokkering,** er blokkeringen av zip-filen allerede fjernet, og du kan hoppe over dette trinnet.
 
     ![Dialogboksen Egenskaper](media/unblock_option.png)
 
@@ -51,36 +50,36 @@ Når du har installert Package Deployer-verktøyet, installerer du løsningspakk
 
     ![Innholdet i mappen Dynamics365FinanceAndOperationsCommon.PackageDeployer.2.0.438](media/extract_package.png)
 
-3. Lim inn alle de kopierte filene i **Verktøy**-mappen i Package Deployer-verktøyet. 
+3. Lim inn alle de kopierte filene i **Verktøy** -mappen i Package Deployer-verktøyet. 
 4. Kjør **PackageDeployer.exe** for å velge Common Data Service-miljøet og installere løsningene.
 
     ![Innhold i Verktøy-mappen](media/paste_copied_files.png)
 
 ## <a name="enable-and-view-the-plug-in-trace-log-in-common-data-service-to-view-error-details"></a>Aktivere og vise plugin-sporingsloggen Common Data Service for å vise feildetaljer
 
-**Nødvendig rolle for å aktivere sporingsloggen og vise feil**: Systemadministrator
+**Nødvendig rolle for å aktivere sporingsloggen og vise feil** : Systemadministrator
 
 Følg denne fremgangsmåten for å aktivere sporingsloggen.
 
-1. Logg inn på den modelldrevne appe i Dynamics 365, åpne **Innstillinger**-siden, og velg deretter **Administrasjon** under **System**.
+1. Logg inn på den modelldrevne appe i Dynamics 365, åpne **Innstillinger** -siden, og velg deretter **Administrasjon** under **System**.
 2. Velg **Systeminnstillinger** på siden **Administrasjon**.
-3. I kategorien **Tilpassing**, i feltet **Sporing av plugin-modul og egendefinert arbeidsflytaktivitet**, velger du **Alle** for å aktivere plugin-sporingsloggen. Hvis du bare vil logge sporingslogger når det oppstår unntak, kan du velge **Unntak** i stedet.
+3. I kategorien **Tilpassing** , i feltet **Sporing av plugin-modul og egendefinert arbeidsflytaktivitet** , velger du **Alle** for å aktivere plugin-sporingsloggen. Hvis du bare vil logge sporingslogger når det oppstår unntak, kan du velge **Unntak** i stedet.
 
 
 Følg denne fremgangsmåten for å se sporingsloggen.
 
-1. Logg inn på den modelldrevne appe i Dynamics 365, åpne **Innstillinger**-siden, og velg deretter **Sporingslogg for plugin-modul** under **Tilpassing**.
-2. Finn sporingsloggene der **Typenavn**-feltet er satt til **Microsoft.Dynamics.Integrator.DualWriteRuntime.Plugins.PreCommmitPlugin**.
-3. Dobbeltklikk et element for å vise hele loggen, og se deretter gjennom **Meldingsblokk**-teksten i hurtigfanen **Utførelse**.
+1. Logg inn på den modelldrevne appe i Dynamics 365, åpne **Innstillinger** -siden, og velg deretter **Sporingslogg for plugin-modul** under **Tilpassing**.
+2. Finn sporingsloggene der **Typenavn** -feltet er satt til **Microsoft.Dynamics.Integrator.DualWriteRuntime.Plugins.PreCommmitPlugin**.
+3. Dobbeltklikk et element for å vise hele loggen, og se deretter gjennom **Meldingsblokk** -teksten i hurtigfanen **Utførelse**.
 
 ## <a name="enable-debug-mode-to-troubleshoot-live-synchronization-issues-in-finance-and-operations-apps"></a>Aktivere feilsøkingsmodus for å feilsøke problemer med direkte synkronisering i Finance and Operations-apper
 
 **Nødvendig rolle for å vise feilene:** Systemadministrator – dobbel skriving-feil som kommer fra Common Data Service, kan vises i Finance and Operations-appen. I noen tilfeller er ikke hele teksten i feilmeldingen tilgjengelig fordi meldingen er for lang eller inneholder personlig identifiserende informasjon (PII). Du kan aktivere detaljert logging for feil ved å følge disse trinnene.
 
-1. Alle prosjektkonfigurasjoner i Finance and Operations-apper har en **IsDebugMode**-egenskap i **DualWriteProjectConfiguration**-enheten. Åpne **DualWriteProjectConfiguration**-enheten ved hjelp av Excel-tillegget.
+1. Alle prosjektkonfigurasjoner i Finance and Operations-apper har en **IsDebugMode** -egenskap i **DualWriteProjectConfiguration** -enheten. Åpne **DualWriteProjectConfiguration** -enheten ved hjelp av Excel-tillegget.
 
     > [!TIP]
-    > En enkel måte å åpne enheten på er å aktivere **Utforming**-modus i Excel-tillegget og deretter legge til **DualWriteProjectConfigurationEntity** i regnearket. Hvis du vil ha mer informasjon, kan du se [Åpne enhetsdata i Excel og oppdatere dataene ved hjelp av Excel-tillegget](../../office-integration/use-excel-add-in.md).
+    > En enkel måte å åpne enheten på er å aktivere **Utforming** -modus i Excel-tillegget og deretter legge til **DualWriteProjectConfigurationEntity** i regnearket. Hvis du vil ha mer informasjon, kan du se [Åpne enhetsdata i Excel og oppdatere dataene ved hjelp av Excel-tillegget](../../office-integration/use-excel-add-in.md).
 
 2. Sett egenskapen **IsDebugMode** til **Ja** for prosjektet.
 3. Kjør scenariet som genererer feil.
@@ -105,7 +104,7 @@ Følg denne fremgangsmåten for å se sporingsloggen.
 **Nødvendig rolle for å koble fra miljøet:** Systemansvarlig for enten Finance and Operations-app eller Common Data Service.
 
 1. Logg på Finance and Operations-appen.
-2. Gå til **Arbeidsområder \> Databehandling**, og velg flisen **Dobbel skriving**.
+2. Gå til **Arbeidsområder \> Databehandling** , og velg flisen **Dobbel skriving**.
 3. Velg alle kjørende tilordninger, og klikk på **Stopp**.
 4. Klikk **Koble fra miljø**.
 5. Velg **Ja** for å bekrefte operasjonen.
@@ -114,10 +113,10 @@ Du kan nå koble til et nytt miljø.
 
 ## <a name="unable-to-view-the-sales-order-line-information-form"></a>Kan ikke vise informasjonsskjemaet for salgsordrelinjen 
 
-Når du oppretter en salgsordre i Dynamics 365 Sales, kan du bli omdirigert til ordrelinjeskjemaet for Dynamics 365 Project Operations hvis du klikker på **+ Legg til produkter**. Det finnes ingen måter fra dette skjemaet å vise **Informasjon**-skjemaet for salgsordrelinje. Alternativet for **Informasjon** vises ikke i rullegardinlisten under **Ny ordrelinje**. Dette skjer fordi Project Operations er installert i ditt miljø.
+Når du oppretter en salgsordre i Dynamics 365 Sales, kan du bli omdirigert til ordrelinjeskjemaet for Dynamics 365 Project Operations hvis du klikker på **+ Legg til produkter**. Det finnes ingen måter fra dette skjemaet å vise **Informasjon** -skjemaet for salgsordrelinje. Alternativet for **Informasjon** vises ikke i rullegardinlisten under **Ny ordrelinje**. Dette skjer fordi Project Operations er installert i ditt miljø.
 
-Følg denne fremgangsmåten for å reaktivere alternativet for **Informasjon**-skjema:
-1. Gå til **Ordrelinje**-enheten.
-2. Finn **Informasjon**-skjemaet under skjemaer-noden. 
-3. Velg **Informasjon**-skjemaet, og klikk deretter **Aktiver sikkerhetsroller**. 
+Følg denne fremgangsmåten for å reaktivere alternativet for **Informasjon** -skjema:
+1. Gå til **Ordrelinje** -enheten.
+2. Finn **Informasjon** -skjemaet under skjemaer-noden. 
+3. Velg **Informasjon** -skjemaet, og klikk deretter **Aktiver sikkerhetsroller**. 
 4. Endre sikkerhetsinnstillingen til **Vis til alle**.

@@ -18,12 +18,12 @@ ms.search.validFrom:
 - month/year of release that feature was introduced in
 - in format yyyy-mm-dd
 ms.dyn365.ops.version: 10.0.2
-ms.openlocfilehash: 22e5333859d37ad33f5806d63fc874b1b5a52831
-ms.sourcegitcommit: 165e082e59ab783995c16fd70943584bc3ba3455
+ms.openlocfilehash: 46095e4ec21aac7cbf98dc1265ea7c8de27148ab
+ms.sourcegitcommit: 49f3011b8a6d8cdd038e153d8cb3cf773be25ae4
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "3967340"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4015049"
 ---
 # <a name="feature-management-overview"></a>Oversikt over funksjonsbehandling
 
@@ -66,7 +66,7 @@ Noen funksjoner vil vise en melding om at funksjonen ikke kan aktiveres før en 
 
 Når en funksjon er aktivert, vises en melding under **Finn ut mer** -koblingen i detaljruten. Denne meldingen angir enten at funksjonen ble aktivert eller den fremtidige datoen når funksjonen er planlagt å bli aktivert. Den vises hver gang du velger funksjonen i funksjonslisten.
 
-Funksjoner som er planlagt å aktiveres i fremtiden, vises i kategorien **Planlagt** . En partiprosess slår den på ved midnatt på den angitte datoen basert på tidssonen som representeres av systemdatoen.
+Funksjoner som er planlagt å aktiveres i fremtiden, vises i kategorien **Planlagt**. En partiprosess slår den på ved midnatt på den angitte datoen basert på tidssonen som representeres av systemdatoen.
 
 ## <a name="reschedule-a-feature"></a>Planlegge en funksjon på nytt
 
@@ -82,18 +82,18 @@ Hvis en funksjon allerede er aktivert, vises en **Deaktiver** -knapp i detaljrut
 
 - Velg funksjonen for å deaktivere, og velg deretter **Deaktiver** i detaljruten. Funksjonen deaktiveres, og merket i feltet **Aktiveringsdato** fjernes.
 
-Når en funksjon deaktiveres, vises en melding under **Finn ut mer** -koblingen i detaljruten. Denne meldingen angir at funksjonen ikke er aktivert ennå. Den vises hver gang du velger funksjonen i funksjonslisten. Funksjoner som ikke er aktivert, vises i fanen **Ikke aktivert** .
+Når en funksjon deaktiveres, vises en melding under **Finn ut mer** -koblingen i detaljruten. Denne meldingen angir at funksjonen ikke er aktivert ennå. Den vises hver gang du velger funksjonen i funksjonslisten. Funksjoner som ikke er aktivert, vises i fanen **Ikke aktivert**.
 
 ## <a name="features-that-must-be-turned-on"></a>Funksjoner som må aktiveres
 
-Noen ganger forekommer en kritisk funksjon som må aktiveres automatisk når du gjør en oppdatering. Disse funksjonene aktiveres automatisk på datoen som er angitt i feltet **Aktiver dato** . For disse funksjonene vises en melding under **Finn ut mer** -koblingen i detaljruten. Denne meldingen angir enten at funksjonen ble aktivert eller den fremtidige datoen når funksjonen blir aktivert. Den vises hver gang du velger funksjonen i funksjonslisten.
+Noen ganger forekommer en kritisk funksjon som må aktiveres automatisk når du gjør en oppdatering. Disse funksjonene aktiveres automatisk på datoen som er angitt i feltet **Aktiver dato**. For disse funksjonene vises en melding under **Finn ut mer** -koblingen i detaljruten. Denne meldingen angir enten at funksjonen ble aktivert eller den fremtidige datoen når funksjonen blir aktivert. Den vises hver gang du velger funksjonen i funksjonslisten.
 
 ## <a name="enable-all-features"></a>Aktiver alle funksjoner
 
 Som standard deaktiveres alle funksjoner som legges til i miljøet. Du kan aktivere alle funksjonene ved å velge **Aktiver alle** -knappen. 
 
 Når du velger **Aktiver alle** , vises et alternativ der du må oppgi følgende informasjon:
-- En liste over alle funksjoner som krever bekreftelse før de kan aktiveres. Hvis du vil aktivere funksjonene i listen, velger du **Ja** for knappen **Aktiver funksjoner som krever bekreftelse** .
+- En liste over alle funksjoner som krever bekreftelse før de kan aktiveres. Hvis du vil aktivere funksjonene i listen, velger du **Ja** for knappen **Aktiver funksjoner som krever bekreftelse**.
 - En liste over alle funksjoner som ikke kan aktiveres, vises. Disse funksjonene vil ikke bli aktivert.
 
 Alle funksjoner som kan aktiveres, aktiveres. Hvis en funksjon allerede er planlagt aktivert i fremtiden, vil ikke tidsplanen endres. 
@@ -120,7 +120,7 @@ Funksjonslederrollen og funksjonsvisningsrollen overstyrer ikke den eksisterende
 
 ## <a name="features-that-use-configuration-keys"></a>Funksjoner som bruker konfigurasjonsnøkler
 
-Hvis en funksjon bruker en konfigurasjonsnøkkel, men konfigurasjonsnøkkelen ikke er slått på, viser ikke arbeidsområdet **Funksjonsbehandling** -funksjonen i listen over tilgjengelige funksjoner. Når du har aktivert konfigurasjonsnøkkelen, må du oppdatere funksjonslisten ved hjelp av menyelementet **Se etter oppdatering** . Funksjonen vises deretter i funksjonslisten.
+Hvis en funksjon bruker en konfigurasjonsnøkkel, men konfigurasjonsnøkkelen ikke er slått på, viser ikke arbeidsområdet **Funksjonsbehandling** -funksjonen i listen over tilgjengelige funksjoner. Når du har aktivert konfigurasjonsnøkkelen, må du oppdatere funksjonslisten ved hjelp av menyelementet **Se etter oppdatering**. Funksjonen vises deretter i funksjonslisten.
 
 Hvis du deaktiverer konfigurasjonsnøkkelen, fjernes ikke funksjonen fra funksjonslisten.
 
@@ -135,7 +135,7 @@ Følgende eksempler beskriver hva som skjer når du bruker **Funksjonsbehandling
 - Hvis du endrer verdien i feltet **Aktiveringsdato** til en fremtidig dato, planlegges funksjonen for denne datoen.
 - Hvis du endrer verdien i feltet **Aktivert** til **Ja** og endrer verdien i feltet **Aktiveringsdato** til en fremtidig dato, planlegges funksjonen til denne datoen. 
 - Hvis du endrer verdien i feltet **Aktivert** til **Nei** , men du også endrer verdien i feltet **Aktiveringsdato** til en fremtidig dato, planlegges funksjonen til denne datoen.
-- Hvis en funksjon aktiveres og du legger til et **Aktiveringsdato** -felt som er satt til en fremtidig dato, forblir funksjonen aktivert. Hvis du vil planlegge funksjonen på nytt, må du endre feltet **Aktivert** til **Nei** .
+- Hvis en funksjon aktiveres og du legger til et **Aktiveringsdato** -felt som er satt til en fremtidig dato, forblir funksjonen aktivert. Hvis du vil planlegge funksjonen på nytt, må du endre feltet **Aktivert** til **Nei**.
 
 ## <a name="feature-management-and-flighting"></a>Funksjonsbehandling og testversjonering
 
@@ -183,17 +183,21 @@ Ja, hvis en funksjon påvirker virkemåten til et miljø som ikke har en funksjo
 ### <a name="how-can-feature-enablement-be-checked-in-code"></a>Hvordan kan funksjonsaktivering kontrolleres i kode?
 Bruk **isFeatureEnabled** -metoden i **FeatureStateProvider** -klassen, og send den som en forekomst av funksjonsklassen. Eksempel: 
 
-    if (FeatureStateProvider::isFeatureEnabled(BatchContentionPreventionFeature::instance()))
+```xpp
+if (FeatureStateProvider::isFeatureEnabled(BatchContentionPreventionFeature::instance()))
+```
 
 ### <a name="how-can-feature-enablement-be-checked-in-metadata"></a>Hvordan kan funksjonsaktivering kontrolleres i metadata?
-**FeatureClass** -egenskapen kan brukes til å angi at noen metadata er knyttet til en funksjon. Klassenavnet som brukes for funksjonen bør brukes, for eksempel **BatchContentionPreventionFeature** . Disse metadataene er bare synlig i den funksjonen. **FeatureClass** -egenskapen er tilgjengelig på menyer, menyelementer, opplistingsverdier og tabell-/visningsfelt.
+**FeatureClass** -egenskapen kan brukes til å angi at noen metadata er knyttet til en funksjon. Klassenavnet som brukes for funksjonen bør brukes, for eksempel **BatchContentionPreventionFeature**. Disse metadataene er bare synlig i den funksjonen. **FeatureClass** -egenskapen er tilgjengelig på menyer, menyelementer, opplistingsverdier og tabell-/visningsfelt.
 
 ### <a name="what-is-a-feature-class"></a>Hva er en funksjonsklasse?
-Funksjoner i Funksjonsbehandling er definert som *funksjonsklasser* . En funksjonsklasse **implementerer IFeatureMetadata** og bruker funksjonsklasseattributtet til å identifisere seg overfor Funksjonsbehandling-arbeidsområdet. Det er flere eksempler på tilgjengelige funksjonsklasser som kan kontrolleres for aktivering i kode ved hjelp av **FeatureStateProvider** -API og i metadata som bruker **FeatureClass** -egenskapen. Eksempel: 
+Funksjoner i Funksjonsbehandling er definert som *funksjonsklasser*. En funksjonsklasse **implementerer IFeatureMetadata** og bruker funksjonsklasseattributtet til å identifisere seg overfor Funksjonsbehandling-arbeidsområdet. Det er flere eksempler på tilgjengelige funksjonsklasser som kan kontrolleres for aktivering i kode ved hjelp av **FeatureStateProvider** -API og i metadata som bruker **FeatureClass** -egenskapen. Eksempel: 
 
-    [ExportAttribute(identifierStr(Microsoft.Dynamics.ApplicationPlatform.FeatureExposure.IFeatureMetadata))]
-    internal final class BankCurrencyRevalGlobalEnableFeature implements IFeatureMetadata
-    
+```xpp
+[ExportAttribute(identifierStr(Microsoft.Dynamics.ApplicationPlatform.FeatureExposure.IFeatureMetadata))]
+internal final class BankCurrencyRevalGlobalEnableFeature implements IFeatureMetadata
+```
+
 ### <a name="what-is-the-ifeaturelifecycle-implemented-by-some-feature-classes"></a>Hva er IFeatureLifecycle som er implementert av noen funksjonsklasser?
 IFeatureLifecycle er en Microsoft-intern mekanisme for å angi funksjonens livssyklusfase. Funksjoner kan være:
 - PrivatePreview – krever at en testversjon er synlig.

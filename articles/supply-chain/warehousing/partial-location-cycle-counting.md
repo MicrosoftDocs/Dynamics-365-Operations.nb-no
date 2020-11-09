@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: WHSCycleCountPlan, WHSWorkLineCycleCount, WHSWorkTemplateLineGroup, WHSWorkTemplateTable
+ms.search.form: WHSCycleCountPlan, WHSWorkLineCycleCount, WHSWorkTemplateLineGroup, WHSWorkTemplateTable, WHSRFMenuItemCycleCount, WHSCycleCountPlanListPage
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -19,12 +19,12 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 46365f618b13c2bcaef9a45d2a835fda27019857
-ms.sourcegitcommit: 5472005274f2f94fba82dda90de128f39d8b8390
+ms.openlocfilehash: 5d69b1e9444785058a2b3e62b9a76cb6e70abf03
+ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "3760013"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4017604"
 ---
 # <a name="partial-location-cycle-counting"></a>Delvis lokasjonssyklustelling
 
@@ -39,9 +39,9 @@ Når du bruker arbeidsprosessen for lageret for å telle operasjoner, opprettes 
 
 Du kan tilknytte en **arbeidsmalen** til en syklustellingsplan for å definere hvordan syklustellingsarbeidet skal opprettes. Arbeidsmalen for opptellingsoperasjoner refereres direkte fra syklustellingsplanen. 
 
-Når du definerer detaljer for arbeidsmalen, kan du bruke **arbeidslinjeskift**-alternativet for å angi om arbeidslinjene i opptellingn må grupperes etter varenummer eller produktvariantnummer. Dette oppsettet er nødvendig hvis du vil telle lagerbeholdningen bare for bestemte produkter på et sted. Linjene som opprettes for syklustellingsarbeidet, vil ha det informasjonsnivået du angir her, og den styrte opptellingsoperasjonen blir håndtert baser tpå dette nivået. 
+Når du definerer detaljer for arbeidsmalen, kan du bruke **arbeidslinjeskift** -alternativet for å angi om arbeidslinjene i opptellingn må grupperes etter varenummer eller produktvariantnummer. Dette oppsettet er nødvendig hvis du vil telle lagerbeholdningen bare for bestemte produkter på et sted. Linjene som opprettes for syklustellingsarbeidet, vil ha det informasjonsnivået du angir her, og den styrte opptellingsoperasjonen blir håndtert baser tpå dette nivået. 
 
-Hvis du knytter syklustellingsplaner til arbeidsmaler ved hjelp av alternativet **arbeidslinjeskift**, velges feltet **Delvis syklustelling** for syklustellingsarbeidet som er opprettet, og flere arbeidslinjer for syklustelling opprettes basert på arbeidsmalens definisjon. 
+Hvis du knytter syklustellingsplaner til arbeidsmaler ved hjelp av alternativet **arbeidslinjeskift** , velges feltet **Delvis syklustelling** for syklustellingsarbeidet som er opprettet, og flere arbeidslinjer for syklustelling opprettes basert på arbeidsmalens definisjon. 
 
 Før delvis syklustellingsarbeid kan behandles, må du, som et minimum velge **Vis varenummer** for menyelementet mobilenhet som en del av oppsettet for syklustelling. Lageroperatøren vil bli bedt om bare å registrere opptellingsinformasjon som er knyttet til opptellingslinjer (varenumre og produktdimensjoner). Alle andre lagerbeholdninger vil bli ignorert for denne opptellingsprosessen. 
 
@@ -51,7 +51,7 @@ For den delvise syklusopptellingsprosessen blir ikke dato-/klokkeslettverdien fo
 I dette eksemplet må bare varenummeret A0001 telles i lager 61.
 
 1.  Det opprettes en ny mal for syklustelling. Alternativet **arbeidslinjeskift** brukes til å gruppere opptellingsarbeidslinjer etter varenummer. Derfor får arbeidet som er opprettet for syklustelling, linjer per varenummer. Du kan også gruppere linjene etter produktvariantnummer.
-2.  Det opprettes en ny plan for syklustelling som refererer til den nylig opprettede arbeidsmalen. Syklustellingsplanen inkluderer alle lokasjoner på lager 61 (spørringen **Veg lokasjoner**) som rommer beholdningen for varenummer A0001. Valg av bestemte produkter er definert i delen **Produktvalg for syklustellingsplan**.
+2.  Det opprettes en ny plan for syklustelling som refererer til den nylig opprettede arbeidsmalen. Syklustellingsplanen inkluderer alle lokasjoner på lager 61 (spørringen **Veg lokasjoner** ) som rommer beholdningen for varenummer A0001. Valg av bestemte produkter er definert i delen **Produktvalg for syklustellingsplan**.
 3.  Du kan velge produkter for planer for syklustelling ved å sette feltet **Tomme lokasjoner** til **Ekskluder tomme**. Når planen for syklustellingen behandles, opprettes det delvis syklustellingsarbeid for varenummer A0001. Den faktiske telleprosessen kan utføres ved hjelp av et menyelement for mobilenhet for veiledet syklustelling.
 
 

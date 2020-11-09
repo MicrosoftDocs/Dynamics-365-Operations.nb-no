@@ -8,6 +8,7 @@ ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
+ms.search.form: WHSHistory, WHSLoadTable, WHSLoadPlanningListPage, WHSLoadPlanningWorkbench
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Operations
@@ -16,12 +17,12 @@ ms.search.industry: Distribution
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7966c6e445e0e44cd4ff8518926aa6b410502e13
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.openlocfilehash: c37a98a3728cb1233a6e1207975a6b8f23f8120d
+ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3980441"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4015924"
 ---
 # <a name="plan-loads-and-shipments-using-the-load-planning-workbench"></a>Planlegge laster og leveringer ved hjelp av arbeidsområdet for lastplanlegging
 
@@ -31,32 +32,32 @@ Dette emnet viser hvordan du bruker arbeidsområdet for lastplanlegging til å o
 
 
 ## <a name="create-a-sales-order"></a>Opprette en salgsordre
-1. Gå til **Navigasjonsrute > Moduler > Kunder > Ordrer > Alle salgsordrer** .
-2. Velg **Ny** .
+1. Gå til **Navigasjonsrute > Moduler > Kunder > Ordrer > Alle salgsordrer**.
+2. Velg **Ny**.
 3. Klikk på rullegardinknappen i **Kundekonto** -feltet for å åpne oppslaget.
-4. Velg konto **US-004** .
-5. Velg **OK** .
+4. Velg konto **US-004**.
+5. Velg **OK**.
 6. Klikk på rullegardinknappen i **Varenummer** -feltet for å åpne oppslaget.
-7. Velg vare **A0001** . **A0001** er aktivert for transportstyring.  
+7. Velg vare **A0001**. **A0001** er aktivert for transportstyring.  
 8. Klikk på rullegardinknappen i feltet **Område** for å velge et element.
 9. Angi et tall i **Antall** -feltet.
 10. I **Lager** -feltet skriver du inn 24 for dette eksemplet. Dette lageret er aktivert for transportstyring og avansert lagerstyring.  
-11. Velg **Lagre** .
+11. Velg **Lagre**.
 12. Lukk siden.
 
 ## <a name="create-a-new-load"></a>Opprette en ny last
-1. Gå til **Navigasjonsrute > Moduler > Transportatstyring > Planlegging > Arbeidsområde for lastplanlegging** .
-2. Velg kategorien **Salgslinjer** . Nå vil du bygge belastningen for salgsordren som du nettopp opprettet. Belastninger kan bygges basert på tilbud og etterspørsel fra bestillinger, salgsordrer og overføringsordrer.  
+1. Gå til **Navigasjonsrute > Moduler > Transportatstyring > Planlegging > Arbeidsområde for lastplanlegging**.
+2. Velg kategorien **Salgslinjer**. Nå vil du bygge belastningen for salgsordren som du nettopp opprettet. Belastninger kan bygges basert på tilbud og etterspørsel fra bestillinger, salgsordrer og overføringsordrer.  
 3. Velg **Forsyning og behov** i handlingsruten.
-4. Velg **Til ny belastning** .
+4. Velg **Til ny belastning**.
 5. Klikk rullegardinknappen i feltet **Lastmal-ID** for å åpne oppslaget. Lastmalen angir maksimale mål for vekt og volum for hele belastningen. Lastmalen kan for eksempel representere størrelsen på en container eller lastebil. Velg en vare.
-6. Velg **OK** .
+6. Velg **OK**.
 
 ## <a name="rate-and-route-the-load"></a>Vurdere og rute lasten
-1. Velg **Vurdering og ruting** .
-2. Velg **Arbeidsområde for vurderingsrute** .
-3. Velg **Vurder butikk** .
+1. Velg **Vurdering og ruting**.
+2. Velg **Arbeidsområde for vurderingsrute**.
+3. Velg **Vurder butikk**.
 4. Finn og velg ønsket post i listen.
-5. Velg **Tilordne** .
+5. Velg **Tilordne**.
 6. Lukk siden.
 

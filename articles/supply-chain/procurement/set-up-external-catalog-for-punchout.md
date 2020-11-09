@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: PurchTable, PurchVendorPortalRequests
+ms.search.form: PurchTable, PurchTablePart, PurchVendorPortalRequests, CatExternalCatalogConfiguration, CatCXMLCartLogList
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7aecc2c4786a1912bf5ae44f3949428c778f1df9
-ms.sourcegitcommit: b281ac04157f6ccbd159fc89f58910b430a3b6a9
+ms.openlocfilehash: 5dc6a38b1a9eebdee64762671bb501e5e1294399
+ms.sourcegitcommit: e3f4dd2257a3255c2982f4fc7b72a1121275b88a
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "3826834"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4018265"
 ---
 # <a name="set-up-an-external-catalog-for-punchout-e-procurement"></a>Definere en ekstern katalog for PunchOut e-Procurement
 
@@ -46,7 +46,7 @@ Den eksterne katalogen skal kunne omdirigere en ansatt som legger inn en innkjø
 3. Kontroller at måleenhetene og valutaen som leverandøren bruker, er konfigurert. Hvis du vil ha informasjon om hvordan du oppretter en måleenhet, se [Administrere måleenheter](../pim/tasks/manage-unit-measure.md).
 4. Konfigurer den eksterne leverandørkatalogen ved hjelp av kravene til leverandørens eksterne katalogområde. Hvis du vil ha mer informasjon om denne oppgaven, kan du se [Konfigurere den eksterne leverandørkatalogen](#configure-the-external-vendor-catalog).
 5. Test konfigurasjonene for leverandørens eksterne katalog for å kontrollere at innstillingene er gyldige og at du har tilgang til leverandørens eksterne katalog. Bruk handlingen **Valider innstillinger** til å validere meldingen du har definert for oppsettforespørsel. Denne meldingen skal få leverandørens eksterne katalogområde til å åpnes i et nettleservindu. Under validering, kan du ikke bestille varer og tjenester fra leverandøren. For å bestille varer og tjenester, må du åpne leverandørens katalog fra en innkjøpsrekvisisjon.
-6. Aktiver den eksterne katalogen ved hjelp av **Aktiver katalog**-knappen på **Eksterne kataloger**-siden. Den eksterne katalogen må aktiveres før ansatte kan bruke den. Du kan deaktivere den eksterne katalogen når som helst.
+6. Aktiver den eksterne katalogen ved hjelp av **Aktiver katalog** -knappen på **Eksterne kataloger** -siden. Den eksterne katalogen må aktiveres før ansatte kan bruke den. Du kan deaktivere den eksterne katalogen når som helst.
 
 
 ## <a name="configure-the-external-vendor-catalog"></a>Konfigurere den eksterne leverandørkatalogen
@@ -56,7 +56,7 @@ Denne delen gir mer informasjon om oppgave 4 i forrige del.
 1. Skriv inn et navn og en beskrivelse for leverandørens eksterne katalog. Navnet du angir, vises i handlekurven som representerer den eksterne katalogen som vises til ansatte som oppretter en rekvisisjon. Ansatte kan klikke handlekurven for å åpne katalogen på leverandørens eksterne katalogområde.
 2. Legg til et bilde ved hjelp av handlingen **Bilde av ekstern katalog**. Bidet vises i handlekurven som representerer den eksterne katalogen som vises til ansatte som oppretter en rekvisisjon. Legg merke til at bildets bredde og høyde må være lik. Hvis ikke vises bildet ikke på riktig måte.
 3. Velg om nettstedet for leverandørens eksterne katalog skal vises i samme webleservindu som vinduet hvor den ansatte har opprettet rekvisisjonen, eller om det skal åpnes i et nytt vindu.
-4. Velg leverandøren for katalogen. I **juridiske enheter**-listen er det en rad for hver juridiske enhet der leverandøren er definert. Hvis du vil tillate brukere å be om produkter direkte fra leverandørens katalog i noen juridiske enheter, men ikke andre, kan du bruke **Hindre tilgang**- eller **Tillat tilgang**-knappen for hver juridiske enhet der du vil at katalogen skal, eller ikke skal, være tilgjengelig.
+4. Velg leverandøren for katalogen. I **juridiske enheter** -listen er det en rad for hver juridiske enhet der leverandøren er definert. Hvis du vil tillate brukere å be om produkter direkte fra leverandørens katalog i noen juridiske enheter, men ikke andre, kan du bruke **Hindre tilgang** - eller **Tillat tilgang** -knappen for hver juridiske enhet der du vil at katalogen skal, eller ikke skal, være tilgjengelig.
 5. I feltet **Standard utløp (dager)** angir du antallet dager som et tilbud mottatt fra den eksterne katalogen, er gyldig og kan brukes til innkjøp fra den eksterne leverandøren. Når et tilbud opprettes og hentes fra leverandørens eksterne katalogområde, er tilbudet gyldig i henhold til den gjeldende systemdatoen og forblir gyldig i antallet dager du angir i dette feltet.
 6. Klikk **Legg til** for å starte tilordning av innkjøpskategoriene til den eksterne katalogen. Velg deretter en kategori i kategorinavn-listen. Listen over kategorier er et overordnet sett innkjøpskategorier som leverandøren er tilordnet til i alle juridiske enheter som er definert for leverandøren.
 
@@ -86,7 +86,7 @@ Nedenfor finner du en beskrivelse av kodene som er inkludert i malen:
 ### <a name="extrinsic-elements"></a>Eksterne elementer
 
 Et eksternt element er tilleggsinformasjon, for eksempel et brukernavn som er basert på en bruker som stempler seg ut. Det eksterne elementet er satt når utstempling oppstår, og det kan sendes i oppsettmeldingen for forespørsel.
-Leverandøren kan ha behov for å motta et eksternt element i oppsettforespørselen. I så fall bør du legge til det eksterne elementet i listen over eksterne elementer i **Meldingsformat**-delen av **Ekstern katalog**-siden.
+Leverandøren kan ha behov for å motta et eksternt element i oppsettforespørselen. I så fall bør du legge til det eksterne elementet i listen over eksterne elementer i **Meldingsformat** -delen av **Ekstern katalog** -siden.
 Angi et navn for det eksterne elementet som leverandøren kan kjenne igjen, og tilordne det til en verdi. Alternativene for verdier er: brukernavn, en brukers e-postadresse eller tilfeldig verdi.
 Hvis du vil ha mer informasjon om cXML-protokollen, se [cXML.org-nettsiden](http://cxml.org/).
 

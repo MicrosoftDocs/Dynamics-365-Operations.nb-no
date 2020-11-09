@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: rhaertle
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: d45b19c1e88e6a27bde4335d4a356f2173bdfcd3
-ms.sourcegitcommit: e06da171b9cba8163893e30244c52a9ce0901146
+ms.openlocfilehash: 82bdcc71196c22689cc65601f98187aaa9e5e9d6
+ms.sourcegitcommit: 0a741b131ed71f6345d4219a47cf5f71fec6744b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "3275423"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "3997308"
 ---
 # <a name="troubleshoot-live-synchronization-issues"></a>Feilsøke problemer med direkte synkronisering
 
@@ -58,7 +57,7 @@ Hvis du vil løse problemet, må du kontrollere at de nødvendige referansedatae
 Hvis det finnes data på begge sider, og du har bekreftet at problemet ikke er relatert til data, følger du denne fremgangsmåten.
 
 1. Stopp den tilknyttede enheten.
-2. Logg deg på Finance and Operations-appen, og kontroller at det finnes poster for enheten som ikke fungerer, i DualWriteProjectConfiguration- og DualWriteProjectFieldConfiguration-tabellen. Spørringen ser for eksempel slik ut som hvis **Kundenr**-enheten mislykkes.
+2. Logg deg på Finance and Operations-appen, og kontroller at det finnes poster for enheten som ikke fungerer, i DualWriteProjectConfiguration- og DualWriteProjectFieldConfiguration-tabellen. Spørringen ser for eksempel slik ut som hvis **Kundenr** -enheten mislykkes.
 
     ```sql
     Select projectname, externalenvironmentURL ,\* 
@@ -67,7 +66,7 @@ Hvis det finnes data på begge sider, og du har bekreftet at problemet ikke er r
         EXTERNALENTITYNAME = 'accounts' 
     ```
 
-3. Hvis det finnes poster for enheten som mislyktes, selv etter at du har stoppet enhetstilordningen, sletter du postene som er relatert til enheten som ikke fungerer. Noter deg **projectname**-kolonnen i DualWriteProjectConfiguration-tabellen, og hent posten i DualWriteProjectFieldConfiguration-tabellen ved hjelp av prosjektnavnet for å slette posten.
+3. Hvis det finnes poster for enheten som mislyktes, selv etter at du har stoppet enhetstilordningen, sletter du postene som er relatert til enheten som ikke fungerer. Noter deg **projectname** -kolonnen i DualWriteProjectConfiguration-tabellen, og hent posten i DualWriteProjectFieldConfiguration-tabellen ved hjelp av prosjektnavnet for å slette posten.
 4. Start enhetstilordningen. Valider om dataene er synkronisert uten problemer.
 
 ## <a name="handle-read-or-write-privilege-errors-when-you-create-data-in-a-finance-and-operations-app"></a>Håndtere lese- eller skrivetilgangsfeil når du oppretter data i en Finance and Operations-app
@@ -82,7 +81,7 @@ Hvis du vil løse problemet, må du tilordne den riktige sikkerhetsrollen til te
 
     ![Organisasjonstilordning](media/mapped_business_unit.png)
 
-2. Logg deg på miljøet i den modelldrevne appen i Dynamics 365, naviger til **Innstilling \> Sikkerhet**, og finn teamet til den tilordnede forretningsenheten.
+2. Logg deg på miljøet i den modelldrevne appen i Dynamics 365, naviger til **Innstilling \> Sikkerhet** , og finn teamet til den tilordnede forretningsenheten.
 
     ![Team til den tilordnede forretningsenheten](media/setting_security_page.png)
 
@@ -98,7 +97,7 @@ Hvis du vil løse problemet, må du tilordne den riktige sikkerhetsrollen til te
 
 Du kan få følgende feilmelding når du oppretter data i en Finance and Operations-app:
 
-*{"entityName":"CustCustomerV3Entity","executionStatus":2,"fieldResponses":\[\],"recordResponses":\[{"errorMessage":"**Kan ikke generere nyttelast for enhet CustCustomerV3Entity**","logDateTime":"2019-08-27T18:51:52.5843124Z","verboseError":"Oppretting av nyttelast mislyktes med feilen Ugyldig URI: URI-en er tom."}\],"isErrorCountUpdated":true}*
+*{"entityName":"CustCustomerV3Entity","executionStatus":2,"fieldResponses":\[\],"recordResponses":\[{"errorMessage":" **Kan ikke generere nyttelast for enhet CustCustomerV3Entity** ","logDateTime":"2019-08-27T18:51:52.5843124Z","verboseError":"Oppretting av nyttelast mislyktes med feilen Ugyldig URI: URI-en er tom."}\],"isErrorCountUpdated":true}*
 
 Slik ser feilen ut i den modelldrevne appen i Dynamics 365:
 
@@ -124,5 +123,5 @@ Følg fremgangsmåten nedenfor for å løse problemet.
     where projectname = <project name from previous query>
     ```
 
-3. Kontroller at **externalenvironmentURL**-kolonnen har riktig Common Data Service- eller app-URL-adresse. Slett eventuelle duplikate poster som peker til feil Common Data Service-URL-adresse. Slett de tilsvarende postene i DUALWRITEPROJECTFIELDCONFIGURATION- og DUALWRITEPROJECTCONFIGURATION-tabellen.
+3. Kontroller at **externalenvironmentURL** -kolonnen har riktig Common Data Service- eller app-URL-adresse. Slett eventuelle duplikate poster som peker til feil Common Data Service-URL-adresse. Slett de tilsvarende postene i DUALWRITEPROJECTFIELDCONFIGURATION- og DUALWRITEPROJECTCONFIGURATION-tabellen.
 4. Stopp enhetstilordningen, og start den deretter på nytt

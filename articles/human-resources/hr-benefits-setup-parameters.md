@@ -2,7 +2,7 @@
 title: Angi parametere i Fordelsbehandling
 description: Konfigurer parametere for Fordelsadministrasjon i Microsoft Dynamics 365 Human Resources.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 07/16/2020
 ms.topic: article
 ms.prod: ''
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 85bbe5d3b422f2f29f1d1fe8ee269b407da691c2
-ms.sourcegitcommit: 9dc5c7dd5877cc6e7cd0059d173bcd8052ba13bc
+ms.openlocfilehash: cb9dd6eb8ef840dab54eabab8526200a3a8e21f0
+ms.sourcegitcommit: e100c1c7c8dcdacf066defc206dd2f44b8ce6100
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 07/16/2020
-ms.locfileid: "3599362"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "4057034"
 ---
 # <a name="set-benefits-management-parameters"></a>Angi parametere for fordelsbehandling
 
@@ -31,7 +31,7 @@ Før du kan definere permisjonsplaner i Microsoft Dynamics 365 Human Resources, 
 
 ## <a name="configure-general-parameters"></a>Konfigurere generelle parametere
 
-1. I arbeidsområdet **Fordelsbehandling**, under **Oppsett**, velger du **Delte parametere for personaladministrasjon**.
+1. I arbeidsområdet **Fordelsbehandling** , under **Oppsett** , velger du **Delte parametere for personaladministrasjon**.
 
 2. I kategorien **Generelt** angir du verdier for følgende felt:
 
@@ -54,11 +54,11 @@ Før du kan definere permisjonsplaner i Microsoft Dynamics 365 Human Resources, 
 
 ## <a name="configure-employee-self-service-parameters"></a>Konfigurere parametere for ansattselvbetjening
 
-1. I arbeidsområdet **Fordelsbehandling**, under **Oppsett**, velger du **Parametere for Human Resources**.
+1. I arbeidsområdet **Fordelsbehandling** , under **Oppsett** , velger du **Parametere for Human Resources**.
 
-2. I kategorien **Ansattselvbetjening** angir du verdier for følgende felt:
+2. I kategorien **Fordelsbehandling** angir du verdier for følgende felt:
 
-   | Felt | Beskrivelse |
+   | Felt | beskrivelse |
    | --- | --- |
    | **Fordelsbekreftelse** | Bekreftelsesteksten som skal brukes i forbindelse med utsjekking av selvbetjeningsfordeler. |
    | **Velg utpekte personer automatisk** | Angir om avhengige og mottakere skal velges automatisk basert, på rettighetene for planalternativer. |

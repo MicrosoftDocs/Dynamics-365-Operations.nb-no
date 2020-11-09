@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 982fbef1af504ad70aa0e7c4ecf19f09fb599d16
-ms.sourcegitcommit: ebb110b0b73c99929636d26811a6f9c186080ddb
+ms.openlocfilehash: 1a69e262c1dc731839e0bf347a0fb14983742dbe
+ms.sourcegitcommit: 361050bed5e0feabd370d225ec70784fc1933258
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/05/2020
-ms.locfileid: "3962526"
+ms.lasthandoff: 10/15/2020
+ms.locfileid: "4013186"
 ---
 # <a name="keyboard-shortcuts"></a>Hurtigtaster
 
@@ -37,7 +37,7 @@ Noen av snarveiene på denne siden er *nøkkelkombinasjoner* , noe som betyr at 
 
 ## <a name="finding-a-shortcut"></a>Finne en hurtigtast
 
-Fra og med plattformoppdatering 11 kan brukere finne hurtigtaster som er tilgjengelige for øyeblikket, direkte i brukergrensesnittet. Høyreklikk på en kontroll, og velg **Vis snarveier** . Da åpnes en dialogboks som viser hurtigtastene du kan bruke, avhengig av hvor du er på siden.
+Fra og med plattformoppdatering 11 kan brukere finne hurtigtaster som er tilgjengelige for øyeblikket, direkte i brukergrensesnittet. Høyreklikk på en kontroll, og velg **Vis snarveier**. Da åpnes en dialogboks som viser hurtigtastene du kan bruke, avhengig av hvor du er på siden.
 
 ## <a name="action-shortcuts"></a>Handlingssnarveier
 
@@ -239,7 +239,7 @@ Fra og med plattformoppdatering 11 kan brukere finne hurtigtaster som er tilgjen
 | Gå opp/ned en side i oppslaget                                                                                       | Side opp / Side ned              |
 | Gå til toppen/bunnen av oppslaget                                                                                    | Home / End                       |
 
-## <a name="task-recordershortcuts"></a>Snarveier for [Oppgaveregistrering](../../dev-itpro/user-interface/task-recorder.md) 
+## <a name="task-recorder-shortcuts"></a>Snarveier for [Oppgaveregistrering](../../dev-itpro/user-interface/task-recorder.md) 
 
 | Hvis du vil gjøre dette                                                                    | Trykk                       |
 |-------------------------------------------------------------------------------|----------------------------|

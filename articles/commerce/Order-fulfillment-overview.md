@@ -17,12 +17,12 @@ ms.search.industry: retail
 ms.author: rubendel
 ms.search.validFrom: 2017-10-30
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: fb535b1f20d97042e6205b680de1cc687350f071
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.openlocfilehash: 68132a78921e0a38c61c85bcc2b89dca3c25b04e
+ms.sourcegitcommit: 776758a0ff95c3c7398986095104d1d2b9814514
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3975153"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "4107213"
 ---
 # <a name="store-order-fulfillment"></a>Butikkordreoppfyllelse
 
@@ -64,7 +64,7 @@ Hvis flere linjer er valgt, angir bare ordrelinjeundermenyen at flere linjer er 
 
 ## <a name="pending-order-lines"></a>Ventende ordrelinjer
 
-Samlet ordreoppfyllelse inkluderer muligheten til å godta ordrer manuelt. Som standard er ordrer for oppfyllelse i butikken allerede godtatt. Hvis imidlertid forretningsprosesser angir at en arbeider på butikknivå må godta ordrer, kan manuell godkjenning aktiveres på detaljhandelsnivå. Hvis du vil aktivere ordregodkjenning, kan du gå til **Retail og Commerce** \> **Kanaler** \> **Butikker** \> **Alle butikker** . Åpne ønsket butikk og i **Generell** -kategorien finner du **Ordreoppfyllelse** -underhodet. Denne underoverskriften har alternativet **Godta manuelt** som er satt til **Nei** som standard. Ved å angi dette alternativet til **Ja** og synkronisere endringene til kanaldatabasen, kan ordrelinjer gå gjennom godkjenningsprosessen.
+Samlet ordreoppfyllelse inkluderer muligheten til å godta ordrer manuelt. Som standard er ordrer for oppfyllelse i butikken allerede godtatt. Hvis imidlertid forretningsprosesser angir at en arbeider på butikknivå må godta ordrer, kan manuell godkjenning aktiveres på detaljhandelsnivå. Hvis du vil aktivere ordregodkjenning, kan du gå til **Retail og Commerce** \> **Kanaler** \> **Butikker** \> **Alle butikker**. Åpne ønsket butikk og i **Generell** -kategorien finner du **Ordreoppfyllelse** -underhodet. Denne underoverskriften har alternativet **Godta manuelt** som er satt til **Nei** som standard. Ved å angi dette alternativet til **Ja** og synkronisere endringene til kanaldatabasen, kan ordrelinjer gå gjennom godkjenningsprosessen.
 
 Ansatte med **Tillat godkjenning av ordre** -tillatelsen kan åpne ordreoppfyllelse og velge linjer for godkjenning. Når linjene er godkjent, endre deres status fra **Ventende** til **Godkjent** , og resten av fullføringen ordreprosessen kan utføres. Når **Godta manuelt** er slått på, behandles ikke ordrene før de har blitt godkjent.
 
@@ -87,7 +87,7 @@ For eksempel, en godkjent ordrelinje kan velges og deretter plukkes direkte uten
 - **Resulterende salgsstedsstatus:** Plukking
 - **Resulterende back office-status:** Ingen endring
 
-Når en ordre er godtatt, kan linjer velges og merkes som **Plukking** . Å merke en linje som **Plukking** er en måte å vise at plukkarbeidet allerede utføres på en linje. Dette hindrer at to arbeidere forsøker å plukke de samme ordrelinjene samtidig.
+Når en ordre er godtatt, kan linjer velges og merkes som **Plukking**. Å merke en linje som **Plukking** er en måte å vise at plukkarbeidet allerede utføres på en linje. Dette hindrer at to arbeidere forsøker å plukke de samme ordrelinjene samtidig.
 
 **Handling: Skriv ut plukkliste**
 
@@ -105,13 +105,13 @@ Hvis linjene er valgt, og en plukkliste skrives ut for disse linjene, oppdateres
 - **Resulterende status:** Plukket eller delvis plukket
 - **Resulterende back office-status:** Plukket eller delvis plukket
 
-Etter at den fysiske plukkprosessen er utført, kan linjer merkes med **Plukket** . Å velge en linje og merke den som **Plukket** utfører et sanntidskall for å oppdatere ordrelinjen. Etter at linjen er merket som **Plukket** på salgsstedet, oppdateres også statusen i back office til **Plukket** og lagertransaksjoner reflekterer at det angitte antallet er redusert.
+Etter at den fysiske plukkprosessen er utført, kan linjer merkes med **Plukket**. Å velge en linje og merke den som **Plukket** utfører et sanntidskall for å oppdatere ordrelinjen. Etter at linjen er merket som **Plukket** på salgsstedet, oppdateres også statusen i back office til **Plukket** og lagertransaksjoner reflekterer at det angitte antallet er redusert.
 
-Når ordrer behandles over tid, kan delvise antall behandles for en bestemt linje. Hvis en linje er merket og handlingen **Merk som plukket** er tatt, og antallet er større enn 1, blir brukeren bedt om antallet. Det gjenværende antallet som skal plukkes, fylles ut automatisk. Hvis mindre enn restantallet er angitt, blir statusen for linjen **Delvis plukket** . Når ordrelinjen oppdateres i back office, vil den også gjenspeile delvis plukket-statusen, og antallet som er angitt av brukeren, brukes for lageroppdateringen.
+Når ordrer behandles over tid, kan delvise antall behandles for en bestemt linje. Hvis en linje er merket og handlingen **Merk som plukket** er tatt, og antallet er større enn 1, blir brukeren bedt om antallet. Det gjenværende antallet som skal plukkes, fylles ut automatisk. Hvis mindre enn restantallet er angitt, blir statusen for linjen **Delvis plukket**. Når ordrelinjen oppdateres i back office, vil den også gjenspeile delvis plukket-statusen, og antallet som er angitt av brukeren, brukes for lageroppdateringen.
 
 Hvis en ordrelinje blir plukket ved en feiltakelse, kan prosessen for å legge tilbake utføres på ordrelinjen i back office. Det er for øyeblikket ingen handling for å legge tilbake som støttes, på salgsstedet.
 
-Ordrelinjer fra forskjellige ordrer kan velges og merkes som **Plukking** , skrives ut på samme plukkliste eller merkes som **Plukket** .
+Ordrelinjer fra forskjellige ordrer kan velges og merkes som **Plukking** , skrives ut på samme plukkliste eller merkes som **Plukket**.
 
 ### <a name="pack"></a>Pakke
 
@@ -192,15 +192,15 @@ Vi fortsetter med eksemplet ovenfor: hvis 200 bord merkes som pakket og levering
 
 ## <a name="line-statuses"></a>Linjestatuser
 
-Ordrelinjer i salgsstedet har flere statuser for å vise tilstanden for ordrelinjen. Statusene i salgsstedet og back office samsvarer ikke i alle tilfeller. Ordrelinjestatus kan vises via salgsstedet med ordreoppfyllelsesoperasjonene. I back office kan du vise ordrelinjene fra ordredetaljene. Ordredetaljer kan nås via **Retail og Commerce** \> **Kunder** \> **Alle kundeordrer** . Velg **Ordre-ID** for å vise ordredetaljer. Fra ordredetaljer velger du **Salgsordre** -kategorien, og velger deretter **Detaljert status** under **Vis** -underoverskriften.
+Ordrelinjer i salgsstedet har flere statuser for å vise tilstanden for ordrelinjen. Statusene i salgsstedet og back office samsvarer ikke i alle tilfeller. Ordrelinjestatus kan vises via salgsstedet med ordreoppfyllelsesoperasjonene. I back office kan du vise ordrelinjene fra ordredetaljene. Ordredetaljer kan nås via **Retail og Commerce** \> **Kunder** \> **Alle kundeordrer**. Velg **Ordre-ID** for å vise ordredetaljer. Fra ordredetaljer velger du **Salgsordre** -kategorien, og velger deretter **Detaljert status** under **Vis** -underoverskriften.
 
 - **Ventende** – Ordrelinjer som er tilordnet til en butikk, men ennå ikke godkjent, har **Ventende** -status når de vises på salgsstedet. Linjer som venter på godkjenning på salgsstedet, får **Ordrebehandling** statusen i back office.
 - **Godkjent** – Ordelinjer som er godkjent manuelt eller automatisk godkjent, får statusen **Godkjent** når de vises på salgsstedet. Linjer med **Godkjent** -status vises som **Ordrebehandling** i back office.
-- **Plukking** – Linjer som for øyeblikket blir plukket på butikknivå, har statusen **Plukking** . De samme linjene, når de vises i back office, vises som **Ordrebehandling** .
-- **Plukket** og **Delvis plukket** – Linjer som er plukket eller delvis plukket på salgsstedet, får statusen **Plukket** eller **Delvis plukket** . De samme linjene i back office vises også som **Plukket** eller **Delvis plukket** .
-- **Pakket** og **Delvis pakket** – Linjer som er pakket eller delvis pakket på salgsstedet, får statusen **Pakket** eller **Delvis pakket** . De samme linjene i back office vises også som **Levert** eller **Delvis levert** .
+- **Plukking** – Linjer som for øyeblikket blir plukket på butikknivå, har statusen **Plukking**. De samme linjene, når de vises i back office, vises som **Ordrebehandling**.
+- **Plukket** og **Delvis plukket** – Linjer som er plukket eller delvis plukket på salgsstedet, får statusen **Plukket** eller **Delvis plukket**. De samme linjene i back office vises også som **Plukket** eller **Delvis plukket**.
+- **Pakket** og **Delvis pakket** – Linjer som er pakket eller delvis pakket på salgsstedet, får statusen **Pakket** eller **Delvis pakket**. De samme linjene i back office vises også som **Levert** eller **Delvis levert**.
 - **Delvis fakturert** – Linjene som er delvis plukket eller delvis levert, får statusen **Delvis fakturert** på salgsstedet og i back office.
-- **Fakturert** – Linjer som er fullstendig fakturert på salgsstedet, vises ikke lenger for oppfyllelse. Status for disse linjene i back office er **Fakturert** .
+- **Fakturert** – Linjer som er fullstendig fakturert på salgsstedet, vises ikke lenger for oppfyllelse. Status for disse linjene i back office er **Fakturert**.
 
 ## <a name="order-fulfillment-filtering"></a>Ordreoppfyllelsesfiltrering
 
