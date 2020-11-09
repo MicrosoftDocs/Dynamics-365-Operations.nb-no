@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: ''
+ms.search.form: WHSWorkProcessingPolicy, WHSWorkDeferredPutProcessingTask
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2019-6-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: d274eae4ad3ba60eadb18ca8de22d4b2d10fe727
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: cc8321c55bc867db065af0cddf356fb497a956e8
+ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3205696"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4016707"
 ---
 # <a name="deferred-processing-of-warehouse-work"></a>Utsatt behandling av lagerarbeid
 
@@ -44,7 +44,7 @@ Policyer konfigureres på siden **Arbeidsbehandlingspolicyer**. Følgende tabell
 | Navn på arbeidsbehandlingspolicy     | Navnet på arbeidsbehandlingspolicyen. |
 | Arbeidsordretype                 | Arbeidsordretypen som policyen gjelder for. |
 | Operasjon                       | Operasjonen som behandles ved hjelp av policyen. |
-| Arbeidsbehandlingsmetode          | Metoden som brukes til å behandle arbeidslinjen. Hvis metoden er satt til **Umiddelbar**, ligner virkemåten når ingen arbeidsbehandlingspolicyer brukes til å behandle linjen. Hvis metoden er satt til **Utsatt**, brukes utsatt behandling som bruker det satsvise rammeverket. |
+| Arbeidsbehandlingsmetode          | Metoden som brukes til å behandle arbeidslinjen. Hvis metoden er satt til **Umiddelbar** , ligner virkemåten når ingen arbeidsbehandlingspolicyer brukes til å behandle linjen. Hvis metoden er satt til **Utsatt** , brukes utsatt behandling som bruker det satsvise rammeverket. |
 | Terskel for utsatt behandling   | Verdien **0** (null) angir at det finnes ikke noen terskel. I dette tilfellet brukes utsatt behandling hvis den kan brukes. Hvis den spesifikke terskelberegningen er under terskelen, brukes den umiddelbare metoden. Ellers brukes den utsatte metoden hvis den kan brukes. For salgs- og overføringsrelatert arbeid beregnes terskelen som antall tilknyttede kildelastlinjer som behandles for arbeidet. For etterfyllingsarbeid beregnes terskelen som antall arbeidslinjer som etterfylles av arbeidet. Ved å angi en terskel på, for eksempel **5** for salg, vil mindre arbeid som har færre enn fem første kildelastlinjer, ikke bruke utsatt behandling, men større arbeide vil bruke den. Terskelen har bare en effekt hvis metoden for arbeidsbehandling er satt til **Utsatt**. |
 | Satsvis gruppe for utsatt behandling |Den satsvise gruppen som brukes for behandling. |
 
@@ -68,7 +68,7 @@ Som standard vises **fullførte** oppgaver.
 Her er en forklaring av de mulige statusene:
 
 - **Venter** – den relaterte satsvise jobben venter på behandling på den satsvise serveren.
-- **Mislyktes** – behandlingen mislyktes. Aktiviteten kan behandlesp på nytt ved hjelp av handlingen **Behandle utsatt plassering**, eller den kan avbrytes ved hjelp av handlingen **Avbryt utsatt plassering**.
+- **Mislyktes** – behandlingen mislyktes. Aktiviteten kan behandlesp på nytt ved hjelp av handlingen **Behandle utsatt plassering** , eller den kan avbrytes ved hjelp av handlingen **Avbryt utsatt plassering**.
 - **Fullført** – jobben ble fullført.
 
 ## <a name="impact-on-closed-work-dates"></a>Innvirkning på lukkede arbeidsdatoer
@@ -105,7 +105,7 @@ Det er flere scenarioer der utsatt plasseringsbehandling ikke brukes, selv om po
 Arbeidsområdet **Overvåking av utgående arbeid** har to fliser som hjelper deg med å overvåke utsatte plasseringsoppgaver:
 
 - **Mislykkede utsatte plasseringsoppgaver** – denne flisen viser antall mislykkede oppgaver. Hvis det finnes mislykkede oppgaver, må lagerlederen enten behandle dem på nytt eller avbryte dem, fordi de ikke blir behandles automatisk.
-- **Ventende utsatte plasseringsoppgaver** -denne flisen viser antall oppgaver som har vært i **Venter**-status i mer enn 10 minutter. Hvis flisen viser et tall, kan det tyde på at det oppstod et problem under den satsvise behandlingen. Du kan behandle **ventende** oppgaver manuelt. Hvis den satsvise jobben for en oppgave behandles senere, vil den bare mislykkes fordi den allerede er behandlet. Det blir ingen innvirkning.
+- **Ventende utsatte plasseringsoppgaver** -denne flisen viser antall oppgaver som har vært i **Venter** -status i mer enn 10 minutter. Hvis flisen viser et tall, kan det tyde på at det oppstod et problem under den satsvise behandlingen. Du kan behandle **ventende** oppgaver manuelt. Hvis den satsvise jobben for en oppgave behandles senere, vil den bare mislykkes fordi den allerede er behandlet. Det blir ingen innvirkning.
 
 ## <a name="deleting-completed-tasks"></a>Slette fullførte oppgaver
 

@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: ConsignmentProductReceiptLines, ConsignmentVendorPortalOnHand, PurchVendorPortalConfirmedOrders, PurchVendorPortalOriginalOrder, PurchVendorPortalResponsesHistoryList, PurchVendorPortalResponsesPart
+ms.search.form: ConsignmentProductReceiptLines, ConsignmentVendorPortalOnHand, PurchVendorPortalConfirmedOrders, PurchVendorPortalOriginalOrder, PurchVendorPortalResponsesHistoryList, PurchVendorPortalResponsesPart, VendVendorProfileCard, PurchVendorPortalAllResponse, PurchVendorPortalPendingResponsesPart, PurchVendorPortalResponses, PurchVendorPortalConfirmedOpenOrdersPart
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 240fdfb3519e1c4526c46fa3d5e3fbaa8e5a467e
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 540f4f4e4a047b5bc33c9be387c8940175f5f919
+ms.sourcegitcommit: e3f4dd2257a3255c2982f4fc7b72a1121275b88a
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3207353"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4018167"
 ---
 # <a name="vendor-collaboration-with-customers"></a>Leverandørsamarbeid med kunder
 
@@ -42,7 +42,7 @@ Leverandører kan også overvåke informasjon om forsendelseslager.
 
 I arbeidsområdet **Bestillingsbekreftelse** kan du svare på bestillingene som er sendt til deg for gjennomgang. Du kan også vise informasjon om bestillinger som venter på handling fra kunden og bestillinger som er bekreftet, men fremdeles er åpne.
 
-Det er tre lister i arbeidsområdet **Bestillingsbekreftelsen**:
+Det er tre lister i arbeidsområdet **Bestillingsbekreftelsen** :
 
 - **Bestillinger for vurdering** – Denne listen viser bestillinger som er sendt til deg og venter på svar fra deg. Når du har svart, forsvinner bestillingen fra listen. Hvis kunden sender deg en ny versjon av bestillingen før du har svart på den forrige versjonen, vises bare den nyeste versjonen.
 - **Venter på kundehandling** – Denne listen inneholder alle bestillinger som du har svart på, men som kunden ennå ikke har bekreftet. Hvis du godtar en bestilling, kan du overvåke den i denne listen til statusen er endret til **Bekreftet**. Hvis du avviser en bestilling eller godtar den med endringer, kan du overvåke den her til kunden sender en ny versjon.
@@ -59,13 +59,13 @@ Du kan bruke følgende sider til å arbeide med bestillinger:
 
 Bestillingene som kunden sender til deg for gjennomgang, vises i arbeidsområdet **Bestillingsbekreftelse** og på siden **Bestillinger for vurdering**. Når du har åpnet en bestilling, kan du godta den, avvise den eller godta den med endringer. Det kan være vedlegg i bestillingshodet eller på de enkelte linjene. Du kan også legge til informasjon i svaret på bestillingshodet eller enkeltlinjer. Du kan for eksempel foreslå en erstatningsvare for én av linjene.
 
-Du kan forhåndsvise og skrive ut bestillingen som en PDF-fil ved hjelp av alternativet **Forhåndsvis/Skriv ut**. Du kan bruke handlingen **Visningsdimensjoner** til å vise eller skjule følgende dimensjonskolonner: **Område**, **Lager**, **Farge**, **Størrelse**, **Stil** og **Konfigurasjon**. 
+Du kan forhåndsvise og skrive ut bestillingen som en PDF-fil ved hjelp av alternativet **Forhåndsvis/Skriv ut**. Du kan bruke handlingen **Visningsdimensjoner** til å vise eller skjule følgende dimensjonskolonner: **Område** , **Lager** , **Farge** , **Størrelse** , **Stil** og **Konfigurasjon**. 
 
-Hvis du bruker alternativet **Godta med endringer**, kan du godta eller avvise enkeltlinjer. Du kan også foreta følgende endringer i linjer:
+Hvis du bruker alternativet **Godta med endringer** , kan du godta eller avvise enkeltlinjer. Du kan også foreta følgende endringer i linjer:
 
 - Endre datoer eller antall. Hvis du vil oppdatere den bekreftede leveringsdatoen på alle linjene, kan du bruke alternativet **Oppdater leveringsdato** i bestillingshodet.
 - Dele linjer for ulike leveringsdatoer eller antall.
-- Erstatte en vare. Under **Linjedetaljer** angir du en varebeskrivelse og varenummeret i **Ekstern**-feltet.
+- Erstatte en vare. Under **Linjedetaljer** angir du en varebeskrivelse og varenummeret i **Ekstern** -feltet.
 
 Du kan ikke endre prisinformasjon eller gebyrer, men du kan bruke merknader til å komme med forslag for disse endringene.
 
@@ -124,13 +124,13 @@ Personer som arbeider i offentlig sektor, kan se åpne og utløpte tilbudsforesp
 - Velg **Tilbakestill fra tilbudsforespørsel** for å tilbakestille dataene du angav for et bud og gå tilbake til den opprinnelige tilbudsforespørselen. Du kan tilbakestille hodet eller linjen.
 - Velg **Legg til alternativ** eller **Fjern alternativ** i rutenettet for å arbeide med alternativer.
 
-    Noen tilbudsforespørsler tillater alternative bud. Du kan angi alternative bud bare for linjer av typen **Kategori**, fordi enkelte varer ikke kan legges til som alternativer. 
+    Noen tilbudsforespørsler tillater alternative bud. Du kan angi alternative bud bare for linjer av typen **Kategori** , fordi enkelte varer ikke kan legges til som alternativer. 
 
 - Velg **Vedlegg for tilbudsforespørsel** eller **Vedlegg for linjer i tilbudsforespørsel** for å åpne vedlegg som kunden har lagt til i en tilbudsforespørsel. Velg **Vedlegg i bud** eller **Vedlegg på budlinje** for å laste opp vedlegg sammen med budet.
 
     Det kan være spørreskjemaer som du må svare før du kan sende et bud.
 
-- Velg **Avslå** hvis du ikke vil by. Når du har valgt **Avslå**, kan du ikke kalle tilbake handlingen og angi et bud.
+- Velg **Avslå** hvis du ikke vil by. Når du har valgt **Avslå** , kan du ikke kalle tilbake handlingen og angi et bud.
 
 Hvis en tilbudsforespørsel er endret, må du angi et nytt bud. Du finner informasjon om endringen på fanen **Endringer** på siden for tilbudsforespørselen. Endrede tilbudsforespørsler vises på siden **Invitasjoner til nytt bud**.
 

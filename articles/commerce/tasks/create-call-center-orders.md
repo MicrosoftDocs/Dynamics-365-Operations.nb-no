@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 4ec10e0f79e4eca7f51ba48c679dcf6fe745eb29
-ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
+ms.openlocfilehash: dce2fdd9d91c2bd867f0455573733aefb0796fa7
+ms.sourcegitcommit: 776758a0ff95c3c7398986095104d1d2b9814514
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3141436"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "4107358"
 ---
 # <a name="create-call-center-orders"></a> Opprette telefonsenterordrer
 
@@ -30,29 +30,29 @@ ms.locfileid: "3141436"
 
 Denne prosedyren hjelper med å slå opp en kunde, opprette en ny ordre, søke etter et produkt og hente inn betaling fra kunden. Denne prosedyren bruker demonstrasjonsdatafirmaet USRT og er ment for selgere. Forhåndskrav: Brukeren som utfører prosedyren, er satt opp som telefonsenterbrukere og katalogen for Fabrikam annethvert år publiseres med minst én kildekode.
 
-1. Gå til Retail og Commerce > Kunder > Kundestøtte.
-2. Angi søkekriteriene for å slå opp kunden, i Søketekst-feltet.
-    * I denne eksempelprosedyren skriver du inn Karin og trykker TAB.  
-3. Klikk Søk.
+1. Gå til **Detaljhandel og handel \> Kunder \> Kundeservice**.
+2. Angi søkekriteriene for å slå opp kunden, for **Søketekst**.
+    * I denne eksempelprosedyren skriver du inn Karin og velger **Tab**.  
+3. Velg Søk.
     * Siden det bare finnes én kunde med navnet Karin i demonstrasjonsdataene, velges de automatisk.  
-4. Klikk Ny salgsordre.
-5. Vis eller skjul delen Salgsordrehode.
+4. Velg **Ny salgsordre**.
+5. Vis eller skjul delen **Salgsordre** -hode.
 6. Velg kildekoden for katalogen.
-    * Hvis det ikke finnes aktive kildekoder, kan du lukke Kilde-feltet og hoppe over dette trinnet.  
-7. Klikk Legg til linje.
-8. I Varenummer-feltet angir du varesøkeordet.
+    * Hvis det ikke finnes aktive kildekoder, kan du hoppe over dette trinnet.  
+7. Velg **Legg til linje**.
+8. For **Varenummer** angir du varesøkeordet.
     * I denne eksempelprosedyren angir du et delvis varenummer, 8111, og trykker TAB. Søkevinduet vil dermed vises.  
 9. Velg produktet som skal legges til salgsordren.
 10. Angi salgsantallet.
-11. Klikk Opprett.
-12. Klikk Fullfør for å registrere kundebetalingen.
-13. Klikk Legg til.
+11. Velg **Opprett**.
+12. Klikk **Fullfør** for å registrere kundebetalingen.
+13. Velg **Legg til**.
     * Koblingen Legg til er i Betalinger-fanen. Vis Betalinger-fanen hvis den er skjult.  
 14. Velg betalingsmåten.
     * Velg kontantbetalingsmåten for denne prosedyren.  
 15. Lukk siden.
 16. Angi beløpet.
     * I denne prosedyren angir du et beløp som er likt ordresaldoen som vises på sammendragssiden for salgsordren til venstre i beløpsfeltet. Dermed kan du fullføre ordren som fullt betalt.  
-17. Klikk OK.
-18. Klikk Send.
+17. Velg **OK**.
+18. Velg **Send**.
 

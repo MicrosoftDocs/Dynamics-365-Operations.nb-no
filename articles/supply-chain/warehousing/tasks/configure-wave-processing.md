@@ -8,7 +8,7 @@ ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: WHSWaveTemplateTable, InventLocationIdLookup, WHSParameters, ProdParameters
+ms.search.form: WHSWaveTemplateTable, InventLocationIdLookup, WHSParameters, ProdParameters, whswavetablecreatenew, WHSWaveTable, WHSWaveAttributes, WHSKanbanWaveTable, WHSWaveTableListPage, WHSKanbanWaveTableListPage
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -17,12 +17,12 @@ ms.search.industry: Distribution
 ms.author: mirzaab
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 73fb8b936fb3066557f3d556506ce29ef0d919ab
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: aa193f6d62613893f9d5da4351d43a810dbf1596
+ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3217178"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4017259"
 ---
 # <a name="configure-wave-processing"></a>Konfigurere bølgebehandling
 
@@ -34,7 +34,7 @@ Denne veiledningen beskriver hvordan du definerer vilkår som bestemmer hvilket 
 2. Klikk på **Ny**.
 3. Angi en verdi i feltet **Navn på bølgemal**. Når du definerer en bølgemal, kan du angi rekkefølgen for hvordan malene samsvares med frigitte linjene i salgsordrer, produksjonsordrer eller Kanbaner. Når en linje er frigitt til lageret eller til produksjon, brukes den første bølgemalen som den oppfyller kriteriene for. Vi anbefaler at du flytter malene med de mest spesifikke kriteriene øverst i listen. Jo bredere kriterier, desto mer sannsynlig er det at en linje oppfyller kriteriene, og dette kan føre til at linjer tilordnes til feil bølge.  
 4. Skriv inn en verdi i feltet **Beskrivelse av bølgemal**.
-5. Angi eller velg en verdi i **Område**-feltet. Hvis du bruker USMF, kan du velge område 2.  
+5. Angi eller velg en verdi i **Område** -feltet. Hvis du bruker USMF, kan du velge område 2.  
 6. Angi eller velg en verdi i feltet **Lager**. Hvis du bruker USMF, kan du velge lager 24.  
 7. Sett feltet **Automatisk oppretting av bølge** til **Ja**. Velg dette alternativet for å opprette en bølge automatisk når en salgsordre, produksjonsordre eller kanban frigis til lageret.  
 8. Sett alternativet **Behandle bølge ved frigivelse til lager** til **Ja**. Velg dette alternativet for å behandle bølgen og opprette arbeid automatisk når en linje frigis til lageret.  

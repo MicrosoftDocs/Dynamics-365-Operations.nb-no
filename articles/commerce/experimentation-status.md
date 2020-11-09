@@ -3,7 +3,7 @@ title: Se gjennom statusen for et eksperiment
 description: Dette emnet beskriver hvilken status et eksperiment har i livssyklusen for eksperimentering i Dynamics 365 Commerce.
 author: sushma-rao
 manager: AnnBe
-ms.date: 10/01/2020
+ms.date: 10/21/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -18,17 +18,17 @@ ms.search.industry: Retail
 ms.author: sushmar
 ms.search.validFrom: 2020-09-30
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 097206c0aa487e14499bdf3907465e17b7d337e2
-ms.sourcegitcommit: b6ab46f6e5ce60e2c3d70a348827eaf60c84cae2
+ms.openlocfilehash: eea67ddc1718902198b74614ee1a910fc6e29c1d
+ms.sourcegitcommit: 7592c2dec0428d56843ab395d2a52c89f77f99b5
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "3930257"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "4097076"
 ---
 # <a name="review-the-status-of-an-experiment"></a>Se gjennom statusen for et eksperiment
 Det er mange trinn i forbindelse med konfigurering og kjøring av et eksperiment i Dynamics 365 Commerce. Hvis du vil ha informasjon om livssyklusen for eksperimentering, kan du se [Eksperimentering i Dynamics 365 Commerce](experimentation-overview.md).
 
-Hvis du vil vite hvor et eksperimenter er i livssyklusen, kan du gå til kategorien **Eksperimenter** i områdebygger. En liste over eksperimenter vises med statusen for hvert eksperiment i både Commerce og tredjepartstjenesten som brukes til å gjøre det mulig å opprette eksperimenter, tilordne variasjoner og analysere data.
+Hvis du vil vite hvor et eksperimenter er i livssyklusen, velger du **Eksperimenter** i den venstre navisjonsruten i Commerce-områdebygger. En liste over eksperimenter vises med statusen for hvert eksperiment i både Commerce og tredjepartstjenesten som brukes til å gjøre det mulig å opprette eksperimenter, tilordne variasjoner og analysere data.
 
 I kolonnen **Commerce-status** kan du vise verdiene nedenfor. 
 - **Utkast** – Eksperimentet er koblet til en side eller et fragment i Commerce og redigeres.

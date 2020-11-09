@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: ''
+ms.search.form: WHSRFMenuItem,WHSWorkTemplateTable
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations, Supply Chain Management
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2019-12-31
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: 4b9cd7dac680c1691fb4c6dd4078f109254be784
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: b3497d43a500898207ed5154721ee0e3a327fb93
+ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3215605"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4017742"
 ---
 # <a name="pick-line-grouping"></a>Plukklinjegruppering
 
@@ -35,11 +35,11 @@ I plukklinjegruppering kan flere arbeidslinjer som har samme vare og lokasjon, k
 
 ### <a name="create-a-mobile-device-menu-item"></a>Opprette et menyelement for mobilenhet
 
-1. Gå til **Lagerstyrings \> Oppsett \> Mobilenhet \> Menyelementer på mobilenheten**, og opprett et nytt menyelement som heter **Linjeplukking for salgsgruppe – brukerstyrt**.
-2. Angi følgende verdier under **Menyelementer på mobilenheten**:
+1. Gå til **Lagerstyrings \> Oppsett \> Mobilenhet \> Menyelementer på mobilenheten** , og opprett et nytt menyelement som heter **Linjeplukking for salgsgruppe – brukerstyrt**.
+2. Angi følgende verdier under **Menyelementer på mobilenheten** :
 
-    - I **Menyelementnavn**-feltet angir du **Salgsplukking - gruppelinje**.
-    - I **Tittel**-feltet angir du **Salgsplukking - gruppelinje**.
+    - I **Menyelementnavn** -feltet angir du **Salgsplukking - gruppelinje**.
+    - I **Tittel** -feltet angir du **Salgsplukking - gruppelinje**.
     - Velg **Arbeid** i feltet **Modus**.
     - Angi alternativet **Bruk eksisterende arbeid** til **Ja**.
 
@@ -52,7 +52,7 @@ I plukklinjegruppering kan flere arbeidslinjer som har samme vare og lokasjon, k
 4. I hurtigfanen **Arbeidsklasser** følger du denne fremgangsmåten for å konfigurere gyldige arbeidsklasser for menyelementet for mobilenheten:
 
     1. Velg **Ny**.
-    2. I feltet **Arbeidsklasse-ID** velger du **Salg** eller **Salgsordreplukking**, avhengig av lageret du skal bruke.
+    2. I feltet **Arbeidsklasse-ID** velger du **Salg** eller **Salgsordreplukking** , avhengig av lageret du skal bruke.
     3. Velg **Salgsordrer** i feltet **Arbeidsordretype**.
 
 ### <a name="set-up-a-mobile-device-menu"></a>Definere en mobilenhetsmeny
@@ -65,10 +65,10 @@ I plukklinjegruppering kan flere arbeidslinjer som har samme vare og lokasjon, k
 1. Gå til **Lagerstyring \> Oppsett \> Arbeid \> Arbeidsmaler**.
 1. Finn arbeidsmalen som skal brukes med denne funksjonen. I dette eksemplet kan du velge standard Contoso-arbeidsmal **51 Plukk til trinn**.
 1. Velg **Rediger spørring** på menyen.
-1. Velg **Legg til** i kategorien **Sortering**, og angi deretter følgende verdier:
+1. Velg **Legg til** i kategorien **Sortering** , og angi deretter følgende verdier:
 
-    - I **Tabell**-feltet velger du **Midlertidige arbeidstransaksjoner**.
-    - I **Avledet tabell**-feltet velger du **Midlertidige arbeidstransaksjoner**.
+    - I **Tabell** -feltet velger du **Midlertidige arbeidstransaksjoner**.
+    - I **Avledet tabell** -feltet velger du **Midlertidige arbeidstransaksjoner**.
     - Velg **Varenummer** i feltet **Felt**.
     - I feltet **Søkeretning** velger du **Stigende**.
 
@@ -83,16 +83,16 @@ Før du kan definere plukklinjegruppering, må du opprette noe kvalifisert utgå
 
 1. Gå til **Salg og markedsføring \> Salgsordrer \> Alle salgsordrer**.
 2. Velg **Ny** for å opprette en salgsordre. 
-3. Velg en kunde i **Kundekonto**-feltet. 
-4. På hurtigfanen **Generelt**, i **Lager**-feltet, velger du **51**. Velg deretter **OK**.
-5. Legg til følgende seks linjer under **Salgsordrelinjer**:
+3. Velg en kunde i **Kundekonto** -feltet. 
+4. På hurtigfanen **Generelt** , i **Lager** -feltet, velger du **51**. Velg deretter **OK**.
+5. Legg til følgende seks linjer under **Salgsordrelinjer** :
 
-    - **Linje 1:** I **Varenummer**-feltet velger du **M9200**. I feltet **Antall** angi **3**.
-    - **Linje 2:** I **Varenummer**-feltet velger du **M9201**. I feltet **Antall** angi **3**. 
-    - **Linje 3:** I **Varenummer**-feltet velger du **M9202**. I feltet **Antall** angi **2**. 
-    - **Linje 4:** I **Varenummer**-feltet velger du **M9200**. I feltet **Antall** angi **1**. 
-    - **Linje 5:** I **Varenummer**-feltet velger du **M9200**. I feltet **Antall** angi **3**.
-    - **Linje 6:** I **Varenummer**-feltet velger du **M9202**. I feltet **Antall** angi **7**. 
+    - **Linje 1:** I **Varenummer** -feltet velger du **M9200**. I feltet **Antall** angi **3**.
+    - **Linje 2:** I **Varenummer** -feltet velger du **M9201**. I feltet **Antall** angi **3**. 
+    - **Linje 3:** I **Varenummer** -feltet velger du **M9202**. I feltet **Antall** angi **2**. 
+    - **Linje 4:** I **Varenummer** -feltet velger du **M9200**. I feltet **Antall** angi **1**. 
+    - **Linje 5:** I **Varenummer** -feltet velger du **M9200**. I feltet **Antall** angi **3**.
+    - **Linje 6:** I **Varenummer** -feltet velger du **M9202**. I feltet **Antall** angi **7**. 
 
     Her er et sammendrag av totalt antall for hver vare:
 
@@ -100,13 +100,13 @@ Før du kan definere plukklinjegruppering, må du opprette noe kvalifisert utgå
     - **Vare M9201:** 3 hver
     - **Vare M9202:** 9 hver
 
-6. Før du frigir ordrene til lageret, må du kontrollere at plukklokasjonene har nok beholdning for alle varene på alle ordrene. Se gjennom **Lokasjonsdirektiv**-innstillingen for å bestemme hvilke plukklokasjoner som skal brukes for plukking av salgsordre.
+6. Før du frigir ordrene til lageret, må du kontrollere at plukklokasjonene har nok beholdning for alle varene på alle ordrene. Se gjennom **Lokasjonsdirektiv** -innstillingen for å bestemme hvilke plukklokasjoner som skal brukes for plukking av salgsordre.
 7. Reserver beholdningen, og frigi den til lageret. Det opprettes en arbeids-ID som har seks linjer. Linjene sorteres etter varenummer.
 
 ### <a name="run-the-mobile-device-flow"></a>Kjør flyten for mobilenhet
 
 1. På mobilenheten velger du menyen som inneholder det nye menyelementet for mobilenhet.
-1. Velg menyelementet **Salgsplukking – gruppelinje**, og start plukkingen.
+1. Velg menyelementet **Salgsplukking – gruppelinje** , og start plukkingen.
 
     Når du har valgt menyen og angitt arbeids-ID, ser du plukktrinnet der alle plukklinjene for vare M9200 er gruppert. Du får en instruksjon om å plukke 7 hver av vare M9200.
 
@@ -130,3 +130,4 @@ Før du kan definere plukklinjegruppering, må du opprette noe kvalifisert utgå
 >    - Stykkplukking.
 >    - Arbeidslinjer som har uferdig etterfyllingsarbeid.
 >    - Overplukking.
+>    - Ny tildeling av vare for plukking med mangler

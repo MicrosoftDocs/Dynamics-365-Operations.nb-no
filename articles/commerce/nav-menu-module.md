@@ -3,7 +3,7 @@ title: Navigasjonsmenymodul
 description: Dette emnet dekker navigasjonsmenymoduler og beskriver hvordan du legger dem til områdesider i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
-ms.date: 09/15/2020
+ms.date: 10/01/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -18,17 +18,16 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.14
-ms.openlocfilehash: 91239bd1db3f5819b7ad8d45ccfd8ab0d88b1b41
-ms.sourcegitcommit: 8028fbc5b9585e87d3331ea02577ff82ede090af
+ms.openlocfilehash: b0e8168ca9ec9ca68011650a73cc09983deca645
+ms.sourcegitcommit: 765056b5dc1d0a8c27e56ff2cbd310ad3349ff09
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "3817880"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "4055743"
 ---
 # <a name="navigation-menu-module"></a>Navigasjonsmenymodul
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
 
 Dette emnet dekker navigasjonsmenymoduler og beskriver hvordan du legger dem til områdesider i Microsoft Dynamics 365 Commerce.
 
@@ -45,9 +44,13 @@ Følgende illustrasjon viser et eksempel på en navigasjonsmeny for området Fab
 
 | Egenskapsnavn             | Verdi                 | beskrivelse |
 |---------------------------|-----------------------|-------------|
-| Kilde                  | **Detaljhandel**, **Manuell redigering**, **Detaljhandel og manuell redigering** | Verdien for **Detaljhandel** gjør at kanalnavigasjonshierarkiet fra Commerce-hovedkontoret vises på navigasjonsmenyen. Veridn for **Manuell redigering** tillater at statiske menyelementer blir kuratert. Verdien for **Detaljhandel og manuell redigering** tilbyr en kombinasjon av begge. |
+| Kilde                  | **Detaljhandel** , **Manuell redigering** , **Detaljhandel og manuell redigering** | Verdien for **Detaljhandel** gjør at kanalnavigasjonshierarkiet fra Commerce-hovedkontoret vises på navigasjonsmenyen. Veridn for **Manuell redigering** tillater at statiske menyelementer blir kuratert. Verdien for **Detaljhandel og manuell redigering** tilbyr en kombinasjon av begge. |
 | Vise kategoribilder | **Sann** eller **Usann**    | Når denne egenskapen er aktivert, vises kategoribilder på navigasjonsmenyen, som definert i Commerce Headquarters for hver kategori. Lagt til i Commerce-versjon 10.0.14. |
+| Aktiver navigasjonsmeny med flere nivåer | **Sann** eller **Usann** | Når denne egenskapen er aktivert, kan navigasjonsmenyen vise flere nivåer i navigasjonshierarkiet. Denne funksjonen er tilgjengelig i Dynamics 365 Commerce versjon 10.0.15. |
+| Antall nivåer | heltall | Denne egenskapen definerer antall nivåer som skal vises hvis egenskapen **Aktiver navigasjonsmeny med flere nivåer** er satt til **sann**. |
 | Statisk menyelement| Matrise med verdier| Statiske menyelementer som knytter et menyelementnavn til en kobling til en statisk områdeside. Du kan opprette menyelementer under andre menyelementer. Som standard vises statiske menyer på rotnivå, og de blir lagt ved kanalnavigasjonshierarkiet hvis det finnes. |
+| Vis rotmeny | **Sann** eller **Usann** | Når denne egenskapen er aktivert, kan navigasjonsmenyen defineres under en egendefinert rot (for eksempel **Handle nå** ). Denne funksjonen er tilgjengelig i Dynamics 365 Commerce versjon 10.0.15. |
+| Rotmeny | streng | Denne egenskapen kan brukes til å definere tekst for en egendefinert rot hvis egenskapen **Vis rotmeny** er satt til **sann**. |
 
 Følgende illustrasjon viser et eksempel på et kategoribilde som vises på navigasjonsmenyen for Fabrikam-området.
 ![Eksempel på en navigasjonsmenymodul med kategoribilder](./media/ecommerce-categoryimages.PNG)
@@ -59,6 +62,10 @@ Hvis du vil ha mer informasjon om hvordan du legger til en navigasjonsmenymodul 
 ## <a name="additional-resources"></a>Tilleggsressurser
 
 [Oversikt over modulbibliotek](starter-kit-overview.md)
+
+[Søkebanemodul](add-breadcrumb.md)
+
+[Områdevelgermodul](site-selector.md)
 
 [Kjøpsboksmodul](add-buy-box.md)
 

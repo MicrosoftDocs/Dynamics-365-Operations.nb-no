@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: EcoResStorageDimensionGroup, WHSInventStatus
+ms.search.form: EcoResStorageDimensionGroup, WHSInventStatus, WHSWarehouseStatusChange
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e96ed6d01e22ee2cbc5b3b2be8168fbb43904c89
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 07426eee2a79f21d7e91a82a1832cfdb35fd8683
+ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3212716"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4017351"
 ---
 # <a name="inventory-statuses"></a>Beholdningsstatuser
 
@@ -42,10 +42,10 @@ Her er noen eksempler på hvordan du kan bruke lagerstatuser:
 
 En beholdningsstatus er én av dimensjonene i lagringsdimensjonsgruppen. Lagerstatuser kan kategoriseres som tilgjengelige eller utilgjengelige, og du kan bruke parameteren **Lagerblokkering** til å blokkere varer som har en tilgjengelig lagerstatus. Varer som har en blokkert status, regnes som aktuell beholdning og kan ikke brukes i produksjonsordrer, salgsordrer, overføringsordrer eller utgående transaksjoner.
 
-Du kan bruke lagervarer som har enten tilgjengelig eller utilgjengelig lagerstatus for innkommende arbeid. La oss si at du for eksempel oppretter en tilgjengelig status kalt **Klar**, en utilgjengelig status kalt **Skadet**, og en blokkert status kalt **Sperret**. Hvis du oppretter en bestilling for mottatte eller returnerte varer og eventuelle varer er skadet eller ødelagt, kan du endre lagerstatusen for disse varene til **Skadet** på bestillingslinjen. Etter at disse varene er mottatt, settes statusen automatisk til **Sperret**. Hvis du skanner de skadede varene med en mobil enhet, kan Supply Chain Management bruke lokasjonsdirektiver og arbeidsmaler til å vise informasjon om en passende lokasjon eller et lokasjonsområde der du kan plassere disse varene. Når det gjelder returnerte varer, opprettes avgangstypen **Reservering** på **Lagertransaksjoner**-siden.
+Du kan bruke lagervarer som har enten tilgjengelig eller utilgjengelig lagerstatus for innkommende arbeid. La oss si at du for eksempel oppretter en tilgjengelig status kalt **Klar** , en utilgjengelig status kalt **Skadet** , og en blokkert status kalt **Sperret**. Hvis du oppretter en bestilling for mottatte eller returnerte varer og eventuelle varer er skadet eller ødelagt, kan du endre lagerstatusen for disse varene til **Skadet** på bestillingslinjen. Etter at disse varene er mottatt, settes statusen automatisk til **Sperret**. Hvis du skanner de skadede varene med en mobil enhet, kan Supply Chain Management bruke lokasjonsdirektiver og arbeidsmaler til å vise informasjon om en passende lokasjon eller et lokasjonsområde der du kan plassere disse varene. Når det gjelder returnerte varer, opprettes avgangstypen **Reservering** på **Lagertransaksjoner** -siden.
 
 Når det gjelder utgående arbeid, bruker du varer som har en tilgjengelig lagerstatus. Hvis du har varer med statusen **Brutt** og hovedplanlegging kjøres på disse varene, regnes de som manglende, og beholdningen etterfylles automatisk.
 
 Når du har definert beholdningsstatuser, kan du angi standard beholdningsstatus for et område, en vare og et lager. Du kan også angi en standardstatus for salg, overføring og bestillinger. Standardstatus for salgsordrer og utgående overføringsordre kan ikke ha alternativet **Lagerblokkering** satt til **Ja**. Lagerstatusen som arves fra standardinnstillingene for område, lager, vare, bestilling, overføringsordre eller salgsordre, kan endres ved hjelp av den mobile enheten, eller på bestillings-, salgsordre- eller overføringsordrelinjen.
 
-Hvis du planlegger dekning for varer som har en tilgjengelig lagerstatus, velger du alternativet **Dekningsplanlegg etter dimensjon** for en lagringsdimensjon på siden **Lagringsdimensjonsgrupper**. Når du åpner veiviseren **Varedekning**, vises varer som har en tilgjengelig status, på **Status**-siden. Hvis du vil opprette dekningsinnstillinger for disse varene, velger du IDen for lagerstatus for de tilgjengelige lagerstatusene. Basert på dekningsinnstillingene kan du beregne varebehovene og forhåndsberegne forsyning og behov for tilgjengelige varer under hovedplanlegging. Du kan ikke opprette et oppsett av varedekning som har en blokkert lagerstatus. Bruk i stedet **Varedekning**-siden til å opprette eller endre varedekningsparameterne.
+Hvis du planlegger dekning for varer som har en tilgjengelig lagerstatus, velger du alternativet **Dekningsplanlegg etter dimensjon** for en lagringsdimensjon på siden **Lagringsdimensjonsgrupper**. Når du åpner veiviseren **Varedekning** , vises varer som har en tilgjengelig status, på **Status** -siden. Hvis du vil opprette dekningsinnstillinger for disse varene, velger du IDen for lagerstatus for de tilgjengelige lagerstatusene. Basert på dekningsinnstillingene kan du beregne varebehovene og forhåndsberegne forsyning og behov for tilgjengelige varer under hovedplanlegging. Du kan ikke opprette et oppsett av varedekning som har en blokkert lagerstatus. Bruk i stedet **Varedekning** -siden til å opprette eller endre varedekningsparameterne.

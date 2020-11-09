@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: ''
+ms.search.form: WHSWaveTableListPage, WHSWaveStepCode, WHSReplenishmentTemplates, WHSWaveTemplateTable
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 251e9982451c888424589e0f0d6fce48aab42df1
-ms.sourcegitcommit: 68092ed283bfbb7b6f611cce1b62c791f9b6a208
+ms.openlocfilehash: 9332e45f7213ed815e4417969b617256778598db
+ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/30/2020
-ms.locfileid: "3323583"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4017811"
 ---
 # <a name="wave-step-codes"></a>Bølgetrinnkoder
 
@@ -59,7 +59,7 @@ Under aktivering utføres valideringer under dataoppgraderingen. Hvis oppgraderi
 
 Når du har løst eventuelle konflikter som identifiseres i løpet av valideringene, kan du prøve å aktivere funksjonen på nytt.
 
-Når funksjonen er aktivert, blir siden **Bølgetrinnkoder** (**Lagerstyring \> Oppsett \> Bølger \> Bølgetrinnkoder**) tilgjengelig. Denne siden viser en liste over bølgetrinnkodene som ble oppgradert da funksjonen Organisasjonsomfattende bølgetrinnkode ble aktivert.
+Når funksjonen er aktivert, blir siden **Bølgetrinnkoder** ( **Lagerstyring \> Oppsett \> Bølger \> Bølgetrinnkoder** ) tilgjengelig. Denne siden viser en liste over bølgetrinnkodene som ble oppgradert da funksjonen Organisasjonsomfattende bølgetrinnkode ble aktivert.
 
 ### <a name="create-new-wave-step-codes"></a>Opprette nye bølgetrinnkoder
 
@@ -73,11 +73,11 @@ Når du har definert de aktuelle bølgetrinnkodene, kan de brukes på bølgepros
 
 Hvis du vil bruke bølgetrinnkoder, går du til den aktuelle målmalen. Her er målmalene som bølgetrinnkodene peker på:
 
-- **Etterfyllingsmaler**: Lagerstyring \> Oppsett \> Etterfylling \> Etterfyllingsmaler
-- **Maler for lastplanlegging**: Lagerstyring \> Oppsett \> Last \> Maler for lastplanlegging
+- **Etterfyllingsmaler** : Lagerstyring \> Oppsett \> Etterfylling \> Etterfyllingsmaler
+- **Maler for lastplanlegging** : Lagerstyring \> Oppsett \> Last \> Maler for lastplanlegging
 - **Sorter maler** : Lagerstyring \> Oppsett \> Emballasje \> Utgående sorteringsmaler
-- **Maler for containerbruk**: Lagerstyring \> Oppsett \> Containere \> Maler for containerbygging
-- **Maler for etikettutskrift**: Lagerstyring \> Oppsett \> Dokumentruting \> Maler for bølgeetiketter
+- **Maler for containerbruk** : Lagerstyring \> Oppsett \> Containere \> Maler for containerbygging
+- **Maler for etikettutskrift** : Lagerstyring \> Oppsett \> Dokumentruting \> Maler for bølgeetiketter
 
 Malene i denne listen brukes når de refereres fra en bølgeprosessmetode som er valgt i en bølgemal. Når bølgetrinnkoden for bølgeprosessmetode i en bølgemal samsvarer med bølgetrinnkoden i én av maltypene, brukes malen.
 
@@ -85,10 +85,10 @@ Malene i denne listen brukes når de refereres fra en bølgeprosessmetode som er
 
 Fremgangsmåten nedenfor hjelper deg med å garantere at etterfyllings malen du opprettet, brukes for bølgemalen.
 
-1. Gå til **Lagerstyring \> Oppsett \> Bølger \> Bølgetrinnkoder**, og opprett en bølgetrinnkode for typen **Etterfylling**.
-2. Gå til **Lagerstyring \> Oppsett \> Etterfylling \> Etterfyllingsmaler**, og opprett en etterfyllingsmal.
+1. Gå til **Lagerstyring \> Oppsett \> Bølger \> Bølgetrinnkoder** , og opprett en bølgetrinnkode for typen **Etterfylling**.
+2. Gå til **Lagerstyring \> Oppsett \> Etterfylling \> Etterfyllingsmaler** , og opprett en etterfyllingsmal.
 3. I etterfyllingsmalen velger du bølgetrinnkoden du opprettet for typen **Etterfylling**.
-4. Gå til **Lagerstyring \> Oppsett \> Bølger \> Bølgemaler**, og velg bølgemalen du vil bruke.
+4. Gå til **Lagerstyring \> Oppsett \> Bølger \> Bølgemaler** , og velg bølgemalen du vil bruke.
 5. I hurtigfanen **Metoder** i malen, velger du metoden **Etterfylling**.
 6. I feltet **Bølgetrinnkode** velger du bølgetrinnkoden du valgte i etterfyllingsmalen.
 

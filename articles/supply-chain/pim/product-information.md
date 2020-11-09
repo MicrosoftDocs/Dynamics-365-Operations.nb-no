@@ -1,7 +1,7 @@
 ---
 title: Oversikt over produktinformasjon
 description: Dette emnet inneholder informasjon om produktinformasjonsadministrasjon. Behandling av produktinformasjon fungerer sammen med en delt produktdefinisjon, -kategorisering og -identifikatorer på tvers av alle juridiske enheter, og bestemte konfigurasjoner av et produkt, slik at den passer til forretningsprosessene.
-author: benebotg
+author: t-benebo
 manager: tfehr
 ms.date: 06/01/2017
 ms.topic: article
@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c118bc37a26d6d3a65905f2fd955ceb3554e9557
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.openlocfilehash: 5c9ff3d0c7eabe2670c4818173d88c3ab5da7ff0
+ms.sourcegitcommit: 49f3011b8a6d8cdd038e153d8cb3cf773be25ae4
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3980894"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4015135"
 ---
 # <a name="product-information-overview"></a>Oversikt over produktinformasjon
 
@@ -63,7 +63,7 @@ Legg merke til at produktopplysninger endres hver dag i dynamiske og fleksible o
 
 ## <a name="product-masters-and-product-variants"></a>Produktstandarder og produktvarianter
 
-I en fleksibel verden der varer raskt må tilpasset kundekrav, angir produktdefinisjoner et sett med produkter i stedet for spesifikke produkter. I Supply Chain Management er de generell produktene kjent som *produktstandarder* . Produktstandarder inneholder definisjonen og regler som angir hvordan spesifikke produkter beskrives og fungerer i forretningsprosesser. Basert på disse definisjonene kan spesifikke produkter genereres. Disse spesifikke produktene er kjent som *produktvarianter* .
+I en fleksibel verden der varer raskt må tilpasset kundekrav, angir produktdefinisjoner et sett med produkter i stedet for spesifikke produkter. I Supply Chain Management er de generell produktene kjent som *produktstandarder*. Produktstandarder inneholder definisjonen og regler som angir hvordan spesifikke produkter beskrives og fungerer i forretningsprosesser. Basert på disse definisjonene kan spesifikke produkter genereres. Disse spesifikke produktene er kjent som *produktvarianter*.
 
 En produktstandard er tilknyttet en produktdimensjonsgruppe og en konfigurasjonsteknologi for å angi forretningsreglene. Produktdimensjoner (farge, størrelse, stil og konfigurasjon) er et bestemt sett med attributter som kan brukes i hele programmet til å definere og spore bestemt virkemåten til de tilknyttede produktene. Disse dimensjonene hjelper også brukere å søke etter og identifisere produktene.
 
@@ -83,14 +83,14 @@ Arbeidsområdet **Definisjon av produktvariantmodell** gir en oversikt over prod
 
 ## <a name="released-products"></a>Frigitte produkter
 
-Produktene som er frigitt til et bestemt juridisk enhet, er kjent som *frigitte produkter* . Produkter kan frigis samlet til én eller flere juridiske enheter samtidig. Fordi ulike egenskaper og attributter for produktene kanskje må legges til per juridisk enhet, kan du bruke arbeidsområdet **Vedlikehold av frigitt produkt** til å overvåke og fullføre de nylig frigitte produktene i hver juridiske enhet, eller i de underordnede organisasjonene for en juridisk enhet.
+Produktene som er frigitt til et bestemt juridisk enhet, er kjent som *frigitte produkter*. Produkter kan frigis samlet til én eller flere juridiske enheter samtidig. Fordi ulike egenskaper og attributter for produktene kanskje må legges til per juridisk enhet, kan du bruke arbeidsområdet **Vedlikehold av frigitt produkt** til å overvåke og fullføre de nylig frigitte produktene i hver juridiske enhet, eller i de underordnede organisasjonene for en juridisk enhet.
 
 ### <a name="released-product-maintenance-workspace"></a>Arbeidsområdet Vedlikehold av frigitt produkt
 
-Du kan konfigurere arbeidsområdet **Vedlikehold av frigitt produkt** i menyelementet **Konfigurer mitt arbeidsområde** . Velg et kategorihierarki og en kategori du vil filtrere arbeidsområdet etter. For å justere de relevante produktdataene i arbeidsområdet kan du også definere, i dager, horisontene for **Nylig frigitte produkter** og **Frigitte produkter som er stoppet** .
+Du kan konfigurere arbeidsområdet **Vedlikehold av frigitt produkt** i menyelementet **Konfigurer mitt arbeidsområde**. Velg et kategorihierarki og en kategori du vil filtrere arbeidsområdet etter. For å justere de relevante produktdataene i arbeidsområdet kan du også definere, i dager, horisontene for **Nylig frigitte produkter** og **Frigitte produkter som er stoppet**.
 
 Arbeidsområdet består av et sammendrag av fliser og to lister. Listen **Åpne tilfeller** viser produktendringssaker som har produkter i det valgte produktkategorihierarkiet som ikke er fullført og lukket. Listen **Nylig utgitt** viser produkter som er frigitt i horisonten som er angitt i konfigurasjonen for arbeidsområdet. Validering kjøres for hvert element i listen, og valideringsstatusen vises. Denne statusen kan indikere at de nødvendige konfigurasjonene for den juridiske enheten ikke er fullført. Fra listen har du direkte tilgang til sidene **Detaljer om frigitt produkt** , **Vedlikehold av produktattributt** , **Vedlikehold av produktkategori** , **Standard ordreinnstillinger** og **Tekstoversettelser** for å fullføre den konfigurasjonen av produktet.
 
 ### <a name="manually-creating-a-new-released-product"></a>Manuell oppretting av et nytt frigitt produkt
 
-Du kan manuelt opprette et frigitt produkt i en enkelt kjøring, avhengig av organisasjonens forretningsprosesser og eventuelle regler for hvorvidt denne funksjonen skal brukes. Denne funksjonen oppretter et nytt produkt, og frigjør det automatisk til den gjeldende juridiske enheten. For å opprette et nytt produkt klikker du **Frigitte produkter** i arbeidsområdet **Vedlikehold av frigitt produkt** eller på listesiden **Frigitt produkt** .
+Du kan manuelt opprette et frigitt produkt i en enkelt kjøring, avhengig av organisasjonens forretningsprosesser og eventuelle regler for hvorvidt denne funksjonen skal brukes. Denne funksjonen oppretter et nytt produkt, og frigjør det automatisk til den gjeldende juridiske enheten. For å opprette et nytt produkt klikker du **Frigitte produkter** i arbeidsområdet **Vedlikehold av frigitt produkt** eller på listesiden **Frigitt produkt**.

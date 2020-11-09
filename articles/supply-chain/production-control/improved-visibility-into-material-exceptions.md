@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: JmgShopSupervisorWorkspace
+ms.search.form: JmgShopSupervisorWorkspace, WHSProdWaveTableListPage
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -17,24 +17,24 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 37d0841b656153255b9230a60229d30064b81fbe
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 0c17997d9dd04559fb7022fe39bb2b961c1cfc4a
+ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3212624"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4016591"
 ---
 # <a name="visibility-into-material-exceptions"></a>Oversikt over materialeunntak
 
 [!include [banner](../includes/banner.md)]
 
-I **Produksjonsstyring**-arbeidsområdet gir tre fliser deg bedre oversikt over unntak for råvarer for produksjonsordrer og partiordrer:
+I **Produksjonsstyring** -arbeidsområdet gir tre fliser deg bedre oversikt over unntak for råvarer for produksjonsordrer og partiordrer:
 
 - Ikke-frigitte materiallinjer som krever oppmerksomhet
 - Ubehandlede bølger som krever oppmerksomhet
 - Åpent lagerarbeid som krever oppmerksomhet
 
-For alle tre flisene sammenlignes råvaredatoen i stykklistelinjene og formellinjene med arbeidsområdedatoen, og også med filtrene for **Produksjonsenhet**, **Ressursgruppe** og **Ressurs** som er angitt på **Konfigurer mitt arbeidsområde**-menyen. Som standard settes arbeidsområdedatoen til gjeldende dato, men du kan justere den.
+For alle tre flisene sammenlignes råvaredatoen i stykklistelinjene og formellinjene med arbeidsområdedatoen, og også med filtrene for **Produksjonsenhet** , **Ressursgruppe** og **Ressurs** som er angitt på **Konfigurer mitt arbeidsområde** -menyen. Som standard settes arbeidsområdedatoen til gjeldende dato, men du kan justere den.
 
 En ikke frigitt stykklistelinje eller formellinje krever tilsyn hvis råvaredatoen på linjen er den samme som eller før arbeidsområdedatoen, og hvis den oppfyller vilkårene som er definert i filtrene i arbeidsområdet.
 
@@ -54,16 +54,16 @@ Hvis du vil ha mer informasjon, se [Frigi stykkliste- og formellinjer til lagere
 
 Hvis en stykkliste- eller formellinje ikke er frigitt eller bare er delvis frigitt, og hvis dato- og filtervilkårene for arbeidsområdet er oppfylt, inkluderes linjen i beregningen av antallet som vises i flisen **Ikke-frigitte materiallinjer som krever oppmerksomhet**.
 
-Når du velger flisen, åpnes **Frigi til lager**-siden. Denne siden viser antall ikke frigitte stykkliste- og formellinjer, som angis med tallet i flisen. De ikke frigitte linjene vises i det øvre rutenettet. Dette rutenettet viser antallet som opprinnelig ble beregnet for linjen, antallet som allerede er frigitt, og det gjenværende antallet som fortsatt må frigis. Du kan legge til linjer fra den øvre rutenett til det nedre rutenettet. Fra det nedre rutenettet kan du deretter frigi de valgte linjene til lageret. Du kan også justere antallet som skal frigis, fra den nedre rutenettet, slik at bare et delvis antall frigis.
+Når du velger flisen, åpnes **Frigi til lager** -siden. Denne siden viser antall ikke frigitte stykkliste- og formellinjer, som angis med tallet i flisen. De ikke frigitte linjene vises i det øvre rutenettet. Dette rutenettet viser antallet som opprinnelig ble beregnet for linjen, antallet som allerede er frigitt, og det gjenværende antallet som fortsatt må frigis. Du kan legge til linjer fra den øvre rutenett til det nedre rutenettet. Fra det nedre rutenettet kan du deretter frigi de valgte linjene til lageret. Du kan også justere antallet som skal frigis, fra den nedre rutenettet, slik at bare et delvis antall frigis.
 
 ## <a name="unprocessed-waves-needing-attention"></a>Ubehandlede bølger som krever oppmerksomhet
 
 Når en stykkliste- eller formellinje frigis, legges den til en ny produksjonsbølge eller en eksisterende åpen bølge, avhengig av konfigurasjonen av produksjonsbølgemalen. Gjennom konfigurasjonen av bølgemalen kan du også definere en bølge slik at den behandles automatisk når en stykkliste- eller formellinje frigis. Når bølgen er behandlet, genereres det lagerarbeid for råvareplukking. Hvis bølgemalen er konfigurert slik at bølger ikke behandles ved frigivelsen, forblir bølgen i en ubehandlet tilstand. Flisen **Ubehandlede bølger som krever oppmerksomhet** viser antallet stykkliste- og formellinjer som er frigitt til lageret på ubehandlede bølger, og som har en råvaredato som er tidligere enn eller lik arbeidsområdedatoen. Linjene må også brukes av en operasjonsressurs som brukes på filteret i arbeidsområdet.
 
-Når flisen er valgt, åpnes **Alle produksjonsbølger**-siden. Denne siden er filtrert etter hvor mange åpne bølger som inneholder bølgelinjer fra frigitte stykkliste- og formellinjer som oppfyller kriteriene for flisen. Fra **Alle produksjonsbølger**-siden kan du behandle bølgen manuelt.
+Når flisen er valgt, åpnes **Alle produksjonsbølger** -siden. Denne siden er filtrert etter hvor mange åpne bølger som inneholder bølgelinjer fra frigitte stykkliste- og formellinjer som oppfyller kriteriene for flisen. Fra **Alle produksjonsbølger** -siden kan du behandle bølgen manuelt.
 
 ## <a name="open-warehouse-work-needing-attention"></a>Åpent lagerarbeid som krever oppmerksomhet
 
 Flisen **Åpent lagerarbeid som krever oppmerksomhet** viser antallet stykkliste- og formellinjer som er frigitt til lageret, som har ubehandlet arbeid og en råvaredato som er tidligere enn eller lik arbeidsområdedatoen. Linjene må også brukes av en operasjonsressurs som brukes på filteret i arbeidsområdet.
 
-Når flisen er valgt, åpnes **Alt arbeid**-siden. Denne siden er filtrert etter hvor mange åpne arbeidshoder som inneholder arbeidslinjer fra frigitte stykkliste- og formellinjer som oppfyller kriteriene for flisen. Fra **Alt arbeid**-siden kan du behandle arbeidet manuelt.
+Når flisen er valgt, åpnes **Alt arbeid** -siden. Denne siden er filtrert etter hvor mange åpne arbeidshoder som inneholder arbeidslinjer fra frigitte stykkliste- og formellinjer som oppfyller kriteriene for flisen. Fra **Alt arbeid** -siden kan du behandle arbeidet manuelt.

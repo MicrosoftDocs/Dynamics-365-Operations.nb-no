@@ -1735,6 +1735,8 @@
                   href: procurement/purchase-agreements.md
                 - name: Opprette en kjøpsavtale
                   href: procurement/tasks/create-purchase-agreement.md
+                - name: Automatisk tildeling av tillegg
+                  href: procurement/automatic-charges-allocation.md
                 - name: Leverandørrabatter
                   href: procurement/vendor-rebates.md
                 - name: 'Feilsøke priser, rabatter og avtaler'
@@ -2041,6 +2043,14 @@
                       href: production-control/release-production-orders.md
                     - name: Rapportere produksjonsordrer som ferdigstilte
                       href: production-control/report-production-orders-as-finished.md
+                    - name: Definere og bruke grensesnittet for produksjonsutførelse
+                      items:
+                        - name: Konfigurere grensesnittet for produksjonsutførelse
+                          href: production-control/production-floor-execution-configure.md
+                        - name: Definere en enhet for å kjøre grensesnittet for produksjonsutførelse
+                          href: production-control/production-floor-execution-setup.md
+                        - name: Hvordan arbeidere bruker grensesnittet for produksjonsutførelse
+                          href: production-control/production-floor-execution-use.md
                     - name: Konfigurer jobbkort for enheter
                       href: production-control/config-job-card-device.md
                     - name: Ferdigmelde fra jobbkortenheten
@@ -2275,6 +2285,8 @@
                   href: sales-marketing/tasks/ship-orders-direct-deliveries.md
                 - name: Sende salgsordrer uten lagerstyring
                   href: sales-marketing/tasks/ship-sales-orders-without-warehousing.md
+                - name: Automatisk tildeling av tillegg
+                  href: procurement/automatic-charges-allocation.md
                 - name: Opprette en bestilling fra en salgsordre
                   href: sales-marketing/tasks/create-purchase-order-sales-order.md
                 - name: Opprette salgsordrer
@@ -2545,7 +2557,7 @@
                           href: service-management/reverse-changes-in-a-dispatch-board.md
                         - name: Vise ikke fordelte serviceordrer
                           href: service-management/view-undispatched-service-orders.md
-                        - name: 'Endre en servicestykkliste '
+                        - name: Endre en servicestykkliste
                           href: service-management/modify-service-bom.md
                     - name: Levere service
                       items:
@@ -2663,8 +2675,6 @@
                       href: warehousing/tasks/license-plate-label-printing.md
                     - name: Opprette overføringsordrer fra lagerappen
                       href: warehousing/create-transfer-order-from-warehouse-app.md
-                    - name: Behandling av lagerapphendelse
-                      href: warehousing/warehouse-app-events.md
                     - name: Stykkplukkingsbekreftelse
                       href: warehousing/piece-picking-confirmation.md
                     - name: Pakkematerialer og -gebyrer
@@ -2761,7 +2771,7 @@
                       href: inventory/inventory-blocking.md
                     - name: Syklustelling
                       href: warehousing/cycle-counting.md
-                    - name: 'Definere syklustelling '
+                    - name: Definere syklustelling
                       href: warehousing/tasks/define-cycle-counting-microsoft-dynamics-365-finance-operations-enterprise-edition-july-2017.md
                     - name: Delvis lokasjonssyklustelling
                       href: warehousing/partial-location-cycle-counting.md
@@ -2843,6 +2853,8 @@
                       href: warehousing/configure-app-field-names-priorities-warehouse.md
                     - name: Definere mobilenheter for lagerarbeid
                       href: warehousing/configure-mobile-devices-warehouse.md
+                    - name: Behandling av lagerapphendelse
+                      href: warehousing/warehouse-app-events.md
                     - name: Nummerskilt som mottar med lagerappen
                       href: warehousing/warehousing-mobile-device-app-license-plate-receiving.md
                     - name: Definere et menyelement for mobilenhet for å fullføre arbeid i en bestilling

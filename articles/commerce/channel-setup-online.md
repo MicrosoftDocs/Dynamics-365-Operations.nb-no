@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 0d803b23f9de9daf624537d1d1ef30f17dc05fea
-ms.sourcegitcommit: adf196c51e2b6f532d99c177b4c6778cea8a2efc
+ms.openlocfilehash: 07225d97af76ea665fa28362cc205c6e8dc4fdf4
+ms.sourcegitcommit: 776758a0ff95c3c7398986095104d1d2b9814514
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "3533327"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "4107236"
 ---
 # <a name="set-up-an-online-channel"></a>Definere en Internett-kanal
 
@@ -45,11 +45,11 @@ Hvis du vil opprette og konfigurere en ny Internett-kanal, gjør du følgende:
 
 1. I navigasjonsruten går du til **Moduler \> Kanaler \> Nettbutikker**.
 1. I handlingsruten velger du **Ny**.
-1. I **Navn**-feltet oppgir du et navn for den nye kanalen.
+1. I **Navn** -feltet oppgir du et navn for den nye kanalen.
 1. Angi den riktige juridiske enheten i rullegardinlisten **Juridisk enhet**.
 1. Angi det riktige lageret i rullegardinlisten **Lager**.
 1. Velg riktig tidssone i feltet **Tidssone for butikk**.
-1. Velg riktig valuta i **Valuta**-feltet.
+1. Velg riktig valuta i **Valuta** -feltet.
 1. Angi en gyldig standardkunde i feltet **Standardkunde**.
 1. Angi en gyldig adressebok i feltet **Adressebok for kunde**.
 1. I feltet **Funksjonalitetsprofil** velger du en funksjonalitetsprofil hvis det er aktuelt.
@@ -72,11 +72,11 @@ Hvis området for e-handel støtter flere språk, kan du utvide delen **Språk**
 
 I delen **Betalingskonto** kan du legge til en tredjeparts betalingsleverandør. Hvis du vil ha informasjon om hvordan du definerer en Adyen-betalingskobling, kan du se [Dynamics 365 Payment Connector for Adyen](../retail/dev-itpro/adyen-connector.md).
 
-## <a name="additional-channel-set-up"></a>Ekstra kanaloppsett
+## <a name="additional-channel-setup"></a>Ekstra kanaloppsett
 
 Andre oppgaver som kreves for oppsett av Internett-kanal, omfatter definere betalingsmåter, leveringsmåter og gruppetilordning for oppfyllelse.
 
-Bildet nedenfor viser oppsettsalternativene **Leveringsmåter**, **Betalingsmåter** og **Gruppetilordning for oppfyllelse** i kategorien **Oppsett**.
+Bildet nedenfor viser oppsettsalternativene **Leveringsmåter** , **Betalingsmåter** og **Gruppetilordning for oppfyllelse** i kategorien **Oppsett**.
 
 ![Ekstra konfigurasjonshandlinger for Internett-kanal](media/channel-setup-online-3.png)
 

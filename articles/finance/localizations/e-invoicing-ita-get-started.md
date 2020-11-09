@@ -18,22 +18,22 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: ea0408f4ef72bf77a0659799075338e4e6b2aa30
-ms.sourcegitcommit: 025561f6a21fe8705493daa290f3f6bfb9f1b962
+ms.openlocfilehash: c513141f820c95fe3842478361693701f1e3641b
+ms.sourcegitcommit: d6250ee5ced43be39e789324a895fd1c07178935
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "3836008"
+ms.lasthandoff: 10/19/2020
+ms.locfileid: "4039798"
 ---
 # <a name="get-started-with-the-electronic-invoicing-add-on-for-italy"></a>Komme i gang med tillegget Elektronisk fakturering for Italia
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
+
 
 > [!IMPORTANT]
 > Det er ikke sikkert at tillegget Elektroniske fakturering for Italia støtter alle funksjonene som er tilgjengelige for elektroniske fakturaer i Microsoft Dynamics 365 Finance og Dynamics 365 Supply Chain Management. 
 
-Dette emnet inneholder informasjon som vil hjelpe deg med å komme i gang med tillegget Elektronisk fakturering for Italia. Det leder deg gjennom konfigurasjonstrinnene som er landsavhengige i Regulatory Configuration Services (RCS) og Finance. Det leder deg også gjennom prosessen med å sende elektroniske fakturaer som genereres i det Italia-spesifikke **FatturaPA**-formatet via tjenesten, og det forklarer hvordan du gjennomgår resultatene av behandlingen.
+Dette emnet inneholder informasjon som vil hjelpe deg med å komme i gang med tillegget Elektronisk fakturering for Italia. Det leder deg gjennom konfigurasjonstrinnene som er landsavhengige i Regulatory Configuration Services (RCS) og Finance. Det leder deg også gjennom prosessen med å sende elektroniske fakturaer som genereres i det Italia-spesifikke **FatturaPA** -formatet via tjenesten, og det forklarer hvordan du gjennomgår resultatene av behandlingen.
 
 ## <a name="prerequisites"></a>Forutsetninger
 
@@ -43,7 +43,7 @@ Før du fullfører trinnene i dette emnet må du fullføre trinnene i [Komme i g
 
 Under RCS-oppsettet vil du fullføre disse oppgavene:
 
-1. Importer funksjonen for e-fakturering for eksport av elektroniske fakturaer for kunder i **FatturaPA**-formatet.
+1. Importer funksjonen for e-fakturering for eksport av elektroniske fakturaer for kunder i **FatturaPA** -formatet.
 2. Gå gjennom formatkonfigurasjonene som kreves for å generere, sende og motta svar om elektroniske fakturaer.
 3. Konfigurer hendelsene som støtter innsendingsscenarioene for elektronisk faktura.
 4. Publiser funksjonen for e-fakturering.
@@ -54,13 +54,13 @@ Under RCS-oppsettet vil du fullføre disse oppgavene:
 ## <a name="import-the-e-invoicing-feature"></a>Importere funksjonen for e-fakturering
 
 1. Logg på RCS-kontoen.
-2. I **Globaliseringsfunksjoner**-arbeidsområder i delen **Funksjoner**, velger du flisen **E-fakturering**.
+2. I **Globaliseringsfunksjoner** -arbeidsområder i delen **Funksjoner** , velger du flisen **E-fakturering**.
 3. På siden for **e-faktureringsfunksjoner** velger du **Importer** for å importere e-faktureringsfunksjonen fra det globale repositoriet.
 
     > [!NOTE]
     > Hvis du ikke ser listen over tilgjengelige funksjoner, velger du **Synkroniser**. 
 
-4. Velg funksjonen for **e-fakturaeksport (IT)**, og velg deretter **Importer**.
+4. Velg funksjonen for **e-fakturaeksport (IT)** , og velg deretter **Importer**.
 
 ![Importere funksjonen for e-fakturaeksport (IT)](media/e-Invoicing-services-get-started-ITA-Select-Import-e-Invoicing-feature.png)
 
@@ -68,7 +68,7 @@ Når du importerer funksjonen for **e-fakturaeksport (IT)** fra det globale lage
 
 ## <a name="create-a-new-version-of-the-e-invoices-export-it-feature"></a>Opprette en ny versjon av funksjonen for e-fakturaeksport
 
-1. På siden for **E-faktureringsfunksjoner**, i kategorien **Versjoner**, velger du **Ny**. 
+1. På siden for **E-faktureringsfunksjoner** , i kategorien **Versjoner** , velger du **Ny**. 
 
     ![Legge til en ny versjon av e-fakturafunksjonen](media/e-Invoicing-services-get-started-ITA-Select-New-e-Invoicing-feature-version.png)
 
@@ -86,7 +86,7 @@ Når du importerer funksjonen for **e-fakturaeksport (IT)** fra det globale lage
     Når du oppretter en e-faktureringsfunksjon som er avledet fra en annen e-faktureringsfunksjon, arves alle ER-formatene fra den opprinnelige funksjonen.
 
 3. Velg en bestemt ER-formatfilkonfigurasjon.
-4. Velg **Rediger** eller **Vis** for å åpne **Formatutforming**-siden.
+4. Velg **Rediger** eller **Vis** for å åpne **Formatutforming** -siden.
 
     ![Åpne Formatutforming-siden](media/e-Invoicing-services-get-started-ITA-Configuration-ER-format-designer.png)
 
@@ -96,15 +96,15 @@ Når du importerer funksjonen for **e-fakturaeksport (IT)** fra det globale lage
 
 ## <a name="manage-the-e-invoicing-feature-setups"></a>Administrere oppsett for e-faktureringsfunksjonen
 
-- På siden for **E-postfunksjoner**, i kategorien **Oppsett**, velger du **Legg til**, **Slett** eller **Rediger** for å behandle e-faktureringsoppsettene.
+- På siden for **E-postfunksjoner** , i kategorien **Oppsett** , velger du **Legg til** , **Slett** eller **Rediger** for å behandle e-faktureringsoppsettene.
 
 ![Administrere oppsett for e-faktureringsfunksjonen](media/e-Invoicing-services-get-started-ITA-Manage-e-Invoicing-feature-setup.png)
 
-I dette trinnet konfigurerer du hendelsene som gjelder elektroniske fakturaer, inkludert generering av XML-utdatafilene i **FatturaPA**-format og digital signering (om nødvendig).
+I dette trinnet konfigurerer du hendelsene som gjelder elektroniske fakturaer, inkludert generering av XML-utdatafilene i **FatturaPA** -format og digital signering (om nødvendig).
 
 ### <a name="configure-the-sales-invoice-feature-setup"></a>Konfigurere oppsettet av salgsfakturafunksjonen
 
-1. På siden for **e-fakturafunksjoner**, i kategorien **Oppsett** i kolonnen **Funksjonsoppsett**, velger du **Salgsfaktura**.
+1. På siden for **e-fakturafunksjoner** , i kategorien **Oppsett** i kolonnen **Funksjonsoppsett** , velger du **Salgsfaktura**.
 2. Velg **Rediger**.
 3. På siden for **oppsett av funksjonsversjon** velger du kategorien **Handlinger** for å behandle listen over handlinger. Handlinger definerer en liste over operasjoner som må kjøres i sekvensiell rekkefølge for å oppnå full utførelse av hendelsen.
 
@@ -112,10 +112,10 @@ I dette trinnet konfigurerer du hendelsene som gjelder elektroniske fakturaer, i
 
     | Handlings-ID | Handlingsnavn        | Handlingsbeskrivelse                                     |
     |-----------|--------------------|--------------------------------------------------------|
-    | 1         | Transformere dokument | Opprett XML-filen for e-faktura i **FatturaPA**-format. |
+    | 1         | Transformere dokument | Opprett XML-filen for e-faktura i **FatturaPA** -format. |
     | 2         | Signer dokument      | Bruk en digital signatur på XML-filen.             |
 
-4. Velg **Relevansregler**-kategorien for å vise og vedlikeholde de gjeldende reglene. Relevansregler definerer konteksten der handlingen skal kjøres.
+4. Velg **Relevansregler** -kategorien for å vise og vedlikeholde de gjeldende reglene. Relevansregler definerer konteksten der handlingen skal kjøres.
 
     ![Kategorien Relevansregler](media/e-Invoicing-services-get-started-ITA-Select-Applicability-rules.png)
 
@@ -127,13 +127,13 @@ I dette trinnet konfigurerer du hendelsene som gjelder elektroniske fakturaer, i
 
 ### <a name="configure-the-project-invoice-feature-setup"></a>Konfigurere oppsettet av prosjektfakturafunksjonen 
 
-Trinnene og innstillingene som kreves for å konfigurere oppsettet av funksjonen **Prosjektfaktura**, er svært like fremgangsmåten og innstillingene for oppsett av funksjonen **Salgsfaktura**. Når du arbeider med prosjektfakturaer, kan du se fremgangsmåtene for salgsfakturaer.
+Trinnene og innstillingene som kreves for å konfigurere oppsettet av funksjonen **Prosjektfaktura** , er svært like fremgangsmåten og innstillingene for oppsett av funksjonen **Salgsfaktura**. Når du arbeider med prosjektfakturaer, kan du se fremgangsmåtene for salgsfakturaer.
 
 ## <a name="assign-the-e-invoicing-feature-to-the-environment"></a>Tilordne e-postfakturafunksjonen til-miljøet
 
-1. På siden for **E-faktureringsfunksjoner**, i kategorien **Miljøer**, velger du **Aktiver**.
+1. På siden for **E-faktureringsfunksjoner** , i kategorien **Miljøer** , velger du **Aktiver**.
 2. I feltet **Miljø** velger du miljøet.
-3. I **Gyldig fra**-feltet angir du datoen for når miljøet skal tre i kraft.
+3. I **Gyldig fra** -feltet angir du datoen for når miljøet skal tre i kraft.
 4. Velg **Aktiver**. 
 
 ![Aktivere e-faktureringsmiljøet](media/e-Invoicing-services-get-started-ITA-Enable-e-Invoicing-environment.png)
@@ -149,7 +149,7 @@ Du kan publisere funksjonen for e-fakturering ved å endre versjonsstatusen til 
 
 ### <a name="change-the-version-status-to-published"></a>Endre versjonsstatusen til Publisert 
 
-1. På siden for **e-fakturafunksjoner**, i kategorien **Versjoner**, velger du versjonen av e-fakturafunksjonen med statusen **Fullført**.
+1. På siden for **e-fakturafunksjoner** , i kategorien **Versjoner** , velger du versjonen av e-fakturafunksjonen med statusen **Fullført**.
 2. Velg **Endre status \> Publiser**.
 
 ![Endre statusen for e-fakturafunksjonen](media/e-Invoicing-services-get-started-ITA-Change-status-of-e-Invoicing-feature.png)
@@ -166,7 +166,7 @@ Under Finance-oppsettet vil du fullføre disse oppgavene:
 1. I arbeidsområdet for **Elektronisk rapportering** kontrollerer du at konfigurasjonsleverandøren for **forretningsdokumenttjenesten** er satt til **Aktiv**.
 2. Velg **Repositorier**.
 3. Velg **Global ressurs \> Åpne**.
-4. Importer **Fakturamodell**, **Fakturamodelltilordning** og **kontekstmodell for kundefaktura**.
+4. Importer **Fakturamodell** , **Fakturamodelltilordning** og **kontekstmodell for kundefaktura**.
 
 #### <a name="turn-on-the-feature-for-exporting-customer-electronic-invoices-for-italy"></a>Slå på funksjonen for eksport av elektroniske fakturaer for kunder for Italia
 
@@ -199,7 +199,7 @@ Under behandlingen i Finance vil du fullføre disse oppgavene:
 
 ### <a name="generate-electronic-invoices"></a>Generere elektroniske fakturaer
 
-Når du har aktivert funksjonen for **konfigurerbar integrasjon av tillegget Elektronisk fakturering** og aktivert **IT00036**-funksjonen, kan ikke den gamle Finance-prosessen for generering av italienske e-fakturaer lenger brukes. Den erstattes av en ny prosess som kalles **Send elektroniske dokumenter**.
+Når du har aktivert funksjonen for **konfigurerbar integrasjon av tillegget Elektronisk fakturering** og aktivert **IT00036** -funksjonen, kan ikke den gamle Finance-prosessen for generering av italienske e-fakturaer lenger brukes. Den erstattes av en ny prosess som kalles **Send elektroniske dokumenter**.
 
 Du kan sende dokumentene manuelt, basert på etterspørselen etter e-fakturadokumenter.
 
@@ -208,7 +208,7 @@ Du kan sende dokumentene manuelt, basert på etterspørselen etter e-fakturadoku
 
 1. Gå til **Organisasjonsstyring \> Periodiske \> Elektroniske dokumenter \> Send elektroniske dokumenter**.
 2. For første innsending av et dokument må du sette alternativet **Send dokumenter på nytt** til **Nei**. Hvis du må sende et dokument på nytt via tjenesten, setter du dette alternativet til **Ja**.
-3. I hurtigfanen **Poster som skal inkluderes** velger du **Filter** for å åpne **Forespørsel**-dialogboksen, der du kan bygge en spørring for å velge dokumenter for innsending.
+3. I hurtigfanen **Poster som skal inkluderes** velger du **Filter** for å åpne **Forespørsel** -dialogboksen, der du kan bygge en spørring for å velge dokumenter for innsending.
 
 ![Dialogboksen Send elektroniske dokumenter](media/e-Invoicing-services-get-started-ITA-Submission-form.png)
 
@@ -232,14 +232,14 @@ Du kan vise sendelogger for alle sendte dokumenter.
 
     ![Velge en dokumenttype for å vise sendelogger](media/e-Invoicing-services-get-started-ITA-Select-Document-type-for-viewing-submission-log.png)
 
-    Verdien som vises i kolonnen **Status for sending**, representerer statusen for innsendingsprosessen. Den viser om prosessen kjørte som konfigurert, og om det kreves tilleggshandling.
+    Verdien som vises i kolonnen **Status for sending** , representerer statusen for innsendingsprosessen. Den viser om prosessen kjørte som konfigurert, og om det kreves tilleggshandling.
 
 3. I handlingsruten velger du **Forespørsler \> Innsendingsdetaljer** for å vise detaljene for sendeutførelsesloggene.
 
     ![Vise detaljene for innsendingsloggen](media/e-Invoicing-services-get-started-ITA-View-Submission-log-details.png)
 
-4. I hurtigfanen **Behandlingshandlinger** kan du vise utførelsesloggen for handlingene som er konfigurert i funksjonsversjonen som er definert i RCS. **Status**-kolonnen viser om handlingen ble kjørt uten feil.
-5. I hurtigfanen **Handlingsfiler** kan du vise de mellomliggende filene som ble generert under utføring av handlingene. Du kan velge **Vis** for å laste ned XML-filen for utdata i **FatturaPA**-format og vise innholdet i den.
+4. I hurtigfanen **Behandlingshandlinger** kan du vise utførelsesloggen for handlingene som er konfigurert i funksjonsversjonen som er definert i RCS. **Status** -kolonnen viser om handlingen ble kjørt uten feil.
+5. I hurtigfanen **Handlingsfiler** kan du vise de mellomliggende filene som ble generert under utføring av handlingene. Du kan velge **Vis** for å laste ned XML-filen for utdata i **FatturaPA** -format og vise innholdet i den.
 
 ## <a name="related-topics"></a>Relaterte emner
 

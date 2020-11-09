@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: WHSRFMenuItem
+ms.search.form: WHSRFMenuItem, WHSRFSysDirSort, WHSWorkUserDisplaySettings
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 12f1c405566561661fe7c13db5bfca70114b1618
-ms.sourcegitcommit: 286786445f72db20e993d37a63df0b886f8f5e99
+ms.openlocfilehash: 8bb256514175166621847a5d40c16b9b749b1ddc
+ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/12/2020
-ms.locfileid: "3988352"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4016200"
 ---
 # <a name="set-up-mobile-devices-for-warehouse-work"></a>Definere mobilenheter for lagerarbeid
 
@@ -32,13 +32,13 @@ ms.locfileid: "3988352"
 Dette emnet beskriver hvordan du konfigurerer menyelementene lagerarbeidere bruker til å utføre arbeidet på en mobilenhet.
 
 > [!NOTE]
-> Dette emnet artikkelen gjelder funksjoner i Lagerstyring. Den gjelder ikke for funksjoner i Beholdningsstyring. Menyelementene som vises på menyer for en lagermobilenhet, konfigureres på siden **Menyelementer på mobilenheten** . Fordi menyelementene kan settes inn i flere menyer, er det enkelt å konfigurere menystrukturene slik at bare bestemte typer arbeid er tilgjengelig for bestemte brukere. Du kan konfigurere menyelementer for å gjøre følgende:
+> Dette emnet artikkelen gjelder funksjoner i Lagerstyring. Den gjelder ikke for funksjoner i Beholdningsstyring. Menyelementene som vises på menyer for en lagermobilenhet, konfigureres på siden **Menyelementer på mobilenheten**. Fordi menyelementene kan settes inn i flere menyer, er det enkelt å konfigurere menystrukturene slik at bare bestemte typer arbeid er tilgjengelig for bestemte brukere. Du kan konfigurere menyelementer for å gjøre følgende:
 
 - Behandle en forespørsel eller utfør en aktivitet, for eksempel utskrift av en etikett, generering av numre for nummerskilt, oppstart av en produksjonsordre eller raskt oppslag for informasjon om varer på en lokasjon.
 - Opprett arbeid som skal utføres via en annen prosess. Mottak av en vare for en bestilling kan for eksempel opprette plasseringsarbeid for en annen arbeider.
 - Utføre arbeid som ble opprettet av en annen prosess (eksisterende arbeid), for eksempel plasseringsarbeid som ble opprettet da du mottok en vare for en bestilling.
 
-Hvis du vil opprette et menyelement for en aktivitet eller forespørsel, kan du angi **Modus** -feltet til **Indirekte** . En liste over **Aktivitetskode** -alternativer blir deretter tilgjengelig, slik at du kan velge hvilken type forespørsel eller aktivitet som menyelementet gjelder for. Hvis du vil opprette et menyelement for å generere lagerarbeid, kan du angi **Modus** -feltet til **Arbeid** . En liste over **Arbeidsopprettelsesprosess** -alternativer blir deretter tilgjengelig. Hvis du vil opprette et menyelement for å behandle eksisterende lagerarbeid, kan du angi **Modus** -feltet til **Arbeid** , og deretter angi alternativet **Bruk eksisterende arbeid** til **Ja** . 
+Hvis du vil opprette et menyelement for en aktivitet eller forespørsel, kan du angi **Modus** -feltet til **Indirekte**. En liste over **Aktivitetskode** -alternativer blir deretter tilgjengelig, slik at du kan velge hvilken type forespørsel eller aktivitet som menyelementet gjelder for. Hvis du vil opprette et menyelement for å generere lagerarbeid, kan du angi **Modus** -feltet til **Arbeid**. En liste over **Arbeidsopprettelsesprosess** -alternativer blir deretter tilgjengelig. Hvis du vil opprette et menyelement for å behandle eksisterende lagerarbeid, kan du angi **Modus** -feltet til **Arbeid** , og deretter angi alternativet **Bruk eksisterende arbeid** til **Ja**. 
 
 > [!NOTE]
 > Tilleggsfelt kan være tilgjengelige for menyelementer, avhengig av modusen du velger for menyelementet, og om menyelementet brukes til å utføre eksisterende arbeid. Hvis du vil ha informasjon om tilleggsvalgene for feltene, kan du se delen "Flere alternativer for menyelementer" senere i dette emnet.
@@ -55,16 +55,16 @@ Hvis **Modus** -feltet for et menyelement er satt til **Indirekte** , kan du opp
 | Nummerskiltforespørsel | Vis antall varer på et nummerskilt, og lokasjonen til nummerskiltet. |
 | Start produksjonsordre | Start en produksjonsordre. |
 | Produksjonssvinn | Angi svinnmengden som ble dannet under produksjon, for hver stykklistelinje. |
-| Siste produksjonspall | Angi at den siste pallen med varer er produsert for en produksjonsordre, og at statusen for produksjonsordren må oppdateres til **Ferdigmeldt** . Statusen for råvarene som ikke ble brukt under produksjonen, tilbakestilles fra **Plukket** til **I ordre/bestilling** , og varene kan returneres til lager. |
+| Siste produksjonspall | Angi at den siste pallen med varer er produsert for en produksjonsordre, og at statusen for produksjonsordren må oppdateres til **Ferdigmeldt**. Statusen for råvarene som ikke ble brukt under produksjonen, tilbakestilles fra **Plukket** til **I ordre/bestilling** , og varene kan returneres til lager. |
 | Vareforespørsel | Skann en vare for å finne ut om den finnes på lageret. Forespørselen returnerer alle lokasjoner og antall for den skannede varen. |
 | Skriv ut etikett på nytt | Skriv ut en nummerskiltetikett på nytt. |
 | Nummerskilt-build | Opprett et overordnet nummerskilt ved å kombinere flere nummerskilt på samme lokasjon. Dette alternativet er nyttig hvis du flytter flere nummerskilt samtidig. Når det overordnede nummerskiltet er flyttet, må du dele opp nummerskilt-builden ved å bruke Nummerskilt – bryt før du kan plukke varer fra hvert nummerskilt. <p></p>**Tips:** Hvis du vil flytte et overordnet nummerskilt, må du bruke en mobilenhet som er konfigurert til å opprette arbeid for bevegelser. |
 | Nummerskilt – bryt | Del opp en nummerskilt-build, slik at du kan velge varer fra nummerskiltene som var i builden. |
-| Sjåførinnsjekking | Hvis du bruker Transportstyring, registrerer du at en sjåfør har ankommet, ved å skanne ID-en for utgående last, avtale-ID-en eller forsendelses-ID-en. Dette krever at en last tilordnes til avtalen, og at statusen til lasten er **Lastet** . |
+| Sjåførinnsjekking | Hvis du bruker Transportstyring, registrerer du at en sjåfør har ankommet, ved å skanne ID-en for utgående last, avtale-ID-en eller forsendelses-ID-en. Dette krever at en last tilordnes til avtalen, og at statusen til lasten er **Lastet**. |
 | Sjåførutsjekking | Registrer at en sjåfør har fullført avtalen sin. |
 | Tøm hurtigbuffer for nummersekvens | Slett nummersekvensnumre fra nummersekvensbufferen. Denne aktiviteten utføres vanligvis av en systemadministrator for å løse problemer med hurtigbufring ved bruk av mobile enheter. |
 | Endre partidisposisjon | La en arbeider angi en partidisposisjonskode for en vare og et parti. Dette valget oppdaterer disposisjonskoden som er angitt for partiet. |
-| Vis liste over åpent arbeid | Vis en liste over tilgjengelig arbeid for en bestemt bruker. Brukeren kan deretter velge arbeid som skal utføres, og vil bli dirigert til det. Denne listen er ment å vises på nettbrett med skjermstørrelser på 7 tommer eller mer. Når du velger dette alternativet, aktiveres menyelementene **Rediger spørring** og **Feltliste** . På siden **Rediger spørring** kan du definere kriterier for arbeid som vises i listen. På siden **Feltliste** kan du velge hvilke felt som vises i arbeidslisten. Du kan for eksempel redusere antall felt som vises, slik at brukeren raskere kan velge det mest aktuelle arbeidselementet. Du kan også velge hvor mange arbeidsposter som skal vises per side, i feltet **Poster per side** i hurtigfanen **Generelt** . Hvis det er merket av for **Tillat brukere å filtrere arbeid etter transaksjonstype** , inkluderer arbeidslisten en **Filtrer arbeid** -kontroll som brukeren kan bruke til å filtrere etter transaksjonstype. Brukere vil bare se arbeid i arbeidslisten som de har tilgang til. Du må kontrollere at brukere har tillatelse for ett eller flere brukerstyrte menyelementer som støtter den bestemte arbeidsklassetypene som de skal ha tilgang til. Tillatelser kontrolleres når en bruker forsøker å utføre arbeid fra listen.|
+| Vis liste over åpent arbeid | Vis en liste over tilgjengelig arbeid for en bestemt bruker. Brukeren kan deretter velge arbeid som skal utføres, og vil bli dirigert til det. Denne listen er ment å vises på nettbrett med skjermstørrelser på 7 tommer eller mer. Når du velger dette alternativet, aktiveres menyelementene **Rediger spørring** og **Feltliste**. På siden **Rediger spørring** kan du definere kriterier for arbeid som vises i listen. På siden **Feltliste** kan du velge hvilke felt som vises i arbeidslisten. Du kan for eksempel redusere antall felt som vises, slik at brukeren raskere kan velge det mest aktuelle arbeidselementet. Du kan også velge hvor mange arbeidsposter som skal vises per side, i feltet **Poster per side** i hurtigfanen **Generelt**. Hvis det er merket av for **Tillat brukere å filtrere arbeid etter transaksjonstype** , inkluderer arbeidslisten en **Filtrer arbeid** -kontroll som brukeren kan bruke til å filtrere etter transaksjonstype. Brukere vil bare se arbeid i arbeidslisten som de har tilgang til. Du må kontrollere at brukere har tillatelse for ett eller flere brukerstyrte menyelementer som støtter den bestemte arbeidsklassetypene som de skal ha tilgang til. Tillatelser kontrolleres når en bruker forsøker å utføre arbeid fra listen.|
 | Opprett overføringsordre fra nummerskilt | Lar lagerarbeidere opprette og behandle overføringsordrer direkte fra lagerappen. Lagerarbeiderne begynner ved å velge destinasjonslageret, og deretter kan de skanne én eller flere nummerskilt ved hjelp av appen. Når lagerarbeideren velger **Fullfør ordre** , vil en satsvis jobb opprette den nødvendige overføringsordren og ordrelinjene basert på lagerbeholdningen som er registrert for disse nummerskiltene. Hvis du vil ha mer informasjon, kan du se [Opprette overføringsordrer fra lagerappen](create-transfer-order-from-warehouse-app.md)
 
 
@@ -207,7 +207,7 @@ Du kan definere et menyelement som oppretter arbeid for en annen arbeider etter 
 </table>
 
 ## <a name="configure-menu-items-to-process-existing-work"></a>Konfigurere menyelementer for å behandle eksisterende arbeid
-I tillegg til å definere menyelementer for å opprette lagerarbeid, kan du definere menyelementer til å behandle arbeid som allerede er opprettet. Angi **Modus** -feltet til **Arbeid** , og velg alternativet **Bruk eksisterende arbeid** . Flere alternativer blir deretter tilgjengelig i **Generell** -kategorien. Du kan styre tilgang til menyelementet ved å tilordne én eller flere arbeidsklasser i hurtigkategorien **Arbeidsklasse** . Arbeidsklassene definerer arbeidet som kan behandles av menyelementet. Arbeidsklassen kan også brukes til å gi tilgang til bestemte brukerroller, eller til å skille behandling for ulike typer operasjoner. Følgende tabell beskriver alternativene som er tilgjengelige. Du kan velge alternativet under feltet **Styrt av** på sidden **Menyelementer på mobilenheten** . 
+I tillegg til å definere menyelementer for å opprette lagerarbeid, kan du definere menyelementer til å behandle arbeid som allerede er opprettet. Angi **Modus** -feltet til **Arbeid** , og velg alternativet **Bruk eksisterende arbeid**. Flere alternativer blir deretter tilgjengelig i **Generell** -kategorien. Du kan styre tilgang til menyelementet ved å tilordne én eller flere arbeidsklasser i hurtigkategorien **Arbeidsklasse**. Arbeidsklassene definerer arbeidet som kan behandles av menyelementet. Arbeidsklassen kan også brukes til å gi tilgang til bestemte brukerroller, eller til å skille behandling for ulike typer operasjoner. Følgende tabell beskriver alternativene som er tilgjengelige. Du kan velge alternativet under feltet **Styrt av** på sidden **Menyelementer på mobilenheten**. 
 
 <table>
 
@@ -270,7 +270,7 @@ Dette alternativet er for eksempel nyttig når flere paller klargjøres for en l
 </table>
 
 ## <a name="additional-menu-item-options"></a>Flere alternativer for menyelementer
-Flere alternativer for menyelementer er tilgjengelige på siden **Menyelementer på mobilenheten** . Alternativene varierer avhengig av prosessen som du konfigurerer menyelementet for. 
+Flere alternativer for menyelementer er tilgjengelige på siden **Menyelementer på mobilenheten**. Alternativene varierer avhengig av prosessen som du konfigurerer menyelementet for. 
 
 Tabellen nedenfor beskriver disse alternativene.
 

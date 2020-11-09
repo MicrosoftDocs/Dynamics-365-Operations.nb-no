@@ -8,6 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
+ms.search.form: WHSWorkPolicy
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -15,12 +16,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-07-31
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: 5ea93324547ed81df120db3412ee41fce2a93f4a
-ms.sourcegitcommit: 27233e0fda61dac541c5210ca8d94ab4ba74966f
+ms.openlocfilehash: 08c04caeace7b8ced40915ace1561d817426cba3
+ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/03/2020
-ms.locfileid: "3652011"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4017673"
 ---
 # <a name="work-policies"></a>Arbeidspolicyer
 
@@ -75,7 +76,7 @@ Du kan bruke en lagerlokasjon som er tilordnet en lokasjonsprofil, der **Bruk sp
 
 ### <a name="the-products-fasttab"></a>Hurtigfanen Produkter
 
-På **Produkter**-fanen angir du feltet **Produktvalg** for å kontrollere hvilke produkter policyen skal gjelde for:
+På **Produkter** -fanen angir du feltet **Produktvalg** for å kontrollere hvilke produkter policyen skal gjelde for:
 
 - **Alle** – Policyen skal gjelde for alle produkter.
 - **Valgt** – Policyen skal bare gjelde for produkter som er oppført i rutenettet. Bruk verktøylinjen på hurtigfanen **Produkter** til å legge til produkter i rutenettet eller fjerne dem fra rutenettet.
@@ -98,9 +99,9 @@ Følg denne fremgangsmåten for å konfigurere et menyelement for en mobilenhet 
 
 1. Gå til **Lagerstyring \> Oppsett \> Mobilenhet \> Menyelementer på mobilenheten**.
 1. Velg eller opprett et menyelement som bruker en av arbeidsopprettingsprosessene som er oppført tidligere i denne delen.
-1. På **Generelt**-hurtigfanen angir du **Bruk standarddata**-alternativet til **Ja**.
+1. På **Generelt** -hurtigfanen angir du **Bruk standarddata** -alternativet til **Ja**.
 1. I handlingsruten velger du **Standarddata**.
-1. Angi følgende verdier på siden **Standarddata**:
+1. Angi følgende verdier på siden **Standarddata** :
 
     - **Feltet Standarddata:** Sett dette feltet til *Til lokasjon*.
     - **Lager:** Velg hvilket mållager som skal brukes med dette menyelementet.
@@ -112,7 +113,7 @@ Følg denne fremgangsmåten for å konfigurere et menyelement for en mobilenhet 
 
 ## <a name="example-scenario-warehouse-receiving"></a>Eksempelscenario: Lagermottak
 
-Alle produkter som mottas ved hjelp av prosessen *Mottak (og plassering) av bestillingsvare*, må registreres på lokasjonen *FL-001*, og de må være tilgjengelige på lager *24*. Arbeid bør imidlertid ikke opprettes. Produkter som er mottatt av en annen prosess (det vil si ved hjelp av andre menyelementer for mobilenheter), bør registreres ved standard mottakslokasjon (*RECV*), og arbeid bør opprettes som vanlig. (Dette scenariet viser ikke standard mottaksoppsett.)
+Alle produkter som mottas ved hjelp av prosessen *Mottak (og plassering) av bestillingsvare* , må registreres på lokasjonen *FL-001* , og de må være tilgjengelige på lager *24*. Arbeid bør imidlertid ikke opprettes. Produkter som er mottatt av en annen prosess (det vil si ved hjelp av andre menyelementer for mobilenheter), bør registreres ved standard mottakslokasjon ( *RECV* ), og arbeid bør opprettes som vanlig. (Dette scenariet viser ikke standard mottaksoppsett.)
 
 Dette scenariet krever følgende elementer:
 
@@ -150,7 +151,7 @@ Dette scenarioet bruker standard demonstrasjonsdata. Hvis du vil arbeide deg gje
 
 1. Gå til **Lagerstyring \> Oppsett \> Mobilenhet \> Menyelementer på mobilenheten**.
 1. Velg det eksisterende menyelementet **Kjøpsmottak** i den venstre ruten.
-1. På **Generelt**-hurtigfanen angir du **Bruk standarddata**-alternativet til *Ja*.
+1. På **Generelt** -hurtigfanen angir du **Bruk standarddata** -alternativet til *Ja*.
 1. Velg **Lagre**.
 1. I handlingsruten velger du **Standarddata**.
 1. På siden **Standarddata** velger du **Ny** i handlingsruten for å legge til en rad i rutenettet, og angi deretter følgende verdier for den nye raden:
@@ -170,7 +171,7 @@ Eksemplet i denne delen viser hvordan du mottar en bestillingsvare, men uten å 
 
 1. Gå til **Innkjøp og leverandører \> Bestillinger \> Alle bestillinger**.
 1. Velg **Ny**.
-1. I **Opprett bestilling**-dialogboksen angir du følgende verdier:
+1. I **Opprett bestilling** -dialogboksen angir du følgende verdier:
 
     - **Leverandørkonto:** *US-101*
     - **Område:** *2*
@@ -189,9 +190,9 @@ Eksemplet i denne delen viser hvordan du mottar en bestillingsvare, men uten å 
 
 1. På mobilenheten logger du deg på lager *24* ved å bruke *24* som bruker-ID og *1* som passord.
 1. Velg **Innkommende**.
-1. Velg **Kjøpsmottak**. **Lokasjon**-feltet bør settes til *FL-001*.
+1. Velg **Kjøpsmottak**. **Lokasjon** -feltet bør settes til *FL-001*.
 1. Angi bestillingsnummeret for bestillingen som du opprettet i den forrige fremgangsmåten.
-1. I **VarenummerI**-feltet angir du *A0001*.
+1. I **VarenummerI** -feltet angir du *A0001*.
 1. Velg **OK**.
 1. I feltet **Antall** angi *1*.
 1. Velg **OK**.
@@ -200,7 +201,7 @@ Bestillingen er nå mottatt, men intet arbeid er tilknyttet den. Lagerbeholdning
 
 ## <a name="example-scenario-manufacturing"></a>Eksempelscenario: Produksjon
 
-I eksemplet nedenfor er det to produksjonsordrer, *PRD-001* og *PRD-002*. Produksjonsordren *PRD-001* har en operasjon kalt *Montering*, der produktet *SC1* rapporteres som ferdig til lokasjonen *001*. Produksjonsordren *PRD-002* er en operasjon kalt *Maling*, og den bruker *SC1*-produktet fra lokasjonen *001*. Produksjonsordren *PRD-002* bruker også råvaren *RM1* fra lokasjonen *001*. Råmaterialet *RM1* er lagret i lagerlokasjonen *BULK-001* og blir plukket til lokasjon *001* av lagerarbeid for plukking av råvarer. Plukkarbeidet blir generert når produksjonen *PRD-002* frigis.
+I eksemplet nedenfor er det to produksjonsordrer, *PRD-001* og *PRD-002*. Produksjonsordren *PRD-001* har en operasjon kalt *Montering* , der produktet *SC1* rapporteres som ferdig til lokasjonen *001*. Produksjonsordren *PRD-002* er en operasjon kalt *Maling* , og den bruker *SC1* -produktet fra lokasjonen *001*. Produksjonsordren *PRD-002* bruker også råvaren *RM1* fra lokasjonen *001*. Råmaterialet *RM1* er lagret i lagerlokasjonen *BULK-001* og blir plukket til lokasjon *001* av lagerarbeid for plukking av råvarer. Plukkarbeidet blir generert når produksjonen *PRD-002* frigis.
 
 [![Arbeidspolicyer for lager](./media/warehouse-work-policies.png)](./media/warehouse-work-policies.png)
 
@@ -252,15 +253,15 @@ Lagerprosesser inkluderer ikke alltid lagerarbeid. Ved å definere en arbeidspol
     - **Lokasjon:** *001*
 
 1. På hurtigfanen **Produkter** angir du feltet **Produktvalg** til *Valgt*.
-1. På **Produkter**-hurtigfanen velger du **Legg til** for å legge til en rad i rutenettet.
-1. I den nye raden setter du **Varenummer**-feltet til *L0101*.
+1. På **Produkter** -hurtigfanen velger du **Legg til** for å legge til en rad i rutenettet.
+1. I den nye raden setter du **Varenummer** -feltet til *L0101*.
 1. Velg **Lagre** i handlingsruten.
 
 ### <a name="set-up-an-output-location"></a>Definere en utleveringslokasjon
 
 1. Gå til **Organisasjonsstyring \> Ressurser \> Ressursgrupper**.
 1. Velg ressursgruppe **5102** i den venstre ruten.
-1. Angi følgende verdier i **Generelt**-hurtigfanen:
+1. Angi følgende verdier i **Generelt** -hurtigfanen:
 
     - **Utleveringslager:** *51*
     - **Utleveringssted:** *001*
@@ -274,20 +275,20 @@ Lagerprosesser inkluderer ikke alltid lagerarbeid. Ved å definere en arbeidspol
 
 1. Gå til **Produksjonskontroll \> Produksjonsordrer \> Alle produksjonsordrer**.
 1. Velg **Ny produksjonsordre** i handlingsruten.
-1. I dialogboksen **Opprett produksjonsordre** setter du **Varenummer**-feltet til *L0101*.
+1. I dialogboksen **Opprett produksjonsordre** setter du **Varenummer** -feltet til *L0101*.
 1. Velg **Opprett** for å opprette orden og lukke dialogboksen.
 
     Det legges til en ny produksjons ordre i rutenettet på siden **Alle produksjonsordrer**.
 
     La den nye produksjonsordren være valgt.
 
-1. I handlingsruten, i kategorien **Produksjonsordre**, i **Prosess**-gruppen, velger du **Estimat**.
+1. I handlingsruten, i kategorien **Produksjonsordre** , i **Prosess** -gruppen, velger du **Estimat**.
 1. I dialogboksen **Estimat** leser du estimatet og velger deretter **OK** for å lukke dialogboksen.
-1. I handlingsruten, i kategorien **Produksjonsordre**, i **Prosess**-gruppen, velger du **Start**.
-1. I dialogboksen **Start**, på **Generelt**-fanen, angir du feltet **Automatisk stykklisteforbruk** til *Aldri*.
+1. I handlingsruten, i kategorien **Produksjonsordre** , i **Prosess** -gruppen, velger du **Start**.
+1. I dialogboksen **Start** , på **Generelt** -fanen, angir du feltet **Automatisk stykklisteforbruk** til *Aldri*.
 1. Velg **OK** for å lagre innstillingen og lukke dialogboksen.
-1. I handlingsruten, i kategorien **Produksjonsordre**, i **Prosess**-gruppen, velger du **Ferdigmeld**.
-1. I dialogboksen **Ferdigmeld**, på **Generelt**-fanen, setter du **Godtar feil** til *Ja*.
+1. I handlingsruten, i kategorien **Produksjonsordre** , i **Prosess** -gruppen, velger du **Ferdigmeld**.
+1. I dialogboksen **Ferdigmeld** , på **Generelt** -fanen, setter du **Godtar feil** til *Ja*.
 1. Velg **OK** for å lagre innstillingen og lukke dialogboksen.
 1. Velg **Arbeidsdetaljer** i gruppen **Generelt** i kategorien **Lager** i handlingsruten.
 

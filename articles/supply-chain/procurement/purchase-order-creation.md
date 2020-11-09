@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: PurchTable
+ms.search.form: PurchTable, PurchTablePart
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations, Retail
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 16e6170bdc8f0adcefbe310fcbf61c06aa68f02d
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 206d6d6769d1dedcbfefa589fd72903e65a25ba6
+ms.sourcegitcommit: e3f4dd2257a3255c2982f4fc7b72a1121275b88a
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3207977"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4018796"
 ---
 # <a name="create-purchase-orders"></a>Opprette bestillinger
 
@@ -35,7 +35,7 @@ Når du oppretter en bestilling, angis generell informasjon om hele ordren i bes
 
 Du kan også opprette bestillinger ved å kopiere linjer fra et annet bestillingsdokument eller en salgsordre. I slike tilfeller kan du snu fortegnet på beholdningen, slik du vil snu fortegnet på en faktura for å angi kreditnota.  
 
-Selv om du kan opprette bestillinger manuelt, genereres de vanligvis fra andre prosesser. Ordre kan opprettes automatisk basert på andre dokumenter, for eksempel rekvisisjoner. De kan også opprettes som en del av hovedplanleggingsprosessen gjennom planlagte bestillinger. Hvis du bruker kjøpsavtaler, kan bestillinger opprettes av **Frigivelsesordre**-handlingen. Det er også mer avanserte metoder for å automatisk opprette en bestilling. Bestillinger kan for eksempel opprettes når du bruker direktelevering eller konserninterne bestillingskjeder.
+Selv om du kan opprette bestillinger manuelt, genereres de vanligvis fra andre prosesser. Ordre kan opprettes automatisk basert på andre dokumenter, for eksempel rekvisisjoner. De kan også opprettes som en del av hovedplanleggingsprosessen gjennom planlagte bestillinger. Hvis du bruker kjøpsavtaler, kan bestillinger opprettes av **Frigivelsesordre** -handlingen. Det er også mer avanserte metoder for å automatisk opprette en bestilling. Bestillinger kan for eksempel opprettes når du bruker direktelevering eller konserninterne bestillingskjeder.
 
 ## <a name="creating-a-purchase-order-header"></a>Opprette et bestillingshode
 Når du oppretter en ny bestilling, vises en dialogboks der du kan angi den vanligste informasjonen for bestillingshodet. Når du klikker **OK** for å lukke dialogboksen, opprettes bestillingen, og du kan deretter angi tilleggsinformasjon i hodet.  
@@ -63,21 +63,21 @@ Du kan kontrollere detaljene for lagertransaksjonsstatus for lagerførte produkt
 
 En bestillingslinjen som brukes til å returnere et produkt til leverandøren har et negativt antall. Du kan velge et bestemt parti å returnere ved hjelp av handlingen **Reservering**.  
 
-Noen ganger vil du kanskje dele antallet du har bestilt, slik at ulike deler av det leveres på forskjellige datoer. Du kan definere disse leveringene ved hjelp av handlingen **Leveringsplan**, som er tilgjengelig på **Bestillingslinje**-menyen i visningen **Linjer**.  
+Noen ganger vil du kanskje dele antallet du har bestilt, slik at ulike deler av det leveres på forskjellige datoer. Du kan definere disse leveringene ved hjelp av handlingen **Leveringsplan** , som er tilgjengelig på **Bestillingslinje** -menyen i visningen **Linjer**.  
 
 Tillegg kan legges automatisk til bestillingslinjer hvis automatiske tillegg er definert for leverandøren eller leverandørtilleggsgruppen, og for varen eller varens kostnadsgruppe. Imidlertid legges vanligvis tillegg til manuelt på ordrelinjenivå. Hvis du vil legge til et tillegg, åpner du siden **Vedlikehold tillegg** ved hjelp av handlingen **Vedlikehold tillegg** på siden **Finans** -menyen i visningen **Linjer**. Fordelen med å legge til tillegg direkte på ordrelinjenivå er at tillegget kan tildeles som en lagerkost. Hvis du vil definere tilleggskoder for kontoproduktkostnader, bruker du debetalternativet **Vare**. Disse tilleggstypene må tildeles fra bestillingshodet til linjene før ordren kan bekreftes. Du kan for eksempel tilordne tillegg basert på antallet på hver linje. Kategorien for tillegg påvirker også hvordan tillegg etterberegnes. Faste tillegg angir for eksempel et fast beløp, og prosenttillegg beregnes som en prosent av nettobeløpet for ordrelinjen. Bestillinger kan tilordnes til en last, og lasten kan inneholde et estimat over den forventede kostnaden for transportkostnadene. Du kan tildele denne utgiften fra lasten tilbake til bestillingslinjene.
 
 ## <a name="purchase-order-actions"></a>Bestillingshandlinger
 Når du har lagt til hodet og linjene i bestillingen, må du ofte fullføre flere trinn før bestillingen er klar til å bli bekreftet. Fordi så mange alternativer er tilgjengelige, kan det være nyttig å bruke [Handlingsøk](../../fin-and-ops/get-started/action-search.md) for å finne det relevante menyelementet.  
 
-Du kan konfigurere produkter i ordren, slik at de har tilleggsvarer. Tilleggsvarer er varer som må eller kan kjøpes sammen med andre produkter. Tilleggsprodukter kan legges til kostnadsfritt som medfølgende produkter, eller du kan avgjøre om du vil legge dem til i ordren eller ikke. Du kan se gjennom tilleggsvarene etter hver ordrelinje som legges til. Du vil imidlertid sannsynligvis finne det enklere å se gjennom og legge til relevante tilleggsvarer for alle ordrelinjene ved hjelp av siden **Tilleggsvarer**, som du kan åpne i handlingsruten.  
+Du kan konfigurere produkter i ordren, slik at de har tilleggsvarer. Tilleggsvarer er varer som må eller kan kjøpes sammen med andre produkter. Tilleggsprodukter kan legges til kostnadsfritt som medfølgende produkter, eller du kan avgjøre om du vil legge dem til i ordren eller ikke. Du kan se gjennom tilleggsvarene etter hver ordrelinje som legges til. Du vil imidlertid sannsynligvis finne det enklere å se gjennom og legge til relevante tilleggsvarer for alle ordrelinjene ved hjelp av siden **Tilleggsvarer** , som du kan åpne i handlingsruten.  
 
 Rabatter legges vanligvis til linjer når de opprettes. Noen få rabatter gjelder imidlertid hele ordren:
 
 -   Handlingen **Sluttrabatt** beregner en sluttrabattprosent som gjelder for hele ordren. Du må ikke forveksle denne rabatten med kontantrabattprosenten. Kontantrabatter brukes når fakturaen betales, og de er avhengige av betalingsutligning innen en bestemt dato.
 -   Hvis en samkjøpsrabatt gjelder, må du bruke handlingen **Samkjøpsrabatt** til å beregne og tilordne den til ordren. Samkjøpsrabatter er rabatter som kan tilbys hvis en blanding av produkter i ordren, overskrider en fellesterskel. Bare noen få selskaper bruker denne typen rabatt.
 
-Tillegg som har en tilleggskode som bruker debettypen **Vare**, må tilordnes til linjenivå før ordren kan bekreftes. Det kan være nyttig å tilordne disse tilleggene på ordrehodenivå, slik at du kan angi det totale beløpet for tillegget. I dette tilfellet må imidlertid tillegget deretter tildeles ned til hver linje før ordren kan bekreftes. Du kan bruke handlingen **Tilordne tillegg** for å skille beløp fra tillegg som er tilordnet på hodenivå og ned til ordrelinjene. Tillegg kan skilles i henhold til nettobeløpet for hver linje, i henhold til antallet som er bestilt eller jevnt fordelt over ordrelinjene. Når du har tildelt tilleggene til linjene, fjernes tillegget fra ordrehodet.  
+Tillegg som har en tilleggskode som bruker debettypen **Vare** , må tilordnes til linjenivå før ordren kan bekreftes. Det kan være nyttig å tilordne disse tilleggene på ordrehodenivå, slik at du kan angi det totale beløpet for tillegget. I dette tilfellet må imidlertid tillegget deretter tildeles ned til hver linje før ordren kan bekreftes. Du kan bruke handlingen **Tilordne tillegg** for å skille beløp fra tillegg som er tilordnet på hodenivå og ned til ordrelinjene. Tillegg kan skilles i henhold til nettobeløpet for hver linje, i henhold til antallet som er bestilt eller jevnt fordelt over ordrelinjene. Når du har tildelt tilleggene til linjene, fjernes tillegget fra ordrehodet.  
 
 Bestillinger kan konfigureres til å kreve at budsjettmidler fordeles til ordren før den kan behandles. I slike tilfeller kan du bruke handlingen **Budsjettkontroll** for å fordele budsjettet.  
 

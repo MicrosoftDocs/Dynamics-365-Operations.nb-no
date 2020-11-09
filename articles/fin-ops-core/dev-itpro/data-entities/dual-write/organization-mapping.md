@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: rhaertle
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,18 +18,16 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: fc5db8d04a2860df0c917816e2910c6fbda941ff
-ms.sourcegitcommit: 68f1485de7d64a6c9eba1088af63bd07992d972d
+ms.openlocfilehash: f502519ba419cb8fa322eb1d22f06d2b805f5f05
+ms.sourcegitcommit: afc43699c0edc4ff2be310cb37add2ab586b64c0
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "3173160"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "4000740"
 ---
 # <a name="organization-hierarchy-in-common-data-service"></a>Organisasjonshierarki i Common Data Service
 
 [!include [banner](../../includes/banner.md)]
-
-
 
 Fordi Dynamics 365 Finance er et finansielt system, er *organisasjon* et kjernekonsept, og systemoppsettet starter med konfigurasjonen av et organisasjonshierarki. Forretningsøkonomi kan deretter spores på organisasjonsnivå og også på et hvilket som helst nivå i organisasjonshierarkiet.
 
@@ -41,8 +38,6 @@ Selv om Common Data Service ikke har konseptet med et organisasjonshierarki, har
 Et forretningsøkosystem som består av Finance and Operations-apper og Common Data Service, vil fortsatt ha et organisasjonshierarki. Dette organisasjonshierarkiet er bygd på Finance and Operations-apper, men det eksponeres i Common Data Service for informasjons- og utvidelsesformål. Illustrasjonen nedenfor viser informasjon om organisasjonshierarkiet som vises i Common Data Service, som en énveis dataflyt fra Finance and Operations-apper til Common Data Service.
 
 ![Bilde av arkitektur](media/dual-write-data-flow.png)
-
-## <a name="templates"></a>Maler
 
 Enhetstilordninger for organisasjonshierarki er tilgjengelige for enveissynkronisering av data fra Finance and Operations-apper til Common Data Service.
 
@@ -55,10 +50,9 @@ Finance and Operations-apper | Andre Dynamics 365-apper | beskrivelse
 Formål for organisasjonshierarki | msdyn_internalorganizationhierarchypurposes | Denne malen gir enveis synkronisering av formålsenheten for organisasjonshierarkiet.
 Type organisasjonshierarki | msdyn_internalorganizationhierarchytypes | Denne malen gir enveis synkronisering av typeenheten for organisasjonshierarkiet.
 Organisasjonshierarki - publisert | msdyn_internalorganizationhierarchies | Denne malen gir enveis synkronisering av den publiserte enheten for organisasjonshierarkiet.
-Driftsenhet | msdyn_internalorganizations | 
-Juridiske enheter | msdyn_internalorganizations | 
+Driftsenhet | msdyn_internalorganizations |
+Juridiske enheter | msdyn_internalorganizations |
 Juridiske enheter | cdm_companies | Gir toveis synkronisering av informasjon om juridisk enhet (firma).
-
 
 [!include [banner](../../includes/dual-write-symbols.md)]
 
@@ -77,4 +71,3 @@ Informasjon om intern organisasjon i Common Data Service kommer fra to enheter, 
 [!include [Legal entities](includes/LegalEntities-msdyn-internalorganizations.md)]
 
 [!include [Legal entities](includes/LegalEntities-Companies.md)]
-

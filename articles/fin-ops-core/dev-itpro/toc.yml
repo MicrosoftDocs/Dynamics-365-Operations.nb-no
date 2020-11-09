@@ -142,8 +142,10 @@
                           items:
                             - name: Systemkrav for dobbel skriving
                               href: data-entities/dual-write/dual-write-system-req.md
-                            - name: Scenarier som støttes for oppsett av dobbel skriving
+                            - name: Veiledning for hvordan du konfigurerer dobbel skriving
                               href: data-entities/dual-write/connection-setup.md
+                            - name: Hensyn ved innledende synkronisering
+                              href: data-entities/dual-write/initial-sync-guidance.md
                             - name: Oppsett av dobbel skriving fra Lifecycle Services
                               href: data-entities/dual-write/lcs-setup.md
                             - name: Aktivere dobbel skriving for eksisterende apper i Finance and Operations
@@ -404,6 +406,8 @@
                   href: database/database-point-in-time-restore.md
                 - name: Tidsgjenoppretting av produksjonsdatabasen til et sandkassemiljø
                   href: database/database-pitr-prod-sandbox.md
+                - name: Aktivere just-in-time-databasetilgang
+                  href: database/database-just-in-time-jit-access.md
             - name: Opplæringer
               items:
                 - name: Oppdatering for opplæringsformål
@@ -480,6 +484,8 @@
                   href: deployment/Update-retail-channel.md
                 - name: Initialisere Commerce Scale Unit (sky)
                   href: deployment/Initialize-Retail-Channels.md
+                - name: Overføre kanaler til en annen Commerce Scale Unit
+                  href: deployment/Reassign-CSU.md
                 - name: Datalagring i Retail
                   href: deployment/retail-data-residency.md
             - name: Lokal distribusjon
@@ -1458,9 +1464,9 @@
               href: 'https://docs.microsoft.com/power-platform/admin/support-overview?toc=/dynamics365/fin-ops-core/dev-itpro/toc.json&bc=/dynamics365/breadcrumb/toc.json'
             - name: Få støtte for Finance and Operations som styres av 21Vianet i Kina
               href: lifecycle-services/21vianet-support.md
-            - name: Konfigurere kundestøtte for Finance and Operations
+            - name: Konfigurere kundestøtte for Finance and Operations-apper
               href: lifecycle-services/support-experience.md
-            - name: Behandle kundestøtteopplevelser for Finance and Operations
+            - name: Behandle kundestøtteopplevelser for Finance and Operations-apper
               href: lifecycle-services/cloud-powered-support-lcs.md
         - name: Systemadministrasjon
           items:

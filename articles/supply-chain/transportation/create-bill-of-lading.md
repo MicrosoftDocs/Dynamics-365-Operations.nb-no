@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: WHSBillOfLading, WHSLoadPlanningWorkbench
+ms.search.form: WHSBillOfLading, WHSLoadPlanningWorkbench, WHSBillOfLadingCarrier, WHSBillOfLadingOrder
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 05ad5d4b49f1fa50bde7df9c835ee99a981420c4
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: bd014f5804681936920b47e999709f153def11bc
+ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3206317"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4016684"
 ---
 # <a name="create-a-bill-of-lading"></a>Opprett et fraktbrev
 
@@ -33,13 +33,13 @@ Dette emnet beskriver hvordan du oppretter et fraktbrev ved hjelp av lagerstyrin
 
 Et fraktbrev er et juridisk dokument mellom firmaet som leverer varene, og transportøren. Dokumentet følger med de leverte varene og fungerer som en kvittering for forsendelsen når varene blir levert til målet. Hvis du bruker lagerstyring, er det to måter å generere et fraktbrev på:
 
-  -   Opprette rapporten manuelt på **Fraktbrev**-siden.
+  -   Opprette rapporten manuelt på **Fraktbrev** -siden.
   -   Generere rapporten fra **arbeidsområdet for lastplanlegging**.
 
-Hvis du genererer fraktbrevet fra **arbeidsområdet for lastplanlegging**, må laststatusen være **Sendt.** Hvis det er mer enn én forsendelse i lasten, opprettes et fraktbrev for hver forsendelse. Når et fraktbrev er opprettet, kan du kan gjøre endringer i det på **Fraktbrev**-siden.
+Hvis du genererer fraktbrevet fra **arbeidsområdet for lastplanlegging** , må laststatusen være **Sendt.** Hvis det er mer enn én forsendelse i lasten, opprettes et fraktbrev for hver forsendelse. Når et fraktbrev er opprettet, kan du kan gjøre endringer i det på **Fraktbrev** -siden.
 
 ## <a name="master-bill-of-lading"></a>Hovedfraktbrev
-Hvis det er mer enn én forsendelse i lasten, kan du generere et hovedfraktbrev. Dette har samme oppsett og informasjon som et fraktbrev, men inneholder en oppsummering av alle forsendelsene. Hvis alternativet **Opprett et hovedfraktbrev når det er mer enn én forsendelse i en last** er satt til **Ja** på **Parametere for transportstyring**-siden, genereres automatisk et hovedfraktbrev hvis du oppretter et fraktbrev fra **Arbeidsområde for lastplanlegging**, og det er mer enn én forsendelse. Du kan også få en oversikt over fraktbrev ved å klikke **Relatert informasjon** &gt; **Fraktbrev**. Hvis du oppretter fraktbrev manuelt, kan du opprette et hovedfraktbrev på **Fraktbrev**-siden.
+Hvis det er mer enn én forsendelse i lasten, kan du generere et hovedfraktbrev. Dette har samme oppsett og informasjon som et fraktbrev, men inneholder en oppsummering av alle forsendelsene. Hvis alternativet **Opprett et hovedfraktbrev når det er mer enn én forsendelse i en last** er satt til **Ja** på **Parametere for transportstyring** -siden, genereres automatisk et hovedfraktbrev hvis du oppretter et fraktbrev fra **Arbeidsområde for lastplanlegging** , og det er mer enn én forsendelse. Du kan også få en oversikt over fraktbrev ved å klikke **Relatert informasjon** &gt; **Fraktbrev**. Hvis du oppretter fraktbrev manuelt, kan du opprette et hovedfraktbrev på **Fraktbrev** -siden.
 
 
 

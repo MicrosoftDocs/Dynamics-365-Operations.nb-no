@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: roschlom
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: c240e11394582ad1af563ee4a8e58632babfff3a
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.openlocfilehash: b02bfd83cfc4f1585c9044ebca8b20413042124a
+ms.sourcegitcommit: d61c43b6bc04bb8786aa3c47932be0ccd84ebaeb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3976385"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "4006172"
 ---
 # <a name="cost-rollup-policy-and-overhead-calculation"></a>Policy for opprullet kost og beregning av administrasjonskostnader 
 
@@ -76,7 +76,7 @@ Et dimensjonshierarki som oppfyller organisasjonens rapporteringskrav, kan defin
 
 **Dimensjonshierarki**
 
-|              | Dimensjonsmedlemsområder |                     |
+|    &nbsp;    | Dimensjonsmedlemsområder | &nbsp;              |
 |--------------|-------------------------|---------------------|
 | **Noder**        | **Fra dimensjonsmedlem**   | **Til dimensjonsmedlem** |
 | Organisasjon |                         |                     |
@@ -97,7 +97,7 @@ Et dimensjonshierarki som oppfyller policykravene, kan defineres som følger.
 
 **Dimensjonshierarki**
 
-|                         | Dimensjonsmedlemsområder |                     |
+|      &nbsp;             | Dimensjonsmedlemsområder |      &nbsp;         |
 |-------------------------|-------------------------|---------------------|
 | Noder                   | Fra dimensjonsmedlem   | Til dimensjonsmedlem |
 | Resultatregnskap |                         |                     |
@@ -105,7 +105,7 @@ Et dimensjonshierarki som oppfyller policykravene, kan defineres som følger.
 
 Etter at økonomimoduloppføringene er behandlet, ser kostnadsoppføringssaldoen etter kostnadsobjekt slik ut.
 
-|                      | **Kostnadsobjekt** |           |           |           | **Total**     |
+|      &nbsp;          | **Kostnadsobjekt** | &nbsp;    |  &nbsp;   |  &nbsp;   | **Total**     |
 |----------------------|-----------------|-----------|-----------|-----------|---------------|
 | **Kostnadselement**     | **CC001**       | **CC002** | **CC003** | **CC004** |               |
 | **1001 Strøm** | 100,00          | 200 00    | 6.000,00  | 2.000,00  | **8.300,00**  |
@@ -159,7 +159,7 @@ Hvis du vil vite hvordan kostnad flyter mellom kostsentrene i organisasjonen, ka
 
 Medlemmer av dimensjon for kostnadselement kan defineres som følger.
 
-| Kostnadselementer | Type          |               |
+| Kostnadselementer | Type          |     &nbsp;    |
 |---------------|---------------|---------------|
 | 1001          | Strøm   | Primær       |
 | 1 002          | Lønn      | Primær       |
@@ -179,14 +179,14 @@ Dimensjonshierarkiet **Resultatregnskap** må oppdateres med de nye dimensjonsme
 
 **Dimensjonshierarki**
 
-|                         | Dimensjonsmedlemsområder |                     |
+|      &nbsp;             | Dimensjonsmedlemsområder |  &nbsp;             |
 |-------------------------|-------------------------|---------------------|
 | Noder                   | Fra dimensjonsmedlem   | Til dimensjonsmedlem |
 | Resultatregnskap |                         |                     |
 | &nbsp;&nbsp;&nbsp;&nbsp;Primær kostnad                        | 10001                   | 10003               |
 | &nbsp;&nbsp;&nbsp;&nbsp;Sekundær kostnad                         | **SC-CC001**            | **SC-CC004**        |
 
-Opprett en **Policy for opprullet kost** der hvert kostsenter er tilordnet til et tilsvarende kostnadselement av typen **Sekundær** .
+Opprett en **Policy for opprullet kost** der hvert kostsenter er tilordnet til et tilsvarende kostnadselement av typen **Sekundær**.
 
 **Policyer for opprullet kost**
 
@@ -211,7 +211,7 @@ Opprett en **Policy for opprullet kost** der hvert kostsenter er tilordnet til e
 |---------|-------------------------|------------------------|------|--------|---------------|
 | 00002   | Kostfordelingsjournal | Skattemessig                 | 2017    | Periode 1 | Beregning av indirekte kostnader / 02.01.2017 23.51.00 / Finans /2017 / Periode 1 |
 
-Systemet bruker nå **Policy for opprullet kost** når det oppretter **Journaloppføringer for kostnadsobjektsaldo** .
+Systemet bruker nå **Policy for opprullet kost** når det oppretter **Journaloppføringer for kostnadsobjektsaldo**.
 
 **Journaloppføringer for kostnadsobjektsaldo**
 
@@ -258,7 +258,7 @@ Dimensjonshierarkiene gjør at du kan vise dataene på ulike aggregeringsnivåer
 
 Her er et eksempel på Power Pivot-rapportering i Excel.
 
-| **Resultatregnskap** | **Kostnadsobjekt** |                |               |               |  **Sum**    |
+| **Resultatregnskap** | **Kostnadsobjekt** |      &nbsp;    |   &nbsp;      |     &nbsp;    |  **Sum**    |
 |-----------------------------|-----------------|----------------|---------------|---------------|---------------|
 |                             | **CC001**       | **CC002**      | **CC003**     | **CC004**     |               |
 | **Primær kostnad**            | **10.100,00**   | **14.200,00**  | **14.000,00** | **8.500,00**  | **46.800,00** |
@@ -272,11 +272,11 @@ Her er et eksempel på Power Pivot-rapportering i Excel.
 |&nbsp;&nbsp;&nbsp;&nbsp;SC-CC004                             | 0,00            | 0,00           | 0,00          | 0,00          | 0,00          |
 | **Total**                   | **0,00**        | **0,00**       | **31.082,75** | **15.717,25** | **46.800,00** |
 
-Du kan bruke **Policy for opprullet kost** og **Kostnadselementer av typen sekundær** til å la den primære kostnaden per kostnadsobjekt for intern rapportering være den primære kostnaden som gjenstår etter **Beregning av indirekte kostnader** .
+Du kan bruke **Policy for opprullet kost** og **Kostnadselementer av typen sekundær** til å la den primære kostnaden per kostnadsobjekt for intern rapportering være den primære kostnaden som gjenstår etter **Beregning av indirekte kostnader**.
 
 Hvis det samme eksemplet hadde blitt utført uten å opprette **Policy for opprullet kost** , hadde rapportresultatet blitt vist som nedenfor. Kostnaden flyter riktig, men sporbarheten og innsikten i hvordan kostnaden flyter mellom kostsentrene, går tapt.
 
-| **Resultatregnskap** | **Kostnadsobjekt** |           |               |               |          **Total**  |
+| **Resultatregnskap** | **Kostnadsobjekt** |   &nbsp;  |    &nbsp;     |  &nbsp;       |          **Total**  |
 |-----------------------------|-----------------|-----------|---------------|---------------|---------------|
 |                             | **CC001**       | **CC002** | **CC003**     | **CC004**     |               |
 | **Primær kostnad**            | **0,00**        | **0,00**  | **31.082,75** | **15.717,25** | **46.800,00** |

@@ -17,17 +17,16 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: e07bf02f10c943947fdf9ed3333373b859ff5b6c
-ms.sourcegitcommit: 8028fbc5b9585e87d3331ea02577ff82ede090af
+ms.openlocfilehash: beb705852be99ce817997d7017c41a0159f75419
+ms.sourcegitcommit: 69075e001d1fb4ef69282667052cd8d082273094
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "3817091"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4022035"
 ---
 # <a name="buy-box-module"></a>Kjøpsboksmodul
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
 
 Dette emnet dekker kjøpsboksmoduler og beskriver hvordan du legger dem til områdesider i Microsoft Dynamics 365 Commerce.
 
@@ -69,14 +68,14 @@ Temaer kan brukes til å fjerne eller endre rekkefølgen på produktegenskaper o
 
 ## <a name="buy-box-module-settings"></a>Innstillinger for kjøpsboksmodul
 
-Følgende innstillinger for kjøpsboks-modulen kan konfigureres under **Områdeinnstillinger \> Utvidelser**:
+Følgende innstillinger for kjøpsboks-modulen kan konfigureres under **Områdeinnstillinger \> Utvidelser** :
 
 - **Antallsgrense for handlevogn-linjeelement** – Denne egenskapen brukes til å angi maksimalt antall for hver vare som kan legges til i handlekurven. En forhandler kan for eksempel bestemme at bare 10 av hvert produkt kan selges i en enkelt transaksjon.
 - **Beholdning** – Hvis du vil ha informasjon om hvordan du bruker beholdningsinnstillinger, kan du se [Bruk beholdningsinnstillinger](inventory-settings.md).
-- **Legg til i handlekurv** – denne egenskapen brukes til å angi atferden etter at en vare er lagt til i handlekurven. De mulige verdiene er **Naviger til handlekurv**, **Ikke naviger til handlekurv** og **Vis varsler**. Når verdien er satt til **Naviger til handlevogn**, sendes brukerne til handlekurvsiden når de har lagt til en vare. Når verdien er satt til **Ikke naviger til handlevogn**, sendes ikke brukerne til handlekurvsiden når de har lagt til en vare. Når verdien er satt til **Vis varsler**, vises det en bekreftelsesmelding, og brukerne kan fortsette å søke på siden med produktinformasjon. 
+- **Legg til i handlekurv** – denne egenskapen brukes til å angi atferden etter at en vare er lagt til i handlekurven. De mulige verdiene er **Naviger til handlekurv** , **Ikke naviger til handlekurv** og **Vis varsler**. Når verdien er satt til **Naviger til handlevogn** , sendes brukerne til handlekurvsiden når de har lagt til en vare. Når verdien er satt til **Ikke naviger til handlevogn** , sendes ikke brukerne til handlekurvsiden når de har lagt til en vare. Når verdien er satt til **Vis varsler** , vises det en bekreftelsesmelding, og brukerne kan fortsette å søke på siden med produktinformasjon. 
 
 > [!IMPORTANT]
-> Innstillingene for **Legg til på kurv**-området er tilgjengelige i Dynamics 365 Commerce 10.0.11-versjonen. Hvis du oppdaterer fra en eldre versjon av Dynamics 365 Commerce, må du manuelt oppdatere appsettings.json-filen. Hvis du vil ha instruksjoner om oppdatering av appsettings.json-filen, se [Oppdateringer for SDK og modulbibliotek](e-commerce-extensibility/sdk-updates.md#update-the-appsettingsjson-file). 
+> Innstillingene for **Legg til på kurv** -området er tilgjengelige i Dynamics 365 Commerce 10.0.11-versjonen. Hvis du oppdaterer fra en eldre versjon av Dynamics 365 Commerce, må du manuelt oppdatere appsettings.json-filen. Hvis du vil ha instruksjoner om oppdatering av appsettings.json-filen, se [Oppdateringer for SDK og modulbibliotek](e-commerce-extensibility/sdk-updates.md#update-the-appsettingsjson-file). 
 
 Følgende bilde viser et eksempel på bekreftelsesmeldingen "lagt til i handlekurv" på Fabrikam-området.
 
@@ -90,27 +89,27 @@ Modulen kjøpsboks henter produktinformasjon ved hjelp av API-er for Commerce Sc
 
 Hvis du vil legge til en kjøpsboksmodul på en ny side og angi de nødvendige egenskapene, følger du disse trinnene.
 
-1. Gå til **Fragmenter**, og velg **Nytt** for å opprette et nytt sidefragment.
-1. I dialogboksen **Nytt fragment** velger du **Kjøpsboks**-modulen.
-1. Under **Navn på fragment** angir du navnet **Kjøpsboksfragmentet**, og deretter velger du **OK**.
-1. I **Mediegalleri**-sporet i kjøpsboksmodulen velger du ellipseknappen (**…**), og deretter velger du **Legg til modul**.
-1. I dialogboksen **Legg til modul** velger du **Mediegalleri**-modulen, og deretter velger du **OK**.
-1. I **Butikkvelger**-sporet i kjøpsboksmodulen velger du ellipseknappen (**…**), og deretter velger du **Legg til modul**.
-1. I dialogboksen **Legg til modul** velger du **Butikkvelger**-modulen, og deretter velger du **OK**.
-1. Velg **Lagre**, velg **Fullfør redigering** for å sjekke inn fragmentet, og velg deretter **Publiser** for å publisere det.
-1. Gå til **Maler**, og velg **Ny** for å opprette en ny mal.
-1. I dialogboksen **Ny mal**, under **Malnavn**, angir du **PDP-mal**, og velger deretter **OK**.
-1. I **Tekst**-sporet velger du ellipsen (**…**), og deretter velger du **Legg til modul**.
-1. I dialogboksen **Legg til modul** velger du **Standardside**-modulen, og deretter velger du **OK**.
-1. På **Hoved**-sporet på standardsiden velger du ellipseknappen (**...**), og deretter velger du **Legg til fragment**.
+1. Gå til **Fragmenter** , og velg **Nytt** for å opprette et nytt sidefragment.
+1. I dialogboksen **Nytt fragment** velger du **Kjøpsboks** -modulen.
+1. Under **Navn på fragment** angir du navnet **Kjøpsboksfragmentet** , og deretter velger du **OK**.
+1. I **Mediegalleri** -sporet i kjøpsboksmodulen velger du ellipseknappen ( **…** ), og deretter velger du **Legg til modul**.
+1. I dialogboksen **Legg til modul** velger du **Mediegalleri** -modulen, og deretter velger du **OK**.
+1. I **Butikkvelger** -sporet i kjøpsboksmodulen velger du ellipseknappen ( **…** ), og deretter velger du **Legg til modul**.
+1. I dialogboksen **Legg til modul** velger du **Butikkvelger** -modulen, og deretter velger du **OK**.
+1. Velg **Lagre** , velg **Fullfør redigering** for å sjekke inn fragmentet, og velg deretter **Publiser** for å publisere det.
+1. Gå til **Maler** , og velg **Ny** for å opprette en ny mal.
+1. I dialogboksen **Ny mal** , under **Malnavn** , angir du **PDP-mal** , og velger deretter **OK**.
+1. I **Tekst** -sporet velger du ellipsen ( **…** ), og deretter velger du **Legg til modul**.
+1. I dialogboksen **Legg til modul** velger du **Standardside** -modulen, og deretter velger du **OK**.
+1. På **Hoved** -sporet på standardsiden velger du ellipseknappen ( **...** ), og deretter velger du **Legg til fragment**.
 1. I dialogboksen **Velg fragment** velger du **Kjøpsboksfragmentet** du opprettet tidligere, og deretter velger du **OK**.
-1. Velg **Lagre**, velg **Fullfør redigering** for å sjekke inn malen, og velg deretter **Publiser** for å publisere den.
-1. Gå til **Sider**, og velg **Ny** for å opprette en ny side.
-1. I **Velg en mal**-dialogboksen velger du **PDP-mal**. Under **Sidenavn** angir du **PDP-side**, og velger deretter **OK**.
-1. På **Hoved**-sporet på den nye siden velger du ellipseknappen (**...**), og deretter velger du **Legg til fragment**.
+1. Velg **Lagre** , velg **Fullfør redigering** for å sjekke inn malen, og velg deretter **Publiser** for å publisere den.
+1. Gå til **Sider** , og velg **Ny** for å opprette en ny side.
+1. I **Velg en mal** -dialogboksen velger du **PDP-mal**. Under **Sidenavn** angir du **PDP-side** , og velger deretter **OK**.
+1. På **Hoved** -sporet på den nye siden velger du ellipseknappen ( **...** ), og deretter velger du **Legg til fragment**.
 1. I dialogboksen **Velg fragment** velger du **Kjøpsboksfragmentet** du opprettet tidligere, og deretter velger du **OK**.
 1. Lagre og forhåndsvis siden. Legg til spørringsstrengparameteren **?productid=&lt;product id&gt;** i URL-adressen for forhåndsvisningssiden. På den måten brukes produktkonteksten til å laste inn og gjengi forhåndsvisningssiden.
-1. Velg **Lagre**, velg **Fullfør redigering** for å sjekke inn siden, og velg deretter **Publiser** for å publisere den. En kjøpsboks skal vises på siden for produktdetaljer.
+1. Velg **Lagre** , velg **Fullfør redigering** for å sjekke inn siden, og velg deretter **Publiser** for å publisere den. En kjøpsboks skal vises på siden for produktdetaljer.
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 

@@ -8,6 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
+ms.search.form: InventLocation,CustVendTransportPoint2Point
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -15,12 +16,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2018-4-30
 ms.dyn365.ops.version: 8
-ms.openlocfilehash: aa5786df72f87da992f1020bbaaa1c2185adf043
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: e482567eb92b9ab891d41d82d10cbb87f9b7fb01
+ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3216719"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4017489"
 ---
 # <a name="set-up-warehouses-for-transfer-orders"></a>Definere lagre for overføringsordrer 
 
@@ -32,9 +33,9 @@ Du kan bruke lagernivåer for å opprette et hierarki som støtter overføringso
 
 2.  Velg lageret du vil fylle på.
 
-3.  På **Hovedplanlegging**-hurtigkategorien merker du av for **Påfylling**.
+3.  På **Hovedplanlegging** -hurtigkategorien merker du av for **Påfylling**.
 
-4.  I **Hovedlager**-feltet velger du lageret du vil tilordne som påfyllingslager. Hovedplanleggingen beregner et overføringsbehov for det valgte lager og genererer en planlagt overføringsordre fra tilordnet **Hovedlager**.
+4.  I **Hovedlager** -feltet velger du lageret du vil tilordne som påfyllingslager. Hovedplanleggingen beregner et overføringsbehov for det valgte lager og genererer en planlagt overføringsordre fra tilordnet **Hovedlager**.
    
     > [!NOTE]
     > <P>Hvis du fjerner merket for <STRONG>Påfylling</STRONG>, blir det valgte lageret tilordnet et lagernivå i forhold til <STRONG>Hovedlager</STRONG>, men <STRONG>Hovedlager</STRONG> blir ikke definert som et påfyllingslager.</P>
@@ -49,6 +50,6 @@ Du kan bruke lagernivåer for å opprette et hierarki som støtter overføringso
 
 Du må også definere leveringstiden for transport mellom lagrene på siden **Transportdager**. 
 1. Gå til **Lagerstyring > Oppsett > Distribusjon > Transportdager**.
-2. I **Mottakspunkt**-feltet velger du **lager**.
-3. Velg **Leverende lager**, **Mottakende lager** og **Transportdager**. 
-4. (Valgfritt) Du kan også angi transporttiden, avhengig av leveringsmåten, under **Transportdager per leveringsmåte**-fanen.
+2. I **Mottakspunkt** -feltet velger du **lager**.
+3. Velg **Leverende lager** , **Mottakende lager** og **Transportdager**. 
+4. (Valgfritt) Du kan også angi transporttiden, avhengig av leveringsmåten, under **Transportdager per leveringsmåte** -fanen.

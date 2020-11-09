@@ -8,7 +8,7 @@ ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: ConsignmentReplenishmentOrder, ConsignmentReplenishmentOrderCreate, InventTrans, ConsignmentDraftReplenishmentOrderJournal, InventOnhandMovement, InventOnhandItem, InventItemIdLookupSimple
+ms.search.form: ConsignmentReplenishmentOrder, ConsignmentReplenishmentOrderCreate, InventTrans, ConsignmentDraftReplenishmentOrderJournal, InventOnhandMovement, InventOnhandItem, InventItemIdLookupSimple, ConsignmentProductReceiptJournal, ConsignmentReplenishmentOrderLineQuantity
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -17,12 +17,12 @@ ms.search.industry: Distribution
 ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 66611e2d8a88269fe727c46ef4aa6aa809cc7836
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 9e993190150e2d82088390d8db4b7c5ada2b0161
+ms.sourcegitcommit: e3f4dd2257a3255c2982f4fc7b72a1121275b88a
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3214050"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4018359"
 ---
 # <a name="create-a-consignment-replenishment-order"></a>Opprette en ny etterfyllingsordre for forsendelse
 
@@ -33,27 +33,27 @@ Dette emnet forklarer hvordan du oppretter en etterfyllingsordre for forsendelse
 ## <a name="create-a-consignment-replenishment-order"></a>Opprette en ny etterfyllingsordre for forsendelse
 1. I navigasjonsruten går du til **Moduler > Innkjøp og leverandører > Forsendelse > Etterfyllingsordrer for forsendelse**.
 2. Velg **Ny**.
-3. I **Leverandørkonto**-feltet velger du leverandør **US-104** (du må velge en leverandør som er registrert som en eier på **lagereiere**-siden). 
+3. I **Leverandørkonto** -feltet velger du leverandør **US-104** (du må velge en leverandør som er registrert som en eier på **lagereiere** -siden). 
 4. Velg **OK**.
 5. Velg **Legg til linje**.
-6. I **Varenummer**-feltet skriver du inn `M9211CI` (du må velge en vare som er definert for forsendelseslager).
-7. Angi et tall i **Antall**-feltet.
+6. I **Varenummer** -feltet skriver du inn `M9211CI` (du må velge en vare som er definert for forsendelseslager).
+7. Angi et tall i **Antall** -feltet.
 8. Angi en dato i feltet **Ønsket leveringsdato**. Ønskede og bekreftede datoer brukes av MRP-motoren for den forventede ankomsten av varene.  
 9. Angi en dato i feltet **Bekreftet leveringsdato**.
 10. Vis delen **Linjedetaljer**.
 11. Velg fanen **Lagerdimensjoner**.
-12. Hvis du vil vise eieren i feltet **Lagerdimensjonseier**, må du oppdatere siden. Leverandør US-104 er nå oppført som eier.  
+12. Hvis du vil vise eieren i feltet **Lagerdimensjonseier** , må du oppdatere siden. Leverandør US-104 er nå oppført som eier.  
 
 ## <a name="check-the-inventory-transaction-status"></a>Kontrollere lagertransaksjonsstatusen
 1. Velg **Lager**.
 2. Velg **Transaksjoner**.
-3. Legg merke til at **Mottak**-feltet er satt til **Bestilt** i den ønskede raden.  
+3. Legg merke til at **Mottak** -feltet er satt til **Bestilt** i den ønskede raden.  
 4. Lukk siden.
 
 ## <a name="receive-items"></a>Motta varer
 1. Velg **Produktkvittering**.
 2. Skriv inn en verdi i feltet **Ekstern mottaksseddel**.
-3. I **Antall**-feltet skriver du inn et tall som er lavere enn antallet som vises. 
+3. I **Antall** -feltet skriver du inn et tall som er lavere enn antallet som vises. 
 4. Velg **OK**.
 
 ## <a name="check-the-on-hand-inventory"></a>Kontrollere lagerbeholdningen

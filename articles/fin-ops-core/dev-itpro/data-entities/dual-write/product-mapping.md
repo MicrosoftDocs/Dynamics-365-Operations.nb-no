@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: rhaertle
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,18 +18,16 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: ed8f0351d1e16cceb6c9749f434a8980ef2be29d
-ms.sourcegitcommit: 025561f6a21fe8705493daa290f3f6bfb9f1b962
+ms.openlocfilehash: 3c564d580d2743d8a80cdf5667b1f95e00736d60
+ms.sourcegitcommit: afc43699c0edc4ff2be310cb37add2ab586b64c0
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "3835860"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "4000770"
 ---
 # <a name="unified-product-experience"></a>Samlet produktopplevelse
 
 [!include [banner](../../includes/banner.md)]
-
-
 
 Når et forretningsøkosystem består av Dynamics 365-programmer, for eksempel Finance, Supply Chain Management og Sales, bruker bedrifter ofte disse programmene for produktdata. Dette er fordi disse appene tilbyr en robust produktinfrastruktur som er komplettert med avanserte prissettingskonsepter og nøyaktige lagerbeholdningsdata. Bedrifter som bruker et eksternt PLM-system (Product Lifecycle Management ) for produktdata, kan kanalisere produkter fra Finance and Operations-apper til andre Dynamics 365-apper. Den enhetlige produktopplevelsen bringer i den integrerte produktdatamodellen til Common Data Service, slik at alle programbrukere, inkludert Power Platform-brukere, kan dra nytte av de rike produktdataene som kommer fra Finance and Operations-apper.
 
@@ -55,7 +52,7 @@ Produktinformasjonen inneholder all informasjonen som er knyttet til produktet o
 Finance and Operations-apper | Andre Dynamics 365-apper | beskrivelse
 -----------------------|--------------------------------|---
 Frigitte produkter V2 | msdyn\_sharedproductdetails | Enheten **msdyn\_sharedproductdetails** inneholder feltene fra Finance and Operations-apper som definerer produktet og inneholder informasjon om produktets økonomi og administrasjon. 
-Common Data Service frigitte spesifikke produkter | Produkt | **Produkt**-enheten inneholder feltene som definerer produktet. Den omfatter enkeltprodukter (produkter med undertypeprodukt) og produktvariantene. Tabellen nedenfor viser tilordningene.
+Common Data Service frigitte spesifikke produkter | Produkt | **Produkt** -enheten inneholder feltene som definerer produktet. Den omfatter enkeltprodukter (produkter med undertypeprodukt) og produktvariantene. Tabellen nedenfor viser tilordningene.
 Strekkode identifisert med produktnummer | msdyn\_productbarcodes | Produktstrekkoder brukes til entydig identifikasjon av produkter.
 Standard ordreinnstillinger | msdyn\_productdefaultordersettings
 Innstillinger for produktspesifikk standardordre | msdyn_productdefaultordersettings
@@ -91,9 +88,9 @@ Fordi produktet er representert som en SKU, kan begrepene for spesifikke produkt
 
 ![Datamodell for produkter](media/dual-write-product.png)
 
-Når funksjonen for dobbel skriving er aktivert, vil produkter fra Finance and Operations bli synkronisert i andre Dynamics 365-produkter i **Utkast**-tilstand. De blir lagt til den første prislisten med samme valuta. De legges med andre ord til i den første prislisten i en Dynamics 365-app som samsvarer med valutaen til den juridiske enheten der produktet frigis i en Finance and Operations-app. 
+Når funksjonen for dobbel skriving er aktivert, vil produkter fra Finance and Operations bli synkronisert i andre Dynamics 365-produkter i **Utkast** -tilstand. De blir lagt til den første prislisten med samme valuta. De legges med andre ord til i den første prislisten i en Dynamics 365-app som samsvarer med valutaen til den juridiske enheten der produktet frigis i en Finance and Operations-app. 
 
-Som standard synkroniseres produkter fra Finance and Operations-apper til andre Dynamics 365-apper i **Utkast**-status. Hvis du vil synkronisere produktet med tilstanden **Aktiv**, slik at du for eksempel kan bruke det direkte i salgsordretilbud, må følgende innstilling velges: Under **System > Administrasjon > Systemadministrasjon > Systeminnstillinger > Salg** velger du **Opprett produkter i aktiv tilstand = ja**. 
+Som standard synkroniseres produkter fra Finance and Operations-apper til andre Dynamics 365-apper i **Utkast** -status. Hvis du vil synkronisere produktet med tilstanden **Aktiv** , slik at du for eksempel kan bruke det direkte i salgsordretilbud, må følgende innstilling velges: Under **System > Administrasjon > Systemadministrasjon > Systeminnstillinger > Salg** velger du **Opprett produkter i aktiv tilstand = ja**. 
 
 Vær oppmerksom på at synkronisering av produkter skjer fra Finance and Operations-apper til Common Data Service. Dette betyr at verdiene i feltene for produktenheten kan endres i Common Data Service, men når synkroniseringen utløses (når et produktfelt endres i en Finance and Operations-app), vil dette overskrive verdiene i Common Data Service. 
 
@@ -109,7 +106,7 @@ Vær oppmerksom på at synkronisering av produkter skjer fra Finance and Operati
 
 Produktdimensjoner er egenskaper som identifiserer en produktvariant. De fire produktdimensjonene (Farge, Størrelse, Stil og Konfigurasjon) blir også tilordnet til Common Data Service for å definere produktvariantene. Illustrasjonen nedenfor viser datamodellen for produktdimensjonen Farge. Den samme modellen brukes for Størrelser, Stiler og Konfigurasjoner. 
 
-![Datamodell for produkter](media/dual-write-product-two.png)
+![Datamodell for produktdimensjoner](media/dual-write-product-two.png)
 
 [!include [product colors](includes/EcoResProductColorEntity-msdyn-productcolor.md)]
 
@@ -145,7 +142,7 @@ Standard ordreinnstillinger definerer området og lageret der varene hentes fra 
 
 Måleenheten og de tilsvarende konverteringene er tilgjengelige i Common Data Service etter datamodellen som vises i diagrammet.
 
-![Datamodell for produkter](media/dual-write-product-three.png)
+![Datamodell for måleenhet](media/dual-write-product-three.png)
 
 Begrepet måleenhet er integrert mellom Finance and Operations-apper og andre Dynamics 365-apper. For hver enhetsklasse i en Finance and Operations-app opprettes en enhetsgruppe i en Dynamics 365-app, som inneholder enhetene som tilhører enhetsklassen. En standard basisenhet opprettes også for hver enhetsgruppe. 
 
@@ -203,9 +200,9 @@ Produktpolicyene er sett med policyer som brukes til å definere produkter og ti
 
 Fo å identifisere produkter unikt mellom Dynamics 365 for Finance and Operations og produkter i Common Data Service brukes integrasjonsnøkler. For produkter er **(productnumber)** den unike nøkkelen som identifiserer et produkt i Common Data Service. Den består av sammenkoblingen av: **(firma, msdyn_productnumber)**. **Firmaet** angir den juridiske enheten i Finance and Operations, og **msdyn_productnumber** angir produktnummeret for det bestemte produktet i Finance and Operations. 
 
-For brukere av andre Dynamics 365-apper er produktet identifisert i brukergrensesnittet med **msdyn_productnumber** (vær oppmerksom på at etiketten for feltet er **produktnummer**). I produktskjemaet vises både selskapet og msydn_productnumber. Men (productnumber)-feltet, den unike nøkkelen for et produkt, vises ikke. 
+For brukere av andre Dynamics 365-apper er produktet identifisert i brukergrensesnittet med **msdyn_productnumber** (vær oppmerksom på at etiketten for feltet er **produktnummer** ). I produktskjemaet vises både selskapet og msydn_productnumber. Men (productnumber)-feltet, den unike nøkkelen for et produkt, vises ikke. 
 
-Hvis du bygger apper på Common Data Service, bør du være oppmerksom på å bruke **productNumber** (den unike produkt-IDen) som integrerings nøkkel. Ikke bruk **msdyn_productnumber**, fordi det ikke er unikt. 
+Hvis du bygger apper på Common Data Service, bør du være oppmerksom på å bruke **productNumber** (den unike produkt-IDen) som integrerings nøkkel. Ikke bruk **msdyn_productnumber** , fordi det ikke er unikt. 
 
 ## <a name="initial-synchronization-of-products-and-migration-of-data-from-common-data-service-to-finance-and-operations"></a>Første synkronisering av produkter og overføring av data fra Common Data Service til Finance and Operations
 

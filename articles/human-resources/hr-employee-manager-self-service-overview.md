@@ -2,8 +2,8 @@
 title: Oversikt over selvbetjening for ansatte og ledere
 description: Denne artikkelen inneholder en oversikt over arbeidsområdet for selvbetjening for ansatte og ledere.
 author: andreabichsel
-manager: AnnBe
-ms.date: 08/17/2020
+manager: tfehr
+ms.date: 10/20/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-human-resources
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-03-19
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: fd642d0976c607b47a7874d0771e441153272ec9
-ms.sourcegitcommit: 2bcacef1e010c312f019dbf9740ce87d627848a7
+ms.openlocfilehash: 116c85c53b0ec2fe1e1fd2d1fbc2738f5b6351fb
+ms.sourcegitcommit: e100c1c7c8dcdacf066defc206dd2f44b8ce6100
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "3712238"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "4057058"
 ---
 # <a name="employee-and-manager-self-service-overview"></a>Oversikt over selvbetjening for ansatte og ledere
 
@@ -35,11 +35,11 @@ Hvis du må legge til eller endre personlige opplysninger, kan du [Redigere pers
 
 ## <a name="user-not-assigned-to-a-worker-record"></a>Brukeren er ikke tilordnet til en arbeiderpost
 
-Hvis du ikke har koblet brukeren til en **Arbeider**-post på siden **Brukere**, vil følgende melding vises:
+Hvis du ikke har koblet brukeren til en **Arbeider** -post på siden **Brukere** , vil følgende melding vises:
 
 **Bruker-ID-en din er ikke tilknyttet ansattposten i systemet. Du vil ikke kunne vise eller oppdatere informasjon før den er tilknyttet. Kontakt leder eller støtteteam for hjelp.**
 
-Hvis du vil knytte en bruker til en **Arbeider**-post, går du til **Brukere** og velger brukeren. Velg **Rediger** og legg til den tilsvarende arbeideren i feltet **Person** på skjemaet, og velg **Lagre**. Du skal nå ha tilgang til Ansattselvbetjening.
+Hvis du vil knytte en bruker til en **Arbeider** -post, går du til **Brukere** og velger brukeren. Velg **Rediger** og legg til den tilsvarende arbeideren i feltet **Person** på skjemaet, og velg **Lagre**. Du skal nå ha tilgang til Ansattselvbetjening.
 
 ## <a name="security-requirements-for-employee-and-manager-self-service"></a>Sikkerhetskrav for selvbetjening for ansatte og ledere
 
@@ -72,31 +72,31 @@ Delen **Min karriereinformasjon** i Ansattselvbetjening inneholder kort relatert
 
 Kortet **Avspaseringssaldoer** viser saldoene for eventuelle registrerte planer. Dette kortet forutsier saldoen basert på avsetningsmetoden. Du kan angi og sende fraværsforespørsler, som deretter vil gå gjennom en arbeidsflyt prosess for godkjenning. Hvis du vil ha mer informasjon om permisjons- og fraværsadministrasjon, kan du se [Oversikt over permisjon og fravær](hr-leave-and-absence-overview.md).
 
-**Oppgaver**-kortet viser oppgaver som er tilordnet til deg, og lar deg vise og administrere dem.
+**Oppgaver** -kortet viser oppgaver som er tilordnet til deg, og lar deg vise og administrere dem.
 
-Kortet **Neste registrerte kurs** viser det neste kurset du er registrert for. Du kan vise og registrere deg for alle åpne kurs. Alle kurs som er åpne for påmelding, har statusen **Startet**, og tillater at ansatte kan registrere seg selv på dette kortet. Avhengig av organisasjonens innstillinger kan kursregistreringen gå gjennom en godkjenningsprosess.
+Kortet **Neste registrerte kurs** viser det neste kurset du er registrert for. Du kan vise og registrere deg for alle åpne kurs. Alle kurs som er åpne for påmelding, har statusen **Startet** , og tillater at ansatte kan registrere seg selv på dette kortet. Avhengig av organisasjonens innstillinger kan kursregistreringen gå gjennom en godkjenningsprosess.
 
-**Sertifikat**-kortet viser sertifikatet og utløpsdatoen for sertifikatet som utløper nærmest gjeldende dato. Du kan oppdatere, legge til eller fjerne sertifikater. Avhengig av organisasjonens innstillinger kan sertifikatoppdateringer gå gjennom en godkjenningsprosess.
+**Sertifikat** -kortet viser sertifikatet og utløpsdatoen for sertifikatet som utløper nærmest gjeldende dato. Du kan oppdatere, legge til eller fjerne sertifikater. Avhengig av organisasjonens innstillinger kan sertifikatoppdateringer gå gjennom en godkjenningsprosess.
 
 Kortet **Neste planlagte gjennomgang** viser neste ytelsesvurdering. Du kan starte en ny gjennomgang fra dette kortet. Lederen eller HR-representanten kan også begynne gjennomganger. Avhengig av organisasjonens innstillinger vil du kanskje også kunne vise, oppdatere og sende inn avslutningsomtaler fra dette kortet.
 
-Du kan administrere målene med **Ytelsesmål**-kortet. Dette kortet viser hvor mange mål du har i hver status (**Ikke startet**, **I rute** og **Trenger forbedring**). Du kan opprette, oppdatere og fjerne mål, avhengig av din tilordnede rollebaserte sikkerhet. Hvis du vil, kan du legge til nye mål fra grupper eller maler. Ledere og HR-ansvarlige kan også opprette mål på vegne av ansatte og bestemme hvor detaljert hvert mål skal være. Ledere og ansatte kan samarbeide om mål, og oppdatere aktiviteter, målinger og status. Du kan også inkludere vedlegg.
+Du kan administrere målene med **Ytelsesmål** -kortet. Dette kortet viser hvor mange mål du har i hver status ( **Ikke startet** , **I rute** og **Trenger forbedring** ). Du kan opprette, oppdatere og fjerne mål, avhengig av din tilordnede rollebaserte sikkerhet. Hvis du vil, kan du legge til nye mål fra grupper eller maler. Ledere og HR-ansvarlige kan også opprette mål på vegne av ansatte og bestemme hvor detaljert hvert mål skal være. Ledere og ansatte kan samarbeide om mål, og oppdatere aktiviteter, målinger og status. Du kan også inkludere vedlegg.
 
-Du kan vise dine eksisterende ferdigheter på **Kompetanse**-kortet. Du kan oppdatere ferdigheter, legge til nye eller fjerne alle som ikke lenger er relevante. Avhengig av organisasjonens innstillinger kan kompetanseendringer gå gjennom en godkjenningsprosess.
+Du kan vise dine eksisterende ferdigheter på **Kompetanse** -kortet. Du kan oppdatere ferdigheter, legge til nye eller fjerne alle som ikke lenger er relevante. Avhengig av organisasjonens innstillinger kan kompetanseendringer gå gjennom en godkjenningsprosess.
 
-Du kan vise gjeldende kompensasjon via **Kompensasjon**-kortet. Velg **Vis** for å vise årslønn og siste økningsbeløp. Hvis du er ansatt i flere enn ett firma, vises hvert enkelt årlige beløp på kortet. Hvis du vil vise den detaljerte kompensasjonsloggen, velger du det årlige lønnsbeløpet for å åpne skjemaet **Fast og variabel kompentasjonslogg**. Fremtidig kompensasjon vises ikke i dette skjemaet. Hvis du har mer enn ett ansettelsesforhold, kan du bytte mellom firmaer i dette skjemaet for å vise kompensasjonsloggen uten å logge inn i hvert firma.
+Du kan vise gjeldende kompensasjon via **Kompensasjon** -kortet. Velg **Vis** for å vise årslønn og siste økningsbeløp. Hvis du er ansatt i flere enn ett firma, vises hvert enkelt årlige beløp på kortet. Hvis du vil vise den detaljerte kompensasjonsloggen, velger du det årlige lønnsbeløpet for å åpne skjemaet **Fast og variabel kompentasjonslogg**. Fremtidig kompensasjon vises ikke i dette skjemaet. Hvis du har mer enn ett ansettelsesforhold, kan du bytte mellom firmaer i dette skjemaet for å vise kompensasjonsloggen uten å logge inn i hvert firma.
 
-Vis og administrer dokumenter med **Vedlegg**-kortet. Du kan administrere alle **eksterne** vedlegg. Både HR og ansatte kan legge til vedlegg via ansattselvbetjening eller **Arbeider**-skjemaet. Vedlegg er som standard satt til **Ekstern**.
+Vis og administrer dokumenter med **Vedlegg** -kortet. Du kan administrere alle **eksterne** vedlegg. Både HR og ansatte kan legge til vedlegg via ansattselvbetjening eller **Arbeider** -skjemaet. Vedlegg er som standard satt til **Ekstern**.
 
 ### <a name="additional-information"></a>Tilleggsinformasjon
 
 Denne delen inneholder koblinger til andre ansattselvbetjeningsområder, lik delen **Min karriereinformasjon**.
 
-Registrer deg for fordeler gjennom **Fordeler**-koblingen. Hvis du vil ha mer informasjon om fordelsbehandling, kan du se [Oversikt over fordeler](hr-benefits-management-overview.md)
+Registrer deg for fordeler gjennom **Fordeler** -koblingen. Hvis du vil ha mer informasjon om fordelsbehandling, kan du se [Oversikt over fordeler](hr-benefits-management-overview.md)
 
 Under **Ytelse** kan du velge **Ytelsesjournaler** for å opprette ytelsesjournaloppføringer som skal brukes på både ytelsesmål og -gjennomganger. Du kan velge **Send tilbakemelding** for å gi tilbakemelding til andre ansatte i organisasjonen. Avhengig av organisasjonens innstillinger kan e-postmeldinger sendes til mottakeren, avsenderen og lederne. Du kan sende tilbakemelding til alle ansatte i organisasjonen. Sending av tilbakemelding er ikke begrenset av firmaet.
 
-Under **Kompetanser** kan du gjøre endringer i **Kurs**, **Utdanning**, **Tillitsverv** og **Yrkeserfaring**. Avhengig av organisasjonens innstillinger kan oppdateringer av disse kompetansene gå gjennom en godkjenningsprosess.
+Under **Kompetanser** kan du gjøre endringer i **Kurs** , **Utdanning** , **Tillitsverv** og **Yrkeserfaring**. Avhengig av organisasjonens innstillinger kan oppdateringer av disse kompetansene gå gjennom en godkjenningsprosess.
 
 Du kan vise jobbdetaljer under **Organisasjon**. Jobbdetaljer omfatter ferdigheter, attester og ansvarsområder for den primære stillingen. Du kan også se ethvert lånt utstyr som er sjekket ut til deg. Avhengig av organisasjonens innstillinger kan endringer av lånt utstyr gå gjennom en godkjenningsprosess.
 
@@ -104,7 +104,7 @@ Under **Spørreskjema** kan du se utfylte spørreskjemaer. Du kan også se spør
 
 Du kan konfigurere brukerdefinerte koblinger i **Parametere for Personale**. Du kan for eksempel definere koblinger til lønnsoppgaver, årsavslutningsdokumentasjon eller eksterne løsninger. Disse koblingene vises nederst i denne delen, men du kan flytte dem ved hjelp av tilpassing.
 
-Du kan også opprette flere kategorier ved å bygge Power Apps inn i arbeidsområdet Ansattselvbetjening. Bruk **Innstillinger**-menyen til å tilpasse siden med en Power Apps. På **Innstillinger**-menyen kan du velge å legge til en Power App, fullføre detaljene og sette inn appen. Som standard vises Power Apps som den første kategorien i sekvensen. Du kan endre rekkefølgen ved å bruke standard tilpasning.
+Du kan også opprette flere kategorier ved å bygge Power Apps inn i arbeidsområdet Ansattselvbetjening. Bruk **Innstillinger** -menyen til å tilpasse siden med en Power Apps. På **Innstillinger** -menyen kan du velge å legge til en Power App, fullføre detaljene og sette inn appen. Som standard vises Power Apps som den første kategorien i sekvensen. Du kan endre rekkefølgen ved å bruke standard tilpasning.
 
 ## <a name="my-team"></a>Mitt team
 
@@ -112,7 +112,7 @@ I kategorien **Mitt team** vises følgende informasjon om Lederselvbetjening. Ba
 
 ### <a name="personnel-actions"></a>Personalhandlinger
 
-Personalhandlinger vises basert på konfigurasjonsalternativer i **Delte parametere for personaladministrasjon** og **Personalparametere**. Når det er aktivert for **Arbeidere**, aktiverer personalhandlinger nye menyalternativer, inkludert:
+Personalhandlinger vises basert på konfigurasjonsalternativer i **Delte parametere for personaladministrasjon** og **Personalparametere**. Når det er aktivert for **Arbeidere** , aktiverer personalhandlinger nye menyalternativer, inkludert:
 
 - **Be om ny ansatt**
 - **Be om ny oppdragstaker**
@@ -131,7 +131,7 @@ Du kan også konfigurere disse alternativene til å gå gjennom en valgfri gjenn
 
 ### <a name="summary"></a>Sammendrag
 
-Informasjonen i **Sammendrag**-delen er avhengig av alternativene HR har valgt i **Personalparametere**. I kategorien **Lederselvbetjening** på **Personalparametere**-siden kan du konfigurere alternativer for visning av poster som utløper, og åpne stillinger. Hvis du aktiverer disse alternativene, bestemmer du hva overordnede kan se i **Sammendrag**-delen.
+Informasjonen i **Sammendrag** -delen er avhengig av alternativene HR har valgt i **Personalparametere**. I kategorien **Lederselvbetjening** på **Personalparametere** -siden kan du konfigurere alternativer for visning av poster som utløper, og åpne stillinger. Hvis du aktiverer disse alternativene, bestemmer du hva overordnede kan se i **Sammendrag** -delen.
 
 Du kan konfigurere følgende fliser for ledere:
 
@@ -165,7 +165,7 @@ Med informasjon om mitt team kan ledere vise og oppdatere direkte og utvidede ra
 
 Fanen **Sammendrag** gir en rask oversikt over dine direkte rapporter. Hvis en direkte underordnet også har arbeidere som rapporterer til dem, viser kortet antall direkte underordnede i den øvre delen, sammen med en **Vis team** -knapp. Alternativer over hvert kort gjelder for den ansatte som er valgt. Hvis du for eksempel vil angi en permisjonsforespørsel på vegne av en ansatt, velger du den ansatte og velger deretter **Be om fritid** over kortene. 
 
-Hvis du velger **Detaljer**-knappen etter å ha valgt en ansatt, vises følgende alternativer:
+Hvis du velger **Detaljer** -knappen etter å ha valgt en ansatt, vises følgende alternativer:
 
 - **Attester**
 - **Kompensasjon**
@@ -193,24 +193,24 @@ Du kan vise stillingsdata for både direkte og utvidede rapporter.
 
 #### <a name="compensation-tab"></a>Kategorien Kompensasjon
 
-Kategorien **Kompensasjon** viser den ansattes årlige lønn. En firma-ID vises under lønnsbeløpet. Hvis en ansatt har mer enn én ansettelse og blir betalt fra flere juridiske enheter, vil den ansatte ha flere kompensasjonskort. Den siste økningen av beløp og prosent vises, basert på firmaet for ansettelse.
+Kategorien **Kompensasjon** viser den ansattes årlige lønn. En firma-ID vises under lønnsbeløpet. Hvis en ansatt har mer enn én ansettelse og blir betalt fra flere juridiske enheter, vil den ansatte ha flere kompensasjonsplaner. Hvis du vil se alle kompensasjonsplaner på tvers av juridiske enheter uten å bytte mellom firmaer, må du aktivere krysskompensasjon under **Personal > Delte parametere > Avansert tilgang > Aktivere kompensasjon på tvers av firmaer**.
 
-Hvis du vil vise kompensasjonsloggen, velger du lønnsbeløpet for å åpne **Detaljer**-skjemaet. Bare gjeldende og historiske, faste og variable kompensasjonsposter vises i **Kompensasjon**-skjemaet. Hvis en ansatt har mer enn ett ansettelsesforhold, kan du bytte mellom firmaer for å vise kompensasjonsloggen i hvert firma.
+Hvis du vil vise kompensasjonsloggen, velger du lønnsbeløpet for å åpne **Detaljer** -skjemaet. Bare gjeldende og historiske, faste og variable kompensasjonsposter vises i **Kompensasjon** -skjemaet. Hvis en ansatt har mer enn ett ansettelsesforhold, kan du bytte mellom firmaer for å vise kompensasjonslogg i hvert firma, eller aktivere kompensasjon på tvers av firmaer i delte parametere for Personal for å vise alle kompensasjonsplaner.
 
 Du kan vise kompensasjon for både direkte og utvidede rapporter.
 
 #### <a name="leave-and-absence-tab"></a>Kategorien Permisjon og fravær
 
-Kategorien **Permisjon og fravær** viser de øvre saldoene for ansatte som har aktivitet. Hvis du vil utføre en handling eller vise en fullstendig liste over aktiviteter, velger du **Detaljer** og deretter **Fridager**. I **Fridager**-skjemaet kan du vise saldoer, forespørsler, godkjent fritid og prognosesaldoer for å hjelpe ansatte med å administrere tid bedre. Avhengig av organisasjonens innstillinger kan du også be om fritid for direkte rapporter og utvidede rapporter.
+Kategorien **Permisjon og fravær** viser de øvre saldoene for ansatte som har aktivitet. Hvis du vil utføre en handling eller vise en fullstendig liste over aktiviteter, velger du **Detaljer** og deretter **Fridager**. I **Fridager** -skjemaet kan du vise saldoer, forespørsler, godkjent fritid og prognosesaldoer for å hjelpe ansatte med å administrere tid bedre. Avhengig av organisasjonens innstillinger kan du også be om fritid for direkte rapporter og utvidede rapporter.
 
 #### <a name="performance-goals-tab"></a>Kategorien Ytelsesmål
 
 I kategorien **Ytelsesmål** vises en oversikt over ytelsesmål etter status. Velg et nummer for en status, eller velg ytelsesmål fra **detaljene** for å se alle målene for en ansatt. Ledere og ansatte kan oppdatere mål etter behov over hele målet.
 
-Ledere kan se alle mål for teamet ved hjelp av flisen **Ytelsesmål for team** i **Sammendrag**-delen i **Mitt team**.
+Ledere kan se alle mål for teamet ved hjelp av flisen **Ytelsesmål for team** i **Sammendrag** -delen i **Mitt team**.
 
 #### <a name="reviews-tab"></a>Kategorien Omtaler
 
-I kategorien **Omtaler** oppsummeres omtalene den ansatte har i hver tilstand: **Pågår**, **Klar til gjennomgang** og **Endelig vurdering**. Hvis du vil ha tilgang til vurderingen av en ansatt, velger du **Detaljer**-knappen og velger deretter vurderinger du vil samarbeide om. Avhengig av hvor en vurdering er i arbeidsflytprosessen, kan du se om vurderingen er tilgjengelig for oppdatering. 
+I kategorien **Omtaler** oppsummeres omtalene den ansatte har i hver tilstand: **Pågår** , **Klar til gjennomgang** og **Endelig vurdering**. Hvis du vil ha tilgang til vurderingen av en ansatt, velger du **Detaljer** -knappen og velger deretter vurderinger du vil samarbeide om. Avhengig av hvor en vurdering er i arbeidsflytprosessen, kan du se om vurderingen er tilgjengelig for oppdatering. 
 
-Du kan se alle vurderinger for teamet ved hjelp av flisen **Gjennomgang av teamytelse** i **Sammendrag**-delen i **Mitt team**.
+Du kan se alle vurderinger for teamet ved hjelp av flisen **Gjennomgang av teamytelse** i **Sammendrag** -delen i **Mitt team**.

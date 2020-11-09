@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: ''
+ms.search.form: WHSWorkCluster, WHSClusterProfile
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations, Supply Chain Management
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2019-12-31
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: b7ac243a04309a41ab0e06c1b2d4843ae8ac0e22
-ms.sourcegitcommit: 7c32e4739c07d825a8562564ea9e78922db2ce38
+ms.openlocfilehash: 0838405bcb5ee0d8e582093fbbd69553228cb2b6
+ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "3406387"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4016039"
 ---
 # <a name="system-directed-cluster-picking"></a>Systemstyrt gruppeplukking
 
@@ -40,7 +40,7 @@ Systemstyrt gruppeplukking tilbyr et alternativ til manuell gruppebygging, der e
 - **Generer gruppe-ID** kontrollerer om gruppe-IDen skal genereres av systemet eller angis av brukeren.
 - **Sorteringsbekreftelsestype** avgjør om posisjonsverifisering er nødvendig.
 
-Et nytt menyelement for mobilenhet brukes til systemstyrt gruppeplukking. **Gruppeprofil-ID-en** må angis for det valgte **Styrt av**-alternativet. I tillegg kan de systemstyrte spørringene om arbeidssekvens gruppere ordrer basert på firmaspesifikke kriterier. Derfor kan du ytterligere optimalisere tildelingen av arbeidsordrer ved å angi tilpassede sorteringskriterier ved hjelp av en systemstyrte spørringene om arbeidssekvens.
+Et nytt menyelement for mobilenhet brukes til systemstyrt gruppeplukking. **Gruppeprofil-ID-en** må angis for det valgte **Styrt av** -alternativet. I tillegg kan de systemstyrte spørringene om arbeidssekvens gruppere ordrer basert på firmaspesifikke kriterier. Derfor kan du ytterligere optimalisere tildelingen av arbeidsordrer ved å angi tilpassede sorteringskriterier ved hjelp av en systemstyrte spørringene om arbeidssekvens.
 
 Når systemstyrt gruppeplukking aktiveres, presenteres lagerarbeidere med en gruppe der plukkordrer er forhåndstildelte til gruppestillinger. Arbeidere kan derfor begynne å plukke en vare for flere arbeidsordrer ved å gå til plukkstedet bare én gang. Plukkprosessen for systemstyrt gruppeplukking er den samme som prosessen for brukerstyrt gruppeplukking.
 
@@ -64,14 +64,14 @@ Gruppeprofiler kontrollerer hvordan systemet oppretter hver gruppe. Hvis det kre
 
 1. Gå til **Lagerstyring \> Oppsett \> Mobilenhet \> Gruppeprofiler**.
 2. Velg **Ny**.
-3. Angi **2 posisjon** i **Gruppeprofil-ID**-feltet.
-4. Angi **2 posisjon** i **Navn**-feltet.
-5. På **Generelt**-hurtigfanen angir du informasjonen nedenfor:
+3. Angi **2 posisjon** i **Gruppeprofil-ID** -feltet.
+4. Angi **2 posisjon** i **Navn** -feltet.
+5. På **Generelt** -hurtigfanen angir du informasjonen nedenfor:
 
     - **Generer gruppe-ID** – velg **Ja**. Dette alternativet bestemmer om gruppe-IDen opprettes automatisk av systemet, eller om brukeren skal opprette den på begynnelsen av plukkingen. 
-    - **Aktiver stillinger** – velg **Ja**. Dette alternativet bestemmer om stillingsnavnene genereres automatisk basert på oppsettet for stillingsnavnet. Hvis dette alternativet settes til **Nei**, brukes nummerskilt-ID-en for stillingen.
+    - **Aktiver stillinger** – velg **Ja**. Dette alternativet bestemmer om stillingsnavnene genereres automatisk basert på oppsettet for stillingsnavnet. Hvis dette alternativet settes til **Nei** , brukes nummerskilt-ID-en for stillingen.
     - **Maksimalt antall stillinger** – velg **2**. Dette feltet fastsetter det maksimale antallet stillinger som gruppen kan ha (det vil si maksimalt antall esker, seff og så videre).
-    - **Stillingsnavn** – velg **Numerisk** slik at stillingene navngis ved hjelp av kontinuerlige tall. Hvis du velger **Alfabetisk**, navngis stillingene i alfabetisk rekkefølge.
+    - **Stillingsnavn** – velg **Numerisk** slik at stillingene navngis ved hjelp av kontinuerlige tall. Hvis du velger **Alfabetisk** , navngis stillingene i alfabetisk rekkefølge.
     - **Bryt opp gruppe ved** – velg **Plasser**. Dette feltet bestemmer når gruppen brytes. 
     - **Sorteringsbekreftelsestype** – velg **Posisjonsskanning**. Dette feltet angir om plasser-til-stilling-trinnet er bekreftet.
         
@@ -93,7 +93,7 @@ Hvis du vil opprette et nytt menyelement for mobilenhet for systemstyrt gruppepl
     - **Modus** – Arbeid
     - **Bruke eksisterende arbeid** – Ja
 
-1. På **Generelt**-hurtigfanen angir du informasjonen nedenfor:
+1. På **Generelt** -hurtigfanen angir du informasjonen nedenfor:
     - **Styrt av** – Systemstyrt gruppeplukking
     - **Generer nummerskilt** – Ja
     - **Gruppeprofil-ID** – 2. posisjon
@@ -102,7 +102,7 @@ Hvis du vil opprette et nytt menyelement for mobilenhet for systemstyrt gruppepl
     - **Arbeidsklasse-ID** – Salg
     - **Arbeidsordretype** – Salgsordrer
 
-1. I **Menyelementer på mobilenheten**-handlingsruten velger du **Systemstyrte spørringer om arbeidssekvens**, og følger denne fremgangsmåten for å angi en ny systemstyrt arbeidssekvensspørring:
+1. I **Menyelementer på mobilenheten** -handlingsruten velger du **Systemstyrte spørringer om arbeidssekvens** , og følger denne fremgangsmåten for å angi en ny systemstyrt arbeidssekvensspørring:
     - Velg **Ny** i handlingsruten.
     - **Sekvensnummer** – 1
     - **Beskrivelse** – Arbeidsprioritet – Arbeids-ID
@@ -126,12 +126,12 @@ Hvis du vil opprette et nytt menyelement for mobilenhet for systemstyrt gruppepl
 
 1. Gå til **Lagerstyring > Oppsett > Mobilenhet > Meny på mobilenheten**.
 1. Legg til menyelementet for **SD-gruppen** som du nettopp opprettet i en mobilenhetsmeny.
-1. Velg **Utgående**-menyen.
+1. Velg **Utgående** -menyen.
 1. Velg **Rediger** i handlingsruten.
 1. Bla til du finner **SD-gruppe**.
-1. Velg **SD-gruppe**, så aktiveres pilen som peker til **Menystruktur**-listen.
-1. Velg **pil**-knappen for å flytte **SD-gruppe**-menyelementet til **Utgående**-menystrukturen.
-1. Velg **SD-gruppe** fra **Menystruktur**-listen, og velg deretter pil **OPP** eller **NED** for å flytte menyelementet til ønsket plassering på mobilenhetsmenyen.
+1. Velg **SD-gruppe** , så aktiveres pilen som peker til **Menystruktur** -listen.
+1. Velg **pil** -knappen for å flytte **SD-gruppe** -menyelementet til **Utgående** -menystrukturen.
+1. Velg **SD-gruppe** fra **Menystruktur** -listen, og velg deretter pil **OPP** eller **NED** for å flytte menyelementet til ønsket plassering på mobilenhetsmenyen.
 
 ## <a name="scenario"></a>Scenario
 
@@ -141,11 +141,11 @@ Før du kan definere systemstyrt gruppeplukking, må du opprette kvalifisert utg
 
 1. Gå til **Salg og markedsføring > Salgsordrer > Alle salgsordrer**.
 1. Velg **Ny** i handlingsruten for å opprette den første salgsordren.
-    - I **Opprett salgsordre**-menyen som åpnes, angir du følgende informasjon:
-        - I **Kunde**-hurtigkategorien angir du **Kundekonto** - **US-004**.
-        - I **Generelt**-hurtigkategorien angir du **Lager** - **62**.
+    - I **Opprett salgsordre** -menyen som åpnes, angir du følgende informasjon:
+        - I **Kunde** -hurtigkategorien angir du **Kundekonto** - **US-004**.
+        - I **Generelt** -hurtigkategorien angir du **Lager** - **62**.
         - Velg **OK** for å lukke menyen og opprette salgsordren.
-    - I **Salgsordrelinjer**-hurtigkategorien velger du **Legg til linje** dersom en ny linje ikke automatisk legges til, og deretter angir du følgende:
+    - I **Salgsordrelinjer** -hurtigkategorien velger du **Legg til linje** dersom en ny linje ikke automatisk legges til, og deretter angir du følgende:
         - **Varenummer** – A0001
         - **Antall** – 1
         - Velg **Legg til linje** for å legge til en ny linje.
@@ -153,16 +153,16 @@ Før du kan definere systemstyrt gruppeplukking, må du opprette kvalifisert utg
         - **Antall** – 3
     - Reserver beholdning for begge linjene du nettopp opprettet.
         - Velg **Linje 1**.
-        - På **Salgsordrelinjer**-handlingsruten velger du **Beholdning** og deretter **Reservasjon** fra listen.
-        - I **Reservasjon**-skjemaet velger du **Reserver parti** for å reservere beholdningen.
-        - Lukk **Reservasjon**-skjemaet når reservasjonen er fullført.
+        - På **Salgsordrelinjer** -handlingsruten velger du **Beholdning** og deretter **Reservasjon** fra listen.
+        - I **Reservasjon** -skjemaet velger du **Reserver parti** for å reservere beholdningen.
+        - Lukk **Reservasjon** -skjemaet når reservasjonen er fullført.
         - Gjenta disse trinnene for å reservere beholdning for **Linje 2**.
 1. Velg **Ny** i handlingsruten for å opprette den andre salgsordren
-    - I **Opprett salgsordre**-menyen som åpnes, angir du følgende informasjon:
-        - I **Kunde**-hurtigkategorien angir du **Kundekonto** - **US-005**.
-        - I **Generelt**-hurtigkategorien angir du **Lager** - **62**.
+    - I **Opprett salgsordre** -menyen som åpnes, angir du følgende informasjon:
+        - I **Kunde** -hurtigkategorien angir du **Kundekonto** - **US-005**.
+        - I **Generelt** -hurtigkategorien angir du **Lager** - **62**.
         - Velg **OK** for å lukke menyen og opprette salgsordren
-    - I **Salgsordrelinjer**-hurtigkategorien velger du **Legg til linje** dersom en ny linje ikke automatisk legges til, og deretter angir du følgende informasjon:
+    - I **Salgsordrelinjer** -hurtigkategorien velger du **Legg til linje** dersom en ny linje ikke automatisk legges til, og deretter angir du følgende informasjon:
         - **Varenummer** – A0001
         - **Antall** – 4
         - Velg **Legg til linje** for å legge til en ny linje.
@@ -170,29 +170,29 @@ Før du kan definere systemstyrt gruppeplukking, må du opprette kvalifisert utg
         - **Antall** – 2
     - Reserver beholdning for begge linjene du nettopp opprettet.
         - Velg **Linje 1**.
-        - På **Salgsordrelinjer**-handlingsruten velger du **Beholdning** og deretter **Reservasjon** fra listen.
-        - I **Reservasjon**-skjemaet velger du **Reserver parti** for å reservere beholdningen.
-        - Lukk **Reservasjon**-skjemaet når reservasjonen er fullført.
+        - På **Salgsordrelinjer** -handlingsruten velger du **Beholdning** og deretter **Reservasjon** fra listen.
+        - I **Reservasjon** -skjemaet velger du **Reserver parti** for å reservere beholdningen.
+        - Lukk **Reservasjon** -skjemaet når reservasjonen er fullført.
         - Gjenta disse trinnene for å reservere beholdning for **Linje 2**.
-    - Lukk salgsordren og gå tilbake til **Alle salgsordrer**-listesiden.
+    - Lukk salgsordren og gå tilbake til **Alle salgsordrer** -listesiden.
 1. Finn de to salgsordrene du nettopp opprettet (du må kanskje oppdatere siden). I tabellen velger du begge salgsordrene ved hjelp av avkrysningsmerket for delen.
-    - I **Alle salgsordre**-hurtigkategorien velger du **Lager**-fanen.
-    - I **Handlinger**-gruppen velger du **Frigi til lager** for å frigi begge salgsordrene til lageret.
+    - I **Alle salgsordre** -hurtigkategorien velger du **Lager** -fanen.
+    - I **Handlinger** -gruppen velger du **Frigi til lager** for å frigi begge salgsordrene til lageret.
 1. Når prosessen med å frigi til lager er fullført, vises en infomelding.
     - Forsendelser blir opprettet for hver salgsordre.
     - Det opprettes en bølge, og begge forsendelsene tilordnes til bølgen. Noter **bølge-ID-en**.
 1. Gå til **Lagerstyring > Utgående bølger > Forsendelsesbølger > Alle bølger**.
-    - I **Alle bølger**-listen finner og velger du **bølge-ID-en** du opprettet i det forrige trinnet.
-    - Velg **Bølge**-kategorien i handlingsruten.
-    - I **Bølge**-gruppen velger du **Behandle** for å prosessere bølgen og opprette **Arbeid**.
+    - I **Alle bølger** -listen finner og velger du **bølge-ID-en** du opprettet i det forrige trinnet.
+    - Velg **Bølge** -kategorien i handlingsruten.
+    - I **Bølge** -gruppen velger du **Behandle** for å prosessere bølgen og opprette **Arbeid**.
     - Informasjonsmeldinger blir generert når behandlingen er fullført, og angir at arbeidet er opprettet og at bølgen er postert.
-1. **Valgfritt**: Gå til **Lagerstyring > Arbeid > Arbeidsdetaljer** for å se arbeidet som ble opprettet. To forskjellige arbeids-IDer opprettes. Hver arbeids-ID har to plukklinjer.
+1. **Valgfritt** : Gå til **Lagerstyring > Arbeid > Arbeidsdetaljer** for å se arbeidet som ble opprettet. To forskjellige arbeids-IDer opprettes. Hver arbeids-ID har to plukklinjer.
 
 ### <a name="run-the-mobile-device-flow"></a>Kjør flyten for mobilenhet
 
 1. Logg på mobilenheten for en bruker i lageret **62**.
 1. I **hovedmenyen** velger du **Utgående**.
-1. På **Utgående**-menyen velger du **SD-gruppe** for å iverksette plukkingen.
+1. På **Utgående** -menyen velger du **SD-gruppe** for å iverksette plukkingen.
     - Det opprettes en gruppe, og de to arbeids-ID-ene som du opprettet tidligere, er tilknyttet. Hvis du har opprettet mer enn to arbeids-IDer, legges bare de to første til i gruppen. Legg merke til at arbeids-IDene legges til gruppen i stigende rekkefølge, som du angav i spørringsoppsettet.
 
     > [!NOTE]

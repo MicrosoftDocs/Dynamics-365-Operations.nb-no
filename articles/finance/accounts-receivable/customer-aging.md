@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: jchrist
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 062e8972c879d770cc4106c2811cd4c16fff0446
-ms.sourcegitcommit: 25909c6ad3616e4f75a2fe006057dda18d7cc856
+ms.openlocfilehash: 5f3a1bba4596c7b645c20a790a6cbe8725ab665d
+ms.sourcegitcommit: e43aef72b7d65db1dcb014dfada5233ac051ba7c
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "3974867"
+ms.lasthandoff: 10/15/2020
+ms.locfileid: "4013059"
 ---
 # <a name="customer-aging-report"></a>Aldersfordelt saldoliste for kunder 
 
@@ -115,8 +115,9 @@ Når du genererer denne rapporten, vises standardparametrene nedenfor. Du kan br
 <tr class="even">
 <td><p><strong>Utskriftsretning</strong></p></td>
 <td><p>Velg om du skal beregne saldoer og skrive ut rapport for aldersfordeling for tidligere eller fremtidige perioder. Datoene evalueres i forhold til datoen som er valgt i <strong>Saldo per</strong>-feltet. Velg <strong>Bakover</strong> for å vise informasjon for tidligere perioder. Velg <strong>Forover</strong> for å vise informasjon for fremtidige perioder.</p>
-
-**Obs!** Informasjonen du har angitt i dette feltet, brukes bare hvis du ikke har valgt en definisjon av aldersfordelingsperiode.</P>
+<div class="alert">
+  
+<STRONG>Obs!</STRONG> Informasjonen du har angitt i dette feltet, brukes bare hvis du ikke har valgt en definisjon av aldersfordelingsperiode.</P>
 
 
 </div></td>

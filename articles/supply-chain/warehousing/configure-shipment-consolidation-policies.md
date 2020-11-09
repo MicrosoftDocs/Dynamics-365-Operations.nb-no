@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: WHSShipConsolidationPolicy, WHSShipConsolidationWorkbench
+ms.search.form: WHSShipConsolidationPolicy, WHSShipConsolidationWorkbench, WHSFilterGroupTable, TMSMode, WHSShipmentConsolidation, WHSFilterGenerallyAvail
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: 10.0.3
-ms.openlocfilehash: 4df62d7b2c8b0463ca6e9564e167f9060e811a24
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.openlocfilehash: adb88bbd29a89a1d18d7fd4781c2541ffb4e721f
+ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3975422"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4016223"
 ---
 # <a name="configure-shipment-consolidation-policies"></a>Konfigurere policyer for forsendelseskonsolidering
 
@@ -58,14 +58,14 @@ Når du starter denne prosedyren, må funksjnen *Policyer for forsendelseskonsol
 
 Følg disse trinnene for å definere standardpolicyer for forsendelseskonsolidering i et miljø der lagre allerede er konfigurert for kryssordrekonsolidering.
 
-1. Gå til **Lagerstyring \> Oppsett \> Lager \> Lagre** .
+1. Gå til **Lagerstyring \> Oppsett \> Lager \> Lagre**.
 1. I listen finner og åpner du den ønskede lagerposten (for eksempel lager *24* i demodataene for **USMF** ).
-1. I handlingsruten velger du **Rediger** .
-1. I hurtigkategorien **Lager** angir du verdien *Ja* for alternativet **Konsolider forsendelse ved frigivelse til lager** .
+1. I handlingsruten velger du **Rediger**.
+1. I hurtigkategorien **Lager** angir du verdien *Ja* for alternativet **Konsolider forsendelse ved frigivelse til lager**.
 1. Gjenta trinn 2 til og med 4 for alle andre lagre der konsolidering er nødvendig.
 1. Lukk siden.
-1. Bruk [Funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til å aktivere funksjonen *Policyer for forsendelseskonsolidering* . I arbeidsområdet **Funksjonsbehandling** har funksjonen navnet *Konsolider forsendelse* .
-1. Gå til **Lagerbehandling \> Oppsett \> Frigi til lager \> Policyer for forsendelseskonsolidering** . Det kan hende at du må oppdatere nettleseren for å se de nye menyelementet **Policyer for forsendelseskonsolidering** etter at du har aktivert funksjonen.
+1. Bruk [Funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til å aktivere funksjonen *Policyer for forsendelseskonsolidering*. I arbeidsområdet **Funksjonsbehandling** har funksjonen navnet *Konsolider forsendelse*.
+1. Gå til **Lagerbehandling \> Oppsett \> Frigi til lager \> Policyer for forsendelseskonsolidering**. Det kan hende at du må oppdatere nettleseren for å se de nye menyelementet **Policyer for forsendelseskonsolidering** etter at du har aktivert funksjonen.
 1. I handlingsruten velger du **Opprett standardoppsett** for å opprette følgende policyer:
 
     - En **Kryssordre** -policy for policytypen *Salgsordrer* (forutsatt at du har minst ett lager som er definert til å bruke den forrige konsolideringsfunksjonen)
@@ -84,8 +84,8 @@ Følg disse trinnene for å definere standardpolicyer for forsendelseskonsolider
 
 Følg disse trinnene for å definere standardpolicyer for forsendelseskonsolidering i et helt nytt miljø.
 
-1. Bruk [Funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til å aktivere funksjonen *Policyer for forsendelseskonsolidering* hvis du ikke allerede har aktivert den. I arbeidsområdet **Funksjonsbehandling** har funksjonen navnet *Konsolider forsendelse* .
-1. Gå til **Lagerbehandling \> Oppsett \> Frigi til lager \> Policyer for forsendelseskonsolidering** .
+1. Bruk [Funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til å aktivere funksjonen *Policyer for forsendelseskonsolidering* hvis du ikke allerede har aktivert den. I arbeidsområdet **Funksjonsbehandling** har funksjonen navnet *Konsolider forsendelse*.
+1. Gå til **Lagerbehandling \> Oppsett \> Frigi til lager \> Policyer for forsendelseskonsolidering**.
 1. I handlingsruten velger du **Opprett standardoppsett** for å opprette følgende policyer:
 
     - En **Standard** -policy for policytypen *Salgsordrer*
@@ -120,19 +120,19 @@ Bruk funksjonsbehandling til å aktivere funksjonen, hvis du ikke allerede har a
         - **Filterkode:** *Eksplosivt*
         - **Filtertittel:** *Kode 4*
 
-1. Gå til **Behandling av produktinformasjon \> Produkter \> Frigitte produkter** .
-1. Åpne produktet som har artikkelnummer *M9200* . (Produktet du velger, må være aktivert for avanserte \[WMS\]-prosesser for lager, og dette produktet er forhåndsaktivert for WMS-prosesser i demodataene for **USMF** .)
-1. I hurtigkategorien **Lager** angir du verdien *Brannfarlig* for feltet **Kode 4** .
+1. Gå til **Behandling av produktinformasjon \> Produkter \> Frigitte produkter**.
+1. Åpne produktet som har artikkelnummer *M9200*. (Produktet du velger, må være aktivert for avanserte \[WMS\]-prosesser for lager, og dette produktet er forhåndsaktivert for WMS-prosesser i demodataene for **USMF**.)
+1. I hurtigkategorien **Lager** angir du verdien *Brannfarlig* for feltet **Kode 4**.
 1. Lukk siden.
-1. Åpne produktet som har artikkelnummer *M9201* . (Dette produktet er også forhåndsaktivert for WMS-prosesser i demodataene for **USMF** .)
-1. I hurtigkategorien **Lager** angir du verdien *Eksplosivt* for feltet **Kode 4** .
+1. Åpne produktet som har artikkelnummer *M9201*. (Dette produktet er også forhåndsaktivert for WMS-prosesser i demodataene for **USMF**.)
+1. I hurtigkategorien **Lager** angir du verdien *Eksplosivt* for feltet **Kode 4**.
 1. Lukk siden.
 
 #### <a name="create-a-new-transportation-mode-of-delivery"></a>Opprette en ny transportmåte for levering
 
-1. Gå til **Transportstyring \> Oppsett \> Transportører \> Modus** .
-1. Opprett en transportmodus som skal brukes i konsolideringsspørringer, og gi den navnet *Airways* .
-1. Gå til **Transportstyring \> Oppsett \> Transpotører \> Transportører** .
+1. Gå til **Transportstyring \> Oppsett \> Transportører \> Modus**.
+1. Opprett en transportmodus som skal brukes i konsolideringsspørringer, og gi den navnet *Airways*.
+1. Gå til **Transportstyring \> Oppsett \> Transpotører \> Transportører**.
 1. Opprett en transportør med følgende innstillinger:
 
     - **Transportør:** *Airways*
@@ -147,20 +147,20 @@ Bruk funksjonsbehandling til å aktivere funksjonen, hvis du ikke allerede har a
 1. Velg **Lagre** i handlingsruten.
 
     > [!NOTE]
-    > Når du lagrer den nye transportøren, blir feltet **Leveringsmåte** for den nye raden i rutenettet **Tjenester** satt til *Airwa-Air* . Når du bruker leveringsmåten *Airwa-Air* for en salgsordre, vil transportmodusen *Airways* bli brukt for relaterte forsendelser.
+    > Når du lagrer den nye transportøren, blir feltet **Leveringsmåte** for den nye raden i rutenettet **Tjenester** satt til *Airwa-Air*. Når du bruker leveringsmåten *Airwa-Air* for en salgsordre, vil transportmodusen *Airways* bli brukt for relaterte forsendelser.
 
 #### <a name="create-an-order-pool"></a>Opprette en ordrepulje
 
-1. Gå til **Salg og markedsføring \> Oppsett \> Salgsordrer \> Ordrepuljer** .
+1. Gå til **Salg og markedsføring \> Oppsett \> Salgsordrer \> Ordrepuljer**.
 1. Opprett en ordrepulje som skal brukes for konsolideringsspørringen. Denne ordrepuljen må ha følgende innstillinger:
 
     - **Pulje:** Skriv inn et heltall som ikke allerede brukes av en annen pulje.
     - **Navn:** *ShipCons*
 
-1. Gå til **Salg og markedsføring \> Kunder \> Alle kunder** .
-1. Åpne kunden som har kontonummer *US-003* .
+1. Gå til **Salg og markedsføring \> Kunder \> Alle kunder**.
+1. Åpne kunden som har kontonummer *US-003*.
 1. I hurtigkategorien **Standarder for salgsordrer** setter du feltet **Salgsordrepulje** til ordrepuljen du akkurat opprettet.
-1. Lukk siden, og gjenta deretter trinn 4 og 5 for kunden som har kontonummer *US-004* .
+1. Lukk siden, og gjenta deretter trinn 4 og 5 for kunden som har kontonummer *US-004*.
 
 ### <a name="create-example-policy-1"></a>Opprette eksempelpolicy 1
 
@@ -172,18 +172,18 @@ I dette eksemplet skal du opprette en policy av typen *Kunde+modus* som kan bruk
 
 Følg disse trinnene for å opprette en policy for forsendelseskonsolidering for denne forretningssaken.
 
-1. Gå til **Lagerbehandling \> Oppsett \> Frigi til lager \> Policyer for forsendelseskonsolidering** .
-1. Angi verdien *Salgsordrer* for feltet **Policytype** .
+1. Gå til **Lagerbehandling \> Oppsett \> Frigi til lager \> Policyer for forsendelseskonsolidering**.
+1. Angi verdien *Salgsordrer* for feltet **Policytype**.
 1. I handlingsruten velger du **Ny** for å opprette en policy som har følgende innstillinger:
 
     - **Policynavn:** *CustomerMode*
     - **Policybeskrivelse:** *Kundekonto og leveringsmåte*
 
-1. La verdien for alternativet **Konsolider med åpne forsendelser** være *Nei* .
+1. La verdien for alternativet **Konsolider med åpne forsendelser** være *Nei*.
 1. Velg **Lagre** i handlingsruten.
-1. I hurtigkategorien **Konsolideringsfelt** i listen **Gjenværende felt** velger du raden der feltet **Feltnavn** er satt til *Leveringsmåte* .
-1. Velg **Legg til** -knappen ![Pil høyre](media/forward-button.png) for å flytte feltet til listen **Valgte felt** .
-1. I handlingsruten velger du **Rediger spørring** .
+1. I hurtigkategorien **Konsolideringsfelt** i listen **Gjenværende felt** velger du raden der feltet **Feltnavn** er satt til *Leveringsmåte*.
+1. Velg **Legg til** -knappen ![Pil høyre](media/forward-button.png) for å flytte feltet til listen **Valgte felt**.
+1. I handlingsruten velger du **Rediger spørring**.
 1. I rutenettet i kategorien **Område** i dialogboksen for redigeringsprogrammet for spørring finner du raden der feltet **Felt** er satt til *Kundekonto* , og deretter angir du verdien *US-001* for feltet **Vilkår** for den raden.
 1. Velg **Legg til** for å legge til en rad som har følgende innstillinger i rutenettet:
 
@@ -207,21 +207,21 @@ I dette eksemplet skal du opprette en policy av typen *Farlig materiale* som kan
 
 Følg disse trinnene for å opprette en policy for forsendelseskonsolidering for denne forretningssaken.
 
-1. Gå til **Lagerbehandling \> Oppsett \> Frigi til lager \> Policyer for forsendelseskonsolidering** .
-1. Angi verdien *Salgsordrer* for feltet **Policytype** .
+1. Gå til **Lagerbehandling \> Oppsett \> Frigi til lager \> Policyer for forsendelseskonsolidering**.
+1. Angi verdien *Salgsordrer* for feltet **Policytype**.
 1. I handlingsruten velger du **Ny** for å opprette en policy som har følgende innstillinger:
 
     - **Policynavn:** *Varetype*
     - **Policybeskrivelse:** *Konsolider samme type vare på tvers av ordrer*
 
-1. Sett verdien for alternativet **Konsolider med åpne forsendelser** til *Ja* .
+1. Sett verdien for alternativet **Konsolider med åpne forsendelser** til *Ja*.
 1. Velg **Lagre** i handlingsruten.
-1. I hurtigkategorien **Konsolideringsfelt** i listen **Gjenværende felt** velger du raden der feltet **Feltnavn** er satt til *Leveringsmåte* .
-1. Velg **Legg til** -knappen ![Pil høyre](media/forward-button.png) for å flytte feltet til listen **Valgte felt** .
-1. I handlingsruten velger du **Rediger spørring** .
+1. I hurtigkategorien **Konsolideringsfelt** i listen **Gjenværende felt** velger du raden der feltet **Feltnavn** er satt til *Leveringsmåte*.
+1. Velg **Legg til** -knappen ![Pil høyre](media/forward-button.png) for å flytte feltet til listen **Valgte felt**.
+1. I handlingsruten velger du **Rediger spørring**.
 1. I kategorien **Sammenkoblinger** i dialogboksen for redigeringsprogrammet for spørring viser og velger du **Tabeller \> Lastdetaljer** i treet.
-1. Velg **Legg til tabellsammenkobling** .
-1. I rutenettet med relasjoner som vises, finner du og velger raden der feltet **Relasjon** har verdien *Lagervarenummer (varenummer)* , deretter velger du **Velg** . 
+1. Velg **Legg til tabellsammenkobling**.
+1. I rutenettet med relasjoner som vises, finner du og velger raden der feltet **Relasjon** har verdien *Lagervarenummer (varenummer)* , deretter velger du **Velg**. 
 1. Velg **Legg til** i kategorien **Område** for å legge til en rad som har følgende innstillinger i rutenettet:
 
     - **Tabell:** *Lagervarenummer*
@@ -244,20 +244,20 @@ I dette eksemplet skal du opprette en policy av typen *Kunders krav* som kan bru
 
 Følg disse trinnene for å opprette en policy for forsendelseskonsolidering for denne forretningssaken.
 
-1. Gå til **Lagerbehandling \> Oppsett \> Frigi til lager \> Policyer for forsendelseskonsolidering** .
-1. Angi verdien *Salgsordrer* for feltet **Policytype** .
+1. Gå til **Lagerbehandling \> Oppsett \> Frigi til lager \> Policyer for forsendelseskonsolidering**.
+1. Angi verdien *Salgsordrer* for feltet **Policytype**.
 1. I handlingsruten velger du **Ny** for å opprette en policy som har følgende innstillinger:
 
     - **Policynavn:** *CustomerOrderNo*
     - **Policybeskrivelse:** *Konsolider linjer basert på kundebestilling*
 
-1. Sett verdien for alternativet **Konsolider med åpne forsendelser** til *Ja* .
+1. Sett verdien for alternativet **Konsolider med åpne forsendelser** til *Ja*.
 1. Velg **Lagre** i handlingsruten.
-1. I hurtigkategorien **Konsolideringsfelt** i listen **Gjenværende felt** velger du raden der feltet **Feltnavn** er satt til *Kunderekvisisjon* .
-1. Velg **Legg til** -knappen ![Pil høyre](media/forward-button.png) for å flytte feltet til listen **Valgte felt** .
-1. I listen **Gjenværende felt** velger du raden der feltet **Feltnavn** er satt til *Leveringsmåte* .
-1. Velg **Legg til** -knappen ![Pil høyre](media/forward-button.png) for å flytte feltet til listen **Valgte felt** .
-1. I handlingsruten velger du **Rediger spørring** .
+1. I hurtigkategorien **Konsolideringsfelt** i listen **Gjenværende felt** velger du raden der feltet **Feltnavn** er satt til *Kunderekvisisjon*.
+1. Velg **Legg til** -knappen ![Pil høyre](media/forward-button.png) for å flytte feltet til listen **Valgte felt**.
+1. I listen **Gjenværende felt** velger du raden der feltet **Feltnavn** er satt til *Leveringsmåte*.
+1. Velg **Legg til** -knappen ![Pil høyre](media/forward-button.png) for å flytte feltet til listen **Valgte felt**.
+1. I handlingsruten velger du **Rediger spørring**.
 1. I kategorien **Område** i dialogboksen for redigeringsprogrammet for spørring finner du raden der feltet **Felt** er satt til *Kundekonto* , og deretter angir du verdien *US-001* for feltet **Vilkår** for den raden.
 1. Velg **OK** for å lukke dialogboksen.
 
@@ -276,18 +276,18 @@ I dette eksemplet skal du opprette en policy av typen *Kunder som tillater konso
 
 Følg disse trinnene for å opprette en policy for forsendelseskonsolidering for denne forretningssaken.
 
-1. Gå til **Lagerbehandling \> Oppsett \> Frigi til lager \> Policyer for forsendelseskonsolidering** .
-1. Angi verdien *Salgsordrer* for feltet **Policytype** .
+1. Gå til **Lagerbehandling \> Oppsett \> Frigi til lager \> Policyer for forsendelseskonsolidering**.
+1. Angi verdien *Salgsordrer* for feltet **Policytype**.
 1. I handlingsruten velger du **Ny** for å opprette en policy som har følgende innstillinger:
 
     - **Policynavn:** *Ordrepulje*
     - **Policybeskrivelse:** *Konsolider på tvers av ordrer basert på ordrepulje*
 
-1. La verdien for alternativet **Konsolider med åpne forsendelser** være *Nei* .
+1. La verdien for alternativet **Konsolider med åpne forsendelser** være *Nei*.
 1. Velg **Lagre** i handlingsruten.
-1. I hurtigkategorien **Konsolideringsfelt** i listen **Gjenværende felt** velger du raden der feltet **Feltnavn** er satt til *Leveringsmåte* .
-1. Velg **Legg til** -knappen ![Pil høyre](media/forward-button.png) for å flytte feltet til listen **Valgte felt** .
-1. I handlingsruten velger du **Rediger spørring** .
+1. I hurtigkategorien **Konsolideringsfelt** i listen **Gjenværende felt** velger du raden der feltet **Feltnavn** er satt til *Leveringsmåte*.
+1. Velg **Legg til** -knappen ![Pil høyre](media/forward-button.png) for å flytte feltet til listen **Valgte felt**.
+1. I handlingsruten velger du **Rediger spørring**.
 1. Velg **Legg til** i kategorien **Område** i dialogboksen for redigeringsprogrammet for spørring for å legge til en rad som har følgende innstillinger i rutenettet:
 
     - **Tabell:** *Salgsordrer*
@@ -310,18 +310,18 @@ I dette eksemplet skal du opprette en policy av typen *Lagere som tillater konso
 
 Denne forretningssaken kan vanligvis løses ved hjelp av standardpolicyene du opprettet i [Scenario 1](#scenario-1). Du kan imidlertid også opprette lignende policyer manuelt ved å følge disse trinnene.
 
-1. Gå til **Lagerbehandling \> Oppsett \> Frigi til lager \> Policyer for forsendelseskonsolidering** .
-1. Angi verdien *Salgsordrer* for feltet **Policytype** .
+1. Gå til **Lagerbehandling \> Oppsett \> Frigi til lager \> Policyer for forsendelseskonsolidering**.
+1. Angi verdien *Salgsordrer* for feltet **Policytype**.
 1. I handlingsruten velger du **Ny** for å opprette en policy som har følgende innstillinger:
 
     - **Policynavn:** *Kryssordre*
     - **Policybeskrivelse:** *Kryssordrekonsolidering for bestemte lagere*
 
-1. La verdien for alternativet **Konsolider med åpne forsendelser** være *Nei* .
+1. La verdien for alternativet **Konsolider med åpne forsendelser** være *Nei*.
 1. Velg **Lagre** i handlingsruten.
-1. I hurtigkategorien **Konsolideringsfelt** i feltet **Gjenværende felt** velger du raden der feltet **Feltnavn** er satt til *Leveringsmåte* .
-1. Velg **Legg til** -knappen ![Pil høyre](media/forward-button.png) for å flytte feltet til listen **Valgte felt** .
-1. I handlingsruten velger du **Rediger spørring** .
+1. I hurtigkategorien **Konsolideringsfelt** i feltet **Gjenværende felt** velger du raden der feltet **Feltnavn** er satt til *Leveringsmåte*.
+1. Velg **Legg til** -knappen ![Pil høyre](media/forward-button.png) for å flytte feltet til listen **Valgte felt**.
+1. I handlingsruten velger du **Rediger spørring**.
 1. I kategorien **Område** i dialogboksen for redigeringsprogrammet for spørring finner du raden der feltet **Felt** er satt til *Lager* , og deretter angir du verdien *61, 63* for feltet **Vilkår** for den raden.
 1. Velg **OK** for å lukke dialogboksen.
 
@@ -329,8 +329,8 @@ Denne forretningssaken kan vanligvis løses ved hjelp av standardpolicyene du op
 
 Nå som du har opprettet alle policyene, må du angi rekkefølgen de skal brukes i. Hvis du vil bruke en pyramideaktig metode, der policyene som har flest betingelser, evalueres med høyest prioritet, følger du disse trinnene.
 
-1. Gå til **Lagerbehandling \> Oppsett \> Frigi til lager \> Policyer for forsendelseskonsolidering** .
-1. Angi verdien *Salgsordrer* for feltet **Policytype** .
+1. Gå til **Lagerbehandling \> Oppsett \> Frigi til lager \> Policyer for forsendelseskonsolidering**.
+1. Angi verdien *Salgsordrer* for feltet **Policytype**.
 1. Velg hver policy som står oppført i venstre kolonne, og bruk deretter knappene **Flytt opp** og **Flytt ned** i handlingsruten til å ordne policyene i følgende rekkefølge:
 
     1. CustomerMode

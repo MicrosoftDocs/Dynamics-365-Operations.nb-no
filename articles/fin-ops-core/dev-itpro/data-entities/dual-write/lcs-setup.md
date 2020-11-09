@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: rhaertle
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: c78752aa1544b12f61071fa06617af4ac2809233
-ms.sourcegitcommit: 68f1485de7d64a6c9eba1088af63bd07992d972d
+ms.openlocfilehash: f49eba1748861af6ee3353a6c58005ee84ccae23
+ms.sourcegitcommit: 0a741b131ed71f6345d4219a47cf5f71fec6744b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "3172998"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "3998114"
 ---
 # <a name="dual-write-setup-from-lifecycle-services"></a>Oppsett av dobbel skriving fra Lifecycle Services
 
@@ -50,7 +49,7 @@ Hvis du vil konfigurere en tilkobling med dobbel skriving, gjør du følgende.
 3. Velg versjonen. 
 4. Velg topologien. Hvis bare én topologi er tilgjengelig, velges den automatisk.
 5. Fullfør de første trinnene i veiviseren for **distribusjonsinnstillinger**.
-6. Følg deretter at av disse trinnene i fanen **Common Data Service**:
+6. Følg deretter at av disse trinnene i fanen **Common Data Service** :
 
     - Hvis et Common Data Service-miljø allerede er klargjort for leieren, kan du velge det.
 
@@ -75,7 +74,7 @@ Hvis du vil konfigurere en tilkobling med dobbel skriving, gjør du følgende.
         ![Common Data Service-kategorien når leieren ikke allerede har et Common Data Service-miljø](../dual-write/media/lcs_setup_2.png)
 
 7. Fullfør resten av trinnene i veiviseren for **Distribusjonsinnstillinger**.
-8. Når miljøet har statusen **Distribuert**, åpner du siden for miljødetaljer. Delen **Common Data Service-miljøinformasjon** viser navnene på Finance and Operations-miljøet og Common Data Service-miljøet som er koblet.
+8. Når miljøet har statusen **Distribuert** , åpner du siden for miljødetaljer. Delen **Common Data Service-miljøinformasjon** viser navnene på Finance and Operations-miljøet og Common Data Service-miljøet som er koblet.
 
     ![Delen Common Data Service-miljøinformasjon](../dual-write/media/lcs_setup_3.png)
 

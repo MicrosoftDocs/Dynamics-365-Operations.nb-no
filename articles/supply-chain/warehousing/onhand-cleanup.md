@@ -8,6 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
+ms.search.form: SysOperationTemplateForm
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -15,12 +16,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-04-03
 ms.dyn365.ops.version: Release 10.0.12
-ms.openlocfilehash: f6d1f8a4c85c2161d1b79246d437bb3b4d223d1d
-ms.sourcegitcommit: a3cd2783ae120ac6681431c010b9b126a9ca7d94
+ms.openlocfilehash: 9d01c577fc33564d3517d242e9b01f73cc8e079c
+ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "3410971"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4015947"
 ---
 # <a name="warehouse-management-on-hand-entries-cleanup-job"></a>Oppryddingsjobb for lagerstyringsposter
 
@@ -30,7 +31,7 @@ Dette emnet beskriver oppryddingsjobben for lageroppføringer, som sletter unød
 
 ## <a name="what-the-cleanup-job-does"></a>Hva oppryddingsjobben gjør
 
-Oppryddingsjobben for lageroppføringer sletter alle poster i WHSInventReserve- og InventSum-tabellene der alle feltverdiene er *0* (null). Disse oppføringene kan slettes fordi de ikke bidrar til beholdningsinformasjonen. Jobben sletter bare oppføringer som er lavere enn **Lokasjon**-nivået.
+Oppryddingsjobben for lageroppføringer sletter alle poster i WHSInventReserve- og InventSum-tabellene der alle feltverdiene er *0* (null). Disse oppføringene kan slettes fordi de ikke bidrar til beholdningsinformasjonen. Jobben sletter bare oppføringer som er lavere enn **Lokasjon** -nivået.
 
 Hvis negativ fysisk beholdning er tillatt, kan det hende at oppryddingsjobben ikke kan slette alle de aktuelle postene. Årsaken til denne begrensningen er at jobben må tillate et bestemt scenario der et nummerskilt har flere serienumre, hvorav ett av disse serienumrene har blitt negativt. Systemet vil for eksempel ikke ha en beholdning på null når et nummerskilt har mer enn 1 stk med serienummer 1 og mindre enn 1 stk av serienummer 2. I dette spesielle scenariet brukes jobben en "breddesletting" der den prøver å slette fra lavere nivåer først.
 
@@ -49,11 +50,11 @@ Når jobben kjører, har den en tildelt størrelse på 100. Den vil med andre or
 
 ## <a name="possible-user-impact"></a>Mulig påvirkning på brukerne
 
-Brukere kan bli påvirket hvis oppryddingsjobben for lagerbeholdning sletter alle postene for et gitt nivå (f.eks. nummerskiltnivået). I dette tilfellet er det ikke sikkert at funksjonaliteten for å se den tidligere tilgjengelige beholdningen i et nummerskilt fungerer som forventet, fordi de relevante lagerpostene ikke lenger er tilgjengelige. (Denne funksjonaliteten kontrollerer betingelsen **Antall \<\> 0** i **Dimensjonsvisning**-innstillingene når brukere viser informasjon om beholdning.) Ytelsesforbedringen som oppryddingsjobben gir, skal imidlertid normalt utjevne dette lille funksjonalitetstapet.
+Brukere kan bli påvirket hvis oppryddingsjobben for lagerbeholdning sletter alle postene for et gitt nivå (f.eks. nummerskiltnivået). I dette tilfellet er det ikke sikkert at funksjonaliteten for å se den tidligere tilgjengelige beholdningen i et nummerskilt fungerer som forventet, fordi de relevante lagerpostene ikke lenger er tilgjengelige. (Denne funksjonaliteten kontrollerer betingelsen **Antall \<\> 0** i **Dimensjonsvisning** -innstillingene når brukere viser informasjon om beholdning.) Ytelsesforbedringen som oppryddingsjobben gir, skal imidlertid normalt utjevne dette lille funksjonalitetstapet.
 
 ## <a name="make-the-maximum-execution-time-setting-available"></a><a name="max-execution-time"></a>Gjør innstillingen for maksimal utførelsestid tilgjengelig.
 
-Som standard er innstillingen **Maksimal utførelsestid** ikke tilgjengelig. Hvis du vil bruke den, må du bruke [funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) for å aktivere den tilknyttede funksjonen i systemet. I **Funksjonsadministrering**-arbeidsområdet er denne funksjonen oppført på følgende måte:
+Som standard er innstillingen **Maksimal utførelsestid** ikke tilgjengelig. Hvis du vil bruke den, må du bruke [funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) for å aktivere den tilknyttede funksjonen i systemet. I **Funksjonsadministrering** -arbeidsområdet er denne funksjonen oppført på følgende måte:
 
 - **Modul:** *Lagerstyring*
 - **Funksjonsnavn:** *Maksimal utførelsestid for oppryddingsjobb for lagerbeholdning*

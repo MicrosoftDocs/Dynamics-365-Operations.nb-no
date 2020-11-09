@@ -8,6 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
+ms.search.form: WHSInventFixedLocation, WHSSlotDemandLocated, WHSSlotDemand, WHSSlotUOMTier, WHSSlotTemplate, WHSLocDirHint, WHSLocDirTable
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -15,24 +16,24 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: Release 10.0.9
-ms.openlocfilehash: f6764f8bc082962af37d4775b6fe53d8704658eb
-ms.sourcegitcommit: f64fce03ec52f844b05a9e8cac286cb201385002
+ms.openlocfilehash: ed9e6eae2ecc8de8d5eeef4699678e93dd74f193
+ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 07/16/2020
-ms.locfileid: "3597464"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4017420"
 ---
 # <a name="warehouse-slotting"></a>Lagersporing
 
 [!include [banner](../includes/banner.md)]
 
-Med lagersporing kan du konsolidere behov etter vare og måleenhet fra ordrer som har statusen *bestilt*, *reservert* eller *frigitt*. Det genererte behovet kan deretter brukes på lokasjoner som skal brukes til plukking, basert på antall, enhet, fysiske dimensjoner, faste lokasjoner og mer. Etter at sporingsplanen er opprettet, kan etter fyllingsarbeid opprettes for å hente riktig lagermengde til hver lokasjon.
+Med lagersporing kan du konsolidere behov etter vare og måleenhet fra ordrer som har statusen *bestilt* , *reservert* eller *frigitt*. Det genererte behovet kan deretter brukes på lokasjoner som skal brukes til plukking, basert på antall, enhet, fysiske dimensjoner, faste lokasjoner og mer. Etter at sporingsplanen er opprettet, kan etter fyllingsarbeid opprettes for å hente riktig lagermengde til hver lokasjon.
 
 Denne funksjonen hjelper lagerledere å planlegge plukklokasjoner før de frigir ordrer til lageret og oppretter plukkarbeid.
 
 ## <a name="turn-on-the-warehouse-slotting-feature"></a>Aktivere lagersporingsfunksjonen
 
-Før du kan bruke denne funksjonen, må den være aktivert i systemet. Administratorer kan bruke innstillingene for [funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til å kontrollere funksjonsstatusen og aktivere den hvis den kreves. I **Funksjonsadministrering**-arbeidsområdet er denne funksjonen oppført på følgende måte:
+Før du kan bruke denne funksjonen, må den være aktivert i systemet. Administratorer kan bruke innstillingene for [funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til å kontrollere funksjonsstatusen og aktivere den hvis den kreves. I **Funksjonsadministrering** -arbeidsområdet er denne funksjonen oppført på følgende måte:
 
 - **Modul:** *Lagerstyring*
 - **Funksjonsnavn:** *Lagersporingsfunksjon*
@@ -53,7 +54,7 @@ Måleenhetslag gjør det mulig å gruppere flere måleenheter sammen for å spor
     - **Beskrivelse:** *Hver bokspall*
 
 1. Velg **Lagre**.
-1. På **Måleenhet**-hurtigfanen velger du **Ny** for å legge til en linje i rutenettet.
+1. På **Måleenhet** -hurtigfanen velger du **Ny** for å legge til en linje i rutenettet.
 1. På den nye linjen angir du følgende verdier:
 
     - **Enhet:** *Boks*
@@ -82,8 +83,8 @@ Du må velge direktivkoden som skal knyttes til en mal.
 
 1. Gå til **Lagerstyring \> Oppsett \> Direktivkoder**.
 1. Velg **Ny** i handlingsruten.
-1. I **Direktivkode**-feltet angir du *Sporing*.
-1. I **Direktivbeskrivelse**-feltet angir du *Sporing*.
+1. I **Direktivkode** -feltet angir du *Sporing*.
+1. I **Direktivbeskrivelse** -feltet angir du *Sporing*.
 
 ### <a name="set-up-slotting-templates"></a>Definere sporingsmaler
 
@@ -120,7 +121,7 @@ Du kan også angi en spørring for å begrense omfanget av behovet som evalueres
 
 For hver mal du oppretter, følger du disse trinnene for å legge til en linje for hver sporingsspesifikasjon.
 
-1. På **Sporingsmaldetaljer**-hurtigfanen velger du **Ny** for å opprette en mallinje.
+1. På **Sporingsmaldetaljer** -hurtigfanen velger du **Ny** for å opprette en mallinje.
 1. På den nye linjen angir du følgende verdier:
 
     - **Sekvens:** _1_
@@ -158,7 +159,7 @@ For hver mal du oppretter, følger du disse trinnene for å legge til en linje f
 
     - **Tillat la være:** _Ja_
 
-        Hvis dette alternativet er satt til *Ja*, hvis et behov ikke kan spores, opprettes det bevegelsesarbeid for å få beholdning ut av lokasjoner der det er beholdning, men der ingenting var ble sporet. Malen kjøres deretter på nytt. Denne gangen ignorerer beholdningen på lokasjonene. Denne funksjonaliteten fungerer best når **Tilordne sporkriterier** er satt til _Vurder antall_.
+        Hvis dette alternativet er satt til *Ja* , hvis et behov ikke kan spores, opprettes det bevegelsesarbeid for å få beholdning ut av lokasjoner der det er beholdning, men der ingenting var ble sporet. Malen kjøres deretter på nytt. Denne gangen ignorerer beholdningen på lokasjonene. Denne funksjonaliteten fungerer best når **Tilordne sporkriterier** er satt til _Vurder antall_.
 
     - **Fast lokasjonsbruk:** _Bare faste lokasjoner for produktet_
 
@@ -186,9 +187,9 @@ For hver mal du oppretter, følger du disse trinnene for å legge til en linje f
 
     I spørringen for den andre linjen vil du nå angi kriteriene som brukes til å bestemme hvilke lokasjoner behovet etter linjen kan spores til.
 
-1. Velg linjen der **Sekvens**-feltet er satt til *2*.
+1. Velg linjen der **Sekvens** -feltet er satt til *2*.
 1. Velg **Rediger spørring**.
-1. På **Område**-fanen velger du **Legg til** for å legge til en linje i rutenettet.
+1. På **Område** -fanen velger du **Legg til** for å legge til en linje i rutenettet.
 1. På den nye linjen angir du følgende verdier:
 
     - **Tabell:** *Plasseringer*
@@ -203,20 +204,20 @@ For hver mal du oppretter, følger du disse trinnene for å legge til en linje f
 Minst ett lokasjonsdirektiv må være satt opp for å støtte sporingsplukkinger. Bruk fremgangsmåtene i denne delen til å definere et nytt *lokasjonsdirektiv for etterfylling* for sporingsplukkinger.
 
 1. Gå til **Lagerstyring \> Oppsett \> Lokasjonsdirektiver**.
-1. I den venstre ruten i **Arbeidsordretype**-feltet velger du *Etterfylling*.
+1. I den venstre ruten i **Arbeidsordretype** -feltet velger du *Etterfylling*.
 1. Velg **Ny** i handlingsruten.
-1. I toppteksten for det nye lokasjonsdirektivet angir *61 Sporingsplukk* i **Navn**-feltet.
+1. I toppteksten for det nye lokasjonsdirektivet angir *61 Sporingsplukk* i **Navn** -feltet.
 
 ##### <a name="configure-the-location-directives-fasttab"></a>Konfigurer Lokasjonsdirektiv-hurtigfanen
 
-1. Angi følgende verdier i **Lokasjonsdirektiver**-hurtigfanen. Godta standardverdiene for alle de andre feltene.
+1. Angi følgende verdier i **Lokasjonsdirektiver** -hurtigfanen. Godta standardverdiene for alle de andre feltene.
 
     - **Arbeidstype:** _Plukk_
     - **Område:** _6_
     - **Lager:** _61_
     - **Direktivkode:** _Sporing_
 
-1. Velg **Lagre** for å gjøre **Linjer**-hurtigfanen tilgjengelig.
+1. Velg **Lagre** for å gjøre **Linjer** -hurtigfanen tilgjengelig.
 
 ##### <a name="configure-the-lines-fasttab"></a>Konfigurere Linjer-hurtigfanen
 
@@ -226,7 +227,7 @@ Minst ett lokasjonsdirektiv må være satt opp for å støtte sporingsplukkinger
     - **Fra-antall:** _0_
     - **Til antall:** _1000000_
 
-1. Velg **Lagre** for å gjøre **Lokasjonsdirektivhandlinger**-hurtigfanen tilgjengelig.
+1. Velg **Lagre** for å gjøre **Lokasjonsdirektivhandlinger** -hurtigfanen tilgjengelig.
 
 ##### <a name="configure-the-location-directive-actions-fasttab"></a>Konfigurer Handlinger for lokasjonsdirektiv-hurtigfanen
 
@@ -236,12 +237,12 @@ Minst ett lokasjonsdirektiv må være satt opp for å støtte sporingsplukkinger
     - **Navn:** _Bulk_
     - **Strategi:** _Ingen_
 
-1. Velg **Lagre** for å aktivere **Rediger spørring**-knappen.
+1. Velg **Lagre** for å aktivere **Rediger spørring** -knappen.
 
 ##### <a name="edit-the-query"></a>Rediger spørringen
 
-1. I **Handlinger for lokasjonsdirektiv**-hurtigfanen velger du **Rediger spørring**.
-1. På **Område**-fanen velger du **Legg til** for å legge til en linje i rutenettet.
+1. I **Handlinger for lokasjonsdirektiv** -hurtigfanen velger du **Rediger spørring**.
+1. På **Område** -fanen velger du **Legg til** for å legge til en linje i rutenettet.
 1. På den nye linjen angir du følgende verdier:
 
     - **Tabell:** *Plasseringer*
@@ -267,10 +268,10 @@ Følg denne fremgangsmåten for å opprette behovet du vil bruke sporing på.
 
 1. Gå til **Salg og markedsføring \> Salgsordrer \> Alle salgsordrer**.
 1. Velg **Ny** for å opprette en salgsordre.
-1. I **Opprett salgsordre**-dialogboksen, i **Kundekonto**-feltet, velger du _US-007_.
-1. I **Lager**-feltet velger du _61_.
+1. I **Opprett salgsordre** -dialogboksen, i **Kundekonto** -feltet, velger du _US-007_.
+1. I **Lager** -feltet velger du _61_.
 1. Velg **OK**.
-1. Den nye salgsordren åpnes. Det inneholder en tom linje på **Salgsordrelinjer**-hurtigfanen. På denne linjen angir du følgende verdier:
+1. Den nye salgsordren åpnes. Det inneholder en tom linje på **Salgsordrelinjer** -hurtigfanen. På denne linjen angir du følgende verdier:
 
     - **Vare:** _L0101_
     - **Antall:** _20_
@@ -282,9 +283,9 @@ Følg denne fremgangsmåten for å opprette behovet du vil bruke sporing på.
 
 1. Velg **Lagre**.
 1. Velg **Ny** for å opprette en ny salgsordre.
-1. I **Opprett salgsordre**-dialogboksen, i **Kundekonto**-feltet, velger du _US-008_.
-1. I **Lager**-feltet velger du _61_.
-1. Den nye salgsordren åpnes. Det inneholder en tom linje på **Salgsordrelinjer**-hurtigfanen. På denne linjen angir du følgende verdier:
+1. I **Opprett salgsordre** -dialogboksen, i **Kundekonto** -feltet, velger du _US-008_.
+1. I **Lager** -feltet velger du _61_.
+1. Den nye salgsordren åpnes. Det inneholder en tom linje på **Salgsordrelinjer** -hurtigfanen. På denne linjen angir du følgende verdier:
 
     - **Vare:** _T0100_
     - **Antall:** _1_
@@ -297,21 +298,21 @@ Når alle forutsetningselementene er på plass, som beskrevet i den forrige dele
 
 #### <a name="generate-demand"></a>Generer behov
 
-1. Gå til **Lagerstyring \> Oppsett \> Etterfylling \> Sporingsmaler**, og velg sporingsmalen du opprettet tidligere.
+1. Gå til **Lagerstyring \> Oppsett \> Etterfylling \> Sporingsmaler** , og velg sporingsmalen du opprettet tidligere.
 1. Velg **Generelt behov** i handlingsruten. Denne kommandoen evaluerer alle behov som er i systemet, og som samsvarer med sporingsmalspørringen. Det totale behovet på tvers av alle ordrer konsolideres deretter på én linje per antall/måleenhet. En informasjonsmelding vises når prosessen er fullført.
 
 #### <a name="slotting-demand"></a>Sporingsbehov
 
 *Sporingsbehovet* viser resultatene av behovsgenerering, basert på oppsettet til sporingsmalen.
 
-- I handlingsruten velger **Sporingsbehov** for å vise resultatene fra **Generelt behov**-kommandoen. Linjene i sporingsbehov kan redigeres. Du kan slette en linje, legge til en ny linje eller redigere linjedetaljene.
+- I handlingsruten velger **Sporingsbehov** for å vise resultatene fra **Generelt behov** -kommandoen. Linjene i sporingsbehov kan redigeres. Du kan slette en linje, legge til en ny linje eller redigere linjedetaljene.
 
 > [!NOTE]
 > Du kan redigere behovet manuelt, eller du kan importere den fra et eksternt system ved hjelp av dataadministrasjon. Det som er oppgitt i sporingsbehov, vil bli brukt i neste trinn, uansett hvor den kom fra.
 
 #### <a name="locate-demand"></a>Finn behov
 
-Etter at behov er generert, må du bruke **Finn behov**-kommandoen til å generere *sporingsplanen*.
+Etter at behov er generert, må du bruke **Finn behov** -kommandoen til å generere *sporingsplanen*.
 
 - Velg **Finn behov** i handlingsruten. Sporingsprosessen kjører. En informasjonsmelding vises når prosessen er fullført.
 
@@ -323,7 +324,7 @@ Sporingsplanen viser lokasjonen som hver vare/antall ble tilordnet til, om overf
 
 #### <a name="create-replenishment"></a>Opprett etterfylling
 
-Etter at sporingsplanen er opprettet, må du opprette *Etterfyllingsarbeid*, basert på planen.
+Etter at sporingsplanen er opprettet, må du opprette *Etterfyllingsarbeid* , basert på planen.
 
 - Velg **Kjør etterfylling** i handlingsruten. En informasjonsmelding vises når prosessen er fullført. Denne meldingen angir antallet hoder som ble opprettet for build-ID-en for arbeid.
 
@@ -343,7 +344,7 @@ Når alle nødvendige elementer er på plass, kan du konfigurere sporing til å 
     - Opprett etterfyllingsarbeid
 
     > [!NOTE]
-    > Sporingstrinnene er progressive. Hvis du vil velge *Finn behov*, må du først velge *Generer behov*.
+    > Sporingstrinnene er progressive. Hvis du vil velge *Finn behov* , må du først velge *Generer behov*.
 
 1. Angi hvilken sporingsmal som skal brukes.
 1. Angi at regelmessigheten skal kjøres automatisk hvis du vil.

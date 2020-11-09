@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f1a37b7c5aea22711938133d43b552eec9260f0a
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: da4353849b053ff94cf1fda7a03568438d0111da
+ms.sourcegitcommit: 49f3011b8a6d8cdd038e153d8cb3cf773be25ae4
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2188976"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4015013"
 ---
 # <a name="settle-a-partial-customer-payment-that-has-discounts-on-credit-notes"></a>Utligne en delvis kundebetaling som har rabatter på kreditnotaer
 
@@ -42,7 +42,7 @@ Kunde 4035 har en faktura for 1000,00 og en kreditnota for 100,00. Hvert dokumen
 | CCRN-10050 | Kreditnota      | 28/6/2015 | K-10050 |                                      | 100,00                                | -100,00  | USD      |
 
 ## <a name="settle-a-credit-note-with-an-invoice"></a>Utligne en kreditnota med en faktura
-Magnus åpner siden **Utlign transaksjoner** fra **Kundetransaksjoner**-siden. Han kan bruke siden **Utligne transaksjoner** til å utligne fakturaen og kreditnotaen. Som en del av utligningsprosessen ser han kontantrabattdatoene og -beløpene. Han merker de to dokumentene og klikker deretter **Poster** for å utligne transaksjonene. Det er en rabatt på -1,00 på kreditnotaen, fordi Fabrikam tillater rabatter på kreditnotaer.
+Magnus åpner siden **Utlign transaksjoner** fra **Kundetransaksjoner** -siden. Han kan bruke siden **Utligne transaksjoner** til å utligne fakturaen og kreditnotaen. Som en del av utligningsprosessen ser han kontantrabattdatoene og -beløpene. Han merker de to dokumentene og klikker deretter **Poster** for å utligne transaksjonene. Det er en rabatt på -1,00 på kreditnotaen, fordi Fabrikam tillater rabatter på kreditnotaer.
 
 | Merk     | Bruk kontantrabatt | Bilag    | Konto | Dato      | Forfallsdato  | Faktura  | Beløp i transaksjonsvaluta | Valuta | Beløp som skal utlignes |
 |----------|-------------------|------------|---------|-----------|-----------|----------|--------------------------------|----------|------------------|
@@ -51,13 +51,11 @@ Magnus åpner siden **Utlign transaksjoner** fra **Kundetransaksjoner**-siden. H
 
 Rabattinformasjonen vises nederst på siden **Utlign transaksjoner**.
 
-|                              |           |
-|------------------------------|-----------|
-| Kontantrabattdato           | 12/7/2015 |
-| Kontantrabattbeløp         | -1.00     |
-| Bruk kontantrabatt            | Normal    |
-| Kontantrabatt brukt          | 0,00      |
-| Kontantrabattbeløp som skal brukes | -1.00     |
+- **Kontantrabattdato** : 7/12/2015 
+- **Kontantrabattbeløp** : -1,00     
+- **Bruk kontantrabatt** : Normal    
+- **Kontantrabatt brukt** : 0,00      
+- **Kontantrabattbeløp som skal brukes** : -1,00     
 
 Utligningen skal være 100,00, og inkluderer en betaling på 99,00 og en rabatt på 1,00.
 

@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: rhaertle
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: ''
 ms.author: damadipa
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-06-25
-ms.openlocfilehash: dce4b6310e2f6d31a115302efa7fbc132799e48f
-ms.sourcegitcommit: 4ba10abe5be8a21b95370cd970a622e954970984
+ms.openlocfilehash: 5855581100606003c1faf6b88a0ab234ae378893
+ms.sourcegitcommit: 0a741b131ed71f6345d4219a47cf5f71fec6744b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "3829291"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "3997680"
 ---
 # <a name="set-up-the-mapping-for-the-sales-order-status-fields"></a>Definere tilordningen for salgsordrestatusfeltene
 
@@ -36,18 +35,18 @@ Feltene som angir salgsordrestatus, har forskjellige opplistingsverdier i Micros
 
 I Supply Chain Management viser to felt statusen for salgsordren. Feltene du må tilordne, er **Status** og **Dokumentstatus**.
 
-**Status**-opplistingen angir den totale statusen til ordren. Denne statusen vises i ordrehodet.
+**Status** -opplistingen angir den totale statusen til ordren. Denne statusen vises i ordrehodet.
 
-**Status**-opplistingen har følgende verdier:
+**Status** -opplistingen har følgende verdier:
 
 - Åpen ordre
 - Levert
 - Fakturert
 - Annullert
 
-**Dokumentstatus**-opplistingen angir det nyeste dokumentet som ble generert for ordren. Hvis for eksempel ordren er bekreftet, er dette dokumentet en salgsordrebekreftelse. Hvis en salgsordre er delvis fakturert, og den gjenværende linjen deretter blir bekreftet, forblir dokumentstatusen **Faktura**, fordi fakturaen genereres senere i prosessen.
+**Dokumentstatus** -opplistingen angir det nyeste dokumentet som ble generert for ordren. Hvis for eksempel ordren er bekreftet, er dette dokumentet en salgsordrebekreftelse. Hvis en salgsordre er delvis fakturert, og den gjenværende linjen deretter blir bekreftet, forblir dokumentstatusen **Faktura** , fordi fakturaen genereres senere i prosessen.
 
-**Dokumentstatus**-opplistingen har følgende verdier:
+**Dokumentstatus** -opplistingen har følgende verdier:
 
 - Bekreftelse
 - Plukkliste
@@ -58,7 +57,7 @@ I Supply Chain Management viser to felt statusen for salgsordren. Feltene du må
 
 I Sales viser to felt statusen for ordren. Feltene du må tilordne, er **Status** og **Behandlingsstatus**.
 
-**Status**-opplistingen angir den totale statusen til ordren. Det har følgende verdier:
+**Status** -opplistingen angir den totale statusen til ordren. Det har følgende verdier:
 
 - Aktive
 - Sendt inn
@@ -101,11 +100,11 @@ Hvis du vil konfigurere tilordningen for salgsordrestatusfeltene, må du aktiver
 Følg denne fremgangsmåten for å aktivere attributtet **IsSOPIntegrationEnabled**.
 
 1. I en webleser kan du gå til `https://<test-name>.crm.dynamics.com/api/data/v9.0/organizations`. Erstatt **\<test-name\>** med firmaets kobling til Sales.
-2. På siden som åpnes, finner du **organizationid**, og noter verdien.
+2. På siden som åpnes, finner du **organizationid** , og noter verdien.
 
     ![Finne organizationid](media/sales-map-orgid.png)
 
-3. I Sales åpner du leserkonsollen og kjører følgende skript: Bruk **organizationid**-verdien fra trinn 2.
+3. I Sales åpner du leserkonsollen og kjører følgende skript: Bruk **organizationid** -verdien fra trinn 2.
 
     ```javascript
     Xrm.WebApi.updateRecord("organization",
@@ -130,7 +129,7 @@ Følg denne fremgangsmåten for å aktivere attributtet **IsSOPIntegrationEnable
 
 Følg denne fremgangsmåten for å aktivere attributtet **isIntegrationUser**.
 
-1. I Sales kan du gå til **Innstilling \> Tilpasning \> Tilpass systemet**, velge **Brukerenhet** og deretter åpne **Skjema \> Bruker**.
+1. I Sales kan du gå til **Innstilling \> Tilpasning \> Tilpass systemet** , velge **Brukerenhet** og deretter åpne **Skjema \> Bruker**.
 
     ![Åpne brukerskjemaet](media/sales-map-user.png)
 

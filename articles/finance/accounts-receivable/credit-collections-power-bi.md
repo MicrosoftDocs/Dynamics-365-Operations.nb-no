@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 03face220fd63962f645b4fe91f20aec2f19b1ef
-ms.sourcegitcommit: 14b554b43b9d86152ef27fdde6141589bcaf1161
+ms.openlocfilehash: 6d6880e258510a79cdd5937f96af28e5ae148292
+ms.sourcegitcommit: 1329b3b98854422c4c3773ede44a5cefa7d07085
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 07/16/2020
-ms.locfileid: "3598064"
+ms.lasthandoff: 10/19/2020
+ms.locfileid: "4040059"
 ---
 # <a name="credit-and-collections-management-power-bi-content"></a>Power BI-innholdet Behandling av kreditt og innkrevinger
 
@@ -38,7 +38,7 @@ Power BI-innholdet består av 10 rapportsider:
 - To oversiktssider (én side for en kreditoversikt og én side for en innkrevingsoversikt)
 - Åtte detaljsider med detaljer for mål for kredit og innkreving som er delt opp på tvers av ulike dimensjoner
 
-Alle beløpene vises i systemvalutaen. Du kan definere systemvalutaen på **Systemparametere**-siden.
+Alle beløpene vises i systemvalutaen. Du kan definere systemvalutaen på **Systemparametere** -siden.
 
 Som standard vises kredit- og innkrevingsdataene for gjeldende firma. Hvis du vil se dataene på tvers av alle firmaer, tilordner du plikten **CustCollectionsBICrossCompany** til rollen.
 
@@ -52,9 +52,12 @@ Følgende oppsett må fullføres for at data skal kunne vises i Power BI-visualo
 4. Definer valutakurser mellom transaksjonsvalutaer og regnskapsvalutam regnskapsvaluta og systemvaluta. Du kan gjøre dette ved å gå til **Økonomimodul > Valutaer > Valutakurser**.
 5. Gå til **Systemadministrasjon > Oppsett > Enhetslager** for å oppdatere den aggregerte målingen **CustCollectionsBIMeasurementsV2**.
 
+>[!NOTE] 
+> Definisjoner av aldersfordelingsperiode må defineres i **Kundeparametere > Innkrevinger > Innkrevingsstandarder** for å aktivere aldersfordeling i Power BI-innholdet.
+
 ## <a name="accessing-the-power-bi-content"></a>Tilgang til Power BI-innholdet
 
-Power BI-innholdet **Behandling av kreditt og innkrevinger** vises i **Kundekreditt og innkrevinger**-arbeidsområdet.
+Power BI-innholdet **Behandling av kreditt og innkrevinger** vises i **Kundekreditt og innkrevinger** -arbeidsområdet.
 
 ## <a name="reports-that-are-included-in-the-power-bi-content"></a>Rapporter som er inkludert i Power BI-innholdet
 

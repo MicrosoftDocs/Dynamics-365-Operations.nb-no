@@ -8,6 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
+ms.search.form: WHSReplenishmentTemplates, WHSLocationLimit
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -15,12 +16,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-16
 ms.dyn365.ops.version: Release 10.0.7
-ms.openlocfilehash: 5591af5fce4eb3fc901919b98f654faa5e160c54
-ms.sourcegitcommit: 27233e0fda61dac541c5210ca8d94ab4ba74966f
+ms.openlocfilehash: 8e9ae16fea892d1d6b6a6b5d06137576623e7f5b
+ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/03/2020
-ms.locfileid: "3652255"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4016614"
 ---
 # <a name="replenishment-over-location-capacity"></a>Etterfylling over lokasjonskapasitet
 
@@ -52,7 +53,7 @@ Aktiver funksjonaliteten for Etterfylling over kapasitet på lokasjonsprofilen.
 1. Gå til **Lagerstyring \> Oppsett \> Lager \> Lokasjonsprofiler**.
 1. Velg **PLUK-06** i venstre rute.
 1. I handlingsruten velger du **Rediger**.
-1. Angi følgende verdier på **Etterfylling**-hurtigfanen:
+1. Angi følgende verdier på **Etterfylling** -hurtigfanen:
 
     - **Overskrid lokasjonskapasitet:** *Ja*
 
@@ -62,13 +63,13 @@ Aktiver funksjonaliteten for Etterfylling over kapasitet på lokasjonsprofilen.
 
         Dette feltet definerer metoden som brukes til å fastslå når mer arbeid skal frigis. Du kan frigi etter antall eller prosent:
 
-        - *Prosent* – Velg dette alternativet for å bruke prosentkapasitet som er basert på beholdningsgrenser eller volummål. Hvis du velger dette alternativet, aktiveres feltet **Overflytprosent**, og de to antallsrelaterte feltene, **Overflytantall** og **Overflytenhet**, deaktiveres.
+        - *Prosent* – Velg dette alternativet for å bruke prosentkapasitet som er basert på beholdningsgrenser eller volummål. Hvis du velger dette alternativet, aktiveres feltet **Overflytprosent** , og de to antallsrelaterte feltene, **Overflytantall** og **Overflytenhet** , deaktiveres.
 
             Du kan bruke dette alternativet hvis plukklokasjonene bruker volummål.
 
             Hvis det er merket av for dette alternativet, setter du feltet **Overflytprosent** til prosenten der mer etterfyllingsarbeid blir gjort tilgjengelig.
 
-        - *Antall* – Velg dette alternativet for å bruke en bestemt antallsverdi. Hvis du velger dette alternativet, deaktiveres feltet **Overflytprosent**, og de feltene **Overflytantall** og **Overflytenhet** aktiveres.
+        - *Antall* – Velg dette alternativet for å bruke en bestemt antallsverdi. Hvis du velger dette alternativet, deaktiveres feltet **Overflytprosent** , og de feltene **Overflytantall** og **Overflytenhet** aktiveres.
 
             Bruk dette alternativet når du ikke bruker volummål for lokasjoner som etterfylles, eller når du har konsekvente mengder der du vil at mer beholdning skal hentes til lokasjonen.
 
@@ -97,7 +98,7 @@ Aktiver funksjonaliteten for Etterfylling over kapasitet på lokasjonsprofilen.
         Lokasjonsbeholdningsgrenser vurderes når arbeidsantallsprosenten beregnes. Hvis det ikke er definert noen lagergrenser for lokasjoner, beregnes arbeidsmengdeprosenten etter volum hvis volumbegrensninger er definert for lokasjonsprofilen.
 
 > [!IMPORTANT]
-> Hvis du bruker demonstrasjonsdataene for den juridiske enheten **USMF** og tidligere har aktivert funksjonen *Nummerskiltposisjonering for lokasjon*, må du deaktivere innstillingen **Aktiver nummerskiltposisjonering** for lokasjonsprofilen **BULK-06** for å fullføre trinnene for mobil i eksempelscenarioet.
+> Hvis du bruker demonstrasjonsdataene for den juridiske enheten **USMF** og tidligere har aktivert funksjonen *Nummerskiltposisjonering for lokasjon* , må du deaktivere innstillingen **Aktiver nummerskiltposisjonering** for lokasjonsprofilen **BULK-06** for å fullføre trinnene for mobil i eksempelscenarioet.
 
 ### <a name="wave-step-code"></a>Bølgetrinnkode
 
@@ -105,7 +106,7 @@ Aktiver funksjonaliteten for Etterfylling over kapasitet på lokasjonsprofilen.
 > Hvis du vil definere en bølgetrinnskode som beskrevet her, kan det være at du først må bruke [funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til å aktivere funksjonen *Organisasjonsomfattende bølgetrinnkode*.
 
 1. Gå til **Lagerstyring \> Oppsett \> Bølger \> Bølgetrinnkoder**.
-1. Velg **Ny**, og angi følgende verdier:
+1. Velg **Ny** , og angi følgende verdier:
 
     - **Bølgetrinnkode:** *Etterfyll*
     - **Bølgetrinnbeskrivelse:** *Etterfylling*
@@ -119,7 +120,7 @@ Etterfyllingsmaler er et sett med regler som bestemmer når og hvordan en lokasj
 
 1. Gå til **Lagerstyring \> Oppsett \> Etterfylling \> Etterfyllingsmaler**.
 1. I handlingsruten velger du **Rediger**.
-1. I **Oversikt**-delen velger du linjen der feltet **Etterfyllingsmal** er satt til *Behovsbasert etterfylling*.
+1. I **Oversikt** -delen velger du linjen der feltet **Etterfyllingsmal** er satt til *Behovsbasert etterfylling*.
 1. Angi følgende verdier:
 
     - **Bølgetrinnkode:** *Etterfyll*
@@ -130,14 +131,14 @@ Etterfyllingsmaler er et sett med regler som bestemmer når og hvordan en lokasj
 ### <a name="wave-template"></a>Bølgemal
 
 1. Gå til **Lagerstyring \> Oppsett \> Bølger \> Bølgemaler**.
-1. I den venstre ruten setter du **Bølgemaltype**-feltet til *Forsendelse*.
+1. I den venstre ruten setter du **Bølgemaltype** -feltet til *Forsendelse*.
 1. Velg malen **61 Forsendelse** fra listen.
 1. I handlingsruten velger du **Rediger**.
 1. I hurtigfanen **Generelt** setter du alternativet **Automatiser frigivelse av etterfyllingsarbeid** til *Ja*.
 
     Sett dette alternativet til *Ja* for å opprette behovsbasert etterfyllingarbeid og frigi det automatisk. Du må legge til etterfyllingsbølgemetoden i bølgemalen og opprette en mal for etterfylling av typen **Bølgebehov**. Angi en mal for etterfylling på siden **Etterfyllingsmaler**. Hvis du vil definere en etterfyllingsmal, må du legge til etterfyllingsmetoden i bølgemalen.
 
-1. På hurtigfanen **Metoder**, i kolonnen **Valgte metoder**, finner du følgende linje:
+1. På hurtigfanen **Metoder** , i kolonnen **Valgte metoder** , finner du følgende linje:
 
     - **Metodenavn:** *etterfylle*
     - **Navn:** *Etterfylling*
@@ -147,7 +148,7 @@ Etterfyllingsmaler er et sett med regler som bestemmer når og hvordan en lokasj
 
 ## <a name="example-scenario"></a>Eksempelscenario
 
-Etter at du har gjort alle de tidligere beskrevne eksempeldataene tilgjengelige og konfigurert dem, kan du arbeide deg gjennom dette scenariet for å prøve ut funksjonen *Etterfylling over lokasjonskapasitet*. Verdiene som vises i dette scenariet, antar at du arbeider med standard demonstrasjonsdata, at du har valgt den juridiske enheten **USMF**, og at du klargjorde eksempelpostene som er beskrevet tidligere i dette emnet. Dette scenariet fungerer også som et eksempel som viser hvordan funksjonen kan brukes i et produksjonsmiljø.
+Etter at du har gjort alle de tidligere beskrevne eksempeldataene tilgjengelige og konfigurert dem, kan du arbeide deg gjennom dette scenariet for å prøve ut funksjonen *Etterfylling over lokasjonskapasitet*. Verdiene som vises i dette scenariet, antar at du arbeider med standard demonstrasjonsdata, at du har valgt den juridiske enheten **USMF** , og at du klargjorde eksempelpostene som er beskrevet tidligere i dette emnet. Dette scenariet fungerer også som et eksempel som viser hvordan funksjonen kan brukes i et produksjonsmiljø.
 
 ### <a name="create-replenishment-work"></a>Opprett etterfyllingsarbeid
 
@@ -161,13 +162,13 @@ Etter at du har gjort alle de tidligere beskrevne eksempeldataene tilgjengelige 
     - **Lager:** *61*
 
 1. Velg **OK** for å opprette salgsorden og lukke dialogboksen.
-1. Den nye salgsordren åpnes. Det inneholder en ny, tom linje på **Salgsordrelinjer**-hurtigfanen. På denne linjen angir du følgende verdier:
+1. Den nye salgsordren åpnes. Det inneholder en ny, tom linje på **Salgsordrelinjer** -hurtigfanen. På denne linjen angir du følgende verdier:
 
     - **Varenummer:** *T0100*
     - **Antall:** *40*
 
 1. På hurtigfanen **Salgsordrelinjer** velger du **Beholdning \> Reservasjon**.
-1. På **Reservasjon**-siden velger du **Reserver parti**.
+1. På **Reservasjon** -siden velger du **Reserver parti**.
 1. Lukk siden.
 1. Velg **Frigi til lager** i kategorien **Lager** i handlingsruten.
 
@@ -184,13 +185,13 @@ Etter at du har gjort alle de tidligere beskrevne eksempeldataene tilgjengelige 
     - **Lager:** *61*
 
 1. Velg **OK** for å opprette salgsorden og lukke dialogboksen.
-1. Den nye salgsordren åpnes. Det inneholder en ny, tom linje på **Salgsordrelinjer**-hurtigfanen. På denne linjen angir du følgende verdier:
+1. Den nye salgsordren åpnes. Det inneholder en ny, tom linje på **Salgsordrelinjer** -hurtigfanen. På denne linjen angir du følgende verdier:
 
     - **Varenummer:** *T0100*
     - **Antall:** *60*
 
 1. På hurtigfanen **Salgsordrelinjer** velger du **Beholdning \> Reservasjon**.
-1. På **Reservasjon**-siden velger du **Reserver parti**.
+1. På **Reservasjon** -siden velger du **Reserver parti**.
 1. Lukk siden.
 1. Velg **Frigi til lager** i kategorien **Lager** i handlingsruten.
 
@@ -207,13 +208,13 @@ Etter at du har gjort alle de tidligere beskrevne eksempeldataene tilgjengelige 
     - **Lager:** *61*
 
 1. Velg **OK** for å opprette salgsorden og lukke dialogboksen.
-1. Den nye salgsordren åpnes. Det inneholder en ny, tom linje på **Salgsordrelinjer**-hurtigfanen. På denne linjen angir du følgende verdier:
+1. Den nye salgsordren åpnes. Det inneholder en ny, tom linje på **Salgsordrelinjer** -hurtigfanen. På denne linjen angir du følgende verdier:
 
     - **Varenummer:** *T0100*
     - **Antall:** *30*
 
 1. På hurtigfanen **Salgsordrelinjer** velger du **Beholdning \> Reservasjon**.
-1. På **Reservasjon**-siden velger du **Reserver parti**.
+1. På **Reservasjon** -siden velger du **Reserver parti**.
 1. Lukk siden.
 1. Velg **Frigi til lager** i kategorien **Lager** i handlingsruten.
 
@@ -224,11 +225,11 @@ Etter at du har gjort alle de tidligere beskrevne eksempeldataene tilgjengelige 
 #### <a name="view-work-details"></a>Vis arbeidsdetaljer
 
 1. Gå til **Lagerstyring \> Arbeid \> Arbeidsdetaljer**.
-1. I **Oversikt**-delen filtrerer du **Lager**-kolonnen for lager *61*.
+1. I **Oversikt** -delen filtrerer du **Lager** -kolonnen for lager *61*.
 1. Du skal se at sju arbeids-ID-er ble opprettet for de tre etterspørselssalgsordrene.
 
-    - Tre av de sju arbeids-ID-ene har **Arbeidsordretype**-verdien *Etterfylling*, og fire har **Arbeidsordretype**-verdien *Salgsordrer*.
-    - Alle de tre arbeids-ID-ene som har **Arbeidsordretype**-verdien *Etterfylling*, har de samme *Plukk*- og *Plassering*-stedene i **Linjer**-delen:
+    - Tre av de sju arbeids-ID-ene har **Arbeidsordretype** -verdien *Etterfylling* , og fire har **Arbeidsordretype** -verdien *Salgsordrer*.
+    - Alle de tre arbeids-ID-ene som har **Arbeidsordretype** -verdien *Etterfylling* , har de samme *Plukk* - og *Plassering* -stedene i **Linjer** -delen:
 
         - **Plukk:** *02A01R5S1B*
         - **Plassering:** *06A01R2S1B*
@@ -246,7 +247,7 @@ Senere i dette scenariet skal du bruke lagerappen (eller en emulator), der du m�
 Følg denne fremgangsmåten for å finne ID-ene til nummerskiltene som du vil trenge senere.
 
 1. Gå til **Lagerstyring \> Forespørsler og rapporter \> Beholdningsliste**.
-1. Velg **Vis filtre**-knappen for å åpne filterruten.
+1. Velg **Vis filtre** -knappen for å åpne filterruten.
 1. Angi følgende filtreringskriterier for å hente nummerskiltene for scenariet. Bruk filteret *begynner med*.
 
     - **Varenummer:** *T0100*
@@ -254,8 +255,8 @@ Følg denne fremgangsmåten for å finne ID-ene til nummerskiltene som du vil tr
 
 1. Velg **Bruk**.
 1. Klikk på **Dimensjoner** i handlingsruten.
-1. I dialogboksen **Dimensjonsvisning**, i delen **Lagringsdimensjoner**, velger du alle verdiene.
-1. I **Transaksjoner**-delen velger du **Varenummer** og **Antall \<\> 0**.
+1. I dialogboksen **Dimensjonsvisning** , i delen **Lagringsdimensjoner** , velger du alle verdiene.
+1. I **Transaksjoner** -delen velger du **Varenummer** og **Antall \<\> 0**.
 1. Når du er ferdig, velger du **OK** for å lukke dialogboksen.
 1. Rutenettet **Beholdning** viser skiltnumrene for varen *T0100* i hver lokasjon. Noter deg hvilket nummerskilt som finnes på hver lokasjon, fordi du vil ha behov for denne informasjonen senere.
 1. Lukk siden.
@@ -271,14 +272,14 @@ Du vil utføre etterfylling av lagerlokasjon for de to første arbeids-ID-ene. A
 
     Du blir bedt om å fullføre det første etterfyllingsarbeidet. Varenummeret, antallet og lokasjonen det skal plukkes fra, vises.
 
-1. I **LP**-feltet angir du skiltnummeret for varen i lokasjonen som vises.
-1. Velg **OK**-knappen (hakesymbolet).
+1. I **LP** -feltet angir du skiltnummeret for varen i lokasjonen som vises.
+1. Velg **OK** -knappen (hakesymbolet).
 
     Systemet genererer et målskiltnummer for det nye nummerskiltet for den plukkede varen.
 
 1. Velg **OK** for å bekrefte verdien.
 
-    Plasseringsarbeid vises som instruerer brukeren om å plassere målnummerskiltet på etterfyllingslokasjonen. *Plassering*-lokasjonen skal være **06A01R2S1B**.
+    Plasseringsarbeid vises som instruerer brukeren om å plassere målnummerskiltet på etterfyllingslokasjonen. *Plassering* -lokasjonen skal være **06A01R2S1B**.
 
 1. Bekreft plasseringsdetaljene, og velg **OK**.
 
@@ -286,9 +287,9 @@ Du vil utføre etterfylling av lagerlokasjon for de to første arbeids-ID-ene. A
 
 1. Gjenta de foregående trinnene for å fullføre etterfyllingsarbeidet for den andre arbeidsoppgaven. Antallet og målnummerskiltet vil være forskjellig fra antallet og målnummerskiltet i den første arbeidsoppgaven.
 
-Når det andre etter fyllingsarbeidet er fullført, vises en melding om at arbeidet er fullført. Mobilenheten informerer også om at det ikke er noe tilgjengelig arbeid, selv om det gjenstår noe etterfyllingsarbeid. Dette skjer fordi etterfyllingsarbeidet har tilgjengelighetsstatusen *På vent*, og er derfor merket som **Blokkert**.
+Når det andre etter fyllingsarbeidet er fullført, vises en melding om at arbeidet er fullført. Mobilenheten informerer også om at det ikke er noe tilgjengelig arbeid, selv om det gjenstår noe etterfyllingsarbeid. Dette skjer fordi etterfyllingsarbeidet har tilgjengelighetsstatusen *På vent* , og er derfor merket som **Blokkert**.
 
-Statusen *På vent* ble utløst fordi lokasjonsprofilen for plukkelokasjonen som arbeidet tilordnes til, har en **Overflytantall**-verdi på *0,65 PL*. De to forrige etterfyllingsarbeidsoppgavene har fylt lokasjonen nesten til overflytgrensen for varen *T0100*. (Enhetskonverteringen for varen er *1 PL = 100 stk*.) Derfor vil gjenstående etterfyllingsarbeid føre til at lokasjonen overskrider overflytgrensen.
+Statusen *På vent* ble utløst fordi lokasjonsprofilen for plukkelokasjonen som arbeidet tilordnes til, har en **Overflytantall** -verdi på *0,65 PL*. De to forrige etterfyllingsarbeidsoppgavene har fylt lokasjonen nesten til overflytgrensen for varen *T0100*. (Enhetskonverteringen for varen er *1 PL = 100 stk*.) Derfor vil gjenstående etterfyllingsarbeid føre til at lokasjonen overskrider overflytgrensen.
 
 Før nok beholdning er plukket fra lokasjonen for å få den under terskelen for arbeidsfrigivelse på menyen på mobilenheten, vil dette etterfyllingsarbeidet forbli blokkert.
 
@@ -306,13 +307,13 @@ Før den gjenstående etterfyllingsarbeidsoppgaven kan fullføres, må plukkloka
 
     Oppgavesiden **Salgsordrer: Plukk** viser varenummeret, antallet og lokasjonen du skal plukke fra, for den første lokasjonen.
 
-1. I **LP**-feltet angir du skiltnummeret for varen i lokasjonen som vises.
-1. Velg **OK**-knappen (hakesymbolet).
+1. I **LP** -feltet angir du skiltnummeret for varen i lokasjonen som vises.
+1. Velg **OK** -knappen (hakesymbolet).
 
     Oppgavesiden **Salgsordrer: Plukk** viser varenummeret, antallet og lokasjonen du skal plukke fra, for den neste lokasjonen.
 
-1. I **LP**-feltet angir du skiltnummeret for varen i lokasjonen som vises.
-1. Velg **OK**-knappen (hakesymbolet).
+1. I **LP** -feltet angir du skiltnummeret for varen i lokasjonen som vises.
+1. Velg **OK** -knappen (hakesymbolet).
 
     Siden **Salgsordrer: Plasser** instruerer deg om å plassere begge de fullførte plukkarbeidene i den utgående oppsamlingslokasjonen.
 
@@ -328,11 +329,11 @@ Før den gjenstående etterfyllingsarbeidsoppgaven kan fullføres, må plukkloka
 
     Oppgavesiden **Salgsordrer: Plukk** viser varenummeret, antallet og lokasjonen du skal plukke fra.
 
-1. I **LP**-feltet angir du skiltnummeret for varen i lokasjonen som vises.
+1. I **LP** -feltet angir du skiltnummeret for varen i lokasjonen som vises.
 
     Nummerskiltet du angir, vil være et av de systemgenererte nummerskiltene fra etterfyllingsarbeidsoppgavene. For å være sikker på at du registrerer riktig nummerskilt-ID, må du kontrollere beholdningen på siden **Beholdningsliste** for varen, lokasjonen og antallet.
 
-1. Velg **OK**-knappen (hakesymbolet).
+1. Velg **OK** -knappen (hakesymbolet).
 1. Bekreft instruksjonene for plasseringsoppgaven til plasseringen for utgående oppsamling.
 1. Velg **OK**.
 
@@ -348,11 +349,11 @@ Salgsordre 2 er sperret for plukking fordi etterfyllingsoppgaven den er koblet t
 
     Oppgavesiden **Salgsordrer: Plukk** viser varenummeret, antallet og lokasjonen du skal plukke fra.
 
-1. I **LP**-feltet angir du skiltnummeret for varen i lokasjonen som vises.
+1. I **LP** -feltet angir du skiltnummeret for varen i lokasjonen som vises.
 
     Nummerskiltet du angir, vil være et av de systemgenererte nummerskiltene fra etterfyllingsarbeidsoppgavene. For å være sikker på at du registrerer riktig nummerskilt-ID, må du kontrollere beholdningen på siden **Beholdningsliste** for varen, lokasjonen og antallet.
 
-1. Velg **OK**-knappen (hakesymbolet).
+1. Velg **OK** -knappen (hakesymbolet).
 1. Bekreft instruksjonene for plasseringsoppgaven til plasseringen for utgående oppsamling.
 1. Velg **OK**.
 
@@ -360,7 +361,7 @@ Salgsordre 2 er sperret for plukking fordi etterfyllingsoppgaven den er koblet t
 
 Så snart summen av beholdningsantallet i plukklokasjonen og etterfyllingsantallet er under terskelen, vil du kunne behandle gjenstående etterfyllingsarbeid.
 
-Gå tilbake til siden **Arbeidsdetaljer**, og legg merke til at tilgjengeligheten for etterfyllingsarbeidet for den siste delen av etterfyllingen (for salgsordre 2) er *Åpen*, fordi det nå er nok plass på lokasjonen til å godta etterfyllingen.
+Gå tilbake til siden **Arbeidsdetaljer** , og legg merke til at tilgjengeligheten for etterfyllingsarbeidet for den siste delen av etterfyllingen (for salgsordre 2) er *Åpen* , fordi det nå er nok plass på lokasjonen til å godta etterfyllingen.
 
 Nå kan du behandle dette etterfyllingsarbeidet via mobilenheten.
 
@@ -368,14 +369,14 @@ Nå kan du behandle dette etterfyllingsarbeidet via mobilenheten.
 
     Du blir bedt om å fullføre det resterende etterfyllingsarbeidet. Varenummeret, antallet og lokasjonen det skal plukkes fra, vises.
 
-1. I **LP**-feltet angir du skiltnummeret for varen i lokasjonen som vises.
-1. Velg **OK**-knappen (hakesymbolet).
+1. I **LP** -feltet angir du skiltnummeret for varen i lokasjonen som vises.
+1. Velg **OK** -knappen (hakesymbolet).
 
     Systemet genererer et målskiltnummer for det nye nummerskiltet for den plukkede varen.
 
 1. Velg **OK** for å bekrefte verdien.
 
-    Plasseringsarbeid vises som instruerer brukeren om å plassere målnummerskiltet på etterfyllingslokasjonen. *Plassering*-lokasjonen skal være **06A01R2S1B**.
+    Plasseringsarbeid vises som instruerer brukeren om å plassere målnummerskiltet på etterfyllingslokasjonen. *Plassering* -lokasjonen skal være **06A01R2S1B**.
 
 1. Bekreft plasseringsdetaljene, og velg **OK**.
 
@@ -391,11 +392,11 @@ Nå kan du plukke salgsordre 2. Blokkeringen for den ble fjernet da etter fyllin
 
     Oppgavesiden **Salgsordrer: Plukk** viser varenummeret, antallet og lokasjonen du skal plukke fra.
 
-1. I **LP**-feltet angir du skiltnummeret for varen i lokasjonen som vises.
+1. I **LP** -feltet angir du skiltnummeret for varen i lokasjonen som vises.
 
     Nummerskiltet du angir, vil være det systemgenererte nummerskiltet fra etterfyllingsarbeidsoppgaven. For å være sikker på at du registrerer riktig nummerskilt-ID, må du kontrollere beholdningen på siden **Beholdningsliste** for varen, lokasjonen og antallet.
 
-1. Velg **OK**-knappen (hakesymbolet).
+1. Velg **OK** -knappen (hakesymbolet).
 1. Bekreft instruksjonene for plasseringsoppgaven til plasseringen for utgående oppsamling.
 1. Velg **OK**.
 

@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: WHSShipConsolidationPolicy, WHSShipConsolidationWorkbench
+ms.search.form: WHSShipConsolidationPolicy, WHSShipConsolidationWorkbench, WHSFilterGroupTable, WHSShipConsolidationSetShipment, WHSShipmentConsolidation, WHSFilterGenerallyAvail, WHSReleaseToWarehouse
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: 10.0.6
-ms.openlocfilehash: 406ff268eede4a9d448b3b9c1729a00fcec8f21e
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.openlocfilehash: 96f994e9f3440721105545f96d7d8475fcab2b6b
+ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3986750"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4016799"
 ---
 # <a name="consolidate-shipments-when-the-shipment-consolidation-policy-is-overridden-from-the-release-to-warehouse-page"></a>Konsolidere forsendelser når policyen for forsendelseskonsolidering overstyres fra siden Frigi til lager
 
@@ -56,27 +56,27 @@ I løpet av  skal du opprette et sett med salgsordrer og deretter overstyre stan
 
 Følg disse trinnene for å overstyre policyen for forsendelseskonsolidering under frigivelse til lageret.
 
-1. Gå til **Lagerstyring \> Frigi til lager \> Frigi til lager** .
+1. Gå til **Lagerstyring \> Frigi til lager \> Frigi til lager**.
 1. I den øvre ruten velger du den første salgsordren du opprettet for dette .
 1. Velg **Legg til** for å legge til linjen i frigivelsen til lageret. Legg merke til at policyen for forsendelseskonsolidering av typen *Standard* brukes i den nederste ruten.
-1. I den nederste ruten velger du **Velg ny policy for forsendelseskonsolidering** .
-1. Velg en policy som tillater konsolidering med andre åpne forsendelser av samme policy. Velg for eksempel policyen *CustomerOrderNo* .
-1. Velg **Frigi til lager** .
+1. I den nederste ruten velger du **Velg ny policy for forsendelseskonsolidering**.
+1. Velg en policy som tillater konsolidering med andre åpne forsendelser av samme policy. Velg for eksempel policyen *CustomerOrderNo*.
+1. Velg **Frigi til lager**.
 1. Velg den andre og tredje salgsordren du opprettet for dette .
 1. Velg **Legg til** for å legge til linjene i frigivelsen til lageret. Legg merke til at policyen av typen *Standard* brukes i den nederste ruten.
-1. Velg den andre linjen, og deretter velger du policyen *CustomerOrderNo* i feltet **Velg ny policy for forsendelseskonsolidering** .
+1. Velg den andre linjen, og deretter velger du policyen *CustomerOrderNo* i feltet **Velg ny policy for forsendelseskonsolidering**.
 1. Velg **Frigi til lager** for begge linjene.
 
 ## <a name="verify-the-shipments"></a>Bekrefte forsendelsene
 
 To forsendelser skal ha blitt opprettet:
 
-- Den første forsendelsen inneholder to linjer og ble opprettet ved hjelp av policyen for forsendelseskonsolidering for *CustomerOrderNo* .
-- Den andre forsendelsen inneholder én linje og ble opprettet ved hjelp av policyen for forsendelseskonsolidering for *Standard* .
+- Den første forsendelsen inneholder to linjer og ble opprettet ved hjelp av policyen for forsendelseskonsolidering for *CustomerOrderNo*.
+- Den andre forsendelsen inneholder én linje og ble opprettet ved hjelp av policyen for forsendelseskonsolidering for *Standard*.
 
 Følg disse trinnene for å se gjennom forsendelsene som ble opprettet.
 
-1. Gå til **Lagerstyring \> Forsendelser \> Alle forsendelser** .
+1. Gå til **Lagerstyring \> Forsendelser \> Alle forsendelser**.
 1. Finn og velg den påkrevde forsendelsen.
 1. I feltet **Policy for forsendelseskonsolidering** ser du gjennom konsolideringspolicyen som ble brukt da forsendelsen ble opprettet.
 

@@ -3,7 +3,7 @@ title: Koble til et eksperiment og redigere variasjoner
 description: Dette emnet beskriver hvordan du kobler et eksperiment i en tredjepartstjeneste til Dynamics 365 Commerce, og hvordan du redigerer variasjoner for eksperimentet.
 author: sushma-rao
 manager: AnnBe
-ms.date: 10/01/2020
+ms.date: 10/21/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -18,16 +18,18 @@ ms.search.industry: Retail
 ms.author: sushmar
 ms.search.validFrom: 2020-09-30
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: ea1da0a7dc90b7197f3ee532bccc55d2ddbe4ddd
-ms.sourcegitcommit: b6ab46f6e5ce60e2c3d70a348827eaf60c84cae2
+ms.openlocfilehash: 030640ba8907ae52c198ac96ad2c243b533d8c53
+ms.sourcegitcommit: 7592c2dec0428d56843ab395d2a52c89f77f99b5
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "3930262"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "4096973"
 ---
 # <a name="connect-an-experiment-and-edit-variations"></a>Koble til et eksperiment og redigere variasjoner
 
-Dette emnet beskriver hvordan du kobler til eksperimentet i Commerce og gjør endringer i variasjonene slik at de justeres med hypotesen. Diagrammet nedenfor viser alle trinnene for å konfigurere og kjøre et eksperiment på et nettsted for e-handel i Dynamics 365 Commerce. Flere trinn er beskrevet i separate emner.
+Dette emnet beskriver hvordan du kobler til eksperimentet i Commerce og gjør endringer i variasjonene slik at de justeres med hypotesen. 
+
+Diagrammet nedenfor viser alle trinnene for å konfigurere og kjøre et eksperiment på et nettsted for e-handel i Dynamics 365 Commerce. Flere trinn er beskrevet i separate emner.
 
 [ ![Brukerreise for eksperimentering – koble til og redigere](./media/experimentation_connect_edit.svg) ](./media/experimentation_connect_edit.svg#lightbox)
 
@@ -54,12 +56,14 @@ Hvis du vil ha mer informasjon om publiseringsgrupper, kan du se [Arbeide med pu
 
 
 ## <a name="connect-your-experiment"></a>Koble til eksperimentet
-Hvis du vil koble til eksperimentet, starter du veiviser **Koble til eksperiment** . Veiviseren leder deg gjennom trinnene som kreves for å koble til eksperimentet. Når du fullfører veiviseren, er eksperimentet ditt tilkoblet, og variasjonene er opprettet og klare til redigering.
+Hvis du vil koble til eksperimentet, starter du veiviser **Koble til eksperiment**. Veiviseren leder deg gjennom trinnene som kreves for å koble til eksperimentet. Når du fullfører veiviseren, er eksperimentet ditt tilkoblet, og variasjonene er opprettet og klare til redigering.
 
-1. Hvis du vil starte veiviseren, velger du kategorien **Eksperimenter** i områdebygger, og deretter velger du **Koble til** . Du kan også få tilgang til veiviseren fra et redigeringsprogram for side eller fragment. I redigeringsmodus velger du **Koble til eksperiment** på kommandolinjen.
+Følg denne fremgangsmåten for å komme i gang med å koble til eksperimentet i Commerce-områdebyggeren:
 
-> [!NOTE]
-> En side kan bare kobles til ett eksperiment om gangen. Hvis du vil koble en side til et annet eksperiment, må du først slette eksperimentet som siden for øyeblikket er koblet til.
+1. Hvis du vil starte veiviseren **Koble til eksperiment** , velger du **Eksperimenter** i den venstre navigasjonsruten, og deretter velger du **Koble til**. Alternativt kan du få tilgang til veiviseren fra en side eller et fragmentredigeringsprogram ved å redigere den og velge **Koble til eksperiment** på kommandolinjen.
+
+    > [!NOTE]
+    > En side kan bare kobles til ett eksperiment om gangen. Hvis du vil koble en side til et annet eksperiment, må du først slette eksperimentet som siden for øyeblikket er koblet til.
 
 1. Velg siden eller fragmentet du vil kjøre eksperimentet på.
 1. Angi eksperimentomfanget til **delvis** eller **hele** , basert på valget ditt i delen [Bestemme omfanget av eksperimentet ditt](#determine-the-scope-of-your-experiment) ovenfor.
@@ -74,10 +78,10 @@ Når du avslutter veiviseren, blir det opprettet variasjoner for deg.
 Deretter skal du redigere variasjonene slik at de gjenspeiler valgene du må kontrollere i hypotesen for eksperimentet. Velg én av følgende fremgangsmåter som tilsvarer omfanget du velger for eksperimentet, i [Bestemme omfanget av eksperimentet ditt](#determine-the-scope-of-your-experiment) ovenfor.
 
 ### <a name="edit-variations-for-experiments-with-partial-scope"></a>Redigere variasjoner for eksperiment med omfanget delvis
-Følg disse trinnene hvis du har definert omfanget for eksperimentet som **delvis** i veiviseren **Koble til eksperiment** .
+Følg disse trinnene hvis du har definert omfanget for eksperimentet som **delvis** i veiviseren **Koble til eksperiment**.
 
 1. I redigeringsvisning bruker du rullegardinmenyen for variasjoner nedenfor kommandolinjen til å redigere hver variant basert på den opprinnelige hypotesen. Du kan også opprette en kontroll eller basisvariasjon ved å la én av variasjonene være uendret.
-1. Velg modulen det skal eksperimenteres på, Velg ellipsen (...), og velg deretter **Legg til eksperiment** .
+1. Velg modulen det skal eksperimenteres på, Velg ellipsen (...), og velg deretter **Legg til eksperiment**.
 
 ### <a name="edit-variations-for-experiments-with-entire-scope"></a>Redigere variasjoner for eksperiment med omfanget hele
 Hvis du har definert omfanget av eksperimentet som **hele** i veiviseren **Koble til eksperiment** , kan du i redigeringsvisning bruke rullegardinmenyen for variasjoner under kommandolinjen til å redigere hver variant basert på den opprinnelige hypotesen. 

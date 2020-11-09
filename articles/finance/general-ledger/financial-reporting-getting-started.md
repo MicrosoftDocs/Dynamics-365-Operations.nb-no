@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 363ce16b31a199e519c969746c4f10430d9d7497
-ms.sourcegitcommit: 165e082e59ab783995c16fd70943584bc3ba3455
+ms.openlocfilehash: cd87983ce062bd1fa57e97628986cadced9971ab
+ms.sourcegitcommit: 374298f0816b57c95c0c3e3fd7e852399e1d8696
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "3967264"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "3999555"
 ---
 # <a name="get-started-with-financial-reporting"></a>Komme i gang med Financial Reporting 
 
@@ -96,7 +96,7 @@ I versjon 10.0.8 ble konseptet med utløpsdatoer innført. En ny nødvendig funk
   
 Når et utløp, for eksempel 90 dager, er valgt, blir den brukt 90 dager fra i dag. Dette er en annen virke måte enn 90 dager fra den opprinnelige genereringsdatoen som ble angitt da rapporten ble generert. 
   
-Flere alternativer vil bli tatt med i fremtidig funksjonalitet. Utløpet på 90 dager vil være standard, og brukere med riktige tillatelser kan overstyre standardinnstillingene på listesiden **Finansrapporter** .    
+Flere alternativer vil bli tatt med i fremtidig funksjonalitet. Utløpet på 90 dager vil være standard, og brukere med riktige tillatelser kan overstyre standardinnstillingene på listesiden **Finansrapporter**.    
 
 ## <a name="default-reports"></a>Standardrapporter
 Finansrapportering gir 22 standard finansrapporter. Alle rapportene bruker standard hovedkontokategorier. Du kan bruke disse rapportene som de er eller som et utgangspunkt for ditt finansrapporteringsbehov. I tillegg til de tradisjonelle regnskapsoppgjørene, for eksempel resultatregnskap og balanse, inkluderer disse standardrapportene rapporter som viser de forskjellige typene finansrapporter du kan opprette. 
@@ -143,25 +143,25 @@ Du kan opprette et ubegrenset antall rapporteringstrær for å vise organisasjon
 ## <a name="troubleshooting-issues-opening-report-designer"></a>Feilsøke problemer med å åpne Rapportutforming
 Det finnes noen vanlige problemer som kan føre til problemer når du åpner Rapportutforming. Disse problemene og fremgangsmåten for å løse dem er som følger.
 
-Problem 1: Rapportutforming starter ikke når du velger **Ny** eller **Rediger** .
+Problem 1: Rapportutforming starter ikke når du velger **Ny** eller **Rediger**.
 
-* Under Internet Explorer velger du **Innstillinger** , og deretter velger du **Alternativer for Internett** . Velg kategorien **Sikkerhet** . Velg Klarerte områder, og velg deretter **Områder** . I **Legg til dette nettstedet i sonen** angir du "\*\.dynamics.com" (uten anførselstegn) og velger deretter **Legg til** . 
-* Under Internet Explorer velger du **Innstillinger** , og deretter velger du **Alternativer for Internett** . Velg **Sikkerhet** -kategorien. Velg Klarerte områder. I området merket Sikkerhetsnivå for denne sonen endrer du alternativet til **Middels–lavt** .
+* Under Internet Explorer velger du **Innstillinger** , og deretter velger du **Alternativer for Internett**. Velg kategorien **Sikkerhet**. Velg Klarerte områder, og velg deretter **Områder**. I **Legg til dette nettstedet i sonen** angir du "\*\.dynamics.com" (uten anførselstegn) og velger deretter **Legg til**. 
+* Under Internet Explorer velger du **Innstillinger** , og deretter velger du **Alternativer for Internett**. Velg **Sikkerhet** -kategorien. Velg Klarerte områder. I området merket Sikkerhetsnivå for denne sonen endrer du alternativet til **Middels–lavt**.
 * Deaktiver popup-blokkering i leseren.
 * Arbeidsstasjoner kreves for å installere Microsoft .NET Framework 4.6.2 eller senere. Denne versjonen av Microsoft .NET Framework kan lastes ned og installeres fra [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=53345).
 * Hvis du bruker Microsoft Edge med Chrome-leseren, må du installere et ClickOnce-tillegg for å kunne laste ned Rapportutforming-klienten. Hvis du kjører i inkognitomodus, må du kontrollere at ClickOnce-tillegget er aktivert for inkognitomodus. 
      1. Åpne en ny nettleser i Microsoft Edge.
-     2. Angi **edge://flags** , og velg **Enter** .
-     3. Søk etter alternativet **ClickOnce kundestøtte** , eller bruk denne direkte koblingen: **edge://flags/#edge-click-once** .
-     4. Sett rullegardinmenyen til **Aktivert** .
-     5. Velg **Start leseren på nytt** .
+     2. Angi **edge://flags** , og velg **Enter**.
+     3. Søk etter alternativet **ClickOnce kundestøtte** , eller bruk denne direkte koblingen: **edge://flags/#edge-click-once**.
+     4. Sett rullegardinmenyen til **Aktivert**.
+     5. Velg **Start leseren på nytt**.
 
 Problem 2: Brukeren er ikke tilordnet de nødvendige tillatelsene til å bruke Financial Reporting. 
 
-* Hvis du vil kontrollere om brukeren ikke har tillatelse, velger du **Ja** ved feilen "Kan ikke koble til Financial Reporting-serveren. Velg Ja hvis du vil fortsette og angi en annen serveradresse." Velg deretter **Tilkoblingstest** . Hvis du ikke har tillatelse til det, vil du se en melding om at "Tilkoblingsforsøket mislyktes. Brukeren har ikke nødvendige tillatelser til å koble til serveren. Kontakt systemansvarlig."
+* Hvis du vil kontrollere om brukeren ikke har tillatelse, velger du **Ja** ved feilen "Kan ikke koble til Financial Reporting-serveren. Velg Ja hvis du vil fortsette og angi en annen serveradresse." Velg deretter **Tilkoblingstest**. Hvis du ikke har tillatelse til det, vil du se en melding om at "Tilkoblingsforsøket mislyktes. Brukeren har ikke nødvendige tillatelser til å koble til serveren. Kontakt systemansvarlig."
 * Nødvendige tillatelser er oppført ovenfor i [Tildele sikkerhetstilgang til Financial Reporting](#granting-security-access-to-financial-reporting). Sikkerhet i Financial Reporting er basert på disse rettighetene. Du får ikke tilgang med mindre disse rettighetene (eller en annen sikkerhetsrolle som inneholder disse rettighetene) er tilordnet til deg. 
 * Integrasjonsoppgaven **Firmabrukeres leverandør til selskap** (som også er ansvarlig for og kjent som brukerintegrasjon), kjører med et intervall på 5 minutter. Det kan ta opptil 10 minutter før alle endringer i tillatelser trer i kraft i Financial Reporting. 
-  Hvis en annen bruker kan åpne Rapportutforming, velger du **Verktøy** , og deretter velger du **Integreringsstatus** . Kontroller at integreringskartet, "Firmabrukeres leverandør til selskap", har blitt kjørt riktig fordi du var tilordnet tillatelse til å bruke Financial Reporting. 
+  Hvis en annen bruker kan åpne Rapportutforming, velger du **Verktøy** , og deretter velger du **Integreringsstatus**. Kontroller at integreringskartet, "Firmabrukeres leverandør til selskap", har blitt kjørt riktig fordi du var tilordnet tillatelse til å bruke Financial Reporting. 
 * Det er mulig at en annen feil har forhindret **integrasjon fra Dynamics-bruker til Financial Reporting-bruker** i å fullføres. Det er mulig at en datatorgtilbakestilling er startet og ikke er fullført ennå, eller at det har oppstått en annen systemfeil. Prøv å kjøre prosessen på nytt senere. Hvis problemet vedvarer, kontakter du systemansvarlig.
 
 Problem 3: Du kan fortsette etter påloggingssiden for ClickOnce Rapportutforming, men du kan ikke fullføre påloggingen i Rapportutforming. 

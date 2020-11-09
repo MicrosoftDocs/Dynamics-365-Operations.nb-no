@@ -19,15 +19,14 @@ ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 08e6a521818c919b364033e22643b9ee4ce0ec65
-ms.sourcegitcommit: 4ed1d8ad8a0206a4172dbb41cc43f7d95073059c
+ms.openlocfilehash: 211bcf3f4938b438e417f92cd385aaa04278a404
+ms.sourcegitcommit: 776758a0ff95c3c7398986095104d1d2b9814514
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "3024666"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "4107167"
 ---
 # <a name="commerce-home-page"></a>Startside for Commerce
-
 
 [!include [banner](includes/banner.md)]
 
@@ -50,9 +49,9 @@ Velg et funksjonsområde du vil finne ut mer om.
 - [Konfigurere et miljø for forhåndsvisning av Commerce](provisioning-guide.md)
 - [Commerce-arkitektur](retail-components.md)
 - [Definere kanaler](channels-overview.md)
-- [Selge produkter og tjenester](set-up-retail-products.md)
-- [Behandle ordrer](Order-fulfillment-overview.md)
-- [Behandle kunder](set-up-customer-loyalty-program.md)
+- [Bruke produktene og tjenestene dine i varehandel](set-up-retail-products.md)
+- [Administrere ordrene dine](Order-fulfillment-overview.md)
+- [Behandle kundene dine](set-up-customer-loyalty-program.md)
 - [Økonomistyring](retail-statements.md)
 - [Administrere e-handelsområdet ditt](online-store-overview.md)
 - [Svindelbeskyttelse](dev-itpro/DFP.md)

@@ -18,17 +18,16 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.14
-ms.openlocfilehash: 5052957a2f4e59791ef02c12bc2aef5ed36e95c7
-ms.sourcegitcommit: 8028fbc5b9585e87d3331ea02577ff82ede090af
+ms.openlocfilehash: 82a8795360f453cdee19fa6e9e376a42e8276849
+ms.sourcegitcommit: 69075e001d1fb4ef69282667052cd8d082273094
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "3816943"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4022088"
 ---
 # <a name="social-share-module"></a>Sosial deling-modul
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
 
 Dette emnet dekker moduler for sosial deling for informasjonskapsel og beskriver hvordan du legger dem til områdesider i Microsoft Dynamics 365 Commerce.
 
@@ -54,7 +53,7 @@ Illustrasjonen nedenfor viser et eksempel på en modul for sosial deling som bru
 ## <a name="social-share-item-module-properties"></a>Egenskaper for varemodul for sosial deling
 | Egenskapsnavn             | Verdi                 | beskrivelse |
 |---------------------------|-----------------------|-------------|
-| Sosiale medier              | **Facebook**, **Twitter**, **Pinterest**, **LinkedIn**, **Mail** | En rullegardinmeny med en liste over plattformer for sosiale medier. |
+| Sosiale medier              | **Facebook** , **Twitter** , **Pinterest** , **LinkedIn** , **Mail** | En rullegardinmeny med en liste over plattformer for sosiale medier. |
 | Ikon |Bilde    | Dette vil være bildet som vil vises for de respektive sosiale mediene. Den beste fremgangsmåten får du ved å se SDK for plattform for sosiale medier for det anbefalte bildet som skal brukes for hver plattform. |
 
 ## <a name="add-a-social-share-module-to-a-buy-box-module"></a>Legg til en modul for sosial deling i en kjøpsboksmodul
@@ -62,18 +61,18 @@ Illustrasjonen nedenfor viser et eksempel på en modul for sosial deling som bru
 Hvis du vil legge til en modul for sosial deling i en kjøpsboksmodul, gjør du følgende:
 
 1. Velg **Sider** på Fabrikam-området, og velg deretter siden **DefaultPDP** for å åpne siden med produktdetaljer. 
-1. I sporet **Kjøpsboks (obligatorisk)** velger du ellipsen (**…**), og deretter velger du **Legg til modul**.
-1. I dialogboksen **Legg til modul** velger du modulen **Sosial deling**, og deretter velger du **OK**.
-1. I sporet **Sosial deling** velger du ellipsen (**…**), og deretter velger du **Legg til modul**.
-1. I dialogboksen **Legg til modul** velger du modulen **Sosial deling**, og deretter velger du **OK**.
+1. I sporet **Kjøpsboks (obligatorisk)** velger du ellipsen ( **…** ), og deretter velger du **Legg til modul**.
+1. I dialogboksen **Legg til modul** velger du modulen **Sosial deling** , og deretter velger du **OK**.
+1. I sporet **Sosial deling** velger du ellipsen ( **…** ), og deretter velger du **Legg til modul**.
+1. I dialogboksen **Legg til modul** velger du modulen **Sosial deling** , og deretter velger du **OK**.
 1. I egenskapsruten for modulen **Sosial deling** velger du **Vannrett** under **Retning**. Legg til en bildetekst etter behov.
-1. I sporet **Sosial deling** velger du ellipsen (**…**), og deretter velger du **Legg til modul**.
-1. I dialogboksen **Legg til modul** velger du modulen **SocialShareItem**, og deretter velger du **OK**.
+1. I sporet **Sosial deling** velger du ellipsen ( **…** ), og deretter velger du **Legg til modul**.
+1. I dialogboksen **Legg til modul** velger du modulen **SocialShareItem** , og deretter velger du **OK**.
 1. I egenskapsruten for modulen **SocialShareItem** velger du **Facebook** under **Sosiale medier**.
 1. I egenskapsruten for modulen **SocialShareItem** velger du **+ Legg til et bilde** under **Ikon**.
 1. I dialogboksen **Medievelger** velger du logobildet Facebook, og deretter velger du **OK**. Hvis et logobilde for Facebook ikke finnes, velger du **Last opp nytt medieelement** for å laste opp et bilde.
 1. Legg til og konfigurer flere forekomster av modulen **SocialShareItem** etter behov.
-1. Velg **Lagre**, og velg deretter **Forhåndsvisning** for å forhåndsvise siden. Siden vil vise modulen for sodial deling.
+1. Velg **Lagre** , og velg deretter **Forhåndsvisning** for å forhåndsvise siden. Siden vil vise modulen for sodial deling.
 1. Velg **Fullfør redigering** for å sjekke inn siden, og velg deretter **Publiser** for å publisere den.
 
 ## <a name="additional-resources"></a>Tilleggsressurser

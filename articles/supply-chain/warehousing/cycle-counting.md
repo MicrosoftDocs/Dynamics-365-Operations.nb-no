@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: WHSCycleCountPlan, WHSCycleCountPlanListPage, WHSCycleCountThreshold, WHSWorkTableListPage, SalesShipmentDeviation
+ms.search.form: WHSCycleCountPlan, WHSCycleCountPlanListPage, WHSCycleCountThreshold, WHSWorkTableListPage, SalesShipmentDeviation, WHSRFMenuItemCycleCount, WHSWorkLineCycleCount
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8352df2de5daf994895eb7ef40866490a7619652
-ms.sourcegitcommit: 54da65a7da0efd4f0d9760c5b14ff785b28751c4
+ms.openlocfilehash: 17b8504b2aecbe375fe178eac76da9c30c9b12bd
+ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "3830506"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4015993"
 ---
 # <a name="cycle-counting"></a>Syklustelling
 
@@ -35,7 +35,7 @@ Syklustelling er en lagerprosess som du kan bruke til å overvåke varer i lager
 
 1.  **Opprette syklustellingsarbeid** – Syklustellingsarbeid kan opprettes automatisk basert på terskelparameterne for varer, eller ved å bruke en syklustellingsplan. Du kan også opprette syklustellingsarbeid manuelt ved hjelp av vare- eller lagerparameterne på siden **Syklustellingsarbeid etter vare** eller siden **Syklustellingsarbeid etter lokasjon**.
 2.  **Behandle syklustellingen** – Når du har opprettet syklustellingsarbeid, utfører du syklustellingsarbeidet ved å telle varene på en lagerlokasjon og bruker deretter en mobilenhet til å angi resultatet i Dynamics 365 Supply Chain Management. Alternativt kan du telle varer i en lagerlokasjon uten å opprette syklustellingsarbeid. Denne prosessen kalles *spotsyklustelling*.
-3.  **Rette opp differanser i tellingsverdien** – Etter en syklustelling får alle varer som har differanser i tellingsverdien, arbeidsstatusen **Venter på gjennomgang** på **Alt arbeid**-siden. Du kan løse disse forskjellene på siden **Syklustellingsarbeid venter på gjennomgang**.
+3.  **Rette opp differanser i tellingsverdien** – Etter en syklustelling får alle varer som har differanser i tellingsverdien, arbeidsstatusen **Venter på gjennomgang** på **Alt arbeid** -siden. Du kan løse disse forskjellene på siden **Syklustellingsarbeid venter på gjennomgang**.
 
 Illustrasjonen nedenfor viser syklustellingsprosessen. ![Behandle flyt for syklustelling](./media/performcyclecountinginawarehouselocation.jpg)
 
@@ -124,7 +124,7 @@ Følgende eksempel viser hvordan du kan utføre spotsyklustelling ved hjelp av e
 
 1.  På mobilenheten velger du menyelementet for å behandle spotsyklustellingsarbeid.
 2.  Registrere lokasjonen som spotsyklustelling skal utføres for.
-3.  Registrer og bekreft varenummeret og vareantallet som er telt opp. **Obs!** Statusen for syklustellingsarbeidet oppdateres til **Venter på gjennomgang** eller **Lukket** på **Alt arbeid**-siden, avnehgig av parameterne som er angitt på **Arbeider**-siden.
+3.  Registrer og bekreft varenummeret og vareantallet som er telt opp. **Obs!** Statusen for syklustellingsarbeidet oppdateres til **Venter på gjennomgang** eller **Lukket** på **Alt arbeid** -siden, avnehgig av parameterne som er angitt på **Arbeider** -siden.
 4.  Valgfritt: Gjenta trinn 3 for de gjenværende varene på lokasjonen, og bekreft at det ikke finnes flere varer som er tilgjengelig for opptelling.
 
 ## <a name="resolve-cycle-counting-differences"></a>Løse syklustellingsdifferanser
