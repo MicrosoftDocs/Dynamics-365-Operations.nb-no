@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: rhaertle
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: 5643be99ac2c58f4da1a2a068e84bf526f8575cb
-ms.sourcegitcommit: 164de749f394a133f223c526aa0c46bf922d1ea8
+ms.openlocfilehash: 36716c302d86bc5715798bf4cf4899f666d0872c
+ms.sourcegitcommit: 0a741b131ed71f6345d4219a47cf5f71fec6744b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/04/2020
-ms.locfileid: "3770018"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "3997460"
 ---
 # <a name="integrated-customer-master"></a>Integrert original for kunde
 
@@ -41,9 +40,9 @@ Kundedata kan styres i mer enn ett Dynamics 365-program. En kundepost kan for ek
 
 Kunder kan grovt klassifiseres i to typer: kommersielle/organisatoriske kunder og forbrukere/sluttbrukere. Disse to kundetypene lagres og håndteres forskjellig i Finance and Operations og Common Data Service.
 
-I Finance and Operations administreres både kommersielle/organisatoriske kunder og forbrukere/sluttbrukere i én enkelt tabell som heter **CustTable** (CustCustomerV3Entity), og de klassifiseres basert på **Type**-attributtet. (Hvis **Type** er satt til **Organisasjon**, er kunden en kommersiell/organisastorisk kunde, og hvis **Type** er satt til **Person**, er kunden en forbruker/sluttbruker.) Den primære kontaktpersoninformasjonen håndteres via SMMContactPersonEntity-enheten.
+I Finance and Operations administreres både kommersielle/organisatoriske kunder og forbrukere/sluttbrukere i én enkelt tabell som heter **CustTable** (CustCustomerV3Entity), og de klassifiseres basert på **Type** -attributtet. (Hvis **Type** er satt til **Organisasjon** , er kunden en kommersiell/organisastorisk kunde, og hvis **Type** er satt til **Person** , er kunden en forbruker/sluttbruker.) Den primære kontaktpersoninformasjonen håndteres via SMMContactPersonEntity-enheten.
 
-I Common Data Service, kommersielle/organisatoriske kunder er mastret i kontoenheten og identifiseres som kunder når **RelationshipType**-attributtet er satt til **Kunde**. Både forbrukere/sluttbrukere og kontaktpersonen representeres av Kontakt-enheten. Hvis du vil gi et klart skille mellom en forbruker/sluttbruker og en kontaktperson, har **Kontakt**-enheten et boolsk flagg som heter **Sellable**. Når **Sellable** er **True**, er kontakten en forbruker/sluttbruker, og tilbud og ordrer kan opprettes for denne kontakten. Når **Sellable** er **False**, er kontakten bare en primærkontaktperson for en kunde.
+I Common Data Service, kommersielle/organisatoriske kunder er mastret i kontoenheten og identifiseres som kunder når **RelationshipType** -attributtet er satt til **Kunde**. Både forbrukere/sluttbrukere og kontaktpersonen representeres av Kontakt-enheten. Hvis du vil gi et klart skille mellom en forbruker/sluttbruker og en kontaktperson, har **Kontakt** -enheten et boolsk flagg som heter **Sellable**. Når **Sellable** er **True** , er kontakten en forbruker/sluttbruker, og tilbud og ordrer kan opprettes for denne kontakten. Når **Sellable** er **False** , er kontakten bare en primærkontaktperson for en kunde.
 
 Når en ikke-salgbar kontakt deltar i en tilbuds- eller en ordreprosess er **Sellable** satt til **True** for å flagge kontakten som en salgbar kontakt. En kontakt som har blitt en salgbar kontakt, forblir en salgbar kontakt.
 

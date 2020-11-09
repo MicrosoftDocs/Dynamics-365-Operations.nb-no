@@ -1,9 +1,9 @@
 ---
 title: Refundere kunder
 description: Denne artikkelen beskriver hvordan du oppretter refusjonstransaksjoner for en kundegruppe. Hvis en kunde har en kreditsaldo, kan du refundere kunden for saldobeløpet.
-author: ShivamPandey-msft
+author: JodiChristiansen
 manager: AnnBe
-ms.date: 08/22/2017
+ms.date: 09/09/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,15 +15,15 @@ ms.search.scope: Core, Operations
 ms.custom: 14191
 ms.assetid: 53533ee3-470e-458a-ac8b-3815aa4cb502
 ms.search.region: Global
-ms.author: shpandey
+ms.author: jchrist
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 97982dec140ed440682ae507f40557670ebccd3e
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: bceeaf99437f6ef66bd3b4e1710b469c262e693e
+ms.sourcegitcommit: 9e7ceb5604472f3088f611aa0360bd6a716db32b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2179267"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4022549"
 ---
 # <a name="reimburse-customers"></a>Refundere kunder
 
@@ -35,18 +35,18 @@ Tabellen nedenfor viser forutsetninger som må være på plass før du starter.
 
 | Forutsetning                                                            | Beskrivelse                                                                                                                                                                                 |
 |-------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Angi det minste refusjonsbeløpet for den juridiske enheten.          | Angi det minste beløpet som kan refunderes for kunders overbetaling, i **Minimumsrefusjon**-feltet i **Generelt**-området på **Kundeparametere**-siden. |
-| Valgfritt: Legg til en leverandørkonto i hver kunde som kan refunderes. | Velg leverandørkontoen for kunden i **Leverandørkonto**-feltet i hurtigfanen **Diverse detaljer** på **Kunder**-siden.                                           |
+| Angi det minste refusjonsbeløpet for den juridiske enheten.          | Angi det minste beløpet som kan refunderes for kunders overbetaling, i **Minimumsrefusjon** -feltet i **Generelt** -området på **Kundeparametere** -siden. |
+| Valgfritt: Legg til en leverandørkonto i hver kunde som kan refunderes. | Velg leverandørkontoen for kunden i **Leverandørkonto** -feltet i hurtigfanen **Diverse detaljer** på **Kunder** -siden.                                           |
 
 Når du oppretter refusjonstransaksjoner, opprettes en leverandørfaktura for beløpet i kreditsaldoen. Refusjonsprosessen fjerner kreditsaldoen for kundekontoen og oppretter en forfalt saldo for leverandørkontoen som tilsvarer kunden.
 
-1.  Kjør **Refusjon**-prosessen i Kunder.
+1.  Kjør **Refusjon** -prosessen i Kunder.
 2.  Følg ett av disse trinnene:
-    -   Klikk **Velg**, og angi kundekontoene i spørringen for å refundere bestemte kundekontoer.
+    -   Klikk **Velg** , og angi kundekontoene i spørringen for å refundere bestemte kundekontoer.
     -   Klikk **OK** for å refundere alle kundekontoer.
 
     Kreditbeløpene overføres til leverandørkontoene til kundene og behandles som ordinære betalinger. Hvis en kunde ikke har en leverandørkonto, opprettes det automatisk en engangsleverandørkonto for kunden.
-3.  Hvis du vil vise refusjonstransaksjonene som ble opprettet, bruker du **Refusjon**-siden.
+3.  Hvis du vil vise refusjonstransaksjonene som ble opprettet, bruker du **Refusjon** -siden.
 4.  Opprett en betaling for leverandørfakturaer som ble opprettet av refusjonsprosessen, i Leverandører.
 
 

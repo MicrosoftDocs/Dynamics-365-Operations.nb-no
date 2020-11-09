@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: PurchTable
+ms.search.form: PurchTable, PurchTablePart
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: smnatara
 ms.search.validFrom: 2020-9-16
 ms.dyn365.ops.version: Release 10.0.14
-ms.openlocfilehash: d86fa3df1de13cc0e0fb94449207a326069da25b
-ms.sourcegitcommit: 91e101d7a51a8b63bd196ec80e9224e5e6e6fc95
+ms.openlocfilehash: a89effb686d60dde9d11f99be51d4101897ad4ea
+ms.sourcegitcommit: e3f4dd2257a3255c2982f4fc7b72a1121275b88a
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "3834406"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4018635"
 ---
 # <a name="troubleshoot-product-receipts-and-invoicing"></a>Feilsøke mottakssedler og fakturering
 
@@ -38,7 +38,7 @@ Et antall er obligatorisk hvis du vil postere fakturaer. Hvis hele antallet av e
 
 Dette problemet kan oppstå på grunn av inkonsekvens i bestillingsdistribusjonene.
 
-Du fjerner blokkeringen av dette problemet og tilbakestiller bestillingen til en *Utkast*-tilstand ved å gå til **Innkjøp og leverandører \> Periodiske oppgaver \> Opprydding \> Tilbakestill bestillingsdistribusjon**. Hvis du vil ha mer informasjon, kan du se følgende blogginnlegg: [Løse bestillingsdistribusjonsfeil i Dynamics 365 Supply Chain Management](https://cloudblogs.microsoft.com/dynamics365/it/2020/08/12/resolve-po-distribution-errors-in-dynamics-365-supply-chain-management/).
+Du fjerner blokkeringen av dette problemet og tilbakestiller bestillingen til en *Utkast* -tilstand ved å gå til **Innkjøp og leverandører \> Periodiske oppgaver \> Opprydding \> Tilbakestill bestillingsdistribusjon**. Hvis du vil ha mer informasjon, kan du se følgende blogginnlegg: [Løse bestillingsdistribusjonsfeil i Dynamics 365 Supply Chain Management](https://cloudblogs.microsoft.com/dynamics365/it/2020/08/12/resolve-po-distribution-errors-in-dynamics-365-supply-chain-management/).
 
 ## <a name="i-cant-consolidate-multiple-product-receipts-into-a-single-purchase-order"></a>Jeg får ikke til å konsolidere flere produktkvitteringer til én bestilling.
 
@@ -58,7 +58,7 @@ Hvis en produktkvittering avlyses, tillater systemet at transaksjoner posteres t
 
 Følgende prosedyre viser én måte å reprodusere problemet på.
 
-1. På siden for **Leverandørparametere**, i kategorien **Generelt**, må du kontrollere at alternativet **Poster produktkvittering i finans** er satt til *Ja*.
+1. På siden for **Leverandørparametere** , i kategorien **Generelt** , må du kontrollere at alternativet **Poster produktkvittering i finans** er satt til *Ja*.
 1. Opprett en bestilling, og legg til en ordrelinje som har et antall på *1000* for et produkt.
 1. Bekreft bestillingen.
 1. Poster produktkvitteringen, og sjekk bilagene.
@@ -74,7 +74,7 @@ Transaksjoner kan posteres til de suspenderte finanskontoene når produktkvitter
 
 Hvis alternativet **Gjeldsavsetning på produktkvittering** er satt til *Nei* for varemodellgruppen, vil ingen posteringer til økonomimodulen forekomme. En fysisk hendelse vil imidlertid bli registrert for regnskapsformål i en underfinans, og denne hendelsen krever et bilagsnummer. Dette bilagsnummeret er bilagsnummeret som det refereres til i lagertransaksjonene.
 
-Vi anbefaler at du setter alternativet **Gjeldsavsetning på produktkvittering** til *Ja*, som beskrevet i følgende blogginnlegg: [Poster tilleggskostnader på tidspunktet for produktkvitteringen](https://cloudblogs.microsoft.com/dynamics365/no-audience/2014/11/11/post-misc-charges-at-time-of-product-receipt/).
+Vi anbefaler at du setter alternativet **Gjeldsavsetning på produktkvittering** til *Ja* , som beskrevet i følgende blogginnlegg: [Poster tilleggskostnader på tidspunktet for produktkvitteringen](https://cloudblogs.microsoft.com/dynamics365/no-audience/2014/11/11/post-misc-charges-at-time-of-product-receipt/).
 
 ## <a name="the-post-to-charge-account-in-ledger-setting-isnt-turned-on"></a>Innstillingen Postere i belastningskonto i finans er ikke aktivert.
 
@@ -101,9 +101,9 @@ Følgende prosedyre viser én måte å reprodusere problemet på.
 
 1. I handlingsruten i kategorien **Bestilling** i gruppen **Handling** velger du **Bekreft**.
 1. I handlingsruten i kategorien **Motta** i gruppen **Generer** velger du **Produktkvittering**.
-1. I dialogboksen **Poster mottaksseddel**, i feltet **Produktkvittering**, angir du et vilkårlig nummer og velger **OK**.
-1. I handlingsruten, på **Faktura**-fanen i **Generer**-gruppen, velger du **Faktura**.
-1. I **Nummer**-feltet angir du et tilfeldig nummer som fakturanummeret.
+1. I dialogboksen **Poster mottaksseddel** , i feltet **Produktkvittering** , angir du et vilkårlig nummer og velger **OK**.
+1. I handlingsruten, på **Faktura** -fanen i **Generer** -gruppen, velger du **Faktura**.
+1. I **Nummer** -feltet angir du et tilfeldig nummer som fakturanummeret.
 1. Oppdater samsvarsstatusen, og poster.
 1. Legg merke til at du nå får følgende feilmelding når du genererer en faktura fra en bestilling: "Kontonummeret for transaksjonstypen Innkjøpsutgift for produkt finnes ikke".
 

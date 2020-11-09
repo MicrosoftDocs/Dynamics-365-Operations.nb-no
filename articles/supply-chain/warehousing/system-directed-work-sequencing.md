@@ -8,6 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
+ms.search.form: WHSRFSystemDirectedWorkSequenceQuery, WHSLocDirTable
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -15,12 +16,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-03
 ms.dyn365.ops.version: Release 10.0.7
-ms.openlocfilehash: 2884c480d20090266f7cffb5e7d0aca58c1174f0
-ms.sourcegitcommit: edb46dce498df42b09e8f5ad6de00f86c8022dfa
+ms.openlocfilehash: 86d396b069a354b8fa7e15793372a8293273d238
+ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 07/03/2020
-ms.locfileid: "3534856"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4017036"
 ---
 # <a name="system-directed-work-sequencing"></a>Systemstyrt arbeidssekvensiering
 
@@ -51,7 +52,7 @@ For å arbeide deg gjennom dette scenariet ved å bruke verdiene som presenteres
 > [!IMPORTANT]
 > Før du frigir ordrene til lageret, må du kontrollere at plukklokasjonene har nok beholdning for alle varene på ordrene.
 >
-> Standard USMF-data bør støtte dette scenariet. Hvis du ikke bruker demodata, kan du se gjennom **Lokasjonsdirektiv**-innstillingen for å lære hvilke plukklokasjoner som skal brukes for plukking av salgsordre. Hvis du må justere beholdninge, kan du opprette manuelle flyttinger, bruke etterfylling eller bruke en annen flyt.
+> Standard USMF-data bør støtte dette scenariet. Hvis du ikke bruker demodata, kan du se gjennom **Lokasjonsdirektiv** -innstillingen for å lære hvilke plukklokasjoner som skal brukes for plukking av salgsordre. Hvis du må justere beholdninge, kan du opprette manuelle flyttinger, bruke etterfylling eller bruke en annen flyt.
 
 ### <a name="set-up-a-mobile-device-menu-item"></a>Definere en mobilenhetsmenyelement
 
@@ -59,8 +60,8 @@ For å arbeide deg gjennom dette scenariet ved å bruke verdiene som presenteres
 1. I listen over mobilenhetsmenyelementer velger du **Salgsplukking – system**. Det nødvendige menyelementet bør allerede finnes. 
 1. Bekreft følgende innstillinger:
 
-    - På **Generelt**-hurtigfanen skal **Styrt av**-feltet angis til *Systemstyrt*.
-    - **Arbeidsklasser**-hurtigfanen skal vise følgende innstillinger.
+    - På **Generelt** -hurtigfanen skal **Styrt av** -feltet angis til *Systemstyrt*.
+    - **Arbeidsklasser** -hurtigfanen skal vise følgende innstillinger.
 
         | Arbeidsklasse-ID | Arbeidsordretype |
         |---|---|
@@ -78,8 +79,8 @@ For å arbeide deg gjennom dette scenariet ved å bruke verdiene som presenteres
 
 1. Velg **Lagre**.
 1. I handlingsruten velger du **Rediger spørring**.
-1. På **Sammenkoblinger**-fanen utvides sammenkoblingshierarkiet for å vise **Arbeidslinjer**-tabellen.
-1. Velg **Arbeidslinjer**-tabellsammenkobling.
+1. På **Sammenkoblinger** -fanen utvides sammenkoblingshierarkiet for å vise **Arbeidslinjer** -tabellen.
+1. Velg **Arbeidslinjer** -tabellsammenkobling.
 1. Velg **Legg til tabellsammenkobling**.
 1. I listen som vises, finner du og velger raden med følgende innstillinger:
 
@@ -90,7 +91,7 @@ For å arbeide deg gjennom dette scenariet ved å bruke verdiene som presenteres
 
     Lokasjoner legges til i tabellsammenkoblingen.
 
-1. I **Sortering**-fanen velger du **Legg til** for å legge til en linje.
+1. I **Sortering** -fanen velger du **Legg til** for å legge til en linje.
 1. På den nye linjen angir du følgende verdier:
 
     - **Tabell:** *Arbeidslinjer*
@@ -98,9 +99,9 @@ For å arbeide deg gjennom dette scenariet ved å bruke verdiene som presenteres
     - **Felt:** *Arbeidsantall* (i meldingsboksen som vises, velger du **Ja** for å legge til sortering i dette feltet.)
     - **Søkeretning:** *Synkende*
 
-1. Velg **Område**-fanen.
+1. Velg **Område** -fanen.
 
-    Hvis bare bestemte arbeidskriterier skal inkluderes i sekvensen, kan du angi dem i **Område**-fanen. I dette eksemplet vil du bare ta med arbeid der antallet er mindre enn 20 ea (den laveste måleenheten).
+    Hvis bare bestemte arbeidskriterier skal inkluderes i sekvensen, kan du angi dem i **Område** -fanen. I dette eksemplet vil du bare ta med arbeid der antallet er mindre enn 20 ea (den laveste måleenheten).
 
     Legg merke til at noen linjer allerede er inkludert. Disse linjene bør ikke fjernes.
 
@@ -129,7 +130,7 @@ For å arbeide deg gjennom dette scenariet ved å bruke verdiene som presenteres
     - **Kriterier:** *!SCENE*
 
         > [!IMPORTANT]
-        > Husk å ta med utropstegnet (*!*) foran *STAGE*.
+        > Husk å ta med utropstegnet ( *!* ) foran *STAGE*.
 
 1. Velg **OK** for å lagre og lukke spørringen.
 1. Velg **Lagre**.
@@ -147,12 +148,12 @@ Hvis du bruker standard Contoso-data, trenger ikke spørringen for handlingen fo
 1. Gå til **Lagerstyring** \> **Oppsett** \> **Lokasjonsdirektiver**.
 1. Velg *Salgsordrer* i feltet **Arbeidsordretype**.
 1. Velg lokasjonsdirektivet som heter *51 Plukk*.
-1. På **Handlinger for lokasjonsdirektiv**-hurtigfanen velger du linjen for **Plukk**-handlingen.
+1. På **Handlinger for lokasjonsdirektiv** -hurtigfanen velger du linjen for **Plukk** -handlingen.
 1. Velg **Rediger spørring** over rutenettet.
-1. Gå gjennom **Område**-spørringen.
+1. Gå gjennom **Område** -spørringen.
 
-    1. Finn linjen der **Felt**-feltet er satt til *Lokasjon*.
-    2. Kontroller at **Kriterier**-feltet er tomt (det vil si at det ikke er noen begrensninger).
+    1. Finn linjen der **Felt** -feltet er satt til *Lokasjon*.
+    2. Kontroller at **Kriterier** -feltet er tomt (det vil si at det ikke er noen begrensninger).
 
 ## <a name="scenario"></a>Scenario
 
@@ -168,10 +169,10 @@ Du vil deretter frigi hver salgsordre til beholdning for å opprette det utgåen
 
 1. Gå til **Salg og markedsføring \> Salgsordrer \> Alle salgsordrer**.
 1. I handlingsruten velger du **Ny** for å opprette salgsordre 1.
-1. I **Opprett salgsordre**-dialogboksen angir du følgende verdier:
+1. I **Opprett salgsordre** -dialogboksen angir du følgende verdier:
 
-    - I **Kunde**-delen angir du **Kundekonto**-feltet til *US-004*.
-    - I **Generelt**-delen angir du **Lager**-feltet til *51*.
+    - I **Kunde** -delen angir du **Kundekonto** -feltet til *US-004*.
+    - I **Generelt** -delen angir du **Lager** -feltet til *51*.
 
 1. Velg **OK** for å lukke dialogboksen. Noter deg salgsordrenummeret.
 1. Legg til en linje i den nye salgsordren, og angi følgende verdier:
@@ -179,17 +180,17 @@ Du vil deretter frigi hver salgsordre til beholdning for å opprette det utgåen
     - **Varenummer:** *M9200*
     - **Antall:** *20*
 
-1. Velg **Reservasjon** på **Beholdning**-menyen over rutenettet.
-1. På **Reservasjon**-siden velger du **Reserver parti** for å reservere beholdningen.
-1. Lukk **Reservasjon**-siden.
-1. I handlingsruten på **Lager**-fanen, velger du **Frigi til lager** for å opprette arbeidet for lageret.
+1. Velg **Reservasjon** på **Beholdning** -menyen over rutenettet.
+1. På **Reservasjon** -siden velger du **Reserver parti** for å reservere beholdningen.
+1. Lukk **Reservasjon** -siden.
+1. I handlingsruten på **Lager** -fanen, velger du **Frigi til lager** for å opprette arbeidet for lageret.
 
     Du mottar informasjonsmeldinger som viser bølge-ID og forsendelses-ID-er som er opprettet for salgsordren.
 
 #### <a name="sales-order-2"></a>Salgsordre 2
 
 1. I handlingsruten velger du **Ny** for å opprette salgsordre 2.
-1. I **Opprett salgsordre**-dialogboksen angir du følgende verdier:
+1. I **Opprett salgsordre** -dialogboksen angir du følgende verdier:
 
     - **Kundekonto:** *US-007*
     - **Lager:** *51*
@@ -211,7 +212,7 @@ Du vil deretter frigi hver salgsordre til beholdning for å opprette det utgåen
 #### <a name="sales-order-3"></a>Salgsordre 3
 
 1. I handlingsruten velger du **Ny** for å opprette salgsordre 3.
-1. I **Opprett salgsordre**-dialogboksen angir du følgende verdier:
+1. I **Opprett salgsordre** -dialogboksen angir du følgende verdier:
 
     - **Kundekonto:** *US-009*
     - **Lager:** *51*
@@ -233,7 +234,7 @@ Du vil deretter frigi hver salgsordre til beholdning for å opprette det utgåen
 #### <a name="sales-order-4"></a>Salgsordre 4
 
 1. I handlingsruten velger du **Ny** for å opprette salgsordre 4.
-1. I **Opprett salgsordre**-dialogboksen angir du følgende verdier:
+1. I **Opprett salgsordre** -dialogboksen angir du følgende verdier:
 
     - **Kundekonto:** *US-010*
     - **Lager:** *51*
@@ -255,7 +256,7 @@ Du vil deretter frigi hver salgsordre til beholdning for å opprette det utgåen
 ### <a name="get-work-ids-for-the-work-that-was-created"></a>Hent arbeids-ID-er for arbeidet som ble opprettet
 
 1. Gå til **Lagerstyring \> Arbeid \> Arbeidsdetaljer**.
-1. Filtrere på **Lager**-feltet slik at bare arbeid på lager *51* vises.
+1. Filtrere på **Lager** -feltet slik at bare arbeid på lager *51* vises.
 1. Fire arbeids-ID-er skal ha blitt opprettet. Skriv ned arbeids-ID-en for hver salgsordre.
 
     | Salgsordre-ID | Arbeids-ID | Arbeidsmengde |
@@ -265,12 +266,12 @@ Du vil deretter frigi hver salgsordre til beholdning for å opprette det utgåen
     | Salgsordre 3 | Arbeids-ID 3 | 15 ea (sum av begge linjer) |
     | Salgsordre 4 | Arbeids-ID 4 | 35 ea (sum av begge linjer) |
 
-Før du kjører flyten på den mobile enheten, må du kontrollere at bare arbeidet du nettopp opprettet, er i *Åpen*-status for lager *51* og *Salgsordre*-arbeidsordretypen. Ellers kan resultatene av testen variere, fordi den systemstyrte plukkingen vil inkludere alt kvalifisert arbeid.
+Før du kjører flyten på den mobile enheten, må du kontrollere at bare arbeidet du nettopp opprettet, er i *Åpen* -status for lager *51* og *Salgsordre* -arbeidsordretypen. Ellers kan resultatene av testen variere, fordi den systemstyrte plukkingen vil inkludere alt kvalifisert arbeid.
 
 1. Gå til **Lagerstyring \> Arbeid \> Utgående \> Åpnet salgsarbeid**.
-1. Filtrere på **Lager**-feltet slik at bare arbeid på lager *51* vises i **Åpent salgsarbeid**.
+1. Filtrere på **Lager** -feltet slik at bare arbeid på lager *51* vises i **Åpent salgsarbeid**.
 1. Bekreft at bare de fire arbeids-ID-ene som du opprettet tidligere, vises.
-1. Lukk **Arbeid**-siden.
+1. Lukk **Arbeid** -siden.
 
 ### <a name="mobile-device-flow-execution"></a>Kjøring for mobilenhetflyt
 
@@ -299,7 +300,7 @@ Husk at dette oppsettet vil fange opp alt arbeid som har minst én linje der ant
 
 ## <a name="tips"></a>Tips!
 
-De systemstyrte arbeidssekvensspørringene er *inklusive*. Det er viktig at du husker dette faktumet for noen oppsett. Du vil for eksempel at et bestemt menyelement skal behandle bare arbeid der arbeidsenheten er *ea*, og du angir denne begrensningen i **Område**-fanen i spørringen. I dette tilfellet vil alt arbeid der minst én arbeidslinje har arbeidsenheten som angis til *ea*, bli matet til arbeideren. Derfor kan dette arbeidet også omfatte arbeid der arbeidslinjer har en annen arbeidsenhet enn *ea* (for eksempel *boks* eller *pall*). Spørringen vil bare ekskludere arbeidslinjer der arbeidslinjen er satt til *ea*.
+De systemstyrte arbeidssekvensspørringene er *inklusive*. Det er viktig at du husker dette faktumet for noen oppsett. Du vil for eksempel at et bestemt menyelement skal behandle bare arbeid der arbeidsenheten er *ea* , og du angir denne begrensningen i **Område** -fanen i spørringen. I dette tilfellet vil alt arbeid der minst én arbeidslinje har arbeidsenheten som angis til *ea* , bli matet til arbeideren. Derfor kan dette arbeidet også omfatte arbeid der arbeidslinjer har en annen arbeidsenhet enn *ea* (for eksempel *boks* eller *pall* ). Spørringen vil bare ekskludere arbeidslinjer der arbeidslinjen er satt til *ea*.
 
 I eksemplet fra dette scenariet ble derfor arbeids-ID *4* også hentet av spørringen. Når den ble opprettet, ble to linjer lagt til: én for 25 ea og en annen for 10 ea. Arbeidet ble fortsatt presentert for brukeren fordi minst én arbeidslinje har et antall på mindre enn 20 ea.
 

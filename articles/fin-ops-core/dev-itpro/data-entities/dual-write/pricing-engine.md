@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: rhaertle
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-10
-ms.openlocfilehash: 5ffc0358ff58b2a05aa84b4467a27d88b5e1ec42
-ms.sourcegitcommit: 984604fd651d74aa49a2d7513f096faaf49f9f27
+ms.openlocfilehash: 740ae20704abd9c59f64c2c7622fa96d65dccb1d
+ms.sourcegitcommit: 0a741b131ed71f6345d4219a47cf5f71fec6744b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/18/2020
-ms.locfileid: "3270342"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "3997152"
 ---
 # <a name="sync-with-the-dynamics-365-supply-chain-management-pricing-engine-on-demand"></a>Synkronisere med prissettingsmotoren i Dynamics 365 Supply Chain Management ved forespørsel
 
@@ -37,7 +36,7 @@ Microsoft Dynamics 365 Supply Chain Management inkluderer en prissettingsmotor s
 ## <a name="use-the-pricing-engine-from-supply-chain-management-in-sales"></a>Bruk prissettingsmotoren fra Supply Chain Management i Sales
 
 1. I Sales går du til **Salg \> Ordrer**.
-2. Velg **Ny** for å opprette en ny ordre, eller velg en eksisterende ordre i **Mine ordrer**-listen.
+2. Velg **Ny** for å opprette en ny ordre, eller velg en eksisterende ordre i **Mine ordrer** -listen.
 3. Legg til en ny ordrelinje.
 4. Hvis du oppretter en ny ordre, velger du **Prisordre** i handlingsruten. Hvis du oppdaterer en eksisterende ordre, velger du **Beregn på nytt** i handlingsruten.
 
@@ -59,7 +58,7 @@ Microsoft Dynamics 365 Supply Chain Management inkluderer en prissettingsmotor s
 
 ## <a name="how-it-works"></a>Hvordan det fungerer
 
-Når du velger **Prisordre** i Sales, kalles **Summer**-funksjonen i kategorien **Salgsordre \> Vis** i Supply Chain Management for den tilknyttede salgsordren. Verdiene i ordretotalen i Sales brukes til å fylle ut de tilsvarende feltene i Supply Chain Management.
+Når du velger **Prisordre** i Sales, kalles **Summer** -funksjonen i kategorien **Salgsordre \> Vis** i Supply Chain Management for den tilknyttede salgsordren. Verdiene i ordretotalen i Sales brukes til å fylle ut de tilsvarende feltene i Supply Chain Management.
 
 Når salgsordretotalen beregnes i Supply Chain Management, evaluerer beregningen de eksisterende forretningsavtalene og salgsavtalene for kunden og produktene som er oppført i salgsordren. Denne informasjonen brukes til å beregne totalene. Når **Prisordre** er valgt, gjenspeiler Sale automatisk alle oppsett som er utført i Supply Chain Management.
 
@@ -68,5 +67,5 @@ Når salgsordretotalen beregnes i Supply Chain Management, evaluerer beregningen
 Når feltene i Sale er fylt ut, gjelder følgende begrensninger:
 
 + Oppsettet av gebyrer og gebyrfordelinger i Supply Chain Management replikeres ikke i Sales.
-+ Prissetting tar ikke hensyn til spesielle detaljhandelpriser som er angitt i **Detaljhandelskanal**-feltet på salgsordrelinje-siden i Supply Chain Management.
++ Prissetting tar ikke hensyn til spesielle detaljhandelpriser som er angitt i **Detaljhandelskanal** -feltet på salgsordrelinje-siden i Supply Chain Management.
 + Rabatter som er definert i delen **Handelsrabattbehandling** i Supply Chain Management, vurderes ikke.

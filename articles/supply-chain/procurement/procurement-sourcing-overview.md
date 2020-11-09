@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: CatProcureCatalogListPage, CatVendorCatalogListPage, PurchTable
+ms.search.form: CatProcureCatalogListPage, CatVendorCatalogListPage, PurchTable, PurchTablePart
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f46bbaca86f9113a3e4705e4f2c0f76590e62ec1
-ms.sourcegitcommit: 86052c58e3c365c443bd6f37ad1054bea395e21b
+ms.openlocfilehash: a7de9430ddcc2499627bacfa01b4dc7fd5546a4d
+ms.sourcegitcommit: e3f4dd2257a3255c2982f4fc7b72a1121275b88a
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "3338339"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4018888"
 ---
 # <a name="procurement-and-sourcing-overview"></a>Oversikt over innkjøp og leverandører
 
@@ -35,13 +35,13 @@ Innkjøp og leverandører dekker alle trinnene fra å identifisere et behov for 
 
 ## <a name="identifying-a-need-for-product-and-services"></a>Identifisere et behov for produkter og tjenester
 
-Behovet for produkter eller tjenester som kan oppstå fra *rekvisisjoner*, for eksempel når en ansatt trenger et produkt. *Produktkataloger* kan defineres for å rettlede valget av tilgjengelige produkter å velge fra, eller forespørsler kan sendes for produkter som ennå ikke er tilgjengelig i en katalog, slik at innkjøpsavdelingen kan vurdere hvordan produktet kan leveres.  
+Behovet for produkter eller tjenester som kan oppstå fra *rekvisisjoner* , for eksempel når en ansatt trenger et produkt. *Produktkataloger* kan defineres for å rettlede valget av tilgjengelige produkter å velge fra, eller forespørsler kan sendes for produkter som ennå ikke er tilgjengelig i en katalog, slik at innkjøpsavdelingen kan vurdere hvordan produktet kan leveres.  
 
 *Forbruksbeløp* kan brukes til å begrense rekvisisjonsforbruk, og *innkjøpsarbeidsflyten* legger til alternativet om å kreve godkjenning før bestilling kan skje. Det er også mulig å angi budsjettmiddeltildelinger, om nødvendig.  
 
 Innkjøpsavdelingen identifiserer leverandører av ønskede produkter og tjenester, og dette kan omfatte en *tilbudsforespørsel* som sendes til flere potensielle leverandører. Det er mulig å dele spesifikasjonene for det ønskede produktet, og potensielle leverandører kan vise disse for å se om de kan levere et produkt som samsvarer. Leverandører returnere bud som deretter blir gjennomgått ved innkjøpsavdelingen, før de kan velge leverandøren de ønsker å anskaffe fra.  
 
-Bestillinger inkluderer et alternativ for å sende ut en *innkjøpsforespørsel* til leverandøren som et alternativ til en mer omfattende prosess for tilbudsforespørsel. Innkjøpsforespørselen kan brukes til å fastsette betingelser som priser, rabatter og leveringsdato for ordren. Hvis leverandører er definert for å bruke **Leverandør**-portalen, er funksjonalitet for innkjøpsforespørsel deaktivert. I stedet deles ordren på **Leverandør**-portalen, og når en *forespørsel om bekreftelse* sendes, kan leverandøren direkte bekrefte ordren.  
+Bestillinger inkluderer et alternativ for å sende ut en *innkjøpsforespørsel* til leverandøren som et alternativ til en mer omfattende prosess for tilbudsforespørsel. Innkjøpsforespørselen kan brukes til å fastsette betingelser som priser, rabatter og leveringsdato for ordren. Hvis leverandører er definert for å bruke **Leverandør** -portalen, er funksjonalitet for innkjøpsforespørsel deaktivert. I stedet deles ordren på **Leverandør** -portalen, og når en *forespørsel om bekreftelse* sendes, kan leverandøren direkte bekrefte ordren.  
 
 *Leverandørkataloger* kan brukes til å samle inn informasjon om produktsortimentet som leverandører kan levere. Leverandører kan publisere sine egne kataloger slik at det blir enklere å oppdatere katalogen. Det er mulig å knytte en *liste over godkjente leverandører* til et produkt, og dette kan være til hjelp for leverandørvalg når nye bestillinger åpnes, og forhindre bruken av utilsiktede leverandører.
 
@@ -54,11 +54,11 @@ Bestillinger inkluderer et alternativ for å sende ut en *innkjøpsforespørsel*
 - Via behandling av kjøpsavtaler, der bestillinger opprettes som frigitte ordrer fra avtalene. Dette brukes vanligvis når kjøpsavtaler brukes til å representere rammebestillinger.
 - Manuelt, når bestillingen som opprettes, ikke er basert på et annet dokument.
 
-Bestillinger som er konfigurert med *arbeidsflyter for godkjenning av kjøp*, krever godkjenning før de registreres som godkjent, og dette er nødvendig før ordren kan behandles videre.
+Bestillinger som er konfigurert med *arbeidsflyter for godkjenning av kjøp* , krever godkjenning før de registreres som godkjent, og dette er nødvendig før ordren kan behandles videre.
 
 Bestillinger *bekreftes* for å representere at det er opprettet en avtale med leverandøren. Bestillingen går deretter gradvis gjennom ulike tilstander og blir til slutt fakturert eller avbrutt.  
 
-Når du oppretter en bestilling, er mange av feltene forhåndsutfylt med verdier som standard fra informasjonen som er lagret om leverandøren i på **Leverandører**-siden. Dette betyr at det er et begrenset antall felt du trenger å fylle ut på bestillingen, selv om du kan velge å overstyre standardverdiene.
+Når du oppretter en bestilling, er mange av feltene forhåndsutfylt med verdier som standard fra informasjonen som er lagret om leverandøren i på **Leverandører** -siden. Dette betyr at det er et begrenset antall felt du trenger å fylle ut på bestillingen, selv om du kan velge å overstyre standardverdiene.
 
 ### <a name="prices-and-discounts"></a>Priser og rabatter
 
@@ -66,7 +66,7 @@ Priser og rabatter omfatter informasjon om priser, rabatter og rabattbetingelsen
 
 ### <a name="delivery-options"></a>Alternativer for levering
 
-Det finnes ulike alternativer for leveringsprosessen som er knyttet til en bestilling. Bestilte produkter kan deles inn i *leverings*planer, der deler av det bestilte antallet kan planlegges for levering på forskjellige datoer. Leveringen kan også inkludere *direkte levering* initiert fra en salgsordre, som automatiserer generering følgeseddelen på salgsordren samtidig som produktet registreres på bestillingen. Bestillinger kan også være en del en *konsernintern ordrekjede*, også kalt konserninterne bestillinger, der produkter bestilles fra en samsvarende konsernintern salgsordre. I denne situasjonen er noen trinn automatiske på tvers av de to relaterte konserninterne ordrene.
+Det finnes ulike alternativer for leveringsprosessen som er knyttet til en bestilling. Bestilte produkter kan deles inn i *leverings* planer, der deler av det bestilte antallet kan planlegges for levering på forskjellige datoer. Leveringen kan også inkludere *direkte levering* initiert fra en salgsordre, som automatiserer generering følgeseddelen på salgsordren samtidig som produktet registreres på bestillingen. Bestillinger kan også være en del en *konsernintern ordrekjede* , også kalt konserninterne bestillinger, der produkter bestilles fra en samsvarende konsernintern salgsordre. I denne situasjonen er noen trinn automatiske på tvers av de to relaterte konserninterne ordrene.
 
 ### <a name="supplementary-items"></a>Tilleggsvarer
 

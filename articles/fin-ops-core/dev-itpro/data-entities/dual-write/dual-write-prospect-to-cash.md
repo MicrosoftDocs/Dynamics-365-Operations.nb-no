@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: rhaertle
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-01-27
-ms.openlocfilehash: 6fe42f43277448dc5918597ed8bb1b68f2266b6a
-ms.sourcegitcommit: 4ba10abe5be8a21b95370cd970a622e954970984
+ms.openlocfilehash: b21d468d672277be14877b93e291e9833659c54a
+ms.sourcegitcommit: 0a741b131ed71f6345d4219a47cf5f71fec6744b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "3829218"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "3997406"
 ---
 # <a name="prospect-to-cash-in-dual-write"></a>Kundeemne til kontanter i dobbel skriving
 
@@ -44,36 +43,36 @@ Før du kan synkronisere salgstilbud, må du oppdatere følgende innstillinger.
 
 ### <a name="setup-in-sales"></a>Oppsett i salg
 
-I Sales går du til **Innstillinger \> Administrasjon \> Systeminnstillinger \> Salg**, og sørger for å bruke følgende innstillinger:
+I Sales går du til **Innstillinger \> Administrasjon \> Systeminnstillinger \> Salg** , og sørger for å bruke følgende innstillinger:
 
 - Alternativet **Bruk systemets priskalkuleringssystem** er satt til **Ja**.
 - Feltet **Rabattkalkuleringsmetode** er satt til **Linjeelement**.
 
 ### <a name="sites-and-warehouses"></a>Områder og lagre
 
-I Supply Chain Management kreves **Område**- og **Lager**-feltene for tilbudslinjer og ordrelinjer. Hvis du angir området og lageret i standard ordreinnstillinger, blir disse feltene automatisk definert når du legger til et produkt i en tilbudslinje eller en ordrelinje. 
+I Supply Chain Management kreves **Område** - og **Lager** -feltene for tilbudslinjer og ordrelinjer. Hvis du angir området og lageret i standard ordreinnstillinger, blir disse feltene automatisk definert når du legger til et produkt i en tilbudslinje eller en ordrelinje. 
 
 ### <a name="number-sequences-for-quotations-and-orders"></a>Nummerserier for tilbud og ordrer
 
 Nummerseriene for Supply Chain Management og Sales er ikke tilkoblet når tilbud og ordrer opprettes og synkroniseres i Sales og Supply Chain Management. Hvis en salgsordre som er opprettet i Sales, blir synkronisert til Supply Chain Management, har den samme salgsordrenummeret i Supply Chain Management. For å sikre at salgsordrenummeret ikke dupliseres, må du bruke andre nummerseriesystemer i de to appene.
 
-Nummerserien i Supply Chain Management er for eksempel **1, 2, 3, 4, 5, ...**, og nummerserien i Sales er **100, 99, 98, ...**. Hvis du oppretter 100 salgsordrer i Sales, blir det generert et ordrenummer som allerede finnes i Supply Chain Management. Med andre ord vil de to nummerseriene overlappes etter hvert som salgsordrene opprettes i Supply Chain Management og Sales. I stedet kan du bruke en nummerserie som **F1, F2, F3, ...** i Supply Chain Management og en nummerserie som **C1, C2, C3, ...** i Sales. Disse nummerseriene vil aldri generere dupliserte salgsordrenumre.
+Nummerserien i Supply Chain Management er for eksempel **1, 2, 3, 4, 5, ...** , og nummerserien i Sales er **100, 99, 98, ...**. Hvis du oppretter 100 salgsordrer i Sales, blir det generert et ordrenummer som allerede finnes i Supply Chain Management. Med andre ord vil de to nummerseriene overlappes etter hvert som salgsordrene opprettes i Supply Chain Management og Sales. I stedet kan du bruke en nummerserie som **F1, F2, F3, ...** i Supply Chain Management og en nummerserie som **C1, C2, C3, ...** i Sales. Disse nummerseriene vil aldri generere dupliserte salgsordrenumre.
 
 ## <a name="sales-quotations"></a>Salgstilbud
 
 Salgstilbud kan opprettes i både Sales og Supply Chain Management. Hvis du oppretter et tilbud i Sales, blir det synkronisert til Supply Chain Management i sanntid. Tilsvarende, hvis du oppretter et tilbud i Supply Chain Management, blir det synkronisert til Sales i sanntid. Merk følgende punkt:
 
-+ Du kan legge til en rabatt i produktet på tilbudet. I dette tilfellet blir rabatten synkronisert til Supply Chain Management. Feltene **Rabatt**, **Gebyrer** og **Avgift** feltene på hodet kontrolleres av et oppsett i Supply Chain Management. Dette oppsettet støtter ikke integreringstilordning. I stedet vedlikeholdes og behandles feltene **Pris**, **Rabatt**, **Gebyrer** og **Avgift** i Supply Chain Management.
-+ Feltene **Rabattprosent**, **Rabatt** og **Fraktbeløp** i salgstilbudshodet er skrivebeskyttet.
-+ Feltene **Fraktvilkår**, **Betalingsbetingelser**, **Leveringsmetode** og **Leveringsmåte** er ikke en del av standardtilordningene. Hvis du vil tilordne disse feltene, må du definere en verditilordning som er spesifikk for dataene i organisasjoner som enheten synkroniseres mellom.
++ Du kan legge til en rabatt i produktet på tilbudet. I dette tilfellet blir rabatten synkronisert til Supply Chain Management. Feltene **Rabatt** , **Gebyrer** og **Avgift** feltene på hodet kontrolleres av et oppsett i Supply Chain Management. Dette oppsettet støtter ikke integreringstilordning. I stedet vedlikeholdes og behandles feltene **Pris** , **Rabatt** , **Gebyrer** og **Avgift** i Supply Chain Management.
++ Feltene **Rabattprosent** , **Rabatt** og **Fraktbeløp** i salgstilbudshodet er skrivebeskyttet.
++ Feltene **Fraktvilkår** , **Betalingsbetingelser** , **Leveringsmetode** og **Leveringsmåte** er ikke en del av standardtilordningene. Hvis du vil tilordne disse feltene, må du definere en verditilordning som er spesifikk for dataene i organisasjoner som enheten synkroniseres mellom.
 
 Hvis du også bruker Field Service-løsningen, må du kontrollere at parameteren **Hurtigoppretting av tilbudslinje** aktiveres på nytt. Hvis du aktiverer parameteren på nytt, kan du fortsette å opprette tilbudslinjer ved hjelp av funksjonen for hurtigoppretting.
 1. Gå til Dynamics 365 Sales-programmet.
 2. Velg innstillinger-ikonet i det øverste navigasjonsfeltet.
 3. Velg **Avanserte innstillinger**.
-4. Velg **Tilpass systemet**-alternativet.
+4. Velg **Tilpass systemet** -alternativet.
 5. Velg menyelementet **Tilbudslinje**.
-6. Gå til **Datatjenester**-delen, og merk av for **Tillat hurtigoppretting**.
+6. Gå til **Datatjenester** -delen, og merk av for **Tillat hurtigoppretting**.
 
 ## <a name="sales-orders"></a>Salgsordre
 
@@ -89,29 +88,29 @@ Salgsordrer kan opprettes i både Sales og Supply Chain Management. Hvis du oppr
 
 Du har følgende salgsordre:
 
-+ **Sales**: Antall = 3, per linjerabatt = $ 10,00
++ **Sales** : Antall = 3, per linjerabatt = $ 10,00
 + **Supply Chain Management:** Antall = 3, linjerabattbeløp = $ 3,33, salgstillegg= -$ 0,01
 
 Hvis du synkroniserer fra Supply Chain Management til Sales, får du følgende resultat:
 
 + **Supply Chain Management:** Antall = 3, linjerabattbeløp = $ 3,33, salgstillegg= -$ 0,01
-+ **Sales**: Antall = 3, per linjerabatt = = (3 × $ 3,33) + $ 0,01 = $ 10,00
++ **Sales** : Antall = 3, per linjerabatt = = (3 × $ 3,33) + $ 0,01 = $ 10,00
 
 ## <a name="dual-write-solution-for-sales"></a>Løsning for dobbel skriving for Sales
 
 Nye felt er lagt til enheten **Ordre** og vises på siden. De fleste av disse feltene vises i kategorien **Integrering** i Sales. Hvis du vil ha mer informasjon om hvordan statusfeltene tilordnes, kan du gå til dokumentasjonsemnet for å [definere tilordningen for salgsordrestatusfeltene](https://review.docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/sales-status-map?branch=robin-dw-status-map)
 
-+ Knappene **Opprett faktura** og **Avbryt ordre** på **Salgsordre**-siden er skjult i Sales.
-+ **Salgsordrestatus**-verdien vil fortsatt være **Aktiv** for å sikre at endringer fra Supply Chain Management kan flyte fra salgsordren i Sales. Dette kontrolleres ved å sette standardverdien **Statuskode \[Status\]** til **Aktiv**.
++ Knappene **Opprett faktura** og **Avbryt ordre** på **Salgsordre** -siden er skjult i Sales.
++ **Salgsordrestatus** -verdien vil fortsatt være **Aktiv** for å sikre at endringer fra Supply Chain Management kan flyte fra salgsordren i Sales. Dette kontrolleres ved å sette standardverdien **Statuskode \[Status\]** til **Aktiv**.
 
 ## <a name="invoices"></a>Fakturaer
 
 Salgsfakturaer er opprettet i Supply Chain Management og synkronisert til Sales. Merk følgende punkt:
 
-+ Et **Fakturanummer**-felt er lagt til **Faktura**-enheten og vises på siden.
++ Et **Fakturanummer** -felt er lagt til **Faktura** -enheten og vises på siden.
 + Knappen **Opprett faktura** på siden **Salgsordre** er skjult fordi fakturaer vil opprettes i Supply Chain Management og synkroniseres til Sales. Siden **Faktura** kan ikke redigeres fordi fakturaer vil synkroniseres fra Supply Chain Management.
-+ **Salgsordrestatus**-verdien endres automatisk til **Fakturert** når relaterte fakturaer fra Supply Chain Management er synkronisert til Sales. Eieren av salgsordren som fakturaen ble opprettet fra, tildeles også som eier av fakturaen. Eieren av salgsordren kan derfor vise fakturaen.
-+ Feltene **Fraktvilkår**, **Leveringsbetingelser** og **Leveringsmåte** er ikke inkludert i standardtilordningene. Hvis du vil tilordne disse feltene, må du definere en verditilordning som er spesifikk for dataene i organisasjoner som enheten synkroniseres mellom.
++ **Salgsordrestatus** -verdien endres automatisk til **Fakturert** når relaterte fakturaer fra Supply Chain Management er synkronisert til Sales. Eieren av salgsordren som fakturaen ble opprettet fra, tildeles også som eier av fakturaen. Eieren av salgsordren kan derfor vise fakturaen.
++ Feltene **Fraktvilkår** , **Leveringsbetingelser** og **Leveringsmåte** er ikke inkludert i standardtilordningene. Hvis du vil tilordne disse feltene, må du definere en verditilordning som er spesifikk for dataene i organisasjoner som enheten synkroniseres mellom.
 
 ## <a name="templates"></a>Maler
 

@@ -3,7 +3,7 @@ title: Oversikt over automatiserte prosesser for leverandørfakturering
 description: Dette emnet beskriver muligheten til å automatisere behandling av leverandørfakturering og fordelene ved å bruke en automatisert prosess.
 author: abruer
 manager: AnnBe
-ms.date: 08/30/2020
+ms.date: 10/16/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,19 +17,18 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2017-08-30
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 187b3c4f1a8b2c9ec6df95c19b261756ec4562dc
-ms.sourcegitcommit: 6ffbae02de2eee1f3be9bab2da37a3771aae8bec
+ms.openlocfilehash: ec3598ebd158cc23ac7c02d7e33557141d5901bc
+ms.sourcegitcommit: 9e7ceb5604472f3088f611aa0360bd6a716db32b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "3905027"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4022502"
 ---
 # <a name="automated-vendor-invoicing-processes-overview"></a>Oversikt over automatiserte prosesser for leverandørfakturering
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
-Dette emnet beskriver muligheten til å automatisere behandling av leverandørfakturering og fordelene ved å bruke en automatisert prosess. Denne funksjonen består av funksjoner som er aktivert i Funksjonsbehandling. Disse funksjonene gjelder bare leverandørfakturaer, ikke for fakturaer som behandles via siden **Fakturajournal** eller **Ankomstregistreringsjournal** .
+Dette emnet beskriver muligheten til å automatisere behandling av leverandørfakturering og fordelene ved å bruke en automatisert prosess. Denne funksjonen består av funksjoner som er aktivert i Funksjonsbehandling. Disse funksjonene gjelder bare leverandørfakturaer, ikke for fakturaer som behandles via siden **Fakturajournal** eller **Ankomstregistreringsjournal**.
 
 Organisasjoner arbeider ofte med tredjeparter for å behandle papirfakturaer ved hjelp av tjenesteleverandør for optisk tegngjenkjenning (OCR). Tjenesteleverandøren returnerer maskinlesbare fakturametadata. Hvis du vil ha hjelp med automatisering, kan du bruke disse artefaktene fra leverandører i funksjonene for leverandørautomatisering.
 
@@ -57,7 +56,7 @@ Systemet kan automatisk sammenligne posterte produktkvitteringer med fakturalinj
 
 ## <a name="vendor-invoice-automation--pre-validate-vendor-invoice-posting"></a>Automatisering av leverandørfaktura – Forhåndsvalidere postering av leverandørfaktura
 
-Posteringssimulering fullfører valideringstrinnene som utføres under posteringsprosessen for leverandørfakturaer, men ingen kontoer oppdateres. Når du skal kjøre en prosess, kan du velge én eller flere fakturaer på siden **Ventende leverandørfakturaer** .
+Posteringssimulering fullfører valideringstrinnene som utføres under posteringsprosessen for leverandørfakturaer, men ingen kontoer oppdateres. Når du skal kjøre en prosess, kan du velge én eller flere fakturaer på siden **Ventende leverandørfakturaer**.
 
 ## <a name="vendor-invoice-automation--enhanced-experience-for-viewing-workflow-historical-information-for-vendor-invoices"></a>Automatisering av leverandørfaktura – Forbedret opplevelse for visning av historisk informasjon om arbeidsflyt for leverandørfakturaer
 

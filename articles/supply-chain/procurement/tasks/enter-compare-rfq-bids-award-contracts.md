@@ -8,7 +8,7 @@ ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: PurchRFQCaseTableListPage, PurchRFQCaseTable, PurchRFQReplyTable, PurchRFQCompare, PurchRFQEditLines, PurchRFQEditLinesParameters, PurchTable
+ms.search.form: PurchRFQCaseTableListPage, PurchRFQCaseTable, PurchRFQReplyTable, PurchRFQCompare, PurchRFQEditLines, PurchRFQEditLinesParameters, PurchTable, PurchTablePart, PurchRFQCompareLinePrices, PurchRFQCompareRFQ
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -16,18 +16,18 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 7fbbae2f097f812e1eefd8a095d72aa1c284c757
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: ae7c43516fc90224439f6f7cfd5fd0a6058e8b39
+ms.sourcegitcommit: e3f4dd2257a3255c2982f4fc7b72a1121275b88a
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3207666"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4018428"
 ---
 # <a name="enter-and-compare-rfq-bids-and-award-contracts"></a>Angi og sammenligne tilbudsforespørsler og inngå kontrakter
 
 [!include [banner](../../includes/banner.md)]
 
-Dette emnet forklarer hvordan du registrerer svar på en tilbudsforespørsel, poengsum og sammenligner bud, og deretter gir kontrakten til én av leverandørene. Du kan bruke prosedyren i **USMF**-demodatafirmaet.
+Dette emnet forklarer hvordan du registrerer svar på en tilbudsforespørsel, poengsum og sammenligner bud, og deretter gir kontrakten til én av leverandørene. Du kan bruke prosedyren i **USMF** -demodatafirmaet.
 
 Før du starter denne prosedyren, må du ha en tilbudsforespørsel som har to linjer og som er sendt til minst to leverandører. For å opprette denne tilbudsforespørselen må du fullføre prosedyren [Opprette en tilbudsforespørsel](create-request-quotation.md). Poengkriterier må også defineres før du kan fullføre denne prosedyren.
 
@@ -38,7 +38,7 @@ Du kan angi budet som en leverandør eller en innkjøpsansvarlig. Hvis du vil ha
 1. Velg **Leverandørbud** på instrumentbordet.
 2. I listen **Invitasjoner til nytt bud** finner du en tilbudsforespørsel som nettopp ble sendt. Velg tilbudsforespørselen for å gå gjennom forespørselen.
 3. Velg **Vedlegg i tilbudsforespørsel** for å se gjennom vedlegg som er lagt til.
-4. Velg **Bud** hvis du vil at feltene skal være redigerbare. Legg merke til at **Bud pågår**-feltet er satt til **Leverandør oppdaterer**.
+4. Velg **Bud** hvis du vil at feltene skal være redigerbare. Legg merke til at **Bud pågår** -feltet er satt til **Leverandør oppdaterer**.
 5. I hodet og linjene angir du verdiene fra budsvaret.
 6. Hvis det skal legges til vedlegg i budet, velger du **Vedlegg i bud**.
 7. Velg hurtigfanen **Budveiledningselementer** for å vise om noen dokumenter er nødvendige.
@@ -54,10 +54,10 @@ Du kan angi budet som en leverandør eller en innkjøpsansvarlig. Hvis du vil ha
 
 1. Kontroller at tillatelsen for å redigere leverandørbud er definert. Gå til **Innkjøp og leverandører** \> Oppsett \> Parametere for innkjøp og leverandører. I kategorien **Tilbudsforespørsler** setter du **Innkjøper kan redigere bud fra leverandører** til **Ja**.
 2. Gå til **Innkjøp og leverandører \> Tilbudsforespørsler \> Alle tilbudsforespørsler**.
-3. Velg en tilbudsforespørsel som har statusen **Sendt**, og velg deretter koblingen i feltet **Tilfelle for tilbudsforespørsel**.
+3. Velg en tilbudsforespørsel som har statusen **Sendt** , og velg deretter koblingen i feltet **Tilfelle for tilbudsforespørsel**.
 4. Velg **Behandle svar**. Siden som vises, viser en tilbudsforespørsel for hver leverandør som ble invitert til å by.
 5. Velg en tilbudsforespørsel som ikke er besvart. (Feltet **Svarfremdrift** må settes til **Ikke startet**.)
-6. Velg **Rediger \> Rediger svar på tilbudsforespørsel**. Siden **Forespørselssvar** vises. Som innkjøpsansvarlig kan du nå legge inn svaret på vegne av leverandøren. Legg merke til at **Bud pågår**-feltet er satt til **Innkjøper oppdaterer**.  
+6. Velg **Rediger \> Rediger svar på tilbudsforespørsel**. Siden **Forespørselssvar** vises. Som innkjøpsansvarlig kan du nå legge inn svaret på vegne av leverandøren. Legg merke til at **Bud pågår** -feltet er satt til **Innkjøper oppdaterer**.  
 7. Angi buddataene. Når du er ferdig, velg **Send**.
 
 ## <a name="score-the-bids"></a>Gi bud poengsum
@@ -65,7 +65,7 @@ Du kan angi budet som en leverandør eller en innkjøpsansvarlig. Hvis du vil ha
 1. På siden **Alle tilbudsforespørsler** velger du tilbudsforespørselssaken som du vil gi poeng for svar for.
 2. Velg **Behandle svar**.
 3. Velg svaret som skal gis poeng for.
-4. Velg **Hode**, slik at du kan vise poengsummen for budet.
+4. Velg **Hode** , slik at du kan vise poengsummen for budet.
 5. I hurtigfanen **Budresultat** angir du et tall i feltet **Poengsum** for ett av poengkriteriene. Hvis du holder musepekeren over et poengkriterium, viser et verktøytips området som poengsummen må være innenfor. Du kan angi et tall mellom 1 og 5 for poengkriterier i denne demoen.  
 6. Gjenta trinn 5 for et annet poengkriterium.
 7. Hvis saken for tilbudsforespørsel har et spørreskjema som ble sendt til leverandørene, kan du skrive inn leverandørsvarene i hurtigfanen **Spørreskjemaer**.
@@ -91,18 +91,18 @@ Du kan angi budet som en leverandør eller en innkjøpsansvarlig. Hvis du vil ha
     - Hvis du merker av for **Merk** i overskriften til budet, vil alle linjene også merkes av. Hvis du bare vil avvise eller godta noen av linjene i budet, kan du merke bare disse linjene. Du kan også godta én leverandørs bud for noen linjer i en tilbudsforespørsel, og deretter gi andre linjer i tilbudsforespørselen til en annen leverandør. Du må imidlertid utføre ett bud om gangen.  
     - Hvis det finnes alternative linjer, kan du godta enten den opprinnelige budlinjen eller den alternative, men ikke begge.  
 3. Velg **Avvis**.
-4. Velg **Parametere**, og skriv deretter inn eller velg en årsak for avslag av budet i **Avvisningsårsak**-feltet. Årsaken lagres i svaret.  
+4. Velg **Parametere** , og skriv deretter inn eller velg en årsak for avslag av budet i **Avvisningsårsak** -feltet. Årsaken lagres i svaret.  
 5. Velg **OK**.
 6. Velg **OK**.
 
 ## <a name="accept-a-bid"></a>Godta et bud
 
-1. Velg budet du vil godta, og velg deretter koblingen i **Tilbudsforespørsel**-feltet. Hvis du er på siden **Sammenlign svar på tilbudsforespørsel**, er det merkede budet som har fokus, budet som systemet vil vurdere under godkjenningshandlingen. Du kan bare godta linjer fra ett bud om gangen.  
+1. Velg budet du vil godta, og velg deretter koblingen i **Tilbudsforespørsel** -feltet. Hvis du er på siden **Sammenlign svar på tilbudsforespørsel** , er det merkede budet som har fokus, budet som systemet vil vurdere under godkjenningshandlingen. Du kan bare godta linjer fra ett bud om gangen.  
 2. Velg **Svar** i handlingsruten.
 3. Velg **Godta**. Hvis du har merket bare bestemte linjer, vil Godta-handlingen bare ta med disse linjene. Hvis du vil godta alle linjene i budet, trenger du ikke merke linjene.  
-4. Velg **Parametere**, og skriv deretter inn eller velg en årsak for å godta budet i **Årsak til aksept**-feltet. Årsaken lagres i budet.  
+4. Velg **Parametere** , og skriv deretter inn eller velg en årsak for å godta budet i **Årsak til aksept** -feltet. Årsaken lagres i budet.  
 5. Velg **OK**.
-6. Velg **OK**. Når du velger **OK**, genereres en bestilling basert på linjene som er inkludert i godkjenningen av tilbudsforespørselen. Hvis det finnes andre bud som ikke er behandlet (godkjent, avvist eller returnert), vil systemet be deg om å avvise dem.  
+6. Velg **OK**. Når du velger **OK** , genereres en bestilling basert på linjene som er inkludert i godkjenningen av tilbudsforespørselen. Hvis det finnes andre bud som ikke er behandlet (godkjent, avvist eller returnert), vil systemet be deg om å avvise dem.  
 
 ## <a name="view-the-purchase-order-that-is-generated"></a>Vise bestillingen som er generert
 

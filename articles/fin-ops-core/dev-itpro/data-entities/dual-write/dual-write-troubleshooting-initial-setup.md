@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: rhaertle
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: 76e104c9ebd7db7ebcbaf214e84be6c4353e8a73
-ms.sourcegitcommit: e06da171b9cba8163893e30244c52a9ce0901146
+ms.openlocfilehash: 6fb71a17d767a1e84511743794d85523db25eba8
+ms.sourcegitcommit: 0a741b131ed71f6345d4219a47cf5f71fec6744b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "3275447"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "3997356"
 ---
 # <a name="troubleshoot-issues-during-initial-setup"></a>Feilsøke problemer under første oppsett
 
@@ -41,7 +40,7 @@ Dette emnet inneholder feilsøkingsinformasjon om dobbel skriving-integrasjon me
 
 **Nødvendig rolle for å konfigurere dobbel skriving:** Systemadministrator i Finance and Operations-apper og Common Data Service.
 
-Feil på **oppsett-koblingen til Common Data Service**-siden skyldes vanligvis ufullstendige oppsetts- eller tillatelsesproblemer. Kontroller at hele tilstandskontrollen bestås på **Oppsett-koblingen til Common Data Service**-siden, som vist i illustrasjonen nedenfor. Du kan ikke koble til dobbel skriving med mindre hele tilstandssjekken bestås.
+Feil på **oppsett-koblingen til Common Data Service** -siden skyldes vanligvis ufullstendige oppsetts- eller tillatelsesproblemer. Kontroller at hele tilstandskontrollen bestås på **Oppsett-koblingen til Common Data Service** -siden, som vist i illustrasjonen nedenfor. Du kan ikke koble til dobbel skriving med mindre hele tilstandssjekken bestås.
 
 ![Vellykket tilstandssjekk](media/health_check.png)
 
@@ -51,7 +50,7 @@ Du må ha legitimasjon for Azure AD-leieradministrator for å koble til Finance 
 
 **Nødvendig legitimasjon for å løse problemet:** Azure AD-leieradministrator
 
-Du kan få følgende feilmelding når du prøver å åpne **Kobling til Common Data Service**-siden i en Finance and Operations-app:
+Du kan få følgende feilmelding når du prøver å åpne **Kobling til Common Data Service** -siden i en Finance and Operations-app:
 
 *Svarstatuskoden indikerer ikke fullført: 404 (ikke funnet).*
 
@@ -70,7 +69,7 @@ Følg denne fremgangsmåten for å gi samtykke for appen.
 
 ## <a name="verify-that-company-data-and-dual-write-teams-are-set-up-correctly-during-linking"></a>Kontroller at firmadata og team med dobbel skriving er riktig konfigurert under kobling
 
-For å sikre at dobbeltskriving fungerer som det skal, opprettes firmaene du velger under konfigurasjonen, i Common Data Service-miljøet. Som standard er disse firmaene skrivebeskyttet, og egenskapen **IsDualWriteEnable** er satt til **Sann**. I tillegg opprettes standard eier av forretningsenheten og teamet og inkluderer firmanavnet. Før du aktiverer tilordningene, må du kontrollere at standard teameier er angitt. Gjør følgende for å finne **Firmaer (CDM\_Firma)**-enheten.
+For å sikre at dobbeltskriving fungerer som det skal, opprettes firmaene du velger under konfigurasjonen, i Common Data Service-miljøet. Som standard er disse firmaene skrivebeskyttet, og egenskapen **IsDualWriteEnable** er satt til **Sann**. I tillegg opprettes standard eier av forretningsenheten og teamet og inkluderer firmanavnet. Før du aktiverer tilordningene, må du kontrollere at standard teameier er angitt. Gjør følgende for å finne **Firmaer (CDM\_Firma)** -enheten.
 
 1. Velg filteret øverst til høyre i den modelldrevne appen i Dynamics 365.
 2. Velg **Firma** fra rullegardinlisten.

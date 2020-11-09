@@ -3,7 +3,7 @@ title: Komme i gang med leasing av aktiva
 description: Dette emnet beskriver funksjonen for leasing av aktiva og går gjennom fremgangsmåten for å opprette leasing av aktiva og vise informasjon for leasingavtalene.
 author: moaamer
 manager: Ann Beebe
-ms.date: 09/24/2020
+ms.date: 10/16/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,17 +18,16 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-09-24
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 5f8f86861f65f3da71843f6fd4a64e4199e86627
-ms.sourcegitcommit: 9668af8d918faec37abe1881e550872cd6b73259
+ms.openlocfilehash: 9e206569aad3f53a2f6f66e6d6253226e5980078
+ms.sourcegitcommit: 9e7ceb5604472f3088f611aa0360bd6a716db32b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/08/2020
-ms.locfileid: "3970014"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4022573"
 ---
 # <a name="asset-leasing-get-started"></a>Komme i gang med leasing av aktiva
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Dette emnet beskriver funksjonen for leasing av aktiva og går gjennom fremgangsmåten for å opprette leasing av aktiva og vise informasjon for leasingavtalene. Emnet definerer også terminologien som brukes i brukergrensesnittet og i dokumentasjonen. Leasing av aktiva er en avansert funksjon for behandling, sporing og automatisering av mindre, økonomiske transaksjoner for leasede aktiva i Microsoft Dynamics 365 Finance. Leasing av aktiva overholder internasjonale regnskapsstandarder (IFRS 16) og amerikanske GAAP-standarder (ASC 842). Leasing av aktiva registrerer og behandler informasjon om leasing og beregner journaloppføringer gjennom livssyklusen til leasingen fra innledende gjenkjenning, månedlige journaloppføringer, til skader og avslutning av leasingen. Leasing av aktiva integreres sømløst med andre komponenter i Dynamics 365 Finance, inkludert anleggsmidler, leverandører og økonomimodulen.
 
@@ -209,8 +208,8 @@ Dette representerer overføring av saldoreduksjon for bruksrettseiendelen. Ident
 ## <a name="create-an-asset-lease"></a>Opprette en leieavtale for anleggsmiddel
 Fullfør fremgangsmåten nedenfor for å opprette en ny leieavtale. 
 
-1. Hvis du vil **Leie av anleggsmiddel** , må du aktivere den i arbeidsområdet **Funksjonsbehandling** . Fra arbeidsområder **Funksjonsbehandling** velger du **Alle** , slik at alle funksjonene vises på siden. Velg **Leie av anleggsmiddel** , og velg deretter **Aktiver nå** .
-2. Gå til **Leie av anleggsmiddel > Felles > Leiesammendrag** . Angi feltene nedenfor i hurtigfanen **Generelt** . 
+1. Hvis du vil **Leie av anleggsmiddel** , må du aktivere den i arbeidsområdet **Funksjonsbehandling**. Fra arbeidsområder **Funksjonsbehandling** velger du **Alle** , slik at alle funksjonene vises på siden. Velg **Leie av anleggsmiddel** , og velg deretter **Aktiver nå**.
+2. Gå til **Leie av anleggsmiddel > Felles > Leiesammendrag**. Angi feltene nedenfor i hurtigfanen **Generelt**. 
    - **Leiedetaljer**
    - **Aktivalevetid (måneder)**
    - **Leiegruppe**
@@ -220,19 +219,19 @@ Fullfør fremgangsmåten nedenfor for å opprette en ny leieavtale.
    - **Valuta.**
    - **Iverksettelsesdato**
 
-3. Gå til hurtigfanen **Betalingsplanlinjer** og angi en betalingslinje, og velg deretter **Opprett tidsplaner** .
+3. Gå til hurtigfanen **Betalingsplanlinjer** og angi en betalingslinje, og velg deretter **Opprett tidsplaner**.
 
-4. Velg **Bøker** . 
+4. Velg **Bøker**. 
 
-5. Bytt til hurtigfanen **Generelt** . **Første bruksrettseiendel** og **Leieforpliktelse** beregnes. 
+5. Bytt til hurtigfanen **Generelt**. **Første bruksrettseiendel** og **Leieforpliktelse** beregnes. 
 
-6. Gå til hurtigfanen **Klassifiseringstest for leie** for å kontrollere verdien i feltet **Leietype** . 
+6. Gå til hurtigfanen **Klassifiseringstest for leie** for å kontrollere verdien i feltet **Leietype**. 
 
-   Den automatiske **leietypen** klassifiseres basert på kriteriene som er definert på siden **Tablåer** .
+   Den automatiske **leietypen** klassifiseres basert på kriteriene som er definert på siden **Tablåer**.
 
 7.  Gå til **Betalingsplan** under **Funksjon** -delen.  
 
-   Siden **Betalingsplan** viser en liste over fremtidige betalingsplaner for en leie-ID. Velg **Bekreft plan** for å postere transaksjonene for **opprinnelige gjenkjenning** . 
+   Siden **Betalingsplan** viser en liste over fremtidige betalingsplaner for en leie-ID. Velg **Bekreft plan** for å postere transaksjonene for **opprinnelige gjenkjenning**. 
 
 [![Funksjon for opprinnelig gjenkjenning](./media/overview-13.png)](./media/overview-13.png)
 
@@ -244,7 +243,7 @@ Fullfør fremgangsmåten nedenfor for å opprette en ny leieavtale.
  
    **Nedbetalingsplan for leieforpliktelse** viser rentebeløpet som beregnes for hver periode.
    
-10. Opprett journalen, og gå deretter til **Journaler for leie av anleggsmidler** . **Nedbetalingsplan for leieforpliktelse** vises også i rentetransaksjonene.
+10. Opprett journalen, og gå deretter til **Journaler for leie av anleggsmidler**. **Nedbetalingsplan for leieforpliktelse** vises også i rentetransaksjonene.
 
    Siden **Tidsplan for avskrivning av anleggsmidler** viser avskrivningstransaksjonene for den valgte leie-ID-en. 
 

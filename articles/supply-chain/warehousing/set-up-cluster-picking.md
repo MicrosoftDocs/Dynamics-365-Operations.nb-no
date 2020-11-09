@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: WHSClusterProfile, WHSRFAutoConfirm
+ms.search.form: WHSClusterProfile, WHSRFAutoConfirm, WHSWorkCluster
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 86aed1b2071875117b74309030ac5e9008babdaf
-ms.sourcegitcommit: 89022f39502b19c24c0997ae3a01a64b93280f42
+ms.openlocfilehash: 009345e608c26887fedbe4a9c268367080593da2
+ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "3367413"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4017581"
 ---
 # <a name="set-up-cluster-picking"></a>Definere gruppeplukking
 
@@ -58,18 +58,18 @@ Hvis du vil konfigurere en gruppeprofil, gjør du følgende:
 
 1. Klikk **Ny** for å opprette en ny profil.
 
-1. Klikk **Opprett gruppe** og deretter, under **Gruppesortering**, klikker du **Ny** for å definere sorteringskriteriene for gruppen. Sorteringskriteriene bestemmer i hvilken rekkefølge arbeideren vil utføre plukkarbeidet. Du kan legge til så mange kriterier som nødvendig.
+1. Klikk **Opprett gruppe** og deretter, under **Gruppesortering** , klikker du **Ny** for å definere sorteringskriteriene for gruppen. Sorteringskriteriene bestemmer i hvilken rekkefølge arbeideren vil utføre plukkarbeidet. Du kan legge til så mange kriterier som nødvendig.
 
 1. I feltet **Serienummer** angir du et tall for å definere rekkefølgen som sorteringskriteriene behandles i.
 
-1. I **feltnavn**-feltet velger du feltet som bestemmer sorteringen. Hvis du for eksempel velger **WMSLocationId**-feltet, blir arbeidet sorteret etter lokasjon.
+1. I **feltnavn** -feltet velger du feltet som bestemmer sorteringen. Hvis du for eksempel velger **WMSLocationId** -feltet, blir arbeidet sorteret etter lokasjon.
 
-1. I **Sortering**-feltet velger du ett av følgende alternativer.
+1. I **Sortering** -feltet velger du ett av følgende alternativer.
 
 | **Alternativ**     | **Beskrivelse**                                                                                                                                                                                                                    |
 |----------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Stigende**  | Plukkarbeid er delt inn i en stigende rekkefølge basert på sorteringskriteriene. Hvis du for eksempel bruker **WMSLocationId**-feltet som sorteringskriterium, og lokasjons-IDene 1, 2, 3 og 4, plukker du først fra lokasjon 4. |
-| **Synkende** | Plukkarbeid er delt inn i en synkende rekkefølge basert på sorteringskriteriene. Hvis du for eksempel bruker **WMSLocationId**-feltet som sorteringskriterium, og lokasjons-IDene 1, 2, 3 og 4, plukker du først fra lokasjon 1. |
+| **Stigende**  | Plukkarbeid er delt inn i en stigende rekkefølge basert på sorteringskriteriene. Hvis du for eksempel bruker **WMSLocationId** -feltet som sorteringskriterium, og lokasjons-IDene 1, 2, 3 og 4, plukker du først fra lokasjon 4. |
+| **Synkende** | Plukkarbeid er delt inn i en synkende rekkefølge basert på sorteringskriteriene. Hvis du for eksempel bruker **WMSLocationId** -feltet som sorteringskriterium, og lokasjons-IDene 1, 2, 3 og 4, plukker du først fra lokasjon 1. |
 
 ## <a name="item-confirmation"></a>Varebekreftelse
 

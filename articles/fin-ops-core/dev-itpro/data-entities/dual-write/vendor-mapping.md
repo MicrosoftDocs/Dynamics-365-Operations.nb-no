@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: rhaertle
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: 8d531ed4e46d8ee5d2b0937b6efc480e051fe708
-ms.sourcegitcommit: 68f1485de7d64a6c9eba1088af63bd07992d972d
+ms.openlocfilehash: 5c4cc92fd7809f4016d8421c98f41a85fcfedc7b
+ms.sourcegitcommit: 0a741b131ed71f6345d4219a47cf5f71fec6744b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "3173114"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "3997654"
 ---
 # <a name="integrated-vendor-master"></a>Integrert original for leverandør
 
@@ -32,17 +31,17 @@ ms.locfileid: "3173114"
 
 
 
-Begrepet *leverandør* refererer til en leverandørorganisasjon, eller en enkelt innehaver som leverer varer eller tjenester til en virksomhet. Selv om *leverandør* er et etablert begrep i Microsoft Dynamics 365 Supply Chain Management-, finnes det ikke noe leverandørbegrep i modelldrevne apper i Dynamics 365. Du kan imidlertid overbelaste **konto/kontakt**-enheten for å lagre leverandørinformasjon. Den integrerte leverandørstandarden innfører et eksplisitt leverandørbegrep i modelldrevne apper i Dynamics 365. Du kan enten bruke de nye leverandørutformingen eller butikkleverandørdataene i **Konto/kontakt**-enheten. Dobbel skriving støtter begge metoder.
+Begrepet *leverandør* refererer til en leverandørorganisasjon, eller en enkelt innehaver som leverer varer eller tjenester til en virksomhet. Selv om *leverandør* er et etablert begrep i Microsoft Dynamics 365 Supply Chain Management-, finnes det ikke noe leverandørbegrep i modelldrevne apper i Dynamics 365. Du kan imidlertid overbelaste **konto/kontakt** -enheten for å lagre leverandørinformasjon. Den integrerte leverandørstandarden innfører et eksplisitt leverandørbegrep i modelldrevne apper i Dynamics 365. Du kan enten bruke de nye leverandørutformingen eller butikkleverandørdataene i **Konto/kontakt** -enheten. Dobbel skriving støtter begge metoder.
 
 I begge fremgangsmåtene er leverandørdataene integrert i Dynamics 365 Supply Chain Management, Dynamics 365 Sales, Dynamics 365 Field Service og Power Apps-portaler. I Supply Chain Management er dataene tilgjengelige for arbeidsflyter som innkjøpsrekvisisjoner og bestillinger.
 
 ## <a name="vendor-data-flow"></a>Flyt for leverandørdata
 
-Hvis du ikke vil lagre leverandørdata i **Konto/kontakt**-enheten i Common Data Service, kan du bruke den nye leverandørutformingen.
+Hvis du ikke vil lagre leverandørdata i **Konto/kontakt** -enheten i Common Data Service, kan du bruke den nye leverandørutformingen.
 
 ![Flyt for leverandørdata](media/dual-write-vendor-data-flow.png)
 
-Hvis du ikke vil fortsette å lagre leverandørdata i **Konto/kontakt**-enheten i , kan du bruke den utvidede leverandørutformingen. Hvis du vil bruke den utvidede leverandørutformingen, må du konfigurere leverandørarbeidsflytene i løsningspakken med dobbel skriving. Hvis du vil ha mer informasjon, se [Bytte mellom leverandørutforminger](vendor-switch.md).
+Hvis du ikke vil fortsette å lagre leverandørdata i **Konto/kontakt** -enheten i , kan du bruke den utvidede leverandørutformingen. Hvis du vil bruke den utvidede leverandørutformingen, må du konfigurere leverandørarbeidsflytene i løsningspakken med dobbel skriving. Hvis du vil ha mer informasjon, se [Bytte mellom leverandørutforminger](vendor-switch.md).
 
 ![Utvidet flyt for leverandørdata](media/dual-write-vendor-detail.jpg)
 

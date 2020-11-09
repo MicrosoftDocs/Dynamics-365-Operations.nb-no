@@ -1,9 +1,9 @@
 ---
-title: Nyheter i Dynamics 365 Supply Chain Management-forhåndsversjonen 10.0.15 (desember 2020)
+title: Forhåndsvisning av Dynamics 365 Supply Chain Management 10.0.15 (januar 2021)
 description: Dette emnet beskriver funksjoner som enten er nye eller endret i Dynamics 365 Supply Chain Management 10.0.15.
 author: kamaybac
 manager: tfehr
-ms.date: 10/09/2020
+ms.date: 10/13/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,35 +17,43 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-10-09
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 7c7ac0e795ec085584be9cfdef65333969255ed6
-ms.sourcegitcommit: c55fecae96b4bb27bc313ba10a97eddb9c91350a
+ms.openlocfilehash: 0b8e69261563f61de022a626dd12d15d81535392
+ms.sourcegitcommit: 9dd2d38e76d4d93171315ec319e6ce7d51d4e6c7
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/12/2020
-ms.locfileid: "3989317"
+ms.lasthandoff: 10/15/2020
+ms.locfileid: "4012281"
 ---
-# <a name="whats-new-in-the-dynamics-365-supply-chain-management-preview-of-release-10015-december-2020"></a>Nyheter i Dynamics 365 Supply Chain Management-forhåndsversjonen 10.0.15 (desember 2020)
+# <a name="preview-of-dynamics-365-supply-chain-management-10015-january-2021"></a>Forhåndsvisning av Dynamics 365 Supply Chain Management 10.0.15 (januar 2021)
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
 Dette emnet beskriver funksjoner som enten er nye eller endret i Microsoft Dynamics 365 Supply Chain Management-forhåndsversjonen 10.0.15. Denne versjonen har et build-nummer 10.0.644, og er tilgjengelig som følger:
 
-- **Forhåndsversjon 10.0.15:** oktober 2020
-- **Generell tilgjengelighet for versjon 10.0.15 (manuell oppdatering):** november 2020
-- **Generell tilgjengelighet for versjon 10.0.15 (automatisk oppdatering):** desember 2020
+- **Forhåndsversjon:** oktober 2020
+- **Generell tilgjengelighet for versjon (selvoppdatering):** november 2020
+- **Generell tilgjengelighet for versjon (automatisk oppdatering):** januar 2021
 
 ## <a name="features-included-in-this-release"></a>Funksjoner inkludert i denne versjonen
 
-Denne versjonen inneholder følgende funksjoner: Funksjonstitlene kobler til mer informasjon på [Utgivelsesplaner](https://docs.microsoft.com/dynamics365/release-plans/)-området. Flere koblinger peker mot ekstra dokumentasjon som for øyeblikket er tilgjengelig for denne funksjonen. Noen av funksjonene i listen er fortsatt i forhåndsversjon, mens andre kanskje allerede er allment tilgjengelige. Følg koblingene til lanseringsplanen for å se lanseringsdatoene, eller gå til [Nyheter og planlagt for Dynamics 365 Supply Chain Management](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/planned-features) for en oversikt over datoer for alle funksjonene som er lanser og planlagt for gjeldende lanseringsbølgen. De fleste av disse funksjonene må aktiveres ved hjelp av [Funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) før du kan bruke dem.
+Denne versjonen inneholder følgende funksjoner: Noen av funksjonene i listen er fortsatt i forhåndsversjon, mens andre kanskje allerede er allment tilgjengelige. Følg koblingene til [frigivelsesplanen](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/planned-features) for å se de offisielle frigivelsesdatoene for hver funksjon.
 
-- Enhetsadministrasjon for i nettsky- og kantskala med arbeidsmengder for produksjons- og lagerkjøringer
-- [Opprett og behandle overføringsordrer fra lagerappen](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/ad-hoc-transfer-order-creation-warehousing-mobile-app)<br> – Hvis du vil ha mer informasjon, kan du se [Opprette overføringsordrer fra lagerappen](../warehousing/create-transfer-order-from-warehouse-app.md).
-- [Standard svarfelt for tilbudsforespørsel for leverandørbud](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/default-rfq-reply-fields-for-vendor-bidding)<br> – Hvis du vil ha mer informasjon, kan du se [Oversikt over tilbudsforespørsler](../procurement/request-quotations.md).
+- Enhetsadministrasjon for i nettsky- og kantskala med arbeidsmengder for produksjons- og lagerkjøringer<!-- <br> - For more information, see [Cloud and edge scale units for manufacturing and warehouse management workloads](../cloud-edge/cloud-edge-landing-page.md).-->
+
+- [Opprett og behandle overføringsordrer fra lagerappen](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/ad-hoc-transfer-order-creation-warehousing-mobile-app)<br> - Hvis du vil ha mer informasjon, kan du se [Opprette overføringsordrer fra lagerappen](../warehousing/create-transfer-order-from-warehouse-app.md).
+
+- [Standard svarfelt for tilbudsforespørsel for leverandørbud](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/default-rfq-reply-fields-for-vendor-bidding)<br> - Hvis du vil ha mer informasjon, kan du se [Oversikt over tilbudsforespørsler](../procurement/request-quotations.md).
+
 - [Engineering Change Management-tillegg for Dynamics 365 Supply Chain Management](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/engineering-change-management)<!-- <br> - For more information, see [Engineering change management overview](../engineering-change-management/product-engineering-overview.md).-->
-- [Blandet virkelighet-veiledninger for produksjon](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/mixed-reality-guides-manufacturing)<br> – Hvis du vil ha mer informasjon, kan du se [Blandet virkelighet-veiledninger for ansatte i produksjonen](../production-control/instruction-guides-in-production-overview.md).
-- [Ny brukeropplevelse for produksjonsutførelse](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/mes-terminal-enhancements-discrete-manufacturing)<!-- <br> - For more information, see [How workers use the production floor execution interface](../production-control/production-floor-execution-use.md).-->
-- [Behandle lagerapphendelser](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/process-warehouse-app-events)<br> – Hvis du vil ha mer informasjon, kan du se [Behandling av hendelse for lagerappen](../warehousing/warehouse-app-events.md).
+
+- [Blandet virkelighet-veiledninger for produksjon](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/mixed-reality-guides-manufacturing)<br> - Hvis du vil ha mer informasjon, kan du se [Blandet virkelighet-veiledninger for ansatte i produksjonen](../production-control/instruction-guides-in-production-overview.md).
+
+- [Ny brukeropplevelse for produksjonsutførelse](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/mes-terminal-enhancements-discrete-manufacturing)<br> - Hvis du vil ha mer informasjon, kan du se [Hvordan arbeidere bruker grensesnittet for produksjonsutførelse](../production-control/production-floor-execution-use.md).
+
+- [Behandle lagerapphendelser](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/process-warehouse-app-events)<br> - Hvis du vil ha mer informasjon, kan du se [Behandling av hendelse for lagerappen](../warehousing/warehouse-app-events.md).
+
+De fleste av disse funksjonene må aktiveres ved hjelp av [Funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) før du kan bruke dem.
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 

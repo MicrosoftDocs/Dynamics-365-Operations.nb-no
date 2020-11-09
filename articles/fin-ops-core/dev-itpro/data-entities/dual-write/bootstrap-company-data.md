@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: rhaertle
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-09-20
-ms.openlocfilehash: 1ed97d7c388347eb5afe101f51173b6d48b18fcd
-ms.sourcegitcommit: 68f1485de7d64a6c9eba1088af63bd07992d972d
+ms.openlocfilehash: a2adf284111f2ccc9a830635ab3fb8f4731c84d9
+ms.sourcegitcommit: 0a741b131ed71f6345d4219a47cf5f71fec6744b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "3172929"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "3997582"
 ---
 # <a name="bootstrap-with-company-data-faq"></a>Vanlige spørsmål om oppstart med firmadata
  
@@ -37,7 +36,7 @@ Du kan ha en eksisterende Common Data Service eller en annen Dynamics 365-appfor
 ## <a name="when-should-i-use-bootstrapping"></a>Når bør jeg bruke oppstart? 
 Du bør bruke oppstart før du aktiverer dobbel skriving-enhetstilordninger (under trinn 5).  
 1. Hvis du vil konfigurere dobbel skriving-forbindelsen mellom forekomster av Finance and Operations-appen og Common Data Service eller den andre Dynamics 365-appen, logger du på Finance and Operations-appen som administrator. 
-2. Gå til **Databehandling**-modulen, og klikk **Dobbel skriving**-knappen. Dette starter **dataintegratoren**. 
+2. Gå til **Databehandling** -modulen, og klikk **Dobbel skriving** -knappen. Dette starter **dataintegratoren**. 
 3. Opprett dobbel skriving-tilkoblingen for ett eller flere firmaer.  
     > [!div class="mx-imgBorder"]
     > ![Opprett dobbel skriving-tilkobling](media/dual-write-boot-1.png)
@@ -52,16 +51,16 @@ Du bør bruke oppstart før du aktiverer dobbel skriving-enhetstilordninger (und
 ## <a name="how-to-i-use-the-code-sample"></a>Hvordan bruker jeg kodeeksemplet?
 Eksempelkoden er et C#-program du kan laste inn i Visual Studio. Den tar NuGet-pakkeavhengigheter på Common Data Service SDK, som du kan oppdatere ved hjelp av standardverktøy for Visual Studio. 
 
-Når du har pakket ut og åpnet løsningen i Visual Studio og gjenopprettet NuGet-pakkene, kan du søke etter **GJØREMÅL** i koden. Hver avgjørelse du må ta om hvordan du vil starte opp firmainformasjon, er angitt av et **GJØREMÅL**, med eksempelkode for en kanonisk implementering. 
+Når du har pakket ut og åpnet løsningen i Visual Studio og gjenopprettet NuGet-pakkene, kan du søke etter **GJØREMÅL** i koden. Hver avgjørelse du må ta om hvordan du vil starte opp firmainformasjon, er angitt av et **GJØREMÅL** , med eksempelkode for en kanonisk implementering. 
 
-Eksempelkoden viser bare én av mange måter du kan kategorisere enhetsposter etter firma på. Ved å endre logikken i **GJØREMÅL**-delene kan du opprette en egendefinert kategorisering. 
+Eksempelkoden viser bare én av mange måter du kan kategorisere enhetsposter etter firma på. Ved å endre logikken i **GJØREMÅL** -delene kan du opprette en egendefinert kategorisering. 
  
 ## <a name="what-should-i-expect"></a>Hva bør jeg forvente?
-Som standard kan du bruke eksempelprogrammet til å angi en ordliste med kodetilordninger for forretningsenhet til firma. En hvilken som helst enhet som starter med et **OwningBusinessUnit**-felt, angis automatisk til å bruke det angitte firmaet. Alle enheter uten et **OwningBusinessUnit**-felt, for eksempel produkt, vil angi firmaet basert på tilordningen med en tom forretningsenhetsverdi.
+Som standard kan du bruke eksempelprogrammet til å angi en ordliste med kodetilordninger for forretningsenhet til firma. En hvilken som helst enhet som starter med et **OwningBusinessUnit** -felt, angis automatisk til å bruke det angitte firmaet. Alle enheter uten et **OwningBusinessUnit** -felt, for eksempel produkt, vil angi firmaet basert på tilordningen med en tom forretningsenhetsverdi.
 
-Konsollprogrammet forventer én parameter, enten **–simulate** eller **–apply**. Hvis du bruker kommandolinjeparameteren **–simulate**, oppdateres ingen data. Bare **simulation_<entityname>.csv**-filer genereres i samme mappe som verktøyet, en for hver enhet som ville ha blitt oppdatert. Du kan iterativt se gjennom disse filene når du arbeider for å sikre at koden oppdaterer firmaverdier som forventet. 
+Konsollprogrammet forventer én parameter, enten **–simulate** eller **–apply**. Hvis du bruker kommandolinjeparameteren **–simulate** , oppdateres ingen data. Bare **simulation_<entityname>.csv** -filer genereres i samme mappe som verktøyet, en for hver enhet som ville ha blitt oppdatert. Du kan iterativt se gjennom disse filene når du arbeider for å sikre at koden oppdaterer firmaverdier som forventet. 
 
-Når du er ferdig med de simulerte oppdateringene, bruker du parameteren **–apply**. Dette oppdaterer alle poster som har feil firmaverdi, i grupper med 1000 poster om gangen (som standard). Koden er idempotent som oppgitt, noe som betyr at du kan kjøre den på nytt, og bare de feilaktig tilordnede selskapene blir oppdatert. Når det kjøres med **–apply**, vil koden skrive ut CSV-filer for endringene som er gjort, som kalles **applied_<entityname>.csv.** 
+Når du er ferdig med de simulerte oppdateringene, bruker du parameteren **–apply**. Dette oppdaterer alle poster som har feil firmaverdi, i grupper med 1000 poster om gangen (som standard). Koden er idempotent som oppgitt, noe som betyr at du kan kjøre den på nytt, og bare de feilaktig tilordnede selskapene blir oppdatert. Når det kjøres med **–apply** , vil koden skrive ut CSV-filer for endringene som er gjort, som kalles **applied_<entityname>.csv.** 
 
  ```csharp
  using Microsoft.Crm.Sdk.Messages;

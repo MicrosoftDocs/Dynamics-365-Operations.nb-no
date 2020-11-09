@@ -8,6 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
+ms.search.form: WHSParameters, WHSRFMenuItem, WHSLicensePlate, WHSPackingStructure
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -15,12 +16,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-03-31
 ms.dyn365.ops.version: Release 10.0.11
-ms.openlocfilehash: 60e69fd62d6d15a1fcb17644ef4710b8764ce924
-ms.sourcegitcommit: 27233e0fda61dac541c5210ca8d94ab4ba74966f
+ms.openlocfilehash: 0d6894c0adb5671818e976dbb5116ecb947025d2
+ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/03/2020
-ms.locfileid: "3651720"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4016568"
 ---
 # <a name="license-plate-receiving-via-the-warehouse-app"></a>Nummerskilt som mottar via lagerappen
 
@@ -30,7 +31,7 @@ Dette emnet forklarer hvordan du konfigurerer lagerappen, slik at den støtter b
 
 Du kan bruke denne funksjonaliteten til raskt å registrere mottak av innkommende beholdning som er relatert til et forhåndsvarsel for forsendelse. Systemet oppretter automatisk et forhåndsvarsel for forsendelse når lagerstyringsprosesser brukes til å sende en overføringsordre. For bestillingsprosessen kan et forhåndsvarsel for forsendelse registreres manuelt, eller det kan importeres automatisk ved hjelp av en innkommende dataenhetsprosess for forhåndsvarsel for forsendelse.
 
-Dataene fra forhåndsvarselet for forsendelse knyttet til laster og forsendelser via *emballasjestrukturer*, der paller (overordnede nummerskilt) kan inneholde saker (nestede nummerskilt).
+Dataene fra forhåndsvarselet for forsendelse knyttet til laster og forsendelser via *emballasjestrukturer* , der paller (overordnede nummerskilt) kan inneholde saker (nestede nummerskilt).
 
 > [!NOTE]
 > Hvis du vil redusere antallet lagertransaksjoner når det brukes emballasjestrukturer som har nestede nummerskilt, registrerer systemet den fysiske lagerbeholdningen på det overordnede nummerskiltet. For å utløse flytting av den fysiske lagerbeholdningen fra det overordnede nummerskiltet til de nestede nummerskiltene, basert på pakkestrukturdataene, må mobilenheten inneholde et menyelement som er basert på arbeidsopprettingsproessen *Pakk til nestede nummerskilt*.
@@ -45,20 +46,20 @@ Som med (for eksempel) menyelementprosessen *Ferdigmeld* for mobilenheter, støt
 
 ### <a name="work-policies-with-work-creation"></a>Arbeidspolicyer med arbeidsopprettelse
 
-Når du registrerer innkommende varer ved hjelp av en arbeidspolicy som oppretter arbeid, genererer og plasserer systemet arbeidsposter for hver registrering. Hvis du bruker *Mottak og plassering av nummerskilt*-arbeidsprosess, blir registrering og plassering behandlet som én enkelt operasjon ved hjelp av ett enkelt menyelement på en mobilenhet. Hvis du bruker *Mottak av nummerskilt*-prosessen, blir mottaks- og plasseringsprosessene behandlet som to forskjellige lageroperasjoner med hvert sitt menyelement på en mobilenhet.
+Når du registrerer innkommende varer ved hjelp av en arbeidspolicy som oppretter arbeid, genererer og plasserer systemet arbeidsposter for hver registrering. Hvis du bruker *Mottak og plassering av nummerskilt* -arbeidsprosess, blir registrering og plassering behandlet som én enkelt operasjon ved hjelp av ett enkelt menyelement på en mobilenhet. Hvis du bruker *Mottak av nummerskilt* -prosessen, blir mottaks- og plasseringsprosessene behandlet som to forskjellige lageroperasjoner med hvert sitt menyelement på en mobilenhet.
 
 ### <a name="work-policies-without-work-creation"></a>Arbeidspolicyer uten arbeidsopprettelse
 
-Du kan bruke mottaksprosessen for nummerskilt uten å opprette arbeid. Hvis du definerer arbeidspolicyer som har arbeidsordretype *Overføringsmottak* og/eller *Bestillinger*, og du bruker prosessen for *Mottak (og plassering) av nummerskilt*, vil ikke følgende to prosesser i Warehousing-mobilappen opprette arbeid. I stedet registrerer de bare den innkommende fysiske beholdningen på nummerskiltet på mottaksstedet.
+Du kan bruke mottaksprosessen for nummerskilt uten å opprette arbeid. Hvis du definerer arbeidspolicyer som har arbeidsordretype *Overføringsmottak* og/eller *Bestillinger* , og du bruker prosessen for *Mottak (og plassering) av nummerskilt* , vil ikke følgende to prosesser i Warehousing-mobilappen opprette arbeid. I stedet registrerer de bare den innkommende fysiske beholdningen på nummerskiltet på mottaksstedet.
 
 - *Mottak av nummerskilt*
 - *Mottak og plassering av nummerskilt*
 
 > [!NOTE]
-> - Du må definere minst én lokasjon for en arbeidspolicy i **Beholdningslokasjoner**-delen. Du kan ikke angi samme plassering for flere arbeidspolicyer.
+> - Du må definere minst én lokasjon for en arbeidspolicy i **Beholdningslokasjoner** -delen. Du kan ikke angi samme plassering for flere arbeidspolicyer.
 > - Alternativet **Skriv ut etikett** for menyelementer for lagerstyring på mobilenheter skriver ikke ut en nummerskiltetikett uten arbeidsopprettelse.
 
-Hvis du vil gjøre denne funksjonaliteten tilgjengelig i systemet, må du aktivere *Forbedringer for nummerskiltmottak*-funksjonen i [funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+Hvis du vil gjøre denne funksjonaliteten tilgjengelig i systemet, må du aktivere *Forbedringer for nummerskiltmottak* -funksjonen i [funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ### <a name="receive-inventory-on-a-location-that-doesnt-track-license-plates"></a>Motta beholdning på en lokasjon som ikke sporer nummerskilt
 
@@ -66,9 +67,9 @@ Det er mulig å bruke en lagerlokasjon som er tilordnet en lokasjonsprofil, selv
 
 ## <a name="add-mobile-device-menu-items-for-each-receiving-location-in-a-warehouse"></a>Legge til menyelementer for mobilenheter for hver mottakslokasjon på et lager
 
-Ved hjelp av *Forbedringer for nummerskiltmottak* kan du motta en hvilken som helst lokasjon i et lager ved å legge til lokasjonsspesifikke menyelementer for mottak (og plassering) av nummerskilt i Warehousing-mobilappen. Tidligere støttet systemet bare mottak på standardlokasjonen som er definert for hvert lager. Når denne funksjonen er aktivert, inneholder imidlertid menyelementer for mottak (og plassering) av skiltnummer på mobilenheter nå alternativet **Bruk standarddata**, som lar deg velge en egen definert "til"-plassering for hvert menyelement. (Dette alternativet var allerede tilgjengelig for enkelte andre typer menyelementer.)
+Ved hjelp av *Forbedringer for nummerskiltmottak* kan du motta en hvilken som helst lokasjon i et lager ved å legge til lokasjonsspesifikke menyelementer for mottak (og plassering) av nummerskilt i Warehousing-mobilappen. Tidligere støttet systemet bare mottak på standardlokasjonen som er definert for hvert lager. Når denne funksjonen er aktivert, inneholder imidlertid menyelementer for mottak (og plassering) av skiltnummer på mobilenheter nå alternativet **Bruk standarddata** , som lar deg velge en egen definert "til"-plassering for hvert menyelement. (Dette alternativet var allerede tilgjengelig for enkelte andre typer menyelementer.)
 
-Hvis du vil gjøre denne funksjonaliteten tilgjengelig i systemet, må du aktivere *Forbedringer for nummerskiltmottak*-funksjonen i [funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+Hvis du vil gjøre denne funksjonaliteten tilgjengelig i systemet, må du aktivere *Forbedringer for nummerskiltmottak* -funksjonen i [funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## <a name="show-or-skip-the-receiving-summary-page"></a>Vise eller hoppe over mottakssammendragssiden
 
@@ -92,7 +93,7 @@ Hvis du vil gjøre denne funksjonaliteten tilgjengelig på systemet, må du akti
 Følg denne fremgangsmåten for å administrere funksjonaliteten når denne funksjonen er tilgjengelig.
 
 1. Gå til **Lagerstyring \> Oppsett \> Lagerstyringsparametere**.
-1. I kategorien **Generelt**, på hurtigfanen **Nummerskilt**, angir du feltet **Policy for lagernummerskilt i transitt** til en av følgende verdier:
+1. I kategorien **Generelt** , på hurtigfanen **Nummerskilt** , angir du feltet **Policy for lagernummerskilt i transitt** til en av følgende verdier:
 
     - **Tillat gjenbruk av ikke-sporede nummerskilt** – Systemet fungerer på samme måte som når unksjonen den *Forhindre nummerskilt sendt via overføringsordre fra å brukes på andre lagre enn destinasjonslageret* ikke er tilgjengelig. Denne verdien er standardinnstillingen når du aktiverer funksjonen for første gang.
     - **Hindre gjenbruk av ikke-sporede nummerskilt** – Bare lagerbeholdninger som er relatert til et sendt nummerskilt, vil bli tillatt på destinasjonslageret før overføringsordren er mottatt.
@@ -101,6 +102,6 @@ Følg denne fremgangsmåten for å administrere funksjonaliteten når denne funk
 
 Hvis du vil ha mer informasjon om menyelementer for mobilenheter, kan du se [Definere mobilenheter for lagerarbeid](configure-mobile-devices-warehouse.md).
 
-Hvis du vil ha mer informasjon om *Ferdigmeld*-produksjonsscenariet, kan du se [Oversikt over policyer for lagerarbeid](warehouse-work-policies.md).
+Hvis du vil ha mer informasjon om *Ferdigmeld* -produksjonsscenariet, kan du se [Oversikt over policyer for lagerarbeid](warehouse-work-policies.md).
 
 For mer informasjon om innkommende lastadministrasjon for lagerstyring, se [Lagerhåndtering av innkommende laster for bestillinger](inbound-load-handling.md).

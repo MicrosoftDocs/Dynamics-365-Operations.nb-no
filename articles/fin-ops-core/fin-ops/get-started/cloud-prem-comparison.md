@@ -3,7 +3,7 @@ title: Sammenligning av skyfunksjoner og lokale funksjoner
 description: Emnet viser hvilke funksjoner som støttes i skyen og lokalt.
 author: sericks007
 manager: AnnBe
-ms.date: 03/04/2020
+ms.date: 10/04/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2017-11-29
 ms.dyn365.ops.version: Platform update 9
-ms.openlocfilehash: 50ab5827f864b53137acb77e75055e995ea6f439
-ms.sourcegitcommit: 1789a78de1cbeac19d96767812df653a191c67e9
+ms.openlocfilehash: fd73dd649e7c10916835fbb4573dd2e65bbdb39c
+ms.sourcegitcommit: 1329b3b98854422c4c3773ede44a5cefa7d07085
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "3100288"
+ms.lasthandoff: 10/19/2020
+ms.locfileid: "4040105"
 ---
 # <a name="comparison-of-cloud-and-on-premises-features"></a>Sammenligning av skyfunksjoner og lokale funksjoner
 
@@ -58,10 +58,10 @@ Tabellene nedenfor viser programområdene. Søttte for sky og lokalt er oppført
 |                                      | ER: Integrering med LCS                                                                  | Ja       | Nei              |
 |                                      | ER: Integrering med SharePoint                                                           | Ja       | Nei              |
 |                                      | ER: Integrasjon med Regulatory Configuration Services (RCS)                              | Ja       | Nei              |
-|                                      | ER: Bruker lokalt filsystem som lagring for ER-konfigurasjoner som er tilgjengelige via ER-repositorier | Nei        | Ja             |
-|                                      | Integrasjon med PowerBI.com                                                              | Ja       | Nei              |
-|                                      | Integrering med PowerBI Desktop                                                          | Nei        | Ja             |
-|                                      | Analytiske arbeidsområder                                                                     | Ja       | Nei              |
+|                                      | ER: Bruker lokalt filsystem som lagring for ER-konfigurasjoner som er tilgjengelige via ER-repositorier | Nr.        | Ja             |
+|                                      | Integrasjon med PowerBI.com                                                              | Ja       | Nr.              |
+|                                      | Integrasjon med PowerBI Desktop                                                          | Nr.        | Ja             |
+|                                      | Analytiske arbeidsområder                                                                     | Ja       | Nr.              |
 |                                      | Intelligent forretningsprosess: Anbefalinger                                             | Ja       | Nr.              |
 |                                      | Forfatte Power BI-rapporter med OData ved hjelp av Power BI-skrivebords- eller Excel PowerQuery-verktøy    | Ja       | Nr.              |
 |                                      | SQL Server Reporting Services (SSRS) støtter skalering ut                                 | Ja       | Nei              |
@@ -87,6 +87,7 @@ Tabellene nedenfor viser programområdene. Søttte for sky og lokalt er oppført
 
 | **Areal**                | **Funksjon**             | **Sky** | **Lokalt** |
 |-------------------------|-------------------|-----------|-----------------|
+| Objektbehandling                     |                                                                                           | Ja       | Nr. |
 | Overholdelse og sertifiseringer        |                                                                                           | Ja       | Ja             |
 |                                      | SOC 1 Type 1-sertifisering                                                                | Ja       | Nr.              |
 | Kostnadsregnskap                      |                                                                                           | Ja       | Ja             |
@@ -106,10 +107,10 @@ Tabellene nedenfor viser programområdene. Søttte for sky og lokalt er oppført
 |                                      | ER: Integrering med LCS                                                                  | Ja       | Nei              |
 |                                      | ER: Integrering med SharePoint                                                           | Ja       | Nei              |
 |                                      | ER: Integrasjon med Regulatory Configuration Services (RCS)                              | Ja       | Nei              |
-|                                      | ER: Bruker lokalt filsystem som lagring for ER-konfigurasjoner som er tilgjengelige via ER-repositorier | Nei        | Ja             |
-|                                      | Integrasjon med PowerBI.com                                                              | Ja       | Nei              |
-|                                      | Integrering med PowerBI Desktop                                                          | Nei        | Ja             |
-|                                      | Analytiske arbeidsområder                                                                     | Ja       | Nei              |
+|                                      | ER: Bruker lokalt filsystem som lagring for ER-konfigurasjoner som er tilgjengelige via ER-repositorier | Nr.        | Ja             |
+|                                      | Integrasjon med PowerBI.com                                                              | Ja       | Nr.              |
+|                                      | Integrasjon med PowerBI Desktop                                                          | Nr.        | Ja             |
+|                                      | Analytiske arbeidsområder                                                                     | Ja       | Nr.              |
 |                                      | Intelligent forretningsprosess: Anbefalinger                                             | Ja       | Nr.              |
 |                                      | Forfatte Power BI-rapporter med OData ved hjelp av Power BI-skrivebords- eller Excel PowerQuery-verktøy    | Ja       | Nr.              |
 |                                      | SQL Server Reporting Services (SSRS) støtter skalering ut                                 | Ja       | Antall              |

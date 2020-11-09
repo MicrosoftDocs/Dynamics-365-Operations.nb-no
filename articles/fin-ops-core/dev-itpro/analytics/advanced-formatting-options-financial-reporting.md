@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 3b04f78f2a8210837e16c8246609ad2fddd804f0
-ms.sourcegitcommit: 0dace221e8874021dd212271567666f717d39793
+ms.openlocfilehash: 5dbc856f21b6398109ab1ac4da409252050385df
+ms.sourcegitcommit: cb94f16d69455cbf6fd059f9f394e7623810c924
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "3071596"
+ms.lasthandoff: 10/15/2020
+ms.locfileid: "4011585"
 ---
 # <a name="advanced-formatting-options-in-financial-reporting"></a>Avanserte formateringsalternativer i finansrapportering
 
 [!include [banner](../includes/banner.md)]
 
-Når du lager en rapport i finansrapportering, finnes det flere formateringsfunksjoner, inkludert filtre for dimensjoner, begrensninger for kolonner og rapporteringsenheter, rader som ikke skal skrives ut, og IF/THEN/ELSE-setninger i beregninger. 
+Når du lager en rapport i finansrapportering, finnes det flere formateringsfunksjoner, inkludert filtre for dimensjoner, begrensninger for kolonner og rapporteringsenheter, rader som ikke skal skrives ut, og IF/THEN/ELSE-setninger i beregninger.
 
 Tabellen nedenfor beskriver de avanserte formateringsfunksjonene som er tilgjengelige når du utformer rapporter.
 
@@ -44,7 +44,8 @@ Tabellen nedenfor beskriver de avanserte formateringsfunksjonene som er tilgjeng
 | Bruke enkle anførselstegn ('') og ampersandtegnet (&) for dimensjonsverdier | Du kan bruke dimensjonsverdier til rapportutforming, inkludert ampersandtegnet. |
 
 ## <a name="advanced-cell-placement"></a>Avansert celleplassering
-Avansert celleplassering, eller *fremtvinging*, omfatter plassering av bestemte verdier i bestemte celler. Fremtvinging brukes for eksempel ofte til å flytte den riktige saldoen i et kontantstrømutdrag. Du kan bruke fremtvinging til følgende formål:
+
+Avansert celleplassering, eller *fremtvinging* , omfatter plassering av bestemte verdier i bestemte celler. Fremtvinging brukes for eksempel ofte til å flytte den riktige saldoen i et kontantstrømutdrag. Du kan bruke fremtvinging til følgende formål:
 
 - Flytte verdier fra Microsoft Excel til spesifikke celler.
 - Hardkode bestemte verdier i en rapport.
@@ -52,19 +53,21 @@ Avansert celleplassering, eller *fremtvinging*, omfatter plassering av bestemte 
 
 > [!NOTE]
 > I mange tilfeller må du konfigurere rapportdefinisjonen slik at kolonneberegninger utføres før radberegninger. Følg fremgangsmåten nedenfor for å fullføre denne konfigurasjonen.
-> 
+>
 > 1. Åpne rapportdefinisjonen i Rapportutforming.
-> 2. I kategorien **Innstillinger**, under **Beregningsprioritet**, velger du **Utfør kolonneberegning først og deretter rad**.
+> 2. I kategorien **Innstillinger** , under **Beregningsprioritet** , velger du **Utfør kolonneberegning først og deretter rad**.
 
 ## <a name="designing-the-report"></a>Utforme rapporten
-Når du utformer en rapport, bør du opprette alle detaljradene først for å sikre at verdiene hentes inn som forventet. Legg deretter til **NP**-formatoverstyringer (ikke skriv ut) for å skjule detaljene som inneholder de endelige verdiene.
+
+Når du utformer en rapport, bør du opprette alle detaljradene først for å sikre at verdiene hentes inn som forventet. Legg deretter til **NP** -formatoverstyringer (ikke skriv ut) for å skjule detaljene som inneholder de endelige verdiene.
 
 > [!IMPORTANT]
-> Når du bruker **BER**-formatkoden i raddefinisjonen, kan du ikke drille ned til transaksjonsdetaljer.
+> Når du bruker **BER** -formatkoden i raddefinisjonen, kan du ikke drille ned til transaksjonsdetaljer.
 
 Formler bruker følgende format for fremtvinging: &lt;målkolonne&gt;=&lt;opprinnelige kolonne&gt;.&lt;radkode&gt; Atskill tilleggsplasseringer for en rad med et komma og et mellomrom. Her er et eksempel: D=C.190,E=C.100
 
 ## <a name="examples-of-advanced-formatting-options"></a>Eksempler på avanserte formateringsalternativer
+
 Eksemplene nedenfor viser hvordan du formaterer raddefinisjonen og kolonnedefinisjonen for å fremtvinge en grunnleggende kontantstrømrapport (eksempel 1) og en statistisk rapport (eksempel 2).
 
 ### <a name="example-1-basic-forcing"></a>Eksempel 1: Grunnleggende fremtvinging
@@ -78,17 +81,17 @@ Tabellen nedenfor viser et eksempel på en raddefinisjon som bruker grunnleggend
 | 160      |                                  |             |                             |                            |                              |
 | 190      |                                  |             |                             |                            |                              |
 
-> [!NOTE] 
+> [!NOTE]
 > Tomme kolonner ble fjernet fra forrige tabell for presentasjonsformål: formatoverstyring, normalbalanse, utskriftskontroll, kolonnebegrensningskolonner vises ikke.
 
 Tabellen nedenfor viser et eksempel på en kolonnedefinisjon som bruker grunnleggende fremtvinging i raden.
 
-|                              | A   | B    | K        | D      | E      | F    |
+|           Format             | A   | T    | K        | D      | E      | F    |
 |------------------------------|-----|------|----------|--------|--------|------|
 | Overskrift 1                     |     |      |          |        |        |      |
-| Overskrift 2                     | A   | B    | K        | D      | E      | F    |
+| Overskrift 2                     | A   | T    | K        | D      | E      | F    |
 | Overskrift 3                     |     |      |          |        |        |      |
-| Kolonnetype                  | ROW | DESC | FD       | FD     | FD     | CALC |
+| Kolonnetype                  | ROW | BSKR | FD       | FD     | FD     | CALC |
 | Registerkode/attributtkategori |     |      | FAKTISK   | FAKTISK | FAKTISK |      |
 | Regnskapsår                  |     |      | BASE     | BASE   | BASE   |      |
 | Periode                       |     |      | BASE     | BASE   | BASE   |      |
@@ -113,14 +116,14 @@ Tabellen nedenfor viser et eksempel på en raddefinisjon som bruker fremtvinging
 | 310      | Salg i USA                  | CAL         | D=C.190,E=C.100,F=(C.100/C.190) |                      |                |                                            |
 | 340      | Internasjonale salg       | BER         | D=C.220,E=C115,F=(C.220/C.115)  |                      |                |                                            |
 
-> [!NOTE] 
+> [!NOTE]
 > Tomme kolonner ble fjernet fra forrige tabell for presentasjonsformål: Kolonner for utskriftskontroll, kolonnebegrensning og radmodifisering vises ikke.
 
 Tabellen nedenfor viser et eksempel på en kolonnedefinisjon som bruker fremtvinging for en statistisk rapport.
 
-|                              | A   | B    | K      | D            | E     | F            |
+|    Format                    | A   | T    | K      | D            | E     | F            |
 |------------------------------|-----|------|--------|--------------|-------|--------------|
-| Overskrift 1                     | A   | B    | K      | D            | E     | F            |
+| Overskrift 1                     | A   | T    | K      | D            | E     | F            |
 | Overskrift 2                     | -   | -    | År til dato    | Årlig salg | Stab | $ per person |
 | Overskrift 3                     |     |      |        |              |       |              |
 | Kolonnetype                  | ROW | DESC | FD     | CALC         | CALC  | CALC         |
@@ -132,6 +135,7 @@ Tabellen nedenfor viser et eksempel på en kolonnedefinisjon som bruker fremtvin
 | Kolonnebredde                 | 5   | 30   | 14     | 14           | 14    | 14           |
 
 ## <a name="restricting-a-row-to-a-specific-reporting-unit"></a>Begrense en rad til en bestemt rapporteringsenhet
+
 Når en rapportrad er begrenset til en bestemt rapporteringsenhet, viser denne raden de koblede dataene bare for den navngitte rapporteringsenheten og ignorerer dataene for andre rapporteringsenheter i rapporteringstreet. Du kan for eksempel opprette en rad som inneholder detaljer for de totale driftsutgiftene for en bestemt avdeling. Rapporten kan inneholde dupliserte data hvis rapporten inneholder både et rapporteringstre og en raddefinisjon som inneholder mer enn bare den naturlige kontoen. Du har for eksempel et rapporteringstre som viser de seks avdelingene i organisasjonen, og du har også en raddefinisjon som viser en bestemt kombinasjon av en konto og en avdeling i raden. Når du genererer rapporten, vil den bestemte kombinasjonen av en konto og en avdeling skrives ut på alle nivåer av rapporteringstreet, selv om denne avdelingen kanskje ikke samsvare med hva som er i treet. Denne virkemåten oppstår fordi raden overstyrer det som vanligvis filtreres ut av rapportdefinisjonen. Én metode for å unngå duplisering av data er å begrense en rad til en bestemt rapporteringsenhet.
 
 > [!NOTE]
@@ -139,20 +143,21 @@ Når en rapportrad er begrenset til en bestemt rapporteringsenhet, viser denne r
 
 ### <a name="restrict-a-row-to-a-reporting-unit"></a>Begrense en rad til en rapporteringsenhet
 
-1. I Rapportutforming klikker du **Raddefinisjoner**, og deretter velger du raddefinisjonen som skal endres.
+1. I Rapportutforming klikker du **Raddefinisjoner** , og deretter velger du raddefinisjonen som skal endres.
 2. Dobbeltklikk den aktuelle cellen **Relaterte formler/rader/enheter**.
 3. Velg et tre som er tilordnet i rapportdefinisjonen, i feltet **Rapporteringstre** i dialogboksen **Valg av rapporteringsenhet**.
 4. Velg en rapporteringsenhet, og klikk deretter **OK**. Begrensningen vises i cellen i raddefinisjonen.
 5. Dobbeltklikk cellen i kolonnen **Kobling til finansdimensjoner** i den begrensede raden, og skriver deretter inn en kobling til systemet for økonomiske data.
 
 ## <a name="selecting-print-control-in-a-row-definition"></a>Velge utskriftkontroll i en raddefinisjon
-Du kan angi kontrollkoder for utskrift for hver kolonne ved hjelp av **Utskriftskontroll**-cellen.
+
+Du kan angi kontrollkoder for utskrift for hver kolonne ved hjelp av **Utskriftskontroll** -cellen.
 
 ### <a name="add-print-control-codes-to-a-report-row"></a>Legge til kontrollkoder for utskrift i en rapportrad
 
 1. Åpne raddefinisjonen som skal endres i Rapportutforming.
 2. Dobbeltklikk cellen **Utskriftskontroll**.
-3. I dialogboksen **Utskriftkontroll** velger du en kontrollkode for utskrift eller trykker og holder CTRL--tasten for å velge flere koder. Du kan også skrive inn kontrollkoder for utskrift direkte i **Utskriftskontroll**-cellen. Bruk komma for å atskill flere kontrollkoder for utskrift.
+3. I dialogboksen **Utskriftkontroll** velger du en kontrollkode for utskrift eller trykker og holder CTRL--tasten for å velge flere koder. Du kan også skrive inn kontrollkoder for utskrift direkte i **Utskriftskontroll** -cellen. Bruk komma for å atskill flere kontrollkoder for utskrift.
 4. Velg alternativer for betinget utskrift.
 5. Klikk **OK**.
 
@@ -182,13 +187,15 @@ Tabellen nedenfor beskriver betingede kontrollkoder for utskrift for en raddefin
 | CR                 | Skriv ut bare kreditsaldoer for denne raden. |
 
 ## <a name="column-restriction-cell-in-a-row-definition"></a>Cellen Kolonnebegrensning i en raddefinisjon
+
 Cellen **Kolonnebegrensning** i en raddefinisjon har mange funksjoner. Avhengig av hvilken type rad, kan du bruke cellen **Kolonnebegrensning** for å angi én av følgende funksjoner:
 
 - Cellen kan begrense utskriften av radbeløp til en bestemt kolonne. Denne funksjonen er nyttig hvis du oppretter en tabellbalanse.
 - Cellen kan angi kolonnebeløpene som skal sorteres.
 
 ## <a name="using-a-calculation-formula-in-a-row-definition"></a>Bruke en beregningsformel i en raddefinisjon
-En beregningsformel i en rad kan inneholde operatorene **+**, **-**, **\*** og **/**, i tillegg til **IF/THEN/ELSE**-setninger. I tillegg kan en beregning omfatte enkeltceller og absolutte beløp (faktiske tall som er inkludert i formelen). Formelen kan inneholde opptil 1 024 tegn. Beregningene kan ikke brukes på rader som inneholder celler av typen **Kobling til finansdimensjoner** (FD). Du kan imidlertid inkludere beregninger i påfølgende rader, skjule utskriften av disse radene og deretter summere beregningsradene.
+
+En beregningsformel i en rad kan inneholde operatorene **+** , **-** , **\*** og **/** , i tillegg til **IF/THEN/ELSE** -setninger. I tillegg kan en beregning omfatte enkeltceller og absolutte beløp (faktiske tall som er inkludert i formelen). Formelen kan inneholde opptil 1 024 tegn. Beregningene kan ikke brukes på rader som inneholder celler av typen **Kobling til finansdimensjoner** (FD). Du kan imidlertid inkludere beregninger i påfølgende rader, skjule utskriften av disse radene og deretter summere beregningsradene.
 
 ### <a name="operators-in-a-calculation-formula"></a>Operatorer i en beregningsformel
 
@@ -199,8 +206,8 @@ En beregningsformel bruker mer komplekse operatorer enn en radtotalformel. Du ka
 
 ### <a name="create-a-calculation-formula"></a>Opprette en beregningsformel
 
-1. I Rapportutforming klikker du **Raddefinisjoner**, og deretter åpner du raddefinisjonen som skal endres.
-2. Dobbeltklikk **Formatkode**-cellen, og velg deretter **CAL**.
+1. I Rapportutforming klikker du **Raddefinisjoner** , og deretter åpner du raddefinisjonen som skal endres.
+2. Dobbeltklikk **Formatkode** -cellen, og velg deretter **CAL**.
 3. I cellen **Relaterte formler/rader/enheter** skriver du inn beregningsformelen.
 
 ### <a name="example-of-a-calculation-formula-for-specific-rows"></a>Eksempel på en beregningsformel for bestemte rader
@@ -213,10 +220,10 @@ I dette eksemplet betyr beregningsformelen **@100+@330** at beløpet i rad 100 l
 | 370      | Kontanter på begynnelsen av året   | BER         | @100+@330                  | SIU            |              |                              |
 | 400      | Kontanter på begynnelsen av perioden | TOT         | 340+370                    |               |              |                              |
 
-Når raden i en raddefinisjon, har formatkoden **CAL** og du angir en matematisk beregning i cellen **Relaterte formler/rader/enheter**, må du også angi bokstaven for den tilknyttede kolonnen og raden i rapporten. Angi for eksempel **A.120** for å representere kolonne A, rad 120. Du kan også bruke en krøllalfa (@) for å angi alle kolonner. Angi for eksempel **@120** for å representere alle kolonner i rad 120. En matematisk beregning som ikke har en kolonnebokstav eller krøllalfa (@) antas for å være et reelt tall.
+Når raden i en raddefinisjon, har formatkoden **CAL** og du angir en matematisk beregning i cellen **Relaterte formler/rader/enheter** , må du også angi bokstaven for den tilknyttede kolonnen og raden i rapporten. Angi for eksempel **A.120** for å representere kolonne A, rad 120. Du kan også bruke en krøllalfa (@) for å angi alle kolonner. Angi for eksempel **@120** for å representere alle kolonner i rad 120. En matematisk beregning som ikke har en kolonnebokstav eller krøllalfa (@) antas for å være et reelt tall.
 
 > [!NOTE]
-> Hvis du bruker en etikettradkode som referanse til en rad, må du bruke et punktum (.) som skilletegn mellom kolonnebokstaven og etiketten (for eksempel **A.BRUTTO\_FORTJENESTE/A.SALG**). Hvis du bruker en krøllalfa (@), kreves ikke skilletegn (for eksempel **\@BRUTTO\_FORTJENESTE/@SALG**).
+> Hvis du bruker en etikettradkode som referanse til en rad, må du bruke et punktum (.) som skilletegn mellom kolonnebokstaven og etiketten (for eksempel **A.BRUTTO\_FORTJENESTE/A.SALG** ). Hvis du bruker en krøllalfa (@), kreves ikke skilletegn (for eksempel **\@BRUTTO\_FORTJENESTE/@SALG** ).
 
 ### <a name="example-of-a-calculation-formula-for-a-specific-column"></a>Eksempel på en beregningsformel for en bestemt rad
 
@@ -233,10 +240,10 @@ I dette eksemplet betyr formelen **E=C.340** at beregningen i cellen i kolonne C
 
 ### <a name="modifying-a-number-in-selected-columns"></a>Endre et tall i merkede kolonner
 
-Når du endrer et tall eller en beregning i en bestemt rad i en kolonne, men ikke vil påvirke andre kolonner i rapporten, kan du angi **CAL** (beregning) i **Formatkode**-kolonnen i raddefinisjonen.
+Når du endrer et tall eller en beregning i en bestemt rad i en kolonne, men ikke vil påvirke andre kolonner i rapporten, kan du angi **CAL** (beregning) i **Formatkode** -kolonnen i raddefinisjonen.
 
-- Hvis du vil utføre beregninger i alle rapportkolonner (**FD**), må du ikke angi en kolonnetildeling.
-- Hvis du vil begrense en formel til bestemte kolonner, angir du kolonnebokstaven, et likhetstegn (**=**) og deretter formelen.
+- Hvis du vil utføre beregninger i alle rapportkolonner ( **FD** ), må du ikke angi en kolonnetildeling.
+- Hvis du vil begrense en formel til bestemte kolonner, angir du kolonnebokstaven, et likhetstegn ( **=** ) og deretter formelen.
 - Du kan angi flere kolonner. Når du bruker en krøllalfa (@) med en bestemt kolonneplassering, er krøllalfaen (@) knyttet til raden.
 - Du kan angi flere kolonneformler i én rad. Atskill formlene med komma.
 
@@ -250,37 +257,37 @@ Når du endrer et tall eller en beregning i en bestemt rad i en kolonne, men ikk
 
 ### <a name="ifthenelse-statements-in-a-row-definition"></a>IF/THEN/ELSE-setninger i en raddefinisjon
 
-**IF/THEN/ELSE**-setninger kan legges til alle gyldige beregninger og brukes med **CAL**-formatet. Du angir **IF/THEN/ELSE**-beregningsformler i cellen i kolonnen **Relaterte formler/rader/enheter**. **IF/THEN/ELSE**-beregningsformler bruker følgende format: IF &lt;sann/usann-setning&gt; THEN &lt;formel&gt; ELSE &lt;formel&gt; **ELSE &lt;-formel&gt;**-delen av setningen er valgfri.
+**IF/THEN/ELSE** -setninger kan legges til alle gyldige beregninger og brukes med **CAL** -formatet. Du angir **IF/THEN/ELSE** -beregningsformler i cellen i kolonnen **Relaterte formler/rader/enheter**. **IF/THEN/ELSE** -beregningsformler bruker følgende format: IF &lt;sann/usann-setning&gt; THEN &lt;formel&gt; ELSE &lt;formel&gt; **ELSE &lt;-formel&gt;** -delen av setningen er valgfri.
 
 #### <a name="if-statements"></a>IF-setninger
 
-Setningen som etterfølger **IF**-setning kan være alle setninger som kan evalueres som sann eller usann. Setningen som etterfølger **IF**-setningen kan omfatte en enkel evaluering, eller den kan være en komplisert oppgave som kan inneholde flere uttrykk. Her er noen eksempler:
+Setningen som etterfølger **IF** -setning kan være alle setninger som kan evalueres som sann eller usann. Setningen som etterfølger **IF** -setningen kan omfatte en enkel evaluering, eller den kan være en komplisert oppgave som kan inneholde flere uttrykk. Her er noen eksempler:
 
 - **IF A.200&gt;0** (enkel evaluering)
 - **IF A.200&gt;0 AND A.200&lt;10,000** (kompleks setning)
 - **IF A.200&gt;10000 OR ((A.340/B.1200)\*2 &lt;1200)** (kompleks setning som inneholder flere uttrykk)
 
-Begrepet **Perioder** i en **IF**-setning, representerer antall perioder for rapporten. Denne termen brukes vanligvis til å beregne et gjennomsnitt hittil i år. Hvis du for eksempel kjører en rapport for periode 7 hittil i år, betyr setningen **B.150/Perioder** at verdien i rad 150 i kolonne B, divideres med 7.
+Begrepet **Perioder** i en **IF** -setning, representerer antall perioder for rapporten. Denne termen brukes vanligvis til å beregne et gjennomsnitt hittil i år. Hvis du for eksempel kjører en rapport for periode 7 hittil i år, betyr setningen **B.150/Perioder** at verdien i rad 150 i kolonne B, divideres med 7.
 
 #### <a name="then-and-else-formulas"></a>THEN- og ELSE-formler
 
-**THEN**- og **ELSE**-formler kan være alle gyldige beregninger, fra svært enkel verditilordninger til komplekse formler. Setningen **IF A.200&gt;0 THEN A=B.200** betyr "Hvis verdien i cellen i kolonne A i rad 200 er større enn 0 (null), plasserer verdien fra cellen i kolonne B i rad 200 i cellen i kolonne A i gjeldende rad." Den foregående **IF/THEN**-setning legger til en verdi i én kolonne i gjeldende rad. Du kan imidlertid også bruke en krøllalfa (@) i sann/usann-evalueringer eller formelen for å representere alle kolonner. Her er noen andre eksempler som er beskrevet i følgende deler:
+**THEN** - og **ELSE** -formler kan være alle gyldige beregninger, fra svært enkel verditilordninger til komplekse formler. Setningen **IF A.200&gt;0 THEN A=B.200** betyr "Hvis verdien i cellen i kolonne A i rad 200 er større enn 0 (null), plasserer verdien fra cellen i kolonne B i rad 200 i cellen i kolonne A i gjeldende rad." Den foregående **IF/THEN** -setning legger til en verdi i én kolonne i gjeldende rad. Du kan imidlertid også bruke en krøllalfa (@) i sann/usann-evalueringer eller formelen for å representere alle kolonner. Her er noen andre eksempler som er beskrevet i følgende deler:
 
-- **IF A.200 &gt;0 THEN B.200**: Hvis verdien i celle A.200 er positiv, blir verdien fra celle B.200 lagt til i alle kolonner i gjeldende rad.
-- **IF A.200 &gt;0 THEN @200**: Hvis verdien i celle A.200 er positiv, blir verdien fra hver kolonne i rad 200 lag til i den tilsvarende kolonnen i gjeldende rad.
-- **IF @200 &gt;0 THEN @200**: Hvis verdien i rad 200 i gjeldende kolonne er positiv, blir verdien fra rad 200 lagt til i samme kolonne i gjeldende rad.
+- **IF A.200 &gt;0 THEN B.200** : Hvis verdien i celle A.200 er positiv, blir verdien fra celle B.200 lagt til i alle kolonner i gjeldende rad.
+- **IF A.200 &gt;0 THEN @200** : Hvis verdien i celle A.200 er positiv, blir verdien fra hver kolonne i rad 200 lag til i den tilsvarende kolonnen i gjeldende rad.
+- **IF @200 &gt;0 THEN @200** : Hvis verdien i rad 200 i gjeldende kolonne er positiv, blir verdien fra rad 200 lagt til i samme kolonne i gjeldende rad.
 
 ### <a name="restricting-a-calculation-to-a-reporting-unit-in-a-row-definition"></a>Begrense en beregning for en rapporteringsenhet i en raddefinisjon
 
-Hvis du vil begrense en beregning til én enkelt rapporteringsenhet i et rapporteringstre, slik at resultatbeløpet ikke rulles opp til en overordnet enhet, kan du bruke **@Unit**-koden i cellen **Relaterte formler/rader/enheter** i raddefinisjonen. **@Unit**-koden vises i kolonne B i rapporteringstreet, **Enhetsnavn**. Når du bruker **@Unit**-koden, rulles ikke verdiene opp, men beregningen evalueres på alle nivåer i rapporteringstreet.
+Hvis du vil begrense en beregning til én enkelt rapporteringsenhet i et rapporteringstre, slik at resultatbeløpet ikke rulles opp til en overordnet enhet, kan du bruke **@Unit** -koden i cellen **Relaterte formler/rader/enheter** i raddefinisjonen. **@Unit** -koden vises i kolonne B i rapporteringstreet, **Enhetsnavn**. Når du bruker **@Unit** -koden, rulles ikke verdiene opp, men beregningen evalueres på alle nivåer i rapporteringstreet.
 
 > [!NOTE]
 > Hvis du vil bruke denne funksjonen, må et rapporteringstre være tilknyttet raddefinisjonen.
 
-Beregningsraden kan referere til en beregningsrad eller en rad med økonomiske data. Beregningen registreres i cellen **Relaterte formler/rader/enheter** i raddefinisjonen og typebegrensningen for de økonomiske dataene. Beregningen må bruke en betinget beregning som begynner med en **IF @Unit**-konstruksjon. Her er et eksempel: IF @Unit(SALG) THEN @100 ELSE 0. Denne beregningen inkluderer beløpet fra rad 100 i alle kolonner i rapporten, men bare for SALG-enheten. Hvis flere enheter har navnet SALG, vises beløpet i hver av disse enhetene. Rad 100 kan også være en rad med økonomiske data og kan defineres som en rad som ikke skal skrives ut. I slike tilfeller vil ikke beløpet vises i alle enheter i treet. Du kan også begrense beløpet til én enkelt kolonne i rapporten, for eksempel kolonne H, ved hjelp av en kolonnebegrensning for bare å skrive ut verdien i denne kolonnen i rapporten. Du kan inkludere **OR**-kombinasjoner i en **IF**-setning. Her er et eksempel: IF @Unit(SALG) OR @Unit(SALGVEST) THEN 5 ELSE @100. Du kan angi en enhet i en beregningstypebegrensning på én av følgende måter:
+Beregningsraden kan referere til en beregningsrad eller en rad med økonomiske data. Beregningen registreres i cellen **Relaterte formler/rader/enheter** i raddefinisjonen og typebegrensningen for de økonomiske dataene. Beregningen må bruke en betinget beregning som begynner med en **IF @Unit** -konstruksjon. Her er et eksempel: IF @Unit(SALG) THEN @100 ELSE 0. Denne beregningen inkluderer beløpet fra rad 100 i alle kolonner i rapporten, men bare for SALG-enheten. Hvis flere enheter har navnet SALG, vises beløpet i hver av disse enhetene. Rad 100 kan også være en rad med økonomiske data og kan defineres som en rad som ikke skal skrives ut. I slike tilfeller vil ikke beløpet vises i alle enheter i treet. Du kan også begrense beløpet til én enkelt kolonne i rapporten, for eksempel kolonne H, ved hjelp av en kolonnebegrensning for bare å skrive ut verdien i denne kolonnen i rapporten. Du kan inkludere **OR** -kombinasjoner i en **IF** -setning. Her er et eksempel: IF @Unit(SALG) OR @Unit(SALGVEST) THEN 5 ELSE @100. Du kan angi en enhet i en beregningstypebegrensning på én av følgende måter:
 
 - Angi et enhetsnavn for å inkludere enheter som samsvarer. **IF @Unit(SALG)** muliggjør beregningen for alle enheter med navnet SALG, selv om det finnes flere SALG-enheter i rapporteringstreet.
-- Angi navnet på firmaet og enhetsnavnet for å begrense beregningen til bestemte enheter i et bestemt firma. Skriv for eksempel **IF @Unit(TINDE:SALG**) for å begrense beregningen til SALG-enheter i TINDE-firmaet.
+- Angi navnet på firmaet og enhetsnavnet for å begrense beregningen til bestemte enheter i et bestemt firma. Skriv for eksempel **IF @Unit(TINDE:SALG** ) for å begrense beregningen til SALG-enheter i TINDE-firmaet.
 - Angi den fullstendige hierarkikoden fra rapporteringstreet for å begrense beregningen til en bestemt enhet. Skriv for eksempel **IF @Unit(SAMMENDRAG^TINDE^VESTKYST^SALG)**.
 
 > [!NOTE]
@@ -289,18 +296,18 @@ Beregningsraden kan referere til en beregningsrad eller en rad med økonomiske d
 #### <a name="restrict-a-calculation-to-a-reporting-unit"></a>Begrense en beregning til en rapporteringsenhet
 
 1. Klikk **Raddefinisjoner** i Rapportutforming, og åpne deretter raddefinisjonen som skal endres.
-2. Dobbeltklikk **Formatkode**-cellen, og velg deretter **CAL**.
-3. Klikk cellen **Relaterte formler/rader/enheter**, og angi deretter en betinget beregning som begynner med en **IF @Unit**-konstruksjon.
+2. Dobbeltklikk **Formatkode** -cellen, og velg deretter **CAL**.
+3. Klikk cellen **Relaterte formler/rader/enheter** , og angi deretter en betinget beregning som begynner med en **IF @Unit** -konstruksjon.
 
 ### <a name="ifthenelse-statements-in-a-column-definition"></a>IF/THEN/ELSE-setninger i en kolonnedefinisjon
 
-En **IF/THEN/ELSE**-setning gjør det mulig for alle beregninger å være avhengig av resultatene fra andre kolonner. Du kan referere til andre kolonner, men du kan ikke referere til en rapportcelle i **IF**-setningen. Alle beregninger må brukes på hele kolonnen. Setningene **IF B&gt;100 THEN B ELSE C\*1,25** betyr "Hvis beløpet i kolonne B er større enn 100, sett verdien fra kolonne B inn i **CALC**-kolonnen. Hvis beløpet i kolonne B ikke er større enn 100, multipliser verdien i kolonne C med 1,25 og sette resultatet inn i **CALC**-kolonnen. " Etterfølg alltid **IF**-setning med en logisk setning som kan evalueres som sann eller usann. Formlene som du bruker for både **THEN**- og **ELSE**-setningen, kan inneholde referanser til flere kolonner, og disse formlene kan være så komplisert som du har behov for.
+En **IF/THEN/ELSE** -setning gjør det mulig for alle beregninger å være avhengig av resultatene fra andre kolonner. Du kan referere til andre kolonner, men du kan ikke referere til en rapportcelle i **IF** -setningen. Alle beregninger må brukes på hele kolonnen. Setningene **IF B&gt;100 THEN B ELSE C\*1,25** betyr "Hvis beløpet i kolonne B er større enn 100, sett verdien fra kolonne B inn i **CALC** -kolonnen. Hvis beløpet i kolonne B ikke er større enn 100, multipliser verdien i kolonne C med 1,25 og sette resultatet inn i **CALC** -kolonnen. " Etterfølg alltid **IF** -setning med en logisk setning som kan evalueres som sann eller usann. Formlene som du bruker for både **THEN** - og **ELSE** -setningen, kan inneholde referanser til flere kolonner, og disse formlene kan være så komplisert som du har behov for.
 
 > [!NOTE]
 > Du kan ikke sette resultatene av en beregning inn i andre kolonner. Resultatet må være i kolonnen som inneholder formelen.
 
 #### <a name="use-single-quotes-and-an-ampersand-for-dimension-values-in-a-row-column-or-tree"></a>Bruke enkle anførselstegn og ampersandtegnet for dimensjonsverdier i en rad, en kolonne eller et tre
 
-Du kan utforme rapporter ved hjelp av dimensjonsverdier som inneholder et ampersandtegn (&). 
+Du kan utforme rapporter ved hjelp av dimensjonsverdier som inneholder et ampersandtegn (&).
 
-I et **Kobling til finansdimensjon**-felt kan du angi en verdi som **'Resultat'**. Hvis du inkluderer enkle anførselstegn (' ') på begge sider av dimensjonsverdien, betyr det at du bruker litteralverdien, for eksempel å inkludere ampersandtegnet (&). 
+I et **Kobling til finansdimensjon** -felt kan du angi en verdi som **'Resultat'**. Hvis du inkluderer enkle anførselstegn (' ') på begge sider av dimensjonsverdien, betyr det at du bruker litteralverdien, for eksempel å inkludere ampersandtegnet (&).

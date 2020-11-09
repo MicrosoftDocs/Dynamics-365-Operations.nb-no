@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-03-21
 ms.dyn365.ops.version: 10.0.10
-ms.openlocfilehash: e9ca2d2cd018777b4c5c01fb10d63505af3940c4
-ms.sourcegitcommit: 27233e0fda61dac541c5210ca8d94ab4ba74966f
+ms.openlocfilehash: 647c62c489e65596be87a658a3d53e74e53455d7
+ms.sourcegitcommit: 9dd2d38e76d4d93171315ec319e6ce7d51d4e6c7
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/03/2020
-ms.locfileid: "3652113"
+ms.lasthandoff: 10/15/2020
+ms.locfileid: "4012373"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10010-may-2020"></a>Hva er nytt eller endret i Dynamics 365 Supply Chain Management 10.0.10. (mai) 2020
 
@@ -39,10 +39,15 @@ Dette emnet beskriver funksjoner som enten er nye eller endret i Microsoft Dynam
 Denne versjonen inneholder følgende funksjoner: Funksjonstitlene kobler til mer informasjon på [Utgivelsesplaner](https://docs.microsoft.com/dynamics365/release-plans/)-området. Flere koblinger peker mot ekstra dokumentasjon eller videoer som for øyeblikket er tilgjengelige for denne funksjonen. De fleste av disse funksjonene må aktiveres ved hjelp av [Funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) før du kan bruke dem.
 
 - [Forbedring for bruk av eksisterende variabel vekt-koder med lagerstyring](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/enhancement-use-existing-catch-weight-tags-warehouse-management)
+
 - [Forbedringer av innkommende lastadministrasjon for lagerstyring](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/warehouse-management-inbound-load-management-enhancement)<br> - For mer informasjon, se [Lagerhåndtering av innkommende laster for bestillinger](../warehousing/inbound-load-handling.md).
+
 - [Forbedringer av etikettutskrift for lagerstyring](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/label-printing-enhancements-warehouse-management)<br> - Hvis du vil ha mer informasjon, se [Dokumentrutingsoppsett for nummerskiltetiketter](../warehousing/document-routing-layout-for-license-plates.md).
+
 - [Hovedplanlegging omfatter varer med lagerbeholdning når filtre for forhåndsbehandling er aktivert](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/master-planning-include-items-on-hand-when-pre-processing-filters-are-enabled)
+
 - [Nye dataenheter for produksjonsområdet](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/new-data-entities-manufacturing-area)
+
 - [Kvalitetsstyring for lagerprosesser](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/quality-management-warehouse-processes)<br> - For mer informasjon, se [Kvalitetsstyring for lagerprosesser](../inventory/quality-management-for-warehouses-processes.md).
 
 ## <a name="additional-resources"></a>Tilleggsressurser

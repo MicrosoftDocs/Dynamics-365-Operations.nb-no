@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: WHSShipConsolidationPolicy, WHSShipConsolidationWorkbench
+ms.search.form: WHSShipConsolidationPolicy, WHSShipConsolidationWorkbench, WHSFilterGroupTable, WHSShipmentConsolidation, WHSFilterGenerallyAvail
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: 10.0.3
-ms.openlocfilehash: f4d095456435a3401daa173d79b80b81176a3c17
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.openlocfilehash: ac3ab25dc1355ee15e1209950ff0f3b3933b7095
+ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3987124"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4016868"
 ---
 # <a name="consolidate-shipments-when-they-are-released-to-the-warehouse-by-using-automatic-release-of-sales-orders"></a>Konsolidere forsendelser når de frigis til lageret ved hjelp av automatisk frigivelse av salgsordrer
 
@@ -234,16 +234,16 @@ For hvert sett med salgsordrer du har opprettet tidligere, fullfører du de tre 
 
 #### <a name="update-the-wave-template-that-will-be-used-during-release"></a>Oppdatere bølgemalen som vil bli brukt under frigivelse
 
-1. Gå til **Lagerstyring \> Oppsett \> Bølger \> Bølgemaler** .
-1. Angi verdien *Forsendelse* for feltet **Bølgemaltype** .
-1. Finn og velg bølgemalen som er knyttet til lageret du brukte i ordresettene du opprettet for dette . Hvis du for eksempel brukte lager *24* , velger du bølgemalen **24 Standardforsendelse** . Hvis du brukte lager *61* , velger du bølgemalen **61 Forsendelse** .
-1. I handlingsruten velger du **Rediger** .
-1. Sett alternativet **Behandle bølge ved frigivelse til lager** til *Nei* .
+1. Gå til **Lagerstyring \> Oppsett \> Bølger \> Bølgemaler**.
+1. Angi verdien *Forsendelse* for feltet **Bølgemaltype**.
+1. Finn og velg bølgemalen som er knyttet til lageret du brukte i ordresettene du opprettet for dette . Hvis du for eksempel brukte lager *24* , velger du bølgemalen **24 Standardforsendelse**. Hvis du brukte lager *61* , velger du bølgemalen **61 Forsendelse**.
+1. I handlingsruten velger du **Rediger**.
+1. Sett alternativet **Behandle bølge ved frigivelse til lager** til *Nei*.
 
 #### <a name="release-to-the-warehouse"></a>Frigi til lageret
 
-1. Gå til **Lagerstyring \> Frigi til lager \> Automatisk frigivelse av salgsordrer** .
-1. Angi verdien *Alle* for feltet **Antall som skal frigis** .
+1. Gå til **Lagerstyring \> Frigi til lager \> Automatisk frigivelse av salgsordrer**.
+1. Angi verdien *Alle* for feltet **Antall som skal frigis**.
 1. I hurtigkategorien **Poster som skal inkluderes** velger du **Filter** for å åpne dialogboksen for spørring.
 1. Velg **Legg til** i kategorien **Område** for å legge til en rad som har følgende innstillinger i rutenettet:
 
@@ -253,13 +253,13 @@ For hvert sett med salgsordrer du har opprettet tidligere, fullfører du de tre 
     - **Vilkår:** Angi en kommadelt liste over salgsordrenumrene fra ønsket ordresett.
 
 1. Velg **OK** for å lagre spørringen.
-1. Velg **OK** for å starte prosedyren *Automatisk frigivelse til lager* .
+1. Velg **OK** for å starte prosedyren *Automatisk frigivelse til lager*.
 
 #### <a name="review-the-shipment-that-is-created-or-updated"></a>Gå gjennom forsendelsen som er opprettet eller oppdatert
 
-1. Gå til **Lagerstyring \> Forsendelser \> Alle forsendelser** .
+1. Gå til **Lagerstyring \> Forsendelser \> Alle forsendelser**.
 1. Finn og velg den påkrevde forsendelsen.
-1. Hvis en konsolideringspolicy ble brukt da forsendelsen ble opprettet eller oppdatert, skal den vises i feltet **Policy for forsendelseskonsolidering** .
+1. Hvis en konsolideringspolicy ble brukt da forsendelsen ble opprettet eller oppdatert, skal den vises i feltet **Policy for forsendelseskonsolidering**.
 
 ### <a name="release-sales-orders-from-order-set-1"></a>Frigi salgsordrer fra ordresett 1
 
@@ -267,8 +267,8 @@ Følg den [grunnleggende fremgangsmåten for frigivelse til lager](#release-proc
 
 Når du er ferdig, skal du kunne se at to forsendelser ble opprettet:
 
-- Den første forsendelsen inneholder tre linjer og ble opprettet ved hjelp av policyen for forsendelseskonsolidering for *CustomerMode* .
-- Den andre forsendelen, som ikke bruker transportmåten *Airways* , ble opprettet ved hjelp av policyen for forsendelseskonsolidering for *CustomerOrderNo* .
+- Den første forsendelsen inneholder tre linjer og ble opprettet ved hjelp av policyen for forsendelseskonsolidering for *CustomerMode*.
+- Den andre forsendelen, som ikke bruker transportmåten *Airways* , ble opprettet ved hjelp av policyen for forsendelseskonsolidering for *CustomerOrderNo*.
 
 ### <a name="release-sales-orders-from-order-set-2"></a>Frigi salgsordrer fra ordresett 2
 
@@ -276,8 +276,8 @@ Følg den [grunnleggende fremgangsmåten for frigivelse til lager](#release-proc
 
 Når du er ferdig, skal du kunne se at tre forsendelser ble opprettet:
 
-- Den første forsendelsen inneholder varer med statusen *Brannfarlig* .
-- Hver av de to andre forsendelsene inneholder én linje med varen med statusen *Eksplosivt* .
+- Den første forsendelsen inneholder varer med statusen *Brannfarlig*.
+- Hver av de to andre forsendelsene inneholder én linje med varen med statusen *Eksplosivt*.
 
 ### <a name="release-sales-orders-from-order-set-3"></a>Frigi salgsordrer fra ordresett 3
 
@@ -286,7 +286,7 @@ Følg den [grunnleggende fremgangsmåten for frigivelse til lager](#release-proc
 Når du er ferdig, skal du kunne se at følgende handlinger oppstod:
 
 - En eksisterende forsendelse (forsendelsen som ble opprettet da ordresett 2 ble frigitt til lageret) ble oppdatert. En linje som har elementet *Brannfarlig* , ble lagt til.
-- Én ny forsendelse ble opprettet, og den inneholder elementet *Eksplosivt* .
+- Én ny forsendelse ble opprettet, og den inneholder elementet *Eksplosivt*.
 
 ### <a name="release-sales-orders-from-order-set-4"></a>Frigi salgsordrer fra ordresett 4
 
@@ -309,10 +309,10 @@ Følg den [grunnleggende fremgangsmåten for frigivelse til lager](#release-proc
 
 Når du er ferdig, skal du kunne se at fire forsendelser ble opprettet:
 
-- Linjer fra to ordrer for kunde *US-003* ble gruppert i én forsendelse ved hjelp av policyen for forsendelseskonsolidering for *Ordrepulje* .
-- Linjer fra to ordrer for kunde *US-004* ble gruppert i én forsendelse ved hjelp av policyen for forsendelseskonsolidering for *Ordrepulje* .
-- Linjer fra salgsordre 6-5 og 6-6 for kunde *US-007* ble gruppert i én forsendelse ved hjelp av policyen for forsendelseskonsolidering for *Ordrepulje* .
-- Linjer fra salgsordre 6-7 og 6-8 for kunde *US-007* ble gruppert i én forsendelse ved hjelp av policyen for forsendelseskonsolidering for *Kryssordre* .
+- Linjer fra to ordrer for kunde *US-003* ble gruppert i én forsendelse ved hjelp av policyen for forsendelseskonsolidering for *Ordrepulje*.
+- Linjer fra to ordrer for kunde *US-004* ble gruppert i én forsendelse ved hjelp av policyen for forsendelseskonsolidering for *Ordrepulje*.
+- Linjer fra salgsordre 6-5 og 6-6 for kunde *US-007* ble gruppert i én forsendelse ved hjelp av policyen for forsendelseskonsolidering for *Ordrepulje*.
+- Linjer fra salgsordre 6-7 og 6-8 for kunde *US-007* ble gruppert i én forsendelse ved hjelp av policyen for forsendelseskonsolidering for *Kryssordre*.
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 

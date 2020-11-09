@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-07-31
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: af468f0cc5d5f1baab62afb3cf90dfca353b3291
-ms.sourcegitcommit: 5bb36b74935ffe140367fd6ecf956b4857ad12e5
+ms.openlocfilehash: 49b90037c182e10d0cc9d449649e8501537fdc4f
+ms.sourcegitcommit: 9dd2d38e76d4d93171315ec319e6ce7d51d4e6c7
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/14/2020
-ms.locfileid: "3802949"
+ms.lasthandoff: 10/15/2020
+ms.locfileid: "4012396"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10013-october-2020"></a>Nyheter eller endringer i Dynamics 365 Supply Chain Management 10.0.13 (oktober 2020)
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet beskriver funksjoner som enten er nye eller endret i Microsoft Dynamics 365 Supply Chain Management, forhåndsvisningsversjon 10.0.13. Denne versjonen har et build-nummer 10.0.569, og er tilgjengelig som følger:
+Dette emnet beskriver funksjoner som enten er nye eller endret i Microsoft Dynamics 365 Supply Chain Management 10.0.13. Denne versjonen har et build-nummer 10.0.569, og er tilgjengelig som følger:
 
 - **Forhåndsversjon:** august 2020
 - **Generell tilgjengelighet (selvoppdatering):** september 2020
@@ -49,8 +49,6 @@ Denne versjonen inneholder følgende funksjoner: Funksjonstitlene kobler til mer
 - [Nye lagerdimensjoner for sporing av produktversjon og forbedret utvidbarhet](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/new-inventory-dimensions-product-version-tracking-enhanced-extensibility)<br> - Hvis du vil ha mer informasjon, kan du se [Produktdimensjoner](../pim/product-dimensions.md).
 
 - [Ordreigangsatt reservasjon basert på nummerskilt](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/order-committed-reservation-based-license-plates-lp-picking-processing)<br> - For mer informasjon, se [Fleksibel nummerskiltreservering](../warehousing/flexible-warehouse-level-dimension-reservation.md#flexible-license-plate-reservation).
-
-- [Visualisering av utgående arbeidsmengde](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/warehouse-management--workload-visualization)
 
 - [Oversikt over arbeidsplukklinje](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/work-pick-line-overview)
 

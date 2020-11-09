@@ -1,7 +1,7 @@
 ---
 title: Kontrollere tilgjengelighet for sideinnhold
 description: Dette emnet beskriver hvordan du kontrollerer tilgjengeligheten for sideinnhold i Microsoft Dynamics 365 Commerce.
-author: arotkin
+author: josaw1
 manager: annbe
 ms.date: 01/08/2020
 ms.topic: article
@@ -14,15 +14,15 @@ ms.reviewer: v-chgri
 ms.search.scope: Retail, Core, Operations
 ms.search.region: Global
 ms.search.industry: retail
-ms.author: arotkin
+ms.author: josaw
 ms.search.validFrom: 2019-12-19
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 8e35b0f71ff41bade266fb177e4500c7d124ed1f
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: fc3dca673510e1636f497bb7d5c295bebe025677
+ms.sourcegitcommit: 49f3011b8a6d8cdd038e153d8cb3cf773be25ae4
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3002665"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4015109"
 ---
 # <a name="verify-page-content-accessibility"></a>Kontrollere tilgjengelighet for sideinnhold
 
@@ -63,7 +63,7 @@ Følg denne fremgangsmåten for å aktivere [Microsoft Accessibility Insights](h
 Hvis du vil bruke den integrerte [Microsoft Accessibility Insights](https://accessibilityinsights.io/)-tjenesten til å skanne og kontrollere innholdet på startsiden i Commerce, følger du denne fremgangsmåten.
 
 1. Under **Områder** velger du **Fabrikam** (eller navnet på området).
-1. Velg **Sider**i navigasjonsruten til venstre.
+1. Velg **Sider** i navigasjonsruten til venstre.
 1. Finn og velg startsside for å åpne den i sideredigeringsprogrammet.
 1. På kommandolinjen velger du **Kontroller tilgjengelighet**. Siden **Kontroller tilgjengelighet** vises.
 1. Når skanningen er fullført, kan du se gjennom innholdet i rapporten.

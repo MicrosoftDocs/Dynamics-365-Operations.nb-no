@@ -16,15 +16,15 @@ ms.custom: 19311
 ms.assetid: 5ffb1486-2e08-4cdc-bd34-b47ae795ef0f
 ms.search.region: Global
 ms.search.industry: ''
-ms.author: roxanad
+ms.author: kamaybac
 ms.search.validFrom: 2020-09-03
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 18a9b7ed4cd26a806002fb1b4684de1e84f39889
-ms.sourcegitcommit: c55fecae96b4bb27bc313ba10a97eddb9c91350a
+ms.openlocfilehash: 1c1b940754021956998fe27ba16020d4b16aedf1
+ms.sourcegitcommit: 49f3011b8a6d8cdd038e153d8cb3cf773be25ae4
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/12/2020
-ms.locfileid: "3989287"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4015073"
 ---
 # <a name="improve-scheduling-engine-performance"></a>Forbedre ytelsen til planleggingsmotoren
 
@@ -238,11 +238,7 @@ Hvis for eksempel arbeidstiden for en ressursgruppe på en bestemt dato er fra 8
 
 Belastningen fra jobbplanlegging for alle ressursene som er inkludert i ressursgruppen på en bestemt dag, vurderes når tilgjengelig kapasitet for ressursgruppen på samme dag beregnes. For hver dato er beregningen:
 
-> Tilgjengelig kapasitet for ressursgruppe =  
-> (kapasitet for ressurser i gruppen basert på kalenderen) –  
-> (planlagt jobbelastning på ressursene i gruppen) –  
-> (planlagt operasjonsbelastning på ressursene i gruppen) –  
-> (planlagt operasjonsbelastning på ressursgruppen)
+*Tilgjengelig kapasitet for ressursgruppe = kapasitet for ressurser i gruppen basert på kalenderen &ndash; planlagt jobbelastning på ressursene i gruppen &ndash; planlagt driftsbelastning på ressursene i gruppen &ndash; planlagt driftsbelastning på ressursgruppen*
 
 I kategorien **Ressurskrav** i ruteoperasjonen, kan ressurskravene angis ved hjelp av en bestemt ressurs (i så fall planlegges operasjonen ved å bruke denne ressursen), for en ressursgruppe, for en ressurstype eller for én eller flere funksjoner, ferdighet, kurs eller sertifikat. Selv om bruk av alle disse alternativene gir en større fleksibilitet for ruteutformingen, kan det også komplisere planleggingen for motoren etter hvert som det må tas hensyn til kapasitet per "egenskap" (det abstrakte navnet som brukes i motoren for funksjonalitet, ferdighet og så videre).
 
@@ -252,11 +248,7 @@ I grovplanlegging blir den tilgjengelige kapasiteten for en bestemt funksjon for
 
 For hver dato er den nødvendige beregningen:
 
-> Tilgjengelig kapasitet for en funksjon =  
-> (kapasiteten for funksjonen) –  
-> (jobbplanlagt belastning på ressursene med den spesifikke funksjonen, inkludert i ressursgruppen) –  
-> (operasjonsplanlagt belastning på ressursene med den spesifikke funksjonen, inkludert i ressursgruppen) –  
-> (operasjonsplanlagt belastning på ressursgruppen som krever den spesifikke funksjonen)
+*Tilgjengelig kapasitet for en funksjon = kapasitet for funksjonen &ndash; planlagt jobbelastning på ressursene med den spesifikke muligheten, inkludert i ressursgruppen &ndash; planlagt driftsbelastning på ressursene med den spesifikke muligheten, inkludert i ressursgruppen, &ndash; planlagt driftsbelastning på selve ressursgruppen som krever den spesifikke funksjonaliteten*
 
 Dette betyr at hvis det er belastning på en bestemt ressurs, vurderes belastningen i beregningen av ressursgruppens tilgjengelige kapasitet per funksjon, fordi belastningen på en bestemt ressurs reduserer bidraget til ressursgruppens kapasitet for en funksjon uansett om belastningen på den bestemte ressursen er for den bestemte funksjonen. Hvis det er belastning på ressursgruppenivå, blir dette bare tatt med i beregningen av ressursgruppens tilgjengelige kapasitet per funksjon hvis belastningen er fra en operasjon som krever den spesifikke funksjonen.
 
@@ -264,7 +256,7 @@ Logikken ovenfor er complicatd, siden dette er den samme for hver type "egenskap
 
 ## <a name="viewing-scheduling-engine-input-and-output"></a>Vis inndata og utdata for planleggingsmotor
 
-Hvis du vil ha detaljert informasjon om inndata og utdata for planleggingsprosessen, kan du aktivere logging ved å gå til **Organisasjonsstyring \> Oppsett \> Planlegging \> Cockpit for sporing av planlegging** .
+Hvis du vil ha detaljert informasjon om inndata og utdata for planleggingsprosessen, kan du aktivere logging ved å gå til **Organisasjonsstyring \> Oppsett \> Planlegging \> Cockpit for sporing av planlegging**.
 
 På denne siden velger du først **Aktiver logging** i handlingsruten. Kjør deretter planleggingen for produksjonsordren. Når dette er fullført, går du tilbake til siden **Cockpit for sporing av planlegging** og velger **Deaktiver logging** i handlingsruten. Oppdater siden, og en ny linje vises i rutenettet. Velg den nye linjen, og velg **Last ned** i handlingsruten. Dette vil gi deg en ZIP-komprimert mappe som inneholder følgende filer:
 
@@ -329,7 +321,7 @@ Siden motoren fungerer ved å undersøke kapasiteten i tidsspor en etter en, er 
 
 ### <a name="large-or-none-scheduling-timeouts"></a>Store (eller ingen) tidsavbrudd for tidsplaner
 
-Planlegging av motorytelsen kan optimaliseres ved hjelp av parametere på siden **Planleggingsparametere** . Innstillingene **Tidsavbrudd for planlegging er aktivert** og **Tidsavbrudd for planleggingsoptimalisering er aktivert** må alltid settes til **Ja** . Hvis dette settes til **Nei** , kan planleggingen kjøre i det uendelige hvis det er opprettet en umulig rute med mange alternativer.
+Planlegging av motorytelsen kan optimaliseres ved hjelp av parametere på siden **Planleggingsparametere**. Innstillingene **Tidsavbrudd for planlegging er aktivert** og **Tidsavbrudd for planleggingsoptimalisering er aktivert** må alltid settes til **Ja**. Hvis dette settes til **Nei** , kan planleggingen kjøre i det uendelige hvis det er opprettet en umulig rute med mange alternativer.
 
 Verdien for **Maksimal planleggingstid per serie** kontrollerer styrer maksimalt antall sekunder som kan brukes til å prøve å finne en løsning for én enkelt sekvens (i de fleste tilfeller tilsvarer en serie én enkelt ordre). Verdien som brukes her, er svært avhengig av kompleksiteten i ruten og innstillingene, for eksempel begrenset kapasitet, men maksimalt 30 sekunder er et godt utgangspunkt.
 
