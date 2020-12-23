@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
-ms.openlocfilehash: cb8519db2f5d52d4e317b485d6ecc910956788cb
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.openlocfilehash: 5998a492e12cb93aeec029c6e56f811f8b90055a
+ms.sourcegitcommit: e544c51a68ad5daf748c0e877bdbde094ad40bd2
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3975322"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "4459669"
 ---
 # <a name="customer-workflow"></a>Arbeidsflyt for kunde
 
@@ -60,4 +60,4 @@ Når du har minst én foreslått endring, vises det to ytterligere menyer i hand
 
     Statusen på siden endres til **Endringer som venter på godkjenning**.
 
-Arbeidsflyten følger standard arbeidsflytprosessen i programmet. Godkjenneren er rettet mot siden **Kunde**, der han eller hun kan se endringene på siden **Foreslåtte endringer** og deretter velge **Arbeidsflyt \> Godkjenn** for å godkjenne arbeidsflyten. Når alle godkjenninger er fullført, oppdateres feltene med verdier som du har foreslått.
+Arbeidsflyten følger standard arbeidsflytprosessen i appen. Godkjenneren er rettet mot siden **Kunde**, der endringene kan gjennomgås på siden **Foreslåtte endringer** og deretter velge **Arbeidsflyt \> Godkjenn** for å godkjenne arbeidsflyten. Når alle godkjenninger er fullført, oppdateres feltene med verdier som du har foreslått.

@@ -19,11 +19,11 @@ ms.author: josaw
 ms.search.validFrom: 2019-05-28
 ms.dyn365.ops.version: 10
 ms.openlocfilehash: ecff18f0a34d22ef359f473fa6aaaff16c811bb6
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3004211"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4459629"
 ---
 # <a name="improved-handling-of-batch-tracked-items"></a>Forbedret håndtering av varer med partisporing
 
@@ -31,7 +31,7 @@ ms.locfileid: "3004211"
 [!include [banner](includes/banner.md)]
 
 
-I Point of Sale (POS) kan ikke partinumre registreres for varer med partisporing på salgstidspunktet. For bestemte konfigurasjoner imidlertid, når salg posteres på hovedkontoret via kundeordrer eller utdragspostering, forventer Microsoft Dynamics-systemet at det finnes gyldige partinumre for varer med partisporing, og at de skal brukes under faktureringen.
+På salgsstedet kan ikke partinumre registreres for varer med partisporing på salgstidspunktet. For bestemte konfigurasjoner imidlertid, når salg posteres på hovedkontoret via kundeordrer eller utdragspostering, forventer Microsoft Dynamics-systemet at det finnes gyldige partinumre for varer med partisporing, og at de skal brukes under faktureringen.
 
 Hvis det finnes gyldige partinumre for produktene, brukes de i kundeordrefaktureringen og salgsordrefaktureringen fra utdragspostering. Ellers kan ikke kundeordrefaktureringen postere, og salgsstedsbrukeren får en feilmelding. Utdragspostering går deretter inn i en feiltilstand. Denne feiltilstanden forekommer selv om negativ beholdning er aktivert for produktene.
 

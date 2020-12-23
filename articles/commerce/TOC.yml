@@ -14,6 +14,8 @@
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/oneversion-overview.md?toc=/dynamics365/commerce/toc.json
                 - name: Vanlige spørsmål om oppdatering av én versjonstjeneste
                   href: ../fin-ops-core/fin-ops/get-started/one-version.md?toc=/dynamics365/commerce/toc.json
+                - name: 'Administrere oppdateringer og den egendefinerte kodelivssyklusen, inkludert Dynamics 365 Commerce'
+                  href: ../fin-ops-core/dev-itpro/migration-upgrade/update-guide.md?toc=/dynamics365/commerce/toc.json
                 - name: Policy for programvarelivssyklus – sky
                   href: ../fin-ops-core/dev-itpro/migration-upgrade/versions-update-policy.md?toc=/dynamics365/commerce/toc.json
                 - name: Policy for programvarelivssyklus – lokalt
@@ -92,12 +94,12 @@
                   items:
                     - name: Nyheter eller endringer på startsiden for Commerce
                       href: get-started/whats-new-home-page.md
+                    - name: Commerce 10.0.16 (februar 2021)
+                      href: get-started/whats-new-commerce-10-0-16.md
                     - name: Commerce 10.0.15 (januar 2021)
                       href: get-started/whats-new-commerce-10-0-15.md
                     - name: Commerce 10.0.14 (november 2020)
                       href: get-started/whats-new-commerce-10-0-14.md
-                    - name: Commerce 10.0.13 (oktober 2020)
-                      href: get-started/whats-new-commerce-10-0-13.md
                 - name: Funksjoner som er fjernet eller avskrevet
                   items:
                     - name: Funksjoner som er fjernet eller avskrevet i Finance and Operations
@@ -106,8 +108,6 @@
                       href: get-started/removed-deprecated-features-commerce.md
                 - name: AX 2012-funksjoner som er utsatt
                   href: ../fin-ops-core/fin-ops/get-started/ax-2012-features-not-implemented-but-not-deprecated.md?toc=/dynamics365/commerce/toc.json
-                - name: Funksjoner som ikke er implementert i lokale distribusjoner
-                  href: ../fin-ops-core/fin-ops/get-started/features-not-implemented-on-prem.md?toc=/dynamics365/commerce/toc.json
                 - name: Slutten av vanlig støtte for Microsoft Dynamics AX 2009 og 2012
                   href: ../fin-ops-core/fin-ops/get-started/mainstream-support-ax-2009-2012.md?toc=/dynamics365/commerce/toc.json
             - name: Dokumentasjonsressurser
@@ -230,7 +230,7 @@
                   href: dev-itpro/retail-store-system-begin.md
                 - name: Konfigurere og installere Commerce Scale Unit (selvdriftet)
                   href: dev-itpro/retail-store-scale-unit-configuration-installation.md
-                - name: Konfigurasjon og installasjon av moderne salgssted
+                - name: Konfigurasjon og installasjon av Modern POS
                   href: retail-modern-pos-device-activation.md
                 - name: Administrere kontoer og enheter fra Headquarters
                   href: set-up-activation-accounts-validate-devices-hq.md
@@ -324,6 +324,8 @@
                           href: ../finance/general-ledger/whole-amount-interval-options-sales-tax-codes.md?toc=/dynamics365/commerce/toc.json
                         - name: Beregning av mva-fritak
                           href: tax-exempt-price-inclusive.md
+                        - name: Konfigurere merverdiavgift for elektroniske ordrer
+                          href: sales-tax-config.md
                     - name: Definere en profil for e-postvarsling
                       href: email-notification-profiles.md
                     - name: Nummerserier
@@ -366,9 +368,7 @@
                       href: dev-itpro/retail-POS-activation-changes.md
                     - name: Aktiver godkjenning av Azure Active Directory for salgsstedspålogging
                       href: aad-pos-logon.md
-                    - name: Skjermoppsett for demonstrasjonsdata i MPOS og Cloud POS
-                      href: demo-data.md
-                    - name: Produkt- og kundesøk i salgssted
+                    - name: Produkt- og kundesøk på salgsstedet
                       href: POS-search-improvements.md
                     - name: Søke etter produkter og produktvarianter under ordreregistrering
                       href: ../supply-chain/pim/search-products-product-variants.md?toc=/dynamics365/commerce/toc.json
@@ -506,10 +506,12 @@
                       href: work-with-payments.md
                     - name: 'Kredittkortoppsett, autorisasjon og registrering'
                       href: ../finance/accounts-receivable/credit-card-authorizations.md?toc=/dynamics365/commerce/toc.json
-                    - name: Konfigurere kontantstørrelser for salgssted
+                    - name: Konfigurere kontantstørrelser for salgsstedet
                       href: cash-denominations.md
                     - name: Konfigurere kredittkortbehandling
                       href: tasks/configure-credit-card-processing.md
+                    - name: Hopp over dialogboksen Endre forfall på salgsstedet
+                      href: dev-itpro/skip-change-due.md
                     - name: Betalingskobling for Ayden
                       href: dev-itpro/adyen-connector.md
                     - name: Lagre betalingsmåter på nett med Adyen-koblingen
@@ -530,10 +532,16 @@
                       href: dev-itpro/commerce-payments.md
                     - name: Behandle kredittkort uten maskinvarestasjon
                       href: dev-itpro/cnp-pos.md
+                    - name: Dynamics 365 Payment Connector for PayPal
+                      href: paypal.md
+                    - name: Støtte for lommebokbetaling
+                      href: wallets.md
                     - name: Vanlige spørsmål om betalinger
                       href: dev-itpro/payments-retail.md
                 - name: Behandle Bing-kart for organisasjonen
                   href: dev-itpro/manage-bing-maps.md
+                - name: Opprette og oppdatere tidsrom for kundehenting
+                  href: dev-itpro/pickup-timeslots.md
         - name: Bruke produktene og tjenestene dine i varehandel
           items:
             - name: 'Kategorier, produkter og sortimenter'
@@ -710,10 +718,14 @@
                   href: hybrid-customer-orders.md
                 - name: Tilbakekalle ordreoperasjon på salgssted
                   href: enhancedorderrecall.md
+                - name: Aktivere flere leveringsmåter for plukking
+                  href: multiple-pickup-modes.md
             - name: Salgsordrer
               items:
-                - name: Opprette en telefonsenterordre
+                - name: Opprette telefonsenterordrer
                   href: tasks/create-call-center-orders.md
+                - name: Tilpasse transaksjons-e-poster etter leveringsmåte
+                  href: customize-email-delivery-mode.md
                 - name: Endre leveringsmodus i salgssted
                   href: POS-change-delivery-mode.md
             - name: Behandling av distribuert ordre
@@ -773,7 +785,17 @@
             - name: Deaktivere regler i konsekvenskontroll for detaljhandelstransaksjon
               href: disable-consistency-check-rule.md
             - name: Redigere og overvåke detaljhandelstransaksjoner
-              href: edit-audit-retail-transactions.md
+              items:
+                - name: Redigere og overvåke hentesalgs- og kassastyringstransaksjoner
+                  href: edit-cash-trans.md
+                - name: Redigere og overvåke nettordretransaksjoner og asynkrone kundeordretransaksjoner
+                  href: edit-order-trans.md
+                - name: Redigere finansdimensjoner for detaljhandelstransaksjoner
+                  href: edit-financial-dim.md
+                - name: Opprette en Excel-arbeidsbok for å redigere detaljhandelstransaksjoner
+                  href: create-excel-edit.md
+                - name: Legge til felt i en Excel-arbeidsbok for å redigere detaljhandelstransaksjoner
+                  href: add-fields-excel.md
             - name: Fordele feedbasert ordreoppretting for detaljhandelstransaksjoner
               href: trickle-feed.md
             - name: 'Opprette, beregne og postere utdrag for en detaljhandel'
@@ -808,7 +830,7 @@
               href: task-mgmt-pos.md
         - name: Administrere e-handelsområdet ditt
           items:
-            - name: Oversikt over nettbutikk
+            - name: Oversikt over e-handelsområde
               href: online-store-overview.md
             - name: Opprette et e-handelsområde
               items:
@@ -818,7 +840,7 @@
                   href: deploy-ecommerce-site.md
                 - name: Opprette et e-handelsområde
                   href: create-ecommerce-site.md
-                - name: Knytte et e-handelsområde til en Internett-kanal
+                - name: Knytte et Dynamics 365 Commerce-område til en nettkanal
                   href: associate-site-online-store.md
                 - name: Administrere robots.txt-filer
                   href: manage-robots-txt-files.md
@@ -946,6 +968,8 @@
                   href: dam-crop-images.md
                 - name: Tilpasse bildefokuspunkter
                   href: dam-custom-focal-point.md
+                - name: Laste opp og betjene statiske filer
+                  href: upload-serve-static-files.md
             - name: Gjøre nettstedet ditt kompatibelt
               items:
                 - name: Samsvarsoversikt
@@ -1014,7 +1038,9 @@
                       href: ship-address-module.md
                     - name: Leveringsalternativmodul
                       href: delivery-options-module.md
-                    - name: Ordredetaljermodul
+                    - name: Hente informasjonsmodul
+                      href: pickup-info-module.md
+                    - name: Modul for ordredetaljer
                       href: order-confirmation-module.md
                     - name: Gavekortmodul
                       href: add-giftcard.md
@@ -1966,21 +1992,23 @@
                   href: e-commerce-extensibility/overview.md
                 - name: Komme i gang
                   items:
+                    - name: Komme i gang med omfattende elektronisk utvikling av e-handel
+                      href: e-commerce-extensibility/sdk-getting-started.md
                     - name: Systemkrav
                       href: e-commerce-extensibility/system-requirements.md
                     - name: Definere et utviklingsmiljø
                       href: e-commerce-extensibility/setup-dev-environment.md
                     - name: Konfigurere en utviklingsmiljøfil (.env)
                       href: e-commerce-extensibility/configure-env-file.md
-                    - name: Feilsøke mot et Commerce-utviklingsmiljø på lag 1
+                    - name: Konfigurere et utviklingsmiljø for e-handel i forhold til et Commerce-skymiljø
                       href: e-commerce-extensibility/debug-tier-1.md
                     - name: Definere kodedeling for Azure DevOps og definere et versjonsforløp
                       href: e-commerce-extensibility/set-up-code-sharing-build-pipeline.md
                 - name: Plattformoversikt
                   items:
-                    - name: Oversikt over arkitektur
+                    - name: Oversikt over e-handelsarkitektur
                       href: e-commerce-extensibility/architectural-overview.md
-                    - name: Nettbaserte komponenter
+                    - name: E-handelskomponenter
                       href: e-commerce-extensibility/ecommerce-components.md
                     - name: Referanse til CLI-kommando
                       href: e-commerce-extensibility/cli-command-reference.md
@@ -2112,10 +2140,12 @@
                       href: e-commerce-extensibility/package-deploy.md
                     - name: Oppdateringer for SDK og modulbibliotek
                       href: e-commerce-extensibility/sdk-updates.md
-                - name: Anbefalte fremgangsmåter
+                - name: Anbefalte fremgangsmåter og vanlige spørsmål
                   items:
                     - name: Anbefalte fremgangsmåter for Dynamics 365 Commerce-utvikling
                       href: e-commerce-extensibility/best-practices-dev.md
+                    - name: Vanlige spørsmål om SDK for Dynamics 365 Commerce online
+                      href: e-commerce-extensibility/sdk-faq.md
             - name: SDK for Retail
               items:
                 - name: Arkitektur for SDK for Retail
@@ -2136,6 +2166,8 @@
                   href: dev-itpro/cloud-dev-box.md
                 - name: Konfigurere versjonsforløp for SDK for Commerce
                   href: dev-itpro/retail-sdk/SDK-build-pipeline.md
+                - name: Laste ned eksempler og pakker fra GitHub og NuGet
+                  href: dev-itpro/retail-sdk/sdk-github.md
                 - name: Vanlige spørsmål om SDK for Retail
                   href: dev-itpro/retail-sdk/sdk-faq.md
             - name: Utvidelsesmuligheter for salgssted
@@ -2156,6 +2188,8 @@
                   href: dev-itpro/POS-APIs.md
                 - name: Utvidelse for salgsstedsbetaling
                   href: dev-itpro/pos-payment-extension.md
+                - name: Støtte for tipping i SDK for salgsstedsbetalinger
+                  href: dev-itpro/tipping.md
                 - name: Støtte for eksterne gavekort
                   href: dev-itpro/gift-card.md
                 - name: Opprette og bruke merking i appen Retail Experience
@@ -2218,7 +2252,7 @@
                   href: dev-itpro/commerce-runtime-overview.md
                 - name: CRT-tjenester
                   href: dev-itpro/crt-services.md
-                - name: Utvidelsesmulighet for CRT og Retail Server
+                - name: Utvidelsesmønster for CRT
                   href: dev-itpro/commerce-runtime-extensibility.md
                 - name: Behandle hemmeligheter for Retail-kanaler
                   href: dev-itpro/manage-secrets.md

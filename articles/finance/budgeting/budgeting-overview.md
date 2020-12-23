@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5a7a03e6149d3677ac4f35522e4898e1f62da329
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.openlocfilehash: 8a910aa7f54905f305ed69e9dd9eea0909e5558d
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3975274"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4528551"
 ---
 # <a name="budgeting-home-page"></a>Startside for budsjettering
 
@@ -64,7 +64,7 @@ Hvis du vil ha informasjon om hvordan du kobler planlegging data fra andre modul
 ## <a name="user-interface-and-reporting-capabilities"></a>Brukergrensesnitt og rapporteringsfunksjonalitet
 Brukere kan opprette budsjettplaner direkte i klienten (ved hjelp av en konfigurerbar side for budsjettplandokument) eller via Excel. Excel har flere tilleggsfunksjoner. Du kan for eksempel bruke eksterne data som en kilde for en budsjettplan, foreta egendefinerte beregninger og bruke Microsoft pivottabeller og -diagrammer. Du kan konfigurere de fleste variablene i budsjettplanleggingsprosessen. 
 
-Du kan for eksempel definere hvem som skal foreta budsjettering, hva som skal budsjetteres, og hvordan prosessen skal se ut. Selv om du kan bruke Excel til budsjettplanlegging, brukes programmet som eneste faktakilde og bidrar til å forhindre problemer med budsjettkontroll. Periodiske prosesser kan brukes til å hente inn innledende data for budsjettering i budsjettplanen. Når det gjelder rapportering, tilbyr programmet et sett med standard forespørselssider der du kan vise og analysere budsjetteringsdata. Du kan få tilgang til budsjettplandata via Management Reporter, og separate budsjettplanscenarier kan vises som kolonner i Management Reporter-rapporten.
+Du kan for eksempel definere hvem som skal foreta budsjettering, hva som skal budsjetteres, og hvordan prosessen skal se ut. Selv om du kan bruke Excel til budsjettplanlegging, brukes programmet som eneste faktakilde og bidrar til å forhindre problemer med budsjettkontroll. Periodiske prosesser kan brukes til å hente inn innledende data for budsjettering i budsjettplanen. Når det gjelder rapportering, tilbyr programmet et sett med standard forespørselssider der du kan vise og analysere budsjetteringsdata. Du kan få tilgang til budsjettplandata via [Finansrapportering](../general-ledger/financial-reporting-getting-started.md), og separate budsjettplanscenarier kan vises som kolonner i finansrapporten.
 
 
 

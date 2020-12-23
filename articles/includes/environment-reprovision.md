@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: f6bf4b6c946ebc63d3d84140f762cd4b789deb03
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.translationtype: HT
+ms.contentlocale: nb-NO
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4459622"
+---
 Når du kopierer en database mellom miljøer, må du kjøre verktøyet for ny klargjøring av miljøet før den kopierte databasen kan tas i bruk, slik at alle Commerce-komponenter er oppdatert.
 
 > [!IMPORTANT]

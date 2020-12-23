@@ -17,11 +17,11 @@ ms.author: kweekley
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
 ms.openlocfilehash: 73acfc92777b8fe07b89bea782e13213d38000cd
-ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "2570339"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4459628"
 ---
 # <a name="revenue-recognition-setup"></a>Inntektsføringsoppsett
 [!include [banner](../includes/banner.md)]
@@ -180,7 +180,7 @@ Når du definerer en buntvare, må du angi en verdi i to felt på siden **Frigit
 - I hurtigfanen **Utvikle** i feltet **Produksjonstype** må du definere varen som en stykklistevare.
 - I hurtigfanen **Generelt** i feltet **Bunt** må du merke av for vare som en buntvare.
 
-Komponentene må deretter tilordnes til den overordnede varen for bunt/stykkliste på siden **Stykklisteversjoner** (gå til **Inntektsføring \> Oppsett \> Lager- og produktoppsett \> Frigitte produkter**, og klikk deretter **Stykklisteversjoner** i gruppen **Stykkliste** i kategorien **Utvikle** i handlingsruten. Hvis du vil ha mer informasjon, kan du se dokumentasjonen for oppsett av stykklister.
+Komponentene må deretter tilordnes til den overordnede varen for bunt/stykkliste på siden **Stykklisteversjoner** (gå til **Inntektsføring \> Oppsett \> Lager- og produktoppsett \> Frigitte produkter**, og klikk deretter **Stykklisteversjoner** i gruppen **Stykkliste** i kategorien **Utvikle** i handlingsruten). Hvis du vil ha mer informasjon, kan du se dokumentasjonen for oppsett av stykklister.
 
 [![Frigitte produkter, tidsplaner for stykkliste](./media/revenue-recognition-bom-scheduleds.jpg)](./media/revenue-recognition-bom-scheduleds.jpg)
 

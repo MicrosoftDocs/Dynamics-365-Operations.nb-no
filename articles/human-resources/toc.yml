@@ -5,7 +5,9 @@
       items:
         - name: Nyheter eller endringer i Human Resources
           href: hr-admin-whats-new.md
-        - name: 22. oktober 2002
+        - name: 2. desember 2020
+          href: hr-whats-new-2020-12-02.md
+        - name: 22. oktober 2020
           href: hr-whats-new-2020-10-22.md
         - name: 6. oktober 2020
           href: hr-whats-new-2020-10-06.md
@@ -477,6 +479,8 @@
               href: hr-personnel-define-jobs.md
             - name: Opprette en arbeidstidskalender
               href: hr-personnel-create-working-time-calendar.md
+            - name: Rekruttere jobbkandidater
+              href: hr-personnel-recruit.md
             - name: Vanlige spørsmål om medarbeiderhandlinger
               href: hr-personnel-actions-faq.md
             - name: Bruke arbeidsflyter til å administrere informasjon om ansatte
@@ -533,7 +537,9 @@
                   href: hr-benefits-management-overview.md
                 - name: Konfigurere fordelsbehandling
                   items:
-                    - name: Angi parametere for fordelsbehandling
+                    - name: Konfigurere fordelsstyringsparametre per firma
+                      href: hr-benefits-setup-parameters-per-company.md
+                    - name: Angi fordelsstyrings- og selvbetjeningsparametre for ansatte for alle firmaer
                       href: hr-benefits-setup-parameters.md
                     - name: Konfigurere rettighetsregler og -alternativer
                       href: hr-benefits-setup-eligibility-rules.md
