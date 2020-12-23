@@ -1,0 +1,10 @@
+---
+ms.openlocfilehash: a0f0f74d56bb69c36b654ab110c9f9c7d2fd0084
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.translationtype: HT
+ms.contentlocale: nb-NO
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4459635"
+---
+> [!IMPORTANT]
+> <span data-ttu-id="c0730-101">Deler av eller all funksjonalitet som er nevnt i dette emnet, er tilgjengelig som en del av en forhåndsversjon.</span><span class="sxs-lookup"><span data-stu-id="c0730-101">Some or all of the functionality noted in this topic is available as part of a preview release.</span></span> <span data-ttu-id="c0730-102">Innholdet og funksjonaliteten kan bli endret.</span><span class="sxs-lookup"><span data-stu-id="c0730-102">The content and the functionality are subject to change.</span></span> <span data-ttu-id="c0730-103">Hvis du vil ha mer informasjon om forhåndsversjoner, kan du se [Tilgjengelighet av serviceoppdatering](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/public-preview-releases).</span><span class="sxs-lookup"><span data-stu-id="c0730-103">For more information about preview releases, see [Service update availability](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/public-preview-releases).</span></span>
