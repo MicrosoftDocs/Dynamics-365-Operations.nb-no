@@ -20,11 +20,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 88e777d69c9da8a19c186bca3ca591e59af232f0
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3978086"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4434182"
 ---
 # <a name="use-tracing-for-explosion"></a>Bruke sporing for nedbryting
 
@@ -39,7 +39,7 @@ Ved å aktivere sporing kan du vise informasjon om faktorene som bidro til resul
 -   Simuler planleggingsresultater for å finne ut om planleggingsparameterne er optimale.
 -   Angi hvordan informasjon, for eksempel produksjonsdatoer, antall og prioritet for en ordre ble bestemt.
 
-Du kan vise detaljer om termin og handlinger for en valgt ordre. På siden **Nedbryting** er sporing av informasjon tilgjengelig i fanen **Forklaring** i den øvre ruten. Sporing skjer når du bryter ned en ordre. For å starte sporing for ordren klikk **Oppdater** , og merk deretter av for **Aktiver sporing** . Du kan bruke feltet **Finn tekst** til å søke etter spesifikk informasjon i loggen. Søkeresultatene er uthevet i treet.
+Du kan vise detaljer om termin og handlinger for en valgt ordre. På siden **Nedbryting** er sporing av informasjon tilgjengelig i fanen **Forklaring** i den øvre ruten. Sporing skjer når du bryter ned en ordre. For å starte sporing for ordren klikk **Oppdater**, og merk deretter av for **Aktiver sporing**. Du kan bruke feltet **Finn tekst** til å søke etter spesifikk informasjon i loggen. Søkeresultatene er uthevet i treet.
 
 <a name="additional-resources"></a>Tilleggsressurser
 --------

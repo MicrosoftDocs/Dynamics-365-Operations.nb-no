@@ -17,17 +17,17 @@ ms.author: kamaybac
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: 10.0.6
 ms.openlocfilehash: 96f994e9f3440721105545f96d7d8475fcab2b6b
-ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: nb-NO
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4016799"
+ms.locfileid: "4434749"
 ---
 # <a name="consolidate-shipments-when-the-shipment-consolidation-policy-is-overridden-from-the-release-to-warehouse-page"></a>Konsolidere forsendelser når policyen for forsendelseskonsolidering overstyres fra siden Frigi til lager
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet viser et scenario der én eller flere salgslinjer må frigis manuelt til lageret fra siden **Frigi til lager** , og den systemdefinerte policyen for forsendelseskonsolidering må overstyres før utgivelsen. Det kan være nødvendig å overstyre en policy for forsendelseskonsolidering hvis en ordre som vanligvis ikke er konsolidert med åpne forsendelser, for eksempel skal konsolideres med åpne forsendelser.
+Dette emnet viser et scenario der én eller flere salgslinjer må frigis manuelt til lageret fra siden **Frigi til lager**, og den systemdefinerte policyen for forsendelseskonsolidering må overstyres før utgivelsen. Det kan være nødvendig å overstyre en policy for forsendelseskonsolidering hvis en ordre som vanligvis ikke er konsolidert med åpne forsendelser, for eksempel skal konsolideres med åpne forsendelser.
 
 I løpet av  skal du opprette et sett med salgsordrer og deretter overstyre standardinnstillingen for forsendelseskonsolidering før du frigir ordrene til lageret.
 
@@ -41,16 +41,16 @@ I løpet av  skal du opprette et sett med salgsordrer og deretter overstyre stan
 
 ## <a name="create-the-sales-orders-for-this-scenario"></a>Opprett salgsordrene for dette 
 
-1. Gå til **Kunde \> Ordrer \> Alle salgsordrer** , og opprett tre identiske salgsordrer med følgende innstillinger:
+1. Gå til **Kunde \> Ordrer \> Alle salgsordrer**, og opprett tre identiske salgsordrer med følgende innstillinger:
 
     - **Kundekonto:** *US-002*
 
 1. Legg til en ordrelinje som har følgende innstillinger:
 
-    - **Varenummer:** *A0001* (en vare uten **Kode 4** -filter tilordnet)
+    - **Varenummer:** *A0001* (en vare uten **Kode 4**-filter tilordnet)
     - **Antall:** *1.00*
 
-1. Velg **Lager \> Reservasjon** , og velg deretter **Reserver parti** i handlingsruten for å reservere ordrelinjen.
+1. Velg **Lager \> Reservasjon**, og velg deretter **Reserver parti** i handlingsruten for å reservere ordrelinjen.
 
 ## <a name="release-the-sales-orders-from-the-release-to-warehouse-page"></a>Frigi salgsordrene fra siden Frigi til lager
 

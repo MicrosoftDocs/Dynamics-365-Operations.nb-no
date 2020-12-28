@@ -19,11 +19,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 8b2b41b9ed763971feba489769ebad6f4076925e
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3984973"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4434088"
 ---
 # <a name="set-up-dispatch-teams"></a>Definer fordelingsteam 
 
@@ -32,13 +32,13 @@ ms.locfileid: "3984973"
 
 Dette emnet beskriver hvordan du oppretter et fordelingsteam. Når du har opprettet et fordelingsteam, kan du tilordne arbeidere til teamet. Når du oppretter en serviceordre, kan du deretter relatere et medlem av et fordelingsteam til en aktivitet i serviceordren.
 
-1.  Klikk **Servicestyring** \> **Oppsett** \> **Fordelingsteam** .
+1.  Klikk **Servicestyring** \> **Oppsett** \> **Fordelingsteam**.
 
-2.  I **Fordelingsteam** -skjemaet klikker du **Ny** for å opprette et nytt team.
+2.  I **Fordelingsteam**-skjemaet klikker du **Ny** for å opprette et nytt team.
 
-3.  I **Fordelingsteam** -feltet angir du et unikt navn på fordelingsgruppen.
+3.  I **Fordelingsteam**-feltet angir du et unikt navn på fordelingsgruppen.
 
-4.  I **Eier** -feltet velger du den ansatte som er ansvarlig for dette teamet.
+4.  I **Eier**-feltet velger du den ansatte som er ansvarlig for dette teamet.
     
 
     > [!NOTE]
@@ -46,7 +46,7 @@ Dette emnet beskriver hvordan du oppretter et fordelingsteam. Når du har oppret
 
 
 
-5.  Valgfritt: I **Beskrivelse** -feltet skriver du inn en kort beskrivelse av fordelingsgruppen.
+5.  Valgfritt: I **Beskrivelse**-feltet skriver du inn en kort beskrivelse av fordelingsgruppen.
 
 
 > [!NOTE]

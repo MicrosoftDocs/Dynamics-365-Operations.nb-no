@@ -17,11 +17,11 @@ ms.author: mirzaab
 ms.search.validFrom: 2020-07-16
 ms.dyn365.ops.version: Release 10.0.7
 ms.openlocfilehash: 6a328b20c1cfb2fc376ab4656c64cf585a5aa015
-ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: nb-NO
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4017190"
+ms.locfileid: "4434733"
 ---
 # <a name="item-consolidation---location-utilization"></a>Varekonsolidering – lokasjonsutnyttelse
 
@@ -59,21 +59,21 @@ Denne delen beskriver hvordan du kan klargjøre systemet til å bruke varekonsol
 ### <a name="released-product"></a>Frigitt produkt
 
 1. Gå til **Behandling av produktinformasjon \> Produkter \> Frigitte produkter**.
-1. I feltet **Varenummer** velger du *M9201* , og deretter åpner du detaljsiden.
+1. I feltet **Varenummer** velger du *M9201*, og deretter åpner du detaljsiden.
 1. I handlingsruten i kategorien **Administrer lager** i gruppen **Lager** velger du **Fysiske dimensjoner**.
-1. På **Fysiske dimensjoner** -siden i handlingsruten velger du **Ny**.
+1. På **Fysiske dimensjoner**-siden i handlingsruten velger du **Ny**.
 
-    Det blir lagt til en ny linje i rutenettet. **Varenummer** -feltet er forhåndsdefinert.
+    Det blir lagt til en ny linje i rutenettet. **Varenummer**-feltet er forhåndsdefinert.
 
-1. I **Enhet** -feltet velger du *ea*. De gjenværende feltene på linjen angis automatisk.
-1. Velg **Lagre** , og lukk siden.
+1. I **Enhet**-feltet velger du *ea*. De gjenværende feltene på linjen angis automatisk.
+1. Velg **Lagre**, og lukk siden.
 
 ### <a name="location-profile"></a>Lokasjonsprofil
 
 1. Gå til **Lagerstyring \> Oppsett \> Lager \> Lokasjonsprofiler**.
 1. Velg **ETASJE-05** i listen over lokasjonsprofiler.
 1. I handlingsruten velger du **Rediger**.
-1. I hurtigfanen **Generelt** kontrollerer du at begge alternativene nedenfor er satt til *Ja* :
+1. I hurtigfanen **Generelt** kontrollerer du at begge alternativene nedenfor er satt til *Ja*:
 
     - Aktiver vare i lokasjonen
     - Aktiver lokasjonsstatus
@@ -81,10 +81,10 @@ Denne delen beskriver hvordan du kan klargjøre systemet til å bruke varekonsol
 1. Velg **Lagre**.
 
     > [!IMPORTANT]
-    > Hvis alternativene **Aktiver vare på lokasjon** og **Aktiver lokasjonsstatus** allerede er satt til *Ja* , går du videre til instruksjonene for å definere hurtigfanen **Dimensjoner** i trinn 10. Hvis alternativene ikke allerede er satt til *Ja* , må du kjøre en konsekvenskontroll for modulen **Lagerstyring** etter at du har angitt dem manuelt. I dette tilfellet går du videre til neste trinn.
+    > Hvis alternativene **Aktiver vare på lokasjon** og **Aktiver lokasjonsstatus** allerede er satt til *Ja*, går du videre til instruksjonene for å definere hurtigfanen **Dimensjoner** i trinn 10. Hvis alternativene ikke allerede er satt til *Ja*, må du kjøre en konsekvenskontroll for modulen **Lagerstyring** etter at du har angitt dem manuelt. I dette tilfellet går du videre til neste trinn.
 
 1. Hvis du vil kjøre en konsekvenskontroll, går du til **Systemadministrasjon \> Periodiske oppgaver \> Database \> Konsekvenskontroll**.
-1. Angi følgende verdier i dialogboksen **Konsekvenskontroll** :
+1. Angi følgende verdier i dialogboksen **Konsekvenskontroll**:
 
     - **Modul:** *Lagerstyring*
     - **Kontroller/løs:** *Kontroller*
@@ -98,8 +98,8 @@ Denne delen beskriver hvordan du kan klargjøre systemet til å bruke varekonsol
     >
     > Hvis meldingen for konsekvenskontrollen viser statusen "Feil lokasjonsstatusinformasjon for lokasjonen XXXX i lageret XX", må du kjøre konsekvenskontrollen på nytt. Denne gangen setter du feltet **Kontroller/korriger** til *Rett feil*. Vis meldingene for å være sikker på at ingen feil ble funnet.
 
-1. Du må nå fullføre konfigurasjonen av lokasjonsprofilen. Gå tilbake til **Lagerstyring \> Oppsett \> Lager \> Lokasjonsprofiler** , velg lokasjonsprofil **ETASJE-05** , og velg deretter **Rediger** i handlingsruten.
-1. Angi følgende verdier i **Dimensjoner** -hurtigfanen:
+1. Du må nå fullføre konfigurasjonen av lokasjonsprofilen. Gå tilbake til **Lagerstyring \> Oppsett \> Lager \> Lokasjonsprofiler**, velg lokasjonsprofil **ETASJE-05**, og velg deretter **Rediger** i handlingsruten.
+1. Angi følgende verdier i **Dimensjoner**-hurtigfanen:
 
     - **Volumutnyttelsesprosent:** *100*
     - **Volumetrisk metode som brukes for lagerlokasjon:** *Bruk lokasjonsvolum*
@@ -121,7 +121,7 @@ Denne delen beskriver hvordan du kan klargjøre systemet til å bruke varekonsol
     - **Modus:** *Arbeid*
     - **Bruke eksisterende arbeid:** *Nei*
 
-1. Angi følgende verdier i **Generelt** -hurtigfanen:
+1. Angi følgende verdier i **Generelt**-hurtigfanen:
 
     - **Arbeidsopprettelsesprosess:** *Justering inn*
     - **Lagerjusteringstyper:** *Juster inn*
@@ -133,7 +133,7 @@ Denne delen beskriver hvordan du kan klargjøre systemet til å bruke varekonsol
 1. Gå til **Lagerstyring \> Oppsett \> Mobilenhet \> Meny på mobilenheten**.
 1. Velg **Lager** i listen over menyer.
 1. I handlingsruten velger du **Rediger**.
-1. I **Tilgjengelige menyer og menyelementer** -listen finner og velger du **Juster inn** -menyelementet.
+1. I **Tilgjengelige menyer og menyelementer**-listen finner og velger du **Juster inn**-menyelementet.
 1. Velg høyre pil-knappen for å flytte **Juster inn** til listen **Menystruktur**. På denne måten legger du til det nye menyelementet på den valgte menyen.
 1. Velg **Lagre**.
 
@@ -159,7 +159,7 @@ Følgende scenario bruker lagerappen på en mobilenhet for å lage en *justering
 
     Du skal nå angi den første lokasjonsjusteringen.
 
-1. I **Justering inn** -oppgave velger du lokasjonen du vil utføre lagerjusteringen for. Velg **LP-001** i *LOC* -feltet.
+1. I **Justering inn**-oppgave velger du lokasjonen du vil utføre lagerjusteringen for. Velg **LP-001** i *LOC*-feltet.
 1. Bekreft lokasjonen.
 1. Opprett en nummerskilt-ID for varen som skal legges til i lokasjonen. I feltet **Nummerskilt** angir du *LP00101*.
 1. Bekreft nummerskiltet.
@@ -170,7 +170,7 @@ Følgende scenario bruker lagerappen på en mobilenhet for å lage en *justering
 
     Du mottar en Arbeid fullført-melding. Du skal nå angi den andre lokasjonsjusteringen.
 
-1. I **Justering inn** -oppgave velger du lokasjonen du vil utføre lagerjusteringen for. Velg **LP-002** i *LOC* -feltet.
+1. I **Justering inn**-oppgave velger du lokasjonen du vil utføre lagerjusteringen for. Velg **LP-002** i *LOC*-feltet.
 1. Bekreft lokasjonen.
 1. Opprett en nummerskilt-ID for varen som skal legges til i lokasjonen. I feltet **Nummerskilt** angir du *LP00201*.
 1. Bekreft nummerskiltet.
@@ -181,12 +181,12 @@ Følgende scenario bruker lagerappen på en mobilenhet for å lage en *justering
 
     Du mottar en Arbeid fullført-melding.
 
-1. Velg menyknappen (noen ganger kalt hamburger eller hamburgerknappen), og velg deretter **Avbryt** for å avslutte **Justering inn** -oppgaven.
+1. Velg menyknappen (noen ganger kalt hamburger eller hamburgerknappen), og velg deretter **Avbryt** for å avslutte **Justering inn**-oppgaven.
 
 ### <a name="consolidate-locations"></a>Konsolidere lokasjoner
 
 1. Gå til **Lagerstyring \> Periodiske oppgaver \> Varekonsolidering**.
-1. I hodet velger du lageret det skal utfører konsolidering for. I **Lager** -feltet angir du *51*.
+1. I hodet velger du lageret det skal utfører konsolidering for. I **Lager**-feltet angir du *51*.
 
     Det vises en post for hver lokasjon der vare *M9201* ble justert. Kolonnen **Utnyttelsesprosent** viser volumbruk for hver lokasjon.
 

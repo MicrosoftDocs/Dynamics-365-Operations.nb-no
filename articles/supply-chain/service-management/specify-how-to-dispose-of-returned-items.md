@@ -19,11 +19,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: b2b1468328433a67253bafc21ac9c9b3a2398872
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3981672"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4434077"
 ---
 # <a name="specify-how-to-dispose-of-returned-items"></a>Angi hvordan du kvitter deg med returnerte varer 
 
@@ -168,7 +168,7 @@ Du må velge en disposisjonshandling for hver ny disposisjonskode du angir. Disp
 
 ## <a name="select-a-disposition-code-for-a-quarantine-order"></a>Velg en disposisjonskode for en karanteneordre
 
-1.  Klikk **Lagerstyring** \> **Periodisk** \> **Kvalitetsstyring** \> **Karanteneordrer** .
+1.  Klikk **Lagerstyring** \> **Periodisk** \> **Kvalitetsstyring** \> **Karanteneordrer**.
 
 2.  Velg en handling fra feltet **Disposisjonskode** i kategorien **Oversikt** hvis det gjelder en eksisterende karanteneordre.
 

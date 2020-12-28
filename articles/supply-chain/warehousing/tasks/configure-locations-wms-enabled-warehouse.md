@@ -18,11 +18,11 @@ ms.author: perlynne
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.openlocfilehash: 31f016c4c8b8b08139836336ac38196fbd1fba6f
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3217201"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4434275"
 ---
 # <a name="configure-locations-in-a-wms-enabled-warehouse"></a>Konfigurere lokasjoner i et WMS-aktivert lager
 
@@ -49,15 +49,15 @@ Denne veiledningen viser deg hvordan du konfigurerer lokasjonsoppsettet for et n
 5. Skriv inn en verdi i feltet **Segmentbeskrivelse**. Dette beskriver hva den første delen av lokasjonsnavnet representerer. Det kan for eksempel være Gang.
 6. Angi et tall i feltet **Lengde**. Dette bestemmer hvor mange tegn denne delen av lokasjonsnavnet må ha. Legg merke til at summen av alle komponenter i navnet, inkludert skilletegnene, ikke kan overskride 10 tegn.    
 7. Skriv inn en verdi i feltet **Skilletegn**. Dette bestemmer hvilket tegn eller symbol som brukes mellom første og andre komponent av navnet.  
-8. Klikk på **Ny**i **Detaljer**-delen.
+8. Klikk på **Ny** i **Detaljer**-delen.
 9. Skriv inn en verdi i feltet **Segmentbeskrivelse**.
 10. Angi et tall i feltet **Lengde**.
 11. Skriv inn en verdi i feltet **Skilletegn**.
-12. Klikk på **Ny**i **Detaljer**-delen.
+12. Klikk på **Ny** i **Detaljer**-delen.
 13. Skriv inn en verdi i feltet **Segmentbeskrivelse**.
 14. Angi et tall i feltet **Lengde**.
 15. Skriv inn en verdi i feltet **Skilletegn**.
-16. Klikk på **Ny**i **Detaljer**-delen.
+16. Klikk på **Ny** i **Detaljer**-delen.
 17. Skriv inn en verdi i feltet **Segmentbeskrivelse**.
 18. Angi et tall i feltet **Lengde**.
 19. Klikk **Lagre**.

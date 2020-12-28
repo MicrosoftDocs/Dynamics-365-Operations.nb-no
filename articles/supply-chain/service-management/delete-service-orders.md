@@ -19,24 +19,24 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: b2012f48ec6450ca4fc9e42cd7cfba0ced13ed15
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3984112"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4434324"
 ---
 # <a name="delete-service-orders"></a>Slett serviceordrer 
 
 [!include [banner](../includes/banner.md)]
 
 
-1.  Klikk på **Servicestyring** \> **Periodisk** \> **Serviceordrer** \> **Slett serviceordrer** .
+1.  Klikk på **Servicestyring** \> **Periodisk** \> **Serviceordrer** \> **Slett serviceordrer**.
 
-2.  Klikk **Velg** i skjemaet **Slettvserviceordrer** for å angi kriteriene for å velge serviceordrene som skal slettes, og klikk deretter **OK** .
+2.  Klikk **Velg** i skjemaet **Slettvserviceordrer** for å angi kriteriene for å velge serviceordrene som skal slettes, og klikk deretter **OK**.
 
 3.  Merk av for **Vis infologg** for å generere en informasjonslogg som viser de slettede serviceordrene.
 
-4.  Klikk **OK** .
+4.  Klikk **OK**.
 
 
 > [!NOTE]

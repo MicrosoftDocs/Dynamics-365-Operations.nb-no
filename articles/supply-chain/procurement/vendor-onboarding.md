@@ -17,11 +17,11 @@ ms.author: mkirknel
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.2999999999999998
 ms.openlocfilehash: 171d3b57333cc325fa675627e4c38f764d89f32c
-ms.sourcegitcommit: e3f4dd2257a3255c2982f4fc7b72a1121275b88a
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: nb-NO
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4018658"
+ms.locfileid: "4434809"
 ---
 # <a name="onboard-vendors"></a>Ønske leverandører velkommen
 
@@ -112,7 +112,7 @@ Når den potensielle leverandørbrukeren fullfører registreringsveiviseren for 
 
 En leverandørforespørsel kan opprettes som en kladd og sendes til en arbeidsflyt manuelt. Leverandørforespørselen kan også sendes automatisk til en arbeidsflyt når registreringsveiviseren for leverandører er fullført. En forespørsel kan sendes manuelt hvis for eksempel en innkjøpsansvarlig ønsker å vurdere om forespørselen skal rutes gjennom en godkjenningsprosess før den sendes til arbeidsflyten.
 
-- Velg **Parametere for innkjøp og leverandører** &gt; **Leverandørsamarbeid** , og velg deretter **Automatisk sending av registrering av potensiell leverandør til arbeidsflyt** for å konfigurere leverandørforespørselen slik at den sendes automatisk til en arbeidsflyt når registreringsveiviseren for leverandører er fullført.
+- Velg **Parametere for innkjøp og leverandører** &gt; **Leverandørsamarbeid**, og velg deretter **Automatisk sending av registrering av potensiell leverandør til arbeidsflyt** for å konfigurere leverandørforespørselen slik at den sendes automatisk til en arbeidsflyt når registreringsveiviseren for leverandører er fullført.
 
 ## <a name="vendor-requests"></a>Leverandørforespørsler
 
@@ -140,11 +140,11 @@ Tabellen nedenfor viser statusene leverandørforespørsler kan ha.
 
 Når en leverandørforespørsel er godkjent, opprettes en leverandørkonto, og statusen **Godkjent** vises på både innledende potensiell leverandør registreringsforespørsel og leverandørforespørselen.
 
-Før du godkjenner en leverandørforespørsel, på siden **Ny leverandør** , på hurtigfanen **Generelt** velger du **Leverandørgruppe** for å velge en leverandørgruppe.
+Før du godkjenner en leverandørforespørsel, på siden **Ny leverandør**, på hurtigfanen **Generelt** velger du **Leverandørgruppe** for å velge en leverandørgruppe.
 
 Hvis den potensielle leverandørbrukeren skal ha tilgang til Supply Chain Management som en leverandørsamarbeidsbruker som representerer leverandøren, setter du den tilgangstillatelsen for leverandørsamarbeid til **Ja**. Hvis du vil deaktivere brukerkontoen som den potensielle leverandøren bruker til å registrere, setter du denne tillatelsen til **Nei**.
 
-Hvis tilgangtillatelsen for leverandørensamarbeid er satt til **Ja** , når leverandørforespørselen er godkjent, sendes en forespørsel om å endre brukerens roller, slik at brukeren har rollene som er definert for typen **Leverandør** i **Eksterne roller**. Hvis denne tillatelsen er satt til **Nei** , når leverandørforespørselen er godkjent, sendes en forespørsel om å deaktivere brukeren. I så fall må arbeidsflyten for å deaktivere en brukerforespørsel, settes opp.
+Hvis tilgangtillatelsen for leverandørensamarbeid er satt til **Ja**, når leverandørforespørselen er godkjent, sendes en forespørsel om å endre brukerens roller, slik at brukeren har rollene som er definert for typen **Leverandør** i **Eksterne roller**. Hvis denne tillatelsen er satt til **Nei**, når leverandørforespørselen er godkjent, sendes en forespørsel om å deaktivere brukeren. I så fall må arbeidsflyten for å deaktivere en brukerforespørsel, settes opp.
 
 Nummerserien for opprettelse av leverandører fra leverandørforespørsler for en leverandørkonto som skal opprettes når leverandørforespørselen er godkjent, må settes til **Automatisk**.
 
@@ -162,7 +162,7 @@ Når en leverandørforespørsel er avvist, vises statusen **Avvist** på både i
 
 De forskjellige statusene til en registreringsforespørsel for potensiell leverandør viser en oversikt over fremdriften for forespørselen.
 
-Ved hjelp av **Slett** -handlingen i registreringsforespørselen om potensiell leverandør kan du rydde og fjerne kjeden med poster som er opprettet, og du kan deaktivere brukerkontoen. Resultatet av **Slett** -handlingen varierer, avhengig av statusen for registreringsforespørselen for potensiell leverandør, som vist i følgende tabell.
+Ved hjelp av **Slett**-handlingen i registreringsforespørselen om potensiell leverandør kan du rydde og fjerne kjeden med poster som er opprettet, og du kan deaktivere brukerkontoen. Resultatet av **Slett**-handlingen varierer, avhengig av statusen for registreringsforespørselen for potensiell leverandør, som vist i følgende tabell.
 
 
 |          Status          |                                                                                     Statusbeskrivelse                                                                                      |                                                                                                                                                            Resultatet av Slett-handlingen                                                                                                                                                             |

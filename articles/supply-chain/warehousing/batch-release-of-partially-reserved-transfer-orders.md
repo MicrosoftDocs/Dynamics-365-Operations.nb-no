@@ -18,11 +18,11 @@ ms.author: pjacobse
 ms.search.validFrom: 2017-09-20
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 7807ae109a4a708f3530112feed1a4fb210a30ef
-ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: nb-NO
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4016297"
+ms.locfileid: "4434771"
 ---
 # <a name="batch-release-of-partially-reserved-transfer-orders"></a>Satsvis frigivelse av delvis reserverte overføringsordrer
 
@@ -45,15 +45,15 @@ Før en bestilling kan frigis ut til et lager i et parti, må oppfyllelseskriter
 
 Oppfyllingsregler for overføringsordrer og salgsordrer er spesifisert på bedriftsnivå. Avhengig av oppsettet av oppfyllelsesreglene, vil frigivelsen av bestillinger i en batch aksepteres eller avvises. Ordrene blir deretter behandlet tilsvarende.
 
--   For å opprette oppfyllelsesregler for overføringsordrer og salgsordrer, klikk på **Lagerstyring** \> **Oppsett** \> **Frigi til lager** \> **Oppfyllelsesregler** , og opprett deretter oppfyllelsesregler ved å skrive inn et navn og en beskrivelse.
+-   For å opprette oppfyllelsesregler for overføringsordrer og salgsordrer, klikk på **Lagerstyring** \> **Oppsett** \> **Frigi til lager** \> **Oppfyllelsesregler**, og opprett deretter oppfyllelsesregler ved å skrive inn et navn og en beskrivelse.
 
--   For å angi en oppfyllelseshastighet, en verditype og meldingen som vises hvis oppfyllelsesreglene brytes, klikker du **Lagerstyring** \> **Oppsett** \> **Frigi til lager** \> **Oppfyllelsesregler** , og setter deretter feltene **Oppfyllelsessats** , **Verditype** og **Melding ved brudd på oppfyllelse**.
+-   For å angi en oppfyllelseshastighet, en verditype og meldingen som vises hvis oppfyllelsesreglene brytes, klikker du **Lagerstyring** \> **Oppsett** \> **Frigi til lager** \> **Oppfyllelsesregler**, og setter deretter feltene **Oppfyllelsessats**,**Verditype** og **Melding ved brudd på oppfyllelse**.
 
 ### <a name="set-the-fulfillment-policies-for-transfer-orders-and-sales-orders"></a>Angi oppfyllelsessregler for overføringsordrer og salgsordrer
 
--   For å angi oppfyllelsesregler for overføringsordrer, klikk **Administrering av lagerbeholdning** \> **Oppsett** \> **Parametere for beholdning og lagerstyring** \> **Overføringsordrer** \> **Lagerstyring** , og velger deretter en oppfyllelsesregel for overføringsordre.
+-   For å angi oppfyllelsesregler for overføringsordrer, klikk **Administrering av lagerbeholdning** \> **Oppsett** \> **Parametere for beholdning og lagerstyring** \> **Overføringsordrer** \> **Lagerstyring**, og velger deretter en oppfyllelsesregel for overføringsordre.
 
--   For å angi oppfyllelsesregler for salgsordrer, klikk **Kundefordringer** \> **Oppsett** \> **Parametere for kundefordringer** \> **Lagerstyring** , og velger deretter en oppfyllelsesregel for salgsordre.
+-   For å angi oppfyllelsesregler for salgsordrer, klikk **Kundefordringer** \> **Oppsett** \> **Parametere for kundefordringer** \> **Lagerstyring**, og velger deretter en oppfyllelsesregel for salgsordre.
 
 ## <a name="allow-release-in-a-batch-and-specify-the-quantity-that-should-be-release-in-a-batch"></a>Tillat frigivelse i en batch og angi mengden som skal frigis i en batch
 
@@ -61,6 +61,6 @@ En batchjobb brukes til å frigi ordrer til et lager i en batch. Parametrene som
 
 Parameteren **Mengde** angir om hele mengden eller den fysisk reserverte mengden skal frigis i batchen. Parameteren **Tillate frigivelse av delvis frigitte ordrer** bestemmer om bestillinger i batchen skal aksepteres eller avvises dersom de delvis ble frigitt tidligere.
 
--   For å angi parametere for overføringsordre, **Mengde** og **Tillate frigivelse av delvis frigitte ordrer** , klikk **Lagerstyring** \> **Frigi til lager** \> **Automatisk frigivelse for overføringsordrer**
+-   For å angi parametere for overføringsordre, **Mengde** og **Tillate frigivelse av delvis frigitte ordrer**, klikk **Lagerstyring** \> **Frigi til lager** \> **Automatisk frigivelse for overføringsordrer**
 
--   For å angi parametere for salgsordre, **Mengde** og **Tillate frigivelse av delvis frigitte ordrer** , klikk **Lagerstyring** \> **Frigi til lager** \> **Automatisk frigivelse for salgsordrer**
+-   For å angi parametere for salgsordre, **Mengde** og **Tillate frigivelse av delvis frigitte ordrer**, klikk **Lagerstyring** \> **Frigi til lager** \> **Automatisk frigivelse for salgsordrer**

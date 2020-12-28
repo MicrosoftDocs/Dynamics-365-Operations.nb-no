@@ -20,11 +20,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 48a1943833408767fe77456f66bbe109170a29e2
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3985663"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4434698"
 ---
 # <a name="activity-based-subcontracting"></a>Aktivitetsbasert utsetting
 
@@ -32,7 +32,7 @@ ms.locfileid: "3985663"
 
 Dette emnet beskriver i detalj hvordan du bruker r aktiviteter i underleveranser i en produksjonsflyt for lean manufacturing.
 
-I Microsoft Dynamics 365 Supply Chain Management er det to fremgangsmåter for utsetting: produksjonsordrer og lean manufacturing. I lean manufacturing-tilnærmingen er utsettingen av arbeid modellert som en tjeneste som er knyttet til en aktivitet i en produksjonsflyt. En spesiell kostgruppetype som heter **Direkte utsetting** , er introdusert, og utsettingstjenester er ikke lenger en del av en stykkliste. Kostnadsregnskapet for underleveransearbeid er fullstendig integrert i etterkalkuleringsløsningen for lean manufacturing.
+I Microsoft Dynamics 365 Supply Chain Management er det to fremgangsmåter for utsetting: produksjonsordrer og lean manufacturing. I lean manufacturing-tilnærmingen er utsettingen av arbeid modellert som en tjeneste som er knyttet til en aktivitet i en produksjonsflyt. En spesiell kostgruppetype som heter **Direkte utsetting**, er introdusert, og utsettingstjenester er ikke lenger en del av en stykkliste. Kostnadsregnskapet for underleveransearbeid er fullstendig integrert i etterkalkuleringsløsningen for lean manufacturing.
 
 ## <a name="production-flows-that-involve-subcontractors"></a>Produksjonsflyter som involverer underleverandører
 Det grunnleggende prinsippet til en produksjonsflyt endres ikke når aktiviteter er underleveranser. Materiale flyter fremdeles mellom lokasjoner, prosessaktiviteter konverterer materiale til produkter, og overføringsaktiviteter flytter materiale eller produkter fra én lokasjon til en annen. Du kan modellere lokasjoner og arbeidsceller som leverandøradministrert ved å tilordne leverandørkontoen til et lager eller en ressurs for en ressursgruppe.  
@@ -41,7 +41,7 @@ Basert på disse funksjonene krever ikke lean manufacturing noen bestemte funksj
 
 En underleverandør jobber for eksempel fra et supermarked som befinner seg hos underleverandøren. Når håndteringsenheter tømmes hos underleverandøren, returneres kanban-kortene til monteringscellen med den neste forsendelsen. Supermarkedet hos underleverandøren blir deretter etterfylt. Overføringer til og fra underleverandøren kan modelleres som eksplisitte overføringsaktiviteter for å støtte en plukkings- og forsendelsesprosess. Hvis en eksplisitt registrering ikke er nødvendig for å støtte den fysiske transporten, kan overføringsaktivitetene utelates.  
 
-En underleverandør kan brukes til å belastningsfordele den overordnede kapasiteten for produksjonsflyten. En produksjonsflyt modelleres for eksempel ved hjelp av planlagte kanban-regler. Planleggeren bruker Kanban-plankortet til å planlegge og nivåbelaste begge arbeidscellene ved behov. Planleggeren overvåker også den konsoliderte forsyningsplanen for supermarkedet på siden **Forsyningsplan** . Flere underleverandører kan modelleres i én eller flere produksjonsflyter, og det kan være flere kanban-regler som kan brukes til å gi det samme produktet til samme sted gjennom ulike aktiviteter. Planleggeren kan konvertere Kanbaner til en alternativ Kanban-regel for å planlegge på nytt en Kanban som opprinnelig ble opprettet for intern produksjon til en alternativ prosess. Arbeidscellens underleveransetype har faktisk ingen innvirkning på produksjonsflyten. Det samme arbeidsprinsippet gjelder for to parallelle interne arbeidsceller eller to underleveranseceller.   
+En underleverandør kan brukes til å belastningsfordele den overordnede kapasiteten for produksjonsflyten. En produksjonsflyt modelleres for eksempel ved hjelp av planlagte kanban-regler. Planleggeren bruker Kanban-plankortet til å planlegge og nivåbelaste begge arbeidscellene ved behov. Planleggeren overvåker også den konsoliderte forsyningsplanen for supermarkedet på siden **Forsyningsplan**. Flere underleverandører kan modelleres i én eller flere produksjonsflyter, og det kan være flere kanban-regler som kan brukes til å gi det samme produktet til samme sted gjennom ulike aktiviteter. Planleggeren kan konvertere Kanbaner til en alternativ Kanban-regel for å planlegge på nytt en Kanban som opprinnelig ble opprettet for intern produksjon til en alternativ prosess. Arbeidscellens underleveransetype har faktisk ingen innvirkning på produksjonsflyten. Det samme arbeidsprinsippet gjelder for to parallelle interne arbeidsceller eller to underleveranseceller.   
 
 På samme måte som med andre aktiviteter i en produksjonsflyt, kan aktiviteter i underleveranser forbruke og levere lagervarer, ikke-lagervarer (arbeid pågår \[VIA\]), og halvfabrikata og produkter. Prosessene for planlegging og utføring av aktiviteter i underleveranser er de samme i alle tilfeller. I tillegg behandler disse det samme som prosessene for internt arbeid.
 
@@ -74,7 +74,7 @@ Dette kravet fremtvinger bruk av først-inn-først-ut-lagermodellen. **Merk:** K
 Hvis du vil konfigurere en prosessaktivitet som en aktivitet i underleveranser, følger du denne fremgangsmåten.
 
 1.  Konfigurer en arbeidscelle for underleveranse. Hvis du vil konfigurere en arbeidscelle som en underleveranse, må du opprette en ressurs av typen **Leverandør** og knytte den til arbeidscellen (ressursgruppen). En kostnadskategori for kjøretid av kostgruppetypen **Direkte utsetting** skal tilordnes til arbeidscellen. Kostnadskategoriene for oppsett og antall er ikke nødvendig.
-2.  Etter at en prosessaktivitet er opprettet og knyttet til en arbeidscelle for underleveranse, må du konfigurere en tjeneste for aktiviteten før produksjonsflytversjonen kan aktiveres. Du fullfører dette trinnet på siden **Aktivitets** **detaljer** . For aktiviteter som er knyttet til en arbeidscelle for underleveranse, vises hurtigfanen **Tjenestevilkår** . Legg til en standardtjeneste som er gyldig for alle varer for utdata, i denne hurtigfanen. Hvis bestemte utdatavarer krever ulike tjenester eller andre parametere for serviceberegning (for eksempel et annet tjenesteforhold), kan du legge til andre tjenester i aktiviteten.
+2.  Etter at en prosessaktivitet er opprettet og knyttet til en arbeidscelle for underleveranse, må du konfigurere en tjeneste for aktiviteten før produksjonsflytversjonen kan aktiveres. Du fullfører dette trinnet på siden **Aktivitets** **detaljer**. For aktiviteter som er knyttet til en arbeidscelle for underleveranse, vises hurtigfanen **Tjenestevilkår**. Legg til en standardtjeneste som er gyldig for alle varer for utdata, i denne hurtigfanen. Hvis bestemte utdatavarer krever ulike tjenester eller andre parametere for serviceberegning (for eksempel et annet tjenesteforhold), kan du legge til andre tjenester i aktiviteten.
 
 ## <a name="subcontracted-transfer-activities"></a>Overføringsaktiviteter i underleveranser
 En overføringsaktivitet er konfigurert som en aktivitet i underleveranse, avhengig av innstillingen for **Fraktet av** for overføringsaktiviteten. Følgende alternativer er tilgjengelige:
@@ -83,7 +83,7 @@ En overføringsaktivitet er konfigurert som en aktivitet i underleveranse, avhen
 -   **Mottaker** – Aktiviteten er en underleveranse hvis overføringen til lageret administreres av en leverandør (som definert av en egenskap for lageret). Alle valgte innkjøpsavtaler for tjenester må ha samme leverandør-ID som lageret.
 -   **Transportør** – Aktiviteten er en underleveranse til en leverandør som tilbyr tjenesten. For å være gyldig må en transportør opprettes for lagerstyring og må ha en tilordnet leverandørkonto.
 
-Som for prosessaktiviteter må du konfigurere en standardtjeneste for overføringsaktiviteter i underleveranser på siden **Tjenestevilkår** hurtigfanen **Aktivitets** **detaljer** .
+Som for prosessaktiviteter må du konfigurere en standardtjeneste for overføringsaktiviteter i underleveranser på siden **Tjenestevilkår** hurtigfanen **Aktivitets** **detaljer**.
 
 ## <a name="service-quantity-calculation"></a>Beregning av tjenesteantall
 Hele kjøpsprosessen er basert på en varereferanse for en tjeneste. Denne varereferansen måles i en måleenhet for en tjeneste. Tjenester måles vanligvis i antall tjenester (enheter) eller i tid. Du kan bruke følgende metoder for å beregne serviceantallet, basert på den registrerte fullføringen av kanban-jobber:

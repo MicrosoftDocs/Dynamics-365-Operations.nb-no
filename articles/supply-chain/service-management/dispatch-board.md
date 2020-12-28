@@ -19,11 +19,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 7c1aafa15b0e4ba9205f19a00ae19d2c84ce6fa0
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3984064"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4434325"
 ---
 #  <a name="dispatch-board"></a>Tjenestefordeling 
 
@@ -41,7 +41,7 @@ En tjenestefordeling er den sentrale plassen der du kan vise status for aktivite
 
   - Se gjennom listen over serviceaktiviteter som ikke har blitt fordelt.
 
-Hvis du vil ha informasjon om hvordan du utfører bestemte oppgaver på en fordelingstavle, kan du se emnene i **Se også** -delen.
+Hvis du vil ha informasjon om hvordan du utfører bestemte oppgaver på en fordelingstavle, kan du se emnene i **Se også**-delen.
 
 ## <a name="see-also"></a>Se også
 

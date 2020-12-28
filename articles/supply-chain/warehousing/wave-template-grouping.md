@@ -17,11 +17,11 @@ ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: Release 10.0.8
 ms.openlocfilehash: 9cbc0b6655de740628bcf3709d250ac02238038b
-ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: nb-NO
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4015832"
+ms.locfileid: "4434818"
 ---
 # <a name="wave-template-grouping"></a>Gruppering av bølgemal
 
@@ -34,7 +34,7 @@ Bølgemalgruppering gjør det mulig for systemet å bruke [bølgemaloppsett](tas
 
 ## <a name="turn-on-the-wave-template-grouping-feature"></a>Aktivere funksjonen Bølgemalgruppering
 
-Før du kan bruke *Bølgemalgruppering* -funksjonen, må den aktiveres i systemet. Administratorer kan bruke innstillingene for [funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til å kontrollere funksjonsstatusen og aktivere den hvis den kreves. I **Funksjonsadministrering** -arbeidsområdet er denne funksjonen oppført på følgende måte:
+Før du kan bruke *Bølgemalgruppering*-funksjonen, må den aktiveres i systemet. Administratorer kan bruke innstillingene for [funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til å kontrollere funksjonsstatusen og aktivere den hvis den kreves. I **Funksjonsadministrering**-arbeidsområdet er denne funksjonen oppført på følgende måte:
 
 - **Modul:** *Lagerstyring*
 - **Funksjonsnavn:** *Bølgemalgruppering*
@@ -44,16 +44,16 @@ Før du kan bruke *Bølgemalgruppering* -funksjonen, må den aktiveres i systeme
 Hvis du vil gjøre bølgemalgruppering tilgjengelig, følger du disse trinnene for å konfigurere [bølgemalen](tasks/configure-wave-processing.md).
 
 1. Gå til **Lagerstyring \> Oppsett \> Bølger \> Bølgemaler**.
-1. Velg bølgemalen du vil sette opp, i venstre rute. Hvis du forbereder deg til å arbeide gjennom scenariet senere i dette emnet ved hjelp av demodata, velger du **62 Standardforsendelse** -malen.
+1. Velg bølgemalen du vil sette opp, i venstre rute. Hvis du forbereder deg til å arbeide gjennom scenariet senere i dette emnet ved hjelp av demodata, velger du **62 Standardforsendelse**-malen.
 1. Velg **Rediger** for å legge siden inn i redigeringsmodus.
-1. Angi følgende verdier i **Generelt** -hurtigfanen:
+1. Angi følgende verdier i **Generelt**-hurtigfanen:
 
     - **Automatiser bølgeoppretting:** *Ja*
     - **Tilordne til åpne bølger:** *Ja*
     - **Behandle bølge ved frigivelse til lager:** *Nei*
 
 1. I handlingsruten velger du **Rediger spørring** for å åpne dialogboksen for spørring.
-1. I dialogboksen for spørring, på **Sortering** -fanen, går du gjennom sorteringskriteriene, og kontroller at det finnes en regel som inkluderer feltet som du vil bruke til å gruppere bølger.
+1. I dialogboksen for spørring, på **Sortering**-fanen, går du gjennom sorteringskriteriene, og kontroller at det finnes en regel som inkluderer feltet som du vil bruke til å gruppere bølger.
 
     Hvis du forbereder deg til å arbeide gjennom scenariet ved hjelp av demodata, legger du til en rad som har følgende verdier:
 
@@ -68,9 +68,9 @@ Hvis du vil gjøre bølgemalgruppering tilgjengelig, følger du disse trinnene f
 
 1. Velg **OK** for å lagre endringene og lukke dialogboksen for spørring.
 1. Velg **Bølgemalgruppering** i handlingsruten.
-1. På **Bølgemalgruppering** -siden velger du **Grupper etter** -avmerkingsboksen for hver rad du vil bruke til å gruppere ordrelinjer i bølger, etter behov. Hvis du er klar til å arbeide gjennom scenariet ved hjelp av demondata, merker du av **Grupper etter** -avmerkingsboksen for *Transportørtjeneste* -raden.
+1. På **Bølgemalgruppering**-siden velger du **Grupper etter**-avmerkingsboksen for hver rad du vil bruke til å gruppere ordrelinjer i bølger, etter behov. Hvis du er klar til å arbeide gjennom scenariet ved hjelp av demondata, merker du av **Grupper etter**-avmerkingsboksen for *Transportørtjeneste*-raden.
 1. Velg **Lagre**.
-1. Lukk **Bølgemalgruppering** -siden.
+1. Lukk **Bølgemalgruppering**-siden.
 1. Velg **Lagre** for å lagre malen.
 
 ## <a name="scenario"></a>Scenario
@@ -93,29 +93,29 @@ Før du begynner, klargjør du bølgemalen som beskrevet i delen [Angi en bølge
 
 1. Gå til **Salg og markedsføring \> Salgsordrer \> Alle salgsordrer**.
 1. Velg **Ny** for å opprette en salgsordre.
-1. I **Opprett salgsordre** -dialogboksen angir du følgende verdier:
+1. I **Opprett salgsordre**-dialogboksen angir du følgende verdier:
 
-    - På **Kunde** -hurtigfanen angir du **Kundekonto** -feltet til *US-004*.
-    - På hurtigfanen **Generelt** angir du **Lager** -feltet til *62*.
+    - På **Kunde**-hurtigfanen angir du **Kundekonto**-feltet til *US-004*.
+    - På hurtigfanen **Generelt** angir du **Lager**-feltet til *62*.
 
-1. Velg **OK** for å opprette salgsorden og lukke **Opprett salgsordre** -dialogboksen.
-1. Den nye salgsordren åpnes i **Linjer** -visningen. Noter deg salgsordrenummeret.
-1. Bytt til **Topptekst** -visningen.
-1. På **Levering** -hurtigfanen, i **Transport** -inndelingen angir du følgende verdier:
+1. Velg **OK** for å opprette salgsorden og lukke **Opprett salgsordre**-dialogboksen.
+1. Den nye salgsordren åpnes i **Linjer**-visningen. Noter deg salgsordrenummeret.
+1. Bytt til **Topptekst**-visningen.
+1. På **Levering**-hurtigfanen, i **Transport**-inndelingen angir du følgende verdier:
 
     - **Transportør:** *Luftlast*
     - **Transportørtjeneste:** *Lufttransport*
 
-1. Gå tilbake til **Linjer** -visningen.
-1. I **Salgsordrelinjer** -inndelingen velger du **Legg til linje** for å legge til en linje i rutenettet.
+1. Gå tilbake til **Linjer**-visningen.
+1. I **Salgsordrelinjer**-inndelingen velger du **Legg til linje** for å legge til en linje i rutenettet.
 1. På den nye linjen angir du følgende verdier:
 
     - **Varenummer:** *A0002*
     - **Antall:** *2*
 
-1. Velg den nye ordrelinjen og deretter på **Beholdning** -menyen over rutenett, velger du **Reservasjon**.
-1. På **Reservasjon** -siden, i handlingsruten, velger du **Reserver parti** for å reservere den valgte linjens fulle antall i lageret.
-1. Lukk **Reservasjon** -siden for å gå tilbake til salgsordren.
+1. Velg den nye ordrelinjen og deretter på **Beholdning**-menyen over rutenett, velger du **Reservasjon**.
+1. På **Reservasjon**-siden, i handlingsruten, velger du **Reserver parti** for å reservere den valgte linjens fulle antall i lageret.
+1. Lukk **Reservasjon**-siden for å gå tilbake til salgsordren.
 1. Velg **Frigi til lager** i gruppen **Handlinger** i kategorien **Lager** i handlingsruten.
 1. Du mottar en informasjonsmelding som viser forsendelse og bølge for denne ordren. Skriv ned ID-nummeret for bølgen og forsendelses-ID-numre.
 
@@ -124,35 +124,35 @@ Før du begynner, klargjør du bølgemalen som beskrevet i delen [Angi en bølge
 1. Gå til **Lagerstyring \> Utgående bølger \> Forsendelsesbølger \> Alle bølger**.
 1. Velg bølge-ID-en som ble opprettet fra salgsordren.
 1. Velg bølge-ID-koblingen for å åpne siden for bølgedetaljer.
-1. Legg merke til at forsendelsen er lagt til i **Bølgelinjer** -hurtigfanen.
+1. Legg merke til at forsendelsen er lagt til i **Bølgelinjer**-hurtigfanen.
 
 #### <a name="create-sales-order-2"></a>Opprett salgsordre 2
 
 1. Gå til **Salg og markedsføring \> Salgsordrer \> Alle salgsordrer**.
 1. Velg **Ny** for å opprette en salgsordre.
-1. I **Opprett salgsordre** -dialogboksen angir du følgende verdier:
+1. I **Opprett salgsordre**-dialogboksen angir du følgende verdier:
 
-    - På **Kunde** -hurtigfanen angir du **Kundekonto** -feltet til *US-005*.
-    - På hurtigfanen **Generelt** angir du **Lager** -feltet til *62*.
+    - På **Kunde**-hurtigfanen angir du **Kundekonto**-feltet til *US-005*.
+    - På hurtigfanen **Generelt** angir du **Lager**-feltet til *62*.
 
-1. Velg **OK** for å opprette salgsorden og lukke **Opprett salgsordre** -dialogboksen.
-1. Den nye salgsordren åpnes i **Linjer** -visningen. Noter deg salgsordrenummeret.
-1. Bytt til **Topptekst** -visningen.
-1. På **Levering** -hurtigfanen, i **Transport** -inndelingen angir du følgende verdier:
+1. Velg **OK** for å opprette salgsorden og lukke **Opprett salgsordre**-dialogboksen.
+1. Den nye salgsordren åpnes i **Linjer**-visningen. Noter deg salgsordrenummeret.
+1. Bytt til **Topptekst**-visningen.
+1. På **Levering**-hurtigfanen, i **Transport**-inndelingen angir du følgende verdier:
 
     - **Transportør:** *Blomsterflytting*
     - **Transportørtjeneste:** *Std*
 
-1. Gå tilbake til **Linjer** -visningen.
-1. I **Salgsordrelinjer** -inndelingen velger du **Legg til linje** for å legge til en linje i rutenettet.
+1. Gå tilbake til **Linjer**-visningen.
+1. I **Salgsordrelinjer**-inndelingen velger du **Legg til linje** for å legge til en linje i rutenettet.
 1. På den nye linjen angir du følgende verdier:
 
     - **Varenummer:** *A0001*
     - **Antall:** *1*
 
-1. Velg den nye ordrelinjen og deretter på **Beholdning** -menyen over rutenett, velger du **Reservasjon**.
-1. På **Reservasjon** -siden, i handlingsruten, velger du **Reserver parti** for å reservere den valgte linjens fulle antall i lageret.
-1. Lukk **Reservasjon** -siden for å gå tilbake til salgsordren.
+1. Velg den nye ordrelinjen og deretter på **Beholdning**-menyen over rutenett, velger du **Reservasjon**.
+1. På **Reservasjon**-siden, i handlingsruten, velger du **Reserver parti** for å reservere den valgte linjens fulle antall i lageret.
+1. Lukk **Reservasjon**-siden for å gå tilbake til salgsordren.
 1. Velg **Frigi til lager** i gruppen **Handlinger** i kategorien **Lager** i handlingsruten.
 1. Du mottar en informasjonsmelding som viser forsendelse og bølge for denne ordren. Skriv ned ID-nummeret for bølgen og forsendelses-ID-numre. Legg merke til at bølge-ID-en er forskjellig fra bølge-ID-en i den første salgsordren.
 
@@ -161,7 +161,7 @@ Før du begynner, klargjør du bølgemalen som beskrevet i delen [Angi en bølge
 1. Gå til **Lagerstyring \> Utgående bølger \> Forsendelsesbølger \> Alle bølger**.
 1. Velg bølge-ID-en som ble opprettet fra den andre salgsordren.
 1. Velg bølge-ID-koblingen for å åpne siden for bølgedetaljer.
-1. Legg merke til at forsendelsen er lagt til i **Bølgelinjer** -hurtigfanen.
+1. Legg merke til at forsendelsen er lagt til i **Bølgelinjer**-hurtigfanen.
 
 En ny bølge ble opprettet for denne forsendelsen, fordi den bruker en annen transportørtjeneste enn den første salgsordren.
 
@@ -169,29 +169,29 @@ En ny bølge ble opprettet for denne forsendelsen, fordi den bruker en annen tra
 
 1. Gå til **Salg og markedsføring \> Salgsordrer \> Alle salgsordrer**.
 1. Velg **Ny** for å opprette en salgsordre.
-1. I **Opprett salgsordre** -dialogboksen angir du følgende verdier:
+1. I **Opprett salgsordre**-dialogboksen angir du følgende verdier:
 
-    - På **Kunde** -hurtigfanen angir du **Kundekonto** -feltet til *US-006*.
-    - På hurtigfanen **Generelt** angir du **Lager** -feltet til *62*.
+    - På **Kunde**-hurtigfanen angir du **Kundekonto**-feltet til *US-006*.
+    - På hurtigfanen **Generelt** angir du **Lager**-feltet til *62*.
 
-1. Velg **OK** for å opprette salgsorden og lukke **Opprett salgsordre** -dialogboksen.
-1. Den nye salgsordren åpnes i **Linjer** -visningen. Noter deg salgsordrenummeret.
-1. Bytt til **Topptekst** -visningen.
-1. På **Levering** -hurtigfanen, i **Transport** -inndelingen angir du følgende verdier:
+1. Velg **OK** for å opprette salgsorden og lukke **Opprett salgsordre**-dialogboksen.
+1. Den nye salgsordren åpnes i **Linjer**-visningen. Noter deg salgsordrenummeret.
+1. Bytt til **Topptekst**-visningen.
+1. På **Levering**-hurtigfanen, i **Transport**-inndelingen angir du følgende verdier:
 
     - **Transportør:** *Luftlast*
     - **Transportørtjeneste:** *Lufttransport*
 
-1. Gå tilbake til **Linjer** -visningen.
-1. I **Salgsordrelinjer** -inndelingen velger du **Legg til linje** for å legge til en linje i rutenettet.
+1. Gå tilbake til **Linjer**-visningen.
+1. I **Salgsordrelinjer**-inndelingen velger du **Legg til linje** for å legge til en linje i rutenettet.
 1. På den nye linjen angir du følgende verdier:
 
     - **Varenummer:** *A0001*
     - **Antall:** *1*
 
-1. Velg den nye ordrelinjen og deretter på **Beholdning** -menyen over rutenett, velger du **Reservasjon**.
-1. På **Reservasjon** -siden, i handlingsruten, velger du **Reserver parti** for å reservere den valgte linjens fulle antall i lageret.
-1. Lukk **Reservasjon** -siden for å gå tilbake til salgsordren.
+1. Velg den nye ordrelinjen og deretter på **Beholdning**-menyen over rutenett, velger du **Reservasjon**.
+1. På **Reservasjon**-siden, i handlingsruten, velger du **Reserver parti** for å reservere den valgte linjens fulle antall i lageret.
+1. Lukk **Reservasjon**-siden for å gå tilbake til salgsordren.
 1. Velg **Frigi til lager** i gruppen **Handlinger** i kategorien **Lager** i handlingsruten.
 1. Du mottar en informasjonsmelding som viser forsendelse og bølge for denne ordren. Skriv ned ID-nummeret for bølgen og forsendelses-ID-numre. Forsendelsen er tilordnet den eksisterende bølgen fra den første salgsordren.
 
@@ -200,4 +200,4 @@ En ny bølge ble opprettet for denne forsendelsen, fordi den bruker en annen tra
 1. Gå til **Lagerstyring \> Utgående bølger \> Forsendelsesbølger \> Alle bølger**.
 1. Velg bølge-ID-en som ble opprettet fra den tredje salgsordren.
 1. Velg bølge-ID-koblingen for å åpne siden for bølgedetaljer.
-1. Legg merke til at forsendelsen er lagt til på **Bølgelinjer** -hurtigfanen sammen med forsendelsen for den første salgsordren.
+1. Legg merke til at forsendelsen er lagt til på **Bølgelinjer**-hurtigfanen sammen med forsendelsen for den første salgsordren.

@@ -19,11 +19,11 @@ ms.author: mkirknel
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
 ms.openlocfilehash: 617fca55226e216197c385c88a9d7a8e3de03b03
-ms.sourcegitcommit: c986d5234b81d31cc6d054298be6f6ec92c1754c
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "3889991"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4434440"
 ---
 # <a name="maintenance-downtime-activities"></a>Vedlikeholdsnedetid
 
@@ -94,6 +94,6 @@ Illustrasjonen nedenfor viser et eksempel på detaljvisningen **Aktiviteter for 
 
 ![Figur 4](media/22-preventive-maintenance.png)
 
-- Du kan kopiere aktiva fra én aktivitet for vedlikeholdsnedetid til en annen. I **Alle aktiviteter for vedlikeholdsnedetid**velger du **Kopier aktiviteter for vedlikeholdsnedetid**-knappen, gjør valgene i feltene **Fra aktiviteter for vedlikeholdsnedetid** og **Til aktiviteter for vedlikeholdsnedetid**, og klikker på **OK**.
+- Du kan kopiere aktiva fra én aktivitet for vedlikeholdsnedetid til en annen. I **Alle aktiviteter for vedlikeholdsnedetid** velger du **Kopier aktiviteter for vedlikeholdsnedetid**-knappen, gjør valgene i feltene **Fra aktiviteter for vedlikeholdsnedetid** og **Til aktiviteter for vedlikeholdsnedetid**, og klikker på **OK**.
 - I **Alle aktiviteter for vedlikeholdsnedetid** klikker du på knappen **Vedlikeholdsplanlinjer** eller **Aktive arbeidsordrer** for å åpne de tilknyttede listene og vise linjene som er knyttet til den valgte aktiviteten for vedlikeholdsnedetid.
 

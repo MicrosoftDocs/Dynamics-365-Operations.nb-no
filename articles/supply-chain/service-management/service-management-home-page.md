@@ -19,11 +19,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 451aeebd46d60251eed940016486509c4aa3f458
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3987468"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4434098"
 ---
 # <a name="service-management-overview"></a>Oversikt over servicestyring
 
@@ -48,7 +48,7 @@ Bruk rapporteringsverktøyene for å overvåke serviceordremarginer og abonnemen
 
 ## <a name="business-processes"></a>Forretningsprosesser
 
-Diagrammet nedenfor illustrerer høynivå-forretningsprosessene for **Servicestyring** , og viser hvor serviceprosesser integreres med andre moduler.
+Diagrammet nedenfor illustrerer høynivå-forretningsprosessene for **Servicestyring**, og viser hvor serviceprosesser integreres med andre moduler.
 
 [![Diagram over forretningsprosess for servicestyring](./media/sm_home_page.gif)](./media/sm_home_page.gif)
 

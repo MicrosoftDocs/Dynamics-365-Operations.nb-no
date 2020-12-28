@@ -20,11 +20,11 @@ ms.author: kamaybac
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
 ms.openlocfilehash: 0c8ef901afacd4ae191f2d01114bbf4bac38b9cd
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3985000"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4434613"
 ---
 # <a name="backflush-costing"></a>Backflush-etterkalkulering
 
@@ -51,8 +51,8 @@ For å aktivere etterkalkulering må du fullføre følgende oppsett:
 Kostarket modellerer kostnadsstrukturen for firmaet, og er bygget av kostgruppene for å klassifisere kostnaden. Kostarket har forskjellige skjemaer. Det viser kostnadsinformasjon i henhold til strukturen som er laget i den. I kostarket kan du også definere formelen som brukes til å beregne den indirekte kostnaden. Beregningsformelen kan være basert på antall, vekt, volum eller verdi.
 
 -   **Definere en etterkalkuleringsversjon.** I etterkalkuleringsversjonen definerer firmaet hvordan kostnaden skal vedlikeholdes. En etterkalkuleringsversjon kan inneholde et sett med standard kostnadsposter, eller et sett med planlagte kostnadsposter, avhengig av etterkalkuleringsversjonen som er tilordnet etterkalkuleringsversjonen. Etterkalkuleringsversjonen som brukes for etterkalkulering for lean manufacturing, må være basert på standardkostnad.
--   **Tilordne en lagermodellgruppe for frigitte produkter.** Alle produkter som er knyttet til produksjonsflyten, må tilordnes en lagermodellgruppe som bruker lagermodellgruppen **Standardkostnad** . Standardkostnad vedlikeholdes per område og aktiveringsdato. For produktstandarder kan lagermodellgruppen velges hvis kostnaden vedlikeholdes per variant eller produktstandard.
--   **Per definisjon er underleveranser ikke-lagerførte tjenester.** Aktiviteter i underleveranser har ingen lagermodellgruppe. Hvis du vil kostnadsberegne en aktivitet i underleveranser på riktig måte, må du kontrollere at serviceaktiviteten hører til en lagermodellgruppe der lagerpolicyen er satt til **Lagerført produkt = Usann** .
+-   **Tilordne en lagermodellgruppe for frigitte produkter.** Alle produkter som er knyttet til produksjonsflyten, må tilordnes en lagermodellgruppe som bruker lagermodellgruppen **Standardkostnad**. Standardkostnad vedlikeholdes per område og aktiveringsdato. For produktstandarder kan lagermodellgruppen velges hvis kostnaden vedlikeholdes per variant eller produktstandard.
+-   **Per definisjon er underleveranser ikke-lagerførte tjenester.** Aktiviteter i underleveranser har ingen lagermodellgruppe. Hvis du vil kostnadsberegne en aktivitet i underleveranser på riktig måte, må du kontrollere at serviceaktiviteten hører til en lagermodellgruppe der lagerpolicyen er satt til **Lagerført produkt = Usann**.
 
 For utdataprodukter krever kostnadsberegning som er basert på produksjonsflyten, at en standardkostnad vedlikeholdes for tjenestene som er knyttet til aktiviteter i underleveranser. Kostgruppen som er tilordnet til tjenestene, brukes til å bestemme kostnadsavvikene for aktiviteten i underleveranse.
 
@@ -65,7 +65,7 @@ Lean manufacturing for Dynamics 365 Supply Chain Management er uavhengig av rute
 
 ### <a name="calculation-that-is-based-on-the-route"></a>Beregning som er basert på ruten
 
-Beregning som er basert på en rute, er like gyldig som beregning som er basert på en produksjonsflyt. Beregning som er basert på en rute, bruker imidlertid ikke etterkalkulering for Lean manufacturing-funksjonalitet. Ruten bør bruke ressurskrav for ressursgrupper. For å unngå systematiske avvik bør den også bruke de samme arbeidscellene, eller i det minste samme kostnadskategorier. Igjen bør du unngå kostnadskategorier for oppsett og antall. De bidrar ikke til å beregne kostnadene i en mer detaljert analyse enn etterkalkulering for Lean manufacturing. Vurder resultatet av kostnadsoppdelingen for å finne ut hvilket alternativ (produksjonsflyt eller rute) du bør bruke til å beregne kostnaden. Versjonen som er nærmere utgangspunktet og gir færre avvik generelt, er det beste alternativet. I et Lean manufacturing-miljø der et produkt leveres av en enkelt produksjonsflyt og en enkelt kanban-regel, er beregningen som er basert på produksjonsflyten, sannsynligvis mer nøyaktig. For et produkt som kan leveres av Lean manufacturing og produksjonsordrer i samme område, eller som kan ha flere produksjonsflyter eller flere kanban-regler i den samme flyten, kan en beregning bli mer nøyaktige hvis den er basert på en ruteversjon som er bygget spesielt for kostnadsberegningen, ikke for produksjonen. Beregningen av produksjonsflyt må brukes til å beregne produkter som involverer bruk av underleverandører. Kostmodellene for bruk av underleverandører via produksjonsordrer og bruk av underleverandører i Lean manufacturing to ulike tilnærminger. Lean manufacturing introduserer en ny kostgruppetype, **Direkte outsourcing** , for å beregne underleveranser.
+Beregning som er basert på en rute, er like gyldig som beregning som er basert på en produksjonsflyt. Beregning som er basert på en rute, bruker imidlertid ikke etterkalkulering for Lean manufacturing-funksjonalitet. Ruten bør bruke ressurskrav for ressursgrupper. For å unngå systematiske avvik bør den også bruke de samme arbeidscellene, eller i det minste samme kostnadskategorier. Igjen bør du unngå kostnadskategorier for oppsett og antall. De bidrar ikke til å beregne kostnadene i en mer detaljert analyse enn etterkalkulering for Lean manufacturing. Vurder resultatet av kostnadsoppdelingen for å finne ut hvilket alternativ (produksjonsflyt eller rute) du bør bruke til å beregne kostnaden. Versjonen som er nærmere utgangspunktet og gir færre avvik generelt, er det beste alternativet. I et Lean manufacturing-miljø der et produkt leveres av en enkelt produksjonsflyt og en enkelt kanban-regel, er beregningen som er basert på produksjonsflyten, sannsynligvis mer nøyaktig. For et produkt som kan leveres av Lean manufacturing og produksjonsordrer i samme område, eller som kan ha flere produksjonsflyter eller flere kanban-regler i den samme flyten, kan en beregning bli mer nøyaktige hvis den er basert på en ruteversjon som er bygget spesielt for kostnadsberegningen, ikke for produksjonen. Beregningen av produksjonsflyt må brukes til å beregne produkter som involverer bruk av underleverandører. Kostmodellene for bruk av underleverandører via produksjonsordrer og bruk av underleverandører i Lean manufacturing to ulike tilnærminger. Lean manufacturing introduserer en ny kostgruppetype, **Direkte outsourcing**, for å beregne underleveranser.
 
 ## <a name="material-consumption"></a>Materialforbruk
 Når materiale forbrukes fra lager til VIA, legges kostnaden for materialer til VIA ved de faktiske standardkostnadene for en kostgruppe. Denne operasjonen skjer under følgende betingelser:
@@ -76,7 +76,7 @@ Når materiale forbrukes fra lager til VIA, legges kostnaden for materialer til 
 ## <a name="receiving-products-from-the-production-flow"></a>Mottak av produkter fra produksjonsflyten
 Du mottar varer fra produksjonsflyten under følgende betingelser:
 
--   Prosessjobber er fullført som har **Oppdater beholdning ved mottak** satt til **Ja** .
+-   Prosessjobber er fullført som har **Oppdater beholdning ved mottak** satt til **Ja**.
 -   Overføringsjobber er fullført som oppdaterer beholdning ved mottak, men som har **Oppdater beholdning ved plukking** satt til **Nei** (overføring fra VIA til beholdning). Med dette alternativet kan du motta produkter utenfor en produksjonsflyt uavhengig av stykklisten og rutekonfigurasjonen. Prosessen følger bare de fysiske flytene. Dette alternativet er spesielt godt egnet til å motta biprodukter, koprodukter eller svinn utenfor en produksjonsflyt, og for å korrigere kostnadssaldoen for VIA for produksjonsflyt i henhold til dette.
 
 Produkter som er mottatt fra produksjonsflyten, trekkes fra VIA.
@@ -85,7 +85,7 @@ Produkter som er mottatt fra produksjonsflyten, trekkes fra VIA.
 VIA-modellen for Lean manufacturing lar deg bruke kanban-håndteringsenhetsstatusen til å administrere materialer, halvfabrikata og ferdige produkter som er en del av VIA.
 
 -   **Tilordnet** - Kanbanen kan ha brukt materiale som er etterkalkulert i VIA.
--   **Mottatt** - Hvis Kanbanen refererer til en siste aktivitet der **Oppdater beholdning ved mottak** er satt til **Nei** , representerer den en full håndteringsenhet for et produkt eller et halvfabrikata som ikke er registrert på lager.
+-   **Mottatt** - Hvis Kanbanen refererer til en siste aktivitet der **Oppdater beholdning ved mottak** er satt til **Nei**, representerer den en full håndteringsenhet for et produkt eller et halvfabrikata som ikke er registrert på lager.
 
 Legg merke til materiale i VIA ikke vises i oversikten over lagerbeholdning. Det er imidlertid synlig i oversikter over kanban-antall.
 
@@ -104,7 +104,7 @@ Som en konklusjon kan Kanban-håndteringsenheter tilordnes (= i arbeid), mottas 
 ## <a name="backflush-costing"></a>Backflush-etterkalkulering
 Kjør backflush-etterkalkulering for periodisk å verdiberegne VIA og produsere en status på slutten av perioden som beregner avvikene i materialer, arbeid og indirekte kostnader. De beregnede avvikene posteres til avvikskontoene. I backflush-etterkalkuleringsprosessen brukes alle produksjonsflyter for den juridiske enheten i den samme bunkeutførelsen. Når backflush-etterkalkuleringen kjøres i en bunke, kan behandlingen være flertrådet av produksjonsflyten. Backflush-perioden er definert av en sluttdato. Du kan ikke postere nye transaksjoner til en dato når en backflush-etterkalkulering er kjørt. Du bør aldri kjøre backflush-etterkalkulering for gjeldende dato før dagen er faktisk over. Backflush-etterkalkuleringen utfører trinnene nedenfor.
 
-1.  Bestem de ubrukte antallene i produksjonsflyten per periodens sluttdato. Når backflush-etterkalkuleringen er kjørt, kan du vise de ubrukte antallene på datoen for etterkalkuleringskjøringen i dialogboksen **Ubrukte antall** .
+1.  Bestem de ubrukte antallene i produksjonsflyten per periodens sluttdato. Når backflush-etterkalkuleringen er kjørt, kan du vise de ubrukte antallene på datoen for etterkalkuleringskjøringen i dialogboksen **Ubrukte antall**.
 2.  Beregn produksjonsflytens netto realiserte forbruk over perioden.
 3.  Fjern VIA fra det realiserte ressursforbruket og produktene.
 4.  Beregn produksjonsavvik til standardkostnad for perioden. **For forbrukte komponenter for perioden:**

@@ -19,18 +19,18 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: b364c1f19888b711626312b77335b06ef3959886
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3980617"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4434322"
 ---
 # <a name="monitor-service-activities"></a>Overvåke serviceaktiviteter 
 
 [!include [banner](../includes/banner.md)]
 
 
-**Tjenestefordeling** -skjemaet gir deg en rask statusoppdatering for de ulike planlagte tjenesteaktivitetene og inneholder verktøy for sporing av den generelle serviceordreflyten i firmaet ditt.
+**Tjenestefordeling**-skjemaet gir deg en rask statusoppdatering for de ulike planlagte tjenesteaktivitetene og inneholder verktøy for sporing av den generelle serviceordreflyten i firmaet ditt.
 
 
 > [!TIP]
@@ -47,7 +47,7 @@ Mens du overvåker dagens serviceaktivitet, legger du merke til at Jens, en serv
 
 ## <a name="open-the-dispatch-board-form"></a>Åpne Tjenestefordeling-skjemaet
 
-Klikk **Servicestyring** \> **Periodisk** \> **Tjenestefordeling** .
+Klikk **Servicestyring** \> **Periodisk** \> **Tjenestefordeling**.
 
 ## <a name="see-also"></a>Se også
 

@@ -18,11 +18,11 @@ ms.author: rhaertle
 ms.search.validFrom: 2020-04-04
 ms.dyn365.ops.version: 10.0.5
 ms.openlocfilehash: 1277d2ab8bb1f2925874f7469250e164f6bde62d
-ms.sourcegitcommit: 49f3011b8a6d8cdd038e153d8cb3cf773be25ae4
+ms.sourcegitcommit: 092ef6a45f515b38be2a4481abdbe7518a636f85
 ms.translationtype: HT
 ms.contentlocale: nb-NO
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4014918"
+ms.locfileid: "4434722"
 ---
 # <a name="set-up-azure-resources-for-iot-intelligence"></a>Konfigurere Azure-ressurser for IoT-intelligens
 
@@ -140,7 +140,7 @@ Hvis du vil lagre hemmeligheten for tilkoblingsstrengen for IoT-huben, gjør du 
 4. Gå til ressursen for nøkkelhvelv.
 5. Velg **Hemmeligheter** i navigasjonsruten til venstre.
 6. Velg **Generer/Importer**.
-7. Angi et navn i **Navn** -feltet.
+7. Angi et navn i **Navn**-feltet.
 8. I feltet **Verdi** limer du inn endepunktverdien du kopierte tidligere.
 9. Velg **Opprett**.
 
@@ -154,7 +154,7 @@ Hvis du vil lagre hemmeligheten for tilkoblingsstrengen for Redis-bufferen, gjø
 4. Gå til ressursen for nøkkelhvelv.
 5. Velg **Hemmeligheter** i navigasjonsruten til venstre.
 6. Velg **Generer/Importer**.
-7. Angi et navn i **Navn** -feltet.
+7. Angi et navn i **Navn**-feltet.
 8. I feltet **Verdi** limer du inn tilkoblingsstrengen du kopierte tidligere.
 9. Velg **Opprett**.
 

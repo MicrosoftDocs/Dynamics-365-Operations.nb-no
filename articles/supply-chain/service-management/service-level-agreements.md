@@ -19,11 +19,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 01cdfe519e55ca2a9aa17f4ac181ee675b2793cf
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3982361"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4434495"
 ---
 # <a name="service-level-agreements-overview"></a>Oversikt over servicenivåavtaler       
 
@@ -38,9 +38,9 @@ Du kan opprette en rekke serviceavtalenivåer for å tilby ulike servicenivå ti
 
 ## <a name="create-a-service-level-agreement"></a>Opprett en servicenivåavtale.
 
-1.  Klikk **Servicestyring** \> **Oppsett** \> **Serviceavtaler** \> **Servicenivåavtaler** .
+1.  Klikk **Servicestyring** \> **Oppsett** \> **Serviceavtaler** \> **Servicenivåavtaler**.
 
-2.  Skriv inn navnet på servicenivåavtalen i feltet **Servicenivåavtale** .
+2.  Skriv inn navnet på servicenivåavtalen i feltet **Servicenivåavtale**.
 
 3.  Skriv inn klokkeslettet du ønsker å kunne fullføre servicebesøk som er knyttet til servicenivåavtalen. Velg deretter en kalender hvis du vil basere servicenivåavtalen på en bestemt kalender.
 
@@ -54,13 +54,13 @@ Serviceordrer som du oppretter automatisk, er ikke knyttet til en servicenivåav
 
 ## <a name="apply-the-service-level-agreement-to-the-service-agreement"></a>Bruk servicenivåavtalen for serviceavtalen
 
-1.  Klikk **Servicestyring** \> **Felles** \> **Serviceavtaler** \> **Serviceavtaler** . Velg serviceavtalen du vil bruke servicenivåavtalen for, og klikk deretter **Rediger** i **handlingsruten** .
+1.  Klikk **Servicestyring** \> **Felles** \> **Serviceavtaler** \> **Serviceavtaler**. Velg serviceavtalen du vil bruke servicenivåavtalen for, og klikk deretter **Rediger** i **handlingsruten**.
 
 2.  I feltet **Servicenivåavtale** velger servicenivåavtalen du vil tilordne.
 
 ## <a name="apply-the-service-level-agreement-to-the-service-agreement-group"></a>Bruk servicenivåavtalen for serviceavtalegruppen
 
-1.  Klikk **Servicestyring** \> **Oppsett** \> **Serviceavtaler** \> **Serviceavtalegrupper** .
+1.  Klikk **Servicestyring** \> **Oppsett** \> **Serviceavtaler** \> **Serviceavtalegrupper**.
 
 2.  I feltet **Servicenivåavtale** velger servicenivåavtalen du vil tilordne.
 

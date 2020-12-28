@@ -19,11 +19,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: f8ec7cbfea709c74b73a189c24da8978a501794d
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3984735"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4434566"
 ---
 # <a name="view-the-start-time-and-duration-of-a-service-order"></a>Vise starttidspunktet og varigheten for en serviceordre 
 
@@ -36,19 +36,19 @@ Du kan også vise når tidsregistreringen for en serviceordre startet eller stop
 
 ## <a name="view-the-start-time-for-a-service-order"></a>Vis starttidspunkt for en serviceordre
 
-1.  Klikk på **Servicestyring** \> **Felles** \> **Serviceordrer** \> **Serviceordrer** . Velg og dobbeltklikk en ordre for å åpne detaljskjemaet.
+1.  Klikk på **Servicestyring** \> **Felles** \> **Serviceordrer** \> **Serviceordrer**. Velg og dobbeltklikk en ordre for å åpne detaljskjemaet.
 
-2.  I kategorien **Generelt** kan du vise klokkeslettet da arbeidet startet for en serviceordre, i feltet **Starttidspunkt** .
+2.  I kategorien **Generelt** kan du vise klokkeslettet da arbeidet startet for en serviceordre, i feltet **Starttidspunkt**.
 
 ## <a name="view-the-time-remaining-to-complete-a-service-order"></a>Vis tiden som gjenstår for å fullføre en serviceordre
 
-1.  Klikk på **Servicestyring** \> **Felles** \> **Serviceordrer** \> **Serviceordrer** . Velg og dobbeltklikk en ordre for å åpne detaljskjemaet.
+1.  Klikk på **Servicestyring** \> **Felles** \> **Serviceordrer** \> **Serviceordrer**. Velg og dobbeltklikk en ordre for å åpne detaljskjemaet.
 
-2.  I kategorien **Generelt** kan du vise tiden som gjenstår for å fullføre en serviceordre, i feltet **Siste fullføringsklokkeslett** .
+2.  I kategorien **Generelt** kan du vise tiden som gjenstår for å fullføre en serviceordre, i feltet **Siste fullføringsklokkeslett**.
 
 ## <a name="view-the-start-time-and-stop-time-recording-entries-for-a-service-order"></a>Vis start- og stopptidsregistreringer for en serviceordre
 
-1.  Klikk på **Servicestyring** \> **Felles** \> **Serviceordrer** \> **Serviceordrer** . Velg og dobbeltklikk en ordre for å åpne detaljskjemaet.
+1.  Klikk på **Servicestyring** \> **Felles** \> **Serviceordrer** \> **Serviceordrer**. Velg og dobbeltklikk en ordre for å åpne detaljskjemaet.
 
 2.  I **handlingsruten** klikker du kategorien **Fordeling** \> **Tidsregistrering** for å åpne skjemaet **Tidsregistrering for tjenestenivåavtale** og vise tidsregistreringsoppføringene for serviceordren.
 

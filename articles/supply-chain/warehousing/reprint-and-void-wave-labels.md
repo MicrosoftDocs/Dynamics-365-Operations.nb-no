@@ -4,7 +4,7 @@ description: Dette emnet beskriver hvordan du annullerer og skriver ut eksistere
 author: GarmMSFT
 manager: PJacobse
 ms.date: 07/09/2020
-ms.topic: reprint-and-void-wave-labels
+ms.topic: article
 ms.service: dynamics-ax-applications
 ms.search.form: WHSWaveLabel, WHSWaveLabelTemplate, WHSWaveLabelLayoutRow, WHSWaveTableListPage, WHSWorkException, WHSMobileDisplayWaveLabelListLookup, WHSWaveLabelLayout, WHSWaveLabelType, WHSWaveLabelTemplateGroup
 audience: Application User
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-07-09
 ms.dyn365.ops.version: 10.0.2
-ms.openlocfilehash: af92334af28824b3fcebde5f046bd7c6da459885
-ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
+ms.openlocfilehash: 0efa9400a3bf29e4e0dd56d9138cf8c3825556c7
+ms.sourcegitcommit: a26e4963d40796da21ce6581cfb2f4d9db4f6776
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4016660"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "4434851"
 ---
 # <a name="reprint-and-void-wave-labels"></a>Skrive ut og kansellere bølgeetiketter
 
@@ -42,7 +42,7 @@ Dette emnet viser en samling scenarier som viser, gjennom eksempler, hvordan du 
 
 ## <a name="scenario-1-reprint-labels-from-the-web-client"></a>Scenario 1: Skrive ut etiketter på nytt fra webklienten
 
-Du kan vise og skrive ut bølgeetiketter på nytt fra følgende sider. På handlingsruten for hver side, i kategorien **Forsendelser** i gruppen **Beslektet informasjon** , velger du **Bølgeetiketter**.
+Du kan vise og skrive ut bølgeetiketter på nytt fra følgende sider. På handlingsruten for hver side, i kategorien **Forsendelser** i gruppen **Beslektet informasjon**, velger du **Bølgeetiketter**.
 
 - Alle forsendelser \> Forsendelsesdetaljer
 - Alle laster \> Lastdetaljer
@@ -54,14 +54,14 @@ Følg denne fremgangsmåten for å skrive ut en bølgeetikett på nytt fra webkl
 
 1. Gå til **Lagerstyring \> Utgående bølger \> Forsendelsesbølger \> Alle bølger**.
 1. Velg bølgen det skal skrives ut etiketter på nytt fra.
-1. I handlingsruten, i kategorien **Bølge** i **Skriv ut** -gruppen, velger du **Bølgeetiketter**.
+1. I handlingsruten, i kategorien **Bølge** i **Skriv ut**-gruppen, velger du **Bølgeetiketter**.
 1. Følg én av eller begge av disse trinnene:
 
     - For å skrive ut etiketten velger du en skriver i feltet **Skrivernavn**. (La dette feltet stå tomt hvis du bare vil oppdatere bølgeetikettdetaljene uten å skrive ut etiketten på nytt.)
     - Hvis du vil oppdatere etiketten, merker du av for **Oppdater bølgeetikettdetaljer**. (La avmerkingsboksen være tom hvis du bare vil skrive ut den forrige etiketten på nytt.)
 
     > [!NOTE]
-    > Hver gang en bølgeetikett skrives ut eller skrives ut på nytt, konverteres dataene ved hjelp av det aktuelle oppsettet for bølgeetiketter, og alle plassholdere erstattes med faktiske verdier. Den resulterende strengen lagres som en post i bølgeetikettloggen. Hvis merket er fjernet for **Oppdater bølgeetikettdetaljer** , brukes de lagrede ZPL- dataene (Zebra Programming Language) når en etikett skrives ut på nytt. Hvis det er merket av for **Oppdater bølgeetikettdetaljer** genereres en ny streng. De eksisterende bølgeetikettene omberegnes også, og eventuelle ekstra etiketter (for eksempel hvis de tilknyttede arbeidslinjene er annullert eller endret) er merket som **Annullert** og skrives ikke ut på nytt.
+    > Hver gang en bølgeetikett skrives ut eller skrives ut på nytt, konverteres dataene ved hjelp av det aktuelle oppsettet for bølgeetiketter, og alle plassholdere erstattes med faktiske verdier. Den resulterende strengen lagres som en post i bølgeetikettloggen. Hvis merket er fjernet for **Oppdater bølgeetikettdetaljer**, brukes de lagrede ZPL- dataene (Zebra Programming Language) når en etikett skrives ut på nytt. Hvis det er merket av for **Oppdater bølgeetikettdetaljer** genereres en ny streng. De eksisterende bølgeetikettene omberegnes også, og eventuelle ekstra etiketter (for eksempel hvis de tilknyttede arbeidslinjene er annullert eller endret) er merket som **Annullert** og skrives ikke ut på nytt.
 
 1. Velg **OK** for å bekrefte valget.
 
@@ -118,7 +118,7 @@ Følg disse trinnene for å opprette en ny samling av menyelementer for å skriv
     - **Systemgrupperingsetikett:** *ShipmentID*
     - **Utskriftsmodus:** *Opplisting*
 
-1. I handlingsruten velger du **Feltliste** , og deretter bruker du rullegardinlistene til å velge feltene som skal vises for å hjelpe arbeiderne med å identifisere den riktige etikettrullen (for eksempel *LabelItemId* , *LabelItemName* , *InventQty* , *LabelUnitId* og *NumberOfLabels* ).
+1. I handlingsruten velger du **Feltliste**, og deretter bruker du rullegardinlistene til å velge feltene som skal vises for å hjelpe arbeiderne med å identifisere den riktige etikettrullen (for eksempel *LabelItemId*, *LabelItemName*, *InventQty*, *LabelUnitId* og *NumberOfLabels*).
 1. Lukk siden.
 1. Opprett et menyelement nummer fire, og angi følgende verdier for det:
 
@@ -131,7 +131,7 @@ Følg disse trinnene for å opprette en ny samling av menyelementer for å skriv
     - **Systemgrupperingsetikett:** *ShipmentID*
     - **Utskriftsmodus:** *Siste gode bølgeetikett-ID*
 
-1. I handlingsruten velger du **Feltliste** , og deretter bruker du rullegardinlistene til å velge feltene som skal vises for å hjelpe arbeiderne med å identifisere den riktige etikettrullen (for eksempel *LabelItemId* , *LabelItemName* , *InventQty* , *LabelUnitId* og *NumberOfLabels* ).
+1. I handlingsruten velger du **Feltliste**, og deretter bruker du rullegardinlistene til å velge feltene som skal vises for å hjelpe arbeiderne med å identifisere den riktige etikettrullen (for eksempel *LabelItemId*, *LabelItemName*, *InventQty*, *LabelUnitId* og *NumberOfLabels*).
 1. Lukk siden.
 
 #### <a name="set-up-the-mobile-device-menu"></a>Definere mobilenhetsmeny
@@ -139,7 +139,7 @@ Følg disse trinnene for å opprette en ny samling av menyelementer for å skriv
 Følg disse trinnene for å legge til de nye menyelementene på lagerappmenyen.
 
 1. Gå til **Lagerstyring \> Oppsett \> Mobilenhet \> Meny på mobilenheten**.
-1. Velg en eksisterende **Utgående** -meny.
+1. Velg en eksisterende **Utgående**-meny.
 1. I listen til venstre finner du menyelementene for ny utskrift som du nettopp opprettet, og deretter bruker du høyre pilknapp for å legge dem til i listen til høyre.
 1. Lukk siden.
 
@@ -217,4 +217,4 @@ Arbeidsunntak kontrollerer virkemåten til plukking med mangler. Følg disse tri
 1. Åpne en arbeidsbehandlingsflyt for salgsordrearbeidet som ble opprettet når bølgeetiketter opprinnelig ble skrevet ut.
 1. Velg **Plukk med mangler**.
 1. Velg arbeidsunntakskoden du opprettet for dette scenariet.
-1. Hvis du valgte det riktige unntaket, vil avmerkingsboksen **Annuller og skriv ut på nytt** være tilgjengelig. Merk av i denne boksen og bekreft. Ved bekreftelse blir etikettrullsekvensen som identifiseres av feltet **Etikettversjons-ID** , beregnet på nytt basert på det endrede arbeidslinjeantallet. Den skrives deretter ut på nytt på den angitte skriveren.
+1. Hvis du valgte det riktige unntaket, vil avmerkingsboksen **Annuller og skriv ut på nytt** være tilgjengelig. Merk av i denne boksen og bekreft. Ved bekreftelse blir etikettrullsekvensen som identifiseres av feltet **Etikettversjons-ID**, beregnet på nytt basert på det endrede arbeidslinjeantallet. Den skrives deretter ut på nytt på den angitte skriveren.

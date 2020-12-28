@@ -20,11 +20,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 2c6f59f5bb0d19c32e07b15141c12066948b7a6f
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3983507"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4434462"
 ---
 # <a name="lifo-with-physical-value-and-marking"></a>LIFO med fysisk verdi og merking
 
@@ -67,12 +67,12 @@ Det nye glidende gjennomsnittet for kostpris gjenspeiler gjennomsnittet for øko
 - Hvis verdien av en lagertransaksjon vises mellom parenteser, betyr det at lagertransaksjonen er postert fysisk til lager.
 - Hvis verdien av en lagertransaksjon ikke vises mellom parenteser, betyr det at lagertransaksjonen er postert økonomisk til lager.
 - Hver ny mottaks- eller avgangstransaksjon merkes med en ny etikett.
-- Hver loddrett pil har en etikett med en sekvensiell ID, for eksempel *1a* . ID-ene viser i hvilken rekkefølge lagertransaksjonene posteres.
-- Lagerlukkinger vises med en rød linje med vannrette streker, og med etiketten *Lagerlukking* .
+- Hver loddrett pil har en etikett med en sekvensiell ID, for eksempel *1a*. ID-ene viser i hvilken rekkefølge lagertransaksjonene posteres.
+- Lagerlukkinger vises med en rød linje med vannrette streker, og med etiketten *Lagerlukking*.
 - Utligninger som skjer før lagerlukking, vises med prikkede røde diagonale prikkede piler som går diagonalt fra tilgang til avgang.
 
 ## <a name="lifo-with-the-include-physical-value-option"></a>LIFO når alternativet Ta med fysisk verdi brukes
-Hvis det er merket av i avmerkingsboksen **Ta med fysisk verdi** for en vare på siden **Varemodellgrupper** , bruker systemet både fysiske og økonomiske tilgangstransaksjoner når det glidende gjennomsnittet av kostprisen beregnes. Der det er relevant, justerer systemet også den fysisk oppdaterte avgangstransaksjonen. Hvis det ikke er merket av for avmerkingsboksen **Ta med fysisk verdi** , vil lagerlukking med LIFO-lagermodellen bare utligne transaksjoner som er økonomisk oppdatert. 
+Hvis det er merket av i avmerkingsboksen **Ta med fysisk verdi** for en vare på siden **Varemodellgrupper**, bruker systemet både fysiske og økonomiske tilgangstransaksjoner når det glidende gjennomsnittet av kostprisen beregnes. Der det er relevant, justerer systemet også den fysisk oppdaterte avgangstransaksjonen. Hvis det ikke er merket av for avmerkingsboksen **Ta med fysisk verdi**, vil lagerlukking med LIFO-lagermodellen bare utligne transaksjoner som er økonomisk oppdatert. 
 
 Illustrasjonen nedenfor viser disse transaksjonene:
 
@@ -103,8 +103,8 @@ Illustrasjonen nedenfor viser virkningene av LIFO-lagermodellen for denne transa
 - Hvis verdien av en lagertransaksjon vises mellom parenteser, betyr det at lagertransaksjonen er postert fysisk til lager.
 - Hvis verdien av en lagertransaksjon ikke vises mellom parenteser, betyr det at lagertransaksjonen er postert økonomisk til lager.
 - Hver ny mottaks- eller avgangstransaksjon merkes med en ny etikett.
-- Hver loddrett pil har en etikett med en sekvensiell ID, for eksempel *1a* . ID-ene viser i hvilken rekkefølge lagertransaksjonene posteres.
-- Lagerlukkinger vises med en rød linje med vannrette streker, og med etiketten *Lagerlukking* .
+- Hver loddrett pil har en etikett med en sekvensiell ID, for eksempel *1a*. ID-ene viser i hvilken rekkefølge lagertransaksjonene posteres.
+- Lagerlukkinger vises med en rød linje med vannrette streker, og med etiketten *Lagerlukking*.
 - Utligninger som skjer før lagerlukking, vises med prikkede røde diagonale prikkede piler som går diagonalt fra tilgang til avgang.
 
 ## <a name="lifo-with-marking"></a>LIFO med merking
@@ -114,7 +114,7 @@ Du må kontrollere at denne lagerkostnaden gjenspeiles i bidraget, eller kostnad
 
 Disse to transaksjonene kan merkes mot hverandre helt til lagerlukkingen utføres. 
 
-Du kan merke en avgangstransaksjon mot en tilgang før transaksjonen er postert. Du kan gjøre dette fra en salgsordrelinje på siden **Salgsordredetaljer** . Du kan vise de åpne tilgangstransaksjonene på **Merking** -siden. 
+Du kan merke en avgangstransaksjon mot en tilgang før transaksjonen er postert. Du kan gjøre dette fra en salgsordrelinje på siden **Salgsordredetaljer**. Du kan vise de åpne tilgangstransaksjonene på **Merking**-siden. 
 
 Du kan også merke en avgangstransaksjon mot en tilgang etter transaksjonen er postert. Du kan samsvare eller merke en avgangstransaksjon for en åpen mottakstransaksjon for en lagervare fra en postert lagerjusteringsjournal. 
 
@@ -147,7 +147,7 @@ Illustrasjonen nedenfor viser virkningen LIFO-lagermodellen på denne transaksjo
 - Hvis verdien av en lagertransaksjon vises mellom parenteser, betyr det at lagertransaksjonen er postert fysisk til lager.
 - Hvis verdien av en lagertransaksjon ikke vises mellom parenteser, betyr det at lagertransaksjonen er postert økonomisk til lager.
 - Hver ny mottaks- eller avgangstransaksjon merkes med en ny etikett.
-- Hver loddrett pil har en etikett med en sekvensiell ID, for eksempel *1a* . ID-ene viser i hvilken rekkefølge lagertransaksjonene posteres.
-- Lagerlukkinger vises med en rød linje med vannrette streker, og med etiketten *Lagerlukking* .
+- Hver loddrett pil har en etikett med en sekvensiell ID, for eksempel *1a*. ID-ene viser i hvilken rekkefølge lagertransaksjonene posteres.
+- Lagerlukkinger vises med en rød linje med vannrette streker, og med etiketten *Lagerlukking*.
 - Utligninger som skjer før lagerlukking, vises med prikkede røde diagonale prikkede piler som går diagonalt fra tilgang til avgang.
 

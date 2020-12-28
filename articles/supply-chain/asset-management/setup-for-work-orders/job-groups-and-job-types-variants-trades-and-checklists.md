@@ -19,11 +19,11 @@ ms.author: mkirknel
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 10.0.5
 ms.openlocfilehash: 8bf7c53a6150a2beeca5c6e9b5ab4ea98584158d
-ms.sourcegitcommit: c986d5234b81d31cc6d054298be6f6ec92c1754c
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "3889081"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4434390"
 ---
 # <a name="maintenance-job-type-categories-and-maintenance-job-types-maintenance-job-type-variants-maintenance-job-trades-and-maintenance-checklists"></a>Kategorier for vedlikeholdsjobbtyper og vedlikeholdsjobbtyper, varianter av vedlikeholdsjobbtyper, vedlikeholdsjobbfag og sjekklister for vedlikehold
 
@@ -238,7 +238,7 @@ Maler for vedlikeholdssjekklister kan brukes som et felles sett med oppgaver som
 
 ![Siden for Standarder for vedlikeholdsjobbtype](media/07-setup-for-work-orders.png)
 
-Når systemet velger den tilgjengelige vedlikeholdsjobbtypestandarden som skal brukes på en arbeidsordrelinje, baseres valget på aktivaet og det tilknyttede aktivatypeoppsettet. Aktivastyring går gjennom alle postene for vedlikeholdsjobbtypestandard som er relatert til vedlikeholdsjobbtypen som er knyttet til aktivatypen, for å finne et mulig treff. Den kontrollerer alltid den mest spesifikke kombinasjonen først. Med andre ord, for å finne den mest spesifikke kombinasjonen, sjekker Aktivastyring først for et mulig treff for **Handel**-feltet. Hvis det ikke blir funnet noe treff, kontrolleres det for et treff i feltet **Variant av vedlikeholdsjobbtype**. Hvis det ikke blir funnet noe treff, ser det etter treff for feltet **Vedlikeholdsjobbtype** og så videre (**Handel**, deretter **Variant av vedlikeholdsjobbtype**, deretter **Vedlikeholdsjobbtype**, deretter **Aktiva**, deretter **Modell**, deretter **Produsent**og deretter **Aktivatype**). Hvis det ikke blir funnet samsvar, brukes standardposten der bare vedlikeholdsjobbtypen er valgt.
+Når systemet velger den tilgjengelige vedlikeholdsjobbtypestandarden som skal brukes på en arbeidsordrelinje, baseres valget på aktivaet og det tilknyttede aktivatypeoppsettet. Aktivastyring går gjennom alle postene for vedlikeholdsjobbtypestandard som er relatert til vedlikeholdsjobbtypen som er knyttet til aktivatypen, for å finne et mulig treff. Den kontrollerer alltid den mest spesifikke kombinasjonen først. Med andre ord, for å finne den mest spesifikke kombinasjonen, sjekker Aktivastyring først for et mulig treff for **Handel**-feltet. Hvis det ikke blir funnet noe treff, kontrolleres det for et treff i feltet **Variant av vedlikeholdsjobbtype**. Hvis det ikke blir funnet noe treff, ser det etter treff for feltet **Vedlikeholdsjobbtype** og så videre (**Handel**, deretter **Variant av vedlikeholdsjobbtype**, deretter **Vedlikeholdsjobbtype**, deretter **Aktiva**, deretter **Modell**, deretter **Produsent** og deretter **Aktivatype**). Hvis det ikke blir funnet samsvar, brukes standardposten der bare vedlikeholdsjobbtypen er valgt.
 
 En prosjektaktivitets-ID knyttes automatisk til hver linje for vedlikeholdsjobbtypestandard du oppretter. Prosjektaktiviteten opprettes for prognoseprosjektet som er valgt i feltet **Vedlikeholdsprognoseprosjekt** i kategorien **Aktiva** på siden **Aktivabehandlingsparametere**. Formålet med prosjektaktiviteten er å behandle prognoser for timer, varer og utgifter i forbindelse med arbeidsordrer. Vedlikeholdsjobbtypeprognoser overføres automatisk til arbeidsordrelinjen, og de kopieres fra prognoseprosjektet til arbeidsordreprosjektet som opprettes for arbeidsordrelinjen. Formålet med prosjektaktiviteten er å behandle prognoser i forbindelse med arbeidsordrer.
 

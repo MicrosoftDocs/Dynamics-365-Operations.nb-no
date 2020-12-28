@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: 49025d0aa0f6a627b816a43dd4260449942b400c
-ms.sourcegitcommit: ae04c7cb48f7ecafe71bbe77a0f97715e6290991
+ms.openlocfilehash: 54ad180b7f4691ead3563b077eadadc3b9b20588
+ms.sourcegitcommit: 5f21cfde36c43887ec209bba4a12b830a1746fcf
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "3973482"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "4434854"
 ---
 # <a name="get-started-with-planning-optimization"></a>Komme i gang med planleggingsoptimalisering
 
@@ -58,18 +58,20 @@ Hvis du vil bruke planleggingsoptimalisering, må du installere tillegget for pl
 > Kravet for planleggingsoptimalisering er et LCS-aktivert miljø med høy tilgjengelighet, lag 2 eller høyere (ikke et OneBox-miljø), med Dynamics 365 Supply Chain Management versjon 10.0.7 eller senere. Hvis du prøver å installere tillegget i et OneBox-miljø, vil ikke installasjonen bli fullført, og du må avbryte installasjonen.
 
 1. Logg på LCS, og åpne ønsket miljø.
-1. Gå til **Detaljerte opplysninger** .
-1. Bla ned til **Miljøtillegg** -hurtigfanen.
-1. Velg **Installer et nytt tillegg** .
-1. Velg **Planleggingsoptimalisering** .
+1. Gå til **Detaljerte opplysninger**.
+1. Bla ned til **Miljøtillegg**-hurtigfanen.
+1. Velg **Installer et nytt tillegg**.
+1. Velg **Planleggingsoptimalisering**.
 1. Følg installasjonsveiledningen, og godta vilkårene.
-1. Velg **Installer** .
-1. I **Miljøtillegg** -hurtigfanen skal du se at planleggingsoptimalisering installeres.
+1. Velg **Installer**.
+1. I **Miljøtillegg**-hurtigfanen skal du se at planleggingsoptimalisering installeres.
 1. Etter noen minutter skal **Installerer** endres til **Installert** (det er mulig at du må oppdatere siden). Når installasjonen er fullført, er du klar til å aktivere planleggingsoptimalisering i Dynamics 365 Supply Chain Management.
+
+Hovedformålet med å installere tilleggsfunksjonen for Planleggingsoptimalisering er å koble til tjenesten og miljøet. Derfor må du installere tillegget separat i hvert miljø der du bruker Planleggingsoptimalisering, uavhengig av hvilken kode som er flyttet mellom miljøene.
 
 ### <a name="planning-optimization-integration"></a>Integrering av planleggingsoptimalisering
 
-Hvis du vil konfigurere om planleggingsoptimaliserings-tillegget skal brukes til hovedplanlegging, går du til **Hovedplanlegging** \> **Oppsett** \> **Parametere for planleggingsoptimalisering** .
+Hvis du vil konfigurere om planleggingsoptimaliserings-tillegget skal brukes til hovedplanlegging, går du til **Hovedplanlegging** \> **Oppsett** \> **Parametere for planleggingsoptimalisering**.
 
 #### <a name="connection-status"></a>Tilkoblingsstatus
 
@@ -91,11 +93,11 @@ Innstillingen for alternativet **Bruk planleggingsoptimalisering** bestemmer hvi
 - **Nei** – den innebygde planleggingsmotoren Supply Chain Management brukes til hovedplanlegging.
 
 > [!NOTE]
-> Hvis eksisterende satsvise planleggingsjobber for den innebygde planleggingsmotoren Supply Chain Management utløses når alternativet **Bruk planleggingsoptimalisering** er satt til **Ja** , vil disse jobbene mislykkes.
+> Hvis eksisterende satsvise planleggingsjobber for den innebygde planleggingsmotoren Supply Chain Management utløses når alternativet **Bruk planleggingsoptimalisering** er satt til **Ja**, vil disse jobbene mislykkes.
 
 ### <a name="integration-with-the-setup"></a>Integrering med oppsettet
 
-Hvis forhåndsvisning av planleggingsoptimalisering er aktivert, utføres hovedplanlegging ved hjelp av tillegget for planleggingsoptimalisering. I dette tilfellet berøres resultater og funksjoner for hovedplanlegging.
+Hvis Planleggingsoptimalisering er aktivert, utføres hovedplanlegging ved hjelp av tillegget for planleggingsoptimalisering. I dette tilfellet berøres resultater og funksjoner for hovedplanlegging.
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 

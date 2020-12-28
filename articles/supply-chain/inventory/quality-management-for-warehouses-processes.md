@@ -16,11 +16,11 @@ ms.author: henrikan
 ms.search.validFrom: 2020-04-02
 ms.dyn365.ops.version: Release 10.0.10
 ms.openlocfilehash: 0f39bd2ffda492fce9b3fe51feafcbc8fd32391c
-ms.sourcegitcommit: 965fa733be068dc37f482d02ebbcd77f2c3d0a45
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "3763485"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4434684"
 ---
 # <a name="quality-management-for-warehouse-processes"></a>Kvalitetsstyring for lagerprosesser
 
@@ -379,7 +379,7 @@ Deretter må du endre rekkefølgen til de eksisterende lokasjonsdirektivene for 
 
 #### <a name="item-sampling"></a>Vareprøve
 
-Funksjonen _Kvalitetsstyring for lagerprosesser_ legger til noen nye vareprøvefunksjoner. Verdien for **Prøveomfang** kan nå være _Ordre_, _Forsendelse_eller _Last_, og verdien for **Samplingsantall** kan nå være _Fullstendig nummerskilt_.
+Funksjonen _Kvalitetsstyring for lagerprosesser_ legger til noen nye vareprøvefunksjoner. Verdien for **Prøveomfang** kan nå være _Ordre_, _Forsendelse_ eller _Last_, og verdien for **Samplingsantall** kan nå være _Fullstendig nummerskilt_.
 
 1. Gå til **Lagerstyring \> Oppsett \> Kvalitetskontroll \> Vareprøve**.
 1. Opprett en vareprøvepost, og angi følgende verdier:

@@ -19,24 +19,24 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 744f78f2dd088e50c91e1f7ef0e6f68b176f9618
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3984136"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4434326"
 ---
 # <a name="delete-a-service-bom"></a>Slette en servicestykkliste 
 
 [!include [banner](../includes/banner.md)]
 
 
-1.  Klikk **Servicestyring** \> **Felles** \> **Serviceavtaler** \> **Serviceavtaler** . Velg serviceavtalen som du vil slette en servicestykkliste fra.
+1.  Klikk **Servicestyring** \> **Felles** \> **Serviceavtaler** \> **Serviceavtaler**. Velg serviceavtalen som du vil slette en servicestykkliste fra.
 
-2.  Klikk **Serviceobjekter** i **handlingsruten** .
+2.  Klikk **Serviceobjekter** i **handlingsruten**.
 
-3.  I **Serviceobjekter** -skjemaet velger du serviceobjektet som du vil slette en servicestykkliste fra. Klikk **Funksjoner** , og velg deretter **Slett servicestykkliste** .
+3.  I **Serviceobjekter**-skjemaet velger du serviceobjektet som du vil slette en servicestykkliste fra. Klikk **Funksjoner**, og velg deretter **Slett servicestykkliste**.
 
-4.  Klikk **Ja** .
+4.  Klikk **Ja**.
 
 
 > [!NOTE]

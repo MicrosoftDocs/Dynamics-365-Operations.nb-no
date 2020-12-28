@@ -19,18 +19,18 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 86d60a67b60b1bd3a13666b35f729f88ecfee3d3
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3984877"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4434082"
 ---
 # <a name="set-up-service-order-stages"></a>Definer serviceordrestadier 
 
 [!include [banner](../includes/banner.md)]
 
 
-1.  Klikk **Servicestyring** \> **Oppsett** \> **Serviceordrer** \> **Servicestadier** .
+1.  Klikk **Servicestyring** \> **Oppsett** \> **Serviceordrer** \> **Servicestadier**.
 
 2.  Trykk CTRL+N for å opprette en ny oppføring.
 
@@ -38,7 +38,7 @@ ms.locfileid: "3984877"
 
 4.  Velg aktuelle parametere for stadiet.
 
-5.  Velg det overordnede stadiet for det gjeldende stadiet, eller la **Overordnet** -feltet være tomt hvis det gjeldende stadiet er det innledende stadiet i stadiumoppsettet.
+5.  Velg det overordnede stadiet for det gjeldende stadiet, eller la **Overordnet**-feltet være tomt hvis det gjeldende stadiet er det innledende stadiet i stadiumoppsettet.
 
 
 > [!NOTE]

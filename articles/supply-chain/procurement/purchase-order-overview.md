@@ -19,11 +19,11 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: cfb35d6db74f965911329dbd6215d1108149fa6c
-ms.sourcegitcommit: e3f4dd2257a3255c2982f4fc7b72a1121275b88a
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: nb-NO
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4018773"
+ms.locfileid: "4434843"
 ---
 # <a name="purchase-order-overview"></a>Oversikt over bestilling
 
@@ -33,11 +33,11 @@ Denne artikkelen inneholder generell informasjon om bestillinger og koblinger ti
 
 En bestilling er et dokument som representerer en avtale med en leverandør om å kjøpe varer eller tjenester. Dokumentet bidrar også til å holde oversikt over produktkvitteringer som er gjort mot ordren og, senere, regnskap for leverandørfakturaer som leverandøren veksler mot ordren.  
 
-Siden **Bestillinger** inneholder en oversikt over ordrene som er tilgjengelige og lar deg endre disse ordrene. Når du åpner en bestilling, kan du velge **Topptekst** -visningen, som inneholder informasjon som er angitt bare én gang for hver bestilling, for eksempel leverandørdetaljer. Du kan også velge **Linjer** -visningen, der du kan endre ordrelinjer. Vanligvis kan du bytte mellom disse to visningene når du endrer bestillinger. Tillegg vises ikke direkte på siden **Bestillinger** , men de er tilgjengelige via menyer i ordrehodet og -linjene.  
+Siden **Bestillinger** inneholder en oversikt over ordrene som er tilgjengelige og lar deg endre disse ordrene. Når du åpner en bestilling, kan du velge **Topptekst**-visningen, som inneholder informasjon som er angitt bare én gang for hver bestilling, for eksempel leverandørdetaljer. Du kan også velge **Linjer**-visningen, der du kan endre ordrelinjer. Vanligvis kan du bytte mellom disse to visningene når du endrer bestillinger. Tillegg vises ikke direkte på siden **Bestillinger**, men de er tilgjengelige via menyer i ordrehodet og -linjene.  
 
 Det finnes mange rapporter der du kan vise informasjon om bestillinger, produktkvitteringer og leverandørfakturaer. Disse rapportene er finnes i modulene **Innkjøp og leverandører** og **Leverandører**.  
 
-Arbeidsområdene **Bestillingsklargjøring** og **Bestillingsmottak og oppfølging** lar deg vise lister over bestillinger i de ulike stadiene som de har kommet til. De gir også et sammendrag av handlinger som må utføres. Arbeidsområdet **Bestillingsklargjøring** fokuserer på oppretting av bestilling og gjennomgang, behandling av ordren til godkjenning og bekreftelse med leverandøren. Arbeidsområdet **Bestillingsmottak og oppfølging** fokuserer på behandling av mottak av varer eller tjenester mot bestillinger. Det inneholder lister som gir innsikt i mottak som er forfalt, eller som snart forfaller for levering av leverandøren. Disse arbeidsområdene brukes ikke til å utføre de relaterte mottaksaktivitetene som gjøres på lageret. Disse aktivitetene utføres ved hjelp av sider i modulene **Beholdningsstyring** og **Lagerstyring**. Behandling av leverandørfakturaer skal gjøres ved hjelp av arbeidsområdet **Leverandørfakturaregistrering** , og betalinger skal gjøres ved hjelp av arbeidsområdet **Leverandørbetalinger**.  
+Arbeidsområdene **Bestillingsklargjøring** og **Bestillingsmottak og oppfølging** lar deg vise lister over bestillinger i de ulike stadiene som de har kommet til. De gir også et sammendrag av handlinger som må utføres. Arbeidsområdet **Bestillingsklargjøring** fokuserer på oppretting av bestilling og gjennomgang, behandling av ordren til godkjenning og bekreftelse med leverandøren. Arbeidsområdet **Bestillingsmottak og oppfølging** fokuserer på behandling av mottak av varer eller tjenester mot bestillinger. Det inneholder lister som gir innsikt i mottak som er forfalt, eller som snart forfaller for levering av leverandøren. Disse arbeidsområdene brukes ikke til å utføre de relaterte mottaksaktivitetene som gjøres på lageret. Disse aktivitetene utføres ved hjelp av sider i modulene **Beholdningsstyring** og **Lagerstyring**. Behandling av leverandørfakturaer skal gjøres ved hjelp av arbeidsområdet **Leverandørfakturaregistrering**, og betalinger skal gjøres ved hjelp av arbeidsområdet **Leverandørbetalinger**.  
 
 Artiklene nedenfor inneholder en oversikt over de ulike stadiene som en bestilling går gjennom:
 
@@ -73,7 +73,7 @@ Feltet **Dokumentstatus** lar deg raskt se gjennom ordrefremdriften når det gje
 
 Feltet **Godkjenningsstatus** brukes når en bestilling går gjennom en vurderingsprosess eller arbeidsflyt. Følgende verdier er tilgjengelige:
 
--   **Utkast** , **Til vurdering** og **Avvist** – Disse statusene brukes bare når en arbeidsflyt for godkjenning brukes for bestillingen.
+-   **Utkast**, **Til vurdering** og **Avvist** – Disse statusene brukes bare når en arbeidsflyt for godkjenning brukes for bestillingen.
 -   **Godkjent** – Denne statusen blir tilordnet ordrer som har fullført arbeidsflytgodkjenning. Ordrer som er opprettet uten å bruke en arbeidsflyt for godkjenning får statusen **Godkjent** umiddelbart.
 -   **Til ekstern vurdering** – Denne statusen brukes i situasjoner der en innkjøpsforespørsel sendes til leverandøren, slik at leverandøren kan bekrefte betingelsene for bestillingen. Denne statusen brukes også i prosessen som startes av handlingen **Forespørsel om bekreftelse**. For denne prosessen blir leverandøren bedt om å bekrefte betingelsene for bestillingen ved å koble til systemet ditt og registrere om ordren bekreftes eller avvises.
 -   **Bekreftet** – Denne statusen blir tilordnet når bestillingen er bekreftet. Denne statusen er vanligvis den siste godkjenningsstatusen som tilordnes en ordre.

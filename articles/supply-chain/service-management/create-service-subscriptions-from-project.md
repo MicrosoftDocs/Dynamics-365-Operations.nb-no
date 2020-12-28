@@ -19,24 +19,24 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 3903f1fe5b5f7d2755ec895eded73de6d165e68e
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3978707"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4434238"
 ---
 # <a name="create-service-subscriptions-from-a-project"></a>Opprette serviceabonnementer fra et prosjekt    
 
 [!include [banner](../includes/banner.md)]
 
 
-Du kan opprette et serviceabonnement fra et prosjekt i **Prosjektstyring og regnskap** .
+Du kan opprette et serviceabonnement fra et prosjekt i **Prosjektstyring og regnskap**.
 
-1.  Klikk på **Prosjektstyring og regnskap** \> **Felles** \> **Prosjekter** \> **Alle prosjekter** . Åpne prosjektet som du vil opprette et abonnement for.
+1.  Klikk på **Prosjektstyring og regnskap** \> **Felles** \> **Prosjekter** \> **Alle prosjekter**. Åpne prosjektet som du vil opprette et abonnement for.
 
-2.  I **Prosjekter** -skjemaet i **handlingsruten** på fanen **Administrer** klikker du på **Service** \> **Serviceabonnement** .
+2.  I **Prosjekter**-skjemaet i **handlingsruten** på fanen **Administrer** klikker du på **Service** \> **Serviceabonnement**.
 
-3.  I **Abonnement** -skjemaet, i **Serviceabonnement** -feltet angir du et unikt identifikasjonsnummer. Prosjektnummeret legges automatisk inn i abonnementet for det valgte prosjektet.
+3.  I **Abonnement**-skjemaet, i **Serviceabonnement**-feltet angir du et unikt identifikasjonsnummer. Prosjektnummeret legges automatisk inn i abonnementet for det valgte prosjektet.
 
 4.  Skriv resten av informasjonen i skjemaet.
 

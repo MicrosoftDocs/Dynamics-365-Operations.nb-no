@@ -19,11 +19,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: b3571640ff9854b70d1c9bd41971aca88e0b1a02
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3983677"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4434558"
 ---
 # <a name="manage-template-boms-on-object-relations"></a>Behandle malstykklister på objektrelasjoner 
 
@@ -32,51 +32,51 @@ ms.locfileid: "3983677"
 
 ## <a name="attach-a-template-bom-to-a-service-object"></a>Knytte en malstykkliste til et serviceobjekt
 
-1.  Klikk **Servicestyring** \> **Felles** \> **Serviceavtaler** \> **Serviceavtaler** .
+1.  Klikk **Servicestyring** \> **Felles** \> **Serviceavtaler** \> **Serviceavtaler**.
 
 2.  Dobbeltklikk serviceavtalen der du vil knytte en malstykkliste til en objektrelasjon.
 
-3.  Klikk **Oppsett** \> **Serviceobjekter** .
+3.  Klikk **Oppsett** \> **Serviceobjekter**.
 
-4.  I skjemaet **Serviceobjekter** velger du objektet du vil knytte til en malstykkliste, og klikk deretter **Funksjoner** \> **Tilknytt malstykkliste** .
+4.  I skjemaet **Serviceobjekter** velger du objektet du vil knytte til en malstykkliste, og klikk deretter **Funksjoner** \> **Tilknytt malstykkliste**.
 
-5.  Velg en stykklistemal i dialogboksen **Velg malstykkliste** , og klikk deretter **OK** .
+5.  Velg en stykklistemal i dialogboksen **Velg malstykkliste**, og klikk deretter **OK**.
 
 6.  Lukk skjemaene for å lagre endringene.
 
 ## <a name="delete-a-service-bom-from-a-service-object"></a>Slette en malstykkliste fra et serviceobjekt
 
-1.  Klikk **Servicestyring** \> **Felles** \> **Serviceavtaler** \> **Serviceavtaler** .
+1.  Klikk **Servicestyring** \> **Felles** \> **Serviceavtaler** \> **Serviceavtaler**.
 
 2.  Dobbeltklikk serviceavtalen der du vil slette en servicestykkliste fra en objektrelasjon.
 
-3.  Klikk **Oppsett** \> **Serviceobjekter** .
+3.  Klikk **Oppsett** \> **Serviceobjekter**.
 
-4.  I skjemaet **Serviceobjekter** velger du objektet som har servicestykklisten du vil slette, og deretter klikker du **Funksjoner** \> **Slett servicestykkliste** .
+4.  I skjemaet **Serviceobjekter** velger du objektet som har servicestykklisten du vil slette, og deretter klikker du **Funksjoner** \> **Slett servicestykkliste**.
 
 5.  Lukk skjemaene for å lagre endringene.
 
 ## <a name="move-the-service-bom-history-from-one-service-agreement-to-another"></a>Flytte historikken for servicestykklisten fra én serviceavtale til en annen
 
-1.  Klikk **Servicestyring** \> **Felles** \> **Serviceavtaler** \> **Serviceavtaler** .
+1.  Klikk **Servicestyring** \> **Felles** \> **Serviceavtaler** \> **Serviceavtaler**.
 
 2.  Dobbeltklikk serviceavtalen du vil flytte en servicestykkliste fra.
 
-3.  Klikk **Oppsett** \> **Serviceobjekter** .
+3.  Klikk **Oppsett** \> **Serviceobjekter**.
 
-4.  I skjemaet **Serviceobjekter** velger du objektet som har servicestykklisten du vil flytte, og deretter klikker du **Funksjoner** \> **Flytt servicestykkliste** .
+4.  I skjemaet **Serviceobjekter** velger du objektet som har servicestykklisten du vil flytte, og deretter klikker du **Funksjoner** \> **Flytt servicestykkliste**.
 
-5.  Velg serviceobjektrelasjonen du vil flytte servicestykklisten til, i skjemaet **Velg serviceobjektrelasjon** , og klikk deretter **OK** .
+5.  Velg serviceobjektrelasjonen du vil flytte servicestykklisten til, i skjemaet **Velg serviceobjektrelasjon**, og klikk deretter **OK**.
 
 6.  Lukk skjemaene for å lagre endringene.
 
 ## <a name="modify-the-information-displayed-for-a-bom-line"></a>Endre informasjonen som vises for en stykklistelinje
 
-1.  Klikk **Servicestyring** \> **Oppsett** \> **Serviceobjekter** \> **Malstykklister** .
+1.  Klikk **Servicestyring** \> **Oppsett** \> **Serviceobjekter** \> **Malstykklister**.
 
-2.  Velg en malstykkliste, og klikk deretter **Designer** .
+2.  Velg en malstykkliste, og klikk deretter **Designer**.
 
-3.  Klikk **Oppsett** -fanen. Merk av for informasjonen som skal vises på stykklistelinjene i servicestykklistene og malstykklistene, i **Stykkliste** -området.
+3.  Klikk **Oppsett**-fanen. Merk av for informasjonen som skal vises på stykklistelinjene i servicestykklistene og malstykklistene, i **Stykkliste**-området.
 
 4.  Lukk skjemaene for å lagre endringene.
 

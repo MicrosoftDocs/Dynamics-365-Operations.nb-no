@@ -19,22 +19,22 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 90054b17283a9e081f9993e76a6860404dadac0f
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3978851"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4434359"
 ---
 # <a name="accrue-subscription-revenue"></a>Avsett abonnementsomsetning 
 
 [!include [banner](../includes/banner.md)]
 
 
-1.  Klikk på **Servicestyring** \> **Periodisk** \> **Serviceabonnementer** \> **Avsett abonnementsomsetning** .
+1.  Klikk på **Servicestyring** \> **Periodisk** \> **Serviceabonnementer** \> **Avsett abonnementsomsetning**.
 
-2.  I **Periodekode** -feltet velger du en periodekode. Inntekter posteres for alle abonnenmentsavgiftstransaksjoner som har den valgte periodekoden.
+2.  I **Periodekode**-feltet velger du en periodekode. Inntekter posteres for alle abonnenmentsavgiftstransaksjoner som har den valgte periodekoden.
 
-3.  I **Posteringsdato** -feltet angir du en posteringsdato og klikker deretter på **OK** .
+3.  I **Posteringsdato**-feltet angir du en posteringsdato og klikker deretter på **OK**.
 
 
 > [!NOTE]

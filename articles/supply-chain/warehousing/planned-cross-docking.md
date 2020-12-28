@@ -17,11 +17,11 @@ ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: Release 10.0.7
 ms.openlocfilehash: cc217f21a5fa70feb9ef9161f3ef2e2b6a333f35
-ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: nb-NO
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4017765"
+ms.locfileid: "4434808"
 ---
 # <a name="planned-cross-docking"></a>Planlagt direkteoverføring
 
@@ -54,7 +54,7 @@ Planlagt direkteoverføring er implementert som en lastposteringsmetode. Når du
 1. Gå til **Lagerstyring \> Oppsett \> Lastposteringsmetoder**.
 1. Velg **Regenerer metoder** i handlingsruten.
 
-    Når regenereringen er fullført, skal det vises en metode som har **Metodenavn** -verdien *planCrossDocking*.
+    Når regenereringen er fullført, skal det vises en metode som har **Metodenavn**-verdien *planCrossDocking*.
 
 1. Lukk siden.
 
@@ -73,7 +73,7 @@ Planlagt direkteoverføring er implementert som en lastposteringsmetode. Når du
     - **Policy for behovsfrigivelse:** *Før forsyningsmottak*
     - **Lager:** *51*
 
-1. Oppsettet på **Planlegging** -hurtigfanen styrer hvordan malen fungerer. Angi følgende verdier:
+1. Oppsettet på **Planlegging**-hurtigfanen styrer hvordan malen fungerer. Angi følgende verdier:
 
     - **Behovskrav:** *Ingen*
 
@@ -89,11 +89,11 @@ Planlagt direkteoverføring er implementert som en lastposteringsmetode. Når du
 
     - **Ny validering ved forsyningsmottak:** *Nei*
 
-        Dette alternativet angir om forsyningen skal valideres på nytt under mottak. Hvis dette alternativet er satt til *Ja* , kontrolleres både vinduet maksimal tid og området for utløpsdager.
+        Dette alternativet angir om forsyningen skal valideres på nytt under mottak. Hvis dette alternativet er satt til *Ja*, kontrolleres både vinduet maksimal tid og området for utløpsdager.
 
     - **Validerer tidsvindu:** *Ja*
 
-        Dette alternativet angir om maksimalt tidsvindu skal evalueres når en forsyningskilde velges. Hvis dette alternativet er satt til *Ja* , blir feltene som er relatert til maksimale og minimale tidsvinduer, tilgjengelige.
+        Dette alternativet angir om maksimalt tidsvindu skal evalueres når en forsyningskilde velges. Hvis dette alternativet er satt til *Ja*, blir feltene som er relatert til maksimale og minimale tidsvinduer, tilgjengelige.
 
     - **Maksimalt tidsvindu:** *5*
 
@@ -109,7 +109,7 @@ Planlagt direkteoverføring er implementert som en lastposteringsmetode. Når du
 
         *FEFO-kriterier:* Dette feltet definerer det maksimale antallet dager mellom utløpsdatoen til det første utløpte partiet som for øyeblikket er i lageret, og partiet som mottas.
 
-1. I **Forsyningskilder** -hurtigfanen angir du hvilke typer forsyning som er gyldige for denne malen. Velg **Ny** , og angi deretter følgende verdier:
+1. I **Forsyningskilder**-hurtigfanen angir du hvilke typer forsyning som er gyldige for denne malen. Velg **Ny**, og angi deretter følgende verdier:
 
     - **Sekvensnummer:** *1*
     - **Forsyningskilde:** *Bestilling*
@@ -128,15 +128,15 @@ Planlagt direkteoverføring er implementert som en lastposteringsmetode. Når du
 
 1. Gå til **Lagerstyring \> Oppsett \> Arbeid \> Arbeidsmaler**.
 1. Angi *Direkteoverføring* i feltet **Arbeidsordretype**.
-1. I handlingsruten velger du **Ny** for å legge til en linje i **Oversikt** -fanen.
+1. I handlingsruten velger du **Ny** for å legge til en linje i **Oversikt**-fanen.
 1. På den nye linjen angir du følgende verdier:
 
     - **Sekvensnummer:** *1*
     - **Arbeidsmal:** *51 Direkteoverføring*
     - **Arbeidsmalbeskrivelse:** *51 Direkteoverføring*
 
-1. Velg **Lagre** for å gjøre **Arbeidsmaldetaljer** -hurtigfanen tilgjengelig.
-1. På **Arbeidsmaldetaljer** -hurtigfanen velger du **Ny** for å legge til en linje i rutenettet.
+1. Velg **Lagre** for å gjøre **Arbeidsmaldetaljer**-hurtigfanen tilgjengelig.
+1. På **Arbeidsmaldetaljer**-hurtigfanen velger du **Ny** for å legge til en linje i rutenettet.
 1. På den nye linjen angir du følgende verdier:
 
     - **Arbeidstype:** *Plukk*
@@ -147,15 +147,15 @@ Planlagt direkteoverføring er implementert som en lastposteringsmetode. Når du
     - **Arbeidstype:** *Plasser*
     - **Arbeidsklasse-ID:** *CrossDock*
 
-1. Velg **Lagre** , og Bekreft at det er merket av for **Gyldig** for *51 Direkteoverføring* -malen.
+1. Velg **Lagre**, og Bekreft at det er merket av for **Gyldig** for *51 Direkteoverføring*-malen.
 
 > [!NOTE]
-> Arbeidsklasse-ID-en for *Plukk* - og *Plasser* -arbeidstypene må være like.
+> Arbeidsklasse-ID-en for *Plukk*- og *Plasser*-arbeidstypene må være like.
 
 ### <a name="create-location-directives"></a>Opprette lokasjonsdirektiver
 
 1. Gå til **Lagerstyring \> Oppsett \> Lokasjonsdirektiver**.
-1. I den venstre ruten setter du **Arbeidsordretype** -feltet til *Direkteoverføring*.
+1. I den venstre ruten setter du **Arbeidsordretype**-feltet til *Direkteoverføring*.
 1. Velg **Ny** i handlingsruten, og angi følgende verdier:
 
     - **Sekvensnummer:** *1*
@@ -164,23 +164,23 @@ Planlagt direkteoverføring er implementert som en lastposteringsmetode. Når du
     - **Område:** *5*
     - **Lager:** *51*
 
-1. Velg **Lagre** for å gjøre **Linjer** -hurtigfanen tilgjengelig.
-1. På **Linjer** -hurtigfanen velger du **Ny** for å legge til en linje i rutenettet.
+1. Velg **Lagre** for å gjøre **Linjer**-hurtigfanen tilgjengelig.
+1. På **Linjer**-hurtigfanen velger du **Ny** for å legge til en linje i rutenettet.
 1. På den nye linjen angir du følgende verdier:
 
     - **Fra-antall:** *1*
     - **Til-antall:** *1000000*
 
-1. Velg **Lagre** for å gjøre **Lokasjonsdirektivhandlinger** -hurtigfanen tilgjengelig.
+1. Velg **Lagre** for å gjøre **Lokasjonsdirektivhandlinger**-hurtigfanen tilgjengelig.
 1. På hurtigfanen **Lokasjonsdirektivhandlinger** velger du **Ny** for å legge til en linje i rutenettet.
 1. På den nye linjen angir du følgende verdier:
 
     - **Navn:** *Rampedør*
     - **Bruk av fast lokasjon:** *Faste og ikke-faste lokasjoner*
 
-1. Velg **Lagre** for å gjøre **Rediger spørring** -knappen på **Lokasjonsdirektivhandlinger** -verktøylinjen tilgjengelig.
+1. Velg **Lagre** for å gjøre **Rediger spørring**-knappen på **Lokasjonsdirektivhandlinger**-verktøylinjen tilgjengelig.
 1. Velg **Rediger spørring** for å åpne redigeringsprogrammet for spørring.
-1. I **Område** -fanen kontrollerer du at følgende to linjer er konfigurert:
+1. I **Område**-fanen kontrollerer du at følgende to linjer er konfigurert:
 
     - Linje 1:
 
@@ -203,7 +203,7 @@ Planlagt direkteoverføring er implementert som en lastposteringsmetode. Når du
 1. Gå til **Lagerstyring \> Oppsett \> Mobilenhet \> Menyelementer på mobilenheten**.
 1. I listen over menyelementer i venstre rute velger du **Kjøpsplassering**.
 1. Velg **Rediger**.
-1. På **Arbeidsklasser** -hurtigfanen velger du **Ny** for å legge til en linje i rutenettet.
+1. På **Arbeidsklasser**-hurtigfanen velger du **Ny** for å legge til en linje i rutenettet.
 1. På den nye linjen angir du følgende verdier:
 
     - **Arbeidsklasse-ID:** *CrossDock*
@@ -219,13 +219,13 @@ Følg disse trinnene for å opprette en bestilling som en forsyningskilde.
 
 1. Gå til **Innkjøp og leverandører \> Bestillinger \> Alle bestillinger**.
 1. Velg **Ny** i handlingsruten.
-1. I **Opprett bestilling** -dialogboksen angir du følgende verdier:
+1. I **Opprett bestilling**-dialogboksen angir du følgende verdier:
 
     - **Leverandørkonto:** *104*
     - **Lager:** *51*
 
 1. Velg **OK** og noter deg ordrenummeret.
-1. Det legges til en ny linje i rutenettet på **Bestillingslinjer** -hurtigfanen. På denne linjen angir du følgende verdier:
+1. Det legges til en ny linje i rutenettet på **Bestillingslinjer**-hurtigfanen. På denne linjen angir du følgende verdier:
 
     - **Varenummer:** *A0001*
     - **Antall:** *5*
@@ -236,13 +236,13 @@ Følg disse trinnene for å opprette en salgsordre som en behovskilde.
 
 1. Gå til **Salg og markedsføring \> Salgsordrer \> Alle salgsordrer**.
 1. Velg **Ny** i handlingsruten.
-1. I **Opprett salgsordre** -dialogboksen angir du følgende verdier:
+1. I **Opprett salgsordre**-dialogboksen angir du følgende verdier:
 
     - **Kundekonto:** *US-002*
     - **Lager:** *51*
 
 1. Velg **OK**.
-1. Det legges til en ny linje i rutenettet på **Salgsordrelinjer** -hurtigfanen. På denne linjen angir du følgende verdier:
+1. Det legges til en ny linje i rutenettet på **Salgsordrelinjer**-hurtigfanen. På denne linjen angir du følgende verdier:
 
     - **Varenummer:** *A0001*
     - **Antall:** *3*
@@ -251,18 +251,18 @@ Følg disse trinnene for å opprette en salgsordre som en behovskilde.
 
 Følg disse trinnene for å opprette den planlagte direkteoverføringen fra salgsordren.
 
-1. På **Salgsordredetaljer** -siden for salgsordren du nettopp opprettet, velger du **Frigi til lager** i handlingsruten på **Lager** -fanen i **Handlinger** -gruppen.
+1. På **Salgsordredetaljer**-siden for salgsordren du nettopp opprettet, velger du **Frigi til lager** i handlingsruten på **Lager**-fanen i **Handlinger**-gruppen.
 
     Frigi til lager-handling oppretter en forsendelse og lastlinje for salgsordrelinjen, og prøver å tildele beholdning.
     
     Du får en informasjonsmelding. Du får også følgende advarsel: Ikke no arbeid ble opprettet for bølge XXXX. Se loggen over oppretting av arbeid for detaljer. Denne virkemåten forventes fordi det ikke er noe beholdning i lageret.
 
-1. På **Salgsordrelinjer** -fanen, på **Lager** -menyen, velger du **Forsendelsesdetaljer**.
+1. På **Salgsordrelinjer**-fanen, på **Lager**-menyen, velger du **Forsendelsesdetaljer**.
 
-    **Forsendelsesdetaljer** -siden vises og viser forsendelsen som ble opprettet for salgsordren.
+    **Forsendelsesdetaljer**-siden vises og viser forsendelsen som ble opprettet for salgsordren.
 
-1. I **Lastlinjer** -hurtigfanen legger du merke til at feltet **Planlagt direkteoverføringsantall** er satt til *3*. Fordi det ikke var noe beholdning tilgjengelig på lageret, men en gyldig forsyningskilde vil bli mottatt i tidsvinduet som er definert i direkteoverføringsmalen, ble direkteoverføringsantallet opprettet.
-1. I **Lastlinjer** -hurtigfanen velger du **Planlagt direkteoverføring** for å vise detaljene for direkteoverføringen som ble opprettet.
+1. I **Lastlinjer**-hurtigfanen legger du merke til at feltet **Planlagt direkteoverføringsantall** er satt til *3*. Fordi det ikke var noe beholdning tilgjengelig på lageret, men en gyldig forsyningskilde vil bli mottatt i tidsvinduet som er definert i direkteoverføringsmalen, ble direkteoverføringsantallet opprettet.
+1. I **Lastlinjer**-hurtigfanen velger du **Planlagt direkteoverføring** for å vise detaljene for direkteoverføringen som ble opprettet.
 
 ## <a name="process-the-cross-docking"></a>Behandle direkteoverføringen
 
@@ -270,18 +270,18 @@ Følg disse trinnene for å opprette den planlagte direkteoverføringen fra salg
 
 Systemet vil motta antallet på 5 fra bestillingen til mottakslokasjonen og opprette to arbeidsdeler.
 
-Den første arbeids-ID-en som opprettes, har **Arbeidsordretype** -verdien *Direkteoverføring* og er koblet til salgsordren. Den har et antall på 3 og dirigeres til den endelige forsendelseslokasjonen, slik at den kan sendes umiddelbart.
+Den første arbeids-ID-en som opprettes, har **Arbeidsordretype**-verdien *Direkteoverføring* og er koblet til salgsordren. Den har et antall på 3 og dirigeres til den endelige forsendelseslokasjonen, slik at den kan sendes umiddelbart.
 
-Den andre arbeids-ID-en som opprettes, har **Arbeidsordretype** -verdien *Bestillinger* og er koblet til bestillingen. Den har gjenstående antall på 2 som ikke ble direkteoverført, og som sendes til plassering for lageret.
+Den andre arbeids-ID-en som opprettes, har **Arbeidsordretype**-verdien *Bestillinger* og er koblet til bestillingen. Den har gjenstående antall på 2 som ikke ble direkteoverført, og som sendes til plassering for lageret.
 
 1. Logg på mobilenheten som en bruker i lageret *51*.
 1. Gå til **Inngående \> Kjøpsmottak**.
-1. I **PONum** -feltet angir du bestillingsnummeret.
+1. I **PONum**-feltet angir du bestillingsnummeret.
 1. I feltet **Antall** angi *5*.
 1. Velg **OK**.
-1. På neste side angir du **Vare** -feltet til *A0001*.
+1. På neste side angir du **Vare**-feltet til *A0001*.
 1. Velg **OK**.
-1. På neste side kontrollerer du verdiene for **PONum** , **Vare** og **Antall** ved å velge **OK**.
+1. På neste side kontrollerer du verdiene for **PONum**, **Vare** og **Antall** ved å velge **OK**.
 
     Du mottar en Arbeid fullført-melding.
 
@@ -289,17 +289,17 @@ Den andre arbeids-ID-en som opprettes, har **Arbeidsordretype** -verdien *Bestil
 
 ### <a name="put-away-to-cross-docking-and-bulk"></a>Plassering til direkteoverføring og bulk
 
-For øyeblikket har begge arbeids-ID-ene samme målnummerskilt. Hvis du vil fullføre de neste trinnene, må du hente arbeids-ID-en og målnummerskilt-ID-en. Du kan få denne informasjonen fra arbeidsdetaljene for bestillingslinjen og salgsordrelinjen. Du kan også gå til **Lagerstyring \> Arbeid \> Arbeidsdetaljer** og filtrere arbeid der **Lager** -verdien er *51*.
+For øyeblikket har begge arbeids-ID-ene samme målnummerskilt. Hvis du vil fullføre de neste trinnene, må du hente arbeids-ID-en og målnummerskilt-ID-en. Du kan få denne informasjonen fra arbeidsdetaljene for bestillingslinjen og salgsordrelinjen. Du kan også gå til **Lagerstyring \> Arbeid \> Arbeidsdetaljer** og filtrere arbeid der **Lager**-verdien er *51*.
 
 1. Gå til **Inngående \> Kjøpsplassering** på den mobile enheten, og angi målnummerskiltet fra arbeidet.
-1. I **ID** -feltet angir du målnummerskilt-ID-en fra arbeidsdetaljene.
+1. I **ID**-feltet angir du målnummerskilt-ID-en fra arbeidsdetaljene.
 
-    Direkteoverføringsplukking-siden viser plukklokasjonen ( *RECV* ), målnummerskiltet ( *nummerskilt* ), vare ( *A0001* ) og antall ( *3* ).
+    Direkteoverføringsplukking-siden viser plukklokasjonen (*RECV*), målnummerskiltet (*nummerskilt*), vare (*A0001*) og antall (*3*).
 
 1. Velg **OK**.
 1. I feltet **mål-LP** angir du et målnummerskilt for nummerskilt-ID-en som skal plasseres (direkteoverføres) til forsendelsesstedet. Du kan velge en hvilken som helst nummerskilt-ID.
 1. Velg **OK**.
-1. På den neste siden angir du nummerskilt-ID-en i **ID** -feltet.
+1. På den neste siden angir du nummerskilt-ID-en i **ID**-feltet.
 1. Velg **OK**.
 1. Bekreft arbeidet for plukking av det gjenstående antallet på 2, og velg deretter **OK**.
 1. På den neste siden velger du **Fullført** for å avslutte plukkprosessen og begynne plasseringsprosessen.

@@ -20,11 +20,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 9119655384cd05e5aa3622712e699b346a43f492
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3981334"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4434632"
 ---
 # <a name="manage-subcontracting-work-in-production"></a>Administrer utsetting arbeid i produksjon
 
@@ -57,16 +57,16 @@ Det finnes to metoder for modellering utsetting arbeid for produksjonsoperasjone
     -   Kostnadskontroll tildeler underleveranse arbeid i sin egen kostnad nedbryting-blokk.
 
 ## <a name="subcontracting-of-route-operations"></a>Utsetting av ruteoperasjoner
-Hvis du vil bruke utsetting av ruteoperasjoner for produksjon eller satsvis ordrer, må tjenesteproduktet som brukes til innkjøp av tjenesten ,defineres som et produkt av typen **Tjeneste** . I tillegg må det ha en en varegruppe for modellen som har alternativet **Lagerført produkt** under **Lagerpolicy** satt til **Ja** . Dette alternativet angir om et produkt er etterkalkulert som lager på produktkvittering ( **Lagerført produkt** = **Ja** ), eller om produktet er utgiftsført på en resultatkonto ( **Lagerført produkt** = **Nei** ). Selv om dette kan virke motstridende, er det basert på det faktum at bare varer som har denne policyen oppretter lagertransaksjoner som kan brukes i kostnadskontroll å beregne planlagte kostnader og se de faktiske kostnadene når en produksjonsordre avsluttes.  
+Hvis du vil bruke utsetting av ruteoperasjoner for produksjon eller satsvis ordrer, må tjenesteproduktet som brukes til innkjøp av tjenesten ,defineres som et produkt av typen **Tjeneste**. I tillegg må det ha en en varegruppe for modellen som har alternativet **Lagerført produkt** under **Lagerpolicy** satt til **Ja**. Dette alternativet angir om et produkt er etterkalkulert som lager på produktkvittering (**Lagerført produkt** = **Ja**), eller om produktet er utgiftsført på en resultatkonto (**Lagerført produkt** = **Nei**). Selv om dette kan virke motstridende, er det basert på det faktum at bare varer som har denne policyen oppretter lagertransaksjoner som kan brukes i kostnadskontroll å beregne planlagte kostnader og se de faktiske kostnadene når en produksjonsordre avsluttes.  
 
-Hvis du vil bli vurdert i planleggings- og beregning, må tjenesten legges til Stykklisten. Stykklistelinjen må være av typen **Leverandør** , og det må tilordnes ruteoperasjonen som er tilordnet tjenesten. Denne ruteoperasjon må ha et kostark ressurs og ressursbehov som peker til en ressurs av **leverandøren** som kobler operasjonen og tjenesten som er relatert til den tilsvarende leverandørkontoen.  
+Hvis du vil bli vurdert i planleggings- og beregning, må tjenesten legges til Stykklisten. Stykklistelinjen må være av typen **Leverandør**, og det må tilordnes ruteoperasjonen som er tilordnet tjenesten. Denne ruteoperasjon må ha et kostark ressurs og ressursbehov som peker til en ressurs av **leverandøren** som kobler operasjonen og tjenesten som er relatert til den tilsvarende leverandørkontoen.  
 
 Når denne konfigurasjonen brukes, opprettes en bestilling for relaterte tjenesteprodukt, basert på estimering av en produksjonsordre. Bestilling av tjenesten er brukt som forankring for underleveranse operasjoner. Underleveranse arbeidet kan administreres gjennom listesiden **Utsatt arbeid** i produksjonsstyring. Det utsatte arbeidet brukes til å levere råvarer og eventuelt et halvfabrikata til leverandøren som en forberedelse for operasjonen. Det brukes også til å motta det resulterende produktet for den utsatte operasjonen i vareankomst, der tjenesteproduktet brukes til å identifisere ankomsten av det halvferdige produktet. Når bestillingslinjen er mottatt, oppdateres produksjonsoperasjon som fullført.  
 
 En produksjonsordre kan ha mange operasjoner, og hver operasjon kan tildeles til en annen leverandør. Derfor kan en produksjonsordre for ende-til-ende utløse flere bestillinger.
 
 ## <a name="subcontracting-of-production-flow-activities"></a>Utsetting av produksjonsflytaktiviteter
-I [lean manufacturing](lean-manufacturing-overview.md)-løsningsmodeller er utsettingen av areid modellert som en tjeneste som er knyttet til en aktivitet i en [produksjonsflyt](tasks/create-production-flow-version.md) (emne i oppgaveguide). Derfor er denne typen utsetting også referert til som [aktivitetsbasert utsetting.](activity-based-subcontracting.md) En spesiell kostgruppetype, **Direkte utsetting** , er introdusert, og utsettingstjenester er ikke lenger en del av stykklisten over fullførte varer. Når du bruker lean manufacturing, er alle aktiviteter definert av kanbaner som kan være relatert til én eller flere produksjonsflytaktiviteter. Så langt høres den forklaringen ut akkurat som en forklaring på produksjonsordrer. Mens produksjonsordrene alltid må avsluttes med et ferdig produkt, kan du imidlertid opprette kanbaner for å levere halvferdig produkt. Du trenger ikke å introdusere et nytt produkt og stykklistenivå.  
+I [lean manufacturing](lean-manufacturing-overview.md)-løsningsmodeller er utsettingen av areid modellert som en tjeneste som er knyttet til en aktivitet i en [produksjonsflyt](tasks/create-production-flow-version.md) (emne i oppgaveguide). Derfor er denne typen utsetting også referert til som [aktivitetsbasert utsetting.](activity-based-subcontracting.md) En spesiell kostgruppetype, **Direkte utsetting**, er introdusert, og utsettingstjenester er ikke lenger en del av stykklisten over fullførte varer. Når du bruker lean manufacturing, er alle aktiviteter definert av kanbaner som kan være relatert til én eller flere produksjonsflytaktiviteter. Så langt høres den forklaringen ut akkurat som en forklaring på produksjonsordrer. Mens produksjonsordrene alltid må avsluttes med et ferdig produkt, kan du imidlertid opprette kanbaner for å levere halvferdig produkt. Du trenger ikke å introdusere et nytt produkt og stykklistenivå.  
 
 Siden kanban-regler kan være svært dynamiske, kan du utforme forskjellige varianter av forsyning for samme produkt på en produksjonsflyt. Når du bruker lean utsetting, er materialflyten og finansflyten strengt atskilt. All materialflyt representeres av kanban-aktiviteter. Bestillinger for tjenesteprodukter og mottaksposteringer av disse tjenestene kan automatiseres, basert på statusen for kanban-jobber i produksjonsflyten. Kanban-jobber kan startes og fullføres selv før bestillingen er opprettet. Utsettingsdokumenter (bestilling og mottak av tjenesten) kan aggregeres etter periode og tjeneste. Antall kjøpsdokumenter og linjer kan derfor holdes lavt, selv i svært gjentatte operasjoner der leverandører gir underleveranser i en enkelt brikke flyt.
 
@@ -74,7 +74,7 @@ Siden kanban-regler kan være svært dynamiske, kan du utforme forskjellige vari
 
 I en [lean produksjonsflyt](lean-manufacturing-modeling-lean-organization.md) kan en prosessaktivitet være definert som underleveranse når den er tildelt til en arbeidscelle (ressursgruppe) som har en enkelt leverandørressurs. Når en arbeidscelle er underleveranse, må relaterte prosessaktiviteter være koblet til en aktiv kjøpsavtalelinje som inneholder servicevaren og prisen på tjenesten. Serviceavtalen for aktiviteten definerer også beregningsforholdet mellom produktantallet for kanban-jobben og det resulterende serviceantallet. Du kan velge om tjenesteantallet er beregnet basert på hvor mange jobber, vareproduktantallet som er rapportert i prosjektene, eller det totale produktantallet (dette totale antallet inkluderer kasserte produkter).  
 
-Overføringsaktiviteter kan også defineres som underleveranse. Denne definisjonen oppstår implisitt når du velger den ansvarlige parteb for levering i overføringsaktiviteten. Når du velger **Speditør** eller **Mottaker** , hvis tilsvarende kilden eller målet lageret er et leverandøradministrert lager, regnes aktiviteten som utsatt. Når du velger **Transportør** , er aktiviteten er alltid utsatt. Som utsatte prosessaktiviteter må en utsatt overføringsaktivitet være koblet til en serviceavtale før produksjonsflyten kan aktiveres.
+Overføringsaktiviteter kan også defineres som underleveranse. Denne definisjonen oppstår implisitt når du velger den ansvarlige parteb for levering i overføringsaktiviteten. Når du velger **Speditør** eller **Mottaker**, hvis tilsvarende kilden eller målet lageret er et leverandøradministrert lager, regnes aktiviteten som utsatt. Når du velger **Transportør**, er aktiviteten er alltid utsatt. Som utsatte prosessaktiviteter må en utsatt overføringsaktivitet være koblet til en serviceavtale før produksjonsflyten kan aktiveres.
 
 ### <a name="backflush-costing"></a>Backflush-etterkalkulering
 
@@ -94,7 +94,7 @@ For å etterfylle materialet i dette lageret kan du bruke flere strategier:
 
 Halvferdige produkter er unntaket for denne regelen. Hvis du vil overføre halvferdige produkter, er du begrenset til disse alternativene:
 
--   For produksjons- og partiordrer, kan halvferdige varer bare overføres logisk ved å bruke plukklistejournalen fra listesiden **Utsatt arbeid** . Denne journalen oppretter et leveringsmerknadsdokument som kan brukes til å overføre halvferdige produkter og råvarer til leverandøren.
+-   For produksjons- og partiordrer, kan halvferdige varer bare overføres logisk ved å bruke plukklistejournalen fra listesiden **Utsatt arbeid**. Denne journalen oppretter et leveringsmerknadsdokument som kan brukes til å overføre halvferdige produkter og råvarer til leverandøren.
 -   Overføring av halvferdige varer er dokumentert ved mottak av Kanbaner uttak eller produksjon på leverandør plassering for underleveranse operasjoner i produksjonsflyter. For å forme en eksplisitt overføringsaktivitet kan du avslutte en produksjonskanban med en ekstra overføringsaktivitet.
 
 **Merk:** En produksjonsrute for en enkelt produksjonsordre kan ikke krysse flere områder. Denne regelen gjelder også for det usatte arbeidet. Derfor må lagrene som representerer de leverandøradministrerte materialeplasseringene, være definert i det samme området som de interne ressursene som brukes i ruten. Selv om produksjonsflyter kan krysse av områder, kan de ikke transporter halvferdige varer fra ett område til et annet, fordi operasjonen antyder en endring i kostnadskontekst.  

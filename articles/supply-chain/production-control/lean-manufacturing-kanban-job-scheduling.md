@@ -20,11 +20,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 77ba67de5585022ab7d506c8cd2acb380a4e3a54
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3979457"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4434634"
 ---
 # <a name="kanban-job-scheduling-for-lean-manufacturing"></a>Kanban-jobbplanlegging for Lean manufacturing
 
@@ -35,12 +35,12 @@ Denne artikkelen inneholder informasjon om visuell kontroll over planlegging av 
 Siden **Kanban-jobbplanlegging** gir visuell kontroll over tidsplanene for arbeidsceller for lean manufacturing. Den gir en oversikt over alle kanban-jobber og inneholder flere filtreringsmuligheter. Du kan flytte til alle andre sider som er knyttet til kanban-konfigurasjon og -kjøring fra denne siden.
 
 ## <a name="automatic-scheduling-of-kanban-jobs"></a>Automatisk planlegging av kanban-jobber
-Planlegging kan utløses automatisk hvis du angir parameteren **Antall for automatisk planlegging** for kanban-regelen. Hvis du setter **Antall for automatisk planlegging** til **1** , hver kanban-jobben er planlagt umiddelbart når det er opprettet. Resultatet er en serie med operasjoner av typen første pull, første betjening. Hvis du setter **Antall for automatisk planlegging** til en verdi som er mer enn 1, grupperes kanban-jobber før de planlegges. 
+Planlegging kan utløses automatisk hvis du angir parameteren **Antall for automatisk planlegging** for kanban-regelen. Hvis du setter **Antall for automatisk planlegging** til **1**, hver kanban-jobben er planlagt umiddelbart når det er opprettet. Resultatet er en serie med operasjoner av typen første pull, første betjening. Hvis du setter **Antall for automatisk planlegging** til en verdi som er mer enn 1, grupperes kanban-jobber før de planlegges. 
 
-Dette konseptet gjør det mulig for kanban-størrelser å bli redusert til under de faktiske økonomiske partistørrelsene. Den økonomiske gruppestørrelse for et bestemt element (eller varefamilie) er for eksempel 30. I stedet for å opprette kanbaner som bruker produktantallet, 30, kan du konfigurere kanban-regelen slik at den har et produktantall på 10 og en **Antall for automatisk planlegging** -verdi av **3** . Selv om automatisk planlegging planlegger kanban-jobbene for arbeidscellen bare når det finnes tre ikke-planlagte jobber, er det helt transparent for planleggeren og arbeidslederen at to ikke-planlagte jobber kan vente på kjøring. Planleggeren eller arbeidslederen kan deretter ta de to jobbene i produksjonen ved å planlegg dem manuelt eller opprette ekstra Kanbaner.
+Dette konseptet gjør det mulig for kanban-størrelser å bli redusert til under de faktiske økonomiske partistørrelsene. Den økonomiske gruppestørrelse for et bestemt element (eller varefamilie) er for eksempel 30. I stedet for å opprette kanbaner som bruker produktantallet, 30, kan du konfigurere kanban-regelen slik at den har et produktantall på 10 og en **Antall for automatisk planlegging**-verdi av **3**. Selv om automatisk planlegging planlegger kanban-jobbene for arbeidscellen bare når det finnes tre ikke-planlagte jobber, er det helt transparent for planleggeren og arbeidslederen at to ikke-planlagte jobber kan vente på kjøring. Planleggeren eller arbeidslederen kan deretter ta de to jobbene i produksjonen ved å planlegg dem manuelt eller opprette ekstra Kanbaner.
 
 ## <a name="manual-scheduling"></a>Manuell planlegging
-Microsoft Dynamics AX 2012 innførte kanban-plankortet for manuell planlegging. Manuell planlegging kan kombineres med automatisk planlegging. Med Kanban-plankortet kan du planlegge og oppheve planlegging av jobber, flyttet dem i rekkefølge, eller flytte dem fra periode til periode. For jobber som er basert på en kanban-regel hvor verdien for **Automatisk planlegging** er mer enn **0** , kan planlegging oppheves manuelt. Disse jobbene blir imidlertid planlagt på nytt når den neste hendelsen for automatisk planlegging forekommer (det vil si når det opprettes en ny kanban). Følgende alternativer er tilgjengelige for manuell planlegging:
+Microsoft Dynamics AX 2012 innførte kanban-plankortet for manuell planlegging. Manuell planlegging kan kombineres med automatisk planlegging. Med Kanban-plankortet kan du planlegge og oppheve planlegging av jobber, flyttet dem i rekkefølge, eller flytte dem fra periode til periode. For jobber som er basert på en kanban-regel hvor verdien for **Automatisk planlegging** er mer enn **0**, kan planlegging oppheves manuelt. Disse jobbene blir imidlertid planlagt på nytt når den neste hendelsen for automatisk planlegging forekommer (det vil si når det opprettes en ny kanban). Følgende alternativer er tilgjengelige for manuell planlegging:
 
 -   **Tidsplan** planlegger de valgte jobbene i henhold til forfallsdatoen. (Dette alternativet ligner automatisk planlegging.)
 -   **Planlegg fremover fra dato** prøver å planlegge de valgte jobbene i henhold til forfallsdatoen, men begrenser resultatet ved hjelp av den angitte tidligste startdatoen.

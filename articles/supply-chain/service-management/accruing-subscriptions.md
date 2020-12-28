@@ -19,11 +19,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 5ebd65655db56ee1169f24dbc79fbfb5130f06a5
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3978827"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4434362"
 ---
 # <a name="accruing-subscriptions"></a>Avsetning av abonnementer 
 
@@ -52,23 +52,23 @@ Hvis du vil avsette omsetning, må du sørge for at følgende datakravene oppfyl
 
 ## <a name="account-setup"></a>Kontooppsett
 
-Kontoene **VIA – abonnement** og **Påløpt inntekt – abonnement** må være konfigurert i **Prosjekt** -modulen.
+Kontoene **VIA – abonnement** og **Påløpt inntekt – abonnement** må være konfigurert i **Prosjekt**-modulen.
 
 Når du posterer påløpt omsetning, debiteres kontoen **VIA – abonnement** med det påløpte beløpet, og kontoen **Påløpt inntekt – abonnement** krediteres med det påløpte beløpet.
 
 ## <a name="set-up-accounts-for-accrual-of-subscription-revenue"></a>Definere kontoer for avsetning av abonnementsomsetning
 
-1.  Klikk på **Prosjektstyring og regnskap** \> **Oppsett** \> **Postering** \> **Finansposteringsoppsett** .
+1.  Klikk på **Prosjektstyring og regnskap** \> **Oppsett** \> **Postering** \> **Finansposteringsoppsett**.
 
-2.  Klikk på fanen **Inntektskontoer** , og velg **VIA – abonnement** eller **Påløpt inntekt – abonnement** for å konfigurere kontoene.
+2.  Klikk på fanen **Inntektskontoer**, og velg **VIA – abonnement** eller **Påløpt inntekt – abonnement** for å konfigurere kontoene.
 
 ## <a name="subscription-group-setup"></a>Oppsett for abonnementsgruppe
 
-For å kunne avsette inntekt for abonnementer må det være merket av for **Avsett inntekt** . Dette finnes i skjemaet **Abonnementsgrupper** for gruppen som er knyttet til abonnementet. Klikk på **Servicestyring** \> **Oppsett** \> **Serviceabonnementer** \> **Abonnementsgrupper** .
+For å kunne avsette inntekt for abonnementer må det være merket av for **Avsett inntekt**. Dette finnes i skjemaet **Abonnementsgrupper** for gruppen som er knyttet til abonnementet. Klikk på **Servicestyring** \> **Oppsett** \> **Serviceabonnementer** \> **Abonnementsgrupper**.
 
 ## <a name="enable-revenue-accrual-on-a-subscription-group"></a>Aktivere omsetningsavsetning på en abonnementsgruppe
 
-1.  Klikk på **Servicestyring** \> **Oppsett** \> **Serviceabonnementer** \> **Abonnementsgrupper** .
+1.  Klikk på **Servicestyring** \> **Oppsett** \> **Serviceabonnementer** \> **Abonnementsgrupper**.
 
 ## <a name="periods"></a>Perioder
 
@@ -127,7 +127,7 @@ I følgende tabell får du en oversikt over hvilke avsetningsperioder du kan def
 </tbody>
 </table>
 
-Definering av faktureringsperioden er en obligatorisk del av det totale oppsettet for abonnementsgrupper. Du kan bestemme om du vil også definere en avsetningsperiode for abonnementsgruppen. Hvis du definerer en avsetningsperiode for abonnementsgruppen, foreslås denne perioden i **Periodekode** -feltet. Dette feltet finnes i skjemaet **Avsett abonnementsomsetning** når du avsetter abonnementsomsetning. Avsetningsperioden er imidlertid valgfri informasjon om abonnementsgruppen.
+Definering av faktureringsperioden er en obligatorisk del av det totale oppsettet for abonnementsgrupper. Du kan bestemme om du vil også definere en avsetningsperiode for abonnementsgruppen. Hvis du definerer en avsetningsperiode for abonnementsgruppen, foreslås denne perioden i **Periodekode**-feltet. Dette feltet finnes i skjemaet **Avsett abonnementsomsetning** når du avsetter abonnementsomsetning. Avsetningsperioden er imidlertid valgfri informasjon om abonnementsgruppen.
 
 
 > [!NOTE]
@@ -140,9 +140,9 @@ Du kan styre antallet finanstransaksjoner som opprettes når du posterer påløp
 
 ## <a name="specify-the-level-of-posting-details-to-display-for-accrued-transactions"></a>Angi nivået av posteringsdetaljer som skal vises for avsatte transaksjoner
 
-1.  Klikk på **Prosjektstyring og regnskap** \> **Oppsett** \> **Parametere for prosjektstyring og regnskap** .
+1.  Klikk på **Prosjektstyring og regnskap** \> **Oppsett** \> **Parametere for prosjektstyring og regnskap**.
 
-2.  På fanen **Økonomisk** i **Faktura** -feltet velger du **Total** eller **Linje** .
+2.  På fanen **Økonomisk** i **Faktura**-feltet velger du **Total** eller **Linje**.
 
 
 ## <a name="see-also"></a>Se også

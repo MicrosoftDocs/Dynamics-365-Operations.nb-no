@@ -20,11 +20,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 3116f9fd2d1fe6a0967b114a069f495cea6217a1
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3979786"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4434075"
 ---
 # <a name="cost-entries"></a>Kostnadsoppføringer
 
@@ -48,7 +48,7 @@ En overføringsjournalhendelse registreres. Hendelsen overfører ett stykk av va
 En produktkvitteringshendelse registreres for en bestilling. Hendelsen registrerer 100 stykk av vare A med en enhetskostnad på NOK 100,00. Siden vare A bruker et serienummer til å spore formålet med lagerstyring, opprettes et unikt serienummer for hver vare som mottas. Derfor oppretter hendelsen 100 lagertransaksjoner og én kostnadsoppføring.
 
 ## <a name="cost-entries-page"></a>Kostnadsoppføringer-siden
-Den nye **Kostnadsoppføringer** -siden lar deg vise og styre registrering av antall og kostnader. Denne siden kompletterer sidene **Lagertransaksjon** og **Lagerutligning** . Poster registreres i kronologisk rekkefølge for en hendelse. Derfor kan du raskt finne og styre de akkumulerte kostnadene for en bestemt hendelse eller alle hendelsene som er knyttet til et dokument. Her er et eksempel:
+Den nye **Kostnadsoppføringer**-siden lar deg vise og styre registrering av antall og kostnader. Denne siden kompletterer sidene **Lagertransaksjon** og **Lagerutligning**. Poster registreres i kronologisk rekkefølge for en hendelse. Derfor kan du raskt finne og styre de akkumulerte kostnadene for en bestemt hendelse eller alle hendelsene som er knyttet til et dokument. Her er et eksempel:
 
 -   En produktkvitteringshendelse er registrert for vare A. 100 stykker mottas med en enhetskostnad på NOK 100,00.
 -   Noen dager etter at fakturahendelsen er registrert, øker kostnadene til NOK 110,00. Derfor er totalbeløpet NOK 11 000. Det opprettes et andre bilag for å gjøre rede for differansen på NOK 1 000.
@@ -60,7 +60,7 @@ Den nye **Kostnadsoppføringer** -siden lar deg vise og styre registrering av an
 | 00002   | 20.01.2015 | Bestilling | 100001 | 0000101 |          | 100,00  |
 | 00003   | 31.01.2015 | Justering     | 100001 | 0000101 |          | 15,00   |
 
-**Kostnadsoppføringer** -siden aktiverer filtrering etter dokument-ID og dokumentdato. 
+**Kostnadsoppføringer**-siden aktiverer filtrering etter dokument-ID og dokumentdato. 
 
 > [!NOTE]
 > Kostnadsoppføringer er bare tilgjengelige for [kostnadsobjekter](cost-object.md) eller frigitte produkter.

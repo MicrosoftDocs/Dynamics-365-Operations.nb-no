@@ -17,11 +17,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2020-03-21
 ms.dyn365.ops.version: Release 10.0.10
 ms.openlocfilehash: 41a05bcd0148d0a553cb50575cae47f48397ae9b
-ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: nb-NO
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4017627"
+ms.locfileid: "4434734"
 ---
 # <a name="warehouse-handling-of-inbound-loads-for-purchase-orders"></a>Lagerhåndtering av innkommende laster for bestillinger
 
@@ -45,7 +45,7 @@ Illustrasjonen nedenfor viser den vanlige flyten for håndtering av innkommende 
 
 1. **Leverandøren bekrefter lastfordeling.**
 
-    Når leverandøren fordeler lasten, bekrefter logistikk koordinatoren i det mottakende lageret lasteforsendelsen. Hvis mottaksfirmaet bruker modulen **Transportstyring** , utløser inngående forsendelsesbekreftelse andre lastebehandlingsprosesser som er knyttet til innkommende laster. Hvis du vil ha mer informasjon, se [Bekrefte en last for forsendelse](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/confirm-a-load-for-shipping).
+    Når leverandøren fordeler lasten, bekrefter logistikk koordinatoren i det mottakende lageret lasteforsendelsen. Hvis mottaksfirmaet bruker modulen **Transportstyring**, utløser inngående forsendelsesbekreftelse andre lastebehandlingsprosesser som er knyttet til innkommende laster. Hvis du vil ha mer informasjon, se [Bekrefte en last for forsendelse](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/confirm-a-load-for-shipping).
 
 1. **Lasten ankommer lageret, og arbeidere registrerer antall.**
 
@@ -79,7 +79,7 @@ Når en innkommende last først ankommer lageret, må lagermedarbeidere registre
 
 - **En arbeidsmal som definerer plukkings- og plasseringsarbeid for innkommende laster**
 
-    Dette elementet er knyttet til de forrige elementene. Du må ha minst én arbeidsmal for arbeidsordretypen _Bestilling_ , og den må inneholde et sett med plukkings-/plasseringsarbeidstyper.
+    Dette elementet er knyttet til de forrige elementene. Du må ha minst én arbeidsmal for arbeidsordretypen _Bestilling_, og den må inneholde et sett med plukkings-/plasseringsarbeidstyper.
 
 Mobilenheten veileder mottaksassistenten på lageret gjennom flyten for registrering av lasteantall. Som et minumum inkluderer denne flyten følgende trinn for hver last-ID:
 
@@ -101,10 +101,10 @@ Merk at lagermedarbeidere kan registrere mottaket av en bestilling med én eller
 
 - **På mobilenheten:** Bruk prosessene _Mottak av bestillingslinje_ og _Bestillingslinjen er mottatt og plassert_. (Hvis det finnes flere enn én last for bestillingslinjeantallet, kan ikke arbeideren bruke prosessen _Mottak av bestillingslinje_. I stedet vil arbeideren bli bedt om å bruke enhetshandlingen som er knyttet til prosessen _Mottak av lastvare_.)
 - **På klienten:** Bruk journalen for vareankomst.
-- **På klienten:** Bruk **Registrering** -handlingen som du får tilgang til fra bestillingslinjen.
+- **På klienten:** Bruk **Registrering**-handlingen som du får tilgang til fra bestillingslinjen.
 
 > [!NOTE]
-> Hvis bestillingsmottaket er registrert ved hjelp av noen av metodene ovenfor, opprettes det ingen kobling mellom bestillingens lagertransaksjon og lasten, selv om funksjonen _Tilknytt lagertransaksjoner for bestilling med last_ er aktivert. Ett unntak fra denne regelen er når du bruker alternativet **Mottak av bestillingslinje** , og bare én last har en annen status enn _Mottatt_ for ordre linjen.
+> Hvis bestillingsmottaket er registrert ved hjelp av noen av metodene ovenfor, opprettes det ingen kobling mellom bestillingens lagertransaksjon og lasten, selv om funksjonen _Tilknytt lagertransaksjoner for bestilling med last_ er aktivert. Ett unntak fra denne regelen er når du bruker alternativet **Mottak av bestillingslinje**, og bare én last har en annen status enn _Mottatt_ for ordre linjen.
 
 ### <a name="handle-discrepancies-during-registration-of-inbound-load-quantities"></a>Behandle avvik under registrering av inngående lasteantall
 
@@ -122,8 +122,8 @@ Bruk feltet **Overmottak for last** for de relevante menyelementene for mobilenh
 
 - Mottak av lastvare
 - Mottak og plassering av lastvare
-- Mottak av kombinerte skiltnumre (når feltet **Identifikasjonsmåte for kildedokumentlinje** er angitt til _Mottak av lastvare_ )
-- Mottak og plassering av kombinerte skiltnumre (når feltet **Identifikasjonsmåte for kildedokumentlinje** er angitt til _Mottak av lastvare_ )
+- Mottak av kombinerte skiltnumre (når feltet **Identifikasjonsmåte for kildedokumentlinje** er angitt til _Mottak av lastvare_)
+- Mottak og plassering av kombinerte skiltnumre (når feltet **Identifikasjonsmåte for kildedokumentlinje** er angitt til _Mottak av lastvare_)
 
 Tabellen nedenfor forklarer hvilke alternativer som er tilgjengelige for feltet **Overmottak for last**.
 
@@ -145,7 +145,7 @@ Når lagerarbeideren har fullført plasseringsarbeidet, registrerer og sporer sy
 | Entity | Oppdateringer | Merk |
 |---|---|---|
 | Belastning | <p>Følgende felt oppdateres:</p><ul><li>Verdien for <b>Laststatus</b> endres til <i>Pågår</i>.</li><li>Verdien for <b>Arbeidsstatus</b> endres til <i>100,00 % av arbeid fullført</i>.</li></ul> | Verdien for **Laststatus** endres til _Pågår_ når arbeideren starter plasseringsoppgaven for minst én linje med plasseringsarbeid. |
-| ager transaksjoner av arbeid som det tilknyttede antallet er plassert for | Feltene **Mottak** og **Sted** , og andre relevante felt, oppdateres for å gjenspeile bevegelsen fra mottaksstedet til lagringsstedet. | Verdien **Mottaksstatus** for lagertransaksjonen for bestillingen forblir _Registrert_. |
+| ager transaksjoner av arbeid som det tilknyttede antallet er plassert for | Feltene **Mottak** og **Sted**, og andre relevante felt, oppdateres for å gjenspeile bevegelsen fra mottaksstedet til lagringsstedet. | Verdien **Mottaksstatus** for lagertransaksjonen for bestillingen forblir _Registrert_. |
 | Lagerplassering | Verdien **Arbeidsstatus** endres til _Lukket_. | |
 
 ## <a name="post-registered-product-quantities-against-purchase-orders"></a><a name="post-registered-quantities"></a>Postere registrerte produktantall mot bestillinger
@@ -155,37 +155,37 @@ Når inngående produktantall er registrert i systemet, blir de tilgjengelige fo
 For å åpne en side der de kan postere en produktkvittering, kan medlemmer av operasjonsteamet følge _ethvert_ av disse trinnene:
 
 - Åpne den relevante lastposten, og velg deretter **Produktkvittering**.
-- Gå til **Lagerstyring \> Periodiske oppgaver \> Oppdater produktkvitteringer** , og angi deretter lasten som skal posteres, i feltet **Last-ID**.
+- Gå til **Lagerstyring \> Periodiske oppgaver \> Oppdater produktkvitteringer**, og angi deretter lasten som skal posteres, i feltet **Last-ID**.
 - Åpne den relevante bestillingen, og velg deretter **Produktkvittering**.
 - Gå til **Innkjøp og leverandører \> Bestillinger \> Mottar produkter \> Postering av produktkvitteringsjobb**.
 
-Handlingen **Produktkvittering** som er tilgjengelig på **Last** -siden (og på den tilsvarende siden for oppdateringsjobben, siden **Oppdater produktkvitteringer** ) kan oppdatere produktkvitteringsantall bare på bestillingsantall som har statusen _Registrert_. Handlingen **Produktkvittering** som er tilgjengelig på siden **Bestilling** , kan imidlertid inkludere antall i begge behandlingsstatusene ( _Bestilt_ og _Registrert_ ). Den kan også styre omfanget av produktkvitteringspostering ved hjelp av flere parametere, for eksempel _Motta nå-antall_ og _Registrerte antall og tjenester_.
+Handlingen **Produktkvittering** som er tilgjengelig på **Last**-siden (og på den tilsvarende siden for oppdateringsjobben, siden **Oppdater produktkvitteringer**) kan oppdatere produktkvitteringsantall bare på bestillingsantall som har statusen _Registrert_. Handlingen **Produktkvittering** som er tilgjengelig på siden **Bestilling**, kan imidlertid inkludere antall i begge behandlingsstatusene (_Bestilt_ og _Registrert_). Den kan også styre omfanget av produktkvitteringspostering ved hjelp av flere parametere, for eksempel _Motta nå-antall_ og _Registrerte antall og tjenester_.
 
 Bare ordrer med statusen _Bekreftet_ kan være produktkvittering – postert. For ubekreftede bestillinger vil handlingen **Produktkvittering** vises som utilgjengelig.
 
 ### <a name="post-registered-quantities-from-the-load-page"></a>Postere registrerte antall fra Last-siden
 
-For produktkvittering – poster registrerte antall fra **Last** -siden må følgende forutsetninger være på plass:
+For produktkvittering – poster registrerte antall fra **Last**-siden må følgende forutsetninger være på plass:
 
 - Lasten må ha minst én antallsenhet som har statusen _Registrert_.
 - Laststatusen må være _Sendt_.
 - Bestillingen som er knyttet til lasten, må ha statusen _Bekreftet_.
 
 > [!NOTE]
-> Hvis laststatusen ikke er satt til _Sendt_ , vil systemet automatisk bekrefte lasten før det kjører produktkvitteringsoppdateringen. (Laststatusen settes til _Sendt_ når en bruker registrerer lastens innkommende forsendelse.)
+> Hvis laststatusen ikke er satt til _Sendt_, vil systemet automatisk bekrefte lasten før det kjører produktkvitteringsoppdateringen. (Laststatusen settes til _Sendt_ når en bruker registrerer lastens innkommende forsendelse.)
 
-Til ankomstregistreringene av typen produktkvittering – poster som er knyttet til en valgt last, velger arbeideren handlingen **Produktkvittering** på **Last** -siden. Siden som åpnes, har følgende nøkkeldetaljer:
+Til ankomstregistreringene av typen produktkvittering – poster som er knyttet til en valgt last, velger arbeideren handlingen **Produktkvittering** på **Last**-siden. Siden som åpnes, har følgende nøkkeldetaljer:
 
-- **Antall** -feltet i **Parametere** -delen i kategorien **Innstillinger** viser det _registrerte antallet_. Ingen andre alternativer er tilgjengelig her.
+- **Antall**-feltet i **Parametere**-delen i kategorien **Innstillinger** viser det _registrerte antallet_. Ingen andre alternativer er tilgjengelig her.
 - Rutenettet på hurtigfanen **Oversikt** viser alle bestillingene som er inkludert i den valgte lasten.
 - Rute nettet på hurtigfanen **Linjer** viser alle ordrelinjer som har et registrert antall.
 
 > [!NOTE]
-> Antall for ordrelinjer som vises i kategorien **Linje** , beregnes annerledes, avhengig av om funksjonen _Tillat flere produktkvitteringer per last_ er tilgjengelig og aktivert i din versjon av Supply Chain Management.
+> Antall for ordrelinjer som vises i kategorien **Linje**, beregnes annerledes, avhengig av om funksjonen _Tillat flere produktkvitteringer per last_ er tilgjengelig og aktivert i din versjon av Supply Chain Management.
 >
 > | Versjon | Beregning |
 > |---|---|
-> | Versjoner før versjon 10.0.10, og nyere versjoner der funksjonen _Tillat flere produktkvitteringer per last_ ikke er aktivert | Linjeantallet er summen av alle registrerte antall _for denne bestillingslinjen_ , uansett om registreringen ble utført over flere laster, uavhengig av lasten, fra en mobilenhet eller fra klienten. |
+> | Versjoner før versjon 10.0.10, og nyere versjoner der funksjonen _Tillat flere produktkvitteringer per last_ ikke er aktivert | Linjeantallet er summen av alle registrerte antall _for denne bestillingslinjen_, uansett om registreringen ble utført over flere laster, uavhengig av lasten, fra en mobilenhet eller fra klienten. |
 > | Versjon 10.0.10 og senere, der funksjonen _Tillat flere produktkvitteringer per last_ er aktivert | Linjeantallet er summen av alle registrerte antall _for lastposten_ som handlingen **Produktkvitteringpostering** ble startet fra. |
 
 Når brukeren velger **OK** for å bekrefte produktkvitteringspostering, utfører systemet følgende nøkkeloppdateringer for de aktuelle enhetene.
@@ -207,21 +207,21 @@ Tabellen nedenfor oppsummerer virkningene av innstillingen **Tillat flere produk
 |---|---|---|---|
 | Når dette feltet ikke er tilgjengelig (versjoner før 10.0.10) | <p>Lastantallet settes slik at det tilsvarer det registrerte antallet.</p><p>Hvis lastantallet oppdateres til 0 (null), som betyr at det ikke er foretatt noen registrering, slettes lastlinjen.</p><p>Hvis det ikke finnes noen lastlinjer i lasten, blir lasten slettet.</p> | _Mottatt_ | Hvis det finnes flere laster for ordrelinjens registrerte antall, blir bare statusen for lasten som mottaket ble postert fra, oppdatert til _Mottatt_. |
 | Nr. | <p>Lastantallet settes slik at det tilsvarer det registrerte antallet som er knyttet til last-ID-en.</p><p>Hvis det ikke er registrert noen last-ID for lagertransaksjonen, blir virkemåten den samme som i versjoner før 10.0.10.</p> | _Mottatt_ | |
-| Ja | Ingen oppdateringer | _Mottatt_ , hvis totalt registrert lastantall er likt eller større enn lastantallet | |
-| Ja | Ingen oppdateringer | _Sendt_ eller _Pågår_ , hvis totalt registrert lastantall er mindre enn lastantallet | |
+| Ja | Ingen oppdateringer | _Mottatt_, hvis totalt registrert lastantall er likt eller større enn lastantallet | |
+| Ja | Ingen oppdateringer | _Sendt_ eller _Pågår_, hvis totalt registrert lastantall er mindre enn lastantallet | |
 
-Når feltet **Laststatus** er satt til _Mottatt_ , kan det ikke foretas flere produktkvitteringsposteringer for denne lasten. Arbeideren kan imidlertid registrere det gjenstående ordreantallet mot den mottatte lasten under følgende betingelser. (Hvis du ha mer informasjon, kan du se delen [Overmottak av last](#load-over-receiving) tidligere i dette emnet.)
+Når feltet **Laststatus** er satt til _Mottatt_, kan det ikke foretas flere produktkvitteringsposteringer for denne lasten. Arbeideren kan imidlertid registrere det gjenstående ordreantallet mot den mottatte lasten under følgende betingelser. (Hvis du ha mer informasjon, kan du se delen [Overmottak av last](#load-over-receiving) tidligere i dette emnet.)
 
 - Versjonen av Supply Chain Management er eldre enn versjon 10.0.11.
 - Funksjonen _Overmottak av lastantall_ er aktivert, og feltet **Overmottak for lastlinjeantall** på menyen på mobilenheten for lastevarens mottakshandling er satt til _Tillat_.
 
-For produktkvitteringspostering av flere registrerte lastantall mot en last som har statusen _Mottatt_ , må brukeren kjøre posteringshandlingen fra den tilknyttede bestillingen.
+For produktkvitteringspostering av flere registrerte lastantall mot en last som har statusen _Mottatt_, må brukeren kjøre posteringshandlingen fra den tilknyttede bestillingen.
 
 ### <a name="post-registered-quantities-from-the-purchase-order-page"></a>Postere registrerte antall fra Bestilling-siden
 
-For produktkvitteringspostering av registrerte antall fra **Bestilling** -siden må brukeren fullføre følgende oppgaver før han eller hun velger handlingen **Produktkvittering** :
+For produktkvitteringspostering av registrerte antall fra **Bestilling**-siden må brukeren fullføre følgende oppgaver før han eller hun velger handlingen **Produktkvittering**:
 
-- Angi **Antall** -feltet i **Parametere** -delen i kategorien **Innstillinger** til _Registrert antall_.
+- Angi **Antall**-feltet i **Parametere**-delen i kategorien **Innstillinger** til _Registrert antall_.
 - Angir numrene på bestillingene som skal tas med i posteringen, i feltet **Produktkvittering**.
 
 > [!NOTE]
@@ -238,20 +238,20 @@ Tabellen nedenfor oppsummerer virkningene av innstillingen **Tillat flere produk
 
 | Tillat flere mottakssedler per belastning | Lastantall | Laststatus | Merk |
 |---|---|---|---|
-| Når dette feltet enten er deaktivert eller ikke tilgjengelig (i versjoner før 10.0.10) | Ingen oppdateringer | Det utføres ingen oppdateringer. (Statusen forblir _Åpen_ , _Sendt_ eller _Pågår_.) | Fordi produktkvitteringsposteringen startes fra en bestilling, har ikke oppdateringslogikken informasjon om tilknytningen mellom de registrerte antallene innenfor sitt omfang og lastene som registreringen ble registrert mot. Derfor kan den ikke velge lasten for statusoppdateringen. |
+| Når dette feltet enten er deaktivert eller ikke tilgjengelig (i versjoner før 10.0.10) | Ingen oppdateringer | Det utføres ingen oppdateringer. (Statusen forblir _Åpen_, _Sendt_ eller _Pågår_.) | Fordi produktkvitteringsposteringen startes fra en bestilling, har ikke oppdateringslogikken informasjon om tilknytningen mellom de registrerte antallene innenfor sitt omfang og lastene som registreringen ble registrert mot. Derfor kan den ikke velge lasten for statusoppdateringen. |
 | Aktivert | Ingen oppdateringer | <p>En av følgende handlinger inntreffer:</p><ul><li>Statusen endres til <i>Mottatt</i> hvis totalt mottatt og kjøpt antall av bestillingslagertransaksjonene er større enn eller lik antallet for lasten de er knyttet til.</li><li>Statusen forblir <i>Åpen</i>, <i>Sendt</i> eller <i>Pågår</i> hvis den forrige betingelsen ikke er oppfylt for alle linjene i lasten.</li></ul> | |
 
 ### <a name="select-the-appropriate-product-receipt-posting-option-for-your-logistics-operations"></a>Velge riktig alternativ for produktkvitteringspostering for logistikkoperasjoner
 
 Som beskrevet tidligere tilbyr systemet to alternativer for produktkvitteringspostering. Du kan få tilgang til alternativene på følgende steder:
 
-- På **Last** -siden eller fra menyen **Lagerstyring \> Periodiske oppgaver** som en oppdateringsjobb
+- På **Last**-siden eller fra menyen **Lagerstyring \> Periodiske oppgaver** som en oppdateringsjobb
 - På siden **Bestilling** eller fra menyen **Innkjøp og leverandører \> Bestillinger \> Mottar produkter** som en oppdateringsjobb
 
 Firmaer som bruker laster til å planlegge og administrere transport og lagerhåndtering av innkommende ordrer, anbefales å bruke følgende funksjoner, som er utformet for å fungere med laster:
 
-- **Mottak av lastvare** -handlinger på mobilenheter for lager, for å registrere ankomsten av produktantallet mot lasten
-- **Produktkvitteringpostering** -handlinger som startes fra en last, for å oppdatere lagerfinans
+- **Mottak av lastvare**-handlinger på mobilenheter for lager, for å registrere ankomsten av produktantallet mot lasten
+- **Produktkvitteringpostering**-handlinger som startes fra en last, for å oppdatere lagerfinans
 
 > [!NOTE]
 > Andre funksjoner for antallsregistrering produktkvitteringspostering kan brukes til å støtte de tilsvarende inngående driftsprosessene. Hvis du imidlertid bruker dem om hverandre sammen med eller i stedet for de dedikerte funksjonene for laster, kan du redusere nøyaktigheten på dataene til lastpostene og dermed sømløsheten i lasthåndteringsflyter.
@@ -268,12 +268,12 @@ Disse scenarioene krever funksjonen _Flere produktkviteringsposteringer per last
 
 1. Åpne arbeidsområdet **Funksjonsbehandling**. (Hvis du vil ha fullstendig informasjon om hvordan du finner og bruker dette arbeidsområdet, kan du se [Oversikt over funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).)
 
-1. Aktiver funksjonen _Tilknytt lagertransaksjoner for bestilling med last_ , som er oppført på følgende måte:
+1. Aktiver funksjonen _Tilknytt lagertransaksjoner for bestilling med last_, som er oppført på følgende måte:
 
     - **Modul:** _Lagerstyring_
     - **Funksjonsnavn:** _Tilknytt lagertransaksjoner for bestilling med last_
 
-1. Aktiver funksjonen _Flere produktkviteringsposteringer per last_ , som er oppført på følgende måte:
+1. Aktiver funksjonen _Flere produktkviteringsposteringer per last_, som er oppført på følgende måte:
 
     - **Modul:** _Lagerstyring_
     - **Funksjonsnavn:** _Flere produktkviteringsposteringer per last_
@@ -288,7 +288,7 @@ Før lagermottaksassistenter kan bruke en mobilenhet til å registrere innkommen
 
 I denne delen skal du opprette et menyelement på en mobilenhet og legge det til på en eksisterende meny. En lagerarbeider kan deretter velge menyelementet i lagerappen.
 
-1. Gå til **Lagerstyring \> Oppsett \> Mobilenhet \> Menyelementer på mobilenheten** , og kontroller at menyen på mobilenheten inkluderer et menyelement med følgende innstillinger:
+1. Gå til **Lagerstyring \> Oppsett \> Mobilenhet \> Menyelementer på mobilenheten**, og kontroller at menyen på mobilenheten inkluderer et menyelement med følgende innstillinger:
 
     - **Modus:** _Arbeid_
     - **Arbeidsopprettelsesprosess:** _Mottak av lastvare_
@@ -322,30 +322,30 @@ I denne fremgangsmåten oppretter du en bestilling og en tilknyttet last manuelt
 
 1. I handlingsruten, i kategorien **Kjøp** velger du **Handlinger \> Bekreft**. Ordrestatusen er nå _Bekreftet_.
 1. I handlingsruten, i kategorien **Lager** velger du **Handlinger \> Arbeidsområde for lastplanlegging**.
-1. På siden **Arbeidsområde for lastplanlegging** , i handlingsruten, i kategorien **Forsyning og behov** , velger du **Legg til \> Til ny last**.
+1. På siden **Arbeidsområde for lastplanlegging**, i handlingsruten, i kategorien **Forsyning og behov**, velger du **Legg til \> Til ny last**.
 1. I dialogboksen **Tilordning av lastmal** angir du feltet **Lastmal-ID** til _20' beholder_.
 1. Velg **OK** for å lukke dialogboksen og gå tilbake til arbeidsområdet.
-1. I **Laster** -delen velger du **Last-ID** for å åpne den nylig opprettede lasten.
+1. I **Laster**-delen velger du **Last-ID** for å åpne den nylig opprettede lasten.
 1. Gå gjennom lasthodet og linjedetaljene, legg merke til følgende punkt:
 
     - På hurtigfanen **Last** er feltet **Laststatus** satt til _Åpen_.
-    - I delen **Lastlinjer** finnes det en enkelt linje der **Antall** -feltet er satt til _10_ og feltet **Antall for arbeid opprettet** er satt til _0_ (null).
+    - I delen **Lastlinjer** finnes det en enkelt linje der **Antall**-feltet er satt til _10_ og feltet **Antall for arbeid opprettet** er satt til _0_ (null).
 
     ![Lastdetaljer](media/inbound-load-details.png "Lastdetaljer")
 
-1. I handlingsruten, i kategorien **Send og motta** , velger du **Bekreft \> Innkomende forsendelse**. Legg merke til at **Laststatus** er endret til _Sendt_.
-1. Noter verdien for **Last-ID** , slik at du kan bruke den i neste fremgangsmåte.
+1. I handlingsruten, i kategorien **Send og motta**, velger du **Bekreft \> Innkomende forsendelse**. Legg merke til at **Laststatus** er endret til _Sendt_.
+1. Noter verdien for **Last-ID**, slik at du kan bruke den i neste fremgangsmåte.
 
 #### <a name="register-receipt-of-the-quantities-that-arrived-on-the-load"></a>Registrere mottak av antallene som ble mottatt i lasten
 
 Når lasten i lagermottakssonen, registrerer en mottaksarbeider lastantallet på en mobilenhet.
 
 1. Bruk mobilenheten til å logge på lager 24. (I standard demodata logger du deg på ved å bruke _24_ som bruker-ID og _1_ som passord.)
-1. Velg menyelementet _Mottak av lastvare_ , som du opprettet for dette scenarioet.
+1. Velg menyelementet _Mottak av lastvare_, som du opprettet for dette scenarioet.
 1. Følg instruksjonene for dataregistrering på skjermen for å angi følgende verdier. (Rekkefølgen kan variere, avhengig av hvilken mobilenhet eller emulator du bruker.)
 
     - **Last** – Angi last-ID-en du opprettet i den forrige prosedyren.
-    - **Vare** – Angi _A0001_ , som er varen som forventes for denne belastningen.
+    - **Vare** – Angi _A0001_, som er varen som forventes for denne belastningen.
     - **Antall** – Angi _9_ som det faktiske antallet som finnes i lasten. Merk at dette antallet er mindre enn forventet antall.
 
 1. Fortsett med å gå gjennom arbeidsflyten, la alle andre felt stå tomme eller settes til standardverdiene, til enheten informerer deg om at arbeidet er fullført.
@@ -354,15 +354,15 @@ Lastmottaksoppgaven er nå fullført, og mottaksassistenten kan gå videre til s
 
 1. Gå til **Lagerstyring \> Laster \> Alle laster**.
 1. I listen finner du lasten du nettopp mottok. (Du må kanskje merke av for **Vis lukket** for å inkludere innkommende laster med lastestatusen _Sendt_.) Velg deretter koblingen i kolonnen **Last-ID** for å åpne lasten.
-1. I lastposten kan du legge merke til at verdien for **Laststatus** forblir _Sendt_ , men verdien for **Antall for arbeid opprettet** på lastlinjen er endret til _9_.
+1. I lastposten kan du legge merke til at verdien for **Laststatus** forblir _Sendt_, men verdien for **Antall for arbeid opprettet** på lastlinjen er endret til _9_.
 1. Gå til **Innkjøp og leverandører \> Bestillinger \> Alle bestillinger**.
-1. I listen finner du innkjøpet du nettopp mottok, og deretter velger du koblingen i **Bestilling** -kolonnen for å åpne ordren.
+1. I listen finner du innkjøpet du nettopp mottok, og deretter velger du koblingen i **Bestilling**-kolonnen for å åpne ordren.
 \
 1. I hurtigfanen **Bestillingslinjer** velger du **Beholdning \> Vis \> Transaksjoner**.
 1. Se gjennom detaljene for de to bestillingstransaksjonene. (Du må kanskje tilpasse siden **Lagertransaksjoner** for å se feltet **Last-ID** på rutenettet.) Du skal se to transaksjoner:
 
-    - Transaksjonen som har et mottak i _Registrert_ -status, representerer registreringsantallet på _9_ som ble kjørt mot en bestemt last ved hjelp av mobilenheten. **Last-ID** er knyttet til den aktuelle transaksjonen.
-    - Transaksjonen som har et mottat i _Bestilt_ -status, representerer det gjenværende uregistrerte ordrelinjeantallet på _1_.
+    - Transaksjonen som har et mottak i _Registrert_-status, representerer registreringsantallet på _9_ som ble kjørt mot en bestemt last ved hjelp av mobilenheten. **Last-ID** er knyttet til den aktuelle transaksjonen.
+    - Transaksjonen som har et mottat i _Bestilt_-status, representerer det gjenværende uregistrerte ordrelinjeantallet på _1_.
 
 #### <a name="product-receiptpost-the-registered-load-quantities-against-purchase-orders"></a>Produktkvittering – postere de registrerte lastantallene mot bestillinger
 
@@ -370,22 +370,22 @@ I denne fremgangsmåten skal du produktkvittere og postere beholdningen som du h
 
 1. Gå til **Lagerstyring \> Laster \> Alle laster**.
 1. I listen finner du lasten du mottok. (Du må kanskje merke av for **Vis lukket** for å inkludere innkommende laster med lastestatusen _Sendt_.) Velg deretter koblingen i kolonnen **Last-ID** for å åpne lasten.
-1. I handlingsruten, i kategorien **Send og motta** , velger du **Motta \> Produktkvittering**. Hvis du blir bedt om å bekrefte handlingen, velger du **Ja**.
-1. I dialogboksen **Posterer produktkvittering** , hurtigfanen **Linjer** , må du inspisere rutenettet. Du skal se bestillingslinjen som antallet er registrert for, mot den valgte lasten.
+1. I handlingsruten, i kategorien **Send og motta**, velger du **Motta \> Produktkvittering**. Hvis du blir bedt om å bekrefte handlingen, velger du **Ja**.
+1. I dialogboksen **Posterer produktkvittering**, hurtigfanen **Linjer**, må du inspisere rutenettet. Du skal se bestillingslinjen som antallet er registrert for, mot den valgte lasten.
 
     > [!NOTE]
-    > I versjoner der funksjonen _Flere produktkviteringsposteringer per last_ ikke er tilgjengelig eller aktivert, er standardantallet som vises i rutenettet **Lastlinjer** , det totale antallet som er registrert for alle laster som er knyttet til bestillingslinjen.
+    > I versjoner der funksjonen _Flere produktkviteringsposteringer per last_ ikke er tilgjengelig eller aktivert, er standardantallet som vises i rutenettet **Lastlinjer**, det totale antallet som er registrert for alle laster som er knyttet til bestillingslinjen.
 
 1. I hurtigfanen **Oversikt** inspiserer du feltet **Produktkvittering** i rutenettet. Legg merke til at dette er angitt til et tall som inkluderer ID-en til den valgte lasten.
 1. Velg **OK** for å postere produktkvitteringen og lukke dialogboksen **Posterer produktkvittering**.
 1. Du kommer tilbake til lastdetaljene. Legg merke til følgende punkt:
 
     - Feltet **Laststatus** er nå satt til _Mottatt_.
-    - På lastlinjen er **Antall** -verdien for lasten endret fra _10_ til _9_ stk. for å samsvare med det registrerte antallet, men verdien for **Antall for arbeid opprettet** forblir _9_.
+    - På lastlinjen er **Antall**-verdien for lasten endret fra _10_ til _9_ stk. for å samsvare med det registrerte antallet, men verdien for **Antall for arbeid opprettet** forblir _9_.
 
 Hvis innkjøpsteamet ikke forventer at leverandøren leverer det gjenstående ordreantallet på 1, kan det lukke ordren ved å oppdatere linjens leveringsrest til _0_. Hvis det derimot snart viser seg at den manglende delen ankom i den opprinnelige lasten, kan lagerpersonell utføre en av følgende handlinger:
 
-- Registrer antallet mot samme last. I dette tilfellet blir feltet **Laststatus** tilbakestilt til _Sendt_ , og verdien for **Antall for arbeid opprettet** oppdateres til _10_. Dette valget er bare tilgjengelig i følgende situasjoner:
+- Registrer antallet mot samme last. I dette tilfellet blir feltet **Laststatus** tilbakestilt til _Sendt_, og verdien for **Antall for arbeid opprettet** oppdateres til _10_. Dette valget er bare tilgjengelig i følgende situasjoner:
 
     - Funksjonen _Overmottak av lastantall_ er ikke tilgjengelig eller er ikke aktivert.
     - Funksjonen _Overmottak av lastantall_ er tilgjengelig og aktivert, og feltet **Overmottak for lastlinjeantall** er satt til _Tillat_.
@@ -421,16 +421,16 @@ Du vil også lære hvordan du angir bestillingslinjen slik at du kan motta et an
     - **Lager:** _24_
     - **Antall:** _10_
 
-1. På hurtigfanen **Linjedetaljer** , i kategorien **Levering** , setter du feltet **Overlevering** til _20_.
+1. På hurtigfanen **Linjedetaljer**, i kategorien **Levering**, setter du feltet **Overlevering** til _20_.
 1. I handlingsruten, i kategorien **Kjøp** velger du **Handlinger \> Bekreft**. Ordrestatusen er nå _Bekreftet_.
 1. I handlingsruten, i kategorien **Lager** velger du **Handlinger \> Arbeidsområde for lastplanlegging**.
-1. På siden **Arbeidsområde for lastplanlegging** , i handlingsruten, i kategorien **Forsyning og behov** , velger du **Legg til \> Til ny last**.
-1. I dialogboksen **Tilordning av lastmal** angir du feltet **Lastmal-ID** til _20' beholder_. I kategorien **Detaljer** endrer du **Antall** -verdien fra _10_ til _5_ for å delvis legge til antallet på bestillingslinjen.
+1. På siden **Arbeidsområde for lastplanlegging**, i handlingsruten, i kategorien **Forsyning og behov**, velger du **Legg til \> Til ny last**.
+1. I dialogboksen **Tilordning av lastmal** angir du feltet **Lastmal-ID** til _20' beholder_. I kategorien **Detaljer** endrer du **Antall**-verdien fra _10_ til _5_ for å delvis legge til antallet på bestillingslinjen.
 1. Velg **OK** for å bruke innstillingene og lukke dialogboksen.
-1. Gjenta trinn 8 til og med 10 for å opprette en ny last. Denne gangen skal **Antall** -feltet allerede være satt til _5_.
-1. På siden **Arbeidsområde for lastplanlegging** , i rutenettet **Laster** , velger du verdien for **Last-ID** for den første lasten du opprettet. Siden **Lastdetaljer** vises med den valgte belastningen. Følg disse trinnene:
+1. Gjenta trinn 8 til og med 10 for å opprette en ny last. Denne gangen skal **Antall**-feltet allerede være satt til _5_.
+1. På siden **Arbeidsområde for lastplanlegging**, i rutenettet **Laster**, velger du verdien for **Last-ID** for den første lasten du opprettet. Siden **Lastdetaljer** vises med den valgte belastningen. Følg disse trinnene:
 
-    1. I handlingsruten, i kategorien **Send og motta** , velger du **Bekreft \> Innkomende forsendelse**.
+    1. I handlingsruten, i kategorien **Send og motta**, velger du **Bekreft \> Innkomende forsendelse**.
     1. Legg merke til at verdien for **Laststatus** er endret til _Sendt_.
     1. Velg lukkeknappen for å gå tilbake til siden **Arbeidsområde for lastplanlegging**.
 
@@ -444,24 +444,24 @@ Når lasten ankommer lagermottakssonen, registrerer en mottaksarbeider lastantal
 Denne fremgangsmåten viser hvordan en mottaksassistent registrerer lastantall på en mobilenhet.
 
 1. Bruk mobilenheten til å logge på lager 24. (I standard demodata logger du deg på ved å bruke _24_ som bruker-ID og _1_ som passord.)
-1. Velg menyelementet _Mottak av lastvare_ , som du opprettet for dette scenarioet.
+1. Velg menyelementet _Mottak av lastvare_, som du opprettet for dette scenarioet.
 1. Følg instruksjonene for dataregistrering på skjermen for å angi følgende verdier. (Rekkefølgen kan variere, avhengig av hvilken mobilenhet eller emulator du bruker.)
 
     - **Last** – Angi den første last-ID-en du opprettet i den forrige prosedyren.
-    - **Vare** – Angi _A0001_ , som er varen som forventes for denne belastningen.
-    - **Antall** – Angi _3_. Merk at dette antallet er mindre enn forventet antall. For dette scenarioet må du tenke at du, som mottaksassistent, ikke har tid til å registrere alle antallene for denne lasten. Senere i denne fremgangsmåten skal du registrere de gjenværende delene ved å gjenta dette trinnet og sette **Antall** -feltet til _2_.
+    - **Vare** – Angi _A0001_, som er varen som forventes for denne belastningen.
+    - **Antall** – Angi _3_. Merk at dette antallet er mindre enn forventet antall. For dette scenarioet må du tenke at du, som mottaksassistent, ikke har tid til å registrere alle antallene for denne lasten. Senere i denne fremgangsmåten skal du registrere de gjenværende delene ved å gjenta dette trinnet og sette **Antall**-feltet til _2_.
 
 1. Fortsett med å gå gjennom arbeidsflyten, la alle andre felt stå tomme eller settes til standardverdiene, til enheten informerer deg om at arbeidet er fullført.
 1. I webklienten går du til **Lagerstyring \> Laster \> Alle laster**.
-1. I listen finner du lasten du nettopp mottok, og velger **Last ID** -verdien for å åpne lasten. Legg merke til at verdien for **Laststatus** forblir _Sendt_ , men verdien for **Antall for arbeid opprettet** på lastlinjen er endret til _3_.
-1. I handlingsruten, i kategorien **Send og motta** , velger du **Motta \> Produktkvittering**. Hvis du blir bedt om å bekrefte handlingen, velger du **Ja**.
+1. I listen finner du lasten du nettopp mottok, og velger **Last ID**-verdien for å åpne lasten. Legg merke til at verdien for **Laststatus** forblir _Sendt_, men verdien for **Antall for arbeid opprettet** på lastlinjen er endret til _3_.
+1. I handlingsruten, i kategorien **Send og motta**, velger du **Motta \> Produktkvittering**. Hvis du blir bedt om å bekrefte handlingen, velger du **Ja**.
 1. I dialogboksen **Posterer produktkvittering** går du gjennom, men endrer ikke verdiene som vises, og deretter velger du **OK**.
 1. Du kommer tilbake til siden **Lastdetaljer** for den valgte lasten. Legg merke til følgende punkt:
 
     - Feltet **Laststatus** forblir satt til _Sendt_.
-    - På lastlinjen forblir **Antall** -verdien for lasten _5_ stk., som er det opprinnelige lastantallet, og verdien for **Antall for arbeid opprettet** forblir _3_.
+    - På lastlinjen forblir **Antall**-verdien for lasten _5_ stk., som er det opprinnelige lastantallet, og verdien for **Antall for arbeid opprettet** forblir _3_.
 
-1. Fullfør registreringen av det gjenværende antallet i denne lasten ved å gjenta denne fremgangsmåten. I trinn 3 setter du imidlertid **Antall** -feltet til _2_.
+1. Fullfør registreringen av det gjenværende antallet i denne lasten ved å gjenta denne fremgangsmåten. I trinn 3 setter du imidlertid **Antall**-feltet til _2_.
 
 Mottaksoppgaven for den første lasten er nå fullført. Det er opprettet to produktkvitteringsjournaler, én for hver av de to produktkvitteringsoppdateringene som du kjørte.
 
@@ -470,11 +470,11 @@ Mottaksoppgaven for den første lasten er nå fullført. Det er opprettet to pro
 I dette scenarioet vil mottaksassistenten registrere inngående et antall som overskrider antallet som finnes i lasten. Overmottak vil være tillatt fordi systemet er konfigurert til å tillate overlevering.
 
 1. Bruk mobilenheten til å logge på lager 24. (I standard demodata logger du deg på ved å bruke _24_ som bruker-ID og _1_ som passord.)
-1. Velg menyelementet _Mottak av lastvare_ , som du opprettet for dette scenarioet.
+1. Velg menyelementet _Mottak av lastvare_, som du opprettet for dette scenarioet.
 1. Følg instruksjonene for dataregistrering på skjermen for å angi følgende verdier. (Rekkefølgen kan variere, avhengig av hvilken mobilenhet eller emulator du bruker.)
 
     - **Last** – Angi den andre last-ID-en du opprettet tidligere.
-    - **Vare** – Angi _A0001_ , som er varen som forventes for denne belastningen.
-    - **Antall** – Angi _7_ , som er det gjenstående antallet som leverandøren har tillatelse til å levere som en del av det totale bestillingsantallet på 12 (der 10 er det opprinnelige ordreantallet, og 2 er det tillatte overleveringsantallet på 20 prosent). Husk at 5 stk. allerede er registrert mot den første lasten.
+    - **Vare** – Angi _A0001_, som er varen som forventes for denne belastningen.
+    - **Antall** – Angi _7_, som er det gjenstående antallet som leverandøren har tillatelse til å levere som en del av det totale bestillingsantallet på 12 (der 10 er det opprinnelige ordreantallet, og 2 er det tillatte overleveringsantallet på 20 prosent). Husk at 5 stk. allerede er registrert mot den første lasten.
 
 Den andre lasten er nå oppdatert med antallet 7, og produktkvitteringen kan oppdateres basert på dette antallet.

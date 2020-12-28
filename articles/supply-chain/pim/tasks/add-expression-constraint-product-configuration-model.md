@@ -17,11 +17,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.openlocfilehash: c43d7f768069c5ef201a2823a9aa626b38220073
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3986485"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4434422"
 ---
 # <a name="add-an-expression-constraint-to-a-product-configuration-model"></a>Legge til en uttrykksbegrensning i en produktkonfigurasjonsmodell
 
@@ -44,7 +44,7 @@ Denne fremgangsmåten beskriver hvordan du kan legge til et nytt begrensningsutt
 ## <a name="enter-expression"></a>Angi uttrykk
 1. Klikk Rediger uttrykk.
     * Hvis du låser opp brukergrensesnittet i oppgaveregistreringen i denne fasen, kan du bruke IntelliSense og listen over symboler til å bygge restriksjonsuttrykket.  
-2. I ConstraintBody-feltet skriver du inn "Implies[FrontGrill=="Metal", CornerProtection]".
+2. I ConstraintBody-feltet skriver du inn Implies[FrontGrill=="Metal", CornerProtection].
     * Denne uttrykkslogikken sier: Hvis frontgrillen er metall, må alternativet for hjørnebeskyttelse velges.  
 3. Klikk Valider.
     * Valideringsfunksjonen kjøres gjennom begrensningsuttrykket og sjekker for syntaksfeil.  

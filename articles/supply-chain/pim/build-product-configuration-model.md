@@ -20,11 +20,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 8b7d1186b4141a18e1283505713e67018927672d
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3982932"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4434069"
 ---
 # <a name="product-configuration-overview"></a>Oversikt over produktkonfigurasjon
 
@@ -138,7 +138,7 @@ En dedikert API (application programming interface) er implementert, slik at par
 
 ### <a name="pcadaptor-class"></a>PCAdaptor-klasse
 
-API-en er implementert ved hjelp av et sett med **PCAdaptor** -klasser som avdekker datastrukturen i produktkonfigurasjonsmodellene. En forekomst av **PCAdaptor** -klassen må opprettes for hver modell som skal utvides. Når en konfigurasjonsøkt er fullført, ser systemet etter en forekomst av denne klassen, og kjører den hvis det blir funnet.  
+API-en er implementert ved hjelp av et sett med **PCAdaptor**-klasser som avdekker datastrukturen i produktkonfigurasjonsmodellene. En forekomst av **PCAdaptor**-klassen må opprettes for hver modell som skal utvides. Når en konfigurasjonsøkt er fullført, ser systemet etter en forekomst av denne klassen, og kjører den hvis det blir funnet.  
 
 Flytdiagrammet nedenfor gir en oversikt over prosessen.  
 

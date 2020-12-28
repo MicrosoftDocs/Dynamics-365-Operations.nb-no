@@ -19,11 +19,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 88e732f64b389acafee23427594225dfacda71cc
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3985774"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4434361"
 ---
 # <a name="template-boms"></a>Malstykklister    
 
@@ -111,9 +111,9 @@ Hvis du vil bruke malstykklister, må du angi to nummerserier. Definer en nummer
 
 1.  På listesiden **Nummerserier** oppretter du nummerserier for malstykklister og linjenummeret for stykklisteloggen. 
 
-2.  Klikk **Servicestyring** \> **Oppsett** \> **Servicestyringsparametere** .
+2.  Klikk **Servicestyring** \> **Oppsett** \> **Servicestyringsparametere**.
 
-3.  Klikk **Nummerserier** , og velg en nummerseriekode for nummerseriereferansene du har opprettet i skjemaet **Nummerserier** .
+3.  Klikk **Nummerserier**, og velg en nummerseriekode for nummerseriereferansene du har opprettet i skjemaet **Nummerserier**.
 
 4.  Lukk skjemaet for å lagre endringene.
 

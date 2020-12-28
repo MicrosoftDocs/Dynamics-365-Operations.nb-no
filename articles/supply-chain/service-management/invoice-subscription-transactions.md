@@ -19,11 +19,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: c0d12e6b392156931ae2681d2804236305278811
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3976849"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4434559"
 ---
 # <a name="invoice-subscription-transactions"></a>Fakturere abonnementtransaksjoner 
 
@@ -31,19 +31,19 @@ ms.locfileid: "3976849"
 
 
 
-1.  Klikk på **Servicestyring** \> **Felles** \> **Serviceabonnementer** \> **Alle serviceabonnementer** .
+1.  Klikk på **Servicestyring** \> **Felles** \> **Serviceabonnementer** \> **Alle serviceabonnementer**.
 
-2.  Velg et serviceabonnement, og klikk deretter **Rediger** , eller klikk **Abonnement** for å opprette et serviceabonnement.
+2.  Velg et serviceabonnement, og klikk deretter **Rediger**, eller klikk **Abonnement** for å opprette et serviceabonnement.
 
-3.  Klikk **Analyser** \> **Gebyrtransaksjoner** .
+3.  Klikk **Analyser** \> **Gebyrtransaksjoner**.
 
-4.  Velg gebyrtransaksjonen(e) som skal faktureres, og klikk deretter **Funksjoner** \> **Fakturaforslag** for å åpne skjemaet **Fakturaforslag** .
+4.  Velg gebyrtransaksjonen(e) som skal faktureres, og klikk deretter **Funksjoner** \> **Fakturaforslag** for å åpne skjemaet **Fakturaforslag**.
 
-5.  Klikk **Opprett faktura** , og angi de aktuelle parameterne i skjemaet **Opprett faktura**
+5.  Klikk **Opprett faktura**, og angi de aktuelle parameterne i skjemaet **Opprett faktura**
 
-6.  Klikk **OK** for å opprette fakturaforslaget i skjemaet **Fakturaforslag** .
+6.  Klikk **OK** for å opprette fakturaforslaget i skjemaet **Fakturaforslag**.
 
-7.  Verifiser innholdet i fakturaen, og klikk **Poster faktura** for å åpne skjemaet **Poster faktura** for å postere fakturaen. Du kan også skrive ut fakturaen fra skjemaet **Poster faktura** .
+7.  Verifiser innholdet i fakturaen, og klikk **Poster faktura** for å åpne skjemaet **Poster faktura** for å postere fakturaen. Du kan også skrive ut fakturaen fra skjemaet **Poster faktura**.
 
   
 

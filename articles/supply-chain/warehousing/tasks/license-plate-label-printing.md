@@ -18,11 +18,11 @@ ms.author: perlynne
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.openlocfilehash: 9e548e5e5528733412d47478dd740b87217cdac2
-ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: nb-NO
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4016108"
+ms.locfileid: "4434765"
 ---
 # <a name="enable-license-plate-label-printing"></a>Aktivere utskrift av nummerskiltetikett
 
@@ -39,8 +39,8 @@ Dette emnet viser hvordan du aktiverer automatisk utskrift av en SSCC-etikett (S
 
 ## <a name="setup-the-sscc-license-plate-number-sequence"></a>Konfigurasjon av nummerserien for SSCC-skiltnummeret
 1. Gå til **Navigasjonsrute > Moduler > Organisasjonsadministrasjon > Nummerserier > Nummerserier**.
-2. Velg et alternativ i **Område** -feltet.
-3. Velg et alternativ i **Referanse** -feltet.
+2. Velg et alternativ i **Område**-feltet.
+3. Velg et alternativ i **Referanse**-feltet.
 4. Skriv inn en verdi i feltet **Firma.**
 5. Utvid seksjonen **Segmenter**.
 6. Velg **Rediger**.
@@ -54,7 +54,7 @@ Dette emnet viser hvordan du aktiverer automatisk utskrift av en SSCC-etikett (S
 1. Gå til **Navigasjonsrute > Moduler > Lagerstyring > Oppsett > Dokumentruting > Dokumentrutingsoppsett**. Aktiver SSCC-oppsettet.  
 2. Velg **Ny**.
 3. Skriv inn en verdi i feltet **Oppsett-ID**.
-4. Skriv inn en verdi i **Beskrivelse** -feltet.
+4. Skriv inn en verdi i **Beskrivelse**-feltet.
 5. Velg **Sett inn i slutten av teksten**.
 6. Velg **Lagre**.
 7. Lukk siden.
@@ -63,11 +63,11 @@ Dette emnet viser hvordan du aktiverer automatisk utskrift av en SSCC-etikett (S
 1. Gå til **Navigasjonsrute > Moduler > Lagerstyring > Oppsett > Dokumentruting > Dokumentruting**.
 2. Velg et alternativ i feltet **Arbeidsordretype**.
 3. Velg **Ny**.
-4. Skriv inn en verdi i **Lager** -feltet.
-5. Skriv inn en verdi i **Navn** -feltet.
+4. Skriv inn en verdi i **Lager**-feltet.
+5. Skriv inn en verdi i **Navn**-feltet.
 6. Velg **Ny**.
 7. Angi eller velg en verdi i feltet **Oppsett-ID**.
-8. I **Navn** -feltet angir du navnet på skriveren du vil bruke.
+8. I **Navn**-feltet angir du navnet på skriveren du vil bruke.
 9. Velg **Lagre**.
 10. Lukk siden.
 
@@ -75,11 +75,11 @@ Dette emnet viser hvordan du aktiverer automatisk utskrift av en SSCC-etikett (S
 1. Gå til **Navigasjonsrute > Moduler > Lagerstyring > Oppsett > Mobilenhet > Menyelementer på mobilenheten**.
 2. Velg **Ny**.
 3. Skriv inn en verdi i feltet **Menyelementnavn**.
-4. Skriv inn en verdi i **Tittel** -feltet.
-5. Velg et alternativ i **Modus** -feltet.
+4. Skriv inn en verdi i **Tittel**-feltet.
+5. Velg et alternativ i **Modus**-feltet.
 6. Velg **Ja** i feltet **Bruk eksisterende arbeid**.
-7. Velg **Ja** i **Generer nummerskilt** -feltet.
-8. Utvid **Arbeidsklasser** -delen.
+7. Velg **Ja** i **Generer nummerskilt**-feltet.
+8. Utvid **Arbeidsklasser**-delen.
 9. Velg **Ny**.
 10. Skriv inn en verdi i feltet **Arbeidsklasse-ID**.
 11. Velg **Lagre**.
@@ -95,7 +95,7 @@ Dette emnet viser hvordan du aktiverer automatisk utskrift av en SSCC-etikett (S
 1. Gå til **Navigasjonsrute > Moduler > Lagerstyring > Oppsett > Arbeid > Arbeidsmaler**.
 2. Velg **Rediger**.
 3. Velg **Ny**.
-4. Velg **Skriv ut** i **Arbeidstype** -feltet.
+4. Velg **Skriv ut** i **Arbeidstype**-feltet.
 5. Angi eller velg en verdi i feltet **Arbeidsklasse-ID**.
 6. Velg **Flytt opp**.
 7. Velg **Lagre**.

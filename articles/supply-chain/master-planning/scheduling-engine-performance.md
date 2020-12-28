@@ -20,11 +20,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2020-09-03
 ms.dyn365.ops.version: ''
 ms.openlocfilehash: 1c1b940754021956998fe27ba16020d4b16aedf1
-ms.sourcegitcommit: 49f3011b8a6d8cdd038e153d8cb3cf773be25ae4
+ms.sourcegitcommit: 092ef6a45f515b38be2a4481abdbe7518a636f85
 ms.translationtype: HT
 ms.contentlocale: nb-NO
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4015073"
+ms.locfileid: "4434721"
 ---
 # <a name="improve-scheduling-engine-performance"></a>Forbedre ytelsen til planleggingsmotoren
 
@@ -180,7 +180,7 @@ Problemløseren for begrensninger kjenner ikke til detaljene i planleggingsalgor
 
 En stor del av (interne) begrensningene i motoren styrer arbeidstiden og kapasiteten til en ressurs. Oppgaven er hovedsakelig å gå gjennom arbeidstidssporene for en ressurs fra et gitt punkt i en gitt retning, og finne et langt nok intervall der den nødvendige kapasiteten for jobbene (tid) kan få plass.
 
-For å gjøre dette må motoren kjenne til arbeidstiden til en ressurs. I motsetning til hovedmodelldataene er arbeidstidene har *forsinket innlasting* , og det betyr at de lastes inn i motoren etter behov. Årsaken til denne fremgangsmåten er at det ofte brukes arbeidstider i Supply Chain Management for en kalender for en svært lang periode, og det finnes vanligvis mange kalendere, slik at dataene vil være ganske store å forhåndslaste.
+For å gjøre dette må motoren kjenne til arbeidstiden til en ressurs. I motsetning til hovedmodelldataene er arbeidstidene har *forsinket innlasting*, og det betyr at de lastes inn i motoren etter behov. Årsaken til denne fremgangsmåten er at det ofte brukes arbeidstider i Supply Chain Management for en kalender for en svært lang periode, og det finnes vanligvis mange kalendere, slik at dataene vil være ganske store å forhåndslaste.
 
 Motoren ber om kalenderinformasjon i deler ved å starte klassemetoden `WrkCtrSchedulingInteropDataProvider.getWorkingTimes` i X++. Forespørselen gjelder for en bestemt kalender-ID i et bestemt tidsintervall. Avhengig av statusen til serverens hurtigbuffer i Supply Chain Management, kan hver av disse forespørslene ende opp i flere databasekall, noe som tar lang tid (i forhold til bare beregningstiden). Hvis kalenderen inneholder svært detaljerte definisjoner for arbeidstid med mange intervaller for arbeidstid per dag, vil dette i tillegg føre til at innlastingen tar mer tid.
 
@@ -188,7 +188,7 @@ Når dataene for arbeidstid lastes inn i planleggingsmotoren, beholdes dette i d
 
 ### <a name="finite-capacity"></a>Begrenset kapasitet
 
-Når du bruker begrenset kapasitet, blir sporene for arbeidstid fra kalenderen delt opp og redusert basert på eksisterende kapasitetsreservasjoner. Disse reservasjonene hentes også gjennom samme `WrkCtrSchedulingInteropDataProvider`-klasse som kalenderne, men bruker i stedet metoden `getCapacityReservations`. Når du planlegger under hovedplanlegging, tas det hensyn til reservasjoner for den spesifikke hovedplanen, og hvis den er aktivert på siden **Parametere for hovedplanlegging** , blir også reservasjonene fra autoriserte produksjonsordrer inkludert. Når en produksjonsordre planlegges, er det også et alternativ for å inkludere reservasjoner fra eksisterende planlagte ordrer, selv om dette ikke er like vanlig som den andre metoden.
+Når du bruker begrenset kapasitet, blir sporene for arbeidstid fra kalenderen delt opp og redusert basert på eksisterende kapasitetsreservasjoner. Disse reservasjonene hentes også gjennom samme `WrkCtrSchedulingInteropDataProvider`-klasse som kalenderne, men bruker i stedet metoden `getCapacityReservations`. Når du planlegger under hovedplanlegging, tas det hensyn til reservasjoner for den spesifikke hovedplanen, og hvis den er aktivert på siden **Parametere for hovedplanlegging**, blir også reservasjonene fra autoriserte produksjonsordrer inkludert. Når en produksjonsordre planlegges, er det også et alternativ for å inkludere reservasjoner fra eksisterende planlagte ordrer, selv om dette ikke er like vanlig som den andre metoden.
 
 Bruk av begrenset kapasitet vil føre til at planleggingen tar lengre tid på grunn av flere årsaker:
 
@@ -305,7 +305,7 @@ Bruk av begrenset kapasitet krever at motoren laster inn kapasitetsinformasjon f
 
 ### <a name="setting-hard-links"></a>Angi harde koblinger
 
-Standard koblingstype for ruten er *myk* , noe som betyr at det er tillatt med en tidsforskjell mellom sluttidspunktet for én operasjon og starten på neste. Tillatelse av dette kan ha den uheldige effekten at hvis materialer eller kapasitet ikke er tilgjengelige for én av operasjonene i svært lang tid, kan produksjonen være inaktiv i en stund, noe som betyr en mulig økning av arbeidet som pågår. Dette skjer ikke med harde koblinger, fordi avslutning og start må være perfekt justert. Hvis du angir harde koblinger, blir imidlertid planleggingsproblemet vanskeligere fordi skjæringspunkter mellom arbeidstid og kapasitet må beregnes for de to ressursene for operasjonene. Hvis dette også omfatter parallelle operasjoner, legger dette til betydelig beregningstid. Hvis ressursene for de to operasjonene har forskjellige kalendere som ikke overlapper i det hele tatt, er problemet uløselig.
+Standard koblingstype for ruten er *myk*, noe som betyr at det er tillatt med en tidsforskjell mellom sluttidspunktet for én operasjon og starten på neste. Tillatelse av dette kan ha den uheldige effekten at hvis materialer eller kapasitet ikke er tilgjengelige for én av operasjonene i svært lang tid, kan produksjonen være inaktiv i en stund, noe som betyr en mulig økning av arbeidet som pågår. Dette skjer ikke med harde koblinger, fordi avslutning og start må være perfekt justert. Hvis du angir harde koblinger, blir imidlertid planleggingsproblemet vanskeligere fordi skjæringspunkter mellom arbeidstid og kapasitet må beregnes for de to ressursene for operasjonene. Hvis dette også omfatter parallelle operasjoner, legger dette til betydelig beregningstid. Hvis ressursene for de to operasjonene har forskjellige kalendere som ikke overlapper i det hele tatt, er problemet uløselig.
 
 Vi anbefaler at du bruker harde koblinger bare når det er helt nødvendig, og vurder nøye om det er nødvendig for hver operasjon i ruten.
 
@@ -321,7 +321,7 @@ Siden motoren fungerer ved å undersøke kapasiteten i tidsspor en etter en, er 
 
 ### <a name="large-or-none-scheduling-timeouts"></a>Store (eller ingen) tidsavbrudd for tidsplaner
 
-Planlegging av motorytelsen kan optimaliseres ved hjelp av parametere på siden **Planleggingsparametere**. Innstillingene **Tidsavbrudd for planlegging er aktivert** og **Tidsavbrudd for planleggingsoptimalisering er aktivert** må alltid settes til **Ja**. Hvis dette settes til **Nei** , kan planleggingen kjøre i det uendelige hvis det er opprettet en umulig rute med mange alternativer.
+Planlegging av motorytelsen kan optimaliseres ved hjelp av parametere på siden **Planleggingsparametere**. Innstillingene **Tidsavbrudd for planlegging er aktivert** og **Tidsavbrudd for planleggingsoptimalisering er aktivert** må alltid settes til **Ja**. Hvis dette settes til **Nei**, kan planleggingen kjøre i det uendelige hvis det er opprettet en umulig rute med mange alternativer.
 
 Verdien for **Maksimal planleggingstid per serie** kontrollerer styrer maksimalt antall sekunder som kan brukes til å prøve å finne en løsning for én enkelt sekvens (i de fleste tilfeller tilsvarer en serie én enkelt ordre). Verdien som brukes her, er svært avhengig av kompleksiteten i ruten og innstillingene, for eksempel begrenset kapasitet, men maksimalt 30 sekunder er et godt utgangspunkt.
 

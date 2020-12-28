@@ -19,11 +19,11 @@ ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 17b8504b2aecbe375fe178eac76da9c30c9b12bd
-ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: nb-NO
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4015993"
+ms.locfileid: "4434747"
 ---
 # <a name="cycle-counting"></a>Syklustelling
 
@@ -35,7 +35,7 @@ Syklustelling er en lagerprosess som du kan bruke til å overvåke varer i lager
 
 1.  **Opprette syklustellingsarbeid** – Syklustellingsarbeid kan opprettes automatisk basert på terskelparameterne for varer, eller ved å bruke en syklustellingsplan. Du kan også opprette syklustellingsarbeid manuelt ved hjelp av vare- eller lagerparameterne på siden **Syklustellingsarbeid etter vare** eller siden **Syklustellingsarbeid etter lokasjon**.
 2.  **Behandle syklustellingen** – Når du har opprettet syklustellingsarbeid, utfører du syklustellingsarbeidet ved å telle varene på en lagerlokasjon og bruker deretter en mobilenhet til å angi resultatet i Dynamics 365 Supply Chain Management. Alternativt kan du telle varer i en lagerlokasjon uten å opprette syklustellingsarbeid. Denne prosessen kalles *spotsyklustelling*.
-3.  **Rette opp differanser i tellingsverdien** – Etter en syklustelling får alle varer som har differanser i tellingsverdien, arbeidsstatusen **Venter på gjennomgang** på **Alt arbeid** -siden. Du kan løse disse forskjellene på siden **Syklustellingsarbeid venter på gjennomgang**.
+3.  **Rette opp differanser i tellingsverdien** – Etter en syklustelling får alle varer som har differanser i tellingsverdien, arbeidsstatusen **Venter på gjennomgang** på **Alt arbeid**-siden. Du kan løse disse forskjellene på siden **Syklustellingsarbeid venter på gjennomgang**.
 
 Illustrasjonen nedenfor viser syklustellingsprosessen. ![Behandle flyt for syklustelling](./media/performcyclecountinginawarehouselocation.jpg)
 
@@ -124,7 +124,7 @@ Følgende eksempel viser hvordan du kan utføre spotsyklustelling ved hjelp av e
 
 1.  På mobilenheten velger du menyelementet for å behandle spotsyklustellingsarbeid.
 2.  Registrere lokasjonen som spotsyklustelling skal utføres for.
-3.  Registrer og bekreft varenummeret og vareantallet som er telt opp. **Obs!** Statusen for syklustellingsarbeidet oppdateres til **Venter på gjennomgang** eller **Lukket** på **Alt arbeid** -siden, avnehgig av parameterne som er angitt på **Arbeider** -siden.
+3.  Registrer og bekreft varenummeret og vareantallet som er telt opp. **Obs!** Statusen for syklustellingsarbeidet oppdateres til **Venter på gjennomgang** eller **Lukket** på **Alt arbeid**-siden, avnehgig av parameterne som er angitt på **Arbeider**-siden.
 4.  Valgfritt: Gjenta trinn 3 for de gjenværende varene på lokasjonen, og bekreft at det ikke finnes flere varer som er tilgjengelig for opptelling.
 
 ## <a name="resolve-cycle-counting-differences"></a>Løse syklustellingsdifferanser

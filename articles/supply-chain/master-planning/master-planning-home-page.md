@@ -20,11 +20,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 7ec7203506d7fa3e71211bd1547dc8474f5d17dc
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3984232"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4434285"
 ---
 # <a name="master-planning-home-page"></a>Startside for hovedplanlegging
 
@@ -39,7 +39,7 @@ Hovedplanlegging bruker informasjonen til å beregne behovene og generere planla
 
 De tre hovedplanleggingsprosessene er:
 
--  **Hovedplanlegging** - Hovedplanen beregner nettobehov. Den er basert på faktiske gjeldende ordrer og gjør det mulig for selskapet å kontrollere etterfylling av lagre på kort sikt, på daglig basis. En annen term som beskriver det, er *nettobehovsplan* . Hvis du vil ha mer informasjon om hovedplaner, kan du se [Oversikt over hovedplaner](master-plans.md). 
+-  **Hovedplanlegging** - Hovedplanen beregner nettobehov. Den er basert på faktiske gjeldende ordrer og gjør det mulig for selskapet å kontrollere etterfylling av lagre på kort sikt, på daglig basis. En annen term som beskriver det, er *nettobehovsplan*. Hvis du vil ha mer informasjon om hovedplaner, kan du se [Oversikt over hovedplaner](master-plans.md). 
 
 -  **Prognoseplanlegging** - Prognoseplanen beregner bruttobehov. Det er basert på fremtidige overslag (eller prognoser), og gjør det mulig for selskaper å utføre langsiktig planlegging av materialer og kapasitet. Hvis du vil ha mer informasjon, kan du se [Oversikt over behovsprognose](introduction-demand-forecasting.md). 
 
@@ -74,7 +74,7 @@ Gå til [Veikart for Microsoft Dynamics 365](https://roadmap.dynamics.com/) for 
 Du kan finne meninger, nyheter og annen informasjon om hovedplanlegging og andre løsninger, i [Dynamics AX Manufacturing R&D-teambloggen](https://blogs.msdn.microsoft.com/axmfg) og [Supply Chain Management i Dynamics AX R&D-teambloggen](https://blogs.msdn.microsoft.com/dynamicsaxscm).
 
 ### <a name="task-guides"></a>Oppgaveveiledninger
-Mer hjelp er tilgjengelig som oppgaveveiledninger. For å få tilgang til oppgaveveiledninger klikker du på **Hjelp** -knappen på en side.
+Mer hjelp er tilgjengelig som oppgaveveiledninger. For å få tilgang til oppgaveveiledninger klikker du på **Hjelp**-knappen på en side.
 
 ### <a name="webinars"></a>Webinarer
 [Bruke Azure Machine Learning for behovsprognose](https://www.youtube.com/watch?v=4nQsccdFFDA&feature=youtu.be)

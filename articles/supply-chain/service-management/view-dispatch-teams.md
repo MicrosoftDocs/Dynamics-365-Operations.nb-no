@@ -19,22 +19,22 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 0e83e7008c2547ba0d9e7061772db825e69469a0
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3985074"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4434560"
 ---
 # <a name="view-dispatch-teams"></a>Vis fordelingsteam   
 
 [!include [banner](../includes/banner.md)]
 
 
-Serviceordrer i **Tjenestefordeling** -skjemaet grupperes etter fordelingsteam.
+Serviceordrer i **Tjenestefordeling**-skjemaet grupperes etter fordelingsteam.
 
-1.  Klikk **Servicestyring** \> **Periodisk** \> **Tjenestefordeling** .
+1.  Klikk **Servicestyring** \> **Periodisk** \> **Tjenestefordeling**.
 
-2.  Velg et datointervall, og klikk deretter **OK** .
+2.  Velg et datointervall, og klikk deretter **OK**.
 
 3.  Utvid en teamliste i Gantt-diagrammet øverst i skjemaet **Tjenestefordeling** for å vise navn på arbeidere i teamet. Du kan også bruke vise detaljer om serviceaktiviteter som er tilordnet hver arbeider.
 

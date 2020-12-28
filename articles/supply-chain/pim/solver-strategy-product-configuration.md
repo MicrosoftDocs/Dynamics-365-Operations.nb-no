@@ -20,11 +20,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: cb0fc054e0feec4c54c0bd916e01ce3a2a4cd903
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3986557"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4434639"
 ---
 # <a name="solver-strategy-for-product-configuration"></a>Problemløserstrategi for produktkonfigurasjon
 
@@ -45,13 +45,13 @@ Problemløserstrategikonseptet består nå av følgende strategier:
 
 En produktkonfigurasjonsmodell kan formuleres som et [begrensningsbasert problem (CSP)](http://aima.cs.berkeley.edu/2nd-ed/newchap05.pdf). Microsoft Solver Foundation (MSF) inneholder to typer problemløserstrategier for å løse CSP-er som kan brukes fra produktkonfigurasjonsmodeller. Disse problemløserstrategiene er avhengige av [heuristikk](https://techterms.com/definition/heuristic), som brukes til å bestemme rekkefølgen som variablene i CSP-er blir vurdert når problemet løses. Heuristikk kan ha stor innvirkning på ytelsen når et problem eller en klasse med problemer løses.
 
-Problemløserstrategien for produktkonfigurasjonsmodeller bestemmer hvilken problemløser som brukes med heuristikk. Strategien **Standard** , **Små domener først** og **Ovenfra og nedover** bruker de to problemløserne fra MSF, mens **Z3** -strategien bruker Z3-problemløseren. 
+Problemløserstrategien for produktkonfigurasjonsmodeller bestemmer hvilken problemløser som brukes med heuristikk. Strategien **Standard**, **Små domener først** og **Ovenfra og nedover** bruker de to problemløserne fra MSF, mens **Z3**-strategien bruker Z3-problemløseren. 
 
 Studier av kundeimplementering har vist at en endring i problemløserstrategien for en produktkonfigurasjonsmodell kan redusere svartiden fra minutter til millisekunder. Derfor er det verdt å prøve forskjellige problemløserstrategier for å finne den mest effektive strategien for produktkonfigurasjonsmodellen din.
 
 ## <a name="change-the-settings-for-the-solver-strategy"></a>Endre innstillingene for problemløserstrategien
 
-Du kan endre problemløserstrategien på siden **Produktkonfigurasjonsmodeller** i handlingsruten ved å velge **Modellegenskaper** . Deretter i **Rediger modelldetaljene** -dialogboksen velger du en problemløserstrategi.
+Du kan endre problemløserstrategien på siden **Produktkonfigurasjonsmodeller** i handlingsruten ved å velge **Modellegenskaper**. Deretter i **Rediger modelldetaljene**-dialogboksen velger du en problemløserstrategi.
 
 [![Endre problemløserstrategien](./media/solver-strategy.png)](./media/solver-strategy.png)
 
@@ -61,10 +61,10 @@ Følgende tabell inneholder anbefalinger om problemløserstrategien som skal bru
 
 | Problemløserstrategi      | Bruk strategien i dette scenariet |
 |----------------------|-----------------------------------|
-| Standard              | **Standard** -strategien er optimalisert til å løse modeller som bruker tabellbegrensninger. Kundeimplementeringsstudier har vist at denne strategien er den mest effektive strategien i scenarier der tabellbegrensninger brukes mye. |
-| Små domener først | **Små domener først** - og **Ovenfra og nedover** -strategien henger nøye sammen. Kundeimplementeringsstudier har vist at **Ovenfra og nedover** -strategien overgår **Små domener først** -strategien. Men **Små domener først** -strategien bevares i produktet for bakoverkompatibilitet. Begge disse problemløserstrategiene har vist seg å være mer effektive på å løse modeller som inneholder flere aritmetiske uttrykk der det ikke brukes tabellbegrensninger. I noen tilfeller kan imidlertid **Standard** -strategien overgå disse to strategiene. Derfor må du huske å forsøke hver strategi. |
-| Ovenfra og nedover             | **Små domener først** - og **Ovenfra og nedover** -strategien henger nøye sammen. Kundeimplementeringsstudier har vist at **Ovenfra og nedover** -strategien overgår **Små domener først** -strategien. Men **Små domener først** -strategien bevares i produktet for bakoverkompatibilitet. Begge disse problemløserstrategiene har vist seg å være mer effektive på å løse modeller som inneholder flere aritmetiske uttrykk der det ikke brukes tabellbegrensninger. I noen tilfeller kan imidlertid **Standard** -strategien overgå disse to strategiene. Derfor må du huske å forsøke hver strategi. |
-| Z3                   | Vi anbefaler at du bruker **Z3** -strategien som standard problemløserstrategi. Hvis du er bekymret for ytelse og skalerbarhet, kan du evaluere de andre strategiene. |
+| Standard              | **Standard**-strategien er optimalisert til å løse modeller som bruker tabellbegrensninger. Kundeimplementeringsstudier har vist at denne strategien er den mest effektive strategien i scenarier der tabellbegrensninger brukes mye. |
+| Små domener først | **Små domener først**- og **Ovenfra og nedover**-strategien henger nøye sammen. Kundeimplementeringsstudier har vist at **Ovenfra og nedover**-strategien overgår **Små domener først**-strategien. Men **Små domener først**-strategien bevares i produktet for bakoverkompatibilitet. Begge disse problemløserstrategiene har vist seg å være mer effektive på å løse modeller som inneholder flere aritmetiske uttrykk der det ikke brukes tabellbegrensninger. I noen tilfeller kan imidlertid **Standard**-strategien overgå disse to strategiene. Derfor må du huske å forsøke hver strategi. |
+| Ovenfra og nedover             | **Små domener først**- og **Ovenfra og nedover**-strategien henger nøye sammen. Kundeimplementeringsstudier har vist at **Ovenfra og nedover**-strategien overgår **Små domener først**-strategien. Men **Små domener først**-strategien bevares i produktet for bakoverkompatibilitet. Begge disse problemløserstrategiene har vist seg å være mer effektive på å løse modeller som inneholder flere aritmetiske uttrykk der det ikke brukes tabellbegrensninger. I noen tilfeller kan imidlertid **Standard**-strategien overgå disse to strategiene. Derfor må du huske å forsøke hver strategi. |
+| Z3                   | Vi anbefaler at du bruker **Z3**-strategien som standard problemløserstrategi. Hvis du er bekymret for ytelse og skalerbarhet, kan du evaluere de andre strategiene. |
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 

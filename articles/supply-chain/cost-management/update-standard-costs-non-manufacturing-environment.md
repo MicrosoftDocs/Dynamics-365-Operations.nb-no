@@ -20,11 +20,11 @@ ms.author: mguada
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 09dca3012952b739a75a6930908752fba73a4550
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3214119"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4434356"
 ---
 # <a name="update-standard-costs-in-a-non-manufacturing-environment"></a>Oppdatere standardkostnader i et ikke-produksjonsmiljø
 
@@ -42,11 +42,11 @@ Retningslinjene antar at du bruker en toversjons tilnærming til å oppdatere st
 
 Hvis du skal rette, justere eller oppdatere standardkostnader for mye varer, gjør du følgende.
 
-1.  Bruk **Etterkalkuleringsversjon**-**oppsett**siden for å aktivere kostnadsdata som skal angis i den andre etterkalkuleringsversjonen. Alternativt kan du forhindre aktiveringen av uavsluttede kostpriser, slik at aktiveringen vil bli tillatt etter at de uavsluttede kostprisene er fullført og korrekt definert. Du kan også angi en dato i **Fra dato**-feltet. Som en generell retningslinje kan du bruke datoen når du planlegger å aktivere de inkrementelle oppdateringene. Du kan også la **Fra dato**-feltet være tomt for etterkalkuleringsversjonen og angi en dato i **Fra dato**-feltet for hver kostnadsoppføring.
+1.  Bruk **Etterkalkuleringsversjon**-**oppsett** siden for å aktivere kostnadsdata som skal angis i den andre etterkalkuleringsversjonen. Alternativt kan du forhindre aktiveringen av uavsluttede kostpriser, slik at aktiveringen vil bli tillatt etter at de uavsluttede kostprisene er fullført og korrekt definert. Du kan også angi en dato i **Fra dato**-feltet. Som en generell retningslinje kan du bruke datoen når du planlegger å aktivere de inkrementelle oppdateringene. Du kan også la **Fra dato**-feltet være tomt for etterkalkuleringsversjonen og angi en dato i **Fra dato**-feltet for hver kostnadsoppføring.
 2.  Bruk **Varepris**-siden for å angi oppdateringer som varekostnadsposter som er vedlagt i den andre etterkalkuleringsversjonen.
 3.  Bruk **Varepriser**-rapporten for å bekrefte at varekostnadspostene som er vedlagt den andre etterkalkuleringsversjonen, er fullført og nøyaktige.
 4.  Bruk siden **Vedlikehold av etterkalkuleringsversjon** for å endre blokkeringsflagget for å tillate aktivering av ventende kostnadsposter som er vedlagt den andre etterkalkuleringsversjonen.
-5.  Bruk siden **Aktiver priser** (som du åpner fra siden **Vedlikehold av etterkalkuleringsversjon** for å aktivere alle ventende varekostnadsposter som er vedlagt den andre etterkalkuleringsversjonen. Du kan også aktivere de ventende kostnadspostene for enkelte varer ved å klikke knappen **Aktiver ventende pris** på **Varepris**-siden.
+5.  Bruk siden **Aktiver priser** (som du åpner fra siden **Vedlikehold av etterkalkuleringsversjon**) for å aktivere alle ventende varekostnadsposter som er vedlagt den andre etterkalkuleringsversjonen. Du kan også aktivere de ventende kostnadspostene for enkelte varer ved å klikke knappen **Aktiver ventende pris** på **Varepris**-siden.
 6.  For å unngå ytterligere datavedlikehold kan du bruke siden **Oppsett av etterkalkuleringsversjon** til å endre blokkeringsflaggene som er vedlagt den andre etterkalkuleringsversjonen. Blokkeringspolicyene forhindrer innlegging av nye uavsluttede kostnader og aktivering av uavsluttede kostpriser.
 
 
