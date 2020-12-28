@@ -1,0 +1,269 @@
+---
+title: Konsolidere forsendelser ved hjelp av arbeidsområdet for forsendelseskonsolidering
+description: Dette emnet viser et scenario der flere ordrer frigis til lageret, og deretter blir de konsolidert til forsendelser senere ved hjelp av arbeidsområdet for forsendelseskonsolidering.
+author: GarmMSFT
+manager: tfehr
+ms.date: 05/12/2020
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-ax-applications
+ms.technology: ''
+ms.search.form: WHSShipConsolidationPolicy, WHSShipConsolidationWorkbench, WHSShipConsolidationSetShipment
+audience: Application User
+ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
+ms.search.region: Global
+ms.author: kamaybac
+ms.search.validFrom: 2020-05-01
+ms.dyn365.ops.version: 10.0.6
+ms.openlocfilehash: 1eec1a8e3a9a2a0f95302e1d6ea68eb90b9a3b93
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.translationtype: HT
+ms.contentlocale: nb-NO
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4434750"
+---
+# <a name="consolidate-shipments-by-using-the-shipment-consolidation-workbench"></a><span data-ttu-id="fbd0a-103">Konsolidere forsendelser ved hjelp av arbeidsområdet for forsendelseskonsolidering</span><span class="sxs-lookup"><span data-stu-id="fbd0a-103">Consolidate shipments by using the shipment consolidation workbench</span></span>
+
+[!include [banner](../includes/banner.md)]
+
+<span data-ttu-id="fbd0a-104">Dette emnet viser et scenario der flere ordrer frigis til lageret, og deretter blir de konsolidert til forsendelser senere ved hjelp av arbeidsområdet for forsendelseskonsolidering.</span><span class="sxs-lookup"><span data-stu-id="fbd0a-104">This topic presents a scenario where multiple orders are released to the warehouse and then consolidated into shipments later by using the shipment consolidation workbench.</span></span>
+
+## <a name="make-demo-data-available"></a><span data-ttu-id="fbd0a-105">Gjøre demodata tilgjengelig</span><span class="sxs-lookup"><span data-stu-id="fbd0a-105">Make demo data available</span></span>
+
+<span data-ttu-id="fbd0a-106"> i dette emnet refererer til verdier og poster som er inkludert i standard demodata som leveres med Microsoft Dynamics 365 Supply Chain Management.</span><span class="sxs-lookup"><span data-stu-id="fbd0a-106">The scenario in this topic references values and records that are included in the standard demo data that is provided for Microsoft Dynamics 365 Supply Chain Management.</span></span> <span data-ttu-id="fbd0a-107">Hvis du vil bruke verdiene som angis her etter hvert som du utfører øvelsene, må du sørge for å arbeide i et miljø der demodataene er installert, og sette den juridiske enheten til **USMF** før du begynner.</span><span class="sxs-lookup"><span data-stu-id="fbd0a-107">If you want to use the values that are provided here as you do the exercises, be sure to work in an environment where the demo data is installed, and set the legal entity to **USMF** before you begin.</span></span>
+
+## <a name="set-up-shipment-consolidation-policies-and-product-filters"></a><span data-ttu-id="fbd0a-108">Definer policyer for forsendelseskonsolidering og produktfiltre</span><span class="sxs-lookup"><span data-stu-id="fbd0a-108">Set up shipment consolidation policies and product filters</span></span>
+
+<span data-ttu-id="fbd0a-109"> som beskrives her, forutsetter at du allerede har aktivert funksjonen, utførte øvelsene i [Konfigurere policyer for forsendelseskonsolidering](configure-shipment-consolidation-policies.md) og opprettet policyer og andre poster som er beskrevet der.</span><span class="sxs-lookup"><span data-stu-id="fbd0a-109">The scenario that is described here assumes that you've already turned on the feature, done the exercises in [Configure shipment consolidation policies](configure-shipment-consolidation-policies.md), and created the policies and other records that are described there.</span></span> <span data-ttu-id="fbd0a-110">Husk å utføre øvelsene før du fortsetter med dette .</span><span class="sxs-lookup"><span data-stu-id="fbd0a-110">Be sure to do those exercises before you continue with this scenario.</span></span>
+
+## <a name="turn-on-the-manual-shipment-consolidation-feature"></a><span data-ttu-id="fbd0a-111">Aktivere funksjonen Manuell forsendelseskonsolidering</span><span class="sxs-lookup"><span data-stu-id="fbd0a-111">Turn on the manual shipment consolidation feature</span></span>
+
+<span data-ttu-id="fbd0a-112">Før du kan bruke funksjonen *Manuell forsendelseskonsolidering*, må du aktivere den i systemet.</span><span class="sxs-lookup"><span data-stu-id="fbd0a-112">Before you can use the *Manual shipment consolidation* feature, you must turn it on in your system.</span></span> <span data-ttu-id="fbd0a-113">Administratorer kan bruke innstillingene for [funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til å kontrollere funksjonsstatusen og aktivere den.</span><span class="sxs-lookup"><span data-stu-id="fbd0a-113">Admins can use the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) settings to check the status of the feature and turn it on.</span></span> <span data-ttu-id="fbd0a-114">I **Funksjonsadministrering**-arbeidsområdet er denne funksjonen oppført på følgende måte:</span><span class="sxs-lookup"><span data-stu-id="fbd0a-114">In the **Feature management** workspace, the feature is listed in the following way:</span></span>
+
+- <span data-ttu-id="fbd0a-115">**Modul:** *Lagerstyring*</span><span class="sxs-lookup"><span data-stu-id="fbd0a-115">**Module:** *Warehouse management*</span></span>
+- <span data-ttu-id="fbd0a-116">**Funksjonsnavn:** *Manuell forsendelseskonsolidering*</span><span class="sxs-lookup"><span data-stu-id="fbd0a-116">**Feature name:** *Manual shipment consolidation*</span></span>
+
+<span data-ttu-id="fbd0a-117">Som nevnt i [Konfigurere policyer for forsendelseskonsolidering](configure-shipment-consolidation-policies.md), må du også aktivere funksjonen *Konsolider forsendelse* før du kan opprette policyer.</span><span class="sxs-lookup"><span data-stu-id="fbd0a-117">As was mentioned in [Configure shipment consolidation policies](configure-shipment-consolidation-policies.md), you must also turn on the *Consolidate shipment* feature before you can create policies.</span></span> <span data-ttu-id="fbd0a-118">Du bør imidlertid allerede ha fullført det trinnet.</span><span class="sxs-lookup"><span data-stu-id="fbd0a-118">However, you should already have completed that step.</span></span>
+
+## <a name="create-the-sales-orders-for-this-scenario"></a><span data-ttu-id="fbd0a-119">Opprett salgsordrene for dette </span><span class="sxs-lookup"><span data-stu-id="fbd0a-119">Create the sales orders for this scenario</span></span>
+
+<span data-ttu-id="fbd0a-120">Begynn med å opprette en samling salgsordrer du kan arbeide med.</span><span class="sxs-lookup"><span data-stu-id="fbd0a-120">Start by creating a collection of sales orders that you can work with.</span></span> <span data-ttu-id="fbd0a-121">Du må arbeide med et lager som er aktivert for prosessen for avansert lager (WMS).</span><span class="sxs-lookup"><span data-stu-id="fbd0a-121">You must work with a warehouse that is enabled for advanced warehouse (WMS) processes.</span></span> <span data-ttu-id="fbd0a-122">Med mindre et annet lager er nevnt eksplisitt, må det samme lageret brukes for hvert av de følgende ordresettene.</span><span class="sxs-lookup"><span data-stu-id="fbd0a-122">Unless a different warehouse is explicitly mentioned, that same warehouse must be used for each of the following sets of orders.</span></span>
+
+<span data-ttu-id="fbd0a-123">Gå til **Kunde \> Ordrer \> Alle salgsordrer**, og opprett en samling av salgsordrer som har innstillingene som er beskrevet i følgende underinndelinger.</span><span class="sxs-lookup"><span data-stu-id="fbd0a-123">Go to **Accounts receivable \> Orders \> All sales orders**, and create a collection of sales orders that have the settings that are described in the following subsections.</span></span>
+
+### <a name="create-order-set-1"></a><span data-ttu-id="fbd0a-124">Opprett ordresett 1</span><span class="sxs-lookup"><span data-stu-id="fbd0a-124">Create order set 1</span></span>
+
+#### <a name="sales-orders-1-1-and-1-2"></a><span data-ttu-id="fbd0a-125">Salgsordrer 1-1 og 1-2</span><span class="sxs-lookup"><span data-stu-id="fbd0a-125">Sales orders 1-1 and 1-2</span></span>
+
+1. <span data-ttu-id="fbd0a-126">Opprett to identiske salgsordrer som har følgende innstillinger:</span><span class="sxs-lookup"><span data-stu-id="fbd0a-126">Create two identical sales orders that have the following settings:</span></span>
+
+    - <span data-ttu-id="fbd0a-127">**Kundekonto:** *US-001*</span><span class="sxs-lookup"><span data-stu-id="fbd0a-127">**Customer account:** *US-001*</span></span>
+    - <span data-ttu-id="fbd0a-128">**Leveringsmåte:** *Airwa-Air*</span><span class="sxs-lookup"><span data-stu-id="fbd0a-128">**Mode of delivery:** *Airwa-Air*</span></span>
+
+1. <span data-ttu-id="fbd0a-129">Legg til en ordrelinje som har følgende innstillinger:</span><span class="sxs-lookup"><span data-stu-id="fbd0a-129">Add an order line that has the following settings:</span></span>
+
+    - <span data-ttu-id="fbd0a-130">**Varenummer:** *A0001* (en vare uten **Kode 4**-filter tilordnet)</span><span class="sxs-lookup"><span data-stu-id="fbd0a-130">**Item number:** *A0001* (an item that no **Code 4** filter is assigned to)</span></span>
+    - <span data-ttu-id="fbd0a-131">**Antall:** *1.00*</span><span class="sxs-lookup"><span data-stu-id="fbd0a-131">**Quantity:** *1.00*</span></span>
+
+1. <span data-ttu-id="fbd0a-132">Velg **Lager \> Reservasjon**, og velg deretter **Reserver parti** i handlingsruten for å reservere ordrelinjen.</span><span class="sxs-lookup"><span data-stu-id="fbd0a-132">Select **Inventory \> Reservation**, and then, on the Action Pane, select **Reserve lot** to reserve the order line.</span></span>
+
+#### <a name="sales-order-1-3"></a><span data-ttu-id="fbd0a-133">Salgsordre 1-3</span><span class="sxs-lookup"><span data-stu-id="fbd0a-133">Sales order 1-3</span></span>
+
+1. <span data-ttu-id="fbd0a-134">Opprett en salgsordre med følgende innstillinger:</span><span class="sxs-lookup"><span data-stu-id="fbd0a-134">Create a sales order that has the following settings:</span></span>
+
+    - <span data-ttu-id="fbd0a-135">**Kundekonto:** *US-001*</span><span class="sxs-lookup"><span data-stu-id="fbd0a-135">**Customer account:** *US-001*</span></span>
+    - <span data-ttu-id="fbd0a-136">**Leveringsmåte:** *10*</span><span class="sxs-lookup"><span data-stu-id="fbd0a-136">**Mode of delivery:** *10*</span></span>
+
+1. <span data-ttu-id="fbd0a-137">Legg til en ordrelinje som har følgende innstillinger:</span><span class="sxs-lookup"><span data-stu-id="fbd0a-137">Add an order line that has the following settings:</span></span>
+
+    - <span data-ttu-id="fbd0a-138">**Varenummer:** *A0001* (en vare uten **Kode 4**-filter tilordnet)</span><span class="sxs-lookup"><span data-stu-id="fbd0a-138">**Item number:** *A0001* (an item that no **Code 4** filter is assigned to)</span></span>
+    - <span data-ttu-id="fbd0a-139">**Antall:** *1.00*</span><span class="sxs-lookup"><span data-stu-id="fbd0a-139">**Quantity:** *1.00*</span></span>
+
+1. <span data-ttu-id="fbd0a-140">Velg **Lager \> Reservasjon**, og velg deretter **Reserver parti** i handlingsruten for å reservere ordrelinjen.</span><span class="sxs-lookup"><span data-stu-id="fbd0a-140">Select **Inventory \> Reservation**, and then, on the Action Pane, select **Reserve lot** to reserve the order line.</span></span>
+1. <span data-ttu-id="fbd0a-141">Legg til en ny ordrelinje som har følgende innstillinger:</span><span class="sxs-lookup"><span data-stu-id="fbd0a-141">Add a second order line that has the following settings:</span></span>
+
+    - <span data-ttu-id="fbd0a-142">**Varenummer:** *A0002* (en vare uten **Kode 4**-filter tilordnet)</span><span class="sxs-lookup"><span data-stu-id="fbd0a-142">**Item number:** *A0002* (an item that no **Code 4** filter is assigned to)</span></span>
+    - <span data-ttu-id="fbd0a-143">**Antall:** *1.00*</span><span class="sxs-lookup"><span data-stu-id="fbd0a-143">**Quantity:** *1.00*</span></span>
+    - <span data-ttu-id="fbd0a-144">**Leveringsmåte:** *Airwa-Air*</span><span class="sxs-lookup"><span data-stu-id="fbd0a-144">**Mode of delivery:** *Airwa-Air*</span></span>
+
+1. <span data-ttu-id="fbd0a-145">Velg **Lager \> Reservasjon**, og velg deretter **Reserver parti** i handlingsruten for å reservere den nye ordrelinjen.</span><span class="sxs-lookup"><span data-stu-id="fbd0a-145">Select **Inventory \> Reservation**, and then, on the Action Pane, select **Reserve lot** to reserve the second order line.</span></span>
+
+### <a name="create-order-set-2"></a><span data-ttu-id="fbd0a-146">Opprett ordresett 2</span><span class="sxs-lookup"><span data-stu-id="fbd0a-146">Create order set 2</span></span>
+
+#### <a name="sales-orders-2-1-and-2-2"></a><span data-ttu-id="fbd0a-147">Salgsordrer 2-1 og 2-2</span><span class="sxs-lookup"><span data-stu-id="fbd0a-147">Sales orders 2-1 and 2-2</span></span>
+
+1. <span data-ttu-id="fbd0a-148">Opprett to identiske salgsordrer som har følgende innstillinger:</span><span class="sxs-lookup"><span data-stu-id="fbd0a-148">Create two identical sales orders that have the following settings:</span></span>
+
+    - <span data-ttu-id="fbd0a-149">**Kundekonto:** *US-002*</span><span class="sxs-lookup"><span data-stu-id="fbd0a-149">**Customer account:** *US-002*</span></span>
+    - <span data-ttu-id="fbd0a-150">**Leveringsmåte:** *Airwa-Air*</span><span class="sxs-lookup"><span data-stu-id="fbd0a-150">**Mode of delivery:** *Airwa-Air*</span></span>
+
+1. <span data-ttu-id="fbd0a-151">Legg til en ordrelinje som har følgende innstillinger:</span><span class="sxs-lookup"><span data-stu-id="fbd0a-151">Add an order line that has the following settings:</span></span>
+
+    - <span data-ttu-id="fbd0a-152">**Varenummer:** *M9200* (en vare der filteret **Kode 4** er satt til *Brannfarlig*)</span><span class="sxs-lookup"><span data-stu-id="fbd0a-152">**Item number:** *M9200* (an item where the **Code 4** filter is set to *Flammable*)</span></span>
+    - <span data-ttu-id="fbd0a-153">**Antall:** *1.00*</span><span class="sxs-lookup"><span data-stu-id="fbd0a-153">**Quantity:** *1.00*</span></span>
+
+1. <span data-ttu-id="fbd0a-154">Velg **Lager \> Reservasjon**, og velg deretter **Reserver parti** i handlingsruten for å reservere ordrelinjen.</span><span class="sxs-lookup"><span data-stu-id="fbd0a-154">Select **Inventory \> Reservation**, and then, on the Action Pane, select **Reserve lot** to reserve the order line.</span></span>
+1. <span data-ttu-id="fbd0a-155">Legg til en ny ordrelinje som har følgende innstillinger:</span><span class="sxs-lookup"><span data-stu-id="fbd0a-155">Add a second order line that has the following settings:</span></span>
+
+    - <span data-ttu-id="fbd0a-156">**Varenummer:** *M9201* (en vare der filteret **Kode 4** er satt til *Eksplosivt*)</span><span class="sxs-lookup"><span data-stu-id="fbd0a-156">**Item number:** *M9201* (an item where the **Code 4** filter is set to *Explosive*)</span></span>
+    - <span data-ttu-id="fbd0a-157">**Antall:** *1.00*</span><span class="sxs-lookup"><span data-stu-id="fbd0a-157">**Quantity:** *1.00*</span></span>
+    - <span data-ttu-id="fbd0a-158">**Leveringsmåte:** *Airwa-Air*</span><span class="sxs-lookup"><span data-stu-id="fbd0a-158">**Mode of delivery:** *Airwa-Air*</span></span>
+
+1. <span data-ttu-id="fbd0a-159">Velg **Lager \> Reservasjon**, og velg deretter **Reserver parti** i handlingsruten for å reservere den nye ordrelinjen.</span><span class="sxs-lookup"><span data-stu-id="fbd0a-159">Select **Inventory \> Reservation**, and then, on the Action Pane, select **Reserve lot** to reserve the second order line.</span></span>
+
+### <a name="create-order-set-3"></a><span data-ttu-id="fbd0a-160">Opprett ordresett 3</span><span class="sxs-lookup"><span data-stu-id="fbd0a-160">Create order set 3</span></span>
+
+#### <a name="sales-orders-3-1-and-3-2"></a><span data-ttu-id="fbd0a-161">Salgsordrer 3-1 og 3-2</span><span class="sxs-lookup"><span data-stu-id="fbd0a-161">Sales orders 3-1 and 3-2</span></span>
+
+1. <span data-ttu-id="fbd0a-162">Opprett to identiske salgsordrer som har følgende innstillinger:</span><span class="sxs-lookup"><span data-stu-id="fbd0a-162">Create two identical sales orders that have the following settings:</span></span>
+
+    - <span data-ttu-id="fbd0a-163">**Kundekonto:** *US-001*</span><span class="sxs-lookup"><span data-stu-id="fbd0a-163">**Customer account:** *US-001*</span></span>
+    - <span data-ttu-id="fbd0a-164">**Kunderekvisisjon:** *1*</span><span class="sxs-lookup"><span data-stu-id="fbd0a-164">**Customer requisition:** *1*</span></span>
+
+1. <span data-ttu-id="fbd0a-165">Legg til en ordrelinje som har følgende innstillinger:</span><span class="sxs-lookup"><span data-stu-id="fbd0a-165">Add an order line that has the following settings:</span></span>
+
+    - <span data-ttu-id="fbd0a-166">**Varenummer:** *A0001* (en vare uten **Kode 4**-filter tilordnet)</span><span class="sxs-lookup"><span data-stu-id="fbd0a-166">**Item number:** *A0001* (an item that no **Code 4** filter is assigned to)</span></span>
+    - <span data-ttu-id="fbd0a-167">**Antall:** *1.00*</span><span class="sxs-lookup"><span data-stu-id="fbd0a-167">**Quantity:** *1.00*</span></span>
+
+1. <span data-ttu-id="fbd0a-168">Velg **Lager \> Reservasjon**, og velg deretter **Reserver parti** i handlingsruten for å reservere ordrelinjen.</span><span class="sxs-lookup"><span data-stu-id="fbd0a-168">Select **Inventory \> Reservation**, and then, on the Action Pane, select **Reserve lot** to reserve the order line.</span></span>
+
+#### <a name="sales-orders-3-3-and-3-4"></a><span data-ttu-id="fbd0a-169">Salgsordrer 3-3 og 3-4</span><span class="sxs-lookup"><span data-stu-id="fbd0a-169">Sales orders 3-3 and 3-4</span></span>
+
+1. <span data-ttu-id="fbd0a-170">Opprett to identiske salgsordrer som har følgende innstillinger:</span><span class="sxs-lookup"><span data-stu-id="fbd0a-170">Create two identical sales orders that have the following settings:</span></span>
+
+    - <span data-ttu-id="fbd0a-171">**Kundekonto:** *US-001*</span><span class="sxs-lookup"><span data-stu-id="fbd0a-171">**Customer account:** *US-001*</span></span>
+    - <span data-ttu-id="fbd0a-172">**Kunderekvisisjon:** *2*</span><span class="sxs-lookup"><span data-stu-id="fbd0a-172">**Customer requisition:** *2*</span></span>
+
+1. <span data-ttu-id="fbd0a-173">Legg til en ordrelinje som har følgende innstillinger:</span><span class="sxs-lookup"><span data-stu-id="fbd0a-173">Add an order line that has the following settings:</span></span>
+
+    - <span data-ttu-id="fbd0a-174">**Varenummer:** *A0001* (en vare uten **Kode 4**-filter tilordnet)</span><span class="sxs-lookup"><span data-stu-id="fbd0a-174">**Item number:** *A0001* (an item that no **Code 4** filter is assigned to)</span></span>
+    - <span data-ttu-id="fbd0a-175">**Antall:** *1.00*</span><span class="sxs-lookup"><span data-stu-id="fbd0a-175">**Quantity:** *1.00*</span></span>
+
+1. <span data-ttu-id="fbd0a-176">Velg **Lager \> Reservasjon**, og velg deretter **Reserver parti** i handlingsruten for å reservere ordrelinjen.</span><span class="sxs-lookup"><span data-stu-id="fbd0a-176">Select **Inventory \> Reservation**, and then, on the Action Pane, select **Reserve lot** to reserve the order line.</span></span>
+
+### <a name="create-order-set-4"></a><span data-ttu-id="fbd0a-177">Opprett ordresett 4</span><span class="sxs-lookup"><span data-stu-id="fbd0a-177">Create order set 4</span></span>
+
+#### <a name="sales-orders-4-1-and-4-2"></a><span data-ttu-id="fbd0a-178">Salgsordrer 4-1 og 4-2</span><span class="sxs-lookup"><span data-stu-id="fbd0a-178">Sales orders 4-1 and 4-2</span></span>
+
+1. <span data-ttu-id="fbd0a-179">Opprett to identiske salgsordrer som har følgende innstillinger:</span><span class="sxs-lookup"><span data-stu-id="fbd0a-179">Create two identical sales orders that have the following settings:</span></span>
+
+    - <span data-ttu-id="fbd0a-180">**Kundekonto:** *US-003*</span><span class="sxs-lookup"><span data-stu-id="fbd0a-180">**Customer account:** *US-003*</span></span>
+
+1. <span data-ttu-id="fbd0a-181">Legg til en ordrelinje som har følgende innstillinger:</span><span class="sxs-lookup"><span data-stu-id="fbd0a-181">Add an order line that has the following settings:</span></span>
+
+    - <span data-ttu-id="fbd0a-182">**Varenummer:** *A0001* (en vare uten **Kode 4**-filter tilordnet)</span><span class="sxs-lookup"><span data-stu-id="fbd0a-182">**Item number:** *A0001* (an item that no **Code 4** filter is assigned to)</span></span>
+    - <span data-ttu-id="fbd0a-183">**Antall:** *1.00*</span><span class="sxs-lookup"><span data-stu-id="fbd0a-183">**Quantity:** *1.00*</span></span>
+
+1. <span data-ttu-id="fbd0a-184">Velg **Lager \> Reservasjon**, og velg deretter **Reserver parti** i handlingsruten for å reservere ordrelinjen.</span><span class="sxs-lookup"><span data-stu-id="fbd0a-184">Select **Inventory \> Reservation**, and then, on the Action Pane, select **Reserve lot** to reserve the order line.</span></span>
+
+#### <a name="sales-orders-4-3-and-4-4"></a><span data-ttu-id="fbd0a-185">Salgsordrer 4-3 og 4-4</span><span class="sxs-lookup"><span data-stu-id="fbd0a-185">Sales orders 4-3 and 4-4</span></span>
+
+1. <span data-ttu-id="fbd0a-186">Opprett to identiske salgsordrer som har følgende innstillinger:</span><span class="sxs-lookup"><span data-stu-id="fbd0a-186">Create two identical sales orders that have the following settings:</span></span>
+
+    - <span data-ttu-id="fbd0a-187">**Kundekonto:** *US-004*</span><span class="sxs-lookup"><span data-stu-id="fbd0a-187">**Customer account:** *US-004*</span></span>
+
+1. <span data-ttu-id="fbd0a-188">Legg til en ordrelinje som har følgende innstillinger:</span><span class="sxs-lookup"><span data-stu-id="fbd0a-188">Add an order line that has the following settings:</span></span>
+
+    - <span data-ttu-id="fbd0a-189">**Varenummer:** *A0001* (en vare uten **Kode 4**-filter tilordnet)</span><span class="sxs-lookup"><span data-stu-id="fbd0a-189">**Item number:** *A0001* (an item that no **Code 4** filter is assigned to)</span></span>
+    - <span data-ttu-id="fbd0a-190">**Antall:** *1.00*</span><span class="sxs-lookup"><span data-stu-id="fbd0a-190">**Quantity:** *1.00*</span></span>
+
+1. <span data-ttu-id="fbd0a-191">Velg **Lager \> Reservasjon**, og velg deretter **Reserver parti** i handlingsruten for å reservere ordrelinjen.</span><span class="sxs-lookup"><span data-stu-id="fbd0a-191">Select **Inventory \> Reservation**, and then, on the Action Pane, select **Reserve lot** to reserve the order line.</span></span>
+
+#### <a name="sales-orders-4-5-and-4-6"></a><span data-ttu-id="fbd0a-192">Salgsordrer 4-5 og 4-6</span><span class="sxs-lookup"><span data-stu-id="fbd0a-192">Sales orders 4-5 and 4-6</span></span>
+
+1. <span data-ttu-id="fbd0a-193">Opprett to identiske salgsordrer som har følgende innstillinger:</span><span class="sxs-lookup"><span data-stu-id="fbd0a-193">Create two identical sales orders that have the following settings:</span></span>
+
+    - <span data-ttu-id="fbd0a-194">**Kundekonto:** *US-007*</span><span class="sxs-lookup"><span data-stu-id="fbd0a-194">**Customer account:** *US-007*</span></span>
+    - <span data-ttu-id="fbd0a-195">**Område:** *6*</span><span class="sxs-lookup"><span data-stu-id="fbd0a-195">**Site:** *6*</span></span>
+    - <span data-ttu-id="fbd0a-196">**Lager:** *61*</span><span class="sxs-lookup"><span data-stu-id="fbd0a-196">**Warehouse:** *61*</span></span>
+    - <span data-ttu-id="fbd0a-197">**Pulje:** *ShipCons*</span><span class="sxs-lookup"><span data-stu-id="fbd0a-197">**Pool:** *ShipCons*</span></span>
+
+1. <span data-ttu-id="fbd0a-198">Legg til en ordrelinje som har følgende innstillinger:</span><span class="sxs-lookup"><span data-stu-id="fbd0a-198">Add an order line that has the following settings:</span></span>
+
+    - <span data-ttu-id="fbd0a-199">**Varenummer:** *A0001* (en vare uten **Kode 4**-filter tilordnet)</span><span class="sxs-lookup"><span data-stu-id="fbd0a-199">**Item number:** *A0001* (an item that no **Code 4** filter is assigned to)</span></span>
+    - <span data-ttu-id="fbd0a-200">**Antall:** *1.00*</span><span class="sxs-lookup"><span data-stu-id="fbd0a-200">**Quantity:** *1.00*</span></span>
+
+1. <span data-ttu-id="fbd0a-201">Velg **Lager \> Reservasjon**, og velg deretter **Reserver parti** i handlingsruten for å reservere ordrelinjen.</span><span class="sxs-lookup"><span data-stu-id="fbd0a-201">Select **Inventory \> Reservation**, and then, on the Action Pane, select **Reserve lot** to reserve the order line.</span></span>
+
+#### <a name="sales-orders-4-7-and-4-8"></a><span data-ttu-id="fbd0a-202">Salgsordrer 4-7 og 4-8</span><span class="sxs-lookup"><span data-stu-id="fbd0a-202">Sales orders 4-7 and 4-8</span></span>
+
+1. <span data-ttu-id="fbd0a-203">Opprett to identiske salgsordrer som har følgende innstillinger:</span><span class="sxs-lookup"><span data-stu-id="fbd0a-203">Create two identical sales orders that have the following settings:</span></span>
+
+    - <span data-ttu-id="fbd0a-204">**Kundekonto:** *US-007*</span><span class="sxs-lookup"><span data-stu-id="fbd0a-204">**Customer account:** *US-007*</span></span>
+    - <span data-ttu-id="fbd0a-205">**Område:** *6*</span><span class="sxs-lookup"><span data-stu-id="fbd0a-205">**Site:** *6*</span></span>
+    - <span data-ttu-id="fbd0a-206">**Lager:** *61*</span><span class="sxs-lookup"><span data-stu-id="fbd0a-206">**Warehouse:** *61*</span></span>
+    - <span data-ttu-id="fbd0a-207">**Pulje:** La dette feltet stå tomt.</span><span class="sxs-lookup"><span data-stu-id="fbd0a-207">**Pool:** Leave this field blank.</span></span>
+
+1. <span data-ttu-id="fbd0a-208">Legg til en ordrelinje som har følgende innstillinger:</span><span class="sxs-lookup"><span data-stu-id="fbd0a-208">Add an order line that has the following settings:</span></span>
+
+    - <span data-ttu-id="fbd0a-209">**Varenummer:** *A0001* (en vare uten **Kode 4**-filter tilordnet)</span><span class="sxs-lookup"><span data-stu-id="fbd0a-209">**Item number:** *A0001* (an item that no **Code 4** filter is assigned to)</span></span>
+    - <span data-ttu-id="fbd0a-210">**Antall:** *1.00*</span><span class="sxs-lookup"><span data-stu-id="fbd0a-210">**Quantity:** *1.00*</span></span>
+
+1. <span data-ttu-id="fbd0a-211">Velg **Lager \> Reservasjon**, og velg deretter **Reserver parti** i handlingsruten for å reservere ordrelinjen.</span><span class="sxs-lookup"><span data-stu-id="fbd0a-211">Select **Inventory \> Reservation**, and then, on the Action Pane, select **Reserve lot** to reserve the order line.</span></span>
+
+## <a name="release-the-orders-to-the-warehouse"></a><span data-ttu-id="fbd0a-212">Frigi ordrene til lageret</span><span class="sxs-lookup"><span data-stu-id="fbd0a-212">Release the orders to the warehouse</span></span>
+
+<span data-ttu-id="fbd0a-213">Følg disse trinnene for å frigi hver salgsordre du har opprettet for dette , til lageret.</span><span class="sxs-lookup"><span data-stu-id="fbd0a-213">Follow these steps to release each sales order that you created for this scenario to the warehouse.</span></span>
+
+1. <span data-ttu-id="fbd0a-214">Gå til **Kunde \> Ordrer \> Alle salgsordrer**.</span><span class="sxs-lookup"><span data-stu-id="fbd0a-214">Go to **Accounts receivable \> Orders \> All sales orders**.</span></span>
+1. <span data-ttu-id="fbd0a-215">Finn og velg salgosordren som skal frigis.</span><span class="sxs-lookup"><span data-stu-id="fbd0a-215">Find and select the sales order to release.</span></span>
+1. <span data-ttu-id="fbd0a-216">I handlingsruten velger du **Handlinger \> Frigi til lager** i kategorien **Lager** for å frigi den valgte salgsordren.</span><span class="sxs-lookup"><span data-stu-id="fbd0a-216">On the Action Pane, on the **Warehouse** tab, select **Actions \> Release to warehouse** to release the selected sales order.</span></span>
+1. <span data-ttu-id="fbd0a-217">Gjenta denne prosedyren for hver salgsordre du opprettet for dette .</span><span class="sxs-lookup"><span data-stu-id="fbd0a-217">Repeat this procedure for every other sales order that you created for this scenario.</span></span>
+
+## <a name="consolidate-the-shipments-by-using-the-shipment-consolidation-workbench"></a><span data-ttu-id="fbd0a-218">Konsolidere forsendelsene ved hjelp av arbeidsområdet for forsendelseskonsolidering</span><span class="sxs-lookup"><span data-stu-id="fbd0a-218">Consolidate the shipments by using the shipment consolidation workbench</span></span>
+
+1. <span data-ttu-id="fbd0a-219">Gå til **Lagerstyring \> Frigi til lager \> Arbeidsområde for forsendelseskonsolidering**.</span><span class="sxs-lookup"><span data-stu-id="fbd0a-219">Go to **Warehouse management \> Release to warehouse \> Shipment consolidation workbench**.</span></span>
+1. <span data-ttu-id="fbd0a-220">I handlingsruten velger du **Rediger spørring**.</span><span class="sxs-lookup"><span data-stu-id="fbd0a-220">On the Action Pane, select **Edit query**.</span></span>
+1. <span data-ttu-id="fbd0a-221">Velg **Legg til** i kategorien **Område** i dialogboksen for redigeringsprogrammet for spørring for å legge til en rad som har følgende innstillinger i rutenettet:</span><span class="sxs-lookup"><span data-stu-id="fbd0a-221">In the query editor dialog box, on the **Range** tab, select **Add** to add a row that has the following settings to the grid:</span></span>
+
+    - <span data-ttu-id="fbd0a-222">**Tabell:** *Salgsordrer*</span><span class="sxs-lookup"><span data-stu-id="fbd0a-222">**Table:** *Sales orders*</span></span>
+    - <span data-ttu-id="fbd0a-223">**Felt:** *Salgsordre*</span><span class="sxs-lookup"><span data-stu-id="fbd0a-223">**Field:** *Sales order*</span></span>
+    - <span data-ttu-id="fbd0a-224">**Vilkår:** Angi en kommadelt liste over salgsordrenumrene for hvert ordresett du har opprettet for dette .</span><span class="sxs-lookup"><span data-stu-id="fbd0a-224">**Criteria:** Enter a comma-separated list of the sales order numbers for each order set that you created for this scenario.</span></span>
+
+1. <span data-ttu-id="fbd0a-225">Velg **OK** for å lagre spørringen og lukke dialogboksen.</span><span class="sxs-lookup"><span data-stu-id="fbd0a-225">Select **OK** to save your query and close the dialog box.</span></span>
+1. <span data-ttu-id="fbd0a-226">Velg **Konsolider forsendelser** i handlingsruten.</span><span class="sxs-lookup"><span data-stu-id="fbd0a-226">On the Action Pane, select **Consolidate shipments**.</span></span>
+1. <span data-ttu-id="fbd0a-227">Merk alle forsendelsene, og velg deretter **Konsolider** i handlingsruten.</span><span class="sxs-lookup"><span data-stu-id="fbd0a-227">Select all the shipments, and then, on the Action Pane, select **Consolidate**.</span></span>
+
+## <a name="verify-the-shipments"></a><span data-ttu-id="fbd0a-228">Bekrefte forsendelsene</span><span class="sxs-lookup"><span data-stu-id="fbd0a-228">Verify the shipments</span></span>
+
+<span data-ttu-id="fbd0a-229">I den følgende prosedyren kan du kontrollere forsendelsene som er opprettet eller oppdatert som et resultat av forsendelseskonsolidering.</span><span class="sxs-lookup"><span data-stu-id="fbd0a-229">The following procedure lets you verify the shipments that have been created or updated as a result of shipment consolidation.</span></span> <span data-ttu-id="fbd0a-230">Bruk det til å gå gjennom hvert ordresett du har opprettet for dette , og se gjennom underinndelinge nedenfor for å kontrollere at du har fått de forventede resultatene.</span><span class="sxs-lookup"><span data-stu-id="fbd0a-230">Use it to review each order set that you created for this scenario, and then review the subsections that follow to make sure that you've obtained the expected results.</span></span>
+
+1. <span data-ttu-id="fbd0a-231">Gå til **Lagerstyring \> Forsendelser \> Alle forsendelser**.</span><span class="sxs-lookup"><span data-stu-id="fbd0a-231">Go to **Warehouse management \> Shipments \> All shipments**.</span></span>
+1. <span data-ttu-id="fbd0a-232">Finn og velg den påkrevde forsendelsen.</span><span class="sxs-lookup"><span data-stu-id="fbd0a-232">Find and select the required shipment.</span></span>
+1. <span data-ttu-id="fbd0a-233">Hvis en konsolideringspolicy ble brukt da forsendelsen ble opprettet eller oppdatert, skal den vises i feltet **Policy for forsendelseskonsolidering**.</span><span class="sxs-lookup"><span data-stu-id="fbd0a-233">If a consolidation policy was used when the shipment was created or updated, you should see it in the **Shipment consolidation policy** field.</span></span>
+
+### <a name="related-shipments-for-order-set-1"></a><span data-ttu-id="fbd0a-234">Relaterte forsendelser for ordresett 1</span><span class="sxs-lookup"><span data-stu-id="fbd0a-234">Related shipments for order set 1</span></span>
+
+<span data-ttu-id="fbd0a-235">To forsendelser skal ha blitt opprettet:</span><span class="sxs-lookup"><span data-stu-id="fbd0a-235">Two shipments should have been created:</span></span>
+
+- <span data-ttu-id="fbd0a-236">Den første forsendelsen inneholder tre linjer og ble opprettet ved hjelp av policyen for forsendelseskonsolidering for *CustomerMode*.</span><span class="sxs-lookup"><span data-stu-id="fbd0a-236">The first shipment contains three lines and was created by using the *CustomerMode* shipment consolidation policy.</span></span>
+- <span data-ttu-id="fbd0a-237">Den andre forsendelen, som ikke bruker transportmåten *Airways*, ble opprettet ved hjelp av policyen for forsendelseskonsolidering for *CustomerOrderNo*.</span><span class="sxs-lookup"><span data-stu-id="fbd0a-237">The second shipment, which doesn't use the *Airways* transportation mode of delivery, was created by using the *CustomerOrderNo* shipment consolidation policy.</span></span>
+
+### <a name="related-shipments-for-order-set-2"></a><span data-ttu-id="fbd0a-238">Relaterte forsendelser for ordresett 2</span><span class="sxs-lookup"><span data-stu-id="fbd0a-238">Related shipments for order set 2</span></span>
+
+<span data-ttu-id="fbd0a-239">Tre forsendelser skal ha blitt opprettet:</span><span class="sxs-lookup"><span data-stu-id="fbd0a-239">Three shipments should have been created:</span></span>
+
+- <span data-ttu-id="fbd0a-240">Den første forsendelsen inneholder varer med statusen *Brannfarlig*.</span><span class="sxs-lookup"><span data-stu-id="fbd0a-240">The first shipment contains *Flammable* items.</span></span>
+- <span data-ttu-id="fbd0a-241">Hver av de to andre forsendelsene inneholder én linje med varen med statusen *Eksplosivt*.</span><span class="sxs-lookup"><span data-stu-id="fbd0a-241">Each of the other two shipments contains one line that has the *Explosive* item.</span></span>
+
+### <a name="related-shipments-for-order-set-3"></a><span data-ttu-id="fbd0a-242">Relaterte forsendelser for ordresett 3</span><span class="sxs-lookup"><span data-stu-id="fbd0a-242">Related shipments for order set 3</span></span>
+
+<span data-ttu-id="fbd0a-243">To forsendelser skal ha blitt opprettet:</span><span class="sxs-lookup"><span data-stu-id="fbd0a-243">Two shipments should have been created:</span></span>
+
+- <span data-ttu-id="fbd0a-244">Den første forsendelsen inneholder ordrelinjer fra salgsordren der feltet **Kunderekvisisjon** er satt til *1*.</span><span class="sxs-lookup"><span data-stu-id="fbd0a-244">The first shipment contains order lines from the sales order where the **Customer requisition** field is set to *1*.</span></span>
+- <span data-ttu-id="fbd0a-245">Den andre forsendelsen inneholder ordrelinjer fra salgsordren der feltet **Kunderekvisisjon** er satt til *2*.</span><span class="sxs-lookup"><span data-stu-id="fbd0a-245">The second shipment contains order lines from sales order where the **Customer requisition** field is set to *2*.</span></span>
+
+### <a name="related-shipments-for-order-set-4"></a><span data-ttu-id="fbd0a-246">Relaterte forsendelser for ordresett 4</span><span class="sxs-lookup"><span data-stu-id="fbd0a-246">Related shipments for order set 4</span></span>
+
+<span data-ttu-id="fbd0a-247">Fire forsendelser skal ha blitt opprettet:</span><span class="sxs-lookup"><span data-stu-id="fbd0a-247">Four shipments should have been created:</span></span>
+
+- <span data-ttu-id="fbd0a-248">Linjer fra to ordrer for kunde *US-003* ble gruppert i én forsendelse ved hjelp av policyen for forsendelseskonsolidering for *Ordrepulje*.</span><span class="sxs-lookup"><span data-stu-id="fbd0a-248">Lines from two orders for customer *US-003* were grouped into one shipment by using the *Order pool* shipment consolidation policy.</span></span>
+- <span data-ttu-id="fbd0a-249">Linjer fra to ordrer for kunde *US-004* ble gruppert i én forsendelse ved hjelp av policyen for forsendelseskonsolidering for *Ordrepulje*.</span><span class="sxs-lookup"><span data-stu-id="fbd0a-249">Lines from two orders for customer *US-004* were grouped into one shipment by using the *Order pool* shipment consolidation policy.</span></span>
+- <span data-ttu-id="fbd0a-250">Linjer fra salgsordre 4-5 og 4-6 for kunde *US-007* ble gruppert i én forsendelse ved hjelp av policyen for forsendelseskonsolidering for *Ordrepulje*.</span><span class="sxs-lookup"><span data-stu-id="fbd0a-250">Lines from sales orders 4-5 and 4-6 for customer *US-007* were grouped into one shipment by using the *Order pool* shipment consolidation policy.</span></span>
+- <span data-ttu-id="fbd0a-251">Linjer fra salgsordre 4-7 og 4-8 for kunde *US-007* ble gruppert i én forsendelse ved hjelp av policyen for forsendelseskonsolidering for *Kryssordre*.</span><span class="sxs-lookup"><span data-stu-id="fbd0a-251">Lines from sales orders 4-7 and 4-8 for customer *US-007* were grouped into one shipment by using the *CrossOrder* shipment consolidation policy.</span></span>
+
+## <a name="additional-resources"></a><span data-ttu-id="fbd0a-252">Tilleggsressurser</span><span class="sxs-lookup"><span data-stu-id="fbd0a-252">Additional resources</span></span>
+
+- [<span data-ttu-id="fbd0a-253">Policyer for forsendelseskonsolidering</span><span class="sxs-lookup"><span data-stu-id="fbd0a-253">Shipment consolidation policies</span></span>](about-shipment-consolidation-policies.md)
+- [<span data-ttu-id="fbd0a-254">Konfigurere policyer for forsendelseskonsolidering</span><span class="sxs-lookup"><span data-stu-id="fbd0a-254">Configure shipment consolidation policies</span></span>](configure-shipment-consolidation-policies.md)
