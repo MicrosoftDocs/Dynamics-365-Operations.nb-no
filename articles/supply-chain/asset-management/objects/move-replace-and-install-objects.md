@@ -19,11 +19,11 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: ec150adb35eb0600844245b14cbec9e9632ab337
-ms.sourcegitcommit: c986d5234b81d31cc6d054298be6f6ec92c1754c
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "3889559"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4434465"
 ---
 # <a name="move-replace-and-install-assets"></a>Flytte, erstatte og installere aktiva
 
@@ -59,7 +59,7 @@ Bruk **Flytt aktivum**-funksjonen til å flytte et aktivum til en annen aktivast
 Bruk funksjonen **Erstatt aktivum** i forbindelse med reparasjoner, oppussing eller permanent utskifting av et utslitt aktivum med et nytt aktivum. Denne funksjonen brukes til å erstatte underordnede aktiva i en aktivastruktur. For overordnede objekter (det vil si aktiva som for øyeblikket ikke har et overordnet objekt), utføres denne erstatningen på et arbeidssted. Hvis du vil ha mer informasjon om hvordan du erstatter overordnede objekter på et arbeidssted, kan du se [Installere aktiva på arbeidssteder](../functional-locations/install-objects-on-functional-locations.md).
 
 > [!NOTE]
-> Hvis et verksted er knyttet til produksjonsavdelingen, kan du opprette arbeidssteder som **Reparasjon**, **Svinn**og **Lager** for å håndtere reparasjon og utskifting av aktiva.
+> Hvis et verksted er knyttet til produksjonsavdelingen, kan du opprette arbeidssteder som **Reparasjon**, **Svinn** og **Lager** for å håndtere reparasjon og utskifting av aktiva.
 
 1. Velg **Aktivastyring** \> **Felles** \> **Aktiva** \> **Alle aktiva** eller **Aktive aktiva**.
 2. Velg det underordnede aktivumet som skal erstattes, fra listen. Hvis aktivaet har underordnede aktiva, erstatter du også disse.

@@ -20,11 +20,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: a4cad461c6ff4ef6badeeba868eef45165cf5d33
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3980664"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4434384"
 ---
 # <a name="inventory-close"></a>Beholdningslukking
 
@@ -52,10 +52,10 @@ Når du oppretter en bestilling fra en salgsordre, oppdateres finanskontoene som
 Når oppdateringen er fullført, kan du gå gjennom finansbilaget som posteres på grunn av en av disse oppgavene.
 
 1.  På siden **Lukking og justering** i kategorien **Oversikt** velger du oppdateringen som skal gås gjennom.
-2.  Klikk **detaljer** , og velg deretter **Bilag** .
+2.  Klikk **detaljer**, og velg deretter **Bilag**.
 
 ## <a name="effects-of-the-inventory-close-process-on-the-general-ledger"></a>Virkningen av lagerlukkingsprosessen i økonomimodulen
-Flere av oppgavene du kan utføre på siden **Lukking og justering** , fører til oppdateringer i økonomimodulen. Økonomimodilen oppdateres for eksempel når du foretar beholdningsjusteringer på lager, foretar lagertransaksjonsjusteringer, kjøre en lageromberegning og kjører en lagerlukking. 
+Flere av oppgavene du kan utføre på siden **Lukking og justering**, fører til oppdateringer i økonomimodulen. Økonomimodilen oppdateres for eksempel når du foretar beholdningsjusteringer på lager, foretar lagertransaksjonsjusteringer, kjøre en lageromberegning og kjører en lagerlukking. 
 
 Finanskontoene som oppdateres på grunn av disse oppgavene, er koblet til den opprinnelige lagertransaksjonen. Hvis en salgsordre utlignes til en bestilling, vil for eksempel finanskontoene som ble brukt til den opprinnelige salgsordren, bli justert. Dette gjelder selv om finanskontoene for varegruppen som er tilordnet til dette elementet, er endret siden salgsordren ble postert. Når lagerlukking oppretter et utligningsbeløp, er utligningsbeløpet fremdeles postert på de opprinnelige finanskontoene, og ikke på de nye finanskontoene som er tilordnet til varen. Økonomimodulen kan også bli oppdatert hvis du reverserer en lagerlukking. 
 

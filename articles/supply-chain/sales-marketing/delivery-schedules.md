@@ -19,11 +19,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: bc25ff113291b2a8a0a7ba15637e4d094feb9aae
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3978948"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4434571"
 ---
 # <a name="delivery-schedules"></a>Leveringsplaner
 
@@ -43,7 +43,7 @@ Bruk en leveringsplan når det totale antallet i en ordre eller en tilbudslinje 
 
 I dette scenariet ber kunden ber om levering av 600 stoler i partier på 100 stoler over en periode på seks måneder. For å holde oversikt over kravene til levering oppretter du en leveringsplan. På siden for leveringstidsplan oppretter du seks separate leveringslinjer. Hver leveringslinje inneholder 100 stoler og angir leveringsdatoen for disse 100 stolene. I dette tilfellet motposteres hver linje den første dagen i måneden i seks måneder etter hverandre.  
 
-Når du oppretter en leveringsplan, endres automatisk den opprinnelige ordrelinjen til **Bestillingslinje med flere leveringer** . En linje av denne typen kalles en kommersielle linje og merkes med et ikon. Leveringslinjen er merket med et annet ikon. Hvis du endrer et antall på en leveringslinje, oppdateres den kommersielle linjen til det totale antallet i leveringsplanen. Hvis en forretningsavtale har definert en sluttrabatt for ordren, sikrer leveringsplanen at bestillingen er kvalifisert for sluttrabatten, selv om ordren er delt inn i separate leveranser.  
+Når du oppretter en leveringsplan, endres automatisk den opprinnelige ordrelinjen til **Bestillingslinje med flere leveringer**. En linje av denne typen kalles en kommersielle linje og merkes med et ikon. Leveringslinjen er merket med et annet ikon. Hvis du endrer et antall på en leveringslinje, oppdateres den kommersielle linjen til det totale antallet i leveringsplanen. Hvis en forretningsavtale har definert en sluttrabatt for ordren, sikrer leveringsplanen at bestillingen er kvalifisert for sluttrabatten, selv om ordren er delt inn i separate leveranser.  
 
 Ordrer som har en leveringsplan, behandles mot leveringslinjene. Behandling inkluderer postering av følgesedler, produktkvitteringer og fakturering.  
 

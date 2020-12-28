@@ -18,11 +18,11 @@ ms.author: perlynne
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.openlocfilehash: 4577b8b189403b3d71eb634e159d51d2fa53ce12
-ms.sourcegitcommit: 6d6aa016c4971b0673d461b82fd80b060ae5f7a1
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "3268799"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4434663"
 ---
 # <a name="set-up-quality-orders"></a>Definere kvalitetsordrer
 
@@ -135,4 +135,4 @@ Denne fremgangsmåten viser hvordan du aktiverer en kvalitetsstyringsprosess der
 17. Lukk siden.
 
 > [!NOTE]
-> Funksjonen *Kvalitetsstyring for lagerprosesser* inneholder flere alternativer for å definere kvalitetstilknytninger. Den legger til en ny betingelse**Gjeldende lagertype**) og en ny innstilling **(Policy for kvalitetsbehandling**). Hvis du har aktivert denne funksjonen, kan du se [Kvalitetsstyring for lagerprosesser](../quality-management-for-warehouses-processes.md) for mer informasjon.
+> Funksjonen *Kvalitetsstyring for lagerprosesser* inneholder flere alternativer for å definere kvalitetstilknytninger. Den legger til en ny betingelse(**Gjeldende lagertype**) og en ny innstilling **(Policy for kvalitetsbehandling**). Hvis du har aktivert denne funksjonen, kan du se [Kvalitetsstyring for lagerprosesser](../quality-management-for-warehouses-processes.md) for mer informasjon.

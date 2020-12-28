@@ -19,11 +19,11 @@ ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 8bb256514175166621847a5d40c16b9b749b1ddc
-ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: nb-NO
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4016200"
+ms.locfileid: "4434773"
 ---
 # <a name="set-up-mobile-devices-for-warehouse-work"></a>Definere mobilenheter for lagerarbeid
 
@@ -38,13 +38,13 @@ Dette emnet beskriver hvordan du konfigurerer menyelementene lagerarbeidere bruk
 - Opprett arbeid som skal utføres via en annen prosess. Mottak av en vare for en bestilling kan for eksempel opprette plasseringsarbeid for en annen arbeider.
 - Utføre arbeid som ble opprettet av en annen prosess (eksisterende arbeid), for eksempel plasseringsarbeid som ble opprettet da du mottok en vare for en bestilling.
 
-Hvis du vil opprette et menyelement for en aktivitet eller forespørsel, kan du angi **Modus** -feltet til **Indirekte**. En liste over **Aktivitetskode** -alternativer blir deretter tilgjengelig, slik at du kan velge hvilken type forespørsel eller aktivitet som menyelementet gjelder for. Hvis du vil opprette et menyelement for å generere lagerarbeid, kan du angi **Modus** -feltet til **Arbeid**. En liste over **Arbeidsopprettelsesprosess** -alternativer blir deretter tilgjengelig. Hvis du vil opprette et menyelement for å behandle eksisterende lagerarbeid, kan du angi **Modus** -feltet til **Arbeid** , og deretter angi alternativet **Bruk eksisterende arbeid** til **Ja**. 
+Hvis du vil opprette et menyelement for en aktivitet eller forespørsel, kan du angi **Modus**-feltet til **Indirekte**. En liste over **Aktivitetskode**-alternativer blir deretter tilgjengelig, slik at du kan velge hvilken type forespørsel eller aktivitet som menyelementet gjelder for. Hvis du vil opprette et menyelement for å generere lagerarbeid, kan du angi **Modus**-feltet til **Arbeid**. En liste over **Arbeidsopprettelsesprosess**-alternativer blir deretter tilgjengelig. Hvis du vil opprette et menyelement for å behandle eksisterende lagerarbeid, kan du angi **Modus**-feltet til **Arbeid**, og deretter angi alternativet **Bruk eksisterende arbeid** til **Ja**. 
 
 > [!NOTE]
 > Tilleggsfelt kan være tilgjengelige for menyelementer, avhengig av modusen du velger for menyelementet, og om menyelementet brukes til å utføre eksisterende arbeid. Hvis du vil ha informasjon om tilleggsvalgene for feltene, kan du se delen "Flere alternativer for menyelementer" senere i dette emnet.
 
 ## <a name="configure-menu-items-for-activities-and-inquiries"></a>Konfigurere menyelementer for aktiviteter og forespørsler
-Hvis **Modus** -feltet for et menyelement er satt til **Indirekte** , kan du opprette et menyelement for å utføre en generell aktivitet eller en spørring som ikke fører til arbeid. Disse omfatter for eksempel ny utskrift av nummerskiltetiketter og forespørsler om varene på en lokasjon. Følgende tabell viser alternativene som er tilgjengelige.
+Hvis **Modus**-feltet for et menyelement er satt til **Indirekte**, kan du opprette et menyelement for å utføre en generell aktivitet eller en spørring som ikke fører til arbeid. Disse omfatter for eksempel ny utskrift av nummerskiltetiketter og forespørsler om varene på en lokasjon. Følgende tabell viser alternativene som er tilgjengelige.
 
 | Alternativ | Beskrivelse |
 |---|---|
@@ -64,12 +64,12 @@ Hvis **Modus** -feltet for et menyelement er satt til **Indirekte** , kan du opp
 | Sjåførutsjekking | Registrer at en sjåfør har fullført avtalen sin. |
 | Tøm hurtigbuffer for nummersekvens | Slett nummersekvensnumre fra nummersekvensbufferen. Denne aktiviteten utføres vanligvis av en systemadministrator for å løse problemer med hurtigbufring ved bruk av mobile enheter. |
 | Endre partidisposisjon | La en arbeider angi en partidisposisjonskode for en vare og et parti. Dette valget oppdaterer disposisjonskoden som er angitt for partiet. |
-| Vis liste over åpent arbeid | Vis en liste over tilgjengelig arbeid for en bestemt bruker. Brukeren kan deretter velge arbeid som skal utføres, og vil bli dirigert til det. Denne listen er ment å vises på nettbrett med skjermstørrelser på 7 tommer eller mer. Når du velger dette alternativet, aktiveres menyelementene **Rediger spørring** og **Feltliste**. På siden **Rediger spørring** kan du definere kriterier for arbeid som vises i listen. På siden **Feltliste** kan du velge hvilke felt som vises i arbeidslisten. Du kan for eksempel redusere antall felt som vises, slik at brukeren raskere kan velge det mest aktuelle arbeidselementet. Du kan også velge hvor mange arbeidsposter som skal vises per side, i feltet **Poster per side** i hurtigfanen **Generelt**. Hvis det er merket av for **Tillat brukere å filtrere arbeid etter transaksjonstype** , inkluderer arbeidslisten en **Filtrer arbeid** -kontroll som brukeren kan bruke til å filtrere etter transaksjonstype. Brukere vil bare se arbeid i arbeidslisten som de har tilgang til. Du må kontrollere at brukere har tillatelse for ett eller flere brukerstyrte menyelementer som støtter den bestemte arbeidsklassetypene som de skal ha tilgang til. Tillatelser kontrolleres når en bruker forsøker å utføre arbeid fra listen.|
-| Opprett overføringsordre fra nummerskilt | Lar lagerarbeidere opprette og behandle overføringsordrer direkte fra lagerappen. Lagerarbeiderne begynner ved å velge destinasjonslageret, og deretter kan de skanne én eller flere nummerskilt ved hjelp av appen. Når lagerarbeideren velger **Fullfør ordre** , vil en satsvis jobb opprette den nødvendige overføringsordren og ordrelinjene basert på lagerbeholdningen som er registrert for disse nummerskiltene. Hvis du vil ha mer informasjon, kan du se [Opprette overføringsordrer fra lagerappen](create-transfer-order-from-warehouse-app.md)
+| Vis liste over åpent arbeid | Vis en liste over tilgjengelig arbeid for en bestemt bruker. Brukeren kan deretter velge arbeid som skal utføres, og vil bli dirigert til det. Denne listen er ment å vises på nettbrett med skjermstørrelser på 7 tommer eller mer. Når du velger dette alternativet, aktiveres menyelementene **Rediger spørring** og **Feltliste**. På siden **Rediger spørring** kan du definere kriterier for arbeid som vises i listen. På siden **Feltliste** kan du velge hvilke felt som vises i arbeidslisten. Du kan for eksempel redusere antall felt som vises, slik at brukeren raskere kan velge det mest aktuelle arbeidselementet. Du kan også velge hvor mange arbeidsposter som skal vises per side, i feltet **Poster per side** i hurtigfanen **Generelt**. Hvis det er merket av for **Tillat brukere å filtrere arbeid etter transaksjonstype**, inkluderer arbeidslisten en **Filtrer arbeid**-kontroll som brukeren kan bruke til å filtrere etter transaksjonstype. Brukere vil bare se arbeid i arbeidslisten som de har tilgang til. Du må kontrollere at brukere har tillatelse for ett eller flere brukerstyrte menyelementer som støtter den bestemte arbeidsklassetypene som de skal ha tilgang til. Tillatelser kontrolleres når en bruker forsøker å utføre arbeid fra listen.|
+| Opprett overføringsordre fra nummerskilt | Lar lagerarbeidere opprette og behandle overføringsordrer direkte fra lagerappen. Lagerarbeiderne begynner ved å velge destinasjonslageret, og deretter kan de skanne én eller flere nummerskilt ved hjelp av appen. Når lagerarbeideren velger **Fullfør ordre**, vil en satsvis jobb opprette den nødvendige overføringsordren og ordrelinjene basert på lagerbeholdningen som er registrert for disse nummerskiltene. Hvis du vil ha mer informasjon, kan du se [Opprette overføringsordrer fra lagerappen](create-transfer-order-from-warehouse-app.md)
 
 
 ## <a name="configure-menu-items-to-create-work-for-another-worker-or-process"></a>Konfigurere menyelementer for å opprette arbeid for en annen arbeider eller prosess
-Du kan definere et menyelement som oppretter arbeid for en annen arbeider etter at en innledende handling er utført på mobilenheten. Når én arbeider for eksempel bruker en mobilenhet til å motta en vare, opprettes det plasseringsarbeid for en annen arbeider. På siden **Menyelementer på mobilenheten** i **Modus** -feltet velger du **Arbeid** for å definere et menyelement som oppretter arbeid. I tabellen nedenfor er alternativene i feltet **Arbeidsopprettelsesprosess** ordnet etter arbeidsordretypen.
+Du kan definere et menyelement som oppretter arbeid for en annen arbeider etter at en innledende handling er utført på mobilenheten. Når én arbeider for eksempel bruker en mobilenhet til å motta en vare, opprettes det plasseringsarbeid for en annen arbeider. På siden **Menyelementer på mobilenheten** i **Modus**-feltet velger du **Arbeid** for å definere et menyelement som oppretter arbeid. I tabellen nedenfor er alternativene i feltet **Arbeidsopprettelsesprosess** ordnet etter arbeidsordretypen.
 
 
 <table>
@@ -207,7 +207,7 @@ Du kan definere et menyelement som oppretter arbeid for en annen arbeider etter 
 </table>
 
 ## <a name="configure-menu-items-to-process-existing-work"></a>Konfigurere menyelementer for å behandle eksisterende arbeid
-I tillegg til å definere menyelementer for å opprette lagerarbeid, kan du definere menyelementer til å behandle arbeid som allerede er opprettet. Angi **Modus** -feltet til **Arbeid** , og velg alternativet **Bruk eksisterende arbeid**. Flere alternativer blir deretter tilgjengelig i **Generell** -kategorien. Du kan styre tilgang til menyelementet ved å tilordne én eller flere arbeidsklasser i hurtigkategorien **Arbeidsklasse**. Arbeidsklassene definerer arbeidet som kan behandles av menyelementet. Arbeidsklassen kan også brukes til å gi tilgang til bestemte brukerroller, eller til å skille behandling for ulike typer operasjoner. Følgende tabell beskriver alternativene som er tilgjengelige. Du kan velge alternativet under feltet **Styrt av** på sidden **Menyelementer på mobilenheten**. 
+I tillegg til å definere menyelementer for å opprette lagerarbeid, kan du definere menyelementer til å behandle arbeid som allerede er opprettet. Angi **Modus**-feltet til **Arbeid**, og velg alternativet **Bruk eksisterende arbeid**. Flere alternativer blir deretter tilgjengelig i **Generell**-kategorien. Du kan styre tilgang til menyelementet ved å tilordne én eller flere arbeidsklasser i hurtigkategorien **Arbeidsklasse**. Arbeidsklassene definerer arbeidet som kan behandles av menyelementet. Arbeidsklassen kan også brukes til å gi tilgang til bestemte brukerroller, eller til å skille behandling for ulike typer operasjoner. Følgende tabell beskriver alternativene som er tilgjengelige. Du kan velge alternativet under feltet **Styrt av** på sidden **Menyelementer på mobilenheten**. 
 
 <table>
 

@@ -19,11 +19,11 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: cc5229918c89657f3108e1c2314dff8251eae93d
-ms.sourcegitcommit: e3f4dd2257a3255c2982f4fc7b72a1121275b88a
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: nb-NO
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4018081"
+ms.locfileid: "4434784"
 ---
 # <a name="set-up-vendor-accounts"></a>Definere leverandørkontoer
 
@@ -42,7 +42,7 @@ Når du oppretter en leverandørkonto, angir du opplysninger om leverandøren. D
 -   Konfigurer informasjon om mva, faktura og betaling for leverandøren. Disse innstillingene kopieres som standard til nye dokumenter som du oppretter for leverandøren.
 -   Konfigurer finansdimensjoner som brukes til automatisk postering av transaksjoner for leverandøren til finanskontoer.
 
-Hvis du vil gjøre det raskere å opprette leverandørkontoer, kan du opprette maler. Du kan opprette en mal på **Leverandør** -siden i handlingsruten ved å klikke på **Alternativer** &gt; **Postinformasjon**. Klikk deretter **Firmakontomal**. Firmakontomaler deles med andre brukere.  
+Hvis du vil gjøre det raskere å opprette leverandørkontoer, kan du opprette maler. Du kan opprette en mal på **Leverandør**-siden i handlingsruten ved å klikke på **Alternativer** &gt; **Postinformasjon**. Klikk deretter **Firmakontomal**. Firmakontomaler deles med andre brukere.  
 
 Du kan også opprette en brukermal til eget bruk. Du kan ikke slette en leverandør som er knyttet til andre oppføringer, for eksempel kontakter eller produkter.
 
@@ -58,7 +58,7 @@ Du kan definere flere adresser som brukes til forskjellige formål, for hver lev
 ## <a name="vendor-contacts"></a>Leverandørkontakter
 Du kan lagre kontakter for en leverandør. Disse kontaktene kan brukes på dokumenter som bestillinger eller tilbudsforespørsler.  
 
-Hvis du vil legge til kontakter for en leverandør, går du til **Alle leverandører** -siden i kategorien **Leverandør** i **Oppsett** -gruppen, og klikker på **Kontakter** &gt; **Legg til kontakter**.  
+Hvis du vil legge til kontakter for en leverandør, går du til **Alle leverandører**-siden i kategorien **Leverandør** i **Oppsett**-gruppen, og klikker på **Kontakter** &gt; **Legg til kontakter**.  
 
 Du kan opprette leverandørkontakter fra grunnen av. Du kan også kopiere informasjon fra en annen person som allerede er registrert i Supply Chain Management, og redigere informasjonen etter behov.  
 
@@ -79,7 +79,7 @@ Hvis du vil flette part-ID-er, kan du følge disse trinnene.
 2.  Klikk **Flett poster** i handlingsruten.
 
 ## <a name="agreements"></a>Avtaler
-Når du setter opp en leverandørkonto, kan det også være at du vil registrere avtalene du har med leverandøren. Du kan definere avtalene for pris og rabatt ved hjelp av handlingene på leverandørposten. Du kan også definere en kjøpsavtale på **Kjøpsavtaler** -siden.
+Når du setter opp en leverandørkonto, kan det også være at du vil registrere avtalene du har med leverandøren. Du kan definere avtalene for pris og rabatt ved hjelp av handlingene på leverandørposten. Du kan også definere en kjøpsavtale på **Kjøpsavtaler**-siden.
 
 ## <a name="putting-a-vendor-on-hold"></a>Plassere en leverandør på vent
 Du kan sette en leverandør på vent for forskjellige transaksjonstyper. Følgende alternativer er tilgjengelige:
@@ -93,11 +93,11 @@ Du kan sette en leverandør på vent for forskjellige transaksjonstyper. Følgen
 
 Når du setter en leverandør på vent, kan du også angi en årsak og en dato for når statusen på vent avsluttes. Hvis du ikke angir en sluttdato, varer leverandørens på vent-status i det uendelige.
 
-Du kan masseoppdatere på vent-statusen til **Alle** for leverandører som er basert på de valgte kriteriene på siden **Deaktivering av leverandør** , og tilordne en årsak til hvorfor leverandøren er på vent.
+Du kan masseoppdatere på vent-statusen til **Alle** for leverandører som er basert på de valgte kriteriene på siden **Deaktivering av leverandør**, og tilordne en årsak til hvorfor leverandøren er på vent.
 
 Følgende kriterier brukes til å ta med leverandører som har vært inaktive i en periode, inkludere eller ekskludere leverandører som er ansatte, og utelate leverandører som har en henstandstid før neste sperring.
 
-- Basert på hvor mange dager du angir i feltet **Inaktivitetsperiode** på siden **Deaktivering av leverandør** , beregner programmet den seneste datoen der leverandøren kan ha en aktivitet som kan regnes som inaktiv. Det vil si at dagens dato minus antall dager du angir. Hvis det finnes én eller flere fakturaer for leverandøren der datoen er senere enn den beregnede siste datoen, vil leverandøren bli utelatt fra deaktivering. Dette blir også validert hvis leverandøren har betalinger etter denne datoen, åpne innkjøpsrekvisisjoner, åpne bestillinger, forespørsler om tilbud eller svar.
+- Basert på hvor mange dager du angir i feltet **Inaktivitetsperiode** på siden **Deaktivering av leverandør**, beregner programmet den seneste datoen der leverandøren kan ha en aktivitet som kan regnes som inaktiv. Det vil si at dagens dato minus antall dager du angir. Hvis det finnes én eller flere fakturaer for leverandøren der datoen er senere enn den beregnede siste datoen, vil leverandøren bli utelatt fra deaktivering. Dette blir også validert hvis leverandøren har betalinger etter denne datoen, åpne innkjøpsrekvisisjoner, åpne bestillinger, forespørsler om tilbud eller svar.
 - Antall dager i feltet **Henstandstid før neste sperre** brukes til å beregne den siste datoen i henstandstiden. Det vil si at dagens dato minus antall dager du angir. Dette gjelder bare leverandører som tidligere har blitt deaktivert. Når det gjelder en tidligere deaktivering, kontrollerer programmet historikken for andre forekomster av deaktivering for leverandøren og kontrollerer hvis den siste deaktiveringen ble utført før den siste datoen i henstandstiden. Hvis dette er tilfellet, inkluderes leverandøren i deaktiveringsprosessen.
 - Parameteren **Inkluder ansatte** refererer til leverandører som er koblet til en ansatt. Du kan angi om du vil ta med disse ansatte.
 
@@ -109,12 +109,12 @@ Leverandører som består valideringen, blir satt på vent, som angir verdien i 
 Hvis mer enn én leverandør har samme fakturaadresse, eller hvis en leverandør faktureres gjennom en tredjepart, kan du angi en fakturakonto i leverandørposten. Fakturakontoen er den kontoen som fakturabeløpet blir kreditert når du oppretter en leverandørfaktura fra en bestilling. Hvis du ikke angir noen fakturakonto i leverandørposten, blir leverandørkontoen brukt som fakturakonto.
 
 ## <a name="vendor-bank-accounts"></a>Leverandørbankkontoer
-Hvis du må betale til en leverandørbankkonto, kan du angi informasjon om leverandørens bank og bankkontoer på **Leverandørbankkontoer** -siden. Du kan også angi validerings- og betalingsinformasjon for bankkontoen. Du kan for eksempel legge til forhåndsmerknader i leverandørbankkontoer. Disse forhåndsmerknadene kan brukes til å bekrefte nøyaktigheten til kontodata, for eksempel registreringsnumre og kontonumre. Du må angi en standardkonto for betalinger til leverandøren. Når du foretar en betaling, kan du imidlertid endre denne kontoen til en av leverandørens andre kontoer.
+Hvis du må betale til en leverandørbankkonto, kan du angi informasjon om leverandørens bank og bankkontoer på **Leverandørbankkontoer**-siden. Du kan også angi validerings- og betalingsinformasjon for bankkontoen. Du kan for eksempel legge til forhåndsmerknader i leverandørbankkontoer. Disse forhåndsmerknadene kan brukes til å bekrefte nøyaktigheten til kontodata, for eksempel registreringsnumre og kontonumre. Du må angi en standardkonto for betalinger til leverandøren. Når du foretar en betaling, kan du imidlertid endre denne kontoen til en av leverandørens andre kontoer.
 
 ## <a name="ledger-accounts"></a>Finanskontoer
-Du kan angi standardkontoene som vises automatisk i leverandørfakturajournaler for den angitte leverandøren. Denne funksjonaliteten kan være nyttig hvis du vanligvis betaler for samme type ting eller tjenester fra de samme leverandørene over tid. Når du angir en standardkonto, kan du raskt og effektivt angi journaloppføringer i fakturajournalen. Standardkontoene du angir, brukes ikke for bestillinger eller for leverandørfakturaer som angis på **Leverandørfaktura** -siden.  
+Du kan angi standardkontoene som vises automatisk i leverandørfakturajournaler for den angitte leverandøren. Denne funksjonaliteten kan være nyttig hvis du vanligvis betaler for samme type ting eller tjenester fra de samme leverandørene over tid. Når du angir en standardkonto, kan du raskt og effektivt angi journaloppføringer i fakturajournalen. Standardkontoene du angir, brukes ikke for bestillinger eller for leverandørfakturaer som angis på **Leverandørfaktura**-siden.  
 
-Du velger standardkontoer på siden **Standard kontooppsett** som du kan åpne fra **Faktura** -kategorien i leverandørposten. Kontoene som du velger her, vises i den filtrerte listen over kontoer for leverandørkontoen, når du angir en journaloppføring. Du kan angi én av kontoene som standardkonto.
+Du velger standardkontoer på siden **Standard kontooppsett** som du kan åpne fra **Faktura**-kategorien i leverandørposten. Kontoene som du velger her, vises i den filtrerte listen over kontoer for leverandørkontoen, når du angir en journaloppføring. Du kan angi én av kontoene som standardkonto.
 
 
 

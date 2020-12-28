@@ -20,11 +20,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 0f83c18bb8700e274bcf8cb369a7436a17450bf7
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3979263"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4434694"
 ---
 # <a name="costing-sheets"></a>Kostark
 
@@ -36,7 +36,7 @@ Et kostark er den formaterte visningen av informasjon om kostnader for solgte va
 -   **Definer formatet for kostarket.** Det brukerdefinerte formatet for et kostark identifiserer segmenteringen av kostnader som består av en produsert vares kostnader for solgte varer. Varens informasjon om solgte varers kost kan for eksempel segmenteres i materialer, arbeid og indirekte kostnader basert på kostgrupper. Disse kostnadsgruppene er tilordnet til varer, kostnadskategorier for rutingoperasjoner og formler for beregning av indirekte kostnader. Formatet for kostarket krever vanligvis midlertidige totaler når flere kostgrupper er definert. For eksempel samling av flere kostgrupper som tilhører materialet. Definisjonen av et kostarkformat er valgfri, men et kostarkformat må være definert hvis indirekte kostnader skal beregnes.
 -   **Definer grunnlaget for beregning av indirekte kostnader.** Indirekte kostnader gjenspeiler produksjon av indirekte kostnader som er knyttet til produksjon av en produsert vare. En formel for beregning av indirekte kostnader kan uttrykkes som et tillegg eller en sats. Et tillegg representerer en prosent av verdien, mens en sats representerer et beløp per time for en rutingsoperasjon. En kostgruppe definerer grunnlaget for beregningsformelen, for eksempel et 100 prosent tillegg for en kostgruppe for en arbeidskostgruppe eller en timespris på NOK 250,00 for en maskinkostgruppe. Hvis du vil definere en beregningsformel og kostgruppegrunnlaget, krever kostarkoppsettet identifikasjon av kostgruppen som representerer de indirekte kostnadene og valget av et tillegg eller en sats.
 
-Hver beregningsformel må angis som en kostnadspost. Kostnadsposten består av en angitt kostnadsversjon, en tilleggsprosent, eller et satsbeløp, kostgruppegrunnlaget, en status og en gyldighetsdato. Når en kostnadspost angis først, har den statusen **Uavsluttet** og en effektiv dato. Når du aktiverer kostnadsposten, oppdateres statusen Aktiv, slik at posten er den gjeldende aktive posten, og den effektive datoen oppdateres til aktiveringsdatoen. Kostnadsposten kan også angi et område for en beregningsformel for et bestemt område. Alternativt kan du la **Område** -feltet stå tomt for å angi at beregningsformelen er en formel for hele firmaet. Kostnadsposten kan også bestå av en angitt vare eller varegruppe når beregningsformelen er merket som en per vare-formel. 
+Hver beregningsformel må angis som en kostnadspost. Kostnadsposten består av en angitt kostnadsversjon, en tilleggsprosent, eller et satsbeløp, kostgruppegrunnlaget, en status og en gyldighetsdato. Når en kostnadspost angis først, har den statusen **Uavsluttet** og en effektiv dato. Når du aktiverer kostnadsposten, oppdateres statusen Aktiv, slik at posten er den gjeldende aktive posten, og den effektive datoen oppdateres til aktiveringsdatoen. Kostnadsposten kan også angi et område for en beregningsformel for et bestemt område. Alternativt kan du la **Område**-feltet stå tomt for å angi at beregningsformelen er en formel for hele firmaet. Kostnadsposten kan også bestå av en angitt vare eller varegruppe når beregningsformelen er merket som en per vare-formel. 
 
 Gjeldende aktive kostnadsposter for beregningsformler for indirekte kostnader, brukes til å estimere produksjonsordrekostnader. De brukes også til å beregne faktiske kostnader som er relatert til faktisk forbruk av tid og materialer. Poster for uavsluttet kostnad brukes i stykklisteberegninger for en fremtidig dato. 
 
@@ -44,7 +44,7 @@ To blokkeringspolicyer for en kostnadsversjon fastslår om uavsluttede kostnader
 
 Når du har definert kostarkformatet og beregninger for indirekte kostnader, må du utføre et eget trinn for å validere og lagre informasjonen. Kostarket representerer et firmaformat for å vise informasjon om kostnadene for solgte varer på en konsekvent måte. 
 
-Kostarket vises som en del av siden **Beregn varekostnad** . Kostarket kan vises for en produsert vares beregnede kostnadspost på **Varepris** -siden, eller for en ordrespesifikk beregningspost på siden **Resultater for stykklisteberegning**  Det kan også vises som en del av **Prisberegning** -siden for en produksjonsordre.
+Kostarket vises som en del av siden **Beregn varekostnad**. Kostarket kan vises for en produsert vares beregnede kostnadspost på **Varepris**-siden, eller for en ordrespesifikk beregningspost på siden **Resultater for stykklisteberegning**  Det kan også vises som en del av **Prisberegning**-siden for en produksjonsordre.
 
 
 

@@ -16,24 +16,24 @@ ms.author: johanho
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: Release 10.0.15
 ms.openlocfilehash: 40c6794fdf25da44a75aba4a502a89966c0ec4d0
-ms.sourcegitcommit: 9dd2d38e76d4d93171315ec319e6ce7d51d4e6c7
+ms.sourcegitcommit: f27f5d07c040bdca1bcd616f5d3f2320d3b3337e
 ms.translationtype: HT
 ms.contentlocale: nb-NO
 ms.lasthandoff: 10/15/2020
-ms.locfileid: "4012497"
+ms.locfileid: "4434718"
 ---
 # <a name="how-workers-use-the-production-floor-execution-interface"></a>Hvordan arbeidere bruker grensesnittet for produksjonsutførelse
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-Grensesnittet for produksjonsutførelse er optimalisert for berøringsinteraksjon. Utformingen gir visuell kontrast som oppfyller tilgjengelighetskravene for Shop Floor-miljøer. Den har alle de samme funksjonene som jobbkortenheten. Det gjør imidlertid også at flere jobber kan startes parallelt fra en jobbliste. (Denne funksjonen er også kjent som *bunting av jobber* ). I tillegg kan arbeidere fra en jobbliste åpne en veiledning som ble opprettet i Microsoft Dynamics 365-veiledningen. På denne måten kan de finne en visuell veiledning i en HoloLens.
+Grensesnittet for produksjonsutførelse er optimalisert for berøringsinteraksjon. Utformingen gir visuell kontrast som oppfyller tilgjengelighetskravene for Shop Floor-miljøer. Den har alle de samme funksjonene som jobbkortenheten. Det gjør imidlertid også at flere jobber kan startes parallelt fra en jobbliste. (Denne funksjonen er også kjent som *bunting av jobber*). I tillegg kan arbeidere fra en jobbliste åpne en veiledning som ble opprettet i Microsoft Dynamics 365-veiledningen. På denne måten kan de finne en visuell veiledning i en HoloLens.
 
 ## <a name="sign-in-to-the-production-floor-execution-interface-as-a-worker"></a>Logge på grensesnittet for produksjonsutførelse som en arbeider
 
 Før arbeidere kan begynne å bruke enheten, må en leder eller teknisk stab forberede den og åpne den riktige siden i Dynamics 365 Supply Chain Management. Hvis du vil ha mer informasjon om hvordan du definerer enheten, kan du se [Definere en enhet for å kjøre grensesnittet for produksjonsutførelse](production-floor-execution-setup.md).
 
-Når enheten er forberedt, vises påloggingssiden på den. Denne siden viser informasjon om statusen for jobber for den lokale arbeidscellen. Denne informasjonen oppdateres med jevne mellomrom. På siden bruker arbeidere kort-IDer til å logge på. Selv om arbeidere ikke trenger å ha en brukerkonto for Supply Chain Management, må de ha en *tidregistrert arbeider* -konto de kan bruke når de logger på.
+Når enheten er forberedt, vises påloggingssiden på den. Denne siden viser informasjon om statusen for jobber for den lokale arbeidscellen. Denne informasjonen oppdateres med jevne mellomrom. På siden bruker arbeidere kort-IDer til å logge på. Selv om arbeidere ikke trenger å ha en brukerkonto for Supply Chain Management, må de ha en *tidregistrert arbeider*-konto de kan bruke når de logger på.
 
 ![Påloggingsside for grensesnittet for produksjonsutførelse](media/pfei-sign-in-page.png "Påloggingsside for grensesnittet for produksjonsutførelse")
 
@@ -41,7 +41,7 @@ De gjenværende delene i dette emnet beskriver hvordan arbeiderne samhandler med
 
 ## <a name="all-jobs-tab"></a>Kategorien Alle jobber
 
-Kategorien **Alle jobber** inneholder en jobbliste som viser alle produksjonsjobbene som har statusen *Ikke startet* , *Stoppet* eller *Startet*.
+Kategorien **Alle jobber** inneholder en jobbliste som viser alle produksjonsjobbene som har statusen *Ikke startet*, *Stoppet* eller *Startet*.
 
 ![Kategorien Alle jobber](media/pfei-all-jobs-tab.png "Kategorien Alle jobber")
 
@@ -62,7 +62,7 @@ Jobblisten inneholder følgende kolonner: (Tallene samsvarer med de tallene i de
 
 ![Aktive jobber-kategorien](media/pfei-active-jobs-tab.png "Aktive jobber-kategorien")
 
-Jobblisten i **Aktive jobber** -kategorien har følgende kolonner:
+Jobblisten i **Aktive jobber**-kategorien har følgende kolonner:
 
 - **Velgerkolonne** – kolonnen lengst til venstre bruker hakemerker for å angi jobber som er valgt av arbeideren. Arbeidere kan velge flere jobber i listen samtidig. Hvis du vil velge alle jobbene i listen, merker du av i kolonneoverskriften. Når en enkelt jobb er valgt, vises detaljer om denne jobben i den nedre delen av siden.
 - **Ordre** – denne kolonnen viser produksjonsordrenummeret for en jobb.
@@ -75,29 +75,29 @@ Jobblisten i **Aktive jobber** -kategorien har følgende kolonner:
 
 ## <a name="starting-and-completing-production-jobs"></a>Starte og fullføre produksjonsjobber
 
-Arbeidere starter en produksjonsjobb ved å velge en jobb i **Alle jobber** -kategorien og deretter velge **Start jobb** for å åpne **Start jobb** -dialogboksen.
+Arbeidere starter en produksjonsjobb ved å velge en jobb i **Alle jobber**-kategorien og deretter velge **Start jobb** for å åpne **Start jobb**-dialogboksen.
 
 ![Dialogboksen Start jobb](media/pfei-start-job-dialog.png "Dialogboksen Start jobb")
 
-Arbeidere bruker **Start jobb** -dialogboksen til å bekrefte produksjonsantallet, og starter deretter jobben. Arbeidere kan justere antallet ved å merke av i **Antall** -feltet og deretter bruke det numeriske tastaturet som vises. Arbeidere velger deretter **Start** for å begynne å arbeide på jobben. Dialogboksen **Start jobb** lukkes, og jobben legges til i kategorien **Aktive jobber**.
+Arbeidere bruker **Start jobb**-dialogboksen til å bekrefte produksjonsantallet, og starter deretter jobben. Arbeidere kan justere antallet ved å merke av i **Antall**-feltet og deretter bruke det numeriske tastaturet som vises. Arbeidere velger deretter **Start** for å begynne å arbeide på jobben. Dialogboksen **Start jobb** lukkes, og jobben legges til i kategorien **Aktive jobber**.
 
-Arbeidere kan starte en jobb som har en hvilken som helst status. Når en arbeider starter en jobb som har statusen *ikke startet* , vises **Antall** -feltet i dialogboksen **Start jobb** først hele antallet. Når en arbeider starter en jobb som har statusen *Startet* eller *Stoppet* viser **Antall** -feltet først restantallet.
+Arbeidere kan starte en jobb som har en hvilken som helst status. Når en arbeider starter en jobb som har statusen *ikke startet*, vises **Antall**-feltet i dialogboksen **Start jobb** først hele antallet. Når en arbeider starter en jobb som har statusen *Startet* eller *Stoppet* viser **Antall**-feltet først restantallet.
 
 ## <a name="reporting-good-quantities"></a>Rapportere korrekte antall
 
-Når en arbeider fullfører eller delvis fullfører en jobb, kan de rapportere korrekte antall som ble produsert ved å velge en jobb i kategorien **Aktive jobber** og deretter velge **Rapportfremdrift**. I dialogboksen **Rapportfremdrift** angir arbeideren deretter det korrekte antallet ved hjelp av det numeriske tastaturet. Antallet er tomt som standard. Når et antall er angitt, kan arbeideren oppdatere statusen for jobben til *pågår* , *stoppet* eller *fullført*.
+Når en arbeider fullfører eller delvis fullfører en jobb, kan de rapportere korrekte antall som ble produsert ved å velge en jobb i kategorien **Aktive jobber** og deretter velge **Rapportfremdrift**. I dialogboksen **Rapportfremdrift** angir arbeideren deretter det korrekte antallet ved hjelp av det numeriske tastaturet. Antallet er tomt som standard. Når et antall er angitt, kan arbeideren oppdatere statusen for jobben til *pågår*, *stoppet* eller *fullført*.
 
 ![Dialogboksen Rapportfremdrift](media/pfei-report-progress-dialog.png "Dialogboksen Rapportfremdrift")
 
 ## <a name="reporting-scrap"></a>Rapportere svinn
 
-Når en arbeider fullfører eller delvis fullfører en jobb, kan de rapportere svinn som ble produsert ved å velge en jobb i kategorien **Aktive jobber** og deretter velge **Rapportere svinn**. I dialogboksen **Rapportere svinn** angir arbeideren deretter svinnantall ved hjelp av det numeriske tastaturet. Arbeideren velger også en årsak ( *ingen* , *maskin* , *operatør* eller *materiale* ).
+Når en arbeider fullfører eller delvis fullfører en jobb, kan de rapportere svinn som ble produsert ved å velge en jobb i kategorien **Aktive jobber** og deretter velge **Rapportere svinn**. I dialogboksen **Rapportere svinn** angir arbeideren deretter svinnantall ved hjelp av det numeriske tastaturet. Arbeideren velger også en årsak (*ingen*, *maskin*, *operatør* eller *materiale*).
 
 ![Dialogboksen Rapportere svinn](media/pfei-report-scrap-dialog.png "Dialogboksen Rapportere svinn")
 
 ## <a name="completing-a-job-and-starting-a-new-job"></a>Fullføre en jobb og starte en ny jobb
 
-Vanligvis fullfører arbeidere en jobb ved å velge én eller flere gjeldende jobber i kategorien **Aktive jobber** og deretter velge **Rapportfremdrift**. Deretter angir du antallet som ble produsert (korrekt antall), og setter statusen til *Fullført*. Hvis mer enn én jobb ble valgt, bruker en arbeider **Forrige** - og **Neste** -knappene til å flytte mellom dem. For å starte en ny jobb velger arbeideren den i kategorien **Alle jobber** og velger deretter **Start jobb**.
+Vanligvis fullfører arbeidere en jobb ved å velge én eller flere gjeldende jobber i kategorien **Aktive jobber** og deretter velge **Rapportfremdrift**. Deretter angir du antallet som ble produsert (korrekt antall), og setter statusen til *Fullført*. Hvis mer enn én jobb ble valgt, bruker en arbeider **Forrige** - og **Neste**-knappene til å flytte mellom dem. For å starte en ny jobb velger arbeideren den i kategorien **Alle jobber** og velger deretter **Start jobb**.
 
 En arbeider kan også starte en ny jobb mens den forrige jobben fremdeles er åpen. Igjen velger arbeideren den nye jobben i kategorien **Alle jobber** og velger deretter **Start jobb**. I dette tilfellet informerer imidlertid dialogboksen **Start jobb** arbeideren om at de for øyeblikket arbeider med en jobb, og de må derfor enten stoppe eller fullføre denne jobben før de starter den nye jobben.
 
@@ -119,8 +119,8 @@ Indirekte aktiviteter er aktiviteter som ikke er direkte knyttet til en produksj
 
 For eksempel Shannon, en produksjonsarbeider hos Contoso, vil delta på et firmamøte, og møter regnes som en indirekte aktivitet. Et av følgende to scenarioer gjelder:
 
-- **Shannon arbeider på én eller flere aktive jobber.** Shannon velger **Aktivitet** , identifiserer aktiviteten (møtet) og bekrefter valget. En melding som vises, informerer henne om at hun har pågående jobber. Fra meldingen kan Shannon velge å fullføre eller stoppe jobbene som hun arbeider med før hun går til møtet.
-- **Shannon har ingen aktive jobber.** Shannon velger **Aktivitet** , identifiserer aktiviteten (møtet) og bekrefter valget. Hun er nå registrert som å være på møtet.
+- **Shannon arbeider på én eller flere aktive jobber.** Shannon velger **Aktivitet**, identifiserer aktiviteten (møtet) og bekrefter valget. En melding som vises, informerer henne om at hun har pågående jobber. Fra meldingen kan Shannon velge å fullføre eller stoppe jobbene som hun arbeider med før hun går til møtet.
+- **Shannon har ingen aktive jobber.** Shannon velger **Aktivitet**, identifiserer aktiviteten (møtet) og bekrefter valget. Hun er nå registrert som å være på møtet.
 
 I begge scenarioene, etter at Shannon bekrefter sitt valg, går hun enten til påloggingssiden eller en side som venter på at hun skal bekrefte at hun har returnert fra den indirekte aktiviteten. Hvilken side som vises, er avhengig av konfigurasjonen av grensesnittet for produksjonsutførelse. (Hvis du vil ha mer informasjon, kan du se [Konfigurere grensesnittet for produksjonsutførelse](production-floor-execution-configure.md).)
 

@@ -4,7 +4,7 @@ description: Dette emnet gir en oversikt over funksjonaliteten som inneholder nu
 author: GarmMSFT
 manager: tfehr
 ms.date: 06/10/2020
-ms.topic: configure-number-sequence-extensions
+ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-06-10
 ms.dyn365.ops.version: 10.0.2
-ms.openlocfilehash: cee5047a8c80aa850d9dd1bb872188a822ba8328
-ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
+ms.openlocfilehash: e6faab834b4c1c514bcc23a59d74e2bd0e069754
+ms.sourcegitcommit: a26e4963d40796da21ce6581cfb2f4d9db4f6776
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4016131"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "4434850"
 ---
 # <a name="configure-number-sequences-for-warehouse-flows"></a>Konfigurer nummerserier for lagerflyter
 
@@ -64,7 +64,7 @@ Følg denne fremgangsmåten for å definere nummerserieutvidelser i systemet.
     Hvis du vil ha mer informasjon om hvordan du tilpasser disse standard nummerseriene og/eller legger til nye sekvenser, kan du se neste del. Du kan også fjerne noen av disse sekvensene hvis du ikke trenger dem.
 
 1. Gå tilbake til **Lagerstyring \> Oppsett \> Lagerstyringsparametere**.
-1. I kategorien **Nummerserier** velger du en relevant nummerserieutvidelse som skal brukes til å generere numre for lisensplate-IDer, bølgeIDer, container-IDer (i dette tilfellet velge riktig **SSCC-18-nummer** -serie) og/eller Bol-IDer (i dette tilfellet velger du **BOL** -sekvensen). Som standard støttes nummerserieutvidelser bare for disse fire typene av IDer.
+1. I kategorien **Nummerserier** velger du en relevant nummerserieutvidelse som skal brukes til å generere numre for lisensplate-IDer, bølgeIDer, container-IDer (i dette tilfellet velge riktig **SSCC-18-nummer**-serie) og/eller Bol-IDer (i dette tilfellet velger du **BOL**-sekvensen). Som standard støttes nummerserieutvidelser bare for disse fire typene av IDer.
 
 Neste gang et nytt nummer genereres for en av disse nummerseriene, blir den nye logikken brukt.
 
@@ -79,16 +79,16 @@ Følg denne fremgangsmåten for å opprette og redigere nummerserier.
 
 1. Gå til **Lagerstyring** \> **Oppsett** \> **Nummerserieutvidelser**.
 1. Velg **Ny** i handlingsruten.
-1. I feltet **Nummerserieutvidelser** angir du et navn på den nye sekvensen. Angi en beskrivelse i **Beskrivelse** -feltet.
-1. I hurtigfanen **Segmenter** bruker du knappene på verktøylinjen til å sette inn nummereringsformatet ved å legge til, slette og ordne segmenter. I **Segment** -feltet for hver rad tilordner du en segmenttype for å definere formålet med og innholdet i segmentet. Tabellen nedenfor inneholder en beskrivelse av typer segmenter som er tilgjengelige.
+1. I feltet **Nummerserieutvidelser** angir du et navn på den nye sekvensen. Angi en beskrivelse i **Beskrivelse**-feltet.
+1. I hurtigfanen **Segmenter** bruker du knappene på verktøylinjen til å sette inn nummereringsformatet ved å legge til, slette og ordne segmenter. I **Segment**-feltet for hver rad tilordner du en segmenttype for å definere formålet med og innholdet i segmentet. Tabellen nedenfor inneholder en beskrivelse av typer segmenter som er tilgjengelige.
 
     | Segmenttype | beskrivelse |
     |---|---|
-    | Konstant | Denne segmenttypen legger til samme konstanttekst for hvert genererte tall i sekvensen. I **Verdi** -feltet legger du inn teksten som kreves. **Lengde** -feltet oppdateres automatisk til lengden på teksten du har angitt i **Verdi** -feltet. |
-    | Nummerserie | I **Verdi** -feltet angir du et nummertegn ( *\#* ) for hvert tegn som skal vises i den genererte rekkefølgen. Selve nummerserien kan generere lengre numre, men bare tegn som er lengst til høyre, vil bli vist. **Lengde** -feltet oppdateres automatisk til antall nummertegn du har angitt i **Verdi** -feltet.<p>Hvis du vil overholde GS1-kravene for SSCC-18-numre, må du kontrollere at lengden på dette segmentet er 16 minus lengden på GS1-prefikset.</p> |
-    | GS1-prefiks | Denne segmenttypen legger til verdien som er angitt i feltet **GS1-firmaprefiks** på siden for **Lagerstyringsparametere**. **Verdi** -feltet viser verdien som er angitt på siden **Lagerstyringsparametere** , og feltet **Lengde** viser antall tegn i verdien. Både **Verdi** -feltet og **Lengde** -feltet er skrivebeskyttet. |
-    | Program-ID | I **Verdi** -feltet angir du en programidentifikatoren, som angitt av den relevante GS1-policyen for denne typen nummerserie. Skriv for eksempel *00* for SSCC eller *420* for BOL. **Lengde** -feltet oppdateres automatisk til lengden på identifikatoren du har angitt i **Verdi** -feltet. |
-    | Emballasjetype | For varer som kan identifiseres tydelig, legger denne segmenttypen til en feltverdi fra den aktuelle enhetsseriegruppen (fra siden **Sekvensgrupper for enhet** ). (Denne virkemåten samsvarer med den eksisterende logikken for nummerskilt-IDer.) For lisensplater som inneholder flere lagerenheter (SKUer), legger denne segmenttypen til *0* (null) som standard. For denne segmenttypen er feltet **Verdi** alltid satt til *P* , og feltet **Lengde** alltid satt til *1*.|
-    | Kontrollsiffer | Denne segmenttypen legger til et kontrollsiffer, som er en modulus 10-beregning. (Denne virkemåten samsvarer med den eksisterende logikken for nummerskilt-IDer.) For denne segmenttypen er **Verdi** -feltet alltid satt til et cirkumflekstegn ( *^* ), og **Lengde** -feltet er alltid satt til *1*. |
+    | Konstant | Denne segmenttypen legger til samme konstanttekst for hvert genererte tall i sekvensen. I **Verdi**-feltet legger du inn teksten som kreves. **Lengde**-feltet oppdateres automatisk til lengden på teksten du har angitt i **Verdi**-feltet. |
+    | Nummerserie | I **Verdi**-feltet angir du et nummertegn (*\#*) for hvert tegn som skal vises i den genererte rekkefølgen. Selve nummerserien kan generere lengre numre, men bare tegn som er lengst til høyre, vil bli vist. **Lengde**-feltet oppdateres automatisk til antall nummertegn du har angitt i **Verdi**-feltet.<p>Hvis du vil overholde GS1-kravene for SSCC-18-numre, må du kontrollere at lengden på dette segmentet er 16 minus lengden på GS1-prefikset.</p> |
+    | GS1-prefiks | Denne segmenttypen legger til verdien som er angitt i feltet **GS1-firmaprefiks** på siden for **Lagerstyringsparametere**. **Verdi**-feltet viser verdien som er angitt på siden **Lagerstyringsparametere**, og feltet **Lengde** viser antall tegn i verdien. Både **Verdi**-feltet og **Lengde**-feltet er skrivebeskyttet. |
+    | Program-ID | I **Verdi**-feltet angir du en programidentifikatoren, som angitt av den relevante GS1-policyen for denne typen nummerserie. Skriv for eksempel *00* for SSCC eller *420* for BOL. **Lengde**-feltet oppdateres automatisk til lengden på identifikatoren du har angitt i **Verdi**-feltet. |
+    | Emballasjetype | For varer som kan identifiseres tydelig, legger denne segmenttypen til en feltverdi fra den aktuelle enhetsseriegruppen (fra siden **Sekvensgrupper for enhet**). (Denne virkemåten samsvarer med den eksisterende logikken for nummerskilt-IDer.) For lisensplater som inneholder flere lagerenheter (SKUer), legger denne segmenttypen til *0* (null) som standard. For denne segmenttypen er feltet **Verdi** alltid satt til *P*, og feltet **Lengde** alltid satt til *1*.|
+    | Kontrollsiffer | Denne segmenttypen legger til et kontrollsiffer, som er en modulus 10-beregning. (Denne virkemåten samsvarer med den eksisterende logikken for nummerskilt-IDer.) For denne segmenttypen er **Verdi**-feltet alltid satt til et cirkumflekstegn (*^*), og **Lengde**-feltet er alltid satt til *1*. |
 
-1. Hvis du vil vise et eksempel på det endelige tallformatet, kontrollerer du **Format** -feltet nederst i hurtigfanen **Segmenter**.
+1. Hvis du vil vise et eksempel på det endelige tallformatet, kontrollerer du **Format**-feltet nederst i hurtigfanen **Segmenter**.

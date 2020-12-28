@@ -17,11 +17,11 @@ ms.author: damadipa
 ms.search.validFrom: 2020-08-03
 ms.dyn365.ops.version: Release 10.0.13
 ms.openlocfilehash: d7184f14ab67d646451c8c2b1313336d47e59316
-ms.sourcegitcommit: e3f4dd2257a3255c2982f4fc7b72a1121275b88a
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: nb-NO
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4018313"
+ms.locfileid: "4434839"
 ---
 # <a name="purchasing-cxml-enhancements"></a>Kjøp av cXML-forbedringer
 
@@ -31,7 +31,7 @@ Funksjonen _Kjøp av cXML-forbedringer_ bygger på den [eksisterende eksterne ka
 
 ## <a name="turn-on-the-purchasing-cxml-enhancements-feature"></a>Slå på funksjonen Kjøp av cXML-forbedringer
 
-Du aktiverer funksjonen ved å åpne **[Funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)** -siden og søke etter funksjonen som heter *Kjøp av cXML-forbedringer*. Velg funksjonen, og velg deretter **Aktiver nå** for å slå den på.
+Du aktiverer funksjonen ved å åpne **[Funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)**-siden og søke etter funksjonen som heter *Kjøp av cXML-forbedringer*. Velg funksjonen, og velg deretter **Aktiver nå** for å slå den på.
 
 Når du har aktivert funksjonen, bør du konfigurere innstillingene i følgende tre områder:
 
@@ -51,7 +51,7 @@ Bruk siden for **cXML-parametere** til å gjøre noen globale innstillinger som 
 
 ![side for parametere for cXML](media/cxml-parameters.png "Side for parametere for cXML")
 
-Gå til **Innkjøp og leverandører \> Oppsett \> cXML-behandling \> cXML-parametere** , og angi følgende parametere:
+Gå til **Innkjøp og leverandører \> Oppsett \> cXML-behandling \> cXML-parametere**, og angi følgende parametere:
 
 - **Testmodus for cXML** – Denne globale parameteren påvirker hvordan bestillinger sendes fysisk fra den satsvise jobben. Velg én av følgende verdier:
 
@@ -65,10 +65,10 @@ Gå til **Innkjøp og leverandører \> Oppsett \> cXML-behandling \> cXML-parame
 
 ## <a name="set-up-vendor-purchase-orders-to-use-cxml"></a><a name="vendor-setup"></a>Definere leverandørbestillinger som skal bruke cXML
 
-Hver gang du bekrefter at en bestilling der alternativet **Send bestilling via cXML** er satt til _Ja_ , genererer systemet automatisk cXML-meldingen og leverer den til leverandøren som er knyttet til bestillingen. Det finnes to måter å styre dette alternativet for bestillingene på:
+Hver gang du bekrefter at en bestilling der alternativet **Send bestilling via cXML** er satt til _Ja_, genererer systemet automatisk cXML-meldingen og leverer den til leverandøren som er knyttet til bestillingen. Det finnes to måter å styre dette alternativet for bestillingene på:
 
 - Hvis du vil definere en leverandør, slik at den automatisk bruker cXML for alle nye bestillinger som opprettes fra en rekvisisjon, går du til **Innkjøp og leverandører \> Leverandører \> Alle leverandører** og velger eller oppretter en leverandør for å åpne detaljsiden. På hurtigfanen **Bestillingsstandarder** setter du deretter alternativet **Send bestilling via cXML** til _Ja_. Hvis cXML også automatisk skal brukes for nye bestillinger som **ikke** er opprettet fra en rekvisisjon, må du også sette bestillingsegenskapen **ENABLEMANUALPO** til _Sann_ for den tilknyttede eksterne katalogen, som beskrevet i delen [Angi bestillingsegenskaper](#set-order-properties) senere i dette emnet.
-- For individuelle bestillinger går du til **Innkjøp og leverandører \> Bestillinger \> Alle bestillinger** og velger eller oppretter en bestilling for å åpne detaljsiden. Bytt til visningen **Hode** og deretter, i hurtigfanen **Oppsett** , angir du alternativet **Send bestilling via cXML** etter behov.
+- For individuelle bestillinger går du til **Innkjøp og leverandører \> Bestillinger \> Alle bestillinger** og velger eller oppretter en bestilling for å åpne detaljsiden. Bytt til visningen **Hode** og deretter, i hurtigfanen **Oppsett**, angir du alternativet **Send bestilling via cXML** etter behov.
 
 ![Standardinnstillinger for leverandørbestillinger](media/cxml-order-defaults.png "Standardinnstillinger for leverandørbestillinger")
 
@@ -100,8 +100,8 @@ Hver gang du legger til én eller flere egenskaper i rutenettet, bruker du kolon
 Bruk standardegenskapene på følgende måte:
 
 - **BUYER\_COOKIE** – Dette sporingsfeltet kan brukes til å angi bestemt informasjon for selskapet. Med mindre du har en avtale med leverandøren om hvordan denne egenskapen brukes, har den ikke så mye betydning når det sendes en bestilling. Derfor bør du sette den til en enkel verdi.
-- **DELIVERTO** – Når leveringsadressen angis i dokumentet fra bestillingen, brukes feltet **Kontaktinformasjon** til å angi **DeliverTo** -feltet i XML-meldingen. Hvis du krever at denne verdien er et navn på en forespørsel, og du angir bestiller-feltet i bestillings hodet, angir du en verdi _REQUESTER_ for denne egenskapen, slik at navnet på anmoderen blir angitt i **DeliverTo** -feltet i XML. I dette tilfellet kommer den primære e-postadressen og telefonnummeret som brukes, fra bestilleren i stedet for ordren.
-- **DEPLOYMENTMODE** – Angi denne egenskapen i henhold til leverandørs krav. Verdiene er vanligvis _PRODUCTION_ eller _TEST_. Angi verdien basert på din kommunikasjon med leverandøren. Vanligvis må den samsvare med det tiltenkte systemet bak **ORDERCHECKURL** -verdien som leverandøren angir som en test eller et produksjonssystem.
+- **DELIVERTO** – Når leveringsadressen angis i dokumentet fra bestillingen, brukes feltet **Kontaktinformasjon** til å angi **DeliverTo**-feltet i XML-meldingen. Hvis du krever at denne verdien er et navn på en forespørsel, og du angir bestiller-feltet i bestillings hodet, angir du en verdi _REQUESTER_ for denne egenskapen, slik at navnet på anmoderen blir angitt i **DeliverTo**-feltet i XML. I dette tilfellet kommer den primære e-postadressen og telefonnummeret som brukes, fra bestilleren i stedet for ordren.
+- **DEPLOYMENTMODE** – Angi denne egenskapen i henhold til leverandørs krav. Verdiene er vanligvis _PRODUCTION_ eller _TEST_. Angi verdien basert på din kommunikasjon med leverandøren. Vanligvis må den samsvare med det tiltenkte systemet bak **ORDERCHECKURL**-verdien som leverandøren angir som en test eller et produksjonssystem.
 - **FIXEDBILLADDRESSID** – Når feltet **addressID** i XML-meldingen er angitt, henter det lokasjonen som er angitt for adressen. Hvis ID-verdien du har kommunisert til leverandøren, er forskjellig fra verdien på adresselokasjonen av en eller annen grunn, kan du tvinge frem en overstyring ved å angi verdien her. Det antas at du bare vil bruke én adresse hos leverandøren, og at adressen er satt opp i leverandørens system. Faktureringsadressen er den viktigste faktura adressen som er angitt for den juridiske enheten i Supply Chain Management.
 - **FIXEDSHIPADDRESSID** – Når feltet **addressID** i XML-meldingen er angitt, henter det lokasjonen som er angitt for adressen. Hvis ID-verdien du har kommunisert til leverandøren, er forskjellig fra verdien på adresselokasjonen av en eller annen grunn, kan du tvinge frem en overstyring ved å angi verdien her. Det antas at du bare vil bruke én adresse hos leverandøren, og at adressen er satt opp i leverandørens system. Forsendelsesadressen er adressen som er angitt i hodet i bestillingen. De fleste leverandører godtar bare hodeadresser, ikke linjeadresser. Selv om det er felt for linjeadresser i XML, blir de satt til hodeadressen.
 - **FROM\_DOMAIN** – Angi verdien som brukes til å sende bestillingsdokumenter. Denne verdien oppgis av leverandøren.
@@ -117,28 +117,28 @@ Bruk standardegenskapene på følgende måte:
 - **USERAGENT** – Angi en verdi som identifiserer systemet du bruker. Skriv for eksempel inn _Dynamics 365 Supply Chain Management_.
 - **VERSION** – Angi et cXML-versjonsnummer hvis leverandøren ber om denne informasjonen. Standardversjonen er *1.2.008*. Denne versjonen er stabil og godtas av de fleste leverandører.
 - **RESPONSETEXT** – Angi eventuell egendefinert tekst som du forventer at leverandøren skal returnere i cXML-svarmeldingen etter at ordren er sendt. På denne måten kan systemet merke meldingen som _Bekreftet_. Hvis svaret ikke samsvarer med standardtekst eller kundeteksten du angir her, blir forespørselen merket som _Feil_.
-- **RESPONSETEXTSUB** – Sett denne egenskapen til _TRUE_ hvis du vil søke i leverandørsvarteksten for verdiene som er angitt i **RESPONSETEXT** -feltet. Leverandøren kan for eksempel returnere en lang streng som inneholder "OK" i svaret. I dette tilfellet kan du angi _OK_ i feltet **RESPONSETEXT** og angi **RESPONSETESTSUB** til _TRUE_ for å søke etter "OK" hvor som helst i svaret. Ordren kan deretter settes til _Bekreftet_.
+- **RESPONSETEXTSUB** – Sett denne egenskapen til _TRUE_ hvis du vil søke i leverandørsvarteksten for verdiene som er angitt i **RESPONSETEXT**-feltet. Leverandøren kan for eksempel returnere en lang streng som inneholder "OK" i svaret. I dette tilfellet kan du angi _OK_ i feltet **RESPONSETEXT** og angi **RESPONSETESTSUB** til _TRUE_ for å søke etter "OK" hvor som helst i svaret. Ordren kan deretter settes til _Bekreftet_.
 - **CONTENTTYPE** – I et typisk katalogoppsett trenger du ikke å angi denne egenskapen. Hvis du mottar en server 500-feil fra leverandørens system når du sender en bestilling, kan du teste ved å sette denne egenskapen til _FALSE_. Denne verdien vil endre en innstilling i webforespørselen, og kan føre til at meldingen sendes for enkelte plattformer.
-- **ENABLEHEADERS** – Sett denne egenskapen til _TRUE_ for å sende hoder sammen med bestillingen. Du må bare angi denne egenskapen hvis leverandøren krever det. Hvis du setter denne egenskapen til _TRUE_ , legger du til ekstra egendefinerte egenskaper som er basert på navnene som leverandøren gir, og du kan starte dem med _H\__. Vanlige eksempler er **H\_USERID** , **H\_PASSWORD** , **H\_RECEIVERID** og **H\_ACTIONREQUEST**. Følgende egendefinerte egenskaper er inkludert i standardegenskapene:
+- **ENABLEHEADERS** – Sett denne egenskapen til _TRUE_ for å sende hoder sammen med bestillingen. Du må bare angi denne egenskapen hvis leverandøren krever det. Hvis du setter denne egenskapen til _TRUE_, legger du til ekstra egendefinerte egenskaper som er basert på navnene som leverandøren gir, og du kan starte dem med _H\__. Vanlige eksempler er **H\_USERID**, **H\_PASSWORD**, **H\_RECEIVERID** og **H\_ACTIONREQUEST**. Følgende egendefinerte egenskaper er inkludert i standardegenskapene:
 
     - **H\_USERID** – Hvis handelspartneren krever at du sender en bruker-ID som del av URL-adressen for å sende en bestilling, angir du verdien her.
     - **H\_PASSWORD** – Hvis handelspartneren krever at du sender et passord som del av URL-adressen for å sende en bestilling, angir du verdien her.
 
-- **ENABLEMANUALPO** – Hvis denne egenskapen er satt til _TRUE_ , vil disse bestillingene i manuell oppretting av bestillinger (det vil si når de ikke starter fra en rekvisisjon) arve innstillingen for alternativet **Send bestilling via cXML** fra leverandøren. Hvis denne egenskapen ikke er angitt, eller hvis den er satt til _FALSE_ , vil ikke alternativet **Send bestilling via cXML** bli angitt på bestillingshodet for manuelt opprettede bestillinger. For bestillinger som opprettes fra en rekvisisjon, vil innstillingen for alternativet **Send bestilling via cXML** alltid arves fra leverandøren, uavhengig av innstillingen for denne egenskapen. Hvis du vil ha mer informasjon, kan du se delen [Definere leverandørbestillinger som skal bruke cXML](#vendor-setup) tidligere i dette emnet.
-- **PUNCHOUTPOONLY** – Hvis denne egenskapen er satt til _TRUE_ , vil bare innkjøpsrekvisisjonslinjer som er opprettet fra eksternordreprosessen, angi alternativet **Send bestilling via cXML** i bestilingshodet. I tillegg må innkjøpsrekvisisjonslinjetypen for alle linjene i bestillingen være en _Ekstern katalogvare_. Ellers kan ikke cXML-bestillingen opprettes.
-- **PUNCHOUTSHIPTO** – Hvis denne egenskapen er satt til _TRUE_ , legges standardadressen til den juridiske enheten til i forespørselsmeldingen om eksternordreoppsett når brukeren åpner en ekstern katalog. Denne adressen legges til som **ShipTo** -adresse. Leverandører vil bruke **ShipTo** -adressen til å vise prissetting basert på firmalokasjonen.
-- **TRACEPUNCHOUT** – Sett denne egenskapen til _TRUE_ hvis du får en feilmelding når du prøver å bla til en ekstern katalog fra rekvisisjonen. Sporingsinformasjonen fylles deretter ut for **PunchOutSetupRequest** - og **PunchOutResponse** -meldingene som sendes mellom Supply Chain Management og leverandørområdet. Du kan vise denne informasjonen på siden for **meldingslogg for cXML-handlekurv** , som du kan åpne fra siden **Oppsett av ekstern katalog** for leverandørkatalogen som du har problemer med. Du bør bare sette denne egenskapen til _TRUE_ hvis du feilsøker, fordi den oppretter en stor kostnad i databasen for hver eksternordre. Hvis du vil ha mer informasjon, kan du se [Vise meldingsloggen for cXML-handlekurv for ekstern katalog for eksternordre](#message-log) senere i dette emnet.
-- **REPLACENEWLINE** – Sett denne egenskapen til _TRUE_ hvis du får et problem fordi en leverandørs system sender en **PunchOutResponse** -melding som inneholder linjeskifttegn (\\n). Dette problemet kan oppstå hvis leverandørens meldinger analyseres via mellomvare eller en innkjøpshub. Hvis du har et problem med et nytt leverandøroppsett, setter du egenskapen **TRACEPUNCHOUT** til _TRUE_ for å vise **PunchOutResponse** -meldingen og avgjøre om XML-kodene er delt opp med linjeskifttegn.
+- **ENABLEMANUALPO** – Hvis denne egenskapen er satt til _TRUE_, vil disse bestillingene i manuell oppretting av bestillinger (det vil si når de ikke starter fra en rekvisisjon) arve innstillingen for alternativet **Send bestilling via cXML** fra leverandøren. Hvis denne egenskapen ikke er angitt, eller hvis den er satt til _FALSE_, vil ikke alternativet **Send bestilling via cXML** bli angitt på bestillingshodet for manuelt opprettede bestillinger. For bestillinger som opprettes fra en rekvisisjon, vil innstillingen for alternativet **Send bestilling via cXML** alltid arves fra leverandøren, uavhengig av innstillingen for denne egenskapen. Hvis du vil ha mer informasjon, kan du se delen [Definere leverandørbestillinger som skal bruke cXML](#vendor-setup) tidligere i dette emnet.
+- **PUNCHOUTPOONLY** – Hvis denne egenskapen er satt til _TRUE_, vil bare innkjøpsrekvisisjonslinjer som er opprettet fra eksternordreprosessen, angi alternativet **Send bestilling via cXML** i bestilingshodet. I tillegg må innkjøpsrekvisisjonslinjetypen for alle linjene i bestillingen være en _Ekstern katalogvare_. Ellers kan ikke cXML-bestillingen opprettes.
+- **PUNCHOUTSHIPTO** – Hvis denne egenskapen er satt til _TRUE_, legges standardadressen til den juridiske enheten til i forespørselsmeldingen om eksternordreoppsett når brukeren åpner en ekstern katalog. Denne adressen legges til som **ShipTo** -adresse. Leverandører vil bruke **ShipTo**-adressen til å vise prissetting basert på firmalokasjonen.
+- **TRACEPUNCHOUT** – Sett denne egenskapen til _TRUE_ hvis du får en feilmelding når du prøver å bla til en ekstern katalog fra rekvisisjonen. Sporingsinformasjonen fylles deretter ut for **PunchOutSetupRequest**- og **PunchOutResponse**-meldingene som sendes mellom Supply Chain Management og leverandørområdet. Du kan vise denne informasjonen på siden for **meldingslogg for cXML-handlekurv**, som du kan åpne fra siden **Oppsett av ekstern katalog** for leverandørkatalogen som du har problemer med. Du bør bare sette denne egenskapen til _TRUE_ hvis du feilsøker, fordi den oppretter en stor kostnad i databasen for hver eksternordre. Hvis du vil ha mer informasjon, kan du se [Vise meldingsloggen for cXML-handlekurv for ekstern katalog for eksternordre](#message-log) senere i dette emnet.
+- **REPLACENEWLINE** – Sett denne egenskapen til _TRUE_ hvis du får et problem fordi en leverandørs system sender en **PunchOutResponse**-melding som inneholder linjeskifttegn (\\n). Dette problemet kan oppstå hvis leverandørens meldinger analyseres via mellomvare eller en innkjøpshub. Hvis du har et problem med et nytt leverandøroppsett, setter du egenskapen **TRACEPUNCHOUT** til _TRUE_ for å vise **PunchOutResponse**-meldingen og avgjøre om XML-kodene er delt opp med linjeskifttegn.
 - **POCOMMENTS** – Sett denne egenskapen til _TRUE_ hvis du vil at cXML-dokumentet skal ta med merknader som er knyttet til bestillingen i Supply Chain Management. Vedleggsteksten blir tatt med i meldingshodemerknadene i bestillingsmeldingen. Hvis du vil ha mer informasjon om hvordan systemet velger og behandler disse vedleggene, kan du se [Legge ved merknader i en bestilling](#attach-po-notes) senere i dette emnet.
 - **VENDCOMMENTS** – Sett denne egenskapen til _TRUE_ hvis du vil at cXML-dokumentet skal ta med merknader som er knyttet til bestillingen i Supply Chain Management. Vedleggsteksten blir tatt med i meldingshodemerknadene i bestillingsmeldingen. Hvis du vil ha mer informasjon om hvordan systemet velger og behandler disse vedleggene, kan du se [Legge ved merknader i en bestilling](#attach-po-notes).
 - **CLEANAMP** – Sett denne egenskapen til _TRUE_ hvis du får en feilmelding når du prøver å gjøre en eksternordre til en leverandør, og leverandørens retur-URL inneholder uriktig kodede &-tegn (\&).
-- **PUNCHOUTTZ** – Sett denne egenskapen til _TRUE_ hvis leverandøren du arbeider med, bruker International Organization for Standardization (ISO) 8601-standarden til å utføre en bestemt validering av datoen/klokkeslettet for forespørselsmeldingen om eksternordre. Supply Chain Management bruker UTC-datoen (Coordinated Universal Time) i **PunchOutSetupRequest** -meldingen. Når du setter denne egenskapen til _TRUE_ , legges derfor *+00:00* til i dato/klokkeslett-formatet.
-- **WMSADDRESSID** – Sett denne egenskapen til _TRUE_ for å bruke lagernummeret på bestillingshodet som **addressID** -verdien i **ShipTo** -adressen for bestillingsforespørselen som er sendt til leverandøren. Hvis du angir en verdi for **FIXEDSHIPADDRESSID** -egenskapen, prioriteres denne verdien over denne verdien. Du bør derfor bruke én egenskap eller den andre til å angi **addressID** -verdien i **ShipTo** -adressen for dokumentet.
-- **PUNCHOUTSHIPTOUSER** – Denne egenskapen fungerer sammen med **PUNCHOUTSHIPTO** -egenskapen. Hvis **PUNCHOUTSHIPTO** er satt til _TRUE_ , blir adressen til den juridiske enheten hentet. Hvis **PUNCHOUTSHIPTOUSER** er satt til _TRUE_ , brukes primæradressen fra eksternordrebrukeren i stedet for adressen til den juridiske enheten.
+- **PUNCHOUTTZ** – Sett denne egenskapen til _TRUE_ hvis leverandøren du arbeider med, bruker International Organization for Standardization (ISO) 8601-standarden til å utføre en bestemt validering av datoen/klokkeslettet for forespørselsmeldingen om eksternordre. Supply Chain Management bruker UTC-datoen (Coordinated Universal Time) i **PunchOutSetupRequest**-meldingen. Når du setter denne egenskapen til _TRUE_, legges derfor *+00:00* til i dato/klokkeslett-formatet.
+- **WMSADDRESSID** – Sett denne egenskapen til _TRUE_ for å bruke lagernummeret på bestillingshodet som **addressID**-verdien i **ShipTo**-adressen for bestillingsforespørselen som er sendt til leverandøren. Hvis du angir en verdi for **FIXEDSHIPADDRESSID**-egenskapen, prioriteres denne verdien over denne verdien. Du bør derfor bruke én egenskap eller den andre til å angi **addressID**-verdien i **ShipTo**-adressen for dokumentet.
+- **PUNCHOUTSHIPTOUSER** – Denne egenskapen fungerer sammen med **PUNCHOUTSHIPTO**-egenskapen. Hvis **PUNCHOUTSHIPTO** er satt til _TRUE_, blir adressen til den juridiske enheten hentet. Hvis **PUNCHOUTSHIPTOUSER** er satt til _TRUE_, brukes primæradressen fra eksternordrebrukeren i stedet for adressen til den juridiske enheten.
 
 ### <a name="activate-the-external-catalog"></a>Aktivere den eksterne katalogen
 
-Når du er ferdig med å definere alle egenskapene og konfigurere andre innstillinger for den eksterne katalogen, går du tilbake til hurtigfanen **Generelt** på siden **Eksterne kataloger** , og deretter angir du alternativet **Aktiv** til *Ja*.
+Når du er ferdig med å definere alle egenskapene og konfigurere andre innstillinger for den eksterne katalogen, går du tilbake til hurtigfanen **Generelt** på siden **Eksterne kataloger**, og deretter angir du alternativet **Aktiv** til *Ja*.
 
 ### <a name="attach-notes-to-a-purchase-order"></a><a name="attach-po-notes"></a>Knytte merknader til en bestilling
 
@@ -148,7 +148,7 @@ Hvis du vil angi hvilke typer merknader systemet skal se etter, kan du gå til *
 
 ![Skjemaoppsett-siden](media/cxml-form-setup.png "Skjemaoppsett-siden")
 
-Vedlegg blir bare inkludert i en bestilling hvis **Type** -feltet er satt til verdien du velger i feltet **Ta med dokumenter av type** , og hvis **Begrensning** -feltet er satt til _Eksternt_. Hvis du vil opprette, vise eller redigere vedlegg for en bestilling, kan du gå til **Innkjøp og leverandører \> Alle bestillinger** , velge eller opprette en bestilling og deretter velge **Vedlegg** -knappen (bindersikonet) øverst til høyre.
+Vedlegg blir bare inkludert i en bestilling hvis **Type**-feltet er satt til verdien du velger i feltet **Ta med dokumenter av type**, og hvis **Begrensning**-feltet er satt til _Eksternt_. Hvis du vil opprette, vise eller redigere vedlegg for en bestilling, kan du gå til **Innkjøp og leverandører \> Alle bestillinger**, velge eller opprette en bestilling og deretter velge **Vedlegg**-knappen (bindersikonet) øverst til høyre.
 
 ![Tilknyttet merknad som er konfigurert til å sendes til en leverandør](media/cxml-note-to-vendor.png "Tilknyttet merknad som er konfigurert til å sendes til en leverandør")
 
@@ -168,7 +168,7 @@ Bruk følgende fremgangsmåte for å legge til eksterne elementer i en ekstern k
 
 1. Gå til **Innkjøp og leverandører \> Kataloger \> Eksterne kataloger**.
 1. Velg relevant katalog.
-1. På hurtigfanen **Meldingsformat** , i delen **Eksterne** , velger du **Legg til** for å legge til en rad i rutenettet for hvert eksterne element du vil ta med. I hver rad angir du feltene nedenfor:
+1. På hurtigfanen **Meldingsformat**, i delen **Eksterne**, velger du **Legg til** for å legge til en rad i rutenettet for hvert eksterne element du vil ta med. I hver rad angir du feltene nedenfor:
 
     - **Navn** – Angi et navn for elementet. Denne verdien blir verdien for attributtet **name** for XML-elementet **Ekstern** som opprettes av hver rad. Vanligvis arbeider du med leverandøren din for å komme frem til et navn på hvert eksternt element.
     - **Verdi** – Velg en verdi for elementet. Denne verdien blir verdien for XML-elementet som opprettes av hver rad. Følgende verdier er tilgjengelige:
@@ -183,7 +183,7 @@ Bruk følgende fremgangsmåte for å legge til eksterne elementer i en ekstern k
 
 ![Innstillinger for eksternt element](media/cxml-extrinsics.png "Innstillinger for eksternt element")
 
-Brukeren eller administratoren vil ikke se de eksterne elementene fordi de ikke blir lagt til før brukeren utfører en eksternordre. De settes automatisk inn mellom **BuyerCookie** - og **BrowserFromPost** -elementene i forespørselsmeldingen for cXML-oppsett. Derfor trenger du ikke å angi dem manuelt i XML-filen når du konfigurerer den eksterne katalogen.
+Brukeren eller administratoren vil ikke se de eksterne elementene fordi de ikke blir lagt til før brukeren utfører en eksternordre. De settes automatisk inn mellom **BuyerCookie**- og **BrowserFromPost**-elementene i forespørselsmeldingen for cXML-oppsett. Derfor trenger du ikke å angi dem manuelt i XML-filen når du konfigurerer den eksterne katalogen.
 
 ![Eksterne elementer som er lagt til i XML](media/cxml-extrinsics-xml.png "Eksterne elementer som er lagt til i XML")
 
@@ -199,9 +199,9 @@ Når du oppretter en bestilling fra en innkjøpsrekvisisjon som kom fra en ekste
 
 Når du er ferdig med å fylle ut alle detaljene for bestillingen, må du kontrollere at du bekrefter. Ingen melding sendes med mindre bestillingen er bekreftet. For å bekrefte bestillingen går du til handlingsruten i kategorien **Kjøp** i gruppen **Handlinger** og velger **Bekreft**. 
 
-Når bestillingen er bekreftet, kan du vise statusen til bekreftelsen via **Bestillingsbekreftelser** -journalene. På handlingsruten i kategorien **Kjøp** i gruppen **Journaler** velger du gruppen **Bestillingsbekrefter**.
+Når bestillingen er bekreftet, kan du vise statusen til bekreftelsen via **Bestillingsbekreftelser**-journalene. På handlingsruten i kategorien **Kjøp** i gruppen **Journaler** velger du gruppen **Bestillingsbekrefter**.
 
-Hver bestilling kan ha mange bekreftelser. Hver bekreftelse er merket med et trinnvis nummer. I illustrasjonen nedenfor er bestillingen *00000275* , og bekreftelsen er *00000275-1*. Denne nummereringen gjenspeiler standard Supply Chain Management-funksjonalitet, der endringer i en bestilling, og derfor typen cXML-melding som skal sendes til leverandøren, identifiseres basert på bekreftelsen. Som illustrasjonen viser inneholder siden **Bestillingsbekreftelser** også feltene for **sendestatus for bestilling** og **Leverandørstatus for bestillingsforespørsel**. Hvis du vil ha mer informasjon om de ulike statusverdiene som du kanskje vil se på denne siden, kan du se delen [Overvåke bestillingsforespørsler](#monitor-po-requests) senere i dette emnet.
+Hver bestilling kan ha mange bekreftelser. Hver bekreftelse er merket med et trinnvis nummer. I illustrasjonen nedenfor er bestillingen *00000275*, og bekreftelsen er *00000275-1*. Denne nummereringen gjenspeiler standard Supply Chain Management-funksjonalitet, der endringer i en bestilling, og derfor typen cXML-melding som skal sendes til leverandøren, identifiseres basert på bekreftelsen. Som illustrasjonen viser inneholder siden **Bestillingsbekreftelser** også feltene for **sendestatus for bestilling** og **Leverandørstatus for bestillingsforespørsel**. Hvis du vil ha mer informasjon om de ulike statusverdiene som du kanskje vil se på denne siden, kan du se delen [Overvåke bestillingsforespørsler](#monitor-po-requests) senere i dette emnet.
 
 ![Side for bestillingsbekreftelser](media/cxml-po-confirmations.png "Side for bestillingsbekreftelser")
 
@@ -217,7 +217,7 @@ Hvis den satsvise jobben er definert og kjører, vil dokumentet bli sendt. Du ka
 
 ## <a name="schedule-the-purchase-order-request-batch-job"></a><a name="po-batch"></a>Planlegge den satsvise jobben for bestillingsforespørsel
 
-Hvis du vil aktivere den satsvise jobben for sending av bestillingsforespørsler, går du til **Innkjøp og leverandører \> Oppsett \> cXML-behandling \> Bestillingsforespørsel** og deretter, i handlingsruten i kategorien **Bestillingsforespørsel** i gruppen **Parti** , velger du **Send jobb** for å åpne dialogboksen for **klargjøring og sending av bestillingsforespørsel**. Du kan bruke denne dialogboksen til å angi regelmessigheten, akkurat som du vanligvis gjør for satsvise jobber i Supply Chain Management. Velg et intervall basert på ordrevolumet. Selv om du kan kjøre den satsvise jobben hvert minutt, er det antakelig best å sende parti gjennom hele arbeidsdagen basert på ordremottaksvinduer som samsvarer med leverandørens tidsplaner.
+Hvis du vil aktivere den satsvise jobben for sending av bestillingsforespørsler, går du til **Innkjøp og leverandører \> Oppsett \> cXML-behandling \> Bestillingsforespørsel** og deretter, i handlingsruten i kategorien **Bestillingsforespørsel** i gruppen **Parti**, velger du **Send jobb** for å åpne dialogboksen for **klargjøring og sending av bestillingsforespørsel**. Du kan bruke denne dialogboksen til å angi regelmessigheten, akkurat som du vanligvis gjør for satsvise jobber i Supply Chain Management. Velg et intervall basert på ordrevolumet. Selv om du kan kjøre den satsvise jobben hvert minutt, er det antakelig best å sende parti gjennom hele arbeidsdagen basert på ordremottaksvinduer som samsvarer med leverandørens tidsplaner.
 
 Leverandøren har for eksempel en policy som sier at alle ordrer som mottas innen kl. 13:00, vil bli sendt samme dag. I så fall kan det hende at du bare må kjøre partiet noen ganger i morgen for å kommunisere eventuelle ordrer du har. De gjenværende ordrene blir deretter sendt neste dag. Denne beslutningen er en ren virksomhetsbeslutning. Du kan gå gjennom den og angi parameterne for den i henhold til dette.
 
@@ -227,7 +227,7 @@ Prosessen vil se etter bestillingsforespørselsdokumenter med statusen *Venter*.
 
 ### <a name="view-the-status-of-a-purchase-order"></a>Vise statusen for bestillingen
 
-Når ordrer som kan sendes via cXML, bekreftes, går de inn i _Vente_ -status. Som det ble beskrevet under [Opprette og behandle en bestilling](#create-po) kan du vise bestillingsstatusen på siden **Bestillingsforespørsel**. Hver bestillingsforespørsel kan ha én av flere statuser, avhengig av parameterne og dataene. Denne delen beskriver de ulike statustypene og verdiene de kan ha. Denne informasjonen kan hjelpe deg med å styre problemer og forstå statusen til bestillingene.
+Når ordrer som kan sendes via cXML, bekreftes, går de inn i _Vente_-status. Som det ble beskrevet under [Opprette og behandle en bestilling](#create-po) kan du vise bestillingsstatusen på siden **Bestillingsforespørsel**. Hver bestillingsforespørsel kan ha én av flere statuser, avhengig av parameterne og dataene. Denne delen beskriver de ulike statustypene og verdiene de kan ha. Denne informasjonen kan hjelpe deg med å styre problemer og forstå statusen til bestillingene.
 
 ![Betillingsstatus på siden for bestillingsforespørsel](media/cxml-monitor-po-request.png "Betillingsstatus på siden for bestillingsforespørsel")
 
@@ -237,7 +237,7 @@ Rutenettet i den øvre delen av siden **Bestillingsforespørsel** kan vise følg
 
     - **Venter** – Dokumentet venter på å bli sendt.
     - **Sendt** – Dokumentet er sendt.
-    - **Stoppet** – Dokumentet ble merket som _Stoppet_ før det ble sendt. (Hvis du vil merke et dokument som _Stoppet_ , velger du **Stopp** i handlingsruten på siden **Innkjøpsforespørsel** .)
+    - **Stoppet** – Dokumentet ble merket som _Stoppet_ før det ble sendt. (Hvis du vil merke et dokument som _Stoppet_, velger du **Stopp** i handlingsruten på siden **Innkjøpsforespørsel** .)
     - **Arkiv** – Dokumentet er tømt. (Hvis du vil slette et dokument, velger du **Tøm** i handlingsruten på siden **Innkjøpsforespørsel**.)
 
 - **Leverandørstatus for bestillingsforespørsel** – Dette feltet kan ha en av følgende verdier:
@@ -255,7 +255,7 @@ Rutenettet i kategorien **Logg for bestillingsforespørsel** i den nedre delen a
     - **Slett** – Hvis en bekreftelse allerede er sendt og godkjent av leverandøren, men bestillingen avbrytes, vil bekreftelsen som venter, bli merket som _Slett_. Slettinger sendes bare hvis alternativet for **Send sletting for bestillingsforespørsler** er satt til *Ja* i de [globale cXML-parameterne](#cxml-parameters).
 
 - **Forespørselstidspunkt** – Tidspunktet da ordrebekreftelsen ble opprettet. Du kan sammenligne forespørselstiden med ordrestatustiden for å bestemme tiden mellom bekreftelsen og leverandørbekreftelsen.
-- **Sendestatus for ordre** – Dette feltet er det samme som feltet for **Sendestatus for ordre** i den øvre delen av siden. Det gjentas her for å gjøre det enklere å vise statusen på bekreftelsesnivået. Hvis feltet **Bestillingstype** er satt til *Ny* , og bestillingen bekreftes på nytt før det sendes en bekreftelse, settes feltet for **Sendestatus for ordre** til *Arkiv*.
+- **Sendestatus for ordre** – Dette feltet er det samme som feltet for **Sendestatus for ordre** i den øvre delen av siden. Det gjentas her for å gjøre det enklere å vise statusen på bekreftelsesnivået. Hvis feltet **Bestillingstype** er satt til *Ny*, og bestillingen bekreftes på nytt før det sendes en bekreftelse, settes feltet for **Sendestatus for ordre** til *Arkiv*.
 - **Tidspunkt for ordrestatus** – Tidspunktet da loggposten for bestillingsforespørselen sist ble oppdatert. (Oppdateringene omfatter statusendringer.)
 - **Leverandørstatus for ordreforespørsel** – Dette feltet er det samme som feltet for **Leverandørstatus for ordreforespørsel** i den øvre delen av siden. Det gjentas her for å gjøre det enklere å vise statusen på bekreftelsesnivået.
 - **Tidspunkt for ny sending** – Tidspunktet da posten ble sendt på nytt.

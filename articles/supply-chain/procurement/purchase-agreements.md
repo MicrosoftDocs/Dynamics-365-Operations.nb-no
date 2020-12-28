@@ -19,11 +19,11 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: ce6b76d92526b9a353bda2524bdfd0f7f4a5f68e
-ms.sourcegitcommit: e3f4dd2257a3255c2982f4fc7b72a1121275b88a
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: nb-NO
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4018842"
+ms.locfileid: "4434726"
 ---
 # <a name="purchase-agreements"></a>Kjøpsavtaler
 
@@ -44,7 +44,7 @@ Hvis du vil hindre at kjøpsavtalen blir brukt og bekreftet, merker du avtalesta
 Du kan identifisere en primær ansvarlig arbeider og sekundær ansvarlig arbeider i kjøpsavtaleklassifiseringen. Disse verdiene vil bli arvet av den resulterende kjøpsavtalen. Du er ikke pålagt å legge til ansvarlige arbeidere i kjøpsavtalen, og de kan endres direkte på en per sak-basis i selve kjøpsavtalen. Du kan ikke angi en sekundær ansvarlig arbeider uten en primær ansvarlig arbeider, selv om du ikke trenger å ha en sekundær ansvarlig arbeider. Du kan ikke angi den samme arbeideren som både den primære og den sekundære ansvarlige arbeideren.
 
 > [!IMPORTANT]
-> Før du kan bruke funksjonen for den ansvarlige parten, må den være aktivert i systemet. Administratorer kan bruke innstillingene for [funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til å kontrollere funksjonsstatusen og aktivere den. I **Funksjonsadministrering** -arbeidsområdet er denne funksjonen oppført på følgende måte:
+> Før du kan bruke funksjonen for den ansvarlige parten, må den være aktivert i systemet. Administratorer kan bruke innstillingene for [funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til å kontrollere funksjonsstatusen og aktivere den. I **Funksjonsadministrering**-arbeidsområdet er denne funksjonen oppført på følgende måte:
 > 
 > - **Modul:** *Innkjøp og leverandører*
 > - **Funksjonsnavn:** *Ansvarlig part for kjøpsavtale*
@@ -58,7 +58,7 @@ Hver linje i en kjøpsavtale er en forpliktelse til å kjøpe noe. Du kan bruke 
 -   **Verdiforpliktelse** – Du kjøper et bestemt valutabeløp av et produkt eller produkter i en innkjøpskategori.
 
 ## <a name="pricing-terms-for-purchase-agreements"></a>Prisvilkår for kjøpsavtaler
-Prisvilkårene kan variere, avhengig av forpliktelsestypen. Prisvilkårene fra kjøpsavtaler overstyrer alle andre prisvilkår som er definert for forretningsavtaler. Tabellen nedenfor beskriver prisrelaterte felt som påvirkes av hver forpliktelsestype. Felt som inneholder **Ja** , kan oppdateres på en ordrelinje.
+Prisvilkårene kan variere, avhengig av forpliktelsestypen. Prisvilkårene fra kjøpsavtaler overstyrer alle andre prisvilkår som er definert for forretningsavtaler. Tabellen nedenfor beskriver prisrelaterte felt som påvirkes av hver forpliktelsestype. Felt som inneholder **Ja**, kan oppdateres på en ordrelinje.
 
 | Forpliktelsestype                   | Enhetspris | Prisenhet | Rabattprosent | Kontantrabattbeløp |
 |-----------------------------------|------------|------------|------------------|----------------------|
@@ -77,11 +77,11 @@ De følgende policyene påvirker hvordan koblingen mellom en kjøpsavtaleforplik
 ## <a name="fulfillment-calculations-for-purchase-agreements"></a>Oppfyllelsesberegninger for kjøpsavtaler
 Oppfyllelsesantall og -beløp vises i fanen **Oppfyllelse** i hurtigfanen **Linjedetaljer** på siden **Kjøpsavtaler**.  
 
-**Oppfyllelse** -området viser gjenstående beløp eller antall som kreves for å oppfylle forpliktelsen.  
+**Oppfyllelse**-området viser gjenstående beløp eller antall som kreves for å oppfylle forpliktelsen.  
 
-**Avtale** -område viser det totale antallet eller det totale beløpet som salgsavtalelinjen er gyldig for.  
+**Avtale**-område viser det totale antallet eller det totale beløpet som salgsavtalelinjen er gyldig for.  
 
-Du kan få tilgang til PO-linjene og fakturalinjene som bidrar til oppfyllelsesberegningen, ved å velge **Relatert informasjon** -handlingen på linjene eller i overskriften til en kjøpsavtale.
+Du kan få tilgang til PO-linjene og fakturalinjene som bidrar til oppfyllelsesberegningen, ved å velge **Relatert informasjon**-handlingen på linjene eller i overskriften til en kjøpsavtale.
 
 ## <a name="confirmations-and-version-history-for-purchase-agreements"></a>Bekreftelser og versjonshistorikk for kjøpsavtaler
 Når du bekrefter en kjøpsavtale, lagres den gjeldende versjonen av kjøpsavtalen i en historikktabell. Hvis du endrer kjøpsavtalen, kan du bekrefte den på nytt hvis du vil lagre en annen versjon av kjøpsavtalen i historikken. Hvis du ikke bekrefter en kjøpsavtale, kan du fortsatt bruke den til å opprette bestillinger. Historikkinformasjon for kjøpsavtalen lagres imidlertid ikke. Du kan forhåndsvise eller skrive ut alle versjoner av avtalen. Deretter kan du dele endringene med leverandøren for å få dem godkjent.
@@ -93,7 +93,7 @@ Du kan velge en kjøpsavtale bare når du oppretter en bestilling. Du kan ikke v
 I enkelte tilfeller der bestillinger opprettes indirekte, kan du kontrollere om Supply Chain Management automatisk søker etter gjeldende kjøpsavtaler. Du kan for eksempel gjøre dette når du autoriserer planlagte bestillinger automatisk eller oppretter bestillinger som er basert på salgsordrer.
 
 ## <a name="matching-policy-on-purchase-agreements"></a>Kontrollpolicy for kjøpsavtaler
-Du kan definere en linjekontrollpolicy i hodet i kjøpsavtalen. Denne linjekontrollpolicyen vil respektere kontrollpolicyen for leverandørparametere når feltet **Tillat overstyring av kontrollpolicy** på siden **Leverandørparametere** (i hurtigfanen **Pris- og antallssamsvar** ) er satt til **Høyere enn firmapolicy**. Dokumenter som refererer til kjøpsavtalen, bruker linjekontrollpolicyen som er definert i kjøpsavtalehodet, hvis ikke annet er definert i den tilsvarende innkjøpspolicyen for vare, vare og leverandør eller kategori.
+Du kan definere en linjekontrollpolicy i hodet i kjøpsavtalen. Denne linjekontrollpolicyen vil respektere kontrollpolicyen for leverandørparametere når feltet **Tillat overstyring av kontrollpolicy** på siden **Leverandørparametere** (i hurtigfanen **Pris- og antallssamsvar**) er satt til **Høyere enn firmapolicy**. Dokumenter som refererer til kjøpsavtalen, bruker linjekontrollpolicyen som er definert i kjøpsavtalehodet, hvis ikke annet er definert i den tilsvarende innkjøpspolicyen for vare, vare og leverandør eller kategori.
 
 ## <a name="purchase-agreements-and-intercompany-trade"></a>Kjøpsavtaler og konsernintern handel
 Du kan opprette konserninterne handelsforbindelser mellom leverandørkontoer og kundekontoer som er i forskjellige juridiske enheter. Når en salgsordre eller bestilling opprettes for den ene av partene, opprettes en konsernintern ordrekjede. I ordrekjeden opprettes salgsordren og bestillingen i de aktuelle juridiske enhetene.  

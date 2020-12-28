@@ -19,11 +19,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 2d6593d0eb1949140b23bc1ea6bcb87b12193aa7
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3975566"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4434628"
 ---
 # <a name="reverse-changes-in-a-dispatch-board"></a>Tilbakeføre endringer i en tjenestefordeling 
 
@@ -34,11 +34,11 @@ Dette emnet beskriver hvordan du tilbakefører ulagrede endringer du gjør i en 
 
 Bruk følgende fremgangsmåte for å tilbakeføre ulagrede endringer på en fordelingstavle:
 
-1.  Klikk **Servicestyring** \> **Periodisk** \> **Tjenestefordeling** .
+1.  Klikk **Servicestyring** \> **Periodisk** \> **Tjenestefordeling**.
 
-2.  Angi den aktuelle informasjonen i feltene i skjemaet **Tjenestefordeling** , og klikk deretter **OK** . 
+2.  Angi den aktuelle informasjonen i feltene i skjemaet **Tjenestefordeling**, og klikk deretter **OK**. 
 
-3.  Hvis du vil tilbakeføre den nyeste endringen som ennå ikke er lagret, klikker du **Angre** .
+3.  Hvis du vil tilbakeføre den nyeste endringen som ennå ikke er lagret, klikker du **Angre**.
 
 4.  Hvis du vil tilbakeføre en serie endringer som ennå ikke er lagret, fortsetter du å klikke **Angre** helt til alle endringene du vil forkaste er tilbakeført.
 

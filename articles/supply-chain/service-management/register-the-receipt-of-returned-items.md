@@ -19,26 +19,26 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 42ca1d4d2d9b45d79cf479833f83e498e3b73540
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3975638"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4434151"
 ---
 # <a name="register-the-receipt-of-returned-items"></a>Registrere mottaket av returnerte varer 
 
 [!include [banner](../includes/banner.md)]
 
 
-Det er to metoder for å registrere mottak av returnerte varer. Den første metoden er en lagermottaksprosess som bruker **Ankomstoversikt** -skjemaet. Den andre bruker **Registrering** -skjemaet.
+Det er to metoder for å registrere mottak av returnerte varer. Den første metoden er en lagermottaksprosess som bruker **Ankomstoversikt**-skjemaet. Den andre bruker **Registrering**-skjemaet.
 
 ## <a name="register-the-receipt-of-returned-items-in-the-arrival-overview-form"></a>Registrere mottaket av returnerte varer i Ankomstoversikt-skjemaet.
 
-Du kan bruke **Ankomstoversikt** -skjemaet for å identifisere en returforsendelse ved hjelp av autorisasjonsreturnummeret. Hvis det er angitt et journalnavn i kategorien **Oppsett** og det finnes journallinjer som samsvarer med de valgte linjene i **Ankomstoversikt** -skjemaet, blir det opprettete et nytt journalhode når du klikker **Start ankomst** .
+Du kan bruke **Ankomstoversikt**-skjemaet for å identifisere en returforsendelse ved hjelp av autorisasjonsreturnummeret. Hvis det er angitt et journalnavn i kategorien **Oppsett** og det finnes journallinjer som samsvarer med de valgte linjene i **Ankomstoversikt**-skjemaet, blir det opprettete et nytt journalhode når du klikker **Start ankomst**.
 
-1.  Klikk **Lagerstyring** \> **Periodisk** \> **Ankomstoversikt** .
+1.  Klikk **Lagerstyring** \> **Periodisk** \> **Ankomstoversikt**.
 
-2.  I feltet **Oppsettsnavn** velger du **Returordre** og klikker deretter **Oppdater** .
+2.  I feltet **Oppsettsnavn** velger du **Returordre** og klikker deretter **Oppdater**.
     
 
     > [!TIP]
@@ -51,9 +51,9 @@ Du kan bruke **Ankomstoversikt** -skjemaet for å identifisere en returforsendel
 
 
 
-3.  I **Mottak** -rutenettet finner du linjen som samsvarer med varen som returneres, og deretter merker du av for avmerkingsboksen i kolonnen **Velg for ankomst** .
+3.  I **Mottak**-rutenettet finner du linjen som samsvarer med varen som returneres, og deretter merker du av for avmerkingsboksen i kolonnen **Velg for ankomst**.
 
-4.  Hvis du vil ekskludere visse linjer fra returmottaket, som for eksempel varer fra den opprinnelige ordren som ikke var inkludert i returforsendelsen, kan du fjerne merket i de tilknyttede **Velg for ankomst** -boksene i **Linjer** -tabellen i nederste del av skjemaet.
+4.  Hvis du vil ekskludere visse linjer fra returmottaket, som for eksempel varer fra den opprinnelige ordren som ikke var inkludert i returforsendelsen, kan du fjerne merket i de tilknyttede **Velg for ankomst**-boksene i **Linjer**-tabellen i nederste del av skjemaet.
 
 5.  Klikk **Start ankomst** for å opprette en ankomstjournal.
     
@@ -68,11 +68,11 @@ Du kan bruke **Ankomstoversikt** -skjemaet for å identifisere en returforsendel
 
 
 
-6.  Klikk **Lagerstyring** \> **Journaler** \> **Vareankomst** \> **Vareankomst** .
+6.  Klikk **Lagerstyring** \> **Journaler** \> **Vareankomst** \> **Vareankomst**.
 
-7.  Velg ankomstjournalen du akkurat opprettet, og klikk deretter **Linjer** for å åpne skjemaet **Journallinjer, lokasjoner** .
+7.  Velg ankomstjournalen du akkurat opprettet, og klikk deretter **Linjer** for å åpne skjemaet **Journallinjer, lokasjoner**.
 
-8.  I kategorien **Generelt** justerer du nummeret i **Antall** -feltet ved behov, og deretter tilordner du en disposisjonskode i **Disposisjonskode** -feltet.
+8.  I kategorien **Generelt** justerer du nummeret i **Antall**-feltet ved behov, og deretter tilordner du en disposisjonskode i **Disposisjonskode**-feltet.
     
     Du kan også merke av for **Karantenestyring** for å sende de returnerte varene gjennom en inspeksjonsprosess i forbindelse med en karanteneordre.
     
@@ -82,17 +82,17 @@ Du kan bruke **Ankomstoversikt** -skjemaet for å identifisere en returforsendel
 
 
 
-9.  Klikk **Valider** -knappen.
+9.  Klikk **Valider**-knappen.
 
-10. Hvis det ikke er noen feil i valideringsprosessen, klikker du **Poster** .
+10. Hvis det ikke er noen feil i valideringsprosessen, klikker du **Poster**.
 
 ## <a name="register-the-receipt-of-returned-items-in-the-registration-form"></a>Registrere mottaket av returnerte varer i registreringsskjemaet.
 
-I stedet for å bruke **Ankomstoversikt** -skjemaet kan du bruke **Registrering** -skjemaet til å registrere at returnerte varer er ankommet.
+I stedet for å bruke **Ankomstoversikt**-skjemaet kan du bruke **Registrering**-skjemaet til å registrere at returnerte varer er ankommet.
 
-1.  Klikk **Salg og markedsføring** \> **Vanlig** \> **Returordrer** \> **Alle returordrer** . Opprett en ny returordre eller åpne returordren fra listen. Velg returordrelinjen i hurtigfanen **Linjer** . Klikk **Oppdater linje** , og klikk deretter **Registrering** .
+1.  Klikk **Salg og markedsføring** \> **Vanlig** \> **Returordrer** \> **Alle returordrer**. Opprett en ny returordre eller åpne returordren fra listen. Velg returordrelinjen i hurtigfanen **Linjer**. Klikk **Oppdater linje**, og klikk deretter **Registrering**.
 
-2.  Tilordne en disposisjonskode i **Disposisjonskode** -feltet, og klikk deretter **OK** .
+2.  Tilordne en disposisjonskode i **Disposisjonskode**-feltet, og klikk deretter **OK**.
     
 
     > [!NOTE]
@@ -100,11 +100,11 @@ I stedet for å bruke **Ankomstoversikt** -skjemaet kan du bruke **Registrering*
 
 
 
-3.  I **Transaksjoner** -rutenettet velger du transaksjonen som skal registreres.
+3.  I **Transaksjoner**-rutenettet velger du transaksjonen som skal registreres.
 
-4.  I **Registrer nå** -rutenettet klikker du **Legg til** . Gjenta de to forrige trinnene til alle returnerte varer vises i **Registrer nå** -rutenettet.
+4.  I **Registrer nå**-rutenettet klikker du **Legg til**. Gjenta de to forrige trinnene til alle returnerte varer vises i **Registrer nå**-rutenettet.
 
-5.  Klikk **Poster alle** .
+5.  Klikk **Poster alle**.
 
 ## <a name="see-also"></a>Se også
 

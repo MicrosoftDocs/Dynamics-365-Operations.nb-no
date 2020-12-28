@@ -19,11 +19,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: b433632523bfd64119fda62f8e4b108ff9b5dccd
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3987311"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4434090"
 ---
 # <a name="service-tasks-overview"></a>Oversikt over serviceoppgaver
 
@@ -32,7 +32,7 @@ ms.locfileid: "3987311"
 Bruk serviceoppgaver til å beskrive oppgaven som skal fullføres under en serviceordre.
 Både teknikere og kunder kan se denne informasjonen.
 
-Du oppretter serviceoppgaver på **Serviceoppgaver** -siden, og du knytter serviceoppgaver til en bestemt serviceavtale eller serviceordre ved å opprette serviceoppgaverelasjoner. Hver gang du oppretter en serviceoppgaverelasjon, kan du opprette følgende:
+Du oppretter serviceoppgaver på **Serviceoppgaver**-siden, og du knytter serviceoppgaver til en bestemt serviceavtale eller serviceordre ved å opprette serviceoppgaverelasjoner. Hver gang du oppretter en serviceoppgaverelasjon, kan du opprette følgende:
 
 -  Interne merknader for oppgaven, for eksempel detaljerte tekniske forespørsler for oppgaven som teknikeren bør kjenne til.
 
@@ -44,7 +44,7 @@ Når du genererer serviceordrer fra en serviceavtale, kan du bruke serviceoppgav
 
 ## <a name="create-a-service-task"></a>Opprette en serviceoppgave
 
-1. Klikk **Servicestyring** \> **Oppsett** \> **Serviceoppgaver** .
+1. Klikk **Servicestyring** \> **Oppsett** \> **Serviceoppgaver**.
 2. Opprett en ny linje.
 3. Angi service-ID og -beskrivelse.
 
@@ -86,7 +86,7 @@ Når du oppretter serviceordrer automatisk, kan du bruke serviceoppgaver som et 
 
 **Gruppere etter serviceoppgave**
 
-1. Klikk **Servicestyring** \> **Felles** \> **Serviceavtaler** \> **Serviceavtaler** .
-2. I kategorien **Oppsett** velger du **Etter serviceoppgave** i **Kombiner serviceordrer** -feltet.
+1. Klikk **Servicestyring** \> **Felles** \> **Serviceavtaler** \> **Serviceavtaler**.
+2. I kategorien **Oppsett** velger du **Etter serviceoppgave** i **Kombiner serviceordrer**-feltet.
 
 

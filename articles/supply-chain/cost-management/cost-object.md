@@ -20,11 +20,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 85e590322c75cfb2ad21236af56656061037a4b7
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3983531"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4434549"
 ---
 # <a name="cost-objects"></a>Kostnadsobjekter
 
@@ -34,14 +34,14 @@ Denne artikkelen inneholder informasjon om kostnadsobjekter, og forklarer hvorda
 
 ## <a name="cost-objects"></a>Kostnadsobjekter
 
-**Kostnadsobjekter** -siden viser alle kostnadsobjekter som er registrert for et produkt. Kostnadsobjektene er definert av data fra følgende kilder:
+**Kostnadsobjekter**-siden viser alle kostnadsobjekter som er registrert for et produkt. Kostnadsobjektene er definert av data fra følgende kilder:
 
 -   Produkt
 -   Produktdimensjonsgruppe
 -   Lagringsdimensjonsgruppe
 -   Sporingsdimensjonsgruppe
 
-**Obs!** Et kostnadsobjekt representerer bare et kostnadselement av typen **Direkte materialer** . Et kostnadsobjekt og et beholdningsobjekt er ulike ved at et kostnadsobjekt defineres av lagerdimensjonene som er valgt for økonomisk lager. En vare har for eksempel følgende konfigurasjon:
+**Obs!** Et kostnadsobjekt representerer bare et kostnadselement av typen **Direkte materialer**. Et kostnadsobjekt og et beholdningsobjekt er ulike ved at et kostnadsobjekt defineres av lagerdimensjonene som er valgt for økonomisk lager. En vare har for eksempel følgende konfigurasjon:
 
 -   **Område:** Aktuell beholdning = Ja, Økonomisk lager = Ja
 -   **Lager:** Aktuell beholdning = Ja, Økonomisk lager = Nei
@@ -55,15 +55,15 @@ Tabellen nedenfor viser hva et kostnadsobjekt er, og hva et beholdningsobjekt er
 | Beholdningsobjekt | x           | x    |  x        | x         |
 
 ## <a name="accumulation-of-costs-and-quantities"></a>Akkumulering av kostnader og antall
--   Verdien i **Verdi** -feltet er en sum av følgende verdier:
+-   Verdien i **Verdi**-feltet er en sum av følgende verdier:
     -   Fysisk kostbeløp
     -   Økonomisk kostbeløp
     -   Justeringer
--   Verdien i **Antall** -feltet er en sum av følgende verdier:
+-   Verdien i **Antall**-feltet er en sum av følgende verdier:
     -   Mottatt
     -   Fratrukket
     -   Postert antall
--   Feltet **Gjennomsnittlig enhetskostnad** er et beregnet felt. Verdien beregnes ved å dele **Verdi** -verdien på **Antall** -verdien.
+-   Feltet **Gjennomsnittlig enhetskostnad** er et beregnet felt. Verdien beregnes ved å dele **Verdi**-verdien på **Antall**-verdien.
 
 **Obs!**   Parameteren **Ta med fysisk verdi** har ingen innvirkning på de foregående beregningene.
 

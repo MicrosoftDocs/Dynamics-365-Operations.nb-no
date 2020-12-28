@@ -19,11 +19,11 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: cd0ee376da52dc3b36ec32859283a410e5b71854
-ms.sourcegitcommit: e3f4dd2257a3255c2982f4fc7b72a1121275b88a
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: nb-NO
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4018405"
+ms.locfileid: "4434822"
 ---
 # <a name="requests-for-quotation-rfqs-overview"></a>Oversikt over tilbudsforespørsler (RFQ-er)
 
@@ -44,7 +44,7 @@ Illustrasjonen nedenfor viser en oversikt over forespørselsprosessen.
 
 Du kan opprette en tilbudsforespørselssak fra planlagte bestillinger, fra en innkjøpsrekvisisjon eller ved manuell oppføring. Tilbudsforespørselssaken er basisdokumentet du bruker til å utstede en tilbudsforespørsel til hver leverandør.
 
-Når du har klargjort tilbudsforespørselssaken og lagt til leverandører, velger du **Send** ( **Send og publiser** for offentlig sektor) for tilbudsforespørselssaken. Det genereres en RFQ-journal for hver leverandør som du har sendt tilbudsforespørselen til. Du kan konfigurere utskriftsinnstillingene for sendingshandlingen for å skrive ut en rapport for hver leverandør til et arkiv eller sende en rapport til e-postadressen for hver leverandør. Tilbudsforespørselsjournalen for hver leverandør kan dessuten brukes til å generere en rapport som du kan sende eller sende på nytt til en leverandør senere. Du kan også konfigurere handlingen Send slik at den genererer et svarark som leverandøren kan fylle ut.
+Når du har klargjort tilbudsforespørselssaken og lagt til leverandører, velger du **Send** (**Send og publiser** for offentlig sektor) for tilbudsforespørselssaken. Det genereres en RFQ-journal for hver leverandør som du har sendt tilbudsforespørselen til. Du kan konfigurere utskriftsinnstillingene for sendingshandlingen for å skrive ut en rapport for hver leverandør til et arkiv eller sende en rapport til e-postadressen for hver leverandør. Tilbudsforespørselsjournalen for hver leverandør kan dessuten brukes til å generere en rapport som du kan sende eller sende på nytt til en leverandør senere. Du kan også konfigurere handlingen Send slik at den genererer et svarark som leverandøren kan fylle ut.
 
 Dette emnet dekker prosessen for å håndtere tilbudsforespørsler når leverandørsamarbeid ikke er brukt. Hvis systemet er definert for leverandørsamarbeid, kan leverandører legge inn bud direkte i Supply Chain Management. Hvis du vil ha mer informasjon, kan du se [Leverandørsamarbeid med kunder](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/procurement/vendor-collaboration-work-customers-dynamics-365-operations) og [Leverandørsamarbeid med eksterne leverandører](vendor-collaboration-work-external-vendors.md).
 
@@ -75,7 +75,7 @@ Du kan overstyre disse verdiene for en bestemt tilbudsforespørselssak.
 
 Du må også konfigurere endringsprosessen. Som en del av denne konfigurasjonen kan du aktivere feltlås. Når feltlåsing er aktivert, må en innkjøpsansvarlig som ønsker å endre en tilbudsforespørsel først velge **Opprett** i delen **Endring** i kategorien **Tilbud** for tilbudsforespørselssaken. Etter at tilbudsforespørselssaken er oppdatert med endringen, må innkjøpsansvarlig fullføre prosessen ved å velge **Fullfør**. Fullfør-handlingen genererer en e-postmelding som varsler leverandørene om den endrede tilbudsforespørselen.
 
-Du velger malen som skal brukes for e-postvarsling som sendes til leverandører, på siden **Parametere for innkjøp og leverandører**. Når en mal opprettes i **E-postmaler** , kan den inneholde følgende tokener:
+Du velger malen som skal brukes for e-postvarsling som sendes til leverandører, på siden **Parametere for innkjøp og leverandører**. Når en mal opprettes i **E-postmaler**, kan den inneholde følgende tokener:
 
 - %RFQ-sak%
 - %Årsak til retur av bud%
@@ -99,13 +99,13 @@ Hvis du vil avbryte en tilbudsforespørsel etter at den er sendt, kan du gjøre 
 
 Tokenet % Årsak til annullering% erstattes med tekst som den innkjøpsansvarlige kan skrive inn i veiviseren for **annullering**. Tokenet %Dato% erstattes av dagens dato.
 
-Hvis du vil bruke årsakskoder på et bud for å angi hvorfor det ble avvist eller godtatt, må du definere årsakskoder på **Leverandørårsaker** -siden.
+Hvis du vil bruke årsakskoder på et bud for å angi hvorfor det ble avvist eller godtatt, må du definere årsakskoder på **Leverandørårsaker**-siden.
 
-Du kan konfigurere hvordan utskrevne eller lagrede tilbudsforespørseldokumenter skal se ut, på **Skjemaoppsett** -siden i innkjøp og leverandører.
+Du kan konfigurere hvordan utskrevne eller lagrede tilbudsforespørseldokumenter skal se ut, på **Skjemaoppsett**-siden i innkjøp og leverandører.
 
 > [!NOTE]
 > For en konfigurasjon for offentlig sektor må du bruke endingsprosessen for å endre en forespørsel som allerede er sendt. Når det sendes en forespørsel, er feltene låst.
-Hvis du vil gjøre endringer i forespørselen, må du derfor velge **Opprett** for å starte endringsprosessen, som beskrevet tidligere. Låsevirkemåten kontrolleres av alternativet **Lås tilbudsforespørsler når de er sendt** på siden **Parametere for innkjøp og leverandører**. Som standard er denne parameteren satt til **Ja** , og for en konfigurasjon av offentlig sektor kan denne standardinnstillingen ikke endres. Derfor, selv om endringsprosessen kan behandles manuelt i en ikke-offentlig konfigurasjon, må den brukes for offentlig konfigurasjon.
+Hvis du vil gjøre endringer i forespørselen, må du derfor velge **Opprett** for å starte endringsprosessen, som beskrevet tidligere. Låsevirkemåten kontrolleres av alternativet **Lås tilbudsforespørsler når de er sendt** på siden **Parametere for innkjøp og leverandører**. Som standard er denne parameteren satt til **Ja**, og for en konfigurasjon av offentlig sektor kan denne standardinnstillingen ikke endres. Derfor, selv om endringsprosessen kan behandles manuelt i en ikke-offentlig konfigurasjon, må den brukes for offentlig konfigurasjon.
 
 Når du oppretter en tilbudsforespørselssak av typen Bestilling og legger til en lagervare i tilbudsforespørselen, opprettes det en lagertransaksjon med tilgangsstatusen **Tilbud tilgang**. Bare linjer i saker om tilbudsforespørsel som har denne statusen, tas hensyn til når du bruker en hovedplan for å beregne forsyninger. Hvis du vil at hovedplanen skal ha med linjer i saker om tilbudsforespørsel som forventet mottak, må du konfigurere dette i oppsettet av hovedplanlegging.
 
@@ -130,12 +130,12 @@ Du oppretter en tilbudsforespørselssak, velger leverandørene du vil skal by p�
 
 Du kan manuelt opprette en tilbudsforespørselssak for innkjøpstypen **Bestilling** eller innkjøpstypen **Kjøpsavtale**.
 
-Hvis tilbudsforespørselssaken er av typen **Bestilling** , skjer følgende avvik fra andre typer tilbudsforespørselssaker:
+Hvis tilbudsforespørselssaken er av typen **Bestilling**, skjer følgende avvik fra andre typer tilbudsforespørselssaker:
 
 - Når du oppretter linjer i saker om tilbudsforespørsel, genereres lagertransaksjoner som har tilgangsstatusen **Tilbud tilgang**.
 - Når du godkjenner et bud, genereres en bestilling.
 
-Hvis tilbudsforespørselen er av typen **Kjøpsavtale** , skjer følgende avvik fra andre tilbudsforespørselssaker:
+Hvis tilbudsforespørselen er av typen **Kjøpsavtale**, skjer følgende avvik fra andre tilbudsforespørselssaker:
 
 - Tilbudsforespørselssaken brukes for en avtale om å kjøpe et spesifikt antall eller en verdi av et produkt over tid. Du må velge datointervallet som gjelder for kjøpsavtalen, og navnet på personen som administrerer kjøpsavtalen.
 - Når du godkjenner et bud, genereres en kjøpsavtale.
@@ -148,7 +148,7 @@ Når du oppretter en tilbudsforespørselssak, kan du velge en forespørselstype.
 
 Du kan legge til et spørreskjema i en tilbudsforespørselssak. Dette spørreskjemaet vises deretter i alle forespørselssvar når du har sendt forespørselen. Det er en obligatorisk oppgave å fullføre spørreskjemaet før budet kan sendes.
 
-Selv om det er angitt standardverdier, kan du endre innstillingene **Felt for tilbudsforespørsel som er inkludert i svarskjemaer for leverandørtilbudsforespørsel** for hver enkelt tilbudsforespørsel etter behov. Dette gjør du ved å opprette eller åpne en tilbudsforespørsel. Gå deretter til Handling-ruten, åpne kategorien **Tilbud** , gå til delen **Svar** og velg **Angi standardsvar for tilbudsforespørsel**. Dialogboksen **Standard svarfelt i tilbudsforespørsel** åpnes, og dette fungerer på samme måte som når du angir standardinnstillinger for svarskjemaer for leverandørtilbudsforespørsler, bortsett fra at endringene her bare vil påvirke gjeldende tilbudsforespørsel. Hvis du vil ha mer informasjon om hvordan du aktiverer denne funksjonaliteten og hvordan den fungerer, kan du se [Velge standardfelt som skal tas med i svarskjemaer for leverandørtilbudsforespørsel](#default-reply-fields).
+Selv om det er angitt standardverdier, kan du endre innstillingene **Felt for tilbudsforespørsel som er inkludert i svarskjemaer for leverandørtilbudsforespørsel** for hver enkelt tilbudsforespørsel etter behov. Dette gjør du ved å opprette eller åpne en tilbudsforespørsel. Gå deretter til Handling-ruten, åpne kategorien **Tilbud**, gå til delen **Svar** og velg **Angi standardsvar for tilbudsforespørsel**. Dialogboksen **Standard svarfelt i tilbudsforespørsel** åpnes, og dette fungerer på samme måte som når du angir standardinnstillinger for svarskjemaer for leverandørtilbudsforespørsler, bortsett fra at endringene her bare vil påvirke gjeldende tilbudsforespørsel. Hvis du vil ha mer informasjon om hvordan du aktiverer denne funksjonaliteten og hvordan den fungerer, kan du se [Velge standardfelt som skal tas med i svarskjemaer for leverandørtilbudsforespørsel](#default-reply-fields).
 
 Det finnes tre måter å velge leverandørene som du vil legge til en forespørselssak:
 
@@ -166,19 +166,19 @@ Noen ganger må du endre en tilbudsforespørselssak etter at du har sendt den. D
 
 Hvis du konfigurerer endringsprosessen slik at den blir mer restriktiv, må du, før du kan endre feltene i en RFQ-sak som allerede er sendt, velge **Opprett** i RFQ-saken for å starte en endring. Når du har fullført endringene, må du velge **Fullfør**. Du blir deretter veiledet gjennom prosessen med å legge til informasjon i e-postmeldingen som sendes for å varsle leverandører om endringen. Den oppdaterte tilbudsforespørselsrapporten som inneholder en merknad om endringen, legges automatisk til i e-postmeldingen.
 
-Hvis du konfigurerer endringsprosessen slik at den er mindre restriktiv, trenger du ikke velge **Opprett** før du kan endre feltene i en tilbudsforespørselssak som allerede er sendt. Du må imidlertid manuelt legge til en endringsmerknad i tilbudsforespørselen og sende saken på nytt. Vær oppmerksom på at denne fremgangsmåten kan bare brukes hvis ingen av svarene (budene) er endret. Hvis du har angitt et svar, og det er i en **Mottatt** -tilstand, er **Send** -knappen utilgjengelig. I så fall må du velge **Opprett** og **Fullfør** , slik du må du i den mer restriktive prosessen. Svaret tilbakestilles deretter for å gjenspeile endringene i tilbudsforespørselssaken.
+Hvis du konfigurerer endringsprosessen slik at den er mindre restriktiv, trenger du ikke velge **Opprett** før du kan endre feltene i en tilbudsforespørselssak som allerede er sendt. Du må imidlertid manuelt legge til en endringsmerknad i tilbudsforespørselen og sende saken på nytt. Vær oppmerksom på at denne fremgangsmåten kan bare brukes hvis ingen av svarene (budene) er endret. Hvis du har angitt et svar, og det er i en **Mottatt**-tilstand, er **Send**-knappen utilgjengelig. I så fall må du velge **Opprett** og **Fullfør**, slik du må du i den mer restriktive prosessen. Svaret tilbakestilles deretter for å gjenspeile endringene i tilbudsforespørselssaken.
 
 Hvis leverandører bruker grensesnittet for leverandørsamarbeid til å legge inn bud, må du alltid bruke endringsprosessen til å varsle leverandører om endringer i tilbudsforespørselssaken. Denne prosessen forhindrer en situasjon der leverandører byr på en utdatert tilbudsforespørselssak mens budet er under behandling. Hvis du vil ha mer informasjon om leverandørsamarbeid, kan du se [Leverandørsamarbeid med eksterne leverandører](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/procurement/vendor-collaboration-work-external-vendors).
 
-Hvis du vil invitere flere leverandører til å by, og ingen endringer er gjort i tilbudsforespørselssaken, kan du bruke **Send** -knappen. Leverandørene du har lagt til, vises på **Send** -siden, og de mottar e-postinvitasjonen.
+Hvis du vil invitere flere leverandører til å by, og ingen endringer er gjort i tilbudsforespørselssaken, kan du bruke **Send**-knappen. Leverandørene du har lagt til, vises på **Send**-siden, og de mottar e-postinvitasjonen.
 
 ## <a name="receiving-and-registering-rfq-replies"></a>Motta og registrere svar på tilbudsforespørsler (bud)
 
-Når du sender en tilbudsforespørsel, opprettes det automatisk et svarark. Når du mottar bud på en tilbudsforespørsel, må du angi dem via **Tilbudsforespørsel** -siden ved å klikke handlingen **Rediger svar på tilbudsforespørsel.** Dermed kan du legge inn budinformasjonen i et eget budskjema. **Svarfremdrift** er først **Ikke startet**. Når du klikker **Rediger svar på tilbudsforespørsel,** er fremdriftsstatusen **Innkjøper oppdaterer** til budet er sendt. Klikk **Send** når du har registrert nødvendig informasjon for budet. Statusen til svarfremdriften endres til **Sendt av innkjøper.** Når leverandørsamarbeid er aktivert, oppdateres **svarfremdriften** tilsvarende når leverandøren samhandler med budet. Statusen endres deretter fra **Leverandør oppdaterer** til **Rapportert av leverandør**. Når budet er sendt, opprettes en journal som **Mottatt**. Svaret (budet) må sendes for å kunne registreres som mottatt, og bare deretter kan det viderebehandles som godkjent eller avvist.
+Når du sender en tilbudsforespørsel, opprettes det automatisk et svarark. Når du mottar bud på en tilbudsforespørsel, må du angi dem via **Tilbudsforespørsel**-siden ved å klikke handlingen **Rediger svar på tilbudsforespørsel.** Dermed kan du legge inn budinformasjonen i et eget budskjema. **Svarfremdrift** er først **Ikke startet**. Når du klikker **Rediger svar på tilbudsforespørsel,** er fremdriftsstatusen **Innkjøper oppdaterer** til budet er sendt. Klikk **Send** når du har registrert nødvendig informasjon for budet. Statusen til svarfremdriften endres til **Sendt av innkjøper.** Når leverandørsamarbeid er aktivert, oppdateres **svarfremdriften** tilsvarende når leverandøren samhandler med budet. Statusen endres deretter fra **Leverandør oppdaterer** til **Rapportert av leverandør**. Når budet er sendt, opprettes en journal som **Mottatt**. Svaret (budet) må sendes for å kunne registreres som mottatt, og bare deretter kan det viderebehandles som godkjent eller avvist.
 
 Hvis du må oppdatere budet, bør du gå gjennom den samme prosessen som ovenfor, og sende på nytt.
 
-Legg merke til at redigering av **Tilbudsforespørsel** -skjemaet bare er tillatt for informasjon som er knyttet til behandling av budet, ikke til å legge inn budet. Hvis du vil angi eller endre budet, klikker du **Rediger svar på tilbudsforespørsel.**
+Legg merke til at redigering av **Tilbudsforespørsel**-skjemaet bare er tillatt for informasjon som er knyttet til behandling av budet, ikke til å legge inn budet. Hvis du vil angi eller endre budet, klikker du **Rediger svar på tilbudsforespørsel.**
 
 Når du legger inn budinformasjonen, og hvis tilbudsforespørselssaken gir alternative linjer, kan du legge til alternative linjer for linjer som bare har en innkjøpskategori og ingen varekatalog angitt. Klikk **Legg til alternativ** for å legge til alternative linjer.
 
@@ -191,13 +191,13 @@ Du kan se en oversikt over alle tilbudsforespørsler og statusen deres: **Sendt,
 Når du har identifisert det beste budet, for eksempel budet som gir best totalpris, kan du godta det. Du kan godta flere linjer i et bud og avvise andre.
 Du kan også godta linjer fra forskjellige leverandører. Vær oppmerksom på at hvis du godtar noen linjer, blir du bedt å avvise alle de andre linjene. Hvis du ønsker å godta andre linjer, må du derfor velge **Avbryt** når du blir bedt om det. Statusen for svaret på tilbudsforespørselen for hver leverandør som du godtar bud eller linjer fra, blir oppdatert til **Godkjent**.
 
-Hvis du, mens du klargjør bestillingen eller kjøpsavtalen, må du legge til en ekstra linje i forespørselen, kan du gjøre det ved å klikke **Legg til linje** i rutenettet på **Tilbudsforespørsel** -siden. Du kan bare vise og redigere denne linjen på **Tilbudsforespørsel** -siden. Den vil være synlig på budsiden når den er godtatt.
+Hvis du, mens du klargjør bestillingen eller kjøpsavtalen, må du legge til en ekstra linje i forespørselen, kan du gjøre det ved å klikke **Legg til linje** i rutenettet på **Tilbudsforespørsel**-siden. Du kan bare vise og redigere denne linjen på **Tilbudsforespørsel**-siden. Den vil være synlig på budsiden når den er godtatt.
 
 Når du godtar et bud eller en eller flere linjer i et bud, opprettes en bestilling eller kjøpsavtale automatisk. Du kan deretter avvise budene fra de andre leverandørene.
 
 I svaret kan du legge til en årsakskode for å forklare hvorfor du godkjente eller avviste et bud.
 
-Når du godkjenner et bud av typen **Innkjøpsrekvisisjon** , vil innkjøpsrekvisisjonslinjene bli oppdatert med følgende informasjon som viser informasjonen om godkjente budet:
+Når du godkjenner et bud av typen **Innkjøpsrekvisisjon**, vil innkjøpsrekvisisjonslinjene bli oppdatert med følgende informasjon som viser informasjonen om godkjente budet:
 
 - Enhetspris
 - Rabattprosent

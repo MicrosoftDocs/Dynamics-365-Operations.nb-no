@@ -19,22 +19,22 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 5b192cd6316f8e4de7919b7a3feda29fcbf54059
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3978972"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4434563"
 ---
 # <a name="update-and-index-subscription-sales-prices"></a>Oppdatere og indeksere salgspriser for abonnement 
 
 [!include [banner](../includes/banner.md)]
 
 
-1.  Klikk på **Servicestyring** \> **Felles** \> **Serviceabonnementer** \> **Alle serviceabonnementer** .
+1.  Klikk på **Servicestyring** \> **Felles** \> **Serviceabonnementer** \> **Alle serviceabonnementer**.
 
 2.  Velg abonnementet som indeksen eller basisprisen skal oppdateres for.
 
-3.  Klikk **Indeks** . I **Endre** -feltet angir du hvordan du vil oppdatere basisprisen eller indeksen, og om oppdateringen skal bruke en prosentsats eller en ny verdi. Du kan velge blant følgende alternativer:
+3.  Klikk **Indeks**. I **Endre**-feltet angir du hvordan du vil oppdatere basisprisen eller indeksen, og om oppdateringen skal bruke en prosentsats eller en ny verdi. Du kan velge blant følgende alternativer:
     
       - **Indekser etter en prosentandel**
     
@@ -44,7 +44,7 @@ ms.locfileid: "3978972"
     
       - **Basispris til**
 
-4.  Klikk **OK** .
+4.  Klikk **OK**.
 
 Basisprisen eller indeksen for abonnementet er oppdatert med den angitte verdien.
 

@@ -20,11 +20,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: f62381ca212e711fd61e12c9ec8f066ec124a933
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3983030"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4434648"
 ---
 # <a name="maintain-planned-orders"></a>Vedlikeholde planlagte ordrer
 
@@ -32,30 +32,30 @@ ms.locfileid: "3983030"
 
 Dette emnet gir informasjon om hvordan du behandler planlagte ordrer. Den beskriver hvordan du kan oppdatere statusen for planlagte ordrer, autorisere dem og filtrere etter planlagte ordrer som har samme status som en valgt planlagt ordre.
 
-Du kan administrere planlagte bestillinger fra arbeidsområdet **Hovedplanlegging** , listen **Planlagt bestilling** eller listene **Planlagte produksjonsordrer** , **Planlagte bestillinger** og **Overføringsforslag** . 
+Du kan administrere planlagte bestillinger fra arbeidsområdet **Hovedplanlegging**, listen **Planlagt bestilling** eller listene **Planlagte produksjonsordrer**, **Planlagte bestillinger** og **Overføringsforslag**. 
 
 ## <a name="planned-order-status"></a>Status for planlagt ordre
-Du kan bruke **Status** -feltet til å spore fremdriften. Følgende verdier brukes:
+Du kan bruke **Status**-feltet til å spore fremdriften. Følgende verdier brukes:
 
--   Når hovedplanlegging genererer planlagte ordrer, har de planlagte ordrene statusen **Ubehandlet** .
--   Hvis du velger ikke å autorisere en planlagt bestilling, kan du gi den statusen **Fullført** .
--   Hvis du vil autorisere en planlagt ordre, kan du endre statusen til **Godkjent** . Planlagte ordrer med **Godkjent** -status overholdes av hovedplanlegging, slik at de ikke blir endret eller slettet under en senere kjøring av hovedplanlegging. For å oppnå dette kopierer planleggingslogikken de **godkjente** planlagte bestillingene fra den gamle planversjonen til den nye planversjonen under hovedplanlegging.
+-   Når hovedplanlegging genererer planlagte ordrer, har de planlagte ordrene statusen **Ubehandlet**.
+-   Hvis du velger ikke å autorisere en planlagt bestilling, kan du gi den statusen **Fullført**.
+-   Hvis du vil autorisere en planlagt ordre, kan du endre statusen til **Godkjent**. Planlagte ordrer med **Godkjent**-status overholdes av hovedplanlegging, slik at de ikke blir endret eller slettet under en senere kjøring av hovedplanlegging. For å oppnå dette kopierer planleggingslogikken de **godkjente** planlagte bestillingene fra den gamle planversjonen til den nye planversjonen under hovedplanlegging.
 
 ## <a name="firming-planned-orders"></a>Autorisere planlagte ordrer 
-Ved å autorisere planlagte ordre opprettes det reelle ordrer. Disse kalles også *frigitte* eller *åpne ordrer* . Når en planlagt bestilling autoriseres, flyttes den til bestillingsdelen i den aktuelle modulen.
+Ved å autorisere planlagte ordre opprettes det reelle ordrer. Disse kalles også *frigitte* eller *åpne ordrer*. Når en planlagt bestilling autoriseres, flyttes den til bestillingsdelen i den aktuelle modulen.
 
-Du kan velge to autorisasjonsalternativer fra siden **Planlagte ordrer** :
+Du kan velge to autorisasjonsalternativer fra siden **Planlagte ordrer**:
 
 -   **Autoriser** – Dette vil autorisere én eller flere valgte, planlagte ordrer.
 -   **Autoriser alle** – Dette vil autorisere alle planlagte ordrer i filteret. Hvis du bruker **Autoriser alle** trenger du ikke velge den planlagte ordren. Alle planlagte ordrer i filteret bli autorisert. Dette alternativet kan være nyttig hvis du autoriserer et stort antall planlagte ordrer.
 
 > [!NOTE]
-> Du kan spore en planlagt ordre som ble autorisert fra **Autorisasjonshistorikk** under **skjemaet Planlagte ordrer > Vis > Autorisasjonshistorikk** .
+> Du kan spore en planlagt ordre som ble autorisert fra **Autorisasjonshistorikk** under **skjemaet Planlagte ordrer > Vis > Autorisasjonshistorikk**.
 
 ## <a name="parallelize-firming"></a>Parallelliser autorisasjon
-Hvis du planlegger å autorisere mange ordrer samtidig, kan parallellisering av kjøringen forbedre kjøretiden eller ytelsen. Dette alternativet er tilgjengelig ved autorisering av flere planlagte orderer med **Autoriser** eller **Autoriser alle** . Følgende parametere er tilgjengelige:
+Hvis du planlegger å autorisere mange ordrer samtidig, kan parallellisering av kjøringen forbedre kjøretiden eller ytelsen. Dette alternativet er tilgjengelig ved autorisering av flere planlagte orderer med **Autoriser** eller **Autoriser alle**. Følgende parametere er tilgjengelige:
 
--   **Parallellisering av autorisering** – Hvis **Ja** , vil autoriseringsprosessen parallelliseres med antallet tråder som er definert i **Antall tråder** .
+-   **Parallellisering av autorisering** – Hvis **Ja**, vil autoriseringsprosessen parallelliseres med antallet tråder som er definert i **Antall tråder**.
 -   **Antall tråder** – Bestemmer antall tråder som brukes til å parallellisere autoriseringsprosessen. Parameteren vises bare når **Parallellisering av autorisering** er satt til **Ja.**
 
 > [!NOTE]

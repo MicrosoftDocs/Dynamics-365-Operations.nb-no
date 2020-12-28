@@ -19,11 +19,11 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 045bb59642d766ac23939dee0900ea6911fe50fe
-ms.sourcegitcommit: c986d5234b81d31cc6d054298be6f6ec92c1754c
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "3890039"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4434187"
 ---
 # <a name="create-an-asset"></a>Opprette et aktivum
 
@@ -55,7 +55,7 @@ Arbeidsstedet som aktivumet er relatert til, vises i **Arbeidssted**-feltet. Hvi
 
 Du kan redigere **Aktivaprodusent** og **Aktivamodell** for aktivumet, som brukes til å administrere reservedeler, alternative reservedeler og jobbtypestandarder. Referer til [Aktivaprodusenter og -modeller](../setup-for-objects/product-and-model.md) for mer informasjon. Du kan også legge til informasjon om **modellår** og **serienummer**, om nødvendig.
 
-**Gjeldende livsløpstilstand** brukes til å definere om aktivaet er aktivt eller inaktivt. Når du oppretter et aktivum, settes stadiet alltid til den første fasen i aktivafasegruppen. Når du er klar til å aktivere et aktivum, klikker du på **Oppdater aktivatilstand**og velger deretter livsløpstilstanden du har definert som "aktivum aktivt", og klikk på **OK**.
+**Gjeldende livsløpstilstand** brukes til å definere om aktivaet er aktivt eller inaktivt. Når du oppretter et aktivum, settes stadiet alltid til den første fasen i aktivafasegruppen. Når du er klar til å aktivere et aktivum, klikker du på **Oppdater aktivatilstand** og velger deretter livsløpstilstanden du har definert som "aktivum aktivt", og klikk på **OK**.
 
 **Merk:** Når et aktivum er satt til "inaktiv", er det ikke lenger mulig å opprette arbeidsordrer for aktivumet. Du kan heller ikke planlegge forebyggende vedlikeholdsjobber for et inaktivt aktivum.
 

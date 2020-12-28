@@ -19,51 +19,51 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 962203726cc47e1c9642c53d671d4b63094f2b2c
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3979385"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4434557"
 ---
 # <a name="modify-a-service-bom"></a>Endre en servicestykkliste 
 
 [!include [banner](../includes/banner.md)]
 
 
-Du kan registrere historikken til et element i en servicestykkliste. Hver gang du oppdaterer en stykklistelinje, opprettes det en historikklinje i **Historikk** -ruten. Historikklinjen viser gjeldende status for stykklistelinjen.
+Du kan registrere historikken til et element i en servicestykkliste. Hver gang du oppdaterer en stykklistelinje, opprettes det en historikklinje i **Historikk**-ruten. Historikklinjen viser gjeldende status for stykklistelinjen.
 
 ## <a name="update-a-service-bom-element"></a>Oppdatere et element for en servicestykkliste
 
-1.  Klikk **Servicestyring** \> **Felles** \> **Serviceavtaler** \> **Serviceavtaler** .
+1.  Klikk **Servicestyring** \> **Felles** \> **Serviceavtaler** \> **Serviceavtaler**.
 
-2.  Klikk **Rediger** for å åpne detaljskjemaet **Serviceavtaler** .
+2.  Klikk **Rediger** for å åpne detaljskjemaet **Serviceavtaler**.
 
-3.  I **handlingsruten** klikker du **Serviceobjekter** for å åpne skjemaet **Serviceobjekter** .
+3.  I **handlingsruten** klikker du **Serviceobjekter** for å åpne skjemaet **Serviceobjekter**.
 
-4.  Velg objektet som du vil oppdatere en stykklistelinje for, og klikk deretter **Designer** .
+4.  Velg objektet som du vil oppdatere en stykklistelinje for, og klikk deretter **Designer**.
 
-5.  Velg stykklistelinjen du vil oppdatere i **Designer** -skjemaet , og klikk deretter **Rediger stykklistelinje** .
+5.  Velg stykklistelinjen du vil oppdatere i **Designer**-skjemaet , og klikk deretter **Rediger stykklistelinje**.
     
     > [!NOTE]
     > <P>I kategorien <STRONG>Oppsett</STRONG> merker du av for <STRONG>Rediger når du legger til</STRONG> hvis du vil at skjemaet <STRONG>Rediger stykklistelinje</STRONG> skal åpnes når du drar en linje til servicestykklisten.</P>
 
-6.  Angi antallet i **Antall** -feltet.
+6.  Angi antallet i **Antall**-feltet.
 
-7.  Hvis du vil opprette en serviceordrelinje for erstatningsvaren, som deretter kan faktureres, merker du av for **Opprett serviceordrelinje** .
+7.  Hvis du vil opprette en serviceordrelinje for erstatningsvaren, som deretter kan faktureres, merker du av for **Opprett serviceordrelinje**.
 
 8.  Klikk **OK** for å lukke skjemaet.
 
 ## <a name="delete-a-service-bom-line"></a>Slette en servicestykklistelinje
 
-1.  Klikk **Servicestyring** \> **Felles** \> **Serviceavtaler** \> **Serviceavtaler** .
+1.  Klikk **Servicestyring** \> **Felles** \> **Serviceavtaler** \> **Serviceavtaler**.
 
-2.  Klikk **Rediger** for å åpne detaljskjemaet **Serviceavtaler** .
+2.  Klikk **Rediger** for å åpne detaljskjemaet **Serviceavtaler**.
 
-3.  I **handlingsruten** klikker du **Serviceobjekter** for å åpne skjemaet **Serviceobjekter** .
+3.  I **handlingsruten** klikker du **Serviceobjekter** for å åpne skjemaet **Serviceobjekter**.
 
-4.  Merk av for objektet du vil slette en servicestykklistelinje fra, og klikk deretter **Designer** .
+4.  Merk av for objektet du vil slette en servicestykklistelinje fra, og klikk deretter **Designer**.
 
-5.  Velg stykklistelinjen du vil slette i **Designer** -skjemaet , og klikk deretter **Slett stykklistelinje** .
+5.  Velg stykklistelinjen du vil slette i **Designer**-skjemaet , og klikk deretter **Slett stykklistelinje**.
 
 ## <a name="see-also"></a>Se også
 

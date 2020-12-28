@@ -19,11 +19,11 @@ ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 948db1f7308896209e195613d50b1d66b807b1bf
-ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: nb-NO
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4016845"
+ms.locfileid: "4434756"
 ---
 # <a name="cross-docking-from-production-orders-to-outbound-docks"></a>Direkteoverføring fra produksjonsordrer til utleveringsporter
 
@@ -36,7 +36,7 @@ Dette emnet beskriver hvordan du styrer prosessen for direkteoverføring av mate
 
 Direkteoverføring fra produksjon til en utgående lokasjon er relevant for produsenter som produserer stort volum, og ideelt sett vil sende de ferdige produktene så snart de er rapportert som ferdige fra produksjonslinjene. Hensikten er å levere produkter til distribusjonssentre som er fysisk plassert nær kundeetterspørselen, i stedet for å bygge opp lager på området for produksjon.
 
-Hvis det ikke er umiddelbar etterspørsel etter et produkt, må det plasseres i lagerlokasjoner på produksjonsstedet. Denne prosessen kalles også *opportunistisk direkteoverføring* , noe som innebærer at det, hvis det er behov for levering av produktet, skal denne muligheten brukes i stedet for å sette produktet til intern lagring.
+Hvis det ikke er umiddelbar etterspørsel etter et produkt, må det plasseres i lagerlokasjoner på produksjonsstedet. Denne prosessen kalles også *opportunistisk direkteoverføring*, noe som innebærer at det, hvis det er behov for levering av produktet, skal denne muligheten brukes i stedet for å sette produktet til intern lagring.
 
 Eksemplet nedenfor viser tre varianter av en flyt som starter på slutten av produksjonslinjen (2).
 
@@ -96,14 +96,14 @@ I direkteoverføringspolicyen, kan du angi kriterier som krever at overføringso
 
 Når et produkt rapportert som fullført på produksjonslinjen, overføres det til en rampedørlokasjon der det lastes inn i en lastebil og overføres til et distribusjonssenter. Bruk selskapet USMF.
 
-1.  Aktiver en ny nummersekvens for direkteoverføring. Gå til  **nummerserier** -siden, og velg **Generer**. En veiviser fører deg gjennom prosessen.
-2.  Opprett en direkteoverføringspolicy. Gå til  **direkteoverføringspolicy** -siden, og opprett en ny policy med navnet **Direkteoverføring til overføringsordre**. Legg merke til at den enste arbeidsordretypen du kan velge **Utstedelse for overføring** , og den eneste direkteoverføringsstrategien som er tilgjengelig, er **dato og klokkeslett**.
-3.  Opprett en arbeidspolicy. Gå til **arbeidspolicyer** -siden, og opprett en ny policy for arbeid som heter **Direkteoverføring L0101**.
+1.  Aktiver en ny nummersekvens for direkteoverføring. Gå til  **nummerserier**-siden, og velg **Generer**. En veiviser fører deg gjennom prosessen.
+2.  Opprett en direkteoverføringspolicy. Gå til  **direkteoverføringspolicy**-siden, og opprett en ny policy med navnet **Direkteoverføring til overføringsordre**. Legg merke til at den enste arbeidsordretypen du kan velge **Utstedelse for overføring**, og den eneste direkteoverføringsstrategien som er tilgjengelig, er **dato og klokkeslett**.
+3.  Opprett en arbeidspolicy. Gå til **arbeidspolicyer**-siden, og opprett en ny policy for arbeid som heter **Direkteoverføring L0101**.
 4.  Definer laster slik at de opprettes automatisk for overføringsordrer. I lagerparameterne definerer du laster slik at de opprettes automatisk når det opprettes overføringsordrer. En last er en forutsetning for å kvalifisere overføringsordren for direkteoverføring.
-5.  Definer tilordning av varelast. Gå til **Tilordning av varelast** -siden, og angi en standard lastmal for **CarAudio** -varegruppen. Denne tilordningen setter automatisk inn lastmalen på lasten når overføringsordren opprettes.
+5.  Definer tilordning av varelast. Gå til **Tilordning av varelast**-siden, og angi en standard lastmal for **CarAudio**-varegruppen. Denne tilordningen setter automatisk inn lastmalen på lasten når overføringsordren opprettes.
 6.  Opprett en overføringsordre. Opprett overføringsordren for varenummer L0101. Antall = 20.
-7.  Frigi overføringsordren fra arbeidsområdet for lastplanlegging. I **Send** -kategorien velger du menyelementet Arbeidsområde for lastplanlegging, og i **Frigi** -menyen på lastlinjen, velger du **Frigi til lager**. Det finnes nå en åpen bølgelinje av typen **Utstedelse for overføring** for overføringsordren.
-8.  Opprett en produksjonsordre. Gå til **produksjonsordre** -listesiden, og opprett en produksjonsordre for produkt L0101. Antall = 20. Estimer og start produksjonsordren. Legg merke til at feltet **Poster plukkliste nå** er satt til **Nei**.
+7.  Frigi overføringsordren fra arbeidsområdet for lastplanlegging. I **Send**-kategorien velger du menyelementet Arbeidsområde for lastplanlegging, og i **Frigi**-menyen på lastlinjen, velger du **Frigi til lager**. Det finnes nå en åpen bølgelinje av typen **Utstedelse for overføring** for overføringsordren.
+8.  Opprett en produksjonsordre. Gå til **produksjonsordre**-listesiden, og opprett en produksjonsordre for produkt L0101. Antall = 20. Estimer og start produksjonsordren. Legg merke til at feltet **Poster plukkliste nå** er satt til **Nei**.
 9.  Ferdigmeld fra den mobile enheten. Gå til mobilenhetsportalen, og velg menyelementet **Ferdigmeld og plasser**. Ferdigmeld L0101 fra den fra den håndholdte enheten. Antall = 10. Legg merke til at plasseringslokasjonen er **RAMPEDØR**. Denne lokasjonen finner du fra lokasjonsdirektivet  **Utstedelse for overføring** for arbeidsordretypen **Plasser**. Legg også merke til at arbeid av typen **Utstedelse for overføring** er opprettet og fullført. Gå til overføringsordrens arbeidsdetaljer for å kontrollere arbeidet.
 10. Nå kan du rapportere ytterligere 10 stykker fra den mobile enheten. Legg merke til at plasseringslokasjonen igjen er **RAMPEDØR**. Legg også merke til at nytt arbeid av typen **Utstedelse for overføring** er opprettet for 10 deler.
 11. Nå kan du prøve å starte 20 stykker mer på produksjonsordren, og deretter prøve å ferdigmelde 20 stk. ved hjelp av den håndholdte enheten. Denne ganf forselås lokasjonen **LP-001** som plasseringslokasjon. Denne lokasjonen finner du fra lokasjonsdirektivet for **Plasser ferdigvarer**. Dette lokasjonsdirektivet brukes fordi det ikke finnes noen mulighet for direkteoverføring. Overføringsordren for LP-001 ble fullstendig oppfylt av de to aktivitetene for direkteoverføring i trinn 9 og 10. Legg merke til at arbeid av typen **Plasser ferdigvarer** ble opprettet og behandlet.
@@ -112,12 +112,12 @@ Når et produkt rapportert som fullført på produksjonslinjen, overføres det t
 
 Når et produkt som er rapportert som fullført på produksjonslinjen overføres en rampedørlokasjon som er identifisert av en avtaleplan for rampedørlokasjonene. Bruk selskapet USMF.
 
-1.  Endre direkteoverføringspolicyen. Endre direkteoverføringspolicyen du opprettet i scenario 1 ved å velge **Direkteoverføringsbehov krever en lokasjon** -merket.
+1.  Endre direkteoverføringspolicyen. Endre direkteoverføringspolicyen du opprettet i scenario 1 ved å velge **Direkteoverføringsbehov krever en lokasjon**-merket.
 2.  Opprett en ny overføringsordre.
 3.  Åpne **Arbeidsområde for lastplanlegging**.
-4.  Fra Arbeidsområde for lastplanlegging går du til **laster** -delen, og velger **avtalesplan** på **transport** -menyen for å opprette en ny avtaleplan. Legg merke til at avtaleplanen har en referanse til overføringsordren i **ordrenummer** -feltet. I **Planlagt startdato/-klokkeslett på lokasjon** -feltet kan du angi datoen og klokkeslettet for avtalen. Dato og klokkeslett vil bli brukt når direkteoverføringsbehov prioriteres i løpet av prosessen for direkteoverføring. Datoen og tidspunktet du angir i dette feltet, oppdateres av **Dato og klokkeslett for planlagt lastforsendelse** -feltet på den tilsvarende lasten. Plasseringen på hurtigfanen **leveringsdetaljer** bestemmer lokasjonen overføringsordren sendes fra.
+4.  Fra Arbeidsområde for lastplanlegging går du til **laster**-delen, og velger **avtalesplan** på **transport**-menyen for å opprette en ny avtaleplan. Legg merke til at avtaleplanen har en referanse til overføringsordren i **ordrenummer**-feltet. I **Planlagt startdato/-klokkeslett på lokasjon**-feltet kan du angi datoen og klokkeslettet for avtalen. Dato og klokkeslett vil bli brukt når direkteoverføringsbehov prioriteres i løpet av prosessen for direkteoverføring. Datoen og tidspunktet du angir i dette feltet, oppdateres av **Dato og klokkeslett for planlagt lastforsendelse**-feltet på den tilsvarende lasten. Plasseringen på hurtigfanen **leveringsdetaljer** bestemmer lokasjonen overføringsordren sendes fra.
 5.  Frigi til lageret fra **Arbeidsområde for lastplanlegging**.
-6.  Opprett en produksjonsordre for varenummer **L0101** , og sett statusen til **startet** , med et antall på 20.
+6.  Opprett en produksjonsordre for varenummer **L0101**, og sett statusen til **startet**, med et antall på 20.
 7.  Ferdigmeld fra den mobile enheten.
 8.  Gå til mobilenhetsportalen, og velg menyelementet **Ferdigmeld og plasser**.
 9.  Ferdigmeld varenummer **L0101** fra den fra den håndholdte enheten. Legg merke til at plasseringslokasjonen nå er **BAYDOOR 2**. Denne lokasjonen blir funnet fra avtaleplanen i stedet for lokasjonsdirektivet **overføringsmottak**.

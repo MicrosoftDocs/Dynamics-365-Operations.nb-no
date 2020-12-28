@@ -20,11 +20,11 @@ ms.author: mguada
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: dcc155a7fe5ca16e7543bf5917dbedadef987b62
-ms.sourcegitcommit: 175f9394021322c685c5b37317c2f649c81a731a
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "3826724"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4434494"
 ---
 # <a name="production-order-cost-analysis"></a>Kostnadsanalyse for produksjonsordrer
 
@@ -49,7 +49,7 @@ Diagrammet nedenfor viser de fire avvikene som utgjør differansen mellom en pro
 Du kan analysere produksjonsavvikene ved hjelp av siden **Avvik** eller rapporten **Produksjonsavvik**. Bruk visningsalternativene til å vise detaljer om avvik etter vare og operasjonsressurs eller etter kostnadsgruppe. Policyen for nedbryting av kostnader i lagerparameterne bestemmer om avvikene spores etter kostgruppe. Du kan også bruke visningsalternativene **enkelt**, **flere** og **totalt** til å vise summerte avvik. Informasjonen om detaljerte avvik kan hkelpe deg med å forstå hva som er kilden til de enkelte avvikene. For å forutsi avvik før du avslutter en produksjonsordre, kan du analysere den detaljerte informasjonen i rapporten **Kostnadsestimater og etterkalkuleringer**.
 
 ## <a name="cost-analysis-for-current-production-orders"></a>Kostnadsanalyse for gjeldende produksjonsordrer
-Egne rapporter inneholder informasjon om hver transaksjonstype. Bruk disse rapportene til å analysere kostnadene for rapporterte produksjonsaktiviteter. Det vises bare informasjon om gjeldende produksjonsordrer med statusen **Startet** eller**Ferdigmeldt**.
+Egne rapporter inneholder informasjon om hver transaksjonstype. Bruk disse rapportene til å analysere kostnadene for rapporterte produksjonsaktiviteter. Det vises bare informasjon om gjeldende produksjonsordrer med statusen **Startet** eller **Ferdigmeldt**.
 
 -   **Materialer i prosess**− Denne rapporten viser plukklistetransaksjoner som er rapportert mot gjeldende produksjonsordrer per en angitt transaksjonsdato. Rapporten viser mengden av en komponent som er tatt ut av lageret, og kostprisen for hver transaksjon. Bruk utvalgskriteriene på én enkelt komponentvare. Du kan for eksempel skrive ut informasjon om avgangsantallet mot gjeldende produksjonsordrer. Det utstedte antallet oppdateres ikke med antallet som er ferdigmeldt for den overordnede varen. Det faktiske antallet råvarer i prosess kan derfor være overvurdert.
 -   **Arbeid pågår**− Denne rapporten viser rutetransaksjoner (eller jobbtransaksjoner) som er rapportert mot gjeldende produksjonsordrer per en angitt transaksjonsdato. Rapporten viser timer, beløp og antall (både antall korrekte og antall feil) som er rapportert for hver transaksjon. Det inneholder også informasjon som operasjonsnummer, operasjons-ID og operasjonsressurs. I tillegg viser rapporten samlet tid og beløp for alle transaksjoner mot produksjonsordren, samt ferdigmeldt antall.

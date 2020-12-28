@@ -19,11 +19,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 540c0079a9fca8158ed507ce2bc50839bd585fc1
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3986702"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4434358"
 ---
 # <a name="view-undispatched-service-orders"></a>Vise ikke fordelte serviceordrer 
 
@@ -32,9 +32,9 @@ ms.locfileid: "3986702"
 
 Dette emnet beskriver hvordan du viser aktiviteter i en serviceordre som ikke har en arbeider tilordnet til dem fra en fordelingsgruppe.
 
-1.  Klikk **Servicestyring** \> **Periodisk** \> **Tjenestefordeling** .
+1.  Klikk **Servicestyring** \> **Periodisk** \> **Tjenestefordeling**.
 
-2.  I **Tjenestefordeling** -vinduet angir du startdatoen og sluttdatoen for perioden du vil vise fordelingsaktivitet for.
+2.  I **Tjenestefordeling**-vinduet angir du startdatoen og sluttdatoen for perioden du vil vise fordelingsaktivitet for.
 
 3.  Valgfritt: Velg om du vil ta med lukkede aktiviteter og beslektede team i resultatene.
 
@@ -46,7 +46,7 @@ Dette emnet beskriver hvordan du viser aktiviteter i en serviceordre som ikke ha
 
 
 
-5.  Hvis du vil vise en liste over serviceordrer som ikke har en tilordnet et fordelingsgruppe, klikker du kategorien **Ikke fordelt** .
+5.  Hvis du vil vise en liste over serviceordrer som ikke har en tilordnet et fordelingsgruppe, klikker du kategorien **Ikke fordelt**.
 
 ## <a name="see-also"></a>Se også
 

@@ -20,11 +20,11 @@ ms.author: crytt
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: c3865bfc3b66c018f836e21bbddf658de0351e57
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3211382"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4434252"
 ---
 # <a name="operations-scheduling-options"></a>Alternativer for grovplanlegging
 
@@ -97,7 +97,7 @@ Når referanser avhenger av produksjonsordrer, er de også kjent som underproduk
 
 ### <a name="synchronize-references"></a>Synkroniser referanser
 
-Du kan synkronisere referanser med produksjonsordren. Hvis dette alternativet velges, flyttes datoene for underproduksjonene og justeres når det gjøres endringer i produksjonsordreplanen. Hvis en produksjonsordre har én eller flere underproduksjoner, kan det hende at du vil planlegge underproduksjonene sammen med hovedproduksjonen. I så fall kan ikke hovedproduksjonen startes før de tilknyttede underproduksjonene er fullført. Velg derfor denne avmerkingsboksen hvis planleggingen av underproduksjoner skal baseres på start- og sluttidspunkt for den valgte produksjonen. Du kan bare merke av i denne avmerkingsboksen hvis det også er merket av for**Planreferanser**.
+Du kan synkronisere referanser med produksjonsordren. Hvis dette alternativet velges, flyttes datoene for underproduksjonene og justeres når det gjøres endringer i produksjonsordreplanen. Hvis en produksjonsordre har én eller flere underproduksjoner, kan det hende at du vil planlegge underproduksjonene sammen med hovedproduksjonen. I så fall kan ikke hovedproduksjonen startes før de tilknyttede underproduksjonene er fullført. Velg derfor denne avmerkingsboksen hvis planleggingen av underproduksjoner skal baseres på start- og sluttidspunkt for den valgte produksjonen. Du kan bare merke av i denne avmerkingsboksen hvis det også er merket av for **Planreferanser**.
 
 ## <a name="cancellation"></a>Annullering
 ### <a name="cancel-queue-time"></a>Avbryt køtid

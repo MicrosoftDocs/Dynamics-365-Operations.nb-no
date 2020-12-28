@@ -19,11 +19,11 @@ ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 8.0.0
 ms.openlocfilehash: 2ef0a43480e547c6bd19d5f9b7377ed8b73425e7
-ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: nb-NO
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4016891"
+ms.locfileid: "4434757"
 ---
 # <a name="batch-balancing"></a>Partibalansering
 
@@ -97,7 +97,7 @@ Ingrediens B har basisattributt X og et målnivå på 30, og den er inkludert i 
 
 ### <a name="none"></a>None
 
-Hvis du bruker prosessen for partibalansering når ingredienstypen er **ingen** , og estimert antall og balansert antall i formellinjen i partiordren er lik.
+Hvis du bruker prosessen for partibalansering når ingredienstypen er **ingen**, og estimert antall og balansert antall i formellinjen i partiordren er lik.
 
 **Eksempel**
 
@@ -115,7 +115,7 @@ Forholdet mellom en aktiv ingrediens og en komplementær ingrediens defineres p�
 
 Følg disse trinnene for å definere relasjoner mellom ingredienser.
 
-1.  Velg **Produktinformasjonsbehandling** \> **Stykklister og formler** \> **Formler** , åpne en formellinje, og velg deretter **Ingredienser** for å åpne siden **Kompensasjon prinsippet**.
+1.  Velg **Produktinformasjonsbehandling** \> **Stykklister og formler** \> **Formler**, åpne en formellinje, og velg deretter **Ingredienser** for å åpne siden **Kompensasjon prinsippet**.
 
 2.  Merk linjen som representerer et kompensasjonsprinsipp og velg deretter den aktive ingrediensen som skal kompenseres.
 
@@ -156,7 +156,7 @@ Balansert antall fyllingrediens beregnes som differansen mellom partistørrelsen
 ---------------------------
 
 Prosessen for partibalansering utføres fra siden **Partibalansering**.
-Velg **Kostnadsstyring** \> **Partiordrer** , og velg deretter **Partibalansering** i kategorien **Prosess**. Partibalansering er tilgjengelig for partiordrer som har status **Startet**.
+Velg **Kostnadsstyring** \> **Partiordrer**, og velg deretter **Partibalansering** i kategorien **Prosess**. Partibalansering er tilgjengelig for partiordrer som har status **Startet**.
 
 Vanligvis kan partibalansering bare brukes for partiordrer hvis formelen har minst én formellinjen der ingredienstypen er **Aktiv**. (For unntaket på denne regelen kan du se delen "Partiordrer som ikke er tilgjengelige for partibalansering" senere i dette emnet.)
 
@@ -171,7 +171,7 @@ Prosessen for partibalansering kan deles inn i to delprosesser:
 I prosessen for partiblansering av ingredienser blir antall ingredienser som skal brukes i et produksjonsparti, beregnet ut fra de valgte partiene som har aktive ingredienser. Som regel kan beregningen bare fullføres når det er fullstendig dekning av alle ingrediensene. Du kan ikke balansere bare en del av et parti som partiordren er konfigurert til å produsere.
 
 [!NOTE]
-Du kan ikke lagre en beregning, og deretter fullføre prosessen for partibalansering senere. Hvis du lukker siden **Partibalansering** , må du gjenta beregningen for å fullføre prosessen.
+Du kan ikke lagre en beregning, og deretter fullføre prosessen for partibalansering senere. Hvis du lukker siden **Partibalansering**, må du gjenta beregningen for å fullføre prosessen.
 
 ### <a name="confirm-and-release-the-formula"></a>Bekreft og frigi formelen
 

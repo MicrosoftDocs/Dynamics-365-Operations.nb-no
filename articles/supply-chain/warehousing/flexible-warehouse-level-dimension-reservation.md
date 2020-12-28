@@ -17,11 +17,11 @@ ms.author: perlynne
 ms.search.validFrom: 2020-01-15
 ms.dyn365.ops.version: 10.0.13
 ms.openlocfilehash: b9bd4e67ed64218f9c4ac87bd143f73680af9ac4
-ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: nb-NO
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4017650"
+ms.locfileid: "4434736"
 ---
 # <a name="flexible-warehouse-level-dimension-reservation-policy"></a>Fleksibel retningslinje for dimensjonsreservasjon på lagernivå
 
@@ -59,25 +59,25 @@ Selv om "Parti under\[plassering\]"-reservasjonshierarkiet tjener selskapets for
 
 ### <a name="allowing-reservation-of-a-specific-batch-on-the-sales-order"></a>Tillate reservering av et bestemt parti i salgsordren
 
-For å imøtekomme ønsket fleksibilitet i partireservasjonsatferden for varer som er assosiert med et "Parti under\[plassering\]"-beholdningsreservasjonshierarki, må beholdningsledere merke av i **Tillat reservasjon på etterspørselsordre** -avmerkingsboksen for **Partinummer** -nivået på **Beholdningsreservasjonshierarkier** -siden.
+For å imøtekomme ønsket fleksibilitet i partireservasjonsatferden for varer som er assosiert med et "Parti under\[plassering\]"-beholdningsreservasjonshierarki, må beholdningsledere merke av i **Tillat reservasjon på etterspørselsordre**-avmerkingsboksen for **Partinummer**-nivået på **Beholdningsreservasjonshierarkier**-siden.
 
 ![Gjøre beholdningsreservasjonshierarkiet fleksibelt](media/Flexible-inventory-reservation-hierarchy.png)
 
-Når **Partinummer** -nivået i hierarkiet er valgt, vil alle dimensjoner over det nivået og opp gjennom **Plassering** -nivået valgt automatisk. (Som standard er alle dimensjoner over **Plassering** -nivået forhåndsvalgt.) Denne atferden gjenspeiler logikken der alle dimensjoner i området mellom partinummeret og plasseringen også reserveres automatisk etter at du har reservert et spesifikt partinummer på ordrelinjen.
+Når **Partinummer**-nivået i hierarkiet er valgt, vil alle dimensjoner over det nivået og opp gjennom **Plassering**-nivået valgt automatisk. (Som standard er alle dimensjoner over **Plassering**-nivået forhåndsvalgt.) Denne atferden gjenspeiler logikken der alle dimensjoner i området mellom partinummeret og plasseringen også reserveres automatisk etter at du har reservert et spesifikt partinummer på ordrelinjen.
 
 > [!NOTE]
-> **Tillat reservasjon på etterspørselsordre** -avmerkingsboksen gjelder bare for reservasjonshierarkinivåer som er under dimensjonen til lagerplasseringen.
+> **Tillat reservasjon på etterspørselsordre**-avmerkingsboksen gjelder bare for reservasjonshierarkinivåer som er under dimensjonen til lagerplasseringen.
 >
 > **Partinummer** og **Nummerskilt** er de eneste nivåene i hierarkiet som er åpne for den fleksible reservasjonsretningslinjen. Med andre ord kan du ikke merke av for **Tillat reservasjon på etterspørselsordre** for nivået **Plassering** eller **Serienummer**.
 >
-> Hvis reservasjonshierarkiet inkluderer serienummerdimensjonen (som alltid må være under **Partinummer** -nivået), og hvis du har aktivert partispesifikk reservasjon for partinummeret, vil systemet fortsette å håndtere serienummerreservasjon og plukkeoperasjoner, basert på reglene som gjelder for "Serienr. under\[plassering\]"-reservasjonsretningslinjen.
+> Hvis reservasjonshierarkiet inkluderer serienummerdimensjonen (som alltid må være under **Partinummer**-nivået), og hvis du har aktivert partispesifikk reservasjon for partinummeret, vil systemet fortsette å håndtere serienummerreservasjon og plukkeoperasjoner, basert på reglene som gjelder for "Serienr. under\[plassering\]"-reservasjonsretningslinjen.
 
-Du kan når som helst tillate partispesifikk reservasjon for et eksisterende "Parti under\[plassering\]"-reservasjonshierarki i distribusjonen. Denne endringen påvirker ikke reservasjoner og åpent lagerarbeid som ble opprettet før endringen fant sted. **Tillat reservasjon på etterspørselsordre** -avmerkingsboksen kan imidlertid ikke tømmes hvis det finnes beholdningstransaksjoner med utstedelsestypen **Reservert bestilt** , **Reservert fysisk** eller **Bestilt** for én eller flere varer som er tilknyttet til dette reservasjonshierarkiet.
+Du kan når som helst tillate partispesifikk reservasjon for et eksisterende "Parti under\[plassering\]"-reservasjonshierarki i distribusjonen. Denne endringen påvirker ikke reservasjoner og åpent lagerarbeid som ble opprettet før endringen fant sted. **Tillat reservasjon på etterspørselsordre**-avmerkingsboksen kan imidlertid ikke tømmes hvis det finnes beholdningstransaksjoner med utstedelsestypen **Reservert bestilt**, **Reservert fysisk** eller **Bestilt** for én eller flere varer som er tilknyttet til dette reservasjonshierarkiet.
 
 > [!NOTE]
-> Hvis eksisterende reservasjonshierarki for en vare ikke tillater partispesifikasjon på ordren, kan du tilordne den på nytt til et reservasjonshierarki som tillater partispesifikasjon, forutsatt at hierarkinivåstrukturen er lik i begge hierarkier. Bruk **Endre reservasjonshierarki for varer** -funksjonen til å gjennomføre omtilordningen. Denne endringen kan være relevant når du vil forhindre fleksibel partireservering for et delsett av partisporede elementer, men tillate den for resten av produktporteføljen.
+> Hvis eksisterende reservasjonshierarki for en vare ikke tillater partispesifikasjon på ordren, kan du tilordne den på nytt til et reservasjonshierarki som tillater partispesifikasjon, forutsatt at hierarkinivåstrukturen er lik i begge hierarkier. Bruk **Endre reservasjonshierarki for varer**-funksjonen til å gjennomføre omtilordningen. Denne endringen kan være relevant når du vil forhindre fleksibel partireservering for et delsett av partisporede elementer, men tillate den for resten av produktporteføljen.
 
-Uavhengig av om du har merket av i **Tillat reservasjon på etterspørselsordre** -avmerkingsboksen, gjelder følgende: Hvis du ikke vil reservere et spesifikt partinummer for varen på en ordrelinje, vil standard lagerstyringslogikk som er gyldig for et "Parti under\[plassering\]"-reservasjonshierarki, fremdeles gjelde.
+Uavhengig av om du har merket av i **Tillat reservasjon på etterspørselsordre**-avmerkingsboksen, gjelder følgende: Hvis du ikke vil reservere et spesifikt partinummer for varen på en ordrelinje, vil standard lagerstyringslogikk som er gyldig for et "Parti under\[plassering\]"-reservasjonshierarki, fremdeles gjelde.
 
 ### <a name="reserve-a-specific-batch-number-for-a-customer-order"></a>Reservere et bestemt partinummer for en kundeordre
 
@@ -96,26 +96,26 @@ Det følgende eksempelet viser ende-til-ende-flyten.
 
 ## <a name="example-scenario-batch-number-allocation"></a>Eksempelscenario: Tildeling av partinummer
 
-For dette eksempelet må demonstrasjonsdata være installert, og du må bruke **USMF** -demonstrasjonsdataselskapet.
+For dette eksempelet må demonstrasjonsdata være installert, og du må bruke **USMF**-demonstrasjonsdataselskapet.
 
 ### <a name="set-up-an-inventory-reservation-hierarchy-to-allow-batch-specific-reservation"></a><a name="Example-batch-allocation"></a>Sette opp et beholdningsreservasjonshierarki for å tillate partispesifikk reservasjon
 
 1. Gå til **Lagerstyring** \> **Oppsett** \> **Beholdning \> Reservasjonshierarki**.
 2. Velg **Ny**.
-3. I **Navn** -feltet skriver du inn et navn (for eksempel **BatchFlex** ).
-4. I **Beskrivelse** -feltet skriver du inn en beskrivelse (for eksempel **Parti under fleksibelt** ).
-5. I **Valgt** -feltet velger du **Serienummer** og **Eier** , og velg deretter venstre pilknapp for å flytte dem til **Tilgjengelig** -feltet.
+3. I **Navn**-feltet skriver du inn et navn (for eksempel **BatchFlex**).
+4. I **Beskrivelse**-feltet skriver du inn en beskrivelse (for eksempel **Parti under fleksibelt**).
+5. I **Valgt**-feltet velger du **Serienummer** og **Eier**, og velg deretter venstre pilknapp for å flytte dem til **Tilgjengelig**-feltet.
 6. Velg **OK**.
-7. I raden for **Partinummer** -dimensjonsnivået merker du av i **Tillat reservasjon på etterspørselsordre** -avmerkingsboksen. **Nummerskilt** - og **Plassering** -nivåene velges automatisk, og du kan ikke fjerne avmerkingen i avmerkingsboksene for dem.
+7. I raden for **Partinummer**-dimensjonsnivået merker du av i **Tillat reservasjon på etterspørselsordre**-avmerkingsboksen. **Nummerskilt**- og **Plassering**-nivåene velges automatisk, og du kan ikke fjerne avmerkingen i avmerkingsboksene for dem.
 8. Velg **Lagre**.
 
 ### <a name="create-a-new-released-product"></a>Opprette et nytt frigitt produkt
 
 1. Angi de tre hoveddataparameterne for produktet ved å bruke disse verdiene:
 
-    - I **Lagringsdimensjonsgruppe** -feltet velger du **Lager**.
-    - I **Sporingsdimensjonsgruppe** -feltet velger du **Parti-fys**.
-    - I **Reservasjonshierarki** -feltet velger du **BatchFlex**.
+    - I **Lagringsdimensjonsgruppe**-feltet velger du **Lager**.
+    - I **Sporingsdimensjonsgruppe**-feltet velger du **Parti-fys**.
+    - I **Reservasjonshierarki**-feltet velger du **BatchFlex**.
 
 2. Opprett to partinumre, for eksempel **B11** og **B22**.
 3. Legg til varekvantiteter i beholdningen på lager ved hjelp av følgende verdier:
@@ -130,23 +130,23 @@ For dette eksempelet må demonstrasjonsdata være installert, og du må bruke **
 
 1. Gå til **Salg og markedsføring** \> **Salgsordrer** \> **Alle salgsordrer**.
 2. Velg **Ny**.
-3. På salgsordretoppteksten, i **Kundekonto** -feltet angir du **US-003**.
-4. Legg til en linje for den nye varen, og angi **10** som kvantiteten. Sørg for at **Lager** -feltet er satt til **24**.
-5. På **Salgsordrelinjer** -hurtigfanen velger du **Beholdning** , og går deretter til **Vedlikehold** -gruppen og velger **Partireservasjon**. **Partireservasjon** -siden viser en liste over partier som er tilgjengelige for reservasjon for ordrelinjen. For dette eksempelet viser den en kvantitet på **20** for partinummer **B11** og en kvantitet på **10** for partinummer **B22**. Vær oppmerksom på at **Partireservasjon** -siden ikke kan åpnes fra en linje hvis varen på denne linjen er assosiert med "Parti under\[plassering\]"-reservasjonshierarki med mindre den er satt opp for å tillate partispesifikk reservasjon.
+3. På salgsordretoppteksten, i **Kundekonto**-feltet angir du **US-003**.
+4. Legg til en linje for den nye varen, og angi **10** som kvantiteten. Sørg for at **Lager**-feltet er satt til **24**.
+5. På **Salgsordrelinjer**-hurtigfanen velger du **Beholdning**, og går deretter til **Vedlikehold**-gruppen og velger **Partireservasjon**. **Partireservasjon**-siden viser en liste over partier som er tilgjengelige for reservasjon for ordrelinjen. For dette eksempelet viser den en kvantitet på **20** for partinummer **B11** og en kvantitet på **10** for partinummer **B22**. Vær oppmerksom på at **Partireservasjon**-siden ikke kan åpnes fra en linje hvis varen på denne linjen er assosiert med "Parti under\[plassering\]"-reservasjonshierarki med mindre den er satt opp for å tillate partispesifikk reservasjon.
 
     > [!NOTE]
-    > Hvis du vil reservere et bestemt parti for en salgsordre, må du bruke **Partireservasjon** -siden.
+    > Hvis du vil reservere et bestemt parti for en salgsordre, må du bruke **Partireservasjon**-siden.
     >
     > Hvis du oppgir partinummeret direkte på salgsordrelinjen, vil systemet fungere som om du skrev inn en spesifikk partiverdi for en vare som er underlagt "Parti under\[plassering\]"-reservasjonsretningslinjen. Når du lagrer linjen, får du en advarselmelding. Hvis du bekrefter at partinummeret skal angis direkte på ordrelinjen, vil ikke linjen bli håndtert av den vanlige lagerbehandlingslogikken.
     >
-    > Hvis du reserverer kvantiteten fra **Reservasjon** -siden, vil ikke noe spesifikt parti bli reservert, og kjøringen av lageroperasjoner for linjen vil følge reglene som gjelder under "Parti under\[plassering\]"-reservasjonsretningslinjen.
+    > Hvis du reserverer kvantiteten fra **Reservasjon**-siden, vil ikke noe spesifikt parti bli reservert, og kjøringen av lageroperasjoner for linjen vil følge reglene som gjelder under "Parti under\[plassering\]"-reservasjonsretningslinjen.
 
     Generelt fungerer og samhandles denne siden med på samme måte som den fungerer og samhandles med for varer som har et tilknyttet reservasjonshierarki i "Parti over\[plassering\]"-typen. Følgende unntak gjelder imidlertid:
 
-    - **Partinumre bundet til kildelinjen** -hurtigfanen viser partinumrene som er reservert for ordrelinjen. Partiverdiene i rutenettet vises gjennom oppfyllingssyklusen til ordrelinjen, inkludert lagerbehandlingsstadiene. På **Oversikt** -hurtigfanen vises vanlig bestillingslinjereservasjon (det vil si reservasjon som utføres for dimensjonene over **Plassering** -nivået) derimot i rutenettet opp til tidspunktet lagerarbeidet opprettes på. Deretter overtar arbeidsenheten linjereservasjonen, og linjereservasjonen vises ikke lenger på siden. **Partinumre bundet til kildelinjen** -hurtigfanen bidrar til å garantere at salgsordreprosessoren kan vise partinumrene som ble bundet til kundens ordre, når som helst i løpet av livssyklusen, opp gjennom faktureringen.
-    - I tillegg til å reservere et bestemt parti kan en bruker manuelt velge den partispesifikke plasseringen og nummerskiltet i stedet for å la systemet velge dem automatisk. Denne funksjonen er knyttet til utformingen av den ordreigangsatte partireservasjonsmekanismen. Som nevnt tidligere, gjelder følgende: Når et partinummer er reservert for en vare under "Parti under\[plassering\]"-reservasjonsretningslinjen må systemet reservere alle dimensjoner opp gjennom plasseringen. Derfor vil lagerarbeid ha de samme lagringsdimensjonene som ble reservert av brukerne som jobbet med ordrene, og det kan hende at det ikke alltid representerer varelagerplasseringen som er praktisk, eller til og med mulig, for plukkeoperasjoner. Hvis ordreprosessorer er klare over lagerbegrensningene, kan det være lurt manuelt å velge de spesifikke plasseringene og nummerskiltene når de reserverer et parti. I slike tilfeller må brukeren bruke **Visningsdimensjoner** -funksjonaliteten på sidetoppteksten og legge til plasseringen og nummerskiltet i rutenettet på **Oversikt** -hurtigfanen.
+    - **Partinumre bundet til kildelinjen**-hurtigfanen viser partinumrene som er reservert for ordrelinjen. Partiverdiene i rutenettet vises gjennom oppfyllingssyklusen til ordrelinjen, inkludert lagerbehandlingsstadiene. På **Oversikt**-hurtigfanen vises vanlig bestillingslinjereservasjon (det vil si reservasjon som utføres for dimensjonene over **Plassering**-nivået) derimot i rutenettet opp til tidspunktet lagerarbeidet opprettes på. Deretter overtar arbeidsenheten linjereservasjonen, og linjereservasjonen vises ikke lenger på siden. **Partinumre bundet til kildelinjen**-hurtigfanen bidrar til å garantere at salgsordreprosessoren kan vise partinumrene som ble bundet til kundens ordre, når som helst i løpet av livssyklusen, opp gjennom faktureringen.
+    - I tillegg til å reservere et bestemt parti kan en bruker manuelt velge den partispesifikke plasseringen og nummerskiltet i stedet for å la systemet velge dem automatisk. Denne funksjonen er knyttet til utformingen av den ordreigangsatte partireservasjonsmekanismen. Som nevnt tidligere, gjelder følgende: Når et partinummer er reservert for en vare under "Parti under\[plassering\]"-reservasjonsretningslinjen må systemet reservere alle dimensjoner opp gjennom plasseringen. Derfor vil lagerarbeid ha de samme lagringsdimensjonene som ble reservert av brukerne som jobbet med ordrene, og det kan hende at det ikke alltid representerer varelagerplasseringen som er praktisk, eller til og med mulig, for plukkeoperasjoner. Hvis ordreprosessorer er klare over lagerbegrensningene, kan det være lurt manuelt å velge de spesifikke plasseringene og nummerskiltene når de reserverer et parti. I slike tilfeller må brukeren bruke **Visningsdimensjoner**-funksjonaliteten på sidetoppteksten og legge til plasseringen og nummerskiltet i rutenettet på **Oversikt**-hurtigfanen.
 
-6. På **Partireservasjon** -siden velger du linjen for parti **B11** , og velger deretter **Reserver linje**. Det er ikke angitt noen logikk for tilordning av plasseringen og nummerskilt under automatisk reservasjon. Du kan angi kvantiteten manuelt i **Reservasjon** -feltet. Vær oppmerksom på at **Partinumre bundet til kildelinjen** -hurtigfanen, parti **B11** vises som **Bind**.
+6. På **Partireservasjon**-siden velger du linjen for parti **B11**, og velger deretter **Reserver linje**. Det er ikke angitt noen logikk for tilordning av plasseringen og nummerskilt under automatisk reservasjon. Du kan angi kvantiteten manuelt i **Reservasjon**-feltet. Vær oppmerksom på at **Partinumre bundet til kildelinjen**-hurtigfanen, parti **B11** vises som **Bind**.
 
     ![Binde et spesifikt partinummer til en salgsordrelinje på Partireservasjon-siden](media/Batch-reservation-form-with-order-committed-reservation.png)
 
@@ -161,14 +161,14 @@ For dette eksempelet må demonstrasjonsdata være installert, og du må bruke **
 
 8. Gjennomgå varens lagertransaksjoner som er knyttet til salgsordrelinjereservasjonen.
 
-    - En transaksjon der **Referanse** -feltet er satt til **Salgsordre** og **Utsted** -feltet er satt til **Reservert fysisk** , representerer ordrelinjereservasjonen for beholdningsdimensjonene over **Plassering** -nivået. I henhold til varens beholdningsreservasjonshierarki er disse dimensjonene sted, lager og beholdningsstatus.
-    - En transaksjon der **Referanse** -feltet er satt til **Ordreigangsatt reservasjon** og **Utsted** -feltet er satt til **Reservert fysisk** , representerer ordrelinjereservasjonen for det spesifikke partiet og alle beholdningsdimensjonene over det. I henhold til varens beholdningsreservasjonshierarki er disse dimensjonene partinummer og plassering. I dette eksempelet er plasseringen **Bulk-001**.
+    - En transaksjon der **Referanse**-feltet er satt til **Salgsordre** og **Utsted**-feltet er satt til **Reservert fysisk**, representerer ordrelinjereservasjonen for beholdningsdimensjonene over **Plassering**-nivået. I henhold til varens beholdningsreservasjonshierarki er disse dimensjonene sted, lager og beholdningsstatus.
+    - En transaksjon der **Referanse**-feltet er satt til **Ordreigangsatt reservasjon** og **Utsted**-feltet er satt til **Reservert fysisk**, representerer ordrelinjereservasjonen for det spesifikke partiet og alle beholdningsdimensjonene over det. I henhold til varens beholdningsreservasjonshierarki er disse dimensjonene partinummer og plassering. I dette eksempelet er plasseringen **Bulk-001**.
 
 9. I salgsordretoppteksten velger du **Lager** \> **Handlinger** \> **Frigi til lager**. Ordrelinjen er nå bølgete, og det opprettes en belastning og et arbeid.
 
 ### <a name="review-and-process-warehouse-work-that-has-order-committed-batch-numbers"></a>Gjennomgå og behandle lagerarbeid som har ordreigangsatte partinumre
 
-1. I **Salgsordrer** -hurtigfanen velger du **Lager** \> **Arbeidsdetaljer**.
+1. I **Salgsordrer**-hurtigfanen velger du **Lager** \> **Arbeidsdetaljer**.
 
     Arbeidet som håndterer plukkoperasjonen for partikvantiteter som er bundet til salgsordrelinjen, har følgende egenskaper:
 
@@ -177,18 +177,18 @@ For dette eksempelet må demonstrasjonsdata være installert, og du må bruke **
 
         ![Lagerbeholdningstransaksjon for arbeid som stammer fra ordreigangsatt reservasjon](media/Work-inventory-transactions-for-order-committed-reservation.png)
 
-    - Etter at arbeidet er opprettet, blir varens beholdningstransaksjon der **Referanse** -feltet er satt til **Ordreigangsatt reservasjon** , fjernet. Beholdningstransaksjonen der **Referanse** -feltet er satt til **Arbeid** , inneholder nå den fysiske reservasjonen for alle beholdningsdimensjoner for kvantiteten.
+    - Etter at arbeidet er opprettet, blir varens beholdningstransaksjon der **Referanse**-feltet er satt til **Ordreigangsatt reservasjon**, fjernet. Beholdningstransaksjonen der **Referanse**-feltet er satt til **Arbeid**, inneholder nå den fysiske reservasjonen for alle beholdningsdimensjoner for kvantiteten.
 
         Lageroperasjoner kan fortsette å håndtere utførelsen av arbeidet på vanlig måte. Instruksjonene på mobilenheten vil imidlertid instruere arbeideren om å velge et bestemt partinummer. I lagermiljøer der plasseringene er nummerskiltkontrollert, gjelder følgende: Etter at en arbeider har nådd en plassering som lagrer det samme partiet på flere nummerskilt, kan han eller hun velge fra et hvilket som helst nummerskilt som ikke allerede er reservert (for eksempel av en annen ordreigangsatt reservasjon eller arbeid som stammer fra en reservasjon av denne typen.)
 
         Hvis det viser seg at det blir upraktisk å velge fra plasseringen som er spesifisert på arbeidslinjen, kan lageroperatørene bruke en av følgende handlinger for å omdirigere plukking av det spesifikke partiet fra en mer praktisk plassering:
 
-        - Standardhandlingen **Overstyr plassering** på en mobilenhet (forutsatt at lagerarbeiderens **Tillat overstyring av plukkplassering** -innstilling er aktivert)
-        - **Endre plassering** -handlingen på **Arbeidslistedetaljer** -siden. 
+        - Standardhandlingen **Overstyr plassering** på en mobilenhet (forutsatt at lagerarbeiderens **Tillat overstyring av plukkplassering**-innstilling er aktivert)
+        - **Endre plassering**-handlingen på **Arbeidslistedetaljer**-siden. 
 
 2. Fullfør plukking og plassering av arbeidet på mobilenheten.
 
-    Antallet **10** for partinummer **B11** er nå valgt for salgsordrelinjen og plassert i **Båsdør** -plasseringen. På dette tidspunktet er det klart til å lastes på lastebilen og sendes til kundens adresse.
+    Antallet **10** for partinummer **B11** er nå valgt for salgsordrelinjen og plassert i **Båsdør**-plasseringen. På dette tidspunktet er det klart til å lastes på lastebilen og sendes til kundens adresse.
 
 ## <a name="flexible-license-plate-reservation"></a>Fleksibel nummerskiltreservering
 
@@ -208,23 +208,23 @@ Før du kan bruke fleksibel nummerskiltreservering, må to funksjoner aktiveres 
 
 ### <a name="reserve-a-specific-license-plate-on-the-sales-order"></a>Reservere et bestemt nummerskilt på salgsordren
 
-Hvis du vil aktivere nummerskiltreservering for en ordre, må du merke av for **Tillat reservasjon på etterspørselsordre** for **Nummerskilt** -nivået på siden **Beholdningsreservasjonshierarkier** for hierarkiet som er knyttet til den aktuelle varen.
+Hvis du vil aktivere nummerskiltreservering for en ordre, må du merke av for **Tillat reservasjon på etterspørselsordre** for **Nummerskilt**-nivået på siden **Beholdningsreservasjonshierarkier** for hierarkiet som er knyttet til den aktuelle varen.
 
 ![Siden Beholdningsreservasjonshierarkier for et fleksibelt hierarki for nummerskiltreservasjon](media/Flexible-LP-reservation-hierarchy.png)
 
-Du kan aktivere reservasjon av nummerskilt for ordren på et hvilket som helst sted i distribusjonen. Denne endringen påvirker ikke reservasjoner eller åpent lagerarbeid som ble opprettet før endringen fant sted. Du kan imidlertid ikke fjerne merket for **Tillat reservasjon på etterspørselsordre** hvis det finnes åpne utgående beholdningstransaksjoner med utstedelsesstatusen *På bestilling* , *Reservert bestilt* eller *Reservert fysisk* for én eller flere varer som er tilknyttet til dette reservasjonshierarkiet.
+Du kan aktivere reservasjon av nummerskilt for ordren på et hvilket som helst sted i distribusjonen. Denne endringen påvirker ikke reservasjoner eller åpent lagerarbeid som ble opprettet før endringen fant sted. Du kan imidlertid ikke fjerne merket for **Tillat reservasjon på etterspørselsordre** hvis det finnes åpne utgående beholdningstransaksjoner med utstedelsesstatusen *På bestilling*, *Reservert bestilt* eller *Reservert fysisk* for én eller flere varer som er tilknyttet til dette reservasjonshierarkiet.
 
-Selv om det er merket av for **Tillat reservasjon på etterspørselsordre** for **Nummerskilt** -nivået, er det fremdeles mulig *ikke* å reservere et bestemt nummerskilt i ordren. I dette tilfellet gjelder standard lageroperasjonslogikk som er gyldig for reservasjonshierarkiet.
+Selv om det er merket av for **Tillat reservasjon på etterspørselsordre** for **Nummerskilt**-nivået, er det fremdeles mulig *ikke* å reservere et bestemt nummerskilt i ordren. I dette tilfellet gjelder standard lageroperasjonslogikk som er gyldig for reservasjonshierarkiet.
 
 Hvis du vil reservere et bestemt nummerskilt, må du bruke en prosess av typen [åpen dataprotokoll (OData)](../../fin-ops-core/dev-itpro/data-entities/odata.md). I appen kan du foreta denne reservasjonen direkte fra en salgsordre ved å bruke alternativet **Ordreigangsatte reservasjoner per nummerskilt** for kommandoen **Åpne i Excel**. I enhetsdataene som åpnes i Excel-tillegget, må du angi følgende data for reservasjon, og deretter velge **Publiser** for å sende dataene tilbake til Supply Chain Management:
 
-- Referanse (bare *Salgsordre* -verdien støttes.)
+- Referanse (bare *Salgsordre*-verdien støttes.)
 - Ordrenummer (verdien kan avledes fra partiet).
 - Parti-ID
 - Nummerskilt
 - Antall
 
-Hvis du må reservere et bestemt nummerskilt for en partisporet vare, bruker du **Partireservasjon** -siden som beskrevet i dele [Angi salgsordredetaljer](#sales-order-details).
+Hvis du må reservere et bestemt nummerskilt for en partisporet vare, bruker du **Partireservasjon**-siden som beskrevet i dele [Angi salgsordredetaljer](#sales-order-details).
 
 Når salgsordrelinjen som bruker en tildelt nummerskiltreservasjon, behandles av lageroperasjoner, brukes ikke lokasjonsdirektiver.
 
@@ -232,10 +232,10 @@ Hvis en lagerarbeidsvare består av linjer som er lik en fullstendig pall og har
 
 ![Menyelementet for mobilenhet der alternativet Behandle etter nummerskilt er satt til Ja](media/Handle-by-LP-menu-item.png)
 
-Fordi funksjonen **Behandle etter nummerskilt** ikke støtter arbeid som dekker flere paller, er det bedre å ha et separat arbeidselement for forskjellige nummerskilt. Hvis du vil bruke denne fremgangsmåten, legger du til eltet **ID for ordreigangsatt nummerskilt** som et arbeidshodeskift på **Arbeidsmal** -siden.
+Fordi funksjonen **Behandle etter nummerskilt** ikke støtter arbeid som dekker flere paller, er det bedre å ha et separat arbeidselement for forskjellige nummerskilt. Hvis du vil bruke denne fremgangsmåten, legger du til eltet **ID for ordreigangsatt nummerskilt** som et arbeidshodeskift på **Arbeidsmal**-siden.
 
 > [!NOTE]
-> For den ordreigangsatt arbeidsopprettelsesprosessen blir en verdi for "ordreigangsatt lagerdimensjon" tilordnet til plukkarbeidslinjene, og det er ikke mulig å vise nummerskiltverdien direkte. Bare den *Brukerstyrt* -prosessen støttes når du setter opp menyelement for en mobilenhet.
+> For den ordreigangsatt arbeidsopprettelsesprosessen blir en verdi for "ordreigangsatt lagerdimensjon" tilordnet til plukkarbeidslinjene, og det er ikke mulig å vise nummerskiltverdien direkte. Bare den *Brukerstyrt*-prosessen støttes når du setter opp menyelement for en mobilenhet.
 
 ## <a name="example-scenario-set-up-and-process-an-order-committed-license-plate-reservation"></a>Eksempelscenario: Definere og behandle en ordreigangsatt nummerskiltreservering
 
@@ -249,19 +249,19 @@ Dette scenarioet refererer til verdier og poster som er inkludert i standard dem
 
 1. Gå til **Lagerstyring \> Oppsett \> Beholdning \> Reservasjonshierarki**.
 1. Velg **Ny**.
-1. I **Navn** -feltet angir du en verdi (for eksempel *FlexibleLP* ).
-1. I **Beskrivelse** -feltet angir du en verdi (for eksempel *Fleksibel nummerskiltreservasjon* ).
-1. I **Valgt** -listen velger du **Partinummer** , **Serienummer** og **Eier**.
-1. Velg **Fjern** -knappen ![bakoverpil](media/backward-button.png) for å flytte de valgte oppføringene til listen **Tilgjengelig**.
+1. I **Navn**-feltet angir du en verdi (for eksempel *FlexibleLP*).
+1. I **Beskrivelse**-feltet angir du en verdi (for eksempel *Fleksibel nummerskiltreservasjon*).
+1. I **Valgt**-listen velger du **Partinummer**, **Serienummer** og **Eier**.
+1. Velg **Fjern**-knappen ![bakoverpil](media/backward-button.png) for å flytte de valgte oppføringene til listen **Tilgjengelig**.
 1. Velg **OK**.
-1. I raden for **Nummerskilt** -dimensjonsnivået merker du av i **Tillat reservasjon på etterspørselsordre** -avmerkingsboksen. **Plassering** -nivået velges automatisk, og du kan ikke fjerne avmerkingen i avmerkingsboksen for det.
+1. I raden for **Nummerskilt**-dimensjonsnivået merker du av i **Tillat reservasjon på etterspørselsordre**-avmerkingsboksen. **Plassering**-nivået velges automatisk, og du kan ikke fjerne avmerkingen i avmerkingsboksen for det.
 1. Velg **Lagre**.
 
 ### <a name="create-two-released-products"></a>Opprette to frigitte produkter
 
 1. Gå til **Behandling av produktinformasjon \> Produkter \> Frigitte produkter**.
 1. Velg **Ny** i handlingsruten.
-1. Angi følgende verdier i dialogboksen **Nytt frigitt produkt** :
+1. Angi følgende verdier i dialogboksen **Nytt frigitt produkt**:
 
     - **Produktnummer:** *Vare 1*
     - **Varenummer:** *Vare 1*
@@ -272,7 +272,7 @@ Dette scenarioet refererer til verdier og poster som er inkludert i standard dem
     - **Reservasjonshierarki:** *Fleksibelt nummerskilt*
 
 1. Velg **OK** for å opprette produktet og lukke dialogboksen.
-1. Det nye produktet åpnes. På **Lager** -hurtigfanen angir du *ea* i **Sekvensgruppe-ID for enhet** -feltet.
+1. Det nye produktet åpnes. På **Lager**-hurtigfanen angir du *ea* i **Sekvensgruppe-ID for enhet**-feltet.
 1. Gjenta de forrige trinnene for å opprette et nytt produkt som har de samme innstillingene, men sett feltene **Produktnumer** og **Varenummer** til *Vare 2*.
 1. I handlingsruten i kategorien **Administrer lager** i gruppen **Visning** velger du **Lagerbeholdning**. Velg deretter **Antallsjustering**.
 1. Juster lagerbeholdningen for de nye varene slik det er angitt i følgende tabell.
@@ -291,7 +291,7 @@ Dette scenarioet refererer til verdier og poster som er inkludert i standard dem
 
 1. Gå til **Salg og markedsføring \> Salgsordrer \> Alle salgsordrer**.
 1. Velg **Ny**.
-1. I **Opprett salgsordre** -dialogboksen angir du følgende verdier:
+1. I **Opprett salgsordre**-dialogboksen angir du følgende verdier:
 
     - **Kundekonto:** *US-001*
     - **Lager:** *24*
@@ -308,17 +308,17 @@ Dette scenarioet refererer til verdier og poster som er inkludert i standard dem
     - **Antall:** *5*
 
 1. Velg **Lagre**.
-1. På hurtigfanen **Linjedetaljer** på **Oppsett** -fanen noterer du ned verdien for **Parti-ID** for hver linje. Disse verdiene er nødvendige under reservering av bestemte nummerskilt.
+1. På hurtigfanen **Linjedetaljer** på **Oppsett**-fanen noterer du ned verdien for **Parti-ID** for hver linje. Disse verdiene er nødvendige under reservering av bestemte nummerskilt.
 
     > [!NOTE]
-    > Hvis du vil reservere et bestemt nummerskilt, må du bruke dataenheten **Ordreigangsatte reservasjoner per nummerskilt**. Hvis du vil reservere en partisporet vare på et bestemt nummerskilt, kan du også bruke **Partireservasjon** -siden som beskrevet i delen [Angi salgsordredetaljer](#sales-order-details).
+    > Hvis du vil reservere et bestemt nummerskilt, må du bruke dataenheten **Ordreigangsatte reservasjoner per nummerskilt**. Hvis du vil reservere en partisporet vare på et bestemt nummerskilt, kan du også bruke **Partireservasjon**-siden som beskrevet i delen [Angi salgsordredetaljer](#sales-order-details).
     >
     > Hvis du angir nummerskiltet direkte på salgsordrelinjen og bekrefter det til systemet, brukes ikke prosessering av lagerstyring for linjen.
 
-1. Velg **Åpne i Microsoft Office** , velg **Ordreigangsatte reservasjoner per nummerskilt** , og last ned filen.
+1. Velg **Åpne i Microsoft Office**, velg **Ordreigangsatte reservasjoner per nummerskilt**, og last ned filen.
 1. Åpne den nedlastede filen i Excel, og velg **Aktiver redigering** for å aktivere kjøring av Excel-tillegget.
 1. Hvis du kjører Excel-tillegget for første gang, velger du **Klarer tillegget**.
-1. Hvis du blir bedt om å logge på, velger du **Logg på** , og deretter logger du på ved å bruke samme legitimasjon som du brukte til å logge på Supply Chain Management.
+1. Hvis du blir bedt om å logge på, velger du **Logg på**, og deretter logger du på ved å bruke samme legitimasjon som du brukte til å logge på Supply Chain Management.
 1. Hvis du vil reservere en vare på et bestemt nummerskilt i Excel-tillegget, velger du **Ny** for å legge til en reservasjonslinje, og angir deretter følgende verdier:
 
     - **Parti-ID:** Angi verdien for **Parti-ID** som du fant for salgsordrelinjen for *Vare 1*.
@@ -337,31 +337,31 @@ Dette scenarioet refererer til verdier og poster som er inkludert i standard dem
     > Reservasjonslinjen vil bare vises i systemet hvis publiseringen er fullført uten feil.
 
 1. Gå tilbake til Supply Chain Management. 
-1. Hvis du vil gå gjennom varens reservasjon, går du til **Salgsordrelinje** -hurtigfanen på **Lager** -menyen og velger **Vedlikehold \> Reservasjon**. Legg merke til at for salgsordrelinjen for *Vare 1* , er en beholdning på *10* reservert, og for salgsordrelinjen for *Vare 2* er en beholdning på *5* reservert.
-1. Hvis du vil se gjennom lagertransaksjoner som er knyttet til salgsordrelinjereservasjonen, går du til **Salgsordrelinjer** -hurtigfanen på **Lager** -menyen og velger **Vis \> Transaksjoner**. Legg merke til at det er to transaksjoner som er knyttet til reserveringen: én der **Referanse** -feltet er satt til *Salgsordre* , og én der **Referanse** -feltet er satt til *Ordreigangsatt reservasjon*.
+1. Hvis du vil gå gjennom varens reservasjon, går du til **Salgsordrelinje**-hurtigfanen på **Lager**-menyen og velger **Vedlikehold \> Reservasjon**. Legg merke til at for salgsordrelinjen for *Vare 1*, er en beholdning på *10* reservert, og for salgsordrelinjen for *Vare 2* er en beholdning på *5* reservert.
+1. Hvis du vil se gjennom lagertransaksjoner som er knyttet til salgsordrelinjereservasjonen, går du til **Salgsordrelinjer**-hurtigfanen på **Lager**-menyen og velger **Vis \> Transaksjoner**. Legg merke til at det er to transaksjoner som er knyttet til reserveringen: én der **Referanse**-feltet er satt til *Salgsordre*, og én der **Referanse**-feltet er satt til *Ordreigangsatt reservasjon*.
 
     > [!NOTE]
-    > En transaksjon der **Referanse** -feltet er satt til *Salgsordre* , representerer ordrelinjereservasjonen for beholdningsdimensjonene som er over **Plassering** -nivået (anlegg, lager og inventarstatus). En transaksjon der **Referanse** -feltet er angitt til *Ordreigangsatt reservasjon* , representerer ordrelinjereservasjonen for det bestemte nummerskiltet og lokasjonen.
+    > En transaksjon der **Referanse**-feltet er satt til *Salgsordre* , representerer ordrelinjereservasjonen for beholdningsdimensjonene som er over **Plassering**-nivået (anlegg, lager og inventarstatus). En transaksjon der **Referanse**-feltet er angitt til *Ordreigangsatt reservasjon*, representerer ordrelinjereservasjonen for det bestemte nummerskiltet og lokasjonen.
 
-1. Du kan frigi salgsordren ved å gå til handlingsruten og **Lager** -fanen i **Handlinger** -gruppen og velge **Frigi til lager**.
+1. Du kan frigi salgsordren ved å gå til handlingsruten og **Lager**-fanen i **Handlinger**-gruppen og velge **Frigi til lager**.
 
 ### <a name="review-and-process-warehouse-work-with-order-committed-license-plates-assigned"></a>Gå gjennom og behandle lagerarbeidet med ordreigangsatte nummerskilt tilordnet
 
-1. På **Salgsordrelinjer** -fanen, på **Lager** -menyen, velger du **Arbeidsdetaljer**.
+1. På **Salgsordrelinjer**-fanen, på **Lager**-menyen, velger du **Arbeidsdetaljer**.
 
     Når reservasjon er utført for et bestemt parti, bruker ikke systemet lokasjonsdirektiver når det oppretter arbeidet for salgsordren som bruker nummerskiltreservering. Siden den ordreigangsatte reservasjonen angir alle lagerdimensjonene, inkludert lokasjonen, trenger ikke lokasjonsdirektiver å brukes, fordi disse lagerdimensjonene akkurat ble angitt i arbeidet. De vises i delen **Fra lagerdimensjoner** på siden **Arbeidslagertransaksjoner**.
 
     > [!NOTE]
-    > Etter at arbeidet er opprettet, blir varens beholdningstransaksjon der **Referanse** -feltet er satt til *Ordreigangsatt reservasjon* , fjernet. Beholdningstransaksjonen der **Referanse** -feltet er satt til *Arbeid* , inneholder nå den fysiske reservasjonen for alle beholdningsdimensjoner for antallet.
+    > Etter at arbeidet er opprettet, blir varens beholdningstransaksjon der **Referanse**-feltet er satt til *Ordreigangsatt reservasjon*, fjernet. Beholdningstransaksjonen der **Referanse**-feltet er satt til *Arbeid*, inneholder nå den fysiske reservasjonen for alle beholdningsdimensjoner for antallet.
 
 1. Fullfør plukkingen på mobilenheten, og plasser arbeidet ved hjelp av et menyelement der det er merket av for **Behandle etter nummerskilt**.
 
     > [!NOTE]
     > Funksjonaliteten **Behandle etter nummerskilt** hjelper deg med å behandle hele nummerskiltet. Hvis du må behandle deler av nummerskiltet, kan du ikke bruke denne funksjonaliteten.
     >
-    > Vi anbefaler at du har separat arbeid generert for hvert nummerskilt. Du oppnår dette resultatet ved å bruke funksjonen **Arbeidshodeskift** på **Arbeidsmal** -siden.
+    > Vi anbefaler at du har separat arbeid generert for hvert nummerskilt. Du oppnår dette resultatet ved å bruke funksjonen **Arbeidshodeskift** på **Arbeidsmal**-siden.
 
-    Nummerskiltet *LP02* plukkes nå for salgsordrelinjer og plasseres på *Rampedør* -lokasjonen. På dette tidspunktet er det klart til å lastes og sendes til kunden.
+    Nummerskiltet *LP02* plukkes nå for salgsordrelinjer og plasseres på *Rampedør*-lokasjonen. På dette tidspunktet er det klart til å lastes og sendes til kunden.
 
 ## <a name="exception-handling-of-warehouse-work-that-has-order-committed-batch-numbers"></a>Unntakshåndtering av lagerarbeid som har ordreigangsatte partinumre
 
@@ -371,21 +371,21 @@ Følgende nøkkelregel brukes for alle disse unntakshåndteringshandlingene: Par
 
 ### <a name="example-scenario"></a>Eksempelscenario
 
-Et eksempel på dette scenarioet er en situasjon der tidligere avsluttet arbeid plukkes fra hverandre ved å benytte **Reduser plukket kvantitet** -funksjonen. Dette eksemplet forutsetter at du allerede har fullført trinnene som er beskrevet i [Eksempelscenario: Tildeling av partinummer](#Example-batch-allocation). Den fortsetter fra dette eksemplet.
+Et eksempel på dette scenarioet er en situasjon der tidligere avsluttet arbeid plukkes fra hverandre ved å benytte **Reduser plukket kvantitet**-funksjonen. Dette eksemplet forutsetter at du allerede har fullført trinnene som er beskrevet i [Eksempelscenario: Tildeling av partinummer](#Example-batch-allocation). Den fortsetter fra dette eksemplet.
 
 1. Gå til **Lagerstyring** \> **Belastninger** \> **Aktive belastninger**.
 2. Velg belastningen som ble opprettet i forbindelse med forsendelsen av salgsordren.
-3. Gå til **Last inn ordrelinjer** -hurtigfanen og velg **Reduser plukket kvantitet**.
-4. Gå til **Reduser plukket kvantitet** -siden i **Flytt til plassering** -feltet og velg **FL-001**.
-5. I **Flytt til nummerskilt** -feltet velger du **LP33**.
-6. I rutenettet, i **Beholdningskvantitet som skal plukkes vekk** -feltet, angir du **10**.
+3. Gå til **Last inn ordrelinjer**-hurtigfanen og velg **Reduser plukket kvantitet**.
+4. Gå til **Reduser plukket kvantitet**-siden i **Flytt til plassering**-feltet og velg **FL-001**.
+5. I **Flytt til nummerskilt**-feltet velger du **LP33**.
+6. I rutenettet, i **Beholdningskvantitet som skal plukkes vekk**-feltet, angir du **10**.
 7. Velg **OK**.
 
 Her er resultatene av handlingen med vekkplukking:
 
 - Statusen til det tidligere lukkede verket er satt til **Avbrutt**.
-- Nytt arbeid av **Beholdningsbevegelse** -typen opprettes for det vekkplukkede antallet **10** for partinummer **B11**. Dette arbeidet representerer bevegelsen fra **Båsdør** -plasseringen til nummerskiltet **LP33** på plasseringen **FL-001**. Status er satt til **Lukket**.
-- Systemet reserverer partinummeret som opprinnelig ble bestilt, på nytt og tilordner plasseringen og nummerskilt-ID-er. (Denne prosessen tilsvarer kjøring av **Reserver linje** -funksjonen for ordrelinjen for et gitt partinummer). Som et resultat vises parti **B11** som bundet på **Partinumre bundet til kildelinje** -hurtigfanen på **Partireservasjon** -siden, og **Reservasjon** -feltet inneholder antallet **10** for partinummer **B11**. I tillegg er **Plassering** -feltet satt til **FL-001** , og **Nummerskilt** -feltet er satt til **LP11**. (Du kan legge til disse feltene i rutenettet hvis de ikke er synlige.)
+- Nytt arbeid av **Beholdningsbevegelse**-typen opprettes for det vekkplukkede antallet **10** for partinummer **B11**. Dette arbeidet representerer bevegelsen fra **Båsdør**-plasseringen til nummerskiltet **LP33** på plasseringen **FL-001**. Status er satt til **Lukket**.
+- Systemet reserverer partinummeret som opprinnelig ble bestilt, på nytt og tilordner plasseringen og nummerskilt-ID-er. (Denne prosessen tilsvarer kjøring av **Reserver linje**-funksjonen for ordrelinjen for et gitt partinummer). Som et resultat vises parti **B11** som bundet på **Partinumre bundet til kildelinje**-hurtigfanen på **Partireservasjon**-siden, og **Reservasjon**-feltet inneholder antallet **10** for partinummer **B11**. I tillegg er **Plassering**-feltet satt til **FL-001**, og **Nummerskilt**-feltet er satt til **LP11**. (Du kan legge til disse feltene i rutenettet hvis de ikke er synlige.)
 
 Følgende tabeller inneholder en oversikt som viser hvordan systemet håndterer ordreigangsatt partireservasjon for bestemte lagerhandlinger. Hvis du vil tolke innholdet i tabellene, må du anta at hver lagerhandling kjøres i konteksten av eksisterende lagerarbeid som stammer fra en ordreigangsatt partireservasjon, eller at utførelsen av hver lagerhandling påvirker arbeid av denne typen.
 
@@ -512,7 +512,7 @@ Følgende tabeller inneholder en oversikt som viser hvordan systemet håndterer 
 #### <a name="move-an-item-within-a-warehouse"></a>Flytte en vare i et lager
 
 > [!NOTE]
-> Denne lagerhandlingen gjelder bare for bevegelse av **Arbeidsopprettelsesprosess** -typen, ikke for bevegelse etter mal.
+> Denne lagerhandlingen gjelder bare for bevegelse av **Arbeidsopprettelsesprosess**-typen, ikke for bevegelse etter mal.
 
 <table>
 <thead>
@@ -776,7 +776,7 @@ Følgende tabeller inneholder en oversikt som viser hvordan systemet håndterer 
 #### <a name="change-the-inventory-status"></a>Endre beholdningsstatusen
 
 > [!NOTE]
-> Denne lagerhandlingen kan utføres fra flere inngangspunkter. I eksempelet som vises her, benyttes **Beholdningsstatusendring** -handlingen på **På lager etter plassering** -siden.
+> Denne lagerhandlingen kan utføres fra flere inngangspunkter. I eksempelet som vises her, benyttes **Beholdningsstatusendring**-handlingen på **På lager etter plassering**-siden.
 
 <table>
 <thead>
@@ -853,4 +853,4 @@ Følgende tabeller inneholder en oversikt som viser hvordan systemet håndterer 
     - Reservasjon mot bestilt forsyning
     - Plukking av overføringsordrer og råvarer
 
-- Regelen for konsolidering av containere for pakking etter direktivenhet har begrensninger. For ordreigangsatte reservasjoner anbefaler vi at du ikke bruker maler for containerbygging i tilfeller der **Pakk etter direktivenhet** -feltet er aktivert. I gjeldende utforming brukes ikke plasseringsdirektiver når det opprettes lagerarbeid. Derfor brukes bare den laveste enheten i enhetssekvensgruppen (beholdningsenheten) under bølgetrinnet containerbruk.
+- Regelen for konsolidering av containere for pakking etter direktivenhet har begrensninger. For ordreigangsatte reservasjoner anbefaler vi at du ikke bruker maler for containerbygging i tilfeller der **Pakk etter direktivenhet**-feltet er aktivert. I gjeldende utforming brukes ikke plasseringsdirektiver når det opprettes lagerarbeid. Derfor brukes bare den laveste enheten i enhetssekvensgruppen (beholdningsenheten) under bølgetrinnet containerbruk.

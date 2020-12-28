@@ -19,11 +19,11 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 85b9f473cc725896a00501510eea02d7cfb21782
-ms.sourcegitcommit: c986d5234b81d31cc6d054298be6f6ec92c1754c
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "3888877"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4434300"
 ---
 # <a name="install-assets-on-functional-locations"></a>Installere aktiva på arbeidssteder
 
@@ -64,7 +64,7 @@ Når du har installert aktiva på et arbeidssted, kan du erstatte et overordnet 
     > Hvis du vil endre installasjonen av et aktivum ved å installere det på et nytt arbeidssted, følger du trinn 1 til 6 i denne fremgangsmåten. Når du installerer et aktivum på et nytt arbeidssted, avinstalleres aktivumet automatisk fra det forrige arbeidsstedet. Alle aktive vedlikeholdsforespørsler eller arbeidsordrer som ble opprettet på aktivumet før du installerte det på et nytt arbeidssted, overføres **ikke** automatisk til det nye arbeidsstedet. Hvis disse vedlikeholdsforespørslene og arbeidsordrene fortsatt er nødvendige for aktivaet, må du opprette dem på nytt manuelt etter at aktivaet er installert på den nye lokasjonen.
 
 7. Hvis du vil vise en liste over alle aktivaene, inkludert underaktiva, som er installert på arbeidsstedet, velger du arbeidsstedet på siden **Alle arbeidssteder** og velger deretter **Aktiva**.
-8. Hvis du vil vise en liste over aktive vedlikeholdsforespørsler, aktive arbeidsordrer eller feilregistreringer som er knyttet til aktivaene som er installert på et arbeidssted, velger du arbeidsstedet på siden **Alle arbeidssteder**, og deretter velger du **Forespørsler**, **Arbeidsordrer**eller **Feil**.
+8. Hvis du vil vise en liste over aktive vedlikeholdsforespørsler, aktive arbeidsordrer eller feilregistreringer som er knyttet til aktivaene som er installert på et arbeidssted, velger du arbeidsstedet på siden **Alle arbeidssteder**, og deretter velger du **Forespørsler**, **Arbeidsordrer** eller **Feil**.
 
 > [!NOTE]
 > Når aktivarelaterte data endres, oppdateres de automatisk på arbeidsstedet som aktivumet er installert på. Denne automatiske oppdateringen gjelder endringer i vedlikeholdsforespørsler, arbeidsordrer, registreringer av feil på aktiva, registreringer av vedlikeholdsavbrudd og aktivamålregistreringer.

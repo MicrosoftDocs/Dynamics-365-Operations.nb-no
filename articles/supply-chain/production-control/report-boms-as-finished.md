@@ -20,11 +20,11 @@ ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: c68ff6fdb77cb8de23b6b803b0300c6daa0fd106
-ms.sourcegitcommit: 59a9e840989bc9f2c7004efa3499b69c09a91b06
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/10/2020
-ms.locfileid: "3677811"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4434700"
 ---
 # <a name="report-boms-as-finished"></a>Rapportere stykklister som ferdige
 
@@ -35,7 +35,7 @@ Denne artikkelen gir informasjon om å rapportere stykklister som ferdige.
 **Ferdigmeld**- og **Ferdigmeldingsmaks**-sidene brukes til å ferdigmelde stykklister. Begrepsmessig er prosessen med å rapportere en stykkliste som ferdig lik prosessen for å rapportere en produksjonsordre som ferdig. Denne prosessen kan brukes i for eksempel enkle monterings- og pakkingsprosesser der det ikke kreves mer avanserte funksjoner for produksjonsordrer. På **Ferdigmeld**-siden kan du rapportere flere stykklister som ferdige i en satsvis jobb. På **Ferdigmeldingsmaks**-siden kan du rapportere bare én stykkliste som ferdig om gangen. **Ferdigmeld**-siden er tilgjengelig fra et menyelement i Lagerstyring, og begge sidene er tilgjengelige som et menyelement på **Frigitte produkter**-siden.
 
 ## <a name="report-as-finished-page"></a>Ferdigmeld-siden
-Hvis du åpner**Ferdigmeld**-siden fra et frigitt produkt, foreslår siden du kan rapportere standardantallet i standardbeholdningen som ferdigmeldt. Som standard vises den aktive stykklisteversjonen, men du kan endre stykklisteversjonen hvis det finnes andre godkjente versjoner. På siden kan du også slette poster og opprette nye poster for frigitte produkter som skal ferdigmeldes. Hvis du vil bruke en spørring til å velge produkter, klikker du **Velg**-menyelementet. Du kan manuelt bekrefte ferdigmelding for de valgte produktene ved å klikke **OK**. Du kan også angi at prosessen skal kjøres i et parti. Når ferdigmeldingsprosessen er bekreftet, genererer systemet en stykklistejournal der postering til lager behandles. Denne journalen består av ett linjeelement for det ferdige produktet og et linjeelement for hver stykklistelinje. Du kan kontrollere om journalen posteres automatisk, eller om den er åpen for flere justeringer.
+Hvis du åpner **Ferdigmeld**-siden fra et frigitt produkt, foreslår siden du kan rapportere standardantallet i standardbeholdningen som ferdigmeldt. Som standard vises den aktive stykklisteversjonen, men du kan endre stykklisteversjonen hvis det finnes andre godkjente versjoner. På siden kan du også slette poster og opprette nye poster for frigitte produkter som skal ferdigmeldes. Hvis du vil bruke en spørring til å velge produkter, klikker du **Velg**-menyelementet. Du kan manuelt bekrefte ferdigmelding for de valgte produktene ved å klikke **OK**. Du kan også angi at prosessen skal kjøres i et parti. Når ferdigmeldingsprosessen er bekreftet, genererer systemet en stykklistejournal der postering til lager behandles. Denne journalen består av ett linjeelement for det ferdige produktet og et linjeelement for hver stykklistelinje. Du kan kontrollere om journalen posteres automatisk, eller om den er åpen for flere justeringer.
 
 ## <a name="max-report-as-finished-page"></a>Maks. Ferdigmeldingsmaks-siden
 På **Ferdigmeldingsmaks**-siden angir hver stykklistelinje hvor mange enheter av produktet som kan ferdigmeldes. Denne beregningen er basert på den fysisk tilgjengelige lagerbeholdningen på hver materiallinje. I eksemplet nedenfor bruker én type av varenummeret FG 2 to deler av råvare RM10 og én del av råvare RM20. Fordi det bare er 10 stykker av RM10 i beholdningen, er det maksimale antallet FG som kan ferdigmeldes, fem stykker. Denne verdien vises i **Ferdigmeldingsmaks**-feltet.

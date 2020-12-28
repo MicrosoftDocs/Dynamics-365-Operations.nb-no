@@ -18,11 +18,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.openlocfilehash: ada42a98a8a87e377f939d063b17f9904f6b3408
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3978240"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4434574"
 ---
 # <a name="configure-a-worker-using-the-mobile-job-device"></a>Konfigurere en arbeider som bruker den mobile jobbenheten
 
@@ -34,18 +34,18 @@ Dette emnet viser hvordan du kan tilordne riktige roller til brukerkontoen til e
 
 I dette eksemplet må du kontrollere at brukeren "SHANNON" er tilordnet maskinoperatørrollen før du konfigurerer arbeiderkontoen.
 
-1. Gå til **Navigasjonsrute > Moduler > Systemadministrasjon > Brukere > Brukere** .
+1. Gå til **Navigasjonsrute > Moduler > Systemadministrasjon > Brukere > Brukere**.
 2. Søk etter en bruker i hurtigfilteret. I dette eksemplet angir du `shannon`.
 3. Velg koblingen i kolonnen **bruker-ID** for brukerkontoen som vises.
-4. I **Brukerroller** -treet velger du **Roller > Maskinoperatør** .
+4. I **Brukerroller**-treet velger du **Roller > Maskinoperatør**.
 5. Lukk sidene **Brukerdetaljer** og **Brukere** for å gå tilbake til hjemmesiden.
 
 ## <a name="configure-worker-account"></a>Konfigurere brukerkonto
-1. Gå til **Navigasjonsrute > Moduler > Personale > Arbeidere > Arbeidere** .
+1. Gå til **Navigasjonsrute > Moduler > Personale > Arbeidere > Arbeidere**.
 2. Søk etter en bruker i hurtigfilteret. I dette eksemplet angir du `shannon`.
 3. Velg koblingen i kolonnen **Navn** for brukerkontoen som vises.
-4. Velg kategorien **Tidsregistrering** .
-5. Velg **Aktiver på registreringsterminaler** .
+4. Velg kategorien **Tidsregistrering**.
+5. Velg **Aktiver på registreringsterminaler**.
 6. Angi eller velg verdier i følgende felt:  
 
     - **Beregningsgruppe**  
@@ -54,17 +54,17 @@ I dette eksemplet må du kontrollere at brukeren "SHANNON" er tilordnet maskinop
     - **Standardprofil**  
     - **Profilgruppe**  
 
-7. Velg **OK** .
-8. Velg **Rediger** for å angi et kortnummer for den nye tidsregistreringsarbeideren. Angi en verdi i feltet **Kort-ID** .
-9. Velg **Lagre** .
-10. Lukk sidene **Arbeiderdetaljer** og **Arbeidere** .
+7. Velg **OK**.
+8. Velg **Rediger** for å angi et kortnummer for den nye tidsregistreringsarbeideren. Angi en verdi i feltet **Kort-ID**.
+9. Velg **Lagre**.
+10. Lukk sidene **Arbeiderdetaljer** og **Arbeidere**.
 
 ## <a name="assign-worker-to-device-group"></a>Tilordne arbeider til enhetsgruppe
-1. Gå til **Produksjonskontroll > Oppsett > Produksjonsutførelse > Konfigurer jobbkort for enheter** .
-2. Velg **Legg til** .
-3. Velg ønsket arbeider i listen. I dette eksemplet velger du **SHANNON** .
-4. Velg **OK** .
-5. Velg **Rediger** .
-6. Du kan angi standardfilteret for arbeideren i **Produksjonsenhet** -feltet. Dette sikrer at bare produksjonsjobber for den valgte produksjonsenheten vises når arbeideren logger på enheten. Angi den ønskede verdien.
+1. Gå til **Produksjonskontroll > Oppsett > Produksjonsutførelse > Konfigurer jobbkort for enheter**.
+2. Velg **Legg til**.
+3. Velg ønsket arbeider i listen. I dette eksemplet velger du **SHANNON**.
+4. Velg **OK**.
+5. Velg **Rediger**.
+6. Du kan angi standardfilteret for arbeideren i **Produksjonsenhet**-feltet. Dette sikrer at bare produksjonsjobber for den valgte produksjonsenheten vises når arbeideren logger på enheten. Angi den ønskede verdien.
 7. Lukk siden.
 

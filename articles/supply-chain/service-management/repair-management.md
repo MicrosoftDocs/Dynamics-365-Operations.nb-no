@@ -19,11 +19,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 4d45732ff35069a64b37b6c53d9e22adf9a9a46d
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3975614"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4434150"
 ---
 # <a name="repair-management"></a>Reparasjonsstyring       
 
@@ -38,15 +38,15 @@ Du definerer innstillinger for symptomer, diagnose og løsning. Alle disse kan s
 
 Bruk de følgende oppsettskjemaene til å angi informasjon som skal brukes til å angi symptomene, diagnosen og løsningen for reparasjonen.
 
-1.  Klikk **Servicestyring** \> **Oppsett** \> **Reparasjon** \> **Betingelser** .
+1.  Klikk **Servicestyring** \> **Oppsett** \> **Reparasjon** \> **Betingelser**.
 
-2.  Klikk **Servicestyring** \> **Oppsett** \> **Reparasjon** \> **Symptomområder** .
+2.  Klikk **Servicestyring** \> **Oppsett** \> **Reparasjon** \> **Symptomområder**.
 
-3.  Klikk **Servicestyring** \> **Oppsett** \> **Reparasjon** \> **Diagnoseområder** .
+3.  Klikk **Servicestyring** \> **Oppsett** \> **Reparasjon** \> **Diagnoseområder**.
 
-4.  Klikk **Servicestyring** \> **Oppsett** \> **Reparasjon** \> **Løsninger** .
+4.  Klikk **Servicestyring** \> **Oppsett** \> **Reparasjon** \> **Løsninger**.
 
-5.  Klikk **Servicestyring** \> **Oppsett** \> **Reparasjon** \> **Reparasjonsstadier** .
+5.  Klikk **Servicestyring** \> **Oppsett** \> **Reparasjon** \> **Reparasjonsstadier**.
 
 ## <a name="symptoms-and-conditions"></a>Symptomer og forhold
 
@@ -72,7 +72,7 @@ Diagnoseområdet dekker hva som må gjøres for å løse problemet. Diagnosekode
 
 ## <a name="repair-stages"></a>Reparasjonsstadier
 
-Reparasjonsstadier beskriver fremdriften på reparasjonsprosessen. Reparasjonsstadiet inneholder godkjenningsparameteren **Fullført** , som angir at reparasjonslinjen er fullført og at fullføringsdato- og tidspunkt er registrert.
+Reparasjonsstadier beskriver fremdriften på reparasjonsprosessen. Reparasjonsstadiet inneholder godkjenningsparameteren **Fullført**, som angir at reparasjonslinjen er fullført og at fullføringsdato- og tidspunkt er registrert.
 
 ## <a name="applying-repair-management"></a>Bruk reparasjonsstyring
 
@@ -82,11 +82,11 @@ Du kan opprette reparasjonslinjer for hvert trinn i reparasjonsprosessen.
 
 ## <a name="create-a-repair-line-on-a-service-order"></a>Opprette en reparasjonslinje på en serviceordre
 
-1.  Klikk på **Servicestyring** \> **Felles** \> **Serviceordrer** \> **Serviceordrer** .
+1.  Klikk på **Servicestyring** \> **Felles** \> **Serviceordrer** \> **Serviceordrer**.
 
 2.  Velg serviceordren med serviceobjektet som skal repareres.
 
-3.  Klikk **Reparasjon** \> **Reparasjonslinjer** for å åpne **Reparasjonslinjer** -skjemaet.
+3.  Klikk **Reparasjon** \> **Reparasjonslinjer** for å åpne **Reparasjonslinjer**-skjemaet.
 
 4.  Trykk CTRL+N for å opprette en ny linje.
 
@@ -100,11 +100,11 @@ Du kan opprette reparasjonslinjer for hvert trinn i reparasjonsprosessen.
 
 Du kan definere reparasjonsstadiene for en reparasjonslinje for å spore fremdriften til en reparasjon.
 
-Når reparasjonen er fullført, kan du lukke reparasjonslinjen. Set reparasjonsstadiet til et stadium med en **Fullført** -egenskap aktivert. Gjeldende dato og tidspunkt registreres som fullføringstidspunktet på linjen.
+Når reparasjonen er fullført, kan du lukke reparasjonslinjen. Set reparasjonsstadiet til et stadium med en **Fullført**-egenskap aktivert. Gjeldende dato og tidspunkt registreres som fullføringstidspunktet på linjen.
 
 ## <a name="close-a-repair-line-for-a-resolved-issue"></a>Lukke en reparasjonslinje for en fullført reparasjon
 
-1.  Åpne skjemaet **Reparasjonslinjer** . Følg fremgangsmåten for å opprette en reparasjonslinje tidligere i dette emnet.
+1.  Åpne skjemaet **Reparasjonslinjer**. Følg fremgangsmåten for å opprette en reparasjonslinje tidligere i dette emnet.
 
 2.  Velg reparasjonslinjen med reparasjonen du ønsker å lukke.
 

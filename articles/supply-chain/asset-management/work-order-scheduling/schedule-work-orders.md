@@ -19,11 +19,11 @@ ms.author: mkirknel
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
 ms.openlocfilehash: 095ff2697a7cc8486afc6e77fd7d06f761e74e75
-ms.sourcegitcommit: c986d5234b81d31cc6d054298be6f6ec92c1754c
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "3888911"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4434511"
 ---
 # <a name="schedule-work-orders"></a>Planlegg arbeidsordrer
 
@@ -88,7 +88,7 @@ I eksemplene nedenfor er kritikalitetspoengene 2 og servicenivåpoengene er 5 og
 | WO-00010817   | To dager fra nå   | 2                      | 20              | (-2 \* 10) + (2 \* 2) + 5 / 20     | \- 15.75   |
 | WO-00010818   | To dager fra nå   | 3                      | 5               | (-2 \* 10) + (2 \* 3) + 5 / 5      | \- 13      |
 
-Arbeidsordrene blir planlagt i følgende rekkefølge: WO-000108**16**, WO-000108**18**, WO-000108**17**.
+Arbeidsordrene blir planlagt i følgende rekkefølge: WO-000108 **16**, WO-000108 **18**, WO-000108 **17**.
 
 **Eksempel 2:**
 
@@ -98,7 +98,7 @@ Arbeidsordrene blir planlagt i følgende rekkefølge: WO-000108**16**, WO-000108
 | WO-00010817   | To dager fra nå   | 2                      | 20                  | (-2 \* 10) + (2 \* 2) + 100 / 20 | \- 11    |
 | WO-00010818   | To dager fra nå   | 3                      | 5                   | (-2 \* 10) + (2 \* 3) + 100 / 5  | 6        |
 
-Hvis servicenivåpoengene økes til 100 i stedet for 5, vil planleggingsrekkefølgen være: WO-000108**18**, WO-000108**16**, WO-000108**17**.
+Hvis servicenivåpoengene økes til 100 i stedet for 5, vil planleggingsrekkefølgen være: WO-000108 **18**, WO-000108 **16**, WO-000108 **17**.
 
 Vurderingsresultatene relatert til beregning av hvilke vedlikeholdsarbeidere som skal arbeide med arbeidsordrene, defineres som tall, som legges til hver vedlikeholdsarbeiderberegning under arbeidsordreplanleggingen. Vedlikeholdsarbeideren med høyest poengsum velges i arbeidsordren. Her er en kort beskrivelse av poengene for vedlikeholdsarbeideren:
 

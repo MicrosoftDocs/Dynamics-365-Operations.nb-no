@@ -19,11 +19,11 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 25d53b1380887789c6c4a7a51b600dccfe4589f5
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3209036"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4434541"
 ---
 # <a name="asset-event-history"></a>Historikk for aktivahendelse
 
@@ -31,7 +31,7 @@ ms.locfileid: "3209036"
 
  
 
-Dette emnet forklarer hvordan du får tilgang til hendelsesloggen for aktiva i Aktivastyring. Siden **Historikk for aktivahendelse** viser registreringsloggen som er gjort i løpet av levetiden til et aktivum. Du får tilgang til denne siden fra **Alle aktiva**, **Aktive aktiva**og **Mine aktive aktiva**. Velg et aktivum, og velg deretter **Hendelseshistorikk**.
+Dette emnet forklarer hvordan du får tilgang til hendelsesloggen for aktiva i Aktivastyring. Siden **Historikk for aktivahendelse** viser registreringsloggen som er gjort i løpet av levetiden til et aktivum. Du får tilgang til denne siden fra **Alle aktiva**, **Aktive aktiva** og **Mine aktive aktiva**. Velg et aktivum, og velg deretter **Hendelseshistorikk**.
 
 I hurtigfanen **Detaljer** på siden **Hendelseslogg for aktiva** kan du gjøre et søk etter all tilgjengelig informasjon. Du kan for eksempel bruke hendelsesloggen for aktiva til å finne følgende informasjon:
 

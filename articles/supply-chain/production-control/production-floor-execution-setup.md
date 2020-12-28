@@ -16,11 +16,11 @@ ms.author: johanho
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: Release 10.0.15
 ms.openlocfilehash: 57f09bf907407e19ae0e693de64510f7f4efbf0b
-ms.sourcegitcommit: 9dd2d38e76d4d93171315ec319e6ce7d51d4e6c7
+ms.sourcegitcommit: f27f5d07c040bdca1bcd616f5d3f2320d3b3337e
 ms.translationtype: HT
 ms.contentlocale: nb-NO
 ms.lasthandoff: 10/15/2020
-ms.locfileid: "4012499"
+ms.locfileid: "4434717"
 ---
 # <a name="set-up-a-device-to-run-the-production-floor-execution-interface"></a>Definere en enhet for å kjøre grensesnittet for produksjonsutførelse
 
@@ -45,15 +45,15 @@ Hvis du vil angi konfigurasjons- og jobbfiltre for en enhet, kan du logge deg p�
 1. Velg ett eller flere filtre som skal brukes på den gjeldende enheten. Disse filtrene vil bidra til å sikre at bare relevante jobber vises på enheten. Hvis du vil definere et filter, velger du filtertypen for å åpne en liste med verdier, og deretter velger du verdien du vil filtrere på. Følgende filtre er tilgjengelige:
 
     - **Produksjonsenhet** – Dette filteret er filter på det høyeste nivået. Den refererer vanligvis til et stort arbeidsområde som har flere ressursgrupper og individuelle ressurser.
-    - **Ressursgruppe** – dette filteret er et filter på mellomnivå. Den refererer vanligvis til en samling relaterte ressurser i et begrenset område i arbeidsområdet. Hvis du velger et **Produksjonsenhet** -filter først, viser listen over ressursgrupper bare grupper fra den enheten. Ellers vises alle tilgjengelige ressursgrupper.
-    - **Ressurs** – dette filteret er det mest spesifikke filteret. Den refererer vanligvis til en bestemt maskin eller annen enkeltressurs. Hvis du velger **Ressursgruppe** og/eller **Produksjonsenhet** -filteret først, viser ressurslisten bare ressurser fra denne gruppen og/eller enheten. Ellers vises alle tilgjengelige ressurser.
+    - **Ressursgruppe** – dette filteret er et filter på mellomnivå. Den refererer vanligvis til en samling relaterte ressurser i et begrenset område i arbeidsområdet. Hvis du velger et **Produksjonsenhet**-filter først, viser listen over ressursgrupper bare grupper fra den enheten. Ellers vises alle tilgjengelige ressursgrupper.
+    - **Ressurs** – dette filteret er det mest spesifikke filteret. Den refererer vanligvis til en bestemt maskin eller annen enkeltressurs. Hvis du velger **Ressursgruppe** og/eller **Produksjonsenhet**-filteret først, viser ressurslisten bare ressurser fra denne gruppen og/eller enheten. Ellers vises alle tilgjengelige ressurser.
 
 1. Velg **OK**.
 1. Påloggingssiden vises, og enheten er klar til bruk.
 
 ## <a name="allow-a-worker-to-override-the-default-filters"></a>Tillate at en arbeider overstyrer standardfiltrene
 
-Du kan gi bestemte arbeidere tillatelse til å endre filterinnstillingene på alle enheter de bruker. For arbeidere som har denne tillatelsen, har grensesnittet for produksjonsutførelse en **Filter** -knapp på sidene **Alle jobber** og **Aktiv jobb**.
+Du kan gi bestemte arbeidere tillatelse til å endre filterinnstillingene på alle enheter de bruker. For arbeidere som har denne tillatelsen, har grensesnittet for produksjonsutførelse en **Filter**-knapp på sidene **Alle jobber** og **Aktiv jobb**.
 
 > [!NOTE]
 > Hvis en arbeider endrer et filter, brukes det nye filteret fra dette tidspunktet og fremover, for alle brukere som logger på enheten.

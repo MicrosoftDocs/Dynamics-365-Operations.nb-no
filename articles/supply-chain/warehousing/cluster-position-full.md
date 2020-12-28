@@ -17,11 +17,11 @@ ms.author: mirzaab
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: Release 10.0.8
 ms.openlocfilehash: 3610725815b35609ee98b69b367db2945bbf166a
-ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: nb-NO
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4016177"
+ms.locfileid: "4434768"
 ---
 # <a name="cluster-position-full"></a>Gruppestilling full
 
@@ -33,7 +33,7 @@ Denne funksjonen gir mulighet til å kjøre knappen **Full** på en av arbeidsen
 
 ## <a name="turn-on-the-cluster-position-full-feature"></a>Aktivere funksjonen Gruppeposisjon full
 
-Før du kan bruke denne funksjonen, må den være aktivert i systemet. Administratorer kan bruke innstillingene for [funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til å kontrollere funksjonsstatusen og aktivere den. I **Funksjonsadministrering** -arbeidsområdet er denne funksjonen oppført på følgende måte:
+Før du kan bruke denne funksjonen, må den være aktivert i systemet. Administratorer kan bruke innstillingene for [funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til å kontrollere funksjonsstatusen og aktivere den. I **Funksjonsadministrering**-arbeidsområdet er denne funksjonen oppført på følgende måte:
 
 - **Modul:** *Lagerstyring*
 - **Funksjonsnavn:** *Gruppeposisjon full*
@@ -54,7 +54,7 @@ Du må angi om gruppe-ID-er skal genereres automatisk, hvor mange stillinger som
 
 1. Gå til **Lagerstyring \> Oppsett \> Mobilenhet \> Gruppeprofiler**.
 1. I listeruten velger du posten **Opprett gruppe**.
-1. Bekreft følgende verdier i hurtigkategorin **Generelt** :
+1. Bekreft følgende verdier i hurtigkategorin **Generelt**:
 
     - **Generer gruppe-ID:** *Ja*
     - **Aktiver stillinger:** *Ja*
@@ -94,7 +94,7 @@ Du må konfigurere et menyelement for mobilenhet til å bruke eksisterende arbei
 1. Gå til **Lagerstyring \> Oppsett \> Mobilenhet \> Menyelementer på mobilenheten**.
 1. I listeruten velger du posten **Oppretting av gruppeplukking**.
 1. Velg **Rediger** i handlingsruten.
-1. Angi følgende verdier i **Generelt** -hurtigfanen:
+1. Angi følgende verdier i **Generelt**-hurtigfanen:
 
     - **Styrt av:** *Gruppeplukking*
     - **Generer nummerskilt:** *Ja*
@@ -125,13 +125,13 @@ Du må konfigurere et menyelement for mobilenhet til å bruke eksisterende arbei
 
 ## <a name="create-picking-work"></a>Opprett plukkarbeid
 
-Før du kan starte gruppeplukking, må du opprette noe utgående arbeid. Gruppeprofilen du opprettet tidligere, angir to gruppestillinger. Det må derfor opprettes minst to arbeids-ID-er for plukking av salgsordre. I dette scenarioet vil det oppstå transaksjoner i lager *61* , og de vil bruke varene *L0101* og *T0100*. Demonstrasjonsdataene bør ha tilstrekkelig lagerbeholdning av disse varene. Kontroller at du har tilstrekkelig beholdning til å fullføre transaksjonene.
+Før du kan starte gruppeplukking, må du opprette noe utgående arbeid. Gruppeprofilen du opprettet tidligere, angir to gruppestillinger. Det må derfor opprettes minst to arbeids-ID-er for plukking av salgsordre. I dette scenarioet vil det oppstå transaksjoner i lager *61*, og de vil bruke varene *L0101* og *T0100*. Demonstrasjonsdataene bør ha tilstrekkelig lagerbeholdning av disse varene. Kontroller at du har tilstrekkelig beholdning til å fullføre transaksjonene.
 
 ### <a name="create-sales-order-1"></a>Opprett salgsordre 1
 
 1. Gå til **Salg og markedsføring \> Salgsordrer \> Alle salgsordrer**.
 1. Velg **Ny** for å opprette salgsordre 1.
-1. I **Opprett salgsordre** -dialogboksen angir du følgende verdier:
+1. I **Opprett salgsordre**-dialogboksen angir du følgende verdier:
 
     - **Kundekonto:** *US-010*
     - **Lager:** *61*
@@ -153,8 +153,8 @@ Før du kan starte gruppeplukking, må du opprette noe utgående arbeid. Gruppep
 
     1. Velg linjen som skal reserveres.
     2. På hurtigfanen **Salgsordrelinjer** velger du **Beholdning \> Reservasjon**.
-    3. På **Reservasjon** -siden, i handlingspanelet, velger du **Reserver parti** for å reservere lageret.
-    4. Lukk **Reservasjon** -siden.
+    3. På **Reservasjon**-siden, i handlingspanelet, velger du **Reserver parti** for å reservere lageret.
+    4. Lukk **Reservasjon**-siden.
 
 1. Velg **Frigi til lager** i kategorien **Lager** i handlingsruten.
 
@@ -164,7 +164,7 @@ Før du kan starte gruppeplukking, må du opprette noe utgående arbeid. Gruppep
 
 1. Gå til **Salg og markedsføring \> Salgsordrer \> Alle salgsordrer**.
 1. Velg **Ny** for å opprette salgsordre 2.
-1. I **Opprett salgsordre** -dialogboksen angir du følgende verdier:
+1. I **Opprett salgsordre**-dialogboksen angir du følgende verdier:
 
     - **Kundekonto:** *US-011*
     - **Lager:** *61*
@@ -186,8 +186,8 @@ Før du kan starte gruppeplukking, må du opprette noe utgående arbeid. Gruppep
 
     1. Velg linjen som skal reserveres.
     2. På hurtigfanen **Salgsordrelinjer** velger du **Beholdning \> Reservasjon**.
-    3. På **Reservasjon** -siden, i handlingspanelet, velger du **Reserver parti** for å reservere lageret.
-    4. Lukk **Reservasjon** -siden.
+    3. På **Reservasjon**-siden, i handlingspanelet, velger du **Reserver parti** for å reservere lageret.
+    4. Lukk **Reservasjon**-siden.
 
 1. Velg **Frigi til lager** i kategorien **Lager** i handlingsruten.
 
@@ -202,8 +202,8 @@ To arbeids-ID-er bør være opprettet, og hver av dem har to plukklinjer. Følg 
 1. Velg raden for hver salgsordre for å vise relatert informasjon i rutenettet **Linjer**. Noter deg hvor hver vare blir plukket fra.
 1. Gå til **Lagerstyring \> Forespørsler og rapporter \> Beholdningsliste**.
 1. I handlingsruten velger du **Dimensjoner** for å åpne dialogboksen **Dimensjonsvisning**.
-1. Kontroller at det er merket av for **Nummerskilt** , **Lager** og **Varenummer** , og velg deretter **OK**.
-1. Angi følgende filtre i ruten **Filter** :
+1. Kontroller at det er merket av for **Nummerskilt**, **Lager** og **Varenummer**, og velg deretter **OK**.
+1. Angi følgende filtre i ruten **Filter**:
 
     - **Varenummer** – **er enten** – *L0101* eller *T100*
     - **Lager** – **starter med** – *61*
@@ -237,10 +237,10 @@ Når som helst i trinnene nedenfor kan du velge kategorien **Detaljer** for å v
 
     Siden **OPPGAVE: Sortere: Oppretting av gruppeplukking** vises. Her skal du sortere de to plukkede pallene til en plukkposisjon. Denne posisjonen kan være en transportkasse eller en beholder som brukes til å skille den plukkede beholdningen etter salgsordre.
 
-1. Vis detaljene som vises for varen ( *L0101* ) og antallet ( *20* EA) som skal sorteres i posisjon 1 (for salgsordre 1).
+1. Vis detaljene som vises for varen (*L0101*) og antallet (*20* EA) som skal sorteres i posisjon 1 (for salgsordre 1).
 1. Sett feltet **POSISJONSNAVN** til *1*.
 1. Velg **OK** (hakesymbol).
-1. Vis detaljene som vises for varen ( *L0101* ) og antallet ( *20* EA) som skal sorteres i posisjon 2 (for salgsordre 2).
+1. Vis detaljene som vises for varen (*L0101*) og antallet (*20* EA) som skal sorteres i posisjon 2 (for salgsordre 2).
 1. Sett feltet **POSISJONSNAVN** til *2*.
 1. Velg **OK** (hakesymbol).
 
@@ -259,10 +259,10 @@ I dette scenarioet kan ikke posisjon 1 godta hele antallet varer som må plukkes
 1. Velg **OK** (hakesymbol).
 1. Angi nummerskiltet som varen blir plukket fra, ved å sette feltet **LP** til *LPREPL04*.
 1. Velg **OK** (hakesymbol).
-1. Vis detaljene som vises for varen ( *T0100* ) og antallet ( *2* EA) som skal sorteres i posisjon 2 (for salgsordre 2).
+1. Vis detaljene som vises for varen (*T0100*) og antallet (*2* EA) som skal sorteres i posisjon 2 (for salgsordre 2).
 1. Sett feltet **POSISJONSNAVN** til *2*.
 1. Velg **OK** (hakesymbol).
-1. Vis detaljene som vises for varen ( *T0100* ) og antallet ( *2* EA) som skal sorteres i posisjon 1 (for salgsordre 1).
+1. Vis detaljene som vises for varen (*T0100*) og antallet (*2* EA) som skal sorteres i posisjon 1 (for salgsordre 1).
 1. Sett feltet **POSISJONSNAVN** til *1*.
 1. Velg **OK** (hakesymbol).
 

@@ -19,11 +19,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: d79e3d3756b8dc402d6f293437209b2e108be38e
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3978618"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4434568"
 ---
 # <a name="time-windows"></a>Tidsvinduer  
 
@@ -31,7 +31,7 @@ ms.locfileid: "3978618"
 
 Du kan bruke tidsvinduer for å optimalisere planleggingen av serviceordrelinjene. Du kan konfigurere systemet slik at serviceordrer opprettes automatisk. Basert på kriteriene som er definert i et tidsvindu, kan du koble til så mange serviceordrelinjer som mulig til så få serviceordrer som mulig.
 
-Tidsvinduer definerer hvor langt en serviceordrelinje kan flyttes fra den beregnede datoen. Den beregnede datoen er datoen som serviceordrelinjen skulle forekomme på. Datoen er basert på intervallinnstillingen og serviceperioden du definerte på **Opprett serviceordrer** -siden. Du definerer et tidsvindu ved hjelp av verdiene i følgende tabell.
+Tidsvinduer definerer hvor langt en serviceordrelinje kan flyttes fra den beregnede datoen. Den beregnede datoen er datoen som serviceordrelinjen skulle forekomme på. Datoen er basert på intervallinnstillingen og serviceperioden du definerte på **Opprett serviceordrer**-siden. Du definerer et tidsvindu ved hjelp av verdiene i følgende tabell.
 
 | Metode | beskrivelse                                                                                                                                                                                                                                                                                           |
 |--------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

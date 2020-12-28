@@ -19,11 +19,11 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 64c7c2787e2ac996e3016f5b23fc48582f5533ad
-ms.sourcegitcommit: e3f4dd2257a3255c2982f4fc7b72a1121275b88a
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: nb-NO
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4018911"
+ms.locfileid: "4434737"
 ---
 # <a name="procurement-catalogs-overview"></a>Oversikt over innkjøpskataloger
 
@@ -62,11 +62,11 @@ Katalogen definerer hvilke varer som er tilgjengelig når innkjøpsrekvisisjoner
 | Kontroller om produkter er tilgjengelige i katalogen. | Innkjøpsagent | Siden produktene arves fra innkjøpskategoriene, vises alle i de aktuelle katalognodene. Du kan kontrollere om alle produkter i en node er skjult eller vises når katalogen brukes i en innkjøpsrekvisisjon. Du kan også kontrollere om enkeltprodukter i en node er skjult eller vises. |
 | Publiser katalogen.                                   | Innkjøpsagent | Før en katalog er tilgjengelig for ansatte i en rekvisisjon, må du definere en katalogpolicyregel for katalogen, angi katalogens status til **Aktiv** og publisere katalogen. Du kan deaktivere kataloger du ikke lenger vil skal være tilgjengelige for brukerne.                                              |
 
-Oppdateringer publiseres enten automatisk eller manuelt, avhengig av hvilket alternativ du velger for katalogen i feltet **Standard oppdateringstype** på **Kataloger** -siden. Følgende standard oppdateringstyper er tilgjengelige for kataloger:
+Oppdateringer publiseres enten automatisk eller manuelt, avhengig av hvilket alternativ du velger for katalogen i feltet **Standard oppdateringstype** på **Kataloger**-siden. Følgende standard oppdateringstyper er tilgjengelige for kataloger:
 
 -   **Dynamisk** – katalogen blir automatisk oppdatert når den endres.
 -   **Statisk** – katalogene må oppdateres manuelt.
--   **Begge** – Hvis katalogen inneholder produktkategorier som har standard oppdateringstype **Statisk** , må den oppdateres manuelt når disse kategoriene oppdateres. Hvis katalogen inneholder produktkategorier som har standard oppdateringstype **Dynamisk** , oppdateres den automatisk når den endres.
+-   **Begge** – Hvis katalogen inneholder produktkategorier som har standard oppdateringstype **Statisk**, må den oppdateres manuelt når disse kategoriene oppdateres. Hvis katalogen inneholder produktkategorier som har standard oppdateringstype **Dynamisk**, oppdateres den automatisk når den endres.
 
 
 <a name="additional-resources"></a>Tilleggsressurser

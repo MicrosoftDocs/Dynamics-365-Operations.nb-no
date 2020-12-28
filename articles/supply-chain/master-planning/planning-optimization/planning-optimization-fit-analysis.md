@@ -20,11 +20,11 @@ ms.author: crytt
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.9
 ms.openlocfilehash: 769bd84b4ba23c9de4638df9186381936221414a
-ms.sourcegitcommit: ae04c7cb48f7ecafe71bbe77a0f97715e6290991
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "3973458"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4434432"
 ---
 # <a name="planning-optimization-fit-analysis"></a>Analyse for tilpassing av planleggingsoptimalisering
 
@@ -34,7 +34,7 @@ Du bør analysere resultatet fra analyse for tilpassing av planleggingsoptimalis
 
 Analyse for tilpassing av planleggingsoptimalisering lar deg identifisere hvor resultatet kan variere mellom den innebygde hovedplanleggingsmotoren og planleggingsoptimaliseringen. Denne analysen utføres basert på gjeldende oppsett og data. 
 
-Hvis du vil se resultatet for analyse for tilpassing av planleggingsoptimalisering, kan du gå til **Hovedplanlegging** \> **Oppsett** \> **Analyse for tilpassing av planleggingsoptimalisering** og deretter velge **Kjør analyse** . Hvis analysen finner noen uregelmessigheter, vises de på samme side. (Det kan ta noen minutter å kjøre analysen.)
+Hvis du vil se resultatet for analyse for tilpassing av planleggingsoptimalisering, kan du gå til **Hovedplanlegging** \> **Oppsett** \> **Analyse for tilpassing av planleggingsoptimalisering** og deretter velge **Kjør analyse**. Hvis analysen finner noen uregelmessigheter, vises de på samme side. (Det kan ta noen minutter å kjøre analysen.)
 
 > [!NOTE]
 > Hvis det blir funnet uoverensstemmelser, kan du likevel bruke planleggingsoptimalisering. Resultatene av tilpassingsanalysen viser bare steder der planleggingstjenesten ikke respekterer det gjeldende oppsettet. De viser med andre ord steder der noen prosesser kan bli ignorert, eller det er ikke sikkert at de støttes.
@@ -53,7 +53,7 @@ Hvis du vil se resultatet for analyse for tilpassing av planleggingsoptimaliseri
 
 ## <a name="overview-of-possible-results-from-the-fit-analysis"></a>Oversikt over mulige resultater fra tilpassingsanalysen
 
-Følgende tabell viser de ulike resultatene som kan vises etter en tilpassingsanalyse. Nummertegn ( _\#_ ) erstattes med et tall som angir antallet poster som har det angitte problemet.
+Følgende tabell viser de ulike resultatene som kan vises etter en tilpassingsanalyse. Nummertegn (_\#_) erstattes med et tall som angir antallet poster som har det angitte problemet.
 
 | Funksjon | Oppført problem | Forklaring | Forventet tilgjengelighet |
 | --- | --- | --- | --- |
@@ -99,7 +99,7 @@ Følgende tabell viser de ulike resultatene som kan vises etter en tilpassingsan
 | Rekvisisjoner | Hovedplaner med rekvisisjoner aktivert: _\#_ | Dette funksjonen venter. Rekvisisjoner ignoreres for øyeblikket når planleggingsoptimalisering er aktivert. De vil ignoreres, uavhengig av denne innstillingen. | 2021. oktober |
 | Sikkerhetsmarginer | Dekningsgrupper med sikkerhetsmargin: _\#_ | Dette funksjonen venter. For øyeblikket ignoreres sikkerhetsmargin når planleggingsoptimalisering er aktivert. Hvis du vil kompensere for denne virkemåten, kan du øke leveringstiden slik at den inkluderer sikkerhetsmarginen. | 2020. oktober |
 | Sikkerhetsmarginer | Hovedplaner med sikkerhetsmargin: _\#_ | Dette funksjonen venter. For øyeblikket ignoreres sikkerhetsmargin når planleggingsoptimalisering aktiveres, uavhengig av denne innstillingen. Hvis du vil kompensere for denne virkemåten, kan du øke leveringstiden slik at den inkluderer sikkerhetsmarginen. | 2020. oktober |
-| Fullføring av sikkerhetslager | Varedekningsposter med "Fyll opp minimum" forskjellig fra "Dagens dato + leveringstid": _\#_ | Planleggingsoptimalisering bruker alltid *Dagens dato + leveringstid* . Denne endringen gjøres for å forberede et forenklet planleggingsoppsett i fremtiden, og for å tilby et gjennomførbart resultat. Hvis leveringstiden ikke er inkludert for sikkerhetslager, vil planlagte bestillinger som opprettes for den gjeldende lagerbeholdningen, alltid bli forsinket på grunn av leveringstiden. Denne virkemåten kan føre til betydelig støy og uønskede planlagte bestillinger. Den beste fremgangsmåten er å endre innstillingen slik at *Dagens dato + leveringstid* brukes. Oppdater hoveddata for å unngå advarsler. | I/T |
+| Fullføring av sikkerhetslager | Varedekningsposter med "Fyll opp minimum" forskjellig fra "Dagens dato + leveringstid": _\#_ | Planleggingsoptimalisering bruker alltid *Dagens dato + leveringstid*. Denne endringen gjøres for å forberede et forenklet planleggingsoppsett i fremtiden, og for å tilby et gjennomførbart resultat. Hvis leveringstiden ikke er inkludert for sikkerhetslager, vil planlagte bestillinger som opprettes for den gjeldende lagerbeholdningen, alltid bli forsinket på grunn av leveringstiden. Denne virkemåten kan føre til betydelig støy og uønskede planlagte bestillinger. Den beste fremgangsmåten er å endre innstillingen slik at *Dagens dato + leveringstid* brukes. Oppdater hoveddata for å unngå advarsler. | I/T |
 | Salgstilbud | Hovedplaner med salgstilbud aktivert: _\#_ | Dette funksjonen venter. Tilbud ignoreres for øyeblikket når planleggingsoptimalisering er aktivert. De vil ignoreres, uavhengig av denne innstillingen. | 2021. oktober |
 | Holdbarhet | Hovedplaner med holdbarhet aktivert: _\#_ | Dette funksjonen venter. For øyeblikket ignoreres holdbarhet når planleggingsoptimalisering aktiveres, uavhengig av denne innstillingen. | 2021. oktober |
 

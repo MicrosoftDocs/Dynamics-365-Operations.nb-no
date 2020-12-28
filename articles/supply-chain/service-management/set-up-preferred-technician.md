@@ -19,34 +19,34 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 850d91372fb1a918840ebc316a4479f4a70bdc24
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3983139"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4434086"
 ---
 # <a name="set-up-a-preferred-technician"></a>Definere en foretrukket tekniker 
 
 [!include [banner](../includes/banner.md)]
 
 
-Du kan velge en hvilken som helst arbeider som en foretrukket tekniker for en serviceavtale eller serviceordre. Det er imidlertid lurt å legge til arbeideren i det aktuelle fordelingsteamet, slik at arbeideren er inkludert i **Tjenestefordeling** .
+Du kan velge en hvilken som helst arbeider som en foretrukket tekniker for en serviceavtale eller serviceordre. Det er imidlertid lurt å legge til arbeideren i det aktuelle fordelingsteamet, slik at arbeideren er inkludert i **Tjenestefordeling**.
 
 ## <a name="assign-employee-to-a-dispatch-team"></a>Tilordne en ansatt til en fordelingsgruppe
 
-1.  Klikk på **Personale** \> **Felles** \> **Arbeidere** \> **Arbeidere** . Dobbeltklikk en arbeider for å åpne siden med arbeiderdetaljer. I **handlingsruten** klikker du **Oppsett** \>**Fordelingsteam** for å åpne skjemaet **Fordel arbeidere** .
+1.  Klikk på **Personale** \> **Felles** \> **Arbeidere** \> **Arbeidere**. Dobbeltklikk en arbeider for å åpne siden med arbeiderdetaljer. I **handlingsruten** klikker du **Oppsett** \>**Fordelingsteam** for å åpne skjemaet **Fordel arbeidere**.
 
-2.  I **Fordelingsteam** -feltet velger du teamet du vil tilordne arbeideren til.
+2.  I **Fordelingsteam**-feltet velger du teamet du vil tilordne arbeideren til.
 
 ## <a name="assign-a-preferred-technician-to-a-service-agreement"></a>Tilordne en foretrukket tekniker til en serviceavtale
 
-1.  Klikk **Servicestyring** \> **Felles** \> **Serviceavtaler** \> **Serviceavtaler** . Dobbeltklikk en serviceavtale for å åpne detaljskjemaet.
+1.  Klikk **Servicestyring** \> **Felles** \> **Serviceavtaler** \> **Serviceavtaler**. Dobbeltklikk en serviceavtale for å åpne detaljskjemaet.
 
-2.  I kategorien **Generelt** velger du feltet **Foretrukket tekniker** , og deretter velger du et medlem i det aktuelle fordelingsteamet som den foretrukne teknikeren for serviceavtalen.
+2.  I kategorien **Generelt** velger du feltet **Foretrukket tekniker**, og deretter velger du et medlem i det aktuelle fordelingsteamet som den foretrukne teknikeren for serviceavtalen.
 
 ## <a name="assign-a-preferred-technician-to-a-service-order"></a>Tilordne en foretrukket tekniker til en serviceordre
 
-1.  Klikk **Servicestyring** \> **Periodisk** \> **Tjenestefordeling** .
+1.  Klikk **Servicestyring** \> **Periodisk** \> **Tjenestefordeling**.
     
 
     > [!NOTE]
@@ -56,7 +56,7 @@ Du kan velge en hvilken som helst arbeider som en foretrukket tekniker for en se
 
 2.  Velg serviceaktivitetslinjen du vil endre.
 
-3.  I kategorien **Relatert** bruker du **Arbeider** -listen til å tilordne et medlem av korrekt fordelingsgruppe til foretrukket tekniker for serviceutkallingen.
+3.  I kategorien **Relatert** bruker du **Arbeider**-listen til å tilordne et medlem av korrekt fordelingsgruppe til foretrukket tekniker for serviceutkallingen.
 
 ## <a name="see-also"></a>Se også
 

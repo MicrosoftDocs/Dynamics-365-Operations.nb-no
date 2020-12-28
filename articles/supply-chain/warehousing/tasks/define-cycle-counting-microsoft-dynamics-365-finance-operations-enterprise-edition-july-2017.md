@@ -17,11 +17,11 @@ ms.author: mafoge
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: a8b7f39fc9a91d9fe219445e409d000266e24775
-ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: nb-NO
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4016154"
+ms.locfileid: "4434767"
 ---
 # <a name="define-cycle-counting"></a>Definere syklustelling  
 
@@ -41,11 +41,11 @@ Syklustelling er en lagerprosess som du kan bruke til å overvåke varer i lager
 1. I **navigasjonsruten** går du til **Moduler > Lagerstyring > Oppsett > Mobilenhet >Menyelementer på mobilenheten**.
 2. Klikk på **Ny**.
 3. Skriv inn en verdi i feltet **Menyelementnavn**.
-4. Skriv inn en verdi i **Tittel** -feltet.
+4. Skriv inn en verdi i **Tittel**-feltet.
 5. Velg Arbeid i feltet **Modus**.
 6. Angi alternativet **Bruk eksisterende arbeid** til Ja. Når du setter dette alternativet til Ja, vil systemet se etter eksisterende arbeid når menyelementet for mobilenhet brukes.  
 7. Velg Systemstyrt i feltet **Styrt av**. Når "Systemrettet" er valgt, kommer lagermedarbeideren til å åpne arbeid som er i definerte arbeidsklasser. (Vi vil opprette disse arbeidsklassene etterpå.)  
-8. Utvid **Arbeidsklasser** -hurtigfanen. Nå skal vi opprette to klasser for arbeid som skal brukes med dette menyelementet for mobil enhet. Når menyelementet brukes, spørres det etter disse arbeidsklassene, og arbeidet med høyest prioritet blir vist for brukeren.  
+8. Utvid **Arbeidsklasser**-hurtigfanen. Nå skal vi opprette to klasser for arbeid som skal brukes med dette menyelementet for mobil enhet. Når menyelementet brukes, spørres det etter disse arbeidsklassene, og arbeidet med høyest prioritet blir vist for brukeren.  
 9. Klikk på **Ny**.
 10. Velg en verdi i feltet **Arbeidsklasse-ID**.
 11. Klikk på **Ny**.
@@ -64,11 +64,11 @@ Syklustelling er en lagerprosess som du kan bruke til å overvåke varer i lager
 2. Klikk på **Ny**.
 3. Skriv inn en verdi i feltet **ID for syklustellingsterskel**.
 4. Angi alternativet **Behandle syklustelling umiddelbart** til Ja.
-5. Skriv inn en verdi i **Beskrivelse** -feltet.
+5. Skriv inn en verdi i **Beskrivelse**-feltet.
 6. Klikk **Lagre**.
 7. Klikk **Velg lokasjoner**.
 8. Merk den valgte raden i listen.
-9. Velg en verdi i **Kriterier** -feltet.
+9. Velg en verdi i **Kriterier**-feltet.
 10. Klikk **OK**.
 11. Lukk siden.
 
@@ -76,23 +76,23 @@ Syklustelling er en lagerprosess som du kan bruke til å overvåke varer i lager
 1. I **navigasjonsruten** går du til **Moduler > Lagerstyring > Oppsett > Syklustelling > Planer for syklustelling**.
 2. Klikk på **Ny**.
 3. Skriv inn en verdi i feltet **ID for syklustellingsplan**.
-4. Skriv inn en verdi i **Beskrivelse** -feltet.
+4. Skriv inn en verdi i **Beskrivelse**-feltet.
 5. Angi et tall i feltet **Største antall syklustellinger**.
 6. Klikk **Lagre**.
 7. Klikk **Velg lokasjoner**.
 8. Merk den valgte raden i listen.
-9. Velg en verdi i **Kriterier** -feltet.
+9. Velg en verdi i **Kriterier**-feltet.
 10. Klikk **OK**.
 11. Angi et tall i feltet **Dager mellom syklustellinger**. Hvis for eksempel feltet **Dager mellom syklustellinger** er angitt til 5, opprettes syklustellingsarbeidet hver femte dag. Hvis syklustellingsarbeid imidlertid behandles på dag tre, opprettes neste syklustellingsarbeid fem dager etter den siste syklustellingen ble behandlet, på dag 8.  
 12. Klikk **Lagre**.
 13. Klikk på **Ny**.
-14. Angi et nummer i **Sekvensnummer** -feltet. Sorteringen er fra det laveste tallet til det høyeste tallet. Verdien må være over 0 (null).  
+14. Angi et nummer i **Sekvensnummer**-feltet. Sorteringen er fra det laveste tallet til det høyeste tallet. Verdien må være over 0 (null).  
 15. Merk den valgte raden i listen.
-16. Skriv inn en verdi i **Beskrivelse** -feltet.
+16. Skriv inn en verdi i **Beskrivelse**-feltet.
 17. Klikk **Lagre**.
 18. Klikk **Definer produktspørring**.
 19. Merk den valgte raden i listen.
-20. Angi eller velg en verdi i **Kriterier** -feltet.
+20. Angi eller velg en verdi i **Kriterier**-feltet.
 21. Klikk **OK**.
 22. Lukk siden.
 

@@ -18,11 +18,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: c37a98a3728cb1233a6e1207975a6b8f23f8120d
-ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: nb-NO
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4015924"
+ms.locfileid: "4434788"
 ---
 # <a name="plan-loads-and-shipments-using-the-load-planning-workbench"></a>Planlegge laster og leveringer ved hjelp av arbeidsområdet for lastplanlegging
 
@@ -34,14 +34,14 @@ Dette emnet viser hvordan du bruker arbeidsområdet for lastplanlegging til å o
 ## <a name="create-a-sales-order"></a>Opprette en salgsordre
 1. Gå til **Navigasjonsrute > Moduler > Kunder > Ordrer > Alle salgsordrer**.
 2. Velg **Ny**.
-3. Klikk på rullegardinknappen i **Kundekonto** -feltet for å åpne oppslaget.
+3. Klikk på rullegardinknappen i **Kundekonto**-feltet for å åpne oppslaget.
 4. Velg konto **US-004**.
 5. Velg **OK**.
-6. Klikk på rullegardinknappen i **Varenummer** -feltet for å åpne oppslaget.
+6. Klikk på rullegardinknappen i **Varenummer**-feltet for å åpne oppslaget.
 7. Velg vare **A0001**. **A0001** er aktivert for transportstyring.  
 8. Klikk på rullegardinknappen i feltet **Område** for å velge et element.
-9. Angi et tall i **Antall** -feltet.
-10. I **Lager** -feltet skriver du inn 24 for dette eksemplet. Dette lageret er aktivert for transportstyring og avansert lagerstyring.  
+9. Angi et tall i **Antall**-feltet.
+10. I **Lager**-feltet skriver du inn 24 for dette eksemplet. Dette lageret er aktivert for transportstyring og avansert lagerstyring.  
 11. Velg **Lagre**.
 12. Lukk siden.
 

@@ -17,11 +17,11 @@ ms.author: mirzaab
 ms.search.validFrom: 2020-07-16
 ms.dyn365.ops.version: Release 10.0.9
 ms.openlocfilehash: 12501b90e4b31ec11e3c59784ace9fd9a8b7d934
-ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: nb-NO
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4017834"
+ms.locfileid: "4434743"
 ---
 # <a name="put-to-wall---put-to-store"></a>Plasser til vegg – plasser til butikk
 
@@ -35,12 +35,12 @@ Denne lagerfunksjonaliteten refereres også til med andre navn.
 
 ## <a name="turn-on-the-outbound-sorting-feature"></a>Aktivere Utgående sortering-funksjonen
 
-Før du kan bruke funksjonen for *Plasser til vegg – plasser til butikk* , må funksjonen *Utgående sortering* aktiveres på systemet. Administratorer kan bruke [Funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)-arbeidsområdet til å kontrollere funksjonsstatusen og aktivere den hvis den kreves. Funksjonen vises på følgende måte:
+Før du kan bruke funksjonen for *Plasser til vegg – plasser til butikk*, må funksjonen *Utgående sortering* aktiveres på systemet. Administratorer kan bruke [Funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)-arbeidsområdet til å kontrollere funksjonsstatusen og aktivere den hvis den kreves. Funksjonen vises på følgende måte:
 
 - **Modul:** *Lagerstyring*
 - **Funksjonsnavn:** *Utgående sortering*
 
-Funksjonen *Utgående sortering* kan brukes sammen med funksjonen *Organisasjonsomfattende bølgetrinnkode* hvis den er slått på. Du må også aktivere denne funksjonen hvis du vil bruke forhåndsdefinerte koder som er definert i bølgetrinnkoder. I **Funksjonsadministrering** -arbeidsområdet er denne funksjonen oppført på følgende måte:
+Funksjonen *Utgående sortering* kan brukes sammen med funksjonen *Organisasjonsomfattende bølgetrinnkode* hvis den er slått på. Du må også aktivere denne funksjonen hvis du vil bruke forhåndsdefinerte koder som er definert i bølgetrinnkoder. I **Funksjonsadministrering**-arbeidsområdet er denne funksjonen oppført på følgende måte:
 
 - **Modul:** *Lagerstyring*
 - **Funksjonsnavn:** *Organisasjonsomfattende bølgetrinnkode*
@@ -75,7 +75,7 @@ For denne demoen brukes standard Contoso-data og -lager *62*. Noen tillegg som e
     - **Lokasjonsprofil-ID:** *Sorter*
     - **Navn:** *Sorter*
 
-1. Angi følgende verdier i **Generelt** -hurtigfanen:
+1. Angi følgende verdier i **Generelt**-hurtigfanen:
 
     - **Lokasjonsformat:** *PAKKE*
     - **Lokasjonstype:** *SORTER*
@@ -113,7 +113,7 @@ For denne demoen brukes standard Contoso-data og -lager *62*. Noen tillegg som e
 
 ### <a name="wave-step-codes"></a>Bølgetrinnkoder
 
-Hvis du aktiverte *Organisasjonsomfattende bølgetrinnkode* , definerer du følgende kode.
+Hvis du aktiverte *Organisasjonsomfattende bølgetrinnkode*, definerer du følgende kode.
 
 1. Gå til **Lagerstyring \> Oppsett \> Bølger \> Bølgetrinnkoder**.
 1. Velg **Ny** i handlingsruten, og angi deretter følgende verdier:
@@ -138,13 +138,13 @@ Sorteringsmalen styrer om sorteringsposisjoner opprettes, hvilke kriterier som b
 
         Dette feltet definerer prosessen som sorteringsmalen brukes til. Følgende verdier er tilgjengelige:
 
-        - **Bølgebehov** – Sorteringsmalen brukes til prosessen *Plasser til vegg*. Denne maltypen brukes til å omgå pakkestasjonen og behandle lageret direkte utenfor bølgen. Du kan bare bruke denne typen hvis **sortering** -bølgeprosessmetoden er inkludert i bølgemalen.
+        - **Bølgebehov** – Sorteringsmalen brukes til prosessen *Plasser til vegg*. Denne maltypen brukes til å omgå pakkestasjonen og behandle lageret direkte utenfor bølgen. Du kan bare bruke denne typen hvis **sortering**-bølgeprosessmetoden er inkludert i bølgemalen.
         - **Container** – Sorteringsmalen brukes til prosessen for *Pallbyggingen etter pakking*. Denne maltypen brukes til å behandle containere som er lukket på pakkestasjonen og må sorteres på paller.
 
     - **Lager:** *62*
     - **Lokasjon:** *Sorter*
 
-1. Angi følgende verdier i **Generelt** -hurtigfanen:
+1. Angi følgende verdier i **Generelt**-hurtigfanen:
 
     - **Sorteringsbekreftelse:** *Posisjonsskanning*
 
@@ -156,7 +156,7 @@ Sorteringsmalen styrer om sorteringsposisjoner opprettes, hvilke kriterier som b
 
     - **Opprett arbeid ved posisjonslukking:** *Ja*
 
-        Hvis dette valget settes til *Ja* når posisjonen er lukket, opprettes arbeid for å flytte lageret til den endelige leveringslokasjonen. Hvis det settes til *Nei* , plukkes lageret umiddelbart til ordren når posisjonen lukkes.
+        Hvis dette valget settes til *Ja* når posisjonen er lukket, opprettes arbeid for å flytte lageret til den endelige leveringslokasjonen. Hvis det settes til *Nei*, plukkes lageret umiddelbart til ordren når posisjonen lukkes.
 
     - **Stillingstilordning:** *Manuell*
 
@@ -174,11 +174,11 @@ Sorteringsmalen styrer om sorteringsposisjoner opprettes, hvilke kriterier som b
 
     - **Bølgetrinnkode:** *Sorter*
 
-        Hvis funksjonen *Organisasjonsomfattende bølgetrinnkode* er aktivert, må *Sorter* -bølgetrinnkoden også konfigureres i bølgetrinnkodene.
+        Hvis funksjonen *Organisasjonsomfattende bølgetrinnkode* er aktivert, må *Sorter*-bølgetrinnkoden også konfigureres i bølgetrinnkodene.
 
     - **Automatisk lukking av sorteringsposisjon:** *Ja*
 
-        Hvis dette alternativet er satt til *Ja* , vil sorteringsposisjonen automatisk lukkes når alt arbeid som kommer til posisjonen, er fullført.
+        Hvis dette alternativet er satt til *Ja*, vil sorteringsposisjonen automatisk lukkes når alt arbeid som kommer til posisjonen, er fullført.
 
     - **Antall sorteringsposisjoner:** *3*
 
@@ -190,7 +190,7 @@ Sorteringsmalen styrer om sorteringsposisjoner opprettes, hvilke kriterier som b
 
     - **Automatisk pakking av sorteringsposisjon:** *Ja*
 
-        Hvis dette alternativet er satt til *Ja* , vil lageret på sorteringsposisjonen pakkes i en container når posisjonen lukkes.
+        Hvis dette alternativet er satt til *Ja*, vil lageret på sorteringsposisjonen pakkes i en container når posisjonen lukkes.
 
     - **Pakkeprofil-ID:** *Sorter*
 
@@ -221,7 +221,7 @@ Sorteringsmalen styrer om sorteringsposisjoner opprettes, hvilke kriterier som b
 1. Gå til **Lagerstyring \> Oppsett \> Bølger \> Bølgebehandlingsmetoder**.
 1. Velg **Regenerer metoder** i handlingsruten.
 
-    **Sortering** -metoden legges til i listen over tilgjengelige metoder, og bølgemaltypen *Forsendelse* velges for den.
+    **Sortering**-metoden legges til i listen over tilgjengelige metoder, og bølgemaltypen *Forsendelse* velges for den.
 
 ### <a name="wave-templates"></a>Bølgemaler
 
@@ -231,15 +231,15 @@ Rediger bølgemalen som brukes for bølgebehovsortering.
 1. I feltet *Bølgemaltype* velger du **Forsendelse**.
 1. Velg den eksisterende malen **62 Standardforsendelse**.
 1. I handlingsruten velger du **Rediger**.
-1. Gjør følgende endringer i hurtigfanen **Generelt** :
+1. Gjør følgende endringer i hurtigfanen **Generelt**:
 
     - Sett alternativet **Behandle bølge ved frigivelse til lager** til *Nei*.
     - Sett alternativet **Tilordne til åpne bølger** til *Ja*.
 
-1. I hurtigfanen **Metoder** angir du metoden **Sortering** :
+1. I hurtigfanen **Metoder** angir du metoden **Sortering**:
 
     1. I rutenettet **Gjenværende metoder** velger du **Sortering**.
-    2. Velg høyre pil for å flytte **sortering** til **Valgte metoder** -rutenettet.
+    2. Velg høyre pil for å flytte **sortering** til **Valgte metoder**-rutenettet.
     3. I rutenettet **Valgte metoder** velger du **Sortering**.
     4. Angi feltet **Bølgetrinnkode** til *Sorter*.
 
@@ -256,7 +256,7 @@ Rediger bølgemalen som brukes for bølgebehovsortering.
     - **Modus:** *Indirekte*
     - **Bruke eksisterende arbeid:** *Nei*
 
-1. Angi følgende verdier i **Generelt** -hurtigfanen:
+1. Angi følgende verdier i **Generelt**-hurtigfanen:
 
     - **Aktivitetskode:** *Utgående sortering*
     - **Bruk prosessveiledning:** *Ja* (standardverdi)
@@ -269,7 +269,7 @@ Rediger bølgemalen som brukes for bølgebehovsortering.
 1. Gå til **Lagerstyring \> Oppsett \> Mobilenhet \> Meny på mobilenheten**.
 1. Velg **Utgående** i listen over menyer.
 1. I handlingsruten velger du **Rediger**.
-1. I rutenettet **Tilgjengelige menyer og menyelementer** finner og velger du **Sorter** -menyelementet du nettopp opprettet.
+1. I rutenettet **Tilgjengelige menyer og menyelementer** finner og velger du **Sorter**-menyelementet du nettopp opprettet.
 1. Velg høyre pil-knappen for å flytte **Sorter** til rutenettet **Menystruktur**. På denne måten legger du til menyelementet på menyen **Utgående**.
 1. Velg **Lagre**.
 
@@ -285,7 +285,7 @@ Du må opprette lokasjonsdirektiver for å veilede arbeidet som opprettes etter 
     - **Sekvens:** *1*
     - **Navn:** *Sett til rampedør*
 
-1. Angi følgende verdier i **Lokasjonsdirektiver** -hurtigfanen:
+1. Angi følgende verdier i **Lokasjonsdirektiver**-hurtigfanen:
 
     - **Arbeidstype:** *Plasser*
     - **Område:** *6*
@@ -293,22 +293,22 @@ Du må opprette lokasjonsdirektiver for å veilede arbeidet som opprettes etter 
     - **Direktivkoden:** La dette feltet stå tomt.
     - **Flere SKUer:** *Nei*
 
-1. Velg **Lagre** for å gjøre **Linjer** -hurtigfanen tilgjengelig.
-1. På hurtigfanen **Linjer** velger du **Ny** , og angi deretter følgende verdier. Godta standardverdiene for alle de andre feltene.
+1. Velg **Lagre** for å gjøre **Linjer**-hurtigfanen tilgjengelig.
+1. På hurtigfanen **Linjer** velger du **Ny**, og angi deretter følgende verdier. Godta standardverdiene for alle de andre feltene.
 
     - **Sekvensnummer:** *1*
     - **Fra-antall:** *0*
     - **Til-antall:** *1000000*
 
-1. Velg **Lagre** for å gjøre **Lokasjonsdirektivhandlinger** -hurtigfanen tilgjengelig.
-1. På hurtigfanen **Handlinger for lokasjonsdirektiv** velger du **Ny** , og angi deretter følgende verdier. Godta standardverdiene for alle de andre feltene.
+1. Velg **Lagre** for å gjøre **Lokasjonsdirektivhandlinger**-hurtigfanen tilgjengelig.
+1. På hurtigfanen **Handlinger for lokasjonsdirektiv** velger du **Ny**, og angi deretter følgende verdier. Godta standardverdiene for alle de andre feltene.
 
     - **Sekvensnummer:** *1*
     - **Navn:** *Rampedør*
 
-1. Velg **Lagre** for å gjøre **Rediger spørring** -knappen på **Lokasjonsdirektivhandlinger** -hurtigfanen tilgjengelig.
-1. I **Handlinger for lokasjonsdirektiv** -hurtigfanen velger du **Rediger spørring**.
-1. I dialogboksen for spørring, i kategorien **Område** , finner du raden der feltet **Felt** er satt til *Lokasjon*. Sett **Vilkår** -feltet for denne raden til *Rampedør*.
+1. Velg **Lagre** for å gjøre **Rediger spørring**-knappen på **Lokasjonsdirektivhandlinger**-hurtigfanen tilgjengelig.
+1. I **Handlinger for lokasjonsdirektiv**-hurtigfanen velger du **Rediger spørring**.
+1. I dialogboksen for spørring, i kategorien **Område**, finner du raden der feltet **Felt** er satt til *Lokasjon*. Sett **Vilkår**-feltet for denne raden til *Rampedør*.
 1. Velg **OK** for å bekrefte redigeringen.
 
 ### <a name="work-classes"></a>Arbeidsklasser
@@ -327,11 +327,11 @@ Du må opprette lokasjonsdirektiver for å veilede arbeidet som opprettes etter 
 
 1. Gå til **Lagerstyring \> Arbeid \> Arbeidsmaler**.
 1. Velg *Salgsordrer* i feltet **Arbeidsordretype**.
-1. Velg **62 Plukk til pakke** -arbeidsmalen i rutenettet.
+1. Velg **62 Plukk til pakke**-arbeidsmalen i rutenettet.
 1. Velg **Arbeidshodeskift** i handlingsruten.
 1. I handlingsruten velger du **Rediger**.
-1. I linjen der **Feltnavn** -feltet er satt til *Forsendelses-ID* , fjerner du merket i avmerkings boksen **Grupper etter dette feltet** .
-1. Velg **Lagre** , og lukk deretter dialogboksen **Arbeidshodeskift**.
+1. I linjen der **Feltnavn**-feltet er satt til *Forsendelses-ID*, fjerner du merket i avmerkings boksen **Grupper etter dette feltet** .
+1. Velg **Lagre**, og lukk deretter dialogboksen **Arbeidshodeskift**.
 1. Velg *Sortert lagerplukking* i feltet **Arbeidsordretype**.
 1. Velg **Ny** for å opprette en arbeidsmal.
 1. Angi følgende verdier i delen **Oversikt**. Godta standardverdiene for alle de andre feltene.
@@ -339,17 +339,17 @@ Du må opprette lokasjonsdirektiver for å veilede arbeidet som opprettes etter 
     - **Arbeidsmal:** *Sortert plukking*
     - **Beskrivelse av arbeidsmal:** *Sortert plukking*
 
-1. Velg **Lagre** for å gjøre **Arbeidsmaldetaljer** -delen tilgjengelig.
-1. I delen **Arbeidsmaldetaljer** oppretter du to linjer. Velg **Ny** , og angi deretter følgende verdier for linje 1:
+1. Velg **Lagre** for å gjøre **Arbeidsmaldetaljer**-delen tilgjengelig.
+1. I delen **Arbeidsmaldetaljer** oppretter du to linjer. Velg **Ny**, og angi deretter følgende verdier for linje 1:
 
     - **Arbeidstype:** *Plukk*
-    - **Obligatorisk:** Valgt (= *Ja* )
+    - **Obligatorisk:** Valgt (= *Ja*)
     - **Arbeidsklasse-ID:** *Sortering*
 
 1. Velg **Ny** på nytt, og angi deretter følgende verdier for linje 2:
 
     - **Arbeidstype:** *Plasser*
-    - **Obligatorisk:** Valgt (= *Ja* )
+    - **Obligatorisk:** Valgt (= *Ja*)
     - **Arbeidsklasse-ID:** *Sortering*
 
 1. Velg **Lagre**.
@@ -368,13 +368,13 @@ Før du oppretter salgsordrer og forsendelser må du kontrollere at plukklokasjo
 
 1. Gå til **Salg og markedsføring \> Salgsordrer \> Alle salgsordrer**.
 1. Velg **Ny** for å opprette en ny salgsordre for ordre 1.
-1. I **Opprett salgsordre** -dialogboksen angir du følgende verdier:
+1. I **Opprett salgsordre**-dialogboksen angir du følgende verdier:
 
     - **Kunde:** *US-001*
     - **Lager:** *62*
 
 1. Velg **OK**.
-1. Det legges til en ny linje i rutenettet på **Salgsordrelinjer** -hurtigfanen. Angi følgende verdier:
+1. Det legges til en ny linje i rutenettet på **Salgsordrelinjer**-hurtigfanen. Angi følgende verdier:
 
     - **Varenummer:** *A0001*
     - **Antall:** *5*
@@ -386,18 +386,18 @@ Før du oppretter salgsordrer og forsendelser må du kontrollere at plukklokasjo
 
 1. Gjenta følgende trinn for hver salgslinje i ordren for å reservere lager for den:
 
-    1. På **Salgsordrelinjer** -fanen, på **Beholdning** -menyen, velger du **Reservasjon**.
-    1. På **Reservasjon** -siden velger du **Reserver parti** , og deretter lukker du siden.
+    1. På **Salgsordrelinjer**-fanen, på **Beholdning**-menyen, velger du **Reservasjon**.
+    1. På **Reservasjon**-siden velger du **Reserver parti**, og deretter lukker du siden.
     1. Velg **Lagre**.
 
 1. Velg **Ny** for å opprette en ny salgsordre for ordre 2.
-1. I **Opprett salgsordre** -dialogboksen angir du følgende verdier:
+1. I **Opprett salgsordre**-dialogboksen angir du følgende verdier:
 
     - **Kunde:** *US-004*
     - **Lager:** *62*
 
 1. Velg **OK**.
-1. Det legges til en ny linje i rutenettet på **Salgsordrelinjer** -hurtigfanen. Angi følgende verdier:
+1. Det legges til en ny linje i rutenettet på **Salgsordrelinjer**-hurtigfanen. Angi følgende verdier:
 
     - **Varenummer:** *A0001*
     - **Antall:** *7*
@@ -409,26 +409,26 @@ Før du oppretter salgsordrer og forsendelser må du kontrollere at plukklokasjo
 
 1. Gjenta følgende trinn for hver salgslinje i ordren for å reservere lager for den:
 
-    1. På **Salgsordrelinjer** -fanen, på **Beholdning** -menyen, velger du **Reservasjon**.
-    1. På **Reservasjon** -siden velger du **Reserver parti** , og deretter lukker du siden.
+    1. På **Salgsordrelinjer**-fanen, på **Beholdning**-menyen, velger du **Reservasjon**.
+    1. På **Reservasjon**-siden velger du **Reserver parti**, og deretter lukker du siden.
     1. Velg **Lagre**.
 
 1. Velg **Ny** for å opprette en ny salgsordre for ordre 3.
-1. I **Opprett salgsordre** -dialogboksen angir du følgende verdier:
+1. I **Opprett salgsordre**-dialogboksen angir du følgende verdier:
 
     - **Kunde:** *US-007*
     - **Lager:** *62*
 
 1. Velg **OK**.
-1. Det legges til en ny linje i rutenettet på **Salgsordrelinjer** -hurtigfanen. Angi følgende verdier:
+1. Det legges til en ny linje i rutenettet på **Salgsordrelinjer**-hurtigfanen. Angi følgende verdier:
 
     - **Varenummer:** *A0001*
     - **Antall:** *8*
 
 1. Følg disse trinnene for reservere lager for salgslinjen:
 
-    1. På **Salgsordrelinjer** -fanen, på **Beholdning** -menyen, velger du **Reservasjon**.
-    1. På **Reservasjon** -siden velger du **Reserver parti** , og deretter lukker du siden.
+    1. På **Salgsordrelinjer**-fanen, på **Beholdning**-menyen, velger du **Reservasjon**.
+    1. På **Reservasjon**-siden velger du **Reserver parti**, og deretter lukker du siden.
     1. Velg **Lagre**.
 
 Fullfør følgende fremgangsmåte for å frigi hver salgsordre til lageret. Det opprettes tre forskjellige forsendelser. Deretter legger du til alle de tre leveringer i én ny bølge.
@@ -441,7 +441,7 @@ Fullfør følgende fremgangsmåte for å frigi hver salgsordre til lageret. Det 
 
 1. Gjenta de forrige trinnene for å frigi salgsordre 2 og 3 til lageret. Legg merke til at informasjonsmeldingen du mottar, angir at det er lagt til en forsendelse til bølgen som ble opprettet da du frigav salgsordre 1.
 1. Gå til **Lagerstyring \> Utgående bølger \> Forsendelsesbølger \> Alle bølger**.
-1. Velg bølge-IDen som ble opprettet fra frigivelsen av salgsordrene for å åpne **Bølger** -siden. Denne siden viser bølgeinformasjon. Hurtigfanen **Bølgelinjer** viser forsendelsene som ble opprettet.
+1. Velg bølge-IDen som ble opprettet fra frigivelsen av salgsordrene for å åpne **Bølger**-siden. Denne siden viser bølgeinformasjon. Hurtigfanen **Bølgelinjer** viser forsendelsene som ble opprettet.
 
     Du må nå opprette arbeid for å hente varer fra plukklokasjonene til sorteringslokasjonen.
 
@@ -460,8 +460,8 @@ Fullfør følgende fremgangsmåte for å frigi hver salgsordre til lageret. Det 
 
 1. Logg på mobilappen som en arbeider i lageret *62*.
 1. I hovedmenyen velger du **Utgående**.
-1. I **Utgående** -menyen velger du **Salgsplukking**.
-1. Velg **ID** -feltet, og angi deretter arbeids-IDen fra bølgebehandlingen.
+1. I **Utgående**-menyen velger du **Salgsplukking**.
+1. Velg **ID**-feltet, og angi deretter arbeids-IDen fra bølgebehandlingen.
 1. Bekreft oppføringen.
 
     Deretter blir du bedt om å angi et målnummerskilt (LP). Legg merke til at linje 1 fra salgsordre 1 må plukkes og legges til målnummerskiltet. Varenummeret, antallet, varebeskrivelsen og plukklokasjonen vises.
@@ -472,7 +472,7 @@ Fullfør følgende fremgangsmåte for å frigi hver salgsordre til lageret. Det 
 
 1. Bekreft oppføringen.
 
-    Mobilappen presenterer nå en serie med **Plukk** -sider som peker deg til plukklokasjonen og til varen og antallet som må plukkes. Når den plukkede varen er lagt til i nummerskiltet, bekrefter du plukkarbeidet. Den siste siden vil være arbeidet med å sette de plukkede varene inn i sorteringslokasjonen.
+    Mobilappen presenterer nå en serie med **Plukk**-sider som peker deg til plukklokasjonen og til varen og antallet som må plukkes. Når den plukkede varen er lagt til i nummerskiltet, bekrefter du plukkarbeidet. Den siste siden vil være arbeidet med å sette de plukkede varene inn i sorteringslokasjonen.
 
 1. Bekreft det første plukkarbeidet.
 1. Det neste plukkarbeidet vises. Bekreft plukket.
@@ -490,11 +490,11 @@ Nå som alt lager er plassert til sorteringslokasjonen, må den sorteres til den
 1. Logge på mobilappen.
 1. I hovedmenyen velger du **Utgående**.
 1. På menyen **Utgående** velger du **Sortering** for å starte sorteringen av varene.
-1. I **LP/CON** -feltet angir du mållisensplaten for det plukkede salgsordrearbeidet.
+1. I **LP/CON**-feltet angir du mållisensplaten for det plukkede salgsordrearbeidet.
 1. Bekreft oppføringen.
 1. Angi varenummeret som skal sorteres først.
 1. Systemet bestemmer den første sorteringsposisjonen som skal vises. Bekreft sorteringsposisjonen.
-1. Du blir bedt om å tilordne en lisensplate til sorteringsposisjonen. Velg **LP** -feltet, angi et lisensplatenummer, og bekreft deretter oppføringen.
+1. Du blir bedt om å tilordne en lisensplate til sorteringsposisjonen. Velg **LP**-feltet, angi et lisensplatenummer, og bekreft deretter oppføringen.
 
     Siden sorteringsposisjonen er knyttet til forsendelses-IDen, skal du sortere de plukkede varene til et nummerskilt som er spesifikt for den utgående forsendelsen og salgsordren.
 
@@ -514,23 +514,23 @@ Nå som alt lager er plassert til sorteringslokasjonen, må den sorteres til den
     - Hvis stillingene er lukket automatisk, velger du **Vis lukket** for å vise de lukkede posisjonene.
     - Legg merke til at sorteringsposisjonstransaksjoner vises. Varen og antallet som ble behandlet via posisjonen, vises.
 
-    Når du definerer den utgående sorteringsmalen, setter du alternativet **Sorteringsposisjonen automatisk lukking** til *Ja*. Derfor lukkes stillingen automatisk etter at det siste forventede lageret blir lagt til den. Sorteringsposisjonene er i **Lukket** -status, og arbeidet er opprettet for å flytte det sorterte lageret til *Rampedør* -lokasjon.
+    Når du definerer den utgående sorteringsmalen, setter du alternativet **Sorteringsposisjonen automatisk lukking** til *Ja*. Derfor lukkes stillingen automatisk etter at det siste forventede lageret blir lagt til den. Sorteringsposisjonene er i **Lukket**-status, og arbeidet er opprettet for å flytte det sorterte lageret til *Rampedør*-lokasjon.
 
 1. Fullfør det sorterte lagerplukkingsarbeidet for å flytte lageret til forsendelsesstedet. Når lageret er klart, bekrefter du sending.
 
 > [!NOTE]
-> For sortert lagerplukkingsarbeid skal behandles på rett måte, må et mobilenhetsmenyelement med arbeidsklasse-ID der feltet **Arbeidsordretype** er satt til *Sortert lagerplukking* , brukes til flyttings- og innlastingsprosessen.
+> For sortert lagerplukkingsarbeid skal behandles på rett måte, må et mobilenhetsmenyelement med arbeidsklasse-ID der feltet **Arbeidsordretype** er satt til *Sortert lagerplukking*, brukes til flyttings- og innlastingsprosessen.
 
 ### <a name="manually-close-a-position-optional"></a>Lukke en stilling manuelt (valgfritt)
 
-Hvis sorteringsposisjoner skal lukkes manuelt, må alternativet **Sorteringsposisjonen automatisk lukking** for den utgående sorteringsmalen settes til *Nei* , og det må gjøres en lukking før lageret kan flyttes til rampedøren. Stillinger kan lukkes på forskjellige måter:
+Hvis sorteringsposisjoner skal lukkes manuelt, må alternativet **Sorteringsposisjonen automatisk lukking** for den utgående sorteringsmalen settes til *Nei*, og det må gjøres en lukking før lageret kan flyttes til rampedøren. Stillinger kan lukkes på forskjellige måter:
 
 - Via lagerappen:
 
     - Brukeren kan skanne én av varene som allerede finnes på posisjonen, og deretter velge **Lukk** for å lukke posisjonen.
     - Hvis brukeren skanner en container som allerede er sortert container, vises det en feilmelding. Brukeren kan imidlertid fremdeles fortsette å lukke posisjonen.
 
-- Fra Microsoft Dynamics 365 Supply Chain Management siden **Posisjonstilordninger for utgående sortering** :
+- Fra Microsoft Dynamics 365 Supply Chain Management siden **Posisjonstilordninger for utgående sortering**:
 
     - Brukeren kan velge den utgående sorteringsposisjonsposten og deretter velge **Lukk posisjon** i handlingsruten.
 

@@ -20,11 +20,11 @@ ms.author: kamaybac
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
 ms.openlocfilehash: 90c01e4281246d890ef888c56ca137f83e83741c
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3980489"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4434178"
 ---
 # <a name="nomenclature-of-product-variant-numbers-and-names"></a>Terminologi for produktvariantnumre og navn
 
@@ -32,7 +32,7 @@ ms.locfileid: "3980489"
 
 Dette emnet beskriver hvordan du kan definere en produktnummerterminologi for å erstatte det faste formatet [Produktstandardnummer - Konfigurasjon - Størrelse - Farge - Stil]. Den nye terminologien har et bestemt format som inkluderer produktstandardnummer, aktive produktdimensjoner og skilletegn for tekst du velger. Du kan også opprette en terminologi for produktnavn. Du kan også bygge en terminologi for å identifisere konfigurasjonene som er opprettet av den restriksjonsbaserte produktkonfiguratoren. Disse terminologiene kan inneholde attributtene du velger.
 
-Med de nye terminologiene for produktvariantnumre og navn på produktvariant kan du ta med segmenter i identifikatorene for produktvarianter. Disse segmentene kan inkludere produktstandardnummer og navn, produktdimensjon-IDer og navn, nummerserier, tekstkonstanter og attributter. Med denne funksjonen kan du raskt finne en bestemt produktvariant når du oppretter en salgsordre eller bestilling. Du oppretter terminologier for både produktvariantnumre og produktvariantnavn fra siden **Produktterminologi** . Du åpner denne siden ved å klikke **Behandling av produktinformasjon** &gt; **Oppsett** .
+Med de nye terminologiene for produktvariantnumre og navn på produktvariant kan du ta med segmenter i identifikatorene for produktvarianter. Disse segmentene kan inkludere produktstandardnummer og navn, produktdimensjon-IDer og navn, nummerserier, tekstkonstanter og attributter. Med denne funksjonen kan du raskt finne en bestemt produktvariant når du oppretter en salgsordre eller bestilling. Du oppretter terminologier for både produktvariantnumre og produktvariantnavn fra siden **Produktterminologi**. Du åpner denne siden ved å klikke **Behandling av produktinformasjon** &gt; **Oppsett**.
 
 ## <a name="nomenclature-of-predefined-product-variants"></a>Terminologi for forhåndsdefinerte produktvarianter
 Produktvarianter genereres for produktstandarder i henhold til én av tre konfigurasjonsteknologier:
@@ -41,7 +41,7 @@ Produktvarianter genereres for produktstandarder i henhold til én av tre konfig
 -   Restriksjonsbasert
 -   Dimensjonsbasert
 
-Hver produktvariant har et nummer og navn, og med terminologien for produktvariant-ID kan du velge segmentene som skal inkluderes i hvert produktnummervariant og navn. Du kan velge de følgende segmentene på siden **Produktterminologi** :
+Hver produktvariant har et nummer og navn, og med terminologien for produktvariant-ID kan du velge segmentene som skal inkluderes i hvert produktnummervariant og navn. Du kan velge de følgende segmentene på siden **Produktterminologi**:
 
 -   Produktstandardnummer
 -   Navn på produktstandard
@@ -70,7 +70,7 @@ En T-skjorte (TS1234) er produsert i tre størrelser (S, M, L), fire farger (rø
 I dette tilfellet er produktvariantnummeret for en rød, liten polo-T-skjorte: TS1234-Rød-Small-Polo.
 
 ## <a name="nomenclature-of-constraint-based-configurations"></a>Terminologi for restriksjonsbaserte konfigurasjoner
-For restriksjonsbaserte konfigurasjoner kan du opprette en dedikert terminologi for konfigurasjonsproduktdimensjonen. Du kan velge de følgende segmentene på siden **Produktterminologi** :
+For restriksjonsbaserte konfigurasjoner kan du opprette en dedikert terminologi for konfigurasjonsproduktdimensjonen. Du kan velge de følgende segmentene på siden **Produktterminologi**:
 
 -   Nummerserieverdi
 -   Tekstkonstant
@@ -94,7 +94,7 @@ Du kan opprette en konfigurasjonsterminologi med følgende segmenter:
 I dette tilfellet blir konfigurasjons-ID-en for tremateriale som har en lengde på 78, WoodAAA78.
 
 ## <a name="nomenclature-of-dimension-based-configurations"></a>Terminologi for dimensjonsbasert konfigurasjoner
-For dimensjonsbaserte konfigurasjoner kan du opprette en dedikert terminologi for konfigurasjonsproduktdimensjonen. Du kan velge de følgende segmentene på siden **Produktterminologi** :
+For dimensjonsbaserte konfigurasjoner kan du opprette en dedikert terminologi for konfigurasjonsproduktdimensjonen. Du kan velge de følgende segmentene på siden **Produktterminologi**:
 
 -   Nummerserieverdi
 -   Tekstkonstant
@@ -126,7 +126,7 @@ I dette tilfellet er konfigurasjons-IDen for et standardkabinett med frontgrill 
 ## <a name="nomenclature-for-a-combination-of-product-variants-and-configurations"></a>Terminologi for en kombinasjon av produktvarianter og konfigurasjoner
 Når du bruker enten restriksjonsbasert eller dimensjonsbasert konfigurasjonsteknologi til å konfigurere produktvarianter for en produktstandard, kan produktvariantnumrene til produktvariantene inkludere terminologien fra konfigurasjonsdimensjonen. Hvis du vil konfigurere varianter, gjør du følgende:
 
-1.  Definer en terminologi for et produktvariantnummer som inkluderer konfigurasjonsdimensjonen på siden **Produktterminologi** .
+1.  Definer en terminologi for et produktvariantnummer som inkluderer konfigurasjonsdimensjonen på siden **Produktterminologi**.
 2.  Tilordne terminologien til en produktdimensjonsgruppe som har konfigurasjonsdimensjonen.
 3.  Definer en konfigurasjonsterminologi for komponentene eller stykklistene som skal brukes til å konfigurere produktvariantene.
 

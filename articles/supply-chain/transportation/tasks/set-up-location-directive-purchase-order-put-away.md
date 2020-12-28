@@ -18,11 +18,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: b07cd8af0fd619a71d3fe5188f41d0a0ed954f93
-ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: nb-NO
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4016499"
+ms.locfileid: "4434779"
 ---
 # <a name="set-up-a-location-directive-for-purchase-order-put-away"></a>Definere et lokasjonsdirektiv for bestillings
 
@@ -35,12 +35,12 @@ Dette emnet forklarer hvordan du definerer et enkelt lokasjonsdirektiv. Eksemple
 
 ## <a name="create-a-location-directive-header"></a>Opprette et lokasjonsdirektivhode
 1. Velg **Ny**.
-2. Angi et nummer i **Sekvensnummer** -feltet. Dette er rekkefølgen for behandling av lokasjonsdirektivet for den valgte arbeidstypen. Du kan også om nødvendig endre rekkefølgen.  
-3. Skriv inn en verdi i **Navn** -feltet. Dette er den unike identifikatoren for dette direktivet.  
-4. Velg **Plasser** i **Arbeidstype** -feltet. Velg hvilken type arbeid som skal utføres. **Plasser** er den eneste støttede verdien for direktivet med arbeidsordretypen Bestilling.  
-5. Skriv inn en verdi i **Område** -feltet.
-6. Skriv inn en verdi i **Lager** -feltet. La direktivkoden stå tom.  Direktivkodene brukes til å koble en arbeidsordrelinje av typen Plasser til et bestemt direktiv. For bestillinger løses lokasjonen for den siste arbeidsordrelinje av typen Plasser før arbeidsmalen bestemmes. Det er derfor ikke mulig å koble til den siste linjen i en arbeidsmal på et bestemt direktiv.   
-7. Skriv inn en verdi i **Disposisjonskode** -feltet. Disposisjonskoden begrenser bruken av lokasjonsdirektivet slik at lokasjonsdirektivet brukes bare hvis lagermedarbeideren angir denne bestemte verdien under registrering av varen med en mobil enhet.  
+2. Angi et nummer i **Sekvensnummer**-feltet. Dette er rekkefølgen for behandling av lokasjonsdirektivet for den valgte arbeidstypen. Du kan også om nødvendig endre rekkefølgen.  
+3. Skriv inn en verdi i **Navn**-feltet. Dette er den unike identifikatoren for dette direktivet.  
+4. Velg **Plasser** i **Arbeidstype**-feltet. Velg hvilken type arbeid som skal utføres. **Plasser** er den eneste støttede verdien for direktivet med arbeidsordretypen Bestilling.  
+5. Skriv inn en verdi i **Område**-feltet.
+6. Skriv inn en verdi i **Lager**-feltet. La direktivkoden stå tom.  Direktivkodene brukes til å koble en arbeidsordrelinje av typen Plasser til et bestemt direktiv. For bestillinger løses lokasjonen for den siste arbeidsordrelinje av typen Plasser før arbeidsmalen bestemmes. Det er derfor ikke mulig å koble til den siste linjen i en arbeidsmal på et bestemt direktiv.   
+7. Skriv inn en verdi i **Disposisjonskode**-feltet. Disposisjonskoden begrenser bruken av lokasjonsdirektivet slik at lokasjonsdirektivet brukes bare hvis lagermedarbeideren angir denne bestemte verdien under registrering av varen med en mobil enhet.  
 8. Velg **Lagre**.
 
 ## <a name="edit-the-query-for-directive"></a>Redigere spørringen for direktivet
@@ -57,7 +57,7 @@ Dette emnet forklarer hvordan du definerer et enkelt lokasjonsdirektiv. Eksemple
     - Antall delt opp i enheter: hele antallet som er registrert.  
     - Restantall: Antallet som ikke ennå er registrert fra bestillingslinjen.  
     - Forventet antall: Det totale antallet som er angitt på bestillingslinjen.  
-6. Merk av eller fjern merket i boksen **Begrens etter enhet**. Hvis du velger dette alternativet, og angir enheten på siden av **Begrens etter enhet** , kan bare varer med denne enheten plasseres på lokasjonen. Hvis måleenheten for eksempel er paller, så kan bare varer på paller plasseres på den angitte lokasjonen.  
+6. Merk av eller fjern merket i boksen **Begrens etter enhet**. Hvis du velger dette alternativet, og angir enheten på siden av **Begrens etter enhet**, kan bare varer med denne enheten plasseres på lokasjonen. Hvis måleenheten for eksempel er paller, så kan bare varer på paller plasseres på den angitte lokasjonen.  
 7. Merk av eller fjern merket i boksen **Tillat deling**. Dette gjør at direktivet kan dele antallet mellom flere lokasjoner.  
 8. Velg **Lagre**.
 
@@ -68,7 +68,7 @@ Dette emnet forklarer hvordan du definerer et enkelt lokasjonsdirektiv. Eksemple
 
 ## <a name="add-a-location-directive-action-line"></a>Legge til en handlingslinje for lokasjonsdirektiv
 1. Velg **Ny**. Dette er rekkefølgen for behandling av lokasjonsdirektivhandlingslinjene for den valgte arbeidstypen. Du kan også om nødvendig endre rekkefølgen.  
-2. Skriv inn en verdi i **Navn** -feltet. Dette er den unike identifikatoren for denne direktivhandlingen.  
+2. Skriv inn en verdi i **Navn**-feltet. Dette er den unike identifikatoren for denne direktivhandlingen.  
 3. Velg et alternativ i feltet **Bruk av fast lokasjon**.
     - Faste og ikke-faste lokasjoner: Alle ikke-faste lokasjoner er gyldige i tillegg til produktets egne faste lokasjon innenfor området som er angitt i spørringen.  
     - Bare faste lokasjoner for produktet: Faste lokasjoner for produktet er gyldige, og alle produktvarianter deler det samme settet med fast lokasjoner.  
@@ -83,6 +83,6 @@ Dette emnet forklarer hvordan du definerer et enkelt lokasjonsdirektiv. Eksemple
 1. Velg **Rediger spørring**.
 2. Velg **Legg til**.
 3. Skriv inn `location profile ID` i feltet **Felt**. I dette eksemplet skal vi begrense mulige lokasjoner ved hjelp av en lokasjonsprofil-ID.  
-4. Skriv inn en verdi i **Kriterier** -feltet.
+4. Skriv inn en verdi i **Kriterier**-feltet.
 5. Velg **OK**. Du kan fortsette å legge til direktivlinjer og direktivhandlinger før du dekket alle mulige scenarier i lageret.  
 

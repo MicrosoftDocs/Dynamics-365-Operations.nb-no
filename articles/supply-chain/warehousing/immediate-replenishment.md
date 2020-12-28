@@ -19,11 +19,11 @@ ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 8.0.0
 ms.openlocfilehash: c69a9c9fd595280ba4f05a11409a3e672e4b1691
-ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: nb-NO
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4017513"
+ms.locfileid: "4434800"
 ---
 # <a name="immediate-replenishment"></a>Umiddelbar etterfylling
 
@@ -47,7 +47,7 @@ Umiddelbar etterfylling brukes under bølgeutførelse hvis tildelingen mislykkes
 
 ## <a name="set-up-immediate-replenishment"></a>Konfigurere umiddelbar etterfylling
 
-- Gå til **Lagerstyring** \> **Oppsett** \> **Lokasjonsdirektiver** , og deretter i **Linjer** -kategorien i **Mal for umiddelbar etterfylling** -listen velger du en etterfyllingsmal for bølgebehov.
+- Gå til **Lagerstyring** \> **Oppsett** \> **Lokasjonsdirektiver**, og deretter i **Linjer**-kategorien i **Mal for umiddelbar etterfylling**-listen velger du en etterfyllingsmal for bølgebehov.
 
 Etterfyllingsmalen brukes hvis lokasjonsdirektivlinjen ikke kan tildele en angitt målenhet.
 
@@ -55,5 +55,5 @@ Etterfyllingsmalen brukes hvis lokasjonsdirektivlinjen ikke kan tildele en angit
 
 Hvis umiddelbar etterfylling er valgt for en lokasjonsdirektivlinje, men ikke noe etterfyllingsarbeid genereres når du bruker maler for behovsetterfylling for denne lokasjonsdirektivlinjen, må to hovedårsaker undersøkes:
 
-- Kontroller at behovsetterfyllingsmalen som brukes, er konfigurert til å bruke de riktige lokasjonsmalene og arbeidsmalene for **Etterfylling** -typen.
+- Kontroller at behovsetterfyllingsmalen som brukes, er konfigurert til å bruke de riktige lokasjonsmalene og arbeidsmalene for **Etterfylling**-typen.
 - Kontroller at det er stor nok lagerbeholdning på stedene der behovsetterfyllingsmalen søker etter lagerbeholdning for etterfylling.

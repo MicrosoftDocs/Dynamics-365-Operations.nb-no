@@ -20,11 +20,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: b226dd61c758cf17c8e4784ec22d2628145c1836
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3985615"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4434476"
 ---
 # <a name="bills-of-materials-and-formulas"></a>Stykklister og formler
 
@@ -94,7 +94,7 @@ Når planlagte ordrer, produksjonsordrer eller Kanbaner opprettes, kan planlegge
 ## <a name="bom-and-formula-lines"></a>Stykkliste- og formellinjer
 En stykklistelinje opprettes for hvert materiale, hver tjeneste eller hver ingrediens. Linjen definerer det planlagte forbruket av den angitte produktvarianten, og definerer også ulike attributter som er knyttet til det planlagte forbruket.  
 
-Stykklistelinjer kan ha følgende linjetyper: **Vare** , **Fantom** , **Tilknyttet forsyning** , **Leverandør** .
+Stykklistelinjer kan ha følgende linjetyper: **Vare**, **Fantom**, **Tilknyttet forsyning**, **Leverandør**.
 
 ### <a name="item"></a>Vare
 
@@ -102,7 +102,7 @@ Velg linjetypen **Vare** for materialer eller tjenester som forbrukes direkte, o
 
 ### <a name="phantom"></a>Fantom
 
-Velg linjetypen **Fantom** når du vil bryte ned eventuelle stykklistevarer på lavere nivå som er på stykklistelinjen. I hovedplanlegging, i planlagt kostnadsberegning eller i estimering av en produksjonsordre som bruker stykklistelinjer av typen **Fantom** , erstattes den overordnede stykklistelinjen som refererer til en produktvariant som har en fantomstykkliste av komponentvarene som er oppført som stykklistelinjer i denne stykklisten, i henhold til hva som er fastsatt av den gjeldende aktive stykklisteversjonen for denne produktvarianten. Hvis produktvarianten har en gjeldende aktiv rute, flettes operasjonene i denne ruten med den overordnede ruten.  
+Velg linjetypen **Fantom** når du vil bryte ned eventuelle stykklistevarer på lavere nivå som er på stykklistelinjen. I hovedplanlegging, i planlagt kostnadsberegning eller i estimering av en produksjonsordre som bruker stykklistelinjer av typen **Fantom**, erstattes den overordnede stykklistelinjen som refererer til en produktvariant som har en fantomstykkliste av komponentvarene som er oppført som stykklistelinjer i denne stykklisten, i henhold til hva som er fastsatt av den gjeldende aktive stykklisteversjonen for denne produktvarianten. Hvis produktvarianten har en gjeldende aktiv rute, flettes operasjonene i denne ruten med den overordnede ruten.  
 
 Legg merke til at fantomer vanligvis brukes til å forenkle konstruksjonsprosessen. Omfattende bruk av fantomstykklister på mange nivåer påvirker ytelsen, særlig i scenarier med mye gjentakende produksjon. For å forbedre ytelsen bør du unngå dype hierarkier med fantomer. Bruk i stedet forhåndsoppdelte produksjonsstykklister og ruter.
 

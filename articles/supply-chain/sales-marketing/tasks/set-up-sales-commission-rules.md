@@ -17,11 +17,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.openlocfilehash: 2b1ea016817462269a13e450c8c7576546c7f0eb
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3984208"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4434333"
 ---
 # <a name="set-up-sales-commission-rules"></a>Definere regler for salgsprovisjon
 
@@ -31,68 +31,68 @@ Denne fremgangsmåten viser hvordan du konfigurerer og aktiverer salgprovisjonsb
 
 
 ## <a name="set-up-commission-groups-and-commission-rates"></a>Definere provisjonsgrupper og provisjonssatser
-1. Gå til **Navigasjonsrute > Moduler > Salg og markedsføring > Provisjoner > Kundegrupper for provisjon** .
-2. Velg **Ny** .
-3. Skriv inn en verdi i feltet **Gruppe** .
-4. Skriv inn en verdi i **Navn** -feltet.
-5. Velg **Lagre** .
+1. Gå til **Navigasjonsrute > Moduler > Salg og markedsføring > Provisjoner > Kundegrupper for provisjon**.
+2. Velg **Ny**.
+3. Skriv inn en verdi i feltet **Gruppe**.
+4. Skriv inn en verdi i **Navn**-feltet.
+5. Velg **Lagre**.
 6. Lukk siden.
-7. Gå til **Navigasjonsrute > Moduler > Salg og markedsføring > Provisjoner > Varegrupper** .
-8. Velg **Ny** .
-9. Skriv inn en verdi i feltet **Gruppe** .
-10. Skriv inn en verdi i **Navn** -feltet.
-11. Velg **Lagre** .
+7. Gå til **Navigasjonsrute > Moduler > Salg og markedsføring > Provisjoner > Varegrupper**.
+8. Velg **Ny**.
+9. Skriv inn en verdi i feltet **Gruppe**.
+10. Skriv inn en verdi i **Navn**-feltet.
+11. Velg **Lagre**.
 12. Lukk siden.
-13. Gå til **Salg og markedsføring > Provisjoner > Salgsgrupper** .
+13. Gå til **Salg og markedsføring > Provisjoner > Salgsgrupper**.
     - En provisjonssalgsgruppe angir de ansatte i selgerroller som er berettiget til å motta en provisjon når en kunde som er knyttet til den relevante salgsgruppen kjøper visse varer.  
     - I USMF-demodatafirmaet er det en salgsgruppe kalt Selgere USA.  
-14. Klikk på **Generelt** i **handlingsruten** .
-15. Klikk på **Selger** . Selger-siden viser en liste over firmaets selgere som er knyttet til en bestemt provisjonsgruppe. Du kan tilordne flere selgere til samme gruppe og definere deres respektive del av totale provisjonsgebyret som en prosentverdi. Den totale provisjonsandelen for alle ansatte må ikke overskride 100. 
+14. Klikk på **Generelt** i **handlingsruten**.
+15. Klikk på **Selger**. Selger-siden viser en liste over firmaets selgere som er knyttet til en bestemt provisjonsgruppe. Du kan tilordne flere selgere til samme gruppe og definere deres respektive del av totale provisjonsgebyret som en prosentverdi. Den totale provisjonsandelen for alle ansatte må ikke overskride 100. 
 16. Merk den valgte raden i listen.
-17. Velg **Rediger** .
+17. Velg **Rediger**.
 18. Sett **Provisjonsandel** til 50.
-19. Klikk på **Ny** .
-20. Klikk på rullegardinknappen i **Navn** -feltet for å åpne oppslaget.
+19. Klikk på **Ny**.
+20. Klikk på rullegardinknappen i **Navn**-feltet for å åpne oppslaget.
 21. Bruk **hurtigfilteret** for å søke etter poster. Du kan for eksempel filtrere på Navn-feltet med verdien Susan Burk.
-22. Klikk **Velg** .
+22. Klikk **Velg**.
 23. Sett **Provisjonsandel** til 50.
-24. Klikk **Lagre** .
-25. Gå til **Salg og markedsføring > Provisjoner > Provisjonsberegning** . Du kan definere provisjonssatsen som ansatt skal motta for en salgstransaksjon når den inneholder forhåndangitt kombinasjon av kunde og produkt, på siden **Provisjonsberegning** . Som en del av provisjonssatsoppsettet, må du angi grunnlaget for provisjonsberegning og om den skal inkludere eller ekskludere rabatter. Du kan også angi en gyldighetsperiode for når provisjonssatsen er aktiv.  
-26. Klikk på **Ny** .
-27. Velg Gruppe i **Varekode** -feltet.
-28. Klikk på rullegardinknappen i **Varerelasjon** -feltet for å åpne oppslaget.
+24. Klikk **Lagre**.
+25. Gå til **Salg og markedsføring > Provisjoner > Provisjonsberegning**. Du kan definere provisjonssatsen som ansatt skal motta for en salgstransaksjon når den inneholder forhåndangitt kombinasjon av kunde og produkt, på siden **Provisjonsberegning**. Som en del av provisjonssatsoppsettet, må du angi grunnlaget for provisjonsberegning og om den skal inkludere eller ekskludere rabatter. Du kan også angi en gyldighetsperiode for når provisjonssatsen er aktiv.  
+26. Klikk på **Ny**.
+27. Velg Gruppe i **Varekode**-feltet.
+28. Klikk på rullegardinknappen i **Varerelasjon**-feltet for å åpne oppslaget.
 29. Finn og velg gruppen du opprettet tidligere, i listen.
-30. Velg Gruppe i **Kundekode** -feltet.
-31. Klikk på rullegardinknappen i **Kunderelasjon** -feltet for å åpne oppslaget.
+30. Velg Gruppe i **Kundekode**-feltet.
+31. Klikk på rullegardinknappen i **Kunderelasjon**-feltet for å åpne oppslaget.
 32. Velg gruppen du definerte tidligere, i listen.
-33. I **Selgerrelasjon** -feltet klikker du på rullegardinknappen for å åpne oppslaget.
+33. I **Selgerrelasjon**-feltet klikker du på rullegardinknappen for å åpne oppslaget.
 34. Finn og velg ønsket post i listen.
     - Behold alternativet "Før linjerabatt".  
     - Behold alternativet "Omsetning" som grunnlag for beregning av provisjonsverdi.    
 35. Angi et tall i feltet Provisjonssats i prosent.
-36. Klikk **Lagre** .
+36. Klikk **Lagre**.
 
 ## <a name="setting-up-commission-posting"></a>Definere provisjonspostering
-1. Gå til **Navigasjonsrute > Salg og markedsføring > Provisjoner > Provisjonspostering** . Provisjonsgebyrer betales til ansatte, og må derfor defineres til å sikre riktig økonomisk postering til de aktuelle kontoene i **økonomimodulen** . Dette gjøres på siden **Provisjonspostering** . Gå gjennom oppsettet som er tilgjengelig for det gjeldende firmaet. Vanligvis posteres provisjonsbeløpene til en dedikert utgiftskonto og motregnes til en egen konto for leverandører. Hvis du ikke har satt opp regler for provisjonspostering, vil systemet ikke kunne fullføre fakturering av en salgsordre som har kvalifiserte provisjoner.  
+1. Gå til **Navigasjonsrute > Salg og markedsføring > Provisjoner > Provisjonspostering**. Provisjonsgebyrer betales til ansatte, og må derfor defineres til å sikre riktig økonomisk postering til de aktuelle kontoene i **økonomimodulen**. Dette gjøres på siden **Provisjonspostering**. Gå gjennom oppsettet som er tilgjengelig for det gjeldende firmaet. Vanligvis posteres provisjonsbeløpene til en dedikert utgiftskonto og motregnes til en egen konto for leverandører. Hvis du ikke har satt opp regler for provisjonspostering, vil systemet ikke kunne fullføre fakturering av en salgsordre som har kvalifiserte provisjoner.  
 2. Lukk siden.
 
 ## <a name="assign-a-commission-group-to-a-customer-and-a-product"></a>Tilordne en Provisjonsgruppe til en kunde og et produkt
-1. Gå til **Navigasjonsrute > Moduler > Salg og markedsføring > Kunder > Alle kunder** .
+1. Gå til **Navigasjonsrute > Moduler > Salg og markedsføring > Kunder > Alle kunder**.
 2. Finn og velg ønsket post i listen.
 3. Klikk koblingen i den valgte raden i listen.
-4. Klikk **Rediger** .
-5. Vis delen **Standarder for salgsordrer** .
+4. Klikk **Rediger**.
+5. Vis delen **Standarder for salgsordrer**.
 6. Klikk på rullegardinknappen i feltet **Provisjonsgruppe** for å åpne oppslaget.
 7. Velg gruppen du opprettet tidligere, i listen.
 8. Klikk på rullegardinknappen i feltet **Salgsgruppe** for å åpne oppslaget.
 9. Finn og velg ønsket post i listen.
-10. Klikk **Lagre** .
-11. Gå til **Navigasjonsrute > Moduler > Behandling av produktinformasjon > Produkter > Frigitte produkter** .
+10. Klikk **Lagre**.
+11. Gå til **Navigasjonsrute > Moduler > Behandling av produktinformasjon > Produkter > Frigitte produkter**.
 12. Bruk **filteret** for å søke etter poster. Du kan for eksempel filtrere på Varenummer-feltet med verdien T0020.
 13. Klikk koblingen i den valgte raden i listen.
-14. Klikk **Rediger** .
-15. Vis **Selg** -delen.
+14. Klikk **Rediger**.
+15. Vis **Selg**-delen.
 16. Klikk på rullegardinknappen i feltet **Provisjonsgruppe** for å åpne oppslaget.
 17. Velg provisjonsgruppen du opprettet tidligere, i listen.
-18. Velg **Lagre** .
+18. Velg **Lagre**.
 

@@ -19,17 +19,17 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: ccf4c722bd2342888326ae65e9f059bcd307c98f
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3975446"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4434091"
 ---
 # <a name="service-subscriptions"></a>Serviceabonnementer
 
 [!include [banner](../includes/banner.md)]
 
-Abonnementer er basert på et tid og materialer-prosjekt. Du kan opprette abonnementer fra et prosjekt, fra **Serviceabonnementer** -siden eller ved hjelp av en serviceabonnementsgruppe.
+Abonnementer er basert på et tid og materialer-prosjekt. Du kan opprette abonnementer fra et prosjekt, fra **Serviceabonnementer**-siden eller ved hjelp av en serviceabonnementsgruppe.
 
 For hvert abonnement kan du opprette et valgfritt antall abonnementsavgifter. Abonnementavgiftene er transaksjonene som du fakturerer til kundene.
 

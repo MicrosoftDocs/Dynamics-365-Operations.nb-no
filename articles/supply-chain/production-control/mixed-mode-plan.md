@@ -20,11 +20,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 6c16cf5bf1346cad7d5310a74b84c199ae2c71a4
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3986894"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4434253"
 ---
 # <a name="mixed-mode-planning---combine-discrete-process-and-lean-sourcing"></a>Blandet modus-planlegging – Kombinere separat, prosess og lean-leverandører
 
@@ -41,9 +41,9 @@ Detaljene for forsyningspolicyene som brukes i hovedplanlegging, avhenger av lag
 ## <a name="supply-policies"></a>Forsyningspolicyer
 Blandet modus-planlegging styrer hvordan et produkt angis og, basert på forsyningen, hvordan avledede behov (forbruk av varer fra en stykkliste \[BOM\]) utstedes. Avhengig av bestillingstypen tilfører systemet automatisk materialer for å oppfylle kravene.  
 
-Forsyningspolicyer kan defineres på produktnivå eller på alle nivåer som støtter dine behov. Du definerer detaljene for forsyningspolicyer på siden **Standard ordreinnstillinger** .  
+Forsyningspolicyer kan defineres på produktnivå eller på alle nivåer som støtter dine behov. Du definerer detaljene for forsyningspolicyer på siden **Standard ordreinnstillinger**.  
 
-Forsyningspolicyer kan være kontrollert etter produkt, varedimensjoner (konfigurasjon, farge og størrelse), område og lager. Dette oppsettet blir utført på siden **Varedekning** .  
+Forsyningspolicyer kan være kontrollert etter produkt, varedimensjoner (konfigurasjon, farge og størrelse), område og lager. Dette oppsettet blir utført på siden **Varedekning**.  
 
 Standard ordretype styrer hvilken rekkefølge Hovedplanlegging genererer.  
 
@@ -65,7 +65,7 @@ Ressursforbruk krever at lageret som materialer plukkes fra, tilordnes basert p�
 For arbeid som er uavhengig av en policy for forsyning, trenger du ikke endre informasjon på Stykklisten Hvis forsyningen endres. For ad hoc-endringer sørger Supply Chain Management for at materialer forsynes fra lageret som er riktig.
 
 ## <a name="process-manufacturing--the-production-type"></a>Prosessproduksjon – Produksjonstypen
-Vi anbefaler at du bruker produksjonstype stykklister for alle produkter for full fleksibilitet i blandet modus. Du kan deretter bruke produksjonsordrer, kanbaner, overføringsordrer eller bestillinger for å levere et produkt. For prosessproduksjon må du bruke produksjonstypen **formel** , **koprodukt** , **biprodukt** eller **planleggingselement** . Kanbaner og produksjonsordrer kan ikke brukes for disse typene for produksjon.
+Vi anbefaler at du bruker produksjonstype stykklister for alle produkter for full fleksibilitet i blandet modus. Du kan deretter bruke produksjonsordrer, kanbaner, overføringsordrer eller bestillinger for å levere et produkt. For prosessproduksjon må du bruke produksjonstypen **formel**, **koprodukt**, **biprodukt** eller **planleggingselement**. Kanbaner og produksjonsordrer kan ikke brukes for disse typene for produksjon.
 
 
 

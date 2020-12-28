@@ -19,11 +19,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 352d3b790da340102b7dbe116d9deeb2f3cbfc4e
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3985975"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4434597"
 ---
 # <a name="create-service-object-relations"></a>Opprette serviceobjektrelasjoner 
 
@@ -36,29 +36,29 @@ Dette emnet beskriver hvordan du oppretter serviceobjektforbindelser for en serv
 
 Bruk følgende fremgangsmåte for opprette en serviceobjektrelasjon for en serviceavtale:
 
-1.  Klikk **Servicestyring** \> **Felles** \> **Serviceavtaler** \> **Serviceavtaler** .
+1.  Klikk **Servicestyring** \> **Felles** \> **Serviceavtaler** \> **Serviceavtaler**.
 
-2.  Velg en eksisterende serviceavtale i **Serviceavtaler** -listen, eller klikk **Ny** hvis du vil opprette en ny serviceavtale.
+2.  Velg en eksisterende serviceavtale i **Serviceavtaler**-listen, eller klikk **Ny** hvis du vil opprette en ny serviceavtale.
 
-3.  På skjemaet **Serviceavtaler** , i **handlingsruten** , på fanen **Serviceavtale** , i **Relasjoner** -gruppen, klikker du på **Serviceobjekter** .
+3.  På skjemaet **Serviceavtaler**, i **handlingsruten**, på fanen **Serviceavtale**, i **Relasjoner**-gruppen, klikker du på **Serviceobjekter**.
 
-4.  Klikk **Ny** i **Serviceobjekter** -skjemaet, og velg deretter et serviceobjekt for denne serviceavtalen.
+4.  Klikk **Ny** i **Serviceobjekter**-skjemaet, og velg deretter et serviceobjekt for denne serviceavtalen.
 
-5.  Hvis du vil tilordne en malstykkliste til serviceavtalen, klikker du **Funksjoner** , og deretter velger du **Tilknytt malstykkliste** . Velg en mal i feltet **Malstykkliste** i skjemaet **Velg malstykkliste** . 
+5.  Hvis du vil tilordne en malstykkliste til serviceavtalen, klikker du **Funksjoner**, og deretter velger du **Tilknytt malstykkliste**. Velg en mal i feltet **Malstykkliste** i skjemaet **Velg malstykkliste**. 
 
 ## <a name="create-a-service-object-relation-for-a-service-order"></a>Opprette en serviceobjektrelasjon for en serviceordre
 
 Bruk følgende fremgangsmåte for opprette en serviceobjektrelasjon for en serviceordre:
 
-1.  Klikk på **Servicestyring** \> **Felles** \> **Serviceordrer** \> **Serviceordrer** .
+1.  Klikk på **Servicestyring** \> **Felles** \> **Serviceordrer** \> **Serviceordrer**.
 
-2.  Velg en eksisterende serviceordre i **Serviceordrer** -listen, eller opprett en ny serviceordre.
+2.  Velg en eksisterende serviceordre i **Serviceordrer**-listen, eller opprett en ny serviceordre.
 
-3.  På skjemaet **Serviceordrer** , i **handlingsruten** , på fanen **Serviceordre** , i **Relasjoner** -gruppen, klikker du på **Serviceobjekter** .
+3.  På skjemaet **Serviceordrer**, i **handlingsruten**, på fanen **Serviceordre**, i **Relasjoner**-gruppen, klikker du på **Serviceobjekter**.
 
-4.  Klikk **Ny** i **Serviceobjekter** -skjemaet, og velg deretter et serviceobjekt for denne serviceordren.
+4.  Klikk **Ny** i **Serviceobjekter**-skjemaet, og velg deretter et serviceobjekt for denne serviceordren.
 
-5.  Hvis du vil tilordne en malstykkliste til serviceavtalen, klikker du **Funksjoner** , og deretter velger du **Tilknytt malstykkliste** . Velg en mal i feltet **Malstykkliste** i skjemaet **Velg malstykkliste** . 
+5.  Hvis du vil tilordne en malstykkliste til serviceavtalen, klikker du **Funksjoner**, og deretter velger du **Tilknytt malstykkliste**. Velg en mal i feltet **Malstykkliste** i skjemaet **Velg malstykkliste**. 
 
 
 ## <a name="see-also"></a>Se også

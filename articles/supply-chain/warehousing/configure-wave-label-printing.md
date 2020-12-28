@@ -4,7 +4,7 @@ description: Dette emnet beskriver bølgeetikettutskrift og forklarer hvordan du
 author: GarmMSFT
 manager: PJacobse
 ms.date: 05/01/2020
-ms.topic: configure-wave-label-printing
+ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: yyyy-mm-dd
 ms.dyn365.ops.version: 10.0.0
-ms.openlocfilehash: 1f51ed9f05caede3d4f320ddb6b705e67df9aa1f
-ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
+ms.openlocfilehash: 6314fd25d8d8a0013984d484f57a832c26f82b5a
+ms.sourcegitcommit: a26e4963d40796da21ce6581cfb2f4d9db4f6776
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4016961"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "4434849"
 ---
 # <a name="set-up-and-use-wave-label-printing"></a>Definere og bruke bølgeetikettutskrift
 
@@ -56,7 +56,7 @@ Disse forbedringene gjør det mer effektivt å merke kartonger før lagring på 
 
 ## <a name="turn-on-the-wave-label-printing-feature"></a>Aktivere funksjonen Bølgeetikettutskrift
 
-Før du kan bruke *Bølgeetikettutskrift* -funksjonen, må den aktiveres i systemet. Administratorer kan bruke [Funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)-arbeidsområdet til å kontrollere funksjonsstatusen og aktivere den hvis den kreves. Funksjonen vises på følgende måte:
+Før du kan bruke *Bølgeetikettutskrift*-funksjonen, må den aktiveres i systemet. Administratorer kan bruke [Funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)-arbeidsområdet til å kontrollere funksjonsstatusen og aktivere den hvis den kreves. Funksjonen vises på følgende måte:
 
 - **Modul:** *Lagerstyring*
 - **Funksjonsnavn:** *Bølgeetikettutskrift*
@@ -123,7 +123,7 @@ Etikettoppsettet kontrollerer hvilken informasjon som skrives ut på etiketten, 
 
 1. Lukk siden.
 1. I handlingsruten velger du **Rediger spørring**.
-1. I dialogboksen for redigeringsprogrammet, i tabellen **Område** , legger du til en rad med følgende innstillinger:
+1. I dialogboksen for redigeringsprogrammet, i tabellen **Område**, legger du til en rad med følgende innstillinger:
 
     - **Tabell:** *Arbeidslinjer*
     - **Avledet tabell:** *Arbeidslinjer*
@@ -132,9 +132,9 @@ Etikettoppsettet kontrollerer hvilken informasjon som skrives ut på etiketten, 
 
     Denne spørringen sikrer at bare arbeidslinjer av plukktypen blir skrevet ut på etiketten, ikke plasser-arbeidslinjer.
 
-1. Hvis du vil ha muligheten til å skrive ut fraktbrev-IDen, velger du kategorien **Sammenkoblinger** , velger tabellen **Arbeidslinjer** og kobler **Forsendelser** -tabellen til den.
+1. Hvis du vil ha muligheten til å skrive ut fraktbrev-IDen, velger du kategorien **Sammenkoblinger**, velger tabellen **Arbeidslinjer** og kobler **Forsendelser**-tabellen til den.
 1. Lukk dialogboksen for redigeringsprogram for spørring.
-1. Hurtigfanen for **Skrivertekstoppsett** har tre inndelinger der du kan skrive skriverkode: **topptekstdelen** , **brødtekstdelen** og **bunntekstdelen**. I **topptekstdelen** i feltet for **etikettopptekst** angir du koden for den nødvendige toppteksten. Hvis du for eksempel bruker Zebra-skrivere, kan du bruke følgende kode.
+1. Hurtigfanen for **Skrivertekstoppsett** har tre inndelinger der du kan skrive skriverkode: **topptekstdelen**, **brødtekstdelen** og **bunntekstdelen**. I **topptekstdelen** i feltet for **etikettopptekst** angir du koden for den nødvendige toppteksten. Hvis du for eksempel bruker Zebra-skrivere, kan du bruke følgende kode.
 
     ```plaintext
     CT~~CD,~CC^~CT~
@@ -200,7 +200,7 @@ Etikettoppsettet kontrollerer hvilken informasjon som skrives ut på etiketten, 
     ```
 
     > [!NOTE]
-    > Dette oppsettet skriver bare ut én kopi av hver etikett. Hvis du trenger flere kopier (for eksempel én kopi for hver side av pallen), setter du **n** -verdien for **\^PQn** -delen i bunnteskten til det nødvendige antallet eksemplarer. Hvis du for eksempel vil skrive ut fire eksemplarer av hver etikett, angir du **\^PQ4**.
+    > Dette oppsettet skriver bare ut én kopi av hver etikett. Hvis du trenger flere kopier (for eksempel én kopi for hver side av pallen), setter du **n**-verdien for **\^PQn**-delen i bunnteskten til det nødvendige antallet eksemplarer. Hvis du for eksempel vil skrive ut fire eksemplarer av hver etikett, angir du **\^PQ4**.
 
 Etiketten er nå klar til bruk.
 
@@ -234,7 +234,7 @@ Deretter oppretter du bølgeetikettmalen for bølgeetikettypen.
     - **Bølgetrinnkode:** *PrintLabel*
     - **Lager:** *62*
 
-1. I hurtigfanen **Generelt** angir du feltet **Bølgeetiketttype** -feltet til *Kartong*.
+1. I hurtigfanen **Generelt** angir du feltet **Bølgeetiketttype**-feltet til *Kartong*.
 1. I hurtigfanen for **Maldetaljer for bølgeetikett** legger du til en ny rad med følgende innstillinger:
 
     - **Etikettoppsett-ID:** *Kartong*
@@ -242,7 +242,7 @@ Deretter oppretter du bølgeetikettmalen for bølgeetikettypen.
     - **Kjør spørring:** *Ja* (Denne innstillingen er valgfri, men anbefales for optimal ytelse.)
 
 1. Velg **Lagre** i handlingsruten.
-1. Valgfritt: Hvis du definerer en kundespesifikk etikettutforming, må du opprette en spørring for å finne kundens konto. På hurtigfanen **Maldetaljer for bølgeetikett** velger du **Rediger spørring**. Deretter, i dialoglogboksen for redigeringsprogrammet, i tabellen **Område** , legger du til en rad med følgende innstillinger:
+1. Valgfritt: Hvis du definerer en kundespesifikk etikettutforming, må du opprette en spørring for å finne kundens konto. På hurtigfanen **Maldetaljer for bølgeetikett** velger du **Rediger spørring**. Deretter, i dialoglogboksen for redigeringsprogrammet, i tabellen **Område**, legger du til en rad med følgende innstillinger:
 
     - **Tabell:** *Forsendelser*
     - **Avledet tabell:** *Forsendelser*
@@ -252,7 +252,7 @@ Deretter oppretter du bølgeetikettmalen for bølgeetikettypen.
     Når du er ferdig, velger du **OK** for å lukke dialogboksen redigeringsprogrammet for spørring.
 
 1. I handlingsruten velger du **Rediger spørring** for å åpne dialogboksen for redigeringsprogrammet for spørringen for hele etikettmalen.
-1. I dialogboksen for redigeringsprogrammet, i tabellen **Sortering** , legger du til en rad med følgende innstillinger:
+1. I dialogboksen for redigeringsprogrammet, i tabellen **Sortering**, legger du til en rad med følgende innstillinger:
 
     - **Tabell:** *Arbeidslinjer*
     - **Avledet tabell:** *Arbeidslinjer*
@@ -262,7 +262,7 @@ Deretter oppretter du bølgeetikettmalen for bølgeetikettypen.
 1. Velg **OK** for å lukke dialogboksen for redigeringsprogrammet for spørring.
 1. En meldingsboks ber deg bekrefte gjenopprettingsoperasjonen for gruppering. Klikk **Ja** for å fortsette.
 1. Velg **Malgruppe for bølgeetikett** i handlingsruten.
-1. I dialogboksen **Malgruppe for bølgeetikett** velger du raden der feltet **Referansefeltnavn** er satt til *Linje-ID for referanselast* , og deretter merker du av for **Etikettversjons-ID** for denne raden.
+1. I dialogboksen **Malgruppe for bølgeetikett** velger du raden der feltet **Referansefeltnavn** er satt til *Linje-ID for referanselast*, og deretter merker du av for **Etikettversjons-ID** for denne raden.
 
     > [!NOTE]
     > Dette oppsettet vil opprette én etikettsekvens ("Kartong 1 av X") per lastlinje gjennom bølgen, uansett oppsett for arbeidsgruppering. Denne etikettsekvensen kan skrives ut på etikettoppsettet.
@@ -296,8 +296,8 @@ Nummerserieutvidelser kontrollerer GS1-samsvar for bestemte nummerserier. Denne 
     > [!NOTE]
     > Varene og antallene som beskrives her, er bare eksempler. De må bruke enhetsseriegruppen du definerte tidligere, riktige enhetskonverteringer fra *ea* til *Box* til *PL* må være definert for dem, og de må ha lager i lageret *62*. Hvis du vil ha mer informasjon, kan du se [Måleenhet og lagringspolicyer](unit-measure-stocking-policies.md).
 
-1. Velg salgsordrelinjen 1. Deretter, i delen **Salgsordrelinje** på menyen **Lager** , velger du **Reservasjoner**.
-1. På **Reservasjon** -siden i handlingsruten velger du **Reserver parti** , og deretter lukker du siden.
+1. Velg salgsordrelinjen 1. Deretter, i delen **Salgsordrelinje** på menyen **Lager**, velger du **Reservasjoner**.
+1. På **Reservasjon**-siden i handlingsruten velger du **Reserver parti**, og deretter lukker du siden.
 1. Gjenta trinn 4 og 5 for salgsordrelinje 2.
 1. Velg **Frigi til lager** i kategorien **Lager** i handlingsruten.
 
@@ -305,9 +305,9 @@ Nummerserieutvidelser kontrollerer GS1-samsvar for bestemte nummerserier. Denne 
 
     - Systemet behandler den opprettede forsendelsen ved hjelp av malen som inneholder etikettutskriftstrinnet. Etikettoppsettet blir brukt til å definere etikettens format, og resultatet blir en etikett som skrives ut på skriveren som er valgt i etikettmalen.
     - Bølgeetiketter genereres og skrives ut. Antallet etiketter vil tilsvare antallet kartonger (i dette eksemplet er 376 Box-etiketter for linje 1 og 322 Box-etiketter for linje 2).
-    - En ny fraktbrev-ID genereres for forsendelsene. Hvis du konfigurerte nummerserieutvidelsene, vil bølgeetikett-IDene følge **SSCC-18** -nummerformatet. 
+    - En ny fraktbrev-ID genereres for forsendelsene. Hvis du konfigurerte nummerserieutvidelsene, vil bølgeetikett-IDene følge **SSCC-18**-nummerformatet. 
 
-Du kan vise og skrive ut bølgeetiketter på nytt fra følgende sider. På handlingsruten for hver side, i kategorien **Forsendelser** i gruppen **Beslektet informasjon** , velger du **Bølgeetiketter**.
+Du kan vise og skrive ut bølgeetiketter på nytt fra følgende sider. På handlingsruten for hver side, i kategorien **Forsendelser** i gruppen **Beslektet informasjon**, velger du **Bølgeetiketter**.
 
 - Alle forsendelser \> Forsendelsesdetaljer
 - Alle laster \> Lastdetaljer
@@ -322,7 +322,7 @@ I dette scenariet kan du skrive ut bølgeetiketter ved containerbruk for automat
 Her er hovedforskjellen mellom dette scenariet og scenario 1:
 
 - **Maler for bølgeetiketter:** Du velger ikke en bølgeetikettype på bølgeetikettmalen, og du trenger ikke en etikettversjonsgruppering. Ellers vil du konfigurere bølgeetikettmalen og koble til bølgemalen på samme måte som beskrevet i scenario 1. Du må la bølgeetikettypen være tom for å hindre at bølgeetiketter blir generert.
-- **Oppsett av bølgeetiketter:** Du konfigurerer radinnstillingene for bølgeetikettoppsett for arbeidslinjer i stedet for bølgeetikettposter. Du må konfigurere radinnstillingen for etikettoppsettet ved hjelp av **WHSWorkLine** -tabellen i stedet for **WHSWaveLabel** -tabellen. **Rader per side** -innstillingen kontrollerer antallet rader som brødtekstdelen vil ha. 
+- **Oppsett av bølgeetiketter:** Du konfigurerer radinnstillingene for bølgeetikettoppsett for arbeidslinjer i stedet for bølgeetikettposter. Du må konfigurere radinnstillingen for etikettoppsettet ved hjelp av **WHSWorkLine**-tabellen i stedet for **WHSWaveLabel**-tabellen. **Rader per side**-innstillingen kontrollerer antallet rader som brødtekstdelen vil ha. 
 
 Denne konfigurasjonen egner seg også for forretningsscenarioer der flere ulike varer pakkes inn i én boks med etikett eller på en pall, og denne pakkeprosessen kan defineres av arbeidsopprettelsen (for eksempel arbeid som er gruppert etter forsendelse).
 
@@ -382,16 +382,16 @@ Med bølgemaler kan du koble bestemte forekomster av bølgemetoder til en tilsva
 
 1. Lukk siden.
 1. I handlingsruten velger du **Rediger spørring**.
-1. I dialogboksen for redigeringsprogrammet, i tabellen **Område** , legger du til en rad med følgende innstillinger:
+1. I dialogboksen for redigeringsprogrammet, i tabellen **Område**, legger du til en rad med følgende innstillinger:
 
     - **Tabell:** *Arbeidslinjer*
     - **Avledet tabell:** *Arbeidslinjer*
     - **Felt:** *Arbeidstype*
     - **Kriterier:** *Plukk*
 
-1. Hvis du vil ha muligheten til å skrive ut fraktbrev-IDen, velger du kategorien **Sammenkoblinger** , velger tabellen **Arbeidslinjer** og kobler **Forsendelser** -tabellen til den.
+1. Hvis du vil ha muligheten til å skrive ut fraktbrev-IDen, velger du kategorien **Sammenkoblinger**, velger tabellen **Arbeidslinjer** og kobler **Forsendelser**-tabellen til den.
 1. Lukk dialogboksen for redigeringsprogram for spørring.
-1. Hurtigfanen for **Skrivertekstoppsett** har tre inndelinger der du kan skrive skriverkode: **topptekstdelen** , **brødtekstdelen** og **bunntekstdelen**. I **topptekstdelen** i feltet for **etikettopptekst** angir du koden for den nødvendige toppteksten. Hvis du for eksempel bruker Zebra-skrivere, kan du bruke følgende kode.
+1. Hurtigfanen for **Skrivertekstoppsett** har tre inndelinger der du kan skrive skriverkode: **topptekstdelen**, **brødtekstdelen** og **bunntekstdelen**. I **topptekstdelen** i feltet for **etikettopptekst** angir du koden for den nødvendige toppteksten. Hvis du for eksempel bruker Zebra-skrivere, kan du bruke følgende kode.
 
     ```plaintext
     CT~~CD,~CC^~CT~
@@ -423,7 +423,7 @@ Med bølgemaler kan du koble bestemte forekomster av bølgemetoder til en tilsva
     ```
 
     > [!NOTE]
-    > Dette oppsettet skriver bare ut én kopi av hver etikett. Hvis du trenger flere kopier (for eksempel én kopi for hver side av pallen), setter du **n** -verdien for **\^PQn** -delen i bunnteskten til det nødvendige antallet eksemplarer. Hvis du for eksempel vil skrive ut fire eksemplarer av hver etikett, angir du **\^PQ4**.
+    > Dette oppsettet skriver bare ut én kopi av hver etikett. Hvis du trenger flere kopier (for eksempel én kopi for hver side av pallen), setter du **n**-verdien for **\^PQn**-delen i bunnteskten til det nødvendige antallet eksemplarer. Hvis du for eksempel vil skrive ut fire eksemplarer av hver etikett, angir du **\^PQ4**.
 
 Etiketten er nå klar til bruk.
 
@@ -444,7 +444,7 @@ Etiketten er nå klar til bruk.
     - **Kjør spørring:** *Ja* (Denne innstillingen er valgfri, men anbefales for optimal ytelse.)
 
 1. Velg **Lagre** i handlingsruten.
-1. Valgfritt: Hvis du definerer en kundespesifikk etikettutforming, må du opprette en spørring for å finne kundens konto. På hurtigfanen **Maldetaljer for bølgeetikett** velger du **Rediger spørring**. Deretter, i dialoglogboksen for redigeringsprogrammet, i tabellen **Område** , legger du til en rad med følgende innstillinger:
+1. Valgfritt: Hvis du definerer en kundespesifikk etikettutforming, må du opprette en spørring for å finne kundens konto. På hurtigfanen **Maldetaljer for bølgeetikett** velger du **Rediger spørring**. Deretter, i dialoglogboksen for redigeringsprogrammet, i tabellen **Område**, legger du til en rad med følgende innstillinger:
 
     - **Tabell:** *Forsendelser*
     - **Avledet tabell:** *Forsendelser*
@@ -495,15 +495,15 @@ Nummerserieutvidelser kontrollerer GS1-samsvar for bestemte nummerserier. Denne 
     > [!NOTE]
     > Varene og antallene som beskrives her, er bare eksempler. De må ha lager i det angitte lageret.
 
-1. Velg salgsordrelinjen 1. Deretter, i delen **Salgsordrelinje** på menyen **Lager** , velger du **Reservasjoner**.
-1. På **Reservasjon** -siden i handlingsruten velger du **Reserver parti** , og deretter lukker du siden.
+1. Velg salgsordrelinjen 1. Deretter, i delen **Salgsordrelinje** på menyen **Lager**, velger du **Reservasjoner**.
+1. På **Reservasjon**-siden i handlingsruten velger du **Reserver parti**, og deretter lukker du siden.
 1. Gjenta trinn 4 og 5 for hver ekstra salgsordrelinje.
 1. Velg **Frigi til lager** i kategorien **Lager** i handlingsruten.
 
     Følgende hendelser skjer:
 
     - Systemet behandler den opprettede forsendelsen ved hjelp av malen som inneholder etikettutskriftstrinnet. Etikettoppsettet blir brukt til å definere etikettens format, og sluttresultatet blir en etikett som har fem linjer og som skrives på skriveren som er valgt i etikettmalen.
-    - En ny fraktbrev-ID genereres for forsendelsene. Hvis du konfigurerte nummerserieutvidelsene, vil bølgeetikett-IDene følge **SSCC-18** -nummerformatet. 
+    - En ny fraktbrev-ID genereres for forsendelsene. Hvis du konfigurerte nummerserieutvidelsene, vil bølgeetikett-IDene følge **SSCC-18**-nummerformatet. 
 
 Du kan skrive ut disse bølgeetikettene på nytt ved å gå til **Lagerstyring \> Forespørsler og rapporter \> Bølgeetikettlogg**.
 
@@ -527,16 +527,16 @@ For å følge dette scenarioet må du ha demonstrasjonsdata installert, og du m�
 
 1. Gå til **Lagerstyring \> Oppsett \> Bølger \> Bølgebehandlingsmetoder**.
 1. Bekreft at **waveLabelPrinting** er i listen. Hvis den ikke er det, velger du **Generer metoder på nytt** i handlingsruten for å legge den til.
-1. For **waveLabelPrinting** -metoden merker du av for at **metoden kan gjentas**.
+1. For **waveLabelPrinting**-metoden merker du av for at **metoden kan gjentas**.
 
 ### <a name="set-up-a-wave-template"></a>Definere en bølgemal
 
 1. Gå til **Lagerstyring \> Oppsett \> Bølger \> Bølgemaler**.
 2. Velg en mal, for eksempel **62 Standardforsendelse**.
 3. I hurtigfanen **Metoder** flytter du metoden **Bølgeetikettutskrift** til kolonnen **Valgte metoder**.
-4. I kolonnen **Valgte metoder** tilordner du verdien **Bølgetrinnkode** , for eksempel *Kartong* , til metoden **Bølgeetikettutskrift**. For mer informasjon om bølgetrinnkoder, se [Bølgetrinnkoder](wave-step-codes.md).
+4. I kolonnen **Valgte metoder** tilordner du verdien **Bølgetrinnkode**, for eksempel *Kartong*, til metoden **Bølgeetikettutskrift**. For mer informasjon om bølgetrinnkoder, se [Bølgetrinnkoder](wave-step-codes.md).
 5. Flytt metoden **Bølgeetikettutskrift** til kolonnen **Valgte metoder** enda en gang.
-6. I kolonnen **Valgte metoder** tilordner du en annen **Bølgetrinnkode** -verdi, for eksempel *Palle* , til den andre **Bølgeetikettutskrift** -metoden. For mer informasjon om bølgetrinnkoder, se [Bølgetrinnkoder](wave-step-codes.md).
+6. I kolonnen **Valgte metoder** tilordner du en annen **Bølgetrinnkode**-verdi, for eksempel *Palle*, til den andre **Bølgeetikettutskrift**-metoden. For mer informasjon om bølgetrinnkoder, se [Bølgetrinnkoder](wave-step-codes.md).
 
 ### <a name="create-three-wave-label-layouts"></a>Opprette tre oppsett for bølgeetikett
 
@@ -572,7 +572,7 @@ For å følge dette scenarioet må du ha demonstrasjonsdata installert, og du m�
 
 1. Lukk siden.
 1. I handlingsruten velger du **Rediger spørring**.
-1. I dialogboksen for redigeringsprogrammet, i tabellen **Område** , legger du til en rad med følgende innstillinger:
+1. I dialogboksen for redigeringsprogrammet, i tabellen **Område**, legger du til en rad med følgende innstillinger:
 
     - **Tabell:** *Arbeidslinjer*
     - **Avledet tabell:** *Arbeidslinjer*
@@ -581,9 +581,9 @@ For å følge dette scenarioet må du ha demonstrasjonsdata installert, og du m�
 
     Denne spørringen sikrer at bare arbeidslinjer av plukktypen blir skrevet ut på etiketten, ikke plasser-arbeidslinjer.
 
-1. Hvis du vil ha muligheten til å skrive ut fraktbrev-IDen, velger du kategorien **Sammenkoblinger** , velger tabellen **Arbeidslinjer** og kobler **Forsendelser** -tabellen til den. 
+1. Hvis du vil ha muligheten til å skrive ut fraktbrev-IDen, velger du kategorien **Sammenkoblinger**, velger tabellen **Arbeidslinjer** og kobler **Forsendelser**-tabellen til den. 
 1. Lukk dialogboksen for redigeringsprogram for spørring.
-1. Hurtigfanen for **Skrivertekstoppsett** har tre inndelinger der du kan skrive skriverkode: **topptekstdelen** , **brødtekstdelen** og **bunntekstdelen**. I **topptekstdelen** i feltet for **etikettopptekst** angir du koden for den nødvendige toppteksten. Hvis du for eksempel bruker Zebra-skrivere, kan du bruke følgende kode.
+1. Hurtigfanen for **Skrivertekstoppsett** har tre inndelinger der du kan skrive skriverkode: **topptekstdelen**, **brødtekstdelen** og **bunntekstdelen**. I **topptekstdelen** i feltet for **etikettopptekst** angir du koden for den nødvendige toppteksten. Hvis du for eksempel bruker Zebra-skrivere, kan du bruke følgende kode.
 
 
     ```plaintext
@@ -650,7 +650,7 @@ For å følge dette scenarioet må du ha demonstrasjonsdata installert, og du m�
     ```
 
     > [!NOTE]
-    > Dette oppsettet skriver bare ut én kopi av hver etikett. Hvis du trenger flere kopier (for eksempel én kopi for hver side av pallen), setter du **n** -verdien for **\^PQn** -delen i bunnteskten til det nødvendige antallet eksemplarer. Hvis du for eksempel vil skrive ut fire eksemplarer av hver etikett, angir du **\^PQ4**.
+    > Dette oppsettet skriver bare ut én kopi av hver etikett. Hvis du trenger flere kopier (for eksempel én kopi for hver side av pallen), setter du **n**-verdien for **\^PQn**-delen i bunnteskten til det nødvendige antallet eksemplarer. Hvis du for eksempel vil skrive ut fire eksemplarer av hver etikett, angir du **\^PQ4**.
 
 1. Den første etiketten er nå klar til bruk.
 1. Opprett en oppsettpost nummer to som har følgende innstillinger:
@@ -684,7 +684,7 @@ For å følge dette scenarioet må du ha demonstrasjonsdata installert, og du m�
 
 1. Lukk siden.
 1. I handlingsruten velger du **Rediger spørring**.
-1. I dialogboksen for redigeringsprogrammet, i tabellen **Område** , legger du til en rad med følgende innstillinger:
+1. I dialogboksen for redigeringsprogrammet, i tabellen **Område**, legger du til en rad med følgende innstillinger:
 
     - **Tabell:** *Arbeidslinjer*
     - **Avledet tabell:** *Arbeidslinjer*
@@ -693,9 +693,9 @@ For å følge dette scenarioet må du ha demonstrasjonsdata installert, og du m�
 
     Denne spørringen sikrer at bare arbeidslinjer av plukktypen blir skrevet ut på etiketten, ikke plasser-arbeidslinjer.
 
-1. Hvis du vil ha muligheten til å skrive ut fraktbrev-IDen, velger du kategorien **Sammenkoblinger** , velger tabellen **Arbeidslinjer** og kobler **Forsendelser** -tabellen til den.
+1. Hvis du vil ha muligheten til å skrive ut fraktbrev-IDen, velger du kategorien **Sammenkoblinger**, velger tabellen **Arbeidslinjer** og kobler **Forsendelser**-tabellen til den.
 1. Lukk dialogboksen for redigeringsprogram for spørring.
-1. Hurtigfanen for **Skrivertekstoppsett** har tre inndelinger der du kan skrive skriverkode: **topptekstdelen** , **brødtekstdelen** og **bunntekstdelen**. I **topptekstdelen** i feltet for **etikettopptekst** angir du koden for den nødvendige toppteksten. Hvis du for eksempel bruker Zebra-skrivere, kan du bruke følgende kode.
+1. Hurtigfanen for **Skrivertekstoppsett** har tre inndelinger der du kan skrive skriverkode: **topptekstdelen**, **brødtekstdelen** og **bunntekstdelen**. I **topptekstdelen** i feltet for **etikettopptekst** angir du koden for den nødvendige toppteksten. Hvis du for eksempel bruker Zebra-skrivere, kan du bruke følgende kode.
 
     ```plaintext
     CT~~CD,~CC^~CT~
@@ -724,7 +724,7 @@ For å følge dette scenarioet må du ha demonstrasjonsdata installert, og du m�
     ```
 
     > [!NOTE]
-    > Dette oppsettet skriver bare ut én kopi av hver etikett. Hvis du trenger flere kopier (for eksempel én kopi for hver side av pallen), setter du **n** -verdien for **\^PQn** -delen i bunnteskten til det nødvendige antallet eksemplarer. Hvis du for eksempel vil skrive ut fire eksemplarer av hver etikett, angir du **\^PQ4**.
+    > Dette oppsettet skriver bare ut én kopi av hver etikett. Hvis du trenger flere kopier (for eksempel én kopi for hver side av pallen), setter du **n**-verdien for **\^PQn**-delen i bunnteskten til det nødvendige antallet eksemplarer. Hvis du for eksempel vil skrive ut fire eksemplarer av hver etikett, angir du **\^PQ4**.
 
 1. Den andre etiketten er nå klar til bruk.
 1. Opprett en tredje oppsettpost som har følgende innstillinger:
@@ -733,7 +733,7 @@ For å følge dette scenarioet må du ha demonstrasjonsdata installert, og du m�
     - **Beskrivelse:** *Pauseetikett*
 
 1. Velg **Lagre** i handlingsruten.
-1. Hurtigfanen for **Skrivertekstoppsett** har tre inndelinger der du kan skrive skriverkode: **topptekstdelen** , **brødtekstdelen** og **bunntekstdelen**. I **topptekstdelen** i feltet for **etikettopptekst** angir du ZPL-koden for den nødvendige toppteksten. Her er et eksempel:
+1. Hurtigfanen for **Skrivertekstoppsett** har tre inndelinger der du kan skrive skriverkode: **topptekstdelen**, **brødtekstdelen** og **bunntekstdelen**. I **topptekstdelen** i feltet for **etikettopptekst** angir du ZPL-koden for den nødvendige toppteksten. Her er et eksempel:
 
     ```plaintext
     CT~~CD,~CC^~CT~
@@ -769,9 +769,9 @@ For å følge dette scenarioet må du ha demonstrasjonsdata installert, og du m�
 ### <a name="set-up-unit-sequence-groups"></a>Konfigurer sekvensgrupper for enheter
 
 1. Gå til **Lagerstyring \> Oppsett \> Lager \> Sekvensgrupper for enhet**.
-1. Velg eller opprett en **EA Box pl** -gruppe.
+1. Velg eller opprett en **EA Box pl**-gruppe.
 1. For **Boks** angir du feltet **Bølgenivåtype** til *Kartong*.
-1. For **PL** -linjen angir du feltet **Bølgenivåtype** til *Pall*.
+1. For **PL**-linjen angir du feltet **Bølgenivåtype** til *Pall*.
 
 ### <a name="create-wave-label-templates"></a>Opprette maler for bølgeetikett
 
@@ -783,7 +783,7 @@ For å følge dette scenarioet må du ha demonstrasjonsdata installert, og du m�
     - **Bølgetrinnkode:** *Kartong*
     - **Lager:** *62*
 
-1. På hurtigfanen **Generelt** , i feltet **Bølgeetiketttype** , velger du en verdi, for eksempel *Kartong*.
+1. På hurtigfanen **Generelt**, i feltet **Bølgeetiketttype**, velger du en verdi, for eksempel *Kartong*.
 1. I hurtigfanen for **Maldetaljer for bølgeetikett** legger du til en rad med følgende innstillinger:
 
     - **Etikettoppsett-ID:** *Kartong*
@@ -791,7 +791,7 @@ For å følge dette scenarioet må du ha demonstrasjonsdata installert, og du m�
     - **Kjør spørring:** *Ja* (Denne innstillingen er valgfri, men anbefales for optimal ytelse.)
 
 1. Velg **Lagre** i handlingsruten.
-1. Valgfritt: Hvis du definerer en kundespesifikk etikettutforming, må du opprette en spørring for å finne kundens konto. På hurtigfanen **Maldetaljer for bølgeetikett** velger du **Rediger spørring**. Deretter, i dialoglogboksen for redigeringsprogrammet, i tabellen **Område** , legger du til en rad med følgende innstillinger:
+1. Valgfritt: Hvis du definerer en kundespesifikk etikettutforming, må du opprette en spørring for å finne kundens konto. På hurtigfanen **Maldetaljer for bølgeetikett** velger du **Rediger spørring**. Deretter, i dialoglogboksen for redigeringsprogrammet, i tabellen **Område**, legger du til en rad med følgende innstillinger:
 
     - **Tabell:** *Forsendelser*
     - **Avledet tabell:** *Forsendelser*
@@ -801,7 +801,7 @@ For å følge dette scenarioet må du ha demonstrasjonsdata installert, og du m�
     Når du er ferdig, velger du **OK** for å lukke dialogboksen redigeringsprogrammet for spørring.
 
 1. I handlingsruten velger du **Rediger spørring** for å åpne dialogboksen for redigeringsprogrammet for spørringen for hele etikettmalen.
-1. I dialogboksen for redigeringsprogrammet, i tabellen **Sortering** , legger du til en rad med følgende innstillinger:
+1. I dialogboksen for redigeringsprogrammet, i tabellen **Sortering**, legger du til en rad med følgende innstillinger:
 
     - **Tabell:** *Arbeidslinjer*
     - **Avledet tabell:** *Arbeidslinjer*
@@ -818,13 +818,13 @@ For å følge dette scenarioet må du ha demonstrasjonsdata installert, og du m�
 1. Velg **OK** for å lukke dialogboksen for redigeringsprogrammet for spørring.
 1. En meldingsboks ber deg bekrefte gjenopprettingsoperasjonen for gruppering. Klikk **Ja** for å fortsette.
 1. Velg **Malgruppe for bølgeetikett** i handlingsruten.
-1. I dialogboksen for **Malgruppe for bølgeetikett** , for raden der feltet **Referansefeltnavn** er satt til *Forsendelses-ID* , angir du følgende verdier:
+1. I dialogboksen for **Malgruppe for bølgeetikett**, for raden der feltet **Referansefeltnavn** er satt til *Forsendelses-ID*, angir du følgende verdier:
 
     - **Skriv ut pauseetikett:** Merk av i denne avmerkingsboksen.
-    - **Etikettoppsett-ID:** Velg en pauseetikett. (Merk for eksempel av for *Pause* -etikettoppsettet som du opprettet tidligere i dette scenariet.)
-    - **Skrivernavn:** Velg skriveren for pauseetiketten. (Vanligvis må du velge den samme skriveren som er valgt i hurtigfanen **Maldetaljer for bølgeetikett** , for å skille mellom etiketter. Det er imidlertid mulig å bruke andre scenarier.)
+    - **Etikettoppsett-ID:** Velg en pauseetikett. (Merk for eksempel av for *Pause*-etikettoppsettet som du opprettet tidligere i dette scenariet.)
+    - **Skrivernavn:** Velg skriveren for pauseetiketten. (Vanligvis må du velge den samme skriveren som er valgt i hurtigfanen **Maldetaljer for bølgeetikett**, for å skille mellom etiketter. Det er imidlertid mulig å bruke andre scenarier.)
 
-1. For raden der feltet **Referansefeltnavn** er satt til *Linje-ID for referanselast* , merker du av for **Etikettversjons-ID**.
+1. For raden der feltet **Referansefeltnavn** er satt til *Linje-ID for referanselast*, merker du av for **Etikettversjons-ID**.
 
     > [!NOTE]
     > Dette oppsettet vil opprette én etikettsekvens ("Kartong 1 av X") per lastlinje gjennom bølgen, uansett oppsett for arbeidsgruppering. Denne etikettsekvensen kan skrives ut på et etikettoppsettet. I tillegg vil etiketter for forskjellige forsendelser skilles med den valgte pauseetiketten.
@@ -837,7 +837,7 @@ For å følge dette scenarioet må du ha demonstrasjonsdata installert, og du m�
     - **Bølgetrinnkode:** *Pall*
     - **Lager:** *62*
 
-1. På hurtigfanen **Generelt** , i feltet **Bølgeetiketttype** , velger du en verdi, for eksempel *Pall*.
+1. På hurtigfanen **Generelt**, i feltet **Bølgeetiketttype**, velger du en verdi, for eksempel *Pall*.
 1. I hurtigfanen for **Maldetaljer for bølgeetikett** legger du til en rad med følgende innstillinger:
 
     - **Etikettoppsett-ID:** *Pall*
@@ -845,7 +845,7 @@ For å følge dette scenarioet må du ha demonstrasjonsdata installert, og du m�
     - **Kjør spørring:** *Ja* (Denne innstillingen er valgfri, men anbefales for optimal ytelse.)
 
 1. Velg **Lagre** i handlingsruten.
-1. Valgfritt: Hvis du definerer en kundespesifikk etikettutforming, må du opprette en spørring for å finne kundens konto. På hurtigfanen **Maldetaljer for bølgeetikett** velger du **Rediger spørring**. Deretter, i dialoglogboksen for redigeringsprogrammet, i tabellen **Område** , legger du til en rad med følgende innstillinger:
+1. Valgfritt: Hvis du definerer en kundespesifikk etikettutforming, må du opprette en spørring for å finne kundens konto. På hurtigfanen **Maldetaljer for bølgeetikett** velger du **Rediger spørring**. Deretter, i dialoglogboksen for redigeringsprogrammet, i tabellen **Område**, legger du til en rad med følgende innstillinger:
 
     - **Tabell:** *Forsendelser*
     - **Avledet tabell:** *Forsendelser*
@@ -855,7 +855,7 @@ For å følge dette scenarioet må du ha demonstrasjonsdata installert, og du m�
     Når du er ferdig, velger du **OK** for å lukke dialogboksen redigeringsprogrammet for spørring. 
 
 1. I handlingsruten velger du **Rediger spørring** for å åpne dialogboksen for redigeringsprogrammet for spørringen for hele etikettmalen.
-1. I dialogboksen for redigeringsprogrammet, i tabellen **Sortering** , legger du til en rad med følgende innstillinger:
+1. I dialogboksen for redigeringsprogrammet, i tabellen **Sortering**, legger du til en rad med følgende innstillinger:
 
     - **Tabell:** *Arbeidslinjer*
     - **Avledet tabell:** *Arbeidslinjer*
@@ -872,13 +872,13 @@ For å følge dette scenarioet må du ha demonstrasjonsdata installert, og du m�
 1. Velg **OK** for å lukke dialogboksen for redigeringsprogrammet for spørring.
 1. En meldingsboks ber deg bekrefte gjenopprettingsoperasjonen for gruppering. Klikk **Ja** for å fortsette.
 1. Velg **Malgruppe for bølgeetikett** i handlingsruten.
-1. I dialogboksen for **Malgruppe for bølgeetikett** , for raden der feltet **Referansefeltnavn** er satt til *Forsendelses-ID* , angir du følgende verdier:
+1. I dialogboksen for **Malgruppe for bølgeetikett**, for raden der feltet **Referansefeltnavn** er satt til *Forsendelses-ID*, angir du følgende verdier:
 
     - **Skriv ut pauseetikett:** Merk av i denne avmerkingsboksen.
-    - **Etikettoppsett-ID:** Velg en pauseetikett. (Merk for eksempel av for *Pause* -etikettoppsettet som du opprettet tidligere i dette scenariet.)
-    - **Skrivernavn:** Velg skriveren for pauseetiketten. (Vanligvis må du velge den samme skriveren som er valgt i hurtigfanen **Maldetaljer for bølgeetikett** , for å skille mellom etiketter. Det er imidlertid mulig å bruke andre scenarier.)
+    - **Etikettoppsett-ID:** Velg en pauseetikett. (Merk for eksempel av for *Pause*-etikettoppsettet som du opprettet tidligere i dette scenariet.)
+    - **Skrivernavn:** Velg skriveren for pauseetiketten. (Vanligvis må du velge den samme skriveren som er valgt i hurtigfanen **Maldetaljer for bølgeetikett**, for å skille mellom etiketter. Det er imidlertid mulig å bruke andre scenarier.)
 
-1. For raden der feltet **Referansefeltnavn** er satt til *Linje-ID for referanselast* , merker du av for **Etikettversjons-ID**.
+1. For raden der feltet **Referansefeltnavn** er satt til *Linje-ID for referanselast*, merker du av for **Etikettversjons-ID**.
 
     > [!NOTE]
     > Dette oppsettet vil opprette én etikettsekvens ("Kartong 1 av X") per lastlinje gjennom bølgen, uansett oppsett for arbeidsgruppering. Denne etikettsekvensen kan skrives ut på et etikettoppsettet. I tillegg vil etiketter for forskjellige forsendelser skilles med den valgte pauseetiketten.
@@ -912,8 +912,8 @@ Nummerserieutvidelser kontrollerer GS1-samsvar for bestemte nummerserier. Denne 
     > [!NOTE]
     > Varene og antallene som beskrives her, er bare eksempler. De må bruke enhetsseriegruppen du definerte tidligere, riktige enhetskonverteringer fra *ea* til *Box* til *PL* må være definert for dem, og de må ha lager i lageret *62*. Hvis du vil ha mer informasjon, kan du se [Måleenhet og lagringspolicyer](unit-measure-stocking-policies.md).
 
-1. Velg salgsordrelinjen 1. Deretter, i delen **Salgsordrelinje** på menyen **Lager** , velger du **Reservasjoner**.
-1. På **Reservasjon** -siden i handlingsruten velger du **Reserver parti** , og deretter lukker du siden.
+1. Velg salgsordrelinjen 1. Deretter, i delen **Salgsordrelinje** på menyen **Lager**, velger du **Reservasjoner**.
+1. På **Reservasjon**-siden i handlingsruten velger du **Reserver parti**, og deretter lukker du siden.
 1. Gjenta trinn 4 og 5 for salgsordrelinje 2.
 1. Velg **Frigi til lager** i kategorien **Lager** i handlingsruten.
 
@@ -921,7 +921,7 @@ Nummerserieutvidelser kontrollerer GS1-samsvar for bestemte nummerserier. Denne 
 
     - Systemet behandler den opprettede forsendelsen ved hjelp av malen som inneholder etikettutskriftstrinnet. Etikettoppsettet blir brukt til å definere etikettens format, og resultatet blir en etikett som skrives ut på skriveren som er valgt i etikettmalen.
     - Bølgeetiketter genereres og skrives ut. Antallet etiketter vil tilsvare antallet kartonger (i dette eksemplet er 376 Box-etiketter for linje 1, 322 Box-etiketter for linje 2, 47 PL-etiketter for linje 1, 47 PL-etiketter for linje 2 og to pauseetiketter som har forsendelses-IDen).
-    - En ny fraktbrev-ID genereres for forsendelsene. Hvis du konfigurerte nummerserieutvidelsene, vil bølgeetikett-IDene følge **SSCC-18** -nummerformatet. 
+    - En ny fraktbrev-ID genereres for forsendelsene. Hvis du konfigurerte nummerserieutvidelsene, vil bølgeetikett-IDene følge **SSCC-18**-nummerformatet. 
 
 Du kan vise og skrive ut bølgeetiketter på nytt fra følgende sider:
 
@@ -931,4 +931,4 @@ Du kan vise og skrive ut bølgeetiketter på nytt fra følgende sider:
 - Bølgeetiketter
 - Historikk for bølgeetikett
 
-For de fleste av disse sidene kan du finne den relevante funksjonen ved å velge **Bølgeetiketter** i **Relatert informasjon** -gruppen i kategorien **Forsendelser** i handlingsruten.
+For de fleste av disse sidene kan du finne den relevante funksjonen ved å velge **Bølgeetiketter** i **Relatert informasjon**-gruppen i kategorien **Forsendelser** i handlingsruten.

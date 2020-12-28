@@ -20,11 +20,11 @@ ms.author: benebotg
 ms.search.validFrom: 2019-05-31
 ms.dyn365.ops.version: AX 10.0.0
 ms.openlocfilehash: fa8426c3a1f19f8607f45e9ac4d57300abddb161
-ms.sourcegitcommit: 68092ed283bfbb7b6f611cce1b62c791f9b6a208
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/30/2020
-ms.locfileid: "3323652"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4434626"
 ---
 # <a name="improve-master-planning-performance"></a>Forbedre ytelsen for hovedplanlegging
 
@@ -97,7 +97,7 @@ Horisonter angir hvor langt inn i fremtiden beregningene og andre behov må bere
 
 ### <a name="actions"></a>Handlinger
 
-Du kan også finne parameteren **Handlingsmelding** blant horisontene. Beregningen av handlingsmeldinger forårsaker en lengre kjøretid for hovedplanlegging. Hvis handlingsmeldinger ikke analyseres og brukes regelmessig (daglig, ukentlig og så videre), bør du vurdere å deaktivere beregningen under hovedplanleggingskjøringen. Hvis du vil deaktivere beregningen, kan du på**Hovedplanlegging**-siden (**Hovedplanlegging \> Oppsett \> Planer \> Hovedplaner**), angi **Handlingsmelding**-horisonten til **0** (null). Kontroller også at innstillingen **Handlingsmelding** er deaktivert for alle dekningsgruppene.
+Du kan også finne parameteren **Handlingsmelding** blant horisontene. Beregningen av handlingsmeldinger forårsaker en lengre kjøretid for hovedplanlegging. Hvis handlingsmeldinger ikke analyseres og brukes regelmessig (daglig, ukentlig og så videre), bør du vurdere å deaktivere beregningen under hovedplanleggingskjøringen. Hvis du vil deaktivere beregningen, kan du på **Hovedplanlegging**-siden (**Hovedplanlegging \> Oppsett \> Planer \> Hovedplaner**), angi **Handlingsmelding**-horisonten til **0** (null). Kontroller også at innstillingen **Handlingsmelding** er deaktivert for alle dekningsgruppene.
 
 ### <a name="futures"></a>Terminer
 

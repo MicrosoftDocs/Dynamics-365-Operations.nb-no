@@ -19,11 +19,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: e79526dd43f516f2f4abf31276f314cb2498458e
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3978803"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4434590"
 ---
 # <a name="attach-templates-to-service-objects"></a>Tilknytte maler til serviceobjekter    
 
@@ -32,13 +32,13 @@ ms.locfileid: "3978803"
 
 En stykklistemal kan knyttes til en serviceobjektrelasjon. Serviceobjektrelasjonen kan deretter knyttes til enten serviceordrer eller serviceavtaler.
 
-1.  Klikk **Servicestyring** \> **Oppsett** \> **Serviceobjekter** \> **Serviceobjekter** .
+1.  Klikk **Servicestyring** \> **Oppsett** \> **Serviceobjekter** \> **Serviceobjekter**.
 
 2.  Velg et serviceobjekt.
 
 3.  Klikk på **Serviceavtaler** eller **Serviceordrer** for å vise serviceavtaler eller serviceordrer som serviceobjektet er knyttet til.
 
-4.  Velg en serviceavtale eller serviceordre, og klikk på **Funksjoner** og deretter på **Tilknytt malstykkliste** .
+4.  Velg en serviceavtale eller serviceordre, og klikk på **Funksjoner** og deretter på **Tilknytt malstykkliste**.
 
 5.  Velg malstykklisten som du vil knytte til objektet.
 

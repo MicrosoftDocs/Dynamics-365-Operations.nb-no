@@ -19,11 +19,11 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: cead310eaa86d755399e512f99d6782bfa551211
-ms.sourcegitcommit: e3f4dd2257a3255c2982f4fc7b72a1121275b88a
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: nb-NO
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4018865"
+ms.locfileid: "4434732"
 ---
 # <a name="product-receipt-against-purchase-orders"></a>Mottaksseddel mot bestillinger
 
@@ -42,7 +42,7 @@ Registrering av produktmottak skjer ofte i mottakssoner på et lager. Det utfør
 Produkter som er mottatt i lageret kan gå gjennom kvalitetsinspeksjon før de er plassert på lageret. Kvalitetsordrer eller karanteneordrer kan brukes til å utføre kvalitetskontroll. Hvis kvalitetsordrer brukes, kan du konfigurere prosessen for å blokkere produkter midlertidig via en reservasjon mens de kontrolleres. Hvis karanteneordrer brukes, flyttes produkter til et annet lager for inspeksjon. Dette lageret kalles karantenelageret. I begge kvalitetsinspeksjonsprosessene kan noen av varene kasseres fordi de ikke samsvarer med forventet kvalitet, eller fordi kvalitetsinspeksjonen omfatter destruktiv testing av et utvalg av produktet.
 
 ## <a name="product-receipt"></a>Produktkvittering
-Vanligvis brukes handlingen **Produktmottak** på siden **Bestillinger** til å merke produkter som **Mottatt** på bestillingen. Siden **Posterer produktkvittering** har flere forskjellige alternativer for antallet som er registrert som mottatt. Du kan for eksempel sette feltet **Antall** til **Bestilt antall** eller **Motta nå-antall**. Hvis en prosess for ankomst i lageret er brukt, du vil ofte sette dette feltet til **Registrert antall**. Du kan endre antallet for hver ordrelinje som vil bli merket som **Mottatt** , for å ta hensyn til eventuelle avvik, for eksempel underlevering og overlevering. Under produktmottak må du angi en identifikator for produktmottak, som vanligvis er en referanse til følgeseddelen fra leverandøren. Denne identifikatoren er nødvendig for regnskap, fordi den gjør det mulig å aktivere kontrollere eller revisjoner av leverandørfølgesedler mot det som er mottatt, og registrert lager eller utgifter.  
+Vanligvis brukes handlingen **Produktmottak** på siden **Bestillinger** til å merke produkter som **Mottatt** på bestillingen. Siden **Posterer produktkvittering** har flere forskjellige alternativer for antallet som er registrert som mottatt. Du kan for eksempel sette feltet **Antall** til **Bestilt antall** eller **Motta nå-antall**. Hvis en prosess for ankomst i lageret er brukt, du vil ofte sette dette feltet til **Registrert antall**. Du kan endre antallet for hver ordrelinje som vil bli merket som **Mottatt**, for å ta hensyn til eventuelle avvik, for eksempel underlevering og overlevering. Under produktmottak må du angi en identifikator for produktmottak, som vanligvis er en referanse til følgeseddelen fra leverandøren. Denne identifikatoren er nødvendig for regnskap, fordi den gjør det mulig å aktivere kontrollere eller revisjoner av leverandørfølgesedler mot det som er mottatt, og registrert lager eller utgifter.  
 
 Bestillinger kan opprettes for produkter som ikke er ment som beholdning, men regnes som en utgift. Denne kategorien inneholder ordrelinjer der produktene er merket som **Ikke lagerført** av lagermodellgruppen, og også linjer som bruker innkjøpskategorier. I slike tilfeller kan det hende varene ikke går gjennom ankomstregistrering og -mottak i lageret. I stedet brukes handlingen **Produktmottak** til å registrere mottaket direkte på bestillingen, og mottaket er basert på det bestilte antallet, ikke det registrerte antallet.  
 

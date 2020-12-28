@@ -17,11 +17,11 @@ ms.author: mirzaab
 ms.search.validFrom: 2020-07-16
 ms.dyn365.ops.version: Release 10.0.8
 ms.openlocfilehash: dfb71f74732d65409003c4f6f74145442a1efa3f
-ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: nb-NO
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4016637"
+ms.locfileid: "4434806"
 ---
 # <a name="quality-check"></a>Kvalitetskontroll
 
@@ -44,7 +44,7 @@ Denne prosessen kan også konfigureres slik at alle skannede nummerskilt sendes 
 
 ## <a name="turn-on-the-quality-check-feature"></a>Aktiver funksjonen Kvalitetskontroll
 
-Før du kan bruke funksjonen *Kvalitetskontroll* , må den være aktivert i systemet. Administratorer kan bruke innstillingene for [funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til å kontrollere funksjonsstatusen og aktivere den hvis den kreves. I **Funksjonsadministrering** -arbeidsområdet er denne funksjonen oppført på følgende måte:
+Før du kan bruke funksjonen *Kvalitetskontroll*, må den være aktivert i systemet. Administratorer kan bruke innstillingene for [funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til å kontrollere funksjonsstatusen og aktivere den hvis den kreves. I **Funksjonsadministrering**-arbeidsområdet er denne funksjonen oppført på følgende måte:
 
 - **Modul:** *Lagerstyring*
 - **Funksjonsnavn:** *Kvalitetskontroll*
@@ -82,7 +82,7 @@ Kvalitetskontrollmalen definerer reglene for å utføre stikkprøver for kvalite
 
     - **Testgruppe:** *Omslutning*
 
-        Angi testgruppen som skal brukes i kvalitetsordren som opprettes. Testgrupper blir definert i **Lagerstyring** -modulen.
+        Angi testgruppen som skal brukes i kvalitetsordren som opprettes. Testgrupper blir definert i **Lagerstyring**-modulen.
 
         La alternativet **Destruktiv tekst** være slått av for testgruppen. Dette alternativet definerer om prøven skal ødelegges som del av testene i testgruppen. Når en destruktiv test brukes, genererer system en beholdningstransaksjon der en kvalitetsordre opprettes for en vare. Den nye lagertransaksjonen forutsier lagerreduksjonen for testantallet. Beholdningsreduksjonen skjer når kvalitetsordren er fullført gjennom valideringstrinnet. Lagertransaksjonen identifiseres som en kvalitetsordre.
 
@@ -119,11 +119,11 @@ Med arbeidsmaler kan du definere arbeidsoperasjoner som må utføres på lageret
 #### <a name="purchase-orders"></a>Bestillinger
 
 1. Gå til **Lagerstyring \> Oppsett \> Arbeid \> Arbeidsmaler**.
-1. I hodet setter du *Arbeidsordretype* -feltet til **Bestillinger**.
+1. I hodet setter du *Arbeidsordretype*-feltet til **Bestillinger**.
 1. I handlingsruten velger du **Rediger**.
-1. Velg en arbeidsmal som skal inneholde et kvalitetskontrolltrinn. I **Oversikt** -delen i **Arbeidsmal** -feltet velger du *51 bestillingsmottak*.
+1. Velg en arbeidsmal som skal inneholde et kvalitetskontrolltrinn. I **Oversikt**-delen i **Arbeidsmal**-feltet velger du *51 bestillingsmottak*.
 1. I delen **Arbeidsmaldetaljer** ser du at rutenettet har to eksisterende linjer: én for *plukking* og én for *plassering*.
-1. i delen **Arbeidsmaldetaljer** velger du **Ny** for å legge til en rad for kvalitetskontroll i rutenettet. Legg merke til at **Linjenummer** -feltet for den nye linjen er satt til *3*.
+1. i delen **Arbeidsmaldetaljer** velger du **Ny** for å legge til en rad for kvalitetskontroll i rutenettet. Legg merke til at **Linjenummer**-feltet for den nye linjen er satt til *3*.
 1. På den nye linjen angir du følgende verdier. Godta standardverdiene for de resterende feltene.
 
     - **Arbeidstype:** *Kvalitetskontroll*
@@ -134,12 +134,12 @@ Med arbeidsmaler kan du definere arbeidsoperasjoner som må utføres på lageret
 
 1. I handlingsruten velger du **Lagre** for å lagre arbeidet så langt.
 
-    Du mottar en informasjonsmelding som sier "Ugyldig – kvalitetskontroll må komme direkte etter en plukking". Derfor må du endre **Linjenummer** -verdien for linjen du nettopp la til.
+    Du mottar en informasjonsmelding som sier "Ugyldig – kvalitetskontroll må komme direkte etter en plukking". Derfor må du endre **Linjenummer**-verdien for linjen du nettopp la til.
 
-1. Følg disse trinnene for å endre **Linjenummer** -verdien for den nye linjen:
+1. Følg disse trinnene for å endre **Linjenummer**-verdien for den nye linjen:
 
-    1. I delen **Arbeidsmaldetaljer** velger du linjen hvor **Arbeidstype** -feltet er satt til *Kvalitetskontroll*.
-    2. Velg knappen **Flytt opp** eller **Flytt ned** for å flytte *Kvalitetskontroll* -linjen slik at den er etter *Plukl* -linjen.
+    1. I delen **Arbeidsmaldetaljer** velger du linjen hvor **Arbeidstype**-feltet er satt til *Kvalitetskontroll*.
+    2. Velg knappen **Flytt opp** eller **Flytt ned** for å flytte *Kvalitetskontroll*-linjen slik at den er etter *Plukl*-linjen.
 
 1. Velg **Lagre** i handlingsruten.
 
@@ -147,8 +147,8 @@ Med arbeidsmaler kan du definere arbeidsoperasjoner som må utføres på lageret
 
 Deretter oppretter du en arbeidsmal for kvalitetskontrollen.
 
-1. I hodet på **Arbeidsmaler** -siden endrer du verdien på **Arbeidsordretype** -feltet til *Kvalitetskontroll*.
-1. I handlingsruten velger du **Ny** for å legge til en rad i rutenettet i **Oversikt** -delen.
+1. I hodet på **Arbeidsmaler**-siden endrer du verdien på **Arbeidsordretype**-feltet til *Kvalitetskontroll*.
+1. I handlingsruten velger du **Ny** for å legge til en rad i rutenettet i **Oversikt**-delen.
 1. I den nye raden angir du følgende verdier:
 
     - **Arbeidsmal:** *51 kvalitetskontroll*
@@ -157,8 +157,8 @@ Deretter oppretter du en arbeidsmal for kvalitetskontrollen.
 
     - **Beskrivelse av arbeidsmal:** *51 kvalitetskontroll*
 
-1. I handlingsruten velger du **Lagre** for å gjøre **Arbeidsmaldetaljer** -delen tilgjengelig.
-1. Mens den nye malen fortsatt er valgt i **Oversikt** -delen, velger du **Ny** i delen **Arbeidsmaldetaljer** for å legge til en rad i rutenettet der.
+1. I handlingsruten velger du **Lagre** for å gjøre **Arbeidsmaldetaljer**-delen tilgjengelig.
+1. Mens den nye malen fortsatt er valgt i **Oversikt**-delen, velger du **Ny** i delen **Arbeidsmaldetaljer** for å legge til en rad i rutenettet der.
 1. I den nye raden angir du følgende verdier:
 
     - **Arbeidstype:** *Plukk*
@@ -183,32 +183,32 @@ Hvis du vil ha mer informasjon om arbeidsmaler, kan du se [Kontrollere lagerarbe
 Lokasjonsdirektiver er regler som bidrar til å identifisere plukke- og plasseringslokasjoner for lagerbevegelse. I en salgsordretransaksjon bestemmer for eksempel et lokasjonsdirektiv hvor varene blir plukket og hvor de plukkede varene skal plasseres. Du må konfigurere en lokasjonsdirektivregel for å definere hvordan mislykkede kvalitetskontroller skal behandles.
 
 1. Gå til **Lagerstyring \> Oppsett \> Lokasjonsdirektiver**.
-1. I den venstre ruten angir du **Arbeidsordretype** -feltet til *Bestillinger* for å arbeide med lokasjonsdirektiver av denne typen.
+1. I den venstre ruten angir du **Arbeidsordretype**-feltet til *Bestillinger* for å arbeide med lokasjonsdirektiver av denne typen.
 1. Velg **Ny** i handlingsruten for å opprette et lokasjonsdirektiv for kvalitetskontroller.
 1. I hodet angir du følgende verdier:
 
     - **Sekvensnummer:** Godta standardverdien.
     - **Navn:** *51 til kvalitet*
 
-1. Angi følgende verdier i **Lokasjonsdirektiver** -hurtigfanen. Godta standardverdiene for de resterende feltene.
+1. Angi følgende verdier i **Lokasjonsdirektiver**-hurtigfanen. Godta standardverdiene for de resterende feltene.
 
     - **Arbeidstype:** *Plasser*
     - **Område:** *5*
     - **Lager:** *51*
 
 1. I handlingsruten velger du **Lagre** for å lagre direktivet og gjøre hurtigfanen **Linjer** tilgjengelig.
-1. På **Linjer** -hurtigfanen velger du **Ny** for å legge til en linje i rutenettet.
+1. På **Linjer**-hurtigfanen velger du **Ny** for å legge til en linje i rutenettet.
 1. På den nye linjen angir du følgende verdier. Godta standardverdiene for de resterende feltene.
 
     - **Fra-antall:** *1*
     - **Til-antall:** *1000000*
 
 1. I handlingsruten velger du **Lagre** for å lagre den nye linjen og gjøre hurtigfanen **Handlinger for lokasjonsdirektiv** tilgjengelig.
-1. Mens den nye linjen fremdeles er valgt på hurtigfanen **Linjer** , velger du **Ny** på hurtigfanen **Handlinger for lokasjonsdirektiv** for å legge til en rad i rutenettet der, slik at du kan definere en handling for linjen.
-1. I den nye raden setter du **Navn** -feltet til *Kvalitet*. Godta standardverdiene for de resterende feltene.
-1. I handligsruten velger du **Lagre** for å gjøre **Rediger spørring** -knappen på **Lokasjonsdirektivhandlinger** -hurtigfanen tilgjengelig.
-1. Når linjen du nettopp la til, fremdeles er valgt i hurtigfanen **Handlinger for lokasjonsdirektiv** , velger du **Rediger spørring** for å åpne en dialogboks der du kan redigere spørringen for handlingen.
-1. På **Område** -fanen velger du **Legg til** for å legge til en rad i spørringen.
+1. Mens den nye linjen fremdeles er valgt på hurtigfanen **Linjer**, velger du **Ny** på hurtigfanen **Handlinger for lokasjonsdirektiv** for å legge til en rad i rutenettet der, slik at du kan definere en handling for linjen.
+1. I den nye raden setter du **Navn**-feltet til *Kvalitet*. Godta standardverdiene for de resterende feltene.
+1. I handligsruten velger du **Lagre** for å gjøre **Rediger spørring**-knappen på **Lokasjonsdirektivhandlinger**-hurtigfanen tilgjengelig.
+1. Når linjen du nettopp la til, fremdeles er valgt i hurtigfanen **Handlinger for lokasjonsdirektiv**, velger du **Rediger spørring** for å åpne en dialogboks der du kan redigere spørringen for handlingen.
+1. På **Område**-fanen velger du **Legg til** for å legge til en rad i spørringen.
 1. I den nye raden angir du følgende verdier:
 
     - **Tabell:** *Plasseringer*
@@ -216,10 +216,10 @@ Lokasjonsdirektiver er regler som bidrar til å identifisere plukke- og plasseri
     - **Felt:** *Lokasjon*
     - **Vilkår:** *QMS*
 
-    *QMS* -lokasjonen er en lagerlokasjon for kvalitet.
+    *QMS*-lokasjonen er en lagerlokasjon for kvalitet.
 
 1. Velg **OK** for å lukke dialogboksen.
-1. Du må nå endre rekkefølgen til lokasjonsdirektivene for bestilling for lager *51*. Lagre det nye lokasjonsdirektivet *51 til kvalitet* , oppdater siden og velg lokasjonsdirektivet i listen. Deretter bruker du knappene **Flytt opp** og **Flytt ned** i handlingsruten til å plassere lokasjonsdirektivet for lager *51* i følgende rekkefølge. (Før du velger **Flytt opp** eller **Flytt ned** , må du velge et lokasjonsdirektiv i listen.)
+1. Du må nå endre rekkefølgen til lokasjonsdirektivene for bestilling for lager *51*. Lagre det nye lokasjonsdirektivet *51 til kvalitet*, oppdater siden og velg lokasjonsdirektivet i listen. Deretter bruker du knappene **Flytt opp** og **Flytt ned** i handlingsruten til å plassere lokasjonsdirektivet for lager *51* i følgende rekkefølge. (Før du velger **Flytt opp** eller **Flytt ned**, må du velge et lokasjonsdirektiv i listen.)
 
     1. 51 til kvalitet
     2. 51 bestilling direkte
@@ -227,14 +227,14 @@ Lokasjonsdirektiver er regler som bidrar til å identifisere plukke- og plasseri
 
 ### <a name="mobile-device-menu-items"></a>Menyelementer på mobilenheten
 
-Konfigurer et menyelement slik at mobilenheter kan utføre **Kvalitetskontroll** -funksjonen.
+Konfigurer et menyelement slik at mobilenheter kan utføre **Kvalitetskontroll**-funksjonen.
 
 #### <a name="purchase-putaway"></a>Kjøpsplassering
 
 1. Gå til **Lagerstyring \> Oppsett \> Mobilenhet \> Menyelementer på mobilenheten**.
 1. Velg menyelementet **Kjøpsplassering** i listen.
 1. I handlingsruten velger du **Rediger**.
-1. I **Arbeidsklasser** -delenvelger du **Ny** for å legge til en rad i rutenettet.
+1. I **Arbeidsklasser**-delenvelger du **Ny** for å legge til en rad i rutenettet.
 1. I den nye raden angir du følgende verdier:
 
     - **Arbeidsklasse-ID:** *Kvalitetskontroll*
@@ -256,7 +256,7 @@ Konfigurer et menyelement slik at mobilenheter kan utføre **Kvalitetskontroll**
     - **Modus:** *Arbeid*
     - **Bruke eksisterende arbeid:** *Nei*
 
-1. Angi følgende verdier i **Generelt** -hurtigfanen. Godta standardverdiene for de resterende feltene.
+1. Angi følgende verdier i **Generelt**-hurtigfanen. Godta standardverdiene for de resterende feltene.
 
     - **Arbeidsopprettingsprosess:** *Bestillingslinjemottak og -plassering*
     - **Generer nummerskilt:** *Ja*
@@ -267,22 +267,22 @@ Konfigurer et menyelement slik at mobilenheter kan utføre **Kvalitetskontroll**
 #### <a name="add-the-menu-item-to-a-mobile-device-menu"></a>Legge til menyelementet på en meny for mobilenhet
 
 1. Gå til **Lagerstyring \> Oppsett \> Mobilenhet \> Meny på mobilenheten**.
-1. Velg **Innkommende** -,'menyen i den venstre ruten.
+1. Velg **Innkommende**-,'menyen i den venstre ruten.
 1. I handlingsruten velger du **Rediger**.
 1. I kolonnen **Tilgjengelige menyer og menyelementer** velger du det nye menyelementet **PO-linjemottak**.
 1. Velg høyre pil-knappen for å flytte **PO-linjemottak** til kolonnen **Menystruktur**.
-1. I kolonnen **Menystruktur** velger du **PO-linjemottak** , og deretter velger du pil opp eller pil ned for å flytte menyelementet til ønsket plassering på menyen på mobilenheten.
+1. I kolonnen **Menystruktur** velger du **PO-linjemottak**, og deretter velger du pil opp eller pil ned for å flytte menyelementet til ønsket plassering på menyen på mobilenheten.
 1. Velg **Lagre** i handlingsruten.
 
 ## <a name="example-scenario"></a><a name="example-scenario"></a>Eksempelscenario
 
-Etter at du har gjort alle de tidligere beskrevne eksempeldataene tilgjengelige og konfigurert dem, kan du arbeide deg gjennom dette scenariet for å prøve ut *Kvalitetskontroll* -funksjonen. Verdiene som vises i dette scenariet, antar at du arbeider med standard demonstrasjonsdata, at du har valgt den juridiske enheten **USMF** , og at du klargjorde eksempelpostene som er beskrevet tidligere i dette emnet. Dette scenariet fungerer også som et eksempel som viser hvordan funksjonen kan brukes i et produksjonsmiljø.
+Etter at du har gjort alle de tidligere beskrevne eksempeldataene tilgjengelige og konfigurert dem, kan du arbeide deg gjennom dette scenariet for å prøve ut *Kvalitetskontroll*-funksjonen. Verdiene som vises i dette scenariet, antar at du arbeider med standard demonstrasjonsdata, at du har valgt den juridiske enheten **USMF**, og at du klargjorde eksempelpostene som er beskrevet tidligere i dette emnet. Dette scenariet fungerer også som et eksempel som viser hvordan funksjonen kan brukes i et produksjonsmiljø.
 
 ### <a name="create-a-purchase-order"></a>Opprette en bestilling
 
 1. Gå til **Innkjøp og leverandører \> Bestillinger \> Alle bestillinger**.
 1. Velg **Ny** i handlingsruten.
-1. I **Opprett bestilling** -dialogboksen angir du følgende verdier:
+1. I **Opprett bestilling**-dialogboksen angir du følgende verdier:
 
     - **Leverandørkonto:** *104*
     - **Lager:** *51*
@@ -298,20 +298,20 @@ Etter at du har gjort alle de tidligere beskrevne eksempeldataene tilgjengelige 
 
 ### <a name="process-quality-check-receiving"></a>Behandle kvalitetskontrollmottak
 
-Når bestillingen er opprettet, kan den mottas ved hjelp av menyelementet **PO-linjemottak** og funksjonaliteten i *Kvalitetskontroll* -funksjonen.
+Når bestillingen er opprettet, kan den mottas ved hjelp av menyelementet **PO-linjemottak** og funksjonaliteten i *Kvalitetskontroll*-funksjonen.
 
 #### <a name="receive-pallet-1"></a>Motta pall 1
 
 1. Logg på lagerappen som en bruker for lageret *51*. (Angi *51* som bruker-ID og *1* som passord.)
 1. Gå til **Innkommende \> PO-linjemottak**.
-1. I **PONUM** -feltet angir du bestillingsnummeret.
+1. I **PONUM**-feltet angir du bestillingsnummeret.
 1. Bekreft bestillingsnummeret.
-1. I **LINENUM** -feltet angir du nummeret på bestillingslinjen som mottas. Fordi ordren bare har én linje i dette scenariet, vil du angi *1* i **LINENUM** -feltet for hvert mottakstrinn.
+1. I **LINENUM**-feltet angir du nummeret på bestillingslinjen som mottas. Fordi ordren bare har én linje i dette scenariet, vil du angi *1* i **LINENUM**-feltet for hvert mottakstrinn.
 1. Bekreft linjenummeret.
-1. I **QTY** -feltet angir du antallet som skal mottas. Fordi bestillingen er for tre paller ( *PL* ) i dette scenariet, og det er tremottaks trinn, angir du *1* i **QTY** -feltet for hvert mottakstrinn.
+1. I **QTY**-feltet angir du antallet som skal mottas. Fordi bestillingen er for tre paller (*PL*) i dette scenariet, og det er tremottaks trinn, angir du *1* i **QTY**-feltet for hvert mottakstrinn.
 1. Bekreft antallet.
 
-    Siden **Kvalitetskontroll** som vises, har ingen oppføringsfelt. Den har bare bekreftelsesknappen (hakemerke) nederst og menyknappen ( **≡** ) øverst. (Meny-knappen kalles noen ganger for hamburgeren eller hamburgerknappen.) Hvis du vil ekspedere kvalitetskontrollprosessen, må brukere bare bekrefte siden **Kvalitetskontroll** når pallen består kvalitetskontrollen.
+    Siden **Kvalitetskontroll** som vises, har ingen oppføringsfelt. Den har bare bekreftelsesknappen (hakemerke) nederst og menyknappen (**≡**) øverst. (Meny-knappen kalles noen ganger for hamburgeren eller hamburgerknappen.) Hvis du vil ekspedere kvalitetskontrollprosessen, må brukere bare bekrefte siden **Kvalitetskontroll** når pallen består kvalitetskontrollen.
 
     ![Siden Kvalitetskontroll](media/quality-check.png "Siden Kvalitetskontroll")
 
@@ -331,19 +331,19 @@ Når bestillingen er opprettet, kan den mottas ved hjelp av menyelementet **PO-l
 
 1. Bekreft plasseringsarbeidet.
 
-    På **Oppgave** -siden for bestillingslinjemottak vises meldingen "Arbeid fullført". **LINENUM** -feltet er tilgjengelig, slik at du kan begynne å motta den neste pallen.
+    På **Oppgave**-siden for bestillingslinjemottak vises meldingen "Arbeid fullført". **LINENUM**-feltet er tilgjengelig, slik at du kan begynne å motta den neste pallen.
 
 #### <a name="receive-pallet-2"></a>Motta pall 2
 
 For dette scenariet vil pall 2 bli avvist.
 
-1. I **LINENUM** -feltet angir du *1* og bekrefter linjenummeret.
-1. **QTY** -feltet er nå tilgjengelig. Angi *1* , og bekreft antallet.
+1. I **LINENUM**-feltet angir du *1* og bekrefter linjenummeret.
+1. **QTY**-feltet er nå tilgjengelig. Angi *1*, og bekreft antallet.
 
-    Siden **Kvalitetskontroll** vises. For dette mottaket vil pallen bli avvist for kvalitet, og den vil plasseres i *QMS* -kvalitetslokasjonen.
+    Siden **Kvalitetskontroll** vises. For dette mottaket vil pallen bli avvist for kvalitet, og den vil plasseres i *QMS*-kvalitetslokasjonen.
 
-1. Velg menyknappen ( **≡** ) øverst på siden, og velg deretter **Avvis** på menyen.
-1. På **Oppgave** -siden som vises, angir du **QMS** som *Plassering* -lokasjon å sende pallen til for videre inspeksjon.
+1. Velg menyknappen (**≡**) øverst på siden, og velg deretter **Avvis** på menyen.
+1. På **Oppgave**-siden som vises, angir du **QMS** som *Plassering*-lokasjon å sende pallen til for videre inspeksjon.
 
     Siden **Kvalitet i kvalitetskontroll: Plasser** som vises, viser detaljer om plasseringsarbeidet:
 
@@ -359,7 +359,7 @@ For dette scenariet vil pall 2 bli avvist.
 
 1. Bekreft plasseringsarbeidet.
 
-    På **Oppgave** -siden for bestillingslinjemottak vises meldingen "Arbeid fullført". **LINENUM** -feltet er tilgjengelig, slik at du kan begynne å motta den neste pallen.
+    På **Oppgave**-siden for bestillingslinjemottak vises meldingen "Arbeid fullført". **LINENUM**-feltet er tilgjengelig, slik at du kan begynne å motta den neste pallen.
 
 Du har nå fullført kvalitetskontrollen og opprettet en kvalitetsordre for den avviste pallen. Hvis du vil vise ordren som ble opprettet, går du til **Lagerstyring \> Periodiske oppgaver \> Kvalitetsstyring \> Kvalitetsordrer**.
 
@@ -371,8 +371,8 @@ Hvis du vil ha mer informasjon om kvalitetsbehandling, kan du se [Oversikt over 
 
 For dette scenariet vil pall 3 bli godtatt.
 
-1. I **LINENUM** -feltet angir du *1* og bekrefter linjenummeret.
-1. **QTY** -feltet er nå tilgjengelig. Angi *1* , og bekreft antallet.
+1. I **LINENUM**-feltet angir du *1* og bekrefter linjenummeret.
+1. **QTY**-feltet er nå tilgjengelig. Angi *1*, og bekreft antallet.
 
     Siden **Kvalitetskontroll** vises. For dette mottaket vil pallen bli godtatt for kvalitet, og den vil plasseres i en samlet plasseringslokasjon.
 
@@ -392,8 +392,8 @@ For dette scenariet vil pall 3 bli godtatt.
 
 1. Bekreft plasseringsarbeidet.
 
-    På **Oppgave** -siden for bestillingslinjemottak vises meldingen "Arbeid fullført". **LINENUM** -feltet er tilgjengelig, slik at du kan begynne å motta den neste pallen.
+    På **Oppgave**-siden for bestillingslinjemottak vises meldingen "Arbeid fullført". **LINENUM**-feltet er tilgjengelig, slik at du kan begynne å motta den neste pallen.
 
-1. Velg menyknappen ( **≡** ) øverst på siden, og velg deretter **Avbryt** for å gå tilbake til menyen.
+1. Velg menyknappen (**≡**) øverst på siden, og velg deretter **Avbryt** for å gå tilbake til menyen.
 
 Du kan nå lukke mobilappen.

@@ -19,11 +19,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 5f7d4a99166af112abe26220a700fcf4be79223b
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3981696"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4434239"
 ---
 # <a name="order-entry-deadlines"></a>Ordrefrister
 
@@ -35,16 +35,16 @@ I mange firmaer blir bare salgsordrer som mottas før et bestemt tidspunkt på d
 
 Tidsfrister for ordreregistrering brukes som inndata for ordrebekreftelsen. De gjør det derfor enklere for deg å administrere kundenes forventninger om levering. Kunder kan for eksempel se at hvis de plasserer en ordre hos deg før et bestemt tidspunkt, vil du sørge for å sende varene på samme dag. Hvis de går glipp av denne tidsfristen, kan de forvente levering bare på neste arbeidsdag. Du kan angi tidsfrister for ordreregistrering basert på lageret muligheter og leveringsadresse transportør tidsplaner.  
 
-Du angir tidsfrister for ordrer for alle dagene i uken på **Ordrefrister** -siden. Hvis ordrer mottas etter angitt tidspunkt, behandles de som om de ble mottatt neste arbeidsdag. Som standard er disse tidspunktene satt til 23.59, det vil si ett minutt før midnatt på slutten av den aktuelle dagen. Du kan endre standardtidspunktene slik at de sammenfaller med tidsfristene for levering og mottak.  
+Du angir tidsfrister for ordrer for alle dagene i uken på **Ordrefrister**-siden. Hvis ordrer mottas etter angitt tidspunkt, behandles de som om de ble mottatt neste arbeidsdag. Som standard er disse tidspunktene satt til 23.59, det vil si ett minutt før midnatt på slutten av den aktuelle dagen. Du kan endre standardtidspunktene slik at de sammenfaller med tidsfristene for levering og mottak.  
 
-Du kan definere tidsfrister for ordreregistrering for en bestemt gruppe kunder. Du ønsker kanskje at en bestemt gruppe kunder skal ha tidsfrister for ordreregistrering som er senere enn for andre kunder. I dette tilfellet må du først angi grupper for tidsfrister for ordreregistrering på siden **Ordrefristgrupper** . Deretter tilordner du gruppene til kunder på **Kunder** -siden.  
+Du kan definere tidsfrister for ordreregistrering for en bestemt gruppe kunder. Du ønsker kanskje at en bestemt gruppe kunder skal ha tidsfrister for ordreregistrering som er senere enn for andre kunder. I dette tilfellet må du først angi grupper for tidsfrister for ordreregistrering på siden **Ordrefristgrupper**. Deretter tilordner du gruppene til kunder på **Kunder**-siden.  
 
-Hvis firmaet består av flere områder, kan du definere tidsfrister for ordre for hvert område. Hvis områdene ligger i ulike tidssoner, er tidsfrister for ordreregistrering definert i hvert områdets tidssone. Når du imidlertid arbeider med salgsordrer og salgstilbud, blir tidsfristen for ordre konvertert til din tidssone på siden **Tilgjengelige leverings- og mottaksdatoer** .  
+Hvis firmaet består av flere områder, kan du definere tidsfrister for ordre for hvert område. Hvis områdene ligger i ulike tidssoner, er tidsfrister for ordreregistrering definert i hvert områdets tidssone. Når du imidlertid arbeider med salgsordrer og salgstilbud, blir tidsfristen for ordre konvertert til din tidssone på siden **Tilgjengelige leverings- og mottaksdatoer**.  
 
 På siden **Aktiver ordrefristkombinasjoner** definerer du kombinasjoner av områder og ordrefristgrupper som er tillatt.
 
 ## <a name="example-order-entry-deadline"></a>Eksempel: Tidsfrist for ordre
-Tidsfrister for ordreregistrering på tirsdager er satt til 16.00. På en bestemt tirsdag klokken 17:00 prøver du å angi gjeldende dato som forsendelsesdatoen. (Vær oppmerksom på at det er ingen leveringstiden i dette eksemplet.) Hvis det er merket av for **Leveringsdatokontroll** , vises en advarsel som sier at datoen ikke er gyldig. Denne advarselen vises på siden **Tilgjengelige leverings- og mottaksdatoer** , der du deretter kan velge alternative datoer.
+Tidsfrister for ordreregistrering på tirsdager er satt til 16.00. På en bestemt tirsdag klokken 17:00 prøver du å angi gjeldende dato som forsendelsesdatoen. (Vær oppmerksom på at det er ingen leveringstiden i dette eksemplet.) Hvis det er merket av for **Leveringsdatokontroll**, vises en advarsel som sier at datoen ikke er gyldig. Denne advarselen vises på siden **Tilgjengelige leverings- og mottaksdatoer**, der du deretter kan velge alternative datoer.
 
 ## <a name="example-different-order-entry-deadlines-per-site"></a>Eksempel: Ulike tidsfrister for ordre per område
 Firmaet består av to områder. Områdene finnes i ulike tidssoner, som vist i følgende tabell.

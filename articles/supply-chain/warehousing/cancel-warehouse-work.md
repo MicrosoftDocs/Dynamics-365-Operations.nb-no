@@ -17,11 +17,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2019-10-1
 ms.dyn365.ops.version: 10.0.5
 ms.openlocfilehash: daa8f0d19de75e6c126fe7a5fe312bca24c89bdc
-ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: nb-NO
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4016247"
+ms.locfileid: "4434770"
 ---
 # <a name="cancel-warehouse-work-for-exception-handling"></a>Avbryte lagerarbeid for unntaksbehandling
 
@@ -35,12 +35,12 @@ Du kan få tilgang til Avbryt arbeid-funksjonen ved å gå til **Lagerstyring** 
 
 Under lagerplukkinger, kan en arbeider støte på situasjoner der de har registrert antall som plukket fra en lagringslokasjon til brukerlokasjonen, men de kan ikke registrere plasseringsoperasjonen. Inkonsekvente lagerdata er ofte, men ikke alltid, årsaken til at arbeidet er blokkert.
 
-I motsetning til den vanlige Avbryt-funksjonaliteten som du får tilgang til ved å bruke **Avbryt** -knappen i arbeidshodet, krever ikke funksjonen Avbryt arbeid at den siste fullførte arbeidslinjen er en arbeidslinje av typen **Plasser**. Med andre ord, for å avbryte Avbryt arbeid-funksjonen, kan annulleringslogikken kjøres selv om vareantallet på en arbeidslinje er på en brukerlokasjon.
+I motsetning til den vanlige Avbryt-funksjonaliteten som du får tilgang til ved å bruke **Avbryt**-knappen i arbeidshodet, krever ikke funksjonen Avbryt arbeid at den siste fullførte arbeidslinjen er en arbeidslinje av typen **Plasser**. Med andre ord, for å avbryte Avbryt arbeid-funksjonen, kan annulleringslogikken kjøres selv om vareantallet på en arbeidslinje er på en brukerlokasjon.
 
 > [!NOTE]
 > For arbeid som må avbrytes av hensyn til driften, må lagerbrukere fortsette å bruke den vanlige Avbryt-funksjonaliteten på arbeidssiden.
 
-Bare arbeid av typen **Salg** , **Utstedelse for overføring** , **Råvareplukking** eller **Etterfylling** kan annulleres ved hjelp av funksjonen Avbryt arbeid. Annulleringslogikk vil ikke kjøres for plukkarbeid av fryste råvarer eller arbeid som kan avbrytes ved å bruke den vanlige Avbryt-funksjonaliteten (se den foregående merknaden).
+Bare arbeid av typen **Salg**, **Utstedelse for overføring**, **Råvareplukking** eller **Etterfylling** kan annulleres ved hjelp av funksjonen Avbryt arbeid. Annulleringslogikk vil ikke kjøres for plukkarbeid av fryste råvarer eller arbeid som kan avbrytes ved å bruke den vanlige Avbryt-funksjonaliteten (se den foregående merknaden).
 
 Hvis du vil oppheve blokkeringen av arbeidet, avbryter systemet alle gjenværende arbeidslinjer og reparerer lagerdataene som er knyttet til arbeids-IDen som brukeren har angitt. Eventuelle vanlige lagerhåndteringsoperasjoner som involverer det berørte vareantallet, kan deretter fortsette.
 

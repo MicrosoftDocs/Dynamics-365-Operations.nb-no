@@ -20,11 +20,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 2e845b05d77701191a267de45354c3da25bd7699
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3979508"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4434454"
 ---
 # <a name="bom-designer-functionality"></a>Funksjonalitet for stykklisteutforming
 
@@ -32,11 +32,11 @@ ms.locfileid: "3979508"
 
 Dette emnet beskriver hvordan du kan bruke siden Stykklisteutforming til å utforme og arbeide med trestrukturer for stykklister. Du kan klikke Konfigurer for å velge ulike konfigurasjoner og angi hvilken informasjon som skal vises på linjene i treet.
 
-Når du åpner siden **Stykklisteutforming** fra siden **Frigitte produkter** , viser den hierarkiet for stykklistene som er aktive og godkjente for den valgte varen, standard bestillingsområde for varen og den faktiske datoen.  
+Når du åpner siden **Stykklisteutforming** fra siden **Frigitte produkter**, viser den hierarkiet for stykklistene som er aktive og godkjente for den valgte varen, standard bestillingsområde for varen og den faktiske datoen.  
 
-Klikk **Filter** for å endre det første utvalget i visningen. Ved å angi visningsprinsippet **Valgte/aktive eller Valgte** , kan du velge enkelte versjoner av stykklisten eller ruten som skal brukes i visningen. Du kan velge ikke-godkjente og ikke-aktive stykklisteversjoner som skal vises eller vedlikeholdes i stykklisteutforming.  
+Klikk **Filter** for å endre det første utvalget i visningen. Ved å angi visningsprinsippet **Valgte/aktive eller Valgte**, kan du velge enkelte versjoner av stykklisten eller ruten som skal brukes i visningen. Du kan velge ikke-godkjente og ikke-aktive stykklisteversjoner som skal vises eller vedlikeholdes i stykklisteutforming.  
 
-**Obs!**  Hvis du åpne stykklisteutformingen fra listesiden **Stykklister** , viser ikke ruteinformasjon. Valg av en stykkliste- eller ruteversjon er en egenskap for stykkliste- og ruteversjonen, og gjelder for alle forekomster av stykklisteutformingen.  
+**Obs!**  Hvis du åpne stykklisteutformingen fra listesiden **Stykklister**, viser ikke ruteinformasjon. Valg av en stykkliste- eller ruteversjon er en egenskap for stykkliste- og ruteversjonen, og gjelder for alle forekomster av stykklisteutformingen.  
 
 Avsnittene nedenfor beskriver hvilke funksjoner som er tilgjengelige i de forskjellige kategorier i stykklisteutformingen.
 
@@ -49,10 +49,10 @@ Stykklisteutforming har to deler:
     -   **Varedata** – Viser informasjon om hovedvaren eller varen som brukes i den valgte noden. Du kan klikke **Rediger frigitt produkt** for å vedlikeholde den valgte varen.
     -   **Stykkliste** – Viser overskriften for stykklisten som er knyttet til den valgte noden.
     -   **Rute** – Viser overskriften for ruten som er knyttet til den valgte noden.
-    -   **Ruteoperasjoner** – Viser en forhåndsvisning av operasjonene for ruten. Når det velges en stykklistelinje som er tilordnet en bestemt operasjon, merkes operasjonen som **Komponent kreves ved operasjoner** .
+    -   **Ruteoperasjoner** – Viser en forhåndsvisning av operasjonene for ruten. Når det velges en stykklistelinje som er tilordnet en bestemt operasjon, merkes operasjonen som **Komponent kreves ved operasjoner**.
 
 ## <a name="selecting-a-bom-and-route"></a>Velge en stykkliste og rute
-Filteret som brukes for stykklisten og ruten, vises i overskriften for stykklisteutforming. Du kan endre filteret ved hjelp av dialogboksen **Filter** . Tabellen nedenfor beskriver feltene i denne dialogboksen.
+Filteret som brukes for stykklisten og ruten, vises i overskriften for stykklisteutforming. Du kan endre filteret ved hjelp av dialogboksen **Filter**. Tabellen nedenfor beskriver feltene i denne dialogboksen.
 
 <table>
 <thead>
@@ -93,7 +93,7 @@ Filteret som brukes for stykklisten og ruten, vises i overskriften for stykklist
 </tbody>
 </table>
 
-Når du bruker stykklisteutformingen for å se gjennom eller redigere stykklister som består av én eller flere nivåer av fantomer, vil ruten som er knyttet til den øverste varen vanligvis strekke seg over hele stykklistehierarkiet. Hvis du vil forenkle oversikten, kan du låse ruten på øverste nivå i visningen ved å klikke **Vis** &gt; **Lås rute** . Hvis du vil låse opp ruten, klikker du **Vis** &gt; **Lås opp rute** .
+Når du bruker stykklisteutformingen for å se gjennom eller redigere stykklister som består av én eller flere nivåer av fantomer, vil ruten som er knyttet til den øverste varen vanligvis strekke seg over hele stykklistehierarkiet. Hvis du vil forenkle oversikten, kan du låse ruten på øverste nivå i visningen ved å klikke **Vis** &gt; **Lås rute**. Hvis du vil låse opp ruten, klikker du **Vis** &gt; **Lås opp rute**.
 
 ## <a name="adding-and-editing-boms-and-bom-lines"></a>Legge til og redigere stykklister og stykklistelinjer
 Bruk funksjonene **Stykklistelinjer** eller **Stykkliste** til å endre stykklistelinjene eller stykklisten. Når du velger en node i treet, bestemmer nodetypen funksjonene som er tilgjengelige.
@@ -105,7 +105,7 @@ Bruk funksjonene **Stykklistelinjer** eller **Stykkliste** til å endre stykklis
 | Stykklistelinjer &gt; Legg til før linje      | Åpne en dialogboks der du kan velge en produktvariant ha før den valgte stykklistelinjen.         | Denne funksjonen er tilgjengelig når det velges en node for stykklistelinjen.                                                                                                                                                                                                                                   |
 | Stykklistelinjer &gt; Legg til i komponentstykkliste | Åpne en dialogboks der du kan velge en produktvariant ha på slutten av den valgte stykklisten.       | Denne funksjonen er tilgjengelig når noden som er valgt, har en valgt stykkliste. Hvis denne funksjonen ikke er tilgjengelig, kan det hende en stykklisteversjon mangler for den valgte varevarianten. I så fall kan du klikke **Stykkliste** &gt; **Opprett versjon** for å opprette den manglende versjonen for den valgte noden. |
 | Stykklistelinjer &gt; Legg til etter linje       | Åpne en dialogboks der du kan velge en produktvariant ha etter den valgte stykklistelinjen.          | Denne funksjonen er tilgjengelig når det velges en node for stykklistelinjen.                                                                                                                                                                                                                                   |
-| Stykkliste &gt; Opprett versjon             | Opprett en ny stykklisteversjon eller stykkliste for produktvarianten for den valgte noden.                             | Denne funksjonen er tilgjengelig når den valgte noden for stykklistelinjen er koblet til en vare som har produksjonstypen **Stykkliste** eller **Formel** .                                                                                                                                                  |
+| Stykkliste &gt; Opprett versjon             | Opprett en ny stykklisteversjon eller stykkliste for produktvarianten for den valgte noden.                             | Denne funksjonen er tilgjengelig når den valgte noden for stykklistelinjen er koblet til en vare som har produksjonstypen **Stykkliste** eller **Formel**.                                                                                                                                                  |
 | Stykkliste&gt;beregning                | Åpne en dialogboks der du kan kjøre kost- eller salgsprisberegning for den valgte produktvarianten. | Denne funksjonen er tilgjengelig når noden som er valgt, er knyttet til en stykklisteversjon.                                                                                                                                                                                                         |
 | Stykkliste &gt; Kontroller                      | Valider og kontroller den valgte stykklisten.                                                                      | Denne funksjonen er tilgjengelig når noden som er valgt, er knyttet til en stykklisteversjon.                                                                                                                                                                                                         |
 

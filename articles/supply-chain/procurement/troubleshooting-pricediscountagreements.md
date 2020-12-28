@@ -20,11 +20,11 @@ ms.author: smnatara
 ms.search.validFrom: 2020-9-16
 ms.dyn365.ops.version: Release 10.0.14
 ms.openlocfilehash: b4349eeba285492202b5df8481b277a06708a4c8
-ms.sourcegitcommit: e3f4dd2257a3255c2982f4fc7b72a1121275b88a
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: nb-NO
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4018219"
+ms.locfileid: "4434832"
 ---
 # <a name="troubleshoot-prices-discounts-agreements-and-rebates"></a>Feilsøking i forbindelse med priser, rabatter og avtaler
 
@@ -48,7 +48,7 @@ Meldingen er anmodningen om evaluering av forretningsavtale (TAE). Hvis du vil h
 
 Følgende prosedyre viser én måte å reprodusere problemet på.
 
-1. På siden for **Parametere for innkjøp og leverandører** , i kategorien **Levering** , må du kontrollere at alternativet for **Generer tillegg på produktkvittering** er satt til *Ja*.
+1. På siden for **Parametere for innkjøp og leverandører**, i kategorien **Levering**, må du kontrollere at alternativet for **Generer tillegg på produktkvittering** er satt til *Ja*.
 1. Opprette en bestilling som inkluderer tillegg.
 1. Bekreft bestillingen.
 1. Motta bestillingen.
@@ -109,7 +109,7 @@ Med funksjonen *Generisk valuta* kan du definere priser og rabatter i bare én v
 
 ## <a name="when-i-open-the-purchase-agreement-page-in-a-line-view-mode-i-cant-personalize-the-page-by-adding-the-price-unit-field-in-the-overview-of-the-line"></a>Når jeg åpner kjøpsavtalesiden i en linjevisningsmodus, kan jeg ikke tilpasse siden ved å legge til Prisenhet-feltet i oversikten over linjen.
 
-Enkelte delte felt i avtalerammeverket kan ikke inkluderes i personlige tilpasninger. Denne begrensningen oppstår på grunn av datamodellen som er implementert. Derfor kan du ikke tilpasse **Prisenhet** -feltet.
+Enkelte delte felt i avtalerammeverket kan ikke inkluderes i personlige tilpasninger. Denne begrensningen oppstår på grunn av datamodellen som er implementert. Derfor kan du ikke tilpasse **Prisenhet**-feltet.
 
 ## <a name="the-maximum-limit-from-a-purchase-agreement-isnt-effective-on-a-purchase-requisition"></a>Maksimumsgrensen fra en kjøpsavtale er ikke gyldig på en innkjøpsrekvisisjon.
 

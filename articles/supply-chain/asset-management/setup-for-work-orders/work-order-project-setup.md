@@ -19,11 +19,11 @@ ms.author: mkirknel
 ms.search.validFrom: 2019-08-30
 ms.dyn365.ops.version: 10.0.5
 ms.openlocfilehash: a51837275203dc2d4f31dc4dec9bf970a7ebeba7
-ms.sourcegitcommit: c986d5234b81d31cc6d054298be6f6ec92c1754c
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "3889320"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4434233"
 ---
 # <a name="work-order-project-setup"></a>Prosjektoppsett for arbeidsordre
 
@@ -41,7 +41,7 @@ Når du oppretter en arbeidsordrejobb i en arbeidsordre, bestemmer prosjektoppse
 
     - Du finner hovedprosjektet (prosjekt-ID) for en arbeidsordrejobb i det overordnede prosjektoppsettet. (Hvis du vil ha mer informasjon om hovedprosjektoppsettet, kan du se neste del.) Hvis du for eksempel knytter en kunde eller et arbeidssted til et bestemt overordnet prosjekt, brukes det overordnede prosjektet hver gang du oppretter arbeidsordrer for denne kunden eller dette arbeidsstedet. Hvis du ikke knytter en bestemt prosjekt-ID til for eksempel et arbeidssted, brukes det neste relevante overordnede prosjektet i prosjektoppsettet for arbeidsordren.
     - En prosjekttype kreves for hver prosjekt-ID. Prosjekttypen finnes i oppsettet av prosjektgruppeoppsettet. (Hvis du vil ha mer informasjon om prosjektgruppeoppsettet, kan du se neste del.) Hvis det ikke blir funnet noen treff for prosjektgruppeoppsettet, brukes prosjektgruppeoppsettet for det overordnede prosjektet.
-    - Oppsettet for å kreve prosjektaktiviteter i prognoser og journaler kopieres fra hovedprosjektet til arbeidsordreprosjektet. Hvis alternativene **Time**, **Utgift**og **Vare** er satt til **Ja** for prosjektet som brukes som et hovedprosjekt, er en prosjektaktivitet obligatorisk på prognoser og journaler. (Hvis du vil ha tilgang til disse alternativene, velger du **Prosjektstyring og regnskap** \> **Prosjekter** \> **Alle prosjekter**, og deretter velger du prosjektet som brukes som et overordnet prosjekt. Alternativene er i delen **Krev aktivitet i journaler** i hurtigfanen **Oppsett**.)
+    - Oppsettet for å kreve prosjektaktiviteter i prognoser og journaler kopieres fra hovedprosjektet til arbeidsordreprosjektet. Hvis alternativene **Time**, **Utgift** og **Vare** er satt til **Ja** for prosjektet som brukes som et hovedprosjekt, er en prosjektaktivitet obligatorisk på prognoser og journaler. (Hvis du vil ha tilgang til disse alternativene, velger du **Prosjektstyring og regnskap** \> **Prosjekter** \> **Alle prosjekter**, og deretter velger du prosjektet som brukes som et overordnet prosjekt. Alternativene er i delen **Krev aktivitet i journaler** i hurtigfanen **Oppsett**.)
 
 - Finansdimensjoner kopieres fra aktivaet og slås sammen med det overordnede prosjektet.
 

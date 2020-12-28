@@ -17,11 +17,11 @@ ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: Release 10.0.8
 ms.openlocfilehash: 6104e457a62f340951c187d0f2dbe48b0dffdf7f
-ms.sourcegitcommit: d25d0feb3f8a5a760eba50ba5f46e1db02737d25
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/10/2020
-ms.locfileid: "3677416"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4434175"
 ---
 # <a name="confirm-and-transfer"></a>Bekreft og overfør
 
@@ -228,5 +228,5 @@ Du kan også bekrefte at transaksjonsrelasjoner er oppdatert på følgende måte
 
 - Du kan også aktivere **Tillat lastdeling under forsendelsesbekreftelse**-parameteren etter at lasten er opprettet med **Lastmal**-parameteren deaktiver, men før lastprosessen har startet. Gå til ønsket last, og aktiver deretter parameteren i hodevisningen.
 - **Del antall til ny last**-alternativet fungerer også når noen av de gjenværende arbeidshodene har statusen *Pågår*. Derfor kan du fremdeles bruke funksjonaliteten selv om arbeiderne allerede kjører plukkordrene.
-- Hvis du velger **Avbryt ikke-fullført antall**mens det er gjenstående arbeid som har statusen *Åpen* eller *Pågår*, får du følgende feilmelding: Kan ikke avbryte gjenstående antall for last. Arbeid finnes for lasten.
+- Hvis du velger **Avbryt ikke-fullført antall** mens det er gjenstående arbeid som har statusen *Åpen* eller *Pågår*, får du følgende feilmelding: Kan ikke avbryte gjenstående antall for last. Arbeid finnes for lasten.
 - Hvis du velger **Avbryt ikke-fullført antall** når det ikke er noe gjenstående arbeid, men det finnes frigitte lastlinjer, får du følgende feilmelding: Kan ikke bekrefte leveringen for lasten fordi antallet for varer overskrider prosenten som er definert for underlevering. For å unngå feilen kan du angi **Underlevering**-prosent på den ikke-frigitte lastlinjen til 100 prosent. Ikke-frigitte linjer vil ikke bli flyttet til en ny last, men gjeldende last vil bli bekreftet med underlevering. I dette tilfellet kan du ikke frigi den opprinnelige ordren på nytt. Derfor må du også håndtere den på en annen måte.

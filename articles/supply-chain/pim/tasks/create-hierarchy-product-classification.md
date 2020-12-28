@@ -17,11 +17,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.openlocfilehash: 439df63a4f8f0cc1c030554d18f80e9934c88b00
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3986197"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4434410"
 ---
 # <a name="create-a-hierarchy-of-product-classification"></a>Opprette et hierarki for produktklassifisering
 
@@ -31,37 +31,37 @@ Denne fremgangsmåten viser hvordan du oppretter et nytt kategorihierarki og til
 
 
 ## <a name="create-the-new-category-hierarchy"></a>Opprette det nye kategorihierarkiet
-1. Gå til **Navigasjonsrute > Moduler > Gå til Behandling av produktinformasjon > Oppsett > Kategorier og attributter > Kategorihierarkier** .
-2. Klikk på **Ny** .
-3. Skriv inn en verdi i **Navn** -feltet.
-4. Skriv inn en verdi i **Beskrivelse** -feltet.
-5. Klikk **Opprett** .
+1. Gå til **Navigasjonsrute > Moduler > Gå til Behandling av produktinformasjon > Oppsett > Kategorier og attributter > Kategorihierarkier**.
+2. Klikk på **Ny**.
+3. Skriv inn en verdi i **Navn**-feltet.
+4. Skriv inn en verdi i **Beskrivelse**-feltet.
+5. Klikk **Opprett**.
 
 ## <a name="build-the-hierarchy"></a>Bygge hierarkiet
 1. Klikk på **Ny** kategorinode.
-2. Skriv inn en verdi i **Navn** -feltet.
-3. Skriv inn en verdi i feltet **Kode** .
-4. Skriv inn en verdi i feltet **Egendefinert navn** .
+2. Skriv inn en verdi i **Navn**-feltet.
+3. Skriv inn en verdi i feltet **Kode**.
+4. Skriv inn en verdi i feltet **Egendefinert navn**.
 5. Klikk på **Ny** kategorinode.
-6. Skriv inn en verdi i **Navn** -feltet.
-7. Skriv inn en verdi i feltet **Kode** .
-8. Skriv inn en verdi i feltet **Egendefinert navn** .
+6. Skriv inn en verdi i **Navn**-feltet.
+7. Skriv inn en verdi i feltet **Kode**.
+8. Skriv inn en verdi i feltet **Egendefinert navn**.
 9. Klikk på **Ny** kategorinode.
-10. Skriv inn en verdi i **Navn** -feltet.
-11. Skriv inn en verdi i feltet **Kode** .
-12. Skriv inn en verdi i feltet **Egendefinert navn** .
+10. Skriv inn en verdi i **Navn**-feltet.
+11. Skriv inn en verdi i feltet **Kode**.
+12. Skriv inn en verdi i feltet **Egendefinert navn**.
 13. Klikk på **Ny** kategorinode.
-14. Skriv inn en verdi i **Navn** -feltet.
-15. Skriv inn en verdi i feltet **Kode** .
-16. Skriv inn en verdi i feltet **Egendefinert navn** .
+14. Skriv inn en verdi i **Navn**-feltet.
+15. Skriv inn en verdi i feltet **Kode**.
+16. Skriv inn en verdi i feltet **Egendefinert navn**.
 17. Lukk siden.
 
 ## <a name="classify-the-hierarchy"></a>Klassifisere hierarkiet
 1. Finn og velg ønsket post i listen.
-2. I **handlingsruten** klikker du **Kategorihierarki** .
-3. Klikk på **Tilknytt hierarkitype** .
-4. Klikk på **Ny** .
-5. Velg et alternativ i feltet **Kategorihierarkitype** . Velg **kategorihierarkitype for artikkelkode for produktklassifisering** .  
+2. I **handlingsruten** klikker du **Kategorihierarki**.
+3. Klikk på **Tilknytt hierarkitype**.
+4. Klikk på **Ny**.
+5. Velg et alternativ i feltet **Kategorihierarkitype**. Velg **kategorihierarkitype for artikkelkode for produktklassifisering**.  
 6. Klikk rullegardinknappen i feltet **Kategorihierarki** for å åpne oppslaget.
 7. Finn og velg ønsket post i listen.
 8. Klikk koblingen i den valgte raden i listen.

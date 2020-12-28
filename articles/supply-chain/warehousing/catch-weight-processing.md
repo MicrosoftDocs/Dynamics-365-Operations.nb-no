@@ -17,11 +17,11 @@ ms.author: perlynne
 ms.search.validFrom: 2019-1-31
 ms.dyn365.ops.version: 8.1.3
 ms.openlocfilehash: 710446db7746ed3cd3fb9754caeaa15fd2f76641
-ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: nb-NO
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4016268"
+ms.locfileid: "4434769"
 ---
 # <a name="catch-weight-product-processing-with-warehouse-management"></a>Behandling av Faktisk vekt-produkt med lagerstyring
 
@@ -30,7 +30,7 @@ ms.locfileid: "4016268"
 
 ## <a name="feature-exposure"></a>Funksjonseksponering
 
-Hvis du vil bruke lagerstyring til å behandle faktisk vekt-produkter, må du bruke en lisenskonfigurasjonsnøkkel for å aktivere funksjonen. Gå til **Systemadministrasjon \> Oppsett \> Lisenskonfigurasjon**. I **Konfigurasjonsnøkler** -kategorien viser du deretter **Handel \> Lager- og transportstyring** og merker av for **Faktisk vekt for lager**.
+Hvis du vil bruke lagerstyring til å behandle faktisk vekt-produkter, må du bruke en lisenskonfigurasjonsnøkkel for å aktivere funksjonen. Gå til **Systemadministrasjon \> Oppsett \> Lisenskonfigurasjon**. I **Konfigurasjonsnøkler**-kategorien viser du deretter **Handel \> Lager- og transportstyring** og merker av for **Faktisk vekt for lager**.
 
 > [!NOTE]
 > Både lisenskonfigurasjonsnøkkelen for **Lager- og transportstyring** og lisenskonfigurasjonsnøklene for **Behandle distribusjon \> Faktisk vekt** må være aktivert i tillegg. Hvis du vil angi konfigurasjonsnøklene for faktisk vekt, må du også aktivere funksjonen ved hjelp av arbeidsområdet **Funksjonsbehandling**. Hovedfunksjonen som må aktiveres, er **Behandling av Faktisk vekt-produkt med lagerstyring**. To relaterte, men valgfrie funksjoner som du kanskje vil aktivere, er **Lagerstatusendringer for faktisk vekt-produkter** og **Bruk eksisterende variabel vekt-koder ved rapportering av produksjonsordrer som ferdigstilte**.
@@ -67,7 +67,7 @@ I definisjonen er et produkt konfigurert til å godta en minimumsvekt på 8 kg o
 
 Du har to bokser med produktet, og de har en registrert vekt på 16 kg. Hvis en lagermedarbeider plukker og veier én av boksene, og vekten blir registrert til 9 kg, vil den gjenværende boksen veie 7 kg. Fordi 7 kg er under minimumsvekten, foretar systemet en automatisk justering for å øke vekten på lagerbeholdningen med 1 kg.
 
-Hvis du vil definere kontoene som disse justeringene posteres til, kan du gå til **Kostnadsstyring \> Oppsett for policyer for finansintegrering \> Postering**. I **Lager** -kategorien kan du så definere følgende kontoer:
+Hvis du vil definere kontoene som disse justeringene posteres til, kan du gå til **Kostnadsstyring \> Oppsett for policyer for finansintegrering \> Postering**. I **Lager**-kategorien kan du så definere følgende kontoer:
 
 - Tapskonto for faktisk vekt
 - Overskuddskonto for faktisk vekt
@@ -84,7 +84,7 @@ Du kan definere når vekten blir registrert for salgs- og overføringsordrebehan
 Hvis den faktiske vekten blir registrert på pakkestasjonen under containerpakkeprosessene, blir ikke lagermedarbeidere bedt om å registrere vekten under plukkearbeidet. I stedet brukes gjennomsnittlig vekt på det fysiske lageret som vekt for den plukkede beholdningen som går til pakkeområdet. Dette konseptet gjelder også for faktisk vekt-varer som spores av koder. For varer som spores av koder, bestemmer disse parameterne når koden registreres. Koden kan registreres ved plukking ved hjelp av mobilenheten eller under manuell pakking.
 
 > [!NOTE]
-> Ettersom **Emballasje** -alternativet fører til at beholdningen oppdateres med gjennomsnittlig plukket vekt, kan dette utløse et avvik som kan føre til en justering av fortjeneste/tap for faktisk vekt og/eller et avvik mellom lagerbeholdningsvekten og faktisk vekt-kode-vekten.
+> Ettersom **Emballasje**-alternativet fører til at beholdningen oppdateres med gjennomsnittlig plukket vekt, kan dette utløse et avvik som kan føre til en justering av fortjeneste/tap for faktisk vekt og/eller et avvik mellom lagerbeholdningsvekten og faktisk vekt-kode-vekten.
 
 For interne lagerstyringsprosesser som telling og justering, kan du definere om vekten skal registreres. Hvis den ikke registreres, brukes pålydende vekt. Andre alternativer lar deg registrere vekt per faktisk vekt-enhet og per opptellingsantall.
 
@@ -97,19 +97,19 @@ Prosessen med å spore faktisk vekt-koder kan brukes for varer som ikke endrer v
 
 En annen viktig parameter som er relatert til behandlingen av faktisk vekt-koder, er **Sporingsmetode for faktisk vekt-kodedimensjon**. Koder kan enten spores delvis eller fullstendig. Hvis en kode spores delvis, spores produktdimensjoner, sporingsdimensjoner og lagerstatus. Hvis en kode spores fullstendig, spores produktdimensjoner, sporingsdimensjoner og **alle** lagringsdimensjoner.
 
-Når en vare spores av kode, finnes parameteren **Registreringsmetode for utgående kode**. Du kan angi denne parameteren slik at du alltid blir bedt om koden på utgående transaksjoner fra mobilenheten. Du kan også angi parameteren slik at du bare blir spurt om koder når de er nødvendige. Det er for eksempel fem faktisk vekt-koder på lager på et gitt nummerskilt, og du har angitt at du vil plukke alle fem kodene fra nummerskiltet. I dette tilfellet, hvis **Registreringsmetode for utgående kode** -parameteren settes til **Bare be om kode ved behov** , plukkes de fem kodene automatisk. Du trenger ikke skanne hver kode. Hvis parameteren settes til **Alltid be om kode** , må du skanne hver kode, selv om alle fem kodene blir plukket.
+Når en vare spores av kode, finnes parameteren **Registreringsmetode for utgående kode**. Du kan angi denne parameteren slik at du alltid blir bedt om koden på utgående transaksjoner fra mobilenheten. Du kan også angi parameteren slik at du bare blir spurt om koder når de er nødvendige. Det er for eksempel fem faktisk vekt-koder på lager på et gitt nummerskilt, og du har angitt at du vil plukke alle fem kodene fra nummerskiltet. I dette tilfellet, hvis **Registreringsmetode for utgående kode**-parameteren settes til **Bare be om kode ved behov**, plukkes de fem kodene automatisk. Du trenger ikke skanne hver kode. Hvis parameteren settes til **Alltid be om kode**, må du skanne hver kode, selv om alle fem kodene blir plukket.
 
 > [!NOTE]
 > Som regel registreres koder og oppdateres bare fra menyelementene for mobilenhet. Men det finnes noen få scenarier der koder registreres et annet sted (for eksempel fra den manuelle pakkestasjonen). Generelt bør menyelementene for mobilenheter brukes for all lageraktivitet hvis det brukes koder.
 
 ### <a name="how-to-capture-catch-weight"></a>Registrere faktisk vekt
 
-**Når sporing av faktisk vekt-koder brukes** , må en kode alltid opprettes for hver faktisk vekt-enhet som mottas, og hver kode må alltid være knyttet til en vekt.
+**Når sporing av faktisk vekt-koder brukes**, må en kode alltid opprettes for hver faktisk vekt-enhet som mottas, og hver kode må alltid være knyttet til en vekt.
 
 For eksempel **Boks** er faktisk vekt-enheten, og du får én pall med åtte bokser. I dette tilfellet må det opprettes åtte unike faktisk vekt-koder, og en vekt må knyttes til hver kode. Avhengig av den innkommende faktisk vekt-koden, kan enten vekten på alle åtte boksene registreres og gjennomsnittlig vekt kan deretter distribueres til hver boks, eller en unik vekt kan registreres for hver boks.
 Når du bruker funksjonen **Bruk eksisterende variabel vekt-koder ved rapportering av produksjonsordrer som ferdigstilte** med prosessen aktivert via et menyelement for mobilenhet, blir lageret oppdatert basert på eksisterende informasjon om variabel vekt-kode. Som et resultat ber ikke lagerappen om å registrere variabel vekt-kodedataene som en del av en produksjonsrapport som en ferdig operasjon.
 
-**Når sporing av faktisk vekt-koder ikke brukes** , kan vekten registres for hvert dimensjonssett (for eksempel for hver(t) nummerskilt og sporingsdimensjon). Vekten kan også registreres basert på et aggregert nivå, for eksempel fem nummerskilt (paller).
+**Når sporing av faktisk vekt-koder ikke brukes**, kan vekten registres for hvert dimensjonssett (for eksempel for hver(t) nummerskilt og sporingsdimensjon). Vekten kan også registreres basert på et aggregert nivå, for eksempel fem nummerskilt (paller).
 
 For metodene for registrering av utgående vekt lar alternativet **Per faktisk vekt-enhet** deg angi at veiingen skal utføres for hver faktisk vekt-enhet (for eksempel per eske). Du kan bruke alternativet **Per plukkenhet** til å angi at vekten skal registreres basert på antallet som skal plukkes (for eksempel tre esker). Merk at for produksjonslinjeplukking og interne flytteprosesser brukes gjennomsnittlig vekt hvis alternativet **Ikke registrert** brukes.
 
@@ -203,10 +203,10 @@ I tillegg til begrensningene som for øyeblikket gjelder for faktisk vekt-produk
 - Du må manuelt oppdatere faktisk vekt-koder for å gjenspeile etterfyllingsarbeidsbevegelser. Dette skyldes at systemet ikke kan registrere vekt under behandling av etterfyllingsarbeid, og registrerer derfor gjennomsnittlig vekt i stedet.
 - Mottak av kombinerte nummerskilt støttes ikke for øyeblikket for kodede faktisk vekt-varer.
 - Behandlingen av salgsreturordremottak kan registrere faktisk vekt-koder. Prosessen validerer imidlertid ikke at den returnerte koden er den samme koden som opprinnelig ble sendt for en salgsordre.
-- Menyelementet for mobilenhet som har aktivitetskoden **Registrer materialforbruk** , støtter for øyeblikket ikke registrering av faktisk vekt-koder.
+- Menyelementet for mobilenhet som har aktivitetskoden **Registrer materialforbruk**, støtter for øyeblikket ikke registrering av faktisk vekt-koder.
 - Selv om opptellingsprosesser støttes for kodede faktisk vekt-varer, er de begrenset. Du kan for eksempel bruke alternativene for mobilenheter til opptelling av kodede faktisk vekt-varer, og gjennomsnittsvekten brukes. Faktisk vekt-koder oppdateres imidlertid ikke automatisk av opptellingstransaksjonen. Når opptellingstransaksjonen er fullført, må faktisk vekt-kodene oppdateres manuelt slik at de gjenspeiler lageret. Hvis varer som ikke var på et sted opprinnelig, telles opp på dette stedet, brukes den nominelle vekten.
 - Skiltnummerkonsolidering støtter ikke kodede faktisk vekt-varer for øyeblikket.
 - Funksjonen for tilbakeføring av arbeid støttes ikke for faktisk vekt-varer som spores etter kodenummer.
 
 > [!NOTE]
-> Informasjonen ovenfor om faktisk vekt-koder er bare gyldig hvis faktisk vekt-produktet har en sporingsmetode for faktisk vekt-kodedimensjon som spores fullstendig (det vil si hvis parameteren **Sporingsmetode for faktisk vekt-kodedimensjon** i policyen for behandling av faktisk vekt-varer settes til **Produktdimensjoner, sporingsdimensjoner og alle lagringsdimensjoner** ). Hvis faktisk vekt-varen bare spores delvis av koder (det vil si hvis parameteren **Sporingsmetode for faktisk vekt-kodedimensjon** i policyen for behandling av faktisk vekt-varer settes til **Produktdimensjoner, sporingsdimensjoner og lagerstatus** ), gjelder flere begrensninger. Siden synlighet går tapt mellom koden og lageret i dette tilfellet, støttes ikke enkelte andre scenarier.
+> Informasjonen ovenfor om faktisk vekt-koder er bare gyldig hvis faktisk vekt-produktet har en sporingsmetode for faktisk vekt-kodedimensjon som spores fullstendig (det vil si hvis parameteren **Sporingsmetode for faktisk vekt-kodedimensjon** i policyen for behandling av faktisk vekt-varer settes til **Produktdimensjoner, sporingsdimensjoner og alle lagringsdimensjoner**). Hvis faktisk vekt-varen bare spores delvis av koder (det vil si hvis parameteren **Sporingsmetode for faktisk vekt-kodedimensjon** i policyen for behandling av faktisk vekt-varer settes til **Produktdimensjoner, sporingsdimensjoner og lagerstatus**), gjelder flere begrensninger. Siden synlighet går tapt mellom koden og lageret i dette tilfellet, støttes ikke enkelte andre scenarier.

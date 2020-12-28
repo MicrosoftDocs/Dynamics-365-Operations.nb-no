@@ -19,11 +19,11 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.openlocfilehash: 82249f460e5ddce9b9d43906008a3248a80daafb
-ms.sourcegitcommit: e3f4dd2257a3255c2982f4fc7b72a1121275b88a
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: nb-NO
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4018750"
+ms.locfileid: "4434810"
 ---
 # <a name="vendor-collaboration-with-external-vendors"></a>Leverandørsamarbeid med eksterne leverandører
 
@@ -34,7 +34,7 @@ Modulen **Leverandørsamarbeid** er beregnet på leverandører som ikke har inte
 Hvis du vil ha mer informasjon om hva eksterne leverandører kan gjøre i grensesnittet for leverandørsamarbeid, kan du se [Leverandørsamarbeid med kunder](vendor-collaboration-work-customers-dynamics-365-operations.md).
 
 > [!NOTE]
-> Informasjonen om leverandørsamarbeid i dette emnet gjelder bare for gjeldende versjonen av Supply Chain Management. I Microsoft Dynamics AX 7.0 (februar 2016) og Microsoft Dynamics AX programversjon 7.0.1 (mai 2016) kan du samarbeide med leverandører ved hjelp av modulen **Leverandørportal**. Hvis du vil ha mer informasjon om modulen **Leverandørportal** , kan du se [Samarbeide med leverandører ved hjelp av leverandørportalen](collaborate-vendors-vendor-portal.md).
+> Informasjonen om leverandørsamarbeid i dette emnet gjelder bare for gjeldende versjonen av Supply Chain Management. I Microsoft Dynamics AX 7.0 (februar 2016) og Microsoft Dynamics AX programversjon 7.0.1 (mai 2016) kan du samarbeide med leverandører ved hjelp av modulen **Leverandørportal**. Hvis du vil ha mer informasjon om modulen **Leverandørportal**, kan du se [Samarbeide med leverandører ved hjelp av leverandørportalen](collaborate-vendors-vendor-portal.md).
 
 Hvis du vil ha mer informasjon om hvordan leverandører kan bruke leverandørsamarbeid i faktureringsprosesser, kan du se [Arbeidsområde for leverandørsamarbeidsfakturering](../../financials/accounts-payable/vendor-portal-invoicing-workspace.md). Hvis du vil ha informasjon om hvordan du klargjør en ny bruker for leverandørsamarbeid, kan du se[Administrere brukere av leverandørsamarbeid](manage-vendor-collaboration-users.md).
 
@@ -44,7 +44,7 @@ Når leverandører svarer på en bestilling du sender dem, ser de en av tre meld
 
 Slik definerer du teksten som vises i bestillingssvaret:
 
-1. På siden **Informasjon for leverandører som svarer på bestillinger** , velger du svartypen og velger deretter **Rediger**.
+1. På siden **Informasjon for leverandører som svarer på bestillinger**, velger du svartypen og velger deretter **Rediger**.
 2. I boksen **Informasjonsmelding** skriver du inn informasjon som skal vises til leverandører i meldingsboksen.
 
 Hvis du må legge til meldinger på flere språk, kan du opprette egne meldinger og angi den aktuelle språkkoden for hver av dem. Meldingen som vises til hver leverandør, vil være på språket som leverandøren bruker.
@@ -58,7 +58,7 @@ En administrator konfigurerer de generelle innstillingene for samarbeid med leve
 
 ### <a name="enabling-vendor-collaboration"></a>Aktivere leverandørsamarbeid
 
-Før du kan opprette brukerkontoer for en ekstern leverandør, må du konfigurere leverandørkontoen, slik at leverandøren kan bruke leverandørsamarbeid. På siden **Leverandører** , på fanen **Generelt** angir du feltet **Samarbeidsaktivering**. Følgende alternativer er tilgjengelige:
+Før du kan opprette brukerkontoer for en ekstern leverandør, må du konfigurere leverandørkontoen, slik at leverandøren kan bruke leverandørsamarbeid. På siden **Leverandører**, på fanen **Generelt** angir du feltet **Samarbeidsaktivering**. Følgende alternativer er tilgjengelige:
 
 - **Aktive (bestilling bekreftes automatisk)** – Bestillinger bekreftes automatisk hvis leverandøren godtar dem uten endringer.
 - **Aktive (bestilling bekreftes ikke automatisk)** – Organisasjonen din må bekrefte bestillinger manuelt etter at leverandøren har godtatt dem.
@@ -71,7 +71,7 @@ Hvis du vil dele prisinformasjon for bestillinger via grensesnittet for leverand
 
 ### <a name="sending-a-po-to-a-vendor"></a>Sende en bestilling til en leverandør
 
-Bestillinger klargjøres i Supply Chain Management. Når en bestilling har statusen **Godkjent** , sender du den til leverandøren ved å velge **Send for bekreftelse** på **Bestilling** -siden. Statusen for bestillingen endres deretter til **Til ekstern vurdering**. Etter at bestillingen er sendt, kan leverandøren se den på siden **Bestillinger for vurdering** i grensesnittet for leverandørsamarbeid. Leverandøren kan deretter godta bestillingen, avvise den eller foreslå endringer. Leverandøren kan også legge til merknader for å formidle informasjon, for eksempel endringer i bestillingen. Hvis du vil trekke leverandørens oppmerksomhet til en ny bestilling, kan du også bruke utskriftsbehandlingssystemet til å sende bestillingen via e-post.
+Bestillinger klargjøres i Supply Chain Management. Når en bestilling har statusen **Godkjent**, sender du den til leverandøren ved å velge **Send for bekreftelse** på **Bestilling**-siden. Statusen for bestillingen endres deretter til **Til ekstern vurdering**. Etter at bestillingen er sendt, kan leverandøren se den på siden **Bestillinger for vurdering** i grensesnittet for leverandørsamarbeid. Leverandøren kan deretter godta bestillingen, avvise den eller foreslå endringer. Leverandøren kan også legge til merknader for å formidle informasjon, for eksempel endringer i bestillingen. Hvis du vil trekke leverandørens oppmerksomhet til en ny bestilling, kan du også bruke utskriftsbehandlingssystemet til å sende bestillingen via e-post.
 
 ### <a name="confirmation-and-acceptance-of-a-po-by-a-vendor"></a>Bekreftelse og godkjenning av en bestilling av en leverandør
 
@@ -120,7 +120,7 @@ Leverandøren kan ikke endre prisinformasjon og tillegg. Leverandøren kan imidl
 </tbody>
 </table>
 
-Du kan bruke arbeidsområdet **Bestillingsklargjøring** til å overvåke hvilke bestillinger leverandøren har svart på. Arbeidsområdet inneholder to lister som inneholder bestillinger med statusen **Til ekstern vurdering** :
+Du kan bruke arbeidsområdet **Bestillingsklargjøring** til å overvåke hvilke bestillinger leverandøren har svart på. Arbeidsområdet inneholder to lister som inneholder bestillinger med statusen **Til ekstern vurdering**:
 
 - Til ekstern vurdering krever handling
 - Til ekstern vurdering, venter på svar fra leverandør
@@ -168,7 +168,7 @@ Du kan oppdatere en bestilling ved å velge **Behandle bestillingsoppdatering** 
 
 Ikke alle foreslåtte endringer kan oppdateres på en bestilling. Bare oppdateringer i hodet og oppdateringer av datoer og antall på linjer kan oppdateres automatisk på bestillingen. For andre endringer må du manuelt oppdatere Bestillingen. I dette tilfellet er verdien i feltet **Er bestillingsoppdateringen behandlet?** **Manuell oppdatering**. Hvis for eksempel en leverandør foreslår at en linje skal deles inn i en tidsplan, må denne endringen gjøres manuelt.
 
-Alle linjer som har statusen **Godkjent** , har en bekreftet leveringsdato. Når du kjører handlingen **Behandle bestillingsoppdatering** , oppdateres denne datoen på bestillingen. Notater og vedlegg overføres ikke automatisk til den gjeldende bestillingen. Forretningsavtaler blir heller ikke vurdert på nytt på bestillingslinjene når du oppdaterer den gjeldende bestillingen via handlingen **Behandle bestillingsoppdatering**.
+Alle linjer som har statusen **Godkjent**, har en bekreftet leveringsdato. Når du kjører handlingen **Behandle bestillingsoppdatering**, oppdateres denne datoen på bestillingen. Notater og vedlegg overføres ikke automatisk til den gjeldende bestillingen. Forretningsavtaler blir heller ikke vurdert på nytt på bestillingslinjene når du oppdaterer den gjeldende bestillingen via handlingen **Behandle bestillingsoppdatering**.
 
 ## <a name="po-statuses-and-versions"></a>Statuser og versjoner for bestillinger
 
@@ -206,7 +206,7 @@ Tabellen nedenfor viser et eksempel på endringene i status og versjon som en be
 | Du kan gjøre noen endringer som kreves av leverandøren, enten manuelt eller ved hjelp av handlingen **Behandle bestillingsoppdatering** på svaret for å oppdatere bestillingen. | Statusen endres tilbake til **Utkast**. |
 | Bestillingen sendes til godkjenningsprosessen på nytt. | Statusen endres fra **Utkast** til **Til vurdering** til **Godkjenning** hvis bestillingen ikke avvises under godkjenningsprosessen. Systemet kan også konfigureres slik at spesifikke endringer i felter ikke krever ny godkjenning. I dette tilfellet endres statusen først til **Utkast** og oppdateres deretter automatisk til **Godkjent**. Den godkjente bestillingen registreres som en ny versjon. |
 | Du sender den nye versjonen av bestillingen til leverandøren. | Den nye versjon registreres i grensesnittet for leverandørsamarbeid, og statusen endres til **Til ekstern vurdering**. |
-| Leverandøren godkjenner den nye versjonen av bestillingen. | Statusen endres til **Bekreftet** , enten automatisk eller når du mottar svaret fra leverandøren og deretter bekrefter bestillingen. |
+| Leverandøren godkjenner den nye versjonen av bestillingen. | Statusen endres til **Bekreftet**, enten automatisk eller når du mottar svaret fra leverandøren og deretter bekrefter bestillingen. |
 
 ## <a name="sharing-information-about-consignment-inventory"></a>Dele informasjon om forsendelseslager
 
@@ -231,13 +231,13 @@ Denne delen beskriver interaksjonene mellom kunder og leverandører i løpet av 
 
 - **Endringer** – Når en endring er ferdig, fjernes eksisterende budsvar, slik at de kan erstattes av oppdaterte verdier. Informasjon som linjepris og antall fra tidligere budsvar kan vises via journalene i tilbudsforespørselssaken.
 
-    For å fremtvinge endringsbehandling, på siden **Parametere for innkjøp og leverandører** , på hurtigfanen **Tilbudsforespørsler** , angi alternativet **Lås tilbudsforespørsler når de er sendt** til **Ja**. (Dette alternativet er angitt og kreves for offentlig sektor.)
+    For å fremtvinge endringsbehandling, på siden **Parametere for innkjøp og leverandører**, på hurtigfanen **Tilbudsforespørsler**, angi alternativet **Lås tilbudsforespørsler når de er sendt** til **Ja**. (Dette alternativet er angitt og kreves for offentlig sektor.)
 
 - **Returer** – Hvis en leverandør har sendt et bud, men mer eller endret informasjon er nødvendig for tilbudsforespørselsaken, kan kunden returnere budet til leverandøren. Dataene fra budet som ble sendt tidligere, beholdes, og leverandøren kan gjøre de ønskede endringene uten å starte budprosessen på nytt.
 
 ## <a name="public-sector-extensions"></a>Utivdelser for offentlig sektor
 
-For offentlig sektor gjør den utvidede funksjonaliteten at en tilbudsforespørselssak kan sendes til leverandører og publiseres. Når du publiserer en tilbudsforespørsel, kan alle som ber om informasjonen, vise arbeidet som er i samsvar med de fleste offentlige bestemmelser. Alt tilgjengelig arbeid vises på listesiden **Åpne publiserte tilbudsforespørsler** , og de annullerte, ventende eller tildelte tilbudsforespørslene kan vises i på listesidden **Lukkede publiserte tilbudsforespørsler**. Disse dokumentene kan også vises på et område utenfor Supply Chain Management via integrasjoner med følgende dataenheter:
+For offentlig sektor gjør den utvidede funksjonaliteten at en tilbudsforespørselssak kan sendes til leverandører og publiseres. Når du publiserer en tilbudsforespørsel, kan alle som ber om informasjonen, vise arbeidet som er i samsvar med de fleste offentlige bestemmelser. Alt tilgjengelig arbeid vises på listesiden **Åpne publiserte tilbudsforespørsler**, og de annullerte, ventende eller tildelte tilbudsforespørslene kan vises i på listesidden **Lukkede publiserte tilbudsforespørsler**. Disse dokumentene kan også vises på et område utenfor Supply Chain Management via integrasjoner med følgende dataenheter:
 
 - Publiserte tilbudsforespørsler
 - Publisert linje i tilbudsforespørsler

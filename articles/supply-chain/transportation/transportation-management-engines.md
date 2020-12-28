@@ -19,11 +19,11 @@ ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: ab6667ac02ca55eeb093fa5854a962ac4357aaac
-ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: nb-NO
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4016407"
+ms.locfileid: "4434777"
 ---
 # <a name="transportation-management-engines"></a>Transportbehandlingsmotorer
 
@@ -57,7 +57,7 @@ En transportbehandlingsmotor krever at du definerer initialiseringsdata for å f
 -   Referanser til .NET-typer som brukes av transportbehandlingsmotoren.
 -   Enkle konfigurasjonsdata.
 
-I de fleste tilfeller kan du klikke **Parametere** -knappen i oppsettskjemaene for transportbehandlingsmotoren for å konfigurere initialiseringsdataene. **Eksempel på konfigurasjon av en ratemotor som refererer til en kjørelengdemotor** Eksemplet nedenfor viser oppsettet som kreves for en ratemotor som er basert på .NET-motortypen Microsoft.Dynamics.Ax.Tms.Bll.MileageRateEngine og refererer til en kjørelengdemotor.
+I de fleste tilfeller kan du klikke **Parametere**-knappen i oppsettskjemaene for transportbehandlingsmotoren for å konfigurere initialiseringsdataene. **Eksempel på konfigurasjon av en ratemotor som refererer til en kjørelengdemotor** Eksemplet nedenfor viser oppsettet som kreves for en ratemotor som er basert på .NET-motortypen Microsoft.Dynamics.Ax.Tms.Bll.MileageRateEngine og refererer til en kjørelengdemotor.
 
 |          Parameter           |                                                                                  Beskrivelse                                                                                  |
 |------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -85,7 +85,7 @@ Metadata for transportbehandlingsmotorer konfigureres forskjellig for ulike type
 
 | Transportbehandlingmotor               | Metadatakonfigurasjon                                                                                                                                                                                                                                                                                                                                                                                                                                               |
 |------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Ratemotor**                                | Krever en **satsgrunnlagstype**. Satsgrunnlagstypen inneholder metadata for satsstamdataene og data for tilordning av satsgrunnlag. Strukturen til metadata for vurderingsgrunnlagstype bestemmes av ratemotoren. Strukturen til metadata for vurderingsgrunnlagstype bestemmes av typen satsgrunnlagstilordner som er tilknyttet denne ratemotoren. Du definerer satsgrunnlagstypen for en ratemotor på **Ratemotor** -siden og **Vurderingsstandard** -siden. |
+| **Ratemotor**                                | Krever en **satsgrunnlagstype**. Satsgrunnlagstypen inneholder metadata for satsstamdataene og data for tilordning av satsgrunnlag. Strukturen til metadata for vurderingsgrunnlagstype bestemmes av ratemotoren. Strukturen til metadata for vurderingsgrunnlagstype bestemmes av typen satsgrunnlagstilordner som er tilknyttet denne ratemotoren. Du definerer satsgrunnlagstypen for en ratemotor på **Ratemotor**-siden og **Vurderingsstandard**-siden. |
 | **Sonemotor**                                | Krever at metadata konfigureres direkte i sonemalen.                                                                                                                                                                                                                                                                                                                                                                                                          |
 | **Transittidmotor** og **Kjørelengdemotor** | Henter metadataene direkte fra kjørelengdemotorens skjema for konfigurasjonsoppsett.                                                                                                                                                                                                                                                                                                                                                                                  |
 
