@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: StuHarg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 1f92b31e870cbb4d3cc04870273693bed1378c5e
-ms.sourcegitcommit: 8028fbc5b9585e87d3331ea02577ff82ede090af
+ms.openlocfilehash: c54a3e9471fdeb56f27fe7c567c7cd7f0b7fd218
+ms.sourcegitcommit: 2ef23dcd4e42362186b9951e675010d97d55c6bd
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "3817712"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4556435"
 ---
 # <a name="select-a-site-theme"></a>Velge et områdetema
 
@@ -32,7 +32,7 @@ Dette emnet beskriver hvordan du angir eller endrer områdets tema i Microsoft D
 
 ## <a name="overview"></a>Oversikt
 
-Området og stilen for et oppsett (for eksempel skrifter, størrelser og farger) defineres av temaet du velger, og gjelder for området. Et tema opprettes og distribueres av en utvikler i firmaet. Hvis du vil ha en oversikt over temaer, se [Temaoversikt](http://). Hvis du vil ha mer informasjon om hvordan du oppretter og distribuerer temaer, kan du se [Opprette et nytt tema](http://).
+Området og stilen for et oppsett (for eksempel skrifter, størrelser og farger) defineres av temaet du velger, og gjelder for området. Et tema opprettes og distribueres av en utvikler i firmaet. Hvis du vil ha en oversikt over temaer, se [Temaoversikt](e-commerce-extensibility/theming.md). Hvis du vil ha mer informasjon om hvordan du oppretter og distribuerer temaer, kan du se [Opprette et nytt tema](e-commerce-extensibility/create-theme.md).
 
 Når du oppretter et område for første gang, bruker det som standard et tema kalt **Fabrikam**. Dette standardtemaet leveres som en del av Commerce-modulbiblioteket. Når du har distribuert flere temaer for området, kan du konfigurere området slik at det bruker en av dem i stedet.
 
@@ -63,3 +63,8 @@ Følg denne fremgangsmåten for å velge temaet som skal brukes på området.
 [Legge til språk på området](add-languages-to-site.md)
 
 [Legge til skript kode i områdes ID-er for å støtte telemetri](add-telemetry.md)
+
+[Temaoversikt](e-commerce-extensibility/theming.md)
+
+[Opprett et nytt tema](e-commerce-extensibility/create-theme.md)
+

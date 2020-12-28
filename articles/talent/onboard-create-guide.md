@@ -17,11 +17,11 @@ ms.author: anbichse
 ms.search.validFrom: 2019-05-06
 ms.dyn365.ops.version: Talent
 ms.openlocfilehash: 2371d86165390503312c2848842acf4745a8ed7a
-ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "2898254"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4462091"
 ---
 # <a name="create-and-send-an-onboarding-guide"></a>Opprette og sende en innebygd veiledning for jobbintroduksjon
 
@@ -36,7 +36,7 @@ Når du har opprettet en jobbintroduksjonsveiledning, kan du sende den til en ny
 1. Velg **Maler** på menyen til venstre.
 2. Under **Mine maler** velger du malen du vil konfigurere som jobbintroduksjonsveiledning for den nyansatte.
 3. Rediger malen som du ønsker. Husk å lagre arbeidet underveis.
-4. Når du er ferdig med å redigere malen, **velger du**Opprett veiledning.
+4. Når du er ferdig med å redigere malen, **velger du** Opprett veiledning.
 
     [![Opprette en veiledning for jobbintroduksjon fra en mal](./media/onboard-create-guide.png)](./media/onboard-create-guide.png)
 
@@ -51,7 +51,7 @@ Når du har opprettet en jobbintroduksjonsveiledning, kan du sende den til en ny
 
     - Hvis du vil sende den nyansatte en kobling til veiledningen for jobbintroduksjon, velger du **kopier en kobling** og velger deretter **Kopier**.
     - Hvis du vil tilpasse e-posten for jobbintroduksjonsveiledningen før du sender den, velger du **Tilpass e-posten før sending**, velger **Neste**, tilpasser e-posten som du ønsker, og velger deretter **Send**.
-    - Hvis du vil sende e-posten uten å tilpasse den, velger du **Neste**og velger deretter **Send**.
+    - Hvis du vil sende e-posten uten å tilpasse den, velger du **Neste** og velger deretter **Send**.
 
 ## <a name="create-an-onboarding-guide-from-a-template-and-send-it-to-multiple-new-hires"></a>Opprette en jobbintroduksjonsveiledning fra en mal og sende den til flere nyansatte
 
@@ -60,7 +60,7 @@ Med Onboard kan du sende en jobbintroduksjonsveiledning til flere nyansatte samt
 1. Velg **Maler** på menyen til venstre.
 2. Under **Mine maler** velger du malen du vil konfigurere som jobbintroduksjonsveiledning for de nyansatte.
 3. Rediger malen som du ønsker. Husk å lagre arbeidet underveis.
-4. Når du er ferdig med å redigere malen, **velger du**Opprett veiledning.
+4. Når du er ferdig med å redigere malen, **velger du** Opprett veiledning.
 5. I vinduet **Opprett en veiledning** velger du **Trenger du å introdusere flere personer samtidig**.
 
     [![Opprette en veiledning for jobbintroduksjon for flere nyansatte](./media/onboard-send-guide-multiple-people.png)](./media/onboard-send-guide-multiple-people.png)
@@ -83,7 +83,7 @@ Med Onboard kan du sende en jobbintroduksjonsveiledning til flere nyansatte samt
 
     - Hvis du vil sende de nyansatte en kobling til veiledningen for jobbintroduksjon, velger du **kopier en kobling** og velger deretter **Kopier**.
     - Hvis du vil tilpasse e-posten for jobbintroduksjonsveiledningen før du sender den, velger du **Tilpass e-posten før sending**, velger **Neste**, tilpasser e-posten som du ønsker, og velger deretter **Send**.
-    - Hvis du vil sende e-posten uten å tilpasse den, velger du **Neste**og velger deretter **Send**.
+    - Hvis du vil sende e-posten uten å tilpasse den, velger du **Neste** og velger deretter **Send**.
 
 ## <a name="create-a-guide-without-using-a-template"></a>Opprette en veiledning uten å bruke mal
 

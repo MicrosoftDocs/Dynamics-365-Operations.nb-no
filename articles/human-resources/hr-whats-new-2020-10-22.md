@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2020-10-20
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: e5c66d8695ee0ff41e81c699a5d5a37075470059
-ms.sourcegitcommit: 776758a0ff95c3c7398986095104d1d2b9814514
+ms.openlocfilehash: 513fc3b35f0b6a7f5d9703d2b5eb4109289a189a
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "4107542"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4529988"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-october-22-2020"></a>Hva er nytt eller endret i Dynamics 365 Human Resources 22. oktober 2020
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 Dette emnet beskriver funksjoner som er nye, endret eller kommer snart i Dynamics 365 Human Resources. Hvis du vil ha mer informasjon om oppdateringsprosessen og tidsplanen, kan du se [Oppdatere prosess](hr-admin-setup-update-process.md).
 
@@ -55,12 +57,12 @@ Denne versjonen inneholder følgende feilrettinger.
 | Utstedelsesnummer| Problem  | beskrivelse|
 | --- | --- | --- |
 | 437922 | Import av FMLA-timer ved hjelp av DMF-enheten resulterer i en skrivebeskyttelsesfeil. | Bruk av FMLA-timer-enheten til å importere timer knyttet til en FMLA-sak mislyktes. Vi har lagt til logikk for å sikre at timene som importeres, ikke overskrider timene som gjenstår for saken. |
-| 512019 | Feil **Siste overføring** -beløp. | Hvis du på **Fridager** -siden endrer **Per dato** til den første dagen i den neste regnskapsperioden, vises et feil **Siste overføring** -beløp for typen **Årlig permisjon**. Nå vises det riktig beløp. |
-| 458639 | Enhten for **arbeiderkontakter** støtter ikke endringssporingsmodus. | Vi har oppdatert **Arbeiderkontakter** -enheten slik at du kan bruke den i BYOD-scenarioer.|
+| 512019 | Feil **Siste overføring**-beløp. | Hvis du på **Fridager**-siden endrer **Per dato** til den første dagen i den neste regnskapsperioden, vises et feil **Siste overføring**-beløp for typen **Årlig permisjon**. Nå vises det riktig beløp. |
+| 458639 | Enhten for **arbeiderkontakter** støtter ikke endringssporingsmodus. | Vi har oppdatert **Arbeiderkontakter**-enheten slik at du kan bruke den i BYOD-scenarioer.|
 | 505347 | Opplæringsledere kan sende en permisjonsforespørsel for en ansatt når funksjonen for strømlinjeformet arbeider var aktivert. | Andre roller enn personalassistent eller personalsjef kan ikke sende fraværsforespørsler for ansatte. |
-| 513490 | Logging for fordelsadministrasjon: Legg til logging for planer uten dekningsalternativer. | Vi har aktivert resultater av logging for **Plan uten dekningsalternativer**. De vises nå i tabellen **Prosessresultater** , og de blir sortert riktig slik at de vises øverst. |
-| 517021 | Kan ikke velge flere planer med samme **Plantype** -kode hvis **Plantype** har én registrering per type. | Vi endret begrensningene for å velge planer der bare én registrering er tillatt. Begrensningene er nå på **plantypekode** -nivå i stedet for **plantype**. Denne endringen tillater planer som HSA og FSA, som begge er samme type, men du kan gi dem en separat **plantypekode**. På denne måten kan du velge begge for den samme registreringsperioden. |
-| 444791 | Kan ikke vise kompensasjon i Ansattselvbetjening når **Begrens tilgang** er aktivert i kompensasjonsplanen. | På **Kompensasjon** -kortet i ansattselvbetjeningen viste det gjeldende kompensasjonsbeløpet og økningsprosenten "0" hvis den ansatte ble registrert i en plan med **Begrenset tilgang** aktivert og tilordnet til bestemte roller. Vi har løst dette problemet, slik at ansatte og ledere alltid kan se kompensasjonsdetaljer for seg selv og deres direkte underordnede. |
+| 513490 | Logging for fordelsadministrasjon: Legg til logging for planer uten dekningsalternativer. | Vi har aktivert resultater av logging for **Plan uten dekningsalternativer**. De vises nå i tabellen **Prosessresultater**, og de blir sortert riktig slik at de vises øverst. |
+| 517021 | Kan ikke velge flere planer med samme **Plantype**-kode hvis **Plantype** har én registrering per type. | Vi endret begrensningene for å velge planer der bare én registrering er tillatt. Begrensningene er nå på **plantypekode**-nivå i stedet for **plantype**. Denne endringen tillater planer som HSA og FSA, som begge er samme type, men du kan gi dem en separat **plantypekode**. På denne måten kan du velge begge for den samme registreringsperioden. |
+| 444791 | Kan ikke vise kompensasjon i Ansattselvbetjening når **Begrens tilgang** er aktivert i kompensasjonsplanen. | På **Kompensasjon**-kortet i ansattselvbetjeningen viste det gjeldende kompensasjonsbeløpet og økningsprosenten "0" hvis den ansatte ble registrert i en plan med **Begrenset tilgang** aktivert og tilordnet til bestemte roller. Vi har løst dette problemet, slik at ansatte og ledere alltid kan se kompensasjonsdetaljer for seg selv og deres direkte underordnede. |
 | 457542 | Oppdatering av kursdetaljer etter at kurset er lukket, oppdaterer ikke også den samme informasjonen for den ansatte som tok kurset. | Ansattinformasjonen oppdateres nå på riktig måte når du endrer kursdetaljer etter at et kurs er lukket og åpnet på nytt. |
 | 515342 | Kan ikke sette inn data via **CDSLeaveRequestDetailEntity**. Firma blir ikke funnet eller finnes ikke. | Du kan nå bruke **CDSLeaveRequestDetailEntity** til å sette inn data. |
 | 514743 | Feil i skjemaet **E-postparameter** når du bruker Microsoft Exchange. | Meldingen "Kan ikke laste inn filer eller samling..." vises på siden **E-postparametere** når e-postleverandøren var satt til **Exchange**. Denne korrigeringen tillater også at siden **E-postparametere** lastes inn og lagres som forventet. |

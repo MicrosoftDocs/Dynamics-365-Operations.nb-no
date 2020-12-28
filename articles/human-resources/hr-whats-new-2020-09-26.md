@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2020-10-13
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: d27104a08cdc899f12942d80e693f3495d90a6ec
-ms.sourcegitcommit: 1329b3b98854422c4c3773ede44a5cefa7d07085
+ms.openlocfilehash: 4103c0630b72b9b92a116f7fe702a777dd295e25
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "4040082"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4527416"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-september-26-2020"></a>Hva er nytt eller endret i Dynamics 365 Human Resources 26. september 2020
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 Dette emnet beskriver funksjoner som er nye, endret eller kommer snart i Dynamics 365 Human Resources. Hvis du vil ha mer informasjon om oppdateringsprosessen og tidsplanen, kan du se [Oppdatere prosess](hr-admin-setup-update-process.md).
 
@@ -39,7 +41,7 @@ Denne versjonen omfatter følgende nye funksjoner og feilrettinger. Endringer gj
 
 Følgende funksjon er vanligvis tilgjengelig i denne versjonen:
 
-- **Platform Update10.0.13 er nå tilgjengelig** : Hvis du vil ha mer informasjon om denne oppdateringen, kan du se [Plattformoppdateringer for versjon 10.0.13 av Finance and Operations-apper (oktober 2020)](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-13).
+- **Platform Update10.0.13 er nå tilgjengelig**: Hvis du vil ha mer informasjon om denne oppdateringen, kan du se [Plattformoppdateringer for versjon 10.0.13 av Finance and Operations-apper (oktober 2020)](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-13).
 
 ### <a name="bug-fixes"></a>Feilrettinger
 
@@ -51,14 +53,14 @@ Denne versjonen inneholder følgende feilrettinger.
 | Utstedelsesnummer | Problem | beskrivelse |
 | --- | --- | --- |
 | 469495 | Oppdatere standard rutenett og dialogboks for finansdimensjoner | Rutenett og dialogboks for finansdimensjoner er oppdatert i hele Human Resources. |
-| 474887 | Arbeidselement for permisjonsforespørsel åpner feil kobling i en manuell beslutning | Når en arbeidsflytkonfigurasjon inneholder en manuell beslutning, fører navigering til permisjonsforespørsel fra **Arbeidselementer som er tilordnet til meg** , at feil kobling åpnes, som enten viser et tomt skjema eller en permisjonsforespørsel opprettet av den gjeldende brukeren i stedet for det som er tilordnet dem for den manuelle beslutningen. |
+| 474887 | Arbeidselement for permisjonsforespørsel åpner feil kobling i en manuell beslutning | Når en arbeidsflytkonfigurasjon inneholder en manuell beslutning, fører navigering til permisjonsforespørsel fra **Arbeidselementer som er tilordnet til meg**, at feil kobling åpnes, som enten viser et tomt skjema eller en permisjonsforespørsel opprettet av den gjeldende brukeren i stedet for det som er tilordnet dem for den manuelle beslutningen. |
 | 474962 | Enhet for permisjons- og fraværsparametere har felt med tvetydige etiketter | Enhetsetiketter for permisjons- og fraværsparametere er oppdatert for å bli klarere. |
 | 481401 | Avsetningsbehandling henger når datogrunnlag for avsetning er etter avsetningens startdato og på slutten av måneden | Avsetningsbehandling er oppdatert til ikke å ha en forsinkelse når avsetningsdatogrunnlaget er etter startdatoen for avsetningen og på slutten av måneden. |
 | 447167 | Utløpende poster inkluderer inaktive arbeidere | Kategorien **Utløpende poster** i **Personaladministrasjon** inneholdt inaktive arbeidere. Nå inneholder den bare aktive arbeidere. |
 | 486840 | Feil permisjonsforespørsel åpnes fra **Arbeidselementer som er tilordnet til meg** | Valg av en permisjonsforespørsel fra **Arbeidselementer som er tilordnet til meg** åpner ikke lenger den siste permisjonsforespørselen som er tilordnet den gjeldende brukeren. |
-| 506868 | Common Data Service **Tittel** -felt ikke angitt for **Stilling** -enhet | **Tittel** -feltet i **Jobb** og **Stilling** -enhetene vises som ikke angitt. **Tittel** -feltet vises nå. |
+| 506868 | Common Data Service **Tittel**-felt ikke angitt for **Stilling**-enhet | **Tittel**-feltet i **Jobb** og **Stilling**-enhetene vises som ikke angitt. **Tittel**-feltet vises nå. |
 | 430359 | Får ikke tilgang til avlasting for sjekklisteoppgaver med overordnet og ansattroller tilordnet | Arbeidere med en fremtidig avslutningsdato får ikke tilgang til sjekklisteoppgavene hvis de bare hadde en ansatt eller lederrolle. Brukere med bare en ansatt eller lederrolle har for øyeblikket tilgang til avlastingsaktiviteter med en fremtidig avslutningsdato. |
-| 458102 | Ny ansatt vises ikke på **Lønnsinformasjon for arbeider** -enheten når den opprettes | Nye ansatte inkluderes i lønnsinformasjonsenheten for arbeideren uten å måtte åpne lønnsinformasjonen for den ansatte før du eksporterer enheten. |
+| 458102 | Ny ansatt vises ikke på **Lønnsinformasjon for arbeider**-enheten når den opprettes | Nye ansatte inkluderes i lønnsinformasjonsenheten for arbeideren uten å måtte åpne lønnsinformasjonen for den ansatte før du eksporterer enheten. |
 
 ## <a name="in-preview"></a>I forhåndsvisning
 

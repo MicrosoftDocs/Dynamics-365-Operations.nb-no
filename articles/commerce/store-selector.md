@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2020-02-10
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 4438e46d4653a0cd2060092695f08613cd696f4e
-ms.sourcegitcommit: 97ceb24f191161ca601e0889a539df665834ac3b
+ms.openlocfilehash: 5400a2e743a78124dca4bf9be3ccaf7870ea8b7d
+ms.sourcegitcommit: 9c05d48f6e03532aa711e1d89d0b2981e9d37200
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "3818256"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "4665278"
 ---
 # <a name="store-selector-module"></a>Butikkvelgermodul
 
@@ -47,7 +47,7 @@ Med butikkvelgermodulen kan brukere angi en lokasjon (by, delstat, adresse og s�
 
 Butikkvelgermodulen er integrert med [Bing Maps REST API-er (Application Programming Interface)](https://docs.microsoft.com/bingmaps/rest-services/) for å bruke Bing-funksjonene for geokoding og autoforslag. En API-nøkkel for Bing-kart kreves, og den må legges til på siden Delte parametere for Commerce Headquarters. API-et for geokoding brukes til å konvertere en sted til breddegrads- og lengdegradsverdier. Integreringen med API-et for autoforslag brukes til å vise søkeforslag når brukere angir steder i søkefeltet.
 
-Når det gjelder REST API-et for autoforslag, må du kontrollere at følgende URL-adresser er tillatt (også kalt "hvitelistet") i henhold til områdets sikkerhetspolicy for innhold (CSP). Dette oppsettet gjøres i Commerce-områdebygger ved å legge til tillatte URL-adresser i CSP-direktiver for nettstedet (for eksempel **img-src**). Hvis du vil ha mer informasjon, se [Innholdssikkerhetspolicy](manage-csp.md). 
+Når det gjelder REST API-et for autoforslag, må du kontrollere at følgende URL-adresser er tillatt i henhold til områdets sikkerhetspolicy for innhold (CSP). Dette oppsettet gjøres i Commerce-områdebygger ved å legge til tillatte URL-adresser i CSP-direktiver for nettstedet (for eksempel **img-src**). Hvis du vil ha mer informasjon, se [Innholdssikkerhetspolicy](manage-csp.md). 
 
 - For direktivet **connect-src** legger du til **&#42;.bing.com**.
 - For direktivet **img-src** legger du til **&#42;.virtualearth.net**.
@@ -65,6 +65,9 @@ For at dette scenarioet skal fungere, bør produktene konfigureres slik at lever
 Bildet nedenfor viser et eksempel på en butikkvelgermodul som brukes på en PDP.
 
 ![Eksempel på en butikkvelgermodul som brukes på PDP](./media/BOPIS.PNG)
+
+> [!NOTE]
+> I versjon 10.0.16 og nyere kan en ny funksjon aktiveres, noe som gjør at en organisasjon kan definere flere plukkmoduser for leveringsmåter for kunder.  Hvis denne funksjonen er aktivert, vil butikkvelgeren og andre moduler med e-handel bli forbedret slik at kunden kan velge fra potensielt flere leveringsalternativer hvis de er konfigurert.  Hvis du vil vite mer om denne funksjonen, kan du se [denne dokumentasjonen](https://docs.microsoft.com/dynamics365/commerce/multiple-pickup-modes). 
 
 ## <a name="find-stores-mode"></a>Søk etter butikker-modus
 

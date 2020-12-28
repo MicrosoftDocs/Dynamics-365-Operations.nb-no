@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: d7d25fd62efca52dd2d60ed3435104c3507a1d19
-ms.sourcegitcommit: 8028fbc5b9585e87d3331ea02577ff82ede090af
+ms.openlocfilehash: dfa8b2bdc03e3698feda26932db757421097140d
+ms.sourcegitcommit: 4bf5ae2f2f144a28e431ed574c7e8438dc5935de
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "3817615"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "4517070"
 ---
 # <a name="apply-inventory-settings"></a>Ta i bruk innstillinger for beholdning
 
@@ -46,7 +46,7 @@ I Commerce Site Builder kan du definere beholdningsterskler og -områder for et 
 
 I Commerce defineres beholdningsinnstillinger fra **Områdeinnstillinger \> Utvidelser \> Lagerstyring** i områdebygger. Det finnes fire beholdningsinnstillinger, hvorav én er foreldet (avviklet):
 
-- **Aktiver beholdningssjekk i app** – denne innstillingen aktiverer en beholdningssjekk for et produkt. Kjøpsboks-, handlekurv- og hent i butikk-moduler kontrollerer deretter varebeholdningen, og gjør det bare mulig å legge til et produkt i handlekurven hvis varen er tilgjengelig på lager.
+- **Aktiver lagersjekk i app** – Denne innstillingen aktiverer en beholdningssjekk for et produkt. Kjøpsboks-, handlekurv- og hent i butikk-moduler kontrollerer deretter varebeholdningen, og gjør det bare mulig å legge til et produkt i handlekurven hvis varen er tilgjengelig på lager.
 - **Beholdningsnivå basert på** – denne innstillingen definerer hvordan beholdningsnivåene beregnes. De tilgjengelige verdiene er **Total tilgjengelig**, **Fysisk tilgjengelig** og **Terskel for tomt på lager**. I Commerce kan du definere beholdningsterskler og -områder for hvert produkt og hver kategori. Beholdnings-API-ene returnerer beholdningsinformasjon for produkter for både **Totalt tilgjengelig**-egenskapen og **Fysisk tilgjengelig**-egenskapen. Forhandleren avgjør om **Totalt tilgjengelig**- eller **Fysisk tilgjengelig**-verdien skal brukes til å fastslå beholdningsantallet og de tilsvarende områdene for statusene "tilgjengelig på lager" og "tomt på lager".
 
     **Terskel for tomt på lager**-verdien for **Beholdningsnivå basert på**-innstillingen er en foreldet verdi. Når den er valgt, bestemmes beholdningstellingen av resultatene av **Totalt tilgjengelig**-verdien, men terskelen defineres av den numeriske **Terskel for tomt på lager**-innstillingen som beskrives senere. Denne terskelinnstillingen gjelder for alle produkter på et e-handelsområde. Hvis beholdningen er lavere enn terskelantallet, anses produktet å være tomt på lager. Hvis ikke anses det å være på lager. Egenskapene til **Terskel for tomt på lager**-verdien er begrenset, og vi anbefaler at du ikke bruker den i versjon 10.0.12 og nyere.

@@ -15,20 +15,22 @@ ms.search.region: Global
 ms.author: damadipa
 ms.search.validFrom: 2020-04-22
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: e3ab79bc9203309c0cfa1ff18f75580297ae1001
-ms.sourcegitcommit: 713b5dfc76a6875d0ba6d86c5cbd585ea502cf9d
+ms.openlocfilehash: 7849f354817f189bf7c844bbe2944f94c8fffe83
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/01/2020
-ms.locfileid: "3413996"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4527369"
 ---
 # <a name="customize-and-use-the-customer-portal"></a>Tilpasse og bruke kundeportalen
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 Dette emnet beskriver de ulike sidene som er tilgjengelige som standard i kundeportalen. Den forklarer funksjonene til sidene samt hvordan du kan tilpasse dem.
 
 Kundeportalen tilbyr enkelte nettsider og handlinger som standard. Følgende områdekart gir en oversikt over disse nettsidene og handlingene, og rollene som kan utføre handlingene.
 
-![![Områdekart for kundeportal](media/customer-portal-site-map.png "Områdekart for kundeportal")](media/customer-portal-site-map.png "Customer portal site map")
+![Områdekart for kundeportal](media/customer-portal-site-map.png "Områdekart for kundeportal")
 
 ## <a name="typical-customizations"></a>Vanlige tilpasninger
 
@@ -62,12 +64,12 @@ Her er standardtrinnene for å sende en ordre fra kundeportalen.
     - **Rekvisisjonsnummer** – angi rekvisisjonsnummeret for ordren. Dette feltet er ikke obligatorisk.
     - **Leveringsland/-område** – angi landet eller området som varene skal leveres til. Dette feltet angis automatisk for brukere som ikke er administratorer.
 
-    ![![Ordreinformasjonsside](media/customer-portal-order-information.png "Ordreinformasjonsside")](media/customer-portal-order-information.png "Order Information page")
+    ![Ordreinformasjonsside](media/customer-portal-order-information.png "Ordreinformasjonsside")
 
 1. Velg **Neste**.
 1. På **Varer**-siden velger du **Legg til vare**.
 
-    ![![Varer-side](media/customer-portal-items.png "Varer-side")](media/customer-portal-items.png "Items page")
+    ![Varer-side](media/customer-portal-items.png "Varer-side")
 
 1. I **Vareinformasjon**-dialogboksen angir du følgende felt:
 
@@ -76,14 +78,14 @@ Her er standardtrinnene for å sende en ordre fra kundeportalen.
     - **Enhet** – Angi måleenheten (f.eks. **per.**, **kg** eller **boks**).
     - **Estimert nettobeløp** – verdien beregnes som den estimerte prisen på varen × antallet for den valgte enheten.
 
-    ![![Dialogboksen Vareinformasjon](media/customer-portal-item-information.png "Dialogboksen Vareinformasjon")](media/customer-portal-item-information.png "Item Information dialog box")
+    ![Dialogboksen Vareinformasjon](media/customer-portal-item-information.png "Dialogboksen Vareinformasjon")
 
 1. Velg **Send** for å legge til varen i ordren.
 1. Gjenta trinn 4 til 6 til du har lagt til alle varene du vil bestille.
 1. Når du er ferdig med å legge til varer, velger du **Neste** på **Varer**-siden.
 1. På **Ordre informasjon**-siden ser du et sammendrag av ordren. Se gjennom ordreinnholdet og leveringsdetaljene. Hvis alt ser riktig ut, velger du **Send** for å sende ordren.
 
-    ![![Ordreinformasjonsside](media/customer-portal-order-submit.png "Ordreinformasjonsside")](media/customer-portal-order-submit.png "Order Information page")
+    ![Ordreinformasjonsside](media/customer-portal-order-submit.png "Ordreinformasjonsside")
 
 ### <a name="standard-data-setup"></a>Standard datakonfigurasjon
 
@@ -148,19 +150,19 @@ Alle kontrollene i kundeportalen er innebygde Power Apps-portalkontroller. Du ka
 
 Den eneste egendefinerte kontrollen som er inkludert i kundeportalmalen, brukes til å opprette flisene på startsiden.
 
-![![Fliser på startsiden](media/customer-portal-home-page-tiles.png "Fliser på startsiden")](media/customer-portal-home-page-tiles.png "Tiles on the home page")
+![Fliser på startsiden](media/customer-portal-home-page-tiles.png "Fliser på startsiden")
 
 Følg fremgangsmåten nedenfor for å endre flisene.
 
 1. Åpne [Portal Management-appen](https://docs.microsoft.com/powerapps/maker/portals/configure/configure-portal).
-1. Velg **Sidemaler**i navigasjonsruten til venstre.
+1. Velg **Sidemaler** i navigasjonsruten til venstre.
 
-    ![![Navigasjonsrute for Portal Management](media/customer-portal-nav.png "Navigasjonsrute for Portal Management")](media/customer-portal-nav.png "Portal Management navigation pane")
+    ![Navigasjonsrute for Portal Management](media/customer-portal-nav.png "Navigasjonsrute for Portal Management")
 
 1. Velg sidemalen som heter **Hjem**.
 1. I **Webmal**-feltet velger du **Hjem**-koblingen for å åpne kildekoden for denne siden.
 
-    ![![Webmal-felt](media/customer-portal-web-template.png "Webmal-felt")](media/customer-portal-web-template.png "Web Template field")
+    ![Webmal-felt](media/customer-portal-web-template.png "Webmal-felt")
 
 1. Nå skal du kunne se alle kildekodene for hjemmesiden, og du kan endre dem slik du ønsker.
 

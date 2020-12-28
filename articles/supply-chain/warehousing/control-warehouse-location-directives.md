@@ -3,7 +3,7 @@ title: Kontrollere lagerarbeid ved hjelp av arbeidsmaler og lokasjonsdirektiver
 description: Dette emnet beskriver hvordan du bruker arbeidsmaler og lokasjonsdirektiver for å bestemme hvordan og hvor arbeid utføres i lageret.
 author: perlynne
 manager: tfehr
-ms.date: 02/05/2020
+ms.date: 10/20/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,14 +16,14 @@ ms.custom: 72921
 ms.assetid: 377ab8af-5b0c-4b5e-a387-06ac1e1820c0
 ms.search.region: Global
 ms.author: perlynne
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2020-10-09
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e000f2779c50d3216a38d55df659bd683cadf6eb
-ms.sourcegitcommit: ecad92c9cb7e9e57688e678f79f747673c921df5
+ms.openlocfilehash: 21f6240b247433c7448a9aa5543996f19b3a25dd
+ms.sourcegitcommit: 4bf5ae2f2f144a28e431ed574c7e8438dc5935de
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "3692168"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "4517434"
 ---
 # <a name="control-warehouse-work-by-using-work-templates-and-location-directives"></a>Kontrollere lagerarbeid ved hjelp av arbeidsmaler og lokasjonsdirektiver
 
@@ -39,17 +39,22 @@ Siden **Arbeidsmaler** lar deg definere arbeidsoperasjoner som må utføres på 
 
 Arbeidsmaler består av et hode og tilhørende linjer. Hver arbeidsmal gjelder en bestemt *arbeidsordretype*. Mange arbeidsordretyper assosieres med kildedokumenter, for eksempel bestillinger eller salgsordrer. Imidlertid representerer andre arbeidsordretyper egne lagerprosesser, for eksempel syklustelling. *Arbeidspulje-ID* gir deg muligheten til å organisere arbeidet i grupper. 
 
-Innstillingene i arbeidshodedefinisjonen kan brukes til å bestemme når et nytt stykke arbeid skal opprettes. Du kan for eksempel angi et maksimalt antall plukklinjer og maksimalt forventet plukktid. Deretter, hvis arbeidet for en salgsordreplukkingsprosess overskrider en av disse verdiene, deles dette arbeidet inn i to stykker arbeid. 
+Bruk innstillingene i arbeidshodedefinisjonen til å bestemme når et nytt stykke arbeid skal opprettes. Du kan for eksempel angi et maksimalt antall plukklinjer og maksimalt forventet plukktid. Deretter, hvis arbeidet for en salgsordreplukkingsprosess overskrider en av disse verdiene, deles dette arbeidet inn i to stykker arbeid.
 
-Arbeidslinjene representerer de fysiske oppgavene som kreves for å behandle arbeidet. For eksempel for en prosess for utgående lager, kan det være en arbeidslinje for å plukke opp varene i lageret og en annen linje for å plassere disse varene i et oppsamlingsområde. Det kan deretter være en ekstra linje for å plukke varene fra oppsamling og en annen linje for å plassere varene i en lastebil som en del av lastingsprosessen. Du kan angi en *direktivkode* på arbeidsmallinjene. En direktivkode er koblet til et lokasjonsdirektiv, og bidrar derfor til å sikre at lagerarbeidet blir behandlet på riktig lokasjon i lageret. 
+Bruk **Arbeidshodeskift**-knappen til å definere når systemet skal opprette nye arbeidshoder. Hvis du for eksempel vil opprette et arbeidshode for hvert _ordrenummer_, velger du **Rediger spørring** i handlingsruten, og deretter legger du til **Ordrenummer**-feltet i **Sortering**-fanen i redigeringsprogrammet for spørring. Felter som legges til i **Sortering**-fanen, kan velges som *grupperingsfelter*. Hvis du vil angi grupperingsfeltene, velger du **Arbeidshodeskift** i handlingsruten, og deretter merker du av i avmerkingsboksen i **Grupper etter dette feltet**-kolonnen for hvert felt du vil bruke som et grupperingsfelt.
 
-Du kan definere en spørring til å kontrollere når en bestemt arbeidsmal brukes. Du kan for eksempel angi en begrensning slik at en bestemt mal kan brukes for arbeid bare i et bestemt lager. Du kan også ha flere maler som brukes til å opprette arbeid for utgående ordrebehandling, avhengig av salgsopprinnelsen. Systemet bruker **Serienummer**-feltet for å bestemme rekkefølgen som de tilgjengelig arbeidsmalene vurderes i. Hvis du har en bestemt spørring etter en bestemt arbeidsmal, bør du derfor gi den et lavt sekvensnummer. Denne spørringen vil deretter bli evaluert før andre, mer generelle spørringer. 
+Arbeidslinjene representerer de fysiske oppgavene som kreves for å behandle arbeidet. For en prosess for utgående lager kan det for eksempel være en linje for å plukke opp varene i lageret og en annen linje for å plassere disse varene i et oppsamlingsområde. Det kan deretter være en ekstra linje for å plukke varene fra oppsamling og en annen linje for å plassere varene i en lastebil som en del av lastingsprosessen. Du kan angi en *direktivkode* på arbeidsmallinjene. En direktivkode er koblet til et lokasjonsdirektiv, og bidrar derfor til å sikre at lagerarbeidet blir behandlet på riktig lokasjon i lageret.
+
+Du kan definere en spørring til å kontrollere når en bestemt arbeidsmal brukes. Du kan for eksempel angi en begrensning slik at en bestemt mal kan brukes for arbeid bare i et bestemt lager. Du kan også ha flere maler som oppretter arbeid for utgående ordrebehandling, avhengig av salgsopprinnelsen. Systemet bruker **Serienummer**-feltet for å bestemme rekkefølgen som de tilgjengelig arbeidsmalene vurderes i. Hvis du har en bestemt spørring etter en bestemt arbeidsmal, bør du derfor gi den et lavt sekvensnummer. Denne spørringen vil deretter bli evaluert før den andre, mer generelle spørringer.
+
+> [!NOTE]
+> Hvis du vil hindre at systemet automatisk overskriver *sekvensnumre* for arbeidsmal etter at en mal er slettet, aktiverer du funksjonen *Bevar sekvensnumre for arbeidsmal ved sletting* i [Funksjonsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 Hvis du vil stoppe eller pause en arbeidsprosess, kan du bruke innstillingen **Stopp arbeid** for arbeidslinjen. I så fall vil arbeideren som utfører arbeidet, ikke bli bedt om å utføre neste arbeidslinjetrinn. For å flytte til neste trinn må denne arbeideren eller en annen arbeider velge arbeidet på nytt. Du kan også skille oppgavene i et stykke arbeid ved å bruke en annen *arbeidsklasse-ID* på arbeidsmallinjene.
 
 ## <a name="location-directives"></a>Lokasjonsdirektiver
 
-Lokasjonsdirektiver er regler som bidrar til å identifisere plukke- og plasseringslokasjoner for lagerbevegelse. I en salgsordretransaksjon bestemmer for eksempel et lokasjonsdirektiv hvor varene blir plukket og hvor de plukkede varene skal plasseres. Lokasjonsdirektiver består av et hode og tilknyttede linjer, og du oppretter dem på siden **Lokasjonsdirektiver**. 
+Lokasjonsdirektiver er regler som bidrar til å identifisere plukke- og plasseringslokasjoner for lagerbevegelse. I en salgsordretransaksjon bestemmer for eksempel et lokasjonsdirektiv hvor varene blir plukket og hvor de plukkede varene skal plasseres. Lokasjonsdirektiver består av et hode og tilknyttede linjer, og du oppretter dem på siden **Lokasjonsdirektiver**.
 
 I hodet må hvert lokasjonsdirektiv må være knyttet til en *arbeidsordretype* som angir typen lagertransaksjon som direktivet som skal brukes for, for eksempel salgsordrer, etterfylling eller råvareplukking. *Arbeidstypen* angir om lokasjonsdirektivet skal brukes for å plukke eller plassere arbeid eller en annen lagerprosess, for eksempel telle eller lagerstatusendringer. Du må også angi et *område* og et *lager*. En *direktivkode* som du angir i hodet, kan brukes til å koble lokasjonsdirektivet til én eller flere maler for arbeid. 
 
@@ -60,3 +65,15 @@ Lokasjonsdirektivlinjene setter tilleggsbegrensninger på bruken av reglene for 
 Lokasjonsdirektiver har et ekstra detaljnivå: *lokasjonsdirektivhandlinger*. Du kan definere flere lokasjonsdirektivhandlinger for hver linje. Et serienummer brukes igjen til å bestemme rekkefølgen som handlingene er vurdert i. På dette nivået kan du definere en spørring for å definere hvordan du finner den beste plasseringen i lageret. Du kan også bruke forhåndsdefinerte innstillinger for **Strategi** for å finne en optimal lokasjon.
 
 Hvis du vil ha mer informasjon om hvordan du oppretter og konfigurerer lokasjonsdirektiver, kan du se [Opprette et lokasjonsdirektiv](create-location-directive.md).
+
+### <a name="how-location-directives-work"></a>Slik fungerer lokasjonsdirektiver
+
+Lokasjonsdirektiver bestemmer *hvor* varene skal plukkes og *hvor* de skal plasseres. Systemet evaluerer et lokasjonsdirektiv mot hver arbeidslinje og velger deretter en lokasjon, basert på arbeidslinjedetaljene. Systemet finner først alle lokasjonsdirektiver som samsvarer med en bestemt arbeidslinje (for eksempel at de er for det riktige lageret og samsvarer med spørringen). Deretter evalueres direktivene som det har funnet, sekvensielt.
+
+> [!NOTE]
+> Det finnes spesialtilfeller der plukkstedet eller plasseringsstedet er forhåndsvalgt. Under _innkjøpsregistreringen_ er for eksempel den første plukkingen alltid fra lokasjonen der registreringen inntreffer. Et annet eksempel er *lagerflyting med mal*, der lagerarbeideren velger plukklokasjonen, og bare plasseringslokasjoner blir funnet via lokasjonsdirektiver.
+
+## <a name="additional-resources"></a>Tilleggsressurser
+
+- Video: [Dyp dykk i konfigurasjon av lagerstyring](https://community.dynamics.com/365/b/techtalks/posts/warehouse-management-configuration-deep-dive-october-14-2020)
+- Hjelpeemne: [Opprette lokasjonsdirektiver](create-location-directive.md)

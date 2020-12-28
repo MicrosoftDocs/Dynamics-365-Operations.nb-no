@@ -16,14 +16,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2019-06-21
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 071aa79ea75e9a94187dd74dabab940e2cce0f92
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: 6175061456a03228043ea13767845cf4b54d6b2e
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2551962"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4462161"
 ---
-# <a name="update-onboarding-guides-in-dynamics-365-talent---onboard"></a>Oppdatere jobbintroduksjonsveiledninger i Dynamics 365 Talent – Onboard
+# <a name="update-onboarding-guides"></a>Oppdatere jobbintroduksjonsveiledninger
 
 [!include [banner](includes/banner.md)]
 
@@ -38,7 +38,7 @@ Hvis du må gjøre endringer i jobbintroduksjonsveiledninger i Microsoft Dynamic
 2. Velg veiledningen du vil redigere.
 3. Gjør alle de ønskede endringene, og velg deretter **Lagre**-knappen (disksymbolet).
 
-    ![[Lagre endringer i en jobbintroduksjonsveiledning](./media/onboard-save.png)](./media/onboard-save.png)
+    ![[Lagre endringer i en veiledning for jobbintroduksjon](./media/onboard-save.png)](./media/onboard-save.png)
 
 Onboard vil automatisk sende den nyansatte en e-post som indikerer hva endringene er. For enkel identifisering vil et rødt **Ny**-merke vises ved siden av hver endring.
 

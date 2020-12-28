@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: stuharg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: ea3517a4f2b84db8a87a97d2f644bb4436f8693f
-ms.sourcegitcommit: adf196c51e2b6f532d99c177b4c6778cea8a2efc
+ms.openlocfilehash: 7d552f29fd8f52b512a7c21b36b0a814cac50646
+ms.sourcegitcommit: 4bf5ae2f2f144a28e431ed574c7e8438dc5935de
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "3533442"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "4517190"
 ---
 # <a name="create-an-e-commerce-site"></a>Opprette et e-handelsområde
 
@@ -32,14 +32,14 @@ ms.locfileid: "3533442"
 
 Dette emnet beskriver trinnene og informasjonen som kreves for å opprette et nytt e-handelsområde i Dynamics 365 Commerce-områdebyggeren.
 
-Når du lisensierer mulighetene for e-handel, blir områdebygger klargjort med et startområde som du kan bruke som grunnlag for ditt eget område. Hvis du imidlertid vil starte fra grunnen av, eller hvis du vil opprette et annet område, må du opprette et nytt område i områdets redigeringsmiljø. 
+Når du lisensierer Dynamics 365 Commerce-mulighetene, blir områdebygger klargjort med et startområde som du kan bruke som grunnlag for ditt eget område. Hvis du imidlertid vil starte fra grunnen av, eller hvis du vil opprette et annet område, må du opprette et nytt område i områdets redigeringsmiljø. 
 
 ## <a name="set-up-your-site"></a>Konfigurere området
 
 Gjør følgende for å opprette området.
 
 1. Åpne områdebyggermiljøet. Du kan finne en kobling til områdebyggertjenesten i Microsoft Lifecycle Services (LCS) på siden for miljøfunksjoner for Commerce.
-1. Velg **Nytt område**på startsiden for områderedigeringsmiljøet.
+1. Velg **Nytt område** på startsiden for områderedigeringsmiljøet.
 1. Angi følgende informasjon i dialogboksen **Nytt område**.
 
 | Felt                               | Beskrivelse |
@@ -58,13 +58,13 @@ Når området er opprettet, kan du kontrollere at det er tilknyttet nettbutikken
 
 [Konfigurere domenenavnet](configure-your-domain-name.md)
 
-[Distribuere et nytt e-handelsområde](deploy-ecommerce-site.md)
+[Distribuere en ny e-handelsleier](deploy-ecommerce-site.md)
 
-[Knytte et nettområde til en kanal](associate-site-online-store.md)
+[Knytte et Dynamics 365 Commerce-nettsted til en nettkanal](associate-site-online-store.md)
 
 [Administrere robots.txt-filer](manage-robots-txt-files.md)
 
-[Laste opp URL-adresser for omadressering samtidig](upload-bulk-redirects.md)
+[Laste opp masseomdirigeringer for URL-adresse](upload-bulk-redirects.md)
 
 [Konfigurere en B2C-leier i Commerce](set-up-B2C-tenant.md)
 

@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: raprofit
 ms.search.validFrom: 2020-10-13
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 64a85840be328702a06779390fe383fd1896fd04
-ms.sourcegitcommit: d66fd72342931fad25a696b251c05781280d36c4
+ms.openlocfilehash: cbf00f7428c9b1852a5bf54fd7e30a3bddc1a31e
+ms.sourcegitcommit: 0e60df840688932795b9c8f8fd45d98f5ab6ba8c
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "4011432"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "4668951"
 ---
 # <a name="go-live-faq"></a>Vanlige spørsmål om aktivering 
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 Dette emnet viser vanlige spørsmål om hvordan du kan arbeide med et Dynamics 365 Human Resources-implementeringsprosjekt. 
 
@@ -76,7 +78,7 @@ Databaser beskyttes av automatisk sikkerhetskopiering med følgende frekvenser:
 | Differensiell sikkerhetskopi av database | Hver 12-24. time |
 | Sikkerhetskopi av transaksjonslogg | Hver 5 til 10 minutter |
 
-Microsoft beholder tilstrekkelige sikkerhetskopier for å tillate tidspunktbasert gjenoppretting (PITR) i løpet av de siste sju dagene. 
+Microsoft beholder tilstrekkelige sikkerhetskopier for å tillate tidspunktbasert gjenoppretting (PITR) i løpet av de siste 14 dagene. 
 
 Hvis du vil ha mer informasjon, se [Lær om automatisk sikkerhetskopiering av SQL-databasen](https://docs.microsoft.com/azure/azure-sql/database/automated-backups-overview?tabs=single-database). 
 

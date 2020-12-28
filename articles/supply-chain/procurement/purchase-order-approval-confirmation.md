@@ -20,11 +20,11 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: e3879079e233a881ea0adc1f5e2ba39ab70b372d
-ms.sourcegitcommit: e3f4dd2257a3255c2982f4fc7b72a1121275b88a
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: nb-NO
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4018819"
+ms.locfileid: "4434728"
 ---
 # <a name="approve-and-confirm-purchase-orders"></a>Godkjenne og bekrefte bestillinger
 
@@ -35,7 +35,7 @@ Dette emnet beskriver statusene som en bestilling går gjennom når den er oppre
 Når du har opprettet en bestilling, må den kanskje går gjennom en godkjenningsprosess. Når leverandøren har godtatt ordren, settes bestillingen til statusen **Bekreftet**.
 
 ## <a name="approval-of-purchase-orders"></a>Godkjenne bestillinger
-Bestillinger som ikke bruker endringsadministrasjon, har statusen **Godkjent** så snart de er opprettet, mens bestillinger som bruker endringsadministrasjon, har statusen **Utkast** når de opprettes. En bestilling som er opprettet ved å autorisere en planlagt bestilling fra hovedplanlegging, settes alltid til statusen **Godkjent** , uavhengig av innstillingene for endringsadministrasjon. En bestilling oppretter bare lagertransaksjoner når den får statusen **Godkjent**. Derfor vises ikke denne beholdningen som tilgjengelig for reservasjon eller merking før ordren er godtatt.
+Bestillinger som ikke bruker endringsadministrasjon, har statusen **Godkjent** så snart de er opprettet, mens bestillinger som bruker endringsadministrasjon, har statusen **Utkast** når de opprettes. En bestilling som er opprettet ved å autorisere en planlagt bestilling fra hovedplanlegging, settes alltid til statusen **Godkjent**, uavhengig av innstillingene for endringsadministrasjon. En bestilling oppretter bare lagertransaksjoner når den får statusen **Godkjent**. Derfor vises ikke denne beholdningen som tilgjengelig for reservasjon eller merking før ordren er godtatt.
 
 Du aktiverer endringsadministrasjon for bestillinger ved å angi alternativet **Aktiver endringsadministrasjon** på siden **Parametere for innkjøp og leverandører**. Når endringsadministrasjon er aktivert, må bestillinger gå gjennom en arbeidsflyt for godkjenning etter at de er fullført. Supply Chain Management har et redigeringsprogram for arbeidsflytprosess der du kan definere en arbeidsflyt til å representere din godkjenningsprosess. Denne arbeidsflyten kan inneholde regler for automatisk godkjenning, regler som bestemmer hvem som skal tilordnes til godkjenning av bestemte bestillinger og regler for eskalering av en arbeidsflyt som har ventet godkjenning i lang tid. For alle aktivere prosessen for endringsadministrasjon for alle eller bestemte leverandører. Du kan også definere prosessen slik at den kan overstyres for individuelle bestillinger.
 
@@ -67,9 +67,9 @@ En leverandør kan be om en type forsikring om at betalingen vil utføres for et
 ## <a name="changing-purchase-orders"></a>Endre bestillinger
 I noen tilfeller må du kanskje endre en bestilling når den har får godkjenningsstatusen **Godkjent** eller **Bekreftet**.
 
-Hvis bestillingen ble opprettet ved hjelp av en prosess for endringsadministrasjon, kan du gjøre endringer ved å tilbakekalle ordren, eller hvis ordren allerede er godkjent, ved hjelp av handlingen **Be om endring**. I så fall endres godkjenningsstatusen tilbake til **Utkast** , og deretter kan du endre ordren. Når du er ferdig med å gjøre endringer, må du kanskje sende bestillingen til ny godkjenning. Du kan konfigurere hvilke typer endringer som krever ny godkjenning ved hjelp en policyregel for **Regel for ny godkjenning for bestillinger** på siden **innkjøpspolicyer**.
+Hvis bestillingen ble opprettet ved hjelp av en prosess for endringsadministrasjon, kan du gjøre endringer ved å tilbakekalle ordren, eller hvis ordren allerede er godkjent, ved hjelp av handlingen **Be om endring**. I så fall endres godkjenningsstatusen tilbake til **Utkast**, og deretter kan du endre ordren. Når du er ferdig med å gjøre endringer, må du kanskje sende bestillingen til ny godkjenning. Du kan konfigurere hvilke typer endringer som krever ny godkjenning ved hjelp en policyregel for **Regel for ny godkjenning for bestillinger** på siden **innkjøpspolicyer**.
 
-Hvis en del av det bestilte antallet for en bestillingslinje er levert, kan du ikke endre det bestilte antallet når bestillingen har statusen **Utkast**. Du kan imidlertid endre antallet for **Gjenstående levering** på linjen for bestillingen som er i **Utkast** -status.
+Hvis en del av det bestilte antallet for en bestillingslinje er levert, kan du ikke endre det bestilte antallet når bestillingen har statusen **Utkast**. Du kan imidlertid endre antallet for **Gjenstående levering** på linjen for bestillingen som er i **Utkast**-status.
 
 Når en ordre er bekreftet, kan du ikke lenger slette den. Du kan imidlertid avbryte det totale antallet eller eventuelle restantall i en ordre, forutsatt at antallet ikke er mottatt eller fakturert. Du kan deretter bruke handlingen **Fullfør** til å forhindre videre behandling. 
 
@@ -78,11 +78,11 @@ Når en ordre er bekreftet, kan du ikke lenger slette den. Du kan imidlertid avb
 
 En bestilling kan annulleres ved å bruke handlingen **Avbryt** i hodet.
 
-Hvis antallet er delvis registrert, mottatt eller fakturert, kan du bare annullere restantallet som ikke er registrert, mottatt eller fakturert. Ordreantallet reduseres deretter tilsvarende. Når antallet på linjen oppdateres, oppdateres også linjestatusen. For eksempel er det opprinnelige antallet på linjen 5, og et antall på 3 mottas. I dette tilfellet kan bare to avlyses. Da blir linjen oppdatert til **Mottatt** -status.
+Hvis antallet er delvis registrert, mottatt eller fakturert, kan du bare annullere restantallet som ikke er registrert, mottatt eller fakturert. Ordreantallet reduseres deretter tilsvarende. Når antallet på linjen oppdateres, oppdateres også linjestatusen. For eksempel er det opprinnelige antallet på linjen 5, og et antall på 3 mottas. I dette tilfellet kan bare to avlyses. Da blir linjen oppdatert til **Mottatt**-status.
 
-Hvis det legges til en leveringsrest i ordrelinjen, og den overskrider antallet på ordrelinjen, vil ikke **Avbryt** -handlingen avbryte det overflødige antallet. Linjen blir i stedet værende i **Åpen ordre** -status, fordi den har et restantall. For eksempel er det opprinnelige antallet på linjen 5, og leveringsresten er 7. Hvis ordren avbrytes, avbrytes fem, og et antall på 2 gjenstår, som du kan se i lagertransaksjonene.
+Hvis det legges til en leveringsrest i ordrelinjen, og den overskrider antallet på ordrelinjen, vil ikke **Avbryt**-handlingen avbryte det overflødige antallet. Linjen blir i stedet værende i **Åpen ordre**-status, fordi den har et restantall. For eksempel er det opprinnelige antallet på linjen 5, og leveringsresten er 7. Hvis ordren avbrytes, avbrytes fem, og et antall på 2 gjenstår, som du kan se i lagertransaksjonene.
 
-Hvis du vil annullere hele antallet på en bestillingslinje, må du annullere leveringsrestantallet på linjen. Da vil linjen bli oppdatert til **Avbrutt** -status.
+Hvis du vil annullere hele antallet på en bestillingslinje, må du annullere leveringsrestantallet på linjen. Da vil linjen bli oppdatert til **Avbrutt**-status.
 
 Hvis en bestilling er under endringsstyring, må endringer, for eksempel annullering av ordren eller leveringsresten, sendes til arbeidsflytsystemet og godkjennes før prosessen kan fullføres og lagertransaksjonene kan oppdateres som annullert.
 

@@ -1,6 +1,6 @@
 ---
 title: Distribuere en ny e-handelsleier
-description: Dette emnet beskriver hvordan du distribuerer en ny e-handelsleier ved å bruke Microsoft Dynamics Lifecycle Services (LCS).
+description: Dette emnet beskriver hvordan du distribuerer et nytt Dynamics 365 Commerce-e-handelsområde ved å bruke Microsoft Dynamics Lifecycle Services (LCS).
 author: psimolin
 manager: annbe
 ms.date: 07/02/2020
@@ -17,19 +17,19 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 00f35b516dbf6ab4d4d9171c84a16b89f6afe832
-ms.sourcegitcommit: adf196c51e2b6f532d99c177b4c6778cea8a2efc
+ms.openlocfilehash: 157dc8225e5bbf9338a1b5a79a2880e8a8c4bf10
+ms.sourcegitcommit: 4bf5ae2f2f144a28e431ed574c7e8438dc5935de
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "3533281"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "4517288"
 ---
 # <a name="deploy-a-new-e-commerce-tenant"></a>Distribuere en ny e-handelsleier
 
 
 [!include [banner](includes/banner.md)]
 
-Dette emnet beskriver hvordan du distribuerer et nytt e-handelsområde ved å bruke Microsoft Dynamics Lifecycle Services (LCS).
+Dette emnet beskriver hvordan du distribuerer et nytt Dynamics 365 Commerce-e-handelsområde ved å bruke Microsoft Dynamics Lifecycle Services (LCS).
 
 ## <a name="overview"></a>Oversikt
 
@@ -37,7 +37,7 @@ Microsoft Dynamics Lifecycle Services (LCS) er et skybasert samarbeidsområde so
 
 Hvis du vil vite mer om LCS, se [Brukerveiledning for Lifecycle Services](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-user-guide).
     
-## <a name="get-started"></a>Komme i gang
+## <a name="get-started"></a>Kom i gang
 
 Før du kan initialisere e-handel, må du initialisere et prosjekt, et miljø og en Retail Cloud Scale Unit (RCSU). Hvis du vil utføre initialiseringen i LCS, må du ha tillatelse til rollen Prosjekteier eller rollen Miljøadministrator. Produksjons- og sandkassemiljøtopologiene støttes.
 
@@ -80,11 +80,11 @@ Når du har samlet inn den nødvendige informasjonen, følger du denne fremgangs
 1. På neste side fyller du ut nødvendig informasjon, og deretter sender du inn skjemaet. Du kommer tilbake til kategorien **e-handel**, der du skal se at initialiseringen er startet.
 1. Hvis du vil vise initialiseringsegenskaper, kan du velge **Oppdater** eller gå tilbake til **e-handel**.
     
-Når e-handel startes fra LCS, klargjør systemet flere komponenter som kreves for e-handel, og knytter dem til miljøet. Når klargjøringen er fullført, oppdateres kategorien **e-handel** på siden **Detaljhandelsstyring** for å gjenspeile klargjøringen. Siden viser de siste tilpasningsdistribusjonene og statusen til eventuelle andre pågående distribusjoner. Den inneholder også koblinger til e-handelsområdet og e-handelsområdebyggeren der områder redigeres.
+Når e-handel startes fra LCS, klargjør systemet flere komponenter som kreves for e-handel, og knytter dem til miljøet. Når klargjøringen er fullført, oppdateres kategorien **e-handel** på siden **Detaljhandelsstyring** for å gjenspeile klargjøringen. Siden viser de siste tilpasningsdistribusjonene og statusen til eventuelle andre pågående distribusjoner. Den inneholder også koblinger til e-handelsområdet og Commerce-områdebyggeren der områder redigeres.
 
-## <a name="access-site-builder"></a>Tilgang til områdebygger
+## <a name="access-commerce-site-builder"></a>Tilgang til Commerce-områdebygger
 
-Hvis du vil ha tilgang til områdebygger, går du til **e-handel**-fanen på **Administrasjon av detaljhandel**-siden i LCS og velger **Verktøy for administrasjon av e-handelsområdet**-koblingen. Målsiden for områdebygger viser en leiernivåvisning. Fra denne siden kan du gjøre følgende:
+Hvis du vil ha tilgang til Commerce-områdebygger, går du til **e-handel**-fanen på **Administrasjon av detaljhandel**-siden i LCS og velger **Verktøy for administrasjon av e-handelsområdet**-koblingen. Målsiden for områdebygger viser en leiernivåvisning. Fra denne siden kan du gjøre følgende:
 
 - Endre innstillinger på leiernivå.
 - Navigere til et område du har opprettet og har tillatelse til å vise. 
@@ -97,11 +97,11 @@ Hvis du vil ha tilgang til områdebygger, går du til **e-handel**-fanen på **A
 
 [Opprette et e-handelsområde](create-ecommerce-site.md)
 
-[Knytte et nettområde til en kanal](associate-site-online-store.md)
+[Knytte et Dynamics 365 Commerce-nettsted til en nettkanal](associate-site-online-store.md)
 
 [Administrere robots.txt-filer](manage-robots-txt-files.md)
 
-[Laste opp URL-adresser for omadressering samtidig](upload-bulk-redirects.md)
+[Laste opp masseomdirigeringer for URL-adresse](upload-bulk-redirects.md)
 
 [Konfigurere en B2C-leier i Commerce](set-up-B2C-tenant.md)
 

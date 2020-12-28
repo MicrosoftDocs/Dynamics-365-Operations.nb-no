@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: WHSShipConsolidationPolicy, WHSShipConsolidationWorkbench, WHSShipConsolidationError, WHSShipConsolidationSetShipment, WHSShipConsolidationPolicySelect, WHSShipPlanningListPage, TMSCarrierGroup, WHSShipConsolidationTemplate
+ms.search.form: WHSShipConsolidationPolicy, WHSShipConsolidationWorkbench, WHSShipConsolidationError, WHSShipConsolidationSetShipment, WHSShipConsolidationPolicySelect, WHSShipPlanningListPage, TMSCarrierGroup, WHSShipConsolidationTemplate, WHSShipConsolidationTemplateApply, WHSShipConsolidationTemplateCreate
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: 10.0.3
-ms.openlocfilehash: 1f2e1bcd220f0cd94fb1515e42fd3f8250c1c621
-ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
+ms.openlocfilehash: f895b13b2e11d4cb341f80b3cfeb40ed998ccfc4
+ms.sourcegitcommit: d9bffbeae2ba14f06294dd275383077d4d65c4fa
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4016361"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "4654226"
 ---
 # <a name="shipment-consolidation-policies"></a>Policyer for forsendelseskonsolidering
 
@@ -39,7 +39,7 @@ Før policyer for forsendelseskonsolidering ble innført, eksisterte konsolideri
 
 Spørringer brukes til å identifisere policyen for forsendelseskonsolidering som gjelder, og deretter bestemmer et redigerbart sett med felt hvordan belastningslinjene grupperes på forsendelsesnivået. (Dette mønsteret ligner på mønsteret som bølgemaler følger.) I tillegg er alternativet **Konsolider med eksisterende forsendelser** lagt til i hver policy. Når dette alternativet er aktivert, finner prosedyren *Frigi til lager* forsendelser for konsolidering ved å søke etter eksisterende forsendelser som ble opprettet basert på den samme konsolideringspolicyen. I dette tilfellet velger systemet en eksisterende forsendelse eller en som skal lastes inn, i stedet for å opprette en ny. Systemet vil imidlertid bare konsolidere med eksisterende forsendelser med statusen *Åpen*. Forsendelser som tilhører en lanseringsbølge med statusen *Frigitt* eller høyere, vurderes ikke som mål for konsolidering.
 
-Når policyer for forsendelseskonsolidering er tilgjengelige, er innstillingen **Konsolider forsendelse ved frigivelse til lager** som tidligere var tilgjengelig på oppsettssiden **Lagere** , skjult. For å hjelpe deg med å gå til den nye funksjonen for forsendelseskonsolidering, oppretter en funksjon på siden **Policyer for forsendelseskonsolidering** en standard policy som automatisk inkluderer den gamle innstillingen for eksisterende lagre. Når denne standardpolicyen er opprettet, blir ikke innstillingen **Konsolider forsendelse ved frigivelse til lager** på oppsettssiden **Lagere** lenger vurdert.
+Når policyer for forsendelseskonsolidering er tilgjengelige, er innstillingen **Konsolider forsendelse ved frigivelse til lager** som tidligere var tilgjengelig på oppsettssiden **Lagere**, skjult. For å hjelpe deg med å gå til den nye funksjonen for forsendelseskonsolidering, oppretter en funksjon på siden **Policyer for forsendelseskonsolidering** en standard policy som automatisk inkluderer den gamle innstillingen for eksisterende lagre. Når denne standardpolicyen er opprettet, blir ikke innstillingen **Konsolider forsendelse ved frigivelse til lager** på oppsettssiden **Lagere** lenger vurdert.
 
 Du kan bruke siden **Frigi til lager** til å overstyre den gjeldende konsolideringspolicyen manuelt på samme måte som du kan overstyre oppfyllelsespolicyer.
 
@@ -55,11 +55,11 @@ Denne delen beskriver sidene, kommandoene og funksjonene som endres eller legges
 
 ### <a name="shipment-consolidation-policies-page"></a>Siden Policyer for forsendelseskonsolidering
 
-Policyer skilles etter arbeidsordretype. Typen **Salgsordrer** representerer forsendelser av typen _Salgsordre_ , og typen **Overføringsordrer** representerer forsendelser av typen _Utstedelse for overføring_.
+Policyer skilles etter arbeidsordretype. Typen **Salgsordrer** representerer forsendelser av typen _Salgsordre_, og typen **Overføringsordrer** representerer forsendelser av typen _Utstedelse for overføring_.
 
 Hver policy for forsendelseskonsolidering har en spørring som definerer når den brukes, og et serienummer som bestemmer utføringsrekkefølgen. Konsolidering brukes for hver unike kombinasjon av de valgte feltene. En tilleggsparameter som angis, brukes til konsolidering med eksisterende (åpne) forsendelser. Policyene evalueres og brukes hver gang det opprettes en ny forsendelse (før bølgebehandling).
 
-Hvis en policy mangler noen obligatoriske felt, eller hvis den inkluderer alle forbudte felt, merkes policyen som ugyldig i **Valgt** -delen. Listene over obligatoriske og forbudte felt er hardkodede og kan utvides.
+Hvis en policy mangler noen obligatoriske felt, eller hvis den inkluderer alle forbudte felt, merkes policyen som ugyldig i **Valgt**-delen. Listene over obligatoriske og forbudte felt er hardkodede og kan utvides.
 
 Følgende liste viser de obligatoriske feltene. Ettersom forsendelser alltid deles opp basert på disse feltene, kan du ikke gruppere flere forsendelser som har ulike verdier for disse feltene.
 
@@ -122,15 +122,15 @@ Tabellen nedenfor viser hvordan forsendelseskonsolidering fungerer når du ikke 
 | Uten policyer for forsendelseskonsolidering | Med policyer for forsendelseskonsolidering |
 |---|----|
 | Gjelder ikke | Salgs- eller overføringsforsendelser som velges for konsolidering, må ha samme konsolideringspolicy som forsendelsen som blir opprettet, eller de må tilordnes til en åpen forsendelse (når alternativet **Konsolider med eksisterende forsendelser** er aktivert). |
-| Prosedyren *Frigi til lager* søker ikke etter eksisterende forsendelser for å finne en forsendelse for konsolidering. Bare forsendelser som er opprettet av en gjeldende forekomst av prosedyren *Frigi til lager* , brukes til å finne en forsendelse for konsolidering. | Hvis alternativet **Konsolider med eksisterende forsendelser** er aktivert for en konsolideringspolicy som for øyeblikket brukes, søker prosedyren *Frigi til lager* gjennom eksisterende forsendelser som ble opprettet basert på den samme konsolideringspolicyen for å finne en forsendelse for konsolidering. Hvis du har to policyer, vil derfor aldri en forsendelse som opprettes basert på policy 2, konsolideres med en forsendelse som ble opprettet basert på policy 1. |
+| Prosedyren *Frigi til lager* søker ikke etter eksisterende forsendelser for å finne en forsendelse for konsolidering. Bare forsendelser som er opprettet av en gjeldende forekomst av prosedyren *Frigi til lager*, brukes til å finne en forsendelse for konsolidering. | Hvis alternativet **Konsolider med eksisterende forsendelser** er aktivert for en konsolideringspolicy som for øyeblikket brukes, søker prosedyren *Frigi til lager* gjennom eksisterende forsendelser som ble opprettet basert på den samme konsolideringspolicyen for å finne en forsendelse for konsolidering. Hvis du har to policyer, vil derfor aldri en forsendelse som opprettes basert på policy 2, konsolideres med en forsendelse som ble opprettet basert på policy 1. |
 | Gjelder ikke | Hvis en liste med felt for konsolideringspolicy er tomme, eller hvis det ikke blir funnet en policy, opprettes det en ny forsendelse for hver salgsordre- eller overføringsordrelinje. |
 | I dette konsolideringsfeltet defineres den unike kombinasjonen av verdier som brukes til å konsolidere forsendelser for en *overføringslinje*. (Alle andre felt ignoreres.)<ul><li>Ordrenummer (OrderNum)</li></ul> | I dette konsolideringsfeltet definerer felt den unike kombinasjonen av verdier som brukes til å konsolidere forsendelser for en *overføringslinje*. (Alle andre felt ignoreres.)<ul><li>Ordrenummer (OrderNum)</li><li>Leveringsmottaker (DeliveryName)</li><li>Postadresse (DeliveryPostalAddress)</li><li>ISO-landkode (CountryRegionISOCode)</li><li>Adresse (Address)</li><li>Område (InventSiteId)</li><li>Lager (InventLocationId)</li><li>Transportør (CarrierCode)</li><li>Transportørtjeneste (CarrierServiceCode)</li><li>Leveringsmåte (ModeCode)</li><li>Transportørgruppe (CarrierGroupCode)</li><li>Leveringsbetingelser (DlvTermId)</li></ul>Disse feltene er de eneste feltene som er tilgjengelige og initialisert når det opprettes en ny forsendelse. |
 | I dette konsolideringsfeltet definerer felt den unike kombinasjonen av verdier som brukes til å konsolidere forsendelser for en *salgslinje*. (Alle andre felt ignoreres.)<ul><li>Ordrenummer (OrderNum)</li><li>Kundereferanse (CustomerRef)</li><li>Kunderekvisisjon (CustomerReq)</li><li>Leveringsbetingelser (DlvTermId)</li></ul> | I dette konsolideringsfeltet definerer felt den unike kombinasjonen av verdier som brukes til å konsolidere forsendelser for en *salgslinje*. (Alle andre felt ignoreres.)<ul><li>Ordrenummer (OrderNum)</li><li>Kontonummer (AccountNum)</li><li>Leveringsmottaker (DeliveryName)</li><li>Postadresse (DeliveryPostalAddress)</li><li>ISO-landkode (CountryRegionISOCode)</li><li>Adresse (Address)</li><li>Område (InventSiteId)</li><li>Lager (InventLocationId)</li><li>Transportør (CarrierCode)</li><li>Transportørtjeneste (CarrierServiceCode)</li><li>Leveringsmåte (ModeCode)</li><li>Transportørgruppe (CarrierGroupCode)</li><li>Megler-ID (BrokerCode)</li><li>Retning (LoadDirection)</li><li>Leveringsbetingelser (DlvTermId)</li><li>Kundereferanse (CustomerRef)</li><li>Kunderekvisisjon (CustomerReq)</li></ul>Disse feltene er de eneste feltene som er tilgjengelige og initialisert når det opprettes en ny forsendelse. |
 | Gjelder ikke | Følgende konsolideringsfelt er obligatoriske for en *salgslinje* og kan ikke fjernes:<ul><li>Kontonummer (AccountNum)</li><li>Leveringsmottaker (DeliveryName)</li><li>Postadresse (DeliveryPostalAddress)</li><li>Lager (InventLocationId)</li></ul>Som standard blir disse feltene tilordnet når en ny policy opprettes. De kan ikke fjernes. |
 | Prosedyren *Frigi laster til lager* på siden **Arbeidsområde for lastplanlegging** bruker sin egen kode til å opprette forsendelser og bølger. | Policyer for forsendelseskonsolidering brukes til å bestemme hvilke felt som skal evalueres for konsolidering. Forsendelser konsolideres bare for én last. |
-| Du velger manuelt **Konsolider forsendelser** på siden **Alle forsendelser** , og deretter velger du en målbasisforsendelse. Filteret vil foreslå eventuelle eksisterende forsendelser som har tilsvarende verdier for flere nøkkelfelt. | Du velger manuelt **Konsolider forsendelser** på siden **Alle forsendelser** , og deretter velger du en målbasisforsendelse. Systemet vil foreslå andre eksisterende forsendelser ved å sammenligne verdiene for flere nøkkelfelt som er konfigurert for de aktuelle policyene for forsendelseskonsolidering. |
+| Du velger manuelt **Konsolider forsendelser** på siden **Alle forsendelser**, og deretter velger du en målbasisforsendelse. Filteret vil foreslå eventuelle eksisterende forsendelser som har tilsvarende verdier for flere nøkkelfelt. | Du velger manuelt **Konsolider forsendelser** på siden **Alle forsendelser**, og deretter velger du en målbasisforsendelse. Systemet vil foreslå andre eksisterende forsendelser ved å sammenligne verdiene for flere nøkkelfelt som er konfigurert for de aktuelle policyene for forsendelseskonsolidering. |
 | Du kan bruke kommandoen **Konsolider forsendelser** på siden **Alle forsendelser** bare for én forsendelse. | Siden **Arbeidsområde for forsendelseskonsolidering** hjelper deg med å finne et sett med forsendelser som ennå ikke er i en sendt tilstand. Disse forsendelsene analyseres basert på flere nøkkelfelt som er konfigurert i policyene for forsendelseskonsolidering. Eventuelle forsendelser der verdiene i disse feltene samsvarer, foreslås for konsolidering.<p>Du kan vedlikeholde konsolideringen manuelt ved å fjerne forsendelser fra foreslåtte konsolideringer og/eller ved å legge til leveringer i dem. Det kan oppstå flere typer feil, men du kan overstyre noen av dem.</p> |
-| **Utformingsmerknad:** Prosedyren *Frigi salgsordrer til lager automatisk* deler salgslinjer inn i grupper. Hver gruppe har sin egen unike verdi for **ReleaseToWarehouseId** , og behandles separat av prosedyren *Frigi til lager*. Denne fremgangsmåten oppretter nytt arbeid uavhengig av oppsettet for arbeidspause. | **Utformingsmerknad:** Prosedyren *Frigi salgsordrer til lager automatisk* tilordner samme verdi for **ReleaseToWarehouseId** til alle salgslinjer som behandles. Alle salgslinjer blir behandlet av prosedyren *Frigi til lager* samtidig. Hvis du vil sikre den tidligere virkemåten, må du konfigurere arbeidspause per forsendelses-ID. |
+| **Utformingsmerknad:** Prosedyren *Frigi salgsordrer til lager automatisk* deler salgslinjer inn i grupper. Hver gruppe har sin egen unike verdi for **ReleaseToWarehouseId**, og behandles separat av prosedyren *Frigi til lager*. Denne fremgangsmåten oppretter nytt arbeid uavhengig av oppsettet for arbeidspause. | **Utformingsmerknad:** Prosedyren *Frigi salgsordrer til lager automatisk* tilordner samme verdi for **ReleaseToWarehouseId** til alle salgslinjer som behandles. Alle salgslinjer blir behandlet av prosedyren *Frigi til lager* samtidig. Hvis du vil sikre den tidligere virkemåten, må du konfigurere arbeidspause per forsendelses-ID. |
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 

@@ -18,11 +18,11 @@ ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Platform update 24
 ms.openlocfilehash: a983fde8ba393ab25f2b330014e04a1379f0e4d0
-ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3010031"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4419840"
 ---
 # <a name="optimize-performance-with-auto-cleanup-tasks"></a>Optimalisere ytelsen med automatiske ryddeoppgaver
 
@@ -38,7 +38,7 @@ Satsvise jobber som kjører ofte, kan føre til uholdbar vekst i loggen for sats
 
 Planlegg en automatisk oppgave som skal rydde opp i loggen for satsvise jobber. Vi anbefaler at du konfigurerer at oppgaven skal kjøre ukentlig, men du må kanskje kjøre oppryddingen oftere eller sjeldnere, avhengig av miljøet. Fremgangsmåten nedenfor inneholder anbefalte innstillinger, men du kan endre disse i henhold til dine behov.
 
-1. Velg **Systemadministrasjon**i Human Resources.
+1. Velg **Systemadministrasjon** i Human Resources.
 
 2. I **Søk**-feltet angir **Opprydding av historikk for satsvis jobb**.
 

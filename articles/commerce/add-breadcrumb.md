@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 05e8614f53db2593ade92fdb42dc0dfe869e9407
-ms.sourcegitcommit: 765056b5dc1d0a8c27e56ff2cbd310ad3349ff09
+ms.openlocfilehash: ec9f5c72b03d9fd76055369e24491db5c7633cdf
+ms.sourcegitcommit: 4bf5ae2f2f144a28e431ed574c7e8438dc5935de
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "4055410"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "4517166"
 ---
 # <a name="breadcrumb-module"></a>Brødsmulemodul
 
@@ -46,10 +46,10 @@ Bildet nedenfor viser et eksempel på en brødsmulemodul som viser kategorihiera
 
 ## <a name="breadcrumb-module-settings"></a>Innstillinger for brødsmulemoduler
 
-Brødsmulemodulen er avhengig av **Brødsmulevisningstype på PDP** -innstillingen, som er angitt på **Områdeinnstillinger \> Utvidelser** i områdebygger. Denne innstillingen har tre mulige verdier:
+Brødsmulemodulen er avhengig av **Brødsmulevisningstype på PDP**-innstillingen, som er angitt på **Områdeinnstillinger \> Utvidelser** i områdebygger. Denne innstillingen har tre mulige verdier:
 
 - **Vis kategorihierarki** – Når denne verdien er valgt, viser brødsmulemodulen det fullstendige kategorihierarkiet for produktet som vises på PDP.
-- **Vise tilbake til resultater** – Når denne verdien er valgt, vil brødsmulemodulen vise en "Tilbake til resultater"-kobling på en PDP hvis brukeren åpnet PDP-en fra en modul som tillater en "Tilbake til resultater"-kobling. Denne funksjonaliteten er tilgjengelig når brukere navigerer fra listesider for kategorier, søk, lister og anbefalinger. For å støtte denne funksjonaliteten har modulene for produktinnsamling og søkeresultater en egenskap som heter **Tillat tilbake til resultater på PDP**. Denne egenskapen gir deg fleksibilitet til å definere hvilke moduler som støtter koblingsfunksjonen "Tilbake til resultatene" på PDP-en. Når for eksempel **Vis tilbake til resultater** er valgt for **Brødsmulevisningstype på PDP** -innstillingen i brødsmulemodulen, og **Tillat tilbake til resultater på PDP** er valgt for søkeresultatmodulen for søkesiden, vises en kobling for "Tilbake til resultater" når brukere navigerer fra søkesiden til en PDP.
+- **Vise tilbake til resultater** – Når denne verdien er valgt, vil brødsmulemodulen vise en "Tilbake til resultater"-kobling på en PDP hvis brukeren åpnet PDP-en fra en modul som tillater en "Tilbake til resultater"-kobling. Denne funksjonaliteten er tilgjengelig når brukere navigerer fra listesider for kategorier, søk, lister og anbefalinger. For å støtte denne funksjonaliteten har modulene for produktinnsamling og søkeresultater en egenskap som heter **Tillat tilbake til resultater på PDP**. Denne egenskapen gir deg fleksibilitet til å definere hvilke moduler som støtter koblingsfunksjonen "Tilbake til resultatene" på PDP-en. Når for eksempel **Vis tilbake til resultater** er valgt for **Brødsmulevisningstype på PDP**-innstillingen i brødsmulemodulen, og **Tillat tilbake til resultater på PDP** er valgt for søkeresultatmodulen for søkesiden, vises en kobling for "Tilbake til resultater" når brukere navigerer fra søkesiden til en PDP.
 - **Vis kategorihierarki og tilbake til resultater** – denne verdien er en kombinasjon av de foregående to. Når denne verdien er valgt, vil brødsmulemodulen vise både hele kategorihierarkiet og en "Tilbake til resultater"-kobling (hvis den er konfigurert) på en PDP.
 
 > [!IMPORTANT]
@@ -66,18 +66,18 @@ Brødsmulemodulen er avhengig av **Brødsmulevisningstype på PDP** -innstilling
 
 Hvis du vil legge til en brødsmulemodul på en PDP og angi de nødvendige egenskapene, følger du disse trinnene.
 
-1. Gå til **Områdeinnstillinger /> Utvidelser** , finn **Brødsmulevisningstype på PDP** -innstillingen og velg **Vis kategorihierarki**.
-1. Gå til **Maler** , og velg PDP-malen.
-1. I **Beholder** -sporet som inneholder kjøpsboksmodulen, velger du ellipseknappen ( **…** ), og deretter velger du **Legg til modul**.
-1. I dialogboksen **Legg til modul** velger du **Brødsmule** -modulen, og deretter velger du **OK**.
-1. Velg **Lagre** , velg **Fullfør redigering** for å sjekke inn malen, og velg deretter **Publiser** for å publisere den.
-1. Gå til **Sider** , og åpne en PDP som bruker PDP-malen. Hvis en PDP ennå ikke finnes, oppretter du en.
-1. I **Beholder** -sporet som inneholder kjøpsboksmodulen, velger du ellipseknappen ( **…** ), og deretter velger du **Legg til modul**.
-1. I dialogboksen **Legg til modul** velger du **Brødsmule** -modulen, og deretter velger du **OK**.
-1. I egenskapsruten for **Brødsmule** -sporet, under **Rot** , velger du **Koblingstekst**.
-1. I **Koblingstekst** -dialogboksen skriver du **Hjem** ,og under **Koblingsmål** velger du **Legg til en kobling**.
-1. Velg en kobling til brødsmuleroten i dialogboksen **Legg til en kobling** , og velg deretter **OK**.
-1. Velg **Lagre** , og velg deretter **Forhåndsvisning** for å forhåndsvise siden.
+1. Gå til **Områdeinnstillinger \> Utvidelser**, finn **Brødsmulevisningstype på PDP**-innstillingen og velg **Vis kategorihierarki**.
+1. Gå til **Maler**, og velg PDP-malen.
+1. I **Beholder**-sporet som inneholder kjøpsboksmodulen, velger du ellipseknappen (**…**), og deretter velger du **Legg til modul**.
+1. I dialogboksen **Legg til modul** velger du **Brødsmule**-modulen, og deretter velger du **OK**.
+1. Velg **Lagre**, velg **Fullfør redigering** for å sjekke inn malen, og velg deretter **Publiser** for å publisere den.
+1. Gå til **Sider**, og åpne en PDP som bruker PDP-malen. Hvis en PDP ennå ikke finnes, oppretter du en.
+1. I **Beholder**-sporet som inneholder kjøpsboksmodulen, velger du ellipseknappen (**…**), og deretter velger du **Legg til modul**.
+1. I dialogboksen **Legg til modul** velger du **Brødsmule**-modulen, og deretter velger du **OK**.
+1. I egenskapsruten for **Brødsmule**-sporet, under **Rot**, velger du **Koblingstekst**.
+1. I **Koblingstekst**-dialogboksen skriver du **Hjem**,og under **Koblingsmål** velger du **Legg til en kobling**.
+1. Velg en kobling til brødsmuleroten i dialogboksen **Legg til en kobling**, og velg deretter **OK**.
+1. Velg **Lagre**, og velg deretter **Forhåndsvisning** for å forhåndsvise siden.
 1. Velg **Fullfør redigering** for å sjekke inn malen, og velg deretter **Publiser** for å publisere den.
 
 ## <a name="additional-resources"></a>Tilleggsressurser

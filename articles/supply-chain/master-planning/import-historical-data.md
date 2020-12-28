@@ -19,11 +19,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: c66481b1dd8650960cad2947425c1e6c7450afcb
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3982827"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4434649"
 ---
 # <a name="import-historical-data-for-demand-forecasts"></a>Importere historiske data for behovsprognoser
 
@@ -33,10 +33,10 @@ For å garantere nøyaktigheten til behovsprognoser må du ha så mange historis
 
 I arbeidsområdet **Databehandling** kan du se en oversikt over alle feltene i enheten.
 
-1. Åpne arbeidsområdet **Databehandling** .
-2. Klikk flisen **Dataenheter** .
-3. Søk i enhetslisten etter **Historisk eksternt behov** .
-4. Klikk **Målfelt** . Feltene nedenfor er obligatoriske: område ( **DeliveringSiteId** ), dato ( **DemandDate** ), antall ( **DemandQuantity** ), og enten varenummer ( **ItemNumber** ) eller varefordelingsnøkkel ( **ProductAllocationKeyId** ).
+1. Åpne arbeidsområdet **Databehandling**.
+2. Klikk flisen **Dataenheter**.
+3. Søk i enhetslisten etter **Historisk eksternt behov**.
+4. Klikk **Målfelt**. Feltene nedenfor er obligatoriske: område (**DeliveringSiteId**), dato (**DemandDate**), antall (**DemandQuantity**), og enten varenummer (**ItemNumber**) eller varefordelingsnøkkel (**ProductAllocationKeyId**).
 
 Hvis du vil bruke dataenheten, må du ha en Microsoft Excel-fil eller CSV-fil (kommadelte verdier) som inneholder de historiske behovsdataene. Følgende eksempel viser hvordan du importerer data fra en CSV-fil.
 
@@ -45,13 +45,13 @@ Hvis du vil bruke dataenheten, må du ha en Microsoft Excel-fil eller CSV-fil (k
 Du kan bruke følgende fil som et eksempel. Last ned [HistoricalDemandData](https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/how-to-articles/365OperationsDemandForecast). Denne filen inneholder historiske behovsdata for vare D0001. Den inneholder bare følgende obligatoriske felter: område, antall og behovsdatoen.
 
 1. Velg firmaet du vil importere de historiske behovsdataene til.
-2. Åpne arbeidsområdet **Databehandling** .
-3. Klikk flisen **Importer** .
-4. Angi et navn for importprosjektet, for eksempel **Importer historiske behovsdata for vare D0001** .
-5. I feltet **Kildedataformat** velger du filformatet for filen du importerer. Hvis du vil importere filen HistoricalDemandData i dette eksemplet, velger du **CSV** .
-6. I feltet **Enhetsnavn** velger du **Historisk eksternt behov** .
+2. Åpne arbeidsområdet **Databehandling**.
+3. Klikk flisen **Importer**.
+4. Angi et navn for importprosjektet, for eksempel **Importer historiske behovsdata for vare D0001**.
+5. I feltet **Kildedataformat** velger du filformatet for filen du importerer. Hvis du vil importere filen HistoricalDemandData i dette eksemplet, velger du **CSV**.
+6. I feltet **Enhetsnavn** velger du **Historisk eksternt behov**.
 7. Lagre filen på datamaskinen, og last den deretter opp.
-8. Klikk **Importer** .
+8. Klikk **Importer**.
 9. Siden **Utførelsessammendrag** åpnes automatisk. Kontroller de importerte dataene på siden.
 
 Når du har importert de historiske behovsdataene, kan du generere en behovsprognose.

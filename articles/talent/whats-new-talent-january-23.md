@@ -19,11 +19,11 @@ ms.author: dkrame
 ms.search.validFrom: 2019-01-23
 ms.dyn365.ops.version: Talent
 ms.openlocfilehash: f97462f088fc1a3cb94f2a34204fc09f1cd66fb0
-ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "2899134"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4462062"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-talent---core-hr-january-23-2019"></a>Hva er nytt eller endret i Dynamics 365 Talent – Core HR (23. januar 2019)
 
@@ -51,5 +51,5 @@ Når jobben endres for en stilling, vil jobbfeltene som standard settes til stil
 ### <a name="probation-period-and-calendar-are-not-displayed-for-future-hired-employees"></a>Prøveperiode og kalender vises ikke for fremtidige ansatte.
 Med denne endringen er det lagt til **Prøveperiode** og **Kalender** på siden **Behandle endringer** for å tillate dataregistrering for fremtidige og tidligere ansatte.
 
-### <a name="platform-update-23-for-finance-and-operations"></a>Platform update 23 for Finance and Operations
-Mindre feilrettinger er inkludert som en del av plattformoppdatering 23 for Finance and Operations. Hvis du vil ha mer informasjon, se [Hva er nytt eller endret i Dynamics 365 Finance and Operations plattformoppdatering 23 (januar 2019)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-23). 
+### <a name="platform-update-23-for-finance-and-operations"></a>Plattform Update 23 for Finance and Operations
+Mindre feilrettinger er inkludert som en del av Platform Update 23 for Finance and Operations. Hvis du vil ha mer informasjon, se [Hva er nytt eller endret i Dynamics 365 Finance and Operations plattformoppdatering 23 (januar 2019)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-23). 

@@ -20,11 +20,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: cefee7d678789f462eedbf9f9a3fbc9b591e25a2
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3978537"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4434697"
 ---
 # <a name="costing-versions-overview"></a>Oversikt over etterkalkuleringsversjoner
 
@@ -46,7 +46,7 @@ En etterkalkuleringsversjon kan inneholde et sett med planlagte kostnadsposter o
 ## <a name="entering-costs"></a>Angivelse av kostnader
 Datavedlikehold for kostnadsposter i en etterkalkuleringsversjon innebærer angivelse av kostnader for innkjøpte varer og for varer som overføres mellom områder. Ekstra datavedlikehold for produsenter innebærer angivelse av kostnader for kostnadskategorier tilknyttet rutingsoperasjoner, angivelse av beregningsformler for de indirekte kostnadene som gjenspeiler produksjonskostnad, og beregning av kostnader for produserte varer. 
 
-Varekostnadsdataene i en etterkalkuleringsversjon består av én eller flere kostnadsposter for hver vare. Når en varekostnadspost angis først, har den statusen **Uavsluttet** og en beregnet effektiv dato. Når du aktiverer varekostnadsposten, oppdateres statusen **Aktiv** , og den effektive datoen oppdateres til aktiveringsdatoen. Forskjellige varekostnadsposter kan gjenspeile forskjellige områder, ikrafttredelsesdatoer eller statuser. Når du kalkulerer kostnader for produserte varer for en fremtidig dato, bruker stykklisteberegningen kostnadsposter med den relevante effektive datoen, uansett om statusen er **Uavsluttet** eller **Aktiv** . En vares gjeldende aktive kostnadspost blir brukt for beregning av produksjonsordrekostnader og vurdering av lagertransaksjoner under en standard lagermodell for etterkalkulering. Vedlikeholdet av kostnadspostene for kostnadskategorier og formler for indirekte kostnadsberegning ligner vedlikeholdet av varekostnadsposter. 
+Varekostnadsdataene i en etterkalkuleringsversjon består av én eller flere kostnadsposter for hver vare. Når en varekostnadspost angis først, har den statusen **Uavsluttet** og en beregnet effektiv dato. Når du aktiverer varekostnadsposten, oppdateres statusen **Aktiv**, og den effektive datoen oppdateres til aktiveringsdatoen. Forskjellige varekostnadsposter kan gjenspeile forskjellige områder, ikrafttredelsesdatoer eller statuser. Når du kalkulerer kostnader for produserte varer for en fremtidig dato, bruker stykklisteberegningen kostnadsposter med den relevante effektive datoen, uansett om statusen er **Uavsluttet** eller **Aktiv**. En vares gjeldende aktive kostnadspost blir brukt for beregning av produksjonsordrekostnader og vurdering av lagertransaksjoner under en standard lagermodell for etterkalkulering. Vedlikeholdet av kostnadspostene for kostnadskategorier og formler for indirekte kostnadsberegning ligner vedlikeholdet av varekostnadsposter. 
 
 To blokkeringspolicyer for en kostnadsversjon fastslår om uavsluttede kostnader kan vedlikeholdes, og om den uavsluttede kostnaden kan aktiveres. Bruk blokkeringspolicyene til å tillate datavedlikehold, og deretter til å hindre datavedlikehold for kostnadsposter i en etterkalkuleringsversjon. 
 

@@ -17,11 +17,11 @@ ms.author: anbichse
 ms.search.validFrom: 2019-05-06
 ms.dyn365.ops.version: Talent
 ms.openlocfilehash: 2039c09372381ef2c078e1f4d4ed8a25c22de5c7
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2814726"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4462160"
 ---
 # <a name="view-the-status-of-onboarding-employees-and-your-tasks"></a>Vise statusen for jobbintroduksjonsmedarbeidere og oppgavene dine
 
@@ -33,12 +33,12 @@ Microsoft Dynamics 365 Talent: Onboard lar deg vise fremgangen som de nyansatte 
 
 1. Velg **Veiledninger** på menyen til venstre. Du ser en oversikt over fremdriften for alle jobbintroduksjonsveiledningene du har sendt.
 
-    ![[Vise statusen for jobbintroduksjonsveiledninger](./media/onboard-guide-status.png)](./media/onboard-guide-status.png)
+    ![[Vise statusen for veiledninger for jobbintroduksjon](./media/onboard-guide-status.png)](./media/onboard-guide-status.png)
 
 2. Hvis du vil drille ned, velger du veiledningen du vil vise.
 3. Velg kategorien **Aktiviteter** for å se hvilke aktiviteter den nyansatte har fullført.
 
-    ![[Vise aktiviteter som den nyansatte har fullført](./media/onboard-status-activities.png)](./media/onboard-status-activities.png)
+    ![[Vise aktiviteter som den nye ansettelsen har fullført](./media/onboard-status-activities.png)](./media/onboard-status-activities.png)
 
 ## <a name="view-onboarding-tasks-that-are-assigned-to-you"></a>Vise jobbintroduksjonsoppgaver som er tilordnet til deg
 

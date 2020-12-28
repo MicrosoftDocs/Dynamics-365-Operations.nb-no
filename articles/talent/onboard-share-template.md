@@ -17,11 +17,11 @@ ms.author: anbichse
 ms.search.validFrom: 2019-05-06
 ms.dyn365.ops.version: Talent
 ms.openlocfilehash: 474c7cc82aaccf6b3bcfb3bbe879725497961c43
-ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "2897149"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4462162"
 ---
 # <a name="share-content-with-other-contributors"></a>Dele innhold med andre bidragsytere
 
@@ -31,7 +31,7 @@ Microsoft Dynamics 365 Talent: Onboard lar deg dele veiledninger og maler for jo
 
 ## <a name="share-an-onboarding-guide-with-other-contributors"></a>Dele en veiledning for jobbintroduksjon med andre bidragsytere
 
-1. Velg **Veiledninger**på menyen til venstre, og velg deretter veiledningen du vil dele.
+1. Velg **Veiledninger** på menyen til venstre, og velg deretter veiledningen du vil dele.
 2. Velg **Mer**-knappen (tre loddrette prikker) i øvre høyre hjørne på siden, og velg deretter **Del**.
 
     ![[Dele en veiledning for jobbintroduksjon med andre bidragsytere](./media/onboard-share-guide.png)](./media/onboard-share-guide.png)

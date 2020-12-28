@@ -14,12 +14,12 @@ ms.search.scope: Operations
 ms.search.region: Global
 ms.search.validFrom: 2020-07-27
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 741c8af7eaabe23c03546daddd0a9a422146f575
-ms.sourcegitcommit: 58d7133ae9909fa205730e3cf4c7fd5a1d5d0b75
+ms.openlocfilehash: c3fc8cf49b62515f41712e594076c31ae5d7654b
+ms.sourcegitcommit: 0e60df840688932795b9c8f8fd45d98f5ab6ba8c
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "3793569"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "4668987"
 ---
 # <a name="learning-catalog-for-users-of-dynamics-365-supply-chain-management"></a>Opplæringskatalog for brukere av Dynamics 365 Supply Chain Management
 
@@ -50,6 +50,7 @@ Katalogen nedenfor er ordnet fra kjernekunnskap til bestemte områder, og fra de
 | [Konfigurere og administrere produkter og beholdning i Dynamics 365 Supply Chain Management](https://docs.microsoft.com/learn/paths/configure-manage-products-inventory-dyn365-supply-chain-mgmt/) | Produktinformasjon er ryggraden i forsyningskjeden og detaljhandelsprogrammer på tvers av alle bransjer. I de forskjellige modulene i en bedriftsløsning kreves produktspesifikk informasjon og konfigurasjon for å behandle forretningsprosesser som er knyttet til bestemte produkter, produktfamilier, stykklister og produktkategorier. Beholdningsrapporter viser deg beholdningen du har på forskjellige ulike måter, og vil forklare hvordan lagerinvesteringene dine blir mer effektive. Hovedplanlegging hjelper deg med å effektivisere planleggingen basert på forhåndsdefinerte faktorer, for effektivt å planlegge hvilke materialer som skal kjøpes, overføres eller produseres. | Gratis, selvbetjent elektronisk læringsforløp | 14 timer |
 | [Konfigurere og administrere innkjøp og leverandører i Dynamics 365 Supply Chain Management](https://docs.microsoft.com/learn/paths/configure-manage-procurement-vendors-dyn365-supply-chain-mgmt/) | Prosessen med å finne og arbeide med leverandører, kjøpe produkter og sikre at kvaliteten på varer og tjenester, er alle viktige faktorer som påvirker et firmas omdømme og suksess. | Gratis, selvbetjent elektronisk læringsforløp | 14 timer |
 | [Konfigurere og administrere salg og kunder i Dynamics 365 Supply Chain Management](https://docs.microsoft.com/learn/paths/configure-manage-sales-customers-dyn365-supply-chain-mgmt/) | Prosessen med å arbeide med kunder, forstå livssyklusen til salgsprosessen og definere salgsavtaler er alle viktige faktorer som påvirker et firmas suksess. | Gratis, selvbetjent elektronisk læringsforløp | 7 timer |
+| [Hovedplanlegging i Dynamics 365 Supply Chain Management](https://docs.microsoft.com/learn/paths/master-planning-supply-chain-management/) | Med hovedplanlegging kan selskaper identifisere og balansere fremtidige behov for råvarer og kapasitet nødvendig for å oppfylle fremtidige mål. Hovedplanlegging vurderer hvilke råvarer og kapasiteter som er tilgjengelige, og hvilke råvarer og kapasiteter som kreves for å fullføre produksjonen. Den identifiserer for eksempel hva må produseres, kjøpes inn, overføres, eller settes til side som sikkerhetslager før du kan fullføre produksjonen. | Gratis, selvbetjent elektronisk læringsforløp | 5 timer |
 | [Konfigurere og arbeide med lagerstyring i Dynamics 365 for Finance and Operations](https://docs.microsoft.com/learn/paths/configure-work-warehouse-management-d365-finance-ops/) | Lagerstyring i Dynamics 365 Supply Chain Management gjør det enklere å optimalisere og effektivisere lagerprosesser i henhold til dine individuelle behov, og gir innsikt i beholdningen og verktøyene som bidrar til å øke kundetilfredsheten og redusere kostnadene. | Gratis, selvbetjent elektronisk læringsforløp | 8.5 timer |
 | [Konfigurere og arbeide med transportstyring i Dynamics 365 Supply Chain Management](https://docs.microsoft.com/learn/paths/configure-work-transportation-mgmt-dyn365-supply-chain-mgmt/) | Transportstyring-modulen i Dynamics 365 Supply Chain Management hjelper deg med å finne den mest effektive måten å levere varer til kundene på. Transportstyring beregner den minst kostbare og raskeste måten å levere varer på, og lar deg identifisere leverandør- og rutingsløsninger for inngående og utgående bestillinger. | Gratis, selvbetjent elektronisk læringsforløp | 3 timer |
 | [Arbeide med aktivastyring for Dynamics 365 Supply Chain Management](https://docs.microsoft.com/learn/paths/work-asset-management-dyn365-supply-chain-mgmt/) | Aktivastyring er et tillegg til Dynamics 365 Supply Chain Management, som brukes til å administrere anleggsmidler som brukes i den daglige driften i firmaet. Noen eksempler på disse typene aktiva er maskiner, produksjonsutstyr og gaffeltrucker. | Gratis, selvbetjent elektronisk læringsforløp | 12.5 timer |

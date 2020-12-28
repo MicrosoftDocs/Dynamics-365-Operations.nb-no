@@ -19,11 +19,11 @@ ms.author: anbichse
 ms.search.validFrom: 2019-07-08
 ms.dyn365.ops.version: Talent October 2018 update
 ms.openlocfilehash: 4c518fb7036d44aa52c8db859ee3616fc4e58a06
-ms.sourcegitcommit: 9cc6a011bfdd1b0fe505760b6bf429eb6c65862a
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "2833190"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4462137"
 ---
 # <a name="set-up-linkedin-integration-with-attract"></a>Konfigurere LinkedIn-integrering med Attract
 
@@ -57,7 +57,7 @@ Jobber som posteres til LinkedIn, vises på det live LinkedIn-området. LinkedIn
 
 1. På **Oppsett**-menyen (tannhjulssymbolet) i øvre høyre hjørne, velg **Administrasjonssenter**. Eventuelt kan du gå til <https://attract.talent.dynamics.com/adminsettings>.
 2. Velg fanen **LinkedIn-integrering**.
-3. Under **Firmanavn**skriver du inn navnet på firmaet, og under **firma-ID**angir du ID-en for LinkedIn-firmaet. Kontroller at firmanavnet samsvarer med navnet som vises på firmaets LinkedIn-side. Hvis du vil ha mer informasjon om firma-ID-er for LinkedIn, kan du se [Knytte LinkedIn-firma-ID-en til LinkedIn-jobbtavlen - Vanlige spørsmål](https://www.linkedin.com/help/linkedin/answer/98972).
+3. Under **Firmanavn** skriver du inn navnet på firmaet, og under **firma-ID** angir du ID-en for LinkedIn-firmaet. Kontroller at firmanavnet samsvarer med navnet som vises på firmaets LinkedIn-side. Hvis du vil ha mer informasjon om firma-ID-er for LinkedIn, kan du se [Knytte LinkedIn-firma-ID-en til LinkedIn-jobbtavlen - Vanlige spørsmål](https://www.linkedin.com/help/linkedin/answer/98972).
 
     Hvis du må endre informasjon for organisasjonen, kan du se [Endre organisasjonens adresse, teknisk kontakt og mer](https://docs.microsoft.com/office365/admin/manage/change-address-contact-and-more). Hvis du fortsatt har problemer, kan du kontakte [kundestøtte for LinkedIn](https://www.linkedin.com/help/linkedin).
 

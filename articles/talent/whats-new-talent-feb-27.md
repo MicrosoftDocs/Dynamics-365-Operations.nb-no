@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-02-27
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: d0fdc9f056ea494cf52e8483b901070dae0bcd29
-ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
+ms.openlocfilehash: afa1044c8adc9566149e20ade57e771b50d9c53f
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "2897678"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4529144"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-talent-february-27-2019"></a>Hva er nytt eller endret i Dynamics 365 Talent (27. februar 2019)?
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 Dette emnet beskriver funksjoner som enten er nye eller endret i Microsoft Dynamics 365 Talent.
 
@@ -75,9 +77,9 @@ Denne versjonen inneholder andre mindre feilrettinger.
 
 I mange organisasjoner kan kompensasjons- og fordelsansvarlige bare ha tilgang til bestemte kompensasjonsposter. Disse oppføringene kan være for ledere eller regionale ansatte. Med denne endringen kan HR-personale administrere og vedlikeholde kompensasjonsplanene for ulike ansattgrupper i organisasjonen. Sikkerhetsroller som kan tilordnes til faste og variable planer, bestemmer tilgangen til disse planene og ansattdataene som er knyttet til dem (for eksempel lønnsinformasjon og bonusposter). Bare rollene som har den angitte tilgangen, vil kunne behandle kompensasjon for disse ansatte.
 
-### <a name="platform-update-24-for-finance-and-operations"></a>Platform update 24 for Finance and Operations
+### <a name="platform-update-24-for-finance-and-operations"></a>Plattform Update 24 for Finance and Operations
 
-Hvis du vil ha mer informasjon om Platform update 24 for Microsoft Dynamics 365 Finance and Operations (mars 2019), kan du se [forhåndsvisningsfunksjonene i Platform update 24 for Finance and Operations (mars 2019)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-24).
+Hvis du vil ha mer informasjon om Platform update 24 for Microsoft Dynamics 365 Finance and Operations (mars 2019), kan du se [forhåndsversjonsfunksjonene i Platform update 24 for Finance and Operations (mars 2019)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-24).
 
 ### <a name="make-employee-fixed-compensation-available-for-future-position-assignments"></a>Gjør fast kompensasjon for ansatte tilgjengelig for fremtidige stillingstilordninger
 
@@ -98,19 +100,19 @@ Bruk følgende fremgangsmåte for å oppdatere den eksisterende malen.
 
     - **Jobbstillinger til stillinger:** Fjern denne tilordningen.
     - **Den overordnede jobbtilordningsoppgaven for jobbstillinger til stillinger:** Fjern denne tilordningen.
-    - **Jobbstillinger til basisstilling:** Legg til en ny tilordning fra **Jobbstillinger** Common Data Service-enheten til **Basisstilling** Finance and Operations-enheten. Flytt den til plassering 7 i sekvensen.
+    - **Jobbstillinger til basisstilling:** Legg til en ny tilordning fra Common Data Service-enheten **Jobbstillinger** til **Basisstilling** Finance and Operations-enheten. Flytt den til plassering 7 i sekvensen.
 
         [![Jobbstillinger til basisstilling-tilordning](./media/CDS-Mapping1.png)](./media/CDS-Mapping1.png)
 
-    - **Jobbstillinger til stillingsdetaljer:** Legg til en ny tilordning fra **Jobbstillinger** Common Data Service-enheten til **Stillingsdetaljer** Finance and Operations-enheten. Flytt den til plassering 8 i sekvensen.
+    - **Jobbstillinger til stillingsdetaljer:** Legg til en ny tilordning fra Common Data Service-enheten **Jobbstillinger** til **Stillingsdetaljer** Finance and Operations-enheten. Flytt den til plassering 8 i sekvensen.
 
         [![Jobbstillinger til stillingsdetaljer-tilordning](./media/CDS-Mapping2.png)](./media/CDS-Mapping2.png)
 
-    - **Jobbstillinger til stillingsvarigheter:** Legg til en ny tilordning fra **Jobbstillinger** Common Data Service-enheten til **Stillingsvarigheter** Finance and Operations-enheten.
+    - **Jobbstillinger til stillingsvarigheter:** Legg til en ny tilordning fra Common Data Service-enheten **Jobbstillinger** til **Stillingsvarigheter** Finance and Operations-enheten.
 
         [![Jobbstillinger til stillingsvarigheter-tilordning](./media/CDS-Mapping3.png)](./media/CDS-Mapping3.png)
 
-    - **Jobbstillinger til stillingshierarkier:** Legg til en ny tilordning fra **Jobbstillinger** Common Data Service-enheten til **Stillingshierarkier** Finance and Operations-enheten. Velg **Avansert spørring** for å gjøre den avanserte spørringen tilgjengelig for prosjektet.
+    - **Jobbstillinger til stillingshierarkier:** Legg til en ny tilordning fra Common Data Service-enheten **Jobbstillinger** til **Stillingshierarkier** Finance and Operations-enheten. Velg **Avansert spørring** for å gjøre den avanserte spørringen tilgjengelig for prosjektet.
 
        [![Avansert spørring-knapp](./media/CDS-Advanced-Query.png)](./media/CDS-Advanced-Query.png)
 
@@ -131,7 +133,7 @@ Bruk følgende fremgangsmåte for å oppdatere den eksisterende malen.
         [![Legg til betinget kolonne-kommando](./media/Add-column.png)](./media/Add-column.png)
 
     6. I dialogboksen **Legg til betinget kolonne** angir du **HIERARCHYTYPENAME** som navn på den nye kolonnen.
-    7. I **Hvis**-delen av betingelsen velger du et felt, bruker **til** som relasjon og angir en hvilken som helst verdi. I ***Deretter**- og **Ellers**-delene av betingelsen angir du hva standardverdien skal være. I dette tilfellet angir du **Linje** i begge deler.
+    7. I **Hvis**-delen av betingelsen velger du et felt, bruker **til** som relasjon og angir en hvilken som helst verdi. I *_Deretter_*- og **Ellers**-delene av betingelsen angir du hva standardverdien skal være. I dette tilfellet angir du **Linje** i begge deler.
 
         [![Legg til betinget kolonne-dialogboks](./media/Add-conditional-column.png)](./media/Add-conditional-column.png)
 

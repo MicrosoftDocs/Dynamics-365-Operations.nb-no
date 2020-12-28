@@ -17,12 +17,12 @@ ms.search.industry: retail
 ms.author: brshoo
 ms.search.validFrom: 2020-02-12
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: d0b14e0c662af74464768b66c1c86d03d2944014
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.openlocfilehash: da27e3ed0a0e50126590609d09575befe17a7aa2
+ms.sourcegitcommit: 4bf5ae2f2f144a28e431ed574c7e8438dc5935de
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3976022"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "4517135"
 ---
 # <a name="configure-multiple-b2c-tenants-in-a-commerce-environment"></a>Konfigurere flere B2C-leiere i et Commerce-miljø
 
@@ -72,39 +72,39 @@ Følg denne fremgangsmåten for å legge til en Azure AD B2C-leier i miljøet.
 
 1. Logg inn på Commerce-områdebyggeren for ditt miljø som systemadministrator. Hvis du vil konfigurere Azure AD B2C-leietakere, må du være systemadministrator for Commerce-miljøet.
 1. Velg **Leierinnstillinger** i navigasjonsruten til venstre for å utvide den.
-1. Velg **B2C-innstillinger** , og velg deretter **Behandle** .
-1. Velg **Legg til B2C-program** , og angi deretter følgende informasjon:
+1. Velg **B2C-innstillinger**, og velg deretter **Behandle**.
+1. Velg **Legg til B2C-program**, og angi deretter følgende informasjon:
 
-    - **Programnavn** : Angi navnet som skal brukes for programmet i konteksten for administrasjon av det i Commerce. Vi anbefaler at du bruker programnavnet du valgte da du konfigurerte Azure AD B2C-programmet i Azure-portalen. På denne måten kan du bidra til å redusere forvirring når du administrerer B2C-leiere i Commerce.
-    - **Navn på leietaker** : Angi navnet på B2C-leieren slik det vises i Azure-portalen.
-    - **Policy-ID for glemt passord** : Angi policy-IDen (navnet på policyen i Azure-portalen).
-    - **Policy-ID for registrering/pålogging** : Angi policy-IDen (navnet på policyen i Azure-portalen).
-    - **Klient-GUID** : Angi Azure AD B2C-leier-IDen slik den vises i Azure-portalen (ikke program-IDen for B2C-leieren).
-    - **Policy-ID for redigering av profil** : Angi policy-IDen (navnet på policyen i Azure-portalen).
+    - **Programnavn**: Angi navnet som skal brukes for programmet i konteksten for administrasjon av det i Commerce. Vi anbefaler at du bruker programnavnet du valgte da du konfigurerte Azure AD B2C-programmet i Azure-portalen. På denne måten kan du bidra til å redusere forvirring når du administrerer B2C-leiere i Commerce.
+    - **Navn på leietaker**: Angi navnet på B2C-leieren slik det vises i Azure-portalen.
+    - **Policy-ID for glemt passord**: Angi policy-IDen (navnet på policyen i Azure-portalen).
+    - **Policy-ID for registrering/pålogging**: Angi policy-IDen (navnet på policyen i Azure-portalen).
+    - **Klient-GUID**: Angi Azure AD B2C-leier-IDen slik den vises i Azure-portalen (ikke program-IDen for B2C-leieren).
+    - **Policy-ID for redigering av profil**: Angi policy-IDen (navnet på policyen i Azure-portalen).
 
 1. Når du er ferdig med å angi denne informasjonen, velger du **OK** for å lagre endringene.
 
 > [!NOTE]
-> Du bør la felt som **Omfang** , **Ikke-interaktiv policy-ID** , **Ikke-interaktiv klient-ID** , **Egendefinert domene for pålogging** og **Policy-ID for registrering** stå tomme, med mindre Dynamics 365 Commerce-teamet instruerer deg om å angi dem.
-Den nye Azure AD B2C-leieren skal nå vises i listen under **Behandle B2C-programmer** .
+> Du bør la felt som **Omfang**, **Ikke-interaktiv policy-ID**, **Ikke-interaktiv klient-ID**, **Egendefinert domene for pålogging** og **Policy-ID for registrering** stå tomme, med mindre Dynamics 365 Commerce-teamet instruerer deg om å angi dem.
+Den nye Azure AD B2C-leieren skal nå vises i listen under **Behandle B2C-programmer**.
 
 ### <a name="manage-or-delete-an-azure-ad-b2c-tenant"></a>Administrere eller slette en Azure AD B2C-leier
 
 1. Logg inn på Commerce-områdebyggeren for ditt miljø som systemadministrator. Hvis du vil konfigurere Azure AD B2C-leietakere, må du være systemadministrator for Commerce-miljøet.
 1. Velg **Leierinnstillinger** i navigasjonsruten til venstre for å utvide den.
-1. Velg **B2C-innstillinger** , og velg deretter **Behandle** .
+1. Velg **B2C-innstillinger**, og velg deretter **Behandle**.
 1. Hvis du vil redigere en B2C-leier, velger du blyantsymbolet ved siden av den. Hvis du vil slette en B2C-leier, velger du papirkurvsymbolet ved siden av.
-1. Velg **Lagre** , og velg deretter **Publiser** for å aktivere endringene.
+1. Velg **Lagre**, og velg deretter **Publiser** for å aktivere endringene.
 
 > [!WARNING]
-> Når en B2C-leier er konfigurert for et aktivt/publisert område, kan brukere ha registrert seg ved å bruke kontoer som finnes på leieren. Hvis du sletter en konfigurert leier på menyen **Leierinnstillinger \> B2C-leier** , fjerner du tilknytningen av B2C-leieren fra områder som er knyttet til en hvilken som helst kanal i leieren. I dette tilfellet kan det hende at brukerne ikke lenger kan logge på kontoene sine. Vær derfor svært forsiktig når du sletter en konfigurert leier.
+> Når en B2C-leier er konfigurert for et aktivt/publisert område, kan brukere ha registrert seg ved å bruke kontoer som finnes på leieren. Hvis du sletter en konfigurert leier på menyen **Leierinnstillinger \> B2C-leier**, fjerner du tilknytningen av B2C-leieren fra områder som er knyttet til en hvilken som helst kanal i leieren. I dette tilfellet kan det hende at brukerne ikke lenger kan logge på kontoene sine. Vær derfor svært forsiktig når du sletter en konfigurert leier.
 >
 > Når en konfigurert leier slettes, vil B2C-leieren og -postene fortsatt bli opprettholdt, men Commerce-systemkonfigurasjonen for denne leieren vil bli endret eller fjernet. Brukere som prøver å registrere seg eller logge på området, vil opprette en ny forretningsforbindelsesoppføring i den standard eller nylig tilknyttede B2C-leieren som er konfigurert for kanalen på området.
 ## <a name="configure-your-channel-with-a-b2c-tenant"></a>Konfigurere kanalen med en B2C-leier
 
 1. Logg inn på Commerce-områdebyggeren for ditt miljø som systemadministrator. Hvis du vil konfigurere Azure AD B2C-leietakere, må du være systemadministrator for Commerce-miljøet.
 1. Velg **Områdeinnstillinger** i navigasjonsruten til venstre for å utvide den.
-1. Velg **Kanaler** , og velg deretter kanalen som skal konfigureres.
+1. Velg **Kanaler**, og velg deretter kanalen som skal konfigureres.
 1. I egenskaper-ruten til høyre i feltet **Velg B2C-program** velger du den konfigurerte Azure AD B2C-leieren som skal brukes for denne kanalen.
 1. Velg **Lagre og publiser** på kommandolinjen for å utføre den nye eller oppdaterte konfigurasjonen.
 
@@ -114,15 +114,15 @@ Den nye Azure AD B2C-leieren skal nå vises i listen under **Behandle B2C-progra
 
 [Konfigurere domenenavnet](configure-your-domain-name.md)
 
-[Distribuere et nytt e-handelsområde](deploy-ecommerce-site.md)
+[Distribuere en ny e-handelsleier](deploy-ecommerce-site.md)
 
 [Opprette et e-handelsområde](create-ecommerce-site.md)
 
-[Knytte et nettområde til en kanal](associate-site-online-store.md)
+[Knytte et Dynamics 365 Commerce-nettsted til en nettkanal](associate-site-online-store.md)
 
 [Administrere robots.txt-filer](manage-robots-txt-files.md)
 
-[Laste opp URL-adresser for omadressering samtidig](upload-bulk-redirects.md)
+[Laste opp masseomdirigeringer for URL-adresse](upload-bulk-redirects.md)
 
 [Konfigurere en B2C-leier i Commerce](set-up-B2C-tenant.md)
 

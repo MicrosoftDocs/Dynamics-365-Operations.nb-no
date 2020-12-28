@@ -16,11 +16,11 @@ ms.author: anbichse
 ms.search.validFrom: 2018-09-30
 ms.dyn365.ops.version: Talent September 10, 2018 update
 ms.openlocfilehash: 33e0183109bc0bf8c825e3d5a51dcc36dbf58fc1
-ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3006107"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4462099"
 ---
 # <a name="get-support-for-microsoft-dynamics-365-talent"></a>Få kundestøtte for Microsoft Dynamics 365 Talent
 
@@ -32,7 +32,7 @@ For å få støtte for Talent, bruk ressursene i følgende tabell. Disse ressurs
 
 | Oppgave | Mer informasjon |
 |------|------------------|
-| Spør fellesskapet. | Gå til [Dynamics 365 Talent-fellesskapet](https://community.dynamics.com/365/talent) for å få hjelp med spørsmålene dine. Du kan finne svar ved å skrive inn et spørsmål i søkefeltet ved siden av **Har du spørsmål**. Hvis du vil stille et spørsmål **, velger du**Still et spørsmål. |
+| Spør fellesskapet. | Gå til [Dynamics 365 Talent-fellesskapet](https://community.dynamics.com/365/talent) for å få hjelp med spørsmålene dine. Du kan finne svar ved å skrive inn et spørsmål i søkefeltet ved siden av **Har du spørsmål**. Hvis du vil stille et spørsmål **, velger du** Still et spørsmål. |
 | Bruk verktøyet for skybasert støtte. | I [Microsoft Dynamics Lifecycle Services (LCS)](https://lcs.dynamics.com/) går du til prosjektet og velger **Støtte**-flisen. Derfra kan du sende problemer på to måter:<ul><li>I kategorien **Aktive problemer** velger du problemet du vil sende, og deretter velger du **Send til Microsoft**.</li><li>I kategorien **Sendt til Microsoft** velger du **Send inn en ny hendelse** for å rapportere et nytt problem.</li></ul> |
 | Få støtte via appen. | Velg **Hjelp**-knappen (**?**) i hjørnet øverst til høyre på siden. Velg **Rapporter et problem**. Problemer rapporteres i kategorien **Aktive problemer** i LCS, der en administrator kan avgjøre om det skal tilbys intern kundestøtte eller sende problemene til Microsoft. (Hvis du har den frittstående versjonen av Onboard, sendes problemene direkte til Microsoft.) |
 | Få hjelp med spørsmål om Talent-lisensiering. | Kontakt partneren eller Microsoft-selgeren. |
@@ -44,7 +44,7 @@ For å få støtte for den frittstående Onboard-appen, bruk ressursene i følge
 
 | Oppgave | Mer informasjon |
 |------|------------------|
-| Spør fellesskapet. | Gå til [Dynamics 365 Talent-fellesskapet](https://community.dynamics.com/365/talent) for å få hjelp. Du kan finne svar ved å skrive inn et spørsmål i søkefeltet ved siden av **Har du spørsmål**. Hvis du vil stille et spørsmål **, velger du**Still et spørsmål. |
+| Spør fellesskapet. | Gå til [Dynamics 365 Talent-fellesskapet](https://community.dynamics.com/365/talent) for å få hjelp. Du kan finne svar ved å skrive inn et spørsmål i søkefeltet ved siden av **Har du spørsmål**. Hvis du vil stille et spørsmål **, velger du** Still et spørsmål. |
 | Rapporter et problem. | Velg **Hjelp**-knappen (**?**) øverst i høyre hjørne på siden, og velg deretter **Rapporter et problem**. Legg inn en beskrivelse av problemet og ta med en e-postadresse hvis du vil følge opp problemet. |
 | Få hjelp med spørsmål om Talent-lisensiering. | Kontakt partneren eller Microsoft-selgeren. |
 | Be om nye funksjoner og funksjonalitet i Onboard. | Velg **Hjelp**-knappen (**?**), og velg deretter **Ideer** . Du kan også gå til [Dynamics 365 Talent: Onboard-ideer](https://experience.dynamics.com/ideas/categories/?forum=569a7fb2-8327-e911-a95a-000d3a4f3883&forumName=Dynamics%20365%20for%20Talent%3A%20Onboard) for å vise, søke etter eller stemme på eksisterende ideer eller legge til nye ideer. |

@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 4d3a423bf64900e547a23f2e5eeb90aa679ec5d1
-ms.sourcegitcommit: adf196c51e2b6f532d99c177b4c6778cea8a2efc
+ms.openlocfilehash: f87d29a8cffb70e4dea211cea7538e5e4c85295c
+ms.sourcegitcommit: 4bf5ae2f2f144a28e431ed574c7e8438dc5935de
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "3533396"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "4517312"
 ---
 # <a name="enable-location-based-store-detection"></a>Aktivere stedsbasert butikkregistrering
 
@@ -52,15 +52,15 @@ Følg denne fremgangsmåten for å aktivere stedsbasert butikkregistrering i Com
 
 [Konfigurere domenenavnet](configure-your-domain-name.md)
 
-[Distribuere et nytt e-handelsområde](deploy-ecommerce-site.md)
+[Distribuere en ny e-handelsleier](deploy-ecommerce-site.md)
 
 [Opprette et e-handelsområde](create-ecommerce-site.md)
 
-[Knytte et nettområde til en kanal](associate-site-online-store.md)
+[Knytte et Dynamics 365 Commerce-nettsted til en nettkanal](associate-site-online-store.md)
 
 [Administrere robots.txt-filer](manage-robots-txt-files.md)
 
-[Laste opp URL-adresser for omadressering samtidig](upload-bulk-redirects.md)
+[Laste opp masseomdirigeringer for URL-adresse](upload-bulk-redirects.md)
 
 [Konfigurere en B2C-leier i Commerce](set-up-B2C-tenant.md)
 

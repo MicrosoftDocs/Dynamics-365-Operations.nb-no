@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2020-02-10
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: 58446289c9a53af30d4d6d331a1a609ae0d2a0ad
-ms.sourcegitcommit: 97ceb24f191161ca601e0889a539df665834ac3b
+ms.openlocfilehash: 4afd8f60938c99d1981be1625ef28f91d9e4bb4c
+ms.sourcegitcommit: 9c05d48f6e03532aa711e1d89d0b2981e9d37200
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "3818204"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "4665402"
 ---
 # <a name="iframe-module"></a>Iframe-modul
 
@@ -35,7 +35,7 @@ Dette emnet dekker iFrame-modulen og beskriver hvordan du legger den til på omr
 
 En iFrame-modul gir en iFrame (innebygd ramme) som er vert for eksternt innhold på et område. Den kan for eksempel brukes til å være vert for en YouTube-video eller PDF-filvisning på en områdeside. 
 
-En iFrame-modul krever en mål-URL-adresse. Deretter er den vert for innholdet på målsiden i et HTML **iFrame**-element. Eksterne URL-adresser må være på tillatelseslisten (også kalt "hvitelisten") i henhold til områdets sikkerhetspolicy for innhold (CSP). For iFrame-innhold bør URL-adresser tillates ved å bruke direktivet **frame-ancestor**. Hvis du vil ha mer informasjon, se [Behandle policy for innholdssikkerhet (CSP)](manage-csp.md).
+En iFrame-modul krever en mål-URL-adresse. Deretter er den vert for innholdet på målsiden i et HTML **iFrame**-element. Eksterne URL-adresser må være på tillatelseslisten i henhold til områdets sikkerhetspolicy for innhold (CSP). For iFrame-innhold bør URL-adresser tillates ved å bruke direktivet **frame-ancestor**. Hvis du vil ha mer informasjon, se [Behandle policy for innholdssikkerhet (CSP)](manage-csp.md).
 
 > [!NOTE]
 > iFrame-modulen er tilgjengelig i Dynamics 365 Commerce 10.0.13-versjonen.

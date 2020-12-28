@@ -18,16 +18,18 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2020-10-06
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 5ca2fbbf3ffbcc7c9c32490f3733b8a94731170e
-ms.sourcegitcommit: 69075e001d1fb4ef69282667052cd8d082273094
+ms.openlocfilehash: fe01a2b82b72bf38bb537ed7b2bf5560235817d9
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4022221"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4529834"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-october-6-2020"></a>Hva er nytt eller endret i Dynamics 365 Human Resources (6. oktober 2020)
 
-Dette emnet beskriver funksjoner som er nye, endret eller kommer snart i Dynamics 365 Human Resources. Hvis du vil ha mer informasjon om oppdateringsprosessen og tidsplanen, kan du se [Oppdatere prosess](hr-admin-setup-update-process.md).
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
+Dette emnet beskriver funksjoner som er nye, endret eller kommer snart i Dynamics 365 Human Resources. Hvis du vil ha mer informasjon om oppdateringsprosessen og tidsplanen, kan du se [Oppdatere prosess](hr-admin-setup-update-process.md).
 
 Hvis du vil ha mer informasjon om nye funksjoner og deres forventede generelle tilgjengelighetsdatoer, se [Oversikt over Dynamics 365 Human Resources 2020-frigivelsesbølge 2](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/dynamics365-human-resources/).
 
@@ -54,10 +56,10 @@ Denne versjonen inneholder følgende feilrettinger.
 | --- | --- | --- |
 | 448806 | **Standard identifikasjonstype** eksporteres som **RecId** i HCM-parametere | Denne endringen i parameterene for Human Resources-enheten legger til en ekstra kolonne som viser **standard identifikasjonstype**. |
 | 492923 | Oppgaveopptak lagres ikke i Lifecycle Services (LCS) | Du kan nå lagre oppgaveopptak i LCS. |
-| 429950 | Fast kompensasjon utløper ikke riktig ved endring av plassering | Når du endrer posisjonen til en arbeider på siden **Overføring av arbeider** , ble sluttkompensasjonsdatoen angitt én dag før slutten av stillingen. Sluttdatoen for kompensasjon er den samme som stillingens sluttdato. |
-| 467214 | **Lønnsbasert analyse** vises bare hvis **Navn på konverteringer av lønnssats** er satt til **Årlig** | Lønnsbaserte lønnssatser med et annet navn enn **Årlig** vises ikke i kompensasjonsanalyse. Med denne oppdateringen bruker kompensasjonsanalyse nå alle konverteringer av lønnssats. Når du kjører rapportene etter **Hver time** eller **Lønn** , blir konverteringer av lønnssats som bruker en annen periode enn hver time, inkludert i **Lønn** -filteret. Bare lønnssatser med en periode på **Hver time** , er inkludert i **Hver time** -filteret. |
-| 482464 | Når du viser **Gjennomganger** , endres ikke **Detaljer** -visningen til rutenettvisning etter at du har brukt et filter | Når du har brukt et filter, vises gjennomgangsrutenettet som forventet. |
-| 483184 | Human Resources genererer ikke permisjonsavsetninger når du velger **Basis for lag** som den **justerte startdatoen** i **Permisjonsregistrering** -posten |Den **justerte startdatoen** fylles ut og brukes ved generering av permisjoner.  |
+| 429950 | Fast kompensasjon utløper ikke riktig ved endring av plassering | Når du endrer posisjonen til en arbeider på siden **Overføring av arbeider**, ble sluttkompensasjonsdatoen angitt én dag før slutten av stillingen. Sluttdatoen for kompensasjon er den samme som stillingens sluttdato. |
+| 467214 | **Lønnsbasert analyse** vises bare hvis **Navn på konverteringer av lønnssats** er satt til **Årlig** | Lønnsbaserte lønnssatser med et annet navn enn **Årlig** vises ikke i kompensasjonsanalyse. Med denne oppdateringen bruker kompensasjonsanalyse nå alle konverteringer av lønnssats. Når du kjører rapportene etter **Hver time** eller **Lønn**, blir konverteringer av lønnssats som bruker en annen periode enn hver time, inkludert i **Lønn**-filteret. Bare lønnssatser med en periode på **Hver time**, er inkludert i **Hver time**-filteret. |
+| 482464 | Når du viser **Gjennomganger**, endres ikke **Detaljer**-visningen til rutenettvisning etter at du har brukt et filter | Når du har brukt et filter, vises gjennomgangsrutenettet som forventet. |
+| 483184 | Human Resources genererer ikke permisjonsavsetninger når du velger **Basis for lag** som den **justerte startdatoen** i **Permisjonsregistrering**-posten |Den **justerte startdatoen** fylles ut og brukes ved generering av permisjoner.  |
 | 509731 | Fritidsforespørsel for fremtidig fratrådt arbeider fører til feil hvis de brukes for fridager etter avslutningsdato | Fritidsforespørsler kan nå sendes til ansatte med en fremtidig avslutningsdato så lenge forespørselen er før avslutningsdatoen. |
 | 510716 | Kompensasjonsanalyse inkluderer både mannlige og kvinnelige ansatte for **Gjennomsnittlig timelønn for menn** | I kompensasjonsanalyse inkluderte **Gjennomsnittlig timelønn for menn** på den **demografiske analysen av kompensasjon** gjennomsnittslønn for kvinner. Nå inneholder den bare dette for mannlige ansatte. |
 | 511348 | Selvbetjeningsfordeler skal bare vise fordelsplaner som er gyldige fra i dag til slutten av fordelsperioden | Utløpte fordelsplaner ble vist for ansatte på siden for **fordelsregistrering**. Denne korrigeringen fjerner disse planene. |
@@ -77,11 +79,11 @@ Følgende nye funksjoner er i forhåndsversjon. Hvis du vil ha mer informasjon o
 
 Følgende nye funksjoner er planlagt for fremtidig frigivelser:
 
-- **Sjekklisteenheter inkludert i Common Data Service** : Sjekklisteenheter for pålasting, avlasting, overføringer og forretningsprosesser vil snart være tilgjengelige i Common Data Service.
+- **Sjekklisteenheter inkludert i Common Data Service**: Sjekklisteenheter for pålasting, avlasting, overføringer og forretningsprosesser vil snart være tilgjengelige i Common Data Service.
 
-- **Årsakskoder for fordelsstyring** : Årsakskoder for fordelsstyring kombineres snart med eksisterende årsakskoder i Human Resources. Hvis du har opprettet årsakskoder i fordelsstyringen som er over 15 tegn, må du endre navnet på årsakskoden i skjemaet **Årsakskoder** for Fordelsbehandling slik at det består av 15 tegn eller mindre. Når du har oppdatert navnet, vises årsakskoden under det eksisterende årsakskodeskjemaet i Personaladministrasjon. Denne endringen vil være tilgjengelig i fremtiden, og vil ikke påvirke eksisterende funksjonalitet.
+- **Årsakskoder for fordelsstyring**: Årsakskoder for fordelsstyring kombineres snart med eksisterende årsakskoder i Human Resources. Hvis du har opprettet årsakskoder i fordelsstyringen som er over 15 tegn, må du endre navnet på årsakskoden i skjemaet **Årsakskoder** for Fordelsbehandling slik at det består av 15 tegn eller mindre. Når du har oppdatert navnet, vises årsakskoden under det eksisterende årsakskodeskjemaet i Personaladministrasjon. Denne endringen vil være tilgjengelig i fremtiden, og vil ikke påvirke eksisterende funksjonalitet.
 
-- **Egendefinerte koblinger i Lederselvbetjening** : For å støtte ledere utvider vi funksjoner i Lederselvbetjening. Vi legger til muligheten for å legge til egendefinerte koblinger i kategorien **Mitt team**. Denne funksjonen ligner på funksjonen for egendefinerte koblinger i kategorien **Min informasjon** i ansattselvbetjening. Hvis du vil ha mer informasjon, se [Egendefinerte koblinger i Lederselvbetjening](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/custom-links-manager-self-service).
+- **Egendefinerte koblinger i Lederselvbetjening**: For å støtte ledere utvider vi funksjoner i Lederselvbetjening. Vi legger til muligheten for å legge til egendefinerte koblinger i kategorien **Mitt team**. Denne funksjonen ligner på funksjonen for egendefinerte koblinger i kategorien **Min informasjon** i ansattselvbetjening. Hvis du vil ha mer informasjon, se [Egendefinerte koblinger i Lederselvbetjening](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/custom-links-manager-self-service).
 
 Hvis du vil ha en fullstendig liste over de planlagte funksjonene og de planlagte versjonene, kan du se [Oversikt over Dynamics 365 Human Resources 2019-frigivelsesbølge 2](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/).
 

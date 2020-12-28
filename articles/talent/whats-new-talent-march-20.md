@@ -19,11 +19,11 @@ ms.author: dkrame
 ms.search.validFrom: 2019-03-20
 ms.dyn365.ops.version: Talent
 ms.openlocfilehash: a7a44e1c9d8dcb4b2cc81a682a044d26cdc1149e
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2812701"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4462103"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-talent-march-20-2019"></a>Hva er nytt eller endret i Dynamics 365 Talent (20. mars 2019)?
 
@@ -80,7 +80,7 @@ Endringer er gjort for å løse et problem når du redigerer navnerekkefølgen i
 I mange organisasjoner kan kompensasjons- og fordelsansvarlige bare ha tilgang til bestemte kompensasjonsposter. Disse kan være for ledere eller regionale ansatte. Med denne endringen kan HR administrere og vedlikeholde kompensasjonsplanene for ulike ansattgrupper i organisasjonen. Faste og variable planer kan tilordnes til sikkerhetsroller, som bestemmer tilgangen til planene og ansattdataene som er knyttet til dem, for eksempel lønns- eller bonusposter. Bare rollene der tilgang er gitt, kan behandle kompensasjon for disse ansatte.
 
 ###  <a name="email-support-for-alerts"></a>E-poststøtte for varsler
-Med Platform update 24 for Finance and Operations kan brukere opprette varslingsregler som automatisk leverer e-postmeldinger til kontakter når de utløses av en hendelse.
+Med Platform update 24 for Finance and Operations kan brukere opprette varslingsregler som automatisk fordeler e-postmeldinger til kontakter når de utløses av en hendelse.
 
 ### <a name="duplicate-employee-check-interface-changes"></a>Kontroller av dupliserte ansatte: Endringer i grensesnittet
 Med denne endringen oppdages duplikater når du angir navnefelt, og statusen viser hvor mange duplikater som ble funnet. Du kan velge den angitte lenken for å åpne en ny side for å vurdere om du vil bruke resultatet som ble funnet. For å unngå å forstyrre dataregistreringen åpnes duplikatskjemaet ikke automatisk.

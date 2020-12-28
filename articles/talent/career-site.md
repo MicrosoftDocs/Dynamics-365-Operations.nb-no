@@ -19,11 +19,11 @@ ms.author: hasrivas
 ms.search.validFrom: 2019-02-12
 ms.dyn365.ops.version: AX 7.1.0, Talent April 2018 update
 ms.openlocfilehash: d4a1e7c19ccec6ae32e46ec7d58604b162418953
-ms.sourcegitcommit: 9cc6a011bfdd1b0fe505760b6bf429eb6c65862a
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "2832960"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4462078"
 ---
 # <a name="set-up-your-career-site-in-attract"></a>Konfigurere karriereområdet i Attract
 
@@ -62,7 +62,7 @@ Følgende liste inneholder vanlige URL-adresser for karriereområde og hvordan d
 
 -   **URL-adresse til hjemmeside for karriereområde** – Hvis du vil vise URL-adressen til hjemmesiden for karriereområdet, logger du på Attract som administrator, velger **Administrasjonssenter** på **Innstillinger**-menyen og velger deretter **Karrierestedsledelse**-kategorien.
 
--   **Søk-URL for individuell jobbutlysning** – Når du [posterer en ekstern jobb](Creating-jobs-Attract.md#postings) for første gang, kan du kopiere **Søk**-koblingen fra Attract. URL-adressen for denne koblingen vil være i følgende format: [https://jobs.talent.dynamics.com/jobs/\<company_name\>/\<environment_number\>/\<job_number\>/apply](https://jobs.talent.dynamics.com/jobs/%3ccompany_name%3e/%3cenvironment_number%3e/%3cjob_number%3e/apply)
+-   **Søk-URL for individuell jobbutlysning** – Når du [posterer en ekstern jobb](Creating-jobs-Attract.md#postings) for første gang, kan du kopiere **Søk**-koblingen fra Attract. URL-adressen for denne koblingen vil være i følgende format: [https://jobs.talent.dynamics.com/jobs/\<company_name\>/\<environment_number\>/\<job_number\>apply](https://jobs.talent.dynamics.com/jobs/%3ccompany_name%3e/%3cenvironment_number%3e/%3cjob_number%3e/apply)
 
 -   **URL-adresse til jobbutlysning** – URL-adressen til jobbutlysningen er en delstreng til Søk-URL-en. Den består av alt opp til og med jobbnummeret. For den foregående Søk-URL-adressen er derfor URL-adressen for jobbutlysningen [https://jobs.talent.dynamics.com/jobs/\<company_name\>/\<environment_number\>/\<job_number\>](https://jobs.talent.dynamics.com/jobs/%3ccompany_name%3e/%3cenvironment_number%3e/%3cjob_number%3e)
 

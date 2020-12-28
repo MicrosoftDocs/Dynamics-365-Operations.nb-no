@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: fd2ec16ec441174485a9cc70f41a83337264f53b
-ms.sourcegitcommit: 567132f4e4f7a1d76dccf762068209a42c788b52
+ms.openlocfilehash: 69cbaafb9cc28d4e363d0ef028460235cded54dc
+ms.sourcegitcommit: 597476103bb695e3cbe6d9ffcd7a466400346636
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/03/2020
-ms.locfileid: "3097062"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "4594362"
 ---
 # <a name="digital-asset-management-overview"></a>Oversikt over digital anleggsmiddelbehandling
 
@@ -58,3 +58,5 @@ Digitale ressurser og administrasjonsfunksjoner finnes i områdebyggeren under *
 [Beskjære bilder](dam-crop-images.md)
 
 [Tilpasse bildefokuspunkter](dam-custom-focal-point.md)
+
+[Last opp og betjen statiske filer](upload-serve-static-files.md)

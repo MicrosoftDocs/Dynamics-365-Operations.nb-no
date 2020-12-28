@@ -15,22 +15,22 @@ ms.search.region: global
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 41944fb7819b5527f6bc023a60acd9450d9e43c2
-ms.sourcegitcommit: 25909c6ad3616e4f75a2fe006057dda18d7cc856
+ms.openlocfilehash: 42b11ff16757d633b868dfdf248341193a44378f
+ms.sourcegitcommit: 9c05d48f6e03532aa711e1d89d0b2981e9d37200
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "3974844"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "4665304"
 ---
 # <a name="recall-order-operation-in-pos"></a>Tilbakekall ordre-operasjon i POS
 
 [!include [banner](includes/banner.md)]
 
-Tilbakekall ordre-operasjonen i Commerce-salgsstedet (POS) inneholder oppdaterte funksjoner for ordresøk og -filtrering og ordrespesifikk informasjon. Denne funksjonen er tilgjengelig i Commerce versjon 10.0.15 og nyere.
+**Tilbakekall ordre**-operasjonen i Commerce-salgsstedet (POS) inneholder oppdaterte funksjoner for ordresøk og -filtrering og ordrespesifikk informasjon. Denne funksjonen er tilgjengelig i Commerce versjon 10.0.15 og nyere.
 
 Hvis du vil aktivere denne funksjonaliteten, aktiverer du funksjonen **Forbedret tilbakekall ordre-operasjon i POS** i arbeidsområdet **Funksjonsbehandling** i Commerce Headquarters. Når du har aktivert funksjonen, bør du vurdere å oppdatere [skjermoppsettene](pos-screen-layouts.md) i POS for å dra nytte av noen av de endrede funksjonene.
 
-Konfigurasjon av knappen for **Tilbakekall ordre** -operasjonen lar organisasjoner distribuere operasjonen med en forhåndsdefinert visning.
+Konfigurasjon av knappen for **Tilbakekall ordre**-operasjonen lar organisasjoner distribuere operasjonen med en forhåndsdefinert visning.
 
 ![Konfigurasjon for knappegruppe](media/recallorderbuttongrid.png)
 
@@ -40,9 +40,9 @@ Visningsalternativene er som følger:
 - **Ordrer som skal hentes** – Når en bruker starter operasjonen, kjøres en spørring automatisk for å søke etter og vise en liste over ordrer som er konfigurert for henting i butikk i brukerens gjeldende butikk.
 - **Ordrer som skal leveres** – Når en bruker starter operasjonen, kjøres en spørring automatisk for å søke etter og vise en liste over ordrer som er konfigurert for levering fra brukerens gjeldende butikk.
 
-Når du starter **Tilbakekall ordre** -operasjonen fra POS og visningen er konfigurert til **Ingen** , kan en bruker søke etter og hente ordrer på én av måtene nedenfor.
+Når du starter **Tilbakekall ordre**-operasjonen fra POS og visningen er konfigurert til **Ingen**, kan en bruker søke etter og hente ordrer på én av måtene nedenfor.
 - Skanne ordrestrekkoder. Dette søker etter samsvarende felt for ordrenummer, kanalreferanse og kvitterings-ID.
-- Velg **Søk etter ordrer** - eller **Søk og filtrer** -ikonet på applinjen for å bruke filtreringsmekanismen til å finne ordrer som oppfyller filterkriteriene.
+- Velg **Søk etter ordrer**- eller **Søk og filtrer**-ikonet på applinjen for å bruke filtreringsmekanismen til å finne ordrer som oppfyller filterkriteriene.
 - Velg fra et forhåndsdefinert filter fra rullegardinmenyen **Vis ordrer** (ordrer som skal oppfylles, ordrer som skal hentes, eller ordrer som skal leveres).
 
 ![RecallOrderMainMenu](media/recallordermain.png)

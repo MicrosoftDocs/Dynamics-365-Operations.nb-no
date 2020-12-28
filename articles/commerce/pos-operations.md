@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2017-09-27
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 24ef0ad8528d1d094f59736b7a36fd77f57fb227
-ms.sourcegitcommit: 161e85eb0a6b772b60ba8b2578a3de149ce5bfd7
+ms.openlocfilehash: 7dc9f85bf90e6ddf9badf656eb136e28a71b036f
+ms.sourcegitcommit: 597476103bb695e3cbe6d9ffcd7a466400346636
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/22/2020
-ms.locfileid: "3081345"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "4594119"
 ---
 # <a name="online-and-offline-point-of-sale-pos-operations"></a>Tilkoblede og frakoblede salgsstedsoperasjoner (POS)
 
@@ -196,7 +196,9 @@ Følgende kolonner angir hvor operasjonene kan startes:
 | 102 | Annullert produkt | Annuller det valgte linjeelementet fra transaksjonen. | Ja | Ja | Antall | Ja | Antall |
 | 500 | Annuller transaksjon | Annuller gjeldende transaksjon. | Ja | Ja | Antall | Ja | Antall |
 | 916 | Windows Workflow Foundation | Denne operasjonen støttes ikke. | Gjelder ikke her | Gjelder ikke her | Gjelder ikke her | Gjelder ikke her | Antall |
-| 924 | X-rapport for bankkort | Denne operasjonen støttes ikke. | Gjelder ikke her | Gjelder ikke her | Gjelder ikke her | Gjelder ikke her | Ja |
+| 924 | X-rapport for bankkort | Denne operasjonen støttes ikke. | Gjelder ikke | Gjelder ikke | Gjelder ikke | Gjelder ikke | Ja |
+| 311 | Fjern systemrabatter fra transaksjoner | Fjern alle brukte systemrabatter, inkludert kupongbasert rabatter, fra transaksjonen. Dette fjerner ikke manuelle rabatter. | Ja | Ja | Ja | Ja | Nr. |
+| 312 | Bruk systemrabatter på nytt | Bruk systemrabatter på nytt på transaksjonen hvis de ble fjernet ved hjelp av operasjonen **Fjern systemrabatter fra transaksjon**. | Ja | Ja | Ja | Ja | Nr. |
 
 \* Operasjonen er tilgjengelig i frakoblet modus bare når det opprettes et kundeordre eller et salgstilbud, og bare hvis frakoblet oppretting av kundeordrer eller salgstilbud er konfigurert i POS-funksjonalitetsprofilen. Operasjonen kan ikke utføres når ordrer opprettes ved hjelp av Real-time Service, eller når ordrer tilbakekalles eller redigeres.
 

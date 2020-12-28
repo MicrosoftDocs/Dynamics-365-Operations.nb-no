@@ -1,5 +1,5 @@
 ---
-title: Forhåndsvisning av Dynamics 365 Supply Chain Management 10.0.15 (januar 2021)
+title: Hva er nytt eller endret i Dynamics 365 Supply Chain Management 10.0.15 (januar 2021)
 description: Dette emnet beskriver funksjoner som enten er nye eller endret i Dynamics 365 Supply Chain Management 10.0.15.
 author: kamaybac
 manager: tfehr
@@ -17,19 +17,18 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-10-09
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 0b8e69261563f61de022a626dd12d15d81535392
-ms.sourcegitcommit: 9dd2d38e76d4d93171315ec319e6ce7d51d4e6c7
+ms.openlocfilehash: 02f343c5351168375eca38893b9d8eef4549dc5a
+ms.sourcegitcommit: 0eb33909a419d526eb84b4e4b64d3595d01731ef
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "4012281"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "4700963"
 ---
-# <a name="preview-of-dynamics-365-supply-chain-management-10015-january-2021"></a>Forhåndsvisning av Dynamics 365 Supply Chain Management 10.0.15 (januar 2021)
+# <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10015-january-2021"></a>Hva er nytt eller endret i Dynamics 365 Supply Chain Management 10.0.15 (januar 2021)
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
-Dette emnet beskriver funksjoner som enten er nye eller endret i Microsoft Dynamics 365 Supply Chain Management-forhåndsversjonen 10.0.15. Denne versjonen har et build-nummer 10.0.644, og er tilgjengelig som følger:
+Dette emnet beskriver funksjoner som enten er nye eller endret i Microsoft Dynamics 365 Supply Chain Management, versjon 10.0.15. Denne versjonen har et build-nummer 10.0.644, og er tilgjengelig som følger:
 
 - **Forhåndsversjon:** oktober 2020
 - **Generell tilgjengelighet for versjon (selvoppdatering):** november 2020
@@ -39,19 +38,23 @@ Dette emnet beskriver funksjoner som enten er nye eller endret i Microsoft Dynam
 
 Denne versjonen inneholder følgende funksjoner: Noen av funksjonene i listen er fortsatt i forhåndsversjon, mens andre kanskje allerede er allment tilgjengelige. Følg koblingene til [frigivelsesplanen](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/planned-features) for å se de offisielle frigivelsesdatoene for hver funksjon.
 
-- Enhetsadministrasjon for i nettsky- og kantskala med arbeidsmengder for produksjons- og lagerkjøringer<!-- <br> - For more information, see [Cloud and edge scale units for manufacturing and warehouse management workloads](../cloud-edge/cloud-edge-landing-page.md).-->
+- Enhetsadministrasjon for i nettsky- og kantskala med arbeidsmengder for produksjons- og lagerkjøringer<br> - Hvis du vil ha mer informasjon, kan du se [Skalaenheter for sky og kant for arbeidsbelastninger for produksjons- og lagerstyring](../cloud-edge/cloud-edge-landing-page.md).
 
 - [Opprett og behandle overføringsordrer fra lagerappen](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/ad-hoc-transfer-order-creation-warehousing-mobile-app)<br> - Hvis du vil ha mer informasjon, kan du se [Opprette overføringsordrer fra lagerappen](../warehousing/create-transfer-order-from-warehouse-app.md).
 
 - [Standard svarfelt for tilbudsforespørsel for leverandørbud](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/default-rfq-reply-fields-for-vendor-bidding)<br> - Hvis du vil ha mer informasjon, kan du se [Oversikt over tilbudsforespørsler](../procurement/request-quotations.md).
 
-- [Engineering Change Management-tillegg for Dynamics 365 Supply Chain Management](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/engineering-change-management)<!-- <br> - For more information, see [Engineering change management overview](../engineering-change-management/product-engineering-overview.md).-->
+- [Engineering Change Management-tillegg for Dynamics 365 Supply Chain Management](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/engineering-change-management)<br> - Hvis du vil ha mer informasjon, kan du se [Oversikt over behandling av teknisk endring](../engineering-change-management/product-engineering-overview.md).
 
 - [Blandet virkelighet-veiledninger for produksjon](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/mixed-reality-guides-manufacturing)<br> - Hvis du vil ha mer informasjon, kan du se [Blandet virkelighet-veiledninger for ansatte i produksjonen](../production-control/instruction-guides-in-production-overview.md).
 
 - [Ny brukeropplevelse for produksjonsutførelse](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/mes-terminal-enhancements-discrete-manufacturing)<br> - Hvis du vil ha mer informasjon, kan du se [Hvordan arbeidere bruker grensesnittet for produksjonsutførelse](../production-control/production-floor-execution-use.md).
 
 - [Behandle lagerapphendelser](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/process-warehouse-app-events)<br> - Hvis du vil ha mer informasjon, kan du se [Behandling av hendelse for lagerappen](../warehousing/warehouse-app-events.md).
+
+- [Lagrede visninger for siden Frigitte produkter](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/saved-views-released-products-page)<br> - Hvis du vil ha mer informasjon se [Lagrede visninger](../../fin-ops-core/fin-ops/get-started/saved-views.md).
+
+- USMCA-sertifisering av opprinnelig dokument<br> - Hvis du vil ha mer informasjon, kan du se [USMCA-sertifisering av opprinnelse](../transportation/usmca-certification-of-origin.md).
 
 De fleste av disse funksjonene må aktiveres ved hjelp av [Funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) før du kan bruke dem.
 
