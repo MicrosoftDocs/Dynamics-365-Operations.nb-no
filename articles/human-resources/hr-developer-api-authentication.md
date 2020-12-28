@@ -19,11 +19,11 @@ ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
 ms.openlocfilehash: a0509ce99205d49d516e180203ffb65a1dc09a7c
-ms.sourcegitcommit: f38302b9430f2ab3efe91d0a7beff946bc610e8f
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "3092112"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4419826"
 ---
 # <a name="authentication"></a>Godkjenning
 
@@ -84,7 +84,7 @@ GET https://{cluster}.hr.talent.dynamics.com/namespaces/{namespace_guid}/data/Jo
 
         Hvis du vil se bestemte eksempler for webapper eller innebygde apper, kan du se hurtigstartene på [Microsoft-identitesplattformen (tidligere Azure Active Directory for utviklere)](https://docs.microsoft.com/azure/active-directory/develop/#quickstarts).
 
-5. Under **API-tillatelser** velger du **Legg til en tillatelse**. Deretter går du til fanen **API-er organisasjonen min bruker**, søker etter **Dynamics 365 Human Resources**og legger deretter til tillatelsen **user\_impersonation** for appen. Program-ID-en for Human Resources er f9be0c49-aa22-4ec6-911a-c5da515226ff. Bruk denne ID-en til å sikre at du har valgt riktig program.
+5. Under **API-tillatelser** velger du **Legg til en tillatelse**. Deretter går du til fanen **API-er organisasjonen min bruker**, søker etter **Dynamics 365 Human Resources** og legger deretter til tillatelsen **user\_impersonation** for appen. Program-ID-en for Human Resources er f9be0c49-aa22-4ec6-911a-c5da515226ff. Bruk denne ID-en til å sikre at du har valgt riktig program.
 
 6. Velg **Registrer**.
 

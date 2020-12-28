@@ -19,11 +19,11 @@ ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
 ms.openlocfilehash: 85e64c4186c7782391a3db6dc4deb3fab0ea9f4f
-ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "3430538"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4419835"
 ---
 # <a name="create-variable-compensation-plans"></a>Opprette variable kompensasjonsplaner
 
@@ -34,7 +34,7 @@ Beregningen av variable kompensasjonsbeløp for de ansatte kan baseres på flere
 ## <a name="variable-compensation-components"></a>Komponenter i variabel kompensasjon
 ### <a name="create-compensation-types"></a>Opprette kompensasjonstyper
 
-**Typer av variabel kompensasjon**er en nødvendig komponent. Typer av variabel kompensasjon gjør at du kan beskrive typene variabel kompensasjon som organisasjonen gir. De lar deg også angi om kompensasjonen skal være i kontanter eller i ikke-monetære form, for eksempel beholdning.
+**Typer av variabel kompensasjon** er en nødvendig komponent. Typer av variabel kompensasjon gjør at du kan beskrive typene variabel kompensasjon som organisasjonen gir. De lar deg også angi om kompensasjonen skal være i kontanter eller i ikke-monetære form, for eksempel beholdning.
 
 ### <a name="describe-vesting-rules"></a>Beskrive overdragelsesregler
 
@@ -59,7 +59,7 @@ Innstillingen for **Ansettelsesregel** lar deg angi om alle de ansatte skal få 
 -   Hvis ytelsen til avdelingen er over 100 prosent, legger systemet sammen prosenten som er angitt i feltet **For 1 % over mål**, med prosenten som er angitt i feltet **Utbetaling ved 100 %**, til verdien som er angitt i feltet **Høyeste tillatte utbetaling**, er nådd.
 -   Hvis ytelsen til avdelingen er under 100 prosent, trekker systemet prosenten som er angitt i feltet **For 1 % under mål**, fra prosenten som er angitt i feltet **Utbetaling ved 100 %**, til verdien som er angitt i feltet **Laveste tillatte utbetaling**, er nådd.
 
-Du kan angi**toleransenivåer** for terskelprosentene, slik at det vises en advarsel hvis utnyttelsen fører til at prosentandelen havner utenfor terskelprosenten. 
+Du kan angi **toleransenivåer** for terskelprosentene, slik at det vises en advarsel hvis utnyttelsen fører til at prosentandelen havner utenfor terskelprosenten. 
 
 Som standard leter systemet etter avdelingen som er angitt på den ansattes stilling. Belønningen for noen ansatte kan imidlertid avhenge av ytelsen til flere avdelinger. I dette tilfellet kan de ulike avdelingene og prosentandelen av belønningen som er tilordnet til ytelsen til hver avdeling, angis i den ansattes variable kompensasjonsregistrering. Hvis du vil ha mer informasjon, kan du se delen «Variabel kompensasjonsregistrering» nedenfor. 
 

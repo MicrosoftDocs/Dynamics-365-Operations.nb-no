@@ -19,11 +19,11 @@ ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
 ms.openlocfilehash: da4250b281438c29c82150af8db9cb8cca41c6c9
-ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "3429572"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4419957"
 ---
 # <a name="design-questionnaires"></a>Utforme spørreskjemaer
 
@@ -91,7 +91,7 @@ Nummerseriekodene brukes til å organisere spørsmål og svar. Basert på disse 
 Du bør definere alle parametere før du begynner å opprette dataene. Du kan endre innstillingene for spørreskjemaparametere når som helst.
 
 ## <a name="questionnaire-components"></a>Spørreskjemakomponenter
-Spørreskjemaer omfatter tre hovedelementer: svargrupper som inneholder svarene på spørsmål med flere valg, spørsmål og selve spørreskjemaet. Du kan også eventuelt gruppere spørsmålene i et spørreskjema i resultatgrupper. Resultatgrupper gjør at du kan kategorisere spørsmål og gi ytterligere analyse i spørreskjemaet. 
+Spørreskjemaer omfatter tre hovedelementer: svargrupper som inneholder svarene på spørsmål med flere valg, spørsmål og selve spørreskjemaet.  Du kan også eventuelt gruppere spørsmålene i et spørreskjema i resultatgrupper. Resultatgrupper gjør at du kan kategorisere spørsmål og gi ytterligere analyse i spørreskjemaet. 
 
 [![Spørreskjemakomponenter](./media/questionnairecomponents-1024x615.png)](./media/questionnairecomponents.png)
 

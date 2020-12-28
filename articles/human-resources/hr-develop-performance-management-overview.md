@@ -18,11 +18,11 @@ ms.author: anbichse
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.openlocfilehash: 7e2c7753da69f85307eccd22f6a315e9fd1e4bd6
-ms.sourcegitcommit: 3ae002804858f201297a729d03ec7eab8209be34
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "3628459"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4419904"
 ---
 # <a name="performance-management"></a>Ytelsesstyring
 
@@ -77,7 +77,7 @@ Mål har ofte målbare resultater. Du kan legge til målinger for å spore målr
 
 Ytelsesjournalen inneholder aktiviteter som gir lederen mer informasjon om hvordan du oppnådde målet. Hvis du har knyttet en ytelsesjournal til målet, vises det i **Aktiviteter**-delen av dette målet. Du kan også legge til en ny ytelsesjournal fra **Ytelsesmål**-siden. Denne ytelsesjournalen kobles automatisk til målet. 
 
-Hvis du vil knytte et dokument til målet, for eksempel en fullførelsesattest, kan du legge det ved i**Vedlegg**-delen på **Ytelsesmål**-siden. Et visningsprogram gjør at du raskt kan vise innholdet i et vedlagt dokument. 
+Hvis du vil knytte et dokument til målet, for eksempel en fullførelsesattest, kan du legge det ved i **Vedlegg**-delen på **Ytelsesmål**-siden. Et visningsprogram gjør at du raskt kan vise innholdet i et vedlagt dokument. 
 
 Du kan opprette en mal fra et mål, og deretter bruke malen til å opprette nye mål som er basert på malen. Når du oppretter en mal fra et mål, lagres beskrivelsen, emnene og målingene for målet. Alle faktiske målinger, fullføringsdatoer og emnekommentarer fjernes imidlertid.
 
