@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-05-18
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 51f04e553da822c4e09d31bcd72c71b674ad1f1b
-ms.sourcegitcommit: b6ab46f6e5ce60e2c3d70a348827eaf60c84cae2
+ms.openlocfilehash: e714be06984f399235f0799ef077a92deae64d9e
+ms.sourcegitcommit: b0aa724a18ab1fbb5a62925f048c54b2c676ebf4
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "3930023"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "4476083"
 ---
 # <a name="human-resources-app-in-teams"></a>Human Resources-app i Teams
 
@@ -52,11 +52,11 @@ Hvis du vil at brukere skal motta permisjonsforespørselsvarsler i Teams-appen, 
 
 1. Velg **Systemadministrasjon** i Human Resources.
 
-2. Velg **Koblinger** .
+2. Velg **Koblinger**.
 
-3. Under **Oppsett** velger du **Systemparametere** .
+3. Under **Oppsett** velger du **Systemparametere**.
 
-4. I kategorien **Generelt** setter du **Aktiver varslinger for Teams-app** til **Ja** .
+4. I kategorien **Generelt** setter du **Aktiver varslinger for Teams-app** til **Ja**.
 
    ![Aktivere varslinger for Teams-appen i Systemparametere](./media/hr-admin-teams-leave-app-enable-notifications.png)
 
@@ -70,25 +70,24 @@ Når du har aktivert varsler for Teams-appen i Human Resources, kan du aktivere 
 
 1. Velg **Systemadministrasjon** i Human Resources.
 
-2. Velg **Koblinger** .
+2. Velg **Koblinger**.
 
-3. Under **Brukere** velger du **Brukeralternativer** .
+3. Under **Brukere** velger du **Brukeralternativer**.
 
-4. Velg kategorien **Arbeidsflyt** .
+4. Velg kategorien **Arbeidsflyt**.
 
 5. Sett **Aktiver varslinger for Teams-app** til **Ja** for å aktivere varslinger for brukeren, eller **Nei** for å deaktivere varslinger for brukeren.
 
    ![Aktivere varslinger for Teams-appen i kategorien Arbeidsflyt i Brukeralternativer](./media/hr-admin-teams-leave-app-notifications.png)
 
-6. Velg **Lagre** .
+6. Velg **Lagre**.
 
 ## <a name="known-issues"></a>Kjente problemer
 
 | Problem | Status |
 | --- | --- |
-| Horisontal rulling fungerer ikke på Android-telefoner | Horisontal rulling er ikke et problem på iOS-enheter eller skrivebordsenheter. Vi arbeider med en løsning for Android. |
 | Balansen er feil når du sender inn fridager for en fremtidig dato. | Prognoser er ennå ikke tilgjengelige. Saldoen vises for den gjeldende datoen. |
-| Kan ikke avbryte en forespørsel med statusen **Til vurdering** . | Denne funksjonaliteten støttes ikke for øyeblikket og blir lagt til i en fremtidig versjon. |
+| Kan ikke avbryte en forespørsel med statusen **Til vurdering**. | Denne funksjonaliteten støttes ikke for øyeblikket og blir lagt til i en fremtidig versjon. |
 | Saldoinformasjon beregnes per i dag. | Systemet viser ikke saldoer i løpet av avsetningsperioden, selv om det er konfigurert i permisjons- og fraværsparametere. |
 
 ## <a name="troubleshooting"></a>Feilsøking

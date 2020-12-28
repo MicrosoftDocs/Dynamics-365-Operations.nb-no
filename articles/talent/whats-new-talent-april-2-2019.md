@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-04-02
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 68dc73b7316a3ceb7129c9ea46bc60669ed2be95
-ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
+ms.openlocfilehash: 04b5a006d4580fe419d81986a90851bc8d611722
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "2896940"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4528225"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-talent-april-2-2019"></a>Hva er nytt eller endret i Dynamics 365 Talent (2. april 2019)?
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 Dette emnet beskriver funksjoner som enten er nye eller endret i Dynamics 365 Talent.
 
@@ -54,7 +56,7 @@ Problemer som er logget av sluttbrukere via rapporter-et-problem-funksjonen i At
 ## <a name="changes-in-core-hr"></a>Endringer i Core HR
 Endringer som er beskrevet i denne delen, gjelder build nummer 8.1.2216.
 
-### <a name="platform-update-25-for-finance-and-operations"></a>Platform update 25 for Finance and Operations
+### <a name="platform-update-25-for-finance-and-operations"></a>Plattform Update 25 for Finance and Operations
 Hvis du vil ha mer informasjon om Platform update 25 for Finance and Operations, kan du se [Forhåndsvisningsfunksjoner i Dynamics 365 for Finance and Operations Platform Update 25 (april 2019)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-25).
 
 ###  <a name="advanced-compensation-security-fixed-and-variable"></a>Avansert kompensasjonssikkerhet (fast og variabel)
@@ -77,4 +79,4 @@ Organisasjoner kan kreve årsakskoder for bestemte fraværstyper når ansatte se
 Med denne endringen oppdages duplikater når du angir navnefelt, og statusen viser hvor mange duplikater som ble funnet. Du kan velge den angitte lenken for å åpne en ny side for å vurdere om du vil bruke resultatet som ble funnet. For å unngå å forstyrre dataregistreringen åpnes duplikatskjemaet ikke automatisk.
 
 ###  <a name="email-support-for-alerts"></a>E-poststøtte for varsler
-Med platform update 25 for Finance and Operations kan brukere opprette varslingsregler som automatisk leverer e-postmeldinger til kontakter når de utløses av en hendelse. 
+Med Platform update 25 for Finance and Operations kan brukere opprette varslingsregler som automatisk leverer e-postmeldinger til kontakter når de utløses av en hendelse. 

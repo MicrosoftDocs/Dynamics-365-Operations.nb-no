@@ -17,12 +17,12 @@ ms.search.industry: retail
 ms.author: BrShoo
 ms.search.validFrom: ''
 ms.dyn365.ops.version: Release 10.0.12
-ms.openlocfilehash: 84becee12363ca38951ff13073d87d1b1f14b616
-ms.sourcegitcommit: a47a4652a29fdb567a8ba67c4f914a8698e8c48c
+ms.openlocfilehash: cb2b003168d32d05387bd45796d313736b11a41f
+ms.sourcegitcommit: 4bf5ae2f2f144a28e431ed574c7e8438dc5935de
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "3765007"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "4517361"
 ---
 # <a name="domains-in-dynamics-365-commerce"></a>Domener i Dynamics 365 Commerce
 
@@ -47,7 +47,7 @@ Du kan opprette en serviceforespørsel for å legge til flere domener i et milj�
 
 ## <a name="commerce-generated-urls"></a>Commerce-genererte URL-adresser
 
-Når du klargjør et e-handelsmiljø, vil Commerce generere en URL-adresse som skal virke i miljøet. Det refereres til denne URL-adressen i områdekoblingen for e-handel som vises i LCS etter at miljøet er klargjort. En Commerce-generert URL-adresse er i formatet `https://<e-Commerce tenant name>.commerce.dynamics.com`, der navnet på e-handelsleieren er navnet som er angitt i LCS for Commerce-miljøet.
+Når du klargjør et Dynamics 365 Commerce-e-handelsmiljø, vil Commerce generere en URL-adresse som skal virke i miljøet. Det refereres til denne URL-adressen i områdekoblingen for e-handel som vises i LCS etter at miljøet er klargjort. En Commerce-generert URL-adresse er i formatet `https://<e-commerce tenant name>.commerce.dynamics.com`, der navnet på e-handelsleieren er navnet som er angitt i LCS for Commerce-miljøet.
 
 Du kan også bruke vertsnavn for produksjonsområde i et sandkassemiljø. Dette alternativet er ideelt når du skal kopiere et område fra et sandkassemiljø til produksjon.
 
@@ -102,9 +102,9 @@ Når en domenespørrestreng ikke er angitt i et miljø med flere domener som er 
 
 ## <a name="traffic-forwarding-in-production"></a>Viderekobling av trafikk i produksjon
 
-Du kan simulere flere domener ved hjelp av parametere for domenespørringsstreng på endepunktet commerce.dynamics.com. Men når du må gå i gang med produksjon, må du videresende trafikken for det egendefinerte domenet til endepunktet `<e-Commerce tenant name>.commerce.dynamics.com`.
+Du kan simulere flere domener ved hjelp av parametere for domenespørringsstreng på endepunktet commerce.dynamics.com. Men når du må gå i gang med produksjon, må du videresende trafikken for det egendefinerte domenet til endepunktet `<e-commerce tenant name>.commerce.dynamics.com`.
 
-Endepunktet `<e-Commerce tenant name>.commerce.dynamics.com` støtter ikke egendefinerte SSL-er (Secure Sockets Layers), så du må konfigurere tilpassede domener ved hjelp av Front Door Service eller et innholdsleveringsnettverk (CDN). 
+Endepunktet `<e-commerce tenant name>.commerce.dynamics.com` støtter ikke egendefinerte SSL-er (Secure Sockets Layers), så du må konfigurere tilpassede domener ved hjelp av Front Door Service eller et innholdsleveringsnettverk (CDN). 
 
 Hvis du vil konfigurere tilpassede domener ved hjelp av Front Door Service eller CDN, har du to alternativer:
 
@@ -152,17 +152,17 @@ Den Commerce-støttede forekomsten av Azure Front Door støtter ikke Apex-domene
 
   ## <a name="additional-resources"></a>Tilleggsressurser
 
-  [Distribuere et nytt e-handelsområde](deploy-ecommerce-site.md)
+  [Distribuere en ny e-handelsleier](deploy-ecommerce-site.md)
 
   [Definere en kanal for nettbutikk](online-stores.md)
 
   [Opprette et e-handelsområde](create-ecommerce-site.md)
 
-  [Knytte et nettområde til en kanal](associate-site-online-store.md)
+  [Knytte et Dynamics 365 Commerce-nettsted til en nettkanal](associate-site-online-store.md)
 
   [Administrere robots.txt-filer](manage-robots-txt-files.md)
 
-  [Laste opp URL-adresser for omadressering samtidig](upload-bulk-redirects.md)
+  [Laste opp masseomdirigeringer for URL-adresse](upload-bulk-redirects.md)
 
   [Konfigurere en B2C-leier i Commerce](set-up-B2C-tenant.md)
 

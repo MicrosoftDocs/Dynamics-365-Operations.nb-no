@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-03-05
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 855eafaca88d180997cf5a68c7f0fe975c177f88
-ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
+ms.openlocfilehash: 115d7cd3d71eaddce2434cb1939c503d36bccdf8
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "2898925"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4527296"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-talent-march-5-2019"></a>Hva er nytt eller endret i Dynamics 365 Talent (5. mars 2019)?
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 Dette emnet beskriver funksjoner som enten er nye eller endret i Talent.
 
@@ -76,5 +78,5 @@ Tidsfrister for å oppgradere til Common Data Service nærmer deg raskt. Logg p�
 ###  <a name="advanced-compensation-security-fixed-and-variable"></a>Avansert kompensasjonssikkerhet (fast og variabel)
 I mange organisasjoner har kompensasjons- og fordelsansvarlige bare tilgang til bestemte kompensasjonsposter, for eksempel poster for ledere eller regionsbaserte ansatte. Med denne endringen kan du administrere og vedlikeholde kompensasjonsplanene for ulike ansattgrupper i organisasjonen. Faste og variable planer kan tilordnes til sikkerhetsroller, som bestemmer tilgangen til planene og ansattdataene som er knyttet til dem, for eksempel lønns- eller bonusposter. Bare rollene som har den rette tilgangen, vil kunne behandle kompensasjon for disse ansatte.
 
-###  <a name="platform-update-24-for-finance-and-operations"></a>Platform update 24 for Finance and Operations
-Hvis du vil ha mer informasjon om Platform update 24 for Finance and Operations, kan du se [Hva er nytt eller endret i Platform update 24 for Finance and Operations (mars 2019)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-24).
+###  <a name="platform-update-24-for-finance-and-operations"></a>Plattform Update 24 for Finance and Operations
+Hvis du vil ha mer informasjon om Platform Update 24 for Finance and Operations, kan du se [Hva er nytt eller endret i Finance and Operations Platform Update 24 (mars 2019)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-24).

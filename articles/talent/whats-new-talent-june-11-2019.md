@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-06-11
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: f2ee23733d686480cd4323cab952ae12eceaf142
-ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
+ms.openlocfilehash: 20dc0768463d9a5d6762cb062deb0bdbe4d53fe3
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "2897586"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4528675"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-talent-june-11-2019"></a>Hva er nytt eller endret i Dynamics 365 Talent (11. juni 2019)
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 Dette emnet beskriver funksjoner som enten er nye eller endret i Microsoft Dynamics 365 Talent.
 
@@ -54,9 +56,9 @@ Denne versjonen inneholder mindre feilrettinger for Dynamics 365 Talent: Onboard
 
 Endringene som er beskrevet i denne delen, gjelder build nummer 8.1.2337.
 
-### <a name="platform-update-27-for-finance-and-operations"></a>Platform update 27 for Finance and Operations
+### <a name="platform-update-27-for-finance-and-operations"></a>Plattform Update 27 for Finance and Operations
 
-Hvis du vil ha mer informasjon om Platform update 27 for Finance and Operations, kan du se [Forhåndsvisningsfunksjoner i Dynamics 365 Finance and Operations Platform Update 27 (juni 2019)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-27).
+Hvis du vil ha mer informasjon om Platform Update 27 for Finance and Operations, kan du se [Forhåndsversjonsfunksjoner i Dynamics 365 Finance and Operations Platform Update 27 (juni 2019)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-27).
 
 ### <a name="feature-management-workspace-in-talent"></a>Arbeidsområdet for funksjonsbehandling i Talent
 

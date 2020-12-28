@@ -3,7 +3,7 @@ title: Finne kandidater med LinkedIn Recruiter i Attract
 description: Bruk LinkedIn-integreringen som leveres av Microsoft Dynamics 365 Talent – Attract, til å finne jobbkandidater via LinkedIn Recruiter.
 author: andreabichsel
 manager: AnnBe
-ms.date: 07/08/2019
+ms.date: 08/31/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-talent
@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: anbichse
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: e05b902d745c26c08d1bac133991f51fd58c3e93
-ms.sourcegitcommit: 9cc6a011bfdd1b0fe505760b6bf429eb6c65862a
+ms.openlocfilehash: 96e4660c4958bf5f2a0910bfad770e1e713f800f
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "2833052"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4528275"
 ---
 # <a name="source-candidates-with-linkedin-recruiter-in-attract"></a>Finne kandidater med LinkedIn Recruiter i Attract
 
@@ -33,6 +33,9 @@ ms.locfileid: "2833052"
 LinkedIn er verdens største profesjonelle online-nettverk, som gir deg tilgang til verdens beste talenter. Med Microsoft Dynamics 365 Talent: Attract kan du finne kandidater direkte fra LinkedIn. Derfor er det enklere enn noensinne å finne talentet du trenger for å besette de åpne stillingene. Når du har satt opp tilkoblingen til LinkedIn via Attract, kan du vise potensielle LinkedIn-kandidater for stillingene dine og eksportere dem til Attract med bare ett klikk.
 
 Hvis du ikke har denne funksjonen, kan du kontakte administratoren din. Før du kan dra nytte av LinkedIn Recruiter fra Attract, må administratoren [konfigurere integrering med LinkedIn](./attract-admin-linkedin.md). Du kan deretter konfigurere tilkoblingen til LinkedIn Recruiter og begynne å finne kandidater.
+
+>[!IMPORTANT]
+>Fra 1. juli 2020 støtter ikke LinkedIn lenger Internet Explorer 11. Brukere har fremdeles tilgang til LinkedIn med Internet Explorer 11, men vil bli bedt om å oppgradere eller bruke en annen nettleser. Hvis du vil ha mer informasjon, kan du se [Nettlesere som støttes av LinkedIn](https://www.linkedin.com/help/linkedin/answer/4135/supported-internet-browsers-for-linkedin).
 
 ## <a name="set-up-your-connection-with-linkedin-recruiter"></a>Konfigurere tilkoblingen til LinkedIn Recruiter
 
@@ -48,16 +51,32 @@ Før du kan begynne å arbeide med LinkedIn Recruiter via Attract, må du sette 
 
 Når du er koblet til LinkedIn Recruiter, kan du se kandidatenes LinkedIn-profiler i Attract.
 
+>[!NOTE]
+>Hvis du har en rekruttererplass tilordnet til deg, kan du se kandidatenes fullstendige informasjon.<br><br>
+>Hvis du har en ansettelsesansvarligplass eller ingen plass tilordnet til deg, må du passe på å logge av LinkedIn eller LinkedIn Recruiter før du går til LinkedIn-fanen for en kandidat i Attract. Du kan se kandidatens grunnleggende offentlige profildatae, for eksempel for- og etternavn.
+
 1. Velg **Jobber** eller **Talentsamlinger** til venstre i Attract, og velg deretter en søker.
 
     ![[Vise LinkedIn-kandidater i Attract](./media/attract-view-linkedin-candidates.png)](./media/attract-view-linkedin-candidates.png)
 
-2. Velg fanen **LinkedIn** i kandidatens profil. Du kan vise kandidatens profil, sammen med InMail-logg og LinkedIn-notatlogg.
+2. Velg fanen **LinkedIn** i kandidatens profil. Du kan vise kandidatens profil og InMail-logg.
 
-Herfra kan du lagre kandidaten i et LinkedIn Recruiter-prosjekt, sende inMail eller bruke Oppdater meg til å angi et varsel i LinkedIn Recruiter.
+   ![Vis en kandidats LinkedIn-informasjon](./media/attract-candidate-linkedin-tab.png)
+
+Herfra kan du utføre følgende handlinger:
+
+- Velg **Rekrutteringsaktiviteter**-fanen for å vise:
+   
+   - Rekrutterers notater (både offentlig og privat). Som standard er notater private og bare synlige for eieren av notatene.
+   - InMail-aktivitet (men ikke InMail-innholdet). Bla til nederst på siden for å vise InMail-utvekslingen med kundeemnet, og vis andre brukere i organisasjonen som samhandler med kundeemnet.
+   - Aktivitet for kandidatavvisning
+
+- Velg **Send InMail** for å sende InMail uten å forlate Attract.
+
+- Velg **Lagre til en jobb** for å lagre jobben uten å forlate Attract.
 
 > [!NOTE]
-> En kandidats LinkedIn-profil vil vises i Attract når kandidatens Attract-informasjon samsvarer med LinkedIn-informasjonen. Her er samsvarsreglene som brukes:
+> En kandidats LinkedIn-profil vises i Attract når kandidatens Attract-informasjon samsvarer med LinkedIn-informasjonen. Her er samsvarsreglene som brukes:
 > 
 > 1. Hvis e-postadressen og medlems-ID-en for LinkedIn samsvarer i Attract og LinkedIn, vises kandidatens profil. Kandidater har fortsatt muligheten til å koble til eller koble fra LinkedIn-profilen fra Attract.
 > 2. Hvis e-postadressen eller medlems-ID-en for LinkedIn ikke samsvarer, ser du en liste over mulige kandidater. Du kan deretter velge en kandidat i listen og koble profilen.

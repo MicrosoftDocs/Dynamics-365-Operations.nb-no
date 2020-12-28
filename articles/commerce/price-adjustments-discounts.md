@@ -3,7 +3,7 @@ title: Prisjusteringer og rabatter
 description: Denne artikkelen inneholder informasjon om prisjusteringer og rabatter i Dynamics 365 Commerce.
 author: scott-tucker
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/16/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: scotttuc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: dfaacfa7681258e3b2273083017c0c398d566651
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 0c2adaa5cd935d5b593bfbb3215d3466fcafab7b
+ms.sourcegitcommit: 1d74636bf9db5fb33e998322899504b709b4f89f
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3023595"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "4584321"
 ---
 # <a name="price-adjustments-and-discounts"></a>Prisjusteringer og rabatter
 
@@ -41,11 +41,13 @@ Prisjusteringer og rabatter kan brukes på produkter, varianter eller hierarkier
 
 ## <a name="types-of-discounts"></a>Rabattyper
 
-Det finnes fire typer rabatter:
+Det finnes mange typer rabatter:
 
 - **Enkel rabatt** – en enkelt prosent eller et enkelt beløp.
 - **Kvantumsrabatt** – en rabatt som brukes når to eller flere varer som kjøpes.
 - **Samlerabatt** – en rabatt som brukes ved kjøp av en bestemt kombinasjon av produkter.
 - **Terskelrabatt** – en rabatt som brukes når totalen for transaksjonen er mer enn et bestemt beløp.
+- **Betalingsmiddelbasert rabatt** – En rabatt som brukes når totalen for transaksjonen er mer enn et bestemt beløp, og en bestemt betalingstype (for eksempel kontant, kredit- eller debetkort) brukes til betaling.
+- **Leveringsrabatt** – En rabatt som brukes når totalen for transaksjonen er mer enn et bestemt beløp og en bestemt leveringsmåte (for eksempel forsendelse på to dager eller over natten) brukes på ordren.
 
 Både prisjusteringer og rabatter kan knyttes til prisgrupper. Prisgrupper kan deretter knyttes til kanaler, kataloger, tilknytninger og fordelsprogrammer.

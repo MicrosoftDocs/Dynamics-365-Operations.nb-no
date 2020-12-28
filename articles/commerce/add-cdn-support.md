@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 662d26c0157377977bd1031cd7bb13a8e692f37e
-ms.sourcegitcommit: 078befcd7f3531073ab2c08b365bcf132d6477b0
+ms.openlocfilehash: 0e888fca4a5401f1df6e61b10358489846ad4b0e
+ms.sourcegitcommit: 4bf5ae2f2f144a28e431ed574c7e8438dc5935de
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 07/31/2020
-ms.locfileid: "3646045"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "4517214"
 ---
 # <a name="add-support-for-a-content-delivery-network-cdn"></a>Legge til støtte for et innholdsleveringsnettverk (CDN)
 
@@ -97,8 +97,8 @@ Følg disse trinnene for å opprette en rutingsregel i Azure Front Door Service.
 1. Angi **standard** i feltet **Navn**.
 1. I feltet **Godkjent protokoll** velger du **HTTP og HTTPS**.
 1. I feltet **Frontverter** angir du **dynamics-ecom-leiernavn.azurefd.net**.
-1. Under **Mønstre som skal samsvare** angir du **/\*** i det øvre feltet.
-1. Under **Rutedetaljer** angir du alternativet **Rutetype** til **Fremover**.
+1. Under **Mønstre som skal samsvare** angir du **/\** _ i det øvre feltet.
+1. Under _*Rutedetaljer** angir du alternativet **Rutetype** til **Videresend**.
 1. I feltet **Serverdelsutvalg** velger du **ecom-backend**.
 1. I feltet **Videresendingsprotokoll** velger du alternativet **Samsvar forespørsel**. 
 1. Angi at alternativet **URL rewrite** skal være **Deaktivert**.
@@ -110,8 +110,8 @@ Følg disse trinnene for å opprette en bufringsregel i Azure Front Door Service
 1. Angi **statistiske filer** i feltet **Navn**.
 1. I feltet **Godkjent protokoll** velger du **HTTP og HTTPS**.
 1. I feltet **Frontverter** angir du **dynamics-ecom-leiernavn.azurefd.net**.
-1. Under **Mønstre som skal samsvare** i det øvre feltet angir du **/\_msdyn365/\_scnr/\***.
-1. Under **Rutedetaljer** angir du alternativet **Rutetype** til **Fremover**.
+1. Under **Mønstre som skal samsvare** i det øvre feltet angir du **/\_msdyn365/\_scnr/\** _.
+1. Under _*Rutedetaljer** angir du alternativet **Rutetype** til **Videresend**.
 1. I feltet **Serverdelsutvalg** velger du **ecom-backend**.
 1. I feltet **Videresendingsprotokoll** velger du alternativet **Samsvar forespørsel**.
 1. Angi at alternativet **URL rewrite** skal være **Deaktivert**.
@@ -146,15 +146,15 @@ CDN skal nå være riktig konfigurert slik at det kan brukes sammen med ditt han
 
 [Konfigurere domenenavnet](configure-your-domain-name.md)
 
-[Distribuere et nytt e-handelsområde](deploy-ecommerce-site.md)
+[Distribuere en ny e-handelsleier](deploy-ecommerce-site.md)
 
 [Opprette et e-handelsområde](create-ecommerce-site.md)
 
-[Knytte et nettområde til en kanal](associate-site-online-store.md)
+[Knytte et Dynamics 365 Commerce-nettsted til en nettkanal](associate-site-online-store.md)
 
 [Administrere robots.txt-filer](manage-robots-txt-files.md)
 
-[Laste opp URL-adresser for omadressering samtidig](upload-bulk-redirects.md)
+[Laste opp masseomdirigeringer for URL-adresse](upload-bulk-redirects.md)
 
 [Konfigurere en B2C-leier i Commerce](set-up-B2C-tenant.md)
 

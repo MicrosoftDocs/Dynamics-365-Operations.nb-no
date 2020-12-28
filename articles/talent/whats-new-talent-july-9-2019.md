@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-07-09
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 99a7e6130d45229011a185087d4872fe34b8224a
-ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
+ms.openlocfilehash: feb39966d98fa7bde9a6bfad26b07fbd224da59b
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "2897632"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4528043"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-talent-july-9-2019"></a>Hva er nytt eller endret i Dynamics 365 Talent (9. juli 2019)
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 Dette emnet beskriver funksjoner som enten er nye eller endret i Dynamics 365 Talent.
 
@@ -47,9 +49,9 @@ Denne versjonen inneholder mindre feilrettinger for Dynamics 365 Talent: Onboard
 
 Endringer som er beskrevet i denne delen, gjelder build nummer 8.1.2374.
 
-### <a name="platform-update-28-for-finance-and-operations"></a>Platform update 28 for Finance and Operations
+### <a name="platform-update-28-for-finance-and-operations"></a>Plattform Update 28 for Finance and Operations
 
-Hvis du vil ha mer informasjon om Platform update 28 for Finance and Operations, kan du se [Forhåndsvisningsfunksjoner i Dynamics 365 Finance and Operations Platform Update 28 (juli 2019)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-28).
+Hvis du vil ha mer informasjon om Platform Update 28 for Finance and Operations, kan du se [Forhåndsversjonsfunksjoner i Dynamics 365 Finance and Operations Platform Update 28 (juli 2019)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-28).
 
 ### <a name="entity-support-for-custom-fields-in-common-data-service"></a>Enhetsstøtte for egendefinerte felt i Common Data Service 
 

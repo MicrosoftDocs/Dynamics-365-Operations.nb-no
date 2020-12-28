@@ -18,21 +18,23 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2018-12-06
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: e46000414436b5a2fa211428dcd10131b9d588c1
-ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
+ms.openlocfilehash: 462b87a655e3e4017cffd2ba41cb6d1f18de3e50
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "2897701"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4529168"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-talent---core-hr-december-6-2018"></a>Hva er nytt eller endret i Dynamics 365 Talent – Core HR (6. desember 2018)
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 **Build 8.1.2071**
 
 Dette emnet beskriver funksjoner som enten er nye eller endret i Core HR.
 
 
-## <a name="platform-update-22-for-finance-and-operations"></a>Platform update 22 for Finance and Operations
+## <a name="platform-update-22-for-finance-and-operations"></a>Plattform Update 22 for Finance and Operations
 
 ### <a name="export-up-to-1-million-rows-to-excel"></a>Eksportere opptil 1 million rader til Excel
 
@@ -40,7 +42,7 @@ Funksjonen Eksporter til Excel kan nå konfigureres slik at brukerne kan eksport
 
 ### <a name="restyled-personalization-toolbar"></a>Ny utforming på verktøylinjen for tilpassing
 
-Verktøylinjen for tilpassing har fått ny utforming i Platform update 22 for Finance and Operations slik at brukerne lettere kan tilpasse sine egne opplevelser i Talent. Følgende endringer ble gjort: 
+Verktøylinjen for tilpassing har fått ny utforming i Platform Update 22 for Finance and Operations slik at brukerne lettere kan tilpasse sine egne opplevelser i Talent. Følgende endringer ble gjort: 
 
 -  Navnet på hvert tilpassingsverktøy vises nå sammen med et ikon, som hjelper brukere med å raskt gjenkjenne verktøyet de ønsker å bruke.
 -  Beskrivelsen av hvordan gjeldende verktøy brukes, vises også nå, som hjelper brukerne med å forstå hvordan de gjør de nødvendige tilpasningene.  
@@ -48,13 +50,13 @@ Verktøylinjen for tilpassing har fått ny utforming i Platform update 22 for Fi
 
 ### <a name="optimized-is-one-of-filtering-experience"></a>Optimalisert opplevelse for "er en av"-filtrering
 
-Filtreringsoperatoren "er en av" er tilgjengelig for de fleste feltene når du bruker filtreringsruten og rullegardinlistene i rutenetthodet. Med denne operatoren kan en bruker filtrere et felt basert på flere verdier. En ny og forbedret opplevelse for operatoren "er en av" er tilgjengelig i Platform update 22 for Finance and Operations. Hvis du vil vite mer, kan du se [Optimalisert "er en av"-filtreringopplevelsen](https://docs.microsoft.com/business-applications-release-notes/October18/dynamics365-finance-operations/improved-isoneof-filtering).
+Filtreringsoperatoren "er en av" er tilgjengelig for de fleste feltene når du bruker filtreringsruten og rullegardinlistene i rutenetthodet. Med denne operatoren kan en bruker filtrere et felt basert på flere verdier. En ny og forbedret opplevelse for operatoren "er en av" er tilgjengelig i Platform Update 22 for Finance and Operations. Hvis du vil vite mer, kan du se [Optimalisert "er en av"-filtreringopplevelsen](https://docs.microsoft.com/business-applications-release-notes/October18/dynamics365-finance-operations/improved-isoneof-filtering).
 
 ### <a name="paste-lists-from-excel-into-filter-fields-with-the-is-one-of-operator"></a>Lime inn lister fra Excel i filterfelter med operatoren "er en av"
 
 For enkelte oppgaver kan det hende at brukere har en liste med verdier i Excel som de vil bruke til å filtrere data i Talent En personaladministrasjonsbruker kan for eksempel ha funnet en gruppe ansatte fra en rapport som må undersøkes nærmere i systemet, og det vil være ideelt for denne brukeren å kunne kopiere listen direkte fra Excel til et filterfelt i Talent.
 
-Fra og med Platform update 22 for Finance and Operations gjenkjenner operatoren "er en av" i filtreringsruten og rutenettkolonnefiltreringen nå lister som er kopiert fra Excel, slik at de kan limes direkte inn i et filterfelt. Dette inkluderer en samling med verdier som er kopiert fra ulike rader og kolonner i Excel. Hvis du vil vite mer om denne funksjonen, kan du se [Lime inn lister fra Excel i filterfelter med operatoren "er en av"](https://docs.microsoft.com/business-applications-release-notes/October18/dynamics365-finance-operations/paste-filter-lists-from-excel).
+Fra og med Platform Update 22 for Finance and Operations gjenkjenner operatoren "er en av" i filtreringsruten og rutenettkolonnefiltreringen nå lister som er kopiert fra Excel, slik at de kan limes direkte inn i et filterfelt. Dette inkluderer en samling med verdier som er kopiert fra ulike rader og kolonner i Excel. Hvis du vil vite mer om denne funksjonen, kan du se [Lime inn lister fra Excel i filterfelter med operatoren "er en av"](https://docs.microsoft.com/business-applications-release-notes/October18/dynamics365-finance-operations/paste-filter-lists-from-excel).
 
 ## <a name="in-preview"></a>I forhåndsvisning
 
@@ -133,7 +135,7 @@ Arbeidere til arbeid-oppgaven må ha følgende tilordninger oppdatert.
 
 Endringen av Kjønn-feltet må også oppdateres. Velg tilordningstypen **fn** (funksjon) for kjønn og oppdater følgende verditilordninger.
 
-| Common Data Service-verdi   | Finance and Operations-verdi | | ------------|------------------ -----------| | 75440000    | Mann                         | | 75440001    | Kvinne                       | | 75440002    | Ingen                         | | 75440003    | Ikke-spesifikk                  |
+| Common Data Service Verdi   | Finance and Operations-verdi | | ------------|------------------ -----------| | 75440000    | Male                         | | 75440001    | Female                       | | 75440002    | None                         | | 75440003    | NonSpecific                  |
 
 De oppdaterte tilordningene skal se slik ut.
 

@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4e969a4bc4346d05abd99022868dae3a1d78fe50
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.openlocfilehash: ae3192bcf5128c09279017e3d5e8be8f42ec6975
+ms.sourcegitcommit: 95f90ac3f248716abdab16d5de6ccbf059616e4b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3979433"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "4666776"
 ---
 # <a name="order-promising"></a>Ordrebekreftelse
 
@@ -35,8 +35,14 @@ Ordrebekreftelse beregner de tidligste leverings- og mottaksdatoene og er basert
 
 -   **Salgsleveringstid** – Salgsleveringstiden er tiden mellom opprettelsen av salgsordren og leveringen av varene. Beregningen av leveringsdato er basert på et standard antall dager, og vurderer ikke lagertilgjengelighet, kjente behov eller planlagt forsyning.
 -   **ATP (tilgjengelig for ordre)** – ATP er antallet av en vare som er tilgjengelig og kan loves til en kunde på en bestemt dato. ATP-beregningen inkluderer ikke igangsatt lager, leveringstider, planlagte mottak, og avganger.
--   **ATP + Avgang-margin** – Forsendelsesdatoen er lik ATP-datoen pluss antall sikkerhetsdager for varen. Sikkerhetsdager er tiden det tar å klargjøre varene for forsendelse.
--   **CTP (leveringskapasitet)** – Tilgjengelighet beregnes via nedbryting.
+-   **ATP + Avgang-margin**– Forsendelsesdatoen er lik ATP-datoen pluss antall sikkerhetsdager for varen. Sikkerhetsdager er tiden det tar å klargjøre varene for forsendelse.
+-   **CTP (leveringskapasitet)**– Tilgjengelighet beregnes via nedbryting.
+
+> [!NOTE]
+> Når en salgsordre oppdateres, oppdateres bare informasjonen i ordrebekreftelsen hvis den eksisterende ordrebekreftelsesdatoen ikke kan oppfylles, som vist i følgende eksempler:
+> 
+> - **Eksempel 1**: Den gjeldende ordrebekreftelsesdatoen er 20. juli, men på grunn av økt antall, kan du ikke levere før 25. juli. Fordi gjeldende dato ikke lenger kan oppfylles, utløses ordrebekreftelsen.
+> -  **Eksempel 2**: Den gjeldende ordrebekreftelsesdatoen er 20. juli, men på grunn av redusert antall, det er nå mulig å levere 15. juli. Fordi den gjeldende datoen fremdeles kan oppfylles, utløses ikke ordrebekreftelsen, og 20. juli forblir ordrebekreftelsesdatoen.
 
 ## <a name="atp-calculations"></a>ATP-beregninger
 ATP-antallet beregnes basert på metoden "kumulativ ATP med blikk fremover". Den største fordelen med denne ATP-beregningsmetoden er at den kan håndtere tilfeller der summen av avganger mellom mottak er større enn siste mottak (for eksempel når et antall fra et tidligere mottak må brukes for å oppfylle et behov). Beregningsmetoden "kumulativ ATP med blikk fremover" inneholder alle avganger helt til det kumulative antallet som skal mottas, overskrider det kumulative antallet i avgang. Derfor evaluerer denne ATP-beregningsmetoden om noe av antallet fra en tidligere periode kan brukes i en senere periode.  
@@ -57,11 +63,11 @@ ATP-antallet som vises, er alltid større enn eller lik 0 (null). Hvis beregning
 
 ### <a name="example"></a>Eksempel
 
-Feltet **Horisont bakover for ATP-behov** kontrollerer hvor langt tilbake i tid det skal søkes etter forsinkede behovsordrer eller lageravganger. Feltet **Horisont bakover for ATP-forsyning** kontrollerer hvor langt tilbake i tid det skal søkes etter forsinkede forsyningsordrer eller lagermottak. Hvis for eksempel ordrer som er forsinket med bare sju dager, skal vurderes i ATP-beregningen, skal begge feltene settes til **7** .  
+Feltet **Horisont bakover for ATP-behov** kontrollerer hvor langt tilbake i tid det skal søkes etter forsinkede behovsordrer eller lageravganger. Feltet **Horisont bakover for ATP-forsyning** kontrollerer hvor langt tilbake i tid det skal søkes etter forsinkede forsyningsordrer eller lagermottak. Hvis for eksempel ordrer som er forsinket med bare sju dager, skal vurderes i ATP-beregningen, skal begge feltene settes til **7**.  
 
-Feltene **Forskyvningstid for forsinket ATP-behov** og **Forskyvningstid for forsinket ATP-forsyning** styrer når forsinket behov eller forsyning skal vurderes i ATP-beregningen. Hvis for eksempel forsinket forsyning eller behov skal vurderes i ATP-beregningen om to dager, skal begge feltene settes til **2** . En verdi på **2** betyr at antallet for en vare i en forsinket bestilling som skal vurderes i ATP-beregningen, skal vises som tilgjengelig to dager etter dagens dato.  
+Feltene **Forskyvningstid for forsinket ATP-behov** og **Forskyvningstid for forsinket ATP-forsyning** styrer når forsinket behov eller forsyning skal vurderes i ATP-beregningen. Hvis for eksempel forsinket forsyning eller behov skal vurderes i ATP-beregningen om to dager, skal begge feltene settes til **2**. En verdi på **2** betyr at antallet for en vare i en forsinket bestilling som skal vurderes i ATP-beregningen, skal vises som tilgjengelig to dager etter dagens dato.  
 
-I følgende eksempel angis **7** i feltene **Horisont bakover for ATP-behov** og **Horisont bakover for ATP-forsyning** , og **1** angis i feltene **Forskyvningstid for forsinket ATP-behov** og **Forskyvningstid for forsinket ATP-forsyning** .  
+I følgende eksempel angis **7** i feltene **Horisont bakover for ATP-behov** og **Horisont bakover for ATP-forsyning**, og **1** angis i feltene **Forskyvningstid for forsinket ATP-behov** og **Forskyvningstid for forsinket ATP-forsyning**.  
 
 En bestilling på 200 enheter av et produkt som skulle ha vært mottatt for tre dager siden, er ikke mottatt ennå. Derfor er en salgsordrelinje for 75 stykk av det samme produktet som skulle være sendt i går, ikke sendt.  
 

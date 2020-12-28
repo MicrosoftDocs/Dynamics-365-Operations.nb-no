@@ -18,16 +18,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: e00a54db50f1360096bb5329eef660927cecde3d
-ms.sourcegitcommit: 4359e7e4eec25362df61c9a26c7218604d12da3d
+ms.openlocfilehash: 97385da9d258cc169a9976be7c7798faa41661c3
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "3078049"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4527699"
 ---
 # <a name="source-candidates-with-talent-pools-in-attract"></a>Finne kandidater med talentsamlinger i Attract
 
 [!include [banner](includes/banner.md)]
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 Rekrutteringspersoner og ansettelsesansvarlige kan organisere kandidater ved hjelp av funksjonen for talentsamlinger i Attract. Talentsamlinger kan hjelpe deg med å holde orden på og engasjere deg med alle kandidater som søker på jobber i firmaet.
 
@@ -113,7 +115,7 @@ Alle brukere har en samlet oversikt over kandidatprofiler. **Profil**-kategorien
 
 - **Dokumenter**-kategorien viser alle dokumenter som kandidaten har lagt til fra sin profil eller under stillingssøknader. Du kan bruke denne fanen til å administrere kandidatens CVer, følgebrev, porteføljearbeid og så videre. Du kan også bruke denne kategorien til å legge til dokumenter.
 
-    Hvis du vil vise et dokument, merker du dokumentnavnet i listen over dokumenter. Du kan vise Microsoft Word-dokumenter i programmet ved hjelp av Microsoft Office 365. Du kan også laste ned dokumenter til den lokale datamaskinen ved hjelp av **Last ned**-alternativet for hvert dokument.
+    Hvis du vil vise et dokument, merker du dokumentnavnet i listen over dokumenter. Du kan vise Microsoft Word-dokumenter i programmet ved hjelp av Microsoft 365. Du kan også laste ned dokumenter til den lokale datamaskinen ved hjelp av **Last ned**-alternativet for hvert dokument.
 
 - **LinkedIn**-kategorien viser kandidatens LinkedIn-informasjon. Hvis du vil bruke denne kategorien, må du koble til LinkedIn-kontoen i brukerinnstillingene, og det må opprettes en tilkobling til miljøets LinkedIn Recruiter. Hvis du vil ha mer informasjon, se [Finne kandidater med LinkedIn Recruiter i Microsoft Dynamics 365 Talent - Attract](./attract-linkedin-recruiter.md).
 

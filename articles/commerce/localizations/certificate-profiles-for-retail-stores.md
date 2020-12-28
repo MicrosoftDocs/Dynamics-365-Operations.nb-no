@@ -17,17 +17,17 @@ ms.search.industry: Retail
 ms.author: v-kikozl
 ms.search.validFrom: 2020-10-09
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 0b8bf49a8eb78d0557ef105b40dd4cb5f0d24ce4
-ms.sourcegitcommit: 83ec80382bfeb693d5c5949b6f65296bd50eed12
+ms.openlocfilehash: 75edc1b683c4ea6c2bac8e509e6f6da8c56c5e6a
+ms.sourcegitcommit: 9c05d48f6e03532aa711e1d89d0b2981e9d37200
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "3973939"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "4665254"
 ---
 # <a name="user-defined-certificate-profiles-for-retail-stores"></a>Brukerdefinerte sertifikatprofiler for detaljhandelsbutikker
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
+
 
 ## <a name="overview"></a>Oversikt
 
@@ -59,38 +59,38 @@ Funksjonen for sertifikatprofiler støtter følgende scenarier i Commerce-kanale
 
 Fremgangsmåten nedenfor forklarer hvordan du konfigurerer sertifikatprofiler. Før du bruker sertifikat profiler i Commerce-kanalene, følger du denne Fremgangsmåten for å konfigurere innstillingene.
 
-1. I arbeidsområdet **Funksjonsbehandling** slår du på funksjonen **Brukerdefinerte sertifikatprofiler for detaljhandelsbutikker** .
-2. Gå til **Systemadministrasjon \> Oppsett \> Sertifikatprofiler** .
-3. Opprett en post, og fyll ut feltene for **Sertifikatprofil** , **Navn** og **Beskrivelse** for den.
+1. I arbeidsområdet **Funksjonsbehandling** slår du på funksjonen **Brukerdefinerte sertifikatprofiler for detaljhandelsbutikker**.
+2. Gå til **Systemadministrasjon \> Oppsett \> Sertifikatprofiler**.
+3. Opprett en post, og fyll ut feltene for **Sertifikatprofil**, **Navn** og **Beskrivelse** for den.
 
     > [!NOTE]
     > Sertifikatprofilen er en unik identifikator for et sertifikat på tvers av alle firmaer og Commerce-komponenter.
 
 3. I kategorien **Juridiske enheter** legger du til en linje i den juridiske enheter (selskapet) som gjeldende sertifikatprofil skal brukes for. Hvis sertifikatprofilen skal brukes for flere juridiske enheter, gjentar du dette trinnet for å legge til en linje for hver juridiske enhet.
-4. Velg **Innstillinger** for å åpne siden **Innstillinger for sertifikatprofil** , der du kan angi firmaspesifikke innstillinger for sertifikatprofilen.
+4. Velg **Innstillinger** for å åpne siden **Innstillinger for sertifikatprofil**, der du kan angi firmaspesifikke innstillinger for sertifikatprofilen.
 
 ### <a name="certificate-profile-settings"></a>Sertifikatprofilinnstillinger
 
-Når du velger **Innstillinger** for sertifikatprofillinjer, vises siden **Innstillinger for sertifikat profil** . På denne siden kan du angi hvilke sertifikater som kan brukes når gjeldende sertifikatprofil kalles i Commerce-kanalene. Du kan også angi søkerekkefølgen for sertifikater.
+Når du velger **Innstillinger** for sertifikatprofillinjer, vises siden **Innstillinger for sertifikat profil**. På denne siden kan du angi hvilke sertifikater som kan brukes når gjeldende sertifikatprofil kalles i Commerce-kanalene. Du kan også angi søkerekkefølgen for sertifikater.
 
 > [!NOTE]
-> **Prioritet** -feltet angis automatisk. Verdien **1** representerer den høyeste prioriteten. Når en ny linje legges til på siden **Innstillinger for sertifikatprofil** , blir prioriteten satt til et tall som er én mer enn prioriteten til den forrige linjen. Hvis du vil endre prioriteten for en bestemt linje, velger du linjen og deretter enten **Flytt opp** for å øke prioriteten eller **Flytt ned** for å redusere prioriteten.
+> **Prioritet**-feltet angis automatisk. Verdien **1** representerer den høyeste prioriteten. Når en ny linje legges til på siden **Innstillinger for sertifikatprofil**, blir prioriteten satt til et tall som er én mer enn prioriteten til den forrige linjen. Hvis du vil endre prioriteten for en bestemt linje, velger du linjen og deretter enten **Flytt opp** for å øke prioriteten eller **Flytt ned** for å redusere prioriteten.
 
-Når du legger til en ny linje på siden **Innstillinger for sertifikatprofil** , angir du følgende felt:
+Når du legger til en ny linje på siden **Innstillinger for sertifikatprofil**, angir du følgende felt:
 
-- **Plasseringstype** – Velg plasseringen der sertifikatet skal lagres. Dette feltet har to mulige verdier: **lokalt sertifikat** og **Key Vault** .
-- **Key Vault-sertifikat** – Dette feltet er obligatorisk hvis du setter feltet **Plasseringstype** til **Key Vault** . Bruk det til å angi en sertifikathemmelighet for Key Vault.
+- **Plasseringstype** – Velg plasseringen der sertifikatet skal lagres. Dette feltet har to mulige verdier: **lokalt sertifikat** og **Key Vault**.
+- **Key Vault-sertifikat** – Dette feltet er obligatorisk hvis du setter feltet **Plasseringstype** til **Key Vault**. Bruk det til å angi en sertifikathemmelighet for Key Vault.
 
     > [!NOTE]
     > Før du bruker et Key Vault-sertifikat i sertifikatprofiler, må du laste opp et sertifikat til lagringsplassen for Key Vault og følge instruksjonene i [Konfigurere Azure Key Vault-klient](https://docs.microsoft.com/dynamics365/finance/localizations/setting-up-azure-key-vault-client).
 
-- **Butikknavn** – Dette feltet er valgfritt, og er bare tilgjengelig hvis du setter **Plasseringstype** -feltet til **Lokalt sertifikat** . Bruk det til å angi et standard butikknavn som skal brukes til å søke i lokale sertifikater.
-- **Butikkplassering** – Dette feltet er valgfritt, og er bare tilgjengelig hvis du setter **Plasseringstype** -feltet til **Lokalt sertifikat** . Bruk det til å angi et standard butikkplassering som skal brukes til å søke i lokale sertifikater.
+- **Butikknavn** – Dette feltet er valgfritt, og er bare tilgjengelig hvis du setter **Plasseringstype**-feltet til **Lokalt sertifikat**. Bruk det til å angi et standard butikknavn som skal brukes til å søke i lokale sertifikater.
+- **Butikkplassering** – Dette feltet er valgfritt, og er bare tilgjengelig hvis du setter **Plasseringstype**-feltet til **Lokalt sertifikat**. Bruk det til å angi et standard butikkplassering som skal brukes til å søke i lokale sertifikater.
 
     > [!NOTE]
     > Standard butikknavn og butikkplassering blir lagt til for å forenkle prosessen med å søke i lokale sertifikater i Commerce Runtime. X509StoreProvider har en liste over mapper der sertifikater er lagret. Hvis standard butikknavn og standard butikkplassering ikke er angitt, prøver X509StoreProvider å finne et sertifikat i de andre mappene på listen.
 
-- **Avtrykk** – Dette feltet er obligatorisk, og er bare tilgjengelig hvis du setter **Plasseringstype** -feltet til **Lokalt sertifikat** . Bruk det til å angi sertifikatavtrykk.
+- **Avtrykk** – Dette feltet er obligatorisk, og er bare tilgjengelig hvis du setter **Plasseringstype**-feltet til **Lokalt sertifikat**. Bruk det til å angi sertifikatavtrykk.
 - **Kommentarer** – Dette feltet er valgfritt, og lar brukere angi merknader.
 
 ### <a name="workflow-searching-certificates-in-the-commerce-runtime"></a>Arbeidsflyt: Søke etter sertifikater i Commerce Runtime
@@ -98,15 +98,15 @@ Når du legger til en ny linje på siden **Innstillinger for sertifikatprofil** 
 Her er den grunnleggende arbeidsflyten som brukes til å søke etter et sertifikat når en sertifikatprofil kalles i Commerce Runtime.
 
 1. Systemet identifiserer om sertifikatprofilen har firmaspesifikke innstillinger for gjeldende juridiske enhet.
-1. Systemet prøver å finne sertifikatet ved hjelp av verdiene på siden **Innstillinger for sertifikatprofil** for linjen der **Prioritet** -feltet er satt til **1** .
+1. Systemet prøver å finne sertifikatet ved hjelp av verdiene på siden **Innstillinger for sertifikatprofil** for linjen der **Prioritet**-feltet er satt til **1**.
 
-    - Hvis **Plasseringstype** -feltet er satt til **Key Vault** , brukes verdien til **Sertifikathemmelighet for Key Vault** til å søke etter sertifikatet på siden **Parametere for Key Vault** . Det søkes deretter etter sertifikatet på lagringsplassen for Key Vault.
-    - Hvis **Plasseringstype** -feltet er satt til **Lokalt sertifikat** , må X509StoreProvider først søke etter sertifikatet ved hjelp av standard butikknavn og butikkplassering hvis disse parameterne er angitt. Deretter søkes det i alle andre mapper i listen over mapper.
+    - Hvis **Plasseringstype**-feltet er satt til **Key Vault**, brukes verdien til **Sertifikathemmelighet for Key Vault** til å søke etter sertifikatet på siden **Parametere for Key Vault**. Det søkes deretter etter sertifikatet på lagringsplassen for Key Vault.
+    - Hvis **Plasseringstype**-feltet er satt til **Lokalt sertifikat**, må X509StoreProvider først søke etter sertifikatet ved hjelp av standard butikknavn og butikkplassering hvis disse parameterne er angitt. Deretter søkes det i alle andre mapper i listen over mapper.
 
-1. Hvis sertifikatet ikke blir funnet, gjentas prosessen for linjen der **Prioritet** -feltet er satt til **2** og så videre.
+1. Hvis sertifikatet ikke blir funnet, gjentas prosessen for linjen der **Prioritet**-feltet er satt til **2** og så videre.
 
 > [!NOTE]
-> Hvis sertifikatprofilen ikke har innstillinger for gjeldende juridiske enhet, eller hvis sertifikatsøket ikke lykkes for alle linjer på siden **Innstillinger for sertifikatprofil** , blir ikke sertifikatet funnet.
+> Hvis sertifikatprofilen ikke har innstillinger for gjeldende juridiske enhet, eller hvis sertifikatsøket ikke lykkes for alle linjer på siden **Innstillinger for sertifikatprofil**, blir ikke sertifikatet funnet.
 
 #### <a name="caching-the-results-of-certificate-searches"></a>Hurtigbufre resultatene av sertifikatsøk
 
@@ -116,9 +116,9 @@ Resultatene av sertifikatsøk blir hurtigbufret. Standard utløpstid for en buff
 
 Hvis en ny versjon av sertifikatet introduseres, men det ikke kan oppdateres i alle butikker samtidig, gjør funksjonaliteten for sertifikatprofiler det mulig å oppdatere sertifikatet gradvis.
 
-1. Finn en sertifikatprofil og linjen som skal oppdateres, og velg deretter **Innstillinger** .
+1. Finn en sertifikatprofil og linjen som skal oppdateres, og velg deretter **Innstillinger**.
 1. Legg til en linje, og angi innstillinger som er knyttet til den nyeste versjonen av sertifikatet.
-1. Øk **Prioritet** -verdien for den nye linjen. Bruk **Flytt opp** -knappen til å flytte linjen, slik at den er over linjen for den forrige versjonen av det samme sertifikatet.
+1. Øk **Prioritet**-verdien for den nye linjen. Bruk **Flytt opp**-knappen til å flytte linjen, slik at den er over linjen for den forrige versjonen av det samme sertifikatet.
 
 > [!NOTE]
 > I Commerce Runtime kalles den nye versjonen av sertifikatet først. Hvis sertifikatet ennå ikke er oppdatert i en bestemt butikk eller på en bestemt terminal, vil den tidligere versjonen bli kalt.

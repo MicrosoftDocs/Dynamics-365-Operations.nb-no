@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: negudava
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: b28480ff584870e931fdc288a2652a5649268576
-ms.sourcegitcommit: 71ec2f48185b8104ca52ff70df52263ce5f87f26
+ms.openlocfilehash: 2e89347829ccd6569d568db42c79b5fea2316ba3
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "3893083"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4527032"
 ---
 # <a name="extend-with-power-apps-and-power-automate"></a>Utvide med Power Apps og Power Automate
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 Denne artikkelen beskriver noen eksempler på scenarier for utvidelsesmuligheter for Microsoft Dynamics 365 Human Resources som bruker Microsoft Power Apps og Microsoft Power Automate. Du kan importere løsningspakken som er tilknyttet hvert eksempel, i ditt Power Apps-miljø. Du kan deretter bruke pakkene som retningslinjer eller som utgangspunkt til å implementere scenarioene som gjelder for organisasjonen din.
 

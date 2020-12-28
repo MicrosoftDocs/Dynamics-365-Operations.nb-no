@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: e37777b8000fb3afbc72ff9c61347085816e36c9
-ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
+ms.openlocfilehash: 106976edfa2bd7efba41887d5e8f4243b56e7b2f
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "3431228"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4527804"
 ---
 # <a name="provision-human-resources"></a>Klargjøre Human Resources
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 Denne artikkelen leder deg gjennom prosessen med å klargjøre et nytt produksjonsmiljø for Microsoft Dynamics 365 Human Resources. Denne artikkelen antar at du har kjøpt Human Resources gjennom en Cloud Solution Provider (CSP)- eller enterprise architecture (EA)-avtale. Hvis du har en eksisterende Microsoft Dynamics 365-lisens som allerede inneholder Human Resources-serviceplanen, og du kan ikke fullføre trinnene i denne artikkelen, kan du kontakte kundestøtte.
 

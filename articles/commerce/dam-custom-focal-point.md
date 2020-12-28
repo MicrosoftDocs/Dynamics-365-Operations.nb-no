@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: af922e857e6bd7a58c0b9891939c8265568b549b
-ms.sourcegitcommit: 7a1d01122790b904e2d96a7ea9f1d003392358a6
+ms.openlocfilehash: b20fbc20f18243c712595795a0b16ae417e755e6
+ms.sourcegitcommit: 597476103bb695e3cbe6d9ffcd7a466400346636
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "3269527"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "4594338"
 ---
 # <a name="customize-image-focal-points"></a>Tilpasse bildefokuspunkter
 
@@ -49,7 +49,7 @@ Følg denne fremgangsmåten for å definere et egendefinert fokuspunkt for et bi
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 
-[Oversikt over digital anleggsmiddelbehandling](dam-overview.md)
+[Oversikt over behandling av digitale aktiva](dam-overview.md)
 
 [Laste opp bilder](dam-upload-images.md)
 
@@ -58,3 +58,5 @@ Følg denne fremgangsmåten for å definere et egendefinert fokuspunkt for et bi
 [Laste opp filer](dam-upload-files.md)
 
 [Beskjære bilder](dam-crop-images.md)
+
+[Last opp og betjen statiske filer](upload-serve-static-files.md)
