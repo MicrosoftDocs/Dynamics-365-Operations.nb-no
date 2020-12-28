@@ -19,11 +19,11 @@ ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
 ms.openlocfilehash: 9176e9519c3bf65ef7a4f1b5ae43dbeb411750f5
-ms.sourcegitcommit: a9461650d11d6845e1942865ebf7e35f75f61ad3
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "3230206"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4419933"
 ---
 # <a name="manage-features"></a>Behandle funksjoner
 
@@ -44,7 +44,7 @@ Hvis du vil ha tilgang til forhåndsvisningsfunksjoner, må du først aktivere d
 > [!IMPORTANT]
 > Forhåndsvisningsfunksjoner er bare tilgjengelige i **Sandkasse**-miljøer. Når du aktiverer en forhåndsversjon av en funksjon, aktiverer du den for alle brukere i organisasjonen som er i miljøet. Når du slår av funksjonen, kan du deaktivere den og gjøre den utilgjengelig for brukerne. Forhåndsvisningsfunksjoner har begrenset støtte i Human Resources. Du kan bruke færre personvern- og sikkerhetstiltak, og de er ikke inkludert i Human Resources-servicenivåavtalen (SLA). Du bør ikke bruke forhåndsvisningsfunksjoner til å behandle personlige data (det vil si all informasjon som kan identifisere deg), eller til å behandle andre data som er gjenstand for juridiske eller samsvarskrav.
 
-1. Velg **Systemadministrasjon**i Human Resources.
+1. Velg **Systemadministrasjon** i Human Resources.
 
 2. Velg flisen **Funksjonsbehandling**.
 

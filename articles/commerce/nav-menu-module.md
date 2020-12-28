@@ -19,11 +19,11 @@ ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.14
 ms.openlocfilehash: b0e8168ca9ec9ca68011650a73cc09983deca645
-ms.sourcegitcommit: 765056b5dc1d0a8c27e56ff2cbd310ad3349ff09
+ms.sourcegitcommit: eee3523be26369aecdb36c0143a6ee3dab4b7966
 ms.translationtype: HT
 ms.contentlocale: nb-NO
 ms.lasthandoff: 10/20/2020
-ms.locfileid: "4055743"
+ms.locfileid: "4414780"
 ---
 # <a name="navigation-menu-module"></a>Navigasjonsmenymodul
 
@@ -44,12 +44,12 @@ Følgende illustrasjon viser et eksempel på en navigasjonsmeny for området Fab
 
 | Egenskapsnavn             | Verdi                 | beskrivelse |
 |---------------------------|-----------------------|-------------|
-| Kilde                  | **Detaljhandel** , **Manuell redigering** , **Detaljhandel og manuell redigering** | Verdien for **Detaljhandel** gjør at kanalnavigasjonshierarkiet fra Commerce-hovedkontoret vises på navigasjonsmenyen. Veridn for **Manuell redigering** tillater at statiske menyelementer blir kuratert. Verdien for **Detaljhandel og manuell redigering** tilbyr en kombinasjon av begge. |
+| Kilde                  | **Detaljhandel**, **Manuell redigering**, **Detaljhandel og manuell redigering** | Verdien for **Detaljhandel** gjør at kanalnavigasjonshierarkiet fra Commerce-hovedkontoret vises på navigasjonsmenyen. Veridn for **Manuell redigering** tillater at statiske menyelementer blir kuratert. Verdien for **Detaljhandel og manuell redigering** tilbyr en kombinasjon av begge. |
 | Vise kategoribilder | **Sann** eller **Usann**    | Når denne egenskapen er aktivert, vises kategoribilder på navigasjonsmenyen, som definert i Commerce Headquarters for hver kategori. Lagt til i Commerce-versjon 10.0.14. |
 | Aktiver navigasjonsmeny med flere nivåer | **Sann** eller **Usann** | Når denne egenskapen er aktivert, kan navigasjonsmenyen vise flere nivåer i navigasjonshierarkiet. Denne funksjonen er tilgjengelig i Dynamics 365 Commerce versjon 10.0.15. |
 | Antall nivåer | heltall | Denne egenskapen definerer antall nivåer som skal vises hvis egenskapen **Aktiver navigasjonsmeny med flere nivåer** er satt til **sann**. |
 | Statisk menyelement| Matrise med verdier| Statiske menyelementer som knytter et menyelementnavn til en kobling til en statisk områdeside. Du kan opprette menyelementer under andre menyelementer. Som standard vises statiske menyer på rotnivå, og de blir lagt ved kanalnavigasjonshierarkiet hvis det finnes. |
-| Vis rotmeny | **Sann** eller **Usann** | Når denne egenskapen er aktivert, kan navigasjonsmenyen defineres under en egendefinert rot (for eksempel **Handle nå** ). Denne funksjonen er tilgjengelig i Dynamics 365 Commerce versjon 10.0.15. |
+| Vis rotmeny | **Sann** eller **Usann** | Når denne egenskapen er aktivert, kan navigasjonsmenyen defineres under en egendefinert rot (for eksempel **Handle nå**). Denne funksjonen er tilgjengelig i Dynamics 365 Commerce versjon 10.0.15. |
 | Rotmeny | streng | Denne egenskapen kan brukes til å definere tekst for en egendefinert rot hvis egenskapen **Vis rotmeny** er satt til **sann**. |
 
 Følgende illustrasjon viser et eksempel på et kategoribilde som vises på navigasjonsmenyen for Fabrikam-området.

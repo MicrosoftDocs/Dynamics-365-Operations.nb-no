@@ -18,11 +18,11 @@ ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
 ms.openlocfilehash: b0f1e290526c25aa6e6300c65e24044a325bee53
-ms.sourcegitcommit: 7a1d01122790b904e2d96a7ea9f1d003392358a6
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "3269964"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4414590"
 ---
 # <a name="add-a-new-site-page"></a>Legg til en ny områdeside
 
@@ -72,7 +72,7 @@ Følg denne fremgangsmåten for å legge til en ny områdeside på området.
 1. Velg **Forhåndsvisning** for å forhåndsvise siden. Når du er ferdig, lukker du forhåndsvisningskategorien for å gå tilbake til redigeringsverktøyet.
 1. Velg **Publiser**.
 1. I navigasjonsbanen (søkebaner) velger du **Fabrikam** (eller navnet på området).
-1. Velg **URL-adresser**i navigasjonsruten til venstre.
+1. Velg **URL-adresser** i navigasjonsruten til venstre.
 1. Finn og velg URL-adresse (**minnyeside**) i listen.
 1. Velg **Publiser**.
 

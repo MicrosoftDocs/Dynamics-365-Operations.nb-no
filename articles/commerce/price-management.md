@@ -18,11 +18,11 @@ ms.author: shajain
 ms.search.validFrom: 2018-03-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: a90f5706c87d398f495fae40f42f6c2d408b1c2a
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3980822"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4414520"
 ---
 # <a name="retail-sales-price-management"></a>Salgsprisbehandling for Retail
 
@@ -37,9 +37,9 @@ Følgende termer brukes i dette emnet.
 | Semester | Definisjonen, bruk og merknader |
 |---|---|
 | Pris | Enhetsbeløpet som et produkt selges for i en salgsstedsklient eller på en salgsordre. I dette emnet refererer begrepet *pris* alltid til salgsprisen, ikke lagerprisen eller kostprisen. |
-| Basispris | Prisen som er angitt i **Pris** -feltet for et frigitt produkt. |
-| Pris for forretningsavtale | Prisen som er angitt på et produkt eller en variant ved hjelp av en forretningsavtale av typen **Pris (salg)** . |
-| Beste pris | Når mer enn én pris eller rabatt kan brukes på et produkt, det minste prisbeløpet og/eller det største rabattbeløpet som gir lavest mulig nettobeløpet som kunden må betale. I dette emnet kalles begrepet beste pris alltid "beste pris." Den beste prisen er forskjellig fra, og bør ikke forveksles med **Beste pris** -opplistingsverdien for en rabatts samtidighetsmodus. |
+| Basispris | Prisen som er angitt i **Pris**-feltet for et frigitt produkt. |
+| Pris for forretningsavtale | Prisen som er angitt på et produkt eller en variant ved hjelp av en forretningsavtale av typen **Pris (salg)**. |
+| Beste pris | Når mer enn én pris eller rabatt kan brukes på et produkt, det minste prisbeløpet og/eller det største rabattbeløpet som gir lavest mulig nettobeløpet som kunden må betale. I dette emnet kalles begrepet beste pris alltid "beste pris." Den beste prisen er forskjellig fra, og bør ikke forveksles med **Beste pris**-opplistingsverdien for en rabatts samtidighetsmodus. |
 
 ## <a name="price-groups"></a>Prisgrupper
 
@@ -112,7 +112,7 @@ En nasjonal forhandler fastsetter de fleste priser per område, og det har fire 
 
 I dette eksemplet skal vi gå nedover til Nord-øst-regionen. Butikk 1 er i Boston, og butikk 2 er i Manhattan. For Boston-butikken er to prisgrupper koblet til kanalen: Nord-øst og butikk 1. For Manhattan-butikken er tre prisgrupper koblet til kanalen: Nord-øst, NYC og butikk 2.
 
-Forhandleren definerer to prisingsprioriteter: Høy kostnad har prioritetsnummer 5, og butikkpriser har prioritetsnummer 10. (Husk at prisingsprioritet som standard er 0 \[null\], og en pris eller rabatt som har et høyere prioritetsnummer, brukes før en pris eller rabatt som har et lavere prioritetsnummer.) For Nordøst-prisgruppen beholdes prisingsprioriteten på standardverdien **0** (null). For prisgruppen NYC er prisingsprioriteten satt til **5** , fordi New York City er et høykostnadsmarked. For prisgruppene Butikk 1 og Butikk 2 er prisingsprioriteten satt til **10** .
+Forhandleren definerer to prisingsprioriteter: Høy kostnad har prioritetsnummer 5, og butikkpriser har prioritetsnummer 10. (Husk at prisingsprioritet som standard er 0 \[null\], og en pris eller rabatt som har et høyere prioritetsnummer, brukes før en pris eller rabatt som har et lavere prioritetsnummer.) For Nordøst-prisgruppen beholdes prisingsprioriteten på standardverdien **0** (null). For prisgruppen NYC er prisingsprioriteten satt til **5**, fordi New York City er et høykostnadsmarked. For prisgruppene Butikk 1 og Butikk 2 er prisingsprioriteten satt til **10**.
 
 To produkter som forhandleren selger, er produkt 1, t-skjorte, og produkt 2, merkespesifikke dongeribukser.
 
@@ -140,9 +140,9 @@ Basisprisen og forretningsavtaleprisen er en del av kjernen i Dynamics 365 og er
 
 ### <a name="base-price"></a>Basispris
 
-Det er enklest å definere prisen for en vare direkte i produktet. Verdien du angir direkte på et produkt, kalles ofte basisprisen for produktet. Du angir basisprisen i **Pris** -feltet i **Selg** -kategorien på siden **Detaljer om frigitt produkt** . Verdien du angir, er i firmavaluta. Som standard er prisen for et antall på 1 for måleenheten som er angitt i **Enhet** -feltet i **Selg** -kategorien. Den faktiske prisen per enhet av et produkt er basert på måleenheten, prisantallet og valutaen.
+Det er enklest å definere prisen for en vare direkte i produktet. Verdien du angir direkte på et produkt, kalles ofte basisprisen for produktet. Du angir basisprisen i **Pris**-feltet i **Selg**-kategorien på siden **Detaljer om frigitt produkt**. Verdien du angir, er i firmavaluta. Som standard er prisen for et antall på 1 for måleenheten som er angitt i **Enhet**-feltet i **Selg**-kategorien. Den faktiske prisen per enhet av et produkt er basert på måleenheten, prisantallet og valutaen.
 
-Hvis et produkt har én pris for alle, tilbyr basisprisen den mest effektive måten å behandle prisen på produktet på. Selv om du bruker forretningsavtaler til å angi priser, kan du også angi basisprisen på et produkt. Hvis du ikke bruker en forretningsavtale av typen **Alle** , har du en tilbakefallspris som brukes når ingen forretningsavtale gjelder.
+Hvis et produkt har én pris for alle, tilbyr basisprisen den mest effektive måten å behandle prisen på produktet på. Selv om du bruker forretningsavtaler til å angi priser, kan du også angi basisprisen på et produkt. Hvis du ikke bruker en forretningsavtale av typen **Alle**, har du en tilbakefallspris som brukes når ingen forretningsavtale gjelder.
 
 Hvis valutaen for en kanal er forskjellig fra firmaets valuta, bestemmes basisprisen i kanalen ved hjelp av valutaomregning for prisen som er angitt for produktet.
 
@@ -150,9 +150,9 @@ Selv om prisenheten ikke er et vanlig scenario, støtter prissettingsmotoren den
 
 ### <a name="sales-price-trade-agreement"></a>Forretningsavtale for salgspris
 
-Ved å bruke journal for forretningsavtaler kan du opprette forretningsavtaler for salgspris for hvert produkt. I Microsoft Dynamics 365 finnes det tre kundeområder for forretningsavtaler for salgspris: **Tabell** , **Gruppe** og **Alle** . Kundeområdet avgjør hvilke kunder en bestemt salgsprisforretningsavtale gjelder for.
+Ved å bruke journal for forretningsavtaler kan du opprette forretningsavtaler for salgspris for hvert produkt. I Microsoft Dynamics 365 finnes det tre kundeområder for forretningsavtaler for salgspris: **Tabell**, **Gruppe** og **Alle**. Kundeområdet avgjør hvilke kunder en bestemt salgsprisforretningsavtale gjelder for.
 
-En salgsprisforretningsavtale av typen **Tabell** er for en enkelt kunde som er angitt direkte i forretningsavtalen. Denne situasjonen er ikke et vanlig firma-til-kunde (B2C)-scenario. Men hvis det oppstår, bruker prissettingsmotoren **Tabell** -forretningsavtaler når den fastsetter prisen.
+En salgsprisforretningsavtale av typen **Tabell** er for en enkelt kunde som er angitt direkte i forretningsavtalen. Denne situasjonen er ikke et vanlig firma-til-kunde (B2C)-scenario. Men hvis det oppstår, bruker prissettingsmotoren **Tabell**-forretningsavtaler når den fastsetter prisen.
 
 En salgsprisforretningsavtale av typen **Gruppe** er typen som brukes oftest. Utenfor Commerce er salgsprisforretningsavtaler av typen **Gruppe** for en enkelt kundegruppe. I Commerce er imidlertid begrepet for en kundegruppe utvidet slik at det er en mer generell prisgruppe. En prisgruppe kan kobles til en kanal, en tilknytning, et fordelsprogram eller en katalog. Hvis du vil ha detaljert informasjon om prisgrupper, kan du se delen "Prisgrupper" tidligere i dette emnet.
 
@@ -175,7 +175,7 @@ Prissettingsmotoren returnerer tre priser for hvert produkt: basisprisen, forret
 
 Basisprisen er bare egenskapen for produktet og er den samme for alle overalt.
 
-Hvis alternativet **Finn neste** er satt til **Ja** i salgsprisforretningsavtalen, brukes den laveste prisen som blir funnet for gjeldende salgsprisforretningsavtaler, som forretningsavtaleprisen. Du finner forretningsavtaler ved å bruke prisgrupper eller **ALLE** -kontokoden. Forretningsavtalene kan også tilordnes direkte til en kunde. Hvis alternativet **Finn neste** er satt til **Ingen** , brukes den første forretningsavtaleprisen som blir funnet. Hvis ingen salgsprisforretningsavtaler blir funnet, settes forretningsavtaleprisen lik basisprisen.
+Hvis alternativet **Finn neste** er satt til **Ja** i salgsprisforretningsavtalen, brukes den laveste prisen som blir funnet for gjeldende salgsprisforretningsavtaler, som forretningsavtaleprisen. Du finner forretningsavtaler ved å bruke prisgrupper eller **ALLE**-kontokoden. Forretningsavtalene kan også tilordnes direkte til en kunde. Hvis alternativet **Finn neste** er satt til **Ingen**, brukes den første forretningsavtaleprisen som blir funnet. Hvis ingen salgsprisforretningsavtaler blir funnet, settes forretningsavtaleprisen lik basisprisen.
 
 Den aktive prisen beregnes ved å ta forretningsavtaleprisen og bruke den største prisjusteringen som gjelder for produktet. Hvis ingen prisjusteringer blir funnet, eller hvis den beregnede aktive prisen er større enn forretningsavtaleprisen, settes den aktive prisen lik forretningsavtaleprisen. Husk at du ikke kan øke prisen på et produkt ved hjelp av en prisjustering. Du finner de aktuelle prisjusteringene bare ved å bruke prisgrupper som er tilordnet til en kanal, katalog, tilknytning eller fordelskortprogrammet.
 
@@ -187,13 +187,13 @@ Når du velger alternativet for å la eksisterende forretningsavtaler utløpe, o
 
 Prisene kan økes eller reduseres ved hjelp av feltene **Prisregel** og **Prisgrunnlag** for kategoriprisreglene.
 
-- Velg typen prisendring du vil bruke, i feltet **Prisregel** :
+- Velg typen prisendring du vil bruke, i feltet **Prisregel**:
 
     - **Påslag** –En prosent av prisen grunnlag brukes til å beregne salgsprisen. Eksempel: Et produkt som koster 10,00 og selges for 15,00,, har et påslag på 50 prosent.
     - **Margin** – En prosent av salgsprisen som brukes til å beregne fortjenestebeløpet. Eksempel: Et produkt som koster 10,00 og selges for 15,00 har en fast margin på 33,3 prosent.
     - **Fast beløp** – Et beløp som legges til prisgrunnlaget som brukes til å beregne salgsprisen. Eksempel: Et produkt som koster 10,00 og selges for 15,00 har et fast beløp på 5,00.
 
-- Velg pristypen du vil endre, i **Prisgrunnlag** -feltet:
+- Velg pristypen du vil endre, i **Prisgrunnlag**-feltet:
 
     - **Basiskost** – Beløpet som forhandleren betalte til leverandøren.
     - **Basispris** – Salgsprisen før forretningsavtaler og prisjusteringer brukes.
@@ -228,7 +228,7 @@ Prissettingsmotoren **støtter ikke** følgende prissettingsfunksjoner:
 - Angivelse av priser etter lagringsdimensjoner for område eller område og lager støttes ikke. Hvis du bare angir områdedimensjonen i forretningsavtalene, ignorerer prissettingsmotoren ignorere området og bruker forretningsavtalen på alle områder. Hvis du angir både område og lager, er virkemåten udefinert/ikke testet fordi det forventes at forhandlere bruker butikkprisgruppene til å kontrollere prisene for hver butikk/lager.
 - Attributtbasert prissetting støttes ikke.
 - Leverandørrabatt-overføring støttes ikke.
-- Standard prismotor for Supply Chain Management støtter prisberegningen basert på den "Ønsket forsendelsesdato" og "Ønsket mottaksdato" sammen med gjeldende dato. Prissetting for detaljhandel støtter imidlertid ikke disse verdiene for øyeblikket. Årsaken er at kunder ikke forventer at den ønskede leveringsdatoen påvirker vareprisen i B2C-scenarier. I noen tilfeller har forhandlere både B2B- og B2C-operasjoner. For B2B-operasjoner er det vanlig å endre priser på grunnlag av leveringsdatoene. Disse forhandlerne kan bruke prissetting i Supply Chain Management for B2B-virksomheten sin og prissetting for detaljhandel for B2C-virksomheten. Prissetting for detaljhandel gjelder bare hvis programbrukeren legges til som en kundesenterbruker, slik at forhandlerne kan tilordne bestemte brukere som skal arbeide med prissetting i Supply Chain Management og tilordne noen arbeidere som jobber med prissetting for detaljhandel, og som derfor bør legges til som kundesenterbrukere. I tillegg må **Bruk dagens dato for å beregne priser** -egenskapen i **Handelsparametere > Prissetting og rabatter > Diverse** være aktivert. På denne måten kan de beholde den siste kundeparameterverdien for "Ønsket forsendelsesdato" eller "Ønsket mottaksdato" for prissetting i Supply Chain Management, men detaljhandelsprisen vil fortsatt bruke dagens dato for beregning av prissetting.
+- Standard prismotor for Supply Chain Management støtter prisberegningen basert på den "Ønsket forsendelsesdato" og "Ønsket mottaksdato" sammen med gjeldende dato. Prissetting for detaljhandel støtter imidlertid ikke disse verdiene for øyeblikket. Årsaken er at kunder ikke forventer at den ønskede leveringsdatoen påvirker vareprisen i B2C-scenarier. I noen tilfeller har forhandlere både B2B- og B2C-operasjoner. For B2B-operasjoner er det vanlig å endre priser på grunnlag av leveringsdatoene. Disse forhandlerne kan bruke prissetting i Supply Chain Management for B2B-virksomheten sin og prissetting for detaljhandel for B2C-virksomheten. Prissetting for detaljhandel gjelder bare hvis programbrukeren legges til som en kundesenterbruker, slik at forhandlerne kan tilordne bestemte brukere som skal arbeide med prissetting i Supply Chain Management og tilordne noen arbeidere som jobber med prissetting for detaljhandel, og som derfor bør legges til som kundesenterbrukere. I tillegg må **Bruk dagens dato for å beregne priser**-egenskapen i **Handelsparametere > Prissetting og rabatter > Diverse** være aktivert. På denne måten kan de beholde den siste kundeparameterverdien for "Ønsket forsendelsesdato" eller "Ønsket mottaksdato" for prissetting i Supply Chain Management, men detaljhandelsprisen vil fortsatt bruke dagens dato for beregning av prissetting.
 
 I tillegg støtter **bare** prissettingsmotoren følgende prissettingsfunksjoner:
 

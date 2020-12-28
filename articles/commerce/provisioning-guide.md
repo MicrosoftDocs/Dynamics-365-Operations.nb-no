@@ -3,7 +3,7 @@ title: Klargjøre et evalueringsmiljø for Dynamics 365 Commerce
 description: Dette emnet forklarer hvordan du klargjør et Microsoft Dynamics 365 Commerce-evalueringsmiljø.
 author: psimolin
 manager: annbe
-ms.date: 07/16/2020
+ms.date: 11/05/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: e5ce2002c66a1c36d5647d3c76684b394fc1ff79
-ms.sourcegitcommit: 5175e3fae432016246244cf70fe05465f43de88c
+ms.openlocfilehash: b54216a565c264dfcfe821581fee9df7b5e22323
+ms.sourcegitcommit: 715508547f9a71a89a138190e8540686556c753d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "3599856"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "4414799"
 ---
 # <a name="provision-a-dynamics-365-commerce-evaluation-environment"></a>Klargjøre et evalueringsmiljø for Dynamics 365 Commerce
 
@@ -48,6 +48,7 @@ Hvis du vil ha informasjon om hvordan du konfigurerer Commerce-evalueringsmiljø
 
 Følgende forutsetninger må være på plass før du kan klargjøre Commerce-evalueringsmiljøet:
 
+- Du er introdusert til evalueringsprogrammet og tildelt kapasitet for et evalueringsmiljø.
 - Du har tilgang til Microsoft Dynamics Lifecycle Services-portalen (LCS).
 - Du er en eksisterende Microsoft Dynamics 365-partner eller -kunde og kan opprette et Dynamics 365 Commerce-prosjekt.
 - Du har administratortilgang til Microsoft Azure-abonnementet, eller du er i kontakt med en abonnementsadministrator som kan hjelpe deg hvis det er nødvendig.
@@ -91,7 +92,7 @@ Gjør følgende for å distribuere miljøet.
 
 1. Fra den øverste menyen velger du **Skybaserte miljøer**.
 1. Klikk **Legg til** for å legge til et miljø.
-1. I feltet **Programversjon** velger du den nyeste versjonen. Hvis du har et bestemt behov for å velge en annen programversjon enn den nyeste versjonen, må du ikke velge en tidligere versjon enn **10.0.8**.
+1. I feltet **Programversjon** velger du den nyeste versjonen. Hvis du har et bestemt behov for å velge en annen programversjon enn den nyeste versjonen, må du ikke velge en tidligere versjon enn **10.0.14**.
 1. I **Plattformversjon**-feltet bruker du plattformversjonen som automatisk velges for den valgte programversjonen. 
 
     ![Velge program- og plattformversjoner](./media/project1.png)
@@ -108,7 +109,7 @@ Gjør følgende for å distribuere miljøet.
 1. Juster VM-størrelsen etter behov. (Vi anbefaler VM-lagerenhet \[SKU\] **D13 v2**.)
 1. Se gjennom vilkårene for prising og lisensiering, og merk deretter av i avmerkingsboksen for å angi at du godtar dem.
 1. Velg **Neste**.
-1. Klikk **Distribuer**på bekreftelsessiden for distribusjon når du har bekreftet at detaljene er riktige. Du kommer tilbake til visningen **Skybaserte miljøer**, og miljøet skal vises i listen.
+1. Klikk **Distribuer** på bekreftelsessiden for distribusjon når du har bekreftet at detaljene er riktige. Du kommer tilbake til visningen **Skybaserte miljøer**, og miljøet skal vises i listen.
 
     Det forespurte miljøet vil vises som en kø og deretter distribueres. Miljøarbeidsflytene vil ta litt tid å fullføre. Kom derfor tilbake etter ca seks til ni timer.
 
@@ -125,7 +126,7 @@ Hvis du vil initialisere en CSU-adresse, følger du disse trinnene.
 1. I **Område**-feltet velger du det samme området eller et område nær der du distribuerte miljøet til.
 1. La **Versjon**-feltet være slik det er.
 1. Velg **Initialiser**.
-1. Klikk **Ja**på bekreftelsessiden for distribusjon når du har bekreftet at detaljene er riktige. Visningen **Handelsadministrasjon** vises på nytt med kategorien **Handel** valgt. CSU-en din er lagt i kø for klargjøring.
+1. Klikk **Ja** på bekreftelsessiden for distribusjon når du har bekreftet at detaljene er riktige. Visningen **Handelsadministrasjon** vises på nytt med kategorien **Handel** valgt. CSU-en din er lagt i kø for klargjøring.
 1. Før du fortsetter må du kontrollere at miljøstatusen til CSU er **Vellykket**. Initialiseringen tar omtrent to til fem timer.
 
 Hvis du ikke finner **Behandle**-koblingen i miljødetaljvisningen, kontakter du Microsoft-kontakten for å få hjelp.

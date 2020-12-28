@@ -18,11 +18,11 @@ ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
 ms.openlocfilehash: db4866b22060b764fdde3e4a44e99e969133c0a0
-ms.sourcegitcommit: f16db76c1c235dfa445b50614bcee9219782d6dc
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/05/2020
-ms.locfileid: "3961616"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4414736"
 ---
 # <a name="save-preview-and-publish-a-page"></a>Lagre, forhåndsvise og publisere en side
 
@@ -69,12 +69,12 @@ Følg denne fremgangsmåten for å lagre, forhåndsvise og publisere en startsid
 1. Under **Områder** velger du **Fabrikam** (eller navnet på området).
 1. Velg **Sider** i navigasjonsruten til venstre.
 1. Finn og velg startsside for å åpne den i sideredigeringsprogrammet.
-1. Velg **Rediger** .
+1. Velg **Rediger**.
 1. Endre siden slik du vil ha den.
-1. Velg **Lagre** , og velg deretter **Fullfør redigering** .
-1. Skriv inn en merknad om endringene du har gjort, i feltet **Kommentar** , og velg deretter **OK** .
+1. Velg **Lagre**, og velg deretter **Fullfør redigering**.
+1. Skriv inn en merknad om endringene du har gjort, i feltet **Kommentar**, og velg deretter **OK**.
 1. Velg **Forhåndsvisning** for å forhåndsvise siden. Når du er ferdig, lukker du forhåndsvisningskategorien for å gå tilbake til redigeringsverktøyet.
-1. Velg **Publiser** .
+1. Velg **Publiser**.
 
 ## <a name="publish-a-url"></a>Publisere en URL-adresse
 
@@ -83,7 +83,7 @@ Hvis du vil publisere en URL-adresse, følger du disse trinnene.
 1. Under **Områder** velger du **Fabrikam** (eller navnet på området).
 1. Velg **URL-adresser** i navigasjonsruten til venstre.
 1. Finn og velg URL-adressen du vil publisere.
-1. På kommandolinjen velger du **Publiser** .
+1. På kommandolinjen velger du **Publiser**.
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 

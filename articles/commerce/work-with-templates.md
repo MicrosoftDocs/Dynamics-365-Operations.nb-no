@@ -18,11 +18,11 @@ ms.author: niholman
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
 ms.openlocfilehash: a3fc4259a76f6edcfaa0b8f6e08292477c6c0835
-ms.sourcegitcommit: 7a1d01122790b904e2d96a7ea9f1d003392358a6
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "3269872"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4414657"
 ---
 # <a name="work-with-templates"></a>Arbeide med maler
 
@@ -57,7 +57,7 @@ Maler endres ved hjelp av redigeringsprogrammet for maler.
 
 Bruk en av en av fremgangsmåtene nedenfor for å åpne malredigeringsprogrammet:
 
-- Velg **Maler**i navigasjonsruten for området, og velg deretter malen du vil endre.
+- Velg **Maler** i navigasjonsruten for området, og velg deretter malen du vil endre.
 - Velg toppnoden i disposisjonstreet til venstre i sideredigeringen for en eksisterende side. Deretter velger du **Rediger mal** i egenskapsruten til høyre.
 
 Disposisjonstrevisningen til venstre viser modulalternativene og strukturene som er tilgjengelige for underordnede oppsett og sider. Når du velger en modul i disposisjonstreet, kan du vise malegenskapene for den valgte modulen i egenskapsruten til høyre. Noen av disse egenskapene er unike for malredigering. Tabellen nedenfor beskriver disse egenskapene.

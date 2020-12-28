@@ -18,11 +18,11 @@ ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
 ms.openlocfilehash: 838047cac694c65047332e146a7c43ee2ae0f401
-ms.sourcegitcommit: b063bf3a52f19baa11ddba31ef9313d58a0f610e
+ms.sourcegitcommit: 1a12b42cc17f004a981c716aed3da6cf538475a5
 ms.translationtype: HT
 ms.contentlocale: nb-NO
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4019547"
+ms.locfileid: "4414771"
 ---
 # <a name="add-a-copyright-notice"></a>Legge til en opphavsrettserklæring
 
@@ -41,19 +41,19 @@ Før du kan legge til en opphavsrettserklæring på området, må du ha følgend
 
 Hvis du vil legge til en opphavsrettserklæring nederst på hver side som bruker en bestemt mal, følger du disse trinnene.
 
-1. Gå til **Fragmenter** , og velg deretter **Nytt**.
-1. I dialogboksen **Nytt fragment** velger du **Bunntekst** -modulen, og gir fragmentet et navn. Skriv for eksempel inn **Bunntekst-opphavsrettserklæring**.
+1. Gå til **Fragmenter**, og velg deretter **Nytt**.
+1. I dialogboksen **Nytt fragment** velger du **Bunntekst**-modulen, og gir fragmentet et navn. Skriv for eksempel inn **Bunntekst-opphavsrettserklæring**.
 1. Velg **OK**.
-1. I navigasjonsruten velger du ellipseknappen ( **...** ) ved siden av **Bunntekst** , og deretter velger du **Legg til modul**.
-1. I dialogboksen velger du **Bunntekstkategori** , og deretter velger du **OK**.
-1. I navigasjonsruten velger du ellipseknappen ved siden av **Bunntekstkategori** , og deretter velger du **Legg til modul**.
-1. I dialogboksen velger du **Tekstblokk** , og deretter velger du **OK**.
+1. I navigasjonsruten velger du ellipseknappen (**...**) ved siden av **Bunntekst**, og deretter velger du **Legg til modul**.
+1. I dialogboksen velger du **Bunntekstkategori**, og deretter velger du **OK**.
+1. I navigasjonsruten velger du ellipseknappen ved siden av **Bunntekstkategori**, og deretter velger du **Legg til modul**.
+1. I dialogboksen velger du **Tekstblokk**, og deretter velger du **OK**.
 1. I navigasjonsruten velger du **Tekstblokk**.
 1. Legg til melding om opphavsrett i feltet **Avsnitt** i egenskapsruten til høyre. Skriv for eksempel inn **(C) Fabrikam 2019**.
-1. Velg **Lagre** , velg **Fullfør redigering** , og velg deretter **Publiser**.
-1. Gå til **Maler** , velg malen, og velg deretter **Rediger**.
-1. Under **Sideoppsett** utvider du **Brødtekst** , og deretter utvider du **Standardside**.
-1. Velg ellipseknappen ved siden av **Bunntekstspor** , og velg deretter **Legg til fragment**.
+1. Velg **Lagre**, velg **Fullfør redigering**, og velg deretter **Publiser**.
+1. Gå til **Maler**, velg malen, og velg deretter **Rediger**.
+1. Under **Sideoppsett** utvider du **Brødtekst**, og deretter utvider du **Standardside**.
+1. Velg ellipseknappen ved siden av **Bunntekstspor**, og velg deretter **Legg til fragment**.
 1. Velg fragmentet du opprettet tidligere, og velg deretter **Velg**.
 1. Velg **Fullfør redigering** for å sjekke inn malen, og velg deretter **Publiser** for å publisere den.
 

@@ -18,11 +18,11 @@ ms.author: niholman
 ms.search.validFrom: 2019-12-12
 ms.dyn365.ops.version: Release 10.0.8
 ms.openlocfilehash: 3ec43b16b1df07400cffe597378ad4035e4d07e0
-ms.sourcegitcommit: b52477b7d0d52102a7ca2fb95f4ebfa30ecd9f54
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "3411253"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4414647"
 ---
 # <a name="work-with-css-override-files"></a>Arbeide med CSS-overstyringsfiler
 
@@ -55,7 +55,7 @@ Hvis du vil opprette en CSS-overstyringsfil, kan du bruke et hvilket som helst i
 Hvis du vil laste opp en CSS-fil til webområdet ditt i Commerce, gjør du følgende:
 
 1. Gå til området ditt i redigeringsverktøyet.
-1. Velg **Utforming**i navigasjonsruten til venstre.
+1. Velg **Utforming** i navigasjonsruten til venstre.
 
     > [!NOTE]
     > Avhengig av hvilken versjon av redigeringsverktøyene for handel du bruker, må du kanskje utvide **Innstillinger** i navigasjonsruten før du kan velge **Utforming**.

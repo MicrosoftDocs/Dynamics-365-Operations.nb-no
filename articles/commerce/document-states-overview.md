@@ -18,11 +18,11 @@ ms.author: niholman
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
 ms.openlocfilehash: 8aad7ef8425e46182c669686710dfc178abc418f
-ms.sourcegitcommit: 83ec80382bfeb693d5c5949b6f65296bd50eed12
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "3974036"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4414649"
 ---
 # <a name="document-states-and-lifecycle"></a>Dokumentere statuser og livssyklus
 
@@ -38,11 +38,11 @@ Følgende tabell viser mulige dokumenttilstander for sideelementer i Commerce.
 
 | Dokumenttilstand      | Handling i områdebygger        | beskrivelse                                                  |
 | ------------------- | -------------------------- | ------------------------------------------------------------ |
-| Sjekket ut         | Velg **Rediger** .           | Det aktuelle dokumentet er sjekket ut til deg. Mens et dokument er i denne tilstanden, kan det ikke endres av andre godkjente systembrukere, og endringer du utfører i dokumentet, er bare synlige for deg. |
-| Lagret               | Velg **Lagre** .           | Endringer som er gjort i et utsjekket dokument, blir lagret i databasen, men dokumentet er ennå ikke sjekket inn eller publisert. De lagrede endringene er ikke synlige for andre godkjente systembrukere før forfatteren velger **Fullfør redigering** . De er ikke synlige for eksterne brukere før elementet er publisert. |
-| Forkastet utsjekking | Velg **Forkast redigeringer** .  | Alle endringer i det utsjekkede dokumentet forkastes, og varen tilbakestilles til den siste versjonen som ble sjekket inn. |
-| Sjekket inn          | Velg **Fullfør redigering** . | Det redigerte dokumentet sjekkes inn. Alle endringer er synlige for andre godkjente systembrukere, og disse brukerne kan deretter redigere dokumentet. Hver innsjekking oppretter en dokumentversjonsregistrering i elementloggen. |
-| Publisert           | Velg **Publiser** .        | Dokumentet publiseres, og endringene sendes ut på det aktive området og blir synlige for eksterne brukere. Varer kan bare publiseres hvis de først har blitt sjekket inn ved å velge **Fullfør redigering** . |
+| Sjekket ut         | Velg **Rediger**.           | Det aktuelle dokumentet er sjekket ut til deg. Mens et dokument er i denne tilstanden, kan det ikke endres av andre godkjente systembrukere, og endringer du utfører i dokumentet, er bare synlige for deg. |
+| Lagret               | Velg **Lagre**.           | Endringer som er gjort i et utsjekket dokument, blir lagret i databasen, men dokumentet er ennå ikke sjekket inn eller publisert. De lagrede endringene er ikke synlige for andre godkjente systembrukere før forfatteren velger **Fullfør redigering**. De er ikke synlige for eksterne brukere før elementet er publisert. |
+| Forkastet utsjekking | Velg **Forkast redigeringer**.  | Alle endringer i det utsjekkede dokumentet forkastes, og varen tilbakestilles til den siste versjonen som ble sjekket inn. |
+| Sjekket inn          | Velg **Fullfør redigering**. | Det redigerte dokumentet sjekkes inn. Alle endringer er synlige for andre godkjente systembrukere, og disse brukerne kan deretter redigere dokumentet. Hver innsjekking oppretter en dokumentversjonsregistrering i elementloggen. |
+| Publisert           | Velg **Publiser**.        | Dokumentet publiseres, og endringene sendes ut på det aktive området og blir synlige for eksterne brukere. Varer kan bare publiseres hvis de først har blitt sjekket inn ved å velge **Fullfør redigering**. |
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 

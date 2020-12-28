@@ -18,11 +18,11 @@ ms.author: rubendel
 ms.search.validFrom: 2017-10-30
 ms.dyn365.ops.version: ''
 ms.openlocfilehash: 68132a78921e0a38c61c85bcc2b89dca3c25b04e
-ms.sourcegitcommit: 776758a0ff95c3c7398986095104d1d2b9814514
+ms.sourcegitcommit: 4c6d31f3ebd88212d3d1497a4bba9c64c5300444
 ms.translationtype: HT
 ms.contentlocale: nb-NO
 ms.lasthandoff: 10/24/2020
-ms.locfileid: "4107213"
+ms.locfileid: "4414793"
 ---
 # <a name="store-order-fulfillment"></a>Butikkordreoppfyllelse
 
@@ -42,11 +42,11 @@ Ordreoppfyllelsesoperasjonen har ikke sin egen standard tillatelse, men i fremti
 
 En konfigurasjonsinnstilling er tilgjengelig for å finne ut om en ordrelinje må godtas manuelt fra salgsstedet, på butikknivået. Hvis dette konfigurasjonsalternativet ikke er angitt, godtas ordrelinjer som standard. Hvis dette konfigurasjonsalternativet er aktivert, må brukerne på salgsstedet velge tillatelsen **Tillat godkjenning av ordre** for å godta ordrer fra salgsstedet.
 
-Ordrelinjer kan også avvises fra salgsstedet. Avvisning av en ordrelinje betyr at den ikke blir oppfylt i butikken og sender ordrelinjen tilbake for ny tilordning til en annen butikk eller lager. Tillatelse for ordrelinjeavslag gis via **Tillat ordreavvisning** -tillatelsen.
+Ordrelinjer kan også avvises fra salgsstedet. Avvisning av en ordrelinje betyr at den ikke blir oppfylt i butikken og sender ordrelinjen tilbake for ny tilordning til en annen butikk eller lager. Tillatelse for ordrelinjeavslag gis via **Tillat ordreavvisning**-tillatelsen.
 
 ## <a name="order-fulfillment-operation-parameters"></a>Parametre for ordreoppfyllelsesoperasjonen
 
-Ordreoppfyllelse gir standardparametere som kan brukes i operasjonen når den kalles på salgsstedet. Når **Alle ordrer** -parameteren er konfigurert, vises alle ordrer når operasjonen brukes. Parameteren **Ordrer som skal leveres** viser bare ordrer som må sendes fra butikken, og **Ordrer for plukking** viser ordrer som skal plukkes i butikken.
+Ordreoppfyllelse gir standardparametere som kan brukes i operasjonen når den kalles på salgsstedet. Når **Alle ordrer**-parameteren er konfigurert, vises alle ordrer når operasjonen brukes. Parameteren **Ordrer som skal leveres** viser bare ordrer som må sendes fra butikken, og **Ordrer for plukking** viser ordrer som skal plukkes i butikken.
 
 ## <a name="orders-for-fulfillment"></a>Ordrer for oppfyllelse
 
@@ -54,21 +54,21 @@ Ordreoppfyllelsesoperasjonen viser bare ordrer som skal plukkes i eller leveres 
 
 ## <a name="line-selection"></a>Linjevalg
 
-Linjene kan velges ved hjelp av **Velg** -funksjonen i handlingsruten. Når **Velg** er aktivert, kan flere linjer velges for behandling. Du kan fjerne valgte linjer ved å klikke den samme linjen på nytt.
+Linjene kan velges ved hjelp av **Velg**-funksjonen i handlingsruten. Når **Velg** er aktivert, kan flere linjer velges for behandling. Du kan fjerne valgte linjer ved å klikke den samme linjen på nytt.
 
 ## <a name="line-details"></a>Linjedetaljer
 
-Linjedetaljer kan vises ved hjelp av undermenyen for linjedetaljer. Når denne menyen brukes, finnes det tre kategorier som viser tilleggsinformasjon for den valgte linjen. Den første kategorien, **Linjedetaljer** , viser detaljer om selve linjen, for eksempel det bestilte antallet og restantallet. Du finner flere detaljer, inkludert antall plukket, pakket og fakturert i tillegg til leveringsmåte og leveringsadresse. **Ordredetaljer** -kategorien gir ordrehodeinformasjon, inkludert kunde, kunde-ID, ordrenummer, ordretotal og saldo. **Lager** -kategorien viser informasjon for den valgte linjen i henhold til tilgjengelig fysisk lager, reservert lager og bestilt lager.
+Linjedetaljer kan vises ved hjelp av undermenyen for linjedetaljer. Når denne menyen brukes, finnes det tre kategorier som viser tilleggsinformasjon for den valgte linjen. Den første kategorien, **Linjedetaljer**, viser detaljer om selve linjen, for eksempel det bestilte antallet og restantallet. Du finner flere detaljer, inkludert antall plukket, pakket og fakturert i tillegg til leveringsmåte og leveringsadresse. **Ordredetaljer**-kategorien gir ordrehodeinformasjon, inkludert kunde, kunde-ID, ordrenummer, ordretotal og saldo. **Lager**-kategorien viser informasjon for den valgte linjen i henhold til tilgjengelig fysisk lager, reservert lager og bestilt lager.
 
 Hvis flere linjer er valgt, angir bare ordrelinjeundermenyen at flere linjer er valgt. Hvis du vil vise detaljer for én enkelt linje, fjerner du linjene til en linje gjenstår.
 
 ## <a name="pending-order-lines"></a>Ventende ordrelinjer
 
-Samlet ordreoppfyllelse inkluderer muligheten til å godta ordrer manuelt. Som standard er ordrer for oppfyllelse i butikken allerede godtatt. Hvis imidlertid forretningsprosesser angir at en arbeider på butikknivå må godta ordrer, kan manuell godkjenning aktiveres på detaljhandelsnivå. Hvis du vil aktivere ordregodkjenning, kan du gå til **Retail og Commerce** \> **Kanaler** \> **Butikker** \> **Alle butikker**. Åpne ønsket butikk og i **Generell** -kategorien finner du **Ordreoppfyllelse** -underhodet. Denne underoverskriften har alternativet **Godta manuelt** som er satt til **Nei** som standard. Ved å angi dette alternativet til **Ja** og synkronisere endringene til kanaldatabasen, kan ordrelinjer gå gjennom godkjenningsprosessen.
+Samlet ordreoppfyllelse inkluderer muligheten til å godta ordrer manuelt. Som standard er ordrer for oppfyllelse i butikken allerede godtatt. Hvis imidlertid forretningsprosesser angir at en arbeider på butikknivå må godta ordrer, kan manuell godkjenning aktiveres på detaljhandelsnivå. Hvis du vil aktivere ordregodkjenning, kan du gå til **Retail og Commerce** \> **Kanaler** \> **Butikker** \> **Alle butikker**. Åpne ønsket butikk og i **Generell**-kategorien finner du **Ordreoppfyllelse**-underhodet. Denne underoverskriften har alternativet **Godta manuelt** som er satt til **Nei** som standard. Ved å angi dette alternativet til **Ja** og synkronisere endringene til kanaldatabasen, kan ordrelinjer gå gjennom godkjenningsprosessen.
 
-Ansatte med **Tillat godkjenning av ordre** -tillatelsen kan åpne ordreoppfyllelse og velge linjer for godkjenning. Når linjene er godkjent, endre deres status fra **Ventende** til **Godkjent** , og resten av fullføringen ordreprosessen kan utføres. Når **Godta manuelt** er slått på, behandles ikke ordrene før de har blitt godkjent.
+Ansatte med **Tillat godkjenning av ordre**-tillatelsen kan åpne ordreoppfyllelse og velge linjer for godkjenning. Når linjene er godkjent, endre deres status fra **Ventende** til **Godkjent**, og resten av fullføringen ordreprosessen kan utføres. Når **Godta manuelt** er slått på, behandles ikke ordrene før de har blitt godkjent.
 
-Ordrer for butikkhenting har aldri **Ventende** -tilstanden. Dette gjøres for å unngå et scenario der en kunde kommer i butikken og ordrelinjen ikke kan behandles fordi en arbeider med de riktige rettighetene ikke er tilgjengelig.
+Ordrer for butikkhenting har aldri **Ventende**-tilstanden. Dette gjøres for å unngå et scenario der en kunde kommer i butikken og ordrelinjen ikke kan behandles fordi en arbeider med de riktige rettighetene ikke er tilgjengelig.
 
 ## <a name="accepted-order-lines"></a>Godkjente ordrelinjer
 
@@ -80,7 +80,7 @@ For eksempel, en godkjent ordrelinje kan velges og deretter plukkes direkte uten
 
 ### <a name="pick"></a>Plukk
 
-**Plukk** -kategorien for handlinger gis for å hjelpe med å plukke ordrelinjer fra hyller. Plukkhandlingen kan bare utføres på ordrelinjene som er godtatt tidligere.
+**Plukk**-kategorien for handlinger gis for å hjelpe med å plukke ordrelinjer fra hyller. Plukkhandlingen kan bare utføres på ordrelinjene som er godtatt tidligere.
 
 **Handling: Plukking**
 
@@ -98,7 +98,7 @@ Plukklister kan skrives ut på salgsstedet for å hjelpe ansatte å utføre pluk
 
 Plukklisteformatet konfigureres i Commerce og legges til kvitteringsprofilen. Hvis du vil ha mer informasjon om hvordan du konfigurerer kvitteringsprofiler, kan du se [Kvitteringsmaler og utskrift](https://docs.microsoft.com/dynamics365/unified-operations/retail/receipt-templates-printing).
 
-Hvis linjene er valgt, og en plukkliste skrives ut for disse linjene, oppdateres de automatisk med **Plukking** -statusen.
+Hvis linjene er valgt, og en plukkliste skrives ut for disse linjene, oppdateres de automatisk med **Plukking**-statusen.
 
 **Handling: Merk som plukket**
 
@@ -111,7 +111,7 @@ Når ordrer behandles over tid, kan delvise antall behandles for en bestemt linj
 
 Hvis en ordrelinje blir plukket ved en feiltakelse, kan prosessen for å legge tilbake utføres på ordrelinjen i back office. Det er for øyeblikket ingen handling for å legge tilbake som støttes, på salgsstedet.
 
-Ordrelinjer fra forskjellige ordrer kan velges og merkes som **Plukking** , skrives ut på samme plukkliste eller merkes som **Plukket**.
+Ordrelinjer fra forskjellige ordrer kan velges og merkes som **Plukking**, skrives ut på samme plukkliste eller merkes som **Plukket**.
 
 ### <a name="pack"></a>Pakke
 
@@ -129,7 +129,7 @@ Denne handlingen merker linjene som pakket eller delvis pakket og skriver ut en 
 - **Resulterende status:** Pakket eller delvis pakket
 - **Resulterende back office-status:** Levert eller delvis levert
 
-**Merk som pakket** -handlingen kan brukes til å angi at linjer er pakket uten å skrive ut en følgeseddel. Både **Skriv ut følgeseddel** og **Merk som pakket** resulterer i lagertransaksjoner i back office. Pakkelinjene på salgsstedet fører til at følgeseddeljournaler genereres i back office.
+**Merk som pakket**-handlingen kan brukes til å angi at linjer er pakket uten å skrive ut en følgeseddel. Både **Skriv ut følgeseddel** og **Merk som pakket** resulterer i lagertransaksjoner i back office. Pakkelinjene på salgsstedet fører til at følgeseddeljournaler genereres i back office.
 
 Hvis en ordrelinje er pakket ved en feiltakelse, må følgeseddeljournalen rettes i back office.
 
@@ -158,7 +158,7 @@ Bare linjer på den samme ordren og med samme leveringsmåte kan hentes samtidig
 
 ### <a name="shipping"></a>Forsendelse
 
-Ordrelinjer som skal sendes fra butikken, kan behandles gjennom felles ordrefullføring ved å bruke **Lever** -handlingen. Hvis manuell ordrelinjegodkjenning er konfigurert på kanalnivået, må ordrer godkjennes før forsendelse. Når en ordrelinje er godtatt og har statusen **Ventende** eller annen status, kan linjene sendes.
+Ordrelinjer som skal sendes fra butikken, kan behandles gjennom felles ordrefullføring ved å bruke **Lever**-handlingen. Hvis manuell ordrelinjegodkjenning er konfigurert på kanalnivået, må ordrer godkjennes før forsendelse. Når en ordrelinje er godtatt og har statusen **Ventende** eller annen status, kan linjene sendes.
 
 **Handling: Send**
 
@@ -180,7 +180,7 @@ Linjer eller delvise linjer kan avvises. Dette gjør at de kan tildeles på nytt
 - **Resulterende status:** Avvist
 - **Resulterende back office-status:** Ingen endring
 
-Du kan vise avviste ordrelinjer fra **Salgsordrebehandling og -spørring** -arbeidsområdet. Fjern personfilteret i arbeidsområdet for å vise alle avviste ordrelinjer på tvers av butikkene. **Avviste ordrelinjer** -kategorien under **Ordrer og favoritter** -delen viser ordrelinjedetaljene. I tillegg kan brukerne klikke på **Avviste ordrelinjer** -knappen under **Sammendrag** -delen og navigere til en salgsordrevisning. Dette viser alle ordrene som har én eller flere avviste ordrelinjer. Hvis Distributed Order Management (DOM) er aktivert, vil disse avviste ordrene bli automatisk tilordnet på nytt til de riktige butikkene for fullføring, men disse ordrelinjene kan også tilordnes på nytt manuelt. Hvis du vil gjøre dette, velger du linjen som viser **Oppfyllelsesstatus** som **Avvist** og endrer området/lageret etter behov. Klikk **Oppdater linje** -rullegardinmenyen og klikk **Tilbakestill oppfyllelsesstatus** for å endre oppfyllelsesstatusen fra **Avvist** til **Godkjent** eller **Ventende** avhengig av oppsettet av ordreoppfyllelse. Når oppfyllelsesstatusen er tilbakestilt, kan butikkarbeiderne vise ordrelinjene i POS.
+Du kan vise avviste ordrelinjer fra **Salgsordrebehandling og -spørring**-arbeidsområdet. Fjern personfilteret i arbeidsområdet for å vise alle avviste ordrelinjer på tvers av butikkene. **Avviste ordrelinjer**-kategorien under **Ordrer og favoritter**-delen viser ordrelinjedetaljene. I tillegg kan brukerne klikke på **Avviste ordrelinjer**-knappen under **Sammendrag**-delen og navigere til en salgsordrevisning. Dette viser alle ordrene som har én eller flere avviste ordrelinjer. Hvis Distributed Order Management (DOM) er aktivert, vil disse avviste ordrene bli automatisk tilordnet på nytt til de riktige butikkene for fullføring, men disse ordrelinjene kan også tilordnes på nytt manuelt. Hvis du vil gjøre dette, velger du linjen som viser **Oppfyllelsesstatus** som **Avvist** og endrer området/lageret etter behov. Klikk **Oppdater linje**-rullegardinmenyen og klikk **Tilbakestill oppfyllelsesstatus** for å endre oppfyllelsesstatusen fra **Avvist** til **Godkjent** eller **Ventende** avhengig av oppsettet av ordreoppfyllelse. Når oppfyllelsesstatusen er tilbakestilt, kan butikkarbeiderne vise ordrelinjene i POS.
 
 ## <a name="line-quantity-tracking"></a>Linjeantallsporing
 
@@ -192,10 +192,10 @@ Vi fortsetter med eksemplet ovenfor: hvis 200 bord merkes som pakket og levering
 
 ## <a name="line-statuses"></a>Linjestatuser
 
-Ordrelinjer i salgsstedet har flere statuser for å vise tilstanden for ordrelinjen. Statusene i salgsstedet og back office samsvarer ikke i alle tilfeller. Ordrelinjestatus kan vises via salgsstedet med ordreoppfyllelsesoperasjonene. I back office kan du vise ordrelinjene fra ordredetaljene. Ordredetaljer kan nås via **Retail og Commerce** \> **Kunder** \> **Alle kundeordrer**. Velg **Ordre-ID** for å vise ordredetaljer. Fra ordredetaljer velger du **Salgsordre** -kategorien, og velger deretter **Detaljert status** under **Vis** -underoverskriften.
+Ordrelinjer i salgsstedet har flere statuser for å vise tilstanden for ordrelinjen. Statusene i salgsstedet og back office samsvarer ikke i alle tilfeller. Ordrelinjestatus kan vises via salgsstedet med ordreoppfyllelsesoperasjonene. I back office kan du vise ordrelinjene fra ordredetaljene. Ordredetaljer kan nås via **Retail og Commerce** \> **Kunder** \> **Alle kundeordrer**. Velg **Ordre-ID** for å vise ordredetaljer. Fra ordredetaljer velger du **Salgsordre**-kategorien, og velger deretter **Detaljert status** under **Vis**-underoverskriften.
 
-- **Ventende** – Ordrelinjer som er tilordnet til en butikk, men ennå ikke godkjent, har **Ventende** -status når de vises på salgsstedet. Linjer som venter på godkjenning på salgsstedet, får **Ordrebehandling** statusen i back office.
-- **Godkjent** – Ordelinjer som er godkjent manuelt eller automatisk godkjent, får statusen **Godkjent** når de vises på salgsstedet. Linjer med **Godkjent** -status vises som **Ordrebehandling** i back office.
+- **Ventende** – Ordrelinjer som er tilordnet til en butikk, men ennå ikke godkjent, har **Ventende**-status når de vises på salgsstedet. Linjer som venter på godkjenning på salgsstedet, får **Ordrebehandling** statusen i back office.
+- **Godkjent** – Ordelinjer som er godkjent manuelt eller automatisk godkjent, får statusen **Godkjent** når de vises på salgsstedet. Linjer med **Godkjent**-status vises som **Ordrebehandling** i back office.
 - **Plukking** – Linjer som for øyeblikket blir plukket på butikknivå, har statusen **Plukking**. De samme linjene, når de vises i back office, vises som **Ordrebehandling**.
 - **Plukket** og **Delvis plukket** – Linjer som er plukket eller delvis plukket på salgsstedet, får statusen **Plukket** eller **Delvis plukket**. De samme linjene i back office vises også som **Plukket** eller **Delvis plukket**.
 - **Pakket** og **Delvis pakket** – Linjer som er pakket eller delvis pakket på salgsstedet, får statusen **Pakket** eller **Delvis pakket**. De samme linjene i back office vises også som **Levert** eller **Delvis levert**.
@@ -204,7 +204,7 @@ Ordrelinjer i salgsstedet har flere statuser for å vise tilstanden for ordrelin
 
 ## <a name="order-fulfillment-filtering"></a>Ordreoppfyllelsesfiltrering
 
-Ordreoppfyllelse på salgsstedet omfatter filtrering for å hjelpe brukeren med enkelt å finne det de trenger. Filtre kan endres via handlingsruten nederst på **Salgssted** -skjermen. Som standard brukes et **Leveringstype** -filter, basert på hvordan operasjonen er konfigurert. Hvis operasjonen er definert med **Alle ordrer** -parameteren, vil dette filteret brukes når du åpner ordreoppfyllelse. Det samme gjelder **Henting i butikk** - og **Send fra butikk** -parameteren. Andre filtre som kan brukes på ordreoppfyllelsesvisningen, omfatter:
+Ordreoppfyllelse på salgsstedet omfatter filtrering for å hjelpe brukeren med enkelt å finne det de trenger. Filtre kan endres via handlingsruten nederst på **Salgssted**-skjermen. Som standard brukes et **Leveringstype**-filter, basert på hvordan operasjonen er konfigurert. Hvis operasjonen er definert med **Alle ordrer**-parameteren, vil dette filteret brukes når du åpner ordreoppfyllelse. Det samme gjelder **Henting i butikk**- og **Send fra butikk**-parameteren. Andre filtre som kan brukes på ordreoppfyllelsesvisningen, omfatter:
 
 - Kundenummer
 - Kundenavn

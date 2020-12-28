@@ -2,8 +2,8 @@
 title: Konfigurere permisjons- og fraværsparametere
 description: Du kan definere personalparametere for permisjon og fravær i Dynamics 365 Human Resources.
 author: andreabichsel
-manager: AnnBe
-ms.date: 08/20/2020
+manager: tfehr
+ms.date: 11/02/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 196c3901b5bc19f73b882bac7d3361e5bcc37e07
-ms.sourcegitcommit: 2bcacef1e010c312f019dbf9740ce87d627848a7
+ms.openlocfilehash: e1b2de94f9d9ac1ada16b6ef0e7628edbc9d683f
+ms.sourcegitcommit: ffb5998e611b83c2e4f98323f39e3e8f6419c652
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "3712382"
+ms.lasthandoff: 11/02/2020
+ms.locfileid: "4419983"
 ---
 # <a name="configure-leave-and-absence-parameters"></a>Konfigurere permisjons- og fraværsparametere
 
@@ -48,11 +48,24 @@ Før du definerer permisjons- og fraværsplaner i Dynamics 365 Human Resources, 
 
 7. Velg **Lagre**.
 
+>[!IMPORTANT]
+>Visning av permisjon og fravær på tvers av firmaer er for øyeblikket i forhåndsversjon. Du må aktivere den i **sandkassemiljøet** for å vise alternativet for permisjon og fravær. Hvis du vil ha mer informasjon om aktivering av evalueringsfunksjonalitet, kan du se [Behandle funksjoner](hr-admin-manage-features.md).
+
+## <a name="view-and-change-human-resources-shared-parameters"></a>Vise og endre delte parametere for Human Resources
+
+1. På siden **Personaladministrasjon** velger du **Koblinger**-fanen.
+
+2. Under **Oppsett** velger du **delte parametere for Human Resources**.
+
+3. I fanen **Avansert tilgang** velger du **Ja** for å **aktivere permisjonsvisning på tvers av firmaer** for å tillate at permisjon vises på tvers av firmaet.
+
+4. Velg **Lagre**.
+
 ## <a name="view-and-change-leave-and-absence-parameters"></a>Vise og endre permisjons- og fraværsparametere
 
 1. På siden **Permisjon og fravær** velger du **Koblinger**-fanen.
 
-2. Under **Oppsett**velger du **Permisjons- og fraværsparametere**.
+2. Under **Oppsett** velger du **Permisjons- og fraværsparametere**.
 
 3. Angi følgende parametere i kategorien **Generelt**:
  
@@ -70,7 +83,7 @@ Før du definerer permisjons- og fraværsplaner i Dynamics 365 Human Resources, 
 
 1. På siden **Permisjon og fravær** velger du **Koblinger**-fanen.
 
-2. Under **Oppsett**velger du **Permisjons- og fraværsparametere**.
+2. Under **Oppsett** velger du **Permisjons- og fraværsparametere**.
 
 3. I kategorien **Kalender** endrer du kalenderinnstillinger etter behov.
 

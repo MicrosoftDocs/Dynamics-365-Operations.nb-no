@@ -17,11 +17,11 @@ ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.openlocfilehash: 47a81d5c872b49b2395ed687855798fe04772b7e
-ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "3428668"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4419913"
 ---
 # <a name="define-new-jobs"></a>Definere nye jobber
 
@@ -57,7 +57,7 @@ Denne oppgaven fokuserer på å opprette en ny jobb. Den vil bli fullført ved h
 21. Finn og velg ønsket post i listen.
 22. Klikk koblingen i den valgte raden i listen.
 23. Aktiver/deaktiver utvidelsen av delen Kompetanse.
-    * Legg merke til at feltene i hurtigfanene for Kompetanse, Utdanning og Sertifikater er tomme. Når du har kopiert informasjon fra en jobbmal, vil informasjonen i disse feltene angis på en gang.   
+    * Legg merke til at feltene i hurtigfanene for Kompetanse, Utdanning og Sertifikater er tomme. Når du har kopiert informasjon fra en jobbmal, vil informasjonen i disse feltene angis på en gang.   
 24. Klikk Lagre.
 25. Klikk Kopier fra.
 26. Klikk Kopier fra mal.

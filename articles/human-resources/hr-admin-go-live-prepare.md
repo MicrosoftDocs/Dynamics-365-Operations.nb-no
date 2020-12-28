@@ -19,11 +19,11 @@ ms.author: raprofit
 ms.search.validFrom: 2020-10-13
 ms.dyn365.ops.version: Human Resources
 ms.openlocfilehash: 59d7274c3b40e78209d90960c4514321b736876a
-ms.sourcegitcommit: d66fd72342931fad25a696b251c05781280d36c4
+ms.sourcegitcommit: b40d6ce45aeb07724fc41d1a41923970b007fbcf
 ms.translationtype: HT
 ms.contentlocale: nb-NO
 ms.lasthandoff: 10/14/2020
-ms.locfileid: "4011431"
+ms.locfileid: "4419969"
 ---
 # <a name="prepare-for-human-resources-go-live"></a>Klargjøre for å aktivere med Human Resources
 
@@ -55,9 +55,9 @@ Følgende tabell viser alle trinnene i prosessen, forventet varighet og hvem som
 
 En stor milepæl i hvert implementeringsprosjekt er overgangen til produksjonsmiljøet. 
 
-For å sikre at produksjonsmiljøet brukes til live-operasjoner, klargjør Microsoft bare produksjonsforekomsten når implementeringen nærmer seg **drifts** -fasen, etter at de påkrevde aktivitetene i LCS-metodikken er fullført. Hvis du vil ha mer informasjon om miljøer i abonnementet, kan du se [lisensieringsveiledningen for Dynamics 365](https://go.microsoft.com/fwlink/?LinkId=866544). 
+For å sikre at produksjonsmiljøet brukes til live-operasjoner, klargjør Microsoft bare produksjonsforekomsten når implementeringen nærmer seg **drifts**-fasen, etter at de påkrevde aktivitetene i LCS-metodikken er fullført. Hvis du vil ha mer informasjon om miljøer i abonnementet, kan du se [lisensieringsveiledningen for Dynamics 365](https://go.microsoft.com/fwlink/?LinkId=866544). 
 
-Kunder må fullføre **analyse** , **utforme og utvikle** og **teste** fasene i LCS-metoden før **Konfigurer** -knappen for å be om produksjonsmiljøet blir tilgjengelig. Hvis du vil fullføre en fase i LCS, må du først fullføre hvert nødvendige trinn i den fasen. Når alle trinnene i en fase er fullført, kan du fullføre hele fasen. Du kan alltid åpne en fase på nytt senere hvis du må utføre endringer. Hvis du vil ha mer informasjon, kan du se [Lifecycle Services (LCS) for Finance and Operations-appkunder eller](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/lcs-works-lcs). 
+Kunder må fullføre **analyse**, **utforme og utvikle** og **teste** fasene i LCS-metoden før **Konfigurer** -knappen for å be om produksjonsmiljøet blir tilgjengelig. Hvis du vil fullføre en fase i LCS, må du først fullføre hvert nødvendige trinn i den fasen. Når alle trinnene i en fase er fullført, kan du fullføre hele fasen. Du kan alltid åpne en fase på nytt senere hvis du må utføre endringer. Hvis du vil ha mer informasjon, kan du se [Lifecycle Services (LCS) for Finance and Operations-appkunder eller](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/lcs-works-lcs). 
 
 Prosessen med å fullføre et trinn har to deler: 
 
