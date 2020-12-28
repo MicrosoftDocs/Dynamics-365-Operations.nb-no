@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2017-10-05
 ms.dyn365.ops.version: Retail April 2017 update
-ms.openlocfilehash: d3701046487e1c2004cea57aa3fe244133634854
-ms.sourcegitcommit: 49f3011b8a6d8cdd038e153d8cb3cf773be25ae4
+ms.openlocfilehash: 935e1a550160515e2c325c39eab86be3b9fa5394
+ms.sourcegitcommit: d82f319cf7dd26c93a3fd342de4fd537272fa8d2
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4014892"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "4414800"
 ---
 # <a name="demo-data-screen-layouts-in-modern-pos-mpos-and-cloud-pos"></a>Skjermoppsett for demonstrasjonsdata i Moderne salgssted (MPOS) og Skysalgssted
 
@@ -64,6 +64,7 @@ Skjermoppsett-ID-er kan inneholde opptil ti tegn. ID-en er en streng som består
 |----------------|--------------------------------------------------------------------------------------------|
 | 3              | Den grunnleggende versjonen som støtter flere skjermstørrelser for forskjellige enheter og sideforhold |
 | 3.1            | Den grunnleggende versjonen som har ekstra støtte for panelet **Anbefalte produkter**        |
+| 4              | Den utvidede versjonen for det oppdaterte oppsettet for utvidet Fabrikam                                  |
 
 ### <a name="persona"></a>Egenskap
 
@@ -75,9 +76,9 @@ Skjermoppsett-ID-er kan inneholde opptil ti tegn. ID-en er en streng som består
 
 ### <a name="example-layout"></a>Eksempel-oppsett
 
-Her er et eksempel på en skjermoppsett-ID for firmaet Fabrikam, oppsettversjon 3 og Butikksjef:
+Her er et eksempel på en skjermoppsett-ID for firmaet Fabrikam, oppsettversjon 4 og Butikksjef:
 
-F3MGR
+F4MGR
 
 Illustrasjonen nedenfor viser et eksempel på velkomstskjermen for Fabrikam-butikksjef.
 
@@ -103,6 +104,7 @@ Tabellen nedenfor viser oppsettstørrelsene som finnes for vanlige skjermoppløs
 | Full\*      | 1280 × 720 | 16:9         | Nettbrett                 |
 | Full        | 1366 × 768 | 16:9         | Nettbrett, store skjermer |
 | Full        | 1440 × 960 | 3:2          | Nettbrett, store skjermer |
+| Full\*      | 1536 × 864 | 16:9         | Nettbrett, store skjermer |
 
 \* Disse ekstra oppsettstørrelsene er bare tilgjengelige i oppsett for Adventure Works og Fabrikam.
 
@@ -119,9 +121,9 @@ Hvert fiktive firma er rettet mot ulike detaljhandelsegmentet og inkluderer prod
 
 | Firma         | Sted | Segment        | Utheving | Tema |
 |-----------------|----------|----------------|--------|-------|
-| Adventure Works | Seattle  | Sportsartikler | Blå   | Mørkt  |
-| Fabrikam        | Houston  | Mote        | Grønn  | Lys |
-| Contoso         | Boston   | Elektronikk    | Rød    | Mørkt  |
+| Adventure Works | Seattle  | Sportsartikler | Blå   | Mørk  |
+| Fabrikam        | San Francisco  | Mote        | Grønn  | Lys |
+| Contoso         | Boston   | Elektronikk    | Rød    | Mørk  |
 
 > [!NOTE]
 > Adventure Works og Fabrikam er de to ledende merkene. Contoso er tilgjengelig, men ikke alle oppsettene følger med.
@@ -153,7 +155,7 @@ Brukere er angitt for de forskjellige skjermoppsettene. Ved å bruke tabellen ne
 | Adventure Works | A3MGR            | Butikksjef | 000154, 000137, 000073 |
 | Adventure Works | A3CSH            | Kasserer       | 000150, 000175, 000165 |
 | Adventure Works | A3STK            | Lagermedarbeider   | 000155, 000181, 000152 |
-| Fabrikam        | F3MGR            | Butikksjef | 000160, 000168, 000163 |
+| Fabrikam        | F4MGR            | Butikksjef | 000160, 000713         |
 | Fabrikam        | F3CSH            | Kasserer       | 000161, 000113, 000114 |
 | Fabrikam        | F3STK            | Lagermedarbeider   | 000164, 000112, 000123 |
 | Contoso         | C3MGR            | Butikksjef | 000100, 000111         |

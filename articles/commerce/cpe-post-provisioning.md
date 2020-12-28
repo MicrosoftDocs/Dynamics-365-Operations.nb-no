@@ -18,11 +18,11 @@ ms.author: psimolin
 ms.search.validFrom: 2019-12-10
 ms.dyn365.ops.version: Release 10.0.5
 ms.openlocfilehash: 6a1ae960f0f530104af7bdea9a8fcb78b01571f5
-ms.sourcegitcommit: 5175e3fae432016246244cf70fe05465f43de88c
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "3599730"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4414537"
 ---
 # <a name="configure-a-dynamics-365-commerce-evaluation-environment"></a>Konfigurere et evalueringsmiljø for Dynamics 365 Commerce
 
@@ -42,7 +42,7 @@ Når evalueringsmiljøet i Commerce er klargjort ende til ende, må du fullføre
 1. Gå til prosjektet.
 1. Fra den øverste menyen velger du **Skybaserte miljøer**.
 1. Velg miljøet fra listen.
-1. Velg ***Logg på miljøet** i miljøinformasjonen til høyre. Du vil bli sendt til Commerce Headquarters.
+1. Velg **Logg på miljøet** i miljøinformasjonen til høyre. Du vil bli sendt til Commerce Headquarters.
 1. Kontroller at den juridiske enheten **USRT** er valgt i øvre høyre hjørne.
 
 Under aktiviteter etter klargjøring i Commerce Headquarters må du kontrollere at den juridiske enheten **USRT** alltid er valgt.
@@ -69,7 +69,7 @@ Hvis du vil aktivere Cloud POS, følger du denne fremgangsmåten i LCS.
 
 1. Fra den øverste menyen velger du **Skybaserte miljøer**.
 1. Velg miljøet fra listen.
-1. Velg ***Logg på Cloud Point of Sale** i miljøinformasjonen til høyre.
+1. Velg **Logg på Cloud Point of Sale** i miljøinformasjonen til høyre.
 1. Velg **Neste** for å åpne dialogboksen **Før du starter**.
 1. La **Server-URL**-feltet være slik det er. Velg **Neste**.
 1. Logg på ved hjelp av Microsoft Azure Active Directory (Azure AD)-kontoen din.

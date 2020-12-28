@@ -19,11 +19,11 @@ ms.author: rubendel
 ms.search.validFrom: 2019-03-31
 ms.dyn365.ops.version: AX 7.0.1
 ms.openlocfilehash: 86f0964b6d929d0434a8bf04aaefc173bee21c6f
-ms.sourcegitcommit: 361050bed5e0feabd370d225ec70784fc1933258
+ms.sourcegitcommit: d77e902b1ab436e5ff3e78c496f5a70ef38e737c
 ms.translationtype: HT
 ms.contentlocale: nb-NO
 ms.lasthandoff: 10/15/2020
-ms.locfileid: "4013210"
+ms.locfileid: "4414768"
 ---
 # <a name="health-check-for-pos-peripherals-and-services"></a>Tilstandskontroll for eksterne enheter og tjenester for POS
 
@@ -66,7 +66,7 @@ Som standard tester tilstandskontrollen bare enheter som er konfigurert i maskin
 
 ### <a name="using-the-health-check-operation-in-the-pos"></a>Bruke tilstandskontrollen i salgsstedet
 
-Når tilstandskontrollen startes i POS, viser en rute til høyre de konfigurerte enhetene og statusen for hver enhet. Hvis du vil utføre en tilstandskontroll for en enkelt enhet, velger du enheten og velger deretter **Test valgt**. Hvis du vil utføre en tilstandskontroll for alle enheter, velger du **Test alle**. **Test alle** -funksjonen tester alle enhetene, én om gangen, og oppdaterer statusen for hver enhet i **Status** -kolonnen.
+Når tilstandskontrollen startes i POS, viser en rute til høyre de konfigurerte enhetene og statusen for hver enhet. Hvis du vil utføre en tilstandskontroll for en enkelt enhet, velger du enheten og velger deretter **Test valgt**. Hvis du vil utføre en tilstandskontroll for alle enheter, velger du **Test alle**. **Test alle**-funksjonen tester alle enhetene, én om gangen, og oppdaterer statusen for hver enhet i **Status**-kolonnen.
 
 Kolonnen **Siste sjekk** viser når tilstandskontrollen sist ble utført for hver enhet.
 

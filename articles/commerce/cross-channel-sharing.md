@@ -18,11 +18,11 @@ ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
 ms.openlocfilehash: 77284045bda193500117978102c0565c5f15ec6d
-ms.sourcegitcommit: b063bf3a52f19baa11ddba31ef9313d58a0f610e
+ms.sourcegitcommit: 1a12b42cc17f004a981c716aed3da6cf538475a5
 ms.translationtype: HT
 ms.contentlocale: nb-NO
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4019524"
+ms.locfileid: "4414773"
 ---
 # <a name="enable-and-use-cross-channel-sharing"></a>Aktivere og bruke deling på tvers av kanal
 
@@ -55,11 +55,11 @@ Følg denne fremgangsmåten for å aktivere deling på tvers av kanaler i Commer
 
     ![Alternativ for på tvers av kanal satt til På i Commerce-områdebygger](./media/enabling-cross-channel-sharing.png)
 
-Når du har aktivert deling på tvers av kanaler, vil informasjon om på tvers av kanal vises i **Kanaler** -delen under **Områdeinnstillinger \> Funksjoner** , som vist i eksemplet nedenfor.
+Når du har aktivert deling på tvers av kanaler, vil informasjon om på tvers av kanal vises i **Kanaler**-delen under **Områdeinnstillinger \> Funksjoner**, som vist i eksemplet nedenfor.
 
 ![Kanalinformasjon som er synlig etter at deling på tvers av kanal er aktivert](./media/channels-cross-channel.png)
 
-Etter at du har aktivert deling på tvers av kanaler, vil **Kanal** -feltet øverst til høyre i Commerce-områdebygger inneholde et alternativ for **nettbutikk på tvers av kanal** som du kan bruke til å administrere innhold på tvers av kanaler, som vist i illustrasjonen nedenfor.
+Etter at du har aktivert deling på tvers av kanaler, vil **Kanal**-feltet øverst til høyre i Commerce-områdebygger inneholde et alternativ for **nettbutikk på tvers av kanal** som du kan bruke til å administrere innhold på tvers av kanaler, som vist i illustrasjonen nedenfor.
 
 ![Alternativet for nettbutikk på tvers av kanaler i Kanaler-feltet etter at deling på tvers av kanal er aktivert](./media/cross-channel-dropdown.png)
 
@@ -71,11 +71,11 @@ Du kan opprette og bruke innhold på tvers av kanal på flere måter. Du kan for
 
 Følg denne fremgangsmåten for å opprette fragment på tvers av kanaler i Commerce-områdebygger:
 
-1. Gå til **Fragmenter** , og velg **Nytt** for å opprette et nytt sidefragment.
-1. I dialogboksen **Nytt fragment** velger du **Banner** -modulen, og under **Navn på fragment** skriver du inn et navn (for eksempel **Banner på tvers av kanal** ). Velg deretter **OK**.
-1. I ruten egenskapsruten for **Kampanjebanner** -modulen velger du **Legg til melding** , og deretter velger du **Melding**.
-1. I dialogboksen **Melding** , under **Tekst** , angir du **På tvers av kanal** og velger **OK**. 
-1. Velg **Lagre** , velg **Fullfør redigering** for å sjekke inn siden, og velg deretter **Publiser** for å publisere den.
+1. Gå til **Fragmenter**, og velg **Nytt** for å opprette et nytt sidefragment.
+1. I dialogboksen **Nytt fragment** velger du **Banner**-modulen, og under **Navn på fragment** skriver du inn et navn (for eksempel **Banner på tvers av kanal**). Velg deretter **OK**.
+1. I ruten egenskapsruten for **Kampanjebanner**-modulen velger du **Legg til melding**, og deretter velger du **Melding**.
+1. I dialogboksen **Melding**, under **Tekst**, angir du **På tvers av kanal** og velger **OK**. 
+1. Velg **Lagre**, velg **Fullfør redigering** for å sjekke inn siden, og velg deretter **Publiser** for å publisere den.
 
 Dette fragmentet på tvers av kanal kan brukes på tvers av kanal-sider eller kanalspesifikke sider som opprettes på en områdekanal.
 
@@ -85,13 +85,13 @@ På tvers av kanal-sider kan brukes på en hvilken som helst kanal på området.
 
 Følg fremgangsmåten nedenfor for å opprette en på tvers av kanal-side i Commerce-områdebygger som bruker innhold på tvers av kanal.
 
-1. Gå til **Sider** , og velg **Ny** for å opprette en ny side.
+1. Gå til **Sider**, og velg **Ny** for å opprette en ny side.
 1. I dialogboksen **Velg en mal** velger du en mal, for eksempel **Markedsføring**.
-1. Under **Sidenavn** angir du et navn for siden (for eksempel **På tvers av kanal-side** ).
-1. Under **URL-adresse for side** angir du en URL-adresse for side (for eksempel **examplepage** ), og deretter velger du **OK**.
-1. På **Hoved** -sporet på den nye siden velger du ellipseknappen ( **...** ), og deretter velger du **Legg til fragment**.
+1. Under **Sidenavn** angir du et navn for siden (for eksempel **På tvers av kanal-side**).
+1. Under **URL-adresse for side** angir du en URL-adresse for side (for eksempel **examplepage**), og deretter velger du **OK**.
+1. På **Hoved**-sporet på den nye siden velger du ellipseknappen (**...**), og deretter velger du **Legg til fragment**.
 1. I dialogboksen **Legg til fragment** velger du fragmentet på tvers av kanal som du opprettet tidligere, som har et kampanjebanner, og deretter velger du **OK**.
-1. Velg **Lagre** , og velg deretter **Forhåndsvisning** for å forhåndsvise siden. Du skal se kampanjebanneret som sier På tvers av kanal.
+1. Velg **Lagre**, og velg deretter **Forhåndsvisning** for å forhåndsvise siden. Du skal se kampanjebanneret som sier På tvers av kanal.
 1. Velg **Fullfør redigering** for å sjekke inn siden, og velg deretter **Publiser** for å publisere den.
 
 ### <a name="create-a-channel-specific-page-that-uses-cross-channel-content"></a>Opprette en kanalspesifikk side som bruker innhold på tvers av kanaler
@@ -100,13 +100,13 @@ Hvis du bruker innhold på tvers av kanaler på kanalspesifikke sider, kan du op
 
 Følg fremgangsmåten nedenfor for å opprette en kanalspesifikk side i Commerce-områdebygger som bruker innhold på tvers av kanal.
 
-1. Fra en bestemt kanal, for eksempel **Fabrikam-utvidet nettbutikk** , går du til **Sider** og velger deretter **Ny** for å opprette en ny side.
+1. Fra en bestemt kanal, for eksempel **Fabrikam-utvidet nettbutikk**, går du til **Sider** og velger deretter **Ny** for å opprette en ny side.
 1. I dialogboksen **Velg en mal** velger du en mal, for eksempel **Markedsføring**.
-1. Under **Sidenavn** angir du et navn for siden (for eksempel **Kanalspesifikk side** ).
-1. Under **URL-adresse for side** angir du en URL-adresse for side (for eksempel **channelspecificpage** ), og deretter velger du **OK**.
-1. På **Hoved** -sporet på den nye siden velger du ellipseknappen ( **...** ), og deretter velger du **Legg til fragment**.
-1. I dialogboksen **Legg til Fragment** , under **Kanal** , velger du **Nettbutikk på tvers av kanal**. Fragmentet på tvers av kanal som du opprettet tidligere, skal vises i listen. Velg det, og velg deretter **OK**.
-1. Velg **Lagre** , og velg deretter **Forhåndsvisning** for å forhåndsvise siden. Du skal se kampanjebanneret som sier På tvers av kanal.
+1. Under **Sidenavn** angir du et navn for siden (for eksempel **Kanalspesifikk side**).
+1. Under **URL-adresse for side** angir du en URL-adresse for side (for eksempel **channelspecificpage**), og deretter velger du **OK**.
+1. På **Hoved**-sporet på den nye siden velger du ellipseknappen (**...**), og deretter velger du **Legg til fragment**.
+1. I dialogboksen **Legg til Fragment**, under **Kanal**, velger du **Nettbutikk på tvers av kanal**. Fragmentet på tvers av kanal som du opprettet tidligere, skal vises i listen. Velg det, og velg deretter **OK**.
+1. Velg **Lagre**, og velg deretter **Forhåndsvisning** for å forhåndsvise siden. Du skal se kampanjebanneret som sier På tvers av kanal.
 1. Velg **Fullfør redigering** for å sjekke inn siden, og velg deretter **Publiser** for å publisere den.
 
 ### <a name="create-a-channel-specific-version-of-a-cross-channel-page"></a>Opprette en kanalspesifikk versjon av en på tvers av kanal-side
@@ -115,15 +115,15 @@ Deling på tvers av kanaler støtter overstyringer av innhold på tvers av kanal
 
 Følg fremgangsmåten nedenfor for å opprette en kanalspesifikk versjon av en på tvers av kanal-side i Commerce-områdebygger.
 
-1. I **Kanal** -feltet øverst til høyre , velger du **Nettbutikk på tvers av kanal**.
+1. I **Kanal**-feltet øverst til høyre , velger du **Nettbutikk på tvers av kanal**.
 1. Åpne på tvers av kanal-siden du opprettet tidligere.
-1. I **Kanal** -feltet øverst til høyre, velger du kanalen som skal ha bestemt innhold. Sideredigeringsprogrammet viser en melding som ber deg om å opprette en ny sidevariant.
+1. I **Kanal**-feltet øverst til høyre, velger du kanalen som skal ha bestemt innhold. Sideredigeringsprogrammet viser en melding som ber deg om å opprette en ny sidevariant.
 1. Velg **Opprett sidevariant**.
-1. I **Hoved** -sporet på sidevarianten velger du ellipseknappen ( **...** ), og deretter velger du **Legg til modul**.
-1. I dialogboksen **Legg til modul** velger du **Kampanjebanner** -modulen, og deretter velger du **OK**.
-1. I ruten egenskapsruten for **Kampanjebanner** -modulen velger du **Legg til melding** , og deretter velger du **Melding**.
-1. I dialogboksen **Melding** , under **Tekst** , angir du **Kanalspesifikk** og velger **OK**.
-1. Velg **Lagre** , og velg deretter **Forhåndsvisning** for å forhåndsvise siden. Du skal se kampanjebanneret som sier Kanalspesifikk.
+1. I **Hoved**-sporet på sidevarianten velger du ellipseknappen (**...**), og deretter velger du **Legg til modul**.
+1. I dialogboksen **Legg til modul** velger du **Kampanjebanner**-modulen, og deretter velger du **OK**.
+1. I ruten egenskapsruten for **Kampanjebanner**-modulen velger du **Legg til melding**, og deretter velger du **Melding**.
+1. I dialogboksen **Melding**, under **Tekst**, angir du **Kanalspesifikk** og velger **OK**.
+1. Velg **Lagre**, og velg deretter **Forhåndsvisning** for å forhåndsvise siden. Du skal se kampanjebanneret som sier Kanalspesifikk.
 1. Velg **Fullfør redigering** for å sjekke inn siden, og velg deretter **Publiser** for å publisere den.
 
 Hvis du nå bruker den primære URL-adressen til kanalen og går til URL-adressen til på tvers av kanal-siden på dette området, vil du se det kanalspesifikke innholdet i stedet for innholdet på tvers av kanalen.

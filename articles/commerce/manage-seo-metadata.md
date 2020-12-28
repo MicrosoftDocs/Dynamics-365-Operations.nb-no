@@ -18,11 +18,11 @@ ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
 ms.openlocfilehash: 74229628e48ffb8ac974acd868e325eeca77d91e
-ms.sourcegitcommit: 7a1d01122790b904e2d96a7ea9f1d003392358a6
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "3270056"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4414626"
 ---
 # <a name="manage-seo-metadata"></a>Behandle metadata for søkemotor
 
@@ -70,7 +70,7 @@ Dynamics 365 Commerce lar deg administrere søkemotormetadata for enkeltsider. D
 Hvis du vil endre sidemetadata, følger du disse trinnene.
 
 1. Under **Områder** velger du **Fabrikam** (eller navnet på området).
-1. Velg **Sider**i navigasjonsruten til venstre.
+1. Velg **Sider** i navigasjonsruten til venstre.
 1. Velg startsiden for å åpne den i sideredigeringsprogrammet.
 1. På kommandolinjen velger du **Rediger**.
 1. Velg **Standard metakoder** i egenskapsruten til høyre.

@@ -18,11 +18,11 @@ ms.author: niholman
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
 ms.openlocfilehash: f31dfa1fdbb3732610748abe4a9de851033f2b89
-ms.sourcegitcommit: 7a1d01122790b904e2d96a7ea9f1d003392358a6
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "3269895"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4414662"
 ---
 # <a name="work-with-preset-layouts"></a>Arbeide med forhåndsinnstilte oppsett
 
@@ -58,7 +58,7 @@ Det forhåndsinnstilte oppsettet vil nå være tilgjengelig når du oppretter ny
 
 Følg disse trinnene for å opprette et forhåndsinnstilt oppsett fra bunnen av.
 
-1. Velg **Oppsett**i navigasjonsruten til venstre.
+1. Velg **Oppsett** i navigasjonsruten til venstre.
 1. Velg **Nytt oppsett**. Dialogboksen **Nytt oppsett** vises.
 1. Velg malen som skal brukes for det forhåndsinnstilte oppsettet.
 1. Angi et navn og en beskrivelse for det forhåndsinnstilte oppsettet. Verdiene du angir, vises for andre forfattere når de oppretter nye sider fra oppsettet eller bytter til dem. Derfor må du angi verdier som kan være nyttige for sideforfattere.
@@ -69,7 +69,7 @@ Følg disse trinnene for å opprette et forhåndsinnstilt oppsett fra bunnen av.
 
 Følg disse trinnene for å endre et forhåndsinnstilt oppsett.
 
-1. Velg **Oppsett**i navigasjonsruten til venstre.
+1. Velg **Oppsett** i navigasjonsruten til venstre.
 1. Velg modulen du vil endre, i disposisjonstreet til venstre i oppsettredigering. Følg deretter et av disse trinnene:
 
     - Hvis du vil flytte en modul opp eller ned i det overordnede elementet, velger du ellipseknappen (**...**) for modulen, og deretter velger du **Flytt opp** eller **Flytt ned**.

@@ -19,11 +19,11 @@ ms.author: sushmar
 ms.search.validFrom: 2020-09-30
 ms.dyn365.ops.version: AX 10.0.13
 ms.openlocfilehash: 030640ba8907ae52c198ac96ad2c243b533d8c53
-ms.sourcegitcommit: 7592c2dec0428d56843ab395d2a52c89f77f99b5
+ms.sourcegitcommit: cd83f2bc0e52e13071ad306e07e4c255fc65cb03
 ms.translationtype: HT
 ms.contentlocale: nb-NO
 ms.lasthandoff: 10/22/2020
-ms.locfileid: "4096973"
+ms.locfileid: "4414784"
 ---
 # <a name="connect-an-experiment-and-edit-variations"></a>Koble til et eksperiment og redigere variasjoner
 
@@ -60,13 +60,13 @@ Hvis du vil koble til eksperimentet, starter du veiviser **Koble til eksperiment
 
 Følg denne fremgangsmåten for å komme i gang med å koble til eksperimentet i Commerce-områdebyggeren:
 
-1. Hvis du vil starte veiviseren **Koble til eksperiment** , velger du **Eksperimenter** i den venstre navigasjonsruten, og deretter velger du **Koble til**. Alternativt kan du få tilgang til veiviseren fra en side eller et fragmentredigeringsprogram ved å redigere den og velge **Koble til eksperiment** på kommandolinjen.
+1. Hvis du vil starte veiviseren **Koble til eksperiment**, velger du **Eksperimenter** i den venstre navigasjonsruten, og deretter velger du **Koble til**. Alternativt kan du få tilgang til veiviseren fra en side eller et fragmentredigeringsprogram ved å redigere den og velge **Koble til eksperiment** på kommandolinjen.
 
     > [!NOTE]
     > En side kan bare kobles til ett eksperiment om gangen. Hvis du vil koble en side til et annet eksperiment, må du først slette eksperimentet som siden for øyeblikket er koblet til.
 
 1. Velg siden eller fragmentet du vil kjøre eksperimentet på.
-1. Angi eksperimentomfanget til **delvis** eller **hele** , basert på valget ditt i delen [Bestemme omfanget av eksperimentet ditt](#determine-the-scope-of-your-experiment) ovenfor.
+1. Angi eksperimentomfanget til **delvis** eller **hele**, basert på valget ditt i delen [Bestemme omfanget av eksperimentet ditt](#determine-the-scope-of-your-experiment) ovenfor.
     > [!NOTE]
     > Funksjonsflaggene for **Eksperimenter på sider eller fragmenter** må være aktivert hvis du vil eksperimentere på en hel side eller et helt fragment. Hvis du vil ha mer informasjon, kan du se emnet [Eksperimentering i Dynamics 365 Commerce](experimentation-overview.md).
     
@@ -84,7 +84,7 @@ Følg disse trinnene hvis du har definert omfanget for eksperimentet som **delvi
 1. Velg modulen det skal eksperimenteres på, Velg ellipsen (...), og velg deretter **Legg til eksperiment**.
 
 ### <a name="edit-variations-for-experiments-with-entire-scope"></a>Redigere variasjoner for eksperiment med omfanget hele
-Hvis du har definert omfanget av eksperimentet som **hele** i veiviseren **Koble til eksperiment** , kan du i redigeringsvisning bruke rullegardinmenyen for variasjoner under kommandolinjen til å redigere hver variant basert på den opprinnelige hypotesen. 
+Hvis du har definert omfanget av eksperimentet som **hele** i veiviseren **Koble til eksperiment**, kan du i redigeringsvisning bruke rullegardinmenyen for variasjoner under kommandolinjen til å redigere hver variant basert på den opprinnelige hypotesen. 
 
 > [!NOTE]
 > I begge tilfeller kan du også opprette en kontroll eller basisvariasjon ved å la én av variasjonene være uendret.

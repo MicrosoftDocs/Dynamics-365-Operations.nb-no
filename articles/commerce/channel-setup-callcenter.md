@@ -18,11 +18,11 @@ ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
 ms.openlocfilehash: 3f8c47c00b920dae01213d1d241ac8ee6a18d4e3
-ms.sourcegitcommit: 776758a0ff95c3c7398986095104d1d2b9814514
+ms.sourcegitcommit: 4c6d31f3ebd88212d3d1497a4bba9c64c5300444
 ms.translationtype: HT
 ms.contentlocale: nb-NO
 ms.lasthandoff: 10/24/2020
-ms.locfileid: "4107190"
+ms.locfileid: "4414796"
 ---
 # <a name="set-up-a-call-center-channel"></a>Definere en telefonsenterkanal
 
@@ -44,7 +44,7 @@ Hvis du vil opprette og konfigurere en ny telefonsenterkanal, gjør du følgende
 
 1. I navigasjonsruten går du til **Detaljhandel og handel \> Kanaler \> Telefonsentre \> Alle telefonsentre**.
 1. I handlingsruten velger du **Ny**.
-1. I **Navn** -feltet oppgir du et navn for den nye kanalen.
+1. I **Navn**-feltet oppgir du et navn for den nye kanalen.
 1. Velg den aktuelle **juridiske enheten** fra rullegardinlisten.
 1. Velg det aktuelle **lagerstedet** fra rullegardinlisten. Denne lokasjonen brukes som standard på salgsordrer som er opprettet for denne telefonsenterkanalen, med mindre andre standarder er definert på kunde- eller varenivået.
 1. Angi en gyldig standardkunde i feltet **Standardkunde**. Disse dataene brukes til å hjelpe med automatisk utfylling av standarder når nye kundeoppføringer opprettes. Når du oppretter telefonsenterordrer, er det ikke lurt å opprette ordrer for standardkunden.
@@ -78,8 +78,8 @@ Hvis du vil definere betalingsmåter, følger du disse trinnene for hver betalin
 1. I handlingsruten velger du kategorien **Oppsett** og deretter **Betalingsmåter**.
 1. I handlingsruten velger du **Ny**.
 1. I navigasjonsruten velger du en betalingsmetode fra de tilgjengelige forhåndsdefinerte betalingene.
-1. Konfigurer eventuelle tilleggsinnstillinger som kreves for betalingstypen. Når det gjelder kredittkort, gavekort eller fordelskort, kreves det ytterligere oppsett ved å velge **Kortoppsett** -funksjonen. 
-1. Konfigurer riktige posteringskontoer for betalingstypen i **Postering** -delen.
+1. Konfigurer eventuelle tilleggsinnstillinger som kreves for betalingstypen. Når det gjelder kredittkort, gavekort eller fordelskort, kreves det ytterligere oppsett ved å velge **Kortoppsett**-funksjonen. 
+1. Konfigurer riktige posteringskontoer for betalingstypen i **Postering**-delen.
 1. Klikk på **Lagre** i handlingsruten.
 
 Bildet nedenfor viser et eksempel på en kontantbetalingsmåte.

@@ -18,11 +18,11 @@ ms.author: stuharg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
 ms.openlocfilehash: f1525610fb16edd5ff9ccefe0194f6f27b797b62
-ms.sourcegitcommit: b063bf3a52f19baa11ddba31ef9313d58a0f610e
+ms.sourcegitcommit: 1a12b42cc17f004a981c716aed3da6cf538475a5
 ms.translationtype: HT
 ms.contentlocale: nb-NO
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4019570"
+ms.locfileid: "4414772"
 ---
 # <a name="work-with-fragments"></a>Arbeide med fragmenter 
 
@@ -62,7 +62,7 @@ Følg denne fremgangsmåten for å konvertere en tidligere konfigurert modul til
 
 1. Åpne en side eller mal som inneholder modulen du vil konvertere til et fragment.
 1. I disposisjonsruten til venstre eller direkte i den visuelle sidebyggeren, velger du den tidligere konfigurerte modulen.
-1. Velg ellipsen ( **...** ) ved siden av navnet på modulen enten i disposisjonsruten eller den valgte modulens verktøylinje i den visuelle sidebyggeren. 
+1. Velg ellipsen (**...**) ved siden av navnet på modulen enten i disposisjonsruten eller den valgte modulens verktøylinje i den visuelle sidebyggeren. 
 1. Velg **Del som fragment**. 
 1. I dialogboksen **Lagre som fragment** angir du et navn på fragmentet.
 1. Velg **OK** for å lagre modulkonfigurasjonen som et fragment som kan legges til andre sider.
@@ -91,7 +91,7 @@ Følgende prosedyrer beskriver hvordan du legger til, fjerner eller redigerer fr
 Følg denne fremgangsmåten for å legge til et fragment i en side i Commerce-områdebygger.
 
 1. I disposisjonsruten til venstre eller direkte i den visuelle sidebyggeren, velger du en container eller et spor der underordnede moduler kan legges til.
-1. Velg ellipsen ( **...** ) ved siden av navnet på containeren eller sporet.  Hvis du bruker den visuelle sidebyggeren, kan du eventuelt velge plusstegnet ( **+** ).  
+1. Velg ellipsen (**...**) ved siden av navnet på containeren eller sporet.  Hvis du bruker den visuelle sidebyggeren, kan du eventuelt velge plusstegnet (**+**).  
 1. Velg **Legg til fragment**.
     <!-- ![A screen capture of how to add an existing fragment to a slot or container](./media/add-fragment.png)-->
  
@@ -109,7 +109,7 @@ Følg denne fremgangsmåten for å legge til et fragment i en side i Commerce-om
 
 Hvis du vil fjerne et fragment fra et spor eller en container på en side i Commerce-områdebyggeren, følger du denne fremgangsmåten.
 
-1. I disposisjonsruten til venstre velger du ellipsen ( **...** ) ved siden av navnet på fragmentet som skal fjernes, og deretter velger du papirkurvsymbolet.  Du kan også velge fragmentet i den visuelle sidebyggeren og velge papirkurvsymbolet på verktøylinjen til fragmentet.
+1. I disposisjonsruten til venstre velger du ellipsen (**...**) ved siden av navnet på fragmentet som skal fjernes, og deretter velger du papirkurvsymbolet.  Du kan også velge fragmentet i den visuelle sidebyggeren og velge papirkurvsymbolet på verktøylinjen til fragmentet.
 1. Når du blir bedt om å bekrefte at du vil fjerne fragmentet, velger du **OK**.
 
 > [!NOTE]

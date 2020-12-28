@@ -19,25 +19,25 @@ ms.author: sushmar
 ms.search.validFrom: 2020-09-30
 ms.dyn365.ops.version: AX 10.0.13
 ms.openlocfilehash: 85eb7a661cc66c42699797cca4fa6820941de7c0
-ms.sourcegitcommit: 7592c2dec0428d56843ab395d2a52c89f77f99b5
+ms.sourcegitcommit: cd83f2bc0e52e13071ad306e07e4c255fc65cb03
 ms.translationtype: HT
 ms.contentlocale: nb-NO
 ms.lasthandoff: 10/22/2020
-ms.locfileid: "4097145"
+ms.locfileid: "4414783"
 ---
 # <a name="experimentation-in-dynamics-365-commerce"></a>Eksperimentering i Dynamics 365 Commerce
 Bruk eksperimentering i Dynamics 365 Commerce for å validere hypoteser om effektiviteten til dine e-handelssider og ta avgjørelser med datadrevet selvtillit. Commerce støtter A/B-testing for sider, moduler og fragmenter, og lar deg måle virkningen av foreslåtte endringer på nettstedet ditt.
 
-Du kan opprette, redigere og behandle side- og innholdsbehandling, kalt **variasjoner** , i områdebygger. Commerce integreres med tredjepartstjenester som du kan bruke til å opprette eksperimenter og behandlingsoppgaver. Sanntids hendelsesstrømmer som registreres i Commerce, aktiverer analyse som definerer eksperimentresultatene i tredjepartstjenesten. Du kan deretter bruke disse analysene for å hjelpe til med å støtte eller motbevise hypotesen din.
+Du kan opprette, redigere og behandle side- og innholdsbehandling, kalt **variasjoner**, i områdebygger. Commerce integreres med tredjepartstjenester som du kan bruke til å opprette eksperimenter og behandlingsoppgaver. Sanntids hendelsesstrømmer som registreres i Commerce, aktiverer analyse som definerer eksperimentresultatene i tredjepartstjenesten. Du kan deretter bruke disse analysene for å hjelpe til med å støtte eller motbevise hypotesen din.
 
 ## <a name="set-up-prerequisites"></a> Definer forutsetninger
 1. **Skaff riktig versjon av Commerce** – Oppgrader modulbibliotek, SDK for nettkanalutvidelse og Commerce Scale Unit til Commerce versjon 10.0.13 eller nyere.
 1. **Konfigurer en eksperimenteringskobling** – En eksperimenteringskobling lar Commerce koble til tredjepartstjenester for å hente listen over eksperimenter og avgjøre når det skal vises et eksperiment for en bruker. Du kan kjøpe en tredjepartskobling fra [AppSource](https://appsource.microsoft.com). Følg installasjonsinstruksjonene fra utgiveren. Du kan også bruke eksempeltestkoblingen fra Commerce til å teste eksperimenteringsarbeidsflyten uten å måtte konfigurere en ekstern tjeneste. Hvis du vil ha mer informasjon, kan du se [Konfigurere og aktivere koblinger](e-commerce-extensibility/connectors.md). 
-1. **Slå på flagget for eksperimenteringsfunksjonen i Commerce** – Du kan aktivere eksperimentering på leiernivået ved å gå til **Leierinnstillinger > Funksjoner** , eller på områdenivå under **Områdeinnstillinger > Funksjoner**.
-    - Aktiver **Eksperimentering** -flagget for å opprette eksperimentvariasjoner for moduler på en side uten å påvirke eller kopiere annet innhold som ikke er en del av eksperimentet. Dette sikrer at pågående innhold som oppdateres utenfor eksperimentet, vil bli synkronisert under eksperimentet. Hvis du deaktiverer dette flagget, stopper du alle eksperimenter fra å vises til brukere og fjerner alle redigeringsfunksjonene i områdebygger.
+1. **Slå på flagget for eksperimenteringsfunksjonen i Commerce** – Du kan aktivere eksperimentering på leiernivået ved å gå til **Leierinnstillinger > Funksjoner**, eller på områdenivå under **Områdeinnstillinger > Funksjoner**.
+    - Aktiver **Eksperimentering**-flagget for å opprette eksperimentvariasjoner for moduler på en side uten å påvirke eller kopiere annet innhold som ikke er en del av eksperimentet. Dette sikrer at pågående innhold som oppdateres utenfor eksperimentet, vil bli synkronisert under eksperimentet. Hvis du deaktiverer dette flagget, stopper du alle eksperimenter fra å vises til brukere og fjerner alle redigeringsfunksjonene i områdebygger.
     - Aktiver flagget **Eksperimenter på sider eller fragmenter** for å kjøre eksperimenter på en side eller et fragment. Dette oppretter en fullstendig forekomstkopi av hele siden eller fragmentet for alle modulene på siden eller i fragmentet. Bruk denne modusen når du vil teste omfattende innholdsendringer, eller der synkronisering av pågåendeinnholdsendringer på tvers av forekomster, ikke er noe problem. Hvis du deaktiverer dette flagget, forhindres oppretting og redigering av nye eksperimenter på sider og fragmenter.
     > [!NOTE]
-    > **Eksperimentering** -flagget må også aktiveres for at funksjonen **Eksperimenter på sider eller fragmenter** skal fungere.
+    > **Eksperimentering**-flagget må også aktiveres for at funksjonen **Eksperimenter på sider eller fragmenter** skal fungere.
     
 ## <a name="experimentation-lifecycle"></a>Livssyklus for eksperimentering
 Konfigurasjon av et eksperiment, oppretting av variasjoner og kjøring av et eksperiment er en gjentakende prosess. Diagrammet nedenfor illustrerer livssyklusen for eksperimentering i Commerce og tredjepartstjenesten. 

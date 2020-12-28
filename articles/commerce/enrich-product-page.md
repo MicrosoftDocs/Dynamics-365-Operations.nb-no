@@ -18,11 +18,11 @@ ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
 ms.openlocfilehash: 12508a80c440894ec6e2073b5e550846480e6c45
-ms.sourcegitcommit: 7a1d01122790b904e2d96a7ea9f1d003392358a6
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "3269826"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4414568"
 ---
 # <a name="enrich-a-product-page"></a>Supplere en produktside
 
@@ -42,7 +42,7 @@ I mange tilfeller vil du ha bruk for et bestemt tilleggsinnhold for produktene. 
 Følg denne fremgangsmåten for å supplere en produktside.
 
 1. Under **Områder** velger du **Fabrikam** (eller navnet på området).
-1. Velg **Produkter**i navigasjonsruten til venstre.
+1. Velg **Produkter** i navigasjonsruten til venstre.
 1. Velg et hvilket som helst produkt som ikke har en supplert produktside.
 1. Klikk på **Suppler produktside** i handlingsruten.
 1. Velg **PDP-mal**, og velg deretter **OK**.

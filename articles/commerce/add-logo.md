@@ -20,11 +20,11 @@ ms.author: stuharg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
 ms.openlocfilehash: f15680deb0eab763ba68f2897139c915d1f8a6a3
-ms.sourcegitcommit: 8028fbc5b9585e87d3331ea02577ff82ede090af
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "3817336"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4414592"
 ---
 # <a name="add-a-logo"></a>Legge til en logo
 
@@ -50,7 +50,7 @@ Før du kan legge til en logo på alle sidene på området, må du fullføre dis
 
 Følg denne fremgangsmåten for å legge til en logo i topptekstfragmentet for området.
 
-1. Velg **Fragmenter**i navigasjonsruten til venstre.
+1. Velg **Fragmenter** i navigasjonsruten til venstre.
 1. Velg topptekstfragmentet du opprettet, og velg deretter **Rediger**.
 1. Utvid hodemodulen.
 1. I egenskapsruten for hodemodulen angir du et bilde og en kobling for logoen. 

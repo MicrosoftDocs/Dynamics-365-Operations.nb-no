@@ -18,11 +18,11 @@ ms.author: stuharg
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
 ms.openlocfilehash: ea484bfc1e9b293c53d7293c50630c4955000131
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3983163"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4414556"
 ---
 # <a name="create-email-templates-for-transactional-events"></a>Opprette e-postmaler for transaksjonshendelser
 
@@ -40,8 +40,8 @@ Før du kan tilordne en bestemt transaksjonshendelse til en e-postmal, må du op
 
 Hvis du vil opprette en e-postmal, følger du disse trinnene.
 
-1. I Commerce Headquarters går du til **Maler for e-post til organisasjon** , som ligger under **Detaljhandel og handel \> Hovedkvarteroppsett \> Maler for e-post til organisasjon** eller **Organisasjonsstyring \> Oppsett \> Maler for e-post til organisasjon** .
-1. Velg **Ny** .
+1. I Commerce Headquarters går du til **Maler for e-post til organisasjon**, som ligger under **Detaljhandel og handel \> Hovedkvarteroppsett \> Maler for e-post til organisasjon** eller **Organisasjonsstyring \> Oppsett \> Maler for e-post til organisasjon**.
+1. Velg **Ny**.
 1. Under **Generelt** angir du følgende felt:
 
     - **E-post-ID** – ID-en for e-post er den unike identifikatoren for en mal, og det er verdien som vises når du velger en mal som skal tilordnes til en hendelse.
@@ -50,14 +50,14 @@ Hvis du vil opprette en e-postmal, følger du disse trinnene.
     - **Avsenders e-postadresse** – Angi e-postadressen som skal brukes for e-postmeldinger som sendes ved hjelp av denne malen.
     - **Standard språkkode** – Dette feltet angir den lokaliserte versjonen av e-postmeldingen som er sendt som standard, hvis det ikke er angitt noe språk av kanalen som aktiverer denne malen.
 
-1. Velg **Nytt** under **Innhold i e-postmelding** .
+1. Velg **Nytt** under **Innhold i e-postmelding**.
 1. I feltet **Språk** angir du språket for e-postmalen. Du kan legge til flere språk og lokaliserte maler senere.
 1. I feltet **Emne** angir du e-postemnet som skal vises i feltet Emne i e-postmeldingen.
 1. Velg **Rediger** for å laste opp e-postmalen.
 
 ## <a name="create-an-email-message-body-by-using-html"></a>Opprette en meldingstekst for e-post ved hjelp av HTML
 
-Meldingsteksten i e-postmeldingen er opprettet i HTML. Du kan bruke alle oppsett, stiler og merking som HTML og linjebundne gjennomgripende stilark (CSS) er tillatt for. Du kan også bruke bilder hvis du drifter dem på et offentlig tilgjengelig webendepunkt. Hvis du vil legge til et bilde, angir du bildets URL-adresse i attributtet **src** for HTML-koden **&lt;img&gt;** .
+Meldingsteksten i e-postmeldingen er opprettet i HTML. Du kan bruke alle oppsett, stiler og merking som HTML og linjebundne gjennomgripende stilark (CSS) er tillatt for. Du kan også bruke bilder hvis du drifter dem på et offentlig tilgjengelig webendepunkt. Hvis du vil legge til et bilde, angir du bildets URL-adresse i attributtet **src** for HTML-koden **&lt;img&gt;**.
 
 > [!NOTE]
 > E-postklienter bruker oppsetts- og stilbegrensninger som kan kreve endringer i HTML-koden, og CSS som du bruker til meldingsteksten. Det anbefales at du gjør deg kjent med de anbefalte fremgangsmåtene for å opprette HTML som vil bli støttet av de mest populære e-postklientene.
@@ -111,14 +111,14 @@ Følgende plassholdere henter og viser data for individuelle produkter (linjer) 
 | productid                      | Produkt-ID-en for linjen. |
 | lineproductname                | Navnet på produktet. |
 | lineproductdescription         | Beskrivelsen av produktet. |
-| linequantity                   | Antallet enheter som ble bestilt for linjen, pluss måleenheten (for eksempel **stk.** eller **par** ). |
+| linequantity                   | Antallet enheter som ble bestilt for linjen, pluss måleenheten (for eksempel **stk.** eller **par**). |
 | lineunit                       | Måleenheten for linjen. |
 | linequantity_withoutunit       | Antallet enheter som ble bestilt for linjen, uten måleenheten. |
 | linequantitypicked             | Når hendelsen **PickOrder** brukes, vises antallet enheter som ble plukket. Hvis ikke brukes **0** (null). |
 | linequantitypicked_withoutunit | Når hendelsen **PickOrder** brukes, vises antallet enheter som ble plukket, uten måleenhet. Hvis ikke brukes **0** (null). |
 | linequantitypacked             | Når hendelsene **PackOrder** og **Ordre klar for henting** brukes, vises antallet enheter som ble pakket. Hvis ikke brukes **0** (null). |
 | linequantitypacked_withoutuom  | Når hendelsene **PackOrder** og **Ordre klar for henting** brukes, vises antallet enheter som ble pakket, uten måleenheten. Hvis ikke brukes **0** (null). |
-| linequantityshipped            | Alltid **0** , bortsett fra når bestemte hendelser brukes, som beskrevet i neste rad. |
+| linequantityshipped            | Alltid **0**, bortsett fra når bestemte hendelser brukes, som beskrevet i neste rad. |
 | linequantityshipped_withoutuom | Når hendelsen **ShipOrder** brukes, vises antallet enheter som ble plukket, uten måleenhet. Hvis ikke brukes **0** (null). |
 | lineprice                      | Prisen på en enkeltstående enhet. |
 | linenetamount                  | Prisen på linjen etter antallet enheter og rabatt som brukes. |
@@ -170,9 +170,9 @@ Her er et eksempel:
 
 Kvitteringer kan sendes som e-post til kunder som kjøper på et salgssted (POS). Fremgangsmåten for oppretting av malen for e-postkvitteringer er vanligvis de samme som fremgangsmåten for å opprette maler for andre transaksjonshendelser. Følgende endringer er imidlertid nødvendige:
 
-- ID-en for e-post for e-postmalen må være **emailRecpt** .
-- Kvitteringsteksten settes inn i e-postmeldingen ved hjelp av plassholderen **%message%** . For å sikre at kvitteringsteksten blir gjengitt på riktig måte, omslutter du plassholderen **%message%** med HTML-kodene **&lt;pre&gt;** og **&lt;/pre&gt;** .
-- Linjeskift i HTML-koden for topptekst og bunntekst i e-postmeldingen konverteres til HTML-koder av typen **&lt;br /&gt;** , slik at kvitteringsteksten gjengis riktig. Hvis du vil fjerne uønsket loddrett avstand i kvitteringsmeldingene, kan du fjerne linjeskift fra hvor som helst i HTML-koden der det ikke er behov for loddrett område.
+- ID-en for e-post for e-postmalen må være **emailRecpt**.
+- Kvitteringsteksten settes inn i e-postmeldingen ved hjelp av plassholderen **%message%**. For å sikre at kvitteringsteksten blir gjengitt på riktig måte, omslutter du plassholderen **%message%** med HTML-kodene **&lt;pre&gt;** og **&lt;/pre&gt;**.
+- Linjeskift i HTML-koden for topptekst og bunntekst i e-postmeldingen konverteres til HTML-koder av typen **&lt;br /&gt;**, slik at kvitteringsteksten gjengis riktig. Hvis du vil fjerne uønsket loddrett avstand i kvitteringsmeldingene, kan du fjerne linjeskift fra hvor som helst i HTML-koden der det ikke er behov for loddrett område.
 
 Hvis du vil ha mer informasjon om hvordan du konfigurerer e-post, kan du se [Konfigurere e-postkvitteringer](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/set-up-email-receipts).
 
@@ -182,12 +182,12 @@ Når du har opprettet og testet HTML-koden for meldingsteksten, må den lastes o
 
 Hvis du vil laste opp en ny eller redigert HTML for e-postmal, gjør du følgende.
 
-1. I Commerce Headquarters går du til **Detaljhandel og handel \> Hovedkvarteroppsett \> Maler for e-post til organisasjon** .
+1. I Commerce Headquarters går du til **Detaljhandel og handel \> Hovedkvarteroppsett \> Maler for e-post til organisasjon**.
 1. Velg raden for språket du vil legge til eller erstatte HTML for. Du kan også velge **Ny** for å opprette en rad for et nytt språk.
-1. Velg **Rediger** .
-1. I dialogboksen som vises, velger du **Bla gjennom** . Bla til HTML-dokumentet du vil laste opp, merk det, og velg deretter **Åpne** .
-1. Velg **Last opp** .
-1. Når e-posthtmlen vises i forhåndsvisningsvinduet, velger du **OK** .
+1. Velg **Rediger**.
+1. I dialogboksen som vises, velger du **Bla gjennom**. Bla til HTML-dokumentet du vil laste opp, merk det, og velg deretter **Åpne**.
+1. Velg **Last opp**.
+1. Når e-posthtmlen vises i forhåndsvisningsvinduet, velger du **OK**.
 1. Sørg for at det er merket av for **Har brødtekst** for raden.
 
 Hvis du allerede har konfigurert Commerce Headquarters til å sende e-post, vil den nye eller oppdaterte e-postmeldingen bli sendt til alle kunder som utfører en transaksjon som aktiverer hendelsen som er tilordnet til malen.
