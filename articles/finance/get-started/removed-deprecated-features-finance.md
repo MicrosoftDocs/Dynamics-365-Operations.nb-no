@@ -1,0 +1,109 @@
+---
+title: Funksjoner som er fjernet eller avskrevet i Dynamics 365 Finance
+description: Dette emnet beskriver funksjoner som er fjernet eller som er planlagt for fjerning fra Dynamics 365 Finance.
+author: roschlom
+manager: AnnBe
+ms.date: 12/07/2020
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-ax-applications
+ms.technology: ''
+audience: Application User, Developer, IT Pro
+ms.reviewer: roschlom
+ms.search.scope: Operations
+ms.search.region: Global
+ms.author: sericks
+ms.search.validFrom: 2020-03-02
+ms.dyn365.ops.version: Platform update 33
+ms.openlocfilehash: a406db6d78302fa05596a58fffb7464222d4bfea
+ms.sourcegitcommit: 069ed5789517b550065e5e2317658fec4027359e
+ms.translationtype: HT
+ms.contentlocale: nb-NO
+ms.lasthandoff: 12/07/2020
+ms.locfileid: "4689500"
+---
+# <a name="removed-or-deprecated-features-in-dynamics-365-finance"></a><span data-ttu-id="78c4f-103">Funksjoner som er fjernet eller avskrevet i Dynamics 365 Finance</span><span class="sxs-lookup"><span data-stu-id="78c4f-103">Removed or deprecated features in Dynamics 365 Finance</span></span>
+
+[!include [banner](../includes/banner.md)]
+
+<span data-ttu-id="78c4f-104">Dette emnet beskriver funksjoner som er fjernet eller som er planlagt for fjerning fra Dynamics 365 Finance.</span><span class="sxs-lookup"><span data-stu-id="78c4f-104">This topic describes features that have been removed, or that are planned for removal from Dynamics 365 Finance.</span></span>
+
+- <span data-ttu-id="78c4f-105">En *fjernet* funksjon er ikke lenger tilgjengelig i produktet.</span><span class="sxs-lookup"><span data-stu-id="78c4f-105">A *removed* feature is no longer available in the product.</span></span>
+- <span data-ttu-id="78c4f-106">En *avskrevet* funksjon er ikke i aktiv utvikling og kan bli fjernet i en fremtidig oppdatering.</span><span class="sxs-lookup"><span data-stu-id="78c4f-106">A *deprecated* feature is not in active development and may be removed in a future update.</span></span>
+
+<span data-ttu-id="78c4f-107">Denne listen er ment å hjelpe deg med å vurdere disse fjerningene og avskrivningene for din egen planlegging.</span><span class="sxs-lookup"><span data-stu-id="78c4f-107">This list is intended to help you consider these removals and deprecations for your own planning.</span></span> 
+
+> [!NOTE]
+> <span data-ttu-id="78c4f-108">Detaljert informasjon om objekter i Finance and Operations-apper finnes i [Tekniske referanserapporter](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep).</span><span class="sxs-lookup"><span data-stu-id="78c4f-108">Detailed information about objects in Finance and Operations apps can be found in the [Technical reference reports](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep).</span></span> <span data-ttu-id="78c4f-109">Du kan sammenligne de ulike versjonene av disse rapportene for å lære om objekter som er endret eller fjernet i hver versjon av Finance and Operations-apper.</span><span class="sxs-lookup"><span data-stu-id="78c4f-109">You can compare the different versions of these reports to learn about objects that have changed or been removed in each version of Finance and Operations apps.</span></span>
+
+## <a name="features-removed-or-deprecated-in-the-finance-10016-release"></a><span data-ttu-id="78c4f-110">Fjernede eller avskrevne funksjoner i Finance 10.0.16</span><span class="sxs-lookup"><span data-stu-id="78c4f-110">Features removed or deprecated in the Finance 10.0.16 release</span></span>
+
+### <a name="ledger-transaction-export-format-be-electronic-reporting-format-and-respective-ledger-transaction-export-be-model-for-belgium"></a><span data-ttu-id="78c4f-111">"Format for eksport av finanstransaksjon (BE)" Elektronisk rapporteringsformat og tilsvarende "modell for eksport av finanstransaksjon (BE)" for Belgia</span><span class="sxs-lookup"><span data-stu-id="78c4f-111">"Ledger transaction export format (BE)" Electronic reporting format and respective "Ledger transaction export (BE)" model for Belgium</span></span>
+
+|   |  |
+|------------|--------------------|
+| <span data-ttu-id="78c4f-112">**Årsak til avskrivning/fjerning**</span><span class="sxs-lookup"><span data-stu-id="78c4f-112">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="78c4f-113">Erstattet med nytt ER-format under modellen "Standard revisjonsfil (SAF-T)".</span><span class="sxs-lookup"><span data-stu-id="78c4f-113">Replaced with new ER format under "Standard Audit File (SAF-T)" model.</span></span>  |
+| <span data-ttu-id="78c4f-114">**Erstattet med en annen funksjon?**</span><span class="sxs-lookup"><span data-stu-id="78c4f-114">**Replaced by another feature?**</span></span>   | <span data-ttu-id="78c4f-115">Ja</span><span class="sxs-lookup"><span data-stu-id="78c4f-115">Yes</span></span> |
+| <span data-ttu-id="78c4f-116">**Berørte produktområder**</span><span class="sxs-lookup"><span data-stu-id="78c4f-116">**Product areas affected**</span></span>         | <span data-ttu-id="78c4f-117">Søknad</span><span class="sxs-lookup"><span data-stu-id="78c4f-117">Application</span></span> |
+| <span data-ttu-id="78c4f-118">**Distribusjonsalternativ**</span><span class="sxs-lookup"><span data-stu-id="78c4f-118">**Deployment option**</span></span>              | <span data-ttu-id="78c4f-119">Alle</span><span class="sxs-lookup"><span data-stu-id="78c4f-119">All</span></span> |
+| <span data-ttu-id="78c4f-120">**Status**</span><span class="sxs-lookup"><span data-stu-id="78c4f-120">**Status**</span></span>                         | <span data-ttu-id="78c4f-121">Avskrevet: Per 1. desember 2021 planlegger vi å ikke lenger støtte "Format for eksport av finanstransaksjon (BE) Elektronisk rapporteringformat (ER) og respektive modell for eksport av finanstransaksjon (BE).</span><span class="sxs-lookup"><span data-stu-id="78c4f-121">Deprecated: By December 1, 2021, we plan to no longer support the "Ledger transaction export format (BE)" Electronic reporting (ER) format and respective "Ledger transaction export (BE)" model.</span></span> <span data-ttu-id="78c4f-122">Et nytt format av typen "Dataeksport i økonomimodul (BE)" sammen med "Tilordning av datamodell for økonomimodul" introduseres i stedet under modellen "Standard revisjonsfil (SAF-T)".</span><span class="sxs-lookup"><span data-stu-id="78c4f-122">A new "General ledger data export (BE)" format together with "General ledger data model mapping" are introduced instead under the "Standard Audit File (SAF-T)" model.</span></span> |
+
+### <a name="vat-100-report-for-the-united-kingdom-in-ssrs-format"></a><span data-ttu-id="78c4f-123">"VAT 100"-rapport for Storbritannia i SSRS-format</span><span class="sxs-lookup"><span data-stu-id="78c4f-123">"VAT 100" report for the United Kingdom in SSRS format</span></span>
+
+|   |  |
+|------------|--------------------|
+| <span data-ttu-id="78c4f-124">**Årsak til avskrivning/fjerning**</span><span class="sxs-lookup"><span data-stu-id="78c4f-124">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="78c4f-125">Erstattet med nytt ER-format – "Mva-deklarering Excel (UK)"-formatet under "Mva-deklareringsmodell".</span><span class="sxs-lookup"><span data-stu-id="78c4f-125">Replaced with new ER format - "VAT Declaration Excel (UK)" format under "Tax declaration model".</span></span>  |
+| <span data-ttu-id="78c4f-126">**Erstattet med en annen funksjon?**</span><span class="sxs-lookup"><span data-stu-id="78c4f-126">**Replaced by another feature?**</span></span>   | <span data-ttu-id="78c4f-127">Ja</span><span class="sxs-lookup"><span data-stu-id="78c4f-127">Yes</span></span> |
+| <span data-ttu-id="78c4f-128">**Berørte produktområder**</span><span class="sxs-lookup"><span data-stu-id="78c4f-128">**Product areas affected**</span></span>         | <span data-ttu-id="78c4f-129">Søknad</span><span class="sxs-lookup"><span data-stu-id="78c4f-129">Application</span></span> |
+| <span data-ttu-id="78c4f-130">**Distribusjonsalternativ**</span><span class="sxs-lookup"><span data-stu-id="78c4f-130">**Deployment option**</span></span>              | <span data-ttu-id="78c4f-131">Alle</span><span class="sxs-lookup"><span data-stu-id="78c4f-131">All</span></span> |
+| <span data-ttu-id="78c4f-132">**Status**</span><span class="sxs-lookup"><span data-stu-id="78c4f-132">**Status**</span></span>                         | <span data-ttu-id="78c4f-133">Avskrevet: Per 1. desember 2021 planlegger vi å ikke lenger støtte "Mva 100-rapporten" i SSRS-format.</span><span class="sxs-lookup"><span data-stu-id="78c4f-133">Deprecated: By December 1, 2021, we plan to no longer support the "VAT 100 report" in SSRS format.</span></span> <span data-ttu-id="78c4f-134">Det ble introdusert et nytt "Mva-deklarering Excel (Storbritannia)"-format under "Mva-deklareringsmodell" i [MTD-mva-funksjonen](../localizations/emea-gbr-mtd-vat-integration.md).</span><span class="sxs-lookup"><span data-stu-id="78c4f-134">A new "VAT Declaration Excel (UK)" format under "Tax declaration model" was introduced in the [MTD VAT feature](../localizations/emea-gbr-mtd-vat-integration.md).</span></span> |
+
+## <a name="features-removed-or-deprecated-in-the-finance-10015-release"></a><span data-ttu-id="78c4f-135">Fjernede eller avskrevne funksjoner i Finance 10.0.15</span><span class="sxs-lookup"><span data-stu-id="78c4f-135">Features removed or deprecated in the Finance 10.0.15 release</span></span>
+
+### <a name="internet-explorer-11-support-for-dynamics-365-is-deprecated"></a><span data-ttu-id="78c4f-136">Internet Explorer 11-støtte for Dynamics 365 er avskrevet</span><span class="sxs-lookup"><span data-stu-id="78c4f-136">Internet Explorer 11 support for Dynamics 365 is deprecated</span></span>
+
+|   |  |
+|------------|--------------------|
+| <span data-ttu-id="78c4f-137">**Årsak til avskrivning/fjerning**</span><span class="sxs-lookup"><span data-stu-id="78c4f-137">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="78c4f-138">Fra og med desember 2020 er Microsoft Internet Explorer 11-støtte for alle Dynamics 365-produkter avskrevet, og Internet Explorer 11 støttes ikke etter august 2021.</span><span class="sxs-lookup"><span data-stu-id="78c4f-138">Effective December 2020, Microsoft Internet Explorer 11 support for all Dynamics 365 products is deprecated, and Internet Explorer 11 won’t be supported after August 2021.</span></span><br><br><span data-ttu-id="78c4f-139">Dette vil påvirke kunder som bruker Dynamics 365-produkter som er utformet for bruk via et Internet Explorer 11-grensesnitt.</span><span class="sxs-lookup"><span data-stu-id="78c4f-139">This will impact customers who use Dynamics 365 products that are designed to be used through an Internet Explorer 11 interface.</span></span> <span data-ttu-id="78c4f-140">Etter august 2021 støttes ikke Internet Explorer 11 for slike Dynamics 365-produkter.</span><span class="sxs-lookup"><span data-stu-id="78c4f-140">After August 2021, Internet Explorer 11 won't be supported for such Dynamics 365 products.</span></span> |
+| <span data-ttu-id="78c4f-141">**Erstattet med en annen funksjon?**</span><span class="sxs-lookup"><span data-stu-id="78c4f-141">**Replaced by another feature?**</span></span>   | <span data-ttu-id="78c4f-142">Vi anbefaler at kundene går over til Microsoft Edge.</span><span class="sxs-lookup"><span data-stu-id="78c4f-142">We recommend that customers transition to Microsoft Edge.</span></span>|
+| <span data-ttu-id="78c4f-143">**Berørte produktområder**</span><span class="sxs-lookup"><span data-stu-id="78c4f-143">**Product areas affected**</span></span>         | <span data-ttu-id="78c4f-144">Alle Dynamics 365-produkter</span><span class="sxs-lookup"><span data-stu-id="78c4f-144">All Dynamics 365 products</span></span> |
+| <span data-ttu-id="78c4f-145">**Distribusjonsalternativ**</span><span class="sxs-lookup"><span data-stu-id="78c4f-145">**Deployment option**</span></span>              | <span data-ttu-id="78c4f-146">Alle</span><span class="sxs-lookup"><span data-stu-id="78c4f-146">All</span></span>|
+| <span data-ttu-id="78c4f-147">**Status**</span><span class="sxs-lookup"><span data-stu-id="78c4f-147">**Status**</span></span>                         | <span data-ttu-id="78c4f-148">Avskrevet.</span><span class="sxs-lookup"><span data-stu-id="78c4f-148">Deprecated.</span></span> <span data-ttu-id="78c4f-149">Internet Explorer 11 støttes ikke etter august 2021.</span><span class="sxs-lookup"><span data-stu-id="78c4f-149">Internet Explorer 11 won’t be supported after August 2021.</span></span>|
+
+## <a name="features-removed-or-deprecated-in-the-finance-10012-release"></a><span data-ttu-id="78c4f-150">Fjernede eller avskrevne funksjoner i Finance 10.0.12</span><span class="sxs-lookup"><span data-stu-id="78c4f-150">Features removed or deprecated in the Finance 10.0.12 release</span></span>
+
+### <a name="polish-ssrs-reports-sales-vat-register-purchase-vat-register-eu-summary-vat-register--feature-reference-pl-00014"></a><span data-ttu-id="78c4f-151">Polske SSRS-rapporter: register for utgående mva, register for inngående mva, sammendrag av mva-register for EU – funksjonsreferanser PL-00014</span><span class="sxs-lookup"><span data-stu-id="78c4f-151">Polish SSRS reports: Sales VAT register, Purchase VAT register, EU summary VAT register – Feature reference PL-00014</span></span>
+
+|   |  |
+|------------|--------------------|
+| <span data-ttu-id="78c4f-152">**Årsak til avskrivning/fjerning**</span><span class="sxs-lookup"><span data-stu-id="78c4f-152">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="78c4f-153">Ikke lovpålagt.</span><span class="sxs-lookup"><span data-stu-id="78c4f-153">Not legally required.</span></span>  |
+| <span data-ttu-id="78c4f-154">**Erstattet med en annen funksjon?**</span><span class="sxs-lookup"><span data-stu-id="78c4f-154">**Replaced by another feature?**</span></span>   | <span data-ttu-id="78c4f-155">Ja (Excel-format for standard revisjonsfil med mva-deklarering - JPK_VDEK)</span><span class="sxs-lookup"><span data-stu-id="78c4f-155">Yes (Excel format for Standard Audit File with VAT declaration - JPK_VDEK)</span></span> |
+| <span data-ttu-id="78c4f-156">**Berørte produktområder**</span><span class="sxs-lookup"><span data-stu-id="78c4f-156">**Product areas affected**</span></span>         | <span data-ttu-id="78c4f-157">Søknad</span><span class="sxs-lookup"><span data-stu-id="78c4f-157">Application</span></span> |
+| <span data-ttu-id="78c4f-158">**Distribusjonsalternativ**</span><span class="sxs-lookup"><span data-stu-id="78c4f-158">**Deployment option**</span></span>              | <span data-ttu-id="78c4f-159">Alle</span><span class="sxs-lookup"><span data-stu-id="78c4f-159">All</span></span> |
+| <span data-ttu-id="78c4f-160">**Status**</span><span class="sxs-lookup"><span data-stu-id="78c4f-160">**Status**</span></span>                         | <span data-ttu-id="78c4f-161">Avskrevet: Innen 1. juli 2021 vi planlegger å ikke lenger kunne støtte SSRS-rapportene **: register for utgående mva, register for inngående mva, sammendrag av mva-register for EU – funksjonsreferanser PL-00014**.</span><span class="sxs-lookup"><span data-stu-id="78c4f-161">Deprecated: By July 1, 2021, we plan to no longer support the SSRS reports: **Sales VAT register, Purchase VAT register, EU summary VAT register – Feature reference PL-00014**.</span></span> <span data-ttu-id="78c4f-162">Excel-formateringseksempel for standard revisjonsfil med mva-deklarering (JPK_VDEK) blir introdusert i stedet.</span><span class="sxs-lookup"><span data-stu-id="78c4f-162">Excel format example for Standard Audit File with VAT declaration (JPK_VDEK) will be introduced instead.</span></span> |
+
+## <a name="features-removed-or-deprecated-in-the-finance-10011-release"></a><span data-ttu-id="78c4f-163">Fjernede eller avskrevne funksjoner i Finance 10.0.11</span><span class="sxs-lookup"><span data-stu-id="78c4f-163">Features removed or deprecated in the Finance 10.0.11 release</span></span>
+
+### <a name="norwegian-standard-main-accounts"></a><span data-ttu-id="78c4f-164">Norske standard hovedkontoer</span><span class="sxs-lookup"><span data-stu-id="78c4f-164">Norwegian Standard main accounts</span></span>
+
+|   |  |
+|------------|--------------------|
+| <span data-ttu-id="78c4f-165">**Årsak til avskrivning/fjerning**</span><span class="sxs-lookup"><span data-stu-id="78c4f-165">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="78c4f-166">Utform på nytt</span><span class="sxs-lookup"><span data-stu-id="78c4f-166">Redesign</span></span>  |
+| <span data-ttu-id="78c4f-167">**Erstattet med en annen funksjon?**</span><span class="sxs-lookup"><span data-stu-id="78c4f-167">**Replaced by another feature?**</span></span>   | <span data-ttu-id="78c4f-168">Ja (erstattet med programspesifikke parametere i ER-formatet)</span><span class="sxs-lookup"><span data-stu-id="78c4f-168">Yes (Replaced with ER format application-specific parameters)</span></span> |
+| <span data-ttu-id="78c4f-169">**Berørte produktområder**</span><span class="sxs-lookup"><span data-stu-id="78c4f-169">**Product areas affected**</span></span>         | <span data-ttu-id="78c4f-170">Søknad</span><span class="sxs-lookup"><span data-stu-id="78c4f-170">Application</span></span> |
+| <span data-ttu-id="78c4f-171">**Distribusjonsalternativ**</span><span class="sxs-lookup"><span data-stu-id="78c4f-171">**Deployment option**</span></span>              | <span data-ttu-id="78c4f-172">Alle</span><span class="sxs-lookup"><span data-stu-id="78c4f-172">All</span></span> |
+| <span data-ttu-id="78c4f-173">**Status**</span><span class="sxs-lookup"><span data-stu-id="78c4f-173">**Status**</span></span>                         | <span data-ttu-id="78c4f-174">Avskrevet: etter 1. april 2021 planlegger vi å ikke lenger støtte funksjonalitet relatert til standard hovedkontoer: referansefelt, relatert tabell, dataenhet.</span><span class="sxs-lookup"><span data-stu-id="78c4f-174">Deprecated: By April 1, 2021, we plan to no longer support functionality related to Standard main accounts: Reference field, related table, data entity.</span></span> |
+
+## <a name="features-removed-or-deprecated-in-the-finance-1007-release"></a><span data-ttu-id="78c4f-175">Fjernede eller avskrevne funksjoner i Finance 10.0.7</span><span class="sxs-lookup"><span data-stu-id="78c4f-175">Features removed or deprecated in the Finance 10.0.7 release</span></span>
+
+### <a name="workflow-request-change-dialog-box-no-longer-includes-user-selection-drop-down-list"></a><span data-ttu-id="78c4f-176">Dialogboksen Endring av arbeidsflytforespørsel inneholder ikke lenger en rullegardinliste for brukervalg</span><span class="sxs-lookup"><span data-stu-id="78c4f-176">Workflow request change dialog box no longer includes user selection drop-down list</span></span>
+|   |  |
+|------------|--------------------|
+| <span data-ttu-id="78c4f-177">**Årsak til avskrivning/fjerning**</span><span class="sxs-lookup"><span data-stu-id="78c4f-177">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="78c4f-178">Endret til funksjonen med kontogruppevalg.</span><span class="sxs-lookup"><span data-stu-id="78c4f-178">Changed to the feature with account groups selection.</span></span>  |
+| <span data-ttu-id="78c4f-179">**Erstattet med en annen funksjon?**</span><span class="sxs-lookup"><span data-stu-id="78c4f-179">**Replaced by another feature?**</span></span>   | <span data-ttu-id="78c4f-180">Ja</span><span class="sxs-lookup"><span data-stu-id="78c4f-180">Yes</span></span> |
+| <span data-ttu-id="78c4f-181">**Berørte produktområder**</span><span class="sxs-lookup"><span data-stu-id="78c4f-181">**Product areas affected**</span></span>         | <span data-ttu-id="78c4f-182">Arbeidsflyt</span><span class="sxs-lookup"><span data-stu-id="78c4f-182">Workflow</span></span> |
+| <span data-ttu-id="78c4f-183">**Distribusjonsalternativ**</span><span class="sxs-lookup"><span data-stu-id="78c4f-183">**Deployment option**</span></span>              | <span data-ttu-id="78c4f-184">Alle</span><span class="sxs-lookup"><span data-stu-id="78c4f-184">All</span></span> |
+| <span data-ttu-id="78c4f-185">**Status**</span><span class="sxs-lookup"><span data-stu-id="78c4f-185">**Status**</span></span>                         | <span data-ttu-id="78c4f-186">Avskrevet: Etter 1. desember 2020 planlegger vi å ikke lenger støtte kinesiske bilagstyper uten kontogruppevalg.</span><span class="sxs-lookup"><span data-stu-id="78c4f-186">Deprecated: By December 1, 2020, we plan to no longer support Chinese voucher types setup without Account groups selection.</span></span> <span data-ttu-id="78c4f-187">Finne flere detaljer om den nye utformingen i [Hva er nytt i 10.0.7](whats-new-changed-10-0-7.md).</span><span class="sxs-lookup"><span data-stu-id="78c4f-187">Find more details about the new design in [What's new in 10.0.7](whats-new-changed-10-0-7.md).</span></span> |
+
+## <a name="previous-announcements-about-removed-or-deprecated-features"></a><span data-ttu-id="78c4f-188">Tidligere kunngjøringer om fjernede eller avskrevne funksjoner</span><span class="sxs-lookup"><span data-stu-id="78c4f-188">Previous announcements about removed or deprecated features</span></span>
+<span data-ttu-id="78c4f-189">Hvis du vil lære mer om funksjoner som er fjernet eller avskrevet i tidligere versjoner, kan du se [Fjernede eller avskrevne funksjoner i tidligere versjoner](../../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md).</span><span class="sxs-lookup"><span data-stu-id="78c4f-189">To learn more about features that have been removed or deprecated in previous releases, see [Removed or deprecated features in previous releases](../../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md).</span></span>

@@ -1,0 +1,64 @@
+---
+title: Lukke Kunde
+description: Emnet nedenfor viser sidene som støtter lukkingsprosessen for Kunder.
+author: ShivamPandey-msft
+manager: AnnBe
+ms.date: 10/26/2017
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-ax-applications
+ms.technology: ''
+audience: Application User
+ms.reviewer: roschlom
+ms.search.scope: Core, Operations
+ms.custom: 59372
+ms.assetid: c18d83e5-4adb-422a-91be-82a665d8288b
+ms.search.region: Global
+ms.author: shpandey
+ms.search.validFrom: 2016-02-28
+ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: c3563f0f4d7d281a02231c1d3edcfe3ceb4277f5
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.translationtype: HT
+ms.contentlocale: nb-NO
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4446366"
+---
+# <a name="close-accounts-receivable"></a><span data-ttu-id="bf355-103">Lukke Kunde</span><span class="sxs-lookup"><span data-stu-id="bf355-103">Close Accounts receivable</span></span>
+
+[!include [banner](../includes/banner.md)]
+
+<span data-ttu-id="bf355-104">Tabellen nedenfor viser sidene som støtter lukkingsprosessen for Kunder.</span><span class="sxs-lookup"><span data-stu-id="bf355-104">The following table lists the pages that support the close Accounts receivable business process.</span></span>
+
+> [!NOTE] 
+> <span data-ttu-id="bf355-105">Hvis du vil åpne noen av sidene i tabellen, må du angi informasjon eller parameterinnstillinger.</span><span class="sxs-lookup"><span data-stu-id="bf355-105">To open some of the pages in the table, you must enter information or specify parameter settings.</span></span>
+
+<span data-ttu-id="bf355-106">**Oppgave for forretningsprosesskomponent**</span><span class="sxs-lookup"><span data-stu-id="bf355-106">**Business process component task**</span></span>                   
+
+<span data-ttu-id="bf355-107">Lukke perioder i økonomimodulen</span><span class="sxs-lookup"><span data-stu-id="bf355-107">Close periods in the general ledger</span></span>
+
+| <span data-ttu-id="bf355-108">Sidenavn</span><span class="sxs-lookup"><span data-stu-id="bf355-108">Page name</span></span>                            | <span data-ttu-id="bf355-109">Bruk</span><span class="sxs-lookup"><span data-stu-id="bf355-109">Usage</span></span>                                                                                      |
+|--------------------------------------|--------------------------------------------------------------------------------------------|
+|<span data-ttu-id="bf355-110">Satsvis jobb</span><span class="sxs-lookup"><span data-stu-id="bf355-110">Batch job</span></span>                             | <span data-ttu-id="bf355-111">Vis eller opprett satsvise jobber.</span><span class="sxs-lookup"><span data-stu-id="bf355-111">View or create batch jobs.</span></span> <span data-ttu-id="bf355-112">Satsvise jobber er kanskje ikke fullført, og du vil påse at all postering er fullført.</span><span class="sxs-lookup"><span data-stu-id="bf355-112">Batch jobs might not be completed, and you want to make sure that all posting is completed.</span></span>                                                                                                               |
+|<span data-ttu-id="bf355-113">Bekreft salgsordre</span><span class="sxs-lookup"><span data-stu-id="bf355-113">Confirm sales order</span></span>                   | <span data-ttu-id="bf355-114">Oppdater salgsordrer.</span><span class="sxs-lookup"><span data-stu-id="bf355-114">Update sales orders.</span></span>                                                                       |
+|<span data-ttu-id="bf355-115">Revaluering av utenlandsk valuta</span><span class="sxs-lookup"><span data-stu-id="bf355-115">Foreign currency revaluation</span></span>          | <span data-ttu-id="bf355-116">Generer transaksjoner som oppdaterer verdien til åpne kundetransaksjoner i utenlandsk valuta.</span><span class="sxs-lookup"><span data-stu-id="bf355-116">Generate transactions that update the value of open customer transactions in foreign currencies.</span></span>                                                                                                                         |
+| <span data-ttu-id="bf355-117">Journal</span><span class="sxs-lookup"><span data-stu-id="bf355-117">Journal</span></span>                              | <span data-ttu-id="bf355-118">Poster fakturaer, betalinger og egenveksler.</span><span class="sxs-lookup"><span data-stu-id="bf355-118">Post invoices, payments, and promissory notes.</span></span>                                             |
+| <span data-ttu-id="bf355-119">Journalbilag</span><span class="sxs-lookup"><span data-stu-id="bf355-119">Journal voucher</span></span>                      |<ul><li><span data-ttu-id="bf355-120">**Betalingsjournal** – Generer, behandle og poster betalinger.</span><span class="sxs-lookup"><span data-stu-id="bf355-120">**Payment journal** – Generate, process, and post payments.</span></span></li><li><span data-ttu-id="bf355-121">**Journal for vekseltrekking** – Poster veksler.</span><span class="sxs-lookup"><span data-stu-id="bf355-121">**Draw bill of exchange journal** – Post bills of exchange.</span></span></li><li><span data-ttu-id="bf355-122">**Journal for vekselprotest** – Poster protesterte veksler.</span><span class="sxs-lookup"><span data-stu-id="bf355-122">**Protest bill of exchange journal** – Post protested bills of exchange.</span></span></li><li><span data-ttu-id="bf355-123">**Journal for ny vekseltilbaketrekking** – Poster tilbaketrukne veksler.</span><span class="sxs-lookup"><span data-stu-id="bf355-123">**Redraw bill of exchange journal** – Post redrawn bills of exchange.</span></span></li><li><span data-ttu-id="bf355-124">**Remitteringsjournal** – Poster remitteringer.</span><span class="sxs-lookup"><span data-stu-id="bf355-124">**Remittance journal** – Post remittances.</span></span></li><li><span data-ttu-id="bf355-125">**Vekselavregningsjournal** – Poster avregnede veksler</span><span class="sxs-lookup"><span data-stu-id="bf355-125">**Settle bill of exchange journal** – Post settled bills of exchange</span></span></li></ul>                   |
+| <span data-ttu-id="bf355-126">Følgeseddelpostering</span><span class="sxs-lookup"><span data-stu-id="bf355-126">Packing slip posting</span></span>                 | <span data-ttu-id="bf355-127">Oppdater følgesedler for salgsordrer.</span><span class="sxs-lookup"><span data-stu-id="bf355-127">Update packing slips for sales orders.</span></span>                                                     |
+| <span data-ttu-id="bf355-128">Poster fritekstfaktura</span><span class="sxs-lookup"><span data-stu-id="bf355-128">Post free text invoice</span></span>               | <span data-ttu-id="bf355-129">Poster fritekstfakturaer.</span><span class="sxs-lookup"><span data-stu-id="bf355-129">Post free text invoices.</span></span>                                                                   |
+| <span data-ttu-id="bf355-130">Postering av faktura</span><span class="sxs-lookup"><span data-stu-id="bf355-130">Posting invoice</span></span>                      | <span data-ttu-id="bf355-131">Poster fakturaer for salgsordrer.</span><span class="sxs-lookup"><span data-stu-id="bf355-131">Post invoices for sales orders.</span></span>                                                            |
+| <span data-ttu-id="bf355-132">Postering av plukkliste</span><span class="sxs-lookup"><span data-stu-id="bf355-132">Posting picking list</span></span>                 |<span data-ttu-id="bf355-133">Oppdater plukkliste for salgsordrer.</span><span class="sxs-lookup"><span data-stu-id="bf355-133">Update picking lists for sales orders.</span></span>                                                      |
+
+<span data-ttu-id="bf355-134">**Oppgave for forretningsprosesskomponent**</span><span class="sxs-lookup"><span data-stu-id="bf355-134">**Business process component task**</span></span>   
+
+<span data-ttu-id="bf355-135">Opprette og sende inn EU-salgslisten</span><span class="sxs-lookup"><span data-stu-id="bf355-135">Create and submit the EU sales list</span></span>
+
+| <span data-ttu-id="bf355-136">Sidenavn</span><span class="sxs-lookup"><span data-stu-id="bf355-136">Page name</span></span>                            | <span data-ttu-id="bf355-137">Bruk</span><span class="sxs-lookup"><span data-stu-id="bf355-137">Usage</span></span>                                                                                      |
+|--------------------------------------|--------------------------------------------------------------------------------------------|
+|<span data-ttu-id="bf355-138">EU-salgsliste</span><span class="sxs-lookup"><span data-stu-id="bf355-138">EU sales list</span></span>                         | <span data-ttu-id="bf355-139">Rapport om EU-salg til skattemyndighetene for merverdiavgiftdeklarasjonsformål.</span><span class="sxs-lookup"><span data-stu-id="bf355-139">Report on European Union (EU) sales to the tax authority for value-added tax (VAT) declaration purposes.</span></span>                                                                                                                           |
+
+
+
+
+
+

@@ -1,0 +1,107 @@
+---
+title: Behandling av generell journal
+description: Dette emnet beskriver funksjoner i Microsoft Dynamics 365 Finance som kan hjelpe med å gjøre behandling av økonomijournaler enklere, og som også kan bidra til å sikre at riktige data blir registrert og intern kontroll ikke settes på spill.
+author: ShylaThompson
+manager: AnnBe
+ms.date: 08/09/2019
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-ax-applications
+ms.technology: ''
+ms.search.form: LedgerJournalSetup, LedgerJournalTable
+audience: Application User
+ms.reviewer: roschlom
+ms.search.scope: Core, Operations
+ms.custom: 15721
+ms.assetid: b4b406fa-b772-44ec-8dd8-8eb818a921ef
+ms.search.region: Global
+ms.author: peakerbl
+ms.search.validFrom: 2016-02-28
+ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: c067b7b6cbbcad4456df6037da8ab124776261e9
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.translationtype: HT
+ms.contentlocale: nb-NO
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4446509"
+---
+# <a name="general-journal-processing"></a><span data-ttu-id="78bab-103">Behandling av generell journal</span><span class="sxs-lookup"><span data-stu-id="78bab-103">General journal processing</span></span>
+
+[!include [banner](../includes/banner.md)]
+
+<span data-ttu-id="78bab-104">Dette emnet beskriver funksjoner som kan hjelpe med å gjøre behandling av økonomijournaler enklere, og som også kan bidra til å sikre at riktige data blir registrert og intern kontroll ikke settes på spill.</span><span class="sxs-lookup"><span data-stu-id="78bab-104">This topic describes capabilities that can help make general journal processing easier, and that can also help ensure that correct data is captured and internal control isn't compromised.</span></span>  
+
+## <a name="journal-names"></a><span data-ttu-id="78bab-105">Journalnavn</span><span class="sxs-lookup"><span data-stu-id="78bab-105">Journal names</span></span>
+
+<span data-ttu-id="78bab-106">Ett av de viktigste områdene å konfigurere er journalnavn.</span><span class="sxs-lookup"><span data-stu-id="78bab-106">One of the most important areas to set up is journal names.</span></span> <span data-ttu-id="78bab-107">Det er lurt å definere bestemte journalnavn for hvert formål, for eksempel konsernintern, justering av avsetning og korrigering.</span><span class="sxs-lookup"><span data-stu-id="78bab-107">It's a good idea to define specific journal names for each purpose, such as intercompany, accrual adjustment, and error correction.</span></span> <span data-ttu-id="78bab-108">Du kan tilpasse hvert enkelt journalnavn for å gjøre dataregistrering enkelt og sikker for hvert formål.</span><span class="sxs-lookup"><span data-stu-id="78bab-108">You can tailor each journal name to help make data entry for each purpose easy and secure.</span></span> 
+
+<span data-ttu-id="78bab-109">På siden **Journalnavn** kan du definere følgende elementer:</span><span class="sxs-lookup"><span data-stu-id="78bab-109">On the **Journal names** page, you can set up the following elements:</span></span>
+
+-   <span data-ttu-id="78bab-110">**Arbeidsflytgodkjenning** – Hvis du vil øke den interne kontrollen, definerer du journalarbeidsflyter som etablerer materialgrenser for gjennomgangs- og godkjenningstrinnene, basert på kriterier som total debetbeløp.</span><span class="sxs-lookup"><span data-stu-id="78bab-110">**Workflow approval** – To increase internal control, define journal workflows that establish materiality limits for review and approval steps, based on criteria such as total debit amount.</span></span> <span data-ttu-id="78bab-111">Du konfigurerer arbeidsflyter for økonomijournaler på siden **Arbeidsflyter for økonomimodul**.</span><span class="sxs-lookup"><span data-stu-id="78bab-111">You set up workflows for the general journals on the **General ledger workflows** page.</span></span>
+-   <span data-ttu-id="78bab-112">**Standardverdier** – Velg standardverdier for motkontoer, valuta og finansdimensjoner.</span><span class="sxs-lookup"><span data-stu-id="78bab-112">**Default values** – Select default values for offset accounts, currency, and financial dimensions.</span></span>
+-   <span data-ttu-id="78bab-113">**Journalkontroll** – Du kan definere begrensninger for firma, kontotype og segmentverdier.</span><span class="sxs-lookup"><span data-stu-id="78bab-113">**Journal control** – You can set up restrictions on the company and account type, and also the segment values.</span></span> 
+
+<span data-ttu-id="78bab-114">**Eksempler**</span><span class="sxs-lookup"><span data-stu-id="78bab-114">**Examples**</span></span>
+
+<span data-ttu-id="78bab-115">Et journalnavn kan bare brukes til justeringer.</span><span class="sxs-lookup"><span data-stu-id="78bab-115">A journal name can be used only for adjustments.</span></span> <span data-ttu-id="78bab-116">I så fall kan du angi at bare **Finans**-kontotypen er gyldig på tvers av alle firmaer.</span><span class="sxs-lookup"><span data-stu-id="78bab-116">In this case, you can specify that only the **Ledger** account type is valid across all companies.</span></span> 
+
+<span data-ttu-id="78bab-117">[![Journalkontrollkontotyper](./media/journal-control-account-types1.png)](./media/journal-control-account-types1.png)</span><span class="sxs-lookup"><span data-stu-id="78bab-117">[![Journal control account types](./media/journal-control-account-types1.png)](./media/journal-control-account-types1.png)</span></span>
+
+<span data-ttu-id="78bab-118">Et journalnavn kan bare brukes bare for et bestemt segment eller et område for hovedkontoer.</span><span class="sxs-lookup"><span data-stu-id="78bab-118">A journal name can be used only for a specific segment or for a range for main accounts.</span></span> 
+
+<span data-ttu-id="78bab-119">[![Journalkontrollsegment](./media/journal-control-segment1.png)](./media/journal-control-segment1.png)</span><span class="sxs-lookup"><span data-stu-id="78bab-119">[![Journal control segment](./media/journal-control-segment1.png)](./media/journal-control-segment1.png)</span></span>
+
+<span data-ttu-id="78bab-120">Alternativet **Automatisk tilbakeføring** er tilgjengelig i økonomijournaler.</span><span class="sxs-lookup"><span data-stu-id="78bab-120">The **Automatic reversal** option is available in general journals.</span></span> <span data-ttu-id="78bab-121">Du har for eksempel en justering av avsetning der det faktiske dokumentet ikke har blitt behandlet ennå, som vist i illustrasjonen nedenfor.</span><span class="sxs-lookup"><span data-stu-id="78bab-121">For example, you have an accrual adjustment where the actual document hasn't yet been processed, as shown in the following illustration.</span></span>
+<span data-ttu-id="78bab-122">[![Tilbakeføring for økonomijournal](./media/general-journal-reversing1.png)](./media/general-journal-reversing1.png)</span><span class="sxs-lookup"><span data-stu-id="78bab-122">[![General journal reversing](./media/general-journal-reversing1.png)](./media/general-journal-reversing1.png)</span></span> 
+
+<span data-ttu-id="78bab-123">Microsoft Excel-tillegget for journaloppføring gir et ekstra nivå med automatisering og gjør dataregistrering enklere.</span><span class="sxs-lookup"><span data-stu-id="78bab-123">The Microsoft Excel add-in for journal entry provides an additional level of automation and makes data entry easier.</span></span> <span data-ttu-id="78bab-124">Handlingen **Åpne linjer i Excel** er tilgjengelig på sidene **Økonomijournal** og **Journalbilag**.</span><span class="sxs-lookup"><span data-stu-id="78bab-124">The **Open lines in Excel** action is available on the **General journal** and **Journal voucher** pages.</span></span> 
+
+<span data-ttu-id="78bab-125">På siden **Periodiske journaler** kan du definere at gjentakelsesjournaler skal automatisere behandlingen av journalen.</span><span class="sxs-lookup"><span data-stu-id="78bab-125">On the **Periodic journals** page, you can set up recurring journals to automate journal processing.</span></span> 
+
+<span data-ttu-id="78bab-126">Du kan bruke bilagsmaler til enhver tid.</span><span class="sxs-lookup"><span data-stu-id="78bab-126">You can use voucher templates at any time.</span></span> <span data-ttu-id="78bab-127">På siden **Økonomijournaler** finnes handlingene **Lagre** og **Velg bilagsmal** på **Journalbilag**-siden, under **Funksjoner** for bilagslinjene.</span><span class="sxs-lookup"><span data-stu-id="78bab-127">On the **General journals** page, the **Save** and **Select voucher template** actions are found on the **Journal voucher** page, under **Functions** for the voucher lines.</span></span>
+
+## <a name="related-setup"></a><span data-ttu-id="78bab-128">Relatert oppsett</span><span class="sxs-lookup"><span data-stu-id="78bab-128">Related setup</span></span>
+<span data-ttu-id="78bab-129">Dette oppsettet er ikke spesifikk for økonomijournaler, men vil sørge for at dataregistrering er riktig og enkel.</span><span class="sxs-lookup"><span data-stu-id="78bab-129">The following setup isn't specific to general journals, but will help ensure that data entry is correct data and easy.</span></span>
+
+### <a name="main-account"></a><span data-ttu-id="78bab-130">Hovedkonto</span><span class="sxs-lookup"><span data-stu-id="78bab-130">Main account</span></span>
+
+<span data-ttu-id="78bab-131">Hovedkontoen oppsettet gir mange muligheter til økonomijournalen behandling:</span><span class="sxs-lookup"><span data-stu-id="78bab-131">The main account setup provides many options for general journal processing:</span></span>
+
+-   <span data-ttu-id="78bab-132">**DK-krav** – Bruk dette alternativet hvis en hovedkontoen er begrenset til debet- eller kredittransaksjoner.</span><span class="sxs-lookup"><span data-stu-id="78bab-132">**DC/CR requirement** – Use this option if a main account is limited to debit or credit transactions.</span></span> <span data-ttu-id="78bab-133">Oppsettet kontrolleres når en journal er godkjent eller postert.</span><span class="sxs-lookup"><span data-stu-id="78bab-133">The setup is verified when a journal is validated or posted.</span></span>
+
+-   <span data-ttu-id="78bab-134">**Standard motkonto**</span><span class="sxs-lookup"><span data-stu-id="78bab-134">**Default offset account**</span></span>
+-   <span data-ttu-id="78bab-135">**Suspendert** – Suspendere en hovedkonto for dataregistrering på tvers av alle firmaer eller for et bestemt firma / en juridisk enhet.</span><span class="sxs-lookup"><span data-stu-id="78bab-135">**Suspended** – Suspend a main account for data entry across all companies or for a specific company/legal entity.</span></span>
+-   <span data-ttu-id="78bab-136">**Ikke tillat manuell registrering** – Hindre at brukere manuelt angir en verdi for kontoen i journaler.</span><span class="sxs-lookup"><span data-stu-id="78bab-136">**Do not allow manual entry** – Prevent users from manually entering a value for the account in journals.</span></span>
+-   <span data-ttu-id="78bab-137">**Standard / valider valutakoder**</span><span class="sxs-lookup"><span data-stu-id="78bab-137">**Default/Validate currency**</span></span>
+-   <span data-ttu-id="78bab-138">**Overstyring for juridisk enhet** – Dette oppsettet er spesifikk for definert firma / juridisk enhet:</span><span class="sxs-lookup"><span data-stu-id="78bab-138">**Legal entity override** – This setup is specific to the defined company/legal entity:</span></span>
+    -   <span data-ttu-id="78bab-139">**Standard / Valider merverdiavgift**</span><span class="sxs-lookup"><span data-stu-id="78bab-139">**Default/Validate sales tax**</span></span>
+    -   <span data-ttu-id="78bab-140">**Standarddimensjon** – **Ikke fast** eller **Fast verdi**.</span><span class="sxs-lookup"><span data-stu-id="78bab-140">**Default dimension** – **Not fixed** or **Fixed value**.</span></span> <span data-ttu-id="78bab-141">**Fast verdi** vil bidra til å sørge for at alle posteringer for denne hovedkontoen alltid bruker en dimensjonsverdi som er definert som **Fast**.</span><span class="sxs-lookup"><span data-stu-id="78bab-141">**Fixed value** will help ensure that all postings for this main account always use any dimension value that is set up as **Fixed**.</span></span>
+-   <span data-ttu-id="78bab-142">**Posteringsvalidering**</span><span class="sxs-lookup"><span data-stu-id="78bab-142">**Posting validation**</span></span>
+    -   <span data-ttu-id="78bab-143">**Brukervalidering** – Dette alternativet styrer hvilke brukere som har tillatelse til å postere til en hovedkonto.</span><span class="sxs-lookup"><span data-stu-id="78bab-143">**User validation** – This option controls which users are allowed to post to a main account.</span></span>
+    -   <span data-ttu-id="78bab-144">**Validering av posteringstype** – Dette alternativet styrer hvilke posteringstyper som er tillatt for en hovedkonto.</span><span class="sxs-lookup"><span data-stu-id="78bab-144">**Posting type validation** – This option controls which posting types are allowed for a main account.</span></span>
+
+### <a name="accounting-structures-and-advanced-rules-structures"></a><span data-ttu-id="78bab-145">Regnskapsstrukturer og strukturer for avanserte regler</span><span class="sxs-lookup"><span data-stu-id="78bab-145">Accounting structures and advanced rules structures</span></span>
+
+<span data-ttu-id="78bab-146">Regnskapsstrukturer og strukturer for avanserte regler er svært viktige for å sørge for at dataene som er nødvendige for økonomisk rapportering og sporing av ytelse, blir registrert under behandling av økonomijournalen og eventuell dokumentasjon.</span><span class="sxs-lookup"><span data-stu-id="78bab-146">Accounting structures and advanced rules structures are extremely important for ensuring that the data that is required for financial reporting and performance tracking is captured during general journal processing and any documentation.</span></span> <span data-ttu-id="78bab-147">Regnskapsstrukturer og strukturer for avanserte regler lar deg tilpasse dataregistreringsopplevelsen.</span><span class="sxs-lookup"><span data-stu-id="78bab-147">Accounting structures and advanced rules structures let you tailor the data entry experience.</span></span> <span data-ttu-id="78bab-148">Du kan tillate dataregistrering bare for finansdimensjoner som er relevante i hvert tilfelle, og kan også sikre at obligatoriske og nøyaktige data alltid registreres.</span><span class="sxs-lookup"><span data-stu-id="78bab-148">You can allow data entry only for financial dimensions that are relevant in each situation, and can also enforce the requirement that required and accurate data always be captured.</span></span>
+
+<span data-ttu-id="78bab-149">Hvis du vil ha mer informasjon, kan du se følgende emner:</span><span class="sxs-lookup"><span data-stu-id="78bab-149">For more information, see the following topics:</span></span>
+- [<span data-ttu-id="78bab-150">Planlegge kontoplanen</span><span class="sxs-lookup"><span data-stu-id="78bab-150">Plan your chart of accounts</span></span>](plan-chart-of-accounts.md) 
+- [<span data-ttu-id="78bab-151">Opprette avanserte regler for journaler</span><span class="sxs-lookup"><span data-stu-id="78bab-151">Create advanced rules for journals</span></span>](tasks/create-advanced-rules-journals.md)
+- [<span data-ttu-id="78bab-152">Opprette en journaloppføring ved hjelp av en mal</span><span class="sxs-lookup"><span data-stu-id="78bab-152">Create a journal entry using template</span></span>](tasks/create-journal-entry-template.md)
+- [<span data-ttu-id="78bab-153">Opprette og validere journaler</span><span class="sxs-lookup"><span data-stu-id="78bab-153">Create and validate journals</span></span>](tasks/create-validate-journals.md)
+- [<span data-ttu-id="78bab-154">Postere periodiske journaler</span><span class="sxs-lookup"><span data-stu-id="78bab-154">Post periodic journals</span></span>](tasks/post-periodic-journals.md)
+- [<span data-ttu-id="78bab-155">Behandle finansfordelingsjournal</span><span class="sxs-lookup"><span data-stu-id="78bab-155">Process ledger allocation journal</span></span>](tasks/process-ledger-allocation-journal.md)
+
+## <a name="simulate-posting"></a><span data-ttu-id="78bab-156">Simuler postering</span><span class="sxs-lookup"><span data-stu-id="78bab-156">Simulate posting</span></span>
+<span data-ttu-id="78bab-157">Du finner **Simuler postering** på **Valider**-menyen for de fleste journaler.</span><span class="sxs-lookup"><span data-stu-id="78bab-157">You can find **Simulate posting** on the **Validate** menu for most journals.</span></span> <span data-ttu-id="78bab-158">Når du validerer en journal ved hjelp av **Valider**-funksjonen, tester systemet journalen for bestemte feiltilstander.</span><span class="sxs-lookup"><span data-stu-id="78bab-158">When you validate a journal using the **Validate** function, the system tests the journal for specific error conditions.</span></span> <span data-ttu-id="78bab-159">Hvis du bruker funksjonen **Simuler postering**, vil systemet kjøre alle de samme prosessene som kjøres under postering, uten faktisk å postere journalen.</span><span class="sxs-lookup"><span data-stu-id="78bab-159">If you use the **Simulate posting** function, the system runs all of the same processes that are run during posting without actually posting the journal.</span></span> <span data-ttu-id="78bab-160">Du kan deretter se gjennom posteringsmeldingene som vises, korrigere eventuelle feil du finner, og deretter åpne **Poster**-menyen for å postere journalen.</span><span class="sxs-lookup"><span data-stu-id="78bab-160">You can then review the posting messages that are displayed, fix any errors that you find, and then open the **Post** menu to post the journal.</span></span> 
+
+<span data-ttu-id="78bab-161">**Simuler postering** er ikke tilgjengelig for partiprosessering.</span><span class="sxs-lookup"><span data-stu-id="78bab-161">**Simulate posting** is not available for batch processing.</span></span> <span data-ttu-id="78bab-162">Det finnes imidlertid tilgjengelig kode for å simulere postering i parti, og utviklere kan utvide koden for å legge til denne funksjonaliteten.</span><span class="sxs-lookup"><span data-stu-id="78bab-162">However, there is code available to simulate posting in batch and developers can extend the code to add that functionality.</span></span>  
+
+## <a name="journal-unlock"></a><span data-ttu-id="78bab-163">Lås opp journal</span><span class="sxs-lookup"><span data-stu-id="78bab-163">Journal unlock</span></span>
+<span data-ttu-id="78bab-164">En knapp er tilgjengelig på Journal-siden for å låse opp en journal som har statusen "Sperret av systemet" satt til Ja.</span><span class="sxs-lookup"><span data-stu-id="78bab-164">A button is available on the journal page to unlock a journal that has a status of "locked by system" set to Yes.</span></span> <span data-ttu-id="78bab-165">Denne opplåsingen kan utføres av en systemadministrator som har analysert alle satsvise jobber og bekreftet at denne journalen ikke lenger behandles av en satsvis jobb.</span><span class="sxs-lookup"><span data-stu-id="78bab-165">This unlock can be performed by an administrator of the system who has analyzed any executing batch jobs and confirmed this journal is no longer actively being processed by a batch job.</span></span> <span data-ttu-id="78bab-166">Denne knappen aktiveres av funksjonen **Logg opp journal** på siden **Funksjonsbehandling**.</span><span class="sxs-lookup"><span data-stu-id="78bab-166">This button is enabled by the feature named **Journal Unlock button** on the **Feature management** page.</span></span> 
+
+## <a name="workflow-recall"></a><span data-ttu-id="78bab-167">Tilbakekall arbeidsflyt</span><span class="sxs-lookup"><span data-stu-id="78bab-167">Workflow recall</span></span> 
+<span data-ttu-id="78bab-168">Muligheten til å tilbakekalle en journal i en arbeidsflyt som har statusen uopprettelig, aktiveres ved hjelp av **Arbeidsflyt**-knappen i en journal og på siden **Arbeidsflytlogg**.</span><span class="sxs-lookup"><span data-stu-id="78bab-168">The ability to recall a journal in a workflow that has a status of "unrecoverable" is enabled by using the **Workflow** button on a journal, and on the **Workflow history** page.</span></span> <span data-ttu-id="78bab-169">Dette aktiveres av funksjonen kalt **Tilbakestille arbeidsflytstatusen for journaler** på siden **Funksjonsbehandling**.</span><span class="sxs-lookup"><span data-stu-id="78bab-169">This is enabled by the feature named **Resetting the workflow status for journals** on the **Feature management** page.</span></span>
+
+## <a name="delete-journal-lines"></a><span data-ttu-id="78bab-170">Slett journallinjer</span><span class="sxs-lookup"><span data-stu-id="78bab-170">Delete Journal Lines</span></span>
+<span data-ttu-id="78bab-171">Muligheten til å slette alle journallinjer raskt aktiveres i en journal under **Funksjoner** > **Slett journallinjer**.</span><span class="sxs-lookup"><span data-stu-id="78bab-171">The ability to delete all journal lines quickly is enabled in a journal under **Functions** > **Delete Journal Lines**.</span></span> <span data-ttu-id="78bab-172">Hvis du vil aktivere denne funksjonen, velger du **Slett ytelsesoptimaliseringer for journal** under **Funksjonsbehandling**.</span><span class="sxs-lookup"><span data-stu-id="78bab-172">To enable this feature, on the **Feature management**, select **Delete journal performance optimizations**.</span></span>
