@@ -10,19 +10,18 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 106233
 ms.assetid: 517e6a88-e7a1-4398-9971-b22fa83306ba
 ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 596a067611ac4477f4469dbbc370c971e0f7a35d
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 67f6d567c7e8d4cc6332c2d661abb04d1b28d2e9
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2181778"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4682777"
 ---
 # <a name="financial-insights"></a>Økonomisk innsikt
 
@@ -81,14 +80,14 @@ Du kan definere en gjentakende satsvis jobb for å oppdatere dataene i enhetene 
 ## <a name="security"></a>Sikkerhet
 For øyeblikket kan ikke dataene i innebygde Power BI-rapporter være begrenset til de juridiske enhetene som brukeren har tilgang til. Derfor kontrolleres innebygde Power BI-rapporter via plikter i sikkerhetsoppsettet. Pliktene som defineres, gir tilgang til data for alle juridiske enheter eller bare det aktive selskapet. Følgende tabell viser pliktene som finnes og rollene de er tilordnet til. Pliktene kan fjernes eller tilordnes til forskjellige roller, basert på organisasjonens behov.
 
-| Avgift                                    | Roller | Beskrivelse |
+| Plikt                                    | Roller | beskrivelse |
 |-----------------------------------------|-------|------------|
 | Vis arbeidsområde for CFO-oversikt             | Økonomidirektør | Denne plikten gir tilgang til arbeidsområdet for CFO-oversikt. Som standard brukes det aktive selskapet som et filter. Du kan imidlertid legge til alle juridiske enheter, uansett om brukeren har tilgang til andre juridiske enheter. |
 | Vis økonomisk innsikt for gjeldende firma | <ul><li>Regnskapsfører</li><li>Regnskapssjef</li><li>Regnskapsansvarlig</li><li>Revisor</li><li>Budsjettbehandling</li><li>Administrerende direktør</li><li>Økonomidirektør</li><li>Økonomikontrollør</li></ul> | Denne plikten gir tilgang til Økonomisk innsikt. Som standard brukes det aktive selskapet som et filter. Du kan ikke legge til andre juridiske enheter. |
 | Vis økonomisk innsikt på tvers av firma   | I Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 7.3, er ikke denne plikten tilordnet en rolle. I neste versjon vil denne plikten tilordnes til Økonomidirektør-rollen. | Denne plikten gir tilgang til menyelementet for arbeidsområdet CFO-oversikt. Som standard brukes det aktive selskapet som et filter. Du kan imidlertid legge til alle juridiske enheter, uansett om brukeren har tilgang til andre juridiske enheter. |
 
 
-## <a name="financial-reporting-vs-finanical-insights"></a>Finansrapportering kontra økonomisk innsikt
+## <a name="financial-reporting-vs-financial-insights"></a>Financial Reporting kontra Financial Insights
 Selv om **Økonomisk innsikt** inneholder regnskapsoppgjør, er det ikke en erstatning for Finansrapportering i programmet. Standard regnskapsoppgjør i **Økonomisk innsikt** er begrenset i omfang og omfatter ikke alle typer regnskapsoppgjør. Finansrapportering er fremdeles primærverktøyet som brukes til å utforme, opprette og generere lovbestemte regnskapsoppgjør.
 
 Sammenligningsdiagrammet nedenfor vil hjelpe deg med å skille mellom de to alternativene:
@@ -131,7 +130,7 @@ Brukere kan filtrere rapporten ved hjelp av **Filter**-ruten til venstre. Dette 
 - **Visuellnivåfiltre** – Disse filtrene brukes bare på den valgte visuelle effekten. Disse filtrene brukes på toppen av sidenivåfiltrene.
 - **Gjennomgangsfilter** – Dette filteret filtrerer fra en visuell kildeeffekt som brukes på den gjeldende visuelle effekten når du gjennomgår fra den visuelle kildeeffekten til den gjeldende visuelle effekten.
 
-![Filter](./media/filter.png)
+![Filtreringsalternativer](./media/filter.png)
 
 Hvis du vil fjerne en bestem filterverdi, velger du slettesymbolet ved siden av den. Ikke fjern et filter ved å velge X. Hvis du velger X, fjernes feltet du filtrerer på, som filteralternativ. Hvis du ved et uhell fjerner et felt fra filteret, lukk arbeidsområdet og åpne det deretter på nytt. Standardfilterinnstillingene blir brukt på nytt.
 
@@ -176,25 +175,25 @@ Ulike nivåer av drilling er tilgjengelig via Power BI. Hvert nivå har ulikt na
 
 I illustrasjonen nedenfor er **Råbalanse**-utdraget trukket sammen til det høyeste nivået i radhierarkiet, hovedkontotypen.
 
-![Råbalanse](./media/trial-balance.png)
+![Råbalansesaldo](./media/trial-balance.png)
 
 Hvis du vil vise det neste nivået i hierarkiet, hovedkontokategoriene, kan du sette **Drill på**-feltet til **Rader** og velge **Vis** (den tredje knappen etter Drill på-feltet). Du kan nå se alle hovedkontokategoriene. For øyeblikket lar ikke Power BI deg vise bare én rad eller kolonne, men samtidig kunne se alle de andre radene eller kolonnene.
 
-![Råbalanse](./media/trial-balance2.png)
+![Råbalanse-neddrilling for rader](./media/trial-balance2.png)
 
 Hvis du vil utvide hovedkontoene for alle radene, kan du igjen bruke **Vis**-knappen. Men for å drille ned til hovedkontoene for bare én rad, må du første velge **Drill ned**-knappen (den enkle pilen som peker nedover, til høyre i vinduet), og deretter velge raden for neddrilling. Illustrasjonen nedenfor viser resultatet når **Salg**-raden velges etter **Drill ned**-knappen er valgt.
 
-![Råbalanse](./media/trial-balance3.png)
+![Utvid-knapp for råbalanse](./media/trial-balance3.png)
 
 Når du har drillet ned på en enkelt rad, kreves det flere klikk for å gå tilbake til den fullstendige råbalansen. **Drill opp**-knappen (den første knappen etter **Drill på**-feltet) driller bare opp i forbindelse med **Salg**-kategorien, som vist i illustrasjonen nedenfor.
 
-![Råbalanse](./media/trial-balance4.png)
+![Drill opp-knapp for råbalanse](./media/trial-balance4.png)
 
 Du kan fortsette å bruke **Drill opp**-knappen for å gå tilbake til det høyeste nivået i summeringen for radene.
 
 Power BII har også en knapp som gjør det mulig å gå til neste nivå i hierarkiet (den andre knappen etter **Drill på**-feltet). Effekten av denne knappen er forskjellig fra effekten av **Vis**-knappen (den tredje knappen etter **Drill på**-feltet), som brukes til å utvide hierarkiet. Når du utvider hierarkiet, beholdes hierarkiet i rapporten. Hvis du for eksempel som vist tidligere utvider på hovedkontotypen, ser du fortsatt hovedkontotypen i rapporten. Men når du går til neste nivå i hierarkiet, viser ikke lenger rapporten overordnet i hierarkiet, som vist i illustrasjonen nedenfor.
 
-![Råbalanse](./media/trial-balance5.png)
+![Drill tilbake-knapp for råbalanse](./media/trial-balance5.png)
 
 Hvis du vil vise transaksjonsinformasjonen bak de summerte saldoene, kan du velge noen beløp for å drille tilbake til Financial and Operations.
 
@@ -245,6 +244,6 @@ Power BI har ikke et alternativ for å vise og skjule tomme rader. Hvis en rad i
 
 Informasjonen i følgende ressurser er ikke nødvendig for å aktivere de innebygde rapportene for **CFO-oversikt**- eller **Økonomisk innsikt**-arbeidsområdet i et produksjonsmiljø. I stedet er de nyttige for utviklerbokser og hvis du vil bygge inn dine egne Power BI-rapporter.
 
-- <https://blogs.msdn.microsoft.com/dynamicsaxbi/2017/07/29/accessing-analytical-workspaces-on-1box-environment/>
+- [Få tilgang til analytiske arbeidsområder og rapporter i 1-boks-miljø](https://blogs.msdn.microsoft.com/dynamicsaxbi/2017/07/29/accessing-analytical-workspaces-on-1box-environment/)
 
-- <https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/add-analytics-tab-workspaces>
+- [Legge til analyse i arbeidsområder ved hjelp av Power BI Embedded](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/add-analytics-tab-workspaces)

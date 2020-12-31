@@ -17,11 +17,11 @@ ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.openlocfilehash: 24210129f7595c6544234c20915f4003bf0e1eb8
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3984703"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4446246"
 ---
 # <a name="set-up-sales-tax-groups-and-item-sales-tax-groups"></a>Definere mva-grupper og mva-grupper for vare
 
@@ -29,24 +29,24 @@ ms.locfileid: "3984703"
 
 Denne oppgaveregistreringen leder deg gjennom oppsettet av merverdiavgift og mva-grupper for vare. Mva-grupper er grupper av mva-koder som er knyttet til kunder og leverandører. De er også knyttet til finanskontoer for transaksjoner som ikke er postert til en bestemt leverandør eller kunde.  Mva-grupper for vare er grupper av mva-koder som er knyttet til ressurser som produkter.  Merverdiavgiften som gjelder for en bestemt transaksjon, fastsettes av mva-kodene som er inkludert både i mva-gruppen og i mva-gruppen for vare for transaksjonen.  Merverdiavgift kan bare beregnes hvis en mva-gruppe og en mva-gruppe for vare er valgt for hver transaksjon det skal beregnes eller posteres merverdiavgift for.  
 
-1. Gå til **Navigasjonsrute > Moduler > Avgift > Indirekte avgifter > Merverdiavgift > Mva-grupper** .
-2. Klikk på **Ny** .
-3. Skriv inn en verdi i **Mva-gruppe** -feltet.
-4. Skriv inn en verdi i **Beskrivelse** -feltet.
-5. Aktiver/deaktiver utvidelsen av delen **Oppsett** .
-6. Klikk **Legg til** .
+1. Gå til **Navigasjonsrute > Moduler > Avgift > Indirekte avgifter > Merverdiavgift > Mva-grupper**.
+2. Klikk på **Ny**.
+3. Skriv inn en verdi i **Mva-gruppe**-feltet.
+4. Skriv inn en verdi i **Beskrivelse**-feltet.
+5. Aktiver/deaktiver utvidelsen av delen **Oppsett**.
+6. Klikk **Legg til**.
 7. Merk den valgte raden i listen.
-8. Klikk rullegardinknappen i **Mva-kode** -feltet for å åpne oppslaget.
+8. Klikk rullegardinknappen i **Mva-kode**-feltet for å åpne oppslaget.
 9. Klikk koblingen i den valgte raden i listen.
-10. Klikk **Lagre** .
+10. Klikk **Lagre**.
 11. Lukk siden.
-12. Gå til **Avgift > Indirekte avgifter > Merverdiavgift > Vare, mva-grupper** .
-13. Klikk på **Ny** .
-14. Skriv inn en verdi i feltet **Vare, mva-gruppe** .
-15. Skriv inn en verdi i **Beskrivelse** -feltet.
-16. Klikk **Legg til** .
+12. Gå til **Avgift > Indirekte avgifter > Merverdiavgift > Vare, mva-grupper**.
+13. Klikk på **Ny**.
+14. Skriv inn en verdi i feltet **Vare, mva-gruppe**.
+15. Skriv inn en verdi i **Beskrivelse**-feltet.
+16. Klikk **Legg til**.
 17. Merk den valgte raden i listen.
-18. Klikk rullegardinknappen i **Mva-kode** -feltet for å åpne oppslaget.
+18. Klikk rullegardinknappen i **Mva-kode**-feltet for å åpne oppslaget.
 19. Klikk koblingen i den valgte raden i listen.
-20. Klikk **Lagre** .
+20. Klikk **Lagre**.
 

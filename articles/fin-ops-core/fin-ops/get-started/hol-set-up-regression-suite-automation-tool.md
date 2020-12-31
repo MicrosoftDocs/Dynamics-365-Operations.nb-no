@@ -11,18 +11,17 @@ ms.technology: ''
 ROBOTS: NOINDEX, NOFOLLOW
 audience: Application User, Developer, IT Pro
 ms.reviewer: rhaertle
-ms.search.scope: Core, Operations
 ms.custom: 21761, NotInToc
 ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2019-05-30
 ms.dyn365.ops.version: AX 7.0.0, Operations
-ms.openlocfilehash: f5670f6a580249491ad16ae46470160545bb8f91
-ms.sourcegitcommit: 4fdee254649a751d46632fb4d0d48698e112fa72
+ms.openlocfilehash: 4757d506239e309dcbc3e181469b17e3286cc111
+ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "3248719"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "4695121"
 ---
 # <a name="set-up-and-install-regression-suite-automation-tool-tutorial"></a>Opplæring i installasjon og konfigurasjon av Regression Suite Automation Tool
 Dette emnet hjelper deg å konfigurere og komme i gang med RSAT og verktøyene som er knyttet til bruk av RSAT. 
@@ -353,7 +352,7 @@ Hvis du vil aktivere godkjenning, må du generere og installere et sertifikat p�
 2. Åpne sertifikatbehandling ved å skrive inn **certlm.msc** i dialogboksen **Kjør**, og bekreft at sertifikatet **D365 Automated testing certificate** er opprettet under **Personlig \> Sertifikater**.
 
     > [!NOTE]
-    > Pass på at du skriver inn **certlm.msc**msc, ikke **certmgr.msc**, fordi sertifikatene er lagret på den lokale datamaskinen.
+    > Pass på at du skriver inn **certlm.msc** msc, ikke **certmgr.msc**, fordi sertifikatene er lagret på den lokale datamaskinen.
 
     ![Sertifikatet D365 Automated testing certificate](./media/setup_rsa_tool_46.png)
 
@@ -387,7 +386,7 @@ Hvis du vil aktivere godkjenning, må du generere og installere et sertifikat p�
 
     ![AOSService i listen over områder](./media/setup_rsa_tool_49.png)
 
-3. Høyreklikk på **Utforsk** for å åpne mappen **\<Stasjon\>: \\AosService\\WebRoot**. Finn filen **wif.config**.
+3. Høyreklikk på **Utforsk** for å åpne mappen **\<Drive\>: \\AosService\\WebRoot**. Finn filen **wif.config**.
 
     ![Filen wif.config i WebRoot-mappen](./media/setup_rsa_tool_50.png)
 
@@ -563,7 +562,7 @@ I eldre versjoner av RSAT måtte du installere Selenium og nettleserdrivere. Du 
 
     ![Skrivebordsoppløsningen satt til 100 %](./media/setup_rsa_tool_68.png)
 
-6. Hvis nettleserdriverne ikke er installert på systemet, får du en advarsel om at denne operasjonen krever driveren for \<nettlesernavn\>. Deretter blir du spurt om du vil laste den ned og installere den automatisk nå. Velg **Ja**.
+6. Hvis nettleserdriverne ikke er installert på systemet, får du en advarsel om at denne operasjonen krever driveren for \<browser name\>. Deretter blir du spurt om du vil laste den ned og installere den automatisk nå. Velg **Ja**.
 
     ![Advarsel for Internet Explorer](./media/setup_rsa_tool_69.png)
 

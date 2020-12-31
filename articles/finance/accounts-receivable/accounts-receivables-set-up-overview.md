@@ -19,11 +19,11 @@ ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 1ec8ee7f8ba7493e5334c1a4106351c3661aa00a
-ms.sourcegitcommit: be7e4378c8122c6e7cfc4e7991efbdffee45e006
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "3426425"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4446369"
 ---
 # <a name="configure-accounts-receivable-and-credit-and-collections"></a>Konfigurere kunder, kreditt og innkrevinger
 
@@ -101,7 +101,7 @@ Tabellen nedenfor viser sidene som støtter konfigurasjon og vedlikehold av Kund
 |                                                      | Kundeårsakskoder                | Definer kundeårsakskoder.                                                                                                                                                                                                                                                    |
 |                                                      | Årsakskoder for kundeavskrivning      | Definer årsakskoder for kundeavskrivning som skal brukes for avskrivningstransaksjoner.                                                                                                                                                                                             |
 |                                                      | Skjemaoppsett                           | Definer skjemamerknadsparametere for tilbud, bekreftelser, plukklister, følgesedler, kundefakturaer, fritekstfakturaer og rentenotaer.                                                                                                                               |
-|                                                      | Interesser                             | Definer og administrer rentekoder.                                                                                                                                                                                                                                                 |
+|                                                      | Rente                             | Definer og administrer rentekoder.                                                                                                                                                                                                                                                 |
 |                                                      | Informasjon om manglende dekning.                     | Definer informasjon om manglende dekning for bankkontoen som skal brukes når en betaling er merket som transaksjon uten dekning på Innkrevinger-siden.                                                                                                                                              |
 |                                                      | Informasjon om selger              | Definer e-postadressen til selgere. Disse adressene vises på Innsamlinger-siden, og du kan bruke dem til å sende e-post til en selger fra denne siden.                                                                                                                |
 

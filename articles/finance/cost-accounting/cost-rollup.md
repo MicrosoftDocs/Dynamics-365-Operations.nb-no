@@ -20,11 +20,11 @@ ms.author: roschlom
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.openlocfilehash: b02bfd83cfc4f1585c9044ebca8b20413042124a
-ms.sourcegitcommit: d61c43b6bc04bb8786aa3c47932be0ccd84ebaeb
+ms.sourcegitcommit: b40d6ce45aeb07724fc41d1a41923970b007fbcf
 ms.translationtype: HT
 ms.contentlocale: nb-NO
 ms.lasthandoff: 10/14/2020
-ms.locfileid: "4006172"
+ms.locfileid: "4446560"
 ---
 # <a name="cost-rollup-policy-and-overhead-calculation"></a>Policy for opprullet kost og beregning av administrasjonskostnader 
 
@@ -51,7 +51,7 @@ La oss si at en organisasjon har følgende struktur med fire kostsentre.
 
 **Kostnadsobjektdimensjon**
 
-| Kostsentre | beskrivelse          |
+| Kostsentre | Beskrivelse          |
 |--------------|-----------|
 | CC001        | Personale        |
 | CC002        | Finans   |
@@ -60,7 +60,7 @@ La oss si at en organisasjon har følgende struktur med fire kostsentre.
 
 **Kostnadselementdimensjon**
 
-| Kostnadselementer | beskrivelse | Type    |
+| Kostnadselementer | Beskrivelse | Type    |
 |---------------|-------------|---------|
 | 1001          | Strøm | Primær |
 | 1 002          | Lønn    | Primær |
@@ -115,7 +115,7 @@ Etter at økonomimoduloppføringene er behandlet, ser kostnadsoppføringssaldoen
 
 **Statistisk dimensjon**
 
-| Statistiske elementer |    beskrivelse   |
+| Statistiske elementer |    Beskrivelse   |
 |----------------------|------------------|
 | SE-1                 | Personaletjenester      |
 | SE-2                 | Finanstjenester |
@@ -124,7 +124,7 @@ Kostnadsobjekt CC001 Personale bidrar med Personaletjenester til flere kostnadso
 
 Personaletjenester forbrukes av følgende distribusjon av størrelse.
 
-| Kostnadsobjekt | beskrivelse |   Personaletjenester |
+| Kostnadsobjekt | Beskrivelse |   Personaletjenester |
 |-------------|-------------|----|
 | CC002       | Finans     | 35 |
 | CC003       | Samling    | 55 |
@@ -134,14 +134,14 @@ Kostnadsobjekt CC002 Finans bidrar til flere kostnadsobjekter.
 
 Finanstjenester forbrukes av følgende distribusjon av størrelse.
 
-| Kostnadsobjekt |   beskrivelse    |  Finanstjenester   |
+| Kostnadsobjekt |   Beskrivelse    |  Finanstjenester   |
 |-------------|------------------|----|
 | CC003       | Samling         | 65 |
 | CC004       | Innpakning        | 35 |
 
 Kostnadsfordelingspolicyer kan defineres som følger.
 
-| Policynavn | beskrivelse     | Dimensjonsobjekt for kostnadselement | Statistisk dimensjon | Kostnadselementdimensjon |
+| Policynavn | Beskrivelse     | Dimensjonsobjekt for kostnadselement | Statistisk dimensjon | Kostnadselementdimensjon |
 |-------------|-----------------|---------------------------------|-----------------------|------------------------|
 | 2017        | Kostnadsavregninger | Organisasjon                    | Statistiske elementer  | Kostnadselementer          |
 
@@ -190,7 +190,7 @@ Opprett en **Policy for opprullet kost** der hvert kostsenter er tilordnet til e
 
 **Policyer for opprullet kost**
 
-| Policynavn | beskrivelse | Dimensjonsobjekt for kostnadselement | Dimensjonshierarki for kostnadselement |
+| Policynavn | Beskrivelse | Dimensjonsobjekt for kostnadselement | Dimensjonshierarki for kostnadselement |
 |-------------|-------------|---------------------------------|----------------------------------|
 | 2017        | Kostnadsflyt   | Organisasjon                    | Resultatregnskap          |
 
@@ -215,7 +215,7 @@ Systemet bruker nå **Policy for opprullet kost** når det oppretter **Journalop
 
 **Journaloppføringer for kostnadsobjektsaldo**
 
-| Regnskapsdato | Kostnadsobjekt | beskrivelse  | Kostnadselement | beskrivelse |  Beløp |
+| Regnskapsdato | Kostnadsobjekt | Beskrivelse  | Kostnadselement | Beskrivelse |  Beløp |
 |-----------------|-------------|--------------|----------|-----------|-----------|
 | 31.01.2017      | CC001       | Personale           | SC-CC001 | Personale        | 10.100,00 |
 | 31.01.2017      | CC002       | Finans      | SC-CC002 | Finans   | 17.735,00 |
@@ -223,7 +223,7 @@ Systemet bruker nå **Policy for opprullet kost** når det oppretter **Journalop
 | 31.01.2017      | CC004       | Innpakning    | SC-CC004 | Innpakning | 15.717,25 |
 
 > [!NOTE]
-> Journaloppføringene opprettes basert på reglene i **Policy for opprullet kost** , hvis det finnes en policy. Saldoen som vises, er saldoen for beregningen av indirekte kostnader.
+> Journaloppføringene opprettes basert på reglene i **Policy for opprullet kost**, hvis det finnes en policy. Saldoen som vises, er saldoen for beregningen av indirekte kostnader.
 
 Siden **Detaljer om journaloppføring for kostnadssaldo for kostnadsobjekt** som åpnes fra journaloppføringene, viser hvordan saldoen innhentes.
 
@@ -231,7 +231,7 @@ Siden **Detaljer om journaloppføring for kostnadssaldo for kostnadsobjekt** som
 
 **Detaljer om journaloppføring for kostnadssaldo for kostnadsobjekt**
 
-| Medlem av dimensjon for kostnadselement | beskrivelse |  Beløp   |
+| Medlem av dimensjon for kostnadselement | Beskrivelse |  Beløp   |
 |-------------------------------|-------------|-----------|
 | 1001                          | Strøm | 200 00    |
 | 1 002                          | Lønn    | 10.000,00 |
@@ -240,7 +240,7 @@ Siden **Detaljer om journaloppføring for kostnadssaldo for kostnadsobjekt** som
 
 **Kostnadsoppføringer generert av beregningen av indirekte kostnader**
 
-| Kostnadsobjekt | beskrivelse  | Kostnadselement   | beskrivelse  |        Beløp     |       Regnskapsdato     |
+| Kostnadsobjekt | Beskrivelse  | Kostnadselement   | Beskrivelse  |        Beløp     |       Regnskapsdato     |
 |-------------|--------------|----------|-----------------|-------------|------------|
 | CC001       | Personale           | SC-CC001 | Personale              | 10.100,00. \- | 31.01.2017 |
 | CC002       | Finans      | SC-CC001 | Personale              | 3.535,00    | 31.01.2017 |
@@ -274,7 +274,7 @@ Her er et eksempel på Power Pivot-rapportering i Excel.
 
 Du kan bruke **Policy for opprullet kost** og **Kostnadselementer av typen sekundær** til å la den primære kostnaden per kostnadsobjekt for intern rapportering være den primære kostnaden som gjenstår etter **Beregning av indirekte kostnader**.
 
-Hvis det samme eksemplet hadde blitt utført uten å opprette **Policy for opprullet kost** , hadde rapportresultatet blitt vist som nedenfor. Kostnaden flyter riktig, men sporbarheten og innsikten i hvordan kostnaden flyter mellom kostsentrene, går tapt.
+Hvis det samme eksemplet hadde blitt utført uten å opprette **Policy for opprullet kost**, hadde rapportresultatet blitt vist som nedenfor. Kostnaden flyter riktig, men sporbarheten og innsikten i hvordan kostnaden flyter mellom kostsentrene, går tapt.
 
 | **Resultatregnskap** | **Kostnadsobjekt** |   &nbsp;  |    &nbsp;     |  &nbsp;       |          **Total**  |
 |-----------------------------|-----------------|-----------|---------------|---------------|---------------|

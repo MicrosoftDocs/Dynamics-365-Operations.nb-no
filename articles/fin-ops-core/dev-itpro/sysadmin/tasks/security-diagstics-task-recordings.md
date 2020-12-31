@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: sericks
+ms.author: peakerbl
 ms.search.validFrom: ''
 ms.dyn365.ops.version: Version 10.0.9
-ms.openlocfilehash: 4aecda7e0d604b70dec58a4f5bb2992fe7e0a5e2
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.openlocfilehash: 88eb90b35f1a9754cc4daa01d8f40cdf712db4f8
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3982436"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4679796"
 ---
 # <a name="security-diagnostics-for-task-recordings"></a>Sikkerhetsdiagnostikk for oppgaveregistreringer
 
@@ -33,20 +32,20 @@ Dette emnet inneholder informasjon om hvordan du analyserer og administrerer kra
 
 ## <a name="manage-security-for-a-task-recording"></a>Behandle sikkerhet for et oppgaveopptak
 
-1. Gå til **Systemadministrasjon** > **Sikkerhet** > **Sikkerhetsdiagnostikk for oppgaveopptak** .
-2. Åpne oppgaveopptaket fra plasseringen. Velg **Åpne fra denne PC-en** eller **Åpne fra Lifecycle Services** , og velg deretter **Lukk** .
+1. Gå til **Systemadministrasjon** > **Sikkerhet** > **Sikkerhetsdiagnostikk for oppgaveopptak**.
+2. Åpne oppgaveopptaket fra plasseringen. Velg **Åpne fra denne PC-en** eller **Åpne fra Lifecycle Services**, og velg deretter **Lukk**.
 3. Dette vil åpne siden for **elementdetaljer for sikkerhetsmeny** som viser sikkerhetsobjektene som kreves for prosessen.
 
  > [!NOTE]
  > Menyelementene **Handling** og **Utdata** er ikke inkludert i listen.
 
-4. Velg en bruker i feltet **Bruker-ID** . Hvis brukeren ikke har tillatelser for noen menyelementer, vil feltet **Manglende tillatelser** oppdateres til **Ja** .
+4. Velg en bruker i feltet **Bruker-ID**. Hvis brukeren ikke har tillatelser for noen menyelementer, vil feltet **Manglende tillatelser** oppdateres til **Ja**.
   
   ![Side for elementdetaljer for sikkerhetsmeny](../media/Security-Menu-Item-Details.png)
 
 5. Velg **Legg til referanse** for å vise en liste over sikkerhetsobjektene, inkludert roller, plikter og rettigheter, som gir den manglende tillatelsen.
 6. Velg et sikkerhetsobjekt fra listen:
 
-    - Hvis **Rolle** er valgt, velger du **Legg til rolle for bruker** . Dette vil åpne siden **Tilordne brukere til roller** . Hvis du vil ha mer informasjon, kan du se siden [Tilordne brukere til sikkerhetsroller](assign-users-security-roles.md).
-    - Hvis **Plikt** er valgt, velger du **Legg til plikt i rollen** , velger rollene som plikten skal legges til, og velg deretter **OK** .
-    - Hvis **Rettighet** er valgt, velger du **Legg til rettighet i plikter** , velger rollene som plikten skal legges til, og velg deretter **OK** .
+    - Hvis **Rolle** er valgt, velger du **Legg til rolle for bruker**. Dette vil åpne siden **Tilordne brukere til roller**. Hvis du vil ha mer informasjon, kan du se siden [Tilordne brukere til sikkerhetsroller](assign-users-security-roles.md).
+    - Hvis **Plikt** er valgt, velger du **Legg til plikt i rollen**, velger rollene som plikten skal legges til, og velg deretter **OK**.
+    - Hvis **Rettighet** er valgt, velger du **Legg til rettighet i plikter**, velger rollene som plikten skal legges til, og velg deretter **OK**.

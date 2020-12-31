@@ -16,11 +16,11 @@ ms.search.region: Norway
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
 ms.openlocfilehash: 2c8524befbfd61e7780f2b83ef96ed05480d4656
-ms.sourcegitcommit: 34e543e807ac8790597f522fe3b4f0266cf4ee56
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "3161843"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4408300"
 ---
 # <a name="sales-tax-report-for-finland"></a>Mva-rapport for Finland
 

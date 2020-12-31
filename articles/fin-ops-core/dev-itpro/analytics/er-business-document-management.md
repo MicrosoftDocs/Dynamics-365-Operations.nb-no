@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ERBDWorkspace, ERBDParameters, ERSecurityAccessEditor
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-08-01
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 65874e5ca73c18c3df7b94b8abb6eb15491482bf
-ms.sourcegitcommit: 71ec2f48185b8104ca52ff70df52263ce5f87f26
+ms.openlocfilehash: 4b50a170bb9e584501fe780239228dc871ca7750
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "3893141"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4681310"
 ---
 # <a name="business-document-management-overview"></a>Oversikt over administrasjon av forretningsdokument
 
@@ -248,7 +247,7 @@ Bruk fremgangsmåten nedenfor til å redigere maler for fritekstfaktura i arbeid
 1. Logg på som en bruker med tilgang til siden Arbeidsområdet for administrasjon av forretningsdokument.
 2. Åpne arbeidsområdet for administrasjon av forretningsdokument.
 
-Når funksjonen **Office-lignende brukergrensesnitterfaring for administrasjon av forretningsdokument** er slått av i arbeidsområdet **Funksjonsbehandling**, viser hovedrutenettet i arbeidsområdet **Behandling av forretningsdokument** følgende maler:
+Når funksjonen **Office-lignende brukergrensesnitterfaring for administrasjon av forretningsdokument** er slått av i arbeidsområdet **Funksjonsbehandling**, viser hovedrutenettet i arbeidsområdet **Administrasjon av forretningsdokument** følgende maler:
 
 - Maler som eies av ER-konfigurasjonsleverandøren din (det vil si leverandøren som for øyeblikket er merket som aktiv i arbeidsområdet **Elektronisk rapportering**). Når du har valgt en av disse malene, kan du velge **Rediger mal** for å starte eller fortsette å redigere den.
 - Maler som eies av andre ER-konfigurasjonsleverandører. Når du har valgt en av disse malene, kan du velge **Nytt dokument** for å opprette en kopi av det som eies av ER-konfigurasjonsleverandøren din, og deretter begynne å redigere kopien.
@@ -257,7 +256,7 @@ Når funksjonen **Office-lignende brukergrensesnitterfaring for administrasjon a
 
 Fanen **Mal** viser innholdet i den valgte malen. Velg fanen **Detaljer** for å se gjennom detaljene for den valgte malen og detaljer om en ER-formatkonfigurasjon denne malen ligger i. Legg merke til at alle malene har statusen **Publisert** og ikke inneholder noen detaljer i **Endring**-kolonnen. Dette betyr at disse malene ikke redigeres for øyeblikket.
 
-Når funksjonen **Office-lignende brukergrensesnitterfaring for administrasjon av forretningsdokument** er slått på i arbeidsområdet **Funksjonsbehandling**, viser hovedrutenettet i arbeidsområdet **Behandling av forretningsdokument** maler som eies av ER-konfigurasjonsleverandøren din (det vil si leverandøren som for øyeblikket er merket som aktiv i arbeidsområdet **Elektronisk rapportering**). Når du har valgt en av disse malene, kan du velge **Rediger mal** for å starte eller fortsette å redigere den.
+Når funksjonen **Office-lignende brukergrensesnitterfaring for administrasjon av forretningsdokument** er slått på i arbeidsområdet **Funksjonsbehandling**, viser hovedrutenettet i arbeidsområdet **Administrasjon av forretningsdokument** maler som eies av ER-konfigurasjonsleverandøren din (det vil si leverandøren som for øyeblikket er merket som aktiv i arbeidsområdet **Elektronisk rapportering**). Når du har valgt en av disse malene, kan du velge **Rediger mal** for å starte eller fortsette å redigere den.
 
 Hvis du vil arbeide med maler som eies av andre ER-konfigurasjonsleverandører, velger du **Nytt dokument** for å opprette en kopi av malen som eies av ER-leverandøren din. Du kan deretter redigere kopien. For mer informasjon, se [Nytt dokumentbrukergrensesnitt i Forretningsdokumentbehandling](er-business-document-management-new-template-ui.md).
 

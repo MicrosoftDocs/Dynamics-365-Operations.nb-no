@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: FeatureManagementWorkspace
 audience: IT Pro, Application user
 ms.reviewer: sericks
-ms.search.scope: Operations, Core
 ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom:
 - month/year of release that feature was introduced in
 - in format yyyy-mm-dd
 ms.dyn365.ops.version: 10.0.2
-ms.openlocfilehash: 46095e4ec21aac7cbf98dc1265ea7c8de27148ab
-ms.sourcegitcommit: 49f3011b8a6d8cdd038e153d8cb3cf773be25ae4
+ms.openlocfilehash: 82c8172958f819735ea3f29fc331272f80b3a25a
+ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4015049"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "4692972"
 ---
 # <a name="feature-management-overview"></a>Oversikt over funksjonsbehandling
 
@@ -43,7 +42,7 @@ Funksjonslisten inneholder følgende informasjon:
 - **Funksjon lagt til** – Datoen da funksjonen ble lagt til i miljøet ditt. Denne datoen angis automatisk når du oppdaterer miljøet under de månedlige versjonssyklusene.
 - **Modul** – Modulen som påvirkes av den nye funksjonen.
 
-Når du velger en funksjon, vises mer informasjon i detaljruten til høyre for funksjonslisten. Øverst i ruten vil du se funksjonsnavnet, datoen da funksjonen ble lagt til, modulen som påvirkes av funksjonen, og en **Finn ut mer** -kobling. Velg denne koblingen for å vise dokumentasjonen for funksjonen. Hvis dokumentasjon ikke er tilgjengelig, vil du bli ført til en midlertidig side. Detaljruten inneholder også feltet **Kommentarer** der du kan legge til dine egne kommentarer om funksjonen.
+Når du velger en funksjon, vises mer informasjon i detaljruten til høyre for funksjonslisten. Øverst i ruten vil du se funksjonsnavnet, datoen da funksjonen ble lagt til, modulen som påvirkes av funksjonen, og en **Finn ut mer**-kobling. Velg denne koblingen for å vise dokumentasjonen for funksjonen. Hvis dokumentasjon ikke er tilgjengelig, vil du bli ført til en midlertidig side. Detaljruten inneholder også feltet **Kommentarer** der du kan legge til dine egne kommentarer om funksjonen.
 
 Arbeidsområdet **Funksjonsbehandling** har også flere kategorier, som hver viser en liste med funksjoner.
 
@@ -54,7 +53,7 @@ Arbeidsområdet **Funksjonsbehandling** har også flere kategorier, som hver vis
 
 ## <a name="turn-on-a-feature"></a>Aktivere en funksjon
 
-Hvis en funksjon ikke er aktivert, vises en **Aktiver nå** -knapp i detaljruten. Du kan bruke denne knappen til å aktivere funksjonen.
+Hvis en funksjon ikke er aktivert, vises en **Aktiver nå**-knapp i detaljruten. Du kan bruke denne knappen til å aktivere funksjonen.
 
 - Velg funksjonen du vil aktivere, og velg deretter **Aktiver nå** i detaljruten. Funksjonen er slått på.
 
@@ -64,35 +63,35 @@ Noen funksjoner viser en melding som inneholder tilleggsinformasjon, før du sl�
 
 Noen funksjoner vil vise en melding om at funksjonen ikke kan aktiveres før en handling er utført. Disse funksjonene indikeres av et rødt X-symbol. Du må utføre handlingene som er beskrevet i beskrivelsen, før funksjonen aktiveres. Hvis du for eksempel ikke kan bruke en funksjon før en konfigurasjonsnøkkel er deaktivert, må du deaktivere konfigurasjonsnøkkelen først og deretter gå tilbake til funksjonsbehandling for å aktivere funksjonen.
 
-Når en funksjon er aktivert, vises en melding under **Finn ut mer** -koblingen i detaljruten. Denne meldingen angir enten at funksjonen ble aktivert eller den fremtidige datoen når funksjonen er planlagt å bli aktivert. Den vises hver gang du velger funksjonen i funksjonslisten.
+Når en funksjon er aktivert, vises en melding under **Finn ut mer**-koblingen i detaljruten. Denne meldingen angir enten at funksjonen ble aktivert eller den fremtidige datoen når funksjonen er planlagt å bli aktivert. Den vises hver gang du velger funksjonen i funksjonslisten.
 
 Funksjoner som er planlagt å aktiveres i fremtiden, vises i kategorien **Planlagt**. En partiprosess slår den på ved midnatt på den angitte datoen basert på tidssonen som representeres av systemdatoen.
 
 ## <a name="reschedule-a-feature"></a>Planlegge en funksjon på nytt
 
-Hvis en funksjon er planlagt å aktiveres i fremtiden, vises en **Planlegg** -knapp i detaljruten. Du kan bruke denne knappen til å endre verdien for **aktiveringsdatoen** til en annen dato.
+Hvis en funksjon er planlagt å aktiveres i fremtiden, vises en **Planlegg**-knapp i detaljruten. Du kan bruke denne knappen til å endre verdien for **aktiveringsdatoen** til en annen dato.
 
 1. Velg den planlagte funksjonen for å planlegge på nytt, og velg deretter **Planlegg** i detaljruten.
-2. I **Aktiveringsdato** -feltet i dialogboksen som vises, angir du den nye datoen funksjonen skal aktiveres.
+2. I **Aktiveringsdato**-feltet i dialogboksen som vises, angir du den nye datoen funksjonen skal aktiveres.
 3. Velg **Aktiver** for å planlegge funksjonen på nytt, eller **Deaktiver** for å avbryte planen.
 
 ## <a name="turn-off-a-feature"></a>Deaktivere en funksjon
 
-Hvis en funksjon allerede er aktivert, vises en **Deaktiver** -knapp i detaljruten. Du kan bruke denne knappen til å deaktivere funksjonen. Knappen **Deaktiver** er ikke tilgjengelig hvis funksjonen ikke kan deaktiveres etter at den er aktivert.
+Hvis en funksjon allerede er aktivert, vises en **Deaktiver**-knapp i detaljruten. Du kan bruke denne knappen til å deaktivere funksjonen. Knappen **Deaktiver** er ikke tilgjengelig hvis funksjonen ikke kan deaktiveres etter at den er aktivert.
 
 - Velg funksjonen for å deaktivere, og velg deretter **Deaktiver** i detaljruten. Funksjonen deaktiveres, og merket i feltet **Aktiveringsdato** fjernes.
 
-Når en funksjon deaktiveres, vises en melding under **Finn ut mer** -koblingen i detaljruten. Denne meldingen angir at funksjonen ikke er aktivert ennå. Den vises hver gang du velger funksjonen i funksjonslisten. Funksjoner som ikke er aktivert, vises i fanen **Ikke aktivert**.
+Når en funksjon deaktiveres, vises en melding under **Finn ut mer**-koblingen i detaljruten. Denne meldingen angir at funksjonen ikke er aktivert ennå. Den vises hver gang du velger funksjonen i funksjonslisten. Funksjoner som ikke er aktivert, vises i fanen **Ikke aktivert**.
 
 ## <a name="features-that-must-be-turned-on"></a>Funksjoner som må aktiveres
 
-Noen ganger forekommer en kritisk funksjon som må aktiveres automatisk når du gjør en oppdatering. Disse funksjonene aktiveres automatisk på datoen som er angitt i feltet **Aktiver dato**. For disse funksjonene vises en melding under **Finn ut mer** -koblingen i detaljruten. Denne meldingen angir enten at funksjonen ble aktivert eller den fremtidige datoen når funksjonen blir aktivert. Den vises hver gang du velger funksjonen i funksjonslisten.
+Noen ganger forekommer en kritisk funksjon som må aktiveres automatisk når du gjør en oppdatering. Disse funksjonene aktiveres automatisk på datoen som er angitt i feltet **Aktiver dato**. For disse funksjonene vises en melding under **Finn ut mer**-koblingen i detaljruten. Denne meldingen angir enten at funksjonen ble aktivert eller den fremtidige datoen når funksjonen blir aktivert. Den vises hver gang du velger funksjonen i funksjonslisten.
 
 ## <a name="enable-all-features"></a>Aktiver alle funksjoner
 
-Som standard deaktiveres alle funksjoner som legges til i miljøet. Du kan aktivere alle funksjonene ved å velge **Aktiver alle** -knappen. 
+Som standard deaktiveres alle funksjoner som legges til i miljøet. Du kan aktivere alle funksjonene ved å velge **Aktiver alle**-knappen. 
 
-Når du velger **Aktiver alle** , vises et alternativ der du må oppgi følgende informasjon:
+Når du velger **Aktiver alle**, vises et alternativ der du må oppgi følgende informasjon:
 - En liste over alle funksjoner som krever bekreftelse før de kan aktiveres. Hvis du vil aktivere funksjonene i listen, velger du **Ja** for knappen **Aktiver funksjoner som krever bekreftelse**.
 - En liste over alle funksjoner som ikke kan aktiveres, vises. Disse funksjonene vil ikke bli aktivert.
 
@@ -106,36 +105,36 @@ Som standard deaktiveres alle funksjoner som legges til i miljøet, med mindre d
 - Velg **Ikke aktiver nye funksjoner automatisk** for å slå av alle nye funksjoner når de legges til i ditt miljø.
 
 
-Når du aktiverer alle funksjonene automatisk, vil dette aktivere alle funksjonene som vil bli aktivert når du klikker på **Aktiver alle** -knappen. Det vil ikke aktivere funksjonene som krever bekreftelse eller funksjoner som ikke kan aktiveres før en handling er utført.
+Når du aktiverer alle funksjonene automatisk, vil dette aktivere alle funksjonene som vil bli aktivert når du klikker på **Aktiver alle**-knappen. Det vil ikke aktivere funksjonene som krever bekreftelse eller funksjoner som ikke kan aktiveres før en handling er utført.
 
 ## <a name="check-for-updates"></a>Se etter oppdateringer
 
-Funksjoner legges til i miljøet etter hver oppdatering. Imidlertid du kan manuelt sjekke for oppdateringer ved å klikke på **Se etter oppdateringer** -knappen. Alle funksjoner som ble lagt til systemet etter oppdateringen vil bli lagt til i listen over funksjoner. For eksempel, hvis en ny funksjon er aktivert etter en utgivelse, så kan du se etter oppdateringer og funksjonen vil bli lagt til i listen.
+Funksjoner legges til i miljøet etter hver oppdatering. Imidlertid du kan manuelt sjekke for oppdateringer ved å klikke på **Se etter oppdateringer**-knappen. Alle funksjoner som ble lagt til systemet etter oppdateringen vil bli lagt til i listen over funksjoner. For eksempel, hvis en ny funksjon er aktivert etter en utgivelse, så kan du se etter oppdateringer og funksjonen vil bli lagt til i listen.
 
 ## <a name="assigning-roles"></a>Tilordne roller
 
-Arbeidsområdet **Funksjonsbehandling** kan åpnes av systemansvarlige og også av brukere som er tilordnet funksjonsleder- eller funksjonsvisningsrollen. Disse to rollene ble opprettet for å støtte funksjonsbehandlingsopplevelsen. Brukere med funksjonslederrolle kan aktivere og deaktivere hvilken som helst funksjon. De kan også oppdatere **Kommentarer** -field for funksjonen. Brukere med funksjonsvisningsrolle kan bare vise **Funksjonsbehandling** -arbeidsområdet. De kan ikke aktivere eller deaktivere funksjoner.
+Arbeidsområdet **Funksjonsbehandling** kan åpnes av systemansvarlige og også av brukere som er tilordnet funksjonsleder- eller funksjonsvisningsrollen. Disse to rollene ble opprettet for å støtte funksjonsbehandlingsopplevelsen. Brukere med funksjonslederrolle kan aktivere og deaktivere hvilken som helst funksjon. De kan også oppdatere **Kommentarer**-field for funksjonen. Brukere med funksjonsvisningsrolle kan bare vise **Funksjonsbehandling**-arbeidsområdet. De kan ikke aktivere eller deaktivere funksjoner.
 
 Funksjonslederrollen og funksjonsvisningsrollen overstyrer ikke den eksisterende sikkerheten som en bruker har. De kontrollerer bare om brukeren kan aktivere og deaktivere funksjoner. De har ikke tilgang til selve funksjonene.
 
 ## <a name="features-that-use-configuration-keys"></a>Funksjoner som bruker konfigurasjonsnøkler
 
-Hvis en funksjon bruker en konfigurasjonsnøkkel, men konfigurasjonsnøkkelen ikke er slått på, viser ikke arbeidsområdet **Funksjonsbehandling** -funksjonen i listen over tilgjengelige funksjoner. Når du har aktivert konfigurasjonsnøkkelen, må du oppdatere funksjonslisten ved hjelp av menyelementet **Se etter oppdatering**. Funksjonen vises deretter i funksjonslisten.
+Hvis en funksjon bruker en konfigurasjonsnøkkel, men konfigurasjonsnøkkelen ikke er slått på, viser ikke arbeidsområdet **Funksjonsbehandling**-funksjonen i listen over tilgjengelige funksjoner. Når du har aktivert konfigurasjonsnøkkelen, må du oppdatere funksjonslisten ved hjelp av menyelementet **Se etter oppdatering**. Funksjonen vises deretter i funksjonslisten.
 
 Hvis du deaktiverer konfigurasjonsnøkkelen, fjernes ikke funksjonen fra funksjonslisten.
 
 ## <a name="data-entities"></a>Dataenheter
 
-En dataenhet som kalles **Funksjonsbehandling** , lar deg eksportere innstillingene for funksjonsbehandling fra ett miljø og deretter importere dem til et annet miljø. Denne enheten oppdaterer bare eksisterende funksjoner. Forretningslogikken i enheten bidrar også til å garantere at de samme reglene som brukes i arbeidsområdet **Funksjonsbehandling** , brukes når importen er fullført. Du kan for eksempel ikke overstyre en obligatorisk funksjonsinnstilling ved å fjerne datoen under importen.
+En dataenhet som kalles **Funksjonsbehandling**, lar deg eksportere innstillingene for funksjonsbehandling fra ett miljø og deretter importere dem til et annet miljø. Denne enheten oppdaterer bare eksisterende funksjoner. Forretningslogikken i enheten bidrar også til å garantere at de samme reglene som brukes i arbeidsområdet **Funksjonsbehandling**, brukes når importen er fullført. Du kan for eksempel ikke overstyre en obligatorisk funksjonsinnstilling ved å fjerne datoen under importen.
 
 Følgende eksempler beskriver hva som skjer når du bruker **Funksjonsbehandling** til å importere data.
 
-- Hvis du endrer verdien i feltet **Aktivert** til **Ja** , aktiveres funksjonen, og feltet **Aktiveringsdato** settes til gjeldende dato.
+- Hvis du endrer verdien i feltet **Aktivert** til **Ja**, aktiveres funksjonen, og feltet **Aktiveringsdato** settes til gjeldende dato.
 - Hvis du endrer verdien i feltet **Aktivert** til **Nei** eller lar feltet **Aktiveringsdato** stå tomt, aktiveres funksjonen, og merket i feltet **Aktiveringsdato** fjernes. Du kan ikke deaktivere en obligatorisk funksjon eller en funksjon som ikke kan deaktiveres når den er slått på.
 - Hvis du endrer verdien i feltet **Aktiveringsdato** til en fremtidig dato, planlegges funksjonen for denne datoen.
 - Hvis du endrer verdien i feltet **Aktivert** til **Ja** og endrer verdien i feltet **Aktiveringsdato** til en fremtidig dato, planlegges funksjonen til denne datoen. 
-- Hvis du endrer verdien i feltet **Aktivert** til **Nei** , men du også endrer verdien i feltet **Aktiveringsdato** til en fremtidig dato, planlegges funksjonen til denne datoen.
-- Hvis en funksjon aktiveres og du legger til et **Aktiveringsdato** -felt som er satt til en fremtidig dato, forblir funksjonen aktivert. Hvis du vil planlegge funksjonen på nytt, må du endre feltet **Aktivert** til **Nei**.
+- Hvis du endrer verdien i feltet **Aktivert** til **Nei**, men du også endrer verdien i feltet **Aktiveringsdato** til en fremtidig dato, planlegges funksjonen til denne datoen.
+- Hvis en funksjon aktiveres og du legger til et **Aktiveringsdato**-felt som er satt til en fremtidig dato, forblir funksjonen aktivert. Hvis du vil planlegge funksjonen på nytt, må du endre feltet **Aktivert** til **Nei**.
 
 ## <a name="feature-management-and-flighting"></a>Funksjonsbehandling og testversjonering
 
@@ -181,17 +180,17 @@ Testversjonering av funksjoner er på/av-brytere i sanntid som Microsoft styrer.
 Ja, hvis en funksjon påvirker virkemåten til et miljø som ikke har en funksjonell innvirkning, kan de aktiveres som standard.
 
 ### <a name="how-can-feature-enablement-be-checked-in-code"></a>Hvordan kan funksjonsaktivering kontrolleres i kode?
-Bruk **isFeatureEnabled** -metoden i **FeatureStateProvider** -klassen, og send den som en forekomst av funksjonsklassen. Eksempel: 
+Bruk **isFeatureEnabled**-metoden i **FeatureStateProvider**-klassen, og send den som en forekomst av funksjonsklassen. Eksempel: 
 
 ```xpp
 if (FeatureStateProvider::isFeatureEnabled(BatchContentionPreventionFeature::instance()))
 ```
 
 ### <a name="how-can-feature-enablement-be-checked-in-metadata"></a>Hvordan kan funksjonsaktivering kontrolleres i metadata?
-**FeatureClass** -egenskapen kan brukes til å angi at noen metadata er knyttet til en funksjon. Klassenavnet som brukes for funksjonen bør brukes, for eksempel **BatchContentionPreventionFeature**. Disse metadataene er bare synlig i den funksjonen. **FeatureClass** -egenskapen er tilgjengelig på menyer, menyelementer, opplistingsverdier og tabell-/visningsfelt.
+**FeatureClass**-egenskapen kan brukes til å angi at noen metadata er knyttet til en funksjon. Klassenavnet som brukes for funksjonen bør brukes, for eksempel **BatchContentionPreventionFeature**. Disse metadataene er bare synlig i den funksjonen. **FeatureClass**-egenskapen er tilgjengelig på menyer, menyelementer, opplistingsverdier og tabell-/visningsfelt.
 
 ### <a name="what-is-a-feature-class"></a>Hva er en funksjonsklasse?
-Funksjoner i Funksjonsbehandling er definert som *funksjonsklasser*. En funksjonsklasse **implementerer IFeatureMetadata** og bruker funksjonsklasseattributtet til å identifisere seg overfor Funksjonsbehandling-arbeidsområdet. Det er flere eksempler på tilgjengelige funksjonsklasser som kan kontrolleres for aktivering i kode ved hjelp av **FeatureStateProvider** -API og i metadata som bruker **FeatureClass** -egenskapen. Eksempel: 
+Funksjoner i Funksjonsbehandling er definert som *funksjonsklasser*. En funksjonsklasse **implementerer IFeatureMetadata** og bruker funksjonsklasseattributtet til å identifisere seg overfor Funksjonsbehandling-arbeidsområdet. Det er flere eksempler på tilgjengelige funksjonsklasser som kan kontrolleres for aktivering i kode ved hjelp av **FeatureStateProvider**-API og i metadata som bruker **FeatureClass**-egenskapen. Eksempel: 
 
 ```xpp
 [ExportAttribute(identifierStr(Microsoft.Dynamics.ApplicationPlatform.FeatureExposure.IFeatureMetadata))]

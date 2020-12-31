@@ -1,7 +1,7 @@
 ---
 title: Postere anleggsmiddeltransaksjoner til posteringslag
 description: Denne artikkelen gir en oversikt over posteringslag for anleggsmiddeltransaksjoner.
-author: ShylaThompson
+author: moaamer
 manager: AnnBe
 ms.date: 04/25/2017
 ms.topic: article
@@ -15,15 +15,15 @@ ms.search.scope: Core, Operations
 ms.custom: 3001
 ms.assetid: 7dabde57-0843-47c3-85ef-f36b6f472e30
 ms.search.region: Global
-ms.author: saraschi
+ms.author: moaamer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bc8c4f4f41ed39447ae441dd8e01cfcf80c939b5
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: a80e4d1a081b5bd8c58238b0f154f8fbdc660ccb
+ms.sourcegitcommit: f80819c67c0a7475315fc68ce1cb568831e2c0e7
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2770718"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "4493678"
 ---
 # <a name="post-fixed-asset-transactions-to-posting-layers"></a>Postere anleggsmiddeltransaksjoner til posteringslag
 
@@ -39,8 +39,11 @@ Anleggsmiddeljournaler defineres ved hjelp av  Journalnavn-siden under Økonomim
 
 Du kan angi finanskontoer for anleggsmiddeltransaksjoner på siden Posteringsprofiler for anleggsmidler. For hver posteringsprofil må du velge den relevante transaksjonstypen og tablået, og deretter angi finanskontoene. Definer posteringsprofilposten for hvert tablå som skal posteres til økonomimodulen.
 
+Anleggsmidlet kan angis i dokumenter som bare støtter **Gjeldende** posteringslag, for eksempel **Bestilling**, **Ventende leverandørfakturaer**, **Salgsordre** eller **Fritekstfaktura**. Når du velger en anleggsmiddel-ID i ett av disse dokumentene, blir aktivatablået filtrert til tablået med **Gjeldende** posteringslag, og fylles ut automatisk under postering når systemet validerer at anleggsmiddelposteringslaget er **Gjeldende**. Hvis denne valideringen ikke kan fullføres, stoppes posteringsprosessen. 
+
 > [!NOTE] 
-> Ved å bruke avledede tablåer, kan du postere transaksjoner til forskjellige posteringslag samtidig. Du oppretter transaksjonene for det primære tablået i en journal der posteringslaget samsvarer med posteringslaget for tablået. Under posteringen posteres de avledede tablåtransaksjonene til de respektive posteringslagene.
+> Ved å bruke avledede tablåer, kan du postere transaksjoner til forskjellige posteringslag samtidig. Transaksjonene for det primære tablået opprettes i en journal eller et kildedokument der posteringslaget samsvarer med posteringslaget for tablået. Under posteringen posteres de avledede tablåtransaksjonene til de respektive posteringslagene. 
+
 
 Hvis du vil ha mer informasjon, kan du se [Avledede tablåer](derived-books.md) og [Postere med avledede tablåer](post-derived-value-models.md).
 

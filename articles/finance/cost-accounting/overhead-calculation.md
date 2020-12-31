@@ -20,11 +20,11 @@ ms.author: roschlom
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
 ms.openlocfilehash: 923e6e38a664e17ec3349d839c4b77ec903c5dc2
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3976481"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4446506"
 ---
 # <a name="overhead-calculation"></a>Beregning av indirekte kostnader
 
@@ -80,7 +80,7 @@ I finansbokføring registreres noen kostnader, for eksempel strøm, som et engan
 
 ### <a name="step-1-process-the-cost-behavior-calculation"></a>Trinn 1: Behandle beregning av kostnadsatferd
 
-Når kostnadsoppføringer importeres fra kildedataene, mottar de som standard klassifiseringen **Uklassifisert** for kostnadsatferd i kostnadsregnskap. Ved å bruke policyregler for kostnadsatferd, kan du klassifisere kostnadsoppføringer som **Faste kostnader** eller **Variable kostnader** .
+Når kostnadsoppføringer importeres fra kildedataene, mottar de som standard klassifiseringen **Uklassifisert** for kostnadsatferd i kostnadsregnskap. Ved å bruke policyregler for kostnadsatferd, kan du klassifisere kostnadsoppføringer som **Faste kostnader** eller **Variable kostnader**.
 
 #### <a name="define-the-cost-behavior-rule"></a>Definere regelen for kostnadsatferd
 

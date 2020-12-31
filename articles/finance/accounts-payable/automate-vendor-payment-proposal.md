@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2020-04-08
 ms.dyn365.ops.version: 10.0.11
-ms.openlocfilehash: a1e3305bff99fa39240176ac9fc7aaee84b98e6c
-ms.sourcegitcommit: be51e892003778e71b67fb409a8e16965c89b5ac
+ms.openlocfilehash: 2b4e6b42326ecbd07efe006afb23931849f5cf58
+ms.sourcegitcommit: e544c51a68ad5daf748c0e877bdbde094ad40bd2
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "3618417"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "4446617"
 ---
 # <a name="automate-vendor-payment-proposals"></a>Automatisering av betalingsforslag for leverandører
 
@@ -102,7 +102,7 @@ Når automatiseringsserien for leverandørbetalingsforslag er opprettet, vises f
 
 [![Ukesvisning for prosessautomatisering i Leverandørbetalinger-arbeidsområdet](./media/vendor-payment-proposal-1.png)](./media/vendor-payment-proposal-1.png)
 
-Ukesvisningen for prosessautomatisering i **Leverandørbetalinger**-arbeidsområdet viser bare automatiseringer av leverandørbetalingsforslag. Den viser alle forekomster av betalinger for den gjeldende uken, for alle juridiske enheter som den påloggede brukeren har sikkerhetstillatelser for. Hvis for eksempel AP-betalingsassistenten er ansvarlig for betalinger i USMF- og USSI-firmaene, vil vedkommende se forekomstene av automatisering av leverandørbetalingsforslag for disse to firmaene, men ikke for andre firmaer.
+Ukesvisningen for prosessautomatisering i **Leverandørbetalinger**-arbeidsområdet viser bare automatiseringer av leverandørbetalingsforslag. Den viser alle forekomster av betalinger for den gjeldende uken, for alle juridiske enheter som den påloggede brukeren har sikkerhetstillatelser for. Hvis for eksempel AP-betalingsassistenten er ansvarlig for betalinger i USMF- og USSI-firmaene, ser vedkommende forekomstene av automatisering av leverandørbetalingsforslag for disse to firmaene, men ikke for andre firmaer.
 
 [![Ukesvisning for prosessautomatisering av USMF- og USSI-firmaene](./media/vendor-payment-proposal-2.png)](./media/vendor-payment-proposal-2.png)
 
@@ -128,7 +128,7 @@ Når en betaling er slettet, åpnes fakturaene for betaling igjen. Du kan derett
 
 ## <a name="edit-a-vendor-payment-proposal-automation"></a>Rediger en automatisering av betalingsforslag for leverandør
 
-Ved hjelp av rammeverket for prosessautomatisering kan du redigere betalingen, seriene og forekomstene som er opprettet for betalingsforslaget. Serien kan redigeres enten fra siden for **Prosessautomatisering** eller den ukentlige visningen for prosessautomatisering. Hvis AP-administratoren for eksempel bestemmer seg for å generere alle betalinger til innenlandske leverandører på onsdag i stedet for mandag, kan han eller hun finne en forekomst i den ukentlige visningen, og velge **Vis/Rediger – Serier**. Hvis du redigerer en serie, blir du bedt om å angi om endringen skal gjøres i alle eksisterende forekomster, eller bare i nye forekomster. Historiske forekomster som allerede har statusen **Fullført**, eller som ble avsluttet i en **Feil**-status, endres ikke.
+Ved hjelp av rammeverket for prosessautomatisering kan du redigere betalingen, seriene og forekomstene som er opprettet for betalingsforslaget. Serien kan redigeres enten fra siden for **Prosessautomatisering** eller den ukentlige visningen for prosessautomatisering. Hvis AP-administratoren for eksempel bestemmer seg for å generere alle betalinger til innenlandske leverandører på onsdag i stedet for mandag, kan vedkommende finne en forekomst i den ukentlige visningen, og velge **Vis/Rediger – Serier**. Hvis du redigerer en serie, blir du bedt om å angi om endringen skal gjøres i alle eksisterende forekomster, eller bare i nye forekomster. Historiske forekomster som allerede har statusen **Fullført**, eller som ble avsluttet i en **Feil**-status, endres ikke.
 
 Du kan også legge til en ny forekomst eller endre en eksisterende forekomst. Eksempel: Den neste betalingsforslagsforekomsten er planlagt for kjøring onsdag 1. januar, men denne datoen er en rød dag. Du kan endre forekomsten enten fra ukesvisningen for prosessautomatisering eller fra siden for **Prosessautomatisering**. En side åpnes som viser plandetaljene og kriteriene for betalingsforslaget. Her kan du redigere planlagt klokkeslett og dato. Du kan også redigere kriteriene for betalingsforslaget hvis det kreves endringer. Hvis du for eksempel endrer den planlagte datoen for betalingsforekomsten fra 1. januar til 2. januar, vil du kanskje også endre de tilsvarende datoene for "til"-datoen.
 

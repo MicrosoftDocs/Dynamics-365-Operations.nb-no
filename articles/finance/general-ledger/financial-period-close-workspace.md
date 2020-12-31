@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d647dc41eb18d25101e66d3030327fc55b55a4d5
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 6f96da7f7f5374fb34e317c416238a48c3fe7d05
+ms.sourcegitcommit: e544c51a68ad5daf748c0e877bdbde094ad40bd2
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2250334"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "4446621"
 ---
 # <a name="financial-period-close-workspace"></a>Arbeidsområde for regnskapsperiodeavslutning
 
@@ -68,7 +68,7 @@ Før du kan bruke arbeidsområdet **Regnskapsperiodeavslutning**, må du konfigu
 
 I kategorien **Ressurser** definerer du personene som er involvert i avslutningsprosessene. Alle ansatte som skal være ansvarlige for en avslutningsoppgave, må først tilordnes her. Du må også angi den ansattes visning av arbeidsområdet. Følgende alternativer er tilgjengelige:
 
--   **Bare tilordnede oppgaver** – Brukeren ser bare oppgavene som er tilordnet ham eller henne.
+-   **Bare tilordnede oppgaver** – Brukeren ser bare oppgavene som er tilordnet vedkommende.
 -   **Alle oppgaver og status** – Brukeren ser alle avslutningsoppgaver og statusen for hele prosessen.
 
 Brukere som har tillatelse til å vise bare de tildelte oppgavene kan ikke legge til oppgaver i oppgavelisten, redigere oppgaver eller fjerne oppgaver fra oppgavelisten.

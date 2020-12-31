@@ -19,11 +19,11 @@ ms.author: ryansand
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.openlocfilehash: 471c719a8e6de0ebe6fcdad0ae222453db841c87
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2772105"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4446522"
 ---
 # <a name="budget-planning-templates-for-excel"></a>Budsjettplanleggingsmaler for Excel
 
@@ -67,7 +67,7 @@ I kategorien **Utforming** klikker du **Legg til felt** og velger **BudgetPlanHe
 
 Pek markøren mot ønsket plassering i Excel-filen. Klikk **Legg til etikett** for å legge til feltetiketten i den valgte plasseringen. Velg **Legge til verdi** for å legge til verdifeltet i det valgte stedet. Klikk på **Ferdig** for å lukke utformingen.
 
-## <a name="select-add-valuemediabpt7pngmediabpt7png"></a>[![Velg Legg til verdi](./media/bpt7.png)](./media/bpt7.png)
+## <a name="select-add-valuemediabpt7png"></a>[![Velg Legg til verdi](./media/bpt7.png)](./media/bpt7.png)
 
 <a name="add-a-calculated-column-to-budget-plan-document-template-table"></a>Legge til en beregnet kolonne i dokumentmaltabellen for budsjettplan
 --------------------------------------------------------------
@@ -83,7 +83,7 @@ Den valgte feltgruppen viser kolonnene som er tilgjengelige i malen. Klikk **For
 [![Legge til og sette inn kolonne](./media/bpt12-1024x565.png)](./media/bpt12.png)
 
 > [!NOTE] 
-> Hvis du vil definere formelen, oppretter du formelen i regnearket, og deretter kopierer du den til **Utforming**-vinduet. En tabell bundet til Finance and Operations, blir vanligvis kalt "AXTable1". For å summere Forespørsel Q1: Forespørsel Q4 i regnearket, formelen = AxTable1\[Forespørsel Q1\]+ AxTable1\[Forespørsel Q2\]+ AxTable1\[Forespørsel Q3\]+ AxTable1\[Forespørsel Q4\].
+> Hvis du vil definere formelen, oppretter du formelen i regnearket, og deretter kopierer du den til **Utforming**-vinduet. En tabell bundet til Finance and Operations får vanligvis navnet «AXTable1». For å summere Forespørsel Q1: Forespørsel Q4 i regnearket, formelen = AxTable1\[Forespørsel Q1\]+ AxTable1\[Forespørsel Q2\]+ AxTable1\[Forespørsel Q3\]+ AxTable1\[Forespørsel Q4\].
 
 Gjenta disse trinnene for å sette inn **Justering**-kolonnen. Bruk formelen = AxTable1\[Total forespørsel\]\*$I$ 1 for denne kolonnen. Dette henter verdien i celle I1 og multipliserer verdiene i kolonnen **Totale forespørsel** for å beregne justeringsbeløpene.
 
@@ -120,7 +120,7 @@ Vi anbefaler å låse malen for å hindre brukere i å lukke den. Du aktiverer l
 
 Klikk pilen for en åpne en tilleggsmeny. Velg **Lås**.
 
-### <a name="select-lockmediabpt16-1024x614pngmediabpt16png"></a>[![Velg Lås](./media/bpt16-1024x614.png)](./media/bpt16.png)
+### <a name="select-lockmediabpt16png"></a>[![Velg Lås](./media/bpt16-1024x614.png)](./media/bpt16.png)
 
 ### <a name="can-i-use-other-excel-features-like-cell-formatting-colors-conditional-formatting-and-charts-with-my-budget-plan-templates"></a>Kan jeg bruke andre Excel-funksjoner, som celleformatering, farger, betinget formatering og diagrammer, med mine budsjettplanmaler?
 

@@ -3,7 +3,7 @@ title: Arkivere ER-måltype
 description: Dette emnet inneholder informasjon om hvordan du konfigurerer et arkivmål for hver MAPPE- eller FIL-komponent i et elektronisk rapporteringsformat (ER) som er konfigurert til å generere utgående dokumenter.
 author: NickSelin
 manager: AnnBe
-ms.date: 01/27/2020
+ms.date: 11/30/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -11,25 +11,24 @@ ms.technology: ''
 ms.search.form: DocuType, ERSolutionTable, ERFormatDestinationTable
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 97423
 ms.assetid: ''
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 8797a68507a5116c6adbf1f2d805838fa507958c
-ms.sourcegitcommit: 445f6d8d0df9f2cbac97e85e3ec3ed8b7d18d3a2
+ms.openlocfilehash: 3dee7ec614ec1372feaa1150f5e4ebb14c32f60e
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "3745591"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4679684"
 ---
-# <a name="archive-destination"></a>Arkivmål
+# <a name="archive-er-destination-type"></a>Arkivere ER-måltype
 
 [!include [banner](../includes/banner.md)]
 
-Du kan konfigurere et arkivmål for hver MAPPE- eller FIL-komponent i et elektronisk rapporteringsformat (ER) som er konfigurert til å generere utgående dokumenter. Basert på målinnstillingen lagres et generert dokument som et vedlegg til en oppføring i ER-jobblisten.
+Du kan konfigurere et arkivmål for hver **Mappe**- eller **Fil**-komponent i et elektronisk rapporteringsformat (ER) som er konfigurert til å generere utgående dokumenter. Basert på målinnstillingen lagres et generert dokument som et vedlegg til en oppføring i ER-jobblisten. Hvis du vil vise resultatene, går du til **Organisasjonsstyring** \> **Elektronisk rapportering** \> **Arkiverte jobber for elektronisk rapportering**.
 
 Du kan bruke dette alternativet for å sende det genererte dokumentet til en Microsoft SharePoint-mappe eller Microsoft Azure Storage. Sett **Aktivert** til **Ja** for å sende utdata til et mål som er definert av den valgte dokumenttypen. Bare dokumenttyper der gruppen er satt til **Fil** er tilgjengelige for valg. Du definerer dokumentets [typer](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/organization-administration/configure-document-management#configure-document-types) under **Organisasjonsstyring** \> **Dokumentadministrering** \> **Dokumenttyper**. Konfigurasjonen for ER-mål er den samme som konfigurasjonen for systemet for dokumentbehandling.
 
@@ -49,6 +48,9 @@ Du kan lagre en fil i en bestemt SharePoint-mappe. Hvis du vil definere standard
 ## <a name="azure-storage"></a>Azure Storage
 
 Når type dokumentplasseringen er satt til **Azure Storage**, kan du lagre en fil i Azure Storage.
+
+> [!NOTE] 
+> ER-rammeverket lagrer filer i Azure Blob Storage permanent, i motsetning til databehandlingsrammeverket som bruker policyinnstillingen for oppbevaring i sju dager for dokumenter som må behandles. Hvis du vil ha mer informasjon, se [API for å hente meldingsstatus](../data-entities/recurring-integrations.md#api-for-getting-message-status) og [API for statuskontroll for API](../data-entities/data-management-api.md#status-check-api). De ER-relaterte filene blir lagret i Azure Blob Storage som vedlegg til programtabellposter så lenge som nødvendig. En enkelt fil vil bli slettet fra Azure Blog Storage sammen med programtabellposten som denne filen var knyttet til.
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 

@@ -20,11 +20,11 @@ ms.author: roschlom
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.openlocfilehash: 71ba02fc6be4ab9a7871c10a9f95c474e52ae765
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3976457"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4446313"
 ---
 # <a name="dimension-hierarchy"></a>Dimensjonshierarki
 
@@ -53,12 +53,12 @@ Du kan opprette et dimensjonshierarki for følgende typer dimensjoner:
 > [!NOTE]
 > - Du kan opprette flere dimensjonshierarkier for samme dimensjon hvis det kreves forskjellige perspektiver.
 > - Et dimensjonshierarki kan knyttes til bare én dimensjon.
-> - Et dimensjonshierarki kan ha ubegrenset antall nivåer i strukturen. Alle nivåene blir tilgjengelig i arbeidsområdet **Kostnadskontroll** . Når du bruker Microsoft Excel eller Microsoft Power BI for rapporteringsformål, eksporteres bare de 15 første nivåene i dimensjonshierarkiet. Denne begrensningen finnes fordi både Excel og Power BI krever et fast skjema.
+> - Et dimensjonshierarki kan ha ubegrenset antall nivåer i strukturen. Alle nivåene blir tilgjengelig i arbeidsområdet **Kostnadskontroll**. Når du bruker Microsoft Excel eller Microsoft Power BI for rapporteringsformål, eksporteres bare de 15 første nivåene i dimensjonshierarkiet. Denne begrensningen finnes fordi både Excel og Power BI krever et fast skjema.
 > - Et dimensjonshierarki ikke datoeffektivt. Derfor lagres endringer i et dimensjonshierarki umiddelbart i posten, og du kan ikke sammenligne før- og etter-datoen.
 
 ## <a name="dimension-hierarchy-type"></a>Dimensjonshierarkistruktur
 
-Når du oppretter et nytt dimensjonshierarki, må du velge en hierarkitype. Gå til **kostnadsregnskap** > **dimensjoner** > **dimensjonshierarkier** . Klikk **Ny** , og velg en dimensjonshierakitype. Du kan velge enten **Hierarki for dimensjonskategorisering** eller **Hierarki for dimensjonsklassifisering** .
+Når du oppretter et nytt dimensjonshierarki, må du velge en hierarkitype. Gå til **kostnadsregnskap** > **dimensjoner** > **dimensjonshierarkier**. Klikk **Ny**, og velg en dimensjonshierakitype. Du kan velge enten **Hierarki for dimensjonskategorisering** eller **Hierarki for dimensjonsklassifisering**.
 
 ### <a name="dimension-categorization-hierarchy"></a>Hierarki for dimensjonskategorisering
 
@@ -75,7 +75,7 @@ Når du oppretter et nytt dimensjonshierarki, må du velge en hierarkitype. Gå 
 
 Et dimensjonshierarki opprettes som en trestruktur med node- og bladnoderelasjoner.
 
--  En node kan ha 1: _n_ undernoder.
+-  En node kan ha 1:_n_ undernoder.
 -  En node kan ikke ha både undernoder og bladnoder tilordnet.
 -  Du kan bare tilordne en bladnode på det laveste nivået i hierarkiet.
 
@@ -92,7 +92,7 @@ En kostnadsobjektdimensjon representerer alle kostsentrene i organisasjonen.
 
 Kostnadsobjektdimensjonen som representerer alle kostsentrene, kan defineres som vist her.
 
-| Kostsentre | beskrivelse |
+| Kostsentre | Beskrivelse |
 |--------------|-------------|
 | CC001        | Personale          |
 | CC002        | Finans     |
@@ -108,7 +108,7 @@ En kostnadselementdimensjon representerer alle kostnadselementene i organisasjon
 
 Kostnadselementdimensjonen som representerer alle kostnadselementene, kan defineres som vist her.
 
-| Kostnadselementer | beskrivelse |
+| Kostnadselementer | Beskrivelse |
 |---------------|-------------|
 | 10001         | Elektrisitet |
 | 10010         | Rengjøring    |
@@ -155,7 +155,7 @@ Dimensjonshierarkiet for policyen kan defineres som vist her.
 |&nbsp;&nbsp;Variabel kostnad | 40001                     | 40010                   |
 
 > [!NOTE]
-> Under **Dimensjonsmedlemsområder** kan en node inneholde 1: _n_ dimensionsmedlemsområder. Du kan sette inn dimensjonsmedlems-ID-er som ennå ikke finnes som dimensjonsmedlemmer. Denne fremgangsmåten gjør hierarkiet fleksibelt for fremtiden.  
+> Under **Dimensjonsmedlemsområder** kan en node inneholde 1:_n_ dimensionsmedlemsområder. Du kan sette inn dimensjonsmedlems-ID-er som ennå ikke finnes som dimensjonsmedlemmer. Denne fremgangsmåten gjør hierarkiet fleksibelt for fremtiden.  
 
 ### <a name="copy-a-hierarchy"></a>Kopiere et hierarki
 
@@ -163,7 +163,7 @@ Du kan kopiere et gjeldende dimensjonshierarki som utgangspunkt for et nytt dime
 
 ### <a name="rearrange-nodes-in-a-hierarchy"></a>Endre rekkefølgen på nodene i et hierarki
 
-Du kan flytte en node opp og ned i det gjeldende nivået i strukturen. På denne måten kan du endre rekkefølgen på nodene for rapportering i **kostnadskontroll** -arbeidsområdet.
+Du kan flytte en node opp og ned i det gjeldende nivået i strukturen. På denne måten kan du endre rekkefølgen på nodene for rapportering i **kostnadskontroll**-arbeidsområdet.
 
 Du kan flytte en node til en ny plassering i hierarkiet ved å velge målnoden. Du kan flytte en node på to måter:
 
@@ -296,7 +296,7 @@ Alle ledere vil potensielt kunne få tilgang til svært sensitive forretningsdat
 |--------------------------|--------------|------------------------------------|-----------------------|
 | Organisasjon             | Kostsentre | Hierarki for dimensjonsklassifisering | **Ja**               |
 
-En ny **Brukere** -hurtigfane er tilgjengelig i hierarkidesigneren. Her kan du sette inn én eller flere bruker-ID-er på hver node i hierarkiet.
+En ny **Brukere**-hurtigfane er tilgjengelig i hierarkidesigneren. Her kan du sette inn én eller flere bruker-ID-er på hver node i hierarkiet.
 
 |                 | Brukere            | Dimensjonsmedlemsområder   |                         |
 |-----------------|------------------|---------------------------|-------------------------|
@@ -313,7 +313,7 @@ En ny **Brukere** -hurtigfane er tilgjengelig i hierarkidesigneren. Her kan du s
 > [!NOTE] 
 > Regnskapsførere må tilordnes det øverste nivået i hierarkiet, slik at de kan se alle oppføringene i kostnadsregnskap.
 
-Hvis du vil aktivere tilgangslistehierarkiet og sikkerhetsinnstillingene, kan du gå til **Kostnadsregnskap** > **Oppsett** > **Parametere** > **Generelt** . Velg parameteren **Aktiver visningstilgang for dimensjonsmedlemmer for kostnadsobjekt** .
+Hvis du vil aktivere tilgangslistehierarkiet og sikkerhetsinnstillingene, kan du gå til **Kostnadsregnskap** > **Oppsett** > **Parametere** > **Generelt**. Velg parameteren **Aktiver visningstilgang for dimensjonsmedlemmer for kostnadsobjekt**.
 
 Innstillingene for hierarkiet for tilgangsliste brukes til å styre dataene som vises på følgende områder:
 

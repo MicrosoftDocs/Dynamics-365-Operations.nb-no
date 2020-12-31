@@ -17,11 +17,11 @@ ms.author: roschlom
 ms.search.validFrom: 2019-03-08
 ms.dyn365.ops.version: 10
 ms.openlocfilehash: f99a5ed82fd4d74a5d20620dbe19b4f18e332432
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3976505"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4446492"
 ---
 # <a name="bank-foreign-currency-revaluation"></a>Bankrevaluering av utenlandsk valuta
 
@@ -39,20 +39,20 @@ Som en del av en periodeslutt krever regnskapskonvensjoner at bankkontosaldi i u
 
 Følgende oppsett kreves før du kan kjøre revalueringprosessen.
 
-- Angi valutakurs på **Finans** -siden. Hvis en valutakurstype ikke er definert for hovedkontoen, brukes denne valutakurstypen under revaluering av utenlandsk valuta.
-- På **Finans** -siden angir du kontoene for realisert fortjeneste, realisert tap, urealisert fortjeneste og urealisert tap, for revaluering av valuta. Realisert fortjeneste- og realisert tap-kontoer brukes når kunde- og leverandørtransaksjoner utlignes. Urealisert fortjeneste- og urealisert tap-kontoer brukes til å revaluere åpne transaksjoner og hovedkontoer for økonomimodul.
-- På siden **Kontoer for revaluering av valuta** velger du andre kontoer for revaluering av valuta for hver valuta og firma. Hvis ingen kontoer er definert, brukes kontoene fra **Finans** -siden.
+- Angi valutakurs på **Finans**-siden. Hvis en valutakurstype ikke er definert for hovedkontoen, brukes denne valutakurstypen under revaluering av utenlandsk valuta.
+- På **Finans**-siden angir du kontoene for realisert fortjeneste, realisert tap, urealisert fortjeneste og urealisert tap, for revaluering av valuta. Realisert fortjeneste- og realisert tap-kontoer brukes når kunde- og leverandørtransaksjoner utlignes. Urealisert fortjeneste- og urealisert tap-kontoer brukes til å revaluere åpne transaksjoner og hovedkontoer for økonomimodul.
+- På siden **Kontoer for revaluering av valuta** velger du andre kontoer for revaluering av valuta for hver valuta og firma. Hvis ingen kontoer er definert, brukes kontoene fra **Finans**-siden.
 
 ## <a name="enable-foreign-currency-revaluation"></a>Aktivere revaluering av utenlandsk valuta
 
 Du må aktivere funksjonen for bankrevaluering av utenlandsk valuta før du kan behandle revaluering av utenlandsk valuta.
 
-1. Gå til **Kontant- og bankbehandling \> Oppsett \> Parametere for kontant- og bankbehandling** .
-2. På **Generelt** -fanen under **Revaluering av utenlandsk valuta** setter du **Aktiver bankrevaluering** -alternativet til **Ja** for å aktivere funksjonen for gjeldende juridiske enhet. 
+1. Gå til **Kontant- og bankbehandling \> Oppsett \> Parametere for kontant- og bankbehandling**.
+2. På **Generelt**-fanen under **Revaluering av utenlandsk valuta** setter du **Aktiver bankrevaluering**-alternativet til **Ja** for å aktivere funksjonen for gjeldende juridiske enhet. 
 3. I kategorien **Nummerserier** legger du til en nummerserie for revaluering av utenlandsk valuta.
-4. Oppdater leseren for å se **Revaluering av utenlandsk valuta** i **Periodiske oppgaver** -delen på områdesiden.
+4. Oppdater leseren for å se **Revaluering av utenlandsk valuta** i **Periodiske oppgaver**-delen på områdesiden.
 
-Du må aktivere funksjonen for hver juridiske enhet som bruker revaluering av utenlandsk valuta. Hvis du er tilordnet rollen som systemansvarlig eller funksjonsleder, kan du eliminere dette trinnet ved å aktivere funksjonen med navnet **Aktiver bankrevaluering uten en parameter** i arbeidsområdet **Funksjonsbehandling** .
+Du må aktivere funksjonen for hver juridiske enhet som bruker revaluering av utenlandsk valuta. Hvis du er tilordnet rollen som systemansvarlig eller funksjonsleder, kan du eliminere dette trinnet ved å aktivere funksjonen med navnet **Aktiver bankrevaluering uten en parameter** i arbeidsområdet **Funksjonsbehandling**.
 
 > [!NOTE]
 > Hvis den juridiske enheten bruker en russisk, polsk eller ungarsk lands-/områdekode, kan du allerede gjøre bankrevalueringen av utenlandsk valuta. Du kan ikke bruke revaluering av utenlandsk valuta som brukes av andre land eller regioner.
@@ -61,7 +61,7 @@ Du må aktivere funksjonen for hver juridiske enhet som bruker revaluering av ut
 
 Når installasjonen er fullført, kan du bruke siden **Revaluering av utenlandsk valuta** i Kontant- og bankbehandling til å revaluere saldoene for én eller flere bankkontoer på tvers av alle juridiske enheter. Du kan kjøre prosessen i sanntid, eller du kan planlegge å kjøre den ved hjelp av en satsvis jobb.
 
-Siden **Revaluering av utenlandsk valuta** viser historikken for hver revalueringsprosess. Den viser når prosessen ble kjørt, og hvilke vilkår som ble definert, og inneholder en kobling til bilaget som ble opprettet for revalueringen. Den viser også om en tidligere revaluering ble tilbakeført. Hvis du vil kjøre prosessen for revaluering, velger du **Revaluering av utenlandsk valuta** i handlingsruten for å åpne **Bankrevaluering av utenlandsk valuta** -dialogboksen.
+Siden **Revaluering av utenlandsk valuta** viser historikken for hver revalueringsprosess. Den viser når prosessen ble kjørt, og hvilke vilkår som ble definert, og inneholder en kobling til bilaget som ble opprettet for revalueringen. Den viser også om en tidligere revaluering ble tilbakeført. Hvis du vil kjøre prosessen for revaluering, velger du **Revaluering av utenlandsk valuta** i handlingsruten for å åpne **Bankrevaluering av utenlandsk valuta**-dialogboksen.
 
 Feltet **Revalueringsdato** angir fristen for å beregne saldo for utenlandsk valuta som skal revalueres. Summen av alle banktransaksjoner som inntraff til og med denne datoen, revalueres.
 
@@ -75,7 +75,7 @@ Velg **OK** for å behandle revaluering av utenlandsk valuta. Det opprettes en p
 
 ## <a name="calculate-unrealized-gainloss"></a>Beregne urealisert tap/fortjeneste
 
-I Kontant- og bankbehandling anses bankvalutaen for å være basisvalutaen, og den revalueres ikke. Saldoen for bankkontoen i regnskapsvalutaen revalueres ved hjelp av valutakursen mellom bankvalutaen og regnskapsvalutaen på **Valutakursdato** . Saldoen for bankkontoen i rapporteringsvalutaen revalueres også ved hjelp av valutakursen mellom bankvalutaen og rapporteringsvalutaen på **Valutakursdato** .
+I Kontant- og bankbehandling anses bankvalutaen for å være basisvalutaen, og den revalueres ikke. Saldoen for bankkontoen i regnskapsvalutaen revalueres ved hjelp av valutakursen mellom bankvalutaen og regnskapsvalutaen på **Valutakursdato**. Saldoen for bankkontoen i rapporteringsvalutaen revalueres også ved hjelp av valutakursen mellom bankvalutaen og rapporteringsvalutaen på **Valutakursdato**.
 
 Det opprettes en transaksjon for forskjellen mellom saldoen på bankkontoen og den nye saldoen som beregnes for regnskapsvalutaen. En annen transaksjon opprettes for forskjellen mellom saldoen på bankkontoen og den nye saldoen som beregnes for rapporteringsvalutaen. Postene for disse transaksjonene er merket som avstemt. 
 
@@ -85,6 +85,6 @@ Transaksjonen for revaluering av utenlandsk valuta er også delt på tvers av di
 
 ## <a name="reverse-foreign-currency-revaluation"></a>Tilbakefør revaluering av utenlandsk valuta
 
-Hvis du må tilbakeføre revalueringstransaksjonen, velger du **Tilbakefør transaksjon** på handlingssiden på siden **Revaluering av utenlandsk valuta** . Det opprettes en ny historisk post for revaluering av utenlandsk valuta for å beholde det historiske revisjonssporet for når revalueringen skjedde eller ble tilbakeført.
+Hvis du må tilbakeføre revalueringstransaksjonen, velger du **Tilbakefør transaksjon** på handlingssiden på siden **Revaluering av utenlandsk valuta**. Det opprettes en ny historisk post for revaluering av utenlandsk valuta for å beholde det historiske revisjonssporet for når revalueringen skjedde eller ble tilbakeført.
 
 Hvis du vil reversere flere revalueringer, må du tilbakeføre den nyeste revalueringen først. Deretter fortsetter du å tilbakeføre eldre revalueringer i datorekkefølgen. Du kan deretter behandle nye revalueringer for periodene som du tilbakeførte.

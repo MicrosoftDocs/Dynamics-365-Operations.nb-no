@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: FinancialReports
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 57592
 ms.assetid: 747faa47-9a23-4277-bc11-8d0a1267c3a4
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 6bb16ada206434c0588ed6c140a49b6a5d94d7ed
-ms.sourcegitcommit: a3fbcd63f10f204350a058a124ba80abeb34309e
+ms.openlocfilehash: 8ae024c2d791e1219c7383dc95283219a9300eac
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "2564173"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4682680"
 ---
 # <a name="reporting-tree-definitions-in-financial-reports"></a>Rapporteringstredefinisjoner finansrapporter
 
@@ -165,9 +164,9 @@ Du kan hindre at bestemte brukere eller grupper får tilgang til en rapportering
 3. Velg et navn, og klikk deretter **Fjern** i dialogboksen **Enhetssikkerhet**.
 4. Klikk **OK**.
 
-### <a name="link-toreports"></a>Koble til rapporter
+### <a name="link-to-reports"></a>Koble til rapporter
 
-Når du har opprettet en  **rapportkolonne** i raddefinisjonen, og har angitt rapporten som skal tas med i rapporten, må du oppdatere rapporteringstreet med den koblede kolonnen og informasjonen om rapporten. En rapport kan importeres til enheter i rapporteringstreet.
+Når du har opprettet en **rapportkolonne** i raddefinisjonen, og har angitt rapporten som skal tas med i rapporten, må du oppdatere rapporteringstreet med den koblede kolonnen og informasjonen om rapporten. En rapport kan importeres til enheter i rapporteringstreet.
 
 ### <a name="identify-the-report-in-a-reporting-tree"></a>Identifisere rapporten i rapporteringstreet
 

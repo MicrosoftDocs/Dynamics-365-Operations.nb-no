@@ -19,11 +19,11 @@ ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 4b443630d1612b5095fefa74b5ed6d057be534b7
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2188953"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4446294"
 ---
 # <a name="set-up-and-process-recurring-invoices"></a>Definere og behandle gjentakende fakturaer
 
@@ -53,7 +53,7 @@ Når malen er opprettet, må du tilordne den til kundene du vil fakturere. I til
 En kunde kan ha flere maler som har forskjellige frekvenser.
 
 ## <a name="generate-the-recurring-invoices"></a>Generere gjentakende fakturaer
-På siden **Gjentakende fakturaer**er det en oppgave som behandler maler for gjentakende faktura. Du angir fakturadatoen og malen du vil generere fakturaer fra. Fakturaer genereres og tilordnes ett gjentakende ID-nummer for hver gruppe med fakturaer som behandles.
+På siden **Gjentakende fakturaer** er det en oppgave som behandler maler for gjentakende faktura. Du angir fakturadatoen og malen du vil generere fakturaer fra. Fakturaer genereres og tilordnes ett gjentakende ID-nummer for hver gruppe med fakturaer som behandles.
 
 <a name="post-recurring-free-text-invoices"></a>Postere gjentakende fritekstfakturaer
 ---------------------------------

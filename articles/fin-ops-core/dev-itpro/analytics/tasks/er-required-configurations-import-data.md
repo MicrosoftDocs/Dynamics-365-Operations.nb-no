@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: DefaultDashboard, ERWorkspace, ERSolutionTable, ERDataModelDesigner, ERSolutionCreateDropDialog, EROperationDesigner, ERModelMappingTable, ERModelMappingDesigner, ERExpressionDesignerFormula, Tax1099Summary, VendSettlementTax1099
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 33d3f3773fdba4b704deeca48874b10958e2ea4e
-ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
+ms.openlocfilehash: d9b26f4963f32be34ae1d954a3f363be7ea28d41
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3143321"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4684288"
 ---
 # <a name="er-create-required-configurations-to-import-data-from-an-external-file"></a>ER Opprette nødvendige konfigurasjoner for å importere data fra en ekstern fil
 
@@ -98,11 +97,11 @@ Trinnene i denne delaktiviteten viser hvordan en ny formatkonfigurasjon kan oppr
 
     Legg merke til at det utformede formatet vises her som en datakildekomponent.  
 
-6. I treet utvider du format: Post\*utligning: XML-element 1..1 (utligning): Post.
-7. I treet utvider du format: Post\*utligning: XML-element 1..1 (utligning): Post\transaksjon: XML-element 0..* (transaksjon): Postliste.
-8. I treet utvider du format: Post\*utligning: XML-element 1..1 (utligning): Post\transaksjon: XML-element 0..* (transaksjon): Postliste\*leverandør: XML-element 1..1 (leverandør): Post.
-9. I treet utvider du format: Post\*utligning: XML-element 1..1 (utligning): Post\transaksjon: XML-element 0..* (transaksjon): Postliste\land: XML-element 0..1 (land): Post.
-10. I treet velger du format: Post\*utligning: XML-element 1..1 (utligning): Post\transaksjon: XML-element 0..* (transaksjon): Postliste\*leverandør: XML-element 1..1 (leverandør): Post.
+6. Utvid `format: Record\*settlement: XML Element 1..1 (settlement): Record` i treet.
+7. Utvid `format: Record\*settlement: XML Element 1..1 (settlement): Record\transaction: XML Element 0..* (transaction): Record list` i treet.
+8. Utvid `format: Record\*settlement: XML Element 1..1 (settlement): Record\transaction: XML Element 0..* (transaction): Record list\*vendor: XML Element 1..1 (vendor): Record` i treet.
+9. Utvid `format: Record\*settlement: XML Element 1..1 (settlement): Record\transaction: XML Element 0..* (transaction): Record list\country: XML Element 0..1 (country): Record` i treet.
+10. Velg `format: Record\*settlement: XML Element 1..1 (settlement): Record\transaction: XML Element 0..* (transaction): Record list\*vendor: XML Element 1..1 (vendor): Record` i treet.
 
     Legg merke til at presentasjonen av obligatoriske og valgfrie formatelementer er forskjellige i den forhåndsdefinerte "format"-datakildekomponenten.  
 11. I treet utvider du Transaksjoner: Postliste= format.utligning.$opplistet.
@@ -237,7 +236,7 @@ Kjør denne formattilordningen for testformål. Bruk filen 1099entries.xml som d
 19. Lukk siden.
 20. Klikk Rediger
 
-    Hvis du har installert hurtigreparasjonen "KB 4012871 med støtte for TYSK modelltilordning i atskilte konfigurasjoner med mulighet til å angi ulike typer forutsetninger for å distribuere dem på forskjellige versjoner av Dynamics 365 Finance" (https://fix.lcs.dynamics.com/Issue/Resolved?kb=4012871 ), utfører du det neste trinnet "Aktivere flagget Standard for modelltilordning" for den angitte formatkonfigurasjonen. Ellers går du til neste trinn.  
+    Hvis du har installert hurtigreparasjonen "KB 4012871 med støtte for TYSK modelltilordning i atskilte konfigurasjoner med mulighet til å angi ulike typer forutsetninger for å distribuere dem på forskjellige versjoner av Dynamics 365 Finance" ([KB 4012871](https://fix.lcs.dynamics.com/Issue/Resolved?kb=4012871)), utfører du det neste trinnet "Aktivere flagget Standard for modelltilordning" for den angitte formatkonfigurasjonen. Ellers går du til neste trinn.  
 
 21. Velg Ja i feltet Standard for modelltilordning.
 22. Velg 1099-betalingsmodell i treet.
@@ -245,7 +244,7 @@ Kjør denne formattilordningen for testformål. Bruk filen 1099entries.xml som d
 24. Klikk Tilordne modell til datakilde.
 25. Klikk Kjør.
 
-    Hvis du har installert hurtigreparasjonen KB 4012871 med støtte for TYSK modelltilordning i atskilte konfigurasjoner med mulighet til å angi ulike typer forutsetninger for å distribuere dem på forskjellige versjoner (https://fix.lcs.dynamics.com/Issue/Resolved?kb=4012871), velger du den foretrukne modelltilordningen i oppslagsfeltet. Hvis du har ennå ikke har installert hurtigreparasjonen, går du til neste trinn siden tilordningen allerede er valgt av definisjonen av standard formatkonfigurasjon.  
+    Hvis du har installert hurtigreparasjonen KB 4012871 med støtte for TYSK modelltilordning i atskilte konfigurasjoner med mulighet til å angi ulike typer forutsetninger for å distribuere dem på forskjellige versjoner ([KB 4012871](https://fix.lcs.dynamics.com/Issue/Resolved?kb=4012871)), velger du den foretrukne modelltilordningen i oppslagsfeltet. Hvis du har ennå ikke har installert hurtigreparasjonen, går du til neste trinn siden tilordningen allerede er valgt av definisjonen av standard formatkonfigurasjon.  
     
     Hvis du ikke har installert hurtigreparasjonen KB 4012871, legger du merke til at dialogboksen inneholder et ekstra spørsmål om modelltilordning som brukes til å analysere filen du importerer. Dataene blir deretter overført fra dialogboksen til datamodellen. For øyeblikket kan du velge hvilken formattilordning som må brukes, avhengig av typen fil du planlegger å importere.  
     

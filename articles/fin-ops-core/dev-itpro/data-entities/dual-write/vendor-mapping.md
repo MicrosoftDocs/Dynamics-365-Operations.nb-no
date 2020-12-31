@@ -1,6 +1,6 @@
 ---
 title: Integrert original for leverandør
-description: Dette emnet beskriver integrering av leverandørdata mellom Finance and Operations-apper og Common Data Service .
+description: Dette emnet beskriver integrering av leverandørdata mellom Finance and Operations-apper og Dataverse .
 author: RamaKrishnamoorthy
 manager: AnnBe
 ms.date: 07/15/2019
@@ -18,30 +18,32 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: 5c4cc92fd7809f4016d8421c98f41a85fcfedc7b
-ms.sourcegitcommit: 0a741b131ed71f6345d4219a47cf5f71fec6744b
+ms.openlocfilehash: 636bc57b5ef09d605744f4857fd5fbefceac4875
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "3997654"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4685491"
 ---
 # <a name="integrated-vendor-master"></a>Integrert original for leverandør
 
 [!include [banner](../../includes/banner.md)]
 
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 
-Begrepet *leverandør* refererer til en leverandørorganisasjon, eller en enkelt innehaver som leverer varer eller tjenester til en virksomhet. Selv om *leverandør* er et etablert begrep i Microsoft Dynamics 365 Supply Chain Management-, finnes det ikke noe leverandørbegrep i modelldrevne apper i Dynamics 365. Du kan imidlertid overbelaste **konto/kontakt** -enheten for å lagre leverandørinformasjon. Den integrerte leverandørstandarden innfører et eksplisitt leverandørbegrep i modelldrevne apper i Dynamics 365. Du kan enten bruke de nye leverandørutformingen eller butikkleverandørdataene i **Konto/kontakt** -enheten. Dobbel skriving støtter begge metoder.
+
+Begrepet *leverandør* refererer til en leverandørorganisasjon, eller en enkelt innehaver som leverer varer eller tjenester til en virksomhet. Selv om *leverandør* er et etablert begrep i Microsoft Dynamics 365 Supply Chain Management-, finnes det ikke noe leverandørbegrep i modelldrevne apper i Dynamics 365. Du kan imidlertid overbelaste **konto/kontakt**-enheten for å lagre leverandørinformasjon. Den integrerte leverandørstandarden innfører et eksplisitt leverandørbegrep i modelldrevne apper i Dynamics 365. Du kan enten bruke de nye leverandørutformingen eller butikkleverandørdataene i **Konto/kontakt**-enheten. Dobbel skriving støtter begge metoder.
 
 I begge fremgangsmåtene er leverandørdataene integrert i Dynamics 365 Supply Chain Management, Dynamics 365 Sales, Dynamics 365 Field Service og Power Apps-portaler. I Supply Chain Management er dataene tilgjengelige for arbeidsflyter som innkjøpsrekvisisjoner og bestillinger.
 
 ## <a name="vendor-data-flow"></a>Flyt for leverandørdata
 
-Hvis du ikke vil lagre leverandørdata i **Konto/kontakt** -enheten i Common Data Service, kan du bruke den nye leverandørutformingen.
+Hvis du ikke vil lagre leverandørdata i **Konto/kontakt**-enheten i Dataverse, kan du bruke den nye leverandørutformingen.
 
 ![Flyt for leverandørdata](media/dual-write-vendor-data-flow.png)
 
-Hvis du ikke vil fortsette å lagre leverandørdata i **Konto/kontakt** -enheten i , kan du bruke den utvidede leverandørutformingen. Hvis du vil bruke den utvidede leverandørutformingen, må du konfigurere leverandørarbeidsflytene i løsningspakken med dobbel skriving. Hvis du vil ha mer informasjon, se [Bytte mellom leverandørutforminger](vendor-switch.md).
+Hvis du ikke vil fortsette å lagre leverandørdata i **Konto/kontakt**-enheten i , kan du bruke den utvidede leverandørutformingen. Hvis du vil bruke den utvidede leverandørutformingen, må du konfigurere leverandørarbeidsflytene i løsningspakken med dobbel skriving. Hvis du vil ha mer informasjon, se [Bytte mellom leverandørutforminger](vendor-switch.md).
 
 ![Utvidet flyt for leverandørdata](media/dual-write-vendor-detail.jpg)
 
@@ -50,12 +52,12 @@ Hvis du ikke vil fortsette å lagre leverandørdata i **Konto/kontakt** -enheten
 
 ## <a name="templates"></a>Maler
 
-Leverandørdata inkluderer all informasjon om leverandøren, for eksempel leverandørgruppe, adresser, kontaktinformasjon, betalingsprofil og fakturaprofil. En samling enhetstilordninger fungerer sammen under leverandørdatasamhandling, som vist i følgende tabell.
+Leverandørdata inkluderer all informasjon om leverandøren, for eksempel leverandørgruppe, adresser, kontaktinformasjon, betalingsprofil og fakturaprofil. En samling tabelltilordninger fungerer sammen under leverandørdatasamhandling, som vist i følgende tabell.
 
 Finance and Operations-apper | Andre Dynamics 365-apper     | Beskrivelse
 ----------------------------|-----------------------------|------------
 Vendor V2                   | Konto                     | Firmaer som bruker kontoenheten til å lagre leverandørinformasjon, kan fortsette å bruke den på samme måte. De kan også dra fordel av den eksplisitte leverandørfunksjonaliteten som kommer på grunn av Finance and Operations-appintegrasjonen.
-Vendor V2                   | Msdyn\_vendors              | Bedrifter som bruker en egendefinert løsning for leverandører, kan benytte seg av leverandørkonseptet som blir introdusert i Common Data Service, på grunn av Finance and Operations-appintegrasjonen. 
+Vendor V2                   | Msdyn\_vendors              | Bedrifter som bruker en egendefinert løsning for leverandører, kan benytte seg av leverandørkonseptet som blir introdusert i Dataverse, på grunn av Finance and Operations-appintegrasjonen. 
 Leverandørgrupper               | msdyn\_vendorgroups         | Denne malen synkroniserer leverandørgruppeinformasjon.
 Betalingsmåte for leverandør       | msdyn\_vendorpaymentmethods | Denne malen synkroniserer informasjon om leverandørbetalingsmåte.
 CDS-kontakter V2             | kontakter                    | Malen [kontakter](customer-mapping.md#cds-contacts-v2-to-contacts) synkroniserer all primær, sekundær og tertiær informasjon, både for kunder og leverandører.

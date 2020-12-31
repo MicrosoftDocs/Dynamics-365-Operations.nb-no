@@ -18,17 +18,17 @@ ms.author: shpandey
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.openlocfilehash: 39a9ba54ba26db5904c2cd519be9f83bbc68c037
-ms.sourcegitcommit: 9e7ceb5604472f3088f611aa0360bd6a716db32b
+ms.sourcegitcommit: 30c541426cf2037b768e3556e1b170a64991f64a
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4022525"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "4446568"
 ---
 # <a name="vendor-payments-workspace"></a>Arbeidsområde for leverandørbetalinger
 
 [!include [banner](../includes/banner.md)]
 
-Arbeidsområdet for **leverandørbetalinger** viser informasjon som er knyttet til behandling av leverandørbetalinger. Arbeidsområdet inneholder en **Mitt arbeid** -visning og en **Analyse** -side. **Mitt arbeid** -visningen viser sammendragsfliser, rutenett for leverandørtransaksjoner og tilknyttet leverandørinformasjon. **Analyse** -siden bruker funksjonene i Microsoft Power BI for å vise bilder som er knyttet til leverandørbetalinger.
+Arbeidsområdet for **leverandørbetalinger** viser informasjon som er knyttet til behandling av leverandørbetalinger. Arbeidsområdet inneholder en **Mitt arbeid**-visning og en **Analyse**-side. **Mitt arbeid**-visningen viser sammendragsfliser, rutenett for leverandørtransaksjoner og tilknyttet leverandørinformasjon. **Analyse**-siden bruker funksjonene i Microsoft Power BI for å vise bilder som er knyttet til leverandørbetalinger.
 
 ## <a name="setup-needed-to-view-power-bi-content"></a>Oppsett måtte vise Power BI-innhold
 
@@ -43,25 +43,25 @@ Følgende oppsett må fullføres for at data skal kunne vises i Power BI-visualo
 
 ### <a name="summary-tiles"></a>Sammendrag-fliser
 
-Rutene i delen **Sammendrag** gir en oversikt over tilstanden for betalingsinformasjonen. Du kan se betalingsjournaler som ennå ikke er postert, fakturaer som er forfalt, alle leverandører og leverandører som er satt på vent. Fra **Sammendrag** -delen kan du opprette en ny betalingskjøring.
+Rutene i delen **Sammendrag** gir en oversikt over tilstanden for betalingsinformasjonen. Du kan se betalingsjournaler som ennå ikke er postert, fakturaer som er forfalt, alle leverandører og leverandører som er satt på vent. Fra **Sammendrag**-delen kan du opprette en ny betalingskjøring.
 
-Informasjonen i **Sammendrag** -delen er for firmaet som du er logget på.
+Informasjonen i **Sammendrag**-delen er for firmaet som du er logget på.
 
 ### <a name="vendor-transactions-grids"></a>Rutenett for leverandørtransaksjoner
 
-Delen **Leverandørtransaksjoner** inneholder rutenett som viser fakturaene som har forfalt og betalinger som ikke er utlignet. Fra **Forfalte fakturaer** -rutenettet kan du vise utligningshistorikken for en valgt faktura. Fra **Forfalte fakturaer** -rutenettet kan du vise utligningshistorikken for en valgt faktura og utligne en faktura.
+Delen **Leverandørtransaksjoner** inneholder rutenett som viser fakturaene som har forfalt og betalinger som ikke er utlignet. Fra **Forfalte fakturaer**-rutenettet kan du vise utligningshistorikken for en valgt faktura. Fra **Forfalte fakturaer**-rutenettet kan du vise utligningshistorikken for en valgt faktura og utligne en faktura.
 
 Medarbeidere for sentralisert betaling kan bruke et filter som vises øverst i hvert rutenett, til å velge et firma. Rutenettet blir deretter filtrert slik at det viser bare firmaer som er definert i organisasjonshierarkiet for sentralisert betaling, som medarbeideren for sentralisert betaling har rettigheter til å vise.
 
-Kategorien **Søk etter transaksjoner** i **Leverandørtransaksjoner** -delen lar deg søke etter en leverandørtransaksjon.
+Kategorien **Søk etter transaksjoner** i **Leverandørtransaksjoner**-delen lar deg søke etter en leverandørtransaksjon.
 
 ### <a name="related-information"></a>Beslektet informasjon
 
-Du kan vise rapporten **Aldersfordeling for leverandør** og rapporten **Utbetalingsoppsummering etter dato** ved hjelp av koblingene i **Relatert informasjon** -delen i arbeidsområdet.
+Du kan vise rapporten **Aldersfordeling for leverandør** og rapporten **Utbetalingsoppsummering etter dato** ved hjelp av koblingene i **Relatert informasjon**-delen i arbeidsområdet.
 
 ## <a name="analytics-page"></a>Analyse-side
 
-**Analyse** -siden inneholder viktige mål, for eksempel leverandørfakturaer som har forfalt, og leverandørfakturaer som forfaller i fremtiden. Denne siden inneholder ni rapportsider. Én side gir en oversikt, og de andre åtte sidene inneholder opplysninger om leverandørbetalingsmål.
+**Analyse**-siden inneholder viktige mål, for eksempel leverandørfakturaer som har forfalt, og leverandørfakturaer som forfaller i fremtiden. Denne siden inneholder ni rapportsider. Én side gir en oversikt, og de andre åtte sidene inneholder opplysninger om leverandørbetalingsmål.
 
 Tabellen nedenfor viser visuaiseringene som er tilgjengelig på hver rapportside.
 

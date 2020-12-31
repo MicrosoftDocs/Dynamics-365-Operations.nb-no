@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 5277081d9f7adcc43c30d30208d13c7e39d76118
-ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
+ms.openlocfilehash: f9f2cbe0c9d1609aa3713776f81bafa396fff301
+ms.sourcegitcommit: deb711c92251ed48cdf20ea514d03461c26a2262
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3140381"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "4645287"
 ---
 # <a name="record-a-vendor-invoice-in-the-invoice-journal"></a>Registrere en leverandørfaktura i fakturajournalen
 
@@ -43,7 +43,9 @@ Denne oppgaveveiledningen viser hvordan du kan registrere leverandørfakturaer s
     * **Mva-gruppen** hentes fra leverandørkontoen.  
     * **Mva-gruppen for vare** hentes fra hovedkontoen angitt i **Motkonto**-feltet.  
     * **Forfallsdatoen** beregnes basert på betalingsbetingelsene.  
-    * **Kontantrabatten** hentes fra leverandørkontoen.  
+    * **Kontantrabatten** hentes fra leverandørkontoen.
+12. Hvis du har aktivert arbeidsflyten for leverandørfakturajournal, klikker du **Arbeidsflyt > Send**.
+    * Når sendingen er godkjent, vil datoen flyttes til den første dagen i neste åpne periode hvis posteringsdatoen for transaksjonen er innenfor en periode som er på vent eller lukket for finanspostering.
 12. Klikk **Poster**.
 13. Lukk siden.
 

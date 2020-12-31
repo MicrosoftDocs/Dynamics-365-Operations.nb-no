@@ -17,11 +17,11 @@ ms.author: shpandey
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: f6d19d0e10f477e498e8f0fff1f431bc4bfdd9a1
-ms.sourcegitcommit: 6ffbae02de2eee1f3be9bab2da37a3771aae8bec
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "3904961"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4446338"
 ---
 # <a name="invoice-automation-for-scanned-documents"></a>Fakturaautomatisering for skannede dokumenter
 
@@ -66,13 +66,13 @@ Hvis du vil ha mer informasjon om datapakker, kan du se [Oversikt over databehan
 Bruk følgende fremgangsmåte for å raskt generere testdata som inkluderer fakturaer og vedlegg.
 
 1. Logg på forekomsten.
-1. Gå til **Leverandører** > **Fakturaer** > **Ventende leverandørfakturaer** .
+1. Gå til **Leverandører** > **Fakturaer** > **Ventende leverandørfakturaer**.
 1. Opprett fakturaer som har linjer og vedlegg.
 
     > [!NOTE]
     > Vedleggene må være hodevedlegg. Enheten for dokumentvedlegg for leverandørfaktura støtter for øyeblikket ikke linjevedlegg.
 
-1. Åpne arbeidsområdet **Databehandling** .
+1. Åpne arbeidsområdet **Databehandling**.
 1. Opprett en eksportjobb som inkluderer enhetene for leverandørfakturahode, leverandørfakturalinje og dokumentvedlegg for leverandørfaktura.
 1. Eksporter dataene.
 1. Last ned de eksporterte dataene som en pakke. Du kan nå bruke pakken til å importere data til målforekomster for testformål.
@@ -81,7 +81,7 @@ Bruk følgende fremgangsmåte for å raskt generere testdata som inkluderer fakt
 
 Fakturaer som importeres via datapakker, kan knyttes til den juridiske enheten som de hører til, på to måter:
 
-+ Importjobben som behandler fakturaen, importerer den til det samme firmaet der jobben er planlagt i arbeidsområdet **Databehandling** . Med andre ord bestemmer firmaet for jobben hvilket firma som fakturaen tilhører.
++ Importjobben som behandler fakturaen, importerer den til det samme firmaet der jobben er planlagt i arbeidsområdet **Databehandling**. Med andre ord bestemmer firmaet for jobben hvilket firma som fakturaen tilhører.
 + Når datapakken som inneholder fakturaer, sendes til Finance, kan oppkalleren (det vil si integrasjonsprogrammet som kjøres utenfor Finance) eksplisitt nevne firma-ID-en i HTTP-forespørselen. I så fall overstyres firmakonteksten der behandlingsjobben kjører i Finance, og fakturaene importeres til firmaet som ble sendt via HTTP-forespørselen.
 
 > [!NOTE]
@@ -93,7 +93,7 @@ I situasjoner der leverandørfakturaer kommer til Finance and Operations via int
 
 ### <a name="exceptions-list-page"></a>Side med liste over unntak
 
-Den nye listesiden for fakturaunntak er tilgjengelig på **Leverandører** > **Fakturaer** > **Importfeil** > **Leverandørfakturaer som ikke ble importert** . Denne siden viser alle hodepostene for leverandørfakturaer fra oppsamlingstabellen for dataenheten for leverandørfakturahode. Vær oppmerksom på at du kan vise de samme postene fra arbeidsområdet **Databehandling** , der du også kan utføre de samme handlingene som er angitt i funksjonen for unntaksbehandling. Imidlertid er brukergrensesnittet i funksjonen for unntaksbehandling optimalisert for en funksjonell bruker.
+Den nye listesiden for fakturaunntak er tilgjengelig på **Leverandører** > **Fakturaer** > **Importfeil** > **Leverandørfakturaer som ikke ble importert**. Denne siden viser alle hodepostene for leverandørfakturaer fra oppsamlingstabellen for dataenheten for leverandørfakturahode. Vær oppmerksom på at du kan vise de samme postene fra arbeidsområdet **Databehandling**, der du også kan utføre de samme handlingene som er angitt i funksjonen for unntaksbehandling. Imidlertid er brukergrensesnittet i funksjonen for unntaksbehandling optimalisert for en funksjonell bruker.
 
 ![Side med liste over unntak](media/vendor_invoice_automation_02.png)
 
@@ -118,7 +118,7 @@ Denne listesiden inneholder følgende felt som kommer inn via feeden:
 
 Denne listesiden har også en forhåndsvisningsrute som kan brukes på følgende måter:
 
-+ Vis hele feilmeldingen, slik at du ikke trenger å utvide **Feilmelding** -kolonnen i rutenettet.
++ Vis hele feilmeldingen, slik at du ikke trenger å utvide **Feilmelding**-kolonnen i rutenettet.
 + Vis hele listen over vedlegg for fakturaen, hvis vedlegg fulgte med fakturaen.
 
 Listesiden støtter følgende handlinger:
@@ -159,8 +159,8 @@ Contoso kan også bestemme å ikke overholder noen sikkerhet, slik at de samme b
 For å hjelpe deg med å vise vedlegg for leverandørfakturaer, gir følgende sider som skal brukes i faktureringsprosessen, nå et visningsprogram for vedlegg:
 
 + **Unntaksbehandling**
-+ **Ventende leverandørfakturaer** -siden (også tilgjengelig i fakturavurderingsprosessen)
-+ **Fakturajournal** -forespørselssiden (for posterte fakturaer)
++ **Ventende leverandørfakturaer**-siden (også tilgjengelig i fakturavurderingsprosessen)
++ **Fakturajournal**-forespørselssiden (for posterte fakturaer)
 
 Her er den viktigste funksjonaliteten som visningsprogrammet for vedlegg inneholder:
 
@@ -180,13 +180,13 @@ Her er den viktigste funksjonaliteten som visningsprogrammet for vedlegg innehol
 
 ### <a name="default-attachment"></a>Standardvedlegg
 
-Hvis en leverandørfaktura har mer enn ett vedlegg, kan du angi ett av dokumentene som standardvedlegget på **Vedlegg** -siden. Alternativet **Er standardvedlegg** er et nytt alternativ som ble lagt til som en del av denne funksjonen. Dette alternativet vises også i dataenheten for dokumentvedlegg for leverandørfaktura. Standardvedlegget kan derfor angis via integreringer.
+Hvis en leverandørfaktura har mer enn ett vedlegg, kan du angi ett av dokumentene som standardvedlegget på **Vedlegg**-siden. Alternativet **Er standardvedlegg** er et nytt alternativ som ble lagt til som en del av denne funksjonen. Dette alternativet vises også i dataenheten for dokumentvedlegg for leverandørfaktura. Standardvedlegget kan derfor angis via integreringer.
 
 Bare ett dokument kan angis som standardvedlegget. Når du har opprettet et dokument som standardvedlegget, vises det automatisk i visningsprogrammet for vedlegg når fakturaen åpnes. Hvis du ikke angir noe dokument som standardvedlegget, viser ikke visningsprogrammet automatisk noen vedlegg når fakturaen åpnes.
 
 ### <a name="showhide-invoice-attachments"></a>Vis/skjul fakturavedlegg
 
-En ny knapp som er tilgjengelig på forespørselssidene **Behandling av unntak** , **Faktura som venter** og **Fakturajournal** , lar deg vise eller skjule visningsprogrammet for vedlegg.
+En ny knapp som er tilgjengelig på forespørselssidene **Behandling av unntak**, **Faktura som venter** og **Fakturajournal**, lar deg vise eller skjule visningsprogrammet for vedlegg.
 
 ### <a name="security"></a>Sikkerhet
 
@@ -211,7 +211,7 @@ Følgende plikter gir skrivebeskyttet tilgang eller lese-/skrivetilgang til visn
 Følgende roller gir skrivebeskyttet tilgang eller lese-/skrivetilgang til visningsprogrammet for vedlegg for disse handlingene:
 
 + **Regnskapsassistent** og **Regnskapssjef leverandørreskontro** – Plikten Vedlikehold leverandørfakturaer er tilordnet disse rollene.
-+ **Regnskapsassistent** , **Regnskapssjef leverandørreskontro** , **Assistent for sentraliserte leverandørbetalinger** og **Leverandørbetalingsassistent** – Plikten Forespørsel om leverandørfakturastatus er tilordnet til disse rollene.
++ **Regnskapsassistent**, **Regnskapssjef leverandørreskontro**, **Assistent for sentraliserte leverandørbetalinger** og **Leverandørbetalingsassistent** – Plikten Forespørsel om leverandørfakturastatus er tilordnet til disse rollene.
 
 ### <a name="invoice-exception-details-page"></a>Side for fakturaunntaksdetaljer
 

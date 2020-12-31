@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: SelfHealingWorkspace
 audience: Application User, IT Pro
 ms.reviewer: sericks
-ms.search.scope: Operations, Core
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,22 +18,22 @@ ms.search.industry: ''
 ms.author: sericks
 ms.search.validFrom: 2017-12-01
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 8c4f5eff01ab20ce9de2a30b27b163df8cf83e02
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.openlocfilehash: 7052aeb4154cefe30a1935dfdca53085a035deb6
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3985225"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4687617"
 ---
 # <a name="create-rules-for-optimization-advisor"></a>Opprette regler for optimaliseringsrådgiver
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet forklarer hvordan du oppretter nye regler for **optimaliseringsrådgiver** . Du kan for eksempel opprette en ny regel som identifiserer tilbudsforespørselssakene som har en tom tittel. Bruk av titler på saker gjør dem lett å kjenne igjen og søkbare. Dette eksemplet som er ganske enkelt, viser hva som kan oppnås med optimaliseringsregler. 
+Dette emnet forklarer hvordan du oppretter nye regler for **optimaliseringsrådgiver**. Du kan for eksempel opprette en ny regel som identifiserer tilbudsforespørselssakene som har en tom tittel. Bruk av titler på saker gjør dem lett å kjenne igjen og søkbare. Dette eksemplet som er ganske enkelt, viser hva som kan oppnås med optimaliseringsregler. 
 
 En *regel* er en sjekk av programdata. Hvis betingelsen som denne regelen evaluerer, er oppfylt, opprettes salgsmuligheter for å optimalisere prosesser eller forbedre data. Salgsmulighetene kan brukes, og eventuelt virkningen av handlingene kan måles. 
 
-Hvis du vil opprette en ny regel for **optimaliseringsrådgiver** , legger du til en ny klasse som utvider den abstrakte **SelfHealingRule** -klassen, implementerer **IDiagnosticsRule** -grensesnittet og dekoreres av **DiagnosticRule** -attributtet. Klassen må også ha en metode som er dekorert med **DiagnosticsRuleSubscription** -attributtet. Etter konvensjonen utføres dette i **opportunityTitle** -metoden, som diskuteres senere. Denne nye klassen kan legges til en egendefinert modell med en avhengighetsforhold til **SelfHealingRules** -modellen. I eksemplet nedenfor kalles regelen som implementeres **RFQTitleSelfHealingRule** .
+Hvis du vil opprette en ny regel for **optimaliseringsrådgiver**, legger du til en ny klasse som utvider den abstrakte **SelfHealingRule**-klassen, implementerer **IDiagnosticsRule**-grensesnittet og dekoreres av **DiagnosticRule**-attributtet. Klassen må også ha en metode som er dekorert med **DiagnosticsRuleSubscription**-attributtet. Etter konvensjonen utføres dette i **opportunityTitle**-metoden, som diskuteres senere. Denne nye klassen kan legges til en egendefinert modell med en avhengighetsforhold til **SelfHealingRules**-modellen. I eksemplet nedenfor kalles regelen som implementeres **RFQTitleSelfHealingRule**.
 
 ```xpp
 [DiagnosticsRule] 
@@ -44,7 +43,7 @@ public final class RFQTitleSelfHealingRule extends SelfHealingRule implements ID
 } 
 ```
 
-**SelfHealingRule** -abstraktklassen har abstrakte metoder som må implementeres i arveklasser. Kjernen er **evaluer** -metoden, som returnerer en liste over salgsmuligheter som er identifisert av regelen. Salgsmuligheter kan være per juridisk enhet, eller kan gjelde for hele systemet.
+**SelfHealingRule**-abstraktklassen har abstrakte metoder som må implementeres i arveklasser. Kjernen er **evaluer**-metoden, som returnerer en liste over salgsmuligheter som er identifisert av regelen. Salgsmuligheter kan være per juridisk enhet, eller kan gjelde for hele systemet.
 
 ```xpp
 protected List evaluate() 
@@ -76,11 +75,11 @@ protected List evaluate()
 } 
 ```
 
-Metoden ovenfor gjentas over firmaer og velger tilbudsforespørselstilfeller med tomme titler i **findRFQCasesWithEmptyTitle** -metoden. Hvis minst ett slikt tilfelle blir funnet, opprettes en firmaspesifikk salgsmulighet med **getOpportunityForCompany** -metoden. Legg merke til at feltet **Data** i **SelfHealingOpportunity** -tabellen er av typen **Beholder** , og kan derfor inneholde alle data som er relevante for logikken som gjelder denne regelen. Angivelse av **OpportunityDate** med gjeldende tidsangivelse registrerer tidspunktet for den siste evalueringen av salgsmuligheten.  
+Metoden ovenfor gjentas over firmaer og velger tilbudsforespørselstilfeller med tomme titler i **findRFQCasesWithEmptyTitle**-metoden. Hvis minst ett slikt tilfelle blir funnet, opprettes en firmaspesifikk salgsmulighet med **getOpportunityForCompany**-metoden. Legg merke til at feltet **Data** i **SelfHealingOpportunity**-tabellen er av typen **Beholder**, og kan derfor inneholde alle data som er relevante for logikken som gjelder denne regelen. Angivelse av **OpportunityDate** med gjeldende tidsangivelse registrerer tidspunktet for den siste evalueringen av salgsmuligheten.  
 
-Salgsmuligheter kan også være på tvers av firmaer. I så fall er ikke løkken over firmaer nødvendig og salgsmuligheten må opprettes med **getOpportunityAcrossCompanies** -metoden. 
+Salgsmuligheter kan også være på tvers av firmaer. I så fall er ikke løkken over firmaer nødvendig og salgsmuligheten må opprettes med **getOpportunityAcrossCompanies**-metoden. 
 
-Koden nedenfor viser **findRFQCasesWithEmptyTitle** -metoden, som returnerer ID-ene til tilbudsforespørselssakene som har tomme titler.
+Koden nedenfor viser **findRFQCasesWithEmptyTitle**-metoden, som returnerer ID-ene til tilbudsforespørselssakene som har tomme titler.
 
 ```xpp
 private container findRFQCasesWithEmptyTitle() 
@@ -98,20 +97,20 @@ private container findRFQCasesWithEmptyTitle()
 } 
 ```
 
-To metoder til som må implementeres, er **opportunityTitle** og **opportunityDetails** . Den første returnerer en kort tittel for salgsmuligheten, sistnevnte returnerer en detaljert beskrivelse av salgsmuligheten, som også kan inneholde data.
+To metoder til som må implementeres, er **opportunityTitle** og **opportunityDetails**. Den første returnerer en kort tittel for salgsmuligheten, sistnevnte returnerer en detaljert beskrivelse av salgsmuligheten, som også kan inneholde data.
 
-Tittelen som returneres av **opportunityTitle** , vises under **Optimaliseringssalgsmulighet** -kolonnen i **Optimaliseringsrådgiver** -arbeidsområdet. Den vises også som overskrift for sideruten som viser mer informasjon om salgsmuligheten. Etter konvensjonen dekoreres denne metoden med **DiagnosticRuleSubscription** -attributtet, som bruker følgende argumenter: 
+Tittelen som returneres av **opportunityTitle**, vises under **Optimaliseringssalgsmulighet**-kolonnen i **Optimaliseringsrådgiver**-arbeidsområdet. Den vises også som overskrift for sideruten som viser mer informasjon om salgsmuligheten. Etter konvensjonen dekoreres denne metoden med **DiagnosticRuleSubscription**-attributtet, som bruker følgende argumenter: 
 
-* **Diagnoseområde** – En opplisting av typen **DiagnosticArea** som beskriver hvilket området i programmet regelen tilhører, for eksempel **DiagnosticArea::SCM** . 
+* **Diagnoseområde** – En opplisting av typen **DiagnosticArea** som beskriver hvilket området i programmet regelen tilhører, for eksempel **DiagnosticArea::SCM**. 
 
-* **Regelnavn** – En streng med regelnavnet. Dette vil vises **Regelnavn** -kolonnen i **Valideringsregel for diagnostikk** -skjemaet ( **DiagnosticsValidationRuleMaintain** ). 
+* **Regelnavn** – En streng med regelnavnet. Dette vil vises **Regelnavn**-kolonnen i **Valideringsregel for diagnostikk**-skjemaet (**DiagnosticsValidationRuleMaintain**). 
 
-* **Kjøringsfrekvens** – En opplisting av typen **DiagnosticRunFrequency** som beskriver hvor ofte regelen skal kjøres, som **DiagnosticRunFrequency::Daily** . 
+* **Kjøringsfrekvens** – En opplisting av typen **DiagnosticRunFrequency** som beskriver hvor ofte regelen skal kjøres, som **DiagnosticRunFrequency::Daily**. 
 
-* **Regelbeskrivelse** – En streng med en mer detaljert beskrivelse av regelen. Dette vil vises **Regelbeskrivelse** -kolonnen i **Valideringsregel for diagnostikk** -skjemaet ( **DiagnosticsValidationRuleMaintain** ). 
+* **Regelbeskrivelse** – En streng med en mer detaljert beskrivelse av regelen. Dette vil vises **Regelbeskrivelse**-kolonnen i **Valideringsregel for diagnostikk**-skjemaet (**DiagnosticsValidationRuleMaintain**). 
 
 > [!NOTE]
-> **DiagnosticRuleSubscription** -attributtet er påkrevd for at regelen skal virke. Vanligvis brukes det på **opportunityTitle** , men det kan dekorere alle metoder i klassen.
+> **DiagnosticRuleSubscription**-attributtet er påkrevd for at regelen skal virke. Vanligvis brukes det på **opportunityTitle**, men det kan dekorere alle metoder i klassen.
 
 Nedenfor finner du en eksempelimplementering. Rå-strenger brukes for enkelthetens skyld, men en riktig implementering krever etiketter. 
 
@@ -126,7 +125,7 @@ public str opportunityTitle()
 } 
 ```
 
-Beskrivelsen returnert av **opportunityDetails** vises i sideruten, som viser mer informasjon om salgsmuligheten. Dette tar **SelfHealingOpportunity** -argumentet, som er **Data** -felt som kan brukes til å gi flere detaljer om salgsmuligheten. I eksemplet returnerer metoden ID-ene til tilbudsforespørselstilfellene med tom tittel. 
+Beskrivelsen returnert av **opportunityDetails** vises i sideruten, som viser mer informasjon om salgsmuligheten. Dette tar **SelfHealingOpportunity**-argumentet, som er **Data**-felt som kan brukes til å gi flere detaljer om salgsmuligheten. I eksemplet returnerer metoden ID-ene til tilbudsforespørselstilfellene med tom tittel. 
 
 ```xpp
 public str opportunityDetails(SelfHealingOpportunity _opportunity) 
@@ -149,9 +148,9 @@ public str opportunityDetails(SelfHealingOpportunity _opportunity)
 }
 ```
 
-De to gjenværende abstrakte metodene for å implementere, er **provideHealingAction** og **securityMenuItem** . 
+De to gjenværende abstrakte metodene for å implementere, er **provideHealingAction** og **securityMenuItem**. 
 
-**provideHealingAction** returnerer sann hvis en healing-handling angis, ellers returneres usann. Hvis sann returneres, må metoden **performAction** implementeres, ellers vil det oppstod en feil. **performAction** -metoden tar et **SelfHealingOpportunity** -argumentet, der dataene kan brukes for handlingen. I eksemplet åpner handlingen **PurchRFQCaseTableListPage** , for manuell korrigering. 
+**provideHealingAction** returnerer sann hvis en healing-handling angis, ellers returneres usann. Hvis sann returneres, må metoden **performAction** implementeres, ellers vil det oppstod en feil. **performAction**-metoden tar et **SelfHealingOpportunity**-argumentet, der dataene kan brukes for handlingen. I eksemplet åpner handlingen **PurchRFQCaseTableListPage**, for manuell korrigering. 
 
 ```xpp
 public boolean providesHealingAction() 
@@ -167,10 +166,10 @@ protected void performAction(SelfHealingOpportunity _opportunity)
 
 Avhengig av detaljene i regelen kan det være mulig å ta en automatisk handling ved hjelp av salgsmulighetsdataene. I dette eksemplet kan systemet generere titler for tilbudsforespørselstilfeller automatisk. 
 
-**securityMenuItem** returnerer navnet på et handlingsmenyelement slik at regelen er bare synlig for brukere som har tilgang til handlingsmenyelementet. Sikkerhet kan kreve at spesifikke regler og muligheter bare er tilgjengelige for autoriserte brukere. I eksemplet er det bare brukere med tilgang til **PurchRFQCaseTitleAction** som kan vise salgsmuligheten. Legg merke til at dette handlingsmenyelementet ble opprettet for dette eksemplet, og ble lagt til som et inngangspunkt for **PurchRFQCaseTableMaintain** -sikkerhetsrettigheten. 
+**securityMenuItem** returnerer navnet på et handlingsmenyelement slik at regelen er bare synlig for brukere som har tilgang til handlingsmenyelementet. Sikkerhet kan kreve at spesifikke regler og muligheter bare er tilgjengelige for autoriserte brukere. I eksemplet er det bare brukere med tilgang til **PurchRFQCaseTitleAction** som kan vise salgsmuligheten. Legg merke til at dette handlingsmenyelementet ble opprettet for dette eksemplet, og ble lagt til som et inngangspunkt for **PurchRFQCaseTableMaintain**-sikkerhetsrettigheten. 
 
 > [!NOTE]
-> Menyelementet må være et handlingsmenyelement for at sikkerhet skal fungere riktig. Andre menyelementtyper, for eksempel **Vis menyelementer** , fungerer ikke riktig.
+> Menyelementet må være et handlingsmenyelement for at sikkerhet skal fungere riktig. Andre menyelementtyper, for eksempel **Vis menyelementer**, fungerer ikke riktig.
 
 ```xpp
 public MenuName securityMenuItem() 
@@ -193,9 +192,9 @@ class ScanNewRulesJob
 } 
 ```
 
-Regelen vil vises i **Valideringsregel for diagnostikk** -skjemaet, som er tilgjengelig fra **Systemadministrasjon** > **Periodiske oppgaver** > **Vedlikehold valideringsregel for diagnostikk** . Hvis du vil at det skal evalueres, går du til **Systemadministrasjon** > **Periodiske oppgaver** > **Planlegg valideringsregel for diagnostikk** og velg frekvens for regelen, for eksempel **Daglig** . Klikk **OK** . Gå til **Systemadministrasjon** > **Optimaliseringsrådgiver** for å vise den nye salgsmuligheten. 
+Regelen vil vises i **Valideringsregel for diagnostikk**-skjemaet, som er tilgjengelig fra **Systemadministrasjon** > **Periodiske oppgaver** > **Vedlikehold valideringsregel for diagnostikk**. Hvis du vil at det skal evalueres, går du til **Systemadministrasjon** > **Periodiske oppgaver** > **Planlegg valideringsregel for diagnostikk** og velg frekvens for regelen, for eksempel **Daglig**. Klikk **OK**. Gå til **Systemadministrasjon** > **Optimaliseringsrådgiver** for å vise den nye salgsmuligheten. 
 
-Eksemplet nedenfor er en kodesnutt med skjelettet til en regel, inkludert alle nødvendige metoder og attributter. Det hjelper deg med å komme i gang med å skrive nye regler. Etikettene og handlingsmenyelementer som brukes i eksemplet, brukes bare til demonstrasjonsformål.
+Eksemplet nedenfor er en kodesnutt med skjelettet til en regel, inkludert alle nødvendige metoder og attributter. Det hjelper deg med å komme i gang med å skrive nye regler. Etikettene og handlingsmenyelementene som brukes i eksemplet, brukes bare til demonstrasjonsformål.
 
 ```xpp
 [DiagnosticsRuleAttribute]

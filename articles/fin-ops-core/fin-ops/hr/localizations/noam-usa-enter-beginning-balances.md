@@ -1,28 +1,27 @@
 ---
 title: Angi startsaldoer for lønn
 description: Emnet beskriver fremgangsmåten for å angi startsaldoer for inntektskoder, fradrag, fordeler og avgifter. Denne informasjonen er nyttig for partnere for å overføre eller overføre data til en ny lønnsimplementering fra et annet system.
-author: kherr75
+author: andreabichsel
 manager: AnnBe
-ms.date: 04/24/2019
+ms.date: 11/20/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: anbichse
-ms.search.scope: Core, Operations
 ms.custom: 20931
 ms.assetid: b48b1cb2-6e66-467e-9c0e-09b6a4aeb9fe
 ms.search.region: Global
-ms.author: kherr
+ms.author: anbichse
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e4bb8f565f5bf5630a7c5f8602b96e569692bc7c
-ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
+ms.openlocfilehash: 4411a6b72dbb7e6f5b1a72df8dbcbd54e265164c
+ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3005684"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "4693408"
 ---
 # <a name="enter-payroll-beginning-balances"></a>Angi startsaldoer for lønn
 
@@ -41,7 +40,7 @@ Emnet beskriver fremgangsmåten for å angi startsaldoer for inntektskoder, frad
 - Firmaet skal har valgt en dato der startsaldoer for lønn kan angis.
 - Informasjonen ble samlet om alle inntekter, fordeler/fradrag, fordelsbidrag, avgifter for ansatte, og arbeidstakeravgifter og arbeidsgiveravgifter deres og år til dato-beløp fra det gamle systemet.
 
-Når du planlegger å skrive inn startsaldoer, bør du vurdere hvor detaljert dataene skal være. De fleste bedrifter angir et enkelt, konsolidert år til dato-beløp. Hvis du trenger mer informasjon, kan du imidlertid angi saldoer kvartalsvis. Når nødvendig detaljnivå bestemmes, bestemmes også hvor mange manuelle lønnsoppgaver som må opprettes for hver arbeider. For ett enkelt år til dato-beløp trengs det bare ett manuelt utdrag for hver ansatt. Hvis vil gjøre dette bruker du år-til-dato-beløp fra den siste lønnsoppgaven fra forrige systemet som beløp som angis i det nye lønningssystemet.
+Når du planlegger å skrive inn startsaldoer, bør du vurdere hvor detaljert dataene skal være. De fleste bedrifter angir et enkelt, konsolidert år til dato-beløp. Hvis du trenger mer informasjon, kan du imidlertid angi saldoer kvartalsvis. Når nødvendig detaljnivå bestemmes, bestemmes også hvor mange manuelle lønnsoppgaver som må opprettes for hver arbeider. For ett enkelt år til dato-beløp trengs det bare ett manuelt utdrag for hver ansatt. Hvis du vil gjøre dette, bruker du år-til-dato-beløp fra den siste lønnsoppgaven fra det forrige systemet som beløp som angis i det nye lønningssystemet.
 
 Følgende eksempel viser hvordan du kan angi startsaldoer for ansattes lønn, inkludert inntektskoder, fordeler/fradrag og avgifter. I et eksempel fra virkeligheten vil du ha et linjeelement for hver inntektskode, fordelsfradrag, fordelsbidrag, ansattavgift og arbeidsgiveravgift med beløpet som er angitt som år-til-dato-beløpet. Ved hjelp av den listen med koder og beløp, følger du trinnene for å opprette en manuell inntekts- og lønnsoppgave med regnskap deaktivert for å overføre startsaldoer til lønnsformål. Du kan deaktivere regnskap fordi du ikke vil postere denne lønnsoppgavens startsaldo i Finans. Som ble gjort i det gamle systemet og kommer til det nye systemet når du angir startsaldoer i økonomimodulen.
 

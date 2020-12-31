@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ERBDWorkspace, ERBDParameters, ERBDTemplateEditor
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-10-01
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: 8c3a905c90f5dd4ad3487f004a958c0dcd52115d
-ms.sourcegitcommit: 71ec2f48185b8104ca52ff70df52263ce5f87f26
+ms.openlocfilehash: fcfbcb021b192cef75d59b0db1796e994f3dc27d
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "3893253"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4681382"
 ---
 # <a name="add-new-fields-to-a-business-document-template-in-microsoft-excel"></a>Legge til nye felt i en forretningsdokumentmal i Microsoft Excel
 
@@ -79,7 +78,7 @@ Siden for BDM-malredigering vises. Du kan bruke Microsoft 365 til å redigere de
 
 2.  Merk cellene **E8:F8**.
 3.  På Excel-båndet i kategorien **Hjem** velger du **Slå sammen og sentrer** for å slå samme de merkede cellene i en ny sammenslått **E8:F8**-celle.
-4.  I den sammenslåtte cellen **E8:F8**skriver du **URL-adresse**.
+4.  I den sammenslåtte cellen **E8:F8** skriver du **URL-adresse**.
 5.  Merk sammenslått celle **E7:F7**, velg **Kopier format**, og velg deretter sammenslått celle **E8:F8** for å formatere den på samme måte som den sammenslåtte cellen **E7:F7**.
 
     ![Ny feltetikett lagt til i malen](./media/BDM-AddFldExcel-EditableTemplate3.png)

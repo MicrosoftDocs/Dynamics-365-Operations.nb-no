@@ -10,19 +10,18 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User
 ms.reviewer: sericks
-ms.search.scope: Core, Operations
 ms.custom: 267914
 ms.assetid: 4e6c7194-a059-4057-bd62-ec0c802c36fd
 ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 210231bb442928674b490d83f50bf787d7bfa60c
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 26d5f165648c1553745e3061cc89bcba42f9636a
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2181019"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4688473"
 ---
 # <a name="open-entity-data-in-excel-and-update-it-by-using-the-excel-add-in"></a>Åpne enhetsdata i Excel og oppdatere dataene ved hjelp av Excel-tillegget
 
@@ -33,12 +32,12 @@ Dette emnet forklarer hvordan du kan åpne enhetsdata i Microsoft Excel, og dere
 Ved å åpne enhetsdata i Excel, kan du raskt og enkelt vise, oppdatere og redigere dataene ved hjelp Excel-tillegget. Dette tillegget krever Microsoft Excel 2016.
 
 > [!NOTE]
-> Hvis Microsoft Azure Active Directory-leieren (Azure AD) er konfigurert til å bruke Active Directory Federation Services (AD FS), må du kontrollere at oppdateringen for Office fra mai 2016 er installert, slik at Excel-tillegg kan logge deg på på riktig måte.
+> Hvis Microsoft Azure Active Directory-leieren (Azure AD) er konfigurert til å bruke Active Directory Federation Services (AD FS), må du kontrollere at oppdateringen for Office fra mai 2016 er installert, slik at Excel-tillegg kan logge deg på på riktig måte.
 
 Hvis du vil vite mer om hvordan du bruker tillegget for Excel, kan du se den korte videoen [Opprette en Excel-mal for hode- og linjemønstre i Dynamics 365 for Finance and Operations](https://youtu.be/RTicLb-6dbI).
 
 ## <a name="open-entity-data-in-excel-when-you-start-from-finance-and-operations"></a>Åpne enhetsdata i Excel når du starter fra Finance and Operations
-1. Velg **Åpne i Microsoft Office** på en side i Finance and Operations.
+1. På en side i Finance and Operations velger du **Åpne i Microsoft Office**.
 
     Hvis rotdatakilden (tabell) for siden er den samme som rotdatakilden for alle enheter, genereres standard **Åpne i Excel**-alternativer for siden. **Åpne i Excel**-alternativer finnes på ofte brukte sider, som **Alle leverandører** og **Alle kunder**.
  

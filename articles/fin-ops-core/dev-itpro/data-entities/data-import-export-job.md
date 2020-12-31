@@ -1,26 +1,25 @@
 ---
 title: Oversikt over dataimport- og -eksportjobber
-description: Bruk arbeidsområdet Datahåndtering for å opprette og administrere dataimport- og -eksportjobber.
+description: Bruk arbeidsområdet for dataadministrasjon for å opprette og administrere dataimport- og -eksportjobber.
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 04/21/2020
+ms.date: 11/02/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application user
 ms.reviewer: sericks
-ms.search.scope: Operations
 ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b25edf9fe09c130ea3d55b11f2698b29c7a39a8b
-ms.sourcegitcommit: e9fadf6f6dafdcefaff8e23eaa3c85f53437db3f
+ms.openlocfilehash: 3af49d9355f37e0016f491ed37050f75bbc65d72
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "3278904"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4684066"
 ---
 # <a name="data-import-and-export-jobs-overview"></a>Oversikt over dataimport- og -eksportjobber
 
@@ -112,7 +111,7 @@ Du kan generere en tilordning på siden ved å velge **Generer kildetilordning**
 ![Datatilordning](./media/dixf-map.png)
 
 ## <a name="verify-the-security-for-your-import-or-export-job"></a>Bekreft sikkerheten for import- eller eksportjobben
-Tilgang til arbeidsområdet **Databehandling** kan være begrenset, så ikke-administratorbrukere kan kun ha tilgang til spesifikke datajobber. Tilgang til et datajobb innebærer full tilgang til utførelsesloggen for den jobben og tilgang til staging-tabellene. Derfor må du sørge for at det er riktig tilgangskontroll på plass når du oppretter en datajobb.
+Tilgang til arbeidsområdet **Dataadministrasjon** kan være begrenset, så ikke-administratorbrukere kan kun ha tilgang til spesifikke datajobber. Tilgang til et datajobb innebærer full tilgang til utførelsesloggen for den jobben og tilgang til staging-tabellene. Derfor må du sørge for at det er riktig tilgangskontroll på plass når du oppretter en datajobb.
 
 ### <a name="secure-a-job-by-roles-and-users"></a>Sikre en jobb med regler og brukere
 Bruk menyen **Tilgangsroller** for å begrense jobben til en eller flere sikkerhetsroller. Kun brukere i disse rollene vil ha tilgang til jobben.
@@ -130,7 +129,7 @@ En jobb kan sikres av roller, brukere og juridiske enheter samtidig.
 Du kan kjøre en jobb én gang ved å velge **Import** eller **Eksport**-knappen etter at du har definert jobben. For å sette opp gjentakende jobber, velg **Opprett gjentakende datajobb**.
 
 > [!NOTE]
-> En import- eller eksportjobb kan kjøres asynkront ved å velge **Import**- eller **Eksport**-knappen. Kjøring i asynkron bruker asynkront rammeverk, som er forskjellig fra det satsvise rammeverket. Men, som i det satsvise rammeverket, kan asynkront rammeverk også gjennomgå begrensning som et resultat, og jobben kjøres kanskje ikke umiddelbart. Jobbene kan også kjøres synkront ved å velge **Importer nå** eller **Eksporter nå**. Dette starter jobben umiddelbart og er nyttig hvis asynkront eller et parti ikke starter på grunn av begrensning. Jobbene kan også utføres i et parti ved å velge **Kjør satsvis**-alternativet. Satsvise ressurser er underlagt begrensning, slik at den satsvise jobben kanskje ikke starter umiddelbart. Asynkron-alternativet er nyttig når brukerne samhandler direkte med brukergrensesnittet, og ikke er privilegerte brukere for å forstå satsvis planlegging. Bruk av et parti er et annet alternativ hvis store volumer må bli importert eller eksportert. Satsvise jobber kan planlegges til å kjøre på en bestemt satsvis gruppe, som gir mer kontroll fra et perspektiv for belastningsfordeling. Hvis både asynkront og parti gjennomgår begrensning på grunn av høy ressursutnyttelse på systemet, kan det som en øyeblikkelig løsning brukes synkron versjon for import/eksport. Synkron-alternativet starter umiddelbart og blokkerer brukergrensesnittet, fordi den kjører synkront. Leservinduet må være åpent når synkron operasjon pågår.
+> En import- eller eksportjobb kan kjøres ved å velge **Import**- eller **Eksport**-knappen. Dermed planlegges en satsvis jobb slik at den bare kjører én gang. Jobben utføres kanskje ikke umiddelbart hvis satsvis tjeneste begrenses på grunn av belastningen på den satsvise tjenesten. Jobbene kan også kjøres synkront ved å velge **Importer nå** eller **Eksporter nå**. Dette starter jobben umiddelbart og er nyttig hvis den satsvise jobben ikke starter på grunn av begrensning. Jobbene kan også planlegges slik at de kjøres på et senere tidspunkt. Du kan gjøre dette ved å velge alternativet **Kjør satsvis**. Satsvise ressurser er underlagt begrensning, slik at den satsvise jobben kanskje ikke starter umiddelbart. Det anbefales at du bruker en satsvis jobb, fordi det også hjelper med store datamengder som må importeres eller eksporteres. Satsvise jobber kan planlegges til å kjøre på en bestemt satsvis gruppe, som gir mer kontroll fra et perspektiv for belastningsfordeling.
 
 ## <a name="validate-that-the-job-ran-as-expected"></a>Bekreft at jobben kjørte som forventet.
 Jobbhistorikken er tilgjengelig for feilsøking og etterforskning på både import- og eksportjobber. Historiske jobber er organisert av tidsintervall.
@@ -155,7 +154,7 @@ Fra utførelsesdetaljene kan du også åpne utførelsesloggen.
 ## <a name="parallel-imports"></a>Parallelle importer
 Hvis du vil importere data raskere, kan parallell behandling av importering av filer aktiveres hvis enheten støtter parallelle importer. Hvis du vil konfigurere den parallelle importen for en enhet, må du følge trinnene nedenfor.
 
-1. Gå til **Systemadministrasjon \> Arbeidsområder \> Databehandling**.
+1. Gå til **Systemadministrasjon \> Arbeidsområder \> Dataadministrasjon**.
 2. I delen **Import/eksport** velger du kategorien **Rammeverkparametere** for å åpne siden **Rammeverkparametere for dataimport/-eksport**.
 3. I kategorien **Enhetsinnstillinger** velger du **Konfigurer parametere for utføring av enhet** for å åpne siden **Parametere for utføring av enhetsimport**.
 4. Angi følgende felt for å konfigurere parallell import for en enhet:
@@ -167,7 +166,7 @@ Hvis du vil importere data raskere, kan parallell behandling av importering av f
 ## <a name="clean-up-the-staging-tables"></a>Rydd opp i staging-tabellene
 Starter i Platform-oppdatering 29, denne funksjonaliteten er avverget. Dette er erstattet av en ny versjon av jobbhistorie oppryddingsfunksjonalitet forklart nedenfor.
 
-Du kan rydde opp i staging-tabellene ved å bruke **Rydd opp i staging**-funksjonen i **Databehandling**-arbeidsområdet. Du kan bruke følgende alternativer for å velge hvilke oppføringer som skal slettes fra hvilke staging-tabeller:
+Du kan rydde opp i staging-tabellene ved å bruke **Rydd opp i staging**-funksjonen i **Dataadministrasjon**-arbeidsområdet. Du kan bruke følgende alternativer for å velge hvilke oppføringer som skal slettes fra hvilke staging-tabeller:
 
 - **Enhet** – Kun hvis en enhet er gitt, vil alle oppføringer fra den enhetens staging-tabeller slettes. Velg dette alternativet for å rydde opp i alle data for enheten på tvers av alle dataprosjekter og alle jobber.
 - **Jobb-ID** – Kun hvis en Jobb-ID er gitt, vil alle oppføringer for alle enheter i den valgte jobben slettes fra de passende staging-tabellene.
@@ -177,7 +176,7 @@ Du kan også kombinere alternativene for å ytterligere begrense oppføringssett
 
 ## <a name="job-history-clean-up-available-in-platform-update-29-and-later"></a>Opprydding i jobbhistorie (tilgjengelig i plattformoppdatering 29 og senere)
 
-Oppryddingsfunksjonen for jobblogg i databehandling må brukes til å planlegge en periodisk opprydding av kjøringsloggen. Denne funksjonaliteten erstatter den tidligere oppryddingsfunksjonaliteten for oppsamlingstabellen, som nå er foreldet. De følgende tabellene vil bli fjernet av oppryddingsprosessen.
+Oppryddingsfunksjonen for jobblogg i dataadministrasjon må brukes til å planlegge en periodisk opprydding av kjøringsloggen. Denne funksjonaliteten erstatter den tidligere oppryddingsfunksjonaliteten for oppsamlingstabellen, som nå er foreldet. De følgende tabellene vil bli fjernet av oppryddingsprosessen.
 
 -   Alle oppsamlingstabeller
 
@@ -195,7 +194,7 @@ Oppryddingsfunksjonen for jobblogg i databehandling må brukes til å planlegge 
 
 -   DMFDEFINITIONGROUPEXECUTION
 
-Funksjonaliteten må aktiveres i funksjonsbehandling, og kan deretter åpnes fra **Databehandling \> Opprydding i jobblogg**.
+Funksjonen **Opprydding i kjøringslogg** må aktiveres i funksjonsbehandling og kan deretter åpnes fra **Dataadministrasjon \> Opprydding i jobblogg**.
 
 ### <a name="scheduling-parameters"></a>Planleggingsparametere
 
@@ -211,3 +210,36 @@ Når du planlegger oppryddingsprosessen, må du angi følgende parametere for å
 
 > [!NOTE]
 > Hvis poster i oppsamlingstabellene ikke ryddes opp fullstendig, kontrollerer du at oppryddingsjobben er planlagt å kjøres i regelmessighet. Som forklart ovenfor, vil jobben bare rydde opp så mange utførelses-ID-er som mulig i løpet av de angitte maksimale timene, i alle oppryddingskjøringer. Hvis du vil fortsette oppryddingen av alle gjenværende oppsamlingsposter, må jobben planlegges å kjøre med jevne mellomrom.
+
+## <a name="job-history-clean-up-and-archival-available-for-preview-in-platform-update-39-or-version-10015"></a>Opprydding i og arkivering av jobblogg (tilgjengelig som forhåndsversjon i Platform update 39 eller versjon 10.0.15)
+Funksjonen for opprydding i og arkivering av jobblogg erstatter de tidligere versjonene av oppryddingsfunksjonen. Denne delen forklarer disse nye funksjonene.
+
+En av hovedendringene i oppryddingsfunksjonen er bruken av systemets satsvise jobb for å rydde opp i loggen. Bruken av systemets satsvise jobb gjør at Finance and Operations-apper kan få den satsvise jobben for opprydding planlagt automatisk så snart systemet er klart. Det er ikke lenger nødvendig å planlegge den satsvise jobben manuelt. I denne standardmodusen for kjøring kjøres den satsvise jobben hver time fra kl. 00:00, og kjøringsloggen for de siste sju dagene beholdes. Den tømte loggen arkiveres for fremtidig henting.
+
+> [!NOTE]
+> Siden denne funksjonaliteten er en forhåndsversjon, vil ikke systemets satsvise jobb slette noen kjøringslogger før den aktiveres via testversjonen DMFEnableExecutionHistoryCleanupSystemJob. Når funksjonen er allment tilgjengelig i en fremtidig versjon, er ikke denne testversjonen nødvendig, og systemets satsvise jobb begynner å tømme og arkivere etter at systemet er klart, basert på den definerte tidsplanen som forklart ovenfor. 
+
+> [!NOTE]
+> I en fremtidig versjon blir de tidligere versjonene av oppryddingsfunksjonen fjernet fra Finance and Operations-apper.
+
+Den andre endringen i oppryddingsprosessen er arkivering av den tømte kjøringsloggen. Oppryddingsjobben arkiverer de slettede postene i BLOB-lageret som DIXF bruker til vanlige integreringer. Den arkiverte filen er i DIXF-pakkeformatet, og er tilgjengelig i sju dager i BLOB-lageret, der det kan lastes ned. Standardlevetiden på sju dager for den arkiverte filen kan endres til maksimalt 90 dager i parameterne.
+
+### <a name="changing-the-default-settings"></a>Endre standardinnstillingene
+Denne funksjonen er for øyeblikket en forhåndsversjon, og du må aktivere den eksplisitt ved å aktivere testversjonen DMFEnableExecutionHistoryCleanupSystemJob. Oppsamlingsfunksjonen for opprydding må også være aktivert i funksjonsbehandling.
+
+Hvis du vil endre standardinnstillingen for levetiden til den arkiverte filen, går du til arbeidsområdet for dataadministrasjon og velger **Opprydding i jobblogg**. Sett **Antall dager å beholde pakke i BLOB** til en verdi mellom 7 og 90 (inklusiv). Denne innstillingen trer i kraft for arkivene som er opprettet etter at denne endringen ble gjort.
+
+### <a name="downloading-the-archived-package"></a>Laste ned den arkiverte pakken
+Denne funksjonen er for øyeblikket en forhåndsversjon, og du må aktivere den eksplisitt ved å aktivere testversjonen DMFEnableExecutionHistoryCleanupSystemJob. Oppsamlingsfunksjonen for opprydding må også være aktivert i funksjonsbehandling.
+
+Hvis du vil laste ned den arkiverte kjøringsloggen, går du til arbeidsområdet for dataadministrasjon og velger **Opprydding i jobblogg**. Velg **Logg for sikkerhetskopiering av pakke** for å åpne loggskjemaet. Dette skjemaet viser listen over alle arkiverte pakker. Du kan velge og laste ned et arkiv ved å velge **Last ned pakke**. Den nedlastede pakken er i DIXF-pakkeformatet og inneholder følgende filer:
+
+-   Oppsamlingstabellfilen for enheter
+-   DMFDEFINITIONGROUPEXECUTION
+-   DMFDEFINITIONGROUPEXECUTIONHISTORY
+-   DMFEXECUTION
+-   DMFSTAGINGEXECUTIONERRORS
+-   DMFSTAGINGLOG
+-   DMFSTAGINGLOGDETAILS
+-   DMFSTAGINGVALIDATIONLOG
+

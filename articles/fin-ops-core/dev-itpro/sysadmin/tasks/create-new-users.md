@@ -1,7 +1,7 @@
 ---
 title: Opprette nye brukere
 description: Brukere er interne ansatte i din organisasjon, eller eksterne kunder og leverandører, som trenger tilgang til systemet for å utføre jobbene sine.
-author: maertenm
+author: peakerbl
 manager: AnnBe
 ms.date: 06/08/2020
 ms.topic: business-process
@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: SysUserManagement, SysDataAreaSelectLookup, SysSecUserAddRoles, SysUserMSODSUserImport
 audience: Application User
 ms.reviewer: sericks
-ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: sericks
+ms.author: peakerbl
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 5e84130ff2b1cf83b7d2b95eefc72175dc57743c
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.openlocfilehash: 6f861b7493d039b332358be7df7d0198cbadcb7a
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3982508"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4679846"
 ---
 # <a name="create-new-users"></a>Opprette nye brukere
 
@@ -38,21 +37,21 @@ Systemadministratorer kan [tilordne lisenser til brukere](https://docs.microsoft
 Brukere utenfor leieren som miljøet ble distribuert i, må representeres i katalogen for vertsleierkatalogen (Azure Active Directory (Azure AD)) slik at de kan tilordnes lisenser. Disse eksterne brukerne må legges til for leieren i Azure AD som gjestebrukere og deretter tilordnes de aktuelle lisensene. Hvis du vil ha mer informasjon, kan du se [Legge til Azure Active Directory B2B-samarbeidsbrukere i Azure-portalen](https://docs.microsoft.com/azure/active-directory/b2b/add-users-administrator).
 
 ## <a name="add-a-new-user"></a>Legge til en ny bruker
-1. Gå til **Systemadministrasjon \> Brukere \> Brukere** .
+1. Gå til **Systemadministrasjon \> Brukere \> Brukere**.
 2. Velg **Ny** i handlingsruten.
-3. I **Bruker-ID** -feltet angir du en unik ID for brukeren. En bruker-ID er nødvendig.  
-4. Angi navnet på brukeren i **Brukernavn** -feltet.  
-5. I **Domene** -feltet angir du brukerens domene.  
-6. Angi brukerens alias i **Alias** -feltet.  
-7. Velg ønsket firma i **Firma** -feltet. 
-8. I **Brukerens roller** -hurtigfanen en velger du **Tilordne roller** for å tilordne brukere til sikkerhetsroller. Hvis du vil ha mer informasjon, kan du se [Tilordne brukere til sikkerhetsroller](assign-users-security-roles.md).
-9. Velg **OK** .
-10. Velg **Lagre** .
+3. I **Bruker-ID**-feltet angir du en unik ID for brukeren. En bruker-ID er nødvendig.  
+4. Angi navnet på brukeren i **Brukernavn**-feltet.  
+5. I **Domene**-feltet angir du brukerens domene.  
+6. Angi brukerens alias i **Alias**-feltet.  
+7. Velg ønsket firma i **Firma**-feltet. 
+8. I **Brukerens roller**-hurtigfanen en velger du **Tilordne roller** for å tilordne brukere til sikkerhetsroller. Hvis du vil ha mer informasjon, kan du se [Tilordne brukere til sikkerhetsroller](assign-users-security-roles.md).
+9. Velg **OK**.
+10. Velg **Lagre**.
 
 ## <a name="import-users"></a>Importer brukere
-1. Gå til **Systemadministrasjon \> Brukere \> Brukere** .
+1. Gå til **Systemadministrasjon \> Brukere \> Brukere**.
 2. Velg **Importer brukere** i handlingsruten.
 3. Merk den valgte raden i listen.
-4. Velg **Importer brukere** .
-5. Velg **Lukk** .
+4. Velg **Importer brukere**.
+5. Velg **Lukk**.
 

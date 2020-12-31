@@ -19,11 +19,11 @@ ms.author: roschlom
 ms.search.validFrom: 2019-08-14
 ms.dyn365.ops.version: 10.0.6
 ms.openlocfilehash: 51d43c8e6d16201e1f8c392c13ead20287782dcc
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3983603"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4446249"
 ---
 # <a name="sales-tax-calculation-on-general-journal-lines"></a>Mva-beregning på generelle journallinjer
 [!include [banner](../includes/banner.md)]
@@ -44,7 +44,7 @@ Hvordan mva-retningen bestemmes avhenger av kontotypen i bilaget. Mva-retningen 
 
 ### <a name="account-type-is-project"></a>Kontotype er Prosjekt
 
-Hvis et bilag har journallinje der kontotypen er **Prosjekt** , vil alle journallinjene i bilaget bruke samme mva-retning. Illustrasjonen nedenfor viser regelen. Punktene nedenfor viser de mulige avgiftsretningene for prosjektkontoer.
+Hvis et bilag har journallinje der kontotypen er **Prosjekt**, vil alle journallinjene i bilaget bruke samme mva-retning. Illustrasjonen nedenfor viser regelen. Punktene nedenfor viser de mulige avgiftsretningene for prosjektkontoer.
 
 •   Hvis mva-koden er use tax, er mva-retningen use tax.
 
@@ -62,7 +62,7 @@ Diagrammet nedenfor illustrerer regelen grafisk.
 
 ### <a name="account-type-is-vendor"></a>Kontotype er Leverandør
 
-Hvis et bilag har journallinje der kontotypen er **Leverandør** , vil alle journallinjene i bilaget bruke samme mva-retning. Punktene nedenfor viser de mulige avgiftsretningene for leverandørkontoer. 
+Hvis et bilag har journallinje der kontotypen er **Leverandør**, vil alle journallinjene i bilaget bruke samme mva-retning. Punktene nedenfor viser de mulige avgiftsretningene for leverandørkontoer. 
 
 •   Hvis mva-koden er use tax, er mva-retningen use tax.
 
@@ -80,7 +80,7 @@ Diagrammet nedenfor illustrerer regelen grafisk.
 
 ### <a name="account-type-is-customer"></a>Kontotype er Kunde
 
-Hvis et bilag har journallinje der kontotypen er **Kunde** , vil alle journallinjene i bilaget bruke samme mva-retning. Punktene nedenfor viser de mulige avgiftsretningene for kundekontoer.
+Hvis et bilag har journallinje der kontotypen er **Kunde**, vil alle journallinjene i bilaget bruke samme mva-retning. Punktene nedenfor viser de mulige avgiftsretningene for kundekontoer.
 
 •   Hvis mva-koden er avgiftsfritak, er mva-retningen avgiftsfritt kjøp.
 
@@ -96,7 +96,7 @@ Diagrammet nedenfor illustrerer regelen grafisk.
 
 ### <a name="account-type-is-ledger"></a>Kontotype er Finans
 
-Illustrasjonen nedenfor viser regelen som gjelder når et bilag bare har journallinjer der kontotypen er **Finans** . Punktene nedenfor viser de mulige avgiftsretningene for finanskontoer.
+Illustrasjonen nedenfor viser regelen som gjelder når et bilag bare har journallinjer der kontotypen er **Finans**. Punktene nedenfor viser de mulige avgiftsretningene for finanskontoer.
 
 •   Hvis mva-koden er use tax, er mva-retningen use tax.
 
@@ -112,7 +112,7 @@ Diagrammet nedenfor illustrerer regelen grafisk.
 
 Du kan overstyre mva-retningen når bilaget bare inneholder linjer der kontotypen er **Finans.**
 
-Gå til **Økonomimodul \> Kontoplan \> Kontoer \> Hovedkontoer** , og velg hurtigfanen **Overstyringer for juridisk enhet** .
+Gå til **Økonomimodul \> Kontoplan \> Kontoer \> Hovedkontoer**, og velg hurtigfanen **Overstyringer for juridisk enhet**.
 
 ## <a name="determine-the-sales-tax-amount"></a>Fastslå mva-beløp
 
@@ -129,7 +129,7 @@ Tabellen nedenfor viser den generelle regelen for å fastslå fortegnet for mva-
 | Negativ            | Innkommende merverdiavgift | Negativ              |
 | Negativ            | Utgående merverdiavgift    | Positiv              |
 
-Det finnes en spesialregel for bilag som bare har **Prosjekt** - eller **Finans** -linjer når det velges en mva-gruppe eller en mva-gruppe for vare på **Finans** -linjen. Denne regelen styres ved hjelp av funksjonen Aktiver uavhengig beregning av merverdiavgift for generelle journaler. Når denne funksjonen er deaktivert, bruker avgiftsbeløpet **Finans** -linjen debet-/kreditretningen for **Prosjekt** -linjen. Når denne funksjonen er aktivert, bruker avgiftsbeløpet **Finans** -linjen sin egen debet-/kreditretning. Tabellene nedenfor viser regelen for hvert scenario. 
+Det finnes en spesialregel for bilag som bare har **Prosjekt**- eller **Finans**-linjer når det velges en mva-gruppe eller en mva-gruppe for vare på **Finans**-linjen. Denne regelen styres ved hjelp av funksjonen Aktiver uavhengig beregning av merverdiavgift for generelle journaler. Når denne funksjonen er deaktivert, bruker avgiftsbeløpet **Finans**-linjen debet-/kreditretningen for **Prosjekt**-linjen. Når denne funksjonen er aktivert, bruker avgiftsbeløpet **Finans**-linjen sin egen debet-/kreditretning. Tabellene nedenfor viser regelen for hvert scenario. 
 
 **Regel når funksjonen er aktivert**
 

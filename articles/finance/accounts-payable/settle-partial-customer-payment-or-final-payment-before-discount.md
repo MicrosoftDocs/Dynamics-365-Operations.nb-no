@@ -19,11 +19,11 @@ ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: f9ae9218a85c50582c8c4999da463833fc91d260
-ms.sourcegitcommit: d61c43b6bc04bb8786aa3c47932be0ccd84ebaeb
+ms.sourcegitcommit: b40d6ce45aeb07724fc41d1a41923970b007fbcf
 ms.translationtype: HT
 ms.contentlocale: nb-NO
 ms.lasthandoff: 10/14/2020
-ms.locfileid: "4006121"
+ms.locfileid: "4446561"
 ---
 # <a name="settle-a-partial-customer-payment-and-the-final-payment-in-full-before-the-discount-date"></a>Utligne en delvis kundebetaling og den endelige betalingen i sin helhet før rabattdatoen
 
@@ -71,7 +71,7 @@ Kunde 4028 sender en betaling på 500,00 1. juli. For å registrere denne betali
 | 5,05                         | 0,00                | 500,00        |
 
 ## <a name="partial-payment-by-using-the-journal-lines"></a>Delbetaling ved hjelp av journallinjene
-I stedet for å åpne siden **Angi kundebetalinger** i betalingsjournalen kan Magnus klikk **Linjer** for å angi en betaling. Betalingsjournalen vises, der Magnus kan angi en linje for kunde 4028. Magnus åpner deretter **Utlign transaksjoner** -siden, slik at han kan merke av fakturaen for utligning. Magnus markerer fakturaen og endrer verdien i feltet **Beløp som skal utlignes** til **500,00**. Han ser igjen at verdien i feltet **Kontantrabattbeløp** er **10,00** for hele fakturaen, og at verdien i feltet **Kontantrabattbeløp som skal brukes** er **5,05**. Magnus utligner derfor 505,05 av denne fakturaen.
+I stedet for å åpne siden **Angi kundebetalinger** i betalingsjournalen kan Magnus klikk **Linjer** for å angi en betaling. Betalingsjournalen vises, der Magnus kan angi en linje for kunde 4028. Magnus åpner deretter **Utlign transaksjoner**-siden, slik at han kan merke av fakturaen for utligning. Magnus markerer fakturaen og endrer verdien i feltet **Beløp som skal utlignes** til **500,00**. Han ser igjen at verdien i feltet **Kontantrabattbeløp** er **10,00** for hele fakturaen, og at verdien i feltet **Kontantrabattbeløp som skal brukes** er **5,05**. Magnus utligner derfor 505,05 av denne fakturaen.
 
 | Merk     | Bruk kontantrabatt | Bilag   | Konto | Dato      | Forfallsdato  | Faktura | Beløp i transaksjonsvaluta | Valuta | Beløp som skal utlignes |
 |----------|-------------------|-----------|---------|-----------|-----------|---------|--------------------------------|----------|------------------|
@@ -112,7 +112,7 @@ Magnus lukker siden **Utlign transaksjoner**. Det opprettes en betalingslinje fo
 | DISC-10010 |  Kontantrabatt   | 1/7/2015  |         |                                      | 5,00                                  | 0,00    | USD      |
 
 ## <a name="payment-for-the-remaining-amount"></a>Betaling for det gjenstående beløpet
-Kunde 4028 betaler det gjenstående beløpet på 495,00 8. juli som er i kontantrabattperioden. Magnus lager betalingsjournalen 8. juli og merker transaksjonen for utligning. Han ser at beløpet som skal utlignes, er 495,00. Verdien i feltet **Beregnet kontantrabatt** er **5,00** , fordi rabatten på 5,00 tidligere ble brukt.
+Kunde 4028 betaler det gjenstående beløpet på 495,00 8. juli som er i kontantrabattperioden. Magnus lager betalingsjournalen 8. juli og merker transaksjonen for utligning. Han ser at beløpet som skal utlignes, er 495,00. Verdien i feltet **Beregnet kontantrabatt** er **5,00**, fordi rabatten på 5,00 tidligere ble brukt.
 
 |   &nbsp;                | &nbsp; |
 |-------------------------|--------|

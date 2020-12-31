@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: FinancialReports
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 68843
 ms.assetid: 271df6f4-12b7-4b3e-b2d7-36ea98ef1871
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: c682ed96e47c718d3a9af1eb10aada75c59d3156
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: e8b688cb1e4589eb076015d01dc4f0f0db14787e
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2181847"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4688323"
 ---
 # <a name="generate-financial-reports"></a>Generer finansrapporter
 
@@ -98,7 +97,7 @@ Hvis du vil slette en rapporttidsplan, må du være eier av rapporttidsplanen el
 
 Hvis du ikke angir legitimasjoner som kreves for alle firmaer i rapportene, får du en feilmelding når du lagrer rapporttidsplanen: "Du må angi legitimasjon for firmaene som finnes i denne rapporttidsplanen. Velg Tillatelser for å angi legitimasjonen."
 
-Phyllis logger for eksempel på Firma A ved hjelp av sin påloggingsinformasjon og sitt passord. Hun oppretter en tidsplan for en rapport som bruker en rapporteringtredefinisjon til å samle inn data fra flere firmaer. Når rapportplanen lagres, blir Phyllis bedt om å angi legitimasjonen for de andre firmaene som er angitt i definisjonen av rapporteringstre. Når legitimasjonen utløper, genereres ikke de berørte rapportene i rapporttidsplanen før legitimasjonene er blitt oppdaterte. Det vises en melding i rapportkøen for å angi at tillatelsene må oppdateres. Rapporttidsplanen mislykkes hvis en av følgende situasjoner oppstår (fordi de krever legitimasjon):
+En bruker logger for eksempel på Firma A ved hjelp av påloggingsinformasjon og passord. Brukeren oppretter en tidsplan for en rapport som bruker en rapporteringtredefinisjon til å samle inn data fra flere firmaer. Når rapportplanen lagres, blir brukeren bedt om å angi legitimasjonen for de andre firmaene som er angitt i definisjonen av rapporteringstre. Når legitimasjonen utløper, genereres ikke de berørte rapportene i rapporttidsplanen før legitimasjonene er blitt oppdaterte. Det vises en melding i rapportkøen for å angi at tillatelsene må oppdateres. Rapporttidsplanen mislykkes hvis en av følgende situasjoner oppstår (fordi de krever legitimasjon):
 
 - Et nytt firma er lagt til i et rapporttre for en enkeltrapport.
 - En rapport i en rapportgruppe har blitt endret.

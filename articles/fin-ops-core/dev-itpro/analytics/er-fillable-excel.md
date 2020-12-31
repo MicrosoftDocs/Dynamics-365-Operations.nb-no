@@ -3,7 +3,7 @@ title: Utforme en konfigurasjon til å generere dokumenter i Excel-format
 description: Dette emnet inneholder informasjon om hvordan du utformer et format for elektronisk rapportering (ER) for å fylle ut en Excel-mal, og deretter generere utgående dokumenter i Excel-format.
 author: NickSelin
 manager: AnnBe
-ms.date: 05/14/2020
+ms.date: 11/02/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: EROperationDesigner, ERParameters
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 220314
 ms.assetid: 2685df16-5ec8-4fd7-9495-c0f653e82567
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: e889b08f10c5d0c95fed7c9e422340706bdd154a
-ms.sourcegitcommit: 67ce81c57194afb26a04ae4c0b7509e0efa32afc
+ms.openlocfilehash: d5733e40c67f9c97b04f126f7c3cfea9d4f8f5b5
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "3375819"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4686544"
 ---
 # <a name="design-a-configuration-for-generating-documents-in-excel-format"></a>Utforme en konfigurasjon til å generere dokumenter i Excel-format
 
@@ -165,6 +164,17 @@ Når du validerer et ER-format som kan redigeres, utføres det en konsekvenskont
 
 ![Valideringsfeilmelding](./media/er-excel-format-validate.png)
 
+## <a name="control-the-calculation-of-excel-formulas"></a>Kontrollere beregningen av Excel-formler
+
+Når et utgående dokument i et Microsoft Excel-arbeidsbokformat genereres, kan noen celler i dokumentet inneholde Excel-formler. Når funksjonen for **Aktivere bruken av EPPlus-bibliotek i Rammeverk for elektronisk rapportering** er aktivert, kan du styre når formlene skal beregnes, ved å endre verdien for **Beregningsalternativer**-[parameteren](https://support.microsoft.com/office/change-formula-recalculation-iteration-or-precision-in-excel-73fc7dac-91cf-4d36-86e8-67124f6bcce4#ID0EAACAAA=Windows) i Excel-malen som brukes:
+
+- Velg **Automatisk** for å omberegne alle avhengige formler hver gang et generert dokument føyes til av nye områder, celler osv.
+    >[!NOTE]
+    > Dette kan føre til ytelsesproblemer for Excel-maler som inneholder flere relaterte formler.
+- Velg **Manuell** for å unngå omberegning av formler når et dokument genereres.
+    >[!NOTE]
+    > Omberegning av formler tvinges manuelt når et generert dokument åpnes for forhåndsvisning ved hjelp av Excel.
+    > Ikke bruk dette alternativet hvis du konfigurerer et ER-mål som forutsetter bruken av et generert dokument uten forhåndsvisningen i Excel (PDF-konvertering, e-post og så videre), fordi det genererte dokumentet kanskje ikke inneholder verdier i celler som inneholder formler.
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 

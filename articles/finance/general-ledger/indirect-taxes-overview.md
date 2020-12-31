@@ -19,11 +19,11 @@ ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: a3dacc755b3d4d3b5c7f51f6bac7c2e9c62773ba
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3975033"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4446448"
 ---
 # <a name="sales-tax-overview"></a>Oversikt over merverdiavgift
 
@@ -46,7 +46,7 @@ Hver mva-kode må være koblet til en mva-utligningsperiode. Mva-utligningsperio
 
 Hver mva-kode må også være koblet til en finansposteringsgruppe. En finansposteringsgruppe angir hovedkontoene som beløpene for mva-kodene skal posteres til. 
 
-Du kan også definere valgfrie mva-rapporteringskoder. Disse kan tilordnes på mva-koder for de ulike beløpstypene som beregnes for mva-koden. **Mva-betaling etter rapporteringskode** -rapporten viser totaler per mva-rapporteringskode for en gitt mva-utligningsperiode og intervall. 
+Du kan også definere valgfrie mva-rapporteringskoder. Disse kan tilordnes på mva-koder for de ulike beløpstypene som beregnes for mva-koden. **Mva-betaling etter rapporteringskode**-rapporten viser totaler per mva-rapporteringskode for en gitt mva-utligningsperiode og intervall. 
 
 Hver transaksjon som merverdiavgift må beregnes og posteres for, må ha en mva-gruppe og en mva-gruppe for vare. Mva-grupper er knyttet til parten (for eksempel kunde eller leverandør) i transaksjonen, mens mva-grupper for varer er knyttet til ressursen (for eksempel vare- eller innkjøpskategori) for transaksjonen. Mva-grupper inneholder en liste over avgiftskoder. Avgiftskodene som finnes i både mva-gruppen og mva-gruppen for vare for en transaksjon, er mva-koden som gjelder for transaksjonen. 
 
@@ -67,10 +67,10 @@ Tabellen nedenfor beskriver enhetene og rekkefølgen for mva-oppsettet.
 ## <a name="sales-tax-on-transactions"></a>Merverdiavgift på transaksjoner
 På hver transaksjon (salg/kjøp-dokumentlinjer, journaler og så videre), må du angi en mva-gruppe og en mva-gruppe for vare for å beregne merverdiavgift. Standardgrupper angis i hoveddata (for eksempel kunde, leverandør, vare og innkjøpskategori), men du kan endre gruppene i en transaksjon manuelt om nødvendig. Begge gruppene inneholder en liste over mva-koder, og skjæringspunktet mellom de to listene med mva-koder bestemmer listen over aktuelle mva-koder for transaksjonen. 
 
-For hver transaksjon kan du slå opp den beregnede merverdiavgiften ved å åpne **Mva-transaksjon** -siden. Du kan slå opp merverdiavgiften for en dokumentlinje eller for hele dokumentet. Du kan justere den beregnede merverdiavgiften for bestemte dokumenter (for eksempel leverandørfaktura og økonomijournaler) hvis det opprinnelige dokumentet viser beløp som er avvikende.
+For hver transaksjon kan du slå opp den beregnede merverdiavgiften ved å åpne **Mva-transaksjon**-siden. Du kan slå opp merverdiavgiften for en dokumentlinje eller for hele dokumentet. Du kan justere den beregnede merverdiavgiften for bestemte dokumenter (for eksempel leverandørfaktura og økonomijournaler) hvis det opprinnelige dokumentet viser beløp som er avvikende.
 
 ## <a name="sales-tax-settlement-and-reporting"></a>Mva-utligning og -rapportering
-Merverdiavgift må rapporteres og betales til skattemyndighetene i regulerte intervaller (månedlig, kvartalsvis og så videre). Du kan utligne avgiftskontoer for intervallet og forskyve saldoene til mva-oppgjørskontoen, som angitt i finansposteringsgruppene. Du får tilgang til denne funksjonaliteten på siden **Utlign og poster merverdiavgift** . Du må angi mva-utligningsperioden som merverdiavgiften skal utlignes for. 
+Merverdiavgift må rapporteres og betales til skattemyndighetene i regulerte intervaller (månedlig, kvartalsvis og så videre). Du kan utligne avgiftskontoer for intervallet og forskyve saldoene til mva-oppgjørskontoen, som angitt i finansposteringsgruppene. Du får tilgang til denne funksjonaliteten på siden **Utlign og poster merverdiavgift**. Du må angi mva-utligningsperioden som merverdiavgiften skal utlignes for. 
 
 Etter at merverdiavgiften er betalt skal saldoen på mva-oppgjørskontoen balanseres mot bankkontoen. Hvis skattemyndigheten som er angitt for utligningsperioden for merverdiavgift, er knyttet til en leverandørkonto, posteres mva-saldoen som en åpen leverandørfaktura og kan inkluderes i det vanlige betalingsforslaget.
 
@@ -94,6 +94,6 @@ Hvis du bruker en betinget mva, utligner du imidlertid med skattemyndighetene n�
 
 ### <a name="postdated-check"></a>Etterdatert sjekk
 
-Hvis du bruker etterdatert sjekk som betalingsmåte når betalingen opprettes, blir ikke bankkontoen tømt. I noen land blir mva "realisert" gjeld når betalingen fjerner banken, som betyr at den etterdaterte sjekken er utlignet. Du kan aktivere den ved å velge alternativet for **Realiser betinget merverdiavgift når etterdaterte sjekker trekkes** i **Kontant- og bankbehandling > Oppsett > Parametere for kontant- og bankbehandling > Etterdaterte sjekker** .
+Hvis du bruker etterdatert sjekk som betalingsmåte når betalingen opprettes, blir ikke bankkontoen tømt. I noen land blir mva "realisert" gjeld når betalingen fjerner banken, som betyr at den etterdaterte sjekken er utlignet. Du kan aktivere den ved å velge alternativet for **Realiser betinget merverdiavgift når etterdaterte sjekker trekkes** i **Kontant- og bankbehandling > Oppsett > Parametere for kontant- og bankbehandling > Etterdaterte sjekker**.
 
 Hvis du vil ha mer informasjon, kan du se [Definere kildeskattgrupper](tasks/set-up-withholding-tax.md).

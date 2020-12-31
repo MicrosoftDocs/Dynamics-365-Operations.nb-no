@@ -17,11 +17,11 @@ ms.author: shpandey
 ms.search.validFrom: 2017-08-26
 ms.dyn365.ops.version: 10.0.13
 ms.openlocfilehash: db59bad2ed3caf38f22bd4d6059e57747d1d983f
-ms.sourcegitcommit: 241ada0945c72d769eaa70ae35aedbb6a3233fdf
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "3760625"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4446266"
 ---
 # <a name="collections-process-automation"></a>Automatisering av innkrevingsprosess
 
@@ -66,7 +66,7 @@ Tabellene nedenfor viser en liste over sidene og feltene som de angitte hurtigka
 
 ### <a name="process-hierarchy"></a>Prosesshierarki
 
-|     Side                                                  |     Felt                         |     beskrivelse                           |
+|     Side                                                  |     Felt                         |     Beskrivelse                           |
 | --------------------------------------------------------  |-------------------------------    |---------------------------------------    |
 |     Oppsett av innkrevingsprosess <br> Prosessautomatisering       |                                   |     Opprett og behandle innkrevingsprosesser basert på tilordning av kundeutvalg.                                                                                                                             |
 |     Oppsett av innkrevingsprosess <br> Prosessautomatisering       |     Hierarki                     |     Definerer prosessautomatisering som brukes til å tilordne en kunde hvis de tilhører flere utvalg.                                                                                                   |
@@ -75,10 +75,10 @@ Tabellene nedenfor viser en liste over sidene og feltene som de angitte hurtigka
 |     Oppsett av innkrevingsprosess <br> Prosessautomatisering       |     Utelat fra prosess        |     Hvis du velger **Kundealdersfordelingssaldo mindre enn** eller **Fakturabeløp mindre enn**, utelates en kunde fra prosessautomatisering hvis verdikriteriene ikke er oppfylt.                                   |
 
 ### <a name="process-details"></a>Prosessdetaljer
-|     Side                                                  |     Felt                                         |      beskrivelse                  |
+|     Side                                                  |     Felt                                         |      Beskrivelse                  |
 |--------------------------------------------------------   |-----------------------------------------------    |----------------------------   |
 |     Oppsett av innkrevingsprosess <br> Prosessautomatisering       |                                                   |     Definer trinnene som er tatt på grunnlag av den ledende fakturaen.                                                                                                |
-|                                                           |     beskrivelse                                   |     Fritekstfelt som brukes til å gi et navn og/eller en beskrivelse av trinnet.                                                                           |
+|                                                           |     Beskrivelse                                   |     Fritekstfelt som brukes til å gi et navn og/eller en beskrivelse av trinnet.                                                                           |
 |                                                           |     Handlingstype                                   |     Aktivitet, e-post eller purring som vil bli opprettet ved hjelp av prosesstrinnet.                                                                     |
 |                                                           |     Forretningsdokument                           |     Definerer aktiviteten eller e-postmalen som brukes under prosesstrinnet.                                                                        |
 |                                                           |     Når                                          |     Definerer om prosesstrinnet skal skje før eller etter den ledende forfallsdatoen for fakturaen sammen med feltet **Dager i forhold til fakturaens forfallsdato**.        |
@@ -87,24 +87,24 @@ Tabellene nedenfor viser en liste over sidene og feltene som de angitte hurtigka
 |                                                           |     Kontakt for forretningsformål                    |     Bestemmer hvilken mottakerens e-postadresse som brukes i e-postkommunikasjon.                                                                                 |
 
 ### <a name="business-process-activity-template-details"></a>Maldetaljer for forretningsprosessaktivitet 
-|     Side                                                  |     Felt                     |      beskrivelse                  |
+|     Side                                                  |     Felt                     |      Beskrivelse                  |
 |--------------------------------------------------------   |----------------------------   |-------------------------  |
 |     Oppsett av innkrevingsprosess <br> Prosessautomatisering       |                               |     Delen av oppsettprosessen som identifiserer detaljene i aktivitetsmalen.                                                                      |
 |     Oppsett av innkrevingsprosess <br> Prosessautomatisering       |     Aktivitetsmal       |     Identifiserer type, formål, antall dager som skal fullføres, og gir informasjon om aktiviteten som vil bli opprettet under et aktivitetstrinn for prosessen.       |
 
 ### <a name="business-document-email-template-details"></a>Detaljer for e-postmal for forretningsdokument 
-|     Side                                                  |     Felt     |      beskrivelse                  |
+|     Side                                                  |     Felt     |      Beskrivelse                  |
 |--------------------------------------------------------   |-------------- |-----------------------------  |
 |     Oppsett av innkrevingsprosess <br> Prosessautomatisering       |               |     Identifiserer e-postbeskrivelsen, standardspråket, avsendere og e-postadressen som blir opprettet under et prosesstrinn for en e-post.        |
 
 
 ### <a name="collections-history"></a>Innkrevingshistorikk 
-|     Side                              |     Felt     |      beskrivelse                                                          |
+|     Side                              |     Felt     |      Beskrivelse                                                          |
 |------------------------------------   |-------------- |---------------------------------------------------------------------  |
 |     Oppsett av innkrevingsprosess       |               |     Vis den nylige historikken for det valgte prosesshierarkiet.     |
 
 ### <a name="collection-process-assignment"></a>Tilordning for innkrevingsprosess
-|     Side                              |     Felt     |      beskrivelse                                                  |
+|     Side                              |     Felt     |      Beskrivelse                                                  |
 |------------------------------------   |-------------- |-----------------------------------------------------------    |
 |     Oppsett av innkrevingsprosess       |               |     Vis kunder som er tilordnet en innkrevingsprosess.  
 |     Manuell tilordning               |               |     Vis kunder som er manuelt tilordnet til en prosess, eller velg kunder som skal tilordnes til en prosess. |
@@ -112,7 +112,7 @@ Tabellene nedenfor viser en liste over sidene og feltene som de angitte hurtigka
 |     Forhåndsvis kundetilordning     |               |     Vis strategien som en bestemt kunde er tilordnet.    |
  
 ### <a name="parameters"></a>Parametere
-|     Side                                                                  |     Felt                                             |      beskrivelse                              |
+|     Side                                                                  |     Felt                                             |      Beskrivelse                              |
 |-------------------------------------------------------------------------- |------------------------------------------------------ |-------------------------------------  |
 |     Parametere for kunde > Automatisering av innkrevingsprosess     |     Prosent av kunder per satsvis oppgave          |     Innstilling for å fastslå antall satsvise oppgaver per automatiseringsprosess.                                          |
 |     Parametere for kunde > Automatisering av innkrevingsprosess     |     Poster purringer automatisk           |     Handlingstyper for purringer vil postere purringen i løpet av automatiseringen.                                      |

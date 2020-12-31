@@ -16,12 +16,12 @@ ms.search.region: Norway
 ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 08dca34be75800ddd4320d33ea5fa4b1568d25f4
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.openlocfilehash: 1ae837a0d0c27e50d371ae5c851a2566d71c6be6
+ms.sourcegitcommit: cfd84321fba38e02e270d361df369a536a48efa3
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3985956"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "4512194"
 ---
 # <a name="norway-overview"></a>Oversikt over Norge
 
@@ -36,3 +36,4 @@ Dette emnet inneholder koblinger til dokumentasjonsressurser for Norge.
 - [Standard revisjonsfil for avgift (SAF-T)](emea-nor-satndard-audit-file-for-tax.md)
 - [Kassefunksjonalitet](../../retail/localizations/emea-nor-cash-registers.md)
 - [Retningslinjer for distribusjon for kassaapparater](../../retail/localizations/emea-nor-loc-deployment-guidelines.md)
+- [Eksport av elektroniske fakturaer for kunde](emea-nor-e-invoices.md)

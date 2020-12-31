@@ -3,7 +3,7 @@ title: Oversikt over automatiserte prosesser for leverandørfakturering
 description: Dette emnet beskriver muligheten til å automatisere behandling av leverandørfakturering og fordelene ved å bruke en automatisert prosess.
 author: abruer
 manager: AnnBe
-ms.date: 10/16/2020
+ms.date: 11/06/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2017-08-30
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: ec3598ebd158cc23ac7c02d7e33557141d5901bc
-ms.sourcegitcommit: 9e7ceb5604472f3088f611aa0360bd6a716db32b
+ms.openlocfilehash: 677760ec15630a11bf691be4cd8af9cf5549ddf9
+ms.sourcegitcommit: 9c05d48f6e03532aa711e1d89d0b2981e9d37200
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4022502"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "4665328"
 ---
 # <a name="automated-vendor-invoicing-processes-overview"></a>Oversikt over automatiserte prosesser for leverandørfakturering
 
@@ -39,8 +39,9 @@ Automatiseringsprosessene kan brukes til å utføre følgende oppgaver:
 - Send automatisk importerte fakturaer til arbeidsflytsystemet.
 - Samsvare produktkvitteringer med ventende leverandørfakturalinjer.
 - Simulere postering før en leverandørfaktura posteres.
-- Vise arbeidsflytloggen på en rask og effektiv måte.
+- Vise loggen for arbeidsflyt og automatisering raskt og effektivt.
 - Vise og analysere resultatene av automatisering av behandling av leverandørfaktura.
+- Gjenoppta automatisert behandling for flere fakturaer.
 
 ## <a name="vendor-invoice-automation--submit-imported-vendor-invoices-to-the-workflow-system"></a>Automatisering av leverandørfaktura – Sende importerte leverandørfakturaer til arbeidsflytsystemet
 
@@ -58,10 +59,13 @@ Systemet kan automatisk sammenligne posterte produktkvitteringer med fakturalinj
 
 Posteringssimulering fullfører valideringstrinnene som utføres under posteringsprosessen for leverandørfakturaer, men ingen kontoer oppdateres. Når du skal kjøre en prosess, kan du velge én eller flere fakturaer på siden **Ventende leverandørfakturaer**.
 
-## <a name="vendor-invoice-automation--enhanced-experience-for-viewing-workflow-historical-information-for-vendor-invoices"></a>Automatisering av leverandørfaktura – Forbedret opplevelse for visning av historisk informasjon om arbeidsflyt for leverandørfakturaer
+## <a name="vendor-invoice-automation--enhanced-experience-for-viewing-workflow-and-automation-historical-information-for-vendor-invoices"></a>Automatisering av leverandørfaktura – Forbedret opplevelse for visning av historisk informasjon om arbeidsflyt og automatisering for leverandørfakturaer
 
-Det finnes en oversiktlig visning av arbeidsflytloggen for leverandørfaktura. Du kan få tilgang til arbeidsflytloggen for leverandørfaktura direkte fra leverandørfakturaen. Derfor kreves det færre klikk for å finne denne informasjonen.
+Det finnes en oversiktlig visning av arbeidsflytloggen for leverandørfaktura. Du kan få tilgang til arbeidsflytloggen for leverandørfaktura direkte fra leverandørfakturaen. Derfor kreves det færre klikk for å finne denne informasjonen. Hvis organisasjonen har aktivert funksjonen for å sende importerte leverandørfakturaer til arbeidsflyten automatisk, blir automatiseringsloggen tilgjengelig for de importerte fakturaene. Automatiseringsloggen hjelper deg å identifisere det gjeldende prosesstrinnet, i tillegg til trinnene som allerede er fullført. Når et trinn mislykkes, inneholder systemet detaljert informasjon som hjelper deg å forstå årsaken til feilen.
 
 ## <a name="vendor-invoice-automation--analytics-and-metrics"></a>Automatisering av leverandørfaktura – Analyse og måledata
 
 Arbeidsområdet **Leverandørfakturaregistrering** lar deg fokusere på leverandørfakturaer som ikke kom gjennom den automatiserte prosessen. Fliser på arbeidsområde viser informasjon om leverandørfakturaer som ikke ble sendt til arbeidsflytsystemet, importert eller tilordnet til produktkvitteringer. Du får også Microsoft Power BI-måledata for å gi leverandøransvarlige innsikt i effektiviteten til automatisering av leverandørfakturaer.
+
+## <a name="vendor-invoice-automation---resume-automation-processing-for-multiple-invoices"></a>Automatisering av leverandørfaktura – Fortsett automatiseringsbehandling for flere fakturaer
+Når en importert faktura ikke kan sendes til arbeidsflyten gjennom den automatiserte prosessen, vil systemet fjerne den fra ytterligere automatisert behandling. En regnskapsassistent kan se gjennom og redigere fakturaen før den automatiserte prosessen sender den til arbeidsflyten på nytt. Når årsaken til en feil kan løses med samme rettelse for flere fakturaer, kan du starte den automatiserte prosessen på nytt på siden **Gjenoppta automatisert fakturabehandling**. 

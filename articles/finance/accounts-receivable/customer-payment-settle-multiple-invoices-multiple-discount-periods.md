@@ -1,6 +1,6 @@
 ---
 title: Bruke en kundebetaling til å utligne flere fakturaer som strekker seg over flere rabattperioder
-description: Dette emnet viser hvordan flere fakturaer betales når hver faktura kvalifiserer for kontantrabatt. Scenariene i denne artikkelen fremhever hvordan kontantrabattene som tas, varierer avhengig av når betalingen skjer.
+description: Dette emnet viser hvordan flere fakturaer betales når hver faktura kvalifiserer for kontantrabatt. Scenarioene i denne artikkelen fremhever hvordan kontantrabattene som tas, varierer avhengig av når betalingen skjer.
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 10/26/2017
@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c592034ca9c777bbc600c040c61937ad71b4e36d
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: c7ae0bdc8245db1391103ca0f214fb3120f93f5b
+ms.sourcegitcommit: e544c51a68ad5daf748c0e877bdbde094ad40bd2
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2179273"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "4446620"
 ---
 # <a name="use-a-customer-payment-to-settle-multiple-invoices-that-span-multiple-discount-periods"></a>Bruke en kundebetaling til å utligne flere fakturaer som strekker seg over flere rabattperioder
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet viser hvordan flere fakturaer betales når hver faktura kvalifiserer for kontantrabatt. Scenariene i denne artikkelen fremhever hvordan kontantrabattene som tas, varierer avhengig av når betalingen skjer.
+Dette emnet viser hvordan flere fakturaer betales når hver faktura kvalifiserer for kontantrabatt. Scenarioene i denne artikkelen fremhever hvordan kontantrabattene som tas, varierer avhengig av når betalingen skjer.
 
 Fabrikam selger varer til kunden 4032. Fabrikam tilbyr en kontantrabatt på 1 prosent hvis fakturaen er betalt innen 14 dager. Fabrikam tilbyr også kontantrabatter på delvise betalinger. Du finner parameterne for utligning på siden **Kundeparametere**.
 

@@ -19,11 +19,11 @@ ms.author: moaamer
 ms.search.validFrom: 2020-09-24
 ms.dyn365.ops.version: 10.0.14
 ms.openlocfilehash: 9e206569aad3f53a2f6f66e6d6253226e5980078
-ms.sourcegitcommit: 9e7ceb5604472f3088f611aa0360bd6a716db32b
+ms.sourcegitcommit: 30c541426cf2037b768e3556e1b170a64991f64a
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4022573"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "4446570"
 ---
 # <a name="asset-leasing-get-started"></a>Komme i gang med leasing av aktiva
 
@@ -73,7 +73,7 @@ Diagrammet nedenfor viser leietablået, leieavtalen, beregnet betalingsplan, kla
 
 - **Startdato** – Dette er datoen som utleier gjør anleggsmiddelet tilgjengelig for bruk av leier. Alle beregninger og transaksjoner for leieavtaler baseres på startdatoen. Startdatoen må være i begynnelsen av en periode (den første i måneden) for å sikre nøyaktigheten til etterfølgende beregninger. Du kan bruke feltet **Kontraktsdato for signering** til å angi den faktiske datoen da kontrakten ble signert.
 
-- **Leievilkår** – Dette er lengden på leieperioden i måneder.
+- **Leieperiode** – Dette er lengden på leieperioden i måneder.
 
 > [!NOTE] 
 > Definisjonen av leieavtalen er basert på antall perioder, eller intervaller, i betalingsplanlinjene. Det definerte antallet intervaller vil bli konvertert til måneder.
@@ -106,7 +106,7 @@ Den første perioden starter med perioden null, hvis annuitetstypen er annuitets
 
 - **Terskler** – Dette brukes i testene for leieklassifisering for å finne ut om anleggsmiddelet er klassifisert som ett av følgende:
 
-  - **Leieavtale** – Dette er prosentdelen av levetiden som skal brukes i klassifiseringstesten. Systemet klassifiserer leieavtalen som finansiell hvis leietypen er satt til automatisk, og hvis leievilkårene for anleggsmiddelets levetid er større enn eller lik prosentdelen som er definert her.
+  - **Leieavtale** – Dette er prosentdelen av levetiden som skal brukes i klassifiseringstesten. Systemet klassifiserer leieavtalen som finansiell hvis leietypen er satt til automatisk, og hvis leieperioden for anleggsmiddelets levetid er større enn eller lik prosentdelen som er definert her.
 
   - **Nåverdi** – Dette er prosentdelen av anleggsmiddelets virkelige verdi som skal brukes i klassifiseringstesten. Systemet klassifiserer leieavtalen som finansiell hvis leietypen er satt til automatisk, og hvis nåverdien for fremtidige leiebetalinger for anleggsmiddelets virkelige verdi er større enn eller lik prosentdelen som er definert her.
 
@@ -116,7 +116,7 @@ Den første perioden starter med perioden null, hvis annuitetstypen er annuitets
 
   - **Leieklassifisering og transaksjoner** Leieklassifiseringen er en automatisert prosess for å klassifisere leieavtaler basert på definerte terskler i andre tablåer enn klassifiseringstestkriterier for å identifisere om leieavtalen er en finansiell leie, gjeldende leie, korttidsleie eller lavverdileie. Dette brukes også til å identifisere om prosessen for utsatte leie etterfølges.
 
-Klassifiseringstestene omfatter overføring av eierskap, kjøpsalternativ, leievilkår, nåverdi og unikt anleggsmiddel. Diagrammet nedenfor illustrerer klassifiseringtesten for leien.
+Klassifiseringstestene omfatter overføring av eierskap, kjøpsalternativ, leieperiode, nåverdi og unikt anleggsmiddel. Diagrammet nedenfor illustrerer klassifiseringtesten for leien.
 
 [![Klassifiseringstest for leie](./media/overview-03.png)](./media/overview-03.png)
 
@@ -152,7 +152,7 @@ En påløpt leiebetaling gjenkjennes som en fremtidige leiebetaling som forfalle
 |     Finansiell leie   i henhold til IFRS og amerikansk GAAP        |  Leiegjeld for finans      |   Leverandørgjeld (underfinans) / gjeld  |
 
 #### <a name="asset-depreciation"></a>Avskrivning av anleggsmiddel
-Bruksrettseiendelen avskrives over med hensyn til det som er minst – anleggsmiddelets levetid eller leievilkårene. Metoden for beregning av avskrivning for amerikansk GAAP (ASC 842) er basert på forskjellen mellom leieavtalen for den lineære leieutgiften og rentebeløpet. Rente på finansielle leier beregnes ved å bruke en standard lineær metode. Leieavskrivningen påvirker resultatregnskapet ved å debitere renteutgifter. Balansen påvirkes av den akkumulerte kontoen for bruksrettseiendelen for finansielle leier. For gjeldende leier krediterer avskrivningen kontoen for leieutgifter. Hvis leieavtalen er koblet til et anleggsmiddel, blir avskrivningstransaksjonene bare utført fra anleggsmiddelmodulen. 
+Bruksrettseiendelen avskrives over med hensyn til det som er minst – anleggsmiddelets levetid eller leieperioden. Metoden for beregning av avskrivning for amerikansk GAAP (ASC 842) er basert på forskjellen mellom leieavtalen for den lineære leieutgiften og rentebeløpet. Rente på finansielle leier beregnes ved å bruke en standard lineær metode. Leieavskrivningen påvirker resultatregnskapet ved å debitere renteutgifter. Balansen påvirkes av den akkumulerte kontoen for bruksrettseiendelen for finansielle leier. For gjeldende leier krediterer avskrivningen kontoen for leieutgifter. Hvis leieavtalen er koblet til et anleggsmiddel, blir avskrivningstransaksjonene bare utført fra anleggsmiddelmodulen. 
 
 |     Type                                          |     Debet                     |     Kreditt                            |
 |-----------------------------------------------    |-----------------------------  |------------------------------------   |
@@ -203,12 +203,12 @@ Dette representerer overføring av saldoreduksjon for bruksrettseiendelen. Ident
 >[!NOTE]
 > Hvis leieavtalen er koblet til et anleggsmiddel, skal verdiforringelsen for anleggsmiddelet posteres fra anleggsmidler fordi avskrivning for anleggsmiddel kjøres fra anleggsmiddelmodulen.
 
-**Dobbel valuta** Leietransaksjoner kan posteres i en annen valuta enn regnskaps- og rapporteringsvalutaen. Valutakursen defineres i økonomimodulen på startdatoen. Du kan endre valutakursene ved å sette **Fast kurs** -feltet til **Ja** når du oppretter leieavtalen. Når du angir leietransaksjoner, vil den innledende gjenkjenningen og de etterfølgende avskrivningstransaksjonene bruke valutakursen fra og med startdatoen. De etterfølgende betalingene og rentetransaksjonene vil bruke gjeldende aktive valutakurs. 
+**Dobbel valuta** Leietransaksjoner kan posteres i en annen valuta enn regnskaps- og rapporteringsvalutaen. Valutakursen defineres i økonomimodulen på startdatoen. Du kan endre valutakursene ved å sette **Fast kurs**-feltet til **Ja** når du oppretter leieavtalen. Når du angir leietransaksjoner, vil den innledende gjenkjenningen og de etterfølgende avskrivningstransaksjonene bruke valutakursen fra og med startdatoen. De etterfølgende betalingene og rentetransaksjonene vil bruke gjeldende aktive valutakurs. 
 
 ## <a name="create-an-asset-lease"></a>Opprette en leieavtale for anleggsmiddel
 Fullfør fremgangsmåten nedenfor for å opprette en ny leieavtale. 
 
-1. Hvis du vil **Leie av anleggsmiddel** , må du aktivere den i arbeidsområdet **Funksjonsbehandling**. Fra arbeidsområder **Funksjonsbehandling** velger du **Alle** , slik at alle funksjonene vises på siden. Velg **Leie av anleggsmiddel** , og velg deretter **Aktiver nå**.
+1. Hvis du vil **Leie av anleggsmiddel**, må du aktivere den i arbeidsområdet **Funksjonsbehandling**. Fra arbeidsområder **Funksjonsbehandling** velger du **Alle**, slik at alle funksjonene vises på siden. Velg **Leie av anleggsmiddel**, og velg deretter **Aktiver nå**.
 2. Gå til **Leie av anleggsmiddel > Felles > Leiesammendrag**. Angi feltene nedenfor i hurtigfanen **Generelt**. 
    - **Leiedetaljer**
    - **Aktivalevetid (måneder)**
@@ -229,7 +229,7 @@ Fullfør fremgangsmåten nedenfor for å opprette en ny leieavtale.
 
    Den automatiske **leietypen** klassifiseres basert på kriteriene som er definert på siden **Tablåer**.
 
-7.  Gå til **Betalingsplan** under **Funksjon** -delen.  
+7.  Gå til **Betalingsplan** under **Funksjon**-delen.  
 
    Siden **Betalingsplan** viser en liste over fremtidige betalingsplaner for en leie-ID. Velg **Bekreft plan** for å postere transaksjonene for **opprinnelige gjenkjenning**. 
 

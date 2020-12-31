@@ -19,11 +19,11 @@ ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 202d6e8b0933522c2faf5fb49291f11200e4754f
-ms.sourcegitcommit: d61c43b6bc04bb8786aa3c47932be0ccd84ebaeb
+ms.sourcegitcommit: b40d6ce45aeb07724fc41d1a41923970b007fbcf
 ms.translationtype: HT
 ms.contentlocale: nb-NO
 ms.lasthandoff: 10/14/2020
-ms.locfileid: "4006147"
+ms.locfileid: "4446558"
 ---
 # <a name="settle-a-partial-vendor-payment-and-the-final-payment-in-full-before-the-discount-date"></a>Utligne en delvis leverandørbetaling og den endelige betalingen i sin helhet før rabattdatoen
 
@@ -40,7 +40,7 @@ Fabrikam kjøper varer fra leverandøren 3064. Leverandøren gir Fabrikam en kon
 |-----------|-----------|---------|--------------------------------------|---------------------------------------|-----------|----------|
 | Inv-10010 | 25/6/2015 | 10010   |                                      | 1 000,00                              | -1 000,00 | USD      |
 
-April åpner **Utlign transaksjoner** på **Leverandører** -siden. Hun kan bruke siden **Utlign transaksjoner** til å vise dato og beløp for kontantrabatter. Forfallsdatoen er 25. juli, og en kontantrabatt på -10,00 er tilgjengelig hvis fakturaen er betalt innen 9. juli.
+April åpner **Utlign transaksjoner** på **Leverandører**-siden. Hun kan bruke siden **Utlign transaksjoner** til å vise dato og beløp for kontantrabatter. Forfallsdatoen er 25. juli, og en kontantrabatt på -10,00 er tilgjengelig hvis fakturaen er betalt innen 9. juli.
 
 | Merk | Bruk kontantrabatt | Bilag   | Konto | Dato      | Forfallsdato  | Faktura | Beløp i transaksjonsvaluta | Valuta | Beløp som skal utlignes |
 |------|-------------------|-----------|---------|-----------|-----------|---------|--------------------------------|----------|------------------|
@@ -64,7 +64,7 @@ April klikker kategorien **Kontantrabatt** for å vise rabattbeløpet.
 | 25/7/2015          | 0,00                 | 1 000,00                       |
 
 ## <a name="partial-payment-on-july-1-by-using-the-settle-transactions-page"></a>Delbetaling 1. juli ved hjelp av siden Utlign transaksjoner
-April kan opprette en betalingsjournal for denne betalingen ved å åpne siden **Betalingsjournal** i leverandørmodulen. Det opprettes en ny journal, og angis en linje for leverandøren 3064. Hun åpner siden **Utlign transaksjoner** , slik at hun kan merke fakturaen for utligning. April markerer fakturaen og endrer verdien i feltet **Beløp som skal utlignes** til **-500,00**. Hun ser at verdien i feltet **Kontantrabattbeløp** er **-10,00** for hele fakturaen, og at verdien i feltet **Kontantrabattbeløp som skal brukes** er **-5,05**. April utligner derfor -505,05 av denne fakturaen.
+April kan opprette en betalingsjournal for denne betalingen ved å åpne siden **Betalingsjournal** i leverandørmodulen. Det opprettes en ny journal, og angis en linje for leverandøren 3064. Hun åpner siden **Utlign transaksjoner**, slik at hun kan merke fakturaen for utligning. April markerer fakturaen og endrer verdien i feltet **Beløp som skal utlignes** til **-500,00**. Hun ser at verdien i feltet **Kontantrabattbeløp** er **-10,00** for hele fakturaen, og at verdien i feltet **Kontantrabattbeløp som skal brukes** er **-5,05**. April utligner derfor -505,05 av denne fakturaen.
 
 | Merk     | Bruk kontantrabatt | Bilag   | Konto | Dato      | Forfallsdato  | Faktura | Beløp i transaksjonsvaluta | Valuta | Beløp som skal utlignes |
 |----------|-------------------|-----------|---------|-----------|-----------|---------|--------------------------------|----------|------------------|
@@ -105,7 +105,7 @@ April lukker siden **Utlign transaksjoner**. Det opprettes en betalingslinje for
 | DISC-10010 | Kontantrabatt    | 1/7/2015  |         | 5,00                                 |                                       | 0,00    | USD      |
 
 ## <a name="remaining-amount-paid-on-july-8"></a>Gjenværende beløp betalt 8. juli
-April betaler resten av fakturaen for leverandør 3064 den 8. juli, som er i kontantrabattperioden. April lager betalingsjournalen 8. juli og merker transaksjonen for utligning. Hun ser at beløpet som skal utlignes, er 495,00. Verdien i feltet **Beregnet kontantrabatt** er **-5,00** , fordi rabatten på 5,00 tidligere ble brukt.
+April betaler resten av fakturaen for leverandør 3064 den 8. juli, som er i kontantrabattperioden. April lager betalingsjournalen 8. juli og merker transaksjonen for utligning. Hun ser at beløpet som skal utlignes, er 495,00. Verdien i feltet **Beregnet kontantrabatt** er **-5,00**, fordi rabatten på 5,00 tidligere ble brukt.
 
 |  &nbsp;                 |  &nbsp; |
 |-------------------------|--------|

@@ -17,11 +17,11 @@ ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.openlocfilehash: 7014e3a4384e08b0c218585a3c2110243360ec08
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3980798"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4446392"
 ---
 # <a name="dispose-of-a-fixed-asset-using-a-free-text-invoice"></a>Avhende et anleggsmiddel ved hjelp av en fritekstfaktura
 
@@ -29,15 +29,15 @@ ms.locfileid: "3980798"
 
 Dette emnet beskriver hvordan du kvitter deg med et anleggsmiddel ved hjelp av fritekstfakturaen.
 
-1. I navigasjonsruten går du til **Moduler > Kunder > Fakturaer > Alle fritekstfakturaer** .
-2. Velg **Ny** .
-3. Angi eller velg en verdi i **Kundekonto** -feltet.
-4. Valider standard **Faktura** -dato, og rediger om nødvendig.
-5. Valider gjenværende standard hodefelt, for eksempel **Valuta** , og rediger om nødvendig.
-6. Valider feltene **Beskrivelse** og **Hovedkonto** i delen **Fakturalinjer** .
-7. Valider standardfeltene **mva-gruppe** og **mva-gruppe for varer** .
+1. I navigasjonsruten går du til **Moduler > Kunder > Fakturaer > Alle fritekstfakturaer**.
+2. Velg **Ny**.
+3. Angi eller velg en verdi i **Kundekonto**-feltet.
+4. Valider standard **Faktura**-dato, og rediger om nødvendig.
+5. Valider gjenværende standard hodefelt, for eksempel **Valuta**, og rediger om nødvendig.
+6. Valider feltene **Beskrivelse** og **Hovedkonto** i delen **Fakturalinjer**.
+7. Valider standardfeltene **mva-gruppe** og **mva-gruppe for varer**.
 8. Angi **enhetsprisen** eller **salgsbeløpet** til anleggsmidlet.
-9. Velg delen **Linjedetaljer** .  
-10. Angi eller velg en verdi i feltet **Anleggsmiddel** .
-11. Velg **Poster** . 
+9. Velg delen **Linjedetaljer**.  
+10. Angi eller velg en verdi i feltet **Anleggsmiddel**.
+11. Velg **Poster**. 
 

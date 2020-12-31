@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: EROperationDesigner, ERFormatDestinationTable
 audience: Application User, IT Pro
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 58771
 ms.assetid: ''
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-01-01
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: ef024185c4654804f6f260a43c1bf294b33c10e2
-ms.sourcegitcommit: 6e290b0d3aeedd0e234ac4f1df92b1b9afd6fccc
+ms.openlocfilehash: 30de55f9e55911290750c148621fd3d4531686c2
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "3829685"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4680861"
 ---
 # <a name="compress-large-documents-that-are-generated-in-electronic-reporting"></a>Komprimere store dokumenter som genereres i Elektronisk rapportering 
 
@@ -40,7 +39,7 @@ Hvis du vil vite mer om denne tilnærmingen, kan du fullføre eksemplet i dette 
 
 ## <a name="example-compress-an-outbound-document"></a>Eksempel: Komprimere et utgående dokument
 
-Dette eksemplet viser hvordan en bruker som er tilordnet rollen **Systemansvarlig** eller **Funksjonell konsulent for elektronisk rapportering** kan konfigurere et ER-format for å komprimere et generert dokument.
+Dette eksemplet viser hvordan en bruker som er tilordnet rollen **Systemansvarlig** eller **Funksjonell konsulent for elektronisk rapportering**, kan konfigurere et ER-format for å komprimere et generert dokument.
 
 ### <a name="prerequisites"></a>Forutsetninger
 

@@ -3,7 +3,7 @@ title: Rutenettfunksjoner
 description: Dette emnet beskriver flere kraftfulle funksjoner i rutenettkontrollen. Den nye rutenettfunksjonen må være aktivert for at du skal kunne få tilgang til disse funksjonene.
 author: jasongre
 manager: AnnBe
-ms.date: 09/22/2020
+ms.date: 11/17/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -11,21 +11,21 @@ ms.technology: ''
 ms.search.form: DefaultDashboard
 audience: Application User, Developer, IT Pro
 ms.reviewer: sericks
-ms.search.scope: Operations, Core
 ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 1f1c27444b38360072beb5277c445161983a2480
-ms.sourcegitcommit: 28a771d81322e72d88db63a20ff360de084a6087
+ms.openlocfilehash: fb30cdded33f90bb472c8abdb70875077b1dd985
+ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "3835092"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "4693780"
 ---
 # <a name="grid-capabilities"></a>Rutenettfunksjoner
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 Den nye rutenettkontrollen tilgjengeliggjør en rekke nyttige og kraftfulle funksjoner som kan brukes til å forbedre brukerproduktivitet, konstruere mer interessante visninger av dataene og få meningsfulle innsikter i dataene. Denne artikkelen dekker følgende funksjoner: 
 
@@ -95,21 +95,23 @@ Som en produktivitetsforsterkning kan brukeren legge inn matematiske formler i n
 Hvis du vil at systemet skal gjenkjenne en verdi som et uttrykk, starter du verdien med et likhetstegn (**=**). Hvis du vil ha mer informasjon om de støttede operatorene og syntaksen, kan du se [Støttede matematiske symboler](http://bugwheels94.github.io/math-expression-evaluator/#supported-maths-symbols).
 
 ## <a name="grouping-tabular-data"></a>Gruppere tabelldata
-[!include [preview banner](../includes/preview-banner.md)]
+Bedriftsbrukere må ofte utføre ad hoc-analyse av data. Selv om dette kan utføres ved å eksportere data til Microsoft Excel og bruke pivottabeller, gjør funksjonen **Gruppering i rutenett**, som er generelt tilgjengelig i versjon 10.0.16/Platform update 40 og er avhengig av den nye rutenettkontrollfunksjonen, det mulig for brukere å organisere sine tabelldata på interessante måter i Finance and Operations-apper. Ettersom denne funksjonen utvider **Totalverdier**-funksjonen, gjør **Gruppering** det mulig å få meningsfulle innsikter i dataene takket være oppgivelse av subtotalverdier på gruppenivå.
 
-Bedriftsbrukere må ofte utføre ad hoc-analyse av data. Selv om dette kan utføres ved å eksportere data til Microsoft Excel og bruke pivottabeller, gjør funksjonen **(Forhåndsvisning) Gruppering i rutenett**, som er avhengig av den nye rutenettkontrollfunksjonen, det mulig for brukere å organisere sine tabelldata på interessante måter i Finance and Operations-apper. Ettersom denne funksjonen utvider **Totalverdier**-funksjonen, gjør **Gruppering** det mulig å få meningsfulle innsikter i dataene takket være oppgivelse av subtotalverdier på gruppenivå.
-
-Hvis du vil bruke denne funksjonen, høyreklikker du kolonnen du vil gruppere etter, og velger **Grupper etter denne kolonnen**. Denne handlingen sorterer dataene etter den valgte kolonnen, legger til en ny forekomst av **Grupper etter kolonne** i begynnelsen av rutenettet og setter inn "topptekstrader" i begynnelsen av hver gruppe. Disse topptekstradene inneholder følgende informasjon om hver gruppe: 
+Hvis du vil bruke denne funksjonen, høyreklikker du kolonnen du vil gruppere etter, og velger **Grupper etter denne kolonnen**. Denne handlingen sorterer dataene etter den valgte kolonnen, legger til en ny **Grupper etter**-kolonne i begynnelsen av rutenettet og setter inn "topptekstrader" i begynnelsen av hver gruppe. Disse topptekstradene inneholder følgende informasjon om hver gruppe: 
 -  Dataverdi for gruppen 
--  Kolonnenavn (Denne informasjonen vil være spesielt nyttig etter at grupperinger på flere nivåer støttes.)  
+-  Kolonnenavn (denne informasjonen er spesielt nyttig når du har grupperinger på flere nivåer)  
 -  Antallet datarader i denne gruppen
 -  Subtotalverdier for enhver kolonne som er konfigurert for å vise totalverdier
 
 Med [Lagrede visninger](saved-views.md) aktivert kan denne grupperingen lagres ved å tilpasning som en del av en visning for rask tilgang neste gang du besøker siden.  
 
-Hvis du velger **Grupper etter denne kolonnen** for en annen kolonne, vil den opprinnelige grupperingen bli erstattet, da bare ett grupperingsnivå støttes fra og med versjon 10.0.9/plattformoppdatering 33.
+### <a name="multiple-levels-of-grouping"></a>Flere nivåer med gruppering
+Når du har gruppert data etter én enkelt kolonne, kan du gruppere dataene etter en annen kolonne ved å velge **Grupper etter denne kolonnen** på ønsket kolonne. Denne prosessen kan gjentas til du har 5 nestede nivåer av gruppering, som er den maksimale dybden som støttes. På dette stadiet vil du ikke lenger kunne gruppere etter flere kolonner.  
 
-Hvis du vil angre gruppering i et rutenett, høyreklikker du grupperingskolonnen og velger **Opphev gruppering**.  
+Du kan når som helst fjerne grupperingen på en kolonne ved å høyreklikke denne kolonnen og velge **Del opp gruppe**. Du kan også fjerne grupperingen fra alle kolonnene ved å velge **Alternativer for rutenett** og deretter velge **Del opp alle grupper**.   
+
+Vær oppmerksom på at før versjon 10.0.16/Platform update 40, støttes bare ett nivå av gruppering. Hvis dataene er gruppert i disse versjonene, og du velger **Grupper etter denne kolonnen** for en annen kolonne, erstattes den opprinnelige grupperingen.  
+
 
 ### <a name="expanding-and-collapsing-groups"></a>Vise og skjule grupper
 Den innledende grupperingen av data vil få alle grupper vist. Du kan opprette sammendragsvisninger av dataene ved å skjule enkeltstående grupper, eller du kan bruke gruppevisning og -skjuling for å hjelpe til med å navigere gjennom dataene. Hvis du vil vise eller skjule en gruppe, velger du knappen med vinkeltegnet (>) i den tilsvarende topptekstraden for gruppe. Legg merke til at vis/skjul-statusen til enkelt grupper **ikke** lagres i tilpassing.
@@ -165,17 +167,34 @@ Denne delen inneholder en liste over kjente problemer for den nye rutenettkontro
     -  Det finnes en gruppert kortliste på siden.
     -  En rutenettkolonne med en ikke-reagerende utvidbar kontroll.
 
-    Når en bruker først støter på én av disse situasjonene, vil det vises en melding om oppdatering av siden. Når denne meldingen vises, vil siden fortsette å bruke det eksisterende rutenettet for alle brukere til neste oppdatering av produktversjonen. Bedre behandling av disse scenariene, slik at det nye rutenettet kan brukes, vurderes for en fremtidig oppdatering.     
+    Når en bruker først støter på én av disse situasjonene, vil det vises en melding om oppdatering av siden. Når denne meldingen vises, vil siden fortsette å bruke det eksisterende rutenettet for alle brukere til neste oppdatering av produktversjonen. Bedre behandling av disse scenariene, slik at det nye rutenettet kan brukes, vurderes for en fremtidig oppdatering.    
+    
+-  [KB 4582758] Poster er utydelige når du endrer zooming fra 100 til en annen prosent
+    
+### <a name="fixed-as-part-of-10015"></a>Løst som del av 10.0.15    
+
+-  [KB 4582723] Visningsalternativer som ikke vises når du er ferdig senere i skjemalivssyklusen
+
+### <a name="fixed-as-part-of-10014"></a>Løst som del av 10.0.14
+
+-  (Kvalitetsoppdatering) [KB 4584752] Uventet klientfeil for siden Fakturaforslag for prosjekt
 
 ### <a name="fixed-as-part-of-10013"></a>Løst som del av 10.0.13
 
--  [Feil 470173] Avmerkingsbokser i inaktive rader veksler når mellomrom i cellen klikkes.
+-  (Kvalitetsoppdatering) [KB 4583880] Regression Suite Automation Tool (RSAT) Tester mislykkes på OpenLookup-handling med "Kan ikke lese egenskapen RowIndex for udefinert"
+-  (Kvalitetsoppdatering) [KB 4583847] Uventet klientfeil ved navigering gjennom oppslag 
+-  (Kvalitetsoppdatering) [Feil 471777] Kan ikke velge felt i et rutenett for å redigere eller opprette en mobilapp
+-  [Feil 474851] Hyperkoblinger i referansegruppekontroller fungerer ikke 
+-  [Feil 474848] Utvidede forhåndsvisninger med rutenett vises ikke
+-  [KB 4582726] RotateSign-egenskapen blir ikke respektert  
+-  [Feil 470173] Avmerkingsbokser i inaktive rader veksler når mellomrom i cellen klikkes
 -  [Feil 474848] Utvidede forhåndsvisninger med rutenett vises ikke
 -  [Feil 474851] Hyperkoblinger i referansegruppekontroller fungerer ikke 
 -  [Feil 471777] Kan ikke velge felt i et rutenett for å redigere eller opprette en mobilapp
 -  [KB 4569441] Problemer med å gjengi kortlister med flere kolonner, verktøytips på bilder og visningsalternativer for enkelte felt
 -  [KB 4575279] Ikke alle merkede rader blir slettet i økonomijournalen
 -  [KB 4575233] Visningsalternativer gjenopprettes ikke etter flytting til en annen rad
+-  [Feil 477884] Oppslag returnerer feil verdi/post hvis ny rutenettkontroll er aktivert
 -  [KB 4571095] Produktkvitteringspostering skjer når du trykker Enter ved en feiltakelse (riktig håndtering av en sides standardhandling)
 -  [KB 4575437] Oppslag med redigerbare kontroller lukkes uventet
 -  [KB 4569418] Duplikat linje opprettet i leveringsplanskjema
@@ -225,7 +244,7 @@ Denne delen inneholder en liste over kjente problemer for den nye rutenettkontro
 - [KB 4558383] Kontroller utenfor rutenettet oppdateres ikke etter at den siste posten er slettet.
 - [KB 4558587] Referansegrupper som har kombinasjonsbokser for erstatningsfelt, viser ikke verdier.
 - [KB 4562143] Felt oppdateres ikke etter en radendring / rutenettbehandling blir låst etter sletting av rader.
-- [KB 4562645] Et unntak oppstår når et oppslag åpnes mens RSAT-tester (Remote Server Administration Tools) kjører.
+- [KB 4562645] Et unntak oppstår når et oppslag åpnes mens Regression Suite Automation Tool-tester (RSAT) kjører.
 
 ### <a name="fixed-as-part-of-10010"></a>Løst som del av 10.0.10
 

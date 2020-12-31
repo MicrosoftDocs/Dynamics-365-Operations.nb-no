@@ -19,11 +19,11 @@ ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: c12ca59203d6cad7f5699bc930f2af27427ca41b
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2187044"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4446512"
 ---
 # <a name="straight-line-life-remaining-depreciation"></a>Gjenstående lineær levetidsavskrivning
 
@@ -53,7 +53,7 @@ Hvis du velger for eksempel **Årlig**, posteres den årlige avskrivningen bare 
 Hvis du velger **Skattemessig** i feltet **Avskrivningsår** , brukes avskrivning for gjenværende lineær levetid. Avskrivning beregnes basert på de gjenværende regnskapsårene. For regnskapsåret 1. juli 2015 til 30. juni 2016 starter for eksempel avskrivningsberegningen 1. juli. Regnskapsåret kan være lengre eller kortere enn 12 måneder. Avskrivningen justeres for hver regnskapsperiode. Lengden på det neste regnskapsåret bestemmes av regnskapsperiodene som er definert på siden **Regnskapskalendere**. Hvis du velger **Skattemessig** som avskrivningsår, er følgende alternativer tilgjengelige i **Periodefrekvens**-feltet:
 
 -   **Årlig** posterer totalbeløpet for avskrivningen som beregnes for regnskapsåret, som ett beløp på den siste dagen i regnskapsåret.
--   **Regnskapsperiode**beregner totalbeløpet for avskrivningen for regnskapsåret. Dette beløpet avsettes deretter i regnskapsperiodene som defineres på siden **Regnskapskalendere** for regnskapskalenderen som er angitt for tablået.
+-   **Regnskapsperiode** beregner totalbeløpet for avskrivningen for regnskapsåret. Dette beløpet avsettes deretter i regnskapsperiodene som defineres på siden **Regnskapskalendere** for regnskapskalenderen som er angitt for tablået.
 
 ## <a name="example-of-straight-line-depreciation-of-an-unchanged-fixed-asset"></a>Eksempel på lineær avskrivning for et uendret anleggsmiddel
 Et anleggsmiddel har følgende kjennetegn.

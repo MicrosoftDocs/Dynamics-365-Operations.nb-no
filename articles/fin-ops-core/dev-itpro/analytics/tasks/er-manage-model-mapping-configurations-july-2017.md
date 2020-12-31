@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Operations
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b8ff3b419caafec626497c65ea18ca24ca95cb5d
-ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
+ms.openlocfilehash: 4e59e9f2dd5a0fa6d5955e3d93d25759a478ede7
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3143059"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4684433"
 ---
 # <a name="manage-er-model-mapping-in-separate-er-configurations"></a>Administrere ER-modelltilordning i separate ER-konfigurasjoner
 
@@ -66,9 +65,9 @@ Fordi ER konfigurasjoner deles mellom firmaer, kan du fullføre oppgaveveilednin
     * Eksempeltilordning  
 4. Klikk Opprett konfigurasjon.
 5. Utvid seksjonen Forutsetninger.
-    * Legg merke til at gruppen Forutsetninger for implementasjoner er lagt til automatisk. Gruppen inneholder den nødvendige komponenten som refererer til den overordnede data konfigurasjonen og merkes som implementering. Dette betyr at implementeringen av datamodellen, datamodellen for eksempel er lagt til konfigurasjon for tilordning av dette eksemplet tilordning. Derfor tvinger denne komponenten ER å laste ned konfigurasjonen for tilordning, eksempel på tilordning fra en database ER når konfigurasjonen av modellen, prøve datamodellen, lastes ned.   
+    * Gruppen Forutsetninger for implementasjoner er lagt til automatisk. Gruppen inneholder den nødvendige komponenten som refererer til den overordnede data konfigurasjonen og merkes som implementering. Dette betyr at denne modelltilordningskonfigurasjonen for eksempeltilordning betraktes som implementering av datamodellen Eksempeldatamodell. Derfor tvinger denne komponenten ER å laste ned modelltilordningskonfigurasjon for eksempeltilordning fra et ER-repositorium når modellkonfigurasjonen for eksempeldatamodellen lastes ned.   
 6. Klikk Utforming.
-    * Merk at konfigurasjonen for opprettede tilordningen inneholder en ny, tom tilordning med samme navn som opprettet konfigurasjonen. Vær oppmerksom på at når en konfigurasjon for valgte overordnede inneholder tilordninger av verdimodellen, vil de bli kopiert til en ny konfigurasjon for tilordning.   
+    * Den opprettede modelltilordningskonfigurasjonen inneholder en ny, tom tilordning med samme navn som den opprettet konfigurasjonen. Når en valgt overordnet modellkonfigurasjon inneholder modelltilordninger, vil de bli kopiert til en ny modelltilordningskonfigurasjon.   
 7. Klikk Utforming.
 8. Velg Dynamics 365 for Operations\Tabell i treet.
 9. Klikk Legg til rot.
@@ -112,9 +111,9 @@ Fordi ER konfigurasjoner deles mellom firmaer, kan du fullføre oppgaveveilednin
 16. Klikk Kjør.
     * Klikk Kjør på hurtigfanen Versjoner.  
 17. Klikk OK.
-    * Gå gjennom utdataene som inneholder navnet på firmaet der brukeren som kjører denne formatkonfigurasjonen er logget på. Legg merke til at den opprettede tilordningen konfigurasjonen brukes av denne formatkonfigurasjonen fordi bare én tilgjengelig konfigurasjon som inneholder tilordninger av nødvendige modellen.   
+    * Gå gjennom utdataene som inneholder navnet på firmaet der brukeren som kjører denne formatkonfigurasjonen er logget på. Den opprettede modelltilordningskonfigurasjonen brukes av denne formatkonfigurasjonen fordi det bare er én tilgjengelig konfigurasjon som inneholder nødvendige modelltilordninger.   
 
-## <a name="add-alternative-er-model-mapping-configuration"></a>Legg til en alternativ ER-modelltilordningskonfigurasjon
+## <a name="add-alternative-er-model-mapping-configuration"></a>Legg til alternativ ER-modelltilordningskonfigurasjon
 1. Velg 'Sample data model' i treet.
 2. Klikk Opprett konfigurasjon for å åpne nedtrekksdialogen.
 3. I feltet Ny angir du Modeltilordning basert på datamodellen Eksempeldatamodell.
@@ -153,12 +152,12 @@ Fordi ER konfigurasjoner deles mellom firmaer, kan du fullføre oppgaveveilednin
 ## <a name="use-an-existing-er-model-mapping-configuration"></a>Bruk en eksisterende ER-modelltilordningskonfigurasjon
 1. Velg 'Sample data model\Sample format' i treet.
 2. Klikk Kjør.
-    * Vær oppmerksom på at den valgte utkastversjonen av formatkonfigurasjonen ER ikke kan utføres fordi det er mer enn én konfigurasjon for tilordning for den udefinerte datamodellen som er valgt som datakilden for det kjørende ER-formatet.   
-    * Nå vil du definere tilordning av alternativ konfigurasjon som fra hvilken modell tilordningene brukes som datakilder ER formateringen.   
+    * Den valgte utkastversjonen av ER-formatkonfigurasjonen ikke kan utføres, fordi det er mer enn én tilgjengelig modelltilordningskonfigurasjon for den udefinerte datamodellen som er valgt som datakilden for det kjørende ER-formatet.   
+    * Nå skal du definere den alternative modelltilordningskonfigurasjonen som den som modelltilordningene skal brukes fra som datakilder for det kjørende ER-formatet.   
 3. Velg 'Sample data model\Sample mapping (alternative)' i treet.
 4. Velg Ja i feltet Standard for modelltilordning.
 5. Velg 'Sample data model\Sample format' i treet.
 6. Klikk Kjør.
 7. Klikk OK.
-    * Legg merke til at den standard tilordning konfigurasjonen brukes av denne formatkonfigurasjonen for generering av det elektroniske dokumentet (opprettet utdataene inneholder firmakoden).  
+    * Standard modelltilordningskonfigurasjon brukes av denne formatkonfigurasjonen for generering av det elektroniske dokumentet (opprettede utdata inneholder firmakoden).  
 

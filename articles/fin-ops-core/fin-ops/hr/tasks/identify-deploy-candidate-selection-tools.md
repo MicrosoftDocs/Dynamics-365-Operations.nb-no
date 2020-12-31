@@ -3,7 +3,7 @@ title: Identifisere og distribuere verktøy for kandidatvalg
 description: Det kan være vanskelig finne en kvalifisert samling kandidater til ledige stillinger, spesielt når en stilling krever et unikt sett med ferdigheter.
 author: andreabichsel
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 11/20/2020
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: HcmSkillMapping, HcmJobLookup, HcmSkillMappingLine, HcmPersonCertificate, CCHTMLPrintPreview
 audience: Application User
 ms.reviewer: anbichse
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 2d8a05ad7f100e6c54ccf1ecf7b76509cf44dbb8
-ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
+ms.openlocfilehash: f4e7ed6feaa1b5b27fcfc0ec99a2d75415fe7d6a
+ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3143955"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "4693070"
 ---
 # <a name="identify-and-deploy-candidate-selection-tools"></a>Identifisere og distribuere verktøy for kandidatvalg
 
@@ -49,7 +48,7 @@ Det kan være vanskelig finne en kvalifisert samling kandidater til ledige still
 17. Klikk Resultat.
 18. Klikk Fortsett.
 19. Klikk Sertifikater.
-    * Du kan drille ned til hver person som er oppført, og se detaljer angående utdannelse, ferdigheter, yrkeserfaring osv.  
+    * Du kan drille ned til hver person som er oppført, og se detaljer angående utdannelse, ferdigheter og yrkeserfaring.  
 20. Lukk siden.
 21. Lukk siden.
 22. Velg resultatet på nytt.

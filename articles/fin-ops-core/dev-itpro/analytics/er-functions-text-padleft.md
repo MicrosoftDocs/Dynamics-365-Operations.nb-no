@@ -11,25 +11,24 @@ ms.technology: ''
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
 audience: Application User, IT Pro
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 58771
 ms.assetid: 24223e13-727a-4be6-a22d-4d427f504ac9
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3f8a8e2006fe279b25bbf154c6e1802babf51117
-ms.sourcegitcommit: 445f6d8d0df9f2cbac97e85e3ec3ed8b7d18d3a2
+ms.openlocfilehash: 268941d8bc0bd4dc6de6d2597c05a11c1f530f15
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "3744365"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4680152"
 ---
 # <a name="padleft-er-function"></a>PADLEFT ER-funksjonen
 
 [!include [banner](../includes/banner.md)]
 
-`PADLEFT`-funksjonen returnerer en*Streng*-verdi med den angitte lengden der begynnelsen av den angitte strengen fylles ut med de angitte tegnene.
+`PADLEFT`-funksjonen returnerer en *Streng*-verdi med den angitte lengden der begynnelsen av den angitte strengen fylles ut med de angitte tegnene.
 
 ## <a name="syntax"></a>Syntaks
 

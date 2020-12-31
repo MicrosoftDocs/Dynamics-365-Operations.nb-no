@@ -18,11 +18,11 @@ ms.author: shpandey
 ms.search.validFrom: 2020-09-08
 ms.dyn365.ops.version: 10.0.14
 ms.openlocfilehash: ec49a621e24b6373532497b499e8b9d45c9bed14
-ms.sourcegitcommit: 9e7ceb5604472f3088f611aa0360bd6a716db32b
+ms.sourcegitcommit: 30c541426cf2037b768e3556e1b170a64991f64a
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4022619"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "4446567"
 ---
 # <a name="view-vendor-invoice-automation-results"></a>Vise resultater for automatisering av leverandørfaktura
 
@@ -34,7 +34,7 @@ Før du kan redigere en faktura som er sendt, må du stoppe den automatiserte be
 
 Hvis den importerte fakturaen er underlagt prosessen for sending til arbeidsflyt, kan du vise verdien **Status for automatisering** på siden **Leverandørfakturaer**. Følgende statuser spores:
 
-- **Inkludert** – De automatiserte prosessene som er definert på siden **Leverandørparametere** , kjører på riktig måte, men er ennå ikke fullført.
-- **Stoppet midlertidig** – De automatiserte prosessene som er definert på siden **Leverandørparametere** , er kjørt, men minst ett trinn i prosessen mislyktes. Statusen **Stoppet midlertidig** brukes også hvis feltet **Inkluder i automatisert behandling** er satt til **Nei**. Du kan se feilene ved å velge **Vis de siste resultatene**.
+- **Inkludert** – De automatiserte prosessene som er definert på siden **Leverandørparametere**, kjører på riktig måte, men er ennå ikke fullført.
+- **Stoppet midlertidig** – De automatiserte prosessene som er definert på siden **Leverandørparametere**, er kjørt, men minst ett trinn i prosessen mislyktes. Statusen **Stoppet midlertidig** brukes også hvis feltet **Inkluder i automatisert behandling** er satt til **Nei**. Du kan se feilene ved å velge **Vis de siste resultatene**.
 - **I arbeidsflyt** – Den importerte fakturaen er sendt til arbeidsflytsystemet, enten av den automatiserte prosessen for sending til arbeidsflyt eller manuelt.
 - **Arbeidsflyt fullført** – Arbeidsflytprosessen er fullført for den importerte fakturaen.

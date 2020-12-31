@@ -10,19 +10,18 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 220314
 ms.assetid: 2685df16-5ec8-4fd7-9495-c0f653e82567
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: 96426ce54ec1b37c6751d990503d95960c2913df
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: de31469e79addfb82b3b57e647ff82e4d254881a
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2771312"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4688131"
 ---
 # <a name="design-er-configurations-to-fill-in-pdf-templates"></a>Utforme ER-konfigurasjoner for å fylle ut PDF-maler
 
@@ -64,7 +63,7 @@ Til slutt må du laste ned følgende filer fra [CustomerSource](https://go.micro
 
 1. Gå til **Organisasjonsstyring \> Arbeidsområder \> Elektronisk rapportering**.
 2. Kontroller at leverandøren **Litware, Inc** er tilgjengelig og merket som aktiv.
-3. Velg **Repositorier**på flisen for **Microsoft**-leverandør.
+3. Velg **Repositorier** på flisen for **Microsoft**-leverandør.
 
     > [!NOTE]
     > Hvis repositoriet av typen **LCS** finnes allerede, hopper du over resten av trinnene i denne prosedyren.
@@ -105,7 +104,7 @@ Til slutt må du laste ned følgende filer fra [CustomerSource](https://go.micro
     > [!NOTE]
     > Den aktive konfigurasjonsleverandøren angis automatisk. Denne leverandøren vil kunne vedlikeholde denne konfigurasjonen. Selv om andre leverandører kan bruke denne konfigurasjonen, kan de ikke vedlikeholde den.
 
-7. Valgfritt: I **Formattype**-feltet kan du velge et bestemt format for elektronisk dokument. Hvis du velger **PDF**, vil ER-operasjonsdesigneren under utformingen bare tilby formatelementene som bare gjelder for dokumenter som genereres i PDF-format **(PDF\Fil**, **PDF\PDF-sammenslåing**osv.). Hvis du lar dette feltet stå tomt, vil et format for elektronisk dokument angis under utformingen i ER-operasjonsutformingen når det første formatelementet legges til. Hvis du for eksempel legger **til Excel\Fil** som det første formatelementet, vil ER-opersjonsdesigneren bare tilby formatelementene som bare gjelder for dokumenter som genereres i Excel-format (**Excel\Celle**, **Excel\Område** osv.). format.
+7. Valgfritt: I **Formattype**-feltet kan du velge et bestemt format for elektronisk dokument. Hvis du velger **PDF**, vil ER-operasjonsdesigneren under utformingen bare tilby formatelementene som bare gjelder for dokumenter som genereres i PDF-format **(PDF\Fil**, **PDF\PDF-sammenslåing** osv.). Hvis du lar dette feltet stå tomt, vil et format for elektronisk dokument angis under utformingen i ER-operasjonsutformingen når det første formatelementet legges til. Hvis du for eksempel legger **til Excel\Fil** som det første formatelementet, vil ER-opersjonsdesigneren bare tilby formatelementene som bare gjelder for dokumenter som genereres i Excel-format (**Excel\Celle**, **Excel\Område** osv.). format.
 8. Velg **Opprett konfigurasjon**.
 
 En ny ER-formatkonfigurasjon opprettes. Du kan bruke utkastversjonen av denne konfigurasjonen til å lagre ER-formatkomponenten som er utformet for å generere elektroniske dokumenter i PDF-format.

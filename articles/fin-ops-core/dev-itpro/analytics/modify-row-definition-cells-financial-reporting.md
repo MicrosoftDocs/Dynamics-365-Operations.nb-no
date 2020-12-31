@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: FinancialReports
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 58881
 ms.assetid: 0af492df-a84e-450c-8045-78ef1211abaf
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 318c6edc03153e02c2c4f23b07f33e8d6ebe9737
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 92d03f08fc5e34402f10068ed770b1f724cfd3a8
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2182997"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4685865"
 ---
 # <a name="modify-row-definition-cells"></a>Endre celler for raddefinisjon
 
@@ -107,7 +106,7 @@ Beskrivelsescellen inneholder beskrivelsen av de økonomiske dataen i raden i ra
     |-------------------------------|-----------------------------------|--------|
     | (Ingen)                        |                                   | Tømmer **Formatkode**-cellen. |
     | TOT                           | Sum                             | Identifiserer en rad som bruker matematiske operatorer i kolonnen **Relaterte formler/rader/enheter**. Totaler inneholder enkle operatorer, for eksempel **+** eller **-**. |
-    | CAL                           | Beregning                       | Identifiserer en rad som bruker matematiske operatorer i kolonnen **Relaterte formler/rader/enheter**. Beregninger inneholder komplekse operatorer, for eksempel **+**, **-**, **\***, **/** og **IF/THEN/ELSE**-setninger. |
+    | CAL                           | Beregning                       | Identifiserer en rad som bruker matematiske operatorer i kolonnen **Relaterte formler/rader/enheter**. Beregninger inneholder komplekse operatorer, for eksempel **+**, **-**, **\**_, _*/** og **IF/THEN/ELSE**-setninger. |
     | DES                           | beskrivelse                       | Identifiserer en overskriftslinje eller en tom linje i en rapport. |
     | LFT RGT CEN                   | Venstre Høyre Midt                 | Justerer den radbeskrivelsen på rapportsiden uavhengig av tekstens plassering i kolonnedefinisjonen. |
     | CBR                           | Endre basisrad                   | Identifiserer en rad som angir basisraden for kolonneberegninger. |
@@ -175,7 +174,7 @@ I **Formatkode**-kolonnen i en raddefinisjon, angir formatkodene **DES**, **LFT*
 
 ### <a name="example-of-preventing-printing-of-rows"></a>Eksempel på å hindre utskrift av rader
 
-I eksemplet nedenfor vil Jenny hindre utskrift av overskriften og understrekinger i **Kontanter totalt** i rapporten, fordi det ikke var aktivitet i noen av kontantkontoene. I rad 220 (som formatkoden **---** angir, er en formateringsrad) i cellen **Relaterte formler/rader/enheter**, skriver hun derfor inn **250**, som er radkoden til beløpsraden hun vil skjule.
+I eksemplet nedenfor vil en bruker hindre utskrift av overskriften og understrekinger i **Kontanter totalt** i rapporten, fordi det ikke var aktivitet i noen av kontantkontoene. I rad 220 (som formatkoden **---** angir, er en formateringsrad) i cellen **Relaterte formler/rader/enheter**, skriver brukeren derfor inn **250**, som er radkoden til beløpsraden brukeren vil skjule.
 
 [![RelatedRowsRowDefinition](./media/relatedrowsrowdefinition-1024x144.png)](./media/relatedrowsrowdefinition.png)
 
@@ -416,7 +415,7 @@ Rapportutforming skriver som standard ikke ut rader som ikke har en tilsvarende 
 3. Klikk **Lagre** på **Fil**-menyen for å lagre endringene.
 
 ## <a name="use-wildcard-characters-and-ranges-in-a-row-definition"></a>Bruke jokertegn og områder i en raddefinisjon
-Når du angir en naturlige segmentverdi i dialogboksen **Dimensjoner**, kan du plassere et jokertegn (? eller \*) i en hvilken som helst posisjon i et segment. Rapportutformingen trekker ut alle verdiene for de definerte posisjonene uten å ta hensyn til jokertegnene. Raddefinisjonen inneholder bare for eksempel naturlige segmentverdier og naturlige segmenter har fire tegn. Ved å angi **6???** i en rad angir du at rapportutformningen skal å ta med alle kontoene som har en naturlig segmentverdien som begynner med en 6. Hvis du skriver inn **6\***, de samme resultater returneres, men resultatene inkluderer også verdier med variabel bredd , som **60** og **600000**. Rapportutforming erstatter hvert jokertegn (?) med et fullstendig utvalg av mulige verdier, blant annet bokstaver og spesialtegn. I området fra **12?0** til **12?4**, vil for eksempel jokertegnet i **12?0** erstattes med den laveste verdien i tegnsettet, og jokertegn i **12?4** erstattes med den høyeste verdien i tegnsettet.
+Når du angir en naturlige segmentverdi i dialogboksen **Dimensjoner**, kan du plassere et jokertegn (? eller \*) i en hvilken som helst posisjon i et segment. Rapportutformingen trekker ut alle verdiene for de definerte posisjonene uten å ta hensyn til jokertegnene. Raddefinisjonen inneholder bare for eksempel naturlige segmentverdier og naturlige segmenter har fire tegn. Ved å angi **6???** i en rad angir du at rapportutformningen skal å ta med alle kontoene som har en naturlig segmentverdien som begynner med en 6. Hvis du skriver inn **6\**_, returneres de samme resultatene, men resultatene inkluderer også verdier med variabel bredde, som _* 60** og **600000**. Rapportutforming erstatter hvert jokertegn (?) med et fullstendig utvalg av mulige verdier, blant annet bokstaver og spesialtegn. I området fra **12?0** til **12?4**, vil for eksempel jokertegnet i **12?0** erstattes med den laveste verdien i tegnsettet, og jokertegn i **12?4** erstattes med den høyeste verdien i tegnsettet.
 
 > [!NOTE]
 > Du bør unngå å bruke jokertegn for start- og sluttkontoer i områder. Hvis du bruker jokertegn i startkontoen eller sluttkontoen, kan du få uventede resultater.

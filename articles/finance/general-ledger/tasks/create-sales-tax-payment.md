@@ -1,6 +1,6 @@
 ---
 title: Opprette en mva-betaling
-description: Utlign og poster merverdiavgift-jobben utligner mva-saldoer på mva-kontoene og forskyver dem til mva-oppgjørskontoen for en gitt periode.
+description: Jobbprosedyren Utlign og poster merverdiavgift utligner mva-saldoer på mva-kontoene og forskyver dem til mva-oppgjørskontoen for en gitt periode.
 author: twheeloc
 manager: AnnBe
 ms.date: 08/29/2018
@@ -16,24 +16,24 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: e41217d26239cf704709d1d48666c382e1e2e824
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.openlocfilehash: 7aec00c2fb657f0b4074063ef7acad5f4372ebca
+ms.sourcegitcommit: deb711c92251ed48cdf20ea514d03461c26a2262
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3985714"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "4646341"
 ---
 # <a name="create-a-sales-tax-payment"></a>Opprette en mva-betaling
 
 [!include [banner](../../includes/banner.md)]
 
-Utlign og poster merverdiavgift-jobben utligner mva-saldoer på mva-kontoene og forskyver dem til mva-oppgjørskontoen for en gitt periode.
+Jobbprosedyren Utlign og poster merverdiavgift utligner mva-saldoer på mva-kontoene og forskyver dem til mva-oppgjørskontoen for en gitt periode.
 
-1. Gå til Avgift > Deklareringer > Merverdiavgift > Utlign og poster merverdiavgift.
-2. Klikk rullegardinknappen i Utligningsperiode-feltet for å åpne oppslaget.
+1. Gå til **Avgift > Deklareringer > Merverdiavgift > Utlign og poster merverdiavgift**.
+2. Klikk på rullegardinknappen i **Utligningsperiode**-feltet for å åpne oppslaget.
 3. Klikk koblingen i den valgte raden i listen.
-4. Angi en dato i Fra dato-feltet.
-    * Hvis alternativet Ta med rettelser ikke velges på siden for parametere for økonomimodulen, kan utligningen behandles for forskjellige versjoner. Originalen er den første utligningen for et periodeintervall og kan bare behandles én gang for et periodeintervall. Seneste rettelser utligner mva-transaksjoner som er postert etter at den opprinnelige versjonen er opprettet.   
-5. Angi en dato i feltet Transaksjonsdato.
-6. Klikk OK.
+4. Angi en dato i **Fra dato**-feltet.
+    * Hvis du ikke velger alternativet **Ta med rettelser** på siden **Parametere for økonomimodul**, kan utligningen behandles for forskjellige versjoner. Original er den første utligningen for et periodeintervall og kan bare behandles én gang for et periodeintervall. De nyeste rettelsene utligner mva-transaksjoner som er postert etter at den opprinnelige versjonen er opprettet.   
+5. Angi en dato i feltet **Transaksjonsdato**.
+6. Klikk **OK**.
 

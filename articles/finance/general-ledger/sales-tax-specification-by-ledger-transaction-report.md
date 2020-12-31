@@ -19,11 +19,11 @@ ms.author: roschlom
 ms.search.validFrom: 2019-08-19
 ms.dyn365.ops.version: 10.0.6
 ms.openlocfilehash: 438a640124e778b839c660f5e161efa22c319af0
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3976097"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4446247"
 ---
 # <a name="sales-tax-specification-by-ledger-transaction-report"></a>Rapport for mva-spesifikasjon etter finanstransaksjon
 [!include [banner](../includes/banner.md)]
@@ -34,10 +34,10 @@ Dette emnet forklarer hvordan du bruker rapporten **Mva-spesifikasjon etter fina
 
 Rapporten **Mva-spesifikasjon etter finanstransaksjon** viser avgiftstransaksjoner for både avgiftskontoer og ikke-avgiftskontoer. Disse kontoene er kategorisert på følgende måte:
 
-- **Avgiftskonto** – En konto anses å være avgiftskonto når en avgiftstransaksjon posteres, og hovedkontoen på **Merverdiavgift** -journallinjen er en avgiftskonto, for eksempel en utgående mva-konto eller en konto for innkommende merverdiavgift.
+- **Avgiftskonto** – En konto anses å være avgiftskonto når en avgiftstransaksjon posteres, og hovedkontoen på **Merverdiavgift**-journallinjen er en avgiftskonto, for eksempel en utgående mva-konto eller en konto for innkommende merverdiavgift.
 - **Ikke-avgiftskonto** – En konto anses å være ikke-avgiftskonto når en avgiftstransaksjon posteres, og hovedkontoen på den opprinnelige transaksjonen er en ikke-avgiftskonto, for eksempel en inntektskonto eller en utgiftskonto.
 
-For avgiftskontoer viser kolonnene **0** (null) for kolonnene **Grunnlag** , **Innkommende merverdiavgift** og **Utgående merverdiavgift** . For ikke-avgiftskontoer viser disse kolonnene beløp.
+For avgiftskontoer viser kolonnene **0** (null) for kolonnene **Grunnlag**, **Innkommende merverdiavgift** og **Utgående merverdiavgift** . For ikke-avgiftskontoer viser disse kolonnene beløp.
 
 ## <a name="filtering-the-data-on-the-report"></a>Filtrere dataene i rapporten
 

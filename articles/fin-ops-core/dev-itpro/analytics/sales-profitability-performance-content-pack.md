@@ -11,25 +11,24 @@ ms.technology: ''
 ms.search.form: SalesProfitabilityPerformancePowerBI
 audience: Application User, IT Pro
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 260674
 ms.assetid: ab457f02-929e-4d34-b813-335be3092287
 ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 490a4f6d1bd9f3bdb0af09bd4e6f7f8fb2c92a1b
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.openlocfilehash: b5ad461c86f44d880f57c940f6e3a5cb325f7e08
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3984280"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4688241"
 ---
 # <a name="sales-and-profitability-performance-power-bi-content"></a>Power BI-innholdet Resultat av salg og fortjeneste
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet beskriver hva som er inkludert i Microsoft Power BI-innholdet **Resultat av salg og fortjeneste** . Det forklarer hvordan du kan få tilgang til Power BI-rapporter, og gir informasjon om datamodellen og enhetene som brukes til å bygge innholdet.
+Dette emnet beskriver hva som er inkludert i Microsoft Power BI-innholdet **Resultat av salg og fortjeneste**. Det forklarer hvordan du kan få tilgang til Power BI-rapporter, og gir informasjon om datamodellen og enhetene som brukes til å bygge innholdet.
 
 ## <a name="overview"></a>Oversikt
 
@@ -37,7 +36,7 @@ Power BI-innholdet **Resultat av salg og fortjeneste** ble opprettet slik at sal
 
 Rapporter uthever endringer i inntekts- og fortjenestevekst over tid. Derfor kan de brukes til å varsle ledere om positive og negative trender for individuelle kunder og produkter. I tillegg sammenligner diagrammer inntekter og lønnsomhet over ulike produktkategorier og kundegrupper med hverandre. Kategori- og distriktsledere kan derfor identifisere etternølere og ledere. Til slutt, en omfattende rapport som tegner inn omsetning og fortjenestemargin for enkeltkunder. Dette gir regnskapsansvarlige et datastøttet grunnlag for å justere sin salg- og markedsføringsinnsats til profilene for hver enkelt kunde.
 
-**Resultat av salg og fortjeneste** -innholdet lar salgssjefer analysere salgsresultat på følgende måter:
+**Resultat av salg og fortjeneste**-innholdet lar salgssjefer analysere salgsresultat på følgende måter:
 
 - Inntekt, hittil i år (etter kundegruppe og enkeltkunder, salgkategorier og enkeltprodukter og områder)
 - Inntektsendring, årlig (etter kundeområder og salgskategorier)
@@ -49,9 +48,9 @@ Fortjenesten kan analyseres på følgende måter:
 - Kundelønnsomhet (etter omsetning kontra bruttofortjeneste)
 
 ## <a name="accessing-the-power-bi-content"></a>Tilgang til Power BI-innholdet
-Power BI-innholdet **Resultat av salg og fortjeneste** vises på **Resultat av salg og fortjeneste** -siden ( **Salg og markedsføring** \> **Forespørsler og rapporter** \> **Analyse av salgsytelse** \> **Resultat av salg og fortjeneste** ).
+Power BI-innholdet **Resultat av salg og fortjeneste** vises på **Resultat av salg og fortjeneste**-siden (**Salg og markedsføring** \> **Forespørsler og rapporter** \> **Analyse av salgsytelse** \> **Resultat av salg og fortjeneste**).
 
-## <a name="metricsthat-are-included-in-the-power-bi-content"></a>Mål som er inkludert i Power BI-innholdet
+## <a name="metrics-that-are-included-in-the-power-bi-content"></a>Mål som er inkludert i Power BI-innholdet
 **Resultat av salg og fortjeneste** for Power BI-innhold omfatter en rapport som består av et sett med mål. Disse målene vises som diagrammer, fliser og tabeller. Tabellen nedenfor gir en oversikt over effektene i innholdspakken.
 
 | Rapportside            | Diagrammer                                     | Fliser                                                   |
@@ -77,7 +76,7 @@ Power BI-innholdet **Resultat av salg og fortjeneste** vises på **Resultat av s
 \* Inntekt i år og forrige år. og vekst etter salgskategori.
 
 ## <a name="understanding-the-data-model-and-entities"></a>Forstå datamodellen og enheter
-Følgende data brukes til å fylle ut rapporten i Power BI-innholdet **Resultat av salg og fortjeneste** . Disse dataene vises som aggregerte mål som er oppsamlet i enhetslageret. Enhetslageret er en Microsoft SQL Server-database som er optimalisert for analyse. Hvis du vil ha mer informasjon, se [Power BI-integrering med enhetslager](power-bi-integration-entity-store.md).
+Følgende data brukes til å fylle ut rapporten i Power BI-innholdet **Resultat av salg og fortjeneste**. Disse dataene vises som aggregerte mål som er oppsamlet i enhetslageret. Enhetslageret er en Microsoft SQL Server-database som er optimalisert for analyse. Hvis du vil ha mer informasjon, se [Power BI-integrering med enhetslager](power-bi-integration-entity-store.md).
 
 De aggregerte målingene i denne innholdspakken er delsett av aggregerte målinger som var tilgjengelige i salgskuben i Microsoft Dynamics AX 2012 og Microsoft Dynamics AX 2012 R3. For å plassere kubens aggregerte målinger i enhetslageret må du gjøre dem distribuerbare. Hvis du vil ha mer informasjon, kan du se fremgangsmåten for hvordan du plasserer aggregerte målinger i enhetsbutikken i blogginnlegget [Power BI-integrering med enhetslageret i Dynamics](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/06/09/power-bi-integration-with-entity-store-in-dynamics-ax-7-may-update/).
 

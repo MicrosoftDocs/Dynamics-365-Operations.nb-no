@@ -19,11 +19,11 @@ ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 84cde511ab0b5cbe4b99e72832bf548336b6b28c
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2187228"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4446256"
 ---
 # <a name="manual-depreciation"></a>Manuell avskrivning
 
@@ -58,7 +58,7 @@ Følgende tabell viser hvordan avskrivning for hvert intervall beregnes.
 | 2                | (11 000 – 1 000) × 50 % = 5 000                | 5 000 (10 000 – 5 000)                    |
 | 3                | (11 000 – 1 000) × 8 % = 800                   | 4 200 (5 000 – 800)                       |
 
-Hvis du velger **Månedlig** i feltet**Periodefrekvens**, må du definere 12 manuelle planleggingsintervaller. Følgende tabell viser avskrivningsbeløpene for de to første intervallene.
+Hvis du velger **Månedlig** i feltet **Periodefrekvens**, må du definere 12 manuelle planleggingsintervaller. Følgende tabell viser avskrivningsbeløpene for de to første intervallene.
 
 | Intervall | Avskrivningsbeløp            |
 |----------|--------------------------------|

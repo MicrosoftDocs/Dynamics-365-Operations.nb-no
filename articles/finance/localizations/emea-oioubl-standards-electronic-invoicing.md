@@ -3,7 +3,7 @@ title: Standarder som støttes for elektronisk fakturering i Europa
 description: Dette emnet forklarer dekningsnivået som finnes for elektronisk fakturering for Europa.
 author: mrolecki
 manager: AnnBe
-ms.date: 09/03/2020
+ms.date: 11/19/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.industry: ''
 ms.author: mrolecki
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: c86cc90e5f441641bc14d20898e65325d7c7d716
-ms.sourcegitcommit: 1ca48d95fbff2555307cc1e5e5e23feea79a8bc1
+ms.openlocfilehash: 3ed98c268af841b1625f547c79f271f3e3a81b74
+ms.sourcegitcommit: 3d16522c00ba2d30aa43befbf1b7b3eaad377325
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "3763685"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "4592468"
 ---
 # <a name="supported-standards-for-electronic-invoicing-in-europe"></a>Standarder som støttes for elektronisk fakturering i Europa
 
@@ -47,7 +47,22 @@ Følgende landspesifikke formater av elektroniske fakturaer er tilgjengelige:
 -   Estisk spesifikt format, versjon 1.2
 -   Finvoice 3.0 for Finland
 
-Elektronisk fakturering er basert på [elektronisk rapportering](../../dev-itpro/analytics/general-electronic-reporting.md). En datamodelle kalt **Fakturamodell**, tilordning av fakturamodell og flere lands-/områdespesifikke ER-formatkonfigurasjoner er opprettet for Østerrike (AT), Danmark (DK), Italia (IT), Norge (NO), Spania (ES), Frankrike (FR), Belgia (BE), Nederland (NL), Tyskland (DE) og den europeiske uniun (EU).
+Elektronisk fakturering er basert på [elektronisk rapportering](../../dev-itpro/analytics/general-electronic-reporting.md). En datamodell for **Fakturamodell**, fakturamodelltilordning og flere lands-/områdespesifikke ER-formatkonfigurasjoner er opprettet for følgende land/områder: 
+
+- Østerrike (AT)
+- Danmark (DK)
+- Italia (IT)
+- Norge (NO)
+- Spania (ES)
+- Frankrike (FR)
+- Belgia (BE)
+- Nederland (BE)
+- Tyskland (DE)
+- Estland (EE)
+- Finland (FI)
+- Den europeiske union (EU)
+
+Datamodellen for **Fakturamodell**, fakturamodelltilordningen og de lands-/områdespesifikke ER-formatkonfigurasjonene omfatter følgende:
 
 -   OIOUBL salgsfaktura - for AT, DK, og NO
 -   OIOUBL salgskreditnota - for AT, DK, og NO
@@ -80,7 +95,17 @@ Elektronisk fakturering er basert på [elektronisk rapportering](../../dev-itpro
 -   Salgsfaktura (FI)
 -   Prosjektfaktura (FI)
 
-De elektroniske fakturaene og kreditnotaene du genrerer, inneholder obligatorisk informasjon, for eksempel EAN-nummeret, ordrenummer, kontakt, dimensjonskontokode og adresseopplysninger for kunden. Valideringsregler brukes når fakturaer genereres, slik at du kan verifisere at riktig informasjon er angitt. Settet med nødvendig informasjon kan variere fra land til land. Siden både kravene og de støttede landene og formatene kan endres, bør du alltid gå til det delte ativabiblioteket i Microsoft Dynamics Lifecycle Services (LCS) og viser den mest oppdaterte listen over tilgjengelige filer som har aktivatypen **TYSK konfigurasjon**.
+De elektroniske fakturaene og kreditnotaene du genrerer, inneholder obligatorisk informasjon, for eksempel EAN-nummeret, ordrenummer, kontakt, dimensjonskontokode og adresseopplysninger for kunden. Valideringsregler brukes når fakturaer genereres, slik at du kan verifisere at riktig informasjon er angitt. Settet med nødvendig informasjon kan variere fra land til land. Siden både kravene og de støttede landene og formatene kan endres, bør du alltid gå til det delte aktivabiblioteket i Microsoft Dynamics Lifecycle Services (LCS) og vise den mest oppdaterte listen over tilgjengelige filer som har aktivatypen **GER-konfigurasjon**.
+
+## <a name="electronic-invoice-configuration"></a>Konfigurasjon av elektronisk faktura
+Konfigurasjonen av og detaljene i elektroniske fakturaer avhenger av landet/området den er implementert for. Hvis du vil ha mer informasjon om hvordan du konfigurerer og bruker elektroniske fakturaer for kunder, kan du se de relaterte landsspesifikke emnene:
+
+- [Italia](emea-ita-e-invoices.md)
+- [Norge](emea-nor-e-invoices.md)
+- [Tyskland](emea-deu-e-invoices.md)
+- [Finland](https://support.microsoft.com/help/4559937)
+- [Estland](https://support.microsoft.com/help/4552679)
+- [PEPPOL](https://support.microsoft.com/help/4490320)
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 Hvis du vil ha mer informasjon om hvordan du konfigurerer elektroniske fakturaer, kan du spille av følgende [Oppgaveveiledninger](../../fin-and-ops/get-started/help-overview.md#task-guides) i Hjelp-ruten:
@@ -90,4 +115,4 @@ Hvis du vil ha mer informasjon om hvordan du konfigurerer elektroniske fakturaer
  - Definere kundekontoer for elektronisk fakturering med OIOUBL
 
 > [!NOTE] 
-> Selv om disse oppgaveveiledningene ble opprettet for dansk spesifikt format for e-faktura *OIOUBL*, de som kan brukes av andre støttede land med mindre avvik.
+> Selv om disse oppgaveveiledningene ble opprettet for det danske e-fakturaformatet *OIOUBL*, gjelder de for andre støttede land/områder med mindre avvik.

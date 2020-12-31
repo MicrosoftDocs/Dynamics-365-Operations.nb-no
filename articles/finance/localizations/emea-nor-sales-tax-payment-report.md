@@ -16,11 +16,11 @@ ms.search.region: Norway
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.openlocfilehash: 0500c4ea22c2a4579d43081d5608fb01656b0ba7
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2773472"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4408307"
 ---
 # <a name="vat-statement-for-norway"></a>MVA-oppgave for Norge
 
@@ -39,7 +39,7 @@ Følgende eksempel viser hvordan du kan definere mva-rapporteringskodene til å 
 
 For brukere i juridiske enheter i Norge, kan den følgende mva-rapporteringskoder opprettet og tilordnet til mva-koder.
 
-| Rapporteringskode | beskrivelse                                                                        | Velg koden for rapportering i dette feltet i oppsettkategorien for rapporten eller Rapportoppsett - kreditnota-kategorien på siden for mva-koder |
+| Rapporteringskode | Beskrivelse                                                                        | Velg koden for rapportering i dette feltet i oppsettkategorien for rapporten eller Rapportoppsett - kreditnota-kategorien på siden for mva-koder |
 |--------------|--------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------|
 | 11             | Samlet omsetning utenfor merverdiavgiftsloven                                          | **Avgiftspliktig salg** eller **Avgiftsfritt salg**, avhengig av hvilken type mva |
 | 31             | Innenlands omsetning og uttak, og beregnet avgift, 25 %, basis                   | **Avgiftspliktig salg** |

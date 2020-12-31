@@ -19,11 +19,11 @@ ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 4315f70e7959e2576e9b87dfb3898318f47aa46d
-ms.sourcegitcommit: 51e626675b0130fa32a84ce2d9119b68ea928018
+ms.sourcegitcommit: 0efa93f11847a2b75d13cd0a49e716c76130ec44
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4000275"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "4446556"
 ---
 # <a name="fixed-asset-depreciation-conventions"></a>Konvensjoner for anleggsmiddelavskrivning
 
@@ -31,7 +31,7 @@ ms.locfileid: "4000275"
 
 Dette emnet beskriver avskrivningskonvensjoner for anleggsmidler. Avskrivningskonvensjoner brukes til å bestemme når og hvordan avskrivningen skal beregnes for både året da anleggsmiddelet anskaffes, og året da et anleggsmiddel avhendes.
 
-Avskrivningskonvensjoner kan tilordnes til oppsettet for et anleggsmiddelgruppetablå. Hvis du vil vise eller tilordne avskrivningskonvensjonen, velger du **Anleggsmiddel** -grupper i oppsettområdet for anleggsmidler. Velg **Tablåer** -knappen. I dette tilfellet brukes avskrivningskonvensjonene som er tilordnet, som standardverdier ved opprettelse av anleggsmiddeltablåer. Avskrivningskonvensjoner kan også angis på et enkelt anleggsmiddeltablå. For å gjøre dette velger du **Tablåer** i oppsettområdet i anleggsmidler, og deretter velger du **Anleggsmiddelgrupper** -knappen.
+Avskrivningskonvensjoner kan tilordnes til oppsettet for et anleggsmiddelgruppetablå. Hvis du vil vise eller tilordne avskrivningskonvensjonen, velger du **Anleggsmiddel**-grupper i oppsettområdet for anleggsmidler. Velg **Tablåer**-knappen. I dette tilfellet brukes avskrivningskonvensjonene som er tilordnet, som standardverdier ved opprettelse av anleggsmiddeltablåer. Avskrivningskonvensjoner kan også angis på et enkelt anleggsmiddeltablå. For å gjøre dette velger du **Tablåer** i oppsettområdet i anleggsmidler, og deretter velger du **Anleggsmiddelgrupper**-knappen.
 
 | Avskrivningskonvensjon   | Beskrivelse |
 |---------------------------|-------------|

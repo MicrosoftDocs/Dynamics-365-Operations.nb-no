@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Operations
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6132d48f276b27797e86fbcde11746b7e4da7d3b
-ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
+ms.openlocfilehash: 7dfa8fcb3525876da66659fe3bd8bbe3b81a37a3
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3142461"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4684553"
 ---
 # <a name="modify-formats-to-generate-documents-that-have-application-data"></a>Endre formater for å generere dokumenter med programdata
 
@@ -95,16 +94,17 @@ Trinnene i denne fremgangsmåten forklarer hvordan du utformer elektronisk rappo
 52. Klikk Lagre.
 
 ## <a name="modify-format-to-memorize-details-of-reporting"></a>Endre formatet for å lagre informasjon for rapportering
+
 1. Klikk Tilordne format til modell.
 2. Klikk Ny.
 3. I feltet Definisjon, angir eller velger du rotelementet "For oppdatering av programdata".
-    * For oppdatering av programdata  
+    * For oppdatering av programdata.
 4. Skriv inn "Tilordning til å oppdatere data" i Navn-feltet.
     * Tilordning til å oppdatere data  
 5. Klikk Lagre.
-    * Denne tilknytningen definerer hvordan detaljene for Intrastat-rapporten samles i datamodellen, strukturen som er angitt av valgte rotelementet "For oppdatering av programdata". Disse opplysningene, tilordningen modellen med samme rotelementet "For oppdatering av programdata" og retningen "til mål' vil bli brukt for oppdateringen av programdata. Programdataene oppdatering starter umiddelbart etter at utgående Intrastat-rapporten genereres. Legg merke til at programdataene oppdatere kan du hoppe over under kjøring, men datamodellen må være tom (som inneholder listen over tomme oppføringer).   
+    * Denne tilknytningen definerer hvordan detaljene for Intrastat-rapporten samles i datamodellen, strukturen som er angitt av valgte rotelementet "For oppdatering av programdata". Disse opplysningene, tilordningen modellen med samme rotelementet "For oppdatering av programdata" og retningen "til mål' vil bli brukt for oppdateringen av programdata. Programdataene oppdatering starter umiddelbart etter at utgående Intrastat-rapporten genereres. Programdataoppdateringen kan hoppes over under kjøring, men datamodellen må være tom (som inneholder listen over tomme oppføringer).
 6. Klikk Utforming.
-    * Legg merke til at formatet for utgående Intrastat-rapporten legges til som standard som en datakilde for tilordning av denne modellen.  
+    * Formatet for utgående Intrastat-rapport legges til som standard som en datakilde for tilordning av denne modellen.  
     * Bind elementene i den utformede rapporten (presentert som en datakilde) til elementer i datamodellen, som er filtrert basert på den valgte modellens rotelement.  
 7. Utvid "Arkivhode" i treet.
 8. Utvid 'Arkivhode\Arkivlinjer' i treet.
@@ -120,8 +120,8 @@ Trinnene i denne fremgangsmåten forklarer hvordan du utformer elektronisk rappo
 18. Klikk Legg til funksjon.
 19. Utvid 'format' i treet.
 20. Utvid 'format\Deklarasjon: XML-element(Declaration)' i treet.
-21. Utvid 'format\Deklarasjon: XML-element(Declaration)\Data: XML-element 1..* (Data)' i treet.
-22. Velg 'format\Deklarasjon: XML-element(Declaration)\Data: XML-element 1..* (Data)\Element: XML-element 0..* (Item)' i treet.
+21. Utvid `format\Declaration: XML Element(Declaration)\Data: XML Element 1..* (Data)` i treet.
+22. Velg `format\Declaration: XML Element(Declaration)\Data: XML Element 1..* (Data)\Item: XML Element 0..* (Item)` i treet.
 23. Klikk Legg til datakilde.
 24. I Formel-feltet skriver du inn 'COUNT(format.Declaration.Data.Item)'.
     * COUNT(format.Declaration.Data.Item)  
@@ -130,23 +130,22 @@ Trinnene i denne fremgangsmåten forklarer hvordan du utformer elektronisk rappo
 27. Velg 'Arkivhode\Filnavn' i treet.
 28. Velg 'format\Deklarasjon: XML-element(Declaration)\Data: XML-element 1..* (Data)\Filnavn: Elementstreng(File name)' i treet.
 29. Klikk Bind.
-30. Velg 'format\Deklarasjon: XML-element(Declaration)\Data: XML-element 1..* (Data)\Element: XML-element 0..* (Item)\Dim4: XML-element 1..1 (Item)nummer: Streng(number)' i treet.
+30. Velg `format\Declaration: XML Element(Declaration)\Data: XML Element 1..* (Data)\Item: XML Element 0..* (Item)\Dim4: XML Element 1..1 (Item)\number: String(number)` i treet.
 31. Velg 'Arkivhode\Arkivlinjer\Varenummer' i treet.
 32. Klikk Bind.
-33. Velg 'format\Deklarasjon: XML-element(Declaration)\Data: XML-element 1..* (Data)\Element: XML-element 0..* (Item)\Dim3: XML-element 1..1 (Amount)\verdi: Numerisk real(value)' i treet.
+33. Velg `format\Declaration: XML Element(Declaration)\Data: XML Element 1..* (Data)\Item: XML Element 0..* (Item)\Dim3: XML Element 1..1 (Amount)\value: Numeric Real(value)` i treet.
 34. Velg 'Arkivhode\Arkivlinjer\Beløp' i treet.
 35. Klikk Bind.
-36. Velg 'format\Deklarasjon: XML-element(Declaration)\Data: XML-element 1..* (Data)\Element: XML-Element 0..* (Item)\Artikkelpost-ID: Element Int64(Commodity rec id)'.
+36. Velg `format\Declaration: XML Element(Declaration)\Data: XML Element 1..* (Data)\Item: XML Element 0..* (Item)\Commodity rec ID: Item Int64(Commodity rec ID)` i treet.
 37. Velg 'Arkivhode\Arkivlinjer\Artikkelpost-ID' i treet.
 38. Klikk Bind.
 39. Velg 'Arkivhode\Arkivlinjer' i treet.
-40. Velg 'format\Deklarasjon: XML-element(Declaration)\Data: XML-element 1..* (Data)\Element: XML-element 0..* (Item)' i treet.
+40. Velg `format\Declaration: XML Element(Declaration)\Data: XML Element 1..* (Data)\Item: XML Element 0..* (Item)` i treet.
 41. Klikk Bind.
 42. Velg "Arkivhode" i treet.
-43. Velg 'format\Deklarasjon: XML-element(Declaration)\Data: XML-element 1..* (Data)' i treet.
+43. Velg `format\Declaration: XML Element(Declaration)\Data: XML Element 1..* (Data)` i treet.
 44. Klikk Bind.
 45. Klikk Lagre.
 46. Lukk siden.
 47. Lukk siden.
 48. Lukk siden.
-

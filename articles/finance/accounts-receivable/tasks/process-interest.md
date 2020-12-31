@@ -17,11 +17,11 @@ ms.author: shpandey
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.openlocfilehash: 093fbd23f9fcaf62db9988a98a94b8cebf582768
-ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3140151"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4446417"
 ---
 # <a name="process-interest"></a>Behandle rente
 
@@ -44,7 +44,7 @@ Denne prosedyren viser hvordan du oppretter, skriver ut og posterer rentenotaer.
 6. Velg et alternativ i feltet **Bruk posteringsprofil fra**. Det finnes tre alternativer for posteringsprofil:
     - Konto – Bruk posteringsprofilen som er tilordnet kundekontoen for hver rentenota. 
     - Velg – Bruk posteringsprofilen som du velger i Posteringsprofil-feltet.
-    - Transaksjon – Bruk den individuelle posteringsprofilen fra transaksjoner der rente er beregnet for hver rentenota. Transaksjoner som ikke har en tilordnet posteringsprofil, bruker posteringsprofilen som er angitt i Finans og merverdiavgift-området i Kundeparametere-skjemaet).  
+    - Transaksjon – Bruk den individuelle posteringsprofilen fra transaksjoner der rente er beregnet for hver rentenota. Transaksjoner som ikke har en tilordnet posteringsprofil, bruker posteringsprofilen som er angitt i Finans og merverdiavgift-området i Kundeparametere-skjemaet.  
 7. Utvid hurtigfanen **Poster som skal inkluderes**.
 8. Klikk **Filter**.
 9. Angi en kunde-ID i **Kriterier**-feltet. Skriv for eksempel inn US-001.

@@ -19,11 +19,11 @@ ms.author: mrolecki
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: f0fc01508bd206f750a4101521cd9dff7b647656
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2179288"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4446345"
 ---
 # <a name="sepa-credit-transfer-overview"></a>Oversikt over SEPA-kredittoverføring
 
@@ -48,7 +48,7 @@ EPC, som består av europeiske banker, utvikler kommersielle og tekniske rammeve
 -   Kort
 
 ## <a name="what-is-a-sepa-credit-transfer"></a>Hva er en SEPA-kredittoverføring?
-En SEPA-kredittoverføring er en betaling fra ett firma eller en enkeltperson til et annet firma eller en enkeltperson. Betalinger må være i euro og må inneholde IBAN-nummeret (internasjonalt bankkontonummer) og BIC-koden (bankidentifikasjonskode) for begge parter. (BIC-koden er også kjent som \[SWIFT\]-kode (Society for Worldwide Interbank Financial Telecommunication). I tillegg må transaksjonskostnader deles mellom begge parter. Kreditoverføringer som forekommer mellom parter, bør bruke XML-filer som samsvarer med ISO 20022-betalingsbehandlingsstandarder og XML-formatet, som angitt av EPC.
+En SEPA-kredittoverføring er en betaling fra ett firma eller en enkeltperson til et annet firma eller en enkeltperson. Betalinger må være i euro og må inneholde IBAN-nummeret (internasjonalt bankkontonummer) og BIC-koden (bankidentifikasjonskode) for begge parter. (BIC-koden er også kjent som \[SWIFT\]-kode Society for Worldwide Interbank Financial Telecommunication). I tillegg må transaksjonskostnader deles mellom begge parter. Kreditoverføringer som forekommer mellom parter, bør bruke XML-filer som samsvarer med ISO 20022-betalingsbehandlingsstandarder og XML-formatet, som angitt av EPC.
 
 ## <a name="how-is-a-credit-transfer-implemented"></a>Hvordan implementeres SEPA-kredittoverføringer?
 Betalingsformatet for kredittoverføringer for EU-land implementeres ved hjelp av Generell elektronisk rapportering- og Betalingsmåter-funksjonaliteten i Microsoft Dynamics 365 Finance. Noen får kredittoverføringsformater som brukes i andre områder, bruker fremdeles det eldre betalingsrammeverket. Det er blant annet tolv filformater for ISO 20022-kredittoverføring som er tilgjengelig. Disse eksportformatene overholder SEPA ISO 20022 XML-standarden. De brukes til å generere ikke-euro-betalingsoverføringer for land/områder der de brukes, og euro-betalinger som er angitt i versjon 8.2 av SEPA-kredittoverføringsreglene som EPC utgir. Før du kan implementere kredittoverføringer må du kontakte banken din for å få programvaren som kreves for å laste opp filer for elektroniske banktjenester. Du vil bruke denne programvaren til å overføre XML-filene som inneholder betalingsordrer til banken.

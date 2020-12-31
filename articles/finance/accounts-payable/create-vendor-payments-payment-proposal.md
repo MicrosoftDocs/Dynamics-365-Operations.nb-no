@@ -19,11 +19,11 @@ ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 57e8ce38241933b16252f1c918b0f763a8f1be08
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2179294"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4446373"
 ---
 # <a name="create-vendor-payments-by-using-a-payment-proposal"></a>Opprette leverandørbetalinger ved hjelp av et betalingsforslag
 
@@ -119,7 +119,7 @@ Dimensjonskontroll lar deg kontrollere gruppering av genererte linjer etter beta
 
 #### <a name="bank-account-selection"></a>Bankkontovalg
 
-Du kan definere en standard betalingskonto for debitering per betalingsmetode uansett landkontekst. Dette angis i betalingslinjene som genereres av et forslag. Med bankkontofunksjonen kan du definere flere bankkontoer for debitering som styres av dimensjon og valuta eller en kombinasjon av disse for å bruke forskjellige bankkontoer for debitering, avhengig av hver kombinasjon. Du kan definere disse kombinasjonene på siden **Betalingsmåter** ved hjelp av **Bankkontoer**-knappen som er tilgjengelig for hver betalingsmåte med **Kontotype for postering** = **Bank**.
+Du kan definere en standard betalingskonto for debitering per betalingsmetode uansett landkontekst. Dette angis i betalingslinjene som genereres av et forslag. Med bankkontofunksjonen kan du definere flere bankkontoer for debitering som styres av dimensjon og valuta eller en kombinasjon av disse for å bruke forskjellige bankkontoer for debitering, avhengig av hver kombinasjon. Du kan definere disse kombinasjonene på siden **Betalingsmåter** ved hjelp av  **Bankkontoer**-knappen som er tilgjengelig for hver betalingsmåte med **Kontotype for postering** = **Bank**.
 
 
 

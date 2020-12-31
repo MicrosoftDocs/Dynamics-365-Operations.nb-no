@@ -18,11 +18,11 @@ ms.author: saraschi
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.openlocfilehash: efa1b492fec085cc8bac5a786af4aaba854899e5
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2249661"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4446314"
 ---
 # <a name="depreciation-book-upgrade-overview"></a>Oversikt over oppgradering av avskrivningstablå
 
@@ -62,7 +62,7 @@ Parameterne er plassert i begynnelsen av klassen ReleaseUpdateDB70\_FixedAssetJo
 
 *// Angi en foretrukket metode for fordeling av bilag* 
  *// true, hvis du vil bruke en eksisterende nummerseriekode* 
- *// false, hvis du vil bruke den systemdefinerte nummerserien (standard* const boolean NumberSequenceUseExistingCode = false;  
+ *// false, hvis du vil bruke den systemdefinerte nummerserien (standard)* const boolean NumberSequenceUseExistingCode = false;  
 
 *// Hvis bruker fremgangsmåten for systemdefinert nummerserie, angir du parameterne for nummerserien.*
  *// Det opprettes en ny nummerserie med disse parameterne.* const str NumberSequenceDefaultCode = 'FADBUpgr'; const str NumberSequenceDefaultParameterPrefix = 'FADBUpgr'; const int NumberSequenceDefaultParameterAlpanumericLength = 9; const int NumberSequenceDefaultParameterStartNumber = 1;   

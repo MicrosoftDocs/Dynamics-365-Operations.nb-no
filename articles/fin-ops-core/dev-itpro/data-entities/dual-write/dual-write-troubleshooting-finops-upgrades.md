@@ -18,20 +18,22 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: 07d6bd0bab796d7839daa2bad91f7e88c2e881b5
-ms.sourcegitcommit: 0a741b131ed71f6345d4219a47cf5f71fec6744b
+ms.openlocfilehash: c76b35ed3af766f42484a118a4a0407d969b5240
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "3997924"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4683605"
 ---
 # <a name="troubleshoot-issues-related-to-upgrades-of-finance-and-operations-apps"></a>Feilsøke problemer i forbindelse med oppgraderinger av Finance and Operations-apper
 
 [!include [banner](../../includes/banner.md)]
 
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 
-Dette emnet inneholder feilsøkingsinformasjon om dobbel skriving-integrasjon mellom Finance and Operations-apper og Common Data Service. Særlig gir det informasjon som kan hjelpe deg med å løse problemer knyttet til oppgraderinger av Finance and Operations-apper.
+
+Dette emnet inneholder feilsøkingsinformasjon om dobbel skriving-integrasjon mellom Finance and Operations-apper og Dataverse. Særlig gir det informasjon som kan hjelpe deg med å løse problemer knyttet til oppgraderinger av Finance and Operations-apper.
 
 > [!IMPORTANT]
 > Noen av problemene som dette emnet løser, kan kreve administratorrollen for systemet eller legitimasjon for Microsoft Azure Active Directory (Azure AD)-leieradministrator. Delen for hvert problem forklarer om en bestemt rolle eller legitimasjon er nødvendig.
@@ -40,10 +42,10 @@ Dette emnet inneholder feilsøkingsinformasjon om dobbel skriving-integrasjon me
 
 **Nødvendig rolle for å løse problemet:** Systemadministrator
 
-Det kan hende du får en feilmelding som ligner på følgende eksempel når du prøver å bruke **DualWriteProjectConfiguration** -enheten til å oppdatere en Finance and Operations-app til Platform update 30.
+Det kan hende du får en feilmelding som ligner på følgende eksempel når du prøver å bruke **DualWriteProjectConfiguration**-enheten til å oppdatere en Finance and Operations-app til Platform update 30.
 
 ```console
-Infolog diagnostic message: 'Cannot select a record in Dual write project sync (DualWriteProjectConfiguration). The SQL database has issued an error.' on category 'Error'. 10/28/2019 15:18:20: Infolog diagnostic message: 'Object Server Database Synchronizer: ' on category 'Error'. 10/28/2019 15:18:20: Infolog diagnostic message: '[Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'ISDELETE'.' on category 'Error'. 10/28/2019 15:18:20: Infolog diagnostic message: 'SELECT T1.PROJECTNAME,T1.EXTERNALENTITYNAME,T1.INTERNALENTITYNAME,T1.EXTERNALENVIRONMENTURL,T1.STATUS,T1.ENABLEBATCHLOOKUP,T1.PARTITIONMAP,T1.QUERYFILTEREXPRESSION,T1.INTEGRATIONKEY,T1.ISDELETE,T1.ISDEBUGMODE,T1.RECVERSION,T1.PARTITION,T1.RECID FROM DUALWRITEPROJECTCONFIGURATION T1 WHERE (PARTITION=5637144576)' on category 'Error'. 10/28/2019 15:18:20: Infolog diagnostic message: 'session 1043 (Admin)' on category 'Error'. 10/28/2019 15:18:20: Infolog diagnostic message: 'Stack trace: Call to TTSCOMMIT without first calling TTSBEGIN.' on category 'Error'.
+Infolog diagnostic message: 'Cannot select a row in Dual write project sync (DualWriteProjectConfiguration). The SQL database has issued an error.' on category 'Error'. 10/28/2019 15:18:20: Infolog diagnostic message: 'Object Server Database Synchronizer: ' on category 'Error'. 10/28/2019 15:18:20: Infolog diagnostic message: '[Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'ISDELETE'.' on category 'Error'. 10/28/2019 15:18:20: Infolog diagnostic message: 'SELECT T1.PROJECTNAME,T1.EXTERNALENTITYNAME,T1.INTERNALENTITYNAME,T1.EXTERNALENVIRONMENTURL,T1.STATUS,T1.ENABLEBATCHLOOKUP,T1.PARTITIONMAP,T1.QUERYFILTEREXPRESSION,T1.INTEGRATIONKEY,T1.ISDELETE,T1.ISDEBUGMODE,T1.RECVERSION,T1.PARTITION,T1.RECID FROM DUALWRITEPROJECTCONFIGURATION T1 WHERE (PARTITION=5637144576)' on category 'Error'. 10/28/2019 15:18:20: Infolog diagnostic message: 'session 1043 (Admin)' on category 'Error'. 10/28/2019 15:18:20: Infolog diagnostic message: 'Stack trace: Call to TTSCOMMIT without first calling TTSBEGIN.' on category 'Error'.
 10/28/2019 15:18:20: Application configuration sync failed.
 Microsoft.Dynamics.AX.Framework.Database.TableSyncException: Custom action threw exception(s), please investigate before synchronizing again: 'InfoException:Stack trace: Call to TTSCOMMIT without first calling TTSBEGIN."
 ```
@@ -56,7 +58,7 @@ Følg fremgangsmåten nedenfor for å løse problemet.
 4. I applikasjonsobjekttreet høyreklikker du **DualWriteProjectConfiguration** og velger **Legg til i nytt prosjekt**. Velg **OK** for å opprette det nye prosjektet som bruker standardalternativer.
 5. I Løsningsutforsker høyreklikker du **Prosjektegenskaper** og setter **Synkroniser database på build** til **Sann**.
 6. Bygg prosjektet, og bekreft at byggingen er vellykket.
-7. Velg **Synkroniser database** på **Dynamics 365** -menyen.
+7. Velg **Synkroniser database** på **Dynamics 365**-menyen.
 8. Velg **Synkroniser** for å utføre en fullstendig databasesynkronisering.
 9. Når den fullstendige databasesynkroniseringen er fullført, kjører du trinnet for databasesynkronisering på nytt i Microsoft Dynamics Lifecycle Services (LCS) og bruker de manuelle oppgraderingsskriptene, slik at du kan fortsette med oppdateringen.
 
@@ -73,19 +75,19 @@ På siden **Dobbel skriving** kan du få en feilmelding som ligner på følgende
 Du kan løse problemet ved først å følge disse trinnene for å kontrollere at feltene finnes i enheten.
 
 1. Logg på den virtuelle maskinen for Finance and Operations-appen.
-2. Gå til **Arbeidsområder \> Databehandling** , velg flisen **Rammeverkparametere** og deretter, i fanen **Enhetsinnstillinger** , velger du **Oppdater enhetsliste** for å oppdatere enhetene.
-3. Gå til **Arbeidsområder \> Databehandling** , velg kategorien **Dataenheter** , og kontroller at enheten finnes i listen. Hvis enheten ikke er oppført, logger du på den virtuelle maskinen for Finance and Operations-appen og kontrollerer at enheten er tilgjengelig.
-4. Åpne **Enhetstilordning** -siden fra **Dobbel skriving** -siden i Finance and Operations-appen.
-5. Velg **Oppdater enhetsliste** for å fylle ut feltene i enhetstilordningene automatisk.
+2. Gå til **Arbeidsområder \> Databehandling**, velg flisen **Rammeverkparametere** og deretter, i fanen **Tabellinnstillinger**, velger du **Oppdater enhetsliste** for å oppdatere tabellene.
+3. Gå til **Arbeidsområder \> Databehandling**, velg fanen **Datatabeller**, og kontroller at enheten finnes i listen. Hvis enheten ikke er oppført, logger du på den virtuelle maskinen for Finance and Operations-appen og kontrollerer at enheten er tilgjengelig.
+4. Åpne **Tabelltilordning**-siden fra **Dobbel skriving**-siden i Finance and Operations-appen.
+5. Velg **Oppdater enhetsliste** for å fylle ut feltene i tabelltilordningene automatisk.
 
 Hvis problemet fremdeles ikke er løst, følger du denne fremgangsmåten.
 
 > [!IMPORTANT]
 > Denne fremgangsmåten fører deg gjennom prosessen med å slette en enhet og deretter legge den til på nytt. Hvis du vil unngå problemer, må du følge fremgangsmåten nøye.
 
-1. I Finance and Operations-appen går du til **Arbeidsområder \> Databehandling** og velger flisen **Dataenheter**.
+1. I Finance and Operations-appen går du til **Arbeidsområder \> Databehandling** og velger flisen **Datatabeller**.
 2. Finn enheten som mangler attributtet. Klikk **Endre måltilordning** på verktøylinjen.
 3. Klikk **Generer tilordning** under **Tilordne oppsamling til mål**.
-4. Åpne **Enhetstilordning** -siden fra **Dobbel skriving** -siden i Finance and Operations-appen.
+4. Åpne **Tabelltilordning**-siden fra **Dobbel skriving**-siden i Finance and Operations-appen.
 5. Hvis attributtet ikke fylles ut automatisk på kartet, legger du det til manuelt ved å klikke **Legg til attributt** og deretter **Lagre**. 
 6. Velg kartet, og klikk **Kjør**.

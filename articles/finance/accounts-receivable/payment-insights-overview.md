@@ -1,6 +1,6 @@
 ---
 title: Innsikt i kundebetaling (forhåndsvisning)
-description: Dette emnet beskriver innsikt i kundebetaling, som bidrar til å forbedre forståelsen av individuelle kunders vanlige betalingspraksis, og kan identifisere omstendigheter som justerer innkrevingsprosesser tidligere enn det du har gjort ellers.
+description: Dette emnet beskriver funksjonene for betalingsinnsikt som hjelper deg med å forstå de vanlige betalingspraksisene til en kunde. Funksjonen kan også hjelpe til med å identifisere omstendigheter som fører til at du starter innkrevingsprosesser tidligere enn du ellers ville starte dem.
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 11/06/2019
@@ -18,23 +18,23 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2019-11-06
 ms.dyn365.ops.version: AX 10.0.8
-ms.openlocfilehash: f9f1e4ae4270380c88069723e768fd44ecf8c113
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: f151942555ac503338f0fd44aa8779e3c2970fb1
+ms.sourcegitcommit: deb711c92251ed48cdf20ea514d03461c26a2262
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2774018"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "4644639"
 ---
 # <a name="customer-payment-insights-preview"></a>Innsikt i kundebetaling (forhåndsvisning)
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-Dette emnet beskriver innsikt i kundebetaling, som bidrar til å forbedre forståelsen av individuelle kunders vanlige betalingspraksis, og som kan identifisere omstendigheter som justerer innkrevingsprosesser tidligere enn det du kunne ha gjort ellers. 
+Dette emnet beskriver funksjonene for betalingsinnsikt som hjelper deg med å forstå de vanlige betalingspraksisene til en kunde. Funksjonen kan også hjelpe til med å identifisere omstendigheter som fører til at du starter innkrevingsprosesser tidligere enn du ellers ville starte dem. 
 
 ## <a name="overview"></a>Oversikt
 
-For organisasjoner er det ofte vanskelig å forutse når kunder betaler fakturaer. Denne mangelen på innsikt fører til mindre nøyaktige kontantstrømprognoser, innkrevingsprosesser som starter for sent, og ordrer som blir frigitt til kunder som ikke har utført betalingen. Kundebetalingsinnsikt (forhåndsvisning) hjelper organisasjoner med å forutse når en kundefaktura skal betales, og hjelper organisasjoner å opprette innkrevingsstrategier som forbedrer sannsynligheten for at betalinger skjer i tide. 
+Det kan være vanskelig å forutse når kunder betaler fakturaer. Denne mangelen på innsikt fører til mindre nøyaktige kontantstrømprognoser, innkrevingsprosesser som starter for sent, og ordrer som blir frigitt til kunder som ikke har utført betalingen. Kundebetalingsinnsikt (forhåndsversjon) hjelper organisasjoner med å forutse når en kundefaktura skal betales. Denne informasjonen kan hjelpe organisasjoner med å opprette strategier for innsamling som forbedrer sannsynligheten for betaling i tide. 
 
 ## <a name="predictions"></a>Prognoser
 
@@ -42,13 +42,13 @@ Betalingsprognoser gjør det mulig for organisasjoner å forbedre forretnings pr
 
 Ved bruk av en maskinlæringsmodell, som benytter historiske fakturaer, betalinger og kundedata, kan kundebetalingsinnsikt (forhåndsvisning) mer nøyaktige forutsi når en kunde vil betale en utestående faktura.
 
-For hver åpne faktura, forutser Kundebetalingsinnsikt (forhåndsvisning) tre sannsynligheter for betaling:
+For hver åpne faktura kan Kundebetalingsinnsikt (forhåndsvisning) predikere tre sannsynligheter for betaling:
 
 -   Sannsynlighet for at betalingen utføres i tide 
 -   Sannsynlighet for at betalingen utføres sent
 -   Sannsynlighet for at betalingen utføres veldig sent
 
-For å hjelpe organisasjoner med å forstå det totale betalingsbeløpet de kan forvente fra en kunde i én av de tre periodene, til rett tid, for sent og veldig sent, gir kundebetalingsinnsikt (forhåndsvisning) også en samlet visning av forventede betalinger.
+For å hjelpe organisasjoner med å forstå det totale betalingsbeløpet de kan forvente fra en kunde i én av de tre periodene, til rett tid, for sent og veldig sent, gir Kundebetalingsinnsikt (forhåndsvisning) også en samlet visning av forventede betalinger.
 
 [![Aggregert visning av betalingsprognoser](./media/graphic-payment-reports.png)](./media/graphic-payment-reports.png)
 

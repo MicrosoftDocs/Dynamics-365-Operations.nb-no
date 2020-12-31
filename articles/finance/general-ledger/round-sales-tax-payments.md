@@ -19,11 +19,11 @@ ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 998dbd01352d3fa5040187e81b564d14133464db
-ms.sourcegitcommit: 49f3011b8a6d8cdd038e153d8cb3cf773be25ae4
+ms.sourcegitcommit: 092ef6a45f515b38be2a4481abdbe7518a636f85
 ms.translationtype: HT
 ms.contentlocale: nb-NO
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4014965"
+ms.locfileid: "4446565"
 ---
 # <a name="sales-tax-payments-and-rounding-rules"></a>Mva-betalinger og avrundingsregler
 
@@ -44,17 +44,17 @@ Den totale merverdiavgiften for en periode viser en kreditsaldo på -98 765,43. 
 Den juridiske enheten ønsker å bruke en avrundingsmetode som runder av saldoen til nærmeste 1,00. Brukeren som er ansvarlig for merverdiavgiftsregnskapet, gjør følgende:
 
 1. Klikk **Avgift** > **Indirekte avgifter** > **Merverdiavgift** > **Skattemyndigheter**.
-2. Velg **Normal** i **Avrundingsform** -feltet på hurtigfanen **Generelt**.
-3. Angi 1,00 i **Avrund** -feltet.
+2. Velg **Normal** i **Avrundingsform**-feltet på hurtigfanen **Generelt**.
+3. Angi 1,00 i **Avrund**-feltet.
 4. Når tiden er inne for å betale merverdiavgift til skattemyndighetene, går du til **Avgift** > **Deklareringer** > **Merverdiavgift** > **Utlign og poster merverdiavgift**. I mva-oppgjørskontoen kan du se at avgiftsgjeldbeløpet på **98 765,43** avrundes til **98 765**.
 
-Tabellen nedenfor viser hvordan et beløp på 98 765,43 avrundes ved hjelp av hver avrundingsmetode som er tilgjengelig i **Avrundingsform** -feltet på siden **Skattemyndigheter**.
+Tabellen nedenfor viser hvordan et beløp på 98 765,43 avrundes ved hjelp av hver avrundingsmetode som er tilgjengelig i **Avrundingsform**-feltet på siden **Skattemyndigheter**.
 
 > [!NOTE]                                                                                  
 > Hvis avrundingsverdien er angitt som 0,00:
 >
 > - For vanlig avrunding er avrundingsfunksjonen den samme som for **Avrunding = 0,01**.
-> - For **Avrundingsform** , **Nedover** , **Avrundes opp** og **Egen fordel** er virkemåten den samme som for **Avrunding = 1,00**.
+> - For **Avrundingsform**, **Nedover**, **Avrundes opp** og **Egen fordel** er virkemåten den samme som for **Avrunding = 1,00**.
 
 | Avrundingsform                | Avrundingsverdi = 0,01 | Avrundingsverdi = 0,10 | Avrundingsverdi = 1,00 | Avrundingsverdi = 100,00 | Avrundingsverdi = 0,00   |
 |-------------------------------------|------------------------|------------------------|------------------------|--------------------------|--------------------------|

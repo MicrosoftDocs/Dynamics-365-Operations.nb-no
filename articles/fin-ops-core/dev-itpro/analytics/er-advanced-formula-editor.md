@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ERSolutionTable, ERExpressionDesignerFormula
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 97423
 ms.assetid: ''
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-04-01
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: d9911c858d6832aa70378d37e0fd5cf7d7831b1b
-ms.sourcegitcommit: dce8c5d3b2fc4a752d676cf9ba91e0dea2fa80d8
+ms.openlocfilehash: 14eb8a59b64a49649768f93befdf8e6e8dcf8105
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "3257067"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4685389"
 ---
 # <a name="electronic-reporting-advanced-formula-editor"></a>Redigeringsprogram med avansert formel for elektronisk rapportering
 
@@ -44,9 +43,9 @@ I tillegg til det [Elektronisk rapportering-basert](general-electronic-reporting
 
 Fullfør følgende trinn for å begynne å bruke redigeringsprogrammet med avansert formel i forekomsten av Microsoft Dynamics 365 Finance.
 
-1.  Gå til **Organisasjonsstyring** \> **Elektronisk rapportering** \> **Konfigurasjoner**.
-2.  På **Konfigurasjoner** -siden på handlingsruten, i **Konfigurasjoner** -fanen i **Avanserte innstillinger** -gruppen velger du **Brukerparametere**.
-3.  I **Brukerparametere** -dialogboksen, i **Kjøringssporing** -delen setter du **Aktiver redigeringsprogram med avansert formel**-parameteren til **Ja**.
+1.  Gå til **Organisasjonsstyring** \> **Elektronisk rapportering** \> **Konfigurasjoner**.
+2.  På **Konfigurasjoner**-siden, i handlingsruten i kategorien **Konfigurasjoner** i gruppen **Avanserte innstillinger**, velger du **Brukerparametere**.
+3.  I delen **Kjøringssporing** i dialogboksen **Brukerparametere** setter du parameteren **Aktiver redigeringsprogram med avansert formel** til **Ja**.
 
 [![Siden ER-konfigurasjoner](./media/ER-AdvEditor-Activate.png)](./media/ER-AdvEditor-Activate.png)
 

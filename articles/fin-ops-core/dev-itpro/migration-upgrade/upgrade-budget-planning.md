@@ -10,19 +10,18 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User
 ms.reviewer: sericks
-ms.search.scope: Core, Operations
 ms.custom: 272923
 ms.assetid: 17cdfe74-bdfd-466a-9bdd-c12583f250c7
 ms.search.region: Global
 ms.author: ryansand
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: 5ba9b8a041f9eef8142cb56d7c764a5faf6071f6
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 1c62771170212039112c777e55d45a0d88d2f49d
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2191506"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4681004"
 ---
 # <a name="upgrade-budget-planning"></a>Oppgradere budsjettplanlegging
 
@@ -33,7 +32,7 @@ Det er store forskjeller i budsjettplanlegging mellom Microsoft Dynamics AX 2012
 Budsjettplanlegging i Finance har mange forbedringer som ikke var tilgjengelige i Dynamics AX 2012. Dette emnet beskriver endringene som må utføres av kunder som oppgraderer. Det beskriver også de nye funksjonene som må vurderes under oppgraderingen. På grunn av omfanget av endringene, kan ikke eventuelle eksisterende budsjettplaner åpnes før det gjøres endringer som er beskrevet i dette emnet. Rapporter skal imidlertid fortsatt fungere og krever ikke flere endringer.
 
 ## <a name="overview-of-changes"></a>Oversikt over endringer
-Mange store endringer er gjort i budsjettering for Finande and Operations. Disse endringene er ment å gjøre budsjettplanleggingen enklere å konfigurere og bruke på nytt, for å redusere årlig vedlikehold og oppsett. Følgende områder i AX 2012 finnes ikke lenger i Finance:
+Mange store endringer er gjort i budsjettering for Finance and Operations. Disse endringene er ment å gjøre budsjettplanleggingen enklere å konfigurere og bruke på nytt, for å redusere årlig vedlikehold og oppsett. Følgende områder i AX 2012 finnes ikke lenger i Finance:
 
 -   Budsjettplanmaler (budsjettplanleggingskonfigurasjon)
 -   Budsjettplanmapper (budsjettplanleggingskonfigurasjon)
@@ -72,7 +71,7 @@ I eksemplet nedenfor brukes en oppgradert budsjettprosess fra AX 2012-demodata f
    -   Budsjettplanscenarioer: Faktisk, Grunnverdi, Budsjettforespørsel, Budsjett godkjent
    -   Budsjettplanlinjer for alle scenarier i 2017 og faktiske data for både 2017 og 2016
 
-   Følgende kolonner vil bli opprettet i Finance and Operations:
+   Følgende kolonner opprettes i Finance and Operations:
 
    | Kolonnenavn    | Budsjettplanscenario | Tidsperiode for kolonne | Årsforskyvning |
    |----------------|----------------------|--------------------|-------------|

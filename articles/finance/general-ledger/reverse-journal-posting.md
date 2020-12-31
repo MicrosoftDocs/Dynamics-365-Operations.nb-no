@@ -19,11 +19,11 @@ ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: e3244d857a9135249130672501f8b766ff9a0680
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3980944"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4446405"
 ---
 # <a name="reverse-journal-posting"></a>Tilbakeføre journalpostering
 
@@ -36,12 +36,12 @@ Dette emnet beskriver funksjonene i Microsoft Dynamics 365 Finance som lar deg t
 Du kan tilbakeføre Journallinjer enkeltvis. Med tilbakeføring av journalpostering kan du også tilbakeføre en hel finansjournal. Slik tilbakefører du en journal: 
 
 - Åpne finansjournalen, og filtrer på posterte journaler.
-- Velg **Tilbakefør** -menyen øverst på siden.
+- Velg **Tilbakefør**-menyen øverst på siden.
 - Du vil se det totale antallet bilag og bilagslinjer i tillegg til total beløpet på linjene som blir tilbakeført
 - Velg **Ja** hvis du vil bruke de eksisterende transaksjonsdatoene, eller **Nei** hvis du vil angi en ny. I noen tilfeller kan det hende at perioden for den opprinnelige transaksjonen er lukket, og du må angi en ny transaksjonsdato for tilbakeføringen.
-- Hvis du velger **Nei** , angir du en transaksjonsdato for tilbakeføringen. 
+- Hvis du velger **Nei**, angir du en transaksjonsdato for tilbakeføringen. 
 - Angi en kommentar som du vil legge til i tilbakeføringstransaksjonen.
-- Velg **Tilbakeføring** -knappen.
+- Velg **Tilbakeføring**-knappen.
 
 Transaksjonen blir tilbakeført. 
 
@@ -55,12 +55,12 @@ Du kan også tilbakeføre bilag fra **bilagstransaksjonslisten** på tvers av al
 
 Slik tilbakefører du ett eller flere bilag: 
 
-- Velg **Tilbakefør** -menyen øverst på siden.
+- Velg **Tilbakefør**-menyen øverst på siden.
 - Du vil se det totale antallet bilag og bilagslinjer i tillegg til total beløpet på linjene som blir tilbakeført.
 - Velg **Ja** hvis du vil bruke de eksisterende transaksjonsdatoene, eller **Nei** hvis du vil angi en ny. I noen tilfeller kan det hende at perioden for den opprinnelige transaksjonen er lukket, og du må angi en ny transaksjonsdato for å tilbakeføre den.
-- Hvis du velger **Nei** , angir du en transaksjonsdato for tilbakeføringen. 
+- Hvis du velger **Nei**, angir du en transaksjonsdato for tilbakeføringen. 
 - Angi en kommentar for å beskrive tilbakeføringstransaksjonen.
-- Velg **Tilbakeføring** -knappen.
+- Velg **Tilbakeføring**-knappen.
 
 Transaksjonen blir tilbakeført. 
 

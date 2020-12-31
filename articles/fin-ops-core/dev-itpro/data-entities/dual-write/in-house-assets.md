@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-01-27
-ms.openlocfilehash: 0e87a3d645c19fab3bb0560ba5114d193e2d0be7
-ms.sourcegitcommit: 0a741b131ed71f6345d4219a47cf5f71fec6744b
+ms.openlocfilehash: ebc9c1fbb7c0738af13b2a16aafeeb03fa6aaed0
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "3997176"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4684011"
 ---
 # <a name="in-house-assets-for-servicing"></a>Interne aktiva for vedlikehold
 
@@ -37,7 +37,7 @@ Hvis du vil ha mer informasjon, se [Integrere Dynamics 365 Field Service og Supp
 
 ## <a name="templates"></a>Maler
 
-Interne aktiva inkluderer en samling enhetstilordninger for viktige områder som fungerer sammen under datasamhandling, som vist i følgende tabell.
+Interne aktiva inkluderer en samling tabelltilordninger for viktige områder som fungerer sammen under datasamhandling, som vist i følgende tabell.
 
 | Finance and Operations-apper | Modelldrevne apper i Dynamics 365 | beskrivelse |
 |-----------------------------|-----------------------------------|-------------|

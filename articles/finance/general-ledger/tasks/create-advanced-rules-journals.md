@@ -17,11 +17,11 @@ ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.openlocfilehash: ea6ca24d27bb5b00bbe31060ce2f7e40bf2fb335
-ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3145222"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4446472"
 ---
 # <a name="create-advanced-rules-for-journals"></a>Opprette avanserte regler for journaler
 
@@ -34,7 +34,7 @@ Denne fremgangsmåten viser hvordan du oppretter avanserte regler for journaler.
 1. I **navigasjonsruten** går du til **Moduler > Økonomimodul > Journaloppsett > Journalnavn**.
 2. Finn og velg ønsket post i listen.
 3. Klikk **Journalkontroll** i **handlingsruten**.
-4. Klikk **Legg til** i hurtigfanen**Hvilke kontotyper kan posteres?**
+4. Klikk **Legg til** i hurtigfanen **Hvilke kontotyper kan posteres?**
 5. Klikk rullegardinknappen i feltet **Firmakontoer** for å åpne oppslaget.
 6. Finn og velg ønsket post i listen.
 7. Klikk koblingen i den valgte raden i listen.

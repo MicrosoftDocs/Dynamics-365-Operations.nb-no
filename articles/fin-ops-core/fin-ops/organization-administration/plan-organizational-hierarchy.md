@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: OMHierarchyManager, OMLegalEntity, OMOperatingUnit
 audience: Application User
 ms.reviewer: sericks
-ms.search.scope: Core, Operations
 ms.custom: 17404
 ms.assetid: babde0c6-bb5d-45ae-95ca-2af75a0ea292
 ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b5df0c7a84a2c24bdbcd39837119bc184c1f3fcf
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 986d8986375aac9454483d89c46c1b2b6f52e68e
+ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2179307"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "4694695"
 ---
 # <a name="plan-your-organizational-hierarchy"></a>Planlegge organisasjonshierarkiet
 
@@ -174,7 +173,7 @@ For land/områder som støttes, kan de fleste lovbestemte rapporter opprettes. H
 
 #### <a name="if-the-organization-is-modeled-as-an-operating-unit"></a>Hvis organisasjonen er modellert som en driftsenhet
 
-Lovbestemte rapporter må opprettes ved hjelp av et annet program. Du må forsikre deg om at data blir registrert i Finance and Operations-apper for å støtte kravene for hver driftsenheten, der de skiller seg fra kravene til hovedkontoret.
+Lovbestemte rapporter må opprettes ved hjelp av et annet program. Du må forsikre deg om at data blir registrert i Finance and Operations for å støtte kravene for hver driftsenheten, der de skiller seg fra kravene til hovedkontoret.
 
 ### <a name="currency"></a>Valuta
 

@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: jchrist
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bceeaf99437f6ef66bd3b4e1710b469c262e693e
-ms.sourcegitcommit: 9e7ceb5604472f3088f611aa0360bd6a716db32b
+ms.openlocfilehash: 65ee884fb22c1a38e2d3022085fed7e3e6077d1f
+ms.sourcegitcommit: deb711c92251ed48cdf20ea514d03461c26a2262
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4022549"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "4644543"
 ---
 # <a name="reimburse-customers"></a>Refundere kunder
 
@@ -33,22 +33,19 @@ Denne artikkelen beskriver hvordan du oppretter refusjonstransaksjoner for en ku
 
 Tabellen nedenfor viser forutsetninger som må være på plass før du starter.
 
-| Forutsetning                                                            | Beskrivelse                                                                                                                                                                                 |
-|-------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Angi det minste refusjonsbeløpet for den juridiske enheten.          | Angi det minste beløpet som kan refunderes for kunders overbetaling, i **Minimumsrefusjon** -feltet i **Generelt** -området på **Kundeparametere** -siden. |
-| Valgfritt: Legg til en leverandørkonto i hver kunde som kan refunderes. | Velg leverandørkontoen for kunden i **Leverandørkonto** -feltet i hurtigfanen **Diverse detaljer** på **Kunder** -siden.                                           |
+| Forutsetning                                                            | Beskrivelse |
+|-------------------------------------------------------------------------|-------------|
+| Angi det minste refusjonsbeløpet for den juridiske enheten.          | Angi det minste beløpet som kan refunderes for kunders overbetaling, i **Minimumsrefusjon**-feltet i **Generelt**-området på **Kundeparametere**-siden. |
+| Valgfritt: Legg til en leverandørkonto i hver kunde som kan refunderes. | Velg leverandørkontoen for kunden i **Leverandørkonto**-feltet i hurtigfanen **Diverse detaljer** på **Kunder**-siden. |
 
 Når du oppretter refusjonstransaksjoner, opprettes en leverandørfaktura for beløpet i kreditsaldoen. Refusjonsprosessen fjerner kreditsaldoen for kundekontoen og oppretter en forfalt saldo for leverandørkontoen som tilsvarer kunden.
 
-1.  Kjør **Refusjon** -prosessen i Kunder.
-2.  Følg ett av disse trinnene:
-    -   Klikk **Velg** , og angi kundekontoene i spørringen for å refundere bestemte kundekontoer.
-    -   Klikk **OK** for å refundere alle kundekontoer.
+1. I Kunder kjører du **Refusjon**-prosessen (**Kunder \> Periodiske oppgaver \> Refusjon**).
+2. Hvis du vil gruppere alle transaksjoner, uansett finansdimensjoner, setter du **Summer kunde** til **Ja**. Hvis du bare vil gruppere transaksjoner som har like finansdimensjoner, setter du alternativet til **Nei**.
+3. Velg **Ta med kunder med utestående debettransaksjoner** for å velge kunder som har ikke-utlignede debetbeløp.
+4. Hvis du vil refundere bestemte kundekontoer, går du til hurtigfanen **Poster som skal inkluderes** og velger **Filter**, og deretter angir du kundekontoene i spørringen.
 
     Kreditbeløpene overføres til leverandørkontoene til kundene og behandles som ordinære betalinger. Hvis en kunde ikke har en leverandørkonto, opprettes det automatisk en engangsleverandørkonto for kunden.
-3.  Hvis du vil vise refusjonstransaksjonene som ble opprettet, bruker du **Refusjon** -siden.
-4.  Opprett en betaling for leverandørfakturaer som ble opprettet av refusjonsprosessen, i Leverandører.
 
-
-
-
+5. Hvis du vil vise refusjonstransaksjonene som ble opprettet, bruker du **Refusjon**-rapporten (**Kunder \> Forespørsler og rapporter \> Refusjon-rapporten**).
+6. Opprett en betaling for leverandørfakturaer som ble opprettet av refusjonsprosessen, i Leverandører. Du finner mer informasjon om hvordan du betaler leverandører, i [Oversikt over leverandørbetaling](../accounts-payable/Vendor-payments-workspace.md).

@@ -1,6 +1,6 @@
 ---
 title: Opprette og validere journaler
-description: Denne oppgaveveiledningen oppretter og validerer journaler og journallinjer.
+description: Denne prosedyren oppretter og validerer journaler og journallinjer.
 author: ryansandness
 manager: AnnBe
 ms.date: 08/29/2018
@@ -16,32 +16,30 @@ ms.search.region: Global
 ms.author: ryansand
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 212227afb21ac1a20d29c33b40f6c44561da14fe
-ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
+ms.openlocfilehash: 8ac70a6fd52a47e5edbdd21145a47c925256fa71
+ms.sourcegitcommit: deb711c92251ed48cdf20ea514d03461c26a2262
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3144359"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "4646317"
 ---
 # <a name="create-and-validate-journals"></a>Opprette og validere journaler
 
 [!include [banner](../../includes/banner.md)]
 
-Denne oppgaveveiledningen oppretter og validerer journaler og journallinjer. Denne oppgaven bruker demonstrasjonsfirmaet USMF.  
+Denne prosedyren oppretter og validerer journaler og journallinjer. Du kan prøve denne prosedyren ved å bruke USMF-demofirmaet.  
 
-
-
-1. Gå til Økonomimodul > Journaloppføringer > Økonomijournaler.
-2. Klikk Ny.
-3. Klikk rullegardinknappen i Navn-feltet for å åpne oppslaget.
+1. Gå til **Økonomimodul > Journaloppføringer > Økonomijournaler**.
+2. Klikk på **Ny**.
+3. Klikk på rullegardinknappen i **Navn**-feltet for å åpne oppslaget.
 4. Finn og velg ønsket post i listen.
-5. Klikk Linjer.
-6. Angi en passende konto som er basert på kontotypen i feltet Konto.
-7. Skriv inn en verdi i Beskrivelse-feltet.
-8. Angi et beløp for kontoen i enten debet eller kredit. Denne oppgaveveiledningen antar et debetbeløp.
-9. Angi en passende konto som er basert på motkontotypen i feltet Motkonto.
-10. Klikk Valider.
-11. Klikk Valider.
-12. Klikk Poster.
-13. Klikk Bilag.
+5. Klikk **Linjer**.
+6. Angi en passende konto som er basert på kontotypen, i **Konto**-feltet.
+7. Skriv inn en verdi i **Beskrivelse**-feltet.
+8. Angi et beløp for kontoen som enten **Debet** eller **Kredit**. 
+9. Angi en passende konto som er basert på motkontotypen i feltet **Motkonto**.
+10. Klikk på **Valider**.
+11. Klikk på **Valider**.
+12. Klikk **Poster**.
+13. Klikk på **Bilag**.
 

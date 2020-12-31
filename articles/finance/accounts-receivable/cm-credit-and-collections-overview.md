@@ -16,11 +16,11 @@ ms.author: roschlom
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
 ms.openlocfilehash: 67e0b3d1058e5fc085f51577ccf0b79e51546de0
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3976601"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4446364"
 ---
 # <a name="credit-and-collections-overview"></a>Oversikt over kreditt og innkreving
 
@@ -47,7 +47,7 @@ Kredittbehandlingsprosessen kan inneholde hvilke som helst av følgende trinn:
 
 ## <a name="collections-management"></a>Innkrevingsbehandling
 
-Siden **Innkrevinger** gir en sentral visning av der informasjon om kundeinnkrevinger håndteres. Ledere for innkreving kan bruke denne sentrale visningen til å administrere innkreving. Innkrevingsagenter kan begynne innkrevingsprosessen enten fra kundelister som genereres ved hjelp av forhåndsdefinerte innkrevingskriterier, eller fra **Kunder** -siden.
+Siden **Innkrevinger** gir en sentral visning av der informasjon om kundeinnkrevinger håndteres. Ledere for innkreving kan bruke denne sentrale visningen til å administrere innkreving. Innkrevingsagenter kan begynne innkrevingsprosessen enten fra kundelister som genereres ved hjelp av forhåndsdefinerte innkrevingskriterier, eller fra **Kunder**-siden.
 
 Før du begynner å sette opp eller arbeide med samlinger, bør du forstår disse begrepene:
 

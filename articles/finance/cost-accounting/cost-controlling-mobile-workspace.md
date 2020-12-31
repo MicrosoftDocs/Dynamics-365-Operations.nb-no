@@ -18,12 +18,12 @@ ms.search.region: global
 ms.author: aevengir
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: 22acdcfbecc1efe78a1b1be87e40b2e7d23506fc
-ms.sourcegitcommit: cd339f48066b1d0fc740b513cb72ea19015acd16
+ms.openlocfilehash: 4fc35feb4f3a67ba9c8c70c2d2f8c07cb944b0f6
+ms.sourcegitcommit: e544c51a68ad5daf748c0e877bdbde094ad40bd2
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "3759454"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "4446618"
 ---
 # <a name="cost-controlling-mobile-workspace"></a>Mobilt arbeidsområde for kostnadskontroll
 
@@ -36,7 +36,7 @@ Dette mobile arbeidsområdet er ment å brukes sammen med Finance and Operations
 ## <a name="overview"></a>Oversikt
 Mobilt arbeidsområde for **kostnadskontroll** gir en øyeblikkelig visning av den gjeldende ytelsen til kostsentre ved å sammenligne faktiske kostnader med de budsjetterte kostnadene. Du kan drille ned til statusen for individuelle kostnadselementer.
 
-En ansatt mottar for eksempel en invitasjon til en internasjonal konferanse, men organisasjonen må dekke alle reiseutgifter. Den ansatte ber lederen om tillatelse til å delta på konferansen. Lederen åpner det mobile arbeidsområdet for **kostnadskontroll** på mobilenheten for å se om han/hun har budsjettert for at den ansatte kan delta på konferansen.
+En ansatt mottar for eksempel en invitasjon til en internasjonal konferanse, men organisasjonen må dekke alle reiseutgifter. Den ansatte spør lederen om å få lov til å delta på konferansen. Lederen åpner det mobile arbeidsområdet **Kostnadskontroll** på mobilenheten for å se om det er budsjettert for at den ansatte kan delta på konferansen.
 
 ### <a name="data-security"></a>Datasikkerhet
 Dataene i arbeidsområdet for **kostnadskontroll** er sikret gjennom brukerlegitimasjon. Kostsenterledere kan bare se data for sitt eget kostsenter. Tilgangsnivåsikkerhet behandles i modulen **Kostnadsregnskap**.
@@ -63,7 +63,7 @@ Det mobile arbeidsområdet **Kostnadskontroll** har følgende handlinger, visnin
     -   Faktisk i forhold til budsjett (hittil i år)
     -   Faktisk i forhold til revidert budsjett (hittil i år)
 
-    Disse beløpene vises på hvert kort: faktisk, budsjett, avvik og varians %.
+    Disse beløpene vises på hvert kort: faktisk, budsjett, avvik og varians-%.
 
 -   **Koblinger:**
 
@@ -89,7 +89,7 @@ Hvis versjon 1611 med Platform update 3 eller nyere er distribuert i organisasjo
 <tr class="header">
 <th>Forutsetning</th>
 <th>Rolle</th>
-<th>beskrivelse</th>
+<th>Beskrivelse</th>
 </tr>
 </thead>
 <tbody>

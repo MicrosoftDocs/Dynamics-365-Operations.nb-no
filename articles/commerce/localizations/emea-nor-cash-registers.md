@@ -18,11 +18,11 @@ ms.author: epopov
 ms.search.validFrom: 2017-10-31
 ms.dyn365.ops.version: Application update 4
 ms.openlocfilehash: 989af02026e63c7b33c7220de7a3208abad25ce0
-ms.sourcegitcommit: 6e0d6d291d4881b16a677373f712a235e129b632
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/08/2020
-ms.locfileid: "3971408"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4408302"
 ---
 # <a name="cash-register-functionality-for-norway"></a>Kassefunksjoner for Norge
 
@@ -41,13 +41,13 @@ Hvis du vil finne ut mer om POS-funksjoner som er tilgjengelige for kunder i all
 
 Følgende POS-lokaliseringsfunksjoner som tidligere ble implementert og gjort tilgjengelige for kunder i alle land eller områder, kan nå brukes spesielt for Norge:
 
-- **Skriv ut tekstfelt på en kvittering i en stor skriftstørrelse.** Du kan bruke **Skriftstørrelse** -parameteren i Utforming av kvitteringsformat til å angi at den store skriftstørrelsen skal brukes for et felt i kvitteringsformatet. (Den store skriftstørrelsen er omtrent dobbelt så stor som den vanlige skriftstørrelsen.) Du kan for eksempel bruke denne parameteren til å skrive ut "Kopi"-indikatoren med store bokstaver på en kopi av en kvittering.
-- **Registrer utskrift av kritteringskopier i POS-overvåkingsloggen.** Du kan bruke **Overvåk** -parameteren i POS-funksjonalitetsprofilen til å aktivere kopier av kvitteringer som skal skrives ut og andre POS-overvåkingshendelser som skal registreres. Overvåkingshendelser registreres i kanaldatabasen og i Hovedkontor. Du kan vise overvåkingshendelser på siden **Overvåkingshendelser** .
-- **Hindre at en kopi av en kvittering skrives ut mer enn én gang.** Når **Overvåk** -parameteren i POS-funksjonalitetsprofilen er aktivert, styrer POS-tillatelsen **Tillat utskrift av kvitteringskopi** om kopier av kvitteringer kan skrives ut. Det er også et alternativ som lar deg hindre at en kopi av en kvittering skrives ut mer enn én gang.
+- **Skriv ut tekstfelt på en kvittering i en stor skriftstørrelse.** Du kan bruke **Skriftstørrelse**-parameteren i Utforming av kvitteringsformat til å angi at den store skriftstørrelsen skal brukes for et felt i kvitteringsformatet. (Den store skriftstørrelsen er omtrent dobbelt så stor som den vanlige skriftstørrelsen.) Du kan for eksempel bruke denne parameteren til å skrive ut "Kopi"-indikatoren med store bokstaver på en kopi av en kvittering.
+- **Registrer utskrift av kritteringskopier i POS-overvåkingsloggen.** Du kan bruke **Overvåk** -parameteren i POS-funksjonalitetsprofilen til å aktivere kopier av kvitteringer som skal skrives ut og andre POS-overvåkingshendelser som skal registreres. Overvåkingshendelser registreres i kanaldatabasen og i Hovedkontor. Du kan vise overvåkingshendelser på siden **Overvåkingshendelser**.
+- **Hindre at en kopi av en kvittering skrives ut mer enn én gang.** Når **Overvåk**-parameteren i POS-funksjonalitetsprofilen er aktivert, styrer POS-tillatelsen **Tillat utskrift av kvitteringskopi** om kopier av kvitteringer kan skrives ut. Det er også et alternativ som lar deg hindre at en kopi av en kvittering skrives ut mer enn én gang.
 
 I tillegg ble følgende POS-funksjon implementert for Norge, men gjort tilgjengelig for kunder i alle land eller områder:
 
-- **Registrer flere hendelser i POS-overvåkingsloggen.** Hvis **Overvåk** -parameteren i POS-funksjonalitetsprofilen er aktivert, registreres følgende hendelser i POS-overvåkingsloggen:
+- **Registrer flere hendelser i POS-overvåkingsloggen.** Hvis **Overvåk**-parameteren i POS-funksjonalitetsprofilen er aktivert, registreres følgende hendelser i POS-overvåkingsloggen:
 
     - Priskontroller
     - Avgiftsoverstyringer
@@ -56,7 +56,7 @@ I tillegg ble følgende POS-funksjon implementert for Norge, men gjort tilgjenge
 
 ### <a name="norway-specific-pos-features"></a>Spesifikke POS-funksjoner for Norge
 
-Følgende spesifikke POS-funksjoner for Norge aktiveres når **ISO-kode** -parameteren i POS-funksjonalitetsprofilen er satt til **NO** .
+Følgende spesifikke POS-funksjoner for Norge aktiveres når **ISO-kode**-parameteren i POS-funksjonalitetsprofilen er satt til **NO**.
 
 #### <a name="digital-signing-of-sales-transactions"></a>Digital signering av salgstransaksjoner
 
@@ -80,7 +80,7 @@ Dataene som signeres, er en tekststreng som består av datafeltene nedenfor. Dat
 
 Den digitale signeringen bruker en 1024-biters RSA-nøkkel med en SHA-1-hash-funksjon (RSA-SHA1-1024). Et sertifikat som er installert på Commerce Scale Unit, brukes til signering. Den unike ID-en for sertifikatet (avtrykk) registreres sammen med signaturen.
 
-Signaturen lagres i databasen for butikken og hovedkontoret (HQ) sammen med transaksjonsdataene. Du kan vise transaksjonssignaturen sammen med transaksjonsdataene som ble brukt til å generere den, i hurtigfanen **Finansielle transaksjoner** på siden **Butikktransaksjoner** .
+Signaturen lagres i databasen for butikken og hovedkontoret (HQ) sammen med transaksjonsdataene. Du kan vise transaksjonssignaturen sammen med transaksjonsdataene som ble brukt til å generere den, i hurtigfanen **Finansielle transaksjoner** på siden **Butikktransaksjoner**.
 
 #### <a name="receipts"></a>Kvitteringer
 
@@ -97,7 +97,7 @@ Kvitteringer for Norge kan inkludere tilleggsinformasjon som ble implementert ve
 
 #### <a name="x-and-z-reports"></a>X- og Z-rapporter
 
-Informasjonen som er inkludert i X- og Z-rapporter er basert på norsk krav. **Totale kontantsalg** -beløp inkluderer for eksempel bare beløp for kontantsalgstransaksjoner og utelater utstedelse av gavekort og forskuddsbetalinger. Totale kontantsalg vises også per varegruppe og betalingsmåte. I tillegg vil de kumulative beløpene **Hovedsumsalg** og **Hovedsumreturer** vedlikeholdes og skrives ut.
+Informasjonen som er inkludert i X- og Z-rapporter er basert på norsk krav. **Totale kontantsalg**-beløp inkluderer for eksempel bare beløp for kontantsalgstransaksjoner og utelater utstedelse av gavekort og forskuddsbetalinger. Totale kontantsalg vises også per varegruppe og betalingsmåte. I tillegg vil de kumulative beløpene **Hovedsumsalg** og **Hovedsumreturer** vedlikeholdes og skrives ut.
 
 #### <a name="saf-t-cash-register-audit-file"></a>Revisjonsfil for SAF-T-kasse
 
@@ -129,7 +129,7 @@ Du må også angi følgende innstillinger for Norge.
 
 Kontroller at navnet på den juridiske enheten er angitt. Dette navnet skrives ut på X- og Z-rapporter.
 
-I tillegg angir du organisasjonsnummeret i **Registreringsnummer** -feltet i hurtigfanen **Bankkontoinformasjon** .
+I tillegg angir du organisasjonsnummeret i **Registreringsnummer**-feltet i hurtigfanen **Bankkontoinformasjon**.
 
 ### <a name="set-up-value-added-tax-vat-per-norwegian-requirements"></a>Definere merverdiavgift (mva) i henhold til norske krav
 
@@ -153,7 +153,7 @@ Sett tillatelsen **Tillat utskrift av kvitteringskopi** til en aktuell verdi:
 
 ### <a name="configure-custom-fields-so-that-they-can-be-used-in-receipt-formats-for-sales-receipts"></a>Konfigurere egendefinerte felt, slik at de kan brukes i kvitteringsformater for salgskvitteringer
 
-På siden **Språktekst** legger du til følgende poster for etikettene for de egendefinerte feltene for kvitteringsoppsett. Vær oppmerksom på at verdiene **Språk-ID** , **Tekst-ID** og **Tekst** som vises i tabellen, bare er eksempler. Du kan endre dem slik at de oppfyller dine krav.
+På siden **Språktekst** legger du til følgende poster for etikettene for de egendefinerte feltene for kvitteringsoppsett. Vær oppmerksom på at verdiene **Språk-ID**, **Tekst-ID** og **Tekst** som vises i tabellen, bare er eksempler. Du kan endre dem slik at de oppfyller dine krav.
 
 | Språk-ID | Tekst                   | Tekst-ID |
 |-------------|------------------------|---------|
@@ -165,7 +165,7 @@ På siden **Språktekst** legger du til følgende poster for etikettene for de e
 | en-US       | Avgiftsbeløp (salg)     | 900016  |
 | en-US       | ID for kontanttransaksjon    | 900017  |
 
-På siden **Egendefinerte felt** legger du til følgende poster for de egendefinerte feltene for oppsett av mottaket. Vær oppmerksom på at verdiene **Tekst-ID for overskrift** må samsvare med verdiene **Tekst-ID** som du har angitt på siden **Språktekst** .
+På siden **Egendefinerte felt** legger du til følgende poster for de egendefinerte feltene for oppsett av mottaket. Vær oppmerksom på at verdiene **Tekst-ID for overskrift** må samsvare med verdiene **Tekst-ID** som du har angitt på siden **Språktekst**.
 
 | Navn                            | Type    | Tekst-ID for overskrift |
 |---------------------------------|---------|-----------------|
@@ -209,7 +209,7 @@ Konfigurasjon av SAF-T-kasse er tilgjengelig for nedlasting fra Microsoft Dynami
 - **Data for DMM Retail-kanal versjon 1.12** – Konfigurasjonen av datamodelltilordningen.
 - **NO SAF T-kasse.version.1.15** – Formatkonfigurasjonen.
 
-Når du har importert konfigurasjonene på siden **Handelsparametere** , går du til kategorien **Elektroniske dokumenter** og velger navnet på formatkonfigurasjonen som ble importert, i feltet **Format for eksport av SAF-T-kasse** .
+Når du har importert konfigurasjonene på siden **Handelsparametere**, går du til kategorien **Elektroniske dokumenter** og velger navnet på formatkonfigurasjonen som ble importert, i feltet **Format for eksport av SAF-T-kasse**.
 
 Du må også tilordne nødvendige hoveddata til forhåndsdefinerte SAF-T-standardkoder. Hvis du vil ha mer informasjon, kan du se dokumentasjonen for SAF-T-kasse som leveres av den norske skatteetaten. Hvis du vil opprette tilordningen, må du angi feltet **SAF-T-kassekode** på følgende sider:
 

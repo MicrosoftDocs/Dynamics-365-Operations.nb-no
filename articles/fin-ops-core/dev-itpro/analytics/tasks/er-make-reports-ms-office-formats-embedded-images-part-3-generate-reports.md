@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Operations
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fa6324b244195e9626e259e42eef9512e64cde86
-ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
+ms.openlocfilehash: 78dcdbd83dc717104d437662f7f451c9ecb714cf
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3143105"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4684385"
 ---
 # <a name="generate-reports-in-office-format-that-have-embedded-images"></a>Generere rapporter i Office-formater som inneholder innebygde bilder
 
@@ -40,14 +39,14 @@ I dette eksemplet skal du bruke opprettede ER-konfigurasjoner for eksempelfirmae
     * Kjør formatet for testformål.  
 6. Velg Ja i feltet Sjekkformat som kan forhandles.
 7. Klikk OK.
-    * Se gjennom de opprettede utdataene. Legg merke til at firmalogoen vises i rapporten, i tillegg til autoriserte personens signatur. Signaturbildet hentes fra feltet av typen "Beholder" for Sjekk oppsett-posten som er tilknyttet den valgte bankkontoen.  
+    * Se gjennom de opprettede utdataene. Firmalogoen vises i rapporten, i tillegg til autoriserte personens signatur. Signaturbildet hentes fra feltet av typen "Beholder" for Sjekk oppsett-posten som er tilknyttet den valgte bankkontoen.  
 8. Utvid Kopier-seksjonen.
 9. Klikk Rediger.
 10. Angi "Skriv ut vannmerke som Annuller" i feltet Vannmerker.
     * Endre innstillingen vannmerker oppsett til å vise vannmerketeksten i dokumentgenerering i et Excel-figur-element.  
 11. Klikk Skriv ut test.
 12. Klikk OK.
-    * Se gjennom de opprettede utdataene. Legg merke til at vannmerket vises i rapporten er opprettet i henhold til alternativet merket område.  
+    * Se gjennom de opprettede utdataene. Vannmerket vises i den opprettede rapporten i henhold til det valgte alternativet.  
 13. Lukk siden.
 14. Klikk Administrer betalinger i handlingsruten.
 15. Klikk Kontroller.
@@ -55,8 +54,8 @@ I dette eksemplet skal du bruke opprettede ER-konfigurasjoner for eksempelfirmae
 17. Bruk følgende filtre: Angi en filterverdi på "381","385","389" i feltet "Sjekknummer" ved hjelp av filteroperatoren "er en av".
 18. Merk alle rader i listen.
 19. Klikk Skriv ut kopi av sjekk.
-    * Kjør formatet for å skrive ut de valgte sjekkene.  
-    * Se gjennom de opprettede utdataene. Legg merke til at de valgte sjekkene er skrevet ut på nytt. Firmalogoen og etiketter skrives ikke etter at de vises i fortrykte skjemaet.  
+    * Kjør formatet for å skrive ut de valgte sjekkene på nytt.  
+    * Se gjennom de opprettede utdataene. De valgte sjekkene er skrevet ut på nytt. Firmalogoen og etiketter skrives ikke etter at de vises i fortrykte skjemaet.  
 
 ## <a name="modify-the-mapping-of-the-imported-data-model"></a>Endre tilordningen av den importerte datamodellen
 1. Lukk siden.
@@ -66,7 +65,7 @@ I dette eksemplet skal du bruke opprettede ER-konfigurasjoner for eksempelfirmae
 5. Klikk Utforming.
 6. Klikk Tilordne modell til datakilde.
 7. Klikk Utforming.
-    * Vi vil endre bindingen av datamodellens signaturelement for å få signaturbildet fra filen som er knyttet til posten sjekk oppsett som er tilknyttet den valgte bankkontoen.  
+    * Vi vil endre bindingen av datamodellens signaturelement for å få signaturbildet fra filen som er knyttet til posten Sjekk oppsett som er tilknyttet den valgte bankkontoen.  
 8. Deaktiver Vis detaljer.
 9. Utvid "oppsett" i treet.
 10. Utvid "oppsett\signatur" i treet.
@@ -91,7 +90,7 @@ I dette eksemplet skal du bruke opprettede ER-konfigurasjoner for eksempelfirmae
 4. Klikk Kontroller.
 5. Klikk Skriv ut test.
 6. Klikk OK.
-    * Se gjennom de opprettede utdataene. Legg merke til at bildet fra dokumentbehandling vedlegget vises som signaturen for en autorisert person.  
+    * Se gjennom de opprettede utdataene. Bildet fra dokumentbehandlingsvedlegget vises som signaturen til en autorisert person.  
 
 ## <a name="use-ms-word-document-as-a-template-in-the-imported-format"></a>Bruk MS Word-dokument som en mal i det importerte formatet
 1. Lukk siden.
@@ -118,5 +117,5 @@ I dette eksemplet skal du bruke opprettede ER-konfigurasjoner for eksempelfirmae
 21. Klikk Kontroller.
 22. Klikk Skriv ut test.
 23. Klikk OK.
-    * Se gjennom de opprettede utdataene. Legg merke til at utdataene er generert som et MS Word-dokument med innebygde bilder presenterer firmalogoen, signaturen til en autorisert person og den merkede teksten til vannmerket.  
+    * Se gjennom de opprettede utdataene. Utdataene er generert som et Word-dokument med innebygde bilder som presenterer firmalogoen, signaturen til en autorisert person og den valgte teksten til vannmerket.  
 

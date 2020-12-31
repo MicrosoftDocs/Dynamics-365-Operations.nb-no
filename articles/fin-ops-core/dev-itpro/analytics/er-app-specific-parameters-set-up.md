@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ERSolutionTable, EROperationDesigner, ERLookupDesigner, ERComponentLookupStructureEditing
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: Release 8.1.3
-ms.openlocfilehash: ca837026f18034cddb34d7a2d5a62002ed69106a
-ms.sourcegitcommit: 3c1eb3d89c6ab9bd70b806ca42ef9df74cf850bc
+ms.openlocfilehash: b51a7ae8587a3cbb65efc4af574929efcbc8fbf8
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "3042763"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4681478"
 ---
 # <a name="set-up-the-parameters-of-an-er-format-per-legal-entity"></a>Definere parameterne for et ER-format per juridisk enhet
 
@@ -59,7 +58,7 @@ Hvis du vil fullføre eksemplene i dette emnet, må du ha tilgang til Microsoft 
 Du kan bruke ER-rammeverket til å definere programspesifikke parametere for et ER-format.
 
 1.  Velg den juridiske enheten **DEMF**.
-2.  I konfigurasjonstreet velger du formatet ***Format for å lære hvordan du slår opp LE-data**.
+2.  I konfigurasjonstreet velger du formatet **Format for å lære hvordan du slår opp LE-data**.
 3.  På Handling-panelet, i kategorien **Konfigurasjoner**, i gruppen **Programspesifikke parametere**, velg **Oppsett**.
 
     ![Siden ER-programspesifikke parametere](./media/GER-AppSpecParms-LookupForm.PNG)
@@ -136,7 +135,7 @@ Du kan bruke ER-rammeverket til å definere programspesifikke parametere for et 
 
 ## <a name="run-the-er-format-in-the-demf-company"></a>Kjør ER-formatet i DEMF firmaet
 
-1.  I konfigurasjonstreet velger du formatet ***Format for å lære hvordan du slår opp LE-data**.
+1.  I konfigurasjonstreet velger du formatet **Format for å lære hvordan du slår opp LE-data**.
 2.  Velg **Kjør** i handlingsruten.
 3.  I dialogboksen som vises, velger du **OK**.
 4.  Last ned utdraget som er generert, og lagre det lokalt.
@@ -179,7 +178,7 @@ Du kan bruke ER-rammeverket til å definere programspesifikke parametere for et 
 
 ## <a name="run-the-er-format-in-the-usmf-company"></a>Kjør ER-formatet i USMF firmaet
 
-1.  I konfigurasjonstreet velger du formatet ***Format for å lære hvordan du slår opp LE-data**.
+1.  I konfigurasjonstreet velger du formatet **Format for å lære hvordan du slår opp LE-data**.
 2.  Velg **Kjør** i handlingsruten.
 3.  I dialogboksen som vises, velger du **OK**.
 4.  Last ned utdraget som er generert, og lagre det lokalt.
@@ -192,7 +191,7 @@ Du kan bruke ER-rammeverket til å definere programspesifikke parametere for et 
 
 1.  Gå til **Organisasjonsstyring \> Arbeidsområder \> Elektronisk rapportering**.
 2.  Velg **Rapporteringskonfigurasjoner**.
-3.  I konfigurasjonstreet velger du formatet ***Format for å lære hvordan du slår opp LE-data**.
+3.  I konfigurasjonstreet velger du formatet **Format for å lære hvordan du slår opp LE-data**.
 4.  På Handling-panelet, i kategorien **Konfigurasjoner**, i gruppen **Programspesifikke parametere**, velg **Oppsett**.
 5.  Velg versjon **1.1.1** av ER-formatet.
 6.  Velg **Eksporter** på handlingsruten.

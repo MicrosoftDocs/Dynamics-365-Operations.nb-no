@@ -19,11 +19,11 @@ ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 0f5b9866fc7afba205b84b372c6a204ec4c8f64d
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2772726"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4446265"
 ---
 # <a name="create-a-customer-invoice"></a>Opprette en kundefaktura
 
@@ -117,7 +117,7 @@ Følgende felt endrer virkemåten for posteringsprosessen.
 <li><strong>Gjeldende</strong> – Skriv ut dokumenter etter at hver faktura er oppdatert.</li>
 <li><strong>Etter</strong> – Skriv ut dokumenter når alle fakturaene er oppdatert.</li>
 </ul>
-<strong>Obs!</strong> <strong>Skriv ut</strong>-feltet er bare tilgjengelig hvis du velger <strong>Skriv ut faktura</strong>, <strong>Skriv ut bekreftelse</strong>, <strong>Skriv ut plukkliste</strong> eller <strong>Skriv ut følgeseddel</strong>. På siden <strong>Skjemasortering</strong> definerer du at informasjonen skal sorteres etter fakturakonto i systemet. Du kan deretter velge <strong>Etter</strong> for å skrive ut dokumentene i et parti som sorteres etter fakturakonto. Hvis ikke skrives dokumentene ut før behandlingen er fullført, og dokumentene sorteres ikke i rekkefølgen som er angitt på siden <strong>Skjemasortering</strong>.</td>
+<strong>Obs!</strong> <strong>Skriv ut</strong>-feltet er bare tilgjengelig hvis du velger <strong>Skriv ut faktura</strong>, <strong>Skriv ut bekreftelse</strong>, <strong>Skriv ut plukkliste</strong> eller <strong>Skriv ut følgeseddel</strong>. På siden <strong>Skjemasortering</strong> definerer du at informasjonen skal sorteres etter fakturakonto i systemet. Du kan deretter velge <strong>Etter</strong> for å skrive ut dokumentene i en bunke som sorteres etter fakturakonto. Hvis ikke skrives dokumentene ut før behandlingen er fullført, og dokumentene sorteres ikke i rekkefølgen som er angitt på siden <strong>Skjemasortering</strong>.</td>
 </tr>
 <tr class="even">
 <td>Skriv ut faktura</td>

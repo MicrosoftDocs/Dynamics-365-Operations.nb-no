@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 2ffb8522729049ca98acfb70992738b45c05b552
-ms.sourcegitcommit: cf39369545a94201f367a4efada595a04a319d42
+ms.openlocfilehash: 64d33212600a75900febbd6ec308e4bf5d4f16b7
+ms.sourcegitcommit: deb711c92251ed48cdf20ea514d03461c26a2262
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/03/2020
-ms.locfileid: "3653782"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "4645775"
 ---
 # <a name="cash-flow-forecasting"></a>Kontantstrømprognose
 
@@ -92,6 +92,11 @@ Budsjetter som opprettes fra budsjettmodeller, kan tas med i kontantstrømprogno
 ### <a name="inventory-management"></a>Lagerstyring
 
 Prognoser for lagerforsyning og -behov kan tas med i kontantstrømprognoser. Velg prognosemodellen som skal tas med i kontantstrømprognosen, i **Lagerstyring**-fanen på siden **Oppsett for kontantstrømprognose**. Inkludering i kontantstrømprognoser kan overskrives på individuelle forsynings- og behovsprognoselinjer.
+
+### <a name="setting-up-dimensions-for-cash-flow-forecasting"></a>Definere dimensjoner for kontantstrømprognoser
+En ny fane på siden **Oppsett for kontantstrømprognose** lar deg styre hvilke finansdimensjoner du vil bruke i arbeidsområdet **Kontantstrømprognose**. Denne fanen vises bare når funksjonen for kontantstrømprognose er aktivert. 
+
+I fanen **Dimensjoner** velger du dimensjoner som skal brukes til filtrering, fra listen over dimensjoner, og bruker piltastene til å flytte dem til høyre kolonne. Du kan bare velge to dimensjoner til filtrering av data for kontantstrømprognose. 
 
 ### <a name="calculation"></a>Beregning
 

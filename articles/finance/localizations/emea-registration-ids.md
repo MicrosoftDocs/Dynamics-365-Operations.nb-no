@@ -18,11 +18,11 @@ ms.author: vlru
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.openlocfilehash: 7a0b978228e26ec70457a4bcb1c064070953909b
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2175554"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4446546"
 ---
 # <a name="registration-ids"></a>Registrerings-ID-er
 
@@ -35,10 +35,10 @@ Mange land og regioner har forskjellige bestemmelser og krav for registrering av
 ## <a name="registration-type-creation"></a>Oppretting av registreringstype
 Før du kan angi registerings-ID, må du definere registeringsnummertyper for de forskjellige registreringsnumrene som hver part er underlagt. Gå til siden **Organisasjonsstyring** &gt; **Global adressebok** &gt; **Registreringstyper** &gt; **Registreringstyper** for å opprette og administrere registreringstyper for leverandører, kunder, arbeidere og juridiske enheter i ulike land/regioner.
 
-|Felt                 |beskrivelse      |
+|Felt                 |Beskrivelse      |
 |------------------------------|----------------------------|                                                                           
 | Navn                | Navnet på registreringstypen. |                                                                           
-| beskrivelse         | Beskrivelse av registreringstypen. |
+| Beskrivelse         | Beskrivelse av registreringstypen. |
 | Land/område      | Den unike IDen for landet/regionen.|
 | Skattemyndighet       | Skattemyndigheten som er forbundet med registreringstypen.|
 | Begrenset til       | Typen begrensning som gjelder for avgiftsregistreringstypen: Ingen, Person, Organisasjon.|
@@ -50,7 +50,7 @@ Før du kan angi registerings-ID, må du definere registeringsnummertyper for de
 ## <a name="assign-a-registration-type-to-a-registration-category"></a>Tilordne en registreringstype til en registreringskategori
 Registreringskategori er registrerings-ID for land/region som er godkjent for bruk i bestemte land/områder for mva, toll og andre formål. Denne kategorien definerer valideringsregler for bestemt registrerings-ID (inkludert kontrollsifre osv.) og registrerings-ID for inkludering i ulike rapporter. Bruk siden **Organisasjonsstyring** &gt; **Global adressebok** &gt; **Registreringstyper** &gt; **Registreringskategorier** til å tilordne registreringstypen for bestemt land til støttet registreringskategori.
 
-| Felt            | beskrivelse|
+| Felt            | Beskrivelse|
 |-----------------------|----------------|
 | Registreringstype     | Registreringstypen i bestemt land/region.|
 | Begrenset til         | Typen begrensning gjelder for avgiftsregistreringstypen: Ingen, Person, Organisasjon.|
@@ -61,11 +61,11 @@ Registreringskategori er registrerings-ID for land/region som er godkjent for br
 Den globale adresseboken inneholder konsolidert adresseinformasjon for kunder, leverandører, kontakter, forretningsforbindelser og juridiske enheter. For mer informasjon, se [Oversikt over global adressebok](../../fin-and-ops/organization-administration/overview-global-address-book.md). Partspostene som er lagret i den globale adresseboken, kan inneholde én eller flere adresseposter. Adressene brukes til forskjellige formål, for eksempel fakturering eller levering. Du kan definere registrerings-IDer for adresseinformasjon for kunder, leverandører, ansatte og juridiske enheter. Finn partsposten (juridisk enhet, leverandør, kunde, arbeider) du vil angi register-IDen for, og klikk deretter **Registrerings-IDer** i skjemaer som er knyttet til part, juridisk enhet, leverandør, kunde, arbeider for å åpne siden **Administrer adresser**. I kategorien **Avgiftsregistrering** klikker du **Legg til** og skriver inn følgende informasjon om registrering-IDen.
 
 
-|Felt                |beskrivelse                                                |
+|Felt                |Beskrivelse                                                |
 |---------------------|-----------------------------------------------------------|
 | Registreringstype   | Registreringstypen i det valgte landet/området.     |
 | Registreringsnummer | Registrering-ID for part.                                |
-| beskrivelse         | Beskrivelse av registreringsnummeret.               |
+| Beskrivelse         | Beskrivelse av registreringsnummeret.               |
 | Del             | Tilleggsinformasjonen om registreringsnummeret. |
 | Utstedende byrå      | Skattemyndighetene som utstedte registreringsnummeret.        |
 | Utstedt dato         | Utstedelsesdatoen for registreringsnummeret.              |

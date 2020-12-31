@@ -19,11 +19,11 @@ ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 798e26badfd2a1f44891ea92f277de327fbed9c7
-ms.sourcegitcommit: d61c43b6bc04bb8786aa3c47932be0ccd84ebaeb
+ms.sourcegitcommit: b40d6ce45aeb07724fc41d1a41923970b007fbcf
 ms.translationtype: HT
 ms.contentlocale: nb-NO
 ms.lasthandoff: 10/14/2020
-ms.locfileid: "4006219"
+ms.locfileid: "4446562"
 ---
 # <a name="foreign-currency-revaluation-for-general-ledger"></a>Revaluering av utenlandsk valuta for finans
 
@@ -41,16 +41,16 @@ Når du kjører revalueringsprosessen, blir saldoen i hver hovedkonto postert i 
 ## <a name="prepare-to-run-foreign-currency-revaluation"></a>Klargjøre for kjøring av revaluering av utenlandsk valuta
 Følgende oppsett kreves før du kan kjøre revalueringprosessen.
 
--   På **Hovedkonto** -siden:
+-   På **Hovedkonto**-siden:
 -   Hvis hovedkontoen skal revalueres i økonomimodul, velger du **Revaluering av utenlandsk valuta**. Hvis hovedkontoen ikke skal revalueres (for eksempel for AR og AP ved revaluering i underfinansene), fjerner du avmerkingen.
--   Hvis hovedkontoen er markert for revaluering, angir du **valutakurstypen**. Denne valutakurstypen skal brukes for revaluering av hovedkontoen. Et separat felt, **Valutakurstype for finansrapportering** , er tilgjengelig for finansrapportering. De to feltene holdes synkronisert, slik at ulike valutakurstyper kan brukes for revaluering og finansrapportering.
+-   Hvis hovedkontoen er markert for revaluering, angir du **valutakurstypen**. Denne valutakurstypen skal brukes for revaluering av hovedkontoen. Et separat felt, **Valutakurstype for finansrapportering**, er tilgjengelig for finansrapportering. De to feltene holdes synkronisert, slik at ulike valutakurstyper kan brukes for revaluering og finansrapportering.
 
--   På **Finans** -siden:
+-   På **Finans**-siden:
 -   Angi **valutakurstypen**. Hvis valutakurstypen ikke er definert for hovedkontoen, brukes denne valutakurstypen under revaluering av utenlandsk valuta.
 -   Angi kontoene for realisert fortjeneste, realisert tap, urealisert fortjeneste og urealisert tap, for revaluering av valuta. Kontoene for realisert fortjeneste og realisert tap brukes for utligning av AR- og AP-transaksjoner, og kontoene for urealisert fortjeneste og urealisert tap brukes for revaluering av åpne transaksjoner og hovedkontoene i økonomimodulen.
 
--   På siden **Valutarevalueringskontoer** :
--   Velg ulike revalueringskontoer for valuta for hver valuta og firma. Hvis ingen kontoer er definert, brukes kontoene fra **Finans** -siden.
+-   På siden **Valutarevalueringskontoer**:
+-   Velg ulike revalueringskontoer for valuta for hver valuta og firma. Hvis ingen kontoer er definert, brukes kontoene fra **Finans**-siden.
 
 ## <a name="process-foreign-currency-revaluation"></a>Behandle en revaluering av utenlandsk valuta
 Når oppsettet er fullført, kan du bruke siden **Revaluering av utenlandsk valuta** til å revaluere saldoene fra hovedkontoene. Du kan kjøre prosessen i sanntid eller planlegge å kjøre den ved hjelp av en satsvis jobb. 
@@ -67,7 +67,7 @@ Revalueringsprosessen kan kjøres for én eller flere juridiske enheter. Oppslag
 
 Revalueringen kan kjøres for én eller flere utenlandske valutaer. Oppslaget inkluderer alle valutaer som ble bokført i datoområdet som er relevant for typen hovedkontoen (balanse eller resultat) for de juridiske enhetene som er valgt for revaluering. Regnskapsvalutaen vil bli inkludert i listen, men ingenting revalueres hvis regnskapsvalutaen er valgt. 
 
-Angi **Forhåndsvis for postering** til **Ja** hvis du vil se resultatet av revaluering av økonomimodulen. Forhåndsvisningen i økonomimodulen er forskjellig fra simuleringen i AR- og AP-revalueringen av utenlandsk valuta. Simuleringen i AR og AP er en rapport, men økonomimodulen er en forhåndsvisning som kan posteres, uten å måtte kjøre revalueringen på nytt. Resultatet av forhåndsvisningen kan eksporteres til Microsoft Excel for å bevare historikken over hvordan beløpene ble beregnet. Du kan ikke bruke satsvis behandling hvis du vil forhåndsvise resultatet av revalueringen. Fra forhåndsvisningen har brukeren muligheten til å postere resultatet av alle juridiske enheter ved hjelp av **Poster** -knappen. Hvis det er et problem med resultatene for en juridisk enhet, har brukeren også mulighet til å postere et delsett av de juridiske enhetene ved hjelp av knappen **Velg juridiske enheter for postering**. 
+Angi **Forhåndsvis for postering** til **Ja** hvis du vil se resultatet av revaluering av økonomimodulen. Forhåndsvisningen i økonomimodulen er forskjellig fra simuleringen i AR- og AP-revalueringen av utenlandsk valuta. Simuleringen i AR og AP er en rapport, men økonomimodulen er en forhåndsvisning som kan posteres, uten å måtte kjøre revalueringen på nytt. Resultatet av forhåndsvisningen kan eksporteres til Microsoft Excel for å bevare historikken over hvordan beløpene ble beregnet. Du kan ikke bruke satsvis behandling hvis du vil forhåndsvise resultatet av revalueringen. Fra forhåndsvisningen har brukeren muligheten til å postere resultatet av alle juridiske enheter ved hjelp av **Poster**-knappen. Hvis det er et problem med resultatene for en juridisk enhet, har brukeren også mulighet til å postere et delsett av de juridiske enhetene ved hjelp av knappen **Velg juridiske enheter for postering**. 
 
 Når prosessen for revaluering av utenlandsk valuta er fullført, opprettes en post for å spore loggen for hver kjøring.  En separat oppføring opprettes for hver juridiske enhet og posteringslag.
 

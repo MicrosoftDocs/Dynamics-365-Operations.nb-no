@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ERSolutionTable
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: Release 8.1.2
-ms.openlocfilehash: 6c4b18a3cf2ba313756d5f761ef1beb2c3015516
-ms.sourcegitcommit: 56add4c49c35c65a75fa2ca5234927e7f7cd66ef
+ms.openlocfilehash: a9035f128a1db4bcd126f09c0fe30c1857fa884a
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/11/2019
-ms.locfileid: "2781151"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4680883"
 ---
 # <a name="configure-country-context-dependent-er-model-mappings"></a>Konfigurere landkontekstsavhengige ER-modelltilordninger
 
@@ -202,7 +201,7 @@ I tabellen angir et plusstegn (+) tilstedeværelsen av en modelltilordningskonfi
 
 Legg merke til at en ny post er lagt til i ER-feilsøkingsloggen for det utførte ER-formatet. Siden **Nivå**-feltet for denne posten er satt til **Informasjon**, er posten veiledende. Siden Formatkomponent-feltet er satt **Tilordningskonfigurasjon**, informerer posten deg om en modelltilordning som ble brukt under utførelsen av ER-formatet **Format for å lære om tilordninger** (valgt i feltet **Konfigurasjonsnavn**). Innholdet i feltet **Generert tekst** informerer deg om at tilordningskomponenten **Tilordning (FR)** som befinner seg i konfigurasjonen **Tilordning (FR)**, er brukt til å kjøre denne rapporten.
 
-## <a name="appendix1"></a> Tillegg 1
+## <a name="appendix-1"></a><a name="appendix1"></a> Tillegg 1
 
 ### <a name="configure-a-sample-data-model"></a>Konfigurere en eksempeldatamodell
 
@@ -343,7 +342,7 @@ Legg merke til at utkastversjon 1 av denne ER-konfigurasjonen er klar til redige
 4.  Velg **Lagre**.
 5.  Lukk siden.
 
-## <a name="appendix2"></a> Tillegg 2
+## <a name="appendix-2"></a><a name="appendix2"></a> Tillegg 2
 
 ### <a name="configure-a-sample-model-mapping-for-general-customization"></a>Konfigurere en eksempelmodelltilordning for generell tilpasning
 
@@ -403,7 +402,7 @@ Legg merke til at utkastversjon 1 av denne ER-konfigurasjonen er klar til redige
 
 Legg merke til at den opprettede konfigurasjonen er lagret som fullført versjon 1.
 
-## <a name="appendix3"></a> Tillegg 3
+## <a name="appendix-3"></a><a name="appendix3"></a> Tillegg 3
 
 ### <a name="configure-a-sample-model-mapping-for-countryregion-specific-customization"></a>Konfigurere en eksempelmodelltilordning for land/områdespesifikk tilpasning
 

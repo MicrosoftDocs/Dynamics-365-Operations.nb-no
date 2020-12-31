@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: sericks
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: tlefor
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 37c5a6c20a6e77a50ece01046ee28074c927bd76
-ms.sourcegitcommit: f38302b9430f2ab3efe91d0a7beff946bc610e8f
+ms.openlocfilehash: 0c58ac63a4eae61c9a1cc6134bd0857394895e30
+ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "3091829"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "4693599"
 ---
 # <a name="user-interface-elements"></a>Elementer i brukergrensesnitt
 
@@ -43,7 +42,7 @@ Dette emnet beskriver elementene i brukergrensesnittet som brukes i appen. Før 
 
 ## <a name="tabs-fields-and-sections"></a>Kategorier, felt og deler
 
-En *kategori* er et valg som utføres på siden, og som åpner et annet aspekt av en post på samme side. Ofte vil den gi deg mulighet til å endre bestemte *felt*eller grensesnittelementer som tillater inntastede data. 
+En *kategori* er et valg som utføres på siden, og som åpner et annet aspekt av en post på samme side. Ofte vil den gi deg mulighet til å endre bestemte *felt* eller grensesnittelementer som tillater inntastede data. 
 
 En *hurtigfane* er en kategori med den ekstra fordelen at flere kategorier kan være synlige samtidig. Du kan utvide en hurtigfane ved å velge pilen som peker nedover til høyre for den.
 

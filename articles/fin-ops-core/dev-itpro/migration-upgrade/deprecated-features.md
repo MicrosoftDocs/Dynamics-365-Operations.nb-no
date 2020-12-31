@@ -10,26 +10,27 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: sericks
-ms.search.scope: Operations
 ms.custom: 21821
 ms.assetid: 31019808-4cbf-47d7-b1ba-d791db4281ae
 ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a1d14003ff7595ceaa78b42f69cf1927fbd8157d
-ms.sourcegitcommit: 1329b3b98854422c4c3773ede44a5cefa7d07085
+ms.openlocfilehash: 7ce6b3fb5217ad5d5228841a91d0b0406c305969
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "4040128"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4679962"
 ---
 # <a name="removed-or-deprecated-features-in-previous-releases"></a>Fjernede eller avskrevne funksjoner i tidligere versjoner
 
 [!include [banner](../includes/banner.md)]
 
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 > [!IMPORTANT]
-> Dette emnet oppdateres ikke lenger. Hvis du vil se en oppdatert liste over funksjoner som er fjernet eller avskrevet fra Finance and Operations-apper, kan du søke etter **"Funksjoner som er fjernet eller avskrevet"** -innhold som er knyttet til appen du bruker.
+> Dette emnet oppdateres ikke lenger. Hvis du vil se en oppdatert liste over funksjoner som er fjernet eller avskrevet fra Finance and Operations-apper, kan du søke etter **"Funksjoner som er fjernet eller avskrevet"**-innhold som er knyttet til appen du bruker.
 
 Dette emnet beskriver funksjoner som er fjernet eller avskrevet fra Dynamics 365 for Finance and Operations og tidligere versjoner av dette produktet.
 
@@ -83,7 +84,7 @@ Detaljert informasjon om objekter i Finance and Operations-apper finnes i [Tekni
 | **Erstattet med en annen funksjon?**   | Ja |
 | **Berørte produktområder**         | Plattform |
 | **Distribusjonsalternativ**              | Alle |
-| **Status**                         | Utgått: Innen 1. oktober 2020 planlegger vi å ikke lenger støtte **setUtcString()** -metoden. Utviklere bør i stedet bruke **setUtcDateTime()** -metoden. |
+| **Status**                         | Utgått: Innen 1. oktober 2020 planlegger vi å ikke lenger støtte **setUtcString()**-metoden. Utviklere bør i stedet bruke **setUtcDateTime()**-metoden. |
 
 ### <a name="blacklist-report-it--feature-reference-it-00001"></a>Svartelisterapport (IT) – funksjonsreferanse IT-00001
 
@@ -163,7 +164,7 @@ Detaljert informasjon om objekter i Finance and Operations-apper finnes i [Tekni
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Årsak til avskrivning/fjerning** | Eldre virkemåte for standardhandlinger i rutenett fører til at en uventet kolonne har standardhandlingskobling etter at rutenettkolonner er omorganisert via tilpasning. Den nye funksjonen for treg standardhandling retter opp dette. Hvis du vil ha mer informasjon, se [Trege standardhandlinger i rutenett](https://docs.microsoft.com/business-applications-release-notes/October18/dynamics365-finance-operations/sticky-default-action). |
-| **Erstattet med en annen funksjon?**   | Fra Platform update 21 ble en funksjon for "trege standardhandlinger" innført. Denne funksjonen kan aktiveres på **Alternativer for klientytelse** -siden. |
+| **Erstattet med en annen funksjon?**   | Fra Platform update 21 ble en funksjon for "trege standardhandlinger" innført. Denne funksjonen kan aktiveres på **Alternativer for klientytelse**-siden. |
 | **Berørte produktområder**         | Rutenett i webklienten |
 | **Distribusjonsalternativ**              | Alle |
 | **Status**                         | Avskrevet: Fra april 2020 blir trege standardhandlinger bli standard virkemåte, uten en mekanisme for å gå tilbake til den gamle virkemåten. |
@@ -173,19 +174,19 @@ Detaljert informasjon om objekter i Finance and Operations-apper finnes i [Tekni
 |&nbsp;   | &nbsp; |
 |------------|--------------------|
 | **Årsak til avskrivning/fjerning** | "Er en av"-filtreringsopplevelse gikk gjennom en ny utforming i Platform update 22, og planen er at dette skal være eneste "er en av"-filtreringsopplevelse. |
-| **Erstattet med en annen funksjon?**   | Fra Platform update 22 ble en forbedret "er en av"-filtreringsopplevelse tilgjengelig på **Alternativer for klientytelse** -siden. Hvis du vil vite mer, kan du se [Optimalisert "er en av"-filtreringopplevelse](https://docs.microsoft.com/business-applications-release-notes/October18/dynamics365-finance-operations/improved-isoneof-filtering). |
+| **Erstattet med en annen funksjon?**   | Fra Platform update 22 ble en forbedret "er en av"-filtreringsopplevelse tilgjengelig på **Alternativer for klientytelse**-siden. Hvis du vil vite mer, kan du se [Optimalisert "er en av"-filtreringopplevelse](https://docs.microsoft.com/business-applications-release-notes/October18/dynamics365-finance-operations/improved-isoneof-filtering). |
 | **Berørte produktområder**         | Webklient |
 | **Distribusjonsalternativ**              | Alle |
 | **Status**                         | Avskrevet: Fra april 2020 blir den forbedrede "er en av"-opplevelsen standard virkemåte, uten en mekanisme for å gå tilbake til den gamle virkemåten. |
 
 ### <a name="parameter-to-enable-sales-orders-with-multiple-project-contract-funding-sources"></a>Parameteren for å aktivere salgsordrer med flere finansieringskilder for prosjektkontrakt
-Støtte for opprettelse av prosjektbaserte salgsordrer der prosjektkontrakten har flere finansieringskilder, er aktivert med **Prosjektparametere management** -innstillingen **Tillat salgsordrer for prosjekt med flere finansieringskilder**. Denne parameteren er ikke aktivert som standard. 
+Støtte for opprettelse av prosjektbaserte salgsordrer der prosjektkontrakten har flere finansieringskilder, er aktivert med **Prosjektparametere management**-innstillingen **Tillat salgsordrer for prosjekt med flere finansieringskilder**. Denne parameteren er ikke aktivert som standard. 
 
 | &nbsp;  |&nbsp;  |
 |------------|--------------------|
 | **Årsak til avskrivning/fjerning** | Funksjonen aktiveres alltid når parameteren er fjernet. |
 | **Erstattet med en annen funksjon?**   | Nr. Funksjonen for å støtte prosjektbaserte salgsordrer som har flere finansieringskilder, vil alltid være aktivert.   |
-| **Berørte produktområder**         |Parameteren **Tillat salgsordrer for prosjekter med flere finansieringskilder** blir fjernet. Fremgangsmåtene nedenfor endres når parameteren blir fjernet: **ctrlSalesOrderTable** -metoden i **ProjStatusType** -klassen, **valider** -metoden for **ProjId** -feltet og **kjør** -metoden i **SalescreateOrder** -skjemaet. De følgende metodene avskrives når parameteren blir fjernet: **IsSalesOrderAllowedForMultipleFundingSources** i **ProjTable** -tabellfilen, **IsAllowSalesOrdersForMultipleFundingSourcesParamEnabled** -metoden i **ProjTable** -tabellfilen, **AllowSalesOrdersForMultipleFundingSources** -datafeltet i **ProjParameters** -skjemaet og **ProjParameterEntity** -filer, **IsAssociatedToMultipleFundingSourcesContract** privat metode i **ProjTable** -tabellfilen. |
+| **Berørte produktområder**         |Parameteren **Tillat salgsordrer for prosjekter med flere finansieringskilder** blir fjernet. Fremgangsmåtene nedenfor endres når parameteren blir fjernet: **ctrlSalesOrderTable**-metoden i **ProjStatusType**-klassen, **valider**-metoden for **ProjId**-feltet og **kjør**-metoden i **SalescreateOrder**-skjemaet. De følgende metodene avskrives når parameteren blir fjernet: **IsSalesOrderAllowedForMultipleFundingSources** i **ProjTable**-tabellfilen, **IsAllowSalesOrdersForMultipleFundingSourcesParamEnabled**-metoden i **ProjTable**-tabellfilen, **AllowSalesOrdersForMultipleFundingSources**-datafeltet i **ProjParameters**-skjemaet og **ProjParameterEntity**-filer, **IsAssociatedToMultipleFundingSourcesContract** privat metode i **ProjTable**-tabellfilen. |
 | **Distribusjonsalternativ**              | Alle  |
 | **Status**                         | Avskrivingen planlegges for april 2020-frigivelsesbølgen. |
 
@@ -239,7 +240,7 @@ Støtte for opprettelse av prosjektbaserte salgsordrer der prosjektkontrakten ha
 ## <a name="finance-and-operations-813-with-platform-update-23"></a>Finance and Operations 8.1.3 med Platform update 23
 
 ### <a name="sql-server-reporting-services-reportviewer-control"></a>Report Viewer-kontrollen i SQL Server Reporting Services
-Kunder kan bruke **Eksport** -handlingen som er angitt av den innebygde Report Viewer-kontrollen i SQL Server Reporting Services (SSRS), til å laste ned dokumenter som er produsert av Finance and Operations-programmer. Denne HTML-baserte presentasjon av rapporten gir brukerne en ikke-paginert forhåndsvisning av dokumentet.
+Kunder kan bruke **Eksport**-handlingen som er angitt av den innebygde Report Viewer-kontrollen i SQL Server Reporting Services (SSRS), til å laste ned dokumenter som er produsert av Finance and Operations-programmer. Denne HTML-baserte presentasjon av rapporten gir brukerne en ikke-paginert forhåndsvisning av dokumentet.
 
 | &nbsp;  |&nbsp;  |
 |------------|--------------------|
@@ -266,7 +267,7 @@ Innebygde nøkkelytelsesindikatorer (KPIer) kan modelleres i Visual Studio av en
 
 | &nbsp;  |&nbsp;  |
 |------------|--------------------|
-| **Årsak til avskrivning/fjerning** | Det er mulig for tabellmetadatadefinisjoner å ha feltgrupper som inneholder ugyldige feltreferanser. Hvis distribuert kan dette føre til kjøretidsfeil for kjøring i Finansrapportering og SQL Server Reporting Services (SSRS). Dette problemet kategoriseres for øyeblikket som en *kompilatoradvarsel* i stedet for en *feil* , noe som betyr at den distribuerbare pakkeopprettingen og -distribusjonen kan fortsette uten å rette problemet. Slik løser du dette problemet:<br><br>1. Fjern den ugyldige feltreferansen fra definisjonen for tabellfeltgruppen.<br><br>2. Kompiler på nytt.<br><br>3. Sørg for at advarsler eller feil håndteres. |
+| **Årsak til avskrivning/fjerning** | Det er mulig for tabellmetadatadefinisjoner å ha feltgrupper som inneholder ugyldige feltreferanser. Hvis distribuert kan dette føre til kjøretidsfeil for kjøring i Finansrapportering og SQL Server Reporting Services (SSRS). Dette problemet kategoriseres for øyeblikket som en *kompilatoradvarsel* i stedet for en *feil*, noe som betyr at den distribuerbare pakkeopprettingen og -distribusjonen kan fortsette uten å rette problemet. Slik løser du dette problemet:<br><br>1. Fjern den ugyldige feltreferansen fra definisjonen for tabellfeltgruppen.<br><br>2. Kompiler på nytt.<br><br>3. Sørg for at advarsler eller feil håndteres. |
 | **Erstattet med en annen funksjon?**   | Advarselen vil bli erstattet av en kompileringsfeil i fremtiden. |
 | **Berørte produktområder**         | Visual Studio-utviklingsverktøy |
 | **Distribusjonsalternativ**              | Alle |
@@ -356,30 +357,30 @@ Muligheten til å introdusere egendefinerte funksjoner som skal brukes i ER-uttr
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Årsak til avskrivning/fjerning** | Kodeforseglingsinitiativ  |
-| **Erstattet med en annen funksjon?**   | Ingen. Når det er behov for en ny innebygd funksjon, må en ny utvidelsesforespørsel adresseres til ER-rammeverksteamet.<br><br>Som en midlertidig løsning mens den forespurte funksjonen er under utvikling i ER-teamet, kan den nødvendige logikken programmeres som en metode for en egendefinert programklasse. Denne metoden kan være tilgjengelig i et ER-uttrykk som en egenskap i den tilføyde ER-datakilden for **Program\Klasse** -typen som refererer til denne egendefinerte programklassen.  |
+| **Erstattet med en annen funksjon?**   | Ingen. Når det er behov for en ny innebygd funksjon, må en ny utvidelsesforespørsel adresseres til ER-rammeverksteamet.<br><br>Som en midlertidig løsning mens den forespurte funksjonen er under utvikling i ER-teamet, kan den nødvendige logikken programmeres som en metode for en egendefinert programklasse. Denne metoden kan være tilgjengelig i et ER-uttrykk som en egenskap i den tilføyde ER-datakilden for **Program\Klasse**-typen som refererer til denne egendefinerte programklassen.  |
 | **Berørte produktområder**         | Rammeverk for elektronisk rapportering                                                      |
 | **Distribusjonsalternativ**              | Alle                                                                                      |
 | **Status**                         | Fjernet fra og med Finance and Operations, Enterprise edition 7.3.    |
 
 ### <a name="inventory-by-item-group-and-inventory-by-inventory-dimension-aging-reports"></a>Lager per varegruppe- og Lager per lagerdimensjon-aldersfordelte saldolister
 
-Disse to rapportene støttes ikke lenger i Finance and Operations. I stedet kan **Aldersfordeling for lager** -rapporten brukes til å forbedre brukeropplevelsen.
+Disse to rapportene støttes ikke lenger i Finance and Operations. I stedet kan **Aldersfordeling for lager**-rapporten brukes til å forbedre brukeropplevelsen.
 
 | &nbsp;  | &nbsp; |
 |--------------|-----------------------|
 | **Årsak til avskrivning**       | Duplikat funksjonalitet  |
-| **Erstattet med en annen funksjon?** | Ja. De to rapportene er erstattet av **Aldersfordeling for lager** -rapporten.     |
+| **Erstattet med en annen funksjon?** | Ja. De to rapportene er erstattet av **Aldersfordeling for lager**-rapporten.     |
 | **Berørte produktområder**       | Lagerstyring, kostnadsstyring        |
 | **Distribusjonsalternativ**        | Alle|
 | **Status**                       | Avskrevet: Menyelementene for de to rapportene er fjernet i versjon 7.3. Koden for rapportene beholdes imidlertid i produktet. Planen er å fjerne koden i en fremtidig versjon. |
 
 ### <a name="power-bi-content-packs-available-on-appsource"></a>Power BI-innholdspakker som er tilgjengelige på AppSource
-Innholdspakkene **Kostnadsstyring** , **Finansresultat** og **Retail Channel Performance** , tilgjengelig på [Microsoft AppSource](https://appsource.microsoft.com), er avskrevet som følge av produktoppdateringer i Microsoft Power BI. Systemadministrasjonsskjemaer som brukes til å distribuere disse innholdspakkene til PowerBI.com, avskrives også i Finance and Operations.
+Innholdspakkene **Kostnadsstyring**, **Finansresultat** og **Retail Channel Performance**, tilgjengelig på [Microsoft AppSource](https://appsource.microsoft.com), er avskrevet som følge av produktoppdateringer i Microsoft Power BI. Systemadministrasjonsskjemaer som brukes til å distribuere disse innholdspakkene til PowerBI.com, avskrives også i Finance and Operations.
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Årsak til avskrivning/fjerning** | Produktoppdateringer i Microsoft Power BI. |
-| **Erstattet med en annen funksjon?**   | Innholdspakkene **Kostnadsstyring** , **Finansresultat** og **Retail Channel Performance** , tilgjengelig på [AppSource](https://appsource.microsoft.com)-nettstedet, blir erstattet av analyseprogrammer som tillater integreringer av løsning på databasenivå. Hvis du vil ha mer informasjon om analyseprogrammer, se [Innebygd Power BI i arbeidsområder](../../dev-itpro/analytics/embed-power-bi-workspaces.md).    |
+| **Erstattet med en annen funksjon?**   | Innholdspakkene **Kostnadsstyring**, **Finansresultat** og **Retail Channel Performance**, tilgjengelig på [AppSource](https://appsource.microsoft.com)-nettstedet, blir erstattet av analyseprogrammer som tillater integreringer av løsning på databasenivå. Hvis du vil ha mer informasjon om analyseprogrammer, se [Innebygd Power BI i arbeidsområder](../../dev-itpro/analytics/embed-power-bi-workspaces.md).    |
 | **Berørte produktområder**         | Kostnadsstyring, økonomi og detaljhandel                                                                                               |
 | **Distribusjonsalternativ**              | Bare sky (integrasjon med PowerBI.com støttes ikke i lokale distribusjoner.)                                                                                                            |
 | **Status**                         | Avskrevet: Måltidsrammen for funksjonalitetsfjerningen er 2. kvartal 2018.    |
@@ -712,7 +713,7 @@ Lønnsinformasjon i Personale
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Årsak til avskrivning/fjerning** | Denne funksjonaliteten er erstattet av kjernesider for Lønn og Personale.  |
-| **Erstattet med en annen funksjon?**   | **Fordeler** , **Inntekter** og andre tilknyttede sider som tidligere var i US Payroll, er konfigurert på nytt og er nå en del av kjerneinstallasjonen av Personale for å støtte ekstern lønnsbehandling. Denne funksjonaliteten er tilgjengelig ved å bruke **Personale 1** \> **Lønn** -konfigurasjonsnøkkelen. |
+| **Erstattet med en annen funksjon?**   | **Fordeler**, **Inntekter** og andre tilknyttede sider som tidligere var i US Payroll, er konfigurert på nytt og er nå en del av kjerneinstallasjonen av Personale for å støtte ekstern lønnsbehandling. Denne funksjonaliteten er tilgjengelig ved å bruke **Personale 1** \> **Lønn**-konfigurasjonsnøkkelen. |
 | **Berørte produktområder**         | Personale, Lønn   |
 | **Status**                         | Fjernet fra og med Dynamics 365 for Operations versjon 1611.    |
 
@@ -806,8 +807,8 @@ Det finnes to formater for eksport av betalinger for Finland. LM02 (FI) brukes f
 
 |  &nbsp; |&nbsp;  |
 |------------|--------------------|
-| **Årsak til avskrivning/fjerning** | Lagerstyring II-løsningen (WMS II) som var tilgjengelig i **Beholdningsstyring** -modulen, dupliserer funksjonaliteten i **Lagerstyring** -modulen som ble lansert i Dynamics AX 2012 R3.                                                                         |
-| **Erstattet med en annen funksjon?**   | **Lagerstyring** -modulen som ble lansert i AX 2012 R3, Dynamics AX 2012 R3 CU8 og Dynamics AX 2012 R3 CU9, erstatter Lagerstyring II-funksjonene. Den nye modulen har mer avanserte funksjoner og mer fleksible lagerstyringsprosesser enn i Lagerstyring II. |
+| **Årsak til avskrivning/fjerning** | Lagerstyring II-løsningen (WMS II) som var tilgjengelig i **Beholdningsstyring**-modulen, dupliserer funksjonaliteten i **Lagerstyring**-modulen som ble lansert i Dynamics AX 2012 R3.                                                                         |
+| **Erstattet med en annen funksjon?**   | **Lagerstyring**-modulen som ble lansert i AX 2012 R3, Dynamics AX 2012 R3 CU8 og Dynamics AX 2012 R3 CU9, erstatter Lagerstyring II-funksjonene. Den nye modulen har mer avanserte funksjoner og mer fleksible lagerstyringsprosesser enn i Lagerstyring II. |
 | **Berørte produktområder**         | Lagerstyring, salg og markedsføring, innkjøp og leverandører   |
 | **Status**                         | Fjernet fra og med Dynamics 365 for Operations versjon 1611.    |
 
@@ -847,7 +848,7 @@ En arbeidsflyt for behandling av opprettelsen av ansattes mål er en av flere ar
 
 ### <a name="aif-axd-and-axbc-integrations"></a>AIF-, AxD- og AxBC-integreringer
 
-I Application Integration Framework (AIF) kan data utveksles med eksterne systemer gjennom forretningslogikk som vises som tjenester. Dynamics AX inneholder tjenestene som er basert på dokumenter og .NET Business Connector (AxBC). Et dokument opprettes ved hjelp av XML. XML-en inneholder hodeinformasjon som legges til for å opprette en *melding* som kan overføres til eller fra Dynamics AX. Eksempler på dokumenter er salgsordrer og bestillinger. Nesten enhver enhet, for eksempel en kunde, kan imidlertid representeres av et dokument. Tjenester som er basert på dokumenter, bruker **Axd \<Document\>** -klassene.
+I Application Integration Framework (AIF) kan data utveksles med eksterne systemer gjennom forretningslogikk som vises som tjenester. Dynamics AX inneholder tjenestene som er basert på dokumenter og .NET Business Connector (AxBC). Et dokument opprettes ved hjelp av XML. XML-en inneholder hodeinformasjon som legges til for å opprette en *melding* som kan overføres til eller fra Dynamics AX. Eksempler på dokumenter er salgsordrer og bestillinger. Nesten enhver enhet, for eksempel en kunde, kan imidlertid representeres av et dokument. Tjenester som er basert på dokumenter, bruker **Axd \<Document\>**-klassene.
 
 |  &nbsp; | &nbsp; |
 |------------|--------------------|
@@ -869,7 +870,7 @@ Satsskript ble brukt til å beregne faktureringssatser for betalingskoder. Dette
 
 ### <a name="boms-without-bom-versions"></a>Stykklister uten stykklisteversjoner
 
-Når konfigurasjonsnøkkelen **Stykklisteversjoner** ble deaktivert, ble stykklisteversjonene skjult i alle skjemaer, og systemet fremtvang en 1:1-relasjon mellom frigitte produkter og stykklister. I gjeldende versjon av Dynamics AX kan ikke **Stykklisteversjoner** -konfigurasjonsnøkkelen deaktiveres.
+Når konfigurasjonsnøkkelen **Stykklisteversjoner** ble deaktivert, ble stykklisteversjonene skjult i alle skjemaer, og systemet fremtvang en 1:1-relasjon mellom frigitte produkter og stykklister. I gjeldende versjon av Dynamics AX kan ikke **Stykklisteversjoner**-konfigurasjonsnøkkelen deaktiveres.
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
@@ -1157,7 +1158,7 @@ Generering av forhåndsmerknad kan ikke kan utføres ved hjelp av et parti, men 
 
 ### <a name="gl-ssrs-reports"></a>GL SSRS-rapporter
 
-Rapporter som inkluderer følgende menyelementer, er fjernet: **Råbalansesammendrag** , **Detaljert råbalanse** , **Kontoplan** , **Revisjonsspor** , **Saldoer** og **Saldoliste**.
+Rapporter som inkluderer følgende menyelementer, er fjernet: **Råbalansesammendrag**, **Detaljert råbalanse**, **Kontoplan**, **Revisjonsspor**, **Saldoer** og **Saldoliste**.
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
@@ -1359,7 +1360,7 @@ Windows 8 nettbrettapp inneholdt funksjonalitet for utgiftsregistrering og -godk
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Årsak til avskrivning/fjerning** | Liten bruk |
-| **Erstattet med en annen funksjon?**   | Nei, men **Profilrelasjon** -siden som åpnes fra **Profilgrupper** -siden, støtter samme forretningsscenario som den avskrevne **Jobbplanlegger** -siden. |
+| **Erstattet med en annen funksjon?**   | Nei, men **Profilrelasjon**-siden som åpnes fra **Profilgrupper**-siden, støtter samme forretningsscenario som den avskrevne **Jobbplanlegger**-siden. |
 | **Berørte produktområder**         | Timeregistrering     |
 | **Status**                         | Koden har ikke blitt fjernet. Skjemaet JmgWorkPlanner ble imidlertid ikke overført.    |
 

@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: roschlom
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 38dc261a74eea9e45036961fdfecea1465b238de
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.openlocfilehash: c54afd0d94a56f6306a11e03448cc66c168390c2
+ms.sourcegitcommit: e544c51a68ad5daf748c0e877bdbde094ad40bd2
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3977701"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "4446619"
 ---
 # <a name="cost-control-workspace"></a>Arbeidsområde for kostnadskontroll 
 
@@ -36,25 +36,25 @@ Arbeidsområdet **Kostnadskontroll** er et sentralt punkt der ledere som har ans
 
 Regnskapsførere kan definere så mange rapportkonfigurasjoner de trenger for ønsket datasammensetning eller oppsett. En rapportkonfigurasjon består av seks deler, der hver del bidrar til valget av datasammensetningen eller oppsettet.
 
-Hvis du vil konfigurere et arbeidsområde for kostnadskontroll, klikker du på **Kostnadsregnskap** \> **Oppsett** \> **Konfigurasjon av arbeidsområde for kostnadskontroll** .
+Hvis du vil konfigurere et arbeidsområde for kostnadskontroll, klikker du på **Kostnadsregnskap** \> **Oppsett** \> **Konfigurasjon av arbeidsområde for kostnadskontroll**.
 
 ### <a name="general"></a>Generelt
 
-Du kan opprette et unikt rapportoppsett i hurtigfanen **Generelt** . Navnet på rapporten er en unik identifikator som brukere kan gjenkjenne i arbeidsområdet **Kostnadskontroll** . Du kan også angi om rapporten skal deles eller holdes intern for regnskapsførere.
+Du kan opprette et unikt rapportoppsett i hurtigfanen **Generelt**. Navnet på rapporten er en unik identifikator som brukere kan gjenkjenne i arbeidsområdet **Kostnadskontroll**. Du kan også angi om rapporten skal deles eller holdes intern for regnskapsførere.
 
-| Felt       | beskrivelse |
+| Felt       | Beskrivelse |
 |-------------|-------------|
 | Navn        | Skriv inn et unikt navn for oppsettet. |
-| beskrivelse | Angi en detaljert beskrivelse. |
-| Publisert   | Hvis du setter dette feltet til **Ja** , kan en bruker som er tilordnet en av følgende roller, se rapporten i arbeidsområdet **Kostnadskontroll** :<ul><li>Behandling av kostnadsregn</li><li>Regnskapsfører lager</li><li>Assisterende lagerregnskapsfører</li><li>Kontroller for kostnadsobjekt</li></ul>Hvis du setter dette feltet til **Nei** , kan bare brukere som er tilordnet en av følgende roller, se rapporten i arbeidsområdet **Kostnadskontroll** :<ul><li>Behandling av kostnadsregn</li><li>Regnskapsfører lager</li><li>Assisterende lagerregnskapsfører</li></ul> |
+| Beskrivelse | Angi en detaljert beskrivelse. |
+| Publisert   | Hvis du setter dette feltet til **Ja**, kan en bruker som er tilordnet en av følgende roller, se rapporten i arbeidsområdet **Kostnadskontroll**:<ul><li>Behandling av kostnadsregn</li><li>Regnskapsfører lager</li><li>Assisterende lagerregnskapsfører</li><li>Kontroller for kostnadsobjekt</li></ul>Hvis du setter dette feltet til **Nei**, kan bare brukere som er tilordnet en av følgende roller, se rapporten i arbeidsområdet **Kostnadskontroll**:<ul><li>Behandling av kostnadsregn</li><li>Regnskapsfører lager</li><li>Assisterende lagerregnskapsfører</li></ul> |
 
 ### <a name="data-filtering"></a>Datafiltrering
 
-Du kan definere datagrunnlaget for rapporten i hurtigfanen **Datafiltrering** . Brukere av denne rapporten kan se verdiene i den etter at kildedataene er behandlet.
+Du kan definere datagrunnlaget for rapporten i hurtigfanen **Datafiltrering**. Brukere av denne rapporten kan se verdiene i den etter at kildedataene er behandlet.
 
-| Felt                                                             | beskrivelse |
+| Felt                                                             | Beskrivelse |
 |-------------------------------------------------------------------|-------------|
-| Kostnadsregnskapsfinans                                            | **Kostnadsregnskapsfinans** som rapporten er basert på. Verdien hentes fra feltet **Kostnadskontrollenhet** . |
+| Kostnadsregnskapsfinans                                            | **Kostnadsregnskapsfinans** som rapporten er basert på. Verdien hentes fra feltet **Kostnadskontrollenhet**. |
 | Kostnadskontrollenhet                                                 | Verdien du velger, fastsetter kostnadsregnskapsfinansen og kostnadsobjektene som denne rapporten skal baseres på. |
 | Dimensjonshierarki for statistikk, Dimensjonshierarki for kostnadselement | En post for konfigurasjon av arbeidsområdet **Kostnadskontroll** kan rapportere ikke-monetære eller monetære verdier, men ikke i samme oppsett. Velg en verdi i feltet **Dimensjonshierarki for kostnadselement** for å rapportere monetære verdier. Velg en verdi i feltet **Dimensjonshierarki for statistikk** for å rapportere ikke-monetære verdier. Dimensjonshierarkiposten du velger, fastsetter strukturen for rapporteringen og aggregeringsnivåene.<blockquote>[!NOTE]<br>Hvis du vil vise ikke-monetære og monetære verdier ved siden av hverandre, kan du eksportere data til Microsoft Excel for Microsoft Power BI-innholdspakken.</blockquote> |
 | Dimensjonsobjekt for kostnadselement                                   | Velg dimensjonshierarkiet for kostnadsobjektdimensjonen som passer til formålet med rapportering du definerer. |
@@ -63,9 +63,9 @@ Du kan definere datagrunnlaget for rapporten i hurtigfanen **Datafiltrering** . 
 
 ### <a name="assign-calculation-records"></a>Tilordne beregningsposter
 
-Beregningen av indirekte kostnader utfører beregning av kildedataene i flere trinn, for eksempel kostnadsdistribusjon, kostnadstildeling og klassifisering av kostnadsatferd. Du kan utføre flere beregninger av indirekte kostnader for samme regnskapsperiode, i tilfelle du oppdager manglende kildedata, eller hvis regler må oppdateres. Hver beregning av indirekte kostnader lagres med en unik ID. Regnskapsføreren kan velge en bestemt ID for beregning av indirekte kostnader. Brukere av rapporten, for eksempel ledere, kan se resultatet av beregningen av indirekte kostnader i arbeidsområdet **Kostnadskontroll** .
+Beregningen av indirekte kostnader utfører beregning av kildedataene i flere trinn, for eksempel kostnadsdistribusjon, kostnadstildeling og klassifisering av kostnadsatferd. Du kan utføre flere beregninger av indirekte kostnader for samme regnskapsperiode, i tilfelle du oppdager manglende kildedata, eller hvis regler må oppdateres. Hver beregning av indirekte kostnader lagres med en unik ID. Regnskapsføreren kan velge en bestemt ID for beregning av indirekte kostnader. Brukere av rapporten, for eksempel ledere, kan se resultatet av beregningen av indirekte kostnader i arbeidsområdet **Kostnadskontroll**.
 
-| Felt                  | beskrivelse |
+| Felt                  | Beskrivelse |
 |------------------------|-------------|
 | Økonomisk kalenderperiode | Velg regnskapskalenderperioden du vil tilordne en ID for beregning av indirekte kostnader til.<blockquote>[!NOTE]<br>Regnskapsperiodene som er oppført i feltet, kommer fra regnskapskalenderen som er knyttet til kostnadsregnskapsfinansen.</blockquote> |
 | Faktisk versjon         | Velg den aktuelle ID-en for beregning av indirekte kostnader. |
@@ -76,20 +76,20 @@ Beregningen av indirekte kostnader utfører beregning av kildedataene i flere tr
 
 I hurtigfanen **Regnskapsperioder per kolonne** bestemmer regnskapsføreren hvilken regnskapsperiode som skal vises i rapportoppsettet.
 
-Verdiene i de merkede kolonnene multipliseres med de merkede verdiene i hurtigfanen **Regnskapsperioder per kolonne** .
+Verdiene i de merkede kolonnene multipliseres med de merkede verdiene i hurtigfanen **Regnskapsperioder per kolonne**.
 
-| Felt                | beskrivelse |
+| Felt                | Beskrivelse |
 |----------------------|-------------|
-| Gjeldende periode       | Saldoen for gjeldende regnskapsperiode vises.<blockquote>[!NOTE]<br>Gjeldende periode fastsettes som standard av øktdatoen. Du kan velge en bestemt regnskapsperiode i arbeidsområdet **Kostnadskontroll** . Den valgte verdien representerer deretter gjeldende periode.</blockquote> |
-| Forrige periode      | Saldoen for forrige regnskapsperiode vises. Følgende formel brukes:<br>Gjeldende regnskapsperiode – 1<blockquote>[!NOTE]<br>Forrige periode avledes som standard fra øktdatoen. Du kan velge en bestemt regnskapsperiode som gjeldende periode i arbeidsområdet **Kostnadskontroll** . **Forrige periode** blir deretter beregnet på nytt i samsvar med dette.</blockquote> |
-| Hittil i år         | Saldoen hittil i år vises. Følgende formel brukes:<br>YearToDate (gjeldende regnskapsperiode)<blockquote>[!NOTE]<br>Gjeldende periode fastsettes som standard av øktdatoen. Du kan velge en bestemt regnskapsperiode i arbeidsområdet **Kostnadskontroll** . Den valgte verdien representerer deretter gjeldende periode, og verdien for **Hittil i år** oppdateres i samsvar med dette.</blockquote> |
-| Gjennomsnitt hittil i år | Gjennomsnittet hittil i år vises. Følgende formel brukes:<br>(YearToDate [gjeldende regnskapsperiode]) ÷ (antall [gjeldende regnskapsperiode])<p><strong>Eksempel</strong></p><ul><li>**Medlem av statistisk dimensjon:** heltidsansatte</li><li>**Gjeldende dato:** 21.03.2017</li><li>**Periode:** regnskapsperiode 1, regnskapsperiode 2, regnskapsperiode 3</li><li>**Størrelse:** 10, 10, 12</li></ul>I dette tilfellet er **Gjennomsnitt hittil i år** = (10 + 10 + 12) ÷ 3 = 10,67<p>Verdien for **Gjennomsnitt hittil i år** kan beregnes for medlemmer av dimensjon for kostnadselement og medlemmer av statistisk dimensjon.</p><blockquote>[!NOTE]<br>Gjeldende periode fastsettes som standard av øktdatoen. Du kan velge en bestemt regnskapsperiode i arbeidsområdet **Kostnadskontroll** . Den valgte verdien representerer deretter gjeldende periode, og verdiene for **Hittil i år** og **Gjennomsnitt hittil i år** oppdateres i samsvar med dette.</blockquote> |
+| Gjeldende periode       | Saldoen for gjeldende regnskapsperiode vises.<blockquote>[!NOTE]<br>Gjeldende periode fastsettes som standard av øktdatoen. Du kan velge en bestemt regnskapsperiode i arbeidsområdet **Kostnadskontroll**. Den valgte verdien representerer deretter gjeldende periode.</blockquote> |
+| Forrige periode      | Saldoen for forrige regnskapsperiode vises. Følgende formel brukes:<br>Gjeldende regnskapsperiode – 1<blockquote>[!NOTE]<br>Forrige periode avledes som standard fra øktdatoen. Du kan velge en bestemt regnskapsperiode som gjeldende periode i arbeidsområdet **Kostnadskontroll**. **Forrige periode** blir deretter beregnet på nytt i samsvar med dette.</blockquote> |
+| Hittil i år         | Saldoen hittil i år vises. Følgende formel brukes:<br>YearToDate (gjeldende regnskapsperiode)<blockquote>[!NOTE]<br>Gjeldende periode fastsettes som standard av øktdatoen. Du kan velge en bestemt regnskapsperiode i arbeidsområdet **Kostnadskontroll**. Den valgte verdien representerer deretter gjeldende periode, og verdien for **Hittil i år** oppdateres i samsvar med dette.</blockquote> |
+| Gjennomsnitt hittil i år | Gjennomsnittet hittil i år vises. Følgende formel brukes:<br>(YearToDate [gjeldende regnskapsperiode]) ÷ (antall [gjeldende regnskapsperiode])<p><strong>Eksempel</strong></p><ul><li>**Medlem av statistisk dimensjon:** heltidsansatte</li><li>**Gjeldende dato:** 21.03.2017</li><li>**Periode:** regnskapsperiode 1, regnskapsperiode 2, regnskapsperiode 3</li><li>**Størrelse:** 10, 10, 12</li></ul>I dette tilfellet er **Gjennomsnitt hittil i år** = (10 + 10 + 12) ÷ 3 = 10,67<p>Verdien for **Gjennomsnitt hittil i år** kan beregnes for medlemmer av dimensjon for kostnadselement og medlemmer av statistisk dimensjon.</p><blockquote>[!NOTE]<br>Gjeldende periode fastsettes som standard av øktdatoen. Du kan velge en bestemt regnskapsperiode i arbeidsområdet **Kostnadskontroll**. Den valgte verdien representerer deretter gjeldende periode, og verdiene for **Hittil i år** og **Gjennomsnitt hittil i år** oppdateres i samsvar med dette.</blockquote> |
 
 ### <a name="columns-to-display-for-costs"></a>Kolonner som skal vises for kostnader
 
 I hurtigfanen **Kolonner som skal vises for kostnader** bestemmer regnskapsføreren hvilke kolonner rapportoppsettet skal inneholde. Det finnes tre kategorier: Fast kostnad, Variabel kostnad og Uklassifisert kostnad.
 
-| Felt                 | beskrivelse |
+| Felt                 | Beskrivelse |
 |-----------------------|-------------|
 | Fast kostnad            | Denne kolonnetypen viser den faste kostnaden, basert på den valgte ID-en for beregning av indirekte kostnader.<blockquote>[!NOTE]<br>Denne kolonnetypen viser en saldo bare når en ID for beregning av indirekte kostnader blir valgt for regnskapsperioden.</blockquote> |
 | Variabel kostnad         | Denne kolonnetypen viser den variable kostnaden, basert på den valgte ID-en for beregning av indirekte kostnader.<blockquote>[!NOTE]<br>Denne kolonnetypen viser en saldo bare når en ID for beregning av indirekte kostnader blir valgt for regnskapsperioden.</blockquote> |
@@ -104,26 +104,26 @@ I hurtigfanen **Kolonner som skal vises for budsjetterte kostnader** bestemmer r
 > [!NOTE]
 > Siden følgende felt fungerer på samme måte for det opprinnelige budsjettet og reviderte budsjettet, blir de forklart bare én gang.
 
-| Felt                     | beskrivelse |
+| Felt                     | Beskrivelse |
 |---------------------------|-------------|
-| Budsjett                    | Budsjettsaldoer blir vist per de merkede kolonnene.<blockquote>[!NOTE]<br>Saldoene baseres på budsjettversjonene som er valgt i hurtigfanen **Datafiltrering** .</blockquote> |
+| Budsjett                    | Budsjettsaldoer blir vist per de merkede kolonnene.<blockquote>[!NOTE]<br>Saldoene baseres på budsjettversjonene som er valgt i hurtigfanen **Datafiltrering**.</blockquote> |
 | Budsjettavvik           | Beregne og vise forskjellene mellom budsjett og faktisk. Følgende formel brukes:<br>Budsjettsaldo – faktisk saldo |
 | Budsjettavvik i %      | Beregne og vise forskjellene mellom budsjett og faktisk i prosent. Følgende formel brukes:<br>(Budsjettsaldo – faktisk saldo) ÷ budsjettsaldo |
-| Terskel for avviksperiode | Angi en terskel for avviket i pengebeløp for gjeldende periode. Hvis terskelen overskrides, blir linjen uthevet i rødt i arbeidsområdet **Kostnadskontroll** .<blockquote>[!NOTE]<br>Dette feltet gjelder bare for kostnadselementer som representerer utgifter.</blockquote> |
-| Terskel for avviksår   | Angi en terskel for avviket i pengebeløp for året. Hvis terskelen overskrides, blir linjen uthevet i rødt i arbeidsområdet **Kostnadskontroll** . |
-| Avviksterskel i %      | Angi en terskel for avviket i prosent. Hvis terskelen overskrides, blir linjen uthevet i rødt i arbeidsområdet **Kostnadskontroll** .<blockquote>[!NOTE]<br>Den samme prosentterskelen gjelder for gjeldende periode og år.</blockquote> |
+| Terskel for avviksperiode | Angi en terskel for avviket i pengebeløp for gjeldende periode. Hvis terskelen overskrides, blir linjen uthevet i rødt i arbeidsområdet **Kostnadskontroll**.<blockquote>[!NOTE]<br>Dette feltet gjelder bare for kostnadselementer som representerer utgifter.</blockquote> |
+| Terskel for avviksår   | Angi en terskel for avviket i pengebeløp for året. Hvis terskelen overskrides, blir linjen uthevet i rødt i arbeidsområdet **Kostnadskontroll**. |
+| Avviksterskel i %      | Angi en terskel for avviket i prosent. Hvis terskelen overskrides, blir linjen uthevet i rødt i arbeidsområdet **Kostnadskontroll**.<blockquote>[!NOTE]<br>Den samme prosentterskelen gjelder for gjeldende periode og år.</blockquote> |
 
 ## <a name="cost-control-workspace"></a>Arbeidsområde for kostnadskontroll
 
 Arbeidsområdet **Kostnadskontroll** er utformet som en webrapport. Derfor kan alle ledere som er ansvarlige for et kostnadsobjekt, få tilgang som beskrevet i [Definere tilgangsrettigheter til kontrollere for kostnadsobjekt](access-rights-cost-object-controller.md).
 
-Listen over rapporter som er tilgjengelige for brukere, for eksempel ledere, styres av innstillingen for alternativet **Publisert** på siden **Konfigurasjoner av arbeidsområde for kostnadskontroll** .
+Listen over rapporter som er tilgjengelige for brukere, for eksempel ledere, styres av innstillingen for alternativet **Publisert** på siden **Konfigurasjoner av arbeidsområde for kostnadskontroll**.
 
 ![En rapport som brukere kan se i arbeidsområdet for kostnadskontroll](./media/report-cost-control.png)
 
 En leder kan velge regnskapskalenderperioden som skal vises. Øktdatoen brukes til å fastsette standard gjeldende periode.
 
-Verdiene i regnskapskalenderperioden fastsettes av rapportnavnet og regnskapskalenderen som er valgt for kostnadsregnskapsfinansen som er knyttet til rapportnavnet på siden **Konfigurasjoner av arbeidsområde for kostnadskontroll** .
+Verdiene i regnskapskalenderperioden fastsettes av rapportnavnet og regnskapskalenderen som er valgt for kostnadsregnskapsfinansen som er knyttet til rapportnavnet på siden **Konfigurasjoner av arbeidsområde for kostnadskontroll**.
 
 Brukere kan velge aggregeringsnivået som saldoer skal vises på, i dimensjonshierarkiet for kostnadsobjekt. Når du aktiverer tilgangsnivåsikkerhet, kontrollerer du tillatelsene slik at brukere bare kan velge hierarkinivåene de har fått tilgang til. Derfor kan de bare se de aggregerte saldoene de har fått tilgang til.
 
@@ -133,7 +133,7 @@ Brukere kan tilpasse kolonnene i en rapport til behovene deres.
 
 ### <a name="view-details"></a>Vis detaljer
 
-Brukere kan drille ned i detaljene bak saldoene som vises i arbeidsområdet. Hvis brukere velger en dimensjonshierarkinode for kostnadselement og deretter klikker på **Vis detaljer** , viser dialogboksen **Kostnadselementdetaljer** detaljert informasjon for noden.
+Brukere kan drille ned i detaljene bak saldoene som vises i arbeidsområdet. Hvis brukere velger en dimensjonshierarkinode for kostnadselement og deretter klikker på **Vis detaljer**, viser dialogboksen **Kostnadselementdetaljer** detaljert informasjon for noden.
 
 Et rutenett viser hvert kostnadselement som er knyttet til dimensjonshierarkinoden for kostnadselement, og verdiene for den. Kolonnene som vises i rutenettet, samsvarer med innstillingene for arbeidsområde.
 
@@ -145,11 +145,11 @@ Brukere kan klikke på **Kostnadsoppføringer** for å drille ned i oppføringsd
 
 ![Kostnadsoppføringer](./media/cost-entries.png)
 
-Leie er for eksempel en utgift som distribueres til kostsentre. En bruker som vil ha klarhet i leiekostnaden som kostsenteret hans eller hennes må betale, kan drille ned for å se hvordan leien beregnes.
+Leie er for eksempel en utgift som distribueres til kostsentre. En bruker som vil ha klarhet i leiekostnaden som kostsenteret til vedkommende må betale, kan drille ned for å se hvordan leien beregnes.
 
-Hvis du klikker på **Tildelingsgrunnlag** på **Kostnadsoppføringer** -siden, vises en dialogboks. Brukere kan deretter tilordne tildelingsgrunnlaget til regelen og vise de tilsvarende statistiske målingene som er registrert for perioden.
+Hvis du klikker på **Tildelingsgrunnlag** på **Kostnadsoppføringer**-siden, vises en dialogboks. Brukere kan deretter tilordne tildelingsgrunnlaget til regelen og vise de tilsvarende statistiske målingene som er registrert for perioden.
 
-I eksemplet nedenfor er tildelingsgrunnlaget av typen **Formeltildelingsgrunnlag** , og formelen vises. Faktorene som definerer formelen, vises. I tillegg viser et rutenett beregningen som utføres per kostnadsobjekt.
+I eksemplet nedenfor er tildelingsgrunnlaget av typen **Formeltildelingsgrunnlag**, og formelen vises. Faktorene som definerer formelen, vises. I tillegg viser et rutenett beregningen som utføres per kostnadsobjekt.
 
 ![Beregninger per kostnadsobjekt](./media/cost-entries-allocation-base.png)
 

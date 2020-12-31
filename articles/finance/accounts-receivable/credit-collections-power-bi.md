@@ -17,11 +17,11 @@ ms.author: shpandey
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.openlocfilehash: 6d6880e258510a79cdd5937f96af28e5ae148292
-ms.sourcegitcommit: 1329b3b98854422c4c3773ede44a5cefa7d07085
+ms.sourcegitcommit: 219aa992b1f4c913f26243eeb7e40a383fa1ca67
 ms.translationtype: HT
 ms.contentlocale: nb-NO
 ms.lasthandoff: 10/19/2020
-ms.locfileid: "4040059"
+ms.locfileid: "4446579"
 ---
 # <a name="credit-and-collections-management-power-bi-content"></a>Power BI-innholdet Behandling av kreditt og innkrevinger
 
@@ -38,7 +38,7 @@ Power BI-innholdet består av 10 rapportsider:
 - To oversiktssider (én side for en kreditoversikt og én side for en innkrevingsoversikt)
 - Åtte detaljsider med detaljer for mål for kredit og innkreving som er delt opp på tvers av ulike dimensjoner
 
-Alle beløpene vises i systemvalutaen. Du kan definere systemvalutaen på **Systemparametere** -siden.
+Alle beløpene vises i systemvalutaen. Du kan definere systemvalutaen på **Systemparametere**-siden.
 
 Som standard vises kredit- og innkrevingsdataene for gjeldende firma. Hvis du vil se dataene på tvers av alle firmaer, tilordner du plikten **CustCollectionsBICrossCompany** til rollen.
 
@@ -57,7 +57,7 @@ Følgende oppsett må fullføres for at data skal kunne vises i Power BI-visualo
 
 ## <a name="accessing-the-power-bi-content"></a>Tilgang til Power BI-innholdet
 
-Power BI-innholdet **Behandling av kreditt og innkrevinger** vises i **Kundekreditt og innkrevinger** -arbeidsområdet.
+Power BI-innholdet **Behandling av kreditt og innkrevinger** vises i **Kundekreditt og innkrevinger**-arbeidsområdet.
 
 ## <a name="reports-that-are-included-in-the-power-bi-content"></a>Rapporter som er inkludert i Power BI-innholdet
 

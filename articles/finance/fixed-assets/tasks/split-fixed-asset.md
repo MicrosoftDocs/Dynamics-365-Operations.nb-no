@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 40703622bc8c7a21451d31e7606596c5edbe90f7
-ms.sourcegitcommit: 51e626675b0130fa32a84ce2d9119b68ea928018
+ms.openlocfilehash: da2dd4889a5f4722ff60a76a4a023c63fb59ad55
+ms.sourcegitcommit: 9f32389715b226c11e74c53547527e0a8b51e300
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4000299"
+ms.lasthandoff: 11/12/2020
+ms.locfileid: "4514332"
 ---
 # <a name="split-a-fixed-asset"></a>Dele et anleggsmiddel
 
@@ -39,7 +39,7 @@ Dette emnet forklarer hvordan du deler en prosent av ett anleggsmiddeltablå til
 
 ## <a name="split-a-fixed-asset"></a>Dele et anleggsmiddel
 
-Før et ferdig avskrevet anleggsmiddel deles, skal anleggsmiddelstatusen endres manuelt fra **Lukket** til **Åpen**. Dette trinnet er nødvendig fordi den bokførte statusen må være **Åpen** hvis du må postere transaksjoner for anleggsmiddelet (for eksempel for et salg). Etter at anleggsmiddelstatusen er endret, følger du disse trinnene for å dele opp anleggsmiddelet.
+Før et ferdig avskrevet anleggsmiddel deles, skal anleggsmiddelstatusen endres manuelt fra **Lukket** til **Åpen**. Dette trinnet er nødvendig fordi den bokførte statusen må være **Åpen** hvis du må postere transaksjoner for anleggsmiddelet (for eksempel for et salg). Du må også aktivere parameteren **Tillat flere transaksjoner i ett bilag** i kategorien **Generelt** på siden **Parametere for økonomimodul**. Når statusen for anleggstablået er endret, og flere transaksjoner innenfor ett bilag er tillatt, fullfører du trinnene nedenfor for å dele opp aktivaet.
 
 1. I listen finner og velger du koblingen for anleggsmidlet som skal deles.
 2. Velg **Bøker**. Velg tablået som skal deles til det nye anleggsmiddelet.
@@ -48,7 +48,7 @@ Før et ferdig avskrevet anleggsmiddel deles, skal anleggsmiddelstatusen endres 
 5. Angi eller velg en verdi i feltet **Til anleggsmiddel**.
 6. Velg rullegardinknappen i feltet **Til tablå** for å åpne oppslaget.
 7. Angi en dato i feltet **Transaksjonsdato**.
-8. Angi et tall i **Prosent** -feltet.
+8. Angi et tall i **Prosent**-feltet.
 9. Angi eller velg en verdi i feltet **Journalnavn**.
 10. Velg **OK**.
 

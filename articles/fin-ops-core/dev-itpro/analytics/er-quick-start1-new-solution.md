@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ERWorkspace, ERSolutionTable, ERParameters, ERDataModelDesigner, ERModelMappingTable, ERModelMappingDesigner, EROperationDesigner, ERVendorTable
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 220314
 ms.assetid: ''
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: ede88bc1767304a86a86ec27365db9403c5a951d
-ms.sourcegitcommit: 4909e55529f03310d24b7e40d52751e24d35259b
+ms.openlocfilehash: 7cd0d8e7aa9595e705416798772f52956ef609da
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/10/2020
-ms.locfileid: "3678254"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4680248"
 ---
 # <a name="design-a-new-er-solution-to-print-a-custom-report"></a>Utforme en ny ER-løsning for å skrive ut en egendefinert rapport
 
@@ -142,10 +141,10 @@ Som en bruker i rollen som utvikler av elektronisk rapportering må du konfigure
 
 ### <a name="configure-er-parameters"></a><a name="ConfigureParameters"></a>Konfigurere ER-parametere
 
-1. Gå til **Organisasjonsstyring** \> **Arbeidsområder** \> **Elektronisk rapportering**.
-2. I arbeidsområdet **Elektronisk rapportering** velger du **Parametere for elektronisk rapportering**.
-3. På siden **Parametere for elektronisk rapportering** går du til fanen **Generelt** og angir **Aktiver utformingsmodus** til **Ja**.
-4. På fanen **Vedlegg** angir du følgende parametere:
+1. Gå til **Organisasjonsstyring** \> **Arbeidsområder** \> **Elektronisk rapportering**.
+2. I arbeidsområdet **Elektronisk rapportering** velger du **Parametere for elektronisk rapportering**.
+3. På **Parametere for elektronisk rapportering**-siden, i **Generelt**-fanen angi **Aktiver utformingsmodus** til **Ja**.
+4. Angi følgende parametere i fanen **Vedlegg**:
 
     - Sett **Konfigurasjoner**-feltet til **Fil** for **USMF**-firmaet.
     - Sett feltene **Jobbarkiv**, **Midlertidig**, **Grunnlinje** og **Annet** til **Fil**.
@@ -161,28 +160,28 @@ Hver ER-konfigurasjon er merket som eid av en ER-konfigurasjonsleverandør. Derf
 
 #### <a name="review-the-list-of-er-configuration-providers"></a><a name="ReviewProvidersList"></a>Se gjennom listen over ER-konfigurasjonsleverandører
 
-1. Gå til **Organisasjonsstyring** \> **Arbeidsområder** \> **Elektronisk rapportering**.
+1. Gå til **Organisasjonsstyring** \> **Arbeidsområder** \> **Elektronisk rapportering**.
 2. I delen **Relaterte koblinger** i arbeidsområdet **Elektronisk rapportering** velger du **Konfigurasjonsleverandører**.
 3. På siden **Konfigurasjonsleverandører** har hver konfigurasjonsleverandørpost et unikt navn og en unik URL-adresse. Se gjennom innholdet på denne siden. Hvis det allerede finnes en post for **Litware, Inc.** (`https://www.litware.com`), hopper du over den neste fremgangsmåten og [legger til en ny ER-konfigurasjonsleverandør](#ActivateProvider).
 
 #### <a name="add-a-new-er-configuration-provider"></a><a name="AddProvider"></a>Legg til en ny ER-konfigurasjonsleverandør
 
 1. Velg **Ny** på siden **Konfigurasjonsleverandører**.
-2. I **Navn**-feltet angir du **Litware, Inc.**
-3. I **Internett-adresse**-feltet angir du  `https://www.litware.com`.
-4. Velg **Lagre**.
+2. I **Navn**-feltet angir du **Litware, Inc.**
+3. I **Internett-adresse**-feltet angir du `https://www.litware.com`.
+4. Velg **Lagre**.
 
 #### <a name="activate-an-er-configuration-provider"></a><a name="ActivateAddedProvider"></a>Aktivere en ER-konfigurasjonsleverandør
 
-1. Gå til **Organisasjonsstyring** \> **Arbeidsområder** \> **Elektronisk rapportering**.
+1. Gå til **Organisasjonsstyring** \> **Arbeidsområder** \> **Elektronisk rapportering**.
 2. I arbeidsområdet **Elektronisk rapportering** velger du konfigurasjonsleverandøren **Litware, Inc.**.
-3. Velg **Angi som aktiv**.
+3. Velg **Angi som aktiv**.
 
 Hvis du ha mer informasjon om ER-konfigurasjonsleverandører, kan du se [Opprette konfigurasjonsleverandører og merke dem som aktive](tasks/er-configuration-provider-mark-it-active-2016-11.md).
 
 ## <a name="design-a-domain-specific-data-model"></a><a name="DesignModel"></a>Utforme en domenespesifikk datamodell
 
-Du må opprette en ny ER-konfigurasjon som inneholder en komponent av typen [datamodell](general-electronic-reporting.md#data-model-and-model-mapping-components) for bedriftsdomenet **Spørreskjema**. Denne datamodellen vil senere bli brukt som datakilde når du utformer et ER-format for å generere **Spørreskjema**-rapporten.
+Du må opprette en ny ER-konfigurasjon som inneholder en komponent av typen [datamodell](general-electronic-reporting.md#data-model-and-model-mapping-components) for bedriftsdomenet **Spørreskjema**. Denne datamodellen vil senere bli brukt som datakilde når du utformer et ER-format for å generere **Spørreskjema**-rapporten.
 
 Ved å fullføre trinnene under [Importere en ny datamodellkonfigurasjon](#ImportDataModel) kan du importere den nødvendige datamodellen fra den angitte XML-filen. Du kan også fullføre trinnene i delen [Opprett en ny datamodellkonfigurasjon](#DesignDataModel) for å utforme denne datamodellen fra grunnen av.
 
@@ -811,7 +810,7 @@ Statusen til versjon 1.1 av denne konfigurasjonen endres fra **Utkast** til **Fu
 
 Som en bruker i Systemansvarlig-rollen må du utvikle ny logikk slik at det konfigurerte ER-formatet kan kalles fra brukergrensesnittet (UI) i appen for å generere den egendefinerte rapporten. For øyeblikket tilbyr ikke ER funksjonalitet for å konfigurere denne typen logikk. Derfor kreves noe utviklingsarbeid. 
 
-For å utvikle den nye logikken må du distribuere en topologi som støtter fortløpende bygging. Hvis du vil ha mer informasjon, kan du se [Distribuere topologier som støtter sammenhengende automatisering av bygging og testing](../perf-test/continuous-build-test-automation.md). Du må også ha tilgang til utviklingsmiljøet for denne topologien. Hvis du vil ha mer informasjon om det tilgjengelige API-et for ER, kan du se [API for ER-rammeverk](er-apis-app73.md).
+For å utvikle den nye logikken må du distribuere en topologi som støtter fortløpende bygging. Hvis du vil ha mer informasjon, kan du se [Distribuere topologier som støtter sammenhengende automatisering av bygging og testing](../perf-test/continuous-build-test-automation.md). Du må også ha tilgang til utviklingsmiljøet for denne topologien. Hvis du vil ha mer informasjon om det tilgjengelige API-et for ER, kan du se [API for ER-rammeverk](er-apis-app73.md).
 
 ### <a name="modify-source-code"></a><a name="ModifySourceCode"></a>Endre kildekode
 
@@ -1062,7 +1061,7 @@ Bygg prosjektet for å gjøre et nytt menyelement tilgjengelig for brukere.
 
     ![Angi utvalgskriteriene i dialogboksen Elektronisk rapport](./media/er-quick-start1-report-run-dialog-page.png)
 
-7. Gå gjennom den genererte rapporten.
+7. Gå gjennom den genererte rapporten.
 
 ## <a name="tune-a-designed-er-solution"></a><a name="TuneSolution"></a>Justere en utviklet ER-løsning
 

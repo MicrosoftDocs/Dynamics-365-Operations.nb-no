@@ -16,11 +16,11 @@ ms.search.region: Norway
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
 ms.openlocfilehash: f26d3d49af8ddf2d5f10c516e81a4d21727a9f72
-ms.sourcegitcommit: ce79fb570e299a26a644e29da7ceb5a57a1374e6
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "3295069"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4408309"
 ---
 # <a name="standard-audit-file-for-tax-saf-t-for-norway"></a>Standard revisjonsfil for avgift (SAF-T) for Norge
 
@@ -83,7 +83,7 @@ Delene nedenfor forklarer hvordan du gjør hver del av dette oppsettet.
 
 ### <a name="sales-tax-codes"></a>Mva-koder
 
-Som dokumentasjonen forklarer, i Norsk SAF-T økonomiske data, må mva-koder som brukes i Finance, være knyttet til norske standard mva-koder (\<StandardTaxCode\>) for SAF-T-rapportering. Norske standard mva-koder er tilgjengelige på <https://github.com/Skatteetaten/saf-t>.
+Som dokumentasjonen forklarer, må mva-koder i norsk SAF-T Financial-data som brukes i Finance, være knyttet til norske standard mva-koder (\<StandardTaxCode\>) for SAF-T-rapportering. Norske standard mva-koder er tilgjengelige på <https://github.com/Skatteetaten/saf-t>.
 
 Hvis du vil knytte mva-koder som brukes i Finance, med norske standard mva-koder, følger du denne fremgangsmåten.
 
@@ -127,7 +127,7 @@ Hvis du vil generere rapporten **Norsk SAF-T økonomiske data**, følger du denn
     
     Hvis det ikke er merket av for **Finansdimensjoner**, vil bare finansdimensjonene som ble brukt i transaksjoner i løpet av rapporteringsperioden, rapporteres i **\<MasterFiles\>**-noden i rapporten.
 
-4. I feltet **Personalnummer** velger du en ansatt for å legge til den ansatte i noden **\<AuditFileSender\>** i rapporten. Denne noden rapporterer informasjon om kontaktpersonen for revisjonsfilen (fornavn og etternavn).
+4. I feltet **Personalnummer** velger du en ansatt for å legge til den ansatte i **\<AuditFileSender\>**-noden i rapporten. Denne noden rapporterer informasjon om kontaktpersonen for revisjonsfilen (fornavn og etternavn).
 
 5. Merk av for **Rapporter skatteinformasjon i merverdiavgiftsvaluta** hvis du vil rapportere skatteinformasjon i merverdiavgiftsvaluta.
 
@@ -151,7 +151,7 @@ Du kan også bruke filtre for feltene **Hovedkontoer** og **Oppføring i økonom
 
 Dokumentasjonen for norske SAF-T økonomiske data krever følgende navngivingsstruktur for XML-rapportene som genereres:
 
-\<SAF-T-eksporttype\>\_\<organisasjonsnummer for leverandøren som dataene representerer\>\_\<dato og klokkeslett (ååååmmddtt24tmise\>\_\<filnummer for totalt antall filer\>.xml 
+\<SAF-T export type\>\_\<organization number of the vendor that the data represents\>\_\<date and time(yyyymmddhh24hmise\>\_\<file number of total files\>.xml 
 
 Her er et eksempel:
 
@@ -170,8 +170,8 @@ Tabellen nedenfor viser et eksempelutvalg av ett regnskapsår som har 12 periode
 
 | Filnummer | Innhold i revisjonsfilen                     |
 |-------------|------------------------------------------------|
-| 1           | \<Topptekst\> og \<MasterFiles\>-noder           |
-| 2–13        | \<Topptekst\> og \<GeneralLedgerEntries\>-noder  |
+| 1           | \<Header\>- og \<MasterFiles\>-noder           |
+| 2–13        | \<Header\>- og \<GeneralLedgerEntries\>-noder  |
 
 Det kan være maksimalt 10 XML-filer i samme zip-arkiv.
 
@@ -180,9 +180,9 @@ I samsvar med disse kravene er ER-formatet **SAF-T-format (NO)** implementert fo
 - Det maksimale volumet for den resulterende XML-rapporten er 2 000 000 kilobyte (kB) (det vil si 2 GB).
 - Alle XML-filene bruker følgende navngivningsstruktur:
 
-    \<SAF-T-eksporttype\>\_\<organisasjonsnummer for leverandøren som dataene representerer\>\_\<dato og klokkeslett(ååååmmddtt24tmise\>
+    \<SAF-T export type\>\_\<organization number of the vendor that the data represents\>\_\<date and time(yyyymmddhh24hmise\>
 
 - Alle XML-filer er inkludert i ett zip-arkiv.
 - Hver enkelt XML-fil valideres mot skjemaet.
 
-Når rapporten er generert, hvis det genereres mer enn én XML-fil, må brukeren manuelt nummerere de genererte filene i zip-arkivet ved å legge til **\_\<filnummeret for totalt antall filer\>** i filnavnene. Brukeren må likeledes sikre at det ikke mer enn 10 XML-filer i det samme zip-arkivet. Hvis det er mer enn 10 XML-filer i et arkiv, må brukeren manuelt dele det opp i flere arkiver, som hver har maksimalt 10 XML-filer.
+Når rapporten er generert, hvis det genereres mer enn én XML-fil, må brukeren manuelt nummerere de genererte filene i zip-arkivet ved å legge til **\_\<file number of total files\>** i filnavnene. Brukeren må likeledes sikre at det ikke mer enn 10 XML-filer i det samme zip-arkivet. Hvis det er mer enn 10 XML-filer i et arkiv, må brukeren manuelt dele det opp i flere arkiver, som hver har maksimalt 10 XML-filer.

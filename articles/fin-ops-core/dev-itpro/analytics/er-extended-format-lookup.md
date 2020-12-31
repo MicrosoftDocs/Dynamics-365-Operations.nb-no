@@ -11,25 +11,24 @@ ms.technology: ''
 ms.search.form: ERSolutionTable, ERWorkspace
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 97423
 ms.assetid: ''
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-04-01
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: 28bdd02c25db27536a489f9e8ab2a91a5ca0f09c
-ms.sourcegitcommit: b92c3e1b3403d0455fc4e0bf9132d6bc0d7aba5e
+ms.openlocfilehash: f7c6cb99a6c5cc6fb92ce52041296af2d0c6722e
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3138866"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4679492"
 ---
 # <a name="allow-users-to-set-up-an-er-format-reference-inquiring-a-format-from-the-global-repository"></a>Tillate brukere å konfigurere en ER-formatreferanse som forespør et format fra det globale repositoriet
 
 [!include [banner](../includes/banner.md)]
 
-Du kan bruke [Elektronisk rapportering](general-electronic-reporting.md)-rammeverket (ER) til å konfigurere [formater](general-electronic-reporting.md#FormatComponentOutbound) for utgående dokumenter i samsvar med lovkravene i forskjellige land/regioner. Du kan også bruke ER-rammeverket for å konfigurere [formater](general-electronic-reporting.md#FormatComponentInbound) for analyse av inngående dokumenter og bruke informasjonen fra disse dokumentene til å legge til eller oppdatere applikasjonsdata. Hvert av disse formatene kan brukes i Dynamics 365 Finance-forekomsten for håndtering av inngående eller utgående forretningsdokumenter som en del av en viss forretningsprosess. 
+Du kan bruke [Elektronisk rapportering](general-electronic-reporting.md)-rammeverket (ER) til å konfigurere [formater](general-electronic-reporting.md#FormatComponentOutbound) for utgående dokumenter i samsvar med lovkravene i forskjellige land/regioner. Du kan også bruke ER-rammeverket for å konfigurere [formater](general-electronic-reporting.md#FormatComponentInbound) for analyse av inngående dokumenter og bruke informasjonen fra disse dokumentene til å legge til eller oppdatere applikasjonsdata. Hvert av disse formatene kan brukes i Dynamics 365 Finance-forekomsten for håndtering av inngående eller utgående forretningsdokumenter som en del av en bestemt forretningsprosess.
 
 Vanligvis må du angi hva slags ER-format som må brukes i en bestemt forretningsprosess. Hvis du vil gjøre dette, velger du ett enkelt ER-format i et oppslagsfelt som er konfigurert som del av forretningsprosesspesifikke parametere. Disse oppslagsfeltene implementeres vanligvis ved å bruke riktig API for ER-rammeverket. Hvis du vil ha mer informasjon, kan du se [ER-rammeverks-API – kode for å vise et formatkartleggingsoppslag](er-apis-app73.md#code-to-display-a-format-mapping-lookup).
 
@@ -45,7 +44,7 @@ Hvis gjeldende Finans-forekomst inneholder ER-formater relatert til Intrastat-fo
 
 Dette oppslaget tilbyr bare ER-formater som allerede er importert til gjeldende Finans-forekomst. Hvis du vil [importere](./tasks/er-import-configuration-lifecycle-services.md) ER-løsninger til gjeldende Finans-forekomst, må du ha tillatelser for å kjøre den aktuelle funksjonen til ER-rammeverket som støtter [livssyklusen](general-electronic-reporting-manage-configuration-lifecycle.md) til ER-løsninger som inneholder ER-formater.
 
-Fra og med i Finans-versjonen 10.0.9 (utgitt april 2020) har brukergrensesnittet til ER-formatoppslaget som implementeres ved bruk av ER-rammeverks-API-et, utvidet. Du kan fortsatt velge de eksisterende ER-formatene, som **Velg formatkonfigurasjon**-hurtigfanen. I tillegg til dette tilbyr det utvidede oppslaget det nye alternativet for å søke etter bestemte ER-formater i det globale repositoriet (GR). Alle ER-formatene i det globale repositoriet tilbys på **Importer fra global database**-hurtigfanen.
+Fra og med i Finans-versjonen 10.0.9 (utgitt april 2020) har brukergrensesnittet til ER-formatoppslaget som implementeres ved bruk av ER-rammeverks-API-et, utvidet. Du kan fortsatt velge de eksisterende ER-formatene, som **Velg formatkonfigurasjon**-hurtigfanen. I tillegg tilbyr det utvidede oppslaget det nye alternativet for å søke etter bestemte ER-formater i det globale repositoriet (GR). Alle ER-formatene i det globale repositoriet tilbys på **Importer fra global database**-hurtigfanen.
 
 [![Utenrikshandelsparametere-siden](./media/ER-ExtLookup-Lookup3.png)](./media/ER-ExtLookup-Lookup3.png)
 
@@ -55,13 +54,13 @@ Når du velger et ER-format på **Import fra globalt repositorium**-hurtigfanen,
 
 [![Utenrikshandelsparametere-siden](./media/ER-ExtLookup-FormatImport.png)](./media/ER-ExtLookup-FormatImport.png)
 
-Hvis importen fullføres, lagres referansen til det importerte ER-formatet så i dette oppslagsfeltet. Vær oppmerksom på følgende: Når du åpner det globale repositoriet (GR) for første gang, må du følge koblingen til registrering for [Regulatory Configuration Service](https://aka.ms/rcs) (RCS), som brukes til å styre tilgangen til GR-lageret.
+Hvis importen fullføres, lagres referansen til det importerte ER-formatet så i dette oppslagsfeltet. Når du åpner det globale repositoriet (GR) for første gang, må du følge koblingen til registrering for [Regulatory Configuration Service](https://aka.ms/rcs) (RCS), som brukes til å styre tilgangen til GR-lageret.
 
 [![Utenrikshandelsparametere-siden](./media/ER-ExtLookup-RepoSignUp.png)](./media/ER-ExtLookup-RepoSignUp.png)
 
 Som standard viser **Importer fra globalt repositorium**-hurtigfanen listen over ER-formater fra den midlertidige lagringsplassen, som opprettes automatisk basert på GR-innholdet for ytelsesforbedringer. Dette skjer når **Importer fra globalt repositorium**-hurtigfanen åpnes for første gang, noe som kan ta flere sekunder.
 
-Hvis du ikke ser det påkrevde ER-formatet på **Importer fra globalt repositorium**-hurtigfanen, men du er sikker på at dette ER-formatet er lagret i GR, velger du **Synkroniser**-alternativet. Dette oppdaterer den midlertidige lagringsplassen og synkroniserer den med det gjeldende innholdet i det globale repositoriet.
+Hvis du ikke ser det påkrevde ER-formatet på **Importer fra globalt repositorium**-hurtigfanen, men du er sikker på at dette ER-formatet er lagret i GR, velger du **Synkroniser**-alternativet. Dette alternativet oppdaterer den midlertidige lagringsplassen og synkroniserer den med det gjeldende innholdet i det globale repositoriet.
 
 ## <a name="feature-activation"></a>Funksjonsaktivering
 

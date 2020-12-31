@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: CostAdminWorkspace, CostAnalysisWorkspace, CostObjectWithLowestAccuracy, CostVarianceChart, CostObjectWithLowestTurn
 audience: Application User, IT Pro
 ms.reviewer: kfend
-ms.search.scope: Operations
 ms.custom: 270314
 ms.assetid: 9680d977-43c8-47a7-966d-2280ba21402a
 ms.search.region: Global
@@ -19,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b4e12abceeef59d05fa21cb030b8aa738842cafb
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.openlocfilehash: bd5558c89130b48595a9b889072a18a4416b5bd7
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3982803"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4683901"
 ---
 # <a name="cost-management-power-bi-content"></a>Power BI-innholdet Kostnadsstyring
 
@@ -37,25 +36,25 @@ Microsoft Power BI-innholdet for **Kostnadsstyring** er ment for lagerregnskapsf
 > [!NOTE]
 > Power BI-innholdet **Kostnadsbehandling** som er beskrevet i dette emnet, gjelder for Dynamics 365 Finance and Operations 8.0.
 > 
-> Power BI-innholdspakken for **Kostnadsstyring** , tilgjengelig på AppSource-nettstedet, er foreldet. Hvis du vil ha mer informasjon om denne avskrivingen, kan du se [Funksjoner som er fjernet eller avskrevet for Finance and Operations](../migration-upgrade/deprecated-features.md#power-bi-content-packs-available-on-appsource).
+> Power BI-innholdspakken for **Kostnadsstyring**, tilgjengelig på AppSource-nettstedet, er foreldet. Hvis du vil ha mer informasjon om denne avskrivingen, kan du se [Funksjoner som er fjernet eller avskrevet for Finance and Operations](../migration-upgrade/deprecated-features.md#power-bi-content-packs-available-on-appsource).
 
 Power BI-innholdet gir et kategoriserte format som hjelper deg å overvåke ytelsen til beholdninger og visualisere hvordan kostnadene flyter gjennom dem. Du kan få innsikt, for eksempel omsetningshastighet, antall dager beholdningen er på lager, presisjon og ABC-klassifisering på det foretrukne aggregerte nivået (firma, vare, varegruppe eller område). Informasjonen som gjøres tilgjengelig, kan også brukes som et detaljert supplement til regnskapsoppgjøret.
 
-Power BI-innholdet er bygd på aggregert **CostObjectStatementCacheMonthly** -måling, som har **CostObjectStatementCache** -tabellen som den primære datakilden. Denne tabellen håndteres av rammeverket for hurtigbuffer for datasett. Tabellen oppdateres hvert døgn som standard, men du kan endre oppdateringsfrekvensen eller aktivere manuelle oppdateringer i konfigurasjonen av datasettbufferen. Manuelle oppdateringer kan kjøres i enten **Kostnadsadministrasjon** -arbeidsområdet eller **Kostnadsanalyse** -arbeidsområdet.
+Power BI-innholdet er bygd på aggregert **CostObjectStatementCacheMonthly**-måling, som har **CostObjectStatementCache**-tabellen som den primære datakilden. Denne tabellen håndteres av rammeverket for hurtigbuffer for datasett. Tabellen oppdateres hvert døgn som standard, men du kan endre oppdateringsfrekvensen eller aktivere manuelle oppdateringer i konfigurasjonen av datasettbufferen. Manuelle oppdateringer kan kjøres i enten **Kostnadsadministrasjon**-arbeidsområdet eller **Kostnadsanalyse**-arbeidsområdet.
 
-Etter hver oppdatering av **CostObjectStatementCache** -tabellen, må den aggregerte **CostObjectStatementCacheMonthly** -målingen oppdateres før dataene i Power BI-effektene oppdateres.
+Etter hver oppdatering av **CostObjectStatementCache**-tabellen, må den aggregerte **CostObjectStatementCacheMonthly**-målingen oppdateres før dataene i Power BI-effektene oppdateres.
 
 ## <a name="accessing-the-power-bi-content"></a>Tilgang til Power BI-innholdet
 
-Power BI-innholdet for **Kostnadsadministrasjon** vises i **Kostnadsadministrasjon** - og **Kostnadsanalyse** -arbeidsområdet.
+Power BI-innholdet for **Kostnadsadministrasjon** vises i **Kostnadsadministrasjon**- og **Kostnadsanalyse**-arbeidsområdet.
 
-**Kostnadsadministrasjon** -arbeidsområdet inneholder følgende kategorier:
+**Kostnadsadministrasjon**-arbeidsområdet inneholder følgende kategorier:
 
 - **Oversikt** – denne kategorien viser programdata.
 - **Status for lagerregnskap** – denne kategorien viser Power BI-innhold.
 - **Status for produksjonsregnskap** – denne kategorien viser Power BI-innhold.
 
-**Kostnadsanalyse** -arbeidsområdet inneholder følgende kategorier:
+**Kostnadsanalyse**-arbeidsområdet inneholder følgende kategorier:
 
 - **Oversikt** – denne kategorien viser programdata.
 - **Analyse av lagerregnskap** – denne kategorien viser Power BI-innhold.
@@ -66,7 +65,7 @@ Power BI-innholdet for **Kostnadsadministrasjon** vises i **Kostnadsadministrasj
 
 Power BI-innholdet **Kostnadsadministrasjon** omfatter et sett med rapportsider som består av et sett med mål. Disse målene vises som diagrammer, fliser og tabeller. 
 
-Tabellene nedenfor gir en oversikt over visualiseringer i Power BI-innholdet **Kostnadsbehandling** .
+Tabellene nedenfor gir en oversikt over visualiseringer i Power BI-innholdet **Kostnadsbehandling**.
 
 ### <a name="inventory-accounting-status"></a>Status for lagerregnskap
 
@@ -172,7 +171,7 @@ Tabellene nedenfor gir en oversikt over visualiseringer i Power BI-innholdet **K
 
 ## <a name="understanding-the-data-model-and-entities"></a>Forstå datamodellen og enheter
 
-Data fra programmet brukes til å fylle ut rapportsidene i Power BI-innholdet **Kostnadsstyring** . Disse dataene representeres som aggregerte målinger som mellomlagres i enhetsbutikken, som er en Microsoft SQL Server-database som er optimalisert for analyse. Hvis du vil ha mer informasjon, se [Power BI-integrering med enhetslager](power-bi-integration-entity-store.md).
+Data fra programmet brukes til å fylle ut rapportsidene i Power BI-innholdet **Kostnadsstyring**. Disse dataene representeres som aggregerte målinger som mellomlagres i enhetsbutikken, som er en Microsoft SQL Server-database som er optimalisert for analyse. Hvis du vil ha mer informasjon, se [Power BI-integrering med enhetslager](power-bi-integration-entity-store.md).
 
 De aggregerte nøkkelmålingene for følgende objekter brukes som grunnlag for Power BI-innholdet.
 

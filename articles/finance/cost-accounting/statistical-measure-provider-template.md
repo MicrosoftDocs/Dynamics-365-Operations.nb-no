@@ -20,11 +20,11 @@ ms.author: roschlom
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.openlocfilehash: ec8ec7bc7785b1ddec58b78bd14ce164ad1ce032
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3976337"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4446505"
 ---
 # <a name="statistical-dimension-members-and-statistical-measure-provider-templates"></a>Statistiske dimensjonsmedlemmer og maler for leverandør av statistisk måling
 
@@ -103,10 +103,10 @@ Her er et eksempel på ansatte i tabellen HcmEmployment.
 | Ansatt 5 | CC003       | LO | Ansatt    |
 | Ansatt 6 | CC002       | FI | Oppdragstaker  |
 
-Når du oppretter en **Mal for leverandør av statistisk måling** -post, må du bestemme hvilken funksjon som skal brukes:
+Når du oppretter en **Mal for leverandør av statistisk måling**-post, må du bestemme hvilken funksjon som skal brukes:
 
 - **Antall** – antall poster per kostobjekt overføres.
-- **Sum** – sum for poster per kostobjekt overføres. ( **Sum** -feltet og **Dato** -feltet er obligatorisk.)
+- **Sum** – sum for poster per kostobjekt overføres. (**Sum**-feltet og **Dato**-feltet er obligatorisk.)
 
 ## <a name="using-the-count-function"></a>Bruke Antall-funksjonen
 
@@ -118,7 +118,7 @@ En mal for leverandør av statistisk måling kan for eksempel defineres på føl
 
 Du kan også legge til ett eller flere områder for å begrense målinger fra kildetabellen.
 
-I dette eksemplet, hvis du bare ønsker en oversikt over alle fulltidsansatte (heltidsansatte), kan de legge til et område i den **Arbeiderype** -feltet. I **vilkår** -felte velger du **ansatt** for å begrense utdata på følgende måte.
+I dette eksemplet, hvis du bare ønsker en oversikt over alle fulltidsansatte (heltidsansatte), kan de legge til et område i den **Arbeiderype**-feltet. I **vilkår**-felte velger du **ansatt** for å begrense utdata på følgende måte.
 
 **Områder**
 
@@ -129,9 +129,9 @@ I dette eksemplet, hvis du bare ønsker en oversikt over alle fulltidsansatte (h
 Før du kan få statistiske målinger i kostnadsregnskap, må du opprette relasjonen mellom malen for leverandør av statistisk måling og det statistiske dimensjonsmedlemmet. Denne relasjonen opprettes per kostnadsregnskapsfinans- og versjon. Relasjonen består av en datakobling og en dataleverandør. Du kan ha flere datakoblinger og dataleverandører per statistisk dimensjonsmedlem.
 
 > [!NOTE]
-> I dette eksemplet skal vi opprette en relasjon for **faktisk versjon** .
+> I dette eksemplet skal vi opprette en relasjon for **faktisk versjon**.
 
-Gå til **kostnadsregnskapsfinans** \> **faktisk versjon** \> **behandle** \> **statistiske målinger** for å opprette relasjonen. I dette scenariet velger du datakoblingen **Dynamics 365 Finance – statistiske målinger** , fordi vi vil trekke ut data fra Finance.
+Gå til **kostnadsregnskapsfinans** \> **faktisk versjon** \> **behandle** \> **statistiske målinger** for å opprette relasjonen. I dette scenariet velger du datakoblingen **Dynamics 365 Finance – statistiske målinger**, fordi vi vil trekke ut data fra Finance.
 
 **Datakilde**
 
@@ -193,10 +193,10 @@ Her er et eksempel på ansatte i tabellen ProdRouteTrans.
 | Produksjonsordre | P0003  | Innpakning | Tidspunkt | 4,00  | 03.01.2017    | Forbruker av appelsinjus               | USMF         |
 | Produksjonsordre | P0004  | Rekonst.  | Tidspunkt | 10,00 | 03.01.2017    | Forbruker av appelsinjus               | USMF         |
 
-Når du oppretter en **Mal for leverandør av statistisk måling** -post, må du bestemme hvilken funksjon som skal brukes:
+Når du oppretter en **Mal for leverandør av statistisk måling**-post, må du bestemme hvilken funksjon som skal brukes:
 
 - **Antall** – antall poster per kostobjekt overføres.
-- **Sum** – sum for poster per kostobjekt overføres. ( **Sum** -feltet og **Dato** -feltet er obligatorisk.)
+- **Sum** – sum for poster per kostobjekt overføres. (**Sum**-feltet og **Dato**-feltet er obligatorisk.)
 
 En mal for leverandør av statistisk måling kan for eksempel defineres på følgende måte.
 
@@ -206,7 +206,7 @@ En mal for leverandør av statistisk måling kan for eksempel defineres på føl
 
 Du kan også legge til områder for å begrense målinger fra kildetabellen.
 
-I dette eksemplet, hvis du bare vil ha summen av timer som er knyttet til Emballasjekostsenteret CC010, kan du du legge til et område i **Operasjon** -feltet. I **vilkår** -feltet velger du **innpakning** for å begrense utdataområdet.
+I dette eksemplet, hvis du bare vil ha summen av timer som er knyttet til Emballasjekostsenteret CC010, kan du du legge til et område i **Operasjon**-feltet. I **vilkår**-feltet velger du **innpakning** for å begrense utdataområdet.
 
 **Områder**
 
@@ -217,9 +217,9 @@ I dette eksemplet, hvis du bare vil ha summen av timer som er knyttet til Emball
 Før du kan få statistiske målinger i kostnadsregnskap, må du opprette relasjonen mellom malen for leverandør av statistisk måling og det statistiske dimensjonsmedlemmet. Denne relasjonen opprettes per kostnadsregnskapsfinans- og versjon. Relasjonen består av en datakobling og en dataleverandør. Du kan ha flere datakoblinger og dataleverandører per statistisk dimensjonsmedlem.
 
 > [!NOTE]
-> I dette eksemplet skal vi opprette en relasjon for **faktisk versjon** .
+> I dette eksemplet skal vi opprette en relasjon for **faktisk versjon**.
 
-Gå til **kostnadsregnskapsfinans** \> **faktisk versjon** \> **behandle** \> **statistiske målinger** for å opprette relasjonen. I dette scenariet velger du datakoblingen **Dynamics 365 Finance – statistiske målinger** , fordi vi vil trekke ut data fra Finance.
+Gå til **kostnadsregnskapsfinans** \> **faktisk versjon** \> **behandle** \> **statistiske målinger** for å opprette relasjonen. I dette scenariet velger du datakoblingen **Dynamics 365 Finance – statistiske målinger**, fordi vi vil trekke ut data fra Finance.
 
 **Datakilde**
 
@@ -283,7 +283,7 @@ Strømforbruket registreres i Microsoft Excel ved å bruke dataenhetens forhånd
 
 Når du har importert dataene via databehandling, blir dataene lagret i en oppsamlingstabell for kostnadsregnskap. Derfor kan de importerte dataene brukes i flere kontoer i kostnadsregnskap. Det er ikke nødvendig å lasste inn data på nytt.
 
-Hvis du vil importere dataene, kan du gå til **Importerte data** \> **Dataenhet** \> **Importerte statistiske målinger** .
+Hvis du vil importere dataene, kan du gå til **Importerte data** \> **Dataenhet** \> **Importerte statistiske målinger**.
 
 | Kildeidentifikator | Regnskapsdato | Størrelse  | Navn1 på dimensjonsmedlem | Navn2 på dimensjonsmedlem | Navn5 på dimensjonsmedlem |
 |-------------------|-----------------|------------|------------------------|------------------------|------------------------|
@@ -294,9 +294,9 @@ Hvis du vil importere dataene, kan du gå til **Importerte data** \> **Dataenhet
 Før du kan få statistiske målinger i kostnadsregnskap, må du opprette relasjonen mellom malen for leverandør av statistisk måling og det statistiske dimensjonsmedlemmet. Denne relasjonen opprettes per kostnadsregnskapsfinans- og versjon. Relasjonen består av en datakobling og en dataleverandør. Du kan ha flere datakoblinger og dataleverandører per statistisk dimensjonsmedlem.
 
 > [!NOTE]
-> I dette eksemplet skal vi opprette en relasjon for **faktisk versjon** .
+> I dette eksemplet skal vi opprette en relasjon for **faktisk versjon**.
 
-Gå til **kostnadsregnskapsfinans** \> **faktisk versjon** \> **behandle** \> **statistiske målinger** for å opprette relasjonen. I dette scenariet kan du velge datakoblingen **Importerte statistiske målinger** , fordi dataene er importert fra et tredjepartssystem i kostnadsregnskap via Excel.
+Gå til **kostnadsregnskapsfinans** \> **faktisk versjon** \> **behandle** \> **statistiske målinger** for å opprette relasjonen. I dette scenariet kan du velge datakoblingen **Importerte statistiske målinger**, fordi dataene er importert fra et tredjepartssystem i kostnadsregnskap via Excel.
 
 **Datakilde**
 

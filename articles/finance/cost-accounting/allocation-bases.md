@@ -20,11 +20,11 @@ ms.author: roschlom
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.openlocfilehash: fc6f655d17a83db54aa99c834980bf7666e8100d
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3977773"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4446286"
 ---
 # <a name="allocation-bases"></a>Tildelingsgrunnlag 
 
@@ -53,7 +53,7 @@ Dette eksemplet viser hvordan du oppretter en kostnadsfordelingsregel for å til
 
 I økonomimodulen er kontoplanen definert som følger.
 
-| Kontoplan | Hovedkonto | beskrivelse        | Hovedkontotype |
+| Kontoplan | Hovedkonto | Beskrivelse        | Hovedkontotype |
 |------------------|--------------|--------------------|-------------------|
 | Delt           | 10001        | Lønn           | Utgift           |
 | Delt           | 10002        | Personalforsikring | Utgift           |
@@ -62,14 +62,14 @@ Definer en dimensjon for kostnadselement, og konfigurerer datakoblingen. Etter a
 
 **Medlemmer av dimensjon for kostnadselement**
 
-| Navn på kostnadselementdimensjon | Kostnadselement |  beskrivelse       | Type    |
+| Navn på kostnadselementdimensjon | Kostnadselement |  Beskrivelse       | Type    |
 |-----------------------------|--------------|--------------------|---------|
 | Kostnadselementer               | 10001        | Lønn           | Primær |
 | Kostnadselementer               | 10002        | Personalforsikring | Primær |
 
 **Forhåndsdefinerte tildelingsgrunnlag for dimensjonsmedlem** 
 
-| Navn  | beskrivelse        | Kostnadselementdimensjon |
+| Navn  | Beskrivelse        | Kostnadselementdimensjon |
 |-------|--------------------|------------------------|
 | 10001 | Lønn           | Kostnadselementer          |
 | 10002 | Personalforsikring | Kostnadselementer          |
@@ -79,7 +79,7 @@ Følgende oppføringer er postert i økonomimodulen:
 - Oppføringene som viser hovedkontoen for lønn, kommer fra lønningssystemet og posteres i kostsentre.
 - Utgiften for personalforsikring posteres manuelt i et standard kostsenter.
 
-| Regnskapsdato | Kostsenter |  beskrivelse        | Hovedkonto |  beskrivelse       | Beløp i regnskapsvaluta |
+| Regnskapsdato | Kostsenter |  Beskrivelse        | Hovedkonto |  Beskrivelse       | Beløp i regnskapsvaluta |
 |-----------------|-------------|---------------------|--------------|--------------------|-------------------------------|
 | 03.01.2017      | CC001       | Personale                  | 10001        | Lønn           | 2 000,00                      |
 | 03.01.2017      | CC002       | FI                  | 10001        | Lønn           | 5 000,00                      |
@@ -90,7 +90,7 @@ Etter at kildedataene for økonomimodulen er behandlet, opprettes følgende oppf
 
 **Kostnadsoppføringer**
 
-| Kostnadsobjekt |  beskrivelse        | Kostnadselement  |  beskrivelse       | Kostnadsatferd   |Beløp|Regnskapsdato|
+| Kostnadsobjekt |  Beskrivelse        | Kostnadselement  |  Beskrivelse       | Kostnadsatferd   |Beløp|Regnskapsdato|
 |-------------|---------------------|---------------|--------------------|-----------------|------|---------------|
 | CC001       | Personale                  | 10001         | Lønn           | Uklassifisert    |2 000,00|  03.01.2017    |
 | CC002       | FI                  | 10001         | Lønn           | Uklassifisert    |5 000,00|     03.01.2017         |
@@ -109,7 +109,7 @@ I dette forenklede eksemplet opprettes en kostnadsfordelingsregel for å tildele
 
 Etter at kostnadselement 10001 (Lønn) er brukt som tildelingsgrunnlaget, er resultatet av beregningen av indirekte kostnader som følger.
 
-| Kostnadsobjekt | beskrivelse | Størrelse |   Tildelingsfaktor         | Beløp |
+| Kostnadsobjekt | Beskrivelse | Størrelse |   Tildelingsfaktor         | Beløp |
 |-------------|-------------|-----------|-----------------------------|--------|
 | CC001       | Personale          | 2 000     | (2 000 ÷ 10 000) × 1 000,00 | 200,00 |
 | CC002       | FI          | 5 000     | (5 000 ÷ 10 000) × 1 000,00 | 500,00 |
@@ -123,13 +123,13 @@ Etter at kostnadselement 10001 (Lønn) er brukt som tildelingsgrunnlaget, er res
 
 **Journaloppføringer for kostnadsobjektsaldo**
 
-| Regnskapsdato | Kostnadsobjekt | beskrivelse         | Kostnadselement | beskrivelse        | Kostnadsatferd |  Beløp  |
+| Regnskapsdato | Kostnadsobjekt | Beskrivelse         | Kostnadselement | Beskrivelse        | Kostnadsatferd |  Beløp  |
 |-----------------|-------------|---------------------|--------------|--------------------|---------------|----------|
 | 31.01.2017      | CC099       | Standard kostsenter | 10002        | Personalforsikring | Uklassifisert  | 1 000,00 |
 
 **Kostnadsoppføringer**
 
-| Kostnadsobjekt |  beskrivelse        | Kostnadselement |    beskrivelse     | Kostnadsatferd | Beløp    | Regnskapsdato |
+| Kostnadsobjekt |  Beskrivelse        | Kostnadselement |    Beskrivelse     | Kostnadsatferd | Beløp    | Regnskapsdato |
 |-------------|---------------------|--------------|--------------------|---------------|-----------|-----------------|
 | CC099       | Standard kostsenter | 10002        | Personalforsikring | Uklassifisert  | -1 000,00 | 31.01.2017      |
 | CC001       | Personale                  | 10002        | Personalforsikring | Uklassifisert  | 200,00    | 31.01.2017      |
@@ -142,7 +142,7 @@ Medlemmer av statistisk dimensjon kan brukes som tildelingsgrunnlag for å defin
 
 **Statistiske medlemmer av dimensjon**
 
-| Navn på statistisk dimensjon | Statistisk element | beskrivelse               | Enhet |
+| Navn på statistisk dimensjon | Statistisk element | Beskrivelse               | Enhet |
 |----------------------------|---------------------|---------------------------|------|
 | Statistiske elementer       | FTE                 | Heltidsansatte       | Hver   |
 | Statistiske elementer       | Strøm         | Strømforbruk   | kWh  |
@@ -151,7 +151,7 @@ Når et medlem av statistisk dimensjon er lagret, opprettes en tilsvarende post 
 
 **Forhåndsdefinerte tildelingsgrunnlag for dimensjonsmedlem**
 
-| Navn        | beskrivelse             | Dimensjon for statistisk element |
+| Navn        | Beskrivelse             | Dimensjon for statistisk element |
 |-------------|-------------------------|-------------------------------|
 | FTE         | Heltidsansatte     | Statistiske elementer          |
 | Strøm | Strømforbruk | Statistiske elementer          |
@@ -161,7 +161,7 @@ Statistiske målinger kan komme fra ulike kilder:
 - Strømforbruk kan måles av målere som er montert på ulike områder i firmaet.
 - Tabeller inneholder statistiske målinger. Tabellen HcmEmployment inneholder for eksempel en liste over alle ansatte og kostsentrene de arbeider for.
 
-| Navn       | Kostsenter |  beskrivelse  | Arbeidertype |
+| Navn       | Kostsenter |  Beskrivelse  | Arbeidertype |
 |------------|-------------|----|-------------|
 | Ansatt A | CC001       | Personale | Ansatt    |
 | Ansatt B | CC002       | FI | Ansatt    |
@@ -189,7 +189,7 @@ Etter at kildedataene for statistisk måling er behandlet, opprettes følgende o
 
 **Statistiske oppføringer**
 
-| Kostnadsobjekt | beskrivelse      | Regnskapsdato | Statistisk medlem av dimensjon | beskrivelse         | Størrelse |
+| Kostnadsobjekt | Beskrivelse      | Regnskapsdato | Statistisk medlem av dimensjon | Beskrivelse         | Størrelse |
 |-------------|------------------|-----------------|------------------------------|---------------------|-----------|
 | CC001       | Personale               | 31.01.2017      | FTE                        | Heltidsansatte | 1,00      |
 | CC002       | FI               | 31.01.2017      | FTE                        | Heltidsansatte | 2,00      |
@@ -197,7 +197,7 @@ Etter at kildedataene for statistisk måling er behandlet, opprettes følgende o
 
 Her er et eksempel på en kostnadsdistribusjonsregel hvis de heltidsansattes forhåndsdefinerte tildelingsgrunnlag for dimensjonsmedlem er tilordnet som tildelingsgrunnlaget i den.
 
-| Kostnadsobjekt | beskrivelse  | Størrelse | Tildelingsfaktor |
+| Kostnadsobjekt | Beskrivelse  | Størrelse | Tildelingsfaktor |
 |-------------|------|-----------|-------------------|
 | CC001       | Personale   | 1,00      | (1/5) × beløp    |
 | CC002       | FI   | 2,00      | (2/5) × beløp    |
@@ -215,7 +215,7 @@ Etter at kildedataene for statistisk måling er behandlet, opprettes følgende o
 
 **Statistiske oppføringer**
 
-| Kostnadsobjekt |    | Regnskapsdato | Statistisk medlem av dimensjon |    beskrivelse          | Størrelse |
+| Kostnadsobjekt |    | Regnskapsdato | Statistisk medlem av dimensjon |    Beskrivelse          | Størrelse |
 |-------------|----|-----------------|------------------------------|-------------------------|-----------|
 | CC001       | Personale | 31.01.2017      | Elektrisitet                  | Strømforbruk | 2,450.00  |
 | CC002       | FI | 31.01.2017      | Elektrisitet                  | Strømforbruk | 4,100.00  |
@@ -223,7 +223,7 @@ Etter at kildedataene for statistisk måling er behandlet, opprettes følgende o
 
 Her er et eksempel på en kostnadsdistribusjonsregel hvis det forhåndsdefinerte tildelingsgrunnlaget for dimensjonsmedlem for Strøm er tilordnet som tildelingsgrunnlaget i den.
 
-| Kostnadsobjekt | beskrivelse  | Størrelse | Tildelingsfaktor          |
+| Kostnadsobjekt | Beskrivelse  | Størrelse | Tildelingsfaktor          |
 |-------------|------|-----------|----------------------------|
 | CC001       | Personale   | 2 450,00  | (2 450 ÷ 21 550) × beløp  |
 | CC002       | FI   | 4,100.00  | (4 100 ÷ 21 550) × beløp  |
@@ -246,7 +246,7 @@ De heltidsansattes forhåndsdefinerte tildelingsgrunnlag for dimensjonsmedlem so
 
 **Statistiske oppføringer**
 
-| Kostnadsobjekt | beskrivelse  | Regnskapsdato | Statistisk medlem av dimensjon | beskrivelse | Størrelse |
+| Kostnadsobjekt | Beskrivelse  | Regnskapsdato | Statistisk medlem av dimensjon | Beskrivelse | Størrelse |
 |-------------|------|-----------------|------------------------------|---------------------|-----------|
 | CC001       | Personale   | 31.01.2017      | FTE                        | Heltidsansatte | 1,00      |
 | CC002       | FI   | 31.01.2017      | FTE                        | Heltidsansatte | 2,00      |
@@ -264,14 +264,14 @@ En forhåndsvisningsfunksjon lar deg validere hierarkitildelingsgrunnlaget som e
 
 **Detaljer om tildelingsgrunnlag**
 
-| Kostnadsobjekt | beskrivelse  |  Størrelse |
+| Kostnadsobjekt | Beskrivelse  |  Størrelse |
 |-------------|------|------------|
 | CC001       | Personale   | 1,00       |
 | CC002       | FI   | 2,00       |
 
 Her er et eksempel på en kostnadsdistribusjonsregel hvis antall heltidsansatte i hierarkitildelingsgrunnlag for CFO er tilordnet som tildelingsgrunnlaget i den.
 
-| Kostnadsobjekt | beskrivelse  | Størrelse | Tildelingsfaktor |
+| Kostnadsobjekt | Beskrivelse  | Størrelse | Tildelingsfaktor |
 |-------------|------|-----------|-------------------|
 | CC001       | Personale   | 1,00      | (1/3) × beløp    |
 | CC002       | FI   | 2,00      | (2/3) × beløp    |
@@ -298,7 +298,7 @@ Du kan bruke følgende operatorer til å definere formelen.
 | –       | Subtraksjon    |
 | \*      | Multiplikasjon |
 
-Tradisjonelle **IF** -setninger støttes ikke. Du kan imidlertid lage setninger og validere om de er sanne.
+Tradisjonelle **IF**-setninger støttes ikke. Du kan imidlertid lage setninger og validere om de er sanne.
 
 | Kontoutdrag | Validering | Resultat |
 |-----------|------------|--------|
@@ -316,7 +316,7 @@ Forhåndsdefinerte tildelingsgrunnlag for dimensjonsmedlem for Strøm er allered
 
 **Statistiske oppføringer**
 
-| Kostnadsobjekt | Navn | Regnskapsdato | Statistisk medlem av dimensjon | beskrivelse             | Størrelse |
+| Kostnadsobjekt | Navn | Regnskapsdato | Statistisk medlem av dimensjon | Beskrivelse             | Størrelse |
 |-------------|------|-----------------|------------------------------|-------------------------|-----------|
 | CC001       | Personale   | 31.01.2017      | Elektrisitet                  | Strømforbruk | 2,450.00  |
 | CC002       | FI   | 31.01.2017      | Elektrisitet                  | Strømforbruk | 4,100.00  |
@@ -333,7 +333,7 @@ Hvis det faste gebyret nå må fordeles likt på kostnadsobjekter som bruker str
 |-------------------|------------------------|-----------------------|---------|
 | Fast strøm |                        | Statistiske elementer  |         |
 
-Før du kan fylle ut **Formel** -feltet, må du angi aliaset som skal brukes i formelen.
+Før du kan fylle ut **Formel**-feltet, må du angi aliaset som skal brukes i formelen.
 
 **Faktorer for formeltildelingsgrunnlag**
 
@@ -354,7 +354,7 @@ En forhåndsvisningsfunksjon lar deg validere formeltildelingsgrunnlaget som er 
 
 **Detaljer om tildelingsgrunnlag**
 
-| Kostnadsobjekt | beskrivelse  | Formel           | Størrelse |
+| Kostnadsobjekt | Beskrivelse  | Formel           | Størrelse |
 |-------------|------|-------------------|-----------|
 | CC001       | Personale   | 2.450,00 \> 0,01  | 1,00      |
 | CC002       | FI   | 4 100,00 \> 0,01  | 1,00      |
@@ -386,7 +386,7 @@ Et nytt formeltildelingsgrunnlag, Strømforbruk, opprettes.
 |-------------------|------------------------|-----------------------|---------|
 | Strømforbruk |                        | Statistiske elementer  |         |
 
-Før du kan fylle ut **Formel** -feltet, må du angi aliaset som skal brukes i formelen.
+Før du kan fylle ut **Formel**-feltet, må du angi aliaset som skal brukes i formelen.
 
 **Faktorer for formeltildelingsgrunnlag**
 
@@ -424,7 +424,7 @@ Her er et nærmere blikk på formelen for CC003 (IT):
 Her er et eksempel på en kostnadsdistribusjonsregel hvis formeltildelingsgrunnlaget for Fast strøm er tilordnet som tildelingsgrunnlaget i den.
 
 
-| Kostnadsobjekt | beskrivelse | Størrelse |        Tildelingsfaktor         |
+| Kostnadsobjekt | Beskrivelse | Størrelse |        Tildelingsfaktor         |
 |-------------|-------------|-----------|----------------------------------|
 |    CC001    |     Personale      | 1 837,50  | (1 837,50 ÷ 18 162,50) × beløp  |
 |    CC002    |     FI      | 3 075,00  | (3 075,00 ÷ 18 162,50) × beløp  |
